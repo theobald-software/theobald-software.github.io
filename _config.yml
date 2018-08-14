@@ -1,1 +1,160 @@
-theme: jekyll-theme-minimal
+########## GENERAL SETTINGS ##########
+########## Will probably never change
+url: "http://127.0.0.1:4000"
+baseurl: ""
+
+# Name of website
+title: Theobald Online Help
+# Short description of site
+description: Theobald's Online Help Portal contains all documentation about our products
+# Links in the navigation bar
+navbar-links:
+  Go to Knowledgebase: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
+  Return to Theobald Software: "https://theobald-software.com/en/"
+
+# Head variables
+author:
+  name: Theobald Software
+  twitter: TheobaldSoftw
+breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+########## CONTENT CONFIGURATIONS ##########
+########## These can be changed at will, in particular for adding new collections.
+########## Please always use "output: true" and "permalink: /:collection/:slug"
+########## for all functionalities to work properly.
+collections_dir: content
+collections:
+  boardconnector:
+    permalink: /:collection/:slug
+    output: true
+    name: 'Board Connector'
+  erpconnect:
+    permalink: /:collection/:slug
+    output: true
+    name: 'ERPConnect'
+  erpconnectservices:
+    permalink: /:collection/:slug
+    output: true
+    name: 'ERPConnectServices'
+  xtractalteryz:
+    permalink: /:collection/:slug
+    output: true
+    name: 'XtractAlteryz'
+  xtractis:
+    permalink: /:collection/:slug
+    output: true
+    name: 'XtractIS'
+  xtractrs:
+    permalink: /:collection/:slug
+    output: true
+    name: 'XtractRS'
+  xtractuniversal:
+    permalink: /:collection/:slug
+    output: true
+    name: 'XtractUniversal'
+  yunio:
+    permalink: /:collection/:slug
+    output: true
+    name: 'YunIO'
+########## OTHER SETTINGS ##########
+########## Be careful with changes to these settings, as it could break things.
+# Jekyll default stuff
+timezone: "Europe/Berlin"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    disable: true
+# sass
+sass:
+  sass_dir: css/scss
+  style: compressed
+# Default YAML values
+defaults:
+  - scope:
+      path: "" # all files
+    values:
+      layout: "page"
+# Exclude
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Vagrantfile
+# prose.io
+prose:
+  rooturl: '_posts'
+  media: 'img'
+  ignore:
+    - 404.html
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /img
+    - /js
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Add a thumbnail image to your post."
+          placeholder: "Thumbnail"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# --- Web Statistics Section --- #
+
+# Fill in your Google Analytics gtag.js ID to track your website using gtag
+#gtag: ""
+
+# Fill in your Google Analytics ID to track your website using GA
+#google_analytics: ""
+
+# Google Tag Manager ID
+#gtm: ""
+
+# Matomo (aka Piwik) Web statistics
+# Uncomment the following section to enable Matomo. The opt-out parameter controls
+# whether or not you want to allow users to opt out of tracking.
+
+#matomo:
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true

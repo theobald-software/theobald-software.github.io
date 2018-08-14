@@ -1,0 +1,22 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-6">
+        {% capture footer_section_one_include %}{% include _footer/footer-section-1.md %}{% endcapture %}
+        {{ footer_section_one_include | markdownify }}
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        {% capture footer_section_two_include %}{% include _footer/footer-section-2.md %}{% endcapture %}
+        {{ footer_section_two_include | markdownify }}
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        {% capture footer_section_three_include %}{% include _footer/footer-section-3.md %}{% endcapture %}
+        {{ footer_section_three_include | markdownify }}
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        {% capture footer_section_four_include %}{% include _footer/footer-section-4.md %}{% endcapture %}
+        {{ footer_section_four_include | markdownify }}
+      </div>
+    </div>
+  </div>
+</footer>
