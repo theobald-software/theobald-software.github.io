@@ -1,6 +1,6 @@
 ########## GENERAL SETTINGS ##########
 ########## Will probably never change
-url: "http://127.0.0.1:4000"
+url: "https://helptest.theobald-software.com/"
 baseurl: ""
 
 # Name of website
