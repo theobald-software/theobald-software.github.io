@@ -1,1 +1,3 @@
-germanHello, this is **a footer text**, thank _you_ for watching.
+© 2018 Theobald Software GmbH  
+[Privacy Policy](https://theobald-software.com/en/privacy-policy) - 
+[Legal notice](https://theobald-software.com/en/legal-notice)

@@ -2,66 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80769417-0a2f-4567-962f-2c446250c5b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_content/table-of-contents.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_footer/en/footer-section-1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_footer/en/footer-section-2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_footer/en/footer-section-3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_footer/en/footer-section-4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_tech/breadcrumb.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_tech/current-lang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_tech/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/_tech/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/board-connector/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/erpconnect/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/64-bit-environment.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/installation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/licensing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/prerequisites.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/erpconnect/rfc-server.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_de/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_en/board-connector/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_en/yunio/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/syntax.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/_footer/footer-section-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/_footer/footer-section-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/_footer/footer-section-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/_footer/footer-section-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/breadcrumb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/ext-css.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/ext-css.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/ext-js.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/ext-js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer-scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/footer-scripts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/google_analytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/google_analytics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/gtag.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/gtag.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/gtm_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/gtm_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/gtm_head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/gtm_head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/highlight.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/highlight.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/matomo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/navbarlink.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/navigation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_erpconnect/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_erpconnect/prerequisites-and-installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_erpconnect/prerequisites-and-installation/64-bit-environment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/64-bit-environment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_erpconnect/prerequisites-and-installation/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/installation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_erpconnect/prerequisites-and-installation/licensing.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/licensing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_erpconnect/prerequisites-and-installation/prerequisites.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/prerequisites.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_erpconnect/rfc-server.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_yunio/yunio.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/yunio/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/scss/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/scss/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/_footer/de/footer-section-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/_footer/de/footer-section-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/_footer/de/footer-section-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-4.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -86,9 +30,9 @@
         <counts>
           <entry key="Gemfile" value="1" />
           <entry key="css" value="6" />
-          <entry key="html" value="79" />
+          <entry key="html" value="80" />
           <entry key="js" value="5" />
-          <entry key="md" value="100" />
+          <entry key="md" value="101" />
           <entry key="scss" value="7" />
           <entry key="yml" value="4" />
         </counts>
@@ -106,9 +50,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="HTML" value="79" />
+          <entry key="HTML" value="80" />
           <entry key="JavaScript" value="5" />
-          <entry key="Markdown" value="100" />
+          <entry key="Markdown" value="101" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="7" />
           <entry key="YAML" value="4" />
@@ -147,6 +91,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/_tech/nav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="107" lean-forward="true" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/base.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -166,23 +119,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md">
+        <entry file="file://$PROJECT_DIR$/_includes/_footer/de/footer-section-1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="704">
-                <caret line="44" column="99" lean-forward="true" selection-start-line="14" selection-end-line="44" selection-end-column="99" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="748">
-                <caret line="44" column="99" selection-start-line="44" selection-start-column="99" selection-end-line="44" selection-end-column="99" />
+              <first_editor>
+                <caret selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -321,6 +262,11 @@
             <path>
               <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -414,12 +360,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534250410096</updated>
       <workItem from="1534250411454" duration="34131000" />
-      <workItem from="1534495960332" duration="8209000" />
+      <workItem from="1534495960332" duration="8463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42340000" />
+    <option name="totallyTimeSpent" value="42594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
@@ -494,16 +440,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/navbarlink.html" />
     <entry file="file://$PROJECT_DIR$/_includes/navigation.html" />
-    <entry file="file://$PROJECT_DIR$/_includes/_footer/de/footer-section-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -753,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_tech/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="116" selection-start-line="18" selection-start-column="116" selection-end-line="18" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -771,20 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="272" column="15" selection-start-line="272" selection-start-column="15" selection-end-line="272" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -815,6 +730,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="748">
+            <caret line="44" column="99" selection-start-line="44" selection-start-column="99" selection-end-line="44" selection-end-column="99" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -825,13 +750,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md">
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="272" column="15" selection-start-line="272" selection-start-column="15" selection-end-line="272" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_footer/de/footer-section-1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="748">
-            <caret line="44" column="99" selection-start-line="44" selection-start-column="99" selection-end-line="44" selection-end-column="99" />
+          <first_editor>
+            <caret selection-end-column="6" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_tech/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="107" lean-forward="true" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="107" />
         </state>
       </provider>
     </entry>
