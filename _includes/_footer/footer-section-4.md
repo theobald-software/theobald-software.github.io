@@ -1,1 +1,0 @@
-Hello, this is the third footer section.

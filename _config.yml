@@ -1,4 +1,4 @@
-########## GENERAL SETTINGS ##########
+########## SECTION 1 - GENERAL SETTINGS ##########
 ########## Will probably never change
 url: "https://helptest.theobald-software.com/"
 baseurl: ""
@@ -7,69 +7,53 @@ baseurl: ""
 title: Theobald Online Help
 # Short description of site
 description: Theobald's Online Help Portal contains all documentation about our products
-# Links in the navigation bar
-navbar-links:
-  Go to Knowledgebase: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
-  Return to Theobald Software: "https://theobald-software.com/en/"
 
-# Head variables
+# For variables in the head such as for twitter cards
 author:
   name: Theobald Software
   twitter: TheobaldSoftw
+
+# Maximum depth for breadcrumb. Do not change.
 breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-########## CONTENT CONFIGURATIONS ##########
-########## These can be changed at will, in particular for adding new collections.
-########## Please always use "output: true" and "permalink: /:collection/:slug"
-########## for all functionalities to work properly.
+
+########## SECTION 2 - HEADER CONTENT ##########
+########## These are configurable here rather than in the html pages and include files
+########## Languages can easily be added this way as well.
+##########  see the readme file for more information regarding that,
+##########  requires more than just adding a language here.
+navbar-links:
+  en:
+    - title: "Go to Knowledgebase"
+      url: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
+    - title: "Return to Theobald Software"
+      url: "https://theobald-software.com/en/"
+  de:
+    - title: "Gehe zum Knowledgebase"
+      url: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
+    - title: "Zurück zum Theobald Software"
+      url: "https://theobald-software.com/de/"
+
+########## SECTION 3 - COLLECTION CONFIGURATIONS ##########
+########## Languages can easily be added this way.
+##########  see the readme file for more information regarding that,
+##########  requires more than just adding a language here.
 collections_dir: content
 collections:
-  boardconnector:
-    permalink: /:collection/:slug
+  en:
     output: true
-    name: 'Board Connector'
-  erpconnect:
-    permalink: /:collection/:slug
+    name: 'English'
+  de:
     output: true
-    name: 'ERPConnect'
-  erpconnectservices:
-    permalink: /:collection/:slug
-    output: true
-    name: 'ERPConnectServices'
-  xtractalteryz:
-    permalink: /:collection/:slug
-    output: true
-    name: 'XtractAlteryz'
-  xtractis:
-    permalink: /:collection/:slug
-    output: true
-    name: 'XtractIS'
-  xtractrs:
-    permalink: /:collection/:slug
-    output: true
-    name: 'XtractRS'
-  xtractuniversal:
-    permalink: /:collection/:slug
-    output: true
-    name: 'XtractUniversal'
-  yunio:
-    permalink: /:collection/:slug
-    output: true
-    name: 'YunIO'
-########## OTHER SETTINGS ##########
+    name: 'Deutsch'
+########## SECTION 4 - OTHER SETTINGS ##########
 ########## Be careful with changes to these settings, as it could break things.
-# Jekyll default stuff
 timezone: "Europe/Berlin"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    disable: true
-# sass
+plugins:
+- jekyll-sitemap
+- jekyll-redirect-from
+# sass (styling)
 sass:
   sass_dir: css/scss
   style: compressed
@@ -86,7 +70,9 @@ exclude:
   - Gemfile.lock
   - README.md
   - Vagrantfile
-# prose.io
+  - .idea/*
+# prose.io - easy editing
+# TODO: needs more configuring to work properly
 prose:
   rooturl: '_posts'
   media: 'img'
@@ -135,26 +121,11 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
 
-# --- Web Statistics Section --- #
-
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
+########## SECTION 5 - TRACK SETTINGS ##########
+# GA gatg.js ID
 #gtag: ""
-
-# Fill in your Google Analytics ID to track your website using GA
+# GA ID
 #google_analytics: ""
-
-# Google Tag Manager ID
+# GTM ID
 #gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true

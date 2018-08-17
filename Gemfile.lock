@@ -251,6 +251,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-paginate
+  rouge
   tzinfo-data
 
 BUNDLED WITH

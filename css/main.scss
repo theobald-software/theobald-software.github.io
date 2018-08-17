@@ -24,11 +24,12 @@ h1,h2,h3,h4,h5,h6 {
   font-style: normal;
 }
 a {
-  color: $color-link-normal;
+  color: $color-highlight;
 }
 a:hover,
 a:focus {
-  color: $color-link-interact;
+  color: $color-highlight;
+  text-decoration: underline;
 }
 strong {
   color: $color-highlight;
@@ -104,6 +105,23 @@ img {
     min-height: 70px;
 }
 
+.navbar-right {
+}
+
+.nav > li > a {
+  padding: 5px;
+}
+
+.nav >li >a:focus,
+.nav >li >a:hover {
+  background-color: transparent;
+}
+
+.open a,
+.dropdown-toggle {
+  background-color: transparent !important;
+}
+
 .navbar-nav > li > a {
     padding-top: 0;
     padding-bottom: 0;
@@ -115,13 +133,23 @@ img {
         z-index:9999999;
         line-height: 30px;
         padding-top: 10px;
-        padding-bottom: 10px;}
+        padding-bottom: 10px;
+    }
     .navbar-header {
         min-height: 70px;
     }
     .dropdown {
       z-index:9999999;
     }
+}
+
+.nav-stacked {
+    float: right!important;
+    text-align: right;
+    border-left: 1px solid $color-border-primary;
+    margin-left: 15px;
+    padding-left: 15px;
+    white-space: nowrap;
 }
 
 .navbar-custom {
@@ -237,6 +265,14 @@ img {
   padding-right: unquote('max(15px, env(safe-area-inset-right))');
 }
 
+.container-footer {
+  margin: 0;
+}
+
+.container-content {
+  min-height: 400px;
+}
+
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;
@@ -286,11 +322,9 @@ img {
 /* --- Footer --- */
 
 footer {
-  padding: 30px 0;
   border-top: 3px $color-border-primary solid;
   margin-top: 50px;
   font-size: 14px;
-  background-color: $color-background-secondary;
 }
 
 footer .list-inline {
@@ -298,10 +332,40 @@ footer .list-inline {
   padding: 0;
 }
 
+footer hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: 0;
+  border-top: 1px solid $color-text-primary;
+}
+
+footer a:hover,
+footer a:visited,
+footer a:link,
+footer a:active {
+  text-decoration: none;
+}
+
+footer .fab {
+  color: $color-highlight;
+}
+
+.footer-top {
+  background-color: $color-background-secondary;
+  padding: 30px 30px;
+}
+
+.footer-bottom {
+  background-color: $color-background-tertiary;
+  padding: 20px 30px;
+}
+
+.footer-bottom p {
+  color: $color-text-secondary;
+}
+
 @media only screen and (min-width: 768px) {
-  footer {
-    padding: 50px 0;
-  }
   footer .footer-links {
     font-size: 18px;
   }
@@ -627,7 +691,7 @@ td.gutter pre {
 }
 
 .box-note {
-  background-color: #eee;
+  background-color: #d5e9f6;
   border-left-color: #2980b9;
 }
 
@@ -695,6 +759,8 @@ td.gutter pre {
 #productgrid .productgrid-item {
   right: 0;
   margin: 15px;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 @media(max-width: 768px) {
   #productgrid .productgrid-item {
@@ -702,40 +768,47 @@ td.gutter pre {
   }
 }
 
-#productgrid .productgrid-item .productgrid-background {
-  padding: 25px 5px 10px 5px;
+#productgrid .productgrid-item .productgrid-border {
+  margin: 0 15px;
   border-radius: 25px;
   border: 3px solid $color-border-primary;
+}
+
+
+#productgrid .productgrid-item .productgrid-border:hover {
+  border: 3px solid $color-border-secondary;
+}
+
+#productgrid .productgrid-item .productgrid-border .productgrid-background {
+  padding: 25px 5px 10px 5px;
   transform: scale(1);
   transition: transform .4s ease-in;
 }
 
-#productgrid .productgrid-item .productgrid-background:hover {
+#productgrid .productgrid-item .productgrid-border .productgrid-background:hover {
   padding: 25px 15px 10px 15px;
-  border-radius: 25px;
-  border: 3px solid $color-border-secondary;
   transform: scale(1.05);
   transition: transform .4s ease-out;
 }
 
-#productgrid .productgrid-item .productgrid-background .productgrid-link {
+#productgrid .productgrid-item .productgrid-border .productgrid-background .productgrid-link {
   display: block;
   position: relative;
   margin: 0 auto;
   max-width: 200px;
 }
-#productgrid .productgrid-item .productgrid-background .productgrid-link img {
+#productgrid .productgrid-item .productgrid-border .productgrid-background .productgrid-link img {
   padding: 0 10px;
 }
 
-#productgrid .productgrid-item .productgrid-background .productgrid-title {
+#productgrid .productgrid-item .productgrid-border .productgrid-background .productgrid-title {
   text-align: center;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
   margin: 10px 0;
 }
 @media(max-width: 768px) {
-  #productgrid .productgrid-item .productgrid-background .productgrid-title {
+  #productgrid .productgrid-item .productgrid-border .productgrid-background .productgrid-title {
     font-weight: 400;
     font-size: 14px;
   }

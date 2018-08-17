@@ -1,0 +1,55 @@
+{% capture current_lang %}{% include _tech/current-lang.html %}{% endcapture %}
+{% assign current_lang = current_lang | strip_newlines %}
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.url }}/img/company/theobald.jpg"/></a>
+    </div>
+      <div class="collapse navbar-collapse navbar-right" id="main-navbar" style="">
+        <div class="col-md-4 col-sm-4 col-xs-4">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              {% for collection in site.collections %}
+                {% unless collection.label == "posts" %}
+                  {% if collection.label contains current_lang %}
+              <li><a href="{{site.url}}{{site.baseurl}}/{{collection.label}}">{{collection.name}}</a></li>
+                  {% else %}
+                    <li><a href="{{site.url}}{{site.baseurl}}/{{collection.label}}">{{collection.name}}</a></li>
+                  {% endif %}
+                {% endunless %}
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+        </div>
+        <div class="col-md-8 col-sm-8 col-xs-8">
+        <ul class="nav nav-stacked">
+
+          {% for lang in site.navbar-links %}
+            {% if lang contains current_lang %}
+              {% for link in lang %}
+                {% for entry in link %}
+                  {% if entry.title %}
+                    <li>
+                      <a href="{{entry.url}}">{{entry.title}}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

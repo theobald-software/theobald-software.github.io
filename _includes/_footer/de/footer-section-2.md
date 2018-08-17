@@ -1,0 +1,1 @@
+germanHello, this is the second footer section.

@@ -1,1 +1,0 @@
-Hello, this is **a footer text**, thank _you_ for watching.

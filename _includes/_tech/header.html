@@ -1,0 +1,19 @@
+{% if page.title %}
+  <header class="header-section {% if page.bigimg %}has-img{% endif %}">
+	<div class="intro-header no-img">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+			<div class="page-heading">
+			  <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+				<span class="page-subheading">{% include _tech/breadcrumb.html %}</span>
+				<hr class="small">
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </header>
+{% else %}
+  <div class="intro-header"></div>
+{% endif %}
