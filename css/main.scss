@@ -8,7 +8,7 @@ layout: null
 
 body {
   font-family: "Helvetica Neue", Helvetica, "Arimo", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: $color-text-primary;
   position: relative;
   background-color: $color-background-primary;
@@ -31,12 +31,20 @@ a:focus {
   color: $color-highlight;
   text-decoration: underline;
 }
-strong {
+
+b {
   color: $color-highlight;
   font-weight: 400;
   font-stretch: 100%;
   font-style: normal;
 }
+
+strong {
+  font-weight: 600;
+  font-stretch: 100%;
+  font-style: normal;
+}
+
 blockquote {
   color: $color-quote;
   font-style: italic;
@@ -49,6 +57,10 @@ hr.small {
   margin: 15px 0;
     border: 4px inherit;
     border-radius: 3px;
+}
+
+figure {
+  padding-bottom: 0.5em;
 }
 
 .main-content {
@@ -81,6 +93,7 @@ hr.small {
   text-shadow: none;
   background-color: $color-link-interact;
 }
+
 img::selection {
   color: white;
   background: transparent;
@@ -271,6 +284,9 @@ img {
 
 .container-content {
   min-height: 400px;
+}
+.container-content li {
+  padding-bottom: 0.5em;
 }
 
 /* Multi-level navigation links */
@@ -615,6 +631,8 @@ footer .fab {
 
 table {
   padding: 0;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 table tr {
   border-top: 1px solid $color-border-primary;
@@ -648,6 +666,13 @@ table tr td :last-child {
 }
 
 /* --- Code blocks --- */
+
+details {
+  border: 1px solid $color-border-primary;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
 
 pre {
   font-size: 16px;
