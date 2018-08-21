@@ -2,12 +2,21 @@
 layout: base
 ---
 
-{% include _tech/header.html %}
-
-<div class="container container-content" role="main">
+<div class="container container-no-left">
     <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-            {{ content }}
+        <div class="col-lg-2 col-md-2 affix" id="side-menu-col">
+            {% include _tech/side-menu.html %}
+        </div>
+        <div class="col-lg-10 col-md-10 col-lg-offset-2 col-md-offset-2">
+            {% include _tech/header.html %}
+
+            <div class="container container-content" role="main">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

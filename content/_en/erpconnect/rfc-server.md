@@ -4,6 +4,7 @@ title: RFC Server
 description: RFC Server description
 collection: erpconnect
 parent: erpconnect
+childidentifier: rfc-server
 permalink: /:collection/:path
 weight: 3
 ---
@@ -12,4 +13,4 @@ Apart from the client functionality that allows function modules or BAPIs to be 
 
 Transactional RFC functions are, of course, supported. 
 
-{% include _content/table-of-contents.html parent="rfc-server" collection=site.en %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

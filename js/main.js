@@ -8,10 +8,10 @@ var main = {
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
             $(".navbar").addClass("top-nav-short");
-            $(".navbar-custom .avatar-container").fadeOut(500);
+            $(".side-menu").addClass("nav-shortened");
         } else {
             $(".navbar").removeClass("top-nav-short");
-            $(".navbar-custom .avatar-container").fadeIn(500);
+            $(".side-menu").removeClass("nav-shortened");
         }
     });
 
@@ -63,6 +63,16 @@ var main = {
     }
 
     $('[data-toggle="tooltip"]').tooltip();
+
+    if( main.isBreakpoint('sm') || main.isBreakpoint('xs') ) {
+      $('#side-menu-col').removeClass('affix');
+      $('#side-menu-col').css('padding-right','0');
+    }
+
+  },
+
+  isBreakpoint : function(alias) {
+      return $('.device-' + alias).is(':visible');
   }
 };
 
