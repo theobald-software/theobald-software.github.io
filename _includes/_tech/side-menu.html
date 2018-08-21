@@ -22,9 +22,9 @@
 				{% if doc.childidentifier contains page.parent %}
 					<li class="side-menu-list-item side-menu-list-item-parent">
 					{% if doc.childidentifier contains 'home' %}
-						<a href="{{doc.url | remove: '/index'}}" class="side-menu-list-item-link"><strong>{{homepage_string}}</strong></a>
+						<a href="{{doc.url | remove: '/index'}}" class="side-menu-list-item-link">Back to <strong>{{homepage_string}}</strong></a>
 					{% else %}
-						<a href="{{doc.url}}" class="side-menu-list-item-link"><strong>{{doc.title}}</strong></a>
+						<a href="{{doc.url}}" class="side-menu-list-item-link">Back to <strong>{{doc.title}}</strong></a>
 					{% endif %}
 					</li>
 				{% endif %}
