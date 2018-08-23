@@ -299,6 +299,10 @@ img {
   margin-left: 0 !important;
 }
 
+.container-homepage {
+  margin-bottom: 30px;
+}
+
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;
@@ -349,7 +353,6 @@ img {
 
 footer {
   border-top: 3px $color-border-primary solid;
-  margin-top: 50px;
   font-size: 14px;
 }
 
@@ -535,7 +538,7 @@ footer .fab {
 
 @media only screen and (min-width: 768px) {
   .side-menu {
-    margin: 108px 10px 20px 0;
+    margin: 108px 0 20px 0;
     -webkit-transition: margin .58s ease-in-out;
     -moz-transition: margin .58s ease-in-out;
     transition: margin .58s ease-in-out;
@@ -549,22 +552,26 @@ footer .fab {
   }
 }
 
-.side-menu .side-menu-list {
-  border-right: 3px solid $color-border-primary;
+.side-menu-list {
   padding: 10px;
+  list-style: none;
 }
 
 @media only screen and (min-width: 768px) {
   .side-menu .side-menu-list {
-    padding: 10px 0 10000px;
+    padding: 10px 0;
     z-index: -100000;
   }
 }
 
 .side-menu-list-item {
-  margin: 5px;
   border: 3px solid transparent;
-  border-radius: 5px;
+}
+
+@media only screen and (min-width: 992px) {
+  .side-menu-list-item {
+    margin-right: 50px;
+  }
 }
 
 .side-menu-list-item a {
@@ -577,13 +584,8 @@ footer .fab {
 
 .side-menu-list-item:hover,
 .side-menu-list-item:focus {
-  background-color: $color-background-tertiary;
-  border: 3px solid $color-background-tertiary;
-  border-radius: 5px;
-}
-.side-menu-list-item:hover a,
-.side-menu-list-item:focus a {
-  color: $color-text-tertiary;
+  background-color: $color-background-secondary;
+  border: 3px solid $color-background-secondary;
 }
 
 .side-menu-list-item-link strong {
@@ -591,19 +593,32 @@ footer .fab {
 }
 
 .side-menu-list-item-current-text {
-  color: $color-text-tertiary;
   font-weight: 400;
-  padding-left: 10px;
   margin: 0;
 }
-.side-menu-list-item-current-li {
-  background-color: $color-quote;
-  border: 3px solid $color-quote;
-  border-radius: 5px;
+
+.side-menu-list-item-level {
+  padding-left: 10px;
 }
 
 .side-menu-list-item-child {
-  padding-left: 30px;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.side-menu-list-collapsible {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.caret {
+  -moz-transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.rotate-180 {
+  transform: rotate(-180deg);
 }
 
 

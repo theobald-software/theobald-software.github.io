@@ -69,6 +69,18 @@ var main = {
       $('#side-menu-col').css('padding-right','0');
     }
 
+
+
+    $('.side-menu-dropdown-trigger').on('click', function(e) {
+        $(this).find('.caret').toggleClass('rotate-180');
+    });
+
+    if ($('.side-menu-list-collapsible li').length == 0) {
+        $('.side-menu-list-collapsible').parent().find('.caret').remove();
+    } else {
+        $('.side-menu-list-collapsible').parent().find('.caret').toggleClass('invisible');
+    }
+
   },
 
   isBreakpoint : function(alias) {

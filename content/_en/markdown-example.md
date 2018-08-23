@@ -3,6 +3,7 @@ layout: page
 title: Markdown Example
 description: Markdown Example
 permalink: /:collection/markdown-example
+weight: 0
 ---
 
 ### Notification
