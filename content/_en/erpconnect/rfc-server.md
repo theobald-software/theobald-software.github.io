@@ -2,7 +2,7 @@
 layout: page
 title: RFC Server
 description: RFC Server description
-collection: erpconnect
+product: erpconnect
 parent: erpconnect
 childidentifier: rfc-server
 permalink: /:collection/:path

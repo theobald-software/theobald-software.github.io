@@ -64,7 +64,7 @@ var main = {
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    if( main.isBreakpoint('sm') || main.isBreakpoint('xs') ) {
+    if( main.isBreakpoint('xs') ) {
       $('#side-menu-col').removeClass('affix');
       $('#side-menu-col').css('padding-right','0');
     }

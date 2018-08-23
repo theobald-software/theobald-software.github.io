@@ -2,7 +2,9 @@
 layout: page
 title: ERPConnect
 description: ERPConnect main page
+product: erpconnect
 parent: home
+childidentifier: erpconnect
 permalink: /:collection/:path
 weight: 1
 ---

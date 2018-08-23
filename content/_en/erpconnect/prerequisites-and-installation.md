@@ -2,7 +2,7 @@
 layout: page
 title: Prerequisites and Installation
 description: Description about Prerequisites and Installation
-collection: erpconnect
+product: erpconnect
 parent: erpconnect
 childidentifier: prerequisites-and-installation
 permalink: /:collection/:path

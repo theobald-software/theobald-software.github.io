@@ -1,0 +1,41 @@
+<div class="side-menu-product">
+    {% assign product = page.product %}
+
+    {% case product %}
+
+    {% when 'boardconnector' %}
+    <img src="/img/products/TS_Icon_2C_Board.svg" class="img-fluid side-menu-product-image" alt="Board Connector">
+    <p class="side-menu-product-text">Board Connector</p>
+
+    {% when 'erpconnect' %}
+    <img src="/img/products/TS_Icon_2C_ERPConnect.svg" class="img-fluid side-menu-product-image" alt="ERPConnect">
+    <p class="side-menu-product-text">ERPConnect</p>
+
+    {% when 'erpconnect-services' %}
+    <img src="/img/products/TS_Icon_2C_ERPConnectServices.svg" class="img-fluid side-menu-product-image" alt="ERPConnectServices">
+    <p class="side-menu-product-text">ERPConnect Services</p>
+
+    {% when 'xtract-for-alteryz' %}
+    <img src="/img/products/TS_Icon_2C_XtractAlteryx.svg" class="img-fluid side-menu-product-image" alt="XtractAlteryz">
+    <p class="side-menu-product-text">Xtract for Alteryx</p>
+
+    {% when 'xtract-is' %}
+    <img src="/img/products/TS_Icon_2C_XtractIS.svg" class="img-fluid side-menu-product-image" alt="XtractIS">
+    <p class="side-menu-product-text">Xtract IS</p>
+
+    {% when 'xtract-rs' %}
+    <img src="/img/products/TS_Icon_2C_XtractRS.svg" class="img-fluid side-menu-product-image" alt="XtractRS">
+    <p class="side-menu-product-text">Xtract RS</p>
+
+    {% when 'xtract-universal' %}
+    <img src="/img/products/TS_Icon_2C_XtractUniversal.svg" class="img-fluid side-menu-product-image" alt="XtractUniversal">
+    <p class="side-menu-product-text">Xtract Universal</p>
+
+    {% when 'yunio' %}
+    <img src="/img/products/TS_Icon_2C_YunIO.svg" class="img-fluid side-menu-product-image" alt="YunIO">
+    <p class="side-menu-product-text">Yunio</p>
+
+    {% else %}
+
+    {% endcase %}
+</div>

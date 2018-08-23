@@ -354,6 +354,7 @@ img {
 footer {
   border-top: 3px $color-border-primary solid;
   font-size: 14px;
+  margin-top: 50px;
 }
 
 footer .list-inline {
@@ -536,6 +537,27 @@ footer .fab {
   border-bottom: 3px solid $color-border-primary;
 }
 
+@media only screen and (min-width: 990px) {
+  .side-menu-add-margin {
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .side-menu-add-margin {
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .side-menu-add-margin {
+    padding-right: 80px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .side-menu-add-margin {
+    width: 20% !important;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .side-menu {
     margin: 108px 0 20px 0;
@@ -552,26 +574,39 @@ footer .fab {
   }
 }
 
+.side-menu-product {
+  height: 50px;
+  max-height: 50px;
+  background-color: $color-background-secondary;
+}
+
+.side-menu-product-image {
+  height: 100%;
+  width: 50px;
+  float: left;
+  padding: 10px 5px;
+}
+
+.side-menu-product-text {
+  font-weight: 600;
+  padding-left: 5px;
+  line-height: 50px;
+}
+
 .side-menu-list {
-  padding: 10px;
+  padding: 0 10px 10px;
   list-style: none;
 }
 
 @media only screen and (min-width: 768px) {
   .side-menu .side-menu-list {
-    padding: 10px 0;
+    padding: 0 0 10px;
     z-index: -100000;
   }
 }
 
 .side-menu-list-item {
-  border: 3px solid transparent;
-}
-
-@media only screen and (min-width: 992px) {
-  .side-menu-list-item {
-    margin-right: 50px;
-  }
+  padding: 3px 3px 3px 0;
 }
 
 .side-menu-list-item a {
@@ -582,10 +617,9 @@ footer .fab {
   display: block;
 }
 
-.side-menu-list-item:hover,
-.side-menu-list-item:focus {
+.side-menu-list-item-hover:hover,
+.side-menu-list-item-hover:focus {
   background-color: $color-background-secondary;
-  border: 3px solid $color-background-secondary;
 }
 
 .side-menu-list-item-link strong {
@@ -597,13 +631,14 @@ footer .fab {
   margin: 0;
 }
 
-.side-menu-list-item-level {
-  padding-left: 10px;
-}
-
 .side-menu-list-item-child {
   list-style: none;
   padding-left: 20px;
+}
+
+.side-menu-list-item-parent {
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .side-menu-list-collapsible {
@@ -620,7 +655,6 @@ footer .fab {
 .rotate-180 {
   transform: rotate(-180deg);
 }
-
 
 /* --- Page headers --- */
 
