@@ -1,6 +1,6 @@
 ########## SECTION 1 - GENERAL SETTINGS ##########
 ########## Will probably never change
-url: "https://helptest.theobald-software.com/"
+url: "https://helptest.theobald-software.com"
 baseurl: ""
 
 # Name of website
