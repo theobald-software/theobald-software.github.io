@@ -18,6 +18,7 @@ breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 algolia:
   application_id: '4C27F1P1UC'
+  index_name: theobald-software-online-help
 
 ########## SECTION 2 - HEADER CONTENT ##########
 ########## These are configurable here rather than in the html pages and include files
