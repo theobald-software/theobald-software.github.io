@@ -7,4 +7,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 group :jekyll_plugins do
   gem 'jekyll-algolia', '~> 1.0'
+  gem 'jekyll-avatar', '0.6.0'
 end
