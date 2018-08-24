@@ -7,5 +7,5 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
-404.html
 _site
+Gemfile.lock
