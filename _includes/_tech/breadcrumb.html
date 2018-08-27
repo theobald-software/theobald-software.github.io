@@ -5,6 +5,8 @@
 {% capture num_parts %} {{ url_parts | number_of_words  | minus: 1}} {% endcapture %}
 {% assign previous="" %}
 
+{% assign collection = site.collections | where:"label",current_lang %}
+
 {% if num_parts contains "1" or num_parts contains "0" %}
   <a href="/">Home</a> &#187; {{page.title}}
 {% else %}
@@ -14,7 +16,10 @@
   {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
 
   {% if first_word contains current_lang %}{% else %}
-  <a href="{{previous}}">{{ first_word | replace:'-'," " | capitalize}}</a> &#187;
+    {% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.childidentifier contains first_word" %}
+    {% for doc in filtered_docs %}
+      <a href="{{previous}}">{{ doc.title }}</a> &#187;
+    {% endfor %}
   {% endif %}
 
   {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}

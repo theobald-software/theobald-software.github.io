@@ -55,8 +55,11 @@ blockquote p:first-child {
 hr.small {
   max-width: 100px;
   margin: 15px 0;
-    border: 4px inherit;
-    border-radius: 3px;
+  border: 4px inherit;
+  border-radius: 3px;
+}
+hr.small.no-bottom-margin {
+  margin: 15px 0 0;
 }
 
 figure {
@@ -659,7 +662,7 @@ footer .fab {
 /* --- Page headers --- */
 
 .intro-header {
-  margin: 20px 0 20px;
+  margin: 20px 0 0;
   padding-left: 20px;
   position: relative;
 }
