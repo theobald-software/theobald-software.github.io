@@ -19,11 +19,6 @@ breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 algolia:
   application_id: '4C27F1P1UC'
   index_name: theobald-software-online-help
-  files_to_exclude:
-  - 'index.html'
-  - 'index.md'
-  - '**/*.tmp.html'
-  - '**/README.md'
 
 ########## SECTION 2 - HEADER CONTENT ##########
 ########## These are configurable here rather than in the html pages and include files
@@ -57,9 +52,11 @@ collections:
   en:
     output: true
     name: 'English'
+    language_label: 'gb'
   de:
     output: true
     name: 'Deutsch'
+    language_label: 'de'
 ########## SECTION 4 - OTHER SETTINGS ##########
 ########## Be careful with changes to these settings, as it could break things.
 timezone: "Europe/Berlin"
@@ -86,6 +83,7 @@ exclude:
   - README.md
   - Vagrantfile
   - .idea/workspace.xml
+  - vendor
 # prose.io - easy editing
 # TODO: needs more configuring to work properly
 prose:
