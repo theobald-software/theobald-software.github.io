@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80769417-0a2f-4567-962f-2c446250c5b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_layouts/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_en/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/_tech/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_de/board-connector/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/board-connector/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_en/board-connector/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/board-connector/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +29,7 @@
           <entry key="Gemfile" value="4" />
           <entry key="_algolia_api_key" value="1" />
           <entry key="css" value="9" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="html" value="174" />
           <entry key="js" value="13" />
           <entry key="json" value="1" />
@@ -53,7 +45,7 @@
           <entry key="HTML" value="8312" />
           <entry key="JavaScript" value="375" />
           <entry key="Markdown" value="5323" />
-          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="PLAIN_TEXT" value="74" />
           <entry key="SCSS" value="3061" />
           <entry key="YAML" value="1415" />
         </counts>
@@ -65,7 +57,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="13" />
           <entry key="Markdown" value="225" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="22" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="14" />
@@ -74,7 +66,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="45" />
-          <entry key="gitignore" value="23" />
+          <entry key="gitignore" value="29" />
           <entry key="html" value="8312" />
           <entry key="js" value="375" />
           <entry key="md" value="5323" />
@@ -96,11 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/_en/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+            <state relative-caret-position="-391">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -210,7 +211,6 @@
         <option value="$PROJECT_DIR$/content/_en/404.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_algolia_api_key" />
         <option value="$PROJECT_DIR$/_includes/_tech/header.html" />
         <option value="$PROJECT_DIR$/_includes/_tech/breadcrumb.html" />
@@ -250,6 +250,7 @@
         <option value="$PROJECT_DIR$/content/_en/board-connector/index.md" />
         <option value="$PROJECT_DIR$/content/_de/board-connector/index.md" />
         <option value="$PROJECT_DIR$/content/_en/search.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -387,12 +388,12 @@
       <workItem from="1534495960332" duration="8902000" />
       <workItem from="1534755446046" duration="37686000" />
       <workItem from="1534940727012" duration="27570000" />
-      <workItem from="1535446704968" duration="12300000" />
+      <workItem from="1535446704968" duration="12518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120589000" />
+    <option name="totallyTimeSpent" value="120807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
@@ -424,9 +425,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/flags/flag-icon.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/breadcrumb.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -825,8 +823,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/content/_en/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+        <state relative-caret-position="-391">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
