@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse navbar-right" id="main-navbar" style="">
         <div class="row row-eq-height">
           <div class="col-md-4 col-sm-4 col-xs-4">
-            <div class="navbar-languages"><div>
+            <div class="navbar-languages">
               {% for collection in site.collections %}
                 {% unless collection.label == "posts" %}
                   {% if collection.label contains current_lang %}
@@ -37,7 +37,7 @@
                   {% endif %}
                 {% endunless %}
               {% endfor %}
-            </div></div>
+            </div>
           </div>
           <div class="col-md-8 col-sm-8 col-xs-8">
             <ul class="nav nav-stacked">

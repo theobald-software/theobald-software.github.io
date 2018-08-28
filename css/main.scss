@@ -161,8 +161,24 @@ img {
 
 .navbar-languages {
   height: 100%;
-  display: table-cell;
-  vertical-align: middle;
+}
+
+.navbar-languages a {
+  display:inline-block;
+  height:100%;
+}
+
+.navbar-languages span {
+  display:inline-block;
+  height:100%;
+  width: 20px;
+}
+@media (min-width: 768px) {
+  .navbar-languages span {
+    display: inline-block;
+    height: 100%;
+    width: 30px;
+  }
 }
 
 .nav-stacked {
