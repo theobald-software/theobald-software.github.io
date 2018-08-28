@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80769417-0a2f-4567-962f-2c446250c5b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/_en/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,14 +30,14 @@
           <entry key="_algolia_api_key" value="1" />
           <entry key="css" value="9" />
           <entry key="gitignore" value="2" />
-          <entry key="html" value="177" />
+          <entry key="html" value="178" />
           <entry key="js" value="13" />
           <entry key="json" value="1" />
           <entry key="md" value="225" />
           <entry key="scss" value="22" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
-          <entry key="yml" value="14" />
+          <entry key="yml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -47,20 +47,20 @@
           <entry key="Markdown" value="5323" />
           <entry key="PLAIN_TEXT" value="74" />
           <entry key="SCSS" value="3061" />
-          <entry key="YAML" value="1415" />
+          <entry key="YAML" value="1426" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="9" />
-          <entry key="HTML" value="177" />
+          <entry key="HTML" value="178" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="13" />
           <entry key="Markdown" value="225" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="22" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="14" />
+          <entry key="YAML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -71,7 +71,7 @@
           <entry key="js" value="375" />
           <entry key="md" value="5323" />
           <entry key="scss" value="3061" />
-          <entry key="yml" value="1415" />
+          <entry key="yml" value="1426" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -83,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/_includes/_tech/nav.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="363">
-              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -97,11 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/_en/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="391">
+              <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -110,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/_includes/_tech/side-menu.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="56" lean-forward="true" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+              <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -214,13 +223,13 @@
         <option value="$PROJECT_DIR$/content/_en/search-results.html" />
         <option value="$PROJECT_DIR$/_includes/_tech/head.html" />
         <option value="$PROJECT_DIR$/_layouts/search.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/css/main.scss" />
         <option value="$PROJECT_DIR$/content/_en/board-connector/index.md" />
         <option value="$PROJECT_DIR$/content/_de/board-connector/index.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/content/_en/index.html" />
         <option value="$PROJECT_DIR$/content/_en/search.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -358,12 +367,12 @@
       <workItem from="1534495960332" duration="8902000" />
       <workItem from="1534755446046" duration="37686000" />
       <workItem from="1534940727012" duration="27570000" />
-      <workItem from="1535446704968" duration="13130000" />
+      <workItem from="1535446704968" duration="13700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121419000" />
+    <option name="totallyTimeSpent" value="121989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
@@ -729,20 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="1029" column="15" selection-start-line="1029" selection-start-column="15" selection-end-line="1029" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/_en/board-connector/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -770,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_tech/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
@@ -786,22 +774,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/content/_en/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="153">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_tech/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="1029" column="15" selection-start-line="1029" selection-start-column="15" selection-end-line="1029" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/side-menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="56" lean-forward="true" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/_en/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="391">
+          <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
         </state>
       </provider>
     </entry>
