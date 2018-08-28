@@ -2,9 +2,9 @@
 layout: page
 title: BoardConnector
 description: BoardConnector main page
-product: boardconnector
+product: board-connector
 parent: home
-childidentifier: boardconnector
+childidentifier: board-connector
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

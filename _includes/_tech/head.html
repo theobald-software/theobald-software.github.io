@@ -44,4 +44,10 @@
 
   {% seo %}
 
+  {% if layout.ext-head-js %}
+    {% for js in layout.ext-head-js %}
+      {% include _tech/ext-js.html js=js %}
+    {% endfor %}
+  {% endif %}
+
 </head>

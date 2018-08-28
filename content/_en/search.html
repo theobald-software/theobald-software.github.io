@@ -1,0 +1,162 @@
+---
+layout: search
+title: Search
+description: The search page for the Theobald Software Online Help portal
+permalink: /:collection/:path
+childidentifier: home
+weight: 0
+lang: en_GB
+---
+
+{% capture current_lang %}{% include _tech/current-lang.html %}{% endcapture %}
+{% assign current_lang = current_lang | strip_newlines %}
+
+<header class="header-section">
+    <div class="intro-header no-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="homepage-heading">
+                        <h1>{{ page.title }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<br>
+<div class="container container-homepage" role="main">
+    <div class="row">
+        <div id="search-box">
+            <!-- SearchBox widget will appear here -->
+        </div>
+        <br>
+        <div id="categories-menuSelect">
+            <!-- Product Select widget will appear here -->
+        </div>
+        <br><br>
+        <div id="hits">
+            <!-- Hits widget will appear here -->
+        </div>
+        <br><br>
+        <div id="pagination">
+            <!-- Pagination widget will appear here -->
+        </div>
+    </div>
+</div>
+
+{% raw %}
+<script>
+    const search = instantsearch({
+        appId: '4C27F1P1UC',
+        apiKey: '09cbfe4bbe8e6380e31d4572f85ad22e',
+        indexName: 'theobald-software-online-help',
+        routing: true
+    });
+
+    // initialize SearchBox
+    search.addWidget(
+        instantsearch.widgets.searchBox({
+            container: '#search-box',
+            placeholder: 'Search...'
+        })
+    );
+
+    search.addWidget(
+        instantsearch.widgets.hits({
+            container: '#hits',
+            templates: {
+                empty: 'No results',
+                item: '<em>{{title}}</em>: {{product}}'
+            }
+        })
+    );
+
+    // initialize pagination
+    search.addWidget(
+        instantsearch.widgets.pagination({
+            container: '#pagination',
+            maxPages: 20,
+            // default is to scroll to 'body', here we disable this behavior
+            scrollTo: false
+        })
+    );
+
+    search.addWidget(
+        instantsearch.widgets.menuSelect({
+            container: '#categories-menuSelect',
+            attributeName: 'product',
+            limit: 10,
+            templates: {
+                header: 'Products',
+                item: '{{label}}'
+            },
+            transformData: {
+                item: function(data) {
+
+                    switch (data.label) {
+                        case 'erpconnect':
+                            data.label = 'ERPConnect';
+                            break;
+                        case 'erpconnect-services':
+                            data.label = 'ERPConnect Services';
+                            break;
+                        case 'board-connector':
+                            data.label = 'Board Connector';
+                            break;
+                        case 'xtract-for-alteryz':
+                            data.label = 'Xtract for Alteryx';
+                            break;
+                        case 'xtract-is':
+                            data.label = 'Xtract IS';
+                            break;
+                        case 'xtract-rs':
+                            data.label = 'Xtract RS';
+                            break;
+                        case 'xtract-universal':
+                            data.label = 'Xtract Universal';
+                            break;
+                        case 'yunio':
+                            data.label = 'Yunio';
+                            break;
+                        case 'none':
+                        default:
+                            data.label = 'No Product';
+                            break;
+                    }
+
+                    return data;
+                }
+            },
+            init: function init(options) {
+                var elements = document.getElementsByClassName('ais-menu-select--option');
+
+                console.log(elements);
+                if (elements.length > 0) {
+                    for(let i = 0; i < elements.length; i++){
+                        console.log(elements[i]);
+                        console.log(elements[i].value);
+                        if(elements[i].value == null || elements[i].value === '') {
+                            elements[i].parentNode.removeChild(elements[i]);
+                        }
+                    }
+                }
+            }
+        })
+    );
+</script>
+{% endraw %}
+
+<script>
+    search.addWidget(
+        instantsearch.widgets.configure({
+            facetFilters: ['collection:{{current_lang}}'],
+            attributesToRetrieve: [
+                'product',
+                'title'
+            ]
+        })
+    );
+
+    search.start();
+</script>

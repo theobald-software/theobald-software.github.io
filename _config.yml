@@ -94,6 +94,7 @@ defaults:
     values:
       layout: "page"
       image: /img/company/theobald.jpg
+      product: none
 # Exclude
 exclude:
   - CNAME

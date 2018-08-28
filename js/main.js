@@ -86,6 +86,7 @@ var main = {
   isBreakpoint : function(alias) {
       return $('.device-' + alias).is(':visible');
   }
+
 };
 
 document.addEventListener('DOMContentLoaded', main.init);
