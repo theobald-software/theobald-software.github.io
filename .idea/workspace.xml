@@ -3,8 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="80769417-0a2f-4567-962f-2c446250c5b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/_tech/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/_tech/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/board-connector/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/board-connector/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/erpconnect/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/erpconnect/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/64-bit-environment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/64-bit-environment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/licensing.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/licensing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/prerequisites.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/prerequisites.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/erpconnect/rfc-server.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/erpconnect/rfc-server.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_de/yunio/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_de/yunio/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/board-connector/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/board-connector/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/administration.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_content/en/example-content.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/appendix.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/calling-bapis-and-function-modules.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/linq-to-sap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/64-bit-environment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/64-bit-environment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/licensing.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/licensing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/prerequisites.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/prerequisites.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/receiving-and-sending-idocs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/connection-time-outs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/connection-time-outs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/example.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/example.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/sap-connection-with-sso-and-snc.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/sap-connection-with-sso-and-snc.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/sap-bw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/sap-connection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/sap-queries.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/special-classes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/erpconnect/tools.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/markdown-example.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/markdown-example.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_en/yunio/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_en/yunio/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/company/theobald.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/company/theobald.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,52 +65,52 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="3" />
+          <entry key="Gemfile" value="4" />
           <entry key="_algolia_api_key" value="1" />
           <entry key="css" value="9" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="142" />
+          <entry key="html" value="149" />
           <entry key="js" value="11" />
           <entry key="json" value="1" />
-          <entry key="md" value="191" />
+          <entry key="md" value="221" />
           <entry key="scss" value="21" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
-          <entry key="yml" value="12" />
+          <entry key="yml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="7108" />
+          <entry key="HTML" value="7169" />
           <entry key="JavaScript" value="358" />
-          <entry key="Markdown" value="2019" />
-          <entry key="PLAIN_TEXT" value="67" />
-          <entry key="SCSS" value="3024" />
-          <entry key="YAML" value="1195" />
+          <entry key="Markdown" value="5319" />
+          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="SCSS" value="3029" />
+          <entry key="YAML" value="1401" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="9" />
-          <entry key="HTML" value="142" />
+          <entry key="HTML" value="149" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="11" />
-          <entry key="Markdown" value="191" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Markdown" value="221" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="SCSS" value="21" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="12" />
+          <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="44" />
+          <entry key="Gemfile" value="45" />
           <entry key="gitignore" value="23" />
-          <entry key="html" value="7108" />
+          <entry key="html" value="7169" />
           <entry key="js" value="358" />
-          <entry key="md" value="2019" />
-          <entry key="scss" value="3024" />
-          <entry key="yml" value="1195" />
+          <entry key="md" value="5319" />
+          <entry key="scss" value="3029" />
+          <entry key="yml" value="1401" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -90,29 +127,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="172" column="14" lean-forward="true" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
+            <state relative-caret-position="229">
+              <caret line="846" column="15" selection-start-line="846" selection-start-column="15" selection-end-line="846" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <entry file="file://$PROJECT_DIR$/content/_en/markdown-example.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="568">
+                <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1371">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="244">
+              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -129,7 +169,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getImgInfo</find>
       <find>setImg</find>
       <find>googlefonts</find>
       <find>error</find>
@@ -159,6 +198,7 @@
       <find>footer</find>
       <find>404</find>
       <find>hr</find>
+      <find>code</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\me\projects\theobald-software.github.io\_includes</dir>
@@ -171,40 +211,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_includes/_tech/footer-scripts.html" />
-        <option value="$PROJECT_DIR$/_includes/_footer/en/footer-section-2.md" />
         <option value="$PROJECT_DIR$/_includes/_footer/en/footer-section-3.md" />
         <option value="$PROJECT_DIR$/_includes/_tech/footer.html" />
         <option value="$PROJECT_DIR$/_includes/_footer/en/footer-section-4.md" />
         <option value="$PROJECT_DIR$/content/_en/markdown-example.html" />
         <option value="$PROJECT_DIR$/content/_en/markdown-example/markdown-example.html" />
         <option value="$PROJECT_DIR$/css/scss/_colors.scss" />
-        <option value="$PROJECT_DIR$/content/_en/index.html" />
-        <option value="$PROJECT_DIR$/content/_en/markdown-example.md" />
         <option value="$PROJECT_DIR$/content/_en/erpconnect/aaaprerequisites-and-installation.md" />
         <option value="$PROJECT_DIR$/_includes/_tech/index.html" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/index.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/rfc-server.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/connection-time-outs.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/example.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/sap-connection-with-sso-and-snc.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/64-bit-environment.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/installation.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/licensing.md" />
-        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/prerequisites.md" />
-        <option value="$PROJECT_DIR$/content/_de/board-connector/index.md" />
-        <option value="$PROJECT_DIR$/content/_en/board-connector/index.md" />
-        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/64-bit-environment.md" />
-        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/installation.md" />
-        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/licensing.md" />
-        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/prerequisites.md" />
-        <option value="$PROJECT_DIR$/content/_de/erpconnect/index.md" />
-        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md" />
-        <option value="$PROJECT_DIR$/content/_de/erpconnect/rfc-server.md" />
-        <option value="$PROJECT_DIR$/content/_en/yunio/index.md" />
-        <option value="$PROJECT_DIR$/content/_de/yunio/index.md" />
-        <option value="$PROJECT_DIR$/content/_de/index.html" />
         <option value="$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/_includes/_tech/side-menu.html" />
@@ -215,13 +229,39 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_algolia_api_key" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/_includes/_tech/header.html" />
         <option value="$PROJECT_DIR$/_includes/_tech/breadcrumb.html" />
         <option value="$PROJECT_DIR$/_layouts/base.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_includes/_tech/nav.html" />
+        <option value="$PROJECT_DIR$/_includes/_content/en/example-content.md" />
         <option value="$PROJECT_DIR$/css/main.scss" />
+        <option value="$PROJECT_DIR$/content/_en/markdown-example.md" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/_includes/_tech/head.html" />
+        <option value="$PROJECT_DIR$/content/_en/board-connector/index.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/index.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/rfc-server.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/connection-time-outs.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/example.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/rfc-server/sap-connection-with-sso-and-snc.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/64-bit-environment.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/installation.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/licensing.md" />
+        <option value="$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/prerequisites.md" />
+        <option value="$PROJECT_DIR$/content/_en/yunio/index.md" />
+        <option value="$PROJECT_DIR$/content/_de/board-connector/index.md" />
+        <option value="$PROJECT_DIR$/content/_de/erpconnect/index.md" />
+        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md" />
+        <option value="$PROJECT_DIR$/content/_de/erpconnect/rfc-server.md" />
+        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/64-bit-environment.md" />
+        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/installation.md" />
+        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/licensing.md" />
+        <option value="$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/prerequisites.md" />
+        <option value="$PROJECT_DIR$/content/_de/yunio/index.md" />
+        <option value="$PROJECT_DIR$/content/_en/index.html" />
+        <option value="$PROJECT_DIR$/content/_de/index.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -260,12 +300,48 @@
               <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="_content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="_footer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="_footer" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
               <item name="_tech" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="_en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,19 +360,19 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\me\projects\theobald-software.github.io\content\_de" />
-      <recent name="C:\Users\me\projects\theobald-software.github.io\content\_en" />
-      <recent name="C:\Users\me\projects\theobald-software.github.io\content\_en\erpconnect" />
-      <recent name="C:\Users\me\projects\theobald-software.github.io\_includes\_tech" />
-      <recent name="C:\Users\me\projects\theobald-software.github.io\_includes\_footer\de" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\me\projects\theobald-software.github.io\css\flags" />
       <recent name="C:\Users\me\projects\theobald-software.github.io\content\_en" />
       <recent name="C:\Users\me\projects\theobald-software.github.io\content\_en\markdown-example" />
       <recent name="C:\Users\me\projects\theobald-software.github.io\_includes\_tech" />
       <recent name="C:\Users\me\projects\theobald-software.github.io\_includes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\me\projects\theobald-software.github.io\content\_de" />
+      <recent name="C:\Users\me\projects\theobald-software.github.io\content\_en" />
+      <recent name="C:\Users\me\projects\theobald-software.github.io\content\_en\erpconnect" />
+      <recent name="C:\Users\me\projects\theobald-software.github.io\_includes\_tech" />
+      <recent name="C:\Users\me\projects\theobald-software.github.io\_includes\_footer\de" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,12 +401,12 @@
       <workItem from="1534495960332" duration="8902000" />
       <workItem from="1534755446046" duration="37686000" />
       <workItem from="1534940727012" duration="27570000" />
-      <workItem from="1535446704968" duration="545000" />
+      <workItem from="1535446704968" duration="4574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108834000" />
+    <option name="totallyTimeSpent" value="112863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
@@ -362,260 +438,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/rfc-server/example.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/rfc-server/sap-connection-with-sso-and-snc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/markdown-example.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/board-connector/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/64-bit-environment.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/64-bit-environment.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/licensing.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/licensing.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/prerequisites.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/prerequisites.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/rfc-server.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/rfc-server.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/yunio/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/yunio/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="61" lean-forward="true" selection-end-line="4" selection-end-column="75" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/rfc-server/connection-time-outs.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/board-connector/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="23" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/scss/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_de/404.html" />
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -647,13 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_tech/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -681,33 +496,6 @@
     <entry file="file://$PROJECT_DIR$/css/flags/flag-icon.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/breadcrumb.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -729,20 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1371">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -750,10 +524,318 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_content/en/example-content.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="92" selection-start-column="92" selection-end-column="92" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_content/table-of-contents.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="172" column="14" lean-forward="true" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
+        <state relative-caret-position="229">
+          <caret line="846" column="15" selection-start-line="846" selection-start-column="15" selection-end-line="846" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_tech/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_tech/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_footer/en/footer-section-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_footer/en/footer-section-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_footer/en/footer-section-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="15" column="42" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="42" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/board-connector/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/rfc-server.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/rfc-server/connection-time-outs.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/rfc-server/example.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/rfc-server/sap-connection-with-sso-and-snc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/64-bit-environment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/licensing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/erpconnect/prerequisites-and-installation/prerequisites.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/yunio/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/board-connector/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/rfc-server.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/64-bit-environment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/licensing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/erpconnect/prerequisites-and-installation/prerequisites.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/yunio/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/markdown-example.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="568">
+            <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_en/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_de/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
         </state>
       </provider>
     </entry>

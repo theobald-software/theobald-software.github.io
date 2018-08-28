@@ -7,6 +7,7 @@ parent: erpconnect
 childidentifier: prerequisites-and-installation
 permalink: /:collection/:path
 weight: 2
+lang: de_DE
 ---
 
 GERMAN VERSION

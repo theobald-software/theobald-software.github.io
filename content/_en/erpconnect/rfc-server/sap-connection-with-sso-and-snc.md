@@ -6,6 +6,7 @@ product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path
 weight: 2
+lang: en_GB
 ---
 
 The RFCServer class supports SAP Connection with SSO and SNC.

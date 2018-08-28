@@ -6,6 +6,7 @@ product: erpconnect
 parent: prerequisites-and-installation
 permalink: /:collection/:path
 weight: 1
+lang: en_GB
 ---
 
 **.NET Framework**

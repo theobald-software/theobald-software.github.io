@@ -7,6 +7,7 @@ parent: home
 childidentifier: yunio
 permalink: /:collection/:path
 weight: 1
+lang: de_DE
 ---
 
 GERMAN VERSION

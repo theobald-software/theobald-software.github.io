@@ -6,6 +6,7 @@ product: erpconnect
 parent: prerequisites-and-installation
 permalink: /:collection/:path
 weight: 3
+lang: en_GB
 ---
 
 To use ERPConnect you need also the following SAP libraries.

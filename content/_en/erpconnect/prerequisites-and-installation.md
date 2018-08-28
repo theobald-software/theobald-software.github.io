@@ -7,6 +7,7 @@ parent: erpconnect
 childidentifier: prerequisites-and-installation
 permalink: /:collection/:path
 weight: 2
+lang: en_GB
 ---
 
 ERPConnect was developed in C# and requires runtime components and installation steps described in this chapter.

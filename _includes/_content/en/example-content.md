@@ -1,0 +1,1 @@
+Hello, this is an _included_ piece of content, which can also be enriched with **markdown**.

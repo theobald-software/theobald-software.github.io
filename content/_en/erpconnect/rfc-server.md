@@ -7,6 +7,7 @@ parent: erpconnect
 childidentifier: rfc-server
 permalink: /:collection/:path
 weight: 3
+lang: en_GB
 ---
 
 Apart from the client functionality that allows function modules or BAPIs to be accessed in the SAP system, ERPConnect also offers the possibility of easily developing a server function.

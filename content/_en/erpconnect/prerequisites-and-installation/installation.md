@@ -6,6 +6,7 @@ product: erpconnect
 parent: prerequisites-and-installation
 permalink: /:collection/:path
 weight: 2
+lang: en_GB
 ---
 
 The installation process copies the class library, the documentation and all sample programs into your program files directory.

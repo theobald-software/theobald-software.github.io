@@ -6,6 +6,7 @@ product: erpconnect
 parent: prerequisites-and-installation
 permalink: /:collection/:path
 weight: 4
+lang: en_GB
 ---
 
 ERPConnect checks the licence number on every call (client and server). After the end of the test period ERPConnect will not run without a valid licence.  

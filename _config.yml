@@ -13,6 +13,25 @@ author:
   name: Theobald Software
   twitter: TheobaldSoftw
 
+twitter:
+  username: TheobaldSoftw
+  card: summary
+
+logo: /img/company/theobald.jpg
+
+# Only for SEO purposes, change the footer under _include/_footer as well if any of this changes.
+social:
+  name: Theobald Software
+  links:
+  - https://www.facebook.com/TheobaldSoftware
+  - https://twitter.com/TheobaldSoftw
+  - https://www.linkedin.com/company/theobald-software/
+  - https://www.youtube.com/user/TheobaldSoftware
+  - http://blog.theobald-software.com
+
+# TODO: please fill in
+# google_site_verification:
+
 # Maximum depth for breadcrumb. Do not change.
 breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
@@ -33,7 +52,6 @@ language:
       - title: "Return to Theobald Software"
         url: "https://theobald-software.com/en/"
     homepage: Homepage
-    language: Language
   de:
     navbar-links:
       - title: "Gehe zum Knowledgebase"
@@ -41,7 +59,6 @@ language:
       - title: "Zurück zum Theobald Software"
         url: "https://theobald-software.com/de/"
     homepage: Startseite
-    language: Sprache
 
 ########## SECTION 3 - COLLECTION CONFIGURATIONS ##########
 ########## Languages can easily be added this way.
@@ -65,6 +82,7 @@ highlighter: rouge
 plugins:
 - jekyll-sitemap
 - jekyll-redirect-from
+- jekyll-seo-tag
 # sass (styling)
 sass:
   sass_dir: css/scss
@@ -75,6 +93,7 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
+      image: /img/company/theobald.jpg
 # Exclude
 exclude:
   - CNAME

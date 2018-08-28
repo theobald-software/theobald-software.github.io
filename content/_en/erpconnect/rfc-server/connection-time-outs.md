@@ -6,6 +6,7 @@ product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path
 weight: 3
+lang: en_GB
 ---
 
 In most cases, an RFC server is designed to run for very long periods of time (often day and night). Because of this, the connection to the SAP system is bound to time out sooner or later. This can happen when the SAP system is booted or, for example, when there is a disruption in the connection within the network.

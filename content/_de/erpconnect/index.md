@@ -7,6 +7,7 @@ parent: home
 childidentifier: erpconnect
 permalink: /:collection/:path
 weight: 1
+lang: de_DE
 ---
 
 Welcome to the Online Help for ERPConnect, which includes the following chapters:
