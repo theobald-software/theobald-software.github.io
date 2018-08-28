@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80769417-0a2f-4567-962f-2c446250c5b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-    </list>
+    <list default="true" id="80769417-0a2f-4567-962f-2c446250c5b7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -109,7 +107,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="1411">
               <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
             </state>
           </provider>
@@ -307,6 +305,17 @@
             <path>
               <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -367,16 +376,15 @@
       <workItem from="1534495960332" duration="8902000" />
       <workItem from="1534755446046" duration="37686000" />
       <workItem from="1534940727012" duration="27570000" />
-      <workItem from="1535446704968" duration="13700000" />
+      <workItem from="1535446704968" duration="14031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121989000" />
+    <option name="totallyTimeSpent" value="122320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20717672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -809,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="1411">
           <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
         </state>
       </provider>
