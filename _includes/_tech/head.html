@@ -44,9 +44,25 @@
 
   {% seo %}
 
+
+   <!-- Only for calling js in the head rather than the footer for search functionality -->
   {% if layout.ext-head-js %}
     {% for js in layout.ext-head-js %}
       {% include _tech/ext-js.html js=js %}
+    {% endfor %}
+  {% endif %}
+
+  {% if layout.head-js %}
+    {% for js in layout.head-js %}
+      {% if js contains 'jquery' %}
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
+            }
+        </script>
+      {% else %}
+        <script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+      {% endif %}
     {% endfor %}
   {% endif %}
 

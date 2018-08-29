@@ -44,15 +44,38 @@ lang: en_GB
     </div>
 </div>
 
+<!-- TEMPLATES -->
 {% raw %}
+<script type="text/html" id="hit-template">
+    <div class="hit">
+        <div class="hit-content">
+            <h3 class="hit-price">{{title}}-{{product}}-{{collection}}</h3>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="no-results-template">
+    <div id="no-results-message">
+        <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
+    </div>
+</script>
+{% endraw %}
+<!-- /TEMPLATES -->
+
 <script>
     const search = instantsearch({
         appId: '4C27F1P1UC',
         apiKey: '09cbfe4bbe8e6380e31d4572f85ad22e',
         indexName: 'theobald-software-online-help',
-        routing: true
+        routing: true,
+        searchParameters: {
+            filters: 'collection:"{{current_lang}}"'
+        }
     });
+</script>
 
+{% raw %}
+<script>
     // initialize SearchBox
     search.addWidget(
         instantsearch.widgets.searchBox({
@@ -65,8 +88,8 @@ lang: en_GB
         instantsearch.widgets.hits({
             container: '#hits',
             templates: {
-                empty: 'No results',
-                item: '<em>{{title}}</em>: {{product}}'
+                item: getTemplate('hit'),
+                empty: getTemplate('no-results')
             }
         })
     );
@@ -143,19 +166,11 @@ lang: en_GB
             }
         })
     );
-</script>
-{% endraw %}
-
-<script>
-    search.addWidget(
-        instantsearch.widgets.configure({
-            facetFilters: ['collection:{{current_lang}}'],
-            attributesToRetrieve: [
-                'product',
-                'title'
-            ]
-        })
-    );
 
     search.start();
+
+    function getTemplate(templateName) {
+        return document.querySelector(`#${templateName}-template`).innerHTML;
+    }
 </script>
+{% endraw %}
