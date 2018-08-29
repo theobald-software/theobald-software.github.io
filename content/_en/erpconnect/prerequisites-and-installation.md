@@ -6,7 +6,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: prerequisites-and-installation
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: en_GB
 ---
 
