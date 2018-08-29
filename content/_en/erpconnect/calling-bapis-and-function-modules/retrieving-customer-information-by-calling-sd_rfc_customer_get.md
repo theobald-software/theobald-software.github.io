@@ -15,6 +15,7 @@ The import parameter KUNNR is filled with the string given by the user. Execute(
 
 After the call, the program loops through the table CUSTOMER_T and writes some columns to the console.
 
+
 <details>
 <summary>Click to open C# example.</summary>
 {% highlight csharp %}
@@ -50,6 +51,8 @@ static void Main(string[] args)
 }
 {% endhighlight %}
 </details>
+
+
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -80,6 +83,8 @@ Sub Main()
 End Sub
 {% endhighlight %}
 </details>  
+
+
 
 ![console](/img/content/calling-client-bapi-from-console.png){:class="img-responsive" height="300px" width="300px"}  
   
