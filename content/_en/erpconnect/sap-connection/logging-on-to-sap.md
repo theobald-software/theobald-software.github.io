@@ -106,7 +106,7 @@ For the connection with a single application server use the following format:
 
 The default Client Protocol is the RFC Protocol. If you want to use the new NW RFC Protocol set the following line:
 
- **con.Protocol = ClientProtocol.NWRFC; **
+ **con.Protocol = ClientProtocol.NWRFC;**
 
 **Tipp:** If you use the constructor of the R3Connection class to provide the login properties, 
 you can save some lines of code (see Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET ).
