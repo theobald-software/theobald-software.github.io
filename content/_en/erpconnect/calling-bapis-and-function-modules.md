@@ -6,7 +6,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: calling-bapis-and-function-modules
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 ---
 
