@@ -104,8 +104,8 @@ this.txtReturn.Text += func.Tables["RETURN"].Rows[0, "MESSAGE"] + "\r\n";
 The screenshots below show the ASP page and the created purchase order.
 
 
-![console](/img/content/create-purchase-order-ie.jpg){:class="img-responsive"}  
+![purchase-order1](/img/content/create-purchase-order-ie.jpg){:class="img-responsive"}  
 
 
-![console](/img/content/create-purchase-order-ie_02.jpg){:class="img-responsive"}  
+![purchase-order2](/img/content/create-purchase-order-ie_02.jpg){:class="img-responsive"}  
   
