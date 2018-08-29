@@ -1,1 +1,22 @@
-test
+---
+layout: page
+title: Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET
+description: Description about Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET
+product: erpconnect
+parent: erpconnect
+childidentifier: retrieving-customer-information-by-calling-sd_rfc_customer_get
+permalink: /:collection/:path
+weight: 1
+lang: en_GB
+---
+
+SD_RFC_CUSTOMER_GET is an RFC-enabled function module that should be present in every SAP system. It is designed for demonstration purposes. As an import parameter, a customer number should be transferred to the module and the customer's address is sent back to the calling program contained in a table parameter.
+The code below shows how to log on to the SAP system. An RFCFunction object is created by the method CreateFunction.
+The import parameter KUNNR is filled with the string given by the user. Execute() executes the function module.
+
+After the call, the program loops through the table CUSTOMER_T and writes some columns to the console.
+
+
+
+![console](/img/content/calling-client-bapi-from-console.png){:class="img-responsive" height="300px" width="300px"}  
+  
