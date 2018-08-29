@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Web Application usage
-description: Description about Web Application usage
+title: Web Application Usage
+description: Description about Web Application Usage
 product: erpconnect
 parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
