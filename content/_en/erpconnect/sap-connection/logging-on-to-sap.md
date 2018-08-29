@@ -13,15 +13,15 @@ There are two different ways to log on to the SAP system when using ERPConnect.
 A connection to a single application server can be established, or a connection can be made via Load Balancing. 
 Either way, the following parameter must be provided:
 
-*Name of the user (UserName property)
-*Password (Password property)
-*Language (Language property)
-*Client (Client property)
+* Name of the user (UserName property)
+* Password (Password property)
+* Language (Language property)
+* Client (Client property)
 
 If you want to use the direct login to an application server, two further properties must be set:
 
-*Name of the application server (Host property)
-*System number between 0 and 99 (SystemNumber property)
+* Name of the application server (Host property)
+* System number between 0 and 99 (SystemNumber property)
 
 If you have all properties filled in correctly, you can use the Open method to establish the connection. 
 Please call Open(true) for Load Balancing, or Open(false) for a single server login. 
@@ -49,9 +49,9 @@ Load Balancing
 
 **If you want to log on via Load Balancing, three properties are necessary:**
 
-*Name of the message server (MessageServer property)
-*Name of the group (LogonGroup property, e.g. PUBLIC)
-*System ID (SID property, e.g. MBS)
+* Name of the message server (MessageServer property)
+* Name of the group (LogonGroup property, e.g. PUBLIC)
+* System ID (SID property, e.g. MBS)
 
 
 <details>
