@@ -624,15 +624,14 @@ footer .fab {
 }
 
 .side-menu-list-item {
-  padding: 3px 3px 3px 0;
   font-size: 12px;
+  padding: 3px 3px 3px 1em;
 }
 
-@media only screen and (min-width: 768px) {
-  .side-menu-list-item {
-    padding: 6px 3px 6px 0;
-    font-size: 12px;
-  }
+.side-menu-list-item:before {
+  content: '\203A';
+  padding-right: 10px;
+  position: absolute;
 }
 
 .side-menu-list-item a {
@@ -659,7 +658,10 @@ footer .fab {
 
 .side-menu-list-item-child {
   list-style: none;
-  padding-left: 20px;
+}
+
+.side-menu-list-item-child:before {
+  content: "\00BB";
 }
 
 .side-menu-list-item-parent {
@@ -670,6 +672,7 @@ footer .fab {
 .side-menu-list-collapsible {
   list-style: none;
   padding: 0 !important;
+  margin-left: 0;
 }
 
 .caret {
