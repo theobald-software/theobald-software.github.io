@@ -3,8 +3,7 @@ layout: page
 title: Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET
 description: Description about Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET
 product: erpconnect
-parent: erpconnect
-childidentifier: retrieving-customer-information-by-calling-sd_rfc_customer_get
+parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
