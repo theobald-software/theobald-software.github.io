@@ -18,7 +18,7 @@ The example below shows how to execute the BAPI Material.Availability in a Windo
 
 The figure below shows the form during design time. 
 
-![bapi-stock](/img/content/calling-client-bapi-stock-001_n.png){:class="img-responsive"}  
+![bapi-stock](/img/content/calling-client-bapi-stock-001_n.png){:class="img-responsive" height="300px" width="300px"}    
 
 Before executing the BAPI, there are at least three import parameters to be defined: the Plant (PLANT), the material number (MATERIAL) and the unit (UNIT). 
 
@@ -89,7 +89,7 @@ Private Sub GetQuan_Click(ByVal sender As System.Object, ByVal e As System.Event
 The figures below show the example program in action. In the first try, the user types a non-existing material number so an error message is given by the BAPI. The second figure shows a correct quantity indication.
 
 
-![bapi-stock02](/img/content/calling-client-bapi-stock-002_n.png){:class="img-responsive"}  
+![bapi-stock02](/img/content/calling-client-bapi-stock-002_n.png){:class="img-responsive" height="200px" width="200px"}  
 
-![bapi-stock03](/img/content/calling-client-bapi-stock-003_n.png){:class="img-responsive"}  
+![bapi-stock03](/img/content/calling-client-bapi-stock-003_n.png){:class="img-responsive" height="200px" width="200px"}  
   
