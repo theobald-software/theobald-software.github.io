@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Using ERPConnect in a Web Application
-description: Description about Using ERPConnect in a Web Application
+title: Web Application ussage
+description: Description about Web Application ussage
 product: erpconnect
 parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
