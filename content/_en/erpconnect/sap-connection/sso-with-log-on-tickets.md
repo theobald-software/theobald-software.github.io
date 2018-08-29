@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Example
-description: Description about example page for rfc server
+title: SAP Connection with SSO and SNC
+description: Description about SAP Connection with SSO and SNC
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path
