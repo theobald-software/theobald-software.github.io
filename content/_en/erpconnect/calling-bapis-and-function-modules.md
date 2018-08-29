@@ -19,6 +19,6 @@ that is provided by ERPConnect to manage the exchange of imports, exports and ta
 
 The following examples show how to log on to an SAP system, and how to use these objects to call function modules within the SAP system.
 
-![clientarchitecture](/img/content/erpconnect-client-architecture.png){:class="img-responsive" height="300px" width="300px"}  
+![clientarchitecture](/img/content/erpconnect-client-architecture.png){:class="img-responsive" height="500px" width="375px"}  
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
