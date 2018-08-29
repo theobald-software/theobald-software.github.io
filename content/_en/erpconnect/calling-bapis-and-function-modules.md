@@ -17,6 +17,8 @@ The function module should have the attribute Remote Enabled to be called from o
 Every function module provides import and export parameters. These parameters are either given to or from the function module. Besides these scalar parameters, there can be also an exchange of tables. The figure below shows the principle of the object hierarchy 
 that is provided by ERPConnect to manage the exchange of imports, exports and table parameters.
 
-The following examples show how to log on to an SAP system, and how to use these objects to call function modules within the SAP system. 
+The following examples show how to log on to an SAP system, and how to use these objects to call function modules within the SAP system.
+
+![librfc32dll](/img/content/erpconnect-client-architecture.png){:class="img-responsive" height="300px" width="300px"}  
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
