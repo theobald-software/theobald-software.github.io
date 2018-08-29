@@ -6,6 +6,6 @@ product: erpconnect
 parent: erpconnect
 childidentifier: sap-connection
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: en_GB
 ---
