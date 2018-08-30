@@ -1030,6 +1030,75 @@ td.gutter pre {
 }
 
 /* Search */
+
 .ais-refinement-list--count {
   display:none;
+}
+.ais-pagination--item__active {
+  background: $color-highlight;
+}
+
+#search-box {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.ais-search-box {
+  max-width: 50%;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header-search {
+    margin-top: 107px;
+  }
+}
+
+.header-section-search {
+  background-color: $color-background-secondary;
+}
+
+.search-heading {
+  text-align: center;
+}
+.search-heading h1 {
+  font-size: 28px;
+}
+
+#categories-menuSelect {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ais-hits em {
+  color: $color-highlight;
+}
+
+#hits a,
+#hits a:hover {
+  color: $color-text-primary;
+  text-decoration: none;
+}
+
+.hit-content h3 {
+  margin-bottom: 0;
+}
+
+.hit-for-product-icon {
+  display: inline;
+  width: auto;
+  height: 15px;
+}
+.hit-for-product-text {
+  display: inline;
+  white-space: nowrap;
+}
+
+#pagination {
+  margin-top: 15px;
+  text-align: center;
+}
+.ais-pagination {
+  display: inline-block;
 }

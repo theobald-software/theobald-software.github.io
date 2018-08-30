@@ -1,6 +1,6 @@
 ---
 layout: search
-title: Search
+title: Search the Online Help
 description: The search page for the Theobald Software Online Help portal
 permalink: /:collection/:path
 weight: 0
@@ -10,36 +10,37 @@ lang: en_GB
 {% capture current_lang %}{% include _tech/current-lang.html %}{% endcapture %}
 {% assign current_lang = current_lang | strip_newlines %}
 
-<header class="header-section">
-    <div class="intro-header no-img">
+<header class="header-section header-section-search">
+    <div class="intro-header intro-header-search no-img">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="homepage-heading">
+                <div class="col-md-12">
+                    <div class="search-heading">
                         <h1>{{ page.title }}</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="search-box">
+        <!-- SearchBox widget will appear here -->
+    </div>
 </header>
-<br>
+
 <div class="container container-homepage" role="main">
     <div class="row">
-        <div id="search-box">
-            <!-- SearchBox widget will appear here -->
-        </div>
-        <br>
-        <div id="categories-menuSelect">
-            <!-- Product Select widget will appear here -->
-        </div>
-        <br><br>
-        <div id="hits">
-            <!-- Hits widget will appear here -->
-        </div>
-        <br><br>
-        <div id="pagination">
-            <!-- Pagination widget will appear here -->
+        <div class="col-md-12">
+            <div id="categories-menuSelect">
+                <!-- Product Select widget will appear here -->
+            </div>
+            <div class="ais-menu-select--header ais-header">Results</div>
+            <div id="hits">
+                <!-- Hits widget will appear here -->
+            </div>
+            <div id="pagination">
+                <!-- Pagination widget will appear here -->
+            </div>
         </div>
     </div>
 </div>
@@ -47,11 +48,16 @@ lang: en_GB
 <!-- TEMPLATES -->
 {% raw %}
 <script type="text/html" id="hit-template">
-    <div class="hit">
-        <div class="hit-content">
-            <h3 class="hit-price">{{title}}-{{product}}-{{collection}}</h3>
+    <a href="{{url}}">
+        <div class="hit">
+            <div class="hit-content">
+                <h3 class="hit-page-title">{{title}}</h3>
+                <div class="hit-for-product"><p class="hit-for-product-title invisible">{{label}}</p></div>
+                <p class="hit-description">{{{_highlightResult.content.value}}}</p>
+            </div>
         </div>
-    </div>
+    </a>
+    <div class="ais-menu-select--header ais-header"></div>
 </script>
 
 <script type="text/html" id="no-results-template">
@@ -69,8 +75,10 @@ lang: en_GB
         indexName: 'theobald-software-online-help',
         routing: true,
         searchParameters: {
-            filters: 'collection:"{{current_lang}}"'
-        }
+            filters: 'collection:"{{current_lang}}" AND NOT product:"none"'
+        },
+        highlightPreTag: '<em class="search-highlight">',
+        highlightPostTag: '</em>'
     });
 </script>
 
@@ -80,7 +88,8 @@ lang: en_GB
     search.addWidget(
         instantsearch.widgets.searchBox({
             container: '#search-box',
-            placeholder: 'Search...'
+            placeholder: 'Search...',
+            poweredBy: true
         })
     );
 
@@ -90,6 +99,42 @@ lang: en_GB
             templates: {
                 item: getTemplate('hit'),
                 empty: getTemplate('no-results')
+            },
+            transformData: {
+                item: function(data) {
+                    switch (data.product) {
+                        case 'erpconnect':
+                            data.label = 'ERPConnect';
+                            break;
+                        case 'erpconnect-services':
+                            data.label = 'ERPConnect Services';
+                            break;
+                        case 'board-connector':
+                            data.label = 'Board Connector';
+                            break;
+                        case 'xtract-for-alteryz':
+                            data.label = 'Xtract for Alteryx';
+                            break;
+                        case 'xtract-is':
+                            data.label = 'Xtract IS';
+                            break;
+                        case 'xtract-rs':
+                            data.label = 'Xtract RS';
+                            break;
+                        case 'xtract-universal':
+                            data.label = 'Xtract Universal';
+                            break;
+                        case 'yunio':
+                            data.label = 'Yunio';
+                            break;
+                        case 'none':
+                        default:
+                            data.label = 'none';
+                            break;
+                    }
+
+                    return data;
+                }
             }
         })
     );
@@ -98,9 +143,7 @@ lang: en_GB
     search.addWidget(
         instantsearch.widgets.pagination({
             container: '#pagination',
-            maxPages: 20,
-            // default is to scroll to 'body', here we disable this behavior
-            scrollTo: false
+            maxPages: 10
         })
     );
 
@@ -110,8 +153,9 @@ lang: en_GB
             attributeName: 'product',
             limit: 10,
             templates: {
-                header: 'Products',
-                item: '{{label}}'
+                header: 'Filters',
+                item: '{{label}}',
+                seeAllOption: "Search through all products"
             },
             transformData: {
                 item: function(data) {
@@ -143,7 +187,7 @@ lang: en_GB
                             break;
                         case 'none':
                         default:
-                            data.label = 'No Product';
+                            data.label = 'none';
                             break;
                     }
 
@@ -167,10 +211,40 @@ lang: en_GB
         })
     );
 
-    search.start();
-
     function getTemplate(templateName) {
         return document.querySelector(`#${templateName}-template`).innerHTML;
     }
+
+    search.start();
+
+    search.on('render', function() {
+        $('.hit-for-product-title').each(function() {
+
+            switch ($(this).text()) {
+                case 'ERPConnect':
+                    $(this).parent().html('<img src="/img/products/TS_Icon_2C_ERPConnect.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">ERPConnect</p>');
+                    break;
+                case 'ERPConnect Services':
+                    break;
+                case 'Board Connector':
+                    break;
+                case 'Xtract for Alteryx':
+                    break;
+                case 'Xtract IS':
+                    break;
+                case 'Xtract RS':
+                    break;
+                case 'Xtract Universal':
+                    break;
+                case 'Yunio':
+                    break;
+                case 'none':
+                default:
+                    $(this).parent().html("<p>fail</p>");
+                    break;
+            }
+        });
+    });
+
 </script>
 {% endraw %}
