@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SAP Connection
-description: SAP Connection description
+title: Administration
+description: Administration description
 product: erpconnect
 parent: erpconnect
 childidentifier: administration
