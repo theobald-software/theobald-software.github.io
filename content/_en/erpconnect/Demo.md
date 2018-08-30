@@ -12,6 +12,13 @@ lang: en_GB
 
 Hier kann man gucken, was alles so geht.....
 
+# Überschrift
+
+## 2. Überschrift
+
+Das ist eine Änderung
+
+
 # Including content
 To write content that has to be easily injectable in other pages, navigate to the folder __includes_ and then the folder __content_.
 There will be folders for every language, as content is language specific. Go to the correct folder and make a new file there.
