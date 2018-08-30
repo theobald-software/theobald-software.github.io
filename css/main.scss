@@ -634,6 +634,13 @@ footer .fab {
   position: absolute;
 }
 
+.side-menu-list-item-parent:before,
+.side-menu-list-item-search:before{
+  content: '\2039';
+  padding-right: 10px;
+  position: absolute;
+}
+
 .side-menu-list-item a {
   font-weight: 400;
   padding-left: 10px;
@@ -667,6 +674,7 @@ footer .fab {
 .side-menu-list-item-parent {
   padding-bottom: 5px;
   padding-top: 5px;
+  margin-bottom: 5px;
 }
 
 .side-menu-list-collapsible {

@@ -48,7 +48,7 @@ lang: en_GB
 <!-- TEMPLATES -->
 {% raw %}
 <script type="text/html" id="hit-template">
-    <a href="{{url}}">
+    <a href="{{url}}?fromSearch=true">
         <div class="hit">
             <div class="hit-content">
                 <h3 class="hit-page-title">{{title}}</h3>
@@ -225,22 +225,28 @@ lang: en_GB
                     $(this).parent().html('<img src="/img/products/TS_Icon_2C_ERPConnect.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">ERPConnect</p>');
                     break;
                 case 'ERPConnect Services':
+                    $(this).parent().html('<img src="/img/products/TS_Icon_2C_ERPConnectServices.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">ERPConnect Services</p>');
                     break;
                 case 'Board Connector':
+                    $(this).parent().html('<img src="/img/products/TS_Icon_2C_ERPConnect.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Board Connector</p>');
                     break;
                 case 'Xtract for Alteryx':
+                    $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractAlteryx.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract for Alteryx</p>');
                     break;
                 case 'Xtract IS':
+                    $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractIS.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract IS</p>');
                     break;
                 case 'Xtract RS':
+                    $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractRS.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract RS</p>');
                     break;
                 case 'Xtract Universal':
+                    $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractUniversal.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract Universal</p>');
                     break;
                 case 'Yunio':
+                    $(this).parent().html('<img src="/img/products/TS_Icon_2C_YunIO.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Yunio</p>');
                     break;
                 case 'none':
                 default:
-                    $(this).parent().html("<p>fail</p>");
                     break;
             }
         });
