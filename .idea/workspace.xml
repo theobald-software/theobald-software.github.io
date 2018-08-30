@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80769417-0a2f-4567-962f-2c446250c5b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +30,7 @@
           <entry key="_algolia_api_key" value="1" />
           <entry key="css" value="10" />
           <entry key="gitignore" value="3" />
-          <entry key="html" value="184" />
+          <entry key="html" value="185" />
           <entry key="js" value="14" />
           <entry key="json" value="1" />
           <entry key="md" value="231" />
@@ -42,7 +42,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="8881" />
+          <entry key="HTML" value="8888" />
           <entry key="JavaScript" value="375" />
           <entry key="Markdown" value="5333" />
           <entry key="PLAIN_TEXT" value="84" />
@@ -53,7 +53,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="10" />
-          <entry key="HTML" value="184" />
+          <entry key="HTML" value="185" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="14" />
           <entry key="Markdown" value="231" />
@@ -67,7 +67,7 @@
         <counts>
           <entry key="Gemfile" value="45" />
           <entry key="gitignore" value="39" />
-          <entry key="html" value="8881" />
+          <entry key="html" value="8888" />
           <entry key="js" value="375" />
           <entry key="md" value="5333" />
           <entry key="scss" value="3161" />
@@ -98,13 +98,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="272">
-                <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -201,7 +198,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/content/_en/erpconnect/aaaprerequisites-and-installation.md" />
-        <option value="$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/404.html" />
         <option value="$PROJECT_DIR$/content/_en/404.html" />
@@ -251,6 +247,7 @@
         <option value="$PROJECT_DIR$/_includes/_tech/nav.html" />
         <option value="$PROJECT_DIR$/_includes/_tech/index.html" />
         <option value="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" />
+        <option value="$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html" />
       </list>
     </option>
   </component>
@@ -289,21 +286,7 @@
               <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="_footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="_footer" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="_footer" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="_tech" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -320,52 +303,6 @@
               <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
               <item name="_de" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="_de" type="462c0819:PsiDirectoryNode" />
-              <item name="board-connector" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="_en" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="_en" type="462c0819:PsiDirectoryNode" />
-              <item name="erpconnect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="_en" type="462c0819:PsiDirectoryNode" />
-              <item name="erpconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="prerequisites-and-installation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="_en" type="462c0819:PsiDirectoryNode" />
-              <item name="erpconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="rfc-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -425,12 +362,12 @@
       <workItem from="1534495960332" duration="8902000" />
       <workItem from="1534755446046" duration="37686000" />
       <workItem from="1534940727012" duration="27570000" />
-      <workItem from="1535446704968" duration="26946000" />
+      <workItem from="1535446704968" duration="27119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135235000" />
+    <option name="totallyTimeSpent" value="135408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
@@ -702,9 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/current-lang.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -842,13 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_tech/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_footer/en/footer-section-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -862,10 +789,24 @@
     <entry file="file://$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <first_editor relative-caret-position="289">
+            <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_tech/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
