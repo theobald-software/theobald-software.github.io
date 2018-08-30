@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80769417-0a2f-4567-962f-2c446250c5b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_includes/_tech/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_tech/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +33,7 @@
           <entry key="html" value="184" />
           <entry key="js" value="14" />
           <entry key="json" value="1" />
-          <entry key="md" value="229" />
+          <entry key="md" value="231" />
           <entry key="scss" value="23" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
@@ -44,7 +44,7 @@
         <counts>
           <entry key="HTML" value="8881" />
           <entry key="JavaScript" value="375" />
-          <entry key="Markdown" value="5328" />
+          <entry key="Markdown" value="5333" />
           <entry key="PLAIN_TEXT" value="84" />
           <entry key="SCSS" value="3161" />
           <entry key="YAML" value="1426" />
@@ -56,7 +56,7 @@
           <entry key="HTML" value="184" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="14" />
-          <entry key="Markdown" value="229" />
+          <entry key="Markdown" value="231" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="SCSS" value="23" />
           <entry key="XML" value="1" />
@@ -69,7 +69,7 @@
           <entry key="gitignore" value="39" />
           <entry key="html" value="8881" />
           <entry key="js" value="375" />
-          <entry key="md" value="5328" />
+          <entry key="md" value="5333" />
           <entry key="scss" value="3161" />
           <entry key="yml" value="1426" />
         </counts>
@@ -88,11 +88,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/_tech/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
-              <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="272">
+                <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -188,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/scss/_colors.scss" />
         <option value="$PROJECT_DIR$/content/_en/erpconnect/aaaprerequisites-and-installation.md" />
         <option value="$PROJECT_DIR$/_includes/_tech/side-menu-current-product.html" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
@@ -239,6 +250,7 @@
         <option value="$PROJECT_DIR$/_includes/_footer/en/footer-section-2.md" />
         <option value="$PROJECT_DIR$/_includes/_tech/nav.html" />
         <option value="$PROJECT_DIR$/_includes/_tech/index.html" />
+        <option value="$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md" />
       </list>
     </option>
   </component>
@@ -277,7 +289,21 @@
               <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="_tech" type="462c0819:PsiDirectoryNode" />
+              <item name="_footer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="_footer" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theobald-software.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="_footer" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="theobald-software.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -399,12 +425,12 @@
       <workItem from="1534495960332" duration="8902000" />
       <workItem from="1534755446046" duration="37686000" />
       <workItem from="1534940727012" duration="27570000" />
-      <workItem from="1535446704968" duration="26303000" />
+      <workItem from="1535446704968" duration="26946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134592000" />
+    <option name="totallyTimeSpent" value="135235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
@@ -436,16 +462,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/_content/en/example-content.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="92" selection-start-column="92" selection-end-column="92" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_content/table-of-contents.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -798,16 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_footer/en/footer-section-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="289">
-            <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_tech/side-menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -839,7 +845,27 @@
     <entry file="file://$PROJECT_DIR$/_includes/_tech/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
-          <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_footer/en/footer-section-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="289">
+            <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_footer/de/footer-section-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
