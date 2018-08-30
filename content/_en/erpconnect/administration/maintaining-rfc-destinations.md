@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Example
-description: Description about example page for rfc server
+title: Maintaining RFC Destinations
+description: Description about Maintaining RFC Destinations
 product: erpconnect
 parent: administration
 permalink: /:collection/:path
