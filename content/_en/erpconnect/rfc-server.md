@@ -6,7 +6,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: rfc-server
 permalink: /:collection/:path
-weight: 3
+weight: 7
 lang: en_GB
 ---
 
