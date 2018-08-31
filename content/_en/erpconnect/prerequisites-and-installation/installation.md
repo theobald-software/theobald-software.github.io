@@ -23,3 +23,5 @@ All files marked with (<b>*</b>) may be redistributed to customers together with
 | TransactionRecorder.exe | Small tool to record batch sequences and create appropriate .NET code (see [Batch Input Background Processing](/link)) |
 | IdocSchemeGenerator.exe | 	Small tool to generate XML schemas for IDocs (see [XML-Support for IDoc programming](/link)) |
 | FunctionTemplateGenerator.exe | Small tool to generate XML templates for RFCFunction objects (see [Improve your Perfor-mance by Using Templates](/link)) |
+
+XXX
