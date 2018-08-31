@@ -33,13 +33,16 @@ using(R3Connection con = new R3Connection("host", 11, "RFCTestUser", "pass01", "
 {% endhighlight %}
 </details>
 
-![AuxiliaryFunctions01](/img/content/AuxiliaryFunctions01.png){:class="img-responsive" }
+![AuxiliaryFunctions01](/img/content/AuxiliaryFunctions01.png){:class="img-responsive" width="600px"}
 
 **SearchForQueries**
+
 Based on specified work space, user group search pattern, query name search pattern and function area name search pattern, this reads out all executable queries in the system and returns the query output.
 
 **SearchForUserGroups**
+
 Based on specified work space and user group search pattern, this reads out all suitable user groups.
 
 **SearchForVariants**
+
 Based on specified work area, user group name and query name, this reads out all available variants for the query (incl. descriptive text). These variants can then be transferred to e.g. the Variant attribute of the query object. 
