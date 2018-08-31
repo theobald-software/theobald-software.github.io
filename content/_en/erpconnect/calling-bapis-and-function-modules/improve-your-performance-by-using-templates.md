@@ -5,7 +5,7 @@ description: Description about Improve your Performance by Using Templates
 product: erpconnect
 parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 ---
 
