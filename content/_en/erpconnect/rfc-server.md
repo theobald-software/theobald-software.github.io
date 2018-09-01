@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RFC Server
-description: RFC Server description
+description: RFC Server
 product: erpconnect
 parent: erpconnect
 childidentifier: rfc-server

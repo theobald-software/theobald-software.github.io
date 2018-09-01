@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Improve your Performance by Using Templates
-description: Description about Improve your Performance by Using Templates
+description: Improve your Performance by Using Templates
 product: erpconnect
 parent: calling-bapis-and-function-modules
 permalink: /:collection/:path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SAP connection with SSO and SNC
-description: Description about sap connection with sso and snc for rfc server
+description: SAP connection with SSO and SNC
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sending an ORDER IDoc
-description: Description about Sending an ORDER IDoc
+description: Sending an ORDER IDoc
 product: erpconnect
 parent: receiving-and-sending-idocs
 permalink: /:collection/:path

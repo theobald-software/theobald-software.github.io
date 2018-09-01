@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Logging on to SAP
-description: Description about Logging on to SAP
+description: Logging on to SAP
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path

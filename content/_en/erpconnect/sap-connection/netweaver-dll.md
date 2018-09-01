@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Netweaver DLL
-description: Description about Netweaver DLL
+description: Netweaver DLL
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path

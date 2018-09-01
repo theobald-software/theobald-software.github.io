@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Connection time-outs
-description: Description about connection time-outs for rfc server
+description: Connection time-outs for rfc server
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: XML-Support for IDoc programming
-description: Description about XML-Support for IDoc programming
+description: XML-Support for IDoc programming
 product: erpconnect
 parent: receiving-and-sending-idocs
 permalink: /:collection/:path

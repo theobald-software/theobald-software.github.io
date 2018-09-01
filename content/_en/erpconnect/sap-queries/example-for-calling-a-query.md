@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Example for calling a query
-description: Description about Example for calling a query
+description: Example for calling a query
 product: erpconnect
 parent: sap-queries
 permalink: /:collection/:path

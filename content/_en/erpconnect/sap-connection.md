@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SAP Connection
-description: SAP Connection description
+description: SAP Connection
 product: erpconnect
 parent: erpconnect
 childidentifier: sap-connection

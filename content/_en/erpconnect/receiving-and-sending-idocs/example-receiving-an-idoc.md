@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Example- Receiving an IDoc
-description: Description about Example- Receiving an IDoc
+description: Example- Receiving an IDoc
 product: erpconnect
 parent: receiving-and-sending-idocs
 permalink: /:collection/:path

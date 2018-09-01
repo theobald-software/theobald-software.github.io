@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Calling BAPIs and Function Modules
-description: Description about Calling BAPIs and Function Modules
+description: Calling BAPIs and Function Modules
 product: erpconnect
 parent: erpconnect
 childidentifier: calling-bapis-and-function-modules

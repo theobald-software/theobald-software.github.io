@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Using SOAP, HTTP and the SAP NetWeaver / Web Application Server
-description: Description about Using SOAP, HTTP and the SAP NetWeaver / Web Application Server
+description: Using SOAP, HTTP and the SAP NetWeaver / Web Application Server
 product: erpconnect
 parent: calling-bapis-and-function-modules
 permalink: /:collection/:path

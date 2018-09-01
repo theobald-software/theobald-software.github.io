@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Receiving and Sending IDocs
-description: Description about Receiving and Sending IDocs
+description: Receiving and Sending IDocs
 product: erpconnect
 parent: erpconnect
 childidentifier: receiving-and-sending-idocs

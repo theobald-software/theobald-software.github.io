@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Non-RFC enabled modules
-description: Description about Non-RFC enabled modules
+description: Non-RFC enabled modules
 product: erpconnect
 parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
