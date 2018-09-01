@@ -17,3 +17,5 @@ Before we delve deeper into LINQ to SAP in this chapter, let's first have a look
 - LINQ to SAP only works in .NET 3.5 (or higher). Previous .NET versions do not support LINQ.
 - The LINQ to SAP Designer works in Visual Studio from version 2008 on (excluding Express).
 - To distribute the finished application to customers, all you have to give them is the ERPConnect35.dll or a higher version. No other dlls are needed.
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

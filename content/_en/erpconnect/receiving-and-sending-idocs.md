@@ -20,3 +20,6 @@ Each segment can contain several child segments and every segment contains sever
 
 
 ![SAP-IDoc-Object-Model](/img/content/SAP-IDoc-Object-Model.png){:class="img-responsive"}
+
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

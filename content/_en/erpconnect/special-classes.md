@@ -11,3 +11,5 @@ lang: en_GB
 ---
 
 Besides standard classes for the RFC server and client functions, there are several special classes included in the ERPConnect toolkit. These special classes encapsulate recurrent tasks and are all located in the namespace ERPConnect.Utils. 
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
