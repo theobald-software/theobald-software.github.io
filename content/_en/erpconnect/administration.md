@@ -6,7 +6,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: administration
 permalink: /:collection/:path
-weight: 8
+weight: 10
 lang: en_GB
 ---
 
