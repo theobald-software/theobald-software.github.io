@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Example
-description: Description about example page for rfc server
+description: Example
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path

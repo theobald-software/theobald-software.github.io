@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SAP Connection with SSO and SNC
-description: Description about SAP Connection with SSO and SNC
+description: SAP Connection with SSO and SNC
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path

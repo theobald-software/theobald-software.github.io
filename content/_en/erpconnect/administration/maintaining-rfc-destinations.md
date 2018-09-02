@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Maintaining RFC Destinations
-description: Description about Maintaining RFC Destinations
+description: Maintaining RFC Destinations
 product: erpconnect
 parent: administration
 permalink: /:collection/:path

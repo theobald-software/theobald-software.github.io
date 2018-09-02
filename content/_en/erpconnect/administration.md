@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Administration
-description: Administration description
+description: Administration
 product: erpconnect
 parent: erpconnect
 childidentifier: administration

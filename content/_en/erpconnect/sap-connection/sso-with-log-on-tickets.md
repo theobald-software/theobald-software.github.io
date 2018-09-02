@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SSO with Log On Tickets
-description: Description about SSO with Log On Tickets
+description: SSO with Log On Tickets
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path

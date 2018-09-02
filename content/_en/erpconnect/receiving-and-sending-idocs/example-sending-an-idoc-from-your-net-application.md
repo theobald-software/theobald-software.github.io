@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Example- Sending an IDoc from your .Net Application
-description: Description about Example- Sending an IDoc from your .Net Application
+description: Example- Sending an IDoc from your .Net Application
 product: erpconnect
 parent: receiving-and-sending-idocs
 permalink: /:collection/:path

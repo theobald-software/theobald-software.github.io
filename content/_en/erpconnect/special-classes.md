@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Special Classes
-description: Description about Special Classes
+description: Special Classes
 product: erpconnect
 parent: erpconnect
 childidentifier: special-classes

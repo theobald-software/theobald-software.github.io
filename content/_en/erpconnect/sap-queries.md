@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SAP Queries
-description: Description about SAP Queries
+description: SAP Queries
 product: erpconnect
 parent: erpconnect
 childidentifier: sap-queries

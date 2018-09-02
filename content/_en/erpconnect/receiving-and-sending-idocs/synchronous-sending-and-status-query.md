@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Synchronous sending and status query
-description: Description about Synchronous sending and status query
+description: Synchronous sending and status query
 product: erpconnect
 parent: receiving-and-sending-idocs
 permalink: /:collection/:path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SSO with SNC
-description: Description about SSO with SNC
+description: SSO with SNC
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path

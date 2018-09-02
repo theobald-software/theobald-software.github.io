@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Auxiliary functions
-description: Description about Auxiliary functions
+description: Auxiliary functions
 product: erpconnect
 parent: sap-queries
 permalink: /:collection/:path
