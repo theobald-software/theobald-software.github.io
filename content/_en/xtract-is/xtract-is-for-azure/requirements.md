@@ -3,7 +3,7 @@ layout: page
 title: Requirements
 description: Requirements
 product: xtract-is
-parent: xtract-is-for-azure
+parent: xtractis-for-azure
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

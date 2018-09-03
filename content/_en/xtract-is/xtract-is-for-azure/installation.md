@@ -3,7 +3,7 @@ layout: page
 title: Installation
 description: Installation
 product: xtract-is
-parent: xtract-is-for-azure
+parent: xtractis-for-azure
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
