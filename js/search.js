@@ -18,7 +18,7 @@ var main = {
         search.addWidget(
             instantsearch.widgets.searchBox({
                 container: '#search-box',
-                placeholder: document.querySelector('#search-box-text').innerHTML,
+                placeholder: (getUrlVars()["fromHomepage"] ? getUrlVars()["fromHomepage"] : document.querySelector('#search-box-text').innerHTML),
                 poweredBy: true
             })
         );
@@ -146,6 +146,11 @@ var main = {
         // start instantsearch
         search.start();
 
+        $(document).ready(function(){
+            $('.ais-search-box--input').val(getUrlVars()["fromHomepage"]);
+            search.helper.setQuery(getUrlVars()["fromHomepage"]).search();
+        });
+
         // upon rendering, check the product title and enhance the appearance.
         // TODO: refactor the cases so the html isn't injected like it is now.
         search.on('render', function() {
@@ -184,5 +189,17 @@ var main = {
         });
     }
 };
+
+function getUrlVars() {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
 
 document.addEventListener('DOMContentLoaded', main.init);

@@ -1,0 +1,68 @@
+<!-- PAGE -->
+<header class="header-section header-section-search">
+    <div class="intro-header intro-header-search no-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-heading">
+                        <h1>{{ include.search-title }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="search-box">
+        <!-- SearchBox -->
+    </div>
+</header>
+
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="categories-menuSelect">
+                <!-- Product Select -->
+            </div>
+            <div class="ais-menu-select--header ais-header">
+                {{ include.search-results }}
+            </div>
+            <div id="hits">
+                <!-- Hits -->
+            </div>
+            <div id="pagination">
+                <!-- Pagination  -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /PAGE -->
+
+<!-- TEMPLATES -->
+{% raw %}
+<script type="text/html" id="hit-template">
+    <a href="{{url}}?fromSearch=true">
+        <div class="hit">
+            <div class="hit-content">
+                <h3 class="hit-page-title">{{title}}</h3>
+                <div class="hit-for-product"><p class="hit-for-product-title invisible">{{label}}</p></div>
+                <p class="hit-description">{{{_highlightResult.content.value}}}</p>
+            </div>
+        </div>
+    </a>
+    <div class="ais-menu-select--header ais-header"></div>
+</script>
+
+<script type="text/html" id="no-results-template">
+    <div id="no-results-message">
+        <p>{% endraw %}{{ include.search-no-results }}{% raw %} <em>"{{query}}"</em>.</p>
+    </div>
+</script>
+{% endraw %}
+<!-- /TEMPLATES -->
+
+<!-- LANGUAGE -->
+<div id="language" class="invisible">{{ include.lang }}</div>
+<div id="search-box-text" class="invisible">{{ include.search-box-text }}</div>
+<div id="search-filters" class="invisible">{{ include.search-filters }}</div>
+<div id="search-filter-all-products" class="invisible">{{ include.search-filter-all-products }}</div>
+<!-- /LANGUAGE -->
