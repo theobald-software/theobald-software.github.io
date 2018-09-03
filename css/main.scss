@@ -58,9 +58,6 @@ hr.small {
   border: 4px inherit;
   border-radius: 3px;
 }
-hr.small.no-bottom-margin {
-  margin: 15px 0 0;
-}
 
 figure {
   padding-bottom: 0.5em;
@@ -851,7 +848,7 @@ table tr td :last-child {
 details {
   border: 1px solid $color-border-primary;
   padding: 5px;
-  margin: 5px 0;
+  margin: 15px 0;
   border-radius: 10px;
 }
 

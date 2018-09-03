@@ -1,4 +1,4 @@
-{% assign items = include.collection | where:"parent",include.parent | sort: 'weight' %}
+{% assign items = include.collection | where:"parent",include.parent | where:"product",page.product | sort: 'weight' %}
 {% for item in items %}
 <a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
 {% endfor %}

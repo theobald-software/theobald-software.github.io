@@ -19,30 +19,36 @@
 	{% include _tech/side-menu-current-product.html %}
 
 	<ul class="side-menu-list" id="accordion">
-		{% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.childidentifier contains page.parent" %}
+		{% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.childidentifier == page.parent" %}
 		{% for doc in filtered_docs %}
-			<div class="side-menu-list-item-hover"><li class="side-menu-list-item side-menu-list-item-parent">
-			{% if doc.childidentifier contains 'home' %}
-				<a href="{{doc.url | remove: '/index'}}" class="side-menu-list-item-link">Back to <strong>{{homepage_string}}</strong></a>
+			<div class="side-menu-list-item-hover">
+			{% if doc.childidentifier == 'home' %}
+				<li class="side-menu-list-item side-menu-list-item-parent">
+					<a href="{{doc.url | remove: '/index'}}" class="side-menu-list-item-link">Back to <strong>{{homepage_string}}</strong></a>
+				</li>
 				{% assign show_products_in_menu = false %}
 			{% else %}
-				<a href="{{doc.url}}" class="side-menu-list-item-link">Back to <strong>{{doc.title}}</strong></a>
-				{% assign show_products_in_menu = true %}
+				{% if doc.product == page.product %}
+					<li class="side-menu-list-item side-menu-list-item-parent">
+						<a href="{{doc.url}}" class="side-menu-list-item-link">Back to <strong>{{doc.title}}</strong></a>
+					</li>
+					{% assign show_products_in_menu = true %}
+				{% endif %}
 			{% endif %}
-			</li></div>
+			</div>
 		{% endfor %}
 		<div id="side-menu-list-item-search"></div>
 
-		{% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.parent contains page.parent" %}
+		{% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.parent == page.parent" | where_exp:"doc", "doc.product == page.product" %}
 		{% assign filtered_and_sorted_docs = filtered_docs | sort: 'weight' %}
 		{% for doc in filtered_and_sorted_docs %}
-			{% if doc.title contains page.title %}
+			{% if doc.title == page.title %}
 				<li class="side-menu-list-item">
 					<div class="side-menu-list-item-hover"><a data-toggle="collapse" data-parent="#accordion" href="#currentpage" class="side-menu-dropdown-trigger">
 						<p class="side-menu-list-item-current-text"><strong>{{doc.title}}</strong> <b class="caret rotate-180 invisible"></b></p>
 					</a></div>
 					<ul class="collapse in side-menu-list-collapsible" id="currentpage">
-						{% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.parent contains page.childidentifier" %}
+						{% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.parent == page.childidentifier" | where_exp:"doc", "doc.product == page.product" %}
 						{% assign filtered_and_sorted_docs = filtered_docs | sort: 'weight' %}
 						{% for doc in filtered_and_sorted_docs %}
 						<div class="side-menu-list-item-hover"><li class="side-menu-list-item side-menu-list-item-child">

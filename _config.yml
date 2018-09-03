@@ -53,6 +53,12 @@ language:
         url: "https://theobald-software.com/en/"
     homepage: "Homepage"
     homepage-title: "What can we <b>help</b> you with?"
+    search-no-results: "We didn't find any results for the search: "
+    search-title: "Search the Online Help"
+    search-results: "Results"
+    search-box-text: "Search..."
+    search-filters: "Filters"
+    search-filter-all-products: "Search through all products"
   de:
     navbar-links:
       - title: "Gehe zum Knowledgebase"
@@ -61,6 +67,12 @@ language:
         url: "https://theobald-software.com/de/"
     homepage: "Startseite"
     homepage-title: "Wie können wir Ihnen <b>helfen</b>?"
+    search-no-results: "We didn't find any results for the search: "
+    search-title: "Search the Online Help"
+    search-results: "Results"
+    search-box-text: "Search..."
+    search-filters: "Filters"
+    search-filter-all-products: "Search through all products"
 
 ########## SECTION 3 - COLLECTION CONFIGURATIONS ##########
 ########## Languages can easily be added this way.
