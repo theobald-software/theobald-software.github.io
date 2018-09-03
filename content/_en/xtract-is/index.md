@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Xtract IS
-description: Xtract IS main page
+description: Xtract IS
 product: xtract-is
 parent: home
 childidentifier: xtract-is
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 ---
 
