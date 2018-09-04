@@ -7,6 +7,7 @@ parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=non-rfc-enabled-modules
 ---
 
 **This functionality is obsolete and will not be supported by ERPConnect starting by version 4.5.**

@@ -7,6 +7,7 @@ parent: report
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=setup-of-the-custom-function-module
 ---
 
 Unlike the other components, the Xtract IS Report component requires the installation of a custom function module in your SAP system before use.

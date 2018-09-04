@@ -7,6 +7,7 @@ parent: special-classes
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=batch-input-background-processing
 ---
 
 **The sample code is located in the ERPConnect installation directory in the BatchInputCreatePurchaseOrder directory** 

@@ -8,6 +8,7 @@ childidentifier: sap-queries
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=sap-queries
 ---
 
 With ERPConnect, all sorts of SAP queries can be controlled and their data can be extracted. The necessary classes for doing this are located in the namespace ERPConnect.Queries.

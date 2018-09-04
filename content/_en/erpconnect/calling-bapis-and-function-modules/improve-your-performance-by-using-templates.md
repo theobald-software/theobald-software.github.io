@@ -7,6 +7,7 @@ parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=improve-your-performance-by-using-templates
 ---
 
 In some cases it may be helpful to improve the performance by using xml templates for creating the function module object hierarchy instead of using the CreateFunction/CreateBAPI methods: 

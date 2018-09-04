@@ -7,6 +7,7 @@ parent: sap-connection
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=sap-connection-with-snc
 ---
 
 You can use SNC (Secure Network Communication) for the SAP Connection. 

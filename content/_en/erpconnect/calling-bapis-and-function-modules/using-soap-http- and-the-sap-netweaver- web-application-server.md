@@ -7,6 +7,7 @@ parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=using-soap-http-and-the-sap-netweaver-web-application-server
 ---
 
 **Warning:** SOAP Protocol is obsolete in ERPConnect since version 4.25.0 (Mai 2015).

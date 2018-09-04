@@ -7,6 +7,7 @@ parent: administration
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=receiving-order-idocs
 ---
 
 The sample program in Chapter [Sending an ORDER IDoc]() shows how to send an ORDER IDoc. The two steps below show how to customize your SAP system for processing the IDoc and creating a sales order.

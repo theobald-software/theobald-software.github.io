@@ -7,6 +7,7 @@ parent: sap-connection
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=sso-single-sign-on
 ---
 
 From version 1.6 on ERPConnect also supports SSO scenarios. The SAP system must be configured for the use of SSO, please refer to the SAP documentation for further details.

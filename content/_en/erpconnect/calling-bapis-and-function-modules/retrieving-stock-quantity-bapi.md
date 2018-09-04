@@ -7,6 +7,7 @@ parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=retrieving-stock-quantity-by-calling-a-bapi
 ---
 
 A so-called BAPI is a Business Object method. There are hundreds of Business Objects in an SAP system, one of which is Material. 

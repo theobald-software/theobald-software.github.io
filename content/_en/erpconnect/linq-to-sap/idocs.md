@@ -7,6 +7,7 @@ parent: linq-to-sap
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-idocs
 ---
 
 You can send IDocs to SAP with the help of LINQ to SAP. The segments can be used in the SAP context.

@@ -7,6 +7,7 @@ parent: sap-connection
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=logging-on-to-sap
 ---
 
 There are two different ways to log on to the SAP system when using ERPConnect. 

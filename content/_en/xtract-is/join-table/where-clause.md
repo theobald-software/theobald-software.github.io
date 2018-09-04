@@ -7,6 +7,7 @@ parent: join-table
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=tj-where-clause
 ---
 
 In the Criteria window click on link to define a where condition.  

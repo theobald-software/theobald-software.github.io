@@ -7,6 +7,7 @@ parent: linq-to-sap
 permalink: /:collection/:path
 weight: 7
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-settings
 ---
 
 ![LINQToERP-Settings](/img/content/LINQToERP-Settings.jpg){:class="img-responsive"}

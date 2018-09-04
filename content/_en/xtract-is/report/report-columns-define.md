@@ -7,6 +7,7 @@ parent: report
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=defining-report-columns
 ---
 
 To continue, please preview the report at least once by clicking the *Preview* button.

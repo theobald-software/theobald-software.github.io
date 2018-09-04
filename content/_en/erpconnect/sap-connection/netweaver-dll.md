@@ -7,6 +7,7 @@ parent: sap-connection
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=netweaver-dll
 ---
 
 ERPConnect supports the Netweaver RFC (SDK) starting by version 4.6.0 (see Version History).  

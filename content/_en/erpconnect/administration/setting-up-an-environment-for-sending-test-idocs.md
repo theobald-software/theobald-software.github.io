@@ -7,6 +7,7 @@ parent: administration
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=setting-up-an-environment-for-sending-test-idocs
 ---
 
 If you want to receive some test IDocs, please follow the steps below to set up a test environment in your SAP system that can send MATMAS IDocs for distributing material master data. 

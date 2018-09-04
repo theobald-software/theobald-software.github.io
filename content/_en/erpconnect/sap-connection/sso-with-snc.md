@@ -7,6 +7,7 @@ parent: sap-connection
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=sso-with-snc
 ---
 
 

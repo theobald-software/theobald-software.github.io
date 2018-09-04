@@ -7,6 +7,7 @@ parent: rfc-server
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-example
 ---
 
 **The sample code is located in the ERPConnect directory in the ZAddServer directory**  

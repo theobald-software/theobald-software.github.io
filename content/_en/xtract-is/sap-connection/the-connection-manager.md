@@ -7,6 +7,7 @@ parent: sap-connection
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
 ---
 
 Every Xtract IS component needs a connection manager to establish access to the SAP system. To create a new connection manager, please right-click in the area of the data flow task where the connection managers are located and choose New connection. The dialog shown below will then appear.

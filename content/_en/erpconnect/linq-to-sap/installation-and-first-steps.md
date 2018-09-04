@@ -7,6 +7,7 @@ parent: linq-to-sap
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-installation-and-first-steps
 ---
 
 **Caution:** Visual Studio Express versions don't support the LINQ to SAP Designer. 

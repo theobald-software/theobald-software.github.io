@@ -7,6 +7,7 @@ parent: appendix
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=data-type-mapping
 ---
 
 The table shows the  data type mapping between ABAP / RFC and .NET.

@@ -8,6 +8,7 @@ childidentifier: join-table
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=tablejoin
 ---
 
 The Table Join component allows to join many tables (and views) on the SAP side and to extract the result.  

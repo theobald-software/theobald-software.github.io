@@ -7,6 +7,7 @@ parent: linq-to-sap
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-table-access-restrictions
 ---
 
 As shown in the previous section, tables can be called without having to do any installations in the SAP system. Unfortunately though, the same restrictions apply here as with the traditional ReadTable class (see chapter [Reading SAP Tables Directly with ReadTable]()).

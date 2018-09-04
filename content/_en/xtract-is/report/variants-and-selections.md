@@ -7,6 +7,7 @@ parent: report
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=variants-and-selections
 ---
 
 After having chosen a report, please assign a variant or selections criteria. All elements of the selection screen can be found in the table called *Selection Screen*.

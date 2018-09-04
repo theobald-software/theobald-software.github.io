@@ -8,6 +8,7 @@ childidentifier: bapi
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=bapi
 ---
 
 The Xtract IS BAPI data source was developed to access BAPIs and RFC function modules and integrate them in the SSIS package.

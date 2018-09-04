@@ -7,6 +7,7 @@ parent: prerequisites-and-installation
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=64-bit-environment
 ---
 
 To use ERPConnect you need also the following SAP libraries.

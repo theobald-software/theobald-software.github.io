@@ -8,6 +8,7 @@ childidentifier: query
 permalink: /:collection/:path
 weight: 7
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=query
 ---
 
 This chapter shows how to extract data from SAP queries.
