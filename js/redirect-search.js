@@ -38,7 +38,10 @@ var main = {
             search.start();
 
             search.helper.setQuery(referrer_relative).search();
+        } else {
+            $('.redirect-message').visible();
         }
+
     }
 };
 
