@@ -28,7 +28,8 @@ var main = {
                 instantsearch.widgets.hits({
                     container: '#hits',
                     templates: {
-                        item: document.querySelector('#redirect-template').innerHTML
+                        item: document.querySelector('#redirect-template').innerHTML,
+                        empty: document.querySelector('#no-redirect-template').innerHTML
                     }
                 })
             );
