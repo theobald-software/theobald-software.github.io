@@ -62,30 +62,65 @@ var main = {
       fakeMenu.remove();
     }
 
+    // activate tooltips in the footer
     $('[data-toggle="tooltip"]').tooltip();
 
+    // if the screen is small, the side-menu becomes a top menu and shouldn't be absolute
     if( main.isBreakpoint('xs') ) {
       $('#side-menu-col').removeClass('affix');
       $('#side-menu-col').css('padding-right','0');
     }
 
-
-
+    // when carets are clicked, they should rotate 180 degrees
     $('.side-menu-dropdown-trigger').on('click', function(e) {
         $(this).find('.caret').toggleClass('rotate-180');
     });
 
+    // if the current page has no children pages, it shouldn't show a caret either.
     if ($('.side-menu-list-collapsible li').length == 0) {
         $('.side-menu-list-collapsible').parent().find('.caret').remove();
     } else {
         $('.side-menu-list-collapsible').parent().find('.caret').toggleClass('invisible');
     }
 
+    // if the user came from the search page, add a side-menu option
+    if(main.getUrlParameter('fromSearch') === 'true') {
+        if($('#side-menu-list-item-search').length > 0) {
+            // add "back to search" link
+            $('#side-menu-list-item-search').addClass('side-menu-list-item-hover');
+            $('#side-menu-list-item-search').html('<li class="side-menu-list-item side-menu-list-item-search"><a href="javascript:history.back()" class="side-menu-list-item-link">Back to <strong>Search</strong></a></li>')
+
+            // fix paddings/margins
+            $('.side-menu-list-item-parent').css({
+                "padding-bottom":"3px",
+                "margin-bottom":"0"
+            });
+            $('.side-menu-list-item-search').css({
+                "margin-bottom":"10px"
+            });
+        }
+    }
+
   },
 
   isBreakpoint : function(alias) {
       return $('.device-' + alias).is(':visible');
-  }
+  },
+
+  getUrlParameter : function(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    }
 
 };
 

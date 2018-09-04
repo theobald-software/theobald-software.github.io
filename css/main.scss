@@ -12,6 +12,7 @@ body {
   color: $color-text-primary;
   position: relative;
   background-color: $color-background-primary;
+  overflow-x: hidden;
 }
 p {
   line-height: 1.5;
@@ -57,9 +58,6 @@ hr.small {
   margin: 15px 0;
   border: 4px inherit;
   border-radius: 3px;
-}
-hr.small.no-bottom-margin {
-  margin: 15px 0 0;
 }
 
 figure {
@@ -319,6 +317,8 @@ img {
 
 .container-homepage {
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Multi-level navigation links */
@@ -634,6 +634,13 @@ footer .fab {
   position: absolute;
 }
 
+.side-menu-list-item-parent:before,
+.side-menu-list-item-search:before{
+  content: '\2039';
+  padding-right: 10px;
+  position: absolute;
+}
+
 .side-menu-list-item a {
   font-weight: 400;
   padding-left: 10px;
@@ -667,6 +674,7 @@ footer .fab {
 .side-menu-list-item-parent {
   padding-bottom: 5px;
   padding-top: 5px;
+  margin-bottom: 5px;
 }
 
 .side-menu-list-collapsible {
@@ -689,7 +697,6 @@ footer .fab {
 
 .intro-header {
   margin: 60px 0 0;
-  padding-left: 20px;
   position: relative;
 }
 .intro-header .page-heading {
@@ -697,12 +704,18 @@ footer .fab {
 }
 .intro-header .homepage-heading {
     text-align: center;
-    font-size: 35px;
     font-family: "Lato Regular 400", serif;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 40px;
 }
+.homepage-heading h1 {
+  font-size: 28px;
+}
+
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 26px;
+  font-size: 28px;
 }
 .intro-header .page-heading .page-subheading {
   font-size: 14px;
@@ -843,7 +856,7 @@ table tr td :last-child {
 details {
   border: 1px solid $color-border-primary;
   padding: 5px;
-  margin: 5px 0;
+  margin: 15px 0;
   border-radius: 10px;
 }
 
@@ -950,63 +963,48 @@ td.gutter pre {
 
 /* Product grid */
 
-#productgrid {
-  margin-top: 20px;
+.productgrid {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+@media(max-width: 768px) {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-#productgrid .productgrid-item {
+.productgrid-item {
   right: 0;
-  margin: 15px;
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
 @media(max-width: 768px) {
-  #productgrid .productgrid-item {
+  .productgrid-item {
     margin: 5px 0;
   }
 }
 
-#productgrid .productgrid-item .productgrid-border {
-  margin: 0 15px;
-  border-radius: 25px;
-  border: 3px solid $color-border-primary;
-}
-
-
-#productgrid .productgrid-item .productgrid-border:hover {
-  border: 3px solid $color-border-secondary;
-}
-
-#productgrid .productgrid-item .productgrid-border .productgrid-background {
+.productgrid-background {
   padding: 25px 5px 10px 5px;
-  transform: scale(1);
-  transition: transform .4s ease-in;
 }
 
-#productgrid .productgrid-item .productgrid-border .productgrid-background:hover {
-  padding: 25px 15px 10px 15px;
-  transform: scale(1.05);
-  transition: transform .4s ease-out;
-}
-
-#productgrid .productgrid-item .productgrid-border .productgrid-background .productgrid-link {
+.productgrid-link {
   display: block;
   position: relative;
   margin: 0 auto;
   max-width: 200px;
 }
-#productgrid .productgrid-item .productgrid-border .productgrid-background .productgrid-link img {
+.productgrid-link img {
   padding: 0 10px;
 }
 
-#productgrid .productgrid-item .productgrid-border .productgrid-background .productgrid-title {
+.productgrid-title {
   text-align: center;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
   margin: 10px 0;
 }
 @media(max-width: 768px) {
-  #productgrid .productgrid-item .productgrid-border .productgrid-background .productgrid-title {
+  .productgrid-title {
     font-weight: 400;
     font-size: 14px;
   }
@@ -1014,12 +1012,6 @@ td.gutter pre {
 
 #productgrid * {
   z-index: 2;
-}
-
-@media(min-width: 767px) {
-  #productgrid .productgrid-item {
-    margin: 0 0 15px;
-  }
 }
 
 .row-eq-height {
@@ -1057,6 +1049,19 @@ td.gutter pre {
 
 .header-section-search {
   background-color: $color-background-secondary;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-section-search-homepage {
+    background: url("../img/company/search-banner.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 250px;
+  }
 }
 
 .search-heading {

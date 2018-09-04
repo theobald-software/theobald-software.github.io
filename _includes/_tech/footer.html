@@ -1,37 +1,40 @@
 <footer>
-  <div class="container-fluid">
     <div class="row footer-top">
-      {% capture current_lang %}{% include _tech/current-lang.html %}{% endcapture %}
-      {% assign current_lang = current_lang | strip_newlines %}
-      {% capture footer_link_one %}_footer/{{current_lang}}/footer-section-1.md{% endcapture %}
-      {% capture footer_link_two %}_footer/{{current_lang}}/footer-section-2.md{% endcapture %}
-      {% capture footer_link_three %}_footer/{{current_lang}}/footer-section-3.md{% endcapture %}
-      {% capture footer_link_four %}_footer/{{current_lang}}/footer-section-4.md{% endcapture %}
+      <div class="container-fluid">
+        {% capture current_lang %}{% include _tech/current-lang.html %}{% endcapture %}
+        {% assign current_lang = current_lang | strip_newlines %}
+        {% capture footer_link_one %}_footer/{{current_lang}}/footer-section-1.md{% endcapture %}
+        {% capture footer_link_two %}_footer/{{current_lang}}/footer-section-2.md{% endcapture %}
+        {% capture footer_link_three %}_footer/{{current_lang}}/footer-section-3.md{% endcapture %}
+        {% capture footer_link_four %}_footer/{{current_lang}}/footer-section-4.md{% endcapture %}
 
-      <div class="col-sm-4 col-sm-offset-2">
-        {% capture footer_section_one_include %}{% include {{footer_link_one}} %}{% endcapture %}
-        {{ footer_section_one_include | markdownify }}
-      </div>
-      <div class="col-sm-4">
-        {% capture footer_section_two_include %}{% include {{footer_link_two}} %}{% endcapture %}
-        {{ footer_section_two_include | markdownify }}
+        <div class="col-sm-4 col-sm-offset-2">
+          {% capture footer_section_one_include %}{% include {{footer_link_one}} %}{% endcapture %}
+          {{ footer_section_one_include | markdownify }}
+        </div>
+        <div class="col-sm-4">
+          {% capture footer_section_two_include %}{% include {{footer_link_two}} %}{% endcapture %}
+          {{ footer_section_two_include | markdownify }}
+        </div>
       </div>
     </div>
     <div class="row footer-bottom">
-      {% capture current_lang %}{% include _tech/current-lang.html %}{% endcapture %}
-      {% assign current_lang = current_lang | strip_newlines %}
-      {% capture footer_link_one %}_footer/{{current_lang}}/footer-section-1.md{% endcapture %}
-      {% capture footer_link_two %}_footer/{{current_lang}}/footer-section-2.md{% endcapture %}
-      {% capture footer_link_three %}_footer/{{current_lang}}/footer-section-3.md{% endcapture %}
-      {% capture footer_link_four %}_footer/{{current_lang}}/footer-section-4.md{% endcapture %}
+      <div class="container-fluid">
+        {% capture current_lang %}{% include _tech/current-lang.html %}{% endcapture %}
+        {% assign current_lang = current_lang | strip_newlines %}
+        {% capture footer_link_one %}_footer/{{current_lang}}/footer-section-1.md{% endcapture %}
+        {% capture footer_link_two %}_footer/{{current_lang}}/footer-section-2.md{% endcapture %}
+        {% capture footer_link_three %}_footer/{{current_lang}}/footer-section-3.md{% endcapture %}
+        {% capture footer_link_four %}_footer/{{current_lang}}/footer-section-4.md{% endcapture %}
 
-      <div class="col-sm-4 col-sm-offset-2">
-        {% capture footer_section_three_include %}{% include {{footer_link_three}} %}{% endcapture %}
-        {{ footer_section_three_include | markdownify }}
-      </div>
-      <div class="col-sm-4">
-        {% capture footer_section_four_include %}{% include {{footer_link_four}} %}{% endcapture %}
-        {{ footer_section_four_include | markdownify }}
+        <div class="col-sm-4 col-sm-offset-2">
+          {% capture footer_section_three_include %}{% include {{footer_link_three}} %}{% endcapture %}
+          {{ footer_section_three_include | markdownify }}
+        </div>
+        <div class="col-sm-4">
+          {% capture footer_section_four_include %}{% include {{footer_link_four}} %}{% endcapture %}
+          {{ footer_section_four_include | markdownify }}
+        </div>
       </div>
     </div>
   </div>

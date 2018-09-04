@@ -51,14 +51,30 @@ language:
         url: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
       - title: "Return to Theobald Software"
         url: "https://theobald-software.com/en/"
-    homepage: Homepage
+    homepage: "Homepage"
+    homepage-title: "Browse through our documentation"
+    homepage-search-title: "How can we help?"
+    search-no-results: "We didn't find any results for the search: "
+    search-title: "Search the Online Help"
+    search-results: "Results"
+    search-box-text: "Search..."
+    search-filters: "Filters"
+    search-filter-all-products: "Search through all products"
   de:
     navbar-links:
       - title: "Gehe zum Knowledgebase"
         url: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
       - title: "Zurück zum Theobald Software"
         url: "https://theobald-software.com/de/"
-    homepage: Startseite
+    homepage: "Startseite"
+    homepage-title: "Browse through our documentation"
+    homepage-search-title: "How can we help?"
+    search-no-results: "We didn't find any results for the search: "
+    search-title: "Search the Online Help"
+    search-results: "Results"
+    search-box-text: "Search..."
+    search-filters: "Filters"
+    search-filter-all-products: "Search through all products"
 
 ########## SECTION 3 - COLLECTION CONFIGURATIONS ##########
 ########## Languages can easily be added this way.
@@ -74,6 +90,7 @@ collections:
     output: true
     name: 'Deutsch'
     language_label: 'de'
+
 ########## SECTION 4 - OTHER SETTINGS ##########
 ########## Be careful with changes to these settings, as it could break things.
 timezone: "Europe/Berlin"
@@ -104,56 +121,6 @@ exclude:
   - Vagrantfile
   - .idea/workspace.xml
   - vendor
-# prose.io - easy editing
-# TODO: needs more configuring to work properly
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
 
 ########## SECTION 5 - TRACK SETTINGS ##########
 # GA gatg.js ID

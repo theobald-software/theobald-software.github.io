@@ -5,6 +5,9 @@ permalink: /:collection/:path
 childidentifier: home
 weight: 0
 lang: de_DE
+ext-css:
+- "https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.1/dist/instantsearch.min.css"
+- "https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.1/dist/instantsearch-theme-algolia.min.css"
 ---
 
-{% include _tech/index.html title="Wie können wir Ihnen <b>helfen</b>?" lang="de" %}
+{% include _tech/index.html title=site.language.de.homepage-title title-search=site.language.de.homepage-search-title lang="de" %}

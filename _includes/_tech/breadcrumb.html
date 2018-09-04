@@ -15,8 +15,8 @@
   {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
   {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
 
-  {% if first_word contains current_lang %}{% else %}
-    {% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.childidentifier contains first_word" %}
+  {% if first_word == current_lang %}{% else %}
+    {% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.childidentifier == first_word" | where_exp:"doc", "doc.product == page.product" %}
     {% for doc in filtered_docs %}
       <a href="{{previous}}">{{ doc.title }}</a> &#187;
     {% endfor %}
