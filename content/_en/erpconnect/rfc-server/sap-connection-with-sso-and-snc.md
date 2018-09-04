@@ -7,6 +7,7 @@ parent: rfc-server
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-connection-with-sso-and-snc
 ---
 
 The RFCServer class supports SAP Connection with SSO and SNC.

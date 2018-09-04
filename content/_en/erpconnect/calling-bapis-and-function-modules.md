@@ -8,6 +8,7 @@ childidentifier: calling-bapis-and-function-modules
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=calling-bapis-and-function-modules
 ---
 
 Function modules are single functions that are managed by the SAP Function Builder (transaction SE37) and developed in SAP's own programming language, ABAP.

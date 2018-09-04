@@ -8,6 +8,7 @@ childidentifier: requirements-and-installation
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=requirements-and-installation
 ---
 
 This chapter inculdes all information about the requirements and the installation process.

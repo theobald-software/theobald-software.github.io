@@ -7,6 +7,7 @@ parent: join-table
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=tj-select-fields
 ---
 
 Double-click a field in the table to select it as part of the result. It will appear in the lower Selection window. 

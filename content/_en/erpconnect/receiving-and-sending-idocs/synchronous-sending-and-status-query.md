@@ -7,6 +7,7 @@ parent: receiving-and-sending-idocs
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=synchronous-sending-and-status-query
 ---
 
 **You can find the code for this example in the ERPConnect installation directory in the SendOrderIdoc directory.**

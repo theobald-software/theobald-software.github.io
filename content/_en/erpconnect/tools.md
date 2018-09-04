@@ -8,6 +8,7 @@ childidentifier: tools
 permalink: /:collection/:path
 weight: 11
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=tools
 ---
 
 There are several tools included in the installation package to make development easier and more efficient. These tools are explained in the following.

@@ -7,6 +7,7 @@ parent: query
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=apply-variants
 ---
 
 ![Use-Variants-01](/img/content/Use-Variants-01.png){:class="img-responsive" }

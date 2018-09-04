@@ -7,6 +7,7 @@ parent: bapi
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=look-up-bapis
 ---
 
 First, at least one connection manager must be assigned as explained in the previous chapters on the other source components.

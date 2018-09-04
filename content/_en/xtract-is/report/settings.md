@@ -7,6 +7,7 @@ parent: report
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=report-settings
 ---
 
 Click the *Settings* link to open the settings dialog.

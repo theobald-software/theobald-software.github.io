@@ -7,6 +7,7 @@ parent: for-azure
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=requirements1
 ---
 
 Irrespective of Xtract IS for Azure, you need to have an ADFv2 and an Azure-SSIS Integration Runtime (IR) in place.

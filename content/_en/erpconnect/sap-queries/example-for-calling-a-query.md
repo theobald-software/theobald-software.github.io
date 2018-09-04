@@ -7,6 +7,7 @@ parent: sap-queries
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=example-for-calling-a-query
 ---
 
 In the following example, the data from an exemplary query from the area of materials management are extracted. First, with the help of the CreateQuery method from the R3Connection object, the query object is built. Each SAP query is clearly determined by three descriptors: the user area (whether local or global), the user group (in our example /SAPQUERY/MB) and the name of the query itself (MEBESTWERTAN in our case).

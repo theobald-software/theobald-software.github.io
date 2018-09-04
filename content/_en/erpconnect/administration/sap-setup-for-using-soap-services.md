@@ -7,6 +7,7 @@ parent: administration
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=sap-setup-for-using-soap-services
 ---
 
 **Warning:** SOAP Protocol is obsolete in ERPConnect since version 4.25.0 (Mai 2015). 

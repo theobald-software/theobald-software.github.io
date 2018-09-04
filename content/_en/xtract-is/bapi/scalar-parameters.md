@@ -7,6 +7,7 @@ parent: bapi
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=scalar-parameters
 ---
 
 Scalar parameters (imports and exports) are always entered with a static value or can be assigned to an SSIS variable. In case of exports, only variables are allowed because it wouldn't make sense to enter an export in a static value.

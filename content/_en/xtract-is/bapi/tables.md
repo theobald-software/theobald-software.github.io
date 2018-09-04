@@ -7,6 +7,7 @@ parent: bapi
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=tables
 ---
 
 Tables can be entered in and extracted from the function module / BAPI. Therefore, there are two types of behavior for tables: *input type* and *output type*.

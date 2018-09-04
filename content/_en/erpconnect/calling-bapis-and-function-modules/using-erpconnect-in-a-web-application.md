@@ -7,6 +7,7 @@ parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=using-erpconnect-in-a-web-application
 ---
 
 Of course, ERPConnect is ready for ASP.NET so you will be able to write really cool web applications with a direct link to SAP R/3.

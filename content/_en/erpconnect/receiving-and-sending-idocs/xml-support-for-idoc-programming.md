@@ -7,6 +7,7 @@ parent: receiving-and-sending-idocs
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=xml-support-for-idoc-programming
 ---
 
 **The sample code is located in the ERPConnect installation directory in the in IdocSendXML directory.**
@@ -14,6 +15,32 @@ lang: en_GB
 ERPConnect offers support for both the IDoc schema and IDoc data located in XML-files.
 
 The two screenshots below show an IDoc schema file (of the ORDERS01 type) and an IDoc data file. Both are also included in the samples directory. Please refer to chapter [IDoc-Schema-Generator]().
+
+{% highlight xml %}
+xml version="1.0" encoding="ISO-8859-1" ?>
+- <ORDERS01>
+  - <IDOC>
+    - <EDI_DC40> 
+         
+    <TABNAM>EDI_DC40TABNAM>
+         
+    <IDOCTYP>ORDERS01IDOCTYP>
+         
+    <MESTYP>ORDERS>MESTYP>
+         
+    <SNDPRT>KUSNDPRT>
+      EDI_DC40>
+      <E1EDK01 />  
+    - <E1EDK01>
+         
+    <MENGE>10MENGE>
+    - <E1EDP10>
+         
+    <QUALF>002QUALF>
+         
+    <IDTNR>100-100IDTNR>
+      E1EDP19>
+{% endhighlight %}
 
 To create an IDoc object from the schema, we use the method LoadIdocSchema. After doing so, it is possible to create segment objects by using the method CreateSegment (as we did in the previous ORDER-Example). The example below shows how to load the IDoc data from a data file by using the method LoadXMLData.
 

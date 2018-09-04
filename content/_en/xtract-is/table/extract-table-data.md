@@ -7,6 +7,7 @@ parent: table
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=extract-table-data
 ---
 
 Place the component on your data flow task by dragging it from the toolbox with your mouse. Double-click the icon to open the editor.

@@ -7,6 +7,7 @@ parent: join-table
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=tj-aggregate-function
 ---
 
 In the *Grouping Criteria* tab you can define a criteria using an aggregate function. 

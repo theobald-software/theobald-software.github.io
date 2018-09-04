@@ -7,6 +7,7 @@ parent: tools
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=transactionrecorder
 ---
 
 **The TransactionRecorder is located in the ERPConnect installation directory.**
