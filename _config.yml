@@ -38,6 +38,9 @@ breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 algolia:
   application_id: '4C27F1P1UC'
   index_name: theobald-software-online-help
+  settings:
+    attributesForFaceting: ['title','searchable(collection)', 'searchable(title)', 'searchable(product)', 'searchable(lang)', 'searchable(old_url)']
+    searchableAttributes: ['title','unordered(content)','collection','description','lang','old_url']
 
 ########## SECTION 2 - HEADER CONTENT ##########
 ########## These are configurable here rather than in the html pages and include files
@@ -67,10 +70,10 @@ language:
       - title: "Zurück zur Theobald Software Website"
         url: "https://theobald-software.com/de/"
     homepage: "Startseite"
-    homepage-title: "Bitte wählen Sie Ihr Produkt"
-    homepage-search-title: "Wie können wir Ihnen weiterhelfen?"
+    homepage-title: "Bitte klicken Sie auf ein Produkt..."
+    homepage-search-title: "Was interessiert Sie?"
     search-no-results: "Wir haben leider nichts gefunden: "
-    search-title: "Online-Help Suche"
+    search-title: "Online Help Suche"
     search-results: "Sucherergebnisse"
     search-box-text: "Suche..."
     search-filters: "Filter"
