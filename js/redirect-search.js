@@ -2,9 +2,14 @@ var main = {
 
     init: function () {
         var referrer = document.referrer;
-        var referrer_relative = referrer.split('.com')[1];
-        var referrer_relative_local = referrer.split(':4000')[1];
-        console.log("using: " + referrer_relative_local);
+        var referrer_relative;
+        if(referrer.indexOf(':4000') === -1) {
+            referrer_relative = referrer.split('.com')[1];
+        } else {
+            referrer_relative = referrer.split(':4000')[1];
+        }
+
+        console.log("using: " + referrer_relative);
 
         // general settings for instant search
         const search = instantsearch({
@@ -22,8 +27,7 @@ var main = {
             instantsearch.widgets.hits({
                 container: '#hits',
                 templates: {
-                    item: 'Old url: ' + referrer_relative_local + ' New url: {{url}}',
-                    empty: 'empty'
+                    item: document.querySelector('#redirect-template').innerHTML
                 }
             })
         );
@@ -31,7 +35,7 @@ var main = {
         // start instantsearch
         search.start();
 
-        search.helper.setQuery(referrer_relative_local).search();
+        search.helper.setQuery(referrer_relative).search();
     }
 };
 

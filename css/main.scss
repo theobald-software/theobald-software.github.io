@@ -1107,3 +1107,11 @@ td.gutter pre {
 .ais-pagination {
   display: inline-block;
 }
+
+.redirect-message {
+  padding-left: 15px;
+}
+
+.redirect-message a {
+  color: $color-highlight !important;
+}

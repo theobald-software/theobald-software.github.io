@@ -8,7 +8,6 @@ permalink: /en/404.html
     <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12">
             {% include _tech/header.html %}
-            <div style="margin-bottom:200px"></div>
         </div>
     </div>
 </div>
@@ -22,3 +21,13 @@ permalink: /en/404.html
         </div>
     </div>
 </div>
+
+<!-- TEMPLATES -->
+{% raw %}
+<script type="text/html" id="redirect-template">
+    <div class="redirect-message">
+        <p>We haven't found the page you were looking for. However, we suspect you were looking for "<a href="{{url}}">{{title}}</a>"?</p>
+    </div>
+</script>
+{% endraw %}
+<!-- /TEMPLATES -->
