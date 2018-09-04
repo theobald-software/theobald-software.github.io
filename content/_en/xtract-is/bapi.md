@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Xtract IS BAPI
-description: Xtract BAPI
+description: Xtract IS BAPI
 product: xtract-is
 parent: xtract-is
 childidentifier: bapi
