@@ -69,7 +69,7 @@ language:
     homepage: "Startseite"
     homepage-title: "Bitte klicken Sie auf ein Produkt..."
     homepage-search-title: "Was interessiert Sie?"
-    search-no-results: "WIr haben leider nichts gefunden: "
+    search-no-results: "Wir haben leider nichts gefunden: "
     search-title: "Online Help Suche"
     search-results: "Sucherergebnisse"
     search-box-text: "Suche..."
