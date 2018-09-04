@@ -11,31 +11,33 @@ var main = {
 
         console.log("using: " + referrer_relative);
 
-        // general settings for instant search
-        const search = instantsearch({
-            appId: '4C27F1P1UC',
-            apiKey: '09cbfe4bbe8e6380e31d4572f85ad22e',
-            indexName: 'theobald-software-online-help',
-            searchFunction: function(helper) {
-                helper.setQueryParameter('restrictSearchableAttributes', ['old_url']);
-                helper.search();
-            }
-        });
-
-        // initialize Hits
-        search.addWidget(
-            instantsearch.widgets.hits({
-                container: '#hits',
-                templates: {
-                    item: document.querySelector('#redirect-template').innerHTML
+        if(referrer_relative) {
+            // general settings for instant search
+            const search = instantsearch({
+                appId: '4C27F1P1UC',
+                apiKey: '09cbfe4bbe8e6380e31d4572f85ad22e',
+                indexName: 'theobald-software-online-help',
+                searchFunction: function (helper) {
+                    helper.setQueryParameter('restrictSearchableAttributes', ['old_url']);
+                    helper.search();
                 }
-            })
-        );
+            });
 
-        // start instantsearch
-        search.start();
+            // initialize Hits
+            search.addWidget(
+                instantsearch.widgets.hits({
+                    container: '#hits',
+                    templates: {
+                        item: document.querySelector('#redirect-template').innerHTML
+                    }
+                })
+            );
 
-        search.helper.setQuery(referrer_relative).search();
+            // start instantsearch
+            search.start();
+
+            search.helper.setQuery(referrer_relative).search();
+        }
     }
 };
 
