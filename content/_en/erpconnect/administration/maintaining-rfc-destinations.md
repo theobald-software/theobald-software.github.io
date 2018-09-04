@@ -7,6 +7,7 @@ parent: administration
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=maintaining-rfc-destinations
 ---
 
 To create a new destination, please use transaction SM59 and click the Create button. The fields have to be filled in with following values: 

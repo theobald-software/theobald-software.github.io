@@ -62,19 +62,19 @@ language:
     search-filter-all-products: "Search through all products"
   de:
     navbar-links:
-      - title: "Gehe zum Knowledgebase"
+      - title: "Zur Knowledgebase"
         url: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
-      - title: "Zurück zum Theobald Software"
+      - title: "Zurück zur Theobald Software Website"
         url: "https://theobald-software.com/de/"
     homepage: "Startseite"
-    homepage-title: "Browse through our documentation"
-    homepage-search-title: "How can we help?"
-    search-no-results: "We didn't find any results for the search: "
-    search-title: "Search the Online Help"
-    search-results: "Results"
-    search-box-text: "Search..."
-    search-filters: "Filters"
-    search-filter-all-products: "Search through all products"
+    homepage-title: "Bitte klicken Sie auf ein Produkt..."
+    homepage-search-title: "Was interessiert Sie?"
+    search-no-results: "Wir haben leider nichts gefunden: "
+    search-title: "Online Help Suche"
+    search-results: "Sucherergebnisse"
+    search-box-text: "Suche..."
+    search-filters: "Filter"
+    search-filter-all-products: "Alle Produkte durchsuchen"
 
 ########## SECTION 3 - COLLECTION CONFIGURATIONS ##########
 ########## Languages can easily be added this way.
