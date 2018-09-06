@@ -6,7 +6,7 @@ product: xtract-is
 parent: home
 childidentifier: xtract-is
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: en_GB
 ---
 
