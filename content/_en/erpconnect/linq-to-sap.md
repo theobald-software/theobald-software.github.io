@@ -8,6 +8,7 @@ childidentifier: linq-to-sap
 permalink: /:collection/:path
 weight: 9
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap
 ---
 
 Before we delve deeper into LINQ to SAP in this chapter, let's first have a look at some answers to a few important questions that some readers might be dying to ask:

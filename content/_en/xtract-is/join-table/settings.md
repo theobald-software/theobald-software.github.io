@@ -7,6 +7,7 @@ parent: join-table
 permalink: /:collection/:path
 weight: 7
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=tablejoin-settings
 ---
 
 Use the *Settings* link in the editor to open the Settings dialog as shown in the picture below.

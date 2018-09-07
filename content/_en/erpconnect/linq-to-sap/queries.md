@@ -7,6 +7,7 @@ parent: linq-to-sap
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-queries
 ---
 
 **You can find the code for this example in the ERPConnect installation directory in the LINQQuery directory.**

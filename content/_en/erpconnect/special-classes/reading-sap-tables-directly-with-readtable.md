@@ -7,6 +7,7 @@ parent: special-classes
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=reading-sap-tables-directly-with-readtable
 ---
 
 **The sample code is located in the ERPConnect installaltion directory in the ReadSAPTable directory**

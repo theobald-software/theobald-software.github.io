@@ -7,6 +7,7 @@ parent: receiving-and-sending-idocs
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=example-sending-an-idoc-from-your-net-application
 ---
 
 **The sample code is located in the ERPConnect installation directory in the IdocSender directory**

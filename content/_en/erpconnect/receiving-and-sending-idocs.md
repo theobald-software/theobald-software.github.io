@@ -8,6 +8,7 @@ childidentifier: receiving-and-sending-idocs
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=receiving-and-sending-idocs
 ---
 
 IDocs are electronic documents that can be sent from or to SAP systems. It is possible to exchange IDocs between SAP systems or between one SAP system and an external application. ERPConnect provides a set of classes to send, receive and construct IDocs very easily.

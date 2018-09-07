@@ -7,6 +7,7 @@ parent: for-azure
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=installation1
 ---
 
 Follow the [instructions]() on how to set up 3rd party extensibility for Azure-SSIS IR. Only the part with setting up an Azure storage container and creating a Shared Access Signature is relevant.

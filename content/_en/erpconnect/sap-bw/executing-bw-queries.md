@@ -7,6 +7,7 @@ parent: sap-bw
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=executing-bw-queries
 ---
 
 **The sample code is located in the ERPConnect installation directory in the BWQuery directory** 

@@ -8,6 +8,7 @@ childidentifier: sap-bw
 permalink: /:collection/:path
 weight: 8
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=sap-bw
 ---
 
 This chapter contains information and examples surrounding the subject of BW data extraction. The corresponding ERPConnect classes can be found in the namespace ERPConnect.BW.

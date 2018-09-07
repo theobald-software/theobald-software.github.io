@@ -7,6 +7,7 @@ parent: sap-queries
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=auxiliary-fuctions
 ---
 
 The ERPConnect.Queries.QueryHelper class offers various auxiliary functions surrounding SAP queries such as the ability to search for queries in general or ascertain the related variant (incl. text). The following example shows a simple search function. All auxiliary functions always output a list in table form. These tables are classes that are in the same namespace and inherited from the System.Data.DataTable class. They can therefore be very easily further processed or linked to a control element. Following the example program, you will find a list of all auxiliary classes and their functions.

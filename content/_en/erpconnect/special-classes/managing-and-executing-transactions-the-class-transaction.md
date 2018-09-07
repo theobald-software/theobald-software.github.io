@@ -7,6 +7,7 @@ parent: special-classes
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=managing-and-executing-transactions-the-class-transaction
 ---
 
 **The sample code is located in the installation directory in the PopUpMMBE directory**

@@ -8,6 +8,7 @@ childidentifier: for-azure
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=xtract_is_for_azure
 ---
 
 *Xtract IS for Azure* is a solution that allows running SSIS packages, containing Xtract IS components, on an [Azure-SSIS Integration Runtime (IR), based on Microsoft's Azure Data Factory v2 (ADFv2)]().

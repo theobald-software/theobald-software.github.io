@@ -7,6 +7,7 @@ parent: special-classes
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=abap-code
 ---
 
 **The sample code is located in the ERPConnect installation directory in the AbapPad directory.** 

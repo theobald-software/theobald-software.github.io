@@ -7,6 +7,7 @@ parent: requirements-and-installation
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=ssis-migration
 ---
 
 This chapter deals with the migration of SSIS packages from a lower SQL Server/SSIS version to a higher version. 

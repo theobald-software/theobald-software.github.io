@@ -7,6 +7,7 @@ parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=retrieving-customer-information-by-calling-sd-rfc-customer-get
 ---
 
 SD_RFC_CUSTOMER_GET is an RFC-enabled function module that should be present in every SAP system. It is designed for demonstration purposes. As an import parameter, a customer number should be transferred to the module and the customer's address is sent back to the calling program contained in a table parameter.

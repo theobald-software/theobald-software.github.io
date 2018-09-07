@@ -7,6 +7,7 @@ parent: bapi
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=structures
 ---
 
 Structures are a special case of scalar parameters. In case of structures, an individual variable doesn't have to be assigned to the whole structure, but rather, to each element of the structure.

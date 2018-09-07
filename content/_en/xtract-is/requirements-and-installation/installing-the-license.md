@@ -7,6 +7,7 @@ parent: requirements-and-installation
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=installing-the-license
 ---
 
 A demo license is automatically installed with the installation of Xtract IS. After having purchased Xtract IS, a regular license is provided. This license is bound to your company and a specific server name. For installing this license, please use the Xtract License Manager, XtractLicenseManager.exe. You can find the Xtract License Manager in the installation directory of Xtract IS.

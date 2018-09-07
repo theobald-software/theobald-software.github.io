@@ -7,6 +7,7 @@ parent: query
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=entering-select-options
 ---
 
 Within the SAP GUI, you can create complex selection criteria in the selection screen of the query. This can be also done with the Xtract IS Query ent.

@@ -7,6 +7,7 @@ parent: table
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=where-clause
 ---
 
 The WHERE clause must comply with the SAP OpenSQL syntax.

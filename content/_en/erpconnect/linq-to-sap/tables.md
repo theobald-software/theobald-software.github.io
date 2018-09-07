@@ -7,6 +7,7 @@ parent: linq-to-sap
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-tables
 ---
 
 **The sample code is located in the installation directory in theLINQTable directory**

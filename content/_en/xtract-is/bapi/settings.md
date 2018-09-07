@@ -7,6 +7,7 @@ parent: bapi
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=bapi-settings
 ---
 
 The dialog below will open after clicking the Settings button.
