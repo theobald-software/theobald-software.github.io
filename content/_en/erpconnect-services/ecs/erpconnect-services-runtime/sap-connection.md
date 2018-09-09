@@ -1,7 +1,7 @@
 ---
 layout: page
-title: ERPConnect Services Runtime
-description: ERPConnect Services Runtime
+title: SAP Connection
+description: SAP Connection
 product: erpconnect-services
 parent: erpconnect-services-runtime
 childidentifier: sap-connection
