@@ -1,15 +1,3 @@
-{% if layout.common-ext-js %}
-  {% for js in layout.common-ext-js %}
-    {% include _tech/ext-js.html js=js %}
-  {% endfor %}
-{% endif %}
-
-{% if page.ext-js %}
-  {% for js in page.ext-js %}
-    {% include _tech/ext-js.html js=js %}
-  {% endfor %}
-{% endif %}
-
 {% if page.js %}
   {% for js in page.js %}
 	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
