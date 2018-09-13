@@ -18,3 +18,5 @@ ECS provide the following options for the SAP integration with Nintex Workflow:
 - Using the Nintex Workflow Custom Actions (Query XQL, Call SAP function and Read SAP table) for the direct SAP integration in Nintex. 
 - Using web services that are created with the WS Desginer without programming based on SAP. 
 - Using external Lists that are created with the BCS Connector without programming based on SAP. 
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
