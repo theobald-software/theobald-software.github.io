@@ -3,7 +3,7 @@ layout: page
 title: Xtract IS Table Join
 description: Xtract IS Table Join
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: join-table
 permalink: /:collection/:path
 weight: 5

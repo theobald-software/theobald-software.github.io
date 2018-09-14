@@ -3,7 +3,7 @@ layout: page
 title: Xtract IS Open Hub Service OHS
 description: Xtract IS Open Hub Service OHS
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: open-hub-service-ohs
 permalink: /:collection/:path
 weight: 12

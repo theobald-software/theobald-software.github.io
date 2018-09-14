@@ -3,7 +3,7 @@ layout: page
 title: Xtract IS for Azure
 description: Xtract IS for Azure
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: for-azure
 permalink: /:collection/:path
 weight: 2

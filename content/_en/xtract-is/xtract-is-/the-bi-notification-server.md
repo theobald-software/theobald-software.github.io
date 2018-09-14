@@ -3,7 +3,7 @@ layout: page
 title: The BI Notification Server
 description: The BI Notification Server
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: the-bi-notification-server
 permalink: /:collection/:path
 weight: 14

@@ -3,7 +3,7 @@ layout: page
 title: Xtract IS Query
 description: Xtract IS Query
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: query
 permalink: /:collection/:path
 weight: 7

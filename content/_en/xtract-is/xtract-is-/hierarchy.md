@@ -3,7 +3,7 @@ layout: page
 title: Xtract IS Hierarchy
 description: Xtract IS Hierarchy
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: hierarchy
 permalink: /:collection/:path
 weight: 10

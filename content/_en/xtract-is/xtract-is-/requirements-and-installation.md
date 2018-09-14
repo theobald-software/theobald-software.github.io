@@ -3,7 +3,7 @@ layout: page
 title: Requirements and Installation
 description: Requirements and Installation
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: requirements-and-installation
 permalink: /:collection/:path
 weight: 1

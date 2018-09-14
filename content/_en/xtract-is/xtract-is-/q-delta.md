@@ -3,7 +3,7 @@ layout: page
 title: Xtract IS DeltaQ
 description: Xtract IS DeltaQ
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: q-delta
 permalink: /:collection/:path
 weight: 11

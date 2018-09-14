@@ -3,7 +3,7 @@ layout: page
 title: Xtract IS BW Loader
 description: Xtract IS BW Loader
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: bw-loader
 permalink: /:collection/:path
 weight: 13

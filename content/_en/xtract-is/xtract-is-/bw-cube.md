@@ -3,7 +3,7 @@ layout: page
 title: Xtract IS BW Cube
 description: Xtract IS BW Cube
 product: xtract-is
-parent: xtract-is
+parent: xtract-is-
 childidentifier: bw-cube
 permalink: /:collection/:path
 weight: 9
