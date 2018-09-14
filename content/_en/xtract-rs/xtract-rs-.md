@@ -1,16 +1,15 @@
 ---
 layout: page
-title: Report
-description: Report
+title: Xtract RS
+description: Xtract RS
 product: xtract-rs
 parent: xtract-rs
-childidentifier: report
+childidentifier: xtract-rs-
 permalink: /:collection/:path
-weight: 7
+weight: 1
 lang: en_GB
-old_url: /Xtract-RS-EN/default.aspx?pageid=report
 ---
 
-The Report component ABAP report extraction.
+Welcome to the Online Help for Xtract RS, which includes the following chapters:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

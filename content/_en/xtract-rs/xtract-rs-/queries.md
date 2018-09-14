@@ -3,7 +3,7 @@ layout: page
 title: Queries
 description: Queries
 product: xtract-rs
-parent: xtract-rs
+parent: xtract-rs-
 childidentifier: queries
 permalink: /:collection/:path
 weight: 4

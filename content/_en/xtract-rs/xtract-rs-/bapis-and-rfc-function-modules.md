@@ -3,7 +3,7 @@ layout: page
 title: BAPIs and RFC function modules
 description: BAPIs and RFC function modules
 product: xtract-rs
-parent: xtract-rs
+parent: xtract-rs-
 childidentifier: bapis-and-rfc-function-modules
 permalink: /:collection/:path
 weight: 6

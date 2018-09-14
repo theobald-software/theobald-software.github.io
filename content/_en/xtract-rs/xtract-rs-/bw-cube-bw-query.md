@@ -3,7 +3,7 @@ layout: page
 title: BW Cube / BW Query
 description: BW Cube / BW Query
 product: xtract-rs
-parent: xtract-rs
+parent: xtract-rs-
 childidentifier: bw-cube-bw-query
 permalink: /:collection/:path
 weight: 5
