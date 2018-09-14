@@ -1,15 +1,3 @@
----
-layout: page
-title: Customizing for DeltaQ
-description: Customizing for DeltaQ
-product: sap-customizing
-parent: sap-customizing
-permalink: /:collection/:path
-weight: 5
-lang: en_GB
-old_url: /Xtract-RS-EN/default.aspx?pageid=SAPCustomizing-EN:customizing-for-deltaq
----
-
 **Caution:** Those steps for the DeltaQ customizing except step 2 are client specific. 
 
 In order to be able to use the DeltaQ components, some customizing settings have to be made in SAP as described step-by-step in the following:
@@ -60,7 +48,7 @@ Launch the RSAS_RBWBCRL_STORE module as shown below. Its purpose is to activate 
 
 **Step 6**
 
-Refer to our knowledge base for registering the RFC Server in SAP
+Refer to our [knowledge base]() for registering the RFC Server in SAP
 
 **Caution:** Step 6 is for SAP Kernel Release 720 or higher.
 

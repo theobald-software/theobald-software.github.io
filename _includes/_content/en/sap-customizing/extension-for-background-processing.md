@@ -1,15 +1,3 @@
----
-layout: page
-title: Extension for Background Processing
-description: Extension for Background Processing
-product: sap-customizing
-parent: sap-customizing
-permalink: /:collection/:path
-weight: 7
-lang: en_GB
-old_url: /Xtract-RS-EN/default.aspx?pageid=SAPCustomizing-EN:extension-for-background-processing
----
-
 **Warning:** This function module is obsolete. Please use instead the function module *Z_XTRACT_IS_TABLE_COMPRESSION*.
 
 Table data is extracted by default in the dialog, i.e. for each data packet a select is done on the original table and the respective data packet is extracted and sent.

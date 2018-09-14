@@ -1,15 +1,3 @@
----
-layout: page
-title: Table Restrictions
-description: Table Restrictions
-product: sap-customizing
-parent: sap-customizing
-permalink: /:collection/:path
-weight: 2
-lang: en_GB
-old_url: /Xtract-RS-EN/default.aspx?pageid=SAPCustomizing-EN:table-restrictions
----
-
 Here you find the guide for the manual installation of Z_XTRACT_IS_TABLE.
 
 **Step 1 - Create a new function module**
@@ -37,8 +25,8 @@ Define the exceptions as shown in the screenshot.
 ![Z-Custom-Function-04](/img/content/Z-Custom-Function-04.png){:class="img-responsive" }
 
 **Step 5 - Code**<br>
-You can find the ABAP code in [Z_XTRACT_IS_TABLE]().txt. Use *Ctrl + C* and *Ctrl + V*  to paste the code in the source code editor.
+You can find the ABAP code in [Z_XTRACT_IS_TABLE.txt](). Use *Ctrl + C* and *Ctrl + V*  to paste the code in the source code editor.
 Save the function module and activate it.
 
 
-You can use the transport request (thtrans.zip), that can be found in the ABAP subfolder of the installation folder, to install the function module. For more detail information about installing the transport request please read the following *Knowledgebase article* or check the SAP help.
+You can use the transport request (thtrans.zip), that can be found in the ABAP subfolder of the installation folder, to install the function module. For more detail information about installing the transport request please read the following [Knowledgebase article]() or check the SAP help.

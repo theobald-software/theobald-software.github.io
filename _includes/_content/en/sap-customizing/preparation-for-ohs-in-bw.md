@@ -1,15 +1,3 @@
----
-layout: page
-title: Preparation for OHS in BW
-description: Preparation for OHS in BW
-product: sap-customizing
-parent: sap-customizing
-permalink: /:collection/:path
-weight: 4
-lang: en_GB
-old_url: /Xtract-RS-EN/default.aspx?pageid=SAPCustomizing-EN:preparation-for-ohs-in-bw
----
-
 In order to be able to use the OHS data source, it is necessary to configure a few things in the SAP BW first, as described in the following.
 Depending on the SAP release you can extract an OHS using InfoSpokes (< BI 7.0) or using an OHS destination (BI 7.0 or newer). SAP recommends from BI 7.0 on only the use of the OHS destination. Contrary to this recommendation we recommend even with BI 7.0 to use InfoSpokes because they are in practice more robust than the OHS destinations.
 Please also note that the following instructions for creating InfoSpokes / OHS destinations should be seen as an introduction. Please also read the relevant notes in SAP OSS.

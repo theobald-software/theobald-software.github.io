@@ -1,15 +1,3 @@
----
-layout: page
-title: Install Report Custom Function Module
-description: Install Report Custom Function Module
-product: sap-customizing
-parent: sap-customizing
-permalink: /:collection/:path
-weight: 6
-lang: en_GB
-old_url: /Xtract-RS-EN/default.aspx?pageid=SAPCustomizing-EN:install-report-custom-function-module
----
-
 Unlike the other components, the Report component requires the installation of a custom function module in your SAP system before use.
 
 If you can’t do this on your own, please ask your SAP system administrator for help.
@@ -26,7 +14,7 @@ The screenshots below show how the import, export and tables parameters that mus
 
 ![Report-Custom-Function-04](/img/content/Report-Custom-Function-04.jpg){:class="img-responsive" }
 
-Copy the source code from the file Z_XTRACT_REMOTE_REPORT.txt into the text box for the source code using *Ctrl+C* and *Ctrl+V*. You can find the file in the installation directory or download it here. 
+Copy the source code from the file Z_XTRACT_REMOTE_REPORT.txt into the text box for the source code using *Ctrl+C* and *Ctrl+V*. You can find the file in the installation directory or download it [here](). 
 
 Now the function module is ready to be used.
 
