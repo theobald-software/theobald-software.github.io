@@ -79,7 +79,7 @@ The merge operation uses a staging table and is performed in three steps.<br>
 In the first step a temporary staging table is created into which the data is inserted in the second step.<br>
 In the third step, the temporary table is merged into the target table and afterwards deleted.
 
-![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.png){:class="img-responsive"}
+![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.jpg){:class="img-responsive"}
 
 The merge operation updates existing rows and inserts non existent ones. You can see in the SQL statement, which fields will be updated.
 The SQL statement can be changed, e.g. to exclude certain columns from being updated. 
