@@ -1,1 +1,1 @@
-_"You cannot help men permanently by doing for them, what they could and should do for themselves."_ - Abraham Lincoln
+_"The best SAP interface is the one you don't even notice."_ - Peter Wohlfarth, CMO, Theobald Software

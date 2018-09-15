@@ -3,6 +3,7 @@ layout: null
 ---
 
 @import "colors";
+@import "fonts";
 
 /* --- General --- */
 
@@ -1003,9 +1004,9 @@ td.gutter pre {
   font-weight: 800;
   margin: 10px 0;
 }
-@media(max-width: 768px) {
+@media(min-width: 990px) {
   .productgrid-title {
-    font-weight: 400;
+    font-weight: bold;
     font-size: 14px;
   }
 }

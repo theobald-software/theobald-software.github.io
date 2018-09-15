@@ -39,6 +39,7 @@ var main = {
 
             search.helper.setQuery(referrer_relative).search();
         } else {
+            // make message visible
             $('.redirect-message').visible();
         }
 
