@@ -17,7 +17,7 @@ twitter:
   username: TheobaldSoftw
   card: summary
 
-logo: /img/company/theobald_onlinehelplogo.jpg
+logo: /img/company/theobald_onlinehelplogo.png
 
 # Only for SEO purposes, change the footer under _include/_footer as well if any of this changes.
 social:
@@ -113,7 +113,7 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      image: /img/company/theobald_onlinehelplogo.jpg
+      image: /img/company/theobald_onlinehelplogo.png
       product: none
 # Exclude
 exclude:
