@@ -3,17 +3,16 @@ layout: page
 title: Settings
 description: Settings
 product: xtract-universal
-parent: exasol
+parent: amzon-redshift
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol-settings
+old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift-settings
 ---
 
 Click on the **Destination** button to define extraction-specific settings of the extraction.
 
 ![ext_spec_set_de_form](/img/content/ext_spec_set_de_form.jpg){:class="img-responsive"}
-
 **Table Name**
 
 Specify the name of the destination table. You have the following options:
