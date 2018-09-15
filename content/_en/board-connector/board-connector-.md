@@ -3,8 +3,8 @@ layout: page
 title: BoardConnector
 description: BoardConnector main page
 product: board-connector
-parent: home
-childidentifier: board-connector
+parent: board-connector
+childidentifier: board-connector-
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
