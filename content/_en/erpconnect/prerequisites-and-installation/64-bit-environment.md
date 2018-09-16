@@ -19,11 +19,13 @@ Please copy the 64-bit version of librfc32.dll in the \System32 folder.
 The 32-Bit Version has to be copied in the \SysWoW64 folder.
 
 To download the librfc32.dll please refer to the following page [Theobald Products in a 64-bit environment](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/71/0/theobald--products-in-a-64-bit-environment). 
-The assemblies have the same name and but a different file size.
+The assemblies have the same name but a different file size.
 
 Please make sure you also have the latest Visual C++ 2005 Runtime. You can get it [here](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=766a6af7-ec73-40ff-b072-9112bab119c2).
 
-![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive" height="300px" width="300px"}  
+**librfc32.dll (32-Bit Version) -> C:\Windows\SysWOW64**
+
+**librfc32.dll (64-Bit Version) -> C:\Windows\System32**
   
 The exception for wrong or not available librfc32.dlls:
 
