@@ -10,16 +10,18 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=netweaver-dll
 ---
 
-ERPConnect supports the Netweaver RFC (SDK) starting by version 4.6.0 (see Version History).  
-To use it, set the Property Protocol of the R3Connection object to ClientProtocol.NWRFC. 
+ERPConnect supports the Netweaver RFC (SDK) starting by version 4.6.0.  
+To use it, set the Property Protocol of the R3Connection object to ClientProtocol.NWRFC before you open the connection. 
 
 **R3Connection.Protocol = ClientProtocol.NWRFC;**
 
 For 64-Bit Environments the following DLLs are required:
-- ERPConnect20.dll or ERPConnect35.dll or ERPConnect40.dll or ERPConnect45.dll
+- ERPConnect35.dll or ERPConnect45.dll
 - sapnwrfc.dll
-- icuuc34.dll
-- icudt34.dll
-- icuin34.dll 
+- icuucXX.dll
+- icudtXX.dll
+- icuinXX.dll 
+
+(XX can vary depending on the version of the NW Rfc Libraries)
 
 The ERPConnect*.dll are delivered with ERPConnect. The other DLLs must be downloaded from the SAP web site.
