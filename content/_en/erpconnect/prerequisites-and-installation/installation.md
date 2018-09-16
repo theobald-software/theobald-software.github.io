@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=installation
 ---
 
-The installation process copies the class library, the documentation and all sample programs into your program files directory.
+The installation process copies the class library, the LINQToERPSetup and all a few tools into your program files directory.
 The following list explains the most important files.
 All files marked with (<b>*</b>) may be redistributed to customers together with your application.  
   
@@ -22,3 +22,5 @@ All files marked with (<b>*</b>) may be redistributed to customers together with
 | TransactionRecorder.exe | Small tool to record batch sequences and create appropriate .NET code (see [Batch Input Background Processing](/link)) |
 | IdocSchemeGenerator.exe | 	Small tool to generate XML schemas for IDocs (see [XML-Support for IDoc programming](/link)) |
 | FunctionTemplateGenerator.exe | Small tool to generate XML templates for RFCFunction objects (see [Improve your Perfor-mance by Using Templates](/link)) |
+
+After the installation you are able to use ERPConnect in your .NET environment. If you want to use the the LINQ Designer, please run the right LINQToERPSetup for your VisualStudio environment. Details you can find in the LINQToERP chapter here.
