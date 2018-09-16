@@ -3,16 +3,16 @@ layout: page
 title: Settings
 description: Settings
 product: xtract-universal
-parent: ibm-db2
+parent: microsoft-sql-server
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=db2-settings
+old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-settings
 ---
 
 Click on the **Destination** button to define extraction-specific settings of the extraction.
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form.jpg){:class="img-responsive"}
+![ext_spec_set_de_form_debug](/img/content/ext_spec_set_de_form_debug.jpg){:class="img-responsive"}
 
 **Table Name**
 
@@ -31,6 +31,19 @@ Code: The SAP technical column name will be used as column name, e.g. MAKTX.<br>
 CodeAndText: The SAP technical column name and the SAP description separated by an underscore will be used as column name, e.g. MAKTX_Material Description (Short Text).<br>
 TextAndCode: The SAP description and the SAP technical column name description separated by an underscore will be used as column name, e.g. Material Description (Short Text)_MAKTX.
 
+**Date Conversion** 
+
+**Convert date strings**<br>
+Converts SAP dates (YYYYMMDD, e.g. 19900101) into a formatted date value. In the destination the date field does not have a string data type but a date data type (YYYY-MM-DD, e.g. 1990-01-01). 
+
+**Convert invalid dates to** <br>
+Every invalid value will be converted into this value. NULL is supported as value. 
+You should set this value to be used in case of no convertible date values.  
+During the conversion of invalid SAP dates the two specific cases 00000000 and 9999XXXX will be checked at first. 
+
+**Convert 00000000** to converts all SAP date 00000000 to this value.<br> 
+**Convert 9999XXXX** to converts all SAP date 9999XXXX to this value.
+
 **Preparation**
 
 Defines the action to be executed on the destination database, before the data are loaded to the destination table.
@@ -44,7 +57,7 @@ Defines the action to be executed on the destination database, before the data a
 
 If you want in the first step to just create a table, you have two options:
 1. Copy the SQL statement and run it directly on the destination database.
-2. Select the *None* option for *Row Processing* and *Finalization* and then run the extraction.
+2. Select the None option for Row Processing and Finalization and then run the extraction.
 
 After the table is created, you can change the table definition, e.g. by creating key fields, indices or additional fields.
 
@@ -67,7 +80,7 @@ Defines the action to be executed on the destination database, after the data ha
 **About merging**
 
 Before you merge data, it is required that you have a table, where new with existing data should be merged.
-The table could have been created in the first run using the correspondent Preparation-Option filled with data using the Row Processing-Option *Insert* .
+The table could have been created in the first run using the correspondent Preparation-Option filled with data using the Row Processing-Option Insert .
 
 In the following runs you would like to merge the new incoming rows.
 Therefore you should set the following options: 
@@ -75,8 +88,8 @@ Therefore you should set the following options:
 - Row Processing to  *Fill merge staging table and* 
 - Finalization to *Finalize Merge*.
 
-The merge operation uses a staging table and is performed in three steps.<br>
-In the first step a temporary staging table is created into which the data is inserted in the second step.<br>
+The merge operation uses a staging table and is performed in three steps.
+In the first step a temporary staging table is created into which the data is inserted in the second step.
 In the third step, the temporary table is merged into the target table and afterwards deleted.
 
 ![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.jpg){:class="img-responsive"}
@@ -126,6 +139,11 @@ Among other things you can use the function *ExistsTable(tableName)* to check th
 }#
 {% endhighlight %}
 </details>
+
+**Debugging**
+
+**Disable bulk operations:** <br>
+This option disables the bulk operation for inserting data into the destination database and leads to slower performance but it enables more detailed error messages on row level. 
 
 **Transaction style**
 
