@@ -71,6 +71,15 @@ var main = {
       $('#side-menu-col').css('padding-right','0');
     }
 
+    // if the screen is not small, adjust the margin at the bottom of the sidebar to the height of the footer
+    if( !main.isBreakpoint('xs') ) {
+        let heightFooterTop = $('.footer-top').height();
+        let heightFooterBottom = $('.footer-bottom').height();
+        let sidebarBottomMargin = heightFooterTop + heightFooterBottom;
+
+        $('.side-menu').css({marginBottom: sidebarBottomMargin});
+    }
+
     // when carets are clicked, they should rotate 180 degrees
     $('.side-menu-dropdown-trigger').on('click', function(e) {
         $(this).find('.caret').toggleClass('rotate-180');
