@@ -1,0 +1,29 @@
+---
+layout: page
+title: Connection
+description: Connection
+product: xtract-universal
+parent: teradata
+permalink: /:collection/:path
+weight: 2
+lang: en_GB
+old_url: /Xtract-Universal-EN/default.aspx?pageid=teradata-connection
+---
+
+The following settings can be defined for the Teradata destination.
+
+![Teradata-Connection](/img/content/Teradata-Connection.jpg){:class="img-responsive"}            
+
+**Connection**
+
+**Data Source**<br>
+Defines the name of the Teradata server.
+
+**User Id**<br>
+Defines the user id. 
+
+**Password**<br>
+Defines the password. 
+                        
+**Test Connection**<br>
+Checks the database connection. 
