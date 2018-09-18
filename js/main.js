@@ -9,9 +9,11 @@ var main = {
         if ($(".navbar").offset().top > 50) {
             $(".navbar").addClass("top-nav-short");
             $(".side-menu").addClass("nav-shortened");
+            $(".side-menu-wrapper").addClass("side-menu-wrapper-shortened");
         } else {
             $(".navbar").removeClass("top-nav-short");
             $(".side-menu").removeClass("nav-shortened");
+            $(".side-menu-wrapper").removeClass("side-menu-wrapper-shortened");
         }
     });
 
@@ -73,11 +75,29 @@ var main = {
 
     // if the screen is not small, adjust the margin at the bottom of the sidebar to the height of the footer
     if( !main.isBreakpoint('xs') ) {
-        let heightFooterTop = $('.footer-top').height();
-        let heightFooterBottom = $('.footer-bottom').height();
-        let sidebarBottomMargin = heightFooterTop + heightFooterBottom;
+        $(document).scroll(function() {
+            let footerHeight = $('footer').outerHeight();
+            let distanceFromBottom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
 
-        $('.side-menu').css({marginBottom: sidebarBottomMargin});
+            // footer is in view
+            if(distanceFromBottom < footerHeight) {
+                // deduct the distance to the bottom from the footer height.
+                // Now we know how much pixels of the footer is visible
+                // also deduct the height from the visible header
+                let deductPixels = (footerHeight-distanceFromBottom) + $('.navbar').outerHeight();
+
+                let displayStyle = [
+                    'height: calc(100% - ' + deductPixels + 'px)',
+                    'height: -moz-calc(100% - ' + deductPixels + 'px)',
+                    'height: -webkit-calc(100% - ' + deductPixels + 'px)'
+                ].join(';');
+
+                $('.side-menu-wrapper').attr('style', displayStyle);
+            } else {
+                $('.side-menu-wrapper').attr('style', '');
+            }
+        });
+        window.scrollBy(0,1);
     }
 
     // when carets are clicked, they should rotate 180 degrees
@@ -130,7 +150,6 @@ var main = {
             }
         }
     }
-
 };
 
 document.addEventListener('DOMContentLoaded', main.init);
