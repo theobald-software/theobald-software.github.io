@@ -2,12 +2,12 @@
 layout: page
 title: Extraction Settings
 description: Extraction Settings
-product: board-connector
+product: xtract-universal
 parent: sap-queries
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=settings
+old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-query-extraction-settings
 ---
 
 The dialog below will open after clicking the *Extraction Settings* button.
