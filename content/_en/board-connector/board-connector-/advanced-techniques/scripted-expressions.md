@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Script Expressions
-description: Script Expressions
-product: xtract-universal
+title: Scripted Expressions
+description: Scripted Expressions
+product: board-connector
 parent: advanced-techniques
 permalink: /:collection/:path
-weight: 10
+weight: 7
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=script-expressions
----
+old_url: /BOARD-Connector-EN/default.aspx?pageid=scripted-expressions
+---	
 
 A scripted expression has a C#.NET similar syntax and must start with #{ and end with #} .
 Basic .NET data types and operations in the System namespace of the .NET Environment including string operations are supported. 
