@@ -2,20 +2,21 @@
 layout: page
 title: Apply Variants
 description: Apply Variants
-product: board-connector
+product: xtract-universal
 parent: sap-queries
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=apply-variants
+old_url: /Xtract-Universal-EN/default.aspx?pageid=apply-variants
 ---
 
 To select one of the variants from the query, please use the binocular button. A list of possible variants is presented as shown in the screenshot below. Select one of the variants and click *OK*.
 
-![Query-Variant-01](/img/content/Query-Variant-01.png){:class="img-responsive"}
+![Select-Variant](/img/content/Select-Variant.png){:class="img-responsive"}
 
-To remove the variant, click the *X* button.<br>
+To remove the variant, click the X button.<br>
 The variant may in fact be defined dynamically using a corresponding parameter in the extraction URL.
 
-![Query-Variant-02](/img/content/Query-Variant-02.png){:class="img-responsive"}
+![Look-Up-Variant](/img/content/Look-Up-Variant.png){:class="img-responsive"}
+
 

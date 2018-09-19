@@ -2,12 +2,12 @@
 layout: page
 title: Where Clause
 description: Where Clause
-product: xtract-universal
+product: board-connector
 parent: table-join
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=tj-where-clause
+old_url: /BOARD-Connector-EN/default.aspx?pageid=tj-where-clause
 ---
 
 In the *Criteria* window click on link to define a where condition.  
