@@ -22,4 +22,4 @@ d. Log On Ticket
 SAP Library: [SNC]()<br> 
 SAP Library: [SNC Parameters]()<br> 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

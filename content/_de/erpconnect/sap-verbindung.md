@@ -74,4 +74,4 @@ Achtung: Die Netweaver-RFC-Option unterstützt kein DeltQ und kein OHS.
 
 SAP Library: [RFC API: Classical & NetWeaver]() 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
