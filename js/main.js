@@ -1,19 +1,25 @@
 var main = {
 
-  bigImgEl : null,
-  numImgs : null,
-
   init : function() {
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
+        let sideMenuOffset = 0;
+
         if ($(".navbar").offset().top > 50) {
             $(".navbar").addClass("top-nav-short");
             $(".side-menu").addClass("nav-shortened");
-            $(".side-menu-wrapper").addClass("side-menu-wrapper-shortened");
+
+            sideMenuOffset = 70; // outer height of shortened nav
         } else {
             $(".navbar").removeClass("top-nav-short");
             $(".side-menu").removeClass("nav-shortened");
-            $(".side-menu-wrapper").removeClass("side-menu-wrapper-shortened");
+
+            sideMenuOffset = 107; // outer height of full nav
+        }
+
+        // if the screen is not small, adjust the margin at the bottom of the sidebar to the height of the footer
+        if( !main.isBreakpoint('xs') ) {
+            $(document).on('scroll', adjustSideMenu(sideMenuOffset));
         }
     });
 
@@ -73,33 +79,6 @@ var main = {
       $('#side-menu-col').css('padding-right','0');
     }
 
-    // if the screen is not small, adjust the margin at the bottom of the sidebar to the height of the footer
-    if( !main.isBreakpoint('xs') ) {
-        $(document).scroll(function() {
-            let footerHeight = $('footer').outerHeight();
-            let distanceFromBottom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
-
-            // footer is in view
-            if(distanceFromBottom < footerHeight) {
-                // deduct the distance to the bottom from the footer height.
-                // Now we know how much pixels of the footer is visible
-                // also deduct the height from the visible header
-                let deductPixels = (footerHeight-distanceFromBottom) + $('.navbar').outerHeight();
-
-                let displayStyle = [
-                    'height: calc(100% - ' + deductPixels + 'px)',
-                    'height: -moz-calc(100% - ' + deductPixels + 'px)',
-                    'height: -webkit-calc(100% - ' + deductPixels + 'px)'
-                ].join(';');
-
-                $('.side-menu-wrapper').attr('style', displayStyle);
-            } else {
-                $('.side-menu-wrapper').attr('style', '');
-            }
-        });
-        window.scrollBy(0,1);
-    }
-
     // when carets are clicked, they should rotate 180 degrees
     $('.side-menu-dropdown-trigger').on('click', function(e) {
         $(this).find('.caret').toggleClass('rotate-180');
@@ -153,3 +132,27 @@ var main = {
 };
 
 document.addEventListener('DOMContentLoaded', main.init);
+
+function adjustSideMenu(navOffset) {
+    let footerHeight = $('footer').outerHeight();
+    let distanceFromBottom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
+    let deductPixels;
+
+    if(distanceFromBottom < footerHeight) {
+        // deduct the distance to the bottom from the footer height.
+        // Now we know how much pixels of the footer is visible
+        // also deduct the height from the visible header
+        deductPixels = (footerHeight - distanceFromBottom) + navOffset;
+    } else {
+        // deduct just the height of the nav using the parameter given
+        deductPixels = navOffset;
+    }
+
+    let displayStyle = [
+        'height: calc(100% - ' + deductPixels + 'px)',
+        'height: -moz-calc(100% - ' + deductPixels + 'px)',
+        'height: -webkit-calc(100% - ' + deductPixels + 'px)'
+    ].join(';');
+
+    $('.side-menu-wrapper').attr('style', displayStyle);
+}
