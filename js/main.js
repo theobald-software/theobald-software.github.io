@@ -1,6 +1,9 @@
 var main = {
 
   init : function() {
+    // Initial calculation for the sideMenu offset
+    adjustSideMenu(107); // outer height of full nav
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         let sideMenuOffset = 0;
