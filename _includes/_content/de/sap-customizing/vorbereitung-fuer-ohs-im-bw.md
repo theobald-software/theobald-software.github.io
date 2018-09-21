@@ -48,6 +48,6 @@ Der DTP kann wie vom System vorgeschlagen, gespeichert und aktiviert werden (je 
 
 ![OHS-BW-08](/img/content/OHS-BW-08.png){:class="img-responsive"}
 
-Um den Transferprocess von Xtract QV aus anstoßen zu können, brauchen wir nun noch eine Prozesskette. Gehen Sie dazu von der Transaktion RSA1 in das Menü *Editieren -> Prozessketten*. Legen Sie dort eine neue Prozesskette an. In der Variante für die Kette muss *Start durch API *angekreuzt sein. Innerhalb der Prozesskette muss dann der DTP eingefügt werden: nach der Aktivierung steht die Kette zur Ausführung bereit.
+Um den Transferprocess von Xtract QV aus anstoßen zu können, brauchen wir nun noch eine Prozesskette. Gehen Sie dazu von der Transaktion RSA1 in das Menü *Editieren -> Prozessketten*. Legen Sie dort eine neue Prozesskette an. In der Variante für die Kette muss *Start durch API* angekreuzt sein. Innerhalb der Prozesskette muss dann der DTP eingefügt werden: nach der Aktivierung steht die Kette zur Ausführung bereit.
 
 ![OHS-BW-09](/img/content/OHS-BW-09.png){:class="img-responsive"}
