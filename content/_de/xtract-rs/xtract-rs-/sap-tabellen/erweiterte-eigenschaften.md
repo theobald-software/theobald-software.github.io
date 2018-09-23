@@ -15,7 +15,7 @@ Es können noch weitere Parameter in dem Tabellenextrakt definiert werden. Klick
 Die einzelnen Parameter haben folgende Bedeutung:
 
 
-![](/img/content/.png){:class="img-responsive"}
+![Table-Settings](/img/content/Table-Settings.png){:class="img-responsive"}
   
 
 **Max Rows**<br>
