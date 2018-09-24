@@ -13,4 +13,4 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=voraussetzungen-und-installation
 
 Dieser Abschnitt bietet einen Überblick über die Voraussetzungen und führt in die Installation ein.
 
-{% include _content/table-of-contents.html parent="erpconnect" collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
