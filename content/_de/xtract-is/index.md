@@ -28,4 +28,4 @@ Darüber hinaus sehen Sie noch die notwendige Lizenz.
 | OHS         |     | R  |                    | X                |
 | BW Loader   |     | W  |                    | X                | 
 
-{% include _content/table-of-contents.html parent="erpconnect" collection=site.de %}
+{% include _content/table-of-contents.html parent="xtract-is" collection=site.de %}
