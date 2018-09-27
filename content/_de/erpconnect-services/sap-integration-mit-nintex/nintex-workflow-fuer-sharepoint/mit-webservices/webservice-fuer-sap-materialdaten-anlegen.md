@@ -32,10 +32,10 @@ In der Execute Function-Aktivität wird der Inputparameter entsprechend zugewies
 
 Im Folgenden finden Sie die Abbildung der Felder des Inputparameters.
 
-![Nintex-Material-WS-Mapping-Structure](/img/content/Nintex-Material-WS-Mapping-Structure.png){:class="img-responsive"}
+![Nintex-Material-WS-Mapping-Structure](/img/content/Nintex-Material-WS-Mapping-Structure.jpg){:class="img-responsive"}
 
 Nun deployen Sie den Webservice auf SharePoint. 
 
-![Nintex-Material-WS-Deployed](/img/content/Nintex-Material-WS-Deployed.png){:class="img-responsive"}
+![Nintex-Material-WS-Deployed](/img/content/Nintex-Material-WS-Deployed.jpg){:class="img-responsive"}
 
 [Hier]() können Sie die WebService-Definition herunterladen (zip).
