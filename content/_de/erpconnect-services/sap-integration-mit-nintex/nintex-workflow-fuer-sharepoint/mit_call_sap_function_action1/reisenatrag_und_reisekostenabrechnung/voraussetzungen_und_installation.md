@@ -29,3 +29,5 @@ Folgende Dateien zur Installation der Szenarien finden Sie in dieser [ZIP]()-Dat
 - SAP Z-Funktionsbausteine 
 
 Weiterführende Informationen zum Import von Funktionsbausteinen finden Sie in folgendem [Knowledgebase-Artikel](). 
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
