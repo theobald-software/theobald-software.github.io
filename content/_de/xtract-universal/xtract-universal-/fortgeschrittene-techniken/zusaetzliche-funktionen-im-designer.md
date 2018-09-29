@@ -3,7 +3,7 @@ layout: page
 title: Zusätzliche Funktionen im Designer
 description: Zusätzliche Funktionen im Designer
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 7
 lang: de_DE

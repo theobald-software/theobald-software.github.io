@@ -13,4 +13,4 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=fortgeschrittene-techniken
 
 Der letzte Abschnitt hat parallel zur Einführung in die erste Komponente Table einige Basis-Techniken gezeigt, wie eine Extraktion mit Xtract Universal gestaltet und ausgeführt werden kann. Dieser Abschnitt stellt nun weitere Aspekte vor, um tiefer in die Möglichkeiten von Xtract Universal einzusteigen.
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

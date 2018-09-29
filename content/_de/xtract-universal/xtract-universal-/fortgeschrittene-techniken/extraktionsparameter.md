@@ -3,7 +3,7 @@ layout: page
 title: Extraktionsparameter
 description: Extraktionsparameter
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

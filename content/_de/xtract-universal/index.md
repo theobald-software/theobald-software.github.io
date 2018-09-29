@@ -28,4 +28,4 @@ In der unteren Übersicht finden Sie, welche Komponente für die Datenextraktion
 | Hierarchy   |     | X  |
 | OHS         |     | X  |
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

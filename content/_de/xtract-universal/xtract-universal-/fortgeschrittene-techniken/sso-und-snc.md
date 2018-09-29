@@ -3,7 +3,7 @@ layout: page
 title: SSO und SNC
 description: SSO und SNC
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 6
 lang: de_DE

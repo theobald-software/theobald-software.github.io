@@ -3,7 +3,7 @@ layout: page
 title: Metadaten-Zugriff über HTTP
 description: Metadaten-Zugriff über HTTP
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 8
 lang: de_DE

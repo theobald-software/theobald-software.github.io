@@ -3,7 +3,7 @@ layout: page
 title: Skript-Ausdrücke
 description: Skript-Ausdrücke
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 10
 lang: de_DE

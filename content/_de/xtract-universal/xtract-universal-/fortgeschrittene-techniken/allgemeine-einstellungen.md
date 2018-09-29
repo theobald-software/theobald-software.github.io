@@ -3,7 +3,7 @@ layout: page
 title: Allgemeine Einstellungen
 description: Allgemeine Einstellungen
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

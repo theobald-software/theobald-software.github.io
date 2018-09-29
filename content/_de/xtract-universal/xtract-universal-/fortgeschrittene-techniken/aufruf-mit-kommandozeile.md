@@ -3,7 +3,7 @@ layout: page
 title: Aufruf mit Kommandozeile
 description: Aufruf mit Kommandozeile
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 9
 lang: de_DE

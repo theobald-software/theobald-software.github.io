@@ -3,7 +3,7 @@ layout: page
 title: SAP-Verbindungen
 description: SAP-Verbindungen
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
