@@ -2,8 +2,8 @@
 layout: page
 title: SAP Customizing
 description: SAP Customizing
-product: xtract-rs
-parent: xtract-rs
+product: xtract-universal
+parent: xtract-universal
 childidentifier: sap-customzing
 permalink: /:collection/:path
 weight: 2
