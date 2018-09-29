@@ -7,7 +7,7 @@ parent: sap-customzing
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Xtract-RS-DE/default.aspx?pageid=SAPCustomizing-DE:funktionsbaustein-fuer-table-komprimierung	
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=SAPCustomizing-DE:funktionsbaustein-fuer-table-komprimierung
 ---
 
 {% include _content/de/sap-customizing/funktionsbaustein-fuer-table-komprimierung.md  %}
