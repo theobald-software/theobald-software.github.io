@@ -15,4 +15,4 @@ Bitte beachten Sie, dass dieses Kapitel nicht nur die Details zur SAP-Tabellenex
 
 Es ist also Voraussetzung für alle nachfolgenden Kapitel.
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
