@@ -3,11 +3,11 @@ layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-universal
-parent: ibm-db2
+parent: exasol
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=db2-einstellungen
+old_url: /Xtract-Universal-DE/default.aspx?pageid=exasol-einstellungen
 ---
 
 Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionsspezifische Einstellungen bezüglich des Ziels festlegen.
