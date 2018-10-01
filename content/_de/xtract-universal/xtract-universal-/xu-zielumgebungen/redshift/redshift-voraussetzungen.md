@@ -24,13 +24,11 @@ In Xtract Universal Versionen vor 2.102.0 muss anstelle des oben genannten ODBC 
 Sie können entweder das [offizielle Mono Paket]() vom Hersteller oder aber die Mono.Security.dll von einer Quelle Ihrer Wahl herunterladen.<br>
 Um die Datei zu installieren, gibt es zwei Möglichkeiten:
 
-1. Registrieren Sie die Mono.Security assembly im global assembly cache (gac):<br>
+1. Registrieren Sie die Mono.Security assembly im global assembly cache (gac):
 - Öffnen Sie ein Kommandozeilenfenster und wechseln Sie in das Xtract Universal Installationsverzeichnis
 	cd "C:\Program Files\XtractUniversal"
-
 - Installieren Sie die Mono.Security.dll Datei mit Hilfe des gacutil in Ihren global assembly cache 
-	gacutil -i "C:\Program Files (x86)\Mono-2.0\lib\mono\2.0\Mono.Security.dll"
-
-Für weitere Informationen schauen Sie sich bitte diesen Artikel an.
+	gacutil -i "C:\Program Files (x86)\Mono-2.0\lib\mono\2.0\Mono.Security.dll"<br>
+	Für weitere Informationen schauen Sie sich bitte [diesen Artikel]() an.
 
 2. Kopieren Sie die Mono.Security.dll in das Xtract Universal Installationsverzeichnis.
