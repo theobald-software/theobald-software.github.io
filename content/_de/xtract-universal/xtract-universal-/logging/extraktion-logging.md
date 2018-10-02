@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktion-logging
 
 Neben dem Server-Logging kann die Protokollierung pro Extraktionsvorgang aus der Hauptmaske über den entsprechenden *Log*-Button aufgerufen werden.
 
-![Extraction-Logging-Button-Position](/img/content/Extraction-Logging-Button-Position.jpg){:class="img-responsive"}
+![Extraction-Logging-Button-Position](/img/content/Extraction-Logging-Button-Position.png){:class="img-responsive"}
 
 
 Hier finden Sie auf der linken Seite jeweils einen Zeitstempel pro Extraktionsvorgang, der durch anklicken aktiviert werden kann.
