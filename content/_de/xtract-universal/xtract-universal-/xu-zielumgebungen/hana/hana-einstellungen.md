@@ -3,16 +3,16 @@ layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-universal
-parent: exasol
+parent: hana
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=exasol-einstellungen
+old_url: /Xtract-Universal-DE/default.aspx?pageid=hana-einstellungen
 ---
 
 Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionsspezifische Einstellungen bezüglich des Ziels festlegen.
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form.jpg){:class="img-responsive"}
+![ext_spec_set_de_form_debug](/img/content/ext_spec_set_de_form_debug.jpg){:class="img-responsive"}
 
 **Table Name**
 
@@ -65,7 +65,6 @@ Wollen Sie im ersten Schritt nur die Tabelle anlegen und keine Daten einfügen, 
 Nachdem die Tabelle angelegt ist, bleibt es Ihnen überlassen, die Tabellendefinition zu ändern, 
 indem Sie bspw. entsprechende Schlüsselfelder und Indizes bzw. zusätzliche Felder anlegen.
 
-
 **Row Processing**
 
 Definiert, wie die Daten in die Zieltabelle eingefügt werden.
@@ -106,47 +105,11 @@ Felder, welche nicht im SQL-Statement auftauchen, sind von Änderungen nicht bet
 Es ist wichtig, dass ein entsprechender Index angelegt ist, um den Merge-Befehl schnell auszuführen. 
 Ohne einen Index würde die Ausführung des Merge-Befehls abhängig von der Datenmenge lange dauern.
 
+**Debugging**
 
-**Custom SQL** 
+**Disable bulk operations:** <br>
+Diese Option deaktiviert das Massen-Einfügen (Bulk Insert) von Daten in die Zieldatenbank, was zu einer längeren Laufzeit führt aber ermöglicht detailliertere Fehlermeldungen auf Datensatz-Ebene. 
 
-Hier können Sie eigene SQL- bzw. Skript-Ausdrücke definieren. Bestehende SQL-Befehle können Sie als Vorlage verwenden. 
-
-**Vorlagen**
-
-Sie können eigene SQL-Ausdrücke schreiben und haben damit die Möglichkeit, das Laden der Daten an Ihre Bedürfnisse anzupassen. <br>
-Darüber hinaus können Sie z.B. auch auf der Datenbank bestehende Stored Procedures ausführen.
-Dafür können Sie die angeboten SQL-Vorlagen der folgenden Phasen verwenden:
-- *Preparation (z.B. Drop & Create oder Create if Not Exists)* 
-- *Row Processing (z.B. Insert oder Merge)* und 
-- *Finalization*.
-
-**Skript-Ausdrücke**
-
-Für den Custom SQL-Befehl können Sie nun auch Skript-Ausdrücke einsetzen. Weitere Infos finden Sie auf der Seite Skript-Ausdrücke (unter Fortgeschrittene Techniken).
-
-![Formula-ExistsTable](/img/content/Formula-ExistsTable.jpg){:class="img-responsive"}
-
-Unter anderem können Sie den Befehl *ExistsTable(tableName)* verwenden, um die Existenz einer Tabelle zu überprüfen. Diese Funktion wurde eingeführt, da manche Datenbanksysteme dies nur unter Einschränkung unterstützen.
-
-<details>
-<summary>SQL-Skript</summary>
-{% highlight sql %}
-#{
-   iif
-   (
-      ExistsTable("MAKT"),
-      "TRUNCATE TABLE \"MAKT\";",
-      "
-         CREATE TABLE \"MAKT\"(
-            \"MATNR\" VARCHAR(18),
-            \"SPRAS\" VARCHAR(2),
-            \"MAKTX\" VARCHAR(40));
-      "
-   )
-}#
-
-{% endhighlight %}
-</details>
 
 **Transaction style**
 

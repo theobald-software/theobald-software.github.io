@@ -3,16 +3,16 @@ layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-universal
-parent: exasol
+parent: microsoft-sql-server
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=exasol-einstellungen
+old_url: /Xtract-Universal-DE/default.aspx?pageid=sql-server-einstellungen
 ---
 
 Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionsspezifische Einstellungen bezüglich des Ziels festlegen.
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form.jpg){:class="img-responsive"}
+![ext_spec_set_de_form_debug](/img/content/ext_spec_set_de_form_debug.jpg){:class="img-responsive"}
 
 **Table Name**
 
@@ -64,7 +64,6 @@ Wollen Sie im ersten Schritt nur die Tabelle anlegen und keine Daten einfügen, 
 
 Nachdem die Tabelle angelegt ist, bleibt es Ihnen überlassen, die Tabellendefinition zu ändern, 
 indem Sie bspw. entsprechende Schlüsselfelder und Indizes bzw. zusätzliche Felder anlegen.
-
 
 **Row Processing**
 
