@@ -55,8 +55,6 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 
 Damit kann man als Custom SQL bei der Finalization folgendes in die Zieltabelle [ExtractionStatistics] einfügen: 
 
-<details>
-<summary></summary>
 {% highlight sql %}
 INSERT INTO [ExtractionStatistics]
 (
@@ -71,7 +69,7 @@ VALUES
      '#{Extraction.RowsCount}#'
 );
 {% endhighlight %}
-</details>
+
 
 **Unterstützte Datentypen**<br>
 Folgende .NET-Datentypen werden unterstützt:<br>
