@@ -1,13 +1,14 @@
 ---
 layout: page
 title: BoardConnector
-description: BoardConnector main page
+description: BoardConnector
 product: board-connector
-parent: home
-childidentifier: board-connector
+parent: board-connector
+childidentifier: board-connector-
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
+old_url: /BOARD-Connector-DE/default.aspx?pageid=board-connector
 ---
 
 Willkommen in der Online Help von BOARD Connector. Diese Hilfe beinhaltet folgende Kapitel:
