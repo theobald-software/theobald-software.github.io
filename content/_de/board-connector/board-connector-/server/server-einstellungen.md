@@ -29,28 +29,28 @@ Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein SSL-Zertifikat inst
 
 Weitere Informationen finden Sie in unserem blog: [http://www.theobald-software.com/blog/?p=389](http://www.theobald-software.com/blog/?p=389)
 
-BoardApiPort
+**BoardApiPort**<br>
 Definiert den Port, der für die Kommunikation zwischen BOARD und dem Server benutzt wird. Diese Einstellung sollten durch den Benutzer nur nach vorheriger Rücksprache mit BOARD geändert werden.
 
-ConfigurationPort
+**ConfigurationPort**<br>
 Definiert die Portnummer, über die der Server mit dem Designer via HTTP kommuniziert.
 
-ListenerPort
+**ListenerPort**<br>
 Definiert die Portnummer, über die der Server den Aufruf der Extraktionen über HTTP entgegen nimmt. 
 
-SecureListenerPort
+**SecureListenerPort**<br>
 Definiert die Portnummer, über die der Server mit dem Designer via HTTPS kommuniziert.
 
-ListenerThreads
+**ListenerThreads**<br>
 Definiert die höchste Anzahl der verschiedenen Extraktionsanfragen, welche parallel bearbeitet werden. Zwei Extraktionsanfragen sind verschieden, wenn sie Extraktionen mit verschiedenen Namen aufrufen. 
 
-MaxLogDays
+**MaxLogDays**<br>
 Definiert das maximale Alter der Logdateien in Tagen. Danach werden die Logdateien gelöscht. 
 
 Der Puffer dient der Zwischenspeicherung der Extraktionsergebnisse. Eine Extraktion wird dabei durch ihren Namen identifiziert. Beim Aufruf einer Extraktion mit neuen Parametern werden die Daten aus dem SAP-System erneut abgerufen.
 
-BufferLifespanMinutes
+**BufferLifespanMinutes**<br>
 Definiert das maximale Alter in Minuten einer Extraktion im Puffer.
 
-BufferExtractionCount
+**BufferExtractionCount**<br>
 Definiert die maximale Anzahl der Ergebnisse verschiedener Extraktionen im Puffer.
