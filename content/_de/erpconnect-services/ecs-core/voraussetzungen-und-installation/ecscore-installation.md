@@ -34,4 +34,4 @@ Die Komponenten werden installiert. Dabei wird der **Microsoft SQL Server Compac
 Bei der Installation handelt es sich ausschließlich um das Kopieren und die Registrierung der benötigten Dateien.
 
 Nach der Installation müssen Sie noch das *ECS Core DEPLOYMENT* ausführen. Auch nach einer Repair-Installation oder dem Darüberinstallieren einer neuen ECS Core Version ist ein erneutes Deployment notwendig. 
-Alle Einzelheiten darüber sind im Abschnitt [Deployment Manager]() beschrieben.
+Alle Einzelheiten darüber sind im Abschnitt [Deployment Manager](./ecscore-deployment) beschrieben.

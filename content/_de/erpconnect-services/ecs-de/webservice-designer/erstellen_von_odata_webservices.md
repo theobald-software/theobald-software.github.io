@@ -17,7 +17,7 @@ REST-basierte Webservices folgen bestimmten Designprinzipien, d.h. Sie nutzen z.
 
 Auf der anderen Seite unterliegt OData anders als das sehr freie Datenprotokoll SOAP aufgrund der klaren Strukturierung bestimmten Restriktionen, was sich auch in der Konfiguration der Webservices widerspiegelt.
 
-Ob Sie einen Webservice im SOAP- oder OData Format verwenden sollten, hängt von Ihren individuellen Projekt-Anforderungen ab. In SharePoint Workflows können beispielsweise nur REST-basierte Webservices eingebunden werden (siehe dazu folgenden Knowledgebase-Artikel: [Building an OData web service in ECS WebService Designer and using it in a SharePoint 2013 workflow]()).   <br>
+Ob Sie einen Webservice im SOAP- oder OData Format verwenden sollten, hängt von Ihren individuellen Projekt-Anforderungen ab. In SharePoint Workflows können beispielsweise nur REST-basierte Webservices eingebunden werden (siehe dazu folgenden Knowledgebase-Artikel: [Building an OData web service in ECS WebService Designer and using it in a SharePoint 2013 workflow](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/139/53/building-an-odata-web-service-in-ecs-webservice-designer-and-using-it-in-a-sharepoint-2013-workflow)).   <br>
 In den folgenden Kapiteln erfahren Sie, wie Sie mit dem Werbservice Designer OData-Webservices erstellen. 
                    
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

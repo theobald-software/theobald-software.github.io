@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=javascript-bibliothek-fuer-rest
 ---
 
-Für die Entwicklung mit ECS REST Services und JavaScript empfehlen wir den Einsatz unserer JavaScript-Bibliothek Client Library tEcs (theobald.ecs.micro) for ERPConnect Services/Core, welche die clientseitige Programmierung mit JavaScript durch die Kapselung der Basisfunktionen von ECS vereinfacht.
+Für die Entwicklung mit ECS REST Services und JavaScript empfehlen wir den Einsatz unserer [JavaScript-Bibliothek Client Library tEcs (theobald.ecs.micro) for ERPConnect Services/Core](https://static.theobald-software.com/theobald.ecs.micro/5.4.2/), welche die clientseitige Programmierung mit JavaScript durch die Kapselung der Basisfunktionen von ECS vereinfacht.
 
 {% highlight javascript %}
 theobald.ready(function() {
@@ -70,6 +70,6 @@ tEcs.callSoapService({
 
 **theobald.ecs:** 
 
-theobald.ecs ist eine Erweiterung von **theobald.ecs.micro** und erfordert jQuery. <br>
+[theobald.ecs](https://static.theobald-software.com/theobald.ecs/5.0.0/) ist eine Erweiterung von **theobald.ecs.micro** und erfordert jQuery. <br>
 Sie ermöglicht weitere Features wie Persistierung der Einstellungen und Logging.<br>
 Wenn Sie SharePoint- und Persistierung-APIs nutzen möchten, um APIKey, ServiceApplication, Url in SharePoint oder Client-seitige Konfiguration im Browser zu speichern, dann nutzen Sie **theobald.ecs**. 

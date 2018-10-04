@@ -78,6 +78,6 @@ Für das EXECUTE-Statement muss ein @RETVAL definiert werden. Es können nicht m
 
 **Beispiel mit RESTClient**
 
-[RESTClient]() ist ein Add-on für verschieden Browser und ermöglicht das Testen von REST Services. Das folgende Screenshot zeigt, wie Sie Daten aus einer SAP-Tabelle mit Hilfe der ECS REST services abrufen können. 
+[RESTClient](http://restclient.net/) ist ein Add-on für verschieden Browser und ermöglicht das Testen von REST Services. Das folgende Screenshot zeigt, wie Sie Daten aus einer SAP-Tabelle mit Hilfe der ECS REST services abrufen können. 
 
 ![ECS-RESTClient-Table](/img/content/ECS-RESTClient-Table.png){:class="img-responsive"}

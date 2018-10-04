@@ -20,5 +20,5 @@ Jeder Funktionsbaustein besteht aus *Import*- und *Export*-Parametern, die - wie
 
 **Commit Transaction / Transaktion abschließen** 
 
-Um einen Funktionsbaustein zum Abschließen einer Transaktion (commit transaction) auszuführen (z.B. mit BAPI_TRANSACTION_COMMIT) benötigen Sie einen [Verbindungskontext (connection scope)](). <br> 
+Um einen Funktionsbaustein zum Abschließen einer Transaktion (commit transaction) auszuführen (z.B. mit BAPI_TRANSACTION_COMMIT) benötigen Sie einen [Verbindungskontext (connection scope)](../ecs-sap-verbindung/ecs-sap-verbindungskontext). <br> 
 Das ist auch der Fall, wenn Sie mehrere Funktionsbausteine im selben Verbindungskontext ausführen müssen. 

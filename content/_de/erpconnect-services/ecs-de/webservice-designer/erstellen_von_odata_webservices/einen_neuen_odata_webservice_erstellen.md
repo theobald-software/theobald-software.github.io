@@ -64,6 +64,3 @@ Wählen Sie BAPI_REQUISITION_CREATE als Funktion. Schließen Sie den Aktivitäts
 
 ![WSD-OData-Example14](/img/content/WSD-OData-Example14.png){:class="img-responsive"}
 
-![](/img/content/.png){:class="img-responsive"}
-
-![](/img/content/.png){:class="img-responsive"}

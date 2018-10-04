@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=erpconnect-services-verwalt
 
 In der *Central Administration* finden Sie im Abschnitt *ERPConnect Services* folgende Funktionen:
 
-- *Manage Licenses* verwaltet die Lizenzen, siehe Lizenz einspielen.
+- *Manage Licenses* verwaltet die Lizenzen, siehe [Lizenz einspielen](../../ecs-voraussetzungen/ecs-lizenz-einspielen).
 - *Manage Objects* verwaltet die angelegten ERPConnect Services-Objekte.
 - *Test Application Proxy* testet die ERPConnect Services-Application.
 - *Version History* zeigt die Versionshistorie an.

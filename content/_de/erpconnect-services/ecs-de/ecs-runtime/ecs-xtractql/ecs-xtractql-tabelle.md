@@ -37,4 +37,4 @@ Selektion aller Datensätze der Tabelle MARA. SAP-seitig wird die XQL-Abfrage du
 SELECT * FROM MARA WITH-OPTIONS(CUSTOMFUNCTIONNAME = 'Z_XTRACT_IS_TABLE')
 {% endhighlight %}
 
-Im Kapitel [Einschränkungen bei Tabellen]() finden Sie weitere Informationen zu den Einschränkungen beim Lesen von SAP-Tabellen und wie Sie den Z-Funktionsbaustein Z_XTRACT_IS_TABLE installieren.
+Im Kapitel [Einschränkungen bei Tabellen](../ecs-anhang/einschraenkungen-bei-tabellen) finden Sie weitere Informationen zu den Einschränkungen beim Lesen von SAP-Tabellen und wie Sie den Z-Funktionsbaustein Z_XTRACT_IS_TABLE installieren.
