@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Skript-Ausdrücke
-description: Skript-Ausdrücke
-product: xtract-universal
+title: Script-Ausdrücke
+description: Script-Ausdrücke
+product: board-connector
 parent: fortgeschrittene-techniken
 permalink: /:collection/:path
-weight: 10
+weight: 7
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=skript-ausdruecke
+old_url: /BOARD-Connector-DE/default.aspx?pageid=script-ausdruecke
 ---
 
 Eine Formel wird in C#.NET-ähnlicher Syntax geschrieben und muss mit #{ anfangen und #} enden.<br>
