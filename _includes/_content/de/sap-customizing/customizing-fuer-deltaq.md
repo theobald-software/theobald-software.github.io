@@ -55,7 +55,7 @@ Führen Sie den Baustein RSAS_RBWBCRL_STORE wie unten gezeigt aus. Er dient dazu
 
 **Schritt 6**
 
-In unserer [Knowledge Base]() finden Sie die Anleitung zu der Registrierung des RFC Servers in SAP. 
+In unserer [Knowledge Base](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/100/0/registering-rfc-server-in-sap-releases-above-kernel-release-720) finden Sie die Anleitung zu der Registrierung des RFC Servers in SAP. 
 
 **Achtung**: Dieser Schritt gilt ab der SAP Kernel-Version 720.
 
@@ -63,4 +63,4 @@ In unserer [Knowledge Base]() finden Sie die Anleitung zu der Registrierung des 
 
 Ändern Sie in der Transaktion SMQS den Parameter Max.Verb. auf den Wert 10. Erhöhen Sie diesen Wert, wenn Sie mehrere DeltaQ-Extraktionen auf derselben RFC Destination parallel ausführen.
 
-Bei Fehlern bitte im [DeltaQ Troubleshooting Guide]() (Englisch) nachschlagen.
+Bei Fehlern bitte im [DeltaQ Troubleshooting Guide](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/4/deltaq-troubleshooting-guide) (Englisch) nachschlagen.

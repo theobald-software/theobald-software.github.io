@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=table-extraktionseinstellungen
 ---
 
-Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen vorzunehmen. Die *Extraction Settings* beinhalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen, während die General Settings bei allen Extraktionstypen gleich sind. Sie finden Informationen zu den *General Settings* im Abschnitt [Allgemeine Einstellungen](). 
+Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen vorzunehmen. Die *Extraction Settings* beinhalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen, während die General Settings bei allen Extraktionstypen gleich sind. Sie finden Informationen zu den *General Settings* im Abschnitt [Allgemeine Einstellungen](../fortgeschrittene-techniken/allgemeine-einstellungen). 
 
 ![Extraction-Settings-01](/img/content/Extraction-Settings-01.png){:class="img-responsive"}
 

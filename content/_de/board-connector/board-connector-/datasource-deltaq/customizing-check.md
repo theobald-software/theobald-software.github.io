@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=customizing-check
 ---
 
-Füllen Sie nun noch oben rechts die Felder aus, wie im Kapitel [DeltaQ Customizing]() angelegt. 
+Füllen Sie nun noch oben rechts die Felder aus, wie im Kapitel [DeltaQ Customizing](../../sap-customizing/customizing-fuer-deltaq) angelegt. 
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 

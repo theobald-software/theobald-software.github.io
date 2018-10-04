@@ -11,7 +11,7 @@ Wir empfehlen die Nutzung dieses Z-Funktionsbausteins, welcher gleichzeitig der 
 
 Um den Z-Funktionsbaustein manuell zu installieren, folgen Sie den Anweisungen in unserem Knowledgebase-Artikel.<br>
 Alternativ können Sie den Funktionsbaustein mit Hilfe des mitgelieferten Transportauftrags *thtrans.zip* installieren, den Sie im Unterordner ABAP des Installationsordners finden. <br>
-Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel]() oder in der SAP-Hilfe.
+Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) oder in der SAP-Hilfe.
 
 
-Die Anleitung zur Manuellen Installation finden Sie in unserem [Knowledgebase-Artikel]().
+Die Anleitung zur Manuellen Installation finden Sie in unserem [Knowledgebase-Artikel](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).

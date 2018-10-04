@@ -22,4 +22,4 @@ Sie müssen sicherstellen, dass ein Delta-Update korrekt verbucht wird, bevor da
 
 Ein **Repair** bezieht sich immer auf das letzte Delta-Update, welches dann komplett wiederholt wird. Es spielt dabei keine Rolle, ob das letzte Delta-Update erfolgreich ausgeführt wurde oder nicht. Der Repair-Schritt kann gegebenfalls mehrmals ausgeführt werden.
 
-Weitere Informationon über das Delta-Verfahren finden Sie in der [SAP-Hilfe]().
+Weitere Informationon über das Delta-Verfahren finden Sie in der [SAP-Hilfe](https://help.sap.com/saphelp_nw73/helpdata/de/4f/18f6aa3fca410ae10000000a42189d/content.htm?no_cache=true).

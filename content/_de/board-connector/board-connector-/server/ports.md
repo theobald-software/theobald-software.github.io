@@ -11,7 +11,7 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=ports
 ---
 
 Der Server nutzt verschiedene Ports für die Kommunikation, um z.B. den Aufruf der Extraktionen über HTTP entgegen zu nehmen oder mit dem Designer zu kommunizieren. <br>
-Der jeweils verwendete Port hat einen Default-Wert, der überschrieben werden kann. Weitere Infos dazu finden Sie im Kapitel [Server Einstellungen]().
+Der jeweils verwendete Port hat einen Default-Wert, der überschrieben werden kann. Weitere Infos dazu finden Sie im Kapitel [Server Einstellungen](./server-einstellungen).
 
 Sollte der Service nicht starten, weil der Default-Port belegt ist, öffnen Sie die Datei XtractServerConfig.xml im Ordner config in Ihrem Installationsordner und legen Sie einen passenden Port fest.
 
