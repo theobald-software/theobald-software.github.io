@@ -20,7 +20,7 @@ Die Extraktion hat die folgenden General Settings:
 
 ![XU-Tableau-BExQuery-Settings](/img/content/XU-Tableau-BExQuery-Settings.jpg){:class="img-responsive"}
 
-Für weitere Informationen siehe [BW InfoCubes und BEx Queries]().
+Für weitere Informationen siehe [BW InfoCubes und BEx Queries](../../bw-infocubes-und-bex-queries).
 
 **Schritt 2**: Eine BW-Hierarchie-Extraktion anlegen.
 
@@ -30,7 +30,7 @@ Die Extraktion hat die folgenden General Settings. Hier wird die Option *Natural
 
 ![XU-Tableau-Hierarchy-Settings](/img/content/XU-Tableau-Hierarchy-Settings.jpg){:class="img-responsive"}
 
-Für weitere Informationen siehe [BW Hierarchien]().
+Für weitere Informationen siehe [BW Hierarchien](../../bw-hierarchien).
 
 
 **Schritt 3**: Beide Extraktionen in Tableau laden und eine Beziehung dazwischen erstellen.
@@ -52,4 +52,4 @@ Die beiden Extraktionen sind nun verlinkt und Sie können Daten aus beiden Extra
 
 ![Tableau-Linked-Data-Sources](/img/content/Tableau-Linked-Data-Sources.jpg){:class="img-responsive"}
 
-Für weitere Informationen über Beziehungen in Tableau siehe [Tableau Online Help](). 
+Für weitere Informationen über Beziehungen in Tableau siehe [Tableau Online Help](https://www.tableau.com/page-not-found#multipleconnections_relationships.html). 

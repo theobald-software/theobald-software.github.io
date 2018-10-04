@@ -62,4 +62,4 @@ Definiert die Portnummer, über die der Server mit dem Designer via HTTPS kommun
 Der Puffer dient der Zwischenspeicherung der Extraktionsergebnisse. Eine Extraktion wird dabei durch ihren Namen identifiziert. Beim Aufruf einer Extraktion mit neuen Parametern werden die Daten aus dem SAP-System erneut abgerufen.
 
 
-Die Beschreibung der Sicherheitseinstellungen im Security Reiter finden Sie im Kapitel [Serversicherheit]().
+Die Beschreibung der Sicherheitseinstellungen im Security Reiter finden Sie im Kapitel [Serversicherheit](../sicherheit_xu2x/serversicherheit).

@@ -46,7 +46,7 @@ wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
 
 **Benutzerberechtigungen**
  	
-SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten]().
+SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **SAP-Lizenzen**
 
@@ -93,7 +93,7 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
  	
 - Benutzerauthentifizierung.
 - SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
-- SAP System- oder Dialog-Anwender mit entsprechenden Berechtigungosbjekten.
+- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungosbjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **Zielumgebungen (Destinations)**
 

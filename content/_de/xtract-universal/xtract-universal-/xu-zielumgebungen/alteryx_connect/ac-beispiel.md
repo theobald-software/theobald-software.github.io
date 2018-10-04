@@ -50,4 +50,4 @@ Die Einträge kann man auch überprüfen:
 
 ![AC-Datasource-Folder-Plant-Entries](/img/content/AC-Datasource-Folder-Plant-Entries.png){:class="img-responsive"}
 
-Die XML-Konfigurationsdateien können von [GitHub]() heruntergeladen werden. 
+Die XML-Konfigurationsdateien können von [GitHub](https://github.com/KhoderElzein/theobaldsoftware/tree/master/Xtract%20Universal%20Alteryx%20Connect/SAP%20Plant) heruntergeladen werden. 

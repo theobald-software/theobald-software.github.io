@@ -16,40 +16,40 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
 Xtract Universal bietet die Möglichkeit, die aus SAP extrahierten Daten in verschiedene Zielumgebungen, sogenannte Destinations zu schreiben. Folgende Datenziele werden momentan unterstützt:
 
 **Database / Datawarehouse:**          
-- [Azure DWH]() 
-- [SAP HANA]() 
-- [IBM DB2]() 
-- [EXASolution]() 
-- [HP Vertica]() 
-- [MySQL]() 
-- [Oracle]() 
-- [Amazon Redshift]() 
-- [SQL Server]() 
-- [Teradata]() 
+- [Azure DWH](azure_dwh) 
+- [SAP HANA](hana) 
+- [IBM DB2](ibm-db2) 
+- [EXASolution](exasol) 
+- [HP Vertica](vertica) 
+- [MySQL](mysql) 
+- [Oracle](oracle) 
+- [Amazon Redshift](redshift) 
+- [SQL Server](microsoft-sql-server) 
+- [Teradata](teradata) 
 
 Business Intelligence / Analytics Tools:
-- [Power BI]() 
-- [Power Pivot]() 
-- [Tableau]() 
-- [QlikSense and QlikView]()  
-- [GoodData]() 
+- [Power BI](powerbi_cloud) 
+- [Power Pivot](odata-atom) 
+- [Tableau](tableau) 
+- [QlikSense and QlikView](qlik)  
+- [GoodData](gooddata) 
 
 Cloud Speicher:
-- Amazon AWS S3]()
+- [Amazon AWS S3](amazon_aws_s3)
 
 Analytics & ETL Tools:
-- [Alteryx]() 
+- [Alteryx](alteryx-de) 
 
 Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ELT-Programm bzw. Scheduler aufgerufen werden. 
 
 Business Systeme:
-- [Salesforce]() 
-- [Sharepoint]() 
+- [Salesforce](salesforce) 
+- [Sharepoint](sharepoint) 
 
 Generische Destinations: 
-- [CSV (via HTTP)]() 
-- [OData]()  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
-- [Flat File - CSV]() (Comma-seperated values)
+- [CSV (via HTTP)](csv-via-http) 
+- [OData](odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
+- [Flat File - CSV](zielumgebungen) (Comma-seperated values)
             
 Pull- und Push-Ziele
 Bei den Zielumgebungen werden zwei Kategorien unterschieden, je nachdem wo der Extraktionsprozess gestartet wird. 

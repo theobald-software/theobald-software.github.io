@@ -43,5 +43,5 @@ Sie müssen sicherstellen, dass ein Delta-Update korrekt verbucht wird, bevor da
 Ein **Repeat** bezieht sich immer auf das letzte Delta-Update, welches dann komplett wiederholt wird. Es spielt dabei keine Rolle, ob das letzte Delta-Update erfolgreich ausgeführt wurde oder nicht. Ein Repeat kann gegebenfalls mehrmals ausgeführt werden.
 
 Weitere Informationen über das Delta-Verfahren finden Sie in der SAP-Hilfe:<br>
-[Delta Übertragung ins BI]()<br>
-[Delta-Verfahren]() 
+[Delta Übertragung ins BI](http://help.sap.de/saphelp_nw70/helpdata/de/37/4f3ca8b672a34082ab3085d3c22145/content.htm)<br>
+[Delta-Verfahren](https://help.sap.com/saphelp_nw70/helpdata/de/84/81eb588fc211d4b2c90050da4c74dc/content.htm?no_cache=true) 

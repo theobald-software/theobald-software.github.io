@@ -66,5 +66,5 @@ Die zu ladenden Daten werden dann gegen die verbucht, die bereits aus älteren L
 
 **Destinations / Zielumgebungen** 
 
-Xtract Universal unterstützt eine ganze Reihe von Systemen als Ziel der Extraktion, siehe [Zielumgebungen]().
+Xtract Universal unterstützt eine ganze Reihe von Systemen als Ziel der Extraktion, siehe [Zielumgebungen](../xu-zielumgebungen).
 

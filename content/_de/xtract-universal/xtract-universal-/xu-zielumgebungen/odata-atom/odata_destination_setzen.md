@@ -10,8 +10,8 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=odata_destination_setzen
 ---
 
-Nachdem Sie eine Extraktion in Xtract Universal erstellt haben (siehe [Schritt I: Eine neue Extraktion anlegen]()), 
-wählen Sie die standardmäßige http-odata-atom Destination (siehe [Ziele verwalten]() und [OData]() ).
+Nachdem Sie eine Extraktion in Xtract Universal erstellt haben (siehe [Schritt I: Eine neue Extraktion anlegen](../../erste-schritte-mit-xtract-table/eine-neue-extraktion-anlegen)), 
+wählen Sie die standardmäßige http-odata-atom Destination (siehe [Ziele verwalten](../ziele-verwalten) und [OData](./) ).
 
 ![XU-OData-Destination](/img/content/XU-OData-Destination.jpg){:class="img-responsive"}
 

@@ -20,8 +20,8 @@ Sie können sich zwischen zwei unterschiedlichen Wegen entscheiden, um Daten in 
 
 **Upload data for ETL processing**
 
-Verwenden Sie diese Methode, wenn Sie eigene ETL-Graphen in GoodDatas CloudConnect-Software erstellen möchten.
-Weitere Informationen bezüglich ETL-Erstellung nach dem Daten-Export finden Sie auf dieser Seite. 
+Verwenden Sie diese Methode, wenn Sie eigene ETL-Graphen in GoodDatas CloudConnect-Software erstellen möchten.<br>
+Weitere Informationen bezüglich ETL-Erstellung nach dem Daten-Export finden Sie auf [dieser Seite](./eigenes-etl). 
                                                 
 **Upload file**<br>
 Dateiname für die hochzuladenden Daten.

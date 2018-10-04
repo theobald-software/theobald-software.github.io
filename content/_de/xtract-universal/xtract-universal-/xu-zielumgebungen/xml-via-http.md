@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=xml-via-http
 ---
 
-**!!! Diese Zielumgebung ist veraltet und wurde mit [Version 2.75.5]() aus Xtract Universal entfernt!!!**
+**!!! Diese Zielumgebung ist veraltet und wurde mit [Version 2.75.5](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/86/52/xtract-universal-version-history) aus Xtract Universal entfernt!!!**
 
 *HTTP - XML* liefert einen XML-Stream über HTTP. 
 

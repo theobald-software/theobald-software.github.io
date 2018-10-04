@@ -24,4 +24,4 @@ Das Hintergrundprogramm wird anhand der vorgegebenen Selektion angestoßen. In d
 
 Um die Erweiterung benutzen zu können, sind die Tabelle ZXTRACTBUFFER und der zusätzliche Funktionsbaustein Z_XTRACT_IS_TABLE_EX im SAP zu installieren.  
 
-Eine Schritt-für-Schritt Anleitung finden Sie im Kapitel SAP Customizing - [Erweiterung für Hintergrundverarbeitung](). 
+Eine Schritt-für-Schritt Anleitung finden Sie im Kapitel SAP Customizing - [Erweiterung für Hintergrundverarbeitung](../../sap-customizing/erweiterung-fuer-hintergrundverarbeitung). 

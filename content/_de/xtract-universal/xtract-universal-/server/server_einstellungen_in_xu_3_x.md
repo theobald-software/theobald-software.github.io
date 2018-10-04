@@ -23,7 +23,7 @@ Definiert die Portnummer, über die der Server mit dem Designer kommuniziert. St
 Definiert das maximale Alter der Logdateien des Config-Servers in Tagen. Danach werden die Logdateien gelöscht. 
 
 **Authentication methods**<br>
-siehe Kapitel [Benutzerverwaltung]()
+siehe Kapitel [Benutzerverwaltung](../sicherheit_in_xu_3_x/benutzerverwaltung1)
 
 **Select X.509 certificate**<br>
 1. Lassen Sie ein TLS Zertifikat von Ihrem IT Netzwerk Team erstellen.
@@ -31,7 +31,7 @@ siehe Kapitel [Benutzerverwaltung]()
 3. In der Zertifikatseigenschaft "Subject Alternative Name" muss der DNS Name des Servers stehen, auf dem der Xtract Universal Windows Dienst läuft. Ansonsten erscheint das Zertifikat nicht im Lookup Dialog.
 
 **Access Management**<br>
-siehe Kapitel [Zugriffsverwaltung]()
+siehe Kapitel [Zugriffsverwaltung](../sicherheit_in_xu_3_x/zugriffsverwaltung1)
 
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"}
 
@@ -74,4 +74,4 @@ Definiert das maximale Alter in Minuten einer Extraktion im Puffer.
 
 
 **HTTP client filter**<br>
-siehe Kapitel Serversicherheit.
+siehe Kapitel [Serversicherheit](../sicherheit_in_xu_3_x/serversicherheit1).

@@ -15,7 +15,7 @@ Auf dem lokalen Rechner müssen Sie nichts zusätzliches installieren.
 
 Sie registrieren eine Client-App, um Xtract Universal den Zugriff auf Power BI zu ermöglichen. Auf diese Weise können Sie eine Identität für Ihre Anwendung erstellen und Berechtigungen für Power BI-Ressourcen angeben. 
 
-Folgen Sie den Anweisungen auf der Seite [Registrieren einer Client-App](). <br>
+Folgen Sie den Anweisungen auf der Seite [Registrieren einer Client-App](https://dev.powerbi.com/apps). <br>
 Wichtig ist der Abschnitt *Registrieren einer Client-App mit dem Power BI-App-Registrierungstool*.<br>
 Wenn Sie eine Client-App registrieren, erhalten Sie eine Client-ID, welche von Xtract Universal für den Zugriff auf PowerBI verwendet wid.
 

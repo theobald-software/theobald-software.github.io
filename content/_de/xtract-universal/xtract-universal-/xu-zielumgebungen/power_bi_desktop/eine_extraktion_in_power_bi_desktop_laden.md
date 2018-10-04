@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine_extraktion_in_power_bi_desktop_laden
 ---
 
-Vorassetzung ist, dass Sie die OData-Destination gesetzt haben und die OData-URL kopiert haben, siehe [OData-Destination setzen](). 
+Vorassetzung ist, dass Sie die OData-Destination gesetzt haben und die OData-URL kopiert haben, siehe [OData-Destination setzen](../odata-atom/odata_destination_setzen). 
 
 In PowerBI Desktop klicken Sie auf GetData und wählen Sie Other -> OData Feed. Klicken Sie auf Connect. 
 
