@@ -11,6 +11,6 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=amazon_aws_s3
 ---
 
-In diesem Kapitel wird das Speichern der extrahierten Daten in den Cloudspeicher [Amazon S3]() beschrieben.
+In diesem Kapitel wird das Speichern der extrahierten Daten in den Cloudspeicher [Amazon S3](https://aws.amazon.com/de/s3/) beschrieben.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

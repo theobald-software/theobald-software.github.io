@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=tableau-mit-odata
 ---
 
-Vorassetzung ist, dass Sie die OData-Destination gesetzt haben und die OData-URL kopiert haben, siehe [OData-Destination setzen](). 
+Vorassetzung ist, dass Sie die OData-Destination gesetzt haben und die OData-URL kopiert haben, siehe [OData-Destination setzen](../../odata-atom/odata_destination_setzen). 
 
 In Tableau klicken Sie auf Connect und selektieren Sie OData. <br>
 Geben Sie die OData-URL der Extraktion und klicken Sie auf Connect. <br>

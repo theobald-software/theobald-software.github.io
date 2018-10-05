@@ -27,8 +27,8 @@ Im New Method Dialogfenster definieren Sie die Methode, die Sie erstellen möcht
 
 Weiterführende Informationen über das Erstellen von Entitätsmethoden finden Sie in den nachfolgenden Beispielen:
 
-[Beispiel Funktionsentität]() <br>
-[Schreib/Lese Zugriff]() 
+[Beispiel Funktionsentität](../beispiel-funktionsentitaet) <br>
+[Schreib/Lese Zugriff](../../bcs-fortgeschrittene-techniken/bcs-schreib-lese-zugriff/) 
 
 Betätigen Sie die Edit Schaltfläche, um Änderungen an einer vorhandenen Entitätsmethode vorzunehmen.
 
@@ -37,6 +37,6 @@ Das *Edit Method* Dialogfenster zeigt den Typ und das SAP-Objekt für die Method
 
 Das Dialogfenster zeigt die *Input Parameters* für die Methode mit den verknüpften Eintitätseigenschaften.
 
-Das Dialogfenster zeigt ebenfalls die *Return Parameters* für die Methode und alle für die Methode definierten Filters. Für weitere Informationen lesen Sie das Kapitel [Filter]().
+Das Dialogfenster zeigt ebenfalls die *Return Parameters* für die Methode und alle für die Methode definierten Filters. Für weitere Informationen lesen Sie das Kapitel [Filter](./bcs-filter).
 
 ![BCS-Generic-Edit-Method](/img/content/BCS-Generic-Edit-Method.png){:class="img-responsive"}

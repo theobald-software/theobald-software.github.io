@@ -28,4 +28,4 @@ Wenn diese Option aktiviert ist, dann wird entweder eine kleine Datenmenge (wenn
 
 Sie können einer Extraktion ein oder mehrere Keywords (Tags) zuweisen. Im Designer könnten Sie dann die Extraktionen nach diesen Keywords filtern. 
 
-Der Security Reiter ist im Kapitel [Extraktionssicherheit]()  beschrieben.
+Der Security Reiter ist im Kapitel [Extraktionssicherheit](../sicherheit/extraktionssicherheit)  beschrieben.

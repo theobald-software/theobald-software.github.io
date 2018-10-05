@@ -15,7 +15,7 @@ Folgende Einstellungen können für die Verbindung zur Zieldatenbank definiert w
 ![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_1.png){:class="img-responsive"}
 
 
-Alternativ kann man den connect descriptor eingeben, zum Beispiel:
+Alternativ kann man den [connect descriptor](https://docs.oracle.com/html/E10927_01/featConnecting.htm) eingeben, zum Beispiel:
 
 (DESCRIPTION = <br>
  (ADDRESS = (PROTOCOL = TCP) <br>

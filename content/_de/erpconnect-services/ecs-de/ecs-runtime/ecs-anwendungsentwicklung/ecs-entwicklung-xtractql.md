@@ -36,4 +36,4 @@ Alle XQL-Abfragen liefern jeweils eine Tabelle als Ergebnismenge zurück. Bei Fu
 
 XtractQL ist besonders hilfreich bei dynamischen Datenabfragen, die erst zur Laufzeit bekannt sind und erstellt werden können. 
 
-Weitere Beispiele sowie eine ausführliche Syntax-Referenz finden Sie [im Abschnitt XtractQL](). 
+Weitere Beispiele sowie eine ausführliche Syntax-Referenz finden Sie [im Abschnitt XtractQL](../ecs-xtractql). 

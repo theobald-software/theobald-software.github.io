@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=voraussetzungen2
 
 Voraussetzung für die Nutzung der MySQL Destination ist die Installation des ADO.NET Driver for MySQL (Connector/NET).
 
-Den Treiber können Sie [hier]() herunterladen. Bitte laden Sie die neueste stabile Treiber-Version.
+Den Treiber können Sie [hier](https://www.mysql.com/products/connector/) herunterladen. Bitte laden Sie die neueste stabile Treiber-Version.
 
 Nach erfolgreicher Installation des Treibers können Sie die benötigte MySql.Data.dll in den Destination Details der MySQL Destination auswählen.
 

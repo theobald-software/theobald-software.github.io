@@ -15,7 +15,7 @@ Einstellungen zu AWS S3, die pro Extraktion vorgenommen werden können.
 ![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.jpg){:class="img-responsive"}
 
 
-Die Einstellungsmöglichkeiten in der linken Fensterhälfte entsprechen denen, die auch für die [csv-flatfile]() Zielumgebung vorgenommen werden können.
+Die Einstellungsmöglichkeiten in der linken Fensterhälfte entsprechen denen, die auch für die [csv-flatfile](../zielumgebungen/csv-einstellungen-der-zielumgebung) Zielumgebung vorgenommen werden können.
 
 **Compression**
 
@@ -23,4 +23,4 @@ Die Einstellungsmöglichkeiten in der linken Fensterhälfte entsprechen denen, d
 Die Daten werden unkomprimiert übertragen und auf S3 als csv-Datei abgelegt.
 
 **gzip**<br>
-Die Daten werden [komprimiert]() übertragen und auf S3 als .gz-Datei abgelegt.
+Die Daten werden [komprimiert](http://www.gzip.org/) übertragen und auf S3 als .gz-Datei abgelegt.

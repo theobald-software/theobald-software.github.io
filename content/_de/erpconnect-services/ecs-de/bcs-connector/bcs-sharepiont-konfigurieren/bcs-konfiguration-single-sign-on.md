@@ -20,4 +20,4 @@ Im BCS Connector Designer definieren Sie eine *Secure Store ID* als Teil Ihrer *
 
 Zur Laufzeit wird das *SharePoint BCS* die Berechtigungsinformationen für das SAP System aus der *Secure Store Target Application* für den angemeldeten Benutzer erhalten. Mit diesen Anmeldedaten wird der BCS sich mit dem externen SAP System verbinden.
 
-Folgen Sie die Schritte [Secure Store Application]() anlegen, um eine Secure Store Target Application mit dem Name ERPConnectServices anzulegen und sie mit dem BCS Connector zu benutzen.
+Folgen Sie die Schritte [Secure Store Application](../..//ecs-runtime/ecs-konfiguration/ecs-secure-store-application-anlegen) anlegen, um eine Secure Store Target Application mit dem Name ERPConnectServices anzulegen und sie mit dem BCS Connector zu benutzen.

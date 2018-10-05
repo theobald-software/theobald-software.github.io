@@ -44,4 +44,4 @@ Definiert ein Suchmuster (z.B. *header*) um den Tabellen-Kopf zu erkennen. Ist n
 **Pattern for skipping rows**<br> 
 Definiert einen regulären Ausdruck als Suchmuster, um Datensätze aus dem Ergebnis zu entfernen. <br>
 Mit dieser Eigenschaft können Sie z.B. die Kopfzeilen löschen, welche sich bei manchen Reports wiederholen.<br>
-Um Datensätze zu entfernen, welche z.B. die Begriffe DESCTEXT oder LONGTEXT enthalten, setzen Sie den Wert DESCTEXT | LONGTEXT. Weitere Infos zu regulären Ausdrücken finden Sie in der Microsoft Online Hilfe.
+Um Datensätze zu entfernen, welche z.B. die Begriffe DESCTEXT oder LONGTEXT enthalten, setzen Sie den Wert DESCTEXT | LONGTEXT. Weitere Infos zu regulären Ausdrücken finden Sie in der [Microsoft Online Hilfe](https://docs.microsoft.com/de-de/dotnet/standard/base-types/regular-expression-language-quick-reference).

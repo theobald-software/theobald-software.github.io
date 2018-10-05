@@ -14,7 +14,7 @@ Klicken Sie auf Destination, um zu den Einstellungen zu gelangen, die pro Extrak
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
 
-Die Einstellungsmöglichkeiten in der linken Fensterhälfte entsprechen denen, die auch für die [csv-flatfile]() Zielumgebung vorgenommen werden können.
+Die Einstellungsmöglichkeiten in der linken Fensterhälfte entsprechen denen, die auch für die [csv-flatfile](../zielumgebungen/csv-einstellungen-der-zielumgebung) Zielumgebung vorgenommen werden können.
 
 **Compression**
 

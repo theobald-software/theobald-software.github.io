@@ -101,10 +101,9 @@ Convert<br>
 Folgende Schlüsselwörter werden unterstützt: <br>
 true, false und null.
 
-Informationen zu den .NET-Typen und Format für Datum und Zeit finden Sie im MSDN.
-
+Informationen zu den [.NET-Typen](https://docs.microsoft.com/de-de/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) und [Format für Datum und Zeit](https://docs.microsoft.com/de-de/dotnet/standard/base-types/custom-date-and-time-format-strings) finden Sie im MSDN.
 
 
 **Verwendung** 
 
-Script-Ausdrücke können in der Where-Bedingung einer Tabelle sowie im Skript der Extraction-Specific Settings eines Datenziels.  
+Script-Ausdrücke können in der [Where-Bedingung](../erste-schritte-mit-xtract-table/where-bedingung) einer Tabelle sowie im Skript der Extraction-Specific Settings eines Datenziels.  

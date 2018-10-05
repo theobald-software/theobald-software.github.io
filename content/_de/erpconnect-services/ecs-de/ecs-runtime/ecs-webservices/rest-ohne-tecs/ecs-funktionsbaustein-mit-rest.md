@@ -58,7 +58,7 @@ Das Function-Objekt enthält alle üblichen Parameter von Funktionsbausteinen, w
 
 Nach erfolgreicher Durchführung werden die Daten als Liste ausgeben. Dazu wird auf die Tabelle *CUSTOMER_T* zugegriffen.
 
-Für ein Beispiel eines Funktionsbausteines mit mehr Parametern oder unter dem Einsatz eines ConnectionScope, siehe [ConnectionScope](). 
+Für ein Beispiel eines Funktionsbausteines mit mehr Parametern oder unter dem Einsatz eines ConnectionScope, siehe [ConnectionScope](./connectionscope). 
 
 **Aufruf einer spezifischen ECS Application**
 

@@ -27,7 +27,7 @@ Name der Datenbank.
 Schema der Datenbank.
 
 **Provider**<br>
-.NET Provider der Datenbank. Einen Link zur Installation des Providers finden Sie unter [Voraussetzungen](). 
+.NET Provider der Datenbank. Einen Link zur Installation des Providers finden Sie unter [Voraussetzungen](../../einfuehrung/systemvoraussetzungen). 
 
 **Test Connection**<br>
 Klicken Sie auf den Knopf, um die Datenbankverbindung zu testen. 

@@ -45,7 +45,7 @@ Weitere Details zu NTLM: [https://technet.microsoft.com/en-us/library/hh831571.a
 
 **Die DLLs herunterladen**
 
-Sie müssen die relevanten DDLs von der SAP-Webseite herunterladen und in den Ordner %SYSTEMROOT%\System32 des Rechners ablegen, auf dem der Xtract Server läuft bzw. die SAP-Verbindung stattfindet. Diese DLLs sind für 32-Bit und 64-Bit Plattformen unterschiedlich und werden mit dem [SAP-Hinweis 2115486]() zur Verfügung gestellt. 
+Sie müssen die relevanten DDLs von der SAP-Webseite herunterladen und in den Ordner %SYSTEMROOT%\System32 des Rechners ablegen, auf dem der Xtract Server läuft bzw. die SAP-Verbindung stattfindet. Diese DLLs sind für 32-Bit und 64-Bit Plattformen unterschiedlich und werden mit dem [SAP-Hinweis 2115486](http://service.sap.com/sap/support/notes/2115486) zur Verfügung gestellt. 
 
 Die DLLs heißen: 
 

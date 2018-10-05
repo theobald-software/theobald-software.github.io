@@ -81,6 +81,6 @@ $(document).ready(function () {
 
 **Beispiel mit RESTClient**
 
-RESTClient ist ein Add-on für verschieden Browser und ermöglicht das Testen von REST Services. Das folgende Screenshot zeigt, wie Sie einen XtractQL-Befehl mit Hilfe der ECS REST services ausführen können. 
+[RESTClient](http://restclient.net/) ist ein Add-on für verschieden Browser und ermöglicht das Testen von REST Services. Das folgende Screenshot zeigt, wie Sie einen XtractQL-Befehl mit Hilfe der ECS REST services ausführen können. 
 
 ![ECS-RESTClient-XQL](/img/content/ECS-RESTClient-XQL.png){:class="img-responsive"}

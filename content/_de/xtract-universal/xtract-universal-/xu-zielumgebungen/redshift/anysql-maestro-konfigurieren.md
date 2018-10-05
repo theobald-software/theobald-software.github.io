@@ -11,10 +11,10 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=anysql-maestro-konfigurieren
 ---
 
 Diese kurze Anleitung zeigt, wie Sie AnySQL Maestro konfigurieren müssen, um auf Ihre Amazon Redshift Datenbank zugreifen zu können.<br>
-Sie können natürlich auch andere [DB Clients]() verwenden. Die Einstellungen sollten zum Teil vergleichbar sein. 
+Sie können natürlich auch andere [DB Clients](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-using-workbench.html) verwenden. Die Einstellungen sollten zum Teil vergleichbar sein. 
 
-- Zunächst müssen Sie AnySQL Maestro herunterladen und installieren. [Link]()
-- Zusätzlich sollten Sie die neueste Version des PostgreSQL ODBC Treibers herunterladen und installieren. [Link]()
+- Zunächst müssen Sie AnySQL Maestro herunterladen und installieren. [Link](https://www.sqlmaestro.com/products/anysql/maestro/download/)
+- Zusätzlich sollten Sie die neueste Version des PostgreSQL ODBC Treibers herunterladen und installieren. [Link](http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_08_04_0200.zip)
 - Starten Sie AnySQL Maestro.
 - Klicken Sie auf "Create Database Profiles".
 

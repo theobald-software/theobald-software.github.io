@@ -11,12 +11,12 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=voraussetzungen6
 ---
 
 Sie benötigen:
-- ein Amazon Web Services ([AWS]()) Account.
-- die "[Access Keys]()" Ihres AWS Benutzers, bestehend aus "access key ID" und "secret access key".
+- ein Amazon Web Services ([AWS](https://aws.amazon.com/de/)) Account.
+- die "[Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)" Ihres AWS Benutzers, bestehend aus "access key ID" und "secret access key".
 - einen AWS S3 Bucket, in den Sie Dateien hochladen können.
 
 **Hinweis:**<br>
-Xtract Universal verwendet für den Upload nach S3 einen sog. [Multipart Upload](). Das heißt, die extrahierten Daten werden Stück für Stück als sogenannte Parts nach S3 geschickt und dort zwischengepuffert. Im Falle einer erfolgreichen Extraktion werden die einzelnen Parts dann zu einer Datei zusammengefügt. Diese Datei ist auf S3 erst dann sichtbar, wenn die Extraktion in XU erfolgreich abgeschlossen ist.
+Xtract Universal verwendet für den Upload nach S3 einen sog. [Multipart Upload](https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html). Das heißt, die extrahierten Daten werden Stück für Stück als sogenannte Parts nach S3 geschickt und dort zwischengepuffert. Im Falle einer erfolgreichen Extraktion werden die einzelnen Parts dann zu einer Datei zusammengefügt. Diese Datei ist auf S3 erst dann sichtbar, wenn die Extraktion in XU erfolgreich abgeschlossen ist.
 
 Im Falle eines Extraktionsabbruchs aufgrund von Exceptions in XU o.Ä., veranlasst XU das Löschen der einzelnen Parts auf S3-Seite. Im Falle von "unkontrollierten" Extraktionsabbrüchen, z.B. aufgrund von Netzwerkproblemen, kann XU ein Löschen der Multiparts nicht veranlassen.
 

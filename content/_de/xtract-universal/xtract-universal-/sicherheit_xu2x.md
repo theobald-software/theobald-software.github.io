@@ -15,23 +15,23 @@ Dieses Kapitel gibt eine allgemeine Übersicht über das Sicherheitskonzept.
 
 **Benutzerverwaltung**
 
-Es stehen Ihnen alle Ihre Active Directory (AD) Benutzer und Benutzergruppen zur Verfügung. Ausführliche Informationen finden Sie im Kapitel [Benutzerverwaltung]() .
+Es stehen Ihnen alle Ihre Active Directory (AD) Benutzer und Benutzergruppen zur Verfügung. Ausführliche Informationen finden Sie im Kapitel [Benutzerverwaltung](benutzerverwaltung) .
 
 **Mit dem Designer arbeiten**
 
-Wenn die Zugriffsverwaltung aktiviert ist, können sich nur berechtigte Benutzer mit dem Server verbinden und mit dem Designer arbeiten. Ausführliche Informationen finden Sie im Kapitel [Zugriffsverwaltung]().
+Wenn die Zugriffsverwaltung aktiviert ist, können sich nur berechtigte Benutzer mit dem Server verbinden und mit dem Designer arbeiten. Ausführliche Informationen finden Sie im Kapitel [Zugriffsverwaltung](zugriffsverwaltung).
 
 **Extraktionen verwalten**
 
-Auf der Extraktionsebene können Sie die Extraktionsverwaltung auf bestimmte Benutzer oder Benutzergruppen einschränken. Ausführliche Informationen erhalten Sie im Kapitel [Extraktionssicherheit]().
+Auf der Extraktionsebene können Sie die Extraktionsverwaltung auf bestimmte Benutzer oder Benutzergruppen einschränken. Ausführliche Informationen erhalten Sie im Kapitel [Extraktionssicherheit](extraktionssicherheit).
 
 **Extraktionen ausführen**
 
-Sie können die Ausführung von Extraktionen auf einzelne Benutzer und Benutzergruppen beschränken. Diese Restriktion kann auf Server-Ebene für alle Extraktionen definiert werden (siehe Kapitel [Serversicherheit]()) oder auf Extraktionsebene für eine bestimmte Extraktion ([Extraktionssicherheit]()).
+Sie können die Ausführung von Extraktionen auf einzelne Benutzer und Benutzergruppen beschränken. Diese Restriktion kann auf Server-Ebene für alle Extraktionen definiert werden (siehe Kapitel [Serversicherheit](serversicherheit)) oder auf Extraktionsebene für eine bestimmte Extraktion ([Extraktionssicherheit](extraktionssicherheit)).
 
-Zusätzlich können Sie auf Extraktionsebene festlegen, dass Benutzer Ihre SAP-Anmeldedaten (Benutzername und Kennwort) bei der Ausführung der Extraktion angeben müssen. Nähere Informationen hierzu finden Sie im Kapitel [Extraktionssicherheit]().
+Zusätzlich können Sie auf Extraktionsebene festlegen, dass Benutzer Ihre SAP-Anmeldedaten (Benutzername und Kennwort) bei der Ausführung der Extraktion angeben müssen. Nähere Informationen hierzu finden Sie im Kapitel [Extraktionssicherheit](extraktionssicherheit).
 
-Zusätzlich können Sie auf Verbindungsebene festlegen, dass Benutzer sich über Single Sign On auf dem SAP-System anmelden. Dazu siehe das Kapitel [SSO mit SNC]().
+Zusätzlich können Sie auf Verbindungsebene festlegen, dass Benutzer sich über Single Sign On auf dem SAP-System anmelden. Dazu siehe das Kapitel [SSO mit SNC](./fortgeschrittene-techniken/sso-und-snc).
 
 **Zugriffsverwaltung**
 

@@ -30,7 +30,7 @@ Sie sehen jetzt die neue Entität 'CUSTOMER_T' im BCS Connector Fenster, zusätz
 
 ![BCS-Function-Entity-New-CUSTOMERT](/img/content/BCS-Function-Entity-New-CUSTOMERT.png){:class="img-responsive"}
 
-Das Entitätsobjekt wird nun angezeigt. Für detaillierte Informationen lesen Sie das Kapitel [Entitätsdetails]().
+Das Entitätsobjekt wird nun angezeigt. Für detaillierte Informationen lesen Sie das Kapitel [Entitätsdetails](./bcs-eine-neue-entitaet-erstellen/bcs-entitaetsdetails).
 
 In diesem Beispiel ändern Sie den nachfolgenden Wert:
 
@@ -47,7 +47,7 @@ Aktivieren Sie die *ID* Checkbox neben dem Feld 'KUNNR', welche innerhalb des Fu
 
 Im *Entity Operations* Bereich des BCS Connector Fensters sehen Sie eine Liste der Methoden, die für Ihre Entität definiert sind. Für eine Entität auf Basis eines Funktionsbausteins ist diese Liste leer. Als Minimalvoraussetzung benötigt der SharePoint BCS die Definition einer Read Data (oder Finder) und einer Read Data Record (oder Specific Finder) Methode für jede Entität.
 
-In den nachfolgenden Schritten definieren Sie die Methoden für die Entität. Für detaillierte Informationen lesen Sie das Kapitel [Entitätsmethoden]().
+In den nachfolgenden Schritten definieren Sie die Methoden für die Entität. Für detaillierte Informationen lesen Sie das Kapitel [Entitätsmethoden](/bcs-eine-neue-entitaet-erstellen/bcs-entitaetsmethoden).
 
 **Finder Methode**
 
@@ -69,7 +69,7 @@ Der *Filter Parameter* Bereich des Dialogfensters zeigt die Filter für die Meth
 
 ![BCS-Function-Entity-Edit-Finder-Method](/img/content/BCS-Function-Entity-Edit-Finder-Method.png){:class="img-responsive"}
 
-Um einen neuen LimitFilter für die Methode zu definieren, wählen Sie die New Schaltfläche und definieren Sie die nachfolgenden Werte. Für weiterführende Informationen lesen Sie das Kapitel [Filter]().
+Um einen neuen LimitFilter für die Methode zu definieren, wählen Sie die New Schaltfläche und definieren Sie die nachfolgenden Werte. Für weiterführende Informationen lesen Sie das Kapitel [Filter](/bcs-eine-neue-entitaet-erstellen/bcs-filter).
 
 
 **Name** -	 LimitFilter<br>

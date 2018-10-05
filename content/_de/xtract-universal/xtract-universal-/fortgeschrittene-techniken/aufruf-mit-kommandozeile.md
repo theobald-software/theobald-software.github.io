@@ -26,7 +26,7 @@ Wird die Extraktion über die Parameter aufgerufen, können über den -o Paramet
 
 **Vordefinierte Variablen**
 
-Vordefinierte Variablen finden Sie unter [Extraktionsparameter](). 
+Vordefinierte Variablen finden Sie unter [Extraktionsparameter](./extraktionsparameter). 
 
 **Rückgabe**
 
@@ -78,7 +78,7 @@ xu.exe -h
 Das folgende Beispiel zeigt, wie man eine Extraktion in PowerShell mit Hilfe des Kommandotools xu.exe aufrufen kann. 
 Im Beispiel hat die Extraktion hat eine dynamische Variable, welche im Skript gesetzt werden kann. 
 
-Siehe unser Blog über Xtract Universal und PowerShell für weitere Skripte und Beispiele. 
+Siehe unser [Blog](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/) über Xtract Universal und PowerShell für weitere Skripte und Beispiele. 
 
 <details>
 <summary></summary>
@@ -154,3 +154,6 @@ write-host $errorMessage
 }
 {% endhighlight %}
 </details>
+
+Siehe auch <br> 
+[How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/148/0/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer) (English)

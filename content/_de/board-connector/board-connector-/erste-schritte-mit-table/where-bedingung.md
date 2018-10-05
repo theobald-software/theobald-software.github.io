@@ -31,5 +31,5 @@ Ab Version 2.13.5 können Sie Script-Ausdrücke in der Where-Klausel verwenden.
 
 ![Table-Where](/img/content/Table-Where.jpg){:class="img-responsive"}
 
-Für weitere Infomationen siehe [Script-Ausdrücke]() . 
+Für weitere Infomationen siehe [Script-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) . 
 

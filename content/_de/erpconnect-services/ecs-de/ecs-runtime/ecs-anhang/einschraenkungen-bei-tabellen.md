@@ -18,4 +18,4 @@ Leider gibt es beim Lesen von Tabellen folgende Einschränkungen:
 - Spezialtabellen wie TCURR liefern abgehackte Werte.
 
 Sollte eine der obigen Punkte eintreten, wird der Tabellenzugriff mit einer entsprechenden Exception abstürzen. Um dieses Problem zu lösen, müssen Sie einen Z-Baustein im SAP-System installieren. Zur Installation des Funktionsbausteins Z_XTRACT_IS_TABLE
-siehe das Kapitel [Z-Baustein installieren]().
+siehe das Kapitel [Z-Baustein installieren](../../../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion).

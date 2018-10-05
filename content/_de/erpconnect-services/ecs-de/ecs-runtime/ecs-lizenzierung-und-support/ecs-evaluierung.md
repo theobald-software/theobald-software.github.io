@@ -14,6 +14,6 @@ Gerne unterstützen wir Sie während der Evaluierungsphase. Selbstverständlich 
 
 Gerne stehen wir Ihnen jederzeit telefonisch oder per Mail für Fragen zur Verfügung:
 
-[support@theobald-software.com](support@theobald-software.com)
+[support@theobald-software.com](support@theobald-software.com)<br>
 [www.theobald-software.com](www.theobald-software.com)
 [Telefon: +49 711 46 05 99 0]()

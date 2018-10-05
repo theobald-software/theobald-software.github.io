@@ -21,7 +21,7 @@ Die eigentliche Anforderung der Daten erfolgt über eine URL, z.B. [http://local
 
 ![Run-Table-Extraction-Plants](/img/content/Run-Table-Extraction-Plants.jpg){:class="img-responsive"}
 
-Die Parameter *format, bg* und *packagesize* werden im Abschnitt [Settings]() beschrieben. Um die Extraktion letztendlich auszuführen, klicken Sie auf *Run in Browser*. Ihr Standard-Browser öffnet sich und zeigt das Datenextrakt gemäß den gewünschten Kriterien mit dem gewünschten Format.
+Die Parameter *format, bg* und *packagesize* werden im Abschnitt [Settings](./extraktionseinstellungen) beschrieben. Um die Extraktion letztendlich auszuführen, klicken Sie auf *Run in Browser*. Ihr Standard-Browser öffnet sich und zeigt das Datenextrakt gemäß den gewünschten Kriterien mit dem gewünschten Format.
 
 ![Table-Extraction-Browser-Result](/img/content/Table-Extraction-Browser-Result.png){:class="img-responsive"}
 

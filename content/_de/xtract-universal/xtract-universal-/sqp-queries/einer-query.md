@@ -23,4 +23,4 @@ Im Hauptdialog werden nun die so genannten Select Options angezeigt. Das sind di
 
 ![Define-Query-Extraction-Data-Source-Selected](/img/content/Define-Query-Extraction-Data-Source-Selected.jpg){:class="img-responsive"}
 
-Sie müssen entweder eine Variante (siehe Kapitel [Variante anwenden]() ) wählen oder einen Wert für die maximale Anzahl der Zeilen (siehe Kapitel [Extraktionseinstellungen]()) setzen.
+Sie müssen entweder eine Variante (siehe Kapitel [Variante anwenden](./varianten-anwenden) ) wählen oder einen Wert für die maximale Anzahl der Zeilen (siehe Kapitel [Extraktionseinstellungen](./extraktionseinstellungen_1)) setzen.
