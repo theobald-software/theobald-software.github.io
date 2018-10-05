@@ -15,6 +15,6 @@ Neben dem Erstellen von Webservices für SharePoint on-premise ist es im WebServ
 
 In Nintex Workflow für Office 365 können Sie dann die Call Web Service Workflow-Action nutzen, um den Webservice auszuführen und in der Cloudumgebung zu nutzen.  
 
-Wichtig: Voraussetzung zur Nutzung dieser Funktionalität ist die Theobald Software Komponente ECSCore. Ausführliche Informationen zur Komponente finden Sie [hier]().  
+Wichtig: Voraussetzung zur Nutzung dieser Funktionalität ist die Theobald Software Komponente ECSCore. Ausführliche Informationen zur Komponente finden Sie [hier](../ecs-core).  
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

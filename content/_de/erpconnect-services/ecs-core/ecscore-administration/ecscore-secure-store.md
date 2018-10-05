@@ -40,6 +40,6 @@ Wenn sich ein Benutzer nun gegen ECSCore mit dem Windows-Benutzer hans.mueller a
 Wichtig: Ein Secure-Store kann aus mehreren Benutzer-Verknüpfungen bestehen. Der SAP Benutzername muss mindestens 5 Zeichen lang sein.
 
 
-Unter Services lässt sich jetzt bei den Authentifizierungsmethoden unter Use Secure Store der neu hinterlegte SecureStore bei *Application ID* auswählen (siehe Online-Hilfe unter Services).
+Unter Services lässt sich jetzt bei den Authentifizierungsmethoden unter Use Secure Store der neu hinterlegte SecureStore bei *Application ID* auswählen (siehe Online-Hilfe unter [Services](./ecscore-service-applikation)).
 
 ![ecscore-managementsite17](/img/content/ecscore-managementsite17.jpg.png){:class="img-responsive"}

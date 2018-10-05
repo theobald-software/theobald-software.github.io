@@ -18,4 +18,4 @@ Legen Sie dann eine neue Entität an. In diesem Beispiel nutzen wir einen Z-Funk
 Legen Sie die gewünschten Operationen für die Entität an: Read Data Record, Read Data und Create Data Record.<br>
 Deployen Sie das BCS-Modell auf SharePoint.
 
-[Hier]() können Sie das BCS-Modell herunterladen (zip). Stellen Sie sicher, dass Sie die Verbindungen zu SharePoint and SAP richtig konfigurieren.
+[Hier](/img/SAP-Material-Model-Public.zip) können Sie das BCS-Modell herunterladen (zip). Stellen Sie sicher, dass Sie die Verbindungen zu SharePoint and SAP richtig konfigurieren.

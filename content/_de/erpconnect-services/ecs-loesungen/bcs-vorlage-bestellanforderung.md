@@ -34,6 +34,6 @@ Diese Vorlage enthält alle nötigen Ressourcen und Dokumentationen, um die Lös
 
 **Dateien zum Herunterladen**
 
-User Guide (englisch) [PDF]<br>
-Deployment and Configuration Guide (englisch) [PDF]<br>
-Alle Dateien inkl. Visual Studio 2010 Projekt [ZIP]
+[User Guide (englisch)](https://files.theobald-software.com/download/ERPConnectServices/templates/PRM-User-Guide.pdf) [PDF]<br>
+[Deployment and Configuration Guide (englisch)](https://files.theobald-software.com/download/ERPConnectServices/templates/PRM-Deployment-and-Configuration-Guide.pdf) [PDF]<br>
+[Alle Dateien inkl. Visual Studio 2010 Projekt](http://www.theobald-software.com/download/ERPConnectServices/templates/Theobald-ECS-Template-Purchase-Requisition.zip) [ZIP]

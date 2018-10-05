@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=azure_service_bus_einstellungen
 ---
 
-Beginnen Sie mit der Azure Service Bus Konfiguration, indem Sie eine neue Service Bus Instanz im Azure [Management Portal]() anlegen:
+Beginnen Sie mit der Azure Service Bus Konfiguration, indem Sie eine neue Service Bus Instanz im Azure [Management Portal](https://manage.windowsazure.com/) anlegen:
 
 ![ecscore-managementsite28](/img/content/ecscore-managementsite28.jpg.png){:class="img-responsive"}
 

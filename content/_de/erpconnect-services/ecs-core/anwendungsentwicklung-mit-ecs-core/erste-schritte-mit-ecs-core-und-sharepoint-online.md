@@ -21,7 +21,7 @@ Dieses Beispiel benötigt die folgenden Voraussetzungen:
 1. Eine Office 365 Developer Site in einer Office 365 Domäne und die Rechte, eine Napa-App zu entwickeln.
 2. Eine Service Bus Instanz im Azure Management Portal.
 3. Eine ECS Core Installation und Konfiguration, insbesondere:  
-- Eine Service Application anlegen (d.h. eine SAP-Verbindung), siehe [Services](). 
+- Eine Service Application anlegen (d.h. eine SAP-Verbindung), siehe [Services](../ecscore-administration/ecscore-service-applikation). 
 - Einen API Key generieren, siehe [API Keys]().
 - Einen Service Bus registrieren, siehe [Azure Service Bus](). 
 

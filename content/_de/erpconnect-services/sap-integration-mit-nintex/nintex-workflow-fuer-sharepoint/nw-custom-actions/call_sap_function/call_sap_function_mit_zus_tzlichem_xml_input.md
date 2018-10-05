@@ -75,7 +75,7 @@ MATERIAL bezeichnet die Materialnummer, PLANT bezeichnet den Buchungskreis.
 ![ECS-Nintex-CallSAPFunction-XMLInput5](/img/content/ECS-Nintex-CallSAPFunction-XMLInput5.png){:class="img-responsive"}
 
 Scrollen Sie weiter nach unten und geben Sie die Werte für die zwei restlichen Felder QUANTITY und DELIV_DATE ein. 
-QUANTITY bezeichnet die Materialmenge und DELIV_DATE das Lieferdatum. Dieses (31.03.2015) kann entweder direkt im SAP-konformen Datums-Format yyyyMMdd hinterlegt werden, oder Sie verwenden die Inline Function *FormatDate*, um das Datum umzuformatieren (siehe [Call SAP Function Action mit Variablen]()).  
+QUANTITY bezeichnet die Materialmenge und DELIV_DATE das Lieferdatum. Dieses (31.03.2015) kann entweder direkt im SAP-konformen Datums-Format yyyyMMdd hinterlegt werden, oder Sie verwenden die Inline Function *FormatDate*, um das Datum umzuformatieren (siehe [Call SAP Function Action mit Variablen](./call_sap_function_action_in_einem_workflow)).  
 
 ![ECS-Nintex-CallSAPFunction-XMLInput6](/img/content/ECS-Nintex-CallSAPFunction-XMLInput6.png){:class="img-responsive"}
 

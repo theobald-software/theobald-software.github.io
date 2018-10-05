@@ -95,6 +95,6 @@ Sollte die eingegebene Kundennummer im SAP nicht existieren, erscheint eine ents
 
 Dieses Beispiel zeigt, wie Sie Eingabedaten in Nintex Form auf SAP-Gültigkeit prüfen. Die Prüfung wurde mit Hilfe von JavaScript und ERPConnect Services REST Services umgesetzt. <br>
 Weitere Szenarien sind ggf. möglich. Möglich wäre es, eine Combobox mit SAP Kundennummern bzw. -namen zu füllen oder eine direkte SAP-Suche anzubieten.<br>
-Ein anderer Ansatz wäre, die SAP-Daten (z.B. Kundennummer bzw. -name) als externe Spalte in die Nintex-Form einzubinden. Die externe Spalte kommt aus einem externen SharePoint-Inhaltstyp, welcher auf das SAP-Businessobjekt (z.B. Kunde) basiert und mit dem [BCS Connector]() angelegt wird. 
+Ein anderer Ansatz wäre, die SAP-Daten (z.B. Kundennummer bzw. -name) als externe Spalte in die Nintex-Form einzubinden. Die externe Spalte kommt aus einem externen SharePoint-Inhaltstyp, welcher auf das SAP-Businessobjekt (z.B. Kunde) basiert und mit dem [BCS Connector](../../ecs-de/bcs-connector/) angelegt wird. 
 
 

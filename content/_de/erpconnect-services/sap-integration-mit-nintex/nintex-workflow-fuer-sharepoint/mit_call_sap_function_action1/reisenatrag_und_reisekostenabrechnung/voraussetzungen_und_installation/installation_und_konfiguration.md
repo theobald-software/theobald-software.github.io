@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=installation_und_konfigurat
 
 Zur Dateneingabe innerhalb der Szenarien werden verschiedene SharePoint-Listen genutzt.
 
-Für den **Reiseantrag** erstellen Sie manuell eine SharePoint-Liste mit folgenden Eigenschaften oder importieren Sie die Liste über die Windows Powershell mit der Datei *TravelRequests.cmp*. Wie Sie SharePoint-Listen per Powershell importieren, erfahren Sie hier.
+Für den **Reiseantrag** erstellen Sie manuell eine SharePoint-Liste mit folgenden Eigenschaften oder importieren Sie die Liste über die Windows Powershell mit der Datei *TravelRequests.cmp*. Wie Sie SharePoint-Listen per Powershell importieren, erfahren Sie [hier](https://docs.microsoft.com/de-de/SharePoint/administration/import-a-list-or-document-library).
 
 Typ = **Custom List**
 
@@ -22,7 +22,7 @@ Name = **Travel Requests**
 
 *Alternative Cost Assignment*
 
-Über die Spalte *Alternative Cost Assignment* soll der Anwender die Möglichkeit erhalten, eine alternative Kontierung für den Reiseantrag zu hinterlegen. Die Idee dahinter ist, eine Liste an möglichen Kostenstellen direkt aus dem SAP System zu beziehen. Der externe Inhaltstyp wird mit dem BCS Connector von Theobald Software erzeugt. Dort erfolgt ein Aufruf einer Standard-SAP-Tabelle für Kostenstellen (CSKS oder CSKT). Eine genaue Erläuterung der Funktionsweise des BCS Connectors finden Sie [hier](). 
+Über die Spalte *Alternative Cost Assignment* soll der Anwender die Möglichkeit erhalten, eine alternative Kontierung für den Reiseantrag zu hinterlegen. Die Idee dahinter ist, eine Liste an möglichen Kostenstellen direkt aus dem SAP System zu beziehen. Der externe Inhaltstyp wird mit dem BCS Connector von Theobald Software erzeugt. Dort erfolgt ein Aufruf einer Standard-SAP-Tabelle für Kostenstellen (CSKS oder CSKT). Eine genaue Erläuterung der Funktionsweise des BCS Connectors finden Sie [hier](../../../../../ecs-de/bcs-connector/). 
 
 Alternativ besteht die Möglichkeit, die Kostenstellen auch über eine andere Custom List zu definieren, die über eine Lookup-Spalte angesteuert wird, oder die alternative Kontierung mit Prozentsatz ganz wegzulassen. In SAP wird standardmäßig die Stammkostenstelle des Personalfalls für die Kontierung verwendet. 
 

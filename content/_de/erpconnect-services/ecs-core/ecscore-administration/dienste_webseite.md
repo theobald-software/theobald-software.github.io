@@ -38,6 +38,6 @@ Für alle hinterlegten SAP-Services gibt es die Möglichkeit, die Verbindung bzw
 
 **Setup Azure Service Bus** 
 
-Dieser Service zeigt den aktuellen Stand des [Azure Service Bus]() an (*connected* oder not *connected*). Wenn beispielsweise in der web.config Datei die automatische Azure Service Bus Registrierung auf false gesetzt ist, oder aus einem anderen Grund die Verbindung getrennt wurde, kann hier die Verbindung neu hergestellt werde. Ausführliche Informationen zum Thema Azure Service Bus finden Sie hier.
+Dieser Service zeigt den aktuellen Stand des [Azure Service Bus](../../zugriff__ber_azure_service_bus/) an (*connected* oder not *connected*). Wenn beispielsweise in der web.config Datei die automatische Azure Service Bus Registrierung auf false gesetzt ist, oder aus einem anderen Grund die Verbindung getrennt wurde, kann hier die Verbindung neu hergestellt werde. Ausführliche Informationen zum Thema Azure Service Bus finden Sie hier.
 
 ![ecscore-servicessite6](/img/content/ecscore-servicessite6.jpg.png){:class="img-responsive"}

@@ -17,14 +17,14 @@ Anwendungen mit ECS Core können eine beliebige Programmiersprache verwenden, we
 
 **JavaScript library für REST**
 
-Für die Entwicklung mit ECS REST Services und JavaScript empfehlen wir die Nutzung unserer [JavaScript library]() (tEcs),  
+Für die Entwicklung mit ECS REST Services und JavaScript empfehlen wir die Nutzung unserer [JavaScript library](http://static.theobald-software.com/theobald.ecs.micro/5.4.2/) (tEcs),  
 welche die Clientseitige Programmierung mit ECS vereinfacht, indem bestimmte ECS-Funktionalitäten gekapselt werden. 
 
 **App Entwicklung** 
 
 In unserer KB (Knowledge Base) finden Sie weitere Beispiele (in englischer Sprache) zur App-Entwicklung mit ECS Core: 
 
-[Provider Hosted App in Sharepoint (+Active Directory)]()<br>
-[Office 365 Sharepoint Online App (NAPA)]() 
+[Provider Hosted App in Sharepoint (+Active Directory)](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/133/53/how-to-create-a-provider-hosted-app-for-sharepoint-online-to-access-sap-data-via-erpconnect-services-core)<br>
+[Office 365 Sharepoint Online App (NAPA)](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/132/53/getting-started-with-sap--sharepoint-apps-in-the-cloud) 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

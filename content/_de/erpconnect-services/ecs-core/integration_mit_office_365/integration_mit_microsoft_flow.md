@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=integration_mit_microsoft_flow
 ---
 
-SAP integration mit Microsoft Flow wird voll unterstützt mit ERPConnect Services Core (ECS Core). Detaillierte Informationen über ECS Core finden Sie [hier]().
+SAP integration mit Microsoft Flow wird voll unterstützt mit ERPConnect Services Core (ECS Core). Detaillierte Informationen über ECS Core finden Sie [hier](../../).
 
 Es ist möglich, mit ECS Core SAP-integrierte Webservices in OpenAPI Definitionen zu exportieren und diese Definitionen dann in Microsoft Flow als Custom Konnektoren zu importieren. Das Vorgehen dazu wird in den folgenden Kapiteln erläutert. 
 

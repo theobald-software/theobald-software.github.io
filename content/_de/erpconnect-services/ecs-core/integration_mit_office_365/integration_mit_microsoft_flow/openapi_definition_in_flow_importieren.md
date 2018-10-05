@@ -35,7 +35,7 @@ Bevor Sie den Konnektor testen können, müssen Sie diesen generieren. Nur wenn 
 Im *Test* Abschnitt kann die Funktionalität des Custom Konnektors getestet werden. Dafür muss zunächst eine Verbindung angelegt werden. Klicken Sie auf *New connection* und geben Sie einen gültigen API Key in der folgenden Form ein: <br>
 APIKEY [BASE64 encoded ECS Core API Key]
 
-Beispiel: APIKEY QjGCMTMxMjE0MTA3NDhCMUE5MUNZTzAyQjBDRTg1OUP= (vgl. *Verbindungseinstellungen mit API Key* in [Webservice Authentifizierung]()). 
+Beispiel: APIKEY QjGCMTMxMjE0MTA3NDhCMUE5MUNZTzAyQjBDRTg1OUP= (vgl. *Verbindungseinstellungen mit API Key* in [Webservice Authentifizierung](../../webservices/webservice_auhtentifizierung)). 
 
 ![ecscore_flow_4](/img/content/ecscore_flow_4.png){:class="img-responsive"}
 Unter Umständen müssen Sie auf den *Refresh* Button klicken um die neu erstellte Verbindung zu sehen.  

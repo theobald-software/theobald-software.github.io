@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=angebotserstellung-install
 
 **Download**
 
-Die zur Installation benötigte Datei können Sie als ZIP-File [hier]() herunterladen.
+Die zur Installation benötigte Datei können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.SAPQuotation.zip) herunterladen.
 
 Folgende Dateien werden ausgeliefert: 
 
@@ -24,12 +24,12 @@ Hinweis:
 
 Für SharePoint 2010 bieten wir kein Installerpaket an. Das zur Implementierung der App erforderliche WSP-Paket muss manuell in SharePoint per Management-Shell installiert werden. 
 
-Das WSP-Paket für SP2010 können Sie als ZIP-File [hier]() herunterladen.  
+Das WSP-Paket für SP2010 können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.SapQuotationSP2010.zip) herunterladen.  
 
 **Systemvoraussetzungen** 
 
 ERPConnect Services muss auf dem SharePoint Server installiert sein.<br>
-Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen dazu finden Sie auf unserer [Online-Hilfe]().   
+Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen dazu finden Sie auf unserer [Online-Hilfe](../../ecs-de/ecs-runtime/ecs-konfiguration/ecs-application-anlegen).   
 
 
 **Installation des Solution Packages mit dem Installer**

@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=abwesenheitsantrag-install
 
 **Download**
 
-Die zur Installation benötigten Dateien können Sie als ZIP-File [hier]() herunterladen.
+Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.LeaveRequest.zip) herunterladen.
 
 Folgende Dateien werden ausgeliefert:
 
@@ -26,7 +26,7 @@ Hinweis:
 
 Für SharePoint 2010 bieten wir kein Installerpaket an. Die zur Implementierung der App erforderlichen WSP-Pakete müssen manuell in SharePoint per Management-Shell installiert werden. 
 
-Die WSP-Pakete für SP2010 und den SAP-Transportauftrag können Sie als ZIP-File [hier]() herunterladen.  
+Die WSP-Pakete für SP2010 und den SAP-Transportauftrag können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.LeaveRequestSP2010.zip) herunterladen.  
 
 
 **Systemvoraussetzungen** 

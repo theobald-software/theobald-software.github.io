@@ -20,7 +20,7 @@ Anschließend muss die Custom Action konfiguriert werden. Rufen Sie dafür über
 
 In den Konfigurations-Einstellungen muss zunächst die ERPConnect Service Application in der Dropdown-Liste ausgewählt werden.<br>
 Die ERPConnect Service Application muss vorher in der Zentraladministration angelegt werden: <br>
-[ECS Service Application anlegen]() 
+[ECS Service Application anlegen](../../../../ecs-de/ecs-runtime/ecs-konfiguration/ecs-application-anlegen) 
 
 Im Feld *SAP Function* wird der Funktionsbaustein eingetragen, der aufgerufen werden soll. Mit Search lässt sich in dem hinterlegten SAP System nach dem Funktionsbaustein suchen. 
 
@@ -59,7 +59,7 @@ Neben *Table Input* sind alle Eingabetabellen des Funktionsbausteins aufgelistet
 
 *Additional XML table input*
 
-Mit *Additional XML table input* kann zusätzlich über eine Workflow Variable ein weiterer XML-Input zu einer oder mehreren Input-Tabellen hinzugefügt werden. Zum Aufbau des XML-Input schauen Sie sich bitte im weiteren Verlauf das Beispiel [Call SAP Function mit zusätzlichem XML-Input]()  an. 
+Mit *Additional XML table input* kann zusätzlich über eine Workflow Variable ein weiterer XML-Input zu einer oder mehreren Input-Tabellen hinzugefügt werden. Zum Aufbau des XML-Input schauen Sie sich bitte im weiteren Verlauf das Beispiel [Call SAP Function mit zusätzlichem XML-Input](./call_sap_function_mit_zus_tzlichem_xml_input)  an. 
 
 ![ECS-Nintex-CallSAPFunction-Action14](/img/content/ECS-Nintex-CallSAPFunction-Action14.png){:class="img-responsive"}
 
