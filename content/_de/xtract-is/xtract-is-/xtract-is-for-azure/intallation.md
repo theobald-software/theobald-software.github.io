@@ -10,9 +10,9 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation1
 ---
 
-Die Installtion von *Xtract IS for Azure* erfolgt gemäß der von Microsoft [hier]() beschriebenen Installation von Drittanbieter-Komponenten. Relevant ist der Abschnitt für das Einrichten eines Azure Storage Containers und das Anlegen einer Shared Access Signature (SAS).
+Die Installtion von *Xtract IS for Azure* erfolgt gemäß der von Microsoft [hier](https://docs.microsoft.com/de-de/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup) beschriebenen Installation von Drittanbieter-Komponenten. Relevant ist der Abschnitt für das Einrichten eines Azure Storage Containers und das Anlegen einer Shared Access Signature (SAS).
 
-Laden Sie das *Xtract IS for Azure* Setup herunter. Das Setup besteht aus zwei Dateien: *XtractISSetup.exe* (welche von unserer Webseite oder dem Kundenportal heruntergeladen werden kann) und [*main.cmd*]().
+Laden Sie das *Xtract IS for Azure* Setup herunter. Das Setup besteht aus zwei Dateien: *XtractISSetup.exe* (welche von unserer Webseite oder dem Kundenportal heruntergeladen werden kann) und [*main.cmd*](https://files.theobald-software.com/download/XtractIS/main.cmd).
 Platzieren Sie beide Dateien in den im obigen Schritt angelegten Azure Storage Container.
 
 ![XISforAzure_StorageContainer](/img/content/XISforAzure_StorageContainer.jpg){:class="img-responsive"}

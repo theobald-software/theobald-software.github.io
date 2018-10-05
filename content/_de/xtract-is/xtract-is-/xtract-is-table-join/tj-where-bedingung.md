@@ -80,7 +80,7 @@ Die WHERE-Bedingung muss dem SAP OpenSQL Syntax entsprechen.
 - Fließkommazahlen müssen immer in einfache Hochkommata gesetzt werden, z.B. KMENG > '10.3'.  Für KMENG > 10.3 erhalten Sie die Fehlermeldung 'The WHERE clause has an unexpected format'.
 - Die Where-Bedingung darf keinen Zeilenumbruch (Eingabe-Taste) enthalten.
 
-Weitere Informationen über die OpenSQL Syntax finden Sie auf der SAP Hilfe-Seite: [https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-de/abapwhere.htm?file=abapwhere.htm]()
+Weitere Informationen über die OpenSQL Syntax finden Sie auf der SAP Hilfe-Seite: [https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-de/abapwhere.htm?file=abapwhere.htm](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-de/abapwhere.htm?file=abapwhere.htm)
 
 **Interne SAP-Darstellung**
 

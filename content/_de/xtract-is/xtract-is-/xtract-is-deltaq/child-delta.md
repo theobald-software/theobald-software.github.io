@@ -34,4 +34,4 @@ Der folgende Datenviewer zeigt zunächst einen neu angelegten Datensatz (MATKL i
 
 ![DeltaQ-Delta-04](/img/content/DeltaQ-Delta-04.png){:class="img-responsive"}
 
-Weitere Informationon über das Delta-Verfahren finden Sie in der [SAP-Hilfe]().
+Weitere Informationon über das Delta-Verfahren finden Sie in der [SAP-Hilfe](http://help.sap.com/saphelp_nw73/helpdata/de/4f/18f6aa3fca410ae10000000a42189d/content.htm).

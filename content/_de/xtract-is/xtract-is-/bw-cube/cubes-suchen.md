@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=cubes-suchen
 ---
 
-Zunächst einmal wird mindestens ein gültiger Verbindungsmanager benötigt, der mit einem SAP BW System verbunden ist (siehe Kapitel [Verbindungsmanager]() ).<br>
+Zunächst einmal wird mindestens ein gültiger Verbindungsmanager benötigt, der mit einem SAP BW System verbunden ist (siehe Kapitel [Verbindungsmanager](../sap-verbindung/verbindungsmanager) ).<br>
 Um einen Cube für die Extraktion zu suchen, öffnen Sie mit einem Doppelklick die Datenquelle, so dass der Editor erscheint und klicken Sie auf den Button mit dem Fernglas.
 
 ![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.jpg){:class="img-responsive"}

@@ -21,5 +21,5 @@ Für den zweiten Fall gibt es zwei Möglichkeiten: Stellen Sie in den Settings d
 
 In diesem Fall muss das SSIS Paket gestartet werden. Dann können Sie das InfoPackage im BW manuell oder durch den Scheduler starten, und der Prozess im SSIS fährt fort.
 
-Wenn Sie jedoch beispielsweise mehrere InfoPackages ausführen wollen, oder nicht ständig die Pakete im Ausführungsmodus halten wollen, gibt es mit dem BI Notification Receiver eine weitere Option. Näheres dazu finden Sie im Kapitel [BI Notification Server]().
+Wenn Sie jedoch beispielsweise mehrere InfoPackages ausführen wollen, oder nicht ständig die Pakete im Ausführungsmodus halten wollen, gibt es mit dem BI Notification Receiver eine weitere Option. Näheres dazu finden Sie im Kapitel [BI Notification Server](../bi-notification-server).
 
