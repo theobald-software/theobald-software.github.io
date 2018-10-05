@@ -24,10 +24,10 @@ If this option is checked, the component waits until data processing is complete
 The best way to upload data is to trigger the InfoPackage (default value). Under some conditions it might be useful not to trigger the InfoPackage but only to wait for notification (sleeping mode). In this case check this option.
 
 **Use external Notifier**<br>
-See chapter [External Notification]().
+See chapter [External Notification](./external-notification).
 
 **Request ID variable**<br>
-See chapter [External Notification]().
+See chapter [External Notification](./external-notification).
 
 **Trigger Process Chain**<br>
 If you want to trigger a process chain after uploading just type in the name of the process chain here.

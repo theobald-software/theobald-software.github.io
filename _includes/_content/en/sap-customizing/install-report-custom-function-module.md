@@ -14,7 +14,7 @@ The screenshots below show how the import, export and tables parameters that mus
 
 ![Report-Custom-Function-04](/img/content/Report-Custom-Function-04.jpg){:class="img-responsive" }
 
-Copy the source code from the file Z_XTRACT_REMOTE_REPORT.txt into the text box for the source code using *Ctrl+C* and *Ctrl+V*. You can find the file in the installation directory or download it [here](). 
+Copy the source code from the file Z_XTRACT_REMOTE_REPORT.txt into the text box for the source code using *Ctrl+C* and *Ctrl+V*. You can find the file in the installation directory or download it [here](http://www.theobald-software.com/download/SAP/Z_XTRACT_IS_REMOTE_REPORT.txt). 
 
 Now the function module is ready to be used.
 

@@ -36,7 +36,7 @@ Note: When using the NetWeaver RFC library with DeltaQ or OHS extractions, the R
 
 **Log Directory**
 
-You also have the option to log debug information. If you want to log debug information you have to enter a valid directory path into the [*Log Directory*]() field in the connection manager. 
+You also have the option to log debug information. If you want to log debug information you have to enter a valid directory path into the [*Log Directory*](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/72/9/how-to-activate-tracing-for-xtract-products) field in the connection manager. 
 
 Please note that the logging usually should only be activated when requested by the Theobald Software support team. There is plenty of information that will be collected. This can decrease the capacity of your hard drives dramatically. Please note that the default logging is independent of the debug logging settings. The default logging will be accessed even if the trace directory entry in the connection manager is left blank.
 
@@ -46,8 +46,8 @@ Please note that the logging usually should only be activated when requested by 
 
 **SNC enabled**
 
-see also [SAP Connection with SNC]()
-Enable [SNC]()(Secure Network Connection) for data encryption between SAP and Xtract IS.
+see also [SAP Connection with SNC](./sap-connection-with-snc)<br>
+Enable [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html)(Secure Network Connection) for data encryption between SAP and Xtract IS.<br>
 Requires respective settings on the SAP side, as well. Please contact your SAP Basis team for support.
 
 **SNC Library (32 Bit, Visual Studio)**
@@ -69,11 +69,11 @@ Defines the SNC level of protection.
 
 **Expert Options**
 
-Since 09.2017, SAP connection parameters are no longer stored as a single connection string but as properties.
+Since 09.2017, SAP connection parameters are no longer stored as a single connection string but as properties.<br>
 There is a property for each component of the connection string. See Screenshot below.
 
-This allows for using a [sensitive environment variable]() for the password in the Integration Services catalog.
-The connection string (see legacy mode below) did not support sensitive environment variables.
+This allows for using a [sensitive environment variable](./sensitive-environment-variable-in-ssis-catalog) for the password in the Integration Services catalog.<br>
+The connection string (see legacy mode below) did not support sensitive environment variables.<br>
 This provides stronger encryption than password obfuscation (see below).
 
 You can either use connection properties or a connection string, not both.

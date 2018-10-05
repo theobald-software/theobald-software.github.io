@@ -25,8 +25,8 @@ Define the exceptions as shown in the screenshot.
 ![Z-Custom-Function-04](/img/content/Z-Custom-Function-04.png){:class="img-responsive" }
 
 **Step 5 - Code**<br>
-You can find the ABAP code in [Z_XTRACT_IS_TABLE.txt](). Use *Ctrl + C* and *Ctrl + V*  to paste the code in the source code editor.
+You can find the ABAP code in [Z_XTRACT_IS_TABLE.txt](../SAPCustomizing-EN/docs/Z_XTRACT_IS_TABLE.txt). Use *Ctrl + C* and *Ctrl + V*  to paste the code in the source code editor.
 Save the function module and activate it.
 
 
-You can use the transport request (thtrans.zip), that can be found in the ABAP subfolder of the installation folder, to install the function module. For more detail information about installing the transport request please read the following [Knowledgebase article]() or check the SAP help.
+You can use the transport request (thtrans.zip), that can be found in the ABAP subfolder of the installation folder, to install the function module. For more detail information about installing the transport request please read the following [Knowledgebase article](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) or check the SAP help.

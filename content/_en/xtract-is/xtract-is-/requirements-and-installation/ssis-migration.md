@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=ssis-migration
 This chapter deals with the migration of SSIS packages from a lower SQL Server/SSIS version to a higher version. 
 Example: You are migrating from SQL Server 2012 to SQL Server 2017. This requires a migration of your SSIS packages, as well.
 
-Please do also note the dependency of Visual Studio/SSDT and SSIS version, see [here]().
+Please do also note the dependency of Visual Studio/SSDT and SSIS version, see [here](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/147/0/list-of-the-ssisvs-versions-supported-by-xtract-is).
 
 **Migration from SSIS 2008/2012 to SSIS 2017**
 
@@ -48,4 +48,4 @@ With VS/SSDT 2015 and 2017, you can select the target server version in the proj
 ![VS_Deployment_Target](/img/content/VS_Deployment_Target.jpg){:class="img-responsive" width="400px"}
 
 For more information about supported SSIS versions, their relation to different Visual Studio versions and how to upgrade to higher SSIS versions please check:
-[List of the SSIS/VS Versions Supported by Xtract IS]()
+[List of the SSIS/VS Versions Supported by Xtract IS](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/147/0/list-of-the-ssisvs-versions-supported-by-xtract-is)

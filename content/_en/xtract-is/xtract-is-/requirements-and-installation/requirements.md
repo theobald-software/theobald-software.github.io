@@ -21,7 +21,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 - SQL Server Integration Services (SSIS)
 - For Development: Visual Studio (except express version) for Business Intelligence is needed to create SSIS packages.
 
-Check our KB for [the list of supported SSIS & VS Versions](). 
+Check our KB for [the list of supported SSIS & VS Versions](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/147/0/list-of-the-ssisvs-versions-supported-by-xtract-is). 
 
 **Supported SAP Releases**
 
@@ -55,7 +55,7 @@ For Information about the Installation of the custom function modules and the SA
 
 - Custom authentication.
 - SAP authentication: SSO (Single Sign On) or SAP credentials.
-- SAP system or dialog user with appropriate [authority objects]().
+- SAP system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **Ports**
 
@@ -88,7 +88,7 @@ Additional SAP licenses might be required for extracting data from SAP. Contact 
 **Other Applications and Frameworks**
  	
 - up to SSIS 2008: .NET Framework 3.5 SP1
-- starting from SSIS 2012: .NET Framework 4.5.2 or higher. You can get it here.
+- starting from SSIS 2012: .NET Framework 4.5.2 or higher. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=42643).
 
 **Memory**
  	
