@@ -27,13 +27,13 @@ Im Fall von einer Anmeldung an einem Message Server (Load Balancing) sind
 **Group** - Gruppe, i.d.R. ist das PUBLIC <br>
 **SID** - dreistelliges Systemkürzel, z.B. MBS<br>
 
-SAP Library: [Load Balancing]()
+SAP Library: [Load Balancing](https://help.sap.com/saphelp_erp60_sp/helpdata/de/22/04295c488911d189490000e829fbbd/frameset.htm)
 
 **Anmeldung über SAP-Router**
 
 Falls Sie auf das SAP-System über einen SAP-Router zugreifen möchten, setzen Sie den Routerstring unmittelbar vor dem Hostnamen bzw. dem Message-Server. 
 
-SAP Library: [SAP-Router]()
+SAP Library: [SAP-Router](https://help.sap.com/saphelp_erp60_sp/helpdata/de/4f/992df1446d11d189700000e8322d00/frameset.htm)
 
 **Beispiel mit einem SAP Application Server** 
 
@@ -55,7 +55,7 @@ using(R3Connection con = new R3Connection())
 {% endhighlight %}
 </details>
 
-**Tipp**: Der Konstruktor der R3-Connection-Klasse kann dazu dienen, bereits gleich die Anmeldedaten mitzugeben. Das spart ein paar Code-Zeilen, siehe Kapitel [Kundeninfos abrufen mit SD_RFC_CUSTOMER_GET]().  
+**Tipp**: Der Konstruktor der R3-Connection-Klasse kann dazu dienen, bereits gleich die Anmeldedaten mitzugeben. Das spart ein paar Code-Zeilen, siehe Kapitel [Kundeninfos abrufen mit SD_RFC_CUSTOMER_GET](../rfc-client-funktionen-und-bapis/kundeninfos-abrufen-mit-sd_rfc_customer_get).  
 
 **Beispiel mit einem SAP Message Server (Load Balancing)**
 

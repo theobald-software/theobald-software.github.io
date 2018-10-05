@@ -131,6 +131,6 @@ Console.ReadLine()
 {% endhighlight %}
 </details>
 
-Die beiden Abbildungen zeigen das Konsolenprogramm in Aktion, sowie die IDoc-Anzeige im SAP. Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worden. Wie Sie Ihr SAP-System für den Empfang konfigurieren, finden Sie in Kapitel [IDoc-Empfang einrichten]().
+Die beiden Abbildungen zeigen das Konsolenprogramm in Aktion, sowie die IDoc-Anzeige im SAP. Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worden. Wie Sie Ihr SAP-System für den Empfang konfigurieren, finden Sie in Kapitel [IDoc-Empfang einrichten](../administration/idoc-empfang-einrichten).
 
 ![SAP-Send-IDoc-001](/img/content/SAP-Send-IDoc-001.png){:class="img-responsive"}

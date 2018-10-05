@@ -34,7 +34,7 @@ Wie der folgende Code-Ausschnitt zeigt, bietet die DataContext-Klasse nun eine F
 
 ![LINQToERP-Queries_006](/img/content/LINQToERP-Queries_006.png){:class="img-responsive"}
 
-Die beiden Übergabe-Parameter entsprechen den Range-Objekten wie sie bereits in Kapitel [Beispiel für das Aufrufen einer Query]()  vorgestellt wurden. Hier folgt nun der Code für die Ansteuerung. Als Variable dienen Textboxen (siehe folgender Screenshot).
+Die beiden Übergabe-Parameter entsprechen den Range-Objekten wie sie bereits in Kapitel [Beispiel für das Aufrufen einer Query](../sap-queries/beispiel-fuer-das-aufrufen-einer-query)  vorgestellt wurden. Hier folgt nun der Code für die Ansteuerung. Als Variable dienen Textboxen (siehe folgender Screenshot).
 
 <details>
 <summary>[C#]</summary>

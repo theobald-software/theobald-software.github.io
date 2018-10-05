@@ -28,7 +28,7 @@ Vor dem ersten Test muss die Destination gespeichert werden.
 
 ![Maintain-RFC-Destination-001](/img/content/Maintain-RFC-Destination-001.png){:class="img-responsive"}
 
-Sobald sich nun ein selbstgeschriebenes Server-Programm registriert hat, kann die Verbindung getestet werden (Button *Verbindung testen*). Ein Beispiel für ein einfaches RFC-Server-Programm finden Sie in Kapitel [RFC-Server -> Beispiel]() .
+Sobald sich nun ein selbstgeschriebenes Server-Programm registriert hat, kann die Verbindung getestet werden (Button *Verbindung testen*). Ein Beispiel für ein einfaches RFC-Server-Programm finden Sie in Kapitel [RFC-Server -> Beispiel](../rfc-server/rfc-server-beispiel) .
 
 ![Maintain-RFC-Destination-002](/img/content/Maintain-RFC-Destination-002.png){:class="img-responsive"}
 

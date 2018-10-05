@@ -14,7 +14,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=rfc-server-beispiel
 
 Im folgenden Beispiel wollen wir eine einfache Anforderung entwerfen. Ein ABAP-Programm soll zwei Zahlen addieren. Die beiden Input-Parameter NUMBER1 und NUMBER2 werden zum Ergebnis RES addiert.
 
-Der folgende Code bildet zunächst ein *RFCServer*-Objekt, das sich unter Angabe des SAP-Hostes, des Gatewayservices und der Programm-ID am SAP-Gateway registriert. Voraussetzung ist, dass die Programm-ID als registrierbare Destination im SAP hinterlegt ist (siehe auch [RFC-Destinationen pflegen]()).
+Der folgende Code bildet zunächst ein *RFCServer*-Objekt, das sich unter Angabe des SAP-Hostes, des Gatewayservices und der Programm-ID am SAP-Gateway registriert. Voraussetzung ist, dass die Programm-ID als registrierbare Destination im SAP hinterlegt ist (siehe auch [RFC-Destinationen pflegen](../administration/rfc-destinationen-pflegen)).
 
 Bevor der Server mittels *Start* gestartet wird, wird die dem SAP angebotene Funktion registriert und zwar mittels *.RegisteredFunctions.Add*. Ein einzelnes RFCServerFunction-Objekt repräsentiert eine einzelne aufrufbare Funktion. Selbstverständlich kann ein Server-Objekt beliebig viele unterschiedliche Funktionen zur Verfügung stellen.
 

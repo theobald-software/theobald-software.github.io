@@ -32,7 +32,7 @@ NTLM können Sie nur verwenden, wenn Sie kein Double Hop-Problem haben. Wenn Sie
 Wenn Sie z.B. einen Xtract Server einsetzen, wobei der Konsument der SAP-Daten und der Xtract Server auf unterschiedlichen Rechnern laufen, dann müssen Sie Kerberos verwenden, um das Double-Hop Problem lösen zu können. 
 
 Dazu achten Sie auf die entsprechende Konfiguration: <br>
-[http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx]()
+[http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx](http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx)
 
 Weitere Informationen zur SSO-Konfiguration auf SAP-Seite finden Sie unter: <br>
 [http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm)
@@ -45,7 +45,7 @@ Weitere Details zu NTLM: [https://technet.microsoft.com/en-us/library/hh831571.a
 
 **Die DLLs herunterladen**
 
-Sie müssen die relevanten DDLs von der SAP-Webseite herunterladen und in den Ordner %SYSTEMROOT%\System32 des Rechners ablegen, auf dem der Xtract Server läuft bzw. die SAP-Verbindung stattfindet. Diese DLLs sind für 32-Bit und 64-Bit Plattformen unterschiedlich und werden mit dem SAP-Hinweis 2115486 zur Verfügung gestellt. 
+Sie müssen die relevanten DDLs von der SAP-Webseite herunterladen und in den Ordner %SYSTEMROOT%\System32 des Rechners ablegen, auf dem der Xtract Server läuft bzw. die SAP-Verbindung stattfindet. Diese DLLs sind für 32-Bit und 64-Bit Plattformen unterschiedlich und werden mit dem [SAP-Hinweis 2115486](http://service.sap.com/sap/support/notes/2115486) zur Verfügung gestellt. 
 
 Die DLLs heißen: 
 
