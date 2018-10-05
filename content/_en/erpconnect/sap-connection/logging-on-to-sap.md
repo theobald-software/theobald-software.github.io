@@ -110,7 +110,7 @@ The default Client Protocol is the RFC Protocol. If you want to use the new NW R
  **con.Protocol = ClientProtocol.NWRFC;**
 
 **Tipp:** If you use the constructor of the R3Connection class to provide the login properties, 
-you can save some lines of code (see Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET ).
+you can save some lines of code (see [Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET](../calling-bapis-and-function-modules/retrieving-customer-information-by-calling-sd_rfc_customer_get) ).
 
 
 

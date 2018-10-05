@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=netweaver-dll
 ---
 
-ERPConnect supports the Netweaver RFC (SDK) starting by version 4.6.0 (see Version History).  
+ERPConnect supports the Netweaver RFC (SDK) starting by version 4.6.0 (see [Version History](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/82/52/erpconnect-version-history)).  
 To use it, set the Property Protocol of the R3Connection object to ClientProtocol.NWRFC. 
 
 **R3Connection.Protocol = ClientProtocol.NWRFC;**

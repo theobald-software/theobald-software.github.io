@@ -11,7 +11,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-connection-with-sso-and-s
 ---
 
 The RFCServer class supports SAP Connection with SSO and SNC.
-The RFCServer class provides the property SNCSettings, similar to the R3Connection class, refer to [ERPConnect with SSO with SNC](/link).
+The RFCServer class provides the property SNCSettings, similar to the R3Connection class, refer to [ERPConnect with SSO with SNC](../sap-connection/sap-connection-with-sso-and-snc).
 The property OwnName must be set. Additionally one of the properties SNCMechanism and LibraryPath must be set.  
   
 <details>

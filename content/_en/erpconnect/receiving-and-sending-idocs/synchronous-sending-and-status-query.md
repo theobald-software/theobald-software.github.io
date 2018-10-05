@@ -14,7 +14,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=synchronous-sending-and-status-query
 
 In the last few examples, we always sent the IDocs asynchronously to the SAP system. This has the advantage that the send program finishes very quickly with the send procedure because the processing that is heavy on computing time is done in the background. The disadvantage of this approach, however, is that the send program cannot make any assertion as to whether the IDoc processing in SAP has run on an error or not. ERPConnect or the Idoc class, respectively, provides two functions for this purpose: In place of Send, SendAndWait waits until the IDoc is processed in SAP. From this point on, the IDoc.DOCNUM (i.e. the IDoc number) field is also filled. Now with the help of GetCurrent-Status, an IdocStatus object can be called, which will contain any possible success or error messages.
 
-The following code is based on the OrderIdoc example in Chapter [Sending an ORDER IDoc]() and shows synchronous sending and the status query: 
+The following code is based on the OrderIdoc example in Chapter [Sending an ORDER IDoc](./example-sending-an-idoc-from-your-net-application) and shows synchronous sending and the status query: 
 
 <details>
 <summary>Click to open C# example.</summary>

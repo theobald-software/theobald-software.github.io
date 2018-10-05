@@ -19,7 +19,7 @@ First off, we need to define a logical system to which the IDocs can be sent. Pl
 
 **Step 2: Create an RFC Destination**
 
-Please refer to the chapter [Maintaining RFC Destinations]() and set up a new RFC destination.
+Please refer to the chapter [Maintaining RFC Destinations](./maintaining-rfc-destinations) and set up a new RFC destination.
 
 **Step 3: Create an IDoc Port**
 
