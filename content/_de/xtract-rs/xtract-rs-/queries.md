@@ -15,7 +15,7 @@ Dieses Kapitel zeigt, wie man ein DataSet anlegen kann, das auf einer SAP-Querie
 
 Die wichtigsten Transaktionen für das Anlegen von Queries im SAP sind SQ01/SQ02/SQ03.
 
-Bitte sehen Sie in die SAP-Hilfe, um mehr über die Erstellung von Queries zu erfahren.
+Bitte sehen Sie in die [SAP-Hilfe](https://help.sap.com/viewer/), um mehr über die Erstellung von Queries zu erfahren.
 
 ![Queries-001](/img/content/Queries-001.png){:class="img-responsive"}
 
