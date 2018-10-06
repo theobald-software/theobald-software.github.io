@@ -1,17 +1,28 @@
 var main = {
 
-  bigImgEl : null,
-  numImgs : null,
-
   init : function() {
+    // Initial calculation for the sideMenu offset
+    adjustSideMenu(107); // outer height of full nav
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
+        let sideMenuOffset = 0;
+
         if ($(".navbar").offset().top > 50) {
             $(".navbar").addClass("top-nav-short");
             $(".side-menu").addClass("nav-shortened");
+
+            sideMenuOffset = 70; // outer height of shortened nav
         } else {
             $(".navbar").removeClass("top-nav-short");
             $(".side-menu").removeClass("nav-shortened");
+
+            sideMenuOffset = 107; // outer height of full nav
+        }
+
+        // if the screen is not small, adjust the margin at the bottom of the sidebar to the height of the footer
+        if( !main.isBreakpoint('xs') ) {
+            $(document).on('scroll', adjustSideMenu(sideMenuOffset));
         }
     });
 
@@ -121,7 +132,30 @@ var main = {
             }
         }
     }
-
 };
 
 document.addEventListener('DOMContentLoaded', main.init);
+
+function adjustSideMenu(navOffset) {
+    let footerHeight = $('footer').outerHeight();
+    let distanceFromBottom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
+    let deductPixels;
+
+    if(distanceFromBottom < footerHeight) {
+        // deduct the distance to the bottom from the footer height.
+        // Now we know how much pixels of the footer is visible
+        // also deduct the height from the visible header
+        deductPixels = (footerHeight - distanceFromBottom) + navOffset;
+    } else {
+        // deduct just the height of the nav using the parameter given
+        deductPixels = navOffset;
+    }
+
+    let displayStyle = [
+        'height: calc(100% - ' + deductPixels + 'px)',
+        'height: -moz-calc(100% - ' + deductPixels + 'px)',
+        'height: -webkit-calc(100% - ' + deductPixels + 'px)'
+    ].join(';');
+
+    $('.side-menu-wrapper').attr('style', displayStyle);
+}

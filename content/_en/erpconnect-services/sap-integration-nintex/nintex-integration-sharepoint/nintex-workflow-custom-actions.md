@@ -3,7 +3,7 @@ layout: page
 title: Nintex Workflow Custom Actions
 description: Nintex Workflow Custom Actions
 product: erpconnect-services
-parent: nintex-integration-for-sharepoint
+parent: nintex-integration-sharepoint
 childidentifier: nintex-workflow-custom-actions
 permalink: /:collection/:path
 weight: 1

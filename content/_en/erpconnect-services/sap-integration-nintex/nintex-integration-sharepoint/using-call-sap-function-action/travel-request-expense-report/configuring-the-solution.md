@@ -3,7 +3,7 @@ layout: page
 title: Configuring the solution
 description: Configuring the solution
 product: erpconnect-services
-parent: travel-request-and-travel-expense-report
+parent: travel-request-expense-report
 childidentifier: configuring-the-solution
 permalink: /:collection/:path
 weight: 3

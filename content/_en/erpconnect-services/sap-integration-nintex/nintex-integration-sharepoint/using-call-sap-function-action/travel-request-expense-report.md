@@ -3,8 +3,8 @@ layout: page
 title: Travel Request and Travel Expenses
 description: Travel Request and Travel Expenses
 product: erpconnect-services
-parent: using-the-call-sap-function-action
-childidentifier: travel-request-and-travel-expense-report
+parent: using-call-sap-function-action
+childidentifier: travel-request-expense-report
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

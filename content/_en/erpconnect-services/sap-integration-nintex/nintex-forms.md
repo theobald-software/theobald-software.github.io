@@ -3,7 +3,7 @@ layout: page
 title: Nintex Forms
 description: Nintex Forms
 product: erpconnect-services
-parent: sap-integration-with-nintex
+parent: sap-integration-nintex
 childidentifier: nintex-forms
 permalink: /:collection/:path
 weight: 4

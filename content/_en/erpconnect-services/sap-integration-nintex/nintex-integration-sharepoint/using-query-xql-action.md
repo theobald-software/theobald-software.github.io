@@ -3,7 +3,7 @@ layout: page
 title: Using the Query XQL Action
 description: Using the Query XQL Action
 product: erpconnect-services
-parent: nintex-integration-for-sharepoint
+parent: nintex-integration-sharepoint
 childidentifier: using-query-xql-action
 permalink: /:collection/:path
 weight: 4

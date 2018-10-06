@@ -3,7 +3,7 @@ layout: page
 title: Creating purchase requisitions
 description: Creating purchase requisitions
 product: erpconnect-services
-parent: using-the-call-sap-function-action
+parent: using-call-sap-function-action
 childidentifier: creating-purchase-requisitions
 permalink: /:collection/:path
 weight: 1

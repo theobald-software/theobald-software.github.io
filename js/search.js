@@ -11,7 +11,15 @@ var main = {
                 filters: 'collection:"' + document.querySelector('#language').innerHTML  + '" AND NOT product:"none"'
             },
             highlightPreTag: '<em class="search-highlight">',
-            highlightPostTag: '</em>'
+            highlightPostTag: '</em>',
+            searchFunction(helper) {
+            if(getUrlVars()["fromHomepage"]) {
+                $('.ais-search-box--input').val(getUrlVars()["fromHomepage"]);
+                helper.setQuery(getUrlVars()["fromHomepage"]).search();
+            } else {
+                helper.search();
+            }
+        }
         });
 
         // initialize SearchBox
@@ -145,11 +153,6 @@ var main = {
 
         // start instantsearch
         search.start();
-
-        $(document).ready(function(){
-            $('.ais-search-box--input').val(getUrlVars()["fromHomepage"]);
-            search.helper.setQuery(getUrlVars()["fromHomepage"]).search();
-        });
 
         // upon rendering, check the product title and enhance the appearance.
         // TODO: refactor the cases so the html isn't injected like it is now.

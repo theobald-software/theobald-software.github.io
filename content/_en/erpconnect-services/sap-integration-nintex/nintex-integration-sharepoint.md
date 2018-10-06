@@ -3,8 +3,8 @@ layout: page
 title: Nintex Workflow for SharePoint
 description: Nintex Workflow for SharePoint
 product: erpconnect-services
-parent: sap-integration-with-nintex
-childidentifier: nintex-integration-for-sharepoint
+parent: sap-integration-nintex
+childidentifier: nintex-integration-sharepoint
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

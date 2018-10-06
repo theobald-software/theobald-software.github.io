@@ -12,6 +12,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=installation_und_konfigurat
 
 Zur Dateneingabe innerhalb der Szenarien werden verschiedene SharePoint-Listen genutzt.
 
+
 Für den **Reiseantrag** erstellen Sie manuell eine SharePoint-Liste mit folgenden Eigenschaften oder importieren Sie die Liste über die Windows Powershell mit der Datei *TravelRequests.cmp*. Wie Sie SharePoint-Listen per Powershell importieren, erfahren Sie [hier](https://docs.microsoft.com/de-de/SharePoint/administration/import-a-list-or-document-library).
 
 Typ = **Custom List**
@@ -21,6 +22,7 @@ Name = **Travel Requests**
 ![ECS-Nintex-TravelScenarios4](/img/content/ECS-Nintex-TravelScenarios4.png){:class="img-responsive"}
 
 *Alternative Cost Assignment*
+
 
 Über die Spalte *Alternative Cost Assignment* soll der Anwender die Möglichkeit erhalten, eine alternative Kontierung für den Reiseantrag zu hinterlegen. Die Idee dahinter ist, eine Liste an möglichen Kostenstellen direkt aus dem SAP System zu beziehen. Der externe Inhaltstyp wird mit dem BCS Connector von Theobald Software erzeugt. Dort erfolgt ein Aufruf einer Standard-SAP-Tabelle für Kostenstellen (CSKS oder CSKT). Eine genaue Erläuterung der Funktionsweise des BCS Connectors finden Sie [hier](../../../../../ecs-de/bcs-connector/). 
 

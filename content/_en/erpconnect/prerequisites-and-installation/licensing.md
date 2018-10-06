@@ -10,9 +10,9 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=licensing
 ---
 
-ERPConnect checks the licence number on every call (client and server). After the end of the test period ERPConnect will not run without a valid licence.  
+ERPConnect checks the licence number on every call (client and server). After the end of the test period ERPConnect will not run without a valid licence key. For demo purposes a license key is not necessary after the installation of the trial version.  
   
-Please set your licence number through the static class ERPConnect.LIC as shown in the code below. This must be done before the first connection to SAP is established (regardless of wether as a server or a client).  
+Please set your licence number through the static class ERPConnect.LIC as shown in the code below. This must be done before the first connection to SAP is established, or before you start the RFC Server (regardless of wether as a server or a client).  
 
 **C#**
 {% highlight csharp %}
@@ -25,4 +25,4 @@ ERPConnect.LIC.SetLic("XXXXXXXXXX")
   
 If you have more than one developer licence, the licence numbers end with -01,-02, etc. Which ending you use with SetLic does not matter. You may omit the end completely.  
   
-The trial version of ERPConnect does not work in a web environment. Please apply for a limited test licence number if you want to use ERPConnect with your ASP.NET project ([support@theobald-software.com](support@theobald-software.com)).  
+The trial version of ERPConnect does not work in a web environment. Please apply for a limited test licence number if you want to use ERPConnect with your ASP.NET project ([sales@theobald-software.com](sales@theobald-software.com)).  

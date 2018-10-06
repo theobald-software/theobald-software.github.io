@@ -4,7 +4,7 @@ title: SAP Integration with Nintex
 description: SAP Integration with Nintex
 product: erpconnect-services
 parent: erpconnect-services
-childidentifier: sap-integration-with-nintex
+childidentifier: sap-integration-nintex
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

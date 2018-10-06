@@ -3,7 +3,7 @@ layout: page
 title: Nintex Workflow Troubleshooting (only for SharePoint On-Prem)
 description: Nintex Workflow Troubleshooting (only for SharePoint On-Prem)
 product: erpconnect-services
-parent: nintex-integration-for-sharepoint
+parent: nintex-integration-sharepoint
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

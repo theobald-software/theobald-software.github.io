@@ -3,8 +3,8 @@ layout: page
 title: Using the Call SAP Function Action
 description: Using the Call SAP Function Action
 product: erpconnect-services
-parent: nintex-integration-for-sharepoint
-childidentifier: using-the-call-sap-function-action
+parent: nintex-integration-sharepoint
+childidentifier: using-call-sap-function-action
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

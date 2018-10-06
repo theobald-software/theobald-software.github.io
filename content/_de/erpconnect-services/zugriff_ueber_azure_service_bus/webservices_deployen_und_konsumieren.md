@@ -11,6 +11,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservices_deployen_und_ko
 ---
 
 Der Zugriff über einen Azure Service Bus kann für das Deployment und das Konsumieren von Webservices verwendet werden, die mit dem WebService Designer erstellt wurden. 
+
 Wie Sie REST Webservices für ECS Core erstellen wird [hier](../../ecs-core/webservices/ecsc-rest-webservices) erklärt.    <br>
 Grundlegende Informationen zum Thema Webservice Authentifizierung finden sie in [folgendem](../../ecs-core/webservices/webservice_auhtentifizierung) Kapitel. 
 

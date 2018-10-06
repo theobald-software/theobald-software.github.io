@@ -3,7 +3,7 @@ layout: page
 title: Using Business Connectivity Services (BCS) and External Lists
 description: Using Business Connectivity Services (BCS) and External Lists
 product: erpconnect-services
-parent: nintex-integration-for-sharepoint
+parent: nintex-integration-sharepoint
 childidentifier: using-business-connectivity-services-bcs-and-external-lists
 permalink: /:collection/:path
 weight: 2

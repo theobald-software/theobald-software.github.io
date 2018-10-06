@@ -9,8 +9,6 @@ var main = {
             referrer_relative = referrer.split(':4000')[1];
         }
 
-        console.log("using: " + referrer_relative);
-
         if(referrer_relative) {
             // general settings for instant search
             const search = instantsearch({
@@ -19,6 +17,7 @@ var main = {
                 indexName: 'theobald-software-online-help',
                 searchFunction: function (helper) {
                     helper.setQueryParameter('restrictSearchableAttributes', ['old_url']);
+                    helper.setQueryParameter('hitsPerPage', 1);
                     helper.search();
                 }
             });

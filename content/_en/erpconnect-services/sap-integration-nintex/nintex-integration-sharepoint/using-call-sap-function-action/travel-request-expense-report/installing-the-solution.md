@@ -3,7 +3,7 @@ layout: page
 title: Installing the solution
 description: Installing the solution
 product: erpconnect-services
-parent: travel-request-and-travel-expense-report
+parent: travel-request-expense-report
 childidentifier: installing-the-solution
 permalink: /:collection/:path
 weight: 2

@@ -3,7 +3,7 @@ layout: page
 title: Using Web Services
 description: Using Web Services
 product: erpconnect-services
-parent: nintex-integration-for-sharepoint
+parent: nintex-integration-sharepoint
 childidentifier: using-web-services
 permalink: /:collection/:path
 weight: 3

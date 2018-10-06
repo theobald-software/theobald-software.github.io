@@ -402,7 +402,7 @@ footer .fab {
 
 .footer-top {
   background-color: $color-background-secondary;
-  padding: 30px 30px;
+  padding: 20px 30px;
 }
 
 .footer-bottom {
@@ -557,33 +557,43 @@ footer .fab {
 }
 
 @media only screen and (min-width: 990px) {
-  .side-menu-add-margin {
+  .side-menu-wrapper {
     padding-right: 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .side-menu-add-margin {
+  .side-menu-wrapper {
     padding-right: 50px;
   }
 }
 @media only screen and (min-width: 1500px) {
-  .side-menu-add-margin {
+  .side-menu-wrapper {
     padding-right: 80px;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .side-menu-add-margin {
+  .side-menu-wrapper {
     width: 20% !important;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .side-menu-wrapper {
+    height: calc(100% - 107px);
+    height: -moz-calc(100% - 107px);
+    height: -webkit-calc(100% - 107px);
+  }
+
   .side-menu {
     margin: 107px 0 20px 0;
     -webkit-transition: margin .58s ease-in-out;
     -moz-transition: margin .58s ease-in-out;
     transition: margin .58s ease-in-out;
     border-bottom: 0 solid transparent;
+    position: relative;
+    overflow: auto;
+    overflow-y: scroll;
+    height: 100%;
   }
   .nav-shortened {
     margin: 70px 0 20px 0;
@@ -610,6 +620,7 @@ footer .fab {
   font-weight: 600;
   padding-left: 5px;
   line-height: 50px;
+  margin-top: 0;
 }
 
 .side-menu-list {
@@ -1115,4 +1126,18 @@ td.gutter pre {
 
 .redirect-message a {
   color: $color-highlight !important;
+}
+
+/** Scrollbar **/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

@@ -67,4 +67,4 @@ You will also find it in the IIS Manager on the port 8080 site in subdirectory W
 
 ![ecscore-webservices6](/img/content/ecscore-webservices6.png){:class="img-responsive"}
 
-How to call the web service in Nintex for Office 365 or Nintex Workflow Cloud is described in chapter [SAP integration with Nintex](../../sap-integration-with-nintex). 
+How to call the web service in Nintex for Office 365 or Nintex Workflow Cloud is described in chapter [SAP integration with Nintex](../../sap-integration-nintex). 

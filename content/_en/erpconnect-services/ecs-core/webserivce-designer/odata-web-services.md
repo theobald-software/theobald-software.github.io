@@ -56,4 +56,4 @@ You will find the web service in the Extensions section of your ECSCore manageme
 
 How to test the web service in a REST client is described in the following chapter.  
 
-How to call the web service in Nintex for Office 365 is described in chapter [SAP integration with Nintex](../../sap-integration-with-nintex).  
+How to call the web service in Nintex for Office 365 is described in chapter [SAP integration with Nintex](../../sap-integration-nintex).  

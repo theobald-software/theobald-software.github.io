@@ -19,6 +19,7 @@ Dabei können SAP-Daten aus den folgenden Objekten gelesen werden:
 - SAP/BW-InfoCubes und BEx Queries sowie
 - SAP-Funktionsbausteine.
 
+
 SAP-Funktionsbausteine können dabei verwendet werden, um auch in SAP zu schreiben (z.B. Anlage einer Bestellung oder eines Urlaubsantrags). Für weitere Informationen über die XtractQL-Sprache siehe den Abschnitt [XtractQL](../../../ecs-de/ecs-runtime/ecs-xtractql/).  
 
 ![ECS-Nintex-XtractQL-Action](/img/content/ECS-Nintex-XtractQL-Action.jpg){:class="img-responsive"} 

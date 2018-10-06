@@ -3,7 +3,7 @@ layout: page
 title: System requirements
 description: System requirements
 product: erpconnect-services
-parent: travel-request-and-travel-expense-report
+parent: travel-request-expense-report
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

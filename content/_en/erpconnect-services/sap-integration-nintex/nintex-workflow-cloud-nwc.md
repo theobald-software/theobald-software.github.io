@@ -3,7 +3,7 @@ layout: page
 title: Nintex Workflow Cloud (NWC)
 description: Nintex Workflow Cloud (NWC)
 product: erpconnect-services
-parent: sap-integration-with-nintex
+parent: sap-integration-nintex
 childidentifier: nintex-workflow-cloud-nwc
 permalink: /:collection/:path
 weight: 3

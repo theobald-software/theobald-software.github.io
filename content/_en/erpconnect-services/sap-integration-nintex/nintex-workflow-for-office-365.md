@@ -3,7 +3,7 @@ layout: page
 title: Nintex Workflow for Office 365
 description: Nintex Workflow for Office 365
 product: erpconnect-services
-parent: sap-integration-with-nintex
+parent: sap-integration-nintex
 childidentifier: nintex-workflow-for-office-365
 permalink: /:collection/:path
 weight: 2
