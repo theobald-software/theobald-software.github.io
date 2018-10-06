@@ -20,4 +20,4 @@ Each function module has *Import* and *Export* parameters, in addition you can e
 **Commit Transaction**
 
 To execute a function module for transaction commit (e.g. BAPI_TRANSACTION_COMMIT) you must use a connection scope. 
-This will be the case too when you need to call several functions in the same [connection scope]() (context). 
+This will be the case too when you need to call several functions in the same [connection scope](../sap-connection/sap-connection-scope) (context). 

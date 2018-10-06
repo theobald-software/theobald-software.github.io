@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=cats-install
 
 **Installation files**
 
-You can download the installation files [here](). 
+You can download the installation files [here](https://my.theobald-software.com/files/ECS/Theobald.CATS.zip). 
 
 The following files are delivered: 
 
@@ -22,9 +22,9 @@ Theobald.CATS.exe: The installer package that must be installed on the SharePoin
 **System requirements** 
 
 ERPConnect Services must be installed on the SharePoint Server.<br>
-An ECS Service Application must be created, for more information refer to our [online help]().
+An ECS Service Application must be created, for more information refer to our [online help](../../ecs/configuration/creating-an-ecs-service-app).
 
-For secure authorization within the application a Secure Store Application is required. Create one in the SharePoint Central Administration. It is described in detail how to do this in our [online help](). 
+For secure authorization within the application a Secure Store Application is required. Create one in the SharePoint Central Administration. It is described in detail how to do this in our [online help](../../ecs/configuration/creating-a-secure-store-app). 
 
 Permissions: Make sure that the users stored in the Secure Store have the necessary permissions. They need full rights on the Secure Store Service Application and at least reading rights on the ERPConnect Service Application. 
 

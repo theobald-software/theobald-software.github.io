@@ -54,7 +54,7 @@ Here you can search for addon *Strikeiron exchange rate and currency converter* 
 
 ![ECS-Nintex-TravelScenarios19](/img/content/ECS-Nintex-TravelScenarios19.png){:class="img-responsive"}
 
-For the usage of this addon a registration for a free trial period is necessary. You can register [here](). <br>
+For the usage of this addon a registration for a free trial period is necessary. You can register [here](https://now.informatica.com/en_daas-other-free-trial-6). <br>
 We recommend to store username and password right after the registration process as workflow constants. <br>
 These workflow constants will be used for authorization in the User Defined Action. 
 

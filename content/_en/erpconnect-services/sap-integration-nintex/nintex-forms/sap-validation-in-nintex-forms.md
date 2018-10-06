@@ -97,4 +97,4 @@ If the input number is invalid, an error message will be shown.
 
 This sample showed how to validate input data in Nintex Forms using JavaScript and REST-Services provided by ERPConnect Services. 
 Other scenarios are possible too, e.g. to fill a combo-box with SAP customer numbers or to search directly using an SAP customer number or name.  
-In further Scenarios you can use external columns from external content types, that are based on SAP business objects (e.g. Customer) and created with the [BCS Connector]().
+In further Scenarios you can use external columns from external content types, that are based on SAP business objects (e.g. Customer) and created with the [BCS Connector](../../ecs/bcs-connector/).

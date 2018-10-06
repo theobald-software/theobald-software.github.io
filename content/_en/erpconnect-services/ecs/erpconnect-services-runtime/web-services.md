@@ -113,9 +113,9 @@ public class ExecuteTableQuerySettings
 </details>
 
 Check the following Samples in our knowledge base:<br> 
-[Consume ERPConnect Services REST/JSON Webservice from .NET]()<br>
-[Consume ERPConnect Services REST/JSON Webservice from Java]()<br>
-[Showing SAP Data in a Grid within SharePoint with 50 lines of JavaScript]()<br>
+[Consume ERPConnect Services REST/JSON Webservice from .NET](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/109/53/consume-erpconnect-services-restjson-webservice-from-net)<br>
+[Consume ERPConnect Services REST/JSON Webservice from Java](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/110/53/consume-erpconnect-services-restjson-webservice-from-java)<br>
+[Showing SAP Data in a Grid within SharePoint with 50 lines of JavaScript](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/108/53/showing-sap-data-in-a-grid-within-sharepoint-with-50-lines-of-javascript)<br>
 
 **JavaScript library JSON2.js**<br>
 The JavaScript library JSON2.js is useful to convert JavaScript objects to JSON strings. The library is available for download at [www.json.org](www.json.org). The code examples in this chapter make use of the function *JSON.stringify* which is provided by the library.

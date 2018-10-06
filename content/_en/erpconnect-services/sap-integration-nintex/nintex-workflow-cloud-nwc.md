@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=nintex-workflow-cloud-nwc
 ---
 
-SAP integration with the Nintex Workflow Cloud (NWC) platform is fully supported with the cloud connector ERPConnect Services Core (ECS Core). Detailed information about ECS Core can be found [here]().
+SAP integration with the Nintex Workflow Cloud (NWC) platform is fully supported with the cloud connector ERPConnect Services Core (ECS Core). Detailed information about ECS Core can be found [here](../ecs-core).
 
 With the Nintex Xtensions framework integrated in NWC it is possible to import SAP integrated web services that have been exported into OpenAPI definitions. This integration method is described in the following chapters. 
 

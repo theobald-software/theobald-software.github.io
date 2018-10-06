@@ -33,4 +33,4 @@ The installation process will start. Note that **Microsoft SQL Server Compact** 
 
 With the term *Installation or ECSCore* we understand copying and registering required modules on a target machine. No configuration is directly available after the installation process is completed. To start with the configuration the ECSCore components must be deployed, which means the UI (Web Site) and resources have to be installed into IIS (Internet Information Services) with your specific parameters (such as ports and existing databases).
 
-After the basic installation of ECSCore proceed with the [Deployment Manager](./deployment). You also have to start the Deployment Manager after doing a software update or a re-installation. 
+After the basic installation of ECSCore proceed with the [Deployment Manager](./ecs-core-deployment). You also have to start the Deployment Manager after doing a software update or a re-installation. 

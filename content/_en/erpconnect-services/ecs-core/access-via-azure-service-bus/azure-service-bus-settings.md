@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=azure_service_bus
 ---
 
-To start with the Azure Service Bus conifguration create a new Service Bus instance inside of the Azure [Management Portal:]()
+To start with the Azure Service Bus conifguration create a new Service Bus instance inside of the Azure [Management Portal:](https://portal.azure.com/)
 
 ![ecscore-managementsite28](/img/content/ecscore-managementsite28.jpg.png){:class="img-responsive"}
 

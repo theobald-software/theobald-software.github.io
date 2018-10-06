@@ -35,7 +35,7 @@ Before you can test the connector you have to create it first. Only if all actio
 In the Test section the custom connector's functionality can be tested. Therefore you have to create a connection first. Click on *New connection* and enter a valid API Key in the following form:<br> 
 APIKEY [BASE64 encoded ECS Core API Key]
 
-Example: APIKEY QjGCMTMxMjE0MTA3NDhCMUE5MUNZTzAyQjBDRTg1OUP= (vgl. Connection Settings for API Key in Webservice Authentication)
+Example: APIKEY QjGCMTMxMjE0MTA3NDhCMUE5MUNZTzAyQjBDRTg1OUP= (vgl. Connection Settings for API Key in [Webservice Authentication](../../../sap-integration-nintex/nintex-workflow-cloud-nwc/create-a-new-connection))
 
 ![ecscore_flow_4](/img/content/ecscore_flow_4.png){:class="img-responsive"}
 

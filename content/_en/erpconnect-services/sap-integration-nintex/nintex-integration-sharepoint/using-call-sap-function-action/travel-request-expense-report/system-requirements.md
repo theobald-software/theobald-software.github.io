@@ -34,18 +34,18 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=system_requirements1
 
 **Other Applications and Frameworks**
 
-- Librfc32.dll if no SAP GUI is installed. A download link you will find [here]().
+- Librfc32.dll if no SAP GUI is installed. A download link you will find [here](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/54/9/useful-links).
 
 **Nintex Workflow 2013 (Nintex Live included)**
 
 - Version 3.1.5 and later
 - Nintex Live: Choose a server that hosts SharePoint Central Administration. 
-- Detailed information regarding Nintex Workflow installation you find [here]().
+- Detailed information regarding Nintex Workflow installation you find [here](https://community.nintex.com/docs/DOC-1373).
 
 **Nintex Forms 2013**
 
 - The installation has to run on a web frontend server
-- Detailed information regarding Nintex Forms installation you find [here]().
+- Detailed information regarding Nintex Forms installation you find [here](https://community.nintex.com/docs/DOC-1373).
 
 **Browser Client**
 
@@ -53,8 +53,8 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=system_requirements1
 
 **ERPConnect Services for SharePoint 2013**
 
-- Detailed information regarding ERPConnect Services installation you find [here]().
+- Detailed information regarding ERPConnect Services installation you find [here](../../../../ecs/requirements-and-installation/installation).
 
 **Nintex Workflow Custom Actions**
 
-- Detailed information regarding the Nintex Workflow Custom Actions you find [here](). 
+- Detailed information regarding the Nintex Workflow Custom Actions you find [here](../../nintex-workflow-custom-actions). 

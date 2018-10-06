@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=javascript-library-for-rest
 ---
 
-For programming with ECS REST Services and JavaScript we recommend to use our Client Library [theobald.ecs.micro for ERPConnectServices/Core]() (tEcs), which goal is to make client side programming with JavaScript and ERPConnect Services easier by encapsulating raw methods of ECS. It is standalone, so you don't need include any other scripts to use ECS.
+For programming with ECS REST Services and JavaScript we recommend to use our Client Library [theobald.ecs.micro for ERPConnectServices/Core](https://static.theobald-software.com/theobald.ecs.micro/5.4.2/) (tEcs), which goal is to make client side programming with JavaScript and ERPConnect Services easier by encapsulating raw methods of ECS. It is standalone, so you don't need include any other scripts to use ECS.
 
 Basic APIs are listed below:
 ```
@@ -70,5 +70,5 @@ tEcs.callSoapService({
 ```
 
 **theobald.ecs:**<br>
-[theobald.ecs]() is an extension of **theobald.ecs.micro** and requires Query. 
-If you would like to work with SharePoint and Persistence APIs e.g. save connection parameters in SharePoint (APIKey, ServiceApplication, Url) or set configuration parameters on the client use [theobald.ecs](). 
+[theobald.ecs](https://static.theobald-software.com/theobald.ecs/5.0.0/) is an extension of **theobald.ecs.micro** and requires Query. 
+If you would like to work with SharePoint and Persistence APIs e.g. save connection parameters in SharePoint (APIKey, ServiceApplication, Url) or set configuration parameters on the client use [theobald.ecs](https://static.theobald-software.com/theobald.ecs/5.0.0/). 

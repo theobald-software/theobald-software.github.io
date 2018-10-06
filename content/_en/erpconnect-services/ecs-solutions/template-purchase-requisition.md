@@ -35,6 +35,6 @@ The template contains all necessary resources and documents to deploy the soluti
 
 **Download section**  
 
-[Download User Guide [PDF]]()<br>
-[Download Deployment and Configuration Guide [PDF]]()<br>
-[Download the whole solution including Visual Studio 2010 solution [ZIP]]()<br> 
+[Download User Guide [PDF]](http://www.theobald-software.com/download/ERPConnectServices/templates/PRM-User-Guide.pdf)<br>
+[Download Deployment and Configuration Guide [PDF]](https://files.theobald-software.com/download/ERPConnectServices/templates/PRM-Deployment-and-Configuration-Guide.pdf)<br>
+[Download the whole solution including Visual Studio 2010 solution [ZIP]](http://www.theobald-software.com/download/ERPConnectServices/templates/Theobald-ECS-Template-Purchase-Requisition.zip)<br> 

@@ -27,13 +27,13 @@ Name of the SAP table or view to be retrieved.
 Maximum numbers of rows to be extracted. 
 
 **Where**<br>
-WHERE Clause to be used on the table. The WHERE clause must comply with the SAP OpenSQL syntax. Additional information can be found [here]().
+WHERE Clause to be used on the table. The WHERE clause must comply with the SAP OpenSQL syntax. Additional information can be found [here](../../ecs/webservice-designer/soap-web-services/operation-with-sap-table/where-clause).
 
 **Order By**<br>
 You can define the sort criterion here, that is to say the table field that is used for sorting the result. 
 
 **Custom Function**<br>
-This field contains the name of the custom function module used for the table extraction. Supported is the use of custom function Z_XTRACT_IS_TABLE which allows to extract large SAP tables or tables with certain restrictive characteristics. More information about the custom function you find [here](). 
+This field contains the name of the custom function module used for the table extraction. Supported is the use of custom function Z_XTRACT_IS_TABLE which allows to extract large SAP tables or tables with certain restrictive characteristics. More information about the custom function you find [here](../../sap-customizing/custom-function-module-for-table-compression). 
 
 **Use Multibyte Extraktion**
 

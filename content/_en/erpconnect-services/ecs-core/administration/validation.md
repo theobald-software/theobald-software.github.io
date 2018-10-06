@@ -10,9 +10,9 @@ lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=validation1
 ---
 
-To test and insure that the configured components work correctly you can use the [tEcs-Library]() (recommended), alternatively use the instructions and snippets prepared for you in the section ERPConnect Services Runtime>Webservices>REST without tEcs  "Table with REST" or another example.
+To test and insure that the configured components work correctly you can use the [tEcs-Library](https://static.theobald-software.com/tEcs) (recommended), alternatively use the instructions and snippets prepared for you in the section ERPConnect Services Runtime>Webservices>REST without tEcs  "Table with REST" or another example.
 
-Use this [JSBin snippet]() to easily test your ECSCore and SAP Connection.
+Use this [JSBin snippet](http://output.jsbin.com/gejem/13) to easily test your ECSCore and SAP Connection.
 
 ```
 tEcs.testSapConnection({
@@ -27,7 +27,7 @@ tEcs.testSapConnection({
 });
 ```
 
-Another option is to build a query with browser extensions: [POSTMAN]() (Chrome) or [RESTClient]() (Firefox).
+Another option is to build a query with browser extensions: [POSTMAN](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm) (Chrome) or [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox).
 
 Here you must notice how the Authorization Header is set:
 

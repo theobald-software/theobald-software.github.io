@@ -19,7 +19,7 @@ The following authentication methods are supported:
 - *Authentication via API Key (recommended with https)*: A dedicated API Key created on the ECS Core Management Site is used for authentication.
 - *Basic Authentication (recommended with https)*: Windows Basic Authentication is used for authentication.
 - *Windows Authentication (NTLM)*: Use it for web service calls only if supported by the client. The local Windows User and password is used for authentication. This enables the service configurator to connect from any machine in the Active Directory, providing the account is recognized on the server where ECS Core is installed.
-- *Authentication via Azure Service Bus*: Authentication via Azure Service Bus is described separately here. 
+- *Authentication via Azure Service Bus*: Authentication via Azure Service Bus is described separately [here](../access-via-azure-service-bus/web-services-deploying-and-consuming). 
 
 **Authentication between the WebService Designer and ECS Core** 
 
@@ -55,7 +55,7 @@ With the *Test* button you can test the connection settings.
   
 Between the web service consumer and ECS Core the same authentication methods are supported. The web service consumer can be for instance a REST client, a workflow, a JavaScript app, etc.
 
-Setting the authentication for the the web service call ist described for the Postman REST Client here. These settings can be applied to REST web service calls in a workflow solution (i.e. Flow, Nintex). If you just want to test the functionality of a workflow quickly please use the web service operation [test dialog](). 
+Setting the authentication for the the web service call ist described for the Postman REST Client here. These settings can be applied to REST web service calls in a workflow solution (i.e. Flow, Nintex). If you just want to test the functionality of a workflow quickly please use the web service operation [test dialog](./test-the-rest-web-service). 
 
 **General settings for REST web service calls in a REST Client**
 

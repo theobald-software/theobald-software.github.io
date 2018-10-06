@@ -21,7 +21,7 @@ A SharePoint BCS model requires some information about the external system, or L
 
 Similarly, in the LOB System Instance field, enter the name of the specific SAP system that you are connecting to, or simply accept the default value 'SAP Model LOB Instance'. 
 
-You can specify additional localized values for any of the parameter fields, using the ellipsis button next to them. For further information see [Localization]().
+You can specify additional localized values for any of the parameter fields, using the ellipsis button next to them. For further information see [Localization](localization).
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

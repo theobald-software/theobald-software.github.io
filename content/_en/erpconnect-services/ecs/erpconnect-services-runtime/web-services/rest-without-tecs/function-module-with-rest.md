@@ -58,7 +58,7 @@ The function object contains the typical parameters of an SAP function module, f
 
 After successful execution, the data will be returned as a list which can be accessed in the Tables parameter *CUSTOMER_T*.
 
-For a function module sample with more parameters or with a connection scope refer to [How to use ConnectionScope](). 
+For a function module sample with more parameters or with a connection scope refer to [How to use ConnectionScope](./how-to-use-connectionscope). 
  
 **Use of a specific ECS Application**
 

@@ -38,5 +38,5 @@ Now deploy the web service to SharePoint.
 
 ![Nintex-Material-WS-Deployed](/img/content/Nintex-Material-WS-Deployed.jpg){:class="img-responsive"}
 
-[Here]() you can dowload the WebService Model file (zip).
+[Here](/img/SAPMaterialWebService.zip) you can dowload the WebService Model file (zip).
 
