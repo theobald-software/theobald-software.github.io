@@ -14,4 +14,4 @@ Authority objects
 
 Please go to our Knowledgebase to find out more about authority objects that are needed to use Xtract RS:
 
-[http://my.theobald-software.com/index.php?/Knowledgebase/List]
+[http://my.theobald-software.com/index.php?/Knowledgebase/List](http://my.theobald-software.com/index.php?/Knowledgebase/List)

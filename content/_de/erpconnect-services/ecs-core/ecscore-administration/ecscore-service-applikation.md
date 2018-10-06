@@ -39,7 +39,7 @@ Tragen Sie anschließend die Angaben zur Authentifizierungsmethode ein, die für
 
 **Use Secure Store** -		ECSCore nutzt einen Secure Store, um die SAP-Anmeldedaten des angemeldeten Windows-Benutzers zu erhalten.
 					Wählen Sie dazu die Option Secure Store Application ID, um eine existierende Secure Store Anwendung zu wählen. 
-					Wie man für ECSCore einen Secure Store anlegt erfahren Sie hier. 
+					Wie man für ECSCore einen Secure Store anlegt erfahren Sie [hier](./ecscore-secure-store). 
 
 **Use SSO Ticket** -		Es wird ein SAP SSO Ticket für die Authentifizierung verwendet. Tragen Sie die Ticket Issuer URL ein. 
 

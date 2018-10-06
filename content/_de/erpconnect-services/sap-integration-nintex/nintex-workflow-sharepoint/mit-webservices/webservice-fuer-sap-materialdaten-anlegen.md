@@ -38,4 +38,5 @@ Nun deployen Sie den Webservice auf SharePoint.
 
 ![Nintex-Material-WS-Deployed](/img/content/Nintex-Material-WS-Deployed.jpg){:class="img-responsive"}
 
-[Hier]() können Sie die WebService-Definition herunterladen (zip).
+
+[Hier](/img/SAPMaterialWebService.zip) können Sie die WebService-Definition herunterladen (zip).

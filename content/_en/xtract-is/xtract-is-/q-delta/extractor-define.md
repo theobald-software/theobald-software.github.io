@@ -59,4 +59,4 @@ The Update Mode can be controlled via a variable too. See Extraction Settings.
 
 **To set a Filter** see the section Datasource parameters.
 
-For any Errors please refer to our [Troubleshooting DeltaQ]().
+For any Errors please refer to our [Troubleshooting DeltaQ](./troubleshooting-deltaq).

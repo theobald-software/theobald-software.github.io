@@ -15,7 +15,7 @@ Die RFC API existiert in zwei unterschiedlichen Versionen:
 - Klassiche RFC-API 
 - Netweaver-RFC-API 
 
-SAP Library: [RFC API: Classical & NetWeaver]() 
+SAP Library: [RFC API: Classical & NetWeaver](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm) 
 
 **Klassische RFC-Bibliothek**
 
@@ -24,7 +24,7 @@ Die klassische RFC-Bibliothek wird standardmäßig für die SAP-Verbindung geset
 
 Netweaver RFC-Bibliothek
 
-ERPConnect unterstützt die Netweaver RFC-Bibliothek seit der Version 4.6.0 (siehe [Version History]()). 
+ERPConnect unterstützt die Netweaver RFC-Bibliothek seit der Version 4.6.0 (siehe [Version History](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/82/52/erpconnect-version-history)). 
 
 Dazu setzen Sie die Eigenschaft Protocol des R3Connection-Objekts auf ClientProtocol.NWRFC. 
 

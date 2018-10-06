@@ -36,7 +36,7 @@ As the following code snippet shows, the DataContext class now offers a function
 
 ![LINQToERP-Queries_006](/img/content/LINQToERP-Queries_006.png){:class="img-responsive" width="800px"}
 
-Both parameter values correspond with the range objects introduced in section [Example for calling a query](). Here is the code now for the query. Text boxes serve as variables here (see screenshot below).
+Both parameter values correspond with the range objects introduced in section [Example for calling a query](../sap-queries/example-for-calling-a-query). Here is the code now for the query. Text boxes serve as variables here (see screenshot below).
 
 <details>
 <summary>Click to open C# example.</summary>

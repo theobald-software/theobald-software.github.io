@@ -14,6 +14,6 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=anhang
 
 Die aktuellen Informationen zum Thema Berechtigung finden Sie in unserer Knowledge Base unter:
 
-[http://my.theobald-software.com/index.php?/Knowledgebase/List]()
+[http://my.theobald-software.com/index.php?/Knowledgebase/List](http://my.theobald-software.com/index.php?/Knowledgebase/List)
 
 

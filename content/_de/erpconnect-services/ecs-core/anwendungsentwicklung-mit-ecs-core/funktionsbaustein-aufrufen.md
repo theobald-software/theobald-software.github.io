@@ -14,7 +14,7 @@ Im vorigen Beispiel haben wir Daten aus einer SAP-Tabelle mit Hilfe der Function
 Nun wollen wir das Szenario wiederholen, aber einen Funktionsbaustein mit Hilfe der Function tEcs.executeFunction() aufrufen, um SAP-Kundendaten zu lesen.<br>
 Analog wäre es auch möglich, mit einem Funktionsbaustein Daten ins SAP zu schreiben. 
 
-Alle Kenntnisse aus dem vorigen Beispiel [Erste Schritte mit ECS Core und SharePoint Online]() werden hier vorausgesetzt. <br>
+Alle Kenntnisse aus dem vorigen Beispiel [Erste Schritte mit ECS Core und SharePoint Online](./erste-schritte-mit-ecs-core-und-sharepoint-online) werden hier vorausgesetzt. <br>
 In diesem Beispiel werden wir nur den Schritt ändern, um den SAP-Funktionsbaustein aufzurufen. 
 
 

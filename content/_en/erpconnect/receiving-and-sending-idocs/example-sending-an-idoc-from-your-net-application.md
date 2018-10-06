@@ -130,6 +130,6 @@ Console.ReadLine()
 {% endhighlight %}
 </details>
 
-The figures below show the sample program in action. The status code is increased from 3 (Data passed...) to 12 (Dispatch OK). To configure your SAP system please refer to chapter Receiving Order IDocs .
+The figures below show the sample program in action. The status code is increased from 3 (Data passed...) to 12 (Dispatch OK). To configure your SAP system please refer to chapter [Receiving Order IDocs](./example-receiving-an-idoc) .
 
 ![SAP-Send-IDoc-001](/img/content/SAP-Send-IDoc-001.png){:class="img-responsive" width="600px" }

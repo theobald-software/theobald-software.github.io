@@ -52,7 +52,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=systemvoraussetzungen
 
 **Andere Anwendungen und Frameworks**
  	
-- Visual C++ 2005 Runtime. Die Runtime können Sie hier herunterladen.
+- Visual C++ 2005 Runtime. Die Runtime können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=14431) herunterladen.
 - SAP NetWeaver Library
 
 **Arbeitsspeicher**
@@ -69,7 +69,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=systemvoraussetzungen
 
 **Sicherheitseinstellungen**
  	
-- SAP System oder or Dialog-Anwender mit den entsprechenden Authorisierungs-Objekten.
+- SAP System oder or Dialog-Anwender mit den entsprechenden [Authorisierungs-Objekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **Netzwerkeinstellungen**
  	

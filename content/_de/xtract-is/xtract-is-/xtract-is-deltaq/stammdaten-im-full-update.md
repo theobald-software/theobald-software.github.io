@@ -53,4 +53,4 @@ Machen Sie keine Aktivierung für den Delta Update Modus oder den Repeat Modus.
 
 **Um Parameter / Filter** zu setzen, siehe Abschnitt Datasource-Parameter.
   
-Bei Fehlern bitte auf der Seite [DeltaQ Troubleshooting Guide]() (Englisch) nachschlagen.
+Bei Fehlern bitte auf der Seite [DeltaQ Troubleshooting Guide](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/4/deltaq-troubleshooting-guide) (Englisch) nachschlagen.

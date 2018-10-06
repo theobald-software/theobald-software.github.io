@@ -13,13 +13,13 @@ old_url: /ERPConnect-EN/default.aspx?pageid=example-receiving-an-idoc
 **The sample code is located in the ERPConnect installation directory in the SimpleIdocServer directory**
 
  
-The following example shows how to receive a MATMAS IDoc. If you want to learn more about submitting test IDoc from the SAP system, please refer to chapter [Setting Up an Environment for Sending Test IDocs]().
+The following example shows how to receive a MATMAS IDoc. If you want to learn more about submitting test IDoc from the SAP system, please refer to chapter [Setting Up an Environment for Sending Test IDocs](../administration/setting-up-an-environment-for-sending-test-idocs).
 
 As shown in another example (RFC Server) an RFC Server object is needed to accept calls from the SAP system. To receive IDocs with the RFCServer object we need to set the property CanReceiveIdocs to true.
 
 The event IncomingIdoc is fired when an IDoc is received by ERPConnect, so you can use this event to process the IDoc object. The code shows how to initialize and start the RFC Server and how to install the event.
 
-Please also refer to chapter [Connection time-outs](). The same applies for IDoc servers. 
+Please also refer to chapter [Connection time-outs](../rfc-server/connection-time-outs). The same applies for IDoc servers. 
 
 <details>
 <summary>Click to open C# example.</summary>
@@ -68,7 +68,7 @@ A reference to an IDoc object is transferred to the event IncomingIdoc. With the
 
 The first step is to obtain the E2MARAM005 segment. Within this segment, several E2MAKTM001 child segments contain material descriptions. We need to read the data buffer with the ReadDataBuffer method. The description text is located at index 4 with a length of 40. You can use transaction WE60 to look up IDoc structures. All description texts will be written to the console window.
 
-If you do not want to read the data buffer, you can load an XML Schema, please refer to chapter [XML-Support for IDoc programming]().
+If you do not want to read the data buffer, you can load an XML Schema, please refer to chapter [XML-Support for IDoc programming](./xml-support-for-idoc-programming).
 
 <details>
 <summary>Click to open C# example.</summary>

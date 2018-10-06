@@ -20,7 +20,7 @@ During setup several DLLs are copied to special directories to make them work wi
 
 The setup program can also be started without the GUI. If you want to start it that way you have to use the switch /S . Using the switch /D you can set the installation path. 
 
-You can find more settings for the setup on the following website (http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1).
+You can find more settings for the setup on the following website ([http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1)).
 
 **Important:** All switches are case sensitive.
 

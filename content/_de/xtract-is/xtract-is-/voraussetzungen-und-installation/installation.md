@@ -14,7 +14,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 
 Beim Standard Setup führen Sie die Datei XtractISSetup.exe aus und folgen den Anweisungen des Setup-Programms. 
 
-Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen]() beschrieben.
+Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen](./lizenz-einspielen) beschrieben.
 
 Beim Setup werden verschiedene DLLs in bestimmte Verzeichnisse kopiert, damit sie von  den Integration Services verwendet werden können. <br>
 Das Kopieren und Registrieren der DLLs übernimmt das Konsolenprogramm InstallXtractIS.exe automatisch. 

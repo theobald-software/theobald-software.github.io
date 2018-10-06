@@ -15,7 +15,7 @@ This chapter shows how to create a Reporting Services dataset that is based on a
 
 The most important transaction codes for SAP Queries are SQ01/SQ02/SQ03.
 
-To learn more about creating queries in SAP please go to [help.sap.com]().
+To learn more about creating queries in SAP please go to [help.sap.com](https://help.sap.com/viewer/).
 
 ![Queries-001](/img/content/Queries-001.png){:class="img-responsive" }
 

@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=kundenstammblatt-install
 
 **Download**
 
-Die zur Installation benötigten Dateien können Sie als ZIP-File [hier]() herunterladen.
+Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.CustomerFactsheet.zip) herunterladen.
 
 Folgende Dateien werden ausgeliefert: 
 
@@ -25,12 +25,12 @@ Folgende Dateien werden ausgeliefert:
 **Systemvoraussetzungen** 
 
 ERPConnect Services muss auf dem SharePoint Server installiert sein.<br>
-Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen dazu finden Sie auf unserer [Online-Hilfe]().   
+Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen dazu finden Sie auf unserer [Online-Hilfe](../../ecs-de/ecs-runtime/ecs-konfiguration/ecs-application-anlegen).   
 
 
 **Installation des SAP-Transportauftrags**
 
-Ein SAP-Transportauftrag muss auf Ihrem SAP-System eingespielt werden. Nähere Informationen zur Installation von Transportaufträgen finden Sie in unserer [Knowledge base]().
+Ein SAP-Transportauftrag muss auf Ihrem SAP-System eingespielt werden. Nähere Informationen zur Installation von Transportaufträgen finden Sie in unserer [Knowledge base](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
 
 
 **Installation des Solution Packages mit dem Installer**

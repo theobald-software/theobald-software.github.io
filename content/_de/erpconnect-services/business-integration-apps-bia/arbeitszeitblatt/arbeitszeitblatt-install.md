@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=arbeitszeitblatt-install
 
 **Download**
 
-Die zur Installation benötigten Dateien können Sie als ZIP-File [hier]() herunterladen.
+Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.CATS.zip) herunterladen.
 
 Folgende Dateien werden ausgeliefert:
 
@@ -25,7 +25,7 @@ Folgende Dateien werden ausgeliefert:
 ERPConnect Services muss auf dem SharePoint Server installiert sein.<br>
 Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen dazu finden Sie auf unserer Online-Hilfe.   
 
-Zur gesicherten Authentifizierung innerhalb der App wird eine Secure Store Applikation benötigt. Legen Sie diese in der Zentraladministration an. Wie dies funktioniert steht in der [Online Hilfe]().   
+Zur gesicherten Authentifizierung innerhalb der App wird eine Secure Store Applikation benötigt. Legen Sie diese in der Zentraladministration an. Wie dies funktioniert steht in der [Online Hilfe](../../ecs-de/ecs-runtime/ecs-konfiguration/ecs-application-anlegen).   
 
 Berechtigungen: Stellen Sie sicher, dass die user, die im Secure Store hinterlegt sind, ausreichende Berechtigungen besitzen. Sie benötigen sowohl volle Zugriffsrechte auf die Secure Store Service Applikation als auch zumindest lesende Berechtigungen auf die ECS Service Applikation. 
 

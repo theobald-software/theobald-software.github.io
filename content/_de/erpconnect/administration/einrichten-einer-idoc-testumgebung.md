@@ -20,7 +20,7 @@ Um IDocs versenden zu können, benötigen Sie ein logisches System. Dieses richt
 
 **Schritt 2: RFC-Destination einrichten**
 
-Richten Sie jetzt eine RFC-Destination in der Transaktion SM59 ein. Eine genaue Beschreibung finden Sie im Teilkapitel [RFC-Destinationen pflegen]().
+Richten Sie jetzt eine RFC-Destination in der Transaktion SM59 ein. Eine genaue Beschreibung finden Sie im Teilkapitel [RFC-Destinationen pflegen](./rfc-destinationen-pflegen).
 
 **Schritt 3: IDoc-Port anlegen**
 

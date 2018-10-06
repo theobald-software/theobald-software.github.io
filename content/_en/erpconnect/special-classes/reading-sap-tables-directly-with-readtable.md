@@ -115,7 +115,7 @@ Unfortunately following restrictions apply if you read tables with the ReadTable
 - The overall width of the columns to be extracted may not exceed 512 bytes. 
 - Some special tables like TCURR return false values.
 
-If anyone of these cases occur, the table call will throw an exception. To deal with this problem, it is possible to install a Z-module in the SAP system, please see chapter  [Installing the Z-function module]().
+If anyone of these cases occur, the table call will throw an exception. To deal with this problem, it is possible to install a Z-module in the SAP system, please see chapter  [Installing the Z-function module](https://help.theobald-software.com/SAPCustomizing-EN/default.aspx?pageid=table-restrictions).
 
 To enable an installed Z-module, e.g. Z_XTRACT_IS_TABLE, when using the ReadTable class, use the method
 
@@ -126,10 +126,10 @@ Before you open the connection with con.Open(false);
 
 links
 
-Online Help: [Installing the custom function module]()
+Online Help: [Installing the custom function module](https://help.theobald-software.com/SAPCustomizing-EN/default.aspx?pageid=table-restrictions)
 
-KnowledgeBase: [Transferring data packets with ReadTable class]()
+KnowledgeBase: [Transferring data packets with ReadTable class](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/29/28/transferring-data-packets-with-readtable-class)
 
-KnowledgeBase: [Get meta data of a table]()
+KnowledgeBase: [Get meta data of a table](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/45/28/get-meta-data-of-a-table)
 
  

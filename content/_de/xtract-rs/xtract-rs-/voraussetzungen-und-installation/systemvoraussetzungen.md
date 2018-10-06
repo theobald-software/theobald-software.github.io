@@ -28,14 +28,14 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 
 | Komponente    | SAP Release            | Anforderung an das SAP System                                        |
 |---------------|------------------------|----------------------------------------------------------------------|
-| **Table**     | Rel. above 4.0B        | In den meisten Fällen ist die Installation eines Z-Moduls notwendig. |
+| **Table**     | Rel. above 4.0B        | In den meisten Fällen ist die [Installation eines Z-Moduls](../../sap-customizing/funktionsbaustein-fuer-table-komprimierung) notwendig. |
 | **Query**     | Rel. 4.0B und höher.   | Keine.                                                               |
 | **BAPI**      | Rel. 4.0B und höher.   | Keine.                                                               |
-| **Report**    | Rel. 4.0B und höher.   | Installation eines Z-Moduls ist notwendig.                           |
+| **Report**    | Rel. 4.0B und höher.   | [Installation eines Z-Moduls](../../sap-customizing/funktionsbaustein-fuer-table-komprimierung) ist notwendig.                           |
 | **BW Cube**   | Rel. BW 3.1 und höher. | Keine.                                                               |
 | **Hierarchy** | Rel. BW 3.1 und höher. | Keine.                                                               |
-| **OHS**       | Rel. BW 3.5 und höher. | Customizing.                                                         |
-| **DeltaQ**    | Rel. 4.6A und höher.   | Customizing.                                                         |
+| **OHS**       | Rel. BW 3.5 und höher. | [Customizing](../../sap-customizing/vorbereitung-fuer-ohs-im-bw).                                                         |
+| **DeltaQ**    | Rel. 4.6A und höher.   | [Customizing](../../sap-customizing/vorbereitung-fuer-ohs-im-bw).                                                         |
 
 **Betriebssystem**
  	
@@ -51,9 +51,9 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 
 **Andere Anwendungen und Frameworks**
  	
-- Visual C++ 2005 Runtime. Die Runtime können Sie [hier]() herunterladen.
-- .NET Framework 3.0 oder höher. Das Famework können Sie [hier]() herunterladen.
-- Librfc32.dll falls SAP GUI nicht installiert ist. Einen Download-Link finden Sie [hier]().
+- Visual C++ 2005 Runtime. Die Runtime können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=14431) herunterladen.
+- .NET Framework 3.0 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=21) herunterladen.
+- Librfc32.dll falls SAP GUI nicht installiert ist. Einen Download-Link finden Sie [hier](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/54/9/useful-links).
 
 **Arbeitsspeicher**
  	
@@ -71,7 +71,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
  	
 - Benutzerauthentifizierung.
 - SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
-- SAP System oder or Dialog-Anwender mit entsprechenden [Berechtigungsobjekten]().
+- SAP System oder or Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **Netzwerkeinstellungen**
  	

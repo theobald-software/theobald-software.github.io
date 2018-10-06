@@ -19,7 +19,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 - SQL Server 2016
 - SQL Server 2017
 - SQL Server Integration Services (SSIS)
-- Für die Entwicklung: Die entsprechende Visual Studio Version (außer der Express-Version) für Business Intelligence zur Erstellung von SSIS-Paketen. Siehe [Liste der unterstützen Versionen von SSIS & VS](). 
+- Für die Entwicklung: Die entsprechende Visual Studio Version (außer der Express-Version) für Business Intelligence zur Erstellung von SSIS-Paketen. Siehe [Liste der unterstützen Versionen von SSIS & VS](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/147/0/list-of-the-ssisvs-versions-supported-by-xtract-is). 
 
 **SAP Releases**
  	
@@ -58,7 +58,7 @@ wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
 
 **Benutzerberechtigungen**
  	
-SAP System oder Dialog-Anwender mit den entsprechenden Berechtigungsobjekten.
+SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **SAP-Lizenzen**
 
@@ -81,7 +81,7 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 **Andere Anwendungen und Frameworks**
  	
 - bis SSIS 2008: .NET Framework 3.5 SP1
-- ab SSIS 2012: .NET Framework 4.5.2 oder höher. Das Famework können Sie hier herunterladen.
+- ab SSIS 2012: .NET Framework 4.5.2 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/de-de/download/details.aspx?id=42643) herunterladen.
 
 **Arbeitsspeicher**
  	

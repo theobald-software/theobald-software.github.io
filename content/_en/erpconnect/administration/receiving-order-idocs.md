@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=receiving-order-idocs
 ---
 
-The sample program in Chapter [Sending an ORDER IDoc]() shows how to send an ORDER IDoc. The two steps below show how to customize your SAP system for processing the IDoc and creating a sales order.
+The sample program in Chapter [Sending an ORDER IDoc](../receiving-and-sending-idocs/example-sending-an-idoc-from-your-net-application) shows how to send an ORDER IDoc. The two steps below show how to customize your SAP system for processing the IDoc and creating a sales order.
 
 **Step 1: Define Partner Profiles**
 

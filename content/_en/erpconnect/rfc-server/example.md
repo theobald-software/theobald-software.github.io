@@ -14,7 +14,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-example
 
 The example below shows a simple task. An ABAP program should add two numbers with the help of a function module. The two imports NUMBER1 and NUMBER2 are added and passed back to the calling program via the export RES.  
   
-The code shows how to initialize an RFCServer object by providing the gateway host, the gateway service and the program ID to register on the SAP gateway (you may also refer to [Maintaining RFC Destinations](/link)).
+The code shows how to initialize an RFCServer object by providing the gateway host, the gateway service and the program ID to register on the SAP gateway (you may also refer to [Maintaining RFC Destinations](../administration/maintaining-rfc-destinations)).
   
 After registering the RFCServer object at the SAP gateway, there is an RFCServerFunction object registered with the help of the _.RegisteredFunctions.Add_ method. The imports and exports must be handled the same way as when calling RFC functions as a client. An RFCServer object can, of course, hold more than one RFCServerFunction object.  
   

@@ -21,7 +21,7 @@ Gibt die maximale Anzahl der extrahierten Datensätze an. 0 steht für unlimitie
 Gibt die Anzahl der Datensätze an, die pro Paket geschickt werden werden. Welche Werte in Ihrem Fall optimal sind, hängt von Ihrer Infrastruktur ab. Erfahrungsgemäß ist bei sehr großen Datenmengen eine Package Size zwischen 15000 und 50000 sinnvoll. 0 bedeutet, es findet keine Paketierung statt. Dies kann bei großen Datenextrakten zu einem RFC-Timeout führen.
 
 **Custom Function**<br>
-Der Name der kundeneigenen Funktion (siehe [Einschränkungen]()). <br>
+Der Name der kundeneigenen Funktion (siehe [Einschränkungen](./einschraenkungen)). <br>
 Es wird empfohlen, den Funktionsbaustein Z_XTRACT_IS_TABLE_COMPRESSION zu nutzen, siehe die Option **Data Compression**. <br>
 Optional steht noch der alte Funktionsbaustein Z_XTRACT_IS_TABLE zur Verfügung. 
 

@@ -24,19 +24,19 @@ Das initiale Benutzer/Passwort-Paar lautet admin/admin. Ändern Sie es am besten
 
 Es stehen folgende Dienste auf der Management Site zur Verfügung:
 
-**[Services]()**
+**[Services](./ecscore-service-applikation)**
 
 Hier erstellen und verwalten Sie ECS Service-Applikationen.
 
-**[Secure Stores]()**
+**[Secure Stores](./ecscore-secure-store)**
 
 Hier werden die Einstellungen für Secure Stores verwaltet.
 
-**[Extensions]()**
+**[Extensions](./extensions)**
 
 Hier lassen sich benutzerdefinierte Module/Erweiterungen hinzufügen.
 
-**[Settings]()**
+**[Settings](./settings)**
 
 Hier lassen sich Lizenzen hinzufügen, ECSCore Administratoren festlegen, API Schlüssel verwalten und der Azure Service Bus konfigurieren.
 

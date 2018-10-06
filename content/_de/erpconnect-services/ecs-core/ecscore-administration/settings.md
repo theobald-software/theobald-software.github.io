@@ -13,8 +13,8 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=settings
 
 Im Settings Menü können Sie Einstellungen zu folgenden Punkten vornehmen:
 
-- [License]() (Lizenz)
-- [Administrators]() (Administratoren)
+- [License](license) (Lizenz)
+- [Administrators](administrators) (Administratoren)
 - API Schlüssel (API Keys)
 - Azure Service Bus
 
