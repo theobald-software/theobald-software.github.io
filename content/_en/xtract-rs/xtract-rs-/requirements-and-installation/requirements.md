@@ -28,14 +28,14 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=requirements
 
 | Component | SAP Release       | Requirements to the SAP system                                                    |
 |-----------|-------------------|-----------------------------------------------------------------------------------|
-| Table     | Rel.above 4.0B    | For most tasks, the installation of a [Z-module]() is necessary, but not for all. |
+| Table     | Rel.above 4.0B    | For most tasks, the installation of a [Z-module](../../sap-customizing/custom-function-module-for-table-compression) is necessary, but not for all. |
 | Query     | Rel. above 4.0B   | Nothing.                                                                          |
 | BAPI      | Rel. above 4.0B   | Nothing.                                                                          |
-| Report    | Rel. above 4.0B   | [Installation of a Z-module is necessary]()                                       |
+| Report    | Rel. above 4.0B   | [Installation of a Z-module is necessary](../../sap-customizing/install-report-custom-function-module)                                       |
 | BW Cube   | Rel. above BW 3.1 | Nothing.                                                                          |
 | Hierarchy | Rel. above BW 3.1 | Nothing.                                                                          |
-| OHS       | Rel. above BW 3.5 | [Customizing]().                                                                  |
-| DeltaQ    | Rel. above 4.6A   | [Customizing]().                                                                  |
+| OHS       | Rel. above BW 3.5 | [Customizing](../../sap-customizing/preparation-for-ohs-in-bw).                                                                  |
+| DeltaQ    | Rel. above 4.6A   | [Customizing](../../sap-customizing/customizing-for-deltaq).                                                                  |
 
 
 **Operating System**
@@ -53,9 +53,9 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=requirements
 
 **Other Applications and Frameworks**
  	
-- Visual C++ 2005 Runtime. You can get it here.
-- .NET Framework 3.0 or higher. You can get it here.
-- Librfc32.dll if no SAP GUI is installed. A downloadlink you will find here.
+- Visual C++ 2005 Runtime. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=14431).
+- .NET Framework 3.0 or higher. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=21).
+- Librfc32.dll if no SAP GUI is installed. A downloadlink you will find [here](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/54/9/useful-links).
 
 **Memory**
  	
@@ -73,7 +73,7 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=requirements
  	
 - Custom authentication.
 - SAP authentication: SSO (Single Sign On) or SAP credentials.
-- SAP system or dialog user with appropriate authority objects.
+- SAP system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **Network Settings**
  	

@@ -18,7 +18,7 @@ The WHERE clause must comply with the SAP OpenSQL syntax.
 - The Where clause must not contain any line break (return key).
 
 You will find more information about the OpenSQL syntax on the SAP help site:<br>
-[http://help.sap.com/saphelp_470/helpdata/de/fc/eb3a1f358411d1829f0000e829fbfe/frameset.htm]()
+[http://help.sap.com/saphelp_470/helpdata/de/fc/eb3a1f358411d1829f0000e829fbfe/frameset.htm](http://help.sap.com/saphelp_470/helpdata/de/fc/eb3a1f358411d1829f0000e829fbfe/frameset.htm)
 
 Values must have the internal SAP representation:
 
