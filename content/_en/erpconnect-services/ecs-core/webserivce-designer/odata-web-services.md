@@ -43,7 +43,7 @@ Important note: You may notice that in the *Parameters* section you have no opti
 
 You have to do the parameter mapping with the above created Custom Data Type which is available as a structure parameter in the *Parameters* section.
 
-Open the *Execute Function* activity and scroll down to input table REQUISITION_ITEMS. Click through the mapping dialog until you get to the mapping table. Do the mapping manually for parameters  **DOC_TYPE, MATERIAL, PLANT, QUANTITY, DELIV_DATE** and **ACCTASSCAT**. The mapping of structure parameters to table fields is described in detail [here]().
+Open the *Execute Function* activity and scroll down to input table REQUISITION_ITEMS. Click through the mapping dialog until you get to the mapping table. Do the mapping manually for parameters  **DOC_TYPE, MATERIAL, PLANT, QUANTITY, DELIV_DATE** and **ACCTASSCAT**. The mapping of structure parameters to table fields is described in detail [here](../../ecs/webservice-designer/input-parameter-mapping/structure-parameters).
 
 
 ![ecscore-webservices13](/img/content/ecscore-webservices13.png){:class="img-responsive"} 

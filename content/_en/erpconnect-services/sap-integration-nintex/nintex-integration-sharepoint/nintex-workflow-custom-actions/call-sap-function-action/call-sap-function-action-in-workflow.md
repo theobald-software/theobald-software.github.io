@@ -19,7 +19,7 @@ After adding the Custom Action to the workflow you have to configure it. Select 
 
 ![ECS-Nintex-CallSAPFunction-Action3](/img/content/ECS-Nintex-CallSAPFunction-Action3.png){:class="img-responsive"}
 
-In the configuration screen you first have to select the ERPConnect Service Application for your SAP system in the dropdown list. The ERPConnect Service Application must be created in the Central Administration: Creating an [ECS Service Application]() 
+In the configuration screen you first have to select the ERPConnect Service Application for your SAP system in the dropdown list. The ERPConnect Service Application must be created in the Central Administration: Creating an [ECS Service Application](../../../../ecs/configuration/creating-an-ecs-service-app) 
 
 In the *SAP Function* field you have to define the SAP function module or BAPI which should be called. You can use the *Search* button to search for BAPIS/function modules on your SAP system.
 
@@ -63,7 +63,7 @@ With the *Plus* button you can add additional rows and equip them with data prov
 
 *Additional XML table Input*
 
-With *Additional XML table input* you can add an additional input in XML format to one ore more SAP Input table. The XML table input has to be stored in a workflow variable. Further information about the structure of the XML statement can be found in the example [Call SAP Function Action with additional XML-Input](). 
+With *Additional XML table input* you can add an additional input in XML format to one ore more SAP Input table. The XML table input has to be stored in a workflow variable. Further information about the structure of the XML statement can be found in the example [Call SAP Function Action with additional XML-Input](./call-sap-function-action-with-additional-xml-input). 
 
 
 ![ECS-Nintex-CallSAPFunction-Action14](/img/content/ECS-Nintex-CallSAPFunction-Action14.png){:class="img-responsive"}

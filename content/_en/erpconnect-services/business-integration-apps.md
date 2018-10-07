@@ -26,7 +26,7 @@ At the moment Theobald Software already provides a number of Business Integratio
 - Leave Request (for employees and managers)
 - Customer Factsheet
 - CATS
-- [Travel Requests and Travel Expenses with Nintex Workflow] 
+- [Travel Requests and Travel Expenses with Nintex Workflow](./sap-integration-nintex/nintex-integration-sharepoint/using-call-sap-function-action/travel-request-expense-report/) 
 
 The above listed applications are ready-to-use templates that demonstrate the possibilities of application development with ERPConnect Services and ERPConnect Services Runtime respectively. Feel free to customize or enhance the applications to your individual needs or to develop your own Business Integration Apps.
 

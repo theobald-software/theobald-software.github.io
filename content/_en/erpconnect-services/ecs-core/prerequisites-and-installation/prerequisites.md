@@ -47,7 +47,7 @@ SAP systems on HANA particularly are supported without any restrictions.
 **SAP Authentication**
 
 - Custom authentication.
-- SAP system or dialog user with appropriate authority objects.
+- SAP system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **Ports**
 

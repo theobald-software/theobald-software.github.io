@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=stockinfo-installation
 
 **Download**
 
-You can download the installation files [here](). 
+You can download the installation files [here](https://my.theobald-software.com/files/ECS/Theobald.StockInfo.zip). 
 
 The following files are delivered: 
 
@@ -26,16 +26,16 @@ Note:
 
 We do not deliver installer packages for SharePoint 2010. The required WSP package has to be installed manually via Management Shell. 
 
-You can download the WSP package for SP2010 and the SAP transport request as a ZIP-file [here]().
+You can download the WSP package for SP2010 and the SAP transport request as a ZIP-file [here](https://my.theobald-software.com/files/ECS/Theobald.StockInfoSP2010.zip).
 
 **System requirements** 
 
 ERPConnect Services must be installed on the SharePoint Server.<br>
-An ECS Service Application must be created, for more information refer to our [online help]().
+An ECS Service Application must be created, for more information refer to our [online help](../../ecs/configuration/creating-an-ecs-service-app).
 
 **Installing the SAP transport** 
 
-The SAP transport request must be installed in SAP. For more information about the installation of the transport request check our [Knowledgebase]().
+The SAP transport request must be installed in SAP. For more information about the installation of the transport request check our [Knowledgebase](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
 
 **Installation of the solution package using the installer** 
 

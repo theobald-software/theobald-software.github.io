@@ -142,8 +142,8 @@ NWF$(document).ready(function() {
 });
 {% endhighlight %}
 
-For more information see [JavaScript Library for REST]().<br>  
-You can also realize this example with ECS Core (see [Developing with ECS Core]()).
+For more information see [JavaScript Library for REST](../../ecs/erpconnect-services-runtime/web-services/javascript-library).<br>  
+You can also realize this example with ECS Core (see [Developing with ECS Core](../../ecs-core/ecs-core-developing/)).
 
 **Step 3: Run the Nintex Form**
 

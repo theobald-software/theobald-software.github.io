@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=configure_the_nwc_workflow
 
 Create a new NWC workflow. The newly created custom connector is located on the lefthand side among the standard connectors. You can change the order of the actions in the NWC settings under *Action and connector sorting*.
 
-*PurchaseRequisiton* is the name of the web service operation previously created in the [WebService Designer](). Optional: The other actions displayed in the custom connector are generic functions that can additionally be created by checking the *Add default actions to the definition* option in the WebService Designer's OpenAPI Options.  
+*PurchaseRequisiton* is the name of the web service operation previously created in the [WebService Designer](../../ecs-core/webserivce-designer/rest-web-services). Optional: The other actions displayed in the custom connector are generic functions that can additionally be created by checking the *Add default actions to the definition* option in the WebService Designer's OpenAPI Options.  
 
 Drag & drop the *PurchaseRequisition* action to the designer and open the configuration screen by clicking on the connector: 
 
@@ -21,7 +21,7 @@ Drag & drop the *PurchaseRequisition* action to the designer and open the config
 You will find the following configuration fields there:
 
 **Connection**<br>
-Select the connection to your SAP system here. How to create a new connection is described [here](). 
+Select the connection to your SAP system here. How to create a new connection is described [here](./create-a-new-connection). 
 
 **Custom Service Application**<br>
 You can explicitly define here which service application from ECS Core for the SAP connection is used. If you have neither selected a service application in the WebService designer nor in this section the default service application is used. 
@@ -33,7 +33,7 @@ Scalar input parameters are displayed as single values whereas complex parameter
 **Output parameters**<br>
 The web service's output parameters correspond to the web service's response body. 
 
-Input and output parameters can either be filled with fixed values directly in the configuration screen (this only applies to scalar parameters) or mapped to workflow variables.  
+Input and output parameters can either be filled with fixed values directly in the configuration screen (this only applies to scalar parameters) or mapped to workflow variables.  <br>
 Depending on if the option *Use variable names as "title" names* was selected in the OpenAPI settings, the parameters will be listed with the full technical path (i.e. result error message) or abbreviated (i.e. error message).
 
 *Configuration of the connector*

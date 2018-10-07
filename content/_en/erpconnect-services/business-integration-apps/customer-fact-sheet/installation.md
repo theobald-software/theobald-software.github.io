@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=cfs-installation
 
 **Download**
 
-You can download the installation files [here](). 
+You can download the installation files [here](https://my.theobald-software.com/files/ECS/Theobald.CustomerFactsheet.zip). 
 
 The following files are delivered: 
 
@@ -27,11 +27,11 @@ The following files are delivered:
 **System requirements** 
 
 ERPConnect Services must be installed on the SharePoint Server.
-An ECS Service Application must be created, for more information refer to our [online help]().
+An ECS Service Application must be created, for more information refer to our [online help](../../ecs/configuration/creating-an-ecs-service-app).
 
 **Installing the SAP transport** 
 
-A SAP transport request must be installed in SAP. For more information about the installation of the transport request check our [Knowledgebase]().
+A SAP transport request must be installed in SAP. For more information about the installation of the transport request check our [Knowledgebase](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
 
 **Installation of the solution package using the installer**
 

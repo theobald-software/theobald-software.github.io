@@ -18,4 +18,4 @@ You will then create a new Entity. Select the SAP table or function module that 
 Add the desired operations for the entity, in this example we will add the Read Data Record, Read Data and Create Data Record operations.
 Save the model to SharePoint.
 
-You can download the [BCS]() Model. Be sure to set the connections (SharePoint and SAP).
+You can [download](/img/SAP-Material-Model-Public.zip) the Model. Be sure to set the connections (SharePoint and SAP).

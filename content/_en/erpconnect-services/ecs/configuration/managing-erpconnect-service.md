@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-creating-secure-store-a
 
 In *Central Administration* you will find the *ERPConnect Services* group with the following functions:
 
-- *Manage Licenses* (also see [Installing a License]())
+- *Manage Licenses* (also see [Installing a License](../requirements-and-installation/installing-a-license))
 - *Manage Objects*
 - *Test Application Proxy*
 - *Version History*

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Administration
-description: Administration
+title: Management Site
+description: Management Site
 product: erpconnect-services
 parent: administration
 permalink: /:collection/:path

@@ -20,4 +20,4 @@ In the cases above, a read table access will generate an exception. To avoid thi
 
 In order for ERPConnect Services to utilize the installed custom function module (e.g. Z_XTRACT_IS_TABLE) instead of the standard SAP function module, you will use the CustomFunction property of the ExecuteTableQuerySettings class.
 
-For information on how to install the custom function module Z_XTRACT_IS_TABLE see [SAP Customizing - Table Restrictions](). 
+For information on how to install the custom function module Z_XTRACT_IS_TABLE see [SAP Customizing - Table Restrictions](../../../sap-customizing/table-restrictions). 

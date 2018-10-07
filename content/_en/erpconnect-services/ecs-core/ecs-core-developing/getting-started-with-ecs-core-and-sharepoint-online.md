@@ -21,9 +21,9 @@ This samples requires the following:
 - An Office 365 Developer Site in an Office 365 domain and the rights to create and install a Napa-App.
 - A Service Bus instance in the Azure Management Portal.
 - An ECS Core Instance installation and configuration, in particular:  
-		- Create a Service Application (i.e. SAP Connection), refer to Services.<br> 
-		- Generate an API Key, refer to API Keys.<br>
-		- Add a Service Bus registration, refer to Azure Service Bus. <br>
+		- Create a Service Application (i.e. SAP Connection), refer to [Services](../administration/services).<br> 
+		- Generate an API Key, refer to [API Keys](../administration/settings/api-keys).<br>
+		- Add a Service Bus registration, refer to [Azure Service Bus](../access-via-azure-service-bus/azure-service-bus-settings). <br>
 
 *Remark*: Other middleware software or tools like e.g. SAP Gateway or SAP Gateway for Microsoft are not needed for this scenario. 
 
@@ -96,9 +96,9 @@ Let us put the basic code to call SAP through AzureBus and ECS Core:
 - connection.ecs.url consists of Azure Service Bus name for ECS Core
 The 'data'-field contains the SAP statement (using XtractQL) to get the German and English material description from the SAP table MAKT. 
 
-A table is used to display the result. 
-For more information about the code to connect SAP and extract the data refer to the online help and to our JavaScript library [tEcs].
-In this sample we read data from an SAP table. To execute an SAP function module check the following section [Executing an SAP function]. 
+A table is used to display the result. <br>
+For more information about the code to connect SAP and extract the data refer to the online help and to our JavaScript library [tEcs](http://static.theobald-software.com/theobald.ecs.micro/5.4.2/).<br>
+In this sample we read data from an SAP table. To execute an SAP function module check the following section [Executing an SAP function](./executing-an-sap-function). 
 
 **Step 4: Run the app**
 

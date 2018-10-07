@@ -39,4 +39,4 @@ XQL queries return a table as result set. For SAP function modules, you have to 
 XtractQL can be very useful for dynamic queries which are constructed at runtime. 
 
 
-Please refer to the section [XtractQL]() to find more samples and a complete syntax reference. 
+Please refer to the section [XtractQL](../../xtractql) to find more samples and a complete syntax reference. 

@@ -40,6 +40,6 @@ Select all records from table MARA. In SAP, the XQL query is executed using the 
 SELECT * FROM MARA WITH-OPTIONS(CUSTOMFUNCTIONNAME = 'Z_XTRACT_IS_TABLE')
 {% endhighlight %}
 
-In the section Table restrictions you can find more information about the restrictions and how to install the custom function module 
+In the section [Table restrictions](../erpconnect-services-runtime/appendix/table-restrictions) you can find more information about the restrictions and how to install the custom function module 
 Z_XTRACT_IS_TABLE to avoid them. 
 

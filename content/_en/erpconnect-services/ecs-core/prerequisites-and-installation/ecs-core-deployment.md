@@ -86,4 +86,4 @@ Press *Finish* to let the DM Wizard complete the configuration.
 ![Deployment-Manager-05](/img/content/Deployment-Manager-05.jpg){:class="img-responsive"}
 
 After this step the Websites should be ready and functional. You can open them from the IIS Manager. 
-Check [Management Site]() and [Services Site](). 
+Check [Management Site](../administration/management-site) and [Services Site](../administration/services-site). 

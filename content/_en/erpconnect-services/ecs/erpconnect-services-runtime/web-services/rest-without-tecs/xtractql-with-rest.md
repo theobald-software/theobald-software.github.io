@@ -77,6 +77,6 @@ For the execute statement a @RETVAL parameter must be defined.
 
 **Example with RESTClient**
 
-[RESTClient]() is an add-on for many browsers that enables you to call REST Services. The following screenshot shows how to execute an XtractQL statement using the ECS REST services. 
+[RESTClient](http://restclient.net/) is an add-on for many browsers that enables you to call REST Services. The following screenshot shows how to execute an XtractQL statement using the ECS REST services. 
 
 ![ECS-RESTClient-XQL](/img/content/ECS-RESTClient-XQL.png){:class="img-responsive" }

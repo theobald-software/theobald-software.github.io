@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=troubleshooting
 
 **Error when setting up the SharePoint connection**
 
-If error messages are displayed when setting up the SharePoint connection it has often something to do with permission settings. In case off error messages first check, whether the executing user has full permission rights to SharePoint Central Administration Site and Business Connectivity Services. A detailed description of configuring BCS permissions you find [here]().  
+If error messages are displayed when setting up the SharePoint connection it has often something to do with permission settings. In case off error messages first check, whether the executing user has full permission rights to SharePoint Central Administration Site and Business Connectivity Services. A detailed description of configuring BCS permissions you find [here](./sharepoint-configuration/setting-bcs-permissions).  
  
 Other possible causes:
 

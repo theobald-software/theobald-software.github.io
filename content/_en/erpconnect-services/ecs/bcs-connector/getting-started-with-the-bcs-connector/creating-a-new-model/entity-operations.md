@@ -28,8 +28,8 @@ n the *New Method* dialog, specify the type of method that you want to create:
 
 For further information on creating entity operations, refer to the following examples:
 
-[Function Entity Example]()
-[Creating a CRUD Solution]()
+[Function Entity Example](../function-entity-example)
+[Creating a CRUD Solution](../../advanced-solutions/read-write-access/)
 
 Select the Edit button to make changes to an existing entity operation.
 
@@ -37,7 +37,7 @@ The *Edit Method* dialog will show the type and the SAP object for the method. Y
 
 The dialog will show the *Input Parameters* for the method with the mappings to the entity properties.
 
-The dialog will show the *Return Parameters* for the method as well as any *Filters* that are defined for the method. For further information see [Filters]().
+The dialog will show the *Return Parameters* for the method as well as any *Filters* that are defined for the method. For further information see [Filters](./filters).
 
 ![BCS-Generic-Edit-Method](/img/content/BCS-Generic-Edit-Method.png){:class="img-responsive"}
 

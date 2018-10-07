@@ -91,6 +91,6 @@ $(document).ready(function () {
 
 **Example with RESTClient**
 
-[RESTClient]() is an add-on for many browsers that enables you to call REST Services. The following screenshot shows how to extract data from an SAP Table using the ECS REST services. 
+[RESTClient](http://restclient.net/) is an add-on for many browsers that enables you to call REST Services. The following screenshot shows how to extract data from an SAP Table using the ECS REST services. 
 
 ![ECS-RESTClient-Table](/img/content/ECS-RESTClient-Table.png){:class="img-responsive" }

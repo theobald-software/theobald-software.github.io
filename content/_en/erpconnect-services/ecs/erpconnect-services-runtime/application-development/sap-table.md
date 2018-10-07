@@ -28,5 +28,5 @@ RowCount = 10
 
 **Table Restrictions** 
 
-In the section [Table restrictions]() you can find more information about the restrictions and how to install the custom function module 
+In the section [Table restrictions](../appendix/table-restrictions) you can find more information about the restrictions and how to install the custom function module 
 Z_XTRACT_IS_TABLE to avoid them. 

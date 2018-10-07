@@ -20,7 +20,7 @@ The installation/implementation of both scenarios involves the following steps:
 
 **Files available for download**
 
-The following files necessary for the implementation of the scenarios are bundled in this [ZIP]()-file. 
+The following files necessary for the implementation of the scenarios are bundled in this [ZIP](https://my.theobald-software.com/files/TravelScenarioFiles.zip)-file. 
 
 - SharePoint list import files
 - Nintex User Defined Actions import files
@@ -28,6 +28,6 @@ The following files necessary for the implementation of the scenarios are bundle
 - Nintex Workflow files
 - SAP custom function modules transport files 
 
-Further information about importing SAP custom function modules you find in the following [knowledgebase article]().  
+Further information about importing SAP custom function modules you find in the following [knowledgebase article](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).  
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

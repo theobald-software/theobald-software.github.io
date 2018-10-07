@@ -10,6 +10,8 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=reading-sap-tables-directly-with-readtable
 ---
 
+**The sample code is located in the ERPConnect installaltion directory in the ReadSAPTable directory**
+
 A recurrent task in daily work with SAP and .Net applications is to read directly from tables of the SAP system. You can use the ReadTable class to manage this demand.
 
 The sample below shows how to select data from the table. The result is passed back via an easy-to-use ADO.NET table object.
@@ -37,13 +39,14 @@ class Class1
         {
             con.Open(false);
             ReadTable table = new ReadTable(con); 
-            table.TableName = "MAKT"; 
             table.AddField("MATNR"); 
             table.AddField("MAKTX"); 
-            table.WhereClause("SPRAS = 'EN' AND MATNR LIKE '%23'");
-            table.RowCount = 10;  // For testing purposes we limit the Row Count to 10, for real run, please remove this line
+            table.AddCriteria("SPRAS = 'EN'");
+            table.AddCriteria("AND MATNR LIKE '%23'");
+            table.TableName = "MAKT"; 
+            table.RowCount = 10; 
          
-            table.Run();   // This runs the table extraction
+            table.Run(); 
          
             DataTable resulttable = table.Result; 
          
@@ -80,14 +83,16 @@ Module Module1
          
           Dim table As New ReadTable(con) 
          
-          table.TableName = "MAKT"
           table.AddField("MATNR") 
           table.AddField("MAKTX") 
-          table.WhereClause("SPRAS = 'EN' AND MATNR LIKE '%23'")
+          table.AddCriteria("SPRAS = 'EN'")
+          table.AddCriteria("AND MATNR LIKE '%23'")
+                  
+          table.TableName = "MAKT"
          
-          table.RowCount = 10 // For testing purposes we limit the Row Count to 10, for real run, please remove this line
+          table.RowCount = 10 
          
-           table.Run() // This runs the table extraction
+           table.Run() 
          
            Dim resulttable As DataTable resulttable = table.Result 
          
@@ -120,9 +125,6 @@ If anyone of these cases occur, the table call will throw an exception. To deal 
 To enable an installed Z-module, e.g. Z_XTRACT_IS_TABLE, when using the ReadTable class, use the method
 
 ReadTable.SetCustomFunctionName("Z_XTRACT_IS_TABLE"). 
-
-Before you open the connection with con.Open(false);
-
 
 links
 
