@@ -11,6 +11,6 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=powerbi_desktop
 ---
 
-In this section we will describe how to extract SAP data to PowerBI Desktop using the [OData]() Destination.
+In this section we will describe how to extract SAP data to PowerBI Desktop using the [OData](./odata) Destination.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

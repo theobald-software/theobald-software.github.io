@@ -25,7 +25,7 @@ When using variables be sure that the ampersand (&) is preceded by the escape ch
 
 **Predefined Variables**
 
-See predefined variables under [Extraction Parameters](). 
+See predefined variables under [Extraction Parameters](./extraction-parameters). 
 
 **Server output**<br> 
 When the extraction is executed, then the server will return the timestamp as result. 
@@ -91,7 +91,7 @@ You can use this tool to run the extractions with a task scheduler. For a sample
 The following PowerShell script shows how to execute an extraction using the command tool. 
 The extraction has a dynamic variable that can be set in PowerShell. 
 
-Check our [Blog]() about using Xtract Universal with PowerShell for further scripts and examples.
+Check our [Blog](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/) about using Xtract Universal with PowerShell for further scripts and examples.
 
 <details>
 <summary>PowerShell Script.</summary>
@@ -169,4 +169,4 @@ write-host $errorMessage
 </details>
 
 See also  <br>
-[How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer]()
+[How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/148/0/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)

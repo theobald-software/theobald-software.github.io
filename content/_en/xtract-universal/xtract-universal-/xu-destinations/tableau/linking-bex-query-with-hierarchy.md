@@ -30,7 +30,7 @@ Check the General Settings to get a *Natural* representation of the BW hierarchy
 
 ![XU-Tableau-Hierarchy-Settings](/img/content/XU-Tableau-Hierarchy-Settings.jpg){:class="img-responsive"}
 
-For more information refer to [Define a Hierarchy Extraction]().
+For more information refer to [Define a Hierarchy Extraction](../../bw-hierarchies/hierarchy-extraction-define).
 
 **Step 3**: Load both extractions into Tableau and create a relation between them. 
 
@@ -50,4 +50,4 @@ The data sources are now linked and you can blend data from both data sources on
 
 ![Tableau-Linked-Data-Sources](/img/content/Tableau-Linked-Data-Sources.jpg){:class="img-responsive"}
 
-For more information about defining relationships refer to [Tableau Online Help]().
+For more information about defining relationships refer to [Tableau Online Help](https://www.tableau.com/support/help).

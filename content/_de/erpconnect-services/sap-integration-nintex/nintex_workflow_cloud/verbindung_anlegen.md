@@ -21,7 +21,6 @@ Klicken Sie auf *Connections* und *Add new*, um eine neue Verbindung anzulegen u
 Geben Sie der Verbindung einen Namen und fügen Sie einen gültigen API Key in folgender Form ein:
 APIKEY [BASE64 verschüsselter ECS Core API Key]
 
-
 Beispiel: APIKEY QjGCMTMxMjE0MTA3NDhCMUE5MUNZTzAyQjBDRTg1OUP= (vgl. Verbindungseinstellungen mit API Key in [Webservice Authentifizierung](../../ecs-core/webservices/webservice_auhtentifizierung))
 
 ![ecscore-nwc_9](/img/content/ecscore-nwc_9.png){:class="img-responsive"}

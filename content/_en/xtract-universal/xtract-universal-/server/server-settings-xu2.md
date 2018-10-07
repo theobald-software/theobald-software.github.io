@@ -45,7 +45,7 @@ It allows you to configure HTTP, HTTPS or both protocol types. The run statement
 
 If you want to receive data via HTTPS you have to install a SSL-Certificate on the server that should manage the HTTPS-port. This certificate must contain the hostname of the server in the common name (CN) attribute and must be released by a certified authority. 
 
-If you want to get further information please have a look at our [blog]().
+If you want to get further information please have a look at our [blog](https://blog.theobald-software.com/2011/01/20/how-to-use-xtract-with-https/).
 
 
 **ListenerPort** <br>
@@ -62,4 +62,4 @@ Defines the port number, where the server receives the HTTPS request of an extra
 
 The buffer is used for temporary storage of the extraction results. An extraction is identified by its name. Calling an extraction with new parameters will re-fetch the result from the SAP system.
 
-The description of the security settings defined on the security tab you will find in the chapter [Server Security]().
+The description of the security settings defined on the security tab you will find in the chapter [Server Security](../security-xu2/server-security).

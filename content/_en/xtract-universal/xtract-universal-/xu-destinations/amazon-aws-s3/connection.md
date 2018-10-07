@@ -16,8 +16,8 @@ The following settings can be made when setting up an AWS S3 connection.
 ![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.jpg){:class="img-responsive"}
 
 **Access key ID and Secret key**<br>
-This is how you authenticate against Amazon AWS. You can determine these values via AWS Identiy and Access Managment ([IAM]()).
-Please see [AWS documentation]() for further information.
+This is how you authenticate against Amazon AWS. You can determine these values via AWS Identiy and Access Managment ([IAM](https://console.aws.amazon.com/iam/home#/home)).
+Please see [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for further information.
 
 **Connect**<br>
 After entering Access key ID and Secret key, click on the Connect button. After successfully connecting you can select bucket name and region.
@@ -37,13 +37,13 @@ NOTE: This is no transport encyption between Xtract Universal and S3.
 Sever sided encryption of data not active.
 
 - **SSE-S3**<br>
-Encrypts data using the by default available S3 user account encryptiong key ([S3 Managed Encryption Keys]()).
+Encrypts data using the by default available S3 user account encryptiong key ([S3 Managed Encryption Keys](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html)).
 
 - **SSE-KMS und Key ID**<br>
-Encryption using a custom encrpytion key created on AWS ([AWS Key Management Services]()). You can create the key from [here]()
+Encryption using a custom encrpytion key created on AWS ([AWS Key Management Services](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingKMSEncryption.html)). You can create the key from [here](https://console.aws.amazon.com/iam/home#/encryptionKeys/.)
 
 
 **CSV Settings:**<br>
-The settings in the tab CSV Settings correspond to the ones in the general [http-csv settings]().
+The settings in the tab CSV Settings correspond to the ones in the general [http-csv settings](../csv-via-http).
 	
 ![XU_S3_DestinationDetails2](/img/content/XU_S3_DestinationDetails2.jpg){:class="img-responsive"}

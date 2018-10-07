@@ -11,7 +11,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=ports
 ---
 
 The server uses different ports for communication, for example to receive the extraction request via HTTP or to communicate with the designer.<br> 
-Every port has a default value which could be changed. More information you will find in the chapter [Server Settings](). 
+Every port has a default value which could be changed. More information you will find in the chapter [Server Settings](./server-settings-xu2). 
 
 If the servce did not start because the default port is blocked you have to open the XtractServerConfig.xml file in the folder config and define a valid port.
 

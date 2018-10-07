@@ -53,7 +53,7 @@ Per default the folowing SPN is assigned to the computer account:*HOST/[hostname
 Hence the TPN in the XU Connect window only needs to be changed, if the Service Account of the XU Windows Service is n o t running under the Local System Account.
 If the Xtract Universal service is running under the Local System account, you can leave the default settings in the Target principal field.
 
-This [blog post]() gives quite a good understanding of the matter.
+This [blog post](https://blog.rhysgoodwin.com/windows-admin/active-directory-and-kerberos-spns-made-easy/) gives quite a good understanding of the matter.
 
 ![XU_Service](/img/content/XU_Service.jpg){:class="img-responsive"}
 

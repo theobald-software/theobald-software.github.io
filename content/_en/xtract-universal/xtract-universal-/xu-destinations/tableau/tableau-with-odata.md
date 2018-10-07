@@ -11,6 +11,6 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=tableau-with-odata
 ---
 
-In this section we will describe how to export SAP data into Tableau using [OData](). 
+In this section we will describe how to export SAP data into Tableau using [OData](../odata). 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

@@ -14,14 +14,14 @@ For using this destination you need a running Redshift instance and valid creden
 Furthermore your client computer has to be authorized to access the cluster.
 
 For establishing a connection to Redshift a suitable database driver is required.
-Please download and install the 64 bit Amazon Redshift ODBC driver from [here]().
+Please download and install the 64 bit Amazon Redshift ODBC driver from [here](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html).
 
 If the driver is missing the connection test will fail:
 
 ![XU-fehlender-redshift-treiber](/img/content/XU-fehlender-redshift-treiber.png){:class="img-responsive"}
 
 Prior to Xtract Universal version 2.102.0 you have to install the Mono.Security.dll assembly instead of above mentioned ODBC driver.
-You can download the complete Mono package from [the official project site]() or from any source of your choice. Please make sure to install the Mono.Security assembly, compiled on .NET 2.0. Other versions could cause problems with the assemblies used for accessing the Redshift Database.
+You can download the complete Mono package from [the official project site](http://download.mono-project.com/archive/2.0/download/) or from any source of your choice. Please make sure to install the Mono.Security assembly, compiled on .NET 2.0. Other versions could cause problems with the assemblies used for accessing the Redshift Database.
 
 There are two ways for installing the assembly: 
 
@@ -32,7 +32,7 @@ There are two ways for installing the assembly:
 - Install the Mono.Security.dll file to your global assembly cache using gacutil<br>
 	gacutil -i "C:\Program Files (x86)\Mono-2.0\lib\mono\2.0\Mono.Security.dll"
 
-(For further information, please have a look at [This article]())	
+(For further information, please have a look at [This article](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-install-an-assembly-into-the-gac))	
 
 
 2. Copy the Mono.Security.dll file into your Xtract Universal directory.

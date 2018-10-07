@@ -23,5 +23,5 @@ In the main Window you see the so-called *Select Options*. These are the selecti
 ![SAPQuery-03](/img/content/SAPQuery-03.png){:class="img-responsive"}
 
 
-You have to select a variant (see chapter [Apply Variants]()) or a value for the maximum number of rows (see chapter [Extraction Settings]()).
+You have to select a variant (see chapter [Apply Variants](./apply-variants)) or a value for the maximum number of rows (see chapter [Extraction Settings](./extraction-settings)).
 

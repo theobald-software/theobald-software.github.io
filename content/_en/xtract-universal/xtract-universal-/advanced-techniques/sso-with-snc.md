@@ -43,7 +43,7 @@ More detail information about NTLM you will find here: [http://technet.microsoft
 
 You must also have the relevant DLLs from SAP und put them in the folder %SYSTEMROOT%\System32 . 
 These DLLs are different for 32-bit and 64-bit platforms and are available with SNOTE* 352295. 
-The [SAP note 2115486]() has an 'Attachments' option from where you can download the package. 
+The [SAP note 2115486](http://service.sap.com/sap/support/notes/2115486) has an 'Attachments' option from where you can download the package. 
 
 For 32-bit: 
  - Kerberos: gsskrb5.dll 

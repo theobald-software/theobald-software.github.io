@@ -41,7 +41,7 @@ For Information about the Installation of the custom function modules and the SA
 
 - Custom authentication.
 - SAP authentication: SSO (Single Sign On) or SAP credentials.
-- SAP system or dialog user with appropriate [authority objects]().
+- SAP system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **Ports**<br>
 Following ports have to be opened depending on the SAP system, 
@@ -70,7 +70,7 @@ Additional SAP licenses might be required for extracting data from SAP. Contact 
 
 **Other Applications and Frameworks**
  	
-- .NET Framework 4.5.2 or higher. You can get it [here]().
+- .NET Framework 4.5.2 or higher. You can get it [here](https://www.microsoft.com/en-US/download/details.aspx?id=42643).
 
 **Hardware Requirements**
  	

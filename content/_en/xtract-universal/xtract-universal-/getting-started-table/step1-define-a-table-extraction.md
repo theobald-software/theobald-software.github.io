@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-table-extraction
 ---
 
-After successfully establishing a [connection to the server](), the buttons to create and configure extractions are enabled. The list shows all the extractions, which have already been created on the server.
+After successfully establishing a [connection to the server](./step0-connect-designer-with-server), the buttons to create and configure extractions are enabled. The list shows all the extractions, which have already been created on the server.
 
 ![XU3_Designer](/img/content/XU3_Designer.jpg){:class="img-responsive"}
 

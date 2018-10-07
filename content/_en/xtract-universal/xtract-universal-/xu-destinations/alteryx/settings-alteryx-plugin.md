@@ -32,7 +32,7 @@ When selecting the **Parameters** tab, the tool will load the available paramete
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
 
-You can read more about custom parameters [here]().
+You can read more about custom parameters [here](../../advanced-techniques/user-defined-variables).
 
 If the connection to the specified Xtract Universal server could be established without any errors, the tool will have a tooltip in the following format: [Extraction] @ [Server]
 

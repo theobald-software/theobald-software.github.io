@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=customizing-check
 ---
 
-Fill the fields on the top right for the logical target system and the technical settings for the RFC destination as defined in [DeltaQ Customizing]().
+Fill the fields on the top right for the logical target system and the technical settings for the RFC destination as defined in [DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 

@@ -65,8 +65,8 @@ b. SNC (Secure Network Communication) with username and password<br>
 c. SNC with SSO (Single Sign On) <br>
 d. Log On Ticket (available only for some connectors, e.g. ERPConnect, ERPConnect Services and Xtract Universal)
 
-SAP Library: [SNC]()<br>
-SAP Library: [SNC Parameters]()
+SAP Library: [SNC](https://help.sap.com/saphelp_nw70ehp1/helpdata/de/e6/56f466e99a11d1a5b00000e835363f/frameset.htm?original_fqdn=help.sap.de)<br>
+SAP Library: [SNC Parameters](https://help.sap.com/viewer/page-not-found?url=https%3A%2F%2Fhelp.sap.com%2Fsaphelp_nw2004s%2Fhelpdata%2Fen%2Fd9%2Fe8a740bbaa4d8f8bee6f7b173bd99f%2Fframeset.htm)
 
 **SAP target system**
 
@@ -82,7 +82,7 @@ For a message server the following data are required:
 - Name or IP address of the Message Server (Property MessageServer) 
 - Logon group (Property LogonGroup, usually it is PUBLIC)
 
-SAP Library: [Load Balancing]()
+SAP Library: [Load Balancing](https://help.sap.com/viewer/page-not-found?url=https%3A%2F%2Fhelp.sap.com%2Fsaphelp_nw2004s%2Fhelpdata%2Fde%2F22%2F04295c488911d189490000e829fbbd%2Fframeset.htm)
 
 **SAP router**
 
@@ -90,7 +90,7 @@ If you access the SAP target system (Application server or Message server) via a
 Example:
 If the Application server is "hamlet" and the router string is "/H/lear.theobald-software.com/H/", you should set the Host property to "/H/lear.theobald-software.com/H/hamlet".
 
-SAP Library: [SAP-Router]()
+SAP Library: [SAP-Router](https://help.sap.com/viewer/page-not-found?url=https%3A%2F%2Fhelp.sap.com%2Fsaphelp_nw04%2Fhelpdata%2Fde%2F4f%2F992df1446d11d189700000e8322d00%2Fframeset.htm)
 
 **RFC library (API)**: classical or Netweaver.
 
@@ -100,7 +100,7 @@ The RFC API exists in two different versions:
 - Netweaver RFC API (Netweaver RFC library). 
 The Netweaver RFC Library does not support DeltQ or OHS.
 
-SAP Library: [RFC API: Classical & NetWeaver]()
+SAP Library: [RFC API: Classical & NetWeaver](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm)
 
 **SAP Log On**
 

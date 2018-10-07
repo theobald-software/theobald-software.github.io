@@ -68,4 +68,4 @@ The data update can either also be automatic or, depending on the client’s spe
 
 **Destinations** 
 
-Xtract Universal supports a number of environments as the target for the data extraction, see [Destinations](). 
+Xtract Universal supports a number of environments as the target for the data extraction, see [Destinations](../xu-destinations). 

@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-settings
 ---
 
-An extraction has two types of settings. The *Extraction Settings* include settings that affect only the respective extraction type, while the *General Settings* are the same for all extraction types and determine common settings. You can find information about General Settings in chapter [General Settings]().
+An extraction has two types of settings. The *Extraction Settings* include settings that affect only the respective extraction type, while the *General Settings* are the same for all extraction types and determine common settings. You can find information about General Settings in chapter [General Settings](../advanced-techniques/general-settings).
 
 ![Table-Form-Extraction-Settings-Button-Location](/img/content/Table-Form-Extraction-Settings-Button-Location.jpg){:class="img-responsive"} 
 
