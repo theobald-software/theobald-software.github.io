@@ -3,10 +3,10 @@ layout: page
 title: SAP Tables 
 description: SAP Tables
 product: xtract-rs
-parent: xtract-rs-
+parent: xtract-rs
 childidentifier: sap-tables
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=sap-tables
 ---

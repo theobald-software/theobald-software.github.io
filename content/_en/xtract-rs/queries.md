@@ -3,10 +3,10 @@ layout: page
 title: Queries
 description: Queries
 product: xtract-rs
-parent: xtract-rs-
+parent: xtract-rs
 childidentifier: queries
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=queries
 ---
