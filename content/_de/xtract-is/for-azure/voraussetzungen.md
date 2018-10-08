@@ -3,7 +3,7 @@ layout: page
 title: Voraussetzungen
 description: Voraussetzungen
 product: xtract-is
-parent: xtract-is-for-azure
+parent: for-azure
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

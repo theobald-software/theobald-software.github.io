@@ -4,7 +4,7 @@ title: Xtract IS for Azure
 description: Xtract IS for Azure
 product: xtract-is
 parent: xtract-is
-childidentifier: xtract-is-for-azure
+childidentifier: for-azure
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
