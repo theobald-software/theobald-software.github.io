@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=load_an_extraction_into_power_bi_desktop
 ---
 
-At first we have to set the destination to OData, refer to [Set OData destination]().
+At first we have to set the destination to OData, refer to [Set OData destination](../odata/set-odata-destination).
 Then copy the OData URL of the extraction. 
 
 In PowerBI Desktop click on GetData and select Other -> OData Feed. Click on Connect. 

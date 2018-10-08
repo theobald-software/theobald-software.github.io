@@ -20,7 +20,7 @@ We are using the following Alteryx Connect Destination:
 
 ![XU-Alteryx-Connect-Destination](/img/content/XU-Alteryx-Connect-Destination.png){:class="img-responsive"}
 
-As described in the [Alteryx Connect Help]() we have defined two configuration files and uploaded them:
+As described in the [Alteryx Connect Help](https://help.alteryx.com/developer/current/Connect/Examples/Examples.htm?TocPath=SDKs|Build%20Connect%20Loaders|Examples|_____0) we have defined two configuration files and uploaded them:
 - Table configuration file: sapplants.xml
 - Load job configuration file: load-theobald-sapplant.xml
 
@@ -50,4 +50,4 @@ Now we can check the Entries:
 
 ![AC-Datasource-Folder-Plant-Entries](/img/content/AC-Datasource-Folder-Plant-Entries.png){:class="img-responsive"}
 
-You can also find the XML configuration files on [GitHub]().
+You can also find the XML configuration files on [GitHub](https://github.com/KhoderElzein/theobaldsoftware/tree/master/Xtract%20Universal%20Alteryx%20Connect/SAP%20Plant).

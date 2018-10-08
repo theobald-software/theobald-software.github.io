@@ -44,7 +44,7 @@ Avoid using the preview window. Large amount of data is received from within a w
  
 **I have strange errors in general that happen sometimes for no good reason.**
 
-First step is always to download the latest Xtract version. Maybe SAP changed something and you need a new version. Even if it is only 2 weeks old. The second step is always to exchange the 32- and 64-Bit version of the librfc32.dll on the system which might be unstable. Please check the [knowledge base]() for download options for stable librfc32.dll versions.
+First step is always to download the latest Xtract version. Maybe SAP changed something and you need a new version. Even if it is only 2 weeks old. The second step is always to exchange the 32- and 64-Bit version of the librfc32.dll on the system which might be unstable. Please check the [knowledge base](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/71/0/theobald--products-in-a-64-bit-environment) for download options for stable librfc32.dll versions.
 
  
 **I get an "Error in Data Selection" from SAP**

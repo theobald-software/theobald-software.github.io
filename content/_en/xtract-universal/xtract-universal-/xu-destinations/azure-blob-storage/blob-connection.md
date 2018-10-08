@@ -37,4 +37,4 @@ Select a BLOB Container. The SAP data will be extracted into this BLOB Container
 
 **CSV Settings**
 
-The settings in the tab CSV Settings correspond to the ones in the general [http-csv settings]().
+The settings in the tab CSV Settings correspond to the ones in the general [http-csv settings](../csv-via-http).

@@ -24,4 +24,4 @@ The background application is activated through the selection. In SM37 (job admi
 
 In order to be able to use the extension, the ZXTRACTBUFFER table and the additional functional module Z_XTRACT_IS_TABLE_EX must be installed in SAP. 
 
-In the section SAP Customizing in the chapter [Extension for Background Processing]() you'll find a step-by-step solution.
+In the section SAP Customizing in the chapter [Extension for Background Processing](../sap-customizing/extension-for-background-processing) you'll find a step-by-step solution.

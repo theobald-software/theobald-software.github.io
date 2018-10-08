@@ -16,7 +16,7 @@ With BW hierarchies, the different values of a Characteristc InfoObject are assi
 
 When linking a BEx Query with a BW Hierarchy in Tableau the "Not Assigned" node is displayed depending on which data source (BWCube extract or BW Hierarchy extract) acts as the so called primary source.
 
-The primary source is defined as follows in [Tableau's Online Help]():<br>
+The primary source is defined as follows in [Tableau's Online Help](https://onlinehelp.tableau.com/current/pro/online/mac/en-us/multipleconnections_secondary.html):<br>
 "The primary data source is the connection that you first use in the view. After you drag fields to the view, the primary data source is marked with a blue check mark."
 
 The "Not Assigned" node is only displayed if the BEx Query extract acts as the primary data source. In Tableau the "Not Assigend" node is labelled "Null".

@@ -50,5 +50,5 @@ Many Datasources deliver the field ROCANCEL. This field stipulates whether the r
 
 
 More information about the delta process can be found in the SAP Help. <br>
-[Delta Transfer to BI]()<br>
-[Delta Process]()
+[Delta Transfer to BI](http://help.sap.de/saphelp_nw70/helpdata/en/37/4f3ca8b672a34082ab3085d3c22145/content.htm)<br>
+[Delta Process](http://help.sap.de/saphelp_nw70/helpdata/en/84/81eb588fc211d4b2c90050da4c74dc/content.htm)

@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=mysql-requirements
 
 Before using this destination the ADO.NET Driver for MySQL (Connector/NET) needs to be installed.
 
-The driver is available from [here](). Please download the latest stable driver version. 
+The driver is available from [here](https://www.mysql.com/products/connector/). Please download the latest stable driver version. 
 
 At the first use of the MySQL destination, the Destination Details dialog pops up to select the required MySql.Data.dll.
 

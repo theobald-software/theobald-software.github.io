@@ -23,7 +23,7 @@ Defines the port number, where the server communicates with the designer. The de
 Defines the maximum age of the congig server log files in days. After this period, the log files are beeing deleted.
 
 **Authentication methods** <br>
-see chapter [User Management]()
+see chapter [User Management](../security-xu3/user-management)
 
 **Select X.509 certificate** <br>
 1. Have your IT network team create a TLS certificate.
@@ -31,7 +31,7 @@ see chapter [User Management]()
 3. Make sure the certificate has the property "Subject Alternative Name" populated with the DNS name of the server where the Xtract Universal service is running. Otherwise it won't appear in our lookup dialog.
 
 **Access Management** <br>
-see chapter [Access Management]()
+see chapter [Access Management](../security-xu3/access-management)
 
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"} 
 
@@ -47,7 +47,7 @@ It allows you to configure HTTP, HTTPS or both protocol types. The run statement
 If you want to receive data via HTTPS you have to install a TLS-Certificate on the server where the Xtract Universal service is running. 
 This certificate must contain the hostname of the server in the common name (CN) attribute and must be released by a certified authority.
 
-If you want to get further information please have a look at our [blog]().
+If you want to get further information please have a look at our [blog](http://www.theobald-software.com/blog/?p=389).
 
 
 **Max. parallel requests** <br>
@@ -72,4 +72,4 @@ Defines the maximum count of results of different extractions in the buffer.
 Defines the maximum age in minutes of an extraction in the buffer.
 
 **HTTP client filter** <br>
-see chapter on [Server Security]().
+see chapter on [Server Security](../security-xu3/server-security).

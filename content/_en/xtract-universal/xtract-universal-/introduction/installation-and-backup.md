@@ -41,4 +41,4 @@ Before installing a new version, we recommend testing on a non-production enviro
 All settings related to extraction, source, destination, etc. are stored in the *config* subdirectory. We recommend regular backups of this folder. This allows you to easily revert to the previous version of Xtract Universal if needed.
 
 **Version History**<br>
-A list of the versions can be found in the [version history]().
+A list of the versions can be found in the [version history](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/86/52/xtract-universal-version-history).

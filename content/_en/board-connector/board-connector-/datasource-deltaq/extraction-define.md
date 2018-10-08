@@ -18,7 +18,7 @@ The following example shows the download of material master data from the DataSo
 
 ![DeltaQ-LookUp](/img/content/DeltaQ-LookUp.png){:class="img-responsive"}
 
-Now set the logical target system and the technical settings for the RFC destination (as shown in section [Customizing]()) on the top right.
+Now set the logical target system and the technical settings for the RFC destination (as shown in section [Customizing](./customizing)) on the top right.
 
 Gateway Host is the name (or IP address of your SAP system). Be sure that the Gateway Host is the same as in your SAP Connection. <br>
 The Gateway Service is generally sapgwNN, where NN is the ID of your SAP system, i.e. a number between 00 andd 99.
@@ -44,4 +44,4 @@ From now on the extraction can be executed via the Run button.
 
 ![DeltaQ-Source-Definition](/img/content/DeltaQ-Source-Definition.png){:class="img-responsive"}
 
-For any Errors please refer to our [DeltaQ Troubleshooting Guide](). 
+For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/4/deltaq-troubleshooting-guide). 

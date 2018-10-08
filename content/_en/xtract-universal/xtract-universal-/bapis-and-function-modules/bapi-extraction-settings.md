@@ -11,4 +11,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=run
 ---
 
 The BAPI component contains no other specific settings than the General Settings, which we already discussed in chapter 
-[General Settings]().
+[General Settings](../advanced-techniques/general-settings).

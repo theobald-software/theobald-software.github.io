@@ -40,4 +40,4 @@ Defines a search pattern (e.g. *header*) to detect the table header. If automati
 Defines a regular expression as a search pattern to skip rows from the result.  <br>
 This setting allows e.g. skipping header rows that will be repeated in some reports. <br>
 To skip rows that contains the term DESCTEXT or LONGTEXT, set the value DESCTEXT | LONGTEXT. <br>
-For further information about regular expressions please refer to the [Microsoft Online Help]().
+For further information about regular expressions please refer to the [Microsoft Online Help](http://msdn.microsoft.com/en-us/library/az24scfc.aspx).

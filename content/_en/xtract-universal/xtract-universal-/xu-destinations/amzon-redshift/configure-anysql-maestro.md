@@ -11,10 +11,10 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=configure-anysql-maestro
 ---
 
 In this example we will explain how to configure and use AnySQL Maestro to manage your Redshift database.
-You can use any other [db client]() for that matter. Steps should be similar. 
+You can use any other [db client](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-using-workbench.html) for that matter. Steps should be similar. 
 
-- Download and install AnySQL Maestro from [here]().
-- Download and install ODBC driver for PostgreSQL from [here]().
+- Download and install AnySQL Maestro from [here](http://www.sqlmaestro.com/de/products/anysql/maestro/download/).
+- Download and install ODBC driver for PostgreSQL from [here](http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_08_04_0200.zip).
 - Launch AnySQL Maestro.
 - Click "Create Database Profiles".
 

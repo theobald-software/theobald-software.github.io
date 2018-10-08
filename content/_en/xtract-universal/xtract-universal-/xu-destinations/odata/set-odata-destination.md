@@ -10,8 +10,8 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=set_odata_destination
 ---
 
-In the first step we create an extraction in Xtract Universal (refer to [Step I: Define a Table Extraction]()).<br>
-In the second step we select an OData destination, e.g. the default http-odata-atom destination (refer to [Managing Destinations]() and [OData Atom]()). 
+In the first step we create an extraction in Xtract Universal (refer to [Step I: Define a Table Extraction](../../getting-started-table/step1-define-a-table-extraction)).<br>
+In the second step we select an OData destination, e.g. the default http-odata-atom destination (refer to [Managing Destinations](../managing-destinations) and [OData Atom](../odata)). 
 
 ![XU-OData-Destination](/img/content/XU-OData-Destination.jpg){:class="img-responsive"}
 

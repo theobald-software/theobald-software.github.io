@@ -17,7 +17,7 @@ When a service does not start, configure the service to use an user account with
 - Local Security Policy -> Local Policies -> User Right Management: Log on as a service
 - Permissions for the installation folder + subfolders: Modify
 - HTTP URL Access Control List for http://+:httpPort/. 
-please refer to the following site to set the URLACL: http://msdn.microsoft.com/en-us/library/ms733768.aspx
+please refer to the following site to set the URLACL: [http://msdn.microsoft.com/en-us/library/ms733768.aspx](http://msdn.microsoft.com/en-us/library/ms733768.aspx)
 Instead of the URLACL, you may also use an administrator account.
 
 To configure the service to use an user account, do the following steps: 

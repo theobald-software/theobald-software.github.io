@@ -14,7 +14,7 @@ Click on the Destination button to define extraction-specific settings of the ex
 
 ![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.jpg){:class="img-responsive"}
 
-The settings in the left part of the window correspond to the ones of the [flatfile csv-destination]().
+The settings in the left part of the window correspond to the ones of the [flatfile csv-destination](../csv-flat-file/csv-destination-settings).
 
 **Compression**
 

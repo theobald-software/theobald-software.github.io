@@ -3,9 +3,9 @@ layout: page
 title: Configure connection to SAP
 description: Configure connection to SAP
 product: xtract-rs
-parent: xtract-rs-
+parent: xtract-rs
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=configure-connection-to-sap
 ---

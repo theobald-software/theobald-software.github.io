@@ -14,7 +14,7 @@ Click on the Destination button to define extraction-specific settings of the ex
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
 
-The settings in the left part of the window correspond to the ones of the [flatfile csv-destination]().
+The settings in the left part of the window correspond to the ones of the [flatfile csv-destination](../csv-flat-file/csv-destination-settings).
 
 **Compression**
 

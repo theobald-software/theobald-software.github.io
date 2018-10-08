@@ -101,9 +101,9 @@ Convert<br>
 Following key words are supported: 
 true, false and null.
 
-You can find more information [about the .NET data types]() and [Date and Time format]() in MSDN.
+You can find more information [about the .NET data types](http://msdn.microsoft.com/en-us/library/System%28v=vs.90%29.aspx) and [Date and Time format](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) in MSDN.
 
 
 **Using Scripted Expressions**
 
-A Scripted Expression can be used in the [where clause]() of a table and in the script of the Extraction-Specific settings of a destination.
+A Scripted Expression can be used in the [where clause](../getting-started-table/where-clause) of a table and in the script of the Extraction-Specific settings of a destination.

@@ -3,11 +3,11 @@ Um bestimmte Einschränkungen zu umgehen bzw. gewünschte Funktionalitäten zu n
 
 **Installation eines Z-Funktionsbausteins auf dem SAP-System**
 
-*Table*: In den meisten Fällen ist die Installation eines Z-Funktionsbausteins notwendig. Siehe [Funktionsbaustein für Tabellen-Komprimierung](funktionsbaustein-fuer-table-komprimierung) . 
+*Table*: In den meisten Fällen ist die Installation eines Z-Funktionsbausteins notwendig. Siehe [Funktionsbaustein für Tabellen-Komprimierung](./sap-customizing/funktionsbaustein-fuer-table-komprimierung) . 
 
 *Table Join*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Funktionsbaustein für Table-Join](funktionsbaustein-fuer-table-join).
 
-*Report*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](report-funktionsbaustein-installieren).
+*Report*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
 
 Um den Z-Funktionsbaustein manuell zu installieren, folgen Sie den Anweisungen in unserem Knowledgebase-Artikel.
 
@@ -18,5 +18,5 @@ Weiterführende Informationen zur Installation eines Transportauftrags finden Si
 
 Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig. 
 
-*OHS*: Siehe [Vorbereitung für OHS im BW](vorbereitung-fuer-ohs-im-bw).
-*DeltaQ*: Refer to [Customizing für DeltaQ](customizing-fuer-deltaq).
+*OHS*: Siehe [Vorbereitung für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw).
+*DeltaQ*: Refer to [Customizing für DeltaQ](./sap-customizing/customizing-fuer-deltaq).

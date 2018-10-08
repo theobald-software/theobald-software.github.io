@@ -19,7 +19,7 @@ The Kerberos method uses a Kerberos server to authenticate the client. The serve
 NTLM works for technical reasons only with one hop. Kerberos 5 is more secure than NTLM and is therefore recommended. 
 
 More detail information about Kerberos you will find here:<br> 
-[http://technet.microsoft.com/en-us/library/bb742516.aspx]() 
+[http://technet.microsoft.com/en-us/library/bb742516.aspx](http://technet.microsoft.com/en-us/library/bb742516.aspx) 
 
 **Double Hop Problem**
 
@@ -30,7 +30,7 @@ You can use NTLM only if you do not have the Double Hop Problem, i.e. if the con
 If the consumer of the SAP data and the Xtract Server are running on different computers you have to use Kerberos which can be configured that the Double Hop Problem do not matter. 
 
 The Kerberos configuration you will find here: <br>
-[http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx]()
+[http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx](http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx)
 
 More information about the SSO configuration you will find here:<br> [http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm)
 
@@ -46,7 +46,7 @@ More detail information about NTLM you will find here:<br> [http://technet.micro
 
 You must also have the relevant DLLs from SAP und put them in the folder %SYSTEMROOT%\System32 . <br>
 These DLLs are different for 32-bit and 64-bit platforms and are available with SNOTE* 352295. 
-The SAP note 2115486 has an 'Attachments' option from where you can download the package. 
+The [SAP note 2115486](https://websmp130.sap-ag.de/sap/support/notes/2115486) has an 'Attachments' option from where you can download the package. 
 
 For 32-bit: 
  - Kerberos: gsskrb5.dll 

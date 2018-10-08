@@ -16,7 +16,6 @@ Das Action Query XQL kann auch unter der Kategory ERPConnect Services gefunden w
 ![ECS-Nintex-XtractQL-Action](/img/content/ECS-Nintex-XtractQL-Action.jpg){:class="img-responsive"}
 
 Query XQL führt XQL-Befehle aus. Felder und Variablen können dem XQL-Befehl zugewiesen werden.<br> 
-
 Für weitere Informationen über die XtractQL-Sprache siehe den Abschnitt [XtractQL](../../../../ecs-de/ecs-runtime/ecs-xtractql/) . 
 
 ![ECS-Nintex-XtractQL-Action-Edit](/img/content/ECS-Nintex-XtractQL-Action-Edit.jpg){:class="img-responsive"}

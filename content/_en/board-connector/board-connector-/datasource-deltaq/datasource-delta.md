@@ -22,4 +22,4 @@ You must ensure that a Delta update is properly executed before the next one is 
 
 A **Repair** always refers to the last executed Delta update, which will be repeated in full. It does not matter whether the last Delta update was successful or not. The Repair step may optionally be performed several times.
 
-More information about the delta process can be found in the [SAP Help](). 
+More information about the delta process can be found in the [SAP Help](http://help.sap.com/saphelp_nw73/helpdata/en/4f/18f6aa3fca410ae10000000a42189d/content.htm). 

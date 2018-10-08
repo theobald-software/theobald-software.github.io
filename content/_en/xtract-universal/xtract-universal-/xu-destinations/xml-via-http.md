@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=xml-via-http
 
 **HTTP-XML**
 
-**!!! This destination has been deprecated and removed since [Xtract Universal version]() 2.75.5 !!!**
+**!!! This destination has been deprecated and removed since [Xtract Universal version](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/86/52/xtract-universal-version-history) 2.75.5 !!!**
 
 The destination ist an XML stream over HTTP. 
 

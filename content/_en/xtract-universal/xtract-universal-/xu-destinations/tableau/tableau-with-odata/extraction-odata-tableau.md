@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-odata-tableau
 ---
 
-At first we have to set the destination to OData, refer to Set [OData destination]().<br>
+At first we have to set the destination to OData, refer to Set [OData destination](../../odata/set-odata-destination).<br>
 In Tableau click on Connect and select OData. Paste the extraction OData URL and click Connect. Click OK to close the connection dialog.
 
 ![Tableau-Connect-OData](/img/content/Tableau-Connect-OData.jpg){:class="img-responsive"}

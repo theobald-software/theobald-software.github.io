@@ -29,4 +29,4 @@ If it is activated, only a small portion of data is extracted from SAP or (if th
 **Keywords**<br>
 You can assign one or more keywords (Tags) to an extraction. Within the designer you can use these keywords as a filter for the extraction.
 
-The security tab is described in the chapter [Extraction Security]().
+The security tab is described in the chapter [Extraction Security](../security/extraction-security).

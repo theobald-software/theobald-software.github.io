@@ -15,7 +15,7 @@ The following settings can be defined for the Oracle destination.
 ![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_1.png){:class="img-responsive"}
 
 
-Alternatively you can enter the [connect descriptor](), such as:
+Alternatively you can enter the [connect descriptor](https://docs.oracle.com/html/E10927_01/featConnecting.htm), such as:
 
 (DESCRIPTION =<br>
  (ADDRESS = (PROTOCOL = TCP)<br>
