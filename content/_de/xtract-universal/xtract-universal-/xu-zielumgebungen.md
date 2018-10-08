@@ -16,40 +16,40 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
 Xtract Universal bietet die Möglichkeit, die aus SAP extrahierten Daten in verschiedene Zielumgebungen, sogenannte Destinations zu schreiben. Folgende Datenziele werden momentan unterstützt:
 
 **Database / Datawarehouse:**          
-- [Azure DWH](azure_dwh) 
-- [SAP HANA](hana) 
-- [IBM DB2](ibm-db2) 
-- [EXASolution](exasol) 
-- [HP Vertica](vertica) 
-- [MySQL](mysql) 
-- [Oracle](oracle) 
-- [Amazon Redshift](redshift) 
-- [SQL Server](microsoft-sql-server) 
-- [Teradata](teradata) 
+- [Azure DWH](./xu-zielumgebungen/azure_dwh) 
+- [SAP HANA](./xu-zielumgebungen/hana) 
+- [IBM DB2](./xu-zielumgebungen/ibm-db2) 
+- [EXASolution](./xu-zielumgebungen/exasol) 
+- [HP Vertica](./xu-zielumgebungen/vertica) 
+- [MySQL](./xu-zielumgebungen/mysql) 
+- [Oracle](./xu-zielumgebungen/oracle) 
+- [Amazon Redshift](./xu-zielumgebungen/redshift) 
+- [SQL Server](./xu-zielumgebungen/microsoft-sql-server) 
+- [Teradata](./xu-zielumgebungen/teradata) 
 
 Business Intelligence / Analytics Tools:
-- [Power BI](powerbi_cloud) 
-- [Power Pivot](odata-atom) 
-- [Tableau](tableau) 
-- [QlikSense and QlikView](qlik)  
-- [GoodData](gooddata) 
+- [Power BI](./xu-zielumgebungen/powerbi_cloud) 
+- [Power Pivot](./xu-zielumgebungen/odata-atom) 
+- [Tableau](./xu-zielumgebungen/tableau) 
+- [QlikSense and QlikView](./xu-zielumgebungen/qlik)  
+- [GoodData](./xu-zielumgebungen/gooddata) 
 
 Cloud Speicher:
-- [Amazon AWS S3](amazon_aws_s3)
+- [Amazon AWS S3](./xu-zielumgebungen/amazon_aws_s3)
 
 Analytics & ETL Tools:
-- [Alteryx](alteryx-de) 
+- [Alteryx](./xu-zielumgebungen/alteryx-de) 
 
 Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ELT-Programm bzw. Scheduler aufgerufen werden. 
 
 Business Systeme:
-- [Salesforce](salesforce) 
-- [Sharepoint](sharepoint) 
+- [Salesforce](./xu-zielumgebungen/salesforce) 
+- [Sharepoint](./xu-zielumgebungen/sharepoint) 
 
 Generische Destinations: 
-- [CSV (via HTTP)](csv-via-http) 
-- [OData](odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
-- [Flat File - CSV](zielumgebungen) (Comma-seperated values)
+- [CSV (via HTTP)](./xu-zielumgebungen/csv-via-http) 
+- [OData](./xu-zielumgebungen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
+- [Flat File - CSV](./xu-zielumgebungen/zielumgebungen) (Comma-seperated values)
             
 Pull- und Push-Ziele
 Bei den Zielumgebungen werden zwei Kategorien unterschieden, je nachdem wo der Extraktionsprozess gestartet wird. 
