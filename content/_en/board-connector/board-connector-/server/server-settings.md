@@ -61,3 +61,5 @@ The default location for this buffer directory is: C:\Program Files\BOARDConnect
 **DistributeSetup**<br>
 defines, whether the setup of the BOARD Connector version running on the Server should be downloaded.<br>
 When an older Designer version is connected to a newer Server version, a dialog form asks, whether the newer setup version should be downloaded. 
+
+The description of the security settings defined on the security tab you will find in the chapter [Server Security](../security/server-security).

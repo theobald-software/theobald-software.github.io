@@ -30,4 +30,4 @@ Beginning with version 2.13.5 scripted expressions are supported within the wher
 
 ![Table-Where](/img/content/Table-Where.jpg){:class="img-responsive"}
 
-For more information please refer to [Scripted Expressions]() . 
+For more information please refer to [Scripted Expressions](../advanced-techniques/scripted-expressions) . 

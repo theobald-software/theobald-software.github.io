@@ -20,6 +20,6 @@ It is required to install a custom funktion module on the SAP server to be able 
 
 *Note*: Cluster and pool tables are not supported by the Table Join component, but they can be extracted using the table component. 
 
-**Caution!** Please note that this chapter only describes the use of the Table Join Component. For all other basics please refer to [Step I: Define a Table Extraction]() . For this chapter the knowledge about the basic usage of Xtract Universal is assumed!
+**Caution!** Please note that this chapter only describes the use of the Table Join Component. For all other basics please refer to [Step I: Define a Table Extraction](./getting-started-table/step1-define-table-extraction) . For this chapter the knowledge about the basic usage of Xtract Universal is assumed!
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

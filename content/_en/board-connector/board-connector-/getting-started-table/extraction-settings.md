@@ -10,7 +10,7 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=extraction-settings
 ---
 
-An extraction has two types of settings. The *Extraction Settings* include settings that affect only the respective extraction type, while the *General Settings* are the same for all extraction types and determine common settings. You can find information about *General Settings* in chapter [General Settings]().
+An extraction has two types of settings. The *Extraction Settings* include settings that affect only the respective extraction type, while the *General Settings* are the same for all extraction types and determine common settings. You can find information about *General Settings* in chapter [General Settings](../advanced-techniques/general-settings).
 
 ![Extraction-Settings-01](/img/content/Extraction-Settings-01.png){:class="img-responsive"} 
 

@@ -39,5 +39,5 @@ In our example all material attribute rows from left table MARA will be in the r
 contrary to the inner-join example above, where unassigned material attributes were excluded from the result
  
 
-SAP Help: [Inner Join und Outer Join]()
+SAP Help: [Inner Join und Outer Join](http://help.sap.com/saphelp_erp60_sp/helpdata/en/cf/21ec77446011d189700000e8322d00/content.htm)
 
