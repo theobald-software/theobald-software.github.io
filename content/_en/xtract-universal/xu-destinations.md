@@ -16,41 +16,41 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 Xtract Universal allows to extract data from SAP ERP and BW systems and to load them to different [destination]() environments, including:  
 
 **Database / Datawarehouse:**<br>
-- [Azure DWH](./xu-destinations/azure-dwh/) 
-- [HANA](./xu-destinations/sap-hana/) 
-- [IBM DB2](./xu-destinations/ibm-db2/) 
-- [EXASolution](./xu-destinations/exasol/) 
-- [HP Vertica](./xu-destinations/hp-vertica/) 
-- [MySQL](./xu-destinations/mysql/) 
-- [Oracle](./xu-destinations/oracle/) 
-- [Amazon Redshift](./xu-destinations/amzon-redshift/) 
-- [SQL Server](./xu-destinations/microsoft-sql-server/) 
-- [Teradata](./xu-destinations/teradata/) 
+- [Azure DWH](./xu-destinations/azure-dwh) 
+- [HANA](./xu-destinations/sap-hana) 
+- [IBM DB2](./xu-destinations/ibm-db2) 
+- [EXASolution](./xu-destinations/exasol) 
+- [HP Vertica](./xu-destinations/hp-vertica) 
+- [MySQL](./xu-destinations/mysql) 
+- [Oracle](./xu-destinations/oracle) 
+- [Amazon Redshift](./xu-destinations/amzon-redshift) 
+- [SQL Server](./xu-destinations/microsoft-sql-server) 
+- [Teradata](./xu-destinations/teradata) 
 
 **Business Intelligence / Analytics Tools:**<br>
-- [Microstrategy](./xu-destinations/microstrategy/)
-- [Power BI (Cloud) / Power BI Desktop](./xu-destinations/powerbi-cloud/) 
-- [Power Pivot using OData, see Power BI (Desktop)](./xu-destinations/powerbi-desktop/) 
-- [Tableau](./xu-destinations/tableau/) 
-- [Qlik (QlikSense and QlikView)](./xu-destinations/qliksense-qlikview/) 
-- [Good Data](./xu-destinations/gooddata/) 
+- [Microstrategy](./xu-destinations/microstrategy)
+- [Power BI (Cloud) / Power BI Desktop](./xu-destinations/powerbi-cloud) 
+- [Power Pivot using OData, see Power BI (Desktop)](./xu-destinations/powerbi-desktop) 
+- [Tableau](./xu-destinations/tableau) 
+- [Qlik (QlikSense and QlikView)](./xu-destinations/qliksense-qlikview) 
+- [Good Data](./xu-destinations/gooddata) 
 
 **Analytics & ETL Tools:**
-- [Alteryx](./xu-destinations/alteryx/) 
-- [Alteryx Connect](./xu-destinations/alteryx-connect/) 
+- [Alteryx](./xu-destinations/alteryx) 
+- [Alteryx Connect](./xu-destinations/alteryx-connect) 
 
 **Business Systems:** 
-- [Salesforce](./xu-destinations/salesforce/) 
-- [Sharepoint](./xu-destinations/sharepoint/) 
+- [Salesforce](./xu-destinations/salesforce) 
+- [Sharepoint](./xu-destinations/sharepoint) 
 
 **Cloud Storage:**
-- [AWS S3](./xu-destinations/amazon-aws-s3/)
-- [Azure Blob Storage](./xu-destinations/azure-blob-storage/) 
+- [AWS S3](./xu-destinations/amazon-aws-s3)
+- [Azure Blob Storage](./xu-destinations/azure-blob-storage) 
 
 **Generic Destinations:** 
 - [CSV](./xu-destinations/csv-via-http) (via HTTP)
-- [OData](./xu-destinations/odata/)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
-- [Flat File - CSV](./xu-destinations/csv-flat-file/)  (comma-seperated values)
+- [OData](./xu-destinations/odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
+- [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
             
             
 **Pull and Push Destinations**
