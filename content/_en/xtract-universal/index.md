@@ -11,7 +11,7 @@ lang: en_GB
 ---
 
 Welcome to the Online Help for Xtract Universal. 
-Xtract Universal enables you to extract data from SAP ERP and BW and load them to different [destination](./xtract-universal-/xu-destinations/) environments. 
+Xtract Universal enables you to extract data from SAP ERP and BW and load them to different [destination](./xu-destinations) environments. 
 
 The following overview shows which components can be used to extract data from SAP ERP and/or BW systems. 
 
