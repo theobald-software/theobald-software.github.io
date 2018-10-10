@@ -19,7 +19,7 @@ The Kerberos method uses a Kerberos server to authenticate the client. The serve
 NTLM works for technical reasons only with one hop. Kerberos 5 is more secure than NTLM and is therefore recommended. 
 
 More detail information about Kerberos you will find here:<br> 
-[http://technet.microsoft.com/en-us/library/bb742516.aspx](http://technet.microsoft.com/en-us/library/bb742516.aspx) 
+[http://technet.microsoft.com/en-us/library/bb742516.aspx](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb742516(v=technet.10)) 
 
 **Double Hop Problem**
 
