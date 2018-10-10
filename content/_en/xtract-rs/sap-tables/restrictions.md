@@ -22,6 +22,6 @@ After installation check setting "Use Custom Function" to enable the Z-function 
 
 For the high performance mass data extraction from SAP tables we have developed the new custom function *Z_XTRACT_IS_TABLE_COMPRESSION*.
 
-To install the new function module Z_XTRACT_IS_TABLE_COMPRESSION, please refer to [Custom function module for table compression](sap-customizing/custom-function-module-for-table-compression). 
+To install the new function module Z_XTRACT_IS_TABLE_COMPRESSION, please refer to [Custom function module for table compression](../sap-customizing/custom-function-module-for-table-compression). 
 
 We recommend to use this function module, which is the successor of the custom function *Z_XTRACT_IS_TABLE*.
