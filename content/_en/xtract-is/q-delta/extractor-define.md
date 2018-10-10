@@ -46,7 +46,7 @@ If activation is successful, the corresponding status messages will appear withi
 
 ![Deltaq-System-Parameters-Info](/img/content/Deltaq-System-Parameters-Info.png){:class="img-responsive"}
 
-![Deltaq-Generation-Successfull-Info](/img/content/Deltaq-Generation-Successfull-Info.jpg){:class="img-responsive"}
+![Deltaq-Generation-Successfull-Info](/img/content/Deltaq-Generation-Successfull-Info.png){:class="img-responsive"}
 
 Once activated successfully, the extraction can be executed. 
 
