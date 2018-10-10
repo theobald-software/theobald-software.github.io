@@ -28,14 +28,14 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=requirements
 
 | Component | SAP Release       | Requirements to the SAP system                                                    |
 |-----------|-------------------|-----------------------------------------------------------------------------------|
-| Table     | Rel.above 4.0B    | For most tasks, the installation of a [Z-module](../../sap-customizing/custom-function-module-for-table-compression) is necessary, but not for all. |
+| Table     | Rel.above 4.0B    | For most tasks, the installation of a [Z-module](../sap-customizing/custom-function-module-for-table-compression) is necessary, but not for all. |
 | Query     | Rel. above 4.0B   | Nothing.                                                                          |
 | BAPI      | Rel. above 4.0B   | Nothing.                                                                          |
-| Report    | Rel. above 4.0B   | [Installation of a Z-module is necessary](../../sap-customizing/install-report-custom-function-module)                                       |
+| Report    | Rel. above 4.0B   | [Installation of a Z-module is necessary](../sap-customizing/install-report-custom-function-module)                                       |
 | BW Cube   | Rel. above BW 3.1 | Nothing.                                                                          |
 | Hierarchy | Rel. above BW 3.1 | Nothing.                                                                          |
-| OHS       | Rel. above BW 3.5 | [Customizing](../../sap-customizing/preparation-for-ohs-in-bw).                                                                  |
-| DeltaQ    | Rel. above 4.6A   | [Customizing](../../sap-customizing/customizing-for-deltaq).                                                                  |
+| OHS       | Rel. above BW 3.5 | [Customizing](../sap-customizing/preparation-for-ohs-in-bw).                                                                  |
+| DeltaQ    | Rel. above 4.6A   | [Customizing](../sap-customizing/customizing-for-deltaq).                                                                  |
 
 
 **Operating System**
