@@ -17,7 +17,7 @@ In the **Travel Request** scenario employees can request business trips with the
 
 In a second step employees can enter their travel expenses for the created business trip using the **Travel Expenses** scenario. The entered travel expenses are posted to the SAP system after approval. It is also possible to create a completely new expense report without prior travel request. By entering the right SAP personell number also a personell administrator could create the expense report for the employee. 
 
-The travel scenarios run completely in SharePoint and Nintex. SAP integration has been accomplished with Theobald Software's [Call SAP Function Action](../nintex-workflow-custom-actions/call-sap-function-action/).     
+The travel scenarios run completely in SharePoint and Nintex. SAP integration has been accomplished with Theobald Software's [Call SAP Function Action](../nintex-workflow-custom-actions/call-sap-function-action).     
 
 Both scenarios can be used as templates. You are free to adjust or enhance the solutions according to your individual requirements.  
 
