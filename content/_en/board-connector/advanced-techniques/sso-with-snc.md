@@ -39,7 +39,7 @@ More information about the SSO configuration you will find here:<br> [http://hel
 
 NTLM (abbreviation for NT LAN Manager) is an authentication procedure for computer networks. NTLM will perform the SSO authentication via a challenge-response authentication between the client and the server. 
 
-More detail information about NTLM you will find here:<br> [http://technet.microsoft.com/en-us/query/aa378749](http://technet.microsoft.com/en-us/query/aa378749)
+More detail information about NTLM you will find here:<br> [http://technet.microsoft.com/en-us/query/aa378749](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831571(v=ws.11))
 
 
 **Download the DLLs**
