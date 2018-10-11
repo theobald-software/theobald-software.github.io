@@ -8,6 +8,7 @@ childidentifier: board-connector
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /BOARD-Connector-EN/
 ---
 
 Welcome to the Online Help for ERPConnect, which includes the following chapters:

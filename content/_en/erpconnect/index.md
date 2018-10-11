@@ -8,6 +8,7 @@ childidentifier: erpconnect
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+old_url: /ERPConnect-EN/
 ---
 
 Welcome to the Online Help for ERPConnect, which includes the following chapters:

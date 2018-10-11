@@ -8,6 +8,7 @@ childidentifier: xtract-rs
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+old_url: /Xtract-RS-EN/
 ---
 
 Welcome to the Online Help for Xtract RS, which includes the following chapters:
