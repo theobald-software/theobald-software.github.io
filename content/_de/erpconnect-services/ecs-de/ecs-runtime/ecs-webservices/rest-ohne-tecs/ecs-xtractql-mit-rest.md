@@ -25,9 +25,9 @@ function (data) {
 {% endhighlight %}
 </details>
 
-Die *ExecuteXQL-Operation* des *ERPConnectServiceRest.svc*-Webdienstes liefert ein JSON-Objekt als Rückgabe. Der AJAX-Abruf erfolgt über die *$.getJSON*-Methode von jQuery (siehe [www.jquery.com]()). 
+Die *ExecuteXQL-Operation* des *ERPConnectServiceRest.svc*-Webdienstes liefert ein JSON-Objekt als Rückgabe. Der AJAX-Abruf erfolgt über die *$.getJSON*-Methode von jQuery (siehe [www.jquery.com](http://www.jquery.com)). 
 
-JSON steht für JavaScript Object Notation und ist ein schlankes Datenaustauschformat. Für die Entwicklung mit jQuery und dem Einsatz von AJAX ist das Datentransfertool Fiddler2 ([www.fiddler2.com]()) sehr geeignet: 
+JSON steht für JavaScript Object Notation und ist ein schlankes Datenaustauschformat. Für die Entwicklung mit jQuery und dem Einsatz von AJAX ist das Datentransfertool Fiddler2 ([www.fiddler2.com](http://www.fiddler2.com)) sehr geeignet: 
 
 
 ![ECS-JSON-Fiddler](/img/content/ECS-JSON-Fiddler.png){:class="img-responsive"}

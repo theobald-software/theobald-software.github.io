@@ -14,6 +14,6 @@ You are currently running Xtract QV, you have defined your SAP source system(s) 
 
 You would like to migrate this scenario to Xtract Universal.
 
-Please refer to [info@theobald-software.com](info@theobald-software.com) or [info@us.theobald-software.com](info@us.theobald-software.com).
+Please refer to [info@theobald-software.com](mailto:info@theobald-software.com) or [info@us.theobald-software.com](mailto:info@us.theobald-software.com).
 We will provide you with all relevant information regarding this migration process.
 

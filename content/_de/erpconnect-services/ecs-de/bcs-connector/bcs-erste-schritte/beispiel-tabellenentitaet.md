@@ -34,7 +34,7 @@ Die Werte in der *Field* und der *Type* Spalte basieren auf der SAP-Tabellendefi
 
 Ändern Sie die Werte der Entitätseigenschaften wie im Beispiel unten dargestellt. Dies versetzt Sie in die Lage, benutzerfreundliche bzw. aussagekräftigere Namen für die Eigenschaften zu vergeben. Diese werden dann später im SharePoint UI angezeigt. 
 
-Für weiterführende Informationen lesen Sie die Kapitel [Entitätsdetails](./bcs-eine-neue-entitaet-erstellen/bcs-entitaetsdetails) und [Lokalisierung](bcs-eine-neue-entitaet-erstellen/bcs-lokalisierung).
+Für weiterführende Informationen lesen Sie die Kapitel [Entitätsdetails](./bcs-eine-neue-entitaet-erstellen/bcs-entitaetsdetails) und [Lokalisierung](./bcs-eine-neue-entitaet-erstellen/bcs-lokalisierung).
 
 ![BCS-Table-Entity-MAKT-With-Changed-Properties](/img/content/BCS-Table-Entity-MAKT-With-Changed-Properties.png){:class="img-responsive"}
 

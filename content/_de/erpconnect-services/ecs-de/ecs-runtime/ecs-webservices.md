@@ -115,8 +115,8 @@ Siehe folgende Beispiele in unserer Knowledge-Base:<br>
 [Showing SAP Data in a Grid within SharePoint with 50 lines of JavaScript](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/108/53/showing-sap-data-in-a-grid-within-sharepoint-with-50-lines-of-javascript)<br>
 
 **JavaScript-Bibliothek JSON2.js**<br>
-Die JavaScript-Bibliothek JSON2.js ist beim Umwandeln von JavaScript-Objekten in eine JSON-Zeichenkette sehr hilfreich. Die Datei kann auf der Internetseite [www.json.org](www.json.org) kostenlos heruntergeladen werden. In den hier gezeigten Programmbeispielen kommt die Funktion JSON.stringify zum Einsatz.    
+Die JavaScript-Bibliothek JSON2.js ist beim Umwandeln von JavaScript-Objekten in eine JSON-Zeichenkette sehr hilfreich. Die Datei kann auf der Internetseite [www.json.org](http://www.json.org) kostenlos heruntergeladen werden. In den hier gezeigten Programmbeispielen kommt die Funktion JSON.stringify zum Einsatz.    
 
-JSON steht für JavaScript Object Notation und ist ein schlankes Datenaustauschformat. Für die Entwicklung mit jQuery und dem Einsatz von AJAX ist das Datentransfertool Fiddler2 ([www.fiddler2.com](www.fiddler2.com)) sehr geeignet:  
+JSON steht für JavaScript Object Notation und ist ein schlankes Datenaustauschformat. Für die Entwicklung mit jQuery und dem Einsatz von AJAX ist das Datentransfertool Fiddler2 ([www.fiddler2.com](http://www.fiddler2.com)) sehr geeignet:  
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}     

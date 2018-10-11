@@ -24,9 +24,9 @@ function (data) {
 {% endhighlight %}
 </details>
 
-The *ExecuteXQL* operation of the *ERPConnectServiceRest.svc* Web service returns a JSON object. AJAX is enabled through the *$.getJSON*-method of jQuery (see [www.jquery.com](www.jquery.com)). 
+The *ExecuteXQL* operation of the *ERPConnectServiceRest.svc* Web service returns a JSON object. AJAX is enabled through the *$.getJSON*-method of jQuery (see [www.jquery.com](http://www.jquery.com)). 
 
-*JSON* is an acronym for *JavaScript Object Notation* and is a lightweight data exchange format. For the development with jQuery and the use of AJAX, the web debugger tool *Fiddler2* ([www.fiddler2.com](www.fiddler2.com)) can be very useful: 
+*JSON* is an acronym for *JavaScript Object Notation* and is a lightweight data exchange format. For the development with jQuery and the use of AJAX, the web debugger tool *Fiddler2* ([www.fiddler2.com](http://www.fiddler2.com)) can be very useful: 
 
 
 ![ECS-JSON-Fiddler](/img/content/ECS-JSON-Fiddler.png){:class="img-responsive" }

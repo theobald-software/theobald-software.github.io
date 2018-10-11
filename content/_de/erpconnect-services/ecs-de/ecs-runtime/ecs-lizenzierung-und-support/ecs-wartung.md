@@ -14,4 +14,4 @@ Sechs Monate Wartung sind bereits in der Lizenz enthalten, danach kann jeweils j
 
 Bei ausgelaufener Wartung verfällt das Anrecht auf Updates und Support.
 
-Bei technischen Schwierigkeiten kann der Support per Telefon oder per Mail [support@theobald-software.com]() erreicht werden.
+Bei technischen Schwierigkeiten kann der Support per Telefon oder per Mail [support@theobald-software.com](mailto:support@theobald-software.com) erreicht werden.
