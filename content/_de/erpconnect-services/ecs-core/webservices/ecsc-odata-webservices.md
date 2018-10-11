@@ -52,4 +52,4 @@ Sie finden den Webservice anschließend auf der Management-Site Ihrer ECS Core-M
 
 Wie Sie den Webservice in einem REST-Client testen können, erfahren Sie [hier](./testen-des-webservice-in-einem-rest-client).
 
-Wie Sie den Webservice in Nintex für Office 365 aufrufen können, wird [hier](../../sap-integration-nintex/nintex-workflow-fuer-office-365/) beschrieben.  
+Wie Sie den Webservice in Nintex für Office 365 aufrufen können, wird [hier](../../sap-integration-nintex/nintex-workflow-fuer-office-365) beschrieben.  

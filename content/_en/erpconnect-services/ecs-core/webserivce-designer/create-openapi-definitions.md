@@ -25,7 +25,7 @@ Additional generic web services will be added to the definition:
 - ECS Execute SAP Function: With this generic service SAP function calls are possible. Examples for the service definition can be found [here](../../ecs/erpconnect-services-runtime/web-services/rest-without-tecs/function-module-with-rest). 
 - ECS Get SAP Function Metadata: To determine the input and output parameters of the SAP function for the *ECS Execute Function* action you can use this service first. 
 - ECS Table Query: This generic service enables you to call any SAP table or table view. Examples for the service definition can be found [here](../../ecs/erpconnect-services-runtime/web-services/rest-without-tecs/table-with-rest). 
-- ECS XQL Query: With the ECS XQL Query service you can send specific XtractQL (short: XQL) query statements for read and write access to the SAP system. XQL and its syntax is described in detail [here](../../ecs/xtractql/).
+- ECS XQL Query: With the ECS XQL Query service you can send specific XtractQL (short: XQL) query statements for read and write access to the SAP system. XQL and its syntax is described in detail [here](../../ecs/xtractql).
 
 **Use variable names as "title" parameter**<br>
 With this setting shortened titles for the web service parameters will be used. The full technical path from the Request and Response Body is left away (i.e. *Result* instead of *Result Result*).  

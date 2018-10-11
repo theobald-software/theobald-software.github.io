@@ -27,7 +27,7 @@ tEcs.testSapConnection({
 });
 ```
 
-Another option is to build a query with browser extensions: [POSTMAN](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm) (Chrome) or [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox).
+Another option is to build a query with browser extensions: [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) or [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox).
 
 Here you must notice how the Authorization Header is set:
 

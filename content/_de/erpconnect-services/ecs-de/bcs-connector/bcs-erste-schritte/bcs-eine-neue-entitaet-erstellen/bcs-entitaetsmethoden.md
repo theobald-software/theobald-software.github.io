@@ -28,7 +28,7 @@ Im New Method Dialogfenster definieren Sie die Methode, die Sie erstellen möcht
 Weiterführende Informationen über das Erstellen von Entitätsmethoden finden Sie in den nachfolgenden Beispielen:
 
 [Beispiel Funktionsentität](../beispiel-funktionsentitaet) <br>
-[Schreib/Lese Zugriff](../../bcs-fortgeschrittene-techniken/bcs-schreib-lese-zugriff/) 
+[Schreib/Lese Zugriff](../../bcs-fortgeschrittene-techniken/bcs-schreib-lese-zugriff) 
 
 Betätigen Sie die Edit Schaltfläche, um Änderungen an einer vorhandenen Entitätsmethode vorzunehmen.
 

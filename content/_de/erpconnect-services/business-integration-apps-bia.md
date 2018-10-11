@@ -20,7 +20,7 @@ Im Moment steht bereits eine Anzahl an Business Integration Apps für ausgewähl
 - Angebotserstellung (SAP Quotation)  
 - Abwesenheitsantrag und- genehmigung (Leave Request and Leave Approval)
 - Arbeitszeitblatt (CATS) 
-- [Reiseantrag (Travel Request) und Reisekostenabrechnung (Travel Expenses) - Szenario mit Nintex Workflow](./sap-integration-nintex/nintex-workflow-sharepoint/call_sap_function_action1/reiseantrag_reisekostenabrechnung/). 
+- [Reiseantrag (Travel Request) und Reisekostenabrechnung (Travel Expenses) - Szenario mit Nintex Workflow](./sap-integration-nintex/nintex-workflow-sharepoint/call_sap_function_action1/reiseantrag_reisekostenabrechnung). 
 
 Die aufgeführten Apps stellen fertige Beispiele für die Möglichkeiten der App-Entwicklung mit ERPConnect Services dar. Grundsätzlich können Sie die aufgeführten Anwendungen auf Ihre Unternehmensbedürfnisse anpassen oder eigene Business Integration Apps programmieren. Die Theobald Software GmbH berät Sie gerne dabei.
 

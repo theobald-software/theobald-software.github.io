@@ -52,7 +52,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=systemvoraussetzungen1
 
 **ERPConnect Services for SharePoint 2013**
 
-- Einzelheiten zu Voraussetzungen und zur Installation der ERPConnect Services finden Sie [hier](../../../../ecs-de/ecs-voraussetzungen/). 
+- Einzelheiten zu Voraussetzungen und zur Installation der ERPConnect Services finden Sie [hier](../../../../ecs-de/ecs-voraussetzungen). 
 
 **Nintex Workflow Custom Actions** 
 

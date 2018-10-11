@@ -10,7 +10,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-validation
 ---
 
-Um sicherzustellen, dass alles korrekt konfiguriert ist und die Verbindungseinstellungen wie gewünscht funktionieren, können Sie die [tecs-Bibliothek](https://static.theobald-software.com/theobald.ecs.micro/5.4.2/) nutzen (empfohlen: Abschnitt *Live Test of your ECSCore*), sowie reines Javascript oder REST-Clients wie [POSTMAN](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm) (Chrome) oder [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox) verwenden, die als Browsererweiterungen frei verfügbar sind.
+Um sicherzustellen, dass alles korrekt konfiguriert ist und die Verbindungseinstellungen wie gewünscht funktionieren, können Sie die [tecs-Bibliothek](https://static.theobald-software.com/theobald.ecs.micro/5.4.2/) nutzen (empfohlen: Abschnitt *Live Test of your ECSCore*), sowie reines Javascript oder REST-Clients wie [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) oder [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox) verwenden, die als Browsererweiterungen frei verfügbar sind.
 
 Mit tEcs:
 ```
@@ -32,5 +32,5 @@ APIKEY  =  BASE64 kodierter ECSCore API-Schlüssel
 
 z. B. *Authorization*: "APIKEY E370FB721AFA4EB2A86CC624Eg4B6890C==="
 
-Beispiele für REST-Anfragen finden Sie in unserer Online-Hilfe unter *[ERPConnect Services Runtime> Webservices>REST ohne tEcs](../../ecs-de/ecs-runtime/ecs-webservices/rest-ohne-tecs/)* (z.B. Anfrage auf eine Tabelle oder einen Funktionsbaustein).
+Beispiele für REST-Anfragen finden Sie in unserer Online-Hilfe unter *[ERPConnect Services Runtime> Webservices>REST ohne tEcs](../../ecs-de/ecs-runtime/ecs-webservices/rest-ohne-tecs)* (z.B. Anfrage auf eine Tabelle oder einen Funktionsbaustein).
 

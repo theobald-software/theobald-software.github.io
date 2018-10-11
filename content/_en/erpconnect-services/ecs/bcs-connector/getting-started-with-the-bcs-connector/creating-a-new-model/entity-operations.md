@@ -29,7 +29,7 @@ n the *New Method* dialog, specify the type of method that you want to create:
 For further information on creating entity operations, refer to the following examples:
 
 [Function Entity Example](../function-entity-example)
-[Creating a CRUD Solution](../../advanced-solutions/read-write-access/)
+[Creating a CRUD Solution](../../advanced-solutions/read-write-access)
 
 Select the Edit button to make changes to an existing entity operation.
 

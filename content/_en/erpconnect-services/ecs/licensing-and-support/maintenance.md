@@ -14,4 +14,4 @@ When you purchase a license, six months of maintenance are already included. Aft
 After the maintenance period has expired, the customer is no longer eligible for product updates and support.
 Please visit our Web site for licensing and pricing information: [http://helptest.theobald-software.com](http://helptest.theobald-software.com)
 
-In case of technical issues, please contact our Support via phone or via mail at [support@theobald-software.com](support@theobald-software.com).
+In case of technical issues, please contact our Support via phone or via mail at [support@theobald-software.com](mailto:support@theobald-software.com).
