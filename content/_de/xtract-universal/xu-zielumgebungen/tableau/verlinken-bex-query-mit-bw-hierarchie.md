@@ -52,4 +52,4 @@ Die beiden Extraktionen sind nun verlinkt und Sie können Daten aus beiden Extra
 
 ![Tableau-Linked-Data-Sources](/img/content/Tableau-Linked-Data-Sources.jpg){:class="img-responsive"}
 
-Für weitere Informationen über Beziehungen in Tableau siehe [Tableau Online Help](https://www.tableau.com/page-not-found#multipleconnections_relationships.html). 
+Für weitere Informationen über Beziehungen in Tableau siehe [Tableau Online Help](https://www.tableau.com/support/online). 

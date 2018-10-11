@@ -3,7 +3,7 @@ layout: page
 title: REST web services
 description: REST web services
 product: erpconnect-services
-parent: webserivce-designer
+parent: webservice-designer
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

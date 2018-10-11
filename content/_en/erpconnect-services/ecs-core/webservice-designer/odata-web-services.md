@@ -3,7 +3,7 @@ layout: page
 title: OData web services
 description: OData web services
 product: erpconnect-services
-parent: webserivce-designer
+parent: webservice-designer
 permalink: /:collection/:path
 weight: 7
 lang: en_GB

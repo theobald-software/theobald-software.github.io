@@ -3,14 +3,14 @@ layout: page
 title: Create a new web service for ECS Core
 description: Create a new web service for ECS Core
 product: erpconnect-services
-parent: webserivce-designer
+parent: webservice-designer
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=create_a_new_web_service_for_ecscore
 ---
 
-The basics for creating SAP-integrated web services with the WebService Designer are described in detail in our OnlineHelp under [WebService Designer](../).  
+The basics for creating SAP-integrated web services with the WebService Designer are described in detail in our OnlineHelp under [WebService Designer](../webservice-designer).  
 
 However when creating web services for ECS Core there are some specifics you have to take into account which we discuss closer in the following chapters. 
 

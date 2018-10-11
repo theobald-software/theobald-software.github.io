@@ -4,7 +4,7 @@ title: WebService Designer
 description: WebService Designer
 product: erpconnect-services
 parent: ecs-core
-childidentifier: webserivce-designer
+childidentifier: webservice-designer
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

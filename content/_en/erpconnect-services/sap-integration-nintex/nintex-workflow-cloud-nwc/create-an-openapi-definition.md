@@ -10,6 +10,6 @@ lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=create_open_api_definitions
 ---
 
-For SAP integration with NWC we use the Nintex Xtensions framework. This framework allows to import OpenAPI definitions as custom connectors into the NWC tenancy. With the WebService Designer the export of web services into OpenAPI definitions is supported and described in detail [here](../../ecs-core/webserivce-designer/create-openapi-definitions). 
+For SAP integration with NWC we use the Nintex Xtensions framework. This framework allows to import OpenAPI definitions as custom connectors into the NWC tenancy. With the WebService Designer the export of web services into OpenAPI definitions is supported and described in detail [here](../../ecs-core/webservice-designer/create-openapi-definitions). 
 
 To proceed with the example export the previously built web service for purchase requisition creation to OpenAPI.   

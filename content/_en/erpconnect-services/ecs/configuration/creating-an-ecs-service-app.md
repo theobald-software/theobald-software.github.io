@@ -24,7 +24,7 @@ In the following steps, we will utilize an already existing Secure Store Service
 Alternatively you can the technical access (SAP user name and password).
 
 See [Creating a Secure Store Servicese Application](./creating-a-secure-store-app) for further information.<br>
-See [SAP Authentication](../../erpconnect-services-runtime/sap-connection/sap-authentication)  for further information on authentication with ERPConnect Services Runtime.
+See [SAP Authentication](../erpconnect-services-runtime/sap-connection/sap-authentication) for further information on authentication with ERPConnect Services Runtime.
 
 ![ECS-Create-Application-02](/img/content/ECS-Create-Application-02.png){:class="img-responsive" }
 

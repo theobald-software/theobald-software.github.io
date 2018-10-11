@@ -118,8 +118,8 @@ Check the following Samples in our knowledge base:<br>
 [Showing SAP Data in a Grid within SharePoint with 50 lines of JavaScript](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/108/53/showing-sap-data-in-a-grid-within-sharepoint-with-50-lines-of-javascript)<br>
 
 **JavaScript library JSON2.js**<br>
-The JavaScript library JSON2.js is useful to convert JavaScript objects to JSON strings. The library is available for download at [www.json.org](www.json.org). The code examples in this chapter make use of the function *JSON.stringify* which is provided by the library.
+The JavaScript library JSON2.js is useful to convert JavaScript objects to JSON strings. The library is available for download at [www.json.org](http://www.json.org). The code examples in this chapter make use of the function *JSON.stringify* which is provided by the library.
 
-*JSON* is an acronym for *JavaScript Object Notation* and is a lightweight data exchange format. For the development with jQuery and the use of AJAX, the web debugger tool Fiddler2 ([www.fiddler2.com](www.fiddler2.com)) can be very useful.
+*JSON* is an acronym for *JavaScript Object Notation* and is a lightweight data exchange format. For the development with jQuery and the use of AJAX, the web debugger tool [Fiddler2](http://www.fiddler2.com) can be very useful.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

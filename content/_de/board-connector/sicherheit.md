@@ -31,7 +31,7 @@ Sie können die Ausführung von Extraktionen auf einzelne Benutzer und Benutzerg
 
 Zusätzlich können Sie auf Extraktionsebene festlegen, dass Benutzer Ihre SAP-Anmeldedaten (Benutzername und Kennwort) bei der Ausführung der Extraktion angeben müssen. Nähere Informationen hierzu finden Sie im Kapitel [Extraktionssicherheit](./sicherheit/extraktionssicherheit).
 
-Zusätzlich können Sie auf Verbindungsebene festlegen, dass Benutzer sich über Single Sign On auf dem SAP-System anmelden. Dazu siehe das Kapitel [SSO mit SNC](../fortgeschrittene-techniken/sso-und-snc) .
+Zusätzlich können Sie auf Verbindungsebene festlegen, dass Benutzer sich über Single Sign On auf dem SAP-System anmelden. Dazu siehe das Kapitel [SSO mit SNC](./fortgeschrittene-techniken/sso-und-snc) .
 
 **Authentifizierung**
 

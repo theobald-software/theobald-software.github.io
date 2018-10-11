@@ -31,7 +31,7 @@ You will see the new entity 'CUSTOMER_T' displayed in the main BCS Connector win
 
 ![BCS-Function-Entity-New-CUSTOMERT](/img/content/BCS-Function-Entity-New-CUSTOMERT.png){:class="img-responsive"}
 
-The entity object will be displayed. For additional information see [Entity Details](./creating-a-new-model/entity-detials).
+The entity object will be displayed. For additional information see [Entity Details](./creating-a-new-model/entity-details).
 
 For this example, change the following value:
 

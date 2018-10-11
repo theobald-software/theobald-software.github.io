@@ -12,7 +12,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=configure_the_nwc_workflow
 
 Create a new NWC workflow. The newly created custom connector is located on the lefthand side among the standard connectors. You can change the order of the actions in the NWC settings under *Action and connector sorting*.
 
-*PurchaseRequisiton* is the name of the web service operation previously created in the [WebService Designer](../../ecs-core/webserivce-designer/rest-web-services). Optional: The other actions displayed in the custom connector are generic functions that can additionally be created by checking the *Add default actions to the definition* option in the WebService Designer's OpenAPI Options.  
+*PurchaseRequisiton* is the name of the web service operation previously created in the [WebService Designer](../../ecs-core/webservice-designer/rest-web-services). Optional: The other actions displayed in the custom connector are generic functions that can additionally be created by checking the *Add default actions to the definition* option in the WebService Designer's OpenAPI Options.  
 
 Drag & drop the *PurchaseRequisition* action to the designer and open the configuration screen by clicking on the connector: 
 

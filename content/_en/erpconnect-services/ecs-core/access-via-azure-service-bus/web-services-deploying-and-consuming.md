@@ -11,8 +11,8 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=web_service_authentication1
 ---
 
 Access via Azure Service Bus can be used for deploying and consuming web services built with the WebService Designer. <br>
-How to create cloud enabled ECS Core web services is explained [here](../webserivce-designer).    <br>
-Basic information about web service authentication with ECS Core is described in [this](../webserivce-designer/web-service-authentication) chapter.     
+How to create cloud enabled ECS Core web services is explained [here](../webservice-designer).    <br>
+Basic information about web service authentication with ECS Core is described in [this](../webservice-designer/web-service-authentication) chapter.     
 
 **Authentication between the WebService Designer and ECS Core** 
 
