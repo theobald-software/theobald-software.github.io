@@ -15,7 +15,7 @@ You are also able to call the metadata information of an extraction using an HTT
 **Columns of an extraction**
 
 The URL pattern is: 
-[http://[host]:[port]/metadata/?name=[extractionName]](http://[host]:[port]/metadata/?name=[extractionName])
+[http://[host]:[port]/metadata/?name=[extractionName]]()
 
 [extractionName] has to be replaced with the extraction name.
 
@@ -49,7 +49,7 @@ POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS<br>
 
 Parameters (Variables)
 
-The URL [http://[host]:[port]/parameters/?name=[extractionName]](http://[host]:[port]/parameters/?name=[extractionName])<br>
+The URL [http://[host]:[port]/parameters/?name=[extractionName]]()<br>
 delivers the list of the available parameters including the custom ones, that will be shown in the Run dialog. 
 
 In the following examples the URL delivers the following parameters: 
@@ -78,6 +78,6 @@ Product version
 
 You can find out the current verion numbers by using the following HTTP requests:
 
-[http://localhost:8065/CurrentVersion](http://localhost:8065/CurrentVersion)<br>
-[http://localhost:8065/ProductVersionHistory](http://localhost:8065/ProductVersionHistory)<br>
-[http://localhost:8065/KernelVersionHistory](http://localhost:8065/KernelVersionHistory)
+[http://localhost:8065/CurrentVersion]()<br>
+[http://localhost:8065/ProductVersionHistory]()<br>
+[http://localhost:8065/KernelVersionHistory]()

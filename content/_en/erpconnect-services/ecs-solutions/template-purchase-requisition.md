@@ -29,7 +29,7 @@ Overview of the purchase requisitions:
 
 **Release a purchase requisition:**
 
-![ECS-BANf-SP-Release](/img/content/ECS-BANf-SP-Release.png){:class="img-responsive"}
+![ECS-BANf-SP-Release](/img/content/ECS-BANf-SP-Release.jpg){:class="img-responsive"}
 
 The template contains all necessary resources and documents to deploy the solution to your own SharePoint 2010 environment. In addition, the complete Visual Studio 2010 solution can be downloaded to either customize and enhance the solution or use it as a template for your own solutions.
 
