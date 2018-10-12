@@ -10,5 +10,5 @@ weight: 1
 lang: en_GB
 ---
 
-Thei is the Xtract for Alteryx help page.
+This is the Xtract for Alteryx help page.
 We're still working on the content.

@@ -10,5 +10,5 @@ weight: 1
 lang: de_DE
 ---
 
-Die ist die Hilfe-Seite von Xtract for Alteryx.
+Dies ist die Hilfe-Seite von Xtract for Alteryx.
 Wir arbeiten derzeit noch an dem Inhalt.
