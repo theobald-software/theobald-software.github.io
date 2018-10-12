@@ -1,0 +1,280 @@
+FUNCTION Z_XTRACT_IS_REMOTE_REPORT.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(PROGRAM_NAME) LIKE  RPY_PROG-PROGNAME
+*"     VALUE(ACTIONID) LIKE  RPY_PROG-PROG_TYPE DEFAULT '0'
+*"     VALUE(VARIANT) LIKE  AQADEF-VARI OPTIONAL
+*"     VALUE(JOBNAME) LIKE  TBTCJOB-JOBNAME DEFAULT 'XTRACT'
+*"     VALUE(SPOOLID) LIKE  TSP01-RQIDENT OPTIONAL
+*"     VALUE(JOBCOUNT) LIKE  TBTCP-JOBCOUNT OPTIONAL
+*"     VALUE(SPOOLDESTINATION) LIKE  PRI_PARAMS-PDEST DEFAULT 'LOCL'
+*"  EXPORTING
+*"     VALUE(JOBNUMBER) LIKE  TBTCJOB-JOBCOUNT
+*"     VALUE(JOBSPOOLID) LIKE  TBTCP-LISTIDENT
+*"     VALUE(JOBSTATUS) LIKE  TBTCO-STATUS
+*"  TABLES
+*"      SELECTION_TABLE STRUCTURE  RSPARAMS
+*"      LIST_OUTPUT STRUCTURE  TAB512
+*"      TEXTELEMENTS STRUCTURE  TEXTPOOL
+*"  EXCEPTIONS
+*"      REPORT_NOT_FOUND
+*"      LIST_FROM_MEMORY_NOT_FOUND
+*"      LIST_FROM_MEMORY_OTHERS
+*"      LIST_TO_ASCI_EMPTY
+*"      LIST_TO_ASCT_INDEX_INVALID
+*"      LIST_TO_ASCT_OTHERS
+*"      REFRESH_FROM_SELECTOPTIONS
+*"      RPY_PROGRAM_READ_FAILURE
+*"----------------------------------------------------------------------
+
+* ActionID defines, which processes to make
+* M = Metadata
+* X = Execute directly
+* B = Execute Batch and send to spool
+* S = Get Spool
+* J = Job Info
+
+  data listobj like ABAPLIST occurs 0 with header line.
+  tables tbtcp.
+
+  if Actionid eq 'M'.
+* fetch the meta data of a report
+* and put it  to table SELECTION_TABLE
+    refresh SELECTION_TABLE.
+
+    CALL FUNCTION 'RS_REFRESH_FROM_SELECTOPTIONS'
+  EXPORTING
+    CURR_REPORT           = PROGRAM_NAME
+* IMPORTING
+*   SP                    =
+  TABLES
+    SELECTION_TABLE       = SELECTION_TABLE
+ EXCEPTIONS
+   NOT_FOUND             = 1
+   NO_REPORT             = 2
+   OTHERS                = 3.
+
+
+    IF SY-SUBRC <> 0.
+      raise REFRESH_FROM_SELECTOPTIONS.
+    ENDIF.
+
+READ TEXTPOOL PROGRAM_NAME INTO TEXTELEMENTS LANGUAGE sy-langu.
+
+    loop at TEXTELEMENTS.
+      if textelements-entry eq 'D       .'.
+
+        data DTEL like RPY_DTEL.
+        data key like RPY_DTEL-DTELNAME.
+
+        move textelements-key to key.
+
+        CALL FUNCTION 'RPY_DATAELEMENT_READ'
+          EXPORTING
+*   ACTIVATION_TYPE_I       = 'M'
+            DATAELEMENT_NAME        = key
+*   LANGUAGE                = SY-LANGU
+*   WITH_DOCU               = ' '
+*   DOCUTYPE                = 'U'
+         IMPORTING
+           DTEL_INF                = DTEL
+*   ACTIVATION_TYPE_O       =
+* TABLES
+*   DOCU_TABLE_USER         =
+*   DOCU_TABLE_TECH         =
+         EXCEPTIONS
+           CANCELLED               = 1
+           NOT_FOUND               = 2
+           PERMISSION_ERROR        = 3
+           ILLEGAL_TYPE            = 4
+           OTHERS                  = 5
+                  .
+        IF SY-SUBRC eq 0.
+
+          textelements-entry = dtel-SCRTEXT_M.
+          modify textelements.
+
+        ENDIF.
+
+
+
+      endif.
+    endloop.
+
+
+endif.
+
+
+    if actionid eq 'B'.
+
+* Open new batch job
+* send the program to batch and return the job number
+
+      DATA: print_parameters TYPE pri_params.
+
+      CALL FUNCTION 'JOB_OPEN'
+        EXPORTING
+          jobname          = jobname
+        IMPORTING
+          jobcount         = jobnumber
+        EXCEPTIONS
+          cant_create_job  = 1
+          invalid_job_data = 2
+          jobname_missing  = 3
+          OTHERS           = 4.
+
+      SUBMIT (PROGRAM_NAME)
+                 USING SELECTION-SET VARIANT
+                 WITH  SELECTION-TABLE SELECTION_TABLE
+                 TO SAP-SPOOL
+*                   SPOOL PARAMETERS print_parameters
+                 line-size 200
+                 IMMEDIATely ' '
+                 KEEP IN SPOOL 'X'
+                 LIST NAME 'XTRACTTEMP'
+                 DESTINATION SPOOLDESTINATION
+                 WITHOUT SPOOL DYNPRO
+                 VIA JOB jobname number jobnumber
+                 AND RETURN.
+
+      CALL FUNCTION 'JOB_CLOSE'
+        EXPORTING
+          jobcount             = jobnumber
+          jobname              = jobname
+          strtimmed            = 'X'
+        EXCEPTIONS
+          cant_start_immediate = 1
+          invalid_startdate    = 2
+          jobname_missing      = 3
+          job_close_failed     = 4
+          job_nosteps          = 5
+          job_notex            = 6
+          lock_failed          = 7
+          OTHERS               = 8.
+
+    endif.
+
+    if  actionid = 'J'.
+* determine the state of a batch job to check
+* if it has finished
+
+        select single listident into JOBSPOOLID from tbtcp where jobname = jobname
+        and jobcount = JOBCOUNT.
+
+        select single status into JOBSTATUS from tbtco where jobname = jobname
+        and jobcount = JOBCOUNT.
+
+    endif.
+
+
+
+
+
+    if actionid = 'X'.
+* direct execution of the report
+
+
+      SUBMIT (PROGRAM_NAME)
+             USING SELECTION-SET VARIANT
+             WITH  SELECTION-TABLE SELECTION_TABLE
+             EXPORTING LIST TO MEMORY
+             AND RETURN.
+
+      data mess like BDCMSGCOLL occurs 0 with header line.
+
+
+      CALL FUNCTION 'GET_MESSAGES'
+        TABLES
+          MESSAGES = mess.
+
+
+      CALL FUNCTION 'LIST_FROM_MEMORY'
+        TABLES
+          LISTOBJECT = listobj
+        EXCEPTIONS
+          NOT_FOUND  = 1
+          OTHERS     = 2.
+      IF SY-SUBRC = 1.
+        raise LIST_FROM_MEMORY_NOT_FOUND.
+      ENDIF.
+
+      IF SY-SUBRC = 2.
+        raise LIST_FROM_MEMORY_OTHERS.
+      ENDIF.
+
+
+      CALL FUNCTION 'LIST_TO_ASCI'
+* EXPORTING
+*   LIST_INDEX               = -1
+*   WITH_LINE_BREAK          = ' '
+        TABLES
+          LISTASCI                 = list_output
+         LISTOBJECT               = listobj
+       EXCEPTIONS
+         EMPTY_LIST               = 1
+         LIST_INDEX_INVALID       = 2
+         OTHERS                   = 3
+                .
+      IF SY-SUBRC = 1.
+        raise LIST_TO_ASCI_empty.
+      ENDIF.
+      IF SY-SUBRC = 2.
+        raise LIST_TO_ASCT_INDEX_INVALID.
+      ENDIF.
+      IF SY-SUBRC = 3.
+        raise LIST_TO_ASCT_OTHERS.
+      ENDIF.
+
+    endif.
+
+
+  if actionid = 'S'.
+* read the spool output and return it
+    data: First_line type i,
+      last_line type i.
+
+    SUBMIT RSPOLIST EXPORTING LIST TO MEMORY AND RETURN
+                  WITH RQIDENT = spoolid
+                  WITH FIRST = FIRST_LINE
+                  WITH LAST = LAST_LINE.
+
+    CALL FUNCTION 'LIST_FROM_MEMORY'
+      TABLES
+        LISTOBJECT = listobj
+      EXCEPTIONS
+        NOT_FOUND  = 1
+        OTHERS     = 2.
+    IF SY-SUBRC = 1.
+      raise LIST_FROM_MEMORY_NOT_FOUND.
+    ENDIF.
+
+    IF SY-SUBRC = 2.
+      raise LIST_FROM_MEMORY_OTHERS.
+    ENDIF.
+
+    CALL FUNCTION 'LIST_TO_ASCI'
+*        EXPORTING
+*             LIST_INDEX         = -1
+         TABLES
+              LISTASCI           = list_output
+              LISTOBJECT         = listobj
+         EXCEPTIONS
+              EMPTY_LIST         = 1
+              LIST_INDEX_INVALID = 2
+              OTHERS             = 3.
+
+    IF SY-SUBRC = 1.
+      raise LIST_TO_ASCI_empty.
+    ENDIF.
+    IF SY-SUBRC = 2.
+      raise LIST_TO_ASCT_INDEX_INVALID.
+    ENDIF.
+    IF SY-SUBRC = 3.
+      raise LIST_TO_ASCT_OTHERS.
+    ENDIF.
+
+  endif.
+
+
+ENDFUNCTION.

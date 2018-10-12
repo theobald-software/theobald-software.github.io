@@ -1,0 +1,4705 @@
+FUNCTION Z_XTRACT_IS_TABLE_COMPRESSION .
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(QUERY_TABLE) TYPE  TABNAME OPTIONAL
+*"     VALUE(DELIMITER) TYPE  CHAR1 OPTIONAL
+*"     VALUE(NO_DATA) TYPE  CHAR1 OPTIONAL
+*"     VALUE(ROWSKIPS) TYPE  INT4 OPTIONAL
+*"     VALUE(ROWCOUNT) TYPE  INT4 OPTIONAL
+*"     VALUE(PACKAGESIZE) TYPE  INT4 DEFAULT '50000'
+*"     VALUE(USEFIELDEXITS) TYPE  CHAR1 OPTIONAL
+*"  EXPORTING
+*"     VALUE(RECLEN) TYPE  INT4
+*"     VALUE(RECCOUNT) TYPE  INT4
+*"     VALUE(MORE) TYPE  CHAR1
+*"     VALUE(RETURN) TYPE  SYMSGNO
+*"  TABLES
+*"      OPTIONS STRUCTURE  RFC_DB_OPT OPTIONAL
+*"      FIELDS STRUCTURE  DD03P OPTIONAL
+*"      DATA STRUCTURE  CHAR8000 OPTIONAL
+*"      PKWHERECLAUSE STRUCTURE  ZXTRACTRANGE OPTIONAL
+*"  EXCEPTIONS
+*"      NOT_AUTHORIZED
+*"      TABLE_NOT_AVAILABLE
+*"----------------------------------------------------------------------
+
+  DATA user_where_string    TYPE string.
+
+
+  CALL FUNCTION 'VIEW_AUTHORITY_CHECK'
+    EXPORTING
+      VIEW_ACTION                    = 'S'
+      VIEW_NAME                      = QUERY_TABLE
+    EXCEPTIONS
+      NO_AUTHORITY                   = 2
+      NO_CLIENTINDEPENDENT_AUTHORITY = 2
+      NO_LINEDEPENDENT_AUTHORITY     = 2
+      OTHERS                         = 1.
+
+  IF SY-SUBRC = 2.
+    RAISE NOT_AUTHORIZED.
+  ELSEIF SY-SUBRC = 1.
+    RAISE TABLE_NOT_AVAILABLE.
+  ENDIF.
+
+  DATA in_fields TYPE STANDARD TABLE OF ZXTRACTSELFIELDS
+                            WITH HEADER LINE.
+
+  loop at FIELDS.
+    move fields-fieldname to in_fields-fieldname.
+    append in_fields.
+  endloop.
+
+  clear user_where_string.
+
+  loop at OPTIONS.
+    concatenate user_where_string options-text
+    into user_where_string separated by space.
+  endloop.
+
+  CLEAR: RECLEN, RECCOUNT, MORE.
+  CLEAR: DATA, FIELDS.
+
+  CLEAR:
+    t_selectfields,
+    t_dd03p,
+    t_return,
+    t_warnings,
+    t_field,
+    total_readrowcount,
+    total_extractrowcount,
+    total_writerowcount,
+    current_logsequencenbr,
+    stat_extractid,
+    open_operator.
+
+  REFRESH:
+    DATA,
+    FIELDS,
+    t_extractlog,
+    t_selectfields,
+    t_dd03p,
+    t_return,
+    t_warnings,
+    t_field.
+
+  CLEAR: rc, tabclass, viewclass, record_length.
+
+  CONCATENATE
+    '00000000000000000000000000000000000000000000000000'
+    '00000000000000000000000000000000000000000000000000'
+    INTO c_hexnull.
+
+* Operation codes
+  CONSTANTS:
+    c_total_runtime(30)      TYPE c VALUE
+      'TotalRuntime',
+    c_batch_read(30)         TYPE c VALUE
+      'BatchRead',
+    c_batch_convert(30)      TYPE c VALUE
+      'BatchConvert',
+    c_batch_readconvert(30)  TYPE c VALUE
+      'BatchReadConvert',
+    c_batch_convertwrite(30) TYPE c VALUE
+      'BatchConvertWrite',
+    c_batch_write(30) TYPE c VALUE
+      'BatchWrite',
+    c_total_extracttime(30)  TYPE c VALUE
+      'TotalExtracttime'.
+
+
+*check table name DD02L
+  PERFORM check_QUERY_TABLE USING QUERY_TABLE
+                           CHANGING tabclass viewclass.
+* check return table for errors
+  IF NOT t_return[] IS INITIAL.
+    RETURN = '011'.
+    EXIT.
+  ENDIF.
+
+* check size of input tables to be reasonable to reduce
+* risk of DOS attacks by allocating too much memory
+  DESCRIBE TABLE IN_FIELDS LINES tablerowcount.
+  IF tablerowcount > c_maxfieldcount.
+    RETURN = '012'.
+  ENDIF.
+
+  IF ROWCOUNT <= 0.
+    ROWCOUNT = c_max_int.
+  ENDIF.
+
+* Validate PACKAGESIZE, set to a safe default
+  IF PACKAGESIZE <= 0.
+    PACKAGESIZE = 50000.
+  ENDIF.
+
+
+* Make sure row skip is not greater than packet size
+  IF ROWSKIPS >= PACKAGESIZE.
+    ROWSKIPS = PACKAGESIZE - 1.
+    WRITE ROWSKIPS TO rowskip_c.
+  ENDIF.
+
+* if ROWSKIPS and ROWCOUNT both are specified, we have
+* to increase ROWCOUNT by ROWSKIPS in order to extract
+* up to ROWCOUNT rows. Watch the c_max_int limit to avoid
+* overflow
+  rowcountheadroom = c_max_int - ROWCOUNT.
+  IF     ROWSKIPS  >  0
+     AND ROWSKIPS  <= rowcountheadroom.
+    ADD ROWSKIPS TO ROWCOUNT.
+  ELSEIF     ROWSKIPS > 0
+         AND ROWSKIPS > rowcountheadroom
+         AND ROWCOUNT <  c_max_int.
+    ROWCOUNT = c_max_int.
+  ENDIF.
+
+
+* for other modes these parameters are irrelevant
+  CLEAR:
+    c_max_write_attempts,
+    c_retry_delay.
+
+
+
+* check return table for errors
+  IF NOT t_return[] IS INITIAL.
+    RETURN = '013'.
+    EXIT.
+  ENDIF.
+
+* log beginning of extract work
+  stat_sourcetable = QUERY_TABLE.
+  stat_rowlimit    = ROWCOUNT.
+  stat_batchsize   = PACKAGESIZE.
+
+  PERFORM detect_abap_version CHANGING abapversion.
+  PERFORM set_neg_max_int USING abapversion
+                       CHANGING c_max_int_neg.
+
+********************************
+* get metadata
+********************************
+  PERFORM get_table_metadata TABLES
+                               FIELDS
+                               t_dd03p
+                             CHANGING
+                               QUERY_TABLE.
+* In < 46C systems are where clause values must be <= 70 bytes
+* because of limitation in the dynamic where clause syntax
+  IF abapversion <= '46C'.
+    PERFORM detect_large_pk_fields TABLES t_dd03p.
+  ENDIF.
+
+* filtering out metadata for fields that will not be part of
+* the result set
+  PERFORM remove_unselected_fields TABLES
+                                     FIELDS
+                                     IN_FIELDS.
+
+********************
+* Get Data
+********************
+  IF NO_DATA <> 'X'.
+
+* check for fields in table DD03L and get field metadata
+    PERFORM remove_duplicate_fields TABLES in_fields
+                                           t_selectfields.
+
+    PERFORM get_select_metadata TABLES t_selectfields
+                                       t_field
+                                USING USEFIELDEXITS.
+
+
+    PERFORM get_user_setting CHANGING zdcpfm zdatfm.
+
+
+****************************
+* select and process data
+****************************
+    IF t_return[] IS INITIAL.
+
+      PERFORM extract_data TABLES DATA
+                                  PKWHERECLAUSE
+                           USING  PACKAGESIZE
+                                  delimiter
+                                  ROWCOUNT
+                                  ROWSKIPS
+                                  query_table
+                                  user_where_string
+                         CHANGING rc
+                                  RETURN.
+    ENDIF.
+  ELSE.
+* In metadata only mode just calculate record length
+    PERFORM remove_duplicate_fields TABLES IN_FIELDS
+                                           t_selectfields.
+
+    PERFORM get_select_metadata TABLES t_selectfields
+                                       t_field
+                                USING USEFIELDEXITS.
+    PERFORM get_record_length USING delimiter
+                           CHANGING record_length.
+  ENDIF. "Get Data
+
+***************************************
+* make sure all messages are returned
+***************************************
+  RECLEN = record_length.
+  RECCOUNT  = total_extractrowcount.
+
+* set indicator for more data
+* subtract rowskip from ROWCOUNT to have the proper comparison
+  adjusted_rowcount = ROWCOUNT - ROWSKIPS.
+  IF RECCOUNT = adjusted_rowcount.
+    MORE = 'X'.
+  ENDIF.
+
+ENDFUNCTION.
+
+
+
+*&--------------------------------------------------------------------*
+*&      Form  check_QUERY_TABLE
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_QUERY_TABLEtext
+*      -->_TABCLASS  text
+*      -->_VIEWCLASS text
+*---------------------------------------------------------------------*
+FORM check_QUERY_TABLE  USING    _QUERY_TABLE
+                       CHANGING _tabclass _viewclass.       "#EC
+  CLEAR _tabclass.
+  DATA: BEGIN OF str_dd02l,
+           tabname LIKE dd02l-tabname,
+           tabclass LIKE dd02l-tabclass,
+           viewclass LIKE dd02l-sqltab,
+        END OF str_dd02l.
+
+* check if active version of the requested table exists
+  SELECT tabname tabclass viewclass
+    INTO str_dd02l UP TO 1 ROWS
+    FROM  dd02l
+   WHERE  tabname  = _QUERY_TABLE
+     AND  as4local = 'A'.
+  ENDSELECT.
+  IF sy-subrc = 0.
+* Check if table and view class are supported
+    IF    str_dd02l-tabclass = 'TRANSP'
+       OR str_dd02l-tabclass = 'CLUSTER'
+       OR str_dd02l-tabclass = 'POOL'
+       OR str_dd02l-tabclass = 'VIEW'.
+      _tabclass = str_dd02l-tabclass.
+      IF          str_dd02l-tabclass = 'VIEW'.
+        IF    str_dd02l-viewclass = 'D'
+           OR str_dd02l-viewclass = 'P'.
+          _viewclass = str_dd02l-viewclass.
+        ELSE.
+          PERFORM add_message USING 'E' '045' str_dd02l-viewclass
+                                          space space space.
+        ENDIF.
+      ELSE.
+        IF _QUERY_TABLE CP 'PCL*'.
+          PERFORM add_message USING 'E' '046' _QUERY_TABLE
+                                          space
+                                          space space.
+
+        ENDIF.
+      ENDIF.
+    ELSE.
+      PERFORM add_message USING 'E' '044' str_dd02l-tabclass
+                                space space space.
+    ENDIF.
+  ELSE.
+* Table not active in DD02L
+    PERFORM add_message USING 'E' '002' _QUERY_TABLE space space space.
+  ENDIF.
+
+ENDFORM.                    " check_QUERY_TABLE
+
+*&--------------------------------------------------------------------*
+*&      Form  get_select_metadata
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_SELECTFIEtext
+*      -->T_FIELD    text
+*      -->EXIT_TRUE  text
+*---------------------------------------------------------------------*
+FORM get_select_metadata  TABLES t_selectfields STRUCTURE
+                                 ZXTRACTSELFIELDS
+                                 t_field STRUCTURE t_field
+                           USING exit_true.
+
+  CONSTANTS:
+    c_prefix(16) TYPE c VALUE 'CONVERSION_EXIT_',
+    c_output(7) TYPE c VALUE '_OUTPUT'.
+
+  DATA zfunction LIKE tfdir-funcname.
+  DATA zconv LIKE tfdir-funcname.
+
+* if the client does not specify the fields to select
+* then select all of them
+  IF t_selectfields[] IS INITIAL.
+    LOOP AT t_dd03p
+      WHERE comptype = 'E'  "data element
+         OR comptype = ' '. "built-in type
+      CLEAR t_selectfields.
+      t_selectfields-fieldname = t_dd03p-fieldname.
+      APPEND t_selectfields.
+    ENDLOOP.
+  ENDIF.
+
+* get useful metadata for each selected field.
+  LOOP AT t_selectfields.
+    CLEAR t_dd03p.
+    READ TABLE t_dd03p WITH KEY fieldname = t_selectfields-fieldname.
+    IF sy-subrc <> 0.
+* Field metadata not found
+      PERFORM add_message USING 'E' '003' t_selectfields-fieldname
+                                 space space space.
+      CONTINUE. "check all the fields before quitting
+    ENDIF.
+
+    CLEAR t_field.
+    t_field-name      = t_selectfields-fieldname.
+    t_field-datatype  = t_dd03p-datatype.
+    t_field-outputlen = t_dd03p-outputlen.
+    t_field-convexit  = t_dd03p-convexit.
+* only use exits if selected by client
+    IF exit_true = 'X'.
+      IF t_dd03p-convexit = 'ALPHA'.
+        zfunction = 'CONVERSION_EXIT_ALPHA_INPUT'.
+      ELSE.
+        CONCATENATE c_prefix t_dd03p-convexit c_output INTO zfunction.
+      ENDIF.
+* default leading zeros for numc types
+      IF t_dd03p-datatype = 'NUMC' AND t_dd03p-convexit IS INITIAL.
+        zfunction = 'CONVERSION_EXIT_ALPHA_INPUT'.
+      ENDIF.
+* check conversion exit exists, if it doesn't don't use an exit
+      SELECT SINGLE funcname INTO zconv
+        FROM tfdir
+       WHERE funcname = zfunction.
+      IF sy-subrc = 0.
+        t_field-funcname = zfunction.
+      ENDIF.
+    ENDIF.
+* the internal types in dd03l are not always useful
+* for example INT4 have type X. We assign our own inttype
+* to determine handling. We need output type for writing to char
+* output with the correct offset
+    CASE t_field-datatype.
+      WHEN 'CHAR' OR 'LCHR'.
+        t_field-inttype = 'C'.
+
+      WHEN 'NUMC'.
+        t_field-inttype = 'N'.
+*        t_field-special = 'X'.
+
+      WHEN 'CLNT'.
+        t_field-inttype = 'C'.
+
+      WHEN 'DATS'.
+        t_field-inttype = 'D'.
+
+      WHEN 'CURR'.
+        t_field-inttype = 'P'.
+        t_field-special = 'X'.
+
+      WHEN 'CUKY'.
+        t_field-inttype = 'C'.
+
+      WHEN 'DEC'.
+        t_field-inttype = 'P'.
+        t_field-special = 'X'.
+
+      WHEN 'FLTP'.
+        t_field-inttype = 'F'.
+        t_field-special = 'X'.
+
+      WHEN 'INT1'.
+        t_field-inttype = 'b'.
+        t_field-special = 'X'.
+
+      WHEN 'INT2'.
+        t_field-inttype = 's'.
+        t_field-special = 'X'.
+
+      WHEN 'INT4'.
+        t_field-inttype = 'I'.
+        t_field-special = 'X'.
+
+      WHEN 'LANG'.
+
+      WHEN 'PREC'.
+        t_field-inttype = 's'.
+        t_field-special = 'X'.
+
+      WHEN 'QUAN'.
+        t_field-inttype = 'P'.
+        t_field-special = 'X'.
+
+      WHEN 'TIMS'.
+        t_field-inttype = 'T'.
+
+      WHEN 'UNIT'.
+        t_field-inttype = 'C'.
+
+      WHEN 'ACCP'.
+        t_field-inttype = 'C'.
+
+      WHEN 'RAW' OR 'LRAW'.
+        t_field-inttype = 'X'.
+        t_field-special = 'X'.
+
+      WHEN OTHERS.
+* unsupported type. give a warning, do not output and continue.
+        PERFORM add_message USING 'E' '023' t_field-name
+                             t_field-datatype
+                             space space.
+        CONTINUE.
+    ENDCASE.
+    APPEND t_field.
+  ENDLOOP.
+ENDFORM.                    " get_select_dd03pdata
+
+*&--------------------------------------------------------------------*
+*&      Form  detect_abap_version
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+FORM detect_abap_version CHANGING abapversion.
+  SELECT SINGLE release
+    INTO abapversion
+    FROM cvers
+   WHERE component = 'SAP_ABA'.
+  IF sy-subrc <> 0.
+    abapversion = '46C'.
+  ENDIF.
+ENDFORM.                    "detect_abap_version
+
+*&--------------------------------------------------------------------*
+*&      Form  set_neg_max_int
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->ABAPVERSIONtext
+*      -->MAX_NEG_INTtext
+*---------------------------------------------------------------------*
+FORM set_neg_max_int USING abapversion
+                  CHANGING max_neg_int.
+  IF abapversion <= '46C'.
+    max_neg_int = c_max_int_neg_46.
+  ELSE.
+    max_neg_int = c_max_int_neg_47.
+  ENDIF.
+ENDFORM.                    "set_neg_max_int
+
+*&--------------------------------------------------------------------*
+*&      Form  where_clause
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_CLAUSE   text
+*      -->RUN_EXIT   text
+*      -->WHERE_STRINtext
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM where_clause TABLES t_clause    STRUCTURE ZXTRACTRANGE
+                         t_where_tab
+                   USING run_exit
+                         abapversion
+                         is_pkwhere
+                CHANGING where_string rc.
+
+  CLEAR where_string.
+  REFRESH t_where_tab.
+  CLEAR   t_where_tab.
+
+* For ABAP version 620 and higher generate where string
+* otherwise generate where table
+  IF abapversion >= '620'.
+    PERFORM where_clause_string
+                    TABLES   t_clause
+                    USING    run_exit
+                             is_pkwhere
+                    CHANGING where_string rc.
+  ELSE.
+    PERFORM where_clause_table
+                    TABLES   t_clause
+                             t_where_tab
+                    USING    run_exit
+                             is_pkwhere
+                    CHANGING rc.
+  ENDIF.
+ENDFORM.                    "where_clause
+
+*&--------------------------------------------------------------------*
+*&      Form  where_clause_string
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_CLAUSE   text
+*      -->RUN_EXIT   text
+*      -->WHERE_STRINtext
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM where_clause_string  TABLES   t_clause STRUCTURE ZXTRACTRANGE
+                          USING    run_exit
+                                   is_pkwhere
+                          CHANGING where_string rc.
+
+  DATA:
+    depth             TYPE int4,
+    lastcharoffset    TYPE int4,
+    previous_field    LIKE ZXTRACTRANGE-field,
+    errorflag         TYPE c.
+
+  CLEAR:
+    rc,
+    errorflag.
+
+  CLEAR previous_field.
+  LOOP AT t_clause.
+    IF NOT t_clause-operator IS INITIAL AND t_clause-operator <> 'OR'
+       AND t_clause-operator <> 'AND'  .
+      PERFORM add_message USING 'E' '033' t_clause-operator
+                                   space space space.
+      rc = c_syntax.
+      errorflag = 'X'.
+      EXIT.
+    ENDIF.
+    CASE t_clause-field.
+      WHEN '('.
+        IF open_operator <> 'X'         "need operator between clauses
+           AND previous_field <> space  "except in beginning
+           AND previous_field <> '('.   "and after (
+          PERFORM add_message USING 'E' '018' space space space space.
+          rc = c_syntax.
+          errorflag = 'X'.
+          EXIT.
+        ENDIF.
+        IF t_clause-sign = 'E'.
+          PERFORM append_clause USING 'NOT' CHANGING where_string.
+        ENDIF.
+        PERFORM append_clause USING '(' CHANGING where_string.
+        ADD 1 TO depth.
+      WHEN ')'.
+        IF open_operator IS INITIAL.
+          SUBTRACT 1 FROM depth.
+          IF depth < 0.
+            PERFORM add_message USING 'E' '017' space space space space.
+            rc = c_syntax. "more right parens than left
+            errorflag = 'X'.
+            EXIT.
+          ENDIF.
+          lastcharoffset = strlen( where_string ) - 1.
+* cannot have ) directly after ( or at beginning of where string
+          IF    where_string IS INITIAL
+             OR where_string+lastcharoffset(1) = '('.
+            PERFORM add_message USING 'E' '066' space space space space.
+            rc = c_syntax.
+            errorflag = 'X'.
+            EXIT.
+          ELSE.
+            PERFORM append_clause USING ')'
+                                  CHANGING where_string.
+            IF NOT t_clause-operator IS INITIAL.
+              PERFORM append_clause USING t_clause-operator
+                                    CHANGING where_string.
+              open_operator = 'X'.
+            ENDIF.
+          ENDIF.
+        ELSE.
+          PERFORM add_message USING 'E' '004' space space space space.
+          rc = c_syntax. "open operator when clause ends with )
+          errorflag = 'X'.
+          EXIT.
+        ENDIF.
+      WHEN OTHERS. "some field
+        lastcharoffset = strlen( where_string ) - 1.
+* need operator between clauses except on new string and
+* after (
+        IF open_operator <> 'X' "
+           AND NOT where_string IS INITIAL
+           AND where_string+lastcharoffset(1) <> '('.
+          PERFORM add_message USING 'E' '018' space space space space.
+          rc = c_syntax.
+          errorflag = 'X'.
+          EXIT.
+        ELSE.
+          CLEAR open_operator.
+          PERFORM append_clause USING t_clause-field
+                                CHANGING where_string.
+* build the condition
+          PERFORM build_condition USING t_clause
+                                        run_exit
+                                        is_pkwhere
+                                  CHANGING where_string
+                                           rc.
+          IF NOT rc IS INITIAL.
+            errorflag = 'X'.
+          ENDIF.
+          IF NOT t_clause-operator IS INITIAL.
+            PERFORM append_clause USING t_clause-operator
+                                  CHANGING where_string.
+            open_operator = 'X'.
+          ENDIF.
+        ENDIF.
+    ENDCASE.
+    previous_field = t_clause-field.
+  ENDLOOP.
+
+  IF NOT errorflag IS INITIAL.
+    rc = c_syntax.
+  ENDIF.
+
+* if everything checks out to this point, verify that
+* all parentheses have been closed and there is no
+* open operator at the end. (without the rc check there
+* would be false messages)
+  IF rc IS INITIAL.
+* check if we all ( have )
+    IF depth > 0. "not enough ')'
+      PERFORM add_message USING 'E' '019' space space space space.
+      rc = c_syntax.
+    ENDIF.
+
+* where clause should not end on an AND/OR.
+    IF open_operator = 'X'.
+      rc = c_syntax.
+      PERFORM add_message USING 'E' '012' space space space space.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    " where_clause_string
+
+*&--------------------------------------------------------------------*
+*&      Form  build_condition
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_CLAUSE    text
+*      -->_RUN_EXIT  text
+*      -->WHERE_STRINtext
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM build_condition  USING _clause STRUCTURE ZXTRACTRANGE
+                            _run_exit
+                            is_pkwhere
+                      CHANGING where_string _rc.
+
+  DATA: zdd03p     TYPE dd03p,
+        low_float  TYPE f,
+        high_float TYPE f,
+        wildcardok TYPE c.
+
+  DATA: lcl_clause TYPE ZXTRACTRANGE.
+
+  CLEAR _rc.
+  lcl_clause = _clause.
+  CASE lcl_clause-sign.
+    WHEN 'I'.
+
+    WHEN 'E'.
+      IF _clause-option <> 'NL'.
+        CONCATENATE where_string 'NOT' INTO where_string
+        SEPARATED BY space.
+      ENDIF.
+    WHEN OTHERS.
+* Sign is not valid
+      PERFORM add_message USING 'E' '005' lcl_clause-sign
+                                space space space.
+  ENDCASE.
+
+  PERFORM get_field_metadata USING lcl_clause-field
+                             CHANGING zdd03p _rc.
+
+  CHECK _rc IS INITIAL.
+
+* data validation is not necessary for option NL (is null) as there
+* are no values to validate
+  IF _clause-option <> 'NL'.
+* indicate to datavalidation that wild card characters are ok
+    CLEAR wildcardok.
+    IF _clause-option = 'CP'.
+      wildcardok = 'X'.
+    ENDIF.
+
+    PERFORM conversion_and_validation USING zdd03p-fieldname
+                                            zdd03p-datatype
+                                            zdd03p-outputlen
+                                            zdd03p-convexit
+                                            zdd03p-rollname
+                                            wildcardok
+                                            _run_exit
+                                            is_pkwhere
+                                      CHANGING lcl_clause-low
+                                              _rc.
+    CHECK _rc IS INITIAL.
+
+    IF NOT lcl_clause-high IS INITIAL.
+      PERFORM conversion_and_validation USING zdd03p-fieldname
+                                              zdd03p-datatype
+                                              zdd03p-outputlen
+                                              zdd03p-convexit
+                                              zdd03p-rollname
+                                              wildcardok
+                                              _run_exit
+                                              is_pkwhere
+                                        CHANGING lcl_clause-high
+                                                  _rc.
+      CHECK _rc IS INITIAL.
+
+    ENDIF.
+
+* always do conversion exit alpha for numc
+    IF zdd03p-datatype = 'NUMC'.
+      zdd03p-convexit = 'ALPHA'.
+      PERFORM convert_numc_value USING zdd03p-rollname
+                                       zdd03p-convexit
+                                       zdd03p-outputlen
+                              CHANGING lcl_clause-low
+                                       _rc.
+      IF NOT   lcl_clause-high IS INITIAL.
+        PERFORM convert_numc_value USING zdd03p-rollname
+                                         zdd03p-convexit
+                                         zdd03p-outputlen
+                                CHANGING lcl_clause-high
+                                         _rc.
+      ENDIF.
+    ENDIF.
+  ENDIF.
+
+* check
+
+  CASE _clause-option.
+    WHEN 'EQ'.
+      PERFORM append_clause USING '='
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+    WHEN 'NE'.
+      PERFORM append_clause USING '<>'
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+    WHEN 'BT'.
+      CLEAR:
+        low_float,
+        high_float.
+* for numeric types and negative numbers convert to
+* float before comparing high and low
+      IF     (    zdd03p-inttype = 'P'
+               OR zdd03p-inttype = 'N'
+               OR zdd03p-inttype = 'F'
+               OR zdd03p-datatype = 'INT2'
+               OR zdd03p-datatype = 'INT4' )
+         AND (    lcl_clause-low(1)  = '-'
+               OR lcl_clause-high(1) = '-'
+               OR lcl_clause-low     CP '*E-*'    "for negative floats
+               OR lcl_clause-high    CP '*E-*' ).
+        low_float  = lcl_clause-low.
+        high_float = lcl_clause-high.
+        IF low_float > high_float.
+          PERFORM add_message USING 'E' '006'
+                                    lcl_clause-low
+                                    lcl_clause-high
+                                    space space.
+        ENDIF.
+      ELSE.
+* for all others do string compare works
+        IF lcl_clause-low > lcl_clause-high.
+          PERFORM add_message USING 'E' '006'
+                                    lcl_clause-low
+                                    lcl_clause-high
+                                    space space.
+        ENDIF.
+      ENDIF.
+
+      PERFORM append_clause USING 'BETWEEN'
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause USING 'AND'
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-high
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+    WHEN 'LT'.
+      PERFORM append_clause USING '<'
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+    WHEN 'GT'.
+      PERFORM append_clause USING '>'
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+    WHEN 'GE'.
+      PERFORM append_clause USING '>='
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+    WHEN 'LE'.
+      PERFORM append_clause USING '<='
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+    WHEN 'CP'.
+      PERFORM append_clause USING 'LIKE'
+                            CHANGING where_string.
+      PERFORM append_clause USING ''''
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING where_string.
+      PERFORM append_clause_no_space USING ''''
+                            CHANGING where_string.
+    WHEN 'NL'.
+      IF _clause-sign = 'I'.
+        PERFORM append_clause USING 'IS NULL'
+                              CHANGING where_string.
+      ELSE.
+        PERFORM append_clause USING 'IS NOT NULL'
+                              CHANGING where_string.
+      ENDIF.
+    WHEN OTHERS.
+      PERFORM add_message USING 'E' '007' _clause-option space
+                              space space.
+  ENDCASE.
+ENDFORM.                    " build_condition
+
+*&--------------------------------------------------------------------*
+*&      Form  convert_numc_value
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->ROLLNAME   text
+*      -->CONVEXIT   text
+*      -->OUTPUTLEN  text
+*      -->VALUE      text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM convert_numc_value USING rollname
+                              convexit
+                              outputlen
+                     CHANGING value
+                              _rc.
+  DATA:
+    offset     TYPE int4.
+
+  FIELD-SYMBOLS: <value> TYPE ANY.
+
+* use data element as casting type if available
+  IF NOT rollname IS INITIAL.
+    ASSIGN value TO <value> CASTING TYPE (rollname).
+  ELSE.
+* otherwise use default type
+    ASSIGN value(outputlen) TO <value>.
+  ENDIF.
+  PERFORM conversion_exit USING  convexit  'I'
+                          CHANGING <value> _rc.
+  value = <value>.
+
+ENDFORM.                    "convert_numc_value
+
+*&--------------------------------------------------------------------*
+*&      Form  where_clause_table
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_CLAUSE   text
+*      -->T_WHERE_TABtext
+*      -->RUN_EXIT   text
+*      -->WHERE_STRINtext
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM where_clause_table TABLES   t_clause STRUCTURE ZXTRACTRANGE
+                                 t_where_tab
+                        USING    run_exit
+                                 is_pkwhere
+                        CHANGING rc.
+  DATA:
+    depth             TYPE int4,
+    previous_field    LIKE ZXTRACTRANGE-field,
+    errorflag         TYPE c.
+
+  CLEAR:
+    rc,
+    errorflag.
+
+  CLEAR previous_field.
+  LOOP AT t_clause.
+    IF NOT t_clause-operator IS INITIAL AND t_clause-operator <> 'OR'
+       AND t_clause-operator <> 'AND'  .
+      PERFORM add_message USING 'E' '033' t_clause-operator
+                                   space space space.
+      rc = c_syntax.
+      errorflag = 'X'.
+      EXIT.
+    ENDIF.
+    CASE t_clause-field.
+      WHEN '('.
+        IF open_operator <> 'X'         "need operator between clauses
+           AND previous_field <> space  "except in beginning
+           AND previous_field <> '('.   "and after (
+          PERFORM add_message USING 'E' '018' space space space space.
+          rc = c_syntax.
+          errorflag = 'X'.
+          EXIT.
+        ENDIF.
+        IF t_clause-sign = 'E'.
+          PERFORM append_clause_table TABLES t_where_tab
+                                       USING 'NOT ('.
+        ELSE.
+          PERFORM append_clause_table TABLES t_where_tab
+                                       USING '('.
+        ENDIF.
+        ADD 1 TO depth.
+      WHEN ')'.
+        IF open_operator IS INITIAL.
+          SUBTRACT 1 FROM depth.
+          IF depth < 0.
+            PERFORM add_message USING 'E' '017' space space space space.
+            rc = c_syntax. "more right parens than left
+            errorflag = 'X'.
+            EXIT.
+          ENDIF.
+
+* cannot have ) directly after ( or at beginning of where string
+          IF    t_where_tab[] IS INITIAL
+             OR t_where_tab = '('
+             OR t_where_tab = 'NOT ('.
+            PERFORM add_message USING 'E' '066' space space space space.
+            rc = c_syntax.
+            errorflag = 'X'.
+            EXIT.
+          ELSE.
+            PERFORM append_clause_table TABLES t_where_tab
+                                         USING ')'.
+            IF NOT t_clause-operator IS INITIAL.
+              PERFORM append_clause_table TABLES t_where_tab
+                                           USING t_clause-operator.
+
+              open_operator = 'X'.
+            ENDIF.
+          ENDIF.
+        ELSE.
+          PERFORM add_message USING 'E' '004' space space space space.
+          rc = c_syntax. "open operator when clause ends with )
+          errorflag = 'X'.
+          EXIT.
+        ENDIF.
+      WHEN OTHERS. "some field
+* need operator between clauses except on new string and
+* after (
+        IF open_operator <> 'X' "
+           AND NOT t_where_tab[] IS INITIAL
+           AND     t_where_tab <> '('
+           AND     t_where_tab <> 'NOT ('.
+          PERFORM add_message USING 'E' '018' space space space space.
+          rc = c_syntax.
+          errorflag = 'X'.
+          EXIT.
+        ELSE.
+          CLEAR open_operator.
+* build the condition
+          PERFORM append_clause_table TABLES t_where_tab
+                                       USING t_clause-field.
+
+          PERFORM build_condition_table TABLES t_where_tab
+                                         USING t_clause
+                                               run_exit
+                                               is_pkwhere
+                                      CHANGING rc.
+          IF NOT rc IS INITIAL.
+            errorflag = 'X'.
+          ENDIF.
+          IF NOT t_clause-operator IS INITIAL.
+            PERFORM append_clause_table TABLES t_where_tab
+                                         USING t_clause-operator.
+            open_operator = 'X'.
+          ENDIF.
+        ENDIF.
+    ENDCASE.
+    previous_field = t_clause-field.
+  ENDLOOP.
+
+  IF NOT errorflag IS INITIAL.
+    rc = c_syntax.
+  ENDIF.
+
+* if everything checks out to this point, verify that
+* all parentheses have been closed and there is no
+* open operator at the end. (without the rc check there
+* would be false messages)
+  IF rc IS INITIAL.
+* check if we all ( have )
+    IF depth > 0. "not enough ')'
+      PERFORM add_message USING 'E' '019' space space space space.
+      rc = c_syntax.
+    ENDIF.
+
+* where clause should not end on an AND/OR.
+    IF open_operator = 'X'.
+      rc = c_syntax.
+      PERFORM add_message USING 'E' '012' space space space space.
+    ENDIF.
+  ENDIF.
+* split where_string into table
+  IF NOT errorflag IS INITIAL.
+    rc = c_syntax.
+  ENDIF.
+ENDFORM.                    "where_clause_table
+
+*&--------------------------------------------------------------------*
+*&      Form  build_condition_table
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->WHERE_TAB  text
+*      -->_CLAUSE    text
+*      -->_RUN_EXIT  text
+*      -->WHERE_STRINtext
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM build_condition_table TABLES t_where_tab
+                            USING _clause STRUCTURE ZXTRACTRANGE
+                                  _run_exit
+                                  is_pkwhere
+                         CHANGING _rc.
+
+* remove when everything is converted to table
+  DATA where_string(72) TYPE c.
+* end remove
+
+  DATA: zdd03p     TYPE dd03p,
+        low_float  TYPE f,
+        high_float TYPE f,
+        wildcardok TYPE c,
+        noquotes   TYPE c.
+
+* for the table logic we have to collect quotes and values
+* in a variable before appending to the table
+  DATA current_clause(72) TYPE c.
+
+  FIELD-SYMBOLS: <low>  TYPE ANY,
+                 <high> TYPE ANY.
+
+  DATA: lcl_clause TYPE ZXTRACTRANGE.
+
+  CLEAR _rc.
+  lcl_clause = _clause.
+
+  PERFORM get_field_metadata USING lcl_clause-field
+                             CHANGING zdd03p _rc.
+
+  CHECK _rc IS INITIAL.
+
+* data validation is not necessary for option NL (is null) as there
+* are no values to validate
+  IF _clause-option <> 'NL'.
+* indicate to datavalidation that wild card characters are ok
+    CLEAR wildcardok.
+    IF _clause-option = 'CP'.
+      wildcardok = 'X'.
+    ENDIF.
+    PERFORM conversion_and_validation USING zdd03p-fieldname
+                                            zdd03p-datatype
+                                            zdd03p-outputlen
+                                            zdd03p-convexit
+                                            zdd03p-rollname
+                                            wildcardok
+                                            _run_exit
+                                            is_pkwhere
+                                      CHANGING lcl_clause-low
+                                              _rc.
+    CHECK _rc IS INITIAL.
+
+    IF NOT lcl_clause-high IS INITIAL.
+      PERFORM conversion_and_validation USING zdd03p-fieldname
+                                              zdd03p-datatype
+                                              zdd03p-outputlen
+                                              zdd03p-convexit
+                                              zdd03p-rollname
+                                              wildcardok
+                                              _run_exit
+                                              is_pkwhere
+                                        CHANGING lcl_clause-high
+                                                  _rc.
+      CHECK _rc IS INITIAL.
+
+    ENDIF.
+
+* always do conversion exit alpha for numc
+    IF zdd03p-datatype = 'NUMC'.
+      zdd03p-convexit = 'ALPHA'.
+      PERFORM convert_numc_value USING zdd03p-rollname
+                                       zdd03p-convexit
+                                       zdd03p-outputlen
+                              CHANGING lcl_clause-low
+                                       _rc.
+      IF NOT   lcl_clause-high IS INITIAL.
+        PERFORM convert_numc_value USING zdd03p-rollname
+                                         zdd03p-convexit
+                                         zdd03p-outputlen
+                                CHANGING lcl_clause-high
+                                         _rc.
+      ENDIF.
+    ENDIF.
+  ENDIF.
+
+* Generate clause
+* Parse include/exclude sign
+  CASE lcl_clause-sign.
+    WHEN 'I'.
+
+    WHEN 'E'.
+      IF _clause-option <> 'NL'.
+        PERFORM append_clause_table TABLES t_where_tab
+                                     USING 'NOT'.
+      ENDIF.
+    WHEN OTHERS.
+* Sign is not valid
+      PERFORM add_message USING 'E' '005' lcl_clause-sign
+                                space space space.
+  ENDCASE.
+
+  CLEAR current_clause.
+  CASE _clause-option.
+    WHEN 'EQ'.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING '='.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN 'NE'.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING '<>'.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN 'BT'.
+      CLEAR:
+        low_float,
+        high_float.
+* for numeric types and negative numbers convert to
+* float before comparing high and low
+      IF     (    zdd03p-inttype = 'P'
+               OR zdd03p-inttype = 'N'
+               OR zdd03p-inttype = 'F'
+               OR zdd03p-datatype = 'INT2'
+               OR zdd03p-datatype = 'INT4' )
+         AND (    lcl_clause-low(1)  = '-'
+               OR lcl_clause-high(1) = '-'
+               OR lcl_clause-low     CP '*E-*'    "for negative floats
+               OR lcl_clause-high    CP '*E-*' ).
+        low_float  = lcl_clause-low.
+        high_float = lcl_clause-high.
+        IF low_float > high_float.
+          PERFORM add_message USING 'E' '006'
+                                    lcl_clause-low
+                                    lcl_clause-high
+                                    space space.
+        ENDIF.
+      ELSE.
+* for all others do string compare works
+        IF lcl_clause-low > lcl_clause-high.
+          PERFORM add_message USING 'E' '006'
+                                    lcl_clause-low
+                                    lcl_clause-high
+                                    space space.
+        ENDIF.
+      ENDIF.
+
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING 'BETWEEN'.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING 'AND'.
+      CLEAR current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-high
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN 'LT'.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING '<'.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN 'GT'.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING '>'.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN 'GE'.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING '>='.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN 'LE'.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING '<='.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN 'CP'.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING 'LIKE'.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_no_space USING lcl_clause-low
+                            CHANGING current_clause.
+      IF noquotes IS INITIAL.
+        PERFORM append_clause_no_space USING ''''
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN 'NL'.
+      IF _clause-sign = 'I'.
+        PERFORM append_clause USING 'IS NULL'
+                              CHANGING current_clause.
+      ELSE.
+        PERFORM append_clause USING 'IS NOT NULL'
+                              CHANGING current_clause.
+      ENDIF.
+      PERFORM append_clause_table TABLES t_where_tab
+                                   USING current_clause.
+    WHEN OTHERS.
+      PERFORM add_message USING 'E' '007' _clause-option space
+                              space space.
+  ENDCASE.
+ENDFORM.                    "build_condition_table
+
+*&--------------------------------------------------------------------*
+*&      Form  append_clause
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->TEXT1      text
+*      -->WHERE_STRINtext
+*---------------------------------------------------------------------*
+FORM append_clause USING  text1 CHANGING where_string.
+
+  CONCATENATE where_string text1 INTO
+           where_string SEPARATED BY space.
+ENDFORM.                    " append_clause
+
+*&--------------------------------------------------------------------*
+*&      Form  append_clause_table
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->WHERE_TAB  text
+*      -->TEXT1      text
+*---------------------------------------------------------------------*
+FORM append_clause_table TABLES t_where_tab
+                          USING text1.
+  t_where_tab = text1.
+  APPEND t_where_tab.
+ENDFORM.                    "append_clause_table
+
+*&--------------------------------------------------------------------*
+*&      Form  append_clause_no_space
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->TEXT1      text
+*      -->WHERE_STRINtext
+*---------------------------------------------------------------------*
+FORM append_clause_no_space USING  text1 CHANGING where_string.
+
+  CONCATENATE where_string text1 INTO
+           where_string.
+ENDFORM.                    "append_clause_no_space
+
+*&--------------------------------------------------------------------*
+*&      Form  get_field_metadata
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_FIELD     text
+*      -->WA_DD03P   text
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM get_field_metadata  USING    _field
+                         CHANGING wa_dd03p STRUCTURE t_dd03p
+                                  rc.
+
+  CLEAR: wa_dd03p, t_dd03p.
+
+  READ TABLE t_dd03p INTO wa_dd03p  WITH KEY fieldname = _field.
+
+
+  IF sy-subrc <> 0.
+    PERFORM add_message USING 'E' '003' _field space
+                           space space.
+    rc = c_error.
+  ENDIF.
+ENDFORM.                    " get_field_metadata
+
+*&--------------------------------------------------------------------*
+*&      Form  conversion_exit
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_EXIT      text
+*      -->DIRECTION  text
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM conversion_exit  USING _exit direction
+                      CHANGING _value _rc.
+
+
+  CONSTANTS: c_prefix(16) TYPE c VALUE 'CONVERSION_EXIT_',
+             c_output(7) TYPE c VALUE '_OUTPUT',
+             c_input(6) TYPE c VALUE '_INPUT'.
+
+  DATA: zfunction LIKE tfdir-funcname.
+  DATA: zconv LIKE tfdir-funcname.
+
+  IF direction = 'I'.
+    CONCATENATE c_prefix _exit c_input INTO zfunction.
+  ELSEIF direction = 'O'.
+    CONCATENATE c_prefix _exit c_output INTO zfunction.
+  ENDIF.
+
+* check conversion exit exists
+  SELECT SINGLE funcname INTO zconv
+    FROM tfdir
+   WHERE funcname = zfunction.
+  IF sy-subrc = 0.
+
+* convert the data
+
+    CALL FUNCTION zfunction
+      EXPORTING
+        input         = _value
+      IMPORTING
+        output        = _value
+      EXCEPTIONS
+        error_message = 1
+        OTHERS        = 2.
+
+    IF sy-subrc <> 0.
+      PERFORM add_message USING 'E' '022' _value zfunction space space.
+      _rc = c_error.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    " conversion_exit
+
+*&--------------------------------------------------------------------*
+*&      Form  get_table_metadata
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_ZDD03P   text
+*      -->T_ZDD05M   text
+*      -->T_ZDD08V   text
+*      -->T_ZDD12V   text
+*      -->T_ZDD17V   text
+*      -->T_DD03P    text
+*      -->METADATA_LANGUAGE
+*      -->WA_ZDD02V  text
+*      -->WA_ZDD09L  text
+*---------------------------------------------------------------------*
+FORM get_table_metadata  TABLES
+                           t_zdd03p STRUCTURE DD03P
+                           t_dd03p  STRUCTURE dd03p
+                         CHANGING
+                           QUERY_TABLE TYPE TABNAME.
+
+  DATA:
+    typelength(10) TYPE c,
+    got_state TYPE ddgotstate,
+    wa_dd02v TYPE dd02v,
+    wa_dd09l TYPE dd09l.
+
+  CALL FUNCTION 'DDIF_TABL_GET'
+    EXPORTING
+      name          = QUERY_TABLE
+      state         = 'A'
+      langu         = sy-langu
+    IMPORTING
+      gotstate      = got_state
+      dd02v_wa      = wa_dd02v
+      dd09l_wa      = wa_dd09l
+    TABLES
+      dd03p_tab     = t_dd03p
+    EXCEPTIONS
+      illegal_input = 1
+      OTHERS        = 2.
+  IF sy-subrc <> 0.
+    PERFORM add_message USING 'E' '009' QUERY_TABLE
+                           sy-langu space space.
+  ENDIF.
+
+  LOOP AT t_dd03p
+    WHERE fieldname NA '.'. "exclude .INCLUDE etc.
+    CLEAR t_zdd03p.
+    t_zdd03p-tabname    = t_dd03p-tabname.
+    t_zdd03p-fieldname  = t_dd03p-fieldname.
+    t_zdd03p-ddlanguage = t_dd03p-ddlanguage.
+    t_zdd03p-position   = t_dd03p-position.
+    t_zdd03p-keyflag    = t_dd03p-keyflag.
+    t_zdd03p-mandatory  = t_dd03p-mandatory.
+    t_zdd03p-checktable = t_dd03p-checktable.
+    t_zdd03p-adminfield = t_dd03p-adminfield.
+    t_zdd03p-inttype    = t_dd03p-inttype.
+    t_zdd03p-intlen     = t_dd03p-intlen.
+    t_zdd03p-reftable   = t_dd03p-reftable.
+    t_zdd03p-precfield  = t_dd03p-precfield.
+    t_zdd03p-reffield   = t_dd03p-reffield.
+    t_zdd03p-conrout    = t_dd03p-conrout.
+    t_zdd03p-notnull    = t_dd03p-notnull.
+    t_zdd03p-domname    = t_dd03p-domname.
+    t_zdd03p-routputlen = t_dd03p-routputlen.
+    t_zdd03p-memoryid   = t_dd03p-memoryid.
+    t_zdd03p-logflag    = t_dd03p-logflag.
+    t_zdd03p-headlen    = t_dd03p-headlen.
+    t_zdd03p-scrlen1    = t_dd03p-scrlen1.
+    t_zdd03p-scrlen2    = t_dd03p-scrlen2.
+    t_zdd03p-scrlen3    = t_dd03p-scrlen3.
+    t_zdd03p-dtelglobal = t_dd03p-dtelglobal.
+    t_zdd03p-dtelmaster = t_dd03p-dtelmaster.
+    t_zdd03p-reservedte = t_dd03p-reservedte.
+    t_zdd03p-datatype   = t_dd03p-datatype.
+    t_zdd03p-leng       = t_dd03p-leng.
+    t_zdd03p-decimals   = t_dd03p-decimals.
+    t_zdd03p-lowercase  = t_dd03p-lowercase.
+    t_zdd03p-signflag   = t_dd03p-signflag.
+    t_zdd03p-langflag   = t_dd03p-langflag.
+    t_zdd03p-valexi     = t_dd03p-valexi.
+    t_zdd03p-entitytab  = t_dd03p-entitytab.
+    t_zdd03p-convexit   = t_dd03p-convexit.
+    t_zdd03p-mask       = t_dd03p-mask.
+    t_zdd03p-masklen    = t_dd03p-masklen.
+    t_zdd03p-actflag    = t_dd03p-actflag.
+    t_zdd03p-ddtext     = t_dd03p-ddtext.
+    t_zdd03p-reptext    = t_dd03p-reptext.
+    t_zdd03p-scrtext_s  = t_dd03p-scrtext_s.
+    t_zdd03p-scrtext_m  = t_dd03p-scrtext_m.
+    t_zdd03p-scrtext_l  = t_dd03p-scrtext_l.
+    t_zdd03p-dommaster  = t_dd03p-dommaster.
+    t_zdd03p-reservedom = t_dd03p-reservedom.
+    t_zdd03p-domglobal  = t_dd03p-domglobal.
+    t_zdd03p-domname3l  = t_dd03p-domname3l.
+    t_zdd03p-shlporigin = t_dd03p-shlporigin.
+    t_zdd03p-shlpname   = t_dd03p-shlpname.
+    t_zdd03p-shlpfield  = t_dd03p-shlpfield.
+    t_zdd03p-tabletype  = t_dd03p-tabletype.
+    t_zdd03p-depth      = t_dd03p-depth.
+    t_zdd03p-comptype   = t_dd03p-comptype.
+    t_zdd03p-deffdname  = t_dd03p-deffdname.
+    t_zdd03p-groupname  = t_dd03p-groupname.
+
+********************************
+* Processing for special cases
+********************************
+* update outputlen to the value of leng
+* if leng is greater than outputlen
+    IF t_dd03p-leng <= t_dd03p-outputlen.
+      t_zdd03p-outputlen = t_dd03p-outputlen.
+    ELSE.
+      t_zdd03p-outputlen = t_dd03p-leng.
+    ENDIF.
+
+* Double the outputlength for RAW fields
+* to accomodate hex representation
+    IF t_zdd03p-datatype = 'RAW'.
+      IF t_zdd03p-outputlen <= t_dd03p-leng.
+        t_zdd03p-outputlen = t_dd03p-leng * 2.
+      ENDIF.
+    ENDIF.
+
+* TIMS fields do not get the appropriate
+* outputlen value if built-in types are used
+    IF     t_zdd03p-datatype  = 'TIMS'
+       AND t_zdd03p-outputlen <> 8.
+      t_zdd03p-outputlen = 8.
+    ENDIF.
+
+* DATS fields do not get the appropriate
+* outputlen value if built-in types are used
+    IF     t_zdd03p-datatype  = 'DATS'
+       AND t_zdd03p-outputlen <> 10.
+      t_zdd03p-outputlen = 10.
+    ENDIF.
+
+* add space for the negative sign
+    IF    NOT t_zdd03p-signflag IS INITIAL
+       OR t_zdd03p-datatype = 'INT2'
+       OR t_zdd03p-datatype = 'INT4'.
+      ADD 1 TO t_zdd03p-outputlen.
+    ENDIF.
+
+* make room for negative sign, decimal point and 1000 separators
+    IF t_zdd03p-inttype = 'P'.
+      t_zdd03p-outputlen =    t_dd03p-intlen * 2 + 1
+                           + ( ( t_dd03p-intlen * 2 ) DIV 3 ).
+    ENDIF.
+
+* outputlen for float fields is returned as 16
+* that is not big enough for a character representation
+* of a large float number
+    IF t_zdd03p-inttype = 'F'.
+* set precision to 0 to see if RS/SSIS handle it better
+      t_zdd03p-leng = 0.
+      t_zdd03p-outputlen = 24.
+    ENDIF.
+
+* build generic domain name for int* fields
+* to be able to generate conversion exit
+* calls later
+    IF     t_dd03p-rollname IS INITIAL.
+      CASE t_dd03p-datatype.
+        WHEN 'INT1' OR 'INT2' OR 'INT4'.
+          t_zdd03p-rollname = t_dd03p-datatype.
+        WHEN OTHERS.
+          t_zdd03p-rollname = t_dd03p-rollname.
+      ENDCASE.
+    ELSE.
+      t_zdd03p-rollname = t_dd03p-rollname.
+    ENDIF.
+***************************************
+* End of processing for special cases
+***************************************
+
+    APPEND t_zdd03p.
+  ENDLOOP.
+
+* for views, if no field is marked as KEY,
+* mark all fields KEY.
+  IF tabclass = 'VIEW'.
+    READ TABLE t_zdd03p
+      WITH KEY keyflag = 'X'.
+    IF sy-subrc > 0.
+      LOOP AT t_zdd03p.
+        t_zdd03p-keyflag = 'X'.
+        MODIFY t_zdd03p.
+      ENDLOOP.
+    ENDIF.
+  ENDIF.
+
+  t_dd03p[] = t_zdd03p[].
+
+ENDFORM.                    " get_table_metadata
+
+
+*&--------------------------------------------------------------------*
+*&      Form  type_validation
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_FIELD     text
+*      -->_TYPE      text
+*      -->_OUTPUTLEN text
+*      -->_WILDCARDOKtext
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM type_validation  USING    _field
+                               _type
+                               _outputlen
+                               _wildcardok
+                               _is_pkwhere
+                      CHANGING
+                               _value
+                               _rc.
+
+  DATA:
+    errormsg_value LIKE ZXTRACTRANGE-low.
+
+  PERFORM length_validation USING _field _value _outputlen _type
+                         CHANGING _rc.
+
+  CHECK _rc IS INITIAL.
+
+* execute value validation only for user where clauses
+  IF _is_pkwhere IS INITIAL.
+    errormsg_value = _value.
+
+    CASE _type.
+      WHEN 'CHAR' OR 'CLNT' OR 'CUKY' OR 'LANG' OR 'UNIT'. "character
+
+      WHEN 'NUMC' OR 'ACCP'. "numeric character
+        CONDENSE _value NO-GAPS.
+        IF (     _wildcardok IS INITIAL
+             AND _value CN '0123456789 ' )
+          OR (     NOT _wildcardok IS INITIAL
+               AND _value CN '0123456789 %_'
+               AND _value NA '##' ).
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+          _rc = c_syntax.
+        ENDIF.
+
+      WHEN 'DATS'. "Date
+        PERFORM date_type_check USING _wildcardok
+                             CHANGING _value  _rc.
+        IF NOT _rc IS INITIAL.
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+          _rc = c_syntax.
+        ENDIF.
+
+      WHEN 'TIMS'. "time
+        PERFORM time_type_check USING _wildcardok
+                             CHANGING _value  _rc.
+        IF NOT _rc IS INITIAL.
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+          _rc = c_syntax.
+        ENDIF.
+
+      WHEN 'INT1'. "byte
+        PERFORM integer1_type_check CHANGING _value _rc.
+
+        IF NOT _rc IS INITIAL.
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+        ENDIF.
+
+      WHEN 'INT2' OR 'PREC'.                                "2-byte
+        PERFORM integer2_type_check CHANGING _value  _rc.
+
+        IF NOT _rc IS INITIAL.
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+        ENDIF.
+
+      WHEN 'INT4'. "integer
+        PERFORM integer_type_check CHANGING _value  _rc.
+
+        IF NOT _rc IS INITIAL.
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+        ENDIF.
+
+      WHEN 'DEC' OR 'CURR' OR 'QUAN'.
+        PERFORM decimal_type_check CHANGING _value  _rc.
+
+        IF NOT _rc IS INITIAL.
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+        ENDIF.
+
+      WHEN 'FLTP'. "float up to 8 bytes
+        PERFORM float_type_check CHANGING _value  _rc.
+        IF NOT _rc IS INITIAL.
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+        ENDIF.
+
+      WHEN 'RAW'.
+        CONDENSE _value NO-GAPS.
+        IF _value CN '0123456789ABCDEF '.
+          PERFORM add_message USING 'E' '010' _field errormsg_value
+                                 space space.
+          _rc = c_syntax.
+        ENDIF.
+
+      WHEN OTHERS.
+        PERFORM add_message USING 'E' '011' _field _type
+                               space space.
+        _rc = c_syntax.
+    ENDCASE.
+  ENDIF.
+
+ENDFORM.                    " type_validation
+
+*&--------------------------------------------------------------------*
+*&      Form  get_record_length
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_DELIM     text
+*      -->_LENGTH    text
+*---------------------------------------------------------------------*
+FORM get_record_length USING    _delim
+                       CHANGING _length.
+  DATA: col_delim_len TYPE int4,
+        row_delim_len TYPE int4.
+
+  col_delim_len = strlen( c_columndelimiter ).
+  row_delim_len = strlen( c_rowdelimiter ).
+  CLEAR _length.
+  LOOP AT t_field.
+    ADD t_field-outputlen TO _length.
+    IF NOT _delim IS INITIAL.
+      ADD col_delim_len TO _length.
+    ENDIF.
+  ENDLOOP.
+  IF NOT _delim IS INITIAL.
+* subtract last column delimiter length because it doesn't get populated
+    SUBTRACT col_delim_len FROM _length.
+    ADD row_delim_len TO _length.
+  ENDIF.
+ENDFORM.                    "get_record_length
+
+*&--------------------------------------------------------------------*
+*&      Form  add_message
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_SEVERITY  text
+*      -->_NUMBER    text
+*      -->V1         text
+*      -->V2         text
+*      -->V3         text
+*      -->V4         text
+*---------------------------------------------------------------------*
+FORM add_message  USING _severity _number v1 v2 v3 v4.
+
+ENDFORM.                    " add_message
+
+
+*&--------------------------------------------------------------------*
+*&      Form  decimal_type_check
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM decimal_type_check  CHANGING _value  _rc.
+  DATA:
+    zdec(3)   TYPE c,
+    zgroup    TYPE c,
+    zpos      LIKE sy-fdpos,
+    replacerc LIKE sy-subrc,
+    zdeclen   TYPE int4.
+
+  IF    _value CN '0123456789.-, '
+    OR _value  CO '.-, '.
+    _rc = c_syntax.
+    EXIT.
+  ENDIF.
+
+  IF zdcpfm = 'X'. "period is decimal
+    zdec = '.'.
+    zgroup = ','.
+  ELSE. "comma is decimal
+    zdec = ','.
+    zgroup = '.'.
+  ENDIF.
+
+  zdeclen = strlen( zdec ).
+
+* get rid of the group separators
+  PERFORM replace_all_occurrences
+                            USING
+                              zgroup
+                              space
+                            CHANGING
+                              _value
+                              replacerc.
+* use . as decimal point internally
+  IF zdec <> '.'.
+    PERFORM replace_all_occurrences
+                              USING
+                                zdec(zdeclen)
+                                '.'
+                              CHANGING
+                                _value
+                                replacerc.
+  ENDIF.
+* remove all the spaces
+  CONDENSE _value NO-GAPS.
+
+* look for more than one decimal point
+* replace 4.7+ syntax
+*  FIND zdec IN _value MATCH OFFSET zpos.
+
+* for search '.' has special meaning and has to
+* be replaced with '...'
+  zdec = '...'.
+  zdeclen = strlen( zdec ).
+
+  SEARCH _value FOR zdec(zdeclen).
+* end replace 4.7+ syntax
+  IF sy-subrc = 0.
+* sy-fdpos returns a position based on 0 for the
+* first character in the string
+* search uses a position based on 1 for the first
+* character in the string
+    zpos = sy-fdpos + 2.
+* replace 4.7+ syntax
+* FIND zdec IN SECTION OFFSET zpos  OF  _value.
+    SEARCH _value FOR zdec(zdeclen) STARTING AT zpos.
+* end replace 4.7+ syntax
+    IF sy-subrc = 0.
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+  ENDIF.
+
+  PERFORM check_negative_sign CHANGING _value _rc.
+
+ENDFORM.                    " decimal_type_check
+
+*&--------------------------------------------------------------------*
+*&      Form  check_negative_sign
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM check_negative_sign CHANGING _value _rc.
+  DATA:
+    searchrange     TYPE int4,
+    searchoffset    TYPE int4.
+
+  CONDENSE _value NO-GAPS.
+* check for negative sign in the middle of the number and reject
+* it if found
+* replace 4.7+ syntax
+*  searchrange = strlen( _value ) - 2.
+*  FIND '-' IN SECTION OFFSET 1 LENGTH searchrange OF _value.
+  searchrange = strlen( _value ) - 1.
+  SEARCH _value FOR '-' STARTING AT 2 ENDING AT searchrange.
+* end replace 4.7+ syntax
+  IF sy-subrc = 0.
+    _rc = c_syntax.
+  ELSE.
+* make sure there is only one negative sign and shift it to the left
+* if it is on the right
+* replace 4.7+ syntax
+*    searchoffset = strlen( _value ) - 1.
+*    FIND '-' IN SECTION OFFSET searchoffset LENGTH 1 OF _value.
+    searchoffset = strlen( _value ).
+    SEARCH _value FOR '-'
+      STARTING AT searchoffset
+      ENDING AT searchoffset.
+* end replace 4.7+ syntax
+    IF sy-subrc  = 0.
+      IF _value(1) = '-'.
+        _rc = c_syntax.
+        EXIT.
+      ELSE.
+        SHIFT _value RIGHT DELETING TRAILING space.
+        SHIFT _value RIGHT CIRCULAR.
+        CONDENSE _value NO-GAPS.
+      ENDIF.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    "check_negative_sign
+
+*&--------------------------------------------------------------------*
+*&      Form  get_user_setting
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_ZDCPFM    text
+*      -->_ZDATFM    text
+*---------------------------------------------------------------------*
+FORM get_user_setting  CHANGING _zdcpfm
+                                _zdatfm.
+  CLEAR: _zdcpfm,
+         _zdatfm.
+  SELECT SINGLE dcpfm datfm INTO (_zdcpfm, _zdatfm)
+    FROM usr01
+   WHERE bname = sy-uname.
+  IF sy-subrc <> 0.
+* default to period as decimal point
+    _zdcpfm = 'X'.
+* default to MM/DD/YYYY
+    _zdatfm = 2.
+  ENDIF.
+ENDFORM.                    " get_user_setting
+
+
+
+
+
+*&--------------------------------------------------------------------*
+*&      Form  conversion_and_validation
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_FIELD     text
+*      -->_DATATYPE  text
+*      -->_OUTPUTLEN text
+*      -->_EXIT      text
+*      -->_ROLLNAME  text
+*      -->_WILDCARDOKtext
+*      -->_RUN_EXIT  text
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM conversion_and_validation  USING _field
+                                      _datatype
+                                      _outputlen
+                                      _exit
+                                      _rollname
+                                      _wildcardok
+                                      _run_exit
+                                      _is_pkwhere
+                             CHANGING _value
+                                      _rc.
+  FIELD-SYMBOLS: <fs>.
+* if there is no conversion do type validation
+  IF    _exit     IS INITIAL
+     OR _run_exit IS INITIAL.
+    PERFORM type_validation USING _field
+                                  _datatype
+                                  _outputlen
+                                  _wildcardok
+                                  _is_pkwhere
+                         CHANGING _value _rc.
+  ELSE.
+
+    IF _exit = 'ALPHA'.
+      PERFORM type_validation USING _field
+                                    _datatype
+                                    _outputlen
+                                    _wildcardok
+                                    _is_pkwhere
+                            CHANGING _value _rc.
+      IF _rc IS INITIAL.
+        ASSIGN _value TO <fs> CASTING TYPE (_rollname).
+        PERFORM conversion_exit USING  _exit  'I'
+                                CHANGING <fs> _rc.
+      ENDIF.
+    ELSE.
+* if there is a conversion exit that handles bad input, call it first
+* because some of them change the type like aspbp enter P10000 as numc
+* would fail type validation
+      PERFORM conversion_exit USING  _exit  'I'
+                              CHANGING _value _rc.
+
+    ENDIF.
+  ENDIF.
+ENDFORM.                    " conversion_and_validation
+
+*&--------------------------------------------------------------------*
+*&      Form  float_type_check
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM float_type_check  CHANGING _value  _rc.
+
+  DATA:
+    zgroup    TYPE c,
+    zint      TYPE i,
+    zfloat    TYPE f,
+    replacerc LIKE sy-subrc.
+
+  DATA:
+    mantissa(96)   TYPE c,
+    mantissa_p(16) TYPE p DECIMALS 14,
+    junk(1)        TYPE c.
+
+  DATA: BEGIN OF exponent,
+          sign(1) TYPE c,
+          magnitude(3) TYPE c,
+        END OF exponent.
+
+  IF     _value CN '0123456789.-,+E '
+     AND _value CO '.-,+E '.
+    _rc = c_syntax.
+    EXIT.
+  ENDIF.
+
+  zgroup = ','.
+
+* get rid of the group separators
+  PERFORM replace_all_occurrences
+                            USING
+                              zgroup
+                              space
+                            CHANGING
+                              _value
+                              replacerc.
+* remove all the spaces
+  CONDENSE _value NO-GAPS.
+
+* replace 4.7+ syntax
+*  FIND 'E' IN _value.
+  SEARCH _value FOR 'E'.
+* end replace 4.7+ syntax
+  IF sy-subrc = 0.
+    SPLIT _value AT 'E' INTO mantissa exponent junk .
+* there should be only 1 'E' and exponent fits in 4char
+    IF sy-subrc <> 0 OR NOT junk IS INITIAL OR exponent-sign CN '+-'.
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+* check the mantissa is a decimal < 10
+    PERFORM decimal_type_check CHANGING mantissa  _rc.
+
+    CHECK _rc IS INITIAL.
+
+    zfloat = mantissa.
+
+    IF zfloat >= 10.
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+
+* check the exponent <= 308
+    IF exponent-magnitude CN '0123456789 '.
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+    zint = exponent-magnitude.
+
+    IF zint > 308.
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+
+* check positive max
+    IF     zint = 308
+       AND exponent-sign = '+'
+       AND zfloat > '1.7976931348623157'.
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+
+* check negative max
+    IF     zint = 308
+       AND exponent-sign = '-'
+       AND zfloat > '2.2250738585072014'.
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+
+  ELSE. "it's just a decimal.
+    PERFORM decimal_type_check CHANGING _value  _rc.
+    CHECK _rc IS INITIAL.
+  ENDIF.
+
+ENDFORM.                    " float_type_check
+
+*&--------------------------------------------------------------------*
+*&      Form  integer_type_check
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM integer_type_check  CHANGING _value  _rc.
+  DATA:
+    znum         TYPE f,
+    replacerc    LIKE sy-subrc.
+
+  IF    _value CN '-,.0123456789 '
+     OR _value  CO '.-, '.
+    _rc = c_syntax.
+    EXIT.
+  ENDIF.
+
+* remove 1000 separators and condense
+  PERFORM replace_all_occurrences
+                            USING
+                              '.'
+                              space
+                            CHANGING
+                              _value
+                              replacerc.
+
+  PERFORM replace_all_occurrences
+                            USING
+                              ','
+                              space
+                            CHANGING
+                              _value
+                              replacerc.
+
+  CONDENSE _value NO-GAPS.
+
+  PERFORM check_negative_sign CHANGING _value _rc.
+  IF NOT _rc IS INITIAL.
+    EXIT.
+  ENDIF.
+
+  znum = _value.
+  IF   znum > c_max_int
+    OR znum < c_max_int_neg.
+    _rc = c_syntax.
+  ENDIF.
+ENDFORM.                    " integer_type_check
+
+*&--------------------------------------------------------------------*
+*&      Form  length_validation
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_FIELD     text
+*      -->_VALUE     text
+*      -->_OUTPUTLEN text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM length_validation USING _field _value _outputlen _type
+                       CHANGING _rc.
+
+  DATA:
+    zlen             TYPE i,
+    nlen             LIKE t_dd03p-outputlen,
+    escapechar_count LIKE t_dd03p-outputlen.
+
+  zlen = strlen( _value ).
+  nlen = zlen.
+
+  IF _type = 'CHAR' OR _type = 'LCHR'.
+    PERFORM count_escapequotes USING _value
+                            CHANGING escapechar_count.
+    nlen = nlen = escapechar_count.
+* for char subtract number of escape characters from length
+    IF nlen > _outputlen.
+      _rc = c_error.
+      PERFORM add_message USING 'E' '027' _field nlen _outputlen space.
+    ENDIF.
+  ELSE.
+* for every other type the detected length is it
+    IF nlen > _outputlen.
+      _rc = c_error.
+      PERFORM add_message USING 'E' '027' _field nlen _outputlen space.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    "length_validation
+
+*&--------------------------------------------------------------------*
+*&      Form  count_escapequotes
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_VALUE     text
+*      -->_QUOTECOUNTtext
+*---------------------------------------------------------------------*
+FORM count_escapequotes USING _value
+                     CHANGING _quotecount.
+  DATA:
+    quoteoffset      TYPE int4,
+    afterquoteoffset TYPE int4,
+    rc               LIKE sy-subrc.
+
+  CLEAR:
+    _quotecount,
+    rc.
+
+  quoteoffset = 1.
+  WHILE rc IS INITIAL.
+    SEARCH _value FOR ''''
+      STARTING AT quoteoffset.
+    IF sy-subrc = 0.
+* search uses offsets with base 1 but sy-fdpos
+* is returned with base 0, so I have to adjust
+* according to what search requires
+      quoteoffset = quoteoffset + sy-fdpos - 1.
+* check if the next character in the value
+* is also a quote in which case, do nothing
+      afterquoteoffset = quoteoffset + 1.
+      IF _value+afterquoteoffset(1) = ''''.
+        ADD 1 TO _quotecount.
+* set starting position for next search
+        quoteoffset = afterquoteoffset + 2.
+      ENDIF.
+    ELSE.
+      rc = sy-subrc.
+    ENDIF.
+  ENDWHILE.
+
+ENDFORM.                    "count_escapequotes
+
+*&--------------------------------------------------------------------*
+*&      Form  integer2_type_check
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM integer2_type_check  CHANGING _value  _rc.
+  DATA:
+    znum         TYPE f,
+    replacerc    LIKE sy-subrc.
+
+  IF    _value CN '-,.0123456789 '
+    OR _value  CO '.-, '.
+    _rc = c_syntax.
+    EXIT.
+  ENDIF.
+
+* remove 1000 separators and condense
+  PERFORM replace_all_occurrences
+                            USING
+                              '.'
+                              space
+                            CHANGING
+                              _value
+                              replacerc.
+
+  PERFORM replace_all_occurrences
+                            USING
+                              ','
+                              space
+                            CHANGING
+                              _value
+                              replacerc.
+
+  CONDENSE _value NO-GAPS.
+
+  PERFORM check_negative_sign CHANGING _value _rc.
+  IF NOT _rc IS INITIAL.
+    EXIT.
+  ENDIF.
+
+  znum = _value.
+  IF znum > 32767
+   OR znum < -32768.
+    _rc = c_syntax.
+  ENDIF.
+ENDFORM.                    "integer2_type_check
+
+*&--------------------------------------------------------------------*
+*&      Form  integer1_type_check
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM integer1_type_check  CHANGING _value  _rc.
+  DATA: znum TYPE f.
+
+  IF _value CN '0123456789 '.
+    _rc = c_syntax.
+    EXIT.
+  ENDIF.
+
+  CONDENSE _value NO-GAPS.
+
+  znum = _value.
+  IF znum > 255
+   OR znum < 0.
+    _rc = c_syntax.
+  ENDIF.
+ENDFORM.                    "integer1_type_check
+
+*&--------------------------------------------------------------------*
+*&      Form  date_type_check
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_WILDCARDOKtext
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM date_type_check USING _wildcardok CHANGING _value _rc.
+  DATA:
+    checkdate   TYPE d,
+    dateformat  TYPE c,
+    valuelength TYPE int4,
+    dayoffset   TYPE int4,
+    monthoffset TYPE int4,
+    yearoffset  TYPE int4,
+    replacerc   LIKE sy-subrc.
+
+  CLEAR _rc.
+
+  IF _value <> space. "if value is SPACE we are done
+* check length
+    valuelength = strlen( _value ).
+    IF          valuelength > 10    "with separators
+       OR (     valuelength < 8     "no separators
+            AND _wildcardok IS INITIAL )."no wildcards
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+
+* the value is eight characters long
+* check that it is numeric and assume YYYYMMDD
+* otherwise use user format
+    IF valuelength = 8.
+      IF _value CN '0123456789'.
+        dateformat = 4.
+      ELSE.
+        _rc = c_syntax.
+        EXIT.
+      ENDIF.
+    ELSE.
+      dateformat = zdatfm.
+    ENDIF.
+
+* check content
+    CASE _wildcardok.
+      WHEN space.
+        IF    _value CN '0123456789./- '
+           OR _value CO './- '
+           OR _value CA '##'.
+          _rc = c_syntax.
+          EXIT.
+        ENDIF.
+      WHEN 'X'.
+        IF    _value CN '0123456789./-%_ '
+           OR _value CO './- '
+           OR _value CA '##'.
+          _rc = c_syntax.
+          EXIT.
+        ENDIF.
+    ENDCASE.
+
+* get rid of separators
+    PERFORM replace_all_occurrences
+                              USING
+                                '.'
+                                space
+                              CHANGING
+                                _value
+                                replacerc.
+
+    PERFORM replace_all_occurrences
+                              USING
+                                '/'
+                                space
+                              CHANGING
+                                _value
+                                replacerc.
+
+    PERFORM replace_all_occurrences
+                              USING
+                                '-'
+                                space
+                              CHANGING
+                                _value
+                                replacerc.
+
+    CONDENSE _value NO-GAPS.
+    valuelength = strlen( _value ).
+
+* if the value is 6 characters long make sure
+* it only contains numbers for if there are no
+* wildcards
+    IF _wildcardok IS INITIAL.
+      IF    (     valuelength = 8
+              AND _value CN '0123456789 ' )
+         OR valuelength > 8.
+        _rc = c_syntax.
+        EXIT.
+      ENDIF.
+    ENDIF.
+
+* the date validation logic only works if there are no
+* wildcards
+    IF NOT (     NOT _wildcardok IS INITIAL
+             AND _value CA '%_' ).
+      CASE dateformat.
+        WHEN 1.
+* DD.MM.YYYY
+          dayoffset   = 0.
+          monthoffset = 2.
+          yearoffset  = 4.
+        WHEN 2 OR 3.
+* MM/DD/YYYY or MM-DD-YYYY
+          dayoffset   = 2.
+          monthoffset = 0.
+          yearoffset  = 4.
+        WHEN 4 OR 5 OR 6.
+* YYYY.MM.DD or YYYY.MM.DD or YYYY-MM-DD
+          dayoffset   = 6.
+          monthoffset = 4.
+          yearoffset  = 0.
+        WHEN OTHERS.
+          PERFORM add_message USING 'E' '064' space space space space.
+      ENDCASE.
+
+* for non-initial dates make sure day and month values
+* are greater than 0
+      IF _value <> '00000000'.
+* check month between 0 and 12
+        IF _value+monthoffset(2) < 1 OR _value+monthoffset(2) > 12.
+          _rc = c_syntax.
+        ENDIF.
+* check day between 0 and 31
+        IF _value+dayoffset(2) < 1 OR _value+dayoffset(2) > 31.
+          _rc = c_syntax.
+        ENDIF.
+* check leap year
+        IF _value+monthoffset(2) = '02'.
+          MOVE _value+yearoffset(4) TO checkdate(4).
+          MOVE '0301' TO checkdate+4(4).
+          SUBTRACT 1 FROM checkdate.
+          IF _value+dayoffset(2) > checkdate+6(2).
+            _rc = c_syntax.
+          ENDIF.
+        ELSE.
+* check 30/31 day months
+          IF _value+monthoffset(2) = '04'
+          OR _value+monthoffset(2) = '06'
+          OR _value+monthoffset(2) = '09'
+          OR _value+monthoffset(2) = '11'.
+            IF _value+dayoffset(2) = '31'.
+              _rc = c_syntax.
+            ENDIF.
+          ENDIF.
+        ENDIF.
+      ENDIF.
+
+* if the date checks out, convert to YYYYMMDD
+      IF _rc IS INITIAL.
+        IF dateformat BETWEEN 1 AND 3."4-6 already are good to go
+          checkdate(4)   = _value+yearoffset(4).
+          checkdate+4(2) = _value+monthoffset(2).
+          checkdate+6(2) = _value+dayoffset(2).
+          _value = checkdate.
+        ENDIF.
+      ENDIF.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    "date_type_check
+
+*&--------------------------------------------------------------------*
+*&      Form  time_type_check
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->_WILDCARDOKtext
+*      -->_VALUE     text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM time_type_check USING _wildcardok CHANGING _value _rc.
+  DATA:
+    checktime   TYPE t,
+    valuelength TYPE int4,
+    replacerc   LIKE sy-subrc.
+
+  CLEAR _rc.
+
+* check length
+  valuelength = strlen( _value ).
+  IF    valuelength > 8  "with separators
+     OR (     valuelength < 6 "no separators
+          AND _wildcardok IS INITIAL )."no wildcards
+    _rc = c_syntax.
+    EXIT.
+  ENDIF.
+
+* check content
+
+  CASE _wildcardok.
+    WHEN space.
+      IF    _value CN '0123456789: '
+         OR _value CO ': '
+         OR _value CA '##'.
+        _rc = c_syntax.
+        EXIT.
+      ENDIF.
+    WHEN 'X'.
+      IF    _value CN '0123456789:%_ '
+         OR _value CO ': '
+         OR _value CA '##'.
+        _rc = c_syntax.
+        EXIT.
+      ENDIF.
+  ENDCASE.
+
+* get rid of separators
+  PERFORM replace_all_occurrences
+                            USING
+                              ':'
+                              space
+                            CHANGING
+                              _value
+                              replacerc.
+  CONDENSE _value NO-GAPS.
+  valuelength = strlen( _value ).
+
+* if the value is 6 characters long make sure
+* it only contains numbers for if there are no
+* wildcards
+  IF _wildcardok IS INITIAL.
+    IF    (     valuelength = 6
+            AND _value CN '0123456789 ' )
+       OR valuelength > 6.
+      _rc = c_syntax.
+      EXIT.
+    ENDIF.
+  ENDIF.
+
+* the time validation logic only works if there are no
+* wildcards
+  IF NOT (     NOT _wildcardok IS INITIAL
+           AND _value CA '%_' ).
+* check hour between 0 and 24
+    IF _value(2) < 0 OR _value(2) > 24.
+      _rc = c_syntax.
+    ENDIF.
+
+* check minutes between 0 and 59
+    IF _value+2(2) < 0 OR _value+2(2) > 59.
+      _rc = c_syntax.
+    ENDIF.
+
+* check seconds between 0 and 59
+    IF _value+4(2) < 0 OR _value+4(2) > 59.
+      _rc = c_syntax.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    "time_type_check
+
+
+*&--------------------------------------------------------------------*
+*&      Form  strip_endquotes
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->VALUE      text
+*---------------------------------------------------------------------*
+FORM strip_endquotes CHANGING value.
+  DATA:
+    valuelength TYPE int4.
+
+  valuelength = strlen( value ) - 1.
+* strip quotes only if there is a beginning and an end quote
+  IF     value(1) = ''''
+     AND value+valuelength(1) = ''''
+     AND valuelength > 1. "make sure there are really two quotes
+* strip quote at the end of the value
+    value+valuelength(1) = ' '.
+* strip quote a the beginning of the value
+    SHIFT value LEFT DELETING LEADING ''''.
+  ENDIF.
+ENDFORM.                    "strip_endquotes
+
+*&--------------------------------------------------------------------*
+*&      Form  double_singlequotes
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->VALUE      text
+*      -->_RC        text
+*---------------------------------------------------------------------*
+FORM double_singlequotes CHANGING value _rc.
+  DATA:
+    outputvalue      LIKE ZXTRACTRANGE-low,
+    quoteoffset      TYPE int4,
+    afterquoteoffset TYPE int4,
+    rc               LIKE sy-subrc.
+
+  CLEAR rc.
+  quoteoffset = 1.
+  WHILE rc IS INITIAL.
+    SEARCH value FOR ''''
+      STARTING AT quoteoffset.
+    IF sy-subrc = 0.
+* search uses offsets with base 1 but sy-fdpos
+* is returned with base 0, so I have to adjust
+* according to what search requires
+      quoteoffset = quoteoffset + sy-fdpos - 1.
+* check if the next character in the value
+* is also a quote in which case, do nothing
+      afterquoteoffset = quoteoffset + 1.
+*      IF value+afterquoteoffset(1) <> ''''.
+* double up
+* make sure it does not run over
+      REPLACE
+        ''''
+        WITH ''''''
+        INTO value+quoteoffset.
+      CASE sy-subrc.
+        WHEN 0.
+* start next search after the second quote
+          quoteoffset = afterquoteoffset + 2.
+        WHEN 2.
+* overflow on the value field.
+          _rc = '048'.
+          EXIT.
+        WHEN OTHERS.
+          _rc = '049'.
+          EXIT.
+      ENDCASE.
+*      ELSE.
+* set starting position for next search
+*        quoteoffset = afterquoteoffset + 2.
+*      ENDIF.
+    ELSE.
+      rc = sy-subrc.
+    ENDIF.
+  ENDWHILE.
+ENDFORM.                    "double_singlequotes
+
+*&--------------------------------------------------------------------*
+*&      Form  remove_duplicate_fields
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->IN_SELECTFItext
+*      -->OUT_SELECTFtextS
+*---------------------------------------------------------------------*
+FORM remove_duplicate_fields
+                    TABLES
+                      in_selectfields STRUCTURE ZXTRACTSELFIELDS
+                      out_selectfields STRUCTURE ZXTRACTSELFIELDS.
+  LOOP AT in_selectfields.
+    READ TABLE out_selectfields WITH KEY in_selectfields-fieldname.
+
+    IF sy-subrc = 0. "duplicate
+      PERFORM add_message USING 'I' '054' in_selectfields-fieldname
+                                space space space.
+    ELSE.
+      APPEND in_selectfields TO out_selectfields.
+    ENDIF.
+
+  ENDLOOP.
+ENDFORM.                    " remove_duplicate_fields
+
+*&--------------------------------------------------------------------*
+*&      Form  remove_unselected_fields
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_TABLEFIELtext
+*      -->T_SELECTFIEtext
+*---------------------------------------------------------------------*
+FORM remove_unselected_fields TABLES
+                                t_tablefields  STRUCTURE DD03P
+                                t_selectfields STRUCTURE ZXTRACTSELFIELDS.
+  DATA:
+    selectfieldcount TYPE int4.
+
+  DESCRIBE TABLE t_selectfields LINES selectfieldcount.
+* if no fields are in the selectfields table, all fields are selected
+* in that case do not filter
+  IF selectfieldcount > 0.
+    LOOP AT t_tablefields.
+      READ TABLE t_selectfields
+        WITH KEY fieldname = t_tablefields-fieldname.
+      IF sy-subrc <> 0.
+        DELETE t_tablefields.
+      ELSE.
+        t_tablefields-position = sy-tabix.
+        MODIFY t_tablefields.
+      ENDIF.
+    ENDLOOP.
+  ENDIF.
+  SORT t_tablefields BY position ASCENDING.
+  CLEAR t_tablefields.
+ENDFORM.                    " remove_unselected_fields
+
+*&--------------------------------------------------------------------*
+*&      Form  detect_large_pk_fields
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_DD03P    text
+*---------------------------------------------------------------------*
+FORM detect_large_pk_fields TABLES t_dd03p STRUCTURE dd03p.
+  LOOP AT t_dd03p WHERE NOT keyflag IS INITIAL.
+    IF t_dd03p-outputlen > c_where_value_limit_46.
+      PERFORM add_message USING 'E' '074' t_dd03p-fieldname
+                                space space space.
+    ENDIF.
+  ENDLOOP.
+ENDFORM.                    "detect_large_pk_fields
+
+*&--------------------------------------------------------------------*
+*&      Form  replace_all_occurrences
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->SEARCH_PATTtext
+*      -->REPLACE_PATtext
+*      -->TARGETSTRINtext
+*---------------------------------------------------------------------*
+FORM replace_all_occurrences USING
+                               search_pattern
+                               replace_pattern
+                             CHANGING
+                               target_string
+                               rc.
+  DATA replacerc LIKE sy-subrc.
+  CLEAR:
+    rc,
+    replacerc.
+
+* assume nothing will be found
+  rc = 4.
+
+  WHILE replacerc = 0.
+    REPLACE search_pattern
+      WITH replace_pattern
+      INTO target_string.
+    replacerc = sy-subrc.
+    IF replacerc = 0.
+      rc = 0.
+    ENDIF.
+  ENDWHILE.
+ENDFORM.                    "replace_all_occurrences
+
+*&--------------------------------------------------------------------*
+*&      Form  init_pk_where_clause
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_PK_WHERE_textSE
+*      -->PK_WHERE_STtext
+*      -->PK_FIELD_COtext
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM init_pk_where_clause_cluster
+                  TABLES t_pk_where_clause STRUCTURE ZXTRACTRANGE
+                         t_pk_where_tab
+                   USING abapversion
+                CHANGING pk_where_string
+                         pk_field_count
+                         rc.
+  DATA  pk_index        LIKE sy-tabix.
+  DATA  digitcount      TYPE i.
+  DATA  decimalpoint    TYPE c.
+
+  IF zdcpfm = 'X'. "period is decimal
+    decimalpoint = '.'.
+  ELSE. "comma is decimal
+    decimalpoint = ','.
+  ENDIF.
+
+
+  CLEAR rc.
+  CLEAR pk_field_count.
+* initialize pk where clause
+  REFRESH t_pk_where_clause.
+  SORT t_dd03p BY keyflag DESCENDING position ASCENDING.
+  LOOP AT t_dd03p WHERE NOT keyflag IS INITIAL.
+    CLEAR t_pk_where_clause.
+    t_pk_where_clause-field    = t_dd03p-fieldname.
+    t_pk_where_clause-sign     = 'I'.
+    t_pk_where_clause-option   = 'GE'.
+    CASE t_dd03p-inttype.
+      WHEN 'C'.
+        t_pk_where_clause-low     = space.
+      WHEN 'D'.
+        t_pk_where_clause-low     = '00000000'.
+      WHEN 'T'.
+        t_pk_where_clause-low     = '000000'.
+      WHEN 'P'.
+* generate maximum negative number for packed
+* numbers
+        digitcount = t_dd03p-leng - t_dd03p-decimals.
+        CONCATENATE  t_pk_where_clause-low '-'
+        INTO t_pk_where_clause-low.
+        DO digitcount TIMES.
+          CONCATENATE  t_pk_where_clause-low '9'
+          INTO t_pk_where_clause-low.
+        ENDDO.
+        CONCATENATE  t_pk_where_clause-low decimalpoint
+        INTO t_pk_where_clause-low.
+        DO t_dd03p-decimals TIMES.
+          CONCATENATE  t_pk_where_clause-low '9'
+          INTO t_pk_where_clause-low.
+        ENDDO.
+      WHEN 'F'.
+        t_pk_where_clause-low     = c_max_float_neg.
+      WHEN 'X'.
+        CASE t_dd03p-datatype.
+          WHEN 'INT1'.
+            t_pk_where_clause-low = '0'.
+          WHEN 'INT2'.
+            t_pk_where_clause-low = c_max_int2_neg.
+          WHEN 'INT4'.
+            t_pk_where_clause-low = c_max_int_neg.
+** notify users of the issue with 11 digit integers in 4.6C
+            IF abapversion <= '46C'.
+              PERFORM add_message USING 'W' '072'
+                                  space space space space.
+            ENDIF.
+          WHEN OTHERS.
+            t_pk_where_clause-low = c_hexnull(t_dd03p-outputlen).
+        ENDCASE.
+      WHEN OTHERS.
+        t_pk_where_clause-low     = space.
+    ENDCASE.
+    CONDENSE t_pk_where_clause-low NO-GAPS.
+    t_pk_where_clause-high     = space.
+    t_pk_where_clause-operator = 'AND'.
+    APPEND t_pk_where_clause.
+    ADD 1 TO pk_field_count.
+    pk_index = sy-tabix.
+  ENDLOOP.
+* remove operator on last row to allow chaining
+  t_pk_where_clause-operator = space.
+  MODIFY t_pk_where_clause FROM t_pk_where_clause INDEX pk_index.
+* set PK where clause
+  PERFORM where_clause  TABLES t_pk_where_clause
+                               t_pk_where_tab
+                         USING space "no field exits on pk where clause
+                               abapversion
+                               'X'
+                      CHANGING pk_where_string
+                               rc.
+  IF NOT rc IS INITIAL.
+    PERFORM add_message USING 'E' '036' space
+                                    space space space.
+  ENDIF.
+ENDFORM.                    "init_pk_where_clause_cluster
+
+*&--------------------------------------------------------------------*
+*&      Form  init_pk_where_cluster_view
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_PK_WHERE_textSE
+*      -->T_PK_WHERE_text
+*      -->ABAPVERSIONtext
+*      -->PK_WHERE_STtext
+*      -->PK_FIELD_COtext
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM init_pk_where_cluster_view
+                  TABLES t_pk_where_clause STRUCTURE ZXTRACTRANGE
+                         t_pk_where_tab
+                   USING abapversion
+                CHANGING pk_where_string
+                         pk_field_count
+                         rc.
+  DATA  pk_index        LIKE sy-tabix.
+  DATA  digitcount      TYPE i.
+  DATA  decimalpoint    TYPE c.
+
+  IF zdcpfm = 'X'. "period is decimal
+    decimalpoint = '.'.
+  ELSE. "comma is decimal
+    decimalpoint = ','.
+  ENDIF.
+
+  CLEAR rc.
+  CLEAR pk_field_count.
+* initialize pk where clause
+  REFRESH t_pk_where_clause.
+* loop over key fields of base table rather than
+* view to make sure the sequence is correct
+  LOOP AT base_keyfields.
+* read additional info from view metadata
+    READ TABLE t_dd03p
+      WITH KEY fieldname = base_keyfields-fieldname.
+    CLEAR t_pk_where_clause.
+    t_pk_where_clause-field    = t_dd03p-fieldname.
+    t_pk_where_clause-sign     = 'I'.
+    t_pk_where_clause-option   = 'GE'.
+    CASE t_dd03p-inttype.
+      WHEN 'C'.
+        t_pk_where_clause-low     = space.
+      WHEN 'D'.
+        t_pk_where_clause-low     = '00000000'.
+      WHEN 'T'.
+        t_pk_where_clause-low     = '000000'.
+      WHEN 'P'.
+* generate maximum negative number for packed
+* numbers
+        digitcount = t_dd03p-leng - t_dd03p-decimals.
+        CONCATENATE  t_pk_where_clause-low '-'
+        INTO t_pk_where_clause-low.
+        DO digitcount TIMES.
+          CONCATENATE  t_pk_where_clause-low '9'
+          INTO t_pk_where_clause-low.
+        ENDDO.
+        CONCATENATE  t_pk_where_clause-low decimalpoint
+        INTO t_pk_where_clause-low.
+        DO t_dd03p-decimals TIMES.
+          CONCATENATE  t_pk_where_clause-low '9'
+          INTO t_pk_where_clause-low.
+        ENDDO.
+      WHEN 'F'.
+        t_pk_where_clause-low     = c_max_float_neg.
+      WHEN 'X'.
+        CASE t_dd03p-datatype.
+          WHEN 'INT1'.
+            t_pk_where_clause-low = '0'.
+          WHEN 'INT2'.
+            t_pk_where_clause-low = c_max_int2_neg.
+          WHEN 'INT4'.
+            t_pk_where_clause-low = c_max_int_neg.
+** notify users of the issue with 11 digit integers in 4.6C
+            IF abapversion <= '46C'.
+              PERFORM add_message USING 'W' '072'
+                                  space space space space.
+            ENDIF.
+          WHEN OTHERS.
+            t_pk_where_clause-low = c_hexnull(t_dd03p-outputlen).
+        ENDCASE.
+      WHEN OTHERS.
+        t_pk_where_clause-low     = space.
+    ENDCASE.
+    CONDENSE t_pk_where_clause-low NO-GAPS.
+    t_pk_where_clause-high     = space.
+    t_pk_where_clause-operator = 'AND'.
+    APPEND t_pk_where_clause.
+    ADD 1 TO pk_field_count.
+    pk_index = sy-tabix.
+  ENDLOOP.
+* remove operator on last row to allow chaining
+  t_pk_where_clause-operator = space.
+  MODIFY t_pk_where_clause FROM t_pk_where_clause INDEX pk_index.
+* set PK where clause
+  PERFORM where_clause  TABLES t_pk_where_clause
+                               t_pk_where_tab
+                         USING space "no field exits on pk where clause
+                               abapversion
+                               'X'
+                      CHANGING pk_where_string
+                               rc.
+  IF NOT rc IS INITIAL.
+    PERFORM add_message USING 'E' '036' space
+                                    space space space.
+  ENDIF.
+ENDFORM.                    "init_pk_where_cluster_view
+
+*&--------------------------------------------------------------------*
+*&      Form  init_pk_where_clause
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_PK_WHERE_textSE
+*      -->T_PK_WHERE_text
+*      -->ABAPVERSIONtext
+*      -->TABCLASS   text
+*      -->BASTABCLASStext
+*      -->PK_WHERE_STtext
+*      -->PK_FIELD_COtext
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM init_pk_where_clause
+                  TABLES t_pk_where_clause STRUCTURE ZXTRACTRANGE
+                         t_pk_where_tab
+                   USING abapversion
+                         tabclass
+                         basetabclass
+                CHANGING pk_where_string
+                         pk_field_count
+                         rc.
+  IF     tabclass     <> 'CLUSTER'
+     AND tabclass     <> 'POOL'
+     AND basetabclass <> 'CLUSTER'
+     AND basetabclass <> 'POOL'.
+* initialize PK where clause as lower boundary for select
+    PERFORM init_pk_where_clause_transp
+                                 TABLES t_pk_where_clause
+                                        t_pk_where_tab
+                                  USING abapversion
+                               CHANGING pk_where_string
+                                        pk_field_count
+                                        rc.
+  ELSEIF    tabclass     = 'CLUSTER'
+         OR tabclass     = 'POOL'.
+    PERFORM init_pk_where_clause_cluster
+                                 TABLES t_pk_where_clause
+                                        t_pk_where_tab
+                                  USING abapversion
+                               CHANGING pk_where_string
+                                        pk_field_count
+                                        rc.
+  ELSEIF    basetabclass = 'CLUSTER'
+         OR basetabclass = 'POOL'.
+    PERFORM init_pk_where_cluster_view
+                                 TABLES t_pk_where_clause
+                                        t_pk_where_tab
+                                  USING abapversion
+                               CHANGING pk_where_string
+                                        pk_field_count
+                                        rc.
+  ENDIF.
+ENDFORM.                    "init_pk_where_clause
+
+*&--------------------------------------------------------------------*
+*&      Form  init_pk_where_clause_transp
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_PK_WHERE_textSE
+*      -->T_PK_WHERE_text
+*      -->ABAPVERSIONtext
+*      -->PK_WHERE_STtext
+*      -->PK_FIELD_COtext
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM init_pk_where_clause_transp
+                  TABLES t_pk_where_clause STRUCTURE ZXTRACTRANGE
+                         t_pk_where_tab
+                   USING abapversion
+                CHANGING pk_where_string
+                         pk_field_count
+                         rc.
+  DATA  pk_index        LIKE sy-tabix.
+  DATA  digitcount      TYPE i.
+  DATA  decimalpoint    TYPE c.
+
+  IF zdcpfm = 'X'. "period is decimal
+    decimalpoint = '.'.
+  ELSE. "comma is decimal
+    decimalpoint = ','.
+  ENDIF.
+
+
+  CLEAR rc.
+  CLEAR pk_field_count.
+* initialize pk where clause
+  REFRESH t_pk_where_clause.
+  SORT t_dd03p BY keyflag DESCENDING position ASCENDING.
+  LOOP AT t_dd03p WHERE NOT keyflag IS INITIAL.
+    CLEAR t_pk_where_clause.
+    t_pk_where_clause-field    = t_dd03p-fieldname.
+    t_pk_where_clause-sign     = 'E'.
+    t_pk_where_clause-option   = 'NL'.
+    t_pk_where_clause-low     = space.
+    CONDENSE t_pk_where_clause-low NO-GAPS.
+    t_pk_where_clause-high     = space.
+    t_pk_where_clause-operator = 'AND'.
+    APPEND t_pk_where_clause.
+    ADD 1 TO pk_field_count.
+    pk_index = sy-tabix.
+  ENDLOOP.
+* remove operator on last row to allow chaining
+  t_pk_where_clause-operator = space.
+  MODIFY t_pk_where_clause FROM t_pk_where_clause INDEX pk_index.
+* set PK where clause
+  PERFORM where_clause  TABLES t_pk_where_clause
+                               t_pk_where_tab
+                         USING space "no field exits on pk where clause
+                               abapversion
+                               'X'
+                      CHANGING pk_where_string
+                               rc.
+  IF NOT rc IS INITIAL.
+    PERFORM add_message USING 'E' '036' space
+                                    space space space.
+  ENDIF.
+ENDFORM.                    "init_pk_where_clause_transp
+
+*&--------------------------------------------------------------------*
+*&      Form  save_pk_where_clause
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_PK_WHERE_textSE
+*---------------------------------------------------------------------*
+FORM save_pk_where_clause TABLES t_pk_where_clause STRUCTURE ZXTRACTRANGE.
+  save_pk_where_clause[] = t_pk_where_clause[].
+ENDFORM.                    "save_pk_where_clause
+
+*&--------------------------------------------------------------------*
+*&      Form  restore_pk_where_clause
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_PK_WHERE_textSE
+*---------------------------------------------------------------------*
+FORM restore_pk_where_clause TABLES t_pk_where_clause STRUCTURE ZXTRACTRANGE.
+  t_pk_where_clause[] = save_pk_where_clause[].
+ENDFORM.                    "restore_pk_where_clause
+
+*&--------------------------------------------------------------------*
+*&      Form  init_pk_field_list
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_PK_WHERE_textSE
+*      -->T_PK_FIELD_text
+*      -->PK_FIELD_LItext
+*---------------------------------------------------------------------*
+FORM init_pk_field_list
+          TABLES t_pk_where_clause STRUCTURE ZXTRACTRANGE
+                 t_pk_field_list
+          CHANGING pk_field_list.
+* initialize pk field list
+  CLEAR pk_field_list.
+  LOOP AT t_pk_where_clause.
+    APPEND t_pk_where_clause-field TO t_pk_field_list.
+    CONCATENATE pk_field_list t_pk_where_clause-field
+      INTO pk_field_list
+      SEPARATED BY space.
+  ENDLOOP.
+ENDFORM.                    "initialize_pk_field_list
+
+*&--------------------------------------------------------------------*
+*&      Form  check_view_sourcetable
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->BASETABLE  text
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM check_basetable
+              USING basetable
+           CHANGING rc.
+  DATA:
+    tabclass LIKE dd02l-tabclass.
+
+  CLEAR rc.
+
+  SELECT tabclass
+    INTO tabclass UP TO 1 ROWS
+    FROM dd02l
+   WHERE tabname = basetable
+     AND as4local = 'A'. "Get active version
+  ENDSELECT.
+  IF sy-subrc <> 0.
+* base table information not found
+    PERFORM add_message USING 'E' '090' basetable
+                              space space space.
+    rc = 8.
+    EXIT.
+  ELSE.
+* for cluster and pool tables, check that all key fields
+* are part of the view
+    IF    tabclass = 'CLUSTER'
+       OR tabclass = 'POOL'.
+* set global for base table class
+      basetabclass = tabclass.
+* check if all key fields of the base table are
+* present in the view
+      SELECT position fieldname
+        INTO TABLE base_keyfields
+        FROM dd03l
+       WHERE tabname  = basetable
+         AND as4local = 'A'
+         AND keyflag  = 'X'
+         ORDER BY position.
+      IF sy-subrc <> 0.
+* base table field information not found
+        PERFORM add_message USING 'E' '090' basetable
+                                  space space space.
+        rc = 8.
+        EXIT.
+      ELSE.
+        LOOP AT base_keyfields.
+          READ TABLE t_dd03p
+            WITH KEY fieldname = base_keyfields-fieldname.
+          IF sy-subrc <> 0.
+            PERFORM add_message USING 'E' '089'
+                                      space space space space.
+            rc = 8.
+            EXIT.
+          ENDIF.
+        ENDLOOP.
+      ENDIF.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    "check_view_sourcetable
+
+*&---------------------------------------------------------------------*
+*&      Form  extract_data
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+*      -->T_DATA               text
+*      -->T_P_PK_WHERE_CLAUSE  text
+*      -->BUFFERSIZE           text
+*      -->_DELIM               text
+*      -->ROWCOUNT         text
+*      -->ROWSKIPS          text
+*      -->RC                   text
+*----------------------------------------------------------------------*
+FORM extract_data  TABLES t_data              STRUCTURE CHAR8000
+                          t_p_pk_where_clause STRUCTURE ZXTRACTRANGE
+                    USING buffersize
+                          _delim
+                          ROWCOUNT
+                          ROWSKIPS
+                          query_table
+                          user_where_string
+                 CHANGING rc
+                          RETURN.
+* PK where clause variables
+  DATA:
+    pk_where_string   TYPE string,
+    pk_field_list     TYPE string,
+    pk_field_count    TYPE int4.
+
+  DATA t_pk_where_clause TYPE STANDARD TABLE OF ZXTRACTRANGE
+                              WITH HEADER LINE.
+  DATA t_pk_where_tab    TYPE STANDARD TABLE OF char72
+                              WITH HEADER LINE.
+  DATA t_pk_field_list   TYPE STANDARD TABLE OF string.
+
+* Extract control variables
+  DATA:
+    delim                  TYPE string,
+    delim_len              TYPE int4,
+    intbatchnbr(10)        TYPE n,
+    extbatchnbr(10)        TYPE n,
+    moredata               TYPE c,
+    current_gt_pos         TYPE int4,
+    maxbuffersize          TYPE int4,
+    bufferremaining        TYPE int4,
+    queryrowcount          TYPE int4,
+    batch_readrowcount     TYPE int4,
+    batch_extractrowcount  TYPE int4,
+    extractrowcount        TYPE int4,
+    max_extractrowcount    TYPE int4,
+    lastrowindex           TYPE int4,
+    extractrowsremaining   TYPE int4,
+    outputrowcount         TYPE int4,
+    outputoffset           TYPE int4,
+    rowskip                TYPE int4,
+    appendpending(1)       TYPE c.
+
+* Code generation variables
+  DATA:
+    BEGIN OF t_code OCCURS 0,
+      codeline(200),
+    END OF t_code.
+
+  DATA:
+    prog(30)  TYPE c,
+    lin       TYPE int4,
+    pos       TYPE int4,
+    word(100) TYPE c,
+    err(200)  TYPE c.
+
+  CLEAR rc.
+
+* initialize data table
+  CLEAR:
+    t_data.
+
+  REFRESH:
+    t_data.
+
+* determine the delimiter
+  IF NOT _delim IS INITIAL.
+    delim = c_columndelimiter.
+  ELSE.
+    CLEAR delim.
+  ENDIF.
+  delim_len = strlen( delim ).
+
+  rowskip = ROWSKIPS.
+
+* initialize counts and tracking variables
+  current_gt_pos        = 0.
+  maxbuffersize         = buffersize.
+  bufferremaining       = maxbuffersize.
+  queryrowcount         = 0.
+  batch_readrowcount    = 0.
+  batch_extractrowcount = 0.
+  extractrowcount       = 0.
+  stat_querycount       = 0.
+
+  PERFORM adjust_initial_pk_where
+                        TABLES t_p_pk_where_clause.
+  IF t_p_pk_where_clause[] IS INITIAL.
+* initialize PK where clause as lower boundary for select
+    PERFORM init_pk_where_clause TABLES t_pk_where_clause
+                                        t_pk_where_tab
+                                  USING abapversion
+                                        tabclass
+                                        basetabclass
+                               CHANGING pk_where_string
+                                        pk_field_count
+                                        rc.
+  ELSE.
+    PERFORM validate_param_pk_where_clause
+                         TABLES t_p_pk_where_clause
+                       CHANGING rc.
+    t_pk_where_clause[] = t_p_pk_where_clause[].
+    DESCRIBE TABLE t_pk_where_clause LINES pk_field_count.
+* on a new batch the gt is always on the far right
+    current_gt_pos = pk_field_count.
+* set PK where clause
+    PERFORM where_clause  TABLES t_pk_where_clause
+                                 t_pk_where_tab
+                          USING space "no field exits on pk where clause
+                                 abapversion
+                                 'X'
+                        CHANGING pk_where_string
+                                 rc.
+    IF NOT rc IS INITIAL.
+      PERFORM add_message USING 'E' '036' space
+                                      space space space.
+    ENDIF.
+  ENDIF.
+
+* Save initial PK where clause
+  PERFORM save_pk_where_clause TABLES t_pk_where_clause.
+
+  CHECK rc IS INITIAL.
+
+  PERFORM init_pk_field_list   TABLES   t_pk_where_clause
+                                        t_pk_field_list
+                               CHANGING pk_field_list.
+
+  PERFORM get_record_length USING _delim
+                         CHANGING record_length.
+
+* Initialize structures and variables
+  moredata = 'X'.
+  CLEAR intbatchnbr.
+  CLEAR extbatchnbr.
+  PERFORM generate_readandconvert TABLES t_selectfields
+                                         t_pk_field_list
+                                         t_code
+                                  USING QUERY_TABLE
+                                        delim
+                                        tabclass
+                                        ROWSKIPS
+                                        abapversion.
+
+  CATCH SYSTEM-EXCEPTIONS generate_subpool_dir_full = 10.
+    GENERATE SUBROUTINE POOL t_code NAME prog
+      MESSAGE err
+      WORD word
+      LINE lin
+      OFFSET pos.
+    IF sy-subrc > 0.
+      RETURN = '052'.
+      EXIT.
+    ENDIF.
+  ENDCATCH.
+* handle runtime errors
+  IF sy-subrc = 10.
+    RETURN = '010'.
+    EXIT.
+  ENDIF.
+
+  extractrowsremaining = ROWCOUNT.
+******************************************
+* Looping until all selected data has been
+* extracted
+******************************************
+  CATCH SYSTEM-EXCEPTIONS OTHERS = 10.
+
+    WHILE moredata = 'X'.
+******************************************
+* select one batch of data
+******************************************
+      ADD 1 TO intbatchnbr.
+      CLEAR batch_readrowcount.
+      CLEAR batch_extractrowcount.
+* as long as there are more rows to be extracted
+* than fit in a read buffer, set bufferremaining
+* to max buffer size.
+      IF maxbuffersize < extractrowsremaining.
+        bufferremaining = maxbuffersize.
+      ELSE.
+* otherwise only extract as many rows as required
+* to extract
+        bufferremaining = extractrowsremaining.
+      ENDIF.
+
+      WHILE     bufferremaining > 0
+            AND NOT moredata IS INITIAL.
+        ADD 1 TO stat_querycount.
+        PERFORM readandconvert IN PROGRAM (prog)
+                  TABLES
+                      t_pk_where_clause
+                      t_dd03p
+                      t_user_where_tab
+                      t_pk_where_tab
+                      t_data
+                   USING
+                      user_where_string
+                      pk_field_count
+                      pk_where_string
+                      rowskip
+                      ''
+                      record_length
+                   CHANGING
+                      batch_readrowcount
+                      batch_extractrowcount
+                      bufferremaining
+                      extractrowsremaining
+                      intbatchnbr
+                      moredata
+                      current_gt_pos
+                      outputoffset
+                      outputrowcount
+                      appendpending
+                      rc.
+        IF NOT rc IS INITIAL.
+          PERFORM add_message USING 'E' '082' space
+                                     space space space.
+        ENDIF.
+
+        CLEAR pk_where_string.
+* adjust extractrowsremaining for rowskip.
+        extractrowsremaining =   extractrowsremaining
+                               - rowskip.
+        CLEAR rowskip. "only skip for first batch
+
+* If nothing was found for a query, restore the initial
+* pk where clause
+        IF     moredata IS INITIAL
+           AND batch_readrowcount = 0
+           AND total_readrowcount = 0.
+          PERFORM restore_pk_where_clause
+                                    TABLES t_pk_where_clause.
+        ENDIF.
+
+        PERFORM where_clause TABLES t_pk_where_clause
+                                    t_pk_where_tab
+                              USING space
+                                    abapversion
+                                    'X'
+                           CHANGING pk_where_string
+                             rc.
+        IF NOT rc IS INITIAL.
+          PERFORM add_message USING 'E' '036' space
+                                          space space space.
+        ENDIF.
+      ENDWHILE. "buffer remaining > 0
+
+* Get out if a fatal error has occurred
+      IF NOT rc IS INITIAL.
+        EXIT.
+      ENDIF.
+
+      ADD batch_extractrowcount TO extractrowcount.
+      ADD batch_extractrowcount TO total_extractrowcount.
+      ADD batch_readrowcount    TO total_readrowcount.
+
+
+* keep track of rowcounts
+      ADD outputrowcount   TO total_writerowcount.
+      CLEAR outputrowcount.
+
+      COMMIT WORK.
+
+      IF total_extractrowcount >= ROWCOUNT.
+        CLEAR moredata.
+      ENDIF.
+    ENDWHILE. "more data = 'X'
+
+* set pk where clause parameter to latest
+* pk where clause
+    t_p_pk_where_clause[] = t_pk_where_clause[].
+  ENDCATCH.
+  IF sy-subrc = 10.
+* runtime error has occurred
+    PERFORM add_message USING 'E' '061' space
+                              space space space.
+  ENDIF.
+ENDFORM.                    "extract_data
+
+*&---------------------------------------------------------------------*
+*&      Form  adjust_initial_pk_where
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+*      -->T_PK_WHERE_CLAUSE  text
+*----------------------------------------------------------------------*
+FORM adjust_initial_pk_where
+                      TABLES t_pk_where_clause STRUCTURE ZXTRACTRANGE.
+  DATA pk_where_initial(1) TYPE c.
+
+  CLEAR pk_where_initial.
+* check if the table is empty
+  IF t_pk_where_clause[] IS INITIAL.
+    pk_where_initial = 'X'.
+  ELSE.
+* check if we are dealing with an initial pk where clause
+* where all clauses are IS NOT NULL
+    pk_where_initial = 'X'.
+    LOOP AT t_pk_where_clause.
+      IF    t_pk_where_clause-sign   <> 'E'
+         OR t_pk_where_clause-option <> 'NL'
+         OR t_pk_where_clause-low    <> space.
+        CLEAR pk_where_initial.
+        EXIT.
+      ENDIF.
+    ENDLOOP.
+* if so physically clear it and have the subsequent pk where clause
+* generation build the initial clause from metadata
+    IF pk_where_initial = 'X'.
+      CLEAR t_pk_where_clause.
+      REFRESH t_pk_where_clause.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    "adjust_initial_pk_where
+
+*&--------------------------------------------------------------------*
+*&      Form  generate_readandconvert
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_FIELDLISTtext
+*      -->PK_FIELD_LItext
+*      -->T_CODE     text
+*      -->QUERY_TABLE text
+*      -->PK_WHERE_STtext
+*      -->USER_WHERE_textNG
+*      -->DELIMITER  text
+*      -->OUTPUTMODE text
+*---------------------------------------------------------------------*
+FORM generate_readandconvert TABLES t_fieldlist STRUCTURE ZXTRACTSELFIELDS
+                                    t_pk_field_list
+                                    t_code
+                             USING QUERY_TABLE
+                                   delimiter
+                                   tableclass
+                                   ROWSKIPS
+                                   abapversion.
+
+  DATA readandconvert_file TYPE string.
+  DATA t_selectfieldlist TYPE STANDARD TABLE OF ZXTRACTSELFIELDS
+                                WITH HEADER LINE.
+  DATA t_outputfieldlist TYPE STANDARD TABLE OF ZXTRACTSELFIELDS
+                                WITH HEADER LINE.
+
+* the output structure contains only the fields specified by the user
+  t_outputfieldlist[] = t_fieldlist[].
+
+* the packaging logic requires all key fields to be present
+  t_selectfieldlist[] = t_fieldlist[].
+  SORT t_dd03p BY position ASCENDING.
+  LOOP AT t_dd03p WHERE NOT keyflag IS INITIAL.
+    READ TABLE t_selectfieldlist WITH KEY fieldname = t_dd03p-fieldname.
+    IF sy-subrc > 0.
+      APPEND t_dd03p-fieldname TO t_selectfieldlist.
+    ENDIF.
+  ENDLOOP.
+
+  PERFORM generate_read_header
+              TABLES
+                 t_selectfieldlist
+                 t_outputfieldlist
+                 t_code
+              USING
+                 QUERY_TABLE
+                 delimiter
+                 ROWSKIPS
+                 tableclass
+                 abapversion.
+  PERFORM generate_read_select
+              TABLES
+                 t_selectfieldlist
+                 t_pk_field_list
+                 t_code
+              USING
+                 QUERY_TABLE
+                 tableclass
+                 abapversion.
+  PERFORM generate_read_convert
+              TABLES
+                 t_code
+              USING
+                 delimiter
+                 ROWSKIPS
+                 abapversion.
+* for transparent tables IS NOT NULL
+* can be used on PK fields
+  IF     tabclass     <> 'CLUSTER'
+     AND tabclass     <> 'POOL'
+     AND basetabclass <> 'CLUSTER'
+     AND basetabclass <> 'POOL'.
+    PERFORM generate_updatepkwhere
+                TABLES
+                   t_code.
+
+  ELSE.
+    PERFORM generate_updatepkwhere_cluster
+                TABLES
+                   t_code.
+  ENDIF.
+ENDFORM.                    "generate_readandconvert
+
+*&--------------------------------------------------------------------*
+*&      Form  generate_read_header
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_SELECTFIEtextST
+*      -->T_OUTPUTFIEtextST
+*      -->T_CODE     text
+*      -->QUERY_TABLE text
+*      -->DELIMITER  text
+*      -->OUTPUTMODE text
+*---------------------------------------------------------------------*
+FORM generate_read_header TABLES t_selectfieldlist
+                                 t_outputfieldlist
+                                 t_code
+                          USING QUERY_TABLE
+                                delimiter
+                                ROWSKIPS
+                                tableclass
+                                abapversion.
+  DATA:
+    textblock1            TYPE string,
+    textblock2            TYPE string,
+    codeline              TYPE string,
+    charint(11)           TYPE c,
+    charint2(6)           TYPE c,
+    charfloat(28)         TYPE c,
+    fieldcount            TYPE int4,
+    fieldindex            TYPE int4,
+    delimiterlength(1)    TYPE n,
+    rowdelimiterlength(1) TYPE n,
+    delimiterindex(4)     TYPE n.
+
+  delimiterindex = 1.
+  delimiterlength = strlen( delimiter ).
+  rowdelimiterlength = strlen( c_rowdelimiter ).
+
+  APPEND 'PROGRAM extract.' TO t_code.
+* write form interface
+  APPEND 'FORM READANDCONVERT' TO t_code.
+  APPEND '          TABLES' TO t_code.
+  APPEND '              t_pk_where_clause structure ZXTRACTRANGE' TO t_code.
+  APPEND '              t_dd03p structure dd03p' TO t_code.
+  APPEND '              t_user_where_tab' TO t_code.
+  APPEND '              t_pk_where_tab' TO t_code.
+* BEGIN sync mode specific code
+  APPEND '              t_data structure CHAR8000' TO t_code.
+* END sync mode specific code
+
+  APPEND '           USING' TO t_code.
+  APPEND '              user_where_string type string' TO t_code.
+  APPEND '              pk_field_count type int4' TO t_code.
+  APPEND '              pk_where_string type string' TO t_code.
+  APPEND '              ROWSKIPS type int4' TO t_code.
+* BEGIN file mode specific code
+  APPEND '              filename type char255' TO t_code.
+  APPEND '              record_length type int4' TO t_code.
+* END file mode specific code
+  APPEND '          CHANGING' TO t_code.
+  APPEND '              batch_readrowcount type int4' TO t_code.
+  APPEND '              batch_extractrowcount type int4' TO t_code.
+  APPEND '              bufferremaining type int4' TO t_code.
+  APPEND '              extractrowsremaining type int4' TO t_code.
+  APPEND '              intbatchnbr' TO t_code.
+  APPEND '              moredata type c' TO t_code.
+  APPEND '              current_gt_pos type int4' TO t_code.
+* BEGIN stream & sync mode specific code
+  APPEND '              outputoffset TYPE int4' TO t_code.
+* END stream & sync mode specific code
+  APPEND '              outputrowcount type int4' TO t_code.
+  APPEND '              appendpending type char1' TO t_code.
+  APPEND '              _rc.' TO t_code.
+
+* constants
+  APPEND 'DATA c_hexnull LIKE ZXTRACTRANGE-low.' TO t_code.
+* initialize c_hexnull here as it is used as a constant
+  APPEND 'CONCATENATE' TO t_code.
+  APPEND '  ''0000000000000000000000000''' TO t_code.
+  APPEND '  ''0000000000000000000000000''' TO t_code.
+  APPEND '  ''0000000000000000000000000''' TO t_code.
+  APPEND '  ''0000000000000000000000000''' TO t_code.
+  APPEND '  INTO c_hexnull.' TO t_code.
+
+  APPEND 'CONSTANTS:' TO t_code.
+* get constant values from global constants rather than
+* retyping them here. Some of them may change from version
+* +INT4
+  WRITE c_max_int TO charint.
+  CONCATENATE
+    'c_max_int       TYPE int4 VALUE'
+    charint
+    ','
+    INTO codeline
+    SEPARATED BY space.
+  APPEND codeline TO t_code.
+* -INT4
+  charint = c_max_int_neg.
+  SHIFT charint RIGHT DELETING TRAILING space.
+  SHIFT charint RIGHT CIRCULAR.
+  CONDENSE charint NO-GAPS.
+  CONCATENATE
+    'c_max_int_neg   TYPE int4 VALUE'
+    charint
+    ','
+    INTO codeline
+    SEPARATED BY space.
+  APPEND codeline TO t_code.
+* -INT2
+  charint2 = c_max_int2_neg.
+  SHIFT charint2 RIGHT DELETING TRAILING space.
+  SHIFT charint2 RIGHT CIRCULAR.
+  CONDENSE charint2 NO-GAPS.
+  CONCATENATE
+    'c_max_int2_neg  TYPE int4 VALUE'
+    charint2
+    ','
+    INTO codeline
+    SEPARATED BY space.
+  APPEND codeline TO t_code.
+* -FLOAT
+  charfloat = c_max_float_neg.
+  SHIFT charfloat LEFT DELETING LEADING space.
+  CONCATENATE
+    'c_max_float_neg TYPE float VALUE'
+    ' '''
+    charfloat
+    ''''
+    '.'
+    INTO codeline.
+  APPEND codeline TO t_code.
+
+* Variables
+  APPEND 'DATA decimalpoint type c.' TO t_code.
+  APPEND 'DATA queryrowcount TYPE int4.' TO t_code.
+  APPEND 'DATA lastrowindex LIKE sy-tabix.' TO t_code.
+  APPEND 'DATA pkwhereindex LIKE sy-tabix.' TO t_code.
+
+  APPEND 'DATA digitcount type I.' TO t_code.
+  APPEND 'DATA rc like sy-subrc.' TO t_code.
+  IF ROWSKIPS > 0.
+    APPEND 'DATA startrowindex LIKE sy-tabix.' TO t_code.
+  ENDIF.
+
+
+  APPEND 'DATA:' TO t_code.
+  APPEND '  maxoutputlength       TYPE int4,' TO t_code.
+  APPEND '  totalinputlength      TYPE int4,' TO t_code.
+  APPEND '  inputlengthremaining  TYPE int4,' TO t_code.
+  APPEND '  outputlengthremaining TYPE int4,' TO t_code.
+  APPEND '  transferlength        TYPE int4,' TO t_code.
+  APPEND '  inputoffset           TYPE int4,' TO t_code.
+  APPEND '  sapdataindex          TYPE int4,' TO t_code.
+  APPEND '  transfercomplete(1)   TYPE c.' TO t_code.
+
+* For views create a variable to hold the ORDER BY fields
+  IF tableclass = 'VIEW'.
+    APPEND 'DATA:' TO t_code.
+    APPEND '  begin of t_orderby occurs 0,' TO t_code.
+    APPEND '    fieldname(72) type c,' TO t_code.
+    APPEND '  end of t_orderby.' TO t_code.
+  ENDIF.
+
+* Set decimal point
+  APPEND 'decimalpoint = ''.''.' TO t_code.
+
+  APPEND 'FIELD-SYMBOLS <fld> TYPE ANY.' TO t_code.
+* generate sap structure
+  APPEND '* Structure for query result (SAP types)'
+    TO t_code.
+  APPEND 'DATA:' TO t_code.
+  APPEND 'BEGIN OF t_sapstruct OCCURS 0,' TO t_code.
+  LOOP AT t_selectfieldlist.
+* experiment with TYPE
+* if selectfield has a data element, use type definition
+    READ TABLE t_dd03p WITH KEY fieldname = t_selectfieldlist.
+    IF sy-subrc <> 0.
+      PERFORM add_message USING 'E' '003' t_selectfieldlist
+                                space space space.
+    ELSE.
+      IF NOT t_dd03p-rollname IS INITIAL.
+        CONCATENATE t_selectfieldlist 'TYPE' t_dd03p-rollname ','
+          INTO codeline
+          SEPARATED BY space.
+      ELSE.
+* otherwise use LIKE
+* add check (once) for variable length fields in table here
+* fail if any are present
+* end experiment with type (endif below must go, too)
+        CONCATENATE t_selectfieldlist ' LIKE'
+          INTO textblock1.
+        CONCATENATE QUERY_TABLE '-' t_selectfieldlist ','
+          INTO textblock2.
+        CONCATENATE textblock1 textblock2
+          INTO codeline
+          SEPARATED BY space.
+      ENDIF.
+      APPEND codeline TO t_code.
+    ENDIF.
+  ENDLOOP.
+
+  APPEND 'END OF t_sapstruct.' TO t_code.
+
+* generate receiving structure
+  APPEND '* Output structure for converted data (char types)'
+    TO t_code.
+  APPEND 'DATA:' TO t_code.
+  APPEND 'BEGIN OF outstruct,' TO t_code.
+  DESCRIBE TABLE t_outputfieldlist LINES fieldcount.
+  CLEAR fieldindex.
+
+  LOOP AT t_outputfieldlist.
+    ADD 1 TO fieldindex.
+    READ TABLE t_dd03p WITH KEY fieldname = t_outputfieldlist.
+    IF sy-subrc <> 0.
+      PERFORM add_message USING 'E' '003' t_outputfieldlist
+                                space space space.
+    ELSE.
+      CONCATENATE t_outputfieldlist '(' t_dd03p-outputlen ') type c,'
+        INTO codeline.
+      APPEND codeline TO t_code.
+      IF delimiterlength > 0.
+* do not add delimiter after the last field.
+        IF fieldindex < fieldcount.
+          CONCATENATE 'delim' delimiterindex '(' delimiterlength
+                      ') type c value ''' delimiter ''','
+            INTO codeline.
+          APPEND codeline TO t_code.
+          ADD 1 TO delimiterindex.
+        ELSEIF     fieldindex = fieldcount.
+* add row delimiter at the end of the row
+          CONCATENATE 'EOL(' delimiterlength
+                      ') type c value ''' c_rowdelimiter ''','
+            INTO codeline.
+          APPEND codeline TO t_code.
+        ENDIF.
+      ELSEIF     delimiterlength = 0
+             AND fieldindex      = fieldcount.
+        APPEND 'EOL(1) type c value ''.'',' TO t_code.
+      ENDIF.
+    ENDIF.
+  ENDLOOP.
+  APPEND 'end of outstruct.' TO t_code.
+
+ENDFORM.                    "generate_read_header
+
+*&--------------------------------------------------------------------*
+*&      Form  generate_read_select
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_SELECTFIEtextST
+*      -->T_CODE     text
+*      -->QUERY_TABLE text
+*      -->PK_WHERE_STtext
+*      -->USER_WHERE_textNG
+*---------------------------------------------------------------------*
+FORM generate_read_select TABLES t_selectfieldlist
+                                 t_pk_field_list
+                                 t_code
+                          USING QUERY_TABLE
+                                tableclass
+                                abapversion.
+  DATA:
+    textblock1    TYPE string,
+    textblock2    TYPE string,
+    t_temp_where  TYPE STANDARD TABLE OF string
+                       WITH HEADER LINE,
+    codeline      TYPE string,
+    fieldcount    TYPE int4,
+    pk_fieldcount TYPE int4.
+
+* Generate ORDER BY field list for view in itab
+* to be compatible with 46C and 47+
+  IF tableclass = 'VIEW'.
+    APPEND 'clear t_orderby.' TO t_code.
+    APPEND 'refresh t_orderby.' TO t_code.
+
+    DESCRIBE TABLE t_pk_field_list LINES pk_fieldcount.
+    IF pk_fieldcount > 0.
+      LOOP AT t_pk_field_list.
+        CONCATENATE
+          'APPEND' ' ''' t_pk_field_list ''''
+          ' TO t_orderby.'
+          INTO codeline.
+        APPEND codeline TO t_code.
+      ENDLOOP.
+    ELSE.
+      LOOP AT t_selectfieldlist.
+        CONCATENATE
+          'APPEND' ' ''' t_selectfieldlist ''''
+          ' TO t_orderby.'
+          INTO codeline.
+        APPEND codeline TO t_code.
+      ENDLOOP.
+    ENDIF.
+  ENDIF.
+
+* generate select statement
+  APPEND '* SELECT statement'
+    TO t_code.
+  APPEND 'SELECT' TO t_code.
+  LOOP AT t_selectfieldlist.
+    APPEND t_selectfieldlist TO t_code.
+  ENDLOOP.
+  CONCATENATE 'FROM' QUERY_TABLE
+    INTO codeline
+    SEPARATED BY space.
+  APPEND codeline TO t_code.
+  APPEND 'BYPASSING BUFFER UP TO bufferremaining ROWS' TO t_code.
+  APPEND 'INTO TABLE t_sapstruct' TO t_code.
+  APPEND 'WHERE' TO t_code.
+* Use where strings for abap version 620 and above
+  IF abapversion >= '620'.
+    APPEND '(pk_where_string) and (user_where_string)' TO t_code.
+  ELSE.
+    APPEND '(t_pk_where_tab) and (t_user_where_tab)' TO t_code.
+  ENDIF.
+* Use ORDER BY PK for tables
+  IF tableclass <> 'VIEW'.
+    APPEND 'ORDER BY PRIMARY KEY.' TO t_code.
+  ELSE.
+* Use ORDER BY <field list> for views
+    APPEND 'ORDER BY (t_orderby).' TO t_code.
+  ENDIF.
+
+* generate error handling
+  APPEND 'rc = sy-subrc.' TO t_code.
+  APPEND 'queryrowcount = sy-dbcnt.' TO t_code.
+  APPEND 'CASE rc.' TO t_code.
+  APPEND 'WHEN 0.' TO t_code.
+  APPEND 'batch_readrowcount = batch_readrowcount + queryrowcount.'
+    TO t_code.
+* if we have to expect duplicates (in a view without keys)
+* delete adjacent duplicates
+  IF tableclass = 'VIEW' AND pk_fieldcount = 0.
+    APPEND 'DELETE ADJACENT DUPLICATES FROM t_sapstruct.' TO t_code.
+  ENDIF.
+  APPEND 'WHEN 4.' TO t_code.
+  APPEND '* nothing found, not a problem' TO t_code.
+  APPEND 'rc = 0.' TO t_code.
+  APPEND 'WHEN OTHERS.' TO t_code.
+  APPEND 'ENDCASE.' TO t_code.
+  APPEND '* if the query returned as many rows as necessary to satisfy'
+    TO t_code.
+  APPEND '* the requested rowcount, the extract is complete' TO t_code.
+  APPEND 'IF queryrowcount = extractrowsremaining.' TO t_code.
+  APPEND 'CLEAR moredata.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND '* on the first batch (no PK constraint)' TO t_code.
+  APPEND '* if fewer rows than specified were returned the extract'
+    TO t_code.
+  APPEND '* is complete' TO t_code.
+  APPEND 'IF     intbatchnbr = 1' TO t_code.
+  APPEND '   AND current_gt_pos = 0. "pkwhere not provided'
+    TO t_code.
+  APPEND 'IF queryrowcount < bufferremaining.' TO t_code.
+  APPEND 'CLEAR moredata.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'ELSE.' TO t_code.
+  APPEND '* on subsequent batches, if the PK is not constrained'
+    TO t_code.
+  APPEND '* i.e. GT operator on a field other than the first PK'
+    TO t_code.
+  APPEND '* field if any and the resultset is smaller than the'
+    TO t_code.
+  APPEND '* specified rowcount, the extract is complete' TO t_code.
+  APPEND 'IF    (    current_gt_pos = 0' TO t_code.
+  APPEND '        OR current_gt_pos = 1 )' TO t_code.
+  APPEND '   AND queryrowcount < bufferremaining.' TO t_code.
+  APPEND 'CLEAR moredata.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+ENDFORM.                    "generate_read_select
+
+*&--------------------------------------------------------------------*
+*&      Form  generate_read_convert
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_CODE     text
+*      -->OUTPUTMODE text
+*      -->DELIMITER  text
+*---------------------------------------------------------------------*
+FORM generate_read_convert
+              TABLES
+                 t_code
+              USING
+                 delimiter
+                 ROWSKIPS
+                 abapversion.
+  DATA:
+    textblock1    TYPE string,
+    textblock2    TYPE string,
+    t_temp_where  TYPE STANDARD TABLE OF string
+                       WITH HEADER LINE,
+    codeline      TYPE string,
+    fieldcount    TYPE int4.
+
+* do rowskip on first batch only
+  IF ROWSKIPS > 0.
+    APPEND 'IF intbatchnbr = 1.' TO t_code.
+    APPEND 'startrowindex = ROWSKIPS + 1.' TO t_code.
+    APPEND '* fewer rows than rowskip -> set batch rowcount to 0'
+      TO t_code.
+    APPEND 'IF ROWSKIPS <= batch_readrowcount.' TO t_code.
+    APPEND 'batch_readrowcount = batch_readrowcount - ROWSKIPS.'
+      TO t_code.
+    APPEND 'ELSE.' TO t_code.
+    APPEND 'batch_readrowcount = 0.' TO t_code.
+    APPEND 'ENDIF.' TO t_code.
+    APPEND 'ELSE.' TO t_code.
+    APPEND 'startrowindex = 1.' TO t_code.
+    APPEND 'ENDIF.' TO t_code.
+  ENDIF.
+  APPEND 'CLEAR sapdataindex.' TO t_code.
+
+  IF ROWSKIPS > 0.
+    APPEND 'LOOP AT t_sapstruct from startrowindex.' TO t_code.
+  ELSE.
+    APPEND 'LOOP AT t_sapstruct.' TO t_code.
+  ENDIF.
+  APPEND 'ADD 1 TO sapdataindex.' TO t_code.
+  LOOP AT t_field.
+    IF t_field-special = 'X'.
+      IF NOT t_field-funcname IS INITIAL.
+* execute conversion exit
+        CONCATENATE 'CALL FUNCTION ''' t_field-funcname ''''
+        INTO codeline.
+        APPEND codeline TO t_code.
+        APPEND '  EXPORTING' TO t_code.
+        CONCATENATE 'input = t_sapstruct-' t_field-name
+          INTO codeline.
+        APPEND codeline TO t_code.
+        APPEND '  importing' TO t_code.
+        CONCATENATE 'output = outstruct-' t_field-name '.'
+          INTO codeline.
+        APPEND codeline TO t_code.
+      ELSE.
+* suppress 1000s separators
+        CONCATENATE 'WRITE t_sapstruct-' t_field-name
+                    ' TO outstruct-' t_field-name ' NO-GROUPING using no edit mask.'
+          INTO codeline.
+        APPEND codeline TO t_code.
+      ENDIF.
+      IF     t_field-inttype  CA c_neg_on_right
+         AND t_field-datatype NE 'PREC'.
+        CONCATENATE 'SHIFT outstruct-' t_field-name
+                    ' RIGHT CIRCULAR.'
+          INTO codeline.
+        APPEND codeline TO t_code.
+        CONCATENATE 'condense outstruct-' t_field-name
+                    ' NO-GAPS.'
+           INTO codeline.
+        APPEND codeline TO t_code.
+        CONCATENATE 'WRITE outstruct-' t_field-name
+                    ' TO outstruct-' t_field-name
+                    ' RIGHT-JUSTIFIED.'
+           INTO codeline.
+        APPEND codeline TO t_code.
+      ENDIF.
+    ELSE.
+      IF NOT t_field-funcname IS INITIAL.
+* execute conversion exit
+        CONCATENATE 'CALL FUNCTION ''' t_field-funcname ''''
+          INTO codeline.
+        APPEND codeline TO t_code.
+        APPEND '  EXPORTING' TO t_code.
+        CONCATENATE 'input = t_sapstruct-' t_field-name
+          INTO codeline.
+        APPEND codeline TO t_code.
+        APPEND '  IMPORTING' TO t_code.
+        CONCATENATE 'output = outstruct-' t_field-name '.'
+          INTO codeline.
+        APPEND codeline TO t_code.
+        APPEND 'IF sy-subrc > 0.'
+                                  TO t_code.
+        APPEND 'CONTINUE.' TO t_code.
+        APPEND 'ENDIF.' TO t_code.
+      ELSE.
+* regular assign for all other types
+        CONCATENATE 'outstruct-' t_field-name ' ='
+                    ' t_sapstruct-' t_field-name '.'
+          INTO codeline.
+        APPEND codeline TO t_code.
+      ENDIF.
+    ENDIF.
+  ENDLOOP.
+
+
+  APPEND '* convert TO return STRUCTURE' TO t_code.
+  APPEND 'maxoutputlength = 8000.' TO t_code.
+* For fixed length output ignore the end of line marker, i.e. reduce
+* input length by 1
+  IF delimiter IS INITIAL.
+    APPEND 'totalinputlength = strlen( outstruct ) - 1.'
+      TO t_code.
+    APPEND 'inputlengthremaining = strlen( outstruct ) - 1.'
+      TO t_code.
+  ELSE.
+* for delimited output extract the whole structure
+    APPEND 'totalinputlength = strlen( outstruct ).'
+      TO t_code.
+    APPEND 'inputlengthremaining = strlen( outstruct ).'
+      TO t_code.
+  ENDIF.
+  APPEND 'inputoffset = 0.' TO t_code.
+  APPEND '*   outputoffset is parameter' TO t_code.
+  APPEND 'outputlengthremaining = maxoutputlength' TO t_code.
+  APPEND '                        - outputoffset.' TO t_code.
+  APPEND '* ignore empty rows' TO t_code.
+  APPEND 'if inputlengthremaining > 0. ' TO t_code.
+  APPEND 'clear transfercomplete.' TO t_code.
+  APPEND 'while transfercomplete is initial.' TO t_code.
+  APPEND 'if inputlengthremaining > outputlengthremaining.'
+    TO t_code.
+  APPEND 'transferlength = outputlengthremaining.' TO t_code.
+  APPEND 'else.' TO t_code.
+  APPEND 'transferlength = inputlengthremaining.' TO t_code.
+  APPEND 'endif.' TO t_code.
+  APPEND 't_data+outputoffset(transferlength) =' TO t_code.
+  APPEND 'outstruct+inputoffset(transferlength).'
+    TO t_code.
+  APPEND 'appendpending = ''X''.' TO t_code.
+  APPEND 'outputoffset = outputoffset + transferlength.'
+    TO t_code.
+  APPEND 'inputoffset = inputoffset + transferlength.'
+    TO t_code.
+  APPEND 'inputlengthremaining = totalinputlength' TO t_code.
+  APPEND '                       - inputoffset.' TO t_code.
+* this outputrow is full
+  APPEND 'if      outputoffset = maxoutputlength' TO t_code.
+* this is the end of the last row of the extract
+  APPEND '     or (     sapdataindex = queryrowcount' TO t_code.
+  APPEND '          and moredata is initial' TO t_code.
+  APPEND '          and inputlengthremaining = 0 ).' TO t_code.
+  APPEND 'append t_data.' TO t_code.
+  APPEND 'clear t_data.' TO t_code.
+  APPEND 'clear appendpending.' TO t_code.
+  APPEND 'add 1 to outputrowcount.' TO t_code.
+  APPEND 'outputoffset = 0.' TO t_code.
+  APPEND 'endif.' TO t_code.
+  APPEND 'outputlengthremaining = maxoutputlength ' TO t_code.
+  APPEND '                        - outputoffset.' TO t_code.
+  APPEND 'if inputlengthremaining <= 0.' TO t_code.
+  APPEND 'transfercomplete = ''x''.' TO t_code.
+  APPEND 'add 1 to batch_extractrowcount.' TO t_code.
+  APPEND 'subtract 1 from extractrowsremaining.' TO t_code.
+  APPEND 'if extractrowsremaining <= 0.' TO t_code.
+  APPEND 'clear moredata.' TO t_code.
+  APPEND 'endif.' TO t_code.
+  APPEND 'endif.' TO t_code.
+  APPEND 'endwhile.' TO t_code.
+  APPEND 'endif.' TO t_code.
+
+  APPEND 'ENDLOOP. "AT t_sapstruct' TO t_code.
+
+  APPEND 'CHECK _rc IS INITIAL.' TO t_code.
+
+* post query evaluations and prep for next query
+  APPEND 'bufferremaining =   bufferremaining ' TO t_code.
+  APPEND '                  - queryrowcount.' TO t_code.
+ENDFORM.                    "generate_read_convert
+
+*&--------------------------------------------------------------------*
+*&      Form  generate_updatepkwhere_cluster
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_CODE     text
+*      -->OUTPUTMODE text
+*---------------------------------------------------------------------*
+FORM generate_updatepkwhere_cluster TABLES t_code.
+
+  DATA:
+    textblock1    TYPE string,
+    textblock2    TYPE string,
+    t_temp_where  TYPE STANDARD TABLE OF string
+                       WITH HEADER LINE,
+    codeline      TYPE string,
+    fieldcount    TYPE int4.
+
+  APPEND '********************************************' TO t_code.
+  APPEND '*update PK where clause with pk values of' TO t_code.
+  APPEND '*last row of previous batch as lower bound' TO t_code.
+  APPEND '*for the next batch' TO t_code.
+  APPEND '********************************************' TO t_code.
+  APPEND '*read last row of buffer' TO t_code.
+  APPEND 'DESCRIBE TABLE t_sapstruct LINES lastrowindex.' TO t_code.
+  APPEND 'IF lastrowindex > 0.' TO t_code.
+  APPEND 'READ TABLE t_sapstruct INDEX lastrowindex.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'IF sy-subrc = 0 OR lastrowindex = 0.' TO t_code.
+  APPEND '*if there is more data to be extracted in this batch'
+  TO t_code.
+  APPEND '*continue progression of GT sign' TO t_code.
+  APPEND 'IF bufferremaining > 0.' TO t_code.
+  APPEND 'CASE current_gt_pos.' TO t_code.
+  APPEND 'WHEN 0.' TO t_code.
+  APPEND 'current_gt_pos = pk_field_count.' TO t_code.
+  APPEND 'WHEN 1.' TO t_code.
+  APPEND '*we should not get here. This means the logic above'
+    TO t_code.
+  APPEND '*determined that another query is to be run even though'
+    TO t_code.
+  APPEND '*the PK is unconstrained and no more data is to be' TO t_code.
+  APPEND '*expected. I will clear the flag' TO t_code.
+  APPEND 'CLEAR moredata.' TO t_code.
+  APPEND 'WHEN OTHERS.' TO t_code.
+  APPEND 'current_gt_pos = current_gt_pos - 1.' TO t_code.
+  APPEND 'ENDCASE.' TO t_code.
+  APPEND 'ELSE.' TO t_code.
+  APPEND '*at the end of a batch set the position of the GT sign'
+    TO t_code.
+  APPEND '*to the rightmost PK field so the next batch will pick'
+    TO t_code.
+  APPEND '*up at the next record' TO t_code.
+  APPEND 'current_gt_pos = pk_field_count.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'LOOP AT t_pk_where_clause.' TO t_code.
+  APPEND 'pkwhereindex = sy-tabix.' TO t_code.
+  APPEND 'READ TABLE t_dd03p' TO t_code.
+  APPEND '  WITH KEY fieldname = t_pk_where_clause-field.' TO t_code.
+  APPEND 'IF sy-subrc = 0.' TO t_code.
+  APPEND '*we only need to update values if something was found'
+    TO t_code.
+  APPEND '*with the current query' TO t_code.
+  APPEND 'IF lastrowindex <> 0.' TO t_code.
+  APPEND 'IF NOT t_dd03p-rollname IS INITIAL.' TO t_code.
+  APPEND 'ASSIGN COMPONENT t_pk_where_clause-field' TO t_code.
+  APPEND '  OF STRUCTURE t_sapstruct TO <fld>' TO t_code.
+  APPEND '  CASTING TYPE (t_dd03p-rollname).' TO t_code.
+  APPEND 'ELSE.' TO t_code.
+  APPEND 'ASSIGN COMPONENT t_pk_where_clause-field' TO t_code.
+  APPEND '  OF STRUCTURE t_sapstruct TO <fld>.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND '*relying on the sequence in the table as position indicator'
+    TO t_code.
+  APPEND '*Right from the GT sign, we want GE min value' TO t_code.
+  APPEND 'IF sy-tabix > current_gt_pos.' TO t_code.
+  APPEND 'CLEAR t_pk_where_clause-low.' TO t_code.
+  APPEND 't_pk_where_clause-option = ''GE''.' TO t_code.
+* Determine appropriate minimum values by data type
+  APPEND 'CASE t_dd03p-inttype.' TO t_code.
+  APPEND 'WHEN ''C''.' TO t_code.
+  APPEND 't_pk_where_clause-low     = space.' TO t_code.
+  APPEND 'WHEN ''D''.' TO t_code.
+  APPEND 't_pk_where_clause-low     = ''00000000''.' TO t_code.
+  APPEND 'WHEN ''T''.' TO t_code.
+  APPEND 't_pk_where_clause-low     = ''000000''.' TO t_code.
+  APPEND 'WHEN ''P''.' TO t_code.
+  APPEND '*generate maximum negative number for packed' TO t_code.
+  APPEND '*numbers' TO t_code.
+  APPEND 'digitcount = t_dd03p-leng - t_dd03p-decimals.' TO t_code.
+  APPEND 'CONCATENATE  t_pk_where_clause-low ''-''' TO t_code.
+  APPEND '  INTO t_pk_where_clause-low.' TO t_code.
+  APPEND 'DO digitcount TIMES.' TO t_code.
+  APPEND 'CONCATENATE  t_pk_where_clause-low ''9''' TO t_code.
+  APPEND '  INTO t_pk_where_clause-low.' TO t_code.
+  APPEND 'ENDDO.' TO t_code.
+  APPEND 'CONCATENATE  t_pk_where_clause-low decimalpoint' TO t_code.
+  APPEND '  INTO t_pk_where_clause-low.' TO t_code.
+  APPEND 'DO t_dd03p-decimals TIMES.' TO t_code.
+  APPEND 'CONCATENATE  t_pk_where_clause-low ''9''' TO t_code.
+  APPEND '  INTO t_pk_where_clause-low.' TO t_code.
+  APPEND 'ENDDO.' TO t_code.
+  APPEND 'WHEN ''F''.' TO t_code.
+  APPEND 't_pk_where_clause-low     = c_max_float_neg.' TO t_code.
+  APPEND 'WHEN ''X''.' TO t_code.
+  APPEND 'CASE t_dd03p-datatype.' TO t_code.
+  APPEND 'WHEN ''INT1''.' TO t_code.
+  APPEND 't_pk_where_clause-low = ''0''.' TO t_code.
+  APPEND 'WHEN ''INT2''.' TO t_code.
+  APPEND 't_pk_where_clause-low = c_max_int2_neg.' TO t_code.
+  APPEND 'WHEN ''INT4''.' TO t_code.
+  APPEND 't_pk_where_clause-low = c_max_int_neg.' TO t_code.
+  APPEND 'WHEN OTHERS.' TO t_code.
+  APPEND 't_pk_where_clause-low = c_hexnull(t_dd03p-outputlen).'
+    TO t_code.
+  APPEND 'ENDCASE.' TO t_code.
+  APPEND 'WHEN OTHERS.' TO t_code.
+  APPEND 't_pk_where_clause-low     = space.' TO t_code.
+  APPEND 'ENDCASE.' TO t_code.
+  APPEND 'CONDENSE t_pk_where_clause-low no-gaps.' TO t_code.
+
+  APPEND '* On the new position of the GT sign, we want GT last value'
+    TO t_code.
+  APPEND 'ELSEIF sy-tabix = current_gt_pos.' TO t_code.
+  APPEND 't_pk_where_clause-option = ''GT''.' TO t_code.
+  APPEND 'IF lastrowindex <> 0.' TO t_code.
+  APPEND 't_pk_where_clause-low = <fld>.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND '*Left of the GT sign we want the value to remain constant'
+    TO t_code.
+  APPEND 'ELSEIF sy-tabix < current_gt_pos.' TO t_code.
+  APPEND 't_pk_where_clause-option = ''EQ''.' TO t_code.
+  APPEND 'IF lastrowindex <> 0.' TO t_code.
+  APPEND 't_pk_where_clause-low = <fld>.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND '* delete leading spaces for numeric values' TO t_code.
+  APPEND 'IF     t_dd03p-inttype NE ''C''' TO t_code.
+  APPEND '   AND t_dd03p-inttype NE ''D''' TO t_code.
+  APPEND '   AND t_dd03p-inttype NE ''T''.' TO t_code.
+  APPEND 'SHIFT t_pk_where_clause-low LEFT' TO t_code.
+  APPEND '  DELETING LEADING space.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'MODIFY t_pk_where_clause' TO t_code.
+  APPEND 'FROM t_pk_where_clause' TO t_code.
+  APPEND 'INDEX pkwhereindex.' TO t_code.
+  APPEND 'ELSE.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'ENDLOOP.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'IF     moredata is initial' TO t_code.
+  APPEND '   AND NOT appendpending IS INITIAL.' TO t_code.
+  APPEND 'APPEND t_data.' TO t_code.
+  APPEND 'CLEAR appendpending.' TO t_code.
+  APPEND 'CLEAR t_data.' TO t_code.
+  APPEND 'ADD 1 TO outputrowcount.' TO t_code.
+  APPEND 'outputoffset = 0.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+
+  APPEND 'ENDFORM."readandconvert' TO t_code.
+ENDFORM.                    "generate_updatepkwhere_cluster
+
+*&--------------------------------------------------------------------*
+*&      Form  generate_updatepkwhere
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_CODE     text
+*      -->OUTPUTMODE text
+*---------------------------------------------------------------------*
+FORM generate_updatepkwhere TABLES t_code.
+  DATA:
+    textblock1    TYPE string,
+    textblock2    TYPE string,
+    t_temp_where  TYPE STANDARD TABLE OF string
+                       WITH HEADER LINE,
+    codeline      TYPE string,
+    fieldcount    TYPE int4.
+
+  APPEND '********************************************' TO t_code.
+  APPEND '*update PK where clause with pk values of' TO t_code.
+  APPEND '*last row of previous batch as lower bound' TO t_code.
+  APPEND '*for the next batch' TO t_code.
+  APPEND '********************************************' TO t_code.
+  APPEND '*read last row of buffer' TO t_code.
+  APPEND 'DESCRIBE TABLE t_sapstruct LINES lastrowindex.' TO t_code.
+  APPEND 'IF lastrowindex > 0.' TO t_code.
+  APPEND 'READ TABLE t_sapstruct INDEX lastrowindex.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'IF sy-subrc = 0 OR lastrowindex = 0.' TO t_code.
+  APPEND '*if there is more data to be extracted in this batch'
+  TO t_code.
+  APPEND '*continue progression of GT sign' TO t_code.
+  APPEND 'IF bufferremaining > 0.' TO t_code.
+  APPEND 'CASE current_gt_pos.' TO t_code.
+  APPEND 'WHEN 0.' TO t_code.
+  APPEND 'current_gt_pos = pk_field_count.' TO t_code.
+  APPEND 'WHEN 1.' TO t_code.
+  APPEND '*we should not get here. This means the logic above'
+    TO t_code.
+  APPEND '*determined that another query is to be run even though'
+    TO t_code.
+  APPEND '*the PK is unconstrained and no more data is to be' TO t_code.
+  APPEND '*expected. I will clear the flag' TO t_code.
+  APPEND 'CLEAR moredata.' TO t_code.
+  APPEND 'WHEN OTHERS.' TO t_code.
+  APPEND 'current_gt_pos = current_gt_pos - 1.' TO t_code.
+  APPEND 'ENDCASE.' TO t_code.
+  APPEND 'ELSE.' TO t_code.
+  APPEND '*at the end of a batch set the position of the GT sign'
+    TO t_code.
+  APPEND '*to the rightmost PK field so the next batch will pick'
+    TO t_code.
+  APPEND '*up at the next record' TO t_code.
+  APPEND 'current_gt_pos = pk_field_count.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'LOOP AT t_pk_where_clause.' TO t_code.
+  APPEND 'pkwhereindex = sy-tabix.' TO t_code.
+  APPEND 'READ TABLE t_dd03p' TO t_code.
+  APPEND '  WITH KEY fieldname = t_pk_where_clause-field.' TO t_code.
+  APPEND 'IF sy-subrc = 0.' TO t_code.
+  APPEND '*we only need to update values if something was found'
+    TO t_code.
+  APPEND '*with the current query' TO t_code.
+  APPEND 'IF lastrowindex <> 0.' TO t_code.
+  APPEND 'IF NOT t_dd03p-rollname IS INITIAL.' TO t_code.
+  APPEND 'ASSIGN COMPONENT t_pk_where_clause-field' TO t_code.
+  APPEND '  OF STRUCTURE t_sapstruct TO <fld>' TO t_code.
+  APPEND '  CASTING TYPE (t_dd03p-rollname).' TO t_code.
+  APPEND 'ELSE.' TO t_code.
+  APPEND 'ASSIGN COMPONENT t_pk_where_clause-field' TO t_code.
+  APPEND '  OF STRUCTURE t_sapstruct TO <fld>.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND '*relying on the sequence in the table as position indicator'
+    TO t_code.
+  APPEND '*Right from the GT sign, we want NOT NULL' TO t_code.
+  APPEND 'IF sy-tabix > current_gt_pos.' TO t_code.
+  APPEND 'CLEAR t_pk_where_clause-low.' TO t_code.
+  APPEND 't_pk_where_clause-sign = ''E''.' TO t_code.
+  APPEND 't_pk_where_clause-option = ''NL''.' TO t_code.
+* Determine appropriate minimum values by data type
+  APPEND 't_pk_where_clause-low     = space.' TO t_code.
+
+  APPEND '* On the new position of the GT sign, we want GT last value'
+    TO t_code.
+  APPEND 'ELSEIF sy-tabix = current_gt_pos.' TO t_code.
+  APPEND 't_pk_where_clause-sign = ''I''.' TO t_code.
+  APPEND 't_pk_where_clause-option = ''GT''.' TO t_code.
+  APPEND 'IF lastrowindex <> 0.' TO t_code.
+  APPEND 't_pk_where_clause-low = <fld>.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND '*Left of the GT sign we want the value to remain constant'
+    TO t_code.
+  APPEND 'ELSEIF sy-tabix < current_gt_pos.' TO t_code.
+  APPEND 't_pk_where_clause-sign = ''I''.' TO t_code.
+  APPEND 't_pk_where_clause-option = ''EQ''.' TO t_code.
+  APPEND 'IF lastrowindex <> 0.' TO t_code.
+  APPEND 't_pk_where_clause-low = <fld>.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND '* delete leading spaces for numeric values' TO t_code.
+  APPEND 'IF     t_dd03p-inttype NE ''C''' TO t_code.
+  APPEND '   AND t_dd03p-inttype NE ''D''' TO t_code.
+  APPEND '   AND t_dd03p-inttype NE ''T''.' TO t_code.
+  APPEND 'SHIFT t_pk_where_clause-low LEFT' TO t_code.
+  APPEND '  DELETING LEADING space.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'MODIFY t_pk_where_clause' TO t_code.
+  APPEND 'FROM t_pk_where_clause' TO t_code.
+  APPEND 'INDEX pkwhereindex.' TO t_code.
+  APPEND 'ELSE.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'ENDLOOP.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+  APPEND 'IF     moredata is initial' TO t_code.
+  APPEND '   AND NOT appendpending IS INITIAL.' TO t_code.
+  APPEND 'APPEND t_data.' TO t_code.
+  APPEND 'CLEAR t_data.' TO t_code.
+  APPEND 'CLEAR appendpending.' TO t_code.
+  APPEND 'ADD 1 TO outputrowcount.' TO t_code.
+  APPEND 'outputoffset = 0.' TO t_code.
+  APPEND 'ENDIF.' TO t_code.
+
+  APPEND 'ENDFORM."readandconvert' TO t_code.
+ENDFORM.                    "generate_updatepkwhere
+
+
+
+*&--------------------------------------------------------------------*
+*&      Form  validate_pk_where_clause_line
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->PK_WHERE_CLtext_LINE
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM validate_pk_where_clause_line
+                  USING pk_where_clause_line STRUCTURE ZXTRACTRANGE
+               CHANGING rc.
+* All lines need to have sign = 'I'
+  IF   pk_where_clause_line-sign   <> 'I'.
+    PERFORM add_message USING 'E' '076'
+                              pk_where_clause_line-sign
+                              space space space.
+    rc = 8.
+  ENDIF.
+
+* OR operators are invalid
+  IF pk_where_clause_line-operator = 'OR'.
+    PERFORM add_message USING 'E' '085'
+                              space space space space.
+    rc = 8.
+    EXIT.
+  ENDIF.
+
+* only NL, EQ and GT are valid operators in PK where clause
+  IF     pk_where_clause_line-option <> '='
+     AND pk_where_clause_line-option <> 'EQ'
+     AND pk_where_clause_line-option <> '>'
+     AND pk_where_clause_line-option <> 'GT'.
+    PERFORM add_message USING 'E' '078'
+                              pk_where_clause_line-option
+                              space space space.
+    rc = 8.
+  ENDIF.
+ENDFORM.                    "validate_pk_where_clause_line
+
+*&--------------------------------------------------------------------*
+*&      Form  validate_param_pk_where_clause
+*&--------------------------------------------------------------------*
+*       text
+*---------------------------------------------------------------------*
+*      -->T_P_PK_WHERtextAUSE
+*      -->RC         text
+*---------------------------------------------------------------------*
+FORM validate_param_pk_where_clause
+                     TABLES t_p_pk_where_clause STRUCTURE ZXTRACTRANGE
+                   CHANGING rc.
+  DATA:
+    gt_count          TYPE int4,
+    pkwhere_linecount TYPE int4,
+    current_tabix     LIKE sy-tabix.
+
+  DATA:
+    check_pk_where_clause TYPE STANDARD TABLE OF ZXTRACTRANGE.
+
+  CLEAR:
+    gt_count,
+    pkwhere_linecount,
+    rc.
+
+* check for duplicates in pk where clause
+  check_pk_where_clause[] = t_p_pk_where_clause[].
+  SORT check_pk_where_clause BY field ASCENDING.
+  DELETE ADJACENT DUPLICATES FROM check_pk_where_clause COMPARING field.
+  IF sy-subrc = 0.
+    PERFORM add_message USING 'E' '087'
+                              space space space space.
+    rc = 8.
+    EXIT.
+  ENDIF.
+
+* check for parentheses
+  READ TABLE t_p_pk_where_clause WITH KEY field = '('.
+  IF sy-subrc = 0.
+    PERFORM add_message USING 'E' '088'
+                              space space space space.
+    rc = 8.
+    EXIT.
+  ENDIF.
+
+  READ TABLE t_p_pk_where_clause WITH KEY field = ')'.
+  IF sy-subrc = 0.
+    PERFORM add_message USING 'E' '088'
+                              space space space space.
+    rc = 8.
+    EXIT.
+  ENDIF.
+
+  DESCRIBE TABLE t_p_pk_where_clause LINES pkwhere_linecount.
+* only need to validate if something has been passed in.
+  IF pkwhere_linecount > 0.
+    READ TABLE t_dd03p WITH KEY keyflag = 'X'.
+    IF sy-subrc = 0.
+* if key fields exist in the object, make sure they are all represented
+* in the pk where clause
+      LOOP AT t_dd03p
+        WHERE NOT keyflag IS INITIAL.
+        READ TABLE t_p_pk_where_clause
+          WITH KEY field = t_dd03p-fieldname.
+        IF sy-subrc = 0.
+          current_tabix = sy-tabix.
+          PERFORM validate_pk_where_clause_line
+                            USING t_p_pk_where_clause
+                         CHANGING rc.
+* check that GT sign is at the end
+          IF     current_tabix = pkwhere_linecount
+             AND t_p_pk_where_clause-option <> 'GT'
+             AND t_p_pk_where_clause-option <> '>'.
+            PERFORM add_message USING 'E' '086'
+                                      t_p_pk_where_clause-option
+                                      space space space.
+            rc = 8.
+            EXIT.
+          ENDIF.
+* Make sure there is only 1 GT sign
+          IF    t_p_pk_where_clause-option = 'GT'
+             OR t_p_pk_where_clause-option = '>'.
+            ADD 1 TO gt_count.
+            IF gt_count > 1.
+              PERFORM add_message USING 'E' '079'
+                                        space
+                                        space space space.
+              rc = 8.
+              EXIT.
+            ENDIF.
+          ENDIF.
+        ELSE.
+          PERFORM add_message USING 'E' '075' t_dd03p-fieldname
+                                    space space space.
+          rc = 8.
+          EXIT.
+        ENDIF.
+      ENDLOOP.
+    ENDIF.
+  ENDIF.
+ENDFORM. "validate_param_pk_where_clause

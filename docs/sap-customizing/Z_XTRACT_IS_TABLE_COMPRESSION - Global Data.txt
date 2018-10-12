@@ -1,0 +1,141 @@
+FUNCTION-POOL ZXTRACT02.                    "MESSAGE-ID ..
+
+DATA t_selectfields TYPE STANDARD TABLE OF ZXTRACTSELFIELDS
+                            WITH HEADER LINE.
+
+DATA t_dd03p    TYPE STANDARD TABLE OF dd03p WITH HEADER LINE.
+DATA t_return   TYPE STANDARD TABLE OF BAPIRETURN1 WITH HEADER LINE.
+DATA t_warnings TYPE STANDARD TABLE OF BAPIRETURN1 WITH HEADER LINE.
+DATA rowcount                TYPE int4. "number of rows in output
+DATA current_logsequencenbr  TYPE int4.
+DATA stat_extractid      TYPE int4.
+DATA open_operator        TYPE c. "flag used in building where clause
+
+* Statistics
+DATA total_readrowcount    TYPE i.
+DATA total_extractrowcount TYPE i.
+DATA total_writerowcount   TYPE i.
+
+* Log table for performance
+DATA: BEGIN OF t_extractlog OCCURS 0,
+        mandt             TYPE mandt,
+        extractid         TYPE int4,
+        sequencenbr       TYPE int4,
+        sourcetable       LIKE dd03l-tabname,
+        outputmode(2)     TYPE c,
+        rowlimit          TYPE int4,
+        batchsize         TYPE int4,
+        operationcode(30) TYPE c,
+        batchnbr          TYPE int4,
+        internalrowcount  TYPE int4,
+        outputrowcount    TYPE int4,
+        datarowlength     TYPE int4,
+        opstartdate       TYPE dats,
+        opstarttime       TYPE tims,
+        openddate         TYPE dats,
+        opendtime         TYPE tims,
+        opstartsqldt(30)  TYPE c,
+        opendsqldt(30)    TYPE c,
+      END OF t_extractlog.
+
+
+* selected metadata for output fields
+DATA: BEGIN OF t_field OCCURS 0,
+         name      LIKE dd03l-fieldname,
+         datatype  LIKE dd01l-datatype,
+         inttype   LIKE dd03l-inttype,
+         outputlen LIKE dd01l-outputlen,
+         convexit  LIKE dd01l-convexit,
+         funcname  LIKE tfdir-funcname,
+         special TYPE c,
+      END OF t_field.
+
+* Rowcount helper variables
+  DATA:
+    rowcountheadroom  TYPE int4,
+    tablerowcount     TYPE int4,
+    adjusted_rowcount TYPE int4,
+    rowskip_c(11)     TYPE c,
+    rowcount_c(11)    TYPE c.
+
+* Code generation variables
+  DATA:
+    genprogname(20)  TYPE c.
+
+DATA:
+  rc(3)         TYPE c,               "Return code/text element number
+  record_length TYPE int4,            "sum of output length of fields
+  viewclass     LIKE dd02l-viewclass, "name of sql table
+  tabclass      LIKE dd02l-tabclass,  "Class of table
+  basetabclass  LIKE dd02l-tabclass.  "Class of base table for views
+
+
+
+DATA:
+  c_hexnull            LIKE zxtractrange-low.
+
+CONSTANTS:
+  c_maxclausecount(3)       TYPE n    VALUE 100,
+  c_maxfieldcount(4)        TYPE n    VALUE 1000,
+  c_where_value_limit_46    TYPE int4 VALUE 70,
+  c_max_int                 TYPE int4 VALUE 2147483647,
+  c_max_int_neg_47          TYPE int4 VALUE -2147483648,
+  c_max_int_neg_46          TYPE int4 VALUE -999999999,
+  c_max_int2_neg            TYPE int2 VALUE -32768,
+  c_max_float_neg           TYPE f    VALUE '-1.7976931348623157E+308'.
+
+* File mode retry logic variables
+DATA:
+  c_max_write_attempts(1)  TYPE n,
+  c_retry_delay(2)         TYPE n.
+
+DATA stat_sourcetable    LIKE dd03l-tabname.
+DATA stat_rowlimit       TYPE int4.
+DATA stat_batchsize      TYPE int4.
+DATA stat_querycount     TYPE int4.
+DATA abapversion LIKE cvers-release.
+* version dependent constant for negative max int in where clauses
+DATA:
+  c_max_int_neg             TYPE int4.
+
+DATA:
+  zdcpfm LIKE usr01-dcpfm, "user decimal setting
+  zdatfm LIKE usr01-datfm. "user date format
+
+DATA: BEGIN OF t_user_where_tab OCCURS 0,
+         whereline(72) TYPE c,
+      END OF t_user_where_tab.
+
+* General use constants
+CONSTANTS:
+  c_non_char_types(6)  TYPE c VALUE 'IPFNbs', "for write option
+  c_neg_on_right(5)    TYPE c VALUE 'IPs', "for negative
+  c_error              TYPE c VALUE 'E',
+  c_syntax             TYPE c VALUE 'S',
+  c_columndelimiter(2) TYPE c VALUE '|{',
+  c_rowdelimiter(2)    TYPE c VALUE '|}'.
+
+data:
+  BEGIN OF base_keyfields OCCURS 0,
+    position  LIKE dd03l-position,
+    fieldname LIKE dd03l-fieldname,
+  END OF base_keyfields.
+
+DATA save_pk_where_clause TYPE STANDARD TABLE OF ZXTRACTRANGE.
+
+* Operation codes
+CONSTANTS:
+  c_total_runtime(30)      TYPE c VALUE
+    'TotalRuntime',
+  c_batch_read(30)         TYPE c VALUE
+    'BatchRead',
+  c_batch_convert(30)      TYPE c VALUE
+    'BatchConvert',
+  c_batch_readconvert(30)  TYPE c VALUE
+    'BatchReadConvert',
+  c_batch_convertwrite(30) TYPE c VALUE
+    'BatchConvertWrite',
+  c_batch_write(30) TYPE c VALUE
+    'BatchWrite',
+  c_total_extracttime(30)  TYPE c VALUE
+    'TotalExtracttime'.

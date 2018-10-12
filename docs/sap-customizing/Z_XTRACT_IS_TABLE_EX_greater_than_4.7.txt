@@ -1,0 +1,553 @@
+FUNCTION Z_XTRACT_IS_TABLE_EX .
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(QUERY_TABLE) LIKE  DD02L-TABNAME OPTIONAL
+*"     VALUE(DELIMITER) LIKE  SONV-FLAG DEFAULT SPACE
+*"     VALUE(NO_DATA) LIKE  SONV-FLAG DEFAULT SPACE
+*"     VALUE(ROWSKIPS) LIKE  SOID-ACCNT DEFAULT 0
+*"     VALUE(ROWCOUNT) LIKE  SOID-ACCNT DEFAULT 0
+*"     VALUE(ACTIONID) LIKE  RPY_PROG-PROG_TYPE DEFAULT 'X'
+*"     VALUE(REQUESTID) TYPE  CHAR32 DEFAULT 'XTR_TEST'
+*"  EXPORTING
+*"     VALUE(JOBSTATUS) LIKE  TBTCO-STATUS
+*"  TABLES
+*"      OPTIONS STRUCTURE  RFC_DB_OPT OPTIONAL
+*"      FIELDS STRUCTURE  RFC_DB_FLD OPTIONAL
+*"      DATA STRUCTURE  CHAR8000 OPTIONAL
+*"      PROG STRUCTURE  PROGTAB OPTIONAL
+*"----------------------------------------------------------------------
+
+* ActionID
+**********
+* B = Execute Batch and send to background
+* T = Only generate Background program and do no execute
+* D = Get Data
+* J = Job Info
+* X = Execute directly
+* R = Remove data from Buffer
+
+
+    DATA progline TYPE edpline.
+    DATA progname LIKE sy-repid.
+    DATA jobnumber LIKE tbtcjob-jobcount.
+    DATA jobname LIKE tbtcjob-jobname.
+    DATA: print_parameters TYPE pri_params.
+
+
+* Sending Job status
+  IF actionid = 'J'.
+
+    SELECT SINGLE status INTO jobstatus
+      FROM tbtco WHERE jobname = requestid.
+    EXIT.
+
+  ENDIF.
+
+* Remove data from buffer
+  IF actionid = 'R'.
+
+    APPEND '*&------------*' TO prog.
+    APPEND '*& auto generated *' TO prog.
+    APPEND '*&------------*' TO prog.
+    APPEND 'REPORT  ZX$$$DEL.' TO prog.
+    APPEND 'DATA oldentrydate TYPE dats.' TO prog.
+    APPEND 'oldentrydate = sy-datum - 3.' TO prog.
+
+    APPEND 'data myid like zxtractbuffer-id.' TO prog.
+    APPEND 'myid = 50000.' TO prog.
+    APPEND 'data cont type c.' TO prog.
+    APPEND 'cont = ''X''.' TO prog.
+    APPEND 'while cont = ''X''.' TO prog.
+    APPEND 'delete from zxtractbuffer where id < myid and' TO prog.
+    concatenate 'requestid = ''' requestid '''.' into progline.
+    APPEND progline TO prog.
+    APPEND 'if sy-subrc ne 0.' TO prog.
+    APPEND '  cont = ''''.' TO prog.
+    APPEND 'endif.' TO prog.
+*    APPEND 'commit work.' TO prog.
+    APPEND 'CALL FUNCTION ''DB_COMMIT''.' TO prog.
+    APPEND 'myid = myid + 50000.' TO prog.
+    APPEND 'endwhile.    ' TO prog.
+
+    APPEND 'DELETE FROM zxtractbuffer WHERE' TO prog.
+    APPEND 'credat < oldentrydate.' TO prog.
+
+    progname = 'ZX$$$DEL'.
+    concatenate progname requestid into progname.
+    progname = progname(30).
+
+*    concatenate 'delete report ''' progname '''.' into progline.
+*    APPEND progline TO prog.
+
+    APPEND '* find very old programs and delete them' TO prog.
+    APPEND 'tables TRDIR.' TO prog.
+    APPEND 'data seldat type d.' TO prog.
+    APPEND 'seldat = sy-datum - 2.' TO prog.
+    APPEND 'select * from trdir where' TO prog.
+    APPEND '( name like ''ZX$$$TMPXTR_20%''' TO prog.
+    APPEND 'or name like ''ZX$$$DELXTR_20%'' )' TO prog.
+    APPEND 'and CNAM = sy-UNAME' TO prog.
+    APPEND 'and unam = sy-UNAME' TO prog.
+    APPEND 'and cdat < seldat.' TO prog.
+    APPEND 'delete report  trdir-name.' TO prog.
+    APPEND 'endselect.    ' TO prog.
+
+
+    INSERT REPORT progname FROM prog.
+
+    concatenate requestid '_DEL' into jobname.
+
+* Neuen Job anlegen
+      CALL FUNCTION 'JOB_OPEN'
+        EXPORTING
+          jobname          = jobname
+        IMPORTING
+          jobcount         = jobnumber
+        EXCEPTIONS
+          cant_create_job  = 1
+          invalid_job_data = 2
+          jobname_missing  = 3
+          OTHERS           = 4.
+
+      IF sy-subrc > 0.
+        RAISE job_could_not_be_generated.
+      ENDIF.
+
+* Programm and Job anh‰ngen
+      SUBMIT (progname)
+                 VIA JOB jobname NUMBER jobnumber
+                 AND RETURN.
+
+
+* Job-Erzeugung abschlieﬂen
+      CALL FUNCTION 'JOB_CLOSE'
+        EXPORTING
+          jobcount             = jobnumber
+          jobname              = jobname
+          strtimmed            = 'X'
+        EXCEPTIONS
+          cant_start_immediate = 1
+          invalid_startdate    = 2
+          jobname_missing      = 3
+          job_close_failed     = 4
+          job_nosteps          = 5
+          job_notex            = 6
+          lock_failed          = 7
+          OTHERS               = 8.
+
+
+    EXIT.
+
+  ENDIF.
+
+
+
+  CALL FUNCTION 'VIEW_AUTHORITY_CHECK'
+    EXPORTING
+      view_action                    = 'S'
+      view_name                      = query_table
+    EXCEPTIONS
+      no_authority                   = 2
+      no_clientindependent_authority = 2
+      no_linedependent_authority     = 2
+      OTHERS                         = 1.
+
+  IF sy-subrc = 2.
+    RAISE not_authorized.
+  ELSEIF sy-subrc = 1.
+    RAISE table_not_available.
+  ENDIF.
+
+* ----------------------------------------------------------------------
+*  find out about the structure of QUERY_TABLE
+* ----------------------------------------------------------------------
+  DATA BEGIN OF table_structure OCCURS 10.
+          INCLUDE STRUCTURE dfies.
+  DATA END OF table_structure.
+  "DATA TABLE_HEADER LIKE X030L.
+  DATA table_type TYPE dd02v-tabclass.
+
+  CALL FUNCTION 'DDIF_FIELDINFO_GET'
+    EXPORTING
+      tabname              = query_table
+*   FIELDNAME            = ' '
+*   LANGU                = SY-LANGU
+*   LFIELDNAME           = ' '
+*   ALL_TYPES            = ' '
+*   GROUP_NAMES          = ' '
+    IMPORTING
+*   X030L_WA             =
+      ddobjtype            = table_type
+*   DFIES_WA             =
+*   LINES_DESCR          =
+    TABLES
+      dfies_tab            = table_structure
+*   FIXED_VALUES         =
+    EXCEPTIONS
+      not_found            = 1
+      internal_error       = 2
+      OTHERS               = 3
+            .
+  IF sy-subrc <> 0.
+    RAISE table_not_available.
+  ENDIF.
+  IF table_type = 'INTTAB'.
+    RAISE table_without_data.
+  ENDIF.
+
+* ----------------------------------------------------------------------
+*  isolate first field of DATA as output field
+*  (i.e. allow for changes to structure DATA!)
+* ----------------------------------------------------------------------
+  DATA line_length TYPE i.
+  FIELD-SYMBOLS <d>.
+  ASSIGN COMPONENT 0 OF STRUCTURE data TO <d>.
+  DESCRIBE FIELD <d> LENGTH line_length IN CHARACTER MODE.
+
+* ----------------------------------------------------------------------
+*  if FIELDS are not specified, read all available fields
+* ----------------------------------------------------------------------
+  DATA number_of_fields TYPE i.
+  DESCRIBE TABLE fields LINES number_of_fields.
+  IF number_of_fields = 0.
+    LOOP AT table_structure.
+      MOVE table_structure-fieldname TO fields-fieldname.
+      APPEND fields.
+    ENDLOOP.
+  ENDIF.
+
+* ----------------------------------------------------------------------
+*  for each field which has to be read, copy structure information
+*  into tables FIELDS_INT (internal use) and FIELDS (output)
+* ----------------------------------------------------------------------
+  DATA: BEGIN OF fields_int OCCURS 10,
+          fieldname  LIKE table_structure-fieldname,
+          type       LIKE table_structure-inttype,
+          decimals   LIKE table_structure-decimals,
+          length_src LIKE table_structure-intlen,
+          length_dst LIKE table_structure-leng,
+          offset_src LIKE table_structure-offset,
+          offset_dst LIKE table_structure-offset,
+        END OF fields_int,
+        line_cursor TYPE i.
+
+
+  line_cursor = 0.
+*  for each field which has to be read ...
+  LOOP AT fields.
+
+    READ TABLE table_structure WITH KEY fieldname = fields-fieldname.
+    IF sy-subrc NE 0.
+      RAISE field_not_valid.
+    ENDIF.
+
+* compute the place for field contents in DATA rows:
+* if not first field in row, allow space for delimiter
+    IF line_cursor <> 0.
+      IF no_data EQ space AND delimiter NE space.
+        MOVE delimiter TO data+line_cursor.
+      ENDIF.
+      line_cursor = line_cursor + STRLEN( delimiter ).
+    ENDIF.
+
+* ... copy structure information into tables FIELDS_INT
+* (which is used internally during SELECT) ...
+    fields_int-fieldname  = table_structure-fieldname.
+    fields_int-length_src = table_structure-intlen.
+*  FIELDS_INT-LENGTH_DST = TABLE_STRUCTURE-LENG.
+* modified by Theobald, 2007-11-20
+    fields_int-length_dst = table_structure-outputlen.
+
+    fields_int-offset_src = table_structure-offset.
+    fields_int-offset_dst = line_cursor.
+    fields_int-type       = table_structure-inttype.
+    fields_int-decimals   = table_structure-decimals.
+
+* compute the place for contents of next field in DATA rows
+*  LINE_CURSOR = LINE_CURSOR + TABLE_STRUCTURE-LENG.
+* modified by Theobald, 2007-11-20
+    line_cursor = line_cursor + table_structure-outputlen.
+
+
+
+    IF line_cursor > line_length AND no_data EQ space.
+      RAISE data_buffer_exceeded.
+    ENDIF.
+    APPEND fields_int.
+
+* ... and into table FIELDS (which is output to the caller)
+    fields-fieldtext = table_structure-fieldtext.
+    fields-type      = table_structure-inttype.
+    fields-length    = fields_int-length_dst.
+    fields-offset    = fields_int-offset_dst.
+    MODIFY fields.
+
+  ENDLOOP.
+* end of loop at FIELDS
+
+* ----------------------------------------------------------------------
+*  read data from the database and copy relevant portions into DATA
+* ----------------------------------------------------------------------
+* output data only if NO_DATA equals space (otherwise the structure
+* information in FIELDS is the only result of the module)
+
+* If actionID is X this function module acts the old
+* RFC_READ_TABLE. Nothing with background job or naything else
+  IF no_data EQ space AND actionid = 'X'.
+
+    DATA: BEGIN OF work, buffer(30000), f TYPE f, END OF work.
+
+    FIELD-SYMBOLS: <wa> TYPE ANY, <comp> TYPE ANY.
+    ASSIGN work TO <wa> CASTING TYPE (query_table).
+
+    IF rowcount > 0.
+      rowcount = rowcount + rowskips.
+    ENDIF.
+
+
+* um die Performance zu steigern
+* kann das Order by weggelassen werden.
+    SELECT * FROM (query_table) INTO <wa> WHERE (options).
+*  ORDER BY PRIMARY KEY.
+
+      IF sy-dbcnt GT rowskips.
+
+*   copy all relevant fields into DATA (output) table
+        LOOP AT fields_int.
+          IF fields_int-type = 'P'.
+            ASSIGN COMPONENT fields_int-fieldname
+                OF STRUCTURE <wa> TO <comp>
+                TYPE     fields_int-type
+                DECIMALS fields_int-decimals.
+          ELSE.
+            ASSIGN COMPONENT fields_int-fieldname
+                OF STRUCTURE <wa> TO <comp>
+                TYPE     fields_int-type.
+          ENDIF.
+          MOVE <comp> TO
+              <d>+fields_int-offset_dst(fields_int-length_dst).
+        ENDLOOP.
+*   end of loop at FIELDS_INT
+        APPEND data.
+
+        IF rowcount > 0 AND sy-dbcnt GE rowcount. EXIT. ENDIF.
+
+      ENDIF.
+
+    ENDSELECT.
+
+  ENDIF.
+* end of IF NO_DATA EQ SPACE and actionID = 'X'.
+
+  IF actionid = 'T' OR actionid = 'B'.
+
+    DATA strtemp TYPE c LENGTH 100.
+
+* Generate report header
+    APPEND '*&------------*' TO prog.
+    APPEND '*& auto generated *' TO prog.
+    APPEND '*&------------*' TO prog.
+    APPEND 'REPORT  ZX$$$TEMP.' TO prog.
+    APPEND '' TO prog.
+
+* generate data declaration
+    APPEND 'tables: ZXTRACTBUFFER.' TO prog.
+    APPEND 'DATA COUNTER type n length 15.' TO prog.
+    APPEND 'DATA MyBuffer type c length 4000.' TO prog.
+    APPEND 'DATA: ZWA LIKE ZXTRACTBUFFER.' TO prog.
+    APPEND 'DATA: ITAB TYPE TABLE OF ZXTRACTBUFFER.' TO prog.
+
+    APPEND 'DATA: PCOUNTER type i.' TO prog.
+    APPEND 'PCOUNTER = 0.' TO prog.
+
+
+    APPEND 'DATA: BEGIN OF mystruc,' TO prog.
+
+    LOOP AT fields_int.
+
+      CONCATENATE fields_int-fieldname 'LIKE' query_table
+      INTO progline SEPARATED BY space.
+      CONCATENATE progline '-' fields_int-fieldname ',' INTO progline.
+
+      APPEND progline TO prog.
+
+    ENDLOOP.
+
+    APPEND 'END OF mystruc.' TO prog.
+
+* generate select statement
+    APPEND '' TO prog.
+    APPEND 'select' TO prog.
+
+    LOOP AT fields_int.
+
+      APPEND fields_int-fieldname TO prog.
+
+    ENDLOOP.
+
+    IF rowcount GT 0.
+
+      WRITE rowcount TO strtemp LEFT-JUSTIFIED NO-GROUPING.
+    CONCATENATE 'up to' strtemp 'rows' INTO progline SEPARATED BY space.
+      APPEND progline TO prog.
+
+    ENDIF.
+
+    APPEND 'into mystruc from' TO prog.
+    APPEND query_table TO prog.
+
+    DATA optionscounter TYPE i.
+    DESCRIBE TABLE options LINES optionscounter.
+
+    IF optionscounter > 0.
+      APPEND 'WHERE' TO prog.
+
+      LOOP AT options.
+        APPEND options-text TO prog.
+      ENDLOOP.
+    ENDIF.
+
+    APPEND '.' TO prog.
+
+* within select loop.
+* each row must be written to the db
+    APPEND '' TO prog.
+
+    LOOP AT fields_int.
+
+      CONCATENATE 'mystruc-' fields_int-fieldname INTO progline.
+
+      CONCATENATE 'move' progline 'to'
+      INTO progline SEPARATED BY space.
+
+      APPEND progline TO prog.
+
+      CONCATENATE 'MyBuffer+'
+      fields_int-offset_dst '(' fields_int-length_dst
+      ').' INTO progline.
+      APPEND progline TO prog.
+
+    ENDLOOP.
+
+* Add addtional information
+* and save row to db table
+
+    APPEND 'write mybuffer to zwa+64.' TO prog.
+    APPEND 'ZWA-CREDAT = sy-datum.' TO prog.
+    APPEND 'ZWA-CRETIM = sy-uzeit.' TO prog.
+    APPEND 'ZWA-ID = COUNTER.' TO prog.
+    APPEND 'COUNTER = COUNTER + 1.' TO prog.
+    CONCATENATE 'ZWA-REQUESTID = ''' requestid '''.'
+    INTO progline.
+    APPEND progline TO prog.
+
+    APPEND 'APPEND ZWA to itab.' TO prog.
+    APPEND 'ADD 1 TO PCOUNTER.' TO prog.
+
+    APPEND 'IF PCOUNTER >= 50000.' TO prog.
+    APPEND 'INSERT ZXTRACTBUFFER FROM TABLE ITAB.' TO prog.
+    APPEND 'PCOUNTER = 0.' TO prog.
+    APPEND 'REFRESH ITAB.' TO prog.
+    APPEND 'endif.' TO prog.
+
+    APPEND '' TO prog.
+    APPEND 'endselect.' TO prog.
+    APPEND '' TO prog.
+
+    APPEND 'IF PCOUNTER > 0.' TO prog.
+    APPEND 'INSERT ZXTRACTBUFFER FROM TABLE ITAB.' TO prog.
+    APPEND 'ENDIF.' TO prog.
+
+    IF actionid = 'B'.
+* Generate and submit job
+
+    progname = 'ZX$$$TMP'.
+    concatenate progname requestid into progname.
+    progname = progname(30).
+
+    concatenate 'delete report ''' progname '''.' into progline.
+    APPEND progline TO prog.
+
+    INSERT REPORT progname FROM prog.
+* SUBMIT (progname) AND RETURN.
+
+      jobname = requestid.
+
+* Neuen Job anlegen
+      CALL FUNCTION 'JOB_OPEN'
+        EXPORTING
+          jobname          = jobname
+        IMPORTING
+          jobcount         = jobnumber
+        EXCEPTIONS
+          cant_create_job  = 1
+          invalid_job_data = 2
+          jobname_missing  = 3
+          OTHERS           = 4.
+
+      IF sy-subrc > 0.
+        RAISE job_could_not_be_generated.
+      ENDIF.
+
+* Programm and Job anh‰ngen
+      SUBMIT (progname)
+                 VIA JOB jobname NUMBER jobnumber
+                 AND RETURN.
+
+
+* Job-Erzeugung abschlieﬂen
+      CALL FUNCTION 'JOB_CLOSE'
+        EXPORTING
+          jobcount             = jobnumber
+          jobname              = jobname
+          strtimmed            = 'X'
+        EXCEPTIONS
+          cant_start_immediate = 1
+          invalid_startdate    = 2
+          jobname_missing      = 3
+          job_close_failed     = 4
+          job_nosteps          = 5
+          job_notex            = 6
+          lock_failed          = 7
+          OTHERS               = 8.
+
+    ENDIF.
+
+  ENDIF.
+
+* get data from table ZXTRACTBUFFER
+  IF actionid = 'D'.
+
+    DATA idmax TYPE n LENGTH 15.
+    idmax = rowcount + rowskips.
+
+    DATA mybuffer LIKE zxtractbuffer.
+
+    SELECT * FROM zxtractbuffer  INTO mybuffer
+    WHERE requestid = requestid
+    AND id >= rowskips
+    AND id < idmax.
+
+
+      MOVE mybuffer-buffer1 TO data+0(255).
+      MOVE mybuffer-buffer2 TO data+255(255).
+      MOVE mybuffer-buffer3 TO data+510(255).
+      MOVE mybuffer-buffer4 TO data+765(255).
+      MOVE mybuffer-buffer5 TO data+1020(255).
+      MOVE mybuffer-buffer6 TO data+1275(255).
+      MOVE mybuffer-buffer7 TO data+1530(255).
+      MOVE mybuffer-buffer8 TO data+1785(255).
+      MOVE mybuffer-buffer9 TO data+2040(255).
+      MOVE mybuffer-buffer10 TO data+2295(255).
+
+      APPEND data.
+
+    ENDSELECT.
+    EXIT.
+
+  ENDIF.
+
+
+
+ENDFUNCTION.
