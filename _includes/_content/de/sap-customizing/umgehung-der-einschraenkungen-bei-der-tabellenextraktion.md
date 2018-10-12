@@ -29,7 +29,7 @@ Definieren Sie die Ausnahmen (Exceptions) wie im folgenden Screenshot gezeigt.
 
 **Schritt 5 - Code**
 
-Den ABAP-Code finden Sie in der Datei [Z_XTRACT_IS_TABLE.txt]() im Installationsverzeichnis. Sie können den Code einfach per *Strg+C* und *Strg+V* in den Quellcode-Editor übernehmen.
+Den ABAP-Code finden Sie in der Datei [Z_XTRACT_IS_TABLE.txt](/docs/sap-customizing/Z_XTRACT_IS_TABLE.txt){:download="Z_XTRACT_IS_TABLE"} im Installationsverzeichnis. Sie können den Code einfach per *Strg+C* und *Strg+V* in den Quellcode-Editor übernehmen.
 
 Speichern und Aktivieren Sie den Baustein. 
 

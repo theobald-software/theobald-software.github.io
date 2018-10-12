@@ -57,8 +57,8 @@ Z_XTRACT_IS_TABLE_EX_greater_than_4.7.txt für Releases älter 4.7 (z.B. ECC 6.0
 Um die Hintergrundverarbeitung zu aktiveren, gehen Sie bitte in den Settings-Dialog und nehme Sie die folgenden Einstellungen vor. Stellen Sie sicher, dass der Name des Bausteins korrekt eingetragen ist, und dass die Paketierung aktiviert sind.
 
 Setzen Sie einen Wert ins Feld *PackageSize*, z.B. 50000.<br>
-Setzen Sie Z_XTRACT_IS_TABLE_EX ins Feld [Custom Function]().<br>
-Selektieren Sie [Use Custom function]().<br>
-Selektieren Sie [Activate Background Extraction](). <br>
+Setzen Sie Z_XTRACT_IS_TABLE_EX ins Feld *Custom Function*.<br>
+Selektieren Sie *Use Custom function*.<br>
+Selektieren Sie *Activate Background Extraction*. <br>
 
 ![Table-Extraction-Preferences](/img/content/Table-Extraction-Preferences.png){:class="img-responsive"}
