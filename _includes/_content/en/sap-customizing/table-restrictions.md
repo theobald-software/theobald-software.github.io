@@ -25,7 +25,7 @@ Define the exceptions as shown in the screenshot.
 ![Z-Custom-Function-04](/img/content/Z-Custom-Function-04.png){:class="img-responsive" }
 
 **Step 5 - Code**<br>
-You can find the ABAP code in [Z_XTRACT_IS_TABLE.txt](/docs/sap-customizing/Z_XTRACT_IS_TABLE.txt). Use *Ctrl + C* and *Ctrl + V*  to paste the code in the source code editor.
+You can find the ABAP code in [Z_XTRACT_IS_TABLE.txt](/docs/sap-customizing/Z_XTRACT_IS_TABLE.txt){:download}. Use *Ctrl + C* and *Ctrl + V*  to paste the code in the source code editor.
 Save the function module and activate it.
 
 
