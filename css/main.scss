@@ -574,9 +574,46 @@ footer .fab {
     padding-right: 80px;
   }
 }
+@media only screen and (min-width: 1600px) {
+  .side-menu-wrapper {
+    padding-right: 0;
+    width: 20% !important;
+  }
+}
+@media only screen and (min-width: 2100px) {
+  .side-menu-wrapper {
+    padding-right: 0;
+    width: 18% !important;
+  }
+}
+@media only screen and (min-width: 2400px) {
+  .side-menu-wrapper {
+    padding-right: 0;
+    width: 16% !important;
+  }
+}
+@media only screen and (min-width: 2700px) {
+  .side-menu-wrapper {
+    padding-right: 0;
+    width: 14% !important;
+  }
+}
 @media only screen and (min-width: 3000px) {
   .side-menu-wrapper {
+    padding-right: 0;
     width: 12.5% !important;
+  }
+}
+@media only screen and (min-width: 3400px) {
+  .side-menu-wrapper {
+    padding-right: 0;
+    width: 11% !important;
+  }
+}
+@media only screen and (min-width: 3800px) {
+  .side-menu-wrapper {
+    padding-right: 0;
+    width: 10% !important;
   }
 }
 
