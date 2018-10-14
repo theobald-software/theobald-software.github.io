@@ -22,7 +22,7 @@ After the call, the program loops through the table CUSTOMER_T and writes some c
 {% highlight csharp %}
 static void Main(string[] args) 
 { 
-    using(R3Connection con = new R3Connection("hamlet", 11, "theobald", "pw", "EN", "800"))
+    using(R3Connection con = new R3Connection("sapappserver", 00, "sapuser", "password", "EN", "800"))
     {
         con.Open(false); 
         // Create a function object 
@@ -58,7 +58,7 @@ static void Main(string[] args)
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
 Sub Main() 
-    Using con As New R3Connection("host", 11, "user", "pw", "EN", "800") 
+    Using con As New R3Connection("sapappserver", 00, "sapuser", "password", "EN", "800") 
         con.Open(False) 
        
         ' Create a function object Dim func = con.CreateFunction("SD_RFC_CUSTOMER_GET") 
