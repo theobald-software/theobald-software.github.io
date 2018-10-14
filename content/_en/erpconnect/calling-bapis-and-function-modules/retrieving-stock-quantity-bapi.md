@@ -21,7 +21,7 @@ The figure below shows the form during design time.
 
 ![bapi-stock](/img/content/calling-client-bapi-stock-001_n.png){:class="img-responsive" height="300px" width="300px"}    
 
-Before executing the BAPI, there are at least three import parameters to be defined: the Plant (PLANT), the material number (MATERIAL) and the unit (UNIT). 
+Before executing the BAPI, there are at least three import parameters to be defined (For this BAPI, other BAPIs need other parameters): the Plant (PLANT), the material number (MATERIAL) and the unit (UNIT). 
 
 As you can see in the code below, the BAPI object is created by the CreateBapi method of the R3Connection object. The imports will be set the same way as we did when calling 'normal' function modules.
 
