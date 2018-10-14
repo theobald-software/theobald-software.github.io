@@ -96,5 +96,6 @@ Using con As New R3Connection
         End Using
 {% endhighlight %}
 </details>
+<br>
 
 ![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive" }
