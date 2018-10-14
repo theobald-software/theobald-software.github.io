@@ -57,6 +57,7 @@ private void btnFetchQueryData_Click(object sender, System.EventArgs e)
 {% endhighlight %}
 </details>
 
+<br>
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
