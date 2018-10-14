@@ -21,15 +21,9 @@ When all of the selections have been filled in, the query can be executed with t
 {% highlight csharp %}
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
        {
-           using (R3Connection con = new R3Connection())
+          using (R3Connection con = new R3Connection("sapappserver", 00, "sapuser", "password", "EN", "800"))
            {
-               con.UserName = "erpconnect";
-               con.Password = "pass";
-               con.Language = "DE";
-               con.Client = "800";
-               con.Host = "sapserver";
-               con.SystemNumber = 11;
- 
+          
                con.Open(false);
  
                // Create Query object Query q; 
