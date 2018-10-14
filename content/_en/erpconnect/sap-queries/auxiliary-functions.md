@@ -33,7 +33,7 @@ using (R3Connection con = new R3Connection("sapappserver", 00, "sapuser", "passw
 }
 {% endhighlight %}
 </details>
-
+<br>
 ![AuxiliaryFunctions01](/img/content/AuxiliaryFunctions01.png){:class="img-responsive" width="600px"}
 
 **SearchForQueries**
