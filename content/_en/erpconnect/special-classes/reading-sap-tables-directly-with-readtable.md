@@ -128,7 +128,7 @@ ReadTable.SetCustomFunctionName("Z_XTRACT_IS_TABLE").
 
 links
 
-Online Help: [Installing the custom function module](https://help.theobald-software.com/SAPCustomizing-EN/default.aspx?pageid=table-restrictions)
+Online Help: [Installing the custom function module](../sap-customizing/table-restrictions)
 
 KnowledgeBase: [Transferring data packets with ReadTable class](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/29/28/transferring-data-packets-with-readtable-class)
 
