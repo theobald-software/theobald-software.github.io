@@ -117,12 +117,12 @@ Leider gibt es beim Lesen von Tabellen mit der ReadTable-Klasse folgende Einschr
 - Die Gesamtbreite der zu extrahierenden Spalten darf 512 Bytes nicht übersteigen.
 - Spezialtabellen wie TCURR liefern abgehackte Werte.
 
-Sollte eine der obigen Punkte eintreten, wird der Tabellenzugriff mit einer entsprechenden Exception abstürzen. Um dieses Problem zu lösen, müssen Sie einen Z-Baustein im SAP-System installieren. Siehe dazu das Kapitel [Z-Baustein installieren](http://help.theobald-software.com/SAPCustomizing-DE/default.aspx?pageid=umgehung-der-einschraenkungen-bei-der-tabellenextraktion).
+Sollte eine der obigen Punkte eintreten, wird der Tabellenzugriff mit einer entsprechenden Exception abstürzen. Um dieses Problem zu lösen, müssen Sie einen Z-Baustein im SAP-System installieren. Siehe dazu das Kapitel [Z-Baustein installieren](../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion).
 
 Um die ReadTable-Klasse zu veranlassen, einen installierten Z-Baustein, z.B. Z_XTRACT_IS_TABLE, anstelle des SAP-Standards zu nutzen, benutzen Sie die Methode: *ReadTable.SetCustomFunctionName("Z_XTRACT_IS_TABLE")*;
 
 **Links**<br>
-Online Hilfe: [Installation des Z-Funktionsbausteins](http://help.theobald-software.com/SAPCustomizing-DE/default.aspx?pageid=umgehung-der-einschraenkungen-bei-der-tabellenextraktion)<br>
+Online Hilfe: [Installation des Z-Funktionsbausteins](../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion)<br>
 KnowledgeBase: [Transferring data packets with ReadTable class](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/29/28/transferring-data-packets-with-readtable-class)<br>
 KnowledgeBase: [Get meta data of a table](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/45/28/get-meta-data-of-a-table)<br>
 

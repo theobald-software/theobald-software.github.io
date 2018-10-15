@@ -6,7 +6,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: administration
 permalink: /:collection/:path
-weight: 11
+weight: 10
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=administration
 ---
