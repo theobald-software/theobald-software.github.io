@@ -46,7 +46,7 @@ Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -
 
 Fügen Sie den JavaScript-Code unter *Form Settings -> Advanced -> Custom JavaScript* ein.
 
-![nintex-forms-js-ecs-06](/img/content/nintex-forms-js-ecs-06.png){:class="img-responsive"}
+![nintex-forms-js-ecs-06](/img/content/nintex-forms-js-ecs-06.jpg){:class="img-responsive"}
 
 Im Code wird die Funktion *tEcs.ExeculeXQL* aufgerufen, um den Kundennamen aus der SAP-Tabelle KNA1 zu lesen. 
 

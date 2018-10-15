@@ -69,7 +69,7 @@ Go to your SharePoint list and start the just created workflow manually via the 
 a workflow item in your list.  
 
 
-![ECS-Nintex-ReadSAPTable-Example10](/img/content/ECS-Nintex-ReadSAPTable-Example10ECS-Nintex-ReadSAPTable-Example10.png){:class="img-responsive"}
+![ECS-Nintex-ReadSAPTable-Example10](/img/content/ECS-Nintex-ReadSAPTable-Example10.png){:class="img-responsive"}
 
 The XML output should be displayed with the defined limitations and conditions in the *Output* column.
 

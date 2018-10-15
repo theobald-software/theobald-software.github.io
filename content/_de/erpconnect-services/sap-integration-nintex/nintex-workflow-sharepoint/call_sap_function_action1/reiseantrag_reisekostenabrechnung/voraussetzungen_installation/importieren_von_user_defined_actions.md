@@ -47,7 +47,7 @@ Für den erfolgreichen Import der User Defined Action ***Convert to USD*** ist d
 
 Klicken Sie unter *Settings>Nintex Workflow 2013> Manage User Defined Actions* auf Create und öffnen Sie den *Nintex Live Catalog*.
 
-![ECS-Nintex-TravelScenarios18](/img/contentECS-Nintex-TravelScenarios18/.png){:class="img-responsive"}
+![ECS-Nintex-TravelScenarios18](/img/content/ECS-Nintex-TravelScenarios18.png){:class="img-responsive"}
 
 Dort können Sie nach dem Addon *Strikeiron exchange rate and currency converter* suchen und dieses hinzufügen. 
 
