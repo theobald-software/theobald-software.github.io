@@ -10,8 +10,8 @@ var main = {
         }
 
         if(referrer_relative) {
-            var old_url_homepage_english = '/EN/default.aspx';
-            var old_url_homepage_german = '/DE/default.aspx';
+            var old_url_homepage_english = '/en/default.aspx';
+            var old_url_homepage_german = '/de/default.aspx';
             if (referrer_relative.toLowerCase().indexOf(old_url_homepage_english) !== -1) {
                 window.location.replace("https://help.theobald-software.com/en/");
             } else if (referrer_relative.toLowerCase().indexOf(old_url_homepage_german) !== -1) {
