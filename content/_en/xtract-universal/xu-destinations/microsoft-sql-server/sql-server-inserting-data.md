@@ -27,7 +27,7 @@ we set the destination connection for the database.
 **Define settings** <br>
 We apply the default settings.
 
-![MSSql-Extraction-Specific-Settings-T001w](/img/content/MSSql-Extraction-Specific-Settings-T001wMSSql-Extraction-Specific-Settings-T001w.jpg){:class="img-responsive"}
+![MSSql-Extraction-Specific-Settings-T001w](/img/content/MSSql-Extraction-Specific-Settings-T001w.jpg){:class="img-responsive"}
 
 The Preparation option *Drop & Create* drops an existent table and creates a new one.  
 Optional: You can preview the SQL statement or use it as a template for your own SQL statements. Select the list value *Custom SQL* for Preparation then click on *Edit SQL*.

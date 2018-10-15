@@ -21,15 +21,9 @@ When all of the selections have been filled in, the query can be executed with t
 {% highlight csharp %}
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
        {
-           using (R3Connection con = new R3Connection())
+          using (R3Connection con = new R3Connection("sapappserver", 00, "sapuser", "password", "EN", "800"))
            {
-               con.UserName = "erpconnect";
-               con.Password = "pass";
-               con.Language = "DE";
-               con.Client = "800";
-               con.Host = "sapserver";
-               con.SystemNumber = 11;
- 
+          
                con.Open(false);
  
                // Create Query object Query q; 
@@ -63,6 +57,7 @@ private void btnFetchQueryData_Click(object sender, System.EventArgs e)
 {% endhighlight %}
 </details>
 
+<br>
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -102,5 +97,6 @@ Using con As New R3Connection
         End Using
 {% endhighlight %}
 </details>
+<br>
 
 ![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive" }

@@ -12,10 +12,10 @@ old_url: /ERPConnect-EN/default.aspx?pageid=improve-your-performance-by-using-te
 
 In some cases it may be helpful to improve the performance by using xml templates for creating the function module object hierarchy instead of using the CreateFunction/CreateBAPI methods: 
 
-1. Create a template using the tool FunctionTemplateGenerator.exe.
+1. Create a template using the tool FunctionTemplateGenerator.exe (which is located in the ERPConnect program folder).
 2. Add the XML file to your project as a resource.
 3. Use the following code to load the XML stream.
-4. Now you can use the FRFCFunction-object as usual.
+4. Now you can use the FRFCFunction-object as usual instead of using the CreateFunction/CreateBAPI methods.
 
 
 <details>

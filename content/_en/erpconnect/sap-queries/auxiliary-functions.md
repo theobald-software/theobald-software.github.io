@@ -19,7 +19,7 @@ using ERPConnect;
 using ERPConnect.Queries;  
 using ERPConnect.Queries.QueryHelper;  
     
-using(R3Connection con = new R3Connection("host", 11, "RFCTestUser", "pass01", "EN", "800"))  
+using (R3Connection con = new R3Connection("sapappserver", 00, "sapuser", "password", "EN", "800"))
 {
     con.Open();  
         
@@ -33,7 +33,7 @@ using(R3Connection con = new R3Connection("host", 11, "RFCTestUser", "pass01", "
 }
 {% endhighlight %}
 </details>
-
+<br>
 ![AuxiliaryFunctions01](/img/content/AuxiliaryFunctions01.png){:class="img-responsive" width="600px"}
 
 **SearchForQueries**

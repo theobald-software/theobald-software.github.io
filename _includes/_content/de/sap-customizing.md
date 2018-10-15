@@ -5,7 +5,7 @@ Um bestimmte Einschränkungen zu umgehen bzw. gewünschte Funktionalitäten zu n
 
 *Table*: In den meisten Fällen ist die Installation eines Z-Funktionsbausteins notwendig. Siehe [Funktionsbaustein für Tabellen-Komprimierung](./sap-customizing/funktionsbaustein-fuer-table-komprimierung) . 
 
-*Table Join*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Funktionsbaustein für Table-Join](funktionsbaustein-fuer-table-join).
+*Table Join*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Funktionsbaustein für Table-Join](./sap-customizing/funktionsbaustein-fuer-table-join).
 
 *Report*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
 

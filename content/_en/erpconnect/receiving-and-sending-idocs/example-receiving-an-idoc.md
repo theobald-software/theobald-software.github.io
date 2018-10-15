@@ -108,6 +108,6 @@ End Sub
 {% endhighlight %}
 </details>
 
-The screenshot below shows the sample program in action. In this case, 7 E2MAKTM001 segments were found so 7 texts are passed.  
+The screenshot below shows the sample program in action. In this case, 5 E2MAKTM001 segments were found so 5 texts are passed.  
 
 ![SAP-Receive-IDoc](/img/content/SAP-Receive-IDoc.png){:class="img-responsive" width="800px" }

@@ -22,7 +22,7 @@ Klicken Sie auf den Workflow, um ihn zu editieren.
 
 Deaktivieren (disable) oder löschen Sie die Create item-Action. 
 
-![Nintex-Material-WS-WF-Disable](/img/content/Nintex-Material-WS-WF-Disable.png){:class="img-responsive"}
+![Nintex-Material-WS-WF-Disable](/img/content/Nintex-Material-WS-WF-Disable.jpg){:class="img-responsive"}
 
 Fügen Sie nun die Action Call web service wie unten angezeigt ein.
 

@@ -22,8 +22,7 @@ To begin, we open a client connection to the R/3 system with the help of R3Conne
 {% highlight csharp %}
 static void Main(string[] args)  
 {  
-    using (R3Connection con = new 
-        R3Connection("hamlet",11,"Theobald","pw","DE","800"))
+     using (R3Connection con = new R3Connection("sapappserver", 00, "sapuser", "password", "EN", "800"))
     {
        con.Open(false);  
         
@@ -42,8 +41,7 @@ static void Main(string[] args)
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
 Sub Main(ByVal args() As String) 
-   Using con As R3Connection = New R3Connection("hamlet", _ 
-      11, "Theobald", "pw", "DE", "800") 
+   Using con As R3Connection = New R3Connection("sapappserver", 00, "sapuser", "password", "DE", "800") 
    con.Open(False) 
   
    Console.WriteLine( _ 
@@ -103,7 +101,7 @@ Now we have to fill in some fields in segment E1STATS: the new status code (STAT
 <summary>Click to open C# example.</summary>
 {% highlight csharp %}
 // Fill the right fields in the segments 
-i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20060101"; 
+i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20181001"; 
 i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
 i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
 i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
@@ -118,7 +116,7 @@ Console.ReadLine();
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
 ' Fill the right fields in the segments 
-i.Segments("E1STATS", 0).Fields("LOGDAT").FieldValue = _ "20060101" 
+i.Segments("E1STATS", 0).Fields("LOGDAT").FieldValue = "20181001" 
 i.Segments("E1STATS", 0).Fields("LOGTIM").FieldValue = "152301"
 i.Segments("E1STATS", 0).Fields("STATUS").FieldValue = "12" 
 i.Segments("E1STATS", 0).Fields("DOCNUM").FieldValue = IdocNo 

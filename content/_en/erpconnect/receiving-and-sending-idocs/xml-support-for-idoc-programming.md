@@ -47,15 +47,7 @@ To create an IDoc object from the schema, we use the method LoadIdocSchema. Afte
 <details>
 <summary>Click to open C# example.</summary>
 {% highlight csharp %}
-using (R3Connection con = new R3Connection())        
-    {           
-    con.UserName = "erpconnect";            
-    con.Password = "pass";              
-    con.Language = "DE";
-    con.Client = "800";             
-    con.Host = "sapserver";             
-    con.SystemNumber = 11; 
-    con.Open(false);
+using (R3Connection con = new R3Connection("sapappserver", 00, "sapuser", "password", "EN", "800"))
           
     Idoc i = new Idoc();  
     i.Connection = con; 
