@@ -6,7 +6,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: tools
 permalink: /:collection/:path
-weight: 11
+weight: 12
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=tools
 ---

@@ -6,7 +6,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: appendix
 permalink: /:collection/:path
-weight: 12
+weight: 13
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=appendix
 ---
