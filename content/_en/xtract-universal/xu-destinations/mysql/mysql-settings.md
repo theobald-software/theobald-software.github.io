@@ -15,8 +15,6 @@ Click on the **Destination** button to define extraction-specific settings of th
 
 ![ext_spec_set_de_form](/img/content/ext_spec_set_de_form.jpg){:class="img-responsive"}
 
-![](/img/content/.png){:class="img-responsive"}
-
 **Table Name**
 
 Specify the name of the destination table. You have the following options:

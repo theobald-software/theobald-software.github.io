@@ -109,6 +109,6 @@ Zu guter Letzt gilt es nur, das BAPI auszuführen und die Return-Nachrichten aus
 
 Das Bild zeigt die ASP.NET-Anwendung nach erfolgreichem Anlegen der Bestellung im System.  
 
-![Create-Purchase-Order-IE](/img/content/Create-Purchase-Order-IECreate-Purchase-Order-IE.jpg){:class="img-responsive"}
+![Create-Purchase-Order-IE](/img/content/Create-Purchase-Order-IE){:class="img-responsive"}
 
 ![Create-Puchase-Order-ME23](/img/content/Create-Puchase-Order-ME23.jpg){:class="img-responsive"}
