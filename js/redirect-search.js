@@ -10,33 +10,42 @@ var main = {
         }
 
         if(referrer_relative) {
-            // general settings for instant search
-            const search = instantsearch({
-                appId: '4C27F1P1UC',
-                apiKey: '09cbfe4bbe8e6380e31d4572f85ad22e',
-                indexName: 'theobald-software-online-help',
-                searchFunction: function (helper) {
-                    helper.setQueryParameter('restrictSearchableAttributes', ['old_url']);
-                    helper.setQueryParameter('hitsPerPage', 1);
-                    helper.search();
-                }
-            });
+            var old_url_homepage_english = '/EN/default.aspx';
+            var old_url_homepage_german = '/DE/default.aspx';
+            if (referrer_relative.toLowerCase().indexOf(old_url_homepage_english) !== -1) {
+                window.location.replace("https://help.theobald-software.com/en/");
+            } else if (referrer_relative.toLowerCase().indexOf(old_url_homepage_german) !== -1) {
+                window.location.replace("https://help.theobald-software.com/de/");
+            } else {
 
-            // initialize Hits
-            search.addWidget(
-                instantsearch.widgets.hits({
-                    container: '#hits',
-                    templates: {
-                        item: document.querySelector('#redirect-template').innerHTML,
-                        empty: document.querySelector('#no-redirect-template').innerHTML
+                // general settings for instant search
+                const search = instantsearch({
+                    appId: '4C27F1P1UC',
+                    apiKey: '09cbfe4bbe8e6380e31d4572f85ad22e',
+                    indexName: 'theobald-software-online-help',
+                    searchFunction: function (helper) {
+                        helper.setQueryParameter('restrictSearchableAttributes', ['old_url']);
+                        helper.setQueryParameter('hitsPerPage', 1);
+                        helper.search();
                     }
-                })
-            );
+                });
 
-            // start instantsearch
-            search.start();
+                // initialize Hits
+                search.addWidget(
+                    instantsearch.widgets.hits({
+                        container: '#hits',
+                        templates: {
+                            item: document.querySelector('#redirect-template').innerHTML,
+                            empty: document.querySelector('#no-redirect-template').innerHTML
+                        }
+                    })
+                );
 
-            search.helper.setQuery(referrer_relative).search();
+                // start instantsearch
+                search.start();
+
+                search.helper.setQuery(referrer_relative).search();
+            }
         } else {
             // make message visible
             $('.redirect-message').visible();
