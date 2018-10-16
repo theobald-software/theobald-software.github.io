@@ -1,4 +1,5 @@
 ---
+ref: bc-advanced-techniques-02
 layout: page
 title: Dynamische Verbindungsinformationen
 description: Dynamische Verbindungsinformationen

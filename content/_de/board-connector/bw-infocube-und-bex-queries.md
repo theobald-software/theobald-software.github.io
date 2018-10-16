@@ -1,4 +1,5 @@
 ---
+ref: board-connector-11
 layout: page
 title: BW InfoCubes und BEx Queries
 description: BW InfoCubes und BEx Queries

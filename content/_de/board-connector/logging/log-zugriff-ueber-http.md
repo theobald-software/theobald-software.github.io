@@ -1,4 +1,5 @@
 ---
+ref: bc-logging-04
 layout: page
 title: Log-Zugriff über HTTP
 description: Log-Zugriff über HTTP

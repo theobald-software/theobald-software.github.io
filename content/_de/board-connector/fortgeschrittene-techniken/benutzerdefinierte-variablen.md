@@ -1,4 +1,5 @@
 ---
+ref: bc-advanced-techniques-01
 layout: page
 title: Benutzerdefinierte Variablen
 description: Benutzerdefinierte Variablen

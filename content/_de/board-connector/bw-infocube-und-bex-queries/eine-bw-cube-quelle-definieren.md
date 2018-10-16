@@ -1,4 +1,5 @@
 ---
+ref: bc-bw-infocubes-and-bex-queries-01
 layout: page
 title: Eine BW Cube-Quelle definieren
 description: Eine BW Cube-Quelle definieren

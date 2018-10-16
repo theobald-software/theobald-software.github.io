@@ -1,4 +1,5 @@
 ---
+ref: bc-datasource-deltaq-07
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

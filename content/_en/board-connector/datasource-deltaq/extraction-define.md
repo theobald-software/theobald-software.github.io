@@ -1,4 +1,5 @@
 ---
+ref: bc-datasource-deltaq-03
 layout: page
 title: Define a DeltaQ Extraction
 description: Define a DeltaQ Extraction

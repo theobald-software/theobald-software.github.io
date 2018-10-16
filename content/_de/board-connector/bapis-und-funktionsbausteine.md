@@ -1,4 +1,5 @@
 ---
+ref: board-connector-10
 layout: page
 title: BAPIs und Funktionsbausteine
 description: BAPIs und Funktionsbausteine

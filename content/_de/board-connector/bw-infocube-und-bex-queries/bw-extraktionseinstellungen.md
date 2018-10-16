@@ -1,4 +1,5 @@
 ---
+ref: bc-bw-infocubes-and-bex-queries-03
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

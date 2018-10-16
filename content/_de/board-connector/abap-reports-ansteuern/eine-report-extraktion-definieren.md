@@ -1,4 +1,5 @@
 ---
+ref: bc-abap-reports-02
 layout: page
 title: Eine Report-Extraktion definieren
 description: Eine Report-Extraktion definieren

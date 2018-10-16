@@ -1,4 +1,5 @@
 ---
+ref: bc-sap-customizing-02
 layout: page
 title: Table Restrictions
 description: Table Restrictions

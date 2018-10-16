@@ -1,4 +1,5 @@
 ---
+ref: bc-sap-queries-04
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

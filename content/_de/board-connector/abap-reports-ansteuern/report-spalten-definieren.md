@@ -1,4 +1,5 @@
 ---
+ref: bc-abap-reports-04
 layout: page
 title: Report-Spalten definieren
 description: Report-Spalten definieren

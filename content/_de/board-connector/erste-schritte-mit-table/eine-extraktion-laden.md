@@ -1,4 +1,5 @@
 ---
+ref: bc-getting-started-table-04
 layout: page
 title: Schritt III- Eine Extraktion in BOARD laden
 description: Schritt III- Eine Extraktion in BOARD laden

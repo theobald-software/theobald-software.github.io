@@ -1,4 +1,5 @@
 ---
+ref: bc-advanced-techniques-05
 layout: page
 title: SSO und SNC
 description: SSO und SNC

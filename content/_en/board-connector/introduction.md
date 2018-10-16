@@ -1,4 +1,5 @@
 ---
+ref: board-connector-01
 layout: page
 title: Introduction
 description: Introduction

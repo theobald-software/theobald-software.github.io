@@ -1,4 +1,5 @@
 ---
+ref: board-connector-04
 layout: page
 title: Advanced Techniques
 description: Advanced Techniques

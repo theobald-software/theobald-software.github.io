@@ -1,4 +1,5 @@
 ---
+ref: bc-bw-open-hub-services-02
 layout: page
 title: Eine OHS-Extraktion definieren
 description: Eine OHS-Extraktion definieren

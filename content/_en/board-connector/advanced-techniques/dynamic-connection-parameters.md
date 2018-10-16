@@ -1,4 +1,5 @@
 ---
+ref: bc-advanced-techniques-02
 layout: page
 title: Dynamic Connection Parameters
 description: Dynamic Connection Parameters

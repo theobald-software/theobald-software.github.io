@@ -1,4 +1,5 @@
 ---
+ref: bc-getting-started-table-06
 layout: page
 title: WHERE Clause
 description: WHERE Clause
