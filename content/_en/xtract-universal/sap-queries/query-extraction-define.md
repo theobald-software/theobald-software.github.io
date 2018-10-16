@@ -1,4 +1,5 @@
 ---
+ref: xu-sap-queries-01
 layout: page
 title: Define a Query Extraction
 description: Define a Query Extraction

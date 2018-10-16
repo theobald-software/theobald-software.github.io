@@ -1,4 +1,5 @@
 ---
+ref: xu-table-join-01
 layout: page
 title: Define Tables
 description: Define Tables

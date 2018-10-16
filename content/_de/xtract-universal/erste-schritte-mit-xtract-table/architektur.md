@@ -1,4 +1,5 @@
 ---
+ref: xu-getting-started-table-01
 layout: page
 title: Architektur
 description: Architektur

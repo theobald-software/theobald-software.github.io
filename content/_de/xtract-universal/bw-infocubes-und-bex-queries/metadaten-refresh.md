@@ -1,4 +1,5 @@
 ---
+ref: xu-bw-infocubes-bex-queries-05
 layout: page
 title: Metadaten-Refresh
 description: Metadaten-Refresh

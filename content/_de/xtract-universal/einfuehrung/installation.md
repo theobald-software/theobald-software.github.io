@@ -1,4 +1,5 @@
 ---
+ref: xu-introduction-02
 layout: page
 title: Installation
 description: Installation

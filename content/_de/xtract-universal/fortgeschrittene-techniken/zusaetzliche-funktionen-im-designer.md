@@ -1,4 +1,5 @@
 ---
+ref: xu-advanced-techniques-07
 layout: page
 title: Zusätzliche Funktionen im Designer
 description: Zusätzliche Funktionen im Designer

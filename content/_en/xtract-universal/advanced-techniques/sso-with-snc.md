@@ -1,4 +1,5 @@
 ---
+ref: xu-advanced-techniques-06
 layout: page
 title: SSO with SNC
 description: SSO with SNC

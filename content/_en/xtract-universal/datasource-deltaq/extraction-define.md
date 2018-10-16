@@ -1,4 +1,5 @@
 ---
+ref: xu-datasource-deltaq-03
 layout: page
 title: Define an extractor
 description: Define an extractor

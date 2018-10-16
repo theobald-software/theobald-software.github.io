@@ -1,4 +1,5 @@
 ---
+ref: xu-logging-03
 layout: page
 title: Extraktion-Logging
 description: Extraktion-Logging

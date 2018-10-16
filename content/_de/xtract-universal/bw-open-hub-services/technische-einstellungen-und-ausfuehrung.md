@@ -1,4 +1,5 @@
 ---
+ref: xu-bw-open-hub-services-03
 layout: page
 title: Technische Einstellungen und Ausführung
 description: Technische Einstellungen und Ausführung

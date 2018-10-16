@@ -1,4 +1,5 @@
 ---
+ref: xu-bapis-function-01
 layout: page
 title: Eine BAPI-Quelle definieren
 description: Eine BAPI-Quelle definieren

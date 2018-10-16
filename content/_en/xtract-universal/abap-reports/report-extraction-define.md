@@ -1,4 +1,5 @@
 ---
+ref: xu-abap-reports-02
 layout: page
 title: Define a Report Extraction
 description: Define a Report Extraction

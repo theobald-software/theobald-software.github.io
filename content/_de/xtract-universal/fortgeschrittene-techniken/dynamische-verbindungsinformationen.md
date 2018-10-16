@@ -1,4 +1,5 @@
 ---
+ref: xu-advanced-techniques-03
 layout: page
 title: Dynamische Verbindungsinformationen
 description: Dynamische Verbindungsinformationen

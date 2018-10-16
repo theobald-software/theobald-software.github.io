@@ -1,4 +1,5 @@
 ---
+ref: xu-datasource-deltaq-08
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

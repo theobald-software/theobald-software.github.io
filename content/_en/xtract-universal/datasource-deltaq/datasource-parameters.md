@@ -1,4 +1,5 @@
 ---
+ref: xu-datasource-deltaq-04
 layout: page
 title: Datasource parameters
 description: Datasource parameters

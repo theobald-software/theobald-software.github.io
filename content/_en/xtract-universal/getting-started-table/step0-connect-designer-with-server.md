@@ -1,4 +1,5 @@
 ---
+ref: xu-getting-started-table-02
 layout: page
 title: Step 0- Connect Designer with Server
 description: Step 0- Connect Designer with Server

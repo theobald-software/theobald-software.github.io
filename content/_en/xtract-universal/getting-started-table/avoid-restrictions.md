@@ -1,4 +1,5 @@
 ---
+ref: xu-getting-started-table-08
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions

@@ -1,4 +1,5 @@
 ---
+ref: xu-sap-queries-01
 layout: page
 title: Definieren einer Query
 description: Definieren einer Query

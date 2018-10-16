@@ -1,4 +1,5 @@
 ---
+ref: xu-getting-started-table-03
 layout: page
 title: Schritt I- Eine neue Extraktion anlegen
 description: Schritt I- Eine neue Extraktion anlegen
