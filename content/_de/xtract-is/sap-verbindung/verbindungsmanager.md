@@ -1,4 +1,5 @@
 ---
+ref: xi-sap-connection-01
 layout: page
 title: Der Verbindungsmanager
 description: Der Verbindungsmanager

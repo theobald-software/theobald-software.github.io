@@ -1,4 +1,5 @@
 ---
+ref: xi-requirements-and-installation-04
 layout: page
 title: Lizenz einspielen
 description: Lizenz einspielen

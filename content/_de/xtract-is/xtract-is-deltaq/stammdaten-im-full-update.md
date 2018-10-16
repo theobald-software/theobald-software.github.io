@@ -1,4 +1,5 @@
 ---
+ref: xi-q-delta-03
 layout: page
 title: Einen Extraktor definieren
 description: Einen Extraktor definieren

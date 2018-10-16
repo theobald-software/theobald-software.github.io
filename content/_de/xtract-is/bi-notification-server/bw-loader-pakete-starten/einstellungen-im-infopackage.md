@@ -1,4 +1,5 @@
 ---
+ref: xi-bw-loader-packages-02
 layout: page
 title: Einstellungen im InfoPackage
 description: Einstellungen im InfoPackage

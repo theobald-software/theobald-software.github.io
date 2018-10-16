@@ -1,4 +1,5 @@
 ---
+ref: xi-bw-cube-01
 layout: page
 title: Eine BW Cube-Quelle suchen
 description: Eine BW Cube-Quelle suchen

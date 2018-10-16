@@ -1,4 +1,5 @@
 ---
+ref: xi-requirements-and-installation-01
 layout: page
 title: Requirements
 description: Requirements

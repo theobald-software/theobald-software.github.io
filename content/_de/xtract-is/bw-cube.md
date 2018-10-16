@@ -1,4 +1,5 @@
 ---
+ref: xtract-is-10
 layout: page
 title: Xtract IS BW Cube
 description: Xtract IS BW Cube

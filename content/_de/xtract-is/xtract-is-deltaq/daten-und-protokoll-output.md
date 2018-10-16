@@ -1,11 +1,12 @@
 ---
+ref: xi-q-delta-07
 layout: page
 title: Daten- und Protokoll-Output
 description: Daten- und Protokoll-Output
 product: xtract-is
 parent: xtract-is-deltaq
 permalink: /:collection/:path
-weight: 4
+weight: 7
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=daten-und-protokoll-output
 ---

@@ -1,4 +1,5 @@
 ---
+ref: xtract-is-06
 layout: page
 title: Xtract IS Table Join
 description: Xtract IS Table Join

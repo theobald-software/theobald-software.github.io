@@ -1,4 +1,5 @@
 ---
+ref: xi-table-01
 layout: page
 title: Tabellen extrahieren
 description: Tabellen extrahieren

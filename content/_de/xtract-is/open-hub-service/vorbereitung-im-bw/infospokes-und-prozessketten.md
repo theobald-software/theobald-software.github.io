@@ -1,4 +1,5 @@
 ---
+ref: xi-preparation-in-bw-02
 layout: page
 title: InfoSpokes und Prozessketten BI 7.0
 description: InfoSpokes und Prozessketten BI 7.0

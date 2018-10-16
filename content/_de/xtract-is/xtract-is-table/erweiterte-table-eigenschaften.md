@@ -1,4 +1,5 @@
 ---
+ref: xi-table-02
 layout: page
 title: Einstellungen
 description: Einstellungen

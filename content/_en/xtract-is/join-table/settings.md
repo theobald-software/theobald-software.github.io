@@ -1,4 +1,5 @@
 ---
+ref: xi-join-table-07
 layout: page
 title: Settings
 description: Settings
