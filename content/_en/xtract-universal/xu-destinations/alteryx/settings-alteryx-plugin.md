@@ -1,4 +1,5 @@
 ---
+ref: xu-alteryx-04
 layout: page
 title: Settings (Alteryx)
 description: Settings (Alteryx)

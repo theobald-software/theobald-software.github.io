@@ -1,4 +1,5 @@
 ---
+ref: xu-microsoft-sql-server-05
 layout: page
 title: Merging data
 description: Merging data

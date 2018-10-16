@@ -1,4 +1,5 @@
 ---
+ref: xu-amazon-aws-s3-01
 layout: page
 title: Requirements
 description: Requirements

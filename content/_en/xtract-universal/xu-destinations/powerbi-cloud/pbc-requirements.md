@@ -1,4 +1,5 @@
 ---
+ref: xu-powerbi-cloud-01
 layout: page
 title: Requirements
 description: Requirements

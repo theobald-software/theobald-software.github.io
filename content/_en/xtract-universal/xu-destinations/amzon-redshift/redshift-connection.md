@@ -1,4 +1,5 @@
 ---
+ref: xu-amzon-redshift-02
 layout: page
 title: Connection
 description: Connection

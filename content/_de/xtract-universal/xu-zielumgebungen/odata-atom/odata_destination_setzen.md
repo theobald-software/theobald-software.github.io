@@ -1,4 +1,5 @@
 ---
+ref: xu-odata-01
 layout: page
 title: OData-Destination setzen
 description: OData-Destination setzen

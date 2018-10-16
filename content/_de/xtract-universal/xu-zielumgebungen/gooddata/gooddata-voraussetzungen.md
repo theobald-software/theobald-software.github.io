@@ -1,4 +1,5 @@
 ---
+ref: xu-gooddata-01
 layout: page
 title: Voraussetzungen
 description: Voraussetzungen

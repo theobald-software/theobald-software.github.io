@@ -1,4 +1,5 @@
 ---
+ref: xu-odata-01
 layout: page
 title: Set OData destination
 description: Set OData destination

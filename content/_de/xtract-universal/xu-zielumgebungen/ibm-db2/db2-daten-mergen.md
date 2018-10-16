@@ -1,4 +1,5 @@
 ---
+ref: xu-ibm-db2-05
 layout: page
 title: Daten mergen
 description: Daten mergen

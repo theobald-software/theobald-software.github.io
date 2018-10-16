@@ -1,4 +1,5 @@
 ---
+ref: xu-teradata-02
 layout: page
 title: Verbindung
 description: Verbindung

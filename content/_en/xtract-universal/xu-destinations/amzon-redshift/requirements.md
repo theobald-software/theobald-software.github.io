@@ -1,4 +1,5 @@
 ---
+ref: xu-amzon-redshift-01
 layout: page
 title: Requirements
 description: Requirements

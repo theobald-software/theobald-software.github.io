@@ -1,4 +1,5 @@
 ---
+ref: xu-microstrategy-01
 layout: page
 title: Requirements
 description: Microstrategy

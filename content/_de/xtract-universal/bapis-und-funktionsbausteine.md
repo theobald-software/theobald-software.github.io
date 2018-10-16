@@ -1,4 +1,5 @@
 ---
+ref: xtract-universal-12
 layout: page
 title: BAPIs und Funktionsbausteine
 description: BAPIs und Funktionsbausteine

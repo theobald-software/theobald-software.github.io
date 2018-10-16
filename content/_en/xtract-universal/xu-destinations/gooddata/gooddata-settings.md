@@ -1,4 +1,5 @@
 ---
+ref: xu-gooddata-03
 layout: page
 title: Settings
 description: Settings

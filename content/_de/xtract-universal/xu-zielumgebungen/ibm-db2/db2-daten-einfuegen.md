@@ -1,4 +1,5 @@
 ---
+ref: xu-ibm-db2-04
 layout: page
 title: Daten Einfügen
 description: Daten Einfügen

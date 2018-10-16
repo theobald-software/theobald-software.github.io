@@ -1,4 +1,5 @@
 ---
+ref: xu-destinations-03
 layout: page
 title: Azure BLOB Storage
 description: Azure BLOB Storage

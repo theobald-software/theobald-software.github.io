@@ -1,4 +1,5 @@
 ---
+ref: xu-microsoft-sql-server-04
 layout: page
 title: Inserting data
 description: Inserting data

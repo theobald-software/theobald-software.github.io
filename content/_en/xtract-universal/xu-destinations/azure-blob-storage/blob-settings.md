@@ -1,4 +1,5 @@
 ---
+ref: xu-azure-blob-storage-03
 layout: page
 title: Settings
 description: Settings

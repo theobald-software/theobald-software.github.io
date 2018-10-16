@@ -1,4 +1,5 @@
 ---
+ref: xu-teradata-03
 layout: page
 title: Einstellungen
 description: Einstellungen

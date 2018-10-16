@@ -1,4 +1,5 @@
 ---
+ref: xu-destinations-06
 layout: page
 title: GoodData
 description: GoodData
