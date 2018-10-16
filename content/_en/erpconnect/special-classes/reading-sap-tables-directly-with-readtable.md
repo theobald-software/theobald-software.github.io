@@ -1,4 +1,5 @@
 ---
+ref: ec-special-classes-01
 layout: page
 title: Reading SAP Tables Directly with ReadTable
 description: Reading SAP Tables Directly with ReadTable

@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-queries-01
 layout: page
 title: Beispiel für das Aufrufen einer Query
 description: Beispiel für das Aufrufen einer Query

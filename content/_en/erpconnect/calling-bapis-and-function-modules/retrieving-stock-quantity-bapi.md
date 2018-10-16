@@ -1,4 +1,5 @@
 ---
+ref: ec-calling-bapis-and-function-modules-02
 layout: page
 title: Retrieving Stock Quantity via BAPI
 description: Retrieving Stock Quantity via BAPI

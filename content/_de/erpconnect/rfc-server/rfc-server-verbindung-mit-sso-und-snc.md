@@ -1,4 +1,5 @@
 ---
+ref: ec-rfc-server-02
 layout: page
 title: SAP-Verbindung mit SSO und SNC
 description: SAP-Verbindung mit SSO und SNC

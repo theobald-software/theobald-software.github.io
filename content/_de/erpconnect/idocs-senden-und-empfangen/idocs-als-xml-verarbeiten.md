@@ -1,4 +1,5 @@
 ---
+ref: ec-receiving-and-sending-idocs-04
 layout: page
 title: IDocs als XML verarbeiten
 description: IDocs als XML verarbeiten

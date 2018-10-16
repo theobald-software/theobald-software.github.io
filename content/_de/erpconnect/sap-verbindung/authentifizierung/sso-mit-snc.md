@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-connection-04
 layout: page
 title: SNC mit NTLM und Kerberos
 description: SNC mit NTLM und Kerberos

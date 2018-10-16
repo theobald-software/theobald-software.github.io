@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-connection-04
 layout: page
 title: SSO with SNC
 description: SSO with SNC

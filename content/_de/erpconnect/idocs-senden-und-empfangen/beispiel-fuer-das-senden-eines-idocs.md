@@ -1,4 +1,5 @@
 ---
+ref: ec-receiving-and-sending-idocs-01
 layout: page
 title: Beispiel für das Senden eines IDocs
 description: Beispiel für das Senden eines IDocs

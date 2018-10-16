@@ -1,4 +1,5 @@
 ---
+ref: ec-special-classes-03
 layout: page
 title: Managing and  Executing Transactions- The Class Transaction
 description: Managing and  Executing Transactions- The Class Transaction

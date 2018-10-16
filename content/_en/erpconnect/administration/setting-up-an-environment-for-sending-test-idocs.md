@@ -1,4 +1,5 @@
 ---
+ref: ec-administration-02
 layout: page
 title: Setting Up an Environment for Sending Test IDocs 
 description: Setting Up an Environment for Sending Test IDocs 

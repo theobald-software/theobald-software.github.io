@@ -1,4 +1,5 @@
 ---
+ref: ec-appendix-01
 layout: page
 title: Konvertierung der Datentypen SAP ⇔ .NET
 description: Konvertierung der Datentypen SAP ⇔ .NET

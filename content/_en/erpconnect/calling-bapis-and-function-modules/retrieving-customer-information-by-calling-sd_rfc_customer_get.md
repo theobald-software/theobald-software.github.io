@@ -1,4 +1,5 @@
 ---
+ref: ec-calling-bapis-and-function-modules-01
 layout: page
 title: Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET
 description: Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET

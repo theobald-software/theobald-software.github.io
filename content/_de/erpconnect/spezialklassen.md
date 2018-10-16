@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-06
 layout: page
 title: Spezialklassen
 description: Spezialklassen
@@ -6,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: spezialklassen
 permalink: /:collection/:path
-weight: 7
+weight: 6
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=spezialklassen
 ---

@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-queries-02
 layout: page
 title: Auxiliary functions
 description: Auxiliary functions

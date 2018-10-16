@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-03
 layout: page
 title: RFC-Client-Funktionen und BAPIs
 description: RFC-Client-Funktionen und BAPIs
@@ -6,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: rfc-client-funktionen-und-bapis
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-client-funktionen-und-bapis
 ---

@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-08
 layout: page
 title: SAP BW
 description: SAP BW
@@ -6,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: sap-bw
 permalink: /:collection/:path
-weight: 9
+weight: 8
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sap-bw
 ---

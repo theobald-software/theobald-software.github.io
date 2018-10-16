@@ -1,4 +1,5 @@
 ---
+ref: ec-receiving-and-sending-idocs-03
 layout: page
 title: Sending an ORDER IDoc
 description: Sending an ORDER IDoc
