@@ -1,4 +1,5 @@
 ---
+ref: xr-bw-cube-03
 layout: page
 title: Variablen
 description: Variablen

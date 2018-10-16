@@ -1,4 +1,5 @@
 ---
+ref: xtract-rs-07
 layout: page
 title: BAPIs und RFC-Funktionsbausteine
 description: BAPIs und RFC-Funktionsbausteine

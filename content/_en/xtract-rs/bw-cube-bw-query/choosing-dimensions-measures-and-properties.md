@@ -1,4 +1,5 @@
 ---
+ref: xr-bw-cube-02
 layout: page
 title: Choosing Dimensions, Measures and Properties
 description: Choosing Dimensions, Measures and Properties

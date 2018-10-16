@@ -1,4 +1,5 @@
 ---
+ref: xtract-rs-03
 layout: page
 title: Configure connection to SAP
 description: Configure connection to SAP

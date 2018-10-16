@@ -1,4 +1,5 @@
 ---
+ref: xr-bw-cube-02
 layout: page
 title: Dimensionen und Kennzahlen wählen
 description: Dimensionen und Kennzahlen wählen

@@ -1,4 +1,5 @@
 ---
+ref: xr-sap-customizing-02
 layout: page
 title: Umgehung der Einschränkungen bei der Tabellenextraktion
 description: Umgehung der Einschränkungen bei der Tabellenextraktion

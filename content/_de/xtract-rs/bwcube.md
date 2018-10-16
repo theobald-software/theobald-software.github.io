@@ -1,4 +1,5 @@
 ---
+ref: xtract-rs-06
 layout: page
 title: BW Cube / BW Query
 description: BW Cube / BW Query

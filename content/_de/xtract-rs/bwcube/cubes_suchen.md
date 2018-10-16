@@ -1,4 +1,5 @@
 ---
+ref: xr-bw-cube-01
 layout: page
 title: Cubes suchen
 description: Cubes suchen

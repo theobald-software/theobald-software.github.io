@@ -1,4 +1,5 @@
 ---
+ref: xr-report-01
 layout: page
 title: Report-Funktionsbaustein installieren
 description: Report-Funktionsbaustein installieren
