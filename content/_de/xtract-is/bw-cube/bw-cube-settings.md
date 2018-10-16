@@ -82,7 +82,6 @@ In der Hauptmaske geben Sie direkt einen MDX-Befehl ein.
 
 ![BWCube-Settings-03](/img/content/BWCube-Settings-03.jpg){:class="img-responsive"}
 
-![](/img/content/.png){:class="img-responsive"}
 
 Danach klicken Sie auf Execute MDX and refresh statement, um die Metadaten aus dem BW-System zu lesen.
 

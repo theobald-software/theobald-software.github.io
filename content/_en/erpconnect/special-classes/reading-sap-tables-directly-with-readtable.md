@@ -120,7 +120,7 @@ Unfortunately following restrictions apply if you read tables with the ReadTable
 - The overall width of the columns to be extracted may not exceed 512 bytes. 
 - Some special tables like TCURR return false values.
 
-If anyone of these cases occur, the table call will throw an exception. To deal with this problem, it is possible to install a Z-module in the SAP system, please see chapter  [Installing the Z-function module](../sap-customization/table-restrictions).
+If anyone of these cases occur, the table call will throw an exception. To deal with this problem, it is possible to install a Z-module in the SAP system, please see chapter  [Installing the Z-function module](../sap-customizing/table-restrictions).
 
 To enable an installed Z-module, e.g. Z_XTRACT_IS_TABLE, when using the ReadTable class, use the method
 
