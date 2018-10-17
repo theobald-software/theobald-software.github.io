@@ -14,7 +14,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=nw-troubleshooting
 
 Despite sucessful installation of the Custom Actions they do not occur in the Nintex Workflow manager. This could be the cause:
 
-With newer Nintex Workflow Versions (as of 3.1.4) it is necessary to activate the Custom Actions explicitely on the site collection level. On your site collection go to Site *Settings>Nintex Workflow> Manage Allowed Actions* and mark the checkboxes for the three Custom Actions in the *ERPConnect Services* category. Save your entries with OK. Only then the Custom Actions will be available in the Nintex Workflow designer.
+With newer Nintex Workflow Versions (as of 3.1.4) it is necessary to activate the Custom Actions explicitly on the site collection level. On your site collection go to Site *Settings>Nintex Workflow> Manage Allowed Actions* and mark the checkboxes for the three Custom Actions in the *ERPConnect Services* category. Save your entries with OK. Only then the Custom Actions will be available in the Nintex Workflow designer.
 
 If a workflow can't be published after sucessfull installation and activation of the Custom Actions this could have the following reason:
 
