@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-creating-a-new-model-01
 layout: page
 title: New Entity
 description: New Entity

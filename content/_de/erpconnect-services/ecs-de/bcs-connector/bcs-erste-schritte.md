@@ -1,4 +1,5 @@
 ---
+ref: ecs-bcs-connector-01
 layout: page
 title: Erste Schritte mit dem BCS Connector Designer
 description: Erste Schritte mit dem BCS Connector Designer

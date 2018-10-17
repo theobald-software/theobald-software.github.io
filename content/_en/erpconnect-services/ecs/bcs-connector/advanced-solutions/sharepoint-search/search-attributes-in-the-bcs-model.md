@@ -1,4 +1,5 @@
 ---
+ref: ecs-sharepoint-search-04
 layout: page
 title: Search Attributes in the BCS Model
 description: Search Attributes in the BCS Model

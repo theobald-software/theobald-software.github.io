@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-administration-01
 layout: page
 title: Management Site
 description: Management Site

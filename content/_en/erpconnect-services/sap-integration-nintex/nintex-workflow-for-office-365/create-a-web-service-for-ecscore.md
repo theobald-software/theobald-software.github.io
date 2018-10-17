@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-workflow-for-office-365-01
 layout: page
 title: Create a web service for ECS Core
 description: Create a web service for ECS Core

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-read-sap-table-action-02
 layout: page
 title: Read SAP Table Action mit Advanced Options
 description: Read SAP Table Action mit Advanced Options

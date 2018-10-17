@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-creating-purchase-requisitions-02
 layout: page
 title: Create a Nintex workflow
 description: Create a Nintex workflow

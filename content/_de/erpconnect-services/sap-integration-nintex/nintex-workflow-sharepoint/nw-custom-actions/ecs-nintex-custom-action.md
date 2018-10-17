@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-nintex-workflow-custom-actions-04
 layout: page
 title: Query XQL Action
 description: Query XQL Action

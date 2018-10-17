@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-query-xql-action-01
 layout: page
 title: Query XQL Action in einem Workflow
 description: Query XQL Action in einem Workflow

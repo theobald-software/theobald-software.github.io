@@ -1,4 +1,5 @@
 ---
+ref: ecs-sharepoint-configuration-03
 layout: page
 title: Secure Store Target Application
 description: Secure Store Target Application

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-business-connectivity-04
 layout: page
 title: Create a Nintex Workflow
 description: Create a Nintex Workflow

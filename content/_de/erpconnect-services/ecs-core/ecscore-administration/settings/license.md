@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-administration-settings-01
 layout: page
 title: License
 description: License

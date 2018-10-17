@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-with-the-bcs-connector-01
 layout: page
 title: Connection Settings
 description: Connection Settings

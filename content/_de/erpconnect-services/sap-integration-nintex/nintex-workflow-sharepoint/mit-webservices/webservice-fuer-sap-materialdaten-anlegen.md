@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-using-web-services-01
 layout: page
 title: Webservice für SAP-Materialdaten anlegen
 description: Webservice für SAP-Materialdaten anlegen

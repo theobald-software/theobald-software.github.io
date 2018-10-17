@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-developing-01
 layout: page
 title: Erste Schritte mit ECS Core und SharePoint Online
 description: Erste Schritte mit ECS Core und SharePoint Online

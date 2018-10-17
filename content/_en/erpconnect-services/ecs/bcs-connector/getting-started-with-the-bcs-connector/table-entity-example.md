@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-with-the-bcs-connector-03
 layout: page
 title: Table Entity Example
 description: Table Entity Example

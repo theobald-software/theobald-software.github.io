@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-connection-setting-01
 layout: page
 title: SharePoint Connection
 description: SharePoint Connection

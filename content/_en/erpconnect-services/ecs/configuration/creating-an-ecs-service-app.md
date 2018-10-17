@@ -1,4 +1,5 @@
 ---
+ref: ecs-configuration-02
 layout: page
 title: Creating an ECS Service Application
 description: Creating an ECS Service Application

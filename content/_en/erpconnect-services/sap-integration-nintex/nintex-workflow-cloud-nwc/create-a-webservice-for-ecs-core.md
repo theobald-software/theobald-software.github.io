@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-workflow-cloud-nwc-01
 layout: page
 title: Create a web service for ECS Core
 description: Create a web service for ECS Core

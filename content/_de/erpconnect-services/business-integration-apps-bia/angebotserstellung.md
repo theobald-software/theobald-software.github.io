@@ -1,4 +1,5 @@
 ---
+ref: ecs-business-integration-apps-03
 layout: page
 title: Angebotserstellung
 description: Angebotserstellung

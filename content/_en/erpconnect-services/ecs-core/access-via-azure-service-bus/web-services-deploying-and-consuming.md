@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-access-via-azure-service-bus-02
 layout: page
 title: Deploying and consuming web services
 description: Deploying and consuming web services

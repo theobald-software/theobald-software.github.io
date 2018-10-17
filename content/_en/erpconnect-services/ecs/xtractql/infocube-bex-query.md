@@ -1,4 +1,5 @@
 ---
+ref: ecs-xtractql-04
 layout: page
 title: InfoCube / BEx Query
 description: InfoCube / BEx Query

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-business-connectivity-02
 layout: page
 title: Create the external list in SharePoint
 description: Create the external list in SharePoint

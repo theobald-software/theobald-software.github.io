@@ -1,4 +1,5 @@
 ---
+ref: ecs-extending-a-solution-in-visual-studio-02
 layout: page
 title: Creating the Purchase Order Model
 description: Creating the Purchase Order Model

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-creating-purchase-requisitions-01
 layout: page
 title: Create a SharePoint list
 description: Create a SharePoint list

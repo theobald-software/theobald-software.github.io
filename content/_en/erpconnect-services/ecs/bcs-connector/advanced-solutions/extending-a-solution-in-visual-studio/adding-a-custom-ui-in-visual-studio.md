@@ -1,4 +1,5 @@
 ---
+ref: ecs-extending-a-solution-in-visual-studio-04
 layout: page
 title: Adding a Custom UI in Visual Studio
 description: Adding a Custom UI in Visual Studio

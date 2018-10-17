@@ -1,11 +1,12 @@
 ---
+ref: ecs-sin-nis-business-connectivity-06
 layout: page
 title: Manager Approval
 description: Manager Approval
 product: erpconnect-services
 parent: using-business-connectivity-services-bcs-and-external-lists
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=manager-approval
 ---

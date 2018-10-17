@@ -1,4 +1,5 @@
 ---
+ref: ecs-sharepoint-search-01
 layout: page
 title: BCS Connector Model for Search in SAP
 description: BCS Connector Model for Search in SAP

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-integration-sharepoint-04
 layout: page
 title: Mit Query XQL-Action
 description: Mit Query XQL-Action

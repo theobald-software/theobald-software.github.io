@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-webservice-designer-05
 layout: page
 title: Create OpenApi definitions
 description: Create OpenApi definitions

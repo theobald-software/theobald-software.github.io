@@ -1,4 +1,5 @@
 ---
+ref: ecs-sharepoint-configuration-01
 layout: page
 title: BCS Berechtigungen einstellen
 description: BCS Berechtigungen einstellen

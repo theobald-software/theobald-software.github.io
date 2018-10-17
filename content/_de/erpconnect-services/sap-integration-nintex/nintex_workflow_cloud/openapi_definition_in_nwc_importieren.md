@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-workflow-cloud-nwc-03
 layout: page
 title: OpenAPI Definition in NWC importieren
 description: OpenAPI Definition in NWC importieren

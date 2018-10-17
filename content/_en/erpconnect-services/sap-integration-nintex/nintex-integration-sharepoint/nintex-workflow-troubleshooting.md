@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-integration-sharepoint-06
 layout: page
 title: Nintex Workflow Troubleshooting (only for SharePoint On-Prem)
 description: Nintex Workflow Troubleshooting (only for SharePoint On-Prem)

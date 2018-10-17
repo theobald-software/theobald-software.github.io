@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-integration365-microsoft-flow-04
 layout: page
 title: Configure the Flow
 description: Configure the Flow

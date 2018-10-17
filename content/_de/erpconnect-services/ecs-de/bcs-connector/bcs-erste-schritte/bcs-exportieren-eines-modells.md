@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-with-the-bcs-connector-07
 layout: page
 title: Exportieren eines Modells
 description: Exportieren eines Modells

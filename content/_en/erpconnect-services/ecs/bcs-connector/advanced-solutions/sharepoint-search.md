@@ -1,4 +1,5 @@
 ---
+ref: ecs-advanced-solutions-03
 layout: page
 title: SharePoint Search
 description: SharePoint Search

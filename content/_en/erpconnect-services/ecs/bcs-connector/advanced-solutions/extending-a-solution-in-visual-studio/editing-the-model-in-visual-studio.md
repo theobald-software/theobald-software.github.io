@@ -1,4 +1,5 @@
 ---
+ref: ecs-extending-a-solution-in-visual-studio-03
 layout: page
 title: Editing the Model in Visual Studio
 description: Editing the Model in Visual Studio

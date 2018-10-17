@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-business-connectivity-02
 layout: page
 title: Externe Liste in SharePoint anlegen
 description: Externe Liste in SharePoint anlegen

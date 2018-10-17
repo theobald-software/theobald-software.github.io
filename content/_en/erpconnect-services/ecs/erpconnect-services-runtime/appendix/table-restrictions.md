@@ -1,11 +1,12 @@
 ---
+ref: ecs-runtime-appendix-02
 layout: page
 title: Table restrictions
 description: Table restrictions
 product: erpconnect-services
 parent: appendix
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-data-type-conversion
 ---

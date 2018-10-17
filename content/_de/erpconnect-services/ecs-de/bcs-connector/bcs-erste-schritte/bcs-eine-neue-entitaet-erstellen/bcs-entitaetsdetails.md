@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-creating-a-new-model-02
 layout: page
 title: Entitätsdetails
 description: Entitätsdetails

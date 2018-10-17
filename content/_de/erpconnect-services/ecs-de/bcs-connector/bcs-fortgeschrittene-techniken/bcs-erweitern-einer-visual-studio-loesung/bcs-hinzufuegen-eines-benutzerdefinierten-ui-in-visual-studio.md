@@ -1,4 +1,5 @@
 ---
+ref: ecs-extending-a-solution-in-visual-studio-04
 layout: page
 title: Hinzufügen eines benutzerdefinierten UI in Visual Studio
 description: Hinzufügen eines benutzerdefinierten UI in Visual Studio

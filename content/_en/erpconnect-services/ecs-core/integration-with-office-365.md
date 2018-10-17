@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-05
 layout: page
 title: Integration with Office 365
 description: Integration with Office 365

@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-odata-web-services-02
 layout: page
 title: Parameter-Mapping mit OData
 description: Parameter-Mapping mit OData

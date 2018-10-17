@@ -1,4 +1,5 @@
 ---
+ref: ecs-sap-customizing-03
 layout: page
 title: Funktionsbaustein für Table-Join
 description: Funktionsbaustein für Table-Join

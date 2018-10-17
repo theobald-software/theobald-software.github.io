@@ -1,4 +1,5 @@
 ---
+ref: ecs-extending-a-solution-in-visual-studio-02
 layout: page
 title: Erstellen des Modells für die Bestellfreigabe
 description: Erstellen des Modells für die Bestellfreigabe

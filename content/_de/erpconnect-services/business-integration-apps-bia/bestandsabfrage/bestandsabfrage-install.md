@@ -1,4 +1,5 @@
 ---
+ref: ecs-stock-info-01
 layout: page
 title: Installation
 description: Installation

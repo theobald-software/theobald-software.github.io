@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-06
 layout: page
 title: Access via Azure Service Bus
 description: Access via Azure Service Bus

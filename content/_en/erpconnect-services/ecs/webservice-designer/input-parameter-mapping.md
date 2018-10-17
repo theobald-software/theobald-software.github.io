@@ -1,4 +1,5 @@
 ---
+ref: ecs-webservice-designer-04
 layout: page
 title: Input parameter mapping
 description: Input parameter mapping

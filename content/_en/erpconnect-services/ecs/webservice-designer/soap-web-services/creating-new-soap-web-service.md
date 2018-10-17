@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-soap-web-services-01
 layout: page
 title: Creating a new SOAP web service
 description: Creating a new SOAP web service

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sharepoint-search-02
 layout: page
 title: Entität zur Suche in SAP
 description: Entität zur Suche in SAP

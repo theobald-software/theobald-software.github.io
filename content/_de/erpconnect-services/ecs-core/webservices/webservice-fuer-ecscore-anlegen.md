@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-webservice-designer-01
 layout: page
 title: Einen neuen Webservice für ECS Core anlegen
 description: Einen neuen Webservice für ECS Core anlegen

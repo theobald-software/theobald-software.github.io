@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-creating-purchase-requisitions-04
 layout: page
 title: Enhance the workflow
 description: Enhance the workflow

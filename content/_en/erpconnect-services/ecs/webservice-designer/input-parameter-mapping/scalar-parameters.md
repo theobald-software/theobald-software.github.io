@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-input-parameter-mapping-01
 layout: page
 title: Scalar parameters
 description: Scalar parameters

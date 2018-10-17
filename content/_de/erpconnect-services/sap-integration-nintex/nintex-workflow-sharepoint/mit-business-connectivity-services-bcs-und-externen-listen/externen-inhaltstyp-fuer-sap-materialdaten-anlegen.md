@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-business-connectivity-01
 layout: page
 title: Externen Inhaltstyp für SAP-Materialdaten anlegen
 description: Externen Inhaltstyp für SAP-Materialdaten anlegen

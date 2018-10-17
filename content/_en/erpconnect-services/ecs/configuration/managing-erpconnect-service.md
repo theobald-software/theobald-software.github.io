@@ -1,11 +1,12 @@
 ---
+ref: ecs-configuration-04
 layout: page
 title: Managing ERPConnect Services
 description: Creating a Secure Store Application
 product: erpconnect-services
 parent: configuration
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-creating-secure-store-application
 ---

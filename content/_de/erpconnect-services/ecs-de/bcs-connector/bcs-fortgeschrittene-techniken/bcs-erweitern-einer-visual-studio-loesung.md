@@ -1,4 +1,5 @@
 ---
+ref: ecs-advanced-solutions-02
 layout: page
 title: Erweitern einer Visual Studio Solution
 description: Erweitern einer Visual Studio Solution

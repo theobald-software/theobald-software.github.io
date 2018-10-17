@@ -1,4 +1,5 @@
 ---
+ref: ecs-runtime-rest-without-tecs-04
 layout: page
 title: How to use ConnectionScope
 description: How to use ConnectionScope

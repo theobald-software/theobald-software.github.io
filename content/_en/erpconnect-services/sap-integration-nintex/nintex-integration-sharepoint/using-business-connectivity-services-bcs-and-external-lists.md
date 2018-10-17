@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-integration-sharepoint-02
 layout: page
 title: Using Business Connectivity Services (BCS) and External Lists
 description: Using Business Connectivity Services (BCS) and External Lists

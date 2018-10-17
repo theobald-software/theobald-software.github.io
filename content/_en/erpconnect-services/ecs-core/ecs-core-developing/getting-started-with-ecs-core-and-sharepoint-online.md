@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-developing-01
 layout: page
 title: Getting started with ECS Core and SharePoint Online
 description: Getting started with ECS Core and SharePoint Online

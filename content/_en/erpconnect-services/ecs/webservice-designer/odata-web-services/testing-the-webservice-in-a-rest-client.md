@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-odata-web-services-03
 layout: page
 title: Testing the webservice in a REST client
 description: Testing the webservice in a REST client

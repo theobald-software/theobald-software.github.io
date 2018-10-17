@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-with-the-bcs-connector-06
 layout: page
 title: Creating an External List
 description: Creating an External List

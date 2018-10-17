@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-integration365-microsoft-flow-03
 layout: page
 title: OpenAPI Definition in Flow importieren
 description: OpenAPI Definition in Flow importieren
