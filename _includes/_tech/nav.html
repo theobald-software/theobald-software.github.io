@@ -19,9 +19,14 @@
               {% for collection in site.collections %}
                 {% unless collection.label == "posts" %}
                   {% if collection.label contains current_lang %}
-                    <a href="{{site.url}}{{site.baseurl}}/{{collection.label}}"><span class="flag-icon flag-icon-{{collection.language_label}}"></span></a>
+                    <a href="{{site.url}}{{ page.url }}"><span class="flag-icon flag-icon-{{ collection.language_label }}"></span></a>
                   {% else %}
-                    <a href="{{site.url}}{{site.baseurl}}/{{collection.label}}"><span class="flag-icon flag-icon-{{collection.language_label}}"></span></a>
+                    {% assign equivalent_doc = collection.docs | where_exp:"doc", "doc.ref == page.ref" %}
+                    {% if equivalent_doc[0] %}
+                      <a href="{{site.url}}{{ equivalent_doc[0].url }}"><span class="flag-icon flag-icon-{{ collection.language_label }}"></span></a>
+                    {% else %}
+                      <a href="{{site.url}}/{{ collection.label }}"><span class="flag-icon flag-icon-{{ collection.language_label }}"></span></a>
+                    {% endif %}
                   {% endif %}
                 {% endunless %}
               {% endfor %}
