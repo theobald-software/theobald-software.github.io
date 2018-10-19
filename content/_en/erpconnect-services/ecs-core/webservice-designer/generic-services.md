@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-webservice-designer-06
 layout: page
 title: Generic services
 description: Generic services

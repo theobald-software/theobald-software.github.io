@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-access-via-azure-service-bus-02
 layout: page
 title: Webservices deployen und konsumieren
 description: Webservices deployen und konsumieren

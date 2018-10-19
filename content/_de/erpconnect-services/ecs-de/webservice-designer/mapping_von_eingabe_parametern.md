@@ -1,4 +1,5 @@
 ---
+ref: ecs-webservice-designer-04
 layout: page
 title: Mapping von Eingabe-Parametern
 description: Mapping von Eingabe-Parametern

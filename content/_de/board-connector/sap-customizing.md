@@ -1,4 +1,5 @@
 ---
+ref: board-connector-02
 layout: page
 title: SAP Customizing
 description: SAP Customizing

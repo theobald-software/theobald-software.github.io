@@ -1,11 +1,12 @@
 ---
+ref: ecs-sin-nis-business-connectivity-07
 layout: page
 title: Validation
 description: Validation
 product: erpconnect-services
 parent: using-business-connectivity-services-bcs-and-external-lists
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=validation
 ---

@@ -1,4 +1,5 @@
 ---
+ref: xu-getting-started-table-04
 layout: page
 title: Schritt II- Eine Extraktion ausführen
 description: Schritt II- Eine Extraktion ausführen

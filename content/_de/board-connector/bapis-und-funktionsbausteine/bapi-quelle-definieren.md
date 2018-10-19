@@ -1,4 +1,5 @@
 ---
+ref: bc-bapis-and-function-modules-01
 layout: page
 title: Eine BAPI-Quelle definieren
 description: Eine BAPI-Quelle definieren

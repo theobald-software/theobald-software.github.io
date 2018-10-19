@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-workflow-cloud-nwc-04
 layout: page
 title: Create a new connection
 description: Create a new connection

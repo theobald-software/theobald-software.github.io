@@ -1,4 +1,5 @@
 ---
+ref: xi-bw-loader-packages-01
 layout: page
 title: Preparing the SSIS side
 description: Preparing the SSIS side

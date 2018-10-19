@@ -1,4 +1,5 @@
 ---
+ref: ec-calling-bapis-and-function-modules-05
 layout: page
 title: Improve your Performance by Using Templates
 description: Improve your Performance by Using Templates

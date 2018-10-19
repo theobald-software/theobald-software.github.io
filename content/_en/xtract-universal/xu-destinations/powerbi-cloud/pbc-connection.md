@@ -1,4 +1,5 @@
 ---
+ref: xu-powerbi-cloud-02
 layout: page
 title: Connection
 description: Connection

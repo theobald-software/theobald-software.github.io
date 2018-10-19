@@ -1,4 +1,5 @@
 ---
+ref: xi-bw-loader-06
 layout: page
 title: External Notification
 description: External Notification

@@ -1,4 +1,5 @@
 ---
+ref: bc-logging-03
 layout: page
 title: Extraction Logging
 description: Extraction Logging

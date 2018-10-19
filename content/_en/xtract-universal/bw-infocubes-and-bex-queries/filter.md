@@ -1,4 +1,5 @@
 ---
+ref: xu-bw-infocubes-bex-queries-02
 layout: page
 title: Filter
 description: Filter

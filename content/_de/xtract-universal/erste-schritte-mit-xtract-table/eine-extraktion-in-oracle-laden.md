@@ -1,4 +1,5 @@
 ---
+ref: xu-getting-started-table-05
 layout: page
 title: Schritt III- Eine Extraktion in Oracle laden
 description: Schritt III- Eine Extraktion in Oracle laden

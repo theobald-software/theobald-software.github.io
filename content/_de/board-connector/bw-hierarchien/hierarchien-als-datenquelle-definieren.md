@@ -1,4 +1,5 @@
 ---
+ref: bc-bw-hierarchies-01
 layout: page
 title: Hierarchien als Datenquelle definieren
 description: Hierarchien als Datenquelle definieren

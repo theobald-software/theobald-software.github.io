@@ -1,4 +1,5 @@
 ---
+ref: bc-advanced-techniques-06
 layout: page
 title: Zusätzliche Funktionen im Designer
 description: Zusätzliche Funktionen im Designer

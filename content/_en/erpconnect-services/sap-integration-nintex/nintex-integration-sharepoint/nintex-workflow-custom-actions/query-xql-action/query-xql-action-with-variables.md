@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-query-xql-action-02
 layout: page
 title: Query XQL action with variables
 description: Query XQL action with variables

@@ -1,4 +1,5 @@
 ---
+ref: xi-report-01
 layout: page
 title: Setup of the Custom Function Module
 description: Setup of the Custom Function Module

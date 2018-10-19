@@ -1,4 +1,5 @@
 ---
+ref: board-connector-03
 layout: page
 title: Getting Started- Table
 description: Getting Started- Table

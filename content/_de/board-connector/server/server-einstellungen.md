@@ -1,4 +1,5 @@
 ---
+ref: bc-server-03
 layout: page
 title: Server-Einstellungen
 description: Server-Einstellungen

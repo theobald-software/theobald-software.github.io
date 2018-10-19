@@ -1,4 +1,5 @@
 ---
+ref: bc-advanced-techniques-06
 layout: page
 title: Additional Functions in Designer
 description: Additional Functions in Designer

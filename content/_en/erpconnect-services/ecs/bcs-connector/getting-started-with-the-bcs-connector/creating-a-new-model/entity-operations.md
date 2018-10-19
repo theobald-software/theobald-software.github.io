@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-creating-a-new-model-05
 layout: page
 title: Entity Operations
 description: Entity Operations

@@ -1,4 +1,5 @@
 ---
+ref: xu-destinations-09
 layout: page
 title: Alteryx Connect
 description: Alteryx Connect

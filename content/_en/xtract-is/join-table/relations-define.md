@@ -1,4 +1,5 @@
 ---
+ref: xi-join-table-02
 layout: page
 title: Define Relations
 description: Define Relations

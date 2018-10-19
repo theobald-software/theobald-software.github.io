@@ -1,4 +1,5 @@
 ---
+ref: bc-getting-started-table-02
 layout: page
 title: Schritt I- Eine neue Extraktion anlegen
 description: Schritt I- Eine neue Extraktion anlegen

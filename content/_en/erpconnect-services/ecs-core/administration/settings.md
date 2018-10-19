@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-administration-04
 layout: page
 title: Settings
 description: Settings

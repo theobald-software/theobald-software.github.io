@@ -1,4 +1,5 @@
 ---
+ref: ecs-sharepoint-search-03
 layout: page
 title: Operationen zur Suche in SAP
 description: Operationen zur Suche in SAP

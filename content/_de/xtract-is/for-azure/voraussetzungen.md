@@ -1,4 +1,5 @@
 ---
+ref: xi-for-azure-01
 layout: page
 title: Voraussetzungen
 description: Voraussetzungen

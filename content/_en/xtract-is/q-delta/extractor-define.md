@@ -1,4 +1,5 @@
 ---
+ref: xi-q-delta-03
 layout: page
 title: Define and extractor
 description: Define and extractor

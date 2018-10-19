@@ -1,4 +1,5 @@
 ---
+ref: xu-destinations-01
 layout: page
 title: Managing Destinations
 description: Managing Destinations

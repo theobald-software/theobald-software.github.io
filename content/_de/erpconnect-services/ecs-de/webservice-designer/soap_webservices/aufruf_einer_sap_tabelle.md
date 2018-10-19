@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-soap-web-services-02
 layout: page
 title: Aufruf einer SAP-Tabelle
 description: Aufruf einer SAP-Tabelle

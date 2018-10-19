@@ -1,4 +1,5 @@
 ---
+ref: xr-sap-tables-04
 layout: page
 title: Erweiterte Eigenschaften
 description: Erweiterte Eigenschaften

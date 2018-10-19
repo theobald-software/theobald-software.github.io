@@ -1,4 +1,5 @@
 ---
+ref: xu-advanced-techniques-08
 layout: page
 title: Metadaten-Zugriff über HTTP
 description: Metadaten-Zugriff über HTTP

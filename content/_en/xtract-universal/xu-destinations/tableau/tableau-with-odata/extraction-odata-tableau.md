@@ -1,4 +1,5 @@
 ---
+ref: xu-tableau-with-odata-01
 layout: page
 title: Load an Extraction with OData
 description: Load an Extraction with OData

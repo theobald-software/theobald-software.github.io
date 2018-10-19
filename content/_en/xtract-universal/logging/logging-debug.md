@@ -1,4 +1,5 @@
 ---
+ref: xu-logging-01
 layout: page
 title: Debug Logging
 description: Debug Logging

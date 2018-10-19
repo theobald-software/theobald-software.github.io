@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-odata-web-services-01
 layout: page
 title: Creating a new OData web service
 description: Creating a new OData web service

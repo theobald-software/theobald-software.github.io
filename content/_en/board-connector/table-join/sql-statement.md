@@ -1,4 +1,5 @@
 ---
+ref: bc-table-join-06
 layout: page
 title: SQL Statement
 description: SQL Statement

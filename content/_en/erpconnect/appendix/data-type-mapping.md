@@ -1,4 +1,5 @@
 ---
+ref: ec-appendix-01
 layout: page
 title: Data Type Mapping
 description: Data Type Mapping

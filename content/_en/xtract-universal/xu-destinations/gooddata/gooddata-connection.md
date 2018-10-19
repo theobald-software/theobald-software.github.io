@@ -1,4 +1,5 @@
 ---
+ref: xu-gooddata-02
 layout: page
 title: Connection
 description: Connection

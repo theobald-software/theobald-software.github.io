@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-business-connectivity-07
 layout: page
 title: Validierung
 description: Validierung

@@ -1,4 +1,5 @@
 ---
+ref: xu-datasource-deltaq-06
 layout: page
 title: Update Mode
 description: Update Mode

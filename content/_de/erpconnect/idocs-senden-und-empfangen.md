@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-05
 layout: page
 title: IDocs senden und empfangen
 description: IDocs senden und empfangen
@@ -6,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: idocs-senden-und-empfangen
 permalink: /:collection/:path
-weight: 6
+weight: 5
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=idocs-senden-und-empfangen
 ---

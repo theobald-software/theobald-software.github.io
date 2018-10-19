@@ -1,4 +1,5 @@
 ---
+ref: ecs-business-integration-apps-02
 layout: page
 title: Kundenstammblatt
 description: Kundenstammblatt

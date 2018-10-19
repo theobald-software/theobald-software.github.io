@@ -1,4 +1,5 @@
 ---
+ref: xi-open-hub-service-ohs-03
 layout: page
 title: Technische Einstellungen und Preview
 description: Technische Einstellungen und Preview

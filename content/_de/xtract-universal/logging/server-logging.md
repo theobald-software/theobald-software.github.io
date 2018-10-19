@@ -1,4 +1,5 @@
 ---
+ref: xu-logging-02
 layout: page
 title: Server-Logging
 description: Server-Logging

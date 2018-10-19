@@ -1,4 +1,5 @@
 ---
+ref: xu-hp-vertica-01
 layout: page
 title: Voraussetzungen
 description: Voraussetzungen

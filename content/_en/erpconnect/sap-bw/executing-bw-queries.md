@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-bw-01
 layout: page
 title: Executing BW queries
 description: Executing BW queries

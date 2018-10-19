@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-odata-web-services-04
 layout: page
 title: Arbeiten mit Operationen
 description: Arbeiten mit Operationen

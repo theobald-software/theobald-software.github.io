@@ -1,4 +1,5 @@
 ---
+ref: ecs-solutions-01
 layout: page
 title: Vorlage SAP Bank
 description: Vorlage SAP Bank

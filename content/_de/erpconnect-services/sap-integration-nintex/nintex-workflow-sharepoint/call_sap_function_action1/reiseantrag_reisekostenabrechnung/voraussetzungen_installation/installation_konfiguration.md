@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-tr-installing-the-solution-01
 layout: page
 title: Erstellen der SharePoint Listen
 description: Erstellen der SharePoint Listen

@@ -1,4 +1,5 @@
 ---
+ref: xu-bw-hierarchies-01
 layout: page
 title: Define a Hierarchy Extraction
 description: Define a Hierarchy Extraction

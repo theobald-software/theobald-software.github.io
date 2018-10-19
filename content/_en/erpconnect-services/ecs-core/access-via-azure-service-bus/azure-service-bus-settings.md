@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-access-via-azure-service-bus-01
 layout: page
 title: Azure Service Bus settings
 description: Azure Service Bus settings

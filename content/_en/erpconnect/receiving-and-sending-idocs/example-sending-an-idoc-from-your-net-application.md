@@ -1,4 +1,5 @@
 ---
+ref: ec-receiving-and-sending-idocs-01
 layout: page
 title: Example- Sending an IDoc from your .Net Application
 description: Example- Sending an IDoc from your .Net Application

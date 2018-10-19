@@ -1,4 +1,5 @@
 ---
+ref: xi-bw-loader-03
 layout: page
 title: Connect Source and Destination Columns
 description: Connect Source and Destination Columns

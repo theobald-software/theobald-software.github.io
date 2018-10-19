@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-sws-creating-new-soap-web-service-01
 layout: page
 title: New Operation
 description: New Operation

@@ -1,4 +1,5 @@
 ---
+ref: xu-bapis-function-06
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

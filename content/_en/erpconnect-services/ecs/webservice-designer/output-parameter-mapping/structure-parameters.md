@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-output-parameter-mapping-02
 layout: page
 title: Structure parameters
 description: Structure parameters

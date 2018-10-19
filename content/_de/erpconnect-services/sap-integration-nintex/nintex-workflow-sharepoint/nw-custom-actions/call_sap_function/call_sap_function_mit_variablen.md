@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-call-sap-function-action-02
 layout: page
 title: Call SAP Function Action mit Variablen
 description: Call SAP Function Action mit Variablen

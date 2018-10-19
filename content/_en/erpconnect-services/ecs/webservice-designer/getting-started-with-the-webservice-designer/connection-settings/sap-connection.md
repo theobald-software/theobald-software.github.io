@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-gs-connection-settings-01
 layout: page
 title: SAP Connection
 description: SAP Connection

@@ -1,4 +1,5 @@
 ---
+ref: bc-bapis-and-function-modules-04
 layout: page
 title: Tabellen
 description: Tabellen
@@ -7,7 +8,7 @@ parent: bapis-und-funktionsbausteine
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=tabellen
+old_url: /BOARD-Connector-DE/	default.aspx?pageid=tabellen
 ---
 
 Tabellen können sowohl in den Baustein hinein, als auch aus ihm heraus 'fließen'. Im unteren Bereich des Editors können Sie für jede Tabelle des BAPI einen Input- und Output-Type definieren.

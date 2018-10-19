@@ -1,4 +1,5 @@
 ---
+ref: xr-report-04
 layout: page
 title: Spalten definieren
 description: Spalten definieren

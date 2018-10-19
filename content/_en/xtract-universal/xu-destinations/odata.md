@@ -1,4 +1,5 @@
 ---
+ref: xu-destinations-24
 layout: page
 title: OData
 description: OData

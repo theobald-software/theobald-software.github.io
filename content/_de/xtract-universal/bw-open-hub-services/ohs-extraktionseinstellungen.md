@@ -1,4 +1,5 @@
 ---
+ref: xu-bw-open-hub-services-04
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

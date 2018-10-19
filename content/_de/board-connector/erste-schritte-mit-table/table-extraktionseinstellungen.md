@@ -1,4 +1,5 @@
 ---
+ref: bc-getting-started-table-05
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

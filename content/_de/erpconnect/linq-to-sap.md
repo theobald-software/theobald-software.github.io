@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-09
 layout: page
 title: LINQ To SAP
 description: LINQ To SAP
@@ -6,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: linq-to-sap
 permalink: /:collection/:path
-weight: 10
+weight: 9
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap
 ---

@@ -1,4 +1,5 @@
 ---
+ref: xu-getting-started-table-03
 layout: page
 title: Step I- Define a Table Extraction
 description: Step I- Define a Table Extraction

@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-05
 layout: page
 title: Receiving and Sending IDocs
 description: Receiving and Sending IDocs

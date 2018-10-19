@@ -1,4 +1,5 @@
 ---
+ref: xu-amzon-redshift-05
 layout: page
 title: Merging Data
 description: Merging Data

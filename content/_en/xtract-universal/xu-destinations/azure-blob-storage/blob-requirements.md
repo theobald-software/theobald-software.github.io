@@ -1,4 +1,5 @@
 ---
+ref: xu-azure-blob-storage-01
 layout: page
 title: Requirements
 description: Requirements

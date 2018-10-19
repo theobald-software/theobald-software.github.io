@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-with-the-bcs-connector-02
 layout: page
 title: Eine neue Entität erstellen
 description: Eine neue Entität erstellen

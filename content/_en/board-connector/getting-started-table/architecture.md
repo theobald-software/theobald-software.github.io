@@ -1,4 +1,5 @@
 ---
+ref: bc-getting-started-table-01
 layout: page
 title: Architecture
 description: Architecture

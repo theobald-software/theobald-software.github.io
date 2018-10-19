@@ -1,4 +1,5 @@
 ---
+ref: bc-getting-started-table-07
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions

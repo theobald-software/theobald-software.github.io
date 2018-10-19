@@ -1,4 +1,5 @@
 ---
+ref: xi-q-delta-10
 layout: page
 title: Verschiedenes
 description: Verschiedenes

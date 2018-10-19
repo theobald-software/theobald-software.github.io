@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-output-parameter-mapping-01
 layout: page
 title: Skalare-Parameter
 description: Skalare-Parameter

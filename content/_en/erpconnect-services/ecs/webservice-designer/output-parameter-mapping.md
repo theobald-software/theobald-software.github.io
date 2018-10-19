@@ -1,4 +1,5 @@
 ---
+ref: ecs-webservice-designer-05
 layout: page
 title: Output parameter mapping
 description: Output parameter mapping

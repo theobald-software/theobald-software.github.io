@@ -1,4 +1,5 @@
 ---
+ref: ec-linq-to-sap-03
 layout: page
 title: Table Access Restrictions
 description: Table Access Restrictions

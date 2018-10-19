@@ -1,4 +1,5 @@
 ---
+ref: xu-bapis-function-03
 layout: page
 title: Strukturen als Import-Parameter
 description: Strukturen als Import-Parameter

@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-odata-web-services-03
 layout: page
 title: Testen des OData Webservices in einem REST-Client
 description: Testen des OData Webservices in einem REST-Client

@@ -1,4 +1,5 @@
 ---
+ref: bc-datasource-deltaq-06
 layout: page
 title: Datasource parameters
 description: Datasource parameters

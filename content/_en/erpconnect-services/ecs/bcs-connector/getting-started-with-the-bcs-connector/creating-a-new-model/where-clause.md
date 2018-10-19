@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-creating-a-new-model-07
 layout: page
 title: Where Clause
 description: Where Clause

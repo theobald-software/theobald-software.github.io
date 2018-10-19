@@ -1,4 +1,5 @@
 ---
+ref: ecs-bcs-connector-02
 layout: page
 title: SharePoint konfigurieren
 description: SharePoint konfigurieren

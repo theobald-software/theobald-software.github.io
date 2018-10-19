@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-07
 layout: page
 title: RFC-Server
 description: RFC-Server
@@ -6,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: rfc-server
 permalink: /:collection/:path
-weight: 8
+weight: 7
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-server
 ---

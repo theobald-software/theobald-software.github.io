@@ -1,4 +1,5 @@
 ---
+ref: ecs-webservice-designer-05
 layout: page
 title: Mapping von Ausgabe-Parametern
 description: Mapping von Ausgabe-Parametern

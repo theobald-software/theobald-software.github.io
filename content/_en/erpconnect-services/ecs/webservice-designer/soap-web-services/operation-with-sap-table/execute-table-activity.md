@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-sws-operation-with-sap-table-01
 layout: page
 title: Operation with SAP table
 description: Operation with SAP table

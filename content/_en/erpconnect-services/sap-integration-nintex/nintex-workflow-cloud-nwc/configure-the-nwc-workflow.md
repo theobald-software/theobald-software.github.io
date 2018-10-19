@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-workflow-cloud-nwc-05
 layout: page
 title: Configure the NWC workflow
 description: Configure the NWC workflow

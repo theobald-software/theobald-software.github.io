@@ -1,4 +1,5 @@
 ---
+ref: ecs-sharepoint-configuration-02
 layout: page
 title: Configuring Single Sign-On
 description: Configuring Single Sign-On

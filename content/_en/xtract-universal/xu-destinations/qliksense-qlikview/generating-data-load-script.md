@@ -1,4 +1,5 @@
 ---
+ref: xu-qliksense-qlikview-05
 layout: page
 title: Generating data load script
 description: Generating data load script

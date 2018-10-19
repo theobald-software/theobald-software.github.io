@@ -1,4 +1,5 @@
 ---
+ref: xu-tableau-04
 layout: page
 title: Teil 2 - Verlinken einer BEx-Query mit einer BW-Hierarchie
 description: Teil 2 - Verlinken einer BEx-Query mit einer BW-Hierarchie

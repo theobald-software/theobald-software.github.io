@@ -1,4 +1,5 @@
 ---
+ref: xr-requirements-and-installation-06
 layout: page
 title: Troubleshooting
 description: Troubleshooting

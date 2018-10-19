@@ -1,4 +1,5 @@
 ---
+ref: xr-report-01
 layout: page
 title: Setup of the Report Function Module
 description: Setup of the Report Function Module

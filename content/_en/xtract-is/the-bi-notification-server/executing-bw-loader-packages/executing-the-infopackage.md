@@ -1,4 +1,5 @@
 ---
+ref: xi-bw-loader-packages-03
 layout: page
 title: Executing the InfoPackage
 description: Executing the InfoPackage

@@ -1,4 +1,5 @@
 ---
+ref: xu-bw-infocubes-bex-queries-03
 layout: page
 title: Variablen
 description: Variablen

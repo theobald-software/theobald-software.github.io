@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-connection-02
 layout: page
 title: SSO with Log On Tickets
 description: SSO with Log On Tickets

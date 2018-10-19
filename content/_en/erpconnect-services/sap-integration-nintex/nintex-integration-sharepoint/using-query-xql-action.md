@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-integration-sharepoint-04
 layout: page
 title: Using the Query XQL Action
 description: Using the Query XQL Action

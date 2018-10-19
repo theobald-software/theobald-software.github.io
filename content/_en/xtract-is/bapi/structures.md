@@ -1,4 +1,5 @@
 ---
+ref: xi-bapi-03
 layout: page
 title: Structures
 description: Structures

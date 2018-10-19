@@ -1,4 +1,5 @@
 ---
+ref: xi-preparation-in-bw-02
 layout: page
 title: InfoSpokes and Process Chains BI 7.0
 description: InfoSpokes and Process Chains BI 7.0

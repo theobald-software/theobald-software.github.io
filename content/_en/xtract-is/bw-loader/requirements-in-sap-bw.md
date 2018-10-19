@@ -1,4 +1,5 @@
 ---
+ref: xi-bw-loader-01
 layout: page
 title: Requirements in SAP BW
 description: Requirements in SAP BW

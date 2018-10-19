@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-sws-operation-with-sap-table-01
 layout: page
 title: Übergeben einer Tabelle
 description: Übergeben einer Tabelle

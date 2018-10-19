@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-02
 layout: page
 title: SAP-Verbindung
 description: SAP-Verbindung
@@ -6,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: sap-verbindung
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sap-verbindung
 ---

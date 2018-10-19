@@ -1,4 +1,5 @@
 ---
+ref: xu-qliksense-qlikview-04
 layout: page
 title: Settings in Qlik Sense
 description: Settings in Qlik Sense

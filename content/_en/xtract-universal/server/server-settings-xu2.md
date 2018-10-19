@@ -1,4 +1,5 @@
 ---
+ref: xu-server-03
 layout: page
 title: Server Settings in XU 2.x
 description: Server Settings in XU 2.x

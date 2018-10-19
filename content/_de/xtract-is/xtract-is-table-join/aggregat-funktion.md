@@ -1,4 +1,5 @@
 ---
+ref: xi-join-table-05
 layout: page
 title: Aggregat-Funktion
 description: Aggregat-Funktion

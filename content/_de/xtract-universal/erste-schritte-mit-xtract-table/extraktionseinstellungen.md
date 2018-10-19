@@ -1,4 +1,5 @@
 ---
+ref: xu-getting-started-table-06
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-using-call-sap-function-01
 layout: page
 title: Creating purchase requisitions
 description: Creating purchase requisitions

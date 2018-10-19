@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-administration-06
 layout: page
 title: Secure Stores
 description: Secure Stores

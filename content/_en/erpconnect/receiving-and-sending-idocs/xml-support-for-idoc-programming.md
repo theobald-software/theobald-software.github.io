@@ -1,4 +1,5 @@
 ---
+ref: ec-receiving-and-sending-idocs-04
 layout: page
 title: XML-Support for IDoc programming
 description: XML-Support for IDoc programming

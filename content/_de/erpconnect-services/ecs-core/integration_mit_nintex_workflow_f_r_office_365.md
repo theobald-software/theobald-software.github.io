@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-integration-with-office-365-02
 layout: page
 title: Integration mit Nintex Workflow für Office 365
 description: Integration mit Nintex Workflow für Office 365

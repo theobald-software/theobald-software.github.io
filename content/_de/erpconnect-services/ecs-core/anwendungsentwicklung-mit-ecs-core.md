@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-03
 layout: page
 title: Anwendungsentwicklung mit ECS Core
 description: Anwendungsentwicklung mit ECS Core

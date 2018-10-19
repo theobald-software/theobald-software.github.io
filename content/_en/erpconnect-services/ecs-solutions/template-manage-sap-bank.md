@@ -1,4 +1,5 @@
 ---
+ref: ecs-solutions-01
 layout: page
 title: Template- Manage SAP Bank
 description: Template- Manage SAP Bank

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-workflow-cloud-nwc-02
 layout: page
 title: OpenAPI Definitionen erstellen
 description: OpenAPI Definitionen erstellen

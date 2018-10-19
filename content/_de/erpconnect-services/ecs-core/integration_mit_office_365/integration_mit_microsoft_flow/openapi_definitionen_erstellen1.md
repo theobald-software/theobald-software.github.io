@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-integration365-microsoft-flow-02
 layout: page
 title: OpenAPI Definitionen erstellen
 description: OpenAPI Definitionen erstellen

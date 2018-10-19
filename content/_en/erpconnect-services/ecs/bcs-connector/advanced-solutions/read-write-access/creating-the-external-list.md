@@ -1,4 +1,5 @@
 ---
+ref: ecs-read-write-access-06
 layout: page
 title: Creating the External List
 description: Creating the External List

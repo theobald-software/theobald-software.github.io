@@ -1,4 +1,5 @@
 ---
+ref: xr-report-02
 layout: page
 title: Report definieren
 description: Report definieren

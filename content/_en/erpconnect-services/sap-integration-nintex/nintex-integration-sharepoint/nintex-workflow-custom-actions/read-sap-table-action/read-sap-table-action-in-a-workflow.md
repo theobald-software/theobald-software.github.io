@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-read-sap-table-action-01
 layout: page
 title: Read SAP Table Action in a workflow
 description: Read SAP Table Action in a workflow

@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-output-parameter-mapping-03
 layout: page
 title: Listenartige Parameter
 description: Listenartige Parameter

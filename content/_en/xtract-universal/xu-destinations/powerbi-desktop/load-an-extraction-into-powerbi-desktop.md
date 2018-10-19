@@ -1,4 +1,5 @@
 ---
+ref: xu-powerbi-desktop-01
 layout: page
 title: Load an Extraction into Power BI Desktop
 description: Load an Extraction into Power BI Desktop

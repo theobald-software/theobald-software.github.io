@@ -1,4 +1,5 @@
 ---
+ref: xr-report-04
 layout: page
 title: Define Report Columns
 description: Define Report Columns

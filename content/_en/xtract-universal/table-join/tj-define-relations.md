@@ -1,4 +1,5 @@
 ---
+ref: xu-table-join-02
 layout: page
 title: Define Relations
 description: Define Relations

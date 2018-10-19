@@ -1,4 +1,5 @@
 ---
+ref: xi-bi-notification-server-01
 layout: page
 title: Installation
 description: Installation

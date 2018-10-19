@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-connection-02
 layout: page
 title: SAP Connection with SSO and SNC
 description: SAP Connection with SSO and SNC

@@ -1,4 +1,5 @@
 ---
+ref: xi-preparation-in-bw-03
 layout: page
 title: OHS Destinations und Data Transfer Processes (BI 7.0)
 description: OHS Destinations und Data Transfer Processes (BI 7.0)

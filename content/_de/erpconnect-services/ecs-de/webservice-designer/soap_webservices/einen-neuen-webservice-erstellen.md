@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-soap-web-services-01
 layout: page
 title: Einen neuen Webservice erstellen
 description: Einen neuen Webservice erstellen

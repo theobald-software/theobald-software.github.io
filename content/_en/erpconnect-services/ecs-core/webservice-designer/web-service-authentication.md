@@ -1,4 +1,5 @@
 ---
+ref: ecs-core-webservice-designer-02
 layout: page
 title: Web service authentication
 description: Web service authentication

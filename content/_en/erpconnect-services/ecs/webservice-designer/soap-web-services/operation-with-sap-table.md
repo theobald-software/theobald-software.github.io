@@ -1,4 +1,5 @@
 ---
+ref: ecs-wd-soap-web-services-02
 layout: page
 title: Operation with SAP table
 description: Operation with SAP table

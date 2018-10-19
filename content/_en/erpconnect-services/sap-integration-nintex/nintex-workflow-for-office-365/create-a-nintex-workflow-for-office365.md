@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nintex-workflow-for-office-365-02
 layout: page
 title: Create a Nintex Workflow for Office 365
 description: Create a Nintex Workflow for Office 365

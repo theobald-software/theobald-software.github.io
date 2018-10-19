@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-business-connectivity-01
 layout: page
 title: Create the external content type for SAP material data
 description: Create the external content type for SAP material data

@@ -1,4 +1,5 @@
 ---
+ref: xu-tableau-02
 layout: page
 title: Tableau mit OData
 description: Tableau mit OData

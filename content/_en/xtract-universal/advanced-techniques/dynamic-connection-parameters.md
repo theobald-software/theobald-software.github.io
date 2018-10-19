@@ -1,4 +1,5 @@
 ---
+ref: xu-advanced-techniques-03
 layout: page
 title: Dynamic Connection Parameters
 description: Dynamic Connection Parameters

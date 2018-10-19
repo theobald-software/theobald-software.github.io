@@ -1,4 +1,5 @@
 ---
+ref: ec-receiving-and-sending-idocs-02
 layout: page
 title: Example- Receiving an IDoc
 description: Example- Receiving an IDoc

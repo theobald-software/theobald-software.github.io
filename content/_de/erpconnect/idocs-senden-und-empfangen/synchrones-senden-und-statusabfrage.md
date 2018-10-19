@@ -1,4 +1,5 @@
 ---
+ref: ec-receiving-and-sending-idocs-05
 layout: page
 title: Synchrones Senden und Statusabfrage
 description: Synchrones Senden und Statusabfrage

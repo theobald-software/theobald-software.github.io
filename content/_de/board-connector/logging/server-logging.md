@@ -1,4 +1,5 @@
 ---
+ref: bc-logging-02
 layout: page
 title: Server-Logging
 description: Server-Logging

@@ -1,4 +1,5 @@
 ---
+ref: bc-abap-reports-04
 layout: page
 title: Defining Report Columns
 description: Defining Report Columns

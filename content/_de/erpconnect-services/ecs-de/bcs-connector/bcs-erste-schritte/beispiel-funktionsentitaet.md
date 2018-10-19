@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-with-the-bcs-connector-04
 layout: page
 title: Beispiel Funktionsentität
 description: Beispiel Funktionsentität

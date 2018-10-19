@@ -1,4 +1,5 @@
 ---
+ref: erpconnect-04
 layout: page
 title: SAP Queries
 description: SAP Queries
@@ -6,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: sap-queries
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sap-queries
 ---

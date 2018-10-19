@@ -1,4 +1,5 @@
 ---
+ref: xu-amzon-redshift-06
 layout: page
 title: AnySQL Maestro konfigurieren
 description: AnySQL Maestro konfigurieren

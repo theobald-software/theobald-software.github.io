@@ -1,4 +1,5 @@
 ---
+ref: ecs-business-integration-apps-01
 layout: page
 title: Stock Info
 description: Stock Info

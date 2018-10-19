@@ -1,4 +1,5 @@
 ---
+ref: xr-bapis-rfc-function-03
 layout: page
 title: Strukturen
 description: Strukturen

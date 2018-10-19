@@ -1,4 +1,5 @@
 ---
+ref: ecs-extending-a-solution-in-visual-studio-01
 layout: page
 title: Freigabe einer Bestellung in SAP
 description: Freigabe einer Bestellung in SAP

@@ -1,4 +1,5 @@
 ---
+ref: ecs-xtractql-05
 layout: page
 title: Variablen
 description: Variablen

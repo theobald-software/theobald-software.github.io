@@ -1,4 +1,5 @@
 ---
+ref: ec-linq-to-sap-03
 layout: page
 title: Einschränkungen beim Tabellenzugriff
 description: Einschränkungen beim Tabellenzugriff

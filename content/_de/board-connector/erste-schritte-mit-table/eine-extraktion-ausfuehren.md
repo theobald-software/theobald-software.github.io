@@ -1,4 +1,5 @@
 ---
+ref: bc-getting-started-table-03
 layout: page
 title: Schritt II- Eine Extraktion ausführen
 description: Schritt II- Eine Extraktion ausführen

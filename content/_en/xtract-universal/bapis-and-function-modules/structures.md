@@ -1,4 +1,5 @@
 ---
+ref: xu-bapis-function-03
 layout: page
 title: Structures
 description: Structures

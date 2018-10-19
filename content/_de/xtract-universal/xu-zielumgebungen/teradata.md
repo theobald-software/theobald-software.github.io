@@ -1,4 +1,5 @@
 ---
+ref: xu-destinations-21
 layout: page
 title: Teradata
 description: Teradata

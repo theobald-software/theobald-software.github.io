@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-using-query-xql-action-01
 layout: page
 title: Nintex-Workflow und Query XQL-Action
 description: Nintex-Workflow und Query XQL-Action

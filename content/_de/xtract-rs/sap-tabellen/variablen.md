@@ -1,4 +1,5 @@
 ---
+ref: xr-sap-tables-02
 layout: page
 title: Variablen
 description: Variablen

@@ -1,4 +1,5 @@
 ---
+ref: xu-destinations-27
 layout: page
 title: XML (via HTTP) - deprecated
 description: XML (via HTTP) - deprecated

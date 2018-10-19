@@ -1,4 +1,5 @@
 ---
+ref: ecs-getting-started-with-the-bcs-connector-05
 layout: page
 title: Ein Modell speichern
 description: Ein Modell speichern

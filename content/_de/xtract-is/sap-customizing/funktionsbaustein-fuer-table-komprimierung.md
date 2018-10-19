@@ -1,4 +1,5 @@
 ---
+ref: xi-sap-customizing-01
 layout: page
 title: Funktionsbaustein für Tabellen-Komprimierung
 description: Funktionsbaustein für Tabellen-Komprimierung

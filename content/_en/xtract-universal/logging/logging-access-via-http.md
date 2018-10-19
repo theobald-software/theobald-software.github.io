@@ -1,4 +1,5 @@
 ---
+ref: xu-logging-04
 layout: page
 title: Log access via HTTP
 description: Log access via HTTP

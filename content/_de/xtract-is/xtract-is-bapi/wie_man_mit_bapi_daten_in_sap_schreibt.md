@@ -1,4 +1,5 @@
 ---
+ref: xi-bapi-07
 layout: page
 title: Wie man mit BAPI Daten in SAP schreibt
 description: Wie man mit BAPI Daten in SAP schreibt

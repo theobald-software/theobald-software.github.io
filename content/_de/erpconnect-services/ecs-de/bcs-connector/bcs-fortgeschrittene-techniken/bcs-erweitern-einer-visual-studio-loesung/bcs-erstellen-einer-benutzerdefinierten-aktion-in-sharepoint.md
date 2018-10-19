@@ -1,4 +1,5 @@
 ---
+ref: ecs-extending-a-solution-in-visual-studio-05
 layout: page
 title: Erstellen einer benutzerdefinierten Aktion in SharePoint
 description: Erstellen einer benutzerdefinierten Aktion in SharePoint

@@ -1,4 +1,5 @@
 ---
+ref: ec-calling-bapis-and-function-modules-02
 layout: page
 title: Bestand im Lager mit Hilfe eines BAPIs ermitteln
 description: Bestand im Lager mit Hilfe eines BAPIs ermitteln

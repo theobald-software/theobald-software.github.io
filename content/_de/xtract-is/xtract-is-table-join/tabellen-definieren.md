@@ -1,4 +1,5 @@
 ---
+ref: xi-join-table-01
 layout: page
 title: Tabellen definieren
 description: Tabellen definieren

@@ -1,4 +1,5 @@
 ---
+ref: xi-bapi-02
 layout: page
 title: Skalare Parameter
 description: Skalare Parameter

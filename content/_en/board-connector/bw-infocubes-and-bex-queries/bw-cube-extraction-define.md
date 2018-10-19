@@ -1,4 +1,5 @@
 ---
+ref: bc-bw-infocubes-and-bex-queries-01
 layout: page
 title: Define a BW Cube Extraction
 description: Define a BW Cube Extraction

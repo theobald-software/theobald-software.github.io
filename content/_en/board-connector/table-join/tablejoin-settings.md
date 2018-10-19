@@ -1,4 +1,5 @@
 ---
+ref: bc-table-join-07
 layout: page
 title: Settings
 description: Settings

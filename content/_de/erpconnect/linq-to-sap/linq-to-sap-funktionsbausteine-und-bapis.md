@@ -1,4 +1,5 @@
 ---
+ref: ec-linq-to-sap-04
 layout: page
 title: Funktionsbausteine und BAPIs
 description: Funktionsbausteine und BAPIs

@@ -1,11 +1,12 @@
 ---
+ref: ecs-sin-nis-read-sap-table-action-02
 layout: page
 title: Read SAP Table Action with advanced options
 description: Read SAP Table Action with advanced options
 product: erpconnect-services
 parent: read-sap-table-action
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=read_sap_table_action_with_advanced_options
 ---

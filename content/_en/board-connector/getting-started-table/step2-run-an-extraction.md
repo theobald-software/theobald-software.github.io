@@ -1,4 +1,5 @@
 ---
+ref: bc-getting-started-table-03
 layout: page
 title: Step II - Run an Extraction
 description: Step II - Run an Extraction

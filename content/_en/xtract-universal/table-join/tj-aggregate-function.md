@@ -1,4 +1,5 @@
 ---
+ref: xu-table-join-05
 layout: page
 title: Aggregate Function
 description: Aggregate Function

@@ -1,4 +1,5 @@
 ---
+ref: ecs-sin-nis-call-sap-function-action-01
 layout: page
 title: Call SAP Function Action in a workflow
 description: Call SAP Function Action in a workflow

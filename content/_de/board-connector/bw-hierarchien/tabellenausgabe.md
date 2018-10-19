@@ -1,4 +1,5 @@
 ---
+ref: bc-bw-hierarchies-02
 layout: page
 title: Tabellenausgabe
 description: Tabellenausgabe

@@ -1,4 +1,5 @@
 ---
+ref: ecs-extending-a-solution-in-visual-studio-05
 layout: page
 title: Creating a Custom Action in SharePoint
 description: Creating a Custom Action in SharePoint

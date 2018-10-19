@@ -1,4 +1,5 @@
 ---
+ref: ec-receiving-and-sending-idocs-05
 layout: page
 title: Synchronous sending and status query
 description: Synchronous sending and status query

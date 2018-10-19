@@ -1,4 +1,5 @@
 ---
+ref: xu-amzon-redshift-04
 layout: page
 title: Daten einfügen
 description: Daten einfügen

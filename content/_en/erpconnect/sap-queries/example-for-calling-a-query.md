@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-queries-01
 layout: page
 title: Example for calling a query
 description: Example for calling a query

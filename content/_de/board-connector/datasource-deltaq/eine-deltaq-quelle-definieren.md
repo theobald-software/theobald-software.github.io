@@ -1,4 +1,5 @@
 ---
+ref: bc-datasource-deltaq-03
 layout: page
 title: Eine DeltaQ-Quelle definieren
 description: Eine DeltaQ-Quelle definieren

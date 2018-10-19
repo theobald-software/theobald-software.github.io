@@ -1,4 +1,5 @@
 ---
+ref: xu-tableau-04
 layout: page
 title: Part 2 - Linking a BEx query with a Hierarchy
 description: Part 2 - Linking a BEx query with a Hierarchy

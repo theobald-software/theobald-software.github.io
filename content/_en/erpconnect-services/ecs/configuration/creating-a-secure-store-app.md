@@ -1,4 +1,5 @@
 ---
+ref: ecs-configuration-03
 layout: page
 title: Creating a Secure Store Application
 description: Creating a Secure Store Application

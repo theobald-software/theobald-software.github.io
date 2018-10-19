@@ -1,4 +1,5 @@
 ---
+ref: ecs-advanced-solutions-02
 layout: page
 title: Extending a Solution in Visual Studio
 description: Extending a Solution in Visual Studio

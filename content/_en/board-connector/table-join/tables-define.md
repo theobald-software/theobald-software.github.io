@@ -1,4 +1,5 @@
 ---
+ref: bc-table-join-01
 layout: page
 title: Define Tables
 description: Define Tables

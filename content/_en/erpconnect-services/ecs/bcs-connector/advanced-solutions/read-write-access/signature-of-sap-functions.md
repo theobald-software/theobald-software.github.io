@@ -1,4 +1,5 @@
 ---
+ref: ecs-read-write-access-07
 layout: page
 title: Signature of SAP Functions
 description: Signature of SAP Functions

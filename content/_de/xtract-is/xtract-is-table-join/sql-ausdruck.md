@@ -1,4 +1,5 @@
 ---
+ref: xi-join-table-06
 layout: page
 title: SQL-Ausdruck
 description: SQL-Ausdruck

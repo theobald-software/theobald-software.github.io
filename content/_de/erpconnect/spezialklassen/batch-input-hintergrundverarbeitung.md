@@ -1,4 +1,5 @@
 ---
+ref: ec-special-classes-04
 layout: page
 title: Batch Input Hintergrundverarbeitung
 description: Batch Input Hintergrundverarbeitung
