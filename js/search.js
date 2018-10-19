@@ -27,7 +27,7 @@ var main = {
             instantsearch.widgets.searchBox({
                 container: '#search-box',
                 placeholder: (getUrlVars()["fromHomepage"] ? getUrlVars()["fromHomepage"] : document.querySelector('#search-box-text').innerHTML),
-                poweredBy: true
+                poweredBy: false
             })
         );
 

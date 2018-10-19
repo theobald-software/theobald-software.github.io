@@ -14,7 +14,11 @@
     </div>
       <div class="collapse navbar-collapse navbar-right" id="main-navbar" style="">
         <div class="row row-eq-height">
-          <div class="col-md-4 col-sm-4 col-xs-4">
+          {% if page.title == 'Search' or page.title == 'Homepage' %}
+            <div class="col-md-4 col-sm-4 col-xs-4">
+          {% else %}
+            <div class="col-md-2 col-sm-2 col-xs-4">
+          {% endif %}
             <div class="navbar-languages">
               {% for collection in site.collections %}
                 {% unless collection.label == "posts" %}
@@ -32,8 +36,29 @@
               {% endfor %}
             </div>
           </div>
-          <div class="col-md-8 col-sm-8 col-xs-8">
-            <ul class="nav nav-stacked">
+          {% if page.title != 'Search' and page.title != 'Homepage' %}
+          <div class="col-md-4 col-sm-4 col-xs-8" style="border-left: 1px solid #E9E9E9;">
+            <form class="homepage-search-form" action="{{ site.url }}/{{ current_lang }}/search.html" style="display: table;height: 100%;">
+              <div class="ais-search-box" style="display: table-cell;text-align: center;vertical-align: middle;">
+                <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Search..." role="textbox" spellcheck="false" type="text" value="" name="fromHomepage" class="ais-search-box--input" style="height: auto;">
+                <span class="ais-search-box--magnifier-wrapper">
+                  <div class="ais-search-box--magnifier">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40" width="100%" height="100%">
+                      <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z" fill-rule="evenodd">
+                      </path>
+                    </svg>
+                  </div>
+                </span>
+              </div>
+            </form>
+          </div>
+          {% endif %}
+              {% if page.title == 'Search' or page.title == 'Homepage' %}
+                <div class="col-md-8 col-sm-8 col-xs-8">
+              {% else %}
+                <div class="col-md-6 col-sm-6 hidden-xs" style="border-left: 1px solid #E9E9E9;">
+              {% endif %}
+              <ul class="nav nav-stacked">
               {% for lang in site.language %}
                 {% if lang contains current_lang %}
                   {% for link in lang %}
