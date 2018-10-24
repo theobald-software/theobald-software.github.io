@@ -3,9 +3,9 @@ ref: home-8
 layout: page
 title: Xtract for Alteryx
 description: Xtract for Alteryx main page
-product: xtractforalteryx
+product: xtract-for-alteryx
 parent: home
-childidentifier: xtractforalteryx
+childidentifier: xtract-for-alteryx
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
