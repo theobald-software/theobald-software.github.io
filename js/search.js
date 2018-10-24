@@ -51,7 +51,7 @@ var main = {
                             case 'board-connector':
                                 data.label = 'Board Connector';
                                 break;
-                            case 'xtract-for-alteryz':
+                            case 'xtract-for-alteryx':
                                 data.label = 'Xtract for Alteryx';
                                 break;
                             case 'xtract-is':
@@ -110,7 +110,7 @@ var main = {
                             case 'board-connector':
                                 data.label = 'Board Connector';
                                 break;
-                            case 'xtract-for-alteryz':
+                            case 'xtract-for-alteryx':
                                 data.label = 'Xtract for Alteryx';
                                 break;
                             case 'xtract-is':
