@@ -18,6 +18,7 @@ Das Xtract Universal Alteryx Plugin wird zusammen mit Xtract Universal auf dem Z
 
 Bei der Installation von Xtract Universal erstellt das Setup eine Datei im Alteryx-Verzeichnis. Diese Datei befindet sich unter *[alteryx]\Settings\AdditionalPlugins\Xtract Universal.ini.* Sie wird für die Verwendung des Plugins im Alteryx Designer benötigt. Zudem wird die DefaultSettings.xml unter *[alteryx]\bin\RuntimeData* angepasst (ein Backup wird erstellt).
 Im Ordner [alteryx]\bin\RuntimeData\icons\categories wird eine Bilddatei von Xtract Univesal abgelegt.
+
 **Achtung:** Sollten sich mehrere alteryx-Installationen auf Ihrem System befinden, kann unser Setup nur eine Installation erkennen und die obigen Dateien dort platzieren. Welche Installation erkannt wurde können Sie der setup.log-Datei (s. unten) entnehmen. Für die anderen alteryx-Installationen müssen obige Dateien manuell in die jeweiligen Ordner kopiert werden.
 
 
