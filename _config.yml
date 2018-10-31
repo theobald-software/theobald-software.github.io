@@ -124,7 +124,6 @@ exclude:
   - Vagrantfile
   - .idea/workspace.xml
   - vendor
-  - opensearch.xml
 
 ########## SECTION 5 - TRACK SETTINGS ##########
 # GA gatg.js ID
