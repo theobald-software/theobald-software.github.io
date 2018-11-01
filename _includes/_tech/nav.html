@@ -69,6 +69,8 @@
                         </li>
                       {% endif %}
                     {% endfor %}
+
+                    {% capture back-to-search-string %}{{ link.navbar-back-to }}{% endcapture %}
                   {% endfor %}
                 {% endif %}
               {% endfor %}
@@ -79,3 +81,5 @@
     </div>
   </div>
 </nav>
+
+<div id="back-to-search-string" class="invisible">{{ back-to-search-string }}</div>

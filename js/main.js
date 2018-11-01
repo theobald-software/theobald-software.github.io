@@ -99,7 +99,7 @@ var main = {
         if($('#side-menu-list-item-search').length > 0) {
             // add "back to search" link
             $('#side-menu-list-item-search').addClass('side-menu-list-item-hover');
-            $('#side-menu-list-item-search').html('<li class="side-menu-list-item side-menu-list-item-search"><a href="javascript:history.back()" class="side-menu-list-item-link">Back to <strong>Search</strong></a></li>')
+            $('#side-menu-list-item-search').html('<li class="side-menu-list-item side-menu-list-item-search"><a href="javascript:history.back()" class="side-menu-list-item-link">' + document.querySelector('#back-to-search-string').innerHTML + ' <strong>Search</strong></a></li>')
 
             // fix paddings/margins
             $('.side-menu-list-item-parent').css({
