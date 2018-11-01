@@ -1,10 +1,10 @@
 ---
-ref: xfa-bw-infocubes-and-bex-queries-01
+ref: xfa-bw-cube-01
 layout: page
 title: BW Cube Extraction Anlegen
 description: BW Cube Extraction Anlegen
 product: xtract-for-alteryx
-parent: bw-infocubes-and-bex-queries
+parent: bw-cube
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

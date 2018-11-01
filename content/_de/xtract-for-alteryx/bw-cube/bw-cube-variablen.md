@@ -1,10 +1,10 @@
 ---
-ref: xfa-bw-infocubes-and-bex-queries-02
+ref: xfa-bw-cube-02
 layout: page
 title: Query-Variablen
 description: Query-Variablen
 product: xtract-for-alteryx
-parent: bw-infocubes-and-bex-queries
+parent: bw-cube
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

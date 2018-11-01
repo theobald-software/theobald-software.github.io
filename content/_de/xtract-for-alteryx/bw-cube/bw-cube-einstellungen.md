@@ -1,10 +1,10 @@
 ---
-ref: xfa-bw-infocubes-and-bex-queries-03
+ref: xfa-bw-cube-03
 layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-for-alteryx
-parent: bw-infocubes-and-bex-queries
+parent: bw-cube
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
