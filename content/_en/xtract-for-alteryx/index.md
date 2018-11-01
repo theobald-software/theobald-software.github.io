@@ -15,5 +15,5 @@ This is the Xtract for Alteryx help page.
 We're still working on the content.
 
 
-If you like, please check out the German version of the Xtract-for-Alteryx-help:
-https://help.theobald-software.com/de/xtract-for-alteryx/
+If you like, please check out the German version of the Xtract-for-Alteryx page:
+[https://help.theobald-software.com/de/xtract-for-alteryx/]
