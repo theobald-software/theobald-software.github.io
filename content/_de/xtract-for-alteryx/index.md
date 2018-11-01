@@ -11,5 +11,6 @@ weight: 1
 lang: de_DE
 ---
 
-Dies ist die Hilfe-Seite von Xtract for Alteryx.
-Wir arbeiten derzeit noch an dem Inhalt.
+Willkommen in der Online Help von Xtract for Alteryx. Diese Hilfe beinhaltet folgende Kapitel:
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
