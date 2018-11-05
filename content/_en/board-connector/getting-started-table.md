@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=table
 ---
 
-Please note that this chapter contains not only the details of the SAP table extraction with Table, but also is a general introduction to the ERPConnect.
+Please note that this chapter contains not only the details of the SAP table extraction with Table, but also is a general introduction to  the BOARD Connector.
 
 It is therefore a prerequisite for all subsequent chapters.
 
