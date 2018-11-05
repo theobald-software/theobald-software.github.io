@@ -20,7 +20,7 @@ ERPConnect (without LINQ to ERP) consists of three .NET assemblies, that target 
 
 That results in the following compatibility matrix:
 
-| ddd|	ERPConnectStandard20.dll	| ERPConnect45.dll	| ERPConnect35.dll|
+| |	ERPConnectStandard20.dll	| ERPConnect45.dll	| ERPConnect35.dll|
 |:------|:------|:------ |:------ |
 |.NET Framework 3.5 SP1	| | |	X|
 |.NET Framework 4.0     | | |	X |
@@ -46,7 +46,7 @@ That results in the following compatibility matrix:
 SAP Business One and SAP Objects are not supported
 
 | Component | SAP Release | Requirements to the SAP system |
-| :------ |:--- | :--- |
+| :-------- |:--- | :--- |
 | Table | Rel. above 4.0B | For most tasks, the installation of a Z-module is necessary, but not for all. |
 | Query | Rel. above 4.0B | Nothing. |
 | BAPI | Rel. above 4.0B | Nothing. |
