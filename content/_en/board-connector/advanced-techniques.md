@@ -12,6 +12,6 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=advanced_technics__variables_and_logging
 ---
 
-The last chapter has shown parallel to the introduction into the table component some basic techniques, such as the design and execution of an extraction. This chapter now introduces additional aspects to enter more deeply into the possibilities of ERPConnect.
+The last chapter has shown parallel to the introduction into the table component some basic techniques, such as the design and execution of an extraction. This chapter now introduces additional aspects to enter more deeply into the possibilities of the BOARD Connector.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
