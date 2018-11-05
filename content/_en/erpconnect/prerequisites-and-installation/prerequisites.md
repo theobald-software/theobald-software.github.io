@@ -19,7 +19,7 @@ ERPConnect (without LINQ to ERP) consists of three .NET assemblies, that target 
 -	ERPConnectStandard20.dll (targets .NET Standard 2.0)
 
 That results in the following compatibility matrix:
-| |	ERPConnectStandard20.dll	| ERPConnect45.dll	| ERPConnect35.dll|
+|:------ |	ERPConnectStandard20.dll	| ERPConnect45.dll	| ERPConnect35.dll|
 |.NET Framework 3.5 SP1	| | |	X|
 |.NET Framework 4.0| | |	X |
 |.NET Framework 4.5	 | | |	X |
