@@ -16,7 +16,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=systemvoraussetzungen
 - .NET Framework 3.5 SP1 (für CLR2)
 - .NET Framework 4.5.2 oder höher (für CLR4)
 
-ERPConnect (ohne LINQ to ERP) besteht auf 3 .NET assemblies, welche unterschiedliche frameworks unterstützen:
+ERPConnect (ohne LINQ to ERP) besteht auf 3 .NET Assemblies, welche unterschiedliche Frameworks unterstützen:
 -	ERPConnect35.dll (.NET Framework 3.5 SP1)
 -	ERPConnect45.dll (.NET Framework 4.5.2)
 -	ERPConnectStandard20.dll (.NET Standard 2.0)
