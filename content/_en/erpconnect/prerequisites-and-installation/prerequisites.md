@@ -12,10 +12,24 @@ old_url: /ERPConnect-EN/default.aspx?pageid=prerequisites
 ---
 
 **.NET Framework**
- 	
-* .NET Famework 3.5 SP1 (for CLR2)
-* .NET Famework 4.5.2 or later (for CLR4)  
 
+ERPConnect (without LINQ to ERP) consists of three .NET assemblies, that target different frameworks:
+-	ERPConnect35.dll (targets .NET Framework 3.5 SP1)
+-	ERPConnect45.dll (targets .NET Framework 4.5.2)
+-	ERPConnectStandard20.dll (targets .NET Standard 2.0)
+
+That results in the following compatibility matrix:
+| |	ERPConnectStandard20.dll	| ERPConnect45.dll	| ERPConnect35.dll|
+|.NET Framework 3.5 SP1	| | |	X|
+|.NET Framework 4.0| | |	X |
+|.NET Framework 4.5	 | | |	X |
+|.NET Framework 4.5.1	 | | |	 	X |
+|.NET Framework 4.5.2	|  | X	| X |
+|.NET Framework 4.6	  |  |	X |	X |
+|.NET Framework 4.6.1 and newer|	X	| X |	X |
+|.NET Core 2.0 and newer |X |	X	| X |
+|.NET Standard 2.0 and newer	| X	|	| |
+|Universal Windows Platform 10.0.16299 and newer	| X | | |	 	 
 
 **SAP Releases**
  	
