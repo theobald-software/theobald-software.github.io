@@ -30,7 +30,6 @@ That results in the following compatibility matrix:
 |.NET Framework 4.6	    | |	X |	X |
 |.NET Framework 4.6.1 and newer |	X	| X |	X |
 |.NET Core 2.0 and newer | X |	X	| X |
-|.NET Standard 2.0 and newer	| X	|	| |
 |Universal Windows Platform 10.0.16299 and newer	| X | | |	 	 
 
 **SAP Releases**
