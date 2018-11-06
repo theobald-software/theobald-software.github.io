@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=systemvoraussetzungen
 ---
 
-## .NET Framework
+### .NET Framework
 
 ERPConnect (ohne LINQ to ERP) besteht aus drei .NET Assemblies, welche unterschiedliche [Frameworks als Ziel](https://docs.microsoft.com/de-DE/dotnet/standard/frameworks) haben:
 -	ERPConnect35.dll (Ziel: .NET Framework 3.5 SP1)
@@ -33,7 +33,7 @@ Daraus ergibt sich folgende Kompatibilitätsmatrix:
 |Universal Windows Platform 10.0.16299 und neuer	| X | | |	 	 
 
 
-## SAP Releases
+### SAP Releases
  	
 - SAP R/3 Version 4.0B oder höher oder SAP ECC.
 - SAP BW Version 3.1 oder höher.
@@ -46,7 +46,7 @@ Daraus ergibt sich folgende Kompatibilitätsmatrix:
 | BW Cube    | Rel. BW 3.1 und höher. | Keine.                                                                |
 
 
-## Betriebssystem
+### Betriebssystem
 
 - Windows 10
 - Windows Server 2016
@@ -57,7 +57,7 @@ Daraus ergibt sich folgende Kompatibilitätsmatrix:
 - Windows Server 2008 R2 SP1 (bis 14.01.2020)
 - Windows Server 2008 SP2 (bis 14.01.2020)
 
-## Visual Studio
+### Visual Studio
 
 - Visual Studio 2017
 - Visual Studio 2015 (bis 14.10.2025)
@@ -71,23 +71,23 @@ Daraus ergibt sich folgende Kompatibilitätsmatrix:
 
 - [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) und [Visual C++ 2013 Runtime](https://www.microsoft.com/de-DE/download/details.aspx?id=40784)
 
-## Arbeitsspeicher
+### Arbeitsspeicher
  	
 - 2 GB oder mehr empfohlen (abhängig vom konkreten Anwendungsfall)
 
-## Festplattenspeicher
+### Festplattenspeicher
  	
 - Für die Installation werden ca. 12 MB Festplattenspeicher benötigt.
 
-## 32/64-Bit Umgebung
+### 32/64-Bit Umgebung
  	
 - Es werden sowohl x86 als auch x64 Plattformen unterstützt
 
-## Sicherheitseinstellungen
+### Sicherheitseinstellungen
  	
 - Für die Anmeldung am SAP wird ein System- oder Dialog-Anwender mit den entsprechenden [Authorisierungs-Objekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects) benötigt.
 
-## Netzwerkeinstellungen
+### Netzwerkeinstellungen
  	
 - Die Kommunikation mit dem SAP Applikationsserver erfolgt per RFC über TCP Port 33*nn*, wobei *nn* die Systemnummer des SAP Systems ist.
 
