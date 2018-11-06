@@ -77,7 +77,7 @@ SAP Business One and SAP Objects are not supported
 
 ## Other Applications and Frameworks
 
-- [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) and [Visual C++ 2013 Runtime](https://www.microsoft.com/de-DE/download/details.aspx?id=40784)
+- [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) and [Visual C++ 2013 Runtime](https://www.microsoft.com/en-US/download/details.aspx?id=40784)
 
 
 ## Memory
