@@ -89,7 +89,7 @@ SAP Business One and SAP Objects are not supported
 
 
 ## 32/64-Bit Environment
-* Both x86 and x64 platforms are suppored.
+* Both x86 and x64 platforms are supported.
 
 
 ## Security Settings
