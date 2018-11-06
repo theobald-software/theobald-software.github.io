@@ -18,8 +18,8 @@ Schauen wir uns nun folgende Beispiele an.
 
 | Beschreibung                           | Eingabe                                                                         | Ausgabe              |
 |---------------------------------------|-------------------------------------------------------------------------------|---------------------|
-| Jetziges Datum und Zeitstempel            | {% highlight javascript %}#{ DateTime.Now}# {% endhighlight %}                                                            | 23.07.2013 10:17:37 |
-| Datum vor 5 Tagen                       | {% highlight javascript %}#{ DateTime.Now.AddDays(-5).ToString("d") }#  {% endhighlight %}                                | 18.07.2013          |
+| Jetziges Datum und Zeitstempel            | #{ DateTime.Now}#                                                             | 23.07.2013 10:17:37 |
+| Datum vor 5 Tagen                       | #{ DateTime.Now.AddDays(-5).ToString("d") }#                                  | 18.07.2013          |
 | Jetziges Datum                          | #{ DateTime.Now.ToShortDateString() }#                                        | 23.07.2013          |
 | Jetziges Datum im SAP-Format            | #{ DateTime.Now.ToString("yyyyMMdd") }#                                       | 20130723            |
 | Jetziges Jahr mit "0101" verketten | #{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#                     | 20130101            |
