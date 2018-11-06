@@ -1,6 +1,5 @@
 ---
 ref: ecs-core-webservice-designer-03
-Den Webservice testen
 layout: page
 title: REST Webservices
 description: REST Webservices

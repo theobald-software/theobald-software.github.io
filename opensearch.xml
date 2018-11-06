@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns:moz="http://www.mozilla.org/2006/browser/search/"
+                       xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Online Help</ShortName>
+    <Description>Search the Theobald Software Online Help</Description>
+    <InputEncoding>UTF-8</InputEncoding>
+    <Url method="get" type="text/html" template="http://help.theobald-software.com/en/search.html?query={searchTerms}"/>
+    <moz:SearchForm>http://help.theobald-software.com/</moz:SearchForm>
+    <SearchForm>http://help.theobald-software.com/</SearchForm>
+</OpenSearchDescription>

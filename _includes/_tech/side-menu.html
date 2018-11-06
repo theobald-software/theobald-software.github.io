@@ -8,8 +8,10 @@
 		{% for link in lang %}
 			{% if link.homepage %}
 				{% capture homepage_string %}{{link.homepage}}{% endcapture %}
+				{% capture navbar_back_to_string %}{{link.navbar-back-to}}{% endcapture %}
 			{% else %}
-				{% capture homepage_string %}Homepage-standard{% endcapture %}
+				{% capture homepage_string %}{% endcapture %}
+				{% capture navbar_back_to_string %}{% endcapture %}
 			{% endif %}
 		{% endfor %}
 	{% endif %}
@@ -24,13 +26,13 @@
 			<div class="side-menu-list-item-hover">
 			{% if doc.childidentifier == 'home' %}
 				<li class="side-menu-list-item side-menu-list-item-parent">
-					<a href="{{doc.url | remove: '/index'}}" class="side-menu-list-item-link">Back to <strong>{{homepage_string}}</strong></a>
+					<a href="{{doc.url | remove: '/index'}}" class="side-menu-list-item-link">{{navbar_back_to_string}} <strong>{{homepage_string}}</strong></a>
 				</li>
 				{% assign show_products_in_menu = false %}
 			{% else %}
 				{% if doc.product == page.product %}
 					<li class="side-menu-list-item side-menu-list-item-parent">
-						<a href="{{doc.url}}" class="side-menu-list-item-link">Back to <strong>{{doc.title}}</strong></a>
+						<a href="{{doc.url}}" class="side-menu-list-item-link">{{navbar_back_to_string}} <strong>{{doc.title}}</strong></a>
 					</li>
 					{% assign show_products_in_menu = true %}
 				{% endif %}

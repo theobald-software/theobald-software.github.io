@@ -12,6 +12,6 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=server
 ---
 
-In this chapter we give you an overview about the ERPConnect server.
+In this chapter we give you an overview about the BOARD Connector server.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

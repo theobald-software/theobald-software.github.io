@@ -9,6 +9,7 @@ childidentifier: xtract-is
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
+old_url: /Xtract-IS-DE
 ---
 
 Willkommen in der Online Help von Xtract IS. 

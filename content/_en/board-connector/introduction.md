@@ -12,6 +12,6 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=introduction
 ---
 
-This section describes the Requirements for ERPConnect and the installation procedure.
+This section describes the Requirements for the BOARD Connector and the installation procedure.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
