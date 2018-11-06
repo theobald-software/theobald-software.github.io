@@ -33,7 +33,7 @@ Schauen wir uns das folgende Beispiel an.
 
 | Beschreibung                                                        | Eingabe                                             | Ausgabe |
 |--------------------------------------------------------------------|---------------------------------------------------|--------|
-| Wenn wir im 7. Monat sind, dann "July" ausgeben, sonst "Unknown"  | #{ iif(DateTime.Now.Month==7, "July","Unknown")}# | July   |
+| Wenn wir im 7. Monat sind, dann "July" ausgeben, sonst "Unknown"  | ```#{ iif(DateTime.Now.Month==7, "July","Unknown")}#``` | July   |
 
 **Definierte Ausdrücke**
 
