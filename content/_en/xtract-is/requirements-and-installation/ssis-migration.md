@@ -40,7 +40,8 @@ Finally, clicking the Prepare button will start the conversion process.
 After opening the converted package in Visual Studio and depending on the version of Visual Studio, the Visual Studio Conversion Wizard will launch and convert the package to the format of the selected Visual Studio version.
 
 Should you encounter an error message in Visual Studio after converting the SSIS package with the Xtract IS Conversion Preparer, you may have to deactivate SSIS package protection first before running the Xtract IS Conversion Preparer.
-
+**ATTENTION:** When opening the converted SSIS packages in Visual Studio please change the target server version accordingly and **save the SSIS package**.
+If you selected 'SSIS 2014' in Xtract IS Conversion Preparer, change the target server version to 'SQL Server 2014'. If you selected 'SSIS 2016'cahnge to 'SQL Server 2016'.
 
 **Migration from SSIS 2014/2016 to SSIS 2017**
 
