@@ -41,10 +41,13 @@ Nach dem Öffnen des Paketes in Visual Studio erscheint gegebenenfalls der Visua
 
 Sollte nach Konvertierung des Pakets und Öffnen in Visual Studio eine entsprechende Fehlermeldung erscheinen, müssen Sie eventuell den ProtectionLevel im SSIS Paket vor der Konvertierung deaktivieren.
 
+**ACHTUNG:** Nachdem Sie die konvertierten Pakete in Visual Studio geöffnet haben, ändern Sie die Zielversion des SQL Servers in den Projekteigenschaften und **speichern Sie das SSIS Paket**.(s. Screenshot unten)
+Wenn Sie im Xtract IS Conversion Preparer 'SSIS 2014' ausgewählt hatten, ändern Sie die Zielversion auf 'SQL Server 2014'. Wenn Sie 'SSIS 2016' ausgewählt hatten, ändern Sie auf 'SQL Server 2016'.
+
 
 **Migration von SSIS 2014/2016 nach SSIS 2017**
 
-Bei VS/SSDT 2015 und 2017 können Sie die Zielversion des SQL Servers in the Projekteigenschaften auswählen.
+Bei VS/SSDT 2015 und 2017 können Sie die Zielversion des SQL Servers in den Projekteigenschaften auswählen.
 
 ![VS-Deployment-Target](/img/content/VS-Deployment-Target.jpg){:class="img-responsive"}
 
