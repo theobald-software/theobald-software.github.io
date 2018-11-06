@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=prerequisites
 ---
 
-## .NET Framework
+### .NET Framework
 
 ERPConnect (without LINQ to ERP) consists of three .NET assemblies, that [target different frameworks]((https://docs.microsoft.com/en-US/dotnet/standard/frameworks):
 -	ERPConnect35.dll (targets .NET Framework 3.5 SP1)
@@ -32,7 +32,7 @@ That results in the following compatibility matrix:
 |.NET Core 2.0 and newer | X |	X	| X |
 |Universal Windows Platform 10.0.16299 and newer	| X | | |	 	 
 
-## SAP Releases
+### SAP Releases
  	
 * SAP R/3 Version 4.0B and later versions
 * SAP ECC 6.0 or later
@@ -52,7 +52,7 @@ SAP Business One and SAP Objects are not supported
 | BW Cube | Rel. above BW 3.1 | Nothing. | 
 
 
-## Operating System
+### Operating System
 
 - Windows 10
 - Windows Server 2016
@@ -64,7 +64,7 @@ SAP Business One and SAP Objects are not supported
 - Windows Server 2008 SP2 (until 14.01.2020)
 
 
-## Visual Studio
+### Visual Studio
 
 - Visual Studio 2017
 - Visual Studio 2015 (until 14.10.2025)
@@ -75,30 +75,30 @@ SAP Business One and SAP Objects are not supported
 * **Caution:** Visual Studio Express versions don't support the LINQ to ERP Designer.
 
 
-## Other Applications and Frameworks
+### Other Applications and Frameworks
 
 - [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) and [Visual C++ 2013 Runtime](https://www.microsoft.com/en-US/download/details.aspx?id=40784)
 
 
-## Memory
+### Memory
 * 2 GB or more recommended (depends on actual use case)
 
 
-## Disk Space
+### Disk Space
 * About 12 MB disk space are required  for a full installation.
 
 
-## 32/64-Bit Environment
+### 32/64-Bit Environment
 * Both x86 and x64 platforms are supported.
 
 
-## Security Settings
+### Security Settings
  	
 * For logging on to SAP, a system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects) is required.
 * Plain authentication (user/password), Secure Network Communications (SNC) with and without Single Sign-On (SSO) and SAP Logon Tickets (MYSAPSSO2) are supported.
 
 
-## Network Settings
+### Network Settings
  	
 Ports need to be opened depending on the technique how the connection to an SAP System is made.
 Details can be found [here](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/70/0/how-to-check-the-accessibility-to-a-sap-system).
