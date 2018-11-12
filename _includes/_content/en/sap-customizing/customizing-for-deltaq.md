@@ -38,7 +38,7 @@ Set the following fields:
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive" }
 
-**Optional, but recommended:** Starting from Xtract IS version 2.15.0, the resend of tRFC errors (see DeltaQ settings) is deprecated. While it is still supported, its use is no longer recommended. When creating a new DeltaQ extraction, it is therefore deactivated by default (formerly it was activated by default). Instead, we recommend changing the tRFC options for the RFC destination you just created. In SM59 go to *Edit - tRFC Options* and set the *parameter Connection attempts up to task to 30* and *Time betw*. 2 tries *[min]* to 2. 
+**Optional:** Change the tRFC options for the RFC destination you just created. In SM59 go to *Edit - tRFC Options* and set the *parameter Connection attempts up to task to 30* and *Time betw*. 2 tries *[min]* to 2. 
 
 **Step 5**
 
