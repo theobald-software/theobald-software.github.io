@@ -74,4 +74,3 @@ Konvertiert das SAP-Datum 00000000 zu diesem Wert.
 
 **Convert 9999XXXX to**<br>
 Konvertiert das SAP-Datum 9999XXXX zu diesem Wert.
-![](/img/content/.png){:class="img-responsive"}

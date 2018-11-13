@@ -72,7 +72,7 @@ Folgende Angaben werden benötigt:
 
 Sichern Sie das Wörterbuch in der Workflow-Variable **RequestHeader**.
 
-![ECS-Nintex-Office365-4](/img/content/ECS-Nintex-Office365-2.png.png){:class="img-responsive"}
+![ECS-Nintex-Office365-4](/img/content/ECS-Nintex-Office365-2.png){:class="img-responsive"}
 
 Konfigurieren Sie anschließend die Workflow-Action **HTTP-Webdienst aufrufen**.  
 
