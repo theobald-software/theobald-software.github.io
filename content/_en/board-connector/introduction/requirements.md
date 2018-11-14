@@ -56,18 +56,7 @@ where nn is the instance number of the SAP system (e.g. 00 or 99).
 **SAP Licenses**<br> 
 Additional SAP licenses might be required for extracting data from SAP. Contact SAP to verify these requirements.
 
-**Operating System**
- 	
-- Windows XP
-- Windows Vista
-- Windows 7
-- Windows 8
-- Windows 10
-- Windows Server 2003
-- Windows Server 2008
-- Windows Server 2008 R2
-- Windows Server 2012
-- Windows Server 2012 R2
+{% include _content/en/operating-systems.md %}
 
 **Other Applications and Frameworks**
  	

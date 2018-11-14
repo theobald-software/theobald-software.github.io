@@ -57,20 +57,7 @@ SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](h
 
 Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich sein. Bitte dazu SAP kontaktieren.
 
-
-**Betriebssystem**
- 	
-- Windows XP
-- Windows Vista
-- Windows 7
-- Windows 8
-- Windows 10
-- Windows Server 2003
-- Windows Server 2008
-- Windows Server 2008 R2
-- Windows Server 2012
-- Windows Server 2012 R2
-- Windows Server 2016
+{% include _content/de/operating-systems.md %}
 
 **Andere Anwendungen und Frameworks**
  	

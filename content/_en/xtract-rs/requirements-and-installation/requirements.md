@@ -38,20 +38,8 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=requirements
 | OHS       | Rel. above BW 3.5 | [Customizing](../sap-customizing/preparation-for-ohs-in-bw).                                                                  |
 | DeltaQ    | Rel. above 4.6A   | [Customizing](../sap-customizing/customizing-for-deltaq).                                                                  |
 
-
-**Operating System**
+{% include _content/en/operating-systems.md %}
  	
-- Windows XP
-- Windows Vista
-- Windows 7
-- Windows 8
-- Windows 10
-- Windows Server 2003
-- Windows Server 2008
-- Windows Server 2008 R2
-- Windows Server 2012
-- Windows Server 2012 R2
-
 **Other Applications and Frameworks**
  	
 - Visual C++ 2005 Runtime. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=14431).

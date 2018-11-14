@@ -45,18 +45,7 @@ Daraus ergibt sich folgende Kompatibilitätsmatrix:
 | BAPI       | Rel. 4.0B und höher    | Keine.                                                                |
 | BW Cube    | Rel. BW 3.1 und höher. | Keine.                                                                |
 
-
-### Betriebssystem
-
-- Windows 10
-- Windows Server 2019
-- Windows 8.1 (bis 10.01.2023)
-- Windows 7 SP1 (bis 14.01.2020)
-- Windows Server 2016 (bis 12.01.2027)
-- Windows Server 2012 R2 (bis 10.10.2023)
-- Windows Server 2012 (bis 10.10.2023)
-- Windows Server 2008 R2 SP1 (bis 14.01.2020)
-- Windows Server 2008 SP2 (bis 14.01.2020)
+{% include _content/de/operating-systems.md %}
 
 ### Visual Studio
 
