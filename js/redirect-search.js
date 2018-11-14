@@ -11,10 +11,16 @@ var main = {
 
         if(referrer_relative) {
             var old_url_homepage_english = '/en/default.aspx';
+            var old_url_homepage_english_short = '/en';
             var old_url_homepage_german = '/de/default.aspx';
-            if (referrer_relative.toLowerCase().indexOf(old_url_homepage_english) !== -1) {
+            var old_url_homepage_german_short = '/de';
+            if (referrer_relative.toLowerCase().indexOf(old_url_homepage_english) !== -1 ||
+                referrer_relative.toLowerCase().indexOf(old_url_homepage_english_short) !== -1 ||
+                referrer_relative.toLowerCase().indexOf(old_url_homepage_english_short + '/') !== -1) {
                 window.location.replace("https://help.theobald-software.com/en/");
-            } else if (referrer_relative.toLowerCase().indexOf(old_url_homepage_german) !== -1) {
+            } else if (referrer_relative.toLowerCase().indexOf(old_url_homepage_german) !== -1 ||
+                       referrer_relative.toLowerCase().indexOf(old_url_homepage_german_short) !== -1 ||
+                       referrer_relative.toLowerCase().indexOf(old_url_homepage_german_short + '/') !== -1) {
                 window.location.replace("https://help.theobald-software.com/de/");
             } else {
 
