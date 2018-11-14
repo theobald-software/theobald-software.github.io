@@ -17,11 +17,9 @@ var main = {
             var old_url_homepage_english_short = '/en';
             var old_url_homepage_german = '/de/default.aspx';
             var old_url_homepage_german_short = '/de';
-            if (referrer_relative.toLowerCase().indexOf(old_url_homepage_english) !== -1 ||
-                referrer_relative.toLowerCase().indexOf(old_url_homepage_english_short) !== -1) {
+            if (referrer_relative.toLowerCase() === old_url_homepage_english || referrer_relative.toLowerCase()=== old_url_homepage_english_short) {
                 window.location.replace("https://help.theobald-software.com/en/");
-            } else if (referrer_relative.toLowerCase().indexOf(old_url_homepage_german) !== -1 ||
-                       referrer_relative.toLowerCase().indexOf(old_url_homepage_german_short) !== -1) {
+            } else if (referrer_relative.toLowerCase() === old_url_homepage_german || referrer_relative.toLowerCase() === old_url_homepage_german_short) {
                 window.location.replace("https://help.theobald-software.com/de/");
             } else {
 
