@@ -88,5 +88,5 @@ End Sub
 
 
 
-![console](/img/content/calling-client-bapi-from-console.png){:class="img-responsive"}  
+![console](/img/content/Calling-Client-BAPI-From-Console.png){:class="img-responsive"}  
   

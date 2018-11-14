@@ -44,7 +44,7 @@ Gehen Sie wieder in die Transaktion SM59 und löschen Sie die Destination, die S
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
 
-Optional, aber empfohlen: Ab Xtract IS Version 2.15.0 wurde der Wiederversand von fehlgeschlagenen tRFC-Calls  (siehe DeltaQ Settings) als 'deprecated' gekennzeichnet. Auch wenn diese Funktionalität weiterhin unterstützt wird, wird die Nutzung von uns nicht mehr empfohlen. Bei Neuanlage einer DeltaQ Extraktion ist sie daher standardmäßig deaktiviert (in früheren Versionen von Xtract IS war sie standardmäßig aktiviert). Anstattdessen empfehlen wir eine Anpassung der tRFC-Optionen der gerade erstellten RFC Destination. Rufen Sie in der Transaktion SM59  *Bearbeiten - TRFC-Optionen* auf, und setzen Sie den Parameter *Verbindungsversuche bis zur Aufgabe* auf 30 und *Pause zw. 2 Versuchen [min]* auf 2. 
+**Optional:** Anpassung der tRFC-Optionen der gerade erstellten RFC Destination. Rufen Sie in der Transaktion SM59  *Bearbeiten - TRFC-Optionen* auf, und setzen Sie den Parameter *Verbindungsversuche bis zur Aufgabe* auf 30 und *Pause zw. 2 Versuchen [min]* auf 2. 
 
 
 **Schritt 5**
