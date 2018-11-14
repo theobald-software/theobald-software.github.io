@@ -9,18 +9,19 @@ var main = {
             referrer_relative = referrer.split(':4000')[1];
         }
 
+        // remove any trailing slash if there is one
+        referrer_relative = referrer_relative.replace(/\/$/, "");
+
         if(referrer_relative) {
             var old_url_homepage_english = '/en/default.aspx';
             var old_url_homepage_english_short = '/en';
             var old_url_homepage_german = '/de/default.aspx';
             var old_url_homepage_german_short = '/de';
             if (referrer_relative.toLowerCase().indexOf(old_url_homepage_english) !== -1 ||
-                referrer_relative.toLowerCase().indexOf(old_url_homepage_english_short) !== -1 ||
-                referrer_relative.toLowerCase().indexOf(old_url_homepage_english_short + '/') !== -1) {
+                referrer_relative.toLowerCase().indexOf(old_url_homepage_english_short) !== -1) {
                 window.location.replace("https://help.theobald-software.com/en/");
             } else if (referrer_relative.toLowerCase().indexOf(old_url_homepage_german) !== -1 ||
-                       referrer_relative.toLowerCase().indexOf(old_url_homepage_german_short) !== -1 ||
-                       referrer_relative.toLowerCase().indexOf(old_url_homepage_german_short + '/') !== -1) {
+                       referrer_relative.toLowerCase().indexOf(old_url_homepage_german_short) !== -1) {
                 window.location.replace("https://help.theobald-software.com/de/");
             } else {
 
@@ -31,6 +32,7 @@ var main = {
                     indexName: 'theobald-software-online-help',
                     searchFunction: function (helper) {
                         helper.setQueryParameter('restrictSearchableAttributes', ['old_url']);
+                        helper.setQueryParameter('facetFilters', ["old_url:" + referrer_relative + ""]);
                         helper.setQueryParameter('hitsPerPage', 1);
                         helper.search();
                     }
