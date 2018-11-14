@@ -15,4 +15,4 @@ Skalare Parameter (also Import- und Export-Werte des Bausteins) werden in der Re
 
 Das Bild zeigt einen Ausschnitt des Editor-Fensters. Es ist zu sehen, dass der eine Parameter (MAXROWS) mit einer Variablen verknüpft ist (ersichtlich an dem @), während der andere Parameter (CPDONLY) mit einem festen Wert versehen wurde.
 
-![Bapi-Scalar-Parameters](/img/content/Bapi-Scalar-Parameters.png){:class="img-responsive"}
+![Bapi-Scalar-Parameters](/img/content/BAPI-Scalar-Parameters.png){:class="img-responsive"}

@@ -21,7 +21,7 @@ Diese Vorlage bietet ein auf ERPConnect Services basiertes Beispiel, um SAP-basi
 
 **Übersicht der Bestellanforderungen**
 
-![ECS-BANf-SP](/img/content/ECS-BANf-SP.jpg){:class="img-responsive"}
+![ECS-BANf-SP](/img/content/ECS-BANF-SP.jpg){:class="img-responsive"}
 
 **Anlegen einer Bestellanforderung**
 
