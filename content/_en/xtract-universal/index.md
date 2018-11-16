@@ -9,6 +9,7 @@ childidentifier: xtract-universal
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+old_url: /Xtract-Universal-EN/
 ---
 
 Welcome to the Online Help for Xtract Universal. 

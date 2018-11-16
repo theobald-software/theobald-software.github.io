@@ -9,6 +9,7 @@ childidentifier: xtract-rs
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
+old_url: /Xtract-RS-DE/
 ---
 
 Willkommen in der Online Help von Xtract RS. Diese Hilfe beinhaltet folgende Kapitel:

@@ -9,6 +9,7 @@ childidentifier: erpconnect-services
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
+old_url: /ERPConnect-Services-DE/
 ---
 
 Willkommen in der Online-Hilfe von ERPConnect Services. 

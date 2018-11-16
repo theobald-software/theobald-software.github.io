@@ -9,6 +9,7 @@ childidentifier: board-connector
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
+old_url: /BOARD-Connector-DE/
 ---
 
 Willkommen in der Online Help vom BOARD Connector. Diese Hilfe beinhaltet folgende Kapitel:

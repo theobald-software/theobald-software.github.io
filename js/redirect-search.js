@@ -9,9 +9,6 @@ var main = {
             referrer_relative = referrer.split(':4000')[1];
         }
 
-        // remove any trailing slash if there is one
-        //referrer_relative = referrer_relative.replace(/\/$/, "");
-
         if(referrer_relative) {
             var old_url_homepage_english = '/en/default.aspx';
             var old_url_homepage_english_short = '/en';
@@ -22,8 +19,6 @@ var main = {
             } else if (referrer_relative.toLowerCase() === old_url_homepage_german || referrer_relative.toLowerCase() === old_url_homepage_german_short) {
                 window.location.replace("https://help.theobald-software.com/de/");
             } else {
-
-                console.log("facetfilter is 'old_url: " + referrer_relative + "'");
 
                 // general settings for instant search
                 const search = instantsearch({
