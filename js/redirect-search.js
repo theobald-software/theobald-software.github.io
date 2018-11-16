@@ -10,7 +10,7 @@ var main = {
         }
 
         // remove any trailing slash if there is one
-        referrer_relative = referrer_relative.replace(/\/$/, "");
+        //referrer_relative = referrer_relative.replace(/\/$/, "");
 
         if(referrer_relative) {
             var old_url_homepage_english = '/en/default.aspx';
@@ -23,7 +23,7 @@ var main = {
                 window.location.replace("https://help.theobald-software.com/de/");
             } else {
 
-                console.log("facetfilter is old_url:" + referrer_relative);
+                console.log("facetfilter is 'old_url: " + referrer_relative + "'");
 
                 // general settings for instant search
                 const search = instantsearch({
@@ -31,7 +31,7 @@ var main = {
                     apiKey: '09cbfe4bbe8e6380e31d4572f85ad22e',
                     indexName: 'theobald-software-online-help',
                     searchFunction: function (helper) {
-                        helper.setQueryParameter('facetFilters', ["old_url:" + referrer_relative + ""]);
+                        helper.setQueryParameter('facetFilters', ["old_url: " + referrer_relative + ""]);
                         helper.setQueryParameter('hitsPerPage', 1);
                         helper.search();
                     }
