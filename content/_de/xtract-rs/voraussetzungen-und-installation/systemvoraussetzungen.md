@@ -38,17 +38,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 | **OHS**       | Rel. BW 3.5 und höher. | [Customizing](../sap-customizing/vorbereitung-fuer-ohs-im-bw).                                                         |
 | **DeltaQ**    | Rel. 4.6A und höher.   | [Customizing](../sap-customizing/vorbereitung-fuer-ohs-im-bw).                                                         |
 
-**Betriebssystem**
- 	
-- Windows XP
-- Windows Vista
-- Windows 7
-- Windows 8
-- Windows Server 2003
-- Windows Server 2008
-- Windows Server 2008 R2
-- Windows Server 2012
-- Windows Server 2012 R2
+{% include _content/de/operating-systems.md %}
 
 **Andere Anwendungen und Frameworks**
  	

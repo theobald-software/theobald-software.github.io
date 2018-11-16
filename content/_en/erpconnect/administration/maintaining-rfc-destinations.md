@@ -21,11 +21,11 @@ To create a new destination, please use transaction SM59 and click the Create bu
 
 You have to save the destination first before the connection can be tested.
 
-![rfcdestination01](/img/content/maintain-rfc-destination-001.png){:class="img-responsive"}  
+![rfcdestination01](/img/content/Maintain-RFC-Destination-001.png){:class="img-responsive"}  
 
 Click the button Test Connection while the program is running. If everything works well, you should see a screen like the one below.
 
-![rfcdestination02](/img/content/maintain-rfc-destination-002.png){:class="img-responsive"}  
+![rfcdestination02](/img/content/Maintain-RFC-Destination-002.png){:class="img-responsive"}  
 
 **Unicode**
 

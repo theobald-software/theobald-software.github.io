@@ -11,3 +11,8 @@ Gemfile.lock
 
 .idea/*
 .idea
+
+
+# no temporary vim files
+*~
+*.swp
