@@ -5,7 +5,7 @@ title: Xtract IS DeltaQ
 description: Xtract IS DeltaQ
 product: xtract-is
 parent: xtract-is
-childidentifier: q-delta
+childidentifier: deltaq
 permalink: /:collection/:path
 weight: 12
 lang: en_GB
