@@ -1,5 +1,5 @@
 {% for coll in site.collections %}
-{% capture url_piece %}/{{ coll.label }}{% endcapture %}
+{% capture url_piece %}/{{ coll.label }}/{% endcapture %}
 {% capture current_lang %}{% if page.url contains url_piece %}{{ coll.label }}{% endif %}{% endcapture %}
 {{ current_lang | strip}}
 {% endfor %}
