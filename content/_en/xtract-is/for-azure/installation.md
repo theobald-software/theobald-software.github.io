@@ -18,6 +18,9 @@ The setup consists of 2 files: XtractISSetup.exe (downloadable from our website 
 
 ![XISforAzure_StorageContainer](/img/content/XISforAzure_StorageContainer.jpg){:class="img-responsive" }
 
+When running a trial version of Xtract IS for Azure, you only need to place those two files in the storage container.
+After purchase, we will provide you with a license file. This file will then also need to be placed in the storage container.
+
 Before starting up the IR, make sure you reference the Custom Container SAS URI created above:
 
 “When you provision or reconfigure your Azure-SSIS IR with PowerShell, before you start your Azure-SSIS IR, run the 
