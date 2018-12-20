@@ -13,16 +13,14 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-voraussetzungen
 
 **Windows-Betriebssystem** 
 
-- Windows 8 oder höher
-- Windows Server 2012 R2oder höher
-- IIS-Webserver Version 8.5 oder höher
-- .Net Framework 4.5 oder höher
+- Windows 10
+- Windows Server 2012 R2 oder höher
+- IIS-Webserver Version 10 oder höher
+- .Net Framework 4.6.1 oder höher
 
-**Benutzerrechte auf SharePoint** 
+**Benutzerrechte auf Windows** 
 
-- Die Rechte eines Administrators sind nötig, um die Anwendung zu installieren.
-
-**Microsoft SharePoint Online**
+- Die Rechte eines Administrators sind nötig, um die Anwendungen zu installieren.
 
 **Microsoft Azure Service Bus**
 
@@ -41,5 +39,5 @@ Falls Sie die Relay-Funktionalität von Microsoft Azure Service Bus nutzen möch
 
 - Port 33nn muss offen sein, wobei nn = der System Nummer des SAP Systems ist.
 
-Es ist empfohlen, die Installation von ECS Core auf einem Rechner ohne andere ECS-Komponenten durchzuführen. 
-ECS Core und andere ECS-Komponenten auf derselben Maschine zu installieren ist möglich, erschwert aber die Fehlerbehebung.
+Es ist empfohlen, die Installation von ECS Core auf einem Rechner ohne andere Theobald Software Komponenten durchzuführen. 
+Die ist zwar möglich, erschwert aber die Fehleranalyse und -behebung.

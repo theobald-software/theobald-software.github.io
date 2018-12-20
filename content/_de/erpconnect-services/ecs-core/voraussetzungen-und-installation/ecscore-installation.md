@@ -22,9 +22,6 @@ Selektieren Sie beide Komponenten und klicken Sie auf *Install*.
 
 ![ecscore-installation-5](/img/content/ecscore-installation-5.jpg.png){:class="img-responsive"}
 
-Die ECS Core Komponenten werden installiert. Sollten die zur Ausführung des Deployment Managers notwendigen IIS Komponenten fehlen, werden diese automatisch mitinstalliert.  
+Die ECS Core Komponenten werden anschließend installiert. Nach erfolgreicher Installation ist empfohlen, direkt anschließend den *ECS Core Deployment Manager* auszuführen. Die Checkbox zum automatischen Start des Deployment Managers ist standardmäßig gesetzt. 
 
-Nach der erfolgreichen Installation wird automatisch der *ECS Core Deplyoment Manager* ausgeführt.
-
-Auch nach einer Repair-Installation oder dem Darüberinstallieren einer neuen ECS Core Version ist ein erneutes Deployment notwendig. 
-Alle Einzelheiten darüber sind im Abschnitt [Deployment Manager](./ecscore-deployment) beschrieben.
+Alle Einzelheiten zum Deployment Manager sind im Abschnitt [Deployment Manager](./ecscore-deployment) beschrieben.
