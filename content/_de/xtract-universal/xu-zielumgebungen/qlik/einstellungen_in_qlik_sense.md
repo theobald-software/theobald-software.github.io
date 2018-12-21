@@ -16,3 +16,8 @@ Das dynamische Laden von Daten aus einer Webseite ist in Qlik Sense standardmä�
 In Qlik Sense deaktivieren Sie den Standard Mode in Qlik Management Console -> Engine Properties.<br>
 In Qlik Sense Desktop öffnen Sie die Datei C:\Users\{user}\Documents\Qlik\Sense\Settings.ini in einem Texteditor.<br>
 Ändern Sie StandardReload=1 zu StandardReload=0. Speichern Sie die Datei und starten Sie Qlik Sense erneut.  
+
+Falls Sie beim Ausführen eines Qlik Sense Berichtes die Meldung "Forbidden" erhalten:
+Dieses Verhalten ist [hier](https://help.qlik.com/en-US/connectors/Subsystems/Web_Connectors_help/Content/Connectors_QWC/Install/troubleshooting_load.htm?l=DE-DE) beschrieben: 
+
+
