@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-administration-03
 layout: page
-title: Services
-description: Services
+title: SAP Connections
+description: SAP Connections
 product: erpconnect-services
 parent: ecscore-administration
 permalink: /:collection/:path
@@ -11,9 +11,9 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-service-applikation
 ---
 
-Im Karteireiter *Services* können Services zur Verbindung zu einem SAP System neu angelegt und verwaltet werden.  
+Im Karteireiter *SAP Connections* können Verbindungen zu einem oder mehreren SAP Systemen neu angelegt und verwaltet werden.  
 
-Klicken Sie auf *Add Service*, um einen neuen Service anzulegen.
+Klicken Sie auf *Add Service*, um eine neue Verbindung anzulegen.
 
 ![ecscore-managementsite4](/img/content/ecscore-managementsite4.jpg.png){:class="img-responsive"}
 
