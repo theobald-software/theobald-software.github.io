@@ -13,28 +13,24 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-service-applikation
 
 Im Karteireiter *SAP Connections* können Verbindungen zu einem oder mehreren SAP Systemen neu angelegt und verwaltet werden.  
 
-Klicken Sie auf *Add Service*, um eine neue Verbindung anzulegen.
+Klicken Sie auf *New SAP Connection*, um eine neue Verbindung anzulegen.
 
-![ecscore-managementsite4](/img/content/ecscore-managementsite4.jpg.png){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-1.jpg](/img/content/ecscore-managementsite_sapconnection-1.jpg){:class="img-responsive"}
 
 Machen Sie zunächst die Eingaben für folgende Felder:
 
-**Name** - 		Frei wählbarer Name für den Service
+**Name** - 		Frei wählbarer Name für die Verbindung
 
 **Client** -	SAP Mandantennummer.	Beispiel: 800
 
-**Language** -	Die Sprache in der die Anmeldung am SAP System erfolgen soll. Beispiel: EN
+**Language** -	Die Anmeldesprache am SAP-System. Beispiel: EN
 
-![ecscore-managementsite5](/img/content/ecscore-managementsite5.jpg.png){:class="img-responsive"}
-
-Tragen Sie anschließend die Werte ein für die Verbindungseinstellungen zu Ihrem SAP Systems. Sie haben folgende Alternativen:
+Tragen Sie anschließend die Werte  für die Verbindungseinstellungen zu Ihrem SAP-System ein. Sie haben folgende Alternativen:
 
 **Use Single Application** -	Ein einzelner Applikationsserver wird für die Verbindung verwendet. Tragen Sie den Host-Name und die Systemnummer ein.
 Server
 
 **Use Load Balancing** -	Wählen Sie diese Option, wenn sie das SAP Load Balancing benutzen und SAP dazu bringen wollen, einen bestimmten Server für die 	Verbindung zu nutzen. Tragen Sie den Messageserver, die Logon-Gruppe und die SAP System ID (SID) ein.   
-
-![ecscore-managementsite6](/img/content/ecscore-managementsite6.jpg.png){:class="img-responsive"}
 
 Tragen Sie anschließend die Angaben zur Authentifizierungsmethode ein, die für die Verbindung mit dem SAP System genutzt werden soll. Sie haben folgende Optionen:
 
@@ -52,24 +48,13 @@ Tragen Sie anschließend die Angaben zur Authentifizierungsmethode ein, die für
 **Use technical access** -			Bei technical access als Authentifizierungsmethode tragen Sie in die Felder Username und Password den Benutzername und das
 			Passwort des SAP-Benutzers ein.
 
-Sie können außerdem definieren, dass diese Service Applikation als Standard verwendet werden soll (nur sinnvoll bei mehreren Services). 
+Sie können eine SAP-Verbindung mit dem Haken bei *Set instance as the default sercvice* als Standard-Verbindung festlegen (sinnvoll bei mehreren Verbindungen). 
 
-![ecscore-managementsite7](/img/content/ecscore-managementsite7.jpg.png){:class="img-responsive"}
+Die angelegten Verdbindungen werden anschließend am linken Bildschirmrand aufgeführt und können jederzeit angepasst oder gelöscht werden.
 
-Die angelegten Services werden anschließend links aufgeführt und können jederzeit angepasst oder gelöscht werden.
+Sie müssen für jeden angelegten Service die Windows-Benutzer oder -Gruppen hinzufügen, die den Servicen nutzen dürfen. Standardmäßig ist die Gruppe *Everyone* bereits hinzugefügt. 
+Klicken Sie auf die neu hinterlegte Verdbinung und anschließend auf *Users*:
 
-![ecscore-managementsite8](/img/content/ecscore-managementsite8.jpg.png){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-2.jpg](/img/content/ecscore-managementsite_sapconnection-2.jpg){:class="img-responsive"}
 
-Sie müssen für jeden angelegten Service die Benutzer hinzufügen, die diesen Servicen nutzen dürfen.
-Klicken Sie auf den neu hinterlegten Service und anschließend auf *Users*:
-
-![ecscore-managementsite9](/img/content/ecscore-managementsite9.jpg.png){:class="img-responsive"}
-
-Neue User fügen Sie mit Add User hinzu. Es sind damit die User Ihres Windows Systems gemeint. Sie können nach Bedarf einzelne Windows User oder Gruppen hinzufügen. 
-
-
-![ecscore-managementsite10](/img/content/ecscore-managementsite10.jpg.png){:class="img-responsive"}
-
-Hinzugefügte Windows User oder Gruppen können jederzeit wieder entfernt werden.
-
-![ecscore-managementsite11](/img/content/ecscore-managementsite11.jpg.png){:class="img-responsive"}
+Hinzugefügte Windows-Benutzer oder -Gruppen können jederzeit wieder entfernt werden.
