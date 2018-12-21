@@ -16,3 +16,5 @@ On the Qlik Sense help site you can find how to activate it. Do a search for 'Di
 
 In Qlik Sense deactivate the Standard Mode in Qlik Management Console -> Engine Properties.<br> 
 In Qlik Sense Desktop open the file C:\Users\{user}\Documents\Qlik\Sense\Settings.ini in a text editor. <br>Change StandardReload=1 to StandardReload=0. Save the file and restart Qlik Sense.
+
+If you are getting a "Forbidde" error when executing a Qlik Sense report please consult this [help page](https://help.qlik.com/en-US/connectors/Subsystems/Web_Connectors_help/Content/Connectors_QWC/Install/troubleshooting_load.htm?l=DE-DE).
