@@ -13,7 +13,7 @@ lang: de_DE
 Über den Button „Extraction Settings“ können noch Einstellungen zum Verhalten vorgenommen werden:
 
 **Package Size<br>
-definiert, wieviele Daten in einem RFC-Call vom SAP geholt werden sollen. Werte zwischen 10.000 und 100.000 sind sinnvoll, aber nur wenn die Datenmenge entsprechend groß ist. Ansonsten ist es angezeigt, den Wert auf 0 zu belassen. Dann wird die komplette Ergebnismenge in einem Rutsch geholt.
+definiert, wieviele Datensätze in einem RFC-Call vom SAP geholt werden sollen. Werte zwischen 10.000 und 100.000 sind sinnvoll, aber nur wenn die Datenmenge entsprechend groß ist. Ansonsten ist es angezeigt, den Wert auf 0 zu belassen. Dann wird die komplette Ergebnismenge in einem Rutsch geholt.
 
 **Max Rows<br>
 definiert die maximale Anzahl von Zeilen in der Egebnismenge. Das kann sinnvoll sein, hier etwas anderes als 0 (=beliebig viele) anzugeben, wenn im weiteren Verlauf des Datenflusses nur wenig Daten benötigt werden (z.B. beim Testen)

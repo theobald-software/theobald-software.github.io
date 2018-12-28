@@ -21,4 +21,18 @@ Im Hauptdialog sehen Sie auf der linken Seite einen Baum, der die Query (oder de
 
 ![Designer](/img/content/xfa/bwcube02.png){:class="img-responsive"}
 
+## Auswahl der Einheiten bei den Kennzahlen 
+Über die Rechtmaustaste bei einer Kennzahl können Sie wählen, ob die Einheit angezeigt (show column unit / hide column unit) werden soll. 
+Wird die Einheit angezeigt, wird bei der Kennzahl ein entsprechendes Icon angezeigt.
 
+## Filtern von Dimensionen
+Über die Rechtmaustaste bei einer Dimension (Edit Filter) können Sie einen Filter definieren. 
+Wird ein Filter definiert, wird bei der Dimension ein entsprechendes Icon angezeigt.
+
+- Single Values
+Hier wählen Sie aus der Liste, welche Werte im Filter inkludiert werden sollen. 
+Über die Option **Exclue values from result set** können diese Werte exkludiert werden. 
+ 
+- Value Ranges 
+Hier definieren Sie mehrere Interevalle, welche im Filter inkludiert werden sollen. 
+Über die Option **Exclue values from result set** können diese Werte exkludiert werden. 
