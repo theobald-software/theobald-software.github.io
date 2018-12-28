@@ -38,6 +38,14 @@ unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit
 
 Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel SAP Customizing.
 
+
+**SAP Benutzerberechtigungen**
+ 	
+- Benutzerauthentifizierung (Benutzername und Passwort).
+- SAP Authentifizierung mit Single Sign On (SSO) und Kerberos
+- SAP Logon Ticket (über SAP Ticket Issuer)
+- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
+
 **Ports**
 
 Folgende Ports müssen abhängig vom SAP-System offen sein,
@@ -47,10 +55,6 @@ wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
 - SAP Message Server (Load Balancing): Port 36nn
 - Secure Communication Network (SCN): Port 48nn
 - SAP Router: Port 3399
-
-**Benutzerberechtigungen**
- 	
-SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **SAP-Lizenzen**
 
@@ -76,6 +80,8 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 - .NET Framework 4.5.2 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/de-DE/download/details.aspx?id=42643) herunterladen.
 
 **Hardware Anforderungen**
+
+Bitte beachten Sie an erster Stelle die Anforderung an den Alteryx Designer bzw. Server. 
  	
 - **Prozessorkerne**
 	Minimum: 2 Cores.<br>
@@ -94,17 +100,4 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 **32/64-Bit Umgebung**
  	
 - Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
-
-**Sicherheitseinstellungen**
- 	
-- Benutzerauthentifizierung.
-- SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
-- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
-
-**Netzwerkenistellungen**
- 	
-- Port 33nn muss offen sein, wobei nn = die Systemnummer des SAP-Systems ist.
-- Die Kommunikation zwischen BOARD Connector Designer und Service erfolgt standardmäßig über Port 8096.
-- Der Aufruf der Extraktionen erfolgt standardmäßgi über Port 8097.
-- Der BOARD Server verbindet sich mit dem BOARD Connector standardmäßig über Port 8098.
 
