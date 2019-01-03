@@ -21,6 +21,8 @@ In *Qlik Sense Desktop* open the file C:\Users\{user}\Documents\Qlik\Sense\Setti
 
 Since Qlik Sense June 2018 only port 5555 (default port of Qlik Web Connectors) is allowed for WebFile connectivity connecting to *http://localhost*. 
 Hence, if you are getting a *Forbidden* or *Access is denied* error when executing a Qlik Sense report please check the following help pages.
+
 [Cannot load data from Qlik Web Connectors](https://help.qlik.com/en-US/connectors/Subsystems/Web_Connectors_help/Content/Connectors_QWC/Install/troubleshooting_load.htm?l=DE-DE).
+
 ["Access is denied" when connecting to localhost with WebFile connection ](https://qliksupport.force.com/articles/000054581?_ga=2.234987393.1633897554.1546511952-1716671580.1545392499).
 
