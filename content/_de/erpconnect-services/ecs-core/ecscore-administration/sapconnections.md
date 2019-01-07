@@ -24,16 +24,16 @@ Machen Sie zunächst die Eingaben für folgende Felder:
 **Client** -	SAP Mandantennummer.	Beispiel: 800
 
 **Language** -	Die SAP Anmeldesprache. Beispiel: EN
-
-
+\
+\
 Tragen Sie anschließend die Werte  für die Verbindungseinstellungen zu Ihrem SAP-System ein. Sie haben folgende Alternativen:
 
 **Use Single Application** -	Ein einzelner Applikationsserver wird für die Verbindung verwendet. Tragen Sie den Host-Name und die Systemnummer ein.
 Server
 
 **Use Load Balancing** -	Wählen Sie diese Option, wenn sie das SAP Load Balancing benutzen und SAP dazu bringen wollen, einen bestimmten Server für die 	Verbindung zu nutzen. Tragen Sie den Messageserver, die Logon-Gruppe und die SAP System ID (SID) ein.   
-
-
+\
+\
 Tragen Sie anschließend die Angaben zur Authentifizierungsmethode ein, die für die Verbindung mit dem SAP-System genutzt werden soll. Sie haben folgende Optionen:
 
 **Use Secure Store** -		ECS Core nutzt einen Secure Store, um die SAP-Anmeldedaten des angemeldeten Windows-Benutzers zu erhalten.
@@ -51,8 +51,8 @@ Tragen Sie anschließend die Angaben zur Authentifizierungsmethode ein, die für
 			Passwort des SAP-Benutzers ein.
 
 Sie können eine SAP-Verbindung mit *Set instance as the default service* als Standard-Verbindung festlegen (sinnvoll bei mehreren Verbindungen). 
-
-
+\
+\
 Die angelegten Verbindungen werden anschließend am linken Bildschirmrand aufgeführt und können jederzeit angepasst oder gelöscht werden.
 
 Sie müssen für jede angelegte Verbindung die Windows-Benutzer oder -Benutzergruppen hinzufügen, die die Verbindung nutzen dürfen. Standardmäßig ist die Windows-Benutzergruppe *Everyone* bereits hinzugefügt. 
