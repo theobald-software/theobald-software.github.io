@@ -27,4 +27,4 @@ Klicken Sie auf den API Key, um die folgenden Optionen angezeigt zu bekommen:
 - Update
 - Remove
 
-Sie benötigen die Update Option, falls sich die Windows Zugangsdaten geändert haben.
+Sie benötigen die *Update* Option, falls sich die Windows Zugangsdaten geändert haben.

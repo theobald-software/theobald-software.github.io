@@ -1,5 +1,5 @@
 ---
-ref: ecs-core-administration-04
+ref: ecs-core-administration-06
 layout: page
 title: Settings
 description: Settings
@@ -7,7 +7,7 @@ product: erpconnect-services
 parent: ecscore-administration
 childidentifier: settings
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=settings
 ---

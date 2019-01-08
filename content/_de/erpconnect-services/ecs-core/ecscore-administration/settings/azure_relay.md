@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=azure_relay
 ---
 
-*Azure Service Bus* ist ein generisches Cloud-basiertes Messaging-System zur Verbindung von Anwendungen, Services und Geräten - egal wo diese sich befinden.
+*Azure Service Bus* ist ein generisches Cloud-basiertes Messaging-System zur Verbindung von Anwendungen, Services und Geräten - egal wo diese sich befinden. <br>
 **Azure Relay** heißt ein Dienst, der auf dem Service Bus aufsetzt und mit dem es möglich ist, On-Premise Webservices durch die Firewall in die Cloud zu tunneln. 
 
 Mit der Hilfe von Azure Service Bus und dem Azure Relay können Sie eine sichere System-Umgebung einrichten, entkoppelt von Ihrem Geschäftssystem mit ECS Core und SAP.
@@ -33,12 +33,12 @@ Kopieren Sie den kompletten *Primary Connection String* (Endpoint=sb://...).
 
 ![ecscore-azurerelay_2](/img/content/ecscore-azurerelay_2.png){:class="img-responsive"}
 
-Gehen Sie auf dem ECS Core Management Dashboard zu *Settings>Azure Relay* und führen mit *Add Relay Registration* eine neue Registrierung durch.
+Gehen Sie auf der ECS Core Management Site zu *Settings>Azure Relay* und führen mit *Add Relay Registration* eine neue Registrierung durch.
 Fügen Sie dafür den kopierten Connection String in das Feld ein und sichern Sie den Eintrag mit *Add Azure Relay Registration*.
 
 ![ecscore-azurerelay_3](/img/content/ecscore-azurerelay_3.jpg){:class="img-responsive"}
 
-Wichtig: Nach dem Hinzufügen einer eneu nAzure Relay Registrierung ist immer das Recyclen der ECS Core Application Pools in den IIS erforderlich. Sie können dies manuell vornehmen oder auf dem Management Dashboard unter *Settings>System Operations* <br
+Wichtig: Nach dem Hinzufügen einer neuen Azure Relay Registrierung ist zwingend das Recyclen der ECS Core Application Pools in den IIS erforderlich. Sie können dies manuell vornehmen oder auf der Management Site unter *Settings>System Operations* <br>
 mit der Funktion *Clear consumer website caches*.
 
 Im Azure Management Portal sollte nun das Relay mit vorgenommenen Registrierung aufgeführt sein.
