@@ -1,29 +1,29 @@
 ---
 ref: ecs-core-administration-01
 layout: page
-title: Management Site
-description: Management Site
+title: Management Dashboard
+description: Management Dashboard
 product: erpconnect-services
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=management_site1
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=management_dashboard
 ---
 
-Auf der Management Site wird die Konfiguration für ECS Core vorgenommen. 
+Auf dem Management Dashboard wird die Konfiguration für ECS Core vorgenommen. 
 
-Standardmäßig findet sich die *Management Site* unter http://localhost:8085. <br>
+Standardmäßig findet sich das *Management Dashboard* unter http://localhost:8085. <br>
 Die Webseite können Sie anschließend als Lesezeichen im Webbrowser speichern.<br>
-Die Management Site kann auch über den IIS Manager gestartet werden. 
+Das Management Dashboard kann auch über den IIS Manager gestartet werden. 
 
 Das initiale Benutzer/Passwort-Paar lautet admin/admin. Ändern Sie es am besten direkt nach der erstmaligen Anmeldung an der Management Site. Wie Sie das Passwort ändern können, ist unter *[Settings>Administrators]()* beschrieben. 
 
-Es stehen folgende Dienste auf der Management Site zur Verfügung:
+Es stehen folgende Dienste auf dem Management Dashboard zur Verfügung:
 
 **[ECS Core Dashboard](./ecscore-dashboard)**
 
-Hier bekommen Sie eine Übersicht aller Inhalte der Management Site. 
+Hier bekommen Sie eine Übersicht aller Inhalte des Management Dashboards. 
 
 **[SAP Connections](./sapconnections)**
 

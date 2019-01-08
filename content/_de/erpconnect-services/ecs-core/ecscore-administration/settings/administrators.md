@@ -11,16 +11,12 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=administrators
 ---
 
-Um Zugang zur Management Site zu erhalten, müssen Sie ein registrierter Adminsitrator sein. ECS Core Administratoren können im Administrators Karteireiter verwaltet und hinzugefügt werden. 
+Um Zugang zur Management Site zu erhalten, müssen Sie ein registrierter Adminsitrator sein. ECS Core Administratoren können im *Administrators* Karteireiter verwaltet und hinzugefügt werden. 
 
-![ecscore-managementsite21](/img/content/ecscore-managementsite21.jpg.png){:class="img-responsive"}
-
-Nach dem Deployment der Management Site sollten Sie einen neuen Administrator hinterlegen oder zumindest das Passwort für *admin* ändern. 
-
-![ecscore-managementsite23](/img/content/ecscore-managementsite23.jpg.png){:class="img-responsive"}
+Nach dem Deployment der Management Site sollten Sie einen neuen Administrator hinterlegen oder zumindest das Passwort für den Standard-Administrator *admin* ändern. 
 
 Um einen neuen Administrator anzulegen klicken Sie auf *Add user*.
 
-Benutzername und Kennwort sind frei wählbar, es besteht keine Verbindung zu Windows Usern.
-
-![ecscore-managementsite22](/img/content/ecscore-managementsite22.jpg.png){:class="img-responsive"}
+Benutzername und Kennwort sind frei wählbar, es besteht keine Verbindung zu Windows Usern. 
+Wichtig: Die dort hinzugefügten User dienen nicht nur als Administratoren für die Management Site, Sie können auch für das Deployment von Webservices im WebService Designer verwendet werden.
+Einzelheiten dazu finden Sie im Abschnitt *WebService Designer*. 
