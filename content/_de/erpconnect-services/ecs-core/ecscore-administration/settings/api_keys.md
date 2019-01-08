@@ -15,7 +15,7 @@ ECSCore unterstützt die Authentifizierung mit einem **API Key** (**A**pplicatio
 
 API Keys können als Authentifizierungsmethode verwendet werden, wenn der Zugriff nicht über benutzerspezifische Zugangsdaten erfolgen soll. 
 Ein API Key fungiert dabei als eindeutige Kennung und kann sehr einfach hinzugefügt, neu generiert oder entfernt werden. 
-Für zahlreiche Cloud-Szenarien stellt dies einen praktikablen und typischen Authentifizierungsmechanismus dar. Eine Gesamtübersicht zu den in ECS Core unterstützten Authentifizierungsmethoden finden Sie hier.
+Für zahlreiche Cloud-Szenarien stellt dies einen praktikablen und typischen Authentifizierungsmechanismus dar.
 
 
 Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt API Keys. Sie müssen einen API Key immer einem gültigen Windows Benutzer mit seinem entsprechenden Windows-Kennwort zuweisen.
