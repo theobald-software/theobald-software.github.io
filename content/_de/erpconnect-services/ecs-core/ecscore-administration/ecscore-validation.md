@@ -11,7 +11,8 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-validation
 ---
 
-Um sicherzustellen, dass alles korrekt konfiguriert ist und die Verbindungseinstellungen wie gewünscht funktionieren, können Sie die [tecs-Bibliothek](http://static.theobald-software.com/theobald.ecs.micro/) nutzen (empfohlen: Abschnitt *Live Test of your ECSCore*), sowie reines Javascript oder REST-Clients wie [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) oder [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox) verwenden, die als Browsererweiterungen frei verfügbar sind.
+Um sicherzustellen, dass alles korrekt konfiguriert ist und die Verbindungseinstellungen wie gewünscht funktionieren, können Sie die [tecs-Bibliothek](http://static.theobald-software.com/theobald.ecs.micro/) nutzen (empfohlen: Abschnitt *Live Test of your ECSCore*), sowie reines Javascript oder REST-Clients wie [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) oder [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox) verwenden, die als Browsererweiterungen frei verfügbar sind. <br>
+
 Wichtig: Der Test bezieht sich rein auf die hinterlegten SAP Verbindungen der Management Site ('Management Endpoint'). Für das Konsumieren von Services muss die *Services Site* ('Consumer Endpoint') verwendet werden. Näheres dazu finden Sie im Abschnitt *Webservice Authentifizierung*.  
 
 Mit tEcs:
@@ -30,10 +31,10 @@ tEcs.testSapConnection({
 
 In einem REST-Client müssen Sie den Authorization-Header manuell setzen (Authorisierungsmethode: 'No Auth'):
 
-z.B.
-Authorization = "Apikey 978854CD75AF44EE9ABF0D9CCEC9A3F9"
-Accept = application/json
-Content-Type = application/json 
+z.B. <br>
+Authorization = "Apikey 978854CD75AF44EE9ABF0D9CCEC9A3F9" <br>
+Accept = application/json <br>
+Content-Type = application/json <br>
 
 ![ecscore-restclienttest](/img/content/ecscore_restclienttest.png){:class="img-responsive"}
 
