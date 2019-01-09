@@ -1,14 +1,14 @@
 ---
-ref: ecs-core-administration-07
+ref: ecs-core-administration-05
 layout: page
 title: Web Services
 description: Web Services
 product: erpconnect-services
 parent: ecscore-administration
 permalink: /:collection/:path
-weight: 7
+weight: 5
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=extensions
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservices
 ---
 
 Im Menü *Web Services* lassen sich die Web Services verwalten. Es werden dort zum einen alle Web Services inklusive aller Service-Operationen angezeigt, die mit dem WebService Designer erstellt und zum Management Endpoint deployed wurden. 
