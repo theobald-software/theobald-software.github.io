@@ -12,8 +12,8 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-secure-store
 ---
 
 Unter *Secure Stores* kann ein Secure Store zur Authentifzierung hinzugefügt und verwaltet werden. 
-Ein Secure Store sorgt dafür, dass die existierenden Windows-Benutzer einen nahtlosen Zugriff auf das SAP-System mit eigenem SAP-Benutzer bekommen.
-Wichtig: Das Benuter-Mapping über einen Secure Store funktioniert nur, wenn die Anwendung die Windows-Benutzeridentität auch erkennt.
+Ein Secure Store sorgt dafür, dass die existierenden Windows-Benutzer einen nahtlosen Zugriff auf das SAP-System mit eigenem SAP-Benutzer bekommen. <br>
+Wichtig: Das Benutzer-Mapping über einen Secure Store funktioniert nur, wenn die Anwendung die Windows-Benutzeridentität auch erkennt.
 
 Gehen Sie zum Menü *Secure Stores* und fügen Sie mit *Add Secure Store* einen neuen, frei benennbaren Secure Store hinzu.
 
