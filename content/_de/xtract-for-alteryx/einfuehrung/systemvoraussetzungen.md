@@ -12,17 +12,23 @@ lang: de_DE
 
 **Alteryx**
  	
-- Version 2018 oder höher.
+- Alteryx Designer und Server ab Version 2018 oder höher.
 
 **SAP Releases**
- 	
+Grundsätzlich werden alle auf dem ABAP Netweaver Stack basierenden SAP-Systeme unterstützt. 
+
 - SAP R/3 Version 4.0B oder höher oder SAP ECC
-- SAP S/4 HANA
+- SAP S/4 HANA (on-premises)
 - SAP BW Version 3.1 oder höher
 - SAP BW/4 HANA
+- SAP-Systeme aus der Business Suite (CRM, SRM, SCM usw.) 
+- Alle auf SAP ABAP Netweaver Stack basierende Systeme (z.B. SAP Business All in One)
 
-Die Integration findet über den SAP-Applikationsserver statt. Daher spielt die Datenbank <br>
-unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit ohne Einschränkung unterstützt.
+Die von SAP zugekauften und nicht auf dem ABAP Netweaver Stack basierenden Systeme, wie z.B. Sybase, Ariba, Success Factors und Concur, werden nicht unterstützt.<br>
+Die Integration findet über den SAP-Applikationsserver statt. Daher spielt die Datenbank unter dem SAP-System keine Rolle. <br>
+Insbesondere SAP-Systeme auf HANA (wie S/4 HANA oder BW/4 HANA) werden somit ohne Einschränkung unterstützt.<br>
+Direkter Lesezugriff aus der HANA-Datenbank wird nicht unterstützt. <br>
+
 
 | Komponente    | SAP Release            | Anforderung an das SAP System                                        |
 |---------------|------------------------|----------------------------------------------------------------------|
@@ -38,6 +44,14 @@ unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit
 
 Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel SAP Customizing.
 
+
+**SAP Benutzerberechtigungen**
+ 	
+- Benutzerauthentifizierung (Benutzername und Passwort).
+- SAP Authentifizierung mit Single Sign On (SSO) und Kerberos
+- SAP Logon Ticket (über SAP Ticket Issuer)
+- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
+
 **Ports**
 
 Folgende Ports müssen abhängig vom SAP-System offen sein,
@@ -48,23 +62,18 @@ wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
 - Secure Communication Network (SCN): Port 48nn
 - SAP Router: Port 3399
 
-**Benutzerberechtigungen**
- 	
-SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
-
 **SAP-Lizenzen**
 
 Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich sein. Bitte dazu SAP kontaktieren.
 
 
-**Betriebssystem**
+**Unterstützte Windows-Betriebssysteme**
  	
-- Windows XP
-- Windows Vista
+Grundsätzlich alle von Microsoft momentan untersützten Windows-Betriebssysteme.
+
 - Windows 7
 - Windows 8
 - Windows 10
-- Windows Server 2003
 - Windows Server 2008
 - Windows Server 2008 R2
 - Windows Server 2012
@@ -73,38 +82,17 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 
 **Andere Anwendungen und Frameworks**
  	
-- .NET Framework 4.5.2 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/de-DE/download/details.aspx?id=42643) herunterladen.
+- .NET Framework 4.7.1 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/en-US/download/details.aspx?id=56116) herunterladen.
+- Visual C++ 2005 Laufzeit-Bibliothek ist benötigt und wird mitinstalliert.
 
 **Hardware Anforderungen**
+
+Bitte beachten Sie an erster Stelle die Anforderung an den Alteryx Designer bzw. Server. 
  	
-- **Prozessorkerne**
-	Minimum: 2 Cores.<br>
-	1 zusätzlicher Prozessorkern ist erforderlich für jede parallele Extraktion.
-
-- **Prozessorgeschwindigkeit**
-	Minimum: 1.4 GHz, Empfohlen: 2.0 GHz oder schneller
-
 - **Arbeitsspeicher**
 	Der Verbrauch des Arbeitsspeichers hängt von vielen Faktoren ab, u.a. vom Komponententyp, Anzahl der Spalten und Anzahl der Zeilen pro Paket (d.h. package size). Z.B. benötigt die BW Cube Komponente im Vergleich mehr Speicher als die Table-Komponente.<br>
 	Minimum: 8 GB, Empfohlen: 12 GB oder mehr abhängig vom Datenvolumen.
 
 - **Festplattenspeicher**
 	Für die Installation werden 150 MB Festplattenspeicher benötigt. 
-
-**32/64-Bit Umgebung**
- 	
-- Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
-
-**Sicherheitseinstellungen**
- 	
-- Benutzerauthentifizierung.
-- SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
-- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
-
-**Netzwerkenistellungen**
- 	
-- Port 33nn muss offen sein, wobei nn = die Systemnummer des SAP-Systems ist.
-- Die Kommunikation zwischen BOARD Connector Designer und Service erfolgt standardmäßig über Port 8096.
-- Der Aufruf der Extraktionen erfolgt standardmäßgi über Port 8097.
-- Der BOARD Server verbindet sich mit dem BOARD Connector standardmäßig über Port 8098.
 

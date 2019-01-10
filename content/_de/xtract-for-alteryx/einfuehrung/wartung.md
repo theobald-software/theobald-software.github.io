@@ -10,10 +10,7 @@ weight: 4
 lang: de_DE
 ---
 
-Im Rahmen der Wartung wird garantiert, dass der BOARD gemäß dem Handbuch fehlerfrei läuft und mit den neuesten SAP- und BOARD Versionen harmoniert. 
-
-Bei technischen Schwierigkeiten kann der Support per Telefon oder per Mail erreicht werden.
-
-Sechs Monate Wartung sind bereits in der Lizenz enthalten, danach kann jeweils jährliche Wartung für 20% des aktuell gültigen Lizenzpreises dazugekauft werden.
-
-Bei ausgelaufener Wartung verfällt das Anrecht auf Updates und Support.
+Im Rahmen der Wartung wird garantiert, dass das Produkt Xtract for Alteryx gemäß dem Handbuch fehlerfrei läuft und mit den neuesten SAP- und Alteryx-Versionen harmoniert. <br>
+Bei technischen Schwierigkeiten kann der Support per Telefon oder per Mail erreicht werden.<br>
+Sechs Monate Wartung sind bereits in der Lizenz enthalten, danach kann jeweils jährliche Wartung für 20% des aktuell gültigen Lizenzpreises dazugekauft werden.<br>
+Bei ausgelaufener Wartung verfällt das Anrecht auf Updates und Support.<br>
