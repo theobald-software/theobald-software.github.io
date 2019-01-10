@@ -1,12 +1,12 @@
 ---
-ref: xfa-table-02
+ref: xfa-table-03
 layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-for-alteryx
 parent: table
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 ---
 
@@ -28,6 +28,10 @@ definiert die Logik für die Benneung der Spalten:
 - Code bennent die Spalten mit dem technischen Namen des Originalelements 
 - CodeAndText mit dem technischen Namen und der Klarschrift 
 - TextAndCode mit Larschrift und dann dem technischen Namen
+
+**Function Module**<br>
+Hier werden die Funktionsbausteine aus Ihrem SAP-System aufgelistet, welche für die Datenextraktion verwendet werden können. <br>
+Falls Sie unsere mitgelieferten Funktionsbaustein (Z_THEO_READ_TABLE) installiert haben, wird er automatisch gewählt. <br>
 
 
 ![Designer](/img/content/xfa/bwcube04.png){:class="img-responsive"}
