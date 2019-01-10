@@ -8,7 +8,7 @@ parent: webservices
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice_auhtentifizierung_
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice_authentifizierung
 ---
 
 Webservice Authentifizierung in ECS Core betrifft zwei Bereiche:
@@ -76,46 +76,46 @@ Allgemeine Einstellungen für REST Webservice Aufrufe in einem REST Client:
 
 Verbindungseinstellungen mit API Key (nur unterstützt mit Azure Relay):
 
-__Authorization__
+*Authorization*
                 
 *Type:* 			No Auth
 
-__Headers__
+*Headers*
 
 *Authorization:*      	APIKEY [In ECS Core erstellter API Key]<br>
 *Accept:*                	application/json (XMLnicht unterstützt)<br>
 *Content-Type:*      	application/json (XML nicht unterstützt) 
 
-![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.jpg){:class="img-responsive"}
+![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.png){:class="img-responsive"}
 
 Verbindungseinstellungen mit Basic Authentifizierung:
 
-__Authorization__		   
+*Authorization*	   
 
 *Type:* 				   Basic Auth<br>
 *Username:*			   Windows Benutzername (unterstützt mit Domäne)<br>
 *Password:*			   Windows Passwort
 
-__Headers__
+*Headers*
 
 *Authorization:*      		Basic Schlüssel (Automatisch generiert)<br>
 *Accept:*                		application/json (XML nicht unterstützt)<br>
 *Content-Type:*      		application/json (XML nicht unterstützt) 
 
-![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.jpg){:class="img-responsive"}
+![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.png){:class="img-responsive"}
 
-![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.jpg){:class="img-responsive"}
+![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.png){:class="img-responsive"}
 
 Verbindungseinstellungen mit Windows Authentifizierung:  
 
-__Authorization__ 
+*Authorization* 
 
 *Type:* 				   NTLM Authentication<br>
 *Username:*			   Windows Benutzername<br>
 *Password:*			   Windows Passwort<br>
 *Domain (Optional):*	   Domänen-Name	
  
-__Headers__
+*Headers*
 
 *Authorization:*      		NTLM Schlüssel (Automatisch generiert)<br>
 *Accept:*                		application/json (XML nicht unterstützt)<br>
