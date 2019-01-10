@@ -21,13 +21,14 @@ Grundsätzlich werden alle auf dem ABAP Netweaver Stack basierenden SAP-Systeme 
 - SAP S/4 HANA (on-premises)
 - SAP BW Version 3.1 oder höher
 - SAP BW/4 HANA
-- Alle SAP-Systeme aus der Business Suite (CRM, SRM, SCM usw.) 
+- SAP-Systeme aus der Business Suite (CRM, SRM, SCM usw.) 
+- Alle auf SAP ABAP Netweaver Stack basierende Systeme (z.B. SAP Business All in One)
 
-Die Integration findet über den SAP-Applikationsserver statt. Daher spielt die Datenbank <br>
-unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA (wie S/4 HANA oder BW/4 HANA) werden somit ohne Einschränkung unterstützt.
+Die von SAP zugekauften und nicht auf dem ABAP Netweaver Stack basierenden Systeme, wie z.B. Sybase, Ariba, Success Factors und Concur, werden nicht unterstützt.<br>
+Die Integration findet über den SAP-Applikationsserver statt. Daher spielt die Datenbank unter dem SAP-System keine Rolle. <br>
+Insbesondere SAP-Systeme auf HANA (wie S/4 HANA oder BW/4 HANA) werden somit ohne Einschränkung unterstützt.<br>
+Direkter Lesezugriff aus der HANA-Datenbank wird nicht unterstützt. <br>
 
-Direkter Lesezugriff aus der HANA-Datenbank wird nicht unterstützt. 
-Die von SAP zugekauften und nicht auf dem ABAP Netweaver Stack basierenden Systeme, wie z.B. Sybase, Ariba, Success Factors und Concur, werden nicht unterstützt.  
 
 | Komponente    | SAP Release            | Anforderung an das SAP System                                        |
 |---------------|------------------------|----------------------------------------------------------------------|
@@ -49,7 +50,7 @@ Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizi
 - Benutzerauthentifizierung (Benutzername und Passwort).
 - SAP Authentifizierung mit Single Sign On (SSO) und Kerberos
 - SAP Logon Ticket (über SAP Ticket Issuer)
-- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
+- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
 
 **Ports**
 
@@ -82,6 +83,7 @@ Grundsätzlich alle von Microsoft momentan untersützten Windows-Betriebssysteme
 **Andere Anwendungen und Frameworks**
  	
 - .NET Framework 4.7.1 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/en-US/download/details.aspx?id=56116) herunterladen.
+- Visual C++ 2005 Laufzeit-Bibliothek ist benötigt und wird mitinstalliert.
 
 **Hardware Anforderungen**
 
