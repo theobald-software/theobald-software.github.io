@@ -45,19 +45,20 @@ wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
 - Secure Communication Network (SCN): Port 48nn
 - SAP Router: Port 3399
 
-**Benutzerberechtigungen**
+**Sicherheitseinstellungen**
  	
-SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
+- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungosbjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
+- SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
+
 
 **SAP-Lizenzen**
-
 Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich sein. Bitte dazu SAP kontaktieren.
 
 {% include _content/de/operating-systems.md %}
 
 **Andere Anwendungen und Frameworks**
  	
-- .NET Framework 4.5.2 oder höher. Das Famework können Sie hier herunterladen.
+- .NET Framework 4.5.2 oder höher. Das Famework können Sie von der Microsoft-Webseite herunterladen.
 
 **Hardware Anforderungen**
  	
@@ -79,11 +80,6 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
  	
 - Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
 
-**Sicherheitseinstellungen**
- 	
-- Benutzerauthentifizierung.
-- SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
-- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungosbjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
 
 **Zielumgebungen (Destinations)**
 
