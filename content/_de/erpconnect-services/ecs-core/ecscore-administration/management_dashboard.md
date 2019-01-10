@@ -8,7 +8,7 @@ parent: ecscore-administration
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=management_site1
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=management_dashboard
 ---
 
 Auf der Management Site wird die Konfiguration für ECS Core vorgenommen. 
@@ -23,7 +23,7 @@ Es stehen folgende Dienste auf der Management Site zur Verfügung:
 
 **[ECS Core Dashboard](./ecscore-dashboard)**
 
-Hier bekommen Sie eine Übersicht aller Inhalte der Management Site. 
+Hier bekommen Sie eine Übersicht aller Inhalte des Management Site. 
 
 **[SAP Connections](./sapconnections)**
 
@@ -39,5 +39,5 @@ Hier lassen sich die Web Services verwalten.
 
 **[Settings](./settings)**
 
-Hier lassen sich Lizenzen hinzufügen, ECS Core Administratoren festlegen, API Schlüssel verwalten, eine Verbindung zu einem *Azure Relay* herstellen und bestimmte Systemoperationen durchführen.
+Hier lassen sich Lizenzen hinzufügen, ECS Core Administratoren festlegen, API Schlüssel verwalten, eine Registrierung mit einem *Azure Relay* herstellen und bestimmte Systemoperationen durchführen.
 

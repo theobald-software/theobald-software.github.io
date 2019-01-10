@@ -13,30 +13,37 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice_auhtentifizierun
 
 Webservice Authentifizierung in ECS Core betrifft zwei Bereiche:
 
-1. *Authentifzierung zwischen dem WebService Designer und ECS Core*: Dies bezieht sich auf das Deployment eines Webservice auf den ECS Core Server. 
+1. *Authentifzierung zwischen dem WebService Designer und ECS Core*: Dies bezieht sich auf das Deployment eines Webservice auf den ECS Core Server. Deployed wird zur Management Site mit Standard-Port 8085 ("Management Endpoint").
  
-2. *Authentifizierung zwischen einem Webservice Konsumenten und ECS Core*: Dies bezieht sich auf einen Webservice Aufruf von einer Konsumentenanwendung (z.B. Cloud App, Workflow etc.)
+2. *Authentifizierung zwischen einem Webservice Konsumenten und ECS Core*: Dies bezieht sich auf einen Webservice Aufruf von einer Konsumentenanwendung (z.B. Cloud App, Workflow etc.). Konsumiert wird von der Services Site mit Standard-Port 8080 ("Consumer Endpoint").
 
-Die folgenden Authentifizierungsmethoden werden unterstützt: 
 
-- *Authentifzierung mit API Key (empfohlen mit HTTPS)*: Ein dedizierter API Key erstellt auf der ECS Core Management Site wird für die Authentifizierung verwendet. 
+Die folgenden Authentifizierungsmethoden werden für das Deployment von Webservices mit dem WebService Designer unterstützt: 
+
+- *Deployment mit API Key*: Ein dedizierter API Key erstellt auf der ECS Core Management Site wird für die Authentifizierung verwendet. Der API Key muss für das Deployment auf einen Benutzer der ECS Core Management Site erstellt worden sein (anlegbar unter *Administrators*).
+
+- *Deployment mit Basic Credentials*: Hier wird zur Authentifizierung ein Benutzer verwendet, der auf der ECS Core Management Site unter *Administrators* angelegt wurde. Windows Credentials werden für das Deployment nicht untertstützt!    
+
+
+Die folgenden Authentifizierungsmethoden werden für das Konsumieren von Webservices unterstützt: 
+
+- *Authentifzierung mit API Key (nur unterstützt in Kombination mit Azure Relay)*: Ein dedizierter API Key erstellt auf der ECS Core Management Site wird für die Authentifizierung verwendet. Der API Key muss für das Konsumieren auf einen Windows Benutzer oder Windows-Benutzergruppe erstellt worden sein.  
 
 - *Basic Authentifizierung (empfohlen mit HTTPS)*: Windows Basic Authentication wird zur Authentifizierung verwendet.
 
-- *Windows Authentifizierung (NTLM)*: Wird für das Webservice Deployment unterstützt. Dabei wird der lokale Windows Benutzer und Kennwort zur Authentifizierung verwendet. Das ermöglicht, dass sich der Webservice-Ersteller von jeder Maschine im AD verbinden kann, vorausgesetzt der Account wird auf dem ECS Core Server erkannt. <br>
+- *Windows Authentifizierung (NTLM)*: Der lokale Windows Benutzer mit seinen Credentials wird zur Authentifizierung verwendet. Das ermöglicht, dass sich der Webservice-Ersteller von jeder Maschine im Active Directory verbinden kann, vorausgesetzt der Account wird auf dem ECS Core Server erkannt. <br>
 Zum Konsumieren eines Webservice kann diese Methode nur verwendet werden, wenn dies die Client-Anwendung unterstützt.
   
-- *Authentifizierung mit Azure Service Bus (standardmäßig mit HTTPS)*: Die Authentifzierung über einen Azure Service Bus wird separat hier beschrieben.
  
 **Authentifizierung zwischen dem WebService Designer und ECS Core** 
 
-Wenn Sie einen REST Service verwenden möchten, den Sie mit dem WebService Designer erstellt haben, müssen Sie den zunächst nach ECS Core deployen. Die Verbindungseinstellungen und Authentifzierung für das Deployment müssen im Connection Dialog eingerichtet werden (*Edit Connection*). 
+Die Verbindungseinstellungen und Authentifzierung für das Deployment müssen im *Server Connection Dialog* hinterlegt werden (im WebService Designer Menü unter *Connections*). 
 
 
 **Verbindungseinstellungen mit API Key**:
 
-**Base URL:** 	http://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)] <br>
-**API Key:**   	ECSCore API key (BASE64 verschlüsselt oder nicht)  
+**Management Endpoint URL:** 	http://[ECS Core Server]:[ECS Core Management Site port (Standard 8085)] <br>
+**API Key:**   	ECS Core API key  
 
 Beispiel:
 
@@ -44,34 +51,26 @@ Beispiel:
 
 **Verbindungseinstellungen mit Basic Authentication:**
 
-**Base URL:** 	http://[ECS Core Server]:[ECS Core Services Site port (8080 by default)] <br>
-**Username:** 	Windows Benutzername<br>
-**Password:** 	Windows Passwort
+**Management Endpoint URL:** 	http://[ECS Core Server]:[ECS Core Management Site port (Standard 8085)] <br>
+**Username:** 	Benutzername eines Dashboard-Users der ECS Core Management Site<br>
+**Password:** 	Für den Dashboard-User auf der Management Site definiertes Passwort 
 
 Beispiel: 
 
 ![ecscore-webservices21](/img/content/ecscore-webservices21.png){:class="img-responsive"}
 
-**Verbindungseinstellungen mit Windows Authentifizierung:**
-
-**Base URL:** 	http://[ECS Core Server oder localhost (wenn auf derselben Maschine wie ECS Core)]:[ECS Core Services Site port (Standard 8080)] <br>
-**Username:** 	Kann freigelassen werden (lokaler Windows Benutzer wird verwendet)<br>
-**Password:** 	Kann freigelassen werden (Passwort für lokalen Windows Benutzer wird verwendet) 
-
-![ecscore-webservices29](/img/content/ecscore-webservices29.png){:class="img-responsive"}
-
-Mit Test können Sie die Verbindungseinstellungen testen. 
+Mit *Test* können Sie die Verbindungseinstellungen testen. 
 
 **Authentifizierung zwischen einem Webservice Konsumenten und ECS Core**
    
-Zwischen dem Webservice Konsumenten und ECS Core sind dieselben Authentifizierungsmethoden unterstützt. Der Webservice Konsument kann beispielsweise ein REST Client, ein Workflow, eine JavaScript App, etc. sein.   
+Zwischen dem Webservice Konsumenten und ECS Core werden die oben aufgeführten Authentifizierungsmethoden unterstützt. Der Webservice Konsument kann beispielsweise ein REST Client, ein Workflow, eine JavaScript App, etc. sein.   
 
-Die Verbindungseinstellungen für einen Webservice Aufruf einzurichten wird hier anhand des *Postman* REST Clients erläutert. Diese Einstellungen können zum Beispiel übertragen werden für REST Service Aufrufe in einer Workflowanwendung (z.B. Flow, Nintex). Falls Sie nur schnell die Funktionalität eines neu erstellten Webservices testen möchten, verwenden Sie bitte den Testdialog im WebService Designer. 
+Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielhaft anhand des *Postman* REST Clients erläutert. Diese Einstellungen können zum Beispiel übertragen werden für REST Service Aufrufe in einer Workflowanwendung (z.B. Flow, Nintex). 
 
 **Allgemeine Einstellungen für REST Webservice Aufrufe in einem REST Client**
 
 **Webservice Methode:** 	POST<br>
-**Webservice URL:** 		http(s)://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der                                                           Webservice Operation]<br>
+**Webservice URL:** 		http(s)://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der Webservice Operation]<br>
 **Params:** 				Skalare Eingabeparameter (werden automatisch zur URL hinzugefügt)
 
 **Verbindungseinstellungen mit API Key**
@@ -82,7 +81,7 @@ Die Verbindungseinstellungen für einen Webservice Aufruf einzurichten wird hier
 
 *Headers*
 
-**Authorization:**      	APIKEY [BASE64 verschlüsster ECSCore API key]<br>
+**Authorization:**      	APIKEY [In ECS Core erstellter API Key]<br>
 **Accept:**                	application/json (XMLnicht unterstützt)<br>
 **Content-Type:**      	application/json (XML nicht unterstützt) 
 

@@ -12,13 +12,13 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=anwendungsentwicklung-mit-ecs-core
 ---
 
-Mit **ECS Core** haben Programmierer ein ideales Werkzeug zur Entwicklung von Anwendungen für SharePoint Online/ Office 365. 
+Mit **ECS Core** haben Programmierer ein ideales Werkzeug zur Entwicklung von Anwendungen für SharePoint Online/ Office 365 und anderen Cloud- oder Nicht-Cloud-basierten Umgebungen. 
 
 Anwendungen mit ECS Core können eine beliebige Programmiersprache verwenden, welche REST Services konsumieren kann. 
 
 **JavaScript library für REST**
 
-Für die Entwicklung mit ECS REST Services und JavaScript empfehlen wir die Nutzung unserer [JavaScript library](http://static.theobald-software.com/theobald.ecs.micro/5.4.2/) (tEcs),  
+Für die Entwicklung mit ECS REST Services und JavaScript empfehlen wir die Nutzung unserer [JavaScript library](http://static.theobald-software.com/theobald.ecs.micro/) (tEcs),  
 welche die Clientseitige Programmierung mit ECS vereinfacht, indem bestimmte ECS-Funktionalitäten gekapselt werden. 
 
 **App Entwicklung** 
