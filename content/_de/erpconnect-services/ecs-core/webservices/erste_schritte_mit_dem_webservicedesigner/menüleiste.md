@@ -4,7 +4,7 @@ layout: page
 title: Menüleiste
 description: Menüleiste
 product: erpconnect-services
-parent: erste_schritte_mit_dem_webservice_designer
+parent: erste_schritte_mit_dem_webservicedesigner
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
@@ -15,6 +15,7 @@ In der Menüleiste des ECS Core WebService Designers sind folgende Punkte auswä
 
 ![WSD-11](/img/content/ecscore-wsd_11.jpg){:class="img-responsive"}
 
+
 *Connections*
 Hier wird die Server- und SAP-Verbindung definiert.
 
@@ -22,17 +23,11 @@ Hier wird die Server- und SAP-Verbindung definiert.
 In diesem Menüabschnitt finden sich folgende Aktionen:
 - *Open*: Öffnen eines bereits deployten Webservices vom ECS Core Server.
 
-![WSD-12](/img/content/ecscore-wsd_12.jpg){:class="img-responsive"}
-
 - *Import*: Importieren von Webservice-Operationen eines anderen deployten Webservice zum geöffneten Webservice. Es können einzelne oder alle Operationen hinzugefügt werden. 
-
-![WSD-13](/img/content/ecscore-wsd_13.jpg){:class="img-responsive"}
 
 - *Deploy*: Deployment eines neu angelegten Webservice zum ECS Core Server. 
 
-- *Remove*: Entfernen von Webservices vom ECS Core Server.
-
-![WSD-14](/img/content/ecscore-wsd_14.jpg){:class="img-responsive"}         
+- *Remove*: Entfernen von Webservices vom ECS Core Server. 
   
 
 *Project Actions*
@@ -47,7 +42,7 @@ Dieser Menüabschnitt bezieht sich auf neue Webservice-Projekte und beinhaltet f
 - *Recent*: Zugriff auf kürzlich geöffnete Webservice-Definitionen.
 
 *Options*
-In diesem Menüabschnitt finden sich erweiterte Optionen für Webservice-Projekte allgemein und für den Export ins OpenApi-Format:
+In diesem Menüabschnitt finden sich erweiterte Optionen für Webservice-Projekte allgemein und für den Export ins OpenApi-Format.
 
 Project Options:
 - *Underlying SAP system is using UNICODE encoding (Default: Yes)*: Auswahl UNICODE-System oder nicht.
