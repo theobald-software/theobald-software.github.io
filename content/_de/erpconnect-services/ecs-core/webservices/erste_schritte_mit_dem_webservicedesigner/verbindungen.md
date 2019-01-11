@@ -4,9 +4,10 @@ layout: page
 title: Verbindungen
 description: Verbindungen
 product: erpconnect-services
-parent: erste_schritte_mit_dem_webservice_designer
+parent: erste_schritte_mit_dem_webservicedesigner
+childidentifier: verbindungen
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=verbindungen
 ---
