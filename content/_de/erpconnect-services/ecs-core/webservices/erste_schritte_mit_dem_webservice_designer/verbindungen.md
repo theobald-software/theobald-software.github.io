@@ -5,7 +5,6 @@ title: Verbindungen
 description: Verbindungen
 product: erpconnect-services
 parent: erste_schritte_mit_dem_webservice_designer
-childidentifier: verbindungen
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
