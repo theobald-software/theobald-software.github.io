@@ -8,7 +8,7 @@ parent: webservices
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice_auhtentifizierung_
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice_authentifizierung
 ---
 
 Webservice Authentifizierung in ECS Core betrifft zwei Bereiche:
@@ -40,24 +40,24 @@ Zum Konsumieren eines Webservice kann diese Methode nur verwendet werden, wenn d
 Die Verbindungseinstellungen und Authentifzierung für das Deployment müssen im *Server Connection Dialog* hinterlegt werden (im WebService Designer Menü unter *Connections*). 
 
 
-**Verbindungseinstellungen mit API Key**:
+Verbindungseinstellungen mit API Key:
 
-**Management Endpoint URL:** 	http://[ECS Core Server]:[ECS Core Management Site port (Standard 8085)] <br>
-**API Key:**   	ECS Core API key  
+*Management Endpoint URL*: 	http://[ECS Core Server]:[ECS Core Management Site port (Standard 8085)] <br>
+*API Key:*   	ECS Core API key  
 
 Beispiel:
 
-![ecscore-webservices23](/img/content/ecscore-webservices23.png){:class="img-responsive"}
+![ecscore-webservicetest_1](/img/content/ecscore-webservicetest_1.jpg){:class="img-responsive"}
 
-**Verbindungseinstellungen mit Basic Authentication:**
+Verbindungseinstellungen mit Basic Authentication:
 
-**Management Endpoint URL:** 	http://[ECS Core Server]:[ECS Core Management Site port (Standard 8085)] <br>
-**Username:** 	Benutzername eines Dashboard-Users der ECS Core Management Site<br>
-**Password:** 	Für den Dashboard-User auf der Management Site definiertes Passwort 
+*Management Endpoint URL:* 	http://[ECS Core Server]:[ECS Core Management Site port (Standard 8085)] <br>
+*Username:* 	Benutzername eines Dashboard-Users der ECS Core Management Site<br>
+*Password:* 	Für den Dashboard-User auf der Management Site definiertes Passwort 
 
 Beispiel: 
 
-![ecscore-webservices21](/img/content/ecscore-webservices21.png){:class="img-responsive"}
+![ecscore-webservicetest_1](/img/content/ecscore-webservicetest_2.jpg){:class="img-responsive"}
 
 Mit *Test* können Sie die Verbindungseinstellungen testen. 
 
@@ -67,59 +67,60 @@ Zwischen dem Webservice Konsumenten und ECS Core werden die oben aufgeführten A
 
 Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielhaft anhand des *Postman* REST Clients erläutert. Diese Einstellungen können zum Beispiel übertragen werden für REST Service Aufrufe in einer Workflowanwendung (z.B. Flow, Nintex). 
 
-**Allgemeine Einstellungen für REST Webservice Aufrufe in einem REST Client**
+Allgemeine Einstellungen für REST Webservice Aufrufe in einem REST Client:
 
-**Webservice Methode:** 	POST<br>
-**Webservice URL:** 		http(s)://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der Webservice Operation]<br>
-**Params:** 				Skalare Eingabeparameter (werden automatisch zur URL hinzugefügt)
+*Webservice Methode:* 	POST<br>
+*Webservice URL (ohne Azure Relay):* 		http(s)://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der Webservice Operation]<br>
+*Webservice URL (mit Azure Relay):*		https://[Service Bus Name].servicebus.windows.net/ecs/ws/custom/[Webservice Name]/[Name der Webservice Operation]<br>	 
+*Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
 
-**Verbindungseinstellungen mit API Key**
+Verbindungseinstellungen mit API Key (nur unterstützt mit Azure Relay):
 
 *Authorization*
                 
-**Type:** 			No Auth
+*Type:* 			No Auth
 
 *Headers*
 
-**Authorization:**      	APIKEY [In ECS Core erstellter API Key]<br>
-**Accept:**                	application/json (XMLnicht unterstützt)<br>
-**Content-Type:**      	application/json (XML nicht unterstützt) 
+*Authorization:*      	APIKEY [In ECS Core erstellter API Key]<br>
+*Accept:*                	application/json (XMLnicht unterstützt)<br>
+*Content-Type:*      	application/json (XML nicht unterstützt) 
 
-![ecscore-webservices26](/img/content/ecscore-webservices26.png){:class="img-responsive"}
+![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.png){:class="img-responsive"}
 
-**Verbindungseinstellungen mit Basic Authentifizierung**
-
-*Authorization*		   
-
-**Type:** 				   Basic Auth<br>
-**Username:**			   Windows Benutzername (unterstützt mit Domäne)<br>
-**Password:**			   Windows Passwort
-
-*Headers*
-
-**Authorization:**      		Basic Schlüssel (Automatisch generiert)<br>
-**Accept:**                		application/json (XML nicht unterstützt)<br>
-**Content-Type:**      		application/json (XML nicht unterstützt) 
-
-![ecscore-webservices24](/img/content/ecscore-webservices24.png){:class="img-responsive"}
-
-![ecscore-webservices25](/img/content/ecscore-webservices25.png){:class="img-responsive"}
-
-**Verbindungseinstellungen mit Windows Authentifizierung**  
+Verbindungseinstellungen mit Basic Authentifizierung:
 
 *Authorization*	   
 
-**Type:** 				   NTLM Authentication<br>
-**Username:**			   Windows Benutzername<br>
-**Password:**			   Windows Passwort<br>
-**Domain (Optional):**	   Domänen-Name	
+*Type:* 				   Basic Auth<br>
+*Username:*			   Windows Benutzername (unterstützt mit Domäne)<br>
+*Password:*			   Windows Passwort
+
+*Headers*
+
+*Authorization:*      		Basic Schlüssel (Automatisch generiert)<br>
+*Accept:*                		application/json (XML nicht unterstützt)<br>
+*Content-Type:*      		application/json (XML nicht unterstützt) 
+
+![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.png){:class="img-responsive"}
+
+![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.png){:class="img-responsive"}
+
+Verbindungseinstellungen mit Windows Authentifizierung:  
+
+*Authorization* 
+
+*Type:* 				   NTLM Authentication<br>
+*Username:*			   Windows Benutzername<br>
+*Password:*			   Windows Passwort<br>
+*Domain (Optional):*	   Domänen-Name	
  
 *Headers*
 
-**Authorization:**      		NTLM Schlüssel (Automatisch generiert)<br>
-**Accept:**                		application/json (XML nicht unterstützt)<br>
-**Content-Type:**      		application/json (XML nicht unterstützt) 
+*Authorization:*      		NTLM Schlüssel (Automatisch generiert)<br>
+*Accept:*                		application/json (XML nicht unterstützt)<br>
+*Content-Type:*      		application/json (XML nicht unterstützt) 
 
-![ecscore-webservices30](/img/content/ecscore-webservices30.png){:class="img-responsive"}
+![ecscore-webservicetest_7](/img/content/ecscore-webservicetest_7.jpg){:class="img-responsive"}
 
-![ecscore-webservices31](/img/content/ecscore-webservices31.png){:class="img-responsive"}
+![ecscore-webservicetest_8](/img/content/ecscore-webservicetest_8.jpg){:class="img-responsive"}
