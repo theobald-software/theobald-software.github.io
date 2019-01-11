@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=sap_verbindung
 
 Im Hauptbildschirm des WebService Designers klicken sie im Ribbon bei *Connections* auf *SAP...*.
 
-Der *SAP Connection* Dialog öffnet sich.
+Der *SAP Connection Dialog* öffnet sich.
 
 Ergänzen Sie die nachfolgenden Parameter:
 
@@ -32,8 +32,6 @@ Wählen Sie eine der folgenden Optionen für die Verbindung zu Ihrem SAP System:
 **Group / SID** -	Gruppe und System ID für die SAP Serverauswahl.<br>
 **Use HTTP / Web Service** -	Wählen Sie diese Option, wenn sie auf die SAP Web Services zugreifen wollen.<br>
 **HTTP-URL** -	Die URL für die SAP Web Services.
-
-![ecscore-webservices1](/img/content/ecscore-wsd_1.png){:class="img-responsive"}
 
 Benutzen Sie die Test Connection Schaltfläche, um die Verbindung zu überprüfen.
 

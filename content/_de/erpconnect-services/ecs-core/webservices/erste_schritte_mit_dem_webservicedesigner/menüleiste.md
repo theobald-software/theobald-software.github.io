@@ -16,8 +16,8 @@ In der Menüleiste des ECS Core WebService Designers sind folgende Punkte auswä
 ![WSD-11](/img/content/ecscore-wsd_11.jpg){:class="img-responsive"}
 
 
-*Connections*
-Hier wird die Server- und SAP-Verbindung definiert.
+**Connections** <br>
+Hier werden die Server- und SAP-Verbindung definiert.
 
 *Server actions for web services*
 In diesem Menüabschnitt finden sich folgende Aktionen:
@@ -30,7 +30,7 @@ In diesem Menüabschnitt finden sich folgende Aktionen:
 - *Remove*: Entfernen von Webservices vom ECS Core Server. 
   
 
-*Project Actions*
+**Project Actions** <br>
 Dieser Menüabschnitt bezieht sich auf neue Webservice-Projekte und beinhaltet folgende Aktionen:
 
 - *New*: Anlegen eines neuen Webservice-Projekts. Wichtig: Bereits geöffnete Daten gehen dabei verloren, bitte vorher sichern!
@@ -41,7 +41,7 @@ Dieser Menüabschnitt bezieht sich auf neue Webservice-Projekte und beinhaltet f
 
 - *Recent*: Zugriff auf kürzlich geöffnete Webservice-Definitionen.
 
-*Options*
+**Options** <br>
 In diesem Menüabschnitt finden sich erweiterte Optionen für Webservice-Projekte allgemein und für den Export ins OpenApi-Format.
 
 Project Options:
@@ -50,7 +50,7 @@ Project Options:
 - *Use empty string as default value for input parameters, variables and custom data types of type string (Default: Yes)*.
 - *Use empty structure as default value for input parameters and variables of type collection or custom data type (Default: Yes)*.
 
-OpenAPi Options (ausführlich beschrieben unter [OpenAPI Definitionen erstellen] (./openapi_definitionen_erstellen):
+OpenAPi Options (ausführlich beschrieben unter [OpenAPI Definitionen erstellen](../openapi_definitionen_erstellen):
 - *Add generic service operations to the definition (Default: No)*: Zusätzliche generische Services werden zur Definition hinzugefügt.
 - *Add SAP connection parameter ("Service Application") to the definitions of operations (Default: No)*: Damit wird der Parameter Custom Service Application zur OpenApi Definition hinzugefügt, der es ermöglicht, die SAP Verbindung nachträglich noch in der Konsumenten-Anwendung (z.B. Nintex Workflow Cloud) zu selektieren. Wird diese Einstellung nicht verwendet, wird der im WebService Designer gewählte Service verwendet (Default, falls kein Service gewählt wurde). <br>
 - *Use variable names as "title" parameter (Default: No)*: Eine verkürzte Bezeichnung für die Webservice-Parameter wird in der OpenApi Definition verwendet. Der vollständige Pfad von Request Body und Response Body wird dabei weggelassen (z.B. Result anstatt Result Result).
