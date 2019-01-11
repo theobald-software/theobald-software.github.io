@@ -12,6 +12,6 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=erste_schritte_mit_dem_webservicedesigner
 ---
 
-Die nachfolgenden Kapitel geben Ihnen eine Einführung in die Funktionsweise des WebService Designers anhand von leicht vollziehbaren Beispielen.
+Die nachfolgenden Kapitel geben Ihnen eine EinfÃ¼hrung in die Funktionsweise des WebService Designers anhand von leicht vollziehbaren Beispielen.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
