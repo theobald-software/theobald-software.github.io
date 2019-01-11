@@ -12,8 +12,9 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=testen-des-webservice
 ---
 
 Um einen Webservice testen zu können, müssen Sie diesen zunächst zum ECS Core Server deployen. 
+Um das Testen des Service in einem REST-Client zu erleichtern, können die WebService URL und weitere Einstellungen zuvor in einem Testdialog nachgeschlagen und von dort kopiert werden. 
 
-Folgende Einstellungen werden im Testdialog angezeigt:
+Folgende Einstellungen werden im Dialog angezeigt:
 
 **Web Service URL** <br>
 Die Webservice URL wird angezeigt gemäß den Einstellungen, die im Connection Dialog gesetzt wurden. Die URL lässt sich im Testdialog nicht ändern. 
