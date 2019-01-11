@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=erste_schritte_mit_dem_webservicedesigner
 ---
 
-Die nachfolgenden Kapitel geben Ihnen eine Einführung in die Funktionsweise des WebService Designers.
+Die nachfolgenden Kapitel geben Ihnen eine EinfĂ¼hrung in die Funktionsweise des WebService Designers.
 
 Die Grundlagen zur Erstellung von Webservices mit dem WebService Designer sind ausführlich in unserer OnlineHelp unter [WebService Designer](../../ecs-de/webservice-designer) beschrieben and treffen auf Webservices für SharePoint On-Premise und Cloud-Anwendungen gleichermaßen zu.  
 

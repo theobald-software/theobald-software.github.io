@@ -8,10 +8,10 @@ parent: webservices
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=testen-des-webservice-in-einem-rest-client
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=testen-des-webservice
 ---
 
-Klicken Sie anschließend auf Test unter dem Abschnitt mit den Operationen, um in den Testdialog zu gelangen. Um einen Webservice testen zu können müssen Sie diesen zunächst deployen. 
+Um einen Webservice testen zu können müssen Sie diesen zunächst zum ECS Core Server deployen. 
 
 Folgende Einstellungen werden im Dialog angezeigt:
 
