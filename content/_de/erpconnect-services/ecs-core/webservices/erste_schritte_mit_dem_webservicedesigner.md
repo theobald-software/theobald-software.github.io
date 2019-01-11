@@ -5,7 +5,7 @@ title: Erste Schritte mit dem WebService Designer
 description: Erste Schritte mit dem WebService Designer
 product: erpconnect-services
 parent: webservices
-childidentifier: verbindungseinstellungen
+childidentifier: erste_schritte_mit_dem_webservicedesigner
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
