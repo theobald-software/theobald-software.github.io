@@ -4,8 +4,7 @@ layout: page
 title: Operationen
 description: Operationen
 product: erpconnect-services
-parent: erste_schritte_mit_dem_webservicedesigner
-childidentifier: hauptmenü
+parent: hauptmenü
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
