@@ -7,7 +7,7 @@ product: erpconnect-services
 parent: erste_schritte_mit_dem_webservicedesigner
 childidentifier: hauptmenü
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=hauptmenü
 ---
