@@ -9,7 +9,7 @@ childidentifier: hauptmenü
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=hauptmenü
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=custom_data_types
 ---
 
 Im Hauptmenü des ECS Core WebService Designers stehen folgende Einstellungen zur Verfügung:
