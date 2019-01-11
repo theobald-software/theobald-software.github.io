@@ -19,7 +19,7 @@ In der Menüleiste des ECS Core WebService Designers sind folgende Punkte auswä
 **Connections** <br>
 Hier werden die Server- und SAP-Verbindung definiert.
 
-*Server actions for web services*
+**Server actions for web services** <br>
 In diesem Menüabschnitt finden sich folgende Aktionen:
 - *Open*: Öffnen eines bereits deployten Webservices vom ECS Core Server.
 
@@ -60,7 +60,7 @@ OpenAPi Options (ausführlich beschrieben unter [OpenAPI Definitionen erstellen]
 
 - *Use variable names as "title" parameter (Default: No)*: Eine verkürzte Bezeichnung für die Webservice-Parameter wird in der OpenApi Definition verwendet. Der vollständige Pfad von Request Body und Response Body wird dabei weggelassen (z.B. Result anstatt Result Result).
 
-**App**
+**App** <br>
 Über diesen Menüabschnitt können Sie die Hilfeseite aufrufen oder die Anwendung verlassen. 
 
 

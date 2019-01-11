@@ -13,6 +13,8 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=bezeichnungen_und_sap_verbi
 
 Folgende Einstellungen lassen sich hier vornehmen:
 
+![WSD-16](/img/content/ecscore-wsd_16.jpg){:class="img-responsive"}
+
 *Name* (Standard: NewECSCoreWebService): Frei wählbarer Webservice-Name. Der Name darf keine Sonder- oder Leerzeichen enthalten.
 
 *Title* (Standard: New SAP-based Web Service): Frei wählbarer WebService-Titel. 
