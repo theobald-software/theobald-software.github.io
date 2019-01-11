@@ -4,7 +4,7 @@ layout: page
 title: SAP-Verbindung
 description: SAP-Verbindung
 product: erpconnect-services
-parent: verbindungen
+parent: verbindungseinstellungen
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

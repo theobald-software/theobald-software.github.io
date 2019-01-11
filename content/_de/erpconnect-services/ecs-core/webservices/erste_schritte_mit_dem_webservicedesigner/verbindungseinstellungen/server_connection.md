@@ -4,7 +4,7 @@ layout: page
 title: Server Verbindung
 description: Server Verbindung
 product: erpconnect-services
-parent: verbindungen
+parent: verbindungseinstellungen
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
@@ -15,4 +15,4 @@ Für das Deployment eines Webservice und das Aufrufen bereits deployter Webservi
 Die Server-Verbindung richten Sie im Menüpunkt *Connections* unter *Server...* ein. 
 Beim erstmaligen Aufruf ist die Maske nicht befüllt.
 
-Einzelheiten zur Konfiguration der Server-Verbindung erfahren Sie im Abschnitt [Webservice Authentifizierung](../webservice_authentifizierung)
+Einzelheiten zur Konfiguration der Server-Verbindung erfahren Sie im Abschnitt [Webservice Authentifizierung](.../webservice_authentifizierung)
