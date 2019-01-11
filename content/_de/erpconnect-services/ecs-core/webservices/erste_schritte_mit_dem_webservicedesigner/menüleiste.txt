@@ -1,0 +1,66 @@
+---
+ref: ecscore-wd-getting-started-01
+layout: page
+title: Menüleiste
+description: Menüleiste
+product: erpconnect-services
+parent: erste_schritte_mit_dem_webservicedesigner
+permalink: /:collection/:path
+weight: 1
+lang: de_DE
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=menüleiste
+---
+
+In der Menüleiste des ECS Core WebService Designers sind folgende Punkte auswählbar:
+
+![WSD-11](/img/content/ecscore-wsd_11.jpg){:class="img-responsive"}
+
+*Connections*
+Hier wird die Server- und SAP-Verbindung definiert.
+
+*Server actions for web services*
+In diesem Menüabschnitt finden sich folgende Aktionen:
+- *Open*: Öffnen eines bereits deployten Webservices vom ECS Core Server.
+
+![WSD-12](/img/content/ecscore-wsd_12.jpg){:class="img-responsive"}
+
+- *Import*: Importieren von Webservice-Operationen eines anderen deployten Webservice zum geöffneten Webservice. Es können einzelne oder alle Operationen hinzugefügt werden. 
+
+![WSD-13](/img/content/ecscore-wsd_13.jpg){:class="img-responsive"}
+
+- *Deploy*: Deployment eines neu angelegten Webservice zum ECS Core Server. 
+
+- *Remove*: Entfernen von Webservices vom ECS Core Server.
+
+![WSD-14](/img/content/ecscore-wsd_14.jpg){:class="img-responsive"}         
+  
+
+*Project Actions*
+Dieser Menüabschnitt bezieht sich auf neue Webservice-Projekte und beinhaltet folgende Aktionen:
+
+- *New*: Anlegen eines neuen Webservice-Projekts. Wichtig: Bereits geöffnete Daten gehen dabei verloren, bitte vorher sichern!
+
+- *Open*: Öffnen einer gespeicherten Webservice-Definition (Dateien mit der Endung *.wsdef*) im Designer.
+
+- *Import*: Importieren von Operationen aus einer Webservice Definition zu einem begonnenen Webservice-Projekt.
+
+- *Recent*: Zugriff auf kürzlich geöffnete Webservice-Definitionen.
+
+*Options*
+In diesem Menüabschnitt finden sich erweiterte Optionen für Webservice-Projekte allgemein und für den Export ins OpenApi-Format:
+
+Project Options:
+- *Underlying SAP system is using UNICODE encoding (Default: Yes)*: Auswahl UNICODE-System oder nicht.
+- *Include error details (Default: Yes)*: Ausgabe von detaillierteren Fehlermeldungen im Designer.
+- *Use empty string as default value for input parameters, variables and custom data types of type string (Default: Yes)*.
+- *Use empty structure as default value for input parameters and variables of type collection or custom data type (Default: Yes)*.
+
+OpenAPi Options (ausführlich beschrieben unter [OpenAPI Definitionen erstellen] (./openapi_definitionen_erstellen):
+- *Add generic service operations to the definition (Default: No)*: Zusätzliche generische Services werden zur Definition hinzugefügt.
+- *Add SAP connection parameter ("Service Application") to the definitions of operations (Default: No)*: Damit wird der Parameter Custom Service Application zur OpenApi Definition hinzugefügt, der es ermöglicht, die SAP Verbindung nachträglich noch in der Konsumenten-Anwendung (z.B. Nintex Workflow Cloud) zu selektieren. Wird diese Einstellung nicht verwendet, wird der im WebService Designer gewählte Service verwendet (Default, falls kein Service gewählt wurde). <br>
+- *Use variable names as "title" parameter (Default: No)*: Eine verkürzte Bezeichnung für die Webservice-Parameter wird in der OpenApi Definition verwendet. Der vollständige Pfad von Request Body und Response Body wird dabei weggelassen (z.B. Result anstatt Result Result).
+
+
+       
+
+  
