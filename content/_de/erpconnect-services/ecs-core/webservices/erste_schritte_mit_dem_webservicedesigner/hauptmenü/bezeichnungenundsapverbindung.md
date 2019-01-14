@@ -15,15 +15,20 @@ Folgende Einstellungen für Webservice-Bezeichnungen und die SAP-Verbindung lass
 
 ![WSD-16](/img/content/ecscore-wsd_16.jpg){:class="img-responsive"}
 
-*Name* (Standard: NewECSCoreWebService): Frei wählbarer Webservice-Name. Der Name darf keine Sonder- oder Leerzeichen enthalten.
+*Name* (Standard: NewECSCoreWebService) <br>
+Frei wählbarer Webservice-Name. Der Name darf keine Sonder- oder Leerzeichen enthalten.
 
-*Title* (Standard: New SAP-based Web Service): Frei wählbarer Webservice-Titel. 
+*Title* (Standard: New SAP-based Web Service) <br>
+Frei wählbarer Webservice-Titel. 
 
-*Version*: Möglichkeit der freien Versionierung eines Webservice.
+*Version* (optional) <br>
+Möglichkeit der freien Versionierung eines Webservice. Dies ist hilfreich bei Änderungen an einem bestehenden Service.
 
-*SAP Connection name to use* (optional): Hier lässt sich explizit eine SAP-Verbindung, die vorab auf dem ECS Core Server (Management Site) definiert wurde, dem Webservice zuweisen. Wird keine SAP-Verbindung selektiert, dann wird die Default-Verbindung herangezogen.   
+*SAP Connection name to use* (optional) <br>
+Hier lässt sich explizit eine SAP-Verbindung, die vorab auf dem ECS Core Server (Management Site) definiert wurde, dem Webservice zuweisen. Wird keine SAP-Verbindung selektiert, dann wird die Default-Verbindung herangezogen.   
 
-*Description* (optional): Hinzufügen einer Beschreibung zum Webservice.
+*Description* (optional) <br>
+Hinzufügen einer Beschreibung zum Webservice.
 
 
 

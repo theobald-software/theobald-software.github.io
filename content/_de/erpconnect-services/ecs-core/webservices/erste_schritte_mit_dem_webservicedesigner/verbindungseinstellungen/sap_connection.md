@@ -11,11 +11,13 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=sap_verbindung
 ---
 
-Im Hauptbildschirm des WebService Designers klicken sie im Ribbon bei *Connections* auf *SAP...*.
+Im Hauptbildschirm des WebService Designers klicken sie im Ribbon bei *Connections* auf *SAP...*. Der *SAP Connection Dialog* öffnet sich.
+
+![WSD-SAPConnection](/img/content/ecscore-wsd_19.jpg){:class="img-responsive"}
+
 Die hier definierte SAP-Verbindung zum Abruf von SAP-Metadaten bei der Erstellung eines neuen Webservices vorgesehen.
 Die SAP-Verbindung für den Webservice-Aufruf wird im Hauptmenü unter *SAP connection name to use* definiert.  
 
-Der *SAP Connection Dialog* öffnet sich.
 
 Ergänzen Sie die nachfolgenden Parameter:
 
