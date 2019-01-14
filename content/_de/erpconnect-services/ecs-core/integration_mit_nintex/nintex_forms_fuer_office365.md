@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-05
 layout: page
-title: Nintex Forms für Office 365
-description: Nintex Forms für Office 365
+title: Nintex Forms fÃ¼r Office 365
+description: Nintex Forms fÃ¼r Office 365
 product: erpconnect-services
 parent: ecs-core
 childidentifier: nintex_forms_fuer_office365
@@ -12,4 +12,4 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=nintex_forms_fuer_office365
 ---
 
-ECS Core unterstützt außerdem die direkte SAP Integration in Nintex Forms für Office 365. In Nintex Forms ist die Hinterlegung von JavaScript Statements möglich, worüber wiederum die mit ausgelieferte JavaScript Bibliothek eingebunden und für den Zugriff auf Ihre SAP-Systeme genutzt werden kann. Mit entsprechenden JavaScript Programmierkenntnissen ermöglicht dies vielfältige Anwendungsmöglichkeiten, wie die Validierung von SAP-Daten oder das befüllen von Dropdown-Boxen.
+ECS Core unterstÃ¼tzt auÃŸerdem die direkte SAP Integration in Nintex Forms fÃ¼r Office 365. In Nintex Forms ist die Hinterlegung von JavaScript Statements mÃ¶glich, worÃ¼ber wiederum die mit ausgelieferte JavaScript Bibliothek eingebunden und fÃ¼r den Zugriff auf Ihre SAP-Systeme genutzt werden kann. Mit entsprechenden JavaScript Programmierkenntnissen ermÃ¶glicht dies vielfÃ¤ltige AnwendungsmÃ¶glichkeiten, wie die Validierung von SAP-Daten oder das befÃ¼llen von Dropdown-Boxen.
