@@ -8,7 +8,7 @@ parent: webservice_authentifizierung
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice_authentifizierung
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=deployment_authentifizierung
 ---
 
 **Authentifizierung zwischen dem WebService Designer und ECS Core** (Deployment)
