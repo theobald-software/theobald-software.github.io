@@ -8,7 +8,7 @@ parent: nintex-workflow-fuer-office-365
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=den_workflow_testen2
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=den_workflow_testen
 ---
 
 Erstellen Sie ein neues Item in der Liste **Purchasing Requests** und starten Sie den Workflow.

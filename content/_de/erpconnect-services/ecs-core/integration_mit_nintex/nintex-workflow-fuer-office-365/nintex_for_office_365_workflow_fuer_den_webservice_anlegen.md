@@ -8,7 +8,7 @@ parent: nintex-workflow-fuer-office-365
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=nintex_for_office_365_workflow_f_r_den_webservice_anlegen
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=nintex_for_office_365_workflow_fuer_den_webservice_anlegen
 ---
 
 Legen in Ihrer Office 365-Umgebung zunächst eine SharePoint-Liste mit den folgenden Eigenschaften an:
@@ -66,7 +66,7 @@ Das Wörterbuch definiert die Header-Daten für den Webservice-Aufruf. Grundsät
 
 Folgende Angaben werden benötigt:
 
-- **Authorization**: APIKEY [BASE64 kodierter ECS Core API-Schlüssel]
+- **Authorization**: APIKEY [ECS Core API-Schlüssel]
 - **Accept**: application/json
 - **Content-Type**: application/json	
 
