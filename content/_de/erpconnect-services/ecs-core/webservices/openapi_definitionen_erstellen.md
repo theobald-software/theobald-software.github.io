@@ -13,11 +13,11 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=openapi_definitionen_erstel
 
 Nachdem Sie einen Webservice erfolgreich erstellt und getestet haben, können Sie diesen in eine OpenAPI-Definition exportieren. OpenAPI (früher: Swagger) ist ein API Beschreibungsformat für REST APIs. Verschiedene Cloud-Anwendungen wie Nintex Workflow Cloud oder Microsoft Flow unterstützen den Import von OpenAPI Dateien als Custom Konnektoren. Der Vorteil dabei ist, dass solche Konnektoren einfacher zu konfigurieren sind als ein relativ technischer direkter Webservice Aufruf. 
 
-Um einen Webservice in eine OpenAPI-Definition zu exportieren klicken Sie auf *Export OpenAPI Definition* in der Menüleiste. Die Definition wird zur angegeben Destination im JSON-Format exportiert und kann dort manuell mit einem belliebigen JSON-Editor (z.B. Visual Studio) bearbeitet werden. 
+Um einen Webservice in eine OpenAPI-Definition zu exportieren klicken Sie auf *OpenAPI...* bei *Exports*in der Menüleiste. Die Definition wird zur angegeben Destination im JSON-Format exportiert und kann dort manuell mit einem belliebigen JSON-Editor (z.B. Visual Studio) bearbeitet werden. 
 
-![ecscore-nwc_1](/img/content/ecscore-nwc_1.png){:class="img-responsive"}
+![ecscore-nwc_1](/img/content/ecscore-wsd_21.jpg){:class="img-responsive"}
 
-Im *Edit OpenAPI Options* Menü können Sie folgende Einstellungen vornehmen:
+Im *OpenAPI Options Dialog* (in der Menüleiste unter *Options*) können Sie folgende Einstellungen vornehmen:
 
 
 **Add default actions to the definition**
@@ -34,8 +34,8 @@ Zusätzliche generische Services werden zur Definition hinzugefügt:
 Mit dieser Einstellung wird eine verkürzte Bezeichnung für die Webservice-Parameter inder OpenApi Definition verwendet. Der vollständige Pfad von Request Body und Response Body wird dabei weggelassen (z.B. Result anstatt Result Result).
 
 
-**Add "ServiceApplication" parameter to WebServices**
+**Add SAP Connection parameter ("Service Application") to the definitions of operations**
 
-Damit wird der Parameter *Custom Service Application*  zur OpenApi Definition hinzugefügt, der es ermöglicht, die Service Applikation nachträglich noch in der Konsumenten-Anwendung (z.B. Nintex Workflow Cloud) zu selektieren. Wird diese Einstellung nicht verwendet, wird der im WebService Designer gewählte Service verwendet (Default, falls kein Service gewählt wurde).  
+Damit wird der Parameter *Custom Service Application*  zur OpenAPI-Definition hinzugefügt, der es ermöglicht, die SAP Verbindung nachträglich noch in der Konsumenten-Anwendung (z.B. Nintex Workflow Cloud) zu selektieren. Wird diese Einstellung nicht verwendet, wird der im WebService Designer gewählte Service verwendet (Default, falls kein Service gewählt wurde).  
 
-Der Import und die Nutzung einer OpenAPI Definition in einer Konsumenten-Awendung wird für Microsoft Flow hier und für Nintex Workflow Cloud in folgendem Abschnitt beschrieben.  
+Der Import und die Nutzung einer OpenAPI-Definition in einer Konsumenten-Awendung wird für Microsoft Flow hier und für Nintex Workflow Cloud in folgendem Abschnitt beschrieben.  

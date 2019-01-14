@@ -55,7 +55,7 @@ Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielha
 
 ![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.jpg){:class="img-responsive"}
 
-**Verbindungseinstellungen mit Windows Authentifizierung**  
+**Verbindungseinstellungen mit Windows Authentifizierung (NTLM)**  
 
 *Authorization* 
 
