@@ -11,20 +11,19 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=konsumenten_authentifizierung
 ---
 
-**Authentifizierung zwischen einem Webservice Konsumenten und ECS Core**
-   
-Zwischen dem Webservice Konsumenten und ECS Core werden die unter [Webservice Authentifizierung](./webservice_authentication) aufgeführten Authentifizierungsmethoden unterstützt. Der Webservice Konsument kann beispielsweise ein REST Client, ein Workflow, eine JavaScript App, etc. sein.   
+
+Zwischen einer Webservice Konsumentenanwendung und ECS Core werden die unter [Webservice Authentifizierung](./webservice_authentifizierung) aufgeführten Authentifizierungsmethoden unterstützt. Der Webservice Konsument kann beispielsweise ein REST Client, ein Workflow, eine JavaScript App, etc. sein.   
 
 Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielhaft anhand des *Postman* REST Clients erläutert. Diese Einstellungen können zum Beispiel übertragen werden für REST Service Aufrufe in einer Workflowanwendung (z.B. Flow, Nintex). 
 
-Allgemeine Einstellungen für REST Webservice Aufrufe in einem REST Client:
+**Allgemeine Einstellungen für REST Service Aufrufe in einem REST Client**
 
 *Webservice Methode:* 	POST<br>
 *Webservice URL (ohne Azure Relay):* 		http(s)://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der Webservice Operation]<br>
 *Webservice URL (mit Azure Relay):*		https://[Service Bus Name].servicebus.windows.net/ecs/ws/custom/[Webservice Name]/[Name der Webservice Operation]<br>	 
 *Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
 
-Verbindungseinstellungen mit API Key (nur unterstützt mit Azure Relay):
+**Verbindungseinstellungen mit API Key** (nur unterstützt mit Azure Relay)
 
 *Authorization*
                 
@@ -38,7 +37,7 @@ Verbindungseinstellungen mit API Key (nur unterstützt mit Azure Relay):
 
 ![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.jpg){:class="img-responsive"}
 
-Verbindungseinstellungen mit Basic Authentifizierung:
+**Verbindungseinstellungen mit Basic Authentifizierung**
 
 *Authorization*	   
 
@@ -56,7 +55,7 @@ Verbindungseinstellungen mit Basic Authentifizierung:
 
 ![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.jpg){:class="img-responsive"}
 
-Verbindungseinstellungen mit Windows Authentifizierung:  
+**Verbindungseinstellungen mit Windows Authentifizierung**  
 
 *Authorization* 
 
