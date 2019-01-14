@@ -86,7 +86,7 @@ Verbindungseinstellungen mit API Key (nur unterstützt mit Azure Relay):
 *Accept:*                	application/json (XMLnicht unterstützt)<br>
 *Content-Type:*      	application/json (XML nicht unterstützt) 
 
-![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.png){:class="img-responsive"}
+![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.jpg){:class="img-responsive"}
 
 Verbindungseinstellungen mit Basic Authentifizierung:
 
@@ -102,9 +102,9 @@ Verbindungseinstellungen mit Basic Authentifizierung:
 *Accept:*                		application/json (XML nicht unterstützt)<br>
 *Content-Type:*      		application/json (XML nicht unterstützt) 
 
-![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.png){:class="img-responsive"}
+![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.jpg){:class="img-responsive"}
 
-![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.png){:class="img-responsive"}
+![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.jpg){:class="img-responsive"}
 
 Verbindungseinstellungen mit Windows Authentifizierung:  
 

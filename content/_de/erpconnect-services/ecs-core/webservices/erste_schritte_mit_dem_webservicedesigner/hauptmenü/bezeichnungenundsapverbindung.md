@@ -11,19 +11,19 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bezeichnungen_und_sap_verbindung
 ---
 
-Folgende Einstellungen lassen sich hier vornehmen:
+Folgende Einstellungen für Webservice-Bezeichnungen und die SAP-Verbindung lassen sich im Hauptmenü vornehmen:
 
 ![WSD-16](/img/content/ecscore-wsd_16.jpg){:class="img-responsive"}
 
 *Name* (Standard: NewECSCoreWebService): Frei wählbarer Webservice-Name. Der Name darf keine Sonder- oder Leerzeichen enthalten.
 
-*Title* (Standard: New SAP-based Web Service): Frei wählbarer WebService-Titel. 
+*Title* (Standard: New SAP-based Web Service): Frei wählbarer Webservice-Titel. 
 
 *Version*: Möglichkeit der freien Versionierung eines Webservice.
 
-*SAP Connection name to use* (optional): Hier lässt sich explizit eine SAP-Verbindung, die vorab auf dem ECS Core Server (Management Site) definiert wurde, dem Webservice zuweisen. Wird hier keine SAP Verbindung gewählt,. wir die Default-Verbindung herangezogen.   
+*SAP Connection name to use* (optional): Hier lässt sich explizit eine SAP-Verbindung, die vorab auf dem ECS Core Server (Management Site) definiert wurde, dem Webservice zuweisen. Wird keine SAP-Verbindung selektiert, dann wird die Default-Verbindung herangezogen.   
 
-*Description* (optional): Hier lässt sich zusätzlich eine ausführlichere Beschreibung zum Webservice hinzufügen.
+*Description* (optional): Hinzufügen einer Beschreibung zum Webservice.
 
 
 
