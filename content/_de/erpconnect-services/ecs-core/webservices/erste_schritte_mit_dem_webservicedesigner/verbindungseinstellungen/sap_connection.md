@@ -15,7 +15,7 @@ Im Hauptbildschirm des WebService Designers klicken sie im Ribbon bei *Connectio
 
 ![WSD-SAPConnection](/img/content/ecscore-wsd_19.jpg){:class="img-responsive"}
 
-Die hier definierte SAP-Verbindung zum Abruf von SAP-Metadaten bei der Erstellung eines neuen Webservices vorgesehen.
+Die hier definierte SAP-Verbindung wird zum Abruf von SAP-Metadaten bei der Erstellung eines neuen Webservices benötigt.
 Die SAP-Verbindung für den Webservice-Aufruf wird im Hauptmenü unter *SAP connection name to use* definiert.  
 
 
@@ -37,7 +37,7 @@ Wählen Sie eine der folgenden Optionen für die Verbindung zu Ihrem SAP System:
 **Use HTTP / Web Service** -	Wählen Sie diese Option, wenn sie auf die SAP Web Services zugreifen wollen.<br>
 **HTTP-URL** -	Die URL für die SAP Web Services.
 
-Benutzen Sie die Test Connection Schaltfläche, um die Verbindung zu überprüfen.
+Benutzen Sie die *Test* Schaltfläche, um die Verbindung zu überprüfen.
 
 Es sollte jetzt ein Bestätigungsfenster erscheinen, wenn die Verbindung zum SAP System erfolgreich hergestellt wurde. Klicken Sie *OK*, um die Mitteilung ausblenden.
 

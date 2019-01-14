@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=flow_konfigurieren
 
 Nach dem erfolgreichen Importieren, Konfigurieren und Testen des benutzerdefinierten Konnektors, können Sie diesen in Flow verwenden.  
 
-Aks Workflow Trigger soll Microsoft Forms verwendet werden. Mit Microsoft Forms ist es möglich, einfache Eingabe- und Umfrageformulare zu erstellen und für Desktop- und mobile Anwendungen zu teilen.  
+Als Workflow-Trigger soll in folgendem Beispiel Microsoft Forms verwendet werden. Mit Microsoft Forms ist es möglich, einfache Eingabe- und Umfrageformulare zu erstellen und für Desktop- und mobile Anwendungen zu teilen.  
 
 
 Erstellen Sie zunächst ein Microsoft Forms Formular, das die folgenden Inputparameter als Textfelder enthält:
