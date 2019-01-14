@@ -21,13 +21,13 @@ Folgende Einstellungen stehen zur Verfügung:
 Anlage eines neuen Custom Data Types.
 
 **Edit** <br>
-Editieren eines bestehenden Custom Data Types.
+Editieren bestehender Custom Data Types.
 
 **Copy** <br>
 Kopieren eines Custom Data Types.
 
 **Remove selected custom data type** <br>
-Selektierten Custom Data Type entfernen.
+Ausgewählten Custom Data Type entfernen.
 
 **Remove all unused custom data types** <br>
 Alle nicht genutzten Custom Data Types entfernen. Nicht genutzt ist ein Custom Data Type, wenn er im Designer nicht als Ein- oder Ausgabeparameter verwendet wird.
@@ -36,7 +36,7 @@ Alle nicht genutzten Custom Data Types entfernen. Nicht genutzt ist ein Custom D
 Ändern der Sortierung der aufgelisteten Custom Data Types. 
 
 **Sort custom data types alphabetically** <br>
-Custom Data Types werden automatisch alphabetisch sortiert. 
+Alphabetisches Sortieren der Custom Data Types. 
 
        
 
