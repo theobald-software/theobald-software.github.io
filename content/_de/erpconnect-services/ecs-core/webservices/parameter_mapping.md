@@ -12,4 +12,4 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=parameter_mapping
 ---
 
-In den folgenden Kapiteln wird das Mapping von Ein- und Ausgabeparametern im WebService Designer anhand von einfachen und nachvollziehbaren beispielen erläutert. 
+In den folgenden Kapiteln wird das Mapping von Ein- und Ausgabeparametern im WebService Designer anhand von einfachen und nachvollziehbaren Beispielen erläutert. 
