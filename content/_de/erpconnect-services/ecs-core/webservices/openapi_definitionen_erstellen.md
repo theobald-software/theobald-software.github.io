@@ -1,5 +1,5 @@
 ---
-ref: ecs-core-webservice-designer-05
+ref: ecs-core-webservice-designer-06
 layout: page
 title: OpenAPI Definitionen erstellen
 description: OpenAPI Definitionen erstellen
