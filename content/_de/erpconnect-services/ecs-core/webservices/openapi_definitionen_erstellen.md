@@ -38,4 +38,4 @@ Mit dieser Einstellung wird eine verkürzte Bezeichnung für die Webservice-Para
 
 Damit wird der Parameter *Custom Service Application*  zur OpenAPI-Definition hinzugefügt, der es ermöglicht, die SAP-Verbindung nachträglich noch in der Konsumenten-Anwendung (z.B. Nintex Workflow Cloud) zu selektieren. Wird diese Einstellung nicht verwendet, wird der im WebService Designer gewählte Service verwendet (Default, falls kein Service gewählt wurde).  
 
-Der Import und die Nutzung einer OpenAPI-Definition in einer Konsumenten-Awendung wird für Microsoft Flow [hier](../../integration_mit_office_365/integration_mit_microsoft_flow) und für Nintex Workflow Cloud in [folgendem](../../integration_mit_nintex/nintex_workflow_cloudf) Abschnitt beschrieben.  
+Der Import und die Nutzung einer OpenAPI-Definition in einer Konsumenten-Awendung wird für Microsoft Flow [hier](../../ecs-core/integration_mit_office_365/integration_mit_microsoft_flow) und für Nintex Workflow Cloud in [folgendem](../../ecs-core/integration_mit_nintex/nintex_workflow_cloud) Abschnitt beschrieben.  
