@@ -6,7 +6,7 @@ description: OpenAPI Definitionen erstellen
 product: erpconnect-services
 parent: webservices
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=openapi_definitionen_erstellen
 ---

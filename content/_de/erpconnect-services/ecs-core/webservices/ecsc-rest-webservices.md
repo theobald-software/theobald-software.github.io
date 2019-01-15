@@ -6,7 +6,7 @@ description: Erstellen von REST Webservices
 product: erpconnect-services
 parent: webservices
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=rest-webservices-erstellen
 ---

@@ -6,7 +6,7 @@ description: Den Webservice testen
 product: erpconnect-services
 parent: webservices
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=testen-des-webservice
 ---
