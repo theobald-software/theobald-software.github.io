@@ -20,7 +20,7 @@ Um einen Webservice in eine OpenAPI-Definition zu exportieren klicken Sie auf *O
 Im *OpenAPI Options Dialog* (in der Menüleiste unter *Options*) können Sie folgende Einstellungen vornehmen:
 
 
-**Add default actions to the definition**
+**Add generic service operations to the definition** (Default: No)
 
 Zusätzliche generische Services werden zur Definition hinzugefügt:
 
@@ -29,13 +29,13 @@ Zusätzliche generische Services werden zur Definition hinzugefügt:
 - ECS Table Query: Dieser Service ermöglicht den generischen Aufruf jeder beliebigen SAP-Tabelle oder View. Ein Beispiel zur Service-Definition finden Sie [hier](../../ecs-de/ecs-runtime/ecs-webservices/rest-ohne-tecs/ecs-tabelle-mit-rest). 
 - ECS XQL Query: Mit diesem Service können spezifische XtractQL (kurz: XQL) Query-Anweisungen für schreibenden und lesenden Zugriff an das SAP System geschickt werden. Die XQL Syntax ist [hier](../../ecs-de/ecs-runtime/ecs-xtractql/ecs-xtractql-syntax) beschrieben. 
 
-**Use variable names as "title" parameter**
+**Use variable names as "title" parameter** (Default: No)
 
 Mit dieser Einstellung wird eine verkürzte Bezeichnung für die Webservice-Parameter inder OpenApi Definition verwendet. Der vollständige Pfad von Request Body und Response Body wird dabei weggelassen (z.B. Result anstatt Result Result).
 
 
-**Add SAP Connection parameter ("Service Application") to the definitions of operations**
+**Add SAP Connection parameter ("Service Application") to the definitions of operations** (Default: No)
 
-Damit wird der Parameter *Custom Service Application*  zur OpenAPI-Definition hinzugefügt, der es ermöglicht, die SAP Verbindung nachträglich noch in der Konsumenten-Anwendung (z.B. Nintex Workflow Cloud) zu selektieren. Wird diese Einstellung nicht verwendet, wird der im WebService Designer gewählte Service verwendet (Default, falls kein Service gewählt wurde).  
+Damit wird der Parameter *Custom Service Application*  zur OpenAPI-Definition hinzugefügt, der es ermöglicht, die SAP-Verbindung nachträglich noch in der Konsumenten-Anwendung (z.B. Nintex Workflow Cloud) zu selektieren. Wird diese Einstellung nicht verwendet, wird der im WebService Designer gewählte Service verwendet (Default, falls kein Service gewählt wurde).  
 
-Der Import und die Nutzung einer OpenAPI-Definition in einer Konsumenten-Awendung wird für Microsoft Flow hier und für Nintex Workflow Cloud in folgendem Abschnitt beschrieben.  
+Der Import und die Nutzung einer OpenAPI-Definition in einer Konsumenten-Awendung wird für Microsoft Flow [hier](../../integration_mit_office_365/integration_mit_microsoft_flow) und für Nintex Workflow Cloud in [folgendem](../../integration_mit_nintex/nintex_workflow_cloudf) Abschnitt beschrieben.  

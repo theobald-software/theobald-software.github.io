@@ -54,11 +54,9 @@ Project Options:
 - *Use empty structure as default value for input parameters and variables of type collection or custom data type (Default: Yes)*.
 
 OpenAPi Options (ausführlich beschrieben unter [OpenAPI Definitionen erstellen](../openapi_definitionen_erstellen):
-- *Add generic service operations to the definition (Default: No)*: Zusätzliche generische Services werden zur Definition hinzugefügt.
-
-- *Add SAP connection parameter ("Service Application") to the definitions of operations (Default: No)*: Damit wird der Parameter Custom Service Application zur OpenApi Definition hinzugefügt, der es ermöglicht, die SAP Verbindung nachträglich noch in der Konsumenten-Anwendung (z.B. Nintex Workflow Cloud) zu selektieren. Wird diese Einstellung nicht verwendet, wird der im WebService Designer gewählte Service verwendet (Default, falls kein Service gewählt wurde). <br>
-
-- *Use variable names as "title" parameter (Default: No)*: Eine verkürzte Bezeichnung für die Webservice-Parameter wird in der OpenApi Definition verwendet. Der vollständige Pfad von Request Body und Response Body wird dabei weggelassen (z.B. Result anstatt Result Result).
+- *Add generic service operations to the definition*
+- *Add SAP connection parameter ("Service Application") to the definitions of operations* <br>
+- *Use variable names as "title" parameter*
 
 **App** <br>
 Über diesen Menüabschnitt können Sie die Hilfeseite aufrufen oder die Anwendung verlassen. 
