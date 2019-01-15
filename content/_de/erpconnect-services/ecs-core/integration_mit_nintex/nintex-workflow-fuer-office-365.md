@@ -4,7 +4,7 @@ layout: page
 title: Nintex Workflow für Office 365
 description: Nintex Workflow für Office 365
 product: erpconnect-services
-parent: integration-mit-nintex
+parent: integration_mit_nintex
 childidentifier: nintex-workflow-fuer-office-365
 permalink: /:collection/:path
 weight: 2
@@ -12,10 +12,9 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=nintex-workflow-fuer-office-365
 ---
 
-Neben dem Erstellen von Webservices für SharePoint on-premise ist es im WebService Designer auch möglich, Webservices für Office 365 bzw. SharePoint Online zu generieren. 
+ECS Core ermöglicht die einfache Integration mit Nintex Workflow für Office 365. 
+SAP-basierte REST-Webservices können mit dem WebService Designer erstellt und in einem Nintex for Office 365-Workflow verwendet werden. Damit lassen sich SAP-Integrationsszenarien für unzählige Geschäftsprozesse realisieren.
 
-In Nintex Workflow für Office 365 können Sie dann die Call Web Service Workflow-Action nutzen, um den Webservice auszuführen und in der Cloudumgebung zu nutzen.  
-
-Wichtig: Voraussetzung zur Nutzung dieser Funktionalität ist die Theobald Software Komponente ECSCore. Ausführliche Informationen zur Komponente finden Sie [hier](../ecs-core).  
+Der Webservice-Aufruf in Nintex für Office 365 kann direkt und ohne weitere Modifikationen mit der Standard-Workflowaction *Call HTTP Webservice* durchgeführt werden. Details dazu finden Sie im folgenden Abschnitt.    
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
