@@ -12,6 +12,6 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=mapping_von_ausgabe_parametern
 ---
 
-In den folgenden Kapiteln erfahren Sie alles über das Mapping von Ausgabe-Parametern einer WebService Operation.
+In den folgenden Kapiteln erfahren Sie alles Ã¼ber das Mapping von Ausgabe-Parametern einer WebService Operation.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
