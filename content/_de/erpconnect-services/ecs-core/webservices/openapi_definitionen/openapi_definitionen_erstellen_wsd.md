@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-webservice-designer-06
 layout: page
-title: OpenAPI-Definitionen erstellen über den WebService Designer
-description: OpenAPI-Definitionen erstellen über den WebService Designer
+title: OpenAPI-Definitionen erstellen mit dem WebService Designer
+description: OpenAPI-Definitionen erstellen mit dem WebService Designer
 product: erpconnect-services
 parent: openapi_definitionen
 permalink: /:collection/:path
@@ -11,11 +11,15 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=openapi_definitionen_erstellen_wsd
 ---
 
-Über den WebService Designer können Sie eine OpenAPI-Definition folgendermaßen erstellen: 
+Mit dem **WebService Designer** können Sie eine OpenAPI-Definition folgendermaßen erstellen: 
+
+Erstellen Sie einen neuen Webservice oder rufen Sie einen bereits deployten Webservice vom Server auf. 
 
 Klicken Sie auf *OpenAPI...* unter *Exports* in der Menüleiste. Die Definition wird zur angegeben Destination im JSON-Format exportiert und kann dort manuell mit einem belliebigen JSON-Editor (z.B. Visual Studio) bearbeitet werden. 
 
 ![ecscore-nwc_1](/img/content/ecscore-wsd_21.jpg){:class="img-responsive"}
+
+Der Export nach OpenAPI funktioniert auch bei neu angelegten Webservices, die noch nicht zum ECS Core Server deployed wurden. Der Webservice-Aufruf funktioniert jedoch nur nach erfolgtem Deployment.
 
 Im *OpenAPI Options Dialog* (in der Menüleiste unter *Options*) können Sie folgende Einstellungen vornehmen:
 
