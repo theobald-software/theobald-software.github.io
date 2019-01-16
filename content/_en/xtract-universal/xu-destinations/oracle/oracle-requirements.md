@@ -24,5 +24,7 @@ The **Oracle Data Provider for .NET 4** (managed driver) must be installed.
 You should follow the instructions to install the driver. On a 64-bit system you should install the 64-bit version of the driver, on a 32-bit system the 32-bit driver version. <br>
 As an alternative to the *managed driver* the complete ODAC or the complete Oracle DB Client can be installed. Please make sure to select the ODP.NET component. 
 
+![xu-oracle-odp-net-managed-driver](/img/content/xu-oracle-odp-net-managed-driver.jpg){:class="img-responsive"}
+
 *Important*: After the installation the Xtract Universal service must be restarted!
 
