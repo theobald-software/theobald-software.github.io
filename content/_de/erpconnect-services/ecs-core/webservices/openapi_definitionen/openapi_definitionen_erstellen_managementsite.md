@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-webservice-designer-06
 layout: page
-title: OpenAPI Definitionen erstellen
-description: OpenAPI Definitionen erstellen
+title: OpenAPI Definitionen erstellen über die Management Site
+description: OpenAPI Definitionen erstellen über die Management Site
 product: erpconnect-services
 parent: openapi_definitionen
 permalink: /:collection/:path
