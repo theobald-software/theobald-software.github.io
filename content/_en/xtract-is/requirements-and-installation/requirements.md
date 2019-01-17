@@ -22,7 +22,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 - SQL Server Integration Services (SSIS)
 - For Development: Visual Studio (except express version) for Business Intelligence is needed to create SSIS packages.
 
-Check our KB for [the list of supported SSIS & VS Versions](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/147/0/list-of-the-ssisvs-versions-supported-by-xtract-is). 
+Check our KB for [the list of supported SSIS & VS Versions](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is). 
 
 **Supported SAP Releases**
 
@@ -56,7 +56,7 @@ For Information about the Installation of the custom function modules and the SA
 
 - Custom authentication.
 - SAP authentication: SSO (Single Sign On) or SAP credentials.
-- SAP system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
+- SAP system or dialog user with appropriate [authority objects](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
 
 **Ports**
 

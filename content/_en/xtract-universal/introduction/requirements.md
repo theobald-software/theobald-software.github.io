@@ -42,7 +42,7 @@ For Information about the Installation of the custom function modules and the SA
 
 - Custom authentication.
 - SAP authentication: SSO (Single Sign On) or SAP credentials.
-- SAP system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
+- SAP system or dialog user with appropriate [authority objects](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
 
 **Ports**<br>
 Following ports have to be opened depending on the SAP system, 
