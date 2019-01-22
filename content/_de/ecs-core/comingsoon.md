@@ -1,11 +1,11 @@
 ---
 ref: ecs-core-01
 layout: page
-title: Administration
-description: Administration
+title: Coming soon
+description: Cooming soon placeholder
 product: ecs-core
 parent: ecs-core
-childidentifier: administration
+childidentifier: comingsoon
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

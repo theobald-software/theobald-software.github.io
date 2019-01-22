@@ -191,7 +191,7 @@ var main = {
                         $(this).parent().html('<img src="/img/products/TS_Icon_2C_YunIO.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Yunio</p>');
                         break;
 					case 'ECS Core':
-                        $(this).parent().html('<img src="/img/products/ecs_core.png" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">ECS Core</p>');
+                        $(this).parent().html('<img src="/img/products/TS_Icon_2C_ECSCore.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">ECS Core</p>');
                         break;
                     case 'none':
                     default:
