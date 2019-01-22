@@ -14,5 +14,5 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=dienste_webseite
 Die *Services Site* findet sich standardmäßig unter http://localhost:8085. 
 Die Services  Site stellt den Konsumenten-Endpunkt für den Aufruf folgender Funktionalitäten bereit: 
 - Standard APIs (ExecuteFunction, Execute SQL, u.a)
-- Deployten REST-Webservices 
+- Deployte REST-Webservices 
 
