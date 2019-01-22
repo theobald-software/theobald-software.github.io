@@ -17,6 +17,7 @@ Nach dem Deployment der Management Site sollten Sie einen neuen Administrator hi
 
 Um einen neuen Administrator anzulegen klicken Sie auf *Add user*.
 
-Benutzername und Kennwort sind frei wählbar, es besteht keine Verbindung zu Windows Benutzern. 
-Wichtig: Die dort hinzugefügten User dienen nicht nur als Administratoren für die Management Site, Sie können auch für das Deployment von Webservices im WebService Designer verwendet werden.
-Einzelheiten dazu finden Sie im Abschnitt *WebService Designer*. 
+Benutzername und Kennwort sind frei wählbar, es besteht keine Verbindung zu Windows Benutzern. <br>
+
+Wichtig: Die dort hinzugefügten User dienen nicht nur als Administratoren für die Management Site, Sie werden auch für das Deployment von Webservices im WebService Designer verwendet.
+Einzelheiten dazu finden Sie im Abschnitt [WebService Designer](../webservices). 

@@ -14,7 +14,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecs-core
 
 **ECS Core** ist ein Konnektor für die SAP-Integration mit Cloud-Umgebungen und anderen autonomen Enterprise-Portalen. Die Anwendung bietet zum einen die Möglichkeit, SAP Daten und Geschäftsprozesse ohne Programmierkenntnisse über standardisierte REST-Services in unterschiedlichen Plattformen und Anwendungen, cloudbasiert oder nicht, zu integrieren. Zum anderen wird die Entwicklung individueller SAP-basierter Anwendungen in der Cloud (z.B. Office365) ermöglicht. Entwicklern wird dafür eigens eine einfach zu nutzende Javascript-Bibliothek zur Verfügung gestellt.
 
-Die Software-Architektur sieht folgendermaßen aus: ECS Core wird auf einer lokalen oder Cloud gehosteten Windows-Serverumgebung installiert und stellt eine Konfigurationsplattform zum Einrichten der Konnektivität zwischen SAP- und Cloud-Anwendungen zur Verfügung. Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um das lokale SAP-System mit der jeweiligen Cloud-Anwendung zu verbinden.  
+Die Software-Architektur sieht folgendermaßen aus: ECS Core wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert und stellt eine Konfigurationsplattform zum Einrichten der Konnektivität zwischen SAP- und Cloud-Anwendungen zur Verfügung. Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um das lokale SAP-System mit der jeweiligen Cloud-Anwendung zu verbinden.  
 
 ![ecscore-architecture](/img/content/ecscore-architecture.jpg){:class="img-responsive"}
 

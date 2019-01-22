@@ -16,9 +16,9 @@ Im Settings Menü können Sie Einstellungen zu folgenden Punkten vornehmen:
 
 - [License](./settings/license) 
 - [Administrators](./settings/administrators)
-- [API Keys](./settings/API Keys)
-- [Azure Relay](./settings/Azure Relay)
-- [System Operations](./settings/System Operations)
+- [API Keys](./settings/api_keys)
+- [Azure Relay](./settings/azure_relay)
+- [System Operations](./settings/system_operations)
 
 ![ecscore-managementsite19](/img/content/ecscore-managementsite_settings_overview.jpg){:class="img-responsive"}
 
