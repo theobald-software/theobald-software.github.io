@@ -22,4 +22,3 @@ Im Settings Menü können Sie Einstellungen zu folgenden Punkten vornehmen:
 
 ![ecscore-managementsite19](/img/content/ecscore-managementsite_settings_overview.jpg){:class="img-responsive"}
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

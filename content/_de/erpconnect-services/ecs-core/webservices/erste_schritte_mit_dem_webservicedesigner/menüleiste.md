@@ -53,10 +53,19 @@ Project Options:
 
 - *Use empty structure as default value for input parameters and variables of type collection or custom data type (Default: Yes)*.
 
-OpenAPi Options (ausführlich beschrieben unter [OpenAPI Definitionen erstellen](../openapi_definitionen_erstellen):
+OpenAPi Options (ausführlich beschrieben unter [OpenAPI Definitionen](../openapi_definitionen)):
 - *Add generic service operations to the definition*
 - *Add SAP connection parameter ("Service Application") to the definitions of operations* <br>
 - *Use variable names as "title" parameter*
+
+**Export** <br>
+Hier können Webservices in bestimmte Formate exportiert werden.
+
+OpenAPI (ausführlich beschrieben unter [OpenAPI Definitionen](../openapi_definitionen)):
+- Der Webservice wird als OpenAPI Defintion exportiert.
+
+C#:
+- Der Webservice wird als C#-Projekt exportiert (Entwicklertools wie Visual Studio sind zur weiteren Bearbeitung notwendig). 
 
 **App** <br>
 Über diesen Menüabschnitt können Sie die Hilfeseite aufrufen oder die Anwendung verlassen. 
