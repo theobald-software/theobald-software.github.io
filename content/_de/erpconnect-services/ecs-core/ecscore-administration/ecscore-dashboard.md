@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore_dashboard
 ---
 
-Auf dem *ECS Core Dashboard* bekommen sie eine Übersicht aller Inhalte der Management Site. 
+Auf dem *ECS Core Dashboard* bekommen sie eine Ãœbersicht aller Inhalte der Management Site. 
 
 - Web Services
 - SAP Connections
