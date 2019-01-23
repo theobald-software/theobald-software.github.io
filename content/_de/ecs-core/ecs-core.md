@@ -7,7 +7,7 @@ product: ecs-core
 parent: ecs-core
 childidentifier: ecs-core
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=ecs-core
 ---
