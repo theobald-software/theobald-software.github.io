@@ -24,4 +24,4 @@ Selektieren Sie beide Komponenten und klicken Sie auf *Install*.
 
 Die ECS Core Komponenten werden anschließend installiert. Nach erfolgreicher Installation ist empfohlen, direkt anschließend den *ECS Core Deployment Manager* auszuführen. Die Checkbox zum automatischen Start des Deployment Managers ist standardmäßig gesetzt. 
 
-Alle Einzelheiten zum Deployment Manager sind im Abschnitt [Deployment Manager](./ecscore-deployment) beschrieben.
+Alle Einzelheiten zum Deployment Manager sind im Abschnitt [Deployment](./ecscore-deployment) beschrieben.
