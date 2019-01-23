@@ -1,10 +1,10 @@
 ---
-ref: ecscore-wd-sws-creating-new-web-service-03
+ref: ecscore-wd-creating-new-web-service-03
 layout: page
 title: Webservice Deployen
 description: Webservice Deployen
 product: ecs-core
-parent: einen-neuen-webservice-erstellen
+parent: einen_neuen_webservice_erstellen
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

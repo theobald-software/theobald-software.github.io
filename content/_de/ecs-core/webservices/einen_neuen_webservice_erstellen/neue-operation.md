@@ -1,10 +1,10 @@
 ---
-ref: ecs-wd-sws-creating-new-soap-web-service-01
+ref: ecscore-wd-creating-new-web-service-01
 layout: page
 title: Neue Operation
 description: Neue Operation
 product: ecs-core
-parent: einen-neuen-webservice-erstellen
+parent: einen_neuen_webservice_erstellen
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
