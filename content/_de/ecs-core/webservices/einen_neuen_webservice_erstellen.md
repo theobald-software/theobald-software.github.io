@@ -16,10 +16,11 @@ Um einen neuen REST Webservice zu erstellen, öffnen Sie den WebService Designer
 
 Geben Sie dem Webservice einen Namen, und optional einen Titel und eine Beschreibung. Auch die Zuordnung einer SAP Verbindung vom ECS Core Server ist optional. Weist man keine SAP-Verbindung zu, wird die Default-Verbindung verwendet. <br>
 
-![WSD-Description](/img/content/ecscore-wsd_26.PNG){:class="img-responsive"}
+![WSD-Description](/img/content/ecscore-wsd_26.png){:class="img-responsive"}
 
 In diesem Beispiel erstellen wir einen Webservice, welcher Kundendaten aus dem SAP-System liefert. <br>  
              
 Wichtig: Achten Sie darauf, dass im Webservice-Namen keine Leer- oder Sonderzeichen enthalten sind.  
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+
