@@ -11,4 +11,4 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=listenartige_parameter1
 ---
 
-{% include _content/de/listenartige-parameter.md %} 
+{% include _content/de/wsd-parameter-mapping/listenartige-parameter.md %} 

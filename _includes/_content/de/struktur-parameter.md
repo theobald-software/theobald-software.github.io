@@ -1,16 +1,3 @@
----
-ref: ecs-wd-output-parameter-mapping-02
-layout: page
-title: Struktur-Parameter
-description: Struktur-Parameter
-product: erpconnect-services
-parent: mapping_von_ausgabe_parametern
-permalink: /:collection/:path
-weight: 2
-lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=struktur_parameter
----
-
 **Struktur-Parameter auf eine Struktur mappen**
 
 Im folgenden Beispiel zeigen wir Ihnen, wie Sie Struktur-Parameter eines Funktionsbausteins auf eine Ausgabe-Struktur einer Webservice-Operation mappen können. 
