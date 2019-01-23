@@ -1,15 +1,17 @@
 ---
 ref: ecs-core-webservice-designer-04
 layout: page
-title: Erstellen von REST Webservices
-description: Erstellen von REST Webservices
+title: Beispielszenario: REST Service für BANF-Anlage
+description: Beispielszenario: REST Service für BANF-Anlage
 product: ecs-core
 parent: webservices
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=rest-webservices-erstellen
+old_url: /ECS-Core-DE/default.aspx?pageid=beispiel_rest-webservice_banf
 ---
+
+Im folgenden Beispiel möchten wir einen REST-Service erstellen, mit dem Bestellanforderungen (BANF) in SAP angelegt werden können. 
 
 Um einen neuen REST-Webservice für ECS Core anzulegen, öffnen Sie den WebService Designer und definieren Sie zunächst Ihre Server- und SAP-Verbindung (In der Menüleiste bei *Connections*). 
 Detailierte Informationen zum Thema Webservice-Authentifizierung finden Sie im Abschnitt [Webservice Authentifizierung](./webservice_authentifizierung) 
@@ -31,10 +33,6 @@ Es ist außerdem möglich, sich über einen HTTP-Webservice mit dem SAP-System z
 Sollten Sie diese Parameter nicht kennen, schauen Sie in Ihrer SAP-GUI nach oder fragen Sie Ihre SAP-Basis.
 
 ![ecscore-webservices1](/img/content/ecscore-wsd_1.png){:class="img-responsive"}
-
-
-Im folgenden Beispiel möchten wir einen REST-Service erstellen, mit dem eine Bestellanforderung (BANF) in SAP angelegt werden kann. 
-
 
 Beginnen Sie mit der Anlage einer neuen Operation mit dem Namen *PurchaseRequisition*, innerhalb welcher Sie mit der *Execute Function* Aktivität den SAP-Baustein BAPI_REQUISITION_CREATE aufrufen. Speichern Sie die Aktivität zunächst ohne die Konfiguration von Parametern ab:
 

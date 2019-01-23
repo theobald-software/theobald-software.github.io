@@ -7,7 +7,7 @@ product: ecs-core
 parent: webservices
 childidentifier: openapi_definitionen
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=openapi_definitionen
 ---

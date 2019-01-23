@@ -12,9 +12,9 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=einen-neuen-webservice-erstellen
 ---
 
-Um einen neuen REST Webservice zu erstellen, öffnen Sie den WebService Designer und definieren zunächst die SAP-Verbindung zum Abruf der Metadaten und die Server-Verbindung für das Deployment des Webservice (beschrieben unter [Verbindungseinstellungen](../verbindungseinstellungen)).  
+Um einen neuen REST Webservice zu erstellen, öffnen Sie den WebService Designer und definieren zunächst die SAP-Verbindung zum Abruf der Metadaten und die Server-Verbindung für das Deployment des Webservice (beschrieben unter [Verbindungseinstellungen](../webservices/erste_schritte_mit_dem_webservicedesigner/verbindungseinstellungen)).  
 
-Geben Sie dem Webservice einen Namen, und optional einen Titel und eine Beschreibung. Auch die Zuordnung einer SAP Verbindung vom ECS Core Server ist optional, tut man dies nicht wird die Default-Verbindung verwendet. <br>
+Geben Sie dem Webservice einen Namen, und optional einen Titel und eine Beschreibung. Auch die Zuordnung einer SAP Verbindung vom ECS Core Server ist optional. Weist man keine SAP-Verbindung zu, wird die Default-Verbindung verwendet. <br>
 
 ![WSD-Description](/img/content/ecscore-wsd_26.PNG){:class="img-responsive"}
 

@@ -6,7 +6,7 @@ description: Den Webservice testen
 product: ecs-core
 parent: webservices
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=testen-des-webservice
 ---

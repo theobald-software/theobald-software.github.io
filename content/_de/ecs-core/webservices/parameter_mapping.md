@@ -7,7 +7,7 @@ product: ecs-core
 parent: webservices
 childidentifier: parameter_mapping
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=parameter_mapping
 ---
