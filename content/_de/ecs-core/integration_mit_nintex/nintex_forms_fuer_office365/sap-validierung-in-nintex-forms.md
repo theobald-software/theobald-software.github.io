@@ -3,12 +3,12 @@ ref: ecscore-nintex-forms-01
 layout: page
 title: SAP-Validierung in Nintex-Forms
 description: SAP-Validierung in Nintex-Forms
-product: erpconnect-services
+product: ecs-core
 parent: nintex_forms_fuer_office365
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=sap-validierung-in-nintex-forms
+old_url: /ECS-Core-DE/default.aspx?pageid=sap-validierung-in-nintex-forms
 ---
 
 Beim Einsatz von Nintex-Forms in SAP-Integrationsszenarien ist es oft notwendig, die Eingabedaten zu prüfen, ob sie gültig im SAP-System sind, bevor wir die Form verschicken. Wenn die Form ein Eingabefeld beispielsweise für eine SAP-Kundennummer hat, wollen wir prüfen, ob diese Kundennummer im SAP-System existiert. 

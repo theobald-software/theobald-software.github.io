@@ -3,13 +3,13 @@ ref: ecs-core-administration-06
 layout: page
 title: Settings
 description: Settings
-product: erpconnect-services
+product: ecs-core
 parent: ecscore-administration
 childidentifier: settings
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=settings
+old_url: /ECS-Core-DE/default.aspx?pageid=settings
 ---
 
 Im Settings Menü können Sie Einstellungen zu folgenden Punkten vornehmen:

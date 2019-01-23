@@ -3,13 +3,13 @@ ref: ecscore-wd-getting-started-01
 layout: page
 title: Hauptmenü
 description: Hauptmenü
-product: erpconnect-services
+product: ecs-core
 parent: erste_schritte_mit_dem_webservicedesigner
 childidentifier: hauptmenü
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=hauptmenü
+old_url: /ECS-Core-DE/default.aspx?pageid=hauptmenü
 ---
 
 Im Hauptmenü des ECS Core WebService Designers stehen folgende Einstellungen zur Verfügung:

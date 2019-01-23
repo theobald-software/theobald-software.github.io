@@ -3,12 +3,12 @@ ref: ecs-core-integration365-microsoft-flow-04
 layout: page
 title: Flow konfigurieren
 description: Flow konfigurieren
-product: erpconnect-services
+product: ecs-core
 parent: integration_mit_microsoft_flow
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=flow_konfigurieren
+old_url: /ECS-Core-DE/default.aspx?pageid=flow_konfigurieren
 ---
 
 Nach dem erfolgreichen Importieren, Konfigurieren und Testen des benutzerdefinierten Konnektors, können Sie diesen in Flow verwenden.  

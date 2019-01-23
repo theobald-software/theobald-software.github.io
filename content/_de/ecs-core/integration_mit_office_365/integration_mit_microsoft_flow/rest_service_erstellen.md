@@ -3,12 +3,12 @@ ref: ecs-core-integration365-microsoft-flow-01
 layout: page
 title: REST Service erstellen
 description: REST Service erstellen
-product: erpconnect-services
+product: ecs-core
 parent: integration_mit_microsoft_flow
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=rest_service_erstellen
+old_url: /ECS-Core-DE/default.aspx?pageid=rest_service_erstellen
 ---
 
 Der erste Schritt für die SAP Integration mit Flow ist die Erstellung eines REST Webservice mit dem [WebService Designer](../../webservices). 

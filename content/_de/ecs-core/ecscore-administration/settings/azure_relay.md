@@ -3,12 +3,12 @@ ref: ecs-core-administration-settings-04
 layout: page
 title: Azure Relay
 description: Azure Relay
-product: erpconnect-services
+product: ecs-core
 parent: settings
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=azure_relay
+old_url: /ECS-Core-DE/default.aspx?pageid=azure_relay
 ---
 
 *Azure Service Bus* ist ein generisches Cloud-basiertes Messaging-System zur Verbindung von Anwendungen, Services und Geräten - egal wo diese sich befinden. <br>

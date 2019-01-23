@@ -3,13 +3,13 @@ ref: ecs-core-webservice-designer-02
 layout: page
 title: Webservice Authentifizierung
 description: Webservice Authentifizierung
-product: erpconnect-services
+product: ecs-core
 parent: webservices
 childidentifier: webservice_authentifizierung
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice_authentifizierung
+old_url: /ECS-Core-DE/default.aspx?pageid=webservice_authentifizierung
 ---
 
 Webservice Authentifizierung in ECS Core betrifft zwei Bereiche:

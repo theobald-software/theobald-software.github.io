@@ -3,12 +3,12 @@ ref: ecs-core-webservice-designer-05
 layout: page
 title: Den Webservice testen
 description: Den Webservice testen
-product: erpconnect-services
+product: ecs-core
 parent: webservices
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=testen-des-webservice
+old_url: /ECS-Core-DE/default.aspx?pageid=testen-des-webservice
 ---
 
 Um einen Webservice testen zu können, müssen Sie diesen zunächst zum ECS Core Server deployen. 

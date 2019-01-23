@@ -3,12 +3,12 @@ ref: ecs-wd-gs-connection-settings-01
 layout: page
 title: SAP-Verbindung
 description: SAP-Verbindung
-product: erpconnect-services
+product: ecs-core
 parent: verbindungseinstellungen
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=sap_verbindung
+old_url: /ECS-Core-DE/default.aspx?pageid=sap_verbindung
 ---
 
 Im Hauptbildschirm des WebService Designers klicken sie im Ribbon bei *Connections* auf *SAP...*. Der *SAP Connection Dialog* öffnet sich.

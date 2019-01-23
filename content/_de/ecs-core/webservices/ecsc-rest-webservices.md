@@ -3,12 +3,12 @@ ref: ecs-core-webservice-designer-04
 layout: page
 title: Erstellen von REST Webservices
 description: Erstellen von REST Webservices
-product: erpconnect-services
+product: ecs-core
 parent: webservices
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=rest-webservices-erstellen
+old_url: /ECS-Core-DE/default.aspx?pageid=rest-webservices-erstellen
 ---
 
 Um einen neuen REST-Webservice für ECS Core anzulegen, öffnen Sie den WebService Designer und definieren Sie zunächst Ihre Server- und SAP-Verbindung (In der Menüleiste bei *Connections*). 

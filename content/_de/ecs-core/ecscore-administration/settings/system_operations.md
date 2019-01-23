@@ -3,12 +3,12 @@ ref: ecs-core-administration-settings-05
 layout: page
 title: System Operations
 description: System Operations
-product: erpconnect-services
+product: ecs-core
 parent: settings
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=system_operations
+old_url: /ECS-Core-DE/default.aspx?pageid=system_operations
 ---
 
 Unter *System Operations* können folgende Operationen durchgeführt werden:

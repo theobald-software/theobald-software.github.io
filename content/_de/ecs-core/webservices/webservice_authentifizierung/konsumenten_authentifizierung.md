@@ -3,12 +3,12 @@ ref: ecs-core-webservice-designer-02
 layout: page
 title: Konsumenten Authentifizierung
 description: Konsumenten Authentifizierung
-product: erpconnect-services
+product: ecs-core
 parent: webservice_authentifizierung
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=konsumenten_authentifizierung
+old_url: /ECS-Core-DE/default.aspx?pageid=konsumenten_authentifizierung
 ---
 
 

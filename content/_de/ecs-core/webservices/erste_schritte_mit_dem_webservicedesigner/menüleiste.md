@@ -3,12 +3,12 @@ ref: ecscore-wd-getting-started-01
 layout: page
 title: Menüleiste
 description: Menüleiste
-product: erpconnect-services
+product: ecs-core
 parent: erste_schritte_mit_dem_webservicedesigner
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=menüleiste
+old_url: /ECS-Core-DE/default.aspx?pageid=menüleiste
 ---
 
 In der Menüleiste des ECS Core WebService Designers sind folgende Punkte auswählbar:

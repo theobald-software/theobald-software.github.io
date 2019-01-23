@@ -3,12 +3,12 @@ ref: ecscore-nintex-forms-02
 layout: page
 title: Befüllen von Dropdown-Boxen in Nintex-Forms
 description: Befüllen von Dropdown-Boxen in Nintex-Forms
-product: erpconnect-services
+product: ecs-core
 parent: nintex_forms_fuer_office365
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=befuellen_von_dropdown_boxen_in_nintex_forms
+old_url: /ECS-Core-DE/default.aspx?pageid=befuellen_von_dropdown_boxen_in_nintex_forms
 ---
 
 In bestimmten Integrationsszenarien kann es sinnvoll sein, SAP-Daten für eine flexible Datenselektion in kaskadierenden Dropdown-Listen zur Verfügung zu stellen. Auch dies ist mit JavaScript und ECS REST-Services in Nintex Forms möglich (vgl. vorheriges Beispiel).

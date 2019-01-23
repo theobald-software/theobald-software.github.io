@@ -3,13 +3,13 @@ ref: ecs-core-integration-with-office-365-01
 layout: page
 title: Integration mit Microsoft Flow
 description: Integration mit Microsoft Flow
-product: erpconnect-services
+product: ecs-core
 parent: integration_mit_office_365
 childidentifier: integration_mit_microsoft_flow
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=integration_mit_microsoft_flow
+old_url: /ECS-Core-DE/default.aspx?pageid=integration_mit_microsoft_flow
 ---
 
 SAP integration mit Microsoft Flow wird voll unterstützt mit ERPConnect Services Core (ECS Core). Detaillierte Informationen über ECS Core finden Sie [hier](../../).

@@ -3,12 +3,12 @@ ref: ecs-core-administration-07
 layout: page
 title: Validierung
 description: Validierung
-product: erpconnect-services
+product: ecs-core
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 7
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-validation
+old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-validation
 ---
 
 Um sicherzustellen, dass alles korrekt konfiguriert ist und die Verbindungseinstellungen wie gewünscht funktionieren, können Sie die [tecs-Bibliothek](http://static.theobald-software.com/theobald.ecs.micro/) nutzen (empfohlen: Abschnitt *Live Test of your ECSCore*), sowie reines Javascript oder REST-Clients wie [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) oder [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox) verwenden, die als Browsererweiterungen frei verfügbar sind. <br>

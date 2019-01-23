@@ -3,12 +3,12 @@ ref: ecs-core-prerequisites-and-installation-02
 layout: page
 title: Installation ECSCore
 description: Installation ECSCore
-product: erpconnect-services
+product: ecs-core
 parent: voraussetzungen-und-installation
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-installation
+old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-installation
 ---
 
 Die Installation von ECS Core erfolgt über die ausgelieferte oder unter [www.theobald-software.com](https://www.theobald-software.com) downloadbare Installationsroutine 

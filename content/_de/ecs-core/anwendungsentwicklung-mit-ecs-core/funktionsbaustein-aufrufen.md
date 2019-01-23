@@ -3,12 +3,12 @@ ref: ecs-core-developing-02
 layout: page
 title: Funktionsbaustein aufrufen
 description: Funktionsbaustein aufrufen
-product: erpconnect-services
+product: ecs-core
 parent: anwendungsentwicklung-mit-ecs-core
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=funktionsbaustein-aufrufen
+old_url: /ECS-Core-DE/default.aspx?pageid=funktionsbaustein-aufrufen
 ---
 
 Im vorigen Beispiel haben wir Daten aus einer SAP-Tabelle mit Hilfe der Function tEcs.executeXql() gelesen. <br>

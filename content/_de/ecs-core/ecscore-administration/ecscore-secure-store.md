@@ -3,12 +3,12 @@ ref: ecs-core-administration-04
 layout: page
 title: Secure Stores
 description: Secure Stores
-product: erpconnect-services
+product: ecs-core
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-secure-store
+old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-secure-store
 ---
 
 Unter *Secure Stores* kann ein Secure Store zur Authentifzierung hinzugefügt und verwaltet werden. 

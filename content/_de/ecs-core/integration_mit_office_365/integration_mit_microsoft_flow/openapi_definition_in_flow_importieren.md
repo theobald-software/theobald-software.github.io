@@ -3,12 +3,12 @@ ref: ecs-core-integration365-microsoft-flow-03
 layout: page
 title: OpenAPI Definition in Flow importieren
 description: OpenAPI Definition in Flow importieren
-product: erpconnect-services
+product: ecs-core
 parent: integration_mit_microsoft_flow
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=openapi_definition_in_flow_importieren
+old_url: /ECS-Core-DE/default.aspx?pageid=openapi_definition_in_flow_importieren
 ---
 
 Um die OpenAPI Definition in Flow zu importieren loggen Sie sich in Ihren Microsoft Flow Account ein und klicken auf *Custom Connectors*  in den Account Einstellungen, um einen neuen benutzerdefinierten Konnektor anzulegen. Beachten Sie, dass die Erstellung von benutzerdefinierten Konnektoren nur in einem Premium Account enthalten ist.  

@@ -3,12 +3,12 @@ ref: ecscore-wd-getting-started-01
 layout: page
 title: Operationen
 description: Operationen
-product: erpconnect-services
+product: ecs-core
 parent: hauptmenü
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=operationen
+old_url: /ECS-Core-DE/default.aspx?pageid=operationen
 ---
 
 Unter *Operations* werden neue Webservice-Operationen angelegt. 

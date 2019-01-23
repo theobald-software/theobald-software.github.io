@@ -3,12 +3,12 @@ ref: ecs-core-webservice-designer-02
 layout: page
 title: Deployment Authentifizierung
 description: Deployment Authentifizierung
-product: erpconnect-services
+product: ecs-core
 parent: webservice_authentifizierung
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=deployment_authentifizierung
+old_url: /ECS-Core-DE/default.aspx?pageid=deployment_authentifizierung
 ---
 
 Die Verbindungseinstellungen und Authentifzierung für das Deployment müssen im *Server Connection Dialog* hinterlegt werden (im WebService Designer Menü unter *Connections*). 

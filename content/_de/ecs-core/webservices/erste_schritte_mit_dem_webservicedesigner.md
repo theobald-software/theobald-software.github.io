@@ -3,13 +3,13 @@ ref: ecs-core-webservice-designer-01
 layout: page
 title: Erste Schritte mit dem WebService Designer
 description: Erste Schritte mit dem WebService Designer
-product: erpconnect-services
+product: ecs-core
 parent: webservices
 childidentifier: erste_schritte_mit_dem_webservicedesigner
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=erste_schritte_mit_dem_webservicedesigner
+old_url: /ECS-Core-DE/default.aspx?pageid=erste_schritte_mit_dem_webservicedesigner
 ---
 
 Die nachfolgenden Kapitel geben Ihnen eine Einführung in die Funktionsweise des WebService Designers.

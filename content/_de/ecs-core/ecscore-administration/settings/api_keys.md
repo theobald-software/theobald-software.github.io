@@ -3,12 +3,12 @@ ref: ecs-core-administration-settings-03
 layout: page
 title: API Keys
 description: API Keys
-product: erpconnect-services
+product: ecs-core
 parent: settings
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=api_keys
+old_url: /ECS-Core-DE/default.aspx?pageid=api_keys
 ---
 
 ECSCore unterstützt die Authentifizierung mit einem **API Key** (**A**pplication **P**rogramming**I**nterface **K**ey).

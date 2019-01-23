@@ -3,12 +3,12 @@ ref: ecs-core-developing-01
 layout: page
 title: Erste Schritte mit ECS Core und SharePoint Online
 description: Erste Schritte mit ECS Core und SharePoint Online
-product: erpconnect-services
+product: ecs-core
 parent: anwendungsentwicklung-mit-ecs-core
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=erste-schritte-mit-ecs-core-und-sharepoint-online
+old_url: /ECS-Core-DE/default.aspx?pageid=erste-schritte-mit-ecs-core-und-sharepoint-online
 ---
 
 Dieses Beispiel zeigt, wie Sie Daten aus einem on-premise SAP-System in SharePoint Online (Office 365) mit Hilfe von ECS Core integrieren. Folgende Werkzeuge werden außerdem verwendet: Napa Office 365 Development Tools und das Azure Portal.

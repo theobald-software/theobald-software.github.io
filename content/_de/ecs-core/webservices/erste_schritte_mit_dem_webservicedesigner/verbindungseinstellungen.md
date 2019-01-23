@@ -3,13 +3,13 @@ ref: ecscore-wd-getting-started-01
 layout: page
 title: Verbindungseinstellungen
 description: Verbindungseinstellungen
-product: erpconnect-services
+product: ecs-core
 parent: erste_schritte_mit_dem_webservicedesigner
 childidentifier: verbindungseinstellungen
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=verbindungseinstellungen
+old_url: /ECS-Core-DE/default.aspx?pageid=verbindungseinstellungen
 ---
 
 Hier erfahren Sie, wie Sie im WebService Designer eine neue Server- und SAP-Verbindung anlegen.

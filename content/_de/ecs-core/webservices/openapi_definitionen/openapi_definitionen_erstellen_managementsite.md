@@ -3,12 +3,12 @@ ref: ecs-core-webservice-designer-06
 layout: page
 title: OpenAPI Definitionen erstellen über die Management Site
 description: OpenAPI Definitionen erstellen über die Management Site
-product: erpconnect-services
+product: ecs-core
 parent: openapi_definitionen
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=openapi_definitionen_erstellen_managementsite
+old_url: /ECS-Core-DE/default.aspx?pageid=openapi_definitionen_erstellen_managementsite
 ---
 
 Über die ECS Core Management Site ist ebenfalls der Export von Webservices in OpenAPI-Definitionen möglich. Rufen Sie dazu den Karteireiter *Web Services* im Menü auf, klicken links den gewünschten Webservice an und anschließend auf *Download Open Api Definition*.

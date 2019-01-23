@@ -3,12 +3,12 @@ ref: ecs-core-administration-01
 layout: page
 title: Management Site
 description: Management Site
-product: erpconnect-services
+product: ecs-core
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=management_dashboard
+old_url: /ECS-Core-DE/default.aspx?pageid=management_dashboard
 ---
 
 Auf der Management Site wird die Konfiguration für ECS Core vorgenommen. 

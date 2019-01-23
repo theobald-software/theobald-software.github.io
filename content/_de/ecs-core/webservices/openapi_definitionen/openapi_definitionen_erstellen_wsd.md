@@ -3,12 +3,12 @@ ref: ecs-core-webservice-designer-06
 layout: page
 title: OpenAPI-Definitionen erstellen mit dem WebService Designer
 description: OpenAPI-Definitionen erstellen mit dem WebService Designer
-product: erpconnect-services
+product: ecs-core
 parent: openapi_definitionen
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=openapi_definitionen_erstellen_wsd
+old_url: /ECS-Core-DE/default.aspx?pageid=openapi_definitionen_erstellen_wsd
 ---
 
 Mit dem **WebService Designer** können Sie eine OpenAPI-Definition folgendermaßen erstellen: 

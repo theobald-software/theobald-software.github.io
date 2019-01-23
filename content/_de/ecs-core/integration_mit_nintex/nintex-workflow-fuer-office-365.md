@@ -3,13 +3,13 @@ ref: ecscore-sap-integration-nintex-02
 layout: page
 title: Nintex Workflow für Office 365
 description: Nintex Workflow für Office 365
-product: erpconnect-services
+product: ecs-core
 parent: integration_mit_nintex
 childidentifier: nintex-workflow-fuer-office-365
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=nintex-workflow-fuer-office-365
+old_url: /ECS-Core-DE/default.aspx?pageid=nintex-workflow-fuer-office-365
 ---
 
 ECS Core ermöglicht die einfache Integration mit Nintex Workflow für Office 365. 

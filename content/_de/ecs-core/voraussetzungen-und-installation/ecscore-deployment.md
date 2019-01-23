@@ -3,12 +3,12 @@ ref: ecs-core-prerequisites-and-installation-03
 layout: page
 title: Deployment
 description: Deployment
-product: erpconnect-services
+product: ecs-core
 parent: voraussetzungen-und-installation
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=deployment
+old_url: /ECS-Core-DE/default.aspx?pageid=deployment
 ---
 
 Der Deployment Manager installiert die Administration-Oberfläche für die Verwaltung (z.B. SAP-Verbindung, Azure Relay, Web Services) von ECS Core. 

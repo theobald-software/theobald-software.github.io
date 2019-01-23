@@ -3,12 +3,12 @@ ref: ecs-core-prerequisites-and-installation-01
 layout: page
 title: Voraussetzungen
 description: Voraussetzungen
-product: erpconnect-services
+product: ecs-core
 parent: voraussetzungen-und-installation
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-voraussetzungen
+old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-voraussetzungen
 ---
 
 **Windows-Betriebssystem** 

@@ -3,13 +3,13 @@ ref: ecscore-sap-integration-nintex-03
 layout: page
 title: Nintex Workflow Cloud (NWC)
 description: Nintex Workflow Cloud (NWC)
-product: erpconnect-services
+product: ecs-core
 parent: integration_mit_nintex
 childidentifier: nintex_workflow_cloud
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=nintex_workflow_cloud
+old_url: /ECS-Core-DE/default.aspx?pageid=nintex_workflow_cloud
 ---
 
 SAP-Integration mit der Nintex Workflow Cloud (NWC) Plattform wird voll unterstützt mit ECS Core.
