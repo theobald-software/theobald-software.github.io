@@ -13,3 +13,5 @@ old_url: /ECS-Core-DE/default.aspx?pageid=parameter_mapping
 ---
 
 In den folgenden Kapiteln wird das Mapping von Ein- und Ausgabeparametern im WebService Designer anhand von einfachen und nachvollziehbaren Beispielen erläutert. 
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
