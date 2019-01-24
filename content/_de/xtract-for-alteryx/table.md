@@ -11,14 +11,15 @@ weight: 2
 lang: de_DE
 ---
 
-Die Xtract for Alteryx Table Datenquelle wurde entwickelt, um Daten aus SAP Tabellen und Views abzuziehen und in bekannter Weise in Alteryx weiterzuverarbeiten. <br> 
+Die Xtract for Alteryx Table Datenquelle wird verwendet, um Daten aus SAP Tabellen und Views abzuziehen und in bekannter Weise in Alteryx weiterzuverarbeiten. <br> 
+
 Darüber hinaus dient die Table-Komponente dazu, mehrere Tabellen (und Views) auf der SAP-Seite zu joinen.<br> 
-Mögliche Szenarien dafür wän, Tabellen fär Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen.<br> 
+Mögliche Szenarien dafür wären, Tabellen mit Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen mit Stammdaten und Texte (z.B. eines Materials) zu joinen.<br> 
 Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt.<br> 
 
-Die Komponente nutzt die Standardfunktionsbausteine im SAP für die Datenextraktion. <br> 
-Wir bieten allerdings auch einen eigenen Funktionsbaustein, der die Daten um einiges schneller extrahiert.<br> 
-Auch Table-Join ist nur mit unserem eigenen Funktionsbaustein möglich. <br> 
+Die Komponente kann die Standardfunktionsbausteine im SAP nutzen, um Daten aus einer einzigen Tabelle und  einem einzigen View zu extrahieren. <br> 
+Wir bieten allerdings einen eigenen Funktionsbaustein, der die Daten performanter extrahiert und viele Probleme der SAP-Standardfunktionsbausteine löst.<br> 
+Das Joinen von Tabellen ist nur mit unserem eigenen Funktionsbaustein möglich. <br> 
 Wenn Sie also 
 - mit der Geschwindigkeit der Extraktion nicht zufrieden sind oder 
 - Einschräung mit dem SAP-Standardfunktionsbaustein haben oder 
