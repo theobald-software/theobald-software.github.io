@@ -11,19 +11,28 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=konsumenten_authentifizierung
 ---
 
+Die folgenden Authentifizierungsmethoden werden für das Konsumieren von Webservices unterstützt: 
 
-Zwischen einer Webservice Konsumentenanwendung und ECS Core werden die unter [Webservice Authentifizierung](./webservice_authentifizierung) aufgeführten Authentifizierungsmethoden unterstützt. Der Webservice Konsument kann beispielsweise ein REST Client, ein Workflow, eine JavaScript App, etc. sein.   
+- **Authentifzierung mit API Key** (nur unterstützt in Kombination mit Azure Relay): Ein dedizierter API Key erstellt auf der ECS Core Management Site wird für die Authentifizierung verwendet. Der API Key muss für das Konsumieren auf einen Windows Benutzer oder Windows-Benutzergruppe erstellt worden sein.  
+
+- **Basic Authentifizierung** (empfohlen mit HTTPS): Windows Basic Authentication wird zur Authentifizierung verwendet.
+
+- **Windows Authentifizierung (NTLM)**: Der lokale Windows Benutzer mit seinen Credentials wird zur Authentifizierung verwendet. Das ermöglicht, dass sich der Webservice-Ersteller von jeder Maschine im Active Directory verbinden kann, vorausgesetzt der Account wird auf dem ECS Core Server erkannt. <br>
+NTLM kann nur verwendet werden zur Authentifizierung, wenn dies die Client-Anwendung unterstützt.
+
 
 Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielhaft anhand des *Postman* REST Clients erläutert. Diese Einstellungen können zum Beispiel übertragen werden für REST Service Aufrufe in einer Workflowanwendung (z.B. Flow, Nintex). 
 
-**Allgemeine Einstellungen für REST Service Aufrufe in einem REST Client**
 
-*Webservice Methode:* 	POST<br>
 *Webservice URL (ohne Azure Relay):* 		http(s)://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der Webservice Operation]<br>
-*Webservice URL (mit Azure Relay):*		https://[Service Bus Name].servicebus.windows.net/ecs/ws/custom/[Webservice Name]/[Name der Webservice Operation]<br>	 
-*Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
 
 **Verbindungseinstellungen mit API Key** (nur unterstützt mit Azure Relay)
+
+*Webservice Methode:* 	POST<br>
+
+*Webservice URL:*  https://[Service Bus Name].servicebus.windows.net/ecs/ws/custom/[Webservice Name]/[Name der Webservice Operation]<br>
+
+Beispiel: https://theobald-proxyservices.servicebus.windows.net/ecs/ws/SAPCustomerWebservice/CustomerGet                  
 
 *Authorization*
                 
@@ -32,12 +41,22 @@ Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielha
 *Headers*
 
 *Authorization:*      	APIKEY [In ECS Core erstellter API Key]<br>
-*Accept:*                	application/json (XMLnicht unterstützt)<br>
+*Accept:*                	application/json (XML nicht unterstützt)<br>
 *Content-Type:*      	application/json (XML nicht unterstützt) 
+
+*Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
+
+*Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
 
 ![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.jpg){:class="img-responsive"}
 
 **Verbindungseinstellungen mit Basic Authentifizierung**
+
+*Webservice Methode:* 	POST<br>
+
+*Webservice URL:* 		http(s)://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der Webservice Operation]<br>
+
+Beispiel: http://52.88.254.77:8080/wsd/SAPCustomerWebservice/CustomerGet 
 
 *Authorization*	   
 
@@ -51,11 +70,21 @@ Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielha
 *Accept:*                		application/json (XML nicht unterstützt)<br>
 *Content-Type:*      		application/json (XML nicht unterstützt) 
 
+*Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
+
+*Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
+
 ![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.jpg){:class="img-responsive"}
 
 ![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.jpg){:class="img-responsive"}
 
 **Verbindungseinstellungen mit Windows Authentifizierung (NTLM)**  
+
+*Webservice Methode:* 	POST<br>
+
+*Webservice URL:* 		http(s)://[lokaler ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der Webservice Operation]<br>
+
+Beispiel: http://localhost:8080/wsd/SAPCustomerWebservice/CustomerGet
 
 *Authorization* 
 
@@ -69,6 +98,10 @@ Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielha
 *Authorization:*      		NTLM Schlüssel (Automatisch generiert)<br>
 *Accept:*                		application/json (XML nicht unterstützt)<br>
 *Content-Type:*      		application/json (XML nicht unterstützt) 
+
+*Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
+
+*Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
 
 ![ecscore-webservicetest_7](/img/content/ecscore-webservicetest_7.jpg){:class="img-responsive"}
 

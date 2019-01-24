@@ -1,5 +1,5 @@
 ---
-ref: ecscore-wd-getting-started-01
+ref: ecscore-wd-getting-started-03
 layout: page
 title: Operationen
 description: Operationen
@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=operationen
 ---
 
-Unter *Operations* werden neue Webservice-Operationen angelegt. 
+Unter *Operations* werden neue Webservice-Operationen angelegt. In der Webservice-Operation wird der Zugriff auf das SAP System konfiguriert. Einzelheiten zur Anlage eines neuen Webservice finden Sie [hier](../einen_neuen_webservice_erstellen).
 
 Folgende Optionen stehen zur Verfügung:
 
