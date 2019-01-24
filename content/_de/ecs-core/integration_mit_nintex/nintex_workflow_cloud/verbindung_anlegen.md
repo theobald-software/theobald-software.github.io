@@ -3,12 +3,12 @@ ref: ecscore-nintex-workflow-cloud-nwc-04
 layout: page
 title: Verbindung anlegen
 description: Verbindung anlegen
-product: erpconnect-services
+product: ecs-core
 parent: nintex_workflow_cloud
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=verbindung_anlegen
+old_url: /ECS-Core-DE/default.aspx?pageid=verbindung_anlegen
 ---
 
 Nach erfolgreichem Importieren der OpenAPI Definition und Veröffentlichung des benutzerdefinierten Konnektors können Sie eine neue Verbindung in der NWC anlegen. Diese Verbindung zeigt auf die in ECS Core angelegten SAP Services und ermöglicht die Verbindung zum SAP System.    

@@ -1,5 +1,5 @@
 ---
-ref: ecs-core-05
+ref: ecscore-sap-integration-nintex-03
 layout: page
 title: Nintex Forms für Office 365
 description: Nintex Forms für Office 365
@@ -7,7 +7,7 @@ product: ecs-core
 parent: integration_mit_nintex
 childidentifier: nintex_forms_fuer_office365
 permalink: /:collection/:path
-weight: 5
+weight: 3
 lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=nintex_forms_fuer_office365
 ---
