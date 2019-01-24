@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: bw-cube
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: de_DE
 ---
 
