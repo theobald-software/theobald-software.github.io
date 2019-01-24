@@ -28,4 +28,4 @@ So if you'd like
 - Want to join several tables
 then you have to install the function module supplied by us in the SAP system and use it. 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

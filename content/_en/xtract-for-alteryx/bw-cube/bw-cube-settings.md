@@ -10,25 +10,26 @@ weight: 3
 lang: de_DE
 ---
 
-Über den Button „Extraction Settings“ können noch Einstellungen zum Verhalten vorgenommen werden:
+The "Extraction Settings" button can be used to make settings for the behavior:
 
 **Package Size**<br>
-definiert, wieviele Datensätze in einem RFC-Call vom SAP geholt werden sollen. <br>
-Werte zwischen 10.000 und 100.000 sind sinnvoll, aber nur wenn die Datenmenge entsprechend groß ist. <br>
-Wenn der Wert 0 ist, dann wird die komplette Ergebnismenge in einem Rutsch geholt.
+defines how many data records are to be fetched from SAP in a data package. <br>
+Values between 10,000 and 100,000 are useful, but only if the data volume is large enough. <br>
+If the value is 0, then the complete result set is fetched in one go.
+
 
 **Max Rows**<br>
-definiert die maximale Anzahl von Zeilen in der Egebnismenge. <br>
-Wenn der Wert 0 ist, dann wird die komplette Ergebnismenge geholt.<br>
-Es kann z.B. beim Testen sinnvoll sein, hier etwas anderes als 0 (z.B. 1000) anzugeben, um erstmal mit wenig Daten zu testen.<br>
-Wenn Sie den Wert ändern, denken Sie dran ihn wieder auf 0 zu setzen.<br>
+defines the maximum number of rows in the result set. <br>
+If the value is 0, then the complete result set is fetched.<br>
+For example, when testing, it may be useful to specify something other than 0 (e.g. 1000) here in order to test first with little data.<br>
+If you change the value, remember to set it to 0 again.<br>
+
 
 **Column Name Style**<br>
-definiert die Logik für die Benneung der Spalten: 
-- Code bennent die Spalten mit dem technischen Namen des Originalelements 
-- CodeAndText mit dem technischen Namen und der Klarschrift 
-- TextAndCode mit Larschrift und dann dem technischen Namen
-
+defines the logic for naming the columns: 
+- Code names the columns with the technical name of the original element. 
+- CodeAndText with the technical name and the plain text 
+- TextAndCode with Larschrift and then the technical name
 
 ![Designer](/img/content/xfa/bwcube04.png){:class="img-responsive"}
 
