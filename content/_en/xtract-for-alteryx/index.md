@@ -11,8 +11,6 @@ weight: 1
 lang: en_GB
 ---
 
-This is the Xtract for Alteryx help page.
-We're still working on the content.
+Welcome to the online help of Xtract for Alteryx. This help includes the following chapters:
 
-
-If you like, please check out the German version of the [Xtract for Alteryx](https://help.theobald-software.com/de/xtract-for-alteryx/)
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

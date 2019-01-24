@@ -21,9 +21,10 @@ Die Komponente kann die Standardfunktionsbausteine im SAP nutzen, um Daten aus e
 Wir bieten allerdings einen eigenen Funktionsbaustein, der die Daten performanter extrahiert und viele Probleme der SAP-Standardfunktionsbausteine löst.<br> 
 Das Joinen von Tabellen ist nur mit unserem eigenen Funktionsbaustein möglich. <br> 
 Wenn Sie also 
-- mit der Geschwindigkeit der Extraktion nicht zufrieden sind oder 
-- Einschräung mit dem SAP-Standardfunktionsbaustein haben oder 
-- Tabellen joinen wollen
+- eine bessere Performance bei der Extraktion der Daten haben wollen oder 
+- große Tabellen und Views extrahieren wollen, was mit dem Standardfunktionsbaustein unmöglich ist oder 
+- weitiere Einschräung mit dem SAP-Standardfunktionsbaustein (Datentyp, Tabellentyp usw.) haben oder 
+- mehrere Tabellen joinen wollen
 dann sollten Sie den von uns mitgelieferten Funktionssbaustein auf dem SAP-System installieren und nutzen.<br> 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
