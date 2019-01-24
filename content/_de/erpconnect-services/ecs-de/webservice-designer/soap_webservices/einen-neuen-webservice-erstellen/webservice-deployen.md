@@ -1,21 +1,26 @@
 ---
-ref: ecscore-wd-creating-new-web-service-04
+ref: ecs-wd-sws-creating-new-soap-web-service-03
 layout: page
 title: Webservice Deployen
 description: Webservice Deployen
-product: ecs-core
-parent: einen_neuen_webservice_erstellen
+product: erpconnect-services
+parent: einen-neuen-webservice-erstellen
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=webservice-deployen
+old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice-deployen
 ---
 
-Wenn Sie bereit sind, klicken Sie auf den *Deploy* Button im Menüpunkt "Server actions for web services*. Der Webservice wird damit direkt auf ihren ECS Core-Server deployed.<br>
+Wenn Sie bereit sind, klicken Sie auf den Knopf Deploy, um den Webservice direkt auf ihren SharePoint-Server zu deployen.<br>
+Wenn der WebService Designer nicht direkt auf dem SharePoint-Server läuft, dann ist der Knopf Deploy deaktiviert. <br>
+In dem Fall klicken Sie auf den Knopf Export to Solution, um eine wsp-Datei zu erstellen, welche Sie dann in SharePoint deployen.<br>
 
-![WSD-Deploy2](/img/content/ecscore-wsd_28.png){:class="img-responsive"}
+![WSD-Deploy2](/img/content/WSD-Deploy2.PNG){:class="img-responsive"}
 
-Nach dem erfolgreichen Deployment finden Sie den Webservice auf der ECS Core Management Site unter [Web Services](../ecs-core/ecscore-administration/webservices).  
+Nach dem erfolgreichen Deployment des Webservices auf SharePoint, können Sie die Webservice-URL im Browser anzeigen lassen und sich die Definition des Webservices anschauen, um sicher zu stellen, dass der Webservice verfügbar ist.  
 
+![WSD-OpenUrl](/img/content/WSD-OpenUrl.PNG){:class="img-responsive"}
 
+Die Webservice-Metadaten (WSDL-Definition) wird im Browser angezeigt.
 
+![WSD-ServiceMetadata](/img/content/WSD-ServiceMetadata.PNG){:class="img-responsive"}
