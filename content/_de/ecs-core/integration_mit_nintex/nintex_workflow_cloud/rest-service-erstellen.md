@@ -13,6 +13,6 @@ old_url: /ECS-Core-DE/default.aspx?pageid=webservice_fuer_ecs_core_anlegen
 
 Der erste Schritt für die SAP Integration mit der Nintex Workflow Cloud ist die Erstellung eines REST Webservice mit dem [WebService Designer](../../webservices). 
 
-Für das Szenario, das in den folgenden Kapiteln beschrieben wird, verwenden wir das Beispiel zur Erstellung von Bestellanforderungen (BANF) in SAP. Die Erstellung des entsprechenden Webservices wird [hier](../../ecs-core/webservices/ecsc-rest-webservices) beschrieben. 
+Für das Szenario, das in den folgenden Kapiteln beschrieben wird, verwenden wir das Beispiel zur Erstellung von Bestellanforderungen (BANF) in SAP. Die Erstellung des entsprechenden Webservices wird [hier](../../webservices/ecsc-rest-webservices) beschrieben. 
 
 
