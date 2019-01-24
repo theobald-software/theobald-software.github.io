@@ -3,12 +3,12 @@ ref: ecscore-nintex-workflow-cloud-nwc-03
 layout: page
 title: OpenAPI Definition in NWC importieren
 description: OpenAPI Definition in NWC importieren
-product: erpconnect-services
+product: ecs-core
 parent: nintex_workflow_cloud
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=openapi_definition_in_nwc_importieren
+old_url: /ECS-Core-DE/default.aspx?pageid=openapi_definition_in_nwc_importieren
 ---
 
 Um eine OpenAPI Definition in die NWC zu importieren, loggen Sie sich als Administrator in Ihrer NWC Tenant ein und öffnen Sie den Xtensions Bereich. Hier können Sie benutzerdefinierte Konnektoren mit OpenAPI hinzufügen. Wählen Sie die gespeicherte OpenAPI Definition und klicken Sie auf *Next*.

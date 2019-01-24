@@ -1,5 +1,5 @@
 ---
-ref: ecscore-sap-integration-nintex-03
+ref: ecscore-sap-integration-nintex-01
 layout: page
 title: Nintex Workflow Cloud (NWC)
 description: Nintex Workflow Cloud (NWC)

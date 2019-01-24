@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=openapi_definitionen_erstellen1
 ---
 
-Microsoft Flow erlaubt den Import von OpenAPI Definitionen als Custom Konnektoren. Im WebService Designer wird der Export von REST Services in OpenAPI Definitionen unterstützt und [hier](../../webservices/openapi_definitionen_erstellen) detailliert beschrieben.  
+Microsoft Flow erlaubt den Import von OpenAPI Definitionen als Custom Konnektoren. Im WebService Designer wird der Export von REST Services in OpenAPI Definitionen unterstützt und [hier](../../webservices/openapi_definitionen) detailliert beschrieben.  
 
 Um mit dem Beispiel fortzufahren, exportieren Sie den vorab erstellen Webservice zur BANF-Anlage in eine OpenAPI Definition. 
 

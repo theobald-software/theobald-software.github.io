@@ -1,14 +1,14 @@
 ---
-ref: ecs-sin-nintex-workflow-for-office-365-03
+ref: ecscore-nintex-workflow-for-office-365-03
 layout: page
 title: Den Workflow testen
 description: Den Workflow testen
-product: erpconnect-services
+product: ecs-core
 parent: nintex-workflow-fuer-office-365
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=den_workflow_testen
+old_url: /ECS-Core-DE/default.aspx?pageid=den_workflow_testen
 ---
 
 Erstellen Sie ein neues Item in der Liste **Purchasing Requests** und starten Sie den Workflow.

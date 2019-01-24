@@ -1,14 +1,14 @@
 ---
-ref: ecs-sin-nintex-workflow-cloud-nwc-06
+ref: ecscore-nintex-workflow-cloud-nwc-06
 layout: page
 title: Workflow testen
 description: Workflow testen
-product: erpconnect-services
+product: ecs-core
 parent: nintex_workflow_cloud
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=workflow_testen
+old_url: /ECS-Core-DE/default.aspx?pageid=workflow_testen
 ---
 
 Testen Sie den Workflow, indem Sie das Webformular ausfüllen und abschicken. Die URL für das Webformular erhalten Sie nach dem Publizieren des Workflows.
