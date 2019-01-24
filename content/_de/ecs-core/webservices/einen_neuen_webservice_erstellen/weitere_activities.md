@@ -4,7 +4,7 @@ layout: page
 title: Weitere Activities
 description: Weitere Activities
 product: ecs-core
-parent: webservice-designer
+parent: einen_neuen_webservice_erstellen
 childidentifier: weitere_activities
 permalink: /:collection/:path
 weight: 6

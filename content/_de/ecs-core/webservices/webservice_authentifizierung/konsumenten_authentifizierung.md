@@ -43,7 +43,7 @@ Beispiel: https://theobald-proxyservices.servicebus.windows.net/ecs/ws/custom/SA
 
 *Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
 
-*Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
+*Body:*					Listenartige Eingabeparameter oder Eingabestrukturen (nur erforderlich, wenn der Webservice solche Parameter enthält) 
 
 ![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.png){:class="img-responsive"}
 
@@ -69,7 +69,7 @@ Beispiel: http://52.88.254.77:8080/wsd/SAPCustomerWebservice/CustomerGet
 
 *Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
 
-*Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
+*Body:*					Listenartige Eingabeparameter oder Eingabestrukturen (nur erforderlich, wenn der Webservice solche Parameter enthält) 
 
 ![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.png){:class="img-responsive"}
 
@@ -98,7 +98,7 @@ Beispiel: http://localhost:8080/wsd/SAPCustomerWebservice/CustomerGet
 
 *Params:*				Skalare Eingabeparameter (nur erforderlich, wenn der Webservice solche Parameter enthält; werden automatisch zur URL hinzugefügt)
 
-*Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
+*Body:*					Listenartige Eingabeparameter oder Eingabestrukturen (nur erforderlich, wenn der Webservice solche Parameter enthält) 
 
 ![ecscore-webservicetest_7](/img/content/ecscore-webservicetest_7.jpg){:class="img-responsive"}
 
