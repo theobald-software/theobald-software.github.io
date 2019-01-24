@@ -58,4 +58,4 @@ Soll für den Aufruf explizit Basic Authentifizierung verwendet werden, dann mü
 ![ecscore-nwc_1](/img/content/ecscore-wsd_24.png){:class="img-responsive"}
 
 
-Der Import und die Nutzung einer OpenAPI-Definition in einer Konsumenten-Awendung wird für Microsoft Flow [hier](../../ecs-core/integration_mit_office_365/integration_mit_microsoft_flow) und für Nintex Workflow Cloud in [folgendem](../../ecs-core/integration_mit_nintex/nintex_workflow_cloud) Abschnitt beschrieben.  
+Der Import und die Nutzung einer OpenAPI-Definition in einer Konsumenten-Awendung wird für Microsoft Flow [hier](../../integration_mit_office_365/integration_mit_microsoft_flow) und für Nintex Workflow Cloud in [folgendem](../../integration_mit_nintex/nintex_workflow_cloud) Abschnitt beschrieben.  
