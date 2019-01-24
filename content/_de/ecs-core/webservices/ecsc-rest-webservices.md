@@ -1,14 +1,14 @@
 ---
 ref: ecs-core-webservice-designer-04
 layout: page
-title: Beispielszenario: REST Service für BANF-Anlage
-description: Beispielszenario: REST Service für BANF-Anlage
+title: Beispielszenario - REST Service für BANF-Anlage
+description: Beispielszenario - REST Service für BANF-Anlage
 product: ecs-core
 parent: webservices
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=beispiel_rest-webservice_banf
+old_url: /ECS-Core-DE/default.aspx?pageid=beispielszenario_rest-webservice_banf
 ---
 
 Im folgenden Beispiel möchten wir einen REST-Service erstellen, mit dem Bestellanforderungen (BANF) in SAP angelegt werden können. 
