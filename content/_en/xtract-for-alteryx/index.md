@@ -13,4 +13,4 @@ lang: en_GB
 
 Welcome to the online help of Xtract for Alteryx. This help includes the following chapters:
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
