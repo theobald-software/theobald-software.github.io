@@ -23,16 +23,13 @@ NTLM kann nur verwendet werden zur Authentifizierung, wenn dies die Client-Anwen
 
 Die Verbindungseinstellungen für einen Webservice Aufruf werden hier beispielhaft anhand des *Postman* REST Clients erläutert. Diese Einstellungen können zum Beispiel übertragen werden für REST Service Aufrufe in einer Workflowanwendung (z.B. Flow, Nintex). 
 
-
-*Webservice URL (ohne Azure Relay):* 		http(s)://[ECS Core Server]:[ECS Core Services Site port (Standard 8080)]/wsd/[Webservice Name]/[Name der Webservice Operation]<br>
-
 **Verbindungseinstellungen mit API Key** (nur unterstützt mit Azure Relay)
 
 *Webservice Methode:* 	POST<br>
 
 *Webservice URL:*  https://[Service Bus Name].servicebus.windows.net/ecs/ws/custom/[Webservice Name]/[Name der Webservice Operation]<br>
 
-Beispiel: https://theobald-proxyservices.servicebus.windows.net/ecs/ws/SAPCustomerWebservice/CustomerGet                  
+Beispiel: https://theobald-proxyservices.servicebus.windows.net/ecs/ws/custom/SAPCustomerWebservice/CustomerGet                  
 
 *Authorization*
                 
@@ -48,7 +45,7 @@ Beispiel: https://theobald-proxyservices.servicebus.windows.net/ecs/ws/SAPCustom
 
 *Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
 
-![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.jpg){:class="img-responsive"}
+![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.png){:class="img-responsive"}
 
 **Verbindungseinstellungen mit Basic Authentifizierung**
 
@@ -74,9 +71,9 @@ Beispiel: http://52.88.254.77:8080/wsd/SAPCustomerWebservice/CustomerGet
 
 *Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
 
-![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.jpg){:class="img-responsive"}
+![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.png){:class="img-responsive"}
 
-![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.jpg){:class="img-responsive"}
+![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.png){:class="img-responsive"}
 
 **Verbindungseinstellungen mit Windows Authentifizierung (NTLM)**  
 
@@ -103,6 +100,6 @@ Beispiel: http://localhost:8080/wsd/SAPCustomerWebservice/CustomerGet
 
 *Body:*					Listenartige Eingabeparameter oder -strukturen ((nur erforderlich, wenn der Webservice solche Parameter enthält) 
 
-![ecscore-webservicetest_7](/img/content/ecscore-webservicetest_7.jpg){:class="img-responsive"}
+![ecscore-webservicetest_7](/img/content/ecscore-webservicetest_7.png){:class="img-responsive"}
 
-![ecscore-webservicetest_8](/img/content/ecscore-webservicetest_8.jpg){:class="img-responsive"}
+![ecscore-webservicetest_8](/img/content/ecscore-webservicetest_8.png){:class="img-responsive"}
