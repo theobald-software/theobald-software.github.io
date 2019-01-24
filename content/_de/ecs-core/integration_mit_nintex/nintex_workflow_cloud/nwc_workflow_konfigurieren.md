@@ -13,7 +13,7 @@ old_url: /ECS-Core-DE/default.aspx?pageid=nwc_workflow_konfigurieren
 
 Erstellen Sie einen neuen NWC Workflow. Der neu erstellte Konnektor beindet sich auf der linken Seite in der Toolbox zwischen den Standard-Konnektoren. Die Reihenfolge der Toolbox-Actions können Sie in NWC Einstellungen unter *Action and connector sorting* ändern.
 
-*PurchaseRequisiton* lautet der Name der Webservice Operation, die zuvor im [WebService Designer](../../ecs-core/webservices) erstellt wurde. Optional: Die zusätzlich angezeigten Actions im Konnektor sind generische Services, die hinzugeneriert werden, falls in den OpenAPI Einstellungen des WebService Designers die Option *Add default actions* to the definition angehakt wird.  
+*PurchaseRequisiton* lautet der Name der Webservice Operation, die zuvor im [WebService Designer](../../webservices) erstellt wurde. Optional: Die zusätzlich angezeigten Actions im Konnektor sind generische Services, die hinzugeneriert werden, falls in den OpenAPI Einstellungen des WebService Designers die Option *Add default actions* to the definition angehakt wird.  
 
 Ziehen Sie die *PurchaseRequisition* Action auf die Designer-Oberfläche und öffnen Sie den Konfigurationsbildschirm am rechten Bildschiormrand durch Anklicken des Konnektors: 
 

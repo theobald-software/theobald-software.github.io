@@ -1,14 +1,14 @@
 ---
-ref: ecs-sin-nintex-workflow-for-office-365-02
+ref: ecscore-nintex-workflow-for-office-365-02
 layout: page
 title: Nintex Workflow für Office 365 anlegen
 description: Nintex Workflow für Office 365 anlegen
-product: erpconnect-services
+product: ecs-core
 parent: nintex-workflow-fuer-office-365
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=nintex_for_office_365_workflow_fuer_den_webservice_anlegen
+old_url: /ECS-Core-DE/default.aspx?pageid=nintex_for_office_365_workflow_fuer_den_webservice_anlegen
 ---
 
 Legen in Ihrer Office 365-Umgebung zunächst eine SharePoint-Liste mit den folgenden Eigenschaften an:
