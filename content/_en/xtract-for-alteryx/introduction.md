@@ -1,11 +1,11 @@
 ---
 ref: xtract-for-alteryx-01
 layout: page
-title: Einführung
-description: Einführung
+title: Introduction
+description: Introduction
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
-childidentifier: einfuehrung
+childidentifier: introduction
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
