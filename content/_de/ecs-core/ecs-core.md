@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-01
 layout: page
-title: ECS Core (für Cloud-Umgebungen)
-description: ECS Core (für Cloud-Umgebungen)
+title: Einführung
+description: Einführung
 product: ecs-core
 parent: ecs-core
 childidentifier: ecs-core

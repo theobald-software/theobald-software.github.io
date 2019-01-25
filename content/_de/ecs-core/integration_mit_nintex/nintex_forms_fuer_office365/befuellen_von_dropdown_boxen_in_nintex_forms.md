@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=befuellen_von_dropdown_boxen_in_nintex_forms
 ---
 
-In bestimmten Integrationsszenarien kann es sinnvoll sein, SAP-Daten für eine flexible Datenselektion in kaskadierenden Dropdown-Listen zur Verfügung zu stellen. Auch dies ist mit JavaScript und ECS REST-Services in Nintex Forms möglich (vgl. vorheriges Beispiel).
+In bestimmten Integrationsszenarien kann es sinnvoll sein, SAP-Daten für eine flexible Datenselektion in kaskadierenden Dropdown-Listen zur Verfügung zu stellen. Auch dies ist mit JavaScript und REST-Services in Nintex Forms möglich (vgl. vorheriges Beispiel).
 
 Im vorliegenden Beispiel soll in einem Eingabefeld eine SAP Materialnummer eingegeben und die möglichen Treffer in einer Dropdownliste angezeigt werden. Wird ein Material in der Dopdown-Liste selektiert, dann soll der Materialtext in einem weiteren Feld angezeigt werden. 
 
