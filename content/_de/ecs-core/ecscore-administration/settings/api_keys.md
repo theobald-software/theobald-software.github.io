@@ -18,13 +18,17 @@ Ein API Key fungiert dabei als eindeutige Kennung und kann sehr einfach hinzugef
 Für zahlreiche Cloud-Szenarien stellt dies einen praktikablen und typischen Authentifizierungsmechanismus dar.
 
 
-Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt API Keys. Sie müssen einen API Key immer einem gültigen Windows Benutzer mit seinem entsprechenden Windows-Kennwort zuweisen.
+Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt API Keys. Sie können einen API Key für zwei Arten von Benutzern hinzufügen: <br>
+1. Gültiger **Windows Benutzer** mit Windows-Kennwort: Ein solcher, zu einem Windows-Benutzer erzeugter API Key, kann ausschließlich für Authentifizierung innerhalb einer Cloud-Anwendung verwendet werden, welche mit ECS Core erstellte Webservices oder von ECS Core bereitgestellte REST API konsumiert. <br>
+2. Auf der Management Site angelegter **Dashboard-Benutzer**: Ein solcher API Key, der auf einen von Windows unabhängigen Dashboard-Benutzer erstellt wurde, kann ausschließlich für das Deployment von Webservices im WebService Designer verwendet werden.   
 
-Nach der Erstellung des Schlüssels wird dieser unter API Keys angezeigt. Sie können diesen jetzt zur Authentifizierung innerhalb einer Cloud-Anwendung (z.B. Microsoft Flow) verwenden. Unter Umständen muss der Cache zunächst noch bereinigt werden (beschrieben unter *System Operations*). 
+Einzelheiten zum Thema Deployment und Konsumieren von Services finden Sie im Abschnitt [Webservice Authentifizierung](../webservices/webservice_authentifizierung).
+ 
+Nach der Erstellung des Schlüssels wird dieser unter API Keys angezeigt. Unter Umständen muss zunächst der Cache noch bereinigt werden (beschrieben unter *System Operations*). 
 
 Klicken Sie auf den API Key, um die folgenden Optionen angezeigt zu bekommen: 
 
 - Update
 - Remove
 
-Sie benötigen die *Update* Option, falls sich die Windows Zugangsdaten geändert haben.
+Sie benötigen die *Update* Option, falls sich die Zugangsdaten des Benutzers geändert haben.
