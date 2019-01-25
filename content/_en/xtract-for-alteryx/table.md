@@ -8,7 +8,7 @@ parent: xtract-for-alteryx
 childidentifier: table
 permalink: /:collection/:path
 weight: 2
-lang: de_DE
+lang: en_GB
 ---
 
 The Xtract for Alteryx Table data source is used to extract data from SAP tables and views and process it in Alteryx in the usual way. <br> 
