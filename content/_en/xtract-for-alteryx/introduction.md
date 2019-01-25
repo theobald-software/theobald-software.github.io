@@ -14,4 +14,4 @@ lang: en_GB
 This section provides an overview of the architecture of Xtract for Alteryx and introduces installation and usage. <br>
 You can find the version history under https://kb.theobald-software.com/version-history/xtract-for-alteryx-version-history .<br>
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.em %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
