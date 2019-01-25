@@ -1,8 +1,8 @@
 ---
 ref: xfa-introduction-03
 layout: page
-title: Configure SAP Connection 
-description: Configure SAP Connection
+title: Configuring SAP Connection 
+description: Configuring SAP Connection
 product: xtract-for-alteryx
 parent: introduction
 permalink: /:collection/:path
