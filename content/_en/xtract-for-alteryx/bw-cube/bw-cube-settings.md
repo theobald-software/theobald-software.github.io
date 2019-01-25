@@ -1,13 +1,13 @@
 ---
 ref: xfa-bw-cube-03
 layout: page
-title: Einstellungen
-description: Einstellungen
+title: BW Cube Settings
+description: BW Cube Settings
 product: xtract-for-alteryx
 parent: bw-cube
 permalink: /:collection/:path
 weight: 3
-lang: de_DE
+lang: en_GB
 ---
 
 The "Extraction Settings" button can be used to make settings for the behavior:
