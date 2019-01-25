@@ -8,11 +8,10 @@ parent: ecscore-administration
 childidentifier: settings
 permalink: /:collection/:path
 weight: 6
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=settings
+lang: en_GB
 ---
 
-Im Settings Menü können Sie Einstellungen zu folgenden Punkten vornehmen:
+In the *Settings* menu, you can make settings for the following items:
 
 - [License](./settings/license) 
 - [Administrators](./settings/administrators)

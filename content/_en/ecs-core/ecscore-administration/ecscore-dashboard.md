@@ -7,11 +7,10 @@ product: ecs-core
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 2
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=ecscore_dashboard
+lang: en_GB
 ---
 
-Auf dem *ECS Core Dashboard* bekommen sie eine Übersicht aller Inhalte der Management Site. 
+On the *ECS Core Dashboard* you get an overview of all contents of the management site. 
 
 - Web Services
 - SAP Connections

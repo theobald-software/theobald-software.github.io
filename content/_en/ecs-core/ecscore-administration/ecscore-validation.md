@@ -1,19 +1,18 @@
 ---
 ref: ecs-core-administration-07
 layout: page
-title: Validierung
-description: Validierung
+title: Validation
+description: Validation
 product: ecs-core
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 7
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-validation
+lang: en_GB
 ---
 
-Um sicherzustellen, dass alles korrekt konfiguriert ist und die Verbindungseinstellungen wie gewünscht funktionieren, können Sie die [tecs-Bibliothek](http://static.theobald-software.com/theobald.ecs.micro/) nutzen (empfohlen: Abschnitt *Live Test of your ECSCore*), sowie reines Javascript oder REST-Clients wie [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) oder [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox) verwenden, die als Browsererweiterungen frei verfügbar sind. <br>
+To ensure that everything is configured correctly and the connection settings work as desired, you can use the [tecs library](http://static.theobald-software.com/theobald.ecs.micro/) (recommended: section *Live Test of your ECSCore*), as well as pure Javascript or REST clients such as [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) or [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox), which are freely available as browser extensions. <br>
 
-Wichtig: Der Test bezieht sich rein auf die hinterlegten SAP Verbindungen der Management Site ('Management Endpoint'). Für das Konsumieren von Services muss die *Services Site* ('Consumer Endpoint') verwendet werden. Näheres dazu finden Sie im Abschnitt *Webservice Authentifizierung*.  
+Important: The test refers purely to the stored SAP connections of the *Management Site* ('management endpoint'). To consume services, the *Services Site* ('Consumer Endpoint') must be used. For more information, see *Webservice Authentication*.  
 
 Mit tEcs:
 ```
@@ -23,20 +22,19 @@ tEcs.testSapConnection({
             core: true,
             coreApiKey: "978854CD75AF44EE9ABF0D9CCEC9A3F9", 
             instance: "ec4",
-            url: "http://ecscore.cloudapp.net:8085/ecsm" (Management Endpoint immer mit /ecsm)
+            url: "http://ecscore.cloudapp.net:8085/ecsm" (Management Endpoint always followd by /ecsm)
         }
     }
 });
 ```
 
-In einem REST-Client müssen Sie den Authorization-Header manuell setzen (Authorisierungsmethode: 'No Auth'):
+In a REST client, you must set the Authorization header manually (authorization method: 'No Auth'):
 
-z.B. <br>
+e.g. <br>
 Authorization = "Apikey 978854CD75AF44EE9ABF0D9CCEC9A3F9" <br>
 Accept = application/json <br>
 Content-Type = application/json <br>
 
 ![ecscore-restclienttest](/img/content/ecscore_restclienttest.png){:class="img-responsive"}
 
-Beispiele für REST-Anfragen finden Sie in unserer Online-Hilfe unter *[ERPConnect Services Runtime> Webservices>REST ohne tEcs](../../ecs-de/ecs-runtime/ecs-webservices/rest-ohne-tecs)* (z.B. Anfrage auf eine Tabelle oder einen Funktionsbaustein).
-
+Examples for REST requests can be found in our online help under *[ERPConnect Services Runtime> Webservices>REST without tEcs](../../ecs-en/ecs-runtime/ecs-webservices/rest-ohne-tecs)* (e.g. request for a table or a function block).

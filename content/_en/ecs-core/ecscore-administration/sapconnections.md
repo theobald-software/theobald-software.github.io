@@ -7,57 +7,54 @@ product: ecs-core
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 3
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-service-applikation
+lang: en_GB
 ---
 
-Im Karteireiter *SAP Connections* können Verbindungen zu einem oder mehreren SAP Systemen neu angelegt und verwaltet werden.  
+In the *SAP Connections* tab, connections to one or more SAP systems can be created and managed.  
 
-Klicken Sie auf *New SAP Connection*, um eine neue Verbindung anzulegen.
+Click on *New SAP Connection* to create a new connection.
 
-![ecscore-managementsite_sapconnection-1.jpg](/img/content/ecscore-managementsite_sapconnection-1.jpg){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-1.jpg](/img/content/ecscoremanagementsite_sapconnection-1.jpg){:class="img-responsive"}
 
-Machen Sie zunächst die Eingaben für folgende Felder:
+First make the entries for the following fields:
 
-**Name** - 		Frei wählbarer Name für die SAP-Verbindung.
+**Name** - Freely definable name for the SAP connection.
 
-**Client** -	SAP Mandantennummer.	Beispiel: 800
+**Client** - SAP client number.	Example: 800
 
-**Language** -	Die SAP Anmeldesprache. Beispiel: EN <br
-
-
-Tragen Sie anschließend die Werte  für die Verbindungseinstellungen zu Ihrem SAP-System ein. Sie haben folgende Alternativen:
-
-**Use Single Application** -	Ein einzelner Applikationsserver wird für die Verbindung verwendet. Tragen Sie den Host-Name und die Systemnummer ein.
-Server
-
-**Use Load Balancing** -	Wählen Sie diese Option, wenn sie das SAP Load Balancing benutzen und SAP dazu bringen wollen, einen bestimmten Server für die 	Verbindung zu nutzen. Tragen Sie den Messageserver, die Logon-Gruppe und die SAP System ID (SID) ein. <br
+**Language** - The SAP logon language. Example: EN <br
 
 
-Tragen Sie anschließend die Angaben zur Authentifizierungsmethode ein, die für die Verbindung mit dem SAP-System genutzt werden soll. Sie haben folgende Optionen:
+Then enter the values for the connection settings to your SAP System. You have the following alternatives:
 
-**Use Secure Store** -		ECS Core nutzt einen Secure Store, um die SAP-Anmeldedaten des angemeldeten Windows-Benutzers zu erhalten.
-					Wählen Sie dazu die Option Secure Store Application ID, um eine existierende Secure Store Anwendung zu wählen. 
-					Wie man für ECS Core einen Secure Store anlegt erfahren Sie [hier](./ecscore-secure-store). 
+**Use Single Application** - A single application server is used for the connection. Enter the host name and the system number.
 
-**Use SSO Ticket** -		Es wird ein SAP SSO Ticket für die Authentifizierung verwendet. Tragen Sie die Ticket Issuer URL ein. 
+**Use Load Balancing** - Select this option if you are using SAP Load Balancing and want to get SAP to use a particular server for the connection. Enter the message server, the logon group, and the SAP System ID (SID). <br
 
-**Use SSO Ticket(pass-through)** -		SSO Ticket (pass through) wird für die Authentifizierung verwendet.
+
+Enter the details of the authentication method that is to be used for the connection to the SAP system. You have the following options:
+
+**Use Secure Store** - ECS Core uses a Secure Store to obtain the SAP logon data of the logged on Windows user.
+					To do this, choose the option Secure Store Application ID to select an existing Secure Store application. 
+					For information on how to create a Secure Store for ECS Core, see [here](./ecscore-secure-store). 
+
+**Use SSO Ticket** - A SAP SSO ticket is used for authentication. Enter the Ticket Issuer URL. 
+
+**Use SSO Ticket(pass-through)** - SSO Ticket (pass through) is used for authentication.
  
 
-**Use SNC** - 				Wenn Ihr SAP-System für den Zugriff über SSO mit SNC konfiguriert ist, können Sie die Option SNC wählen und den Partner Name  						setzen. Der Partner Name hat die Form: p:sapservicensp@theobald-software.com. 
+**Use SNC** - If your SAP system is configured to access via SSO with SNC, you can select the SNC option and set the partner name. The partner name is in the form: p:sapservicensp@theobald-software.com. 
 
-**Use technical access** -			Bei *Use technical access* als Authentifizierungsmethode tragen Sie in die Felder Username und Password den Benutzername und das
-			Passwort des SAP-Benutzers ein.
+**Use technical access** - For *Use technical access* as authentication method, enter the user name and the password in the fields Username and Password of the SAP user.
 
-Sie können eine SAP-Verbindung mit *Set instance as the default service* als Standard-Verbindung festlegen (sinnvoll bei mehreren Verbindungen). <br
+You can define an SAP connection with *Set instance as the default service* as the default connection (useful for multiple connections). <br
 
 
-Die angelegten Verbindungen werden anschließend am linken Bildschirmrand aufgeführt und können jederzeit angepasst oder gelöscht werden.
+The created connections are then listed on the left edge of the screen and can be adapted or deleted at any time.
 
-Sie müssen für jede angelegte Verbindung die Windows-Benutzer oder -Benutzergruppen hinzufügen, die die Verbindung nutzen dürfen. Standardmäßig ist die Windows-Benutzergruppe *Everyone* bereits hinzugefügt. 
-Klicken Sie auf die neu hinterlegte Verbindung und anschließend auf *Users*:
+For each connection you create, you must add the Windows users or user groups that are allowed to use the connection. By default, the Windows user group *Everyone* is already added. 
+Click on the new connection and then on *Users*:
 
-![ecscore-managementsite_sapconnection-2.jpg](/img/content/ecscore-managementsite_sapconnection-2.jpg){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-2.jpg](/img/content/ecscoremanagementsite_sapconnection-2.jpg){:class="img-responsive"}
 
-Hinzugefügte Windows-Benutzer oder -Benutzergruppen können jederzeit wieder entfernt werden.
+Added Windows users or user groups can be removed at any time.

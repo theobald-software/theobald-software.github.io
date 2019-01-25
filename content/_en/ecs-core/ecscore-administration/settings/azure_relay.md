@@ -7,41 +7,40 @@ product: ecs-core
 parent: settings
 permalink: /:collection/:path
 weight: 4
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=azure_relay
+lang: en_GB
 ---
 
-*Azure Service Bus* ist ein generisches Cloud-basiertes Messaging-System zur Verbindung von Anwendungen, Services und Geräten - egal wo diese sich befinden. <br>
-**Azure Relay** heißt ein Dienst, der auf dem Service Bus aufsetzt und mit dem es möglich ist, On-Premise Webservices durch die Firewall in die Cloud zu tunneln. 
+*Azure Service Bus* is a generic cloud-based messaging system that connects applications, services and devices wherever they are. <br>
+**Azure Relay** is a service that is based on the service bus and with which it is possible to tunnel on-premise web services through the firewall into the cloud. 
 
-Mit der Hilfe von Azure Service Bus und dem Azure Relay können Sie eine sichere System-Umgebung einrichten, entkoppelt von Ihrem Geschäftssystem mit ECS Core und SAP.
-Azure Relay verbindet sich dabei per TCP zu einem dedizierten Server und stellt einen Endpunkt bereit, der sichtbar ist für Client-Anwendungen. Dieser Endpunkt kann für den Datenaustausch mit ECS Core und Ihrem SAP System genutzt werden kann. 
-Der Vorteil einer solchen Systemarchitektur liegt darin, dass aus der Cloud keine Ports zum On-Premise installierten SAP System geöffnet werden müssen. 
+With the help of Azure Service Bus and Azure Relay you can set up a secure system environment, decoupled from your business system with ECS Core and SAP.
+Azure Relay connects to a dedicated server via TCP and provides an endpoint that is visible to client applications. This endpoint can be used for data exchange with ECS Core and your SAP system. 
+The advantage of such a system architecture is that no ports need to be opened from the cloud to the SAP system installed on-premise. 
 
-Wichtig: Um diese Funktionalität zu nutzen ist eine Standard Tier Subscription für Microsoft Azure notwendig, die nicht in ECS Core enthalten ist.
+Important: To use this functionality, a standard Tier Subscription for Microsoft Azure is required, which is not included in ECS Core.
 
-Die Einrichtung von *Azure Relay* mit ECS Core funktioniert folgendermaßen:
+Setting up *Azure Relay* with ECS Core works as follows:
 
-Beginnen Sie damit, ein neues Relay als Ressource im Azure Management Portal anzulegen (>*create a resource*)
+Start by creating a new relay as a resource in the Azure Management Portal (>*create a resource*).
 
-![ecscore-azurerelay_1](/img/content/ecscore-azurerelay_1.png){:class="img-responsive"}
+{ecscore-azurerelay_1](/img/content/ecscore-azurerelay_1.png){:class="img-responsive"}
 
-Beachten Sie, dass es alternative Methoden gibt, um Azure Ressourcen anzulegen und zu verwalten (z.B. mit Powershell, falls Sie diesen Prozess automatisieren möchten).
+Note that there are alternative methods to create and manage Azure resources (e.g. with Powershell if you want to automate this process).
 
-Klicken Sie anschließend auf die neu angelegte Ressource. Der Connection String, der für die Azure Relay Registrierung mit ECS Core erforderlich ist, findet sich unter *SharedAccessPolicies* und *RootManagedShared AccessKey*.
-Kopieren Sie den kompletten *Primary Connection String* (Endpoint=sb://...). 
+Then click on the newly created resource. The connection string required for Azure Relay registration with ECS Core can be found at *SharedAccessPolicies* and *RootManagedShared AccessKey*.
+Copy the complete *Primary Connection String* (Endpoint=sb://...). 
 
 ![ecscore-azurerelay_2](/img/content/ecscore-azurerelay_2.png){:class="img-responsive"}
 
-Gehen Sie auf der ECS Core Management Site zu *Settings>Azure Relay* und führen mit *Add Relay Registration* eine neue Registrierung durch.
-Fügen Sie dafür den kopierten Connection String in das Feld ein und sichern Sie den Eintrag mit *Add Azure Relay Registration*.
+Go to *Settings>Azure Relay* on the ECS Core Management Site and perform a new registration with *Add Relay Registration*.
+Paste the copied connection string into the field and save the entry with *Add Azure Relay Registration*.
 
 ![ecscore-azurerelay_3](/img/content/ecscore-azurerelay_3.jpg){:class="img-responsive"}
 
-Wichtig: Nach dem Hinzufügen einer neuen Azure Relay Registrierung ist zwingend das Recyclen der ECS Core Application Pools in den IIS erforderlich. Sie können dies manuell vornehmen oder auf der Management Site unter *Settings>System Operations* <br>
-mit der Funktion *Clear consumer website caches*.
+Important: After adding a new Azure Relay registration it is mandatory to recycle the ECS Core Application Pools into the IIS. You can do this manually or on the *Management Site* under *Settings>System Operations* <br>
+with the function *Clear consumer website caches*.
 
-Im Azure Management Portal sollte nun das Relay mit vorgenommenen Registrierung aufgeführt sein.
+The Azure Management Portal should now list the relay with the registration.
 
 ![ecscore-azurerelay_4](/img/content/ecscore-azurerelay_4.jpg){:class="img-responsive"}
 

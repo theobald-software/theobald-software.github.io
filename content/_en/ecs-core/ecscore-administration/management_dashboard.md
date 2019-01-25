@@ -7,37 +7,36 @@ product: ecs-core
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 1
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=management_dashboard
+lang: en_GB
 ---
 
-Auf der Management Site wird die Konfiguration für ECS Core vorgenommen. 
+On the *Management Site* the configuration for ECS Core is done. 
 
-Standardmäßig findet sich die *Management Site* unter http://localhost:8085. <br>
-Die Webseite können Sie anschließend als Lesezeichen im Webbrowser speichern.<br>
-Die Management Site kann auch über den IIS Manager gestartet werden. 
+By default, the *Management Site* can be found at http://localhost:8085. <br>
+Afterwards you can save the website as a bookmark in your web browser.<br>
+The management site can also be started via the IIS Manager. 
 
-Das initiale Benutzer/Passwort-Paar lautet admin/admin. Ändern Sie es am besten direkt nach der erstmaligen Anmeldung an der Management Site. Wie Sie das Passwort ändern können, ist unter [Settings>Administrators](.\settings\administrators) beschrieben. 
+The initial user/password pair is admin/admin. It is best to change it directly after logging on to the management site for the first time. How to change the password is described in [Settings>Administrators](.\settings\administrators). 
 
-Es stehen folgende Dienste auf der Management Site zur Verfügung:
+The following services are available on the management site:
 
 **[ECS Core Dashboard](./ecscore-dashboard)**
 
-Hier bekommen Sie eine Übersicht aller Inhalte des Management Site. 
+Here you get an overview of all contents of the management site. 
 
 **[SAP Connections](./sapconnections)**
 
-Hier erstellen und verwalten Sie die Verbindungen ins SAP.
+Here you create and manage the connections to SAP.
 
 **[Secure Stores](./ecscore-secure-store)**
 
-Hier werden die Einstellungen für Secure Stores verwaltet.
+The settings for Secure Stores are managed here.
 
 **[Web Services](./webservices)**
 
-Hier lassen sich die Web Services verwalten.
+The Web Services can be managed here.
 
 **[Settings](./settings)**
 
-Hier lassen sich Lizenzen hinzufügen, ECS Core Administratoren festlegen, API Schlüssel verwalten, eine Registrierung mit einem *Azure Relay* herstellen und bestimmte Systemoperationen durchführen.
+Here you can add licenses, define ECS core administrators, manage API keys, create a registration with an *Azure Relay* and perform certain system operations.
 

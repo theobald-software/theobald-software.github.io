@@ -7,28 +7,27 @@ product: ecs-core
 parent: settings
 permalink: /:collection/:path
 weight: 3
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=api_keys
+lang: en_GB
 ---
 
-ECSCore unterstützt die Authentifizierung mit einem **API Key** (**A**pplication **P**rogramming**I**nterface **K**ey).
+ECSCore supports authentication with a **API Key** (**A**pplication **P**rogramming**I**interface **K**ey).
 
-API Keys können als Authentifizierungsmethode verwendet werden, wenn der Zugriff nicht über benutzerspezifische Zugangsdaten erfolgen soll. 
-Ein API Key fungiert dabei als eindeutige Kennung und kann sehr einfach hinzugefügt, neu generiert oder entfernt werden. 
-Für zahlreiche Cloud-Szenarien stellt dies einen praktikablen und typischen Authentifizierungsmechanismus dar.
+API keys can be used as an authentication method if access is not to be made via user-specific access data. 
+An API key acts as a unique identifier and can easily be added, regenerated or removed. 
+For many cloud scenarios, this is a viable and typical authentication mechanism.
 
 
-Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt API Keys. Sie können einen API Key für zwei Arten von Benutzern hinzufügen: <br>
-1. Gültiger **Windows Benutzer** mit Windows-Kennwort: Ein solcher, zu einem Windows-Benutzer erzeugter API Key, kann ausschließlich für Authentifizierung innerhalb einer Cloud-Anwendung verwendet werden, welche mit ECS Core erstellte Webservices oder von ECS Core bereitgestellte REST API konsumiert. <br>
-2. Auf der Management Site angelegter **Dashboard-Benutzer**: Ein solcher API Key, der auf einen von Windows unabhängigen Dashboard-Benutzer erstellt wurde, kann ausschließlich für das Deployment von Webservices im WebService Designer verwendet werden.   
+To add a new API Key, click *Add API Key* in the API Keys section. You can add an API key for two types of users: <br>.
+1. Valid **Windows user** with Windows password: Such an API key generated for a Windows user can only be used for authentication within a cloud application that consumes Web services created with ECS Core or REST API provided by ECS Core. <br>
+2. **Dashboard user created on the management site**: Such an API key, created on a Windows independent dashboard user, can only be used for deployment of Web services in the WebService Designer.   
 
-Einzelheiten zum Thema Deployment und Konsumieren von Services finden Sie im Abschnitt [Webservice Authentifizierung](.../webservices/webservice_authentifizierung).
+For details about deploying and consuming services, see the [Web Service Authentication](.../webservices/webservice_authentication) section.
  
-Nach der Erstellung des Schlüssels wird dieser unter API Keys angezeigt. Unter Umständen muss zunächst der Cache noch bereinigt werden (beschrieben unter *System Operations*). 
+After the key is created, it is displayed under API Keys. You may need to clean up the cache first (described in *System Operations*). 
 
-Klicken Sie auf den API Key, um die folgenden Optionen angezeigt zu bekommen: 
+Click on the API key to display the following options: 
 
 - Update
-- Remove
+- remove
 
-Sie benötigen die *Update* Option, falls sich die Zugangsdaten des Benutzers geändert haben.
+You will need the *Update* option if the user's credentials have changed.

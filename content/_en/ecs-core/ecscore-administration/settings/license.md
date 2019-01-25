@@ -7,13 +7,12 @@ product: ecs-core
 parent: settings
 permalink: /:collection/:path
 weight: 1
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=license
+lang: en_GB
 ---
 
-Sie benötigen eine gültige Software-Lizenz, um ECS Core verwenden zu können. Im *License* Karteireiter wird die aktuelle Lizenz angezeigt. Eine 30 Tage gültige Testlizenz ist standardmäßig bereits hinterlegt. 
+You need a valid software license to use ECS Core. The *License* tab shows the current license. A test license valid for 30 days is already stored by default. 
 
-Wenn Sie die Software kaufen, erhalten Sie einen neuen Lizenzschlüssel *ECSCoreLicense.json*, den Sie im Verzeichnis C://ECSCore auf dem Windows Server hinterlegen müssen. Selektieren Sie den Schlüssel mit *Browse* und fügen diesen 
-mit *Apply* hinzu.
+When you purchase the software, you will receive a new license key *ECSCoreLicense.json*, which you must store in the directory C://ECSCore on the Windows server. Select the key with *Browse* and add it 
+with "apply.
 
-![ecscore-license](/img/content/ecscore_license.jpg){:class="img-responsive"}
+{[ecscore-license](/img/content/ecscore_license.jpg){:class="img-responsive"}

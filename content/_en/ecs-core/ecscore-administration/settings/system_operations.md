@@ -7,19 +7,18 @@ product: ecs-core
 parent: settings
 permalink: /:collection/:path
 weight: 5
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=system_operations
+lang: en_GB
 ---
 
-Unter *System Operations* können folgende Operationen durchgeführt werden:
+The following operations can be performed under *System Operations*:
 - Clear consumer website caches
 - Regenerate All Web Services
 
 **Clear consumer website caches** <br>
-Mit dieser Operation wird der Webseiten-Cache erneuert, was dem Recyclen der IIS Applikationspools der ECS Core Management Site (Standardport 8085) und der Services Site (Standardport 8080)entspricht.
-Zur Nutzung der Operation müssen oben die Windows Credentials und ggf. der Domainname des Windows-Servers hinterlegt werden. <br>
+This operation refreshes the Web page cache, which is equivalent to recycling the IIS application pools of the ECS Core Management Site (default port 8085) and the Services Site (default port 8080).
+To use the operation, the Windows credentials and, if applicable, the domain name of the Windows server must be stored at the top. <br>
 
-Wichtig: Diese Operation oder das manuelle Recyclen der IIS Applikationspools muss zwingend ausgeführt werden nach der Registrierung eines Azure Relays (ausführlich beschrieben unter [Azure Relay](./azure_relay)).    
+Important: This operation or manual recycling of the IIS application pools must be performed after registering an Azure Relay (described in detail in [Azure Relay](./azure_relay)).    
 
 **Regenerate All Web Services** <br>
-Die Operation betrifft nur die Migration von einer ECS Core 1.x auf einer ECS Core 2.x Version. Zur manuellen Wiederherstellung deployter Webservices aus der alten Version kann diese Operation verwendet werden.
+The operation only affects the migration from an ECS Core 1.x to an ECS Core 2.x version. This operation can be used for manual recovery of deployed web services from the old version

@@ -7,13 +7,11 @@ product: ecs-core
 parent: ecscore-administration
 permalink: /:collection/:path
 weight: 5
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=webservices
+lang: en_GB
 ---
 
-Im Menü *Web Services* lassen sich die Web Services verwalten. Es werden dort zum einen alle Web Services inklusive aller Service-Operationen angezeigt, die mit dem WebService Designer erstellt und zum Management Endpoint deployed wurden. 
-Darüber hinaus werden beim Anklicken eines Web Services folgende zusätzliche Optionen angeboten: <br>
-- *[Download Open Api Definition](../webservices/openapi_definitionen/openapi_definitionen_erstellen_managementsite)*: Damit wird ein Web Service in eine OpenApi Definition exportiert.
-- *Download Web Service Definition*: Damit wird die Web Service Definition zu einem gewünschten Speicherort gesichert.    
-- *Remove*: Damit wird ein Web Service vom Dashboard gelöscht. 
-
+The Web Services can be managed in the *Web Services* menu. All Web Services including all service operations created with the WebService Designer and deployed to the management endpoint are displayed. 
+In addition, when you click on a Web Service, the following additional options are offered: <br>
+- *[Download Open Api Definition](../webservices/openapi_definitions/create_openapi_definitions_managementsite)*: This exports a Web service to an OpenApi definition.
+- *Download Web Service Definition*: This saves the Web service definition to a desired storage location.    
+- *Remove*: This deletes a Web service from the dashboard. 
