@@ -5,7 +5,6 @@ title: Einführung
 description: Einführung
 product: ecs-core
 parent: ecs-core
-childidentifier: ecs-core
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
