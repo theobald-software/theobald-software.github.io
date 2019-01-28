@@ -1,61 +1,61 @@
 ---
 ref: ecscore-nintex-forms-02
 layout: page
-title: Befüllen von Dropdown-Boxen in Nintex-Forms
-description: Befüllen von Dropdown-Boxen in Nintex-Forms
+title: Filling dropdown boxes in Nintex Forms
+description: Filling dropdown boxes in Nintex Forms
 product: ecs-core
-parent: nintex_forms_fuer_office365
+parent: nintex_forms_for_office365
 permalink: /:collection/:path
 weight: 2
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=befuellen_von_dropdown_boxen_in_nintex_forms
+lang: en_GB
 ---
 
-In bestimmten Integrationsszenarien kann es sinnvoll sein, SAP-Daten für eine flexible Datenselektion in kaskadierenden Dropdown-Listen zur Verfügung zu stellen. Auch dies ist mit JavaScript und REST-Services in Nintex Forms möglich (vgl. vorheriges Beispiel).
+In certain integration scenarios, it can be useful to make SAP data available for flexible data selection in cascading dropdown lists. This is also possible with JavaScript and REST services in Nintex Forms (see previous example).
 
-Im vorliegenden Beispiel soll in einem Eingabefeld eine SAP Materialnummer eingegeben und die möglichen Treffer in einer Dropdownliste angezeigt werden. Wird ein Material in der Dopdown-Liste selektiert, dann soll der Materialtext in einem weiteren Feld angezeigt werden. 
+In this example, an SAP material number is entered in an input field and the possible hits are displayed in a dropdown list. If a material is selected in the drop-down list, the material text is to be displayed in another field. 
 
-**Schritt 1: Textfelder definieren**
+**Step 1: Define text fields**
 
-In unserer Nintex-Form benötigen wir drei Felder mit Bezeichnungen: 
+In our Nintex form we need three fields with designations: 
 
-1. Das erste Feld *Material Number* vom Typ **Single Line Textbox** ist das Eingabefeld und enthält die Materialnummer.
-2. Im zweiten Feld *Suggested Materials* vom Typ **Choice** werden die möglichen Treffer für die eingegebene Materialnummer in einer Dropdownliste ausgegeben und sind selektierbar.
-3. Im dritten Feld *Material* vom Typ **Single Line Textbox** wird der Material-Langtext zum ausgewählten Material angezeigt.
+The first field *Material Number* of type **Single Line Textbox** is the input field and contains the material number.
+In the second field *Suggested material* of type **Choice**, the possible hits for the material number entered are displayed in a dropdown list and can be selected.
+The third field *Material* of type **Single Line Textbox** displays the material long text for the selected material.
 
 ![nintex-forms-js-dropdown-01](/img/content/nintex-forms-js-dropdown-01.jpg){:class="img-responsive"}
 
-Rufen Sie zunächst die Settings für das Feld *Material Number* auf und setzen Sie die Option *Store Client ID in JavaScript Variable* auf Yes. <br>
-Tragen Sie *field_input* als Namen ins Feld *Client ID JavaScript variable name* ein.
+First call the settings for the field *Material Number* and set the option *Store Client ID in JavaScript Variable* to Yes. <br>
+Enter *field_input* as the name in the *Client ID JavaScript variable name* field.
 
 ![nintex-forms-js-dropdown-02](/img/content/nintex-forms-js-dropdown-02.jpg){:class="img-responsive"}
 
-Rufen Sie anschließend die Settings für das *Choice*-Feld auf. <br>
-Wählen Sie als Anzeigeformat Drop down list und tragen Sie bei *Choices* z.B. Start typing ein. Was Sie hier eintragen spielt keine Rolle, da die Eingabe durch JavaScript später wieder überschrieben wird (Im vorliegenden Beispiel mit dem Satz *Start typing in the input* above).  
-Setzen Sie anschließend die Option *Store Client ID in JavaScript Variable* auf Yes und tragen Sie ins Feld *Client ID JavaScript variable name* den Name *field_select* ein.
+Then call up the settings for the *Choice* field. <br>
+Select Drop down list as the display format and enter e.g. Start typing for *Choices*. What you enter here does not matter, as the input will be overwritten by JavaScript later (in this example with the sentence *Start typing in the input* above).  
+Then set the option *Store Client ID in JavaScript Variable* to *Yes* and enter the name *field_select* in the field *Client ID JavaScript variable name*.
 
 ![nintex-forms-js-dropdown-03](/img/content/nintex-forms-js-dropdown-03.jpg){:class="img-responsive"}
 
-Rufen Sie anschließend die Settings für die *Single Line Textbox* neben *Material* auf. Setzen Sie auch hier die Option *Store Client ID in JavaScript Variable* auf Yes und tragen Sie ins Feld *Client ID JavaScript variable name* den Name *field_output* ein.   
+Then recall the settings for the *Single Line Textbox* next to *Material*. Set the option *Store Client ID in JavaScript Variable* to *Yes* and enter the name *field_output* in the field *Client ID JavaScript variable name*.   
 
-Da es sich nur um ein Anzeigefeld handeln soll, können Sie zusätzlich unter *Appearance* definieren, dass das Feld nur angezeigt werden soll und keine Eingaben zugelassen sind.        
+Since this is only a display field, you can also define under *Appearance* that the field is only to be displayed and that no entries are allowed.        
 
 ![nintex-forms-js-dropdown-04](/img/content/nintex-forms-js-dropdown-04.jpg){:class="img-responsive"}
 
-**Schritt 2: JavaScript-Code einfügen**
+**Step 2: Insert JavaScript code**
 
-Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -> Advanced -> Custom JavaScript Includes* ein:
+Add a reference to our JavaScript library under *Form Settings -> Advanced -> Custom JavaScript Includes*:
 
 [http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js](http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js)
 
 
 ![nintex-forms-js-dropdown-05](/img/content/nintex-forms-js-dropdown-05.jpg){:class="img-responsive"}
 
-Fügen Sie den JavaScript-Code unter *Form Settings -> Advanced -> Custom JavaScript* ein.
+Insert the JavaScript code under *Form Settings -> Advanced -> Custom JavaScript*.
 
 ![nintex-forms-js-dropdown-06](/img/content/nintex-forms-js-dropdown-06.jpg){:class="img-responsive"}
 
-Im Code wird die Funktion *tEcs.executeXql* aufgerufen, um die Materialnummer und den Material-Langtext aus der SAP-Tabelle MAKT zu lesen.
+The function *tEcs.executeXql* is called in the code to read the material number and the material long text from the SAP table MAKT.
+
 
 {% highlight javascript %}
 NWF$(document).ready(function() {
@@ -154,16 +154,14 @@ NWF$(document).ready(function() {
     });
 {% endhighlight %}
 
-Für weitere Informationen siehe [JavaScript Library for REST](../../ecs-de/ecs-runtime/ecs-webservices/javascript-bibliothek-fuer-rest).<br>  
-Dieses Szenario können Sie auch mit ECS Core umsetzen, siehe [Anwendungsentwicklung mit ECS Core](../../anwendungsentwicklung-mit-ecs-core).
+For more information see [JavaScript Library for REST](../../ecs-en/ecs-runtime/ecs-webservices/javascript-bibliothek-fuer-rest).<br>  
 
-**Schritt 3: Die Nintex Form ausführen**
+**Step 3: Executing the Nintex Form**
 
-Nun führen Sie die Form aus und geben Sie eine Materialnummer ein. Die Treffer zur Eingabe werden aus SAP gelesen und in der Dropdown Liste (Suggested Materials) angezeigt.  
-
+Now execute the form and enter a material number. The hits for the entry are read from SAP and displayed in the dropdown list (Suggested Materials).  
 
 ![nintex-forms-js-dropdown-07](/img/content/nintex-forms-js-dropdown-07.jpg){:class="img-responsive"}
 
-Wählt man ein Material aus der Liste aus, wird der Langtext dazu im Feld *Material angezeigt*. 
+If you select a material from the list, the long text for this material is displayed in the *material* field. 
 
 ![nintex-forms-js-dropdown-08](/img/content/nintex-forms-js-dropdown-08.jpg){:class="img-responsive"}

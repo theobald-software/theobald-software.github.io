@@ -1,55 +1,54 @@
 ---
 ref: ecscore-nintex-forms-01
 layout: page
-title: SAP-Validierung in Nintex-Forms
-description: SAP-Validierung in Nintex-Forms
+title: SAP validation in Nintex-Forms
+description: SAP validation in Nintex-Forms
 product: ecs-core
-parent: nintex_forms_fuer_office365
+parent: nintex_forms_for_office365
 permalink: /:collection/:path
 weight: 1
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=sap-validierung-in-nintex-forms
+lang: en_GB
 ---
 
-Beim Einsatz von Nintex-Forms in SAP-Integrationsszenarien ist es oft notwendig, die Eingabedaten zu prüfen, ob sie gültig im SAP-System sind, bevor wir die Form verschicken. Wenn die Form ein Eingabefeld beispielsweise für eine SAP-Kundennummer hat, wollen wir prüfen, ob diese Kundennummer im SAP-System existiert. 
+When using Nintex Forms in SAP integration scenarios, it is often necessary to check the input data to see if it is valid in the SAP system before we send the form. If the form has an input field for an SAP customer number, for example, we want to check whether this customer number exists in the SAP system. 
 
-ECS Core bietet REST-Services für SAP-Operationen, welche von JavaScript konsumiert werden können. Die Einbindung von Custom JavaScript wird wiederum von Nintex Forms unterstützt. In diesem Beispiel werden wir die eingegebene SAP-Kundennummer in der Nintex-Form mit Hilfe von JavaScript und ERPConnect Services REST Services auf Gültigkeit im SAP-System prüfen.
+ECS Core offers REST services for SAP operations that can be consumed by JavaScript. The integration of custom JavaScript is in turn supported by Nintex Forms. In this example, we will use JavaScript and ERPConnect Services REST Services to check the SAP customer number entered in the Nintex form for validity in the SAP system.
 
-**Schritt 1: Textfelder definieren**
+**Step 1: Define text fields**
 
-In unserer Nintex-Form benötigen wir zwei Felder: 
-Das erste Feld *field_input* enthält die Kundennummer. 
-Das zweite Feld *field_output* enthält den SAP-Kundennamen falls die Eingabe gültig ist ansonsten eine Fehlermeldung.
+In our Nintex form we need two fields: 
+The first field *field_input* contains the customer number. 
+The second field *field_output* contains the SAP customer name if the entry is valid, otherwise an error message.
 
 ![nintex-forms-js-ecs-01](/img/content/nintex-forms-js-ecs-01.jpg){:class="img-responsive"}
 
-Klicken Sie mit der rechten Maustaste auf das erste Feld und wählen Sie *Settings*.
+Right-click on the first field and select *Settings*.
 
 ![nintex-forms-js-ecs-02](/img/content/nintex-forms-js-ecs-02.jpg){:class="img-responsive"}
 
-Setzen Sie die Option *Store Client ID in JavaScript Variable* auf *Yes*.<br>
-Setzen Sie einen Namen ins Feld *Client ID JavaScript variable name*, z.B. *field_input*.
+Set the option *Store Client ID in JavaScript Variable* to *Yes*.<br>.
+Put a name in the field *Client ID JavaScript variable name*, e.g. *field_input*.
 
 ![nintex-forms-js-ecs-03](/img/content/nintex-forms-js-ecs-03.jpg){:class="img-responsive"}
 
-Wiederholen Sie die letzten Schritte fürs zweite Feld und benennen Sie es, z.B. *field_output*.
+Repeat the last steps for the second field and name it, e.g. *field_output*.
 
 ![nintex-forms-js-ecs-04](/img/content/nintex-forms-js-ecs-04.jpg){:class="img-responsive"} 
 
-**Schritt 2: JavaScript-Code einfügen**
+**Step 2: Insert JavaScript code**
 
-Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -> Advanced -> Custom JavaScript Includes* ein:
+Add a reference to our JavaScript library under *Form Settings -> Advanced -> Custom JavaScript Includes*:
 
 [http://static.theobald-software.com/theobald.ecs.micro/5.4.2/theobald.ecs.micro.js]()
 
 
-![nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.jpg){:class="img-responsive"}
+{[nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.jpg){:class="img-responsive"}
 
-Fügen Sie den JavaScript-Code unter *Form Settings -> Advanced -> Custom JavaScript* ein.
+Insert the JavaScript code under *Form Settings -> Advanced -> Custom JavaScript*.
 
 ![nintex-forms-js-ecs-06](/img/content/nintex-forms-js-ecs-06.jpg){:class="img-responsive"}
 
-Im Code wird die Funktion *tEcs.ExeculeXQL* aufgerufen, um den Kundennamen aus der SAP-Tabelle KNA1 zu lesen. 
+The *tEcs.ExeculeXQL* function is called in the code to read the customer name from the SAP table KNA1. 
 
 {% highlight javascript %}
 // webpage loaded
@@ -99,19 +98,19 @@ NWF$(document).ready(function() {
 });
 {% endhighlight %}
 
-Für weitere Informationen siehe [JavaScript Library for REST]().  
+For more information, see [JavaScript Library for REST]().  
 
-**Schritt 3: Die Nintex Form ausführen**
+**Step 3: Execute the Nintex form**
 
-Nun führen Sie die Form aus und geben Sie eine Kundennummer ein. Der Kundenname wird aus SAP gelesen und im zweiten Feld angezeigt.  
+Now execute the form and enter a customer number. The customer name is read from SAP and displayed in the second field.  
 
 
 
 ![nintex-forms-js-ecs-07](/img/content/nintex-forms-js-ecs-07.jpg){:class="img-responsive"}
 
-Sollte die eingegebene Kundennummer im SAP nicht existieren, erscheint eine entsprechende Fehlermeldung. 
+If the customer number you entered does not exist in SAP, an error message appears. 
 
 ![nintex-forms-js-ecs-08](/img/content/nintex-forms-js-ecs-08.jpg){:class="img-responsive"}
 
-Dieses Beispiel zeigt, wie Sie Eingabedaten in Nintex Form auf SAP-Gültigkeit prüfen. Die Prüfung wurde mit Hilfe von JavaScript und ECS Core REST Services umgesetzt. <br>
-Viele weitere Szenarien sind denkbar. Möglich wäre es z.B., eine Combobox mit SAP Kundennummern bzw. -namen zu füllen oder eine direkte SAP-Suche anzubieten.<br>
+This example shows how to check input data for SAP validity in Nintex form. The check was implemented using JavaScript and ECS Core REST Services. <br>
+Many other scenarios are feasible. It would be possible, for example, to fill a combo box with SAP customer numbers or names, or to offer a direct SAP search.
