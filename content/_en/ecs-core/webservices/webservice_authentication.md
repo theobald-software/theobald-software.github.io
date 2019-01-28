@@ -1,19 +1,18 @@
 ---
 ref: ecs-core-webservice-designer-02
 layout: page
-title: Webservice Authentifizierung
-description: Webservice Authentifizierung
+title: Web service authentication
+description: Web service authentication
 product: ecs-core
 parent: webservices
-childidentifier: webservice_authentifizierung
+childidentifier: webservice_authentication
 permalink: /:collection/:path
 weight: 2
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=webservice_authentifizierung
+lang: en_GB
 ---
 
-Webservice Authentifizierung in ECS Core betrifft zwei Bereiche:
+Webservice Authentication in ECS Core concerns two areas:
 
-1. **Authentifzierung zwischen dem WebService Designer und ECS Core**: Dies bezieht sich auf das Deployment eines Webservice auf den ECS Core Server. Deployed wird zur Management Site mit Standard-Port 8085 ("Management Endpoint").
+1. **Authentication between WebService Designer and ECS Core**: This refers to the deployment of a Web service on the ECS Core Server. Deployed becomes a management site with default port 8085 ("Management Endpoint").
  
-2. **Authentifizierung zwischen einem Webservice Konsumenten und ECS Core**: Dies bezieht sich auf einen Webservice-Aufruf von einer Konsumentenanwendung. Die Konsumentenanwendung kann beispielsweise ein REST Client, ein Workflow, eine JavaScript App, etc. sein. Konsumiert wird ein Webservice von der *Services Site* mit Standard-Port 8080 ("Consumer Endpoint").
+2. **Authentication between a web service consumer app and ECS Core**: This refers to a web service call from a consumer application. The consumer application could be a REST client, workflow, JavaScript app, etc. A web service is consumed by the *Services Site* with default port 8080 ("Consumer Endpoint").
