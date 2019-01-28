@@ -10,4 +10,4 @@ weight: 3
 lang: en_GB
 ---
 
-{% include _content/en/wsd-parameter-mapping/list_based_parameters.md %} 
+{% include _content/en/wsd-parameter-mapping/list-based-parameters.md %} 
