@@ -4,7 +4,7 @@ layout: page
 title: Mapping scalar parameters
 description: Mapping scalar parameters
 product: ecs-core
-parent: scalar_parameters_mapping
+parent: input_parameter_mapping
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

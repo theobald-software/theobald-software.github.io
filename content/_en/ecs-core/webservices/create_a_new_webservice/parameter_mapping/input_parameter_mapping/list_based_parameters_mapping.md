@@ -4,7 +4,7 @@ layout: page
 title: List-based parameters mapping
 description: List-based parameters mapping
 product: ecs-core
-parent: list_based_parameters_mapping
+parent: input_parameter_mapping
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

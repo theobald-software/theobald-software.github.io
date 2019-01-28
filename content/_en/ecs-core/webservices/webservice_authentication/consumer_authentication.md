@@ -40,11 +40,11 @@ Example: https://theobald-proxyservices.servicebus.windows.net/ecs/ws/custom/SAP
 *Accept:*                       application/json (XML not supported)<br>
 *Content-Type:*                 application/json (XML not supported) 
 
-*Params:*                       Scalar input parameters (only required if the Web service contains such parameters; are automatically added to the URL)
+*Params:*                       Scalar input parameters (only required if the web service contains such parameters; are automatically added to the URL)
 
-*Body:*                         List-like input parameters or input structures (only required if the Web service contains such parameters) 
+*Body:*                         List-based input parameters or input structures (only required if the web service contains such parameters) 
 
-![ecscore-webservicetest_4](/img/content/ecscorewebservicetest_4.png){:class="img-responsive"}
+![ecscore-webservicetest_4](/img/content/ecscore-webservicetest_4.png){:class="img-responsive"}
 
 **Connection Settings with Basic Authentication**
 
@@ -66,13 +66,13 @@ Example: http://52.88.254.77:8080/wsd/SAPCustomerWebservice/CustomerGet
 *Accept:*                     application/json (XML not supported)<br>
 *Content-Type:*               application/json (XML not supported) 
 
-*Params:*                     Scalar input parameters (only required if the Web service contains such parameters; are automatically added to the URL)
+*Params:*                     Scalar input parameters (only required if the web service contains such parameters; are automatically added to the URL)
 
-*Body:*                       List-like input parameters or input structures (only required if the web service contains such parameters) 
+*Body:*                       List-based input parameters or input structures (only required if the web service contains such parameters) 
 
-![ecscore-webservicetest_5](/img/content/ecscorewebservicetest_5.png){:class="img-responsive"}
+![ecscore-webservicetest_5](/img/content/ecscore-webservicetest_5.png){:class="img-responsive"}
 
-![ecscore-webservicetest_6](/img/content/ecscorewebservicetest_6.png){:class="img-responsive"}
+![ecscore-webservicetest_6](/img/content/ecscore-webservicetest_6.png){:class="img-responsive"}
 
 **Connection settings with Windows authentication (NTLM)**
 
@@ -95,10 +95,10 @@ Example: http://localhost:8080/wsd/SAPCustomerWebservice/CustomerGet
 *Accept:*                    application/json (XML not supported)<br>
 *Content-Type:*              application/json (XML not supported) 
 
-*Params:*                    Scalar input parameters (only required if the Web service contains such parameters; are automatically added to the URL)
+*Params:*                    Scalar input parameters (only required if the web service contains such parameters; are automatically added to the URL)
 
-*Body:*                      List-like input parameters or input structures (only required if the Web service contains such parameters) 
+*Body:*                      List-based input parameters or input structures (only required if the web service contains such parameters) 
 
-![ecscore-webservicetest_7](/img/content/ecscorewebservicetest_7.jpg){:class="img-responsive"}
+![ecscore-webservicetest_7](/img/content/ecscore-webservicetest_7.jpg){:class="img-responsive"}
 
-![ecscore-webservicetest_8](/img/content/ecscorewebservicetest_8.jpg){:class="img-responsive"}
+![ecscore-webservicetest_8](/img/content/ecscore-webservicetest_8.jpg){:class="img-responsive"}

@@ -26,7 +26,7 @@ The connection settings and authentication for deployment must be stored in the 
 
 Example:
 
-![ecscore-webservicetest_1](/img/content/ecscorewebservicetest_1.jpg){:class="img-responsive"}
+![ecscore-webservicetest_1](/img/content/ecscore-webservicetest_1.jpg){:class="img-responsive"}
 
 **Connection Settings with Basic Authentication**
 
@@ -36,6 +36,6 @@ Example:
 
 Example: 
 
-![ecscore-webservicetest_1](/img/content/ecscorewebservicetest_2.jpg){:class="img-responsive"}
+![ecscore-webservicetest_1](/img/content/ecscore-webservicetest_2.jpg){:class="img-responsive"}
 
 With *Test* you can test the connection settings. 
