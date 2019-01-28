@@ -14,7 +14,7 @@ In the *SAP Connections* tab, connections to one or more SAP systems can be crea
 
 Click on *New SAP Connection* to create a new connection.
 
-![ecscore-managementsite_sapconnection-1.jpg](/img/content/ecscoremanagementsite_sapconnection-1.jpg){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-1.jpg](/img/content/ecscore-managementsite_sapconnection-1.jpg){:class="img-responsive"}
 
 First make the entries for the following fields:
 

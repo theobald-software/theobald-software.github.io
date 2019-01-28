@@ -61,7 +61,7 @@ Complete the Web form with the following input fields:
 
 **Cost Center**: Text 
 
-{ecscore-nwc_10](/img/content/ecscore-nwc_10.png){:class="img-responsive"}
+![ecscore-nwc_10](/img/content/ecscore-nwc_10.png){:class="img-responsive"}
 
 After saving, the input fields of the form are available as start event variables in the workflow. 
 
