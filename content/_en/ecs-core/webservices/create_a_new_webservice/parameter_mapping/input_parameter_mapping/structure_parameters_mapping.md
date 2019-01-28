@@ -10,4 +10,4 @@ weight: 2
 lang: en_GB
 ---
 
-{% include _content/de/wsd-parameter-mapping/structure_parameters_mapping.md %}
+{% include _content/en/wsd-parameter-mapping/structure_parameters_mapping.md %}
