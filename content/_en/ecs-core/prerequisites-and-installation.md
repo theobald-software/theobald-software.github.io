@@ -11,6 +11,6 @@ weight: 1
 lang: en_GB
 ---
 
-This chapter describes the installation and configuration of **ECSCore**.
+This chapter describes the installation and configuration of **ECS Core**.
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

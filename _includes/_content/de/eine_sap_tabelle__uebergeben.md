@@ -1,16 +1,3 @@
----
-ref: ecs-wd-sws-operation-with-sap-table-01
-layout: page
-title: Übergeben einer Tabelle
-description: Übergeben einer Tabelle
-product: erpconnect-services
-parent: aufruf_einer_sap_tabelle
-permalink: /:collection/:path
-weight: 1
-lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=eine_sap_tabelle__bergeben1
----
-
 Legen Sie zunächst eine neue Webservice-Operation an und benennen diese. 
 
 Fügen Sie per Drag & Drop die Aktivität *Execute Table* im Ablaufdiagramm hinzu.

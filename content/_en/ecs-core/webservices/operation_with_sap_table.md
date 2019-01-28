@@ -1,11 +1,11 @@
 ---
 ref: ecscore-wd-web-services-02
 layout: page
-title: Calling an SAP table
-description: Calling an SAP table
+title: Operation with SAP table
+description: Operation with SAP table
 product: ecs-core
 parent: webservices
-childidentifier: calling_an_sap_table
+childidentifier: operation_with_sap_table
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
