@@ -23,7 +23,7 @@ Setting up *Azure Relay* with ECS Core works as follows:
 
 Start by creating a new relay as a resource in the Azure Management Portal (>*create a resource*).
 
-{ecscore-azurerelay_1](/img/content/ecscore-azurerelay_1.png){:class="img-responsive"}
+![ecscore-azurerelay_1](/img/content/ecscore-azurerelay_1.png){:class="img-responsive"}
 
 Note that there are alternative methods to create and manage Azure resources (e.g. with Powershell if you want to automate this process).
 

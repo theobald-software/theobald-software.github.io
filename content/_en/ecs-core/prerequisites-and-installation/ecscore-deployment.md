@@ -4,28 +4,27 @@ layout: page
 title: Deployment
 description: Deployment
 product: ecs-core
-parent: voraussetzungen-und-installation
+parent: prerequisites-and-installation
 permalink: /:collection/:path
 weight: 3
-lang: de_DE
-old_url: /ECS-Core-DE/default.aspx?pageid=deployment
+lang: en_GB
 ---
 
-Der Deployment Manager installiert die Administration-Oberfläche für die Verwaltung (z.B. SAP-Verbindung, Azure Relay, Web Services) von ECS Core. 
-Darunter versteht man die Einrichtung der IIS-Webseiten und der verbundenen Ressourcen wie Datenbank für die konfigurierbaren ECS Core Einstellung wie Zugriffs- und Verbindungs-Einstellungen.
+The Deployment Manager installs the administration interface for the administration (e.g. SAP connection, Azure Relay, Web Services) of ECS Core. 
+This is the setup of the IIS web pages and the associated resources such as database for the configurable ECS Core settings such as access and connection settings.
 
-**Voraussetzungen**
+**Prerequisites** 
 
-Folgende IIS-Komponenten werden zwingend zur Ausführung benötigt:
+The following IIS components are required for execution:
 
-*Common HTTP-Features*
+*Common HTTP Features*
 - HTTP Redirection
 
-*Security*
+* Security*
 - Basic Authentication
-- Windows Authentication
+- Windows authentication
 
-*Application Development*
+*Application development*
 - ASP.NET 4.7
 - ISAPI Extension
 - ISAPI Filters
@@ -34,47 +33,44 @@ Folgende IIS-Komponenten werden zwingend zur Ausführung benötigt:
 - IIS Management Tools and Scripts
 
 
-Fehlende IIS-Komponenten können automatisch beim Start des Deploymentmanagers nachinstalliert werden. Alternativ können diese vorab manuell über das Windows Server Management (*Add Roles and Features*) hinzugefügt werden.
+Missing IIS components can be installed automatically when starting the Deployment Manager. Alternatively, they can be added manually in advance using Windows Server Management (*Add Roles and Features*).
 
 **Deployment**
 
 ![ecscore-deploymentmanager-1.jpg](/img/content/ecscore-deploymentmanager-1.jpg){:class="img-responsive"}
 
-Wählen Sie *Express Install* zur Installation mit den Standardeinstellungen und -Ports. Zur Anpassung der Standardwerte klicken Sie auf *Next*. Damit wird der Expertenmodus durchlaufen, den wir nur erfahrenen Anwendern empfehlen.  
+Select *Express Install* to install with the default settings and ports. To adjust the default values, click *Next*. This will go through expert mode, which we recommend only to experienced users.  
 
-Im Expertenmodus können Sie folgende Feineinstellungen vornehmen:
+In Expert mode, you can make the following fine adjustments:
 
 **Installation Directory**
 
-Standardverzeichnis für die Einrichtung der Komponenten: C:\ECSCore
+Default directory for setting up the components: C:\ECSCore
 
-**Services Site**
-
-*Services Site* bezeichnet im technischen Sinne die Webseite, die den Konsumenten-Endpoint für deployte Webservices sowie die Client-Library für den Aufruf von SAP-Funktionalitäten in der Cloudumgebung bereitstellt.<br>
-Der Deployment Manager legt die Seite in den IIS an. Sie können diese direkt von dort oder unter Angabe des eingetragenen Ports (8080) direkt im Browser aufrufen (http://localhost:8080).
+*Services Site* technically means the Web page that provides the consumer endpoint for deployed Web services and the client library for calling SAP functionality in the cloud environment.
+The Deployment Manager creates the page in the IIS. You can call it directly from there or by specifying the port entered (8080) directly in the browser (http://localhost:8080).
 
 
 ![ecscore-deploymentmanager-2.jpg](/img/content/ecscore-deploymentmanager-2.jpg){:class="img-responsive"}
 
 **Management Site**
 
-Auf der *Management Site* wird die Konfiguration für ECSCore vorgenommen. Sie dient außerdem für das Deployment und die Verwaltung erstellter Webservices. Mit dem Deployment Manager wird die Managment Site in den IIS angelegt und kann von dort oder unter Angabe des eingetragenen Ports (8085) direkt im Browser aufgerufen werden (http://localhost:8085).
-
+The configuration for ECSCore is done on the *Management Site*. It is also used for deployment and administration of created web services. With the Deployment Manager, the management site is created in the IIS and can be called from there or directly in the browser by specifying the port (8085) (http://localhost:8085).
 
 ![ecscore-deploymentmanager-3.jpg](/img/content/ecscore-deploymentmanager-3.jpg){:class="img-responsive"}
 
 **Database**
 
-Diese Einstellung wird nicht mehr unterstützt, ein *Microsoft SQL Server Compact* wird in der aktuellen Version nicht mehr benötigt und mitinstalliert. 
+This setting is no longer supported, a *Microsoft SQL Server Compact* is no longer required in the current version and is installed. 
 
 **Master Key**
 
-Mit dem *Master Key* können sensible Informationen wie Anmeldedaten für das Management Dashboard oder die SAP Verbindungen wiederhergestellt werden.<br>
-Wichtig: Verwahren Sie das Kennwort an einem sicheren Platz.
+The *Master Key* can be used to restore sensitive information such as logon data for the management dashboard or SAP connections.
+Important: Keep the password in a safe place.
 
 ![ecscore-deploymentmanager-4.jpg](/img/content/ecscore-deploymentmanager-4.jpg){:class="img-responsive"}
 
-Klicken Sie auf *Finish*, um die Konfiguration abzuschließen.
+Click *Finish* to complete the configuration.
 
-Die Einrichtung der Management Site und der Services Site ist damit abgeschlossen. Die Seiten sind anschließend im IIS-Manager aufgeführt.
-Erfahren Sie mehr unter Management Site und Services Site. 
+The Management Site and Services Site setup is complete. The pages are then listed in the IIS Manager.
+Learn more under [Management Site](../ecs-core-administration/management-dashboard) and [Services Site](../ecs-core-administration/services-site).

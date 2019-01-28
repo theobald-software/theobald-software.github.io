@@ -11,6 +11,6 @@ weight: 2
 lang: en_GB
 ---
 
-The following section explains how to create a Web service that calls an SAP table.
+The following section explains how to create a web service that calls an SAP table.
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
