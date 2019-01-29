@@ -14,4 +14,4 @@ To deploy a web service and to call an already deployed web service, you need a 
 You set up the server connection in the menu item *Connections* under *Server...*. 
 At the first call the dialog is not filled.
 
-Details on the configuration of the server connection can be found in section [Webservice Authentication](../webservices/webservice_authentication)
+Details on the configuration of the server connection can be found in section [Webservice Authentication](../webservice_authentication)

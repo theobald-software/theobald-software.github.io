@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-webservice-designer-04
 layout: page
-title: Example scenario - REST service for Purchase Requisition creation
-description: Example scenario - REST service for Purchase Requisition creation
+title: Example scenario
+description: Example scenario
 product: ecs-core
 parent: webservices
 permalink: /:collection/:path

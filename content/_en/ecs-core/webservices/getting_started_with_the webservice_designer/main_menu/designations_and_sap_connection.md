@@ -14,7 +14,7 @@ The following settings for Web service names and the SAP connection can be made 
 
 ![WSD-16](/img/content/ecscore-wsd_16.jpg){:class="img-responsive"}
 
-**Name** (default: NewECSCoreWebService) <br>
+**Name** (Default: NewECSCoreWebService) <br>
 Freely selectable web service name. The name must not contain any special characters or spaces.
 
 **Title** (Default: New SAP-based Web Service) <br>
@@ -24,7 +24,7 @@ Freely selectable web service title.
 Possibility of free versioning of a web service. This is helpful when making changes to an existing service.
 
 **SAP Connection name to use** (optional) <br>
-Here you can explicitly assign an SAP connection, which was previously defined on the ECS Core Server (Management Site), to the Web service. If no SAP connection is selected, the default connection is used.   
+Here you can explicitly assign an SAP connection, which was previously defined on the ECS Core Management Site, to the web service. If no SAP connection is selected, the default connection is used.   
 
 **Description** (optional) <br>
 Add a description to the web service.

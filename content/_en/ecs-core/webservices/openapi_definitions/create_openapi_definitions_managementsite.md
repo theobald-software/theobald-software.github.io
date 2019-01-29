@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-webservice-designer-06
 layout: page
-title: Create OpenAPI definitions via the Management Site
-description: Create OpenAPI definitions via the Management Site
+title: Create definitions via the Management Site
+description: Create definitions via the Management Site
 product: ecs-core
 parent: openapi_definitions
 permalink: /:collection/:path

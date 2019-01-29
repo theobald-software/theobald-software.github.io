@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-webservice-designer-06
 layout: page
-title: Create OpenAPI definitions with WebService Designer
-description: Create OpenAPI definitions with WebService Designer
+title: Create definitions with the WebService Designer
+description: Create definitions with the WebService Designer
 product: ecs-core
 parent: openapi_definitions
 permalink: /:collection/:path

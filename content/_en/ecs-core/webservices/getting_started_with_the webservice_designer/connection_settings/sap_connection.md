@@ -20,9 +20,9 @@ The SAP connection for the Web service call is defined in the main menu under *S
 
 Add the following parameters:
 
-**Client** - The SAP Client. Example: 800<br>
-**Language** - The SAP logon language. Example: EN<br>
-**User name** - The user name for the SAP connection.
+**Client** - The SAP Client. Example: 800 <br>
+**Language** - The SAP logon language. Example: EN <br>
+**User name** - The user name for the SAP connection. <br>
 **Password** - The password for the SAP connection.
 
 Choose one of the following options to connect to your SAP system:
@@ -30,7 +30,7 @@ Choose one of the following options to connect to your SAP system:
 **Use Single Application Server** - Select this option to connect to a single SAP server via RFC.
 **Host** - Name of the SAP Server.<br>
 **System** - The SAP system number (00...99).<br>
-**Use Load Balancing** - Select this option if you are using SAP Load Balancing and want to get SAP to use a particular server for the connection.
+**Use Load Balancing** - Select this option if you are using SAP Load Balancing and want to get SAP to use a particular server for the connection. <br>
 **Message Server** - Name of the SAP Message Server. <br>
 **Group / SID** - Group and system ID for the SAP server selection.<br>
 **Use HTTP / Web Service** - Select this option if you want to access the SAP Web Services.<br>

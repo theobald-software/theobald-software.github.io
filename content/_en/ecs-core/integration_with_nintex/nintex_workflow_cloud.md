@@ -14,4 +14,4 @@ SAP integration with the Nintex Workflow Cloud (NWC) platform is fully supported
 
 With the Nintex Xtensions Framework integrated in the NWC, REST services exported to an OpenAPI definition can be imported as custom connectors. The procedure for this is described in the following chapters.
  
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
