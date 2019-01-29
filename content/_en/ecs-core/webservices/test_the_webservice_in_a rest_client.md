@@ -1,5 +1,5 @@
 ---
-ref: ecs-core-webservice-designer-05
+ref: ecs-core-webservice-designer-06
 layout: page
 title: Test the web service
 description: Test the web service

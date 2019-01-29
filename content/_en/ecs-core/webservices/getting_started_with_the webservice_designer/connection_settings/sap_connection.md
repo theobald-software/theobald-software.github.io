@@ -27,7 +27,7 @@ Add the following parameters:
 
 Choose one of the following options to connect to your SAP system:
 
-**Use Single Application Server** - Select this option to connect to a single SAP server via RFC.
+**Use Single Application Server** - Select this option to connect to a single SAP server via RFC. <br>
 **Host** - Name of the SAP Server.<br>
 **System** - The SAP system number (00...99).<br>
 **Use Load Balancing** - Select this option if you are using SAP Load Balancing and want to get SAP to use a particular server for the connection. <br>

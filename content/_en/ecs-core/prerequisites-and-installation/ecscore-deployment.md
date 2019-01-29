@@ -10,7 +10,7 @@ weight: 3
 lang: en_GB
 ---
 
-The Deployment Manager installs the administration interface for the administration (e.g. SAP connection, Azure Relay, Web Services) of ECS Core. 
+The *Deployment Manager* installs the administration interface for the administration (e.g. SAP connection, Azure Relay, Web Services) of ECS Core. 
 This is the setup of the IIS web pages and the associated resources such as database for the configurable ECS Core settings such as access and connection settings.
 
 **Prerequisites** 

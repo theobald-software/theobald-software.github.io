@@ -1,5 +1,5 @@
 ---
-ref: ecs-core-webservice-designer-04
+ref: ecs-core-webservice-designer-05
 layout: page
 title: Example scenario
 description: Example scenario

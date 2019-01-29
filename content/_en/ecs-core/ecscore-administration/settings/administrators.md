@@ -18,5 +18,5 @@ To create a new administrator click on *Add user*.
 
 User name and password are freely selectable, there is no connection to Windows users. <br>
 
-Important: The users added there not only serve as administrators for the management site, they are also used for the deployment of web services in the WebService Designer.
+**Important:** The users added there not only serve as administrators for the Management Site, they are also used for the deployment of web services in the WebService Designer.
 Details can be found in the section [WebService Designer](../webservices). 
