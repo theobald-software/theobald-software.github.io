@@ -12,6 +12,6 @@ lang: en_GB
 
 When the webservice is configured, click on the *Deploy* button in the menu item "Server actions for web services*. The web service will then be deployed to your ECS Core Server.
 
-[WSD-Deploy2](/img/content/ecscore-wsd_28.png){:class="img-responsive"}
+![WSD-Deploy2](/img/content/ecscore-wsd_28.png){:class="img-responsive"}
 
-After the successful deployment you will find the web service on the ECS Core Management Site under [Web Services](.../ecscore-administration/webservices).
+After the successful deployment you will find the web service on the ECS Core Management Site under [Web Services](../../ecs-core/ecscore-administration/webservices).
