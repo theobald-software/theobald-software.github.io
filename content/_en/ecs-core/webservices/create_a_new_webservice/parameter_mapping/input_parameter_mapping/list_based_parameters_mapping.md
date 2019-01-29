@@ -1,8 +1,8 @@
 ---
 ref: ecscore-wd-input-parameter-mapping-03
 layout: page
-title: List-based parameters mapping
-description: List-based parameters mapping
+title: Mapping list-based parameters
+description: Mapping list-based parameters
 product: ecs-core
 parent: input_parameter_mapping
 permalink: /:collection/:path
