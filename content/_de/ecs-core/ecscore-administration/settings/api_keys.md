@@ -22,6 +22,8 @@ Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt 
 1. Gültiger **Windows Benutzer** mit Windows-Kennwort: Ein solcher, zu einem Windows-Benutzer erzeugter API Key, kann ausschließlich für Authentifizierung innerhalb einer Cloud-Anwendung verwendet werden, welche mit ECS Core erstellte Webservices oder von ECS Core bereitgestellte REST API konsumiert. <br>
 2. Auf der Management Site angelegter **Dashboard-Benutzer**: Ein solcher API Key, der auf einen von Windows unabhängigen Dashboard-Benutzer erstellt wurde, kann ausschließlich für das Deployment von Webservices im WebService Designer verwendet werden.   
 
+![ecscore-apikeys](/img/content/ecscore_apikeys.png){:class="img-responsive"}
+
 Einzelheiten zum Thema Deployment und Konsumieren von Services finden Sie im Abschnitt [Webservice Authentifizierung](.../webservices/webservice_authentifizierung).
  
 Nach der Erstellung des Schlüssels wird dieser unter API Keys angezeigt. Unter Umständen muss zunächst der Cache noch bereinigt werden (beschrieben unter *System Operations*). 

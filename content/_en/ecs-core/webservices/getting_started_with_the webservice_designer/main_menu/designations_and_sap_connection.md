@@ -24,7 +24,7 @@ Freely selectable web service title.
 Possibility of free versioning of a web service. This is helpful when making changes to an existing service.
 
 **SAP Connection name to use** (optional) <br>
-Here you can explicitly assign an SAP connection, which was previously defined on the ECS Core Management Site, to the web service. If no SAP connection is selected, the default connection is used.   
+Here you can explicitly assign an SAP connection to the web service's runtime, which was previously defined on the ECS Core Management Site. If no SAP connection is selected, the default connection is used.   
 
 **Description** (optional) <br>
 Add a description to the web service.

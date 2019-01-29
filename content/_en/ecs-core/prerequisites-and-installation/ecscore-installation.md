@@ -1,8 +1,8 @@
 ---
 ref: ecs-core-prerequisites-and-installation-02
 layout: page
-title: ECSCore installation
-description: ECSCore installation
+title: ECS Core installation
+description: ECS Core installation
 product: ecs-core
 parent: prerequisites-and-installation
 permalink: /:collection/:path

@@ -1,5 +1,5 @@
 ---
-ref: ecscore-wd-web-services-02
+ref: ecscore-wd-web-services-04
 layout: page
 title: Operation with SAP table
 description: Operation with SAP table
@@ -7,7 +7,7 @@ product: ecs-core
 parent: webservices
 childidentifier: operation_with_sap_table
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: en_GB
 ---
 

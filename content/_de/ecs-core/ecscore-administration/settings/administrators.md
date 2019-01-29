@@ -15,7 +15,9 @@ Um Zugang zur Management Site zu erhalten, müssen Sie ein registrierter Adminis
 
 Nach dem Deployment der Management Site sollten Sie einen neuen Administrator hinterlegen oder zumindest das Passwort für den Standard-Administrator *admin* ändern. 
 
-Um einen neuen Administrator anzulegen klicken Sie auf *Add user*.
+Um einen neuen Administrator anzulegen klicken Sie auf *Add user*:
+
+![ecscore-administrators](/img/content/ecscore_administrators.png){:class="img-responsive"}
 
 Benutzername und Kennwort sind frei wählbar, es besteht keine Verbindung zu Windows Benutzern. <br>
 

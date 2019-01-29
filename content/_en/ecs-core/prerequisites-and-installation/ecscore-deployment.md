@@ -73,4 +73,4 @@ Important: Keep the password in a safe place.
 Click *Finish* to complete the configuration.
 
 The Management Site and Services Site setup is complete. The pages are then listed in the IIS Manager.
-Learn more under [Management Site](../ecs-core-administration/management-dashboard) and [Services Site](../ecs-core-administration/services-site).
+Learn more under [Management Site](../ecscore-administration/management_dashboard) and [Services Site](../ecscore-administration/services_site).
