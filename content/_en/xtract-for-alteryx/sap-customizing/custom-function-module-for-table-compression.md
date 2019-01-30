@@ -1,9 +1,9 @@
 ---
-ref: xi-sap-customizing-01
+ref: xis4a-sap-customizing-01
 layout: page
 title: Custom function module for table compression
 description: Custom function module for table compression
-product: xtract-is
+product: xtract-for-alteryx
 parent: sap-customizing
 permalink: /:collection/:path
 weight: 1

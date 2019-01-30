@@ -4,7 +4,7 @@ layout: page
 title: Umgehung der Einschränkungen bei der Tabellenextraktion
 description: Umgehung der Einschränkungen bei der Tabellenextraktion
 product: xtract-universal
-parent: sap-customzing
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

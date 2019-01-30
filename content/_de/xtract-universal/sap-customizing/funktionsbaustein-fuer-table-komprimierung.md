@@ -4,7 +4,7 @@ layout: page
 title: Funktionsbaustein für Tabellen-Komprimierung
 description: Funktionsbaustein für Tabellen-Komprimierung
 product: xtract-universal
-parent: sap-customzing
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

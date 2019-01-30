@@ -5,7 +5,7 @@ title: SAP Customizing
 description: SAP Customizing
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
-childidentifier: sap-customzing
+childidentifier: sap-customizing
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

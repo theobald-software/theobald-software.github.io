@@ -5,7 +5,7 @@ title: SAP Customizing
 description: SAP Customizing
 product: board-connector
 parent: board-connector
-childidentifier: sap-customzing
+childidentifier: sap-customizing
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

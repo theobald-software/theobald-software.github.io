@@ -29,7 +29,7 @@ The values Gateway Host and Gateway Service corresponds to the following SAP con
 
 ![sap-conn-app-ecc](/img/content/sap-conn-app-ecc.png){:class="img-responsive"} 
 
-Now click on the *Customzing Check* link to validate the DeltaQ Customizing on the SAP system.<br>
+Now click on the *Customizing Check* link to validate the DeltaQ Customizing on the SAP system.<br>
 Be sure that all lines are green. 
 
 ![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}

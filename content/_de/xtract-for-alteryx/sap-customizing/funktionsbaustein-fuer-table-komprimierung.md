@@ -1,10 +1,10 @@
 ---
-ref: xu-sap-customizing-01
+ref: xis4a-sap-customizing-01
 layout: page
 title: Funktionsbaustein für Tabellen-Komprimierung
 description: Funktionsbaustein für Tabellen-Komprimierung
-product: xtract-universal
-parent: sap-customzing
+product: xtract-for-alteryx
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

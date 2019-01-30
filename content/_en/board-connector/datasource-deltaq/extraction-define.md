@@ -29,7 +29,7 @@ You also have to put a checkmark next to the columns you would like to extract. 
 
 ![DeltaQ-Extraction-01](/img/content/DeltaQ-Extraction-01.png){:class="img-responsive"}
 
-Before you activate the extraction in SAP use the *Customzing Check* link to validate the extraction.
+Before you activate the extraction in SAP use the *Customizing Check* link to validate the extraction.
 
 ![DeltaQ-Customizing-Check](/img/content/DeltaQ-Customizing-Check.png){:class="img-responsive"}
 

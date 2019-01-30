@@ -1,9 +1,9 @@
 ---
-ref: xi-sap-customizing-06
+ref: xis4a-sap-customizing-01
 layout: page
 title: Install Report Custom Function Module
 description: Install Report Custom Function Module
-product: xtract-is
+product: xtract-for-alteryx
 parent: sap-customizing
 permalink: /:collection/:path
 weight: 6
