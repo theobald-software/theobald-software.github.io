@@ -21,5 +21,5 @@ In this example, we create a web service that delivers customer data from the SA
              
 Important: Make sure that there are no spaces or special characters in the web service name.  
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 

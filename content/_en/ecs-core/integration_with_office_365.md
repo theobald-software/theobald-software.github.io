@@ -13,4 +13,4 @@ lang: en_GB
 
 ECS Core enables SAP integration with various Office 365 applications (e.g. workflow, apps,...).
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

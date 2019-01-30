@@ -10,7 +10,7 @@ weight: 1
 lang: en_GB
 ---
 
-The following settings for Web service names and the SAP connection can be made in the main menu:
+The following settings for web service names and the SAP connection can be made in the main menu:
 
 ![WSD-16](/img/content/ecscore-wsd_16.jpg){:class="img-responsive"}
 

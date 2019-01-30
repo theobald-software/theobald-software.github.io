@@ -19,4 +19,4 @@ The software architecture looks as follows: ECS Core is installed on a local or 
 This software architecture enables countless integration scenarios for read and write access to all common SAP ERP systems. SAP integration is possible both for developers and with non-code concepts for power users and software architects without any programming knowledge. 
 Regardless of the integration approach chosen, application security is one of the core elements of ECS Core - the support of various authentication methods enables secure connection of cloud applications to the local SAP system. No additional installations or customizing are required on the SAP side to establish connectivity.
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
