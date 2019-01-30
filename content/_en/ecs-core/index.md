@@ -1,7 +1,7 @@
 ---
 ref: home-09
 layout: page
-title: ECS Core
+title: ECS Core (for cloud environments)
 description: ECS Core main page
 product: ecs-core
 parent: home

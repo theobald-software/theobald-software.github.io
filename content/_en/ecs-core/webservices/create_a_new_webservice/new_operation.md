@@ -19,7 +19,7 @@ The *New Operation Dialog* dialog box appears. Click on *Catalog*. <br>
 Choose *SAPCustomerWebService* as the Web service, then choose the operation *GetCustomers*.<br>.
 Click OK.
 
-![WSD-CatalogDialog](/img/content/ecscore-wsd_27.PNG){:class="img-responsive"}
+![WSD-CatalogDialog](/img/content/ecscore-wsd_27.png){:class="img-responsive"}
 
 Click OK again in the *New Operation Dialog* window. 
 
