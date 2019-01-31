@@ -1,5 +1,5 @@
 ---
-ref: ecscore-wd-web-services-02
+ref: ecscore-wd-web-services-04
 layout: page
 title: Aufruf einer SAP Tabelle
 description: Aufruf einer SAP Tabellee
@@ -7,7 +7,7 @@ product: ecs-core
 parent: webservices
 childidentifier: aufruf_einer_sap_tabelle
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: de_DE
 ---
 
