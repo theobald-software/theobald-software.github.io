@@ -16,9 +16,7 @@ Im Hauptmenü des ECS Core WebService Designers stehen folgende Einstellungen zu
 
 ![WSD-15](/img/content/ecscore-wsd_15.jpg){:class="img-responsive"}
 
-[Bezeichnungen und SAP Verbindung](/bezeichnungenundsapverbindung) <br>
-[Custom Data Types](/customdatatypes) <br>
-[Operationen](/operations) <br>  
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
 
        
 

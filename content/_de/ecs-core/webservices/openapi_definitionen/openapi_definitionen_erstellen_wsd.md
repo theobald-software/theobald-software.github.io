@@ -28,10 +28,10 @@ Im *OpenAPI Options Dialog* (in der Menüleiste unter *Options*) können Sie fol
 
 Zusätzliche generische Services werden zur Definition hinzugefügt:
 
-- ECS Execute SAP Function: Mit diesem Service sind generische Aufrufe von SAP Funktionsbausteinen möglich. Ein Beispiel zur Service-Definition findet sich [hier](../../ecs-de/ecs-runtime/ecs-webservices/rest-ohne-tecs/ecs-funktionsbaustein-mit-rest).
+- ECS Execute SAP Function: Mit diesem Service sind generische Aufrufe von SAP Funktionsbausteinen möglich. Ein Beispiel zur Service-Definition findet sich [hier](../../../ecs-de/ecs-runtime/ecs-webservices/rest-ohne-tecs/ecs-funktionsbaustein-mit-rest).
 - ECS Get SAP Function Metadata: Dieser Service kann genutzt werden, um die Ein- und Ausgabeparameter des ECS Execute Function Services zu ermitteln.
-- ECS Table Query: Dieser Service ermöglicht den generischen Aufruf jeder beliebigen SAP-Tabelle oder View. Ein Beispiel zur Service-Definition finden Sie [hier](../../ecs-de/ecs-runtime/ecs-webservices/rest-ohne-tecs/ecs-tabelle-mit-rest). 
-- ECS XQL Query: Mit diesem Service können spezifische XtractQL (kurz: XQL) Query-Anweisungen für schreibenden und lesenden Zugriff an das SAP System geschickt werden. Die XQL Syntax ist [hier](../../ecs-de/ecs-runtime/ecs-xtractql/ecs-xtractql-syntax) beschrieben. 
+- ECS Table Query: Dieser Service ermöglicht den generischen Aufruf jeder beliebigen SAP-Tabelle oder View. Ein Beispiel zur Service-Definition finden Sie [hier](../../../ecs-de/ecs-runtime/ecs-webservices/rest-ohne-tecs/ecs-tabelle-mit-rest). 
+- ECS XQL Query: Mit diesem Service können spezifische XtractQL (kurz: XQL) Query-Anweisungen für schreibenden und lesenden Zugriff an das SAP System geschickt werden. Die XQL Syntax ist [hier](../../../ecs-de/ecs-runtime/ecs-xtractql/ecs-xtractql-syntax) beschrieben. 
 
 **Use variable names as "title" parameter** (Default: No)
 
