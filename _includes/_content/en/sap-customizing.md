@@ -20,3 +20,6 @@ For more detail information about installing the transport request please read t
 
 For the following components a customizing on the SAP System is required: 
 
+*OHS*: See here [Preparation for OHS in BW](./sap-customizing/preparation-for-ohs-in-bw).
+*DeltaQ*: Refer to [Customizing for DeltaQ](./sap-customizing/customizing-for-deltaq).
+
