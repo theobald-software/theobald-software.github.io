@@ -36,7 +36,7 @@ Es wird jedoch empfohlen für jede parallel laufende DeltaQ-Extraktion eine eige
 **Hilfreiche (englischsprachige) Links zum Thema Extraktoren (Datasources)**
 
 DeltaQ Troubleshooting Guide (KB)<br>
-[https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/0/deltaq-troubleshooting-guide](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/0/deltaq-troubleshooting-guide)
+[https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide)
 
 How to activate Datasources in the SAP OLTP System (Blog)<br>
 [http://theobald-software.com/blog/2013/04/15/activating-datasources-in-the-oltp-system/](http://theobald-software.com/blog/2013/04/15/activating-datasources-in-the-oltp-system/)
