@@ -18,12 +18,12 @@ ECS Core enables integration with SAP, both read and write. This example shows h
 
 This example requires the following prerequisites: 
 
-1. an Office 365 Developer Site in an Office 365 domain and the rights to develop a Napa App.
-2. a service bus instance in the Azure Management Portal.
+1. An Office 365 Developer Site in an Office 365 domain and the rights to develop a Napa App.
+2. An Azure Relay instance in the Azure Management Portal.
 3. an ECS core installation and configuration, in particular:  
-- Create a service application (that is, an SAP connection), see [Services](../ecscore administration/ecscore service application). 
-- Generate an API key, see [API Keys]().
-- Register a service bus, see [Azure Service Bus](). 
+- Create an SAP connection, see [SAP](../ecscore-administration/settings/sapconnections). 
+- Generate an API key, see [API Keys](../ecscore-administration/settings/api_keys).
+- Register an Azure Relay, see [Azure Relay](../ecscore-administration/settings/azure_relay). 
 
 *Note*: Other middleware tools, in particular SAP Gateway or SAP Gateway for Microsoft, are not required for this scenario. 
 
@@ -90,10 +90,10 @@ Now insert the code for the GetSAPData() function after the $(document).ready() 
 
 ![ecscore-gettingstarted-07](/img/content/ecscore-gettingstarted-07.jpg){:class="img-responsive"}
 
-Let's take a closer look at the code we use to access the on-premise SAP system via Azure Bus and ECS Core:
+Let's take a closer look at the code we use to access the on-premise SAP system via Azure Relay and ECS Core:
 - connection.ecs.coreApiKey is the API key from your ECS Core installation.
 - instance: is the name of the maintained SAP connection in ECS Core.
-- connection.ecs.url is the Azure Service Bus Name for ECS Core.
+- connection.ecs.url is the Azure Relay Name for ECS Core.
   The 'data' field contains the SAP expression (in [XtractQL]()) to read the German and English material description from the SAP table MAKT. 
 
 The result is displayed using a table. 

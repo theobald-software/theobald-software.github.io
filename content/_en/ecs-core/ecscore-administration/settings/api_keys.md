@@ -22,7 +22,7 @@ To add a new API Key, click *Add API Key* in the API Keys section. You can add a
 
 ![ecscore-apikeys](/img/content/ecscore_apikeys.png){:class="img-responsive"}
 
-For details about deploying and consuming services, see the [Web Service Authentication](.../webservices/webservice_authentication) section.
+For details about deploying and consuming services, see the [Web Service Authentication](../../webservices/webservice_authentication) section.
  
 After the key is created, it is displayed under API Keys. You may need to clean up the cache first (described in *System Operations*). 
 

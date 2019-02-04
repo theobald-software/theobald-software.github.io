@@ -22,9 +22,9 @@ Dieses Beispiel benötigt die folgenden Voraussetzungen:
 1. Eine Office 365 Developer Site in einer Office 365 Domäne und die Rechte, eine Napa-App zu entwickeln.
 2. Eine Service Bus Instanz im Azure Management Portal.
 3. Eine ECS Core Installation und Konfiguration, insbesondere:  
-- Eine Service Application anlegen (d.h. eine SAP-Verbindung), siehe [Services](../ecscore-administration/ecscore-service-applikation). 
-- Einen API Key generieren, siehe [API Keys]().
-- Einen Service Bus registrieren, siehe [Azure Service Bus](). 
+- Eine SAP-Verbindung anlegen, siehe [Services](../ecscore-administration/sapconnections). 
+- Einen API Key generieren, siehe [API Keys](../ecscore-administration/settings/api_keys).
+- Einen Azure Relay registrieren, siehe [Azure Relay](../ecscore-administration/settings/azure_relay). 
 
 *Bemerkung*: Andere Middleware Werkzeuge, insbesondere SAP Gateway oder SAP Gateway for Microsoft werden für dieses Szenario nicht benötigt. 
 
@@ -93,10 +93,10 @@ Fügen Sie nun den Code für die Funktion GetSAPData() nach der Funktion $(docum
 
 ![ecscore-gettingstarted-07](/img/content/ecscore-gettingstarted-07.jpg){:class="img-responsive"}
 
-Schauen wir uns nun den Code näher an, mit dem wir auf das on-premise SAP-System über Azure Bus und ECS Core zugreifen:
+Schauen wir uns nun den Code näher an, mit dem wir auf das on-premise SAP-System über Azure Relay und ECS Core zugreifen:
 - connection.ecs.coreApiKey ist der API Key aus Ihrer ECS Core Installation.
 - instance: ist der Name der gepflegten SAP-Verbindung in ECS Core.
-- connection.ecs.url ist der Azure Service Bus Name für ECS Core
+- connection.ecs.url ist der Azure Relay Name für ECS Core
   Das 'data'-Feld beinhaltet den SAP-Ausdruck (in [XtractQL]()),  um die deutsche und englische Materialbeschreibung aus der SAP-Tabelle MAKT zu lesen. 
 
 Das Ergebnis wird mit Hilfe einer Tabelle dargestellt. 

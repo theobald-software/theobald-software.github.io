@@ -24,7 +24,7 @@ Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt 
 
 ![ecscore-apikeys](/img/content/ecscore_apikeys.png){:class="img-responsive"}
 
-Einzelheiten zum Thema Deployment und Konsumieren von Services finden Sie im Abschnitt [Webservice Authentifizierung](.../webservices/webservice_authentifizierung).
+Einzelheiten zum Thema Deployment und Konsumieren von Services finden Sie im Abschnitt [Webservice Authentifizierung](../../webservices/webservice_authentifizierung).
  
 Nach der Erstellung des Schlüssels wird dieser unter API Keys angezeigt. Unter Umständen muss zunächst der Cache noch bereinigt werden (beschrieben unter *System Operations*). 
 

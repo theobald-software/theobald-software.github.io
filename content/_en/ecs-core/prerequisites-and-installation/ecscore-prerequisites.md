@@ -32,7 +32,7 @@ If you want to use the Azure Relay functionality of Microsoft Azure, you need at
 
 **SAP user**
 
-- An SAP system or dialog user with the corresponding [authorization objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects) is required.
+- An SAP system or dialog user with the corresponding [authorization objects](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights) is required.
 
 **Network Settings**
 
