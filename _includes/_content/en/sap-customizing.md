@@ -12,14 +12,20 @@ For the following components an installation of a custom function module in SAP 
 
 
 For a manual installation of the custom function use the step-by-step guides in our knowledge base. 
-Alternatively, you can use the transport requests (*thtrans.zip*, *Z_THEO_READ_TABLE.zip*, *Z_THEO_READ_TABLE-before_740SP05.zip*), that can be found in the ABAP subfolder of the installation folder. Please have them imported into SAP by your SAP Basis team.
+Alternatively, you can use the transport requests that can be found in the ABAP subfolder of the installation folder. Please have them imported into SAP by your SAP Basis team.
 
-For more detail information about installing the transport request please read the following [Knowledgebase article](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) or check the SAP help.
+* **thtrans.zip** (contains custom function modules for *Report* and *Table Join*)
+* **Z_THEO_READ_TABLE.zip** (contains a custom function module for *Table*, applicable for SAP releases >= 740SP05)
+* **Z_THEO_READ_TABLE-before_740SP05.zip** (contains a custom function module for *Table*, applicable for SAP releases < 740SP05)
+
+
+For more detailed information about installing the transport request please read the following [knowledgebase article](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) or check the SAP help.
 
 **Customizing** 
 
-For the following components a customizing on the SAP System is required: 
+For the following components a customizing on the SAP system is required: 
 
 *OHS*: See here [Preparation for OHS in BW](./sap-customizing/preparation-for-ohs-in-bw).
+
 *DeltaQ*: Refer to [Customizing for DeltaQ](./sap-customizing/customizing-for-deltaq).
 
