@@ -38,15 +38,15 @@ SAP systems on HANA particularly are supported without any restrictions.
 
 | Component  | SAP Release       | Requirements to the SAP system                                                |
 |------------|-------------------|-------------------------------------------------------------------------------|
-| Table      | Rel.above 4.0B    | - for most tasks, the installation of a Z-module is necessary, but not for all |
-| Table Join | Rel. 7.0 or above | - installation of a custom function module is necessary                        |
-| Query      | Rel. above 4.0B   | - nothing                                                                      |
-| BAPI       | Rel. above 4.0B   | - nothing                                                                      |
-| Report     | Rel. above 4.0B   | - installation of a custom function module is necessary                        |
-| BW Cube    | Rel. above BW 3.1 | - nothing                                                                     |
-| Hierarchy  | Rel. above BW 3.1 | - nothing                                                                      |
-| OHS        | Rel. above BW 3.5 | - customizing                                                                  |
-| DeltaQ     | Rel. above 4.6A   | - customizing                                                                  |
+| Table      | Rel.above 4.0B    | for most tasks, the installation of a Z-module is necessary, but not for all |
+| Table Join | Rel. 7.0 or above | installation of a custom function module is necessary                        |
+| Query      | Rel. above 4.0B   | nothing                                                                      |
+| BAPI       | Rel. above 4.0B   | nothing                                                                      |
+| Report     | Rel. above 4.0B   | installation of a custom function module is necessary                        |
+| BW Cube    | Rel. above BW 3.1 | nothing                                                                     |
+| Hierarchy  | Rel. above BW 3.1 | nothing                                                                      |
+| OHS        | Rel. above BW 3.5 | customizing                                                                  |
+| DeltaQ     | Rel. above 4.6A   | customizing                                                                  |
 
 
 
