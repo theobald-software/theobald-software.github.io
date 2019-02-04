@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=avoid-restrictions
 ---
 
-In order to avoid possible restrictions with table extractions we recommend installation of our [custom function module](../../../../_includes/_content/en/sap-customizing.md) for table extraction.
+In order to avoid possible restrictions with table extractions we recommend installation of our [custom function module](../sap-customizing/custom-function-module-for-table-extraction) for table extraction.
