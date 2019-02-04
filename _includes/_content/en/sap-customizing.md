@@ -4,7 +4,7 @@ In this chapter you can find various articles about Installation and customizing
 
 For the following components an installation of a custom function module in SAP is required. 
 
-*Table*: For most tasks, the installation of a custom function module is necessary, but not for all. Refer to [Custom function module for table compression](./sap-customizing/custom-function-module-for-table-compression). 
+*Table*: For most tasks, the installation of a custom function module is necessary, but not for all. Refer to [Custom function module for table extraction](./sap-customizing/custom-function-module-for-table-extraction). 
 
 *Table Join*: The installation of a custom function module is necessary, refer to [Custom function module for Table Join](./sap-customizing/custom-function-module-for-table-join).
 
