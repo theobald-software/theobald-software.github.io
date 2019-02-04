@@ -38,15 +38,15 @@ SAP systems on HANA particularly are supported without any restrictions.
 
 | Component  | SAP Release       | Requirements to the SAP system                                                |
 |------------|-------------------|-------------------------------------------------------------------------------|
-| Table      | Rel.above 4.0B    | For most tasks, the installation of a Z-module is necessary, but not for all. |
-| Table Join | Rel. 7.0 or above | Installation of a custom function module is necessary.                        |
-| Query      | Rel. above 4.0B   | Nothing.                                                                      |
-| BAPI       | Rel. above 4.0B   | Nothing.                                                                      |
-| Report     | Rel. above 4.0B   | Installation of a custom function module is necessary.                        |
-| BW Cube    | Rel. above BW 3.1 | Nothing.                                                                      |
-| Hierarchy  | Rel. above BW 3.1 | Nothing.                                                                      |
-| OHS        | Rel. above BW 3.5 | Customizing.                                                                  |
-| DeltaQ     | Rel. above 4.6A   | Customizing.                                                                  |
+| Table      | Rel.above 4.0B    | - for most tasks, the installation of a Z-module is necessary, but not for all |
+| Table Join | Rel. 7.0 or above | - installation of a custom function module is necessary                        |
+| Query      | Rel. above 4.0B   | - nothing                                                                      |
+| BAPI       | Rel. above 4.0B   | - nothing                                                                      |
+| Report     | Rel. above 4.0B   | - installation of a custom function module is necessary                        |
+| BW Cube    | Rel. above BW 3.1 | - nothing                                                                     |
+| Hierarchy  | Rel. above BW 3.1 | - nothing                                                                      |
+| OHS        | Rel. above BW 3.5 | - customizing                                                                  |
+| DeltaQ     | Rel. above 4.6A   | - customizing                                                                  |
 
 
 
@@ -81,12 +81,11 @@ Additional SAP licenses might be required for extracting data from SAP. Contact 
 
 **Memory**
  	
-- 4 GB minimum, depending on data volume, more may be required.
-
+- 4 GB minimum, depending on data volume, more may be required
 **Disk space**
  	
-- For the installation 30 MB total required to install.
+- for the installation 30 MB total required to install
 
 **32/64-Bit Environment**
  	
-- The product can be installed on 32-Bit and 64-Bit operating systems.
+- the product can be installed on 32-Bit and 64-Bit operating systems
