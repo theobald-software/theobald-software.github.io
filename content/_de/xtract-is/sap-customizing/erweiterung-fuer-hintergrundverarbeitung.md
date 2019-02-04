@@ -4,7 +4,7 @@ layout: page
 title: Erweiterung für Hintergrundverarbeitung
 description: Report-Funktionsbaustein installi
 product: xtract-is
-parent: sap-customzing
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 7
 lang: de_DE

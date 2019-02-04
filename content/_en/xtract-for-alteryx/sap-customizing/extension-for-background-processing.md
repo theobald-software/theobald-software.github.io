@@ -1,9 +1,9 @@
 ---
-ref: xi-sap-customizing-07
+ref: xis4a-sap-customizing-01
 layout: page
 title: Extension for Background Processing
 description: Extension for Background Processing
-product: xtract-is
+product: xtract-for-alteryx
 parent: sap-customizing
 permalink: /:collection/:path
 weight: 7

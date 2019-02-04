@@ -14,9 +14,11 @@ To gain access to the management site, you must be a registered administrator. E
 
 After deploying the management site, you should add a new administrator or at least change the password for the default administrator *admin*. 
 
-To create a new administrator click on *Add user*.
+To create a new administrator click on *Add user*:
+
+![ecscore-administrators](/img/content/ecscore_administrators.png){:class="img-responsive"}
 
 User name and password are freely selectable, there is no connection to Windows users. <br>
 
-Important: The users added there not only serve as administrators for the management site, they are also used for the deployment of web services in the WebService Designer.
-Details can be found in the section [WebService Designer](../webservices). 
+**Important:** The users added there not only serve as administrators for the Management Site, they are also used for the deployment of web services in the WebService Designer.
+Details can be found in the section [WebService Designer](../../webservices). 

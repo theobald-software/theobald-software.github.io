@@ -37,8 +37,7 @@ Paste the copied connection string into the field and save the entry with *Add A
 
 ![ecscore-azurerelay_3](/img/content/ecscore-azurerelay_3.jpg){:class="img-responsive"}
 
-Important: After adding a new Azure Relay registration it is mandatory to recycle the ECS Core Application Pools into the IIS. You can do this manually or on the *Management Site* under *Settings>System Operations* <br>
-with the function *Clear consumer website caches*.
+Important: After adding a new Azure Relay registration it is mandatory to recycle the ECS Core Application Pools into the IIS. You can do this manually or on the *Management Site* under *Settings>System Operations* with the function *Clear consumer website caches*.
 
 The Azure Management Portal should now list the relay with the registration.
 

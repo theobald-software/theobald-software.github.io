@@ -5,7 +5,7 @@ title: SAP Customizing
 description: SAP Customizing
 product: xtract-universal
 parent: xtract-universal
-childidentifier: sap-customzing
+childidentifier: sap-customizing
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
@@ -14,4 +14,3 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=SAPCustomizing-DE:sap-customiz
 
 {% include _content/de/sap-customizing.md  %}
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

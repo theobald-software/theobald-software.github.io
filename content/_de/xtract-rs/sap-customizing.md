@@ -5,7 +5,7 @@ title: SAP Customizing
 description: SAP Customizing
 product: xtract-rs
 parent: xtract-rs
-childidentifier: sap-customzing
+childidentifier: sap-customizing
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

@@ -1,10 +1,10 @@
 ---
-ref: xu-sap-customizing-03
+ref: xis4a-sap-customizing-01
 layout: page
 title: Funktionsbaustein für Table-Join
 description: Funktionsbaustein für Table-Join
-product: xtract-universal
-parent: sap-customzing
+product: xtract-for-alteryx
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

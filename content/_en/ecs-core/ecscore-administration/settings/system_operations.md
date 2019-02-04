@@ -14,6 +14,8 @@ The following operations can be performed under *System Operations*:
 - Clear consumer website caches
 - Regenerate All Web Services
 
+![ecscore-system-operations](/img/content/ecscore_system_operations.png){:class="img-responsive"}
+
 **Clear consumer website caches** <br>
 This operation refreshes the Web page cache, which is equivalent to recycling the IIS application pools of the ECS Core Management Site (default port 8085) and the Services Site (default port 8080).
 To use the operation, the Windows credentials and, if applicable, the domain name of the Windows server must be stored at the top. <br>

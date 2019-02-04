@@ -15,4 +15,4 @@ ECS Core also supports direct SAP integration with Nintex Forms for Office 365. 
 
 With the appropriate JavaScript programming knowledge, this enables a multitude of possible scenarios, such as validating SAP data or filling dropdown boxes
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

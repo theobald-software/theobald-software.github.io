@@ -10,7 +10,7 @@ weight: 1
 lang: en_GB
 ---
 
-**Windows operating system. 
+**Windows operating system** 
 
 - Windows 10
 - Windows Server 2012 R2 or higher
@@ -21,18 +21,18 @@ lang: en_GB
 
 - The rights of an administrator are required to install the applications.
 
-**Microsoft Azure Service Bus**
+**Azure Relay**
 
-If you want to use the relay functionality of Microsoft Azure Service Bus, you need the standard tier.
+If you want to use the Azure Relay functionality of Microsoft Azure, you need at least the standard tier.
 
-**SAP system(s) **
+**SAP system(s)**
 
 - SAP ERP: R/3 4.0B or higher or any version of SAP ECC
 - SAP BW: 3.0 or higher
 
 **SAP user**
 
-- An SAP system or dialog user with the corresponding [authorization objects] (https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects) is required.
+- An SAP system or dialog user with the corresponding [authorization objects](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights) is required.
 
 **Network Settings**
 

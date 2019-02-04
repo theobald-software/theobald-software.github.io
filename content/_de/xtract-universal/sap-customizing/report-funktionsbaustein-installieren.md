@@ -4,7 +4,7 @@ layout: page
 title: Report-Funktionsbaustein installieren
 description: Report-Funktionsbaustein installieren
 product: xtract-universal
-parent: sap-customzing
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 6
 lang: de_DE

@@ -4,7 +4,7 @@ layout: page
 title: Customizing für DeltaQ
 description: Customizing für DeltaQ
 product: xtract-universal
-parent: sap-customzing
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 5
 lang: de_DE

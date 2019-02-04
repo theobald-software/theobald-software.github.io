@@ -42,7 +42,7 @@ Add a reference to our JavaScript library under *Form Settings -> Advanced -> Cu
 [http://static.theobald-software.com/theobald.ecs.micro/5.4.2/theobald.ecs.micro.js]()
 
 
-{[nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.jpg){:class="img-responsive"}
+![nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.jpg){:class="img-responsive"}
 
 Insert the JavaScript code under *Form Settings -> Advanced -> Custom JavaScript*.
 

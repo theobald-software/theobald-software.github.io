@@ -39,7 +39,7 @@ Enter the details of the authentication method that is to be used for the connec
 
 **Use SSO Ticket** - A SAP SSO ticket is used for authentication. Enter the Ticket Issuer URL. 
 
-**Use SSO Ticket(pass-through)** - SSO Ticket (pass through) is used for authentication.
+**Use SSO Ticket (pass-through)** - SSO Ticket (pass through) is used for authentication.
  
 
 **Use SNC** - If your SAP system is configured to access via SSO with SNC, you can select the SNC option and set the partner name. The partner name is in the form: p:sapservicensp@theobald-software.com. 

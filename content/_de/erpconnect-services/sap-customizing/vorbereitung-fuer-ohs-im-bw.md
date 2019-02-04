@@ -4,7 +4,7 @@ layout: page
 title: Vorbereitung für OHS im BW
 description: Vorbereitung für OHS im BW
 product: erpconnect-services
-parent: sap-customzing
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

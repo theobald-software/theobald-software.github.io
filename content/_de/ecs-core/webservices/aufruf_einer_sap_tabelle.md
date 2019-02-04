@@ -1,16 +1,16 @@
 ---
-ref: ecscore-wd-web-services-02
+ref: ecscore-wd-web-services-04
 layout: page
-title: Calling an SAP table
-description: Calling an SAP table
+title: Aufruf einer SAP Tabelle
+description: Aufruf einer SAP Tabellee
 product: ecs-core
 parent: webservices
-childidentifier: calling_an_sap_table
+childidentifier: aufruf_einer_sap_tabelle
 permalink: /:collection/:path
-weight: 2
-lang: en_GB
+weight: 4
+lang: de_DE
 ---
 
-The following section explains how to create a Web service that calls an SAP table.
+Im folgenden Abschnitt wird erläutert, wie Sie einen Webservice anlegen, der eine SAP-Tabelle aufruft.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

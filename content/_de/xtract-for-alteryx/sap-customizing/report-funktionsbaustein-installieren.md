@@ -1,10 +1,10 @@
 ---
-ref: xu-sap-customizing-06
+ref: xis4a-sap-customizing-01
 layout: page
 title: Report-Funktionsbaustein installieren
 description: Report-Funktionsbaustein installieren
-product: xtract-universal
-parent: sap-customzing
+product: xtract-for-alteryx
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 6
 lang: de_DE

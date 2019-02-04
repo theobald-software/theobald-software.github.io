@@ -13,4 +13,4 @@ lang: en_GB
 
 Here you can learn everything about the configuration of ECS Core.
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

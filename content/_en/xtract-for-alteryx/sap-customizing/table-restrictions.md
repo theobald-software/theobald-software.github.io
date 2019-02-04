@@ -1,9 +1,9 @@
 ---
-ref: xi-sap-customizing-02
+ref: xis4a-sap-customizing-01
 layout: page
 title: Table Restrictions
 description: Table Restrictions
-product: xtract-is
+product: xtract-for-alteryx
 parent: sap-customizing
 permalink: /:collection/:path
 weight: 2

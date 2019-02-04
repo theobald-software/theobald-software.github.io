@@ -5,7 +5,7 @@ title: SAP Customizing
 description: SAP Customizing
 product: erpconnect
 parent: erpconnect
-childidentifier: sap-customzing
+childidentifier: sap-customizing
 permalink: /:collection/:path
 weight: 11
 lang: de_DE

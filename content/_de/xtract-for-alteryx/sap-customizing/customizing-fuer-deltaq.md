@@ -1,10 +1,10 @@
 ---
-ref: xu-sap-customizing-05
+ref: xis4a-sap-customizing-01
 layout: page
 title: Customizing für DeltaQ
 description: Customizing für DeltaQ
-product: xtract-universal
-parent: sap-customzing
+product: xtract-for-alteryx
+parent: sap-customizing
 permalink: /:collection/:path
 weight: 5
 lang: de_DE

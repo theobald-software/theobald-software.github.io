@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
 
 
-{% include _content/en/sap-customizing.md  %}
+{% include _content/en/sap-customizing.md %}
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

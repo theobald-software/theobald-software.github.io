@@ -20,7 +20,7 @@ Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSour
 
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
 
-**Schritt 2: Customzing Überprüfen** 
+**Schritt 2: Customizing Überprüfen** 
 
 Prüfen Sie die Customizing-Einstellungen mit dem Link Customizing Check, falls Sie das noch nicht getan haben.
 
