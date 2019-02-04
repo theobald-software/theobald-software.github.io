@@ -12,18 +12,18 @@ lang: en_GB
 
 **Helpful Transactions in the SAP System for Working with DataSources**
 
-RSA3 - Extractor Checker 
-RSA5 - Installing DataSources and Hierarchies from Business Content
-RSA6 - Postprocess DataSources and Hierarchies
-RSA7 - Delta Queue Maintenance
-SBIW - Business Content DataSources
-SM37 - Background jobs
-SM50 - Process overview
-SM58 - Transactional RFC
-SM59 - Configuration of RFC Connections
-SMGW - Gateway Monitor
-SMQ1 - qRFC Monitor (outbound queue)
-WE02 - IDoc list
+RSA3 - Extractor Checker <br> 
+RSA5 - Installing DataSources and Hierarchies from Business Content <br> 
+RSA6 - Postprocess DataSources and Hierarchies <br>
+RSA7 - Delta Queue Maintenance <br>
+SBIW - Business Content DataSources <br>
+SM37 - Background jobs <br>
+SM50 - Process overview <br>
+SM58 - Transactional RFC <br> 
+SM59 - Configuration of RFC Connections <br>
+SMGW - Gateway Monitor <br>
+SMQ1 - qRFC Monitor (outbound queue) <br>
+WE02 - IDoc list <br>
 
 **Execute DeltaQ in parallel**
 
@@ -37,7 +37,7 @@ However, it is recommended to use a separate RFC destination for each parallel D
 
 [How to activate Datasources in the SAP OLTP System (Blog)](http://theobald-software.com/blog/2013/04/15/activating-datasources-in-the-oltp-system/)
 
-[How to activate activate the BI Content DataSource (SAP Help)] (http://help.sap.com/saphelp_nw70ehp2/helpdata/en/d8/8f5738f988d439e10000009b38f842/content.htm)
+[How to activate activate the BI Content DataSource (SAP Help)](http://help.sap.com/saphelp_nw70ehp2/helpdata/en/d8/8f5738f988d439e10000009b38f842/content.htm)
 
 [How to extract data from SAP BW/BI via Export DataSources (Blog)](http://theobald-software.com/blog/2010/06/17/extracting-data-from-sap-bwbi-via-export-datasources-with-xtract-is/)
 
