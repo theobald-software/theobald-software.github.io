@@ -13,14 +13,14 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 
 **SQL Server**
  	
-- SQL Server 2008 (alle SQL Server Versionen. Die Express-Version beinhaltet die SSIS nicht).
+- SQL Server 2008 (alle SQL Server Versionen. Die Express-Version beinhaltet die SSIS nicht)
 - SQL Server 2008 R2
 - SQL Server 2012
 - SQL Server 2014
 - SQL Server 2016
 - SQL Server 2017
 - SQL Server Integration Services (SSIS)
-- Für die Entwicklung: Die entsprechende Visual Studio Version (außer der Express-Version) für Business Intelligence zur Erstellung von SSIS-Paketen. Siehe [Liste der unterstützen Versionen von SSIS & VS](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is). 
+- Für die Entwicklung: Die entsprechende Visual Studio Version (außer der Express-Version) für Business Intelligence zur Erstellung von SSIS-Paketen. Siehe [Liste der unterstützen Versionen von SSIS & VS](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is) 
 
 **SAP Releases**
  	
@@ -32,17 +32,17 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 Die Integration findet über den SAP-Applikationsserver statt. Daher spielt die Datenbank 
 unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit ohne Einschränkung unterstützt.
 
-| Komponente  | SAP Release       | Anforderung an das SAP System                                                |
-|------------|-------------------|-------------------------------------------------------------------------------|
-| Table      | Rel.above 4.0B    | For most tasks, the installation of a Z-module is necessary, but not for all. |
-| Table Join | Rel. 7.0 or above | Installation of a custom function module is necessary.                        |
-| Query      | Rel. above 4.0B   | Nothing.                                                                      |
-| BAPI       | Rel. above 4.0B   | Nothing.                                                                      |
-| Report     | Rel. above 4.0B   | Installation of a custom function module is necessary.                        |
-| BW Cube    | Rel. above BW 3.1 | Nothing.                                                                      |
-| Hierarchy  | Rel. above BW 3.1 | Nothing.                                                                      |
-| OHS        | Rel. above BW 3.5 | Customizing.                                                                  |
-| DeltaQ     | Rel. above 4.6A   | Customizing.                                                                  |
+| Komponente  | SAP Release       | Anforderung an das SAP System                                                                         |
+|------------|-------------------|--------------------------------------------------------------------------------------------------------|
+| Table      | Rel.above 4.0B    | - für die meisten Aufgaben erfordern die Installation eines Funktionsbausteins, jedoch nicht für alle. |
+| Table Join | Rel. 7.0 or above | - die Installation eines Z-Funktionsbausteins ist notwendig                                            |
+| Query      | Rel. above 4.0B   | - keine                                                                                                |
+| BAPI       | Rel. above 4.0B   | - keine                                                                                                |
+| Report     | Rel. above 4.0B   | - die Installation eines Z-Funktionsbausteins ist notwendig                                            |
+| BW Cube    | Rel. above BW 3.1 | - keine                                                                                                |
+| Hierarchy  | Rel. above BW 3.1 | - keine                                                                                                |
+| OHS        | Rel. above BW 3.5 | - Anpassung / customizing                                                                              |
+| DeltaQ     | Rel. above 4.6A   | - Anpassung / customizing                                                                              |
 
 
 Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel SAP Customizing.
@@ -74,13 +74,13 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 
 **Arbeitsspeicher**
  	
-- 4 GB minimum, abhängig vom Datenvolumen, eventuell mehr.
+- 4 GB minimum, abhängig vom Datenvolumen, eventuell mehr
 
 **Festplattenspeicher**
  	
-- Für die Installation werden 50 MB 
-Festplattenspeicher benötigt.
+- für die Installation werden 50 MB 
+Festplattenspeicher benötigt
 
 **32/64-Bit Umgebung**
  	
-- Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
+- das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden
