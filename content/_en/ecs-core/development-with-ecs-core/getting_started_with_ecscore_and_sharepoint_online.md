@@ -21,7 +21,7 @@ This example requires the following prerequisites:
 1. An Office 365 Developer Site in an Office 365 domain and the rights to develop a Napa App.
 2. An Azure Relay instance in the Azure Management Portal.
 3. an ECS core installation and configuration, in particular:  
-- Create an SAP connection, see [SAP](../ecscore-administration/settings/sapconnections). 
+- Create an SAP connection, see [SAP Connections](../ecscore-administration/sapconnections). 
 - Generate an API key, see [API Keys](../ecscore-administration/settings/api_keys).
 - Register an Azure Relay, see [Azure Relay](../ecscore-administration/settings/azure_relay). 
 
