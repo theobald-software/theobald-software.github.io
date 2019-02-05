@@ -13,15 +13,18 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=installation
 
 **Normal Setup**
 
-For normal setup please execute XtractISSetup.exe and follow the instructions of the setup program.  
+In the standard setup, execute the XtractISSetup.exe file and follow the instructions of the setup program.
 
-During setup several DLLs are copied to special directories to make them work within the Integration Services environment. Copying and registering is done with the help of InstallXtractIS.exe.
+The installation of the license file is described in the chapter [Installing the license](https://help.theobald-software.com/en/xtract-is/requirements-and-installation/installing-the-license).
+
+During setup, various DLLs are copied to certain directories so that they can be used by Integration Services. 
+The console program InstallXtractIS.exe automatically copies and registers the DLLs.
 
 **Silent Setup**
 
 The setup program can also be started without the GUI. If you want to start it that way you have to use the switch /S . Using the switch /D you can set the installation path. 
 
-You can find more settings for the setup on the following website ([http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1)).
+You can find more settings for the setup on the following website ([Command Line Usage](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1)).
 
 **Important:** All switches are case sensitive.
 

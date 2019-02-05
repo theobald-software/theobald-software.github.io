@@ -24,7 +24,7 @@ Das Kopieren und Registrieren der DLLs übernimmt das Konsolenprogramm InstallXt
 
 Das Standard Setup kann auch ohne die Anzeige der GUI gestartet werden. Dazu muss das Setup mit dem /S Parameter gestartet werden. Über den /D Perameter lässt sich das Installationsverzeichnis festlegen. 
 
-Weitere Einstellung- und Steuermöglichkeiten für das Setup finden Sie unter [http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1).
+Weitere Einstellung- und Steuermöglichkeiten für das Setup finden Sie unter [Command Line Usage](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1).
 
 **Wichtig:** Bitte achten Sie auf die Groß- und Kleinschreibung der Parameter. 
 
