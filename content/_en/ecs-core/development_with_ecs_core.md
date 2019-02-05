@@ -5,7 +5,7 @@ title: Development with ECS Core
 description: Development with ECS Core
 product: ecs-core
 parent: ecs-core
-childidentifier: development-with-ecs-core
+childidentifier: development_with_ecs_core
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

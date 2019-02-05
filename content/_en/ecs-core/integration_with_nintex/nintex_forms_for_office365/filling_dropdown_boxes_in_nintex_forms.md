@@ -154,7 +154,7 @@ NWF$(document).ready(function() {
     });
 {% endhighlight %}
 
-For more information see [JavaScript Library for REST](../../../../erpconnect-services/ecs/erpconnect-services-runtime/web-services/javascript-library).<br>  
+For more information see [JavaScript Library for REST](../../../../en/erpconnect-services/ecs/erpconnect-services-runtime/web-services/javascript-library).<br>  
 
 **Step 3: Executing the Nintex Form**
 
