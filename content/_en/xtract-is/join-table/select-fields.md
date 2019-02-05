@@ -21,7 +21,7 @@ It defines an alias for the column, to rename the column in the result.
 **Aggregate Function**<br>
 It define an aggregate function. Following options are available: 
 
-| **Aggregat-Funktion** | **Beschreibung** |  
+| **Aggregat-function** | **description** |  
 |------------|------------------------|
 | avg     | average |      
 | count      | quantity    |                                                              
