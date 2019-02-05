@@ -1,5 +1,5 @@
 ---
-ref: ecs-core-05
+ref: ecs-core-06
 layout: page
 title: Integration mit Office 365
 description: Integration mit Office 365
@@ -7,7 +7,7 @@ product: erpconnect-services
 parent: ecs-core
 childidentifier: integration_mit_office_365
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=integration_mit_office_365
 ---

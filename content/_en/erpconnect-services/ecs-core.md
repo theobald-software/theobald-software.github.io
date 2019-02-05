@@ -1,16 +1,18 @@
 ---
-ref: erpconnect-services-02
+ref: erpconnect-services-05
 layout: page
-title: ECS Core (for Cloud Connectivity)
-description: ECS Core (for Cloud Connectivity)
+title: ECS Core (Replaced version)
+description: ECS Core (Replaced version)
 product: erpconnect-services
 parent: erpconnect-services
 childidentifier: ecs-core
 permalink: /:collection/:path
-weight: 2
+weight: 5
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs_core
 ---
+
+**Note:** This section refers to the Cloud Connector **ECS Core** only up to version 1.x <br>
 
 ERPConnect Services Core (Short: **ECS Core**) is a programming interface which enables the development of integrated business applications in SharePoint Online. With ECS Core the Sharepoint App Model is used to design innovative and integrative web parts which can be deployed and installed in SharePoint Online/ Office 365. A easy to use java script library is made available therefore. 
 

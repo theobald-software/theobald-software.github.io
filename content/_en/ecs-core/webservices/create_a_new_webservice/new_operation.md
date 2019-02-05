@@ -16,8 +16,7 @@ In this scenario we will use this finished example.
 Under the *Operations* section, click the *Create a new operation* button.
 The *New Operation Dialog* dialog box appears. Click on *Catalog*. <br>
 
-Choose *SAPCustomerWebService* as the Web service, then choose the operation *GetCustomers*.<br>.
-Click OK.
+Choose *SAPCustomerWebService* as the Web service, then choose the operation *GetCustomers* and Click OK. <br>
 
 ![WSD-CatalogDialog](/img/content/ecscore-wsd_27.png){:class="img-responsive"}
 

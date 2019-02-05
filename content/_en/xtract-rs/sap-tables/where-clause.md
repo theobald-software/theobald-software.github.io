@@ -18,8 +18,8 @@ The WHERE clause must comply with the SAP OpenSQL syntax.
 - Floating point numbers must always be set in single quotation mark, e.g. KMENG > '10.3'. For KMENG > 10.3 you get the error message '*The WHERE clause has an unexpected format*'.
 - The Where clause must not contain any line break (return key).
 
-You will find more information about the OpenSQL syntax on the SAP help site:<br>
-[http://help.sap.com/saphelp_470/helpdata/de/fc/eb3a1f358411d1829f0000e829fbfe/frameset.htm](http://help.sap.com/saphelp_470/helpdata/de/fc/eb3a1f358411d1829f0000e829fbfe/frameset.htm)
+You will find more information about the OpenSQL syntax on the [SAP help site](http://help.sap.com/saphelp_470/helpdata/de/fc/eb3a1f358411d1829f0000e829fbfe/frameset.htm)<br>
+
 
 Values must have the internal SAP representation:
 

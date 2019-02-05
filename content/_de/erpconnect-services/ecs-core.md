@@ -1,16 +1,18 @@
 ---
-ref: erpconnect-services-02
+ref: erpconnect-services-05
 layout: page
-title: ECS Core (für Cloud-Umgebungen)
-description: ECS Core (für Cloud-Umgebungen)
+title: ECS Core (abgelöste Version)
+description: ECS Core (abgelöste Version)
 product: erpconnect-services
 parent: erpconnect-services
 childidentifier: ecs-core
 permalink: /:collection/:path
-weight: 2
+weight: 5
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecs-core
 ---
+
+**Achtung:** Dieser Abschnitt bezieht sich auf den Cloud Connector **ECS Core** lediglich bis Version 1.x <br>
 
 **ECS Core** ist ein Konnektor für die SAP-Integration mit Cloud-Umgebungen und anderen autonomen Enterprise-Portalen. Die Anwendung bietet zum einen die Möglichkeit, SAP Daten und Geschäftsprozesse ohne Programmierkenntnisse über standardisierte REST-Services in unterschiedlichen Plattformen und Anwendungen, cloudbasiert oder nicht, zu integrieren. Zum anderen wird die Entwicklung individueller SAP-basierter Anwendungen in der Cloud (z.B. Office365) ermöglicht. Entwicklern wird dafür eigens eine einfach zu nutzende Javascript-Bibliothek zur Verfügung gestellt.
 
