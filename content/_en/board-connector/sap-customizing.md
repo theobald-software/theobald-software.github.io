@@ -16,4 +16,3 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizi
 {% include _content/en/sap-customizing.md  %}
 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

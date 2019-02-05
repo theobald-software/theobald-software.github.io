@@ -1,5 +1,5 @@
 ---
-ref: erpconnect-services-04
+ref: erpconnect-services-03
 layout: page
 title: Business Integration Apps (BIA)
 description: Business Integration Apps (BIA)
@@ -7,9 +7,8 @@ product: erpconnect-services
 parent: erpconnect-services
 childidentifier: business-integration-apps
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=business-integration-apps-bia
 ---
 
 **Business Integration Apps** are web applications developed with ERPConnect Services – Theobald Software’s SAP/SharePoint connectivity platform – which can be directly installed on your local SharePoint Server or SharePoint Online and then made available to users. 

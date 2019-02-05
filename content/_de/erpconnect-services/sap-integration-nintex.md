@@ -1,5 +1,5 @@
 ---
-ref: erpconnect-services-03
+ref: erpconnect-services-02
 layout: page
 title: SAP Integration mit Nintex
 description: SAP Integration mit Nintex
@@ -7,7 +7,7 @@ product: erpconnect-services
 parent: erpconnect-services
 childidentifier: sap-integration-nintex
 permalink: /:collection/:path
-weight: 4
+weight: 2
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=sap-integration-mit-nintex
 ---

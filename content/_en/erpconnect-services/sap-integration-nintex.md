@@ -1,5 +1,5 @@
 ---
-ref: erpconnect-services-03
+ref: erpconnect-services-02
 layout: page
 title: SAP Integration with Nintex
 description: SAP Integration with Nintex
@@ -7,9 +7,8 @@ product: erpconnect-services
 parent: erpconnect-services
 childidentifier: sap-integration-nintex
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=sap-integration-mit-nintex
 ---
 
 ERPConnect Services (ECS) offers an easy SAP integration with Nintex Workflow in SharePoint. 

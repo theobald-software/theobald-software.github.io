@@ -1,5 +1,5 @@
 ---
-ref: ecs-core-05
+ref: ecs-core-07
 layout: page
 title: Integration mit Nintex
 description: Integration mit Nintex
@@ -7,7 +7,7 @@ product: erpconnect-services
 parent: ecs-core
 childidentifier: integration_mit_nintex
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=integration_mit_nintex
 ---
