@@ -11,6 +11,10 @@ weight: 2
 lang: de_DE
 ---
 
+
+**DIESER ABSCHNITT GILT NICHT FÜR XTRACT RS, sondern für alle anderen Produkte der Xtract-Familie**
+
+
 {% include _content/de/sap-customizing.md  %}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
