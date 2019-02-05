@@ -12,16 +12,27 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-installation
 ---
 
 Die Installation von ECS Core erfolgt über die ausgelieferte oder unter [www.theobald-software.com](https://www.theobald-software.com) downloadbare Installationsroutine 
-*ECSCoreSetup*.
+*ERPConnectServicesSetupCore.exe*.
 
 Klicken Sie auf Next und bestätigen Sie die Lizenzvereinbarung.
 
-Wählen Sie anschließend einen Installationspfad.
+![ecscore-installation-2](/img/content/ecscore-installation-2.jpg){:class="img-responsive"}
+
+![ecscore-installation-3](/img/content/ecscore-installation-3.jpg.png){:class="img-responsive"}
+
+Wählen Sie einen Installationspfad.
+
+![ecscore-installation-4](/img/content/ecscore-installation-4.jpg.png){:class="img-responsive"}
 
 Selektieren Sie beide Komponenten und klicken Sie auf *Install*.
 
 ![ecscore-installation-5](/img/content/ecscore-installation-5.jpg.png){:class="img-responsive"}
 
-Die ECS Core Komponenten werden anschließend installiert. Nach erfolgreicher Installation ist empfohlen, direkt anschließend den *ECS Core Deployment Manager* auszuführen. Die Checkbox zum automatischen Start des Deployment Managers ist standardmäßig gesetzt. 
+Die Komponenten werden installiert. Dabei wird der **Microsoft SQL Server Compact** mitinstalliert, der intern von ECS Core verwendet wird. 
 
-Alle Einzelheiten zum Deployment Manager sind im Abschnitt [Deployment Manager](./ecscore-deployment) beschrieben.
+![ecscore-installation-6](/img/content/ecscore-installation-6.jpg.png){:class="img-responsive"}
+
+Bei der Installation handelt es sich ausschließlich um das Kopieren und die Registrierung der benötigten Dateien.
+
+Nach der Installation müssen Sie noch das *ECS Core DEPLOYMENT* ausführen. Auch nach einer Repair-Installation oder dem Darüberinstallieren einer neuen ECS Core Version ist ein erneutes Deployment notwendig. 
+Alle Einzelheiten darüber sind im Abschnitt [Deployment Manager](./ecscore-deployment) beschrieben.

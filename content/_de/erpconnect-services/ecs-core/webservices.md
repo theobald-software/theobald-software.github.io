@@ -12,7 +12,6 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecsc-webservices
 ---
 
-Eine Kernfunktionalität von ECS Core besteht in der Möglichkeit, REST-Webservices für den lesenden oder schreibenden Zugriff auf SAP mit dem WebService Designer zu erstellen und zum ECS Core Server (lokal oder im Web) zu deployen. Die Webservices lassen sich dann in jeder Umgebung nutzen, die es erlaubt, REST Services zu konsumieren (z.B. Nintex für Office 365, Microsoft Flow, Nintex Workflow Cloud,...).
-Ein separater Endpoint für die Konsumenten-Anwendung wird dafür bereitgestellt. 
+Es ist möglich, Webservices mit dem WebService Designer zu erstellen und auf einen ECS Core Server (lokal oder im Web) zu deployen. Die Webservices lassen sich dann in jeder Umgebung nutzen, die es erlaubt, REST Services zu konsumieren (z.B. Nintex für Office 365, Microsoft Flow, Nintex Workflow Cloud,...). 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

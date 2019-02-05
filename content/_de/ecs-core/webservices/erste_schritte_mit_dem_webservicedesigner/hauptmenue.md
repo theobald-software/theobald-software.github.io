@@ -5,7 +5,7 @@ title: Hauptmenü
 description: Hauptmenü
 product: ecs-core
 parent: erste_schritte_mit_dem_webservicedesigner
-childidentifier: hauptmenü
+childidentifier: hauptmenue
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

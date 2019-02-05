@@ -15,16 +15,24 @@ ECSCore unterstützt die Authentifizierung mit einem **API Key** (**A**pplicatio
 
 API Keys können als Authentifizierungsmethode verwendet werden, wenn der Zugriff nicht über benutzerspezifische Zugangsdaten erfolgen soll. 
 Ein API Key fungiert dabei als eindeutige Kennung und kann sehr einfach hinzugefügt, neu generiert oder entfernt werden. 
-Für zahlreiche Cloud-Szenarien stellt dies einen praktikablen und typischen Authentifizierungsmechanismus dar.
+Für zahlreiche Cloud-Szenarien stellt dies einen praktikablen und typischen Authentifizierungsmechanismus dar. Eine Gesamtübersicht zu den in ECS Core unterstützten Authentifizierungsmethoden finden Sie hier.
 
 
-Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt API Keys. Sie müssen einen API Key immer einem gültigen Windows Benutzer mit seinem entsprechenden Windows-Kennwort zuweisen.
+Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt API Keys. Sie müssen einen API Key immer einem gültigen Windows Benutzer mit seinem entsprechenden Windows-Kennwort zuweisen:
 
-Nach der Erstellung des Schlüssels wird dieser unter API Keys angezeigt. Sie können diesen jetzt zur Authentifizierung innerhalb einer Cloud-Anwendung (z.B. Microsoft Flow) verwenden. Unter Umständen muss der Cache zunächst noch bereinigt werden (beschrieben unter *System Operations*). 
+![ecscore-managementsite26](/img/content/ecscore-managementsite26.jpg.png){:class="img-responsive"}
+
+Nach der Erstellung des Schlüssels wird dieser unter API Keys ausgeführt. Sie können diesen jetzt zur Authentifizierung innerhalb einer Cloud-Anwendung (z.B. Microsoft Flow) verwenden. Unter Umständen muss der Cache zunächst noch bereinigt werden (beschrieben unter Services Site). 
+
+
+![ecscore-managementsite27](/img/content/ecscore-managementsite27.jpg.png){:class="img-responsive"}
 
 Klicken Sie auf den API Key, um die folgenden Optionen angezeigt zu bekommen: 
 
 - Update
 - Remove
+- Show Base64 encoded API Key
 
-Sie benötigen die *Update* Option, falls sich die Windows Zugangsdaten geändert haben.
+Sie benötigen die Update Option, falls sich die Windows Zugangsdaten geändert haben. Ein Base64 verschlüsselter API Key wird in einigen Anwendungen verlangt (z.B. REST Client im Authentifizierungs Header). 
+
+![ecscore-managementsite26](/img/content/ecscore-managementsite26.jpg.png){:class="img-responsive"}
