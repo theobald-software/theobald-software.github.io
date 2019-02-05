@@ -20,8 +20,7 @@ Alternativ können Sie die Funktionsbausteine mit Hilfe der mitgelieferten Trans
 * **Z_THEO_READ_TABLE-before_740SP05.zip** (enthält einen Z-Funktionsbaustein für *Table*, für SAP-Releases < 740SP05) 
 
 
-Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) oder in der SAP-Hilfe.
-
+Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
 **Konfiguration (Customizing)**
 
 Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig. 
