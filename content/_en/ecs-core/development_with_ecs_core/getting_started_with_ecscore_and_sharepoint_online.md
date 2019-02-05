@@ -4,7 +4,7 @@ layout: page
 title: Getting started with ECS Core and SharePoint Online
 description: Getting started with ECS Core and SharePoint Online
 product: ecs-core
-parent: development-with-ecs-core
+parent: development_with_ecs_core
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

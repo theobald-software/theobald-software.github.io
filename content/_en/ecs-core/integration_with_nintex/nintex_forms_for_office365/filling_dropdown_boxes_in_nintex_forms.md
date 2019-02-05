@@ -45,7 +45,7 @@ Since this is only a display field, you can also define under *Appearance* that 
 
 Add a reference to our JavaScript library under *Form Settings -> Advanced -> Custom JavaScript Includes*:
 
-[http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js](http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js)
+[http://static.theobald-software.com/theobald.ecs.micro/](http://static.theobald-software.com/theobald.ecs.micro/)
 
 
 ![nintex-forms-js-dropdown-05](/img/content/nintex-forms-js-dropdown-05.jpg){:class="img-responsive"}
@@ -154,7 +154,7 @@ NWF$(document).ready(function() {
     });
 {% endhighlight %}
 
-For more information see [JavaScript Library for REST](../../ecs-en/ecs-runtime/ecs-webservices/javascript-bibliothek-fuer-rest).<br>  
+For more information see [JavaScript Library for REST](../../../../erpconnect-services/ecs/erpconnect-services-runtime/web-services/javascript-library).<br>  
 
 **Step 3: Executing the Nintex Form**
 

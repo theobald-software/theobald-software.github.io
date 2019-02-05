@@ -15,4 +15,4 @@ Wenn der Webservice fertig konfiguriert ist, klicken Sie auf den *Deploy* Button
 
 ![WSD-Deploy2](/img/content/ecscore-wsd_28.png){:class="img-responsive"}
 
-Nach dem erfolgreichen Deployment finden Sie den Webservice auf der ECS Core Management Site unter [Web Services](.../ecscore-administration/webservices).
+Nach dem erfolgreichen Deployment finden Sie den Webservice auf der ECS Core Management Site unter [Web Services](../../ecscore-administration/webservices).

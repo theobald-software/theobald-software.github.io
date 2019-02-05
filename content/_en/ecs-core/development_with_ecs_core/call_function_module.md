@@ -4,7 +4,7 @@ layout: page
 title: Call function module 
 description: Call function module
 product: ecs-core
-parent: development-with-ecs-core
+parent: development_with_ecs_core
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
