@@ -1,5 +1,5 @@
 ---
-ref: erpconnect-services-05
+ref: erpconnect-services-04
 layout: page
 title: ECS-Lösungen
 description: ECS-Lösungen
@@ -7,7 +7,7 @@ product: erpconnect-services
 parent: erpconnect-services
 childidentifier: ecs-loesungen
 permalink: /:collection/:path
-weight: 6
+weight: 4
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecs-loesungen
 ---

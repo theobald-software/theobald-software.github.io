@@ -1,12 +1,13 @@
 ---
+ref: ecs-core-05
 layout: page
 title: Zugriff über Azure Service Bus
 description: Zugriff über Azure Service Bus
 product: erpconnect-services
-parent: erpconnect-services
+parent: ecs-core
 childidentifier: zugriff_ueber_azure_service_bus
 permalink: /:collection/:path
-weight: 3
+weight: 5
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=zugriff__ber_azure_service_bus
 ---

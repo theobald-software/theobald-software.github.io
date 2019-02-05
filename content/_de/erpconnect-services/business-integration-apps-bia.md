@@ -1,5 +1,5 @@
 ---
-ref: erpconnect-services-04
+ref: erpconnect-services-03
 layout: page
 title: Business Integration Apps (BIA)
 description: Business Integration Apps (BIA)
@@ -7,7 +7,7 @@ product: erpconnect-services
 parent: erpconnect-services
 childidentifier: business-integration-apps-bia
 permalink: /:collection/:path
-weight: 5
+weight: 3
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=business-integration-apps-bia
 ---
