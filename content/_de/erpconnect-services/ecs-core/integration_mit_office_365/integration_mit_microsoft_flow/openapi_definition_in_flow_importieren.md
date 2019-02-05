@@ -47,7 +47,3 @@ Danach geben Sie bitte gültige Werte für die definierten Eingabeparameter ein 
 Sie sollten als Rückgabewert im Response Fenster die erzeugte BANF Nummer aus SAP angezeigt bekommen. Ist dies der Fall und werden keine Fehlermeldungen angezeigt, dann funktioniert der Konnektor und kann in Flow verwendet werden. 
 
 ![ecscore_flow_8](/img/content/ecscore_flow_8.png){:class="img-responsive"}
-
-![](/img/content/.png){:class="img-responsive"}
-
-![](/img/content/.png){:class="img-responsive"}

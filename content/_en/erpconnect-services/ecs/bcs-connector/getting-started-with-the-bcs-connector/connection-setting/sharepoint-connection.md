@@ -29,6 +29,6 @@ Use the *Test Connection* button to validate the connection parameters.
 
 You should see a confirmation message, indicating that the connection to the SharePoint system was successful. Select *OK* to close the message.
 
-![BCS-Connection-SharePoint-02](/img/content/BCS-Connection-SharePoint-02.png){:class="img-responsive"}
+![BCS-Connection-SharePoint-02](/img/content/BCS-Connection-SharePoint-02.PNG){:class="img-responsive"}
 
 Select *OK* again to complete the configuration of the SharePoint connection. The status bar at the bottom of your BCS Connector Designer window will now show the SharePoint site you are connected to.

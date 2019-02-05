@@ -11,6 +11,6 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einschraenkungen_umgehen
 ---
 
-Um Einschränkungen bei der Extraktion von Tabellen zu umgehen, empfehlen wir die Installation unseres [Z-Funktionsbausteins](../../../../_includes/_content/de/sap-customizing) für die Tabellenextraktion.
+Um Einschränkungen bei der Extraktion von Tabellen zu umgehen, empfehlen wir die Installation unseres [Z-Funktionsbausteins](../sap-customizing/funktionsbaustein-fuer-table-extraktion) für die Tabellenextraktion.
 
 
