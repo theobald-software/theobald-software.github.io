@@ -20,6 +20,15 @@ Hier können Sie einen Alias für den Spaltennamen definieren, um die Spate im E
 
 **Aggregate Function** <br>
 Hier können Sie eine Aggregat-Funktion wählen. Folgende Optionen stehen zur Verfügung.<br>
+
+| **Aggregat-Funktion** | **Beschreibung**  |
+|------------|------------------------|
+| avg     | Durchschnitt (average)        
+| count      | Anzahl    |                                                              
+| MAX     | Maximum    | 
+| MIN    | Minimum| 
+| SUM   | Summe| 
+
 **AVG**: Durchschnitt (Average)<br>
 **COUNT**: Anzahl. <br>
 **MAX**: Maximum<br>
