@@ -19,7 +19,7 @@ Alternatively, you can use the transport requests that can be found in the ABAP 
 * **Z_THEO_READ_TABLE-before_740SP05.zip** (contains a custom function module for *Table*, applicable for SAP releases < 740SP05)
 
 
-For more detailed information about installing the transport request please read the following [knowledgebase article](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) or check the SAP help.
+For more detailed information about installing the transport request please read the following [knowledgebase article](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms?fromSearch=true) or check the SAP help.
 
 **Customizing** 
 
