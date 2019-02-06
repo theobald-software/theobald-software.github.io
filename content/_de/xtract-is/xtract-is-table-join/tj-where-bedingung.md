@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=tj-where-bedingung
 ---
 
-Im Bereich *Criteria* klicken Sie auf den Link, um die Where-Bedingung definieren. 
+Im Bereich *Criteria* klicken Sie auf den Link, um die Where-Bedingung zu definieren. 
 
 ![tj-where-0](/img/content/tj-where-0.jpg){:class="img-responsive"}
 
@@ -24,17 +24,20 @@ Wählen Sie ein Feld aus der Liste, in der die Namen der Tabelle und des Feldes 
 ![tj-where-2](/img/content/tj-where-2.jpg){:class="img-responsive"}
 
 Wählen Sie einen Operator aus der Liste:<br>
-EQ: gleich (equal)<br>
-NE: ungleich (not equal)<br>
-LT: kleiner als (less than)<br>
-LE: kleiner oder gleich (less or equal than) <br>
-GT: größer als (greater than)<br>
-GE: größer oder gleich (greater or equal than) <br>
-LIKE: Bestimmt, ob eine bestimmte Zeichenfolge mit einem angegebenen Muster übereinstimmt. <br>
-        WHERE MAKT~SPRAS LIKE 'D%' findet alle Sprachen, die mit dem Buchstaben 'D' anfangen.<br>
-NOT LIKE: Negation von LIKE.<br>
-IS NULL: Ist NULL.<br>
-IS NOT NULL: Ist nicht NULL.
+
+| **Operator** | **Beschreibung** |  
+|------------|------------------------|
+| EQ     | gleich |      
+| NE      | ungleich    |                                                              
+| LT     | kleiner als    | 
+| LE   | kleiner oder gleich| 
+| GT   | größer als| 
+| GE | größer oder gleich     |
+| LIKE | Bestimmt, ob eine bestimmte Zeichenfolge mit einem angegebenen Muster übereinstimmt 
+- Bsp.: WHERE MAKT~SPRAS LIKE 'D%' findet alle Sprachen, die mit dem Buchstaben 'D' anfangen|
+| NOT LIKE | Negation von LIKE
+| IS NULL | ist *NULL*
+| IS NOT NULL | ist nicht *NULL* |
 
 ![tj-where-operation](/img/content/tj-where-operation.jpg){:class="img-responsive"}
 
@@ -52,9 +55,9 @@ Klicken Sie rechts auf das Symbol, um eine neue Bedingung einzugeben.
 
 ![tj-where-single-criteria](/img/content/tj-where-single-criteria.jpg){:class="img-responsive"}
 
-Hier haben Sie folgende Optionen, um die Bedingungen  zu verbinden:<br>
+Hier haben Sie folgende Optionen, um die Bedingungen zu verbinden:<br>
 AND (und): Beide Bedingungen müssen wahr sein.<br>
-OR (oder): Eine Bedingung oder beiden Bedingungen müssen wahr sein.
+OR (oder): Eine Bedingung oder beide Bedingungen müssen wahr sein.
 
 ![tj-where-and](/img/content/tj-where-and.jpg){:class="img-responsive"}
 
@@ -65,7 +68,7 @@ Sie können auch eine Kriteriengruppe hinzufügen. Dazu klicken Sie auf das ents
 
 **Manuelle Eingabe / Open SQL** 
 
-Um die Bedingung manuell einzugeben, klicken Sie rechts auf dem Icon und bestätigen Sie die Warnung, dass die definierten Bedingungen verloren gehen. 
+Um die Bedingung manuell einzugeben, klicken Sie rechts auf das Icon und bestätigen Sie die Warnung, dass die definierten Bedingungen verloren gehen. 
 
 ![tj-where-4](/img/content/tj-where-4.jpg){:class="img-responsive"}
 
