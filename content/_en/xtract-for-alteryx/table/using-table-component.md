@@ -25,7 +25,6 @@ With the button Select All / Deselect All you can select or deselect all fields.
 To select individual fields, click the corresponding checkbox. <br>
 Via the search field you can search for the name or description of a field.<br>
 
-![Designer](/img/content/xfa/xfa-table-settings.png){:class="img-responsive"}
 
 ### Joins
 To join several tables, please check the table join section. <br> 
@@ -34,7 +33,6 @@ To join several tables, please check the table join section. <br>
 In this tab you can define the Where-condition.<br> 
 Note that fields must be defined in the following notation [TableName]~[FieldName], e.g. KNA1~LAND1 = 'US'.
 
-![Designer](/img/content/xfa/xfa-table-settings.png){:class="img-responsive"} 
 
 ### Preview 
 On the lower side you see the output table. Clicking Load Preview Data fills the output table with data from the SAP System.

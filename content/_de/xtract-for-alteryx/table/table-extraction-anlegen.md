@@ -25,16 +25,12 @@ Klicken Sie drauf, dann sehen Sie im Hauptdialog auf der rechten Seite alle verf
 Um einzelne Felder zu wählen, klicken Sie die entsprechende Checkbox. <br>
 Über das Suchfeld können Sie nach dem Namen oder der Beschreibung eines Feldes suchen.<br>
 
-![Designer](/img/content/xfa/xfa-table-settings.png){:class="img-responsive"}
-
 ### Joins
 Falls Sie mehrere Tabellen joinen wollen, können Sie in diesem Reiter die Join-Bedingungen bearbeiten.<br> 
 
 ## Where Clause
 In diesem Reiter können Sie die Where-Bedingung definieren.<br> 
 Achten Sie drauf, dass Felder in der folgenden Schreibweise [TableName]~[FieldName] definiert werden müssen, z.B. KNA1~LAND1 = 'US'.
-
-![Designer](/img/content/xfa/xfa-table-settings.png){:class="img-responsive"} 
 
 ### Preview 
 Auf der unteren Seite sehen Sie die Ausgabetabelle. Ein Klick auf Load Preview Data füllt die Ausgabetabelle mit Daten vom SAP-System.<br>
