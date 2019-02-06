@@ -34,7 +34,6 @@ Xtract Universal allows to extract data from SAP ERP and BW systems and to load 
 - [Power Pivot using OData, see Power BI (Desktop)](./xu-destinations/powerbi-desktop) 
 - [Tableau](./xu-destinations/tableau) 
 - [Qlik (QlikSense and QlikView)](./xu-destinations/qliksense-qlikview) 
-- [Good Data](./xu-destinations/gooddata) 
 
 **Analytics & ETL Tools:**
 - [Alteryx](./xu-destinations/alteryx) 
