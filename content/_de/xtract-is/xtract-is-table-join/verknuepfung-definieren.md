@@ -39,4 +39,4 @@ Damit werden in unserem Beispiel sowohl Materialstammdaten ohne Materialbeschrei
 
 Die über einen Outer Join ermittelte Treffermenge kann also eine echte Obermenge der über einen Inner Join ermittelten Treffermenge sein.
 
-SAP Help: [Inner Join und Outer Join](https://help.sap.com/saphelp_erp60_sp/helpdata/de/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true)
+SAP Help: [Inner Join und Outer Join](https://help.sap.com/viewer/0ecf5244825c4742a7b062a89d11c2ac/7.5.11/en-US/5e13a3d8fd42487ea5adee7d9379c34f.html)
