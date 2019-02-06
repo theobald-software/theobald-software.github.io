@@ -26,15 +26,14 @@ Wählen Sie ein Feld aus der Liste, in der die Namen der Tabelle und des Feldes 
 Wählen Sie einen Operator aus der Liste:<br>
 
 | **Operator** | **Beschreibung** |  
-|------------|------------------------|
+|------|------------------------|
 | EQ     | gleich |      
 | NE      | ungleich    |                                                              
 | LT     | kleiner als    | 
 | LE   | kleiner oder gleich| 
 | GT   | größer als| 
 | GE | größer oder gleich     |
-| LIKE | Bestimmt, ob eine bestimmte Zeichenfolge mit einem angegebenen Muster übereinstimmt 
-- Bsp.: WHERE MAKT~SPRAS LIKE 'D%' findet alle Sprachen, die mit dem Buchstaben 'D' anfangen|
+| LIKE | Bestimmt, ob eine bestimmte Zeichenfolge mit einem angegebenen Muster übereinstimmt - Bsp.: WHERE MAKT~SPRAS LIKE 'D%' findet alle Sprachen, die mit dem Buchstaben 'D' anfangen|
 | NOT LIKE | Negation von LIKE
 | IS NULL | ist *NULL*
 | IS NOT NULL | ist nicht *NULL* |

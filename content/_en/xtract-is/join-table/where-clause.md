@@ -27,15 +27,14 @@ Select a field from the list that contains the names of the tcrables and the fil
 Select an operator from the list: <br> 
 
 | **operator** | **description** |  
-|------------|------------------------|
+|-------|------------------------|
 | EQ     | equal |      
 | NE      | not equal    |                                                              
 | LT     | less than    | 
 | LE   | less or equal than| 
 | GT   | greater than| 
 | GE | greater or equal than     |
-| LIKE | find a string fitting the value 
-- e.g.: WHERE MAKT~SPRAS LIKE 'D%' find all languages that start with the letter 'D'|
+| LIKE | find a string fitting the value - e.g.: WHERE MAKT~SPRAS LIKE 'D%' find all languages that start with the letter 'D'|
 | NOT LIKE | negation of LIKE
 | IS NULL | is *NULL*
 | IS NOT NULL | is not *NULL* |
