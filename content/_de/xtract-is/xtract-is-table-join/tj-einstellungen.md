@@ -13,7 +13,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=tj-einstellungen
 
 Klicken Sie auf den Settings-Link im Editor. Das folgende Fenster öffnet sich:
 
-![tj-xis-settings](img\content\xtract_is_table_join_preferences.png){:class="img-responsive"}
+![tj-xis-settings](/img/content/xtract_is_table_join_preferences.png){:class="img-responsive"}
 
 
 **Max Rows** <br>
