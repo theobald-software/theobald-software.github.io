@@ -21,21 +21,28 @@ Klicken Sie auf das Fernglas-Symbol, um eine Tabelle zu suchen. Im neuen Fenster
 
 ![Table-02](/img/content/Table-02.png){:class="img-responsive"}
 
-Der Editor ist jetzt mit allen Spalten der Tabelle gefüllt. Die Spalten, die extrahiert werden sollen, müssen vorne mit einem Häkchen markiert werden.
+Der Editor wird *default* mit sämtlcihen Spalten der Tabelle gefüllt. Über die Buttons *Select All* und *Select None* können diese an- oder abgewählt werden.
 
-![Table-03](/img/content/Table-03.png){:class="img-responsive"}
+In disem Beispiel wurden lediglich vier Spalten angehakt und für die Extraktion ausgewählt.
 
-Klicken Sie optional auf das *Preview*-Button, um die Extraktion im Preview zu sehen.
+![Table-03](/img/content/define_data_source_XIS_table.png"){:class="img-responsive"}
 
-![Table-04](/img/content/Table-04.png){:class="img-responsive"}
+Um das Ergebnis zu filtern, steht Ihnen ein großes Textfeld zu Verfügung, indem Sie eine Where-Bedingung definieren können. 
+In diesem Beispiel wurde wie folfr selektiert: (*VKORG = '1000' OR VKORG = '2000') AND ERDAT > '20010101'*
 
-Um das Ergebnis zu filtern, steht Ihnen ein großes Textfeld zu Verfügung, in dem Sie eine Where-Bedingung definieren können. 
-Der eigegebene Ausdruck muss dem SAP OpenSQL Syntax entsprechen, beispielsweise muss der Ausdruck ein Leerzeichen vor und nach dem Operator enthalten. Achten Sie ebenfalls auf das Format der Werte, z.B. muss  ein Datum in der SAP-Schreibweise – also YYYYMMDD – eingetragen werden.
+Der eigegebene Ausdruck muss dem SAP OpenSQL Syntax entsprechen, beispielsweise muss der Ausdruck ein Leerzeichen vor und nach dem Operator enthalten. 
+Achten Sie ebenfalls auf das Format der Werte, z.B. muss  ein Datum in der SAP-Schreibweise – also YYYYMMDD – eingetragen werden.
 
 ![Table-05](/img/content/Table-05.png){:class="img-responsive"}
 
+Klicken Sie optional auf das *Preview*-Button, um die Extraktion als Vorschau zu sehen.
+
+![Table-04](/img/content/preview_Xtract_IS_table.png"){:class="img-responsive"}
+
 **Variablen** 
 
-Es ist auch möglich, SSIS-Variablen in dem Where-String zu verwenden, wie man das von SQL-Statements gewohnt ist. Definieren Sie beispielsweise eine Variable vkorg im Datenflusstask und formulieren Sie Ihr Where-Statement wie folgt: VKORG = @vkorg. Xtract IS erkennt anhand des @-Symbols, dass dieser Platzhalter ersetzt werden muss.
+Es ist auch möglich, SSIS-Variablen in dem Where-String zu verwenden, wie man das von SQL-Statements gewohnt ist. 
+Definieren Sie beispielsweise eine Variable VKORG im Datenflusstask und formulieren Sie Ihr Where-Statement wie folgt: VKORG = @vkorg. 
+Xtract IS erkennt anhand des @-Symbols, dass dieser Platzhalter ersetzt werden muss.
 
 Sobald die Datenquelle entsprechend konfiguriert ist, stehen die Ausgabespalten für die weitere Verarbeitung zur Verfügung.

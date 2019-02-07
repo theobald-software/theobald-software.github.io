@@ -80,4 +80,4 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 
 
 **Zielumgebungen (Destinations)** <br>
-Für eine Zielumgebung kann die Installation einer entsprechenden Bibliothek nötig sein. Weitere Informationen finden Sie auf der jeweiligen Seite **Voraussetzungen** der Zielumgebung.
+- Für eine Zielumgebung kann die Installation einer entsprechenden Bibliothek nötig sein. Weitere Informationen finden Sie auf der jeweiligen Seite **Voraussetzungen** der Zielumgebung.
