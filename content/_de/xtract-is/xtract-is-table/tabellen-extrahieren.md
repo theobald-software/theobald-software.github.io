@@ -25,16 +25,14 @@ Der Editor wird *default* mit sämtlcihen Spalten der Tabelle gefüllt. Über di
 
 In disem Beispiel wurden lediglich vier Spalten angehakt und für die Extraktion ausgewählt.
 
-![define_data_source_XIS_table](/img/content/define_data_source_XIS_table.png"){:class="img-responsive"}
+![Table-03](/img/content/define_data_source_XIS_table.png"){:class="img-responsive"}
 
 Um das Ergebnis zu filtern, steht Ihnen ein großes Textfeld zu Verfügung, indem Sie eine Where-Bedingung definieren können. 
-In diesem Beispiel wurde wie folfr selektiert: <br>
+In diesem Beispiel wurde wie folgt selektiert: <br>
 (*VKORG = '1000' OR VKORG = '2000') AND ERDAT > '20010101'*
 
 Der eigegebene Ausdruck muss dem SAP OpenSQL Syntax entsprechen, beispielsweise muss der Ausdruck ein Leerzeichen vor und nach dem Operator enthalten. 
 Achten Sie ebenfalls auf das Format der Werte, z.B. muss  ein Datum in der SAP-Schreibweise – also YYYYMMDD – eingetragen werden.
-
-![Table-05](/img/content/Table-05.png){:class="img-responsive"}
 
 Klicken Sie optional auf das *Preview*-Button, um die Extraktion als Vorschau zu sehen.
 
