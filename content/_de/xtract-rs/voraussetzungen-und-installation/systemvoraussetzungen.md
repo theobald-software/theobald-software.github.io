@@ -29,14 +29,13 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 
 | Komponente    | SAP Release            | Anforderung an das SAP System                                        |
 |---------------|------------------------|----------------------------------------------------------------------|
-| **Table**     | Rel. above 4.0B        | In den meisten Fällen ist die [Installation eines Z-Moduls](../sap-customizing/funktionsbaustein-fuer-table-komprimierung) notwendig. |
+| **Table**     | Rel. above 4.0B        | In den meisten Fällen ist die Installation eines Z-Funktionsbuasteins notwendig. |
 | **Query**     | Rel. 4.0B und höher.   | Keine.                                                               |
 | **BAPI**      | Rel. 4.0B und höher.   | Keine.                                                               |
 | **Report**    | Rel. 4.0B und höher.   | [Installation eines Z-Moduls](../sap-customizing/funktionsbaustein-fuer-table-komprimierung) ist notwendig.                           |
 | **BW Cube**   | Rel. BW 3.1 und höher. | Keine.                                                               |
 | **Hierarchy** | Rel. BW 3.1 und höher. | Keine.                                                               |
-| **OHS**       | Rel. BW 3.5 und höher. | [Customizing](../sap-customizing/vorbereitung-fuer-ohs-im-bw).                                                         |
-| **DeltaQ**    | Rel. 4.6A und höher.   | [Customizing](../sap-customizing/vorbereitung-fuer-ohs-im-bw).                                                         |
+                                                       |
 
 {% include _content/de/operating-systems.md %}
 
