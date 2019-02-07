@@ -47,20 +47,20 @@ Die Tabelle hat den folgenden Inhalt:
 
 **SSIS** 
 
-1.	Die Quelle definieren. 
+1.Die Quelle definieren. 
 
-2.	Das Functionsmodul definieren. Den Input Type für die entsprechende Tabelle auf *Pipeline* setzen.
+2.Das Functionsmodul definieren. Den Input Type für die entsprechende Tabelle auf *Pipeline* setzen.
 
 ![ssis-write-xtractis-fuba-01](/img/content/ssis-write-xtractis-fuba-01.png){:class="img-responsive"}
 
-3. Die Komponenten miteinander verbinden. 
+3.Die Komponenten miteinander verbinden. 
 
 ![ssis-write-xtractis-fuba-02](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
 
-4. Auf *Edit*  klicken, um die Spalten zu mappen. 
+4.Auf *Edit*  klicken, um die Spalten zu mappen. 
 
 ![ssis-write-xtractis-fuba-03](/img/content/ssis-write-xtractis-fuba-03.png){:class="img-responsive"}
 
-5. Das SSIS-Packet ausführen. 
+5.Das SSIS-Packet ausführen. 
 
 ![ssis-write-xtractis-fuba-04](/img/content/ssis-write-xtractis-fuba-04.png){:class="img-responsive"}
