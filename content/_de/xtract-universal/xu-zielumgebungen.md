@@ -33,7 +33,6 @@ Business Intelligence / Analytics Tools:
 - [Power Pivot](./xu-zielumgebungen/odata-atom) 
 - [Tableau](./xu-zielumgebungen/tableau) 
 - [QlikSense and QlikView](./xu-zielumgebungen/qlik)  
-- [GoodData](./xu-zielumgebungen/gooddata) 
 
 Cloud Speicher:
 - [Amazon AWS S3](./xu-zielumgebungen/amazon_aws_s3)
