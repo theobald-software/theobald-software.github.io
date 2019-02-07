@@ -68,8 +68,9 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 		Minimum: 1.4 GHz, Empfohlen: 2.0 GHz oder schneller 
 
 - **Arbeitsspeicher** <br>
+		Minimum: 8 GB, Empfohlen: 12 GB oder mehr abhängig vom Datenvolumen.<br>
 		Der Verbrauch des Arbeitsspeichers hängt von vielen Faktoren ab, u.a. vom Komponententyp, Anzahl der Spalten und Anzahl der Zeilen pro Paket (d.h. package size). Z.B. benötigt die BW Cube Komponente im Vergleich mehr Speicher als die Table-Komponente. <br>
-		Minimum: 8 GB, Empfohlen: 12 GB oder mehr abhängig vom Datenvolumen.
+		
 
 - **Festplattenspeicher** <br>
 		Für die Installation werden 150 MB Festplattenspeicher benötigt. 
