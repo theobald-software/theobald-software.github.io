@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=defining-report-columns
 ---
 
-To continue, please preview the report at least once by clicking the *Preview* button.
+To continue, please preview the report at least **once** by clicking the *Preview* button.
 
 Use the report column editor at the bottom and the table on the upper right to define new columns. A column is defined by its name, offset and length.
 
