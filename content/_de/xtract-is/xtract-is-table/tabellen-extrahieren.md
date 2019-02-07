@@ -25,7 +25,7 @@ Der Editor wird *default* mit sämtlcihen Spalten der Tabelle gefüllt. Über di
 
 In disem Beispiel wurden lediglich vier Spalten angehakt und für die Extraktion ausgewählt.
 
-![Table-03](/img/content/define_data_source_XIS_table.png"){:class="img-responsive"}
+![Table-03](/img/content/define_data_source_XIS_table.png){:class="img-responsive"}
 
 Um das Ergebnis zu filtern, steht Ihnen ein großes Textfeld zu Verfügung, indem Sie eine Where-Bedingung definieren können. 
 In diesem Beispiel wurde wie folgt selektiert: <br>
@@ -36,7 +36,7 @@ Achten Sie ebenfalls auf das Format der Werte, z.B. muss  ein Datum in der SAP-S
 
 Klicken Sie optional auf das *Preview*-Button, um die Extraktion als Vorschau zu sehen.
 
-![Table-04](/img/content/preview_Xtract_IS_table.png"){:class="img-responsive"}
+![Table-04](/img/content/preview_Xtract_IS_table.png){:class="img-responsive"}
 
 **Variablen** 
 
