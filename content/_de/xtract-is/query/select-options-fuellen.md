@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=select-options-fuellen
 ---
 
-n dem Selektionsbildschirm einer Query haben Sie im SAP die Möglichkeit, komplexe Einschränkungen zu hinterlegen. Das geht im Xtract IS Query genauso. Klicken Sie im Editor im gewünschten Parameter auf den Edit-Link.
+In dem Selektionsbildschirm einer Query haben Sie im SAP die Möglichkeit, komplexe Einschränkungen zu hinterlegen. Das geht im Xtract IS Query genauso. Klicken Sie im Editor im gewünschten Parameter auf den Edit-Link.
 
 ![Selection-Options-Fill-01](/img/content/Selection-Options-Fill-01.png){:class="img-responsive"}
 
@@ -24,4 +24,4 @@ Die Spalte *Sign* definiert, ob die Ergebnismenge der Einschränkung eingeschlos
 Die Spalte *Option* ist ein Operator (z.B. =,> oder [] für von ... bis). <br>
 In den Spalten *Low Value* und *High Value* sind dann die jeweiligen Werte einzutragen. <br>
 Der Screenshot oben beispielsweise selektiert alle Werte von AA bis ZZ (Include, [] -> von ... bis), außer den Einzelwert LH (Exclude, =). <br>
-Selbstverständlich können für die Wertfelder auch SSIS-Variablen verwendet werden (mit @).
+Selbstverständlich können für die Wertfelder auch SSIS-Variablen, beginnend mit @,  verwendet werden.

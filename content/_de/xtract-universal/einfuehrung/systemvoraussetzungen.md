@@ -25,62 +25,58 @@ unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit
 |---------------|------------------------|----------------------------------------------------------------------|
 | **Table**     | Rel. above 4.0B        | In den meisten Fällen ist die Installation eines Z-Moduls notwendig. |
 | **Table Join** | SAP 7.0 und höher     | Installation eines Z-Moduls ist notwendig. |
-| **Query**     | Rel. 4.0B und höher.   | Keine.                                                               |
-| **BAPI**      | Rel. 4.0B und höher.   | Keine.                                                               |
+| **Query**     | Rel. 4.0B und höher.   | keine                                                               |
+| **BAPI**      | Rel. 4.0B und höher.   | keine                                                               |
 | **Report**    | Rel. 4.0B und höher.   | Installation eines Z-Moduls ist notwendig.                           |
-| **BW Cube**   | Rel. BW 3.1 und höher. | Keine.                                                               |
-| **Hierarchy** | Rel. BW 3.1 und höher. | Keine.                                                               |
-| **OHS**       | Rel. BW 3.5 und höher. | Customizing.                                                         |
-| **DeltaQ**    | Rel. 4.6A und höher.   | Customizing.                                                         |
+| **BW Cube**   | Rel. BW 3.1 und höher. | keine                                                               |
+| **Hierarchy** | Rel. BW 3.1 und höher. | keine                                                               |
+| **OHS**       | Rel. BW 3.5 und höher. | Customizing                                                        |
+| **DeltaQ**    | Rel. 4.6A und höher.   | Customizing                                                         |
 
-Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel SAP Customizing.
+Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel [SAP Customizing](https://help.theobald-software.com/de/xtract-universal/sap-customizing)
 
 **Ports**
 
 Folgende Ports müssen abhängig vom SAP-System offen sein,
-wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
+wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99). <br>
 
 - SAP Application Server: Port 33nn
 - SAP Message Server (Load Balancing): Port 36nn
 - Secure Communication Network (SCN): Port 48nn
 - SAP Router: Port 3399
 
-**Sicherheitseinstellungen**
- 	
+**Sicherheitseinstellungen** <br> 	
 - SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungosbjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
 - SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
 
 
-**SAP-Lizenzen**
+**SAP-Lizenzen** <br>
 Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich sein. Bitte dazu SAP kontaktieren.
 
 {% include _content/de/operating-systems.md %}
 
-**Andere Anwendungen und Frameworks**
- 	
+**Andere Anwendungen und Frameworks** <br> 	
 - .NET Framework 4.5.2 oder höher. Das Famework können Sie von der Microsoft-Webseite herunterladen.
 
 **Hardware Anforderungen**
  	
-- **Prozessorkerne** 
+- **Prozessorkerne** <br>
 		Minimum: 2 Cores. 
 		1 zusätzlicher Prozessorkern ist erforderlich für jede parallele Extraktion. 
 
-- **Prozessorgeschwindigkeit**  
+- **Prozessorgeschwindigkeit**  <br>
 		Minimum: 1.4 GHz, Empfohlen: 2.0 GHz oder schneller 
 
-- **Arbeitsspeicher**
+- **Arbeitsspeicher** <br>
 		Der Verbrauch des Arbeitsspeichers hängt von vielen Faktoren ab, u.a. vom Komponententyp, Anzahl der Spalten und Anzahl der Zeilen pro Paket (d.h. package size). Z.B. benötigt die BW Cube Komponente im Vergleich mehr Speicher als die Table-Komponente. <br>
 		Minimum: 8 GB, Empfohlen: 12 GB oder mehr abhängig vom Datenvolumen.
 
-- **Festplattenspeicher** 
+- **Festplattenspeicher** <br>
 		Für die Installation werden 150 MB Festplattenspeicher benötigt. 
 
-**32/64-Bit Umgebung**
- 	
+**32/64-Bit Umgebung** <br> 	
 - Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
 
 
-**Zielumgebungen (Destinations)**
-
+**Zielumgebungen (Destinations)** <br>
 Für eine Zielumgebung kann die Installation einer entsprechenden Bibliothek nötig sein. Weitere Informationen finden Sie auf der jeweiligen Seite **Voraussetzungen** der Zielumgebung.
