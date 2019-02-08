@@ -27,10 +27,10 @@ In the *OpenAPI Options dialog* (in the menu bar under *Options*) you can make t
 
 Additional generic services are added to the definition:
 
-- ECS Execute SAP Function: This service enables generic calls of SAP function modules. An example of the service definition can be found [here](../../ecs-en/ecs-runtime/ecs-webservices/rest-without-tecs/ecs-function-module-with-rest).
+- ECS Execute SAP Function: This service enables generic calls of SAP function modules. An example of the service definition can be found [here](../../../erpconnect-services/ecs/erpconnect-services-runtime/web-services/rest-without-tecs/function-module-with-rest).
 - ECS Get SAP Function Metadata: This service can be used to determine the input and output parameters of the ECS Execute Function Services.
-- ECS Table Query: This service enables the generic call of any SAP table or view. An example of the service definition can be found [here](../../ecs-en/ecs-runtime/ecs-webservices/rest-without-tecs/ecs-table-wit-rest). 
-- ECS XQL Query: This service can be used to send specific XtractQL (short: XQL) query statements to the SAP system for read and write access. The XQL syntax is described [here](../.../ecs-en/ecs-runtime/ecs-xtractql/ecs-xtractql-syntax). 
+- ECS Table Query: This service enables the generic call of any SAP table or view. An example of the service definition can be found [here](../../../erpconnect-services/ecs/erpconnect-services-runtime/web-services/rest-without-tecs/ecs-table-wit-rest). 
+- ECS XQL Query: This service can be used to send specific XtractQL (short: XQL) query statements to the SAP system for read and write access. The XQL syntax is described [here](../../../erpconnect-services/ecs/erpconnect-services-runtime/application-development/xtractql-xql). 
 
 **Use variable names as "title" parameter** (Default: No)
 
