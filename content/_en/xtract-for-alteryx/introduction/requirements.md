@@ -15,16 +15,16 @@ lang: en_GB
 - Alteryx Designer and Server version 2018 or higher. 
 
 **SAP Releases**
-Basically, all SAP systems based on the ABAP Netweaver Stack are supported. 
+Basically all SAP systems, that are based on the ABAP Netweaver Stack and support RFC Connectivity, are supported. 
 
 - SAP R/3 Version 4.0B or higher and SAP ECC
 - SAP S/4 HANA (on-premises)
 - SAP BW Version 3.1 or higher
 - SAP BW/4 HANA
 - SAP-Systems in the SAP Business Suite (CRM, SRM, SCM etc.) 
-- All SAP systems based on the ABAP Netweaver Stack (e.g. SAP Business All in One)
+- SAP Business All in One, CAR, APO, PI, IS-U etc. 
 
-The systems purchased by SAP and not based on the ABAP Netweaver Stack, such as Sybase, Ariba, Success Factors and Concur, are not supported.
+Not supported are the systems, that don’t support RFC Connectivity like Business By Design or are purchased by SAP, such as Business One, Business Objects, Sybase, Ariba, Success Factors and Concur. <br>
 Integration takes place via the SAP application server. For this reason, the database under the SAP System is irrelevant. <br>
 SAP systems on HANA (such as S/4 HANA or BW/4 HANA) are supported without restriction.
 Direct read access from the HANA database is not supported. <br>
