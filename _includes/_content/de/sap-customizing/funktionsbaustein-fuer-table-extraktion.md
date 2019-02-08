@@ -10,7 +10,8 @@ Um diese Einschränkungen zu umgehen, gibt es die Möglichkeit, einen Z-Funktion
 Für hochperformante Massendaten-Extraktion von SAP-Tabellen haben wir den Z-Funktionsbaustein Z_THEO_READ_TABLE entwickelt. 
 Wir empfehlen die Nutzung dieses Z-Funktionsbausteins.
 
-Um den Z-Funktionsbaustein manuell zu installieren, folgen Sie den Anweisungen in unserem Knowledgebase-Artikel (tbd).<br>
+Für die manuelle Installation des Z-Funktionsbaustein, folgen Sie den Anweisungen in unserem [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/installation-of-the-function-module-Z_THEO_READ_TABLE).<br>
+
 Alternativ können Sie den Funktionsbaustein mit Hilfe eines der mitgelieferten Transportaufträge (Z_THEO_READ_TABLE.zip *oder* Z_THEO_READ_TABLE-before_740SP05.zip) installieren. Die zip-Dateien finden Sie im Unterordner *ABAP* des Xtract-Installationsordners. <br>
 Bitte leiten Sie die zip-Dateien an Ihre SAP Basis Adminstratoren weiter mit der Bitte um Import ins SAP System.
 
