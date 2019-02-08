@@ -55,7 +55,7 @@ Führen Sie den Baustein RSAS_RBWBCRL_STORE wie unten gezeigt aus. Er dient dazu
 
 **Schritt 6**
 
-In unserer [Knowledge Base](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/100/0/registering-rfc-server-in-sap-releases-above-kernel-release-720) finden Sie die Anleitung zu der Registrierung des RFC Servers in SAP. 
+In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher) finden Sie die Anleitung zu der Registrierung des RFC Servers in SAP. 
 
 **Achtung**: Dieser Schritt gilt ab der SAP Kernel-Version 720.
 
