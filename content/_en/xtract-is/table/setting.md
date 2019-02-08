@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=table-settings
 
 Use the Settings link in the editor to open the Settings dialog as shown in the picture below.
 
-![XIS_Table_Settings](/img/content/XIS_Table_Settings.jpg){:class="img-responsive" width="600px" }
+![XIS_Table_Settings](/img/content/settings_xis.png){:class="img-responsive" width="600px" }
 
 **Max Rows**<br>
 Maximum numbers of rows to be extracted. 0 is unlimited.
