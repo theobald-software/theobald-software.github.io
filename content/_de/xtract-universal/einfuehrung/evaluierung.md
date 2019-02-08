@@ -11,7 +11,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=evaluierung
 ---
 
-Gerne unterstützen wir Sie während der Evaluierungsphase. Selbstverständlich können Sie eine Demoversion von unserer Webseite herunterladen und in Ruhe ausprobieren. Sie ist nur zeitlich limitiert und funktioniert sonst ohne Einschränkung.
+Gerne unterstützen wir Sie während der Evaluierungsphase von Xtract Universal. 
+
+Selbstverständlich können Sie eine Demoversion von unserer Webseite herunterladen und in Ruhe ausprobieren. 
+
+Sie ist nur zeitlich limitiert und funktioniert sonst ohne Einschränkung.
 
 Gerne stehen wir Ihnen jederzeit telefonisch oder per Mail für Fragen zur Verfügung:
 

@@ -50,4 +50,4 @@ Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unter
 Das erlaubt es Ihnen, bei Bedarf problemlos wieder auf die vorige Version von Xtract Universal zu wechseln.
 
 **Version History**<br>
-Eine Liste der aktuellen Versionen finden Sie in der[version history](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
+Eine Liste der aktuellen Versionen finden Sie in der [version history](https://kb.theobald-software.com/version-history/xtract-universal-version-history).

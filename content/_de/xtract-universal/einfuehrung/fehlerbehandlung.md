@@ -15,26 +15,20 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=fehlerbehandlung
 
 Wenn der Dienst nicht startet, dann ändern Sie das Benutzerkonto, unter dem der Dienst läuft und stellen Sie sicher, dass es folgende Rechte hat: 
 
-- Local Security Policy -> Local Policies -> User Right Management: Log on as a service
-- Dateirechte für das Installationsverzeichnis + Unterverzeichnisse: Modify
+- Local Security Policy -> Local Policies -> User Right Management: *Log on as a service*
+- Dateirechte für das Installationsverzeichnis und Unterverzeichnisse: *Modify*
 - HTTP URL Access Control List für http://+:httpPort/. 
 
-Auf folgender Seite finden Sie, wie man eine URLACL anlegt: [http://msdn.microsoft.com/en-us/library/ms733768.aspx](http://msdn.microsoft.com/en-us/library/ms733768.aspx)
+Auf folgender Seite finden Sie, wie man eine [URLACL](https://docs.microsoft.com/en-us/windows/desktop/Http/add-urlacl) anlegt.
 Statt der URL ACL kann es auch ein Administrator-Account sein.
 
 Um dem Dienst ein Benutzerkonto zuzuweisen, gehen Sie wie folgt vor:
 
 1. Klicken Sie auf Start -> Systemsteuerung -> Verwaltung
-
 2. Doppelklicken Sie auf Dienste
-
 ![XU-Setup](/img/content/windows-dienste.png){:class="img-responsive"}
-
 3. Klicken Sie mit der rechten Maustaste auf den Dienst und wählen Sie Eigenschaft.
-
 ![XU-Setup](/img/content/xtract_dienst allgemein.png){:class="img-responsive"}
-
 4. Im Reiter Log On, ändern Sie das Benutzerkonto und klicken Sie auf Anwenden.
-
 ![XU-Setup](/img/content/xtract_dienst_anmelden.png){:class="img-responsive"}
 
