@@ -18,31 +18,31 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=systemvoraussetzungen
 - SAP BW Version 3.1 oder höher
 - SAP BW/4 HANA
 
-Die Integration findet über den SAP-Applikationsserver statt. Daher spielt die Datenbank 
-unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit ohne Einschränkung unterstützt.
+Die Integration findet über den SAP-Applikationsserver statt, daher spielt die Datenbank unter dem SAP-System keine Rolle.<br>
+Insbesondere SAP-Systeme auf HANA werden somit ohne Einschränkung unterstützt.
 
 | Komponente    | SAP Release            | Anforderung an das SAP System                                        |
 |---------------|------------------------|----------------------------------------------------------------------|
 | **Table**     | Rel. above 4.0B        | In den meisten Fällen ist die Installation eines Z-Moduls notwendig. |
 | **Table Join** | SAP 7.0 und höher     | Installation eines Z-Moduls ist notwendig. |
-| **Query**     | Rel. 4.0B und höher.   | keine                                                               |
-| **BAPI**      | Rel. 4.0B und höher.   | keine                                                               |
-| **Report**    | Rel. 4.0B und höher.   | Installation eines Z-Moduls ist notwendig.                           |
-| **BW Cube**   | Rel. BW 3.1 und höher. | keine                                                               |
-| **Hierarchy** | Rel. BW 3.1 und höher. | keine                                                               |
-| **OHS**       | Rel. BW 3.5 und höher. | Customizing                                                        |
-| **DeltaQ**    | Rel. 4.6A und höher.   | Customizing                                                         |
+| **Query**     | Rel. 4.0B und höher   | keine                                                               |
+| **BAPI**      | Rel. 4.0B und höher   | keine                                                               |
+| **Report**    | Rel. 4.0B und höher   | Installation eines Z-Moduls ist notwendig.                           |
+| **BW Cube**   | Rel. BW 3.1 und höher | keine                                                               |
+| **Hierarchy** | Rel. BW 3.1 und höher | keine                                                               |
+| **OHS**       | Rel. BW 3.5 und höher | Customizing                                                        |
+| **DeltaQ**    | Rel. 4.6A und höher  | Customizing                                                         |
 
 Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel [SAP Customizing](https://help.theobald-software.com/de/xtract-universal/sap-customizing)
 
 **Ports**
 
 Folgende Ports müssen abhängig vom SAP-System offen sein,
-wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99). <br>
+wobei *nn* die Instanznummer des SAP Systems ist (z.B. 00 oder 99). <br>
 
-- SAP Application Server: Port 33nn
-- SAP Message Server (Load Balancing): Port 36nn
-- Secure Communication Network (SCN): Port 48nn
+- SAP Application Server: Port 33*nn*
+- SAP Message Server (Load Balancing): Port 36*nn*
+- Secure Communication Network (SCN): Port 48*nn*
 - SAP Router: Port 3399
 
 **Sicherheitseinstellungen** <br> 	
@@ -51,12 +51,13 @@ wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99). <br>
 
 
 **SAP-Lizenzen** <br>
+
 Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich sein. Bitte dazu SAP kontaktieren.
 
 {% include _content/de/operating-systems.md %}
 
 **Andere Anwendungen und Frameworks** <br> 	
-- .NET Framework 4.5.2 oder höher. Das Famework können Sie von der Microsoft-Webseite herunterladen.
+- .NET Framework 4.5.2 oder höher. Das Famework können Sie von der [Microsoft-Webseite](https://www.microsoft.com/de-de/download/developer-tools.aspx) herunterladen.
 
 **Hardware Anforderungen**
  	
@@ -70,7 +71,6 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 - **Arbeitsspeicher** <br>
 		Minimum: 8 GB, Empfohlen: 12 GB oder mehr abhängig vom Datenvolumen.<br>
 		Der Verbrauch des Arbeitsspeichers hängt von vielen Faktoren ab, u.a. vom Komponententyp, Anzahl der Spalten und Anzahl der Zeilen pro Paket (d.h. package size). Z.B. benötigt die BW Cube Komponente im Vergleich mehr Speicher als die Table-Komponente. <br>
-		
 
 - **Festplattenspeicher** <br>
 		Für die Installation werden 150 MB Festplattenspeicher benötigt. 
@@ -78,6 +78,5 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 **32/64-Bit Umgebung** <br> 	
 - Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
 
-
 **Zielumgebungen (Destinations)** <br>
-- Für eine Zielumgebung kann die Installation einer entsprechenden Bibliothek nötig sein. Weitere Informationen finden Sie auf der jeweiligen Seite **Voraussetzungen** der Zielumgebung.
+- Für eine Zielumgebung kann die Installation einer entsprechenden Bibliothek nötig sein. Weitere Informationen finden Sie auf der jeweiligen Seite *Voraussetzungen* der Zielumgebung.
