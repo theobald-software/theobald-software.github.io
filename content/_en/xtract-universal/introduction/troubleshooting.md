@@ -28,6 +28,6 @@ To configure the service to use an user account, do the following steps:
 2. Double-click Services.
 ![XU-Setup](/img/content/windows_services.png){:class="img-responsive"}
 3. Right-click the service, and then click Properties.
-![XU-Setup](/img/content/properties_service.png"){:class="img-responsive"}
+![XU-Setup](/img/content/properties_service.png){:class="img-responsive"}
 4. On the Log On tab, change the account, and then click Apply.
 ![XU-Setup](/img/content/log-on-settings-services.png){:class="img-responsive"}
