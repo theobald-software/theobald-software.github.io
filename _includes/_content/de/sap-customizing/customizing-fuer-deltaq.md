@@ -63,4 +63,4 @@ In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc
 
 Ändern Sie in der Transaktion SMQS den Parameter Max.Verb. auf den Wert 10. Erhöhen Sie diesen Wert, wenn Sie mehrere DeltaQ-Extraktionen auf derselben RFC Destination parallel ausführen.
 
-Bei Fehlern bitte im [DeltaQ Troubleshooting Guide](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/4/deltaq-troubleshooting-guide) (Englisch) nachschlagen.
+Bei Fehlern bitte im [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide) (Englisch) nachschlagen.

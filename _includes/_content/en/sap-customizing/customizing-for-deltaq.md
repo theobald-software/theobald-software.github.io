@@ -58,4 +58,4 @@ Refer to our [knowledge base](https://kb.theobald-software.com/sap/registering-r
 Go to SAP transaction SMQS. Change the Max.Conn. parameter to 10. Increase this value when running several DeltaQ extractions in parallel on the same RFC destination.
 
 
-For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/4/deltaq-troubleshooting-guide) .              
+For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide).              
