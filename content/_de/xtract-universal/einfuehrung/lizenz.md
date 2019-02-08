@@ -21,7 +21,8 @@ Im Menü des Xtract Designers können Sie unter *Help -> Info* die Lizenz-Detail
 
 **Lizenz einspielen** 
 
-Wenn Sie das Produkt erworben haben, bekommen Sie eine Lizenzdatei zugesendet. Ab Xtract Universal Version 2.99.0 werden die Lizenzdateien im Textformat als json-Dateien ausgeliefert. Davor wurden die Dateien als .dlls ausgeliefert.
+Wenn Sie das Produkt erworben haben, bekommen Sie eine Lizenzdatei zugesendet. Ab Xtract Universal Version 2.99.0 werden die Lizenzdateien <br>
+im Textformat als json-Dateien ausgeliefert. Davor wurden die Dateien als .dlls ausgeliefert.
 
 - Legen Sie die Lizenzdatei ins Programm-Verzeichnis des Servers ab, auf dem der Xtract Universal Server läuft 
   (standardmäßig C:\Program Files\XtractUniversal). 

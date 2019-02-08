@@ -43,7 +43,7 @@ A newer version can simply be installed over the old version. All settings and c
 
 It is recommended to run a test on a non-productive environment and backup the complete program directory or at least the *config* subdirectory before reinstalling. 
 
-Backup **Backup**
+**Backup**
 
 All settings for extractions, sources, destinations, etc. are stored in the subdirectory *config*. It is recommended to make a backup of this directory at regular intervals. 
 
