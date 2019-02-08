@@ -13,59 +13,33 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=table-settings
 
 Use the Settings link in the editor to open the Settings dialog as shown in the picture below.
 
-![XIS_Table_Settings](/img/content/XIS_Table_Settings.jpg){:class="img-responsive" width="600px" }
+![XIS_Table_Settings](/img/content/settings_xis.png){:class="img-responsive"}
 
 **Max Rows**<br>
-Maximum numbers of rows to be extracted. 0 is unlimited.
+Specifies the maximum number of extracted records. The value 0 stands for unlimited.
 
 **Package Size**<br>
-The number of rows that are extracted with one single RFC call. If you want to download more than 20,000 data rows, please set this parameter to a value between 15,000 and 50,000 to avoid timeouts.
+Specifies the number of records to be sent per packet. Which values are optimal in your case depends on your infrastructure. Experience shows that a package size between 15000 and 50000 makes sense for very large amounts of data. The value 0 means that there is no packaging. This can lead to an RFC timeout for large data extracts.
 
 **Custom Function**<br>
-Name of the custom function that should be used to extract Tables and Views and avoid SAP restrictions.
-In General it should be Z_XTRACT_IS_TABLE_COMPRESSION, which is the successor of the custom function Z_XTRACT_IS_TABLE. 
-If you use the function module Z_XTRACT_IS_TABLE_COMPRESSION then check the option Data Compression. 
-If you use the function module Z_XTRACT_IS_TABLE then check the option Use Custom Function. 
-
-**Use Custom Function (deprecated)**<br>
-Check this field if the function module Z_XTRACT_IS_TABLE is set in the field Custom Function and should be used to extract data.
-
-**Data Compression**<br>
-Check this field if the field Custom Function is set to Z_XTRACT_IS_TABLE_COMPRESSION.
-Uses compression with the custom function module for the extraction of the SAP data.
-
-**Use Field Exits**<br>
-defines wether the conversion routines should be used. 
-Typical examples are the language key (e.g. D in the database, but DE after conversion) 
-or the project number (e.g. T000012738GT in the database, but T/12738/GT after conversion).
-After conversion, the value is always displayed, as it would appear in the SAP GUI.
-This option is only supported with the function module Z_XTRACT_IS_TABLE_COMPRESSION.
-
+The name of the customer-specific function - *customs function*. <br>
+The function module Z_THEO_READ_TABLE is used as standard. <br>
+Depending on the SAP releases, changes or enhancements are made to the underlying syntax, so you should always use the latest version of this module.
+You can view the current versions of Xtract IS and our customer-specific function [here](https://kb.theobald-software.com/version-history/xtract-is-version-history).<br>
+ 
 **Automatic String Conversion**<br>
-All strings are converted into VarChar strings if the source system is non-Unicode, and all strings are converted into NVarChar if the source system is Unicode.
+means that the data source converts all strings to NVarChar if SAP is a Unicode system and to VarChar if SAP is not a Unicode system.
 
 **Convert Strings to VarChar**<br>
-All strings are converted to VarChar regardless if the source system is Unicode or not.
+means that the data source converts all strings to VarChar.
 
 **Convert Strings to NVarChar**<br>
-All strings are converted to NVarChar regardless if the source system is Unicode or not.
+means that the data source converts all strings to NVarChar.
+ 
+**Automatic Date Conversion**<br>
+Converts an SAP date (YYYYMMDD) to an SQL date. If an SAP date cannot be converted to a valid SQL date, a default date value must be entered in the text box. Each invalid value is then converted to the date entered. NULL is supported as a value. The SAP date '00000000' is always converted to NULL, in contrast to the date entered.
 
-**Activate Extraction for non-Unicode / Multibyte Extraction**<br>
-Activate the extraction for non-Unicode and multibyte extractions. Only necessary if the SAP system is a non unicode system with complex code pages (e.g. traditional Chinese).
+**Used Field Exits**<br>
+Defines whether the conversion routines stored in the Data Dictionary are used for the respective fields. Typical examples are the language key (for example, D in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). After the conversion, the value is always displayed as it would appear in a transaction in the SAP GUI. <br>
+This option is only supported in conjunction with the "Data Compression" option.
 
-**Automatic Date conversion**<br>
-Converts the values of an SAP date formated value into a SQL formatted (YYYYMMDD) date value. In case of no convertible date values you have to enter a default date value into the text box. Every invalid value will be converted into this value. NULL is supported as value. 
-The SAP value '00000000' will always convert to NULL.
-            
-**Use Primary Keys for Packaging (obsolete)**<br>
-This feature can be activated if the result set is likely to change during the time of extraction. When activated the packaging is done with the primary key of the data instead using ordinal numbers. This prevents rows from being extracted twice in different packages in case additional data is added to the table during extraction.
-This feature was to use earlier with the function module Z_XTRACT_IS_TABLE but becomes no more necessary with the new function module Z_XTRACT_IS_TABLE_COMPRESSION. 
-
-**Activate Background Extraction (obsolete)**<br>
-This options activates Background Extraction.
-
-**OHS Request ID (obsolete)**<br>
-Contains the RequestID for OHS extraction (SSIS variables are also allowed).
-
-**Activate OHS Extension (obsolete)**<br>
-Activates an extraction mode that allows a high speed extraction from Open Hub Services tables (SAP BI).
