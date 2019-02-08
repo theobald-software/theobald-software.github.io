@@ -24,7 +24,17 @@ Statt der URL ACL kann es auch ein Administrator-Account sein.
 
 Um dem Dienst ein Benutzerkonto zuzuweisen, gehen Sie wie folgt vor:
 
-1. Klicken Sie auf Start -> Systemsteuerung -> Verwaltung.
-2. Doppelklicken Sie auf Dienste.
+1. Klicken Sie auf Start -> Systemsteuerung -> Verwaltung
+
+2. Doppelklicken Sie auf Dienste
+
+![XU-Setup](/img/content/windows-dienste.png){:class="img-responsive"}
+
 3. Klicken Sie mit der rechten Maustaste auf den Dienst und wählen Sie Eigenschaft.
+
+![XU-Setup](/img/content/xtract_dienst allgemein.png){:class="img-responsive"}
+
 4. Im Reiter Log On, ändern Sie das Benutzerkonto und klicken Sie auf Anwenden.
+
+![XU-Setup](/img/content/xtract_dienst_anmelden.png){:class="img-responsive"}
+
