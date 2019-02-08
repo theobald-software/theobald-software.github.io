@@ -13,7 +13,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=erweiterte-table-eigenschaften
 
 Es können noch weitere Parameter in dem Tabellenextrakt definiert werden. Klicken Sie dazu auf den Settings-Link im Editor. Das folgende Fenster öffnet sich:
 
-![XIS_Table_Settings](/img/content/settings_xis.png){:class="img-responsive"}
+![XIS_Table_Settings](/img/content/settings_xtractis_table.png){:class="img-responsive"}
 
 **Max Rows**<br>
 Gibt die maximale Anzahl der extrahierten Datensätze an. Der Wert 0 steht für unlimitiert.
@@ -23,7 +23,7 @@ Gibt die Anzahl der Datensätze an, die pro Paket geschickt werden werden. Welch
 
 **Custom Function**<br>
 Der Name der kundeneigenen Funktion - *customs function*. <br>
-Es wird stanmdardmäßig der Funktionsbaustein Z_THEO_READ_TABLE verwendet. <br>
+Es wird standardmäßig der Funktionsbaustein Z_THEO_READ_TABLE verwendet. <br>
 Da es, abhänhig von den Releases von SAP, zu Veränderungen oder Erweiterungen der zugrunde liegende Syntax kommt, ist stets darauf zu achten die aktuellte Version dieses Bausteins zu verwenden.
 Die aktuellen Versionen von Xtract IS und unserer kundeneigenen Funktion sind [hier](https://kb.theobald-software.com/version-history/xtract-is-version-history) einzusehen.<br>
  
