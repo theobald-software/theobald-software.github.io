@@ -9,7 +9,9 @@ Falls Sie dies nicht selber machen können, bitten Sie einen Kollegen aus Ihrer 
 
 ![Report-Custom-Function-04](/img/content/Report-Custom-Function-04.jpg){:class="img-responsive"}
 
-Den Quellcode kopieren Sie bitte per Strg+C und Strg+V aus der Datei Z_XTRACT_IS_REMOTE_REPORT.txt in den Code-Editor (Reiter  Source Code). Diese Datei finden Sie im Xtract-Installationsverzeichnis. Alternativ können Sie auch den Quellcode [herunterladen]().<br>
+Den Quellcode kopieren Sie bitte per Strg+C und Strg+V aus der Datei Z_XTRACT_IS_REMOTE_REPORT.txt in den Code-Editor (Reiter  Source Code). 
+Diese Datei finden Sie im Xtract-Installationsverzeichnis. <br>
+
 Sichern Sie den Baustein und aktivieren Sie ihn. Nun ist er für die Benutzung bereit.<br>
 Im Code sind die einzelnen Schritte (Programmausführung, Spoolabruf, Job-Überwachung usw...) entsprechend dokumentiert. So kann der geneigte Leser leicht herausfinden, wie der ABAP Code funktioniert. 
 
@@ -18,7 +20,6 @@ Im Code sind die einzelnen Schritte (Programmausführung, Spoolabruf, Job-Überw
 **LIST_OUTPUT**
 
 Anstatt den SAP Standard Datentyp TAB512 für den LIST_OUTPUT Tabellen Parameter zu verwenden, können Sie einen eigenen Z-Datentyp erstellen. Das ist notwendig sofern die Output Länge einer Report-Zeile mehr als 512 Zeichen beträgt. Die maximal mögliche Länge beträgt 1023 Zeichen.
-
 
 ![SAPCust-Report-ListOutput](/img/content/SAPCust-Report-ListOutput.jpg){:class="img-responsive"}
 
