@@ -10,7 +10,7 @@ weight: 3
 lang: en_GB
 ---
 
-New web service operations are created under *Operations*. Access to the SAP system is configured in the web service operation. For details on creating a new web service, see [here](../create_a_new_webservice).
+New web service operations are created under *Operations*. Access to the SAP system is configured in the web service operation. For details on creating a new web service, see [here](../../../create_a_new_webservice).
 
 The following options are available:
 
