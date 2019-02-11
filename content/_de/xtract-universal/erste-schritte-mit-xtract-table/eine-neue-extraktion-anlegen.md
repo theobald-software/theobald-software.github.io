@@ -51,7 +51,7 @@ Anschließend klicken Sie auf *Test Connection*, um die erfolgreiche Verbindung 
 
 Die SAP-Verbindung ist nun erfolgreich eingerichtet. 
 
-![XU-Create-Connection-4](/img/content/XU-Create-Connection-4.jpg){:class="img-responsive"}
+![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
 
 **Extraktion anlegen**
 
