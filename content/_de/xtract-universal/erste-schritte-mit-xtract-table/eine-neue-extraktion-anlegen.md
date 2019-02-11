@@ -76,9 +76,9 @@ Wie Sie erkennen können, ist die Eingabe einer Wildcard (*) ebenfalls in der Su
 ![Look-Up-Table](/img/content/xu_tabelle_auswählen.png){:class="img-responsive"}
 
 Die Anwendung kehrt nun zurück zum Hauptdialog. Die Spalten der Tabelle wurden aus dem SAP abgerufen und können durch Anklicken für die Extraktion gewählt werden <br>
-(nicht gewählte Spalten werden auch nicht extrahiert).
+Dabei ist es möglich über *Select All* oder *Select None* alle in der Tabelle verfügbareren Spalten an- oder abzuwählen oder einzeln die zu extrahierenden Spalten anzuwählen.
 
-![Table-Form](/img/content/Table-Form.jpg){:class="img-responsive"}
+![Table-Form](/img/content/xu_felder_auswählen_where_bedingung.png){:class="img-responsive"}
 
 In das Textfeld können noch WHERE-Bedingungen angegeben werden. Diese müssen dem von SAP vorgegebenen Standard für OpenSQL entsprechen.
 
