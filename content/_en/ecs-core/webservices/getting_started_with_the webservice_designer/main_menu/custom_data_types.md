@@ -37,7 +37,7 @@ Change the sort order of the listed custom data types.
 **Sort custom data types alphabetically** <br>
 Alphabetically sort the custom data types. 
 
-For detailed information on how to create and use *Custom Data Types* take a look [here](./create_custom_data_type).
+For detailed information on how to create and use *Custom Data Types* take a look [here](../../create_a_new_webservice/create_custom_data_type).
 
        
 

@@ -10,7 +10,7 @@ weight: 2
 lang: en_GB
 ---
 
-Nintex Workflow Cloud supports the import of OpenAPI definitions as custom connectors. The WebService Designer allows the export of REST services to OpenAPI definitions. The procedure for creating OpenAPI definitions is described in the [following](../.../webservices/openapi_definitions) chapter.  
+Nintex Workflow Cloud supports the import of OpenAPI definitions as custom connectors. The WebService Designer allows the export of REST services to OpenAPI definitions. The procedure for creating OpenAPI definitions is described in the [following](../../webservices/openapi_definitions) chapter.  
 
 To continue with the example, export the previously created web service to the PReq creation in an OpenAPI definition.
 

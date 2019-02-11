@@ -13,6 +13,4 @@ lang: en_GB
 
 The following chapters will give you an introduction to how the WebService Designer works.
 
-The basics for creating web services with WebService Designer are described in detail in our OnlineHelp under [Getting Started with WebService Designer](../webservices/first_steps_with_the webservice_designer) and apply equally to web services for SharePoint on-premise and cloud applications.  
-
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
