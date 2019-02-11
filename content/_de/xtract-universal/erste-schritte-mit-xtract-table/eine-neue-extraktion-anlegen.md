@@ -32,7 +32,7 @@ Klicken Sie auf **Add**.
 Geben Sie den frei wählbaren Verbindungsnamen ins Feld **Name** ein. Anschließend müssen die SAP-Verbindungsdetails eingegeben werden. <br>
 
 Folgende Parameter müssen gesetzt werden: <br>
-- Mandant (Clinet)
+- Mandant (Client)
 - Sprache (Language)
 - Benutzer (User) und 
 - Passwort (Password). <br>

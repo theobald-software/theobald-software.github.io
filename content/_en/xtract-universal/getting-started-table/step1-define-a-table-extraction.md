@@ -11,75 +11,76 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-table-extraction
 ---
 
-After successfully establishing a [connection to the server](./step0-connect-designer-with-server), the buttons to create and configure extractions are enabled. The list shows all the extractions, which have already been created on the server.
+After starting the Designer, the Designer must first be connected to a server and thus to an extraction repository. In the case of a local Xtract server, the address is the localhost (as in the screenshot), or a different network address, depending on where the server component is running. The default port 8082 may differ depending on the configuration. If the server is running on a different machine than the Designer, make sure that the port is not blocked by your firewall. Click Connect to connect to the server. 
 
-![XU3_Designer](/img/content/XU3_Designer.jpg){:class="img-responsive"}
+![Designer](/img/content/xu_connect_screen.png){:class="img-responsive"}
 
-**Step A: Create SAP Source Connection**
+After the successful connection the buttons for the new creation and the manipulation of extractions are active. The list at the bottom of the screen is filled with all extractions that have already been created on the server.
 
-Select the menu **Server -> Manage Sources.**
+![Designer](/img/content/xu_3.x_initial_screen.png){:class="img-responsive"}
 
-![XU-Create-Connection-1](/img/content/XU-Create-Connection-1.jpg){:class="img-responsive"}
+**Create SAP connection**
 
-Click **Add**.
+Select the menu item **Server -> Manage Sources**.
 
-![XU-Create-Connection-2](/img/content/XU-Create-Connection-2.jpg){:class="img-responsive"}
+![XU-Create-Connection-1](/img/content/server_manage_sources.png){:class="img-responsive"}
 
-Set the connection name in the **Name** field.<br>
-Set the SAP connection details.<br>
-The form must be filled in as shown below. <br>
-Please fill in the text boxes with the logon data (Client, Language, User, Password). <br>
-To log on to a single application host, fill in the fields Host and System Number. <br>
-To log on by load-balancing the message server field, the logon group and SID must be filled in. <br>
-If you do not know what these parameters in your SAP system environment are, please ask your SAP Basis Components department for help. <br>
+Click on **Add**.
 
-![XU-Create-Connection-3-A](/img/content/XU-Create-Connection-3-A.jpg){:class="img-responsive"}
+![XU-Create-Connection-2](/img/content/xu_manage_sources.png){:class="img-responsive"}
 
-If everything is filled in correctly, try to establish a connection to SAP by clicking the **Test Connection** button.
+Enter the freely selectable connection name in the **Name** field. The SAP connection details must then be entered. <br>
 
-![XU-Create-Connection-3](/img/content/XU-Create-Connection-3.jpg){:class="img-responsive"}
+The following parameters must be set: <br>
+- Client (Client)
+- Language (Language)
+- User (User) and 
+- Password (Password). <br>
 
-The SAP Source connection is successfully created. 
+If you want to connect to a single application server, fill the Host and System Number fields. <br>
 
-![XU-Create-Connection-4](/img/content/XU-Create-Connection-4.jpg){:class="img-responsive"}
+If you want to connect to a message server using load balancing, fill the Message Server , Group, and SID fields. <br>
 
-**Step B: Create SAP Extraction**
+If you do not know the parameters, look in your SAP GUI or ask your SAP Basis. 
 
-Click *New* to define a new extraction and select the SAP source connection.
+![XU-Create-Connection-3-A](/img/content/xu_source_details.png){:class="img-responsive"}
 
-![Add-Extraction-01](/img/content/Add-Extraction-01.jpg){:class="img-responsive"}
+Then click on *Test Connection* to test the successful connection. 
 
-Enter a unique name. Select the extraction type SAP Table or View to extract data from an SAP table. 
-and click OK.
+![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"}
 
-![Add-Extraction](/img/content/Add-Extraction.jpg){:class="img-responsive"}
+The SAP connection has now been set up successfully. 
 
-Now the Table window opens. Click the binocular button to open a dialog for selecting a table.
+![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
 
-![New-Table-Extraction](/img/content/New-Table-Extraction.jpg){:class="img-responsive"}
+**Create Extraction**
 
-Enter the name of the table (wildcards like * are supported) and click the binocular button again to invoke the search.
+Click *New* to create a new extraction.
 
-![Look-Up-Table](/img/content/Look-Up-Table.png){:class="img-responsive"}
+![Create-New-Table-Extraction](/img/content/xu_extraction_create.png){:class="img-responsive"}
 
-The editor is now filled in with all the columns from the table. The columns must be marked in the checkbox before they can be extracted.
+Choose the SAP connection you created previously and give the extraction a unique name.
 
-![Table-Form](/img/content/Table-Form.jpg){:class="img-responsive"}
+Then define the type of extraction. In our case, we want to extract a *table* from SAP. 
 
-To define an optional WHERE statement, please fill in the multi-line text box below the grid. The statement must be conform to the OpenSQL Standard. Please remember that it is necessary to put blanks between the values and the operators.
+![Add-Extraction](/img/content/xu_tables_extraction_create.png){:class="img-responsive"}
 
-Click *OK* to save the extraction to the repository of the Xtract Server. 
+Now the empty table dialog opens. Click on the *Search* button to search for a table.
 
-**Step C: Define the  extraction destination** 
+![New-Table-Extraction](/img/content/xu_tabelle_suchen.png){:class="img-responsive"}
 
-After the extraction has been created, we have to define the destination, where the SAP data should be loaded to. 
-In this scenario we use the default destination http-csv, the extraction data can be requested via http and is delivered in csv format. 
+In the search dialog enter the name of the table to be extracted, click on the *Search* button, select the desired table and confirm with *OK*.
 
-![XU-Step-01-Destination](/img/content/XU-Step-01-Destination.jpg){:class="img-responsive"}
+As you can see, you can also enter a wildcard (*) in the search bar.
 
-Click on Destination to check the extraction-specific settings. 
+![Look-Up-Table](/img/content/xu_tabelle_auswählen.png){:class="img-responsive"}
 
-![XU-Step-01-Destination-02](/img/content/XU-Step-01-Destination-02.jpg){:class="img-responsive"}
+The application now returns to the main dialog. The columns of the table were retrieved from SAP and can be selected for extraction by clicking <br>.
+It is possible to select or deselect all columns available in the table via *Select All* or *Select None* or to select the columns to be extracted individually.
 
+![Table-Form](/img/content/xu_felder_auswählen_where_bedingung.png){:class="img-responsive"}
 
+WHERE conditions can still be specified in the text field. These must correspond to the standard for OpenSQL specified by SAP.
+
+Confirm with OK to save the extraction in the repository, i.e. on the server.
 
