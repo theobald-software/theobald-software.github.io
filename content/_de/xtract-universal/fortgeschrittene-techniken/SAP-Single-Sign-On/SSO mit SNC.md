@@ -4,7 +4,7 @@ layout: page
 title: SSO und SNC
 description: SSO und SNC
 product: xtract-universal
-parent: SAP Single Sign On
+parent: SAP-Single-Sign-On
 permalink: /:collection/:path
 weight: 7
 lang: de_DE
