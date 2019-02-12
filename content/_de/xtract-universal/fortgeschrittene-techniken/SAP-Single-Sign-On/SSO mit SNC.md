@@ -1,14 +1,14 @@
 ---
-ref: xu-advanced-techniques-06
+ref: xu-advanced-techniques-07
 layout: page
 title: SSO und SNC
 description: SSO und SNC
 product: xtract-universal
-parent: fortgeschrittene-techniken
+parent: SAP-Single-Sign-On
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=sso-und-snc
+old_url: 
 ---
 
 Eine SAP-Verbindung ist über Single-Sign-On (SSO) mit Secure Network Communication (SNC) möglich. Für den SNC-Mechanismus empfehlen wir die Nutzung der Kerberos Wrapper Library, s. unten. 
