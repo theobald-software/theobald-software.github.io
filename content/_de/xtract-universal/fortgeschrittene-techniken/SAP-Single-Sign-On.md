@@ -5,6 +5,7 @@ title: SAP Single Sign On
 description: SAP Single Sign On
 product: xtract-universal
 parent: fortgeschrittene-techniken
+childidentifier: SAP-Single-Sign-On
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
