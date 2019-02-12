@@ -14,7 +14,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=installation1
 Follow the [instructions](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup) on how to set up 3rd party extensibility for Azure-SSIS IR. Only the part with setting up an Azure storage container and creating a Shared Access Signature is relevant.
 
 Download, unzip and place *Xtract IS for Azure* setup in the storage container created previously.
-The setup consists of 2 files: XtractISSetup.exe (downloadable from our website or customer portal) and [main.cmd](https://files.theobald-software.com/download/XtractIS/main.cmd). 
+The setup consists of 2 files: XtractISSetup.exe (downloadable from our website or customer portal) and [main.cmd](https://cdn-files.theobald-software.com/download/XtractIS/main.cmd). 
 
 ![XISforAzure_StorageContainer](/img/content/XISforAzure_StorageContainer.jpg){:class="img-responsive" }
 
