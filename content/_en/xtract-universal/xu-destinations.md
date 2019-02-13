@@ -30,8 +30,8 @@ Xtract Universal allows to extract data from SAP ERP and BW systems and to load 
 
 **Business Intelligence / Analytics Tools:**<br>
 - [Microstrategy](./xu-destinations/microstrategy)
-- [Power BI (Cloud) / Power BI Desktop](./xu-destinations/powerbi-cloud) 
-- [Power Pivot using OData, see Power BI (Desktop)](./xu-destinations/powerbi-desktop) 
+- [Power BI (Cloud)](./xu-destinations/powerbi-cloud) 
+- [Power BI Desktop using OData, Power Pivot & Excel](./xu-destinations/powerbi-desktop) 
 - [Tableau](./xu-destinations/tableau) 
 - [Qlik (QlikSense and QlikView)](./xu-destinations/qliksense-qlikview) 
 - [Good Data](./xu-destinations/gooddata) 
@@ -56,11 +56,14 @@ Xtract Universal allows to extract data from SAP ERP and BW systems and to load 
             
 **Pull and Push Destinations**
 
-The destinations are divided into two categories, depending on where the extraction process is started.  
+Two types of destinations is supported, depending on where the extraction process is started.  
 
 **Pull Destinations**
 
-Pull destinations provide the data on request. The extraction process is started by the destination product environment.
+Extractions with pull destinations provide the data on request. The extraction process is started by the destination product environment. <br>
+An extraction with  pull Destination supports the pass-through of data. When a consumer (e.g. a Self Service BI Tool) requests the data, 
+Xtract Universal translates the request into a query for the underlying SAP system, retrieves the data directly from the source system and delivers that to the consumer.
+
 These include the following destinations: 
 
 - CSV (via HTTP)
@@ -72,6 +75,8 @@ If the destination supports the gzip http data compression, Xtract Universal wil
            
 
 **Push Destinations**<br>
-All remaining Destinations are Push Destinations, that provide the data to the destination environment proactively. The extraction process is started in Xtract Universal, e.g. from a scheduled extraction.  
+Extractions with push destinations provide the data to the destination environment proactively. The extraction process is started in Xtract Universal, e.g. from a scheduled extraction. <br>
+An extraction with push destinations involves the extracting of data from the SAP source systems and once loaded into the destination, data can be processed further. E.g. it can be transformed to an optimized form ready for analytic query workloads.
+
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
