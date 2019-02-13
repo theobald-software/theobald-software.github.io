@@ -13,14 +13,14 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=tj-einstellungen
 
 Klicken Sie auf den Settings-Link im Editor. Das folgende Fenster öffnet sich:
 
-![tj-xis-settings](/img/content/tj-xis-settings.jpg){:class="img-responsive"}
+![tj-xis-settings](/img/content/xtract_is_table_join_preferences.png){:class="img-responsive"}
 
 
 **Max Rows** <br>
-Gibt die maximale Anzahl der extrahierten Datensätze an. 0 steht für unlimitiert.
+Gibt die maximale Anzahl der extrahierten Datensätze an. In diesem Fall steht der Wert 0 für unbegrenzte Anzahl.
 
 **Package Size** <br>
-Gibt die Anzahl der Datensätze an, die pro Paket geschickt werden werden. Welche Werte in Ihrem Fall optimal sind, hängt von Ihrer Infrastruktur ab. Erfahrungsgemäß ist bei sehr großen Datenmengen eine Package Size zwischen 15000 und 50000 sinnvoll. 0 bedeutet, es findet keine Paketierung statt. Dies kann bei großen Datenextrakten zu einem RFC-Timeout führen.
+Gibt die Anzahl der Datensätze an, die pro Paket geschickt werden. Welche Werte in Ihrem Fall optimal sind, hängt von Ihrer Infrastruktur ab. Erfahrungsgemäß ist bei sehr großen Datenmengen eine Package Size zwischen 15000 und 50000 sinnvoll. Der Wert 0 bedeutet, es findet keine Paketierung statt. Dies kann bei großen Datenextrakten zu einem RFC-Timeout führen.
 
 **Custom Function** <br>
 Der Name des Z-Funktionsbausteins. 

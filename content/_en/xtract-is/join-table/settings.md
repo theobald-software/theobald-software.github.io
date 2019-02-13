@@ -13,10 +13,10 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=tablejoin-settings
 
 Use the *Settings* link in the editor to open the Settings dialog as shown in the picture below.
 
-![tj-xis-settings](/img/content/tj-xis-settings.jpg){:class="img-responsive" width="400px" }
+![tj-xis-settings](/img/content/xtract_is_table_join_preferences.png){:class="img-responsive"}
  
 **Max Rows**<br>
-Maximum numbers of rows to be extracted. 0 is unlimited.
+Maximum numbers of rows to be extracted. The value 0 means unlimited amount of rows.
 
 **Package Size**<br>
 The number of rows that are extracted with one single RFC call. If you want to download more than 20,000 data rows, please set this parameter to a value between 15,000 and 50,000 to avoid timeouts.

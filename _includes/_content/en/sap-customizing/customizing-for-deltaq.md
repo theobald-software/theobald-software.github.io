@@ -48,7 +48,7 @@ Launch the RSAS_RBWBCRL_STORE module as shown below. Its purpose is to activate 
 
 **Step 6**
 
-Refer to our [knowledge base](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/100/0/registering-rfc-server-in-sap-releases-above-kernel-release-720) for registering the RFC Server in SAP
+Refer to our [knowledge base](https://kb.theobald-software.com/sap/registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher) for registering the RFC Server in SAP
 
 **Caution:** Step 6 is for SAP Kernel Release 720 or higher.
 
@@ -58,4 +58,4 @@ Refer to our [knowledge base](https://my.theobald-software.com/index.php?/Knowle
 Go to SAP transaction SMQS. Change the Max.Conn. parameter to 10. Increase this value when running several DeltaQ extractions in parallel on the same RFC destination.
 
 
-For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/4/deltaq-troubleshooting-guide) .              
+For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide).              

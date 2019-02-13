@@ -25,17 +25,19 @@ Select a field from the list that contains the names of the tcrables and the fil
 ![tj-where-2](/img/content/tj-where-2.jpg){:class="img-responsive" width="150px"}
 
 Select an operator from the list: <br> 
-EQ: equal<br>
-NE: not equal<br>
-LT: less than<br>
-LE: less or equal than<br>
-GT: greater than<br>
-GE: greater or equal than<br>
-LIKE: find a string fitting the value.  <br>
-        WHERE MAKT~SPRAS LIKE 'D%' find all languages that start with the letter 'D'. <br>
-NOT LIKE: Negation of LIKE.<br>
-IS NULL: Is NULL<br>
-IS NOT NULL: Ist not NULL.<br>
+
+| **operator** | **description** |  
+|-------|------------------------|
+| EQ     | equal |      
+| NE      | not equal    |                                                              
+| LT     | less than    | 
+| LE   | less or equal than| 
+| GT   | greater than| 
+| GE | greater or equal than     |
+| LIKE | find a string fitting the value - e.g.: WHERE MAKT~SPRAS LIKE 'D%' find all languages that start with the letter 'D'|
+| NOT LIKE | negation of LIKE
+| IS NULL | is *NULL*
+| IS NOT NULL | is not *NULL* |
 
 ![tj-where-operation](/img/content/tj-where-operation.jpg){:class="img-responsive" width="100px"}
 

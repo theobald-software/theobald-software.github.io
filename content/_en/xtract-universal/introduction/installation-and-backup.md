@@ -11,35 +11,43 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 ---
 
-The installer is an industry-standard installation routine that copies all necessary files into the program directory 
-and creates a menu item for Xtract Universal with a few shortcuts.
-Please make sure, you have .NET framework 4.5.2 or higher installed on your system, prior to executing the Xtract Universal setup.
-The setup will display a warning and quit if this framework is not installed. You will be redirected to the framework's download page.
+The installation program *XtractUniversalSetup.exe* is an industry standard installation routine that does nothing but copy all necessary files into the program directory and create a group with some shortcuts in the Windows program menu.
+The setup installs the Visual C++ 2015 and 2013 runtime libraries. 
 
-During the setup, you can check optional components to be installed or actions to be performed.
+Please make sure that the .NET Framework 4.5.2 or higher is installed on your computer. If this is not the case, a warning will appear and the setup will be terminated. 
+You will be redirected to the download page of the framework.
+
+During setup, optional components can be selected for installation:
 
 ![XU-Setup](/img/content/XU-Setup.jpg){:class="img-responsive"}
 
-In the installation folder you would find the following executables:
+**XtractDesigner.exe** 
 
-**XtractDesigner.exe**<br> 
-Starts the Xtract Universal Designer. This is the UI you use, for creating extractions, test extractions, monitor extractions, etc..
+Launches Xtract Universal Designer to create, test and monitor extraction.
 
-**XtractService.exe**<br> 
-Is the Xtract Server that can be started as a Windows service. Usually, you don't need to start this service manually. It will be installed as a Windows Service with the XU setup and will be automatically started on OS boot. Runs in the background.
+**XtractService.exe**
 
-**XtractConsole.exe**<br>
-Is the Xtract server that can be started as a console program. This file is meant for internal purposes only.
-Please don't use! (If you do, the XtractService might not start. In this case, end the XtractConsole process in the Windows Task Manager)
+The server that is installed and started by default as a Windows service. Usually the service does not have to be started manually. 
 
+The service is installed during setup and starts when the operating system is booted. The service runs in the background.
 
-**New Installation and Update**<br>
-A newer version can be installed without uninstalling the older version. All settings and created objects (extractions, connections etc.) remain. 
+**XtractConsole.exe**
 
-Before installing a new version, we recommend testing on a non-production environment and creating a *backup of the installation directory* or of the config subdirectory. 
+Is the Xtract server that can be started as a console program for test purposes. For internal use only. Please do not use it!
 
-**Backup**<br>
-All settings related to extraction, source, destination, etc. are stored in the *config* subdirectory. We recommend regular backups of this folder. This allows you to easily revert to the previous version of Xtract Universal if needed.
+The subdirectory *config* is created automatically with the first extraction and contains all extractions as well as the corresponding log files. 
+
+**New Installation and Update**
+
+A newer version can simply be installed over the old version. All settings and created objects are preserved. 
+
+It is recommended to run a test on a non-productive environment and backup the complete program directory or at least the *config* subdirectory before reinstalling. 
+
+**Backup**
+
+All settings for extractions, sources, destinations, etc. are stored in the subdirectory *config*. It is recommended to make a backup of this directory at regular intervals. 
+
+This allows you to easily switch back to the previous version of Xtract Universal.
 
 **Version History**<br>
-A list of the versions can be found in the [version history](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/86/52/xtract-universal-version-history).
+A list of the versions can be found in the [version history](https://kb.theobald-software.com/version-history/xtract-universal-version-history).

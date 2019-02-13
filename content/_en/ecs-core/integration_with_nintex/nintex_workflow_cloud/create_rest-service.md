@@ -12,4 +12,4 @@ lang: en_GB
 
 The first step for the SAP integration with the Nintex Workflow Cloud is the creation of a REST Webservice with the [WebService Designer](../../webservices). 
 
-For the scenario described in the following chapters, we use the example for creating purchase requisitions in SAP. The creation of the corresponding Web service is described [here](../.../webservices/ecsc-rest-webservices). 
+For the scenario described in the following chapters, we use the example for creating purchase requisitions in SAP. The creation of the corresponding Web service is described [here](../../webservices/example_rest_webservice_preq). 

@@ -22,22 +22,25 @@ Click the binocular button to open a dialog for selecting a table. Enter the nam
 
 The editor is now filled with all columns from the table. The columns must be marked in the checkbox before they can be extracted.
 
-![Table-03](/img/content/Table-03.png){:class="img-responsive" width="800px" }
+![Table-03](/img/content/define_data_source_XIS_table.png){:class="img-responsive"}
 
-After choosing at least one column to extract, you can click the preview button.
+To filter the result, you can use a large text field to define a where condition. 
+In this example, the following was selected:<br>
+*(VKORG = '1000' OR VKORG = '2000') AND ERDAT > '20010101'*
 
-![Table-04](/img/content/Table-04.png){:class="img-responsive" width="800px"}
+The entered expression must correspond to the SAP OpenSQL syntax, for example, the expression must contain a space before and after the operator. 
+Also pay attention to the format of the values, for example, a date must be entered in the SAP notation YYYYMMDD.
 
-You can define your own WHERE clause and put it into the Where Clause text field. Please note that only the SAP OpenSQL syntax is allowed. Please remember that it is necessary to put blanks beween the values and the operators.
+Optionally, click on the *Preview* button to preview the extraction.
 
-To define a WHERE statement, please fill in the multi-line text box below the grid. Please note that DATE values must be provided in the form of YYYYMMDD.
-
-![Table-05](/img/content/Table-05.png){:class="img-responsive" width="800px" }
+![Table-04](/img/content/preview_Xtract_IS_table.png){:class="img-responsive"}
 
 **Variables**
 
-It is also possible to use SSIS variables within the WHERE statement. Please use the @ symbol to identify SSIS variables, e.g. VKORG = @vkorg.
+It is also possible to use SSIS variables in the Where string as you are used to with SQL statements. 
+For example, define a variable VKORG in the data flow task and formulate your where statement as follows: VKORG = @vkorg. 
+Xtract IS recognizes from the @ symbol that this placeholder must be replaced.
+
+As soon as the data source is configured accordingly, the output columns are available for further processing.
 
 
-
-As soon as the columns are defined, the output columns are ready for further use within your data flow task.

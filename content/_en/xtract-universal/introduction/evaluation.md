@@ -11,7 +11,11 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=evaluation
 ---
 
-We also offer support during the evaluation phase. Of course, you can download a demo version from our website and try it by yourself. It is only time limited and works without any restrictions.
+We also offer support during the evaluation phase for Xtract Universal. 
+
+Of course, you can download a demo version from our website and try it by yourself. 
+
+It is only time limited and works without any restrictions.
 
 If you have any further questions, please don't hesitate to contact us via phone or mail.
 
