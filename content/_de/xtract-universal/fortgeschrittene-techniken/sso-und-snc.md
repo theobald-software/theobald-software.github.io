@@ -31,7 +31,7 @@ Kerberos gibt zwar aus Sicherheitsgründen die Authentifizierungsdaten standardm
 Dazu achten Sie auf die entsprechende Konfiguration: <br>
 [http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx](http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx)
 
-Weitere Informationen zur SSO-Konfiguration auf SAP-Seite finden Sie in der [SAP Online Hilfe] (https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/DE-DE/440ebf6c9b2b0d1ae10000000a114a6b.html) 
+Weitere Informationen zur SSO-Konfiguration auf SAP-Seite finden Sie in der [SAP Online Hilfe](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/DE-DE/440ebf6c9b2b0d1ae10000000a114a6b.html) 
 
 
 **Die Kerberos Wrapper Library herunterladen**
