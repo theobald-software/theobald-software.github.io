@@ -13,8 +13,9 @@ old_url:
 ---
 
 **Anwendungsfall**
+
 BI Client Tools wie z.B. Power BI, Power Pivot, alteryx, etc. können Extraktionen in Xtract Universal anstoßen. Die extrahierten Daten werden von Xtract Universal direkt in diese Tools geladen.
-Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Credentials des (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion in XU angestossen wurde.
+Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Credentials des (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion in XU angestossen wurde. Das spielt z.B. insbesondere beim Zugriff auf BW/BEx Queries eine Rolle.
 
 Das heisst, die Windows-Credentials dieses Benutzers müssen via Xtract Universal an SAP weitergeleitet werden. Auf dem Weg dorthin oder auf SAP-Seite besteht ein Mapping zwischen Windows-Benutzer und dessen SAP-Credentials.
 
@@ -26,7 +27,9 @@ Prinzipiell lässt sich SSO mit Xtract Universal über zwei unterschiedliche Ver
 2. Mittels SAP Logon Ticket
 
 
+
 **SSO in Xtract Universal und SNC mit Kerberos**
+
 Für die Nutzung dieses Verfahrens **müssen** folgende Voraussetzungen zwingend erfüllt sein:
 
 1. Der SAP ABAP Applikationsserver läuft unter einem Windows Betriebssystem. 
@@ -46,6 +49,8 @@ Es gibt eventuell auch Third-Party-Anbieter von SNC-Lösungen, die das können, 
 Da die Kerberos Wrapper Library die Microsoft-Extensions für Kerberos verwendet, um das Double-Hop-Problem zu umgehen, gibt es sie nur für Windows. Sie funktioniert also nur mit SAP-Applikationsservern unter Windows und Clients unter Windows.
 
 
+
 **SSO in Xtract Universal via SAP Logon Ticket**
+
 Falls eine der oben genannten Voraussetzungen (insbesondere Einsatz der gsskrb5 nicht möglich oder SAP Applikationsserver läuft nicht unter Windows) nicht gegeben sein sollten, gibt es die Möglichkeit, das SAP/AD-Benutzermapping über ein SAP Portal (SAP Web AS) ohne SNC umzusetzen. Damit wäre SSO auch möglich, allerdings ist die Verbindung dann nicht verschlüsselt (was bei SNC der Fall wäre). Andererseits müssen die Applikationsserver auch nur für SAP Logon Tickets konfiguriert werden und nicht für SNC.
  
