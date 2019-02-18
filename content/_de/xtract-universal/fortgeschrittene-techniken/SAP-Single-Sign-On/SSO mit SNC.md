@@ -69,3 +69,21 @@ Legen Sie die Datei ebenfalls auf jedem Rechner, auf dem der Xtract Universal De
 *Local Security Policy für XU Service Account*: Fügen Sie unter *Local Policies* - *User Rights Assignment* den Service Account bei *Act as part of the operating system* und *Impersonate a client after authentication* hinzu. 
 ![XU_SSO_LocSecPol](/img/content/XU_SSO_LocSecPol.png){:class="img-responsive"}
 
+
+**Zu 4: Einstellungen in Xtract Universal**
+
+* Ändern des https-Webserver Ports
+* Einstellungen in der SAP Source
+
+*https-Port*: Ändern Sie in den Server Settings unter dem Tab-Reiter *Web Server* den HTTPS Port auf den Wert 443 (standardmäßig steht dieser auf 8165).
+![XU_SSO_httpsPort](/img/content/XU_SSO_HTTPS_Port.png){:class="img-responsive"}
+
+*Einstellungen in der SAP Source*
+
+Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den Service Account an, unter dem der SAP Applikationsserver läuft, und zwar in dieser Notation. *p:[Service Account]/[Domain]
+![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}
+
+
+**Zu 5: Einstellungen auf SAP-Seite.**
+
+Lesen Sie bitte die notwendigen Einstellungen für Kerberos SNC in der [SAP Hilfe](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/DE-DE/440ebf6c9b2b0d1ae10000000a114a6b.html) nach. Anhaltspunkt dafür, ob die Einstellungen stimmen ist, dass Sie sich mit dem SAP Logon Pad per SSO am SAP System anmelden können.
