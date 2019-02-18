@@ -6,32 +6,51 @@ description: SSO und SNC
 product: xtract-universal
 parent: SAP-Single-Sign-On
 permalink: /:collection/:path
-weight: 7
+weight: 1
 lang: de_DE
 old_url: 
 ---
 
-Eine SAP-Verbindung ist über Single-Sign-On (SSO) mit Secure Network Communication (SNC) möglich. Für den SNC-Mechanismus empfehlen wir die Nutzung der Kerberos Wrapper Library, s. unten. 
+**SSO in Xtract Universal und SNC mit Kerberos**
+
+Auf dieser Seite werden die notwendigen Schritte beschrieben, um SSO mit SNC und Kerberos für Xtract Universal einzurichten.
+Die hier beschriebenen Schritte setzen voraus, dass des SAP-Applikationsserver unter Windows läuft und für SNC die Kerberos Library verwendet wird.
+
+1. Aktivierung von SSL in Xtract Universal 
+2. Anlegen eines AD Service Accounts, unter dem der Xtract Universal Service läuft.
+3. Notwendige Einstellungen auf dem Server, auf dem der Xtract Universal Server läuft.
+4. Notwendige Einstellungen in Xtract Universal.
+5. Einstellungen auf SAP-Seite.
 
 
-**Kerberos**
+**Zu 1: Aktivierung von SSL in Xtract Universal**
+Diese Einstellung hat erstmal nicht direkt mit dem Einrichten von SSO zu tun, ist allerdings Voraussetzung dafür. SSO funktioniert nur, sofern der Extraktionsaufruf per https erfolgt. Hierfür muss ein SSL-Zertifikat in Xtract Universal bekannt gemacht werden.
 
-Bei der Kerberos Methode erfolgt die Authentifizierung des Clients über einen Kerberos Server. Dabei werden sogenannte Tickets zur Authentifizierung erstellt und an den Client übermittelt. Mit diesem Ticket authentifiziert sich der Client beim Server.
+1. Lassen Sie ein TLS Zertifikat (X.509) von Ihrem IT Netzwerk Team erstellen. In der Zertifikatseigenschaft "Subject Alternative Name" muss der DNS Name des Servers stehen, auf dem der Xtract Universal Windows Dienst läuft. Ansonsten erscheint das Zertifikat später nicht im Lookup Dialog von Xtract Universal.
+2. Hinterlegen Sie das Zertifikat im Windows Certificate Store auf dem XU Server.
+3. Machen Sie das Zertifikat in Xtract Universal bekannt.
 
-Weitere Details zu Kerberos finden Sie bei [Microsoft](http://technet.microsoft.com/en-us/library/bb742516.aspx).
-
-
-**Double Hop-Problem**
-
-Double Hop beschreibt die Weitergabe von Authentifizierungsdaten über zwei oder mehr Rechner (Hops) hingweg. Die Problematik stellt sich z.B. dann, wenn Sie sich aus einem BI-Frontend wie *Power BI* oder *alteryx* via Xtract Universal mit dem SAP-System verbinden, wobei Konsument der SAP-Daten (Ihre BI-Frontends) und der Xtract Universal Server auf unterschiedlichen Rechnern laufen.
-
-Kerberos gibt zwar aus Sicherheitsgründen die Authentifizierungsdaten standardmäßig nur über einen Hop weiter. Allerdings kann Kerberos so konfiguriert werden, dass die Authentifizierungsdaten auch über zwei oder mehr Rechner (Hops) hingweg weitergegeben werden können.
+![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
-Dazu achten Sie auf die entsprechende Konfiguration: <br>
-[http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx](http://blogs.technet.com/b/askds/archive/2008/06/13/understanding-kerberos-double-hop.aspx)
+**Zu 2.  Anlegen eines AD Service Accounts**
 
-Weitere Informationen zur SSO-Konfiguration auf SAP-Seite finden Sie in der [SAP Online Hilfe] (https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/DE-DE/440ebf6c9b2b0d1ae10000000a114a6b.html) 
+Legen Sie einen Windows AD Service Account an. Das ist der Account, unter dem der Xtract Universal Service läuft.
+
+Konfigurieren Sie den Account für *Constrained Delegation*. Im folgenden Screenshot ist *SAPServiceERP* der Windows Account, unter dem der SAP-Applikationsserver läuft.
+![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
+
+
+Definieren Sie einen oder mehrere *Service Principal Names (SPN)* in der Notation HTTP/[XU FQDN host name]
+![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
+
+
+ Lassen Sie den Xtract Universal Service unter diesem Account laufen.
+![XU_ServiceAccount](/img/content/XU_Service_Account.png){:class="img-responsive"}
+
+
+
+
 
 
 **Die Kerberos Wrapper Library herunterladen**
