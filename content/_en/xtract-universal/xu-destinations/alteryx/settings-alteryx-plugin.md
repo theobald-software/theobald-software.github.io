@@ -29,7 +29,8 @@ This might be useful in self service scenarios, where each extraction needs to b
 
 ![alteryx-extraction-selection](/img/content/alteryx-extraction-selection.png){:class="img-responsive"}
 
-##Override custom Parameters with static values## 
+##Parameters## 
+**Override custom Parameters with static values**
 
 When selecting the **Parameters** tab, the tool will load the available parameters for the specified extraction. 
 In this case we have an extraction of SAP customers, where the city parameter will be overwritten with a static value.
@@ -37,7 +38,7 @@ Those can be edited by checking the **Override** field and entering a new **valu
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
 
-##Override custom Parameters with dynamic values## 
+**Override custom Parameters with dynamic values**
 You can also use an input for the Xtract Universal tool, e.g. Input Data Tool.
 The data input can dynamically be used as input for the custom parameter in Xtract Universal.<br> 
 
