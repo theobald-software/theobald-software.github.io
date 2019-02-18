@@ -29,9 +29,22 @@ Das kann z.B. in Self Service Szenarien sinnvoll sein, bei denen die Extraktione
 
 ![alteryx-extraction-selection](/img/content/alteryx-extraction-selection.png){:class="img-responsive"}
 
+##Parameter## 
+
+**Das statische Überschreiben eines benutzerdefinierten Parameters**
 Unter dem Reiter **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. Dafür müssen Sie einen Haken für das Feld **Override** setzen und einen neuen Wert in das **Value** Feld eingeben.
+In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) mit einem statische Wert (Stuttgart) überschrieben wird. 
+
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
+
+**Das dynamische Überschreiben eines benutzerdefinierten Parameters**
+Das Xtract Universal-Tool kann also eine Eingabe entgegennehmen, z.B. das Input Data Tool.
+Die Daten-Eingabe kann dynamisch fürs das  Überschreiben des benutzerdefinierten parameters in Xtract Universal verwendet werden.<br> 
+In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) mit einem dynamischen Wert (Stuttgart) überschrieben wird. 
+
+
+![alteryx-custom-parameters](/img/content/alteryx-custom-parameters-override.PNG){:class="img-responsive"}
 
 [Hier]() können Sie mehr über benutzerdefinierte Parameter erfahren.
 

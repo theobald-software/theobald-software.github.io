@@ -39,9 +39,8 @@ Those can be edited by checking the **Override** field and entering a new **valu
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
 
 **Override custom Parameters with dynamic values**
-You can also use an input for the Xtract Universal tool, e.g. Input Data Tool.
-The data input can dynamically be used as input for the custom parameter in Xtract Universal.<br> 
-
+The Xtract Universal tool can also have an input, e.g. the Input Data Tool.
+The data input can dynamically be used to override the custom parameter in Xtract Universal.<br> 
 In this case we have an extraction of SAP customers, where the city parameter will be dynamically parametrized.
 Those can be edited by checking the **Override** and **Map** field and selecting the incomping input field as a new **value**.
 
