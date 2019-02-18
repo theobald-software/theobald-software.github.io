@@ -17,6 +17,8 @@ To use the Xtract Universal tool you will have to add it to a workflow.
 
 Following settings have to be specified for the Xtract Universal tool in the Alteryx Designer.
 
+## Connection
+
 **Server**<br>
 the name, IP or domain and port the server can be accessed with within the network.
 
@@ -29,12 +31,12 @@ This might be useful in self service scenarios, where each extraction needs to b
 
 ![alteryx-extraction-selection](/img/content/alteryx-extraction-selection.png){:class="img-responsive"}
 
-##Parameters## 
+## Parameters 
+When selecting the **Parameters** tab, the tool will load the available parameters for the specified extraction. 
+
 **Override custom Parameters with static values**
 
-When selecting the **Parameters** tab, the tool will load the available parameters for the specified extraction. 
-In this case we have an extraction of SAP customers, where the city parameter will be overwritten with a static value.
-Those can be edited by checking the **Override** field and entering a new **value**.
+In this case we have an extraction of SAP customers, where the city parameter in the **custom defined parameters** tab will be overwritten with a static value. This is done by checking the **Override** field and entering a new **value**.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
 

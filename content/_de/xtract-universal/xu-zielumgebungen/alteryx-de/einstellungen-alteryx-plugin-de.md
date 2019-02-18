@@ -17,6 +17,7 @@ Um das Xtract Universal-Tool verwenden zu können, müssen Sie es in einen Workf
 
 Folgende Einstellungen müssen im Alteryx Designer für das  XtractUniversal-Tool festgelegt werden.
 
+## Verbindung
 **Server**<br>
 der Name, die IP oder die Domain und der Port unter denen der Server zu erreichen ist.<br>
 (Format: [Server]:[Port])
@@ -29,11 +30,13 @@ Das kann z.B. in Self Service Szenarien sinnvoll sein, bei denen die Extraktione
 
 ![alteryx-extraction-selection](/img/content/alteryx-extraction-selection.png){:class="img-responsive"}
 
-##Parameter## 
+## Parameter 
+
+Unter dem Reiter **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. 
 
 **Das statische Überschreiben eines benutzerdefinierten Parameters**
-Unter dem Reiter **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. Dafür müssen Sie einen Haken für das Feld **Override** setzen und einen neuen Wert in das **Value** Feld eingeben.
-In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) mit einem statische Wert (Stuttgart) überschrieben wird. 
+In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) in dem Reiter **Custom defined Parameters** mit einem statische Wert (Stuttgart) überschrieben wird. 
+Dafür setzen Sie einen Haken für das Feld **Override** und geben Sie einen neuen Wert in das **Value** Feld ein.<br>
 
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
@@ -41,6 +44,7 @@ In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in we
 **Das dynamische Überschreiben eines benutzerdefinierten Parameters**
 Das Xtract Universal-Tool kann also eine Eingabe entgegennehmen, z.B. das Input Data Tool.
 Die Daten-Eingabe kann dynamisch fürs das  Überschreiben des benutzerdefinierten parameters in Xtract Universal verwendet werden.<br> 
+Unter dem Reiter **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. Dafür müssen Sie einen Haken für das Feld **Override** und **Map** setzen und den Eingabeparameter aus der Wertehilfe wählen. <br>
 In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) mit einem dynamischen Wert (Stuttgart) überschrieben wird. 
 
 
