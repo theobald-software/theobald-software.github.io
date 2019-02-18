@@ -20,11 +20,12 @@ Die hier beschriebenen Schritte setzen voraus, dass des SAP-Applikationsserver u
 2. Anlegen eines AD Service Accounts, unter dem der Xtract Universal Service läuft.
 3. Notwendige Einstellungen auf dem Server, auf dem der Xtract Universal Server läuft.
 4. Notwendige Einstellungen in Xtract Universal.
-5. Einstellungen auf SAP-Seite.
+5. Notwendige Einstellungen auf SAP-Seite.
 
 
 **Zu 1: Aktivierung von SSL in Xtract Universal**
-Diese Einstellung hat erstmal nicht direkt mit dem Einrichten von SSO zu tun, ist allerdings Voraussetzung dafür. SSO funktioniert nur, sofern der Extraktionsaufruf per https erfolgt. Hierfür muss ein SSL-Zertifikat in Xtract Universal bekannt gemacht werden.
+
+Diese Einstellung hat erstmal nichts direkt mit dem Einrichten von SSO zu tun, ist allerdings Voraussetzung dafür. SSO funktioniert nur, sofern der Extraktionsaufruf per https erfolgt. Hierfür muss ein SSL-Zertifikat in Xtract Universal bekannt gemacht werden.
 
 1. Lassen Sie ein TLS Zertifikat (X.509) von Ihrem IT Netzwerk Team erstellen. In der Zertifikatseigenschaft "Subject Alternative Name" muss der DNS Name des Servers stehen, auf dem der Xtract Universal Windows Dienst läuft. Ansonsten erscheint das Zertifikat später nicht im Lookup Dialog von Xtract Universal.
 2. Hinterlegen Sie das Zertifikat im Windows Certificate Store auf dem XU Server.
@@ -33,15 +34,15 @@ Diese Einstellung hat erstmal nicht direkt mit dem Einrichten von SSO zu tun, is
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
-**Zu 2.  Anlegen eines AD Service Accounts**
+**Zu 2: Anlegen eines AD Service Accounts**
 
-Legen Sie einen Windows AD Service Account an. Das ist der Account, unter dem der Xtract Universal Service läuft.
+Legen Sie einen Windows AD Service Account an. Das ist der Account, unter dem der Xtract Universal Service läuft (XU Service Account).
 
 Konfigurieren Sie den Account für *Constrained Delegation*. Im folgenden Screenshot ist *SAPServiceERP* der Windows Account, unter dem der SAP-Applikationsserver läuft.
-![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
+![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
 
 
-Definieren Sie einen oder mehrere *Service Principal Names (SPN)* in der Notation HTTP/[XU FQDN host name]
+Definieren Sie zwei *Service Principal Names (SPN)* in der Notation *HTTP/[XU FQDN host name]* und *HTTP/[XU host name]*
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
 
 
@@ -49,15 +50,22 @@ Definieren Sie einen oder mehrere *Service Principal Names (SPN)* in der Notatio
 ![XU_ServiceAccount](/img/content/XU_Service_Account.png){:class="img-responsive"}
 
 
+**Zu 3: Notwendige Einstellungen auf dem Xtract Universal Server**
+
+* Kerberos Library auf Laufwerk kopieren
+* Hinzufügen des XU Service Account zur Local Admin Gruppe (*compmgmt.msc*)
+* Einstellungen für den XU Service Account in der Local Security Policy (*secpol.msc*)
 
 
 
+*Kerberos Wrapper Library*: Die relevante dll-Datei befindet sich als Anhang im [SAP Hinweis 2115486](https://launchpad.support.sap.com/#/notes/2115486). Wir gehen davon aus, dass Sie den Xtract Universal Service auf einem 64bit Betriebssystem betreiben. Bitte laden Sie daher die *gx64krb5.dll* herunter.
 
-**Die Kerberos Wrapper Library herunterladen**
+Legen Sie diese in einem beliebigen Verzeichnis, z.B. *C:\SNC\gx64krb5.dll*, des Rechners ab, auf dem der Xtract Universal Server läuft bzw. die SAP-Verbindung stattfindet.
+Legen Sie die Datei ebenfalls auf jedem Rechner, auf dem der Xtract Universal Designer genutzt wird, in dem selben Verzeichnis ab.  
 
-Die relevanten dll-Dateien befindet sich als Anhang im [SAP Hinweis 2115486](https://launchpad.support.sap.com/#/notes/2115486). Bitte laden Sie diese herunter und legen Sie diese in einem beliebigen Ordner des Rechners ab, auf dem der Xtract Universal Server läuft bzw. die SAP-Verbindung stattfindet. Innerhalb von Xtract Universal können Sie dann in den Settings zur SAP Source auf den Ordner verweisen, in dem Sie die dll abgelegt haben. Es gibt für 32-Bit und 64-Bit Plattformen zwei unterschiedliche Versionen der Kerberos Wrapper Library:  
 
-- Für 32-Bit: gsskrb5.dll 
-- Für 64-Bit x86: gx64krb5.dll 
+*XU Service Account als Local Admin*: Fügen Sie den XU Service Account zur Local Admin-Gruppe hinzu.
 
+*Local Security Policy für XU Service Account*: Fügen Sie unter *Local Policies* - *User Rights Assignment* den Service Account bei *Act as part of the operating system* und *Impersonate a client after authentication* hinzu. 
+![XU_SSO_LocSecPol](/img/content/XU_SSO_LocSecPol.png){:class="img-responsive"}
 
