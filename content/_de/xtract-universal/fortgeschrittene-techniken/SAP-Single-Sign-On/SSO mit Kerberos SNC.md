@@ -1,8 +1,8 @@
 ---
 ref: xu-advanced-techniques-07
 layout: page
-title: SSO und SNC
-description: SSO und SNC
+title: SSO mit Kerberos SNC
+description: SSO mit Kerberos SNC
 product: xtract-universal
 parent: SAP-Single-Sign-On
 permalink: /:collection/:path
@@ -46,7 +46,7 @@ Konfigurieren Sie den Account für *Constrained Delegation*. Im folgenden Screen
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
 
 
-Definieren Sie zwei *Service Principal Names (SPN)* in der Notation *HTTP/[XU FQDN host name]* und *HTTP/[XU host name]*
+Definieren Sie im *Atribut-Editor* Tabreiter zwei *Service Principal Names (SPN)* in der Notation *HTTP/[XU FQDN host name]* und *HTTP/[XU host name]*
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
 
 
@@ -65,7 +65,7 @@ Definieren Sie zwei *Service Principal Names (SPN)* in der Notation *HTTP/[XU FQ
 *Kerberos Wrapper Library*: Die relevante dll-Datei befindet sich als Anhang im [SAP Hinweis 2115486](https://launchpad.support.sap.com/#/notes/2115486). Wir gehen davon aus, dass Sie den Xtract Universal Service auf einem 64bit Betriebssystem betreiben. Bitte laden Sie daher die *gx64krb5.dll* herunter.
 
 Legen Sie diese in einem beliebigen Verzeichnis, z.B. *C:\SNC\gx64krb5.dll*, des Rechners ab, auf dem der Xtract Universal Server läuft bzw. die SAP-Verbindung stattfindet.
-Legen Sie die Datei ebenfalls auf jedem Rechner, auf dem der Xtract Universal Designer genutzt wird, in dem selben Verzeichnis ab.  
+Legen Sie die Datei ebenfalls auf jedem Rechner, auf dem der Xtract Universal Designer genutzt wird, in demselben Verzeichnis ab.  
 
 
 *XU Service Account als Local Admin*: Fügen Sie den XU Service Account zur Local Admin-Gruppe hinzu.
@@ -77,7 +77,7 @@ Legen Sie die Datei ebenfalls auf jedem Rechner, auf dem der Xtract Universal De
 **Zu 4: Einstellungen in Xtract Universal**
 
 
-Öffnen Sie die Einstellungen zur SAP Source. Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den Service Account an, unter dem der SAP Applikationsserver läuft, und zwar in dieser Notation. *p:[Service Account]/[Domain]
+Öffnen Sie die Einstellungen zur SAP Source. Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den Service Account an, unter dem der SAP Applikationsserver läuft, und zwar in dieser Notation. *p:[Service Account]/[Domain]*
 ![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}
 
 
