@@ -34,6 +34,10 @@ Diese Einstellung hat erstmal nichts direkt mit dem Einrichten von SSO zu tun, i
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
+*https-Port*: Ändern Sie in den Server Settings unter dem Tab-Reiter *Web Server* den HTTPS Port auf den Wert 443 (standardmäßig steht dieser auf 8165).
+![XU_SSO_httpsPort](/img/content/XU_SSO_HTTPS_Port.png){:class="img-responsive"}
+
+
 **Zu 2: Anlegen eines AD Service Accounts**
 
 Legen Sie einen Windows AD Service Account an. Das ist der Account, unter dem der Xtract Universal Service läuft (XU Service Account).
@@ -72,15 +76,8 @@ Legen Sie die Datei ebenfalls auf jedem Rechner, auf dem der Xtract Universal De
 
 **Zu 4: Einstellungen in Xtract Universal**
 
-* Ändern des https-Webserver Ports
-* Einstellungen in der SAP Source
 
-*https-Port*: Ändern Sie in den Server Settings unter dem Tab-Reiter *Web Server* den HTTPS Port auf den Wert 443 (standardmäßig steht dieser auf 8165).
-![XU_SSO_httpsPort](/img/content/XU_SSO_HTTPS_Port.png){:class="img-responsive"}
-
-*Einstellungen in der SAP Source*
-
-Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den Service Account an, unter dem der SAP Applikationsserver läuft, und zwar in dieser Notation. *p:[Service Account]/[Domain]
+Öffnen Sie die Einstellungen zur SAP Source. Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den Service Account an, unter dem der SAP Applikationsserver läuft, und zwar in dieser Notation. *p:[Service Account]/[Domain]
 ![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}
 
 
