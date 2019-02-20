@@ -40,10 +40,10 @@ The field Option contains the selection option for the condition of the row in f
 | "<"     | lower than   | 
 | "<="      | lower equal than   | 
 | ">"    | greater than   | 
-| ">="   | greater eual than | 
+| ">="   | greater equal than | 
 | "[]" | between (interval) | 
-| "]["       | not between(Intervall) | 
-| " * "    | contains pattern(Like) | 
+| "]["       | not between (Intervall) | 
+| " * "    | contains pattern (Like) | 
 
 Low Value column is designated for the comparison value or the lower interval limitation.<br>
 High Value column is designated for the upper interval limitation.
