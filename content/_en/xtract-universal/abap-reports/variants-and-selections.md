@@ -32,15 +32,18 @@ The following screenshot shows the dialogue for entering complex selections.
 The field Sign hast 2 Options: Include - Exclude. This selection determines for every row whether the result of the condition is included or excluded in the entire resulting set for all rows.
 
 The field Option contains the selection option for the condition of the row in form of logical operators:<br>
-'='  Equal<br>
-'!=' Not Equal<br>
-'<' Lower Than<br>
-'<=' Lower Equal Than <br>
-'>' Greater Than <br>
-'>=' Greater Equal Than <br>
-'[]' BeTween <br>
-'][' NotBetween<br>
-' * ' Contains Pattern (Like)
+
+| logical operator   | description   |
+|---------------|-------------------------|
+| "="     | equal      |
+| "!=" | not equal     |
+| "<"     | lower than   | 
+| "<="      | lower equal than   | 
+| ">"    | greater than   | 
+| ">="   | greater eual than | 
+| "[]" | between (interval) | 
+| "]["       | not between(Intervall) | 
+| " * "    | contains pattern(Like) | 
 
 Low Value column is designated for the comparison value or the lower interval limitation.<br>
 High Value column is designated for the upper interval limitation.
