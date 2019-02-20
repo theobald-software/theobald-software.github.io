@@ -33,15 +33,18 @@ Das folgende Bild zeigt eine komplexe Selektion:
 Das Feld Sign hat 2 Optionen: Include - Exclude. Mit dieser Funktion können Sie jene Werte wählen, die Sie für das Ergebnis ein- bzw. ausschließen wollen. 
 
 Das Feld Option enthält den logischen Operator für die Bedingung: <br>
-"="  Gleich<br>
-"!=" Ungleich<br>
-"<" Kleiner als<br>
-"<=" Kleiner oder gleich<br>
-">" Größer als <br>
-">=" Größer oder gleich <br>
-"[]" zwischen (Intervall)<br>
-"][" nicht zwischen (Intervall)<br>
-" * " entählt (Like)
+
+| logischer Operator   | Beschreibung   |
+|---------------|------------------------------|
+| "="     | ist gleich        |
+| "!=" | ist ungleich     |
+| "<"     | kleiner als   | 
+| "<="      | kleiner oder gleich   | 
+| ">"    | größer als   | 
+| ">="   | größer oder gleich | 
+| "[]" | zwischen (Intervall) | 
+| "]["       | nicht zwischen (Intervall) | 
+| " * "    | enthält (Like) | 
 
 Die Spalte Low Value muss bei jedem Operator gefüllt werden.<br>
 Die Spalte High Value wird nur von den Operatoren verwendet, welche einen zweiten Paramter erwarten. 
