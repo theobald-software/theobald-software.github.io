@@ -15,7 +15,7 @@ old_url:
 **Anwendungsfall**
 
 BI Client Tools wie z.B. Power BI, Power Pivot, alteryx, etc. können Extraktionen in Xtract Universal anstoßen. Die extrahierten Daten werden von Xtract Universal direkt in diese Tools geladen.
-Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Credentials des (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestossen wurde. Das spielt z.B. häufig bei der Extraktion von BW/BEx Queries eine Rolle.
+Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Credentials des (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. Das spielt z.B. häufig bei der Extraktion von BW/BEx Queries eine Rolle.
 
 Das heisst, die Windows-Credentials dieses Benutzers müssen via Xtract Universal an SAP weitergeleitet werden. Auf dem Weg dorthin oder auf SAP-Seite besteht ein Mapping zwischen Windows-Benutzer und dessen SAP-Credentials.
 
@@ -42,7 +42,7 @@ Das hier beschriebene Verfahren funktioniert ausschließlich mit der gsskrb5.
 Damit das Weiterreichen der Windows Credentials durch Xtract Universal funktioniert, muss die SNC-Lösung das unterstützen. Da Active Directory auf Kerberos basiert, muss dafür das "Double Hop"-Problem gelöst werden: Kerberos erlaubt aus Sicherheitsgründen das Weitergeben von Credentials nicht. Es gibt aber Kerberos-Erweiterungen von Microsoft (S4U-Extensions), die das ermöglichen. Diese Erweiterungen sind auch als "Constrained Delegation" bekannt.
 
 Die Common Crypto Library von SAP unterstützt das lt. Aussage des SAP Support explizit nicht. Die Kerberos Wrapper Library (gsskrb5) von SAP unterstützt das, und ist bei mehreren unserer Kunden im Einsatz. 
-Es gibt eventuell auch Third-Party-Anbieter von SNC-Lösungen, die das können, damit haben wir allerdings keine Erfahrung. Das bedeutet, dass für dieses Szenario die Kerberos Wrapper Library oder eine entsprechende Third-Party-Lösung eingesetzt werden muss.
+Es gibt eventuell auch Third-Party-Anbieter von SNC-Lösungen, die das können, damit konnten wir allerdings noch keine Erfahrung sammeln. Das bedeutet, dass für dieses Szenario die Kerberos Wrapper Library oder eine entsprechende Third-Party-Lösung eingesetzt werden muss.
 
 Da die Kerberos Wrapper Library die Microsoft-Extensions für Kerberos verwendet, um das Double-Hop-Problem zu umgehen, gibt es sie nur für Windows. Sie funktioniert also nur mit SAP-Applikationsservern unter Windows und Clients unter Windows.
 
