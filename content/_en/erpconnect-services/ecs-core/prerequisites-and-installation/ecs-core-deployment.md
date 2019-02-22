@@ -43,12 +43,10 @@ To start the Deployment Manager after the ECSCore installation go to the install
 
 The Wizard checks the prerequisites
 
-![ecscore-deploymentmanager-2](/img/content/ecscore-deploymentmanager-2.jpg.png){:class="img-responsive"}
 
 If some components could not be acquired and installed automatically, they will be shown on the *Prerequisites* screen. 
 When all prerequisites are fulfilled, you will get the following screen.
 
-![ecscore-deploymentmanager-1](/img/content/ecscore-deploymentmanager-1.jpg.png){:class="img-responsive"}
 
 In the next steps you have to configure the specific targets of the ECSCore administration portal.
 

@@ -20,5 +20,3 @@ ERPConnect Services and ERPConnect used the internal class ReadTable to read SAP
 In the cases above, a read table access will generate an exception. To avoid this problem, you need to install a custom function module (Z-module) in your SAP system.
 
 In order for ERPConnect Services to utilize the installed custom function module (e.g. Z_XTRACT_IS_TABLE) instead of the standard SAP function module, you will use the CustomFunction property of the ExecuteTableQuerySettings class.
-
-For information on how to install the custom function module Z_XTRACT_IS_TABLE see [SAP Customizing - Table Restrictions](../../../sap-customizing/table-restrictions). 

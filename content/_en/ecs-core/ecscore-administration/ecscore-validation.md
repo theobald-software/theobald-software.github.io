@@ -37,4 +37,4 @@ Content-Type = application/json <br>
 
 ![ecscore-restclienttest](/img/content/ecscore_restclienttest.png){:class="img-responsive"}
 
-Examples for REST requests can be found in our online help under *[ERPConnect Services Runtime> Webservices>REST without tEcs](../../ecs-en/ecs-runtime/ecs-webservices/rest-ohne-tecs)* (e.g. request for a table or a function block).
+Examples for REST requests can be found in our online help under *[ERPConnect Services Runtime> Webservices>REST without tEcs](../../erpconnect-services/ecs/erpconnect-services-runtime/web-services/rest-without-tecs)* (e.g. request for a table or a function block).

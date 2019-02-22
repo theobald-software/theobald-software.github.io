@@ -14,7 +14,6 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=settings
 
 In the Settings menu you can manage Licenses, Management Site Administrators, API Keys and [Azure Service Bus]() configuration.
 
-![ecscore-managementsite19](/img/content/ecscore-managementsite19.jpg.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 

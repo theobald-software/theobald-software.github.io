@@ -21,7 +21,6 @@ How to change the password is described in section [Settings>Administrators](./s
 
 ![Log-in](/img/content/Log-in.jpg){:class="img-responsive"}
 
-![ecscore-managementsite-3](/img/content/ecscore-managementsite-3.jpg.png){:class="img-responsive"} 
 
 The Management Site includes the following tasks:
 

@@ -13,5 +13,4 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=overview2
 
 On the *Overview* screen current system messages are shown. 
 
-![ecscore-managementsite-1](/img/content/ecscore-managementsite-1.jpg.png){:class="img-responsive"}
 

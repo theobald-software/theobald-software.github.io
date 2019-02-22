@@ -16,21 +16,15 @@ Launch *ERPConnectServicesSetupCore.exe*.
 
 Click *Next* to confirm the license agreement.
 
-![ecscore-installation-2](/img/content/ecscore-installation-2.jpg.png){:class="img-responsive"}
-
-![ecscore-installation-3](/img/content/ecscore-installation-3.jpg.png){:class="img-responsive"}
 
 Choose an installation folder.
 
-![ecscore-installation-4.jpg](/img/content/ecscore-installation-4.jpg.png){:class="img-responsive"} 
 
 Select both components and click *Install*. 
 
-![ecscore-installation-5.jpg](/img/content/ecscore-installation-5.jpg.png){:class="img-responsive"}
 
 The installation process will start. Note that **Microsoft SQL Server Compact** will be installed  automatically dring installation of ECSCore. 
 
-![ecscore-installation-6.jpg](/img/content/ecscore-installation-6.jpg.png){:class="img-responsive"}
 
 With the term *Installation or ECSCore* we understand copying and registering required modules on a target machine. No configuration is directly available after the installation process is completed. To start with the configuration the ECSCore components must be deployed, which means the UI (Web Site) and resources have to be installed into IIS (Internet Information Services) with your specific parameters (such as ports and existing databases).
 

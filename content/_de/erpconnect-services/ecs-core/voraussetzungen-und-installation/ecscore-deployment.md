@@ -41,16 +41,12 @@ Installieren Sie sie die fehlenden Komponenten manuell über Windows-Features bz
 Nach der Installation von ECSCore starten Sie den ECS Core Deployment Manager **ERPConnectServices.DeploymentManager.exe** 
 aus dem ECS Core-Installationsordner (Standardmäßig unter C:\Program Files\ERPConnect Services Core\). Damit wird die Installation des Deployment Managers gestartet. Auch nach einer erneuten Installation (Repair) oder der Installation einer neuen Version muss der Deployment Manager ausgeführt werden. In diesem Fall wird lediglich ein Update durchgeführt, die im folgenden Abschnitt beschriebenen Schritte müssen nicht erneut durchgeführt werden.
 
-![2014-12-15_11_24_53-Deployment-Manager](/img/content/2014-12-15_11_24_53-Deployment-Manager.jpg){:class="img-responsive"}
 
 Der Assistent überprüft dann die Voraussetzungen (alle erforderlichen IIS 8.5 Komponenten).
 
-![ecscore-deploymentmanager-2.jpg ](/img/content/ecscore-deploymentmanager-2.jpg.png){:class="img-responsive"}
 
 Falls einige Komponenten noch nicht vorhanden sind, wird dies im Installationsfenster angezeigt. Wenn alle Installationsvoraussetzungen erfüllt sind, wird folgender Bildschirm angezeigt:
 
-
-![ecscore-deploymentmanager-1.jpg](/img/content/ecscore-deploymentmanager-1.jpg.png){:class="img-responsive"}
 
 Als nächstes müssen Sie die Feineinstellungen der Konfiguration vornehmen. Eine Änderung der Standardwerte empfehlen wir nur erfahrenen Usern.
 
@@ -64,20 +60,16 @@ Standardverzeichnis für die Einrichtung der Komponenten: C:\ECSCore
 Der Deployment Manager legt die Seite in den IIS an. Sie können diese direkt von dort oder unter Angabe des eingetragenen Ports (8080) direkt im Browser aufrufen (http://localhost:8080).
 
 
-![2014-12-15-11_31_02-Deployment-Manager](/img/content/2014-12-15-11_31_02-Deployment-Manager.jpg){:class="img-responsive"}
-
 **Management Site**
 
 Auf der *Management Site* wird die Konfiguration für ECSCore vorgenommen. Mit dem Deployment Manager wird die Managment Site in den IIS angelegt und kann von dort oder unter Angabe des eingetragenen Ports (8085) direkt im Browser aufgerufen werden (http://localhost:8085).
 
 
-![2014-12-15-11_31_17-Deployment-Manager](/img/content/2014-12-15-11_31_17-Deployment-Manager.jpg){:class="img-responsive"}
 
 **Database**
 
 Hier ist die mitinstallierte Datenbank *Microsoft SQL Server Compact* aufgeführt, auf welcher die Einstellungen von ECSCore gespeichert werden.
 
-![2014-12-15-11_31_23-Deployment-Manager](/img/content/2014-12-15-11_31_23-Deployment-Manager.jpg){:class="img-responsive"}
 
 **Master Key**
 

@@ -34,7 +34,7 @@ WHERE Clause to be used on the table. The WHERE clause must comply with the SAP 
 You can define the sort criterion here, that is to say the table field that is used for sorting the result. 
 
 **Custom Function**<br>
-This field contains the name of the custom function module used for the table extraction. Supported is the use of custom function Z_XTRACT_IS_TABLE which allows to extract large SAP tables or tables with certain restrictive characteristics. More information about the custom function you find [here](../../sap-customizing/custom-function-module-for-table-compression). 
+This field contains the name of the custom function module used for the table extraction. Supported is the use of custom function Z_XTRACT_IS_TABLE which allows to extract large SAP tables or tables with certain restrictive characteristics. 
 
 **Use Multibyte Extraktion**
 

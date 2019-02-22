@@ -63,8 +63,6 @@ Important: At this step no user has access to the service. To allow some windows
 
 Click *Add User* to add new users or user groups. With *Users* the local Windows User and User groups are meant. 
 
-![ecscore-managementsite10](/img/content/ecscore-managementsite10.jpg.png){:class="img-responsive"}
 
 Added Users or User groups can be removed at any time.  
 
-![ecscore-managementsite11](/img/content/ecscore-managementsite11.jpg.png){:class="img-responsive"}

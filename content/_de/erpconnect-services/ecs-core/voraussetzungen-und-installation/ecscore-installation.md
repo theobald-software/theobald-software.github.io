@@ -16,21 +16,18 @@ Die Installation von ECS Core erfolgt über die ausgelieferte oder unter [www.th
 
 Klicken Sie auf Next und bestätigen Sie die Lizenzvereinbarung.
 
-![ecscore-installation-2](/img/content/ecscore-installation-2.jpg){:class="img-responsive"}
-
-![ecscore-installation-3](/img/content/ecscore-installation-3.jpg.png){:class="img-responsive"}
 
 Wählen Sie einen Installationspfad.
 
-![ecscore-installation-4](/img/content/ecscore-installation-4.jpg.png){:class="img-responsive"}
+
 
 Selektieren Sie beide Komponenten und klicken Sie auf *Install*.
 
-![ecscore-installation-5](/img/content/ecscore-installation-5.jpg.png){:class="img-responsive"}
+
 
 Die Komponenten werden installiert. Dabei wird der **Microsoft SQL Server Compact** mitinstalliert, der intern von ECS Core verwendet wird. 
 
-![ecscore-installation-6](/img/content/ecscore-installation-6.jpg.png){:class="img-responsive"}
+
 
 Bei der Installation handelt es sich ausschließlich um das Kopieren und die Registrierung der benötigten Dateien.
 
