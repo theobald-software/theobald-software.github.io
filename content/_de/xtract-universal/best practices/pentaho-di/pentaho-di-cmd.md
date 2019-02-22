@@ -49,7 +49,7 @@ So sieht die Verbindung zum SQL Server, die wir nutzen, um die Daten aus der Tab
 
 <br>
 **Table Input**<br>
-Folgende Einstellungen nutzen wir Table Input:<br>
+Folgende Einstellungen nutzen wir in Table Input:<br>
 ![pdi-cmd-transf-table-input-settings](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-table-input-settings.png){:class="img-responsive"}
 
 <br>
