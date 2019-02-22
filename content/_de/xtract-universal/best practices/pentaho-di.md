@@ -5,6 +5,7 @@ title: Pentaho Data Integration (ETL) aka Kettle
 description: Pentaho Data Integration (ETL) aka Kettle
 product: xtract-universal
 parent: best-practices
+childidentifier: pentaho-di
 permalink: /:collection/:path
 weight: 10
 lang: de_DE
