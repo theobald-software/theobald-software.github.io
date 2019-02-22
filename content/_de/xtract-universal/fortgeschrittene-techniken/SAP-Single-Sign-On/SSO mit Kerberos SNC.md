@@ -75,8 +75,11 @@ Legen Sie die Datei ebenfalls auf jedem Rechner, auf dem der Xtract Universal De
 
 
 SubKey:  HKEY_LOCAL_MACHINE\SOFTWARE\SAP\gsskrb5
+
 Entry:   ForceIniCredOK
+
 Type:    REG_DWORD
+
 Value:   1
 
 
@@ -89,7 +92,7 @@ Value:   1
 **Zu 4: Einstellungen in Xtract Universal**
 
 
-Öffnen Sie die Einstellungen zur SAP Source. Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den SPN des SAP Service Accounts an (siehe Screenshot unter Punkt 2 oben). Bitte verwenden Sie diese Notation. *p:<SPN>@<Domain-FQDN-Uppercase>*.  
+Öffnen Sie die Einstellungen zur SAP Source. Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den SPN des SAP Service Accounts an (siehe Screenshot unter Punkt 2 oben). Bitte verwenden Sie diese Notation. *p:\<SPN\>\@\<Domain-FQDN-Uppercase\>*.  
 
 *Achtung:* 
 * Im SAP Logon Pad wird im Falle von SNC der Partnername häufig im Format des UPN des SAP Service Accounts angegeben (*p:[SAP Service Account]@[Domäne]*). Das ist im Falle von Xtract Universal *falsch*. Bitte verwenden Sie, wie oben beschrieben, immer den SPN in der obigen Notation.
