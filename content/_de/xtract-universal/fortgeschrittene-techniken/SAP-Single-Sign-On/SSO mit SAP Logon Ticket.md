@@ -6,7 +6,7 @@ description: SSO mit SAP Logon Ticket
 product: xtract-universal
 parent: SAP-Single-Sign-On
 permalink: /:collection/:path
-weight: 7
+weight: 2
 lang: de_DE
 old_url: 
 ---
