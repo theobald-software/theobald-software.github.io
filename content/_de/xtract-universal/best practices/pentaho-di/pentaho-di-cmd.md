@@ -44,7 +44,11 @@ Die Verbindung zum SQL Server:
 Die Einstellungen von Table Input:
 ![pdi-cmd-transf-table-input-settings](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-table-input-settings.png){:class="img-responsive"}
 
-Preview der Eingabefelder: 
+
+Nach erfolgreicher Ausführung schauen wir uns die Metriken.<br>
+![pdi-cmd-sql](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-sql.png){:class="img-responsive"}
+
+Auch das Preview der einzelnen Schritte ist möglich.Preview der Eingabefelder: 
 ![pdi-cmd-transf-generate-rows-preview](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-generate-rows-preview.png){:class="img-responsive"}
 
 Preview der Daten vom Table Input
