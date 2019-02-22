@@ -47,7 +47,7 @@ Die Einstellungen von Table Input:
 
 
 Nach erfolgreicher Ausführung schauen wir uns die Metriken.<br>
-![pdi-cmd-sql](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-sql.png){:class="img-responsive"}
+![pdi-cmd-transf-metrics](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-metrics.png){:class="img-responsive"}
 
 Auch das Preview der einzelnen Schritte ist möglich.Preview der Eingabefelder: 
 ![pdi-cmd-transf-generate-rows-preview](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-generate-rows-preview.png){:class="img-responsive"}
