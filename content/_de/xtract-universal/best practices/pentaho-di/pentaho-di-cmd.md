@@ -29,15 +29,15 @@ Die Übersicht der Transformation in Kettle zeigt die verwendeten Schritte:<br>
 <br>
 **Initialisierungsparameter**<br>
 Wir schauen uns die Einstellungen der wichtigen Schritte.
-Als erstes definieren wir 2 Felder: 
-- XUCmd: "C:\Program Files\XtractUniversal\xu.exe"	
-- XUArg: http://KETSWIN16DC02:8065/?name=SAPCustomersToSQL
+Im ersten Schritt definieren wir 2 Parameter: 
+- Das Feld XUCmd enthält den Pfad zur Kommandozeite: "C:\Program Files\XtractUniversal\xu.exe"	
+- Das Feld XUArg enthält die URL der Extraktion in Xtract Universal: http://KETSWIN16DC02:8065/?name=SAPCustomersToSQL
 <br>
 ![pdi-cmd-transf-generate-rows-settings](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-generate-rows-settings.png){:class="img-responsive"}
 
 <br>
-**Command Tool aufrufen**<br>
-Im Command Tool nutzen wir die folgenden Einstellungen. Wie man leicht sieht, haben wir auch Fehlerbehanldung eingebaut. <br>
+**Kommandozeile aufrufen**<br>
+Im zweiten Schritt rufen wir die Kommandozeile mit den folgenden Einstellungen auf. Wie man leicht sieht, haben wir auch Fehlerbehanldung eingebaut. <br>
 ![pdi-cmd-transf-exe-settings01](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-exe-settings01.png){:class="img-responsive"}
 <br>
 ![pdi-cmd-transf-exe-settings02](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-exe-settings02.png){:class="img-responsive"}
