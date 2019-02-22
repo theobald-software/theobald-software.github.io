@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: bw-hierarchien
 permalink: /:collection/:path
-weight: 14
+weight: 13
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-hierarchien
 ---

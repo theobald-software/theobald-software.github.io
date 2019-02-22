@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: table-join
 permalink: /:collection/:path
-weight: 10
+weight: 9
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=table-join
 ---

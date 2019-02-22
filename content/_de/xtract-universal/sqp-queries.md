@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: sqp-queries
 permalink: /:collection/:path
-weight: 11
+weight: 10
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sqp-queries
 ---

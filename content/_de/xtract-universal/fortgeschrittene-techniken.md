@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: fortgeschrittene-techniken
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=fortgeschrittene-techniken
 ---

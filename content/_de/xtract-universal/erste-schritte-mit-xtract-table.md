@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=erste-schritte-mit-xtract-table
 ---
