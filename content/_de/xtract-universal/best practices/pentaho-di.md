@@ -6,7 +6,7 @@ description: Pentaho Data Integration (ETL) aka Kettle
 product: xtract-universal
 parent: best-practices
 permalink: /:collection/:path
-weight: 1
+weight: 10
 lang: de_DE
 old_url: /Xtract-Universal-DE/
 ---
