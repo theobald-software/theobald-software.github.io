@@ -49,7 +49,7 @@ Konfigurieren Sie den XU Service Account für *Constrained Delegation*. Hier wir
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
 
 
-Im folgenden Screenshot ist *SAPERP* der SPN des SAP Serivce Accounts.
+Im folgenden Screenshot ist *SAPERP/THEOBALD.LOCAL* der SPN des SAP Serivce Accounts.
 ![XU_SSO_SPN_SAPService](/img/content/XU_SSO_SPN_SAPService.png){:class="img-responsive"}
  
 
