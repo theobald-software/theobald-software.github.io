@@ -1,5 +1,5 @@
 ---
-ref: pentaho-di
+ref: best-practices-pentaho-di
 layout: page
 title: Pentaho Data Integration (ETL) aka Kettle
 description: Pentaho Data Integration (ETL) aka Kettle
@@ -9,7 +9,7 @@ childidentifier: pentaho-di
 permalink: /:collection/:path
 weight: 10
 lang: de_DE
-old_url: /Xtract-Universal-DE/
+old_url: 
 ---
 
 
