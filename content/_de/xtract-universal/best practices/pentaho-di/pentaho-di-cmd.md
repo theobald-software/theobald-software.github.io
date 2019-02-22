@@ -26,12 +26,13 @@ Hier sehen wir die Definition der Extraktion in Xtract Universal mit SQL Server 
 Übersicht der Transformation in Kettle:
 ![pdi-cmd-transf-overview](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-overview.png){:class="img-responsive"}
 
+Wir schauen uns die Einstellungen der wichtigen Schritte.
 Als erstes definieren wir 2 Felder: 
 - XUCmd: "C:\Program Files\XtractUniversal\xu.exe"	
 - XUArg: http://KETSWIN16DC02:8065/?name=SAPCustomersToSQL
 ![pdi-cmd-transf-generate-rows-settings](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-generate-rows-settings.png){:class="img-responsive"}
 
-Die Settings zum Aufruf des Command Tools:
+Die Settings zum Aufruf des Command Tools. Wie man leicht sieht, haben wir auch Fehlerbehanldung eingebaut. 
 ![pdi-cmd-transf-exe-settings01](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-exe-settings01.png){:class="img-responsive"}
 
 ![pdi-cmd-transf-exe-settings02](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-exe-settings02.png){:class="img-responsive"}
