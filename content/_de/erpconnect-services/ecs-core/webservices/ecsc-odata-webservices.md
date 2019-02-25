@@ -52,5 +52,3 @@ Sichern Sie alle Einstellungen mit OK und kehren Sie zur Einstiegsmaske zurück.
 Sie finden den Webservice anschließend auf der Management-Site Ihrer ECS Core-Maschine unter *Extensions>Services oder im Unterverzeichnis WSD der Port 8080 Seite im IIS Manager*. 
 
 Wie Sie den Webservice in einem REST-Client testen können, erfahren Sie [hier](./testen-des-webservice-in-einem-rest-client).
-
-Wie Sie den Webservice in Nintex für Office 365 aufrufen können, wird [hier](../../sap-integration-nintex/nintex-workflow-fuer-office-365) beschrieben.  
