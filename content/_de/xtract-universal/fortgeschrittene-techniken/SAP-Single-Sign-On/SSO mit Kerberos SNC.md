@@ -42,7 +42,7 @@ Diese Einstellung hat erstmal nichts direkt mit dem Einrichten von SSO zu tun, i
 
 Legen Sie einen Windows AD Service Account an. Das ist der Account, unter dem der Xtract Universal Service läuft (XU Service Account).
 
-Definieren Sie im *Attribut-Editor* Tabreiter zwei *Service Principal Names (SPN)* in der Notation *HTTP/[XU FQDN host name]* und *HTTP/[XU host name]*. In nachfolgendem Screenshot ist *theosoftw2012r2* der Name des Rechners, auf dem der XU Service läuft.
+Definieren Sie im *Attribut-Editor* Tabreiter zwei *Service Principal Names (SPN)* in der Notation *HTTP/[XU FQDN host name]* und *HTTP/[XU host name]*. In nachfolgendem Screenshot ist *theosoftw2012r2* der host name, auf dem der XU Service läuft.
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
 
 Konfigurieren Sie den XU Service Account für *Constrained Delegation*. Hier wird der SPN des Accounts eingetragen, unter dem der SAP-Applikationsserver läuft (SAP Service Account).
@@ -92,7 +92,7 @@ Value:   1
 **Zu 4: Einstellungen in Xtract Universal**
 
 
-Öffnen Sie die Einstellungen zur SAP Source. Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den SPN des SAP Service Accounts an (siehe Screenshot unter Punkt 2 oben). Bitte verwenden Sie diese Notation. *p:\<SPN\>\@\<Domain-FQDN-Uppercase\>*.  
+Öffnen Sie die Einstellungen zur SAP Source. Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den SPN des SAP Service Accounts an (siehe Screenshot unter Punkt 2 oben). Bitte verwenden Sie diese Notation. *p:[SPN]\@[Domain-FQDN-Uppercase]*.  
 
 *Achtung:* 
 * Im SAP Logon Pad wird im Falle von SNC der Partnername häufig im Format des UPN des SAP Service Accounts angegeben (*p:[SAP Service Account]@[Domäne]*). Das ist im Falle von Xtract Universal *falsch*. Bitte verwenden Sie, wie oben beschrieben, immer den SPN in der obigen Notation.
