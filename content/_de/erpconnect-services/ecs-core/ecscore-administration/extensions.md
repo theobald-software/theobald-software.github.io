@@ -13,4 +13,3 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=extensions
 
 Im Menü Extensions lassen sich benutzerdefinierte Module/Erweiterungen hinzufügen.
 
-![ecscore-managementsite18](/img/content/ecscore-managementsite18.jpg.png){:class="img-responsive"}

@@ -21,7 +21,6 @@ Das initiale Benutzer/Passwort-Paar lautet admin/admin. Ändern Sie es am besten
 
 ![2014-12-15-13_41_39-Log-in](/img/content/2014-12-15-13_41_39-Log-in.jpg){:class="img-responsive"}
 
-![ecscore-managementsite-3](/img/content/ecscore-managementsite-3.jpg.png){:class="img-responsive"}
 
 Es stehen folgende Dienste auf der Management Site zur Verfügung:
 

@@ -13,5 +13,5 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=overview
 
 Im Reiter *Overview* werden aktuelle Hinweise angezeigt.
 
-![ecscore-managementsite-1.jpg](/img/content/ecscore-managementsite-1.jpg.png){:class="img-responsive"}
+
 

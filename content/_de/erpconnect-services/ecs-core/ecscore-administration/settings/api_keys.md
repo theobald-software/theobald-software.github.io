@@ -20,12 +20,9 @@ Für zahlreiche Cloud-Szenarien stellt dies einen praktikablen und typischen Aut
 
 Um einen neuen API Key hinzuzufügen klicken Sie auf *Add API Key* im Abschnitt API Keys. Sie müssen einen API Key immer einem gültigen Windows Benutzer mit seinem entsprechenden Windows-Kennwort zuweisen:
 
-![ecscore-managementsite26](/img/content/ecscore-managementsite26.jpg.png){:class="img-responsive"}
 
 Nach der Erstellung des Schlüssels wird dieser unter API Keys ausgeführt. Sie können diesen jetzt zur Authentifizierung innerhalb einer Cloud-Anwendung (z.B. Microsoft Flow) verwenden. Unter Umständen muss der Cache zunächst noch bereinigt werden (beschrieben unter Services Site). 
 
-
-![ecscore-managementsite27](/img/content/ecscore-managementsite27.jpg.png){:class="img-responsive"}
 
 Klicken Sie auf den API Key, um die folgenden Optionen angezeigt zu bekommen: 
 
@@ -35,4 +32,3 @@ Klicken Sie auf den API Key, um die folgenden Optionen angezeigt zu bekommen:
 
 Sie benötigen die Update Option, falls sich die Windows Zugangsdaten geändert haben. Ein Base64 verschlüsselter API Key wird in einigen Anwendungen verlangt (z.B. REST Client im Authentifizierungs Header). 
 
-![ecscore-managementsite26](/img/content/ecscore-managementsite26.jpg.png){:class="img-responsive"}

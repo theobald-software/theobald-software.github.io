@@ -68,8 +68,6 @@ Klicken Sie auf den neu hinterlegten Service und anschließend auf *Users*:
 Neue User fügen Sie mit Add User hinzu. Es sind damit die User Ihres Windows Systems gemeint. Sie können nach Bedarf einzelne Windows User oder Gruppen hinzufügen. 
 
 
-![ecscore-managementsite10](/img/content/ecscore-managementsite10.jpg.png){:class="img-responsive"}
-
 Hinzugefügte Windows User oder Gruppen können jederzeit wieder entfernt werden.
 
-![ecscore-managementsite11](/img/content/ecscore-managementsite11.jpg.png){:class="img-responsive"}
+

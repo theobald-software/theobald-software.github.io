@@ -19,6 +19,5 @@ Im Settings Menü können Sie Einstellungen zu folgenden Punkten vornehmen:
 - API Schlüssel (API Keys)
 - Azure Service Bus
 
-![ecscore-managementsite19](/img/content/ecscore-managementsite19.jpg.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
