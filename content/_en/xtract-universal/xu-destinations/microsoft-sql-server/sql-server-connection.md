@@ -16,20 +16,27 @@ The following settings can be defined for the Microsoft SQL database connection.
 ![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.jpg){:class="img-responsive"}
 
 
-**Host Name**<br>
-Defines the name of the SQL server.
+**Server Name**<br>
+Defines the name of the host the SQL server is running on.
 
-**Integrated Security**<br>
-Defines if the Windows Integrated Security should be used. Alternatively use:
+**Require TLS encryption**<br>
+Clientside enforcement for using [TLS encrpytion[(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-overview). 
 
-**User ID**<br>
-The user id and 
+
+**Windows Authentication**
+Uses the service account, under which the XU service is running, for authentication against SQL Server.
+
+**Impersonate authenticated caller**
+Uses the Windows AD user, executing the extraction, for authentication against SQL Server. (Kerberos)
+
+**User Name**<br>
+SQL Server authentication - user id 
 
 **Password**<br>
-The password.
+SQL Server authentication - password
 
 **Database Name**<br>
-Defines the name of the SQL database.
+Defines the name of the SQL Server database.
              
 **Test Connection**<br>
 Checks the database connection. 
@@ -37,4 +44,4 @@ Checks the database connection.
 
 **Database Schema**<br> 
 By default the user's default schema dbo will be used. 
-To use another schema, you should set it as the default schema for your user on the SQL Server database. 
+To use another schema, you should set it as the [default schema](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-user-transact-sql?view=sql-server-2017) for your user on the SQL Server database. 
