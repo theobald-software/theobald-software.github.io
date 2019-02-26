@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/
 ---
 
-_Willkommen in der Online Help von Xtract IS._
+Willkommen in der Online Help von Xtract IS. 
 
 In der unteren Übersicht finden Sie, welche Komponente fürs Lesen (R) bzw. fürs Schreiben (W) mit dem jeweiligen SAP-System (ERP oder BW) sind. 
 Darüber hinaus sehen Sie noch die notwendige Lizenz. 
