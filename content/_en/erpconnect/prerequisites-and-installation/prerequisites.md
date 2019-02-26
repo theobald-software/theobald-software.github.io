@@ -69,11 +69,11 @@ Installation of custom function modules / transport requests is not required.
 
 ### Security Settings
  	
-* For logging on to SAP, a system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects) is required.
+* For logging on to SAP, a system or dialog user with appropriate [authority objects](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights) is required.
 * Plain authentication (user/password), Secure Network Communications (SNC) with and without Single Sign-On (SSO) and SAP Logon Tickets (MYSAPSSO2) are supported.
 
 
 ### Network Settings
  	
 Ports need to be opened depending on the technique how the connection to an SAP System is made.
-Details can be found [here](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/70/0/how-to-check-the-accessibility-to-a-sap-system).
+Details can be found [here](https://kb.theobald-software.com/sap/how-to-check-the-accessibility-to-a-sap-system).
