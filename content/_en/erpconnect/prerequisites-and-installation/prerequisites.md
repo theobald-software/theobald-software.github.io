@@ -32,25 +32,9 @@ That results in the following compatibility matrix:
 |.NET Core 2.0 and newer | X |	X	| X |
 |Universal Windows Platform 10.0.16299 and newer	| X | | |	 	 
 
-### SAP Releases
- 	
-* SAP R/3 Version 4.0B and later versions
-* SAP ECC 6.0 or later
-* SAP NW 7.0 or later
-* SAP S/4HANA
-* Business All-in-One
-* SAP BW Version 3.1 and later.
+{% include _content/en/sap-releases.md %}
 
-
-SAP Business One and SAP Objects are not supported
-
-| Component | SAP Release | Requirements to the SAP system |
-| :-------- |:--- | :--- |
-| Table | Rel. above 4.0B | Nothing. |
-| Query | Rel. above 4.0B | Nothing. |
-| BAPI | Rel. above 4.0B | Nothing. |
-| BW Cube | Rel. above BW 3.1 | Nothing. | 
-
+Installation of custom function modules / transport requests is not required.
 
 {% include _content/en/operating-systems.md %}
 
@@ -76,7 +60,7 @@ SAP Business One and SAP Objects are not supported
 
 
 ### Disk Space
-* About 12 MB disk space are required  for a full installation.
+* About 12 MB disk space are required for a full installation.
 
 
 ### 32/64-Bit Environment
