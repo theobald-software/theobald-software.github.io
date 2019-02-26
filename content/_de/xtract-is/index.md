@@ -30,7 +30,4 @@ Darüber hinaus sehen Sie noch die notwendige Lizenz.
 | OHS         |     | R  |                    | X                |
 | BW Loader   |     | W  |                    | X                | 
 
-
-~~The world is flat.~~
-
 {% include _content/table-of-contents.html parent="xtract-is" collection=site.de %}
