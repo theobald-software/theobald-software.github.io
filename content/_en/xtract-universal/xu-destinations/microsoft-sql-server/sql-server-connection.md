@@ -30,7 +30,7 @@ Uses the service account, under which the XU service is running, for authenticat
 Uses the Windows AD user, executing the extraction, for authentication against SQL Server using [Kerberos authentication.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
 
 **User Name**<br>
-SQL Server authentication - user id 
+SQL Server authentication - user name 
 
 **Password**<br>
 SQL Server authentication - password

@@ -29,7 +29,7 @@ Verwendet den Service Account, unter dem der XU Service läuft, um sich am SQL S
 Verwendet den Windows AD Benuzer, der die Extraktion ausführt, um sich am SQL Server zu authentisieren [Kerberos.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
 
 **User Name**<br>
-SQL Server Authentisierung - User ID 
+SQL Server Authentisierung - User Name 
 
 **Password**<br>
 SQL Server Authentisierung - Passwort
