@@ -1,7 +1,7 @@
 ### SAP Releases
 
-All communication with SAP is performed via the RFC protocol.
-Releases 4.6C and newer are supported.
+All communication with SAP is performed via the RFC protocol. That means, the integration occurs at SAP application server level. Therefore, the database used by the SAP system is irrelevant - all databases (including HANA) are supported.
+SAP Releases 4.6C and newer are supported.
 This includes: 	
 * SAP R/3 Version 4.6C and later
 * mySAP
