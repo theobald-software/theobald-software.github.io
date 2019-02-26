@@ -11,28 +11,35 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sql-server-verbindung
 ---
 
-Folgende Einstellungen können für die Verbindung zur Zieldatenbank definiert werden.
+Folgende Einstellungen können für die Verbindung zum Microsoft SQL Server definiert werden.
 
 ![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.jpg){:class="img-responsive"}
 
-**Host Name**<br>
+**Server Name**<br>
 Name des Datenbank-Servers.
 
-**Integrated Security**<br>
-Definiert, ob die Windows Integrated Security verwendet wird. Alternativ geben Sie ein:
+**Require TLS encryption**<br>
+Clientseitiges Erzwingen von [TLS Verschlüsselung](https://docs.microsoft.com/de-de/azure/sql-database/sql-database-security-overview). 
 
-**User ID**<br>
-einen Benutzernamen und 
+
+**Windows Authentication**<br>
+Verwendet den Service Account, unter dem der XU Service läuft, um sich am SQL Server zu authentisieren.
+
+**Impersonate authenticated caller**<br>
+Verwendet den Windows AD Benuzer, der die Extraktion ausführt, um sich am SQL Server zu authentisieren [Kerberos.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
+
+**User Name**<br>
+SQL Server Authentisierung - User ID 
 
 **Password**<br>
-ein Passwort.
+SQL Server Authentisierung - Passwort
 
 **Database Name**<br>
-Name der Datenbank.
+Name der Datenbank
              
 **Test Connection**<br>
-Klicken Sie auf den Knopf, um die Datenbankverbindung zu testen. 
+Klicken Sie auf die Schaltfläche, um die Datenbankverbindung zu testen. 
 
 **Databankschema** <br>
 Standardmäßig wird das Default-Schema dbo des Benutzers verwendet.  <br>
-Wenn Sie ein anderes Schema nutzen wollen, dann sollten Sie dieses Schema als Default für den Benutzer auf der Datenbank setzen. 
+Wenn Sie ein anderes Schema nutzen wollen, dann sollten Sie dieses [Schema als Default](https://docs.microsoft.com/de-de/sql/t-sql/statements/alter-user-transact-sql?view=sql-server-2017) für den Benutzer auf der Datenbank setzen. 

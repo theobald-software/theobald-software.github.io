@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-connection
 ---
 
-The following settings can be defined for the Microsoft SQL database connection. 
+The following settings can be defined for the Microsoft SQL Server connection. 
 
 ![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.jpg){:class="img-responsive"}
 
@@ -20,14 +20,14 @@ The following settings can be defined for the Microsoft SQL database connection.
 Defines the name of the host the SQL server is running on.
 
 **Require TLS encryption**<br>
-Clientside enforcement for using [TLS encrpytion[(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-overview). 
+Clientside enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-overview). 
 
 
-**Windows Authentication**
+**Windows Authentication**<br>
 Uses the service account, under which the XU service is running, for authentication against SQL Server.
 
-**Impersonate authenticated caller**
-Uses the Windows AD user, executing the extraction, for authentication against SQL Server. (Kerberos)
+**Impersonate authenticated caller**<br>
+Uses the Windows AD user, executing the extraction, for authentication against SQL Server using [Kerberos authentication.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
 
 **User Name**<br>
 SQL Server authentication - user id 
