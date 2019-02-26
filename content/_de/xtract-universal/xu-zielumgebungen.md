@@ -29,9 +29,9 @@ Xtract Universal bietet die Möglichkeit, die aus SAP extrahierten Daten in vers
 - [Teradata](./xu-zielumgebungen/teradata) 
 
 **Business Intelligence / Analytics Tools:**
-- [Microstrategy](./xu-destinations/microstrategy)
-- [Power BI (Cloud)](./xu-destinations/powerbi_cloud) 
-- [Power BI Desktop using OData, Power Pivot & Excel](./xu-destinations/power_bi_desktop) 
+- [Microstrategy](./xu-zielumgebungen/microstrategy)
+- [Power BI (Cloud)](./xu-zielumgebungen/powerbi_cloud) 
+- [Power BI Desktop using OData, Power Pivot & Excel](./xu-zielumgebungen/power_bi_desktop) 
 - [Tableau](./xu-zielumgebungen/tableau) 
 - [QlikSense and QlikView](./xu-zielumgebungen/qlik)  
 
