@@ -21,8 +21,8 @@ Defines the name of the host the SQL server is running on.
 
 **Require TLS encryption**<br>
 Clientside enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following paramenters to the connection string:<br>
-*Encrypt = On
-*TrustServerCertificate = Off
+* Encrypt = On
+* TrustServerCertificate = Off
 <br>
 For further information, please see [Enable Encrypted Connections to the Database Engine](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-2017)
 
