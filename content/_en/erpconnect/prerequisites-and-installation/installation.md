@@ -24,4 +24,4 @@ All files marked with (<b>*</b>) may be redistributed to customers together with
 | IdocSchemeGenerator.exe | 	Small tool to generate XML schemas for IDocs (see [XML-Support for IDoc programming](../receiving-and-sending-idocs/xml-support-for-idoc-programming)) |
 | FunctionTemplateGenerator.exe | Small tool to generate XML templates for RFCFunction objects (see [Improve your Perfor-mance by Using Templates](../calling-bapis-and-function-modules/improve-your-performance-by-using-templates)) |
 
-After the installation you are able to use ERPConnect in your .NET environment. If you want to use the the LINQ Designer, please run the right LINQToERPSetup for your VisualStudio environment. Details you can find in the LINQToERP chapter here.
+After the installation you are able to use ERPConnect in your .NET environment. If you want to use the the LINQ Designer, please run the right LINQToERPSetup for your VisualStudio environment. Details you can find in the LINQToERP chapter.
