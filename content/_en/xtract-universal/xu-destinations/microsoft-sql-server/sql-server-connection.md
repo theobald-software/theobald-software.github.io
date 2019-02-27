@@ -20,14 +20,20 @@ The following settings can be defined for the Microsoft SQL Server connection.
 Defines the name of the host the SQL server is running on.
 
 **Require TLS encryption**<br>
-Clientside enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-overview). 
-
+Clientside enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following paramenters to the connection string:<br>
+*Encrypt = On
+*TrustServerCertificate = Off
+<br>
+For further information, please see [Enable Encrypted Connections to the Database Engine](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-2017)
 
 **Windows Authentication**<br>
 Uses the service account, under which the XU service is running, for authentication against SQL Server.
 
 **Impersonate authenticated caller**<br>
 Uses the Windows AD user, executing the extraction, for authentication against SQL Server using [Kerberos authentication.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
+<br>
+For using this functionality a similar configuration as for [Kerberos Single Sign On against SAP](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/SAP-Single-Sign-On/SSO%20mit%20Kerberos%20SNC) is required.
+
 
 **User Name**<br>
 SQL Server authentication - user name 
