@@ -26,4 +26,4 @@ ERPConnect.LIC.SetLic("XXXXXXXXXX")
   
 If you have more than one developer licence, the licence numbers end with -01,-02, etc. Which ending you use with SetLic does not matter. You may omit the end completely.  
   
-The trial version of ERPConnect does not work in a web environment. Please apply for a limited test licence number if you want to use ERPConnect with your ASP.NET project ([support@theobald-software.com](mailto:support@theobald-software.com)).  
+The trial version of ERPConnect does not work in a web environment. Please apply for a limited test licence number if you want to use ERPConnect with your ASP.NET project ([sales@theobald-software.com](mailto:sales@theobald-software.com)).  
