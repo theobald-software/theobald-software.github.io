@@ -22,7 +22,6 @@ Name des Datenbank-Servers.
 Clientseitiges Erzwingen von [TLS Verschlüsselung](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Setzt folgende Parameter im Connection String:<br>
 * Encrypt = On
 * TrustServerCertificate = Off
-
 <br>
 
 siehe auch [Aktivieren von verschlüsselten Verbindungen zur Datenbank-Engine](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-2017#client-request-encrypt-connect-23h)
