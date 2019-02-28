@@ -12,12 +12,24 @@ lang: de_DE
 old_url: /Xtract-IS-DE/
 ---
 
+### Architecture
+
 Willkommen in der Online-Help von Xtract IS.
 
 Die Xtract IS Komponentensuite bietet Ihnen insgesamt 10 unterschiedliche Bausteine für die *SQL Server Integration Services* an.<br>
 Somit steht Ihnen die komplette Bandbreite der Datenextraktion für unterschiedliche SAP-Objekte zur Verfügung.
 
 ![XIS-Architecture](/img/content/xis-arch.png){:class="img-responsive"}
+
+### Integration von SAP ERP
+
+![XIS-sap_erp](/img/content/xis_sap_erp.png){:class="img-responsive"}
+
+### Integration von SAP BW
+
+![XIS-sap_bw](/img/content/xis_sap_bw.png){:class="img-responsive"}
+
+### Verwendung & Einsatz der Komponenten
 
 In der unten stehenden Übersicht finden Sie, welche Komponente fürs Lesen (Read) bzw. fürs Schreiben (Write) <br>
 mit dem jeweiligen SAP-System (ERP oder BW) verwendet werden können. Darüber hinaus sehen Sie noch die notwendige Lizenz. 
