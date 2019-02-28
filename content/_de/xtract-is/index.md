@@ -12,16 +12,16 @@ lang: de_DE
 old_url: /Xtract-IS-DE/
 ---
 
-Willkommen in der Online Help von Xtract IS. 
+Willkommen in der Online-Help von Xtract IS. 
 
-In der unteren Übersicht finden Sie, welche Komponente fürs Lesen (R) bzw. fürs Schreiben (W) mit dem jeweiligen SAP-System (ERP oder BW) sind. 
+In der unten stehenden Übersicht finden Sie, welche Komponente fürs Lesen (Read) bzw. fürs Schreiben (Write) mit dem jeweiligen SAP-System (ERP oder BW) verwendet werden können. 
 Darüber hinaus sehen Sie noch die notwendige Lizenz. 
 
-| Komponente | ERP | BW | Enterprise Lizenz | Ultimate Lizenz |
+| Komponente | ERP | BW | Enterprise<br> Lizenz | Ultimate <br> Lizenz  |
 |-------------|-----|----|--------------------|------------------|
 | Table       | R   | R  | X                  | X                |
 | Table Join  | R   | R  |                    | X                |
-| BAPI        | RW  | RW | X                  | X                |
+| BAPI        | R/W  | R/W | X                  | X                |
 | Query       | R   |    | X                  | X                |
 | ABAP Report | R   |    |                    | X                |
 | DeltaQ      | R   | R  |                    | X                |
