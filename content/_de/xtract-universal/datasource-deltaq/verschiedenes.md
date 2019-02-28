@@ -10,7 +10,7 @@ weight: 10
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=verschiedenes
 ---
-
+ 
 ## Hilfreiche Transaktionen im SAP-System bei der Arbeit mit DataSources
 
 ### Initiales Setup
