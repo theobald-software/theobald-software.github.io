@@ -13,19 +13,26 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=verschiedenes
 
 **Hilfreiche Transaktionen im SAP-System bei der Arbeit mit DataSources**
 
+
+<h2> Initiales Setup <br>
+SBIW - SAP DataSources Startseite<br>
 RSA3 - Extraktor Checker <br>
 RSA5 - DataSources und Hierarchien aus dem Business Content installieren<br>
 RSA6 - DataSources und Hierarchien nachbearbeiten<br>
-RSA7 - Pflege Delta Queue<br>
-SBIW - Business Content DataSources<br>
+SM59 - Konfiguration der RFC-Verbindungen<br>
+
+<h2> Fehleranalyse
+SQMQS - qRFC Monitor (QOUT Scheduler)
 SM37 - Hintergundjobs<br>
 SM50 - Prozessübersicht<br>
 SM58 - Transaktionaler RFC<br>
-SM59 - Konfiguration der RFC-Verbindungen<br>
 SMGW - Gateway Monitor<br>
-SMQ1 - qRFC Monitor (Ausgangsqueue)<br>
-WE02 - IDoc-Liste
 
+<h2> Sonstige
+SMQ1 - qRFC Monitor (Ausgangsqueue)<br>
+RSA7 - Pflege Delta Queue<br>
+WE02 - IDoc-Liste
+WE20 - Partnervereinbarungen
 
 **DeltaQ parallel ausführen**
 
@@ -33,12 +40,12 @@ Sie können mehrere Datasources mit derselben RFC Destination parallel ausführe
 Es wird jedoch empfohlen für jede parallel laufende DeltaQ-Extraktion eine eigene RFC-Destination zu verwenden, also z.B. XTRACT01, XTRACT02, etc.
 
 
-**Hilfreiche (englischsprachige) Links zum Thema Extraktoren (Datasources)**
+**Hilfreiche (englischsprachige) Links zum Thema Extraktoren (DataSources)**
 
 DeltaQ Troubleshooting Guide (KB)<br>
 [https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide)
 
-How to activate Datasources in the SAP OLTP System (Blog)<br>
+How to activate DataSources in the SAP OLTP System (Blog)<br>
 [http://theobald-software.com/blog/2013/04/15/activating-datasources-in-the-oltp-system/](http://theobald-software.com/blog/2013/04/15/activating-datasources-in-the-oltp-system/)
 
 How to activate activate the BI Content DataSource (SAP Help)<br>
@@ -47,7 +54,7 @@ How to activate activate the BI Content DataSource (SAP Help)<br>
 How to extract data from SAP BW/BI via Export DataSources  <br>
 [http://theobald-software.com/blog/2010/06/17/extracting-data-from-sap-bwbi-via-export-datasources-with-xtract-is/](http://theobald-software.com/blog/2010/06/17/extracting-data-from-sap-bwbi-via-export-datasources-with-xtract-is/)
 
-How to create Generic Datasource using Function Module and Timestamps<br>
+How to create Generic DataSource using Function Module and Timestamps<br>
 [http://theobald-software.com/blog/2011/02/16/create-generic-datasource-using-function-module-and-timestamps/](http://theobald-software.com/blog/2011/02/16/create-generic-datasource-using-function-module-and-timestamps/)
 
 How to Create Generic DataSources which use the Delta Queue<br>
