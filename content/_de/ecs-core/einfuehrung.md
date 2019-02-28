@@ -15,7 +15,7 @@ old_url: /ECS-Core-DE/default.aspx?pageid=ecs-core
 
 Die Software-Architektur sieht folgendermaßen aus: ECS Core wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert und stellt eine Konfigurationsplattform zum Einrichten der Konnektivität zwischen SAP- und Cloud-Anwendungen zur Verfügung. Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um das lokale SAP-System mit der jeweiligen Cloud-Anwendung zu verbinden.  
 
-![ecscore-architecture](/img/content/ecscore-architecture.jpg){:class="img-responsive"}
+![ecscore-architecture](/img/content/ecscore-architecture.png){:class="img-responsive"}
 
 Diese Softwarearchitektur ermöglicht unzählige Integrationsszenarien für den Lese- und Schreibzugriff auf alle gängigen SAP ERP Systeme. Die SAP-Integration wird sowohl für Entwickler als auch mit Non-Code-Konzepten auch für Power-User und Software-Architekten ohne Programmierkenntnisse ermöglicht. 
 Unabhängig vom gewählten Integrationsansatz ist die Anwendungssicherheit eines der Kernelemente von ECS Core - die Unterstützung verschiedener Authentifizierungsmethoden ermöglicht eine sichere Verbindung der Cloud-Anwendungen mit dem lokalen SAP-System. Um die Konnektivität herzustellen, sind auf SAP-Seite keine zusätzlichen Installationen oder Customizing erforderlich.
