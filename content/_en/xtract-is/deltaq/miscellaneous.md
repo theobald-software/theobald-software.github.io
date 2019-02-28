@@ -12,21 +12,21 @@ lang: en_GB
 
 **Helpful Transactions in the SAP System for Working with DataSources**
 
-<h2> Initial setup <br>
+## Initial setup <br>
 SBIW - SAP DataSources start page<br>
 RSA3 - Extractor Checker <br> 
 RSA5 - Installing DataSources and Hierarchies from Business Content <br> 
 RSA6 - Postprocess DataSources and Hierarchies <br>
 SM59 - Configuration of RFC Connections <br>
 
-<h2> Error analysis
+## Error analysis
 SMQS - qRFC Monitor (QOUT Scheduler): Number of *Max.Conn.* should be at least 10<br>
 SM37 - Background jobs <br>
 SM58 - Transactional RFC <br> 
 SM50 - Process overview <br>
 SMGW - Gateway Monitor <br>
 
-<h2> Other
+## Other
 RSA7 - Delta Queue Maintenance <br>
 SMQ1 - qRFC Monitor (outbound queue) <br>
 WE02 - IDoc list <br>

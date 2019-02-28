@@ -14,21 +14,21 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=verschiedenes
 **Hilfreiche Transaktionen im SAP-System bei der Arbeit mit DataSources**
 
 
-<h2> Initiales Setup <br>
+## Initiales Setup <br>
 SBIW - SAP DataSources Startseite<br>
 RSA3 - Extraktor Checker <br>
 RSA5 - DataSources und Hierarchien aus dem Business Content installieren<br>
 RSA6 - DataSources und Hierarchien nachbearbeiten<br>
 SM59 - Konfiguration der RFC-Verbindungen<br>
 
-<h2> Fehleranalyse
+## Fehleranalyse
 SQMQS - qRFC Monitor (QOUT Scheduler)
 SM37 - Hintergundjobs<br>
 SM50 - Prozessübersicht<br>
 SM58 - Transaktionaler RFC<br>
 SMGW - Gateway Monitor<br>
 
-<h2> Sonstige
+## Sonstige
 SMQ1 - qRFC Monitor (Ausgangsqueue)<br>
 RSA7 - Pflege Delta Queue<br>
 WE02 - IDoc-Liste

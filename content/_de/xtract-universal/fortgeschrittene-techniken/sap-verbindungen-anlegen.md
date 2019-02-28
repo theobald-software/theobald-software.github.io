@@ -108,7 +108,7 @@ SAP hat den [Support für die librfc32.dll[(https://blogs.sap.com/2012/08/15/sup
 
 <br>
 
-<h2>SAP Log On
+##SAP Log On
 
 In diesem Abschnitt zeigen wir Ihnen, wo Sie die benötigten Informationen für die SAP-Verbindung im SAP-Logon finden können. 
 
