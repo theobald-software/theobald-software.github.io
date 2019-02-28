@@ -1,10 +1,10 @@
 ---
-ref: xi-q-delta-10
+ref: xu-datasource-deltaq-10
 layout: page
 title: Miscellaneous
 description: Miscellaneous
-product: xtract-is
-parent: deltaq
+product: xtract-universal
+parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 10
 lang: en_GB

@@ -1,10 +1,10 @@
 ---
-ref: xi-q-delta-10
+ref: xu-datasource-deltaq-10
 layout: page
 title: Verschiedenes
 description: Verschiedenes
-product: xtract-is
-parent: xtract-is-deltaq
+product: xtract-universal
+parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 10
 lang: de_DE
