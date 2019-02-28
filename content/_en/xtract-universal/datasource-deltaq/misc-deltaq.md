@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 10
 lang: en_GB
 ---
-
+ 
 ## Helpful Transactions in the SAP System for Working with DataSources
 
 ### Initial setup
