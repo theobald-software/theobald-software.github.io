@@ -21,6 +21,17 @@ Which RFC library is used is a matter of taste. <br>
 librfc32 has been discontinued by SAP and is officially no longer supported. However, it is more stable and uses less resources than the Netweaver library recommended by SAP. <br>
 The trace file specification can only be used by Support if requested to do so.
 
-
 ![Designer](/img/content/xfa/designer02.png){:class="img-responsive"}
 
+**Debug Logging**<br>
+
+If some errors occur, debug logging (tracing) information may be required to analyze the issue. 
+To activate tracing please follow those steps:
+
+- Fill in a path (e.g. C:\Temp\Trace) in the field Trace Directory in the SAP connection Manager. To open the SAP connection manager, select the designer menu Server -> Manage Services. Select your SAP connection and click Edit.
+- Reproduce the error. XML Files are created in the folder specified with the tracing information.
+- Compress the folder to a zip file (e.g. Trace.zip) and sent it to our support.
+- After reproducing the error delete the entry in the field Trace Directory since tracing is not needed anymore.
+
+Please note that the debug logging usually should be activated by request of the support team.
+There are plenty of information that will be collected. This can decrease the capacity of your hard drives dramatically.
