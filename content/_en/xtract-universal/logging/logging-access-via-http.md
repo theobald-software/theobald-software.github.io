@@ -38,7 +38,9 @@ http://localhost:8085/log/?req_type=server&timestamp=2010-04-28
 
 You can access the log of a specified extraction (e.g. vardemo)  with the following  parameters: **req_type=extraction&name=vardemo** 
 
-<center>http://localhost:8085/log/?req_type=extraction&name=vardemo</center>
+```
+http://localhost:8085/log/?req_type=extraction&name=vardemo
+```
 
 **Log of a specified extraction at a specified timespamp**
 
@@ -53,21 +55,25 @@ http://localhost:8085/log/?req_type=extraction&name=vardemo&timestamp=2010-04-27
 
 You can access the list of all logs with the following parameter **req_type=all**:
 
-<center>http://localhost:8085/log/?req_type=all</center> 
-
+```
+http://localhost:8085/log/?req_type=all
+```
 
 **All logs since n days**
 
 You can access all logs since n days with the following parameters **req_type=all&past_days=n**:
 
-<center>http://localhost:8085/log/?req_type=all&past_days=1</center>
-
+```
+http://localhost:8085/log/?req_type=all&past_days=1
+```
 
 **All logs since a specified timestamp**
 
 You can access all logs since a specified timestamp with the following parameters **req_type=all&min=2010-04-28_09:49:17.831:**
 
-<center>http://localhost:8085/log/?req_type=all&min=2010-04-28_09:49:17.831</center> 
+```
+http://localhost:8085/log/?req_type=all&min=2010-04-28_09:49:17.831
+```
 
 You can use a short date instead of a min timestamp.
 
@@ -76,7 +82,9 @@ You can use a short date instead of a min timestamp.
 
 You can access all logs until a specified timestamp with the following parameters  **req_type=all&min=2010-04-28_09:49:17.831**:
 
-<center>http://localhost:8085/log/?req_type=all&max=2010-04-28_09:49:17.831</center>
+```
+http://localhost:8085/log/?req_type=all&max=2010-04-28_09:49:17.831
+```
 
 You can use a short date instead of a min timestamp.
 All logs between two specified timestamps
