@@ -22,10 +22,16 @@ Specifies the maximum number of extracted records. The value 0 stands for unlimi
 Specifies the number of records to be sent per packet. Which values are optimal in your case depends on your infrastructure. Experience shows that a package size between 15000 and 50000 makes sense for very large amounts of data. The value 0 means that there is no packaging. This can lead to an RFC timeout for large data extracts.
 
 **Custom Function**<br>
-The name of the customer-specific function - *customs function*. <br>
-The function module Z_THEO_READ_TABLE is used as standard. <br>
-Depending on the SAP releases, changes or enhancements are made to the underlying syntax, so you should always use the latest version of this module.
-You can view the current versions of Xtract IS and our customer-specific function [here](https://kb.theobald-software.com/version-history/xtract-is-version-history).<br>
+The name of the SAP function module used for table extraction. <br>
+On table lookup, the table component will automatically check for a suitable function module on the SAP system and enter its name in the _Custom Function_ field. This function module will be used for table extraction. However, you are free to overwrite this field and enter a different function module.<br>
+Following is a list of supported function modules. Some of them may already be available on your SAP system, others you may need to install first, in case you need to use them.
+* Z_THEO_READ_TABLE, Z_XTRACT_IS_TABLE_COMPRESSION, Z_XTRACT_IS_TABLE
+* RFC_READ_TABLE, /SAPDS/RFC_READ_TABLE, /SAPDS/RFC_READ_TABLE2, /BOPDS/RFC_READ_TABLE, /BODS/RFC_READ_TABLE2
+
+
+We recommend using our custom function module [Z_THEO_READ_TABLE](https://help.theobald-software.com/en/xtract-is/sap-customizing/custom-function-module-for-table-extraction). You need to install this function module on your SAP system first.
+Please make sure to always use the latest [version](https://kb.theobald-software.com/version-history/xtract-is-version-history) of this function module.
+<br>
  
 **Automatic String Conversion**<br>
 means that the data source converts all strings to NVarChar if SAP is a Unicode system and to VarChar if SAP is not a Unicode system.
