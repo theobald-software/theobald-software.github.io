@@ -13,11 +13,14 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=tablejoin
 ---
 
 The Table Join component allows to join many tables (and views) on the SAP side and to extract the result.  
-Possible scenarions are joining data from header and position tables or from attribute and text tables.  
+
+Possible scenarions are joining data from header and position tables or from attribute and text tables. 
+ 
 The correspondent SQL statement will be generated and executed on the SAP server.  
+
 The componente provides additional features as the definition of aggregate functions, where and having conditions. 
 
-It is required to install a custom funktion module on the SAP server to be able to use this component.  
+It is required to install a [custom funktion module](https://kb.theobald-software.com/sap/installation-of-the-function-module-z_xtract_is_table_join) on the SAP server to be able to use this component.  
 
 *Note*: Cluster and pool tables are not supported by the Table Join component, but they can be extracted using the table component. 
  
@@ -25,5 +28,7 @@ It is required to install a custom funktion module on the SAP server to be able 
 **SSIS Version**
 
 The component Table Join requires the SQL Server 2012 Integration Services (SSIS) version or higher. Older versions are not supported.
+
+For further information about the SSIS version and its compatibility please refer to our [knowledgebase article](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is)
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
