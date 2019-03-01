@@ -25,7 +25,7 @@ It is required to install a [custom funktion module](https://kb.theobald-softwar
 *Note*: Cluster and pool tables are not supported by the Table Join component, but they can be extracted using the table component. 
  
 
-**SSIS Version**
+### SSIS Version
 
 The component Table Join requires the SQL Server 2012 Integration Services (SSIS) version or higher. Older versions are not supported.
 

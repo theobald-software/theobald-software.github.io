@@ -25,7 +25,7 @@ Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](https://
 *Bemerkung*: Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden. 
  
 
-**SSIS-Version**
+### SSIS-Version
 
 Die Komponente Table Join setzt die Version SQL Server 2012 Integration Services (SSIS) voraus. Ältere Versionen werden nicht unterstützt. 
 
