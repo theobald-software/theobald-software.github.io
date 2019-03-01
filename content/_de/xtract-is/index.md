@@ -57,5 +57,6 @@ Folgende Quell-Objekte werden durch XTract IS Table unterstützt:
 
 
 
+Hier finden Sie die folgenden Kapitel:
 
 {% include _content/table-of-contents.html parent="xtract-is" collection=site.de %}

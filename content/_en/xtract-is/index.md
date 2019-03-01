@@ -12,10 +12,38 @@ lang: en_GB
 old_url: /Xtract-IS-EN/
 ---
 
-Welcome to the Online Help for Xtract IS. 
+### Architecture
 
-The following overview shows which components can be used for Read (R) and/or Write (W) access to the SAP ERP and/or BW system. 
-In addition you can find the required license to use component.
+Xtract IS is a plug-in for the SQL Server Integration Services (SSIS). It cannot be used outside SSIS, 
+
+so that a SQL Server license is required, even if the SQL Server database is not used. 
+
+The Xtract IS component suite offers you a total of 10 different modules for the SQL Server integration services.
+
+This provides you with the complete range of data extraction for different SAP objects.
+
+![XIS-Architecture](/img/content/xis-arch.png){:class="img-responsive"}
+
+
+### Using the components
+
+In the overview below you can see for which components read (R) and write (W) rights are available. 
+
+The required license for using the different components in SAP ERP and SAP BW can also be found in the table.
+
+
+### [Xtract IS Table](https://help.theobald-software.com/en/xtract-is/table)
+
+The component enables the user to extract mass data directly from SAP tables and views.
+
+The following source objects are supported by XTract IS Table:
+
+- pool tables
+- transparent tables
+- cluster tables
+- views
+
+Translated with www.DeepL.com/Translator
 
 | Component   | ERP | BW | Enterprise License | Ultimate License |
 |-------------|-----|----|--------------------|------------------|
