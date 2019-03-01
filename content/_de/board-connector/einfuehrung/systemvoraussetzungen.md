@@ -81,7 +81,7 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 
 **32/64-Bit Umgebung**
  	
-- Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
+- Das Produkt kann nur auf 64-Bit Betriebssystemen installiert werden.
 
 **Sicherheitseinstellungen**
  	

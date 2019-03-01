@@ -76,7 +76,7 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 		Für die Installation werden 150 MB Festplattenspeicher benötigt. 
 
 **32/64-Bit Umgebung** <br> 	
-- Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
+- Das Produkt kann nur auf 64-Bit Betriebssystemen installiert werden.
 
 **Zielumgebungen (Destinations)** <br>
 - Für eine Zielumgebung kann die Installation einer entsprechenden Bibliothek nötig sein. Weitere Informationen finden Sie auf der jeweiligen Seite *Voraussetzungen* der Zielumgebung.

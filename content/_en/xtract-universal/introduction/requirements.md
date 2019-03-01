@@ -77,7 +77,7 @@ The BW Cube component needs more memory for extracting BW data than e.g. the Tab
 For the installation 150 MB disk space is required.
 
 **32/64-Bit Environment**<br> 	
-- The product can be installed on 32-Bit and 64-Bit operating systems.
+- The product can be installed on 64-Bit operating systems only.
 
 **Destinations**<br>
 - For the use of the Destinations, an appropriate library may be be required. More information can be found under the Requirements section of each Destination.

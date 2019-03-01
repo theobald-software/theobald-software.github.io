@@ -80,7 +80,7 @@ Additional SAP licenses might be required for extracting data from SAP. Contact 
  
 **32/64-Bit Environment**
  	
-- The product can be installed on 32-Bit and 64-Bit operating systems.
+- The product can be installed on 64-Bit operating systems only.
 
 **Security Settings**
  	
