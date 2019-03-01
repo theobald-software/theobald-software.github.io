@@ -44,7 +44,7 @@ Die benötigte Lizenz für die Nutzung der unterschiedlichen Komponenten im SAP 
 | OHS         |     | R  |                    | X                |
 | BW Loader   |     | W  |                    | X                | 
 
-### Xtract IS Table
+### [Xtract IS Table](https://help.theobald-software.com/en/xtract-is/table)
 
 Die Komponente ermöglicht dem Benutzer, Massendaten direkt aus SAP-Tabellen und Views abzuziehen.
 
