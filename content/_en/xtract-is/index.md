@@ -25,13 +25,6 @@ This provides you with the complete range of data extraction for different SAP o
 ![XIS-Architecture](/img/content/xis-arch.png){:class="img-responsive"}
 
 
-### Using the components
-
-In the overview below you can see for which components read (R) and write (W) rights are available. 
-
-The required license for using the different components in SAP ERP and SAP BW can also be found in the table.
-
-
 ### [Xtract IS Table](https://help.theobald-software.com/en/xtract-is/table)
 
 The component enables the user to extract mass data directly from SAP tables and views.
@@ -43,11 +36,17 @@ The following source objects are supported by XTract IS Table:
 - cluster tables
 - views
 
-| Component   | ERP | BW | Enterprise License | Ultimate License |
+### Using the components
+
+In the overview below you can see for which components read (R) and write (W) rights are available. 
+
+The required license for using the different components in SAP ERP and SAP BW can also be found in the table.
+
+| Component   | ERP | BW | Enterprise <br<  License | Ultimate <br> License |
 |-------------|-----|----|--------------------|------------------|
 | Table       | R   | R  | X                  | X                |
 | Table Join  | R   | R  |                    | X                |
-| BAPI        | RW  | RW | X                  | X                |
+| BAPI        | R/W  | R/W | X                  | X                |
 | Query       | R   |    | X                  | X                |
 | ABAP Report | R   |    |                    | X                |
 | DeltaQ      | R   | R  |                    | X                |
