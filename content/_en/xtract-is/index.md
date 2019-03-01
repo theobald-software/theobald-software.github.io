@@ -43,8 +43,6 @@ The following source objects are supported by XTract IS Table:
 - cluster tables
 - views
 
-Translated with www.DeepL.com/Translator
-
 | Component   | ERP | BW | Enterprise License | Ultimate License |
 |-------------|-----|----|--------------------|------------------|
 | Table       | R   | R  | X                  | X                |
