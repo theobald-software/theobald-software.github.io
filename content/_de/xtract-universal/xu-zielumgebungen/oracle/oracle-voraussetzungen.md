@@ -12,6 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=oracle-voraussetzungen
 ---
 
 Um Daten nach Oracle zu laden, müssen Sie den **Oracle Data Provider for .NET, Managed Driver** installieren. 
+
 [http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 **ACHTUNG**: Die Oracle Destination funktioniert nur mit Oracle Data Provider Version 4.122.1.0 (ODAC 12.2.0.1.0)
