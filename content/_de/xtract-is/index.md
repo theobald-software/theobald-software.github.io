@@ -37,7 +37,7 @@ Die benötigte Lizenz für die Nutzung der unterschiedlichen Komponenten im SAP 
 
 | Komponente | ERP | BW | Enterprise <br> Lizenz | Ultimate <br> Lizenz  |
 |-------------|-----|----|:--|:--|
-| [Table](https://help.theobald-software.com/en/xtract-is/table)       | R   | R  | X                  | X                |
+| Table       | R   | R  | X                  | X                |
 | Table Join  | R   | R  |                    | X                |
 | BAPI        | R/W  | R/W | X                  | X                |
 | Query       | R   |    | X                  | X                |
@@ -47,7 +47,6 @@ Die benötigte Lizenz für die Nutzung der unterschiedlichen Komponenten im SAP 
 | Hierarchy   |     | R  |                    | X                |
 | OHS         |     | R  |                    | X                |
 | BW Loader   |     | W  |                    | X                | 
-
 
 
 Hier finden Sie die folgenden Kapitel:

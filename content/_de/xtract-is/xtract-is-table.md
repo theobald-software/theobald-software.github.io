@@ -16,11 +16,11 @@ Das folgende Kapitel erläutert die Nutzung der Xtract IS Table Datenquelle.
 
 Die Komponente ermöglicht dem Benutzer, Massendaten direkt aus SAP-Tabellen und Views abzuziehen.
 
-Folgende Quell-Objekte werden durch XTract IS Table unterstützt:
+Folgende Quell-Objekte werden durch Xtract IS Table unterstützt:
 
-- pool Tabellen
-- transparente Tabellen
-- cluster Tabellen
-- views
+- Pool Tabellen
+- Transparente Tabellen
+- Cluster Tabellen
+- Views
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
