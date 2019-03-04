@@ -20,11 +20,3 @@ Bitte installieren Sie den 64-bit-Treiber gemäß Anleitung.<br>
 Die volle ODAC Installation oder der gesamte Oracle DB Client funktioniert alternativ auch, sofern ODP.NET als Komponente ausgewählt wird.
 
 ![xu-oracle-odp-net-managed-driver](/img/content/xu-oracle-odp-net-managed-driver.jpg){:class="img-responsive"}
-
-
-**Wichtig**: Nach der Installation müssen Sie den Xtract Universal Service neustarten.
-
-
-
-
-
