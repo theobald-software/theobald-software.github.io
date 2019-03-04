@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=oracle-requirements
 ---
 
 
-For the use of the Oracle Destination, the **Oracle Data Provider for .NET, Managed Driver** be installed. 
+Loading data into Oracle requires installation of the **Oracle Data Provider for .NET, Managed Driver**.
 
 [http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
