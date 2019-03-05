@@ -22,13 +22,16 @@ Die aktuelle, aktive Lizenz wird angezeigt, im folgenden Fall ist es eine Demo-L
 
 Klicken Sie nun auf *Install*. Ein Dateiauswahldialog öffnet sich. Wählen Sie Ihre gekaufte Lizenz und bestätigen Sie mit *OK*. Wenn Sie den Lizenzmanager noch einmal starten, werden dort Ihre individuellen Lizenzdaten angezeigt. Ihre Lizenzdaten können Sie im Übrigen auch direkt in den Xtract IS SSIS-Komponenten anzeigen lassen, indem Sie auf *XtractIS Info* klicken.
 
-Dieses Bild zeigt eine korrekt installierte, dauerhafte Lizenz.
+Dieses Bild zeigt eine korrekt installierte und dauerhafte Lizenz.
 
 ![XIS_License_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive"}
 
-Xtract.License.dll Dateien werden im GAC registriert.<br> 
-XtractISLicense.json Dateien werden nach CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\ bzw. <br>C:\ProgramData\TheobaldSoftware\XtractIS\ kopiert.
+|Xtract.License.dll |  Dateien werden im GAC registriert. |
+|:--|:--|
+| XtractISLicense.json | 
+ 
+ Dateien werden nach CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\ bzw. <br>C:\ProgramData\TheobaldSoftware\XtractIS\ kopiert.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMTAwNTk1NF19
+eyJoaXN0b3J5IjpbLTExMjQ1MjAxN119
 -->
