@@ -28,11 +28,11 @@ Dieses Bild zeigt eine korrekt installierte und dauerhafte Lizenz.
 
 | Dateiname | Beschreibung |
 |:--|:--|
-| XtractISLicense.json | Dateien werden nach <br>*CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\* bzw. *C:\ProgramData\TheobaldSoftware\XtractIS\* kopiert.|
+| XtractISLicense.json | Dateien werden nach <br> CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\ bzw. <br> C:\ProgramData\TheobaldSoftware\XtractIS\ kopiert.|
 |Xtract.License.dll | Dateien werden im GAC registriert. |
  
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2OTc0MzEwMF19
+eyJoaXN0b3J5IjpbLTkxMzI3OTA4Nl19
 -->
