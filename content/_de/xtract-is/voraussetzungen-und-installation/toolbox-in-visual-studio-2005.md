@@ -21,10 +21,14 @@ Bitte ändern Sie die Zielumgebung für das Deployment auf SQL Server 2016. Dana
 
 ![XIS_deployment_target_version_vNext](/img/content/XIS_deployment_target_version_vNext.png){:class="img-responsive"}
 
-Um die Xtract IS Komponenten in Visual Studio 2008 oder früher innerhalb der Integration Service Umgebung in die Toolbox zu bekommen, klicken Sie in einem geöffneten Datenflusstask mit der rechten Maustaste auf die Toolbox und wählen Sie *Elemente Auswählen*. Wählen Sie in dem neuen Fenster den Reiter *SSIS Datenflusskomponenten*. Wenn alles richtig installiert ist, stehen dort die Xtract IS Komponenten zur Verfügung und müssen markiert werden. Falls Sie die Komponente Xtract IS BW Loader importieren, erscheint diese in der Toolbox unter Datenflussziele (nicht unter Quellen wie die anderen).
+Um die Xtract IS Komponenten in Visual Studio 2008 oder früher innerhalb der Integration Service Umgebung in die Toolbox zu bekommen:
+-  klicken Sie in einem geöffneten Datenflusstask mit der rechten Maustaste auf die Toolbox und wählen Sie *Elemente Auswählen*. 
+- Wählen Sie in dem neuen Fenster den Reiter *SSIS Datenflusskomponenten*. 
+
+Wenn alles richtig installiert ist, stehen dort die Xtract IS Komponenten zur Verfügung und müssen markiert werden. Falls Sie die Komponente Xtract IS BW Loader importieren, erscheint diese in der Toolbox unter Datenflussziele (nicht unter Quellen wie die anderen).
 
 ![Toolbox-01](/img/content/Toolbox-01.png){:class="img-responsive"}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTkzODY3NjddfQ==
+eyJoaXN0b3J5IjpbLTk1OTU2Mzg1LC0xMzU5Mzg2NzY3XX0=
 -->
