@@ -48,20 +48,13 @@ Im Verzeichnis \XtractIS\:
 
 |Dateiname | Beschreibung |
 |:----|:---|
+| ERPConnect35.dll | Enthält die Backend-Funktionen für den SAP-Zugriff. |
+| XtractIS* .dll | Enthält den Kern der Xtract IS Komponenten.| 
+| XtractIS* .GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
+| XtractIS* .ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
 
-**ERPConnect35.dll**<br> 
-Enthält die Backend-Funktionen für den SAP-Zugriff.
 
-**XtractIS* .dll** <br>
-Enthält den Kern der Xtract IS Komponenten.
-
-**XtractIS* .GUI.dll** <br>
-Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.
-
-**XtractIS* .ConnectionManager.dll**<br> 
-Enthält Funktionen für den Verbindungsmanager.
-
-**XtractISLicense.json** <br>
+ctISLicense.json** <br>
 Enthält Lizenz-Informationen.
 
 __* .txt__ <br>
@@ -87,5 +80,5 @@ Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz.
 
 Alle Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzkyNjU5MjUsMjEyMTAzMTI1NV19
+eyJoaXN0b3J5IjpbMTI4ODcwNTA0NiwyMTIxMDMxMjU1XX0=
 -->
