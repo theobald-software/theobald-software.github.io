@@ -26,12 +26,13 @@ Dieses Bild zeigt eine korrekt installierte und dauerhafte Lizenz.
 
 ![XIS_License_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive"}
 
-|Xtract.License.dll |  Dateien werden im GAC registriert. |
+| Dateiname | Beschreibung |
 |:--|:--|
 | XtractISLicense.json | Dateien werden nach <br>*CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\* bzw. *C:\ProgramData\TheobaldSoftware\XtractIS\* kopiert.|
+|Xtract.License.dll | Dateien werden im GAC registriert. |
  
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDk2MTE3XX0=
+eyJoaXN0b3J5IjpbLTM2OTc0MzEwMF19
 -->
