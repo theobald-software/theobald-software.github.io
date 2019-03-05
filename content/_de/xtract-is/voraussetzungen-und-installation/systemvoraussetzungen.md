@@ -33,8 +33,8 @@ Die Integration findet über den SAP-Applikationsserver statt. Daher spielt die 
 unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit ohne Einschränkung unterstützt.
 
 | Komponente  | SAP Release       | Anforderung an das SAP System                                                                         |
-|------------|-------------------|--------------------------------------------------------------------------------------------------------|
-| Table      | Rel.above 4.0B    | für die meisten Aufgaben erfordern die Installation eines Funktionsbausteins, jedoch nicht für alle |
+|------------|:------------------|--------------------------------------------------------------------------------------------------------|
+| Table      | Rel. above 4.0B    | für die meisten Aufgaben erfordern die Installation eines Funktionsbausteins, jedoch nicht für alle |
 | Table Join | Rel. 7.0 or above | die Installation eines Z-Funktionsbausteins ist notwendig                                            |
 | Query      | Rel. above 4.0B   | keine                                                                                                |
 | BAPI       | Rel. above 4.0B   | keine                                                                                                |
@@ -45,7 +45,7 @@ unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit
 | DeltaQ     | Rel. above 4.6A   | Anpassung / customizing                                                                              |
 
 
-Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel SAP Customizing.
+Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel [SAP Customizing](https://help.theobald-software.com/de/xtract-is/sap-customizing) .
 
 **Ports**
 
@@ -85,5 +85,5 @@ Festplattenspeicher benötigt
  	
 - das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxNTkwMzkzXX0=
+eyJoaXN0b3J5IjpbMTgzNzU4NjQ3OV19
 -->
