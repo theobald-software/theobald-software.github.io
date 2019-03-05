@@ -55,41 +55,13 @@ Im Verzeichnis \XtractIS\:
 |XtractISLicense.json | Enthält Lizenz-Informationen.|
 | __ .txt__ | Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).|
 | InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
+| Gacutil.exe | Nur zur internen Nutzung für die Assembly-Registrierung.|
+| gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
+| uninst.exe | Tool zum De-installieren von Xtract IS. |
+| 
 
 
-
-
-****<br> 
-.
-
-**** <br>
-
-
-**** <br>
-
-
-****<br> 
-
-
-**** <br>
-
-
- <br>
-
-
-**** <br>
-
-
-**Gacutil.exe** <br>
-Nur zur internen Nutzung für die Assembly-Registrierung.
-
-**gac-uninstall.bat**<br>
-Tool zum Deregistrieren aller Xtract-eigenen dlls.
-
-**uninst.exe**<br>
-Tool zum De-installieren von Xtract IS.
-
-**XtractISConversionPreparer.exe**<br>
+**<br>
 Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (s. Kapitel "SSIS Migration").
 
 **XtractLicenseManager.exe** <br>
@@ -97,5 +69,5 @@ Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz.
 
 Alle Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDMwMTM1MSwyMTIxMDMxMjU1XX0=
+eyJoaXN0b3J5IjpbMTUxMTU4ODk4MiwyMTIxMDMxMjU1XX0=
 -->
