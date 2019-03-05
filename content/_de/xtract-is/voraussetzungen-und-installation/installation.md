@@ -46,6 +46,9 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Im Verzeichnis \XtractIS\:
 
+|Dateiname | Beschreibung |
+|:----|:---|
+
 **ERPConnect35.dll**<br> 
 Enthält die Backend-Funktionen für den SAP-Zugriff.
 
@@ -84,5 +87,5 @@ Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz.
 
 Alle Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTAzMTI1NV19
+eyJoaXN0b3J5IjpbLTE1MzkyNjU5MjUsMjEyMTAzMTI1NV19
 -->
