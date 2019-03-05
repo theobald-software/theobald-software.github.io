@@ -15,7 +15,8 @@ Nach erfolgreicher Installation von Xtract IS erscheinen die Xtract IS-Komponent
 
 ![XIS_SSIS_Toolbox](/img/content/XIS_SSIS_Toolbox.jpg){:class="img-responsive"}
 
-**Achtung:** Mit der aktuellen Version der SSDT für VS 2015 ist der SQL Server vNext standardmäßig als Zielumgebung für das Deploymnet von SSIS Projekten ausgewählt. Mit dieser Einstellung sind die Xtract IS Komponenten in der SSIS Toolbox nicht sichtbar.
+**Achtung:**<br> Mit der aktuellen Version der SSDT für VS 2015 ist der SQL Server vNext standardmäßig als Zielumgebung für das Deploymnet von SSIS Projekten ausgewählt. Mit dieser Einstellung sind die Xtract IS Komponenten in der SSIS Toolbox nicht sichtbar.
+
 Bitte ändern Sie die Zielumgebung für das Deployment auf SQL Server 2016. Danach werden die Xtract IS Komponenten in der Toolbox angezeigt.
 
 ![XIS_deployment_target_version_vNext](/img/content/XIS_deployment_target_version_vNext.png){:class="img-responsive"}
@@ -24,3 +25,6 @@ Um die Xtract IS Komponenten in Visual Studio 2008 oder früher innerhalb der In
 
 ![Toolbox-01](/img/content/Toolbox-01.png){:class="img-responsive"}
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNTkzODY3NjddfQ==
+-->
