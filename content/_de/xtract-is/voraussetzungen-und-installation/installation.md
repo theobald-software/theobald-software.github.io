@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 ---
 
-**Standard Setup**
+### Standard Setup
 
 Beim Standard Setup führen Sie die Datei XtractISSetup.exe aus und folgen den Anweisungen des Setup-Programms. 
 
@@ -83,3 +83,6 @@ Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (s. K
 Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz.
 
 Alle Dll-Dateien werden im Global Assembley Cache registriert.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ4NjI5Mzg0NF19
+-->
