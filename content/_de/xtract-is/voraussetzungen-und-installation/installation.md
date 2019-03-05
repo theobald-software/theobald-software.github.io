@@ -58,12 +58,12 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 | Gacutil.exe | Nur zur internen Nutzung für die Assembly-Registrierung.|
 | gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
 | uninst.exe | Tool zum De-installieren von Xtract IS. |
-| XtractISConversionPreparer.exe | Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (siehe Kapitel "SSIS Migration").|
+| XtractISConversionPreparer.exe | Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (siehe Kapitel [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
 | XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
 
 
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzM1NTQ5MTQsMjEyMTAzMTI1NV19
+eyJoaXN0b3J5IjpbLTE5MDIxMzQxMzQsMjEyMTAzMTI1NV19
 -->
