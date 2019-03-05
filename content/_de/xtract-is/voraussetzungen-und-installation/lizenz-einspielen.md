@@ -11,7 +11,8 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=lizenz-einspielen
 ---
 
-Standardmäßig wird bei der Installation eine Demo-Version installiert, die zeitlich beschränkt ist. Wenn Sie Xtract IS gekauft haben, bekommen Sie von uns eine Lizenzdatei (XtractISLicense.json, ehemals XtractIS.License.dll) zugesendet, in der u.A. Firmenname und lizensierte Server verschlüsselt sind.
+Standardmäßig wird bei der Installation eine Demo-Version installiert, die zeitlich beschränkt ist. 
+Wenn Sie Xtract IS gekauft haben, bekommen Sie von uns eine Lizenzdatei (*XtractISLicense.json*, ehemals XtractIS.License.dll) zugesendet, in der unter Anderem Firmenname und lizensierte Server verschlüsselt sind.
 
 Um die Lizenz einzuspielen, starten Sie das Programm XtractLicenseManager.exe (aus dem Programm-Menü). Die aktuell aktive Lizenz wird angezeigt, im folgenden Fall ist es eine Demo-Lizenz.
 
@@ -26,3 +27,6 @@ Dieses Bild zeigt eine korrekt installierte, dauerhafte Lizenz.
 Xtract.License.dll Dateien werden im GAC registriert.<br> 
 XtractISLicense.json Dateien werden nach CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\ bzw. <br>C:\ProgramData\TheobaldSoftware\XtractIS\ kopiert.
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjMzNjMwMDE5XX0=
+-->
