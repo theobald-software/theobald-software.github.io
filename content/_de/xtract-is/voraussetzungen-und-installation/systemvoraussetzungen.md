@@ -50,11 +50,11 @@ Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizi
 ### Ports
 
 Folgende Ports müssen abhängig vom SAP-System offen sein,
-wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
+wobei *nn* die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
 
-- SAP Application Server: Port 33nn
-- SAP Message Server (Load Balancing): Port 36nn
-- Secure Communication Network (SCN): Port 48nn
+- SAP Application Server: Port 33*nn*
+- SAP Message Server (Load Balancing): Port 36*nn*
+- Secure Communication Network (SCN): Port 48*nn*
 - SAP Router: Port 3399
 
 ### Benutzerberechtigungen
@@ -85,5 +85,5 @@ Festplattenspeicher benötigt
  	
 - das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NTM5MTQyXX0=
+eyJoaXN0b3J5IjpbMzc2MDMwMDIyXX0=
 -->
