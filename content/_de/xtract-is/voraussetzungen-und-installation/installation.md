@@ -49,9 +49,9 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 |Dateiname | Beschreibung |
 |:----|:---|
 | ERPConnect35.dll | Enthält die Backend-Funktionen für den SAP-Zugriff. |
-| XtractIS .dll | Enthält den Kern der Xtract IS Komponenten.| 
-| XtractIS .GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
-| XtractIS .ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
+| XtractIS.dll | Enthält den Kern der Xtract IS Komponenten.| 
+| XtractIS.GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
+| XtractIS.ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
 |XtractISLicense.json | Enthält Lizenz-Informationen.|
 | *.txt | Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).|
 | InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
@@ -65,5 +65,5 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDIxMzQxMzQsMjEyMTAzMTI1NV19
+eyJoaXN0b3J5IjpbLTcwMjE1MTYyMiwyMTIxMDMxMjU1XX0=
 -->
