@@ -18,11 +18,11 @@ Beim Standard Setup führen Sie die Datei XtractISSetup.exe aus und folgen den A
 Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen](./lizenz-einspielen) beschrieben.
 
 Beim Setup werden verschiedene DLLs in bestimmte Verzeichnisse kopiert, damit sie von  den Integration Services verwendet werden können. <br>
-Das Kopieren und Registrieren der DLLs übernimmt das Konsolenprogramm InstallXtractIS.exe automatisch. 
+Das Kopieren und Registrieren der DLLs übernimmt das Konsolenprogramm *InstallXtractIS.exe* automatisch. 
 
-**Silent Setup**
+### Silent Setup
 
-Das Standard Setup kann auch ohne die Anzeige der GUI gestartet werden. Dazu muss das Setup mit dem /S Parameter gestartet werden. Über den /D Perameter lässt sich das Installationsverzeichnis festlegen. 
+Das Standard Setup kann auch ohne die Anzeige der GUI gestartet werden. Dazu muss das Setup mit dem /S Parameter gestartet werden. Über den /D Parameter lässt sich das Installationsverzeichnis festlegen. 
 
 Weitere Einstellung- und Steuermöglichkeiten für das Setup finden Sie unter [Command Line Usage](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1).
 
@@ -84,5 +84,5 @@ Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz.
 
 Alle Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NjI5Mzg0NF19
+eyJoaXN0b3J5IjpbMjEyMTAzMTI1NV19
 -->
