@@ -72,18 +72,18 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 - bis SSIS 2008: .NET Framework 3.5 SP1
 - ab SSIS 2012: .NET Framework 4.5.2 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/de-de/download/details.aspx?id=42643) herunterladen.
 
-**Arbeitsspeicher**
+### Arbeitsspeicher
  	
 - 4 GB minimum, abhängig vom Datenvolumen, eventuell mehr
 
-**Festplattenspeicher**
+### Festplattenspeicher
  	
 - für die Installation werden 50 MB 
 Festplattenspeicher benötigt
 
-**32/64-Bit Umgebung**
+### 32/64-Bit Umgebung
  	
 - das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzk2NDI0N119
+eyJoaXN0b3J5IjpbODI0NTM5MTQyXX0=
 -->
