@@ -53,21 +53,16 @@ Im Verzeichnis \XtractIS\:
 | XtractIS* .GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
 | XtractIS* .ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
 |XtractISLicense.json | Enthält Lizenz-Informationen.|
-| __ .txt__ | Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).|
+| *.txt | Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).|
 | InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
 | Gacutil.exe | Nur zur internen Nutzung für die Assembly-Registrierung.|
 | gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
 | uninst.exe | Tool zum De-installieren von Xtract IS. |
-| 
+| XtractISConversionPreparer.exe | Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (s. Kapitel "SSIS Migration").|
+| XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
 
 
-**<br>
-Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (s. Kapitel "SSIS Migration").
-
-**XtractLicenseManager.exe** <br>
-Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz.
-
-Alle Dll-Dateien werden im Global Assembley Cache registriert.
+Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTU4ODk4MiwyMTIxMDMxMjU1XX0=
+eyJoaXN0b3J5IjpbNDkxMTY5MTg4LDIxMjEwMzEyNTVdfQ==
 -->
