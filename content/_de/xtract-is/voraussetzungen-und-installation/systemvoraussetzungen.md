@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 ---
 
-**SQL Server**
+### SQL Server
  	
 - SQL Server 2008 (alle SQL Server Versionen. Die Express-Version beinhaltet die SSIS nicht)
 - SQL Server 2008 R2
@@ -22,7 +22,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 - SQL Server Integration Services (SSIS)
 - Für die Entwicklung: Die entsprechende Visual Studio Version (außer der Express-Version) für Business Intelligence zur Erstellung von SSIS-Paketen. <br> Siehe   [Liste der unterstützen Versionen von SSIS & VS](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is) 
 
-**SAP Releases**
+### SAP Releases
  	
 - SAP R/3 Version 4.0B oder höher oder SAP ECC
 - SAP S/4 HANA
@@ -47,7 +47,7 @@ unter dem SAP-System keine Rolle. Insbesondere SAP-Systeme auf HANA werden somit
 
 Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizing finden Sie im Kapitel [SAP Customizing](https://help.theobald-software.com/de/xtract-is/sap-customizing) .
 
-**Ports**
+### Ports
 
 Folgende Ports müssen abhängig vom SAP-System offen sein,
 wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
@@ -57,17 +57,17 @@ wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
 - Secure Communication Network (SCN): Port 48nn
 - SAP Router: Port 3399
 
-**Benutzerberechtigungen**
+### Benutzerberechtigungen
  	
 SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
 
-**SAP-Lizenzen**
+### SAP-Lizenzen
 
 Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich sein. Bitte dazu SAP kontaktieren.
 
 {% include _content/de/operating-systems.md %}
 
-**Andere Anwendungen und Frameworks**
+### Andere Anwendungen und Frameworks
  	
 - bis SSIS 2008: .NET Framework 3.5 SP1
 - ab SSIS 2012: .NET Framework 4.5.2 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/de-de/download/details.aspx?id=42643) herunterladen.
@@ -85,5 +85,5 @@ Festplattenspeicher benötigt
  	
 - das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzU4NjQ3OV19
+eyJoaXN0b3J5IjpbLTkzMzk2NDI0N119
 -->
