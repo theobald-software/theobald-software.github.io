@@ -42,7 +42,7 @@ Wenn man möchte, dass das Setup bzw. der License Manager den aufrufenden Prozes
 - start /w XtractLicenseManager.exe "My License\XtractIS.License.json"<br>
 - start /w XtractLicenseManager.exe XtractIS.License.json<br>
 
-Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbringt und auf dem Zielrechner Im Verzeichnis \XtractIS\: installiert:
+Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbringt und auf dem Zielrechner Im Verzeichnis \XtractIS\: installiert sind:
 
 
 
@@ -65,5 +65,5 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMjE1MTYyMiwyMTIxMDMxMjU1XX0=
+eyJoaXN0b3J5IjpbNjY2MzUxMDE2LDIxMjEwMzEyNTVdfQ==
 -->
