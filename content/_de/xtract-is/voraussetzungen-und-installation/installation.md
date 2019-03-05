@@ -52,16 +52,33 @@ Im Verzeichnis \XtractIS\:
 | XtractIS* .dll | Enthält den Kern der Xtract IS Komponenten.| 
 | XtractIS* .GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
 | XtractIS* .ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
+|XtractISLicense.json | Enthält Lizenz-Informationen.|
+| __ .txt__ | Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).|
+| InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
 
 
-ctISLicense.json** <br>
-Enthält Lizenz-Informationen.
 
-__* .txt__ <br>
-Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).
 
-**InstallXtractIS.exe** <br>
-Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).
+****<br> 
+.
+
+**** <br>
+
+
+**** <br>
+
+
+****<br> 
+
+
+**** <br>
+
+
+ <br>
+
+
+**** <br>
+
 
 **Gacutil.exe** <br>
 Nur zur internen Nutzung für die Assembly-Registrierung.
@@ -80,5 +97,5 @@ Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz.
 
 Alle Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODcwNTA0NiwyMTIxMDMxMjU1XX0=
+eyJoaXN0b3J5IjpbMTczNDMwMTM1MSwyMTIxMDMxMjU1XX0=
 -->
