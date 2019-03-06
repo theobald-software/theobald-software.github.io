@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: xu-destinations
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---

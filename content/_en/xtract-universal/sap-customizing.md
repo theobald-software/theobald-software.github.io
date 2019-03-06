@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: sap-customizing
 permalink: /:collection/:path
-weight: 2
+weight: 99
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---

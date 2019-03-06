@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: advanced-techniques
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=advanced-techniques
 ---

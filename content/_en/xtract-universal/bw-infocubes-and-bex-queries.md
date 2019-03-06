@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: bw-infocubes-and-bex-queries
 permalink: /:collection/:path
-weight: 13
+weight: 12
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=bw-infocubes-and-bex-queries
 ---

@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: datasource-deltaq
 permalink: /:collection/:path
-weight: 16
+weight: 15
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=datasource-deltaq
 ---
