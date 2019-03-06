@@ -64,19 +64,20 @@ Folgende Schritte müssen ausgeführt werden, um das Beispiel zum Laufen zu beko
 
 In der Nintex-Form werden vier frei benennbare Felder benötigt (jeweils für beide Beispiele, wenn diese in einer Form ausgeführt werden sollen): 
 
-1. Das erste Feld vom Typ **Single Line Textbox** ist das Eingabefeld und enthält die Materialnummer. Weisen Sie diesem Feld die JavaScript Variable *input1* zu.
-2. Im zweiten Feld vom Typ **Choice** werden die möglichen Treffer für die eingegebene Materialnummer in einer Dropdownliste ausgegeben und sind selektierbar. Weisen Sie diesem Feld die JavaScript Variable *combo1* zu.
-3. Im dritten Feld vom Typ  **Single Line Textbox** wird die Materialnummer zum gewählten Material angezeigt. Weisen Sie diesem Feld die JavaScript Variable *output1* zu.  	
-4. Im vierten Feld vom Typ **Single Line Textbox** wird der Material-Langtext zum ausgewählten Material angezeigt. Weisen Sie diesem Feld die JavaScript Variable *outputd2* zu.  
+1. Das erste Feld vom Typ *Single Line Textbox* ist das Eingabefeld und enthält die Materialnummer. Weisen Sie diesem Feld die JavaScript Variable *input1* zu.
+2. Im zweiten Feld vom Typ *Choice** werden die möglichen Treffer für die eingegebene Materialnummer in einer Dropdownliste ausgegeben und sind selektierbar. Weisen Sie diesem Feld die JavaScript Variable *combo1* zu.
+3. Im dritten Feld vom Typ *Single Line Textbox* wird die Materialnummer zum gewählten Material angezeigt. Weisen Sie diesem Feld die JavaScript Variable *output1* zu.  	
+4. Im vierten Feld vom Typ *Single Line Textbox* wird der Material-Langtext zum ausgewählten Material angezeigt. Weisen Sie diesem Feld die JavaScript Variable *outputd2* zu.  
 
+Das zweite Beispiel im Script funtkioniert analog, verwenden Sie dafür jedoch die entsprechenden Variablenbezeichnungen dieses Beispiels (input2, combo2,...).    
 
-Die Bezeichnungen für die JavaScript Variablen sind im Script sp vorgeschlagen, können aber geändert werden.
+Die Bezeichnungen für die JavaScript Variablen sind im Script so vorgeschlagen, können aber geändert werden.
 Zudem lassen sich im Abschnitt *tableSettings* die folgenden Felder frei zuordnen: 
 
-**tableName**: Name der SAP Tabelle
-**idField**: Name des Feldes mit der Belegnummer, dem Schlüssel, etc.  
-**textField**: Name des Feldes mit dem Beschreibungstext
-**language**: Name der Anmeldesprache
+*tableName*: Name der SAP Tabelle
+*idField*: Name des Feldes mit der anzuzeigenden ID.  
+*textField*: Name des Feldes mit dem Beschreibungstext
+*language*: Kürzel der SAP-Anmeldesprache (DE, EN, etc.)
 
 Das Beispiel ist damit für eine Vielzahl von möglichen Szenarien anpassbar und einsetzbar, ohne komplizierten Code.  
 
