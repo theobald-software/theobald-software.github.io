@@ -52,6 +52,8 @@ Die Daten werden anhand des Zeichens für Zeilenumbruch in Zeilen gesplittet.
 Hier muss man beachten, dass die ersten Zeile die Spaltennamen enthält. Die letzte Zeile enthält nur NULL-Werte.
 Diese 2 Zeilen entfernen wir später.<br>
 ![In Zeilen splitten](/img/content/xu/best-practices/pdi-http/pdi-http-xu-transf-split-to-rows.png){:class="img-responsive"}
+Xtract Universal bietet auch Optionen, um die Daten ohne die Spaltennamen und ohne Zeilentrenner nach der letzten Zeile zu liefern, aber wir verwenden die Standardeinstellungen für die http-csv-Destination.<br>.
+
 
 
 **Letzte Zeile identifizieren**<br>
