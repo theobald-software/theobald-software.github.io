@@ -14,3 +14,5 @@ old_url:
 
 
 In diesem Kapitel zeigen wir die Integration mit Pentaho Data Integration (ETL) aka Kettle.<br>
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

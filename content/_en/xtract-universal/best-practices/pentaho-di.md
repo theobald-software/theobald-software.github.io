@@ -14,3 +14,5 @@ old_url:
 
 
 This chapter shows best practices about the integration and usage of Xtract Universal with Pentaho Data Integration (ETL) aka Kettle.<br>
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
