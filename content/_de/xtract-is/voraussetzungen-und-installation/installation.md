@@ -10,8 +10,7 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 ---
-Um Xtract IS verwenden zu können, müssen sowohl in der lokalen Entwicklungsumgebung (virtual studio oder SSDT) als auch auf dem  SSIS Server die Datei  *XtractISSetup.exe* ausgeführt werden. 
-Somit müssen **zwingend auf beiden Umgebungen** die Installationsroutine von Xtract IS installiert werden.
+Um Xtract IS verwenden zu können, müssen sowohl in der lokalen Entwicklungsumgebung (virtual studio oder SSDT) als auch auf dem  SSIS Server die Datei  *XtractISSetup.exe* ausgeführt werden. Somit muss zwingend auf beiden Umgebungen die Installationsroutine von Xtract IS installiert werden.
 
 ### Standard Setup
 
@@ -67,7 +66,7 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDc1ODU0OSwxNDQ0NzY2OTA3LC0xNT
-Y1MzQ0ODg5LDk0NjUxMDkyMSwtNzAyMTUxNjIyLDY2NjM1MTAx
-NiwyMTIxMDMxMjU1XX0=
+eyJoaXN0b3J5IjpbLTIxMDg5MjYyNTMsMTQ0NDc2NjkwNywtMT
+U2NTM0NDg4OSw5NDY1MTA5MjEsLTcwMjE1MTYyMiw2NjYzNTEw
+MTYsMjEyMTAzMTI1NV19
 -->
