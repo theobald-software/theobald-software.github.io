@@ -13,7 +13,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 
 ### Standard Setup
 
-Beim Standard Setup führen Sie die Datei XtractISSetup.exe aus und folgen den Anweisungen des Setup-Programms. 
+Beim Standard Setup führen Sie die Datei *XtractISSetup.exe* aus und folgen den Anweisungen des Setup-Programms. 
 
 Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen](./lizenz-einspielen) beschrieben.
 
@@ -70,6 +70,6 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ2NTEwOTIxLC03MDIxNTE2MjIsNjY2Mz
-UxMDE2LDIxMjEwMzEyNTVdfQ==
+eyJoaXN0b3J5IjpbLTE1NjUzNDQ4ODksOTQ2NTEwOTIxLC03MD
+IxNTE2MjIsNjY2MzUxMDE2LDIxMjEwMzEyNTVdfQ==
 -->
