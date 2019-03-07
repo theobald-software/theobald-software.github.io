@@ -15,14 +15,13 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 
 Beim Standard Setup führen Sie die Datei *XtractISSetup.exe* aus und folgen den Anweisungen des Setup-Programms. 
 
-Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen](./lizenz-einspielen) beschrieben.
-
 Beim Setup werden verschiedene DLLs in bestimmte Verzeichnisse kopiert, damit sie von  den Integration Services verwendet werden können. <br>
 
 **Wichtig**:<br> Um die in der Entwicklungsumgebung erstellten SSIS-Pakete deployen zu können, ist die Ausführung der *InstallXtractIS.exe* zwingend notwendig.
 
 Das Kopieren und Registrieren der DLLs übernimmt das Konsolenprogramm *InstallXtractIS.exe* automatisch. 
 
+Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen](./lizenz-einspielen) beschrieben.
 
 
 ### Silent Setup
@@ -70,6 +69,7 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjUzNDQ4ODksOTQ2NTEwOTIxLC03MD
-IxNTE2MjIsNjY2MzUxMDE2LDIxMjEwMzEyNTVdfQ==
+eyJoaXN0b3J5IjpbMTQ0NDc2NjkwNywtMTU2NTM0NDg4OSw5ND
+Y1MTA5MjEsLTcwMjE1MTYyMiw2NjYzNTEwMTYsMjEyMTAzMTI1
+NV19
 -->
