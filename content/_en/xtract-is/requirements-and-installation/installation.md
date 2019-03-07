@@ -20,6 +20,7 @@ The installation of the license file is described in the chapter [Installing the
 During setup, various DLLs are copied to certain directories so that they can be used by Integration Services. 
 
 **Important**:<br> In order to deploy the SSIS packages created in the development environment, the execution of *InstallXtractIS.exe* is mandatory.
+
 The console program InstallXtractIS.exe automatically copies and registers the DLLs.
 
 ### Silent Setup
@@ -68,5 +69,5 @@ Directory \XtractIS\:
 
  *dll files must be registered in the system's Global Assembly Cache GAC.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDQ0ODQ4OCwxMjA2OTc1ODExXX0=
+eyJoaXN0b3J5IjpbLTg3MzgyNjExOCwxMjA2OTc1ODExXX0=
 -->
