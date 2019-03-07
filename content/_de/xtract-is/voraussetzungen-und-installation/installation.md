@@ -10,6 +10,7 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 ---
+Um Xtract IS  
 
 ### Standard Setup
 
@@ -69,7 +70,7 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDc2NjkwNywtMTU2NTM0NDg4OSw5ND
-Y1MTA5MjEsLTcwMjE1MTYyMiw2NjYzNTEwMTYsMjEyMTAzMTI1
-NV19
+eyJoaXN0b3J5IjpbMTY0MTM5MzA3NSwxNDQ0NzY2OTA3LC0xNT
+Y1MzQ0ODg5LDk0NjUxMDkyMSwtNzAyMTUxNjIyLDY2NjM1MTAx
+NiwyMTIxMDMxMjU1XX0=
 -->
