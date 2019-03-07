@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: abap-reports
 permalink: /:collection/:path
-weight: 167
+weight: 16
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
