@@ -6,7 +6,7 @@ description: Step II- Run an Extraction
 product: xtract-universal
 parent: getting-started-table
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=run-an-extraction
 ---
