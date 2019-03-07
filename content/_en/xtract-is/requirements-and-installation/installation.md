@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installation
 ---
 
-**Normal Setup**
+### Normal Setup
 
 In the standard setup, execute the XtractISSetup.exe file and follow the instructions of the setup program.
 
@@ -20,7 +20,7 @@ The installation of the license file is described in the chapter [Installing the
 During setup, various DLLs are copied to certain directories so that they can be used by Integration Services. 
 The console program InstallXtractIS.exe automatically copies and registers the DLLs.
 
-**Silent Setup**
+### Silent Setup
 
 The setup program can also be started without the GUI. If you want to start it that way you have to use the switch /S . Using the switch /D you can set the installation path. 
 
@@ -40,26 +40,45 @@ If you want the setup programm or the license manager to block the calling proce
 
 **Examples:**
 
-start /w XtractISSetup.exe /S
-start /w XtractLicenseManager.exe "My License\XtractIS.License.json"
-start /w XtractLicenseManager.exe XtractIS.License.json
+- start /w XtractISSetup.exe /S
+- start /w XtractLicenseManager.exe "My License\XtractIS.License.json"
+- start /w XtractLicenseManager.exe XtractIS.License.json
 
 
 The list below shows some of the files that are placed on your system during installation.
 
 Directory \XtractIS\:
 
+|Dateiname | Beschreibung |
+|:----|:---|
+| ERPConnect35.dll | contains backend functionality for SAP communication |
+| XtractIS.dll | contains the kernel of the Xtract IS component| 
+| XtractIS.GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
+| XtractIS.ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
+|XtractISLicense.json | Enthält Lizenz-Informationen.|
+| *.txt | Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).|
+| InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
+| Gacutil.exe | Nur zur internen Nutzung für die Assembly-Registrierung.|
+| gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
+| uninst.exe | Tool zum De-installieren von Xtract IS. |
+| XtractISConversionPreparer.exe | Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (siehe Kapitel [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
+| XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
+
+
+
+Sämtliche
+
 **ERPConnect35.dll**
 
-contains backend functionality for SAP communication.
+.
 
 **XtractIS^.dll**
 
-contains the kernel of the Xtract IS component.
+.
 
 **XtractIS^.GUI.dll**
 
-contains the GUI components for Xtract IS.
+.
 
 **XtractIS^.ConnectionManager.dll**
 
@@ -94,3 +113,6 @@ this tool clears the GAC of all Xtract related components.
 a program to manage and view your licenses.
 
 All dll files must be registered in the system's Global Assembly Cache GAC.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1OTk2NjMwNDJdfQ==
+-->
