@@ -49,7 +49,7 @@ The list below shows some of the files that are placed on your system during ins
 
 Directory \XtractIS\:
 
-|Dateiname | Beschreibung |
+|filename |  |
 |:----|:---|
 | ERPConnect35.dll | contains backend functionality for SAP communication |
 | XtractIS.dll | contains the kernel of the Xtract IS component| 
@@ -58,61 +58,13 @@ Directory \XtractIS\:
 |XtractISLicense.json | contains information about your license|
 | *.txt | contains templates for custom function modules, located in the ABAP folder|
 | InstallXtractIS.exe | console program for installing and registering the components on your system|
-| Gacutil.exe | Nur zur internen Nutzung für die Assembly-Registrierung.|
-| gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
+| Gacutil.exe | this tool is for internal use only|
+| gac-uninstall.bat | this tool clears the GAC of all Xtract related components|
 | uninst.exe | Tool zum De-installieren von Xtract IS. |
-| XtractISConversionPreparer.exe | Use this tool after upgrading your SSIS version (see chapter [SSIS Migration]https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
-| XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
+| XtractISConversionPreparer.exe | Use this tool after upgrading your SSIS version (see chapter [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
+| XtractLicenseManager.exe | a program to manage and view your licenses |
 
-
-
-Sämtliche
-
-**ERPConnect35.dll**
-
-.
-
-**XtractIS^.dll**
-
-.
-
-**XtractIS^.GUI.dll**
-
-.
-
-**XtractIS^.ConnectionManager.dll**
-
-.
-
-**XtractIS.License.json**
-
-.
-
-**^.txt**
-
-.
-
-**InstallXtractIS.exe**
-
-.
-
-**XtractISConversionPreparer.exe**
-
-.
-
-**Gacutil.exe**
-
-this tool is for internal use only.
-
-**gac-uninstall.bat**
-
-this tool clears the GAC of all Xtract related components.
-
-**XtractLicenseManager.exe**
-
-a program to manage and view your licenses.
-
-All dll files must be registered in the system's Global Assembly Cache GAC.
+ *dll files must be registered in the system's Global Assembly Cache GAC.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTU5Mjk3OV19
+eyJoaXN0b3J5IjpbLTgyMDE2MDc4NV19
 -->
