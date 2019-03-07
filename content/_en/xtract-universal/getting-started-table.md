@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: getting-started-table
 permalink: /:collection/:path
-weight: 2
+weight: 23
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started-table
 ---
@@ -18,3 +18,6 @@ It is therefore a prerequisite for all subsequent chapters.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTMxNTEzMzExXX0=
+-->
