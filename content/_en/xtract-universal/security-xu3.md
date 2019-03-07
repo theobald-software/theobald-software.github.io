@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: security-xu3
 permalink: /:collection/:path
-weight: 89
+weight: 8
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=security_in_xu_3_x
 ---
