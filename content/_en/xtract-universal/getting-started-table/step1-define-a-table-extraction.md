@@ -6,7 +6,7 @@ description: Step I- Define a Table Extraction
 product: xtract-universal
 parent: getting-started-table
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-table-extraction
 ---
