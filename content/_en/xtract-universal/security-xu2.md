@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: security-xu2
 permalink: /:collection/:path
-weight: 7
+weight: 78
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=security
 ---
@@ -36,3 +36,6 @@ On the connection level you can also enable the Single Sign On for the SAP syste
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTUxNjA2NzJdfQ==
+-->
