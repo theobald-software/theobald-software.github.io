@@ -19,7 +19,7 @@ Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen](./lizenz-ein
 
 Beim Setup werden verschiedene DLLs in bestimmte Verzeichnisse kopiert, damit sie von  den Integration Services verwendet werden können. <br>
 
-**Wichtig**: Um die in der E deployen zu können, ist die Ausführung der *InstallXtractIS.exe* zwingend notwendig.
+**Wichtig**:<br> Um die in der Entwicklungsumgebung erstellten SSIS-Pakete deployen zu können, ist die Ausführung der *InstallXtractIS.exe* zwingend notwendig.
 
 Das Kopieren und Registrieren der DLLs übernimmt das Konsolenprogramm *InstallXtractIS.exe* automatisch. 
 
@@ -31,7 +31,7 @@ Das Standard Setup kann auch ohne die Anzeige der GUI gestartet werden. Dazu mus
 
 Weitere Einstellung- und Steuermöglichkeiten für das Setup finden Sie unter [Command Line Usage](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1).
 
-**Wichtig:** Bitte achten Sie auf die Groß- und Kleinschreibung der Parameter. 
+**Wichtig:** <br>Bitte achten Sie auf die Groß- und Kleinschreibung der Parameter. 
 
 **XtractLicenseManager**<br>
 Dem XtractLicenseManager kann die zu installierende Lizenzdatei als Argument übergeben werden. Diese Datei wird ohne GUI installiert, im Fehlerfall geht eine Messagebox auf und es wird ein enstprechender Exit-Code zurückgegeben.
@@ -70,6 +70,6 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjQwODUxMywtNzAyMTUxNjIyLDY2Nj
-M1MTAxNiwyMTIxMDMxMjU1XX0=
+eyJoaXN0b3J5IjpbOTQ2NTEwOTIxLC03MDIxNTE2MjIsNjY2Mz
+UxMDE2LDIxMjEwMzEyNTVdfQ==
 -->
