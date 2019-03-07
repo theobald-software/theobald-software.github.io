@@ -7,7 +7,7 @@ product: xtract-universal
 parent: home
 childidentifier: xtract-universal
 permalink: /:collection/:path
-weight: 4
+weight: 1
 lang: en_GB
 old_url: /Xtract-Universal-EN/
 ---
