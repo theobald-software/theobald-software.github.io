@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: security-xu3
 permalink: /:collection/:path
-weight: 8
+weight: 89
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=security_in_xu_3_x
 ---
@@ -38,3 +38,6 @@ The following rights can be assigned. See chapter Access Management for a detail
 - admin
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM4MTUxODk0XX0=
+-->
