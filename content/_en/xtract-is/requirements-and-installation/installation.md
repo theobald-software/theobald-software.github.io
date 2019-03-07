@@ -53,15 +53,15 @@ Directory \XtractIS\:
 |:----|:---|
 | ERPConnect35.dll | contains backend functionality for SAP communication |
 | XtractIS.dll | contains the kernel of the Xtract IS component| 
-| XtractIS.GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
-| XtractIS.ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
-|XtractISLicense.json | Enthält Lizenz-Informationen.|
-| *.txt | Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).|
-| InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
+| XtractIS.GUI.dll | contains the GUI components for Xtract IS|
+| XtractIS.ConnectionManager.dll | contains the connection manager|
+|XtractISLicense.json | contains information about your license|
+| *.txt | contains templates for custom function modules, located in the ABAP folder|
+| InstallXtractIS.exe | console program for installing and registering the components on your system|
 | Gacutil.exe | Nur zur internen Nutzung für die Assembly-Registrierung.|
 | gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
 | uninst.exe | Tool zum De-installieren von Xtract IS. |
-| XtractISConversionPreparer.exe | Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (siehe Kapitel [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
+| XtractISConversionPreparer.exe | Use this tool after upgrading your SSIS version (see chapter [SSIS Migration]https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
 | XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
 
 
@@ -82,23 +82,23 @@ Sämtliche
 
 **XtractIS^.ConnectionManager.dll**
 
-contains the connection manager.
+.
 
 **XtractIS.License.json**
 
-contains information about your license.
+.
 
 **^.txt**
 
-contains templates for custom function modules, located in the ABAP folder.
+.
 
 **InstallXtractIS.exe**
 
-console program for installing and registering the components on your system.
+.
 
 **XtractISConversionPreparer.exe**
 
-Use this tool after upgrading your SSIS version (see chapter "SSIS Migration").
+.
 
 **Gacutil.exe**
 
@@ -114,5 +114,5 @@ a program to manage and view your licenses.
 
 All dll files must be registered in the system's Global Assembly Cache GAC.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTk2NjMwNDJdfQ==
+eyJoaXN0b3J5IjpbMTQ0NTU5Mjk3OV19
 -->
