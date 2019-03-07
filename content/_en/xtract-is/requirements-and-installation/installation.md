@@ -39,7 +39,7 @@ You can transfer the licence file as an argument to the XtractLicenseManager. Th
 
 If you want the setup programm or the license manager to block the calling process  (e.g. a batch) until the installation has finished and to receive a correct exit code to check that the installation has finished correctly, you have to use the start statement with the /w switch.
 
-**Important:** Both programs need administration rights.
+**Important:**<br> Both programs need administration rights.
 
 **Examples:**
 
@@ -69,5 +69,6 @@ Directory \XtractIS\:
 
  *dll files must be registered in the system's Global Assembly Cache GAC.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MzgyNjExOCwxMjA2OTc1ODExXX0=
+eyJoaXN0b3J5IjpbMTU5MDczMDgyNCwtODczODI2MTE4LDEyMD
+Y5NzU4MTFdfQ==
 -->
