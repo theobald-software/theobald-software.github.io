@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: getting-started-table
 permalink: /:collection/:path
-weight: 23
+weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started-table
 ---
