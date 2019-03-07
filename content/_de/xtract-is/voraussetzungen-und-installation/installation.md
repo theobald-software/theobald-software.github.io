@@ -18,7 +18,12 @@ Beim Standard Setup führen Sie die Datei XtractISSetup.exe aus und folgen den A
 Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen](./lizenz-einspielen) beschrieben.
 
 Beim Setup werden verschiedene DLLs in bestimmte Verzeichnisse kopiert, damit sie von  den Integration Services verwendet werden können. <br>
+
+**Wichtig**: Um die in der E deployen zu können, ist die Ausführung der *InstallXtractIS.exe* zwingend notwendig.
+
 Das Kopieren und Registrieren der DLLs übernimmt das Konsolenprogramm *InstallXtractIS.exe* automatisch. 
+
+
 
 ### Silent Setup
 
@@ -65,6 +70,6 @@ Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbring
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMjE1MTYyMiw2NjYzNTEwMTYsMjEyMT
-AzMTI1NV19
+eyJoaXN0b3J5IjpbLTYyMjQwODUxMywtNzAyMTUxNjIyLDY2Nj
+M1MTAxNiwyMTIxMDMxMjU1XX0=
 -->
