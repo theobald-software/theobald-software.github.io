@@ -13,15 +13,15 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=installation
 
 ### Normal Setup
 
-In the standard setup, execute the XtractISSetup.exe file and follow the instructions of the setup program.
-
-The installation of the license file is described in the chapter [Installing the license](https://help.theobald-software.com/en/xtract-is/requirements-and-installation/installing-the-license).
+In the standard setup, execute the *XtractISSetup.exe* file and follow the instructions of the setup program.
 
 During setup, various DLLs are copied to certain directories so that they can be used by Integration Services. 
 
 **Important**:<br> In order to deploy the SSIS packages created in the development environment, the execution of *InstallXtractIS.exe* is mandatory.
 
 The console program InstallXtractIS.exe automatically copies and registers the DLLs.
+
+The installation of the license file is described in the chapter [Installing the license](https://help.theobald-software.com/en/xtract-is/requirements-and-installation/installing-the-license).
 
 ### Silent Setup
 
@@ -69,6 +69,6 @@ Directory \XtractIS\:
 
  *dll files must be registered in the system's Global Assembly Cache GAC.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDczMDgyNCwtODczODI2MTE4LDEyMD
-Y5NzU4MTFdfQ==
+eyJoaXN0b3J5IjpbLTU1NjA4MTM5NCwxNTkwNzMwODI0LC04Nz
+M4MjYxMTgsMTIwNjk3NTgxMV19
 -->
