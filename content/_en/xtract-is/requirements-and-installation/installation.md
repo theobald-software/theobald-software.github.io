@@ -10,7 +10,7 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installation
 ---
-To be able to use Xtract IS, the file *XtractISSetup.exe* must be executed both in the local development environment (visual studio or SSDT) and on the SSIS server. This means that the Xtract IS installation routine must be installed on both environments.
+To be able to use Xtract IS, the file *XtractISSetup.exe* must be executed **both** in the local development environment (visual studio or SSDT) and on the SSIS server. This means that the Xtract IS installation routine must be installed on both environments.
 
 ### Normal Setup
 
@@ -66,6 +66,6 @@ Directory \XtractIS\:
 
  *dll files must be registered in the system's Global Assembly Cache GAC.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDU1MzQ0MiwxNTkwNzMwODI0LC04Nz
-M4MjYxMTgsMTIwNjk3NTgxMV19
+eyJoaXN0b3J5IjpbLTE4OTcyNzMxODIsMTU5MDczMDgyNCwtOD
+czODI2MTE4LDEyMDY5NzU4MTFdfQ==
 -->
