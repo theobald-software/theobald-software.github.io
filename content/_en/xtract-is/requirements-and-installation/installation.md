@@ -49,7 +49,7 @@ The list below shows some of the files that are placed on your system during ins
 
 Directory \XtractIS\:
 
-|filename |  |
+|filename | description |
 |:----|:---|
 | ERPConnect35.dll | contains backend functionality for SAP communication |
 | XtractIS.dll | contains the kernel of the Xtract IS component| 
@@ -66,5 +66,5 @@ Directory \XtractIS\:
 
  *dll files must be registered in the system's Global Assembly Cache GAC.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMDE2MDc4NV19
+eyJoaXN0b3J5IjpbMTIwNjk3NTgxMV19
 -->
