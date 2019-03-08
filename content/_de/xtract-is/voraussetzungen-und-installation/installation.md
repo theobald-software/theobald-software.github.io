@@ -43,26 +43,22 @@ Wenn man möchte, dass das Setup bzw. der License Manager den aufrufenden Prozes
 - start /w XtractLicenseManager.exe "My License\XtractIS.License.json"<br>
 - start /w XtractLicenseManager.exe XtractIS.License.json<br>
 
-Die folgende Tabelle zeigt einige Dateien, die die Installationsroutine mitbringt und auf dem Zielrechner Im Verzeichnis \XtractIS\: installiert:
-
+Die folgende Tabelle zeigt wichtige Dateien, die die Installationsroutine mitbringt und auf dem Zielrechner Im Verzeichnis \XtractIS\: installiert:
 
 
 |Dateiname | Beschreibung |
 |:----|:---|
+| ABAP Ordner | Enthält kundeneigene Funktionsbausteine (.txt) und SAP Transportaufträge (.zip).|
+| InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
+| XtractISConversionPreparer.exe | Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (siehe Kapitel [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
+| XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
+| uninst.exe | Tool zum De-installieren von Xtract IS. |
+| gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
 | ERPConnect35.dll | Enthält die Backend-Funktionen für den SAP-Zugriff. |
 | XtractIS.dll | Enthält den Kern der Xtract IS Komponenten.| 
 | XtractIS.GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
 | XtractIS.ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
 |XtractISLicense.json | Enthält Lizenz-Informationen.|
-| *.txt | Enthält Templates für kundeneigene Funktionsbausteine (im Ordner ABAP).|
-| InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
-| Gacutil.exe | Nur zur internen Nutzung für die Assembly-Registrierung.|
-| gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
-| uninst.exe | Tool zum De-installieren von Xtract IS. |
-| XtractISConversionPreparer.exe | Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (siehe Kapitel [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
-| XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
-
-
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
 <!--stackedit_data:
