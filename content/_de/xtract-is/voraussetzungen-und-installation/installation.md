@@ -54,15 +54,7 @@ Die folgende Tabelle zeigt wichtige Dateien, die die Installationsroutine mitbri
 | XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
 | uninst.exe | Tool zum De-installieren von Xtract IS. |
 | gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
-| ERPConnect35.dll | Enthält die Backend-Funktionen für den SAP-Zugriff. |
-| XtractIS.dll | Enthält den Kern der Xtract IS Komponenten.| 
-| XtractIS.GUI.dll | Enthält die Masken zur Manipulation der Datenquelle zur Design-Zeit.|
-| XtractIS.ConnectionManager.dll | Enthält Funktionen für den Verbindungsmanager.|
-|XtractISLicense.json | Enthält Lizenz-Informationen.|
+| Eula_XtractIS.rtf | Enthält die Lizenzvereinbarung zur Nutzung der Software XtractIS.|
 
 Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODEyOTk1MzYsLTEwOTM4NzU5ODQsMT
-Q0NDc2NjkwNywtMTU2NTM0NDg4OSw5NDY1MTA5MjEsLTcwMjE1
-MTYyMiw2NjYzNTEwMTYsMjEyMTAzMTI1NV19
--->
+
