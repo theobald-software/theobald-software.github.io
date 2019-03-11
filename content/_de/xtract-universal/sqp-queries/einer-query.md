@@ -31,5 +31,5 @@ Sie müssen entweder eine Variante (siehe Kapitel [Variante anwenden](./variante
 2. im nächsten Schritt können über *Edit* [Select-Parameter](./select-options-fuellen
 ) angepasst werden
 
-**Generell gilt, Selektionsparameter überschreiben die ausgewählte Variante. 
-Somit ist sicher gestellt, dass Kombinationsmöglichkeiten für die Selektion bestehen.**
+*Generell gilt, Selektionsparameter überschreiben die ausgewählte Variante. 
+Somit ist sicher gestellt, dass Kombinationsmöglichkeiten für die Selektion bestehen.*
