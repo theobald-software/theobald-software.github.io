@@ -22,6 +22,14 @@ Klicken Sie auf den Suchen-Button, um eine Query zu suchen. Eine Query wird durc
 
 Im Hauptdialog werden nun die so genannten Select Options angezeigt. Das sind die Selektionskriterien, die Sie auch sehen würden, wenn Sie die Query im SAP GUI starten.
 
+**Empehlung:**
+1. beginnen Sie mit der Erstellung einer [Variante](https://help.sap.com/doc/saphelp_dm40/4.0/de-DE/c0/980389e58611d194cc00a0c94260a5/content.htm?no_cache=true), die Sie vorab im SAP GUI erstellen sowie testen
+2. im nächsten Schritt können über *Edit* [Select-Parameter](/select-options-fuellen
+) angepasst werden
+
+*Generell gilt, dass Selektionsparameter ausgewählte Varianten überschreiben. 
+Somit ist sicher gestellt, dass Kombinationsmöglichkeiten für die Selektion bestehen.*
+
 ![Define-Query-Extraction-Data-Source-Selected](/img/content/Define-Query-Extraction-Data-Source-Selected.jpg){:class="img-responsive"}
 
 Sie müssen entweder eine Variante (siehe Kapitel [Variante anwenden](./varianten-anwenden) ) wählen oder einen Wert für die maximale Anzahl der Zeilen (siehe Kapitel [Extraktionseinstellungen](./extraktionseinstellungen_1)) setzen.
