@@ -51,18 +51,13 @@ Directory \XtractIS\:
 
 |filename | description |
 |:----|:---|
-| ERPConnect35.dll | contains backend functionality for SAP communication |
-| XtractIS.dll | contains the kernel of the Xtract IS component| 
-| XtractIS.GUI.dll | contains the GUI components for Xtract IS|
-| XtractIS.ConnectionManager.dll | contains the connection manager|
-|XtractISLicense.json | contains information about your license|
-| *.txt | contains templates for custom function modules, located in the ABAP folder|
+| ABAP folder | Contains customer-specific function modules (.txt) and SAP transport requests (.zip)|
 | InstallXtractIS.exe | console program for installing and registering the components on your system|
-| Gacutil.exe | this tool is for internal use only|
-| gac-uninstall.bat | this tool clears the GAC of all Xtract related components|
-| uninst.exe | Tool zum De-installieren von Xtract IS. |
 | XtractISConversionPreparer.exe | Use this tool after upgrading your SSIS version (see chapter [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
 | XtractLicenseManager.exe | a program to manage and view your licenses |
+| uninst.exe | Tool zum De-installieren von Xtract IS. |
+| gac-uninstall.bat | this tool clears the GAC of all Xtract related components|
+| Eula_XtractIS.rtf | Contains the license agreement for the use of the software XtractIS|
 
  *dll files must be registered in the system's Global Assembly Cache GAC.*
 <!--stackedit_data:
