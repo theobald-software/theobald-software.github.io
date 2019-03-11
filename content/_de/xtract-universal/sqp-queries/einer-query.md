@@ -28,7 +28,7 @@ Sie müssen entweder eine Variante (siehe Kapitel [Variante anwenden](./variante
 
 **Empehlung:**
 1. beginnen Sie mit der Erstellung einer [Variante](https://help.sap.com/doc/saphelp_dm40/4.0/de-DE/c0/980389e58611d194cc00a0c94260a5/content.htm?no_cache=true), die Sie vorab im SAP GUI erstellen sowie testen
-2. im nächsten Schritt können über *Edit* [Select-Parameter](/select-options-fuellen
+2. im nächsten Schritt können über *Edit* [Select-Parameter](./select-options-fuellen
 ) angepasst werden
 
 **Generell gilt, Selektionsparameter überschreiben die ausgewählte Variante. 
