@@ -51,11 +51,11 @@ Directory \XtractIS\:
 
 |filename | description |
 |:----|:---|
-| ABAP folder | Contains customer-specific function modules (.txt) and SAP transport requests (.zip)|
+| ABAP folder | contains customer-specific function modules (.txt) and SAP transport requests (.zip)|
 | InstallXtractIS.exe | console program for installing and registering the components on your system|
-| XtractISConversionPreparer.exe | Use this tool after upgrading your SSIS version (see chapter [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
+| XtractISConversionPreparer.exe | use this tool after upgrading your SSIS version (see chapter [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
 | XtractLicenseManager.exe | a program to manage and view your licenses |
-| uninst.exe | Tool zum De-installieren von Xtract IS. |
+| uninst.exe | tool for uninstalling Xtract IS |
 | gac-uninstall.bat | this tool clears the GAC of all Xtract related components|
 | Eula_XtractIS.rtf | Contains the license agreement for the use of the software XtractIS|
 
