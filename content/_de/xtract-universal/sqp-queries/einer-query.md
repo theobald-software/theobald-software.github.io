@@ -27,8 +27,8 @@ Im Hauptdialog werden nun die so genannten Select Options angezeigt. Das sind di
 2. im nächsten Schritt können über *Edit* [Select-Parameter](/select-options-fuellen
 ) angepasst werden
 
-*Generell gilt, dass Selektionsparameter ausgewählte Varianten überschreiben. 
-Somit ist sicher gestellt, dass Kombinationsmöglichkeiten für die Selektion bestehen.*
+**Generell gilt, Selektionsparameter überschreiben die ausgewählte Variante. 
+Somit ist sicher gestellt, dass Kombinationsmöglichkeiten für die Selektion bestehen.**<br>
 
 ![Define-Query-Extraction-Data-Source-Selected](/img/content/Define-Query-Extraction-Data-Source-Selected.jpg){:class="img-responsive"}
 
