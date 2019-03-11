@@ -18,7 +18,7 @@ Erstellen Sie mit Hilfe des Designers eine neue Extraktion vom Typ Query. Der fo
 
 Klicken Sie auf den Suchen-Button, um eine Query zu suchen. Eine Query wird durch Angabe des Arbeitsbereiches, der Benutzergruppe und des Query-Namens eindeutig identifiziert. Selbstverständlich sind bei der Suche Wildcards erlaubt. Bestätigen Sie die Auswahl mit *OK*.
 
-![Look-Up-Query](/img/content/Look-Up-Query.png){:class="img-responsive"}
+![Look-Up-Query](/img/content/xu/xu_query_look-up.png){:class="img-responsive"}
 
 Im Hauptdialog werden nun die so genannten Select Options angezeigt. Das sind die Selektionskriterien, die Sie auch sehen würden, wenn Sie die Query im SAP GUI starten.
 
