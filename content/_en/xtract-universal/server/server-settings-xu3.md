@@ -27,9 +27,9 @@ Defines the maximum age of the congig server log files in days. After this perio
 see chapter [User Management](../security-xu3/user-management)
 
 **Select X.509 certificate** <br>
-1. Have your IT network team create a TLS certificate.
+1. Have your IT network team create a TLS certificate. Make sure the certificate has the property "Subject Alternative Name" populated with the DNS name of the server where the Xtract Universal service is running. Otherwise it won't appear in our lookup dialog.
 2. This certificate needs to be placed in the Windows Certificate Store.
-3. Make sure the certificate has the property "Subject Alternative Name" populated with the DNS name of the server where the Xtract Universal service is running. Otherwise it won't appear in our lookup dialog.
+
 
 **Access Management** <br>
 see chapter [Access Management](../security-xu3/access-management)
@@ -45,10 +45,13 @@ Enables the secure datatranfer via HTTPS.
 
 It allows you to configure HTTP, HTTPS or both protocol types. The run statement generates an HTTPS-URL if HTTPS is activated, even if HTTP is activated.
 
-If you want to receive data via HTTPS you have to install a TLS-Certificate on the server where the Xtract Universal service is running. 
+If you want to receive data via HTTPS you have to install a TLS certificate on the server where the Xtract Universal service is running. 
 This certificate must contain the hostname of the server in the common name (CN) attribute and must be released by a certified authority.
 
 If you want to get further information please have a look at our [blog](http://www.theobald-software.com/blog/?p=389).
+
+**HTTPS - Restricted to AD users with Designer read access**
+See *HTTPS - Unrestricted*. In addition to that this setting enables access control for executing an extraction. Extractions can only be executed by Windows AD users who have at least been assigned *read access* in the *Configuration Server* tab. Please do also see [here](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html).  
 
 
 **Max. parallel requests** <br>
