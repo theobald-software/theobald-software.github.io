@@ -50,8 +50,8 @@ Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat inst
 
 Weitere Informationen finden Sie in unserem blog: http://www.theobald-software.com/blog/?p=389
 
-**HTTPS - Restricted to AD users with Designer read access**
-Siehe *HTTPS - Unrestricted*. Darüberhinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tabreiter *Configuration Server* mindestens *Read Access* zugewiesen wurde. Siehe auch [hier](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html).  
+**HTTPS - Restricted to AD users with Designer read access**<br>
+Siehe *HTTPS - Unrestricted*. Darüberhinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tabreiter *Configuration Server* mindestens *Read Access* zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Kapitel [Serversicherheit](../sicherheit_in_xu_3_x/serversicherheit1).
 
 **Max. parallel requests**<br>
 Definiert die höchste Anzahl der verschiedenen Extraktionsanfragen, welche parallel bearbeitet werden. Zwei Extraktionsanfragen sind verschieden, wenn sie Extraktionen mit verschiedenen Namen aufrufen. 
@@ -76,6 +76,3 @@ Definiert die maximale Anzahl der Ergebnisse verschiedener Extraktionen im Puffe
 **Max. age (minutes)**<br>
 Definiert das maximale Alter in Minuten einer Extraktion im Puffer.
 
-
-**HTTP client filter**<br>
-siehe Kapitel [Serversicherheit](../sicherheit_in_xu_3_x/serversicherheit1).

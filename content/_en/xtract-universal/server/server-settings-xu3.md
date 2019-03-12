@@ -50,8 +50,8 @@ This certificate must contain the hostname of the server in the common name (CN)
 
 If you want to get further information please have a look at our [blog](http://www.theobald-software.com/blog/?p=389).
 
-**HTTPS - Restricted to AD users with Designer read access**
-See *HTTPS - Unrestricted*. In addition to that this setting enables access control for executing an extraction. Extractions can only be executed by Windows AD users who have at least been assigned *read access* in the *Configuration Server* tab. Please do also see [here](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html).  
+**HTTPS - Restricted to AD users with Designer read access** <br>
+See *HTTPS - Unrestricted*. In addition to that this setting enables access control for executing an extraction. Extractions can only be executed by Windows AD users who have at least been assigned *read access* in the *Configuration Server* tab. Please do also see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and chapter on [server security](../security-xu3/server-security).  
 
 
 **Max. parallel requests** <br>
@@ -75,5 +75,3 @@ Defines the maximum count of results of different extractions in the buffer.
 **Max. age (minutes)** <br>
 Defines the maximum age in minutes of an extraction in the buffer.
 
-**HTTP client filter** <br>
-see chapter on [Server Security](../security-xu3/server-security).
