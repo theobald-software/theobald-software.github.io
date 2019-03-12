@@ -42,8 +42,7 @@ class Class1
             ReadTable table = new ReadTable(con); 
             table.AddField("MATNR"); 
             table.AddField("MAKTX"); 
-            table.AddCriteria("SPRAS = 'EN'");
-            table.AddCriteria("AND MATNR LIKE '%23'");
+            table:WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
             table.TableName = "MAKT"; 
             table.RowCount = 10; 
          
