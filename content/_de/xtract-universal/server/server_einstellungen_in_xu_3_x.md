@@ -15,6 +15,8 @@ Um die Server-Einstellungen zu ändern, klicken Sie im Hauptmenü auf *Server ->
 
 Die Server-Einstellungen verteilen sich auf zwei Reiter: *Configuration Server* und *Web Server*.
 
+## Configuration Server
+
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.jpg){:class="img-responsive"}
 
 **Port**<br>
@@ -34,17 +36,17 @@ siehe Kapitel [Benutzerverwaltung](../sicherheit_in_xu_3_x/benutzerverwaltung1)
 **Access Management**<br>
 siehe Kapitel [Zugriffsverwaltung](../sicherheit_in_xu_3_x/zugriffsverwaltung1)
 
+## Web Server
+
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"}
 
-**General**
+**Protocol/Access control**
 
 **HTTP - Unrestricted / HTTP port**<br>
 Definiert die Portnummer, über die der Server den Aufruf der Extraktionen über HTTP entgegen nimmt. 
 
 **HTTPS - Unrestricted / HTTPS port**<br>
-Aktiviert den Datentransfer via HTTPS.
-
-Mit dieser Einstellung können Sie HTTP, HTTPS oder beide Protokolltypen aktivieren. Der run-Befehl generiert eine HTTPS-URL wenn HTTPS aktiviert ist, auch dann wenn HTTP aktiviert sein sollte.
+Aktiviert den sicheren Datentransfer via HTTPS. Der run-Befehl generiert eine HTTPS-URL. Definiert den HTTPS Listener Port.
 
 Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat installieren, damit der Server den HTTPS-Port verwalten kann. Dieses Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten und durch eine Zertifizierungsstelle erstellt worden sein.
 
@@ -53,8 +55,7 @@ Weitere Informationen finden Sie in unserem blog: http://www.theobald-software.c
 **HTTPS - Restricted to AD users with Designer read access**<br>
 Siehe *HTTPS - Unrestricted*. Darüberhinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tabreiter *Configuration Server* mindestens *Read Access* zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Kapitel [Serversicherheit](../sicherheit_in_xu_3_x/serversicherheit1).
 
-**Max. parallel requests**<br>
-Definiert die höchste Anzahl der verschiedenen Extraktionsanfragen, welche parallel bearbeitet werden. Zwei Extraktionsanfragen sind verschieden, wenn sie Extraktionen mit verschiedenen Namen aufrufen. 
+**Misc.**
 
 **Max. age of log files (days)**<br>
 Definiert das maximale Alter der Webserver-Logdateien in Tagen. Danach werden die Logdateien gelöscht. 

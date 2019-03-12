@@ -15,6 +15,8 @@ To change the server settings, please click on the main menu on *Server -> Setti
 
 There are two tabs to change the server settings: *Configuration Server* and *Web Server*. 
 
+## Configuration Server
+
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.jpg){:class="img-responsive"}
 
 **Port** <br>
@@ -34,28 +36,27 @@ see chapter [User Management](../security-xu3/user-management)
 **Access Management** <br>
 see chapter [Access Management](../security-xu3/access-management)
 
+## Web Server
+
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"} 
 
-**General** <br>
-**HTTP / HTTP port** <br>
-Defines the port number, on which the XU server receives HTTP requests of an extraction.
+**Protocol / Access control** <br>
+**HTTP Unrestricted / HTTP port** <br>
+Defines the port number, on which the XU server receives HTTP requests of an extraction. The run statement generates an HTTP-URL.
 
-**HTTPS / HTTPS port** <br>
-Enables the secure datatranfer via HTTPS.
+**HTTPS Unrestricted / HTTPS port** <br>
+Enables secure datatranfer via HTTPS.
 
-It allows you to configure HTTP, HTTPS or both protocol types. The run statement generates an HTTPS-URL if HTTPS is activated, even if HTTP is activated.
+Defines the port number, on which the XU server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL.
 
-If you want to receive data via HTTPS you have to install a TLS certificate on the server where the Xtract Universal service is running. 
-This certificate must contain the hostname of the server in the common name (CN) attribute and must be released by a certified authority.
+If you want to receive data via HTTPS you need to install a TLS certificate on the server where the Xtract Universal service is running. 
+This certificate must contain the hostname of the server in the common name (CN) attribute and must be released by a certificate authority.
 
-If you want to get further information please have a look at our [blog](http://www.theobald-software.com/blog/?p=389).
+For further information please have a look at our [blog](http://www.theobald-software.com/blog/?p=389).
 
 **HTTPS - Restricted to AD users with Designer read access** <br>
 See *HTTPS - Unrestricted*. In addition to that this setting enables access control for executing an extraction. Extractions can only be executed by Windows AD users who have at least been assigned *read access* in the *Configuration Server* tab. Please do also see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and chapter on [server security](../security-xu3/server-security).  
 
-
-**Max. parallel requests** <br>
-Defines the maximum number of different extractions that can be processed simultaneously. Two extraction requests are only different when they call extractions with different names.
 
 **Max. age of log files (days)** <br>
 Defines the maximum age of the webserver log files in days. After that the log files will be deleted. 
