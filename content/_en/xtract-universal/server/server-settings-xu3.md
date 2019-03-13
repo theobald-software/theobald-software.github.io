@@ -15,7 +15,7 @@ To change the server settings, please click on the main menu on *Server -> Setti
 
 There are two tabs to change the server settings: *Configuration Server* and *Web Server*. 
 
-## Configuration Server
+### Configuration Server
 
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.jpg){:class="img-responsive"}
 
@@ -36,7 +36,7 @@ see chapter [User Management](../security-xu3/user-management)
 **Access Management** <br>
 see chapter [Access Management](../security-xu3/access-management)
 
-## Web Server
+### Web Server
 
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"} 
 

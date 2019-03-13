@@ -15,7 +15,7 @@ Um die Server-Einstellungen zu ändern, klicken Sie im Hauptmenü auf *Server ->
 
 Die Server-Einstellungen verteilen sich auf zwei Reiter: *Configuration Server* und *Web Server*.
 
-## Configuration Server
+### Configuration Server
 
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.jpg){:class="img-responsive"}
 
@@ -36,7 +36,7 @@ siehe Kapitel [Benutzerverwaltung](../sicherheit_in_xu_3_x/benutzerverwaltung1)
 **Access Management**<br>
 siehe Kapitel [Zugriffsverwaltung](../sicherheit_in_xu_3_x/zugriffsverwaltung1)
 
-## Web Server
+### Web Server
 
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"}
 
