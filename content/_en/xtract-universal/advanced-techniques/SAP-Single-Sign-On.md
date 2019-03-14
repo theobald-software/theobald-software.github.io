@@ -1,8 +1,8 @@
 ---
 ref: xu-advanced-techniques-06
 layout: page
-title: SSO with SNC
-description: SSO with SNC
+title: SAP Single Sign On
+description: SAP Single Sign On
 product: xtract-universal
 parent: advanced-techniques
 permalink: /:collection/:path
