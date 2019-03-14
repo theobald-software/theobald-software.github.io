@@ -26,5 +26,5 @@ Die AS ABAP Instanzen (mit denen sich Xtract Universal verbindet) vertrauen den 
 
 ### Weiterführende Informationen (SAP Help)
 * [Kerberos und SAP NetWeaver AS für Java](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/4c/8a4d292e2849a8b7cbd229be5c94a5/frameset.htm)
-* [Anmeldetickets mit AS ABAB verwenden](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/d0/dc33c460a243929b7ec120f55af101/frameset.htm)
+* [Anmeldetickets mit AS ABAP verwenden](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/d0/dc33c460a243929b7ec120f55af101/frameset.htm)
 * [AS Java für das Ausstellen von Anmeldetickets konfigurieren](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/4a/412251343f2ab1e10000000a42189c/frameset.htm)
