@@ -14,10 +14,12 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=xtract_is_for_azure
 
 *Xtract IS for Azure* is a solution that allows running SSIS packages, containing Xtract IS components, on an [Azure-SSIS Integration Runtime (IR), based on Microsoft's Azure Data Factory v2 (ADFv2)](https://azure.microsoft.com/en-us/blog/lift-sql-server-integration-services-packages-to-azure-with-azure-data-factory/).
 
-With Azure-SSIS IR, SSIS packages will still be developed on a local, on prem Visual Studio/SSDT environment.
-However, instead of deploying those packages to an on prem SSIS server, those packages will be deployed to an Azure-SSIS IR to be scheduled and run in the Azure cloud.
+With Azure-SSIS IR, SSIS packages will still be developed on a local (on prem) Visual Studio/SSDT environment.
+However, instead of deploying those packages to an on prem SSIS server, those packages will be deployed to an Azure-SSIS IR (part of ADFv2) to be scheduled and run in the Azure cloud.
 
-Xtract IS for Azure makes sure, that Azure-SSIS IR supports SSIS packages, containing Xtract IS components for connecting to and extracting data from SAP.
+![XISforAzure_Architecture](/img/content/XISforAzure_Architecture.jpg){:class="img-responsive" width="800px"}
+
+Xtract IS for Azure makes sure, that Azure-SSIS IR supports SSIS packages, containing Xtract IS components for connecting to and extracting data from SAP. You need to make sure that your SAP system is accessible from your Azure cloud environment, for instance through a VPN tunnel.
 
 Xtract IS for Azure is based on the existing Xtract IS version, that's been around for on prem installations for years now.
 Hence Xtract IS for Azure offers exactly the same SAP data extraction functionality as Xtract IS.
