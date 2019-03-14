@@ -12,10 +12,10 @@ lang: de_DE
 old_url: 
 ---
 
-**Anwendungsfall**
+## Anwendungsfall
 
-BI Client Tools wie z.B. Power BI, Power Pivot, alteryx, etc. können Extraktionen in Xtract Universal anstoßen. Die extrahierten Daten werden von Xtract Universal direkt in diese Tools geladen.
-Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Credentials des (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. Das spielt z.B. häufig bei der Extraktion von BW/BEx Queries eine Rolle.
+BI Client Tools wie z.B. Power BI, Power Pivot, alteryx, etc. können Extraktionen in Xtract Universal starten. Die extrahierten Daten werden von Xtract Universal direkt in diese Tools geladen.
+Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Credentials desjenigen (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. Dadurch greifen die SAP-Berechtigungen des ausführenden Benutzers, was z.B. häufig bei der Extraktion von BW/BEx Queries eine Rolle spielt.
 
 Das heisst, die Windows-Credentials dieses Benutzers müssen via Xtract Universal an SAP weitergeleitet werden. Auf dem Weg dorthin oder auf SAP-Seite besteht ein Mapping zwischen Windows-Benutzer und dessen SAP-Credentials.
 
@@ -25,7 +25,7 @@ Prinzipiell lässt sich dieses *Single Sign On (SSO)* mit Xtract Universal über
 2. Mittels SAP Logon Ticket
 
 
-**SSO in Xtract Universal und SNC mit Kerberos**
+## SSO in Xtract Universal und SNC mit Kerberos Wrapper Library
 
 Für die Nutzung dieses Verfahrens *müssen* folgende Voraussetzungen zwingend erfüllt sein:
 
@@ -57,7 +57,9 @@ Da die Kerberos Wrapper Library die Microsoft-Extensions für Kerberos verwendet
 
 
 
-**SSO in Xtract Universal via SAP Logon Ticket**
+## SSO in Xtract Universal via SAP Logon Ticket
 
-Falls eine der oben genannten Voraussetzungen nicht gegeben sein sollten (insbesondere Einsatz der Kerberos Library nicht möglich oder der SAP Applikationsserver läuft nicht unter Windows), gibt es die Möglichkeit, das SAP/AD-Benutzermapping über ein SAP Portal (SAP Web AS) ohne SNC umzusetzen. Damit wäre SSO auch möglich, allerdings ist die Verbindung dann nicht verschlüsselt (was bei SNC der Fall wäre). Andererseits müssen die SAP Applikationsserver auch nur für SAP Logon Tickets konfiguriert werden und nicht für SNC.
+Falls eine der oben genannten Voraussetzungen nicht gegeben sein sollten (insbesondere Einsatz der Kerberos Library nicht möglich oder der SAP Applikationsserver läuft nicht unter Windows), gibt es die Möglichkeit, das SAP/AD-Benutzermapping über ein SAP Portal (SAP Web AS) ohne SNC umzusetzen.
+
+Damit wäre SSO auch möglich, allerdings ist die Verbindung dann nicht verschlüsselt (was bei SNC der Fall wäre). Andererseits müssen die SAP Applikationsserver auch nur für SAP Logon Tickets konfiguriert werden und nicht für SNC.
  
