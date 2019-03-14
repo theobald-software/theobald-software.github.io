@@ -1,3 +1,4 @@
+---
 ref: xu-advanced-techniques-07
 layout: page
 title: SSO with Kerberos SNC
@@ -8,6 +9,7 @@ permalink: /:collection/:path
 weight: 1
 lang: en_EN
 old_url: 
+---
 
 
 

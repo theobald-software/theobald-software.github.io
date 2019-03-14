@@ -1,3 +1,4 @@
+---
 ref: xu-advanced-techniques-07
 layout: page
 title: SSO with SAP Logon Ticket
@@ -8,6 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: en_EN
 old_url: 
+---
 
 
 A  Single-Sign-On (SSO) connection to SAP can be set up using SAP Logon Ticket. This scenario would look like this:
