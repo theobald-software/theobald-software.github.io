@@ -7,7 +7,7 @@ product: xtract-universal
 parent: SAP-Single-Sign-On
 permalink: /:collection/:path
 weight: 2
-lang: en_EN
+lang: en_GB
 old_url: 
 ---
 
