@@ -13,7 +13,7 @@ lang: en_GB
 **Error Handling**
 
 As of ERPConnect Services Version 1.10.0, dedicated *Error Handling* is supported for all custom actions.
-This makes it possible to record and start errors that occur during the execution of the action. An error in the action does not cause the workflow to terminate. 
+This makes it possible to capture errors that occur during the execution of the action. An error in the action does not cause the workflow to terminate then. 
 
 ![ECS-Nintex-WorkflowAction_ErrorHandling](/img/content/ECS-Nintex-WorkflowAction_ErrorHandling.jpg){:class="img-responsive"}
 
