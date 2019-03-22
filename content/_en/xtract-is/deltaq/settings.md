@@ -61,7 +61,7 @@ SAP data types (like Date) will be converted to an appropriate SQL data type.
 **Value for invalid date [YYYYMMDD]**<br>
 In case of no convertable date values you have to enter a default date value into the textbox. Every invalid value will be converted into this value. SAP date '00000000' will be converted to NULL, irrespective of the entered date.
 
-**Replace date 00000000 with [YYYYMMDD]<br>
+**Replace date 00000000 with [YYYYMMDD]**<br>
 SAP date '00000000' will be converted to NULL or the entered date [YYYYMMDD]. 
 
 **Replace invalid date  with[YYYYMMDD]**<br>
