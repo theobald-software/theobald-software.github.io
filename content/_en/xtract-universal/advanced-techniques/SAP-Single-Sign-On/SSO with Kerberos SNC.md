@@ -59,7 +59,7 @@ Have the Xtract Universal service run under the XU service account.
 ![XU_ServiceAccount](/img/content/XU_Service_Account.png){:class="img-responsive"}
 
 
-### 3. Required settings on the Xtradt Universal server
+### 3. Required settings on the Xtract Universal server
 
 * copy the Kerberos Wrapper Library to the file system
 * add the XU service account to the local admin group (*compmgmt.msc*)
