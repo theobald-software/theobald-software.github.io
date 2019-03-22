@@ -59,7 +59,7 @@ Im selben Paket haben neuere Daten einen höheren RowCounter-Wert.
 **Automatic Data Type conversion**<br>
 Konvertiert SAP-Datentypen (z.B. Datum) zu einem passenden SQL-Datentyp.
 
-**Replace date 00000000 with [YYYYMMDD]
+**Replace date 00000000 with [YYYYMMDD]**<br>
 Konvertiert SAP-Datumsfelder mit Wert '00000000' nach NULL oder in das eingegebene Datum [YYYYMMDD].
 
 **Replace invalid date  with[YYYYMMDD]**<br>
