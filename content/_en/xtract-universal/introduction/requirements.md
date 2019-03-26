@@ -58,7 +58,7 @@ Additional SAP licenses might be required for extracting data from SAP. Contact 
 {% include _content/en/operating-systems.md %}
 
 **Other Applications and Frameworks** <br> 	
-- .NET Framework 4.5.2 or higher. You can get it [here](https://www.microsoft.com/de-de/download/developer-tools.aspx).
+- .NET Framework 4.6.1 or higher. You can get it [here](https://www.microsoft.com/en-US/download/details.aspx?id=49982)
 
 **Hardware Requirements** <br> 	
 - **Processor Cores**<br>
