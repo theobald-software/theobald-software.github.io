@@ -12,6 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started-table
 ---
 
+![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive"}<br>
 Please note that this chapter contains not only the details of the SAP table extraction with Table, but also is a general introduction to Xtract Universal.
 
 It is therefore a prerequisite for all subsequent chapters.
