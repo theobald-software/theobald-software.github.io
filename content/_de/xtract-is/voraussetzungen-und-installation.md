@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=voraussetzungen-und-installation
 ---
 
-![client_server_architektur_xis_FINAL](/img/content/client_server_architektur_xis_FINAL.png){:class="img-responsive"
+![client_server_architektur_xis_FINAL](/img/content/client_server_architektur_xis_FINAL.png){:class="img-responsive")
 
 Dieser Abschnitt bietet einen Überblick über die Voraussetzungen und führt in die Installation ein.
 
