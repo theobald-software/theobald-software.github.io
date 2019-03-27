@@ -29,4 +29,4 @@ The following access permissions are required:
 
 After the app is registered, the application ID will be displayed. Make sure you copy this ID as you will need it later on.
 
-Furthermore, you require a *Redirect URI*. Please follow the instructions under chapter [Register with the Azure portal.]https://docs.microsoft.com/EN-US/power-bi/developer/register-app
+Furthermore, you require a *Redirect URI*. Please follow the instructions under chapter [Register with the Azure portal.](https://docs.microsoft.com/EN-US/power-bi/developer/register-app)
