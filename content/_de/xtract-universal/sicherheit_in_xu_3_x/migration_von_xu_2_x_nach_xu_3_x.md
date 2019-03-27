@@ -24,12 +24,3 @@ Im erscheinenden Kommandozeilen-Fenster muss der Start des Konvertierungsprozess
 Wird der Konverter nicht automatisch bei der Installation ausgeführt, kann dieser auch nachträglich manuell aus dem Installationsverzeichnis gestartet werden. <br>
 
 ![XU3_Migration_3](/img/content/XU3_Migration_3.png){:class="img-responsive"}
-
-**ACHTUNG:** <br>
-In XU 2.x konnten Windows AD Benutzer in XU angelegten custom Benutzergruppen zugeordnet werden. In XU 3.x ist dies nicht mehr möglich.<br>
-Das ist ein "Breaking Change" im Vergleich zu XU 2.x.
-
-Daraus folgt, dass Windows AD Benutzer, die unter XU 2.x custom Benutzergruppen zugeordnet waren, diesen Gruppen nach der Migration zu XU 3.x nicht mehr zugeordnet sind. 
-
-Die Zugriffssicherheit wird dadurch nicht beeinträchtigt. Allerdings wird eine Zugriffssicherheit, die für Windows AD Benutzer auf Gruppenebene bestand, jetzt nunmehr auf Benutzerebene aufgelöst.
-
