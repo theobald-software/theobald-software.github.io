@@ -25,11 +25,3 @@ The start of the conversion process must be confirmed in the appearing command l
 If the converter is not executed automatically during installation, it can also be started manually from the installation directory. <br>
 
 ![XU3_Migration_3](/img/content/XU3_Migration_3.png){:class="img-responsive"}
-
-**ATTENTION**:<br>
-In XU 2.x, Windows AD users could be assigend to custom user groups. This is no longer possible in XU 3.x.
-This is a breaking change as opposed to XU 2.x.
-
-As a consequence, Windows AD users, that had been assigned to custom user groups in XU 2.x will no longer be assigned to these groups when migrating to XU 3.x.
-
-Security will not be affected but will be broken down to user level, as those users will be removed from the custom groups during the migration process.
