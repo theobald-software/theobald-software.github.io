@@ -1,1 +1,1 @@
-_"The best SAP interface is the one you don't even notice."_ - Peter Wohlfarth, CMO, Theobald Software
+_"The best SAP interface is the one you don't even notice."_ - Patrick Theobald
