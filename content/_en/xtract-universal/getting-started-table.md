@@ -18,6 +18,4 @@ It is therefore a prerequisite for all subsequent chapters.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNTEzMzExXX0=
--->
+
