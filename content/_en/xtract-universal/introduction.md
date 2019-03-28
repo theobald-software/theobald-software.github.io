@@ -17,8 +17,7 @@ Xtract Universal consists of two components, the Designer and the Server. Both c
 For error-free use, you must import the license for Xtract Universal on the server instance, since the data extractions from SAP are also performed there. 
 
 The Designer, on the other hand, creates and configures the source connections to SAP and the preferred target environments.  
-The user settings are also made there
-
+The user settings are also made there.
 ![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive" width="1200px"}
 
 This section describes the Requirements for Xtract Universal and the installation procedure.
