@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einfuehrung
 ---
 
-![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive" width="800px"}
+![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive" width="1200px"}
 
 Dieser Abschnitt bietet einen Überblick über die Architektur von Xtract Universal und führt in die Installation und Benutzung ein.
 
