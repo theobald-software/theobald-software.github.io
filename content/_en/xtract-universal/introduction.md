@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=introduction
 ---
 
-![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive" width="800px"}
+![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive" width="1200px"}
 
 This section describes the Requirements for Xtract Universal and the installation procedure.
 
