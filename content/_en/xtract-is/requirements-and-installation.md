@@ -11,7 +11,7 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements-and-installation
 ---
-![client_server_architektur_xis_final](/img/content/client_server_architektur_xis_final_3D.png){:class="img-responsive"}
+![client_server_architektur_xis_final](/img/content/client_server_architektur_xis_final_3D.png){:class="img-responsive" width="1200px"}
 
 This chapter inculdes all information about the requirements and the installation process.
 
