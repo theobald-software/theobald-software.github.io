@@ -18,15 +18,6 @@ Click the *Extraction Settings* link to open the Extraction Settings dialog.
 **Transfer Mode**<br>
 The raw data packages can be send by SAP by a *tRFC* call or a *Data-IDoc*. Normally the tRFC is optimal for the default setting. If it is necessary, e.g. to examine the raw data packages for debugging reasons, you can change the transfer mode to IDoc. Then you can examine the data packages in the transaction WE02 (IDoc-Monitoring).
 
-**Check IDoc Request State**<br>
-Defines that the request state of the sent IDocs will be validated before the process continues. The IDoc number will be logged and the IDoc’s state is checked to be successful.<br> 
-This behavior might be helpful to detect errors. It’s a good idea to activate this option for debugging purpose. Especially when extractions fail constantly or don’t generate any jobs in SM37 without additional messages.<br>
-In the default state (no check), these checks are omitted which in general increases performance.
-
-**Don't resend tRFC errors automatically / Resend errors (deprecated)**<br>
-These options are no longer available in the current version of the DeltaQ. Please set the resend in SAP.<br>
-Go to transaction SM59 -> Edit -> tRFC Options and set number of connection attempts to 30 and the time span between 2 tries to 2 minutes. 
-
 **Automatic Synchronisation**<br>
 Depending on the system landscape it could happen that developments only be performed in a test system. If SSIS packages should be used later in the productive environment, the data source has to be enabled there. To avoid manual changes in the transactional system you can activate this option. In this case the activation will be automatically done and the timestamp of the data source will be changed that it will be consistent to the SAP system setting. <br>
 If the DataSource was modified in the SAP system, e.g. a field’s name, data type or length was changed or a field was excluded from data transfer, you will still have to manually activate the DataSource in the DeltaQ component, even if Automatic Synchronisation is switched on. Otherwise data load will fail. This behaviour is by SAP design and is described in [SAP help](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
@@ -37,20 +28,17 @@ In this Case the following 3 columns will be available in the output:<br>
 *RequestID, DataPackageID* and *RowCounter*, which are a composite key of the records delivered by SAP.  
 Newer data have a higher PackageID. In the same package newer data have a higher RowCounter.
 
-**Automatic Data Type conversion**<br>
-SAP data types (e.g. date YYMMDDDD) will be converted to an appropriate (e.g. date) data type. 
-
 **Accept Gaps in DataPackage Id**<br>
 The Delta Q component makes at the end of each extraction a consistency check. Only when all packets have arrived correctly, the extraction is considered consistent. In the case that the customer has built a filter function in the user exit of an OLTP source that causes certain data packets to not be sent, the consistency check must be mitigated. Otherwise the customer filter function would be seen as inconsistency. If this option is activated, gaps in the packet numbering will not be counted by the DeltaQ as inconsistency but as intentionally withheld information. The option should only be used if a corresponding filter function exists in the user exit.
 
 **Timeout**<br>
-Defines the time period within the Xtract Universal server should wait for a "Notify" from the SAP system (in seconds).
+Defines a time period (in seconds) how long Xtract Universal will wait, after the extraction job on the SAP side is finished but not all tRFC calls have been received by Xtract Universal, yet.
 
 **Request Maintenance**<br>
-To show and delete the Init Requests (Requests in RSA7).
+To show and delete the init requests of this DataSource (requests in RSA7).
 
 - **Delete Request**<br>
-    delete the initialisation requests (requests in RSA7).
+    delete the init requests (requests in RSA7).
 
 - **Allow BW requests deletion**<br>
   	allow the deletion of the initialisation requests of the export datasources in BW. 

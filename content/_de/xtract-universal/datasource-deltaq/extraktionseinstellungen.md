@@ -19,13 +19,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=deltaq-extraktionseinstellunge
 Die Rohdatenpakete können aus SAP über tRFC-Calls oder Daten-IDocs versendet werden. <br>
 In der Regel ist tRFC als Default-Wert optimal. <br>Sollte es aber nötig sein, um z.B. die Rohdatenpakete zu Debugging-Zwecken anschauen zu können, kann der Datentransfer auf Idoc umgestellt werden. Dann lassen sich die Datenpakete in der Transaktion WE02 (Idoc-Monitoring) einsehen.
 
-**Check IDoc Request State**<br>
-Definiert, ob der Request-Status der versendeten IDocs geprüft wird. Die IDoc-Nummer wird ins Log geschrieben und der IDoc-Status wird auf Erfolg geprüft.<br>
-Diese Einstellung kann bei der Analyse eines Fehlverhaltens hilfreich sein. Insbesondere wenn Extraktionen wiederholt fehlschlagen oder ohne weitere Informationen keine Jobs in der SAP-Transaktion SM37 generieren.<br>
-Standardmäßig ist diese Option nicht gesetzt. Damit findet die Überprüfung nicht statt, was die Performance erhöht. 
-
-**Resend errors (deprecated)**<br>
-In früheren Versionen der DeltaQ hieß diese Option Don't resend tRFC errors automatically und war in der Default-Einstellung aktiviert. Mittlerweile ist die Einstellung im Default deaktiviert, da diese Einstellung nicht mehr notwendig sein sollte. Die Einstellung triggert in einem kurzen zeitlichen Intervall auf dem SAP-System einen Wiederversand von tRFC-Paketen und IDocs, wenn diese aufgrund eines tRFC-Verbindungsfehlers nicht an die Xtract RFC-Destination übermittelt werden konnten (Einträge in der Transaktion SM58). Anstelle dieser Option empfehlen wir, den Wiederversand über die tRFC-Optionen der RFC-Destination in der Transaktion SM59 auf SAP-Seite zu setzen, siehe Kapitel [Customizing für DeltaQ, Schritt 4](../sap-customizing/customizing-fuer-deltaq).
 
 **Automatic Synchronisation**<br>
 Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen ausschließlich in einem Testsystem vorgenommen werden. Wenn Extraktionen dann in der produktiven Umgebung eingesetzt werden, muss die DataSource dort aktiviert werden. Um manuelles Eingreifen im Produktivsystem zu vermeiden, kann diese Option gesetzt werden. Dann wird die Aktivierung automatisch erledigt und der Timestamp der DataSource so angepasst, dass er konsistent mit dem SAP-System übereinstimmt.<br>
