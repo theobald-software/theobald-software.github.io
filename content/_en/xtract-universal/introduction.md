@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=introduction
 ---
 
-Xtract Universal consists of two components, the Xtract Universal Designer and the Server (a lightweight Windows service). Both components can be installed and used on a single machine as well as in a client-server architecture on two machines. 
+Xtract Universal consists of two components, the Xtract Universal Designer and the Server (a lightweight Windows service). Both components can be installed and used on a single machine as well as in a client-server architecture on a server and multiple clients. 
 
 You need a valid license for Xtract Universal on the server instance only, since data extraction from SAP is performed there. 
 
