@@ -12,12 +12,12 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einfuehrung
 ---
 
-Xtract Universal besteht aus zwei Komponenten, dem Designer und dem Server. Beide Komponenten können sowohl auf einer Maschine installiert und verwendet werden als aich in einer Client-Server-Architektur. 
+Xtract Universal besteht aus zwei Komponenten, dem Xtract Universal Designer und dem Server (als Windows Service). Beide Komponenten können sowohl auf einer einzelnen Maschine installiert und verwendet werden als auch in einer Client-Server-Architektur auf einem Server und mehreren Clients. 
 
-Für die fehlerfreie Verwendung ist das Einspielen der Lizenz für Xtract Universal auf der Serverinstanz notwendig, da dort auch die Datenextraktionen aus SAP durchgeführt werden. 
+Eine gültige Lizenz für Xtract Universal wird auf der Serverinstanz benötigt, da dort die Datenextraktion aus SAP durchgeführt wird. 
 
-Im Designer werden dem hingegen die Quellverbindungen zu SAP und die bevorzugten Zielumgebungen erstellt und konfiguriert.  
-Des Weiteren werden dort die Benutzereinstellungen vorgenommen.
+Im Designer werden die Extraktionen, die Quellverbindung zu SAP und die Verbindung zu den Zielumgebungen erstellt und konfiguriert.  
+Darüber hinaus wird über den Designer die generelle Konfiguration von Xtract Universal vorgenommen.
 ![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive" width="1200px"}
 
 Dieser Abschnitt bietet einen Überblick über die Architektur von Xtract Universal und führt in die Installation und Benutzung ein.
