@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-table-extraction
 
 After starting the Designer, the Designer must first be connected to a server and thus to an extraction repository. In the case of a local Xtract server, the address is the localhost (as in the screenshot), or a different network address, depending on where the server component is running. The default port 8064 may differ depending on the configuration. If the server is running on a different machine than the Designer, make sure that the port is not blocked by your firewall. Click Connect to connect to the server. 
 
-![Designer](/img/content/xu_connect_screen_neu.png){:class="img-responsive"}
+![XU_Connect_Screen](/img/content/xu_connect_screen%20_neu.png){:class="img-responsive"}
 
 After the successful connection the buttons for the new creation and the manipulation of extractions are active. The list at the bottom of the screen is filled with all extractions that have already been created on the server.
 
