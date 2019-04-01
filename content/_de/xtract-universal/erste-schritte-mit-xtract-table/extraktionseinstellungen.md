@@ -6,7 +6,7 @@ description: Extraktionseinstellungen
 product: xtract-universal
 parent: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionseinstellungen
 ---
