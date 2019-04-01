@@ -6,7 +6,7 @@ description: WHERE Bedingung
 product: xtract-universal
 parent: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=where-bedingung
 ---
