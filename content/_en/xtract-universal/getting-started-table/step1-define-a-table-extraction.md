@@ -49,7 +49,7 @@ The SAP connection has now been set up successfully.
 
 Click *New* to create a new extraction.
 
-![Create-New-Table-Extraction](/img/content/create_new_extraxction.png){:class="img-responsive"}
+![Create-New-Table-Extraction](/img/content/xu_extraction_anlegen.png){:class="img-responsive"}
 
 Choose the SAP connection you created previously and give the extraction a unique name.
 
