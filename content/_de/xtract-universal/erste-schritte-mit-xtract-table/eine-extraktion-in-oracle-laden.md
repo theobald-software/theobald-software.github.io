@@ -1,12 +1,12 @@
 ---
 ref: xu-getting-started-table-05
 layout: page
-title: Schritt III- Eine Extraktion in Oracle laden
-description: Schritt III- Eine Extraktion in Oracle laden
+title: Schritt 4 - Eine Extraktion in Oracle laden
+description: Schritt 4 - Eine Extraktion in Oracle laden
 product: xtract-universal
 parent: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-in-oracle-laden
 ---
@@ -15,7 +15,7 @@ Der nächste Schritt ist das Laden der Extraktion in eine Oracle Datenbank.
 
 Wir wollen nun eine Oracle-Datenbank als Ziel anlegen.
 
-**Verbindung zur Oracle-Zieldatenbank definieren**
+### Verbindung zur Oracle-Zieldatenbank definieren
 
 - Klicken Sie nun auf Destinations
 
