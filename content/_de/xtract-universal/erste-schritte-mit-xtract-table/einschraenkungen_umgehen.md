@@ -6,7 +6,7 @@ description: Einschränkungen umgehen
 product: xtract-universal
 parent: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einschraenkungen_umgehen
 ---
