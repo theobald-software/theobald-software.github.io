@@ -15,7 +15,7 @@ After the launch of Xtract Universal Designer, the designer must connect to the 
 
 The default port (8064) may vary depending on the configuration. If the Xtract Universal Server is running on another machine than the Xtract Universal Designer be sure that the port is not blocked by your firewall.
 
-![XU3_Designer_Connect](/img/content/xu_connect_screen_neu.jpg){:class="img-responsive"}
+![XU3_Designer_Connect](/img/content/xu_connect_screen _neu.png){:class="img-responsive"}
 
 **Server**<br>
 Type in the host name the Xtract Universal service is running on. If the service is not running on default port 8064 (can be configured in the server settings), specify the port by adding :[port] after the host name.
