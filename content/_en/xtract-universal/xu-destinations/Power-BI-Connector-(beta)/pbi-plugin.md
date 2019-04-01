@@ -13,7 +13,7 @@ old_url:
 
 After you have completed the steps as outlined in the previous chapters the *Xtract Universal Power BI connector* should be visible as a data source in Power BI.
 
-![powerbi-datasource](/img/content/XU_pbi_xu_datasouce.png){:class="img-responsive"}
+![powerbi-datasource](/img/content/XU_pbi_connector_xu_datasouce.png){:class="img-responsive"}
 
 Enter the URL of the Xtract Universal server (that's the first part of the URL that is displayed in the web browser when you run an extraction in Xtract Universal and select *Run in Browser*)  
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
