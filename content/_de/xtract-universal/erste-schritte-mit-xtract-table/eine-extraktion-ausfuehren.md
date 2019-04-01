@@ -1,12 +1,12 @@
 ---
 ref: xu-getting-started-table-04
 layout: page
-title: Schritt II- Eine Extraktion ausführen
-description: Schritt II- Eine Extraktion ausführen
+title: Schritt 3 - Eine Extraktion ausführen
+description: Schritt 3 - Eine Extraktion ausführen
 product: xtract-universal
 parent: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-ausfuehren
 ---
