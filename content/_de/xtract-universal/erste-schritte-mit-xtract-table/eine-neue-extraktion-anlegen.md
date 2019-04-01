@@ -1,8 +1,8 @@
 ---
 ref: xu-getting-started-table-03
 layout: page
-title: Schritt I- Eine neue Extraktion anlegen
-description: Schritt I- Eine neue Extraktion anlegen
+title: Schritt 2 - Eine neue Extraktion anlegen
+description: Schritt 2 - Eine neue Extraktion anlegen
 product: xtract-universal
 parent: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
@@ -10,16 +10,7 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-neue-extraktion-anlegen
 ---
-
-Nach dem Start des Designers, muss der Designer erst mit einem Server und damit mit einem Extraktion-Repository verbunden werden. Die Adresse ist im Fall eines lokalen Xtract Servers der localhost (wie im Screenshot), oder eben eine andere Netzwerk-Adresse, je nach dem, wo die Server-Komponente läuft. Der Standardport 8064 kann je nach Konfiguration abweichen. Wenn der Server auf einer anderen Maschine als der Designer läuft, dann achten Sie drauf, dass der Port nicht von Ihrem Firewall blockiert wird. Klicken Sie auf Connect, um Verbindung mit dem Server aufzunehmen. 
-
-![XU_Connect_Screen](/img/content/xu_connect_screen%20_neu.png){:class="img-responsive"}
-
-Nach dem erfolgreichen Verbinden sind die Buttons für die Neuanlage und die Manipulation von Extraktionen aktiv. Die Liste im unteren Bereich der Maske füllt sich mit allen Extraktionen, die bereits auf dem Server angelegt sind.
-
-![Designer](/img/content/xu_3.x_initial_screen.png){:class="img-responsive"}
-
-**SAP-Verbinung anlegen**
+### SAP-Verbinung anlegen
 
 Wählen Sie den Menüpunkt **Server -> Manage Sources**.
 
@@ -53,7 +44,7 @@ Die SAP-Verbindung ist nun erfolgreich eingerichtet.
 
 ![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
 
-**Extraktion anlegen**
+### Extraktion anlegen
 
 Klicken Sie auf *New*, um eine neue Extraktion anzulegen.
 
