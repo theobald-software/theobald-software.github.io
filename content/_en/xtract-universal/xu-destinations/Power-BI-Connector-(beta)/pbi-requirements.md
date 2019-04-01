@@ -4,7 +4,7 @@ layout: page
 title: Requirements
 description: Requirements
 product: xtract-universal
-parent: Power BI Connector (beta)
+parent: Power-BI-Connector-(beta)
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
