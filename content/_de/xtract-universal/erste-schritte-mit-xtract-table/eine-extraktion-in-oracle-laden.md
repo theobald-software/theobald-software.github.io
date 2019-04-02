@@ -11,7 +11,6 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-in-oracle-laden
 ---
 
-
 ### Verbindung zur Zieldatenbank definieren
 
 Wir wollen nun examplarisch für eine Datenbank Destination, eine *Oracle-Datenbank* als Ziel anlegen.
@@ -31,7 +30,7 @@ Wir wollen nun examplarisch für eine Datenbank Destination, eine *Oracle-Datenb
 
 ![Select-Destination-Type](/img/content/Select-Destination-Type.jpg){:class="img-responsive"}
 
-- Füllen Sie die Felder **Host, Port, SID / Service Name, Username und Password**
+- Füllen Sie die Felder **Host, Port, SID / Service Name, Username** und **Password**
 - Klicken Sie auf **Test Connection**, um die Verbindung zu testen.
 
 ![Test-Connection-Successful](/img/content/Oracle-Destination-Details.jpg){:class="img-responsive"}
@@ -49,11 +48,9 @@ Die zuvor angelegte Zielverbindung *Oracle* kann jetzt für die Datenextraktion 
             
 **Extraktion in die Push-Destination Oracle laden**
 
-![Run-In-Browser-Oracle](/img/content/Run-In-Browser-Oracle.jpg){:class="img-responsive"}
+- das Konsolenfenster öffnet sich und endet mit der Statusmeldung *Extraction finished successfully*
 
-- Der Broswer öffnet sich und die zeigt das Log an.
-
-![Run-In-Browser-Result-Oracle](/img/content/Run-In-Browser-Result-Oracle.jpg){:class="img-responsive"}
+![Load-Shared-Destination-Oracle](/img/content/konsole_run_in_xu_exe.png){:class="img-responsive"}
 
 **Ergebnis in der Oracle-Datenbank überprüfen**
 
