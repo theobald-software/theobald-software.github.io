@@ -1,8 +1,8 @@
 ---
 ref: xu-getting-started-table-05
 layout: page
-title: Schritt 4 - Eine Extraktion in Oracle laden
-description: Schritt 4 - Eine Extraktion in Oracle laden
+title: Schritt 4 - Eine Extraktion in eine Datenbank laden
+description: Schritt 4 - Eine Extraktion in eine Datenbank laden
 product: xtract-universal
 parent: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
