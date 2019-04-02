@@ -12,8 +12,8 @@ lang: en_GB
 old_url: 
 ---
 
-In this section we describe our custom connector for Power BI. This connector will add an Xtract Universal data source to Power BIs list of data connectors. SAP extractions will be triggered from Power BI and extracted data will be directly loaded into Power BI.<br>
+In this section we describe our custom connector for Power BI. This connector will add an Xtract Universal data source to Power BI's list of data connectors. Xtract Universal extractions will be triggered from Power BI and extracted data will be directly loaded into Power BI for further processing.<br>
 
-**This functionality is still beta**. Please contact us at info@theobald-software.com if you would like try out the beta version of this connector.
+**This functionality is still beta**. Please contact us at *support@theobald-software.com* if you would like try out the beta version of this connector.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

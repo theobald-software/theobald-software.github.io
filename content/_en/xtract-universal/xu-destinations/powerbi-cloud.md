@@ -2,7 +2,7 @@
 ref: xu-destinations-16
 layout: page
 title: PowerBI (Cloud)
-description: PowerBI (Cloud)
+description: Power BI (Cloud)
 product: xtract-universal
 parent: xu-destinations
 childidentifier: powerbi-cloud
