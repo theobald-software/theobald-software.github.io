@@ -30,29 +30,32 @@ Wir wollen nun examplarisch für eine Datenbank Destination, eine *Oracle-Datenb
 
 ![Select-Destination-Type](/img/content/Select-Destination-Type.jpg){:class="img-responsive"}
 
-- Füllen Sie die Felder **Host, Port, SID / Service Name, Username** und **Password**
-- Klicken Sie auf **Test Connection**, um die Verbindung zu testen.
+- Füllen Sie die Felder **Host, Port, SID / Service Name, Username** und **Password** aus
+- Klicken Sie auf **Test Connection**, um die Verbindung zu testen
 
 ![Test-Connection-Successful](/img/content/Oracle-Destination-Details.jpg){:class="img-responsive"}
 
 - Klicken Sie nun **OK** im Fenster Destination Details, um die Zielverbindung zu speichern. 
 - Schließen Sie anschließend das Fenster *Shared Destination* mit **Close**
+
+### Extraktion ausführen
+
 - Wählen Sie nun die angelegte Oracle Zielverbindung im Feld *Destination* aus und bestätigen mit **OK**
+
+![Load-Shared-Destination-Oracle](/img/content/Load-Shared-Destination-Oracle.jpg){:class="img-responsive"}
 
 Die zuvor angelegte Zielverbindung *Oracle* kann jetzt für die Datenextraktion *plants* verwendet werden.
 
-![Load-Shared-Destination-Oracle](/img/content/Load-Shared-Destination-Oracle.jpg){:class="img-responsive"}
-             
 - wählen SIe die Extraktion aus und Klicken Sie auf *Run*
 - führen Sie nun die Extraktion über *run xu.exe* aus
             
-**Extraktion in die Push-Destination Oracle laden**
+### Extraktion in die Push-Destination Oracle laden
 
 - das Konsolenfenster öffnet sich und endet mit der Statusmeldung *Extraction finished successfully*
 
 ![Load-Shared-Destination-Oracle](/img/content/konsole_run_in_xu_exe.png){:class="img-responsive"}
 
-**Ergebnis in der Oracle-Datenbank überprüfen**
+### Ergebnis in der Oracle-Datenbank überprüfen
 
 - Im Oracle SQL Developer Studio können Sie das Ergebnis überprüfen. Die Tabelle wurde entsprechend angelegt.
 
