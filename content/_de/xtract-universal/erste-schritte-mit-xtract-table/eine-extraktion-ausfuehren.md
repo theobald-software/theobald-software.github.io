@@ -36,4 +36,4 @@ Die Parameter *format, bg* und *packagesize* werden im Abschnitt [Settings](./ex
 Bitte beachten Sie, dass die Übergabeparameter (wie *rows* in unserem Beispiel) nicht zwingend gesetzt sein müssen. Es ist nur dann nötig, sie zu setzen, wenn der in der Extraktion hinterlegte Wert im Nachhinein verändert (bzw. übersteuert) werden soll.
 
 Es ist ebenfalls möglich Extraktionen zu einem späteren Zeitpunkt unter Verwendung einer Aufgabenplannung (Task Scheduler) einzuplanen.
-Weiterführende Informationen zum Ablauf einer derartigen Planung, finden Sie [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/aufruf-mit-kommandozeile).
+Weiterführende Informationen zum Ablauf einer derartigen Planung finden Sie [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/aufruf-mit-kommandozeile).
