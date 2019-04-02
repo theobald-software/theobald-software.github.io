@@ -22,7 +22,7 @@ Die eigentliche Anforderung der Daten erfolgt über eine URL, z.B.
 ```
 http://localhost:8065?name=Plants
 ```
-Es reicht nur die Angabe des Namens, um die Extraktion anzustoßen. Allerdings ist es möglich, über zusätzliche Parameter bestimmte Dinge innerhalb der Extraktion zu übersteuern. Wenn Sie beispielsweise den Defaultwert von 0 (=unbegrenzt) für die maximale Anzahl von Zeilen auf 100 setzen möchten, stellen Sie die *Operation* von Default auf Override und definieren Sie den gewünschten Parameter in der Value-Spalte. Die URL sieht nun folgendermaßen aus: 
+Es reicht nur die Angabe des Namens, um die Extraktion anzustoßen. Allerdings ist es möglich, über zusätzliche Parameter bestimmte Einstellungen innerhalb der Extraktion zu übersteuern. Wenn Sie beispielsweise den Defaultwert von 0 (=unbegrenzt) für die maximale Anzahl von Zeilen auf 100 setzen möchten, stellen Sie die *Operation* von Default auf Override und definieren Sie den gewünschten Parameter in der Value-Spalte. Die URL sieht nun folgendermaßen aus: 
 ```
 http://localhost:8065?name=Plants&rows=100
 ```
@@ -34,3 +34,6 @@ Die Parameter *format, bg* und *packagesize* werden im Abschnitt [Settings](./ex
 ![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
 
 Bitte beachten Sie, dass die Übergabeparameter (wie *rows* in unserem Beispiel) nicht zwingend gesetzt sein müssen. Es ist nur dann nötig, sie zu setzen, wenn der in der Extraktion hinterlegte Wert im Nachhinein verändert (bzw. übersteuert) werden soll.
+
+Es ist ebenfalls möglich Extraktionen zu einem späteren Zeitpunkt unter Verwendung einer Aufgabenplannung (Task Scheduler) einzuplanen.
+Weiterführende Informationen zum Ablauf einer derartigen Planung, finden Sie [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/aufruf-mit-kommandozeile).
