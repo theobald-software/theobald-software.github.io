@@ -18,7 +18,7 @@ This calls the *Xtract Universal Configuration Converter*, which ensures that al
 
 ![XU3_Migration_1](/img/content/XU3_Migration_1.png){:class="img-responsive"} <br>
 
-The start of the conversion process must be confirmed in the appearing command line window. >br>
+The start of the conversion process must be confirmed in the appearing command line window. <br>
 
 ![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"} <br>
 
