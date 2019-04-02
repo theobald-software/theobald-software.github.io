@@ -11,9 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-in-oracle-laden
 ---
 
-Der nächste Schritt ist das Laden der Extraktion in eine Oracle Datenbank. 
-
-Wir wollen nun eine Oracle-Datenbank als Ziel anlegen.
+Wir wollen nun examplarisch für eine Datenbank Destination, eine Oracle-Datenbank als Ziel anlegen.
 
 ### Verbindung zur Oracle-Zieldatenbank definieren
 
