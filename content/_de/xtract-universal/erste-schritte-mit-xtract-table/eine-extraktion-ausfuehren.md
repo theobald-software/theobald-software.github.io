@@ -10,6 +10,7 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-ausfuehren
 ---
+### Eine Extraktion im Designer testen
 
 Dieser Schritt ist optional und zeigt, wie Sie sich das Ergebnis der Extraktion im Browser anzeigen lässt, um sicher zu stellen, dass die Extraktion erfolgreich läuft und das gewünschte Ergebnis liefert. <br> 
 Um eine angelegte Extraktion auszuführen, markieren Sie die entsprechende Zeile in der Hauptmaske und klicken Sie auf *Run*.
@@ -34,6 +35,8 @@ Die Parameter *format, bg* und *packagesize* werden im Abschnitt [Settings](./ex
 ![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
 
 Bitte beachten Sie, dass die Übergabeparameter (wie *rows* in unserem Beispiel) nicht zwingend gesetzt sein müssen. Es ist nur dann nötig, sie zu setzen, wenn der in der Extraktion hinterlegte Wert im Nachhinein verändert (bzw. übersteuert) werden soll.
+
+### Eine Extraktion einplanen
 
 Es ist ebenfalls möglich Extraktionen zu einem späteren Zeitpunkt unter Verwendung einer Aufgabenplannung (Task Scheduler) einzuplanen.
 Weiterführende Informationen zum Ablauf einer derartigen Planung finden Sie [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/aufruf-mit-kommandozeile).
