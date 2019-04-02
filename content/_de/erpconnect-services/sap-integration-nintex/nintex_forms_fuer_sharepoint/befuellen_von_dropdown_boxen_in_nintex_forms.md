@@ -63,6 +63,7 @@ NWF$(document).ready(function() {
         var $ = NWF$,
             // material number input and dropbox
             tsInput = $('#' + field_input),
+            // in combobox properties set custom text e.g. "Start typing in the field above..."
             tsSelect = $('#' + field_select),
             // description output
             tsInputDescription = $('#' + field_output),
@@ -78,48 +79,62 @@ NWF$(document).ready(function() {
                 type: 'Start typing in the input above'
             },
             //
-            //selectOptionString = '{0} ({1})',
             domOptionString1parameter = '{0}',
             domOptionString = '{0} ({1})',
             // xql query
             xqlString = "SELECT TOP 10 MATNR, MAKTX FROM MAKT WHERE (MATNR LIKE '%{0}%' OR MAKTX LIKE '%{0}%') AND SPRAS = 'EN'",
             queryFunction = function(val) {
-                return tEcs.executeXql({
+                var tEcsOptions = {
                     data: tEcs.format(xqlString, val)
-                });
+                };
+                if(window.ecsCoreConnection){
+                    tEcsOptions.connection = window.ecsCoreConnection;
+                }
+                return tEcs.executeXql(tEcsOptions);
             };
  
+        var firstOption = tsSelect.find("option:nth-child(1)").clone();
+        tsSelect[0].selectedIndex = -1;
         tsSelect.empty();
-        tsSelect.append(tEcs.format(domOptionString1parameter, strings.type));
+        tsSelect.append(firstOption.clone());
  
+        // user types into input, each character triggers search (SAP query)
         tsInput.on('input', function() {
             tsSelect.empty();
-            tsSelect.append(tEcs.format(domOptionString1parameter, strings.loading));
+            var newOption = firstOption.clone();
+            newOption.text(strings.loading);
+            tsSelect.append(newOption);
+            newOption.prop('selected', 'selected');
+ 
             queryFunction(tsInput.val())
                 .done(function(data) {
                     tsSelect.empty();
+                    var newOptionAfterInput = firstOption.clone();
+                    newOptionAfterInput.prop('selected', 'selected');
  
                     if (data.length > 0) {
-                        tsSelect.append(tEcs.format(domOptionString, strings.select, data.length + strings.matches));
+                      newOptionAfterInput.text(tEcs.format(domOptionString, strings.select, data.length + strings.matches));
+                        tsSelect.append(newOptionAfterInput);
+ 
                         $.each(data, function(i, v) {
-                            var $option = $(tEcs.format(domOptionString, v.MATNR, v.MAKTX));
+                            var $option = firstOption.clone();
+                            $option.text(tEcs.format(domOptionString, tEcs.util.ltrim(v.MATNR, '0'), v.MAKTX));
                             $option.attr('tsdescription', v.MAKTX);
                             tsSelect.append($option);
                         });
                     } else {
-                        tsSelect.append(tEcs.format(domOptionString1parameter, strings.noMatches));
+                        newOptionAfterInput.text(strings.noMatches);
+                        tsSelect.append(newOptionAfterInput);
                     }
+ 
+                    tsSelect[0].selectedIndex = 0;
                 }).fail(function(xhr, et) {
                     console.log(xhr, et);
                 });
         });
-        tsSelect.on('change', function() {
-            var firstOption = tsSelect.find('option:first');
-            if (firstOption.val() === strings.select) {
-                firstOption.remove();
-            }
  
-            tsInput.val(tsSelect.val());
+        // when user selects an option
+        tsSelect.on('change', function() {
             tsInputDescription.val(tsSelect.find('option:selected').attr('tsdescription'));
         });
     });
