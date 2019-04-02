@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-in-oracle-lade
 
 Wir wollen nun examplarisch für eine Datenbank Destination, eine *Oracle-Datenbank* als Ziel anlegen.
 
-- Klicken Sie nun auf **Destinations**
+- Klicken Sie nun auf **Destination**
 
 ![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
 
