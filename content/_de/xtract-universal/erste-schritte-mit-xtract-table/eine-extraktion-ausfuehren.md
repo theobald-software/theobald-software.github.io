@@ -20,11 +20,11 @@ Es öffnet sich das nachfolgende Fenster, in dem Sie Details der Ausführung fes
 
 Die eigentliche Anforderung der Daten erfolgt über eine URL, z.B. 
 ```
-http://localhost:8065?name=plants
+http://localhost:8065?name=Plants
 ```
 Es reicht nur die Angabe des Namens, um die Extraktion anzustoßen. Allerdings ist es möglich, über zusätzliche Parameter bestimmte Dinge innerhalb der Extraktion zu übersteuern. Wenn Sie beispielsweise den Defaultwert von 0 (=unbegrenzt) für die maximale Anzahl von Zeilen auf 100 setzen möchten, stellen Sie die *Operation* von Default auf Override und definieren Sie den gewünschten Parameter in der Value-Spalte. Die URL sieht nun folgendermaßen aus: 
 ```
-http://localhost:8065?name=plants&rows=100
+http://localhost:8065?name=Plants&rows=100
 ```
 
 ![Run-Table-Extraction-Plants](/img/content/run_extraction_xu.png){:class="img-responsive"}
