@@ -6,7 +6,7 @@ description: Avoid Restrictions
 product: xtract-universal
 parent: getting-started-table
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=avoid-restrictions
 ---
