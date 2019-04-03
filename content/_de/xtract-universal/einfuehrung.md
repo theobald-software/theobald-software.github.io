@@ -11,14 +11,7 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einfuehrung
 ---
-
-Xtract Universal besteht aus zwei Komponenten, dem Xtract Universal Designer und dem Server (als Windows Service). Beide Komponenten können sowohl auf einer einzelnen Maschine installiert und verwendet werden als auch in einer Client-Server-Architektur auf einem Server und mehreren Clients. 
-
-Eine gültige Lizenz für Xtract Universal wird auf der Serverinstanz benötigt, da dort die Datenextraktion aus SAP durchgeführt wird. 
-
-Im Designer werden die Extraktionen, die Quellverbindung zu SAP und die Verbindung zu den Zielumgebungen erstellt und konfiguriert.  
-Darüber hinaus wird über den Designer die generelle Konfiguration von Xtract Universal vorgenommen.
-![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive" width="1200px"}
+Xtract Universal ist ein so genanntes ELT-Tool (*extract_load_transport*), dass es ermöglicht Datenobjekte aus SAP-ERP sowie SAP-BW zu extrahieren. Diese extrahierten Daten können anschließend in die unterschiedlchsten Zielumgebungen transportiert werden und stehen dort für weitere Transformationsprozesse zur Verfügung. 
 
 Dieser Abschnitt bietet einen Überblick über die Architektur von Xtract Universal und führt in die Installation und Benutzung ein.
 
