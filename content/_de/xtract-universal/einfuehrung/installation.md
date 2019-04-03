@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-02
+ref: xu-introduction-03
 layout: page
 title: Installation
 description: Installation
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=installation
 ---
