@@ -12,13 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=introduction
 ---
 
-Xtract Universal consists of two components, the Xtract Universal Designer and the Server (a lightweight Windows service). Both components can be installed and used on a single machine as well as in a client-server architecture on a server and multiple clients. 
-
-You need a valid license for Xtract Universal on the server instance only, since data extraction from SAP is performed there. 
-
-At design time, you connect the Xtract Universal Designer with the Xtract Universal Server. Within the Designer, you create the actual extractions, set up the connection to SAP as well as any destination environment and perform various configuration tasks.
-
-![client_server_architektur_xu_FINAL](/img/content/client_server_architektur_xu_FINAL.png){:class="img-responsive" width="1200px"}
+Xtract Universal is an ETL-tool that enables you to extract data objects from ABAP NetWeaver-based systems such as SAP ERP or SAP BW. This extracted data can then be transported to various target environments where it is available for further transformation processes.
 
 This section describes the technical requirements for Xtract Universal as well as the installation procedure.
 
