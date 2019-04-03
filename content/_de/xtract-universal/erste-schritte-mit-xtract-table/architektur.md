@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-01
+ref: xu-introduction-01
 layout: page
 title: Architektur
 description: Architektur
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: einfuehrung
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
