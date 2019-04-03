@@ -24,6 +24,6 @@ Weiterführende Informationen zur Installation eines Transportauftrags finden Si
 
 Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig. 
 
-*OHS*: Siehe [Vorbereitung für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw).
+*OHS*: Siehe [Vorbereitung für OHS im BW](https://help.theobald-software.com/de/xtract-is/sap-customizing/vorbereitung-fuer-ohs-im-bw).
 
 *DeltaQ*: Refer to [Customizing für DeltaQ](https://help.theobald-software.com/de/xtract-is/sap-customizing/customizing-fuer-deltaq).
