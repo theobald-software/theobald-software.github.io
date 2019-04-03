@@ -21,7 +21,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=verschiedenes
 - SM59 - Konfiguration der RFC-Verbindungen
 
 ### Fehleranalyse
-- SQMQS - qRFC Monitor (QOUT Scheduler)
+- SMQS - qRFC Monitor (QOUT Scheduler)
 - SM37 - Hintergundjobs
 - SM50 - Prozessübersicht
 - SM58 - Transaktionaler RFC
