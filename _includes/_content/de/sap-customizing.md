@@ -5,7 +5,7 @@ Um mögliche Einschränkungen bei der Extraktion von Tabellen zu umgehen oder an
 
 *Table*: In den meisten Fällen ist die Installation eines Z-Funktionsbausteins notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](https://help.theobald-software.com/de/xtract-is/sap-customizing/funktionsbaustein-fuer-table-extraktion) . 
 
-*Table Join*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Funktionsbaustein für Table-Join](./sap-customizing/funktionsbaustein-fuer-table-join).
+*Table Join*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Funktionsbaustein für Table-Join](https://kb.theobald-software.com/sap/installation-of-the-function-module-z_xtract_is_table_join).
 
 *Report*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
 
