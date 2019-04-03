@@ -95,7 +95,7 @@ The extraction has a dynamic variable that can be set in PowerShell.
 Check our [Blog](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/) about using Xtract Universal with PowerShell for further scripts and examples.
 
 <details>
-<summary>PowerShell Script.</summary>
+<summary>Click here to show PowerShell Script.</summary>
 {% highlight javascript %}
 # Execute an Xtract Universal extraction using the command tool xu.exe in a powershell script
 # the extraction has a variable CalendarMonth that needs a value in the format YYYYMM, e.g. 201712
