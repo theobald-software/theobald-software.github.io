@@ -11,13 +11,15 @@ lang: de_DE
 old_url: 
 ---
 
-Hier zeigen wir die Pentaho-Integration über HTTP.
+Hier zeigen wir die Pentaho-Integration über den Aufruf eines HTTP-Webservices.
+In Pentaho führen wir die Extraktion durch einen HTTP Aufruf. 
+Das untere Bild zeigt die Archtitektur. Xtract Universal extrahiert die Daten aus SAP und liefert sie über HTTP im CSV-Format.
+In Pentaho können wir anschließend die extrahierten Daten weiterverarbeiten und z.B. in eine Datenbank schreiben.
+![pdi-http-xu](/img/content/xu/best-practices/pdi-http/xu-pdi-ws.png){:class="img-responsive"}
+
 Dieses Szenario setzt kein bestimmtes Betriebssystem voraus, im Unterschied zum Szenario mit der Kommandozeile, das nur auf einem Windows-Betriebssystem läuft.
 In Xtract Universal haben wir eine Extraktion mit HTTP-CSV Destination definiert. 
-In Pentaho führen wir die Extraktion durch einen HTTP Aufruf. 
-Xtract Universal extrahiert die Daten aus SAP und liefert sie über HTTP im CSV-Format.
-In Pentaho können wir anschließend die gelieferten Daten weiterverarbeiten.
-
+<br>
 **Extraktion in Xtract Universal**<br>
 Hier sehen wir die Definition der Extraktion in Xtract Universal mit HTTP-CSV Destination:<br>
 ![pdi-http-xu](/img/content/xu/best-practices/pdi-http/pdi-http-xu.png){:class="img-responsive"}
