@@ -1,12 +1,12 @@
 ---
 ref: xu-getting-started-table-05
 layout: page
-title: Step III- Load an Extraction in an Oracle Database
-description: Step III- Load an Extraction in an Oracle Database
+title: Step 4 - Load an Extraction in an Oracle Database
+description: Step 4 - Load an Extraction in an Oracle Database
 product: xtract-universal
 parent: getting-started-table
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=load-an-extraction-in-oracle
 ---
@@ -15,7 +15,7 @@ In this step we would load the extraction in an Oracle Database.
 
 Therefore we create an Oracle Destination. 
 
-**Define Oracle Destination**
+### Define Oracle Destination
 
 - Click on **Destinations**
 

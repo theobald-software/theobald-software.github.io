@@ -11,7 +11,6 @@ lang: de_DE
 old_url: 
 ---
 
-**SSO in Xtract Universal und SNC mit Kerberos**
 
 Auf dieser Seite werden die notwendigen Schritte beschrieben, um SSO mit SNC und Kerberos für Xtract Universal einzurichten.
 **Die hier beschriebenen Schritte setzen voraus, dass des SAP-Applikationsserver unter Windows läuft und für SNC mit Kerberos eingerichtet wurde/wird.**
@@ -23,9 +22,9 @@ Auf dieser Seite werden die notwendigen Schritte beschrieben, um SSO mit SNC und
 5. Notwendige Einstellungen auf SAP-Seite.
 
 
-**Zu 1: Aktivierung von HTTPS in Xtract Universal**
+### 1. Aktivierung von HTTPS in Xtract Universal
 
-Diese Einstellung hat erstmal nichts direkt mit dem Einrichten von SSO zu tun, ist allerdings Voraussetzung dafür. SSO funktioniert nur, sofern der Extraktionsaufruf per HTTPS erfolgt. Hierfür muss ein X.509-Zertifikat in Xtract Universal bekannt gemacht werden.
+Diese Einstellung hat erstmal nicht direkt mit dem Einrichten von SSO zu tun, ist allerdings Voraussetzung dafür. SSO funktioniert nur, sofern der Extraktionsaufruf per HTTPS erfolgt. Hierfür muss ein X.509-Zertifikat in Xtract Universal bekannt gemacht werden.
 
 1. Lassen Sie ein X.509-Zertifikat von Ihrem IT Netzwerk Team erstellen. In der Zertifikatseigenschaft "Subject Alternative Name" muss der DNS Name des Servers stehen, auf dem der Xtract Universal Windows Dienst läuft. Ansonsten erscheint das Zertifikat später nicht im Lookup Dialog von Xtract Universal.
 2. Hinterlegen Sie das Zertifikat im Windows Certificate Store auf dem XU Server.
@@ -38,7 +37,7 @@ Diese Einstellung hat erstmal nichts direkt mit dem Einrichten von SSO zu tun, i
 ![XU_SSO_httpsPort](/img/content/XU_SSO_HTTPS_Port.png){:class="img-responsive"}
 
 
-**Zu 2: Anlegen eines AD Service Accounts**
+### 2. Anlegen eines AD Service Accounts
 
 Legen Sie einen Windows AD Service Account an. Das ist der Account, unter dem der Xtract Universal Service läuft (XU Service Account).
 
@@ -58,7 +57,7 @@ Im folgenden Screenshot ist [*SAPServiceERP/do_not_care*](https://help.sap.com/v
 ![XU_ServiceAccount](/img/content/XU_Service_Account.png){:class="img-responsive"}
 
 
-**Zu 3: Notwendige Einstellungen auf dem Xtract Universal Server**
+### 3. Notwendige Einstellungen auf dem Xtract Universal Server
 
 * Kerberos Library auf Laufwerk kopieren
 * Hinzufügen des XU Service Account zur Local Admin Gruppe (*compmgmt.msc*)
@@ -89,10 +88,12 @@ Value:   1
 ![XU_SSO_LocSecPol](/img/content/XU_SSO_LocSecPol.png){:class="img-responsive"}
 
 
-**Zu 4: Einstellungen in Xtract Universal**
+### 4. Einstellungen in Xtract Universal
 
-
-Öffnen Sie die Einstellungen zur SAP Source. Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an. Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten. Als *Partner name* geben Sie bitte den SPN des SAP Service Accounts an (siehe Screenshot unter Punkt 2 oben). Bitte verwenden Sie diese Notation. *p:[SPN]@[Domain-FQDN-Uppercase]*.  
+Öffnen Sie die Einstellungen zur SAP Source.
+* Wählen Sie *SNC* aus und haken Sie *Impersonate authenticated caller (SSO)* an.
+* Unter *SNC library* geben Sie bitten den Pfad an, unter dem Sie die gx64krb5.dll aus *Schritt 3* abgelegt hatten.
+* Als *Partner name* geben Sie bitte den SPN des SAP Service Accounts an (siehe Screenshot unter Punkt 2 oben). Bitte verwenden Sie diese Notation. *p:[SPN]@[Domain-FQDN-Uppercase]*.  
 
 *Achtung:* 
 * Im SAP Logon Pad wird im Falle von SNC der Partnername häufig im Format des UPN des SAP Service Accounts angegeben (*p:[SAP Service Account]@[Domäne]*). Das ist im Falle von Xtract Universal *falsch*. Bitte verwenden Sie, wie oben beschrieben, immer den SPN in der obigen Notation.
@@ -102,6 +103,6 @@ Value:   1
 ![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}
 
 
-**Zu 5: Einstellungen auf SAP-Seite.**
+### 5. Einstellungen auf SAP-Seite
 
 Lesen Sie bitte die notwendigen Einstellungen für Kerberos SNC in der [SAP Hilfe](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/DE-DE/440ebf6c9b2b0d1ae10000000a114a6b.html) nach. Ein Anhaltspunkt dafür, ob die Einstellungen stimmen ist, dass Sie sich mit dem SAP Logon Pad per SSO am SAP System anmelden können.

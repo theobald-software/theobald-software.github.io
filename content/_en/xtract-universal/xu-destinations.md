@@ -79,3 +79,6 @@ An extraction with push destinations involves the extracting of data from the SA
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0MTc2MzUwMDFdfQ==
+-->

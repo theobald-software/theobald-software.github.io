@@ -15,3 +15,6 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=logging
 In this chapter you get an overview about the logging functions in Xtract Universal.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MTUzMzgzNTZdfQ==
+-->

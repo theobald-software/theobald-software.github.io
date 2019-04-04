@@ -1,27 +1,23 @@
 ---
 ref: xu-getting-started-table-05
 layout: page
-title: Schritt III- Eine Extraktion in Oracle laden
-description: Schritt III- Eine Extraktion in Oracle laden
+title: Schritt 4 - Eine Extraktion in eine Datenbank laden
+description: Schritt 4 - Eine Extraktion in eine Datenbank laden
 product: xtract-universal
 parent: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-in-oracle-laden
 ---
 
-Der nächste Schritt ist das Laden der Extraktion in eine Oracle Datenbank. 
+### Verbindung zur Zieldatenbank definieren
 
-Wir wollen nun eine Oracle-Datenbank als Ziel anlegen.
+Wir wollen nun examplarisch für eine Datenbank Destination, eine *Oracle-Datenbank* als Ziel anlegen.
 
-**Verbindung zur Oracle-Zieldatenbank definieren**
+- Klicken Sie nun auf **Destination**
 
-- Klicken Sie nun auf Destinations
-
-![Load-Destinations](/img/content/Load-Destinations.jpg){:class="img-responsive"}
-
-- Wählen Sie **Shared** und klicken Sie auf **Manage** ... 
+![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
 
 ![Load-Manage-Shared-Destination](/img/content/Load-Manage-Shared-Destination.jpg){:class="img-responsive"}
 
@@ -29,45 +25,37 @@ Wir wollen nun eine Oracle-Datenbank als Ziel anlegen.
 
 ![Shared-Destinations](/img/content/Shared-Destinations.jpg){:class="img-responsive"}
 
-- Geben Sie eine Namen für die Zielverbinung ins Feld **Name **ein
-- Wählen Sie **Oracle** aus der **Type**-Auswahlliste.
+- Geben Sie einen Namen für die Zielverbindung ins Feld **Name** ein
+- Wählen Sie **Oracle** aus der **Type**- Auswahlliste aus
 
 ![Select-Destination-Type](/img/content/Select-Destination-Type.jpg){:class="img-responsive"}
 
-- Füllen Sie die Felder **Data Source, User Id** und **Password** mit dem Datenbankserver, Benutzernamen und Passwort.
-- Klicken Sie auf **Test Connection**, um die Verbindung zu testen.
+- Füllen Sie die Felder **Host, Port, SID / Service Name, Username** und **Password** aus
+- Klicken Sie auf **Test Connection**, um die Verbindung zu testen
 
-![Test-Connection-Successful](/img/content/Test-Connection-Successful.jpg){:class="img-responsive"}
+![Test-Connection-Successful](/img/content/Oracle-Destination-Details.jpg){:class="img-responsive"}
 
-- Klicken Sie nun **OK** im Festner Destination Details, um die Zielverbindung zu speichern.   
-- Wählen Sie nun die angelegte Zielverbindung und klicken Sie auf **Close** im Fenster Shared Destinations.
-Die angelegte Zielverbindung aus der Auswahlliste **Shared** ist nun gewählt im Fenster **Destination**.
+- Klicken Sie nun **OK** im Fenster Destination Details, um die Zielverbindung zu speichern. 
+- Schließen Sie anschließend das Fenster *Shared Destination* mit **Close**
 
+### Extraktion ausführen
+
+- Wählen Sie nun die angelegte Oracle Zielverbindung im Feld *Destination* aus und bestätigen mit **OK**
 
 ![Load-Shared-Destination-Oracle](/img/content/Load-Shared-Destination-Oracle.jpg){:class="img-responsive"}
 
-**Einstellungen festlegen**
+Die zuvor angelegte Zielverbindung *Oracle* kann jetzt für die Datenextraktion *plants* verwendet werden.
 
-- Die Extraktionsspezifische Zieleinstellungen finden Sie unter **Extraction-Specific Settings**. Wir behalten die Standard-Einstellungen:
-
-
-![Extraction-Specific-Settings-T001W](/img/content/Extraction-Specific-Settings-T001W.jpg){:class="img-responsive"}
-
-- Klicken Sie auf OK und kehren Sie zum Designer zurück.             
-**Extraktion ausführen**
+- wählen SIe die Extraktion aus und Klicken Sie auf *Run*
+- führen Sie nun die Extraktion über *run xu.exe* aus
             
-Nun wollen wir die Extraktion in Oracle laden.
-- Wählen Sie die Extraktion und klicken Sie auf Run 
-- Klicken Sie nun auf Run in Browser und anschließend auf Close.
+### Extraktion in die Push-Destination Oracle laden
 
-![Run-In-Browser-Oracle](/img/content/Run-In-Browser-Oracle.jpg){:class="img-responsive"}
+- das Konsolenfenster öffnet sich und endet mit der Statusmeldung *Extraction finished successfully*
 
-- Der Broswer öffnet sich und die zeigt das Log an.
+![Load-Shared-Destination-Oracle](/img/content/konsole_run_in_xu_exe.png){:class="img-responsive"}
 
-
-![Run-In-Browser-Result-Oracle](/img/content/Run-In-Browser-Result-Oracle.jpg){:class="img-responsive"}
-
-**Ergebnis in der Oracle-Datenbank überprüfen**
+### Ergebnis in der Oracle-Datenbank überprüfen
 
 - Im Oracle SQL Developer Studio können Sie das Ergebnis überprüfen. Die Tabelle wurde entsprechend angelegt.
 

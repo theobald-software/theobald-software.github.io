@@ -23,5 +23,9 @@ In the log file XtractForAlteryxSetup.txt you can read exactly which modificatio
 If you start Alteryx after installation, the XfA components are available in a separate tab in the toolbox within the Alteryx UI and can be dragged and dropped onto the workflow as usual.
 If you don't see the tab immediately, scroll to the right of the Toolbox tabs. You should find it there.
 
-![Designer](/img/content/xfa/designer01.png){:class="img-responsive"}
+![Designer](/img/content/xtract_for_alteryx_tools.png){:class="img-responsive"}
+
+**recommendation**<br>
+Before installing Xtract For Alteryx, make sure that the Alterxy Designer is closed on your computer.
+This procedure ensures that the XfA components are available and can be displayed in the Alteryx Designer.
 

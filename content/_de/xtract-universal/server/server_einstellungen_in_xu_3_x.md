@@ -15,6 +15,8 @@ Um die Server-Einstellungen zu ändern, klicken Sie im Hauptmenü auf *Server ->
 
 Die Server-Einstellungen verteilen sich auf zwei Reiter: *Configuration Server* und *Web Server*.
 
+### Configuration Server
+
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.jpg){:class="img-responsive"}
 
 **Port**<br>
@@ -27,31 +29,33 @@ Definiert das maximale Alter der Logdateien des Config-Servers in Tagen. Danach 
 siehe Kapitel [Benutzerverwaltung](../sicherheit_in_xu_3_x/benutzerverwaltung1)
 
 **Select X.509 certificate**<br>
-1. Lassen Sie ein TLS Zertifikat von Ihrem IT Netzwerk Team erstellen.
+1. Lassen Sie ein TLS Zertifikat von Ihrem IT Netzwerk Team erstellen. In der Zertifikatseigenschaft "Subject Alternative Name" muss der DNS Name des Servers stehen, auf dem der Xtract Universal Windows Dienst läuft. Ansonsten erscheint das Zertifikat nicht im Lookup Dialog.
 2. Das Zertifikat muss im Windows Certificate Store auf dem XU Server hinterlegt werden.
-3. In der Zertifikatseigenschaft "Subject Alternative Name" muss der DNS Name des Servers stehen, auf dem der Xtract Universal Windows Dienst läuft. Ansonsten erscheint das Zertifikat nicht im Lookup Dialog.
+
 
 **Access Management**<br>
 siehe Kapitel [Zugriffsverwaltung](../sicherheit_in_xu_3_x/zugriffsverwaltung1)
 
+### Web Server
+
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"}
 
-**General**
+**Protocol/Access control**
 
-**HTTP / HTTP port**<br>
+**HTTP - Unrestricted / HTTP port**<br>
 Definiert die Portnummer, über die der Server den Aufruf der Extraktionen über HTTP entgegen nimmt. 
 
-**HTTPS / HTTPS port**<br>
-Aktiviert den Datentransfer via HTTPS.
+**HTTPS - Unrestricted / HTTPS port**<br>
+Aktiviert den sicheren Datentransfer via HTTPS. Der run-Befehl generiert eine HTTPS-URL. Definiert den HTTPS Listener Port.
 
-Mit dieser Einstellung können Sie HTTP, HTTPS oder beide Protokolltypen aktivieren. Der run-Befehl generiert eine HTTPS-URL wenn HTTPS aktiviert ist, auch dann wenn HTTP aktiviert sein sollte.
-
-Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein SSL-Zertifikat installieren, damit der Server den HTTPS-Port verwalten kann. Dieses Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten und durch eine Zertifizierungsstelle erstellt worden sein.
+Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat installieren, damit der Server den HTTPS-Port verwalten kann. Dieses Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten und durch eine Zertifizierungsstelle erstellt worden sein.
 
 Weitere Informationen finden Sie in unserem blog: http://www.theobald-software.com/blog/?p=389
 
-**Max. parallel requests**<br>
-Definiert die höchste Anzahl der verschiedenen Extraktionsanfragen, welche parallel bearbeitet werden. Zwei Extraktionsanfragen sind verschieden, wenn sie Extraktionen mit verschiedenen Namen aufrufen. 
+**HTTPS - Restricted to AD users with Designer read access**<br>
+Siehe *HTTPS - Unrestricted*. Darüberhinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tabreiter *Configuration Server* mindestens *Read Access* zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Kapitel [Serversicherheit](../sicherheit_in_xu_3_x/serversicherheit1).
+
+**Misc.**
 
 **Max. age of log files (days)**<br>
 Definiert das maximale Alter der Webserver-Logdateien in Tagen. Danach werden die Logdateien gelöscht. 
@@ -73,6 +77,3 @@ Definiert die maximale Anzahl der Ergebnisse verschiedener Extraktionen im Puffe
 **Max. age (minutes)**<br>
 Definiert das maximale Alter in Minuten einer Extraktion im Puffer.
 
-
-**HTTP client filter**<br>
-siehe Kapitel [Serversicherheit](../sicherheit_in_xu_3_x/serversicherheit1).

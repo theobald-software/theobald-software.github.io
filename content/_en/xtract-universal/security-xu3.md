@@ -38,3 +38,6 @@ The following rights can be assigned. See chapter Access Management for a detail
 - admin
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM4MTUxODk0XX0=
+-->

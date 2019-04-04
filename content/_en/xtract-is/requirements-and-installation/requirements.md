@@ -50,7 +50,7 @@ SAP systems on HANA particularly are supported without any restrictions.
 
 
 
-For Information about the Installation of the custom function modules and the SAP customizing please check the section SAP Customizing.
+For Information about the Installation of the custom function modules and the SAP customizing please check the section [SAP Customizing](../sap-customizing).
 
 **SAP Authentication**
 

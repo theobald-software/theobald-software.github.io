@@ -32,7 +32,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 | **Table**     | Rel. above 4.0B        | In den meisten Fällen ist die Installation eines Z-Funktionsbuasteins notwendig. |
 | **Query**     | Rel. 4.0B und höher.   | Keine.                                                               |
 | **BAPI**      | Rel. 4.0B und höher.   | Keine.                                                               |
-| **Report**    | Rel. 4.0B und höher.   | [Installation eines Z-Moduls](../sap-customizing/funktionsbaustein-fuer-table-komprimierung) ist notwendig.                           |
+| **Report**    | Rel. 4.0B und höher.   | [Installation eines Z-Moduls](https://help.theobald-software.com/de/xtract-is/sap-customizing/report-funktionsbaustein-installieren) ist notwendig.                           |
 | **BW Cube**   | Rel. BW 3.1 und höher. | Keine.                                                               |
 | **Hierarchy** | Rel. BW 3.1 und höher. | Keine.                                                               |
                                                        |

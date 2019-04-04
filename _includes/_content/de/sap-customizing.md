@@ -3,9 +3,9 @@ Um mögliche Einschränkungen bei der Extraktion von Tabellen zu umgehen oder an
 
 **Installation eines Z-Funktionsbausteins auf dem SAP-System**
 
-*Table*: In den meisten Fällen ist die Installation eines Z-Funktionsbausteins notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](./sap-customizing/funktionsbaustein-fuer-table-extraktion) . 
+*Table*: In den meisten Fällen ist die Installation eines Z-Funktionsbausteins notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](https://help.theobald-software.com/de/xtract-is/sap-customizing/funktionsbaustein-fuer-table-extraktion) . 
 
-*Table Join*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Funktionsbaustein für Table-Join](./sap-customizing/funktionsbaustein-fuer-table-join).
+*Table Join*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Funktionsbaustein für Table-Join](https://kb.theobald-software.com/sap/installation-of-the-function-module-z_xtract_is_table_join).
 
 *Report*: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
 
@@ -24,6 +24,6 @@ Weiterführende Informationen zur Installation eines Transportauftrags finden Si
 
 Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig. 
 
-*OHS*: Siehe [Vorbereitung für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw).
+*OHS*: Siehe [Vorbereitung für OHS im BW](https://help.theobald-software.com/de/xtract-is/sap-customizing/vorbereitung-fuer-ohs-im-bw).
 
-*DeltaQ*: Refer to [Customizing für DeltaQ](./sap-customizing/customizing-fuer-deltaq).
+*DeltaQ*: Refer to [Customizing für DeltaQ](https://help.theobald-software.com/de/xtract-is/sap-customizing/customizing-fuer-deltaq).

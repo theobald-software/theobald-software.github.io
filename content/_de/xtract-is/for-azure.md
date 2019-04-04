@@ -15,7 +15,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=voraussetzungen_und_installation___xi
 *Xtract IS for Azure* ermöglicht es, SSIS Pakete, welche Xtract IS Komponenten enthalten, auf einer [Azure-SSIS Integration Runtime (IR), based on Microsoft's Azure Data Factory v2 (ADFv2)](https://azure.microsoft.com/en-us/blog/lift-sql-server-integration-services-packages-to-azure-with-azure-data-factory/) auszuführen.
 
 Bei der Nutzung der Azure-SSIS IR werden SSIS Pakete wie bisher lokal und on-prem in Visual Studio/SSDT entwickelt.
-Diese Pakete werden dann allerdings nicht auf einem on-prem SSIS Server deployt, sondern auf eine Azure-SSIS IR in der Azure cloud, um dort eingeplant und ausgeführt zu werden.
+Diese Pakete werden dann allerdings nicht auf einem on-prem SSIS Server deployt, sondern auf eine Azure-SSIS IR  (als Teil der ADFv2) in der Azure cloud, um dort eingeplant und ausgeführt zu werden. Dabei muss sichergestellt werden, dass Ihr SAP System aus der Azure Cloud heraus erreichbar ist, ggf. via VPN.
 
 ![XISforAzure_Architecture](/img/content/XISforAzure_Architecture.jpg){:class="img-responsive" width="800px"}
 

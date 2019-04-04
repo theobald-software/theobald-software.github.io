@@ -41,7 +41,7 @@ class Class1
            ReadTable table = new ReadTable(con);  
            table.AddField("MATNR");  
            table.AddField("MAKTX");  
-           table.AddCriteria("SPRAS = 'EN'");  
+           table.WhereClause = "SPRAS = 'EN' AND SPRAS = 'DE'";  
            table.TableName = "MAKT";  
            table.RowCount = 10;  
         

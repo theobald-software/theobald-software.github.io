@@ -1,25 +1,17 @@
 ---
 ref: xu-getting-started-table-03
 layout: page
-title: Step I- Define a Table Extraction
-description: Step I- Define a Table Extraction
+title: Step 2 - Define a Table Extraction
+description: Step 2 - Define a Table Extraction
 product: xtract-universal
 parent: getting-started-table
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-table-extraction
 ---
 
-After starting the Designer, the Designer must first be connected to a server and thus to an extraction repository. In the case of a local Xtract server, the address is the localhost (as in the screenshot), or a different network address, depending on where the server component is running. The default port 8064 may differ depending on the configuration. If the server is running on a different machine than the Designer, make sure that the port is not blocked by your firewall. Click Connect to connect to the server. 
-
-![Designer](/img/content/xu_connect_screen.png){:class="img-responsive"}
-
-After the successful connection the buttons for the new creation and the manipulation of extractions are active. The list at the bottom of the screen is filled with all extractions that have already been created on the server.
-
-![Designer](/img/content/xu_3.x_initial_screen.png){:class="img-responsive"}
-
-**Create SAP connection**
+### Create SAP connection
 
 Select the menu item **Server -> Manage Sources**.
 
@@ -53,17 +45,15 @@ The SAP connection has now been set up successfully.
 
 ![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
 
-**Create Extraction**
+### Create Extraction
 
 Click *New* to create a new extraction.
 
-![Create-New-Table-Extraction](/img/content/xu_extraction_create.png){:class="img-responsive"}
+![Create-New-Table-Extraction](/img/content/xu_extraction_anlegen.png){:class="img-responsive"}
 
 Choose the SAP connection you created previously and give the extraction a unique name.
 
 Then define the type of extraction. In our case, we want to extract a *table* from SAP. 
-
-![Add-Extraction](/img/content/xu_tables_extraction_create.png){:class="img-responsive"}
 
 Now the empty table dialog opens. Click on the *Search* button to search for a table.
 
