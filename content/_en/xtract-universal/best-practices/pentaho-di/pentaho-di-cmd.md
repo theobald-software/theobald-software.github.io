@@ -17,7 +17,7 @@ The picture below shows the architecture.
 In Xtract Universal, we have defined an extraction with an SQL Server as the destination. 
 In Pentaho, we execute the extraction by calling the command line tool of Xtract universal (xu.exe). 
 The data will then be extracted from SAP and loaded into the SQL Server database. In Pentaho we can then read and process the data from the database table.
-![xu-pdi-push](/img/content/xu/best-practices/pdi-http/xu-pdi-push.png){:class="img-responsive"}
+![xu-pdi-push](/img/content/xu/best-practices/pdi-cmd/xu-pdi-push.png){:class="img-responsive"}
 
 This scenario assumes that Pentaho runs on a Windows operating system or can call a Windows Command Tool.
 In the case of other operating systems, the call can alternatively be made via HTTP. 
