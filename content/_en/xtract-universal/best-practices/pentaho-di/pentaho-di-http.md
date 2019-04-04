@@ -12,13 +12,16 @@ old_url:
 ---
 
 This chapter shows best practices about the integration and usage of Xtract Universal with Pentaho Data Integration (ETL) aka Kettle by calling the Xtract Universal HTTP endpoint (aka http-csv destination). <br>
+The picture below shows the architecture.
+In Pentaho, we execute the extraction using an HTTP call. 
+Xtract Universal extracts the data from SAP and delivers it via HTTP in CSV format.<br>
+In Pentaho, we can then process the delivered data and then load then e.g. to a database.
+![xu-pdi-ws](/img/content/xu/best-practices/pdi-http/xu-pdi-ws.png){:class="img-responsive"}
 
 This scenario would run on any operating system, unlike the command line scenario, which only runs on a Windows operating system.
 In Xtract Universal, we have defined an extraction with HTTP-CSV Destination. 
-In Pentaho, we perform the extraction using an HTTP call. 
-Xtract Universal extracts the data from SAP and delivers it via HTTP in CSV format.<br>
-In Pentaho, we can then process the delivered data.
 
+<br>
 **Extraction in Xtract Universal**<br>
 Here we see the definition of extraction in Xtract Universal with HTTP-CSV Destination:<br>
 ![pdi-http-xu](/img/content/xu/best-practices/pdi-http/pdi-http-xu.png){:class="img-responsive"}

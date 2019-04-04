@@ -13,12 +13,15 @@ old_url:
 
 This chapter shows best practices about the integration and usage of Xtract Universal with Pentaho Data Integration (ETL) aka Kettle by calling the Xtract Universal Command Line (xu.exe).<br>
 
-This scenario assumes that Pentaho runs on a Windows operating system or can call a Windows Command Tool.
-In the case of other operating systems, the call can alternatively be made via HTTP. 
+The picture below shows the architecture.
 In Xtract Universal, we have defined an extraction with an SQL Server as the destination. 
 In Pentaho, we execute the extraction by calling the command line tool of Xtract universal (xu.exe). 
 The data will then be extracted from SAP and loaded into the SQL Server database. In Pentaho we can then read and process the data from the database table.
+![xu-pdi-push](/img/content/xu/best-practices/pdi-http/xu-pdi-push.png){:class="img-responsive"}
 
+This scenario assumes that Pentaho runs on a Windows operating system or can call a Windows Command Tool.
+In the case of other operating systems, the call can alternatively be made via HTTP. 
+<br>
 **Extraction in Xtract Universal**<br>
 Here we see the definition of the extraction in Xtract Universal with SQL Server Destination:<br>
 ![pdi-cmd-xu](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-xu.png){:class="img-responsive"}
