@@ -27,8 +27,10 @@ If you want to use the Azure Relay functionality of Microsoft Azure, you need at
 
 **SAP system(s)**
 
-- SAP ERP: R/3 4.0B or higher or any version of SAP ECC
-- SAP BW: 3.0 or higher
+- SAP R/3 Version 4.0B and higher versions or SAP ECC.
+- SAP S/4 HANA
+- SAP BW Version 3.1 and higher.
+- SAP BW/4 HANA
 
 **SAP user**
 
@@ -36,7 +38,11 @@ If you want to use the Azure Relay functionality of Microsoft Azure, you need at
 
 **Network Settings**
 
-- Port 33nn must be open, where nn = the system number of the SAP system.
+The following ports have to be opened depending on the SAP system, where nn is the instance number of the SAP system (e.g. 00 or 99).
+- SAP Application Server: Port 33nn
+- SAP Message Server (Load Balancing): Port 36nn
+- Secure Communication Network (SCN): Port 48nn
+- SAP Router: Port 3399
 
 It is recommended to install ECS Core on a computer without any other Theobald Software components. 
 Although this is possible, it makes error analysis and troubleshooting more difficult.

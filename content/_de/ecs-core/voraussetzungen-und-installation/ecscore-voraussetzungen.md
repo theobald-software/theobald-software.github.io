@@ -28,8 +28,10 @@ Falls Sie die Relay-Funktionalität von Microsoft Azure Service Bus nutzen möch
 
 **SAP System(e)**
 
-- SAP ERP: R/3 4.0B oder höher oder jede Version von SAP ECC
-- SAP BW: 3.0 oder höher
+- SAP R/3 Version 4.0B oder höher oder SAP ECC
+- SAP S/4 HANA
+- SAP BW Version 3.1 oder höher
+- SAP BW/4 HANA
 
 **SAP Benutzer**
 
@@ -37,7 +39,12 @@ Falls Sie die Relay-Funktionalität von Microsoft Azure Service Bus nutzen möch
 
 **Netzwerkeinstellungen**
 
-- Port 33nn muss offen sein, wobei nn = der System Nummer des SAP Systems ist.
+Folgende Ports müssen abhängig vom SAP-System offen sein, wobei nn die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
+
+- SAP Application Server: Port 33nn
+- SAP Message Server (Load Balancing): Port 36nn
+- Secure Communication Network (SCN): Port 48nn
+- SAP Router: Port 3399
 
 Es ist empfohlen, die Installation von ECS Core auf einem Rechner ohne andere Theobald Software Komponenten durchzuführen. 
 Die ist zwar möglich, erschwert aber die Fehleranalyse und -behebung.
