@@ -12,9 +12,6 @@ lang: de_DE
 ---
 
 
-**DIESER ABSCHNITT GILT NICHT FÜR XTRACT RS, sondern für alle anderen Produkte der Xtract-Familie**
-
-
-{% include _content/de/sap-customizing.md  %}
+Um mögliche Einschränkungen bei der Extraktion von Tabellen zu umgehen oder um ABAP Reports zu extrahieren, müssen unsere Z-Funktionsbausteine installiert werden. 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

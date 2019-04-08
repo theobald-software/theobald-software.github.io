@@ -12,10 +12,7 @@ lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
 
-**THIS CHAPTER IS NOT APPLICABLE FOR XTRACT RS, but for all other products of the Xtract suite.**
-
-
-{% include _content/en/sap-customizing.md  %}
+In this chapter you can find various articles about installation of our custom function modules for  table and report extraction.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
