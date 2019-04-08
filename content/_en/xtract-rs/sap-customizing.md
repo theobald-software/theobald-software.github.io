@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
 
-In this chapter you can find various articles about installation of our custom function modules for  table and report extraction.
+To avoid resrtictions with table extractions and for extraction of ABAP Reports installation of our custom function modules is required.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
