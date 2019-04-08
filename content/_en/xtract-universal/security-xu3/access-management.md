@@ -11,13 +11,14 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=access_management
 ---
 
+## Server Settings
 Access Management will be activated once you check the checkbox *Restrict Designer access to the following users/groups*. <br>
 Once activated, only the listed users or user groups will be able to log on.
 
 ![Server-Settings_](/img/content/Server-Settings_.jpg){:class="img-responsive"}
 
 **Read, Modify, Create, Admin**<br>
-A user group can have one of the following rights:
+A user group can have one of the following rights. These rights only concern actions (read, create, modify) that can be performed within the Xtract Universal designer. 
 
 - Admin rights: Users of this group have all privileges. They can do anything that “Create”
 users can do. Additionally, they can perform admin tasks, such as changing server settings, access server logs or manage users and connections (SAP sources and target destinations). Access limitations on extractions or sources will be ignored.
@@ -29,7 +30,11 @@ Additionally, they can modify existing extractions, however they may not create 
 
 - Read extractions: Group members may not edit extractions but may read their definition.
 
-These rights only concern actions (view, create, change) that can be performed within the Xtract Universal designer.
-Execution of extractions is not concerned here.
+
+
+## Extraction Settings
+Access restrictions can be performend on extraction level, as well. Access restrictions for extractions override restrictions made on server level.
+
+![Server-Settings_](/img/content/XU_Extraction_Security.png){:class="img-responsive"}
 
 
