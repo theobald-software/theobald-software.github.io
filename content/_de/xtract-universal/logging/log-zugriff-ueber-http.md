@@ -69,7 +69,7 @@ Der Log enthält folgende Spalten:
 Unter
 
 ```
-http://localhost:8065/ResultName?name=kna1& timestamp=2016-08-04_15:17:02.025
+http://localhost:8065/ResultName?name=kna1&timestamp=2016-08-04_15:17:02.025
 ```
 
 gibt es den Namen der Ergebnistabelle/Datei für einen bestimmten Timestamp (Das funktioniert nur, wenn seit dem Lauf die Destination/extraction-specific settings nicht verändert wurden)  
