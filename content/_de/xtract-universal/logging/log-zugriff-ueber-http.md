@@ -12,12 +12,17 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=log-zugriff-ueber-http
 ---
 
 Der Server bietet Zugriff auf verschiedene Metadaten- und Logging-Informationen über HTTP. <br>
-In den folgenden Beispielen wird die folgende URL [http://localhost:8065/]() verwendet.
+In den nachfolgenden Beispielen wird folgende URL *http://localhost:8065/*  verwendet.
 
 
 **Auflistung aller definierten Extraktionen**
 
-Die folgende URL [http://localhost:8065/]()listet die definierten Extraktion auf. 
+Die folgende URL 
+
+```
+http://localhost:8065/
+```
+listet die definierten Extraktion auf. 
 
 Name,Type,Source,Destination,Connection,LastRun,RowCount,LastChange,Created<br>
 Bilanz_GuV_Report,Report,erp,sqlserver,,,2016-07-25_03:05:55.250,2016-07-25_03:05:55.250<br>
@@ -37,7 +42,11 @@ Der Log enthält folgende Spalten:<br>
 
 **Auflistung aller definierten Zielverbindungen**
 
-Die folgende URL [http://localhost:8065/destinations]() listet die definierten Zielverbindungen auf. 
+Die folgende URL
+```
+http://localhost:8065/destinations
+```
+listet die definierten Zielverbindungen auf. 
 
 Name,Type,Host,Port,Database,User,Schema,Directory<br>
 alteryx,Alteryx,,,,,,<br>
