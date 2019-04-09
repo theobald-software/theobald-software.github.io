@@ -23,6 +23,8 @@ On test environments you can use a self-signed certificate. For your production 
 
 ![XU-X509-MMC](/img/content/XU-X509-MMC.png){:class="img-responsive"}
 
+<br>
+
 ![XU-X509-Lookup](/img/content/XU-X509-Lookup.png){:class="img-responsive"}
 
 
