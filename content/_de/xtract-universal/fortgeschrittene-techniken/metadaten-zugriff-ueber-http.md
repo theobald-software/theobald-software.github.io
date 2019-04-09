@@ -66,7 +66,7 @@ http://[host]:[port]/parameters/?name=[extractionName]
 ```
 liefert die Liste der verfügbaren Parameter, welche im Run-Dialog erscheinen. 
 
-Im folgenden Beispiel liefert die URL liefert die folgenden Parameter:
+Im folgenden Beispiel liefert die URL die folgenden Parameter:
 ```
 http://localhost:8065/parameters/?name=Customers
 ```
