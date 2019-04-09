@@ -108,7 +108,7 @@ SAP hat den [Support für die librfc32.dll[(https://blogs.sap.com/2012/08/15/sup
 
 <br>
 
-##SAP Log On
+### SAP Log On
 
 In diesem Abschnitt zeigen wir Ihnen, wo Sie die benötigten Informationen für die SAP-Verbindung im SAP-Logon finden können. 
 
@@ -116,7 +116,7 @@ Für die Anmeldung an einem SAP-System müssen Sie folgende Daten angeben: <br>
 Mandant (Client)<br>
 Sprache (Logon Language)<br>
 
-Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort eigeben. 
+Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort eingeben. 
 
 ![sapgui-client-lang](/img/content/sapgui-client-lang.jpg){:class="img-responsive"}
 

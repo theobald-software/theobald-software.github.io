@@ -16,9 +16,9 @@ Man kann über HTTP verschiedene Metadaten-Informationen einer Extraktion abrufe
 **Spalten einer Extraktion**
 
 Das URL-Pattern lautet: 
-
-[http://[host]:[port]/metadata/?name=[extractionName]]()
-
+```
+http://[host]:[port]/metadata/?name=[extractionName]
+```
 wobei [extractionName] für den Namen der Extraktion steht.
 
 Die Metadatentabelle hat folgendes Schema:
@@ -32,18 +32,18 @@ Die Metadatentabelle hat folgendes Schema:
 | LENGTH   | Länge der Spalte             | Länge der Spalte          |
 | DECIMALS | Integer                      | Anzahl der Dezimalstellen |
 
-Die "einstellige ABAP Datentyp ID" ist hier definiert:<br>
-[http://help.sap.com/abapdocu_702/en/abapdescribe_field.htm](http://help.sap.com/abapdocu_702/en/abapdescribe_field.htm)             
-            
-Die eingebauten ABAP Datentypen hier:<br>
-[http://help.sap.com/abapdocu_702/en/ABENBUILT_IN_TYPES_COMPLETE.htm](http://help.sap.com/abapdocu_702/en/ABENBUILT_IN_TYPES_COMPLETE.htm) 
-            
+Die "einstellige ABAP Datentyp ID" ist [hier](http://help.sap.com/abapdocu_702/en/abapdescribe_field.htm) definiert: 
+           
+Die eingebauten ABAP Datentypen [hier](http://help.sap.com/abapdocu_702/en/ABENBUILT_IN_TYPES_COMPLETE.htm) .
+         
 
 **Beispiel**: Der Aufruf der Metadaten der Extraktion 0COSTCENTER_ATTR mit der URL 
 
-[http://localhost:8095/metadata/?name=delta01]()
+```
+http://localhost:8095/metadata/?name=delta01
+```
 
-liefert
+liefert:
 
 POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS<br>
 1,KOKRS,Kostenrechnungskreis,C,8,0<br>
@@ -60,11 +60,16 @@ POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS<br>
 
 **Parameter (Variablen)**
 
-Die URL http://[host]:[port]/parameters/?name=[extractionName]<br>
+Die URL 
+```
+http://[host]:[port]/parameters/?name=[extractionName]
+```
 liefert die Liste der verfügbaren Parameter, welche im Run-Dialog erscheinen. 
 
-Im folgenden Beispiel liefert die URL liefert die folgenden Parameter:<br>
+Im folgenden Beispiel liefert die URL liefert die folgenden Parameter:
+```
 http://localhost:8065/parameters/?name=Customers
+```
 
 Name,Description,Category,Type,DefaultValue <br>
 preview,Enable/disable preview mode,Extraction,Flag,False <br>
@@ -83,12 +88,13 @@ ashost,Application Server,Connection,Text,ecc.theobald-software.com
 **Produkt-Version**
 
 Die aktuellen Versionsinformationen können über die nachfolgenden HTTP Abfragen ermittelt werden:
-
-[http://localhost:8065/CurrentVersion]()<br>
-[http://localhost:8065/ProductVersionHistory]()<br>
-[http://localhost:8065/KernelVersionHistory]()<br>
+```
+http://localhost:8065/CurrentVersion
+http://localhost:8065/ProductVersionHistory
+http://localhost:8065/KernelVersionHistory
+```
 
 Eine Extraktionsliste aller auf dem Server wird ausgegeben, wenn man die Basis-URL ohne jeglichen Parameter aufruft:
-
-[http://localhost:8065/]()
-
+```
+http://localhost:8065/
+```
