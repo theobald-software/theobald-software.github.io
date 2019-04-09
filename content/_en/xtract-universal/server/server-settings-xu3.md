@@ -30,7 +30,7 @@ see chapter [User Management](../security-xu3/user-management)
 
 **Select X.509 certificate** <br>
 
-See chapter [Installing an X.509 certificate](../security-xu3/xu-security-x509-certificate) 
+See chapter [Installing an X.509 certificate](../security-xu3/install-x.509-Certificate) 
 
 
 **Access Management** <br>
@@ -50,8 +50,7 @@ Enables secure datatranfer via HTTPS.
 Defines the port number, on which the XU server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL.
 
 If you want to receive data via HTTPS you need to install a TLS certificate on the server where the Xtract Universal service is running. 
-See chapter [Installing an X.509 certificate](../security-xu3/xu-security-x509-certificate) 
-
+See chapter [Installing an X.509 certificate](../security-xu3/install-x.509-Certificate) 
 
 
 **HTTPS - Restricted to AD users with Designer read access** <br>

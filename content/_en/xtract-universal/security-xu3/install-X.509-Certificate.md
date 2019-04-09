@@ -10,7 +10,7 @@ weight: 4
 lang: en_GB
 ---
 
-This chapter describes the requirements to install an X.509 certificate in Xtract Universal. 
+This chapter describes the requirements to install an X.509 certificate in Xtract Universal.
 
 You need an X.509 certificate, that can be provided by your network team. Make sure 
 - the certificate property “Subject Alternative Name” contains the DNS name of the server on which the Xtract Universal service is running on. Otherwise the certificate won’t appear in the lookup dialog of Xtract Universal.
