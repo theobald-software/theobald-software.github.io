@@ -52,5 +52,4 @@ The SAP note 352295 has an 'Attachments' option from where you can download the 
 For 32-bit: gsskrb5.dll
 For 64-bit x86: gx64krb5.dll
 
-To configure SSO with SNC on your SAP System refer to our Knowledge Base article:
-[http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso) 
+To configure SSO with SNC on your SAP System please apply the Kerberos SNC settings as described in the [SAP help].(https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/EN-US/440ebf6c9b2b0d1ae10000000a114a6b.html). If you can log on via SSO from SAP GUI to your SAP system, that’s already a good sign.
