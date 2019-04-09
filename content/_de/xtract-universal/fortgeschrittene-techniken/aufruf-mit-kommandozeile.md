@@ -12,15 +12,18 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=aufruf-mit-kommandozeile
 ---
 
 Im Installationsordner (z.B. C:\Program Files\XtractUniversal) finden Sie das Programm xu.exe, welches zur Ausführung einer Extraktion verwendet werden kann.<br>
-**"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName** 
+```
+"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName
+```
 
-Sie können das Tool unter anderem verwenden, um die Extraktionen über eine Aufgabenplannung (Task Scheduler) auszuführen. Im folgenden Blog finden Sie ein Beispiel dazu (auf Englisch): [http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/) 
+Sie können das Tool unter anderem verwenden, um die Extraktionen über eine Aufgabenplannung (Task Scheduler) auszuführen. In unserem [Blog][http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/) finden Sie ein Beispiel dazu (auf Englisch). 
 
 **Variablen**
 
 Bei der Nutzung von Variablen müssen Sie dem Zeichen (&) ein Escape-Zeichen (^) voranstellen: 
-
-**"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName^&Variable=Value**
+```
+"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName^&Variable=Value
+```
 
 Wird die Extraktion über die Parameter aufgerufen, können über den -o Parameter beliebig viele Variablen hinzugefügt werden:<br>
 -o variablenName=variablenWert -o variablenName2=variablenWert2 ...
@@ -34,23 +37,17 @@ Vordefinierte Variablen finden Sie unter [Extraktionsparameter](./extraktionspar
 Wenn eine Operation erfolgreich abgeschlossen wurde, gibt das Programm den Wert 0 zurück.<br>
 Im Falle eines Fehlers, gibt es einen der folgenden Codes zurück:
 
-HTTP Statuscodes (Z.B. 404 wenn die Extraktion nicht existiert)
-
-1001     Ein undefinierter Fehler ist aufgetreten
-
-1002    Die Datei konnte nicht gefunden werden
-          
-1013    Ungültige Eingabedaten
-
-1014    Die Anzahl der Argumente ist ungültig
-
-1015    Der Name des Parameters ist unbekannt
-
-1016    Das Argument ist ungültig
-
-1053    Die URL ist falsch
-
-1087    Der Parameter ist ungültig
+|HTTP Statuscodes | Beschreibung |
+|:----|:---| 
+|404 | Extraktion existiert nicht |
+|1001 | Ein undefinierter Fehler ist aufgetreten |
+|1002 | Die Datei konnte nicht gefunden werden|     
+|1013 | Ungültige Eingabedaten |
+|1014 | Die Anzahl der Argumente ist ungültig |
+|1015 | Der Name des Parameters ist unbekannt |
+|1016 | Das Argument ist ungültig |
+|1053 |  Die URL ist falsch |
+|1087 | Der Parameter ist ungültig |
 
 **Parameter**
 
@@ -65,14 +62,12 @@ HTTP Statuscodes (Z.B. 404 wenn die Extraktion nicht existiert)
 -o        Fügt eine Variable hinzu
 
 **Beispiele**
-
+```
 xu.exe http://localhost:8065/?name=MyExtractionName^&rows=200
-
 xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200
-
 xu.exe -s localhost -p 8065 -n MyExtractionName
-
 xu.exe -h
+```
 
 **Aufruf in PowerShell** 
 
