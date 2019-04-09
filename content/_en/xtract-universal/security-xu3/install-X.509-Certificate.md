@@ -1,8 +1,8 @@
 ---
 ref: xu-security-x509-certificate
 layout: page
-title: Installing X.509 Certificate
-description: Installing X.509 Certificate
+title: Installing an X.509 Certificate
+description: Installing an X.509 Certificate
 product: xtract-universal
 parent: security-xu3
 permalink: /:collection/:path

@@ -26,11 +26,7 @@ This page describes the required steps for setting up SSO with SNC and Kerberos 
 
 ### 1. Activation of HTTPS in Xtract Universal
 
-This setting is not directly related to using SSO, however it's a prerequisite as SSO will only function if the extraction is invoked via HTTPS. For this you need to reference an X.509 certificate in Xtract Universal.
-
-1. Have your network team create an X.509 certificate. Make sure to populate the certificate property "Subject Alternative Name" with the DNS name of the server on which the Xtract Universal service is running on. Otherwise the certificate won't appear in the lookup dialog of Xtract Universal.
-2. Deposit the certificate in the Windows Certificate Store on the XU server machine.
-3. Reference this certificate in Xtract Universal.
+This setting is not directly related to using SSO, however it's a prerequisite as SSO will only function if the extraction is invoked via HTTPS. For this you need to reference an X.509 certificate in Xtract Universal. See chapter [Installing an X.509 certificate](../security-xu3/xu-security-x509-certificate) 
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
