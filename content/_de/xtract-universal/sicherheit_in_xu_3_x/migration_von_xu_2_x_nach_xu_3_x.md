@@ -6,7 +6,7 @@ description: Migration von XU 2.x nach XU 3.x
 product: xtract-universal
 parent: sicherheit_in_xu_3_x
 permalink: /:collection/:path
-weight: 4
+weight: 99
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=migration_von_xu_2_x_nach_xu_3_x
 ---

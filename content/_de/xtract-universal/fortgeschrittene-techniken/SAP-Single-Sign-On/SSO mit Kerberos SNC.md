@@ -24,11 +24,9 @@ Auf dieser Seite werden die notwendigen Schritte beschrieben, um SSO mit SNC und
 
 ### 1. Aktivierung von HTTPS in Xtract Universal
 
-Diese Einstellung hat erstmal nicht direkt mit dem Einrichten von SSO zu tun, ist allerdings Voraussetzung dafür. SSO funktioniert nur, sofern der Extraktionsaufruf per HTTPS erfolgt. Hierfür muss ein X.509-Zertifikat in Xtract Universal bekannt gemacht werden.
-
-1. Lassen Sie ein X.509-Zertifikat von Ihrem IT Netzwerk Team erstellen. In der Zertifikatseigenschaft "Subject Alternative Name" muss der DNS Name des Servers stehen, auf dem der Xtract Universal Windows Dienst läuft. Ansonsten erscheint das Zertifikat später nicht im Lookup Dialog von Xtract Universal.
-2. Hinterlegen Sie das Zertifikat im Windows Certificate Store auf dem XU Server.
-3. Machen Sie das Zertifikat in Xtract Universal bekannt.
+Diese Einstellung hat erstmal nicht direkt mit dem Einrichten von SSO zu tun, ist allerdings Voraussetzung dafür. 
+SSO funktioniert nur, sofern der Extraktionsaufruf per HTTPS erfolgt. Hierfür muss ein X.509-Zertifikat in Xtract Universal bekannt gemacht werden.
+Siehe Kapitel [X.509 Zertifikat installieren](../sicherheit_in_xu_3_x/x.509-zertifikat-installieren)
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 

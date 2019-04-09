@@ -29,9 +29,8 @@ Definiert das maximale Alter der Logdateien des Config-Servers in Tagen. Danach 
 siehe Kapitel [Benutzerverwaltung](../sicherheit_in_xu_3_x/benutzerverwaltung1)
 
 **Select X.509 certificate**<br>
-1. Lassen Sie ein TLS Zertifikat von Ihrem IT Netzwerk Team erstellen. In der Zertifikatseigenschaft "Subject Alternative Name" muss der DNS Name des Servers stehen, auf dem der Xtract Universal Windows Dienst läuft. Ansonsten erscheint das Zertifikat nicht im Lookup Dialog.
-2. Das Zertifikat muss im Windows Certificate Store auf dem XU Server hinterlegt werden.
 
+Siehe Kapitel [X.509 Zertifikat installieren](../sicherheit_in_xu_3_x/x.509-zertifikat-installieren)
 
 **Access Management**<br>
 siehe Kapitel [Zugriffsverwaltung](../sicherheit_in_xu_3_x/zugriffsverwaltung1)
@@ -48,9 +47,8 @@ Definiert die Portnummer, über die der Server den Aufruf der Extraktionen über
 **HTTPS - Unrestricted / HTTPS port**<br>
 Aktiviert den sicheren Datentransfer via HTTPS. Der run-Befehl generiert eine HTTPS-URL. Definiert den HTTPS Listener Port.
 
-Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat installieren, damit der Server den HTTPS-Port verwalten kann. Dieses Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten und durch eine Zertifizierungsstelle erstellt worden sein.
-
-Weitere Informationen finden Sie in unserem blog: http://www.theobald-software.com/blog/?p=389
+Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat installieren, damit der Server den HTTPS-Port verwalten kann. 
+Siehe Kapitel [X.509 Zertifikat installieren](../sicherheit_in_xu_3_x/x.509-zertifikat-installieren)
 
 **HTTPS - Restricted to AD users with Designer read access**<br>
 Siehe *HTTPS - Unrestricted*. Darüberhinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tabreiter *Configuration Server* mindestens *Read Access* zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Kapitel [Serversicherheit](../sicherheit_in_xu_3_x/serversicherheit1).

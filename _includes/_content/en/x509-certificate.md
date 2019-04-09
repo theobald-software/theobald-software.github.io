@@ -13,7 +13,7 @@ On test environments you can use a self-signed certificate. For your production 
 
 <br>
 
-**Reference that same certificate in Xtract Universal**
+**Reference that same certificate (here in Xtract Universal)**
 ![XU-X509-Lookup](/img/content/XU-X509-Lookup.png){:class="img-responsive"}
 
 
