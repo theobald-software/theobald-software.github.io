@@ -57,5 +57,6 @@ Für 64-Bit x86:
  - Kerberos gx64krb5.dll 
  - NTLM: gx64ntlm.dll
 
-Der folgende Knowledge Base Artikel beschreibt, wie Sie Ihr SAP-System mit SSO/SNC einrichten. Von dort können Sie auch die DLLs herunterladen:
-[http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso ) 
+**Einstellungen auf SAP-Seite**
+
+Lesen Sie bitte die notwendigen Einstellungen für Kerberos SNC in der [SAP Hilfe](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/DE-DE/440ebf6c9b2b0d1ae10000000a114a6b.html) nach. Ein Anhaltspunkt dafür, ob die Einstellungen stimmen ist, dass Sie sich mit dem SAP Logon Pad per SSO am SAP System anmelden können.
