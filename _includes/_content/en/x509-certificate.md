@@ -8,12 +8,12 @@ An X.509 certificate can be provided by your network team. Please make sure:
 
 On test environments you can use a self-signed certificate. For your production environment we recommend to use a certificate released by an (internal) certificate authority (CA). 
 
-Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc) 
+**Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc)**
 ![XU-X509-MMC](/img/content/XU-X509-MMC.png){:class="img-responsive"}
 
 <br>
 
-Reference that same certificate in Xtract Universal
+**Reference that same certificate in Xtract Universal**
 ![XU-X509-Lookup](/img/content/XU-X509-Lookup.png){:class="img-responsive"}
 
 
