@@ -152,4 +152,4 @@ write-host $errorMessage
 </details>
 
 Siehe auch <br> 
-[How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/148/0/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer) (English)
+[How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer) (English)
