@@ -28,6 +28,7 @@ Xtract Universal ist ein Satz von insgesamt zehn Extraktionstypen, die es ermög
 
 ![xu-arch-03](/img/content/xu/erp_extraction_xu.png){:class="img-responsive"}
 
+
 **Table** extrahiert aus Tabellen und Views.
 
 **Table Join** erlaubt es, mehrere Tabellen miteinander zu verknüpfen. 
