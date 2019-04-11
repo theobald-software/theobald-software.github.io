@@ -43,7 +43,7 @@ Der Join-Vorgang findet dann schon innerhalb des SAP-Systems statt. Es ist also 
 
 ### Extraktion aus BW-Systemen
 
-![xu-arch-04](/img/content/xu-arch-04.jpg){:class="img-responsive" width= "800 px"}
+![xu-arch-04](/img/content/xu/bw_extractions.png){:class="img-responsive"}
 
 **BW Cube** extrahiert flache Daten aus SAP BW InfoCubes und QueryCubes (auch bekannt als BEx-Queries).
 
