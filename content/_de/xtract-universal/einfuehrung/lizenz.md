@@ -29,7 +29,6 @@ im Textformat als json-Dateien ausgeliefert. Davor wurden die Dateien als .dlls 
 - Im Falle von json-Lizenzen werden diese automatisch gezogen.
 - Im Falle von dll-Lizenzen stoppen Sie den Xtract Universal Service.
 - Starten Sie danach den Xtract Universal Service neu. 
-
 ![XU_license](/img/content/xu\json_lizenz_datei.png){:class="img-responsive"}
 
 Falls Sie Server und Designer auf unterschiedlichen Rechnern betreiben, müssen Sie die Lizenz nur ins Programm-Verzeichnis auf dem Server ablegen. Bei gekauften Lizenzen ist der Servername Teil der Lizenzdatei.
