@@ -33,3 +33,5 @@ im Textformat als json-Dateien ausgeliefert. Davor wurden die Dateien als .dlls 
 ![XU_license](/img/content/XU_license.jpg){:class="img-responsive"}
 
 Falls Sie Server und Designer auf unterschiedlichen Rechnern betreiben, müssen Sie die Lizenz nur ins Programm-Verzeichnis auf dem Server ablegen. Bei gekauften Lizenzen ist der Servername Teil der Lizenzdatei.
+
+![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
