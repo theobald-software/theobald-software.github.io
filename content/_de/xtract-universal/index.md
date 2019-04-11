@@ -18,7 +18,7 @@ Xtract Universal ist ein SAP Connector und ermöglicht es, Datenströme aus SAP 
 
 ### Architektur
 
-![XU-architecture](/img/content/xu/theobald-software-graphic-03-01 (1).png} {class= "img-responsive" width= "1200px"}
+![XU-architecture](/img/content/xu/theobald-software-graphic.png} 
 
 In der unteren Übersicht finden Sie, welche Komponente für die Datenextraktion aus einem SAP ERP- bzw. BW-System verwendet werden können. 
 
