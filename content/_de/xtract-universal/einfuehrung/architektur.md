@@ -26,7 +26,7 @@ Xtract Universal ist ein Satz von insgesamt zehn Extraktionstypen, die es ermög
 
 ### Extraktion aus ERP-Systemen
 
-![xu-arch-03](/img/content/xu-arch-03.jpg){:class="img-responsive" width= "800 px"}
+![xu-arch-03](/img/content/xu/erp_extraction_xu.png){:class="img-responsive"}
 
 **Table** extrahiert aus Tabellen und Views.
 
