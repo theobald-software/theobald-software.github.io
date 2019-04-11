@@ -18,7 +18,7 @@ Im Wesentlichen besteht Xtract Universal aus zwei Komponenten: Eine Server- und 
 Die Server-Komponente ist für die eigentliche Extraktion zuständig. Die Zielumgebung kommuniziert mit der Server-Komponente, und diese wiederum mit SAP. <br>
 Der Xtract Designer wird für die Verwaltung der Extraktionen und Verbindung und für die Konfiguration verwendet. Vom Designer besteht auch eine Verbindung direkt zum SAP. Dieser wird nicht für den Datentransport, sondern ausschließlich für die Metadatenabfrage während des Design-Prozesses verwendet. 
 
-![xu-arch-01](/img/content/xu/XU_architecture_final.png){:class="img-responsive" width= "800 px"}
+![xu-arch-01](/img/content/xu/xu_architecture.png){:class="img-responsive"}
 
 ### Extraktionstypen 
 
