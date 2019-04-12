@@ -19,6 +19,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 - SQL Server 2012
 - SQL Server 2014
 - SQL Server 2016
+- SQL Server 2017
 - SQL Server Reporting Services
 - Power BI Report Server 2018
 
