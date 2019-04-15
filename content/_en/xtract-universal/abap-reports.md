@@ -16,6 +16,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDQ5Nzg5MF19
--->
+
