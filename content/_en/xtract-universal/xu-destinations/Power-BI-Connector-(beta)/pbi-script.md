@@ -1,12 +1,12 @@
 ---
 ref: xu-pbi_connector-02
 layout: page
-title: m-script
+title: Power Query M-script
 description: Power Query M-script 
 product: xtract-universal
 parent: Power-BI-Connector-(beta)
 permalink: /:collection/:path
-weight: 3
+weight: 5
 lang: en_GB
 old_url:
 ---
@@ -20,5 +20,11 @@ Along with the *Power BI Connector (beta)* destination in Xtract Universal comes
 3. Open the Xtract Universal *loading_script.pq* in any text editor and copy the complete content into the *Advanced Editor* window.
 4. Change the values for *ExtractionName* and the *ServerURL* to match the names of your Xtract Universal server and extraction.
 5. Close the *Advanced Editor* and *Close & Apply* your changes.
+
+![M-Script](/img/content/xu/XU_PowerQueryScript.png)
+
+<br>
+
+![PowerQueryEditor](/img/content/xu/XU_PBI_PowerQueryEditor.png)
 
 

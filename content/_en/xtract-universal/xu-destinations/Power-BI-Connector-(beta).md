@@ -16,7 +16,7 @@ old_url:
 
 ### Introduction
 
-In this section we describe connectivity between Power BI and Xtract Universal through the *Power BI Connector* destination. <br>
+In this section we describe connectivity between Power BI and Xtract Universal through Xtract Universal's *Power BI Connector* destination. <br>
 
 The *Power BI Connector* destination offers two ways for connecting Power BI to Xtract Universal:
 
@@ -33,7 +33,7 @@ In both cases Xtract Universal extractions will be triggered from Power BI and e
 
 ### Supported Power BI environments
 
-The Xtract Universal Power BI custom connector supports *Power BI Desktop* and the *Power BI service* (through Power BI on-premises data gateway). In addition to these environments, the Xtract Universal Power Query M-script supports the *Power BI Report Server*.<br>
+The Xtract Universal Power BI custom connector supports *Power BI Desktop* and the [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) (through [Power BI on-premises data gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem)). In addition to these environments, the Xtract Universal Power Query M-script supports the [Power BI Report Server](https://docs.microsoft.com/en-us/power-bi/report-server/get-started).<br>
 
 
 |                        | Custom Connector | M-script |

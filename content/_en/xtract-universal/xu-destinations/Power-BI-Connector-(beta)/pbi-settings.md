@@ -6,7 +6,7 @@ description: Settings
 product: xtract-universal
 parent: Power-BI-Connector-(beta)
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: en_GB
 old_url:
 ---
