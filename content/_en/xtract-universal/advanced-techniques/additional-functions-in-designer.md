@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=additional-functions-in-design
 
 The designer offers several functions for an extraction which we describe below. Simple and self explaining function will not be explained.
 
-File -> Import
+**File -> Import**
 
 This command imports an extraction. To import an extraction named XtractFile select the file XtractFileConfig.xml. Optionally, you can select the file XtractFileMetadata.xml too.
 
