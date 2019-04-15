@@ -13,7 +13,7 @@ old_url:
 
 You can define the following destination-specific settings:
 
-![alteryx-configuration](/img/content/XU_pbi_connector_destination.jpg){:class="img-responsive"}
+![pbi-configuration](/img/content/XU_pbi_connector_destination.jpg){:class="img-responsive"}
 
 **Date Conversion** 
 
