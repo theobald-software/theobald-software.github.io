@@ -16,7 +16,7 @@ Im Installationsordner (z.B. C:\Program Files\XtractUniversal) finden Sie das Pr
 "C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName
 ```
 
-Sie können das Tool unter anderem verwenden, um die Extraktionen über eine Aufgabenplannung (Task Scheduler) auszuführen. In unserem [Blog][http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/) finden Sie ein Beispiel dazu (auf Englisch). 
+Sie können das Tool unter anderem verwenden, um die Extraktionen über eine Aufgabenplannung (Task Scheduler) auszuführen. In unserem [Blog](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/) finden Sie ein Beispiel dazu (auf Englisch). 
 
 **Variablen**
 
