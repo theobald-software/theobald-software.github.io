@@ -17,4 +17,6 @@ Analog zu den System- und benutzerdefinierten Parametern können auch die Verbin
 
 Das Beispiel zeigt die Überschreibung der Verbindungssprache mit folgender URL:
 
-<center>http://localhost:8085/?name=plants&**lang=DE**</center>
+```
+http://localhost:8085/?name=plants&lang=DE
+```
