@@ -17,7 +17,7 @@ You are also able to call the metadata information of an extraction using an HTT
 
 The URL pattern is: 
 ```
-http://[host]:[port]/metadata/?name=[extractionName
+http://[host]:[port]/metadata/?name=[extractionName]
 ```
 
 [extractionName] has to be replaced with the extraction name.
@@ -33,10 +33,10 @@ The metadata table has the followig schema:
 | LENGTH   | Integer                       | column length            |
 | DECIMALS | Integer                       | number of decimal places |
 
-The "single-digit ABAP datatype ID" ist defined [here][http://help.sap.com/abapdocu_702/en/abapdescribe_field.htm](http://help.sap.com/abapdocu_702/en/abapdescribe_field.htm) <br>
+The "single-digit ABAP datatype ID" ist defined [here](http://help.sap.com/abapdocu_702/en/abapdescribe_field.htm](http://help.sap.com/abapdocu_702/en/abapdescribe_field.htm) <br>
  
            
-The embedded ABAP datatypes are definded [here][http://help.sap.com/abapdocu_702/en/ABENBUILT_IN_TYPES_COMPLETE.htm](http://help.sap.com/abapdocu_702/en/ABENBUILT_IN_TYPES_COMPLETE.htm)<br>
+The embedded ABAP datatypes are definded [here](http://help.sap.com/abapdocu_702/en/ABENBUILT_IN_TYPES_COMPLETE.htm](http://help.sap.com/abapdocu_702/en/ABENBUILT_IN_TYPES_COMPLETE.htm)<br>
 
 
 Example: If you call the metadata of the extraction plants using the URL 
@@ -63,19 +63,19 @@ In the following examples the URL delivers the following parameters:
 http://localhost:8065/parameters/?name=plants
 ```
 
-Name,Description,Category,Type,DefaultValue
-preview,Enable/disable preview mode,Extraction,Flag,False
-clearBuffer,Clear/keep the result buffer,Extraction,Flag,False
-source,Sets the name of the source,Extraction,Text,saperp
-destination,Sets the name of the destination,Extraction,Text,http-csv
-wait,Wait until the extraction is finished,Extraction,Flag,True
-rows,Maximum number of rows,Extraction,Number,0
-where,Where Clause,Extraction,Text,WERKS >= '1000' AND ORT01 <> 'Freiburg'
-packageSize,Package Size,Extraction,Number,5000
-decimalSeparator,Symbol between integer and fractional part,Extraction,Text,
-columnSeparator,Symbol which indicates the start of a new column,Extraction,Text,
-lang,Logon Language,Connection,Text,EN
-logonTicket,SAP Logon Ticket,Connection,Text,
+Name,Description,Category,Type,DefaultValue<br>
+preview,Enable/disable preview mode,Extraction,Flag,False<br>
+clearBuffer,Clear/keep the result buffer,Extraction,Flag,False<br>
+source,Sets the name of the source,Extraction,Text,saperp<br>
+destination,Sets the name of the destination,Extraction,Text,http-csv<br>
+wait,Wait until the extraction is finished,Extraction,Flag,True<br>
+rows,Maximum number of rows,Extraction,Number,0<br>
+where,Where Clause,Extraction,Text,WERKS >= '1000' AND ORT01 <> 'Freiburg'<br>
+packageSize,Package Size,Extraction,Number,5000<br>
+decimalSeparator,Symbol between integer and fractional part,Extraction,Text,<br>
+columnSeparator,Symbol which indicates the start of a new column,Extraction,Text,<br>
+lang,Logon Language,Connection,Text,EN<br>
+logonTicket,SAP Logon Ticket,Connection,Text,<br>
 
 **Extraction List** 
 
