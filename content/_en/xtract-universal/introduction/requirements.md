@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-01
+ref: xu-introduction-02
 layout: page
 title: Requirements
 description: Requirements
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=requirements
 ---

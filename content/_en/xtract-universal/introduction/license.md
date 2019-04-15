@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-03
+ref: xu-introduction-04
 layout: page
 title: License
 description: License
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 ---
@@ -19,7 +19,8 @@ Since Xtract Universal version 2.99.0 the license files are delivered as json te
 
 Prior to Xtract Universal version 2.99.0 license files were delivered as .dll files. The steps for replacing a license are the same as with json files. However with .dll licenses a restart of the Xtract service is required.
 
-![XU_license](/img/content/XU_license.jpg){:class="img-responsive"}
+![XU_license](/img/content/xu\json_lizenz_datei.png){:class="img-responsive"}
 
 If you run XU Designer and XU Server on different machines, it is only necessary to replace the license on the server.
 The server name is part of the regular license.
+![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}

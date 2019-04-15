@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-02
+ref: xu-introduction-03
 layout: page
 title: Installation and Backup
 description: Installation and Backup
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 ---

@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/
 
 Willkommen in der Online Help von Xtract Universal. 
 
-Xtract Universal ist ein SAP Connector und ermöglicht es, Datenströme aus SAP zu extrahieren und an beliebige Zielumgebungen zu liefern.
+Xtract Universal ist ein SAP Connector und ermöglicht es, Datenobjekte aus SAP zu extrahieren und an beliebige Zielumgebungen zu liefern.
 
 ### Architektur
 
