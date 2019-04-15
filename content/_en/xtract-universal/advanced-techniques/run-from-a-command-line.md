@@ -11,88 +11,70 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=run-from-a-command-line
 ---
 
-In the installation folder (e.g. C:\Program Files\XtractUniversal) you will find the program **xu.exe** that runs an extraction from the command line.
+In the installation folder (e.g. C:\Program Files\XtractUniversal) you will find the program xu.exe, which can be used to execute an extraction.<br>
+```
+"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName
+```
 
-**Using the extraction URL**
-
-You can execute the command line using the extraction URL:<br> 
-**"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName** 
+Among other things, you can use the tool to execute the extractions using a task scheduler. You can find an example in our [Blog](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/0). 
 
 **Variables**
 
-When using variables be sure that the ampersand (&) is preceded by the escape character (^):
+When using variables, you must precede the character (&) with an escape character (^): 
+```
+"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName^&Variable=Value
+```
 
-**"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName^&Variable=Value** 
+If the extraction is called via the parameters, any number of variables can be added via the -o parameter:<br>
+-o variableName=variableValue -o variableName2=variableValue2 ...
 
-**Predefined Variables**
+**Predefined variables**
 
-See predefined variables under [Extraction Parameters](./extraction-parameters). 
+Predefined variables can be found under [Extraction Parameters](./extraction Parameters). 
 
-**Server output**<br> 
-When the extraction is executed, then the server will return the timestamp as result. 
-The timestamp can be used to access the log of the extraction.
+**Returned value**
 
-**Return value**  
+If an operation was successfully completed, the program returns the value 0.<br>.
+In case of an error, it returns one of the following codes:
 
-If the command completes an operation successfully, it returns an exit code of zero (0).
-In case of an error, it will return one of the following (http status) codes:
+|HTTP Status codes | Description |
+|:----|:---| 
+|404 | Extraction doesn't exist |
+|1001 | An undefined error has occurred |
+|1002 | The file could not be found|     
+|1013 | Invalid Input Data |
+|1014 | The number of arguments is invalid |
+|1015 | The name of the parameter is unknown |
+|1016 | The argument is invalid |
+|1053 | The URL is wrong |
+|1087 | The parameter is invalid |
 
-HTTP Statuscodes (e.g. 404 when the extraction does not exist)
+**Parameters**
 
-1001     An undefined error occured
+-h Outputs the help page
 
-1002    Could not find the specified file
-          
-1013    Invalid input data
+-s Server for extraction
 
-1014    The number of arguments is invalid
+-p Listener port of the Xtract Universal Server
 
-1015    The parameter name is unknown
+-n Name of the extraction
 
-1016    The argument is not valid
+-o Adds a variable
 
-1053    Something is wrong with your URL
+**Examples**
+```
+xu.exe http://localhost:8065/?name=MyExtractionName^&rows=200
+xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200
+xu.exe -s localhost -p 8065 -n MyExtractionName
+xu.exe -h
+```
 
-1087    The parameter is invalid
+**Call in PowerShell** 
 
-**Using command Parameters**
+The following example shows how to call an extraction in PowerShell using the xu.exe command tool. 
+In the example, the extraction has a dynamic variable that can be set in the script. 
 
-You can execute the command line using the extraction URL:<br> 
-    xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200
-
-Following parameters are supported:<br> 
--h        print the help page
-
--s        server of your extraction
-
--p        listening port of your Xtract Universal server
-
--n        name of your extraction
-
--o        add a variable to your extraction
-
-When using parameters to call the extraction, you can add as many variables as you need with the parameter -o:
--o variableName=variableValue -o variableName2=variableValue2.
-
-**Examples** 
-
-    xu.exe http://localhost:8065/?name=MyExtractionName^&rows=200
-    
-    xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200
-    
-    xu.exe -s localhost -p 8065 -n MyExtractionName
-    
-    xu.exe -h 
-
-You can use this tool to run the extractions with a task scheduler. For a sample refer to the following blog:<br> 
-[http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/)
-
-**Running extraction using PowerShell**
-
-The following PowerShell script shows how to execute an extraction using the command tool. 
-The extraction has a dynamic variable that can be set in PowerShell. 
-
-Check our [Blog](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/) about using Xtract Universal with PowerShell for further scripts and examples.
+See our [Blog](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/) about Xtract Universal and PowerShell for more scripts and examples.
 
 <details>
 <summary>Click here to show PowerShell Script.</summary>
@@ -170,4 +152,4 @@ write-host $errorMessage
 </details>
 
 See also  <br>
-[How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer](https://my.theobald-software.com/index.php?/Default/Knowledgebase/Article/View/148/0/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)
+[How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer) (English)
