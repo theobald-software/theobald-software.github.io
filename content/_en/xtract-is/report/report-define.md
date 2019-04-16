@@ -19,5 +19,3 @@ Click the binocular button to open up the search dialog. You can use wildcards (
 
 ![Report-Search](/img/content/Report-Search.png){:class="img-responsive" }
 
-ABAP
-: Advanced Business Application Programming
