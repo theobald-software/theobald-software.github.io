@@ -17,6 +17,10 @@ Example: You are migrating from SQL Server 2012 to SQL Server 2017. This require
 Please do also note the dependency of Visual Studio/SSDT and SSIS version, see [here](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is).
 
 ### Migration from SSIS 2008/2012 to SSIS 2017
+
+- [x] Step 1: Migrate using *XtractISConversionPreparer.exe*
+- [x] Step 2: Adaptation of the target deployment environment *Migration from SSIS 2014/2016 to SSIS 2017*
+- [x] Step 3: Install *InstallXtractIS.exe* to register and distribute the DLL files
 ```
 Step 1: Migrate using *XtractISConversionPreparer.exe*
 Step 2: Adaptation of the target deployment environment *Migration from SSIS 2014/2016 to SSIS 2017*
