@@ -10,7 +10,6 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=lizenz-einspielen
 ---
-
 Standardmäßig wird bei der Installation eine Demo-Version installiert, die zeitlich beschränkt ist. 
 Wenn Sie Xtract IS gekauft haben, bekommen Sie von uns eine Lizenzdatei (*XtractISLicense.json*, ehemals 
 XtractIS.License.dll) zugesendet, in der unter Anderem Firmenname und lizensierte Server verschlüsselt sind.
@@ -30,9 +29,8 @@ Dieses Bild zeigt eine korrekt installierte und dauerhafte Lizenz.
 |:--|:--|
 | XtractISLicense.json | Dateien werden nach <br> CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\ bzw. <br> C:\ProgramData\TheobaldSoftware\XtractIS\ kopiert.|
 |Xtract.License.dll | Dateien werden im GAC registriert. |
- 
- 
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMzI3OTA4Nl19
--->
+Folgende Grafik zeigt, auf welchen Rechnern Xtract IS installiert und eine gültige Xtract IS Lizenz eingespielt werden muss. Xtract IS wird pro Windows Server lizenziert (der Server, auf den SSIS-Pakete deployt und ausgeführt werden). Dieselbe Lizenzdatei kann auf den lokalen Workstations zur Entwicklung der SSIS-Pakete verwendet werden.<br>
+![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive"}
+
+ 
