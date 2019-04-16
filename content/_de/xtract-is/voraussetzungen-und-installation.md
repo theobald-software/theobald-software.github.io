@@ -12,9 +12,10 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=voraussetzungen-und-installation
 ---
 
-Folgende Grafik zeigt, auf welchen Rechnern Xtract IS installiert und eine gültige Xtract IS Lizenz eingespielt werden muss. Xtract IS wird pro Windows Server lizenziert (der Server, auf den SSIS-Pakete deployt und ausgeführt werden). Dieselbe Lizenzdatei kann auf den lokalen Workstations zur Entwicklung der SSIS-Pakete verwendet werden. Weitere Informationen hierzu finden Sie in den nachfolgenden Abschnitten.
+Xtract IS basiert grundsätzlich auf der Client-Server-Architektur. Aus diesem Grund ist die Installation von Xtract IS sowohl auf der Deployment-Umgebung (SSIS Server) als auch auf der Entwicklungs-Umgebung (Visual Studio), siehe nachfolges Schaubild, notwendig.
+Weitere Informationen hierzu finden Sie in den nachfolgenden Abschnitten.
 
-![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive"}
+![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 
 Dieser Abschnitt bietet einen Überblick über die Voraussetzungen und führt in die Installation ein.
 
