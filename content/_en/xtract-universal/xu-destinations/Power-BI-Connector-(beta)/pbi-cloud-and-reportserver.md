@@ -1,8 +1,8 @@
 ---
 ref: xu-pbi_connector-02
 layout: page
-title: PBI service and Report Server
-description: PBI service and Report Server
+title: Power BI service
+description: PBI service
 product: xtract-universal
 parent: Power-BI-Connector-(beta)
 permalink: /:collection/:path
@@ -14,13 +14,12 @@ old_url:
 
 ### Requirements
 
-These requirements are not specific to Xtract Universal. For using the Power BI service you will need a [Power BI account](https://powerbi.microsoft.com/en-us/landing/signin/).
+For using the Power BI service you will need a [Power BI account](https://powerbi.microsoft.com/en-us/landing/signin/). Also, you need to [download](https://powerbi.microsoft.com/en-us/gateway/) the Power BI on-premises data gateway.
 
-<br>
+When using our Power BI custom connector please [configure](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors) the on-premises data gateway **as well as* the Power BI service gateway to support custom data connectors. 
 
-Also, you need to [download](https://powerbi.microsoft.com/en-us/gateway/) the Power BI on-premises data gateway. If you are using our Power BI custom connector you need to [configure](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors) the gateway to support custom data connectors.
+When using our Power Query M-script, not further configuration is required.
 <br>
-The support for custom data connectors needs to be enabled in the on-premises data gateway **as well as** in the Power BI service.
 
 
 ![datagw_custom_conn](/img/content/XU_PBI_datagateway_config.png){:class="img-responsive"}
@@ -28,3 +27,11 @@ The support for custom data connectors needs to be enabled in the on-premises da
 <br>
 
 ![datagw_service_custom_conn](/img/content/XU_PBI_datagateway_service_config.png){:class="img-responsive"}
+
+### Adding Xtract Universal as data source
+
+![datagw_service_datasource](/img/content/XU_PBI_datagateway_service_datasource.png){:class="img-responsive"}
+
+<br>
+
+![datagw_service_datasource_successful](/img/content/XU_PBI_datagateway_service_datasource_successful.png){:class="img-responsive"}

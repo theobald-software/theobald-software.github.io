@@ -21,7 +21,7 @@ Along with the *Power BI Connector (beta)* destination in Xtract Universal comes
 
 1. Create a Power BI report using a *Blank Query* as data source.
 2. Open the *Advanced Editor* 
-3. Open the Xtract Universal *loading_script.pq* in any text editor and copy the complete content into the *Advanced Editor* window.
+3. Open the Xtract Universal *loading_script* in any text editor and copy the complete content into the *Advanced Editor* window.
 4. Change the values for *ExtractionName* and the *ServerURL* to match the names of your Xtract Universal server and extraction. *Attention*: Only use extractions that write to the *Power BI Connector* destination.
 5. Close the *Advanced Editor* and *Close & Apply* your changes.
 
