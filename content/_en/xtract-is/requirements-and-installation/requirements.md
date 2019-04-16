@@ -10,9 +10,7 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 ---
-
-**SQL Server**
- 	
+### SQL Server<br> 	
 - SQL Server 2008 (all SQL Server versions. Express Version don't include SSIS)
 - SQL Server 2008 R2
 - SQL Server 2012
@@ -24,8 +22,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 
 Check our KB for [the list of supported SSIS & VS Versions](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is). 
 
-**Supported SAP Releases**
-
+### Supported SAP Releases<br>
 - SAP R/3 Version 4.0B and higher versions or SAP ECC.
 - SAP S/4 HANA
 - SAP BW Version 3.1 and higher.
@@ -34,7 +31,7 @@ Check our KB for [the list of supported SSIS & VS Versions](https://kb.theobald-
 The Integration occurs on the SAP application server level. The database under the SAP system is irrelevant. 
 SAP systems on HANA particularly are supported without any restrictions.  
 
-**Installation and Configuration on SAP**
+### Installation and Configuration on SAP<br>
 
 | Component  | SAP Release       | Requirements to the SAP system                                                |
 |------------|-------------------|-------------------------------------------------------------------------------|
@@ -49,17 +46,14 @@ SAP systems on HANA particularly are supported without any restrictions.
 | DeltaQ     | Rel. above 4.6A   | customizing                                                                  |
 
 
-
 For Information about the Installation of the custom function modules and the SAP customizing please check the section [SAP Customizing](../sap-customizing).
 
-**SAP Authentication**
-
+### SAP Authentication<br>
 - Custom authentication.
 - SAP authentication: SSO (Single Sign On) or SAP credentials.
 - SAP system or dialog user with appropriate [authority objects](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
 
-**Ports**
-
+### Ports<br>
 Following ports have to be opened depending on the SAP system, 
 where nn is the instance number of the SAP system (e.g. 00 or 99).
 
@@ -68,24 +62,20 @@ where nn is the instance number of the SAP system (e.g. 00 or 99).
 - Secure Communication Network (SCN): Port 48nn
 - SAP Router: Port 3399
 
-**SAP Licenses**
-
+### SAP Licenses<br>
 Additional SAP licenses might be required for extracting data from SAP. Contact SAP to verify these requirements.
 
 {% include _content/en/operating-systems.md %}
 
-**Other Applications and Frameworks**
- 	
+### Other Applications and Frameworks<br> 	
 - up to SSIS 2008: .NET Framework 3.5 SP1
 - starting from SSIS 2012: .NET Framework 4.5.2 or higher. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=42643).
 
-**Memory**
- 	
+### Memory<br> 	
 - 4 GB minimum, depending on data volume, more may be required
-**Disk space**
- 	
+
+### Disk space<br> 	
 - for the installation 30 MB total required to install
 
-**32/64-Bit Environment**
- 	
+### 32/64-Bit Environment<br> 	
 - the product can be installed on 32-Bit and 64-Bit operating systems
