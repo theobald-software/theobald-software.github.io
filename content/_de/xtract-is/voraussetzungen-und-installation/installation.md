@@ -38,11 +38,11 @@ Wenn man möchte, dass das Setup bzw. der License Manager den aufrufenden Prozes
 **Wichtig**: Beide Programme benötigen Admininistratorrechte.
 
 **Beispiele:**
-
-- start /w XtractISSetup.exe /S<br>
-- start /w XtractLicenseManager.exe "My License\XtractIS.License.json"<br>
-- start /w XtractLicenseManager.exe XtractIS.License.json<br>
-
+```
+start /w XtractISSetup.exe /S<br>
+start /w XtractLicenseManager.exe "My License\XtractIS.License.json"<br>
+start /w XtractLicenseManager.exe XtractIS.License.json<br>
+```
 Die folgende Tabelle zeigt wichtige Dateien, die die Installationsroutine mitbringt und auf dem Zielrechner Im Verzeichnis \XtractIS\: installiert:
 
 
