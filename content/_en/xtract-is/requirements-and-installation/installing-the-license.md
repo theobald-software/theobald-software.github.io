@@ -21,8 +21,10 @@ The picture shows a properly installed regular license.
 
 ![XIS_License_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive" width="400px"}
 
-Xtract.License.dll files will be registered in the GAC. 
-XtractISLicense.json files are copied to CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\ or C:\ProgramData\TheobaldSoftware\XtractIS\
+| file name | description |
+|:---|:---|
+|Xtract.License.dll | files will be registered in the GAC | 
+|XtractISLicense.json | files are copied to CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\ or <br> C:\ProgramData\TheobaldSoftware\XtractIS\ |
 
 The following graphic shows on which computers Xtract IS must be installed and on which computers a valid Xtract IS license must be installed. Xtract IS is licensed per Windows server (the server on which SSIS packages are deployed and executed). The same license file can be used on the local workstations to develop the SSIS packages.<br>
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive"}
