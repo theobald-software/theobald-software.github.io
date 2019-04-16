@@ -32,23 +32,17 @@ When using our Power Query M-script, not further configuration is required.
 
 ![datagw_service_datasource](/img/content/XU_PBI_datagateway_service_datasource.png){:class="img-responsive"}
 
-**Data Source Name**
-A random name for your Xtract Universal Power BI data source.
+**Data Source Name**: A random name for your Xtract Universal Power BI data source.
 
-**Data Source Type**
-Select *Xtract Universal Extraction* from the drop down menu. If that entry is not visible, make sure the settings in the *Requirements* section above are correct.
+**Data Source Type**: Select *Xtract Universal Extraction* from the drop down menu. If that entry is not visible, make sure the settings in the *Requirements* section above are correct.
 
-**Data Source Information**
-Type in the address of your on-premises Xtract Universal (web) server. 
+**Data Source Information**: Type in the address of your on-premises Xtract Universal (web) server. 
 
-**Authentication Method**
-* *Anonymous*: Select if your Xtract Universal server settings don't require any authentication for running an extraction
-* *Basic*: Select if your Xtract Universal server or extraction settings require SAP credentials for extraction execution. Enter your SAP credentials here.
-* *Windows*: Select if you want to use [Single Sign On](../advanced-techniques/SAP-Single-Sign-On). Enter <domain>\<Windows AD user> in the *user* field and your Windows password in the *Password* field.
+**Authentication Method**: see [Single Sign On and SAP authentication](./pbi-SSO)
 
-**Advanced settings**
-Leave default.
+**Advanced settings**: Leave default.
 
 <br>
 When you click *Apply* You will get a *Connection Succesful* message if the data source has been setup correctly.
+<br>
 ![datagw_service_datasource_successful](/img/content/XU_PBI_datagateway_service_datasource_successful.png){:class="img-responsive"}

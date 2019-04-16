@@ -22,10 +22,12 @@ Also, you need to change the security level for [Data Extensions](https://docs.m
 
 ### Connecting Power BI with Xtract Universal
 
-Enter the URL of the Xtract Universal web server (that's the first part of the URL that is displayed in the web browser when you run an extraction in Xtract Universal and select *Run in Browser*)  
+* Enter the URL of the Xtract Universal web server (that's the first part of the URL that is displayed in the web browser when you run an extraction in Xtract Universal and select *Run in Browser*)  
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
 
-The Navigator window will display all extractions that have been set to *Power BI Connector (beta)* destination in Xtract Universal. The preview data displayed will show the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
+* See [Single Sign On and SAP authentication](./pbi-SSO) if you are prompted for *Anonymous*, *Basic* or *Windows* authentication.
+
+* The Navigator window will display all extractions that have been set to *Power BI Connector (beta)* destination in Xtract Universal. The preview data displayed will show the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
 
 <br>
 Loading the data will trigger an extraction in Xtract Universal and write the extracted data to Power BI.
