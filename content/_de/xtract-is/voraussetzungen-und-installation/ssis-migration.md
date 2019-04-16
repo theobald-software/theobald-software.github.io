@@ -18,9 +18,9 @@ Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSD
 
 ### Migration von SSIS 2008/2012 nach SSIS 2017
 ```
-Schritt 1: Migration mithilfe des *XtractISConversionPreparer.exe*<br>
-Schritt 2: Anpassung der Deployment-Zielumgebung *Migration von SSIS 2014/2016 nach SSIS 2017*<br>
-Schritt 3: Installation der *InstallXtractIS.exe* zur Registrierung und Verteilung der DLL Dateien<br>
+Schritt 1: Migration mithilfe des *XtractISConversionPreparer.exe*
+Schritt 2: Anpassung der Deployment-Zielumgebung *Migration von SSIS 2014/2016 nach SSIS 2017*
+Schritt 3: Installation der *InstallXtractIS.exe* zur Registrierung und Verteilung der DLL Dateien
 ```
 **XtractISConversionPreparer.exe**
 
