@@ -59,5 +59,5 @@ Directory \XtractIS\:
 | gac-uninstall.bat | this tool clears the GAC of all Xtract related components|
 | Eula_XtractIS.rtf | Contains the license agreement for the use of the software XtractIS|
 
- *dll files must be registered in the system's Global Assembly Cache GAC.*
+- dll files must be registered in the system's Global Assembly Cache GAC
 
