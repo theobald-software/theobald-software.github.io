@@ -11,16 +11,18 @@ lang: en_GB
 old_url:
 ---
 
-Along with the *Power BI Connector (beta)* destination in Xtract Universal comes a Power Query M-script *loading_script.pq*. This script can be found in a folder named *powerbi* inside the installation directory of Xtract Universal.<br>
+### Setup
 
-**Attention:** The M-script and the custom connector are *not* related to each other. You either use the script or the connector.
+Along with the *Power BI Connector (beta)* destination in Xtract Universal comes a text file named *loading_script* which contains a Power Query M-script. This script can be found in the *powerbi* folder inside the installation directory of Xtract Universal. <br>
 
-### How to use the XU M-script
+**Attention:** The M-script and the custom connector are *not* related. You either use the script or the connector.
+
+### How to use the M-script in Power BI
 
 1. Create a Power BI report using a *Blank Query* as data source.
 2. Open the *Advanced Editor* 
 3. Open the Xtract Universal *loading_script.pq* in any text editor and copy the complete content into the *Advanced Editor* window.
-4. Change the values for *ExtractionName* and the *ServerURL* to match the names of your Xtract Universal server and extraction.
+4. Change the values for *ExtractionName* and the *ServerURL* to match the names of your Xtract Universal server and extraction. *Attention*: Only use extractions that write to the *Power BI Connector* destination.
 5. Close the *Advanced Editor* and *Close & Apply* your changes.
 
 ![M-Script](/img/content/XU_PowerQueryScript.png){:class="img-responsive"}
