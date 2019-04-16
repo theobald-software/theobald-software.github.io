@@ -19,6 +19,11 @@ After successfully installing Xtract IS the Xtract IS components are automatical
 
 ![SSIS_Target_Server_Version](/img/content/SSIS_Target_Server_Version.jpg){:class="img-responsive" width="800px" }  
 
-To make the components available in the toolbox of Visual Studio 2008 or earlier, you may need to open a new data flow task and right-click on the toolbox. In the context menu, click Choose Elements. In the dialog window, select the SSIS Data Flow Items register card (see screenshot below). If everything has been correctly installed, the Xtract IS components can be found and selected in this list.
+To get the Xtract IS components into the toolbox in Visual Studio 2008 or earlier within the Integration Service environment:
+
+- In an open data flow task, right-click the toolbox and choose Select Items.
+- In the new window, select the SSIS Data Flow Components tab.
+
+If everything is installed correctly, the Xtract IS components are available there and must be marked. If you import the Xtract IS BW Loader component, it appears in the toolbox under Data Flow Targets (not under Sources like the others).
 
 ![Toolbox-01](/img/content/Toolbox-01.png){:class="img-responsive" width="800px"}
