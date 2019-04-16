@@ -6,7 +6,7 @@ description: Requirements
 product: xtract-universal
 parent: Power-BI-Connector-(beta)
 permalink: /:collection/:path
-weight: 1
+weight: 3
 lang: en_GB
 old_url:
 ---
@@ -21,7 +21,11 @@ Also, you may need to change the security level for [Data Extensions](https://do
 
 ### When using Power Query M-script
 
-Not further reuquirements. The M-script delivered with Xtract Universal can be used like any other M-script.
+Not further requirements. The M-script delivered with Xtract Universal can be used like any other M-script.
+
+### When using Power BI service
+
+These requirements are not specific to Xtract Universal. You will need a Microsoft Office 365 account. Also, you need to download and install the Power BI data gateway.
 
 
 

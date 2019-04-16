@@ -1,7 +1,7 @@
 ---
 ref: xu-pbi_connector-02
 layout: page
-title: Custom connector in Power BI
+title: Power BI custom connector
 description: Connection in Power BI
 product: xtract-universal
 parent: Power-BI-Connector-(beta)
@@ -18,7 +18,7 @@ After you have completed the steps as outlined in the previous chapters the *Xtr
 Enter the URL of the Xtract Universal server (that's the first part of the URL that is displayed in the web browser when you run an extraction in Xtract Universal and select *Run in Browser*)  
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
 
-The Navigator window will display all extractions that have been set to *Power BI Connector (beta)* destination in Xtract Universal. The preview data displayed will show the actual SAP column headers and preview data (real or dummy data, depending on the extraction type).
+The Navigator window will display all extractions that have been set to *Power BI Connector (beta)* destination in Xtract Universal. The preview data displayed will show the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
 
 ![powerbi-navigator](/img/content/XU_pbi_connector_navigator.jpg){:class="img-responsive"}
 
