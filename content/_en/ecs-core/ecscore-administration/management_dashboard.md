@@ -16,7 +16,7 @@ By default, the *Management Site* can be found at http://localhost:8085. <br>
 Afterwards you can save the website as a bookmark in your web browser.<br>
 The management site can also be started via the IIS Manager. 
 
-The initial user/password pair is admin/admin. It is best to change it directly after logging on to the management site for the first time. How to change the password is described in [Settings>Administrators](.\settings\administrators). 
+The initial user/password pair is admin/admin. It is best to change it directly after logging on to the management site for the first time. How to change the password is described in [Settings>Administrators](./settings/administrators). 
 
 The following services are available on the management site:
 

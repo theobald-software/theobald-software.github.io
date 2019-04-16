@@ -53,6 +53,6 @@ Genehmigen Sie den Antrag mit dem User des zuständigen Managers und der Workflo
 
 Im SAP-System können Sie anschließend überprüfen, ob alle Daten korrekt verbucht wurden. <br>
 Öffnen Sie dazu den Travel Expense Manager mit der Transaktion PR05 und rufen Sie die entsprechende Reisenummer auf.<br>
-Alle Angaben aus dem Reiseantrag\der Reisekostenabrechnung im SharePoint-Szenario sollten hier aufgeführt sein.
+Alle Angaben aus dem Reiseantrag/der Reisekostenabrechnung im SharePoint-Szenario sollten hier aufgeführt sein.
 
 ![ECS-Nintex-WorkflowTest9](/img/content/ECS-Nintex-WorkflowTest9.png){:class="img-responsive"}
