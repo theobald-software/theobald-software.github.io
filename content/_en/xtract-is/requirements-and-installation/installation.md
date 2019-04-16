@@ -39,11 +39,11 @@ If you want the setup programm or the license manager to block the calling proce
 **Important:**<br> Both programs need administration rights.
 
 **Examples:**
-
-- start /w XtractISSetup.exe /S
-- start /w XtractLicenseManager.exe "My License\XtractIS.License.json"
-- start /w XtractLicenseManager.exe XtractIS.License.json
-
+```
+start /w XtractISSetup.exe /S
+start /w XtractLicenseManager.exe "My License\XtractIS.License.json"
+start /w XtractLicenseManager.exe XtractIS.License.json
+```
 
 The list below shows some of the files that are placed on your system during installation.
 
@@ -60,7 +60,4 @@ Directory \XtractIS\:
 | Eula_XtractIS.rtf | Contains the license agreement for the use of the software XtractIS|
 
  *dll files must be registered in the system's Global Assembly Cache GAC.*
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTcyNzMxODIsMTU5MDczMDgyNCwtOD
-czODI2MTE4LDEyMDY5NzU4MTFdfQ==
--->
+
