@@ -12,15 +12,17 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=ssis-migration
 ---
 
 Dieses Kapitel behandelt die Migration von SSIS Paketen.<br>
-Beispiel: Sie migrieren Ihren SQL Server 2012 nach SQL Server 2017. Dies erfordert ebenfalls eine Migration der SSIS Pakete.
+Beispielhaft wird ein SQL Server 2012 nach SQL Server 2017 migriert. Dies erfordert ebenfalls eine Migration der SSIS Pakete.
 
 Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSDT und SSIS, siehe [hier](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is).
 
-
-**Migration von SSIS 2008/2012 nach SSIS 2017**
-
-Schritt 1: Migration mithilfe des Xtract IS Conversion Preparer<br>
-Schritt 2: Folgen Sie den weiter unten beschriebenen Schritten für *Migration von SSIS 2014/2016 nach SSIS 2017*
+### Migration von SSIS 2008/2012 nach SSIS 2017
+```
+Schritt 1: Migration mithilfe des *XtractISConversionPreparer.exe*<br>
+Schritt 2: Anpassung der Deployment-Zielumgebung *Migration von SSIS 2014/2016 nach SSIS 2017*<br>
+Schritt 3: Installation der *InstallXtractIS.exe* zur Registrierung und Verteilung der DLL Dateien<br>
+```
+**XtractISConversionPreparer.exe**
 
 Der Xtract IS Conversion Preparer ist ein Tool, welches Pakete, die für ältere Versionen von SSIS (z.B. 2008) erstellt worden sind und Xtract Komponenten beinhalten, auf die Migration für neuere SSIS-Versionen (z.B. 2014 oder 2016) vorbereitet. Sie finden es im Installationsverzeichnis von Xtract IS.
 
@@ -33,7 +35,7 @@ Wir starten das Tool und fügen mit *Add file(s)* neue SSIS Pakete hinzu, die Si
 ![XIS_ConversionPreparer_2016](/img/content/XIS_ConversionPreparer_2016.jpg){:class="img-responsive"}
 
 Sofern ein Paket im Debug-Ordner existiert, wird dieses automatisch mit einbezogen.
-Anschließend wählen Sie aus der Drop Down-Liste die SSIS-Version aus, für die die Pakete konvertiert werden sollen.
+Anschließend wählen Sie aus der Drop-Down Liste die SSIS-Version aus, für die die Pakete konvertiert werden sollen.
 
 Mit Klick auf den Button Prepare wird die Konvertierung schließlich ausgeführt.
 
@@ -41,15 +43,21 @@ Nach dem Öffnen des Paketes in Visual Studio erscheint gegebenenfalls der Visua
 
 Sollte nach Konvertierung des Pakets und Öffnen in Visual Studio eine entsprechende Fehlermeldung erscheinen, müssen Sie eventuell den ProtectionLevel im SSIS Paket vor der Konvertierung deaktivieren.
 
-**ACHTUNG:** Nachdem Sie die konvertierten Pakete in Visual Studio geöffnet haben, ändern Sie die Zielversion des SQL Servers in den Projekteigenschaften und **speichern Sie das SSIS Paket**.(s. Screenshot unten)
+**ACHTUNG:** 
+Nachdem Sie die konvertierten Pakete in Visual Studio geöffnet haben, ändern Sie die Zielversion des SQL Servers in den Projekteigenschaften und **speichern Sie das SSIS-Paket**, siehe Screenshot.
 Wenn Sie im Xtract IS Conversion Preparer 'SSIS 2014' ausgewählt hatten, ändern Sie die Zielversion auf 'SQL Server 2014'. Wenn Sie 'SSIS 2016' ausgewählt hatten, ändern Sie auf 'SQL Server 2016'.
-
 
 **Migration von SSIS 2014/2016 nach SSIS 2017**
 
-Bei VS/SSDT 2015 und 2017 können Sie die Zielversion des SQL Servers in den Projekteigenschaften auswählen.
+Bei VS/SSDT 2015 sowie 2017 können Sie die Zielversion des SQL Servers (Deployment Target Version) in den Projekteigenschaften auswählen.
 
 ![VS-Deployment-Target](/img/content/VS-Deployment-Target.jpg){:class="img-responsive"}
 
-Weitere Informationen zu den unterstützten SSIS- und Visual Studio-Versionen bzw. den Upgrade auf höhere SSIS-Versionen finden Sie hier: 
+Weitere Informationen zu den unterstützten SSIS- und Visual Studio-Versionen bzw. den Upgrade auf höhere SSIS-Versionen finden Sie hier:<br> 
 [List of the SSIS/VS Versions Supported by Xtract IS(englisch)](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is)
+
+**InstallXtractIS.exe**
+
+Das Konsolenprogramm registriert und verteilt die notwendigen DLL Dateien im Installtionsverzeichnis der SQL Server Version. Achten Sie darauf, dass nach der Migration auf eine neue SQL Server Version, diese Anwendung auf der Deployment Umgebung ausgeführt wird (SSIS Server). 
+
+Es ist in diesem Zusammenhang ebenfalls notwendig, das Konsolenprogramm auf der Entwicklungsumgebung auszuführen (Visual Studio).
