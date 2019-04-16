@@ -23,10 +23,11 @@ Along with the *Power BI Connector (beta)* destination in Xtract Universal comes
 4. Change the values for *ExtractionName* and the *ServerURL* to match the names of your Xtract Universal server and extraction.
 5. Close the *Advanced Editor* and *Close & Apply* your changes.
 
-![M-Script](/img/content/xu/XU_PowerQueryScript.png){:class="img-responsive"}
+![M-Script](/img/content/XU_PowerQueryScript.png){:class="img-responsive"}
 
+<br>
 
-![PowerQueryEditor](/img/content/xu/XU_PBI_PowerQueryEditor.png){:class="img-responsive"}
+![PowerQueryEditor](/img/content/XU_PBI_PowerQueryEditor.png){:class="img-responsive"}
 
 
 
