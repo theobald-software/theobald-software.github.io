@@ -19,4 +19,3 @@ Derzeit ist nur eine [englische Version](https://help.theobald-software.com/en/x
 Die deutsche Version folgt in Kürze.
 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
