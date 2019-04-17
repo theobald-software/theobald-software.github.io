@@ -11,11 +11,7 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/
 ---
-
-### Architecture
-
----
-
+### Architecture<br>
 Xtract IS is a plug-in for the SQL Server Integration Services (SSIS). It cannot be used outside SSIS, 
 
 so that a SQL Server license is required, even if the SQL Server database is not used. 
@@ -27,10 +23,7 @@ This provides you with the complete range of data extraction for different SAP o
 ![XIS-Architecture](/img/content/xis-arch.png){:class="img-responsive"}
 
 
-### Using the components
-
----
-
+### Using the components<br>
 In the overview below you can see for which components read (R) and write (W) rights are available. 
 
 The required license for using the different components in SAP ERP and SAP BW can also be found in the table.
