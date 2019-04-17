@@ -12,7 +12,7 @@ lang: en_GB
 old_url: 
 ---
 
-#### *Attention: This functionality is still in <span style="color:red">beta</span>.*<br>
+#### Attention: This functionality is still in *<span style="color:red">preview</span>*.<br>
 
 ### Introduction
 
