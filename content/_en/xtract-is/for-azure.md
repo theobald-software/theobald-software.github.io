@@ -17,7 +17,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=xtract_is_for_azure
 With Azure-SSIS IR, SSIS packages will still be developed on a local (on prem) Visual Studio/SSDT environment.
 However, instead of deploying those packages to an on prem SSIS server, those packages will be deployed to an Azure-SSIS IR (part of ADFv2) to be scheduled and run in the Azure cloud.
 
-![XISforAzure_Architecture](/img/content/XISforAzure_Architecture.jpg){:class="img-responsive" width="800px"}
+![XISforAzure_Architecture](/img/content/xis_for_azure_architecture.png){:class="img-responsive"}
 
 Xtract IS for Azure makes sure, that Azure-SSIS IR supports SSIS packages, containing Xtract IS components for connecting to and extracting data from SAP. You need to make sure that your SAP system is accessible from your Azure cloud environment, for instance through a VPN tunnel.
 
