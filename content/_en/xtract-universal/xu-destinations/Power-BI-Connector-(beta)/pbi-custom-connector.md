@@ -31,7 +31,6 @@ Also, you need to change the security level for [Data Extensions](https://docs.m
 
 * The Navigator window will display all extractions that have been set to *Power BI Connector (beta)* destination in Xtract Universal. The preview data displayed will show the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
 
-<br>
 Loading the data will trigger an extraction in Xtract Universal and write the extracted data to Power BI.
 
 ![powerbi-navigator](/img/content/XU_pbi_connector_navigator.jpg){:class="img-responsive"}
