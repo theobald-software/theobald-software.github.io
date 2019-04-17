@@ -24,7 +24,7 @@ The Xtract IS component suite offers you a total of 10 different modules for the
 
 This provides you with the complete range of data extraction for different SAP objects.
 
-![XIS-Architecture](/img/content/xis-arch.png){:class="img-responsive"}
+![XIS-Architecture](/img/content/xis/architectures_xis_neu.png){:class="img-responsive"}
 
 
 ### Using the components
