@@ -20,7 +20,7 @@ Die Xtract IS Komponentensuite bietet Ihnen insgesamt 10 unterschiedliche Bauste
 
 Somit steht Ihnen die komplette Bandbreite der Datenextraktion für unterschiedliche SAP-Objekte zur Verfügung.
 
-![XIS-Architecture](/img/content/xis-arch.png){:class="img-responsive"}
+![XIS-Architecture](/img/content/xis/architectures_xis_neu.png){:class="img-responsive"}
 
 
 ### Verwendung der Komponenten<br>
