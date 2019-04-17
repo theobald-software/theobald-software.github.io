@@ -30,6 +30,7 @@ Xtract Universal allows to extract data from SAP ERP and BW systems and to load 
 
 **Business Intelligence / Analytics Tools:**<br>
 - [Microstrategy](./xu-destinations/microstrategy)
+- [Power BI connector (Cloud/Desktop)](./xu-destinations/Power-BI-Connector-(beta)) 
 - [Power BI (Cloud)](./xu-destinations/powerbi-cloud) 
 - [Power BI Desktop using OData, Power Pivot & Excel](./xu-destinations/powerbi-desktop) 
 - [Tableau](./xu-destinations/tableau) 

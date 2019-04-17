@@ -30,6 +30,7 @@ Xtract Universal bietet die Möglichkeit, die aus SAP extrahierten Daten in vers
 
 **Business Intelligence / Analytics Tools:**
 - [Microstrategy](./xu-zielumgebungen/microstrategy)
+- [Power BI connector (Cloud/Desktop)](./xu-zielumgebungen/Power-BI-Connector-(beta)) 
 - [Power BI (Cloud)](./xu-zielumgebungen/powerbi_cloud) 
 - [Power BI Desktop using OData, Power Pivot & Excel](./xu-zielumgebungen/power_bi_desktop) 
 - [Tableau](./xu-zielumgebungen/tableau) 
