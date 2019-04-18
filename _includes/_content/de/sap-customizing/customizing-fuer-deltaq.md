@@ -5,7 +5,7 @@ Um die DeltaQ-Komponente nutzen zu können, sind einige Customizing-Einstellunge
 ### Schritt 1<br>
 Legen Sie in der Transaktion SM59 eine neue RFC-Destination vom Typ R/3 an (z.B. mit Namen XTRACT01, Connection Type 3). Sie brauchen keinen Verbindungstest durchzuführen. Die Destination muss nur vorhanden sein.
 
-Schritt 2 (Optional)**
+**Schritt 2 (Optional)**
 
 Der 2. Schritt, also die Anlage der logischen Destination, ist optional. 
 Im Schritt 3 wird beim Ausführen des FuBas RSAP_BIW_CONNECT_40 automatisch die logische Destination angelegt. 
