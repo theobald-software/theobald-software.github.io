@@ -12,7 +12,11 @@ Wir empfehlen die Nutzung dieses Z-Funktionsbausteins.
 
 Für die manuelle Installation des Z-Funktionsbaustein, folgen Sie den Anweisungen in unserem [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/installation-of-the-function-module-Z_THEO_READ_TABLE).<br>
 
-Alternativ können Sie den Funktionsbaustein mit Hilfe eines der mitgelieferten Transportaufträge (Z_THEO_READ_TABLE.zip *oder* Z_THEO_READ_TABLE-before_740SP05.zip) installieren. Die zip-Dateien finden Sie im Unterordner *ABAP* des Xtract-Installationsordners. <br>
+Alternativ können Sie den Funktionsbaustein mit Hilfe eines der mitgelieferten Transportaufträge
+- Z_THEO_READ_TABLE.zip *oder* 
+- Z_THEO_READ_TABLE-before_740SP05.zip<br>
+
+installieren. Die zip-Dateien finden Sie im Unterordner *ABAP* des Xtract-Installationsordners. <br>
 Bitte leiten Sie die zip-Dateien an Ihre SAP Basis Adminstratoren weiter mit der Bitte um Import ins SAP System.
 
 Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
