@@ -67,7 +67,7 @@ Ein UPN tritt ist in folgender Form zugeordnet:
 ```
 Beispiel:
 ```
-XU Server:  TODD.theobald.local:8064
+XU Server:  TODD.theobald.local:8064 (or localhost:8064)
 TPN:        steffan@theobald.local
 ```
 ![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
