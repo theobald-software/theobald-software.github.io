@@ -89,7 +89,7 @@ Beispiel:
 ```
 HTTP/theosoftw2012r2.theobald.local
 ```
-Die <Service Class> sowie der <Host Name> sind zur Authentisierung einer Service Instanz zu einem Logon-Konto mindestens notwendig. Generell sind für die Bearbeitung von Manage Service Accounts, Domain Admin Rechte erforderlich. Weiterführende Informationen entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/ms677949(VS.85).aspx)
+Die Service Class sowie der Host Name sind zur Authentisierung einer Service Instanz zu einem Logon-Konto mindestens notwendig. Generell sind für die Bearbeitung von Manage Service Accounts, Domain Admin Rechte erforderlich. Weiterführende Informationen entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/ms677949(VS.85).aspx)
 
 ![AD User and computers - SPN](/img/content/xu/xu_ad_spn.png){:class="img-responsive"}
 
