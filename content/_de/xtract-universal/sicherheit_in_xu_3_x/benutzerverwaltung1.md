@@ -48,6 +48,8 @@ Um Kerberos Transportverschlüsselung zu verwenden oder einen Active Directory B
 Der Target Principal Name muss entweder dem UPN des Benutzers entsprechen, unter dem der XU Windows Service ausgeführt wird, oder einem SPN, der diesem Benutzer zugeordnet ist.<br>
 
 Standardmäßig wird der XU Service unter dem Local System Account ausgeführt. Im AD tritt dieser Benutzer als Computeraccount auf. Dem Computeraccount ist standardmäßig der SPN in folgender Form zugeordnet:
+
+![XU3_Default Log on](/img/content/xu/log_on_local_system_account.png){:class="img-responsive"}
 ```
 HOST/[hostname]@[domain]
 ```
@@ -61,6 +63,8 @@ TPN:       HOST/TODD.theobald.local@THEOBALD.LOCAL
 **Deswegen muss der Target Principal Name im Anmeldefenster nur geändert werden, wenn der Service Account des XU Windows Service geändert wurde.**
 
 ### User Principal Name – UPN<br>
+![XU Log On UPN](/img/content/xu/log_on_diesen_account.png){:class="img-responsive"}
+
 Ein UPN wird in folgender Form zugeordnet:
 ```
 <benutzer>@<domain>
