@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=benutzerverwaltung1
 ---
 ### Authentisierung- und Verschlüsselungsverfahren<br>
-Die Verbinddung zwischen dem Xtract Universal Designer und dem Xtract Universal Server kann durch unterschiedliche Authentisierung- und Verschlüsselungsverfahren durchgeführt werden. 
+Die Verbindung zwischen dem Xtract Universal Designer und dem Xtract Universal Server kann durch unterschiedliche Authentisierung- und Verschlüsselungsverfahren durchgeführt werden. 
 
 1. Windows AD Benutzer (außerhalb von Xtract Universal angelegt)
 2. Custom Benutzer (innerhalb von Xtract Universal angelegt, in XU 2.x als "basic user" bezeichnet)
