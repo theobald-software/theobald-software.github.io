@@ -42,5 +42,6 @@ Die Extraktion benutzt eine Oracle-Destination, im Preparation Statement wird de
 
 ![xu-customerparam-destination](/img/content/xu-customerparam-destination.png){:class="img-responsive"}
 
+Das Format der Variable ist abhängig von der Destination. Für die Variable WNAME wird z.B. :WNAME bei einer Oracle-Destination und @WMNAME bei einer SQL Server Destination verwendet. Das Format kann man sich z.B. im Insert-Statement anschauen.
 Wie sonst auch bei Custom Parameters, müssen Sie darauf achten, keine Namenskonflikte zu erzeugen.<br> 
 Der Custom Parameter im Beispiel darf nicht NAME1 heißen, weil im Row Processing Statement bereits der SQL Parameter, der den Wert der Spalte *NAME1* enthält, so heißt.
