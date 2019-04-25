@@ -61,7 +61,7 @@ TPN:       HOST/TODD.theobald.local@THEOBALD.LOCAL
 **Deswegen muss der Target Principal Name im Anmeldefenster nur geändert werden, wenn der Service Account des XU Windows Service geändert wurde.**
 
 ### User Principal Name – UPN<br>
-Ein UPN tritt ist in folgender Form zugeordnet:
+Ein UPN wird in folgender Form zugeordnet:
 ```
 <benutzer>@<domain>
 ```
@@ -75,7 +75,7 @@ TPN:        steffan@theobald.local
 Weiterführende Information entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx)
 
 ### Service Principal Name - SPN<br>
-Ein SPN tritt ist in folgender Form zugeordnet:
+Ein SPN wird in folgender Form zugeordnet:
 ```
 <service class>/<host>
 ```
