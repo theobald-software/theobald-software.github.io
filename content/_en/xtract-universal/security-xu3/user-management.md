@@ -64,7 +64,10 @@ Target Principal:  HOST/TODD.theobald.local@THEOBALD.LOCAL
 
 Therefore, the Target Principal Name only needs to be changed in the login window if the service account of the XU Windows Service has been changed.
 
-### User Principal Name - UPN<br>
+### If the service runs under another account<br>
+Deviating from the standard, the service can also be executed under a different account. 
+For this the setting *This account* is selected. You can read the settings for this account in the Windows service Xtract Universal [here].
+
 ![XU Log On UPN](/img/content/xu/log_on_diesen_account.png){:class="img-responsive"}
 
 An UPN is assigned in the following form:

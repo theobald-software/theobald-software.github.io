@@ -64,7 +64,10 @@ Target Principal:  HOST/TODD.theobald.local@THEOBALD.LOCAL
 
 Deswegen muss der Target Principal Name im Anmeldefenster nur geändert werden, wenn der Service Account des XU Windows Service geändert wurde.
 
-### User Principal Name – UPN<br>
+### Wenn der Dienst unter einen anderen Account läuft<br>
+Abweichend vom Standard, kann der Dienst auch unter einen anderen Accout ausgeführt werden. Dafür wird die Einstellung *Diesen Account* ausgewählt. 
+Die Einstellungen für diesen Account im Windows Dienst Xtract Universal, können sie [hier] nachlesen.
+
 ![XU Log On UPN](/img/content/xu/log_on_diesen_account.png){:class="img-responsive"}
 
 Ein UPN wird in folgender Form zugeordnet:
