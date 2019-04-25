@@ -72,7 +72,7 @@ TPN:        steffan@theobald.local
 ```
 ![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
 
-Weiterführende Information entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx). 
+Weiterführende Information entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx)
 
 ### Service Principal Name - SPN<br>
 Ein SPN tritt ist in folgender Form zugeordnet:
