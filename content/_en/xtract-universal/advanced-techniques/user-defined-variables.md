@@ -42,5 +42,7 @@ The extraction uses an Oracle destination. In the preparation statement the cust
 
 ![xu-customerparam-destination](/img/content/xu-customerparam-destination.png){:class="img-responsive"}
 
+The format of the variable depends on the destination. For the variable WNAME, for example, :WNAME is used for an Oracle destination and @WMNAME for an SQL Server destination. You can view the format in the insert statement.
+
 Make sure to avoid name conflicts. 
 The custom parameter in our example may not be called *NAME1*, since in the row processing statement we have the SQL parameter *NAME1*.
