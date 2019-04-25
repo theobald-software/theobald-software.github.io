@@ -47,20 +47,22 @@ Um Kerberos Transportverschlüsselung zu verwenden oder einen Active Directory B
 
 Der Target Principal Name muss entweder dem UPN des Benutzers entsprechen, unter dem der XU Windows Service ausgeführt wird, oder einem SPN, der diesem Benutzer zugeordnet ist.<br>
 
-Standardmäßig wird der XU Service unter dem Local System Account ausgeführt. Im AD tritt dieser Benutzer als Computeraccount auf. Dem Computeraccount ist standardmäßig der SPN in folgender Form zugeordnet:
+Standardmäßig wird der XU Service unter dem Local System Account ausgeführt. 
 
 ![XU3_Default Log on](/img/content/xu/log_on_local_system_account.png){:class="img-responsive"}
+
+Im AD tritt dieser Benutzer als Computeraccount auf. Dem Computeraccount ist standardmäßig der SPN in folgender Form zugeordnet:
 ```
 HOST/[hostname]@[domain]
 ```
 Beispiel:
 ```
-XU Server: TODD.theobald.local:8064 (or localhost:8064)
-TPN:       HOST/TODD.theobald.local@THEOBALD.LOCAL
+XU Server:         TODD.theobald.local:8064 (or localhost:8064)
+Target Principal:  HOST/TODD.theobald.local@THEOBALD.LOCAL
 ```
 ![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
 
-**Deswegen muss der Target Principal Name im Anmeldefenster nur geändert werden, wenn der Service Account des XU Windows Service geändert wurde.**
+Deswegen muss der Target Principal Name im Anmeldefenster nur geändert werden, wenn der Service Account des XU Windows Service geändert wurde.
 
 ### User Principal Name – UPN<br>
 ![XU Log On UPN](/img/content/xu/log_on_diesen_account.png){:class="img-responsive"}
@@ -71,8 +73,8 @@ Ein UPN wird in folgender Form zugeordnet:
 ```
 Beispiel:
 ```
-XU Server:  TODD.theobald.local:8064 (or localhost:8064)
-TPN:        steffan@theobald.local
+XU Server:        TODD.theobald.local:8064 (or localhost:8064)
+Target Principal: steffan@theobald.local
 ```
 ![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
 
@@ -85,7 +87,7 @@ Ein SPN wird in folgender Form zugeordnet:
 ```
 Beispiel:
 ```
-HTTP/theosoftw2012r2
+HTTP/theosoftw2012r2.theobald.local
 ```
 Die <Service Class> sowie der <Host Name> sind zur Authentisierung einer Service Instanz zu einem Logon-Konto mindestens notwendig. Generell sind für die Bearbeitung von Manage Service Accounts, Domain Admin Rechte erforderlich. Weiterführende Informationen entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/ms677949(VS.85).aspx)
 
@@ -93,9 +95,12 @@ Die <Service Class> sowie der <Host Name> sind zur Authentisierung einer Service
 
 Bei Einwahl auf einen Remote Server, bei dem der Dienst nicht auf der lokalen Umgebung verwendet wird, können sowohl ein UPN als auch ein SPN in der folgenden Form verwendet werden:
 ```
-XU Server:     theosoftw2012r2.theobald.local:8064
-TPN als UPN:   svc_xusrv@THEOBALD.LOCAL
-TPN als SPN:   HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL
+XU Server:                 theosoftw2012r2.theobald.local:8064
+Target Principal als UPN:  svc_xusrv@THEOBALD.LOCAL
+```
+```
+XU Server:                theosoftw2012r2.theobald.local:8064
+Target Principal als SPN: HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL
 ```
 ### Benutzer<br>
 Das Anlegen von Custom Benutzern funktioniert so wie das Anlegen von Basic Benutzern in XU 2.x. Zum Zeitpunkt der Benutzeranlage müssen noch keine Rechte vergeben werden, siehe Kapitel Zugriffsverwaltung.<br>
