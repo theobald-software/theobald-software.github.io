@@ -65,6 +65,7 @@ Ein UPN tritt ist in folgender Form zugeordnet:
 ```
 <benutzer>@<domain>
 ```
+Beispiel:
 ```
 XU Server:  TODD.theobald.local:8064
 TPN:        steffan@theobald.local
