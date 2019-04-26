@@ -55,6 +55,8 @@ In the AD, this user acts as a computer account. By default, the SPN is assigned
 ```
 HOST/[hostname]@[domain]
 ```
+
+`HOST/[hostname]@[domain]`
 Example:
 
 |field | value|
@@ -81,7 +83,7 @@ Example:
 |field | value|
 |:---|:----|
 |XU Server|TODD.theobald.local:8064 (or localhost:8064)|
-|Target Principal |steffan@theobald.local|
+|Target Principal |`steffan@theobald.local`|
 
 ![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
 
@@ -107,7 +109,7 @@ When dialing into a remote server where the service is not used in the local env
 |field | value|
 |:---|:----|
 |XU Server|		 theosoftw2012r2.theobald.local:8064|
-|Target Principal as UPN |svc_xusrv@THEOBALD.LOCAL|
+|Target Principal as UPN |`svc_xusrv@THEOBALD.LOCAL`|
 
 |field | value|
 |:---|:----|
