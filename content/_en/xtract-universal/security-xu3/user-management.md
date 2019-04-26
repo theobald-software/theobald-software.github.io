@@ -57,10 +57,10 @@ HOST/[hostname]@[domain]
 ```
 Example:
 
-|:---|:----|
 |field | value|
-|XU Server |  TODD.theobald.local:8064 (or localhost:8064)|
-| Target Principal|  HOST/TODD.theobald.local@THEOBALD.LOCAL|
+|:---|:----|
+|XU Server | TODD.theobald.local:8064 (or localhost:8064)|
+|Target Principal| HOST/TODD.theobald.local@THEOBALD.LOCAL|
 
 ![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
 
@@ -77,10 +77,12 @@ An UPN is assigned in the following form:
 <user>@<domain>
 ```
 Example:
-```
-XU Server:        TODD.theobald.local:8064 (or localhost:8064)
-Target Principal: steffan@theobald.local
-```
+
+|field | value|
+|:---|:----|
+|XU Server|TODD.theobald.local:8064 (or localhost:8064)|
+|Target Principal |steffan@theobald.local|
+
 ![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
 
 For further information please refer to the official [Windows Library](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx)
@@ -101,14 +103,17 @@ For further information please refer to the official [Windows Library](https://m
 ![AD User and computers - SPN](/img/content/xu/xu_ad_spn.png){:class="img-responsive"}
 
 When dialing into a remote server where the service is not used in the local environment, both an UPN and an SPN can be used in the following form:
-```
-XU Server: 				 theosoftw2012r2.theobald.local:8064
-Target Principal as UPN: svc_xusrv@THEOBALD.LOCAL
-```
-```
-XU Server: 				 theosoftw2012r2.theobald.local:8064
-Target Principal as SPN: HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL
-```
+
+|field | value|
+|:---|:----|
+|XU Server|		 theosoftw2012r2.theobald.local:8064|
+|Target Principal as UPN |svc_xusrv@THEOBALD.LOCAL|
+
+|field | value|
+|:---|:----|
+|XU Server|	 theosoftw2012r2.theobald.local:8064|
+|Target Principal as SPN |HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL|
+
 ### User<br>
 Creating custom users works in the same way as creating basic users in XU 2.x. At the time of user creation, no rights need to be assigned, see chapter Access Management.<br>
 Custom users are created and assigned to custom user groups via *Security - Manage Users*.
