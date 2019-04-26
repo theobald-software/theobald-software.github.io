@@ -94,12 +94,11 @@ In diesem optionalen Schritt nutzen wir eine Java-Komponente, um im Erfolgsfall 
 
 <br>
 **Job ausführen**<br>
-Nun führen wir den Job aus. <br>
+Nun führen wir den Job aus. Der Job ist erfolgreich und es wurden Kundendatensätze aus SAP extrahiert und in den SQL Server geschrieben.<br>
 ![talend-http-job-executed](/img/content/xu/best-practices/talend-http/talend-http-job-executed.png){:class="img-responsive"}
 
 **Ergebnis im SQL Server prüfen**<br>
-Der Job wurde erfolgreich ausgeführt. Nun können wir im SQL Server das Ergebnis prüfen.<br>
-
+Nun können wir im SQL Server das Ergebnis prüfen.<br>
 ![talend-mssql-result](/img/content/xu/best-practices/talend-http/talend-mssql-result.png){:class="img-responsive"}
 
 <br>
