@@ -56,10 +56,11 @@ Im AD tritt dieser Benutzer als Computeraccount auf. Dem Computeraccount ist sta
 HOST/[hostname]@[domain]
 ```
 Beispiel:
-```
-XU Server:         TODD.theobald.local:8064 (or localhost:8064)
-Target Principal:  HOST/TODD.theobald.local@THEOBALD.LOCAL
-```
+|Feld|Wert|
+|:---|:---|
+|XU Server|   TODD.theobald.local:8064 (or localhost:8064)|
+|Target Principal |HOST/TODD.theobald.local@THEOBALD.LOCAL|
+
 ![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
 
 Deswegen muss der Target Principal Name im Anmeldefenster nur geändert werden, wenn der Service Account des XU Windows Service geändert wurde.
@@ -74,10 +75,11 @@ Ein UPN wird in folgender Form zugeordnet:
 <benutzer>@<domain>
 ```
 Beispiel:
-```
-XU Server:        TODD.theobald.local:8064 (or localhost:8064)
-Target Principal: steffan@theobald.local
-```
+|Feld|Wert|
+|:---|:---|
+|XU Server|  TODD.theobald.local:8064 (or localhost:8064)|
+|Target Principal |`steffan@theobald.local`|
+
 ![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
 
 Weiterführende Information entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx)
@@ -96,14 +98,17 @@ Die Service Class sowie der Host Name sind zur Authentisierung einer Service Ins
 ![AD User and computers - SPN](/img/content/xu/xu_ad_spn.png){:class="img-responsive"}
 
 Bei Einwahl auf einen Remote Server, bei dem der Dienst nicht auf der lokalen Umgebung verwendet wird, können sowohl ein UPN als auch ein SPN in der folgenden Form verwendet werden:
-```
-XU Server:                 theosoftw2012r2.theobald.local:8064
-Target Principal als UPN:  svc_xusrv@THEOBALD.LOCAL
-```
-```
-XU Server:                theosoftw2012r2.theobald.local:8064
-Target Principal als SPN: HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL
-```
+
+|Feld|Wert|
+|:---|:---|
+|XU Server| theosoftw2012r2.theobald.local:8064|
+|Target Principal als UPN|  `svc_xusrv@THEOBALD.LOCAL`|
+
+|Feld|Wert|
+|:---|:---|
+|XU Server| theosoftw2012r2.theobald.local:8064|
+|Target Principal als SPN |HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL|
+
 ### Benutzer<br>
 Das Anlegen von Custom Benutzern funktioniert so wie das Anlegen von Basic Benutzern in XU 2.x. Zum Zeitpunkt der Benutzeranlage müssen noch keine Rechte vergeben werden, siehe Kapitel Zugriffsverwaltung.<br>
 Custom Benutzer werden angelegt und Custom Benutzergruppen zugeordnet via *Security - Manage Users*.
