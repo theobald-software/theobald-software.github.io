@@ -55,8 +55,6 @@ In the AD, this user acts as a computer account. By default, the SPN is assigned
 ```
 HOST/[hostname]@[domain]
 ```
-
-`HOST/[hostname]@[domain]`
 Example:
 
 |field | value|
