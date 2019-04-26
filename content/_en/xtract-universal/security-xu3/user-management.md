@@ -27,12 +27,12 @@ The AD user who runs the XU Designer authenticates himself to the XU server via 
 **Windows credentials (different users)**<br> 
 The AD user, whose user name and password are entered in the login window, authenticates himself to the XU server via Kerberos. All data exchanged between Designer + Server is encrypted using Kerberos.
 
-**Custom credentials (TLS encryption) **<br>
+**Custom credentials (TLS encryption)**<br>
 The custom user, whose user name and password are entered in the login window, authenticates himself to the XU server. All data exchanged between Designer + Server is encrypted via TLS.<br>
 To use TLS transport encryption, an X.509 server certificate is required for the XU service (can be stored in the server settings).
 In the login window, the DNS hostname of the server for which the certificate was issued must be entered in the Server field.
 
-**Custom credentials (Kerberos encryption) **<br>
+**Custom credentials (Kerberos encryption)**<br>
 The custom user, whose user name and password are entered in the login window, authenticates himself to the XU server. All data exchanged between Designer + Server is encrypted using Kerberos.
 
 **Anonymous (no encryption)**<br>
@@ -56,8 +56,9 @@ In the AD, this user acts as a computer account. By default, the SPN is assigned
 HOST/[hostname]@[domain]
 ```
 Example:
-|field | value|
+
 |:---|:----|
+|field | value|
 |XU Server |  TODD.theobald.local:8064 (or localhost:8064)|
 | Target Principal|  HOST/TODD.theobald.local@THEOBALD.LOCAL|
 
@@ -67,7 +68,7 @@ Therefore, the Target Principal Name only needs to be changed in the login windo
 
 ### If the service runs under another account<br>
 Deviating from the standard, the service can also be executed under a different account. 
-For this the setting *This account* is selected. You can read the settings for this account in the Windows service Xtract Universal [here].
+For this the setting *This account* is selected.
 
 ![XU Log On UPN](/img/content/xu/log_on_diesen_account.png){:class="img-responsive"}
 
