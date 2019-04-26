@@ -17,7 +17,7 @@ The connection between the Xtract Universal Designer and the Xtract Universal Se
 2. custom user (created within Xtract Universal, called "basic user" in XU 2.x)
 3. anonymous (no login data required, no encryption)
 
-{[XU3_Designer_Authentication](/img/content/xu/authentication_xu.png){:class="img-responsive"}
+![XU3_Designer_Authentication](/img/content/xu/authentication_xu.png){:class="img-responsive"}
 
 XU supports the following combinations of transport encryption + authentication:
 
@@ -56,10 +56,11 @@ In the AD, this user acts as a computer account. By default, the SPN is assigned
 HOST/[hostname]@[domain]
 ```
 Example:
-```
-XU Server:         TODD.theobald.local:8064 (or localhost:8064)
-Target Principal:  HOST/TODD.theobald.local@THEOBALD.LOCAL
-```
+|field | value|
+|:---|:----|
+|XU Server |  TODD.theobald.local:8064 (or localhost:8064)|
+| Target Principal|  HOST/TODD.theobald.local@THEOBALD.LOCAL|
+
 ![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
 
 Therefore, the Target Principal Name only needs to be changed in the login window if the service account of the XU Windows Service has been changed.
