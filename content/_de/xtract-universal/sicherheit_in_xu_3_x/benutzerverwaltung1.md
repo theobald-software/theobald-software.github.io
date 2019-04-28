@@ -56,6 +56,7 @@ Im AD tritt dieser Benutzer als Computeraccount auf. Dem Computeraccount ist sta
 HOST/[hostname]@[domain]
 ```
 Beispiel:
+
 |Feld|Wert|
 |:---|:---|
 |XU Server|   TODD.theobald.local:8064 (or localhost:8064)|
@@ -75,6 +76,7 @@ Ein UPN wird in folgender Form zugeordnet:
 <benutzer>@<domain>
 ```
 Beispiel:
+
 |Feld|Wert|
 |:---|:---|
 |XU Server| TODD.theobald.local:8064 (or localhost:8064)|
