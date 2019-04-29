@@ -43,96 +43,9 @@ These different logon options can be activated/deactivated in the Server Setting
 ![XU3_ServerSettings_authenticaion_methods](/img/content/xu/authentisierung_xu.png){:class="img-responsive"}
 
 ### Target principal<br>
-To use Kerberos transport encryption or authenticate an Active Directory user, a Kerberos Target Principal Name (TPN) is required. This can be either a User Principal Name (UPN) or a Service Principal Name (SPN).<br>
+To use Kerberos transport encryption or authenticate an Active Directory user, a Kerberos Target Principal Name (TPN) is required. 
 
-The Target Principal Name must correspond either to the UPN of the user under which the XU Windows Service is running, or to an SPN assigned to this user.
-
-By default, the XU Service is executed under the Local System Account. 
-
-![XU3_Default Log on](/img/content/xu/log_on_local_system_account.png){:class="img-responsive"}
-
-In the AD, this user acts as a computer account. By default, the SPN is assigned to the computer account in the following form:
-```
-HOST/[hostname]@[domain]
-```
-Example:
-
-<<<<<<< HEAD
-XU Server:         TODD.theobald.local:8064 (or localhost:8064)
-Target Principal:  HOST/TODD.theobald.local@THEOBALD.LOCAL
-=======
-|field | value|
-|:---|:----|
-|XU Server | TODD.theobald.local:8064 (or localhost:8064)|
-|Target Principal| HOST/TODD.theobald.local@THEOBALD.LOCAL|
->>>>>>> b727dbde725d30eba7d5594ef7e96a420fb234ba
-
-![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
-
-Therefore, the Target Principal Name only needs to be changed in the login window if the service account of the XU Windows Service has been changed.
-
-### If the service runs under another account<br>
-Deviating from the standard, the service can also be executed under a different account. 
-For this the setting *This account* is selected.
-
-![XU Log On UPN](/img/content/xu/log_on_diesen_account.png){:class="img-responsive"}
-
-An UPN is assigned in the following form:
-```
-<user>@<domain>
-```
-Example:
-
-<<<<<<< HEAD
-XU Server:        TODD.theobald.local:8064 (or localhost:8064)
-Target Principal: steffan@theobald.local
-=======
-|field | value|
-|:---|:----|
-|XU Server|TODD.theobald.local:8064 (or localhost:8064)|
-|Target Principal |`steffan@theobald.local`|
->>>>>>> b727dbde725d30eba7d5594ef7e96a420fb234ba
-
-![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
-
-For further information please refer to the official [Windows Library](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx)
-
-### Service Principal Name - SPN<br>
-An SPN is assigned in the following form:
-```
-<service class>/<host>
-```
-Example:
-
-HTTP/theosoftw2012r2.theobald.local
-
-The service class and host name are at least required for authenticating a service instance to a logon account. In general, Domain Admin rights are required for processing Manage Service Accounts. 
-
-For further information please refer to the official [Windows Library](https://msdn.microsoft.com/en-us/library/ms677949(VS.85).aspx)
-
-![AD User and computers - SPN](/img/content/xu/xu_ad_spn.png){:class="img-responsive"}
-
-When dialing into a remote server where the service is not used in the local environment, both an UPN and an SPN can be used in the following form:
-<<<<<<< HEAD
-Example using UPN:
-XU Server: 		  theosoftw2012r2.theobald.local:8064
-Target Principal: svc_xusrv@THEOBALD.LOCAL
-
-Example using SPN:
-XU Server: 		  theosoftw2012r2.theobald.local:8064
-Target Principal: HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL
-=======
-
-|field | value|
-|:---|:----|
-|XU Server|		 theosoftw2012r2.theobald.local:8064|
-|Target Principal as UPN |`svc_xusrv@THEOBALD.LOCAL`|
-
-|field | value|
-|:---|:----|
-|XU Server|	 theosoftw2012r2.theobald.local:8064|
-|Target Principal as SPN |HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL|
->>>>>>> b727dbde725d30eba7d5594ef7e96a420fb234ba
+This can be either a User Principal Name (UPN) or a Service Principal Name (SPN). For further information about this topic, please click [here]().
 
 ### User<br>
 Creating custom users works in the same way as creating basic users in XU 2.x. At the time of user creation, no rights need to be assigned, see chapter Access Management.<br>
