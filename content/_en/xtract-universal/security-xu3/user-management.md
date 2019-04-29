@@ -27,12 +27,12 @@ The AD user who runs the XU Designer authenticates himself to the XU server via 
 **Windows credentials (different users)**<br> 
 The AD user, whose user name and password are entered in the login window, authenticates himself to the XU server via Kerberos. All data exchanged between Designer + Server is encrypted using Kerberos.
 
-**Custom credentials (TLS encryption) **<br>
+**Custom credentials (TLS encryption)**<br>
 The custom user, whose user name and password are entered in the login window, authenticates himself to the XU server. All data exchanged between Designer + Server is encrypted via TLS.<br>
 To use TLS transport encryption, an X.509 server certificate is required for the XU service (can be stored in the server settings).
 In the login window, the DNS hostname of the server for which the certificate was issued must be entered in the Server field.
 
-**Custom credentials (Kerberos encryption) **<br>
+**Custom credentials (Kerberos encryption)**<br>
 The custom user, whose user name and password are entered in the login window, authenticates himself to the XU server. All data exchanged between Designer + Server is encrypted using Kerberos.
 
 **Anonymous (no encryption)**<br>
@@ -57,8 +57,15 @@ HOST/[hostname]@[domain]
 ```
 Example:
 
+<<<<<<< HEAD
 XU Server:         TODD.theobald.local:8064 (or localhost:8064)
 Target Principal:  HOST/TODD.theobald.local@THEOBALD.LOCAL
+=======
+|field | value|
+|:---|:----|
+|XU Server | TODD.theobald.local:8064 (or localhost:8064)|
+|Target Principal| HOST/TODD.theobald.local@THEOBALD.LOCAL|
+>>>>>>> b727dbde725d30eba7d5594ef7e96a420fb234ba
 
 ![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
 
@@ -66,7 +73,7 @@ Therefore, the Target Principal Name only needs to be changed in the login windo
 
 ### If the service runs under another account<br>
 Deviating from the standard, the service can also be executed under a different account. 
-For this the setting *This account* is selected. You can read the settings for this account in the Windows service Xtract Universal [here].
+For this the setting *This account* is selected.
 
 ![XU Log On UPN](/img/content/xu/log_on_diesen_account.png){:class="img-responsive"}
 
@@ -76,8 +83,15 @@ An UPN is assigned in the following form:
 ```
 Example:
 
+<<<<<<< HEAD
 XU Server:        TODD.theobald.local:8064 (or localhost:8064)
 Target Principal: steffan@theobald.local
+=======
+|field | value|
+|:---|:----|
+|XU Server|TODD.theobald.local:8064 (or localhost:8064)|
+|Target Principal |`steffan@theobald.local`|
+>>>>>>> b727dbde725d30eba7d5594ef7e96a420fb234ba
 
 ![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
 
@@ -99,6 +113,7 @@ For further information please refer to the official [Windows Library](https://m
 ![AD User and computers - SPN](/img/content/xu/xu_ad_spn.png){:class="img-responsive"}
 
 When dialing into a remote server where the service is not used in the local environment, both an UPN and an SPN can be used in the following form:
+<<<<<<< HEAD
 Example using UPN:
 XU Server: 		  theosoftw2012r2.theobald.local:8064
 Target Principal: svc_xusrv@THEOBALD.LOCAL
@@ -106,6 +121,18 @@ Target Principal: svc_xusrv@THEOBALD.LOCAL
 Example using SPN:
 XU Server: 		  theosoftw2012r2.theobald.local:8064
 Target Principal: HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL
+=======
+
+|field | value|
+|:---|:----|
+|XU Server|		 theosoftw2012r2.theobald.local:8064|
+|Target Principal as UPN |`svc_xusrv@THEOBALD.LOCAL`|
+
+|field | value|
+|:---|:----|
+|XU Server|	 theosoftw2012r2.theobald.local:8064|
+|Target Principal as SPN |HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL|
+>>>>>>> b727dbde725d30eba7d5594ef7e96a420fb234ba
 
 ### User<br>
 Creating custom users works in the same way as creating basic users in XU 2.x. At the time of user creation, no rights need to be assigned, see chapter Access Management.<br>
