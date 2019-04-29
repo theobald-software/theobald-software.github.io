@@ -45,7 +45,7 @@ These different logon options can be activated/deactivated in the Server Setting
 ### Target principal<br>
 To use Kerberos transport encryption or authenticate an Active Directory user, a Kerberos Target Principal Name (TPN) is required. 
 
-This can be either a User Principal Name (UPN) or a Service Principal Name (SPN). For further information about this topic, please click [here]().
+This can be either a User Principal Name (UPN) or a Service Principal Name (SPN). For further information about this topic, please click [here](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 ### User<br>
 Creating custom users works in the same way as creating basic users in XU 2.x. At the time of user creation, no rights need to be assigned, see chapter Access Management.<br>
