@@ -17,7 +17,7 @@ The connection between the Xtract Universal Designer and the Xtract Universal Se
 2. custom user (created within Xtract Universal, called "basic user" in XU 2.x)
 3. anonymous (no login data required, no encryption)
 
-{[XU3_Designer_Authentication](/img/content/xu/authentication_xu.png){:class="img-responsive"}
+![XU3_Designer_Authentication](/img/content/xu/authentication_xu.png){:class="img-responsive"}
 
 XU supports the following combinations of transport encryption + authentication:
 
@@ -56,10 +56,10 @@ In the AD, this user acts as a computer account. By default, the SPN is assigned
 HOST/[hostname]@[domain]
 ```
 Example:
-```
+
 XU Server:         TODD.theobald.local:8064 (or localhost:8064)
 Target Principal:  HOST/TODD.theobald.local@THEOBALD.LOCAL
-```
+
 ![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
 
 Therefore, the Target Principal Name only needs to be changed in the login window if the service account of the XU Windows Service has been changed.
@@ -75,10 +75,10 @@ An UPN is assigned in the following form:
 <user>@<domain>
 ```
 Example:
-```
+
 XU Server:        TODD.theobald.local:8064 (or localhost:8064)
 Target Principal: steffan@theobald.local
-```
+
 ![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
 
 For further information please refer to the official [Windows Library](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx)
@@ -89,9 +89,9 @@ An SPN is assigned in the following form:
 <service class>/<host>
 ```
 Example:
-```
+
 HTTP/theosoftw2012r2.theobald.local
-```
+
 The service class and host name are at least required for authenticating a service instance to a logon account. In general, Domain Admin rights are required for processing Manage Service Accounts. 
 
 For further information please refer to the official [Windows Library](https://msdn.microsoft.com/en-us/library/ms677949(VS.85).aspx)
@@ -99,14 +99,14 @@ For further information please refer to the official [Windows Library](https://m
 ![AD User and computers - SPN](/img/content/xu/xu_ad_spn.png){:class="img-responsive"}
 
 When dialing into a remote server where the service is not used in the local environment, both an UPN and an SPN can be used in the following form:
-```
-XU Server: 				 theosoftw2012r2.theobald.local:8064
-Target Principal as UPN: svc_xusrv@THEOBALD.LOCAL
-```
-```
-XU Server: 				 theosoftw2012r2.theobald.local:8064
-Target Principal as SPN: HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL
-```
+Example using UPN:
+XU Server: 		  theosoftw2012r2.theobald.local:8064
+Target Principal: svc_xusrv@THEOBALD.LOCAL
+
+Example using SPN:
+XU Server: 		  theosoftw2012r2.theobald.local:8064
+Target Principal: HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL
+
 ### User<br>
 Creating custom users works in the same way as creating basic users in XU 2.x. At the time of user creation, no rights need to be assigned, see chapter Access Management.<br>
 Custom users are created and assigned to custom user groups via *Security - Manage Users*.
