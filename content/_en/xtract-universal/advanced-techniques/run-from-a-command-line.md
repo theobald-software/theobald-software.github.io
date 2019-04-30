@@ -30,7 +30,7 @@ If the extraction is called via the parameters, any number of variables can be a
 
 **Predefined variables**
 
-Predefined variables can be found under [Extraction Parameters](./extraction Parameters). 
+Predefined variables can be found under [Extraction Parameters](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/extraction-parameters). 
 
 **Returned value**
 
