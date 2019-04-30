@@ -45,71 +45,7 @@ Diese unterschiedlichen Anmeldeoptionen können in den Server Settings aktiviert
 ### Target principal<br>
 Um Kerberos Transportverschlüsselung zu verwenden oder einen Active Directory Benutzer zu authentisieren, wird ein Kerberos Target Principal Name (TPN) benötigt. Dieser kann entweder ein User Principal Name (UPN) sein oder ein Service Principal Name (SPN).<br>
 
-Der Target Principal Name muss entweder dem UPN des Benutzers entsprechen, unter dem der XU Windows Service ausgeführt wird, oder einem SPN, der diesem Benutzer zugeordnet ist.<br>
-
-Standardmäßig wird der XU Service unter dem Local System Account ausgeführt. 
-
-![XU3_Default Log on](/img/content/xu/log_on_local_system_account.png){:class="img-responsive"}
-
-Im AD tritt dieser Benutzer als Computeraccount auf. Dem Computeraccount ist standardmäßig der SPN in folgender Form zugeordnet:
-```
-HOST/[hostname]@[domain]
-```
-Beispiel:
-
-|Feld|Wert|
-|:---|:---|
-|XU Server|   TODD.theobald.local:8064 (or localhost:8064)|
-|Target Principal |HOST/TODD.theobald.local@THEOBALD.LOCAL|
-
-![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
-
-Deswegen muss der Target Principal Name im Anmeldefenster nur geändert werden, wenn der Service Account des XU Windows Service geändert wurde.
-
-### Wenn der Dienst unter einen anderen Account läuft<br>
-Abweichend vom Standard, kann der Dienst auch unter einen anderen Accout ausgeführt werden. Dafür wird die Einstellung *Dieses Konto* ausgewählt. 
-
-![XU Log On UPN](/img/content/xu/log_on_diesen_account.png){:class="img-responsive"}
-
-Ein UPN wird in folgender Form zugeordnet:
-```
-<benutzer>@<domain>
-```
-Beispiel:
-
-|Feld|Wert|
-|:---|:---|
-|XU Server| TODD.theobald.local:8064 (or localhost:8064)|
-|Target Principal | `steffan@theobald.local` |
-
-![XU TPN UPN](/img/content/xu/xu_UPN_steffan@.png){:class="img-responsive"}
-
-Weiterführende Information entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx)
-
-### Service Principal Name - SPN<br>
-Ein SPN wird in folgender Form zugeordnet:
-```
-<service class>/<host>
-```
-Beispiel:
-```
-HTTP/theosoftw2012r2.theobald.local
-```
-Die Service Class sowie der Host Name sind zur Authentisierung einer Service Instanz zu einem Logon-Konto mindestens notwendig. Generell sind für die Bearbeitung von Manage Service Accounts, Domain Admin Rechte erforderlich. Weiterführende Informationen entnehmen Sie bitte der offiziellen [Windows Bibliothek](https://msdn.microsoft.com/en-us/library/ms677949(VS.85).aspx)
-
-![AD User and computers - SPN](/img/content/xu/xu_ad_spn.png){:class="img-responsive"}
-
-Bei Einwahl auf einen Remote Server, bei dem der Dienst nicht auf der lokalen Umgebung verwendet wird, können sowohl ein UPN als auch ein SPN in der folgenden Form verwendet werden:
-
-|Feld|Wert|
-|:---|:---|
-|XU Server| theosoftw2012r2.theobald.local:8064|
-|Target Principal als UPN|  `svc_xusrv@THEOBALD.LOCAL`|
-
-|Feld|Wert|
-|:---|:---|
-|XU Server| theosoftw2012r2.theobald.local:8064|
-|Target Principal als SPN |HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL|
+Weitere Informationen zu diesem Thema, finden Sie in unserem [Knowledge Base Artikel](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 ### Benutzer<br>
 Das Anlegen von Custom Benutzern funktioniert so wie das Anlegen von Basic Benutzern in XU 2.x. Zum Zeitpunkt der Benutzeranlage müssen noch keine Rechte vergeben werden, siehe Kapitel Zugriffsverwaltung.<br>
