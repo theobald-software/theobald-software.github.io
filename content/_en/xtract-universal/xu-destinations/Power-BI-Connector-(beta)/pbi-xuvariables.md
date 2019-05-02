@@ -13,4 +13,3 @@ old_url:
 
 
 to be done...
-![Power BI cache](/img/content/XU_PBI_PBI_Cache.png){:class="img-responsive"}
