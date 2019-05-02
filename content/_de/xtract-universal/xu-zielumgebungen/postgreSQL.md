@@ -13,6 +13,6 @@ lang: de_DE
 
 In diesem Kapitel beschreiben wir das Laden der Daten in eine PostgreSQL-Zieldatenbank.
 
-![Exa-Extraction-Designer](/img/content/Exa-Extraction-Designer.jpg){:class="img-responsive"}
+![PostgreSQL](/img/content/xu/postgres_übersicht.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
