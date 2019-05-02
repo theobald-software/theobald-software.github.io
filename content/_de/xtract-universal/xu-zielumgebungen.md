@@ -27,6 +27,7 @@ Xtract Universal bietet die Möglichkeit, die aus SAP extrahierten Daten in vers
 - [Amazon Redshift](./xu-zielumgebungen/redshift) 
 - [SQL Server](./xu-zielumgebungen/microsoft-sql-server) 
 - [Teradata](./xu-zielumgebungen/teradata) 
+- [PostgreSQL[(./xu-zielumgebungen/postgres)
 
 **Business Intelligence / Analytics Tools:**
 - [Microstrategy](./xu-zielumgebungen/microstrategy)
