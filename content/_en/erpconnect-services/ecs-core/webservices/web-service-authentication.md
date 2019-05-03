@@ -4,7 +4,7 @@ layout: page
 title: Web service authentication
 description: Web service authentication
 product: erpconnect-services
-parent: webservice-designer
+parent: webservices
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

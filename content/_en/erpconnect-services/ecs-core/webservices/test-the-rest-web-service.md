@@ -4,7 +4,7 @@ layout: page
 title: Test the REST web service
 description: Test the REST web service
 product: erpconnect-services
-parent: webservice-designer
+parent: webservices
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
