@@ -23,13 +23,13 @@ PostgreSQL provides native support for using SSL connections to encrypt client/s
 **Windows Authentication**<br>
 Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server.
 
-Port****<br>
-port 5432 is selected by default
+**Port**<br>
+Port 5432 is selected by default
 
-**&lt;font color="#ffff00"&gt;-==- proudly presents
+**Username**
 Name of the database user.
 
-Password **Password**<br>
+**Password**<br>
 Password of the database user
 
 **Database**<br>
@@ -40,5 +40,3 @@ Click on the button to test the database connection.
 
 ![DESTINATION DETAILS](/img/content/xu/postgres_test_connection.png){:class="img-responsive"}
 
-
-Translated with www.DeepL.com/Translator
