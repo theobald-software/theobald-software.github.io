@@ -47,7 +47,7 @@ Um die Extraktion auszuführen, klicken Sie auf den Button *Run*. Im Fenster Run
 
 ![Exa-Run-Extraction-T001w](/img/content/xu/postgres_run_extraction.png){:class="img-responsive"}
 
-Im Designer klicken Sie auf Refresh, um sich den Status der Ausführung anzuschauen. In unserem Beispiel wurden 185 Datensätze in die Datenbank geladen.  
+Im Designer klicken Sie auf Refresh, um sich den Status der Ausführung anzuschauen. In unserem Beispiel wurden 239 Datensätze in die Datenbank geladen.  
 
 ![Exa-Designer-Status](/img/content/xu/postgres_xu_designer_overview.png){:class="img-responsive"}
 
