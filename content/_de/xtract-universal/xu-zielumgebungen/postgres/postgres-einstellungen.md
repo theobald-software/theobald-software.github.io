@@ -131,7 +131,7 @@ Unter anderem können Sie den Befehl *ExistsTable(tableName)* verwenden, um die 
 <summary>SQL-Skript</summary>
 {% highlight sql %}
 #{
-   iif
+   if
    (
       ExistsTable("Plants"),
       "TRUNCATE TABLE \"Plants\";",
