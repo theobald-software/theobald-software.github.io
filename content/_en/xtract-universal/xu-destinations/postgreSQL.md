@@ -9,6 +9,7 @@ childidentifier: postgres
 permalink: /:collection/:path
 weight: 14
 lang: en_GB
+
 ---
 
 In this chapter we describe how to load the data into a PostgreSQL target database.
