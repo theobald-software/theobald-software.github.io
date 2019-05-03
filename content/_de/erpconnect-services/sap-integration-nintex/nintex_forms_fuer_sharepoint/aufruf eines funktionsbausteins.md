@@ -11,10 +11,11 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bef_llen_von_dropdown_boxen_in_nintex_forms
 ---
 
-Auch der Aufruf von SAP Funktionsbausteinen und BAPIs in Nintex Forms wird über die JavaScript Bibliothek unterstützt.  
+Auch der Aufruf von SAP Funktionsbausteinen und BAPIs in Nintex Forms wird über die JavaScript-Bibliothek unterstützt.  
 
 Im vorliegenden Beispiel soll in einem Eingabefeld ein Kundenname eingegeben und die möglichen Treffer in einer Dropdownliste angezeigt werden. Wird ein Kundenstammdatz in der Dopdown-Liste selektiert, dann soll die Kundennummer in einem weiteren Feld angezeigt werden.
-Die Anfrage an das SAP-System zum Abruf der Kundendaten erfolgt hier über den Aufruf eines Funktionsbausteins (SD_RFC_CUSTOMER_GET).  
+Die Anfrage an das SAP-System zum Abruf der Kundendaten erfolgt hier über den Aufruf eines Funktionsbausteins (SD_RFC_CUSTOMER_GET). <br>
+  
 Führen Sie folgende Schritte zur Umsetzung des Beispiels aus:
 
 **Schritt 1: Textfelder definieren**
@@ -25,7 +26,7 @@ In unserer Nintex-Form benötigen wir drei Felder mit Bezeichnungen:
 2. Im zweiten Feld *Select Customer* vom Typ **Choice** werden die möglichen Treffer für den eingegebenen Kundenname in einer Dropdownliste ausgegeben und sind selektierbar.
 3. Im dritten Feld *Customer Number* vom Typ **Single Line Textbox** wird die Kundennummer angezeigt.
 
-Gehen Sie im Weiteren so vor wie im Beispiel [Befüllen von Dropdown-Boxen in Nintex-Forms (https://help.theobald-software.com/de/erpconnect-services/sap-integration-nintex/nintex_forms_fuer_sharepoint/befuellen_von_dropdown_boxen_in_nintex_forms)
+Gehen Sie im Weiteren so vor wie im Beispiel [Befüllen von Dropdown-Boxen in Nintex-Forms] (https://help.theobald-software.com/de/erpconnect-services/sap-integration-nintex/nintex_forms_fuer_sharepoint/befuellen_von_dropdown_boxen_in_nintex_forms)
 
 **Schritt 2: JavaScript-Code einfügen**
 
