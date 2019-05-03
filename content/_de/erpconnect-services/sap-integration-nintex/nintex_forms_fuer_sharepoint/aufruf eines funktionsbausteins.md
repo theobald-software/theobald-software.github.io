@@ -26,7 +26,7 @@ In unserer Nintex-Form benötigen wir drei Felder mit Bezeichnungen:
 2. Im zweiten Feld *Select Customer* vom Typ **Choice** werden die möglichen Treffer für den eingegebenen Kundenname in einer Dropdownliste ausgegeben und sind selektierbar.
 3. Im dritten Feld *Customer Number* vom Typ **Single Line Textbox** wird die Kundennummer angezeigt.
 
-Gehen Sie im Weiteren so vor wie im Beispiel [Befüllen von Dropdown-Boxen in Nintex-Forms] (https://help.theobald-software.com/de/erpconnect-services/sap-integration-nintex/nintex_forms_fuer_sharepoint/befuellen_von_dropdown_boxen_in_nintex_forms)
+Gehen Sie im Weiteren so vor wie im Beispiel [Befüllen von Dropdown-Boxen in Nintex-Forms](https://help.theobald-software.com/de/erpconnect-services/sap-integration-nintex/nintex_forms_fuer_sharepoint/befuellen_von_dropdown_boxen_in_nintex_forms)
 
 **Schritt 2: JavaScript-Code einfügen**
 
