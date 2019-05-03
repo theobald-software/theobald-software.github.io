@@ -7,7 +7,7 @@ product: xtract-universal
 parent: postgres
 permalink: /:collection/:path
 weight: 3
-lang: en_EN
+lang: en_GB
 ---
 
 When you click the **Destination** button, you can set extraction-specific settings for the destination.
