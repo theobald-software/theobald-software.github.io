@@ -14,7 +14,7 @@ To load data into this destination, you need the Open Source ADO.NET Data Provid
 
 This is already available in the setup of the Xtract Universal and is provided when the **XtractUniversalSetup.exe** is executed. 
 
-**ATTENTION** The following PostgreSQL versions are supported:
+**ATTENTION:** The following PostgreSQL versions are supported:
 
 - 11
 - 10
@@ -22,7 +22,7 @@ This is already available in the setup of the Xtract Universal and is provided w
 - 9.5
 - 9.4
 
-For further information on versioning, please refer to the official [website] (https://www.postgresql.org/support/versioning/).
+For further information on versioning, please refer to the official [website](https://www.postgresql.org/support/versioning/).
 
 
 
