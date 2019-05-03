@@ -27,6 +27,7 @@ Xtract Universal allows to extract data from SAP ERP and BW systems and to load 
 - [Amazon Redshift](./xu-destinations/amzon-redshift) 
 - [SQL Server](./xu-destinations/microsoft-sql-server) 
 - [Teradata](./xu-destinations/teradata) 
+- [Postgre SQL](./xu-destinations/postgres)
 
 **Business Intelligence / Analytics Tools:**<br>
 - [Microstrategy](./xu-destinations/microstrategy)
