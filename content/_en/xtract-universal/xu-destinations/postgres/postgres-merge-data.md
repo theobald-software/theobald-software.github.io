@@ -7,7 +7,7 @@ product: xtract-universal
 parent: postgres
 permalink: /:collection/:path
 weight: 5
-lang: en_EN
+lang: en_GB
 ---
 
 In this example we want to update existing records.<br>
