@@ -7,7 +7,7 @@ product: xtract-universal
 parent: postgres
 permalink: /:collection/:path
 weight: 4
-lang: en_EN
+lang: en_GB
 ---
 
 In this example we load an extraction into the PostgreSQL database.
