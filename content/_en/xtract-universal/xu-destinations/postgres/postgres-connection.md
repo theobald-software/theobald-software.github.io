@@ -8,6 +8,7 @@ parent: postgres
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+
 ---
 
 The following settings must be defined for the connection to the target database.
