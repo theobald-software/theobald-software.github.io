@@ -4,7 +4,7 @@ layout: page
 title: Create a new web service for ECS Core
 description: Create a new web service for ECS Core
 product: erpconnect-services
-parent: webservice-designer
+parent: webservices
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

@@ -4,7 +4,7 @@ layout: page
 title: Create OpenApi definitions
 description: Create OpenApi definitions
 product: erpconnect-services
-parent: webservice-designer
+parent: webservices
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

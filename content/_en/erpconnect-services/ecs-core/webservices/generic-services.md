@@ -4,7 +4,7 @@ layout: page
 title: Generic services
 description: Generic services
 product: erpconnect-services
-parent: webservice-designer
+parent: webservices
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
