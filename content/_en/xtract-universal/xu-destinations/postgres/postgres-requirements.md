@@ -7,7 +7,7 @@ product: xtract-universal
 parent: postgres
 permalink: /:collection/:path
 weight: 1
-lang: en_EN
+lang: en_GB
 ---
 
 To load data into this destination, you need the Open Source ADO.NET Data Provider [Npgsql.dll](https://www.postgresql.org/docs/11/external-interfaces.html).
