@@ -1,17 +1,16 @@
 ---
-ref: ecs-sin-nintex-forms-03
+ref: ecs-sin-nintex-forms-04
 layout: page
-title: Load data in dropdown boxes with automated API
-description: Load data in dropdown boxes with automated API
+title: Dropdown-boxes III (automated API)
+description: Dropdown-boxes III (automated API)
 product: erpconnect-services
 parent: nintex-forms
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=setting_values_in_dropdown_boxes
 ---
 
-For the example with the flexible data selection in cascading dropdown lists, we also provide a mostly automated script with a few lines of code.
+For the example with the flexible data selection in cascading dropdown-lists, we also provide a mostly automated script with a few lines of code.
 This makes it possible for users without JavaScript knowledge to implement such scenarios. 
  
 {% highlight javascript %}
@@ -56,9 +55,9 @@ The full signature can also be found [here]((https://static.theobald-software.co
 
 The script is a template for the following two use cases, which can be changed or adapted any time: 
 
-1. Search for a material number in SAP table MAKT and display the possible hits in the dropdown list. If you select a hit, the material number and the material description are displayed in two separate fields.
+1. Search for a material number in SAP table MAKT and display the possible hits in the dropdown-list. If you select a hit, the material number and the material description are displayed in two separate fields.
 
-2. Search for the customer number in SAP table KNA1 and display the possible hits in the dropdown list. If you select a hit, the customer number and the customer name are displayed in two separate fields.
+2. Search for the customer number in SAP table KNA1 and display the possible hits in the dropdown-list. If you select a hit, the customer number and the customer name are displayed in two separate fields.
 
 
 Carry out the following steps to implement the example in Nintex Forms: 

@@ -1,43 +1,40 @@
 ---
-ref: ecs-sin-nintex-forms-04
+ref: ecs-sin-nintex-forms-03
 layout: page
-title: Aufruf eines Funktionsbausteins
-description: Aufruf eines Funktionsbausteins
+title: Dropdown-boxes II (function calls)
+description: Dropdown-boxes II (function calls)
 product: erpconnect-services
-parent: nintex_forms_fuer_sharepoint
+parent: nintex-forms
 permalink: /:collection/:path
-weight: 4
-lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=bef_llen_von_dropdown_boxen_in_nintex_forms
+weight: 3
+lang: en_GB
 ---
 
-Auch der Aufruf von SAP Funktionsbausteinen und BAPIs in Nintex Forms wird über die JavaScript-Bibliothek unterstützt.  
+The JavaScript library also supports calling SAP function modules and BAPIs in Nintex Forms.  
 
-Im vorliegenden Beispiel soll in einem Eingabefeld ein Kundenname eingegeben und die möglichen Treffer in einer Dropdownliste angezeigt werden. Wird ein Kundenstammdatz in der Dopdown-Liste selektiert, dann soll die Kundennummer in einem weiteren Feld angezeigt werden.
-Die Anfrage an das SAP-System zum Abruf der Kundendaten erfolgt hier über den Aufruf eines Funktionsbausteins (SD_RFC_CUSTOMER_GET). <br>
-  
-Führen Sie folgende Schritte zur Umsetzung des Beispiels aus:
+In this example, a customer name is entered in an input field and the possible hits are displayed in a dropdown-list. If a customer master record is selected in the dopdown-list, the customer number is  displayed in a separate field.
+The request to the SAP system to retrieve the customer data is made by calling a function module (SD_RFC_CUSTOMER_GET). <br>
 
-**Schritt 1: Textfelder definieren**
+**Step 1: Define text fields**
 
-In unserer Nintex-Form benötigen wir drei Felder mit Bezeichnungen: 
+In the Nintex form we need three fields: 
 
-1. Das erste Feld *Customer Name* vom Typ **Single Line Textbox** ist das Eingabefeld und enthält den Kundenname.
-2. Im zweiten Feld *Select Customer* vom Typ **Choice** werden die möglichen Treffer für den eingegebenen Kundenname in einer Dropdownliste ausgegeben und sind selektierbar.
-3. Im dritten Feld *Customer Number* vom Typ **Single Line Textbox** wird die Kundennummer angezeigt.
+1. The first field *Customer Name* of type **Single Line Textbox** is the input field and contains the customer name.
+2. In the second field *Select Customer* of type **Choice**, the possible hits for the entered customer name are displayed in a drop-down list and can be selected.
+3. The third field *Customer Number* of type **Single Line Textbox** displays the customer number.
 
-Gehen Sie im Weiteren so vor wie im Beispiel [Befüllen von Dropdown-Boxen in Nintex-Forms](https://help.theobald-software.com/de/erpconnect-services/sap-integration-nintex/nintex_forms_fuer_sharepoint/befuellen_von_dropdown_boxen_in_nintex_forms)
+Proceed as shown in the previous example [Load data dropdown-boxes in Nintex Forms](https://help.theobald-software.com/en/erpconnect-services/sap-integration-nintex/nintex-forms/load-data-in-dropdown-boxes)
 
-**Schritt 2: JavaScript-Code einfügen**
+**Step 2: Insert JavaScript code**
 
-Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -> Advanced -> Custom JavaScript Includes* ein:
+Add a reference to our JavaScript library under *Form Settings -> Advanced -> Custom JavaScript Includes*:
 
 [http://static.theobald-software.com/theobald.ecs.micro/5.7.0/theobald.ecs.micro.js](http://static.theobald-software.com/theobald.ecs.micro/5.7.0/theobald.ecs.micro.js)
 
 
-Fügen Sie den JavaScript-Code unter *Form Settings -> Advanced -> Custom JavaScript* ein.
+Insert the JavaScript code under *Form Settings -> Advanced -> Custom JavaScript*.
 
-Im Code wird die Funktion *tEcs.executeXql* aufgerufen, um die Kundeninformationen mit dem SAP-Funktionsbaustein SD_RFC_CUSTOMER_GET zu lesen. Eingabeparamter ist das Feld NAME1:
+The function *tEcs.executeXql* is called in the code to read the customer information with the SAP function module SD_RFC_CUSTOMER_GET. The input parameter is the field NAME1:
 
 {% highlight javascript %}
 NWF$(document).ready(function () {
@@ -80,9 +77,7 @@ NWF$(document).ready(function () {
 
             domOptionString1parameter = '{0}',
             domOptionString = '{0} ({1})',
-
-            /* BUILD/PREPARE/CUSTOMIZE YOUR QUERY */
-            /*xqlString = "SELECT TOP 100 MATNR, MAKTX, MAKTG FROM MAKT WHERE (MATNR LIKE '%{0}%' OR MAKTX LIKE '%{0}%' OR MAKTG LIKE '%{0}%') AND (SPRAS = 'EN' OR SPRAS = 'DE')", */
+        
 
             /* DEFINE whether search queries should be send in UPPERCASE (if SAP has a field for case insensitive searches) */
             minChars = 3,
@@ -207,9 +202,7 @@ NWF$(document).ready(function () {
 {% endhighlight %}
 
 
-**Schritt 3: Die Nintex Form ausführen**
+**Step 3: Execute the Nintex form**
 
-Nun führen Sie die Form aus und geben Sie einen Kundennamen ein. Die Treffer zur Eingabe werden aus SAP gelesen und in der Dropdown Liste (Select Customer) angezeigt.  
-Wählt man einen Kunden aus der Liste aus, wird die Kundennummer im Feld *Customer Number* angezeigt. 
-
-
+Execute the form and enter a customer name. The hits for the entry are read from SAP and displayed in the dropdown list (Select Customer).  
+If you select a customer from the list, the customer number is displayed in the *Customer Number* field. 

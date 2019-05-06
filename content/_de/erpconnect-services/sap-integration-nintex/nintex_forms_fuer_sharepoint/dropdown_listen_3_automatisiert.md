@@ -1,12 +1,12 @@
 ---
-ref: ecs-sin-nintex-forms-03
+ref: ecs-sin-nintex-forms-04
 layout: page
-title: Dropdown-Boxen befüllen mit automatisierter API
-description: Dropdown-Boxen befüllen mit automatisierter API
+title: Dropdown-Listen III (automatisierte API)
+description: Dropdown-Listen III (automatisierte API)
 product: erpconnect-services
 parent: nintex_forms_fuer_sharepoint
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 ---
 

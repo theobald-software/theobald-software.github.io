@@ -1,19 +1,18 @@
 ---
 ref: ecs-sin-nintex-forms-02
 layout: page
-title: Befüllen von Dropdown-Boxen in Nintex-Forms
-description: Befüllen von Dropdown-Boxen in Nintex-Forms
+title: Befüllen von Dropdown-Listen in Nintex-Forms
+description: Befüllen von Dropdown-Listen in Nintex-Forms
 product: erpconnect-services
 parent: nintex_forms_fuer_sharepoint
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=bef_llen_von_dropdown_boxen_in_nintex_forms
 ---
 
 In bestimmten Integrationsszenarien kann es sinnvoll sein, SAP-Daten für eine flexible Datenselektion in kaskadierenden Dropdown-Listen zur Verfügung zu stellen. Auch dies ist mit JavaScript und ECS REST-Services in Nintex Forms möglich (vgl. vorheriges Beispiel).
 
-Im vorliegenden Beispiel soll in einem Eingabefeld eine SAP Materialnummer eingegeben und die möglichen Treffer in einer Dropdownliste angezeigt werden. Wird ein Material in der Dopdown-Liste selektiert, dann soll der Materialtext in einem weiteren Feld angezeigt werden. 
+Im vorliegenden Beispiel soll in einem Eingabefeld eine SAP Materialnummer eingegeben und die möglichen Treffer in einer Dropdown-Liste angezeigt werden. Wird ein Material in der Dopdown-Liste selektiert, dann soll der Materialtext in einem weiteren Feld angezeigt werden. 
 
 **Schritt 1: Textfelder definieren**
 
