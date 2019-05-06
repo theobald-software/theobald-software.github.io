@@ -8,7 +8,6 @@ parent: nintex-forms
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=setting_values_in_dropdown_boxes
 ---
 
 In some SAP integration scenarios it can be useful to provide a flexible data selection in cascading dropdown lists. This is also possible by integrating JavaScript and ECS REST-Services in Nintex Forms (compare this with the earlier example of SAP validation in Nintex Forms). 
