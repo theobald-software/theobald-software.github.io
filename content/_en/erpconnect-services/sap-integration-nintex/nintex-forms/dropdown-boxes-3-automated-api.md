@@ -17,7 +17,6 @@ This makes it possible for users without JavaScript knowledge to implement such 
 NWF$(document).ready(function () {
     theobald.ready(function () {
         theobald.$ = NWF$;
-
         tEcs.initializeLiveCombobox({
             controls: {
                 inputId: input1,
@@ -32,7 +31,6 @@ NWF$(document).ready(function () {
                 language: "EN"
             }
         });
-        
         tEcs.initializeLiveCombobox({
             controls: {
                 inputId: input2,
