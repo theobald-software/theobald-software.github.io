@@ -22,7 +22,7 @@ Name or IP of the database server and the port number.
 PostgreSQL provides native support for using SSL connections to encrypt client/server communication for increased security, see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
 **Windows Authentication**<br>
-Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server.
+Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
 
 **Port**<br>
 Port 5432 is selected by default
