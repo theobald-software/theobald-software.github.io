@@ -17,9 +17,9 @@ When you click the **Destination** button, you can set extraction-specific setti
 **Table Name**
 
 determines the name of the target table. You have the following options:
-- Same as name of SAP object**: Copy the name of the SAP object
+- **Same as name of SAP object**: Copy the name of the SAP object
 - **Same as name of extraction**: Accept the name of the extraction and
-- Custom: Here you can define your own name.  
+- **Custom**: Here you can define your own name.  
 
 **Column Name Style** 
 
@@ -27,11 +27,11 @@ Defines the column name. The following options are available:
 
 ![Spec-Settings-Makt-ColumnName](/img/content/Ex-Spec-Settings-Makt-ColumnName.jpg){:class="img-responsive"}
 
-**Code**: The technical column name from SAP is used as the column name, for example, MAKTX.<br>.
-**CodeAndText**: The technical name and the description of the column from SAP are linked with an underscore and used as column names, for example, MAKTX_Material Description (Short Text).<br>.
-**TextAndCode**: The description and the technical name of the SAP column are combined with an underscore to form the column name, for example, Material Description (Short Text)_MAKTX.
+- **Code**: The technical column name from SAP is used as the column name, for example, MAKTX.
+- **CodeAndText**: The technical name and the description of the column from SAP are linked with an underscore and used as column names, for example, MAKTX_Material Description (Short Text).
+- **TextAndCode**: The description and the technical name of the SAP column are combined with an underscore to form the column name, for example, Material Description (Short Text)_MAKTX.
 
-Date conversion **Date conversion**
+**Date conversion**
 
 **Convert date strings**<br>
 Converts the character-type SAP date (YYYYMMDD, for example, 19900101) to a formatted date (YYYY-MM-DD, for example, 1990-01-01). In the data target, the SAP date does not have a string data type but a real date type.
