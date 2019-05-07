@@ -18,7 +18,7 @@ There are several restrictions when using the SAP standard:
 
 If these restrictions hinder your work, please use this setp-by-step guide to install the Z-function in your SAP system.
 
-To install the standard function module Z_XTRACT_IS_TABLE, please refer to [Table Restrictions](/../sap-customizing/table-restrictions). 
+To install the standard function module Z_XTRACT_IS_TABLE, please refer to [Table Restrictions](../sap-customizing/table-restrictions). 
 After installation check setting "Use Custom Function" to enable the Z-function module. 
 
 Alternatively, you can also use the following function modules delivered by SAP, if available on your SAP system:
