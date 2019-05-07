@@ -1,7 +1,7 @@
 ---
 ref: xu-postgres-02
 layout: page
-title: connection
+title: Connection
 description: connection
 product: xtract-universal
 parent: postgres

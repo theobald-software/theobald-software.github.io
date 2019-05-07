@@ -19,10 +19,11 @@ Folgende Einstellungen müssen für die Verbindung zur Zieldatenbank definiert w
 Name bzw. IP des Datenbankservers und die Portnummer.
 
 **Require SSL encryption**<br>
-PostgreSQL bietet native Unterstützung für die Verwendung von SSL-Verbindungen zur Verschlüsselung der Client/Server-Kommunikation für mehr Sicherheit, siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
+PostgreSQL bietet native Unterstützung für die Verwendung von SSL-Verbindungen zur Verschlüsselung der Client/Server-Kommunikation für mehr Sicherheit, 
+siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
 **Windows Authentication**<br>
-Verwendet den Service Account, unter dem der XU Service läuft, um sich am PostgreSQL Server zu authentisieren.
+Verwendet den Service Account, unter dem der XU Service läuft, um sich am PostgreSQL Server zu authentisieren, siehe auch [Client Authentication](https://www.postgresql.org/docs/11/client-authentication.html).
 
 **Port**<br>
 standardmäßig wird der Port 5432 ausgewählt
