@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-14
+ref: xu-destinations-6
 layout: page
 title: PostgreSQL
 description: PostgreSQL
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: postgres
 permalink: /:collection/:path
-weight: 14
+weight: 6
 lang: en_GB
 ---
 
