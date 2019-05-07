@@ -130,7 +130,6 @@ Among other things, you can use the *ExistsTable(tableName)* command to verify t
 <details>
 <summary>SQL Script</summary>
 {% highlight sql %}
-#{
    if
    (
       ExistsTable("Plants"),
@@ -208,9 +207,7 @@ Among other things, you can use the *ExistsTable(tableName)* command to verify t
          );
       "
    )
-}#
-
-{% end highlight %}
+{% endhighlight %}
 </details>
 
 **Transaction style**

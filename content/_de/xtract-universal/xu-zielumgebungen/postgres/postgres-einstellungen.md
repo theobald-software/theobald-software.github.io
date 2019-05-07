@@ -130,7 +130,6 @@ Unter anderem können Sie den Befehl *ExistsTable(tableName)* verwenden, um die 
 <details>
 <summary>SQL-Skript</summary>
 {% highlight sql %}
-#{
    if
    (
       ExistsTable("Plants"),
@@ -208,8 +207,6 @@ Unter anderem können Sie den Befehl *ExistsTable(tableName)* verwenden, um die 
          );
       "
    )
-}#
-
 {% endhighlight %}
 </details>
 
