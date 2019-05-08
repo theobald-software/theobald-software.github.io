@@ -18,11 +18,9 @@ There are several restrictions when using the SAP standard:
 
 If these restrictions hinder your work, please use this setp-by-step guide to install the Z-function in your SAP system.
 
-To install the standard function module Z_XTRACT_IS_TABLE, please refer to [Table Restrictions]() . 
+To install the standard function module Z_XTRACT_IS_TABLE, please refer to [Table Restrictions](../sap-customizing/table-restrictions). 
 After installation check setting "Use Custom Function" to enable the Z-function module. 
 
-For the high performance mass data extraction from SAP tables we have developed the new custom function *Z_XTRACT_IS_TABLE_COMPRESSION*.
+Alternatively, you can also use the following function modules delivered by SAP, if available on your SAP system:
+* /SAPDS/RFC_READ_TABLE, /SAPDS/RFC_READ_TABLE2, /BODS/RFC_READ_TABLE, /BODS/RFC_READ_TABLE2
 
-To install the new function module Z_XTRACT_IS_TABLE_COMPRESSION, please refer to [Custom function module for table compression](../sap-customizing/custom-function-module-for-table-compression). 
-
-We recommend to use this function module, which is the successor of the custom function *Z_XTRACT_IS_TABLE*.

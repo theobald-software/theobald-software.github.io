@@ -21,7 +21,6 @@ Um diese Einschränkungen zu umgehen, gibt es die Möglichkeit, einen Z-Funktion
 Die folgende Schritt-für-Schritt-Anleitung zeigt, wie es gemacht wird: [Umgehung der Einschränkungen bei der Tabellenextraktion](../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion). 
 Nach erfolgreicher Installation können Sie in den Settings das Kennzeichen „User Custom Function“ setzen. Damit nutzt Xtract IS den neuen Baustein und umgeht die oben beschriebenen Einschränkungen.
 
+Alternativ funktionieren die folgenden, SAP-eigenen Bausteine, sofern diese auf Ihrem SAP-System vorhanden sind:
 
-Für hochperformante Massendaten-Extraktion von SAP-Tabellen haben wir den neuen Z-Funktionsbaustein*Z_XTRACT_IS_TABLE_COMPRESSION* entwickelt. <br>
-Wir empfehen die Nutzung des neuen Z-Funktionsbausteins, welcher gleichzeitig der Nachfolger von *Z_XTRACT_IS_TABLE* ist.<br>
-Um den Z-Funktionsbaustein zu installieren, folgen Sie bitte den Anweisungen im Kapitel [Funktionsbaustein für Tabellen-Komprimierung](../sap-customizing/funktionsbaustein-fuer-table-komprimierung).
+* /SAPDS/RFC_READ_TABLE, /SAPDS/RFC_READ_TABLE2, /BODS/RFC_READ_TABLE, /BODS/RFC_READ_TABLE2

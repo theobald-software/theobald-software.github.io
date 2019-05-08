@@ -15,7 +15,7 @@ OData extractions can be executed in the SAP user context by providing the SAP u
 
 To do so, please open the General Settings of the extraction and select 
 - the option *Disable Buffer* in the *Misc.* tab, and 
-- the option Require *SAP Credentials* in the [Security](../../../security-xu2/extraction-security) tab.
+- the option Require *SAP Credentials* in the Security tab.
 
 ![Require-SAP-Credentials](/img/content/Require-SAP-Credentials.jpg){:class="img-responsive"}
 
