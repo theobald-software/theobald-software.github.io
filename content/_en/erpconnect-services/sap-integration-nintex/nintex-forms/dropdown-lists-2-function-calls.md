@@ -23,7 +23,7 @@ In the Nintex form we need three fields:
 2. In the second field *Select Customer* of type **Choice**, the possible hits for the entered customer name are displayed in a drop-down list and can be selected.
 3. The third field *Customer Number* of type **Single Line Textbox** displays the customer number.
 
-Proceed as shown in the previous example [Load data dropdown-lists](https://help.theobald-software.com/en/erpconnect-services/sap-integration-nintex/nintex-forms/load-data-in-dropdown-lists)
+Proceed as shown in the previous example [Load data in dropdown-lists](https://help.theobald-software.com/en/erpconnect-services/sap-integration-nintex/nintex-forms/load-data-in-dropdown-lists)
 
 **Step 2: Insert JavaScript code**
 
