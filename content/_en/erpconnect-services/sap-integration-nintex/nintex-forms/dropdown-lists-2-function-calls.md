@@ -1,8 +1,8 @@
 ---
 ref: ecs-sin-nintex-forms-03
 layout: page
-title: Dropdown-boxes II (function calls)
-description: Dropdown-boxes II (function calls)
+title: Dropdown-lists II (function calls)
+description: Dropdown-lists II (function calls)
 product: erpconnect-services
 parent: nintex-forms
 permalink: /:collection/:path
@@ -23,7 +23,7 @@ In the Nintex form we need three fields:
 2. In the second field *Select Customer* of type **Choice**, the possible hits for the entered customer name are displayed in a drop-down list and can be selected.
 3. The third field *Customer Number* of type **Single Line Textbox** displays the customer number.
 
-Proceed as shown in the previous example [Load data dropdown-boxes in Nintex Forms](https://help.theobald-software.com/en/erpconnect-services/sap-integration-nintex/nintex-forms/load-data-in-dropdown-boxes)
+Proceed as shown in the previous example [Load data dropdown-lists](https://help.theobald-software.com/en/erpconnect-services/sap-integration-nintex/nintex-forms/load-data-in-dropdown-lists)
 
 **Step 2: Insert JavaScript code**
 
@@ -34,7 +34,7 @@ Add a reference to our JavaScript library under *Form Settings -> Advanced -> Cu
 
 Insert the JavaScript code under *Form Settings -> Advanced -> Custom JavaScript*.
 
-The function *tEcs.executeXql* is called in the code to read the customer information with the SAP function module SD_RFC_CUSTOMER_GET. The input parameter is the field NAME1:
+The function *tEcs.executeFunction* is called in the code to read the customer information with the SAP function module SD_RFC_CUSTOMER_GET. The input parameter is the field NAME1, the return is processed using the table CUSTOMER_T:
 
 {% highlight javascript %}
 NWF$(document).ready(function () {

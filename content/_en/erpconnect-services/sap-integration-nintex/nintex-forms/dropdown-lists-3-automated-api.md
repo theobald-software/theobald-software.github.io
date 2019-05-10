@@ -1,8 +1,8 @@
 ---
 ref: ecs-sin-nintex-forms-04
 layout: page
-title: Dropdown-boxes III (automated API)
-description: Dropdown-boxes III (automated API)
+title: Dropdown-lists III (automated API)
+description: Dropdown-lists III (automated API)
 product: erpconnect-services
 parent: nintex-forms
 permalink: /:collection/:path
@@ -17,6 +17,7 @@ This makes it possible for users without JavaScript knowledge to implement such 
 NWF$(document).ready(function () {
     theobald.ready(function () {
         theobald.$ = NWF$;
+
         tEcs.initializeLiveCombobox({
             controls: {
                 inputId: input1,
@@ -31,6 +32,7 @@ NWF$(document).ready(function () {
                 language: "EN"
             }
         });
+        
         tEcs.initializeLiveCombobox({
             controls: {
                 inputId: input2,

@@ -12,7 +12,7 @@ lang: de_DE
 
 In bestimmten Integrationsszenarien kann es sinnvoll sein, SAP-Daten für eine flexible Datenselektion in kaskadierenden Dropdown-Listen zur Verfügung zu stellen. Auch dies ist mit JavaScript und ECS REST-Services in Nintex Forms möglich (vgl. vorheriges Beispiel).
 
-Im vorliegenden Beispiel soll in einem Eingabefeld eine SAP Materialnummer eingegeben und die möglichen Treffer in einer Dropdown-Liste angezeigt werden. Wird ein Material in der Dopdown-Liste selektiert, dann soll der Materialtext in einem weiteren Feld angezeigt werden. 
+Im vorliegenden Beispiel soll in einem Eingabefeld eine SAP Materialnummer eingegeben und die möglichen Treffer in einer Dropdown-Liste angezeigt werden. Wird ein Material in der Dropdown-Liste selektiert, dann soll der Materialtext in einem weiteren Feld angezeigt werden. 
 
 **Schritt 1: Textfelder definieren**
 

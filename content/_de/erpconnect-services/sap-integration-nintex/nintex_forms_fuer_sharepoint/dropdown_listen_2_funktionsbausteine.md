@@ -25,7 +25,7 @@ In unserer Nintex-Form benötigen wir drei Felder mit Bezeichnungen:
 2. Im zweiten Feld *Select Customer* vom Typ **Choice** werden die möglichen Treffer für den eingegebenen Kundenname in einer Dropdownliste ausgegeben und sind selektierbar.
 3. Im dritten Feld *Customer Number* vom Typ **Single Line Textbox** wird die Kundennummer angezeigt.
 
-Gehen Sie im Weiteren so vor wie im Beispiel [Befüllen von Dropdown-Boxen in Nintex-Forms](https://help.theobald-software.com/de/erpconnect-services/sap-integration-nintex/nintex_forms_fuer_sharepoint/befuellen_von_dropdown_boxen_in_nintex_forms)
+Gehen Sie im Weiteren so vor wie im Beispiel [Befüllen von Dropdown-Listen in Nintex-Forms](https://help.theobald-software.com/de/erpconnect-services/sap-integration-nintex/nintex_forms_fuer_sharepoint/befuellen_von_dropdown_listen_in_nintex_forms)
 
 **Schritt 2: JavaScript-Code einfügen**
 
@@ -36,7 +36,7 @@ Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -
 
 Fügen Sie den JavaScript-Code unter *Form Settings -> Advanced -> Custom JavaScript* ein.
 
-Im Code wird die Funktion *tEcs.executeXql* aufgerufen, um die Kundeninformationen mit dem SAP-Funktionsbaustein SD_RFC_CUSTOMER_GET zu lesen. Eingabeparamter ist das Feld NAME1:
+Im Code wird die Funktion *tEcs.executeFunction* aufgerufen, um die Kundeninformationen mit dem SAP-Funktionsbaustein SD_RFC_CUSTOMER_GET zu lesen. Eingabeparamter ist das Feld NAME1, die Rückgabe erfolgt über die Tabelle CUSTOMER_T:
 
 {% highlight javascript %}
 NWF$(document).ready(function () {
