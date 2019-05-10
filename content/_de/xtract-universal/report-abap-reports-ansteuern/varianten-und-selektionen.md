@@ -24,13 +24,18 @@ Bei den Paremetern kann es sich um Einzelwerte, einen Intervall oder um eine kom
 Bei einer komplexen Selektion springen Sie über den Edit-Link in ein neues Fenster ab. <br>
 Natürlich können in die Textfelder auch Variablen eingetragen werden (wie im Bild zu sehen).<br>
 
-Bitte fügen Sie eine @ diret vor den Wert, um es als variable zu markieren.
+Bitte fügen Sie ein @ direkt vor den Wert, um es als Variable zu markieren.
 
 Das folgende Bild zeigt eine komplexe Selektion:
 
 ![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
 
-Das Feld Sign hat 2 Optionen: Include - Exclude. Mit dieser Funktion können Sie jene Werte wählen, die Sie für das Ergebnis ein- bzw. ausschließen wollen. 
+Das Feld Sign hat zwei Optionen: 
+
+- Include 
+- Exclude 
+
+Mit dieser Funktion können Sie jene Werte wählen, die Sie für das Ergebnis ein- bzw. ausschließen wollen. 
 
 Das Feld Option enthält den logischen Operator für die Bedingung: <br>
 
