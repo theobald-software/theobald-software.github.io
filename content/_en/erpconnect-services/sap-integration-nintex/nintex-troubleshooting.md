@@ -3,8 +3,8 @@ ref: ecs-sap-integration-nintex-03
 layout: page
 title: Nintex Workflow troubleshooting
 description: Nintex Workflow troubleshooting
+product: erpconnect-services
 parent: sap-integration-nintex
-childidentifier: nintex-integration-sharepoint
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

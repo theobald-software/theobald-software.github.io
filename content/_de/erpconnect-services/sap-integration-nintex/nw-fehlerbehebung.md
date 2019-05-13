@@ -1,5 +1,5 @@
 ---
-ref: ecs-sin-nintex-integration-sharepoint-03
+ref: ecs-sap-integration-nintex-03
 layout: page
 title: Nintex Workflow Fehlerbehebung
 description: Nintex Workflow Fehlerbehebung
