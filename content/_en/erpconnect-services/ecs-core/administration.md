@@ -9,7 +9,6 @@ childidentifier: administration
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=administration
 ---
 
 In this Chapter we will discuss the administration of ECS Core.<br>

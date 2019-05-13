@@ -9,7 +9,6 @@ childidentifier: webservices
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=web_services
 ---
 
 It is possible to create web services with the WebService Designer and to deploy it on a ECSCore machine (locally installed or in the web).

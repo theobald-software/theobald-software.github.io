@@ -9,7 +9,6 @@ childidentifier: ecs-core-developing
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=developing-with-ecs-core
 ---
 
 Using **ECS Core** developers have an ideal framework for programming applications in SharePoint Online/ Office 365. 

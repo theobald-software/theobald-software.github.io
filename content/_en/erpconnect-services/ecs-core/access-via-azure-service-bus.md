@@ -9,7 +9,6 @@ childidentifier: access-via-azure-service-bus
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=access_via_azure_service_bus
 ---
 
 Azure Service Bus is a generic, cloud based messaging system to connect for example applications, services and devices - wherever they are.  
