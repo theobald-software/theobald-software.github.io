@@ -1,5 +1,5 @@
 ---
-ref: ecs-webservice-designer-06
+ref: ecs-webservice-designer-05
 layout: page
 title: Weitere Activities
 description: Weitere Activities
@@ -7,9 +7,8 @@ product: erpconnect-services
 parent: webservice-designer
 childidentifier: weitere_activities
 permalink: /:collection/:path
-weight: 6
+weight: 5
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=weitere_activities
 ---
 
 Im WebService Designer stehen in der grafischen Designeroberfläche neben den ausführlich erläuterten Activities *Execute Function* und *Execute Table* noch weitere Activities für besondere Anforderungen zur Verfügung. 
