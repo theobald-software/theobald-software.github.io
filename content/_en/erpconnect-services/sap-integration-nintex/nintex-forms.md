@@ -1,5 +1,5 @@
 ---
-ref: ecs-sap-integration-nintex-04
+ref: ecs-sap-integration-nintex-02
 layout: page
 title: Nintex Forms
 description: Nintex Forms
@@ -7,9 +7,8 @@ product: erpconnect-services
 parent: sap-integration-nintex
 childidentifier: nintex-forms
 permalink: /:collection/:path
-weight: 4
+weight: 2
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=nintex_forms_for_sharepoint
 ---
 
 ERPConnect Services also supports direct SAP integration for Nintex Forms. In Nintex Forms the adding of JavaSript code is possible which enables the calling of the ECS Runtime JavaScript library and to use it for accessing SAP data.

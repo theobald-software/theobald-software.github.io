@@ -1,14 +1,13 @@
 ---
-ref: ecs-sin-nintex-integration-sharepoint-06
+ref: ecs-sin-nintex-integration-sharepoint-03
 layout: page
 title: Nintex Workflow Fehlerbehebung
 description: Nintex Workflow Fehlerbehebung
 product: erpconnect-services
 parent: sap-integration-nintex
 permalink: /:collection/:path
-weight: 5
+weight: 3
 lang: de_DE
-old_url: /ERPConnect-Services-DE/default.aspx?pageid=nw-fehlerbehebung
 ---
 
 **Fehler bei der Installation der Nintex Workflow Custom Actions**

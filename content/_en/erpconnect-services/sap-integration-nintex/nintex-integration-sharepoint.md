@@ -9,7 +9,6 @@ childidentifier: nintex-integration-sharepoint
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=nintex-integration-for-sharepoint
 ---
 
 This section provides different scenarios of how Nintex Workflow can work together with ERPConnect Services for an SAP-SharePoint integration.
