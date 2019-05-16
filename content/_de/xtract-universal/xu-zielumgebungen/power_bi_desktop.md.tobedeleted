@@ -4,7 +4,7 @@ layout: page
 title: Power BI (Desktop)
 description: Power BI (Desktop)
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-zielumgebungen_tobedeleted
 childidentifier: power_bi_desktop
 permalink: /:collection/:path
 weight: 17
