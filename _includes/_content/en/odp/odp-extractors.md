@@ -12,8 +12,12 @@ Extractors can provide the following data types:
 
 There are standard delta extraction methods available for master data and transaction data. 
 
+Select the context and type to search for an Extractor. </br>
+</br>
 ![Datasource Sales Document Item Data (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
 
+**Load live preview** 
+shows a live preview of the data </br>
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
 
-
+When the delta load is available for the source object in the SAP source system, the Delta Update option will be available in the ODP component. 
