@@ -1,10 +1,10 @@
-**Operation Data Provider**
+**Operation Data Provider**</br>
 shows the name of the source object 
 
-**Context**
+**Context**</br>
 shows the ODP provider context 
 
-**Type**
+**Type**</br>
 shows the data type of the source object
 
 **Update Mode** 
@@ -16,11 +16,11 @@ On delta initialization you have the options to extract data or not
 -- Auto-sync subscription: tbd 
 
 When the delta load is available for the source object in the SAP source system, the Delta Update option will be available in the ODP component. 
-
 </br>
+
 ![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
 
-**Show Subscriptions**
+**Show Subscriptions**</br>
 Click on Show Subscriptions to find information about the subscriber. That includes: 
 - Subscriber Name
 - Last request timestamp
@@ -29,7 +29,7 @@ To delete the subscription click on the Delete icon on the right side.
 </br>
 ![ODP Subscriber](/img/content/odp/odp-settings-02.png){:class="img-responsive"}
 
-**Filtering**
+**Filtering**</br>
 In the main windows, you can click next to each field on Edit to define a filter.
 In the square brackets to the left of the field name, e.g. [1], you can see the number of defined filters.
 </br>
