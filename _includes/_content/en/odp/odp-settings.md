@@ -1,5 +1,3 @@
-
-
 **Operation Data Provider**
 shows the name of the source object 
 
@@ -9,7 +7,6 @@ shows the ODP provider context
 **Type**
 shows the data type of the source object
 
-
 **Update Mode** 
 - Full Update: extracts the data in full mode
 - Delta Update: extracts the data in delta (incremental) mode 
@@ -17,6 +14,9 @@ On delta initialization you have the options to extract data or not
 -- Extract data 
 -- Extract no data 
 -- Auto-sync subscription: tbd 
+
+When the delta load is available for the source object in the SAP source system, the Delta Update option will be available in the ODP component. 
+
 </br>
 ![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
 

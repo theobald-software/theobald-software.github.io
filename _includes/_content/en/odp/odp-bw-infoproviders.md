@@ -24,3 +24,5 @@ Select the context and type to search for a BW InfoProvider. </br>
 
 Click on OK, then you will see the available fields and the description. Click on Load live preview to see the data preview.
 ![ODP BW Preview](/img/content/odp/odp-component-bw-nwdemo-02-preview.png){:class="img-responsive"}
+
+When the delta load is available for the source object in the SAP source system, the Delta Update option will be available in the ODP component. 
