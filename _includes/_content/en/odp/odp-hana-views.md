@@ -7,8 +7,8 @@ With the ODP context for SAP HANA (HANA) the followings HANA views types are ava
 
 Select the context and type to search for a HANA view. </br>
 </br>
-![Datasource Sales Document Item Data (2LIS_11_VAITM)](/img/content/odp/odp-component-hanaview-salesdocumentitem-01.png){:class="img-responsive"}
+![ODP HANA View](/img/content/odp/odp-component-hanaview-salesdocumentitem-01.png){:class="img-responsive"}
 
 Click on OK, then you will see the available fields and the description. Click on Load live preview to see the data preview.
 </br>
-![Datasource Preview](/img/content/odp-component-hanaview-salesdocumentitem-02-preview.png){:class="img-responsive"}
+![ODP HANA View Preview](/img/content/odp/odp-component-hanaview-salesdocumentitem-02-preview.png){:class="img-responsive"}
