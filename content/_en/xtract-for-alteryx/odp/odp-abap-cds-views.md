@@ -1,8 +1,8 @@
 ---
 ref: xfa-odp-abap-cds
 layout: page
-title: ODP ABAP CDS Views
-description: ODP ABAP CDS Views
+title: ABAP CDS Views
+description: ABAP CDS Views
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path

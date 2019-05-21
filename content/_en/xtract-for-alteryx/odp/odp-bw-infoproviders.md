@@ -1,8 +1,8 @@
 ---
 ref: xfa-odp-bw
 layout: page
-title: ODP BW InfoProviders
-description: ODP BW InfoProviders
+title: BW InfoProviders
+description: BW InfoProviders
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path

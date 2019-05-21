@@ -1,8 +1,8 @@
 ---
 ref: xfa-odp-extractor
 layout: page
-title: ODP Extractors
-description: ODP Extractors and Datasources
+title: Extractors
+description: Extractors and Datasources
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
