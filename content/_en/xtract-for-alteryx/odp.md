@@ -1,8 +1,8 @@
 ---
 ref: xtract-for-alteryx-odp
 layout: page
-title: ODP component
-description: ODP
+title: ODP
+description: Operational Data Provisioning (ODP)
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: odp
