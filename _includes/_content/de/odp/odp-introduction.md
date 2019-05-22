@@ -24,7 +24,7 @@ Abhängig vom angeschlossenen SAP-Quellsystem sehen Sie den verfügbaren Provide
 Nachfolgend finden Sie den in unserem Demo ECC-System verfügbaren ODP-Kontext. 
 <br/>
 ![ODP Provider-Kontext aus einem ERP-System](/img/content/odp/odp-component-context-erp.png){:class="img-responsive"}
-
+<br/>
 Nachfolgend finden Sie den in unserem Demo BW/4 HANA-System verfügbaren ODP-Kontext. 
 <br/>
 ![ODP Provider-Kontext aus einem BW/4 HANA-System](/img/content/odp/odp-component-context-bw.png){:class="img-responsive"}

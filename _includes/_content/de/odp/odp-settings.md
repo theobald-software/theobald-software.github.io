@@ -16,7 +16,7 @@ Bei der Delta-Initialisierung haben Sie die Möglichkeit, Daten zu extrahieren o
 -- Auto-sync subscription: steht für automatische Synchronisierung des Abonnement 
 
 Wenn das Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option Delta Update in der ODP-Komponente verfügbar. 
-<br/><br/>
+<br/>
 ![ODP-Einstellungen](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
 <br/>
 
@@ -31,5 +31,5 @@ Um das Abonnement zu löschen, klicken Sie auf das Symbol Löschen auf der recht
 
 **Filterung**<br/>
 In den Hauptfenstern können Sie neben jedem Feld auf Bearbeiten klicken, um einen Filter zu definieren.
-In den eckigen Klammern links neben dem Feldnamen, z.B.[1], sehen Sie die Anzahl der definierten Filter. <br/><br/>
+In den eckigen Klammern links neben dem Feldnamen, z.B.[1], sehen Sie die Anzahl der definierten Filter. <br/>
 ![ODP ABAP CDS View Filter](/img/content/odp/odp-component-cds-costcenter-03-filter.png){:class="img-responsive"}

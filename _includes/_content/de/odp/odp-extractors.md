@@ -13,10 +13,9 @@ Extraktoren können die folgenden Datentypen bereitstellen:
 Für Stamm- und Bewegungsdaten stehen standardmäßig Deltaextraktionsmethoden zur Verfügung. 
 
 Wählen Sie den Kontext und den Typ, um nach einem Extraktor zu suchen. <br/>
-<br/>
 ![Datenquelle Verkaufsbeleg Positionsdaten (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
 <br/>
 Live-Vorschau laden zeigt eine Live-Vorschau der Daten <br/>
 ![Vorschau der Datenquelle](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
-
+<br/>
 Wenn das Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option Delta Update in der ODP-Komponente verfügbar. 
