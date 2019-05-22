@@ -4,7 +4,7 @@ CDS wird mit einer SQL-basierten Datendefinitionssprache (DDL) definiert, die St
 
 Für jede im DDL-Quellcode definierte ABAP-CDS-Entität wird im ABAP Dictionary eine SQL-Sicht generiert. Wie bei Views, die mit Hilfe von Dictionary-Werkzeugen (Transaktion SE11) erstellt wurden, können ABAP-CDS-Entitäten in ABAP über Open SQL-Anweisungen angesprochen werden. 
 
-CDS ist bei SAP zum Eckpfeiler der Anwendungsentwicklung geworden. Ein wichtiges Beispiel dafür ist S/4HANA, das mit CDS sowohl die wichtigsten Transaktionsfunktionen als auch analytische Inhalte für das Reporting bereitstellt. In BW/4 HANA können ABAP-basierte CDS-Views zur Datenextraktion verwendet werden.  
+CDS ist bei SAP zum Eckpfeiler der Anwendungsentwicklung geworden. Ein wichtiges Beispiel dafür ist S/4 HANA, das mit CDS sowohl die wichtigsten Transaktionsfunktionen als auch analytische Inhalte für das Reporting bereitstellt. In BW/4 HANA können ABAP-basierte CDS-Views zur Datenextraktion verwendet werden.  
 
 Zwei mögliche Anwendungsfälle sind:
 - Direkter Zugriff auf eine CDS-Sicht aus BW/4 HANA und 

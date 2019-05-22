@@ -1,5 +1,5 @@
 Das Operational Data Provisioning Framework ermöglicht es Ihnen, Daten aus den Infoprovidern in Ihren Quellsystemen BW und BW/4 HANA zu extrahieren. 
-Die verfügbaren InfoProvider-Typen sind abhängig von Ihrem BW und BW/4-HANA Quellsystem.
+Die verfügbaren InfoProvider-Typen sind abhängig von Ihrem BW und BW/4 HANA Quellsystem.
 
 Die BW∕4 HANA Systeme bieten die folgenden InfoProvider über den ODP BW-Kontext an:
 - DataStore-Objekte (erweitert) (mit Delta-Extraktion)
