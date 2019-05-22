@@ -12,7 +12,7 @@ Es ermöglicht verschiedenen Verbraucher  (ODP Consumer) Daten zu abonnieren und
 Das Operational data provisioning unterstützt auch Delta-Mechanismen (inkrementelles Laden). 
 Mit SAP BW/4HANA wird Operational Data Provisioning (ODP) zur zentralen Infrastruktur für die Datenextraktion und -replikation aus SAP ABAP-Anwendungen in ein SAP BW/4 HANA Data Warehouse. 
 <br/>
-![ODP-Komponente](/img/Inhalt/Andip/odp/odp-Komponente-general.png){:class="img-responsive"}
+![ODP-Komponente](/img/content/odp/odp-component-general.png){:class="img-responsive"}
 <br/>
 ODP bietet Datentransfer von den folgenden Providern (auch Provider Context genannt): 
 - SAP DataSources (Extraktoren) 
@@ -23,9 +23,9 @@ ODP bietet Datentransfer von den folgenden Providern (auch Provider Context gena
 Abhängig vom angeschlossenen SAP-Quellsystem sehen Sie den verfügbaren Provider-Kontext. 
 Nachfolgend finden Sie den in unserem Demo ECC-System verfügbaren ODP-Kontext. 
 <br/>
-![ODP Provider-Kontext aus einem ERP-System](/img/content/odp/odp/odp-component-context-erp.png){:class="img-responsive"}
+![ODP Provider-Kontext aus einem ERP-System](/img/content/odp/odp-component-context-erp.png){:class="img-responsive"}
 
 Nachfolgend finden Sie den in unserem Demo BW/4 HANA-System verfügbaren ODP-Kontext. 
 <br/>
-![ODP Provider-Kontext aus einem BW/4 HANA-System](/img/content/odp/odp/odp-component-context-bw.png){:class="img-responsive"}
+![ODP Provider-Kontext aus einem BW/4 HANA-System](/img/content/odp/odp-component-context-bw.png){:class="img-responsive"}
 

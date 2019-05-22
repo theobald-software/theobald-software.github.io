@@ -17,7 +17,7 @@ Bei der Delta-Initialisierung haben Sie die Möglichkeit, Daten zu extrahieren o
 
 Wenn das Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option Delta Update in der ODP-Komponente verfügbar. 
 <br/><br/>
-![ODP-Einstellungen](/img/inhaltlich/odp/odp/odp-Einstellungen-01.png){:class="img-responsive"}
+![ODP-Einstellungen](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
 <br/>
 
 **Show Subscriptions** <br/>
@@ -27,10 +27,9 @@ Klicken Sie auf Abonnements anzeigen, um Informationen über den Abonnenten zu e
 - Erstellungszeitstempel 
 Um das Abonnement zu löschen, klicken Sie auf das Symbol Löschen auf der rechten Seite. <br/><br/>
 
-![ODP-Abonnent](/img/content/odp/odp/odp-settings-02.png){:class="img-responsive"}
+![ODP-Abonnent](/img/content/odp/odp-settings-02.png){:class="img-responsive"}
 
 **Filterung**<br/>
 In den Hauptfenstern können Sie neben jedem Feld auf Bearbeiten klicken, um einen Filter zu definieren.
 In den eckigen Klammern links neben dem Feldnamen, z.B.[1], sehen Sie die Anzahl der definierten Filter. <br/><br/>
-![ODP ABAP CDS View Filter](/img/content/odp/odp/odp-component-cds-costcenter-03-filter.png){:class="img-responsive"}
-
+![ODP ABAP CDS View Filter](/img/content/odp/odp-component-cds-costcenter-03-filter.png){:class="img-responsive"}

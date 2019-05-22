@@ -19,9 +19,9 @@ Zusätzlich bieten BW-Systeme (abhängig von ihrer Version) die folgenden InfoPr
 
 
 Wählen Sie den Kontext und Typ aus, um nach einem BW-InfoProvider zu suchen. <br/>
-![ODP BW Suche](/img/inhaltlich/odp/odp/odp-Komponente-bw-nwdemo-01.png){:class="img-reagierend"}
+![ODP BW Suche](/img/content/odp/odp-component-bw-nwdemo-01.png){:class="img-reagierend"}
 <br/>
 Klicken Sie auf OK, dann sehen Sie die verfügbaren Felder und die Beschreibung. Klicken Sie auf Live-Vorschau laden, um die Datenvorschau zu sehen.<br/>
-![ODP BW Vorschau](/img/Inhalt/odp/odp/odp-Komponente-w-nw-nwdemo-02-preview.png){:class="img-responsive"}
+![ODP BW Vorschau](/img/content/odp/odp-component-bw-nw-nwdemo-02-preview.png){:class="img-responsive"}
 
 Wenn das Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option Delta Update in der ODP-Komponente verfügbar. 

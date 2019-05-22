@@ -12,14 +12,14 @@ Zwei mögliche Anwendungsfälle sind:
 
 CDS Views unterstützen die Full- und Delta-Extraktion. 
 
-**Ersatz von BW-Extraktoren durch CDS-Sichten in S/4 HANA**
+**Ersatz von BW-Extraktoren durch CDS-Sichten in S/4 HANA** <br/>
 Meistens können traditionelle BW-Extraktoren verwendet werden, um Daten aus einem S/4 HANA-System zu extrahieren. Aufgrund von Vereinfachungen im S/4 HANA-System sind einige Extraktoren veraltet oder können nicht mehr in gleicher Weise verwendet werden. Für diese Extraktoren kann SAP CDS-Views liefern, die extraktionsrelevant sind (über die analytischen Annotationen).
 
 Wählen Sie den Kontext und Typ aus, um nach einer ABAP-CDS-Sicht zu suchen. <br/>
-![ODP ABAP CDS View](/img/content/odp/odp/odp-component-cds-costcenter-01.png){:class="img-responsive"}
+![ODP ABAP CDS View](/img/content/odp/odp-component-cds-costcenter-01.png){:class="img-responsive"}
 <br/>
 Klicken Sie auf OK, dann sehen Sie die verfügbaren Felder und die Beschreibung. Klicken Sie auf Live-Vorschau laden, um die Datenvorschau zu sehen.
 <br/>
-![ODP ABAP CDS View Vorschau](/img/content/odp/odp/odp-component-cds-costcenter-02-preview.png){:class="img-responsive"}
+![ODP ABAP CDS View Vorschau](/img/content/odp/odp-component-cds-costcenter-02-preview.png){:class="img-responsive"}
 <br/>
 Wenn das Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option Delta Update in der ODP-Komponente verfügbar. 
