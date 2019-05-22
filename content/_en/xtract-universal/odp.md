@@ -10,6 +10,8 @@ permalink: /:collection/:path
 weight: 19
 lang: en_GB
 ---
+**This component is still in beta release**
+<br/> 
 
 {% include _content/en/odp/odp-introduction.md %} 
 
