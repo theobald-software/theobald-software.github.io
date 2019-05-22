@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-02
+ref: xtract-for-alteryx-99
 layout: page
 title: SAP Customizing
 description: SAP Customizing
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: sap-customizing
 permalink: /:collection/:path
-weight: 4
+weight: 99
 lang: de_DE
 ---
 
