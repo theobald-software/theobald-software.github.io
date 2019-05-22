@@ -23,6 +23,14 @@ Wenn der Wert 0 ist, dann wird die komplette Ergebnismenge geholt.<br>
 Es kann z.B. beim Testen sinnvoll sein, hier etwas anderes als 0 (z.B. 1000) anzugeben, um erstmal mit wenig Daten zu testen.<br>
 Wenn Sie den Wert ändern, denken Sie dran ihn wieder auf 0 zu setzen.<br>
 
+
+**Automatic Slicing Dimension**<br/>
+Ermöglicht die Auswahl einer Dimension für ein automatisches Slicing.
+Slicing steht für das Ausschneiden von Scheiben aus dem Datenwürfel durch die Selektion eines einzelnen Wertes einer Dimension.
+Beim automatischen Slicing wird über jeden einzelnen Wert (Ausprägung) der gewählten Slicing-Dimension (Merkmal) iteriert und für jeden dieser Werte das Abfrageergebnis aus BW extrahiert.
+Diese Option ermöglicht die Extraktion größerer Datenmengen (mehrere Millionen Datensätze) aus BW, welche bisher aufgrund von BW-seitigen Fehlern (wie Speicherüberlauf und Timeout) nicht möglich war.
+Wählen Sie eine geeignete Dimension fürs Slicing, bei größeren Datenmengen selektieren Sie eine Dimension mit einer granularen Ausprägung (z.B. Periode oder Woche).
+
 **Column Name Style**<br>
 definiert die Logik für die Benneung der Spalten: 
 - Code bennent die Spalten mit dem technischen Namen des Originalelements 
