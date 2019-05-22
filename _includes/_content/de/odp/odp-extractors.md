@@ -14,7 +14,7 @@ Für Stamm- und Bewegungsdaten stehen standardmäßig Deltaextraktionsmethoden z
 
 Wählen Sie den Kontext und den Typ, um nach einem Extraktor zu suchen. <br/>
 <br/>
-![Datenquelle Verkaufsbeleg Positionsdaten (2LIS_11_VAITM)](/img/content/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
+![Datenquelle Verkaufsbeleg Positionsdaten (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
 <br/>
 Live-Vorschau laden zeigt eine Live-Vorschau der Daten <br/>
 ![Vorschau der Datenquelle](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}

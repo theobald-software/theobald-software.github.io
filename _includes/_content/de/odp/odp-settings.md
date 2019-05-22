@@ -25,7 +25,7 @@ Klicken Sie auf Abonnements anzeigen, um Informationen über den Abonnenten zu e
 - Name des Abonnenten
 - Zeitstempel der letzten Anforderung
 - Erstellungszeitstempel 
-Um das Abonnement zu löschen, klicken Sie auf das Symbol Löschen auf der rechten Seite. <br/><br/>
+Um das Abonnement zu löschen, klicken Sie auf das Symbol Löschen auf der rechten Seite. <br/>
 
 ![ODP-Abonnent](/img/content/odp/odp-settings-02.png){:class="img-responsive"}
 
