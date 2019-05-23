@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: odp
 permalink: /:collection/:path
-weight: 16
+weight: 12
 lang: en_GB
 ---
 **This component is still in beta release**

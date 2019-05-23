@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: bw-loader
 permalink: /:collection/:path
-weight: 14
+weight: 15
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=bw-loader
 ---

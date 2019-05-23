@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: open-hub-service-ohs
 permalink: /:collection/:path
-weight: 13
+weight: 14
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=open-hub-service
 ---

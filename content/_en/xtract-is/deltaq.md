@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: deltaq
 permalink: /:collection/:path
-weight: 12
+weight: 13
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=deltaq
 ---
