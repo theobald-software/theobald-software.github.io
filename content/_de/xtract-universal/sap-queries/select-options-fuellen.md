@@ -4,7 +4,7 @@ layout: page
 title: Select Options füllen
 description: Select Options füllen
 product: xtract-universal
-parent: sqp-queries
+parent: sap-queries
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

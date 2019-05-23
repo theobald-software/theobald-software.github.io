@@ -4,7 +4,7 @@ layout: page
 title: Varianten anwenden
 description: Varianten anwenden
 product: xtract-universal
-parent: sqp-queries
+parent: sap-queries
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

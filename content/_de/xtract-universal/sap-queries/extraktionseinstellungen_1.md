@@ -4,7 +4,7 @@ layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
 product: xtract-universal
-parent: sqp-queries
+parent: sap-queries
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

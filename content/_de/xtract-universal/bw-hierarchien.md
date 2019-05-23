@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-14
+ref: xtract-universal-hier
 layout: page
 title: BW Hierarchien
 description: BW Hierarchien
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: bw-hierarchien
 permalink: /:collection/:path
-weight: 13
+weight: 14
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-hierarchien
 ---

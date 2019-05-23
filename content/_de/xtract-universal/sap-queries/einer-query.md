@@ -4,7 +4,7 @@ layout: page
 title: Definieren einer Query
 description: Definieren einer Query
 product: xtract-universal
-parent: sqp-queries
+parent: sap-queries
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

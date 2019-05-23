@@ -5,7 +5,7 @@ title: SAP Queries
 description: SAP Queries
 product: xtract-universal
 parent: xtract-universal
-childidentifier: sqp-queries
+childidentifier: sap-queries
 permalink: /:collection/:path
 weight: 10
 lang: de_DE

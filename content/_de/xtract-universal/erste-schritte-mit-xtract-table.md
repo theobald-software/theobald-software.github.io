@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-02
+ref: xtract-universal-table
 layout: page
 title: Erste Schritte mit Table
 description: Erste Schritte mit Table

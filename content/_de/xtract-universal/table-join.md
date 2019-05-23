@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-10
+ref: xtract-universal-join
 layout: page
 title: Table Join
 description: Table Join
