@@ -4,7 +4,7 @@ layout: page
 title: Voraussetzungen
 description: Voraussetzungen
 product: xtract-universal
-parent: postgreSQL
+parent: postgres
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
