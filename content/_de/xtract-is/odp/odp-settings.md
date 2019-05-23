@@ -3,7 +3,7 @@ ref: xis-odp-settings
 layout: page
 title: ODP Einstellungen
 description: ODP Einstellungen
-product: xtract-xis
+product: xtract-is
 parent: odp
 permalink: /:collection/:path
 weight: 5
