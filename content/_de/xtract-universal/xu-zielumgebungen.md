@@ -14,32 +14,34 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
 
 **Achtung**: Für die Nutzung einiger Zielumgebungen (wie z.B. Oracle, DB2, Teradata, Exasol usw.) ist die Installation des entsprechenden Treibers bzw. Bibliothek notwendig. 
               
-Xtract Universal bietet die Möglichkeit, die aus SAP extrahierten Daten in verschiedene Zielumgebungen, sogenannte Destinations zu schreiben. Folgende Datenziele werden u.a. unterstützt:
+Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (z.B. ERP, S/4 HANA, BW and BW/4 HANA) zu extrahierten und in verschiedene Zielumgebungen, sogenannte Destinations zu schreiben. Folgende Datenziele werden u.a. unterstützt:
 
-**Database / Datawarehouse:**          
+**Datenbanken / Datawarehouses:**          
+- [Amazon Redshift](./xu-zielumgebungen/redshift) 
 - [Azure DWH](./xu-zielumgebungen/azure_dwh) 
-- [SAP HANA](./xu-zielumgebungen/hana) 
-- [IBM DB2](./xu-zielumgebungen/ibm-db2) 
+- [Azure SQL Database](./xu-zielumgebungen/microsoft-sql-server) 
 - [EXASolution](./xu-zielumgebungen/exasol) 
 - [HP Vertica](./xu-zielumgebungen/vertica) 
+- [IBM DB2](./xu-zielumgebungen/ibm-db2) 
 - [MySQL](./xu-zielumgebungen/mysql) 
 - [Oracle](./xu-zielumgebungen/oracle) 
-- [Amazon Redshift](./xu-zielumgebungen/redshift) 
+- [PostgreSQL](./xu-zielumgebungen/postgreSQL)
+- [SAP HANA](./xu-zielumgebungen/hana) 
 - [SQL Server](./xu-zielumgebungen/microsoft-sql-server) 
 - [Teradata](./xu-zielumgebungen/teradata) 
-- [PostgreSQL](./xu-zielumgebungen/postgreSQL)
 
-**Business Intelligence / Analytics Tools:**
+**Business Intelligence / Analytics / ETL:**
+- [Alteryx](./xu-zielumgebungen/alteryx-de) 
+- [Alteryx Connect](./xu-zielumgebungen/alteryx_connect) 
 - [Microstrategy](./xu-zielumgebungen/microstrategy)
 - [Power BI connector (Cloud/Desktop)](./xu-zielumgebungen/Power-BI-Connector-(beta)) 
 - [Power BI (Cloud)](./xu-zielumgebungen/powerbi_cloud) 
-- [Power BI Desktop using OData, Power Pivot & Excel](./xu-zielumgebungen/power_bi_desktop) 
 - [Tableau](./xu-zielumgebungen/tableau) 
 - [QlikSense and QlikView](./xu-zielumgebungen/qlik)  
-- [Alteryx](./xu-zielumgebungen/alteryx-de) 
 
 **Cloud Speicher:**
 - [Amazon AWS S3](./xu-zielumgebungen/amazon_aws_s3)
+- [Azure Blob Storage](./xu-destinations/azure_blob_storage) 
 
 Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-Programm bzw. Scheduler aufgerufen werden. 
 
@@ -48,8 +50,8 @@ Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-P
 - [Sharepoint](./xu-zielumgebungen/sharepoint) 
 
 **Generische Destinations:**
-- [CSV (via HTTP)](./xu-zielumgebungen/csv-via-http) 
-- [OData](./xu-zielumgebungen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
+- [CSV Webservice](./xu-zielumgebungen/csv-via-http) 
+- [OData Webservice](./xu-zielumgebungen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
 - [Flat File - CSV](./xu-zielumgebungen/zielumgebungen) (Comma-seperated values)
             
 **Pull- und Push-Destinationen**
@@ -61,10 +63,11 @@ Eine Extraktion mit  Pull-Destination unterstützt das Durchreichen (pass-throug
 Xtract Universal übersetzt die Anforderung in eine Query für das SAP-Quellsystem, extrahiert die Daten direkt aus dem SAP-Quellsystem und liefert sie an den Konsumenten.
 
 Dazu zählen folgende Zielumgebungen: 
-- CSV (via HTTP)
-- OData Atom  
 - Alteryx
+- CSV Webservice 
 - Qlik
+- Power BI connector
+- OData Webservice 
 
 Sofern die Zielumgebung http-Datenkomprimierung via gzip unterstützt, sendet Xtract Universal die Daten als gzip komprimierten http stream.
 
@@ -72,6 +75,5 @@ Sofern die Zielumgebung http-Datenkomprimierung via gzip unterstützt, sendet Xt
 
 Extraktionen mit Push-Destinationen liefern die Daten proaktiv in die Zielumgebung. Hier wird der Extraktionsprozess in Xtract Universal gestartet, z.B. durch einen Scheduler.<br>
 Eine Extraktion mit Push-Destinationen extrahiert die Daten aus dem SAP-Quellsystem und lädt die Daten in ein Datenziel, welche dann weiter verarbeitet werden können. Beispielsweise können die Daten dann transformiert und ggf. in einer für Analytische Queries optimierten Form abgelegt werden.
-
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
