@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal_tmp
 childidentifier: odp
 permalink: /:collection/:path
-weight: 19
+weight: 15
 lang: en_GB
 ---
 **This component is still in beta release**
