@@ -1,10 +1,10 @@
 ---
-ref: xtract-universal-odp
+ref: board-connector-odp
 layout: page
 title: ODP
 description: Operational Data Provisioning (ODP)
-product: xtract-universal
-parent: xtract-universal_tmp
+product: board-connector
+parent: board-connector_tmp
 childidentifier: odp
 permalink: /:collection/:path
 weight: 15

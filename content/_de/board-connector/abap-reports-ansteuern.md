@@ -1,5 +1,5 @@
 ---
-ref: board-connector-15
+ref: board-connector-report
 layout: page
 title: Report - ABAP-Reports ansteuern
 description: Report - ABAP-Reports ansteuern
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: abap-reports-ansteuern
 permalink: /:collection/:path
-weight: 14
+weight: 12
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=abap-reports-ansteuern
 ---

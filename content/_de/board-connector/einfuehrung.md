@@ -1,5 +1,5 @@
 ---
-ref: board-connector-01
+ref: board-connector-einf
 layout: page
 title: Einführung
 description: Einführung
