@@ -1,5 +1,5 @@
 ---
-ref: board-connector-10
+ref: board-connector-bapi
 layout: page
 title: BAPIs and Function Modules
 description: BAPIs and Function Modules

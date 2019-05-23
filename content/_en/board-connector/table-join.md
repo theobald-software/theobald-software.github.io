@@ -1,4 +1,5 @@
 ---
+ref: board-connector-join
 layout: page
 title: Table Join
 description: Table Join
@@ -6,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: table-join
 permalink: /:collection/:path
-weight: 8
+weight: 9
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=tablejoin
 ---

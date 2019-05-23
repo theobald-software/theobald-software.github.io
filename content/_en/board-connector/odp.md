@@ -1,13 +1,13 @@
 ---
-ref: xtract-is-16
+ref: board-connector-odp
 layout: page
-title: Xtract IS ODP
-description: ODP
-product: xtract-is
-parent: xtract-is
+title: ODP
+description: Operational Data Provisioning (ODP)
+product: board-connector
+parent: board-connector_tmp
 childidentifier: odp
 permalink: /:collection/:path
-weight: 12
+weight: 15
 lang: en_GB
 ---
 **This component is still in beta release**

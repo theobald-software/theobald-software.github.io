@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-odp
 layout: page
-title: ODP
+title: Xtract IS ODP
 description: Operational Data Provisioning (ODP)
 product: xtract-is
 parent: xtract-is
