@@ -43,8 +43,7 @@ The Xtract Universal Power BI custom connector supports *Power BI Desktop* and t
 | Power BI Report Server |         -        |     X    |
 
 
-
-
+![Power-BI-Connector-](/img/content/xu/PowerBI_Connector_Architecture_SSO.png){:class="img-responsive"}
 
 
 
