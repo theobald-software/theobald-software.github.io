@@ -36,12 +36,10 @@ Xtract Universal bietet die Möglichkeit, die aus SAP extrahierten Daten in vers
 - [Power BI Desktop using OData, Power Pivot & Excel](./xu-zielumgebungen/power_bi_desktop) 
 - [Tableau](./xu-zielumgebungen/tableau) 
 - [QlikSense and QlikView](./xu-zielumgebungen/qlik)  
+- [Alteryx](./xu-zielumgebungen/alteryx-de) 
 
 **Cloud Speicher:**
 - [Amazon AWS S3](./xu-zielumgebungen/amazon_aws_s3)
-
-**Analytics & ETL Tools:**
-- [Alteryx](./xu-zielumgebungen/alteryx-de) 
 
 Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-Programm bzw. Scheduler aufgerufen werden. 
 
