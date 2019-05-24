@@ -1,4 +1,5 @@
 ### Installation and Configuration on SAP
+
 | Component  | SAP Release       | Requirements to the SAP system                                                |
 |------------|-------------------|-------------------------------------------------------------------------------|
 | Table      | Rel. above 4.0B   | For most tasks, the installation of a Z-module is necessary, but not for all. |
@@ -12,5 +13,5 @@
 | ODP        | Rel. 7.0 or above   | none                                                                        |
 | DeltaQ     | Rel. above 4.6A   | customizing                                                                   |
 | OHS        | Rel. above BW 3.5 | customizing                                                                   |
-
+<br/>
 For Information about the Installation of the custom function modules and the SAP customizing please check the section **SAP Customizing**.
