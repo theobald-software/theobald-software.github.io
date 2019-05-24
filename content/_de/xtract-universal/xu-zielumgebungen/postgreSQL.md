@@ -5,7 +5,7 @@ title: PostgreSQL
 description: PostgreSQL
 product: xtract-universal
 parent: xu-zielumgebungen
-childidentifier: postgres
+childidentifier: postgreSQL
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
