@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal_tmp
 childidentifier: odp
 permalink: /:collection/:path
-weight: 15
+weight: 12
 lang: de_DE
 ---
 

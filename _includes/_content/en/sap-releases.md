@@ -1,7 +1,7 @@
 ### SAP Releases
 
 All communication with SAP is performed via the RFC protocol. That means, the integration occurs at SAP application server level. 
-Therefore, the database used by the SAP system is irrelevant - all databases (including HANA) are supported.
+Therefore, the database used by the SAP system is irrelevant. SAP ABAP Systems on any Database (including HANA) are supported.
 This also means, that the operating system of the SAP system is irrelevant - all operating systems are supported.
 SAP Systems running on Big Endian and Little Endian hardware are supported.
 
