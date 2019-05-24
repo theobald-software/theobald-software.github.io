@@ -1,4 +1,3 @@
-## SAP Systems and Releases 
 ### Supported SAP Systems and Releases
 All communication with SAP is performed via the RFC protocol. All SAP ABAP based systems, that provides RFC Connectivity are supported.
 The integration occurs at SAP application server level. Therefore, the database used by the SAP system is irrelevant. SAP ABAP Systems on any Database (including HANA) are supported. This also means, that the operating system of the SAP system is irrelevant - all operating systems are supported.
