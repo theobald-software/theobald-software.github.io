@@ -8,9 +8,9 @@
 | Query      | Rel. above 4.0B   | none                                                                          |
 | Report     | Rel. above 4.0B   | Installation of a custom function module is necessary.                        |
 | BW Cube & InfoProvider   | Rel. above BW 3.1 | none                                                            |
-| BW Query   | Rel. above BW 3.1 | none. Set the option: "Allow External Access to this Query"                                         |
+| BW Query   | Rel. above BW 3.1 | none. Set the option: "Allow External Access to this Query"                   |
 | Hierarchy  | Rel. above BW 3.1 | none                                                                          |
-| ODP        | SAP_BASIS >= 730, BW >= 7,3X   | none                                                                        |
+| ODP        | SAP_BASIS >= 730, BW >= 7,3X   | none                                                             |
 | DeltaQ     | Rel. above 4.6A   | customizing                                                                   |
 | OHS        | Rel. above BW 3.5 | customizing                                                                   |
 <br/>
