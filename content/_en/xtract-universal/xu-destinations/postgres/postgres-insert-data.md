@@ -4,7 +4,7 @@ layout: page
 title: Insert Data
 description: Insert Data
 product: xtract-universal
-parent: postgres
+parent: postgreSQL
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
