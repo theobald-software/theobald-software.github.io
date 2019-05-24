@@ -4,7 +4,7 @@ layout: page
 title: Merge Data
 description: merge Data
 product: xtract-universal
-parent: postgres
+parent: postgreSQL
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
