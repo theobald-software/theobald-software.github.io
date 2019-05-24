@@ -1,4 +1,4 @@
-### Other Applications and Frameworks	
+## Other Applications and Frameworks	
 - .NET Framework 4.6.1 or higher. You can get it [here](https://www.microsoft.com/en-US/download/details.aspx?id=49982)
 
 ## Hardware Requirements
