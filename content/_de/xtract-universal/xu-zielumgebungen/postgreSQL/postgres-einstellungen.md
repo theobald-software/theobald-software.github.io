@@ -4,7 +4,7 @@ layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-universal
-parent: postgres
+parent: postgreSQL
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

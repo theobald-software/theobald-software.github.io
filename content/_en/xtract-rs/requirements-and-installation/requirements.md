@@ -11,8 +11,7 @@ lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=requirements
 ---
 
-**SQL Server**
- 	
+### SQL Server
 - SQL Server 2005 (Standard, Professional or Enterprise)
 - SQL Server 2008
 - SQL Server 2008 R2
@@ -23,47 +22,21 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=requirements
 - SQL Server Reporting Services
 - Power BI Report Server
 
-**SAP Releases**
- 	
-- SAP R/3 Version 4.0B and later versions or SAP ECC.
-- SAP BW Version 3.1 and later.
+{% include _content/en/requirements/sap-requirements-xtract.md %}
+{% include _content/en/requirements/operating-systems.md %}
 
-| Component | SAP Release       | Requirements to the SAP system                                                    |
-|-----------|-------------------|-----------------------------------------------------------------------------------|
-| Table     | Rel.above 4.0B    | For most tasks, the installation of a Z-function module is necessary, but not for all. |
-| Query     | Rel. above 4.0B   | Nothing.                                                                          |
-| BAPI      | Rel. above 4.0B   | Nothing.                                                                          |
-| Report    | Rel. above 4.0B   | [Installation of a Z-module is necessary](../sap-customizing/install-report-custom-function-module)                                       |
-| BW Cube   | Rel. above BW 3.1 | Nothing.                                                                          |
-| Hierarchy | Rel. above BW 3.1 | Nothing.                                                                          |
-                                                              |
-
-{% include _content/en/operating-systems.md %}
- 	
-**Other Applications and Frameworks**
- 	
+### Other Applications and Frameworks
 - Visual C++ 2005 Runtime. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=14431).
 - .NET Framework 3.0 or higher. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=21).
-- Librfc32.dll if no SAP GUI is installed. A downloadlink you will find [here](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/54/9/useful-links).
+- Librfc32.dll if no SAP GUI is installed. 
 
-**Memory**
- 	
-- 2 GB minimum, depending on data volume, more may be required.
+### Hardware Requirements
+## Memory
+2 GB minimum, depending on data volume, more may be required.
 
-**Disk space**
- 	
-- For the installation 30 MB total required to install.
+## Disk space
+For the installation 30 MB total required to install.
 
-**32/64-Bit Environment**
- 	
-- The product can be installed on 32-Bit and 64-Bit operating systems.
+## 32/64-Bit Environment
+The product can be installed on 32-Bit and 64-Bit operating systems.
 
-**Security Settings**
- 	
-- Custom authentication.
-- SAP authentication: SSO (Single Sign On) or SAP credentials.
-- SAP system or dialog user with appropriate [authority objects](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
-
-**Network Settings**
- 	
-- Port 33nn has to be opened where nn = System Number of the SAP system.

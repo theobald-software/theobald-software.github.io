@@ -4,7 +4,7 @@ layout: page
 title: Daten einfügen
 description: Daten einfügen
 product: xtract-universal
-parent: postgres
+parent: postgreSQL
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
