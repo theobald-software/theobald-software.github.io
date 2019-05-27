@@ -13,7 +13,7 @@ shows the data type of the source object
 On delta initialization you have the options to extract data or not
 -- Extract data 
 -- Extract no data 
--- Auto-sync subscription: tbd 
+-- Auto-sync subscription: This option allows to delete the existing subscription and create a new one if required. Each extraction has an internal ID, which is part of the subscriber. If you then change the filter of an extraction after the delta init, this option will automatically delete the existing subscription and create a new one. This is only done if the error "Illegal change in selection parameters" comes from the SAP system.  
 
 When the delta load is available for the source object in the SAP source system, the Delta Update option will be available in the ODP component. 
 <br/><br/>
