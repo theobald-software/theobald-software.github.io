@@ -11,4 +11,4 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=ausfuehrung
 ---
 
-{% include _content/de/bapis/ausfuehrung.md %} 
+{% include _content/de/bapi/ausfuehrung.md %} 
