@@ -34,4 +34,4 @@ With this setting shortened titles for the web service parameters will be used. 
 **Add "ServiceApplication" parameter to WebServices**<br>
 This setting will add the parameter *Custom Service Application*  to the OpenAPI definition which enables you to select the service application later in the consumer app (i.e. Nintex Workflow Cloud). Otherwise the service application defined in the WebService Designer is used (default if not). 
  
-The import and use of OpenAPI definitions in a consumer app are described [here](../integration-with-office-365/integration-with-microsoft-flow/import-the-openapi-definition-to-flow) for Microsoft Flow and [here](../../sap-integration-nintex/nintex-workflow-cloud-nwc/import-the-openapi-definition-to-nwc) for Nintex Workflow Cloud. There might be more applications where the import of such definitions is supported. 
+The import and use of OpenAPI definitions in a consumer app are described [here](https://help.theobald-software.com/en/erpconnect-services/ecs-core/integration-with-office-365/integration-with-microsoft-flow/import-the-openapi-definition-to-flow) for Microsoft Flow. 
