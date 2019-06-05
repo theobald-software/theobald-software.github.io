@@ -49,8 +49,6 @@ In our Nintex Form we require two controls:
 For SOAP web service calls a so called SOAP envelope has to be created. The request body must be in the following format for this example:
 
 ```
-<details>
-<summary>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.theobald-software.com/ERPConnectServices/WebServices">
 
 <soapenv:Header/>
@@ -68,10 +66,10 @@ For SOAP web service calls a so called SOAP envelope has to be created. The requ
 </soapenv:Body>
 
 </soapenv:Envelope> 
-</summary>
-</details>
+
 ```
 
+Don't forget to map list field *Customer Name* as an import parameter to the request body. 
 
 ![nintex-forms-webrequest-04](/img/content/nintex-forms-webrequest-04.jpg){:class="img-responsive"}
 
@@ -99,6 +97,7 @@ For a more detailed explanation of how the SOAPAction header is composed look at
 
 You can test the web request at first with the *Run now* button. Take care that the request body is typed correctly, there might be harmful line breaks, blanks, etc.
 When it works correctly in the preview, save the entries and publish the form. You can open and test the form by creating a new item in the list. 
+
 
 ![nintex-forms-js-dropdown-09](/img/content/nintex-forms-webrequest-gif.gif){:class="img-responsive"} 
 
