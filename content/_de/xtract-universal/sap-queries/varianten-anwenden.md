@@ -10,4 +10,6 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=varianten-anwenden
 ---
-{% _includes/_content/de/sap-queries/varianten-anwenden.md %}
+{% include _content/de/sap-queries/varianten-anwenden.md %}
+
+
