@@ -11,5 +11,5 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=select-options-fuellen
 ---
 
-{% include_content/de/sap-queries/select-options-fuellen.md %}
+{% include _content/de/sap-queries/select-options-fuellen.md %}
 
