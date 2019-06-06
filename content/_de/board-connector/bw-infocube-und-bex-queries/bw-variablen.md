@@ -1,12 +1,12 @@
 ---
-ref: bc-bw-infocubes-and-bex-queries-02
+ref: bc-bw-infocubes-and-bex-queries-03
 layout: page
 title: Variablen
 description: Variablen
 product: board-connector
 parent: bw-infocube-und-bex-queries
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-variablen
 ---
