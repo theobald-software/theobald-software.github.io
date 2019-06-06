@@ -14,9 +14,9 @@ In some SAP integration scenarios it can be useful to provide a flexible data se
 
 In the present example an SAP material number should be entered in an input field in Nintex Forms and all possible return values for this material number should be listed in a dropdown box. When the desired material is selected in the dropdown box the material long text is supposed to be displayed in another field.  
 
-**Step 1: Create a SharePoint custom list***
+**Step 1: Create a SharePoint custom list**
 
-The first step is to create a SharePoint custom list, where the form should be placed upon. The list needs only one field *Material* of type *Single line of text*.  
+The first step is to create a SharePoint custom list, where the form is placed upon. One or two list fields (i.e. *Material*, *Material Number*) of type *Single line of text* can optionally be created.  
 After creating the list open the Nintex Forms designer for that list.
 
 **Step 2: Define the form controls**

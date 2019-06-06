@@ -16,16 +16,17 @@ In the following example a web service to read SAP customer data is called and t
 **Step 1: Create a web service**
 
 The first step would be the creation of a SOAP web service with the WebService Designer provided with ERPConnect Services. For detailed information on how the WebService Designer works and application examples, see the [following](https://help.theobald-software.com/en/erpconnect-services/ecs/webservice-designer) section in the OnlineHelp. <br>
+
 In this example one single web service operation is created where function module SD_RFC_CUSTOMER_GET is called. This remote enabled standard function module extracts customer data from customer master data table KNA1 and allows to search for customer names or numbers.<br>    
 We use field NAME1 as input filter value and create a corresponding input parameter.<br> 
-As output parameter we use the table CUSTOMER_T from which we return only three fields: Customer Number (KUNNR), Customer Name (NAME1), City (ORT01)    
+As output parameter we use the table CUSTOMER_T from which we return only three fields: Customer Number (KUNNR), Customer Name (NAME1) and City (ORT01)    
 
 Deploy the web service to the SharePoint server after the successful configuration.
 
 **Step 2: Create a SharePoint custom list**
 
-The second step is to create a SharePoint custom list, with the following two fields of type *Single line of text*.  
-1. Customer name
+The second step is to create a SharePoint custom list, with two fields of type *Single line of text*.  
+1. Customer Name
 2. Customer
 
 **Step 3: Define the forms controls**
@@ -84,7 +85,7 @@ For a more detailed explanation of how the SOAP envelop is composed look at the 
 - Enter the XPath expression for the value to be retrieved and to be displayed. In our example it is *//*[local-name()='NAME1']* for both fields.
 - Enter a custom header for SOAPAction in the *Advanced* section:
 
-Name: SOAPAction
+Name: SOAPAction <br> 
 Value: http://www.theobald-software.com/ERPConnectServices/WebServices/ISAPCustomerWebservice/GetSAPCustomers 
 
 ![nintex-forms-webrequest-05](/img/content/nintex-forms-webrequest-05.jpg){:class="img-responsive"}
