@@ -51,7 +51,6 @@ In unserer Nintex-Form benötigen wir zwei Controls:
 Für SOAP-Webservice-Aufrufe muss ein sogenannter SOAP envelope erstellt werden. Für dieses Beispiel muss der Request Body im folgenden Format vorliegen:
 
 ```
-
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.theobald-software.com/ERPConnectServices/WebServices">
 <soapenv:Header/>
 <soapenv:Body>
@@ -61,7 +60,6 @@ Für SOAP-Webservice-Aufrufe muss ein sogenannter SOAP envelope erstellt werden.
 </web:GetSAPCustomers>
 </soapenv:Body>
 </soapenv:Envelope> 
-
 ```
 
 Vergessen Sie nicht, das Listenfeld *Customer Name* als Importparameter auf den Request Body zu mappen. 
