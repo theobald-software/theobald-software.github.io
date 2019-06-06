@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-bw-cube-quelle-definieren
 Die Cube Datenquelle wurde entwickelt, um Daten aus SAP BW InfoCubes oder Queries (auch bekannt als BEx-Queries) abzuziehen.<br>
 Nach der Anlage einer BW Cube-Datenquelle erscheint der Dialog leer.
 
-![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.jpg){:class="img-responsive"}
+![BWCube-Extraction-01](/img/content/BWCube-Extraction-01.png){:class="img-responsive"}
 
 Um ihn mit Leben zu füllen, klicken Sie bitte auf den Fernglas-Knopf, um einen Cube oder eine Query zu suchen.
 
