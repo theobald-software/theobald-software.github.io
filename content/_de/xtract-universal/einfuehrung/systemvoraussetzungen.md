@@ -57,7 +57,7 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 {% include _content/de/operating-systems.md %}
 
 **Andere Anwendungen und Frameworks** <br> 	
-- .NET Framework 4.6.1 oder höher. Das Famework können Sie von der [Microsoft-Webseite](https://www.microsoft.com/de-de/download/details.aspx?id=49982) herunterladen.
+- .NET Framework 4.7.1 oder höher. Das Famework können Sie von der [Microsoft-Webseite](https://www.microsoft.com/de-de/download/details.aspx?id=56116) herunterladen.
 
 **Hardware Anforderungen**
  	
