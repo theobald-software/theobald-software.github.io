@@ -14,11 +14,16 @@ Sie können Filter für mehrere Merkmale setzen.
 
 **Filtervariable** <br>
 Sie haben die Möglichkeit, eine Variable für die Filterwerte zu defineren. <br>
-Dazu setzen Sie ins Feld Variable den Variablennamen z.B. CompanyCode ein.<br>
-Beim Aufruf könnten Sie dann einen Filterwert mitgeben, z.B. *CompanyCode=1000* .<br>
-Auch mehrere Werte durch Komma getrennt  werden unterstützt, z.B. *CompanyCode=1000,2000* .
-
-Die Option **Exclude Values from Resultset**	 ermöglicht, die gewählten Werte aus dem Ergebnis auszuschließen. 
+Dazu setzen Sie ins Feld Variable den Variablennamen z.B. *CompanyCode* ein.<br>
+Beim Aufruf könnten Sie dann einen Filterwert mitgeben, z.B. 
+```
+CompanyCode=1000
+```
+Auch mehrere Werte durch Komma getrennt  werden unterstützt, z.B. 
+```
+CompanyCode=1000,2000
+```
+Die Option **Exclude Values from Resultset** ermöglicht, die gewählten Werte aus dem Ergebnis auszuschließen. 
 
 ![BWCube-Filter-03-a](/img/content/BWCube-Filter-03-a.jpg){:class="img-responsive"}
 
