@@ -20,7 +20,7 @@ Um ihn mit Leben zu füllen, klicken Sie bitte auf den Fernglas-Knopf, um einen 
 
 Sie können mit Wildcards (also * ) entweder in den verfügbaren InfoCubes oder in den verfügbaren QueryCubes suchen. Sobald Sie den richtigen Cube gefunden haben, markieren Sie ihn und bestätigen Sie mit *OK*.
 
-**Achtung!** Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff  auf diese Query zulassen*  im BEx Query Designer oder im BW Modeling Tool angehakt sein muss. Siehe Eintrag in unserer [knowledgebase](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/77/9/allow-external-access-to-bw-queries).
+**Achtung!**<br>Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff  auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss. Siehe Eintrag in unserer [knowledgebase](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
 
 ![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
 
