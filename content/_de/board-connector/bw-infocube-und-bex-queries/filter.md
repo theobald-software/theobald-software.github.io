@@ -4,7 +4,7 @@ layout: page
 title: Filter
 description: Filter
 product: board-connector
-parent: bw-infocubes-und-bex-queries
+parent: bw-infocube-und-bex-queries
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
