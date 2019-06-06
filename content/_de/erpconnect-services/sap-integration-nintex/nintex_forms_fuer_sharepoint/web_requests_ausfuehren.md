@@ -10,15 +10,16 @@ weight: 5
 lang: de_DE
 ---
 
-Eine Möglichkeit, ohne JavaScript-Code auf SAP in Nintex Forms zuzugreifen, besteht über Webservice-Aufrufe. Mit der Standard Nintex Forms *Web Request* Control können SOAP Webservice für SAP Lese- und Schreibzugriff aufgerufen werden.<br>   
+Eine Möglichkeit, ohne JavaScript-Code auf SAP in Nintex Forms zuzugreifen, besteht über Webservice-Aufrufe. Mit der Standard Nintex Forms *Web Request* Control können SOAP Webservices für SAP Lese- und Schreibzugriff aufgerufen werden.<br>   
 Im folgenden Beispiel wird ein Webservice zum Lesen von SAP-Kundendaten aufgerufen und die Rückgabewerte in einer Dropdown-Liste angezeigt.
 
 **Schritt 1: Erstellen Sie einen Webservice**.
 
 Der erste Schritt besteht in der Erstellung eines SOAP-Webservice mit dem WebService Designer, der mit ERPConnect Services bereitgestellt wird. Detaillierte Informationen zur Funktionsweise des WebService Designers und Anwendungsbeispiele finden Sie im [folgenden](https://help.theobald-software.com/de/erpconnect-services/ecs-de/webservice-designer) Abschnitt in der Online-Hilfe. <br>
 
-In diesem Beispiel wird eine einzige Webservice-Operation angelegt, bei der der Funktionsbaustein SD_RFC_CUSTOMER_GET aufgerufen wird. Dieser remotefähige Standardfunktionsbaustein extrahiert Kundendaten aus der Stammdatentabelle KNA1 und ermöglicht die Suche nach Kundennamen oder -nummern.    
-Wir verwenden das Feld NAME1 als Eingangsfilterwert und erstellen einen entsprechenden Eingangsparameter. 
+In diesem Beispiel wird eine einzige Webservice-Operation angelegt, bei der der Funktionsbaustein SD_RFC_CUSTOMER_GET aufgerufen wird. Dieser remotefähige Standardfunktionsbaustein extrahiert Kundendaten aus der Stammdatentabelle KNA1 und ermöglicht die Suche nach Kundennamen oder -nummern.<br>    
+
+Wir verwenden das Feld NAME1 als Eingabefilter und erstellen dazu einen entsprechenden Input-Parameter. 
 Als Ausgabeparameter verwenden wir die Tabelle CUSTOMER_T, aus der wir nur drei Felder zurückgeben: Kundennummer (KUNNR), Kundenname (NAME1) und Ort (ORT01)    
 
 Deployen Sie den Webservice nach der erfolgreichen Konfiguration auf den SharePoint-Server.
@@ -50,22 +51,15 @@ In unserer Nintex-Form benötigen wir zwei Controls:
 Für SOAP-Webservice-Aufrufe muss ein sogenannter SOAP envelope erstellt werden. Für dieses Beispiel muss der Request Body im folgenden Format vorliegen:
 
 ```
+
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.theobald-software.com/ERPConnectServices/WebServices">
-
 <soapenv:Header/>
-
 <soapenv:Body>
-
 <web:GetSAPCustomers>
-
 <web:CustomerName> 
-
 </web:CustomerName>
-
 </web:GetSAPCustomers>
-
 </soapenv:Body>
-
 </soapenv:Envelope> 
 
 ```
