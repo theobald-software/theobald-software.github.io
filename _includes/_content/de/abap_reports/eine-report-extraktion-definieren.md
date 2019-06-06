@@ -1,4 +1,4 @@
-Nach dem Sie eine Report-Extraktion angelegt haben, öffnet sich das leere Editor-Fenster.
+Nachdem Sie eine Report-Extraktion angelegt haben, öffnet sich das leere Editor-Fenster.
 
 ![Abap-Report-Define-Data-Source](/img/content/Abap-Report-Define-Data-Source.jpg){:class="img-responsive"} 
 
