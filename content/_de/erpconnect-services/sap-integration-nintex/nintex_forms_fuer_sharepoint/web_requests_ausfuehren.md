@@ -33,7 +33,7 @@ Der zweite Schritt ist die Erstellung einer benutzerdefinierten SharePoint-Liste
 
 In unserer Nintex-Form benötigen wir zwei Controls:
 
-1. Das erste Control mit dem Namen *Kundenname* ist vom Typ **Single Line Textbox**. Es ist das Eingabefeld für den Kundenname. Verbinden Sie das Steuerelement mit dem Listenfeld *Customer Name*. 
+1. Das erste Control mit dem Namen *Customer Name* ist vom Typ **Single Line Textbox**. Es ist das Eingabefeld für den Kundenname. Verbinden Sie das Steuerelement mit dem Listenfeld *Customer Name*. 
 2. Das zweite Control mit dem Namen *Suggested Materials* ist vom Typ **Web Request**. Alle Treffer für den eingegebenen Kundennamen (Wildcards werden akzeptiert) sollen hier angezeigt und in der Dropdown-Liste wählbar sein. 
 
 **Schritt 4: Konfigurieren Sie den Web Request**.
@@ -100,4 +100,4 @@ Sie können die Anfrage zunächst mit der Schaltfläche *Run now* testen. Achten
 Wenn es in der Vorschau korrekt funktioniert, speichern Sie die Einträge und veröffentlichen Sie die Form. Sie können die Form öffnen und testen, indem Sie ein neues Element in der SharePoint-Liste anlegen. 
 
 
-![nintex-forms-js-dropdown-09](/img/content/nintex-forms-webreque-gif.gif){:class="img-responsive"}
+![nintex-forms-js-dropdown-09](/img/content/nintex-forms-webrequest-gif.gif){:class="img-responsive"} 
