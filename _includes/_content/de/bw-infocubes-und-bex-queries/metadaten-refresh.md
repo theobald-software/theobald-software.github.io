@@ -3,5 +3,3 @@ Bei sehr komplexen Cubes oder Queries kann es möglich sein, dass sich der Cube 
 ![Cube-Refresh-Metadata](/img/content/Cube-Refresh-Metadata.png){:class="img-responsive"}
 
 Dann werden die bestehenden Metadaten um die neuen Attribute / Kennzahlen ergänzt.
-
-**ACHTUNG**: Bei Extraktionen, die mit einer Xtract Universal Version vom Februar 2015 oder früher erstellt wurden, haken Sie bitte das Feld *Legacy metadata retrieval* in den *Extraction Settings* an. Siehe auch Kapitel Extraktionseinstellungen.
