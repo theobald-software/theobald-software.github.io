@@ -14,13 +14,20 @@ In some SAP integration scenarios it can be useful to provide a flexible data se
 
 In the present example an SAP material number should be entered in an input field in Nintex Forms and all possible return values for this material number should be listed in a dropdown box. When the desired material is selected in the dropdown box the material long text is supposed to be displayed in another field.  
 
-**Step 1: Define the text fields**
+**Step 1: Create a SharePoint custom list**
+
+The first step is to create a SharePoint custom list, where the form is placed upon. One or two list fields (i.e. *Material*, *Material Number*) of type *Single line of text* can optionally be created.  
+After creating the list open the Nintex Forms designer for that list.
+
+**Step 2: Define the form controls**
 
 In our Nintex Form we require three fields with descriptions: 
 
-1. The first field named *Material Number* is of type **Single Line Textbox**. It is the input field for entering the SAP material number.
-2. The second field named *Suggested Materials* is of type **Choice**. All possible matches for the given material number should be displayed and be selectable here in a dropdown list. 
-3. The third field named *Material* is of type **Single Line Textbox**. The material long text for the selected material should be displayed here.
+1. The first control named *Material Number* is of type **Single Line Textbox**. It is the input field for entering the SAP material number. Connect that control to the *Material* list field created in step one. 
+2. The second control named *Suggested Materials* is of type **Choice**. All possible matches for the given material number should be displayed and be selectable here in a dropdown list. 
+3. The third control named *Selected Material* is of type **Single Line Textbox**. The material long text for the selected material should be displayed here.
+
+You can create description labels for all three controls.
 
 ![nintex-forms-js-dropdown-01](/img/content/nintex-forms-js-dropdown-01.jpg){:class="img-responsive"}
 
@@ -43,7 +50,7 @@ Since this should be only a display field you can also define under *Appearance*
 
 ![nintex-forms-js-dropdown-04](/img/content/nintex-forms-js-dropdown-04.jpg){:class="img-responsive"}
 
-**Step 2: Add the JavaScript code**
+**Step 3: Add the JavaScript code**
 
 Add a reference to the JavaScript library under *Settings - Form -> Advanced -> Custom JavaScript Includes:*
 
@@ -145,7 +152,7 @@ NWF$(document).ready(function() {
 For more information see [JavaScript Library for REST](../../ecs/erpconnect-services-runtime/web-services/javascript-library).<br>  
 You can also realize this example with ECS Core (see [Developing with ECS Core](../../ecs-core/ecs-core-developing)).
 
-**Step 3: Run the Nintex Form**
+**Step 4: Run the Nintex Form**
 
 Run the form and enter a material number. The return values are read from SAP table MAKT and displayed in the dropdown list (Suggested Materials).  
 
