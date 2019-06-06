@@ -10,48 +10,7 @@ weight: 5
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=report-extraktionseinstellungen
 ---
-
-Über den Extraction Settings-Link im Editor öffnet sich das Einstellungsfenster.
-
-![Report-Settings](/img/content/Report-Settings.jpg){:class="img-responsive"}
+{% include _content/de/abap_reports/report-extraktionseinstellungen.md %}
 
 
-**Use Batch**
 
-definiert, ob der Report im Hintergrund ausgeführt werden soll. Das ist vor allem dann sinnvoll, wenn der Report eine ALV-Ausgabe hat.
-
-
-**Batch Timeout**
-
-definiert die Zeitspanne in Sekunden, wie lange der Report im Hintergrund maximal laufen darf, bevor der Task abbricht.
-
-
-**Batch Job Name**
-
-definiert den Namen des Jobs im SAP, unter dem der Report im Hintergrund ausgeführt wird.
-
-
-**Spool Destination**
-
-definiert das Ausgabegerät (den Drucker) für den Spooljob.
-
-
-**Custom Function**
-
-definiert den Namen des Funktionsbausteins, falls er vom Standardnamen (Z_XTRACT_IS_REMOTE_REPORT) abweicht.
-
-
-**Automatic Column Detection**
-
-schaltet den Automatik-Mechanismus ein. In diesem Fall versucht die Komponente, die Spalten des Reports automatisch zu finden. Das manuelle Setzen der Spalten entfällt dann.
-
-
-**Pattern for header detection** 
-
-Definiert ein Suchmuster (z.B. *header*) um den Tabellen-Kopf zu erkennen. Ist nur aktiv wenn Automatic Column Detection aktiviert ist.
-
-**Pattern for skipping rows** 
-
-Definiert einen regulären Ausdruck als Suchmuster, um Datensätze aus dem Ergebnis zu entfernen.<br> 
-Mit dieser Eigenschaft können Sie z.B. die Kopfzeilen löschen, welche sich bei manchen Reports wiederholen.<br>
-Um Datensätze zu entfernen, welche z.B. die Begriffe DESCTEXT oder LONGTEXT enthalten, setzen Sie den Wert DESCTEXT | LONGTEXT. Weitere Infos zu regulären Ausdrücken finden Sie in der [Microsoft Online Hilfe](https://docs.microsoft.com/de-de/dotnet/standard/base-types/regular-expression-language-quick-reference).
