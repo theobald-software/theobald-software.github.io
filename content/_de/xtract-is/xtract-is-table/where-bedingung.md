@@ -17,7 +17,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=where-bedingung
 - Fließkommazahlen müssen immer in einfache Hochkommata gesetzt werden, z.B. KMENG > '10.3'.  Für KMENG > 10.3 erhalten Sie die Fehlermeldung 'The WHERE clause has an unexpected format'.
 - Die Where-Bedingung darf keinen Zeilenumbruch (Eingabe-Taste) enthalten.
 
-Weitere Informationen über die OpenSQL Syntax finden Sie auf der [SAP Hilfe-Seite]https://help.sap.com/doc/saphelp_nw70ehp3/7.03.19/en-US/fc/eb3969358411d1829f0000e829fbfe/frameset.htm)
+Weitere Informationen über die OpenSQL Syntax finden Sie auf der [SAP Hilfe-Seite](https://help.sap.com/doc/saphelp_nw70ehp3/7.03.19/en-US/fc/eb3969358411d1829f0000e829fbfe/frameset.htm)
 
 **Interne SAP-Darstellung**<br>
 Werte müssen in interner SAP-Darstellung angegeben werden: 
