@@ -11,12 +11,11 @@ Im Hauptdialog werden nun die so genannten Select Options angezeigt. Das sind di
 
 ![Define-Query-Extraction-Data-Source-Selected](/img/content/Define-Query-Extraction-Data-Source-Selected.jpg){:class="img-responsive"}
 
-Sie müssen entweder eine Variante (siehe Kapitel [Variante anwenden](./varianten-anwenden) ) wählen oder einen Wert für die maximale Anzahl der Zeilen (siehe Kapitel [Extraktionseinstellungen](./extraktionseinstellungen_1)) setzen.
+Sie müssen entweder eine Variante (siehe Kapitel [Variante anwenden](./varianten-anwenden) ) wählen oder einen Wert für die maximale Anzahl der Zeilen (siehe Kapitel [Extraktionseinstellungen](https://help.theobald-software.com/de/board-connector/sap-queries/query-extraktionseinstellungen) setzen.
 
 **Empehlung:**
 1. beginnen Sie mit der Erstellung einer [Variante](https://help.sap.com/doc/saphelp_dm40/4.0/de-DE/c0/980389e58611d194cc00a0c94260a5/content.htm?no_cache=true), die Sie vorab im SAP GUI erstellen sowie testen
-2. im nächsten Schritt können über *Edit* [Select-Parameter](./select-options-fuellen
-) angepasst werden
+2. im nächsten Schritt können über *Edit* [Select-Parameter](./select-options-fuellen) angepasst werden
 
 *Generell gilt, Selektionsparameter überschreiben die ausgewählte Variante. 
 Somit ist sicher gestellt, dass Kombinationsmöglichkeiten für die Selektion bestehen.*
