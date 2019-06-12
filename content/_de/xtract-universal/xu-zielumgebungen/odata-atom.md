@@ -18,7 +18,7 @@ Folgende Programme können Daten über OData erfolgreich konsumieren: <br>
 - [Power BI Desktop](https://help.theobald-software.com/en/xtract-universal/xu-destinations/Power-BI-Connector-(beta))  
 - PowerPivot / Excel
 - Datazen
-- [Tableau Sofware](./tableau) 
+- [Tableau Software](./tableau) 
 
 Folgende Einstellungen können für das Ziel OData Atom definiert werden.
 
