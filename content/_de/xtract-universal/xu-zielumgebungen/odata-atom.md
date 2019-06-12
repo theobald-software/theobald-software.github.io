@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=odata-atom
 Das Ziel HTTP - OData  liefert die extrahierten Daten in einem generischen Format über einen HTTP-OData-Stream bzw. Webservice. 
 
 Folgende Programme können Daten über OData erfolgreich konsumieren: <br>
-- [Power BI Desktop](./power_bi_desktop)  
+- [Power BI Desktop](https://help.theobald-software.com/en/xtract-universal/xu-destinations/Power-BI-Connector-(beta))  
 - PowerPivot / Excel
 - Datazen
 - [Tableau Sofware](./tableau) 
