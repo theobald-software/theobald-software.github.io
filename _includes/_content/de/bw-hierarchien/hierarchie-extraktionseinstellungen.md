@@ -2,8 +2,7 @@
 
 ![Hierarchy-Extraction-Preferences](/img/content/Hierarchy-Extraction-Preferences.png){:class="img-responsive"}
 
-**Representation**
-
+**Representation**<br>
 - ParentChild:  Die Hierarchie hat das SAP Parent-Child Format.
 
 ![Hierarchies-Parent-Child](/img/content/Hierarchies-Parent-Child.png){:class="img-responsive"}
@@ -17,10 +16,10 @@ Funktioniert auch bei zusammengesetzten InfoObjekten. Beispiel: 0CO_AREA (1000) 
 **Fetch description texts**<br>
 bedeutet, dass das Feld NodeText den Stammdaten-Text fürs Blatt in der jeweiligen Anmeldesprache enthält. 
 
-**Abschnitt Natural Representation Settings**
+**Abschnitt Natural Representation Settings**<br>
 ist nur aktiv, wenn Representation den Wert Natural hat.
 
-**Level Count**
+**Level Count**<br>
 Legt die maximale Anzahl der Ebenen fest, falls die Representation Natural gewählt ist. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen.
 
 ![Hierarchy-Parent-Child-Natural](/img/content/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
