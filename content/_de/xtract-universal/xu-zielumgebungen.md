@@ -41,7 +41,7 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 
 **Cloud Speicher:**
 - [Amazon AWS S3](./xu-zielumgebungen/amazon_aws_s3)
-- [Azure Blob Storage](./xu-zielumgebungen/azure blob storage) 
+- [Azure Blob Storage](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/azure_blob_storage) 
 
 Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-Programm bzw. Scheduler aufgerufen werden. 
 
