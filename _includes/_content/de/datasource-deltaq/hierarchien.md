@@ -13,8 +13,10 @@ In der folgenden Maske sehen wir die Struktur, die in jeder Hierarchie gleich is
 
 ![Deltaq-Hierarchy-Selected](/img/content/Deltaq-Hierarchy-Selected.png){:class="img-responsive"}
 
-
-Im Gegensatz zu Attribut- Text und transaktionalen DataSources müssen Hierarchie-DataSources idR nicht aktiviert werden. Eine Aktivierung ist dennoch möglich und bei einigen wenigen Hierarchie-DataSources auch nötig.
-
-
 ![Deltaq-Hierarchy-Selected](/img/content/Deltaq-Hierarchy-Selected.png){:class="img-responsive"}
+
+Im Gegensatz zu Attributen und Transaktionen müssen Hierarchien nicht aktiviert werden. Es kann sofort ein Preview erfolgen, der das folgende Ergebnis liefert.
+
+![DeltaQ-Hierarchies-04](/img/content/DeltaQ-Hierarchies-04.png){:class="img-responsive"}
+
+Die *NodeID* ist die laufende Nummer des Knotens in der Hierarchie. *NodeName* ist der eigentliche Wert. Durch die *ParentID* und die *ChildID* kann die Hierarchie rekonstruiert werden. Im hinteren Bereich findet man die Texte.
