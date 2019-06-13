@@ -16,7 +16,7 @@ Funktioniert auch bei zusammengesetzten InfoObjekten. Beispiel: 0CO_AREA (1000) 
 **Fetch description texts**<br>
 bedeutet, dass das Feld NodeText den Stammdaten-Text fürs Blatt in der jeweiligen Anmeldesprache enthält. 
 
-**Abschnitt Natural Representation Settings**<br>
+**Abschnitt Natural Representation Settings** <br>
 ist nur aktiv, wenn Representation den Wert Natural hat.
 
 **Level Count**<br>
