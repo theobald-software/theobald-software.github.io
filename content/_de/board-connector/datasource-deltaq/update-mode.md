@@ -1,14 +1,13 @@
 ---
-ref: bc-datasource-deltaq-07
+ref: bc-datasource-deltaq-06
 layout: page
-title: Hierarchien
+title: Update Mode
 description: Hierarchien
 product: board-connector
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 7
+weight: 6
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=hierarchien
 ---
 
 Im folgenden Beispiel erfolgt der Download von Hierarchiedaten aus der DataSource 0Costcenter_0101_Hier. Selektieren Sie diese DataSource mit der Suchhilfe (erster Fernglas-Button im Editor)

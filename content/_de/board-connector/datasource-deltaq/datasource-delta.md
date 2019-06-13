@@ -1,12 +1,12 @@
 ---
-ref: bc-datasource-deltaq-04
+ref: bc-datasource-deltaq-05
 layout: page
 title: Delta
 description: Delta
 product: board-connector
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=datasource-delta
 ---
