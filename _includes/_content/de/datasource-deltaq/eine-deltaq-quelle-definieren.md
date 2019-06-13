@@ -37,9 +37,9 @@ Die Aktivierung muss für den Init und Full Mode ausgeführt werden. <br>
 Vor einer neuen Aktivierung müssen Sie immer die alte löschen, siehe Request Maintenance in den Settings. <br>
 Machen Sie keine Aktivierung für den Delta Update Modus oder den Repeat Modus. 
 
-**Variablen** können für die folgenden Eigenschaften verwendet werden: Log. <br>Destination, Gateway Host, Gateway Service und Program ID. Darüber hinaus kann der Update Mode auch über eine Variable gesteuert werden. 
+**Variablen** <br> können für die folgenden Eigenschaften verwendet werden: Log. <br>Destination, Gateway Host, Gateway Service und Program ID. Darüber hinaus kann der Update Mode auch über eine Variable gesteuert werden. 
 
-**Um Parameter / Filter** zu setzen, siehe Abschnitt Datasource-Parameter.
+**Um Parameter / Filter** <br> zu setzen, siehe Abschnitt Datasource-Parameter.
  
 
 Bei Fehlern bitte im [DeltaQ Troubleshooting Guide](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/107/4/deltaq-troubleshooting-guide) (Englisch) nachschlagen.
