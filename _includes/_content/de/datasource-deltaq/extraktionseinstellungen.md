@@ -1,15 +1,3 @@
----
-layout: page
-title: Extraktionseinstellungen
-description: Extraktionseinstellungen
-product: xtract-universal
-parent: datasource-deltaq
-permalink: /:collection/:path
-weight: 8
-lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=deltaq-extraktionseinstellungen
----
-
 Über den *Extraction Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![XU_DeltaQ_Settings](/img/content/XU_DeltaQ_Settings.jpg){:class="img-responsive"}
@@ -18,17 +6,10 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=deltaq-extraktionseinstellunge
 Die Rohdatenpakete können aus SAP über tRFC-Calls oder Daten-IDocs versendet werden. <br>
 In der Regel ist tRFC als Default-Wert optimal. <br>Sollte es aber nötig sein, um z.B. die Rohdatenpakete zu Debugging-Zwecken anschauen zu können, kann der Datentransfer auf Idoc umgestellt werden. Dann lassen sich die Datenpakete in der Transaktion WE02 (Idoc-Monitoring) einsehen.
 
-**Check IDoc Request State**<br>
-Definiert, ob der Request-Status der versendeten IDocs geprüft wird. Die IDoc-Nummer wird ins Log geschrieben und der IDoc-Status wird auf Erfolg geprüft.<br>
-Diese Einstellung kann bei der Analyse eines Fehlverhaltens hilfreich sein. Insbesondere wenn Extraktionen wiederholt fehlschlagen oder ohne weitere Informationen keine Jobs in der SAP-Transaktion SM37 generieren.<br>
-Standardmäßig ist diese Option nicht gesetzt. Damit findet die Überprüfung nicht statt, was die Performance erhöht. 
-
-**Resend errors (deprecated)**<br>
-In früheren Versionen der DeltaQ hieß diese Option Don't resend tRFC errors automatically und war in der Default-Einstellung aktiviert. Mittlerweile ist die Einstellung im Default deaktiviert, da diese Einstellung nicht mehr notwendig sein sollte. Die Einstellung triggert in einem kurzen zeitlichen Intervall auf dem SAP-System einen Wiederversand von tRFC-Paketen und IDocs, wenn diese aufgrund eines tRFC-Verbindungsfehlers nicht an die Xtract RFC-Destination übermittelt werden konnten (Einträge in der Transaktion SM58). Anstelle dieser Option empfehlen wir, den Wiederversand über die tRFC-Optionen der RFC-Destination in der Transaktion SM59 auf SAP-Seite zu setzen, siehe Kapitel Customizing für DeltaQ, Schritt 4.
 
 **Automatic Synchronisation**<br>
 Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen ausschließlich in einem Testsystem vorgenommen werden. Wenn Extraktionen dann in der produktiven Umgebung eingesetzt werden, muss die DataSource dort aktiviert werden. Um manuelles Eingreifen im Produktivsystem zu vermeiden, kann diese Option gesetzt werden. Dann wird die Aktivierung automatisch erledigt und der Timestamp der DataSource so angepasst, dass er konsistent mit dem SAP-System übereinstimmt.<br>
-Wenn was in der DataSource im SAP-System geändert wird, z.B. ein Feldname, Datentyp, Datentyplänge oder die Datentransferstruktur, müssen Sie in der DeltaQ-Komponente die DataSource manuell aktivieren, auch wenn diese Option gesetzt ist, sonst wird die Extraktion fehlschlagen. Dieses Verhalten ist von SAP vorgegeben und wird in der SAP help dokumentiert.
+Wenn was in der DataSource im SAP-System geändert wird, z.B. ein Feldname, Datentyp, Datentyplänge oder die Datentransferstruktur, müssen Sie in der DeltaQ-Komponente die DataSource manuell aktivieren, auch wenn diese Option gesetzt ist, sonst wird die Extraktion fehlschlagen. Dieses Verhalten ist von SAP vorgegeben und wird in der [SAP help](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/de-DE/4a12eaff76df1b42e10000000a42189c.html) dokumentiert.
 
 **Add Serialization Info to Output**<br>
 Fügt der Ausgabe zwei zusätzliche Spalten hinzu: DataPackageID für die Paketnummer und RowCounter für den Datensatz innerhalb des Paketes.<br>
