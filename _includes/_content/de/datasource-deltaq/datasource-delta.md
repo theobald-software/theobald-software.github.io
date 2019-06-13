@@ -16,7 +16,9 @@ Hier werden keine Daten geladen. Danach können Sie aber das Delta Update nutzen
 Lassen Sie Ihr Paket einmalig laufen, und stellen Sie dann den UpdateType auf ***Delta Update***. <br>
 Mit dem Delta Update werden nur noch die Änderungen seit der letzten Übertragung extrahiert.
 
-**Optional: Delta Queue - RSA7** 
+### Optional
+
+**Delta Queue - RSA7** 
 
 Ist das Delta einmal aktiviert, können Sie die anstehenden Sätze in der Delta-Queue in der Transaktion RSA7 ansehen.
 
@@ -26,7 +28,7 @@ Falls im Moment keine neuen Daten zur Übertragung anstehen, wird ein entspreche
 
 Sie müssen sicherstellen, dass ein Delta-Update korrekt verbucht wird, bevor das Nächste angestoßen wird. Der Anstoß eines neuen Delta-Updates löscht den Letzten.
 
-**Optional: Repeat** 
+**Repeat** 
 
 Ein **Repeat** bezieht sich immer auf das letzte Delta-Update, welches dann komplett wiederholt wird. Es spielt dabei keine Rolle, ob das letzte Delta-Update erfolgreich ausgeführt wurde oder nicht. Ein Repeat kann gegebenfalls mehrmals ausgeführt werden.
 
