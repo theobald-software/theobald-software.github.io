@@ -1,4 +1,8 @@
-Es sind nun noch drei zusätzliche Parameter zu füllen: Der *GatewayHost* (i.d.R. derselbe Host wie der Applikationsserver des SAP), der *Gateway Service* (sapgwXX, wobei XX die Systemnummer ist) und die Program ID aus der RFC-Destination.
+Es sind nun noch drei zusätzliche Parameter zu füllen: 
+
+- der *GatewayHost* (i.d.R. derselbe Host wie der Applikationsserver des SAP)
+- der *Gateway Service* (sapgwXX, wobei XX die Systemnummer ist) und die 
+- Program ID aus der RFC-Destination
 
 ![Open-Hub-Services-Technical-Preferences](/img/content/Open-Hub-Services-Technical-Preferences.png){:class="img-responsive"}
 
