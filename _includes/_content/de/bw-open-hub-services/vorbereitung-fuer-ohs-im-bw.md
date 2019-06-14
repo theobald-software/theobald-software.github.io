@@ -1,0 +1,1 @@
+Um die OHS-Datenquelle nutzen zu können, ist es zunächst notwendig, im SAP BW einige Einstellungen vorzunehmen, die im Kapitel [Vorbereitungen für OHS im BW](../sap-customizing/vorbereitung-fuer-ohs-im-bw) exakt beschrieben sind.  
