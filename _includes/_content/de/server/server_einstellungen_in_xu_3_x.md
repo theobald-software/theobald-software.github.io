@@ -50,7 +50,6 @@ Legt fest, ob das Setup der XU-Version, die auf dem Server läuft, vom Server ru
 Wenn man sich mit einer älteren Designer-Version an einem neueren Server anmeldet und diese Option aktiviert ist,
 fragt der Designer, ob man das neuere Setup runterladen möchte.
 
-
 **Result cache**
 
 **Target directory**<br>
