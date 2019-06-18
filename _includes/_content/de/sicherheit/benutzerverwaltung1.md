@@ -46,7 +46,7 @@ In XU 2.x konnten Benutzergruppen nur in Xtract Universal angelegt werden. XU 3.
 Windows AD Benutzer werden Windows AD Benutzergruppen außerhalb von Xtract Universal zugeordnet.
 
 **ACHTUNG:**<br>
-Custom User können nur custom Benutzergruppen zugeordnet werden.<br>
+Custom User können nur Custom Benutzergruppen zugeordnet werden.<br>
 Windows AD User können nur Windows AD Gruppen zugeordnet werden, jedoch nicht zu custom Benutzergruppen. Das ist ein "Breaking Change" im Vergleich zu XU 2.x.
 
 Daraus folgt, dass Windows AD User, die unter XU 2.x custom Benutzergruppen zugeordnet waren bei der Migration nach XU 3.x aus diesen Gruppen verschwinden.
