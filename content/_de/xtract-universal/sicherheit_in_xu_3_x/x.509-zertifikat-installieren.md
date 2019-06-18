@@ -9,8 +9,8 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 ---
+{% include _content/de/sicherheit/x509-zertifikat.md %}
 
-{% include _content/de/x509-zertifikat.md  %}
 
 
 
