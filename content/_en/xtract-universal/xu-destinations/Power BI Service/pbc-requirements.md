@@ -4,7 +4,7 @@ layout: page
 title: Requirements
 description: Requirements
 product: xtract-universal
-parent: powerbi-cloud
+parent: Power BI Service
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

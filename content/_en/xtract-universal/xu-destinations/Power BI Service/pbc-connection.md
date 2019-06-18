@@ -4,7 +4,7 @@ layout: page
 title: Connection
 description: Connection
 product: xtract-universal
-parent: powerbi-cloud
+parent: Power BI Service
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

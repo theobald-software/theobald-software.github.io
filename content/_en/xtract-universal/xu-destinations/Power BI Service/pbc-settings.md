@@ -4,7 +4,7 @@ layout: page
 title: Settings
 description: Settings
 product: xtract-universal
-parent: powerbi-cloud
+parent: Power BI Service
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
