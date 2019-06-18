@@ -4,7 +4,7 @@ layout: page
 title: Voraussetzungen
 description: Voraussetzungen
 product: xtract-universal
-parent: powerbi_cloud
+parent: Power BI Service
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

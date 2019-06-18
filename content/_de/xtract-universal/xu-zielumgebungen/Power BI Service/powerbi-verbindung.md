@@ -4,7 +4,7 @@ layout: page
 title: Verbindung
 description: Verbindung
 product: xtract-universal
-parent: powerbi_cloud
+parent: Power BI Service
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
