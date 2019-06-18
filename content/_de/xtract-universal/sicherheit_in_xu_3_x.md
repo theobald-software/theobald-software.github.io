@@ -19,7 +19,7 @@ Die Security in XU 3.0 hat drei Komponenten:
 
 Die **Transportverschlüsselung** dient dem Schutz der zwischen XU Server + Designer übertragenenen Daten gegen Abhören und Manipulation. <br>
 Es werden zwei Verfahren zur Transportverschlüsselung unterstützt:
--	[Kerberos]([https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx))
+-	[Kerberos](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx)
 -	Transport Layer Security (TLS)
 
 Bei der **Authentisierung** wird sichergestellt, dass ein Benutzer tatsächlich derjenige ist, der er vorgibt zu sein. XU untersützt zwei Arten von Benutzerverwaltungssystemen:
