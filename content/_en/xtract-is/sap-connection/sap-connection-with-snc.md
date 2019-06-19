@@ -27,7 +27,8 @@ You must download the relevant DDLs from the SAP side. These DLLs are different 
 
 The DLLs are called: 
 
-For 32-bit x86: gsskrb5.dll<br>
-For 64-bit: gx64krb5.dll<br>
+For 32-bit x86: `gsskrb5.dll`
+
+For 64-bit: `gx64krb5.dll`
 
 
