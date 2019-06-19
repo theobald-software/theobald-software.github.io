@@ -10,27 +10,24 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=sap-connection-with-snc
 ---
+You can also use SNC (Secure Network Communication) to connect to the SAP system. <br>
+To do this, click **Additions** in the SAP Connection Manager. In the SNC section, check the box for **SNC enabled** and fill in the corresponding fields.
 
-You can use SNC (Secure Network Communication) for the SAP Connection. 
-In the Connection Manager click on **Additions**. In the section SNC select the option **SNC enabled** and fill the required fields.
+![SNC](/img/content/SNC.jpg){:class="img-responsive"}
 
-![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.jpg){:class="img-responsive" width="600px" }
+The preferred security level can be set with the property **Quality Of Protection**. More details can be found here: [http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm)
 
-The property Quality Of Protection sets the desired security level. For detail information go to:
+For more information about SSO configuration on the SAP side, see <br>
+[http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm)
 
-[http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm)
+**Download the DLLs**
 
-More information about the SSO configuration you will find here: [http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm)
+You must download the relevant DDLs from the SAP side. These DLLs are different for 32-bit and 64-bit platforms and are provided with SAP Note 2115486:<br> 
+[https://launchpad.support.sap.com/#/notes/2115486) 
+
+The DLLs are called: 
+
+For 32-bit: gsskrb5.dll<br>
+For 64-bit x86: gx64krb5.dll<br>
 
 
-Download the DLLs
-
-You must also have the relevant DLLs from SAP. These DLLs are different for 32-bit and 64-bit platforms and are available with SNOTE* 352295. You can download the DLLs from [https://websmp230.sap-ag.de/sap/support/notes/352295](https://websmp230.sap-ag.de/sap/support/notes/352295)
-
-This link has an 'Attachments' option from where you can download the package. The names of the DLLs are:
-
-For 32-bit: gsskrb5.dll
-For 64-bit x86: gx64krb5.dll
-
-To configure SSO with SNC on your SAP System refer to or Knowledge Base article:
-[http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso)
