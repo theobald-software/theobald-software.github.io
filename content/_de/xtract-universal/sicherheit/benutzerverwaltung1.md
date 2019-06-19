@@ -4,7 +4,7 @@ layout: page
 title: Benutzerverwaltung
 description: Benutzerverwaltung
 product: xtract-universal
-parent: sicherheit_in_xu_3_x
+parent: Sicherheit
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

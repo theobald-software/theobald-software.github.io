@@ -4,7 +4,7 @@ layout: page
 title: Serversicherheit
 description: Serversicherheit
 product: xtract-universal
-parent: sicherheit_in_xu_3_x
+parent: Sicherheit
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
