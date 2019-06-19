@@ -29,7 +29,7 @@ Sie müssen die relevanten DDLs von der SAP-Seite herunterladen. Diese DLLs sind
 
 Die DLLs heißen: 
 
-Für 32-Bit: gsskrb5.dll<br>
-Für 64-Bit x86: gx64krb5.dll<br>
+Für 32-Bit x86: `gsskrb5.dll`
+Für 64-Bit: `gx64krb5.dll`
 
  
