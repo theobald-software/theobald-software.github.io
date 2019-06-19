@@ -23,11 +23,11 @@ For more information about SSO configuration on the SAP side, see <br>
 **Download the DLLs**
 
 You must download the relevant DDLs from the SAP side. These DLLs are different for 32-bit and 64-bit platforms and are provided with SAP Note 2115486:<br> 
-[https://launchpad.support.sap.com/#/notes/2115486) 
+[https://launchpad.support.sap.com/#/notes/2115486](https://launchpad.support.sap.com/#/notes/2115486) 
 
 The DLLs are called: 
 
-For 32-bit: gsskrb5.dll<br>
-For 64-bit x86: gx64krb5.dll<br>
+For 32-bit x86: gsskrb5.dll<br>
+For 64-bit: gx64krb5.dll<br>
 
 
