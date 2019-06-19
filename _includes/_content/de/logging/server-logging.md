@@ -6,10 +6,8 @@ Um das Server-Log anzusehen, klicken Sie im Hauptmenü bitte auf *Server -> Log*
 
 Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende Log-Level:
 
-**Errors** - sind Fehler.
-
-**Informationen** - sind Tätigkeiten, die nicht zu einem Fehler geführt haben.
-
-**Debug Details** - sind Detailinfos, die normalerweise nicht benötigt werden.
+- **Errors** - sind Fehler
+- **Informationen** - sind Tätigkeiten, die nicht zu einem Fehler geführt haben
+- **Debug Details** - sind Detailinfos, die normalerweise nicht benötigt werden.
 
 Sie können über die Checkboxen links oben wählen, welche Log-Levels angezeigt werden sollen, um die Übersicht nicht zu verlieren. Mit Hilfe des Buttons Copy To Clipboard wird die aktuelle Log-Ausgabe in den Zwischenspeicher kopiert, um Sie bei Bedarf in eine Email einfügen zu können.
