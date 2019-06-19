@@ -17,7 +17,7 @@ siehe Kapitel `Sicherheit-> Benutzerverwaltung`
 
 **Select X.509 certificate**<br>
 
-Siehe Kapitel [X.509 Zertifikat installieren](../sicherheit_in_xu_3_x/x.509-zertifikat-installieren)
+Siehe Kapitel [X.509 Zertifikat installieren](../sicherheit/x.509-zertifikat-installieren)
 
 **Access Management**<br>
 siehe Kapitel `Sicherheit -> Zugriffsverwaltung`
