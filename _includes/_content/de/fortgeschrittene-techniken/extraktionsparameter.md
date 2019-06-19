@@ -1,5 +1,5 @@
 
-Wenn Sie im XU Designer auf *Run* klicken, finden Sie im Reiter *Extraction Parameters* die folgenden Parameter, welche Sie überschreiben können. 
+Wenn Sie im Designer auf *Run* klicken, finden Sie im Reiter *Extraction Parameters* die folgenden Parameter, welche Sie überschreiben können. 
 
 Wenn Sie einen Wert überschreiben, wird die URL entsprechend angepasst. 
 
