@@ -24,13 +24,12 @@ Weitere Informationen zur SSO-Konfiguration auf SAP-Seite finden Sie unter: <br>
 
 **Die DLLs herunterladen**
 
-Sie müssen die relevanten DDLs von der SAP-Seite herunterladen. Diese DLLs sind für 32-Bit und 64-Bit Plattformen unterschiedlich und werden mit dem SAP-Hinweis 352295 zur Verfügung gestellt:<br> 
-[https://websmp230.sap-ag.de/sap/support/notes/352295](https://websmp230.sap-ag.de/sap/support/notes/352295) 
+Sie müssen die relevanten DDLs von der SAP-Seite herunterladen. Diese DLLs sind für 32-Bit und 64-Bit Plattformen unterschiedlich und werden mit dem SAP-Hinweis 2115486 zur Verfügung gestellt:<br> 
+[https://launchpad.support.sap.com/#/notes/2115486](https://launchpad.support.sap.com/#/notes/2115486) 
 
 Die DLLs heißen: 
 
 Für 32-Bit: gsskrb5.dll<br>
 Für 64-Bit x86: gx64krb5.dll<br>
 
-Der folgende Knowledge Base Artikel beschreibt, wie Sie Ihr SAP-System mit SSO/SNC einrichten:<br>
-[http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso) 
+ 
