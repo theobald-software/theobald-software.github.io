@@ -1,7 +1,7 @@
 Wenn Fehler auftretten, können Informationen aus dem Debug-Logging (Tracing) für die Fehleranalyse angefordert werden.<br> 
 Führen Sie folgende Schritte aus, um das Debug-Logging zu aktivieren: 
 
-1. Öffnen Sie die SAP-Verbindung und tragen Sie in das Feld *Trace Directory* einen gültigen Pfad zu einem leeren und existierenden Verzeichnis (z.B. C:\Temp\Trace\) ein. 
+1. Öffnen Sie die SAP-Verbindung und tragen Sie in das Feld *Trace Directory* einen gültigen Pfad zu einem leeren und existierenden Verzeichnis (z.B. C:\Data\Trace\) ein. 
     Um die SAP-Verbinung zu öffnen, wählen Sie im Designer den Menüeintrag Server -> Manage Services. Selektieren Sie Ihre Verbindung und klicken Sie auf Edit. 
 2. Reproduzieren Sie den Fehler. XML-Dateien werden mit den entsprechenden Informationen generiert. 
 3. Machen Sie aus dem Verzeichnis eine Zip-Datei (z.B. Trace.zip) und senden Sie sie unserem Support. 
