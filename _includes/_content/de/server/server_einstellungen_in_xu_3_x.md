@@ -35,7 +35,7 @@ Definiert die Portnummer, über die der Server den Aufruf der Extraktionen über
 Aktiviert den sicheren Datentransfer via HTTPS. Der run-Befehl generiert eine HTTPS-URL. Definiert den HTTPS Listener Port.
 
 Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat installieren, damit der Server den HTTPS-Port verwalten kann. 
-Siehe Kapitel `Sicherheit -> X.509 Zertifikat installieren`
+Siehe Kapitel [X.509 Zertifikat installieren](../sicherheit/x.509-zertifikat-installieren)
 
 **HTTPS - Restricted to AD users with Designer read access**<br>
 Siehe *HTTPS - Unrestricted*. Darüberhinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tabreiter *Configuration Server* mindestens *Read Access* zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Kapitel [Serversicherheit](../sicherheit/serversicherheit).
