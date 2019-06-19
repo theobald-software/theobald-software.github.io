@@ -1,8 +1,8 @@
 ---
 ref: xu-server-04
 layout: page
-title: Server-Einstellungen in XU 3.x
-description: Server-Einstellungen in XU 3.x
+title: Server Einstellungen
+description: Server Einstellungen
 product: xtract-universal
 parent: server
 permalink: /:collection/:path

@@ -1,8 +1,8 @@
 ---
 ref: bc-server-03
 layout: page
-title: Server-Einstellungen
-description: Server-Einstellungen
+title: Server Einstellungen
+description: Server Einstellungen
 product: board-connector
 parent: server
 permalink: /:collection/:path
