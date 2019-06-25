@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-bapi
+ref: xtract-universal-09
 layout: page
 title: BAPIs und Funktionsbausteine
 description: BAPIs und Funktionsbausteine
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: bapis-und-funktionsbausteine
 permalink: /:collection/:path
-weight: 10
+weight: 09
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---

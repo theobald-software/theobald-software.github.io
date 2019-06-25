@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-odp
+ref: xtract-universal-odp-16
 layout: page
 title: ODP
 description: Operational Data Provisioning (ODP)
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal_tmp
 childidentifier: odp
 permalink: /:collection/:path
-weight: 12
+weight: 16
 lang: de_DE
 ---
 

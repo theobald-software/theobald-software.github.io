@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-bp
+ref: xtract-universal-17
 layout: page
 title: Best Practices
 description: Best Practices
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: best-practices
 permalink: /:collection/:path
-weight: 20
+weight: 17
 lang: de_DE
 old_url:
 ---
