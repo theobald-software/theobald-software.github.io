@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-09
+ref: xtract-universal-07
 layout: page
 title: Security 
 description: Security
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: security
 permalink: /:collection/:path
-weight: 8
+weight: 7
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=security_in_xu_3_x
 ---
