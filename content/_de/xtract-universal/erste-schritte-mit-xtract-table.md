@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-table-02
+ref: xtract-universal-table-03
 layout: page
 title: Erste Schritte mit Table
 description: Erste Schritte mit Table
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: erste-schritte-mit-xtract-table
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=erste-schritte-mit-xtract-table
 ---

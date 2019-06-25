@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-report-11
+ref: xtract-universal-report-12
 layout: page
 title: Report - ABAP-Reports ansteuern
 description: Report - ABAP-Reports ansteuern
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: report-abap-reports-ansteuern
 permalink: /:collection/:path
-weight: 11
+weight: 12
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=report-abap-reports-ansteuern
 ---

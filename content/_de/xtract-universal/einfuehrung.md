@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-01
+ref: xtract-universal-02
 layout: page
 title: Einführung
 description: Einführung
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: einfuehrung
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einfuehrung
 ---
