@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-11
+ref: xtract-universal-12
 layout: page
 title: ABAP Reports
 description: ABAP Reports
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: abap-reports
 permalink: /:collection/:path
-weight: 11
+weight: 12
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---

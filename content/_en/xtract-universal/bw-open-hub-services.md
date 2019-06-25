@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-15
+ref: xtract-universal-17
 layout: page
 title: BW Open Hub Services
 description: BW Open Hub Services
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: bw-open-hub-services
 permalink: /:collection/:path
-weight: 15
+weight: 17
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=bw-open-hub-services
 ---

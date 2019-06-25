@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-02
+ref: xtract-universal-03
 layout: page
 title: Getting Started- Table
 description: Getting Started- Table
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: getting-started-table
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started-table
 ---
