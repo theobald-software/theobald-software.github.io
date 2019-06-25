@@ -4,7 +4,7 @@ layout: page
 title: Server Security
 description: Server Security
 product: xtract-universal
-parent: security-xu3
+parent: security
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

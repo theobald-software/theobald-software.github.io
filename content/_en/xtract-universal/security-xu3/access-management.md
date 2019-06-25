@@ -4,7 +4,7 @@ layout: page
 title: Access Management
 description: Access Management
 product: xtract-universal
-parent: security-xu3
+parent: security
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

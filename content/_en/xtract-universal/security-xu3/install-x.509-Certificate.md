@@ -4,7 +4,7 @@ layout: page
 title: Installing an X.509 Certificate
 description: Installing an X.509 Certificate
 product: xtract-universal
-parent: security-xu3
+parent: security
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

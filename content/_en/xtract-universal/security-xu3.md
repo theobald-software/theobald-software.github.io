@@ -1,11 +1,11 @@
 ---
 ref: xtract-universal-09
 layout: page
-title: Security in XU 3.x
-description: Security in XU 3.x
+title: Security 
+description: Security
 product: xtract-universal
 parent: xtract-universal
-childidentifier: security-xu3
+childidentifier: security
 permalink: /:collection/:path
 weight: 8
 lang: en_GB

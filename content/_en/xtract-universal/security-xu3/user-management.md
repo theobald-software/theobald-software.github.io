@@ -4,7 +4,7 @@ layout: page
 title: User Management
 description: User Management
 product: xtract-universal
-parent: security-xu3
+parent: security
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
