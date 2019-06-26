@@ -1,5 +1,5 @@
 ---
-ref: board-connector-sec
+ref: board-connector-08
 layout: page
 title: Security
 description: Security

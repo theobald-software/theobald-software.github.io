@@ -1,5 +1,5 @@
 ---
-ref: board-connector-dq
+ref: board-connector-16
 layout: page
 title: Datasource DeltaQ
 description: Datasource DeltaQ

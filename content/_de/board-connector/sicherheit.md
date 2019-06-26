@@ -1,5 +1,5 @@
 ---
-ref: board-connector-sicherheit
+ref: board-connector-08
 layout: page
 title: Sicherheit
 description: Sicherheit

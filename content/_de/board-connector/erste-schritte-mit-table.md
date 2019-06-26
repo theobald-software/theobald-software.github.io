@@ -1,5 +1,5 @@
 ---
-ref: board-connector-table
+ref: board-connector-02
 layout: page
 title: Erste Schritte mit Table
 description: Erste Schritte mit Table

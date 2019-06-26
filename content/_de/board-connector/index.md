@@ -1,5 +1,5 @@
 ---
-ref: home-07
+ref: board-connector-01
 layout: page
 title: BoardConnector
 description: BoardConnector main page

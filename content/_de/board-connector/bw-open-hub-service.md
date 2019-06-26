@@ -1,5 +1,5 @@
 ---
-ref: board-connector-ohs
+ref: board-connector-17
 layout: page
 title: BW Open Hub Services
 description: BW Open Hub Services

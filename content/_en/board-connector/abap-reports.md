@@ -1,5 +1,5 @@
 ---
-ref: board-connector-report
+ref: board-connector-12
 layout: page
 title: ABAP Reports
 description: ABAP Reports

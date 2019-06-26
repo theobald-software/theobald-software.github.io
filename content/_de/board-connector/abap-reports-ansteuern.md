@@ -1,5 +1,5 @@
 ---
-ref: board-connector-report
+ref: board-connector-12
 layout: page
 title: Report - ABAP-Reports ansteuern
 description: Report - ABAP-Reports ansteuern

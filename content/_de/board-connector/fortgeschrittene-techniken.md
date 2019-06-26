@@ -1,5 +1,5 @@
 ---
-ref: board-connector-fort
+ref: board-connector-03
 layout: page
 title: Fortgeschrittene Techniken
 description: Fortgeschrittene Techniken

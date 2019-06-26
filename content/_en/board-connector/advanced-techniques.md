@@ -1,5 +1,5 @@
 ---
-ref: board-connector-adv
+ref: board-connector-03
 layout: page
 title: Advanced Techniques
 description: Advanced Techniques

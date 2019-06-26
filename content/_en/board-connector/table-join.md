@@ -1,5 +1,5 @@
 ---
-ref: board-connector-join
+ref: board-connector-09
 layout: page
 title: Table Join
 description: Table Join
