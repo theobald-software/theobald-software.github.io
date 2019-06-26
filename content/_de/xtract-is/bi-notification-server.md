@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-15
+ref: xtract-is-16
 layout: page
 title: BI Notification Server
 description: BI Notification Server
