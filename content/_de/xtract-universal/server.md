@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-server-06
+ref: xtract-universal-06
 layout: page
 title: Server
 description: Server

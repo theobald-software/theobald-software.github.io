@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-bwInfocubes-13
+ref: xtract-universal-13
 layout: page
 title: BW InfoCubes und BEx Queries
 description: BW InfoCubes und BEx Queries

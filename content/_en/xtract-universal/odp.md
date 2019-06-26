@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-odp-17
+ref: xtract-universal-17
 layout: page
 title: ODP
 description: Operational Data Provisioning (ODP)

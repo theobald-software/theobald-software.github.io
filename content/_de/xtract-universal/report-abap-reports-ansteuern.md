@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-report-12
+ref: xtract-universal-12
 layout: page
 title: Report - ABAP-Reports ansteuern
 description: Report - ABAP-Reports ansteuern

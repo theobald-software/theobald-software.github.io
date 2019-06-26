@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-fort-04
+ref: xtract-universal-04
 layout: page
 title: Fortgeschrittene Techniken
 description: Fortgeschrittene Techniken

@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-hier-14
+ref: xtract-universal-14
 layout: page
 title: BW Hierarchien
 description: BW Hierarchien

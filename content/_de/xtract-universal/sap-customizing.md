@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-cust-19
+ref: xtract-universal-19
 layout: page
 title: SAP Customizing
 description: SAP Customizing

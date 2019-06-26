@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-deltaq-15
+ref: xtract-universal-15
 layout: page
 title: Datasource DeltaQ
 description: Datasource DeltaQ
