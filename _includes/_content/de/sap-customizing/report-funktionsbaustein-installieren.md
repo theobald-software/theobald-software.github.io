@@ -1,5 +1,14 @@
-Im Gegensatz zu den meisten anderen Komponenten ist es bei der Xtract QV Report Komponente nötig, einen kundeneigenen Funktionsbaustein im SAP-System zu installieren.<br>
-Falls Sie dies nicht selber machen können, bitten Sie einen Kollegen aus Ihrer SAP-Basis-Abteilung, Ihnen zu helfen. Legen Sie zunächst eine Funktionsgruppe (z.B. mit dem Namen ZXTRACT) an, um den Baustein hinzulegen. Legen Sie dann einen neuen Funktionsbaustein an. Der Name sollte Z_XTRACT_IS_REMOTE_REPORT sein, kann aber bei Bedarf auch geändert werden. Definieren Sie den Baustein in  einen Attributen als Remotefähig und legen Sie die Import-, Export- und Tabellenparameter so an, wie in den nachfolgenden Screenshots gezeigt.
+Im Gegensatz zu den meisten anderen Komponenten ist es bei der Report Komponente nötig, einen Z-Funktionsbaustein im SAP-System zu installieren.<br>
+Falls Sie dies nicht selber machen können, bitten Sie einen Kollegen aus Ihrer SAP-Basis-Abteilung, Ihnen zu helfen. 
+
+### SAP Transport
+Sie können den Funktionsbaustein mit Hilfe des mitgelieferten Transportauftrags installieren, den Sie als zip-Datei *(thtrans.zip)* im Unterordner ABAP des Installationsordners unserer Software finden. 
+
+Alternativ installieren Sie den Baustein manuell.
+
+### Manuelle Installation
+
+Legen Sie zunächst eine Funktionsgruppe (z.B. mit dem Namen ZXTRACT) an, um den Baustein hinzulegen. Legen Sie dann einen neuen Funktionsbaustein an. Der Name sollte Z_XTRACT_IS_REMOTE_REPORT sein, kann aber bei Bedarf auch geändert werden. Definieren Sie den Baustein in  einen Attributen als Remotefähig und legen Sie die Import-, Export- und Tabellenparameter so an, wie in den nachfolgenden Screenshots gezeigt.
 
 ![Report-Custom-Function-01](/img/content/Report-Custom-Function-01.jpg){:class="img-responsive"}
 
@@ -17,13 +26,13 @@ Im Code sind die einzelnen Schritte (Programmausführung, Spoolabruf, Job-Überw
 
 ![Report-Custom-Function-Source-Code](/img/content/Report-Custom-Function-Source-Code.jpg){:class="img-responsive"}
 
-**LIST_OUTPUT**
+### LIST_OUTPUT
 
 Anstatt den SAP Standard Datentyp TAB512 für den LIST_OUTPUT Tabellen Parameter zu verwenden, können Sie einen eigenen Z-Datentyp erstellen. Das ist notwendig sofern die Output Länge einer Report-Zeile mehr als 512 Zeichen beträgt. Die maximal mögliche Länge beträgt 1023 Zeichen.
 
 ![SAPCust-Report-ListOutput](/img/content/SAPCust-Report-ListOutput.jpg){:class="img-responsive"}
 
-**Exceptions**
+### Exceptions
 
 Achtung: Die Exception LIST_FROM_MEMORY_NOT_FOUND wird geworfen, wenn der Report kein Ergebnis liefert. 
 
