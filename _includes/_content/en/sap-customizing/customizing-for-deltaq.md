@@ -55,7 +55,9 @@ Refer to our [knowledge base](https://kb.theobald-software.com/sap/registering-r
 
 **Step 7**
 
-Go to SAP transaction SMQS. Change the Max.Conn. parameter to 10. Increase this value when running several DeltaQ extractions in parallel on the same RFC destination.
+Go to SAP transaction SMQS. Select the destination created in step 4, e.g. XTRACT01. Use button ‘Register without activation’ (or ‘Reg. o. Aktivierung’) and change the Max.Conn. parameter to 10. Increase this value when running several DeltaQ extractions in parallel on the same RFC destination.
+
+![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
 
 For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide).              

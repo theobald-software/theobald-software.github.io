@@ -53,6 +53,8 @@ In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc
 **Achtung**: Dieser Schritt gilt ab der SAP Kernel-Version 720.
 
 ### Schritt 7<br>
-Ändern Sie in der Transaktion SMQS den Parameter Max.Verb. auf den Wert 10. Erhöhen Sie diesen Wert, wenn Sie mehrere DeltaQ-Extraktionen auf derselben RFC Destination parallel ausführen.
+Öffnen Sie Transaktion SMQS. Markieren Sie die RFC Destination aus Schritt 4, z.B. XTRACT01. Klicken Sie dann auf die Schaltfläche ‘Register without activation’ (or ‘Reg. o. Aktivierung’) und ändern Sie den Parameter Max.Verb. auf den Wert 10. Erhöhen Sie diesen Wert, wenn Sie mehrere DeltaQ-Extraktionen auf derselben RFC Destination parallel ausführen.
+
+![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
 Bei Fehlern bitte im [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide) (Englisch) nachschlagen.
