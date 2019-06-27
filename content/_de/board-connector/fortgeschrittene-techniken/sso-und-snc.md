@@ -4,7 +4,7 @@ layout: page
 title: SSO und SNC
 description: SSO und SNC
 product: board-connector
-parent: fortgeschrittene-techniken
+parent: fortgeschrittene-techniken-obsolet
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
