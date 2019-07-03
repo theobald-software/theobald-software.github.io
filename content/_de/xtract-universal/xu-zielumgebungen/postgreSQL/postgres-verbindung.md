@@ -18,8 +18,8 @@ Folgende Einstellungen müssen für die Verbindung zur Zieldatenbank definiert w
 **Server Name**<br>
 Name bzw. IP des Datenbankservers und die Portnummer.
 
-**Require SSL encryption**<br>
-PostgreSQL bietet native Unterstützung für die Verwendung von SSL-Verbindungen zur Verschlüsselung der Client/Server-Kommunikation für mehr Sicherheit, 
+**Require TLS encryption**<br>
+PostgreSQL bietet native Unterstützung für die Verwendung von TLS-Verbindungen zur Verschlüsselung der Client/Server-Kommunikation für mehr Sicherheit, 
 siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
 Für die SSL-Verschlüsselung benötigen Sie ein von einer Zertifizierungsstelle (CA) (in der Regel eine unternehmensweite Stammzertifizierungsstelle) signiertes Zertifikat,

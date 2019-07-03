@@ -18,8 +18,8 @@ The following settings must be defined for the connection to the target database
 **Server Name**<br>
 Name or IP of the database server and the port number.
 
-**Require SSL encryption**<br>
-PostgreSQL provides native support for using SSL connections to encrypt client/server communication for increased security, see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
+**Require TLS encryption**<br>
+PostgreSQL provides native support for using TLS connections to encrypt client/server communication for increased security, see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
 For SSL encryption you require a certificate signed by a certificate authority (CA) (usually an enterprise-wide root CA) 
 whose identity can be validated by the client Xtract Universal is running on. 
