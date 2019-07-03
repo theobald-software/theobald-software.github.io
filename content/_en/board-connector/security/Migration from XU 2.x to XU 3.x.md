@@ -1,12 +1,12 @@
 ---
-ref: bc-security-01
+ref: bc-security-05
 layout: page
 title: Migration from XU 2.x to XU 3.x
 description: Migration from XU 2.x to XU 3.x
 product: board-connector
 parent: security
 permalink: /:collection/:path
-weight: 1
+weight: 5
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=user-management
 ---
