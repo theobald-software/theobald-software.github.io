@@ -22,6 +22,10 @@ Name bzw. IP des Datenbankservers und die Portnummer.
 PostgreSQL bietet native Unterstützung für die Verwendung von SSL-Verbindungen zur Verschlüsselung der Client/Server-Kommunikation für mehr Sicherheit, 
 siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
+Für die SSL-Verschlüsselung benötigen Sie ein von einer Zertifizierungsstelle (CA) (in der Regel eine unternehmensweite Stammzertifizierungsstelle) signiertes Zertifikat,
+dessen Identität vom Client, auf dem Xtract Universal läuft, überprüft werden kann. 
+Selbstsignierte Zertifikate werden nicht unterstützt.
+
 **Windows Authentication**<br>
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am PostgreSQL Server zu authentisieren, siehe auch [Client Authentication](https://www.postgresql.org/docs/11/client-authentication.html).
 
