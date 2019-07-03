@@ -11,8 +11,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 ---
 ## SQL Server<br/> 	
-- SQL Server 2008 (all SQL Server versions. Express Version don't include SSIS)
-- SQL Server 2008 R2
+
 - SQL Server 2012
 - SQL Server 2014
 - SQL Server 2016
@@ -26,8 +25,8 @@ Check our KB for [the list of supported SSIS & VS Versions](https://kb.theobald-
 {% include _content/en/requirements/operating-systems.md %}
 
 ## Other Applications and Frameworks<br/> 	
-- up to SSIS 2008: .NET Framework 3.5 SP1
-- starting from SSIS 2012: .NET Framework 4.5.2 or higher. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=42643).
+
+.NET Framework 4.7.1 or higher. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=56116)
 
 ## Hardware <br/>
 ### Memory<br/> 	

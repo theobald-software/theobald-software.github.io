@@ -17,9 +17,11 @@ Um ERPConnect im 64-Bit Modus ausführen zu können, benötigen Sie eine 64-Bit 
 
 Sie finden die 64-Bit-Version der librfc32.dll im Download-Bereich des SAPNet. Um ERPConnect  im 32-Bit-Modus laufen zu lassen, muss die 32-Bit-Version der librfc32.dll im Verzeichnis \SysWow64 liegen.
 
-Sie können die Versionen der librfc32.dll aus unserem Knowledgebase Artikel [Theobald Products in a 64-bit environment](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/71/0/theobald--products-in-a-64-bit-environment) herunterladen. Hier finden Sie auch weiterführende Informationen zur Installation.
+Beachten Sie, dass die Dateien den gleichen Dateinamen haben, nur die Dateigrösse variiert.
 
-Bitte beachten Sie, dass die Dateien den gleichen Dateinamen haben, nur die Dateigrösse variiert.
+Bitte stellen Sie auch sicher, dass Sie auch die neueste Visual C++ 2005 Runtime haben. Sie können diese [hier](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=766a6af7-ec73-40ff-b072-9112bab119c2) herunterladen.
+
+Beachten Sie, dass die Dateien den gleichen Dateinamen haben, nur die Dateigrösse variiert.
 
 ![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive"}
 
