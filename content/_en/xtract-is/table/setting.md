@@ -26,9 +26,9 @@ The name of the SAP function module used for table extraction. <br>
 On table lookup, the table component will automatically check for a suitable function module on the SAP system. This function module will be used for table extraction. However, you are free to overwrite this field and enter a different function module.<br>
 <br>
 Following is a list of supported function modules. Some of them may already be available on your SAP system, others you may need to install first, in case you need to use them.
-* Z_THEO_READ_TABLE, Z_AW_RFC_READ_TABLE
+* Z_THEO_READ_TABLE, Z_AW_RFC_READ_TABLE, Z_XTRACT_IS_TABLE
 * RFC_READ_TABLE, /SAPDS/RFC_READ_TABLE, /SAPDS/RFC_READ_TABLE2, /BODS/RFC_READ_TABLE, /BODS/RFC_READ_TABLE2
-* Z_XTRACT_IS_TABLE_COMPRESSION and Z_XTRACT_IS_TABLE (*only for legacy table components*)
+* Z_XTRACT_IS_TABLE_COMPRESSION  (*only for legacy table components*)
 
 
 We recommend using our custom function module [Z_THEO_READ_TABLE](https://help.theobald-software.com/en/xtract-is/sap-customizing/custom-function-module-for-table-extraction). You need to install this function module on your SAP system first.

@@ -16,7 +16,7 @@ Drag the component from the SSIS toolbox on your data flow task. Double-click th
 ![Table-01](/img/content/Table-01.png){:class="img-responsive" width="200px" }
 
 
-Click the *Add* button to open a dialog for table lookup. Enter the name of the table (wildcards like * are supported) and click on the *looking glass* button to invoke the search. Mark the table in the result list and click OK.
+Click on the *Add* button to open a dialog for table lookup. Enter the name of the table (wildcards like * are supported) and click on the *looking glass* button to invoke the search. Mark the table in the result list and click OK.
 
 ![Table-Lookup](/img/content/Table-Lookup.png){:class="img-responsive" width="600px" }
 
@@ -27,22 +27,7 @@ By clicking on the header fields, you can sort the columns by name or descriptio
 
 Click on the *Load live preview* button to load 100 records for preview.
 
-If you wish to extract only certain table data you can use a where condition. Click on the tab *WHERE clause*. 
-In this example, the following was selected:<br>
-*(LIKP\~VKORG = '1000' OR LIKP\~VKORG = '2000') AND LIKP\~ERDAT > '20010101'*
-
-The entered expression must correspond to the SAP OpenSQL syntax. For example, the expression may require a space before and after the operator. 
-Also pay attention to the format of the values. For example, a date field must be entered in the SAP notation YYYYMMDD.
-
-Optionally, click on the *Preview* button to preview the extraction.
-
-![Table-Where](/img/content/Table-Where.png){:class="img-responsive"}
-
-**SSIS Variables**
-
-It is also possible to use SSIS variables in the Where string as you are used to with SQL statements. 
-For example, define a variable VKORG in the data flow task and formulate your where statement as follows: LIKP\~VKORG = @vkorg. 
-Xtract IS recognizes the @-symbol and replaces the placeholder with the corresponding SSIS variable.
+If you wish to extract only certain table data you can use a where condition. See chapter *WHERE clause*.
 
 As soon as the data source is configured accordingly, the output columns are available for further processing.
 

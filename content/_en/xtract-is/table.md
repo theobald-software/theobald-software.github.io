@@ -12,12 +12,10 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=table
 ---
 
-This chapter explains how to handle the Xtract IS Table component.
+This chapter explains how to handle the Xtract IS Table component. The component contains two extraction types:
 
-The component enables mass data extraction directly from SAP tables and views. <br>
-Additionally, this component allows joining two or more SAP tables, a functionality previously only available in the *Xtract IS Table Join* component. 
-
-*Attention*: The table join functionality as part of this table component can *not* be used with Xtract IS Enterprise license.
+- **Table**: Enables mass data extraction directly from SAP tables and views.
+- **Table Join**: Allows joining two or more SAP tables on the SAP side before extraction, a functionality previously only available in the separate *Xtract IS Table Join* component. 
 
 The following source objects are supported by Xtract IS Table:
 
