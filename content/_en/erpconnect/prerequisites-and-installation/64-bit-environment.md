@@ -15,12 +15,11 @@ To use ERPConnect you need also the following SAP libraries.
 
 **The classic librfc32.dll assemblies**
   
-Please copy the 64-bit version of librfc32.dll in the \System32 folder.
+Please copy the 64-bit version of librfc32.dll in the \System32 folder. You can find the 64-bit version of librfc32.dll in the SAPNet download area.
 
 The 32-Bit Version has to be copied in the \SysWoW64 folder.
 
-To download the librfc32.dll please refer to the following page [Theobald Products in a 64-bit environment](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/71/0/theobald--products-in-a-64-bit-environment). 
-The assemblies have the same name and but a different file size.
+Note that the files have the same file name, only the file size varies.
 
 Please make sure you also have the latest Visual C++ 2005 Runtime. You can get it [here](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=766a6af7-ec73-40ff-b072-9112bab119c2).
 
