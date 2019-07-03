@@ -13,7 +13,9 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=where-clause
 
 The WHERE clause must comply with the SAP OpenSQL syntax.
 
-- Before and after the equal sign, you must enter a space, eg YEAR = '1999 '. For YEAR= '1999 ', YEAR ='1999' or YEAR='1999' you will get the error message *'A dynamically specified column name is unknown'*.
+**Attention:** It is mandatory to refer to a table field using the following syntax: [table]\~[field]
+
+- Before and after the equal sign, you must enter a space, e.g YEAR = '1999 '. For YEAR= '1999 ', YEAR ='1999' or YEAR='1999' you will get the error message *'A dynamically specified column name is unknown'*.
 - Floating point numbers must always be set in single quotation mark, e.g. KMENG > '10.3'. For KMENG > 10.3 you get the error message *'The WHERE clause has an unexpected format'*.
 - The Where clause must not contain any line break (return key).
 

@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=table-settings
 
 Use the Settings link in the editor to open the Settings dialog as shown in the picture below.
 
-![XIS_Table_Settings](/img/content/settings_xtractis_table.png){:class="img-responsive"}
+![XIS_Table_Settings](/img/content/Table-Settings.png){:class="img-responsive"}
 
 **Row Limit**<br>
 Specifies the maximum number of extracted records. The value 0 extracts the complete table.
