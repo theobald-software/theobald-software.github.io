@@ -13,8 +13,6 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 
 ### SQL Server
  	
-- SQL Server 2008 (alle SQL Server Versionen. Die Express-Version beinhaltet die SSIS nicht)
-- SQL Server 2008 R2
 - SQL Server 2012
 - SQL Server 2014
 - SQL Server 2016
@@ -69,8 +67,7 @@ Zusätzliche SAP-Lizenzen für die Extraktion der SAP-Daten können erforderlich
 
 ### Andere Anwendungen und Frameworks
  	
-- bis SSIS 2008: .NET Framework 3.5 SP1
-- ab SSIS 2012: .NET Framework 4.5.2 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/de-de/download/details.aspx?id=42643) herunterladen.
+.NET Framework 4.7.1 oder höher. Das Famework können Sie [hier] (https://www.microsoft.com/de-DE/download/details.aspx?id=56116) herunterladen.
 
 ### Arbeitsspeicher
  	
