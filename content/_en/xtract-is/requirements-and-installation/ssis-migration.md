@@ -22,8 +22,6 @@ Please do also note the dependency of Visual Studio/SSDT and SSIS version, see [
 2. Adaptation of the target deployment environment Migration from SSIS 2014/2016 to SSIS 2017
 3. Install the latest Xtract IS version  
 
-You can read the detailed step-by-step instructions in our [KB article](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
-
 ### Execute XtractISConversionPreparer.exe<br>
 The Xtract IS Conversion Preparer is a tool that takes SSIS packages created for older versions of SSIS  which contain Xtract components and prepares them for migration to newer versions of SSIS. This tool can be found in the Xtract IS installation folder.
 
@@ -47,6 +45,8 @@ Should you encounter an error message in Visual Studio after converting the SSIS
 **ATTENTION:**<br> 
 When opening the converted SSIS packages in Visual Studio please change the target server version accordingly and **save the SSIS package**.
 If you selected 'SSIS 2014' in Xtract IS Conversion Preparer, change the target server version to 'SQL Server 2014'. If you selected 'SSIS 2016'cahnge to 'SQL Server 2016'.
+
+You can read the detailed step-by-step instructions in our [KB article](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
 
 ### Migration from SSIS 2014/2016 to SSIS 2017<br>
 With VS/SSDT 2015 and 2017, you can select the target server version in the project's properties.
