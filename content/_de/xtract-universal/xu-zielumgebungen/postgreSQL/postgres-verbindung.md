@@ -22,7 +22,7 @@ Name bzw. IP des Datenbankservers und die Portnummer.
 PostgreSQL bietet native Unterstützung für die Verwendung von TLS-Verbindungen zur Verschlüsselung der Client/Server-Kommunikation für mehr Sicherheit, 
 siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
-Please make sure, that the certificate authority (CA) that has signed the certificate or the certificate itself is trusted by the client.
+Bitte stellen Sie sicher, dass die Zertifizierungsstelle (CA), die das Zertifikat signiert hat, oder das Zertifikat selbst vom Client vertrauenswürdig ist.
 
 **Windows Authentication**<br>
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am PostgreSQL Server zu authentisieren, siehe auch [Client Authentication](https://www.postgresql.org/docs/11/client-authentication.html).
