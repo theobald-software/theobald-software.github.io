@@ -21,8 +21,7 @@ Name or IP of the database server and the port number.
 **Require TLS encryption**<br>
 PostgreSQL provides native support for using TLS connections to encrypt client/server communication for increased security, see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
-For SSL encryption you require a certificate signed by a certificate authority (CA) (usually an enterprise-wide root CA) 
-whose identity can be validated by the client Xtract Universal is running on. Self-signed certificates are **not** supported.
+Please make sure, that the certificate authority (CA) that has signed the certificate or the certificate itself is trusted by the client.
 
 **Windows Authentication**<br>
 Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
