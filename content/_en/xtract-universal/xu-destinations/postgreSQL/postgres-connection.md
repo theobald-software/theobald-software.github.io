@@ -19,9 +19,7 @@ The following settings must be defined for the connection to the target database
 Name or IP of the database server and the port number.
 
 **Require TLS encryption**<br>
-PostgreSQL provides native support for using TLS connections to encrypt client/server communication for increased security, see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
-
-Please make sure, that the certificate authority (CA) that has signed the certificate or the certificate itself is trusted by the client.
+If this option is enabled, Xtact Universal will enforce encrypted TLS connections to the PostgreSQL server - unencrypted connections will not be established. If this option is disabled, encrypted TLS connection will be established if supported by the server - otherwise, unencrypted connections will be used. see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
 **Windows Authentication**<br>
 Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
