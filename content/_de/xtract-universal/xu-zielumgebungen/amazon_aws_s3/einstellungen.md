@@ -18,6 +18,10 @@ Einstellungen zu AWS S3, die pro Extraktion vorgenommen werden können.
 
 Die Einstellungsmöglichkeiten in der linken Fensterhälfte entsprechen denen, die auch für die [csv-flatfile](../zielumgebungen/csv-einstellungen-der-zielumgebung) Zielumgebung vorgenommen werden können.
 
+**Folder Path**
+Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines S3 Buckets extrahiert werden soll.
+Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: Ordner/Unterordner1/Unterordner2/...
+
 **Compression**
 
 **None**<br>

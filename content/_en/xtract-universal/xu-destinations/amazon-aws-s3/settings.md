@@ -17,6 +17,10 @@ Click on the Destination button to define extraction-specific settings of the ex
 
 The settings in the left part of the window correspond to the ones of the [flatfile csv-destination](../csv-flat-file/csv-destination-settings).
 
+**Folder Path**
+Enter a folder name without slashes here if you want the extraction to be extracted to a folder within an S3 bucket.
+Subfolders are also supported and can be entered as follows: Folder/Subfolder1/Subfolder2/...
+
 **Compression**
 
 **None**<br>
