@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-07
+ref: bc-SSO with SNC-07
 layout: page
 title: SSO with Kerberos SNC
 description: SSO with Kerberos SNC
 product: board-connector
-parent: advanced-techniques
+parent: SSO with SNC
 permalink: /:collection/:path
-weight: 7
+weight: 1
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=sso-with-snc
 ---	

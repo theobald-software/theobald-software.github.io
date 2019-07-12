@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-08
+ref: bc-SSO with SNC-08
 layout: page
 title: SSO with SAP Logon Ticket
 description: SSO with SAP Logon Ticket
 product: board-connector
-parent: advanced-techniques
+parent: SSO with SNC
 permalink: /:collection/:path
-weight: 8
+weight: 2
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=sso-with-snc
 ---	
