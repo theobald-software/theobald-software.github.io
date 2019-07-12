@@ -1,13 +1,13 @@
 ---
-ref: bc-advanced-techniques-01
+ref: bc-advanced-techniques-02
 layout: page
-title: User-Defined Variables
-description: User-Defined Variables
+title: Extraction Parameters
+description: Extraction Parameters
 product: board-connector
 parent: advanced-techniques
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=user-defined-variables
 ---
-{% include _content/en/advanced-techniques/user-defined-variables.md %}
+{% include _content/en/advanced-techniques/extraction-parameters.md %}

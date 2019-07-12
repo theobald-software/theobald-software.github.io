@@ -1,13 +1,13 @@
 ---
-ref: bc-advanced-techniques-01
+ref: bc-advanced-techniques-11
 layout: page
-title: User-Defined Variables
-description: User-Defined Variables
+title: Run from a command line
+description: Run from a command line
 product: board-connector
 parent: advanced-techniques
 permalink: /:collection/:path
-weight: 1
+weight: 11
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=user-defined-variables
 ---
-{% include _content/en/advanced-techniques/user-defined-variables.md %}
+{% include _content/en/advanced-techniques/run-from-a-command-line.md %}
