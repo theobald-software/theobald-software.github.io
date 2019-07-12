@@ -5,6 +5,7 @@ title: SSO with SNC
 description: SSO with SNC
 product: board-connector
 parent: advanced-techniques
+childidentifier: SSO-with-SNC
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

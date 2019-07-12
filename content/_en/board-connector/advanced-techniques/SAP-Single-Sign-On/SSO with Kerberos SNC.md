@@ -1,10 +1,10 @@
 ---
-ref: bc-SSO with SNC-07
+ref: bc-SSO with SNC-01
 layout: page
 title: SSO with Kerberos SNC
 description: SSO with Kerberos SNC
 product: board-connector
-parent: SSO with SNC
+parent: SSO-with-SNC
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
