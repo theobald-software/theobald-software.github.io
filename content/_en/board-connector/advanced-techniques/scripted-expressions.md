@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-12
+ref: bc-advanced-techniques-08
 layout: page
 title: Scripted Expressions
 description: Scripted Expressions
 product: board-connector
 parent: advanced-techniques
 permalink: /:collection/:path
-weight: 12
+weight: 8
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=scripted-expressions
 ---	
