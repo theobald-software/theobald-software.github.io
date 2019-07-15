@@ -8,7 +8,7 @@ parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 8
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=script-ausdruecke
+old_url: 
 ---
 
 {% include _content/de/fortgeschrittene-techniken/aufruf-mit-kommandozeile.md %}
