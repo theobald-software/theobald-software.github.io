@@ -1,13 +1,13 @@
 ---
-ref: xu-datasource-deltaq-06
+ref: bc-datasource-deltaq-06
 layout: page
 title: Update Mode
 description: Update Mode
-product: xtract-universal
+product: board-connector
 parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=update_mode
+old_url: /BOARD-Connector-EN/default.aspx?pageid=troubleshooting-deltaq
 ---
 {% include _content/en/datasource-deltaq/update-mode.md%}
