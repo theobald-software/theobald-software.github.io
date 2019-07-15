@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-05
+ref: bc-advanced-techniques-06
 layout: page
 title: SSO und SNC
 description: SSO und SNC
 product: board-connector
 parent: fortgeschrittene-techniken-obsolet
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sso-und-snc
 ---

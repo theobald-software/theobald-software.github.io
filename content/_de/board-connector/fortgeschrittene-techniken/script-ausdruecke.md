@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-09
+ref: bc-advanced-techniques-10
 layout: page
 title: Script-Ausdrücke
 description: Script-Ausdrücke
 product: board-connector
 parent: fortgeschrittene-techniken
 permalink: /:collection/:path
-weight: 9
+weight: 10
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=script-ausdruecke
 ---
