@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-02
+ref: bc-advanced-techniques-03
 layout: page
 title: Dynamische Verbindungsinformationen
 description: Dynamische Verbindungsinformationen
 product: board-connector
 parent: fortgeschrittene-techniken
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=dynamische-verbindungsinformationen
 ---
