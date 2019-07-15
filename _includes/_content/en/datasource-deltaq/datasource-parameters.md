@@ -12,15 +12,17 @@ The field Sign hast 2 Options: Include - Exclude. This selection determines for 
 
 The field Option contains the selection option for the condition of the row in form of logical operators:<br>
 
-'='  Equal<br>
-'!=' Not Equal<br>
-'<' Lower Than<br>
-'<=' Lower Equal Than <br>
-'>' Greater Than <br>
-'>=' Greater Equal Than <br>
-'[]' BeTween <br>
-'][' NotBetween<br>
-'* ' Contains Pattern (Like)
+|operator|description|
+|:---|:---|
+|'=' | Equal|
+|'!=' |Not Equal|
+|'<' |Lower Than|
+|'<=' |Lower Equal Than|
+|'>' |Greater Than|
+|'>='| Greater Equal Than|
+|'[]' |Between|
+|']['| NotBetween|
+|'*' |Contains Pattern (Like)|
 
 Low Value column is designated for the comparison value or the lower interval limitation.<br>
 High Value column is designated for the upper interval limitation.
