@@ -1,5 +1,5 @@
 ---
-ref: xu-advanced-techniques-02
+ref: xu-sso-02
 layout: page
 title: SSO with SAP Logon Ticket
 description: SSO with SAP Logon Ticket

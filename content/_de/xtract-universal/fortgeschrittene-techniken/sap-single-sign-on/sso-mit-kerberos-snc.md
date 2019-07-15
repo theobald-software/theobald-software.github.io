@@ -1,5 +1,5 @@
 ---
-ref: xu-advanced-techniques-01
+ref: xu-sso-01
 layout: page
 title: SSO mit Kerberos SNC
 description: SSO mit Kerberos SNC
