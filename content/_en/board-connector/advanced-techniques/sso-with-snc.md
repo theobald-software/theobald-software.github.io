@@ -11,4 +11,4 @@ weight: 6
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=sso-with-snc
 ---	
-{% include _content/en/advanced-techniques/SAP-Single-Sign-On.md %}
+{% include _content/en/advanced-techniques/sap-single-sign-on.md %}

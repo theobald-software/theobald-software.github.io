@@ -12,7 +12,7 @@ lang: en_GB
 
 For the example with the flexible data selection in cascading dropdown-lists, we also provide a mostly automated script with a few lines of code.
 This makes it possible for users without JavaScript knowledge to implement such scenarios. 
- 
+
 {% highlight javascript %}
 NWF$(document).ready(function () {
     theobald.ready(function () {
@@ -83,7 +83,6 @@ In addition, the following fields can be freely assigned in the *tableSettings* 
 
 The example is therefore adaptable and applicable for a multitude of possible scenarios, without complicated code.  
 
-
 **Step 2: Insert JavaScript code**
 
 Add a reference to our JavaScript library under *Form Settings -> Advanced -> Custom JavaScript Includes*:
@@ -96,18 +95,9 @@ The latest version of the JavaScript library can be obtained by entering the abb
 
 Insert the JavaScript code under *Form Settings -> Advanced -> Custom JavaScript*.
 
-
 **Step 3: Publish and execute the Nintex form.**
 
 After you have published the form, you can execute it and use the template.
 
 ![nintex-forms-js-dropdown-09](/img/content/nintex-forms-js-dropdown-09.gif){:class="img-responsive"}
-
-
-
-
-
-
-
-
 

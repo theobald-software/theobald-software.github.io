@@ -17,7 +17,7 @@ Um eine Vorlage zu editieren bzw. zu löschen, klicken Sie entsprechend auf *Edi
 
 **Authentifizierung via SSO/SNC**
 
-siehe [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/SAP-Single-Sign-On)
+siehe [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-single-sign-on)
 
 
 

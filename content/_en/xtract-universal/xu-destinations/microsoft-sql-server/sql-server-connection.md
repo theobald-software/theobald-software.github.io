@@ -32,7 +32,7 @@ Uses the service account, under which the XU service is running, for authenticat
 **Impersonate authenticated caller**<br>
 Uses the Windows AD user, executing the extraction, for authentication against SQL Server using [Kerberos authentication.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
 <br>
-For using this functionality a similar configuration as for [Kerberos Single Sign On against SAP](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/SAP-Single-Sign-On/SSO%20mit%20Kerberos%20SNC) is required.
+For using this functionality a similar configuration as for [Kerberos Single Sign On against SAP](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-single-sign-on/sso-with-kerberos-snc) is required.
 
 
 **User Name**<br>

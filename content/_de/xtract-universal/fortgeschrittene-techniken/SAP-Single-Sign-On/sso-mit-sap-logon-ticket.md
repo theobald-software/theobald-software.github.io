@@ -4,7 +4,7 @@ layout: page
 title: SSO mit SAP Logon Ticket
 description: SSO mit SAP Logon Ticket
 product: xtract-universal
-parent: SAP-Single-Sign-On
+parent: sap-single-sign-on
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

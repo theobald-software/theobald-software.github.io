@@ -4,7 +4,7 @@ layout: page
 title: SSO mit Kerberos SNC
 description: SSO mit Kerberos SNC
 product: xtract-universal
-parent: SAP-Single-Sign-On
+parent: sap-single-sign-on
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
