@@ -21,3 +21,4 @@ Bitte leiten Sie die zip-Dateien an Ihre SAP Basis Adminstratoren weiter mit der
 
 Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
 
+**Achtung**: Die Verwendung des Z_THEO_READ_TABLE erfordert **SAP_ABA Version 6.40** oder höher.

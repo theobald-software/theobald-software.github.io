@@ -14,4 +14,4 @@ Please forward these zip files to your SAP Basis team and ask them for an import
 
 For more detailed information about installing the transport request please read the following [knowledgebase article](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms?fromSearch=true) or check the SAP help.
 
-
+**Attention**: Please be aware that Z_THEO_READ_TABLE requires **SAP_ABAP version 6.40** or higher.
