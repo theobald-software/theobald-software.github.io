@@ -8,6 +8,7 @@ parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 7
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
+old_url: 
 ---
+
 {% include _content/de/fortgeschrittene-techniken/metadaten-zugriff-ueber-http.md %}
