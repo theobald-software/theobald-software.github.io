@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-02
+ref: bc-advanced-techniques-03
 layout: page
 title: Dynamic Connection Parameters
 description: Dynamic Connection Parameters
 product: board-connector
 parent: advanced-techniques
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=dynamic-connection-parameters
 ---	
