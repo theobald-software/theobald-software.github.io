@@ -10,4 +10,4 @@ weight: 6
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sso-und-snc
 ---
-{% include _content/de/fortgeschrittene-techniken/sap-single-sign-on.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/sap-single-sign-on.md %}

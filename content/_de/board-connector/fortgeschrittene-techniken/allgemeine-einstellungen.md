@@ -10,4 +10,4 @@ weight: 4
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=allgemeine-einstellungen
 ---
-{% include _content/de/fortgeschrittene-techniken/allgemeine-einstellungen.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/allgemeine-einstellungen.md %}

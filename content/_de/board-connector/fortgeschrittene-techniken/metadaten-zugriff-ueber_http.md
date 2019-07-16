@@ -11,4 +11,4 @@ lang: de_DE
 old_url: 
 ---
 
-{% include _content/de/fortgeschrittene-techniken/metadaten-zugriff-ueber-http.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/metadaten-zugriff-ueber-http.md %}

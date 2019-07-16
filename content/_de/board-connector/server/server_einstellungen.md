@@ -10,4 +10,4 @@ weight: 3
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=server-einstellungen
 ---
-{% include _content/de/server/server_einstellungen_in_xu_3_x.md %}
+{% include _content/de/xu-specific/server/server_einstellungen_in_xu_3_x.md %}

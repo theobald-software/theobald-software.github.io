@@ -10,5 +10,5 @@ weight: 5
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=extraktionssicherheit
 ---
-{% include _content/de/sicherheit/migration_von_xu_2_x_nach_xu_3_x.md %}
+{% include _content/de/xu-specific/sicherheit/migration_von_xu_2_x_nach_xu_3_x.md %}
 

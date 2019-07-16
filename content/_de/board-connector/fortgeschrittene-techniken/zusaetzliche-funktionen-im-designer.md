@@ -10,4 +10,4 @@ weight: 6
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
 ---
-{% include _content/de/fortgeschrittene-techniken/zusaetzliche-funktionen-im-designer.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/zusaetzliche-funktionen-im-designer.md %}

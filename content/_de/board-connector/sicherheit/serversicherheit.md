@@ -10,4 +10,4 @@ weight: 3
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=serversicherheit
 ---
-{% include _content/de/sicherheit/serversicherheit1.md %}
+{% include _content/de/xu-specific/sicherheit/serversicherheit1.md %}

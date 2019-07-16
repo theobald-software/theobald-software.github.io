@@ -10,5 +10,5 @@ weight: 5
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sap-verbindungen
 ---
-{% include _content/de/fortgeschrittene-techniken/sap-verbindungen-anlegen.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/sap-verbindungen-anlegen.md %}
 

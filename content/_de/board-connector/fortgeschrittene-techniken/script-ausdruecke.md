@@ -10,4 +10,4 @@ weight: 10
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=script-ausdruecke
 ---
-{% include _content/de/fortgeschrittene-techniken/skript-ausdruecke.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/skript-ausdruecke.md %}

@@ -10,4 +10,4 @@ weight: 2
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=ports
 ---
-{% include _content/de/server/ports.md %}
+{% include _content/de/xu-specific/server/ports.md %}

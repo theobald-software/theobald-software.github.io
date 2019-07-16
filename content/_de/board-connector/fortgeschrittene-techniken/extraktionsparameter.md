@@ -10,4 +10,4 @@ weight: 2
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
 ---
-{% include _content/de/fortgeschrittene-techniken/extraktionsparameter.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/extraktionsparameter.md %}
