@@ -43,7 +43,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
  	
 - Visual C++ 2005 Runtime. Die Runtime können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=14431) herunterladen.
 - .NET Framework 3.0 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=21) herunterladen.
-- Librfc32.dll falls SAP GUI nicht installiert ist. Der Download erfolgt, nach vorheriger Anmeldung, über das [SAP Launchpad Portal] (https://launchpad.support.sap.com/).
+- Librfc32.dll falls SAP GUI nicht installiert ist. Der Download erfolgt, nach vorheriger Anmeldung, über das [SAP Launchpad Portal](https://launchpad.support.sap.com/) .
 
 **Arbeitsspeicher**
  	
