@@ -10,4 +10,4 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server-logging
 ---
-{% include _content/de/logging/server-logging.md %}
+{% include _content/de/xu-specific/logging/server-logging.md %}

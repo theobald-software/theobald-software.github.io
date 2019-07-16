@@ -10,7 +10,7 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=log-zugriff-ueber-http
 ---
-{% include _content/de/logging/log-zugriff-ueber-http.md %} 
+{% include _content/de/xu-specific/logging/log-zugriff-ueber-http.md %} 
 
 
 
