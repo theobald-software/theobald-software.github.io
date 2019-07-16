@@ -10,4 +10,4 @@ weight: 4
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=general-settings
 ---	
-{% include _content/en/advanced-techniques/general-settings.md %}
+{% include _content/en/xu-specific/advanced-techniques/general-settings.md %}

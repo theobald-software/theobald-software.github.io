@@ -10,5 +10,5 @@ weight: 1
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=user-management
 ---
-{% include _content/en/security-xu3/user-management.md %}
+{% include _content/en/xu-specific/security-xu3/user-management.md %}
 

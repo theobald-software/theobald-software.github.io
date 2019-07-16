@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=server-settings
 ---
 
-{% include _content/en/server/server-settings.md %}
+{% include _content/en/xu-specific/server/server-settings.md %}

@@ -10,4 +10,4 @@ weight: 8
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=general-settings
 ---	
-{% include _content/en/advanced-techniques/metadata-access-via-http.md %}
+{% include _content/en/xu-specific/advanced-techniques/metadata-access-via-http.md %}

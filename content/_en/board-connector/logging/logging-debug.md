@@ -10,4 +10,4 @@ weight: 1
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=debug-logging
 ---
-{% include _content/en/logging/logging-debug.md %}
+{% include _content/en/xu-specific/logging/logging-debug.md %}

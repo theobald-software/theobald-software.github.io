@@ -10,4 +10,4 @@ weight: 4
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=logging-access-via-http
 ---
-{% include _content/en/logging/logging-access-via-http.md %}
+{% include _content/en/xu-specific/logging/logging-access-via-http.md %}

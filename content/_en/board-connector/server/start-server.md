@@ -10,5 +10,5 @@ weight: 1
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=start-server
 ---
-{% include _content/en/server/start-server.md %}
+{% include _content/en/xu-specific/server/start-server.md %}
 
