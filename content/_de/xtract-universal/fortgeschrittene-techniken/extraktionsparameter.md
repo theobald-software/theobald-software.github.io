@@ -10,7 +10,7 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionsparameter
 ---
-{% include _content/de/fortgeschrittene-techniken/extraktionsparameter.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/extraktionsparameter.md %}
   
 
 

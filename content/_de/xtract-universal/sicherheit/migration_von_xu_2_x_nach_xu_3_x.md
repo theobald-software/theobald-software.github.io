@@ -10,4 +10,4 @@ weight: 99
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=migration_von_xu_2_x_nach_xu_3_x
 ---
-{% include _content/de/sicherheit/migration_von_xu_2_x_nach_xu_3_x.md %}
+{% include _content/de/xu-specific/sicherheit/migration_von_xu_2_x_nach_xu_3_x.md %}

@@ -10,6 +10,6 @@ weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sap-verbindungen-anlegen
 ---
-{% include _content/de/fortgeschrittene-techniken/sap-verbindungen-anlegen.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/sap-verbindungen-anlegen.md %}
 
 

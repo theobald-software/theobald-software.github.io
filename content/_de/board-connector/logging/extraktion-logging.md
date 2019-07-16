@@ -10,4 +10,4 @@ weight: 3
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=extraktion-logging
 ---
-{% include _content/de/logging/extraktion-logging.md %}
+{% include _content/de/xu-specific/logging/extraktion-logging.md %}

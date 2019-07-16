@@ -10,4 +10,4 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=benutzerdefinierte-variablen
 ---
-{% include _content/de/fortgeschrittene-techniken/benutzerdefinierte-variablen.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/benutzerdefinierte-variablen.md %}
