@@ -35,8 +35,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 | **BAPI**      | Rel. 4.0B und höher.   | Keine.                                                               |
 | **Report**    | Rel. 4.0B und höher.   | [Installation eines Z-Moduls](https://help.theobald-software.com/de/xtract-is/sap-customizing/report-funktionsbaustein-installieren) ist notwendig.                           |
 | **BW Cube**   | Rel. BW 3.1 und höher. | Keine.                                                               |
-| **Hierarchy** | Rel. BW 3.1 und höher. | Keine.                                                               |
-                                                       |
+| **Hierarchy** | Rel. BW 3.1 und höher. | Keine.                                                               |                                                
 
 {% include _content/de/operating-systems.md %}
 
