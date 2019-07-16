@@ -10,4 +10,4 @@ weight: 7
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=additional-functions-in-designer
 ---
-{% include _content/en/advanced-techniques/additional-functions-in-designer.md %}
+{% include _content/en/xu-specific/advanced-techniques/additional-functions-in-designer.md %}
