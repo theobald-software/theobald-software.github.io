@@ -35,8 +35,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 | **BAPI**      | Rel. 4.0B und höher.   | Keine.                                                               |
 | **Report**    | Rel. 4.0B und höher.   | [Installation eines Z-Moduls](https://help.theobald-software.com/de/xtract-is/sap-customizing/report-funktionsbaustein-installieren) ist notwendig.                           |
 | **BW Cube**   | Rel. BW 3.1 und höher. | Keine.                                                               |
-| **Hierarchy** | Rel. BW 3.1 und höher. | Keine.                                                               |
-                                                       |
+| **Hierarchy** | Rel. BW 3.1 und höher. | Keine.                                                               |                                                
 
 {% include _content/de/operating-systems.md %}
 
@@ -44,7 +43,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
  	
 - Visual C++ 2005 Runtime. Die Runtime können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=14431) herunterladen.
 - .NET Framework 3.0 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=21) herunterladen.
-- Librfc32.dll falls SAP GUI nicht installiert ist. Einen Download-Link finden Sie [hier](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/54/9/useful-links).
+- Librfc32.dll falls SAP GUI nicht installiert ist. Der Download erfolgt, nach vorheriger Anmeldung, über das [SAP Launchpad Portal](https://launchpad.support.sap.com/) .
 
 **Arbeitsspeicher**
  	
@@ -62,7 +61,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
  	
 - Benutzerauthentifizierung.
 - SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
-- SAP System oder or Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
+- SAP System oder or Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
 
 **Netzwerkeinstellungen**
  	
