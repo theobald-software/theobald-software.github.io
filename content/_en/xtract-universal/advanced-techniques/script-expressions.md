@@ -10,4 +10,4 @@ weight: 10
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=script-expressions
 ---
-{% include _content/xu-specific/en/advanced-techniques/script-expressions.md %}
+{% include _content/en/xu-specific/advanced-techniques/script-expressions.md %}
