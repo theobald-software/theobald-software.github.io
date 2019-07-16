@@ -10,4 +10,4 @@ weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
 ---
-{% include _content/en/advanced-techniques/sap-connection.md %}
+{% include _content/en/xu-specific/advanced-techniques/sap-connection.md %}

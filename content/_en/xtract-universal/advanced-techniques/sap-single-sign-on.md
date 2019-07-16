@@ -11,5 +11,5 @@ weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sso-with-snc
 ---
-{% include _content/en/advanced-techniques/sap-single-sign-on.md %}
+{% include _content/en/xu-specific/advanced-techniques/sap-single-sign-on.md %}
 

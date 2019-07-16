@@ -10,4 +10,4 @@ weight: 9
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=run-from-a-command-line
 ---
-{% include _content/en/advanced-techniques/run-from-a-command-line.md %}
+{% include _content/en/xu-specific/advanced-techniques/run-from-a-command-line.md %}

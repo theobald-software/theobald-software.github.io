@@ -10,4 +10,4 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=user-defined-variables
 ---
-{% include _content/en/advanced-techniques/user-defined-variables.md %}
+{% include _content/en/xu-specific/advanced-techniques/user-defined-variables.md %}
