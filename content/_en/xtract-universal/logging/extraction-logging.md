@@ -10,4 +10,4 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-logging
 ---
-{% include _content/en/logging/extraction-logging.md %}
+{% include _content/en/xu-specific/logging/extraction-logging.md %}
