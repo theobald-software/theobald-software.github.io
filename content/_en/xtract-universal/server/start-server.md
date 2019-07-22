@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=start-server
 ---
 
-{% include _content/en/server/start-server.md %}
+{% include _content/xu-specific/en/server/start-server.md %}
