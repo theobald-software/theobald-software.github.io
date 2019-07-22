@@ -5,7 +5,8 @@ The service can be started and stopped via the Windows Services administration.
 ![Services-Start-Server](/img/content/Services-Start-Server.jpg){:class="img-responsive"}
 
 To uninstall the service use the command 
-
-*XtractService.exe /u*  
+```
+XtractService.exe /u
+```
 
 If you can not start the Server because the default port is reserved, please open the ServerConfig.xml file in the installation directory and set a suitable port.
