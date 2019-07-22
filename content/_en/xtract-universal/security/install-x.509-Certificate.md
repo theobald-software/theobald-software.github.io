@@ -10,7 +10,7 @@ weight: 4
 lang: en_GB
 ---
 
-{% include _content/en/x509-certificate.md  %}
+{% include _content/en/xu-specific/x509-certificate.md  %}
 
 
 

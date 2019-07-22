@@ -10,6 +10,6 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=server_security
 ---
-{% include _content/en/security-xu3/server-security.md %}
+{% include _content/en/xu-specific/security-xu3/server-security.md %}
 
  
