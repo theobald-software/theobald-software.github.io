@@ -10,4 +10,4 @@ weight: 2
 lang: de_DE
 old_url: 
 ---
-{% include _content/de/fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket.md %}
