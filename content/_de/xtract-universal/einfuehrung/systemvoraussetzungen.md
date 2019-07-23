@@ -46,7 +46,7 @@ wobei *nn* die Instanznummer des SAP Systems ist (z.B. 00 oder 99). <br>
 - SAP Router: Port 3399
 
 **Sicherheitseinstellungen** <br> 	
-- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungosbjekten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungosbjekten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights) .
 - SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
 
 
