@@ -22,5 +22,11 @@ Klicken Sie nun auf *Install*. Ein Dateiauswahldialog öffnet sich. Wählen Sie 
 
 ![XtractRS-Full-License](/img/content/XtractRS-Full-License.png){:class="img-responsive"}
 
-
 Dieses Bild zeigt eine korrekt installierte, dauerhafte Lizenz.
+
+Folgende Grafik zeigt, auf welchen Rechnern Xtract RS installiert und eine gültige Xtract RS Lizenz eingespielt werden muss. Xtract RS wird pro Windows Server lizenziert (der Server, auf den Reports deployt und ausgeführt werden). 
+Dieselbe Lizenzdatei kann auf den lokalen Workstations zur Entwicklung der Reports verwendet werden.<br>
+
+
+![license_structures_xrs](/img/content/xrs/license_structures_xrs.png){:class="img-responsive"}
+
