@@ -13,15 +13,15 @@ Defines the port number, where the server communicates with the designer. The de
 Defines the maximum age of the congig server log files in days. After this period, the log files are beeing deleted.
 
 **Authentication methods** <br>
-see chapter [User Management](../security-xu3/user-management)
+see chapter [User Management](../security/user-management)
 
 **Select X.509 certificate** <br>
 
-See chapter [Installing an X.509 certificate](../security-xu3/install-x.509-Certificate) 
+See chapter [Installing an X.509 certificate](../security/install-x.509-Certificate) 
 
 
 **Access Management** <br>
-see chapter [Access Management](../security-xu3/access-management)
+see chapter [Access Management](../security/access-management)
 
 ### Web Server
 
@@ -41,7 +41,7 @@ See chapter [Installing an X.509 certificate](../security/install-x.509-Certific
 
 
 **HTTPS - Restricted to AD users with Designer read access** <br>
-See *HTTPS - Unrestricted*. In addition to that this setting enables access control for executing an extraction. Extractions can only be executed by Windows AD users who have at least been assigned *read access* in the *Configuration Server* tab. Please do also see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and chapter on [server security](../security-xu3/server-security).  
+See *HTTPS - Unrestricted*. In addition to that this setting enables access control for executing an extraction. Extractions can only be executed by Windows AD users who have at least been assigned *read access* in the *Configuration Server* tab. Please do also see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and chapter on [server security](../security/server-security).  
 
 
 **Max. age of log files (days)** <br>
