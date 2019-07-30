@@ -21,4 +21,4 @@ You can assign one or more keywords (Tags) to an extraction. Within the designer
 Select the primary key fields of the extraction. This is required for the merge operation.
 
 **Security Tab**<br>
-The security tab is described in the chapter [access management](../security-xu3/access-management).
+The security tab is described in the chapter [access management](../security/access-management).
