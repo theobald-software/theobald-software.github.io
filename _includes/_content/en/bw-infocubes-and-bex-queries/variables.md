@@ -6,7 +6,7 @@ Depending on the type of BEx variable (single value, multiple value, interval or
 
 As shown in the screenshot, instead of hard coding a value for the BEx variable you can use variables. This applies to regular extraction mode as well as [MDX extraction](./bw-cube-extraction-settings.md) mode. Please add an @ right before the value entered in the input field to mark it as a variable. The variables will become part of the extraction's URL where you can assign values to them (see section on [User-Defined Variables](../advanced-techniques/user-defined-variables)).
 
-![Cube-Variables](/img/content/Cube-Variables.png){:class="img-responsive"}
+![Cube-Variables](/img/content/Cube-Variables.png){:class="img-responsive"} 
 
 Variables in regular extraction mode (above) and MDX extraction mode (below).
 
