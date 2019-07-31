@@ -26,7 +26,7 @@ Auf dieser Seite werden die notwendigen Schritte beschrieben, um SSO mit SNC und
 
 Diese Einstellung hat erstmal nicht direkt mit dem Einrichten von SSO zu tun, ist allerdings Voraussetzung dafür. 
 SSO funktioniert nur, sofern der Extraktionsaufruf per HTTPS erfolgt. Hierfür muss ein X.509-Zertifikat in Xtract Universal bekannt gemacht werden.
-Siehe Kapitel [X.509 Zertifikat installieren](../sicherheit/x.509-zertifikat-installieren)
+Siehe Kapitel [X.509 Zertifikat installieren](../../sicherheit/x.509-zertifikat-installieren)
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
