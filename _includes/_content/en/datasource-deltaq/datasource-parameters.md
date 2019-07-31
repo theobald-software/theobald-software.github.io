@@ -28,5 +28,5 @@ Low Value column is designated for the comparison value or the lower interval li
 High Value column is designated for the upper interval limitation.
  
 
-Variables and [script expressions](../advanced-techniques/script-expressions)are supported too. 
+Variables and [script expressions](../advanced-techniques/script-expressions) are supported too. 
 Parameters are not allowed with the Delta Update Mode, since the parameters of the Init mode will be automatically applied. 
