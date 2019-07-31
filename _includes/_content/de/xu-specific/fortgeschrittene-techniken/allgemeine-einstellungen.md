@@ -25,4 +25,4 @@ Hier werden die Schlüsselfelder definiert. Dieser Schritt ist nötig für die M
 
 **Security Reiter**
 
-Der Security Reiter ist im Kapitel [Zugriffsverwaltung](../Sicherheit/zugriffsverwaltung) beschrieben.
+Der Security Reiter ist im Kapitel [Zugriffsverwaltung](../xu-specific/sicherheit/zugriffsverwaltung1) beschrieben. 
