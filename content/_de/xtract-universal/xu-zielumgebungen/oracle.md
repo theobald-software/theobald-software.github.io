@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-07
+ref: xu-destinations-17
 layout: page
 title: Oracle
 description: Oracle
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: oracle
 permalink: /:collection/:path
-weight: 7
+weight: 17
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=oracle
 ---

@@ -1,13 +1,13 @@
 ---
-ref: xu-destinations-05
+ref: xu-destinations-11
 layout: page
-title: EXASolultion
+title: EXASolution
 description: EXASolultion
 product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: exasol
 permalink: /:collection/:path
-weight: 5
+weight: 11
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=exasol
 ---

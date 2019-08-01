@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-11
+ref: xu-destinations-07
 layout: page
 title: Amazon AWS S3
 description: Amazon AWS S3
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: amazon_aws_s3
 permalink: /:collection/:path
-weight: 11
+weight: 7
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=amazon_aws_s3
 ---

@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-20
+ref: xu-destinations-25
 layout: page
 title: Tableau
 description: Tableau
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: tableau
 permalink: /:collection/:path
-weight: 20
+weight: 25
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=tableau
 ---
