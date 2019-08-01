@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-50
+ref: xu-destinations-19
 layout: page
 title: Power BI Connector (beta)
 description: Power BI Connector (beta)
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: Power-BI-Connector-(beta)
 permalink: /:collection/:path
-weight: 16
+weight: 19
 lang: en_GB
 old_url: 
 ---

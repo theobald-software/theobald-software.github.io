@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-16
+ref: xu-destinations-20
 layout: page
 title: Power BI Service
 description: Power BI (Cloud)
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: Power BI Service
 permalink: /:collection/:path
-weight: 16
+weight: 20
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=powerbi__cloud_
 ---

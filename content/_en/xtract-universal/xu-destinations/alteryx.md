@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-08
+ref: xu-destinations-05
 layout: page
 title: Alteryx
 description: Alteryx
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: alteryx
 permalink: /:collection/:path
-weight: 8
+weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=alteryx
 ---

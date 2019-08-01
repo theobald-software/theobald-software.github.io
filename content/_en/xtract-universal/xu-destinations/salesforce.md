@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-12
+ref: xu-destinations-22
 layout: page
 title: Salesforce
 description: Salesforce
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: salesforce
 permalink: /:collection/:path
-weight: 12
+weight: 22
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=salesforce
 ---

@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-19
+ref: xu-destinations-16
 layout: page
 title: MySQL
 description: MySQL
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: mysql
 permalink: /:collection/:path
-weight: 19
+weight: 16
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=mysql
 ---

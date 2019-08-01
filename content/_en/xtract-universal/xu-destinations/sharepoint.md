@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-13
+ref: xu-destinations-24
 layout: page
 title: SharePoint
 description: SharePoint
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: sharepoint
 permalink: /:collection/:path
-weight: 13
+weight: 24
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sharepoint_list
 ---

@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-18
+ref: xu-destinations-23
 layout: page
 title: SAP HANA
 description: SAP HANA
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: sap-hana
 permalink: /:collection/:path
-weight: 18
+weight: 23
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=hana
 ---

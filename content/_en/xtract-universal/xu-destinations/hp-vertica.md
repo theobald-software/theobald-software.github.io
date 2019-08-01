@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-22
+ref: xu-destinations-12
 layout: page
 title: HP Vertica
 description: HP Vertica
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: hp-vertica
 permalink: /:collection/:path
-weight: 22
+weight: 12
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=vertica
 ---
