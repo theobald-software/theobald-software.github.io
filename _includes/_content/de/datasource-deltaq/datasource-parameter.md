@@ -32,5 +32,5 @@ Die Spalte Low Value muss bei jedem Operator gefüllt werden.<br>
 Die Spalte High Value wird nur von den Operatoren verwendet, welche einen zweiten Paramter erwarten. 
 
 
-Auch Variablen und [Skript-Ausdrücke](../xu-specific/fortgeschrittene-techniken/skript-ausdruecke) werden unterstützt.<br>
+Auch Variablen und [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) werden unterstützt.<br>
 Parameter (Filter) sind nicht erlaubt für den Delta Update Modus, denn die Filter des Init Modus werden hier angewendet. 

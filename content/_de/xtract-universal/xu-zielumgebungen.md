@@ -52,7 +52,7 @@ Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-P
 **Generische Destinations:**
 - [CSV Webservice](./xu-zielumgebungen/csv-via-http) 
 - [OData Webservice](./xu-zielumgebungen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
-- [Flat File - CSV](./xu-zielumgebungen/zielumgebungen) (Comma-seperated values)
+- [Flat File - CSV](./xu-zielumgebungen/csv-flat-file) (Comma-seperated values)
             
 **Pull- und Push-Destinationen**
 Zwei Typen von Datenzielen werden angeboten, je nachdem wo der Extraktionsprozess gestartet wird. 
