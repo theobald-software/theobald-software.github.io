@@ -17,7 +17,7 @@ see chapter [User Management](../security/user-management)
 
 **Select X.509 certificate** <br>
 
-See chapter [Installing an X.509 certificate](../security/x509-certificate) 
+See chapter [Installing an X.509 certificate](../security/install-x.509-Certificate) 
 
 
 **Access Management** <br>
