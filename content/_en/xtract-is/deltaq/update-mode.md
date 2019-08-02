@@ -26,7 +26,7 @@ Should you encounter unexpected errors or aborts during a delta run, you are hig
 In order to run delta extractions, you firts need to initialize the delta process. This update mode initiliazies the delta process and extracts all data in full mode at the same time.
 Should you want to re-initilize a delta process, it's recommende to delete any exsiting Inits by clicking on the "Request Maintenance" button in the DeltaQ Extraction Settings.
 
-**C - Delta Init (without data)**<br>
+**S - Delta Init (without data)**<br>
 In order to run delta extractions, you firts need to initialize the delta process. This update mode only initiliazies the delta process but does not extract any data.
 Should you want to re-initilize a delta process, it's recommende to delete any exsiting Inits by clicking on the "Request Maintenance" button in the DeltaQ Extraction Settings.
 
