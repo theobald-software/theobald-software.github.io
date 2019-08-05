@@ -16,7 +16,11 @@ Folgende Einstellungen können für die Verbindung zum Microsoft SQL Server defi
 ![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.jpg){:class="img-responsive"}
 
 **Server Name**<br>
-Name des Datenbank-Servers.
+Connection String zum SQL Server. Bitte folgende Syntax beachten:
+- [ServerName], [Port] innerhalb des Netzwerks
+- [ServerName].[Domain], [Port] außerhalb des Netzwerks
+
+Die Angabe des Ports ist nur notwendig, wenn dieser abseits vom SQL Standard editiert wurde.
 
 **Require TLS encryption**<br>
 Clientseitiges Erzwingen von [TLS Verschlüsselung](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Setzt folgende Parameter im Connection String:<br>
