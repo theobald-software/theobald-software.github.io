@@ -17,7 +17,7 @@ The following settings can be defined for the Microsoft SQL Server connection.
 
 
 **Server Name**<br>
-Connection String to SQL Server. Please note the following syntax:
+Specifies the host address of the SQL Server. Please note the following syntax:
 - [ServerName], [Port] within the network
 - [ServerName].[Domain], [Port] outside the network
 
