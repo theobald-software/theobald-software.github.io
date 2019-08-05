@@ -18,8 +18,12 @@ The following settings can be defined for the Microsoft SQL Server connection.
 
 **Server Name**<br>
 Specifies the host address of the SQL Server. Please note the following syntax:
-- [ServerName], [Port] within the network
-- [ServerName].[Domain], [Port] outside the network
+
+|syntax | e.g. |
+|:---|:---|
+|[ServerName]| `dbtest`|
+|[ServerName],[Port]| `dbtest,1433`|
+|[ServerName].[Domain],[PORT] |  `dbtest.theobald.software,1433`|
 
 It is only necessary to specify the port if it has been edited outside the SQL standard.
 
