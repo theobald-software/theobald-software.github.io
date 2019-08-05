@@ -17,7 +17,11 @@ The following settings can be defined for the Microsoft SQL Server connection.
 
 
 **Server Name**<br>
-Defines the name of the host the SQL server is running on.
+Connection String to SQL Server. Please note the following syntax:
+- [ServerName], [Port] within the network
+- [ServerName].[Domain], [Port] outside the network
+
+It is only necessary to specify the port if it has been edited outside the SQL standard.
 
 **Require TLS encryption**<br>
 Clientside enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following paramenters to the connection string:<br>
