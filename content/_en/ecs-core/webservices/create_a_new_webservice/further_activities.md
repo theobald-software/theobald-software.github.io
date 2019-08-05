@@ -11,4 +11,4 @@ weight: 6
 lang: en_GB
 ---
 
-{% include _content/en/further_activities.md %} 
+{% include _content/en/ecs-ecscore/further_activities.md %} 
