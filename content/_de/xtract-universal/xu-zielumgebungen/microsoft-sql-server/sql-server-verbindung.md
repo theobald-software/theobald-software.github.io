@@ -16,7 +16,7 @@ Folgende Einstellungen können für die Verbindung zum Microsoft SQL Server defi
 ![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.jpg){:class="img-responsive"}
 
 **Server Name**<br>
-Connection String zum SQL Server. Bitte folgende Syntax beachten:
+Angabe der Host Adresse des SQL Server. Bitte folgende Syntax beachten:
 - [ServerName], [Port] innerhalb des Netzwerks
 - [ServerName].[Domain], [Port] außerhalb des Netzwerks
 
