@@ -17,8 +17,8 @@ Folgende Einstellungen können für die Verbindung zum Microsoft SQL Server defi
 
 **Server Name**<br>
 Angabe der Host Adresse des SQL Server. Bitte folgende Syntax beachten:
-- [ServerName], [Port] innerhalb des Netzwerks
-- [ServerName].[Domain], [Port] außerhalb des Netzwerks
+- [ServerName]Komma[Port] innerhalb des Netzwerks - Bsp: `dbtest,1433`
+- [ServerName]Punkt[Domain]Komma[Port] außerhalb des Netzwerks Bsp: `dbtest.theobald.software,1433`
 
 Die Angabe des Ports ist nur notwendig, wenn dieser abseits vom SQL Standard editiert wurde.
 
