@@ -23,7 +23,7 @@ Specifies the host address of the SQL Server. Please note the following syntax:
 |:---|:---|
 |[ServerName]| `dbtest`|
 |[ServerName],[Port]| `dbtest,1433`|
-|[ServerName].[Domain],[PORT] |  `dbtest.theobald.software,1433`|
+|[ServerName].[Domain],[Port] |  `dbtest.theobald.software,1433`|
 
 It is only necessary to specify the port if it has been edited outside the SQL standard.
 
