@@ -21,8 +21,8 @@ Angabe der Host Adresse des SQL Server. Bitte folgende Syntax beachten:
 |Syntax | Beispiel |
 |:---|:---|
 |[ServerName]| `dbtest`|
-|[ServerName],[Port]| `dbtest,1433`|
-|[ServerName].[Domain],[Port] |  `dbtest.theobald.software,1433`|
+|[ServerName],[Port]| `dbtest,51433`|
+|[ServerName].[Domain],[Port] |  `dbtest.theobald.software,51433`|
 
 Die Angabe des Ports ist nur notwendig, wenn dieser abseits vom SQL Standard editiert wurde.
 
