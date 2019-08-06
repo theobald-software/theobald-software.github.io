@@ -75,7 +75,7 @@ Daraus ergibt sich folgende Kompatibilitätsmatrix:
 
 ### Sicherheitseinstellungen
  	
-- Für die Anmeldung am SAP wird ein System- oder Dialog-Anwender mit den entsprechenden [Authorisierungs-Objekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights) benötigt.
+- Für die Anmeldung am SAP wird ein System- oder Dialog-Anwender mit den entsprechenden [Authorisierungs-Objekten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights) benötigt.
 - Plain authentication (Benutzer/Passwort), Secure Network Communications (SNC) mit und ohne Single Sign-On (SSO) und SAP Logon Tickets (MYSAPSSO2) werden unterstützt.
 
 ### Netzwerkeinstellungen
