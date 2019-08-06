@@ -5,6 +5,7 @@ title: Einstellungen der Zielumgebung
 description: Einstellungen der Zielumgebung
 product: xtract-universal
 parent: csv-flat-file
+childidentifier: zielumgebungen
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

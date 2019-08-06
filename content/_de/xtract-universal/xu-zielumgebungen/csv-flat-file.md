@@ -5,7 +5,7 @@ title: Flat File - CSV
 description: Flat File - CSV
 product: xtract-universal
 parent: xu-zielumgebungen
-childidentifier: zielumgebungen
+childidentifier: csv-flat-file
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
