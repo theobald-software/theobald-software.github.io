@@ -21,4 +21,6 @@ Bitte leiten Sie die zip-Dateien an Ihre SAP Basis Adminstratoren weiter mit der
 
 Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
 
-**Achtung**: Die Verwendung des Z_THEO_READ_TABLE erfordert **SAP_ABA Version 6.40** oder höher.
+**Achtung**:
+- Die Verwendung des Z_THEO_READ_TABLE erfordert **SAP_ABA Version 6.40** oder höher.
+- Z_THEO_READ_TABLE-before_740SP05 unterstützt keine sub-selects in WHERE-Bedingungen. Das ist eine Einschränkung des [SAP Open SQL](https://blogs.sap.com/2014/02/06/abap-news-for-release-740-sp05/). Bitte nutzen Sie für diesen Fall den Z_XTRACT_IS_TABLE_COMPRESSION.
