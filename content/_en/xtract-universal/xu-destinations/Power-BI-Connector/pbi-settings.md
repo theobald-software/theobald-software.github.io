@@ -4,7 +4,7 @@ layout: page
 title: Settings
 description: Settings
 product: xtract-universal
-parent: Power-BI-Connector-(beta)
+parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

@@ -4,7 +4,7 @@ layout: page
 title: Power BI service
 description: PBI service
 product: xtract-universal
-parent: Power-BI-Connector-(beta)
+parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

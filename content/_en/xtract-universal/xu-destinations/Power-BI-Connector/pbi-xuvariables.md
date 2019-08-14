@@ -4,7 +4,7 @@ layout: page
 title: XU Variables in PBI
 description: XU Variables in PBI
 product: xtract-universal
-parent: Power-BI-Connector-(beta)
+parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 7
 lang: en_GB

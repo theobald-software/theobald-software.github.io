@@ -4,7 +4,7 @@ layout: page
 title: Power Query M-script
 description: Power Query M-script 
 product: xtract-universal
-parent: Power-BI-Connector-(beta)
+parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

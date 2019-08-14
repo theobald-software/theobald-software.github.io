@@ -4,7 +4,7 @@ layout: page
 title: Power BI custom connector
 description: Connection in Power BI
 product: xtract-universal
-parent: Power-BI-Connector-(beta)
+parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

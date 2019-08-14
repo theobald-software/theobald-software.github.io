@@ -4,7 +4,7 @@ layout: page
 title: Connection
 description: Connection
 product: xtract-universal
-parent: Power-BI-Connector-(beta)
+parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
