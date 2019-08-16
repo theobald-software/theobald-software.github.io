@@ -34,5 +34,6 @@ The following overview shows which components can be used to extract data from S
 | BW Cube     |     | X  |
 | Hierarchy   |     | X  |
 | OHS         |     | X  |
+| ODP | X | X |
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

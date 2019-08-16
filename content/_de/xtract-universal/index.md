@@ -33,6 +33,7 @@ In der unteren Übersicht finden Sie, welche Komponente für die Datenextraktion
 | BW Cube     |     | X  |
 | Hierarchy   |     | X  |
 | OHS         |     | X  |
+| ODP | X | X |
 
 Hier finden Sie die folgenden Kapitel:
 
