@@ -40,6 +40,7 @@ The required license for using the different components in SAP ERP and SAP BW ca
 | Hierarchy   |     | R  |                    | X                |
 | OHS         |     | R  |                    | X                |
 | BW Loader   |     | W  |                    | X                | 
+| ODP | R | R |  | X |
 
 Here you can find the following chapters:
 
