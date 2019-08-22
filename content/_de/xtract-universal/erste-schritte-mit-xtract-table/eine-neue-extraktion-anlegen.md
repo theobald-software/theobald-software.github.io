@@ -90,7 +90,7 @@ Es stehen folgende Funktionen zur Aggregierung von numerischen Spalteninhalten z
 - MIN: Der Minimalwert wird gebildet. 
 - SUM: Die Summe wird gebildet.
 
-**Use Conversion Routine** <br>
+**Use Conversion Routine (Conv.)** <br>
 Definiert, ob die im Data Dictionary hinterlegte Konvertierungsroutinen für die jeweiligen Felder angewendet werden. 
 Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). 
 Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
