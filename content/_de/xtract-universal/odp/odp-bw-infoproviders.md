@@ -4,7 +4,7 @@ layout: page
 title: BW InfoProvider
 description: BW InfoProvider
 product: xtract-universal
-parent: odp
+parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

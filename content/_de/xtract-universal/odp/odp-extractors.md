@@ -4,7 +4,7 @@ layout: page
 title: Extraktoren
 description: Extraktoren und Datasources
 product: xtract-universal
-parent: odp
+parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

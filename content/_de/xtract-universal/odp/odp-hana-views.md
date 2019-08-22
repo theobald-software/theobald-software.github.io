@@ -4,7 +4,7 @@ layout: page
 title: HANA Views
 description: HANA Views
 product: xtract-universal
-parent: odp
+parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
