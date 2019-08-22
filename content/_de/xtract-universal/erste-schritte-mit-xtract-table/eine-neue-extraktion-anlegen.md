@@ -54,24 +54,50 @@ Wählen Sie die zuvor erstellte SAP-Verbindung und geben Sie der Extraktion eine
 
 Anschließend definieren Sie, um welchen Typ von Extraktion es sich handelt. In unserem Fall wollen wir eine *Tabelle* aus SAP extrahieren. 
 
-![Add-Extraction](/img/content/xu_tabellen_extraktion_anlegen.png){:class="img-responsive"}
+![Add-Extraction](/img/content/xu/xu_tabellen_extraktion_anlegen.png){:class="img-responsive"}
 
-Nun öffnet sich der leere Tabellen-Dialog. Klicken Sie auf den *Suchen*-Button, um eine Tabelle zu suchen.
+Nun öffnet sich der Tabellen-Dialog zur Definition von einfachen Tabellen-Extraktionen oder auch Tabellen-Joins. Im folgenden Beispiel soll eine einzelne Tabelle extrahiert werden.
 
-![New-Table-Extraction](/img/content/xu_tabelle_suchen.png){:class="img-responsive"}
+Klicken Sie auf *Add*, um eine Tabelle hinzuzufügen.
+
+![New-Table-Extraction](/img/content/xu/xu_tabelle_suchen.png){:class="img-responsive"}
 
 Im Suchen-Dialog geben Sie den Namen der zu extrahierenden Tabelle ein, klicken auf den *Suchen*-Button, wählen die gewünschte Tabelle aus und bestätigen Sie mit *OK*.
 
 Wie Sie erkennen können, ist die Eingabe einer Wildcard (*) ebenfalls in der Suchleiste möglich.
 
-![Look-Up-Table](/img/content/xu_tabelle_auswählen.png){:class="img-responsive"}
+![Look-Up-Table](/img/content/xu/xu_tabelle_auswählen.png){:class="img-responsive"}
 
-Die Anwendung kehrt nun zurück zum Hauptdialog. Die Spalten der Tabelle wurden aus dem SAP abgerufen und können durch Anklicken für die Extraktion gewählt werden <br>
-Dabei ist es möglich über *Select All* oder *Select None* alle in der Tabelle verfügbareren Spalten an- oder abzuwählen oder einzeln die zu extrahierenden Spalten anzuwählen.
+Die Anwendung kehrt nun zurück zum Hauptdialog. Die Spalten der Tabelle wurden aus SAP abgerufen und werden in der Box rechts unter "Fields" angezeigt. <br>
+Es können entweder alle oder nur einzelne Spalten selektiert werden. Des Weiteren stehen folgende Optionen bei der Spaltenselektion zur Verfügung. <br>
 
-![Table-Form](/img/content/xu_felder_auswählen_where_bedingung.png){:class="img-responsive"}
+![Table-Form](/img/content/xu/xu_felder_auswählen.png){:class="img-responsive"}
 
-In das Textfeld können noch WHERE-Bedingungen angegeben werden. Diese müssen dem von SAP vorgegebenen Standard für OpenSQL entsprechen.
+**Filter** 
+Der Spaltenname und die Spaltenbeschreibung lassen sich filtern.
+
+**Alias**
+Die technischen SAP-Spaltennamen können hier umbenannt werden.
+
+**Aggregate Function** 
+Es stehen folgende Funktionen zur Aggregierung von insbesondere numerischen Spalteninhalten zur Verfügung
+- None: Keine Aggregierung 
+- AVG: Durchschnittswert wird gebildet.
+- COUNT: Zähler über alle Werte wird gesetzt.  
+- MAX: Der Maximalwert wird gebildet.
+- MIN: Der Minimalwert wird gebildet. 
+- SUM: Die Summe wird gebildet.
+
+**Use Conversion Routine**
+Definiert, ob die im Data Dictionary hinterlegte Konvertierungsroutinen für die jeweiligen Felder angewendet werden. 
+Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). 
+Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
+Diese Option wird nur im Zusammenhang mit den Funktionsbausteinen Z_THEO_READ_TABLE und Z_XTRACT_IS_TABLE_COMPRESSION unterstützt. 	
+
+Unter *Preview* können Extraktionsdaten im Preview-Modus angezeigt werden. Klicken Sie dazu auf *Load live preview*.
+Mit der Preview lassen sich auch die Aggregierungsfunktionen als Vorschau anzeigen. 
+ 
+![Table-Form](/img/content/xu/xu_preview_mode.png){:class="img-responsive"}
 
 Bestätigen Sie mit OK, um die Extraktion im Repository - also auf dem Server - zu speichern.
 
