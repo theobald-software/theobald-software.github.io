@@ -10,7 +10,7 @@ weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-neue-extraktion-anlegen
 ---
-### SAP-Verbinung anlegen
+### SAP-Verbindung anlegen
 
 Wählen Sie den Menüpunkt **Server -> Manage Sources**.
 
@@ -69,18 +69,20 @@ Wie Sie erkennen können, ist die Eingabe einer Wildcard (*) ebenfalls in der Su
 ![Look-Up-Table](/img/content/xu/xu_tabelle_auswählen.png){:class="img-responsive"}
 
 Die Anwendung kehrt nun zurück zum Hauptdialog. Die Spalten der Tabelle wurden aus SAP abgerufen und werden in der Box rechts unter "Fields" angezeigt. <br>
-Es können entweder alle oder nur einzelne Spalten selektiert werden. Des Weiteren stehen folgende Optionen bei der Spaltenselektion zur Verfügung. <br>
+Es können entweder alle oder nur einzelne Spalten selektiert werden. <br>
 
 ![Table-Form](/img/content/xu/xu_felder_auswählen.png){:class="img-responsive"}
 
-**Filter** 
+Des Weiteren stehen folgende Optionen bei der Spaltenselektion zur Verfügung. <br>
+
+**Filter** <br>
 Der Spaltenname und die Spaltenbeschreibung lassen sich filtern.
 
-**Alias**
+**Alias** <br>
 Die technischen SAP-Spaltennamen können hier umbenannt werden.
 
-**Aggregate Function** 
-Es stehen folgende Funktionen zur Aggregierung von insbesondere numerischen Spalteninhalten zur Verfügung
+**Aggregate Function** <br>
+Es stehen folgende Funktionen zur Aggregierung von numerischen Spalteninhalten zur Verfügung:
 - None: Keine Aggregierung 
 - AVG: Durchschnittswert wird gebildet.
 - COUNT: Zähler über alle Werte wird gesetzt.  
@@ -88,16 +90,16 @@ Es stehen folgende Funktionen zur Aggregierung von insbesondere numerischen Spal
 - MIN: Der Minimalwert wird gebildet. 
 - SUM: Die Summe wird gebildet.
 
-**Use Conversion Routine**
+**Use Conversion Routine** <br>
 Definiert, ob die im Data Dictionary hinterlegte Konvertierungsroutinen für die jeweiligen Felder angewendet werden. 
 Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). 
 Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
 Diese Option wird nur im Zusammenhang mit den Funktionsbausteinen Z_THEO_READ_TABLE und Z_XTRACT_IS_TABLE_COMPRESSION unterstützt. 	
 
-Unter *Preview* können Extraktionsdaten im Preview-Modus angezeigt werden. Klicken Sie dazu auf *Load live preview*.
+Unter *Preview* können Extraktionsdaten im Preview-Modus angezeigt werden. Klicken Sie dazu auf *Load live preview*. <br>
 Mit der Preview lassen sich auch die Aggregierungsfunktionen als Vorschau anzeigen. 
  
-![Table-Form](/img/content/xu/xu_preview_mode.png){:class="img-responsive"}
+![Table-Form](/img/content/xu/xu_preview_modus.png){:class="img-responsive"}
 
 Bestätigen Sie mit OK, um die Extraktion im Repository - also auf dem Server - zu speichern.
 
