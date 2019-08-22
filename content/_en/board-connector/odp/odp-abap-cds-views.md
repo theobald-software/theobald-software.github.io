@@ -1,5 +1,5 @@
 ---
-ref: bc-odp-abap-cds
+ref: bc-odp-abap-cds-03
 layout: page
 title: ABAP CDS Views
 description: ABAP CDS Views

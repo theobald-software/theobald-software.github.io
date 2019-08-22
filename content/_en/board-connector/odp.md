@@ -4,7 +4,7 @@ layout: page
 title: ODP
 description: Operational Data Provisioning (ODP)
 product: board-connector
-parent: board-connector_tmp
+parent: board-connector
 childidentifier: odp
 permalink: /:collection/:path
 weight: 15

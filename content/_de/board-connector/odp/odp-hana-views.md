@@ -1,5 +1,5 @@
 ---
-ref: bc-odp-hana-views
+ref: bc-odp-hana-views-04
 layout: page
 title: HANA Views
 description: HANA Views
