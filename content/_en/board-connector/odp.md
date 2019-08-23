@@ -1,7 +1,7 @@
 ---
 ref: board-connector-15
 layout: page
-title: ODP
+title: Operational Data Provisioning (ODP)
 description: Operational Data Provisioning (ODP)
 product: board-connector
 parent: board-connector
