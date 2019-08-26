@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-table-06
+ref: xu-table-05
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: table
 permalink: /:collection/:path
-weight: 6
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionseinstellungen
 ---

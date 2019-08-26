@@ -1,17 +1,17 @@
 ---
-ref: xu-getting-started-table-08
+ref: xu-table-04
 layout: page
 title: HAVING Bedingung
 description: HAVING Bedingung
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: table
 permalink: /:collection/:path
-weight: 8
+weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=where-bedingung
 ---
 
-Eine HAVING-Bedingung kann im Karteireiter *HAVING Clause* hinterlegt und das Ergebnis mit *Load live preview* angezeigt werden. Nur in der HAVING Clause werden die Agreggatfunktionen aus der Spaltenauswahl unterstützt und müssen dementsprechend auch aktiviert sein. <br> 
+Eine HAVING-Bedingung kann im Karteireiter *HAVING Clause* hinterlegt und das Ergebnis mit *Load live preview* angezeigt werden. Nur in der HAVING Clause werden die Aggregatfunktionen aus der Spaltenauswahl unterstützt und müssen dementsprechend auch aktiviert sein. <br> 
 
 Beachten Sie, dass bei nicht eindeutigen Feldnamen, der Tabellennamme in der HAVING Bedingung aufgeführt sein muss (z.B. MAKT~MATNR). Dies kann z.B. bei Tabellen-Joins der Fall sein.     
 

@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-table-09
+ref: xu-table-06
 layout: page
 title: Einschränkungen umgehen
 description: Einschränkungen umgehen
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: table
 permalink: /:collection/:path
-weight: 9
+weight: 6
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einschraenkungen_umgehen
 ---
