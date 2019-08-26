@@ -19,7 +19,7 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 
 bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 - **Same as name of SAP object**: Name des SAP-Objekts übernehmen
-- **Same as name of extraction**: Name der Extraktion übernehmen und
+- **Same as name of extraction**: Name der Extraktion übernehmen
 - **Custom**: Hier können Sie einen eigenen Namen definieren.  
 
 **Column Name Style** 
