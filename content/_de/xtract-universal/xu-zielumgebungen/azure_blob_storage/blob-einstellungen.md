@@ -15,7 +15,7 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
 
-**Table Name**
+#### Table Name
 
 bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 - **Same as name of SAP object**: Name des SAP-Objekts übernehmen
@@ -24,7 +24,7 @@ bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 
 - **Append timestamp**: fügt den aktuellen Zeitstempel im Format [_YYYY_MM_DD_hh_mm_ss_fff] dem Dateinamen der Extraktion hinzu.
 
-**Column Name Style** 
+#### Column Name Style
 
 Definiert den Spaltennamen. Folgende Optionen sind verfügbar: 
 
@@ -35,7 +35,7 @@ Definiert den Spaltennamen. Folgende Optionen sind verfügbar:
 **CodeAndText**: Der technische Name und die Beschreibung der Spalte aus SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet, z.B. MAKTX_Material Description (Short Text).<br>
 **TextAndCode**: Die Beschreibung und der technische Name der Spalte SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet, z.B. Material Description (Short Text)_MAKTX.
 
-**Date conversion**
+#### Date conversion
 
 **Convert date strings**<br>
 Konvertiert das zeichenartige SAP-Datum (YYYYMMDD, z.B. 19900101) zu einem formatierten Datum (YYYY-MM-DD, z.B. 1990-01-01). Im Datenziel hat das SAP-Datum keinen String-Datentyp sondern einen echten Datumstyp.
@@ -52,7 +52,7 @@ Konvertiert das SAP-Datum 00000000 zu diesem Wert.
 **Convert 9999XXXX to**<br>
 Konvertiert das SAP-Datum 9999XXXX zu diesem Wert.
 
-**Compression**
+#### Compression
 
 **None**<br>
 Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
@@ -60,13 +60,15 @@ Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
 **gzip**<br>
 Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt. 
 
-**Blob Type**
+#### Blob Type
 
 **Append Blob**<br>
 Bestehend aus Blöcken, analog zu Blob Type, und sind optimiert für Anhängevorgänge.
 
 **Block Blob**<br>
 Text- und Binärdaten bestehend aus Datenblöcken, die einzeln verwaltet werden können.
+
+
 
 Nach der erfolgreichen Extraktion finden Sie die Daten im Azure BLOB Storage.
 
