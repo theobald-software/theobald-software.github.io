@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=where-bedingung
 
 Unter dem Karteireiter *Joins* können in der Komponente ab Version 4.x Tabellen-Joins definiert werden. Für Versionen älter als 4.x beachten Sie den Abschnitt zur separaten [Table Join](../table-join) Komponente. <br>
 
-Die *Joins* funktion dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join).  <br>
+Die *Joins* Funktion dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen.  <br>
 Mögliche Szenarien dafür wären, Tabellen für Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen. <br>
 Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt. <br>
 
@@ -31,13 +31,18 @@ Im Beispiel sollen die Tabellen MARA und MAKT gejoined werden. Fügen Sie hierf�
 
 **Felder selektieren**
 
-Selektieren Sie anschließend die gewünschten Felder in den Tabellen. Bei der Selektion stehen die unter [Tabellen und Felder](../tabellen_und felder) erläuterten Aggriegierungsfunktionen zur Verfügung. 
+Selektieren Sie anschließend die gewünschten Felder in den Tabellen. Bei der Selektion stehen die unter [Tabellen und Felder](../table/tabellen_und felder) erläuterten Aggregierungsfunktionen zur Verfügung. 
 
 Hier ein Beispiel, um die Anzahl des Sprachen-Felds (SPRAS) in der Tabelle MAKT zurückzugeben.   
 
 ![Table-Join-Felder](/img/content/xu/xu_join_felder_auswählen.png){:class="img-responsive"}
 
 **Verknüpfung definieren**
+
+Wechselt man nun in den *Joins* Dialog ist bereits eine Inner-Join Verknüpfung vordefiniert. Für die Details klicken Sie auf das Stift-Symbol. Wie Sie sehen, wurde die Tabelle MARA (Linke Tabelle) mit der Tabelle MAKT (Rechte Tabelle) anhand der Felder MATNR und MANDT mit dem Join Typ "Inner" zusammengefügt. 
+
+![Table-Join-Verknüpfungen](/img/content/xu/xu_join_verknüpfungen_01.png){:class="img-responsive"}
+   
 
 
 
