@@ -15,14 +15,14 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 
 ![ext_spec_set_de_form_debug](/img/content/ext_spec_set_de_form_debug.jpg){:class="img-responsive"}
 
-**Table Name**
+#### Table Name
 
 bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 - **Same as name of SAP object**: Name des SAP-Objekts übernehmen
 - **Same as name of extraction**: Name der Extraktion übernehmen
 - **Custom**: Hier können Sie einen eigenen Namen definieren.  
 
-**Column Name Style** 
+#### Column Name Style
 
 Definiert den Spaltennamen. Folgende Optionen sind verfügbar: 
 
@@ -32,7 +32,7 @@ Definiert den Spaltennamen. Folgende Optionen sind verfügbar:
 **CodeAndText**: Der technische Name und die Beschreibung der Spalte aus SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet, z.B. MAKTX_Material Description (Short Text).<br>
 **TextAndCode**: Die Beschreibung und der technische Name der Spalte SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet, z.B. Material Description (Short Text)_MAKTX.
 
-**Date conversion**
+#### Date conversion
 
 **Convert date strings**<br>
 Konvertiert das zeichenartige SAP-Datum (YYYYMMDD, z.B. 19900101) zu einem formatierten Datum (YYYY-MM-DD, z.B. 1990-01-01). Im Datenziel hat das SAP-Datum keinen String-Datentyp sondern einen echten Datumstyp.
