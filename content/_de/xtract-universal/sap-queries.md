@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-11
+ref: xtract-universal-12
 layout: page
 title: SAP Queries
 description: SAP Queries
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: sap-queries
 permalink: /:collection/:path
-weight: 11
+weight: 12
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sqp-queries
 ---

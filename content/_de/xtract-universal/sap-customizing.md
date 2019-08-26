@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-19
+ref: xtract-universal-20
 layout: page
 title: SAP Customizing
 description: SAP Customizing
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: sap-customizing
 permalink: /:collection/:path
-weight: 19
+weight: 20
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=SAPCustomizing-DE:sap-customizing-DE
 ---

@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-table-07
+ref: xu-table-03
 layout: page
 title: WHERE Bedingung
 description: WHERE Bedingung
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: table
 permalink: /:collection/:path
-weight: 7
+weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=where-bedingung
 ---

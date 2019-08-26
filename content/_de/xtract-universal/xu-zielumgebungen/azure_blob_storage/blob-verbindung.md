@@ -34,8 +34,6 @@ Wenn die Verbindung erfolgreich war, poppt ein Infofenster hoch, und Sie können
 **Container**<br>
 Auswahl des Blob Containers, in den die extrahierten Daten geschrieben werden sollen.
 
-![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02.png){:class="img-responsive"}
-
 #### CSV Settings
 
 ![azure_blob_destination_settings_csv_settings](/img/content/azure_blob_destination_settings_csv_settings.png){:class="img-responsive"}
