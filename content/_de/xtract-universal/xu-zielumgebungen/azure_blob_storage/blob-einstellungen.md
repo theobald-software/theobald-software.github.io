@@ -28,7 +28,7 @@ bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 
 Definiert den Spaltennamen. Folgende Optionen sind verfügbar: 
 
-![Ex-Spec-Settings-Makt-ColumnName](/img/content/column_name_style_options.jpg){:class="img-responsive"}
+![column_name_style_options](/img/content/column_name_style_options.png){:class="img-responsive"}
 
 **Code**: Der technische Spaltenname aus SAP wird als Spaltenname verwendet, z.B. MAKTX.<br>
 **PrefixedCode**: Der technische Name der Tabelle wird mit dem Tilde Zeichen und dem entsprechenden Spaltennamen verbunden, z. B. T001W~MANDT<br>
