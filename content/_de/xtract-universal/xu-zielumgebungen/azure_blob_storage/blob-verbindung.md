@@ -27,14 +27,15 @@ Angabe des Storage Account Name im Azure Portal.
 **Key**<br>
 ist der Zugangsschlüssel zum Azure BLOB Konto.  
 
+![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
+
 **Connect**<br>
 Klicken Sie auf die Connect-Schaltfläche, nachdem Sie Account Name und Key eingegeben haben. <br>
 Wenn die Verbindung erfolgreich war, poppt ein Infofenster hoch, und Sie können anschließend einen Container auswählen.
 
-![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
 
 **Container**<br>
-Auswahl des Blob Containers, in den die extrahierten Daten geschrieben werdne sollen.
+Auswahl des Blob Containers, in den die extrahierten Daten geschrieben werden sollen.
 
 ![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02.png){:class="img-responsive"}
 
