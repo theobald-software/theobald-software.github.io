@@ -11,6 +11,10 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=where-bedingung
 ---
 
+Eine WHERE-Bedingung kann im Karteireiter *WHERE Clause* hinterlegt und das Ergebnis mit *Load live preview* angezeigt werden. Beachten Sie, dass bei nicht eindeutigen Feldnamen, der Tabellennamme in der WHERE Bedingung aufgeführt sein muss (z.B. MAKT~MATNR). Dies kann z.B. bei Tabellen-Joins der Fall sein.     
+
+![Extraction-Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+
 Die WHERE-Bedingung muss der SAP OpenSQL Syntax entsprechen.
 
 - Vor und nach dem Gleichheitszeichen müssen Sie immer ein Leerzeichen eingeben, z.B. JAHR = '1999'. Für YEAR= '1999 ', YEAR ='1999' or YEAR='1999' erhalten Sie die Fehlermeldung 'A dynamically specified column Name is unknown'.
