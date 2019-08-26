@@ -13,11 +13,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-verbindung
 
 Folgende Einstellungen werden für die Verbindung zum Azure Blob Storage benötigt.  
 
-#### Blob Storage Settings
+#### Blob Storage Settings - Connection
 
 Hierüber authentifizieren Sie sich beim Azure BLOB Storage. Über das Azure Portal können Sie diese Werte ermitteln.
-
-**Connection**
 
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01.png){:class="img-responsive"}
 
@@ -32,7 +30,6 @@ ist der Zugangsschlüssel zum Azure BLOB Konto.
 **Connect**<br>
 Klicken Sie auf die Connect-Schaltfläche, nachdem Sie Account Name und Key eingegeben haben. <br>
 Wenn die Verbindung erfolgreich war, poppt ein Infofenster hoch, und Sie können anschließend einen Container auswählen.
-
 
 **Container**<br>
 Auswahl des Blob Containers, in den die extrahierten Daten geschrieben werden sollen.
