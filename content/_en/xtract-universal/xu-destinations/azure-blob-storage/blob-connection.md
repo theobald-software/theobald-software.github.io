@@ -11,31 +11,31 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 ---
 
-The following settings can be made when setting up an connection. 
+The following settings are required to connect to the Azure Blob Storage.  
 
-**Account Name and Key**
+#### Blob Storage Settings - Connection
 
-This is how you authenticate against your Account. You can determine these values via Azure Portal. 
-- Account Name: is the storage account name.
-- Key: can be found under Settings -> Access keys -> key1. 
-
-![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
-
-Please see Azure documentation for further information.
+This authenticates you to the Azure BLOB Storage. You can determine these values using the Azure Portal.
 
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01.png){:class="img-responsive"}
 
-**Connect**
+**Account Name**<br>
+Storage Account Name in the Azure Portal.
 
-After entering Account Name and Key, click on the Connect button. After a successful connection you can select the BLOB container. 
+Key****<br>
+is the access key to the Azure BLOB account.  
+
+![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
+
+**Connect**<br>
+Click the Connect button after entering Account Name and Key. <br>
+If the connection was successful, an info window pops up and you can then select a container.
+
+Container**<br> **Container**<br>
+Selection of the blob container into which the extracted data is to be written.
 
 ![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02.png){:class="img-responsive"}
 
-**Container**
+#### CSV Settings
 
-Select a BLOB Container. The SAP data will be extracted into this BLOB Container.
-
-
-**CSV Settings**
-
-The settings in the tab CSV Settings correspond to the ones in the general [http-csv settings](../csv-via-http).
+![azure_blob_destination_settings_csv_settings](/img/content/azure_blob_destination_settings_csv_settings.png){:class="img-responsive"}

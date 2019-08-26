@@ -19,7 +19,7 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 
 bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 - **Same as name of SAP object**: Name des SAP-Objekts übernehmen
-- **Same as name of extraction**: Name der Extraktion übernehmen und
+- **Same as name of extraction**: Name der Extraktion übernehmen
 - **Custom**: Hier können Sie einen eigenen Namen definieren.  
 
 - **Append timestamp**: fügt den aktuellen Zeitstempel im Format [_YYYY_MM_DD_hh_mm_ss_fff] dem Dateinamen der Extraktion hinzu.
@@ -28,7 +28,7 @@ bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 
 Definiert den Spaltennamen. Folgende Optionen sind verfügbar: 
 
-![Ex-Spec-Settings-Makt-ColumnName](/img/content/column_name_style_options.jpg){:class="img-responsive"}
+![Ex-Spec-Settings-Makt-ColumnName](/img/content/column_name_style_options.png){:class="img-responsive"}
 
 **Code**: Der technische Spaltenname aus SAP wird als Spaltenname verwendet, z.B. MAKTX.<br>
 **PrefixedCode**: Der technische Name der Tabelle wird mit dem Tilde Zeichen und dem entsprechenden Spaltennamen verbunden, z. B. T001W~MANDT<br>
