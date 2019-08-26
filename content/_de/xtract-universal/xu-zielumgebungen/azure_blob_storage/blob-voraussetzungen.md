@@ -11,11 +11,6 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-voraussetzungen
 ---
 
-Sie benötigen ein Azure BLOB Storage Konto.
-
-Für die Verbindung mit dem Azure BLOB Storage werden folgende Informationen benötigt: 
-- Account Name: ist der Storage-Kontoname.
-- Key: ist der Schlüssel und kann in Ihrem Azure BLOB Konto unter Settings -> Access keys -> key1 gefunden werden. 
-- Der Name des BLOB Containers.  
+Für die Verwendung der Azure Blob Destination benötigen Sie ein Azure BLOB Storage Konto. Weiterführende Informationen entnehmen Sie bitte der offiziellen [Microsoft Azure Dokumentation](https://docs.microsoft.com/de-de/azure/storage/blobs/storage-blob-create-account-block-blob)
 
 ![azure-blob-storage-02](/img/content/azure-blob-storage-02.png){:class="img-responsive"}
