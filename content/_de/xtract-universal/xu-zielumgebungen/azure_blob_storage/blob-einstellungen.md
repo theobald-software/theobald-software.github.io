@@ -22,13 +22,13 @@ bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 - **Same as name of extraction**: Name der Extraktion übernehmen und
 - **Custom**: Hier können Sie einen eigenen Namen definieren.  
 
-- **Append timestamp**: fügt den aktuellen Zeitstempel im Format [_YYYY_MM_DD_hh_mm_ss_fff] dem Dateinamen der Extraktion hinzu
+- **Append timestamp**: fügt den aktuellen Zeitstempel im Format [_YYYY_MM_DD_hh_mm_ss_fff] dem Dateinamen der Extraktion hinzu.
 
 **Column Name Style** 
 
 Definiert den Spaltennamen. Folgende Optionen sind verfügbar: 
 
-![Ex-Spec-Settings-Makt-ColumnName](/img/content/Ex-Spec-Settings-Makt-ColumnName.jpg){:class="img-responsive"}
+![Ex-Spec-Settings-Makt-ColumnName](/img/content/column_name_style_options.jpg){:class="img-responsive"}
 
 **Code**: Der technische Spaltenname aus SAP wird als Spaltenname verwendet, z.B. MAKTX.<br>
 **PrefixedCode**: Der technische Name der Tabelle wird mit dem Tilde Zeichen und dem entsprechenden Spaltennamen verbunden, z. B. T001W~MANDT<br>
