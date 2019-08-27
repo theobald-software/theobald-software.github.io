@@ -37,9 +37,9 @@ Hier ein Beispiel, um die Anzahl des Sprachen-Felds (SPRAS) in der Tabelle MAKT 
 
 ![Table-Join-Felder](/img/content/xu/xu_join_felder_auswählen.png){:class="img-responsive"}
 
-**Verknüpfung definieren**
+**Verknüpfungen definieren**
 
-Wechselt man nun in den *Joins* Dialog ist bereits eine Inner-Join Verknüpfung vordefiniert. Für die Details klicken Sie auf das Stift-Symbol. Wie Sie sehen, wurde die Tabelle MARA (Linke Tabelle) mit der Tabelle MAKT (Rechte Tabelle) anhand der Felder MATNR und MANDT mit dem Join Typ "Inner" zusammengefügt. 
+Wechselt man nun in den *Joins* Dialog ist bereits eine Inner-Join Verknüpfung vordefiniert. Für die Details klicken Sie auf das Stift-Symbol. Im Beispiel wurde die Tabelle MARA (Linke Tabelle) mit der Tabelle MAKT (Rechte Tabelle) anhand der Felder MATNR und MANDT mit dem Join Typ "Inner" zusammengefügt. 
 
 ![Table-Join-Verknüpfungen](/img/content/xu/xu_join_verknüpfungen_01.png){:class="img-responsive"}
    
