@@ -17,9 +17,12 @@ When you click the **Destination** button, you can set extraction-specific setti
 #### Table Name
 
 determines the name of the target table. You have the following options:
-- **Same as name of SAP object**: Copy the name of the SAP object.
-- **Same as name of extraction**: The name of the extraction.
-- **Custom**: Here you can define your own name.  
+
+|option | description |
+|:-----:|:------: |
+|**Same as name of SAP object**| Copy the name of the SAP object.|
+|**Same as name of extraction**| The name of the extraction.|
+|**Custom**| Here you can define your own name.|
 
 - **Append timestamp**: Adds the current timestamp in the format [_YYYY_MM_DD_hh_mm_ss_fff] to the file name of the extraction.
 
@@ -29,10 +32,12 @@ Defines the column name. The following options are available:
 
 ![Ex-Spec-Settings-Makt-ColumnName](/img/content/column_name_style_options.png){:class="img-responsive"}
 
-**Code**: The technical column name from SAP is used as the column name, for example, MAKTX.<br>.
-**PrefixedCode**: The technical name of the table is linked to the tilde character and the corresponding column name, for example T001W~MANDT<br>.
-**CodeAndText**: The technical name and the description of the column from SAP are linked with an underscore and used as column names, for example, MAKTX_Material Description (Short Text).<br>.
-**TextAndCode**: The description and the technical name of the SAP column are combined with an underscore to form the column name, for example, Material Description (Short Text)_MAKTX.
+|option|description|
+|:-----:|:------:|
+|**Code** |The technical column name from SAP is used as the column name.<br> e.g. MAKTX.|
+|**PrefixedCode**| The technical name of the table is linked to the tilde character and the corresponding column name<br> e.g. MAKT~MAKTX |
+|**CodeAndText**|The technical name and the description of the column from SAP are linked with an underscore and used as column names<br> e.g. MAKTX_Material Description (Short Text) |
+|**TextAndCode**|The description and the technical name of the SAP column are combined with an underscore to form the column name.<br> e.g. Material Description (Short Text)_MAKTX |
 
 #### Date conversion
 
