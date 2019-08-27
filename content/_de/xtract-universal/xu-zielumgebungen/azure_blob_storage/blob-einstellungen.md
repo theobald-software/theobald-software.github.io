@@ -18,9 +18,12 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 #### Table Name
 
 bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
-- **Same as name of SAP object**: Name des SAP-Objekts übernehmen
-- **Same as name of extraction**: Name der Extraktion übernehmen
-- **Custom**: Hier können Sie einen eigenen Namen definieren.  
+
+|Option|Beschreibung|
+|:---:|:---:|
+|**Same as name of SAP object**| Name des SAP-Objekts übernehmen|
+|**Same as name of extraction**| Name der Extraktion übernehmen|
+|**Custom** | Hier können Sie einen eigenen Namen definieren.|
 
 - **Append timestamp**: fügt den aktuellen Zeitstempel im Format [_YYYY_MM_DD_hh_mm_ss_fff] dem Dateinamen der Extraktion hinzu.
 
@@ -30,10 +33,12 @@ Definiert den Spaltennamen. Folgende Optionen sind verfügbar:
 
 ![Ex-Spec-Settings-Makt-ColumnName](/img/content/column_name_style_options.png){:class="img-responsive"}
 
-**Code**: Der technische Spaltenname aus SAP wird als Spaltenname verwendet, z.B. MAKTX.<br>
-**PrefixedCode**: Der technische Name der Tabelle wird mit dem Tilde Zeichen und dem entsprechenden Spaltennamen verbunden, z. B. T001W~MANDT<br>
-**CodeAndText**: Der technische Name und die Beschreibung der Spalte aus SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet, z.B. MAKTX_Material Description (Short Text).<br>
-**TextAndCode**: Die Beschreibung und der technische Name der Spalte SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet, z.B. Material Description (Short Text)_MAKTX.
+|Option|Beschreibung|
+|:---:|:---:|
+|**Code**|Der technische Spaltenname aus SAP wird als Spaltenname verwendet.<br> z.B. MAKTX.
+|**PrefixedCode**| Der technische Name der Tabelle wird mit dem Tilde Zeichen und dem entsprechenden Spaltennamen verbunden. <br>z. B. MAKT~MAKTX|
+|**CodeAndText**|Der technische Name und die Beschreibung der Spalte aus SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet.<br>z.B. MAKTX_Material Description (Short Text).|
+|**TextAndCode**|Die Beschreibung und der technische Name der Spalte SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet.<br> z.B. Material Description (Short Text)_MAKTX.|
 
 #### Date conversion
 
