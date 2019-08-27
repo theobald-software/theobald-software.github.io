@@ -23,4 +23,6 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 
 {% include _content/de/xu-specific/xu-destinations/general/sql-commands.md %}
 
+{% include _content/de/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
+
 {% include _content/de/xu-specific/xu-destinations/general/transaction-style.md %}
