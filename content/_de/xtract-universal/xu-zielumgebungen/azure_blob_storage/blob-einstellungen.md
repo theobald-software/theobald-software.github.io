@@ -17,51 +17,9 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 
 {% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
 
-<<<<<<< HEAD
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
-=======
-bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
-
-|Option|Beschreibung|
-|:---:|:---:|
-|**Same as name of SAP object**| Name des SAP-Objekts übernehmen|
-|**Same as name of extraction**| Name der Extraktion übernehmen|
-|**Custom** | Hier können Sie einen eigenen Namen definieren.|
-
-- **Append timestamp**: fügt den aktuellen Zeitstempel im Format [_YYYY_MM_DD_hh_mm_ss_fff] dem Dateinamen der Extraktion hinzu.
-
-#### Column Name Style
-
-Definiert den Spaltennamen. Folgende Optionen sind verfügbar: 
-
-![Ex-Spec-Settings-Makt-ColumnName](/img/content/column_name_style_options.png){:class="img-responsive"}
-
-|Option|Beschreibung|
-|:---:|:---:|
-|**Code**|Der technische Spaltenname aus SAP wird als Spaltenname verwendet.<br> z.B. MAKTX.
-|**PrefixedCode**| Der technische Name der Tabelle wird mit dem Tilde Zeichen und dem entsprechenden Spaltennamen verbunden. <br>z. B. MAKT~MAKTX|
-|**CodeAndText**|Der technische Name und die Beschreibung der Spalte aus SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet.<br>z.B. MAKTX_Material Description (Short Text).|
-|**TextAndCode**|Die Beschreibung und der technische Name der Spalte SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet.<br> z.B. Material Description (Short Text)_MAKTX.|
-
-#### Date conversion
-
-**Convert date strings**<br>
-Konvertiert das zeichenartige SAP-Datum (YYYYMMDD, z.B. 19900101) zu einem formatierten Datum (YYYY-MM-DD, z.B. 1990-01-01). Im Datenziel hat das SAP-Datum keinen String-Datentyp sondern einen echten Datumstyp.
-
-**Convert invalid dates to**<br>
-Falls ein SAP-Datum nicht in ein gültiges Datum konvertiert werden kann, wird dieser Standard-Datumswert verwendet.<br>
-ungültige Wert wird dann in das eingegebene Datum konvertiert. NULL wird als Wert unterstützt.
-
-Bei der Konvertierung eines ungültigen SAP-Datums werden zuerst die beiden Sonderfälle 00000000 und 9999XXXX überprüft.
-
-**Convert 00000000 to**<br>
-Konvertiert das SAP-Datum 00000000 zu diesem Wert.
-
-**Convert 9999XXXX to**<br>
-Konvertiert das SAP-Datum 9999XXXX zu diesem Wert.
->>>>>>> ee6f54a877bf4eb7a6a8011863e6883b3a18dec3
 
 #### Compression
 
