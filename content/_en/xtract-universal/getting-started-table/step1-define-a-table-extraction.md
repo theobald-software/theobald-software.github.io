@@ -55,22 +55,23 @@ Choose the SAP connection you created previously and give the extraction a uniqu
 
 Then define the type of extraction. In our case, we want to extract a *table* from SAP. 
 
-Now the empty table dialog opens. Click on the *Search* button to search for a table.
+![Add-Extraction](/img/content/xu/xu_tabellen_extraktion_anlegen.png){:class="img-responsive"}
 
-![New-Table-Extraction](/img/content/xu_tabelle_suchen.png){:class="img-responsive"}
+Now the table dialog for the definition of simple table extractions or table joins opens. In the following example, a single table is extracted. <br>
+Click *Add* to add a table.
 
-In the search dialog enter the name of the table to be extracted, click on the *Search* button, select the desired table and confirm with *OK*.
+![New-Table-Extraction](/img/content/xu/xu_tabelle_suchen.png){:class="img-responsive"}
 
-As you can see, you can also enter a wildcard (*) in the search bar.
+In the search dialog enter the name of the table to be extracted, click on the *Search* button, select the desired table and confirm with *OK*. <br>
 
-![Look-Up-Table](/img/content/xu_tabelle_auswählen.png){:class="img-responsive"}
+You can also enter a wildcard (*) in the search bar.
 
-The application now returns to the main dialog. The columns of the table were retrieved from SAP and can be selected for extraction by clicking <br>.
-It is possible to select or deselect all columns available in the table via *Select All* or *Select None* or to select the columns to be extracted individually.
+![Look-Up-Table](/img/content/xu/xu_tabelle_auswählen.png){:class="img-responsive"}
 
-![Table-Form](/img/content/xu_felder_auswählen_where_bedingung.png){:class="img-responsive"}
+The application now returns to the main dialog. The columns of the table were retrieved from SAP and are displayed in the box on the right under "Fields". <br>
+You can select either all or only individual columns. <br>
 
-WHERE conditions can still be specified in the text field. These must correspond to the standard for OpenSQL specified by SAP.
+![Table-Form](/img/content/xu/xu_felder_auswählen.png){:class="img-responsive"}
 
 Confirm with OK to save the extraction in the repository, i.e. on the server.
 
