@@ -39,15 +39,16 @@ Hier ein Beispiel, um die Anzahl des Sprachen-Felds (SPRAS) in der Tabelle MAKT 
 
 **Verknüpfungen definieren**
 
-Wechselt man nun in den *Joins* Dialog ist bereits eine Inner-Join Verknüpfung vordefiniert. Für die Details klicken Sie auf das Stift-Symbol. Im Beispiel wurde die Tabelle MARA (Linke Tabelle) mit der Tabelle MAKT (Rechte Tabelle) anhand der Felder MATNR und MANDT mit dem Join Typ "Inner" zusammengefügt. <br>
+Wechselt man nun in den *Joins* Dialog ist bereits eine Inner Join Verknüpfung vordefiniert. Zur Unterscheidung Inner Join und Outer Join schauen Sie [hier](https://help.sap.com/doc/saphelp_tm80/8.0/de-DE/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
+Für die Details klicken Sie auf das Stift-Symbol. Im Beispiel wurde die Tabelle MARA (Linke Tabelle) mit der Tabelle MAKT (Rechte Tabelle) anhand der Felder MATNR und MANDT mit dem Join-Typ "Inner" zusammengefügt. <br>
 Bei den angebotenen Einstellungen und Verknüpfungen handelt es sich lediglich um Vorschlagswerte, alle Bestandteile, d.h. *Left Table*, *Right Table*, *Join Type* und *Join Mapping* lassen sich nachträglich ändern. <br>
 - Um weitere Feldverknüpfungen hinzuzufügen, klicken Sie auf *Add*. 
 - Bestehende Verknüpfungen lassen sich mit *Remove* (Mülltonnen-Symbol) entfernen. 
-- Weitere Tabellen lassen sich über den *Tables and Fields* Dialog hinzufügen.    
+- Weitere Tabellen lassen sich über den *Tables and Fields* Dialog hinzufügen. Wir empfehlen grundsätzlich, nicht mehr als fünf Tabellen miteinander zu joinen.    
 
 ![Table-Join-Verknüpfungen](/img/content/xu/xu_join_verknüpfungen_01.png){:class="img-responsive"}
 
-Beispiel mit einer dritten Tabelle, die hinzugefügt wurde:
+Beispiel eines Joins mit einer dritten Tabelle:
 
 ![Table-Join-Verknüpfungen2](/img/content/xu/xu_join_verknüpfungen_02.png){:class="img-responsive"}
 

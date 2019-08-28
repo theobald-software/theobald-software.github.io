@@ -38,8 +38,16 @@ Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank,
 Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
 Diese Option wird nur im Zusammenhang mit den Funktionsbausteinen Z_THEO_READ_TABLE und Z_XTRACT_IS_TABLE_COMPRESSION unterstützt. 	
 
-Unter *Preview* können Extraktionsdaten im Preview-Modus angezeigt werden. Klicken Sie dazu auf *Load live preview*. <br>
-Mit der Preview lassen sich auch die Aggregierungsfunktionen als Vorschau anzeigen. 
+**Load live preview**
+Der Button *Load live preview* erlaubt eine Echtzeit-Vorschau auf die Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
+Es lassen sich damit auch die Daten mit Aggregierungs-Funktionen als Vorschau anzeigen. 
  
-![Table-Form](/img/content/xu/xu_preview_modus.png){:class="img-responsive"} 
+![Table-Form](/img/content/xu/xu_preview_modus.png){:class="img-responsive"}
+
+**Count rows**
+Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der hinterlegten WHERE und HAVING Bedingungen. 
+
+**Refresh Metadata**
+Damit wird ein Metadaten-Refresh auf die selektierte(n) Tabelle(n) durchgeführt. Dies kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst wurde. 
+ 
   
