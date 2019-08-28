@@ -1,3 +1,5 @@
+**Die Table Join Komponente wurde als *deprecated* gekennzeichnet. Bitte verwenden Sie die Table-Komponente um SAP-Tabellen zu joinen.**
+
 Die Table Join-Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join).  
 
 Voraussetzung dafür ist die Installation eines Z-Funktionssbausteins auf der SAP-Seite.
