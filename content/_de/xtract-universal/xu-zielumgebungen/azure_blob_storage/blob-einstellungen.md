@@ -15,7 +15,7 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
+{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
