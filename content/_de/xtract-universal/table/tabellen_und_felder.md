@@ -42,8 +42,6 @@ Diese Option wird nur im Zusammenhang mit den Funktionsbausteinen Z_THEO_READ_TA
 Der Button *Load live preview* erlaubt eine Echtzeit-Vorschau auf die Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
 Es lassen sich damit auch die Daten mit Aggregierungs-Funktionen als Vorschau anzeigen. 
  
-![Table-Form](/img/content/xu/xu_preview_modus.png){:class="img-responsive"}
-
 **Count rows**
 Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der hinterlegten WHERE und HAVING Bedingungen. 
 
