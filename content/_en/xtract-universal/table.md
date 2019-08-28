@@ -1,0 +1,19 @@
+---
+ref: xtract-universal-09
+layout: page
+title: Table
+description: Table
+product: xtract-universal
+parent: xtract-universal
+childidentifier: table
+permalink: /:collection/:path
+weight: 9
+lang: en_GB
+old_url: /Xtract-Universal-EN/default.aspx?pageid=tablejoin
+---
+
+The component *SAP Table or View* can be used to extract contents from SAP tables and views. <br>
+
+For an introduction to the component and the basic functions, see [First Steps with Table](./first steps with extract-table).   
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

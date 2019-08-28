@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-table-08
+ref: xu-table-06
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions
 product: xtract-universal
-parent: getting-started-table
+parent: table
 permalink: /:collection/:path
-weight: 8
+weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=avoid-restrictions
 ---

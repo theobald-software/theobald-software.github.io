@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-06
+ref: xu-table-05
 layout: page
 title: Extraction Settings 
 description: Extraction Settings
 product: xtract-universal
-parent: getting-started-table
+parent: table
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

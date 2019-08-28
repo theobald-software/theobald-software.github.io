@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-table-07
+ref: xu-table-03
 layout: page
 title: WHERE Clause
 description: WHERE Clause
 product: xtract-universal
-parent: getting-started-table
+parent: table
 permalink: /:collection/:path
-weight: 7
+weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 ---
