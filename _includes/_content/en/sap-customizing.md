@@ -1,23 +1,24 @@
-In this chapter you can find various articles about installation of custom function modules and customizing of the SAP System.
+In this chapter you can find various articles about installation of custom function modules/ABAP framework and customizing of the SAP System.
 
 ### Installation<br>
-For the following components an installation of a custom function module in SAP is required. The custom function modules come with the Theobald Software products. 
+For the following components an installation of a custom function module/ABAP framework in SAP is required. We deliver this as part of our software. 
 
-**Table**: For most tasks, the installation of a custom function module is recommended or required. Refer to [Custom function module for table extraction](./sap-customizing/custom-function-module-for-table-extraction). 
+**Table**: For most tasks, the installation of an ABAP framework is recommended or required. Refer to [Custom function module for table extraction](./sap-customizing/custom-function-module-for-table-extraction). 
 
-**Table Join**: The installation of a custom function module is required, refer to [Custom function module for Table Join](./sap-customizing/custom-function-module-for-table-join).
+**Table Join**: The Table Join requires installation of a custom function module. However, this component is deprecated. Please use the Table component for joining of SAP tables.
 
 **Report**: The installation of a custom function module is required, refer to [Install Report Custom Function Module](./sap-customizing/install-report-custom-function-module).
 
-For a manual installation of the custom function use the step-by-step guides in our [knowledge base](https://kb.theobald-software.com/sap/installation-of-the-function-module-Z_THEO_READ_TABLE). 
 
-Alternatively, you can use the transport requests that can be found in the ABAP subfolder of the installation folder. Please have them imported into SAP by your SAP Basis team.
+Please use the transport requests that can be found in the ABAP subfolder of the installation folder for installation. Please have them imported into SAP by your SAP Basis team.
 
 - **thtrans.zip** (contains custom function modules for *Report* and *Table Join*)
-- **Z_THEO_READ_TABLE.zip** (contains a custom function module for *Table*, applicable for SAP releases >= 740SP05)
-- **Z_THEO_READ_TABLE-before_740SP05.zip** (contains a custom function module for *Table*, applicable for SAP releases < 740SP05)
+- **Z_THEO_READ_TABLE.zip** (contains a custom function module, ABAP classes and different DDIC objects for *Table*, applicable for SAP releases >= 740SP05)
+- **Z_THEO_READ_TABLE-before_740SP05.zip** (contains a custom function module, ABAP classes and different DDIC objects for Table, applicable for SAP releases < 740SP05)
 
 For more detailed information about installing the transport request please read the following [knowledgebase article](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms?fromSearch=true) or check the SAP help.
+
+For uninstalling the ABAP framework of Z_THEO_READ_TABLE, use the deletion transport *Z_THEO_READ_TABLE-deletion_ request*.
 
 ### Customizing<br>
 For the following components a customizing on the SAP system is required: 

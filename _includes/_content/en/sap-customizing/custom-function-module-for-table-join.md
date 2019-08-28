@@ -1,3 +1,5 @@
+**The Table Join component is deprecated. Please use the Table component for joining SAP tables.*
+
 The Table Join component allows to join many tables (and views) on the SAP side and to extract the result.  
 
 It is required to install a custom funktion module on the SAP server to be able to use this component.  
