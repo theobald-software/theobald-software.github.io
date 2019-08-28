@@ -18,7 +18,7 @@ Please use the transport requests that can be found in the ABAP subfolder of the
 
 For more detailed information about installing the transport request please read the following [knowledgebase article](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms?fromSearch=true) or check the SAP help.
 
-For uninstalling the ABAP framework of Z_THEO_READ_TABLE, use the deletion transport *Z_THEO_READ_TABLE-deletion_ request*.
+
 
 ### Customizing<br>
 For the following components a customizing on the SAP system is required: 
