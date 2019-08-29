@@ -18,8 +18,15 @@ The following settings must be defined for the connection to the target database
 **Server Name**<br>
 Name or IP of the database server and the port number.
 
-**Require TLS encryption**<br>
-If this option is enabled, Xtact Universal will enforce encrypted TLS connections to the PostgreSQL server - unencrypted connections will not be established. If this option is disabled, encrypted TLS connection will be established if supported by the server - otherwise, unencrypted connections will be used. see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
+**TLS Mode**<br>
+
+The following TLS modes can be selected for the connection:
+
+|Mode Description
+|:--:|:---|
+| Prefer | Default Value that uses TLS encryption, if supported by the server. If this is not the case, unencrypted connections are used - see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html). |
+| Require | Xtract Universal forces an encrypted TLS connection to the PostgreSQL server - unencrypted connections are not established |
+| Disable | - **Caution** - An unencrypted, insecure connection is established to the PostgreSQL server |
 
 Please make sure that the Certification authority (CA) that signed the certificate or the certificate itself is trusted by the client.
 

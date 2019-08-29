@@ -25,8 +25,8 @@ Folgende TLS Modes können für die Verbindung ausgewählt werden:
 |Mode|Beschreibung|
 |:--:|:---|
 | Prefer | Default Wert, der eine TLS Verschlüsselung verwendet, falls der Server das unterstützt. Ist das nicht der Fall, werden unverschlüsselte Verbindungen verwendet - siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html). |
-| Require | Erzwingt Xtract Universal verschlüsselte TLS-Verbindungen zum PostgreSQL-Server - unverschlüsselte Verbindungen werden nicht hergestellt |
-| Disable | Eine unverschlüsselte, unsichere Verbindung wird zum PostgreSQL-Server hergestellt - **Achtung** |
+| Require | Xtract Universal Erzwingt eine verschlüsselte TLS-Verbindungen zum PostgreSQL-Server - unverschlüsselte Verbindungen werden nicht hergestellt |
+| Disable | **Achtung** - Eine unverschlüsselte, unsichere Verbindung wird zum PostgreSQL-Server hergestellt |
 
 Bitte stellen Sie sicher, dass die Zertifizierungsstelle (CA), die das Zertifikat signiert hat, oder das Zertifikat selbst vom Client vertrauenswürdig ist.
 
