@@ -23,7 +23,7 @@ Name bzw. IP des Datenbankservers und die Portnummer.
 Folgende TLS Modes können für die Verbindung ausgewählt werden:
 
 |Mode|Beschreibung|
-|:--:|---:|
+|:--:|:---|
 | Prefer | Default Wert, der eine TLS Verschlüsselung verwendet, falls der Server das unterstützt. Ist das nicht der Fall, werden unverschlüsselte Verbindungen verwendet - siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html). |
 | Require | Erzwingt Xtract Universal verschlüsselte TLS-Verbindungen zum PostgreSQL-Server - unverschlüsselte Verbindungen werden nicht hergestellt |
 | Disable | Eine unverschlüsselte, unsichere Verbindung wird zum PostgreSQL-Server hergestellt - **Achtung** |
