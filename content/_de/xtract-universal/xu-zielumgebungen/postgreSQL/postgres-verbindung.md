@@ -20,7 +20,7 @@ Name bzw. IP des Datenbankservers
 
 **TLS Mode**<br>
 
-Folgende TLS Modes können für die Verbindung ausgewählt werden:
+Folgende TLS Modi stehen für die Verbindung zur Verfügung:
 
 |Mode|Beschreibung|
 |:--:|:---|
