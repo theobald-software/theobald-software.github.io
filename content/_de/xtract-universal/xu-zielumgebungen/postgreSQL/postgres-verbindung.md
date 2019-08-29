@@ -16,7 +16,7 @@ Folgende Einstellungen müssen für die Verbindung zur Zieldatenbank definiert w
 
 
 **Server Name**<br>
-Name bzw. IP des Datenbankservers und die Portnummer.
+Name bzw. IP des Datenbankservers
 
 **TLS Mode**<br>
 
