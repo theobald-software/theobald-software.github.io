@@ -18,9 +18,15 @@ Folgende Einstellungen müssen für die Verbindung zur Zieldatenbank definiert w
 **Server Name**<br>
 Name bzw. IP des Datenbankservers und die Portnummer.
 
-**Require TLS encryption**<br>
-Wenn diese Option aktiviert ist, erzwingt Xtract Universal verschlüsselte TLS-Verbindungen zum PostgreSQL-Server - unverschlüsselte Verbindungen werden nicht hergestellt. Wenn diese Option deaktiviert ist, wird eine verschlüsselte TLS-Verbindung aufgebaut, wenn sie vom Server unterstützt wird - andernfalls werden unverschlüsselte Verbindungen verwendet,
-siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
+**TLS Mode**<br>
+
+Folgende TLS Modes können für die Verbindung ausgewählt werden:
+
+|Mode|Beschreibung|
+|:--:|---:|
+| Prefer | Default Wert, der eine TLS Verschlüsselung verwendet, falls der Server das unterstützt. Ist das nicht der Fall, werden unverschlüsselte Verbindungen verwendet - siehe auch [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html). |
+| Require | Erzwingt Xtract Universal verschlüsselte TLS-Verbindungen zum PostgreSQL-Server - unverschlüsselte Verbindungen werden nicht hergestellt |
+| Disable | Eine unverschlüsselte, unsichere Verbindung wird zum PostgreSQL-Server hergestellt - **Achtung** |
 
 Bitte stellen Sie sicher, dass die Zertifizierungsstelle (CA), die das Zertifikat signiert hat, oder das Zertifikat selbst vom Client vertrauenswürdig ist.
 
