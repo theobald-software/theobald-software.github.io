@@ -16,17 +16,17 @@ The following settings must be defined for the connection to the target database
 ![DESTINATION DETAILS](/img/content/xu/postgres_destination_details.png){:class="img-responsive"}
 
 **Server Name**<br>
-Name or IP of the database server and the port number.
+Name or IP of the database server
 
 **TLS Mode**<br>
 
 The following TLS modes can be selected for the connection:
 
-|Mode Description
+|Mode|Description
 |:--:|:---|
 | Prefer | Default Value that uses TLS encryption, if supported by the server. If this is not the case, unencrypted connections are used - see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html). |
 | Require | Xtract Universal forces an encrypted TLS connection to the PostgreSQL server - unencrypted connections are not established |
-| Disable | - **Caution** - An unencrypted, insecure connection is established to the PostgreSQL server |
+| Disable |**Caution** - An unencrypted, insecure connection is established to the PostgreSQL server |
 
 Please make sure that the Certification authority (CA) that signed the certificate or the certificate itself is trusted by the client.
 
