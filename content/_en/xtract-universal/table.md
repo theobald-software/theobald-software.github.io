@@ -16,4 +16,4 @@ The component *SAP Table or View* can be used to extract contents from SAP table
 
 For an introduction to the component and the basic functions, see [First Steps with Table](./first steps with extract-table).   
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

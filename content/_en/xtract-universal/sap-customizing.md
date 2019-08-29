@@ -15,4 +15,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customiz
 
 {% include _content/en/sap-customizing.md  %}
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
