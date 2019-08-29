@@ -17,7 +17,7 @@ Wenn Sie auf Destination klicken, dann können Sie Einstellungen für die Extrak
 
 {% include _content/de/xu-specific/xu-destinations/general/entity-name.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %
+{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
 
 **Preparation**<br>
 bestimmt, was geschehen soll, bevor die Daten in ein Zielobjekt geschrieben werden.
