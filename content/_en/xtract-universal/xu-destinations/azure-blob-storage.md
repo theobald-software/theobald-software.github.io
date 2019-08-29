@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-09
+ref: xu-destinations-24
 layout: page
 title: Azure BLOB Storage
 description: Azure BLOB Storage
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: azure-blob-storage
 permalink: /:collection/:path
-weight: 9
+weight: 24
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=azure_dwh
 ---

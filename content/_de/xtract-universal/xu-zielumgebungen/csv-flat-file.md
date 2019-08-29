@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-03
+ref: xu-destinations-11
 layout: page
 title: Flat File - CSV
 description: Flat File - CSV
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: csv-flat-file
 permalink: /:collection/:path
-weight: 3
+weight: 11
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=zielumgebungen
 ---

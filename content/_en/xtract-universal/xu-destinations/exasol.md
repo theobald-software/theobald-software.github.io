@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-11
+ref: xu-destinations-30
 layout: page
 title: EXASolution
 description: EXASolution
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: exasol
 permalink: /:collection/:path
-weight: 11
+weight: 30
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol
 ---

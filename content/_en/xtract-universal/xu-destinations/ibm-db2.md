@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-13
+ref: xu-destinations-50
 layout: page
 title: IBM DB2
 description: IBM DB2
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: ibm-db2
 permalink: /:collection/:path
-weight: 13
+weight: 50
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=db2
 ---

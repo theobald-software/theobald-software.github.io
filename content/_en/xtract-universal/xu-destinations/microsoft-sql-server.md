@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-14
+ref: xu-destinations-60
 layout: page
 title: Microsoft SQL Server
 description: Microsoft SQL Server
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: microsoft-sql-server
 permalink: /:collection/:path
-weight: 14
+weight: 60
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=microsoft-sql-server
 ---

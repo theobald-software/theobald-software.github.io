@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-15
+ref: xu-destinations-61
 layout: page
 title: Microstrategy
 description: Microstrategy
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: microstrategy
 permalink: /:collection/:path
-weight: 15
+weight: 61
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=microstrategy
 ---

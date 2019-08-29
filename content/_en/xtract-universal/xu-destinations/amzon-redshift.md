@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-08
+ref: xu-destinations-23
 layout: page
 title: Amazon Redshift
 description: Amazon Redshift
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: amzon-redshift
 permalink: /:collection/:path
-weight: 8
+weight: 23
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift
 ---

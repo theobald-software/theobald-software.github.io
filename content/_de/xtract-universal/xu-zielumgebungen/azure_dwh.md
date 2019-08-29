@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-10
+ref: xu-destinations-25
 layout: page
 title: Azure DWH
 description: Azure DWH
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: azure_dwh
 permalink: /:collection/:path
-weight: 10
+weight: 25
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=azure_dwh
 ---

@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-21
+ref: xu-destinations-90
 layout: page
 title: QlikSense & QlikView
 description: QlikSense & QlikView
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: qlik
 permalink: /:collection/:path
-weight: 21
+weight: 90
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=qlik
 ---

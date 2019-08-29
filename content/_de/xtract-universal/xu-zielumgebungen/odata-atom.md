@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-04
+ref: xu-destinations-12
 layout: page
 title: OData
 description: OData
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: odata-atom
 permalink: /:collection/:path
-weight: 4
+weight: 12
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=odata-atom
 ---

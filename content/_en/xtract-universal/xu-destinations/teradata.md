@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-26
+ref: xu-destinations-111
 layout: page
 title: TeraData
 description: TeraData
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: teradata
 permalink: /:collection/:path
-weight: 26
+weight: 111
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=teradata
 ---
