@@ -15,9 +15,13 @@ Einstellungen der Destination, welche pro Extraktion vorgenommen werden können.
 
 ![xu-ac-destination-settings](/img/content/xu-ac-destination-settings.png){:class="img-responsive"}
 
-Die Einstellungsmöglichkeiten in der linken Fensterhälfte entsprechen denen, die auch für die [csv-flatfile]() Zielumgebung vorgenommen werden können.
+{% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
 
-**Settings** 
+{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+
+{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+
+#### Settings 
 
 **Delete existing table**<br> 
 Falls eine Tabelle zur aktuellen Extraktion vorhanden ist, wird sie vom Extraktionsprozess vor dem Schreiben der Daten gelöscht.

@@ -1,4 +1,4 @@
-**Transaction style**
+#### Transaction style
 
 **One Transaction** <br>
 Prepare, Row Processing and Finalization are all performed in a single transaction.<br>

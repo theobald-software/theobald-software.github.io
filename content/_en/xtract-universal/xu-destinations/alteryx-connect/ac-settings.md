@@ -15,9 +15,13 @@ You can define the following extraction-specific settings:
 
 ![xu-ac-destination-settings](/img/content/xu-ac-destination-settings.png){:class="img-responsive"}
 
-The settings in the left part of the window correspond to the ones of the [flatfile csv-destination](../csv-flat-file/csv-destination-settings).
+{% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
 
-**Settings** 
+{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
+
+{% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
+
+#### Settings 
 
 **Delete existing table** <br>
 If a table exists for the extraction, the extraction process will delete it before writing the data.

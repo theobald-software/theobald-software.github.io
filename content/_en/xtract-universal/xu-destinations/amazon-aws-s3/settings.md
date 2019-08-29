@@ -15,13 +15,18 @@ Click on the Destination button to define extraction-specific settings of the ex
 
 ![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.jpg){:class="img-responsive"}
 
-The settings in the left part of the window correspond to the ones of the [flatfile csv-destination](../csv-flat-file/csv-destination-settings).
+{% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 
-**Folder Path**<br>
+{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
+
+{% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
+
+#### Folder Path
+
 Enter a folder name without slashes here if you want the extraction to be extracted to a folder within an S3 bucket.<br>
 Subfolders are also supported and can be entered as follows: Folder/Subfolder1/Subfolder2/...
 
-**Compression**
+#### Compression
 
 **None**<br>
 Data is being transferred uncompressed and stored as a .csv file on S3.

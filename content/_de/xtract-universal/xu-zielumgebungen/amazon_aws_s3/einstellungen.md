@@ -15,14 +15,19 @@ Einstellungen zu AWS S3, die pro Extraktion vorgenommen werden können.
 
 ![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.jpg){:class="img-responsive"}
 
+{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
-Die Einstellungsmöglichkeiten in der linken Fensterhälfte entsprechen denen, die auch für die [csv-flatfile](../zielumgebungen/csv-einstellungen-der-zielumgebung) Zielumgebung vorgenommen werden können.
+{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
-**Folder Path**<br>
+{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+
+
+#### Folder Path
+
 Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines S3 Buckets extrahiert werden soll.<br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: Ordner/Unterordner1/Unterordner2/...
 
-**Compression**
+#### Compression
 
 **None**<br>
 Die Daten werden unkomprimiert übertragen und auf S3 als csv-Datei abgelegt.
