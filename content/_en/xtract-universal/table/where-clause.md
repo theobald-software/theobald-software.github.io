@@ -11,6 +11,10 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 ---
 
+A WHERE condition can be stored in the *WHERE Clause* tab and the result displayed with *Load live preview*. Note that if the field name is not unique, the table name must be listed in the WHERE condition (for example, MAKT~MATNR). This can be the case, for example, with table joins.     
+
+![Extraction Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+
 The WHERE clause must comply with the SAP OpenSQL syntax.
 
 - Before and after the equal sign, you must enter a space, eg YEAR = '1999 '. For YEAR= '1999 ', YEAR ='1999' or YEAR='1999' you will get the error message '*A dynamically specified column name is unknown*'.
