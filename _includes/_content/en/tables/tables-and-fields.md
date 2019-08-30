@@ -15,7 +15,7 @@ The following aggregation functions are available for column contents:
 - None: No aggregation 
 - AVG: Average
 - COUNT: Number  
-- MAX: maximum
+- MAX: Maximum
 - MIN: Minimum 
 - SUM: Total
 
@@ -23,14 +23,14 @@ The following aggregation functions are available for column contents:
 Defines whether the conversion routines stored in the Data Dictionary are used for the respective fields. 
 Typical examples are the language key (for example, D in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). 
 After the conversion, the value is always displayed as it would appear in a transaction in the SAP GUI. 
-This option is only supported in conjunction with function module Z_THEO_READ_TABLE. 	
+This option is only supported with function module Z_THEO_READ_TABLE. 	
 
 **Load live preview** <br>
 The *Load live preview* button allows a real-time preview of the extraction data without executing the extraction. <br>
 You can also preview the data with aggregation functions. 
  
 **Count rows** <br>
-Returns the number of rows/data records of an extraction, taking into account the WHERE and HAVING conditions stored. 
+Returns the number of rows/data records of an extraction, taking into account the WHERE and HAVING Clauses stored. 
 
 **Refresh metadata** <br>
 This performs a metadata refresh on the selected table(s). This may be necessary, for example, if a table has been adjusted in SAP. 
