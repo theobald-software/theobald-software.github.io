@@ -21,7 +21,7 @@ Voraussetzung für die Nutzung ist die Installation Funktionssbausteins Z_THEO_R
 
 *Bemerkung*: Joins von Cluster- und Pool-Tabellen werden nicht unterstützt, können aber als Einzeltabellen extrahiert werden.
 
-Zur Definition eines Tabellen-Joins beachten Sie bitte folgende Schritte:
+Zum Anlegen von Tabellen-Joins beachten Sie folgende Schritte:
 
 **Tabellen definieren**
 
@@ -39,7 +39,7 @@ Hier ein Beispiel, um die Anzahl des Sprachen-Felds (SPRAS) in der Tabelle MAKT 
 
 **Verknüpfungen definieren**
 
-Wechselt man nun in den *Joins* Dialog ist bereits eine Inner Join Verknüpfung vordefiniert. Zur Unterscheidung Inner Join und Outer Join schauen Sie [hier](https://help.sap.com/doc/saphelp_tm80/8.0/de-DE/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
+Wechselt man nun in den *Joins* Dialog ist bereits eine Inner Join Verknüpfung vordefiniert. Die Unterscheidung von Inner Join und Outer Join ist [hier](https://help.sap.com/doc/saphelp_tm80/8.0/de-DE/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true) erläuert. <br>
 Für die Details klicken Sie auf das Stift-Symbol. Im Beispiel wurde die Tabelle MARA (Linke Tabelle) mit der Tabelle MAKT (Rechte Tabelle) anhand der Felder MATNR und MANDT mit dem Join-Typ "Inner" zusammengefügt. <br>
 Bei den angebotenen Einstellungen und Verknüpfungen handelt es sich lediglich um Vorschlagswerte, alle Bestandteile, d.h. *Left Table*, *Right Table*, *Join Type* und *Join Mapping* lassen sich nachträglich ändern. <br>
 - Um weitere Feldverknüpfungen hinzuzufügen, klicken Sie auf *Add*. 
@@ -57,7 +57,7 @@ Beispiel eines Joins mit einer dritten Tabelle:
    
 **Auto-Mapping Funktion**
 
-Über den Button *Auto-map* werden bestehende Mapping-Vorschlagswerte auf bestimmte Primärschlüsselfelder gelöscht und ein erneutes Mapping durchgeführt. Dieser Schritt ist optional und kann beispielsweise erforderlich sein, wenn die Referenztabelle erst am Schluss hinzugefügt wird.     
+Über den Button *Auto-map* wird das bestehende Mapping gelöscht und ein erneutes Mapping gleich lautender Felder durchgeführt. Dieser Schritt ist optional und kann beispielsweise erforderlich sein, wenn die Referenztabelle erst am Schluss hinzugefügt wird.     
 
 ![Table-Join-Automapping](/img/content/xu/xu_join_automap.png){:class="img-responsive"}
 
