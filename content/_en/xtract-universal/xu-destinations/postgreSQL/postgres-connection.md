@@ -24,11 +24,12 @@ The following TLS modes can be selected for the connection:
 
 |Mode|Description
 |:--:|:---|
-| Prefer | Default Value that uses TLS encryption, if supported by the server. If this is not the case, unencrypted connections are used - see also [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html). |
+| Prefer | Default Value that uses TLS encryption, if supported by the server. If this is not the case, unencrypted connections are used|
 | Require | Xtract Universal forces an encrypted TLS connection to the PostgreSQL server - unencrypted connections are not established |
 | Disable |**Caution** - An unencrypted, insecure connection is established to the PostgreSQL server |
 
 Please make sure that the Certification authority (CA) that signed the certificate or the certificate itself is trusted by the client.
+For further information please see the following link: - [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
 **Windows Authentication**<br>
 Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
