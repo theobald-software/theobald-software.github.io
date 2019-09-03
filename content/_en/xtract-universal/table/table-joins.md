@@ -35,11 +35,11 @@ Then select the required fields in the tables. The aggregation functions describ
 
 Here is an example of how to return the number of language fields (SPRAS) in table MAKT.   
 
-![Table join fields](/img/content/xu/xu_join_select_fields.png){:class="img-responsive"}
+![Table join fields](/img/content/xu/xu_join_felder_auswählen.png){:class="img-responsive"}
 
 **Define links** <br>
 
-If you switch to the *Joins* dialog, an Inner Join between the two tables is already predefined. The terms *Inner Join* and *Outer Join* are explained [here](https://help.sap.com/doc/saphelp_tm80/8.0/de-DE/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
+If you switch to the *Joins* dialog, an Inner Join between the two tables is already predefined. The terms *Inner Join* and *Outer Join* are explained [here](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
 Click on the pencil icon for details. In the example the table MARA (left table) was merged with the table MAKT (right table) using the fields MATNR and MANDT with the join type "Inner". <br>
 The settings and links offered are only default values. All components, that is, *Left Table*, *Right Table*, *Join Type* and *Join Mapping* can be changed subsequently. <br>
 - To add more field links, click *Add*. 
@@ -50,9 +50,9 @@ The settings and links offered are only default values. All components, that is,
 
 Example of a join with a third table:
 
-![Table-Join-Links2](/img/content/xu/xu_join_links_02.png){:class="img-responsive"}
+![Table-Join-Verknüpfungen2](/img/content/xu/xu_join_verknüpfungen_02.png){:class="img-responsive"}
 
-![Table-Join-Links3](/img/content/xu/xu_join_links_03.png){:class="img-responsive"}
+![Table-Join-Verknüpfungen3](/img/content/xu/xu_join_verknüpfungen_03.png){:class="img-responsive"}
 
    
 **Auto mapping function** <br>
