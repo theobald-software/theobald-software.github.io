@@ -15,9 +15,9 @@ Specifies the maximum number of extracted records. *0* Extracts the entire table
 
 **Function Module** <br>
 Specifies the name of the function module used for data extraction. The field is filled automatically depending on which function modules are installed on your SAP system.
-We recommend that you use our module Z_THEO_READ_TABLE. See also [SAP Customizing](../sap-customizing/function module-for-table-extraction). 
+We recommend that you use our module Z_THEO_READ_TABLE. See also [SAP Customizing](../sap-customizing/custom-function-module-for-table-extraction). 
 
 **Extract data in background job** <br>
 If this checkbox is checked, the table extraction is executed as a background job in SAP. This setting is optional and is supported in combination with module Z_THEO_READ_TABLE as of version 2.0.
-Activation is recommended for long-running extractions with very large amounts of data that run into a timeout error ("Time limit exceeded")using the standard method. <br>
+Activation is recommended for long-running extractions with very large amounts of data that run into a timeout error ("Time limit exceeded") using the standard method. <br>
 The extraction jobs can be found in the SAP JobLog (SM37) under the JobName *Xtract*.

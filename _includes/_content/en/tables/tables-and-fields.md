@@ -7,7 +7,7 @@ The following options are available on the right under *Fields* for the column s
 **Filter** <br>
 The column name and the column description can be filtered.
 
-**alias** <br>
+**Alias** <br>
 At the moment without functionality (not required). 
 
 **Aggregates Function** <br>
