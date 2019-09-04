@@ -14,7 +14,7 @@ Zum Anlegen von Tabellen-Joins beachten Sie folgende Schritte:
 
 Im Beispiel sollen die Tabellen MARA und MAKT gejoined werden. Fügen Sie hierfür die beiden Tabellen über den *Tables* Dialog hinzu. 
 
-![Table-Join-Tabellen](/img/content/xu/join_tabellen_auswählen.png){:class="img-responsive"}
+![Table-Join-Tabellen](/img/content/join_tabellen_auswählen.png){:class="img-responsive"}
 
 **Felder selektieren**
 
@@ -22,7 +22,7 @@ Selektieren Sie anschließend die gewünschten Felder in den Tabellen. Bei der S
 
 Hier ein Beispiel, um die Anzahl des Sprachen-Felds (SPRAS) in der Tabelle MAKT zurückzugeben.   
 
-![Table-Join-Felder](/img/content/xu/join_felder_auswählen.png){:class="img-responsive"}
+![Table-Join-Felder](/img/content/join_felder_auswählen.png){:class="img-responsive"}
 
 **Verknüpfungen definieren**
 
@@ -33,17 +33,17 @@ Bei den angebotenen Einstellungen und Verknüpfungen handelt es sich lediglich u
 - Bestehende Verknüpfungen lassen sich mit *Remove* (Mülltonnen-Symbol) entfernen. 
 - Weitere Tabellen lassen sich über den *Tables and Fields* Dialog hinzufügen. Wir empfehlen grundsätzlich, nicht mehr als fünf Tabellen miteinander zu joinen.    
 
-![Table-Join-Verknüpfungen](/img/content/xu/join_verknüpfungen_01.png){:class="img-responsive"}
+![Table-Join-Verknüpfungen](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 
 Beispiel eines Joins mit einer dritten Tabelle:
 
-![Table-Join-Verknüpfungen2](/img/content/xu/join_verknüpfungen_02.png){:class="img-responsive"}
+![Table-Join-Verknüpfungen2](/img/content/join_verknüpfungen_02.png){:class="img-responsive"}
 
-![Table-Join-Verknüpfungen3](/img/content/xu/join_verknüpfungen_03.png){:class="img-responsive"}
+![Table-Join-Verknüpfungen3](/img/content/join_verknüpfungen_03.png){:class="img-responsive"}
 
    
 **Auto-Mapping Funktion**
 
 Über den Button *Auto-map* wird das bestehende Mapping gelöscht und ein erneutes Mapping gleich lautender Felder durchgeführt. Dieser Schritt ist optional und kann beispielsweise erforderlich sein, wenn die Referenztabelle erst am Schluss hinzugefügt wird.     
 
-![Table-Join-Automapping](/img/content/xu/join_automap.png){:class="img-responsive"}
+![Table-Join-Automapping](/img/content/join_automap.png){:class="img-responsive"}
