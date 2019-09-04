@@ -4,7 +4,7 @@ layout: page
 title: Architektur
 description: Architektur
 product: board-connector
-parent: erste-schritte-mit-table
+parent: einfuehrung
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
