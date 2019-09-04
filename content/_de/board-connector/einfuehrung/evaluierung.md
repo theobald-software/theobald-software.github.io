@@ -1,14 +1,13 @@
 ---
-ref: bc-introduction-05
+ref: bc-introduction-06
 layout: page
 title: Evaluierung
 description: Evaluierung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=evaluierung
 ---
 
 Gerne unterstützen wir Sie während der Evaluierungsphase. Selbstverständlich können Sie eine Demoversion von unserer Webseite herunterladen und in Ruhe ausprobieren. Sie ist nur zeitlich limitiert und funktioniert sonst ohne Einschränkung.

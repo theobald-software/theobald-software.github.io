@@ -1,14 +1,13 @@
 ---
-ref: bc-introduction-03
+ref: bc-introduction-04
 layout: page
 title: Lizenz
 description: Lizenz
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=lizenz
 ---
 
 Der BOARD Connector wird standardmäßig mit einer Demo-Lizenz installiert. Im Menü des BOARD Connector Designers können Sie unter *Help -> Info* die Lizenz-Details einsehen.  

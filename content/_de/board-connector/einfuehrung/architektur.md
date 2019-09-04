@@ -1,5 +1,5 @@
 ---
-ref: bc-getting-started-table-01
+ref: bc-introduction-01
 layout: page
 title: Architektur
 description: Architektur
@@ -8,7 +8,6 @@ parent: erste-schritte-mit-table
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=architektur
 ---
 
 BOARDConnector für SAP ist eine Middleware-Komponente, die es ermöglicht, Daten aus SAP-Systemen zu extrahieren, um sie dann iin BOARD weiterzuverarbeiten.

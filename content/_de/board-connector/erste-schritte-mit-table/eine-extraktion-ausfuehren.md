@@ -1,14 +1,13 @@
 ---
-ref: bc-getting-started-table-03
+ref: bc-getting-started-table-02
 layout: page
 title: Schritt II- Eine Extraktion ausführen
 description: Schritt II- Eine Extraktion ausführen
 product: board-connector
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=eine-extraktion-ausfuehren
 ---
 
 Dieser Schritt ist optional und zeigt, wie Sie sich das Ergebnis der Extraktion im Browser anzeigen lässt, um sicher zu stellen, dass die Extraktion erfolgreich läuft und das gewünschte Ergebnis liefert.  
