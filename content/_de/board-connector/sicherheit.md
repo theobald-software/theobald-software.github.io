@@ -1,5 +1,5 @@
 ---
-ref: board-connector-08
+ref: board-connector-06
 layout: page
 title: Sicherheit
 description: Sicherheit
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: sicherheit
 permalink: /:collection/:path
-weight: 8
+weight: 6
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sicherheit
 ---
