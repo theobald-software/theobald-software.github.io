@@ -1,13 +1,13 @@
 ---
-ref: xtract-universal-09
+ref: board-connector-07
 layout: page
 title: Table
 description: Table
-product: xtract-universal
-parent: xtract-universal
+product: board-connector
+parent: board-connector
 childidentifier: table
 permalink: /:collection/:path
-weight: 9
+weight: 7
 lang: de_DE
 ---
 
