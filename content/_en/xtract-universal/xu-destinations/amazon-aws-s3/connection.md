@@ -16,6 +16,9 @@ The following settings can be made when setting up an AWS S3 connection.
 
 ![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.jpg){:class="img-responsive"}
 
+**Inherit Credentials from IAM role**
+The credentials and permissions of the IAM role, that has been assigned to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html) which Xtract Universal is running on, will be used for authentication. 
+
 **Access key ID and Secret key**<br>
 This is how you authenticate against Amazon AWS. You can determine these values via AWS Identiy and Access Managment ([IAM](https://console.aws.amazon.com/iam/home#/home)).
 Please see [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for further information.
