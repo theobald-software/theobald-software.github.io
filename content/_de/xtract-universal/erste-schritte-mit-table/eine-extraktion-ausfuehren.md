@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-table-04
+ref: xu-getting-started-table-03
 layout: page
 title: Schritt 3 - Eine Extraktion ausführen
 description: Schritt 3 - Eine Extraktion ausführen
 product: xtract-universal
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: de_DE
 ---
 ### Eine Extraktion im Designer testen

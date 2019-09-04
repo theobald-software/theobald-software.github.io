@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-table-05
+ref: xu-getting-started-table-04
 layout: page
 title: Schritt 4 - Eine Extraktion in eine Datenbank laden
 description: Schritt 4 - Eine Extraktion in eine Datenbank laden
 product: xtract-universal
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: de_DE
 ---
 

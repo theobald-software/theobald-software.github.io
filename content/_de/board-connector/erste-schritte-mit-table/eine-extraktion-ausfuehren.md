@@ -1,12 +1,12 @@
 ---
-ref: bc-getting-started-table-02
+ref: bc-getting-started-table-03
 layout: page
-title: Schritt II- Eine Extraktion ausführen
-description: Schritt II- Eine Extraktion ausführen
+title: Schritt 3 - Eine Extraktion ausführen
+description: Schritt 3 - Eine Extraktion ausführen
 product: board-connector
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 ---
 

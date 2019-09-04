@@ -1,30 +1,60 @@
 ---
-ref: bc-getting-started-table-01
+ref: bc-getting-started-table-02
 layout: page
-title: Schritt I- Eine neue Extraktion anlegen
-description: Schritt I- Eine neue Extraktion anlegen
+title: Schritt 2 - Eine neue Extraktion anlegen
+description: Schritt 2 - Eine neue Extraktion anlegen
 product: board-connector
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 ---
 
-Nach dem Start des Designers, muss der Designer erst mit einem Server und damit mit einem Extraktion-Repository verbunden werden. Die Adresse ist im Fall eines lokalen Servers der localhost (wie im Screenshot), oder eben eine andere Netzwerk-Adresse, je nach dem, wo die Server-Komponente läuft. Der Standardport kann je nach Konfiguration abweichen. Wenn der Server auf einer anderen Maschine als der Designer läuft, dann achten Sie drauf, dass der Port nicht von Ihrem Firewall blockiert wird. Klicken Sie auf Connect, um Verbindung mit dem Server aufzunehmen. 
+### SAP-Verbindung anlegen
 
-![Table-Extraction-01](/img/content/Table-Extraction-01.png){:class="img-responsive"}
+Wählen Sie den Menüpunkt **Server -> Manage Sources**.
 
-Nach dem erfolgreichen Verbinden sind die Buttons für die Neuanlage und die Manipulation von Extraktionen aktiv. Die Liste im unteren Bereich der Maske füllt sich mit allen Extraktionen, die bereits auf dem Server angelegt sind. 
+![BC-Create-Connection-1](/img/content/bc_server_manage_sources.png){:class="img-responsive"}
 
-Klicken Sie auf *New*, um eine neue Extraktion anzulegen. 
+Klicken Sie auf **Add**.
 
-Geben Sie der Extraktion einen eindeutigen Namen und definieren Sie, um welchen Typ von Extraktion es sich handelt. In unserem Fall wollen wir eine Tabelle extrahieren. 
+![BC-Create-Connection-2](/img/content/bc_manage_sources.png){:class="img-responsive"}
 
-![Table-Extraction-02](/img/content/Table-Extraction-02.png){:class="img-responsive"}
+Geben Sie den frei wählbaren Verbindungsnamen ins Feld **Name** ein. Anschließend müssen die SAP-Verbindungsdetails eingegeben werden. <br>
 
-In der nächsten Maske öffnet sich zunächst der Verbindungsmanager, mit dem Sie die Verbindung zum SAP definieren. Sie haben die Möglichkeit eine Verbindungsvorlage (Shared Connection) zu wählen oder eine Neue (Custom Connection) anzulegen. In diesem Beispiel wählen wir Custom Connection. Füllen Sie die Felder *Client* (Mandant), *Username* (Benutzername), *Password* (Passwort) und *Language*(Sprache) so aus, wie wenn Sie sich regulär am SAP anmelden würden. Sie können sich entweder mit einem einzelnen SAP-Server oder per Load Balancing mit einem Message Server verbinden. Im ersten Fall muss der Host und die Systemnummer, im zweiten Fall der Message Server, die Logon-Gruppe und die System-ID (*SID*) mitgegeben werden. Testen Sie die Verbindung mit *Test Connection* und bestätigen Sie mit OK.
+Folgende Parameter müssen gesetzt werden: <br>
+- Mandant (Client)
+- Sprache (Language)
+- Benutzer (User) und 
+- Passwort (Password). <br>
 
-![Table-Extraction-03](/img/content/Table-Extraction-03.png){:class="img-responsive"}
+Wenn Sie sich mit einem Single-Applicationsserver verbinden wollen, dann füllen Sie die Felder Host und System Number. <br>
+
+Wenn Sie sich über Load-Balancing mit einem Message-Server verbinden wollen, dann füllen Sie die Felder Message Server , Group und SID. <br>
+
+Wenn Sie die Parameter nicht kennen, schauen Sie in Ihre SAP-GUI nach oder fragen Sie Ihre SAP-Basis. 
+
+![BC-Create-Connection-3-A](/img/content/bc_source_details.png){:class="img-responsive"}
+
+Anschließend klicken Sie auf *Test Connection*, um die erfolgreiche Verbindung zu testen. 
+
+![BC-Create-Connection-3](/img/content/bc_test_connection.png){:class="img-responsive"}
+
+Die SAP-Verbindung ist nun erfolgreich eingerichtet. 
+
+![BC-Create-Connection-4](/img/content/bc_manage_source_2.png){:class="img-responsive"}
+
+### Extraktion anlegen
+
+Klicken Sie auf *New*, um eine neue Extraktion anzulegen.
+
+![Create-New-Table-Extraction](/img/content/bc_extraction_anlegen.png){:class="img-responsive"}
+
+Wählen Sie die zuvor erstellte SAP-Verbindung und geben Sie der Extraktion einen eindeutigen Namen.
+
+Anschließend definieren Sie, um welchen Typ von Extraktion es sich handelt. In unserem Fall wollen wir eine *Tabelle* aus SAP extrahieren. 
+
+![Add-Extraction](/img/content/xu/bc_tabellen_extraktion_anlegen.png){:class="img-responsive"}
 
 {% include _content/de/table/extraktion-anlegen.md  %}
 

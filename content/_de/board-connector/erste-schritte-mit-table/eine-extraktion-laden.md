@@ -1,12 +1,12 @@
 ---
-ref: bc-getting-started-table-03
+ref: bc-getting-started-table-04
 layout: page
-title: Schritt III- Eine Extraktion in BOARD laden
-description: Schritt III- Eine Extraktion in BOARD laden
+title: Schritt 4 - Eine Extraktion in BOARD laden
+description: Schritt 4 - Eine Extraktion in BOARD laden
 product: board-connector
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 ---
 

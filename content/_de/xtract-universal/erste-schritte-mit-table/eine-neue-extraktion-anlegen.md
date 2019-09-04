@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-table-03
+ref: xu-getting-started-table-02
 layout: page
 title: Schritt 2 - Eine neue Extraktion anlegen
 description: Schritt 2 - Eine neue Extraktion anlegen
 product: xtract-universal
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: de_DE
 ---
 ### SAP-Verbindung anlegen
