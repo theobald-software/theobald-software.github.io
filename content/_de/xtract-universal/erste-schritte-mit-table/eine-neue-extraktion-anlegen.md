@@ -4,7 +4,7 @@ layout: page
 title: Schritt 2 - Eine neue Extraktion anlegen
 description: Schritt 2 - Eine neue Extraktion anlegen
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: erste-schritte-mit-table
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

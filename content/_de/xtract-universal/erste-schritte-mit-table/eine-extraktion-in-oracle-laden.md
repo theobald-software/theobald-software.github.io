@@ -4,11 +4,10 @@ layout: page
 title: Schritt 4 - Eine Extraktion in eine Datenbank laden
 description: Schritt 4 - Eine Extraktion in eine Datenbank laden
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: erste-schritte-mit-table
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-in-oracle-laden
 ---
 
 ### Verbindung zur Zieldatenbank definieren

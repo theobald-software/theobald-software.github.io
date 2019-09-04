@@ -4,7 +4,7 @@ layout: page
 title: Schritt 1 - Designer mit dem Server verbinden
 description: Schritt 1 - Designer mit dem Server verbinden
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: erste-schritte-mit-table
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

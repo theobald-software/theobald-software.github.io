@@ -4,11 +4,10 @@ layout: page
 title: Schritt 3 - Eine Extraktion ausführen
 description: Schritt 3 - Eine Extraktion ausführen
 product: xtract-universal
-parent: erste-schritte-mit-xtract-table
+parent: erste-schritte-mit-table
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-extraktion-ausfuehren
 ---
 ### Eine Extraktion im Designer testen
 
