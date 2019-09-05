@@ -20,6 +20,6 @@ Voraussetzung dafür ist die Installation eines Z-Funktionssbausteins auf der SA
 
 *Bemerkung*: Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden. 
 
-**Achtung!!** Bitte beachten Sie, dass dieser Abschnitt nur die Anwendung der Table Join-Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xtract-table) . Das Wissen über die grundsätzliche Funktionsweise des BOARD Connectors wird in diesem Kapitel vorausgesetzt!
+**Achtung!!** Bitte beachten Sie, dass dieser Abschnitt nur die Anwendung der Table Join-Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) . Das Wissen über die grundsätzliche Funktionsweise des BOARD Connectors wird in diesem Kapitel vorausgesetzt!
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

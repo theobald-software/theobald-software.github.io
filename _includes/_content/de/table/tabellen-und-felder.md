@@ -11,7 +11,7 @@ Der Spaltenname und die Spaltenbeschreibung lassen sich filtern.
 Im Moment ohne Funktionalität (wird nicht benötigt). 
 
 **Aggregate Function** <br>
-Es stehen folgende Aggregierungs-Funktionen für Spalteninhalte zur Verfügung:
+Es stehen folgende Aggregat-Funktionen für Spalteninhalte zur Verfügung:
 - None: Keine Aggregierung 
 - AVG: Durchschnitt
 - COUNT: Anzahl  

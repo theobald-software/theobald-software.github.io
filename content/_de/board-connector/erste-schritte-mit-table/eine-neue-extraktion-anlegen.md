@@ -54,7 +54,7 @@ Wählen Sie die zuvor erstellte SAP-Verbindung und geben Sie der Extraktion eine
 
 Anschließend definieren Sie, um welchen Typ von Extraktion es sich handelt. In unserem Fall wollen wir eine *Tabelle* aus SAP extrahieren. 
 
-![Add-Extraction](/img/content/xu/bc_tabellen_extraktion_anlegen.png){:class="img-responsive"}
+![Add-Extraction](/img/content/bc_tabellen_extraktion_anlegen.png){:class="img-responsive"}
 
 {% include _content/de/table/extraktion-anlegen.md  %}
 
