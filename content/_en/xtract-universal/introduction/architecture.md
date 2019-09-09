@@ -8,7 +8,6 @@ parent: introduction
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=evaluation
 ---
 Xtract Universal is a middleware component to extract data from SAP ERP and BW systems and load it into different target systems. It has two components: *Server* and *Designer*.
 

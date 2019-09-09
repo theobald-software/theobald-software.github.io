@@ -1,9 +1,9 @@
 ---
-ref: xu-table-05
+ref: bc-table-05
 layout: page
 title: Extraction Settings 
 description: Extraction Settings
-product: xtract-universal
+product: board-connector
 parent: table
 permalink: /:collection/:path
 weight: 5
