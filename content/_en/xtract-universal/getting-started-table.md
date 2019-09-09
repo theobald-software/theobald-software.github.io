@@ -1,8 +1,8 @@
 ---
 ref: xtract-universal-03
 layout: page
-title: Getting Started- Table
-description: Getting Started- Table
+title: Getting Started with Table
+description: Getting Started with Table
 product: xtract-universal
 parent: xtract-universal
 childidentifier: getting-started-table

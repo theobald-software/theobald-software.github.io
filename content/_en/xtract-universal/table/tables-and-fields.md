@@ -1,8 +1,8 @@
 ---
 ref: xu-table-01
 layout: page
-title: Tables And Fields
-description: Tables And Fields
+title: Tables and Fields
+description: Tables and Fields
 product: xtract-universal
 parent: table
 permalink: /:collection/:path
