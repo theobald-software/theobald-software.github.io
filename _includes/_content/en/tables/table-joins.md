@@ -4,7 +4,7 @@ The *Join* functionality allows to join many tables (and views) on the SAP side 
 Possible scenarios would be to join tables for header and item data (for example, a purchase order or invoice) or tables for master data and texts (for example, a material). <br>
 To do this, the corresponding SQL command is generated dynamically and executed on the SAP server. <br>
 
-The prerequisite for use is the installation of function module Z_THEO_READ_TABLE in SAP. <br> 
+The prerequisite for use is the installation of function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) in SAP. <br> 
 
 *Note*: Joins of cluster and pool tables are not supported, but can be extracted as individual tables.
 
