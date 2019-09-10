@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-table-01
+ref: bc-introduction-01
 layout: page
 title: Architecture
 description: Architecture
 product: board-connector
-parent: getting-started-table
+parent: introduction
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
