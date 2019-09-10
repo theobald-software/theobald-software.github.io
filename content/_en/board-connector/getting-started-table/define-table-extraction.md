@@ -2,7 +2,7 @@
 ref: bc-getting-started-table-02
 layout: page
 title: Step 2 - Define a Table Extraction
-description: Step w - Define a Table Extraction
+description: Step 2 - Define a Table Extraction
 product: board-connector
 parent: getting-started-table
 permalink: /:collection/:path
