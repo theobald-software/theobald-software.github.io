@@ -1,5 +1,5 @@
 ---
-ref: xu-getting-started-table-04
+ref: xu-getting-started-table-03
 layout: page
 title: Step 3 - Run an Extraction
 description: Step 3 - Run an Extraction
@@ -8,7 +8,6 @@ parent: getting-started-table
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=run-an-extraction
 ---
 
 This step is optional and shows how to display the extraction result in a web browser to make sure that the extraction runs properly and delivers the appropriate result.

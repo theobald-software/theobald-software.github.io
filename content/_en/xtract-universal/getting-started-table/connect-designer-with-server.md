@@ -1,14 +1,13 @@
 ---
-ref: xu-getting-started-table-02
+ref: xu-getting-started-table-01
 layout: page
 title: Step 1 - Connect Designer with Server
 description: Step 1 - Connect Designer with Server
 product: xtract-universal
 parent: getting-started-table
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=step_0__connect_designer_with_server
 ---
 
 After the launch of Xtract Universal Designer, the designer must connect to the Xtract Universal Server and the extraction repository. The address is in case of a local Xtract Universal Server the localhost (as in the screenshot). In case designer and server are not running on the same machine, type in the host name the Xtract Universal Server is running on.

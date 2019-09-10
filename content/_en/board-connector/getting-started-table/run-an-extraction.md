@@ -1,14 +1,13 @@
 ---
 ref: bc-getting-started-table-03
 layout: page
-title: Step II - Run an Extraction
-description: Step II - Run an Extraction
+title: Step 3 - Run an Extraction
+description: Step 3 - Run an Extraction
 product: board-connector
 parent: getting-started-table
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=run-an-extraction
 ---
 
 This step is optional and shows how to display the extraction result in a webbrowser to make sure that the extraction runs properly and delivers the appropriate result.

@@ -1,5 +1,5 @@
 ---
-ref: xu-getting-started-table-05
+ref: xu-getting-started-table-04
 layout: page
 title: Step 4 - Load an Extraction in an Oracle Database
 description: Step 4 - Load an Extraction in an Oracle Database
@@ -8,7 +8,6 @@ parent: getting-started-table
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=load-an-extraction-in-oracle
 ---
 
 In this step we would load the extraction in an Oracle Database. 

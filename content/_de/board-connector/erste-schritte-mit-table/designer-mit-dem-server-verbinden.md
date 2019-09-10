@@ -11,7 +11,7 @@ lang: de_DE
 ---
 
 Nach dem Start des Designers, muss der Designer erst mit einem Server und damit mit einem Extraktion-Repository verbunden werden. 
-Die Adresse ist im Fall eines lokalen Xtract Servers der localhost (wie im Screenshot), oder eben eine andere Netzwerk-Adresse, 
+Die Adresse ist im Fall eines lokalen BOARD Connector Servers der localhost (wie im Screenshot), oder eben eine andere Netzwerk-Adresse, 
 je nach dem, wo die Server-Komponente läuft. Der Standardport 8096 kann je nach Konfiguration abweichen. 
 
 Wenn der Server auf einer anderen Maschine als der Designer läuft, dann achten Sie drauf, dass der Port nicht von Ihrem Firewall blockiert wird. 

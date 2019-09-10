@@ -1,14 +1,13 @@
 ---
 ref: bc-getting-started-table-04
 layout: page
-title: Step III - Load an Extraction in BOARD
-description: Step III - Load an Extraction in BOARD
+title: Step 4 - Load an Extraction in BOARD
+description: Step 4 - Load an Extraction in BOARD
 product: board-connector
 parent: getting-started-table
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=load-an-extraction-in-board
 ---
 
 The next step is to load an extraction in BOARD using the data reader. In the BOARD designer we defined the extraction plants which extracts the plants table *T001W*  from SAP. In BOARD wie defined the entity Plants, in which we want to load the SAP data. Now select *Database -> Data Reader -> SAP -> New Protocol*  to create a new protocol.
