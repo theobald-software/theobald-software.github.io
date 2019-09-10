@@ -18,7 +18,7 @@ In the example, the tables MARA and MAKT are to be joined. To do this, add the t
 
 **Select fields** <br>
 
-Then select the required fields in the tables. The aggregation functions described under [Tables and fields](./tables_and_fields) are available for selection. 
+Then select the required fields in the tables. The aggregation functions described under [Tables and fields](./tables-and-fields) are available for selection. 
 
 Here is an example of how to return the number of language fields (SPRAS) in table MAKT.   
 
