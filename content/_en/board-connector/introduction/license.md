@@ -1,14 +1,13 @@
 ---
-ref: bc-introduction-03
+ref: bc-introduction-04
 layout: page
 title: License
 description: License
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=license
 ---
 
 The BOARD Connector will be installed along with a trial license.  To view the details of the license, please go to *help -> info*.

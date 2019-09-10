@@ -1,5 +1,5 @@
 ---
-ref: bc-getting-started-table-02
+ref: bc-getting-started-table-01
 layout: page
 title: Step I - Define a Table Extraction
 description: Step I - Define a Table Extraction
@@ -8,7 +8,6 @@ parent: getting-started-table
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-table-extraction
 ---
 
 After the launch of the BOARD Designer, the designer must connect to the BOARD Server and the extraction repository. The address is in case of a local BOARD Server the localhost (as in the screenshot), or a different network address, depending on where the  BOARD Server is running. The default port may vary depending on the configuration. If the BOARD Server is running on another machine than the BOARD Designer be sure that the port is not disabled by your firewall. Click Connect to establish a connection with the server.

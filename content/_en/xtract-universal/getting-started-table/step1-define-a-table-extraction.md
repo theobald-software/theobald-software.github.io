@@ -8,7 +8,6 @@ parent: getting-started-table
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-table-extraction
 ---
 
 ### Create SAP connection
@@ -57,21 +56,5 @@ Then define the type of extraction. In our case, we want to extract a *table* fr
 
 ![Add-Extraction](/img/content/xu/xu_tabellen_extraktion_anlegen.png){:class="img-responsive"}
 
-Now the table dialog for the definition of simple table extractions or table joins opens. In the following example, a single table is extracted. <br>
-Click *Add* to add a table.
-
-![New-Table-Extraction](/img/content/xu/xu_tabelle_suchen.png){:class="img-responsive"}
-
-In the search dialog enter the name of the table to be extracted, click on the *Search* button, select the desired table and confirm with *OK*. <br>
-
-You can also enter a wildcard (*) in the search bar.
-
-![Look-Up-Table](/img/content/xu/xu_tabelle_auswählen.png){:class="img-responsive"}
-
-The application now returns to the main dialog. The columns of the table were retrieved from SAP and are displayed in the box on the right under "Fields". <br>
-You can select either all or only individual columns. <br>
-
-![Table-Form](/img/content/xu/xu_felder_auswählen.png){:class="img-responsive"}
-
-Confirm with OK to save the extraction in the repository, i.e. on the server.
+{% include _content/en/tables/define-a-table-extraction.md  %}
 

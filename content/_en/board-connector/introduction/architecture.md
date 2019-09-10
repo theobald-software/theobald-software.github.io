@@ -8,7 +8,6 @@ parent: getting-started-table
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=architecture
 ---
 
 BOARD Connector for SAP is a middleware component to extract data from SAP systems and load it into BOARD. It has two components: Server and Designer.<br>

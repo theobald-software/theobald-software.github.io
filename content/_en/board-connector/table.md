@@ -1,5 +1,5 @@
 ---
-ref: board-connector-08
+ref: board-connector-07
 layout: page
 title: Table
 description: Table
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: table
 permalink: /:collection/:path
-weight: 9
+weight: 7
 lang: en_GB
 ---
 
