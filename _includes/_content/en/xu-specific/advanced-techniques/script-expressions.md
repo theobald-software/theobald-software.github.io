@@ -5,13 +5,13 @@ Let's look at the following examples.
 
 | Description                           | Input                                                                         | Output              |
 |---------------------------------------|-------------------------------------------------------------------------------|---------------------|
-| Current date and timestamp            | #{ DateTime.Now}#                                                             | 23.07.2013 10:17:37 |
-| Date 5 days ago                       | #{ DateTime.Now.AddDays(-5).ToString("d") }#                                  | 18.07.2013          |
-| Current date                          | #{ DateTime.Now.ToShortDateString() }#                                        | 23.07.2013          |
-| Current date in SAP format            | #{ DateTime.Now.ToString("yyyyMMdd") }#                                       | 20130723            |
-| Current year concatenated with "0101" | #{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#                     | 20130101            |
-| Current year concatenated with "0101" | #{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#                    | 20130101            |
-| Current year concatenated with "0101" | #{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }# | 20130101            |
+| Current date and timestamp            |``` #{ DateTime.Now}#```                                                             | 23.07.2013 10:17:37 |
+| Date 5 days ago                       |``` #{ DateTime.Now.AddDays(-5).ToString("d") }#```                                  | 18.07.2013          |
+| Current date                          |``` #{ DateTime.Now.ToShortDateString() }#```                                        | 23.07.2013          |
+| Current date in SAP format            |``` #{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | 20130723            |
+| Current year concatenated with "0101" |``` #{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | 20130101            |
+| Current year concatenated with "0101" |``` #{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | 20130101            |
+| Current year concatenated with "0101" |``` #{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | 20130101            |
 
 **IF statement** 
 
