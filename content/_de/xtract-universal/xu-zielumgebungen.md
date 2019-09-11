@@ -35,7 +35,6 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 - [Alteryx Connect](./xu-zielumgebungen/alteryx_connect) 
 - [Microstrategy](./xu-zielumgebungen/microstrategy)
 - [Power BI connector (Cloud/Desktop)](./xu-zielumgebungen/Power-BI-Connector-beta) 
-- [Power BI Service](./xu-zielumgebungen/Power BI Service) 
 - [Tableau](./xu-zielumgebungen/tableau) 
 - [QlikSense and QlikView](./xu-zielumgebungen/qlik)  
 
