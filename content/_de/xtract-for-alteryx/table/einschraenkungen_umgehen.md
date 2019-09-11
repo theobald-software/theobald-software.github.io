@@ -1,8 +1,8 @@
 ---
 ref: xfa-table-06
 layout: page
-title: Einschr‰nkungen umgehen
-description: Einschr‰nkungen umgehen
+title: Einschr√§nkungen umgehen
+description: Einschr√§nkungen umgehen
 product: xtract-for-alteryx
 parent: table
 permalink: /:collection/:path
