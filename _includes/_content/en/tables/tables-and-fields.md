@@ -1,7 +1,6 @@
 One or more SAP tables or views can be selected under the tab *Tables And Fields*. <br>
 Use *Add* or *Remove* to add a new table or remove a table that has already been added. 
-The basic procedure is described in the section [Getting Started with Table](../getting-started-table). <br>     
-
+ 
 The following options are available on the right under *Fields* for the column selection: <br>
 
 **Filter** <br>

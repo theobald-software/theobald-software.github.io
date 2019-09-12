@@ -1,8 +1,8 @@
 ---
 ref: xi-table-07
 layout: page
-title: Restrictions
-description: Restrictions
+title: Avoid Restrictions
+description: Avoid Restrictions
 product: xtract-is
 parent: table
 permalink: /:collection/:path

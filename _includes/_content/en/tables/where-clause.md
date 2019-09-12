@@ -16,10 +16,3 @@ Values must have the internal SAP representation:
 - The year period 001.1999 has the internal representation 1999001 (YYYYPPP),
 - Numbers must have the leading zeros, e.g. customer number 1000 has the internal representation 0000001000.
 
-**Script Expressions**
-
-Beginning with version 2.13.5 scripted expressions are supported within the where clause. 
-
-![Table-Extraction-Where-Clause-Scripted-Expression](/img/content/Table-Extraction-Where-Clause-Scripted-Expression.jpg){:class="img-responsive"}
-
-For more information please refer to [Script Expressions](../advanced-techniques/script-expressions). 
