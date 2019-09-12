@@ -22,7 +22,7 @@ This authenticates you to the Azure BLOB Storage. You can determine these values
 **Account Name**<br>
 Storage Account Name in the Azure Portal.
 
-Key****<br>
+**Key**<br>
 is the access key to the Azure BLOB account.  
 
 ![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
@@ -31,7 +31,7 @@ is the access key to the Azure BLOB account.
 Click the Connect button after entering Account Name and Key. <br>
 If the connection was successful, an info window pops up and you can then select a container.
 
-Container**<br> **Container**<br>
+**Container**<br>
 Selection of the blob container into which the extracted data is to be written.
 
 ![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02.png){:class="img-responsive"}

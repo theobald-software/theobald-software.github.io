@@ -10,5 +10,5 @@ weight: 5
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=user-management
 ---
-{% include _content/en/xu-specific/security-xu3/migration-from-xu2-to-xu3.md %}
+{% include _content/en/xu-specific/security-xu3/migration-from-xu2-to-xu4.md %}
 
