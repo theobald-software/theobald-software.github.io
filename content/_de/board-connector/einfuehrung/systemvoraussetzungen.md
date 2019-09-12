@@ -1,14 +1,13 @@
 ---
-ref: bc-introduction-01
+ref: bc-introduction-02
 layout: page
 title: Systemvoraussetzungen
 description: Systemvoraussetzungen
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=systemvoraussetzungen
 ---
 
 **BOARD**

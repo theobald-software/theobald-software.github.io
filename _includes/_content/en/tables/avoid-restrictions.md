@@ -1,0 +1,1 @@
+In order to avoid possible restrictions with table extractions we recommend installation of our [custom function module](../sap-customizing/custom-function-module-for-table-extraction) for table extraction.

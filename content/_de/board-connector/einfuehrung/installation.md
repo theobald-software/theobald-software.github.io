@@ -1,14 +1,13 @@
 ---
-ref: bc-introduction-02
+ref: bc-introduction-03
 layout: page
 title: Installation und Backup
 description: Installation und Backup
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=installation
 ---
 
 Das Installationsprogramm ist eine branchenübliche Installationsroutine, die nichts anderes macht, als alle nötigen  Dateien in das Programmverzeichnis zu kopieren und im Windows-Programmenü einen Menüeintrag mit einigen Shortcuts anzulegen.<br>

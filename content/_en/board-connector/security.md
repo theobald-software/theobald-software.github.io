@@ -1,5 +1,5 @@
 ---
-ref: board-connector-08
+ref: board-connector-09
 layout: page
 title: Security
 description: Security
@@ -7,9 +7,8 @@ product: board-connector
 parent: board-connector
 childidentifier: security
 permalink: /:collection/:path
-weight: 8
+weight: 9
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=security
 ---
 
 The BOARD designer offers the opportunity to manage user and user groups. 

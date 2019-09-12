@@ -1,14 +1,13 @@
 ---
-ref: bc-introduction-06
+ref: bc-introduction-07
 layout: page
 title: Fehlerbehandlung
 description: Fehlerbehandlung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=fehlerbehandlung
 ---
 
 **Dienst startet nicht**

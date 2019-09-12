@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=erste-schritte-mit-table
 ---
 
-Bitte beachten Sie, dass dieses Kapitel nicht nur die Details zur SAP-Tabellenextraktion mit Xtract Table enthält, sondern gleichzeitig als allgemeine Einführung in den Board Connector zu sehen ist.
+Bitte beachten Sie, dass dieses Kapitel nicht nur die Details zur SAP-Tabellenextraktion mit der Table Komponente enthält, sondern gleichzeitig als allgemeine Einführung in den Board Connector zu sehen ist.
 
 Es ist also Voraussetzung für alle nachfolgenden Kapitel.
 

@@ -1,8 +1,8 @@
 ---
 ref: xu-sap-customizing-01
 layout: page
-title: Funktionsbaustein für Tabellen-Komprimierung
-description: Funktionsbaustein für Tabellen-Komprimierung
+title: Funktionsbaustein für Tabellen-Extraktion
+description: Funktionsbaustein für Tabellen-Extraktion
 product: xtract-universal
 parent: sap-customizing
 permalink: /:collection/:path

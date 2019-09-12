@@ -1,14 +1,13 @@
 ---
-ref: bc-introduction-02
+ref: bc-introduction-03
 layout: page
 title: Installation and Backup
 description: Installation and Backup
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=installation1
 ---
 
 The installer is an industry-standard installation routine that copies all necessary files into the program directory 

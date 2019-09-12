@@ -8,7 +8,6 @@ parent: table-join
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=sql-statement
 ---
 
 Cick the *SQL* button to check the SQL statement.  

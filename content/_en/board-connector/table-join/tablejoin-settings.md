@@ -8,7 +8,6 @@ parent: table-join
 permalink: /:collection/:path
 weight: 7
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=tablejoin-settings
 ---
 
 In the following chapter we explain Extraction Settings.     

@@ -1,5 +1,5 @@
 ---
-ref: board-connector-14
+ref: board-connector-13
 layout: page
 title: BW Hierarchien
 description: BW Hierarchien
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: bw-hierarchien
 permalink: /:collection/:path
-weight: 14
+weight: 13
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-hierarchien
 ---

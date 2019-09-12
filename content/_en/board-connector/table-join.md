@@ -1,5 +1,5 @@
 ---
-ref: board-connector-09
+ref: board-connector-08
 layout: page
 title: Table Join
 description: Table Join
@@ -7,9 +7,8 @@ product: board-connector
 parent: board-connector
 childidentifier: table-join
 permalink: /:collection/:path
-weight: 9
+weight: 8
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=tablejoin
 ---
 
 The Table Join component allows to join many tables (and views) on the SAP side and to extract the result.<br>  

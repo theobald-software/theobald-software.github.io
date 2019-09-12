@@ -1,14 +1,13 @@
 ---
-ref: bc-introduction-05
+ref: bc-introduction-06
 layout: page
 title: Evaluation
 description: Evaluation
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=evaluation
 ---
 
 We also offer support during the evaluation phase. Of course, you can download a demo version from our website and try it by yourself. It is only time limited and works without any restrictions.

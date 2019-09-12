@@ -34,8 +34,7 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 - [Alteryx](./xu-zielumgebungen/alteryx-de) 
 - [Alteryx Connect](./xu-zielumgebungen/alteryx_connect) 
 - [Microstrategy](./xu-zielumgebungen/microstrategy)
-- [Power BI connector (Cloud/Desktop)](./xu-zielumgebungen/Power-BI-Connector-beta) 
-- [Power BI Service](./xu-zielumgebungen/Power BI Service) 
+- [Power BI connector (Cloud/Desktop)](./xu-zielumgebungen/Power-BI-Connector) 
 - [Tableau](./xu-zielumgebungen/tableau) 
 - [QlikSense and QlikView](./xu-zielumgebungen/qlik)  
 
@@ -49,7 +48,7 @@ Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-P
 - [Salesforce](./xu-zielumgebungen/salesforce) 
 - [Sharepoint](./xu-zielumgebungen/sharepoint) 
 
-**Generische Destinations:**
+**Generische Destinationen:**
 - [CSV Webservice](./xu-zielumgebungen/csv-via-http) 
 - [OData Webservice](./xu-zielumgebungen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
 - [Flat File - CSV](./xu-zielumgebungen/csv-flat-file) (Comma-seperated values)
