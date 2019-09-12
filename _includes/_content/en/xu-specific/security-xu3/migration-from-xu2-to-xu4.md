@@ -1,4 +1,4 @@
-The migration from XU 2.x to XU 3.x can be performed automatically as follows:
+The migration from XU 2.x to XU 4.x can be performed automatically as follows:
 
 During the installation process by checking the *Convert 2.x Files* checkbox. <br>
 This calls the *Xtract Universal Configuration Converter*, which ensures that all extractions, source systems, destinations, server and user settings from XU 2.x are available in the new version. <br>
