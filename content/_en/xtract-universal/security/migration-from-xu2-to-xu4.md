@@ -1,8 +1,8 @@
 ---
 ref: xu-security-xu3-04
 layout: page
-title: Migration from XU 2.x to XU 3.x
-description: Migration from XU 2.x to XU 3.x
+title: Migration from XU 2.x to XU 4.x
+description: Migration from XU 2.x to XU 4.x
 product: xtract-universal
 parent: security
 permalink: /:collection/:path
