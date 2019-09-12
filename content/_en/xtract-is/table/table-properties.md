@@ -6,12 +6,11 @@ description: Table Properties
 product: xtract-is
 parent: table
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: en_GB
 old_url: 
 ---
-
-
+{% include _content/en/tables/extraction-settings.md  %}
 
 ![Table-XIS-Properties](/img/content/Table-XIS-Properties.png){:class="img-responsive"}
 

@@ -11,10 +11,12 @@ weight: 5
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=table
 ---
+In diesem Kapitel wird die Handhabung der Komponente Xtract IS Table erläutert. 
 
-Das folgende Kapitel erläutert die Nutzung der Xtract IS Table Datenquelle.
+Die Komponente enthält zwei Extraktionsarten:
 
-Die Komponente ermöglicht dem Benutzer, Massendaten direkt aus SAP-Tabellen und Views abzuziehen.
+**Table**: Ermöglicht die Massendatenextraktion direkt aus SAP-Tabellen und -Views.<br>
+**Table-Join**: Ermöglicht das Zusammenführen von zwei oder mehr SAP-Tabellen auf der SAP-Seite vor der Extraktion, eine Funktionalität, die bisher nur in der separaten Komponente Xtract IS Table Join verfügbar war.<br>
 
 Folgende Quell-Objekte werden durch Xtract IS Table unterstützt:
 
