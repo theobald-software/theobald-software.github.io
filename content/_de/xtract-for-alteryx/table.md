@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: table
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 ---
 
