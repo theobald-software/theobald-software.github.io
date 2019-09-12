@@ -1,12 +1,12 @@
 ---
-ref: xi-table-04
+ref: xi-table-05
 layout: page
 title: HAVING Bedingung
 description: HAVING Bedingung
 product: xtract-is
 parent: xtract-is-table
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 ---
 
