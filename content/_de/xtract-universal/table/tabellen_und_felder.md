@@ -11,6 +11,8 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=where-bedingung
 ---
 
+Das grundsätzliche Vorgehen hierzu ist im Abschnitt [Erste Schritte mit Table](../erste-schritte-mit-table) beschrieben. <br>  
+
 {% include _content/de/table/tabellen-und-felder.md  %}
  
   

@@ -11,4 +11,8 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionseinstellungen
 ---
 
+Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen vorzunehmen. Die *Extraction Settings* beinhalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen, während die *General Settings* bei allen Extraktionstypen gleich sind. Sie finden Informationen zu den *General Settings* im Abschnitt [Allgemeine Einstellungen](../fortgeschrittene-techniken/allgemeine-einstellungen). 
+
+![Extraction-Settings-01](/img/content/xu/Table-Extraction-Settings.png){:class="img-responsive"}
+
 {% include _content/de/table/extraktionseinstellungen.md  %}

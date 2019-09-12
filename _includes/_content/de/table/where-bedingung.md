@@ -17,10 +17,4 @@ Das Datum 01.01.1999 hat die interne Darstellung 19990101 (YYYYMMDD)
 - Bei Nummern müssen auch führende Nullen angegeben werden: Kundennumer 1000 hat die interne Darstellung 0000001000.
 
 
-**Formeln**
 
-Ab Version 2.13.5 können Sie Script-Ausdrücke in der Where-Klausel verwenden.
-
-![Table-Extraction-Where-Clause-Scripted-Expression](/img/content/Table-Extraction-Where-Clause-Scripted-Expression.jpg){:class="img-responsive"}
-
-Für weitere Infomationen siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke). 

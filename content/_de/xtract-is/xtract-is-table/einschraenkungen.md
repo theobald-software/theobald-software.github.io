@@ -1,14 +1,14 @@
 ---
-ref: xi-table-04
+ref: xi-table-06
 layout: page
-title: Einschränkungen
-description: Einschränkungen
+title: Einschränkungen umgehen
+description: Einschränkungen umgehen
 product: xtract-is
 parent: xtract-is-table
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=einschraenkungen
 ---
 
-Um Einschränkungen bei der Extraktion von Tabellen zu umgehen, empfehlen wir die Installation unseres [Z-Funktionsbausteins](../sap-customizing/funktionsbaustein-fuer-table-extraktion) für die Tabellenextraktion. 
+{% include _content/de/table/einschraenkungen-umgehen.md  %}

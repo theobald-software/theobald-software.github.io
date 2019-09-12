@@ -1,6 +1,5 @@
 Unter dem Karteireiter *Tables And Fields* können eine oder mehrere SAP Tabellen oder Views selektiert werden. <br>
 Mit *Add* oder *Remove* fügen Sie eine neue Tabelle hinzu, oder entfernen eine bereits hinzugefügte Tabelle. 
-Das grundsätzliche Vorgehen hierzu ist im Abschnitt [Erste Schritte mit Table](../erste-schritte-mit-table) beschrieben. <br>     
 
 Folgende Optionen stehen rechts unter *Fields* bei der Spaltenselektion zur Verfügung: <br>
 
