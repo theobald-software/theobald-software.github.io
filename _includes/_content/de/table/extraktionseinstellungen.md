@@ -1,3 +1,5 @@
+![Extraction-Settings-01](/img/content/xu/Table-Extraction-Settings.png){:class="img-responsive"}
+
 Folgende Extraktionseinstellungen stehen zur Verfügung:
 
 **Package Size** <br>

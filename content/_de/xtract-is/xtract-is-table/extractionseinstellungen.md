@@ -10,9 +10,6 @@ weight: 5
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=erweiterte-table-eigenschaften
 ---
-
-![Extraction-Settings-01](/img/content/xu/Table-Extraction-Settings.png){:class="img-responsive"}
-
 {% include _content/de/table/extraktionseinstellungen.md  %}
 
 
