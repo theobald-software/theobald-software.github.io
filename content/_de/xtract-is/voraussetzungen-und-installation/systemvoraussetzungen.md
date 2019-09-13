@@ -57,7 +57,7 @@ wobei *nn* die Instanznummer des SAP Systems ist (z.B. 00 oder 99).
 
 ### Benutzerberechtigungen
  	
-SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
+SAP System oder Dialog-Anwender mit den entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
 ### SAP-Lizenzen
 
