@@ -29,7 +29,7 @@ Ersetzt SAP-Datumsangaben durch einen ungültigen Min.-Jahreswert, z.B.'0000mmdd
 
 **Feldausgänge verwenden**<br>>
 Legt fest, ob die im ABAP Data Dictionary abgelegten Konvertierungsroutinen für die jeweiligen Felder verwendet werden. Typische Beispiele sind der Sprachschlüssel (z.B. D in der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT in der Datenbank, T/12738/GT nach der Konvertierung). Nach der Konvertierung wird der Wert immer so angezeigt, wie er in einer Transaktion im SAP GUI erscheinen würde. <br>
-Diese Option wird nur unterstützt, wenn Z_THEO_READ_TABLE als benutzerdefinierte Funktion für die Tabellenextraktion verwendet wird.
+
 
 
 
