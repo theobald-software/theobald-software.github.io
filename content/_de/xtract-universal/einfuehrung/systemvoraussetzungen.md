@@ -12,3 +12,8 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=systemvoraussetzungen
 ---
 
 {% include _content/de/einfuehrung/sap-anforderungen-xtract.md %} 
+{% include _content/de/einfuehrung/betriebssysteme.md %} 
+{% include _content/de/einfuehrung/xu-req-verschiedenes.md %}
+
+## Zielumgebungen
+Für die Verwendung der Ziele kann ein geeigneter Treiber oder eine entsprechende Bibliothek erforderlich sein. Weitere Informationen finden Sie im Abschnitt Anforderungen der einzelnen Destinationen.
