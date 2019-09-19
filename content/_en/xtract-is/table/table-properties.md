@@ -30,7 +30,7 @@ Replaces SAP dates with an invalid min. year value, such as '0000mmdd'  with the
 
 **Use Field Exits**<br>
 Defines whether the conversion routines stored in the ABAP Data Dictionary are used for the respective fields. Typical examples are the language key (for example, D in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). After the conversion, the value is always displayed as it would appear in a transaction in the SAP GUI. <br>
-This option is only supported when Z_THEO_READ_TABLE is used as a custom function for table extraction.
+
 
 
 
