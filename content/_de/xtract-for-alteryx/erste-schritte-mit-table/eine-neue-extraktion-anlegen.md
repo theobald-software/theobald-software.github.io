@@ -17,6 +17,6 @@ Ziehen Sie die Komponente *Xtract Table* auf die Arbeitsoberfläche, um eine neu
 
 Wählen Sie unter *Connection* die anfangs erstellte SAP-Verbindung und klicken Sie auf *Edit*, um die Tabellen-Extraktion zu konfigurieren. 
 
-![Add-Extraction](/img/content/xu/xfa_create_table_extraction_02.png){:class="img-responsive"}
+![Create-New-Table-Extraction2](/img/content/xfa_create_table_extraction_02.png){:class="img-responsive"}
 
 {% include _content/de/table/extraktion-anlegen.md  %}

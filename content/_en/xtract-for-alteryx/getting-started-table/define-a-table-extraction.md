@@ -18,7 +18,7 @@ Drag the *Xtract Table* component to the desktop to create a new table extractio
 
 Under *Connection*, select the SAP connection you initially created and click *Edit* to configure a new table extraction.
 
-![Add-Extraction](/img/content/xu/xfa_create_table_extraction_02.png){:class="img-responsive"}
+![Create-New-Table-Extraction2](/img/content/xfa_create_table_extraction_02.png){:class="img-responsive"}
 
 {% include _content/de/table/extraktion-anlegen.md  %}
 
