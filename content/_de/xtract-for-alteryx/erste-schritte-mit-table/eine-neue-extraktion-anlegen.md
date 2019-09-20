@@ -3,7 +3,7 @@ ref: afc-getting-started-table-01
 layout: page
 title:  Eine neue Extraktion anlegen
 description: Eine neue Extraktion anlegen
-product: board-connector
+product: xtract-for-alteryx
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
 weight: 1
