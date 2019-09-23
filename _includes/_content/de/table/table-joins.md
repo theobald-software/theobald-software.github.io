@@ -1,9 +1,9 @@
-Voraussetzung für die Nutzung ist die Installation Funktionssbausteins [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP.
+Voraussetzung für die Nutzung ist die Installation Funktionsbausteins [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP.
 
 Unter dem Karteireiter *Joins* können in der Komponente ab Version 4.x Tabellen-Joins definiert werden. Für Versionen älter als 4.x beachten Sie den Abschnitt zur separaten [Table Join](../table-join) Komponente. <br>
 
 Die *Joins* Funktion dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen.  <br>
-Mögliche Szenarien dafür wären, Tabellen für Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen. <br>
+Mögliche Szenarien dafür wären, Tabellen für Kopf- und Positionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen. <br>
 Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt. <br>
 
 *Bemerkung*: Joins von Cluster- und Pool-Tabellen werden nicht unterstützt, können aber als Einzeltabellen extrahiert werden.
@@ -26,9 +26,9 @@ Hier ein Beispiel, um die Anzahl des Sprachen-Felds (SPRAS) in der Tabelle MAKT 
 
 **Verknüpfungen definieren**
 
-Wechselt man nun in den *Joins* Dialog ist bereits eine Inner Join Verknüpfung vordefiniert. Die Unterscheidung von *Inner Joins* und *Outer Joins* ist [hier](https://help.sap.com/doc/saphelp_tm80/8.0/de-DE/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true) erläuert. <br>
+Wechselt man nun in den *Joins* Dialog ist bereits eine Inner Join Verknüpfung vordefiniert. Die Unterscheidung von *Inner Joins* und *Outer Joins* ist [hier](https://help.sap.com/doc/saphelp_tm80/8.0/de-DE/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true) erläutert. <br>
 Für die Details klicken Sie auf das Stift-Symbol. Im Beispiel wurde die Tabelle MARA (Linke Tabelle) mit der Tabelle MAKT (Rechte Tabelle) anhand der Felder MATNR und MANDT mit dem Join-Typ "Inner" zusammengefügt. <br>
-Bei den angebotenen Einstellungen und Verknüpfungen handelt es sich lediglich um Vorschlagswerte, alle Bestandteile, d.h. *Left Table*, *Right Table*, *Join Type* und *Join Mapping* lassen sich nachträglich ändern. <br>
+Bei den angebotenen Einstellungen und Verknüpfungen handelt es sich lediglich um Vorschlagwerte, alle Bestandteile, d.h. *Left Table*, *Right Table*, *Join Type* und *Join Mapping* lassen sich nachträglich ändern. <br>
 - Um weitere Feldverknüpfungen hinzuzufügen, klicken Sie auf *Add*. 
 - Bestehende Verknüpfungen lassen sich mit *Remove* (Mülltonnen-Symbol) entfernen. 
 - Weitere Tabellen lassen sich über den *Tables and Fields* Dialog hinzufügen. Wir empfehlen grundsätzlich, nicht mehr als fünf Tabellen miteinander zu joinen.    

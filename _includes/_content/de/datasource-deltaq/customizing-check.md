@@ -8,7 +8,7 @@ Füllen Sie nun noch oben rechts die Felder aus, wie im Kapitel [DeltaQ Customiz
 Beachten Sie, dass Gateway Host Ihrem in der SAP-Verbindung definierten SAP-System (Feld Host oder Message Server) entspricht. 
 
 **Gateway Service** <br> ist in der Regel in der Form sapgwNN, wobei NN die Instanz-Nummer ihres SAP-Systems ist, eine zweistellige Zahl zwischen 00 und 09. <br>
-NN muss dem Feld System No in der SAP-Verbindung bzw. dem Feld Instanz-Nummer im SAP Logon entsprechen. 
+NN muss dem Feld System No in der SAP-Verbindung bzw. dem Feld Instanz-Nummer im SAP-Logon entsprechen. 
 
 **Program ID** <br> ist das registrierte RFC-Serverprogramm (siehe Schritt 4 beim DeltaQ Customizing).
 

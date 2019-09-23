@@ -1,4 +1,4 @@
-Eine WHERE-Bedingung kann im Karteireiter *WHERE Clause* hinterlegt und das Ergebnis mit *Load live preview* angezeigt werden. Beachten Sie, dass bei nicht eindeutigen Feldnamen, der Tabellennamme in der WHERE Bedingung aufgeführt sein muss (z.B. MAKT~MATNR). Dies kann z.B. bei Tabellen-Joins der Fall sein.     
+Eine WHERE-Bedingung kann im Karteireiter *WHERE Clause* hinterlegt und das Ergebnis mit *Load live preview* angezeigt werden. Beachten Sie, dass bei nicht eindeutigen Feldnamen, der Tabellenname in der WHERE Bedingung aufgeführt sein muss (z.B. MAKT~MATNR). Dies kann z.B. bei Tabellen-Joins der Fall sein.     
 
 ![Extraction-Settings-01](/img/content/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 

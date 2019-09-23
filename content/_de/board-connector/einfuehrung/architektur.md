@@ -10,11 +10,11 @@ weight: 1
 lang: de_DE
 ---
 
-BOARDConnector für SAP ist eine Middleware-Komponente, die es ermöglicht, Daten aus SAP-Systemen zu extrahieren, um sie dann iin BOARD weiterzuverarbeiten.
+BOARDConnector für SAP ist eine Middleware-Komponente, die es ermöglicht, Daten aus SAP-Systemen zu extrahieren, um sie dann in BOARD weiterzuverarbeiten.
 
 Im Wesentlichen besteht BOARD aus zwei Komponenten: Eine Server-Komponente BOARDConnector Server und eine Client-Komponente BOARDConnector Designer.
 
-Die Server-Komponente ist für die eigentliche Extraktion zuständig. BOARD kommuniziert mit der Server-Komponente, und diese wiederum mit SAP. Der Designer wird für die Verwaltung der Extraktionen verwendet. Vom Designer besteht auch eine Verbindung direkt zum SAP. Dieser wird nicht für den Datentransport, sondern ausschließlich für die Metadatenabfrage während des Design-Prozesses verwendet. 
+Die Server-Komponente ist für die eigentliche Extraktion zuständig. BOARD kommuniziert mit der Server-Komponente, und diese wiederum mit SAP. Der Designer wird für die Verwaltung der Extraktionen verwendet. Vom Designer besteht auch eine Verbindung direkt zum SAP. Dieser wird nicht für den Datentransport, sondern ausschließlich für die Metadaten-abfrage während des Design-Prozesses verwendet. 
 
 
 ![Architecture-01](/img/content/Architecture-01.png){:class="img-responsive"}
@@ -32,7 +32,7 @@ BOARD ist ein Satz von insgesamt acht Extraktionstypen, die es ermöglichen, die
 
 **Hierarchy** extrahiert Hierarchien aus SAP BW / BI.
 
-**Open Hub Service** extrahiert InfoSpokes und OHS destinations.
+**Open Hub Service** extrahiert InfoSpokes und OHS Destination.
 
 **DeltaQ** extrahiert DataSources (OLTP).
 

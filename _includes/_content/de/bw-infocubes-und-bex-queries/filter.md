@@ -13,7 +13,7 @@ Wählen Sie nun die Werte des Merkmals, auf die das Ergebnis gefiltert werden so
 Sie können Filter für mehrere Merkmale setzen. 
 
 **Filtervariable** <br>
-Sie haben die Möglichkeit, eine Variable für die Filterwerte zu defineren. <br>
+Sie haben die Möglichkeit, eine Variable für die Filterwerte zu definieren. <br>
 Dazu setzen Sie ins Feld Variable den Variablennamen z.B. *CompanyCode* ein.<br>
 Beim Aufruf könnten Sie dann einen Filterwert mitgeben, z.B. 
 ```

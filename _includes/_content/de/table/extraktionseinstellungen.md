@@ -5,14 +5,14 @@ Folgende Extraktionseinstellungen stehen zur Verfügung:
 **Package Size** <br>
 Gibt die Anzahl der Datensätze an, die pro Datenpaket geholt werden. Welche Werte in Ihrem Fall optimal sind, muss ausprobiert werden. 
 Erfahrungsgemäß ist bei großen Datenmengen eine Package Size zwischen 15000 und 50000 sinnvoll. Der Default-Wert liegt bei 20000 Zeilen. 
-0 bedeutet, es findet keine Paketierung statt. Dies kann bei großen Datenextrakten zu einem RFC-Timeout führen.
+0 bedeutet, es findet keine Parkettierung statt. Dies kann bei großen Datenextrakten zu einem RFC-Timeout führen.
 Insbesondere bei der Ausführung einer Tabellenextraktion als Hintergrund-Job (siehe *Extract data in background job*) spielt die Paketgröße eine wichtige Rolle und sollte sinnvoll in Bezug auf die Gesamtdatenmenge gewählt werden. 
 
 **Row limit** <br>
 Gibt die maximale Anzahl der extrahierten Datensätze an. *0* extrahiert die komplette Tabelle.
 
 **Function Module** <br>
-Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Das Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System verhonden sind.
+Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Das Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind.
 Wir empfehlen, unseren Baustein Z_THEO_READ_TABLE zu verwenden. Siehe auch [SAP Customizing](../sap-customizing/funktionsbaustein-fuer-table-extraktion). 
 
 **Extract data in background job** <br>

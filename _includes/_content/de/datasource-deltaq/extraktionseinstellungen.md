@@ -4,7 +4,7 @@
 
 **Transfer Mode**<br>
 Die Rohdatenpakete können aus SAP über tRFC-Calls oder Daten-IDocs versendet werden. <br>
-In der Regel ist tRFC als Default-Wert optimal. <br>Sollte es aber nötig sein, um z.B. die Rohdatenpakete zu Debugging-Zwecken anschauen zu können, kann der Datentransfer auf Idoc umgestellt werden. Dann lassen sich die Datenpakete in der Transaktion WE02 (Idoc-Monitoring) einsehen.
+In der Regel ist tRFC als Default-Wert optimal. <br>Sollte es aber nötig sein, um z.B. die Rohdatenpakete zu Debugging-Zwecken anschauen zu können, kann der Datentransfer auf Idoc umgestellt werden. Dann lassen sich die Datenpakete in der Transaktion WE02 (IDoc-Monitoring) einsehen.
 
 
 **Automatic Synchronisation**<br>
@@ -19,7 +19,7 @@ Im selben Paket haben neuere Daten einen höheren RowCounter-Wert.
 
 
 **Accept Gaps in DataPackage Id**<br>
-Die DeltaQ-Komponente macht am Ende jede Extraktion einen Konsistenzcheck. Nur wenn alle Pakete korrekt angekommen sind, gilt die Extraktion als konsistent. Für den Fall, dass der Kunde im User-Exit einer OLTP-Source nun aber eine Filterfunktion eingebaut hat, die dafür sorgt, dass bestimmte Datenpakete nicht versendet werden, muss der Konsistenz-Check etwas entschärft werden. Sonst würde der Kundenfilter als Inkonsistenz gewertet. Wenn diese Option also aktiviert ist, werden von der DeltaQ Lücken in der Paketnummerierung nicht als Inkonsistenz gewertet sondern als bewusst zurückgehaltene Daten. Die Option sollte man nur dann verwenden, wenn wirklich eine entsprechende Filterfunktion im User-Exit vorliegt. Das Verhalten lässt sich häufig bei 0FI- oder 0CO-DataSources beobachten.
+Die DeltaQ-Komponente macht am Ende jede Extraktion einen Konsistenz-Check. Nur wenn alle Pakete korrekt angekommen sind, gilt die Extraktion als konsistent. Für den Fall, dass der Kunde im User-Exit einer OLTP-Source nun aber eine Filterfunktion eingebaut hat, die dafür sorgt, dass bestimmte Datenpakete nicht versendet werden, muss der Konsistenz-Check etwas entschärft werden. Sonst würde der Kundenfilter als Inkonsistenz gewertet. Wenn diese Option also aktiviert ist, werden von der DeltaQ Lücken in der Paketnummerierung nicht als Inkonsistenz gewertet sondern als bewusst zurückgehaltene Daten. Die Option sollte man nur dann verwenden, wenn wirklich eine entsprechende Filterfunktion im User-Exit vorliegt. Das Verhalten lässt sich häufig bei 0FI- oder 0CO-DataSources beobachten.
 
 **Timeout (sec)**<br>
 Der Timeout definiert die Zeitspanne, wie lange die Komponente maximal auf fehlende IDocs oder Datenpakete vom SAP System warten soll (in Sekunden), nachdem der Extraktionsjob auf SAP-Seite beendet wurde. Der Default-Wert sind 300 Sekunden.
@@ -27,15 +27,15 @@ Der Timeout definiert die Zeitspanne, wie lange die Komponente maximal auf fehle
 **Request Maintenance**<br>
 Zum Anzeigen bzw. Löschen von vorigen Init-Anfragen (Einträge in RSA7).
 
-- **Delete Request**
-    Löscht die Init-Abfragen (Einträge in RSA7).
+**Delete Request**<br>
+Löscht die Init-Abfragen (Einträge in RSA7).
 
-- **Allow BW requests deletion**
-    Erlaubt die Löschung der Init-Abfragen für die Export DataSources in BW.
+**Allow BW requests deletion**<br>
+Erlaubt die Löschung der Init-Abfragen für die Export DataSources in BW.
 
 
 
-**Hierarchy Settings**
+**Hierarchy Settings**<br>
 
 Falls Sie eine Hierachie-Datasource extrahieren, finden Sie im Reiter Hierarchy die entsprechenden Einstellungen.
 
@@ -51,21 +51,21 @@ Legt den Hierarchienamen fest.
 Legt die Hierarchieklasse fest.
 
 
-**Representation**
+**Representation**<br>
 
-- ParentChild: Die Hierarchie hat das SAP Parent-Child Format.
+ParentChild: Die Hierarchie hat das SAP Parent-Child Format.
 
 ![Deltaq-Hierarchies-Parent-Child](/img/content/Deltaq-Hierarchies-Parent-Child.png){:class="img-responsive"}
 
 - Natural: Die Parent-Child Beziehung wird in eine reguläre Hierarchie umgewandelt.
 
 **Level Count**<br>
-Legt die maximale Anzahl der Ebenen fest, falls die Representation Natural gewählt ist. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen.
+Legt die maximale Anzahl der Ebenen fest, falls die Repräsentation Natural gewählt ist. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen.
 
 ![Deltaq-Hierarchies-Parent-Child-Natural](/img/content/Deltaq-Hierarchies-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Fill empty levels**<br>
-Falls die Representation Natural gewählt ist, wird das unterste Element in der Hierarchie bis in die letzte Ebene kopiert. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen und der Option Repeat Leaves.
+Falls die Repräsentation Natural gewählt ist, wird das unterste Element in der Hierarchie bis in die letzte Ebene kopiert. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen und der Option Repeat Leaves.
 
 ![Deltaq-Hierarchies-Parent-Child-Repeat](/img/content/Deltaq-Hierarchies-Parent-Child-Repeat.png){:class="img-responsive"}
 

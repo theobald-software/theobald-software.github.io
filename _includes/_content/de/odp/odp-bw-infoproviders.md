@@ -5,9 +5,9 @@ Die BW∕4 HANA Systeme bieten die folgenden InfoProvider über den ODP BW-Konte
 - DataStore-Objekte (erweitert) (mit Delta-Extraktion)
 - CompositeProvider - Objekttyp HCPR (vollständige Extraktion)
 - InfoObjects
--- Stammdaten
--- Texte
--- Hierarchien
+- Stammdaten
+- Texte
+- Hierarchien
 - Query als InfoProvider
 
 Zusätzlich bieten BW-Systeme (abhängig von ihrer Version) die folgenden InfoProvider über den ODP BW-Kontext an:

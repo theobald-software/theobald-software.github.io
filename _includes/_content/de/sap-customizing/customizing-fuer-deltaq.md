@@ -1,4 +1,4 @@
-**Achtung**: Die Schritte des DeltaQ-Customizings außer Schritt 2 sind Mandantenabhängig.  
+**Achtung**: Die Schritte des DeltaQ-Customizings außer Schritt 2 sind Mandanten abhängig.  
 
 Um die DeltaQ-Komponente nutzen zu können, sind einige Customizing-Einstellungen im SAP vorzunehmen, die im Folgenden Schritt für Schritt beschrieben sind.
 

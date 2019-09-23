@@ -1,5 +1,5 @@
 Im letzten Beispiel haben wir ein **Full-Update** ausgeführt. <br>
-Ein Full Update fordert alle Daten an, die den von Ihnen festgelegten Selektionskriterien entsprechen.
+Ein Full-Update fordert alle Daten an, die den von Ihnen festgelegten Selektionskriterien entsprechen.
 
 **Schritt 1: Delta Initialisation** 
 
