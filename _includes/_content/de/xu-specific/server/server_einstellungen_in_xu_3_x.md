@@ -38,7 +38,7 @@ Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat inst
 Siehe Kapitel [X.509 Zertifikat installieren](../sicherheit/x.509-zertifikat-installieren)
 
 **HTTPS - Restricted to AD users with Designer read access**<br>
-Siehe *HTTPS - Unrestricted*. Darüberhinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tabreiter *Configuration Server* mindestens *Read Access* zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Kapitel [Serversicherheit](../sicherheit/serversicherheit).
+Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tabreiter *Configuration Server* mindestens *Read Access* zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Kapitel [Serversicherheit](../sicherheit/serversicherheit).
 
 **Misc.**
 
@@ -46,9 +46,9 @@ Siehe *HTTPS - Unrestricted*. Darüberhinaus ermöglicht diese Einstellung eine 
 Definiert das maximale Alter der Webserver-Logdateien in Tagen. Danach werden die Logdateien gelöscht. 
 
 **Enable setup distribution for clients**<br>
-Legt fest, ob das Setup der XU-Version, die auf dem Server läuft, vom Server runtergeladen werden kann.<br>
+Legt fest, ob das Setup der XU-Version, die auf dem Server läuft, vom Server heruntergeladen werden kann.<br>
 Wenn man sich mit einer älteren Designer-Version an einem neueren Server anmeldet und diese Option aktiviert ist,
-fragt der Designer, ob man das neuere Setup runterladen möchte.
+fragt der Designer, ob man das neuere Setup herunterladen möchte.
 
 **Result cache**
 

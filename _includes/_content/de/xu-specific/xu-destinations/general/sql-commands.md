@@ -48,7 +48,7 @@ Im dritten Schritt wird dann die temporäre Tabelle mit der Zieltabelle gemergt 
 
 ![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.jpg){:class="img-responsive"}
 
-Der Merge-Befehl aktualisiert vorhandene Datensätze bzw. fügt Nichtvorhandene ein. Welche Felder aktualisiert werden, kann man dem SQL-Statement entnehmen.<br>
+Der Merge-Befehl aktualisiert vorhandene Datensätze bzw. fügt nicht vorhandene ein. Welche Felder aktualisiert werden, kann man dem SQL-Statement entnehmen.<br>
 Der SQL-Befehl kann bei Bedarf geändert werden, um z.B. bestimmte Spalten von der Aktualisierung auszuschließen.<br>
 Felder, welche nicht im SQL-Statement auftauchen, sind von Änderungen nicht betroffen.
 

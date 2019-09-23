@@ -1,9 +1,9 @@
 ### Anwendungsfall
 
-BI Client Tools wie z.B. Power BI, Power Pivot, alteryx, etc. können Extraktionen in Xtract Universal starten. Die extrahierten Daten werden von Xtract Universal direkt in diese Tools geladen.
+BI Client Tools wie z.B. Power BI, Power Pivot, Alteryx, etc. können Extraktionen in Xtract Universal starten. Die extrahierten Daten werden von Xtract Universal direkt in diese Tools geladen.
 Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Credentials desjenigen (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. Dadurch greifen die SAP-Berechtigungen des ausführenden Benutzers, was z.B. häufig bei der Extraktion von BW/BEx Queries eine Rolle spielt.
 
-Das heisst, die Windows-Credentials dieses Benutzers müssen via Xtract Universal an SAP weitergeleitet werden. Auf dem Weg dorthin oder auf SAP-Seite besteht ein Mapping zwischen Windows-Benutzer und dessen SAP-Credentials.
+Das heißt, die Windows-Credentials dieses Benutzers müssen via Xtract Universal an SAP weitergeleitet werden. Auf dem Weg dorthin oder auf SAP-Seite besteht ein Mapping zwischen Windows-Benutzer und dessen SAP-Credentials.
 
 Prinzipiell lässt sich dieses *Single Sign On (SSO)* mit Xtract Universal über zwei unterschiedliche Verfahren darstellen:
 

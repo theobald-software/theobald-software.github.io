@@ -3,7 +3,7 @@ Machen Sie einen Rechtsklick auf die EXECUTE FUNCTION-Aktivität und wählen Sie
 
 ![WSD-ExecuteFunctionEdit](/img/content/WSD-ExecuteFunctionEdit.png){:class="img-responsive"}
 
-Im Dialogfestner *Execute Function Activity Dialog* sehen Sie im Feld Name den Namen des SAP-Funktionsbausteines (*SD_RFC_CUSTOMER_GET*).<br>
+Im Dialogfenster *Execute Function Activity Dialog* sehen Sie im Feld Name den Namen des SAP-Funktionsbausteines (*SD_RFC_CUSTOMER_GET*).<br>
 Darunter sind die verschiedenen Parameter, also *EXPORTS, IMPORTS, CHANGINGS* und TABLES (*Input* und *Output*), des *Funktionsbausteins* (FuBa) und die entsprechende Zuordnung (*Mapping*) aufgeführt. 
 
 

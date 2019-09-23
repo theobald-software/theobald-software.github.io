@@ -5,7 +5,7 @@ Die hierfür notwendigen Einstellungen werden über die Menüleiste - *Server - 
 
 selektiert werden. Darüberhinausgehende Zugriffsbeschränkungen müssten über eine externe Firewall oder eine ähnliche Lösung vorgenommen werden.
 
-Siehe auch Kaptiel Server Einstellungen. 
+Siehe auch Kapitel Server Einstellungen. 
 
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"}
  

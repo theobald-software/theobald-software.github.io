@@ -35,7 +35,7 @@ Für die Anmeldung an einem SAP-System müssen Sie folgende Daten angeben:
 4. SAP-Zielsystem
 5. SAP-Router
 
-Abgesehen davon können Sie wählen, ob Sie die klassiche oder die Netweaver RFC-Bibliothek (API) verwenden wollen, wobei die klassische RFC API die Standardeinstellung ist. 
+Abgesehen davon können Sie wählen, ob Sie die klassische oder die Netweaver RFC-Bibliothek (API) verwenden wollen, wobei die klassische RFC API die Standardeinstellung ist. 
 
 **Mandant** 
 
@@ -47,7 +47,7 @@ Den Sprachenschlüssel für die von Ihnen verwendete Sprache, z.B. DE für Deuts
 
 **Authentifizierung**
 
-Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort eigeben. <br>
+Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort eingeben. <br>
 Insgesamt werden aber folgende Authentifizierungsformen unterstützt: 
 
 a. SAP-Benutzername und Passwort<br>
@@ -58,7 +58,7 @@ d. SAP Log On Ticket
 
 **Zielsystem**
 
-Das SAP-Zielsystem, welches ein Application Server oder ein Message Server (Load Balancing) sein kann.
+Das SAP-Zielsystem, welches ein Application-Server oder ein Message-Server (Load Balancing) sein kann.
 
 Im Fall eines Applikationsservers werden folgende Angaben benötigt: 
 
@@ -85,7 +85,7 @@ Falls Sie auf das SAP-System (Application-Server oder Message-Server) über eine
 
 Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
 Die RFC API existiert in zwei unterschiedlichen Versionen: 
-- Klassiche RFC Bibliothek (librfc32.dll).
+- Klassische RFC Bibliothek (librfc32.dll).
 - NetWeaver RFC Bibliothek (sapnwrfc.dll). 
 
 
@@ -110,7 +110,7 @@ Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort einge
 **SAP-Zielsystem**
 
 
-Das SAP-Zielsystem kann ein Application Server oder ein Message Server (Load Balancing) sein.
+Das SAP-Zielsystem kann ein Application-Server oder ein Message-Server (Load Balancing) sein.
 
 **Application Server** 
 

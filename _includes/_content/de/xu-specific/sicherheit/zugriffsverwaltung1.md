@@ -8,13 +8,13 @@ Danach können sich nur noch die aufgelisteten Benutzer bzw. Benutzergruppen am 
 Einem Benutzer/Benutzergruppe können nachfolgende Rechte zugeordnet werden. Diese Rechte beziehen sich auf Aktionen die im Xtract Universal Designer durchgeführt werden. 
 
 **Admin**: Mitglieder dieser Gruppe haben alle Rechte. Sie können alles, was Benutzer mit “Create”-Rechten können.<br>
-Darüberhinaus haben sie Admin-Rechte wie das Ändern von Server Settings, Zugriff auf Server Logs oder das Bearbeiten von Benutzern und Verbindungen (SAP und Zielumgebungen). <br>Zugriffseinschränkungen auf Extraktionen oder Quellsystem werden ignoriert.
+Darüber hinaus haben sie Admin-Rechte wie das Ändern von Server Settings, Zugriff auf Server Logs oder das Bearbeiten von Benutzern und Verbindungen (SAP und Zielumgebungen). <br>Zugriffseinschränkungen auf Extraktionen oder Quellsystem werden ignoriert.
 
 **Create**: Mitglieder dieser Gruppe können all das, was Benutzer mit “Modify”-Rechten können. 
-Darüberhinaus können sie Extraktionen anlegen und klonen. Gruppenmitglieder können keine Admin-Tätigkeiten ausführen.
+Darüber hinaus können sie Extraktionen anlegen und klonen. Gruppenmitglieder können keine Admin-Tätigkeiten ausführen.
 
 **Modify**: Mitglieder dieser Gruppe können all das, was Benutzer mit “Read”-Rechten können.<br>
-Darüberhinaus können sie bestehende Extraktionen editieren, jedoch keine Extraktionen anlegen oder klonen. 
+Darüber hinaus können sie bestehende Extraktionen editieren, jedoch keine Extraktionen anlegen oder klonen. 
 
 **Read**: Mitglieder dieser Gruppe können keine Extraktionen editieren, können sie jedoch lesend öffnen.
 
