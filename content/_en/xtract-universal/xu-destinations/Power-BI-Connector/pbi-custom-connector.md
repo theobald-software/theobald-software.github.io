@@ -12,11 +12,11 @@ old_url:
 ---
 
 ### Setup 
-Along with the *Power BI Connector (beta)* destination in Xtract Universal comes a custom extension file for Power BI . This file is named *XtractUniversalExtension.mez* and can be found in the *powerbi* folder inside the installation directory of Xtract Universal. 
+Along with the *Power BI Connector* destination in Xtract Universal comes a custom extension file for Power BI . This file is named *XtractUniversalExtension.pqx* and can be found in the *powerbi* folder inside the installation directory of Xtract Universal. 
 
 This connector has been developed following Microsoft's guidelines for [custom connectors in Power BI](https://docs.microsoft.com/en-US/power-bi/desktop-connector-extensibility). 
 
-When using *Power BI Desktop* the .mez file needs to be copied to *[Documents]\Power BI Desktop\Custom Connectors*. Please create this directory manually if it does not exist. After copying the file you may need to restart Power BI. <br>
+When using *Power BI Desktop* the .pqx file needs to be copied to *[Documents]\Power BI Desktop\Custom Connectors*. Please create this directory manually if it does not exist. After copying the file you may need to restart Power BI. <br>
 
 Also, you need to change the security level for [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security) within Power BI to *Allow any extension to be load without validation or warning*. Otherwise the *Xtract Universal (beta)* datasource will not be visible within Power BI.
 
