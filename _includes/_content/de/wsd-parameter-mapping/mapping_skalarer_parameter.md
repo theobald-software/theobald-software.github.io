@@ -17,7 +17,7 @@ Rufen Sie anschließend den Aktivitätsdialog auf und scrollen Sie zum Struktur-
 
 ![WSD-MappingSkalarMappingInput16](/img/content/WSD-MappingSkalarMappingInput16.png){:class="img-responsive"}
 
-Markieren Sie die Zeile und rufen Sie das Dialogfenster für die Mappingeinstellungen mit dem Button rechts von der Spalte *Mapping Expression* auf. Sie finden dort alle Felder der Struktur PI_PERSONALDATA aufgelistet vor.
+Markieren Sie die Zeile und rufen Sie das Dialogfenster für die Mapping-Einstellungen mit dem Button rechts von der Spalte *Mapping Expression* auf. Sie finden dort alle Felder der Struktur PI_PERSONALDATA aufgelistet vor.
 
 ![WSD-MappingSkalarMappingInput17](/img/content/WSD-MappingSkalarMappingInput17.png){:class="img-responsive"}
 
@@ -43,7 +43,7 @@ Ziel ist es, in der WebService Operation fünf skalare Eingabe-Parameter zu defi
 
 Legen Sie zunächst eine neue Operation an, die den Funktionsbaustein BAPI_REQUISITION_CREATE aufruft und kehren Sie zur Übersichtsseite zurück.
 
-Definieren Sie nun Ihre skalaren Inputparameter.  Wir nennen diese Material, Quantity, Plant, Delivery Date und DocType. 
+Definieren Sie nun Ihre skalaren Input-Parameter.  Wir nennen diese Material, Quantity, Plant, Delivery Date und DocType. 
 
 ![WSD-MappingSkalarParameterDialog1](/img/content/WSD-MappingSkalarParameterDialog1.png){:class="img-responsive"}
 
@@ -55,15 +55,15 @@ Zum Mappen der Tabelle klicken Sie auf den Eingabebutton rechts des Feldes *Mapp
 
 ![WSD-MappingSkalarMappingInput2](/img/content/WSD-MappingSkalarMappingInput2.png){:class="img-responsive"}
 
-Ordnen Sie nun die Inputparameter den entsprechenden Feldern zu. Klicken Sie dafür auf die Zeile mit dem gewünschten Tabellenfeld und klicken Sie auf den Eingabebutton rechts um ins nächste Dialogfenster zu gelangen. 
+Ordnen Sie nun die Input-Parameter den entsprechenden Feldern zu. Klicken Sie dafür auf die Zeile mit dem gewünschten Tabellenfeld und klicken Sie auf den Eingabebutton rechts um ins nächste Dialogfenster zu gelangen. 
 
 ![WSD-MappingSkalarMappingInput14](/img/content/WSD-MappingSkalarMappingInput14.png){:class="img-responsive"}
 
-Wählen Sie aus der Liste den passenden Inputparameter mit einem Doppelklick aus.
+Wählen Sie aus der Liste den passenden Input-Parameter mit einem Doppelklick aus.
 
 ![WSD-MappingSkalarMappingInput3](/img/content/WSD-MappingSkalarMappingInput3.png){:class="img-responsive"}
 
-Ordnen Sie auf diese Weise alle Inputparameter zu und beenden Ihre Eingaben mit OK.
+Ordnen Sie auf diese Weise alle Input-Parameter zu und beenden Ihre Eingaben mit OK.
 
 ![WSD-MappingSkalarMappingInput4](/img/content/WSD-MappingSkalarMappingInput4.png){:class="img-responsive"}
 

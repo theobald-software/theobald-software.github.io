@@ -19,7 +19,7 @@ Wenn Sie mehrer Zielumgebungen angelegt haben, z.b. db_1 und db_2, können Sie �
 
 *wait*
 Bestimmt, ob die http-Verbindung zum aufrufenden Client, bis zum Ende der Extraktion bestehen soll. Default-Wert is True.<br>
-Wenn Sie den Wert auf False setzen, wird die Extraktion asynchron aufgerufen. Die http-Verbindung zwischen aufrufendem Client  (xu.exe bzw. Browser) und XU-Server wird getrennt, nachdem die Extraktion angestartet wurde. Das kann z.B. bei langlaufenden Extraktionen sinnvoll sein. Dadurch wird die Extraktion z.B. auch dann nicht abgebrochen, wenn der aufrufende Client geschlossen wird.<br>
+Wenn Sie den Wert auf False setzen, wird die Extraktion asynchron aufgerufen. Die http-Verbindung zwischen aufrufendem Client  (xu.exe bzw. Browser) und XU-Server wird getrennt, nachdem die Extraktion gestartet wurde. Das kann z.B. bei langlaufenden Extraktionen sinnvoll sein. Dadurch wird die Extraktion z.B. auch dann nicht abgebrochen, wenn der aufrufende Client geschlossen wird.<br>
 In diesem Fall wird der Zeitstempel als Ergebnis zurückgeliefert. Der Zeitstempel kann verwendet werden, um das entsprechende Log aufzurufen. 
 
 **Table**

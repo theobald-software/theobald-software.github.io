@@ -36,12 +36,12 @@ Beenden Sie Ihre Eingaben mit OK. Das Szenario ist damit abgeschlossen.
 
 Im folgenden Beispiel zeigen wir Ihnen, wie Struktur-Parameter einer Webservice-Operation mit dem WebService Designer auf skalare Eingabe-Parameter eines Funktionsbausteins gemappt werden können. 
 
-Als Anwendungsbeispiel ziehen wir den Funktionsbaustein BAPI_EMPLOYEE_GETDATA heran. Der Funktionsbaustein liest Personalstammdaten aus und schreibt die Ergebnisse in verschiedene Ausgabetabellen. Als Inputparameter  enthält der Funktionsbaustein eine Reihe von skalaren Parametern. 
+Als Anwendungsbeispiel ziehen wir den Funktionsbaustein BAPI_EMPLOYEE_GETDATA heran. Der Funktionsbaustein liest Personalstammdaten aus und schreibt die Ergebnisse in verschiedene Ausgabetabellen. Als Input-Parameter  enthält der Funktionsbaustein eine Reihe von skalaren Parametern. 
 Ziel in diesem Szenario ist es, einen Struktur-Parameter zu definieren, der die Elemente EMPLOYEE_ID, LASTNAME_M, FSTNAME_M und DATE enthält und diese Elemente auf die gleichlautenden skalaren Eingabe-Parameter des Funktionsbausteins zu mappen.
 
 Legen Sie zunächst eine Operation an, die den Funktionsbaustein BAPI_EMPLOYEE_GETDATA aufruft und kehren Sie zur Übersichtsseite zurück. Rufen Sie den Menüpunkt Custom Data Types auf und klicken im folgenden Dialogfenster auf *New*, um einen neuen Datentyp mit dem Namen *Personal* anzulegen. Dieser Datentyp soll in seiner Struktur die genannten Elemente enthalten.
 
-Da Name DATE bei den Datentypen ein geschützer Feldname ist, wählen Sie einen Alternativname für dieses Feld, z.B. CALENDARDATE. 
+Da Name DATE bei den Datentypen ein geschützter Feldname ist, wählen Sie einen Alternativname für dieses Feld, z.B. CALENDARDATE. 
 
 ![WSD-MappingStructureMappingInput7](/img/content/WSD-MappingStructureMappingInput7.png){:class="img-responsive"}
 
@@ -49,7 +49,7 @@ Legen Sie anschließend den Eingabe-Parameter *PersonalData* an, der diesen Date
 
 ![WSD-MappingStructureMappingInput8](/img/content/WSD-MappingStructureMappingInput8.png){:class="img-responsive"}
 
-Wechseln Sie anschließend in den Aktivitätsdialog und scrollen Sie zu den Inputparametern. Zunächst wollen wir das Element EMPLOYEE_ID unseres Struktur-Parameters PersonalData auf den skalaren Inputparameter EMPLOYEE_ID des Funktionsbausteins mappen. Markieren Sie die Zeile mit dem Parameter EMPLOYEE_ID und rufen Sie mit dem Button rechts die weiteren Mapping-Einstellungen auf.   
+Wechseln Sie anschließend in den Aktivitätsdialog und scrollen Sie zu den Input-Parametern. Zunächst wollen wir das Element EMPLOYEE_ID unseres Struktur-Parameters PersonalData auf den skalaren Inputparameter EMPLOYEE_ID des Funktionsbausteins mappen. Markieren Sie die Zeile mit dem Parameter EMPLOYEE_ID und rufen Sie mit dem Button rechts die weiteren Mapping-Einstellungen auf.   
 
 ![WSD-MappingStructureMappingInput9](/img/content/WSD-MappingStructureMappingInput9.png){:class="img-responsive"}
 
@@ -100,7 +100,7 @@ Bestätigen Sie die beiden folgenden Dialogfenster mit *OK*.
 
 ![WSD-MappingStructureNewCustomDataType7](/img/content/WSD-MappingStructureNewCustomDataType7.png){:class="img-responsive"}
 
-Als nächsten Schritt definieren Sie einen Inputparameter, der die angelegte Datenstruktur enthält. Rufen Sie dafür in der Übersichtsmaske den Menüpunkt *Parameters* auf und klicken auf New. Nennen Sie den neuen Parameter *SAPReqItems* und wählen Sie als Datentyp *ReqItem*. Beenden Sie Ihre Eingaben mit OK. Damit haben Sie Ihren Struktur-Parameter erstellt.   
+Als nächsten Schritt definieren Sie einen Input-Parameter, der die angelegte Datenstruktur enthält. Rufen Sie dafür in der Übersichtsmaske den Menüpunkt *Parameters* auf und klicken auf New. Nennen Sie den neuen Parameter *SAPReqItems* und wählen Sie als Datentyp *ReqItem*. Beenden Sie Ihre Eingaben mit OK. Damit haben Sie Ihren Struktur-Parameter erstellt.   
 
 ![WSD-MappingStructureNewParameter](/img/content/WSD-MappingStructureNewParameter.png){:class="img-responsive"}
 

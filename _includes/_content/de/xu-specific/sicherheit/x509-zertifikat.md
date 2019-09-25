@@ -8,7 +8,7 @@ Lassen Sie ein TLS Zertifikat von Ihrem IT Netzwerk Team erstellen. Stellen Sie 
 - Das Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten. 
 
 
-In Testumgebungen können Sie ein selbstsigniertes Zertifikat verwenden. Für Ihre Produktionsumgebung empfehlen wir, ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat zu verwenden. 
+In Testumgebungen können Sie ein selbst signiertes Zertifikat verwenden. Für Ihre Produktionsumgebung empfehlen wir, ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat zu verwenden. 
 
 
 **Importieren Sie das Zertifikat über die Microsoft Management Console (mmc) in den Windows Certificate Store**

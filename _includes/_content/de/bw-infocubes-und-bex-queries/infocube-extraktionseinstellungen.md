@@ -19,7 +19,7 @@ Definiert, dass reelle Extraktionsdaten für die Vorschau genutzt werden.
 zeigt die Einheiten der Kennzahlen an.
 
 **Package Size**<br> 
-Kann auf Werte größer 0 gesetzt werden, um das Query-Ergebnis nicht auf einmal, sondern in Paketen mit dieser Größe zu holen. Bei Queries mit mehr als 50.000 Zellen (Anzahl der Zeilen multipliziert mit der Anzahl der Spalten) macht es Sinn, diese Einstellung auf größer 0 zu setzen, und so die Paketierung einzuschalten.
+Kann auf Werte größer 0 gesetzt werden, um das Query-Ergebnis nicht auf einmal, sondern in Paketen mit dieser Größe zu holen. Bei Queries mit mehr als 50.000 Zellen (Anzahl der Zeilen multipliziert mit der Anzahl der Spalten) macht es Sinn, diese Einstellung auf größer 0 zu setzen, und so die Parkettierung einzuschalten.
 
 **Automatic Slicing Dimension**<br>
 Ermöglicht die Auswahl einer Dimension für ein automatisches Slicing. <br>
@@ -33,7 +33,7 @@ Betrifft BW Cube Extraktionen, die mit Xtract Kernel Versionen 1.8.49 oder früh
 
 **Use BEX Extraction**<br>
 Nutzen Sie diese Option für BEx Queries, wenn die Query nicht oder eingeschränkt (z.B. mit einer Struktur in den Zeilen) über die MDX-Schnittstellen extrahiert werden kann.
-Dabei wird die BEx-Query mit demselben Output (Struktur und Daten) wie z.B. im BEx Analyser geliefert.<br>
+Dabei wird die BEx-Query mit demselben Output (Struktur und Daten) wie z.B. im BEx Analyzer geliefert.<br>
 Es besteht nicht die Möglichkeit, die Selektion der Dimensionen und Kennzahlen zu ändern.
 
 - **Fill Emply Cells**
@@ -45,7 +45,7 @@ Es besteht nicht die Möglichkeit, die Selektion der Dimensionen und Kennzahlen 
 **Use MDX Extraction**<br>
 Die option erlaubt die direkte Eingabe eines MDX-Ausdrucks. <br>
 Danach klicken Sie auf Execute MDX and refresh statement, um die Metadaten aus dem BW-System zu lesen.<br>
-Variablen können sowohl für den ganzen MDX-Befehl als auch innerhalb des MDX-Befehls verwerdet werden.
+Variablen können sowohl für den ganzen MDX-Befehl als auch innerhalb des MDX-Befehls verwendet werden.
 
 
 **Use new OLAP BAPIs:**<br>

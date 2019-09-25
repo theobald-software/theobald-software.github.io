@@ -14,7 +14,7 @@ lang: de_DE
 
 Wenn der Dienst nicht startet, dann ändern Sie das Benutzerkonto, unter dem der Dienst läuft und stellen Sie sicher, dass es folgende Rechte hat: 
 
-- Local Security Policy -> Local Policies -> User Right Management: Log on as a service
+- Local Security Policy -> Local Policies -> User Right Management: Log on-as-a-service
 - Dateirechte für das Installationsverzeichnis + Unterverzeichnisse: Modify
 - HTTP URL Access Control List für http://+:httpPort/. 
 Auf folgender Seite finden Sie, wie man eine URLACL anlegt: [http://msdn.microsoft.com/en-us/library/ms733768.aspx](http://msdn.microsoft.com/en-us/library/ms733768.aspx)<br>

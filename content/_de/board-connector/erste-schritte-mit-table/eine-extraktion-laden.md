@@ -10,7 +10,7 @@ weight: 4
 lang: de_DE
 ---
 
-Der nächste Schritt ist das Laden einer Extraktion in BOARD mit dem DataReader. Im BOARD-Designer haben wir die Extraktionsanlagen definiert, die die Werkstabelle *T001W* aus SAP extrahieren. In BOARD haben wir die Entität Werke definiert, in die wir die SAP-Daten laden wollen. Wählen Sie nun *Database -> DataReader -> SAP -> New Protocol*, um ein neues Protokoll zu erstellen.
+Der nächste Schritt ist das Laden einer Extraktion in BOARD mit dem DataReader. Im BOARD-Designer haben wir die Extraktion definiert, die die Werkstabelle *T001W* aus SAP extrahieren. In BOARD haben wir die Entität Werke definiert, in die wir die SAP-Daten laden wollen. Wählen Sie nun *Database -> DataReader -> SAP -> New Protocol*, um ein neues Protokoll zu erstellen.
 
 ![Load-Extraction-01](/img/content/Load-Extraction-01.png){:class="img-responsive"}
 

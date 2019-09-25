@@ -38,20 +38,20 @@ Bestätigen Sie Ihre Auswahl mit *OK*.
 
 Anschließend muss ein Output oder Return-Parameter definiert werden. <br>
 Falls Sie mehrere Ausgabeparameter haben, wählen Sie *Output* im *Feld* Direction.<br>
-Der Outputparameter enthält die Ergebnisse, wenn Sie den Webservice aufrufen.
+Der Output-Parameter enthält die Ergebnisse, wenn Sie den Webservice aufrufen.
 
 ![WSD-NewParameterDialogTable](/img/content/WSD-NewParameterDialogTable.png){:class="img-responsive"}
 
 Optional: Soll die Tabelle später nach bestimmten Tabellenwerten gefiltert werden, kann zusätzlich ein 
-Inputparameter für die Filterfunktion angelegt werden. 
+Input-Parameter für die Filterfunktion angelegt werden. 
 
 ![WSD-NewParameterDialogTable2](/img/content/WSD-NewParameterDialogTable2.png){:class="img-responsive"}
 
-In der Aktivität kann nun das Mapping der Outputdaten durchgeführt werden.
+In der Aktivität kann nun das Mapping der Output-Daten durchgeführt werden.
 
 ![WSD-ExecuteTableEdit](/img/content/WSD-ExecuteTableEdit.png){:class="img-responsive"}
 
-Klicken Sie in der Sektion *Output Mapping* auf *New*, um einen neuen Eintrag anzulegen. Unter *Target* ist der Outputparameter 
+Klicken Sie in der Sektion *Output Mapping* auf *New*, um einen neuen Eintrag anzulegen. Unter *Target* ist der Output-Parameter 
 *SAP Customers* auswählbar. Nach Doppelklick auf den Wert steht unter Source die Ergebnistabelle *RESULT* zur Verfügung. 
 Im Feld *Mapping Expression* kommen Sie über den Button auf der Rechten Seite in die Dialogmaske für das Mapping der Tabellenwerte. 
 

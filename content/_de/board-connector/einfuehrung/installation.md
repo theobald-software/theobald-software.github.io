@@ -10,7 +10,7 @@ weight: 3
 lang: de_DE
 ---
 
-Das Installationsprogramm ist eine branchenübliche Installationsroutine, die nichts anderes macht, als alle nötigen  Dateien in das Programmverzeichnis zu kopieren und im Windows-Programmenü einen Menüeintrag mit einigen Shortcuts anzulegen.<br>
+Das Installationsprogramm ist eine branchenübliche Installationsroutine, die nichts anderes macht, als alle nötigen  Dateien in das Programmverzeichnis zu kopieren und im Windows-Programmmenü einen Menüeintrag mit einigen Shortcuts anzulegen.<br>
 Das Setup installiert die Visual C++ 2005 Laufzeit-Bibliothek (Runtime library).  
 
 **BCConsole.exe**

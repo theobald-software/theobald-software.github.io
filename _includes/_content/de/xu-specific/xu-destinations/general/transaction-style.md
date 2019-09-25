@@ -20,5 +20,5 @@ Nachteil: Kein Rollback von Prepare/Finalization, auch nicht als Teilschritt
 
 **No Transaction**<br>
 Keine expliziten Transaktionen.<br>
-Vorteil: Keine Transaktionsverwaltung durch DBMS benötigt (Locking, DB-Transaktionslog, etc.). Dadurch kein Locking und evtl. Performancevorteile<br>
+Vorteil: Keine Transaktionsverwaltung durch DBMS benötigt (Locking, DB-Transaktionslog, etc.). Dadurch kein Locking und evtl. Performanzvorteile<br>
 Nachteil: Kein Rollback

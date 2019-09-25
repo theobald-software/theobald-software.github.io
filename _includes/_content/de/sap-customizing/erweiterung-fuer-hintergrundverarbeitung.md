@@ -2,9 +2,9 @@
 
 Standardmäßig wird die Extraktion der Tabellendaten im Dialog durchgeführt, also pro Datenpaket wird ein Select auf die Originaltabelle durchgeführt und das entsprechende Datenpaket herausgeschnitten und gesendet.
 
-Mit Hilfe der *Background Extraction* gibt es die Möglichkeit, die Selektion im Hintergrund durchzuführen und in eine Puffertabelle zwischenzuparken. Dieses Vorgehen ist ungünstig bei kleineren SAP-Tabellen und daher nur zu empfehlen bei größeren Tabellen.
+Mit Hilfe der *Background Extraction* gibt es die Möglichkeit, die Selektion im Hintergrund durchzuführen und in eine Puffertabelle zwischenzuspeichern. Dieses Vorgehen ist ungünstig bei kleineren SAP-Tabellen und daher nur zu empfehlen bei größeren Tabellen.
 
-In bestimmten Konstallationen kann dies eine deutliche Verbesserung der Performance bedeuten. Der Ablauf der Hintergrundverarbeitung funktioniert wie folgt: 
+In bestimmten Konstellationen kann dies eine deutliche Verbesserung der Performance bedeuten. Der Ablauf der Hintergrundverarbeitung funktioniert wie folgt: 
 
 - Das Hintergrundprogramm wird anhand der vorgegebenen Selektion angestoßen. In der SM37 (Jobverwaltung) können Sie den Hintergrundjob während des Extraktionslaufes prüfen.
 - Das Hintergrundprogramm schreibt in die Tabelle ZXTRACTBUFFER für temporäre Daten
@@ -54,7 +54,7 @@ Z_XTRACT_IS_TABLE_EX_greater_than_4.7.txt für Releases älter 4.7 (z.B. ECC 6.0
 
 **Schritt 3 – Einstellungen**
 
-Um die Hintergrundverarbeitung zu aktiveren, gehen Sie bitte in den Settings-Dialog und nehme Sie die folgenden Einstellungen vor. Stellen Sie sicher, dass der Name des Bausteins korrekt eingetragen ist, und dass die Paketierung aktiviert sind.
+Um die Hintergrundverarbeitung zu aktiveren, gehen Sie bitte in den Settings-Dialog und nehme Sie die folgenden Einstellungen vor. Stellen Sie sicher, dass der Name des Bausteins korrekt eingetragen ist, und dass die Parkettierung aktiviert sind.
 
 Setzen Sie einen Wert ins Feld *PackageSize*, z.B. 50000.<br>
 Setzen Sie Z_XTRACT_IS_TABLE_EX ins Feld *Custom Function*.<br>

@@ -2,7 +2,7 @@
 Die DeltaQ bietet folgende Update Modi:
 
 **F - Full**<br>
-Der Full Modus extrahiert alle Daten, welche den Selektionskriterien entsprechen.
+Der Full-Modus extrahiert alle Daten, welche den Selektionskriterien entsprechen.
 
 **D - Delta Update**<br>
 Der Delta Update Modus fordert nur Daten an, welche seit dem letzten Delta in SAP hinzugekommen sind bzw. verändert wurden.<br>
@@ -10,7 +10,7 @@ Bevor Sie ein Delta Update ausführen, müssen Sie den Delta-Prozess initialisie
 Sollte ein Fehler während des Delta-Requests auftreten, nutzen Sie für die nächste Ausführung bitte den Repeat-Modus.
 
 **C - Delta Initialisation**<br>
-Um Deltas zu extrahieren, müssen Sie den Delta-Prozess initialisieren. Der Delta Initialisation Modus extrahiert alle Daten und initialisiert den Delta-Prozess.<br>
+Um Deltas zu extrahieren, müssen Sie den Delta-Prozess initialisieren. Der Delta Initialisation-Modus extrahiert alle Daten und initialisiert den Delta-Prozess.<br>
 Möchten Sie einen Delta-Prozess erneut initialisieren, sollten Sie vorher über die Schaltfläche "Request Maintenance" in den DeltaQ Extraction Settings vorhandene Inits löschen.
 
 **C - Delta Init (ohne Daten)**<br>
@@ -22,8 +22,8 @@ Relevant für DataSources wie 2LIS_03_BX
 
 **R - Repeat**<br>
 Sollte ein Fehler während eines Delta-Prozesses auftreten, müssen Sie den Repeat-Modus bei der nächsten Ausführung verwenden.<br>
-Dieser Modus extrahiert alle falsch und unvollständig geladene Daten aus dem fehlerhaften Delta-Lauf seit dem letzen Aufruf.<br>
-Daten aus einem fehlerhaften Delta-Lauf, die eventuell bereits in die Datenziele gespeichert wurden, sollten zunächst aus dem Ziel gelöscht werden, bevor ein Repeat angestartet wird.<br>
+Dieser Modus extrahiert alle falsch und unvollständig geladene Daten aus dem fehlerhaften Delta-Lauf seit dem letzten Aufruf.<br>
+Daten aus einem fehlerhaften Delta-Lauf, die eventuell bereits in die Datenziele gespeichert wurden, sollten zunächst aus dem Ziel gelöscht werden, bevor ein Repeat gestartet wird.<br>
 Sie können einen Repeat mehrmals durchführen.
 
 **A - Activate (don't extract)**<br>

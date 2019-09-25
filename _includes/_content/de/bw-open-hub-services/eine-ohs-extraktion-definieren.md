@@ -14,4 +14,4 @@ Die angegebene Prozesskette wird gestartet, die Extraktion durchgeführt und nac
 
 **E – Extract Only**
 
-Es wird weder eine Prozesskette angestartet, noch wird auf eine Extraktionsbenachrichtigung gewartet. Die im Feld *Request ID* eingetragene Request ID wird genutzt, um die Daten abzurufen, die sich hinter dem jeweiligen Request verbergen. Diese Option ist dann sinnvoll, wenn Sie beispielsweise einen abgebrochenen Request neu starten möchten. Es können nur Daten des letzten Requests der OHS Destination extrahiert werden.
+Es wird weder eine Prozesskette gestartet, noch wird auf eine Extraktionsbenachrichtigung gewartet. Die im Feld *Request ID* eingetragene Request ID wird genutzt, um die Daten abzurufen, die sich hinter dem jeweiligen Request verbergen. Diese Option ist dann sinnvoll, wenn Sie beispielsweise einen abgebrochenen Request neu starten möchten. Es können nur Daten des letzten Requests der OHS Destination extrahiert werden.

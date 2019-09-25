@@ -14,7 +14,7 @@ Sie können das ABAP Framework mit Hilfe eines der mitgelieferten Transportauftr
 - Z_THEO_READ_TABLE-before_740SP05.zip<br>
 
 Die zip-Dateien finden Sie im Unterordner *ABAP* des Xtract-Installationsordners. <br>
-Bitte leiten Sie die zip-Dateien an Ihre SAP Basis Adminstratoren weiter mit der Bitte um Import ins SAP System.
+Bitte leiten Sie die zip-Dateien an Ihre SAP Basis Administratoren weiter mit der Bitte um Import ins SAP System.
 
 Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
 

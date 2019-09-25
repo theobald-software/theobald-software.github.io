@@ -11,7 +11,7 @@ Es stellt eine technische Infrastruktur für die Datenextraktion und -replikatio
 
 Es ermöglicht verschiedenen Verbraucher  (ODP Consumer) Daten zu abonnieren und verschiedenen Datenanbietern (ODP Provider) Daten zu veröffentlichen. Daten können an verschiedene ODP-Verbraucher gesendet werden (auch mehrere in parallel).  
 
-Das Operational data provisioning unterstützt auch Delta-Mechanismen (inkrementelles Laden). 
+Das Operational Data Provisioning unterstützt auch Delta-Mechanismen (inkrementelles Laden). 
 Mit SAP BW/4HANA wird Operational Data Provisioning (ODP) zur zentralen Infrastruktur für die Datenextraktion und -replikation aus SAP ABAP-Anwendungen in ein SAP BW/4 HANA Data Warehouse. 
 <br/>
 ![ODP-Komponente](/img/content/odp/odp-component-general.png){:class="img-responsive"}

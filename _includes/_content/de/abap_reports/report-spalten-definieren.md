@@ -2,7 +2,7 @@ Um nun fortfahren zu können, muss der Report mindestens einmal mit dem Preview-
 
 Im jungfräulichen Zustand wird der Report von der Komponente so betrachtet, als hätte er nur eine Spalte. 
 
-Klicken Sie auf Extraction Settings und wählen Sie die Option Automatic Column Detection, um den Automatik-Mechanismus einzuschalten. In diesem Fall versucht die Komponente, die Spalten des Reports automatisch zu finden. Das manuelle Setzen der Spalten entfällt dann.
+Klicken Sie auf Extraktion Settings und wählen Sie die Option Automatic Column Detection, um den Automatik-Mechanismus einzuschalten. In diesem Fall versucht die Komponente, die Spalten des Reports automatisch zu finden. Das manuelle Setzen der Spalten entfällt dann.
 
 **Manuelle Definition der Spalten**
 

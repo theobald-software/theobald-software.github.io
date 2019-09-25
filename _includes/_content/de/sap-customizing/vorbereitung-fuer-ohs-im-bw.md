@@ -18,7 +18,7 @@ Im Reiter Destination definieren Sie den Infospoke so, dass eine Extraktion in e
 
 ![OHS-BW-03](/img/content/OHS-BW-03.png){:class="img-responsive"}
 
-Anschließend müssen noch die zu übertragenden Spalten und ggfs. eine Selektion gefüllt werden. Danach kann der Spoke gespeichert und aktiviert werden.
+Anschließend müssen noch die zu übertragenden Spalten und ggf. eine Selektion gefüllt werden. Danach kann der Spoke gespeichert und aktiviert werden.
 
 Als letzten Schritt benötigen wir eine Prozesskette. Gehen Sie dazu von der Transaktion RSA1 in das Menü Editieren -> Prozessketten und legen Sie dort eine neue Prozesskette an. In der Variante für die Kette muss Start durch *API* angekreuzt sein. Fügen Sie dann den vorher angelegten Infospoke in die Kette ein.
 
@@ -29,7 +29,7 @@ Zum Schluss müssen Sie noch die Prozesskette speichern und aktivieren.
 ### OHS Destinations und Data Transfer Processes (BI 7.0)<br>
 Ab BI 7.0 wird von SAP empfohlen, keine InfoSpokes mehr zu benutzen, sondern stattdessen wie im Folgenden beschrieben, OHS-Destinationen anzulegen.
 
-Klicken Sie in der Administrator Workbench RSA1 im linken Baum auf *Open Hub Destination*. Klicken Sie mit der rechten Maustaste auf eine InfoArea und wählen Sie im Kontextmenu *Open Hub Destination* anlegen.
+Klicken Sie in der Administrator Workbench RSA1 im linken Baum auf *Open Hub Destination*. Klicken Sie mit der rechten Maustaste auf eine InfoArea und wählen Sie im Kontextmenü *Open Hub Destination* anlegen.
 
 ![OHS-BW-05](/img/content/OHS-BW-05.png){:class="img-responsive"}
 
@@ -45,6 +45,6 @@ Der DTP kann wie vom System vorgeschlagen, gespeichert und aktiviert werden (je 
 
 ![OHS-BW-08](/img/content/OHS-BW-08.png){:class="img-responsive"}
 
-Um den Transferprocess von Xtract QV aus anstoßen zu können, brauchen wir nun noch eine Prozesskette. Gehen Sie dazu von der Transaktion RSA1 in das Menü *Editieren -> Prozessketten*. Legen Sie dort eine neue Prozesskette an. In der Variante für die Kette muss *Start durch API* angekreuzt sein. Innerhalb der Prozesskette muss dann der DTP eingefügt werden: nach der Aktivierung steht die Kette zur Ausführung bereit.
+Um den Transferprozess von Xtract QV aus anstoßen zu können, brauchen wir nun noch eine Prozesskette. Gehen Sie dazu von der Transaktion RSA1 in das Menü *Editieren -> Prozessketten*. Legen Sie dort eine neue Prozesskette an. In der Variante für die Kette muss *Start durch API* angekreuzt sein. Innerhalb der Prozesskette muss dann der DTP eingefügt werden: nach der Aktivierung steht die Kette zur Ausführung bereit.
 
 ![OHS-BW-09](/img/content/OHS-BW-09.png){:class="img-responsive"}
