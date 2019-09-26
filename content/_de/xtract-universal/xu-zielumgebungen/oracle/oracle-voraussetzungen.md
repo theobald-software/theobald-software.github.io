@@ -20,4 +20,11 @@ Um Daten nach Oracle zu laden, müssen Sie den **Oracle Data Provider for .NET, 
 Bitte installieren Sie den 64-bit-Treiber gemäß Anleitung.<br>
 Die volle ODAC Installation oder der gesamte Oracle DB Client funktioniert alternativ auch, sofern ODP.NET als Komponente ausgewählt wird.
 
-![xu-oracle-odp-net-managed-driver](/img/content/xu-oracle-odp-net-managed-driver.jpg){:class="img-responsive"}
+Bitte gehen Sie für die Installation wie folgt vor:
+
+1. Laden Sie den 64-bit-Treiber von oben genannter Oracle-Website herunter
+2. Entpacken Sie das **ODP.NET_Managed_ODAC122cR1.zip** Verzeichnis
+3. Starten Sie die Eingabeaufforderung mit Admin-User Rechten und führen Sie die **install_odpm.bat** aus
+4. Starten Sie die Installation mit folgendem Parameter **install_odpm.bat C:\oracle x64 true** 
+
+![xu-oracle-odp-net-managed-driver](/img/content/xu-oracle-odp-net-managed-driver.png){:class="img-responsive"}
