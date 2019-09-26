@@ -32,4 +32,6 @@ Es lassen sich damit auch die Daten mit Aggregierungs-Funktionen als Vorschau an
 Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der hinterlegten WHERE und HAVING Bedingungen. 
 
 **Refresh Metadata** <br>
-Damit wird ein Metadaten-Refresh auf die selektierte(n) Tabelle(n) durchgeführt. Dies kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. 
+Dabei wird ein erneuter Lookup auf die selektierte(n) Tabelle(n) durchgeführt. Bestehende Mappings und Feldselektionen bleiben dabei erhalten, was beim erneuten Hinzufügen nicht der Fall ist.<br>
+Die *Refresh Metadata* Funktionalität kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. In solchen Fällen kann es zu Datenschiefständen kommen, die durch diese Funktion bereinigt werden.   
+ 

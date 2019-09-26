@@ -32,4 +32,7 @@ You can also preview the data with aggregation functions.
 Returns the number of rows/data records of an extraction, taking into account the WHERE and HAVING Clauses stored. 
 
 **Refresh metadata** <br>
-This performs a metadata refresh on the selected table(s). This may be necessary, for example, if a table has been adjusted in SAP. 
+A new lookup is performed on the selected table(s). Existing mappings and field selections are retained, which is not the case when the table is added again. <br>
+It may be necessary to renew the metadata, for example, if a table has been adjusted on the SAP side, another source system has been connected, or the source system has been updated. 
+In such cases, data inconsistencies can occur that are resolved by this function.   
+
