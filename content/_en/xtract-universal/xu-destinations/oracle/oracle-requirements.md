@@ -21,4 +21,11 @@ Loading data into Oracle requires installation of the **Oracle Data Provider for
 You should follow the instructions to install the 64-bit driver.<br>
 As an alternative to the *managed driver* the complete ODAC or the complete Oracle DB Client can be installed. Please make sure to select the ODP.NET component. 
 
-![xu-oracle-odp-net-managed-driver](/img/content/xu-oracle-odp-net-managed-driver.jpg){:class="img-responsive"}
+Please proceed as follows for the installation:
+
+1. Download the 64-bit driver from the above Oracle website
+2. Unpack the **ODP.NET_Managed_ODAC122cR1.zip** directory
+3. Start the command prompt with admin-user rights and execute the **install_odpm.bat**.
+4. Start the installation with the following parameter **install_odpm.bat C:\oracle x64 true** 
+
+![xu-oracle-odp-net-managed-driver](/img/content/xu-oracle-odp-net-managed-driver.png){:class="img-responsive"}
