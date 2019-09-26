@@ -25,7 +25,8 @@ Please proceed as follows for the installation:
 
 1. Download the 64-bit driver from the above Oracle website
 2. Unpack the **ODP.NET_Managed_ODAC122cR1.zip** directory
-3. Start the command prompt with admin-user rights and execute the **install_odpm.bat**.
-4. Start the installation with the following parameter **install_odpm.bat C:\oracle x64 true** 
+3. Start the command prompt and run the **install_odpm.bat** command
+	- Execution with admin user rights
+	- Installation with the following parameter **C:\oracle x64 true**
 
 ![xu-oracle-odp-net-managed-driver](/img/content/xu-oracle-odp-net-managed-driver.png){:class="img-responsive"}
