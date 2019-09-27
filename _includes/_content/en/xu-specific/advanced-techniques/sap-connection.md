@@ -84,9 +84,8 @@ SAP Library: [SAP-Router](https://help.sap.com/viewer/page-not-found?url=https%3
 
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system, that communicates as Client or Server with the SAP system.  
 The RFC API exists in two different versions: 
-- Classical RFC API (classical RFC library)
-- Netweaver RFC API (Netweaver RFC library). 
-The Netweaver RFC Library does not support DeltQ or OHS.
+- Classic RFC API (classic RFC library)
+- NetWeaver RFC API (NetWeaver RFC library). 
 
 SAP Library: [RFC API: Classical & NetWeaver](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm)
 
