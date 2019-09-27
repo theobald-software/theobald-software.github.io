@@ -10,7 +10,7 @@ weight: 2
 lang: de_DE
 ---
 
-Die Verwendung von Verbindungseigenschaften im Xtract IS Connection Manager (Standard seit 09/2017) ermöglicht die Verwendung sensitiver Passwörter.
+Die Verwendung von *Connection properties* im Xtract IS Connection Manager (Standard seit 09/2017) ermöglicht die Verwendung sensitiver Passwörter.
 
 ![XIS_sensitive_variable_1](/img/content/XIS_sensitive_variable_1.jpg){:class="img-responsive" }
 
