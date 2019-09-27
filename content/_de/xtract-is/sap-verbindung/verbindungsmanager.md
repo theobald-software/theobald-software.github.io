@@ -39,14 +39,13 @@ Im Fall einer Anmeldung an einem Message Server (Load Balancing) sind folgende D
 - Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
 - Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. ist das PUBLIC)
 
-[SAP Dokumentation zu Load Balancing](https://help.sap.com/saphelp_dm40/helpdata/de/22/04295c488911d189490000e829fbbd/content.htm?no_cache=true)
-<br>
+SAP Dokumentation: [Load Balancing](https://help.sap.com/saphelp_dm40/helpdata/de/22/04295c488911d189490000e829fbbd/content.htm?no_cache=true) <br>
 
 **SAP-Router**
 
 Falls Sie auf das SAP-System (Application-Server oder Message-Server) über einen SAP-Router zugreifen, setzen Sie den Routerstring unmittelbar vor dem Hostnamen bzw. dem Message-Server. 
 
-[SAP Dokumentation zu SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true) <br>
+SAP Dokumentation: [SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true) <br>
 
 Falls Sie nicht wissen, welche Parameter Sie eingeben müssen, können Sie die Informationen im SAP Logon Pad in den *Properties* nachschauen.
 Fragen Sie ansonsten bei Ihrer SAP-Basis nach. 
