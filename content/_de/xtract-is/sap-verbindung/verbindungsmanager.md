@@ -46,7 +46,7 @@ Im Fall einer Anmeldung an einem Message Server (Load Balancing) sind folgende D
 
 Falls Sie auf das SAP-System (Application-Server oder Message-Server) über einen SAP-Router zugreifen, setzen Sie den Routerstring unmittelbar vor dem Hostnamen bzw. dem Message-Server. 
 
-[SAP Dokumentation zu SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true) (<br>
+[SAP Dokumentation zu SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true) <br>
 
 Falls Sie nicht wissen, welche Parameter Sie eingeben müssen, können Sie die Informationen im SAP Logon Pad in den *Properties* nachschauen.
 Fragen Sie ansonsten bei Ihrer SAP-Basis nach. 
@@ -77,8 +77,8 @@ SAP hat den [Support für die librfc32.dll[(https://blogs.sap.com/2012/08/15/sup
 
 **SNC enabled**
 
-Siehe auch [SAP-Verbindung mit SNC](./sap-Verbindung-mit-snc)<br>>
-Aktivieren Sie [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html)(Secure Network Connection) für die Datenverschlüsselung zwischen SAP und Xtract IS.<br>.
+Siehe auch [SAP-Verbindung mit SNC](./sap-verbindung-mit-snc). <br>
+Aktivieren Sie [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html) (Secure Network Connection) für die Datenverschlüsselung zwischen SAP und Xtract IS.<br>.
 Erfordert auch auf SAP-Seite entsprechende Einstellungen. Bitte wenden Sie sich zur Unterstützung an Ihr SAP-Basis-Team.
 
 **SNC Library (32 Bit, Visual Studio)**
@@ -102,8 +102,8 @@ Definiert die SNC-Schutzstufe.
 Seit 09/2017 werden SAP-Verbindungsparameter nicht mehr als einzelne *Connection Strings*, sondern als *Properties* gespeichert.
 Für jede Komponente des *Connection Strings* existiert eine *Property* (siehe Screenshot unten).
 
-Dies ermöglicht die Verwendung einer[sensitiven Umgebungsvariablen](./sensitive-environment-variable-in-ssis-catalog) für das Passwort im Katalog der Integration Services.<br>
-Der *Connection String* (siehe Legacy-Modus unten) unterstützte keine sensiblen Umgebungsvariablen.
+Dies ermöglicht die Verwendung einer [sensitiven Umgebungsvariablen](./sensitive-umgebungsvariablen-in-ssis) für das Passwort im Katalog der Integration Services.<br>
+Der *Connection String* (siehe *Legacy storage mode* unten) unterstützte keine sensitiven Umgebungsvariablen.
 Dies bietet eine stärkere Verschlüsselung als die Passwort-Verschleierung (siehe unten).
 
 Sie können entweder *Connection Properties* oder einen *Connection String* verwenden, nicht beides.

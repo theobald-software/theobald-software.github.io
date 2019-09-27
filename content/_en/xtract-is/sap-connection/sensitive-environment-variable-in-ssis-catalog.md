@@ -8,7 +8,6 @@ parent: sap-connection
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /Xtract-IS-EN/default.aspx?pageid=sensitive_environment_variable_in_ssis_catalog
 ---
 
 Using connection properties in the Xtract Connection manager (default since 09.2017) enables usage of sensitive passwords.
