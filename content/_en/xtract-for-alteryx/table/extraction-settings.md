@@ -1,5 +1,5 @@
 ---
-ref: afc-table-05
+ref: xfa-table-05
 layout: page
 title: Extraction Settings 
 description: Extraction Settings

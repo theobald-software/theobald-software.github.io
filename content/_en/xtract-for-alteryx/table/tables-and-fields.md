@@ -1,5 +1,5 @@
 ---
-ref: afc-table-01
+ref: xfa-table-01
 layout: page
 title: Tables and Fields
 description: Tables and Fields

@@ -1,5 +1,5 @@
 ---
-ref: afc-table-06
+ref: xfa-table-06
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions

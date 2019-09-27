@@ -1,5 +1,5 @@
 ---
-ref: afc-table-03
+ref: xfa-table-03
 layout: page
 title: WHERE Clause
 description: WHERE Clause

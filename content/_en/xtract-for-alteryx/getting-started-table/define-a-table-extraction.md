@@ -20,5 +20,5 @@ Under *Connection*, select the SAP connection you initially created and click *E
 
 ![Create-New-Table-Extraction2](/img/content/xfa_create_table_extraction_02.png){:class="img-responsive"}
 
-{% include _content/de/table/extraktion-anlegen.md  %}
+{% include _content/en/tables/define-a-table-extraction.md  %}
 
