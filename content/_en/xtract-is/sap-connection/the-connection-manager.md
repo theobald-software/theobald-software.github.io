@@ -54,6 +54,12 @@ Otherwise please ask your SAP Basis team for help.
 
 If everything is filled out correctly, try to establish a connection to SAP by clicking the Test Connection button. If the connection is ok, you can start using the Xtract IS components now.
 
+**Trace Directory**
+
+You also have the option to log debug information. If you want to log debug information you have to enter a valid directory path into the [*Log Directory*](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/72/9/how-to-activate-tracing-for-xtract-products) field in the connection manager. 
+
+Please note that the logging usually should only be activated when requested by the Theobald Software support team. There is plenty of information that will be collected. This can decrease the capacity of your hard drives dramatically. Please note that the default logging is independent of the debug logging settings. The default logging will be accessed even if the trace directory entry in the connection manager is left blank.
+
 **RFC library (API)**: Classic or NetWeaver. <br>
 
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system, that communicates as Client or Server with the SAP system.  
@@ -66,11 +72,6 @@ Note: When using the NetWeaver RFC library with DeltaQ or OHS extractions, the R
 SAP Library: [RFC API: Classical & NetWeaver](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm) <br>
 SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). In our experience, however, it still works and in some cases (e.g. DeltaQ) runs more stable than the NetWeaver RFC library.
 
-**Log Directory**
-
-You also have the option to log debug information. If you want to log debug information you have to enter a valid directory path into the [*Log Directory*](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/72/9/how-to-activate-tracing-for-xtract-products) field in the connection manager. 
-
-Please note that the logging usually should only be activated when requested by the Theobald Software support team. There is plenty of information that will be collected. This can decrease the capacity of your hard drives dramatically. Please note that the default logging is independent of the debug logging settings. The default logging will be accessed even if the trace directory entry in the connection manager is left blank.
 
 **Additions**
 
@@ -119,12 +120,3 @@ SAP connection parameters are set via a single connection string (default in XIS
 Obfuscates SAP connection password so it's not stored in clear text. Switched on per default when activating Legacy storage mode.
 
 ![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.jpg){:class="img-responsive" width="600px" }
-
-
-**Force Codepage in Strings (deprecated)**
-
-Data from non-unicode SAP systems is converted into a codepage that is as close as possible to the original codepage of the source system (e.g. 1250 for Central Europe). This parameter enables to override the automatic codepage with a custom codepage.
-
-**Alternate BAPI for Internal Table Queries (deprecated)**
-
-Our products use the remote function RFC_READ_TABLE to perform look-ups and read metadata from SAP, but the execution of this function module may be prohibited in some SAP systems . This option allows to define an alternate remote function, e.g. Z_XTRACT_IS_TABLE. 

@@ -51,9 +51,12 @@ Falls Sie auf das SAP-System (Application-Server oder Message-Server) über eine
 Falls Sie nicht wissen, welche Parameter Sie eingeben müssen, können Sie die Informationen im SAP Logon Pad in den *Properties* nachschauen.
 Fragen Sie ansonsten bei Ihrer SAP-Basis nach. 
 
-Wenn alles korrekt ausgefüllt ist, klicken Sie auf *Test Connection*, um zu prüfen, ob das SAP-System auch wirklich erreichbar ist. Wenn alles geklappt hat, kann es jetzt mit der Nutzung der Datenquellen losgehen.
+Wenn alles korrekt ausgefüllt ist, klicken Sie auf *Test Connection*, um zu prüfen, ob das SAP-System erreichbar ist. 
 
-Hinweis: Mit der Option *Encrypt Password* haben Sie die Möglichkeit, das Passwort innerhalb des Connection-Strings zu verschlüsseln. Dies ist nur dann sinnvoll und empfehlenswert, wenn Sie den Connection-String nicht dynamisch füllen (z.B. über eine separate XML-Konfigurationsdatei). Wenn der Connection-String extern abgelegt wird, nutzen Sie andere Möglichkeiten der Verschlüsselung, da ein verschlüsseltes Passwort nur im Connection-Manager geändert werden kann.
+**Trace Directory**<br>
+Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld *Log Directory* ein gültiger Pfad eintragen werden. 
+
+Bitte beachten Sie, dass das Logging in der Regel nur nach Aufforderung durch den Support aktiviert werden sollte. Beim Logging werden eine Vielzahl von Informationen gesammelt. Dies kann bei permanent aktiviertem Logging dazu führen, dass die Kapazitätsgrenzen des Speichermediums schnell erschöpft ist. Das Standard Logging ist von dieser Einstellung unabhängig und wird auch bei einem leeren Trace Directory Eintrag ausgeführt.
 
 **RFC Bibliothek (API)**: Klassisch oder NetWeaver. <br>
 
@@ -68,15 +71,49 @@ Weitere Informationen finden Sie hier [RFC API: Classical & SAP NetWeaver](https
 <br>
 SAP hat den [Support für die librfc32.dll[(https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. Diese funktioniert nach unserer Erfahrung jedoch nach wie vor und läuft in machen Fällen (z.B. DeltaQ) stabiler als die NetWeaver RFC Bibliothek.
 
-**Log Directory**<br>
-Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld *Log Directory* ein gültiger Pfad eintragen werden. 
-
-Bitte beachten Sie, dass das Logging in der Regel nur nach Aufforderung durch den Support aktiviert werden sollte. Beim Logging werden eine Vielzahl von Informationen gesammelt. Dies kann bei permanent aktiviertem Logging dazu führen, dass die Kapazitätsgrenzen des Speichermediums schnell erschöpft ist. Das Standard Logging ist von dieser Einstellung unabhängig und wird auch bei einem leeren Trace Directory Eintrag ausgeführt.
-
 **Additions**
 
-**Force Codepage in Strings** <br>
-Bei Daten aus non-Unicode SAP-Systemen werden Zeichenfolgen in einer Codepage konvertiert, die der des Quellsystems möglichst ähnlich ist (z.B. 1250 für Zentraleuropa). Mit Hilfe dieses Parameters kann die automatisch ermittelte Zielcodepage übersteuert werden.
+![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.jpg){:class="img-responsive" width="600px" }
 
-**Alternate BAPI for Internal Table Queries**<br>
-Unsere Produkte nutzen den Funktionsbaustein RFC_READ_TABLE um look-ups auszuführen und Metadaten aus SAP zu lesen. Die Ausführung dieses Funktionsbausteins kann in manchen SAP-Systemen gesperrt sein. Diese Option erlaubt einen Ersatz-Funktionsbaustein zu definieren, z.B. Z_XTRACT_IS_TABLE. 
+**SNC enabled**
+
+Siehe auch [SAP-Verbindung mit SNC](./sap-Verbindung-mit-snc)<br>>
+Aktivieren Sie [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html)(Secure Network Connection) für die Datenverschlüsselung zwischen SAP und Xtract IS.<br>.
+Erfordert auch auf SAP-Seite entsprechende Einstellungen. Bitte wenden Sie sich zur Unterstützung an Ihr SAP-Basis-Team.
+
+**SNC Library (32 Bit, Visual Studio)**
+
+Pfad zur 32-Bit-Version der verwendeten Verschlüsselungsbibliothek (beim Ausführen des Pakets im Debug-Modus in VS/SSDT).
+
+**SNC Library (64 Bit)**
+
+Pfad zur 64-Bit-Version der verwendeten Verschlüsselungsbibliothek (bei Ausführung des bereitgestellten Pakets auf dem SSIS-Server).
+
+**Partner Name**
+
+SNC-Partnername
+
+**Quality of Protection**
+
+Definiert die SNC-Schutzstufe.
+
+**Expert Options**
+
+Seit 09/2017 werden SAP-Verbindungsparameter nicht mehr als einzelne *Connection Strings*, sondern als *Properties* gespeichert.
+Für jede Komponente des *Connection Strings* existiert eine *Property* (siehe Screenshot unten).
+
+Dies ermöglicht die Verwendung einer[sensitiven Umgebungsvariablen](./sensitive-environment-variable-in-ssis-catalog) für das Passwort im Katalog der Integration Services.<br>
+Der *Connection String* (siehe Legacy-Modus unten) unterstützte keine sensiblen Umgebungsvariablen.
+Dies bietet eine stärkere Verschlüsselung als die Passwort-Verschleierung (siehe unten).
+
+Sie können entweder *Connection Properties* oder einen *Connection String* verwenden, nicht beides.
+
+**Legacy storage mode (connection string)**
+
+Die SAP-Verbindungsparameter werden über einen einzigen *Connection String* eingestellt (Standard in XIS-Versionen vor 09/2017).
+
+**Obfuscate Password**
+
+Das SAP-Verbindungspasswort wird verschleiert, so dass es nicht im Klartext gespeichert wird. Wird standardmäßig eingeschaltet, wenn der *Legacy storage mode* aktiviert wird.
+
+![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.jpg){:class="img-responsive" width="600px". }
