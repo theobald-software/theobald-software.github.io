@@ -25,6 +25,22 @@ The form must be filled in as shown below.
 
 ![Connection-Manager](/img/content/Connection-Manager.png){:class="img-responsive" width="600px" }
 
+**SAP target system**
+
+The SAP target system kann be an application server or message server (Load Balancing).
+For an application server the following data are required:  
+
+- Host name or IP address of the applikation server (Property Host) 
+- System/Instance number , a two-digit number between 00 und 99 (Property SystemNumber)
+
+For a message server the following data are required:  
+
+- Three-digit System ID (Property SID, z.B. MSS) 
+- Name or IP address of the Message Server (Property MessageServer) 
+- Logon group (Property LogonGroup, usually it is PUBLIC)
+
+SAP Library: [Load Balancing](https://help.sap.com/viewer/page-not-found?url=https%3A%2F%2Fhelp.sap.com%2Fsaphelp_nw2004s%2Fhelpdata%2Fde%2F22%2F04295c488911d189490000e829fbbd%2Fframeset.htm)
+
 **SAP router**
 
 If you access the SAP target system (Application server or Message server) via an SAP router. you should set the router string just before the host name or the message server
@@ -38,7 +54,7 @@ Otherwise please ask your SAP Basis team for help.
 
 If everything is filled out correctly, try to establish a connection to SAP by clicking the Test Connection button. If the connection is ok, you can start using the Xtract IS components now.
 
-**RFC library (API)**: Classic or NetwWaver. <br>
+**RFC library (API)**: Classic or NetWeaver. <br>
 
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system, that communicates as Client or Server with the SAP system.  
 The RFC API exists in two different versions: 
