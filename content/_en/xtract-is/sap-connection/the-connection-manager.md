@@ -55,7 +55,7 @@ If everything is filled out correctly, try to establish a connection to SAP by c
 
 **Trace Directory**
 
-You also have the option to log debug information. If you want to log debug information you have to enter a valid directory path into the [*Trace Directory*](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/72/9/how-to-activate-tracing-for-xtract-products) field. 
+You also have the option to log debug information. If you want to log debug information you have to enter a valid directory path into the [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products?fromSearch=true) field. 
 
 Please note that the logging usually should only be activated when requested by the Theobald Software support team. There is plenty of information that will be collected. This can decrease the capacity of your hard drives dramatically. Please note that the default logging is independent of the debug logging settings. The default logging will be accessed even if the trace directory entry in the connection manager is left blank.
 
@@ -79,7 +79,7 @@ SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/suppo
 **SNC enabled**
 
 see also [SAP Connection with SNC](./sap-connection-with-snc)<br>
-Enable [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html)(Secure Network Connection) for data encryption between SAP and Xtract IS.<br>
+Enable [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html) (Secure Network Connection) for data encryption between SAP and Xtract IS.<br>
 Requires respective settings on the SAP side, as well. Please contact your SAP Basis team for support.
 
 **SNC Library (32 Bit, Visual Studio)**

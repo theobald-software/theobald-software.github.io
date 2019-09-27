@@ -54,7 +54,7 @@ Fragen Sie ansonsten bei Ihrer SAP-Basis nach.
 Wenn alles korrekt ausgefüllt ist, klicken Sie auf *Test Connection*, um zu prüfen, ob das SAP-System erreichbar ist. 
 
 **Trace Directory**<br>
-Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld *Trace Directory* ein gültiger Pfad eintragen werden. 
+Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products?fromSearch=true) ein gültiger Pfad eintragen werden. <br> 
 
 Bitte beachten Sie, dass das Logging in der Regel nur nach Aufforderung durch den Support aktiviert werden sollte. Beim Logging werden eine Vielzahl von Informationen gesammelt. Dies kann bei permanent aktiviertem Logging dazu führen, dass die Kapazitätsgrenzen des Speichermediums schnell erschöpft ist. Das Standard Logging ist von dieser Einstellung unabhängig und wird auch bei einem leeren Trace Directory Eintrag ausgeführt.
 
