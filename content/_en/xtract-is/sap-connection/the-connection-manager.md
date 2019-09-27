@@ -43,9 +43,8 @@ SAP Library: [Load Balancing](https://help.sap.com/viewer/page-not-found?url=htt
 
 **SAP router**
 
-If you access the SAP target system (Application server or Message server) via an SAP router. you should set the router string just before the host name or the message server
-Example:
-If the Application server is "hamlet" and the router string is "/H/lear.theobald-software.com/H/", you should set the Host property to "/H/lear.theobald-software.com/H/hamlet".
+If you access the SAP target system (Application server or Message server) via an SAP router. You should set the router string just before the host name or the message server. <br>
+Example: If the Application server is "hamlet" and the router string is "/H/lear.theobald-software.com/H/", you should set the Host property to "/H/lear.theobald-software.com/H/hamlet".
 
 SAP Library: [SAP-Router](https://help.sap.com/viewer/page-not-found?url=https%3A%2F%2Fhelp.sap.com%2Fsaphelp_nw04%2Fhelpdata%2Fde%2F4f%2F992df1446d11d189700000e8322d00%2Fframeset.htm)
 

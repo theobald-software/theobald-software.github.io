@@ -43,7 +43,8 @@ SAP Dokumentation: [Load Balancing](https://help.sap.com/saphelp_dm40/helpdata/d
 
 **SAP-Router**
 
-Falls Sie auf das SAP-System (Application-Server oder Message-Server) über einen SAP-Router zugreifen, setzen Sie den Routerstring unmittelbar vor dem Hostnamen bzw. dem Message-Server. 
+Falls Sie auf das SAP-System (Application-Server oder Message-Server) über einen SAP-Router zugreifen, setzen Sie den Routerstring unmittelbar vor dem Hostnamen bzw. dem Message-Server. <br>
+Beispiel: Wenn der Anwendungsserver "hamlet" ist und der Router-String "/H/lear.theobald-software.com/H/" lautet, sollten Sie die Host property auf "/H/lear.theobald-software.com/H/hamlet" setzen.
 
 SAP Dokumentation: [SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true) <br>
 
@@ -68,7 +69,7 @@ Hinweis: Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen 
 
 Weitere Informationen finden Sie hier [RFC API: Classical & SAP NetWeaver](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/48/a994a77e28674be10000000a421937/frameset.htm) in der SAP Dokumentation. 
 <br>
-SAP hat den [Support für die librfc32.dll[(https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. Diese funktioniert nach unserer Erfahrung jedoch nach wie vor und läuft in machen Fällen (z.B. DeltaQ) stabiler als die NetWeaver RFC Bibliothek.
+SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. Diese funktioniert nach unserer Erfahrung jedoch nach wie vor und läuft in machen Fällen (z.B. DeltaQ) stabiler als die NetWeaver RFC Bibliothek.
 
 **Additions**
 
@@ -77,7 +78,7 @@ SAP hat den [Support für die librfc32.dll[(https://blogs.sap.com/2012/08/15/sup
 **SNC enabled**
 
 Siehe auch [SAP-Verbindung mit SNC](./sap-verbindung-mit-snc). <br>
-Aktivieren Sie [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html) (Secure Network Connection) für die Datenverschlüsselung zwischen SAP und Xtract IS.<br>.
+Aktivieren Sie [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html) (Secure Network Connection) für die Datenverschlüsselung zwischen SAP und Xtract IS.<br>
 Erfordert auch auf SAP-Seite entsprechende Einstellungen. Bitte wenden Sie sich zur Unterstützung an Ihr SAP-Basis-Team.
 
 **SNC Library (32 Bit, Visual Studio)**
