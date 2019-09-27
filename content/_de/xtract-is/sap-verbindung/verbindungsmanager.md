@@ -1,22 +1,21 @@
 ---
 ref: xi-sap-connection-01
 layout: page
-title: Der Verbindungsmanager
-description: Der Verbindungsmanager
+title: Der Connection Manager
+description: Der Connection Manager
 product: xtract-is
 parent: sap-verbindung
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=verbindungsmanager
 ---
 
-Jede Xtract IS Datenquelle benötigt einen Xtract IS Verbindungsmanager, um über ihn auf das SAP-System zuzugreifen. Um innerhalb eines SSIS Packages einen neuen Verbindungsmanager anzulegen, klicken Sie mit der rechten Maustaste unten in den Bereich für die Verbindungsmanager und wählen Sie *Neue Verbindung*. <br>
-Wählen Sie den Verbindungsmanager XTRACT (siehe Bild).
+Jede Xtract IS Datenquelle benötigt einen Xtract IS Connection Manager, um über ihn auf das SAP-System zuzugreifen. Um innerhalb eines SSIS Packages einen neuen Connection Manager anzulegen, klicken Sie mit der rechten Maustaste unten in den Bereich für die Connection Manager und wählen Sie *Neue Verbindung*. <br>
+Wählen Sie den Connection Manager XTRACT (siehe Bild).
 
 ![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive"}
 
-Um den Verbindungsmanager korrekt zu konfigurieren, klicken Sie doppelt auf das Verbindungsmanager-Symbol für die Xtract-Verbindung.
+Um den Connection Manager korrekt zu konfigurieren, klicken Sie doppelt auf das Verbindungsmanager-Symbol für die Xtract-Verbindung.
 
 ![Connection-Manager-02](/img/content/Connection-Manager-02.png){:class="img-responsive"}
 
