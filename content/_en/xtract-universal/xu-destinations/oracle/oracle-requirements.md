@@ -23,10 +23,12 @@ As an alternative to the *managed driver* the complete ODAC or the complete Orac
 
 Please proceed as follows for the installation:
 
-1. Download the 64-bit driver from the above Oracle website
-2. Unpack the **ODP.NET_Managed_ODAC122cR1.zip** directory
-3. Start the command prompt and run the **install_odpm.bat** command
-	- Execution with admin user rights
-	- Installation with the following parameter **C:\oracle x64 true**
+1. download the 64-bit driver from the above Oracle website
+2. unpack the **ODP.NET_Managed_ODAC122cR1.zip** directory
+3. start the command prompt and execute the **install_odpm.bat** file
+
+![install_odpm_parameters](/img/content/xu/install_odpm.bat_paramter.png){:class="img-responsive"}
+- Execution as **Admin-User** 
+- Installation with the following parameter **c:\oracle x64 true**
 
 ![xu-oracle-odp-net-managed-driver](/img/content/xu-oracle-odp-net-managed-driver.png){:class="img-responsive"}
