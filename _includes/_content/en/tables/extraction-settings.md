@@ -18,4 +18,4 @@ We recommend that you use our module Z_THEO_READ_TABLE. See also [SAP Customizin
 **Extract data in background job** <br>
 If this checkbox is checked, the table extraction is executed as a background job in SAP. This setting is optional and is supported in combination with module Z_THEO_READ_TABLE as of version 2.0.
 Activation is recommended for long-running extractions with very large amounts of data that run into a timeout error ("Time limit exceeded") using the standard method. <br>
-The extraction jobs can be found in the SAP JobLog (SM37) under the JobName *Xtract*.
+The extraction jobs can be found in the SAP JobLog (SM37) under the JobName *theo_read_table*.

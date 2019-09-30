@@ -18,4 +18,4 @@ Wir empfehlen, unseren Baustein Z_THEO_READ_TABLE zu verwenden. Siehe auch [SAP 
 **Extract data in background job** <br>
 Durch Anhaken dieser Checkbox wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. Diese Einstellung ist optional und wird in Kombination mit dem Baustein Z_THEO_READ_TABLE ab Version 2.0 unterstützt.
 Empfohlen wird die Aktivierung für langlaufende Extraktionen mit sehr großen Datenmengen, die mit der Standard-Methode in einen Timeout-Fehler laufen ("Time limit exceeded"). <br>
-Die Extraktionsjobs finden sich im SAP JobLog (SM37) unter dem JobName *Xtract*.
+Die Extraktionsjobs finden sich im SAP JobLog (SM37) unter dem JobName *theo_read_table*.
