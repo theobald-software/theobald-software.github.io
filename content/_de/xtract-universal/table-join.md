@@ -9,8 +9,10 @@ childidentifier: table-join
 permalink: /:collection/:path
 weight: 10
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=table-join
 ---
+**Wichtiger Hinweis: Unter der neuen Table Komponente ab [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html) ist die Table Join Komponente obsolet.** <br>
+**Bitte nutzen sie die Table Join Funktionalität der [neuen Table Komponente](./table).** 
+ 
 
 Die Table Join-Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join).  <br>
 Mögliche Szenarien dafür wären, Tabellen für Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen. <br>
