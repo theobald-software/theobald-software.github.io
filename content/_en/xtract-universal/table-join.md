@@ -10,7 +10,7 @@ permalink: /:collection/:path
 weight: 10
 lang: en_GB
 ---
-**Important note: As of [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html), the Table Join component is obsolete.** <br>  
+**Important note: As of [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html), the Table Join component is obsolete.** <br>
 **Please use the table join functionality of the [new table component](./table).**
 
 The Table Join component allows to join many tables (and views) on the SAP side and to extract the result.  
