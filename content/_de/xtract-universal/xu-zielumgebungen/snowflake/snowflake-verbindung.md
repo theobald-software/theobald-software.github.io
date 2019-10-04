@@ -10,9 +10,12 @@ weight: 2
 lang: de_DE
 ---
 
+Legen Sie eine neue Destination vom Typ Snowflake, wie es hier beschrieben ist:
+{% include content/_de/xtract-universal/xu-zielumgebungen/ziele-verwalten.md %}
+
 Folgende Einstellungen können für die Verbindung zu Snowflake definiert werden.
 
-![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details.png){:class="img-responsive"}
+![Snowflake-Destination](/img/content/xu/snowflake/snowflake-destination-details.png){:class="img-responsive"}
 
 **Directory**<br>
 Angabe eines vorhandenen Verzeichnises, in das die Zieldateien abgelegt werden.
