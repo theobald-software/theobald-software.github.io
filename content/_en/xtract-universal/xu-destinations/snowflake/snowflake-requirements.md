@@ -10,4 +10,7 @@ weight: 1
 lang: en_GB
 ---
 
-To be done
+SnowSQL is a command line program for connecting to Snowflake and for execution for all kinds of queries. 
+The corresponding client is provided with the setup file of Xtract Universal.
+This is why no additional installation is required.
+

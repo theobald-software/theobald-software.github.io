@@ -11,4 +11,6 @@ weight: 103
 lang: en_GB
 ---
 
-English documentation of Snowflake destination is soon to follow...
+This chapter contains the information on loading the data into a Snowflake environment.
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
