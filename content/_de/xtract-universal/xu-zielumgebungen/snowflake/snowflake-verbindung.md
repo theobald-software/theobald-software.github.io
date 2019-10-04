@@ -11,7 +11,8 @@ lang: de_DE
 ---
 
 Legen Sie eine neue Destination vom Typ Snowflake, wie es hier beschrieben ist:
-{% include _content/_de/xtract-universal/xu-zielumgebungen/ziele-verwalten.md %}
+{% include _content/de/xtract-universal/xu-zielumgebungen/ziele-verwalten.md %}
+
 
 Folgende Einstellungen können für die Verbindung zu Snowflake definiert werden.
 
