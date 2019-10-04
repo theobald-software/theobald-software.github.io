@@ -10,7 +10,7 @@ weight: 2
 lang: de_DE
 ---
 
-Legen Sie eine neue Destination vom Typ Snowflake, wie es im Kapitel [Zielumgebungen verwalten](./xu-zielumgebungen/ziele-verwalten.md) beschrieben ist.
+Legen Sie eine neue Destination vom Typ Snowflake, wie es im Kapitel [Zielumgebungen verwalten](../../xu-zielumgebungen/ziele-verwalten.md) beschrieben ist.
 
 Folgende Einstellungen können für die Verbindung zu Snowflake definiert werden.
 
