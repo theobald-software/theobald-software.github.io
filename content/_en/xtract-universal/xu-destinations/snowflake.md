@@ -11,6 +11,6 @@ weight: 103
 lang: en_GB
 ---
 
-This chapter contains the information on loading the data into a Snowflake environment.
+This chapter contains information on loading data into a Snowflake environment.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
