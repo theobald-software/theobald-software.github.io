@@ -6,7 +6,7 @@ To install an newer version over an existing version, please follow the steps be
   3. to make a backup of the current installation / extractions / settings etc before you install the update. A backup allows you to easily switch back to the previous version. If the environment is a virtual machine (VM), you can also make a copy of the VM. 
 
 
-2. Please check our knowledge base for the version history and release notes before updates, see [Version History] (https://kb.theobald-software.com/version-history). 
+2. Please check our knowledge base for the version history and release notes before updates, see [Version History](https://kb.theobald-software.com/version-history). 
   1. If necessary, make all necessary preparations and changes, which are described in the Release Note / Version History. 
   2. You can also subscribe to our regular newsletter about version history changes and release notes. Just send an email to to sales@theobald-software.com.  
 

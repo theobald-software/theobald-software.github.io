@@ -7,7 +7,7 @@ Um eine neuere Version über eine bestehende Version zu installieren, führen Si
   2. Dass die Testumgebung eine Kopie der aktuellen Produktionsumgebung ist und 
   3. Ein Backup der aktuellen Installation / Extraktionen / Einstellungen etc. zu erstellen, bevor Sie das Update ausführen. Ein Backup ermöglicht es Ihnen, ganz einfach auf die vorherige Version wider zu wechseln. Wenn die Umgebung eine virtuelle Maschine (VM) ist, können Sie auch eine Kopie der VM erstellen. 
 
-2. Vor dem Update prüfen Sie sorgfältig die Version History und Release-Notes in unserer Knowledgebase, siehe [Version History] (https://kb.theobald-software.com/version-history). <br>
+2. Vor dem Update prüfen Sie sorgfältig die Version History und Release-Notes in unserer Knowledgebase, siehe [Version History](https://kb.theobald-software.com/version-history).
   1. Führen Sie gegebenfalls alle notwendigen Vorbereitungen und Änderungen durch, welche in der Release Note / Version History beschrieben werden.
   2. Sie können auch unseren regelmäßigen Newsletter über Änderungen in der Versionshistorie und Release Notes abonnieren. Schicken Sie einfach eine E-Mail an sales@theobald-software.com. 
 
