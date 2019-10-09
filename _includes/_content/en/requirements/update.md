@@ -1,7 +1,7 @@
 ## Install update on test environment
 1. We strongly recommend: <br>
  1 to have a test environment with a valid license  
- 2 that the test environment is a copy of the current production environment and
+ 2 that the test environment is a copy of the current production environment and 
  3 to make a backup of the current installation / extractions / settings etc before you install the update. A backup allows you to easily switch back to the previous version. If the environment is a virtual machine (VM), you can also make a copy of the VM. 
 
 
@@ -13,5 +13,5 @@
  1 In case of success, install the current version on the productive environment.    
  2 In case of error contact support. You can also reinstall / reuse your backup until we provide a solution. 
 
-## Install update on production environment
-After a sucessfull installation and test of the update version on the test environment, please follow the steps described above for the production environment, especially steps 1.3,  2.1 and 3.2.
+## Install update on production environment 
+After a sucessfull installation and test of the update version on the test environment, please follow the steps described above for the production environment, especially steps 1.3,  2.1 and 3.2. 
