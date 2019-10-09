@@ -1,4 +1,6 @@
 ## Install update on test environment
+To install an newer version over an existing version, please follow the steps below. 
+
 1. We strongly recommend: <br>
  1 to have a test environment with a valid license.  <br>
  2 that the test environment is a copy of the current production environment and <br>
