@@ -6,7 +6,7 @@ description: Update
 product: xtract-is
 parent: requirements-and-installation
 permalink: /:collection/:path
-weight: 3
+weight: 6
 lang: en_GB
 ---
 
