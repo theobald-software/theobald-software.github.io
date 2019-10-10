@@ -11,6 +11,8 @@ weight: 6
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=xtract-is-table-join
 ---
+**Wichtiger Hinweis: Ab [Xtract IS Version 5.0](https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html) ist die Table Join Komponente obsolet.** <br>
+**Bitte nutzen sie die Table Join Funktionalität der [neuen Table Komponente](./xtract-is-table).** 
 
 Die Table-Join Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join).  <br>
 
