@@ -1,19 +1,21 @@
-## Install update on test environment
+## Installation of an update (newer product version) on test environment
 To install an newer version over an existing version, please follow the steps below. 
 
 1. We strongly recommend:  
  - to have a test environment with a valid license.   
+ - that you update your software version at least 1-2 times a year. 
  - that the test environment is a copy of the current production environment and  
- - to make a backup of the current installation / extractions / settings etc before you install the update. A backup allows you to easily switch back to the previous version. If the environment is a virtual machine (VM), you can also make a copy of the VM.  
+ - to make a backup of the current installation, settings and projects before you install the update. A backup allows you to easily switch back to the previous version. If the environment is a virtual machine (VM), you can also make a copy of the VM. 
+ - to update 
 
 
 2. Please check our knowledge base for the version history and release notes before updates, see [Version History](https://kb.theobald-software.com/version-history).  
- - If necessary, make all necessary preparations and changes, which are described in the Release Note / Version History. 
+ - If necessary, make all necessary preparations and changes, which are described in the Release Note / Version History, especially for major changes and high ([H]) recommendation for updating. 
  - You can also subscribe to our regular newsletter about version history changes and release notes. Just send an email to to sales@theobald-software.com.  
 
-3. Install the current version of our product at first on the test environment and test the new version in depth. You should also test all your existing extractions.  
- - In case of success, follow the steps to install the current version on the productive environment, see section below.    
- - In case of error contact support. You can also reinstall / reuse your backup until we provide a solution. 
+3. Install the current version of our product at first on the test environment and test the new version in depth. You should also test all your existing projects.  
+ - In case of success, follow the steps to install the current version on the productive environment, see the corresponding section below.    
+ - In case of error, contact support. You can also reinstall / reuse your backup until we provide a solution. 
 
-## Install update on production environment 
+## Installation of an update (newer product version) on production environment 
 After a sucessfull installation and test of the update version on the test environment, please follow the steps described above for the production environment, especially steps 1.3,  2.1 and 3.2. 

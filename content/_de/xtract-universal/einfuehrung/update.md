@@ -1,12 +1,12 @@
 ---
-ref: xi-requirements-and-installation-06
+ref: xu-introduction-08
 layout: page
 title: Installation eines Updates
 description: Installation eines Updates
-product: xtract-is
-parent: voraussetzungen-und-installation
+product: xtract-universal
+parent: einfuehrung
 permalink: /:collection/:path
-weight: 6
+weight: 8
 lang: de_DE
 ---
 
