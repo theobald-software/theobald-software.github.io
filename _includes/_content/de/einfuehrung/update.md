@@ -1,4 +1,4 @@
-## Installation eines Updates (bzw. einer neueren Version) auf einer Test-Umgebung
+### Installation eines Updates (bzw. einer neueren Version) auf einer Test-Umgebung
 
 Um eine neuere Version der Software über eine bestehende Version zu installieren, führen Sie bitte die folgenden Schritte aus. 
 
@@ -16,8 +16,8 @@ Um eine neuere Version der Software über eine bestehende Version zu installiere
  - Im Erfolgsfall folgen Sie den Schritten zur Installation der aktuellen Version auf der Produktivumgebung, siehe den entsprechenden Abschnitt unten. 
  - Im Fehlerfall wenden Sie sich an unsren Support: support@theobald-software.com. Sie Können Ihr Backup erneut installieren und wiederverwenden, bis wir Ihnen eine Lösung zur Verfügung stellen.
 
-## Installation eines Updates (bzw. einer neueren Version) auf einer Produktiv-Umgebung
+### Installation eines Updates (bzw. einer neueren Version) auf einer Produktiv-Umgebung
 Nach erfolgreicher Installation und Test der Update-Version auf der Testumgebung wiederholen Sie die entsprechenden Schritte für die Produktionsumgebung. Achten Sie unbedingt drauf, dass Sie ein Backup vorher erstellen und ggf. die notwendigen Vorbereitungen durchführen. 
 
-## Wie installiere ich eine neue Version? 
+### Wie installiere ich eine neue Version? 
 Eine neuere Version kann einfach über die alte Version installiert werden. Es ist nicht notwendig, die vorige Version zu deinstallieren. 
