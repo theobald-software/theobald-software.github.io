@@ -1,12 +1,12 @@
 ### Installation eines Updates (bzw. einer neueren Version) auf einer Test-Umgebung
 
-Um eine neuere Version der Software über eine bestehende Version zu installieren, führen Sie bitte die folgenden Schritte aus. 
+Um eine neuere Version der Software zu installieren, führen Sie bitte die folgenden Schritte aus. 
 
 1. Wir empfehlen: 
  - Die Verwendung einer Testumgebung mit gültiger Lizenz und Wartung. 
  - Regelmäßige Aktualisierung der Software, insbesondere bei Versionen mit größeren Änderungen (Major Changes) und hoher ([H]) Empfehlung für die Aktualisierung..   
  - Die Testumgebung sollte eine Kopie der aktuellen Produktionsumgebung ist und 
- - Ein Backup der aktuellen Installation, siehe dazu den entsprechenden Abschnitt unten. 
+ - Ein Backup der aktuellen Installation. Für mehr Details siehe dazu den entsprechenden Abschnitt unten. 
  
 2. Vor dem Update prüfen Sie sorgfältig die [Version History](https://kb.theobald-software.com/version-history) und Release-Notes in unserer Knowledgebase.
  - Führen Sie ggf. alle notwendigen Vorbereitungen und Änderungen durch, welche in der Release Note / Version History beschrieben werden, insbesondere bei größeren Änderungen (Major Changes) und hoher ([H]) Empfehlung für die Aktualisierung.
