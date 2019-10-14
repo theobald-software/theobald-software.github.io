@@ -32,5 +32,3 @@ Welche Felder aktualisiert werden, kann man dem SQL-Statement entnehmen. <br>
 Hier kann man das SQL-Statement bei Bedarf ändern, um z.B. bestimmte Spalten von der Aktualisierung auszuschließen.<br>
 Felder, welche nicht im SQL-Statement auftauchen, sind von Änderungen nicht betroffen.
 
-Die Extraktion wurde nun erfolgreich ausgeführt.
-
