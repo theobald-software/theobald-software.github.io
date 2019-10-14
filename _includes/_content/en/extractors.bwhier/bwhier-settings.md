@@ -6,7 +6,7 @@ Click the *Extraction Settings* link to open the Extraction Settings dialog.
 
 - **ParentChild**: The hierarchy has the SAP parent-child format.
 
-![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchies-Parent-Child.png){:class="img-responsive"}
+![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Parent-Child.png){:class="img-responsive"}
 
 - **Natural**: The parent child hierarchy will be transformed in a regular hierarchy.
 
