@@ -31,5 +31,3 @@ The updated fields can be seen in the SQL statement. <br>
 
 The SQL statement can be edited to e.g., prevent specific columns from update, if needed. <br>
 Fields that are not mentioned in the SQL statement are not updated.
-
-The extraction is successful. 
