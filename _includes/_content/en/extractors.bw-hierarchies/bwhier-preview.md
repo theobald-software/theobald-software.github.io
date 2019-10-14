@@ -1,4 +1,6 @@
-Compared to other source components, the output of hierarchy components is fixed. It always has the same columns for every hierarchy, as described in the following:
+The output of hierarchy components is fixed. It always has the same columns for every hierarchy, as described in the following:
+
+![Hierarchy-Table-Output](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 
 **NodeID**<br>
 Unique node key.
@@ -23,8 +25,5 @@ The descriptive text in the respective logon language (only when FetchText is se
 
 The original hierarchy of PM_COUNTRY looks in SAP as follows:
 
-![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
+![Hierarchy-Table-SAP](/img/content/extractors.bwhier/Hierarchy-Table-Output.png){:class="img-responsive"}
 
-The output looks as follows:
-
-![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}

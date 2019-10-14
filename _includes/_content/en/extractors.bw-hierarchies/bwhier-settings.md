@@ -1,10 +1,12 @@
 Click the *Extraction Settings* link to open the Extraction Settings dialog.
 
+![Hierarchy-Settings](/img/content/extractors.bwhier/Hierarchy-settings.png){:class="img-responsive"}
+
 **Representation** 
 
 - **ParentChild**: The hierarchy has the SAP parent-child format.
 
-![Hierarchies-Parent-Child](/img/content/Hierarchies-Parent-Child.png){:class="img-responsive"}
+![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchies-Parent-Child.png){:class="img-responsive"}
 
 - **Natural**: The parent child hierarchy will be transformed in a regular hierarchy.
 
@@ -21,16 +23,18 @@ is active only, when Representation has the value Natural
 **Level Count** <br>
 Defines the maximum number of levels if the representation natural is selected. In the following screenshot you see the hierarchie shown in the previous screenshot with five levels in the representation natural.
 
-![Hierarchy-Parent-Child-Natural](/img/content/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
+![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Fill empty levels**  <br>
 If the natural representation is selected the bottom element of the hierarchy will be copied until the last level. In the following screenshot you will see the hierarchy from above with the option Repeat Leaves activated.
 
 
-![Hierarchy-Parent-Child-Repeat](/img/content/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
+![Hierarchy-Parent-Child-Repeat](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
 
 **Description texts for levels**<br>
 Means, that the output has a field LevelTextN for each field LevelN, that contains the text based on the system language settings.
 
 **Leaves only**<br>
 Delivers only the leaves as data records.
+
+![Hierarchy-Parent-Child-Repeat](/img/content/extractors.bwhier/Hierarchy-leaves-only.png){:class="img-responsive"}
