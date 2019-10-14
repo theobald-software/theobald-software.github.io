@@ -10,4 +10,4 @@ weight: 1
 lang: en_GB
 ---
 
-{% include _content/en/extractors.bw-hierarchies/bwhier-define.md %} 
+{% include _content/en/extractors.bwhier/bwhier-define.md %} 

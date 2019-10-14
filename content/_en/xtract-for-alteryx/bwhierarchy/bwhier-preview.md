@@ -10,4 +10,4 @@ weight: 2
 lang: en_GB
 ---
 
-{% include _content/en/extractors.bw-hierarchies/bwhier-preview.md %} 
+{% include _content/en/extractors.bwhier/bwhier-preview.md %} 

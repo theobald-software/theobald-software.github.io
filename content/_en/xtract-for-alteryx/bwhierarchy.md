@@ -11,6 +11,6 @@ weight: 7
 lang: en_GB
 ---
 
-{% include _content/en/extractors.bw-hierarchies/bwhier-introduction.md.md %} 
+{% include _content/en/extractors.bwhier/bwhier-introduction.md %} 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
