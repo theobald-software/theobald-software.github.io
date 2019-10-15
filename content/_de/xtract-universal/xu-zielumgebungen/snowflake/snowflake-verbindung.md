@@ -14,7 +14,7 @@ Legen Sie eine neue Destination vom Typ Snowflake, wie es im Kapitel [Zielumgebu
 
 Folgende Einstellungen können für die Verbindung zu Snowflake definiert werden.
 
-![Snowflake-Destination](/img/content/xu/snowflake/snowflake-destination-details.png){:class="img-responsive"}
+![Snowflake-Destination](/img/content/xu/snowflake/snowflake-destination-details_1.png){:class="img-responsive"}
 
 **Directory**<br>
 Angabe eines vorhandenen Verzeichnises, in das die Zieldateien abgelegt werden.
@@ -27,8 +27,8 @@ gewählt. Die gewählte Region muss den Angaben im zugewiesen Account entspreche
 
 **Account**<br>
 Name des vom Snowflake zugewiesenen Kontos.
-In unserem Beispiel ist es: theobald_partner, wie es in der unteren URL steht: 
-https://theobald_partner.eu-central-1.snowflakecomputing.com/console#/
+In unserem Beispiel ist es: dummy_account, wie es in der folgenden URL steht: 
+https://dummy_account.eu-central-1.snowflakecomputing.com/console#/
 
 
 **User Name**<br>

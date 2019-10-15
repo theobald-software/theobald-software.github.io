@@ -12,7 +12,7 @@ lang: en_GB
 
 Create a new Snowflake destination as described in the chapter [Managing destinations](../../xu-destinations/managing-destinations).
 The following settings can be defined for Snowflake environment.
-![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details.png){:class="img-responsive"}
+![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_1.png){:class="img-responsive"}
 
 **Directory**<br>
 Specifies an existing local directory in which the extracted files are stored.
@@ -24,8 +24,8 @@ The selected region must match the information in the assigned account.
 
 **Account**<br>
 Specifies the Snowflake authentication account.<br>
-In the given example it is: "theobald_partner", see also the URL: <br>
-https://theobald_partner.eu-central-1.snowflakecomputing.com/console#/
+In the given example it is: "dummy_account", see also the URL: <br>
+https://dummy_account.eu-central-1.snowflakecomputing.com/console#/
 
 **User Name**<br>
 Snowflake authentication - user name. 

@@ -22,7 +22,7 @@ An extraction is defined based on the SAP table T001W for plants.
 **Set destination** <br>
 Set the destination connection for the database.  
 
-![Snowflake-Destination](/img/content/xu/snowflake/snowflake-destination-details.png){:class="img-responsive"}
+![Snowflake-Destination](/img/content/xu/snowflake/snowflake-destination-details_1.png){:class="img-responsive"}
 
 **Define settings** <br>
 In this example the default settings are applied.

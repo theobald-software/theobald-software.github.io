@@ -24,7 +24,7 @@ Wir definieren eine Extraktion basierend auf der Tabelle T001W für Werke.
 
 Wir wählen eine Zielverbindung zur Datenbank. 
 
-![Snowflake-Destination](/img/content/xu/snowflake/snowflake-destination-details.png){:class="img-responsive"}
+![Snowflake-Destination](/img/content/xu/snowflake/snowflake-destination-details_1.png){:class="img-responsive"}
 
 **Einstellungen festlegen**
 
