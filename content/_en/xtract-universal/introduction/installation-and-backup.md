@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 The installation program *XtractUniversalSetup.exe* is an industry standard installation routine that does nothing but copy all necessary files into the program directory and create a group with some shortcuts in the Windows program menu.
 The setup installs the Visual C++ 2015 and 2013 runtime libraries. 
 
-Please make sure that the .NET Framework 4.5.2 or higher is installed on your computer. If this is not the case, a warning will appear and the setup will be terminated. 
+Make sure that the .NET Framework 4.5.2 or higher is installed on your computer. If this is not the case, a warning will appear and the setup will be terminated. 
 You will be redirected to the download page of the framework.
 
 During setup, optional components can be selected for installation:
@@ -33,7 +33,9 @@ The service is installed during setup and starts when the operating system is bo
 
 **XtractConsole.exe**
 
-Is the Xtract server that can be started as a console program for test purposes. For internal use only. Please do not use it!
+Is the Xtract server that can be started as a console program for test purposes.
+
+:grey_exclamation: For internal use only. Do not use this option!
 
 The subdirectory *config* is created automatically with the first extraction and contains all extractions as well as the corresponding log files. 
 
