@@ -35,7 +35,7 @@ The service is installed during setup and starts when the operating system is bo
 
 Is the Xtract server that can be started as a console program for test purposes.
 
-:grey_exclamation: For internal use only. Do not use this option!
+For internal use only. Do not use this option!
 
 The subdirectory *config* is created automatically with the first extraction and contains all extractions as well as the corresponding log files. 
 
