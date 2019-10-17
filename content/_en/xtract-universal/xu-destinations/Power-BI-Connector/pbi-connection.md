@@ -1,5 +1,5 @@
 ---
-ref: xu-pbi_connector-02
+ref: xu-pbi_connector-01
 layout: page
 title: Connection
 description: Connection

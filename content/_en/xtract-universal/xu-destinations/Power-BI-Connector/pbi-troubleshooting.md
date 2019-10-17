@@ -1,12 +1,12 @@
 ---
-ref: xu-pbi_connector-02
+ref: xu-pbi_connector-07
 layout: page
 title: Troubleshooting
 description: Troubleshooting
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
-weight: 8
+weight: 7
 lang: en_GB
 old_url:
 ---

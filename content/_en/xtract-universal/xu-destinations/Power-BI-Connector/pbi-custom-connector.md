@@ -1,12 +1,12 @@
 ---
-ref: xu-pbi_connector-02
+ref: xu-pbi_connector-03
 layout: page
 title: Power BI custom connector
 description: Connection in Power BI
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: en_GB
 old_url: 
 ---

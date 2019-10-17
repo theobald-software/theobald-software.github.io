@@ -1,12 +1,12 @@
 ---
-ref: xu-pbi_connector-02
+ref: xu-pbi_connector-06
 layout: page
 title: Single Sign On and SAP authentication
 description: Single Sign On
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
-weight: 7
+weight: 6
 lang: en_GB
 old_url:
 ---

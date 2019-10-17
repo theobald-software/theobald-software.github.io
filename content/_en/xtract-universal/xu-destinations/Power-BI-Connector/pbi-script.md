@@ -1,12 +1,12 @@
 ---
-ref: xu-pbi_connector-02
+ref: xu-pbi_connector-04
 layout: page
 title: Power Query M-script
 description: Power Query M-script 
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: en_GB
 old_url:
 ---
