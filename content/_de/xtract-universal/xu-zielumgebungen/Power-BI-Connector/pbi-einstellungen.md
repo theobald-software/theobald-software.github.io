@@ -1,12 +1,12 @@
 ---
-ref: xu-pbi_connector-01
+ref: xu-pbi_connector-02
 layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 old_url:
 ---
