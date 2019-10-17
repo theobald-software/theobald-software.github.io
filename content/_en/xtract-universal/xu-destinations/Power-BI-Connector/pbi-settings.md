@@ -34,6 +34,6 @@ Defines the style of the column name. Following options are available:
 
 ![Ex-Spec-Settings-Makt-ColumnName](/img/content/Ex-Spec-Settings-Makt-ColumnName.jpg){:class="img-responsive"}
 
-Code: The SAP technical column name will be used as column name, e.g. MAKTX.<br>
-CodeAndText: The SAP technical column name and the SAP description separated by an underscore will be used as column name, e.g. MAKTX_Material Description (Short Text).<br>
-TextAndCode: The SAP description and the SAP technical column name description separated by an underscore will be used as column name, e.g. Material Description (Short Text)_MAKTX.
+Code: The SAP technical column name is be used as column name e.g., MAKTX.<br>
+CodeAndText: The SAP technical column name and the SAP description separated by an underscore used as column name e.g., MAKTX_Material Description (Short Text).<br>
+TextAndCode: The SAP description and the SAP technical column name description separated by an underscore used as column name e.g., Material Description (Short Text)_MAKTX.
