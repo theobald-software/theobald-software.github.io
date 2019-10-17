@@ -15,7 +15,7 @@ You can define the following destination-specific settings:
 
 ![pbi-configuration](/img/content/XU_pbi_connector_destination.jpg){:class="img-responsive"}
 
-**Date Conversion** 
+###Date Conversion 
 
 **Convert date strings**<br>
 Converts SAP dates (YYYYMMDD, e.g. 19900101) into a formatted date value. In the destination the date field does not have a string data type but a date data type (YYYY-MM-DD, e.g. 1990-01-01). 

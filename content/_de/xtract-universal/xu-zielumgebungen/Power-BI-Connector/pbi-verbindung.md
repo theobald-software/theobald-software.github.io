@@ -1,13 +1,13 @@
 ---
-ref: xu-pbi_connector-02
+ref: xu-pbi_connector-01
 layout: page
-title: Connection
-description: Connection
+title: Vebindung
+description: Verbindung
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 1
-lang: en_GB
+lang: de_DE
 old_url:
 ---
 ###Verbindung herstellen
