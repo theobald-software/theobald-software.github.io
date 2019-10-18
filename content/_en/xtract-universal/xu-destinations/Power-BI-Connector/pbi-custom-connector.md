@@ -1,7 +1,7 @@
 ---
 ref: xu-pbi_connector-03
 layout: page
-title: Power BI custom connector
+title: Power BI Custom Connector
 description: Connection in Power BI
 product: xtract-universal
 parent: Power-BI-Connector
