@@ -27,7 +27,7 @@ Außerdem ist es sinnvoll die Sicherheitsstufe in der Option [Datenerweiterung](
 * Geben Sie die URL des Xtract Universal- Webservers. Das ist der erste Teil der URL, die im Webbrowser angezeigt wird, wenn Sie eine Extraktion in Xtract Universal starten und die Option *Run in Browser* auswählen.
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
 
-* Sie können aufgefordert werden  *Anonymous*, *Basic* oder *Windows* Authentifizierungsmethode auszuwählen. Weitere Informationen dazu finden Sie im Abschnitt [Single Sign On and SAP authentication](./pbi-SSO).
+* Sie können aufgefordert werden  *Anonymous*, *Basic* oder *Windows* Authentifizierungsmethode auszuwählen. Weitere Informationen dazu finden Sie im Abschnitt Single Sign On and SAP authentication. <!-- Don't forget to set the link --> 
 
 * Im Fenster Navigator werden alle Extraktionen, die in  *Power BI Connector* Destination in Xtract Universal gesetzt sind, angezeigt. Die angezeigte Datenvorschau zeigt die Bezeichnung des SAP-Spaltenkopfs und eine Datenvorschau abhändig vom Extraktionstyp (z.B. Echtdaten oder Dummy-Daten).
 
