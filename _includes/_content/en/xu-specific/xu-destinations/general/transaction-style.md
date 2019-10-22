@@ -20,5 +20,5 @@ Disadvantage: No rollback of Prepare/Finalization, not even as partial step
 
 **No Transaction**<br>
 No explicit transactions.<br>
-Advantage: No transaction management required by DBMS (locking, DB transaction log, etc.). This means no locking and possible performance advantages<br>.
+Advantage: No transaction management required by DBMS (locking, DB transaction log, etc.). This means no locking and possible performance advantages.<br>
 Disadvantage: No rollback

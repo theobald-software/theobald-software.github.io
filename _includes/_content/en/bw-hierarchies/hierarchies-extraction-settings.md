@@ -1,7 +1,5 @@
 Click the *Extraction Settings* link to open the Extraction Settings dialog.
 
-![Hierarchy-Extraction-Preferences](/img/content/Hierarchy-Extraction-Preferences.png){:class="img-responsive"}
-
 **Representation** 
 
 - **ParentChild**: The hierarchy has the SAP parent-child format.
@@ -25,7 +23,7 @@ Defines the maximum number of levels if the representation natural is selected. 
 
 ![Hierarchy-Parent-Child-Natural](/img/content/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
-**Repeat leaves**  <br>
+**Fill empty levels**  <br>
 If the natural representation is selected the bottom element of the hierarchy will be copied until the last level. In the following screenshot you will see the hierarchy from above with the option Repeat Leaves activated.
 
 

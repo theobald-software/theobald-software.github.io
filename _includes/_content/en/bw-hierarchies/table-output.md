@@ -23,8 +23,8 @@ The descriptive text in the respective logon language (only when FetchText is se
 
 The original hierarchy of PM_COUNTRY looks in SAP as follows:
 
-![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
+![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
 
-The output in the browser looks as follows:
+The output looks as follows:
 
-![Hierarchy-Table-Output-Browser](/img/content/Hierarchy-Table-Output-Browser.png){:class="img-responsive"}
+![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}

@@ -1,12 +1,12 @@
 ---
-ref: xu-pbi_connector-02
+ref: xu-pbi_connector-05
 layout: page
 title: Power BI service
 description: PBI service
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
-weight: 6
+weight: 5
 lang: en_GB
 old_url:
 ---

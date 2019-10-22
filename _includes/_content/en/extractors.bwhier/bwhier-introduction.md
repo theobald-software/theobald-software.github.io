@@ -1,0 +1,1 @@
+This chapter describes the use of BW Hierarchy Component.
