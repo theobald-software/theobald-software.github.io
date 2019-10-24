@@ -30,7 +30,7 @@ Nutzung von Power Query M-script setzt keine weitere Konfiguration voraus.
 
 ### Xtract Universal als Datenquelle hinzufügen
 
-![datagw_service_custom_conn](/img/content/XU_PBI_datagateway_service_config.png){:class="img-responsive"}
+![datagw_service_datasource](/img/content/XU_PBI_datagateway_service_datasource.png){:class="img-responsive"}
 
 **Daten Quelle Name**: beliebiger Name für die Xtract Universal Power BI Datenquelle.
 
