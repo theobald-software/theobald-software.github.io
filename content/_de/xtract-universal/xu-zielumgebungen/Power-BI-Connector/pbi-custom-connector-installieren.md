@@ -1,7 +1,7 @@
 ---
 ref: xu-pbi_connector-03
 layout: page
-title: Power BI Custom Connector installieren
+title: Power BI Custom Connector einrichten
 description: Power BI Custom Connector installieren
 product: xtract-universal
 parent: Power-BI-Connector
@@ -11,7 +11,7 @@ lang: de_DE
 old_url: 
 ---
 
-### Power BI Custom Connector installieren
+### Power BI Custom Connector einrichten
 Zusammen mit der Destination *Power BI Connector* wird Xtract Universal mit einer benutzerdefinierten Erweiterungsdatei für Power BI ausgeliefert. Die Erweiterungsdatei, bennant *XtractUniversalExtension.pqx*, befindet sich im Ornder *powerbi* innerhalb des  Installationsverzeichnisses von Xtract Universal.
 
 Der Power BI connector wurde entsprechend den Microsoft Richtlinien zum Erstellen von  [Custom Connectors in Power BI](https://docs.microsoft.com/de-de/power-bi/desktop-connector-extensibility) entwickelt.
