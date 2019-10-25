@@ -19,7 +19,8 @@ Selektieren Sie dafür eine bestehende Extraction in Xtract Universal und klicke
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 
 Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Zeitstempel vom Typ *datetime* erweitert. 
-Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
+Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. 
+Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 
 ![Custom-SQL_Prep](/img/content/custom_sql_generate_statement.png){:class="img-responsive"}
 
