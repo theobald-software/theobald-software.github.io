@@ -11,17 +11,15 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sql-server-voraussetzungen
 ---
 
-Sie haben die Möglichkeit abseits vom Standard SQL-Statement, eigene SQL-Statement für die drei unterschiedlichen Prozessschritte 
+Sie haben die Möglichkeit abseits vom Standard eigene SQL-Statement für die drei unterschiedlichen DB Prozessschritte zu verwenden und / oder diese an Ihre Bedürfnissen anzupassen.
 
-- Preparation, 
-- Row & Processing sowie 
-- Finalization* 
-
-zu verwenden und / oder diese zu Ihren Bedürfnissen anzupassen.
+Die notwendigen Anpassungen sind für die Abschnitte Preparation, Row & Processing sowie Finalization in den Destination Settings vorzunehmen. 
+Selektieren Sie dafür eine bestehende Extraction in Xtract Universal und klicken auf die Schaltfläche Destination.
 
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 
-Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Zeitstempel vom Typ *datetime* erweitert. Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
+Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Zeitstempel vom Typ *datetime* erweitert. 
+Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 
 ![Custom-SQL_Prep](/img/content/custom_sql_generate_statement.png){:class="img-responsive"}
 
