@@ -6,7 +6,7 @@ description: Custom SQL
 product: xtract-universal
 parent: microsoft-sql-server
 permalink: /:collection/:path
-weight: 3
+weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-settings
 ---
