@@ -15,8 +15,9 @@ old_url:
 
 Along with the *Power BI Connector* destination in Xtract Universal comes a text file named *loading_script* which contains a Power Query M-script. This script can be found in the *powerbi* folder inside the installation directory of Xtract Universal. <br>
 
-**Attention:** The M-script and the custom connector are *not* related. You either use the script or the connector.
-
+```
+Attention: The M-script and the custom connector are *not* related. You either use the script or the connector.
+```
 ### How to use the M-script in Power BI
 
 1. Create a Power BI report using a *Blank Query* as data source.

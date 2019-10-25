@@ -1,7 +1,7 @@
 ---
 ref: xu-pbi_connector-03
 layout: page
-title: Power BI Custom Connector installieren
+title: Power BI Custom Connector einrichten
 description: Power BI Custom Connector installieren
 product: xtract-universal
 parent: Power-BI-Connector
@@ -11,7 +11,7 @@ lang: de_DE
 old_url: 
 ---
 
-### Power BI Custom Connector installieren
+### Power BI Custom Connector einrichten
 Zusammen mit der Destination *Power BI Connector* wird Xtract Universal mit einer benutzerdefinierten Erweiterungsdatei für Power BI ausgeliefert. Die Erweiterungsdatei, bennant *XtractUniversalExtension.pqx*, befindet sich im Ornder *powerbi* innerhalb des  Installationsverzeichnisses von Xtract Universal.
 
 Der Power BI connector wurde entsprechend den Microsoft Richtlinien zum Erstellen von  [Custom Connectors in Power BI](https://docs.microsoft.com/de-de/power-bi/desktop-connector-extensibility) entwickelt.
@@ -27,7 +27,7 @@ Außerdem ist es sinnvoll die Sicherheitsstufe in der Option [Datenerweiterung](
 * Geben Sie die URL des Xtract Universal- Webservers. Das ist der erste Teil der URL, die im Webbrowser angezeigt wird, wenn Sie eine Extraktion in Xtract Universal starten und die Option *Run in Browser* auswählen.
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
 
-* Sie können aufgefordert werden  *Anonymous*, *Basic* oder *Windows* Authentifizierungsmethode auszuwählen. Weitere Informationen dazu finden Sie im Abschnitt Single Sign On and SAP authentication. <!-- Don't forget to set the link --> 
+* Sie können aufgefordert werden  *Anonymous*, *Basic* oder *Windows* Authentifizierungsmethode auszuwählen. Weitere Informationen dazu finden Sie im Abschnitt [Singe Sign On und SAP-Authentifizierung](./pbi-SSO). 
 
 * Im Fenster Navigator werden alle Extraktionen, die in  *Power BI Connector* Destination in Xtract Universal gesetzt sind, angezeigt. Die angezeigte Datenvorschau zeigt die Bezeichnung des SAP-Spaltenkopfs und eine Datenvorschau abhändig vom Extraktionstyp (z.B. Echtdaten oder Dummy-Daten).
 
