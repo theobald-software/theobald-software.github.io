@@ -29,9 +29,6 @@ From the drop-down menu, select *Drop & Create* and click *Generate Statement*. 
 ```
 [Extraction_Date] date
 ```
-
-![Custom-SQL_DATUM_insert](/img/content/custom_sql_column_datum_einfügen.png){:class="img-responsive"}
-
 In the *Row Processing* section, the column values from SAP are processed in the previously created columns of the SQL target table. This SQL statement is therefore left on the standard *Insert* as an SQL statement. At this point, no data is written from the SAP source system, but `NULL` values are written to the newly created *Extraction_Date* column.
 
 In the last section *Finalization*, the `NULL` values are filled with the following SQL statement of the current date of the extraction and written to the SQL target table by the T-SQL command `UPDATE`. Confirm the input with *OK*.
