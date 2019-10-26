@@ -18,7 +18,7 @@ Selektieren Sie dafür eine bestehende Extraction in Xtract Universal und klicke
 
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 
-Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Zeitstempel vom Typ *datetime* erweitert. 
+Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Datum vom Typ `date` erweitert. 
 Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. 
 Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 
@@ -27,21 +27,23 @@ Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server D
 Beginnen Sie damit im Preparation Abschnitt über das Drop-Down Menü *Custom SQL* auszuwählen. Anschließend klicken Sie auf die Schaltfläche *Edit SQL*, um den Code zu bearbeiten.
 Wählen Sie aus dem Drop-Down Menü *Drop & Create* aus und klicken Sie auf *Generate Statement*. Fügen Sie am Ende des erzeugten Statements folgende Zeile ein und bestätigen Sie die Eingabe mit *OK*. 
 ```
-[DATUM] datetime
+[Extraction_date] date
 ```
-![Custom-SQL_DATUM_insert](/img/content/custom_sql_column_datum_einfügen.png){:class="img-responsive"}
-
 Im Abschnitt *Row Processing* werden die Spaltenwerte aus SAP in die vorab angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *Datum* geschrieben.
 
 Im letzten Abschnitt *Finalization* werden die `NULL` Werte mit folgenden SQL-Statement des aktuellen Datums der Extraktion befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben: 
 ```
 UPDATE [dbo].[KNA1] 
-SET [DATUM] = GETDATE() 
-WHERE [DATUM] IS NULL; 
+SET [Extraction_date] = '#{ DateTime.Now}#' 
+WHERE [Extraction_date] IS NULL; 
 ```
 Bestätigen Sie die Eingabe mit *OK*. 
 
 ![Custom-SQL_Final](/img/content/custom_sql_finalization_statement.png){:class="img-responsive"}
+
+SQL-Server Ansicht der Tabelle *KNA1* mit der erweiterten Spalte *Extraction_Date*.
+
+![Custom_SQL_SQL_Server_Ausgabe](/img/content/sql_server_ansicht_extraction_date_spalte.png){:class="img-responsive"}
 
 
 
