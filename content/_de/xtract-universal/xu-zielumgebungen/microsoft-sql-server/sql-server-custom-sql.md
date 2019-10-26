@@ -29,7 +29,7 @@ Wählen Sie aus dem Drop-Down Menü *Drop & Create* aus und klicken Sie auf *Gen
 ```
 [Extraction_Date] date
 ```
-Im Abschnitt *Row Processing* werden die Spaltenwerte aus SAP in die vorab angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *Datum* geschrieben.
+Im Abschnitt *Row Processing* werden die Spaltenwerte aus SAP in die vorab angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *Extraction_Date* geschrieben.
 
 Im letzten Abschnitt *Finalization* werden die `NULL` Werte mit folgenden SQL-Statement des aktuellen Datums der Extraktion befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben: 
 ```
