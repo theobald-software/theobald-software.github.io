@@ -22,7 +22,7 @@ In the following example, the table *KNA1* is extended by a column with the curr
 This new column is filled dynamically using a .NET-based function. 
 The data types that can be used in the SQL statement depend on the SQL Server database version.
 
-![Custom-SQL_Prep](/img/content/custom_sql_generate_statement.png){:class="img-responsive"}
+![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 
 Start by selecting *Custom SQL* in the Preparation section from the drop-down menu. Then click the *Edit SQL* button to edit the code.
 From the drop-down menu, select *Drop & Create* and click *Generate Statement*. At the end of the generated statement, add the following line and confirm with *OK*.
