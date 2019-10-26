@@ -22,7 +22,7 @@ Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen D
 Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. 
 Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 
-![Custom-SQL_Prep](/img/content/custom_sql_generate_statement.png){:class="img-responsive"}
+![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 
 Beginnen Sie damit im Preparation Abschnitt über das Drop-Down Menü *Custom SQL* auszuwählen. Anschließend klicken Sie auf die Schaltfläche *Edit SQL*, um den Code zu bearbeiten.
 Wählen Sie aus dem Drop-Down Menü *Drop & Create* aus und klicken Sie auf *Generate Statement*. Fügen Sie am Ende des erzeugten Statements folgende Zeile ein und bestätigen Sie die Eingabe mit *OK*. 
