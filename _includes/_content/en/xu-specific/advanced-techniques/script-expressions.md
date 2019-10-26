@@ -94,4 +94,4 @@ You can find more information [about the .NET data types](http://msdn.microsoft.
 
 **Using Scripted Expressions**
 
-A Scripted Expression can be used in the [where clause](../getting-started-table/where-clause) of a table and in the script of the Extraction-Specific settings of a destination.
+Scripted expressions can be used both for the [where-condition](../getting-started-table/where-clause) of a table and in the destination settings using [Custom SQL](../xu-destinations/microsoft-sql-server/sql-server-custom-sql).
