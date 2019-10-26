@@ -95,4 +95,4 @@ Informationen zu den [.NET-Typen](https://docs.microsoft.com/de-de/dotnet/api/sy
 
 **Verwendung** 
 
-Script-Ausdrücke können in der [Where-Bedingung](../erste-schritte-mit-xtract-table/where-bedingung) einer Tabelle sowie im Skript der Extraction-Specific Settings eines Datenziels.  
+Script-Ausdrücke können sowohl für die [Where-Bedingung](../erste-schritte-mit-xtract-table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](../xu-zielumgebungen/microsoft-sql-server/custom-sql) verwendet werden.  
