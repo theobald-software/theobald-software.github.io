@@ -60,7 +60,9 @@ Without an index, the execution of the merge command would take a long time depe
 Here you can define your own SQL or script expressions. You can use existing SQL commands as templates. 
 
 The following [link](../xu-destinations/microsoft-sql-server/sql-server-custom-sql) provides an example of how to use predefined expressions. Please note that the custom SQL code is for SQL Server target environments. 
-**A syntactic adaptation of the code is necessary for other DB target environments!**
+```
+A syntactic adaptation of the code is necessary for other DB target environments!
+```
 
 **Templates**
 
