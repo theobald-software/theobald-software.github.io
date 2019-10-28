@@ -6,7 +6,7 @@ description: Troubleshooting
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 old_url:
 ---

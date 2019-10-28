@@ -14,7 +14,7 @@ old_url:
 
 The *Power BI Connector* destination in Xtract Universal works in combination with a custom extension file for Power BI. This file is named *XtractUniversalExtension.pqx*. This file can be found in the *powerbi* folder inside the installation directory of Xtract Universal. 
 
-The Power BI Connector was developed following Microsoft's guidelines for [custom connectors in Power BI](https://docs.microsoft.com/en-US/power-bi/desktop-connector-extensibility). 
+The Power BI Custom Connector was developed following Microsoft's guidelines for [custom connectors in Power BI](https://docs.microsoft.com/en-US/power-bi/desktop-connector-extensibility). 
 
 ### Setup 
 
@@ -29,15 +29,16 @@ When using *Power BI Desktop*:
 
 ### Connecting Power BI with Xtract Universal
 
-1. Select Xtract Universal from the *Get Data* menu and click on the *Connect* button.
-2. Enter the URL of the Xtract Universal web server   
+1. Select Xtract Universal from the *Get Data* menu
+2. Click on the *Connect* button.
+3. Enter the URL of the Xtract Universal web server   
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
 
-3. Follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) when you are prompted for *Anonymous*, *Basic* or *Windows* authentication.
+4. When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) 
 
-4. The Navigator window lists all extractions that are set to *Power BI Connector* destination in Xtract Universal. Select an extraction from the list. The preview data shows the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
+5. The Navigator window lists all extractions that are set to *Power BI Connector* destination in Xtract Universal. Select an extraction from the list. The preview data shows the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
 
-5. Click on the *Load* button. This triggers an extraction in Xtract Universal and writes the extracted data to Power BI.
+6. Click on the *Load* button. This triggers an extraction in Xtract Universal and writes the extracted data to Power BI.
 
 ![powerbi-navigator](/img/content/XU_pbi_connector_navigator.jpg){:class="img-responsive"}
 

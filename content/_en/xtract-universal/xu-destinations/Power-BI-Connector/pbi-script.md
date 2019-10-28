@@ -18,7 +18,7 @@ Instead of using the Power BI Custom Connector you can use a custom Power Query 
 ### Setup
 
 
-**Attention:** The Power Query M-script and the Power BI Custom Connector are *not* related. Use Power Query M-script **or** the Power BI Custom Connector.
+**Attention:** The Power Query M-script and the Power BI Custom Connector are not related. Use Power Query M-script **or** the Power BI Custom Connector.
 
 ### How to use the Power Query M-script in Power BI
 
@@ -29,7 +29,7 @@ Instead of using the Power BI Custom Connector you can use a custom Power Query 
 4. Change the values for *ExtractionName* and the *ServerURL* to match the names of your Xtract Universal extraction and web server. **Attention:** Only use extractions that are set to *Power BI Connector* destination in Xtract Universal.
 5. Close the *Advanced Editor*.
 6. Click on *Close & Apply*.
-7. Follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) when prompted for *Anonymous*, *Basic* or *Windows* authentication.
+7. When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) 
 
 ![M-Script](/img/content/XU_PowerQueryScript.png){:class="img-responsive"}
 

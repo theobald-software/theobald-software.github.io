@@ -6,7 +6,7 @@ description: XU Variables in PBI
 product: xtract-universal
 parent: Power-BI-Connector
 permalink: /:collection/:path
-weight: 8
+weight: 7
 lang: en_GB
 old_url:
 ---
