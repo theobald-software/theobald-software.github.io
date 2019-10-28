@@ -49,13 +49,15 @@ INSERT INTO [ExtractionStatistics]
 (
      [Timestamp], 
      [TableName], 
+     [RowsCount],
      [RowsCount]
 )
 VALUES
 (
      '#{Extraction.Timestamp}#', 
      '#{Extraction.TableName}#', 
-     '#{Extraction.RowsCount}#'
+     '#{Extraction.RowsCount}#',
+     '#{Extraction.RunState}#'
 );
 {% endhighlight %}
 
