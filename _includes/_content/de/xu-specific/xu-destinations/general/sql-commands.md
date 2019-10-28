@@ -60,7 +60,7 @@ Ohne einen Index würde die Ausführung des Merge-Befehls abhängig von der Date
 
 Hier können Sie eigene SQL- bzw. Skript-Ausdrücke definieren. Bestehende SQL-Befehle können Sie als Vorlage verwenden. 
 
-Im folgenden [Link](../xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) finden Sie ein Beispiel für die Verwendung von vordefinierten Ausdrücken. Bitte beachten Sie, dass der Custom-SQL Code für SQL Server Zielumgebungen dient. 
+Im folgenden [Link](../microsoft-sql-server/sql-server-custom-sql) finden Sie ein Beispiel für die Verwendung von vordefinierten Ausdrücken. Bitte beachten Sie, dass der Custom-SQL Code für SQL Server Zielumgebungen dient. 
 ```
 Eine syntaktische Anpassung des Codes ist für andere DB Zielumgebungen notwendig!
 ```
