@@ -13,6 +13,10 @@ Let's look at the following examples.
 | Current year concatenated with "0101" |``` #{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | 20130101            |
 | Current year concatenated with "0101" |``` #{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | 20130101            |
 
+**Using Scripted Expressions**
+
+Scripted expressions can be used both for the [where-condition](../table/where-clause) of a table and in the destination settings using [Custom SQL](../xu-destinations/microsoft-sql-server/sql-server-custom-sql).
+
 **IF statement** 
 
 An if statement is supported and has the following syntax iif(bool condition, string trueResult, string falseResult)  
@@ -40,23 +44,8 @@ The following expressions are defined and can be used:
 #{Extraction.Timestamp}#: Timestamp of the extraction 
 ```
 
-As an example you can use the following Custom SQL statement in the Finalization phase to insert the information in the table [ExtractionStatistics]: 
-
-```
-INSERT INTO [ExtractionStatistics]
-(
-     [Timestamp],
-     [TableName],
-     [RowsCount]
-)
-VALUES
-(
-     '#{Extraction.Timestamp}#',
-     '#{ Extraction.TableName }#',
-     '#{ Extraction.RowsCount }#'
-);
-```
-
+An example of the use of defined expressions in the Destination Custom-SQL settings can be found [here](../xu-destinations/microsoft-sql-server/sql-server-custom-sql).
+ 
 
 **Supported data types**
 
@@ -92,6 +81,4 @@ true, false and null.
 You can find more information [about the .NET data types](http://msdn.microsoft.com/en-us/library/System%28v=vs.90%29.aspx) and [Date and Time format](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) in MSDN.
 
 
-**Using Scripted Expressions**
 
-Scripted expressions can be used both for the [where-condition](../table/where-clause) of a table and in the destination settings using [Custom SQL](../xu-destinations/microsoft-sql-server/sql-server-custom-sql).

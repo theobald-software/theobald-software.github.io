@@ -46,3 +46,38 @@ WHERE [Extraction_Date] IS NULL;
 SQL Server View of table *KNA1* with the extended column *Extraction_Date*.
 
 ![Custom_SQL_SQL_Server_Ausgabe](/img/content/sql_server_ansicht_extraction_date_spalte.png){:class="img-responsive"}
+
+#### Creation of the SQL table ExtractionStatistics
+
+This table provides an overview and status of the executed Xtract Universal extractions.
+
+To do this, create an SQL table according to the following example:
+
+{% highlight sql %}
+CREATE TABLE [dbo].[ExtractionStatistics](
+	[TableName] [nchar](50) NULL,
+	[RowsCount] [int] NULL,
+	[Timestamp] [nchar](50) NULL,
+	[RunState] [nchar](50) NULL
+) ON [PRIMARY]
+GO
+{% endhighlight %}
+
+The *ExtractionStatistics* table is filled in the *Finalization* DB process step using the following SQL code:
+
+{% highlight sql %}
+INSERT INTO [ExtractionStatistics]
+(
+     [Timestamp], 
+     [TableName], 
+     [RowsCount],
+     [RowsCount]
+)
+VALUES
+(
+     '#{Extraction.Timestamp}#', 
+     '#{Extraction.TableName}#', 
+     '#{Extraction.RowsCount}#',
+     '#{Extraction.RunState}#'
+);
+{% endhighlight %}

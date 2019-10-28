@@ -14,6 +14,11 @@ Schauen wir uns nun folgende Beispiele an.
 | Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | 20130101            |
 | Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | 20130101            |
 
+
+**Verwendung** 
+
+Script-Ausdrücke können sowohl für die [Where-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](../xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) verwendet werden. 
+
 **IF-Abfrage**<br>
 Eine IF-Abfrage hat die folgende Syntax: iif(bool condition, string trueResult, string falseResult)  
 
@@ -42,7 +47,7 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 #{Extraction.Timestamp}#: Zeitstempel der Extraktion
 ```
 
-Ein Beispiel für die Verwendung von definierten Ausdrücken mitteld Custom SQL in den Destination Einstellungen, finden Sie [hier](../xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) . 
+Ein Beispiel für die Verwendung von definierten Ausdrücken mitteld Custom-SQL in den Destination Einstellungen, finden Sie [hier](../xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) . 
 
 
 **Unterstützte Datentypen**<br>
@@ -78,6 +83,4 @@ true, false und null.
 Informationen zu den [.NET-Typen](https://docs.microsoft.com/de-de/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) und [Format für Datum und Zeit](https://docs.microsoft.com/de-de/dotnet/standard/base-types/custom-date-and-time-format-strings) finden Sie im MSDN.
 
 
-**Verwendung** 
-
-Script-Ausdrücke können sowohl für die [Where-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](../xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) verwendet werden.  
+ 
