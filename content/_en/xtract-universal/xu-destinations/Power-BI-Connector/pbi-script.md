@@ -11,21 +11,25 @@ lang: en_GB
 old_url:
 ---
 
+
+Instead of using the Power BI Custom Connector you can use a custom Power Query M-script for connecting to Xtract Universal. This Power Query M-script is delivered in a text file named *loading script*. This file is located in the *powerbi* folder inside the installation directory of Xtract Universal.
+<br>
+
 ### Setup
 
-Along with the *Power BI Connector* destination in Xtract Universal comes a text file named *loading_script* which contains a Power Query M-script. This script can be found in the *powerbi* folder inside the installation directory of Xtract Universal. <br>
 
-```
-Attention: The M-script and the custom connector are *not* related. You either use the script or the connector.
-```
-### How to use the M-script in Power BI
+**Attention:** The Power Query M-script and the Power BI Custom Connector are *not* related. Use Power Query M-script **or** the Power BI Custom Connector.
 
-1. Create a Power BI report using a *Blank Query* as data source.
-2. Open the *Advanced Editor* 
-3. Open the Xtract Universal *loading_script* in any text editor and copy the complete content into the *Advanced Editor* window.
-4. Change the values for *ExtractionName* and the *ServerURL* to match the names of your Xtract Universal web server and extraction. *Attention*: Only use extractions that write to the *Power BI Connector* destination.
-5. Close the *Advanced Editor* and *Close & Apply* your changes.
-6. See [Single Sign On and SAP authentication](./pbi-SSO) if you are prompted for *Anonymous*, *Basic* or *Windows* authentication.
+### How to use the Power Query M-script in Power BI
+
+1. Create a new Power BI report using a *Blank Query* as data source.
+2. Open the *Advanced Editor*.
+3. Open the Xtract Universal *loading_script* in any text editor.
+4. Copy the complete content into the *Advanced Editor* window in Power BI.
+4. Change the values for *ExtractionName* and the *ServerURL* to match the names of your Xtract Universal extraction and web server. **Attention:** Only use extractions that are set to *Power BI Connector* destination in Xtract Universal.
+5. Close the *Advanced Editor*.
+6. Click on *Close & Apply*.
+7. Follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) when prompted for *Anonymous*, *Basic* or *Windows* authentication.
 
 ![M-Script](/img/content/XU_PowerQueryScript.png){:class="img-responsive"}
 
