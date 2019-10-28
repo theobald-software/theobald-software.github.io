@@ -61,7 +61,7 @@ Ohne einen Index würde die Ausführung des Merge-Befehls abhängig von der Date
 Hier können Sie eigene SQL- bzw. Skript-Ausdrücke definieren. Bestehende SQL-Befehle können Sie als Vorlage verwenden. 
 
 Im folgenden [Link](../microsoft-sql-server/sql-server-custom-sql) finden Sie ein Beispiel für die Verwendung von vordefinierten Ausdrücken. 
-> :exclamation: **Note:** Eine syntaktische Anpassung des Codes ist für andere DB Zielumgebungen notwendig!
+> **Note:** Eine syntaktische Anpassung des Codes ist für andere DB Zielumgebungen notwendig!
 
 
 **Vorlagen**
