@@ -42,24 +42,7 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 #{Extraction.Timestamp}#: Zeitstempel der Extraktion
 ```
 
-Damit kann man als Custom SQL bei der Finalization folgendes in die Zieltabelle [ExtractionStatistics] einfügen: 
-
-{% highlight sql %}
-INSERT INTO [ExtractionStatistics]
-(
-     [Timestamp], 
-     [TableName], 
-     [RowsCount],
-     [RowsCount]
-)
-VALUES
-(
-     '#{Extraction.Timestamp}#', 
-     '#{Extraction.TableName}#', 
-     '#{Extraction.RowsCount}#',
-     '#{Extraction.RunState}#'
-);
-{% endhighlight %}
+Ein Beispiel für die Verwendung von definierten Ausdrücken mitteld Custom SQL in den Destination Einstellungen, finden Sie [hier](../xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) . 
 
 
 **Unterstützte Datentypen**<br>
