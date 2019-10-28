@@ -28,9 +28,7 @@ Beginnen Sie damit im Preparation Abschnitt über das Drop-Down Menü *Custom SQ
 Wählen Sie aus dem Drop-Down Menü *Drop & Create* aus und klicken Sie auf *Generate Statement*. Fügen Sie am Ende des erzeugten Statements folgende Zeile ein und bestätigen Sie die Eingabe mit *OK*. 
 
 {% highlight sql %}
-
 [Extraction_Date] DATETIME
-
 {% endhighlight %}
 
 Im Abschnitt *Row Processing* werden die Spaltenwerte aus SAP in die vorab angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *Extraction_Date* geschrieben.
@@ -50,6 +48,41 @@ Bestätigen Sie die Eingabe mit *OK*.
 SQL-Server Ansicht der Tabelle *KNA1* mit der erweiterten Spalte *Extraction_Date*.
 
 ![Custom_SQL_SQL_Server_Ausgabe](/img/content/sql_server_ansicht_extraction_date_spalte.png){:class="img-responsive"}
+
+#### Anlage SQL Tabelle ExtractionStatistics
+
+Diese Tabelle ermöglicht eine Gesamtübersicht und Status der ausgeführten Xtract Universal Extraktionen.
+
+Erstellen Sie dafür eine SQL Tabelle nach folgenden Beispiel:
+
+{% highlight sql %}
+CREATE TABLE [dbo].[ExtractionStatistics](
+	[TableName] [nchar](50) NULL,
+	[RowsCount] [int] NULL,
+	[Timestamp] [nchar](50) NULL,
+	[RunState] [nchar](50) NULL
+) ON [PRIMARY]
+GO
+{% endhighlight %}
+
+Das Befüllen der Tabelle *ExtractionStatistics* erfolgt im DB-Prozesschritt *Finalization* über folgenden SQL-Code:
+
+{% highlight sql %}
+INSERT INTO [ExtractionStatistics]
+(
+     [Timestamp], 
+     [TableName], 
+     [RowsCount],
+     [RowsCount]
+)
+VALUES
+(
+     '#{Extraction.Timestamp}#', 
+     '#{Extraction.TableName}#', 
+     '#{Extraction.RowsCount}#',
+     '#{Extraction.RunState}#'
+);
+{% endhighlight %}
 
 
 

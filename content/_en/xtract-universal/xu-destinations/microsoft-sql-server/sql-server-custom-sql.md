@@ -26,17 +26,21 @@ The data types that can be used in the SQL statement depend on the SQL Server da
 
 Start by selecting *Custom SQL* in the Preparation section from the drop-down menu. Then click the *Edit SQL* button to edit the code.
 From the drop-down menu, select *Drop & Create* and click *Generate Statement*. At the end of the generated statement, add the following line and confirm with *OK*.
-```
+
+{% highlight sql %}
 [Extraction_Date] DATETIME
-```
+{% endhighlight %}
+
 In the *Row Processing* section, the column values from SAP are processed in the previously created columns of the SQL target table. This SQL statement is therefore left on the standard *Insert* as an SQL statement. At this point, no data is written from the SAP source system, but `NULL` values are written to the newly created *Extraction_Date* column.
 
 In the last section *Finalization*, the `NULL` values are filled with the following SQL statement of the current date of the extraction and written to the SQL target table by the T-SQL command `UPDATE`. Confirm the input with *OK*.
-```
+
+{% highlight sql %}
 UPDATE [dbo].[KNA1] 
 SET [Extraction_Date] = '#{DateTime.Now}#' 
 WHERE [Extraction_Date] IS NULL;
-```
+{% endhighlight %}
+
 ![Custom-SQL_Final](/img/content/custom_sql_finalization_statement.png){:class="img-responsive"}
 
 SQL Server View of table *KNA1* with the extended column *Extraction_Date*.
