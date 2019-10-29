@@ -68,16 +68,16 @@ The *ExtractionStatistics* table is filled in the *Finalization* DB process step
 {% highlight sql %}
 INSERT INTO [ExtractionStatistics]
 (
-     [Timestamp], 
      [TableName], 
-     [RowsCount],
-     [RowsCount]
+     [RowsCount], 
+     [Timestamp],
+     [RunState]
 )
 VALUES
 (
-     '#{Extraction.Timestamp}#', 
      '#{Extraction.TableName}#', 
-     '#{Extraction.RowsCount}#',
+     '#{Extraction.RowsCount}#', 
+     '#{Extraction.Timestamp}#',
      '#{Extraction.RunState}#'
 );
 {% endhighlight %}
