@@ -70,16 +70,16 @@ Das Befüllen der Tabelle *ExtractionStatistics* erfolgt im DB-Prozesschritt *Fi
 {% highlight sql %}
 INSERT INTO [ExtractionStatistics]
 (
-     [Timestamp], 
      [TableName], 
-     [RowsCount],
-     [RowsCount]
+     [RowsCount], 
+     [Timestamp],
+     [RunState]
 )
 VALUES
 (
-     '#{Extraction.Timestamp}#', 
      '#{Extraction.TableName}#', 
      '#{Extraction.RowsCount}#',
+     '#{Extraction.Timestamp}#',
      '#{Extraction.RunState}#'
 );
 {% endhighlight %}
