@@ -18,7 +18,7 @@ The driver is available from [here](https://www.mysql.com/products/connector/). 
 At the first use of the MySQL destination, the destination details dialog pops up to select the required MySql.Data.dll.
 
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong>To do so, you need to run Xtract Universal as administrator.
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> To do so, you need to run Xtract Universal as administrator.
 </div>
 
 Make sure to select the file from the v4.0 folder: 
