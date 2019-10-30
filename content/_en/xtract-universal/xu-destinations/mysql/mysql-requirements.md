@@ -17,7 +17,7 @@ The driver is available from [here](https://www.mysql.com/products/connector/). 
 
 At the first use of the MySQL destination, the destination details dialog pops up to select the required MySql.Data.dll.
 
-> Attention - To do so, you need to run Xtract Universal as administrator.
+> *Note: To do so, you need to run Xtract Universal as administrator.*
 
 Make sure to select the file from the v4.0 folder: 
 

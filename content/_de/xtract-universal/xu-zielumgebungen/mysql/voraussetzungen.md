@@ -18,7 +18,7 @@ Den Treiber können Sie [hier](https://www.mysql.com/products/connector/) herunt
 
 Nach erfolgreicher Installation des Treibers können Sie die benötigte MySql.Data.dll in den Destination Details der MySQL Destination auswählen.
 
-> Achtung -  Hierzu müssen Sie Xtract Universal als Administrator ausführen.
+> *Note: Hierzu müssen Sie Xtract Universal als Administrator ausführen.*
 
 Bitte die im Ordner v4.0 befindliche Datei auswählen.<br>
 
