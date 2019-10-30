@@ -22,9 +22,7 @@ Nach erfolgreicher Installation des Treibers können Sie die benötigte MySql.Da
 
 Bitte die im Ordner v4.0 befindliche Datei auswählen.<br>
 
-`C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.0`
-
-![mysql_ADO.NET](/img/content/mysql_ADO.NET.jpg){:class="img-responsive"}
+`C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.0\MySql.Data.dll`
 
 Anschließend auf Save und Close drücken.
 
