@@ -27,19 +27,19 @@ Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server D
 Beginnen Sie damit im Preparation Abschnitt über das Drop-Down Menü *Custom SQL* auszuwählen. Anschließend klicken Sie auf die Schaltfläche *Edit SQL*, um den Code zu bearbeiten.
 Wählen Sie aus dem Drop-Down Menü *Drop & Create* aus und klicken Sie auf *Generate Statement*. Fügen Sie am Ende des erzeugten Statements folgende Zeile ein und bestätigen Sie die Eingabe mit *OK*. 
 
-{% highlight sql %}
+```sql
 [Extraction_Date] DATETIME
-{% endhighlight %}
+```
 
 Im Abschnitt *Row Processing* werden die Spaltenwerte aus SAP in die vorab angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *Extraction_Date* geschrieben.
 
 Im letzten Abschnitt *Finalization* werden die `NULL` Werte mit folgenden SQL-Statement des aktuellen Datums der Extraktion befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben: 
 
-{% highlight sql %}
+```sql
 UPDATE [dbo].[KNA1] 
 SET [Extraction_Date] = '#{DateTime.Now}#' 
 WHERE [Extraction_Date] IS NULL; 
-{% endhighlight %}
+```
 
 Bestätigen Sie die Eingabe mit *OK*. 
 
@@ -55,7 +55,7 @@ Diese Tabelle ermöglicht eine Gesamtübersicht und Status der ausgeführten Xtr
 
 Erstellen Sie dafür eine SQL Tabelle nach folgenden Beispiel:
 
-{% highlight sql %}
+```sql
 CREATE TABLE [dbo].[ExtractionStatistics](
 	[TableName] [nchar](50) NULL,
 	[RowsCount] [int] NULL,
@@ -63,11 +63,11 @@ CREATE TABLE [dbo].[ExtractionStatistics](
 	[RunState] [nchar](50) NULL
 ) ON [PRIMARY]
 GO
-{% endhighlight %}
+```
 
 Das Befüllen der Tabelle *ExtractionStatistics* erfolgt im DB-Prozesschritt *Finalization* über folgenden SQL-Code:
 
-{% highlight sql %}
+```sql
 INSERT INTO [ExtractionStatistics]
 (
      [TableName], 
@@ -82,7 +82,7 @@ VALUES
      '#{Extraction.Timestamp}#',
      '#{Extraction.RunState}#'
 );
-{% endhighlight %}
+```
 
 
 
