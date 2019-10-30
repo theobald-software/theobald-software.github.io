@@ -15,12 +15,14 @@ Before using this destination the ADO.NET Driver for MySQL (Connector/NET) needs
 
 The driver is available from [here](https://www.mysql.com/products/connector/). Please download the latest stable driver version. 
 
-At the first use of the MySQL destination, the Destination Details dialog pops up to select the required MySql.Data.dll.
+At the first use of the MySQL destination, the destination details dialog pops up to select the required MySql.Data.dll.
 
-Make sure to select the file from the v4.0 folder: C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.6\Assemblies\v4.0 
+> Attention - To do so, you need to run Xtract Universal as administrator.
 
-![mysql_ADO.NET](/img/content/mysql_ADO.NET.jpg){:class="img-responsive"}
+Make sure to select the file from the v4.0 folder: 
+
+`C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.0\MySql.Data.dll`
 
 After selecting the file click on Save and Close. 
 
-**ATTENTION**: To do so, you need to run Xtract Universal as administrator.
+
