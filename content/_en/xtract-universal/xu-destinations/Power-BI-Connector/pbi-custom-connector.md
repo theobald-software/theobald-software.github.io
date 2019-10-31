@@ -34,9 +34,10 @@ When using *Power BI Desktop*:
 3. Enter the URL of the Xtract Universal web server   
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
 
-4. When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) 
+When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) 
 
-5. The Navigator window lists all extractions that are set to *Power BI Connector* destination in Xtract Universal. Select an extraction from the list. The preview data shows the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
+The Navigator window lists all extractions that are set to *Power BI Connector* destination in Xtract Universal. 
+5. Select an extraction from the list. The preview data shows the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
 
 6. Click on the *Load* button. This triggers an extraction in Xtract Universal and writes the extracted data to Power BI.
 

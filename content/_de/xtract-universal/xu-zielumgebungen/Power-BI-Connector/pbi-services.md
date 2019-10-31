@@ -24,13 +24,15 @@ Verbindung zu Xtract Universal kann mithilfe von Power BI custom connector **ode
 Wenn Sie den Power BI Custom Connector verwenden, gehen Sie so vor:
 1. Konfigurieren Sie das [on-premises Daten-Gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
 2. Konfigurieren Sie das Power BI Service Gateway to support custom data connectors.
+
+Verwendung von Power Query M-script benötigt keine weitere Konfiguration.
 ![datagw_custom_conn](/img/content/XU_PBI_datagateway_config.png){:class="img-responsive"}
 
 ---
 
 ![datagw_service_custom_conn](/img/content/XU_PBI_datagateway_service_config.png){:class="img-responsive"}
 
-Verwendung von Power Query M-script benötigt keine weitere Konfiguration.
+
 
 ### Xtract Universal als Datenquelle hinzufügen
 

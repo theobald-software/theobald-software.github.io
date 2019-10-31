@@ -24,14 +24,14 @@ When using the Power BI custom connector, proceed as follows:
 1. Configure the [on-premises data gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
 2. Configure the Power BI service gateway to support custom data connectors. 
 
-
+When using the Power Query M-script, no further configuration is required.
 ![datagw_custom_conn](/img/content/XU_PBI_datagateway_config.png){:class="img-responsive"}
 ---
 <br>
 
 ![datagw_service_custom_conn](/img/content/XU_PBI_datagateway_service_config.png){:class="img-responsive"}
 
-When using the Power Query M-script, no further configuration is required.
+
 <br>
 
 ### Adding Xtract Universal as data source
@@ -51,6 +51,6 @@ When using the Power Query M-script, no further configuration is required.
 
 <br>
 After filling the fields with the correct information, click on *Apply* button.
-A *Connection Succesful* message is displayed, if the data source is setup correctly.
+A *Connection Succesful* message appears, if the data source is setup correctly.
 <br>
 ![datagw_service_datasource_successful](/img/content/XU_PBI_datagateway_service_datasource_successful.png){:class="img-responsive"}

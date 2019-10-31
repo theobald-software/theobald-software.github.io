@@ -33,7 +33,7 @@ Instead of using the Power BI Custom Connector you can use a custom Power Query 
 
 ![M-Script](/img/content/XU_PowerQueryScript.png){:class="img-responsive"}
 
-<br>
+---
 
 ![PowerQueryEditor](/img/content/XU_PBI_PowerQueryEditor.png){:class="img-responsive"}
 
