@@ -18,16 +18,18 @@ For using the Power BI service you require:
 * a [Power BI account](https://powerbi.microsoft.com/en-us/landing/signin/). 
 * a [Power BI on-premises data gateway](https://powerbi.microsoft.com/en-us/gateway/).
 
-Connection from Power BI service to Xtract Universal is possible via Power BI custom connector **or** Power Query M-script.
+Connection from Power BI service to Xtract Universal is possible via Power Query M-script **or** Power BI custom connector.
+
+When using the Power Query M-script, no further configuration is required.
 
 When using the Power BI custom connector, proceed as follows:
 1. Configure the [on-premises data gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
 2. Configure the Power BI service gateway to support custom data connectors. 
 
-When using the Power Query M-script, no further configuration is required.
+
 ![datagw_custom_conn](/img/content/XU_PBI_datagateway_config.png){:class="img-responsive"}
+
 ---
-<br>
 
 ![datagw_service_custom_conn](/img/content/XU_PBI_datagateway_service_config.png){:class="img-responsive"}
 
