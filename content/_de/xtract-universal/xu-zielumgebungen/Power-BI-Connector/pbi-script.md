@@ -28,9 +28,7 @@ Anstatt von Power BI Custom Connector, können Sie auch den Custom Power Query M
 6. Klicken Sie den *Close & Apply* Button.
 7. Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden auszuwählen: *Anonymous*, *Basic* or *Windows*, befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](./pbi-SSO).<br>
 ![M-Script](/img/content/XU_PowerQueryScript.png){:class="img-responsive"}
-
 ---
-
 ![PowerQueryEditor](/img/content/XU_PBI_PowerQueryEditor.png){:class="img-responsive"}
 
 

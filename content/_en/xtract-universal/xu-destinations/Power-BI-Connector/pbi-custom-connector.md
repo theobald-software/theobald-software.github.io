@@ -23,7 +23,8 @@ When using *Power BI Desktop*:
 2. Create this directory if it doesn't exist.
 3. Copy the .pqx file to *[Documents]\Power BI Desktop\Custom Connectors*.
 4. Restart Power BI. <br>
-5. Change the security level for [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security) in Power BI to *Allow any extension to be load without validation or warning*. Otherwise the *Xtract Universal* datasource will not be visible within Power BI.
+5. Change the security level for [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security) in Power BI to *Allow any extension to be load without validation or warning*. <br>
+Otherwise the *Xtract Universal* datasource will not be visible within Power BI.
 
 ![powerbi-datasource](/img/content/XU_pbi_connector_xu_datasouce.png){:class="img-responsive"}
 
