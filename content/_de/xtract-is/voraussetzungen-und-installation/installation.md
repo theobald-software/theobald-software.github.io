@@ -35,7 +35,9 @@ Dem XtractLicenseManager kann die zu installierende Lizenzdatei als Argument üb
 **Blocking, Exit-Codes und Berechtigung**<br>
 Wenn man möchte, dass das Setup bzw. der License Manager den aufrufenden Prozess (z. B. ein Batch) blockiert bis die Installation fertig ist und wenn man einen korrekten Exit-Code haben möchte, um zu prüfen, ob die Installation erfolgreich war, muss man das jeweilige Programm mit dem start Befehl und /w switch starten. Das kommt daher, dass beides keine Konsolenanwendungen sind.
 
-**Wichtig**: Beide Programme benötigen Admininistratorrechte.
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Admininistratorrechte für die Ausführung beider Programme werden benötigt.
+</div>
 
 **Beispiele:**
 ```
