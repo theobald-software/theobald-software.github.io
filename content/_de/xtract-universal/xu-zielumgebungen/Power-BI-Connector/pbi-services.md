@@ -14,35 +14,40 @@ old_url:
 
 ### Anforderungen
 
-Um Power BI Service zu benutzen, brauchen Sie ein [Power BI Konto (Account)](https://powerbi.microsoft.com/de-de/landing/signin/). Laden Sie zusätzlich das [Power BI On-premises Daten-Gateway](https://powerbi.microsoft.com/de-de/gateway/) herunter.
+Für die Verwendung von Power BI service benötigen Sie Folgendes:
+* Einen [Power BI account](https://powerbi.microsoft.com/en-us/landing/signin/).
+* Ein [Power BI on-premises Daten Gateway](https://powerbi.microsoft.com/en-us/gateway/).
 
-Wenn Sie den Power BI custom connector verwenden, [konfigurieren](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors) Sie das Power BI On-premises Daten-Gateway **sowie** das Power BI Service-Gateway, sodass die Unterstützung von benutzerdefinierten Datenconnectors zu gewährleisten.
-
-Nutzung von Power Query M-script setzt keine weitere Konfiguration voraus.
+Verbindung zu Xtract Universal kann mithilfe von Power BI custom connector **oder** Power Query M-script erstellt werden.
 <br>
 
-
+Wenn Sie den Power BI Custom Connector verwenden, gehen Sie so vor:
+1. Konfigurieren Sie das [on-premises Daten-Gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
+2. Konfigurieren Sie das Power BI Service Gateway to support custom data connectors.
 ![datagw_custom_conn](/img/content/XU_PBI_datagateway_config.png){:class="img-responsive"}
 
-<br>
+---
 
 ![datagw_service_custom_conn](/img/content/XU_PBI_datagateway_service_config.png){:class="img-responsive"}
+
+Verwendung von Power Query M-script benötigt keine weitere Konfiguration.
 
 ### Xtract Universal als Datenquelle hinzufügen
 
 ![datagw_service_datasource](/img/content/XU_PBI_datagateway_service_datasource.png){:class="img-responsive"}
 
-**Daten Quelle Name**: beliebiger Name für die Xtract Universal Power BI Datenquelle.
+**Data Source Name**: Tragen Sie einen beliebigen Namen für die Xtract Universal Power BI Datenquelle.
 
-**Daten Quelle Typ**: Wählen Sie die Extraktion *Xtract Universal Extraction* aus dem Dropdown-Menu. Wenn die Xtract Universal-Extraktion nicht in dem Drop-Down-Menu verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt *Anforderungen* am Anfang der Seite.
+**Data Source Type**: Wählen Sie die Extraktion *Xtract Universal Extraction* aus dem Dropdown-Menu. Wenn die Xtract Universal-Extraktion nicht in dem Drop-Down-Menu verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt *Anforderungen* am Anfang der Seite.
 
-**Datenquelleninformation**: Tragen Sie die Adresse Ihres On-Premises Xtract Universal (Web-) Servers ein.
+**Xtract Universal Server**: Tragen Sie die Adresse Ihres On-Premises Xtract Universal (Web-) Servers ein.
 
-**Authentifizierungsmethode**: siehe Single Sign On and SAP authentication.
+**Authentication Method**: siehe [Singe Sign On und SAP-Authentifizierung](./pbi-SSO).
 
-**Erweiterte Einstellungen**: Bei Default-Einstelungen belassen.
+**Advanced settings**: Bei Default-Einstelungen belassen.
 
 <br>
-Klicken Sie auf *Apply*. Bei einer korrekten Konfiguration der Datenquelle, erscheint die Meldung *Verbindung erfolgreich*.
+Nach dem Ausfüllen der Felder, klicken Sie auf *Apply*. <br>
+Bei einer korrekten Konfiguration der Datenquelle, erscheint die Meldung *Verbindung erfolgreich*.
 <br>
 ![datagw_service_datasource_successful](/img/content/XU_PBI_datagateway_service_datasource_successful.png){:class="img-responsive"}

@@ -16,23 +16,23 @@ old_url:
 
 For using the Power BI service you require:
 * a [Power BI account](https://powerbi.microsoft.com/en-us/landing/signin/). 
-* a [Power BI on-premises data gateway](https://powerbi.microsoft.com/en-us/gateway/) .
+* a [Power BI on-premises data gateway](https://powerbi.microsoft.com/en-us/gateway/).
 
 Connection from Power BI service to Xtract Universal is possible via Power BI custom connector **or** Power Query M-script.
 
-When using the Power BI custom connector:
-1. [configure](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors) the on-premises data gateway
-2. configure the Power BI service gateway to support custom data connectors. 
-
-When using the Power Query M-script, no further configuration is required.
-<br>
+When using the Power BI custom connector, proceed as follows:
+1. Configure the [on-premises data gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
+2. Configure the Power BI service gateway to support custom data connectors. 
 
 
 ![datagw_custom_conn](/img/content/XU_PBI_datagateway_config.png){:class="img-responsive"}
-
+---
 <br>
 
 ![datagw_service_custom_conn](/img/content/XU_PBI_datagateway_service_config.png){:class="img-responsive"}
+
+When using the Power Query M-script, no further configuration is required.
+<br>
 
 ### Adding Xtract Universal as data source
 
@@ -40,7 +40,8 @@ When using the Power Query M-script, no further configuration is required.
 
 **Data Source Name**: Enter a random name for your Xtract Universal Power BI data source.
 
-**Data Source Type**: Select *Xtract Universal Extraction* from the drop down menu. If this entry is not visible, make sure the settings in the *Requirements* section above are correct.
+**Data Source Type**: Select *Xtract Universal Extraction* from the drop down menu. 
+<br> If this entry is not visible, make sure the settings in the section *Requirements*, at the top of the page, are correct.
 
 **Xtract Universal Server**: Type in the address of your on-premises Xtract Universal (web) server. 
 
@@ -49,7 +50,7 @@ When using the Power Query M-script, no further configuration is required.
 **Advanced settings**: Leave default.
 
 <br>
-* Click *Apply*.
-* A *Connection Succesful* message is displayed if the data source is setup correctly.
+After filling the fields with the correct information, click on *Apply* button.
+A *Connection Succesful* message is displayed, if the data source is setup correctly.
 <br>
 ![datagw_service_datasource_successful](/img/content/XU_PBI_datagateway_service_datasource_successful.png){:class="img-responsive"}
