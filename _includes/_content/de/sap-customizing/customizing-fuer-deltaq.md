@@ -1,5 +1,7 @@
-**Achtung**: Die Schritte des DeltaQ-Customizings außer Schritt 2 sind Mandanten abhängig.  
-
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Schritte des DeltaQ-Customizings außer Schritt 2 sind Mandanten abhängig.
+</div>
+   
 Um die DeltaQ-Komponente nutzen zu können, sind einige Customizing-Einstellungen im SAP vorzunehmen, die im Folgenden Schritt für Schritt beschrieben sind.
 
 ### Schritt 1<br>
@@ -23,10 +25,15 @@ Der Parameter I_SLOGSYS ist der logische Name des Quellsystems. Falls Sie diesen
 Das Feld I_SAPRL wird automatisch vom SAP-System gesetzt.
 Mit *F8* starten Sie den Baustein.
 
-**Achtung**: Dieser Schritt setzt voraus, dass das SAP-System in bestimmten Bereichen (2 bis 3) veränderbar ist. , für weitere Infos siehe unseren folgenden Knowledge base Artikel.
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Dieser Schritt setzt voraus, dass das SAP-System in bestimmten Bereichen (2 bis 3) veränderbar ist. , für weitere Infos siehe unseren folgenden Knowledge base Artikel.
+</div>
 
-**Achtung**: Die Werte für die Felder I_BASIC_IDOC und I_TSPREFIX müssen eindeutig für alle RFC-Destinationen sein. 
-Wenn Sie ZXTIDOC und XT schon für XTRACT01 verwendet haben, können Sie für XTRACT02 z.B. ZX2IDOC und X2 verwenden.
+
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Werte für die Felder I_BASIC_IDOC und I_TSPREFIX müssen eindeutig für alle RFC-Destinationen sein. Wenn Sie ZXTIDOC und XT schon für XTRACT01 verwendet haben, können Sie für XTRACT02 z.B. ZX2IDOC und X2 verwenden.
+</div>
+
 
 ![DeltaQ-Customizing-02](/img/content/DeltaQ-Customizing-02.png){:class="img-responsive"}
 
@@ -50,7 +57,9 @@ Führen Sie den Baustein RSAS_RBWBCRL_STORE wie unten gezeigt aus. Er dient dazu
 ### Schritt 6<br>
 In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher) finden Sie die Anleitung zu der Registrierung des RFC Servers in SAP. 
 
-**Achtung**: Dieser Schritt gilt ab der SAP Kernel-Version 720.
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Dieser Schritt gilt ab der SAP Kernel-Version 720.
+</div>
 
 ### Schritt 7<br>
 Öffnen Sie Transaktion SMQS. Markieren Sie die RFC Destination aus Schritt 4, z.B. XTRACT01. Klicken Sie dann auf die Schaltfläche ‘Register without activation’ (or ‘Reg. o. Aktivierung’) und ändern Sie den Parameter Max.Verb. auf den Wert 10. Erhöhen Sie diesen Wert, wenn Sie mehrere DeltaQ-Extraktionen auf derselben RFC Destination parallel ausführen.

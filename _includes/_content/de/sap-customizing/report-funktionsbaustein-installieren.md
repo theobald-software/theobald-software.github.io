@@ -34,5 +34,8 @@ Anstatt den SAP Standard Datentyp TAB512 für den LIST_OUTPUT Tabellen Parameter
 
 ### Exceptions
 
-Achtung: Die Exception LIST_FROM_MEMORY_NOT_FOUND wird geworfen, wenn der Report kein Ergebnis liefert. 
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Exception LIST_FROM_MEMORY_NOT_FOUND wird geworfen, wenn der Report kein Ergebnis liefert.
+</div>
+
 

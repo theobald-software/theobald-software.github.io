@@ -6,7 +6,9 @@ Die *Joins* Funktion dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusa
 Mögliche Szenarien dafür wären, Tabellen für Kopf- und Positionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen. <br>
 Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt. <br>
 
-*Bemerkung*: Joins von Cluster- und Pool-Tabellen werden nicht unterstützt, können aber als Einzeltabellen extrahiert werden.
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Joins von Cluster- und Pool-Tabellen werden nicht unterstützt, können aber als Einzeltabellen extrahiert werden.
+</div>
 
 Zum Anlegen von Tabellen-Joins beachten Sie folgende Schritte:
 
