@@ -22,7 +22,7 @@ Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen D
 Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. 
 
 <div class="alert alert-warning">
-  <i class="fas fa-exclamation"></i> <strong>Note:</strong> Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
+  <i class="fas fa-exclamation"></i> <strong>Warning:</strong> Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 </div>
 
 ![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
