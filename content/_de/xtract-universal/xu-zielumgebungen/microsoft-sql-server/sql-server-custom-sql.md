@@ -21,7 +21,7 @@ Selektieren Sie dafür eine bestehende Extraction in Xtract Universal und klicke
 Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Datum vom Typ `DATETIME` erweitert. 
 Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. 
 
-<div class="alert alert-info">
+<div class="fas fa-exclamation"">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 </div>
 
