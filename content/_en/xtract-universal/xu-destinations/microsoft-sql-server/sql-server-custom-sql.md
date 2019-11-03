@@ -20,7 +20,10 @@ To do this, select an existing extraction in Xtract Universal and click on the D
 
 In the following example, the table *KNA1* is extended by a column with the current time stamp of type *DATETIME*. 
 This new column is filled dynamically using a .NET-based function. 
-The data types that can be used in the SQL statement depend on the SQL Server database version.
+
+<div class="alert alert-warning">
+  <i class="fas fa-exclamation"></i> <strong>Note:</strong> The data types that can be used in the SQL statement depend on the SQL Server database version.
+</div>
 
 ![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 
