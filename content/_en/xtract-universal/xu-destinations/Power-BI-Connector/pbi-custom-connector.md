@@ -22,9 +22,10 @@ For installing the Power BI Custom Connector follow the steps under *Manul Setup
 When using *Power BI Desktop*:
 1. Check if the directory *[Documents]\Power BI Desktop\Custom Connectors* exists.
 2. Create this directory if it doesn't exist.
-3. Copy the .pqx file to *[Documents]\Power BI Desktop\Custom Connectors*.
-4. Restart Power BI. <br>
-5. Change the security level for [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security) in Power BI to *Allow any extension to be load without validation or warning*. <br>
+3. Open the *powerbi* folder located in the Xtract Univesal installation directory.
+4. Copy the *XtractUniversalExtension.pqx* file to *[Documents]\Power BI Desktop\Custom Connectors*.
+5. Restart Power BI.
+6. Change the security level for [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security) in Power BI to *Allow any extension to be load without validation or warning*. <br>
 Otherwise the *Xtract Universal* datasource will not be visible within Power BI.
 
 
@@ -32,10 +33,10 @@ Otherwise the *Xtract Universal* datasource will not be visible within Power BI.
 
 ### Automatic Setup
 1. Open the *powerbi* folder located in the Xtract Univesal installation directory.
-2. Run the *install-connector* PowerShell script. 
-   This script copies the *XtractUniversalExtension.pqx* file to the *[Documents]\Power BI Desktop\Custom Connectors* folder. The script creates the folder first if it doesn't exist.
-3. Run the *trust-connector* PowerShell script.
-   This script modifies the registry at HKLM:\SOFTWARE\Policies\Microsoft\Power BI Desktop\. The script adds or modifies the registry value *TrustedCertificateThumbprints* with the thumbprint of the *XtractUniversalExtension.pqx* file. This procedure follows Microsoft's recommendations for [trusting third-party connectors](https://docs.microsoft.com/en-us/power-bi/desktop-trusted-third-party-connectors).
+2. Run the *install-connector* PowerShell script. <br>
+This script copies the *XtractUniversalExtension.pqx* file to the *[Documents]\Power BI Desktop\Custom Connectors* folder. The script creates the folder first if it doesn't exist.
+3. Run the *trust-connector* PowerShell script. <br>
+This script modifies the registry at HKLM:\SOFTWARE\Policies\Microsoft\Power BI Desktop\. The script adds or modifies the registry value *TrustedCertificateThumbprints* with the thumbprint of the *XtractUniversalExtension.pqx* file. This procedure follows Microsoft's recommendations for [trusting third-party connectors](https://docs.microsoft.com/en-us/power-bi/desktop-trusted-third-party-connectors).
 
 
 ### Connecting Power BI with Xtract Universal
