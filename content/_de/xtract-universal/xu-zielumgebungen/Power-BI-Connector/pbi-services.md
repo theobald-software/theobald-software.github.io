@@ -16,14 +16,14 @@ old_url:
 
 Für die Verwendung von Power BI service benötigen Sie Folgendes:
 * Einen [Power BI account](https://powerbi.microsoft.com/en-us/landing/signin/).
-* Ein [Power BI On-Pemises Daten-Gateway](https://powerbi.microsoft.com/en-us/gateway/).
+* Ein [Power BI On-Pemises Datengateway](https://powerbi.microsoft.com/en-us/gateway/).
 
 Die Verbindung zu Xtract Universal kann mithilfe von Power Query M-script **oder** Power BI custom connector erstellt werden.
 <br>
 Die Verwendung von Power Query M-script benötigt keine weitere Konfiguration. <br>
 
 Wenn Sie den Power BI Custom Connector verwenden, gehen Sie so vor:
-1. Konfigurieren Sie das [on-premises Datengateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
+1. Konfigurieren Sie das [On-Premises Datengateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
 2. Konfigurieren Sie das Power BI Service Gateway, um die Unterstützung von Custom Connectors zu ermöglichen.
 
 
@@ -50,7 +50,7 @@ Wenn Sie den Power BI Custom Connector verwenden, gehen Sie so vor:
 **Advanced settings**: Bei Default-Einstelungen belassen.
 
 <br>
-Nach dem Ausfüllen der Felder, klicken Sie auf *Apply*. <br>
+Nach dem Ausfüllen der Felder, klicken Sie auf die Schaltfläche *Apply*. <br>
 Bei einer korrekten Konfiguration der Datenquelle, erscheint die Meldung *Verbindung erfolgreich*.
 <br>
 ![datagw_service_datasource_successful](/img/content/XU_PBI_datagateway_service_datasource_successful.png){:class="img-responsive"}
