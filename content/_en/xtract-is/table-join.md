@@ -14,7 +14,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=tablejoin
 
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i>
-  <strong>Note:</strong> As of Xtract IS Version <a href="https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html" class="alert-link">5.0</a> the Table Join component is obsolete. Please use the table join functionality of the <a href="./xtract-is-table" class="alert-link">new table component.</a>
+  <strong>Note:</strong> As of Xtract IS Version <a href="https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html" class="alert-link">5.0</a> the Table Join component is obsolete. Please use the table join functionality of the <a href="./table" class="alert-link">new table component.</a>
 </div>
 
 
