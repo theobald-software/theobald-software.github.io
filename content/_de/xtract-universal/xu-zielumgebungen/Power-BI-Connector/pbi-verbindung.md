@@ -11,8 +11,8 @@ lang: de_DE
 old_url:
 ---
 ### Verbindung erstellen
-1. Legen Sie eine neue Destination vom Typ  *Power BI Connector* in Xtract Universal. 
-2. Vergeben Sie der Destination einen beliebigen Namen.
+1. Legen Sie eine neue Destination vom Typ  *Power BI Connector* in Xtract Universal an. 
+2. Geben Sie der Destination einen beliebigen Namen.
 3. Weisen Sie den Extraktionen die Destination zu.<br> 
 Die Extraktionen sind jetzt im Power BI Custom Connector sichtbar.
 
