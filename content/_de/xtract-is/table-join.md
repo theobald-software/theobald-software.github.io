@@ -11,6 +11,14 @@ weight: 6
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=xtract-is-table-join
 ---
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Ab Xtract IS Version <a href="https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html" class="alert-link">5.0</a> ist die Table Join Komponente obsolet. 
+Bitte nutzen Sie die Table Join Funktionalität der <a href="./xtract-is-table" class="alert-link">neuen Table Komponente</a>
+</div>
+
+
+
 **Wichtiger Hinweis: Ab [Xtract IS Version 5.0](https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html) ist die Table Join Komponente obsolet.** <br>
 **Bitte nutzen sie die Table Join Funktionalität der [neuen Table Komponente](./xtract-is-table).** 
 
