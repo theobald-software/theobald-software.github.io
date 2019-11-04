@@ -16,15 +16,15 @@ old_url:
 
 Für die Verwendung von Power BI service benötigen Sie Folgendes:
 * Einen [Power BI account](https://powerbi.microsoft.com/en-us/landing/signin/).
-* Ein [Power BI on-premises Daten Gateway](https://powerbi.microsoft.com/en-us/gateway/).
+* Ein [Power BI On-Pemises Daten-Gateway](https://powerbi.microsoft.com/en-us/gateway/).
 
-Verbindung zu Xtract Universal kann mithilfe von Power Query M-script **oder** Power BI custom connector erstellt werden.
+Die Verbindung zu Xtract Universal kann mithilfe von Power Query M-script **oder** Power BI custom connector erstellt werden.
 <br>
-Verwendung von Power Query M-script benötigt keine weitere Konfiguration. <br>
+Die Verwendung von Power Query M-script benötigt keine weitere Konfiguration. <br>
 
 Wenn Sie den Power BI Custom Connector verwenden, gehen Sie so vor:
-1. Konfigurieren Sie das [on-premises Daten-Gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
-2. Konfigurieren Sie das Power BI Service Gateway to support custom data connectors.
+1. Konfigurieren Sie das [on-premises Datengateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-custom-connectors).
+2. Konfigurieren Sie das Power BI Service Gateway, um die Unterstützung von Custom Connectors zu ermöglichen.
 
 
 ![datagw_custom_conn](/img/content/XU_PBI_datagateway_config.png){:class="img-responsive"}
@@ -39,9 +39,9 @@ Wenn Sie den Power BI Custom Connector verwenden, gehen Sie so vor:
 
 ![datagw_service_datasource](/img/content/XU_PBI_datagateway_service_datasource.png){:class="img-responsive"}
 
-**Data Source Name**: Tragen Sie einen beliebigen Namen für die Xtract Universal Power BI Datenquelle.
+**Data Source Name**: Tragen Sie einen beliebigen Namen für die Xtract Universal Power BI Datenquelle ein.
 
-**Data Source Type**: Wählen Sie die Extraktion *Xtract Universal Extraction* aus dem Dropdown-Menu. Wenn die Xtract Universal-Extraktion nicht in dem Drop-Down-Menu verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt *Anforderungen* am Anfang der Seite.
+**Data Source Type**: Wählen Sie den Eintrag *Xtract Universal Extraction* aus dem Dropdown-Menu. Wenn der Eintrag Xtract Universal nicht in dem Drop-Down-Menu verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt *Anforderungen* am Anfang der Seite.
 
 **Xtract Universal Server**: Tragen Sie die Adresse Ihres On-Premises Xtract Universal (Web-) Servers ein.
 

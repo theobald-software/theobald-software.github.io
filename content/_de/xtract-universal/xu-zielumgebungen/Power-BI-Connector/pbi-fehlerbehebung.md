@@ -10,7 +10,8 @@ weight: 8
 lang: en_GB
 old_url:
 ---
-Extraktionen von Xtract Universal, die große Datenmengen verarbeiten, können zahlreiche Aufrufe von Power BI zu Xtract Universal verursachen. Dieser Vorgang führt dazu, dass mehrfache Einträge für die gleiche Extraktion im Extraktions-Log erscheinen.
+Extraktionen von Xtract Universal, die große Datenmengen extrahieren, können zahlreiche Aufrufe von Power BI zu Xtract Universal verursachen. Dieser Vorgang führt dazu, dass mehrfache Einträge für die gleiche Extraktion
+im Extraktions-Log von Xtract Universal erscheinen.
 
 Um diese Verhaltensweise zu vermeiden,  erhöhen Sie die Größe des Zwischenspeichers (Cache).
 ![Power BI cache](/img/content/XU_PBI_PBI_Cache.png){:class="img-responsive"}
