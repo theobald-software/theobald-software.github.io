@@ -15,7 +15,7 @@ lang: en_GB
 - Windows 10
 - Windows Server 2012 R2 or higher
 - IIS web server version 10 or higher
-- Net Framework 4.7.1 or higher
+- Net Framework 4.7.2 or higher
 
 **User rights on Windows** 
 
