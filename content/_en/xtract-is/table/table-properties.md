@@ -19,7 +19,7 @@ old_url:
 **ConvertsDates**<br>
 The default value of this property is *True*. Setting this property to *True* does two things:
 1. SAP date fields (YYYYMMDD) are typed to SSIS pipeline type DT_DBDATE (instead of DT_WSTR).
-2. The following date conversions are applied in case of invalid data in SAP date fields. For the date conversions to apply, the *UseLegacyDateConversion* propery must be set to *False*.<br>
+2. The following date conversions are applied in case of invalid data in SAP date fields: InvalidDateReplacement, MaxDateReplacement and MinDateReplacement. For the date conversions to apply, the *UseLegacyDateConversion* propery must be set to *False*.<br>
 
 **InvalidDateReplacement** <br>
 * Enter a replacement value for invalid SAP dates, such as '20190132' (January 32nd  2019).
@@ -42,7 +42,7 @@ The default value of this property is *True*. Setting this property to *True* do
 **UseLegacyDateConversion**<br>
 This property is meant for migration of table extractions from Xtract IS versions < 5.0.0. The default value of this property is *False*. As a prerequisite for using this property, the *ConvertsDates* property must be set to *True*. Setting *UseLegacyDateConversion* to *True* does the following:
 * Invalid SAP date values are replaced with the value entered in the *InvalidDateReplacement* property.
-* SAP dates that contain the year '9999' are replaced with '9999-12-31'. The value entered in the MaxDateReplacement property is *not* considered.
+* There is no replacement for SAP dates that contain the year '9999'. The value entered in the MaxDateReplacement property is *not* considered.
 * SAP dates that contain the year '0000' are replaced with NULL. The value entered in the MinDateReplacement property is *not* considered.
 
 **Use Field Exits**<br>
