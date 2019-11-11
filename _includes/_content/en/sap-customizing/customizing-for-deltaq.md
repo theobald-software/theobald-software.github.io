@@ -9,12 +9,12 @@ In order to be able to use the DeltaQ components, some customizing settings have
 Use transaction SM59 to create an RFC destination of type `3`, e. g.  name it `XTRACT01`. 
 
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> You don't need to conduct a transmission test - you only have to have a destination.
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> You don't need to conduct a transmission test - only the destination has to be created
 </div> 
 
 ### STEP 2 (optional)
 
-STEP 2 to create a logican system is optional, since the functional module in STEP 3 will automatically create it if it does not exist. 
+STEP 2 to create a logical system is optional, since the functional module in STEP 3 will automatically create it if it does not exist. 
  
 With the help of the SALE transaction, create a logical system with the same name as your destination in STEP 1.
 
