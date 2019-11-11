@@ -22,10 +22,6 @@ Nach erfolgreicher Installation des Treibers können Sie die benötigte MySql.Da
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> Hierzu müssen Sie Xtract Universal als Administrator ausführen.
 </div>
 
-
-> [!NOTE]
-> Hierzu müssen Sie Xtract Universal als Administrator ausführen.
-
 Bitte die im Ordner v4.0 befindliche Datei auswählen.<br>
 
 `C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.0\MySql.Data.dll`
