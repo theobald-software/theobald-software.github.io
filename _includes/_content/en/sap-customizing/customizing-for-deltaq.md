@@ -6,13 +6,13 @@ In order to be able to use the DeltaQ components, some customizing settings have
 
 ### STEP 1
 
-Use transaction SM59 to create an RFC destination of type `3`, e. g.  name it `XTRACT01`. 
+Use transaction `SM59` to create an RFC destination of type `3`, e. g.  name it `XTRACT01`. 
 
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> You don't need to conduct a transmission test - only the destination has to be created
 </div> 
 
-### STEP 2 (optional)
+### STEP 2 [optional]
 
 STEP 2 to create a logical system is optional, since the functional module in STEP 3 will automatically create it if it does not exist. 
  
@@ -36,7 +36,7 @@ Then execute the function module using F8.
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> This STEP needs some parts (2-3) of the SAP System to be modifiable.
 </div>
 
-**Caution:**<br> 
+**Caution:** 
 The values for the parameters `I_BASIC_IDOC` and `I_TSPREFIX` must be **unique** for the different RFC Destinations.
 If you set the values ZXTIDOC and XT for XTRACT01, you can set e.g. ZX2IDOC and X2 for XTRACT02.
 
