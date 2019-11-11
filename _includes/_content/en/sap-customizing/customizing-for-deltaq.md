@@ -1,10 +1,16 @@
-**Caution:** Those steps for the DeltaQ customizing except step 2 are client specific. 
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Those steps for the DeltaQ customizing except step 2 are client specific.
+</div>  
 
 In order to be able to use the DeltaQ components, some customizing settings have to be made in SAP as described step-by-step in the following:
 
 ### Step 1
 
-Create a new RFC destination of the type 3 in your SM59 transaction (you can name it e.g. XTRACT01). You don't need to conduct a transmission test; you only have to have a destination.
+Create a new RFC destination of the type 3 in your SM59 transaction (you can name it e.g. XTRACT01). 
+
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> You don't need to conduct a transmission test; you only have to have a destination.
+</div> 
 
 ### Step 2 (optional)
 
@@ -21,7 +27,9 @@ The parameter I_SLOGSYS is the logical name of the source system. If you're not 
 The field I_SAPRL will have a default value set by the SAP system.
 With F8 you can then execute the module.
 
-**Caution:** This step needs some parts (2-3) of the SAP System to be modifiable, for more information refer to the following [knowledge base article]().
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> This step needs some parts (2-3) of the SAP System to be modifiable.
+</div>
 
 **Caution:** The values for the fields I_BASIC_IDOC and I_TSPREFIX must be unique for the different RFC Destiantions.
 If you set the values ZXTIDOC and XT for XTRACT01, you can set e.g. ZX2IDOC and X2 for XTRACT02.
