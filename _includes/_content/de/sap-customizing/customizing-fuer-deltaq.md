@@ -26,7 +26,7 @@ Das Feld I_SAPRL wird automatisch vom SAP-System gesetzt.
 Mit *F8* starten Sie den Baustein.
 
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Dieser Schritt setzt voraus, dass das SAP-System in bestimmten Bereichen (2 bis 3) veränderbar ist. , für weitere Infos siehe unseren folgenden Knowledge base Artikel.
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Dieser Schritt setzt voraus, dass das SAP-System in bestimmten Bereichen (2 bis 3) veränderbar ist.
 </div>
 
 
