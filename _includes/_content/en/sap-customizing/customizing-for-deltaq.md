@@ -26,7 +26,7 @@ Go to transaction SE37 and bring up the `RSAP_BIW_CONNECT_40` module in the test
 
 Fill in your import parameters as shown in the screenshot. 
 
-The parameter `I_SLOGSYS` is the logical name of the source system. If you're not sure what this is, consult the `T000` table for the respective client (LOGSYS field). 
+The parameter `I_SLOGSYS` is the logical name of the source system. If you're not sure what this is,<br> consult the `T000` table for the respective client (LOGSYS field). 
 
 The field `I_SAPRL` will have a default value set by the SAP system.
 
@@ -36,7 +36,8 @@ Then execute the function module using F8.
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> This STEP needs some parts (2-3) of the SAP System to be modifiable.
 </div>
 
-**Caution:** The values for the parameters `I_BASIC_IDOC` and `I_TSPREFIX` must be **unique** for the different RFC Destiantions.
+**Caution:**<br> 
+The values for the parameters `I_BASIC_IDOC` and `I_TSPREFIX` must be **unique** for the different RFC Destinations.
 If you set the values ZXTIDOC and XT for XTRACT01, you can set e.g. ZX2IDOC and X2 for XTRACT02.
 
 ![DeltaQ-Customizing-03](/img/content/DeltaQ-Customizing-03.png){:class="img-responsive" }
