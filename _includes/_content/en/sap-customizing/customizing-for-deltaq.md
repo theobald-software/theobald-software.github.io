@@ -56,9 +56,6 @@ Set the following fields:
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive" }
 
-**Optional:** Change the tRFC options for the RFC destination you just created. In `SM59` go to 
-*Edit - tRFC Options* and set the *parameter Connection attempts up to task to 30* and *Time betw*. 2 tries *[min]* to 2. 
-
 ### STEP 5
 
 Launch the `RSAS_RBWBCRL_STORE` module as shown below. Its purpose is to activate the new target system.
