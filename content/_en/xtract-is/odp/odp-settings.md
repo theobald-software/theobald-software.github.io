@@ -10,4 +10,6 @@ weight: 5
 lang: en_GB
 ---
 
-{% include _content/en/odp/odp-settings.md %} 
+{% include _content/en/odp/odp-settings-1.md %} 
+{% include _content/en/odp/odp-settings-2.md %} 
+{% include _content/en/odp/odp-settings-3.md %} 
