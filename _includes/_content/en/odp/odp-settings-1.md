@@ -1,4 +1,4 @@
-**Operation Data Provider**<br/>
+**Operational Data Provider**<br/>
 shows the name of the source object 
 
 **Context**<br/>
