@@ -6,3 +6,4 @@ You can assign one of the following data types to a parameter. The data types ca
 - String: This data type can be used for any type of SAP selection field.
 - Integer: This data type would be used for numeric SAP selection fields.
 - Flag: This data type can only be used for SAP selection fields, which require an 'X' (true) or an '' (false) as input value.
+<br>
