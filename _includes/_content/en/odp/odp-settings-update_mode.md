@@ -11,12 +11,12 @@ shows the data type of the source object
 - Full update: extracts the data in full mode
 - Delta update: runs a delta initialization, in case there is none for this subscriber. Runs a delta update, in case there already is a delta initialization for this subscriber. 
 - Delta recovery: re-runs the last delta update 
-<br>
+
 **On delta initialization** <br/>
 Check the *Extract data* checkbox, if you want to extract data on running a delta initialization. Leaving this box unchecked will run a delta initialization without extracting data. 
 
-<br>
-- Auto-sync subscription: This option allows to delete the existing subscription and create a new one if required. Each extraction has an internal ID, which is part of the subscriber. If you then change the filter of an extraction after the delta init, this option will automatically delete the existing subscription and create a new one. This is only done if the error "Illegal change in selection parameters" comes from the SAP system.
+**Auto-sync subscription**<br/>
+This option allows to delete the existing subscription and create a new one if required. Each extraction has an internal ID, which is part of the subscriber. If you then change the filter of an extraction after the delta init, this option will automatically delete the existing subscription and create a new one. This is only done if the error "Illegal change in selection parameters" comes from the SAP system.
 
 
 **Hint:** The *Delta update* option will be ready for input only if the ODP provider in the SAP source system supports delta updates. 
