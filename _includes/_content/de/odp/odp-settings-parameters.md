@@ -1,0 +1,3 @@
+**Parameter**<br/>
+
+Dynamisierung der Filterwerte...
