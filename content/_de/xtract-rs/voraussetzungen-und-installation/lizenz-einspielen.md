@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-RS-DE/default.aspx?pageid=lizenz-einspielen
 ---
 
-Standardmäßig wird bei der Installation eine Demo-Version eingespielt, welche zeitlich begrenzt ist. Wenn Sie Xtract RS gekauft haben, sind Sie im Besitz einer XtractRS.License.dll, in der Ihr Firmenname und die gekaufte Lizenz (inkl. Seriennummer) verschlüsselt ist.
+Standardmäßig wird bei der Installation eine Demo-Version eingespielt, welche zeitlich begrenzt ist. Wenn Sie Xtract RS gekauft haben, sind Sie im Besitz einer `XtractRSLicense.json`, in der Ihr Firmenname und die gekaufte Lizenz (inkl. Seriennummer) verschlüsselt ist.
 
 Um die Lizenz einzuspielen, starten Sie das Programm XtractLicenseManager.exe (aus dem Programm-Menü). Die aktuell aktive Lizenz wird angezeigt, im nachfolgenden Beispiel handelt es sich um eine Demo-Lizenz.
 
