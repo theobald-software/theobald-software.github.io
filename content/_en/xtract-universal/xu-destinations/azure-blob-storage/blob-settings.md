@@ -8,7 +8,6 @@ parent: azure-blob-storage
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-settings
 ---
 When you click the **Destination** button, you can set extraction-specific settings for the destination.
 
@@ -36,7 +35,10 @@ Consists of blocks, analogous to Blob Type, and are optimized for attachment ope
 **Block Blob**<br>
 Text and binary data consisting of data blocks that can be managed individually.
 
+#### Folder Path
 
+Enter a folder name without slashes here if you want the extraction to be extracted to a folder within an Azure BLOB Storage container.
+Subfolders are also supported and can be entered as follows: Folder/Subfolder1/Subfolder2/…
 
 After the successful extraction you will find the data in the Azure BLOB Storage.
 
