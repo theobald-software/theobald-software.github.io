@@ -48,11 +48,9 @@ Es wird empfohlen, vor der Neuinstallation ein Test auf einer nichtproduktiven U
 Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. 
 
 <div class="alert alert-warning">
-  <i class="fas fa-exclamation"></i> <strong>Warnung:</strong> <strong>Verlust von Daten.</strong> 
+  <i class="fas fa-exclamation-triangle"></i> <strong>Warnung:</strong> <strong>Verlust von Daten.</strong> 
 Führen Sie ein Backup des Config Ordners in regelmäßigen Abständen durch.
 </div>
-
-
 
 **Version History**<br>
 Eine Liste der aktuellen Versionen finden Sie in der [version history](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
