@@ -45,7 +45,13 @@ Es wird empfohlen, vor der Neuinstallation ein Test auf einer nichtproduktiven U
 
 **Backup**
 
-Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. Es wird empfohlen, von diesem Verzeichnis in regelmäßigen Abständen ein Backup zu machen. 
+Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. 
+
+<div class=“alert alert-warning”>
+ <i class=“fas fa-exclamation”></i> <strong>Warnung:</strong> <strong> Verlust von Daten.<strong><br> Führen Sie ein Backup des Config Ordners in regelmäßigen Abständen durch.
+</div>
+
+Es wird empfohlen, von diesem Verzeichnis in regelmäßigen Abständen ein Backup zu machen. 
 
 Das erlaubt es Ihnen, bei Bedarf problemlos wieder auf die vorige Version von Xtract Universal zu wechseln.
 
