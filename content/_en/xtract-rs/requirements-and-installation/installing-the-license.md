@@ -16,7 +16,7 @@ A demo is automatically installed if you install components. After having purcha
 ![XtractRS-No-License](/img/content/XtractRS-No-License.png){:class="img-responsive" }
 
 
-Click *Install*. A file dialog is shown to locate the regular Xtract.License.dll file. Restart the license manager to view the properly installed license. If you want to inspect your current license data, you may also click the Xtract RS Infos link located at the top of each component editor.
+Click *Install*. A file dialog is shown to locate the regular `XtractRSLicense.json` file. Restart the license manager to view the properly installed license. If you want to inspect your current license data, you may also click the Xtract RS Infos link located at the top of each component editor.
 
 
 ![XtractRS-Full-License](/img/content/XtractRS-Full-License.png){:class="img-responsive" }

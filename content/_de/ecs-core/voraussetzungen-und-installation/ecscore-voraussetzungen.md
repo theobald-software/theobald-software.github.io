@@ -16,7 +16,7 @@ old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-voraussetzungen
 - Windows 10
 - Windows Server 2012 R2 oder höher
 - IIS-Webserver Version 10 oder höher
-- .Net Framework 4.7.1 oder höher
+- `.NET Framework 4.7.2` oder höher
 
 **Benutzerrechte auf Windows** 
 

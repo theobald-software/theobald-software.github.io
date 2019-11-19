@@ -26,7 +26,7 @@ Das Feld I_SAPRL wird automatisch vom SAP-System gesetzt.
 Mit *F8* starten Sie den Baustein.
 
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Dieser Schritt setzt voraus, dass das SAP-System in bestimmten Bereichen (2 bis 3) veränderbar ist. , für weitere Infos siehe unseren folgenden Knowledge base Artikel.
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Dieser Schritt setzt voraus, dass das SAP-System in bestimmten Bereichen (2 bis 3) veränderbar ist.
 </div>
 
 
@@ -46,8 +46,6 @@ Gehen Sie wieder in die Transaktion SM59 und löschen Sie die Destination, die S
 **Gateway Service** ist in der Regel in der Form sapgwNN, wobei NN die ID ihres SAP-Systems ist, eine zweistellige Zahl zwischen 00 und 00.
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
-
-**Optional:** Anpassung der tRFC-Optionen der gerade erstellten RFC Destination. Rufen Sie in der Transaktion SM59  *Bearbeiten - TRFC-Optionen* auf, und setzen Sie den Parameter *Verbindungsversuche bis zur Aufgabe* auf 30 und *Pause zw. 2 Versuchen [min]* auf 2. 
 
 ### Schritt 5<br>
 Führen Sie den Baustein RSAS_RBWBCRL_STORE wie unten gezeigt aus. Er dient dazu, das neue Zielsystem zu aktivieren.

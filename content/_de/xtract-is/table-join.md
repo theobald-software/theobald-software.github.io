@@ -11,8 +11,11 @@ weight: 6
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=xtract-is-table-join
 ---
-**Wichtiger Hinweis: Ab [Xtract IS Version 5.0](https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html) ist die Table Join Komponente obsolet.** <br>
-**Bitte nutzen sie die Table Join Funktionalität der [neuen Table Komponente](./xtract-is-table).** 
+
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i>
+  <strong>Note:</strong> Ab Xtract IS Version <a href="https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html" class="alert-link">5.0</a> ist die Table Join Komponente obsolet.Bitte nutzen Sie die Table Join Funktionalität der <a href="./xtract-is-table" class="alert-link">neuen Table Komponente</a>
+</div>
 
 Die Table-Join Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join).  <br>
 
@@ -24,8 +27,9 @@ Die Komponente unterstützt darüber hinaus die Definition von Aggregat-Funktion
 
 Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](https://kb.theobald-software.com/sap/installation-of-the-function-module-z_xtract_is_table_join) auf der SAP-Seite. 
 
-*Bemerkung*: Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden. 
- 
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden.
+</div>
 
 ### SSIS-Version
 

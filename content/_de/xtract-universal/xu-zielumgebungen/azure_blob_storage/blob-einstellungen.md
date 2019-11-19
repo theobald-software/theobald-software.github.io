@@ -37,9 +37,11 @@ Bestehend aus Blöcken, analog zu Blob Type, und sind optimiert für Anhängevor
 **Block Blob**<br>
 Text- und Binärdaten bestehend aus Datenblöcken, die einzeln verwaltet werden können.
 
+#### Folder Path
 
+Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines Azure BLOB Storage Containers extrahiert werden soll.
+Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: Ordner/Unterordner1/Unterordner2/…
 
 Nach der erfolgreichen Extraktion finden Sie die Daten im Azure BLOB Storage.
 
 ![azure-blob-file-gz](/img/content/azure-blob-file-gz.png){:class="img-responsive"}
-
