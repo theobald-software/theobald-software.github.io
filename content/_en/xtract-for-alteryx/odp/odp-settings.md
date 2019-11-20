@@ -12,5 +12,5 @@ lang: en_GB
 
 {% include _content/en/odp/odp-settings-update_mode.md %} 
 {% include _content/en/odp/odp-settings-subscriptions.md %}
-{% include _content/en/odp/odp-settings-parameters.md %}  
-{% include _content/en/odp/odp-settings-filtering.md %} 
+{% include _content/en/odp/odp-settings-filtering.md %}
+{% include _content/en/odp/odp-settings-parameters.md %} 
