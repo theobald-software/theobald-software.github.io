@@ -8,3 +8,6 @@ You can assign one of the following data types to a parameter. The data types ca
 - Flag: This data type can only be used for SAP selection fields, which require an 'X' (true) or an '' (false) as input value.
 <br>
 
+If you have defined parameters, icons will appear next to the *Low* and *High* input fields. Those icons allow you to switch between entering actual input values and entering parameters.
+<br>
+![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}
