@@ -11,6 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=anysql-maestro-konfigurieren
 ---
 
+Das ist ein
 Diese kurze Anleitung zeigt, wie Sie AnySQL Maestro konfigurieren müssen, um auf Ihre Amazon Redshift Datenbank zugreifen zu können.<br>
 Sie können natürlich auch andere [DB Clients](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-using-workbench.html) verwenden. Die Einstellungen sollten zum Teil vergleichbar sein. 
 
@@ -27,7 +28,9 @@ Sie können natürlich auch andere [DB Clients](https://docs.aws.amazon.com/reds
 
 - Gehen Sie auf "Connection", wählen Sie "Use connection string" aus und klicken Sie anschließend auf "Build...".
 - Gehen Sie auf "Machine Data Source" und klicken Sie auf "New..." (Unter Umständen erscheint ein Pop-Up Fenster mit einer Warnung.
-  Dieses können Sie einfach mit einem Klick auf "Ok" schließen)
+  Dieses können Sie einfach mit einem Klick auf **[OK]** schließen)
+  
+  
 
 
 - Klicken Sie auf "Next" und wählen Sie "PostgreSQL Unicode", anschließend klicken Sie auf "Next" und im nächsten Fenster auf "Finish".
