@@ -1,9 +1,14 @@
-**Show Subscriptions**<br/>
-Click on Show Subscriptions to find information about the subscriber. That includes: 
-- Subscriber Name: The Subscriber Name is based on the name of the machine, where the extraction is running on. This means that extractions on different machines (unless the names are the same) will have different Subscriber Names and deltas. The product name is also included in the subscription name. This might be helpfut for monitoring in SAP and to avoid some confusion.
-- Last request timestamp
-- Creation timestamp 
-To delete the subscription click on the Delete icon on the right side. <br/><br/>
+**Show Subscriptions / Show active subscriptions**<br/>
+Click on the button *Show Subscriptions*/*Show active subscriptions* to display more details about the subscriber process:  
+- **Queue**: Shows the technical name of all subscriptions for a specific product (e.g. Xtract Universal).<br>
+A subscription is bound to a specific product and the ODP component the init was originally triggered from. An ODP data provider, such as 2LIS_02_ITM, can have multiple subscriptions. The subscription that refers to the ODP component at hand is marked with a red asterisks.
+- **Process**: Technical name of Subscription (see SAP transaction ODQMON)
+- **R. (number of requests)**: Number of executed delta requests
+- **Last request**: timestamp of last delta request
+- **Created**: timestamp of init request
+
+To delete the subscription click on the *dustbin* icon on the right hand side. <br/><br/>
+
 ![ODP Subscriber](/img/content/odp/odp-settings-02.png){:class="img-responsive"}
 
 
