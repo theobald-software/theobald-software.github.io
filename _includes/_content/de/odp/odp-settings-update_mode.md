@@ -4,7 +4,7 @@ zeigt den Namen des Quellobjekts an
 **Context**<br/>
 zeigt den Kontext des ODP-Anbieters an 
 
-**Typ**<br/>
+**Type**<br/>
 zeigt den Datentyp des Quellobjekts an.
 
 **Update Mode** 
