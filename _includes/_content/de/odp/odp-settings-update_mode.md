@@ -27,8 +27,7 @@ zeigt den Datentyp des Quellobjekts an.
 **Full update**:<br/>
 extrahiert die Daten im Full-Modus.<br/>
 <div class="alert alert-info">
- <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Option <em>Delta update</em> ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt.</div><br/>
-  
+ <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Option <em>Delta update</em> ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt.</div>
 **Delta update**: <br/>
 führt eine Initialisierung aus, wenn für gegebenen Abonnenten keine Initialisierung vorhanden ist. 
 Führt ein Delta-Update aus, wenn eine Delta-Initialisierung für diesen Abonnenten vorhanden ist.
