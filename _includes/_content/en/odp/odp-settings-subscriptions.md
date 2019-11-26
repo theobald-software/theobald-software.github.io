@@ -1,3 +1,4 @@
+### Subscriptions
 To display more details about the subscriber process, click on **Show Subscriptions / Show active subscriptions** at the top of the  “Define data source for SAP ODP” window:
 <br/>
 
