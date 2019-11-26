@@ -6,11 +6,11 @@ Um Informationen über den Abonnenten zu erhalten, klicken Sie auf **Show Subscr
 
 ![ODP-Abonnent](/img/content/odp/odp-settings-02.png){:class="img-responsive"}<br/>
 
--**Queue:** Technischer Name aller Abonnements eines bestimmten Xtract-Produkts von Theobald Software (z.B. Xtract Universal). <br/>
+- **Queue:** Technischer Name aller Abonnements eines bestimmten Xtract-Produkts von Theobald Software (z.B. Xtract Universal). <br/>
 Ein Abonnement ist an ein bestimmtes Produkt und die ODP-Komponente gebunden, aus der die init ursprünglich gestartet wurde. 
 Ein ODP-Datenanbieter, wie beispielsweise 2LIS_02_ITM, kann mehrere Abonnements haben. Das Abonnement, das sich auf die vorliegende ODP-Komponente bezieht, ist mit einem roten Sternchen gekennzeichnet.<br/>
--**Process:** Technischer Name des Abonnements<br/>
--**R.(number of requests)**: Anzahl der ausgeführten Delta-Anfragen<br/>
--**Last request:** Zeitstempel der letzten Anforderung<br/>
--**Created:** Erstellungszeitstempel <br/>
+- **Process:** Technischer Name des Abonnements<br/>
+- **R.(number of requests)**: Anzahl der ausgeführten Delta-Anfragen<br/>
+- **Last request:** Zeitstempel der letzten Anforderung<br/>
+- **Created:** Erstellungszeitstempel <br/>
 Um das Abonnement zu löschen, klicken Sie auf das *Mülltonnensymbol* auf der rechten Seite des Fensters. 
