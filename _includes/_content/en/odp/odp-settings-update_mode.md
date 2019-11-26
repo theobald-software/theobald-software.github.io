@@ -27,8 +27,7 @@ shows the data type of the source object
 extracts the data in full mode <br/>
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> The <em>Delta update</em> option is ready for input only if the ODP provider in the SAP source system supports delta updates.
-</div><br/>
-
+</div>
 **Delta update**:<br/>
 runs a delta initialization, in case there 
 is none for this subscriber. Runs a delta update, in case there already is a delta initialization for this subscriber. <br/>
