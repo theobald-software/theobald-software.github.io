@@ -1,6 +1,6 @@
 **Edit Parameter**<br/>
 
-Die Funktion *Edit Parameters* ermöglicht eine Definition der Parameter, die als Platzhalter für Datenselektionen verwendet werden können, s.u. Abschnitt *Filterung*. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.
+Die Funktion *Edit Parameters* ermöglicht eine Definition der Parameter, die als Platzhalter für Datenselektionen verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.
 Sie können einen der folgenden Datentypen einem Parameter zuweisen. Die Datentypen können mit den SAP-Datentypen übereinstimmen. 
 - String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
 - Integer: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
