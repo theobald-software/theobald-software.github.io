@@ -46,4 +46,3 @@ A subscription is deleted if the error message "Illegal change in selection para
 re-runs the last delta update 
 
 
-
