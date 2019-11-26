@@ -1,4 +1,13 @@
-**Filterung**<br/>
-In den Hauptfenstern können Sie neben jedem Feld auf *Edit* klicken, um einen Filter zu definieren.
-In den eckigen Klammern links neben dem Feldnamen, z.B.[1], sehen Sie die Anzahl der definierten Filter. <br/>
-![ODP ABAP CDS View Filter](/img/content/odp/odp-component-cds-costcenter-03-filter.png){:class="img-responsive"}
+### Filterung - Setzen dynamischer Selektionsfilter<br/>
+Filterungsoptionen werden über das Fenster "Define data source for SAP ODP” unter Unterabschnitt **Fields** aufgerufen. <br/>
+<br/>
+![ODP Fields](/img/content/odp/odp-fiter.png){:class="img-responsive"} <br/>
+Die Anzahl der definierten Filter, z.B.[1], wird in den eckigen Klammern links neben dem Feldnamen unter **Selections** angezeigt.<br/>
+Wählen Sie unter **Selections** ein Feld aus und klicken Sie auf *Edit*, um einen Filter zu bearbeiten.<br/>
+Es erscheint das Fenster "Edit selections". 
+<br/>
+![ODP ABAP CDS View Filter](/img/content/odp/odp-component-cds-costcenter-03-filter.png){:class="img-responsive"}<br/>
+Innerhalb des Fensters "Edit selection" können Sie einen neuen Filter definieren oder einen vorhandenen bearbeiten oder löschen.
+
+
+
