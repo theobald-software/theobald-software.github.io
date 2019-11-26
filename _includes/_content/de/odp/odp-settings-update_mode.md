@@ -6,9 +6,9 @@ Es gibt zwei Wege zum Öffnen des Fensters "Define data source for SAP ODP":
 - Wählen Sie eine existierende OPD-Extraktion und Klicken Sie auf **Edit**.<br/>
 
 Die Einstellungen befinden sich auf der linken Seite des Fensters "Define data source for SAP ODP" in den Unterabschnitten:<br/>
-- Operational Data Provider
-- Additional info
-- Update mode
+- Operational Data Provider (1)
+- Additional info (2)
+- Update mode (3)
 <br/>
 ![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
 <br/>
@@ -27,7 +27,7 @@ zeigt den Datentyp des Quellobjekts an.
 **Full update**:<br/>
 extrahiert die Daten im Full-Modus.<br/>
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Option **Delta update** ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt.</div><br/>
+ <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Option <em>Delta update</em> ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt.</div><br/>
   
 **Delta update**: <br/>
 führt eine Initialisierung aus, wenn für gegebenen Abonnenten keine Initialisierung vorhanden ist. 
