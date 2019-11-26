@@ -3,7 +3,8 @@ The settings can be changed in the window "Define data source for SAP ODP".
 There are two ways to open the "Define data source for SAP ODP" window:
 - Create a new extraction (see [Define an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started-table/define-a-table-extraction) with the *table* component as an example)
 - Choose an existing ODP extraction and click **Edit**.<br/>
-The settings are located the left side of the window "Define data source for SAP ODP" under subsections:
+
+The settings are located the left side of the window "Define data source for SAP ODP" under subsections:<br/>
 - Operational Data Provider
 - Additional info
 - Update mode
@@ -22,11 +23,13 @@ shows the ODP provider context
 shows the data type of the source object
 
 ### Update Mode <br/>
-**Full update**: extracts the data in full mode <br/>
+**Full update**: <br/>
+extracts the data in full mode <br/>
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> The <em>Delta update</em> option is ready for input only if the ODP provider in the SAP source system supports delta updates.
 </div> 
-**Delta update**: runs a delta initialization, in case there 
+**Delta update**:<br/>
+runs a delta initialization, in case there 
 is none for this subscriber. Runs a delta update, in case there already is a delta initialization for this subscriber. <br/>
 - **On delta initialization** <br/>
 checking the *Extract data* checkbox, allows extracting data when running a delta initialization. 
