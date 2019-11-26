@@ -2,7 +2,7 @@ Der folgende Abschnitt gibt einen Überblick über die
  Einstellungen, die für die ODP-Komponente geändert werden können.
 Die Einstellungen können im Fenster "Define data source for SAP ODP" geändert werden. 
 Es gibt zwei Wege zum Öffnen des Fensters "Define data source for SAP ODP":
-- Leben Sie eine neue Extraktion an (s. [Eine neue Extraktion anlegen](https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table/eine-neue-extraktion-anlegen) am Beispiel einer Tabelle).
+- Legen Sie eine neue Extraktion an (s. [Eine neue Extraktion anlegen](https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table/eine-neue-extraktion-anlegen) am Beispiel einer Tabelle).
 - Wählen Sie eine existierende OPD-Extraktion und Klicken Sie auf **Edit**.<br/>
 Die Einstellungen befinden sich auf der linken Seite des Fensters "Define data source for SAP ODP" in den Unterabschnitten:
 - Operational Data Provider
@@ -23,13 +23,15 @@ zeigt den Kontext des ODP-Anbieters an
 zeigt den Datentyp des Quellobjekts an.
 
 ### Update Mode <br/>
-**Full update**: extrahiert die Daten im Full-Modus.<br/>
+**Full update**:<br/>
+extrahiert die Daten im Full-Modus.<br/>
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Option **Delta update** ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt.</div><br/>
-**Delta update**:führt eine Initialisierung aus, wenn für gegebenen Abonnenten keine Initialisierung vorhanden ist. 
+**Delta update**: <br/>
+führt eine Initialisierung aus, wenn für gegebenen Abonnenten keine Initialisierung vorhanden ist. 
 Führt ein Delta-Update aus, wenn eine Delta-Initialisierung für diesen Abonnenten vorhanden ist.
 - **On delta initialization** <br/>
-Aktivieren des Kontrollkästchens *Extract data* ermöglicht eine Datexextraktion während einer laufenden Delta-Initialisierung.
+Aktivieren des Kontrollkästchens *Extract data* ermöglicht eine Datenextraktion während einer laufenden Delta-Initialisierung.
 Bei einem nicht angekreuzten Kontrollkästchen würde keine Datenextraktion während einer Delta-Initialisierung stattfinden.
 - **Auto-sync subscription**<br/>
 ermöglicht das Löschen des bestehenden Abonnements und erstellt bei Bedarf ein neues.
