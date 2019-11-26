@@ -27,12 +27,13 @@ zeigt den Datentyp des Quellobjekts an.
 extrahiert die Daten im Full-Modus.<br/>
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Option **Delta update** ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt.</div><br/>
+  
 **Delta update**: <br/>
 führt eine Initialisierung aus, wenn für gegebenen Abonnenten keine Initialisierung vorhanden ist. 
 Führt ein Delta-Update aus, wenn eine Delta-Initialisierung für diesen Abonnenten vorhanden ist.
 - **On delta initialization** <br/>
 Aktivieren des Kontrollkästchens *Extract data* ermöglicht eine Datenextraktion während einer laufenden Delta-Initialisierung.
-Bei einem nicht angekreuzten Kontrollkästchen würde keine Datenextraktion während einer Delta-Initialisierung stattfinden.
+Bei einem nicht angekreuzten Kontrollkästchen würde keine Datenextraktion während einer Delta-Initialisierung stattfinden.<br/>
 - **Auto-sync subscription**<br/>
 ermöglicht das Löschen des bestehenden Abonnements und erstellt bei Bedarf ein neues.
 Jede Extraktion hat eine interne ID, die Teil des Abonnenten ist. 
