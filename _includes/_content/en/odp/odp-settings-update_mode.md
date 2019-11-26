@@ -30,7 +30,7 @@ shows the data type of the source object
 is none for this subscriber. Runs a delta update, in case there already is a delta initialization for this subscriber. <br/>
 - **On delta initialization** <br/>
 checking the *Extract data* checkbox, allows extracting data when running a delta initialization. 
-Leaving the checkbox unchecked runs a delta initialization without extracting data. 
+Leaving the checkbox unchecked runs a delta initialization without extracting data. <br/>
 - **Auto-sync subscription**<br/>
 allows deletion of the existing subscription and creates a new one if required.
 Each extraction has an internal ID, which is part of the subscriber. 
