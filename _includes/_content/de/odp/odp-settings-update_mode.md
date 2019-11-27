@@ -10,6 +10,7 @@ Die Einstellungen befinden sich auf der linken Seite des Fensters "Define data s
 - Additional info (2)
 - Update mode (3)
 <br/>
+<br/>
 ![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
 <br/>
 
