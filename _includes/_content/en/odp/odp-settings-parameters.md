@@ -1,7 +1,7 @@
 ### Edit Parameters <br/>
 To display editing function for the parameters, depending on the product, click on **Edit Parameters** either at the *top* or at the *bottom* of the window “Define data source for SAP ODP”. <br/>
 ![ODP Edit parameters](/img/content/odp/odp-settings-edit-parameters1.png){:class="img-responsive"}<br> 
-The window "Edit Runtime Parameters" appears.<br> 
+The window "Edit Runtime Parameters" opens.<br> 
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
 1. Click on **Add** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
 This allows you to dynamically set filters at runtime.
