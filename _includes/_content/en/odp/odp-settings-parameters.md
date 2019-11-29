@@ -3,10 +3,10 @@ To display editing function for the parameters, depending on the product, click 
 ![ODP Edit parameters](/img/content/odp/odp-settings-edit-parameters1.png){:class="img-responsive"}<br> 
 The window "Edit Runtime Parameters" appears.<br> 
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
-Click **Add** to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
+1. Click on **Add** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
 This allows you to dynamically set filters at runtime.
 
-You can assign one of the following data types (4) to a parameter. The data types can, but don't need to correlate to SAP data types. 
+2. Click on the drop-down menu (2) and assign one of the following data types to a parameter. The data types can, but don't need to correlate to SAP data types. 
 - String: This data type can be used for any type of SAP selection field.
 - Integer: This data type can be used for numeric SAP selection fields.
 - Flag: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.

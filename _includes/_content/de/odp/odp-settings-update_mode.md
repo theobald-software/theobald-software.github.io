@@ -6,9 +6,9 @@ Es gibt zwei Wege zum Öffnen des Fensters "Define data source for SAP ODP":
 - Wählen Sie eine existierende OPD-Extraktion und Klicken Sie auf **Edit**.<br/>
 
 Die Einstellungen befinden sich auf der linken Seite des Fensters "Define data source for SAP ODP" in den Unterabschnitten:<br/>
-- Operational Data Provider (1)
-- Additional info (2)
-- Update mode (3)
+- Operational Data Provider
+- Additional info
+- Update mode
 <br/>
 <br/>
 ![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
