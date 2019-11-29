@@ -9,12 +9,9 @@ The window "Table Lookup" opens. <br/>
 3. Click on the search button (2). <br/>
 Search results appear in the preview window.
 4. Select the desired table (3) and click **OK** (4). <br>
-
 The application now returns to the main window "Define data source for SAP Tables". <br>
-Columns of the table retrieved from SAP are displayed in the subsection **Fields** . <br>
+Columns of the table retrieved from SAP are displayed in the subsection **Fields**. <br>
 You can select either all or only individual columns. <br>
-
-![Table-Form](/img/content/felder_auswählen.png){:class="img-responsive"}
-
+![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
 5. Click **OK** to confirm and save the extraction in the repository, i.e. on the server.
 

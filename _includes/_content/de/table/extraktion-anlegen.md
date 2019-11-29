@@ -1,18 +1,17 @@
-Nun öffnet sich der Tabellen-Dialog zur Definition von einfachen Tabellen-Extraktionen oder auch Tabellen-Joins. Im folgenden Beispiel soll eine einzelne Tabelle extrahiert werden.
+Das Fenster "Define data source for SAP Tables" wird geöffnet. <br>
+In diesem Fenster können Sie einfache Tabellenextraktionen definieren oder Tabellen für Extraktionen zusammenfügen (Table Joins). Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
 
-Klicken Sie auf *Add*, um eine Tabelle hinzuzufügen.
-
-![New-Table-Extraction](/img/content/tabelle_suchen.png){:class="img-responsive"}
-
-Im Suchen-Dialog geben Sie den Namen der zu extrahierenden Tabelle ein, klicken auf den *Suchen*-Button, wählen die gewünschte Tabelle aus und bestätigen Sie mit *OK*.
-
-Wie Sie erkennen können, ist die Eingabe einer Wildcard (*) ebenfalls in der Suchleiste möglich.
-
-![Look-Up-Table](/img/content/tabelle_auswählen.png){:class="img-responsive"}
-
-Die Anwendung kehrt nun zurück zum Hauptdialog. Die Spalten der Tabelle wurden aus SAP abgerufen und werden in der Box rechts unter "Fields" angezeigt. <br>
-Es können entweder alle oder nur einzelne Spalten selektiert werden. <br>
-
-![Table-Form](/img/content/felder_auswählen.png){:class="img-responsive"}
-
-Bestätigen Sie mit OK, um die Extraktion im Repository - also auf dem Server - zu speichern.
+1. Klicken Sie auf **Add**, um eine Tabelle hinzuzufügen.<br>
+![Add-New-Table](/img/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
+Das Fenster "Table Lookup" wird geöffnet.<br/>
+![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
+2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden Tabelle ein. <br>
+**Tipp:** Die Verwendung des Wildcard-Operators (*) ist in der Suchleiste möglich.<br>
+3. Klicken Sie auf den Suche-Button (2). <br>
+Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
+4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **OK** (4). <br>
+Die Anwendung kehrt zum Hauptfenster "Define data source for SAP Tables" zurück. <br>
+Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Felder** angezeigt. <br>
+Sie können entweder alle oder nur einzelne Spalten auswählen. <br>
+![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
+5. Klicken Sie auf **OK**, um die Extraktion zu bestätigen und im Repository, d.h. auf dem Server, zu speichern.
