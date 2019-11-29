@@ -15,7 +15,7 @@ lang: en_GB
 1. In the main window of the Xtract Universal Designer. Navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
 ![XU-Create-Connection-1](/img/content/server_manage_sources.png){:class="img-responsive"}<br>
 The window "Manage Sources" opens. <br>
-![XU-Create-Connection-2](/img/content/xu_manage_sources.png){:class="img-responsive"}
+![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
 2. Click on **Add**. The window "SAP Source Details" opens. <br>
 ![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}<br>
 3. Enter a freely selectable connection name in the **Name** (1) field. 
@@ -39,12 +39,11 @@ The window "Manage Sources" opens. <br>
 ### To create an extraction
 The following example shows the creation of an extraction using "SAP Table or View" component.<br>
 1. In the main window of the Xtract Universal Designer click on **New** (1). <br>
-![Create-New-Table-Extraction](/img/content/xu_extraction_anlegen.png){:class="img-responsive"}<br>
+![Add-Extraction](/img/content/xu/xu_tabellen_extraktion_anlegen.png){:class="img-responsive"} <br>
 The window "Create Extraction" opens.
-2. Field **Source** states the SAP connection. Choose the SAP connection you created previously from the drop-down menu (2).
+2. The ield **Source** states the SAP connection. Choose the SAP connection you created previously from the drop-down menu (2).
 3. Enter a freely selectable, unique name for your extraction (3).
 4. Choose the type of extraction. In the given example: **SAP Table or View** (4). <br>
-![Add-Extraction](/img/content/xu/xu_tabellen_extraktion_anlegen.png){:class="img-responsive"} <br>
 5. Click on **OK** (5) to confirm.
 
 {% include _content/en/tables/define-a-table-extraction.md  %}
