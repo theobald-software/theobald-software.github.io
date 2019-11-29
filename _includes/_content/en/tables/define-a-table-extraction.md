@@ -1,6 +1,6 @@
-The window "Define data source for SAP Tables" opens. In this window you can define simple table extractions or join tables for extractions. In the following example, a single table is extracted. <br>
-1. Click *Add* to add a table.
-
+The window "Define data source for SAP Tables" opens. 
+In this window you can define simple table extractions or join tables for extractions. In the following example, a single table is extracted. <br>
+1. Click **Add** to add a table.<br>
 ![Add-New-Table](/img/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
 The window "Table Lookup" opens. <br/>
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
