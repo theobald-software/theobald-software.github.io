@@ -3,7 +3,7 @@ Der folgende Abschnitt gibt einen Überblick über die
 Die Einstellungen können im Fenster "Define data source for SAP ODP" geändert werden. 
 Es gibt zwei Wege zum Öffnen des Fensters "Define data source for SAP ODP":
 - Legen Sie eine neue Extraktion an (s. [Eine neue Extraktion anlegen](https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table/eine-neue-extraktion-anlegen) am Beispiel einer Tabelle).
-- Wählen Sie eine existierende OPD-Extraktion und Klicken Sie auf **Edit**.<br/>
+- Wählen Sie eine existierende OPD-Extraktion im Hauptfenster des Designers und klicken Sie auf **[Edit]**.<br/>
 
 Die Einstellungen befinden sich auf der linken Seite des Fensters "Define data source for SAP ODP" in den Unterabschnitten:<br/>
 - Operational Data Provider

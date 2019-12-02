@@ -41,13 +41,13 @@ Das Fenster "Manage Sources" wird geöffnet.<br>
 
 ### Extraktion anlegen
 Das folgende Beispiel zeigt die Erstellung einer Extraktion mit der Komponente "SAP Table or View".
-1. Im Hauptfenster des Xtract Universal Designers klicken Sie auf **Neu** (1).
-Das Fenster "Create Extraction" wird geöffnet.
+1. Im Hauptfenster des Xtract Universal Designers klicken Sie auf **[Neu]** (1).
+Das Fenster "Create Extraction" wird geöffnet.<br>
 ![Create-New-Table-Extraction](/img/content/xu_extraction_anlegen.png){:class="img-responsive"}<br>
 2. Das Feld **Source** gibt die SAP-Verbindung an. Wählen Sie die zuvor angelegte SAP-Verbindung aus dem Dropdown-Menü (2).
 3. Geben Sie einen frei wählbaren, eindeutigen Namen für Ihre Extraktion ein (3).
-4. Wählen Sie den Typ der Extraktion. Im aufgeführten Beispiel: **SAP-Tabelle oder View** (4). 
+4. Wählen Sie den Typ der Extraktion. Im aufgeführten Beispiel: **SAP-Tabelle oder View** (4). <br>
 ![Add-Extraction](/img/content/xu/xu_tabellen_extraktion_anlegen.png){:class="img-responsive"} <br>
-5. Klicken Sie auf **OK** zum Bestätigen.
+5. Klicken Sie auf **[OK]** zum Bestätigen.
 
 {% include _content/de/table/extraktion-anlegen.md  %}

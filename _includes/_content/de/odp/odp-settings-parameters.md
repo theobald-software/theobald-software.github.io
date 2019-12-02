@@ -5,7 +5,7 @@ Um die Bearbeitungsfunktion für die Parameter anzuzeigen, klicken Sie je nach P
 ![ODP Edit parameters](/img/content/odp/odp-settings-edit-parameters1.png){:class="img-responsive"}<br> 
 Es erscheint das Fenster "Edit Runtime Parameters".<br>
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
-1. Klicken Sie auf **Add** (1), um Parameter zu definieren, die als Platzhalter für die Datenselektionen verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.
+1. Klicken Sie auf **[Add]** (1), um Parameter zu definieren, die als Platzhalter für die Datenselektionen verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.
 2. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen können mit den SAP-Datentypen übereinstimmen. 
 -  String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
 - Integer: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
