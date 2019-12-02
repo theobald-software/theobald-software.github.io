@@ -30,8 +30,7 @@ Das Fenster "Manage Sources" wird geöffnet.<br>
 
 6. Klicken Sie auf **Verbindung testen** (5), um die erfolgreiche Verbindung zu testen. <br>
 Das Bestätigungsfenster wird geöffnet. <br>
-Die SAP-Verbindung ist erfolgreich aufgebaut.<br>
- 
+Die SAP-Verbindung ist erfolgreich aufgebaut.<br> 
 ![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
 
 #### Angelegte SAP-Verbindung überprüfen
