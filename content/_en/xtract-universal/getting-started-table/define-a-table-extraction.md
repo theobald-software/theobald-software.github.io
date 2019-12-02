@@ -17,7 +17,7 @@ lang: en_GB
 The window "Manage Sources" opens. <br>
 ![XU-Create-Connection-2](/img/content/xu_manage_source.png){:class="img-responsive"}
 
-2. Click on **Add**. The window "SAP Source Details" opens. <br>
+2. Click on **[Add]**. The window "SAP Source Details" opens. <br>
 ![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}<br>
 3. Enter a freely selectable connection name in the **Name** (1) field. 
 4. Enter the SAP connection details (2). 
@@ -28,7 +28,7 @@ The window "Manage Sources" opens. <br>
 - User (User) and password (Password) (4) <br>
 
 **Tip:** If you don't know the parameters, look in your SAP GUI or ask your SAP Basis. <br>
-6. Click on **Test Connection** (5) to test the successful connection. <br>
+6. Click on **[Test Connection]** (5) to test the successful connection. <br>
 The confirmation window opens. <br>
 The SAP connection is set up successfully.<br>
 ![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
@@ -46,7 +46,7 @@ The window "Create Extraction" opens. <br>
 2. Field **Source** states the SAP connection. Choose the SAP connection you created previously from the drop-down menu (2).
 3. Enter a freely selectable, unique name for your extraction (3).
 4. Choose the type of extraction. In the given example: **SAP Table or View** (4). <br>
-5. Click on **OK** (5) to confirm.
+5. Click on **[OK]** (5) to confirm.
 
 {% include _content/en/tables/define-a-table-extraction.md  %}
 

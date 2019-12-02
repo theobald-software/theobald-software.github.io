@@ -16,7 +16,7 @@ lang: de_DE
 Das Fenster "Manage Sources" wird geöffnet.<br>
 ![XU-Create-Connection-2](/img/content/xu_manage_source.png){:class="img-responsive"}<br>
 
-2. Klicken Sie auf **Add**. Das Fenster "SAP Source Details" wird geöffnet.<br>
+2. Klicken Sie auf **[Add]**. Das Fenster "SAP Source Details" wird geöffnet.<br>
 ![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}<br>
 3. Geben Sie im Feld **Name** (1) einen frei wählbaren Verbindungsnamen ein. 
 4. Geben Sie die SAP-Verbindungsdaten ein (2). <br>
@@ -28,7 +28,7 @@ Das Fenster "Manage Sources" wird geöffnet.<br>
 
 **Tip:** Wenn Sie die Parameter nicht kennen, schauen Sie in Ihrer SAP-GUI nach oder fragen Sie Ihre SAP-Basis. <br>
 
-6. Klicken Sie auf **Verbindung testen** (5), um die erfolgreiche Verbindung zu testen. <br>
+6. Klicken Sie auf **[Verbindung testen]** (5), um die erfolgreiche Verbindung zu testen. <br>
 Das Bestätigungsfenster wird geöffnet. <br>
 Die SAP-Verbindung ist erfolgreich aufgebaut.<br> 
 ![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
