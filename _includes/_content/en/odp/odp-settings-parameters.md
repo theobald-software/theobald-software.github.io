@@ -16,3 +16,5 @@ If you have defined parameters, icons appear next to the *Low* and *High* input 
 Click the icons to switch between entering actual input values and entering parameters.
 <br>
 ![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}
+
+If you have assigned parameters as selection filters, you are prompted to populate the parameters with actual values when clicking the *Load live preview* button.
