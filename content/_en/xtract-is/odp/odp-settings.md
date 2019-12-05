@@ -15,4 +15,4 @@ lang: en_GB
 {% include _content/en/odp/odp-settings-filtering.md %} 
 {% include _content/en/odp/odp-settings-parameters.md %} 
 
-Parameters will appear as properties of the Xtract ODP object as well as the SSIS Data Flow. They can be populated at SSIS package runtime using standard SSIS functionality, such as expressions, variables, etc.
+Parameters appear as properties of the Xtract ODP object as well as the SSIS Data Flow. The parameters be populated at SSIS package runtime using standard SSIS functionality, such as expressions, variables, etc.
