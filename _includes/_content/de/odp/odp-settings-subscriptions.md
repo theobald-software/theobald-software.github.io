@@ -12,5 +12,5 @@ Process| Technischer Name des Abonnements
 R.(number of requests) | Anzahl der ausgeführten Delta-Anfragen
 Last request |  Zeitstempel der letzten Anforderung
 Created | Erstellungszeitstempel 
-Um das Abonnement zu löschen, klicken Sie auf das *Mülltonnensymbol* auf der rechten Seite des Fensters. 
+Um das Abonnement zu löschen, klicken Sie auf das Mülltonnensymbol auf der rechten Seite des Fensters. 
 

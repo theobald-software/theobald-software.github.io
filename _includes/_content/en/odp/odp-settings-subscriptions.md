@@ -20,5 +20,5 @@ R. (number of requests) | Number of executed delta requests
 Last request | Timestamp of the last delta request 
 Created | Timestamp of the init request 
 
-To delete a subscription click on the *dustbin* icon on the right side of the window.
+To delete a subscription click on the dustbin icon on the right side of the window.
 

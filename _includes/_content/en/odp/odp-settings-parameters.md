@@ -12,15 +12,13 @@ This allows you to dynamically set filters at runtime.<br>
 - Flag: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.
 <br>
 4. Click **[OK]** (3) to confirm.
-5. To define the parameters, choose an item in the subsection **Fields** and click **[Edit]** (4). <br> 
-The window "Edit Selections" opens.<br> 
-6. Click **[Add]** (5). <br>
-Filtering option fields open.
+5. To define the parameters, choose an item in the subsection **Fields** and click **[Edit]** (4). The window "Edit Selections" opens.<br> 
+6. Click **[Add]** (5). Filtering option fields open.
 7. Click the icon next to the **Low** and **High** input fields (6).
 If there are defined parameters, icon switches to the parameter icon. <br>
 Clicking the icons switches the option between entering actual input values and entering defined parameters.
 <br>
 ![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}<br>
-7. To check the defined parameters, click **Load live preview**. <br>
+7. To check the defined parameters, click **[Load live preview]**. <br>
 If you have assigned parameters as selection filters, you are prompted to populate the parameters with actual values. <br>
 ![ODP provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}

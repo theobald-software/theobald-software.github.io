@@ -1,7 +1,6 @@
 ### Parameter bearbeiten - Edit parameters <br/>
 
 1. Um die Bearbeitungsfunktion für die Parameter anzuzeigen, klicken Sie je nach Produkt entweder *oben* oder *unten* auf **Edit parameter** im Fenster “Define data source for SAP ODP”.<br> 
-
 ![ODP Edit parameters](/img/content/odp/odp-settings-edit-parameters1.png){:class="img-responsive"}<br> 
 Es erscheint das Fenster "Edit Runtime Parameters".<br>
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
