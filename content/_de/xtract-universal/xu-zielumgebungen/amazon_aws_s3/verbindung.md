@@ -34,7 +34,7 @@ Prüft, ob die Kombination aus Bucket und Region korrekt ist und der Bucket von 
 
 **Server-side encryption**<br>
 Verschlüsselt die Datei [serverseitig](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html), nachdem Sie nach S3 hochgeladen wurden.<br>
-HINWEIS: Hier wird nicht die Transportverschlüsselung zwischen Xtract Universal und S3 eingestellt. 
+HINWEIS: Diese Einstellungen beziehen sich nicht auf die Transportverschlüsselung zwischen Xtract Universal und S3. Transportverschlüsselung zwischen Xtract Universal und S3 ist standardmäßig aktiviert. 
 
 - **None**
    Keine serverseitige Verschlüsselung der Daten.
