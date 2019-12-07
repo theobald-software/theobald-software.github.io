@@ -10,6 +10,9 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=voraussetzungen3
 ---
+{: .box-warning} This is a warning box.
+
+{: .box-note} This is a notification box, we can put anything, including markup in here.
 
 Voraussetzung für die Nutzung der Vertica Destination ist die Installation des ADO.NET Treibers für HP Vertica.
 
