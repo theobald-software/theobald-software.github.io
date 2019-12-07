@@ -10,19 +10,17 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=voraussetzungen3
 ---
-{: .box-warning} 
-This is a warning box.
+Voraussetzung für die Nutzung der Vertica Destination ist die Installation des ADO.NET Treibers für HP Vertica.
 
 {: .box-note} 
-This is a notification box, we can put anything, including markup in here.
-
-Voraussetzung für die Nutzung der Vertica Destination ist die Installation des ADO.NET Treibers für HP Vertica.
+**ACHTUNG**: Hierzu müssen Sie Xtract Universal als Administrator ausführen.
 
 Den Treiber können Sie [hier](https://www.vertica.com/client-drivers/) herunterladen.
 
-Nach erfolgreicher Installation des Treibers können Sie die benötigte Vertica.Data.dll in den Destination Details der Vertica Destination auswählen.<br>
-**ACHTUNG**: Hierzu müssen Sie Xtract Universal als Administrator ausführen.
+Nach erfolgreicher Installation des Treibers können Sie die benötigte dll Datei in den Destination Details der Vertica Destination auswählen.<br>
 
-Anschließend auf Save und *Close* klicken.
+`Vertica installation Folder/ADO.NET/Vertica.Data.dll`
+
+Anschließend auf **[Save]** und **[Close]** klicken.
 
 ![XU_Vertica_driver](/img/content/XU_Vertica_driver.png){:class="img-responsive"}
