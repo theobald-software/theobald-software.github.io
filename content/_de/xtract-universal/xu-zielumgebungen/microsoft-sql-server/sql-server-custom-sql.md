@@ -62,7 +62,7 @@ Erstellen Sie dafür eine SQL Tabelle nach folgenden Beispiel:
 CREATE TABLE [dbo].[ExtractionStatistics](
 	[TableName] [nchar](50) NULL,
 	[RowsCount] [int] NULL,
-	[Timestamp] [nchar](50) NULL,
+	[Datestamp] [nchar](50) NULL,
 	[RunState] [nchar](50) NULL
 ) ON [PRIMARY]
 GO
@@ -75,19 +75,14 @@ INSERT INTO [ExtractionStatistics]
 (
      [TableName], 
      [RowsCount], 
-     [Timestamp],
+     [Datestamp],
      [RunState]
 )
 VALUES
 (
      '#{Extraction.TableName}#', 
      '#{Extraction.RowsCount}#',
-     '#{Extraction.Timestamp}#',
+     '#{Extraction.Datestamp}#',
      '#{Extraction.RunState}#'
 );
 ```
-
-
-
-
-
