@@ -3,7 +3,7 @@ Filtering options are located in the window "Define data source for SAP ODP” u
 ![ODP Fields](/img/content/odp/odp-fiter.png){:class="img-responsive"}
 
 The number of defined filters, e.g. [1], is displayed in the square brackets to the left of the field name under **Selections**.<br/>
-Choose a field under **Selections** and click on *Edit* to define a filter.<br/>
+Choose a field under **Selections** and click **[Edit]** to define a filter.<br/>
 The window "Edit selection" opens. 
 <br/>
 ![ODP ABAP CDS View Filter](/img/content/odp/odp-component-cds-costcenter-03-filter.png){:class="img-responsive"}

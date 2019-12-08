@@ -35,7 +35,7 @@ Validates the right combination of bucket and region. Validates that the bucket 
 
 **Server-side encryption**<br>
 Encrypts the data after the data has been uploaded to S3.<br>
-NOTE: This is no transport encyption between Xtract Universal and S3. 
+NOTE: This setting does not relate to transport encyption between Xtract Universal and S3. By default, the channel for sending data to S3 is always encrypted. 
 
 - **None**<br>
 Sever sided encryption of data not active.
