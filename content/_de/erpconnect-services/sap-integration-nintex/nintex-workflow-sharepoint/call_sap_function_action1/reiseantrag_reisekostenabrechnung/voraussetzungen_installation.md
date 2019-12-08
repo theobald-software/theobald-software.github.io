@@ -21,7 +21,7 @@ Die Installation bzw. Implementierung der beiden Szenarien beinhaltet folgende S
 
 **Dateien zum Herunterladen**
 
-Folgende Dateien zur Installation der Szenarien finden Sie in dieser [ZIP](https://my.theobald-software.com/files/TravelScenarioFiles.zip)-Datei. 
+Folgende Dateien zur Installation der Szenarien finden Sie in dieser [ZIP](https://cdn-files.theobald-software.com/help/TravelScenarioFiles.zip)-Datei. 
 
 - SharePoint-Listen 
 - Nintex User Defined Actions

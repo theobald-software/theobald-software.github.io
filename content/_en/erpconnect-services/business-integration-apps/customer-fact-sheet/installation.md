@@ -14,7 +14,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=cfs-installation
 
 **Download**
 
-You can download the installation files [here](https://my.theobald-software.com/files/ECS/Theobald.CustomerFactsheet.zip). 
+You can download the installation files [here](https://cdn-files.theobald-software.com/help/ECS/Theobald.CustomerFactsheet.zip). 
 
 The following files are delivered: 
 
