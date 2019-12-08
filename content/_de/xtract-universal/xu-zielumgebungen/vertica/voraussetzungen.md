@@ -14,12 +14,10 @@ Voraussetzung für die Nutzung der Vertica Destination ist die Installation des 
 
 {: .box-note} 
 **Note**: Hierzu müssen Sie Xtract Universal als Administrator ausführen.
+Das ist ein Test für weitere Zeilen im Block.
 
-{: .box-note}
-#### Heading 4
-- note 1
-- note 2
-*Hello* imagine this **line*.
+{: .box-note} 
+**Note**: Hierzu müssen Sie Xtract Universal als Administrator ausführen. Das ist ein Test für weitere Zeilen im Block.
 
 Den Treiber können Sie [hier](https://www.vertica.com/client-drivers/) herunterladen.
 
