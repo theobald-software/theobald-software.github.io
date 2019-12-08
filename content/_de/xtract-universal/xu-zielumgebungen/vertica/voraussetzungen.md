@@ -11,15 +11,10 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=voraussetzungen3
 ---
 Voraussetzung für die Nutzung der Vertica Destination ist die Installation des ADO.NET Treibers für HP Vertica.
+Den Treiber können Sie [hier](https://www.vertica.com/client-drivers/) herunterladen.
 
 {: .box-note} 
 **Note**: Hierzu müssen Sie Xtract Universal als Administrator ausführen.
-Das ist ein Test für weitere Zeilen im Block.
-
-{: .box-note} 
-**Note**: Hierzu müssen Sie Xtract Universal als Administrator ausführen. Das ist ein Test für weitere Zeilen im Block.
-
-Den Treiber können Sie [hier](https://www.vertica.com/client-drivers/) herunterladen.
 
 Nach erfolgreicher Installation des Treibers können Sie die benötigte dll Datei in den Destination Details der Vertica Destination auswählen.<br>
 
