@@ -47,11 +47,6 @@ Es wird empfohlen, vor der Neuinstallation ein Test auf einer nichtproduktiven U
 
 Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. 
 
-> Warning
-> hier kommt der Text rein.
-> bla bla bla  dljfhdfdsjljiwjfnfsjghifjkdsjglhljfjölj
-> hallo neue Zeile
-
 {:.box-warning}
 **Warnung:** **Verlust von Daten**<br>
 Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.<br>
