@@ -30,7 +30,7 @@ Stellen Sie noch sicher, dass der c2WTS-Service im Sharepoint unter "Service on 
 Für den c2WTS-Service müssen Sie noch definieren, welche Active-Directory-Gruppen und -Benutzer auf den Dienst zugreifen dürfen (im Abschnit ).
 
 Der folgende Knowledge Base Artikel beschreibt, wie Sie Ihr SAP-System und die Client-Maschine mit SSO/SNC einrichten:
-[http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso)  
+[Anbieter gehostete App für SharePoint Online zum Zugriff auf SAP](https://kb.theobald-software.com/erpconnect-services/how-to-create-a-provider-hosted-app-for-sharepoint-online-to-access-sap-data-via-erpconnect-services-core)  
 
 
 **SSO Ticket**<br>
