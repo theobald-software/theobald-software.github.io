@@ -49,9 +49,11 @@ Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unter
 
 > Warning
 > hier kommt der Text rein.
+> bla bla bla  dljfhdfdsjljiwjfnfsjghifjkdsjglhljfjölj
+> hallo neue Zeile
 
 {:.box-warning}
-**Warnung:** **Verlust von Daten**
+**Warnung:** **Verlust von Daten**<br>
 Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.<br>
 Führen Sie ein Backup des Ordners: `C:\Program Files\XtractUniversal\config` in regelmäßigen Abständen durch.
 
