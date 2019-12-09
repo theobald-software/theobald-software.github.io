@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=kundenstammblatt-install
 
 **Download**
 
-Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.CustomerFactsheet.zip) herunterladen.
+Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://cdn-files.theobald-software.com/help/ECS/Theobald.CustomerFactsheet.zip) herunterladen.
 
 Folgende Dateien werden ausgeliefert: 
 

@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=cats-install
 
 **Installation files**
 
-You can download the installation files [here](https://my.theobald-software.com/files/ECS/Theobald.CATS.zip). 
+You can download the installation files [here](https://cdn-files.theobald-software.com/help/ECS/Theobald.CATS.zip). 
 
 The following files are delivered: 
 

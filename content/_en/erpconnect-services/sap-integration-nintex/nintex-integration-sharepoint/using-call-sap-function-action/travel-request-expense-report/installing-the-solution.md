@@ -21,7 +21,7 @@ The installation/implementation of both scenarios involves the following steps:
 
 **Files available for download**
 
-The following files necessary for the implementation of the scenarios are bundled in this [ZIP](https://my.theobald-software.com/files/TravelScenarioFiles.zip)-file. 
+The following files necessary for the implementation of the scenarios are bundled in this [ZIP](https://cdn-files.theobald-software.com/help/TravelScenarioFiles.zip)-file. 
 
 - SharePoint list import files
 - Nintex User Defined Actions import files
