@@ -48,7 +48,7 @@ Es wird empfohlen, vor der Neuinstallation ein Test auf einer nichtproduktiven U
 Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. 
 
 {:.box-warning}
-**Warnung:** Verlust von Daten<br>
+**Warnung:** **Verlust von Daten**
 Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.<br>
 Führen Sie ein Backup des Ordners: `C:\Program Files\XtractUniversal\config` in regelmäßigen Abständen durch.
 
