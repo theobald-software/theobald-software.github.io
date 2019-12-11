@@ -12,21 +12,20 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=datasource-deltaq
 ---
 <div class="alert alert-info">
-  <i class= "fas fa-exclamation-triangle"></i> <strong>Wissen zur Funktionsweise von Xtract Universal ist vorausgesetzt</strong><br>
- Der vorliegende Abschnitt enthält Informationen nur zur Anwendung der Komponente DeltaQ. 
+  <i class="fas fa-exclamation-triangle"></i> <strong>Wissen zur Funktionsweise von Xtract Universal ist vorausgesetzt</strong><br>
+ Der vorliegende Abschnitt enthält Informationen nur zur Anwendung der Komponente DeltaQ..
 </div>
 
-
 <div class="alert alert-info">
-  <i class="fas fa-exclamation-triangle"></i> <strong>Warnung:</strong> 
-  <!--Type & source of the problem, use bold and <br> --> **Aktuellere Komponente vorhanden** <br>
-  <!--- Cause with an explanation of the threat + <br>: ---> DeltaQ ist eine veraltete Komponente.<br>
-  <!---Remedy:--> Verwenden Sie, wenn möglich die neuere Komponente **ODP**.
+  <i class="fas fa-exclamation-triangle"></i> <strong>Warnung:
+  <br>Aktuellere Komponente vorhanden</strong> <br>
+   DeltaQ ist eine veraltete Komponente.<br>
+ Verwenden Sie, wenn möglich, die neuere Komponente <strong>ODP</strong>.
 </div><br>
 
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <br>
-Grundlagen zum Produkt Xtract Universal sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xtract-table) beschrieben.
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <br>
+   Grundlagen zum Produkt Xtract Universal sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xtract-table) beschrieben.<br>
 </div>
 
 
