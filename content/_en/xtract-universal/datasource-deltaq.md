@@ -11,6 +11,23 @@ weight: 16
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=datasource-deltaq
 ---
+<div class="alert alert-warning">
+  <i class="fas fa-exclamation-triangle"></i> <strong>Warning:
+  <br>More recent component available.</strong> <br>
+  DeltaQ is an old component.<br>
+If possible, use the newer component <strong>ODP</strong>.
+</div><br>
+
+<div class="alert alert-warning">
+  <i class="fas fa-exclamation-triangle"></i> <strong>More recent component available</strong> <br>
+    DeltaQ is an old component.<br>
+ If possible, use the newer component <strong>ODP</strong>.
+</div><br>
+
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> Basics of the product Xtract Universal are described in the section <a href= "https://help.theobald-software.com/en/xtract-universal/getting-started-table" class="alert-link">Getting Started with Table</a>.<br>
+</div>
+
 
 **Caution!** Please note that this chapter only describes the use of the Xtract Universal DeltaQ Component. For all other Basics please refer to [Getting Started with Table](https://help.theobald-software.com/en/xtract-universal/getting-started-table). For this chapter the knowledge about the basic usage of Xtract Universal is assumed! 
 

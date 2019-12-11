@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=datasource-deltaq
 
 <div class="alert alert-warning">
   <i class="fas fa-exclamation-triangle"></i> <strong>Warnung:
-  <br>Aktuellere Komponente vorhanden</strong> <br>
+  <br>Aktuellere Komponente vorhanden.</strong> <br>
    DeltaQ ist eine veraltete Komponente.<br>
  Verwenden Sie, wenn möglich, die neuere Komponente <strong>ODP</strong>.
 </div><br>
