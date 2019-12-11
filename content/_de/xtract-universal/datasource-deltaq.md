@@ -13,23 +13,14 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=datasource-deltaq
 ---
 
 <div class="alert alert-warning">
-  <i class="fas fa-exclamation-triangle"></i> <strong>Warnung:
+  <i class="fas fa-exclamation-triangle"></i> <strong>Warnung!
   <br>Aktuellere Komponente vorhanden.</strong> <br>
    DeltaQ ist eine veraltete Komponente.<br>
  Verwenden Sie, wenn möglich, die neuere Komponente <strong>ODP</strong>.
 </div><br>
-
-<div class="alert alert-warning">
-  <i class="fas fa-exclamation-triangle"></i> <strong>Aktuellere Komponente vorhanden</strong> <br>
-   DeltaQ ist eine veraltete Komponente.<br>
- Verwenden Sie, wenn möglich, die neuere Komponente <strong>ODP</strong>.
-</div><br>
-
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> Grundlagen zum Produkt Xtract Universal sind im Abschnitt <a href="https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table" class="alert-link">Erste Schritte mit Table</a> beschrieben.<br>
+Dieser Abschnitt beschreibt die Verwendung der DeltaQ Komponente von Xtract Universal. Kenntnisse über die Grundlagen von Xtract Universal werden vorausgesetzt.
+<div class="alert alert-success">
+  <i class="fas fa-lightbulb"></i> Grundlagen zum Produkt Xtract Universal sind im Abschnitt <a href="https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table" class="alert-link">Erste Schritte mit Table</a> beschrieben.</a>.<br>
 </div>
-
-
-**Achtung!!** Bitte beachten Sie, das dieser Abschnitt nur die Anwendung der Xtract Universal DeltaQ Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table). Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Abschnitt vorausgesetzt!
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
