@@ -53,7 +53,8 @@ In principle many SAP standard settings can be used as customizing, e.g. in stan
  
 **Installing the SAP transport** 
 
-The SAP transport request must be installed in SAP. For more information about the installation of the transport request check our [Knowledgebase](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
+The SAP transport request must be installed in SAP. Find more information about the installation of
+ the [transport request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) in the knowledge base of Theobald Software.
 
 **Installation of the solution package using the installer**
 

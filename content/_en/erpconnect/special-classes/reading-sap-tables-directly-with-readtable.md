@@ -130,8 +130,8 @@ links
 
 Online Help: [Installing the custom function module](../sap-customizing/table-restrictions)
 
-KnowledgeBase: [Transferring data packets with ReadTable class](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/29/28/transferring-data-packets-with-readtable-class)
+KnowledgeBase: [Transferring data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-readtable-class)
 
-KnowledgeBase: [Get meta data of a table](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/45/28/get-meta-data-of-a-table)
+KnowledgeBase: [Get meta data of a table](https://kb.theobald-software.com/erpconnect-samples/get-meta-data-of-a-table)
 
  

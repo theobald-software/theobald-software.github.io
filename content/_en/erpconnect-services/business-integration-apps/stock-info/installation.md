@@ -36,7 +36,7 @@ An ECS Service Application must be created, for more information refer to our [o
 
 **Installing the SAP transport** 
 
-The SAP transport request must be installed in SAP. For more information about the installation of the transport request check our [Knowledgebase](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
+The SAP transport request must be installed in SAP. For more information about the installation of the transport request check our [Knowledge base](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
 
 **Installation of the solution package using the installer** 
 

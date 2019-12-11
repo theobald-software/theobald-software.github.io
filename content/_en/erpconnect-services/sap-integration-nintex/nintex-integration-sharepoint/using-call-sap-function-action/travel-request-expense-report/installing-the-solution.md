@@ -29,6 +29,6 @@ The following files necessary for the implementation of the scenarios are bundle
 - Nintex Workflow files
 - SAP custom function modules transport files 
 
-Further information about importing SAP custom function modules you find in the following [knowledgebase article](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).  
+Check the knowledge base article for further information about [importing SAP custom function modules](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

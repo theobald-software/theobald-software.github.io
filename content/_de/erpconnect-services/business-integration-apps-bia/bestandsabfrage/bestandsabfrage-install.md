@@ -39,9 +39,8 @@ Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen 
 
 **Installation des SAP-Transportauftrags**
 
-Ein SAP-Transportauftrag muss auf Ihrem SAP-System eingespielt werden. Nähere Informationen zur Installation von Transportaufträgen finden Sie in unserer [Knowledge base](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
-
-
+Ein SAP-Transportauftrag muss auf Ihrem SAP-System eingespielt werden. Nähere Informationen zur Installation von [Transportaufträgen](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms?fromSearch=true).
+ finden Sie in unserer Knowledge Base.
 **Installation des Solution Packages mit dem Installer**
 
 Führen Sie die Datei *Theobald.StockInfo.exe* aus und folgen Sie der Installationsroutine.<br> 
