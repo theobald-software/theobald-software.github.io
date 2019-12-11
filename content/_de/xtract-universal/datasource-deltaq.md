@@ -26,10 +26,10 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=datasource-deltaq
 </div><br>
 
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> Grundlagen zum Produkt Xtract Universal sind im Abschnitt <a href="#" class="alert-link">Erste Schritte mit Table</a> beschrieben.<br>
+  <i class="fas fa-info-circle"></i> Grundlagen zum Produkt Xtract Universal sind im Abschnitt <a href="https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table" class="alert-link">Erste Schritte mit Table</a> beschrieben.<br>
 </div>
 
 
-**Achtung!!** Bitte beachten Sie, das dieser Abschnitt nur die Anwendung der Xtract Universal DeltaQ Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xtract-table). Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Abschnitt vorausgesetzt!
+**Achtung!!** Bitte beachten Sie, das dieser Abschnitt nur die Anwendung der Xtract Universal DeltaQ Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table). Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Abschnitt vorausgesetzt!
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
