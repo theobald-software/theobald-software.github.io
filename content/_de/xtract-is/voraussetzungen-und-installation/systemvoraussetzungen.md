@@ -13,10 +13,11 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 
 ### SQL Server
  	
-- SQL Server 2012
-- SQL Server 2014
-- SQL Server 2016
-- SQL Server 2017
+- SQL Server 2012 SP4 (bis 12.07.2022)
+- SQL Server 2014 SP3 (bis 09.07.2024)
+- SQL Server 2016 SP2 (bis 14.07.2026)
+- SQL Server 2017 (bis 12.10.2027)
+- SQL Server 2019 (bis 08.01.2030)
 - SQL Server Integration Services (SSIS)
 - Für die Entwicklung: Die entsprechende Visual Studio Version (außer der Express-Version) für Business Intelligence zur Erstellung von SSIS-Paketen. <br> Siehe   [Liste der unterstützen Versionen von SSIS & VS](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is) 
 
