@@ -2,7 +2,7 @@
 layout: page
 title: Editorial guidelines
 description: Editorial guidelines for creating online help content
-permalink: /:collection/online-help-editorial-guide
+permalink: /:collection/online-help-concept
 weight: 1
 ---
 
