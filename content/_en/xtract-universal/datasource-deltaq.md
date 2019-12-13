@@ -24,6 +24,4 @@ This section describes the use of the Xtract Universal DeltaQ Component. The kno
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxNDkyNzQwXX0=
--->
+
