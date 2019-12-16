@@ -1,8 +1,16 @@
-**Show Subscriptions** <br/>
-Klicken Sie auf Abonnements anzeigen, um Informationen über den Abonnenten zu erhalten. Dazu gehört auch: 
-- Name des Abonnenten: Der Teilnehmername basiert auf dem Namen des Rechners, auf dem die Extraktion läuft. Das bedeutet, dass Extraktionen auf verschiedenen Maschinen (es sei denn, die Namen sind gleich) unterschiedliche Abonnentennamen und Deltas haben. Der Produktname ist auch im Abonnementnamen enthalten. Dies kann für die Überwachung in SAP hilfreich sein und um Verwirrung zu vermeiden.
-- Zeitstempel der letzten Anforderung
-- Erstellungszeitstempel 
-Um das Abonnement zu löschen, klicken Sie auf das Symbol Löschen auf der rechten Seite. <br/>
+### Abonnements
+Um Informationen über den Abonnenten zu erhalten, klicken Sie auf **Show Subscriptions / Show active subscriptions** oben im Fenster “Define data source for SAP ODP”:
+<br/>
+![Subscriptions](/img/content/odp/odp-settings-subscriptions.png){:class="img-responsive"}<br/>
+**Tipp:**  Die Informationen, die Im Fenster “Delta Subscriptions for product” angezeigt werden, können auch in der SAP-Transaktion *ODQMON* angeschaut werden.<br/>
+![ODP-Abonnent](/img/content/odp/odp-settings-02.png){:class="img-responsive"}<br/>
 
-![ODP-Abonnent](/img/content/odp/odp-settings-02.png){:class="img-responsive"}
+Spaltenbezeichnung | Erklärung
+------------ | -------------
+Queue |Technischer Name aller Abonnements eines bestimmten Xtract-Produkts von Theobald Software (z.B. Xtract Universal). Ein Abonnement ist an ein bestimmtes Produkt und die ODP-Komponente gebunden, aus der die init ursprünglich gestartet wurde. Ein ODP-Datenanbieter, wie beispielsweise 2LIS_02_ITM, kann mehrere Abonnements haben. Das Abonnement, das sich auf die vorliegende ODP-Komponente bezieht, ist mit einem roten Sternchen gekennzeichnet.
+Process| Technischer Name des Abonnements
+R.(number of requests) | Anzahl der ausgeführten Delta-Anfragen
+Last request |  Zeitstempel der letzten Anforderung
+Created | Erstellungszeitstempel 
+Um das Abonnement zu löschen, klicken Sie auf das Mülltonnensymbol auf der rechten Seite des Fensters. 
+

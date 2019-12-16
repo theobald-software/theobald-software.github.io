@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=sapquotation-installation
 
 **Download**
 
-You can download the installation files [here](https://my.theobald-software.com/files/ECS/Theobald.SAPQuotation.zip). 
+You can download the installation files [here](https://cdn-files.theobald-software.com/help/ECS/Theobald.SAPQuotation.zip). 
 
 The following files are delivered: 
 
@@ -25,7 +25,7 @@ Note:
 
 We do not deliver installer packages for SharePoint 2010. The required WSP package has to be installed manually via Management Shell. 
 
-You can download the WSP package for SP2010 and the SAP transport request as a ZIP-file [here](https://my.theobald-software.com/files/ECS/Theobald.SapQuotationSP2010.zip).  
+You can download the WSP package for SP2010 and the SAP transport request as a ZIP-file [here](https://cdn-files.theobald-software.com/help/ECS/Theobald.SapQuotationSP2010.zip).  
 
 
 **System requirements** 

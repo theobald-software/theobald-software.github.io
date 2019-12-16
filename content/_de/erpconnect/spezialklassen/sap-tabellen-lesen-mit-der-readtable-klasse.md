@@ -124,6 +124,6 @@ Um die ReadTable-Klasse zu veranlassen, einen installierten Z-Baustein, z.B. Z_X
 
 **Links**<br>
 Online Hilfe: [Installation des Z-Funktionsbausteins](../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion)<br>
-KnowledgeBase: [Transferring data packets with ReadTable class](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/29/28/transferring-data-packets-with-readtable-class)<br>
-KnowledgeBase: [Get meta data of a table](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/45/28/get-meta-data-of-a-table)<br>
+KnowledgeBase: [Transferring data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-readtable-class)<br>
+KnowledgeBase: [Get meta data of a table](https://kb.theobald-software.com/erpconnect-samples/get-meta-data-of-a-table)<br>
 

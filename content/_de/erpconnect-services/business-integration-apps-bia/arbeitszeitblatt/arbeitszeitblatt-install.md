@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=arbeitszeitblatt-install
 
 **Download**
 
-Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.CATS.zip) herunterladen.
+Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://cdn-files.theobald-software.com/help/ECS/Theobald.CATS.zip) herunterladen.
 
 Folgende Dateien werden ausgeliefert:
 

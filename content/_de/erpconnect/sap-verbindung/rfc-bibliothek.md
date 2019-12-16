@@ -24,7 +24,7 @@ Die klassische RFC-Bibliothek wird standardmäßig für die SAP-Verbindung geset
 
 Netweaver RFC-Bibliothek
 
-ERPConnect unterstützt die Netweaver RFC-Bibliothek seit der Version 4.6.0 (siehe [Version History](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/82/52/erpconnect-version-history)). 
+ERPConnect unterstützt die Netweaver RFC-Bibliothek seit der Version 4.6.0 (siehe [Version History](https://kb.theobald-software.com/version-history/erpconnect-version-history)). 
 
 Dazu setzen Sie die Eigenschaft Protocol des R3Connection-Objekts auf ClientProtocol.NWRFC. 
 

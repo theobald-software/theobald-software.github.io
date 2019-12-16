@@ -173,7 +173,7 @@ var main = {
                         $(this).parent().html('<img src="/img/products/TS_Icon_2C_ERPConnectServices.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">ERPConnect Services</p>');
                         break;
                     case 'Board Connector':
-                        $(this).parent().html('<img src="/img/products/board.png" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Board Connector</p>');
+                        $(this).parent().html('<img src="/img/products/TS_Icon_2C_Board.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Board Connector</p>');
                         break;
                     case 'Xtract for Alteryx':
                         $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractAlteryx.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract for Alteryx</p>');

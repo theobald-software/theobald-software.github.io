@@ -21,7 +21,7 @@ Die Installation bzw. Implementierung der beiden Szenarien beinhaltet folgende S
 
 **Dateien zum Herunterladen**
 
-Folgende Dateien zur Installation der Szenarien finden Sie in dieser [ZIP](https://my.theobald-software.com/files/TravelScenarioFiles.zip)-Datei. 
+Folgende Dateien zur Installation der Szenarien finden Sie in dieser [ZIP](https://cdn-files.theobald-software.com/help/TravelScenarioFiles.zip)-Datei. 
 
 - SharePoint-Listen 
 - Nintex User Defined Actions
@@ -29,6 +29,6 @@ Folgende Dateien zur Installation der Szenarien finden Sie in dieser [ZIP](https
 - Nintex Workflow Dateien
 - SAP Z-Funktionsbausteine 
 
-Weiterführende Informationen zum Import von Funktionsbausteinen finden Sie in folgendem [Knowledgebase-Artikel](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms). 
+Weiterführende Informationen zum Import von Funktionsbausteinen finden Sie in folgendem [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms). 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

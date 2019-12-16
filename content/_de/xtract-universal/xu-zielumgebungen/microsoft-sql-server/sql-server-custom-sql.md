@@ -21,8 +21,8 @@ Selektieren Sie dafür eine bestehende Extraction in Xtract Universal und klicke
 Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Datum vom Typ `DATETIME` erweitert. 
 Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. 
 
-<div class="alert alert-warning">
-  <i class="fas fa-exclamation"></i> <strong>Warning:</strong> Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
+<div class="alert alert-info">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 </div>
 
 ![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
@@ -62,7 +62,7 @@ Erstellen Sie dafür eine SQL Tabelle nach folgenden Beispiel:
 CREATE TABLE [dbo].[ExtractionStatistics](
 	[TableName] [nchar](50) NULL,
 	[RowsCount] [int] NULL,
-	[Timestamp] [nchar](50) NULL,
+	[Datestamp] [nchar](50) NULL,
 	[RunState] [nchar](50) NULL
 ) ON [PRIMARY]
 GO
@@ -75,19 +75,14 @@ INSERT INTO [ExtractionStatistics]
 (
      [TableName], 
      [RowsCount], 
-     [Timestamp],
+     [Datestamp],
      [RunState]
 )
 VALUES
 (
      '#{Extraction.TableName}#', 
      '#{Extraction.RowsCount}#',
-     '#{Extraction.Timestamp}#',
+     '#{Extraction.Datestamp}#',
      '#{Extraction.RunState}#'
 );
 ```
-
-
-
-
-

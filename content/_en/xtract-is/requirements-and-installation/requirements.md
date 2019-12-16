@@ -12,10 +12,11 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 ---
 ## SQL Server<br/> 	
 
-- SQL Server 2012
-- SQL Server 2014
-- SQL Server 2016
-- SQL Server 2017
+- SQL Server 2012 SP4 (until 2022-07-12)
+- SQL Server 2014 SP3 (until 2024-07-09)
+- SQL Server 2016 SP2 (until 2026-07-14)
+- SQL Server 2017 (until 2027-10-12)
+- SQL Server 2019 (until 2030-01-08)
 - SQL Server Integration Services (SSIS)
 - For Development: Visual Studio (except express version) for Business Intelligence is needed to create SSIS packages.
 

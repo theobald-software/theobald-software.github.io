@@ -42,7 +42,7 @@ Das Entwicklungssystem bietet dem Entwickler alle Werkzeuge, um Lösungen mit de
 
 **SAP Benutzer**
 
-- Nötig ist ein SAP System- oder Dialog-Benutzer mit den entsprechenden [Berechtigungsobjekten](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
+- Nötig ist ein SAP System- oder Dialog-Benutzer mit den entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
 **SAP RFC Bibliotheken**
 

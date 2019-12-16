@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=bestandsabfrage-install
 
 **Download**
 
-Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.StockInfo.zip) herunterladen.
+Die zur Installation benötigten Dateien können Sie als ZIP-File [hier](https://cdn-files.theobald-software.com/help/ECS/Theobald.StockInfo.zip) herunterladen.
 
 Folgende Dateien werden ausgeliefert: 
 
@@ -27,7 +27,7 @@ Hinweis:
 
 Für SharePoint 2010 bieten wir kein Installerpaket an. Das zur Implementierung der App erforderliche WSP-Paket muss manuell in SharePoint per Management-Shell installiert werden. 
 
-Das WSP-Paket für SP2010 und den SAP-Transportauftrag können Sie als ZIP-File [hier](https://my.theobald-software.com/files/ECS/Theobald.StockInfoSP2010.zip) herunterladen.  
+Das WSP-Paket für SP2010 und den SAP-Transportauftrag können Sie als ZIP-File [hier](https://cdn-files.theobald-software.com/help/ECS/Theobald.StockInfoSP2010.zip) herunterladen.  
 
 
 **Systemvoraussetzungen** 
@@ -39,9 +39,8 @@ Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen 
 
 **Installation des SAP-Transportauftrags**
 
-Ein SAP-Transportauftrag muss auf Ihrem SAP-System eingespielt werden. Nähere Informationen zur Installation von Transportaufträgen finden Sie in unserer [Knowledge base](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/0/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
-
-
+Ein SAP-Transportauftrag muss auf Ihrem SAP-System eingespielt werden. Nähere Informationen zur Installation von [Transportaufträgen](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms?fromSearch=true).
+ finden Sie in unserer Knowledge Base.
 **Installation des Solution Packages mit dem Installer**
 
 Führen Sie die Datei *Theobald.StockInfo.exe* aus und folgen Sie der Installationsroutine.<br> 

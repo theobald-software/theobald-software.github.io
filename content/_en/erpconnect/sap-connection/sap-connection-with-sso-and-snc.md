@@ -22,7 +22,7 @@ Using the NTLM mechanism the SSO authentication is done via a challenge-response
 
 You can make all the appropriate settings in the source code. If you do not want to use the SNC properties to create a connection just set SNCEnabled to false. It disables all settings without changing the other SNC parameter. 
 
-To find more detail information about the requirements to use SNC SSO please check our [Knowledgebase](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/7/67/authority-objects).
+To find more detailed information about the requirements to use [SNC / SSO](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights), check the Theobald Software Knowledge Base.
 
 **With setting the SNC Mechanism (ERP Connect version 4.1.1.0):**
 
