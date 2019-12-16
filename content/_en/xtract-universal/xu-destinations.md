@@ -13,9 +13,9 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---
 
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> For some destinations (e.g., Oracle, DB2, Teradata etc.) the appropriate driver must be installed. Refer to [Requirements](./introduction/requirements).
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> For some destinations (e.g., Oracle, DB2, Teradata etc.) the appropriate driver must be installed. 
 </div>
-
+For more information on drivers, refer to [Requirements](./introduction/requirements).
 
 Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different [destination]() environments, including:  
 
