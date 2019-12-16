@@ -1,8 +1,10 @@
+---
 layout: page
 title: Template for tasks
 description: Template for creating online help content
 permalink: /:collection/template_task
-weight: 3
+weight: 0
+---
 
 ### Writing a description
 <!---Überschrift 3, bitte nicht nur fett verwenden, sonst können die Anker gar nicht gesetzt werden-->
