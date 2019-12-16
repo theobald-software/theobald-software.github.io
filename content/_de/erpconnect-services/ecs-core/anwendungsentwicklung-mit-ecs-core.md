@@ -25,7 +25,7 @@ welche die Clientseitige Programmierung mit ECS vereinfacht, indem bestimmte ECS
 
 In unserer KB (Knowledge Base) finden Sie weitere Beispiele (in englischer Sprache) zur App-Entwicklung mit ECS Core: 
 
-[Provider Hosted App in Sharepoint (+Active Directory)](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/133/53/how-to-create-a-provider-hosted-app-for-sharepoint-online-to-access-sap-data-via-erpconnect-services-core)<br>
-[Office 365 Sharepoint Online App (NAPA)](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/132/53/getting-started-with-sap--sharepoint-apps-in-the-cloud) 
+[Provider Hosted App in Sharepoint (+Active Directory)](https://kb.theobald-software.com/erpconnect-services/how-to-create-a-provider-hosted-app-for-sharepoint-online-to-access-sap-data-via-erpconnect-services-core)<br>
+[Office 365 Sharepoint Online App (NAPA)](https://kb.theobald-software.com/erpconnect-services/getting-started-with-sap--sharepoint-apps-in-the-cloud) 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -24,9 +24,9 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=systemvoraussetzungen1
 
 - Für den Versand von EMail-Benachrichtigungen muss ein SMPT-Server definiert sein.
 
-**SharePoint Server 2013**
+**SharePoint Server (ab 2013)**
 
-- Microsoft SharePoint Server 2013, Foundation, Standard oder Enterprise Edition
+- Microsoft SharePoint Server, Foundation, Standard oder Enterprise Edition
 
 **SAP System(e)**
 
@@ -35,15 +35,15 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=systemvoraussetzungen1
 
 **Andere Anwendungen und Frameworks**
 
-- Librfc32.dll falls SAP GUI nicht installiert ist. Einen Download-Link finden Sie [hier](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/54/9/useful-links).
+- Librfc32.dll falls SAP GUI nicht installiert ist.
 
-**Nintex Workflow 2013 (inklusive Nintex Live)** 
+**Nintex Workflow (ab SP2013, inklusive Nintex Live)** 
 
 - ab Version 3.1.5
 - Nintex Live Komponente: Die Installation muss auf Server mit gehosteter Zentraladministration laufen. 
 - Ausführliche Informationen zu Systemvoraussetzungen und Installation von Nintex Workflow finden Sie [hier](https://community.nintex.com/docs/DOC-1373).
 
-**Nintex Forms 2013**
+**Nintex Forms (ab SP2013) **
 
 - Installation muss auf einem Web Frontend-Server laufen
 - Ausführliche Informationen zu Systemvoraussetzungen und Installation von Nintex Forms finden Sie [hier](https://community.nintex.com/docs/DOC-1373).
@@ -51,7 +51,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=systemvoraussetzungen1
 **Internet Browser**
 - Mindestens Microsoft Internet Explorer 8.x, empfohlen wird Microsoft Internet Explorer 9 oder höher. 
 
-**ERPConnect Services for SharePoint 2013**
+**ERPConnect Services**
 
 - Einzelheiten zu Voraussetzungen und zur Installation der ERPConnect Services finden Sie [hier](../../../../ecs-de/ecs-voraussetzungen). 
 
