@@ -8,7 +8,6 @@ parent: travel-request-expense-report
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /ERPConnect-Services-EN/default.aspx?pageid=system_requirements1
 ---
 
 **Operating System**
@@ -24,9 +23,9 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=system_requirements1
 
 - To use EMail notfications a SMTP server has to be implemented
 
-**SharePoint Server 2013**
+**SharePoint Server (as of 2013)**
 
-- Microsoft SharePoint Server 2013, Foundation, Standard oder Enterprise Edition
+- Microsoft SharePoint Server, Foundation, Standard oder Enterprise Edition
 
 **SAP System(s)**
 
@@ -35,15 +34,15 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=system_requirements1
 
 **Other Applications and Frameworks**
 
-- Librfc32.dll if no SAP GUI is installed. A download link you will find [here](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/54/9/useful-links).
+- Librfc32.dll if no SAP GUI is installed.
 
-**Nintex Workflow 2013 (Nintex Live included)**
+**Nintex Workflow (as of SP2013, Nintex Live included)**
 
 - Version 3.1.5 and later
 - Nintex Live: Choose a server that hosts SharePoint Central Administration. 
 - Detailed information regarding Nintex Workflow installation you find [here](https://community.nintex.com/docs/DOC-1373).
 
-**Nintex Forms 2013**
+**Nintex Forms (as of SP2013)**
 
 - The installation has to run on a web frontend server
 - Detailed information regarding Nintex Forms installation you find [here](https://community.nintex.com/docs/DOC-1373).
@@ -52,7 +51,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=system_requirements1
 
 - Microsoft Internet Explorer 8.x although Microsoft Internet Explorer 9 or greater is recommended. 
 
-**ERPConnect Services for SharePoint 2013**
+**ERPConnect Services**
 
 - Detailed information regarding ERPConnect Services installation you find [here](../../../../ecs/requirements-and-installation/installation).
 

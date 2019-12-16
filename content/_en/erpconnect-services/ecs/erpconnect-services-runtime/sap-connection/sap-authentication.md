@@ -29,9 +29,6 @@ Partner Name has the form: **p:sapservicensp@theobald-software.com**.
 Be sure that the c2WTS service is activated in SharePoint under "services on server" and as windows service.
 C2WTS must be configured to define which Active Directory users and groups have access to the service. 
 
-**To configure SSO with SNC on your SAP System and on the client side refer to our Knowledge Base article:**
-[http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso)
-
 **SSO Ticket**
 ECSR can use an SAP SSO Ticket. Either use the option SSO Ticket and set the field Ticket Issuer URL or check the option SSO ticket (**pass-through**). For the last case refer to the following C# code sample that shows how to get an SSO ticket using ERPConnect. After that the SSO ticket is used to create an ERPConnectServicesClient:
 
