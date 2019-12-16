@@ -133,7 +133,7 @@ WHERE [Extraction_Date] IS NULL;
 <!--Code soll mit dem Element inline code ausgezeichnet werden-->
 
 
-### Beispiele - Blockquotes
+### Examples - Blockquotes
 
 >This is an example.
 

@@ -27,7 +27,7 @@ Formulierung:  Das Verb mit to (z.B. To check the connection) -->
 ### Marking the elements
 1. Click **[Edit]** (Buttons: bold & square brackets)
 2. Click **Subscriptions** (URL buttons: bold)
-3. Enter the name the field **Name** (Fields within a window: bold
+3. Enter the name the field **Name** (Fields within a window: bold)
 4. Enter the value *123* (entered values: italics)
 
 ------
@@ -144,7 +144,7 @@ WHERE [Extraction_Date] IS NULL;
 <!--Code soll mit dem Element inline code ausgezeichnet werden-->
 
 
-### Beispiele - Blockquotes
+### Examples - Blockquotes
 
 >This is an example.
 
