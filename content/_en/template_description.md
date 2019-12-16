@@ -18,7 +18,9 @@ The given template is a guideline for simplifying the creation of product descri
 ### About function descriptions
 <!--Unterüberschrift. Optional, wird gesetzt wenn es sinnvoll ist-->
 This section does not contain any procedural steps.
+
 -----------
+
 ### Markings in the text
 - Buttons: bold & square brackets - **[Edit]** 
 - URLbuttons: just bold - **Subscriptions**
@@ -31,6 +33,7 @@ This section does not contain any procedural steps.
 
 ### Tables
 <!---Einfache Tabellen verwenden, Markierungen in Tabellen möglichst vermeiden-->
+
 First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
@@ -40,6 +43,8 @@ Content in the first column | Content in the second column
 
 ### Notes, Warnings etc.
 There are three main types of warning messages with the corresponding colors.
+
+
 Signal word| Color
 ------------ | -------------
 Note |Blue
@@ -57,7 +62,8 @@ Notes is additional information and can be formulated freely.
 <!--Dieser Block wird später von Erwin programmiert und kann leichter befüllt werden. Note / Hinweis (DE) soll verwendet werden, wenn zusätzliche Informationen gegeben werden, die nicht direkt Teil der Beschreibung sind--->
 
 #### Warning - not typical for function descriptions:
-The general guideline is to not use many "Warnings" as the less "Problems" the product can cause, the better is the product. The warning **must** be placed in front of the possible issue and not after. 
+The general guideline is to not use many "Warnings" as the less "Problems" the product can cause, the better is the product. The warning **must** be placed in front of the possible issue and not after.
+
 <!-- Dieser Block wird später von Erwin programmiert und kann leichter befüllt werden. 
 Warning / Warnung wird verwendet, wenn beim Missachten etwas tatsächlich passieren kann. z.B. Datenverlust. Dieser Hinweis wird öfter in den Handlungsanweisungen verwendet.
 Der Warning-Hinweis soll möglichst nach dem folgenden Prinzip formuliert werden:
@@ -65,18 +71,19 @@ Der Warning-Hinweis soll möglichst nach dem folgenden Prinzip formuliert werden
 - Cause with an explanation of the threat + <br>:
 - Remedy:
  -->
+
 <div class="alert alert-warning">
   <i class="fas fa-exclamation-triangle"></i> <strong>Warning:</strong> 
-  <!--Type & source of the problem, use bold and <br> --> **Data loss** <br>
+  <!--Type & source of the problem, use bold and <br> --> <strong>Data loss</strong> <br>
   <!--- Cause with an explanation of the threat + <br>: ---> A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.<br>
   <!---Remedy:--> Activate the debug logging only when necessary, e.g., upon request of the support team.
 </div><br>
 
 #### Tip & Recommendation:
-Tips and recommendations can be formulated freely.
-**Tip:** This is a tip.
+Tips and recommendations can be formulated freely. <br>
+**Tip:** This is a tip.<br>
 <!--Soll verwendet werden, wenn es um eine alternative Lösung sich handelt oder etwas zusätzliches angesprochen werden kann. z.B. dies kann über diese Transaktion auch in SAP nachgeschaut werden. Wenn es soweit ist, stellt Erwin ein grünes Kästchen für die Tipps und Empfehlungen zur Verfügung-->
-**Recommendation:** This is a recommendation.
+**Recommendation:** This is a recommendation.<br>
 <!--Eine Recommendation von Theobald Software, die aus der eignen Erfahrung oder aus Best Practices kommt - hiermit wird das "we" und "our" vermieden-->
 <div class="alert alert-success">
   <i class="fas fa-lightbulb"></i> Basics of the product Xtract Universal are described in the section <a href= "https://help.theobald-software.com/en/xtract-universal/getting-started-table" class="alert-link">Getting Started with Table</a>.<br>
