@@ -10,4 +10,4 @@ The editorial guidelines of Theobald software are a set of recommendations for w
 The editorial guidelines consist of the following parts:
 - Style guide
 - Two document templates 
-- Graphic concept for screenshots  (rudimental)
+- Graphic concept for screenshots  (rudimentary)

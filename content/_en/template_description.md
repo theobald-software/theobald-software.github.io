@@ -1,3 +1,9 @@
+layout: page
+title: Template for descriptions
+description: Template for creating online help content
+permalink: /:collection/template_description
+weight: 3
+
 ### About the template
 <!---Überschrift 3, bitte nicht nur fett verwenden, sonst können die Anker gar nicht gesetzt werden-->
 <!--Die Produktbeschreibungen sollen möglichst getrennt von den Handlungsanweisungen gehalten werden. 
