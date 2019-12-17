@@ -1,0 +1,12 @@
+diff a/content/_en/editorial-guide/style-guide/style.md b/content/_en/editorial-guide/style-guide/style.md	(rejected hunks)
+@@ -0,0 +1,10 @@
++---
++layout: page
++title: Style
++description: Style
++parent: editorial-guide
++childidentifier: Style
++permalink: /:collection/template_task
++weight: 1
++---
++

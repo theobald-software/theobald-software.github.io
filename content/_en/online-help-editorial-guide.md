@@ -11,6 +11,3 @@ The editorial guidelines consist of the following parts:
 - Style guide
 - Two document templates 
 - Graphic concept for screenshots  (rudimentary)
-
-
-

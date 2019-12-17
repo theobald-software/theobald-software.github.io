@@ -5,7 +5,7 @@ description: Template for creating online help content
 parent: editorial-guide
 childidentifier: Template for descriptions
 permalink: /:collection/template_description
-weight: 2
+weight: 0
 ---
 ### About the template
 In this section... / this section gives an overview.../ the following section is about...
