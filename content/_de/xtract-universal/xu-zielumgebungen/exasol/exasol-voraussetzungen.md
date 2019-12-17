@@ -11,9 +11,5 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=exasol-voraussetzungen
 ---
 
-Um Daten in dieses Ziel zu laden, müssen Sie den zugehörigen EXASOL ADO.NET Treiber für Windows installieren. 
-
-Sie können den Treiber direkt von der EXASOL [Webseite](https://www.exasol.com/portal/display/DOWNLOAD/EXASOL+Download+Section) herunterladen. <br>
-
-Gehen Sie zum Download-Bereich und wählen Sie die Version *6.1.0* Laden und installieren Sie den ADO.NET Treiber für Windows **EXASOL_ADO.NET-6.1.0.msi**. 
+Ab der Version Xtract Universal 4.2.26.0 wird der Exasol ADO.Net Treiber ExaDataProvider mit dem Setup von Xtract Universal ausgeliefert. Es sind keine zusätzlichen Installationen erforderlich, um die Destination Exasol-Datenbank zu verwenden.
 
