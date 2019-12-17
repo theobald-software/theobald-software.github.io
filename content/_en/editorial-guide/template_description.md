@@ -2,8 +2,6 @@
 layout: page
 title: Template for descriptions
 description: Template for creating online help content
-parent: editorial-guide
-childidentifier: Template for descriptions
 permalink: /:collection/template_description
 weight: 0
 ---
