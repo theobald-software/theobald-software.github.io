@@ -2,8 +2,6 @@
 layout: page
 title: Template for tasks
 description: Template for creating online help content
-parent: editorial-guide
-childidentifier: Template for tasks
 permalink: /:collection/template_task
 weight: 1
 ---
