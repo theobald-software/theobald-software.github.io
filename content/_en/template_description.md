@@ -20,6 +20,7 @@ Or whether he wants to show the user steps so that the user can perform a partic
 <!--Die Produktbeschreibungen sollen möglichst getrennt von den Handlungsanweisungen gehalten werden. 
 Jeder Autor sollte zunächst überlegen, ob er eine Funktion beschreiben will (z.B. Architektur oder Use Case)
 oder ob er dem Benutzer Schritte aufzeigen will, damit er eine bestimmte Aufgabe Ausführen kann. Die vorliegende Vorlage ist für eine Funktionsbeschreibung. Für die Erstellung der Handlungsanweisungen, verwendet bitte die andere Vorlage.-->
+
 -----------
 
 ### Markings in the text
