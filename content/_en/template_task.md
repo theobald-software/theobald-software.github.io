@@ -135,11 +135,11 @@ function fancyAlert(arg) {
 }
 ```
 
-{% highlight sql %}
+```sql
 UPDATE [dbo].[KNA1] 
 SET [Extraction_Date] = '#{DateTime.Now}#' 
 WHERE [Extraction_Date] IS NULL;
-{% endhighlight %}
+```
 
 <!--Code soll mit dem Element inline code ausgezeichnet werden-->
 
