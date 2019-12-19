@@ -1,13 +1,13 @@
 ---
-ref: xfa-introduction-06
+ref: xfa-introduction-02
 layout: page
-title: Licensing
-description: About licensing of Xtract for Alteryx
+title: Lizensierung
+description: Lizenzkonzept von Xtract für Alteryx
 product: xtract-for-alteryx
-parent: introduction
+parent: einfuehrung
 permalink: /:collection/:path
 weight: 2
-lang: en_GB
+lang: de_DE
 ---
 
 ### Über das Lizenzkonzept von Xtract für Alteryx

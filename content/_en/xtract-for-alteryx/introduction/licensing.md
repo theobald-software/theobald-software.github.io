@@ -1,5 +1,5 @@
 ---
-ref: xfa-introduction-06
+ref: xfa-introduction-02
 layout: page
 title: Licensing
 description: About licensing of Xtract for Alteryx
