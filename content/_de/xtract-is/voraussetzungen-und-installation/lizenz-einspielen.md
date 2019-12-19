@@ -1,8 +1,8 @@
 ---
 ref: xi-requirements-and-installation-04
 layout: page
-title: Lizenz einspielen
-description: Lizenz einspielen
+title: Lizensierung
+description: Über Lizensierung von Xtract IS
 product: xtract-is
 parent: voraussetzungen-und-installation
 permalink: /:collection/:path
@@ -10,27 +10,43 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=lizenz-einspielen
 ---
-Standardmäßig wird bei der Installation eine Demo-Version installiert, die zeitlich beschränkt ist. 
-Wenn Sie Xtract IS gekauft haben, bekommen Sie von uns eine Lizenzdatei (*XtractISLicense.json*, ehemals 
-*XtractIS.License.dll*) zugesendet, in der unter Anderem Firmenname und lizensierte Server verschlüsselt sind.
+### Über das Lizenzkonzept von Xtract IS
+Die folgende Grafik zeigt, auf welchen Rechnern die Installation von Xtract IS mit einer gültigen Lizenz erforderlich ist. <br>
+![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive"} <br>
 
-Um die Lizenz einzuspielen, starten Sie das Programm *XtractLicenseManager.exe* (aus dem Programm-Menü). 
-Die aktuelle, aktive Lizenz wird angezeigt, im folgenden Fall ist es eine Demo-Lizenz.
+Die Lizenzierung von Xtract IS erfolgt pro Windows-Server auf dem SSIS-Pakete bereitgestellt und ausgeführt werden. lizenziert. Dieselbe Lizenzdatei kann auf den lokalen Rechnern für die Entwicklung der SSIS-Pakete verwendet werden.
+Mit der Installation von Xtract IS wird automatisch eine Demo-Lizenz installiert. <br>
+Die Produktlizenz ist an Ihr Unternehmen und einen bestimmten Servernamen gebunden.
 
-![XIS-License-Manager](/img/content/XIS-License-Manager.jpg){:class="img-responsive"}
+### Installation der Xtract IS-Lizenz - XtractISLicense.json
+1. Um die reguläre Lizenz zu installieren, wählen Sie die ausführbare Xtract IS Lizensmanager-Datei im Installationsverzeichnis von Xtract IS aus:<br>
+`C:\Program Files\XtractIS\XtractLicenseManager.exe`
+Der Lizenzmanager wird geöffnet.<br>
+![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="600px"}
+2. Klicken Sie auf **[Install]**. Das Fenster "Install Xtract License" wird geöffnet.
+3. Suchen Sie die reguläre Datei "XtractISLicense.json" im Installationsverzeichnis von Xtract IS:
+`C:\Program Files\XtractIS\XtractISLicense.json`
+4. Schließen und starten Sie den Lizenzmanager neu, um die korrekt installierte Lizenz anzuzeigen. <br>
+![XIS_Lizenz_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive" width="400px"}
 
-Klicken Sie nun auf **[Install]**. Ein Dateiauswahldialog öffnet sich. Wählen Sie Ihre gekaufte Lizenz und bestätigen Sie mit **[OK]**. Wenn Sie den Lizenzmanager noch einmal starten, werden dort Ihre individuellen Lizenzdaten angezeigt. Ihre Lizenzdaten können Sie im Übrigen auch direkt in den Xtract IS SSIS-Komponenten anzeigen lassen, indem Sie auf *XtractIS Info* klicken.
+<div class="alert alert-success">
+  <i class="fas fa-lightbulb"></i> <strong>Tipp:</strong> Um Ihre aktuellen Lizenzdaten einzusehen, klicken Sie auf den Info-Link, der sich oben in jedem Komponenten-Editor befindet.<br>
+</div>
 
-Dieses Bild zeigt eine korrekt installierte und dauerhafte Lizenz.
 
-![XIS_License_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive"}
+### Aktualisierung der Xtract.License.dll auf XtractISLicense.json
+Die ältere Version der Xtract IS Lizenzdatei ist eine .dll-Datei, die im GAC registriert wurde.
+In den neueren Versionen von Xtract IS wird die Lizenzdatei in Form einer .json-Datei zur Verfügung gestellt.<br>
+Kopieren Sie die XtractISLicense.json in einen der folgenden Pfade:<br>
+`CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\` <br>
+ oder `C:\ProgramData\TheobaldSoftware\XtractIS\`
 
-| Dateiname | Beschreibung |
-|:--|:--|
-| XtractISLicense.json | Dateien werden nach <br> CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\ bzw. <br> C:\ProgramData\TheobaldSoftware\XtractIS\ kopiert.|
-|Xtract.License.dll | Dateien werden im GAC registriert. |
+Wenn Sie eine ältere .dll-Lizenzdatei haben, muss die ältere Version entfernt werden, um die neuere Version nutzen zu können.
 
-Folgende Grafik zeigt, auf welchen Rechnern Xtract IS installiert und eine gültige Xtract IS Lizenz eingespielt werden muss. Xtract IS wird pro Windows Server lizenziert (der Server, auf den SSIS-Pakete deployt und ausgeführt werden). Dieselbe Lizenzdatei kann auf den lokalen Workstations zur Entwicklung der SSIS-Pakete verwendet werden.<br>
-![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive"}
+Um die neuere Version der Lizenz nutzen zu können, muss die ältere Version entfernt werden.
 
- 
+#### Entfernen der älteren Xtract.License.dll aus dem GAC
+1. Führen Sie die Windows-Kommandozeile als Administrator aus.
+2. Führen Sie die Deinstallationslizenzdatei aus: `C:\Program Files\XtractIS>UninstallDllLicense.bat` <br>
+Die .dll-Lizenz wird entfernt.
+3. Führen Sie die Installation der neueren XtractISLicense.json-Datei durch.

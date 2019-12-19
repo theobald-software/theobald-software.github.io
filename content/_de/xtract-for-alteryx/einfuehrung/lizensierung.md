@@ -11,9 +11,9 @@ lang: de_DE
 ---
 
 ### Über das Lizenzkonzept von Xtract for Alteryx
-Für die Nutzung von Xtract for Alteryx mit Alteryx Designer sind die folgenden Lizenzen erforderlich:
-- Desktop-Lizenz
-- Serverlizenz (nur für Deployment auf den Alteryx-Server)
+Für die Nutzung von Xtract for Alteryx werden die folgenden Lizensierungsoptionen angeboten:
+- Desktop-Lizenz - für die Verwendung mit dem Ateryx Designer
+- Serverlizenz - für Deployment auf den Alteryx-Server
 <br>
 
 Mit der Installation von Xtract for Alteryx wird automatisch eine Demo-Lizenz installiert. <br>
