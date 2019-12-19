@@ -2,7 +2,7 @@
 ref: xfa-introduction-02
 layout: page
 title: Lizensierung
-description: Lizenzkonzept von Xtract für Alteryx
+description: Lizenzkonzept von Xtract for Alteryx
 product: xtract-for-alteryx
 parent: einfuehrung
 permalink: /:collection/:path
@@ -10,13 +10,13 @@ weight: 2
 lang: de_DE
 ---
 
-### Über das Lizenzkonzept von Xtract für Alteryx
-Für die Nutzung von Xtract für Alteryx mit Alteryx Designer sind die folgenden Lizenzen erforderlich:
+### Über das Lizenzkonzept von Xtract for Alteryx
+Für die Nutzung von Xtract for Alteryx mit Alteryx Designer sind die folgenden Lizenzen erforderlich:
 - Desktop-Lizenz
 - Serverlizenz (nur für Deployment auf den Alteryx-Server)
 <br>
 
-Mit der Installation von Xtract für Alteryx wird automatisch eine Demo-Lizenz installiert. <br>
+Mit der Installation von Xtract for Alteryx wird automatisch eine Demo-Lizenz installiert. <br>
 Eine reguläre Lizenz wird nach dem Kauf des Produkts bereitgestellt. 
 
 ### Installation von Xtract for Alteryx Lizenz - XtractForAlteryxLicense.json
