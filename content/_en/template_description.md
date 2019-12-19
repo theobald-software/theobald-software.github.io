@@ -6,6 +6,7 @@ permalink: /:collection/template_description
 weight: 0
 ---
 ### About the template
+Especially for "landing pages" that are placed before a bigger section it is advisable to write an introduction:
 In this section... / this section gives an overview.../ the following section is about...
 the template which is a guideline for simplifying the creation of product descriptions. 
 <!--Einleitung und kurze Einführung worum es im Folgenden geht, bitte kein "Will"-Future verwenden-->
@@ -15,7 +16,8 @@ The correct headers for the page is H3 and H4 for the subsections. Don't only us
 <!--Unterüberschrift. Optional, wird gesetzt wenn es sinnvoll ist-->
 This section does not contain any procedural steps.
 Make sure to keep the product descriptions separate from the instructions with steps, when possible.
-Each author should first consider whether he wants to describe the product or a part of it or a function (e.g., architecture or use case).
+Each author should first consider whether he wants to describe the product or a part of it or a function (e.g., architecture or use case). This rule of thumb should be considered per section.
+If it makes sence to incorporate description in one subsection and procedural steps in the other subsection within the document, the author is free to do so.
 Or whether he wants to show the user steps so that the user can perform a particular task. The given template is for a function description. For the creation of the instructions, please use the other template.
 <!--Die Produktbeschreibungen sollen möglichst getrennt von den Handlungsanweisungen gehalten werden. 
 Jeder Autor sollte zunächst überlegen, ob er eine Funktion beschreiben will (z.B. Architektur oder Use Case)

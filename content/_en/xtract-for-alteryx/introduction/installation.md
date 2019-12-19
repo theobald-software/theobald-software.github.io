@@ -6,7 +6,7 @@ description: Installation and First Steps
 product: xtract-for-alteryx
 parent: introduction
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 ---
 

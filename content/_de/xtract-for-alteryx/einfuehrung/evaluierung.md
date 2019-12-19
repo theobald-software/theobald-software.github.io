@@ -6,7 +6,7 @@ description: Evaluierung
 product: xtract-for-alteryx
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 ---
 

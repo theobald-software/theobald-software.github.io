@@ -6,7 +6,7 @@ description: Configuring SAP Connection
 product: xtract-for-alteryx
 parent: introduction
 permalink: /:collection/:path
-weight: 3
+weight: 5
 lang: en_GB
 ---
 

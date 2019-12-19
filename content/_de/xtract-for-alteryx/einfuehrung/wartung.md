@@ -6,7 +6,7 @@ description: Wartung
 product: xtract-for-alteryx
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 4
+weight: 7
 lang: de_DE
 ---
 

@@ -6,7 +6,7 @@ description: Update Installation
 product: xtract-for-alteryx
 parent: introduction
 permalink: /:collection/:path
-weight: 6
+weight: 4
 lang: en_GB
 ---
 
