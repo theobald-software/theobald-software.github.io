@@ -10,7 +10,7 @@ The settings are located the left side of the window "Define data source for SAP
 - Update mode
 <br/>
 <br/>
-![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
+![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive" width="200px"}
 <br/>
 
 ### Operational Data Provider <br/>
