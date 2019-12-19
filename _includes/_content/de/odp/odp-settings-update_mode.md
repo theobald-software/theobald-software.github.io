@@ -11,7 +11,7 @@ Die Einstellungen befinden sich auf der linken Seite des Fensters "Define data s
 - Update mode
 <br/>
 <br/>
-![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive" width="300px"}
+![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
 <br/>
 
 ### Operational Data Provider <br/>
