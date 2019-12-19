@@ -22,7 +22,7 @@ Die Produktlizenz ist an Ihr Unternehmen und einen bestimmten Servernamen gebund
 1. Um die reguläre Lizenz zu installieren, wählen Sie die ausführbare Xtract IS Lizensmanager-Datei im Installationsverzeichnis von Xtract IS aus:<br>
 `C:\Program Files\XtractIS\XtractLicenseManager.exe`
 Der Lizenzmanager wird geöffnet.<br>
-![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="600px"}
+![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
 2. Klicken Sie auf **[Install]**. Das Fenster "Install Xtract License" wird geöffnet.
 3. Suchen Sie die reguläre Datei "XtractISLicense.json" im Installationsverzeichnis von Xtract IS:
 `C:\Program Files\XtractIS\XtractISLicense.json`

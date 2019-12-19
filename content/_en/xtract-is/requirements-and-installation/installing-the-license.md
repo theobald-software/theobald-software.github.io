@@ -22,7 +22,7 @@ A regular license is provided, after purchasing the product. The product license
 1. For installing the regular license, find and double-click the Xtract IS License Manager executable file in the installation directory of Xtract IS:<br>
 `C:\Program Files\XtractIS\XtractLicenseManager.exe` <br>
 The license manager opens.<br>
-![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="600px"}
+![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
 2. Click **[Install]**. The window "Install Xtract License" opens.
 3. Locate and select the regular "XtractISLicense.json" file within the installation directory of Xtract IS:<br>
 `C:\Program Files\XtractIS\XtractISLicense.json`
