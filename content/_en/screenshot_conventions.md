@@ -22,20 +22,20 @@ Size | Width in px | Example description
 ------------ | ------------- | ----------
 XL | 1000 | Whole Screen; also applicable for architecture illustrations
 L | 800 | Big windows
-M | 600 | Medium windows
-S | 400 | Smaller windows
-XS | 300 | Parts of windows
+M | 650 | Medium windows
+S | 450 | Smaller windows
+XS | 250 | Parts of windows
 
 #### XL
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive" width="1000px"} <br>
 #### L
 ![ODP Add parameters](/img/content/odp/odp-component-general.png){:class="img-responsive" width="800px"}}<br> 
 #### M
-![XIS_License_Manager](/img/content/odp/odp-settings-02.png){:class="img-responsive" width="600px"}
+![OPD settings](/img/content/odp/odp-settings-02.png){:class="img-responsive" width="650px"}
 #### S
-![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
+![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="450px"}
 #### XS
-![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive" width="300px"}
+![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive" width="250px"}
 
 Recommended file type for online content is .png. Using .jpeg is not forbidden, but remember that .jpeg-files are more compressed and this may lead to quality loss. In Greenshot .png is set by default. 
 ### Highlighting (type, size, color)
