@@ -1182,3 +1182,11 @@ td.gutter pre {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.anchor {
+  color: $color-text-secondary;
+}
+
+.anchor:hover {
+  color: $color-highlight;
+}
