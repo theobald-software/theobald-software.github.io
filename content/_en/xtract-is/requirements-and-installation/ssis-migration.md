@@ -21,7 +21,7 @@ Please do also note the dependency of Visual Studio/SSDT and SSIS version, see [
 2. In the SSIS package, change the target deployment environment to SSIS 2017
 3. Install the latest Xtract IS version  
 
-### 1.Execute XtractISConversionPreparer.exe
+### 1. Execute XtractISConversionPreparer.exe
 The Xtract IS Conversion Preparer is a tool that prepares SSIS packages (containing Xtract IS components) created for older versions of SSIS for migration to newer versions of SSIS. This tool can be found in the Xtract IS installation folder.
 
 For migration to SSIS 2017, please select SSIS 2016  from the pull down menu.
