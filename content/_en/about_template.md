@@ -10,13 +10,13 @@ The correct usage of the document template is described in the following. The [t
 
 -----------
 
-### About the introducting information
+### About the introduction information
 Especially for "landing pages" that are placed before a bigger section it is advisable to write an introduction:
 In this section... / this section gives an overview.../ the following section is about...
 <!--Einleitung und kurze Einführung worum es im Folgenden geht, bitte kein "Will"-Future verwenden-->
 
 ### Headings
-The correct headers for the page is H3 and H4 for the subsections. Don't only use bold, otherwise the anchors can not be set at all. 
+The correct headers for the page is H3 and H4 for the subsections. Don't only use bold, otherwise the anchors cannot be set at all. 
 
 #### To check the connection
 <!--Unterüberschrift H4. Optional, wird gesetzt wenn es sinnvoll ist.
@@ -34,7 +34,7 @@ This section does not contain any procedural steps.
 Make sure to keep the product descriptions separate from the instructions with steps, when possible.
 Each author should first consider whether he wants to describe the product or a part of it or a function (e.g., architecture or use case) or whether he wants to show the user steps for performing a particular task. <br>
 This division should be considered per section.
-If it makes sence to incorporate description in one subsection and procedural steps in the other subsection within the document, the author is free to do so.
+If it makes sense to incorporate description in one subsection and procedural steps in the other subsection within the document, the author is free to do so.
 
 <!--Die Produktbeschreibungen sollen möglichst getrennt von den Handlungsanweisungen gehalten werden. 
 Jeder Autor sollte zunächst überlegen, ob er eine Funktion beschreiben will (z.B. Architektur oder Use Case)
@@ -65,17 +65,17 @@ Don't use a return before images in instructions to make sure that the image is 
 
 ### Markings in the text
 The ULs (unordered lists) are used for listing the elements, when the order is not important.<br>
-The OLs (ordered lists) should be used for instructions and steps if possible, see other template. 
+The OLs (ordered lists) should be used for instructions and steps, if possible.
 <!--Eine UL (unordered list) wird für die Auflistung verwendet. OL (ordered list) soll möglichst für Handlungsanweisungen und Schritte verwendet werden s. anderes Template-->
 - Buttons: bold & square brackets - **[Edit]** 
-- URLbuttons: just bold - **Subscriptions**
+- URL buttons: just bold - **Subscriptions**
 - Fields within a window: bold - **Name** 
 - Input values: italics - *MATNR*
 - Drop-down menu options: italics - *EC5* 
 
 ### Tables
 <!---Einfache Tabellen verwenden, Markierungen in Tabellen möglichst vermeiden-->
-Keep the tables simple. No markings (bold, italics etc.) in tables, when possible.
+Keep the tables simple. No markings (bsold, italics etc.) in tables, when possible.
 
 First Header | Second Header
 ------------ | -------------
