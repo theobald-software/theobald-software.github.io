@@ -6,22 +6,60 @@ permalink: /:collection/about_template
 weight: 0
 ---
 ### About the template
+The correct usage of the document template is described in the following. The [template](https://help.theobald-software.com/en/empty_template) to copy and fill with content is located in the repository under `content/_en`.
+
+-----------
+
+### About the introducting information
 Especially for "landing pages" that are placed before a bigger section it is advisable to write an introduction:
 In this section... / this section gives an overview.../ the following section is about...
-the template which is a guideline for simplifying the creation of product descriptions. 
 <!--Einleitung und kurze Einführung worum es im Folgenden geht, bitte kein "Will"-Future verwenden-->
+
+### Headings
 The correct headers for the page is H3 and H4 for the subsections. Don't only use bold, otherwise the anchors can not be set at all. 
-<!---Überschrift 3, bitte nicht nur fett verwenden, sonst können die Anker gar nicht gesetzt werden-->
+
+#### To check the connection
+<!--Unterüberschrift H4. Optional, wird gesetzt wenn es sinnvoll ist.
+Formulierung:  Das Verb mit to (z.B. To check the connection) -->
+Suitable titles for product descriptions are "About xyz" or a noun "Requirements" <br>
+Suitable titles for tasks & procedures are verb+ing or verb with "to":
+ - Inserting data (for H3)
+ - To configure AnySQL Maestro (for H4)
+ 
+-----------
+
 ### About function descriptions
 <!--Unterüberschrift. Optional, wird gesetzt wenn es sinnvoll ist-->
 This section does not contain any procedural steps.
 Make sure to keep the product descriptions separate from the instructions with steps, when possible.
-Each author should first consider whether he wants to describe the product or a part of it or a function (e.g., architecture or use case). This rule of thumb should be considered per section.
+Each author should first consider whether he wants to describe the product or a part of it or a function (e.g., architecture or use case) or whether he wants to show the user steps for performing a particular task. <br>
+This division should be considered per section.
 If it makes sence to incorporate description in one subsection and procedural steps in the other subsection within the document, the author is free to do so.
-Or whether he wants to show the user steps so that the user can perform a particular task. The given template is for a function description. For the creation of the instructions, please use the other template.
+
 <!--Die Produktbeschreibungen sollen möglichst getrennt von den Handlungsanweisungen gehalten werden. 
 Jeder Autor sollte zunächst überlegen, ob er eine Funktion beschreiben will (z.B. Architektur oder Use Case)
-oder ob er dem Benutzer Schritte aufzeigen will, damit er eine bestimmte Aufgabe Ausführen kann. Die vorliegende Vorlage ist für eine Funktionsbeschreibung. Für die Erstellung der Handlungsanweisungen, verwendet bitte die andere Vorlage.-->
+oder ob er dem Benutzer Schritte aufzeigen will, damit er eine bestimmte Aufgabe Ausführen kann. 
+
+-----------
+
+### Creating procedural instructions
+This section should contain no or only short descriptions. Ordered lists should be used for steps.
+<!---Überschrift 3, bitte nicht nur fett verwenden, sonst können die Anker gar nicht gesetzt werden-->
+<!-- Handlungsanweisungen sollten möglichst getrennt von den Produktbeschreibungen gehalten werden.
+<!--Überschriften für Handlungsanweisungen mit Schritten sollten möglichst einen Verb haben.-->
+
+1. Open the xyz. <!--OL für die Schritte-->
+2. Click **[OK]**. The window "Window Name" opens. <!--- intermediate result--->
+3. Close the xyz. <br> The table is extracted.
+
+<!--Eine Ergebnisangabe hilft dem Nutzer die Sicherheit zu haben, dass er alles richtig macht-->
+Results or intermediate results supports the user orientation within the help.
+When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets.
+1. Click **[Add]** (1).
+2. Choose the type e.g., *String* out of the drop-down menu (2).
+![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}
+
+Don't use a return before images in instructions to make sure that the image is in the same line as the steps.
 
 -----------
 
@@ -35,18 +73,17 @@ The OLs (ordered lists) should be used for instructions and steps if possible, s
 - Input values: italics - *MATNR*
 - Drop-down menu options: italics - *EC5* 
 
-------
-
 ### Tables
 <!---Einfache Tabellen verwenden, Markierungen in Tabellen möglichst vermeiden-->
-Tables should be kept simple. No markings (bold, italics etc.) in tables, when possible.
+Keep the tables simple. No markings (bold, italics etc.) in tables, when possible.
 
 First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
-------
+
+-----------
 
 ### Notes, Warnings etc.
 There are three main types of warning messages with the corresponding colors.
@@ -104,6 +141,7 @@ A recommendation from Theobald Software is a piece of information that comes fro
 </div>
 
 ------
+
 ### Window, not ~~dialog~~
 
 The window "Connection settings" opens. The designations or titles of the windows should be put into quotation marks.
@@ -131,6 +169,8 @@ You find the installation file in the following folder:
 `C:\Program Files\ERPConnect Services\ERPConnectServices.NintexWorkflowActions.exe`
 
 <!--Pfade sollen mit dem Element `Inline Code` markiert werden. Wenn es sinnvoll ist, können die Pfade eingerückt werden--->
+
+-----------
 
 #### Code
 Code should be marked with the element Inline Code.
