@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Template for tasks
-description: Template for creating online help content
-permalink: /:collection/template_task
+title: Empty template 
+description: Template to copy and fill with content
+permalink: /:collection/empty_template
 weight: 1
 ---
 
