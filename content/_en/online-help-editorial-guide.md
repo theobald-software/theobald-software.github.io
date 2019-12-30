@@ -9,5 +9,5 @@ weight: 0
 The editorial guidelines of Theobald software are a set of recommendations for writing online help content of Theobald Software products. The guidelines are not binding rules.
 The editorial guidelines consist of the following parts:
 - Style guide
-- Two document templates 
+- Document template  
 - Graphic concept for screenshots  (rudimentary)
