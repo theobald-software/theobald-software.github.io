@@ -44,6 +44,7 @@ This is an unordered list for items where the order is not important.
 ------
 
 ### Tables
+
 First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
@@ -52,9 +53,10 @@ Content in the first column | Content in the second column
 ------
 
 ### Notes, Warnings etc.
+
 #### Note:
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> The corresponding SQL command is generated dynamically and executed on the SAP server.
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> The corresponding SQL command is generated dynamically and executed on the SAP server.</div>
 
 #### Warning - not typical for function descriptions:
 <div class="alert alert-warning">
@@ -65,20 +67,23 @@ Content in the first column | Content in the second column
 </div><br>
 
 #### Tip & Recommendation:
-**Tip:** / **Recommendation:** This is a smart alternative.
-or
+**Tip:** / **Recommendation:** This is a smart alternative. <br>
+
+or <br>
 
 <div class="alert alert-success">
   <i class="fas fa-lightbulb"></i> <strong>Tip:</strong> Basics of the product Xtract Universal are described in the section <a href= "https://help.theobald-software.com/en/xtract-universal/getting-started-table" class="alert-link">Getting Started with Table</a>.<br>
 </div>
 
 ------
+
 ### Window, not ~~dialog~~
 
 The window "Connection settings" opens.
 <!--Die Bezeichnungen der Fenster soll in Anführungszeichen gesetzt werden-->
 In the main menu bar of the designer there are additional adjustable settings:   **Servers > Settings**.
 <!--Mit dem Symbol ">" können Menusprünge ausgedrückt werden-->
+
 ----
 
 ### Paths & URLs
