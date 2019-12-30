@@ -64,7 +64,20 @@ To prevent quality loss, you can use other screenshot taking options:
 - Capture full screen **[Ctrl]+[Print]** - to capture full screen and crop image in the editor. 
 The quality does not decrease  when it's cropped. 
 
-### Highlighting (type, size, color)
-Generally use squares to highlight parts of a screenshot. Use Theobald red for any kind of highlighting.
+### Highlighting 
+Highlighting refers to marking any kind of elements on a screenshot.
+The following guidelines refer to the color, style and usage of highlighting elements.
+
+#### Color
+
+Use Theobald red - #FF003C (255,0,60) for any kind of highlighting. If an additional color is necessary, use black from Greenshot.
+
+#### Style & type of highlighting
+
+Generally use squares to highlight parts of a screenshot. It is easier to keep them consistent, as there is no need to take care of the angle as in case of arrows. It also doesn't look cluttered when there are many squares. <br>
+Avoid arrows, use arrows only for movement (e.g. Drag&Drop). <br>
+Avoid mixture of elements, don't use ovals.
+
 ### Position numbers
+Use position numbers for action steps. Make sure not to cover important information (buttons, text) when placing position numbers. Place the position numbers in reading direction (from left to right & clockwise).
 Use the default position numbers provided in Greenshot. Change the color to Theobald red.
