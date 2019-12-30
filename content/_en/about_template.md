@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Template for descriptions
-description: Template for creating online help content
-permalink: /:collection/template_description
+title: Template for creating online help content
+description: Explanation and descripion of the template
+permalink: /:collection/about_template
 weight: 0
 ---
 ### About the template
