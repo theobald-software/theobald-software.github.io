@@ -10,7 +10,7 @@ weight: 4
 lang: en_GB
 ---
 
-The next step is to load an extraction in BOARD using the data reader. In the BOARD designer we defined the extraction plants which extracts the plants table *T001W*  from SAP. In BOARD wie defined the entity Plants, in which we want to load the SAP data. Now select *Database -> Data Reader -> SAP -> New Protocol*  to create a new protocol.
+The next step is to load an extraction in BOARD using the data reader. In the BOARD designer we defined the extraction plants, which extract the plants table *T001W* from SAP. In BOARD we defined the entity plants, in which we want to load the SAP data. Now select *Database -> Data Reader -> SAP -> New Protocol*  to create a new protocol.
 
 ![Load-Extraction-01](/img/content/Load-Extraction-01.png){:class="img-responsive"}
 
