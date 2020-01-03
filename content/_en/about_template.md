@@ -32,8 +32,8 @@ Suitable titles for tasks & procedures are verb+ing or verb with "to":
 <!--Unterüberschrift. Optional, wird gesetzt wenn es sinnvoll ist-->
 This section does not contain any procedural steps.
 Make sure to keep the product descriptions separate from the instructions with steps, when possible.
-Each author should first consider whether he wants to describe the product or a part of it or a function (e.g., architecture or use case) or whether he wants to show the user steps for performing a particular task. <br>
-This division should be considered per section.
+Each author needs first to consider whether he wants to describe the product or a part of it or a function (e.g., architecture or use case) or whether he wants to show the user steps for performing a particular task. <br>
+This division needs to be considered per section.
 If it makes sense to incorporate description in one subsection and procedural steps in the other subsection within the document, the author is free to do so.
 
 <!--Die Produktbeschreibungen sollen möglichst getrennt von den Handlungsanweisungen gehalten werden. 
@@ -65,7 +65,7 @@ Don't use a return before images in instructions to make sure that the image is 
 
 ### Markings in the text
 The ULs (unordered lists) are used for listing the elements, when the order is not important.<br>
-The OLs (ordered lists) should be used for instructions and steps, if possible.
+The OLs (ordered lists) are used for instructions and steps, if possible.
 <!--Eine UL (unordered list) wird für die Auflistung verwendet. OL (ordered list) soll möglichst für Handlungsanweisungen und Schritte verwendet werden s. anderes Template-->
 - Buttons: bold & square brackets - **[Edit]** 
 - URL buttons: just bold - **Subscriptions**
@@ -107,7 +107,7 @@ Notes is additional information and can be formulated freely.
 
 #### Warning - not typical for function descriptions:
 The general guideline is to not use many "Warnings" as the less "Problems" the product can cause, the better is the product. The warning **must** be placed in front of the possible issue and not after.
-If possible, the warning note should be formulated according to the following principle:
+If possible, the warning note needs to be formulated according to the following principle:
 - Type & source of the problem, use bold and break;
 - Cause with an explanation of the threat, break;
 - Remedy with steps to avoid the threat.
@@ -144,7 +144,7 @@ A recommendation from Theobald Software is a piece of information that comes fro
 
 ### Window, not ~~dialog~~
 
-The window "Connection settings" opens. The designations or titles of the windows should be put into quotation marks.
+The window "Connection settings" opens. The designations or titles of the windows needs to be put into quotation marks.
 <!--Die Bezeichnungen der Fenster soll in Anführungszeichen gesetzt werden-->
 In the main menu bar of the designer there are additional adjustable settings:   **Servers > Settings**.
 The symbol ">" can be used to demonstrate menu jumps. 
@@ -155,14 +155,14 @@ The symbol ">" can be used to demonstrate menu jumps.
 ### Paths & URLs
 
 #### URLs
-Don't use the "full qualified URLs". Square brackets should contain a meaningful description, not just "click here" or "click me".
+Don't use the "full qualified URLs". Square brackets have to contain a meaningful description, not just "click here" or "click me".
 
 For more information on defining of the extractions, see [Define an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started-table/define-a-table-extraction) with the "SAP Table or View" component as an example.
 
 <!-- Nicht den "full qualified URL" verwenden.
 In den eckigen Klammern soll eine sinnvolle Bezeichung stehen, nicht z.B. nur "hier" oder "Klick mich".-->
 #### Paths
-Paths should be marked with the element Inline Code. If it makes sense, the paths can be placed into a new line, by using break.
+Paths need to be marked with the element Inline Code. If it makes sense, the paths can be placed into a new line, by using break.
 
 You find the installation file in the following folder:
 
@@ -173,7 +173,7 @@ You find the installation file in the following folder:
 -----------
 
 #### Code
-Code should be marked with the element Inline Code.
+Code has to be marked with the element Inline Code.
 
 Use also the automatic highlighting of keywords based on programming language:
 
