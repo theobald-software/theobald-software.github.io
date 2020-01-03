@@ -18,7 +18,7 @@ To do this, select an existing extraction in Xtract Universal and click on the D
 
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 
-In the following example, the table *KNA1* is extended by a column with the current time stamp of type *DATETIME*. 
+In the following example, the table *KNA1* is extended by a column with the current timestamp of type *DATETIME*. 
 This new column is filled dynamically using a .NET-based function. 
 
 <div class="alert alert-info">

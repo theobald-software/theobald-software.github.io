@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-desktop-get-customer-information
 ---
 
-The function module *SD_RFC_CUSTOMER_GET* is available in a standard SAP system and can be used to demonstrate and test RFC applications. As *Import* parameters, the function module accepts a customer number (KUNNR), a customer name (NAME1), or a combination of both. The function module returns the customer's address data in form of a Tables parameter. The function module can accept wild cards as *Import* parameters and returns zero or more customer address records. The following code example illustrates how you can call the *RFC_CUSTOMER_GET* function module using ERPConnect Services:
+The function module *SD_RFC_CUSTOMER_GET* is available in a standard SAP system and can be used to demonstrate and test RFC applications. As *Import* parameters, the function module accepts a customer number (KUNNR), a customer name (NAME1), or a combination of both. The function module returns the customer's address data in form of a Tables parameter. The function module can accept wildcards as *Import* parameters and returns zero or more customer address records. The following code example illustrates how you can call the *RFC_CUSTOMER_GET* function module using ERPConnect Services:
 
 <details>
 <summary>Click to open C# example.</summary>
