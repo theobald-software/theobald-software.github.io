@@ -10,60 +10,48 @@ weight: 4
 lang: en_GB
 ---
 
-In this step we would load the extraction in an Oracle Database. 
+The following steps depict the loading of the extraction in an Oracle Database. 
 
-Therefore we create an Oracle Destination. 
+To load an extraction, an Oracle destination needs to be created and defined.
 
-### Define Oracle Destination
+### Creating an Oracle Destination
 
-- Click on **Destinations**
+1. In the main window of the designer, click **Destinations** to open destination settings.
+![Load-Destinations](/img/content/load_destinations.png){:class="img-responsive"}
 
-![Load-Destinations](/img/content/Load-Destinations.jpg){:class="img-responsive"}
+2. Select a destination and click **[...]** (1) to manage destinations. 
+![Load-Manage-Shared-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}
 
-- Select **Shared** and click on **Manage** ... 
+3. Click **[Add]** (2) to add a new destination.
 
-![Load-Manage-Shared-Destination](/img/content/Load-Manage-Shared-Destination.jpg){:class="img-responsive"}
+4. Fill in a **Name**, select **Oracle** from the **Type** list and click **[OK]** (3).
+![Select-Destination-Type](/img/content/destination_details_oracle.png){:class="img-responsive"}
 
-- Click on **Add**
+5. In the section "Connection", fill in the fields **Data Source, Username** and **Password** with the correspondent values, where data source is the Oracle server name.
+6. Click **[Test Connection]** (4) to check the connection to the Oracle database.
+![Test-Connection-Successful](/img/content/oracle_destination-settings.png){:class="img-responsive"}
 
-![Shared-Destinations](/img/content/Shared-Destinations.jpg){:class="img-responsive"}
-
-- Set the **Name** and
-- Select **Oracle** from the **Type** list.
-
-![Select-Destination-Type](/img/content/Select-Destination-Type.jpg){:class="img-responsive"}
-
-- Fill the fields **Data Source, User Id** und **Password** with the correspondent values, where Data Source is the Oracle server name.
-- Click on **Test Connection** to check the connection to the Oracle database.
-
-![Test-Connection-Successful](/img/content/Test-Connection-Successful.jpg){:class="img-responsive"}
-
-- Click on **OK** to save the destination connection.  
-- Select the created destination connection and click on **OK**.
-
-The created destination connection has been selected. Now you see the **Extraction-Specific Settings**. We keep the default settings: 
-
+7. Click **[OK]** (5) to save the destination connection.  
+8. In the "Destination Settings window, choose your created **Oracle** destination to display the extraction-specific settings. In the example, the default settings are kept:
 ![Load-Shared-Destination-Oracle](/img/content/Load-Shared-Destination-Oracle.jpg){:class="img-responsive"}
 
-- Click on OK to get back to the Designer.             
+9. Click **[OK]** to get back to the designer.             
 
 
-**Run Extraction**
+### Loading the extraction into Oracle
             
-Now we would like to load the extraction in Oracle.
-- Select the extraction and click  on **Run** 
-- Click on **Run in Browser** and then on **Close**.
-
+            
+1. Select the extraction and click **[Run]** 
+2. Click **[Run in Browser]** and then **[Close]**.
 ![Run-In-Browser-Oracle](/img/content/Run-In-Browser-Oracle.jpg){:class="img-responsive"}
-
-- The browser opens and shows the Log.
-
+The browser opens and shows the Log.
 ![Run-In-Browser-Result-Oracle](/img/content/Run-In-Browser-Result-Oracle.jpg){:class="img-responsive"}
 
-- In Oracle SQL Developer Studio you can check that the table has been created. 
+#### To check the extraction result
+In Oracle SQL Developer Studio you can check whether the extracted table exists. 
 
-![Oracle-Database-Metadata](/img/content/Oracle-Database-Metadata.jpg){:class="img-responsive"}
+![Oracle-Database-Metadata](/img/content/xu/Oracle-Database-Metadata.jpg){:class="img-responsive"}
 
-- And check the table content. 
+You can also check the table content: 
 
-![Oracle-Database-Data](/img/content/Oracle-Database-Data.jpg){:class="img-responsive"}
+![Oracle-Database-Data](/img/content/xu/Oracle-Database-Data.jpg){:class="img-responsive"}
