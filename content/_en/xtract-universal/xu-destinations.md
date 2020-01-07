@@ -43,7 +43,7 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 
 **Business Systems:** 
 - [Salesforce](./xu-destinations/salesforce) 
-- [Sharepoint](./xu-destinations/sharepoint) 
+- [SharePoint](./xu-destinations/sharepoint) 
 
 **Cloud Storage:**
 - [Amazon AWS S3](./xu-destinations/amazon-aws-s3)
