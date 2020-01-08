@@ -1,4 +1,4 @@
-**Preparation**
+### Preparation
 
 Definiert die Aktion auf der Zieldatenbank, bevor die Daten in die Zieltabelle eingefügt werden.
 - *Drop & Create*: Tabelle entfernen falls vorhanden und neu anlegen (Default).
@@ -15,7 +15,7 @@ Wollen Sie im ersten Schritt nur die Tabelle anlegen und keine Daten einfügen, 
 Nachdem die Tabelle angelegt ist, bleibt es Ihnen überlassen, die Tabellendefinition zu ändern, 
 indem Sie bspw. entsprechende Schlüsselfelder und Indizes bzw. zusätzliche Felder anlegen.
 
-**Row Processing**
+### Row Processing
 
 Definiert, wie die Daten in die Zieltabelle eingefügt werden.
 - *Insert*: Datensätze einfügen (Default).
@@ -24,7 +24,7 @@ Definiert, wie die Daten in die Zieltabelle eingefügt werden.
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL.
 - *Merge (deprecated)*: Diese Option ist veraltet. Bitte nutzen Sie die Option Fill merge staging table und prüfen Sie den Abschnitt Über Merging. 
 
-**Finalization**
+### Finalization
 
 Definiert die Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle erfolgreich eingefügt werden.
 - *Finalize Merge*: schließt den Merge-Prozess ab und löscht z.B. die temporäre Staging-Tabelle. Für weitere Infos siehe Abschnitt Über Merging. 
