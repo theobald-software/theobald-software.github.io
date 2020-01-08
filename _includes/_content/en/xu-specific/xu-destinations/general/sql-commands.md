@@ -1,4 +1,4 @@
-**Preparation**
+### Preparation
 
 Defines the action on the target database before the data is inserted into the target table.
 - *Drop & Create*: Remove table if available and create new table (default).
@@ -15,7 +15,7 @@ If you only want to create the table in the first step and do not want to insert
 Once the table is created, it is up to you to change the table definition, 
 by, for example, creating corresponding key fields and indexes or additional fields.
 
-**Row Processing**
+### Row Processing
 
 Defines how the data is inserted into the target table.
 - *Insert*: Insert records (default).
@@ -24,14 +24,14 @@ Defines how the data is inserted into the target table.
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 - *Merge (deprecated)*: This option is obsolete. Please use the Fill merge staging table option and check the About Merging section. 
 
-**Finalization**
+### Finalization
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
 - *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example. For more information, see About Merging. 
 - *None*: no action (default).
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 
-**About Merging**
+#### About Merging
 
 The prerequisite is that you have a table in which you want to merge the new data with the existing data.
 Ideally, you created this table in the first run with the corresponding preparation option and filled it with data with the Row Processing option Insert.
@@ -55,7 +55,7 @@ Fields that do not appear in the SQL statement are not affected by changes.
 It is important that an appropriate index is created in order to execute the merge command quickly. 
 Without an index, the execution of the merge command would take a long time depending on the amount of data.
 
-**Custom SQL**
+####Custom SQL
 
 Here you can define your own SQL or script expressions. You can use existing SQL commands as templates. 
 
@@ -64,7 +64,7 @@ The following [link](../microsoft-sql-server/sql-server-custom-sql) provides an 
 A syntactic adaptation of the code is necessary for other DB target environments!
 ```
 
-**Templates**
+#### Templates
 
 You can write your own SQL expressions and thus have the possibility to adapt the loading of the data to your needs. <br>
 You can also, for example, execute stored procedures that exist in the database.
@@ -73,7 +73,7 @@ To do this, you can use the SQL templates provided in the following phases:
 - *Row Processing (e.g. Insert or Merge)* and 
 - *Finalization*.
 
-**Script Expressions**
+#### Script Expressions
 
 You can now also use script expressions for the Custom SQL command. You can find more information on the Script Expressions page (under Advanced Techniques).
 
