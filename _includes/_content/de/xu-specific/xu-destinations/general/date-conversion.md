@@ -1,4 +1,4 @@
-#### Date conversion
+### Date conversion
 
 **Convert date strings**<br>
 Konvertiert das zeichenartige SAP-Datum (YYYYMMDD, z.B. 19900101) zu einem formatierten Datum (YYYY-MM-DD, z.B. 1990-01-01). Im Datenziel hat das SAP-Datum keinen String-Datentyp sondern einen echten Datumstyp.
