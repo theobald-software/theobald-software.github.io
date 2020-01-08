@@ -1,4 +1,4 @@
-#### Date conversion
+### Date conversion
 
 **Convert date strings**<br>
 Converts the character-type SAP date (YYYYMMDD, e.g., 19900101) to a special date format (YYYY-MM-DD, e.g., 1990-01-01). Target data uses a real date data-type and not the string data-type to store dates.
