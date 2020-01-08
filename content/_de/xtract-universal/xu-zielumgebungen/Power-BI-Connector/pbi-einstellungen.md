@@ -16,4 +16,5 @@ Hier können Sie die spezifischen Einstellungen für die gewählte Zielumgebung 
 ![pbi-configuration](/img/content/XU_pbi_connector_destination.jpg){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
