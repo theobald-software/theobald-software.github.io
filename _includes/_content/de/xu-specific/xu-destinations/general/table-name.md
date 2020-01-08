@@ -1,4 +1,4 @@
-#### Table Name
+### Table Name
 
 bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 
