@@ -1,4 +1,4 @@
-#### Column Name Style
+### Column Name Style
 
 Definiert den Spaltennamen. Folgende Optionen sind verfügbar: 
 
