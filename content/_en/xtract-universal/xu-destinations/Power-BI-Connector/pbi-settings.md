@@ -15,4 +15,5 @@ You can define the following destination-specific settings:
 
 ![pbi-configuration](/img/content/XU_pbi_connector_destination.jpg){:class="img-responsive"}
 
+{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
