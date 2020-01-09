@@ -1,5 +1,5 @@
 ---
-ref: xu-server-04
+ref: xu-server-03
 layout: page
 title: Server Einstellungen
 description: Server Einstellungen
