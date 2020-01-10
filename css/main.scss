@@ -1185,6 +1185,8 @@ td.gutter pre {
 
 .anchor {
   color: $color-text-secondary;
+  padding-top: 70px;
+  margin-top: -70px;
 }
 
 .anchor:hover {
