@@ -4,9 +4,17 @@ var main = {
     // Initial calculation for the sideMenu offset
     adjustSideMenu(107); // outer height of full nav
 
+    let sideMenuOffset = 0;
+    // shorten navbar when the url is an anchor link
+    if(window.location.hash) {
+        $(".navbar").addClass("top-nav-short");
+        $(".side-menu").addClass("nav-shortened");
+
+        sideMenuOffset = 70; // outer height of shortened nav
+    }
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
-        let sideMenuOffset = 0;
 
         if ($(".navbar").offset().top > 50) {
             $(".navbar").addClass("top-nav-short");
