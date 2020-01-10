@@ -90,7 +90,7 @@ Optional Parameters:
     {% endif %}
 
     {% capture new_heading %}
-    <h style='padding-top: 70px;margin-top: -70px;' {{ _hAttrToStrip }}
+    <h{{ _hAttrToStrip }} style='padding-top: 70px;margin-top: -60px;'
     {{ include.bodyPrefix }}
     {% if beforeHeading %}
     {{ anchor }}{{ header }}
