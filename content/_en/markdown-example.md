@@ -57,20 +57,29 @@ The contents can be captured or directly placed inside quotations inside the inc
 
 ### Warning box
 
+warning
 {:.box-warning}
-This is a warning box. Längentest xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+danger
 {:.box-danger}
 
+info
 {:.box-info}
 
+note
 {:.box-note}
 
+caution
 {:.box-caution}
 
+error
 {:.box-error}
 
+
+tip
 {:.box-tip}
+
+warning_2
 
 {% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
 {% include _content/infobox.html type="warning" text=text %}
