@@ -1,4 +1,6 @@
-### Preparation
+### SQL Commands
+
+#### Preparation
 
 Defines the action on the target database before the data is inserted into the target table.
 - *Drop & Create*: Remove table if available and create new table (default).
@@ -15,7 +17,7 @@ If you only want to create the table in the first step and do not want to insert
 Once the table is created, it is up to you to change the table definition, 
 by, for example, creating corresponding key fields and indexes or additional fields.
 
-### Row Processing
+#### Row Processing
 
 Defines how the data is inserted into the target table.
 - *Insert*: Insert records (default).
@@ -24,7 +26,7 @@ Defines how the data is inserted into the target table.
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 - *Merge (deprecated)*: This option is obsolete. Please use the Fill merge staging table option and check the About Merging section. 
 
-### Finalization
+#### Finalization
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
 - *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example. For more information, see About Merging. 
@@ -55,7 +57,7 @@ Fields that do not appear in the SQL statement are not affected by changes.
 It is important that an appropriate index is created in order to execute the merge command quickly. 
 Without an index, the execution of the merge command would take a long time depending on the amount of data.
 
-####Custom SQL
+#### Custom SQL
 
 Here you can define your own SQL or script expressions. You can use existing SQL commands as templates. 
 
