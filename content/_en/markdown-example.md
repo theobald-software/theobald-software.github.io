@@ -57,32 +57,37 @@ The contents can be captured or directly placed inside quotations inside the inc
 
 ### Warning box
 
-warning
-{:.box-warning}
 
-danger
+{:.box-warning}
+warning
+
 {:.box-danger}
 
-info
+danger
+
+
 {:.box-info}
+info
 
-note
+
 {:.box-note}
+note
 
-caution
+
 {:.box-caution}
+caution
 
-error
+
 {:.box-error}
+error
 
 
-tip
 {:.box-tip}
+tip
 
-warning_2
 
 {% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
-{% include _content/infobox.html type="warning" text=text %}
+{% include _content/infobox.html type="warning_2" text=text %}
 
 ### Recommendation / Tip box
 
