@@ -20,8 +20,6 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 - SQL Server Integration Services (SSIS)
 - For Development: Visual Studio (except express version) for Business Intelligence is needed to create SSIS packages.
 
-Check our KB for [the list of supported SSIS & VS Versions](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is). 
-
 {% include _content/en/requirements/sap-requirements-xtract.md %}
 {% include _content/en/requirements/operating-systems.md %}
 
