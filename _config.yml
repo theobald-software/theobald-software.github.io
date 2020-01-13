@@ -64,6 +64,10 @@ language:
     search-box-text: "Search..."
     search-filters: "Filters"
     search-filter-all-products: "Search through all products"
+    info-box-type-warning: "Warning!"
+    info-box-type-note: "Note:"
+    info-box-type-tip: "Tip:"
+    info-box-type-recommendation: "Recommendation:"
   de:
     navbar-links:
       - title: "Zur Knowledgebase"
@@ -80,10 +84,13 @@ language:
     search-box-text: "Suche..."
     search-filters: "Filter"
     search-filter-all-products: "Alle Produkte durchsuchen"
+    info-box-type-warning: "Warnung!"
+    info-box-type-note: "Hinweis:"
+    info-box-type-tip: "Tipp:"
+    info-box-type-recommendation: "Empfehlung:"
 
 ########## SECTION 3 - COLLECTION CONFIGURATIONS ##########
 ########## Languages can easily be added this way.
-##########  see the readme file for more information regarding that,
 ##########  requires more than just adding a language here.
 collections_dir: content
 collections:

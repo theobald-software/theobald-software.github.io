@@ -4,6 +4,7 @@ title: Markdown Example
 description: Markdown Example
 permalink: /:collection/markdown-example
 weight: 0
+lang: en_GB
 ---
 
 This page contains almost all elements that can be used for pages.
@@ -45,23 +46,25 @@ A code block can be added with the following:
 {% endhighlight %}
 
 # Elements
-## Information boxes
+## Info boxes
 A specific element that can be inserted is the information box. This can be used to highlight information in a certain way.
+The contents can be captured or directly placed inside quotations inside the include statement.
 
-### Notification / Information box
+### Note box
 
-{: .box-note}
-This is a notification box, we can put _anything_, including **markup** in here.
+{% capture text %}This is a note box{% endcapture %}
+{% include _content/infobox.html type="note" text=text %}
 
 ### Warning box
 
-{: .box-warning}
-This is a warning box.
+{% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
+{% include _content/infobox.html type="warning" text=text %}
 
-### Error box
+### Recommendation / Tip box
 
-{: .box-error}
-This is an error box.
+{% include _content/infobox.html type="recommendation" text="This is a recommendation box" %}
+
+Note: 'recommendation' is the same as 'tip' and are interchangeable.
 
 ## Tables
 Tables are styled in a specific way, but this will happen automatically.

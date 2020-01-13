@@ -1,0 +1,30 @@
+{% assign lang = page.lang | split: "_" | first %}
+
+{% case include.type %}
+    {% when "warning" %}
+        {% capture class %}alert-warning{% endcapture %}
+        {% capture icon %}fa-exclamation-triangle{% endcapture %}
+        {% capture title %}{{ site.language[lang].info-box-type-warning }}{% endcapture %}
+    {% when "note" %}
+        {% capture class %}alert-info{% endcapture %}
+        {% capture icon %}fa-info-circle{% endcapture %}
+        {% capture title %}{{ site.language[lang].info-box-type-note }}{% endcapture %}
+    {% when "tip" %}
+        {% capture class %}alert-success{% endcapture %}
+        {% capture icon %}fa-lightbulb{% endcapture %}
+        {% capture title %}{{ site.language[lang].info-box-type-tip }}{% endcapture %}
+    {% when "recommendation" %}
+        {% capture class %}alert-success{% endcapture %}
+        {% capture icon %}fa-lightbulb{% endcapture %}
+        {% capture title %}{{ site.language[lang].info-box-type-recommendation }}{% endcapture %}
+    {% else %}
+        {% capture class %}alert-success{% endcapture %}
+        {% capture icon %}fa-lightbulb{% endcapture %}
+        {% capture title %}{{ site.language[lang].info-box-type-warning }}{% endcapture %}
+{% endcase %}
+
+{% capture text %} <strong>{{ title }} </strong>{{ include.text }}{% endcapture %}
+
+<div class="alert {{ class }}">
+    <i class="fas {{ icon }}"></i>{{ text }}
+</div>
