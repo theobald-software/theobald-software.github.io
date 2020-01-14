@@ -26,8 +26,10 @@ Um die reguläre Lizenz zu installieren, legen Sie die XtractUniversalLicense.js
  ![XU_license](/img/content/xu/xu_json_license.png ){:class="img-responsive"}
 
 Ein Neustart des Xtract Universal Service ist nicht notwendig.
+
 {: .box-tip }
 **Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom Xtract Universal Designer  **[Help] > [Info]** oder drücken Sie F12.<br>
+
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
 
 Vor der Xtract Universal Version 2.99.0 wurden die Lizenzdateien als .dll Dateien ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des Xtract Universal Serivce ist bei .dll-Datei unabdingbar.
