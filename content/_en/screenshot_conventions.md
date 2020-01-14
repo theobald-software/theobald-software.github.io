@@ -49,7 +49,7 @@ The quality does not decrease  when it's cropped.
 **Quality loss** <br>
 Don't use resize option in Greenshot. It always leads to quality loss. Use the crop option instead.
 
-![Resizing](/img/content/help_concept/greenshot_resize_crop.png){width="400px" class="img-responsive"}
+![Resizing](/img/content/help_concept/greenshot_resize_crop.png){:width="400px" class="img-responsive"}
 
 Png is recommended file type for online content. Jpeg is not forbidden but remember that .jpeg-files are more compressed and this may lead to quality loss. In Greenshot .png is set by default. To check or change output file type in Greenshot, navigate to **Settings > Output > Image format**. <br>
 ![Settings](/img/content/help_concept/greenshot_settings.png){:class="img-responsive"}
