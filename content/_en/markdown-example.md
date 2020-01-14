@@ -45,6 +45,58 @@ A code block can be added with the following:
 
 {% endhighlight %}
 
+# Elements
+## Info boxes
+A specific element that can be inserted is the information box. This can be used to highlight information in a certain way.
+For the include method, the contents can be captured or directly placed inside quotations inside the include statement.
+For the simplified method, make sure the content is directly after the tag. All other content should at least have a distance of 1 white line.
+
+### Note box
+
+#### Include method
+
+{% capture text %}This is a note box{% endcapture %}
+{% include _content/infobox.html type="note" text=text %}
+
+#### Simplified method
+
+{: .box-note }
+This is a note box (shortcode version)
+
+{: .box-note }
+**Note:** The shortcode version can also contain '**Note:**' but it has to be written explicitly.
+
+### Warning box
+
+#### Include method
+
+{% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
+{% include _content/infobox.html type="warning" text=text %}
+
+#### Simplified method
+
+{: .box-warning }
+This is a warning box (shortcode version)<br>It can contain multiple<br>lines of text.
+
+{: .box-warning }
+**Warning!** The shortcode version can also contain '**Warning!**' but it has to be written explicitly.
+
+### Recommendation / Tip box
+
+#### Include method
+
+{% include _content/infobox.html type="recommendation" text="This is a recommendation box" %}
+
+Note: 'recommendation' is the same as 'tip' and are interchangeable.
+
+#### Simplified method
+
+{: .box-tip }
+This is a tip box (shortcode version). There is no equivalent for recommendation as the styling is identical.
+
+{: .box-tip }
+**Tip:** The shortcode version can also contain '**Tip:**' but it has to be written explicitly.
+
 ## Tables
 Tables are styled in a specific way, but this will happen automatically.
 
