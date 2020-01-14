@@ -45,27 +45,6 @@ A code block can be added with the following:
 
 {% endhighlight %}
 
-# Elements
-## Info boxes
-A specific element that can be inserted is the information box. This can be used to highlight information in a certain way.
-The contents can be captured or directly placed inside quotations inside the include statement.
-
-### Note box
-
-{% capture text %}This is a note box{% endcapture %}
-{% include _content/infobox.html type="note" text=text %}
-
-### Warning box
-
-{% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
-{% include _content/infobox.html type="warning" text=text %}
-
-### Recommendation / Tip box
-
-{% include _content/infobox.html type="recommendation" text="This is a recommendation box" %}
-
-Note: 'recommendation' is the same as 'tip' and are interchangeable.
-
 ## Tables
 Tables are styled in a specific way, but this will happen automatically.
 
