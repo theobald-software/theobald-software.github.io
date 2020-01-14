@@ -11,6 +11,7 @@ The following section contains information on creating consistent screenshots.<b
 The main topics around creating screenshots are the following:
 - Storing & naming screenshots
 - Size, resolution & quality
+- Frames & shadows
 - Highlighting (type, size, color)
 - Position numbers
 
@@ -33,31 +34,63 @@ Optionally underscore can be used to separate the items and hyphen (minus) to se
 
 ### Size, resolution & quality
 The recommended software for creating the screenshots is Greenshot. The following instructions will be based on the usage of Greenshot.
+It is not possible to regulate the image sizes without quality loss. <br>
 
-![Shadow test](/img/content/old_unused_images/test.png)
-
-#### Quality 
-Png is recommended file type for online content. Jpeg is not forbidden but remember that .jpeg-files are more compressed and this may lead to quality loss. In Greenshot .png is set by default. To check or change output file type in Greenshot, navigate to **Settings > Output > Image format**.
 When manually resizing the file size in Greenshot editor, the quality of the image decreases. 
 To prevent quality loss, you can use other screenshot taking options:
-- Capture window **[Alt]+[Print]** - to capure only a prompted window
+- Capture window **[Alt]+[Print]** - to capture only a prompted window
 - Capture full screen **[Ctrl]+[Print]** - to capture full screen and crop image in the editor. 
 The quality does not decrease  when it's cropped. 
+
+![Capture](/img/content/help_concept/greenshot_capture.png)
+
+{: .box-warning } 
+**Quality loss** <br>
+Don't use resize option in Greenshot. It always leads to quality loss. Use the crop option instead.
+
+![Resizing](/img/content/help_concept/greenshot_resize_crop.png)
+
+Png is recommended file type for online content. Jpeg is not forbidden but remember that .jpeg-files are more compressed and this may lead to quality loss. In Greenshot .png is set by default. To check or change output file type in Greenshot, navigate to **Settings > Output > Image format**. <br>
+![Settings](/img/content/help_concept/greenshot_settings.png)
+
+### Frames & shadows
+When creating a screenshot of a prompted window with the option *Capture Window* (**[Alt]+[Print]**), the frame appears automatically.
+
+![Frames](/img/content/help_concept/xu_demo_license.png)
+
+When creating a part of a screen, add a shadow **[Shift]+[Q]**. 
+
+![Shadow test](/img/content/help_concept/shadow.png)
 
 ### Highlighting 
 Highlighting refers to marking any kind of elements on a screenshot.
 The following guidelines refer to the color, style and usage of highlighting elements.
 
-#### Color
+#### General
 
-Use Theobald red - #FF003C (255,0,60) for any kind of highlighting. If an additional color is necessary, use black from Greenshot.
+- Color - Use Theobald red - #FF003C (255,0,60) for any kind of highlighting. If an additional color is necessary, use black from Greenshot.
+- Line thickness 
+    - big images - 3pt
+    - small images - 2pt
+
+![Greenshot color](/img/content/help_concept/greenshot_marking_color.png)
+
+- Mouse pointer - avoid if not helpful for understanding.
+
+![Mouse pointer](/img/content/help_concept/destination_details_oracle.png
 
 #### Style & type of highlighting
 
-Generally use squares to highlight parts of a screenshot. It is easier to keep them consistent, as there is no need to take care of the angle as in case of arrows. It also doesn't look cluttered when there are many squares. <br>
+Generally, use squares to highlight parts of a screenshot. It is easier to keep them consistent, as there is no need to take care of the angle as in case of arrows. It also doesn't look cluttered when there are many squares necessary. <br>
 Avoid arrows, use arrows only for movement (e.g. Drag&Drop). <br>
-Avoid mixture of elements, don't use ovals.
+Avoid mixture of elements, don't use ovals. <br>
+![Squares](/img/content/help_concept/xu_UPN_steffan@.png)
+
+To keep the squares consistent, check the line thickness & hold down **[Ctrl]** when drawing to have the object anchored in it's geometrical middle. 
 
 ### Position numbers
-Use position numbers for action steps. Make sure not to cover important information (buttons, text) when placing position numbers. Place the position numbers in reading direction (from left to right & clockwise).
-Use the default position numbers provided in Greenshot. Change the color to Theobald red.
+Use position numbers for action steps. Make sure not to cover important information (buttons, text) when placing position numbers. Place the position numbers in reading direction (from left to right & clockwise) or depending on steps order. <br>
+![Position numbers](/img/content/help_concept/xu_tabelle_auswählen.png) <br>
+
+Use the default position numbers provided in Greenshot. Change the color to Theobald red (1).<br>
+![Squares](/img/content/help_concept/greenshot_pos-n_color.png)
