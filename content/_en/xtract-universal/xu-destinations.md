@@ -12,9 +12,9 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---
 
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> For some destinations (e.g., Oracle, DB2, Teradata etc.) the appropriate driver must be installed. 
-</div>
+{: .box-note }
+**Note**: For some destinations (e.g., Oracle, DB2, Teradata etc.) the appropriate driver must be installed. 
+
 For more information on drivers, refer to [Requirements](./introduction/requirements).
 
 Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different [destination]() environments, including:  
@@ -63,7 +63,7 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 
 Two types of destinations is supported, depending on where the extraction process is started.  
 
-### Pull Destinations
+#### Pull Destinations
 
 Extractions with pull destinations provide the data on request. The extraction process is started by the destination product environment. <br>
 An extraction with  pull Destination supports the pass-through of data. When a consumer (e.g. a Self Service BI Tool) requests the data, 
@@ -79,7 +79,7 @@ These include the following destinations:
 If the destination supports the gzip http data compression, Xtract Universal will send the data to the destination client in a gzip compressed format.
            
 
-### Push Destinations
+#### Push Destinations
 
 Extractions with push destinations provide the data to the destination environment proactively. The extraction process is started in Xtract Universal, e.g. from a scheduled extraction. <br>
 An extraction with push destinations involves the extracting of data from the SAP source systems and once loaded into the destination, data can be processed further. E.g. it can be transformed to an optimized form ready for analytic query workloads.
