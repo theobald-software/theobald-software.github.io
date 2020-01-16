@@ -1,5 +1,4 @@
 ### Installation und Konfiguration auf SAP
-<br/>
 
 |Komponente             | SAP Release           | Anforderungen an das SAP-System                                                |
 |----------------------|-----------------------|-------------------------------------------------------------------------------|
@@ -15,5 +14,5 @@
 |DeltaQ                | Rel. above 4.6A       | Customizing                                                                   |
 |OHS                   | Rel. above BW 3.5     | Customizing                                                                   |
 
-<br/>
+
 Informationen zur Installation der kundeneigenen Funktionsbausteine und zum SAP-Customizing finden Sie im Abschnitt [SAP-Customizing](../sap-customizing).
