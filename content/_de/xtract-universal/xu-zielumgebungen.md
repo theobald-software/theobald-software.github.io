@@ -22,7 +22,6 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 - [Azure DWH](./xu-zielumgebungen/azure_dwh) 
 - [Azure SQL Database](./xu-zielumgebungen/microsoft-sql-server) 
 - [EXASolution](./xu-zielumgebungen/exasol) 
-- [HP Vertica](./xu-zielumgebungen/vertica) 
 - [IBM DB2](./xu-zielumgebungen/ibm-db2) 
 - [MySQL](./xu-zielumgebungen/mysql) 
 - [Oracle](./xu-zielumgebungen/oracle) 
