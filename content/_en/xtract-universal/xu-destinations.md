@@ -24,7 +24,6 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 - [Azure DWH](./xu-destinations/azure-dwh) 
 - [Azure SQL Database](./xu-destinations/microsoft-sql-server) 
 - [EXASolution](./xu-destinations/exasol) 
-- [HP Vertica](./xu-destinations/hp-vertica) 
 - [IBM DB2](./xu-destinations/ibm-db2) 
 - [MySQL](./xu-destinations/mysql) 
 - [Oracle](./xu-destinations/oracle) 
