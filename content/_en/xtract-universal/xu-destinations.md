@@ -19,7 +19,8 @@ For more information on drivers, refer to [Requirements](./introduction/requirem
 
 Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different [destination]() environments, including:  
 
-**Databases / Datawarehouses:**<br>
+### Databases / Datawarehouses
+
 - [Amazon Redshift](./xu-destinations/amzon-redshift) 
 - [Azure DWH](./xu-destinations/azure-dwh) 
 - [Azure SQL Database](./xu-destinations/microsoft-sql-server) 
@@ -32,7 +33,8 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 - [SQL Server](./xu-destinations/microsoft-sql-server) 
 - [Teradata](./xu-destinations/teradata) 
 
-**Business Intelligence / Analytics / ETL:**<br>
+### Business Intelligence / Analytics / ETL
+
 - [Alteryx](./xu-destinations/alteryx) 
 - [Alteryx Connect](./xu-destinations/alteryx-connect) 
 - [Microstrategy](./xu-destinations/microstrategy)
@@ -40,25 +42,28 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 - [Tableau](./xu-destinations/tableau) 
 - [Qlik (QlikSense and QlikView)](./xu-destinations/qliksense-qlikview) 
 
-**Business Systems:** 
+### Business Systems
+
 - [Salesforce](./xu-destinations/salesforce) 
 - [SharePoint](./xu-destinations/sharepoint) 
 
-**Cloud Storage:**
+### Cloud Storage
+
 - [Amazon AWS S3](./xu-destinations/amazon-aws-s3)
 - [Azure Blob Storage](./xu-destinations/azure-blob-storage) 
 
-**Generic Destinations:** 
+### Generic Destinations
+
 - [CSV web service](./xu-destinations/csv-via-http) (via HTTP)
 - [OData web service](./xu-destinations/odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
 - [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
             
             
-**Pull and Push Destinations**
+### Pull and Push Destinations
 
 Two types of destinations is supported, depending on where the extraction process is started.  
 
-**Pull Destinations**
+### Pull Destinations
 
 Extractions with pull destinations provide the data on request. The extraction process is started by the destination product environment. <br>
 An extraction with  pull Destination supports the pass-through of data. When a consumer (e.g. a Self Service BI Tool) requests the data, 
@@ -74,7 +79,8 @@ These include the following destinations:
 If the destination supports the gzip http data compression, Xtract Universal will send the data to the destination client in a gzip compressed format.
            
 
-**Push Destinations**<br>
+### Push Destinations
+
 Extractions with push destinations provide the data to the destination environment proactively. The extraction process is started in Xtract Universal, e.g. from a scheduled extraction. <br>
 An extraction with push destinations involves the extracting of data from the SAP source systems and once loaded into the destination, data can be processed further. E.g. it can be transformed to an optimized form ready for analytic query workloads.
 
