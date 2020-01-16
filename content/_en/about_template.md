@@ -4,6 +4,7 @@ title: Template for creating online help content
 description: Explanation and descripion of the template
 permalink: /:collection/about_template
 weight: 0
+lang: en_GB
 ---
 ### About the template
 The correct usage of the document template is described in the following. The [empty template](https://help.theobald-software.com/en/empty_template) to copy and fill with content is located in the repository under `content/_en`.

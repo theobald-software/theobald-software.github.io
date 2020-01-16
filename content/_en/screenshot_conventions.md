@@ -4,6 +4,7 @@ title: Screenshot conventions
 description: Guidelines on creating consistent screenshots
 permalink: /:collection/screenshots
 weight: 0
+lang: en_GB
 ---
 ### About screenshot conventions
 The following section contains information on creating consistent screenshots.<br>

@@ -4,6 +4,7 @@ title: Empty template
 description: Template to copy and fill with content
 permalink: /:collection/empty_template
 weight: 1
+lang: en_GB
 ---
 
 ### Writing a description

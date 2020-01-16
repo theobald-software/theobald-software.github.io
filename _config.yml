@@ -68,6 +68,7 @@ language:
     info-box-type-note: "Note:"
     info-box-type-tip: "Tip:"
     info-box-type-recommendation: "Recommendation:"
+    sidebar-right-title: "On this page"
   de:
     navbar-links:
       - title: "Zur Knowledgebase"
@@ -88,6 +89,7 @@ language:
     info-box-type-note: "Hinweis:"
     info-box-type-tip: "Tipp:"
     info-box-type-recommendation: "Empfehlung:"
+    sidebar-right-title: "Auf dieser Seite"
 
 ########## SECTION 3 - COLLECTION CONFIGURATIONS ##########
 ########## Languages can easily be added this way.
@@ -107,6 +109,8 @@ collections:
 ########## Be careful with changes to these settings, as it could break things.
 timezone: "Europe/Berlin"
 markdown: kramdown
+kramdown:
+  toc_levels: "3"
 highlighter: rouge
 plugins:
 - jekyll-sitemap
