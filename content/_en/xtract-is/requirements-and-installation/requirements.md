@@ -18,7 +18,8 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 - SQL Server 2017 (until 2027-10-12)
 - SQL Server 2019 (until 2030-01-08)
 - SQL Server Integration Services (SSIS)
-- For Development: Visual Studio (except express version) for Business Intelligence is needed to create SSIS packages.
+- For Development: SQL Server Data Tools are needed to create SSIS packages. Please use the related SSDT for the SQL Server you are using. Check the [Microsoft Help for Details](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)
+
 
 {% include _content/en/requirements/sap-requirements-xtract.md %}
 {% include _content/en/requirements/operating-systems.md %}
