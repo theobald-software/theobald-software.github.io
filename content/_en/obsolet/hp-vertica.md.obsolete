@@ -4,7 +4,7 @@ layout: page
 title: HP Vertica
 description: HP Vertica
 product: xtract-universal
-parent: xu-destinations
+parent: obsolet
 childidentifier: hp-vertica
 permalink: /:collection/:path
 weight: 40
