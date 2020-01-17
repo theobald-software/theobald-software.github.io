@@ -4,6 +4,7 @@ title: Empty template
 description: Template to copy and fill with content
 permalink: /:collection/empty_template
 weight: 1
+lang: en_GB
 ---
 
 ### Writing a description
@@ -65,6 +66,11 @@ Content in the first column | Content in the second column
   <!--- Cause with an explanation of the threat + <br>: ---> A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.<br>
   <!---Remedy:--> Activate the debug logging only when necessary, e.g., upon request of the support team.
 </div><br>
+
+{: .box-warning }
+**Warning! Data loss**<br>
+A big amount of information is collected when ogging is activated. This can decrease the capacity of your hard drives dramatically.<br>
+Activate the debug logging only when necessary, e.g., upon request of the support team.
 
 #### Tip & Recommendation:
 **Tip:** / **Recommendation:** This is a smart alternative. <br>

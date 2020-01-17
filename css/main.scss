@@ -303,7 +303,6 @@ img {
 
 .container-content {
   min-height: 100vh;
-  padding-left: 35px;
 }
 .container-content li {
   padding-bottom: 0.5em;
@@ -550,69 +549,110 @@ footer .fab {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .content-padding-mobile {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+}
+
+/* --- Right Side menu --- */
+.right-side-menu {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-side-menu-wrapper {
+    height: calc(100% - 107px);
+    height: -moz-calc(100% - 107px);
+    height: -webkit-calc(100% - 107px);
+    right: 0;
+  }
+
+  .right-side-menu {
+    margin: 107px 0 20px 0;
+    -webkit-transition: margin .58s ease-in-out;
+    -moz-transition: margin .58s ease-in-out;
+    transition: margin .58s ease-in-out;
+    border-bottom: 0 solid transparent;
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    display: block;
+  }
+  .nav-shortened {
+    margin: 70px 0 20px 0;
+    -webkit-transition: margin .45s ease-in-out;
+    -moz-transition: margin .45s ease-in-out;
+    transition: margin .45s ease-in-out;
+  }
+}
+
+#right-side-menu-toc {
+  padding: 0 10px 10px;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #right-side-menu-toc {
+    padding: 0 0 10px;
+    z-index: -100000;
+  }
+}
+
+.right-side-menu-toc-item {
+  font-size: 12px;
+  padding: 3px 3px 3px 1em;
+  overflow-wrap: break-word;
+}
+
+.right-side-menu-toc-item:before {
+  content: '\203A';
+  padding-right: 10px;
+  position: absolute;
+}
+
+.right-side-menu-toc-item a {
+  font-weight: 400;
+  padding-left: 10px;
+  color: $color-text-primary;
+  text-decoration: none;
+  display: block;
+}
+
+.right-side-menu-toc-item > a:hover,
+.right-side-menu-toc-item > a:focus {
+  background-color: $color-background-secondary;
+}
+
+.right-side-menu-toc-item > ul {
+  list-style: none;
+  padding-inline-start: 5px;
+}
+
+.right-side-menu-toc-item > ul > li:before {
+  content: '\00BB';
+}
+
+.right-side-menu-title {
+  font-weight: 600;
+  padding-left: 12px;
+  line-height: 50px;
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+
+
+
 /* --- Side menu --- */
 
 .side-menu {
   margin: 73px 0 20px 0;
   border-bottom: 3px solid $color-border-primary;
-}
-
-@media only screen and (min-width: 990px) {
-  .side-menu-wrapper {
-    padding-right: 30px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .side-menu-wrapper {
-    padding-right: 50px;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .side-menu-wrapper {
-    padding-right: 80px;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .side-menu-wrapper {
-    padding-right: 0;
-    width: 20% !important;
-  }
-}
-@media only screen and (min-width: 2100px) {
-  .side-menu-wrapper {
-    padding-right: 0;
-    width: 18% !important;
-  }
-}
-@media only screen and (min-width: 2400px) {
-  .side-menu-wrapper {
-    padding-right: 0;
-    width: 16% !important;
-  }
-}
-@media only screen and (min-width: 2700px) {
-  .side-menu-wrapper {
-    padding-right: 0;
-    width: 14% !important;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .side-menu-wrapper {
-    padding-right: 0;
-    width: 12.5% !important;
-  }
-}
-@media only screen and (min-width: 3400px) {
-  .side-menu-wrapper {
-    padding-right: 0;
-    width: 11% !important;
-  }
-}
-@media only screen and (min-width: 3800px) {
-  .side-menu-wrapper {
-    padding-right: 0;
-    width: 10% !important;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1191,4 +1231,61 @@ td.gutter pre {
 
 .anchor:hover {
   color: $color-highlight;
+}
+
+.box-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid #faebcc;
+  border-radius: 4px;
+}
+
+.box-warning:before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 6px;
+  vertical-align: middle;
+  content: "\f071";
+  font-weight: 900;
+  padding-bottom: 2px;
+}
+
+.box-note {
+  color: #31708f;
+  background-color: #d9edf7;
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid #bce8f1;
+  border-radius: 4px;
+}
+
+.box-note:before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 6px;
+  vertical-align: middle;
+  content: "\f05a";
+  font-weight: 900;
+  padding-bottom: 2px;
+}
+
+.box-tip {
+  color: #3c763d;
+  background-color: #dff0d8;
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+}
+
+.box-tip:before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 6px;
+  vertical-align: middle;
+  content: "\f0eb";
+  font-weight: 900;
+  padding-bottom: 2px;
 }

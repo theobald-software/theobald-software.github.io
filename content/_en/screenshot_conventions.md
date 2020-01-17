@@ -4,6 +4,7 @@ title: Screenshot conventions
 description: Guidelines on creating consistent screenshots
 permalink: /:collection/screenshots
 weight: 0
+lang: en_GB
 ---
 ### About screenshot conventions
 The following section contains information on creating consistent screenshots.<br>
@@ -11,6 +12,7 @@ The following section contains information on creating consistent screenshots.<b
 The main topics around creating screenshots are the following:
 - Storing & naming screenshots
 - Size, resolution & quality
+- Frames & shadows
 - Highlighting (type, size, color)
 - Position numbers
 
@@ -18,9 +20,9 @@ The main topics around creating screenshots are the following:
 The author of a section decides about the number of used screenshots. The rule of thumb in this case is:
 "The main focus is on the user, if an additional screenshot is necessary for understanding, place a screenshot."
 Additional benefits of using more screenshots
-- less text
-- less translation effort
-- lower error probability
+- Less text
+- Less translation effort
+- Lower error probability
 
 #### Storing & naming screenshots
 
@@ -33,51 +35,65 @@ Optionally underscore can be used to separate the items and hyphen (minus) to se
 
 ### Size, resolution & quality
 The recommended software for creating the screenshots is Greenshot. The following instructions will be based on the usage of Greenshot.
+It is not possible to regulate the image sizes without quality loss. <br>
 
-For consistency purposes it is crucial that there are only several option sizes for the screenshots.
-The size of the screenshot should be set within the .md-file using the attribute "width".
-
-Size | Width in px | Example description
------------- | ------------- | ----------
-XL | 1000 | Whole Screen; also applicable for architecture illustrations
-L | 800 | Big windows
-M | 650 | Medium windows
-S | 450 | Smaller windows
-XS | 250 | Parts of windows
-
-#### XL
-![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive" width="1000px"} <br>
-#### L
-![ODP Add parameters](/img/content/odp/odp-component-general.png){:class="img-responsive" width="800px"}<br> 
-#### M
-![OPD settings](/img/content/odp/odp-settings-02.png){:class="img-responsive" width="650px"}
-#### S
-![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="450px"}
-#### XS
-![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive" width="250px"}
-
-#### Quality 
-Png is recommended file type for online content. Jpeg is not forbidden but remember that .jpeg-files are more compressed and this may lead to quality loss. In Greenshot .png is set by default. To check or change output file type in Greenshot, navigate to **Settings > Output > Image format**.
 When manually resizing the file size in Greenshot editor, the quality of the image decreases. 
 To prevent quality loss, you can use other screenshot taking options:
-- Capture window **[Alt]+[Print]** - to capure only a prompted window
+- Capture window **[Alt]+[Print]** - to capture only a prompted window
 - Capture full screen **[Ctrl]+[Print]** - to capture full screen and crop image in the editor. 
 The quality does not decrease  when it's cropped. 
+
+
+![Capture](/img/content/help_concept/greenshot_capture.png){:class="img-responsive"}
+
+{: .box-warning } 
+**Quality loss** <br>
+Don't use resize option in Greenshot. It always leads to quality loss. Use the crop option instead.
+
+![Resizing](/img/content/help_concept/greenshot_resize_crop.png){:width="400px" class="img-responsive"}
+
+Png is recommended file type for online content. Jpeg is not forbidden but remember that .jpeg-files are more compressed and this may lead to quality loss. In Greenshot .png is set by default. To check or change output file type in Greenshot, navigate to **Settings > Output > Image format**. <br>
+![Settings](/img/content/help_concept/greenshot_settings.png){:class="img-responsive"}
+
+### Frames & shadows
+When creating a screenshot of a prompted window with the option *Capture Window* (**[Alt]+[Print]**), the frame appears automatically.
+
+![Frames](/img/content/help_concept/xu_demo_license.png){:class="img-responsive"}
+
+When creating a part of a screen, use *Capture region* (**[Print]**) or / then crop the image to the needed size and add a shadow **[CTRL]+[Q]**. 
+
+![Shadow test](/img/content/help_concept/shadow.png){:class="img-responsive"}
 
 ### Highlighting 
 Highlighting refers to marking any kind of elements on a screenshot.
 The following guidelines refer to the color, style and usage of highlighting elements.
 
-#### Color
+#### General
 
-Use Theobald red - #FF003C (255,0,60) for any kind of highlighting. If an additional color is necessary, use black from Greenshot.
+- Color - Use Theobald red - #FF003C (255,0,60) for any kind of highlighting. If an additional color is necessary, use black from Greenshot.
+- Line thickness 
+    - big images - 3pt
+    - small images - 2pt
+
+![Greenshot color](/img/content/help_concept/greenshot_marking_color.png){:class="img-responsive"}
+
+- Mouse pointer - avoid if not helpful for understanding.
+![Mouse pointer](/img/content/help_concept/destination_details_oracle.png
 
 #### Style & type of highlighting
 
-Generally use squares to highlight parts of a screenshot. It is easier to keep them consistent, as there is no need to take care of the angle as in case of arrows. It also doesn't look cluttered when there are many squares. <br>
+Generally, use squares to highlight parts of a screenshot. It is easier to keep them consistent, as there is no need to take care of the angle as in case of arrows. It also doesn't look cluttered when there are many squares necessary. <br>
 Avoid arrows, use arrows only for movement (e.g. Drag&Drop). <br>
-Avoid mixture of elements, don't use ovals.
+Avoid mixture of elements, don't use ovals. <br>
+![Squares](/img/content/help_concept/xu_UPN_steffan@.png){:class="img-responsive"}
+
+To keep the squares consistent, check the line thickness & hold down **[Ctrl]** when drawing to have the object anchored in it's geometrical middle. 
 
 ### Position numbers
-Use position numbers for action steps. Make sure not to cover important information (buttons, text) when placing position numbers. Place the position numbers in reading direction (from left to right & clockwise).
-Use the default position numbers provided in Greenshot. Change the color to Theobald red.
+Use position numbers for action steps. Make sure not to cover important information (buttons, text) when placing position numbers. Place the position numbers in reading direction (from left to right & clockwise) or depending on steps order. <br>
+![Position numbers](/img/content/help_concept/xu_tabelle_auswählen.png){:class="img-responsive"} <br>
+
+Use the default position numbers provided in Greenshot. Change the color to Theobald red (1).<br>
+![Squares](/img/content/help_concept/greenshot_pos-n_color.png){:class="img-responsive"}
+
+ When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets (see also [About function descriptions](https://help.theobald-software.com/en/about_template#about-function-descriptions)).

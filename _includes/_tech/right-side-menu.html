@@ -1,0 +1,14 @@
+{% assign lang = page.lang | split: "_" | first %}
+<div class="right-side-menu">
+    <p class="right-side-menu-title" id="right-side-menu-title-id">{{ site.language[lang].sidebar-right-title }}</p>
+
+    <div id="toc-wrapper">
+        {% include _tech/toc.html html=content id="right-side-menu-toc" h_min=2 h_max=3 item_class="right-side-menu-toc-item" %}
+    </div>
+
+    <script type="text/javascript">
+        if (document.getElementById('toc-wrapper').innerHTML.replace(/\s/g,'') === '') {
+            document.getElementById('right-side-menu-title-id').style.display = "none";
+        }
+    </script>
+</div>

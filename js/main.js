@@ -9,6 +9,7 @@ var main = {
     if(window.location.hash) {
         $(".navbar").addClass("top-nav-short");
         $(".side-menu").addClass("nav-shortened");
+        $(".right-side-menu").addClass("nav-shortened");
 
         sideMenuOffset = 70; // outer height of shortened nav
     }
@@ -19,11 +20,13 @@ var main = {
         if ($(".navbar").offset().top > 50) {
             $(".navbar").addClass("top-nav-short");
             $(".side-menu").addClass("nav-shortened");
+            $(".right-side-menu").addClass("nav-shortened");
 
             sideMenuOffset = 70; // outer height of shortened nav
         } else {
             $(".navbar").removeClass("top-nav-short");
             $(".side-menu").removeClass("nav-shortened");
+            $(".right-side-menu").removeClass("nav-shortened");
 
             sideMenuOffset = 107; // outer height of full nav
         }
@@ -88,6 +91,12 @@ var main = {
     if( main.isBreakpoint('xs') ) {
       $('#side-menu-col').removeClass('affix');
       $('#side-menu-col').css('padding-right','0');
+    }
+
+    // if the screen is small, the right-side-menu becomes a top menu and shouldn't be absolute
+    if( main.isBreakpoint('xs') ) {
+        $('#right-side-menu-col').removeClass('affix');
+        $('#right-side-menu-col').css('padding-right','0');
     }
 
     // when carets are clicked, they should rotate 180 degrees
@@ -166,4 +175,5 @@ function adjustSideMenu(navOffset) {
     ].join(';');
 
     $('.side-menu-wrapper').attr('style', displayStyle);
+    $('.right-side-menu-wrapper').attr('style', displayStyle);
 }

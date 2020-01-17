@@ -19,7 +19,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 - SQL Server 2017 (bis 12.10.2027)
 - SQL Server 2019 (bis 08.01.2030)
 - SQL Server Integration Services (SSIS)
-- Für die Entwicklung: Die entsprechende Visual Studio Version (außer der Express-Version) für Business Intelligence zur Erstellung von SSIS-Paketen. <br> Siehe   [Liste der unterstützen Versionen von SSIS & VS](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is) 
+- Für die Entwicklung: SQL Server Data Tools werden benötigt, um SSIS-Pakete zu erstellen. Bitte verwenden Sie das entsprechende SSDT für den von Ihnen verwendeten SQL Server. Lesen Sie die [Microsoft Hilfe für Details](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)
 
 ### SAP Releases
  	

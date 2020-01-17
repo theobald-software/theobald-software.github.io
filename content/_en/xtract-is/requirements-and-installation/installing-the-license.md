@@ -12,7 +12,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=installing-the-license
 ---
 ### About licensing concept of Xtract IS
 The following graphic shows the on which workstations the installation of Xtract IS with a valid license required.  <br>
-![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive" width="1000px"} <br>
+![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png)<br>
 
 Xtract IS is licensed per Windows server on which SSIS packages are deployed and executed. The same license file can be used on the local workstations to develop the SSIS packages.
 A demo license is automatically installed with the installation of Xtract IS. <br>
@@ -27,11 +27,10 @@ The license manager opens.<br>
 3. Locate and select the regular "XtractISLicense.json" file within the installation directory of Xtract IS:<br>
 `C:\Program Files\XtractIS\XtractISLicense.json`
 4. Close and restart the license manager to view the properly installed license. <br>
-![XIS_License_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive" width="400px"}
+![XIS_License_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive"}
 
-<div class="alert alert-success">
-  <i class="fas fa-lightbulb"></i> <strong>Tip:</strong> To inspect your current license data, click the Xtract IS Info link located at the top of each component editor.<br>
-</div>
+{: .box-tip }
+**Tip:** To inspect your current license data, click the Xtract IS Info link located at the top of each component editor.
 
 ### Updating the Xtract.License.dll to XtractISLicense.json
 The older version of Xtract IS license file is a .dll-file that was registered in the GAC.

@@ -48,36 +48,67 @@ A code block can be added with the following:
 # Elements
 ## Info boxes
 A specific element that can be inserted is the information box. This can be used to highlight information in a certain way.
-The contents can be captured or directly placed inside quotations inside the include statement.
+For the include method, the contents can be captured or directly placed inside quotations inside the include statement.
+For the simplified method, make sure the content is directly after the tag. All other content should at least have a distance of 1 white line.
 
 ### Note box
+
+#### Include method
 
 {% capture text %}This is a note box{% endcapture %}
 {% include _content/infobox.html type="note" text=text %}
 
+#### Simplified method
+
+<<<<<<< HEAD
+=======
+{: .box-note }
+This is a note box (shortcode version)
+
+{: .box-note }
+**Note:** The shortcode version can also contain '**Note:**' but it has to be written explicitly.
+
 ### Warning box
+>>>>>>> 4dc340e4e0a15eaa7c86639df33fd43d3967b4b0
 
-
-{:.box-warning}
-warning
-
-
-{:.box-note}
-note
-
-
-{:.box-error}
-error
-
+#### Include method
 
 {% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
 {% include _content/infobox.html type="warning" text=text %}
 
+<<<<<<< HEAD
+{:.box-error}
+error
+=======
+#### Simplified method
+
+{: .box-warning }
+This is a warning box (shortcode version)<br>It can contain multiple<br>lines of text.
+
+{: .box-warning }
+**Warning!** The shortcode version can also contain '**Warning!**' but it has to be written explicitly.
+>>>>>>> 4dc340e4e0a15eaa7c86639df33fd43d3967b4b0
+
 ### Recommendation / Tip box
+
+<<<<<<< HEAD
+{% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
+{% include _content/infobox.html type="warning" text=text %}
+=======
+#### Include method
 
 {% include _content/infobox.html type="recommendation" text="This is a recommendation box" %}
 
 Note: 'recommendation' is the same as 'tip' and are interchangeable.
+>>>>>>> 4dc340e4e0a15eaa7c86639df33fd43d3967b4b0
+
+#### Simplified method
+
+{: .box-tip }
+This is a tip box (shortcode version). There is no equivalent for recommendation as the styling is identical.
+
+{: .box-tip }
+**Tip:** The shortcode version can also contain '**Tip:**' but it has to be written explicitly.
 
 ## Tables
 Tables are styled in a specific way, but this will happen automatically.
