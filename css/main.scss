@@ -621,8 +621,8 @@ footer .fab {
   display: block;
 }
 
-.right-side-menu-toc-item:hover,
-.right-side-menu-toc-item:focus {
+.right-side-menu-toc-item > a:hover,
+.right-side-menu-toc-item > a:focus {
   background-color: $color-background-secondary;
 }
 
