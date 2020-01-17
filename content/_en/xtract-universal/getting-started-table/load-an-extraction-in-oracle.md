@@ -42,8 +42,10 @@ To load an extraction, an Oracle destination needs to be created and defined.
             
             
 1. Select the extraction and click **[Run]** 
-2. Click **[Run in Browser]** and then **[Close]**.
+2. Click **[Run in Browser]** and then **[Close]**. <br />  
+
 ![Run-In-Browser-Oracle](/img/content/Run-In-Browser-Oracle.jpg){:class="img-responsive"}
+
 The browser opens and shows the Log.
 ![Run-In-Browser-Result-Oracle](/img/content/Run-In-Browser-Result-Oracle.jpg){:class="img-responsive"}
 
