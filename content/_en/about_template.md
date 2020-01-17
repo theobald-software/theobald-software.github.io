@@ -60,7 +60,10 @@ When an instruction contains images with position numbers, make sure to address 
 2. Choose the type e.g., *String* out of the drop-down menu (2).
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}
 
-Don't use a return before images in instructions to make sure that the image is in the same line as the steps.
+{: .box-note }
+**Note** <br> When placing an image within a text block, make sure to place a break and an additional return to mainain space between the text and the image.
+When placing an image within a list (OL or UL) avoid breaks and returns after a list item to maintain the proper formatting: images in the same horizontal line as the numbers or bullet points.
+
 
 -----------
 

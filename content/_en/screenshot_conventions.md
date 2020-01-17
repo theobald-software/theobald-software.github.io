@@ -68,7 +68,7 @@ When creating a part of a screen, use *Capture region* (**[Print]**) or / then c
 ![Shadow test](/img/content/help_concept/shadow.png){:class="img-responsive"}
 
 {: .box-note }
-When placing an image within a text block, make sure to place a break and an additional return to mainain space between the text and the image.
+**Note** <br> When placing an image within a text block, make sure to place a break and an additional return to mainain space between the text and the image.
 When placing an image within a list (OL or UL) avoid breaks and returns after a step to maintain the proper formatting: images in the same horizontal line as the numbers or bullet points.
 
 ### Highlighting 
