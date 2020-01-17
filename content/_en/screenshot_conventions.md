@@ -98,4 +98,4 @@ Use the default position numbers provided in Greenshot. Change the color to Theo
 
  When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets (see also [About function descriptions](https://help.theobald-software.com/en/about_template#about-function-descriptions)).
  
- test
+
