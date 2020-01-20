@@ -4,11 +4,7 @@ In this window you can define simple table extractions or join tables for extrac
 ![Add-New-Table](/img/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
 The window "Table Lookup" opens. <br/>
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
-2. In the field **Table name** (1) enter the name of the table to extract. <br>
-
-{: .box-tip }
-**Tip:** Use of wildcard (*) operator is possible in the search bar.<br>
-
+2. In the field **Table name** (1) enter the name of the table to extract. Using wildcard (*) operator is possible in the search bar.<br>
 3. Click on the search button (2). <br/>
 Search results appear in the preview window.
 4. Select the desired table (3) and click **[OK]** (4). <br>

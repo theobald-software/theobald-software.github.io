@@ -24,13 +24,10 @@ The window "Run Extraction" opens.
 1. In the window "Run Extraction", select the checkbox of the parameter you want to override.
 2. Enter the value. The actual request of the data occurs via URL:
 - Before changing a parameter:
-```
-http://localhost:8065?name=mara
-``` 
+`http://localhost:8065?name=mara`
 - After choosing the parameter **rows**
-```
-http://localhost:8065?name=mara
-``` 
+`http://localhost:8065?name=mara`
+
 ![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)
 
 {: .box-note }
