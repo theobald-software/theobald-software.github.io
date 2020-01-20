@@ -43,7 +43,7 @@ To load an extraction, an Oracle destination needs to be created and defined.
 ![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}<br>
 The window "Destinations" opens.
 2. Navigate to **Destination** and select **Oracle** from the drop down menu. 
-![Load-Shared-Destination-Oracle](/img/content/Load-Shared-Destination-Oracle.jpg){:class="img-responsive"}
+![Load-Shared-Destination-Oracle](/img/content/Load-Shared-Destination-Oracle.png){:class="img-responsive"}
 3. Click **[OK]**. The window "Destinations" closes.
 4. Click **[Run] > [run xu.exe]**<br>
 ![Run-In-Browser-Oracle](/img/content/Run-In-Browser-Oracle.jpg){:class="img-responsive"} <br>
