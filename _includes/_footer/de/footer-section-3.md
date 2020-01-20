@@ -1,3 +1,3 @@
-© 2018 Theobald Software GmbH  
-[Privacy Policy](https://theobald-software.com/en/privacy-policy) - 
-[Legal notice](https://theobald-software.com/en/legal-notice)
+© 2020 Theobald Software GmbH  
+[Datenschutz](https://theobald-software.com/datenschutz/) - 
+[Impressum](https://theobald-software.com/impressum/)
