@@ -24,21 +24,24 @@ The window "Manage Sources" opens. <br>
 - To connect to a single application server, fill the **Host** and **System Number** fields. <br>
 - To connect to a message server using load balancing, fill the **Message Server**, **Group** and **SID** fields. <br>
 5. Set the following parameters:
-- Client (Client) and language (Language) (3)
-- User (User) and password (Password) (4)
 
 {: .box-tip }
 **Tip:** If you don't know the parameters, look in your SAP GUI or ask your SAP Basis. 
 
+- Client (Client) and language (Language) (3)
+- User (User) and password (Password) (4)
 6. Click **[Test Connection]** (5) to test the successful connection. <br>
 The confirmation window opens. <br>
 The SAP connection is set up successfully.<br>
 ![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
+
+
 #### To check the created SAP connection
 1. In the main window of the Xtract Universal Designer. Navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
 The window "Manage Sources" opens. <br>
 2. Check if created SAP connection is listed.<br>
 ![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
+
 
 ### To create an extraction
 The following example shows the creation of an extraction using "SAP Table or View" component.<br>

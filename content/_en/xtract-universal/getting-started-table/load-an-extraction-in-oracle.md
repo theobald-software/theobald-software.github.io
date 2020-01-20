@@ -33,11 +33,12 @@ To load an extraction, an Oracle destination needs to be created and defined.
 
 7. Click **[OK]** (5) to save the destination connection.  
 8. In the "Destination Settings" window, choose your created **Oracle** destination to display the extraction-specific settings. In the example, the default settings are kept:
-![Load-Shared-Destination-Oracle](/img/content/Load-Shared-Destination-Oracle.jpg){:class="img-responsive"}
+![Load-Shared-Destination-Oracle](/img/content/Load-Shared-Destination-Oracle.png){:class="img-responsive"}
 
 9. Click **[OK]** to get back to the main window of the Designer.             
+
 ### Loading the extraction into the Oracle database
-                   
+             
 1. Select the extraction and click **[Destination].<br>
 ![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}<br>
 The window "Destinations" opens.
