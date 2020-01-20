@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-table-03
 layout: page
-title: Step 3 - Run an Extraction
+title:  3. Runing an extraction
 description: Step 3 - Run an Extraction
 product: xtract-universal
 parent: getting-started-table
@@ -12,18 +12,37 @@ lang: en_GB
 
 This step is optional and shows how to display the extraction result in a web browser to make sure that the extraction runs properly and delivers the appropriate result.
 
-To execute the created extraction, select the corresponding line in the main form and then click *Run*.
+### Defining the extraction properties
 
-![XU-Step-01-Destination](/img/content/XU-Step-01-Destination.jpg){:class="img-responsive"}
+1. In the main window of the Xtract Universal Designer, select a created table extraction.
+2. To open the extraction settings, click **[Run]**.<br>
+![Run-Table-Extraction](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}. <br>
+The window "Run Extraction" opens.
+3. Specify details of the execution with parameters, if needed. 
 
-In the following window you can optionally specify details of the execution. 
+### To set the extraction parameters
+1. In the window "Run Extraction", select the checkbox of the parameter you want to override.
+2. Enter the value. The actual request of the data occurs via URL:
+- Before changing a parameter:
+```
+http://localhost:8065?name=mara
+``` 
+- After choosing the parameter **rows**
+```
+http://localhost:8065?name=mara
+``` 
+![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)
 
-The actual request of the data occurs via URL (see screenshot). To run an extraction it’s sufficient to specify its name. However, it is possible to override some extraction’s behavior with the help of parameters. If you want to change the maximum number of rows from 0 (unlimited) to 100, change the *Operation* from *Default*  to *Override* und set the desired parameter in the value column.
+{: .box-note }
+**Note** <br> Additional parameters such as *Package size* or *Row limit* etc. are described in section [Extraction settings](https://help.theobald-software.com/en/xtract-universal/table/extraction-settings). 
 
-![Run-Table-Extraction-Plants](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}
+3. Run an extraction in xu.exe or in browser. The settings change during runtime, no new start is necessary. 
 
-The other parameters *format*, bg und packagesize are described in section [Settings](). To run the extraction, click *Run in Browser*. Your default browser opens and displays the data in accordance with the criteria and format.
+### Running an extraction in a browser
+To run the extraction, click **[Run in Browser]**. Your default browser opens and displays the data in accordance with the criteria and format. <br>
 
-![Table-Extraction-Browser-Result](/img/content/Table-Extraction-Browser-Result.png){:class="img-responsive"}
+![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
 
-Please note that passing parameters (rows in our example) is optional. It is only necessary to set them if we want to override the default value.
+### Scheduling an extraction
+
+Scheduling extractions at a later time is possible with the Windows task scheduler. To use the task scheduler functionality, run Xtract Universal from a [command line](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/run-from-a-command-line).

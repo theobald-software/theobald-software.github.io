@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-table-04
 layout: page
-title: 4. Loading an xxtraction in an Oracle database
+title: 4. Loading an extraction in an Oracle database
 description: Step 4 - Load an Extraction in an Oracle Database
 product: xtract-universal
 parent: getting-started-table
