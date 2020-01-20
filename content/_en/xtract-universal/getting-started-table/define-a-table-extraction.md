@@ -26,10 +26,8 @@ The window "Manage Sources" opens. <br>
 5. Set the following parameters:
 - Client (Client) and language (Language) (3)
 - User (User) and password (Password) (4) <br>
-
 {: .box-tip }
 **Tip:** If you don't know the parameters, look in your SAP GUI or ask your SAP Basis. <br>
-
 6. Click **[Test Connection]** (5) to test the successful connection. <br>
 The confirmation window opens. <br>
 The SAP connection is set up successfully.<br>
