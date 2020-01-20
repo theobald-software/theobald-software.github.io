@@ -3,8 +3,7 @@ layout: page
 title: Screenshot conventions
 description: Guidelines on creating consistent screenshots
 parent: screenshot_conventions
-permalink: /:collection/screenshots
-weight: 0
+permalink: /:collection/:path
 lang: en_GB
 ---
 ### About screenshot conventions
