@@ -12,7 +12,7 @@ lang: en_GB
 
 This step is optional and shows how to display the extraction result in a web browser to make sure that the extraction runs properly and delivers the appropriate result.
 
-### Defining the extraction properties
+### Defining the extraction properties 
 
 1. In the main window of the Xtract Universal Designer, select a created table extraction.
 2. To open the extraction settings, click **[Run]**.<br>
