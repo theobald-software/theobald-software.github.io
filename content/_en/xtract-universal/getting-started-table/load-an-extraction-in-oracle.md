@@ -39,7 +39,7 @@ To load an extraction, an Oracle destination needs to be created and defined.
 
 ### Loading the extraction into the Oracle database
              
-1. Select the extraction and click **[Destination].<br>
+1. Select the extraction and click **[Destination]**.<br>
 ![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}<br>
 The window "Destinations" opens.
 2. Navigate to **Destination** and select **Oracle** from the drop down menu. 
