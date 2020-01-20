@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-03
 layout: page
-title: Getting started with the component Xtract Table
+title: Getting started with Xtract Table
 description: Getting Started with Table
 product: xtract-universal
 parent: xtract-universal
