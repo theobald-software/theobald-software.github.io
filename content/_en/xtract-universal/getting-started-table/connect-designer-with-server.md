@@ -1,30 +1,31 @@
 ---
 ref: xu-getting-started-table-01
 layout: page
-title: Step 1 - Connect Designer with Server
-description: Step 1 - Connect Designer with Server
+title: 1. Connecting Xtract Universal Designer with Xtract Universal Server
+description:  1. Connecting the designer with the server
 product: xtract-universal
 parent: getting-started-table
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
-
-After the launch of Xtract Universal Designer, the designer must connect to the Xtract Universal Server and the extraction repository. The address is in case of a local Xtract Universal Server the localhost (as in the screenshot). In case designer and server are not running on the same machine, type in the host name the Xtract Universal Server is running on.
-
-The default port (8064) may vary depending on the configuration. If the Xtract Universal Server is running on another machine than the Xtract Universal Designer be sure that the port is not blocked by your firewall.
-
-***XU-Server***<br>
-Type in the host name the Xtract Universal service is running on. If the service is not running on default port 8064 (can be configured in the server settings), specify the port by adding :[port] after the host name.
-
-**Authentication**<br>
-Xtract Universal offers different methods on authenticating and securing the connection between designer and server. Per default, authentication via *Windows credentials (current user)* and *Anonymous (no encryption)* are avtivated.
-
+### Connecting to a server
+1. Launch the Xtract Universal Designer.
+2. Connect the Designer to the Xtract Universal Server and the extraction repository.
+- When Xtract Universal Server is a local server, the server address is then localhost.<br>
+The default port (8064) may vary depending on the configuration. <br>
 ![XU3_Designer_Connect](/img/content/xu_connect_screen _neu.png){:class="img-responsive"}
+- When the Xtract Universal Designer and the Xtract Universal Server are not running on the same machine, type in the host name the Xtract Universal Server is running on. Make sure the port is not blocked by your firewall.
+3. If the service is not running on default port 8064 (can be configured in the server settings), specify the port by adding :[port] after the host name.
 
-![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}
+### Authentication
+Xtract Universal offers different methods of authenticating and securing the connection between designer and server. Default authentication methods are authentication via *Windows credentials (current user)* and *Anonymous (no encryption)*.
 
-Once logged on, you can activate or deactivate methods of authentication. 
-To do so, please go to the Xtract Universal Designer menu bar - *Server - Settings* and change as required.
+![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}<br>
 
-![Server-Settings](/img/content/Server-Settings.jpg){:class="img-responsive"}
+#### Changing the authentication method
+Once logged in, you can activate or deactivate methods of authentication. <br>
+1. In the main window of the Xtract Universal Designer, navigate to the menu bar and select the menu item **Server > Settings**. <br>
+![Server-Settings](/img/content/Server-Settings.png){:class="img-responsive"} <br>
+2. To restrict the access rights, define the users / groups and select the box "Restrict Designer access to the following users/groups".
+

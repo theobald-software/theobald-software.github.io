@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-table-04
 layout: page
-title: Step 4 - Load an Extraction in an Oracle Database
+title: 4. Loading an xxtraction in an Oracle database
 description: Step 4 - Load an Extraction in an Oracle Database
 product: xtract-universal
 parent: getting-started-table
@@ -10,7 +10,7 @@ weight: 4
 lang: en_GB
 ---
 
-The following steps depict the loading of the extraction in an Oracle Database. 
+The following steps depict the loading of the extraction in an Oracle database. 
 
 To load an extraction, an Oracle destination needs to be created and defined.
 
