@@ -17,7 +17,7 @@ To load an extraction, an Oracle destination needs to be created and defined.
 ### Creating an Oracle Destination
 
 1. In the main window of the designer, click **Destinations** to open destination settings.
-![Load-Destinations](/img/content/load_destinations.png){:class="img-responsive"}
+![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
 
 2. Select a destination and click **[...]** (1) to manage destinations. 
 ![Load-Manage-Shared-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}

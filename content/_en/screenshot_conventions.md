@@ -90,6 +90,10 @@ The following guidelines refer to the color, style and usage of highlighting ele
 #### Style & type of highlighting
 
 Generally, use squares to highlight parts of a screenshot. It is easier to keep them consistent, as there is no need to take care of the angle as in case of arrows. It also doesn't look cluttered when there are many squares necessary. <br>
+
+{: .box-tip }
+**Tip:** It is better not to use shadows for the highlighting as it might cover important information. <br>
+
 Avoid arrows, use arrows only for movement (e.g. Drag&Drop). <br>
 Avoid mixture of elements, don't use ovals. <br>
 
