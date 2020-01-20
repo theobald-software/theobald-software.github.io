@@ -25,15 +25,17 @@ The window "Run Extraction" opens.
 2. Enter the value. The actual request of the data occurs via URL:
 - Before changing a parameter:
 `http://localhost:8065?name=mara`
-- After choosing the parameter **rows**
+- After choosing the parameter **rows**:
 `http://localhost:8065?name=mara`
 
 ![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)
 
+3. Run an extraction in xu.exe. The settings change during runtime, no new start is necessary. 
+
 {: .box-note }
 **Note** <br> Additional parameters such as *Package size* or *Row limit* etc. are described in section [Extraction settings](https://help.theobald-software.com/en/xtract-universal/table/extraction-settings). 
 
-3. Run an extraction in xu.exe or in browser. The settings change during runtime, no new start is necessary. 
+
 
 ### Running an extraction in a browser
 To run the extraction, click **[Run in Browser]**. Your default browser opens and displays the data in accordance with the criteria and format. <br>
