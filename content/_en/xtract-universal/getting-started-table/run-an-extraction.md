@@ -16,7 +16,7 @@ This step is optional and shows how to display the extraction result in a web br
 
 1. In the main window of the Xtract Universal Designer, select a created table extraction.
 2. To open the extraction settings, click **[Run]**.<br>
-![Run-Table-Extraction](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}. <br>
+![Run-Table-Extraction](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}<br>
 The window "Run Extraction" opens.
 3. Specify details of the execution with parameters, if needed. 
 
@@ -26,10 +26,8 @@ The window "Run Extraction" opens.
 - Before changing a parameter:
 `http://localhost:8065?name=mara`
 - After choosing the parameter **rows**:
-`http://localhost:8065?name=mara`
-
-![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)
-
+`http://localhost:8065?name=mara`<br>
+![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)<br>
 3. Run an extraction in xu.exe. The settings change during runtime, no new start is necessary. 
 
 {: .box-note }
