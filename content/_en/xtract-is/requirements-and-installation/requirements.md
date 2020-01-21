@@ -27,7 +27,7 @@ Check the [Microsoft Help for details](https://docs.microsoft.com/en-us/sql/ssdt
 {% include _content/en/requirements/operating-systems.md %}
 
 #### Other applications and frameworks	
-.NET Framework 4.7.1 or higher. [Download](https://www.microsoft.com/en-us/download/details.aspx?id=56116) 
+.NET Framework 4.7.1 or higher. <br>[Download .NET Framework from the Microsoft website](https://www.microsoft.com/en-us/download/details.aspx?id=56116).
 
 ### Hardware <br/>
 
@@ -35,7 +35,7 @@ Check the [Microsoft Help for details](https://docs.microsoft.com/en-us/sql/ssdt
 - Minimum 4 GB.<br> Depending on data volume, more memory may be required.
 
 #### Disk space<br/> 	
-- 30 MB total for installation
+- 50 MB total for installation
 
 ### 32/64-Bit Environment<br/> 	
 - 32-Bit and 64-Bit operating systems

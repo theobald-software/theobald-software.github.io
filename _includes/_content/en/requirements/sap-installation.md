@@ -1,5 +1,5 @@
 ### Installation and Configuration on SAP
-<br/>
+
 
 |Component             | SAP Release           | Requirements on the SAP system                                                |
 |----------------------|-----------------------|-------------------------------------------------------------------------------|
@@ -15,5 +15,5 @@
 |DeltaQ                | Rel. above 4.6A       | customizing                                                                   |
 |OHS                   | Rel. above BW 3.5     | customizing                                                                   |
 
-<br/>
-For Information about the Installation of the custom function modules and the SAP customizing please check the section **SAP Customizing**.
+
+For Information about the installation of the custom function modules and the SAP customizing, check the section [SAP customizing](https://help.theobald-software.com/en/xtract-is/sap-customizing).
