@@ -60,8 +60,6 @@ For the simplified method, make sure the content is directly after the tag. All 
 
 #### Simplified method
 
-<<<<<<< HEAD
-=======
 {: .box-note }
 This is a note box (shortcode version)
 
@@ -69,17 +67,12 @@ This is a note box (shortcode version)
 **Note:** The shortcode version can also contain '**Note:**' but it has to be written explicitly.
 
 ### Warning box
->>>>>>> 4dc340e4e0a15eaa7c86639df33fd43d3967b4b0
 
 #### Include method
 
 {% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
 {% include _content/infobox.html type="warning" text=text %}
 
-<<<<<<< HEAD
-{:.box-error}
-error
-=======
 #### Simplified method
 
 {: .box-warning }
@@ -87,20 +80,14 @@ This is a warning box (shortcode version)<br>It can contain multiple<br>lines of
 
 {: .box-warning }
 **Warning!** The shortcode version can also contain '**Warning!**' but it has to be written explicitly.
->>>>>>> 4dc340e4e0a15eaa7c86639df33fd43d3967b4b0
 
 ### Recommendation / Tip box
 
-<<<<<<< HEAD
-{% capture text %}This is a warning box<br>It can contain multiple<br>lines of text.{% endcapture %}
-{% include _content/infobox.html type="warning" text=text %}
-=======
 #### Include method
 
 {% include _content/infobox.html type="recommendation" text="This is a recommendation box" %}
 
 Note: 'recommendation' is the same as 'tip' and are interchangeable.
->>>>>>> 4dc340e4e0a15eaa7c86639df33fd43d3967b4b0
 
 #### Simplified method
 
