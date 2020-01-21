@@ -2,8 +2,9 @@
 layout: page
 title: Template for creating online help content
 description: Explanation and descripion of the template
-permalink: /:collection/about_template
-weight: 0
+parent: editorial-guide
+permalink: /:collection/:path
+weight: 1
 lang: en_GB
 ---
 ### About the template

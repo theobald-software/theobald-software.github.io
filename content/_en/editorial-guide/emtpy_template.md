@@ -2,8 +2,9 @@
 layout: page
 title: Empty template 
 description: Template to copy and fill with content
-permalink: /:collection/empty_template
-weight: 1
+parent: editorial-guide
+permalink: /:collection/:path
+weight: 2
 lang: en_GB
 ---
 

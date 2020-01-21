@@ -4,6 +4,7 @@ title: Screenshot conventions
 description: Guidelines on creating consistent screenshots
 parent: editorial-guide
 permalink: /:collection/:path
+weight: 3
 lang: en_GB
 ---
 ### About screenshot conventions
