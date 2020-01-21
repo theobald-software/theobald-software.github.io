@@ -79,7 +79,7 @@ The OLs (ordered lists) are used for instructions and steps, if possible.
 
 ### Tables
 <!---Einfache Tabellen verwenden, Markierungen in Tabellen möglichst vermeiden-->
-Keep the tables simple. No markings (bsold, italics etc.) in tables, when possible.
+Keep the tables simple. No markings (bold, italics etc.) in tables, when possible.
 
 First Header | Second Header
 ------------ | -------------
