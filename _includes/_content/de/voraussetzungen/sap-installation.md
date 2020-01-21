@@ -1,4 +1,4 @@
-### Installation and Configuration on SAP
+### Installation und Konfiguration auf SAP
 <br/>
 
 | Komponente  | SAP Release       | Anforderung an das SAP System                                                                         |
