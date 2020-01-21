@@ -1,11 +1,10 @@
-### Supported SAP Systems and Releases
-All communication with SAP is performed via the RFC protocol. All SAP ABAP based systems, that provides RFC Connectivity are supported.
-The integration occurs at SAP application server level. Therefore, the database used by the SAP system is irrelevant. SAP ABAP Systems on any Database (including HANA) are supported. This also means, that the operating system of the SAP system is irrelevant - all operating systems are supported.
+### Supported SAP Systems and releases
+All communication with SAP is performed via the RFC protocol. All SAP ABAP based systems that provide RFC connectivity are supported.
+The integration occurs at SAP application server level. Therefore, the database used by the SAP system is irrelevant. SAP ABAP Systems on any database (including HANA) are supported. This means that the operating system of the SAP system is irrelevant - all operating systems are supported.
 SAP Systems running on Big Endian and Little Endian hardware are supported.
 
-SAP Releases 4.6C and newer are supported.
-
-This includes:<br/> 	
+SAP Releases 4.6C and newer are supported. Including the following:
+<br/> 	
 * SAP R/3 Version 4.6C and later
 * mySAP
 * SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
@@ -18,15 +17,15 @@ This includes:<br/>
 * SAP Application Server ABAP, Message Server, Router, Standalone Gateway
 
 ### HANA Database
-You can use Operational Data Provisioning (ODP) to connect the SAP HANA database of an SAP ABAP source system. Communication is performed using RFC. With the ODP context for SAP HANA (HANA) the followings HANA views types are availble for extraction:
+You can use Operational Data Provisioning (ODP) to connect the SAP HANA database of an SAP ABAP source system. Communication is performed using RFC. With the ODP context for SAP HANA (HANA) the following HANA views types are available  for extracting:
 - Analysis Views
-- Calculation Views and
+- Calculation Views
 - Associated Attribute Views
 
-Direct Access to a HANA Database without an SAP ABAP source system running on it is not supported.
+Direct access to a HANA database without an SAP ABAP source system running on the corresponding HANA database is not supported.
 
-### Not Supported SAP Systems
-Not supported are the SAP systems, that don’t run on ABAP systems or don't provide RFC Connectivity like:
+### Not supported SAP systems
+Not supported are the SAP systems that don’t run on ABAP systems or don't provide RFC connectivity. The following systems are not supported:
 - Business By Design 
 - Business One
 - Business Objects

@@ -10,30 +10,32 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 ---
-## SQL Server<br/> 	
+### SQL Server<br/> 	
 
 - SQL Server 2012 SP4 (until 2022-07-12)
 - SQL Server 2014 SP3 (until 2024-07-09)
 - SQL Server 2016 SP2 (until 2026-07-14)
 - SQL Server 2017 (until 2027-10-12)
-- SQL Server 2019 (until 2030-01-08)
+- SQL Server 2019 (until 2030-01-08) -  VS 2019 is not supported yet, use VS 2017 instead.
 - SQL Server Integration Services (SSIS)
-- For Development: SQL Server Data Tools are needed to create SSIS packages. Please use the related SSDT for the SQL Server you are using. Check the [Microsoft Help for Details](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)
+
+For development: SQL Server Data Tools are required to create SSIS packages. Use the related SSDT for the SQL Server you are using. <br>
+Check the [Microsoft Help for details](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
 
 
 {% include _content/en/requirements/sap-requirements-xtract.md %}
 {% include _content/en/requirements/operating-systems.md %}
 
-## Other Applications and Frameworks<br/> 	
+#### Other applications and frameworks	
+.NET Framework 4.7.1 or higher. [Download](https://www.microsoft.com/en-us/download/details.aspx?id=56116) 
 
-.NET Framework 4.7.1 or higher. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=56116)
+### Hardware <br/>
 
-## Hardware <br/>
-### Memory<br/> 	
-- 4 GB minimum, depending on data volume, more may be required
+#### Memory<br/> 	
+- Minimum 4 GB.<br> Depending on data volume, more memory may be required.
 
-### Disk space<br/> 	
-- for the installation 30 MB total required to install
+#### Disk space<br/> 	
+- 30 MB total for installation
 
-## 32/64-Bit Environment<br/> 	
-- the product can be installed on 32-Bit and 64-Bit operating systems
+### 32/64-Bit Environment<br/> 	
+- 32-Bit and 64-Bit operating systems
