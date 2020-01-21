@@ -3,7 +3,7 @@ layout: page
 title: Editorial guidelines
 description: Editorial guidelines for creating online help content
 childidentifier: editorial-guide
-permalink: /:collection/online-help-editorial-guide
+permalink: /:collection/editorial-guide
 weight: 0
 lang: en_GB
 ---
