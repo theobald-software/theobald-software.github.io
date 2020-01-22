@@ -27,14 +27,14 @@ To load an extraction, Microsoft SQL Server destination needs to be created and 
 4. Fill in a **Name**, select **SQLServer** from the **Type** list and click **[OK]** (3).
 ![Select-Destination-Type](/img/content/destination_details_sqlserver.png){:class="img-responsive"}
 
-5. In the section "Connection", fill in the fields **Data Source, Username** and **Password** with the correspondent values, where data source is the Oracle server name.
+5. In the section "Connection", fill in the fields **Data Source, Username** and **Password** with the correspondent values. Data source is the name of the Microsoft SQL Server.
 6. Click **[Test Connection]** (4) to check the connection to the  database.
 ![Test-Connection-Successful](/img/content/sqlserver_destination-details.png){:class="img-responsive"}
 
 7. Click **[OK]** (5) to save the destination connection. 
 
 
-### Loading the extraction into the Oracle database
+### Loading the extraction into the Microsoft SQL Server database
 
 1. Select an extraction with any destination and click **[Destination]**.<br>
 ![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}<br>
@@ -47,7 +47,7 @@ The window "Destination Settings" opens.
 4. Click **[Run] > [run xu.exe]**<br>
 ![Run an extraction](/img/content/run_extraction.png){:class="img-responsive"} <br>
 The command line window opens and the extraction procedure ends with a message *Extraction finished successfully*.
-![Oracle-Database-Metadata](/img/content/xu/konsole_run_in_xu_exe.png){:class="img-responsive"}
+![Database-Metadata](/img/content/xu/konsole_run_in_xu_exe.png){:class="img-responsive"}
 
 #### To check the extraction result
 Open your SQL Management Studio and check the existence of the successfully extracted table. 
