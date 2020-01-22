@@ -24,9 +24,9 @@ The window "Run Extraction" opens.
 1. In the window "Run Extraction", select the checkbox of the parameter you want to override.
 2. Enter the value. The actual request of the data occurs via URL:
 - Before changing a parameter:
-`http://localhost:8065?name=mara`
+`http://localhost:8065?name=Plants`
 - After choosing the parameter **rows**:
-`http://localhost:8065?name=mara`<br>
+`http://localhost:8065?name=Plants&rows=100`<br>
 ![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)<br>
 3. Run an extraction in xu.exe. The settings change during runtime, no new start is necessary. 
 
