@@ -8,7 +8,7 @@ weight: 1
 lang: en_GB
 ---
 ### About the template
-The correct usage of the document template is described in the following. The [empty template](https://help.theobald-software.com/en/empty_template) to copy and fill with content is located in the repository under `content/_en/editorial-guide/empty_template`.
+The correct usage of the document template is described in the following. The [empty template](./empty_template) to copy and fill with content is located in the repository under `content/_en/editorial-guide/empty_template`.
 
 -----------
 

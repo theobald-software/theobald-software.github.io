@@ -7,6 +7,8 @@ permalink: /:collection/:path
 weight: 2
 lang: en_GB
 ---
+{: .box-note }
+**Note** This is a template to download, copy and to comfortably fillout locally with content.
 
 ### Writing a description
 In this section... / this section gives an overview.../ the following section is about..
@@ -56,17 +58,12 @@ Content in the first column | Content in the second column
 
 ### Notes, Warnings etc.
 
-#### Note:
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> The corresponding SQL command is generated dynamically and executed on the SAP server.</div>
+#### Note
 
-#### Warning - not typical for function descriptions:
-<div class="alert alert-warning">
-  <i class="fas fa-exclamation-triangle"></i> <strong>Warning:</strong> 
-  <!--Type & source of the problem, use bold and <br> --> <strong>Data loss</strong> <br>
-  <!--- Cause with an explanation of the threat + <br>: ---> A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.<br>
-  <!---Remedy:--> Activate the debug logging only when necessary, e.g., upon request of the support team.
-</div><br>
+{: .box-note }
+**Note** The corresponding SQL command is generated dynamically and executed on the SAP server.
+
+#### Warning
 
 {: .box-warning }
 **Warning! Data loss**<br>
@@ -74,13 +71,13 @@ A big amount of information is collected when ogging is activated. This can decr
 Activate the debug logging only when necessary, e.g., upon request of the support team.
 
 #### Tip & Recommendation:
-**Tip:** / **Recommendation:** This is a smart alternative. <br>
 
-or <br>
+{: .box-tip }
+**Tip:** This is a tip.
 
-<div class="alert alert-success">
-  <i class="fas fa-lightbulb"></i> <strong>Tip:</strong> Basics of the product Xtract Universal are described in the section <a href= "https://help.theobald-software.com/en/xtract-universal/getting-started-table" class="alert-link">Getting Started with Table</a>.<br>
-</div>
+
+{: .box-tip }
+**Recommendation:** This is a recommendation.<br>
 
 ------
 
