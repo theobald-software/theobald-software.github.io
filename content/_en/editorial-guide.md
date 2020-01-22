@@ -12,6 +12,6 @@ The editorial guidelines of Theobald software are a set of recommendations for w
 
 The editorial guidelines consist of the following parts:
 - [Style guide](https://theobaldsoftware.sharepoint.com/:b:/s/PresalesSupportProdMgmtDoc/ETBGqQHJe7VHi8fD9aMlJ5MB1bMaKqXyW07NlixY_UxTJg?e=0fekw7)
-- [Document template](./about_template)
-- [Conventions for creating screenshots](./editorial-guide/about_template)
+- [Document template](./editorial-guide/about_template)
+- [Conventions for creating screenshots](./editorial-guide/screenshot_conventions)
 - [Editorial process description](https://theobaldsoftware.sharepoint.com/sites/PresalesSupportProdMgmtDoc)
