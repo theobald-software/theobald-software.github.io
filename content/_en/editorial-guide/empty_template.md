@@ -106,9 +106,6 @@ function fancyAlert(arg) {
   }
 }
 ```
-### Examples - Blockquotes
-
->This is an example.
 
 
 

@@ -14,4 +14,4 @@ The editorial guidelines consist of the following parts:
 - [Style guide](https://theobaldsoftware.sharepoint.com/sites/PresalesSupportProdMgmtDoc/Freigegebene%20Dokumente/Style%20Guide_version_1.pdf)
 - [Document template](./editorial-guide/about_template)
 - [Conventions for creating screenshots](./editorial-guide/screenshot_conventions)
-- [Editorial process description](https://theobaldsoftware.sharepoint.com/sites/PresalesSupportProdMgmtDoc)
+- [Editorial processes - visualised ](https://theobaldsoftware.sharepoint.com/:f:/s/PresalesSupportProdMgmtDoc/EqxZ6qf_qmVMvwsmkZPIHD4BlR6W0kYCFxwQ7iRg7SJ1ZQ?e=Jy4oN5)

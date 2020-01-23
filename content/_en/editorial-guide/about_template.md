@@ -23,7 +23,7 @@ Keep in mind that function descriptions differ textually and in terms of formatt
 ### Headings
 The correct headers for the page is H3 (###) and H4 (####) for the subsections. Don't only use bold, otherwise the anchors cannot be set at all. 
 
->Example:
+Example:
 
 #### To check the connection
 <!--Unterüberschrift H4. Optional, wird gesetzt wenn es sinnvoll ist.
@@ -56,7 +56,7 @@ This section should contain no or only short descriptions. Ordered lists should 
 <!-- Handlungsanweisungen sollten möglichst getrennt von den Produktbeschreibungen gehalten werden.
 <!--Überschriften für Handlungsanweisungen mit Schritten sollten möglichst einen Verb haben.-->
 
->Example for a procedure with steps:
+Example for a procedure with steps:
 1. Open the xyz. <!--OL für die Schritte-->
 2. Click **[OK]**. The window "Window Name" opens. (Intermediate result) <!--- intermediate result--->
 3. Close the xyz. <br> The table is extracted. (Result)
@@ -65,7 +65,7 @@ This section should contain no or only short descriptions. Ordered lists should 
 Results or intermediate results supports the user orientation within the help.
 When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets.
 
->Example:
+Example:
 
 1. Click **[Add]** (1).
 2. Choose the type e.g., *String* out of the drop-down menu (2).
@@ -110,14 +110,15 @@ Recommendation | Green
 
 See also additional info on boxes in the [markdown example](./markdown-example).
 
-{: .box-warning } **Warning! Formatting issues**<br>
+{: .box-warning } 
+**Warning! Formatting issues**<br>
 Make sure to leave space before and after the info boxes, otherwise the whole text will be incorporated in the box.
 
 #### Note:
 Notes is additional information and can be formulated freely.
  <!--Note /Hinweis ist eine zusätzliche Information.-->
 
->Example:
+Example:
 
  {: .box-note }
 **Note:** The corresponding SQL command is generated dynamically and executed on the SAP server.
@@ -136,7 +137,7 @@ Der Warning-Hinweis soll möglichst nach dem folgenden Prinzip formuliert werden
 - Cause with an explanation of the threat + <br>:
 - Remedy:
  -->
->Example:
+Example:
 
 {: .box-warning }
 **Warning! Data loss** A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically. <br> Activate the debug logging only when necessary, e.g., upon request of the support team.
@@ -175,6 +176,8 @@ The symbol ">" can be used to demonstrate menu jumps.
 ----
 
 ### Paths & URLs
+When inserting links it is recommended to use relative links
+Example:  ([ Link text](./ filename) ) *remove spaces
 
 #### URLs
 Don't use the "full qualified URLs". Square brackets have to contain a meaningful description, not just "click here" or "click me".
@@ -214,13 +217,6 @@ WHERE [Extraction_Date] IS NULL;
 ```
 
 <!--Code soll mit dem Element inline code ausgezeichnet werden-->
-
-
-### Examples - Blockquotes
-
->This is an example.
-
-<!--Kann für Beispiele verwendet werden-->
 
 
 
