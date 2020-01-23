@@ -8,7 +8,8 @@ weight: 2
 lang: en_GB
 ---
 {: .box-note }
-**Note** This is a template to download, copy and to comfortably fillout locally with content.
+**Note** This is a template to download, copy and to comfortably fill out locally with content.
+
 
 ### Writing a description
 In this section... / this section gives an overview.../ the following section is about..
@@ -40,7 +41,7 @@ Don't use a return before images in instructions to make sure that the image is 
 ### Markings in the text
 This is an unordered list for items where the order is not important.
 - Buttons: bold & square brackets - **[Edit]** 
-- URLbuttons: just bold - **Subscriptions**
+- URL buttons: just bold - **Subscriptions**
 - Fields within a window: bold - **Name** 
 - Input values: italics - *MATNR*
 - Drop-down menu options: italics - *EC5* 
@@ -93,7 +94,7 @@ In the main menu bar of the designer there are additional adjustable settings:  
 ### Paths & URLs
 
 #### URLs
-For more information on defining of the extractions, see [Define an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started-table/define-a-table-extraction) with the "SAP Table or View" component as an example.
+For more information on defining of the extractions, see [Define an Extraction](./about_template) with the "SAP Table or View" component as an example.
 
 #### Paths
 `C:\Program Files\ERPConnect Services\ERPConnectServices.NintexWorkflowActions.exe`

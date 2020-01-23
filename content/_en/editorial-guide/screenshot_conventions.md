@@ -111,6 +111,6 @@ Use the default position numbers provided in Greenshot. Change the color to Theo
 
 ![Squares](/img/content/help_concept/greenshot_pos-n_color.png){:class="img-responsive"}
 
- When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets (see also [About function descriptions](https://help.theobald-software.com/en/about_template#about-function-descriptions)).
+ When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets (see also [the template](./about_template)).
  
 
