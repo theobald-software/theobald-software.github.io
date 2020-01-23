@@ -24,10 +24,10 @@ To load an extraction, Microsoft SQL Server destination needs to be created and 
 
 3. Click **[Add]** (2) to add a new destination.
 
-4. Fill in a **Name**, select **SQLServer** from the **Type** list and click **[OK]** (3).
+4. Fill in a **Name**, select **SQLServer** from the **Type** (3) list.
 ![Select-Destination-Type](/img/content/destination_details_sqlserver.png){:class="img-responsive"}
 
-5. In the section "Connection", fill in the fields **Data Source, Username** and **Password** with the correspondent values. Data source is the name of the Microsoft SQL Server.
+5. In the section "Connection", fill in the fields **Server Name** and **Database Name**. 
 6. Click **[Test Connection]** (4) to check the connection to the  database.
 ![Test-Connection-Successful](/img/content/sqlserver_destination-details.png){:class="img-responsive"}
 
