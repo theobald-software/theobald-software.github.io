@@ -5,8 +5,7 @@ In diesem Fenster können Sie einfache Tabellenextraktionen definieren oder Tabe
 ![Add-New-Table](/img/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
 Das Fenster "Table Lookup" wird geöffnet.<br/>
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
-2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden Tabelle ein. <br>
-**Tipp:** Die Verwendung des Wildcard-Operators (*) ist in der Suchleiste möglich.<br>
+2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden Tabelle ein. Die Verwendung des Wildcard-Operators (*) ist unterstützt.<br>
 3. Klicken Sie auf den Suche-Button (2). <br>
 Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
 4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **OK** (4). <br>

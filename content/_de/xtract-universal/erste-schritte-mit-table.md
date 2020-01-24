@@ -2,7 +2,7 @@
 ref: xtract-universal-03
 layout: page
 title: Erste Schritte mit Table
-description: Erste Schritte mit Table
+description: Erste Schritte mit Xtract Table
 product: xtract-universal
 parent: xtract-universal
 childidentifier: erste-schritte-mit-table

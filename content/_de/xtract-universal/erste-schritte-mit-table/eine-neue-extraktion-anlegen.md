@@ -25,7 +25,7 @@ Das Fenster "Manage Sources" wird geöffnet.<br>
 5. Setzen Sie die folgenden Parameter:
 - Mandant (Client) und Sprache (Language) (3)
 - Benutzer (User) und Passwort (Password) (4) <br>
-6. Klicken Sie auf **[Verbindung testen]** (5), um die erfolgreiche Verbindung zu testen. <br>
+6. Klicken Sie auf **[Test connection]** (5), um die erfolgreiche Verbindung zu testen. <br>
 Das Bestätigungsfenster wird geöffnet. <br>
 
 {: .box-tip }
