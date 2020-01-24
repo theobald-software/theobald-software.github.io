@@ -37,8 +37,10 @@ Das Entwicklungssystem bietet dem Entwickler alle Werkzeuge, um Lösungen mit de
 
 **SAP System(e)**
 
-- SAP ERP: R/3 4.0B oder höher oder jede Version von SAP ECC
-- SAP BW: 3.0 oder höher
+- SAP R/3 Version 4.0B oder höher oder SAP ECC
+- SAP S/4 HANA
+- SAP BW Version 3.1 oder höher
+- SAP BW/4 HANA
 
 **SAP Benutzer**
 
