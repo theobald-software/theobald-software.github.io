@@ -56,8 +56,8 @@ In case of an error, it returns one of the following codes:
 Examples:
 
 ```
-xu.exe http://localhost:8065/?name=MyExtractionName^&rows=200 <br>
-xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200 <br>
+xu.exe http://localhost:8065/?name=MyExtractionName^&rows=200
+xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200 
 xu.exe -s localhost -p 8065 -n MyExtractionName<br>
 xu.exe -h
 ```
