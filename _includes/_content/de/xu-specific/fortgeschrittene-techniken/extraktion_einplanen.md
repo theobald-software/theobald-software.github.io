@@ -1,3 +1,15 @@
+Die Extraktionen von Xtract Universal können eingeplant und zu einem späteren Zeitpunkt ausgeführt werden. Dazu benötigen Sie einen beliebigen Taskplaner z.B. den Windows Task Scheduler (siehe [Blogartikel - How to schedule Xtract Universal extractions to load data from SAP](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/0)). Um die Taskplaner-Funktionalität zu nutzen, führen Sie Xtract Universal von einer Kommandozeile aus.
+
+### Xtract Universal von der Kommandozeile ausführen
+1. Navigieren Sie zum Installationsordner von Xtract Universal, z.B.
+ `C:\Program Files\XtractUniversal` <br>
+2. Finden Sie das Kommandozeilen-Tool xu.exe, mit dem eine Extraktion ausgeführt werden kann.<br>
+
+`C:\Program Files\XtractUniversal\xu.exe`<br>
+`http://localhost:8065/?name=MyExtractionName`
+
+
+-----
 Im Installationsordner (z.B. C:\Program Files\XtractUniversal) finden Sie das Programm xu.exe, welches zur Ausführung einer Extraktion verwendet werden kann.<br>
 ```
 "C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName

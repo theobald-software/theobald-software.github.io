@@ -1,16 +1,18 @@
-Scheduling extractions at a later time is possible with any task scheduler e.g., Windows task scheduler (see [Blog article - How to schedule Xtract Universal extractions to load data from SAP](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/0) ). To use the task scheduler functionality, run Xtract Universal from a command line.
+Scheduling extractions at a later time is possible 
+with any task scheduler e.g., Windows task scheduler
+ (see [Blog article - How to schedule Xtract Universal extractions to load data from SAP](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/0) ). To use the task scheduler functionality, run Xtract Universal from a command line.
 
 ### Running Xtract Universal from a command line
 1. Navigate to the the installation folder of Xtract Universal e.g.,
  `C:\Program Files\XtractUniversal` <br>
-2. Find the command tool xu.exe, which can be used to execute an extraction.<br>
+2. Find the command-line tool xu.exe, which can be used to execute an extraction.<br>
 
 `C:\Program Files\XtractUniversal\xu.exe`<br>
 `http://localhost:8065/?name=MyExtractionName`
 
 ### Variables
 
-When using variables, precede the character (&) with an escape character (^): <br>
+When using variables, place an escape character *^* before the character *&* <br>
 `C:\Program Files\XtractUniversal\xu.exe`
 `http://localhost:8065/?name=MyExtractionName^&Variable=Value`
 
@@ -67,7 +69,7 @@ In the example, the extraction has a dynamic variable that can be set in the scr
 <details>
 <summary>Click here to show PowerShell Script.</summary>
 {% highlight javascript %}
-# Execute an Xtract Universal extraction using the command tool xu.exe in a powershell script
+# Execute an Xtract Universal extraction using the command-line tool xu.exe in a powershell script
 # the extraction has a variable CalendarMonth that needs a value in the format YYYYMM, e.g. 201712
   
 clear
