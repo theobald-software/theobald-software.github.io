@@ -1,8 +1,8 @@
 ---
 ref: xu-advanced-techniques-09
 layout: page
-title: Aufruf mit Kommandozeile
-description: Aufruf mit Kommandozeile
+title: Extraktion einplannen
+description: Extraktion einplanen
 product: xtract-universal
 parent: fortgeschrittene-techniken
 permalink: /:collection/:path
