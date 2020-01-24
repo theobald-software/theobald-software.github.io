@@ -9,33 +9,38 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 ---
-### Eine Extraktion im Designer testen
 
-Dieser Schritt ist optional und zeigt, wie Sie sich das Ergebnis der Extraktion im Browser anzeigen lässt, um sicher zu stellen, dass die Extraktion erfolgreich läuft und das gewünschte Ergebnis liefert. <br> 
-Um eine angelegte Extraktion auszuführen, markieren Sie die entsprechende Zeile in der Hauptmaske und klicken Sie auf *Run*.
+Dieser Schritt ist optional. Es wird gezeigt, wie das Extraktionsergebnis in einem Webbrowser dargestellt werden kann, um sicherzustellen, dass die Extraktion ordnungsgemäß abläuft und das benötigte Ergebnis liefert.
 
-![Execute-Table-Extraction](/img/content/run_hauptmaske_xu.png){:class="img-responsive"}
+### Definieren der Extraktionseigenschaften 
 
-Es öffnet sich das nachfolgende Fenster, in dem Sie Details der Ausführung festlegen können.
-![Run-Table-Extraction-Plants](/img/content/run_extraction_xu.png){:class="img-responsive"}
+1. Wählen Sie im Hauptfenster von Xtract Universal Designer eine erstellte Tabellenextraktion aus.
+2. Um die Extraktionseinstellungen zu öffnen, klicken Sie auf **[Run]**.<br>
+![Run-Table-Extraktion](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}<br>
+Das Fenster "Run Extraction" wird geöffnet.
+3. Passen Sie die Details der Ausführung mit Parametern an, falls erforderlich. 
 
-Die eigentliche Anforderung der Daten erfolgt über eine URL, z.B. 
-```
-http://localhost:8065?name=Plants
-```
-Es reicht nur die Angabe des Namens, um die Extraktion anzustoßen. Allerdings ist es möglich, über zusätzliche Parameter bestimmte Einstellungen innerhalb der Extraktion zu übersteuern. Wenn Sie beispielsweise den Defaultwert von 0 (=unbegrenzt) für die maximale Anzahl von Zeilen auf 100 setzen möchten, selektieren Sie das Kästchen in der Spalte *Override* und definieren Sie den gewünschten Parameter in der Spalte *Value*. Die URL sieht nun folgendermaßen aus: 
-```
-http://localhost:8065?name=Plants&rows=100
-```
+### Extraktionsparameter festlegen
+1. Wählen Sie im Fenster "Run Extraction" ein Parameter aus, den Sie überschreiben möchten. Markieren Sie das zugehörige Kästchen.
+2. Geben Sie den Wert ein. Die eigentliche Datenanfrage erfolgt über URL:
+- Vor der Änderung eines Parameters:
+`http://localhost:8065?name=Plants`
+- Nach Auswahl des Parameters **Rows**:
+`http://localhost:8065?name=Plants&rows=100`<br>
+![Run-Table-Extraktion-Param](/img/content/xu/xu_run_extraction_param.png)<br>
+3. Führen Sie eine Extraktion in xu.exe aus. Die Einstellungen ändern sich zur Laufzeit, ein Neustart des Designers ist nicht erforderlich. 
+
+{: .box-note }
+**Hinweis** <br> Zusätzliche Parameter wie *Package size (Paketgröße)* oder *Row limit (Zeilenlimit)* usw. werden im Abschnitt [Extraktionseinstellungen](https://help.theobald-software.com/de/xtract-universal/table/extraktionseinstellungen) beschrieben. 
 
 
-Um die Extraktion letztendlich auszuführen, klicken Sie auf *Run in Browser*. Ihr Standard-Browser öffnet sich und zeigt den Datenextrakt.
+### Ausführen einer Extraktion in einem Browser
+Klicken Sie auf **[Run in Browser]**, um eine Extraktion im Browser auszuführen. Ihr Standardbrowser öffnet sich und zeigt die Daten entsprechend den Kriterien und dem Format an. <br>
 
-![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
+![Tabellen-Extraktion-Browser-Ergebnis](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
 
-Bitte beachten Sie, dass die Übergabeparameter (wie *rows* in unserem Beispiel) nicht zwingend gesetzt sein müssen. Mann kann sie setzen, wenn der in der Extraktion hinterlegte Wert im Nachhinein verändert (bzw. übersteuert) werden soll.
+### Planen einer Extraktion
 
-### Eine Extraktion einplanen
+Das Planen von Extraktionen zu einem späteren Zeitpunkt ist mit dem Windows Task Scheduler möglich. Um die Task Scheduler-Funktionalität zu nutzen, führen Sie Xtract Universal über eine [Kommandozeile](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/run-from-a-command-line) aus.
 
-Es ist ebenfalls möglich, Extraktionen zu einem späteren Zeitpunkt unter Verwendung einer Aufgabenplannung (Task Scheduler) einzuplanen.
-Weiterführende Informationen zu diesem Thema finden Sie [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/aufruf-mit-kommandozeile).
+

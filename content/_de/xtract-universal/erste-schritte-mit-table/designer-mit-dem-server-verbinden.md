@@ -1,8 +1,8 @@
 ---
 ref: xu-getting-started-table-01
 layout: page
-title: Schritt 1 - Designer mit dem Server verbinden
-description: Schritt 1 - Designer mit dem Server verbinden
+title: 1. Xtract Universal Designer mit Xtract Universal Server verbinden
+description: 1 - Designer mit dem Server verbinden
 product: xtract-universal
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
@@ -10,16 +10,24 @@ weight: 1
 lang: de_DE
 ---
 
-Nach dem Start des Designers, muss der Designer erst mit einem Server und damit mit einem Extraktion-Repository verbunden werden. 
-Die Adresse ist im Fall eines lokalen Xtract Servers der localhost (wie im Screenshot), oder eben eine andere Netzwerk-Adresse, 
-je nach dem, wo die Server-Komponente läuft. Der Standardport 8064 kann je nach Konfiguration abweichen. 
+### Verbindung zu einem Server
+1. Starten Sie den Xtract Universal Designer.
+2. Verbinden Sie den Designer mit dem Xtract Universal Server und dem Extraktions-Repository.
+- Wenn der Xtract Universal Server ein lokaler Server ist, lautet die Serveradresse *localhost*.<br>
+Der Standardport (8064) kann je nach Konfiguration variieren. <br>
+![XU3_Designer_Verbinden](/img/content/xu_connect_screen _neu.png){:class="img-responsive"}
 
-Wenn der Server auf einer anderen Maschine als der Designer läuft, dann achten Sie drauf, dass der Port nicht von Ihrem Firewall blockiert wird. 
-Klicken Sie auf Connect, um Verbindung mit dem Server aufzunehmen. 
+- Wenn der Xtract Universal Designer und der Xtract Universal Server nicht auf demselben Rechner laufen, geben Sie den Hostnamen ein, auf dem der Xtract Universal Server läuft. Stellen Sie sicher, dass der Port nicht durch Ihre Firewall blockiert wird.
 
-![XU_Connect_Screen](/img/content/xu_connect_screen%20_neu.png){:class="img-responsive"}
+3. Wenn der Dienst nicht auf dem Standard-Port 8064 läuft (kann in den Servereinstellungen konfiguriert werden), geben Sie den Port an, indem Sie nach dem Hostnamen :[Port] eintragen.
 
-Nach dem erfolgreichen Verbinden sind die Buttons für die Neuanlage und die Manipulation von Extraktionen aktiv. 
-Die Liste im unteren Bereich der Maske füllt sich mit allen Extraktionen, die bereits auf dem Server angelegt sind.
+### Authentifizierung
+Xtract Universal bietet verschiedene Methoden zur Authentifizierung und Sicherung der Verbindung zwischen Designer und Server. Die Standardauthentifizierungsmethoden sind die Authentifizierung über *Windows-Anmeldeinformationen (aktueller Benutzer)* und *Anonym (keine Verschlüsselung)*.
 
-![Designer](/img/content/xu_3.x_initial_screen.png){:class="img-responsive"}
+![XU3_Designer_Authentifizierung](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}<br>
+
+#### Änderung der Authentifizierungsmethode
+Sobald Sie angemeldet sind, können Sie die Authentifizierungsmethoden aktivieren oder deaktivieren. <br>
+1. Navigieren Sie im Hauptfenster des Xtract Universal Designers in die Menüleiste und wählen Sie den Menüpunkt **Server > Einstellungen** aus. <br>
+![Server Einstellungen](/img/content/Server-Settings.png){:class="img-responsive"} <br>
+2. Um die Zugriffsrechte einzuschränken, definieren Sie die Benutzer/Gruppen und markieren Sie das Kästchen "Designer-Zugriff auf folgende Benutzer/Gruppen beschränken".

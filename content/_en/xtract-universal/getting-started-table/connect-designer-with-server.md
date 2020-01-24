@@ -12,14 +12,16 @@ lang: en_GB
 ### Connecting to a server
 1. Launch the Xtract Universal Designer.
 2. Connect the Designer to the Xtract Universal Server and the extraction repository.
-- When Xtract Universal Server is a local server, the server address is then localhost.<br>
+- When Xtract Universal Server is a local server, the server address is then *localhost*.<br>
 The default port (8064) may vary depending on the configuration. <br>
 ![XU3_Designer_Connect](/img/content/xu_connect_screen _neu.png){:class="img-responsive"}
-- When the Xtract Universal Designer and the Xtract Universal Server are not running on the same machine, type in the host name the Xtract Universal Server is running on. Make sure the port is not blocked by your firewall.
+- When the Xtract Universal Designer and the Xtract Universal Server are not running on the same machine, type
+ in the host name the Xtract Universal Server is running on. Make sure the port is not blocked by your firewall.
 3. If the service is not running on default port 8064 (can be configured in the server settings), specify the port by adding :[port] after the host name.
 
 ### Authentication
-Xtract Universal offers different methods of authenticating and securing the connection between designer and server. Default authentication methods are authentication via *Windows credentials (current user)* and *Anonymous (no encryption)*.
+Xtract Universal offers different methods of authenticating and securing the connection between 
+designer and server. Default authentication methods are authentication via *Windows credentials (current user)* and *Anonymous (no encryption)*.
 
 ![XU3_Designer_Authentication](/img/content/XU3_Designer_Authentication.png){:class="img-responsive"}<br>
 
