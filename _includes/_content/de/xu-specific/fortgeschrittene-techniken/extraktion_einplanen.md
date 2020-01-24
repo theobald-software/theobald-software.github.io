@@ -9,32 +9,25 @@ Die Extraktionen von Xtract Universal können eingeplant und zu einem späteren 
 `http://localhost:8065/?name=MyExtractionName`
 
 
------
-Im Installationsordner (z.B. C:\Program Files\XtractUniversal) finden Sie das Programm xu.exe, welches zur Ausführung einer Extraktion verwendet werden kann.<br>
-```
-"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName
-```
+### Variablen
 
-Sie können das Tool unter anderem verwenden, um die Extraktionen über eine Aufgabenplannung (Task Scheduler) auszuführen. In unserem [Blog](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/) finden Sie ein Beispiel dazu (auf Englisch). 
+Wenn Sie Variablen nutzen, stellen Sie ein Escape-Zeichen *^* vor dem *&* Zeichen. <br>
+`C:\Program Files\XtractUniversal\xu.exe`
+`http://localhost:8065/?name=MyExtractionName^&Variable=Value`
 
-**Variablen**
-
-Bei der Nutzung von Variablen müssen Sie dem Zeichen (&) ein Escape-Zeichen (^) voranstellen: 
-```
-"C:\Program Files\XtractUniversal\xu.exe" http://localhost:8065/?name=MyExtractionName^&Variable=Value
-```
 
 Wird die Extraktion über die Parameter aufgerufen, können über den -o Parameter beliebig viele Variablen hinzugefügt werden:<br>
--o variablenName=variablenWert -o variablenName2=variablenWert2 ...
+- -o variablenName=variablenWert 
+- -o variablenName2=variablenWert2 ...
 
-**Vordefinierte Variablen**
+### Vordefinierte Variablen
 
 Vordefinierte Variablen finden Sie unter [Extraktionsparameter](./extraktionsparameter). 
 
-**Rückgabe**
+### Rückgabe
 
 Wenn eine Operation erfolgreich abgeschlossen wurde, gibt das Programm den Wert 0 zurück.<br>
-Im Falle eines Fehlers, gibt es einen der folgenden Codes zurück:
+Im Falle eines Fehlers, gibt das Programm einen der folgenden Codes zurück:
 
 |HTTP Statuscodes | Beschreibung |
 |:----|:---| 
@@ -45,7 +38,7 @@ Im Falle eines Fehlers, gibt es einen der folgenden Codes zurück:
 |1014 | Die Anzahl der Argumente ist ungültig |
 |1015 | Der Name des Parameters ist unbekannt |
 |1016 | Das Argument ist ungültig |
-|1053 |  Die URL ist falsch |
+|1053 | Die URL ist falsch |
 |1087 | Der Parameter ist ungültig |
 
 #### Parameter
@@ -68,15 +61,13 @@ xu.exe -s localhost -p 8065 -n MyExtractionName
 xu.exe -h
 ```
 
-**Aufruf in PowerShell** 
+### Aufruf in PowerShell
 
-Das folgende Beispiel zeigt, wie man eine Extraktion in PowerShell mit Hilfe des Kommandotools xu.exe aufrufen kann. 
-Im Beispiel hat die Extraktion hat eine dynamische Variable, welche im Skript gesetzt werden kann. 
-
-Siehe unser [Blog](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/) über Xtract Universal und PowerShell für weitere Skripte und Beispiele. 
+Das folgende Beispiel zeigt, wie man eine Extraktion in PowerShell mit Hilfe des Kommandozeilen-Tools xu.exe aufrufen kann. 
+Im Beispiel hat die Extraktion hat eine dynamische Variable, welche im Skript gesetzt werden kann. Im [Blogartikel - Mastering SAP Access with Xtract Universal and Powershell](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/) sind noch weitere Skripte und Beispiele beschrieben. 
 
 <details>
-<summary>Hier klicken um PowerShell Script anzuzeigen</summary>
+<summary>Hier klicken, um PowerShell Script anzuzeigen</summary>
 {% highlight javascript %}
 # Execute an Xtract Universal extraction using the command tool xu.exe in a powershell script
 # the extraction has a variable CalendarMonth that needs a value in the format YYYYMM, e.g. 201712
@@ -128,10 +119,7 @@ HTTP Statuscodes (e.g. 404 when the extraction does not exist)
 1053    Something is wrong with your URL
 1087    The parameter is invalid
   
-check the online help for further information
-http://help.theobald-software.com/Xtract-Universal-EN/default.aspx?pageid=run-from-a-command-line
-'@
-  
+ 
   
 # run the command tool with the right parameters
 $res = &$XUCmd -s $XUServer -p $XUPort -n $XUExtraction -o CalenderMonth=$myCalenderMonth 1>$XUOutputfile 2>$XULogfile
@@ -150,5 +138,7 @@ write-host $errorMessage
 {% endhighlight %}
 </details>
 
-Siehe auch <br> 
-[How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer) (English)
+### Extraktion im Windows Event-Viewer anzeigen
+
+Die Extraktionen von Xtract Universal können auch in die Windows Logs aufgenommen und im Event Viewer angezeigt werden.<br> 
+Mehr dazu im [Knowledge Base Artikel - How to insert Xtract Universal Extraction Events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer).

@@ -22,7 +22,7 @@ If the extraction is called via the parameters, any number of variables can be a
 
 ### Predefined variables
 
-Predefined variables are described in [Extraction Parameters](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/extraction-parameters). 
+Predefined variables are described in [Extraction Parameters](./extraction-parameters). 
 
 ### Returned value 
 
@@ -118,10 +118,7 @@ HTTP Statuscodes (e.g. 404 when the extraction does not exist)
 1016    The argument is not valid
 1053    Something is wrong with your URL
 1087    The parameter is invalid
-  
-check the online help for further information
-http://help.theobald-software.com/Xtract-Universal-EN/default.aspx?pageid=run-from-a-command-line
-'@
+ 
   
   
 # run the command tool with the right parameters
@@ -142,4 +139,4 @@ write-host $errorMessage
 </details>
 
 ### Showing extraction in the Windows Event viewer
-Xtract unviersal extraction events can be inserted into the windows logs and displayed in the Event Viewer (see [Knowledge base article - How to insert Xtract Universal extraction events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)).
+Xtract Universal extraction events can be inserted into the Windows logs and displayed in the Event Viewer (see [Knowledge base article - How to insert Xtract Universal extraction events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)).
