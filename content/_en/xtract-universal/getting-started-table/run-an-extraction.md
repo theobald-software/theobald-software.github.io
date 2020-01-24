@@ -36,7 +36,7 @@ The window "Run Extraction" opens.
 
 
 ### Running an extraction in a browser
-To run the extraction, click **[Run in Browser]**. Your default browser opens and displays the data in accordance with the criteria and format. <br>
+To run the extraction in a browser, click **[Run in Browser]**. Your default browser opens and displays the data in accordance with the criteria and format. <br>
 
 ![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
 

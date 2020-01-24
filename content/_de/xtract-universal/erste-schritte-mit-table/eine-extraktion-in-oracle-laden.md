@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-table-04
 layout: page
-title: Schritt 4 - Eine Extraktion in eine Datenbank laden
+title: 4. Eine Extraktion in eine Datenbank laden
 description: Schritt 4 - Eine Extraktion in eine Datenbank laden
 product: xtract-universal
 parent: erste-schritte-mit-table
@@ -9,58 +9,45 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 ---
+Im Folgenden wird das Laden der Extraktion in eine Datenbank dargestellt. Als Zieldatenbank dient Microsoft SQL Server. 
 
-### Verbindung zur Zieldatenbank definieren
+Um eine Extraktion zu in die Microsoft SQL Server Datenbank zu laden, muss die Destination zunächst erstellt und definiert werden.
 
-Wir wollen nun examplarisch für eine Datenbank Destination, eine *Oracle-Datenbank* als Ziel anlegen.
+### Microsoft SQL Server Destination erstellen
 
-- Klicken Sie nun auf **Destination**
+1. Klicken Sie im Hauptfenster des Designers auf **[Destination]**, um die Destinationseinstellungen zu öffnen.
+![Laden d. Destination](/img/content/destination_xu.png){:class="img-responsive"}
 
-![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
+2. Im Fenster "Destination Settings" klicken Sie auf **[...]** (1), um die Destinationen zu verwalten. 
+![Laden-Manage-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}
 
-![Load-Manage-Shared-Destination](/img/content/Load-Manage-Shared-Destination.jpg){:class="img-responsive"}
+3. Klicken Sie auf **[Add]** (2), um eine neue Destination hinzuzufügen.
 
-- Klicken Sie auf **Add**
+4. Geben Sie einen Namen ein im Feld **Name**. Wählen Sie **SQLServer** aus der Dropdown-Liste **Type** (3).<br>
+![Select-Destination-Type](/img/content/destination_details_sqlserver.png){:class="img-responsive"}
 
-![Shared-Destinations](/img/content/xu/Shared-Destinations.jpg){:class="img-responsive"}
+5. Füllen Sie im Abschnitt "Connection" die Felder **Server Name** und **Database Name** aus. 
+6. Klicken Sie auf **[Test connection]** (4), um die Verbindung zur Datenbank zu überprüfen.<br>
+![Test-Verbindung - erfolgreich](/img/content/sqlserver_destination-details.png){:class="img-responsive"}
 
-- Geben Sie einen Namen für die Zielverbindung ins Feld **Name** ein
-- Wählen Sie **Oracle** aus der **Type**- Auswahlliste aus
+7. Klicken Sie auf **[OK]** (5), um die Verbindung zu speichern. 
 
-![Select-Destination-Type](/img/content/xu/Select-Destination-Type.jpg){:class="img-responsive"}
+### Extraktion in die Microsoft SQL Server-Datenbank laden
 
-- Füllen Sie die Felder **Host, Port, SID / Service Name, Username** und **Password** aus
-- Klicken Sie auf **Test Connection**, um die Verbindung zu testen
+1. Wählen Sie im Hauptfenster des Designers eine Extraktion mit einem beliebigen Ziel aus und klicken Sie auf **[Destination]**.<br>
+![Lade-Destinations](/img/content/destination_xu.png){:class="img-responsive"}<br>
+Das Fenster "Destination Settings".
 
-![Test-Connection-Successful](/img/content/xu/Oracle-Destination-Details.jpg){:class="img-responsive"}
+2. Im Fenster "Destination Settings" wählen Sie Ihre erstellte Destination **SQLServer** aus der Dropdown-Liste aus. Hier können Sie auch die extraktionsspezifischen Einstellungen bei Bedarf ändern. Im Beispiel werden die Standardeinstellungen beibehalten:
+![Load-Shared-Destination-SQLServer](/img/content/sqlserver_destination-settings.png){:class="img-responsive"}
 
-- Klicken Sie nun **OK** im Fenster Destination Details, um die Zielverbindung zu speichern. 
-- Schließen Sie anschließend das Fenster *Shared Destination* mit **Close**
+9. Klicken Sie auf **[OK]**, um zum Hauptfenster des Designers zurückzukehren.       
+4. Klicken Sie auf **[Run] > [run in xu.exe]**<br>
+![Eine Extraktion ausführen](/img/content/run_extraction.png){:class="img-responsive"} <br>
+Das Kommandozeilenfenster wird geöffnet und ein erfolgreicher Extraktionsvorgang endet mit der Meldung *Extraction finished successfully*.
+![Datenbank-Metadaten](/img/content/xu/konsole_run_in_xu_exe.png){:class="img-responsive"}
 
-### Extraktion ausführen
 
-- Wählen Sie nun die angelegte Oracle Zielverbindung im Feld *Destination* aus und bestätigen mit **OK**
-
-![Load-Shared-Destination-Oracle](/img/content/xu/Load-Shared-Destination-Oracle.jpg){:class="img-responsive"}
-
-Die zuvor angelegte Zielverbindung *Oracle* kann jetzt für die Datenextraktion *plants* verwendet werden.
-
-- wählen SIe die Extraktion aus und Klicken Sie auf *Run*
-- führen Sie nun die Extraktion über *run xu.exe* aus
-            
-### Extraktion in die Push-Destination Oracle laden
-
-- das Konsolenfenster öffnet sich und endet mit der Statusmeldung *Extraction finished successfully*
-
-![Load-Shared-Destination-Oracle](/img/content/xu/konsole_run_in_xu_exe.png){:class="img-responsive"}
-
-### Ergebnis in der Oracle-Datenbank überprüfen
-
-- Im Oracle SQL Developer Studio können Sie das Ergebnis überprüfen. Die Tabelle wurde entsprechend angelegt.
-
-![Oracle-Database-Metadata](/img/content/xu/Oracle-Database-Metadata.jpg){:class="img-responsive"}
-
-- Sie können sich auch den Inhalt anschauen
-
-![Oracle-Database-Data](/img/content/xu/Oracle-Database-Data.jpg){:class="img-responsive"}
+#### Extraktionsergebnis überprüfen
+Öffnen Sie Ihr SQL Management Studio und überprüfen Sie das Vorhandensein  der erfolgreich extrahierten Tabelle. 
 

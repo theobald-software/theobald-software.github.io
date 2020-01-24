@@ -12,19 +12,19 @@ lang: en_GB
 
 The following steps depict the loading of the extraction into a database - Microsoft SQL Server. 
 
-To load an extraction, Microsoft SQL Server destination needs to be created and defined.
+To load an extraction Microsoft SQL Server destination needs to be created and defined.
 
 ### Creating Microsoft SQL Server destination
 
-1. In the main window of the designer, click **Destinations** to open destination settings.
+1. In the main window of the designer, click **[Destination]** to open destination settings.
 ![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
 
-2. Select a destination and click **[...]** (1) to manage destinations. 
+2. In the window "Destination Settings" click **[...]** (1) to manage destinations. 
 ![Load-Manage-Shared-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}
 
 3. Click **[Add]** (2) to add a new destination.
 
-4. Fill in a **Name**, select **SQLServer** from the **Type** (3) list.
+4. Fill in a **Name**, select **SQLServer** from the drop down list **Type** (3).
 ![Select-Destination-Type](/img/content/destination_details_sqlserver.png){:class="img-responsive"}
 
 5. In the section "Connection", fill in the fields **Server Name** and **Database Name**. 
