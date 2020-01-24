@@ -36,7 +36,7 @@ Im Falle eines Fehlers, gibt es einen der folgenden Codes zurück:
 |1053 |  Die URL ist falsch |
 |1087 | Der Parameter ist ungültig |
 
-**Parameter**
+#### Parameter
 
 -h        Gibt die Hilfe-Seite aus
 
@@ -48,7 +48,7 @@ Im Falle eines Fehlers, gibt es einen der folgenden Codes zurück:
 
 -o        Fügt eine Variable hinzu
 
-**Beispiele**
+Beispiele: <br>
 ```
 xu.exe http://localhost:8065/?name=MyExtractionName^&rows=200
 xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200
