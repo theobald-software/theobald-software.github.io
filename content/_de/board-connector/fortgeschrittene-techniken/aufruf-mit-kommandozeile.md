@@ -11,4 +11,4 @@ lang: de_DE
 old_url: 
 ---
 
-{% include _content/de/xu-specific/fortgeschrittene-techniken/aufruf-mit-kommandozeile.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/extraktion_einplanen.md %}
