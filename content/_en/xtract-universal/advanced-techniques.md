@@ -1,17 +1,18 @@
 ---
 ref: xtract-universal-04
 layout: page
-title: Advanced Techniques
-description: Advanced Techniques
+title: Advanced techniques
+description: Advanced techniques
 product: xtract-universal
 parent: xtract-universal
 childidentifier: advanced-techniques
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=advanced-techniques
+
 ---
 
-The last chapter has shown parallel to the introduction into the table component some basic techniques, such as the design and execution of an extraction. This chapter now introduces additional aspects to enter more deeply into the possibilities of Xtract Universal.
+The section [Getting Started with Table](./getting-started-table) provides an introduction to the Xtract Table or View component and explains several basic techniques for defining and running extractions with Xtract Universal. 
 
+The following section provides a deeper insight into more advanced techniques and aspects of Xtract Universal.<br>
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
