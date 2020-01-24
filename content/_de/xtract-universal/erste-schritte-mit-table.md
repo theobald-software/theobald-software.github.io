@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-03
 layout: page
-title: Erste Schritte mit Table
+title: Erste Schritte mit Xtract Table
 description: Erste Schritte mit Xtract Table
 product: xtract-universal
 parent: xtract-universal
