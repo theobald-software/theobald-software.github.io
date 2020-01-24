@@ -10,4 +10,4 @@ weight: 9
 lang: en_GB
 
 ---
-{% include _content/en/xu-specific/advanced-techniques/run-from-a-command-line.md %}
+{% include _content/en/xu-specific/advanced-techniques/scheduling_extraction.md %}

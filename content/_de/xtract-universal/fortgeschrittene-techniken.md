@@ -12,6 +12,8 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=fortgeschrittene-techniken
 ---
 
-Der letzte Abschnitt hat parallel zur Einführung in die erste Komponente Table einige Basis-Techniken gezeigt, wie eine Extraktion mit Xtract Universal gestaltet und ausgeführt werden kann. Dieser Abschnitt stellt nun weitere Aspekte vor, um tiefer in die Möglichkeiten von Xtract Universal einzusteigen.
+Der Abschnitt [Erste Schritte mit Table](https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-table) stellt eine Einführung in die Komponente Xtract Table or View dar und erklärt einige Basistechniken, wie eine Extraktion mit Xtract Universal gestaltet und ausgeführt werden kann. 
+
+Der folgende Abschnitt ermöglicht eine tiefere Einsicht in weitere Aspekte von Xtract Universal.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
