@@ -17,7 +17,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=systemvoraussetzungen
 - SQL Server 2014 SP3 (bis 09.07.2024)
 - SQL Server 2016 SP2 (bis 14.07.2026)
 - SQL Server 2017 (bis 12.10.2027)
-- SQL Server 2019 (bis 08.01.2030) - VS 2019 wird noch nicht unterstüzt, verwenden Sie VS 2017.
+- SQL Server 2019 (bis 08.01.2030)
 - SQL Server Integration Services (SSIS)
 
 Für die Entwicklung: SQL Server Data Tools werden benötigt, um SSIS-Pakete zu erstellen. Verwenden Sie das entsprechende SSDT für den von Ihnen eingesetzten SQL Server. Weitere Details finden Sie in der [Microsoft Hilfe](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
