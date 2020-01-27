@@ -1,6 +1,6 @@
 Voraussetzung für die Nutzung ist die Installation Funktionsbausteins [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP.
 
-Unter dem Karteireiter *Joins* können in der Komponente ab Version 4.x Tabellen-Joins definiert werden. Für Versionen älter als 4.x beachten Sie den Abschnitt zur separaten [Table Join](../table-join) Komponente. <br>
+Unter dem Karteireiter *Joins* können in der Komponente ab Version 4.x Tabellen-Joins definiert werden.
 
 Die *Joins* Funktion dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen.  <br>
 Mögliche Szenarien dafür wären, Tabellen für Kopf- und Positionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen. <br>
