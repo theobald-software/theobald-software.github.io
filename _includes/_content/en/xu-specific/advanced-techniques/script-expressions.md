@@ -15,7 +15,7 @@ Let's look at the following examples.
 
 **Using Scripted Expressions**
 
-Scripted expressions can be used both for the [where-condition](../table/where-clause) of a table and in the destination settings using [Custom SQL](../xu-destinations/microsoft-sql-server/sql-server-custom-sql).
+Scripted expressions can be used both for the [where-condition](../table/where-clause) of a table and in the destination settings using [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql)(Xtract Universal exapmle).
 
 **IF statement** 
 
