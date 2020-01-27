@@ -42,11 +42,7 @@ If your SAP System is older than Release 7.40, SP05, the following error appears
 
 Get more information about the Changes in Release 7.40, SP05 on the [SAP help site](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/index.htm).
 
-#### Solution for older SAP releases
 
-Instead of accessing the right table in the `WHERE` clause, it is possible to move the `WHERE` condition containing the right table into `ON` clause of the `JOIN`:
-
-`SELECT MAKT~SPRAS MARA~MATNR FROM MAKT LEFT OUTER JOIN MARA ON MAKT~MATNR = MARA~MATNR AND MARA~MATNR = 23`
 
 
 
