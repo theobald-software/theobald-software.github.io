@@ -11,7 +11,8 @@ weight: 11
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=bapis-and-function-modules
 ---
-
-**Caution!** Please note that this chapter only describes the use of the Xtract Universal  BAPI Component. For all other Basics please refer to [Step I: Define a Table Extraction](./getting-started-table/step1-define-a-table-extraction). For this chapter the knowledge about the basic usage of Xtract Universal is assumed!
+The following section describes the functions of the BAPI Component of Xtract Universal. <br>
+Basic Xtract Universal the knowledge is required to understand the following sections. <br>
+To get information on the basics of Xtract Universal, refer to [Getting started with table](./getting-started-table/). <br>
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
