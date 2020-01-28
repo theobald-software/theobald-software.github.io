@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/
 ---
 ### Architecture<br>
-Xtract IS is a plug-in for the SQL Server Integration Services (SSIS). It cannot be used outside SSIS, 
+Xtract IS is not a plug-in for the SQL Server Integration Services (SSIS). It cannot be used outside SSIS, 
 
 so that a SQL Server license is required, even if the SQL Server database is not used. 
 
