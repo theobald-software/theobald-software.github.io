@@ -12,3 +12,7 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=variants-and-selections
 ---
 {% include _content/en/abap-reports/variants-and-selections.md %}
 
+<<<<<<< Updated upstream
+=======
+<!--Hallo Yogen->
+>>>>>>> Stashed changes
