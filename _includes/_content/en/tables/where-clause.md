@@ -1,7 +1,7 @@
 ### Using WHERE clause 
 1. Select and double-click an extraction of type "table" in the main window of the Designer.
 The window "Define data source for SAP Table " opens.
-2. Navigate to tab **WHERE clause**.
+2. Navigate to tab **WHERE Clause**.
 3. Enter the table name (e.g., MAKT~MATNR).
 4. To display the results in the **Preview** section, click **[Load live preview]**.
 
@@ -14,16 +14,19 @@ The window "Define data source for SAP Table " opens.
 
 {: .box-warning }
 **Warning! Extraction fails due to incorrect syntax!** <br>
-The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure to use correct SAP OpenSQL syntax. Several important rules are listed in this help section.
+The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure to use correct SAP OpenSQL syntax. Several important syntax rules are listed in this help section.
+
+{: .box-tip}
+**Tip:** To check the syntax of the WHERE clause, click **[Load live preview]**. This way there is no need to run an extraction to see, if the syntax is correct.
 
 #### Syntax rules
 - Enter a space before and after the equal sign:<br>
  **Correct:** *YEAR = '1999 '* <br>
- **Incorrect:** *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*
+ **Wrong:** *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*
 
 - Set floating point numbers in single quotation mark: <br>
 **Correct:** *KMENG > '10.3'* <br>
-**Incorrect:** *KMENG > 10.3*
+**Wrong:** *KMENG > 10.3*
 
 The WHERE clause doesn't need any line break (return key).
 
