@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---
 
 {: .box-note }
-**Note**: For some destinations (e.g., Oracle, DB2, Teradata etc.) the appropriate driver must be installed. 
+**Note**: For some destinations (e.g., Oracle, DB2 etc.) the appropriate driver must be installed. 
 
 For more information on drivers, refer to [Requirements](./introduction/requirements).
 
@@ -31,7 +31,7 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 - [PostgreSQL](./xu-destinations/postgreSQL)
 - [SAP HANA](./xu-destinations/sap-hana) 
 - [SQL Server](./xu-destinations/microsoft-sql-server) 
-- [Teradata](./xu-destinations/teradata) 
+
 
 ### Business Intelligence / Analytics / ETL
 
