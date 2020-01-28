@@ -11,3 +11,4 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=variants-and-selections
 ---
 {% include _content/en/abap-reports/variants-and-selections.md %}
+
