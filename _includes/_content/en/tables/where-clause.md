@@ -12,24 +12,27 @@ The window "Define data source for SAP Table " opens.
 
 ### WHERE clause syntax 
 
-{: .box-note }
-**Note:** The WHERE clause doesn't need to comply with the SAP OpenSQL syntax.
+{: .box-warning }
+**Warning! Extraction fails due to incorrect syntax!** <br>
+The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure to use correct SAP OpenSQL syntax. Several important rules are listed in this help section.
 
-Enter a space before and after the equal sign, e.g., *YEAR = '1999 '*. 
-If you enter *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*, the error message: '*A dynamically specified column name is unknown*' is displayed.
+#### Syntax rules
+- Enter a space before and after the equal sign:<br>
+ **Correct:** *YEAR = '1999 '* <br>
+ **Incorrect:** *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*
 
-Set floating point numbers in single quotation mark, e.g., *KMENG > '10.3'*. 
-If you enter *KMENG > 10.3*, the error message: '*The WHERE clause has an unexpected format*' is displayed.
+- Set floating point numbers in single quotation mark: <br>
+**Correct:** *KMENG > '10.3'* <br>
+**Incorrect:** *KMENG > 10.3*
 
 The WHERE clause doesn't need any line break (return key).
 
 Get more information about the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm)
 
-Values must have the internal SAP representation:
-
-- The date 01.01.1999 has the internal representation 19990101 (YYYYMMDD),
-- The year period 001.1999 has the internal representation 1999001 (YYYYPPP),
-- Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
+- Values must have the internal SAP representation:<br>
+  - The date 01.01.1999 has the internal representation 19990101 (YYYYMMDD) 
+  - The year period 001.1999 has the internal representation 1999001 (YYYYPPP)
+  - Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
 
 ### WHERE clause restrictions
 
