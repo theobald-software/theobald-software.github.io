@@ -28,14 +28,15 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 **Correct:** *KMENG > '10.3'* <br>
 **Wrong:** *KMENG > 10.3*
 
-The WHERE clause doesn't need any line break (return key).
-
-Get more information about the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm)
+{: .box-note }
+**Note:** The WHERE clause doesn't need any line break (return key).
 
 - Values must have the internal SAP representation:<br>
   - The date 01.01.1999 has the internal representation 19990101 (YYYYMMDD) 
   - The year period 001.1999 has the internal representation 1999001 (YYYYPPP)
   - Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
+
+ Get more information about the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
 ### WHERE clause restrictions
 
