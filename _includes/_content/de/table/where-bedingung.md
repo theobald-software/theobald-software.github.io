@@ -30,14 +30,16 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 **Korrekt:** *KMENG > '10.3'* <br>
 **Falsch** *KMENG > 10.3*
 
-Die WHERE-Bedingung benötigt keinen Zeilenumbruch (Return-Taste).
 
-Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm).
+{: .box-note }
+**Hinweis:** Die WHERE-Bedingung benötigt keinen Zeilenumbruch (Return-Taste).
 
 - Die Werte müssen der internen SAP-Darstellung entsprechen:<br>
   - Das Datum 01.01.1999 hat die interne Darstellung 19990101 (JJJJMMTT) 
   - Die Jahresperiode 001.1999 hat die interne Darstellung 1999001 (YYYYYPPP)
   - Zahlen müssen die führenden Nullen enthalten, z.B. hat die Kundennummer 1000 die interne Darstellung 0000001000.
+
+ Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm). 
 
 ### Einschränkungen der WHERE-Bedingung
 
