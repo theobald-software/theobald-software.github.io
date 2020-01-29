@@ -20,6 +20,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=odata_destination_setzen
 
 3. wählen Sie die erstellte Extraktion mit der Destination "HTTP - OData atom"" und klicken Sie auf **[Run]**. 
 Das Fenster "Run Extraction" wird geöffnet.
-4. Kopieren Sie die OData-URL aus dem URL-Feld.
+4. Kopieren Sie die OData-URL aus dem URL-Feld, um OData weiter zu prozessieren (z.B. mit [Tableau](./tableau/tableau-mit-odata/eine-extraktion-mit-odata-laden))
 
 ![XU-OData-URL](/img/content/XU-OData-URL.jpg){:class="img-responsive"}
