@@ -21,7 +21,7 @@ The 32-Bit Version has to be copied in the \SysWoW64 folder.
 
 Note that the files have the same file name, only the file size varies.
 
-Please make sure you also have the latest Visual C++ 2005 Runtime. You can get it [here](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=766a6af7-ec73-40ff-b072-9112bab119c2).
+Download the lastest [Visual C++ 2005 Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=26347). 
 
 ![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive" height="300px" width="300px"}  
   
