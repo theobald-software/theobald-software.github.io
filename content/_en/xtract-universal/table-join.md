@@ -20,7 +20,7 @@ Possible scenarions are joining data from header and position tables or from att
 The correspondent SQL statement is generated and executed on the SAP server.  
 The componente provides additional features as the definition of aggregate functions, WHERE and HAVING clause. 
 
-It is required to install a custom function module (Z_) on the SAP server to be able to use this component.  
+It is required to install a [custom function module](./sap-customizing/custom-function-module-for-table-extraction) on the SAP server to be able to use this component.  
 
 {: .box-note }
 **Note:** Cluster and pool tables are not supported by the Table Join component, but they can be extracted using the table component. 

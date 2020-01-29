@@ -18,12 +18,12 @@ Ab [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes
 Nutzen sie die Table Join Funktionalität der neuen [Table-](./table/table-joins)Komponente.
 
 
-Die Table Join-Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join) und zu extrahieren.  <br>
-Mögliche Szenarien dafür sind Tabellen für Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen. <br>
-Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt. <br>
+Die Table Join-Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join) und zu extrahieren.  
+Mögliche Szenarien dafür sind Tabellen für Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen.
+Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt. 
 Die Komponente unterstützt darüber hinaus die Definition von Aggregat-Funktionen, WHERE- und HAVING-Bedingungen. 
 
-Voraussetzung dafür ist die Installation eines Z-Funktionssbausteins auf der SAP-Seite. 
+Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](./sap-customizing/custom-function-module-for-table-extraction) auf der SAP-Seite. 
 
 {: .box-note }
 **Hinweis:** Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden. 
