@@ -17,10 +17,10 @@ Use the table join functionality of the newer [Table Component](./table/table-jo
 
 The Table Join component allows to join many tables (and views) on the SAP side and to extract the result.  
 Possible scenarions are joining data from header and position tables or from attribute and text tables.  
-The correspondent SQL statement will be generated and executed on the SAP server.  
-The componente provides additional features as the definition of aggregate functions, where and having conditions. 
+The correspondent SQL statement is generated and executed on the SAP server.  
+The componente provides additional features as the definition of aggregate functions, WHERE and HAVING clause. 
 
-It is required to install a custom function module on the SAP server to be able to use this component.  
+It is required to install a custom function module (Z_) on the SAP server to be able to use this component.  
 
 {: .box-note }
 **Note:** Cluster and pool tables are not supported by the Table Join component, but they can be extracted using the table component. 

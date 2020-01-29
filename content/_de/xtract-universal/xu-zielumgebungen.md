@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
 ---
 {: .box-note }
-Für die Nutzung einiger Zielumgebungen (wie z.B. Oracle, DB2 usw.) ist die Installation des entsprechenden Treibers bzw. Bibliothek notwendig.
+**Hinweis:** Für die Nutzung einiger Zielumgebungen (wie z.B. Oracle, DB2 usw.) ist die Installation des entsprechenden Treibers bzw. Bibliothek notwendig.
               
 Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (z.B. ERP, S/4 HANA, BW and BW/4 HANA) zu extrahierten und in verschiedene Zielumgebungen, sogenannte Destinations zu schreiben. Folgende Datenziele werden u.a. unterstützt:
 
