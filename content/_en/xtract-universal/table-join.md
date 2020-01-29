@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 10
 lang: en_GB
 ---
+
 {: .box-warning }
 **Warning! Obsolete component** 
 As of [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html), the Table Join component is obsolete.<br>
