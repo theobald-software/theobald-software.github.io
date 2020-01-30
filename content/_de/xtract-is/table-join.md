@@ -35,6 +35,4 @@ Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](https://
 
 Die Komponente Table Join setzt die Version SQL Server 2012 Integration Services (SSIS) voraus. Ältere Versionen werden nicht unterstützt. 
 
-Weiterführende Informationen zu den SSIS Version und deren Kompatibilität entnehmen zu unserem [Knowledgebase Artikel](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is) .
-
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
