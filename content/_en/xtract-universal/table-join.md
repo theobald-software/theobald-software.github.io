@@ -29,7 +29,7 @@ It is required to install a [custom function module](./sap-customizing/custom-fu
 
 The following section describes the functions of the Table Join Component of older Xtract Universal versions. <br>
 Basic Xtract Universal the knowledge is required to understand the following sections. <br>
-To get information on the basics of Xtract Universal, refer to [Getting started with table](./getting-started-table/). <br>
+To get information on the basics of Xtract Universal, refer to [Getting started with table](./getting-started-table). <br>
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
