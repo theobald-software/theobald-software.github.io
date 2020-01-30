@@ -19,6 +19,8 @@ The following tested programs can successfully consume data via OData: <br>
 - Datazen
 - [Tableau](./tableau)
  
+### OData destination settings
+ 
 The following settings can be defined for the OData destination.
 
 ![Odata-Atom-Destination-Details](/img/content/Odata-Atom-Destination-Details.png){:class="img-responsive"}

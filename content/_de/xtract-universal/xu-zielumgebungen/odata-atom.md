@@ -19,6 +19,8 @@ Folgende getesteten Programme können Daten über OData erfolgreich konsumieren:
 - Datazen
 - [Tableau Software](./tableau) 
 
+### Einstellungen von OData-Destination
+
 Folgende Einstellungen können für das Ziel OData Atom definiert werden.
 
 ![Odata-Atom-Destination-Details](/img/content/Odata-Atom-Destination-Details.png){:class="img-responsive"}
