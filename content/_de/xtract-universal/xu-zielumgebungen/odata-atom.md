@@ -12,22 +12,19 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=odata-atom
 ---
 
-Das Ziel HTTP - OData  liefert die extrahierten Daten in einem generischen Format über einen HTTP-OData-Stream bzw. Webservice. 
+Die Destination HTTP - OData  liefert die extrahierten Daten in einem generischen Format über einen HTTP-OData-Stream bzw. Webservice. 
 
-Folgende Programme können Daten über OData erfolgreich konsumieren: <br>
-- [Power BI Desktop](https://help.theobald-software.com/en/xtract-universal/xu-destinations/Power-BI-Connector-(beta))  
+Folgende getesteten Programme können Daten über OData erfolgreich konsumieren: <br>
 - PowerPivot / Excel
 - Datazen
 - [Tableau Software](./tableau) 
 
+### Einstellungen von OData-Destination
+
 Folgende Einstellungen können für das Ziel OData Atom definiert werden.
 
-![Odata-Atom-Destination-Details](/img/content/Odata-Atom-Destination-Details.jpg){:class="img-responsive"}
+![Odata-Atom-Destination-Details](/img/content/Odata-Atom-Destination-Details.png){:class="img-responsive"}
 
-**Convert / Encoding**
-
-**Text Encoding** <br>
-Definiert die Zeichenketten-Kodierung.
-
+{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

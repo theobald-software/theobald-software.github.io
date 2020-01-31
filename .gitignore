@@ -11,7 +11,8 @@ Gemfile.lock
 
 .idea/*
 .idea
-
+.bundle
+vendor/cache
 
 # no temporary vim files
 *~

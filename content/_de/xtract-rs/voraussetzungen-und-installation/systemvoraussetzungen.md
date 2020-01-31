@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 ---
 
-**SQL Server**
+### SQL Server 
  	
 - SQL Server 2005 (Standard, Professional oder Enterprise)
 - SQL Server 2008
@@ -23,7 +23,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 - SQL Server Reporting Services
 - Power BI Report Server 2018
 
-**SAP Releases**
+### SAP Releases 
  	
 - SAP R/3 Version 4.0B oder höher oder SAP ECC.
 - SAP BW Version 3.1 oder höher.
@@ -39,30 +39,30 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=systemvoraussetzungen
 
 {% include _content/de/operating-systems.md %}
 
-**Andere Anwendungen und Frameworks**
+### Andere Anwendungen und Frameworks 
  	
 - Visual C++ 2005 Runtime. Die Runtime können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=14431) herunterladen.
 - .NET Framework 3.0 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/en-us/download/details.aspx?id=21) herunterladen.
 - Librfc32.dll falls SAP GUI nicht installiert ist. Der Download erfolgt, nach vorheriger Anmeldung, über das [SAP Launchpad Portal](https://launchpad.support.sap.com/) .
 
-**Arbeitsspeicher**
+### Arbeitsspeicher 
  	
 - 2 GB minimum, abhängig vom Datenvolumen, eventuell mehr.
 
-**Festplattenspeicher**
+### Festplattenspeicher 
  	
 - Für die Installation werden 30 MB Festplattenspeicher benötigt.
 
-**32/64-Bit Umgebung**
+### 32/64-Bit Umgebung 
  	
 - Das Produkt kann auf 32-Bit und 64-Bit Betriebssystemen installiert werden.
 
-**Sicherheitseinstellungen**
+### Sicherheitseinstellungen 
  	
 - Benutzerauthentifizierung.
 - SAP Authentifizierung: SSO (Single Sign On) oder SAP Anmeldedaten.
-- SAP System oder or Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
+- SAP System oder or Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-**Netzwerkeinstellungen**
+### Netzwerkeinstellungen 
  	
 - Port 33nn muss offen sein, wobei nn = die Systemnummer des SAP Systems ist.
