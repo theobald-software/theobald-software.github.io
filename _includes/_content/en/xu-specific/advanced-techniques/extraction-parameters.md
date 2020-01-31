@@ -1,37 +1,40 @@
 
+Extraction parameters can be changen in the window "Run extractions".
+![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
-When you click on the run Dialog, the Extraction Parameters tab offers the following parameters that can be overwritten.
+To open "Run extractions" window, select an extraction in the main window of the Designer and click **[Run]** (see details in [Running an extraction](./content/_en/xtract-universal/getting-started-table/run-an-extraction)).
 
-When you overwrite a value, the URL will change accordingly.
+### Subsection "Parameters" Tab "Extraction"
 
-![XU_extraction_parameters](/img/content/XU_extraction_parameters.jpg){:class="img-responsive"}
+The amount of the parameters depends on the extraction type and destination.
+e.g., **decimalSeparator** is a parameter specific to CSV destination.
 
-*preview*<br>
-To enable/disable preview mode. Default value is False.
+Parameter name | Parameter description | Default value
+------------ | ------------- | -------------
+clearBuffer | To clear/keep the result buffer | false
+preview | To enable/disable preview mode | false
+source | To dynamically select the source SAP system from which data is extracted (e.g., SAP_DEV and SAP_PROD). Applies only when more than one SAP system is used. | -
+destination | To dynamically select the destination to which extraction is written (e.g., db_1 and db_2). Applies only when more than one destination is used.| -
+rows | To set the maximum number of rows to be extracted | -
+where | To set the where clause | -
+packageSize | To set the package size | - 
+decimalSeparator | **CSV special:** To set a symbol between integer and fractional part | -
+columnSeparator | **CSV special:** To set a symbol which indicates the start of a new column | -
 
-*clearBuffer*<br>
-To clear/keep the result buffer. Default value is False.
+### Subsection "Parameters" Tab "Source"
 
-*source*<br>
-When using multiple SAP source systems in Xtract Universal, e.g. SAP_DEV and SAP_PROD, this parameter lets you dynamically select the SAP system from which data is extracted.
+In this tab...
 
-*destination*<br>
-When using multiple destinations in Xtract Universal, e.g. db_1 and db_2, this parameter lets you dynamically select the destination to which extraction data is written.
+Parameter name | Parameter description 
+------------ | ------------- 
+lang | To set the language  
+logonTicket | to ...[link to x]
 
-*wait*<br>
-To wait until the extraction is finished. Default value is True.
-If you set it to False, the extraction will not stop when you close the extraction tool xu.exe. 
+### Subsection "Parameters" Tab "Custom"
 
+{: .box-note }
+**Note:** the tab "Custom" is only active, when a parameter with @-symbol is defined in the [WHERE clause](./tables/where-clause).
 
-**Table** 
-
-For the table extraction you will have the following parameters.
-
-*rows*<br>
-To set the maximum number of rows to be extracted. 
-
-*where*<br>
-To set the where clause. 
-
-*packageSize*<br>
-To set the package size.
+To set the pre-defined parameter, check the box and enter the desired value.
+ 
+![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
