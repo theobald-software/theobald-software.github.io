@@ -19,7 +19,7 @@ Sie finden die 64-Bit-Version der librfc32.dll im Download-Bereich des SAPNet. U
 
 Beachten Sie, dass die Dateien den gleichen Dateinamen haben, nur die Dateigrösse variiert.
 
-Bitte stellen Sie auch sicher, dass Sie auch die neueste Visual C++ 2005 Runtime haben. Sie können diese [hier](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=766a6af7-ec73-40ff-b072-9112bab119c2) herunterladen.
+Laden Sie die aktuellste Version von [Visual C++ 2005 Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=26347) herunter.
 
 Beachten Sie, dass die Dateien den gleichen Dateinamen haben, nur die Dateigrösse variiert.
 

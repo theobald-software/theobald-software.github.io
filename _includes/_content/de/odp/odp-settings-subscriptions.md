@@ -7,10 +7,12 @@ Um Informationen über den Abonnenten zu erhalten, klicken Sie auf **Show Subscr
 
 Spaltenbezeichnung | Erklärung
 ------------ | -------------
-Queue |Technischer Name aller Abonnements eines bestimmten Xtract-Produkts von Theobald Software (z.B. Xtract Universal). Ein Abonnement ist an ein bestimmtes Produkt und die ODP-Komponente gebunden, aus der die init ursprünglich gestartet wurde. Ein ODP-Datenanbieter, wie beispielsweise 2LIS_02_ITM, kann mehrere Abonnements haben. Das Abonnement, das sich auf die vorliegende ODP-Komponente bezieht, ist mit einem roten Sternchen gekennzeichnet.
+Queue | Technischer Name aller Abonnements eines bestimmten Xtract-Produkts von Theobald Software (z.B. Xtract Universal). Ein Abonnement ist an ein bestimmtes Produkt und die ODP-Komponente gebunden, aus der die init ursprünglich gestartet wurde. Ein ODP-Datenanbieter, wie beispielsweise 2LIS_02_ITM, kann mehrere Abonnements haben. Das Abonnement, das sich auf die vorliegende ODP-Komponente bezieht, ist mit einem roten Sternchen gekennzeichnet.
 Process| Technischer Name des Abonnements
 R.(number of requests) | Anzahl der ausgeführten Delta-Anfragen
 Last request |  Zeitstempel der letzten Anforderung
 Created | Erstellungszeitstempel 
+
+
 Um das Abonnement zu löschen, klicken Sie auf das Mülltonnensymbol auf der rechten Seite des Fensters. 
 

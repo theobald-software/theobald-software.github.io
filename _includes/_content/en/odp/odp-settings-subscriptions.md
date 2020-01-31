@@ -14,11 +14,12 @@ To display more details about the subscriber process, depending on the product, 
 
 Column name | Explanation
 ------------| -------------
-Queue |Technical name of all subscriptions of a specific Theobald Software Xtract product (e.g., Xtract Universal).
-Process| Technical name of a subscription
+Queue | Technical name of all subscriptions of a specific Theobald Software Xtract product (e.g., Xtract Universal).
+Process | Technical name of a subscription
 R. (number of requests) | Number of executed delta requests
 Last request | Timestamp of the last delta request 
 Created | Timestamp of the init request 
+
 
 To delete a subscription click on the dustbin icon on the right side of the window.
 

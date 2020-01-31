@@ -10,19 +10,26 @@ permalink: /:collection/:path
 weight: 10
 lang: de_DE
 ---
-**Wichtiger Hinweis: Ab [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html) ist die Table Join Komponente obsolet.** <br>
-**Bitte nutzen sie die Table Join Funktionalität der [neuen Table Komponente](./table).** 
- 
 
-Die Table Join-Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join).  <br>
-Mögliche Szenarien dafür wären, Tabellen für Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen. <br>
-Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt. <br>
-Die Komponente unterstützt darüber hinaus die Definition von Aggregat-Funktionen, Where- und Having-Bedingungen. 
+{: .box-warning }
+**Warnung! Veraltete Komponente** 
+Ab [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html) ist die Table Join Komponente obsolet.<br>
 
-Voraussetzung dafür ist die Installation eines Z-Funktionssbausteins auf der SAP-Seite. 
+Nutzen sie die Table Join Funktionalität der neuen [Table-](./table/table-joins)Komponente.
 
-*Bemerkung*: Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden. 
 
-**Achtung!!** Bitte beachten Sie, dass dieser Abschnitt nur die Anwendung der Table Join-Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xtract-table) . Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Kapitel vorausgesetzt!
+Die Table Join-Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join) und zu extrahieren.  
+Mögliche Szenarien dafür sind Tabellen für Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen für Stammdaten und Texte (z.B. eines Materials) zu joinen.
+Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt. 
+Die Komponente unterstützt darüber hinaus die Definition von Aggregat-Funktionen, WHERE- und HAVING-Bedingungen. 
+
+Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](./sap-customizing/custom-function-module-for-table-extraction) auf der SAP-Seite. 
+
+{: .box-note }
+**Hinweis:** Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden. 
+
+Beachten Sie, dass dieser Abschnitt nur die Beschreibung der Anwendung der Table Join-Komponente von Xtract Universal enthält. Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Abschnitt vorausgesetzt. 
+Die Grundlagen von Xtract Unviversal werden im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
+
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

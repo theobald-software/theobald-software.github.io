@@ -37,6 +37,5 @@ It is required to install a [custom funktion module](https://kb.theobald-softwar
 
 The component Table Join requires the SQL Server 2012 Integration Services (SSIS) version or higher. Older versions are not supported.
 
-For further information about the SSIS version and its compatibility please refer to our [knowledgebase article](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is)
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

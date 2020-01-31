@@ -12,18 +12,19 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=odata-atom
 ---
 
-**OData (HTTP - OData Atom)**
+The destination HTTP - OData delivers the extracted data in a generic format via an HTTP OData stream or web service. 
 
-The destination is a generic OData stream over HTTP. 
-
-Programs that has been tested with the OData stream of Xtract Universal: 
-- PowerBI Desktop
+The following tested programs can successfully consume data via OData: <br>
 - PowerPivot (Excel)
-- Tableau
 - Datazen
+- [Tableau](./tableau)
+ 
+### OData destination settings
  
 The following settings can be defined for the OData destination.
 
-![Odata-Atom-Destination-Details](/img/content/Odata-Atom-Destination-Details.jpg){:class="img-responsive"}
+![Odata-Atom-Destination-Details](/img/content/Odata-Atom-Destination-Details.png){:class="img-responsive"}
+
+{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

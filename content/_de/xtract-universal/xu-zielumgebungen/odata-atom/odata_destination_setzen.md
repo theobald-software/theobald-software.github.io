@@ -10,12 +10,16 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=odata_destination_setzen
 ---
+### OData-Destination setzen
+**Voraussetung:** Eine Extraktion ist angelegt (siehe [Eine neue Extraktion anlegen](../../erste-schritte-mit-table/eine-neue-extraktion-anlegen)).
 
-Nachdem Sie eine Extraktion in Xtract Universal erstellt haben (siehe [Schritt I: Eine neue Extraktion anlegen](../../erste-schritte-mit-xtract-table/eine-neue-extraktion-anlegen)), 
-wählen Sie die standardmäßige http-odata-atom Destination (siehe [Ziele verwalten](../ziele-verwalten) und [OData](../odata-atom) ).
+1. Im Hauptfenster des Designers, navigieren Sie zum Menüpunkt **Server > Manage Destinations**.
+2. Definieren Sie die standardmäßige http-odata-atom-Destination (siehe [Ziele verwalten](../ziele-verwalten) und [OData](../odata-atom) ).
 
 ![XU-OData-Destination](/img/content/XU-OData-Destination.jpg){:class="img-responsive"}
 
-Nun wählen Sie die Extraktion und klicken Sie auf Run. Kopieren Sie die OData-URL aus dem URL-Feld.
+3. wählen Sie die erstellte Extraktion mit der Destination "HTTP - OData atom"" und klicken Sie auf **[Run]**. 
+Das Fenster "Run Extraction" wird geöffnet.
+4. Kopieren Sie die OData-URL aus dem URL-Feld, um OData weiter zu prozessieren (z.B. mit [Tableau](./tableau/tableau-mit-odata/eine-extraktion-mit-odata-laden))
 
 ![XU-OData-URL](/img/content/XU-OData-URL.jpg){:class="img-responsive"}
