@@ -23,17 +23,21 @@ columnSeparator | **CSV special:** To set a symbol which indicates the start of 
 
 ### Subsection "Parameters" Tab "Source"
 
-In this tab..., der von mir geändert wird!
+In this tab you can override the values that are defined in the [SAP source details](./sap-connection).
 
 Parameter name | Parameter description 
 ------------ | ------------- 
-lang | To set the language  
-logonTicket | to ...[link to x]
+lang | To dynamically change the logon language of the source SAP system  
+logonTicket | To dynamically change the ticket issuer of the [SAP logon ticket](./sap-single-sign-on/sso-with-sap-logon-ticket)
+
+{: .box-note }
+**Note:** The parameter **logonTicket** can only be set, only if SAP logon ticket is selected as authentication method in the [SAP source details](./sap-connection).
+
 
 ### Subsection "Parameters" Tab "Custom"
 
 {: .box-note }
-**Note:** the tab "Custom" is only active, when a parameter with @-symbol is defined in the [WHERE clause](./tables/where-clause).
+**Note:** the tab "Custom" is only active, when a variable with @-symbol is defined in the [WHERE clause](./tables/where-clause).
 
 To set the pre-defined parameter, check the box and enter the desired value.
  
