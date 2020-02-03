@@ -2,11 +2,11 @@
 1. Select and double-click an extraction of type "table" in the main window of the Designer.
 The window "Define data source for SAP Table " opens.
 2. Navigate to tab **WHERE Clause**.
-3. Enter the table name (e.g., MAKT~MATNR).
+3. Enter the WHERE condition.
 4. To display the results in the **Preview** section, click **[Load live preview]**.
 
 {: .box-note }
-**Note:** If the field name is not unique, the table name must be listed in the WHERE condition. This can be the case, for example, with [table joins](./table-joins).
+**Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g. MAKT~MATNR. This can be the case with [table joins](./table-joins).
 
 ![Extraction Settings-01](/img/content/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
@@ -21,7 +21,7 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 
 #### Syntax rules
 - Enter a space before and after the equal sign:<br>
- **Correct:** *YEAR = '1999 '* <br>
+ **Correct:** *YEAR = '1999'* <br>
  **Wrong:** *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*
 
 - Set floating point numbers in single quotation mark: <br>
@@ -42,12 +42,12 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 
 {: .box-note }
 **Note:** 
-When using table joins, an access to the right table of a LEFT OUTER JOIN is only possible starting from SAP Release 7.40, SP05. <br>
+When using table joins, restricting the right table of a LEFT OUTER JOIN is only possible starting from SAP Release 7.40, SP05. <br>
 
 If your SAP System is older than Release 7.40, SP05, the following error appears:
 *RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
 
-Get more information about the Changes in Release 7.40, SP05 on the [SAP help site](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/index.htm).
+Get more information about the changes in Release 7.40, SP05 on the [SAP help site](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/index.htm).
 
 
 
