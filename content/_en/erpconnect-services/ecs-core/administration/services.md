@@ -49,7 +49,7 @@ You have the following options:
 | **Use SSO Ticket**                        | You can use an SAP SSO Ticket to connect to the SAP system. S et the field *Ticket Issuer URL** then.                                                                                                                                    |
 | **Use SSO Ticket**<br> **(pass-through)** | SSO Ticket (pass through) will be used for authentication.                                                                                                                                                                               |
 | **Use SNC**                               | When your SAP system is configured to be accessed via SSO with SNC, select SNC and set Partner Name. Partner Name has the form:**p:sapservicensp@theobald-software.com** .                                                               |
-| **Use technical access**                  | Use this option and set the the fields (SAP) **Username**  and (SAP) **Password** .                                                                                                                                                      |
+| **Use technical access**                  | Use this option and set the fields (SAP) **Username**  and (SAP) **Password** .                                                                                                                                                      |
 
 ![ecscore-managementsite7](/img/content/ecscore-managementsite7.jpg.png){:class="img-responsive"}
 

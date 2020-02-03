@@ -34,7 +34,7 @@ Mark the line with PI_PERSONALDATA and open the mapping settings by clicking the
 
 ![WSD-MappingSkalarMappingInput17](/img/content/WSD-MappingSkalarMappingInput17.png){:class="img-responsive"}
 
-Mark the line with field *FIRSTNAME* and click the button withe the three points on the right side to open the next mapping dialog window. Here you select the input parameter Firstname by making a double-click.
+Mark the line with field *FIRSTNAME* and click the button with the three points on the right side to open the next mapping dialog window. Here you select the input parameter Firstname by making a double-click.
 
 ![WSD-MappingSkalarMappingInput18](/img/content/WSD-MappingSkalarMappingInput18.png){:class="img-responsive"}
 

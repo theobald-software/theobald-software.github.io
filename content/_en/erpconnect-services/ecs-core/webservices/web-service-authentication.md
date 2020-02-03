@@ -56,7 +56,7 @@ With the *Test* button you can test the connection settings.
   
 Between the web service consumer and ECS Core the same authentication methods are supported. The web service consumer can be for instance a REST client, a workflow, a JavaScript app, etc.
 
-Setting the authentication for the the web service call ist described for the Postman REST Client here. These settings can be applied to REST web service calls in a workflow solution (i.e. Flow, Nintex). If you just want to test the functionality of a workflow quickly please use the web service operation [test dialog](./test-the-rest-web-service). 
+Setting the authentication for the web service call ist described for the Postman REST Client here. These settings can be applied to REST web service calls in a workflow solution (i.e. Flow, Nintex). If you just want to test the functionality of a workflow quickly please use the web service operation [test dialog](./test-the-rest-web-service). 
 
 **General settings for REST web service calls in a REST Client**
 

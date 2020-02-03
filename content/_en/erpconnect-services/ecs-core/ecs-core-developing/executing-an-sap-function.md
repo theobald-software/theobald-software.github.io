@@ -35,7 +35,7 @@ We will only change the JavaScript code in Step 3 to call the SAP function.
 
 As you can you see below in the JavaScript code, the method *tEcs.executeFunction()* is used to call the SAP function module *SD_RFC_CUSTOMER_GET*. 
 The input will be set to the parameter *NAME1*. 
-The result is displayed using the the table *CUSTOMER_T* . 
+The result is displayed using the table *CUSTOMER_T* . 
 
 ![ecscore-gettingstarted-13](/img/content/ecscore-gettingstarted-13.jpg){:class="img-responsive"}
 
