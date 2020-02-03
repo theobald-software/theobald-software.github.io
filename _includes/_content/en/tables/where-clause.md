@@ -2,7 +2,7 @@
 1. Select and double-click an extraction of type "table" in the main window of the Designer.
 The window "Define data source for SAP Table " opens.
 2. Navigate to tab **WHERE Clause**.
-3. Enter the WHERE condition.
+3. Enter the WHERE clause.
 4. To display the results in the **Preview** section, click **[Load live preview]**.
 
 {: .box-note }
