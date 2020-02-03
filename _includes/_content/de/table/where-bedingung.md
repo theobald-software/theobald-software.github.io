@@ -2,11 +2,11 @@
 1. Wählen und doppelklicken Sie auf eine Extraktion vom Typ "Table" im Hauptfenster des Designers.
 Das Fenster "Define data source for SAP Table" wird geöffnet.
 2. Navigieren Sie zum Reiter **WHERE Clause**.
-3. Geben Sie den Tabellennamen ein (z.B. MAKT~MATNR).
+3. Geben Sie die WHERE-Bedingung ein.
 4. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
 
 {: .box-note }
-**Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname in der WHERE-Bedingung aufgeführt werden. Dies kann z.B. bei [Table Joins](./table-joins) der Fall sein.
+**Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei [Table Joins](./table-joins) der Fall sein.
 
 ![Extraction-Settings-01](/img/content/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
@@ -23,7 +23,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 #### Syntaxregeln
 
 - Geben Sie ein Leerzeichen vor und nach dem Gleichheitszeichen ein:<br>
- **Korrekt:** *JAHR = '1999 '* <br>
+ **Korrekt:** *JAHR = '1999'* <br>
  **Falsch:** *JAHR= '1999 '*, *JAHR ='1999'* oder *JAHR='1999'*
 
 - Setzten Sie die Fließkommazahlen in einfache Anführungszeichen: <br>
@@ -45,7 +45,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
 {: .box-note }
 **Hinweis:** 
-Bei Verwendung von Table Joins ein Zugriff auf die rechte Tabelle eines LEFT OUTER JOIN ist erst ab SAP-Release 7.40, SP05 möglich. <br>
+Bei Verwendung von Table Joins können Felder der rechten Tabelle eines LEFT OUTER JOIN erst ab SAP-Release 7.40, SP05 eingeschränkt werden. <br>
 
 Wenn Ihr SAP-System älter als Release 7.40, SP05 ist, erscheint folgender Fehler:
 *RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN*<br>
