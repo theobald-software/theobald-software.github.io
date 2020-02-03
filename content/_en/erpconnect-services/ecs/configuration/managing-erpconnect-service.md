@@ -18,14 +18,14 @@ In *Central Administration* you will find the *ERPConnect Services* group with t
 - *Test Application Proxy*
 - *Version History*
  
-![ECS-SP-Admin-ECS](/img/content/ECS-SP-Admin-ECS.jpg){:class="img-responsive" }
+![ECS-SP-Admin-ECS](/img/content/ECS-SP-Admin-ECS.png){:class="img-responsive" }
 
 
 **ERPConnect Services Objects**
 
 Select this function to display the ERPConnect Services objects that were created on the SharePoint server.
 
-![ECS-SP-ECS-Objects](/img/content/ECS-SP-ECS-Objects.jpg){:class="img-responsive" }
+![ECS-SP-ECS-Objects](/img/content/ECS-SP-ECS-Objects.png){:class="img-responsive" }
 
 This page should not be used to create or delete service objects. It is mainly intended for the Product Support team to assist with technical problems.
 
@@ -36,8 +36,8 @@ Select the *Test* link next to the ERPConnect Services Application name to check
 Select the *Test SAP*  link to check the connection to the SAP system.
 
 
-![ECS-SP-ECS-Test](/img/content/ECS-SP-ECS-Test.jpg){:class="img-responsive" }
-![ECS-SP-ECS-Test-Success](/img/content/ECS-SP-ECS-Test-Success.jpg){:class="img-responsive" }
+![ECS-SP-ECS-Test](/img/content/ECS-SP-ECS-Test.png){:class="img-responsive" }
+![ECS-SP-ECS-Test-Success](/img/content/ECS-SP-ECS-Test-Success.png){:class="img-responsive" }
 
 
 To run successfully the SAP connection test be sure of the following: 
@@ -54,4 +54,4 @@ After any changes restart IIS.
 
 Select the *Version History* link to show a list of product versions and the changes that were introduced.
 
-![ECS-SP-ECS-Version-History](/img/content/ECS-SP-ECS-Version-History.jpg){:class="img-responsive" }
+![ECS-SP-ECS-Version-History](/img/content/ECS-SP-ECS-Version-History.png){:class="img-responsive" }

@@ -27,7 +27,7 @@ Die Verbindungseinstellungen und Authentifzierung für das Deployment müssen im
 
 Beispiel:
 
-![ecscore-webservicetest_1](/img/content/ecscore-webservicetest_1.jpg){:class="img-responsive"}
+![ecscore-webservicetest_1](/img/content/ecscore-webservicetest_1.png){:class="img-responsive"}
 
 **Verbindungseinstellungen mit Basic Authentifizierung**
 
@@ -37,6 +37,6 @@ Beispiel:
 
 Beispiel: 
 
-![ecscore-webservicetest_1](/img/content/ecscore-webservicetest_2.jpg){:class="img-responsive"}
+![ecscore-webservicetest_1](/img/content/ecscore-webservicetest_2.png){:class="img-responsive"}
 
 Mit *Test* können Sie die Verbindungseinstellungen testen. 

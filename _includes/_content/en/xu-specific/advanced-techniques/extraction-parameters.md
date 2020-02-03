@@ -4,7 +4,7 @@ When you click on the run Dialog, the Extraction Parameters tab offers the follo
 
 When you overwrite a value, the URL will change accordingly.
 
-![XU_extraction_parameters](/img/content/XU_extraction_parameters.jpg){:class="img-responsive"}
+![XU_extraction_parameters](/img/content/XU_extraction_parameters.png){:class="img-responsive"}
 
 *preview*<br>
 To enable/disable preview mode. Default value is False.

@@ -99,6 +99,6 @@ Example: http://localhost:8080/wsd/SAPCustomerWebservice/CustomerGet
 
 *Body:*                      List-based input parameters or input structures (only required if the web service contains such parameters) 
 
-![ecscore-webservicetest_7](/img/content/ecscore-webservicetest_7.jpg){:class="img-responsive"}
+![ecscore-webservicetest_7](/img/content/ecscore-webservicetest_7.png){:class="img-responsive"}
 
-![ecscore-webservicetest_8](/img/content/ecscore-webservicetest_8.jpg){:class="img-responsive"}
+![ecscore-webservicetest_8](/img/content/ecscore-webservicetest_8.png){:class="img-responsive"}

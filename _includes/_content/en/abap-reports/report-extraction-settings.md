@@ -1,6 +1,6 @@
 Click the *Extraction Settings* link to open the Extraction Settings dialog.
 
-![Report-Extraction-Settings](/img/content/Report-Extraction-Settings.jpg){:class="img-responsive"}
+![Report-Extraction-Settings](/img/content/Report-Extraction-Settings.png){:class="img-responsive"}
 
 
 **Use Batch**<br>

@@ -21,18 +21,18 @@ We define an extraction based on the SAP table T001W which stores plants/branche
 **Select destination and set destination**<br> 
 We click on the *Destination* button and select the Azure DWH destination created earlier (see section Connection) from the drop down menu. We apply the default settings.
 
-![XU_Destination_Azure_DWH](/img/content/XU_Destination_Azure_DWH.jpg){:class="img-responsive"}
+![XU_Destination_Azure_DWH](/img/content/XU_Destination_Azure_DWH.png){:class="img-responsive"}
 
 The Preparation option *Drop & Create* drops an existent table and creates a new one.  
 Optional: You can preview the SQL statement or use it as a template for your own SQL statements.
 Select the list value *Custom SQL* for Preparation then click on the *Edit SQL* button.
 
-![XU_Azure_DWH_CustomSQL_Select](/img/content/XU_Azure_DWH_CustomSQL_Select.jpg){:class="img-responsive"}
+![XU_Azure_DWH_CustomSQL_Select](/img/content/XU_Azure_DWH_CustomSQL_Select.png){:class="img-responsive"}
 
 In the new dialog select *Drop & Create* and click on *Generate Statement*. 
 Columns will be created using the most appropriate data type. 
 
-![XU_Azure_DWH_CustomSQL_SQL](/img/content/XU_Azure_DWH_CustomSQL_SQL.jpg){:class="img-responsive"}
+![XU_Azure_DWH_CustomSQL_SQL](/img/content/XU_Azure_DWH_CustomSQL_SQL.png){:class="img-responsive"}
 
 **Run extraction** 
 Click the button *Run*. In the dialog click on either of the two *Run* buttons to start the extraction.
@@ -41,4 +41,4 @@ Click the button *Run*. In the dialog click on either of the two *Run* buttons t
 
 Click on the *Refresh* button in the Designer to check the execution status. In our example 238 rows have been loaded to the database. 
 
-![XU_AzureDWH_Extraction_Overview](/img/content/XU_AzureDWH_Extraction_Overview.jpg){:class="img-responsive"}
+![XU_AzureDWH_Extraction_Overview](/img/content/XU_AzureDWH_Extraction_Overview.png){:class="img-responsive"}

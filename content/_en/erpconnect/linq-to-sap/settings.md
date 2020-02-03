@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-settings
 ---
 
-![LINQToERP-Settings](/img/content/LINQToERP-Settings.jpg){:class="img-responsive"}
+![LINQToERP-Settings](/img/content/LINQToERP-Settings.png){:class="img-responsive"}
 
 **Reuse Classes**
 

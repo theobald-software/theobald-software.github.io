@@ -23,9 +23,9 @@ Im SAP prüfen wir zuerst den Funktionsbaustein SD_RFC_CUSTOMER_GET zum Lesen vo
 Den Eingabeparameter NAME1 setzen wir beispielhaft auf X* . 
 Nach der Ausführung enthält die Ergebnistabelle CUSTOMER_T die 5 Datensätze der Kundendaten.  
 
-![ecscore-gettingstarted-11](/img/content/ecscore-gettingstarted-11.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-11](/img/content/ecscore-gettingstarted-11.png){:class="img-responsive"}
 
-![ecscore-gettingstarted-12](/img/content/ecscore-gettingstarted-12.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-12](/img/content/ecscore-gettingstarted-12.png){:class="img-responsive"}
 
 Nun schauen wir uns den Schritt mit JavaScript-Code für den Aufruf des SAP-Funktionsbausteins an.  
 
@@ -37,8 +37,8 @@ Die Funktion tEcs.executeFunction() wird verwendet, um den Funktionsbaustein *SD
 Die Eingabe wird dem Eingabeparameter *NAME1* zugewiesen. <br>
 Das Ergebnis liefert die Tabellle *CUSTOMER_T* . 
 
-![ecscore-gettingstarted-13](/img/content/ecscore-gettingstarted-13.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-13](/img/content/ecscore-gettingstarted-13.png){:class="img-responsive"}
 
 Führen Sie nun das SharePoint-Add-In aus. Folgendes Ergebnis erhalten Sie:
 
-![ecscore-gettingstarted-14](/img/content/ecscore-gettingstarted-14.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-14](/img/content/ecscore-gettingstarted-14.png){:class="img-responsive"}

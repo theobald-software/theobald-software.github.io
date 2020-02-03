@@ -13,9 +13,9 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecs-sp-bestellung-anlegen
 
 In diesem Beispiel finden Sie die Vorlage für einen Webpart, mit dem Sie eine Bestellung in SAP anlegen können.
 
-![ECS-Create-PO-Webpart](/img/content/ECS-Create-PO-Webpart.jpg){:class="img-responsive"}
+![ECS-Create-PO-Webpart](/img/content/ECS-Create-PO-Webpart.png){:class="img-responsive"}
 
-![ECS-SAP-Create-PO](/img/content/ECS-SAP-Create-PO.jpg){:class="img-responsive"}
+![ECS-SAP-Create-PO](/img/content/ECS-SAP-Create-PO.png){:class="img-responsive"}
 
 <details>
 <summary>[C#]</summary>

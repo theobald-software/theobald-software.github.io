@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=bapi-settings
 ---
 
-![BAPI-Settings](/img/content/BAPI-Settings.jpg){:class="img-responsive"}
+![BAPI-Settings](/img/content/BAPI-Settings.png){:class="img-responsive"}
 
 **Automatic String Conversion**
 

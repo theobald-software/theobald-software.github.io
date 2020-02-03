@@ -16,7 +16,7 @@ Im Fenster *Shared Destinations* können Sie die Zielumgebungen verwalten.
 Um zum Dialog zu gelangen wählen Sie den Menüpunkt *Server -> Manage Destinations* im Xtract Universal Designer. 
 
 
-![Manage-Shared-Destinations](/img/content/Manage-Shared-Destinations.jpg){:class="img-responsive"}
+![Manage-Shared-Destinations](/img/content/Manage-Shared-Destinations.png){:class="img-responsive"}
 
 **Zielumgebung anlegen**<br>
 Um eine neue Zielumgebung als Vorlage anzulegen, klicken Sie im Fenster Shared Destinations auf Add.<br>

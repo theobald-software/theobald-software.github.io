@@ -7,7 +7,7 @@ In addition, there is also the possibility to use user-defined parameters in the
 Now click on the Run button and confirm the message, that the changes would be saved.
 When you open the Run dialog basing on this Where clause, you can find the variables in the second tab, so you can assign to them the wished value. Please use the @ symbol to identify variables. Please note that DATE values must be provided in form of YYYYMMDD.
 
-![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.jpg){:class="img-responsive"}
+![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
 
 Thus we have now the following URL to set the values:
  

@@ -13,7 +13,7 @@ old_url: /ECS-Core-DE/default.aspx?pageid=sap_verbindung
 
 Im Hauptbildschirm des WebService Designers klicken sie im Ribbon bei *Connections* auf *SAP...*. Der *SAP Connection Dialog* öffnet sich.
 
-![WSD-SAPConnection](/img/content/ecscore-wsd_19.jpg){:class="img-responsive"}
+![WSD-SAPConnection](/img/content/ecscore-wsd_19.png){:class="img-responsive"}
 
 Die hier definierte SAP-Verbindung wird zum Abruf von SAP-Metadaten bei der Erstellung eines neuen Webservices benötigt.
 Die SAP-Verbindung für den Webservice-Aufruf wird im Hauptmenü unter *SAP connection name to use* definiert.  

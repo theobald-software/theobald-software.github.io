@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=hana-connection
 
 The following settings can be defined for the HANA database connection. 
 
-![hana-destination](/img/content/hana-destination.jpg){:class="img-responsive"}
+![hana-destination](/img/content/hana-destination.png){:class="img-responsive"}
 
 
 **Server Name**<br>

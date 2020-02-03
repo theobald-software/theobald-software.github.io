@@ -27,4 +27,4 @@ The Service provide the following operations:
 - ExecuteTableQuery
 - ExecuteTableQueryAndReturnDataTable
 
-![ECS-SOAP-WS](/img/content/ECS-SOAP-WS.jpg){:class="img-responsive" }
+![ECS-SOAP-WS](/img/content/ECS-SOAP-WS.png){:class="img-responsive" }

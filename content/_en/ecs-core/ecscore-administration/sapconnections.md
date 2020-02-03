@@ -14,7 +14,7 @@ In the *SAP Connections* tab, connections to one or more SAP systems can be crea
 
 Click on *New SAP Connection* to create a new connection.
 
-![ecscore-managementsite_sapconnection-1.jpg](/img/content/ecscore-managementsite_sapconnection-1.jpg){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-1.png](/img/content/ecscore-managementsite_sapconnection-1.png){:class="img-responsive"}
 
 First make the entries for the following fields:
 
@@ -54,6 +54,6 @@ The created connections are then listed on the left edge of the screen and can b
 For each connection you create, you must add the Windows users or user groups that are allowed to use the connection. By default, the Windows user group *Everyone* is already added. 
 Click on the new connection and then on *Users*:
 
-![ecscore-managementsite_sapconnection-2.jpg](/img/content/ecscore-managementsite_sapconnection-2.jpg){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-2.png](/img/content/ecscore-managementsite_sapconnection-2.png){:class="img-responsive"}
 
 Added Windows users or user groups can be removed at any time.

@@ -2,7 +2,7 @@ Xtract Universal protokolliert alle durchgeführten Schritte auf einem System in
 
 Um das Server-Log anzusehen, klicken Sie im Hauptmenü bitte auf *Server -> Log*. Wie im folgenden Screenshot zu sehen, wird pro Tag ein Protokoll erzeugt. Zwischen zwei Protokollen können Sie über die Liste links hin- und herspringen. 
 
-![View-Server-Log](/img/content/View-Server-Log.jpg){:class="img-responsive"}
+![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
 
 Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende Log-Level:
 

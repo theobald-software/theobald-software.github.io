@@ -22,7 +22,7 @@ The custom action Query XQL offers access to the following SAP objects:
 
 SAP function modules can be used to write data in SAP (e.g. create a purchase order or a leave request). For more information refer to XtractQL. 
 
-![ECS-Nintex-XtractQL-Action](/img/content/ECS-Nintex-XtractQL-Action.jpg){:class="img-responsive"}
+![ECS-Nintex-XtractQL-Action](/img/content/ECS-Nintex-XtractQL-Action.png){:class="img-responsive"}
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

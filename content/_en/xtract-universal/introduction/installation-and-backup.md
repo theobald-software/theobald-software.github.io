@@ -19,7 +19,7 @@ You will be redirected to the download page of the framework.
 
 During setup, optional components can be selected for installation:
 
-![XU-Setup](/img/content/XU-Setup.jpg){:class="img-responsive"}
+![XU-Setup](/img/content/XU-Setup.png){:class="img-responsive"}
 
 **XtractDesigner.exe** 
 

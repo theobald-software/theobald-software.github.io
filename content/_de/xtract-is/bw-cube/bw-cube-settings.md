@@ -13,7 +13,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=bw-cube-settings
 
 Über den *Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
-![XIS_BWCube_Settings](/img/content/XIS_BWCube_Settings.jpg){:class="img-responsive"}
+![XIS_BWCube_Settings](/img/content/XIS_BWCube_Settings.png){:class="img-responsive"}
 
 
 ***String Conversion***
@@ -70,7 +70,7 @@ Es besteht nicht die Möglichkeit, die Selektion der Dimensionen und Kennzahlen 
 
 Im BEX Extraction Modus können Sie auch eine Query View extrahieren. Nach der Selektion der BEx query setzen Sie einfach den Namen der Query View ins Feld *Query* View.
 
-![BWCube-Settings-02](/img/content/BWCube-Settings-02.jpg){:class="img-responsive"}
+![BWCube-Settings-02](/img/content/BWCube-Settings-02.png){:class="img-responsive"}
 
 **Fill Emply Cells**<br>
 Füllt die leeren Felder der Dimensionen.
@@ -81,12 +81,12 @@ Eliminiert die Ergebniszeilen (z.B. die Summe).
 **MDX**<br>
 In der Hauptmaske geben Sie direkt einen MDX-Befehl ein.
 
-![BWCube-Settings-03](/img/content/BWCube-Settings-03.jpg){:class="img-responsive"}
+![BWCube-Settings-03](/img/content/BWCube-Settings-03.png){:class="img-responsive"}
 
 
 Danach klicken Sie auf Execute MDX and refresh statement, um die Metadaten aus dem BW-System zu lesen.
 
-![BWCube-Settings-04](/img/content/BWCube-Settings-04.jpg){:class="img-responsive"}
+![BWCube-Settings-04](/img/content/BWCube-Settings-04.png){:class="img-responsive"}
 
 Variablen können sowohl für den ganzen MDX-Befehl als auch innerhalb des MDX-Befehls verwerdet werden.
 

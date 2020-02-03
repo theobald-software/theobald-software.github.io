@@ -13,7 +13,7 @@ old_url: /ECS-Core-DE/default.aspx?pageid=menüleiste
 
 In der Menüleiste des ECS Core WebService Designers sind folgende Punkte auswählbar:
 
-![WSD-11](/img/content/ecscore-wsd_11.jpg){:class="img-responsive"}
+![WSD-11](/img/content/ecscore-wsd_11.png){:class="img-responsive"}
 
 
 **Connections** <br>

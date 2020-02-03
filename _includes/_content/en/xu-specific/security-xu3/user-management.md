@@ -55,7 +55,7 @@ This does not affect access management. However, access at user level is resolve
 
 In contrast to Windows AD user groups, custom user groups are created in Xtract Universal Designer.
 
-![XU3_new_UserGroup](/img/content/XU3_new_UserGroup.jpg){:class="img-responsive"}
+![XU3_new_UserGroup](/img/content/XU3_new_UserGroup.png){:class="img-responsive"}
 
 
 

@@ -15,7 +15,7 @@ Die Server-Komponente wird standardmäßig als Windows-Service installiert und g
 
 Nach der Installation kann der Service über die Windows-Dienste-Verwaltung gestartet und gestoppt werden.
 
-![Services-Start-Server](/img/content/Services-Start-Server.jpg){:class="img-responsive"}
+![Services-Start-Server](/img/content/Services-Start-Server.png){:class="img-responsive"}
 
 Wenn Sie den Service manuell deinstallieren wollen, dann nutzen Sie folgendes Kommando
 

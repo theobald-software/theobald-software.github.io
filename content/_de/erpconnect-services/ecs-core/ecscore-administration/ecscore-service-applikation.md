@@ -15,7 +15,7 @@ Im Karteireiter *Services* können Services zur Verbindung zu einem SAP System n
 
 Klicken Sie auf *Add Service*, um einen neuen Service anzulegen.
 
-![ecscore-managementsite4](/img/content/ecscore-managementsite4.jpg.png){:class="img-responsive"}
+![ecscore-managementsite4](/img/content/ecscore-managementsite4.png.png){:class="img-responsive"}
 
 Machen Sie zunächst die Eingaben für folgende Felder:
 
@@ -25,7 +25,7 @@ Machen Sie zunächst die Eingaben für folgende Felder:
 
 **Language** -	Die Sprache in der die Anmeldung am SAP System erfolgen soll. Beispiel: EN
 
-![ecscore-managementsite5](/img/content/ecscore-managementsite5.jpg.png){:class="img-responsive"}
+![ecscore-managementsite5](/img/content/ecscore-managementsite5.png.png){:class="img-responsive"}
 
 Tragen Sie anschließend die Werte ein für die Verbindungseinstellungen zu Ihrem SAP Systems. Sie haben folgende Alternativen:
 
@@ -34,7 +34,7 @@ Server
 
 **Use Load Balancing** -	Wählen Sie diese Option, wenn sie das SAP Load Balancing benutzen und SAP dazu bringen wollen, einen bestimmten Server für die 	Verbindung zu nutzen. Tragen Sie den Messageserver, die Logon-Gruppe und die SAP System ID (SID) ein.   
 
-![ecscore-managementsite6](/img/content/ecscore-managementsite6.jpg.png){:class="img-responsive"}
+![ecscore-managementsite6](/img/content/ecscore-managementsite6.png.png){:class="img-responsive"}
 
 Tragen Sie anschließend die Angaben zur Authentifizierungsmethode ein, die für die Verbindung mit dem SAP System genutzt werden soll. Sie haben folgende Optionen:
 
@@ -54,16 +54,16 @@ Tragen Sie anschließend die Angaben zur Authentifizierungsmethode ein, die für
 
 Sie können außerdem definieren, dass diese Service Applikation als Standard verwendet werden soll (nur sinnvoll bei mehreren Services). 
 
-![ecscore-managementsite7](/img/content/ecscore-managementsite7.jpg.png){:class="img-responsive"}
+![ecscore-managementsite7](/img/content/ecscore-managementsite7.png.png){:class="img-responsive"}
 
 Die angelegten Services werden anschließend links aufgeführt und können jederzeit angepasst oder gelöscht werden.
 
-![ecscore-managementsite8](/img/content/ecscore-managementsite8.jpg.png){:class="img-responsive"}
+![ecscore-managementsite8](/img/content/ecscore-managementsite8.png.png){:class="img-responsive"}
 
 Sie müssen für jeden angelegten Service die Benutzer hinzufügen, die diesen Servicen nutzen dürfen.
 Klicken Sie auf den neu hinterlegten Service und anschließend auf *Users*:
 
-![ecscore-managementsite9](/img/content/ecscore-managementsite9.jpg.png){:class="img-responsive"}
+![ecscore-managementsite9](/img/content/ecscore-managementsite9.png.png){:class="img-responsive"}
 
 Neue User fügen Sie mit Add User hinzu. Es sind damit die User Ihres Windows Systems gemeint. Sie können nach Bedarf einzelne Windows User oder Gruppen hinzufügen. 
 

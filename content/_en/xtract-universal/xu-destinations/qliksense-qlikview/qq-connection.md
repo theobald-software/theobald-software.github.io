@@ -13,4 +13,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=connection3
 
 There are no particular settings necessary for creating the Qlik destination. Just assign any name to it.
 
-![XU_qlik_destination](/img/content/XU_qlik_destination.jpg){:class="img-responsive"}
+![XU_qlik_destination](/img/content/XU_qlik_destination.png){:class="img-responsive"}

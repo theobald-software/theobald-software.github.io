@@ -15,7 +15,7 @@ Im Karteireiter *SAP Connections* können Verbindungen zu einem oder mehreren SA
 
 Klicken Sie auf *New SAP Connection*, um eine neue Verbindung anzulegen.
 
-![ecscore-managementsite_sapconnection-1.jpg](/img/content/ecscore-managementsite_sapconnection-1.jpg){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-1.png](/img/content/ecscore-managementsite_sapconnection-1.png){:class="img-responsive"}
 
 Machen Sie zunächst die Eingaben für folgende Felder:
 
@@ -58,6 +58,6 @@ Die angelegten Verbindungen werden anschließend am linken Bildschirmrand aufgef
 Sie müssen für jede angelegte Verbindung die Windows-Benutzer oder -Benutzergruppen hinzufügen, die die Verbindung nutzen dürfen. Standardmäßig ist die Windows-Benutzergruppe *Everyone* bereits hinzugefügt. 
 Klicken Sie auf die neu hinterlegte Verbindung und anschließend auf *Users*:
 
-![ecscore-managementsite_sapconnection-2.jpg](/img/content/ecscore-managementsite_sapconnection-2.jpg){:class="img-responsive"}
+![ecscore-managementsite_sapconnection-2.png](/img/content/ecscore-managementsite_sapconnection-2.png){:class="img-responsive"}
 
 Hinzugefügte Windows-Benutzer oder -Benutzergruppen können jederzeit wieder entfernt werden.

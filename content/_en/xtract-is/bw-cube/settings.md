@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=bw-cube-settings
 
 Click the *Settings* link to open the settings dialog.
 
-![XIS_BWCube_Settings](/img/content/XIS_BWCube_Settings.jpg){:class="img-responsive" }
+![XIS_BWCube_Settings](/img/content/XIS_BWCube_Settings.png){:class="img-responsive" }
 
 ***String Conversion***
 
@@ -68,7 +68,7 @@ There are no options to change the selection of the dimension or the keyfigures.
 
 Using the BEX Extraction mode you can even extract a Query View. After selecting the BEx query, set the query view name in the field *Query View.*
 
-![BWCube-Settings-02](/img/content/BWCube-Settings-02.jpg){:class="img-responsive" }
+![BWCube-Settings-02](/img/content/BWCube-Settings-02.png){:class="img-responsive" }
 
 **Fill Empty Cells**
 The empty cells of the dimension will be filled accordingly.
@@ -80,11 +80,11 @@ To eliminate the result row (e.g. sum).
 **MDX**
 The main form provides a text field where you can directly insert an MDX statement. 
 
-![BWCube-Settings-03](/img/content/BWCube-Settings-03.jpg){:class="img-responsive" }
+![BWCube-Settings-03](/img/content/BWCube-Settings-03.png){:class="img-responsive" }
 
 After inserting the MDX statement, click on **Execute MDX and refresh statement** to get the metadata from the BW system. 
 
-![BWCube-Settings-04](/img/content/BWCube-Settings-04.jpg){:class="img-responsive" }
+![BWCube-Settings-04](/img/content/BWCube-Settings-04.png){:class="img-responsive" }
 
 Variables can be used either for the whole MDX statement or within the MDX statement. 
 

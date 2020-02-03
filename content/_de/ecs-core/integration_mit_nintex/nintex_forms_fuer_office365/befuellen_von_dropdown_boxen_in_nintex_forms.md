@@ -23,24 +23,24 @@ In unserer Nintex-Form benötigen wir drei Felder mit Bezeichnungen:
 2. Im zweiten Feld *Suggested Materials* vom Typ **Choice** werden die möglichen Treffer für die eingegebene Materialnummer in einer Dropdownliste ausgegeben und sind selektierbar.
 3. Im dritten Feld *Material* vom Typ **Single Line Textbox** wird der Material-Langtext zum ausgewählten Material angezeigt.
 
-![nintex-forms-js-dropdown-01](/img/content/nintex-forms-js-dropdown-01.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-01](/img/content/nintex-forms-js-dropdown-01.png){:class="img-responsive"}
 
 Rufen Sie zunächst die Settings für das Feld *Material Number* auf und setzen Sie die Option *Store Client ID in JavaScript Variable* auf Yes. <br>
 Tragen Sie *field_input* als Namen ins Feld *Client ID JavaScript variable name* ein.
 
-![nintex-forms-js-dropdown-02](/img/content/nintex-forms-js-dropdown-02.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-02](/img/content/nintex-forms-js-dropdown-02.png){:class="img-responsive"}
 
 Rufen Sie anschließend die Settings für das *Choice*-Feld auf. <br>
 Wählen Sie als Anzeigeformat Drop down list und tragen Sie bei *Choices* z.B. Start typing ein. Was Sie hier eintragen spielt keine Rolle, da die Eingabe durch JavaScript später wieder überschrieben wird (Im vorliegenden Beispiel mit dem Satz *Start typing in the input* above).  
 Setzen Sie anschließend die Option *Store Client ID in JavaScript Variable* auf Yes und tragen Sie ins Feld *Client ID JavaScript variable name* den Name *field_select* ein.
 
-![nintex-forms-js-dropdown-03](/img/content/nintex-forms-js-dropdown-03.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-03](/img/content/nintex-forms-js-dropdown-03.png){:class="img-responsive"}
 
 Rufen Sie anschließend die Settings für die *Single Line Textbox* neben *Material* auf. Setzen Sie auch hier die Option *Store Client ID in JavaScript Variable* auf Yes und tragen Sie ins Feld *Client ID JavaScript variable name* den Name *field_output* ein.   
 
 Da es sich nur um ein Anzeigefeld handeln soll, können Sie zusätzlich unter *Appearance* definieren, dass das Feld nur angezeigt werden soll und keine Eingaben zugelassen sind.        
 
-![nintex-forms-js-dropdown-04](/img/content/nintex-forms-js-dropdown-04.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-04](/img/content/nintex-forms-js-dropdown-04.png){:class="img-responsive"}
 
 **Schritt 2: JavaScript-Code einfügen**
 
@@ -49,11 +49,11 @@ Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -
 [http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js](http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js)
 
 
-![nintex-forms-js-dropdown-05](/img/content/nintex-forms-js-dropdown-05.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-05](/img/content/nintex-forms-js-dropdown-05.png){:class="img-responsive"}
 
 Fügen Sie den JavaScript-Code unter *Form Settings -> Advanced -> Custom JavaScript* ein.
 
-![nintex-forms-js-dropdown-06](/img/content/nintex-forms-js-dropdown-06.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-06](/img/content/nintex-forms-js-dropdown-06.png){:class="img-responsive"}
 
 Im Code wird die Funktion *tEcs.executeXql* aufgerufen, um die Materialnummer und den Material-Langtext aus der SAP-Tabelle MAKT zu lesen.
 
@@ -162,8 +162,8 @@ Dieses Szenario können Sie auch mit ECS Core umsetzen, siehe [Anwendungsentwick
 Nun führen Sie die Form aus und geben Sie eine Materialnummer ein. Die Treffer zur Eingabe werden aus SAP gelesen und in der Dropdown Liste (Suggested Materials) angezeigt.  
 
 
-![nintex-forms-js-dropdown-07](/img/content/nintex-forms-js-dropdown-07.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-07](/img/content/nintex-forms-js-dropdown-07.png){:class="img-responsive"}
 
 Wählt man ein Material aus der Liste aus, wird der Langtext dazu im Feld *Material angezeigt*. 
 
-![nintex-forms-js-dropdown-08](/img/content/nintex-forms-js-dropdown-08.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-08](/img/content/nintex-forms-js-dropdown-08.png){:class="img-responsive"}

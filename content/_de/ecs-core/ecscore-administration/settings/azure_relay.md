@@ -36,14 +36,14 @@ Kopieren Sie den kompletten *Primary Connection String* (Endpoint=sb://...).
 Gehen Sie auf der ECS Core Management Site zu *Settings>Azure Relay* und führen mit *Add Relay Registration* eine neue Registrierung durch.
 Fügen Sie dafür den kopierten Connection String in das Feld ein und sichern Sie den Eintrag mit *Add Azure Relay Registration*.
 
-![ecscore-azurerelay_3](/img/content/ecscore-azurerelay_3.jpg){:class="img-responsive"}
+![ecscore-azurerelay_3](/img/content/ecscore-azurerelay_3.png){:class="img-responsive"}
 
 Wichtig: Nach dem Hinzufügen einer neuen Azure Relay Registrierung ist zwingend das Recyclen der ECS Core Application Pools in den IIS erforderlich. Sie können dies manuell vornehmen oder auf der Management Site unter *Settings>System Operations* <br>
 mit der Funktion *Clear consumer website caches*.
 
 Im Azure Management Portal sollte nun das Relay mit vorgenommenen Registrierung aufgeführt sein.
 
-![ecscore-azurerelay_4](/img/content/ecscore-azurerelay_4.jpg){:class="img-responsive"}
+![ecscore-azurerelay_4](/img/content/ecscore-azurerelay_4.png){:class="img-responsive"}
 
  
 

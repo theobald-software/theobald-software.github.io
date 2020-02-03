@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-destination-settings
 
 Click on Destination to define extraction-specific settings.
 
-![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.jpg){:class="img-responsive"}
+![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
         
            
 **File Name**

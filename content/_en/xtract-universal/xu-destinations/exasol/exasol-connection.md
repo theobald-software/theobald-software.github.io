@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol-connection
 
 The following settings can be defined for the Exasol destination.
 
-![Exa-Connection](/img/content/Exa-Connection.jpg){:class="img-responsive"}
+![Exa-Connection](/img/content/Exa-Connection.png){:class="img-responsive"}
 
 **Connection**
 

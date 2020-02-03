@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=db2-verbindung
 
 Folgende Einstellungen können für die Verbindung zur Zieldatenbank definiert werden.
 
-![DB2-Connection](/img/content/DB2-Connection.jpg){:class="img-responsive"}
+![DB2-Connection](/img/content/DB2-Connection.png){:class="img-responsive"}
 
 **Host Name / Port** <br>
 Name bzw. IP des Datenbankservers und die Portnummer.

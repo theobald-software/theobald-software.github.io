@@ -27,7 +27,7 @@ The license manager opens.<br>
 3. Locate and select the regular "XtractISLicense.json" file within the installation directory of Xtract IS:<br>
 `C:\Program Files\XtractIS\XtractISLicense.json`
 4. Close and restart the license manager to view the properly installed license. <br>
-![XIS_License_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive"}
+![XIS_License_Info](/img/content/XIS_License_Info.png){:class="img-responsive"}
 
 {: .box-tip }
 **Tip:** To inspect your current license data, click the Xtract IS Info link located at the top of each component editor.

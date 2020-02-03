@@ -13,4 +13,4 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=create-the-external-list-in
 
 Using the BCS Connector, create a new external list on your SharePoint site, based on the SAP material entity. Navigate to the SharePoint list and make sure data is displayed and that the View Item and New Item buttons are active on the ribbon.
 
-![nintex-bcs-external-list](/img/content/nintex-bcs-external-list.jpg){:class="img-responsive"}
+![nintex-bcs-external-list](/img/content/nintex-bcs-external-list.png){:class="img-responsive"}

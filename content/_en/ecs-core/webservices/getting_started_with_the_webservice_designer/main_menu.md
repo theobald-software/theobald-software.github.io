@@ -13,7 +13,7 @@ lang: en_GB
 
 The following settings are available in the main menu of the ECS Core WebService Designer:
 
-![WSD-15](/img/content/ecscore-wsd_15.jpg){:class="img-responsive"}
+![WSD-15](/img/content/ecscore-wsd_15.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 

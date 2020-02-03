@@ -12,7 +12,7 @@ lang: de_DE
 
 Unter *Custom Data Types* können Ein- oder Ausgabeparameter eines Webservice in Form einer Eingabe-Liste bzw. -Struktur angelegt werden. 
 
-![WSD-CustomDataTypes](/img/content/ecscore-wsd_18.jpg){:class="img-responsive"}
+![WSD-CustomDataTypes](/img/content/ecscore-wsd_18.png){:class="img-responsive"}
 
 Folgende Einstellungen stehen zur Verfügung:
 

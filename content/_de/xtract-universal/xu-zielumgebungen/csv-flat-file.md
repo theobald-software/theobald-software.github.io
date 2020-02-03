@@ -16,7 +16,7 @@ Das Ziel *Flat File* erzeugt eine generische CSV-Datei.
 
 Folgende Einstellungen können fürs Ziel Flat File definiert werden.
 
-![CSV-Flat-Destination-Details](/img/content/CSV-Flat-Destination-Details.jpg){:class="img-responsive"}
+![CSV-Flat-Destination-Details](/img/content/CSV-Flat-Destination-Details.png){:class="img-responsive"}
 
 **File**
 

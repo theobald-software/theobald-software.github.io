@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=bcs-formatting
 
 You can change the format type of a column with the BCS Connector. Use the ellipsis button next to a property field to open the Localization and Formatting dialog and switch to the Formatting tab. 
 
-![BCS-Formatting](/img/content/BCS-Formatting.jpg){:class="img-responsive"}
+![BCS-Formatting](/img/content/BCS-Formatting.png){:class="img-responsive"}
 
 **Format as date (e.g. 8/28/2012)**<br>
 **Format as date (e.g. Tuesday, August 28, 2012)**<br>

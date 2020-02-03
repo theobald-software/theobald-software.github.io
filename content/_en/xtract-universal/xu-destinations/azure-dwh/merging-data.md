@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=merging_data1
 In this example we will run an extraction to merge data, i.e. insert a new data row or update an existing one.
 Prerequisite for executing the merge is defining a primary key in the General Settings of the extraction.
 
-![XU_table_Primary_key](/img/content/XU_table_Primary_key.jpg){:class="img-responsive"}
+![XU_table_Primary_key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
 Now let's change the Destination settings of the extraction and set 
 - Preparation to *Prepare Merge*
@@ -23,7 +23,7 @@ Now let's change the Destination settings of the extraction and set
 
 to merge the data.
 
-![XU_Azure_DWH_merge](/img/content/XU_Azure_DWH_merge.jpg){:class="img-responsive"}
+![XU_Azure_DWH_merge](/img/content/XU_Azure_DWH_merge.png){:class="img-responsive"}
 
 The *Prepare Merge* statement creates a temporary staging table on the database.
 {% highlight sql %}

@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung6
 
 Folgende Einstellungen können für die Verbindung zu Amazon S3 vorgenommen werden.
 
-![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.jpg){:class="img-responsive"}
+![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.png){:class="img-responsive"}
 
 **Inherit Credentials from IAM role** <br>
 Die Anmeldeinformationen und Berechtigungen der IAM Rolle, die der [EC2-Instanz](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), auf der Xtract Universal läuft, zugewiesen wurde, werden für die Authentisierung verwendet.
@@ -49,4 +49,4 @@ HINWEIS: Diese Einstellungen beziehen sich nicht auf die Transportverschlüsselu
 **CSV Settings**<br>
 Die Einstellungsmöglichkeiten im Reiter CSV Settings entsprechen denen der allgemeinen [http-csv](../csv-via-http) Settings.
 
-![XU_S3_DestinationDetails2](/img/content/XU_S3_DestinationDetails2.jpg){:class="img-responsive"}
+![XU_S3_DestinationDetails2](/img/content/XU_S3_DestinationDetails2.png){:class="img-responsive"}

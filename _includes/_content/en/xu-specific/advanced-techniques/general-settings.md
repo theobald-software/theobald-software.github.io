@@ -2,7 +2,7 @@ Each extraction dialog has the link *General Settings*, which provides general s
 
 **Misc. tab**
 
-![General-Settings](/img/content/General-Settings.jpg){:class="img-responsive"}
+![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
 
 **Disable Buffer**<br>
 This setting disables the extractions buffering and overwrites the server settings BufferExtractionCount  and BufferLifespanMinutes.

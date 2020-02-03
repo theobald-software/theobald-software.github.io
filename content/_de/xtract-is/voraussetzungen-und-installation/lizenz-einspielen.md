@@ -27,7 +27,7 @@ Der Lizenzmanager wird geöffnet.<br>
 3. Suchen Sie die reguläre Datei "XtractISLicense.json" im Installationsverzeichnis von Xtract IS:
 `C:\Program Files\XtractIS\XtractISLicense.json`
 4. Schließen und starten Sie den Lizenzmanager neu, um die korrekt installierte Lizenz anzuzeigen. <br>
-![XIS_Lizenz_Info](/img/content/XIS_License_Info.jpg){:class="img-responsive" width="400px"}
+![XIS_Lizenz_Info](/img/content/XIS_License_Info.png){:class="img-responsive" width="400px"}
 
 <div class="alert alert-success">
   <i class="fas fa-lightbulb"></i> <strong>Tipp:</strong> Um Ihre aktuellen Lizenzdaten einzusehen, klicken Sie auf den Info-Link, der sich oben in jedem Komponenten-Editor befindet.<br>

@@ -23,7 +23,7 @@ To get a real Delta procedure running, Delta first has to be initialized. See De
 
 You also have to put a checkmark next to the columns you would like to extract. Your template should look like this when you're done:
 
-![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.jpg){:class="img-responsive"}
+![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
 
 ### Step 5: Activation
 

@@ -12,7 +12,7 @@ lang: de_DE
 
 Mit einem Doppelklick wird das Feld selektiert und erscheint im unteren Selektionsfenster.
 
-![tj-selected-columns](/img/content/tj-selected-columns.jpg){:class="img-responsive"}
+![tj-selected-columns](/img/content/tj-selected-columns.png){:class="img-responsive"}
 
 **Alias**<br>
 Hier können Sie einen Alias für den Spaltennamen definieren, um die Spate im Ergebnis umzubennen. 
@@ -29,6 +29,6 @@ Wenn Sie eine Aggregat-Funktion selektieren, müssen Sie einen Alias setzen.
 
 Unten finden Sie ein Beispiel, um die Anzahl der Sprachen der Beschreibungen pro Material zurückzugeben. 
 
-![tj-aggregate-count](/img/content/tj-aggregate-count.jpg){:class="img-responsive"}
+![tj-aggregate-count](/img/content/tj-aggregate-count.png){:class="img-responsive"}
 
 Rechts haben Sie die Möglichkeiten die selektierten Felder untereinander nach oben und unten zu verschieben bzw. zu löschen.

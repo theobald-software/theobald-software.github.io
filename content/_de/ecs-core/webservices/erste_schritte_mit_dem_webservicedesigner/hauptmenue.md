@@ -14,7 +14,7 @@ old_url: /ECS-Core-DE/default.aspx?pageid=hauptmenü
 
 Im Hauptmenü des ECS Core WebService Designers stehen folgende Einstellungen zur Verfügung:
 
-![WSD-15](/img/content/ecscore-wsd_15.jpg){:class="img-responsive"}
+![WSD-15](/img/content/ecscore-wsd_15.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
 

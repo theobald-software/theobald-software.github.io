@@ -8,4 +8,4 @@ If you want to send a report via mail to the support, please make sure that the 
 
 Both server and extraction logs are automatically deleted after a defined period. The period can be set in the server configuration.
 
-![View-Extraction-Log](/img/content/View-Extraction-Log.jpg){:class="img-responsive"}
+![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}

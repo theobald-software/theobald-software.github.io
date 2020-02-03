@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=oracle
 
 In diesem Kapitel beschreiben wir das Laden der Daten in eine Oracle-Zieldatenbank.
 
-![Oracle-Extraction-Designer](/img/content/Oracle-Extraction-Designer.jpg){:class="img-responsive"}
+![Oracle-Extraction-Designer](/img/content/Oracle-Extraction-Designer.png){:class="img-responsive"}
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -20,6 +20,6 @@ Wählen Sie eine *Language* und geben den länderspezifischen Wert in das *FeldD
 
 Die länderzpezifischen Namen werden dem Nutzer auf derSharePoint Seite angezeigt, wenn dieser eine andere Anzeigesprache eingestellt hat.
 
-![BCS-Localization](/img/content/BCS-Localization.jpg){:class="img-responsive"}
+![BCS-Localization](/img/content/BCS-Localization.png){:class="img-responsive"}
 
 

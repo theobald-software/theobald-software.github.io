@@ -18,13 +18,13 @@ In der *Central Administration* finden Sie im Abschnitt *ERPConnect Services* fo
 - *Test Application Proxy* testet die ERPConnect Services-Application.
 - *Version History* zeigt die Versionshistorie an.
 
-![ECS-SP-Admin-ECS](/img/content/ECS-SP-Admin-ECS.jpg){:class="img-responsive"}
+![ECS-SP-Admin-ECS](/img/content/ECS-SP-Admin-ECS.png){:class="img-responsive"}
 
 **ERPConnect Services-Objekte**
 
 Ein Klick auf *Manage Objects* öffnet eine Übersichtsseite mit allen während der Installation erzeugten und über die Zentraladministration definierten ERPConnect Services-Objekte:
 
-![ECS-SP-ECS-Objects](/img/content/ECS-SP-ECS-Objects.jpg){:class="img-responsive"}
+![ECS-SP-ECS-Objects](/img/content/ECS-SP-ECS-Objects.png){:class="img-responsive"}
 
 Es sollten keine Service-Objekte direkt mithilfe dieser Seite gelöscht oder erzeugt werden. Die Übersichtsseite dient dem Support-Team zur Unterstützung bei technischen Problemen.
 
@@ -34,9 +34,9 @@ Es sollten keine Service-Objekte direkt mithilfe dieser Seite gelöscht oder erz
 Klicken Sie auf Test, um den Zugriff auf die ERPConnect Services-Application zu prüfen.<br>
 Klicken Sie auf Test SAP, um den Zugriff auf die ERPConnect Services-Application und die SAP-Verbindung zu prüfen.
 
-![ECS-SP-ECS-Test](/img/content/ECS-SP-ECS-Test.jpg){:class="img-responsive"}
+![ECS-SP-ECS-Test](/img/content/ECS-SP-ECS-Test.png){:class="img-responsive"}
 
-![ECS-SP-ECS-Test-Success](/img/content/ECS-SP-ECS-Test-Success.jpg){:class="img-responsive"}
+![ECS-SP-ECS-Test-Success](/img/content/ECS-SP-ECS-Test-Success.png){:class="img-responsive"}
 
 Um den SAP-Verbindungstest erfolgreich in SP 2013 durchzuführen, folgendes muss sichergestellt werden: 
 - der Service "Claims to Windows Token Service" muss gestartet werden (CA -> Manage services on server). 
@@ -49,5 +49,5 @@ Nach eine Änderung müssen Sie IIS neustarten.
 
 Klicken Sie auf *Version History*, um die Versionshistorie anzuzeigen.
 
-![ECS-SP-ECS-Version-History](/img/content/ECS-SP-ECS-Version-History.jpg){:class="img-responsive"}
+![ECS-SP-ECS-Version-History](/img/content/ECS-SP-ECS-Version-History.png){:class="img-responsive"}
 

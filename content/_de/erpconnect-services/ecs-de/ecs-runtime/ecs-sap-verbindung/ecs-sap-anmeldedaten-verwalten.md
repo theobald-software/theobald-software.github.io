@@ -39,31 +39,31 @@ Das Feature ist nun unter den Site Collection Features ihrer Webanwendung aktivi
 
 Nun wollen wir den Webpart zu einer bestehenden Page hinzufügen. 
 
-![ECS-SS-Manager-Webpart-01](/img/content/ECS-SS-Manager-Webpart-01.jpg){:class="img-responsive"}
+![ECS-SS-Manager-Webpart-01](/img/content/ECS-SS-Manager-Webpart-01.png){:class="img-responsive"}
 
 Wählen Sie ERPConnect Services -> Secure Store Web Part. Klicken Sie auf Add.
 
-![ECS-SS-Manager-Webpart-02](/img/content/ECS-SS-Manager-Webpart-02.jpg){:class="img-responsive"}
+![ECS-SS-Manager-Webpart-02](/img/content/ECS-SS-Manager-Webpart-02.png){:class="img-responsive"}
 
 Wählen Sie Edit Web part, um zu den Einstellungen zu gelangen.
 
-![ECS-SS-Manager-Webpart-03](/img/content/ECS-SS-Manager-Webpart-03.jpg){:class="img-responsive"}
+![ECS-SS-Manager-Webpart-03](/img/content/ECS-SS-Manager-Webpart-03.png){:class="img-responsive"}
 
 Wählen Sie die entsprechende Secure Store Anwendung aus der Liste, für welche die SharePoint-Benutzer ihre SAP-Anmeldedaten pflegen sollen.
 
-![ECS-SS-Manager-Webpart-04](/img/content/ECS-SS-Manager-Webpart-04.jpg){:class="img-responsive"}
+![ECS-SS-Manager-Webpart-04](/img/content/ECS-SS-Manager-Webpart-04.png){:class="img-responsive"}
 
 Klicken Sie auf Ok. Dann klicken Sie auf Save and Close.
 
-![ECS-SS-Manager-Webpart-05](/img/content/ECS-SS-Manager-Webpart-05.jpg){:class="img-responsive"}
+![ECS-SS-Manager-Webpart-05](/img/content/ECS-SS-Manager-Webpart-05.png){:class="img-responsive"}
 
 Nun kann der Webpart verwendet werden. Geben Sie den SAP-Benutzernamen und das Kennwort ein. Klicken Sie auf Add.
 
-![ECS-SS-Manager-Webpart-06](/img/content/ECS-SS-Manager-Webpart-06.jpg){:class="img-responsive"}
+![ECS-SS-Manager-Webpart-06](/img/content/ECS-SS-Manager-Webpart-06.png){:class="img-responsive"}
 
 Die SAP-Anmeldedaten wurden in der enstprechenden Secure Store-Anwendung gespeichert und dem aktuellen SharePoint-Benutzer zugewiesen.
 
-![ECS-SS-Manager-Webpart-07](/img/content/ECS-SS-Manager-Webpart-07.jpg){:class="img-responsive"}
+![ECS-SS-Manager-Webpart-07](/img/content/ECS-SS-Manager-Webpart-07.png){:class="img-responsive"}
 
 Hinweis über die Zugriffsrechte auf den Secure Store Service
 

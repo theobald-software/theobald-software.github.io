@@ -21,7 +21,7 @@ siehe [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrit
 
 
 
-![SAP-Connection-SNC-Ok](/img/content/SAP-Connection-SNC-Ok.jpg){:class="img-responsive"}
+![SAP-Connection-SNC-Ok](/img/content/SAP-Connection-SNC-Ok.png){:class="img-responsive"}
 
 Wenn Sie bei *Mechanism* die Option *SNC Library* wählen, dann werden die Felder SNC Library and X.509 Certificate aktiviert.
 
@@ -105,7 +105,7 @@ Sprache (Logon Language)<br>
 
 Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort eingeben. 
 
-![sapgui-client-lang](/img/content/sapgui-client-lang.jpg){:class="img-responsive"}
+![sapgui-client-lang](/img/content/sapgui-client-lang.png){:class="img-responsive"}
 
 **SAP-Zielsystem**
 
@@ -120,7 +120,7 @@ Im Fall eines Applikationsservers werden folgende Angaben benötigt:
 - Systemnummer (Instance Number), eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
 
 
-![sapgui-appserver](/img/content/sapgui-appserver.jpg){:class="img-responsive"}
+![sapgui-appserver](/img/content/sapgui-appserver.png){:class="img-responsive"}
 
 **Message Server (Load Balancing)** 
 
@@ -130,6 +130,6 @@ Im Fall von einer Anmeldung an einem Message Server (Load Balancing) sind folgen
 - Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
 - Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. ist das PUBLIC)
 
-![sapgui-messageserver](/img/content/sapgui-messageserver.jpg){:class="img-responsive"}
+![sapgui-messageserver](/img/content/sapgui-messageserver.png){:class="img-responsive"}
 
 

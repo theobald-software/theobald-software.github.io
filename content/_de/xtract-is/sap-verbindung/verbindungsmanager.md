@@ -72,7 +72,7 @@ SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/sup
 
 **Additions**
 
-![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.jpg){:class="img-responsive" width="600px" }
+![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.png){:class="img-responsive" width="600px" }
 
 **SNC enabled**
 
@@ -115,4 +115,4 @@ Die SAP-Verbindungsparameter werden über einen einzigen *Connection String* ein
 
 Das SAP-Verbindungspasswort wird verschleiert, so dass es nicht im Klartext gespeichert wird. Wird standardmäßig eingeschaltet, wenn der *Legacy storage mode* aktiviert wird.
 
-![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.jpg){:class="img-responsive" width="600px". }
+![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.png){:class="img-responsive" width="600px". }

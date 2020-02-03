@@ -14,14 +14,14 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-service-applications
 You can view all service applications that are installed on your SharePoint server using Central Administration. Under *Application Management* you will find the *Service Applications group*:
 
 
-![ECS-SP-Service-Applications-Overview](/img/content/ECS-SP-Service-Applications-Overview.jpg){:class="img-responsive" }
+![ECS-SP-Service-Applications-Overview](/img/content/ECS-SP-Service-Applications-Overview.png){:class="img-responsive" }
 
 
 **Manage Services Applications**
 
 Select *Manage service applications* to see a list of service applications that are available within the SharePoint farm.
 
-![ECS-SP-Service-Applications-Manage](/img/content/ECS-SP-Service-Applications-Manage.jpg){:class="img-responsive" }
+![ECS-SP-Service-Applications-Manage](/img/content/ECS-SP-Service-Applications-Manage.png){:class="img-responsive" }
 
 
 ERPConnect Services can be installed on multiple servers within a farm and provide a combined and load-balanced feature set to the developer for accessing SAP data.
@@ -38,11 +38,11 @@ Unless a specific service application is provided, the one in the default group 
 
 To manage the default group, select Application Management und from the *Service Applications* group select *Configure service application associations*. The *Service Application Associations page* will be displayed.
 
-![ECS-SP-Service-Applications-Assocication-01](/img/content/ECS-SP-Service-Applications-Assocication-01.jpg){:class="img-responsive" }
+![ECS-SP-Service-Applications-Assocication-01](/img/content/ECS-SP-Service-Applications-Assocication-01.png){:class="img-responsive" }
 
 Select the *default* application proxy group to see the associations to the service applications. In case you have configured multiple ERPConnect Services applications, for example for different SAP systems, you can specify the default ERPConnect Services application.
 
-![ECS-SP-Service-Applications-Assocication-02](/img/content/ECS-SP-Service-Applications-Assocication-02.jpg){:class="img-responsive" }
+![ECS-SP-Service-Applications-Assocication-02](/img/content/ECS-SP-Service-Applications-Assocication-02.png){:class="img-responsive" }
 
 
 **Important:**
@@ -54,6 +54,6 @@ You should only select one ERPConnect Services application as the default servic
 
 To manage the services on the SharePoint server, go to the *Service Applications* group and select *Manage services on server*. The Services page will be displayed and you should see the *ERPConnect* Service in status Started.
 
-![ECS-SP-Manage-Services-On-Server](/img/content/ECS-SP-Manage-Services-On-Server.jpg){:class="img-responsive" }
+![ECS-SP-Manage-Services-On-Server](/img/content/ECS-SP-Manage-Services-On-Server.png){:class="img-responsive" }
 
 On this page you can view the status of each service and start or stop a service.

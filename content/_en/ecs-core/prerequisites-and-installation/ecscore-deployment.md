@@ -37,7 +37,7 @@ Missing IIS components can be installed automatically when starting the Deployme
 
 **Deployment**
 
-![ecscore-deploymentmanager-1.jpg](/img/content/ecscore-deploymentmanager-1.jpg){:class="img-responsive"}
+![ecscore-deploymentmanager-1.png](/img/content/ecscore-deploymentmanager-1.png){:class="img-responsive"}
 
 Select *Express Install* to install with the default settings and ports. To adjust the default values, click *Next*. This will go through expert mode, which we recommend only to experienced users.  
 
@@ -51,13 +51,13 @@ Default directory for setting up the components: C:\ECSCore
 The Deployment Manager creates the page in the IIS. You can call it directly from there or by specifying the port entered (8080) directly in the browser (http://localhost:8080).
 
 
-![ecscore-deploymentmanager-2.jpg](/img/content/ecscore-deploymentmanager-2.jpg){:class="img-responsive"}
+![ecscore-deploymentmanager-2.png](/img/content/ecscore-deploymentmanager-2.png){:class="img-responsive"}
 
 **Management Site**
 
 The configuration for ECSCore is done on the *Management Site*. It is also used for deployment and administration of created web services. With the Deployment Manager, the management site is created in the IIS and can be called from there or directly in the browser by specifying the port (8085) (http://localhost:8085).
 
-![ecscore-deploymentmanager-3.jpg](/img/content/ecscore-deploymentmanager-3.jpg){:class="img-responsive"}
+![ecscore-deploymentmanager-3.png](/img/content/ecscore-deploymentmanager-3.png){:class="img-responsive"}
 
 **Database**
 
@@ -68,7 +68,7 @@ This setting is no longer supported, a *Microsoft SQL Server Compact* is no long
 The *Master Key* can be used to restore sensitive information such as logon data for the management dashboard or SAP connections.
 Important: Keep the password in a safe place.
 
-![ecscore-deploymentmanager-4.jpg](/img/content/ecscore-deploymentmanager-4.jpg){:class="img-responsive"}
+![ecscore-deploymentmanager-4.png](/img/content/ecscore-deploymentmanager-4.png){:class="img-responsive"}
 
 Click *Finish* to complete the configuration.
 

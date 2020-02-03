@@ -2,7 +2,7 @@ The Server is initially installed as a Windows Service and automatically started
 
 The service can be started and stopped via the Windows Services administration. 
 
-![Services-Start-Server](/img/content/Services-Start-Server.jpg){:class="img-responsive"}
+![Services-Start-Server](/img/content/Services-Start-Server.png){:class="img-responsive"}
 
 To uninstall the service use the command 
 ```

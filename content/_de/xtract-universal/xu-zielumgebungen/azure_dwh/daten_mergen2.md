@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=daten_mergen2
 In diesem Beispiel wollen wir neue Datensätze einfügen und bestehende Datensätze aktualisieren.<br>
 Voraussetzung hierfür ist, dass in den *General Settings* der Extraktion ein Primärschlüssel vergeben wurde.
 
-![XU_table_Primary_key](/img/content/XU_table_Primary_key.jpg){:class="img-responsive"}
+![XU_table_Primary_key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
 Nun ändern wir die Destination Einstellungen und setzen 
 
@@ -22,7 +22,7 @@ Nun ändern wir die Destination Einstellungen und setzen
 - Row Processing auf *Fill merge staging table*, um Daten in die Staging-Tabelle einzufügen und <br>
 - Finalization auf *Finalize Merge*, um die Staging-Tabelle mit der Zieltabelle zu mergen und anschließen die Staging-Tabelle zu löschen.
 
-![XU_Azure_DWH_merge](/img/content/XU_Azure_DWH_merge.jpg){:class="img-responsive"}
+![XU_Azure_DWH_merge](/img/content/XU_Azure_DWH_merge.png){:class="img-responsive"}
 
 Das *Prepare Merge* Statement erstellt eine temporäre Tabelle auf der Datenbank.
 

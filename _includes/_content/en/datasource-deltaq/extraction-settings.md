@@ -1,6 +1,6 @@
 Click the *Extraction Settings* link to open the Extraction Settings dialog.
 
-![XU_DeltaQ_Settings_thumb](/img/content/XU_DeltaQ_Settings_thumb.jpg){:class="img-responsive"}
+![XU_DeltaQ_Settings_thumb](/img/content/XU_DeltaQ_Settings_thumb.png){:class="img-responsive"}
 
 **Transfer Mode**<br>
 The raw data packages can be send by SAP by a *tRFC* call or a *Data-IDoc*. Normally the tRFC is optimal for the default setting. If it is necessary, e.g. to examine the raw data packages for debugging reasons, you can change the transfer mode to IDoc. Then you can examine the data packages in the transaction WE02 (IDoc-Monitoring).
@@ -35,7 +35,7 @@ To show and delete the init requests of this DataSource (requests in RSA7).
 
 For a Hierarchy DataSource Extraction you can use the following hierarchy settings on the Hierarchy tab.
 
-![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.jpg){:class="img-responsive"}
+![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
 
 **Language**<br>
 Defines the Language, if a Hierarchy is extracted.

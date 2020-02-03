@@ -13,7 +13,7 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=report-settings
 
 Click the *Settings* link to open the settings dialog.
 
-![Report-Settings](/img/content/Report-Settings.jpg){:class="img-responsive" }
+![Report-Settings](/img/content/Report-Settings.png){:class="img-responsive" }
 
 
 **Use Batch**

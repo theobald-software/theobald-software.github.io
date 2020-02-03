@@ -31,7 +31,7 @@ Andernfalls wird die Datenquelle *Xtract Universal* in Power BI nicht angezeigt.
 1. Wählen Sie Xtract Universal im Menu *Get Data*.
 2. Klicken Sie auf die Schaltfläche *Connect*.
 3. Geben Sie die URL des Xtract Universal-Webservers an.
-![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
+![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.png){:class="img-responsive"}
 
 Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden auszuwählen: *Anonymous*, *Basic* or *Windows*, befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](./pbi-SSO).
 

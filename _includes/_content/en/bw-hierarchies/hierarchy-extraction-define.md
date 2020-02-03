@@ -6,7 +6,7 @@ Click *New* Button to define a hierarchy extraction. The search form appears wit
 
 After making your selection, the component saves all relevant data needed for the extraction later on:
 
-![Define-Data-Source-Hierarchy](/img/content/Define-Data-Source-Hierarchy.jpg){:class="img-responsive"}
+![Define-Data-Source-Hierarchy](/img/content/Define-Data-Source-Hierarchy.png){:class="img-responsive"}
 
 **Date To**<br>
 The defalut value for Date To is 99991231. To change it, click on Run and override the value in the field dateTo. 

@@ -13,7 +13,7 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=define-report
 
 Select the type Report to launch the editor. 
 
-![Report](/img/content/Report.jpg){:class="img-responsive" }
+![Report](/img/content/Report.png){:class="img-responsive" }
 
 Click the binocular button to open up the search dialog. You can use wildcards ( * ) to search for the report you want to use for extraction.
 

@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-sap-authentication
 
 ERPConnect Services Runtime (ECSR) offers the following authentication options for the SAP connection, that are available while creating the ECS Service Application: 
 
-![ECS-SAP-Authentication](/img/content/ECS-SAP-Authentication.jpg){:class="img-responsive" }
+![ECS-SAP-Authentication](/img/content/ECS-SAP-Authentication.png){:class="img-responsive" }
 
 **Secure Store Services**<br>
 ECSR will use the SharePoint Secure Store Services  to get the SAP credentials of the logged SharePoint user.

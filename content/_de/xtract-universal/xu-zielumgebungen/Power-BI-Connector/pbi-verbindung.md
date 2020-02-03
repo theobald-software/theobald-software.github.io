@@ -16,4 +16,4 @@ old_url:
 3. Weisen Sie den Extraktionen die Destination zu.<br> 
 Die Extraktionen sind jetzt im Power BI Custom Connector sichtbar.
 
-![Power BI Connector (beta) Destination](/img/content/XU_pbi_connector_connection.jpg){:class="img-responsive"}
+![Power BI Connector (beta) Destination](/img/content/XU_pbi_connector_connection.png){:class="img-responsive"}

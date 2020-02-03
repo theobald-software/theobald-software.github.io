@@ -29,4 +29,4 @@ Click on the API Key to see the options *Update, Remove* and *Show BASE64 encode
 
 You need the *Update* option if the Windows user credentials have changed. BASE64 encoded API Keys are required in some applications (i.e. REST client authorization header). 
 
-![ecscore-managementsite36](/img/content/ecscore-managementsite36.jpg.png){:class="img-responsive"}
+![ecscore-managementsite36](/img/content/ecscore-managementsite36.png.png){:class="img-responsive"}

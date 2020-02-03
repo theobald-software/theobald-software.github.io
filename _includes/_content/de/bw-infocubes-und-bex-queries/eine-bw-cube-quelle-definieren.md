@@ -15,7 +15,7 @@ Nachdem ein Cube gewählt wurde, finden Sie auf der linken Seite hierarchisch an
 
 Bitte beachten Sie, dass die jeweilige Dimension automatisch mit selektiert wird, auch wenn Sie nur eine einzelne Eigenschaft hinüberziehen.
 
-![Cube-Details](/img/content/Cube-Details.jpg){:class="img-responsive"}
+![Cube-Details](/img/content/Cube-Details.png){:class="img-responsive"}
 
 Sobald sie die Definition der gewünschten Ergebnismenge abgeschlossen haben, können Sie die Ausgabe der Extraktion mit Hilfe des Run-Buttons im Browser testen.
 

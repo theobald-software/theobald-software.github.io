@@ -13,7 +13,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=report-definieren
 
 Wählen Sie den Typ Report aus der Liste, dann öffnet sich der  Report-Editor.
 
-![Report](/img/content/Report.jpg){:class="img-responsive"}
+![Report](/img/content/Report.png){:class="img-responsive"}
 
 Klicken Sie auf den Button mit dem Fernglas, um einen Report zu suchen. Zur Suche können auch Wildcards ( * ) verwendet werden:
 

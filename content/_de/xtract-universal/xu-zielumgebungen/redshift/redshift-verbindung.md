@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=redshift-verbindung
 
 Folgende Einstellungen müssen für die Verbindung zur Zieldatenbank definiert werden.
 
-![XU_redshift_destination](/img/content/XU_redshift_destination.jpg){:class="img-responsive"}
+![XU_redshift_destination](/img/content/XU_redshift_destination.png){:class="img-responsive"}
 
 
 **Connection**

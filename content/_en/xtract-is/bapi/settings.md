@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=bapi-settings
 
 The dialog below will open after clicking the Settings button.
 
-![BAPI-Settings](/img/content/BAPI-Settings.jpg){:class="img-responsive" }
+![BAPI-Settings](/img/content/BAPI-Settings.png){:class="img-responsive" }
 
 **Automatic String Conversion**<br>
 All strings are converted into VarChar strings if the source system is non-Unicode, and all strings are converted into NVarChar if the source system is Unicode.

@@ -7,6 +7,6 @@ selektiert werden. Darüberhinausgehende Zugriffsbeschränkungen müssten über 
 
 Siehe auch Kapitel Server Einstellungen. 
 
-![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"}
+![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"}
  
 

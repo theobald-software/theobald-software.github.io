@@ -13,7 +13,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=report-settings
 
 Über den *Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
-![Report-Settings](/img/content/Report-Settings.jpg){:class="img-responsive"}
+![Report-Settings](/img/content/Report-Settings.png){:class="img-responsive"}
 
 **Use Batch** <br>
 Definiert, ob der Report im Hintergrund ausgeführt werden soll. Das ist vor allem dann sinnvoll, wenn der Report eine ALV-Ausgabe hat.

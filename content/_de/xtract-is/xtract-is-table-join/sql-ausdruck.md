@@ -17,4 +17,4 @@ Klicken Sie auf den SQL-Knopf, um sich den SQL-Ausdruck anzuschauen.
 
 Mit einem Klick auf *Copy to Clipboard* wird das SQL-Statement in den Zwischenspeicher kopiert.
 
-![tj-sql-preview](/img/content/tj-sql-preview.jpg){:class="img-responsive"}
+![tj-sql-preview](/img/content/tj-sql-preview.png){:class="img-responsive"}

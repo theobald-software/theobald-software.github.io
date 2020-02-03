@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=settings5
 
 Click on the Destination button to define extraction-specific settings of the extraction.
 
-![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.jpg){:class="img-responsive"}
+![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 

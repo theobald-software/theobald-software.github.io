@@ -16,12 +16,12 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=set_odata_destination
 1. In the main window of the Designer, navigat to menu item **Server > Manage Destinations**.
 2. Define a default http-odata-atom-Destination (see [Managing destinations](../managing-destinations) and [OData](../odata) ).
 
-![XU-OData-Destination](/img/content/XU-OData-Destination.jpg){:class="img-responsive"}
+![XU-OData-Destination](/img/content/XU-OData-Destination.png){:class="img-responsive"}
 
 3. Select the extraction with the destination "HTTP - OData atom"" and click **[Run]**. 
 The window "Run Extraction" opens.
 4. Copy the OData URL from the URL field for further processing (e.g., with [Tableau](./tableau/tableau-with-odata/extraction-odata-tableau))
 
-![XU-OData-URL](/img/content/XU-OData-URL.jpg){:class="img-responsive"}
+![XU-OData-URL](/img/content/XU-OData-URL.png){:class="img-responsive"}
 
 

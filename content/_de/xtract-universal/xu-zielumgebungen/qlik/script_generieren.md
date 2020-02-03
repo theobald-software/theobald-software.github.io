@@ -15,7 +15,7 @@ Wenn für eine Extraktion eine Destination vom Typ "Qlik" ausgewählt ist, steht
 Über diese Schaltfläche kann ein Datenladeskript generiert und in die Zwischenablage kopiert werden. 
 
 
-![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script.jpg){:class="img-responsive"}
+![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script.png){:class="img-responsive"}
 
 Aus der Zwischenablage können Sie das Skript in den Skript-Editor von Qlik View oder Qlik Sense einfügen.
 

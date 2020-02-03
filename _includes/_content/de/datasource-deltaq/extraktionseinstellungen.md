@@ -1,6 +1,6 @@
 Über den *Extraction Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
-![XU_DeltaQ_Settings](/img/content/XU_DeltaQ_Settings.jpg){:class="img-responsive"}
+![XU_DeltaQ_Settings](/img/content/XU_DeltaQ_Settings.png){:class="img-responsive"}
 
 **Transfer Mode**<br>
 Die Rohdatenpakete können aus SAP über tRFC-Calls oder Daten-IDocs versendet werden. <br>
@@ -39,7 +39,7 @@ Erlaubt die Löschung der Init-Abfragen für die Export DataSources in BW.
 
 Falls Sie eine Hierachie-Datasource extrahieren, finden Sie im Reiter Hierarchy die entsprechenden Einstellungen.
 
-![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.jpg){:class="img-responsive"}
+![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
 
 **Language**<br>
 Legt die Sprache fest, falls eine Hierarchie extrahiert wird.

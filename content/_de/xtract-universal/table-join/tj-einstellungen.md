@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=tj-einstellungen
 
 In the following chapter we explain Extraction Settings.     
 
-![tj-xu-settings](/img/content/tj-xu-settings.jpg){:class="img-responsive"}
+![tj-xu-settings](/img/content/tj-xu-settings.png){:class="img-responsive"}
 
 **Row limit**
 Maximum numbers of rows to be extracted. 0 is unlimited.

@@ -16,7 +16,7 @@ Create a new Web service or call an already deployed Web service from the server
 
 Click on *OpenAPI...* under *Exports* in the menu bar. The definition is exported to the specified destination in JSON format and can be edited there manually with any JSON editor (e.g. Visual Studio). 
 
-![ecscore-nwc_1](/img/content/ecscore-wsd_21.jpg){:class="img-responsive"}
+![ecscore-nwc_1](/img/content/ecscore-wsd_21.png){:class="img-responsive"}
 
 The export to OpenAPI also works for newly created web services that have not yet been deployed to the ECS Core Server. However, the web service call only works after the deployment has been completed.
 

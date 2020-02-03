@@ -13,7 +13,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=deltaq-settings
 
 Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
 
-![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings.jpg){:class="img-responsive"}
+![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings.png){:class="img-responsive"}
 
 
 **Automatic String Conversion**<br>

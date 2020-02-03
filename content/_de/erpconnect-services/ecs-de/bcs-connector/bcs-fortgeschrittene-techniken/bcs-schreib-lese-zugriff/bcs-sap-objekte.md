@@ -17,7 +17,7 @@ Dieses Beispiel zeigt, wie sie durch den Einsatz von gut strukturierten, benutze
 
 Das SAP-Business-Objekt, das in diesem Beispiel verwendet wird, ist eine Produkt (oder Material) Entität, die in einer benutzerdefinierten Tabelle 'ZECSPRODUCTS' gespeichert ist.
 
-![BCS-CRUD-SAP-Tables-ZECSPRODUCTS](/img/content/BCS-CRUD-SAP-Tables-ZECSPRODUCTS.jpg){:class="img-responsive"}
+![BCS-CRUD-SAP-Tables-ZECSPRODUCTS](/img/content/BCS-CRUD-SAP-Tables-ZECSPRODUCTS.png){:class="img-responsive"}
 
 Die benutzerdefinierte SAP Tabelle hat die folgende Datenstruktur:
 

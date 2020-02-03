@@ -56,6 +56,6 @@ Die Zugriffsverwaltung wird dadurch nicht beeinflusst. Allerdings wird der Zugri
 
 Im Gegensatz zu zu Windows AD Benutzergruppen werden Custom Benutzergruppen im Designer angelegt.
 
-![XU3_new_UserGroup](/img/content/XU3_new_UserGroup.jpg){:class="img-responsive"}
+![XU3_new_UserGroup](/img/content/XU3_new_UserGroup.png){:class="img-responsive"}
 
 

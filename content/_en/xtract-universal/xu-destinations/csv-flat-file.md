@@ -17,7 +17,7 @@ The destination is a CSV (comma-seperated values) flat file.
 
 The following options can be defined for the CSV flat file destination.
 
-![CSV-Flat-Destination-Details](/img/content/CSV-Flat-Destination-Details.jpg){:class="img-responsive"}
+![CSV-Flat-Destination-Details](/img/content/CSV-Flat-Destination-Details.png){:class="img-responsive"}
 
 **File**
 
@@ -60,7 +60,7 @@ Defines the text encoding.
 
 Click on Destination to define extraction-specific settings.
 
-![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.jpg){:class="img-responsive"}
+![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
 
 **File Name**
 

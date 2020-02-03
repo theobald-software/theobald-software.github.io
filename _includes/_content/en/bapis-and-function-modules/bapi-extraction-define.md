@@ -2,7 +2,7 @@ The BAPI data source was developed to access BAPIs and RFC function modules. It 
 
 Using the Xtract Universal client to define a new extraction of type BAPI. The following screen pops up:
 
-![Define-Bapi-Data-Source](/img/content/Define-Bapi-Data-Source.jpg){:class="img-responsive"}
+![Define-Bapi-Data-Source](/img/content/Define-Bapi-Data-Source.png){:class="img-responsive"}
 
 Click the binocular button to open up the search dialog as shown below.
 
@@ -13,4 +13,4 @@ the list.
 
 The metadata of the BAPI are fetched from SAP. There are scalar and structured parameters, each of them is divided into imports and exports (see tab in the upper section) and tables (lower section).
 
-![XU-BAPI-Parameters](/img/content/XU-BAPI-Parameters.jpg){:class="img-responsive"}
+![XU-BAPI-Parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}

@@ -48,7 +48,7 @@ Der Merge-Vorgang wird mittels einer Staging-Tabelle durchgeführt und findet in
 Im ersten Schritt wird eine temporäre Tabelle angelegt, in welche die Daten im zweiten Schritt eingefügt werden.<br>
 Im dritten Schritt wird dann die temporäre Tabelle mit der Zieltabelle gemergt und anschließend die temporäre Tabelle gelöscht.
 
-![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.jpg){:class="img-responsive"}
+![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.png){:class="img-responsive"}
 
 Der Merge-Befehl aktualisiert vorhandene Datensätze bzw. fügt nicht vorhandene ein. Welche Felder aktualisiert werden, kann man dem SQL-Statement entnehmen.<br>
 Der SQL-Befehl kann bei Bedarf geändert werden, um z.B. bestimmte Spalten von der Aktualisierung auszuschließen.<br>
@@ -79,7 +79,7 @@ Dafür können Sie die angeboten SQL-Vorlagen der folgenden Phasen verwenden:
 
 Für den Custom SQL-Befehl können Sie nun auch Skript-Ausdrücke einsetzen. Weitere Infos finden Sie auf der Seite Skript-Ausdrücke (unter Fortgeschrittene Techniken).
 
-![Formula-ExistsTable](/img/content/Formula-ExistsTable.jpg){:class="img-responsive"}
+![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 
 Unter anderem können Sie den Befehl *ExistsTable(tableName)* verwenden, um die Existenz einer Tabelle zu überprüfen. Diese Funktion wurde eingeführt, da manche Datenbanksysteme dies nur unter Einschränkung unterstützen.
 

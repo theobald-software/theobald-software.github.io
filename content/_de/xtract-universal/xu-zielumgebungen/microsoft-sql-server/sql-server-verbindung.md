@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=sql-server-verbindung
 
 Folgende Einstellungen können für die Verbindung zum Microsoft SQL Server definiert werden.
 
-![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.jpg){:class="img-responsive"}
+![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.png){:class="img-responsive"}
 
 **Server Name**<br>
 Angabe der Host Adresse des SQL Server. Bitte folgende Syntax beachten:

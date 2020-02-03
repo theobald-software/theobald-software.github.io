@@ -21,15 +21,15 @@ Diese Vorlage bietet ein auf ERPConnect Services basiertes Beispiel, um SAP-basi
 
 **Übersicht der Bestellanforderungen**
 
-![ECS-BANf-SP](/img/content/ECS-BANF-SP.jpg){:class="img-responsive"}
+![ECS-BANf-SP](/img/content/ECS-BANF-SP.png){:class="img-responsive"}
 
 **Anlegen einer Bestellanforderung**
 
-![ECS-BANf-SP-Create](/img/content/ECS-BANf-SP-Create.jpg){:class="img-responsive"}
+![ECS-BANf-SP-Create](/img/content/ECS-BANf-SP-Create.png){:class="img-responsive"}
 
 **Freigeben einer Bestellanforderung**
 
-![ECS-BANf-SP-Release](/img/content/ECS-BANf-SP-Release.jpg){:class="img-responsive"}
+![ECS-BANf-SP-Release](/img/content/ECS-BANf-SP-Release.png){:class="img-responsive"}
 
 Diese Vorlage enthält alle nötigen Ressourcen und Dokumentationen, um die Lösung auf die eigene SharePoint-Umgebung zu veröffentlichen. Zusätzlich wird das vollständige Visual Studio 2010 Projekt zur Verfügung gestellt, um die Lösung an die eigenen Forderungen anzupassen bzw. sie als Vorlage für neue Lösungen zu verwenden.
 

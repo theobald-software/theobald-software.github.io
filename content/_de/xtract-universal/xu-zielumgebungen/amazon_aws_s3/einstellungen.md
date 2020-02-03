@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen5
 
 Einstellungen zu AWS S3, die pro Extraktion vorgenommen werden können.
 
-![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.jpg){:class="img-responsive"}
+![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 

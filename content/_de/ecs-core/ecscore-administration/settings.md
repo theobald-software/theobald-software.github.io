@@ -20,5 +20,5 @@ Im Settings Menü können Sie Einstellungen zu folgenden Punkten vornehmen:
 - [Azure Relay](./settings/azure_relay)
 - [System Operations](./settings/system_operations)
 
-![ecscore-managementsite19](/img/content/ecscore-managementsite_settings_overview.jpg){:class="img-responsive"}
+![ecscore-managementsite19](/img/content/ecscore-managementsite_settings_overview.png){:class="img-responsive"}
 

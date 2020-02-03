@@ -4,7 +4,7 @@ Die Server-Einstellungen verteilen sich auf zwei Reiter: *Configuration Server* 
 
 ### Configuration Server
 
-![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.jpg){:class="img-responsive"}
+![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.png){:class="img-responsive"}
 
 **Port**<br>
 Definiert die Portnummer, über die der Server mit dem Designer kommuniziert. Standardport ist 8064. Wird ein anderer Port verwendet, muss dieser in der Anmeldemaske dem Hostnamen mit :[Port] hinten angestellt werden.
@@ -24,7 +24,7 @@ siehe Kapitel [Zugriffsverwaltung](../sicherheit/zugriffsverwaltung)
 
 ### Web Server
 
-![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"}
+![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"}
 
 **Protocol/Access control**
 

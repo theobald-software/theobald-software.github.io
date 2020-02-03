@@ -38,34 +38,34 @@ The feature is activated under the site collection features of your web applicat
 
 Now we want to add the web part to a dedicated page.
 
-![ECS-SS-Manager-Webpart-01](/img/content/ECS-SS-Manager-Webpart-01.jpg){:class="img-responsive" }
+![ECS-SS-Manager-Webpart-01](/img/content/ECS-SS-Manager-Webpart-01.png){:class="img-responsive" }
 
 Select ERPConnect Services and then Secure Store Web Part. Click on Add.
 
-![ECS-SS-Manager-Webpart-02](/img/content/ECS-SS-Manager-Webpart-02.jpg){:class="img-responsive" }
+![ECS-SS-Manager-Webpart-02](/img/content/ECS-SS-Manager-Webpart-02.png){:class="img-responsive" }
 
 Click on Edit Web part to open the settings.
 
-![ECS-SS-Manager-Webpart-03](/img/content/ECS-SS-Manager-Webpart-03.jpg){:class="img-responsive" }
+![ECS-SS-Manager-Webpart-03](/img/content/ECS-SS-Manager-Webpart-03.png){:class="img-responsive" }
 
 Select the Secure Store Service from the drop down list, for which the SharePoint users should maintain their credentials.Click on OK.
 
 
-![ECS-SS-Manager-Webpart-04](/img/content/ECS-SS-Manager-Webpart-04.jpg){:class="img-responsive" }
+![ECS-SS-Manager-Webpart-04](/img/content/ECS-SS-Manager-Webpart-04.png){:class="img-responsive" }
 
 Then Click on Save and Close.
 
-![ECS-SS-Manager-Webpart-05](/img/content/ECS-SS-Manager-Webpart-05.jpg){:class="img-responsive" }
+![ECS-SS-Manager-Webpart-05](/img/content/ECS-SS-Manager-Webpart-05.png){:class="img-responsive" }
 
 Now the web part can be used. Fill in SAP user name and Password. 
 
 
-![ECS-SS-Manager-Webpart-06](/img/content/ECS-SS-Manager-Webpart-06.jpg){:class="img-responsive" }
+![ECS-SS-Manager-Webpart-06](/img/content/ECS-SS-Manager-Webpart-06.png){:class="img-responsive" }
 
 The SAP credentials will be saved in the Secure Store application and mapped to the logged SharePoint user.
 
 
-![ECS-SS-Manager-Webpart-07](/img/content/ECS-SS-Manager-Webpart-07.jpg){:class="img-responsive" }
+![ECS-SS-Manager-Webpart-07](/img/content/ECS-SS-Manager-Webpart-07.png){:class="img-responsive" }
 
 **Note about Access Rights to the Secure Store Service**
 

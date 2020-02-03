@@ -13,7 +13,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=bw-loader-settings
 
 Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
 
-![XIS_BWL_Settings](/img/content/XIS_BWL_Settings.jpg){:class="img-responsive"}
+![XIS_BWL_Settings](/img/content/XIS_BWL_Settings.png){:class="img-responsive"}
 
 
 **Package Size**<br>

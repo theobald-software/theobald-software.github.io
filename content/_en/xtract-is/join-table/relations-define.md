@@ -15,13 +15,13 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=tj-define-relations
 The field MATNR (material number) is a key field in both tables. Therefore a join relation has been automatically generated based on the SAP metadata.
 When the mouse cursor is over the join rectangle, a tooltip will show the field relations.
 
-![tj-2-tables-where](/img/content/tj-2-tables-where.jpg){:class="img-responsive" width="800px" }
+![tj-2-tables-where](/img/content/tj-2-tables-where.png){:class="img-responsive" width="800px" }
 
 Double-click the join rectangle to open the Table Join Dialog. 
 In this case the field MATNR of MARA is linked with the field MATNR in MAKT.
 
 
-![tj-relation](/img/content/tj-relation.jpg){:class="img-responsive" width="600px" }
+![tj-relation](/img/content/tj-relation.png){:class="img-responsive" width="600px" }
 
 To add further relation click Add and select the correspondent fields ob both tables. 
 

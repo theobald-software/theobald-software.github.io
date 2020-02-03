@@ -19,7 +19,7 @@ The *Management Site* can also be opened via IIS Manager.
 Important: Please change the password from the initial one (admin) as a safety precaution.
 How to change the password is described in section [Settings>Administrators](./settings/administrators).
 
-![Log-in](/img/content/Log-in.jpg){:class="img-responsive"}
+![Log-in](/img/content/Log-in.png){:class="img-responsive"}
 
 
 The Management Site includes the following tasks:

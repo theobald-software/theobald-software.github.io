@@ -9,7 +9,7 @@ Das folgende Bild zeigt eine Where-Klausel mit zwei veränderlichen Variablen @P
 Klicken Sie nun auf den Run-Knopf und bestätigen Sie eine eventuelle Anfrage, ob die Änderungen übernommen werden sollen.<br>
 Wenn Sie auf Basis dieser Where-Klausel den Run-Dialog öffnen, finden Sie die Variablen im zweiten Reiter wieder, um sie mit einem Wert zu bestücken. Xtract Universal erkennt anhand des @-Zeichens, dass es sich um eine Variable handelt.
 
-![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.jpg){:class="img-responsive"}
+![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
 
 Dies ergibt folgende URL, um die Werte zu setzen: 
 

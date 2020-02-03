@@ -29,26 +29,26 @@ In our Nintex Form we require three fields with descriptions:
 
 You can create description labels for all three controls.
 
-![nintex-forms-js-dropdown-01](/img/content/nintex-forms-js-dropdown-01.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-01](/img/content/nintex-forms-js-dropdown-01.png){:class="img-responsive"}
 
 Open the settings dialog for field *Material Number* and set the option *Store Client ID in JavaScript Variable to Yes*.
 
 Enter *field_input* as a name into field *Client ID JavaScript variable name*.
 
-![nintex-forms-js-dropdown-02](/img/content/nintex-forms-js-dropdown-02.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-02](/img/content/nintex-forms-js-dropdown-02.png){:class="img-responsive"}
 
 After that open the settings for the *Choice* field.<br> 
 Choose *Drop down list* as display format and enter some value in the Choices field (i.e. *Start Typing*). It doesn't matter which value you enter here because all entries are overwritten later by JavaScript code (In this example they are overwritten with the sentence *Start typing in the input above*). 
 Then set the option *Store Client ID in JavaScript Variable* to Yes and enter *field_select* as a name in field *Client ID JavaScript variable name*.
 
 
-![nintex-forms-js-dropdown-03](/img/content/nintex-forms-js-dropdown-03.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-03](/img/content/nintex-forms-js-dropdown-03.png){:class="img-responsive"}
 
 Afterwards call up the settings for Single Line Textbox *Material*. Set the option *Store Client ID in JavaScript Variable* to Yes and enter field_output as a name in field *Client ID JavaScript variable name*.   
 
 Since this should be only a display field you can also define under *Appearance*, that the field is only visible but not enabled.  
 
-![nintex-forms-js-dropdown-04](/img/content/nintex-forms-js-dropdown-04.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-04](/img/content/nintex-forms-js-dropdown-04.png){:class="img-responsive"}
 
 **Step 3: Add the JavaScript code**
 
@@ -56,11 +56,11 @@ Add a reference to the JavaScript library under *Settings - Form -> Advanced -> 
 
 http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js
 
-![nintex-forms-js-dropdown-05](/img/content/nintex-forms-js-dropdown-05.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-05](/img/content/nintex-forms-js-dropdown-05.png){:class="img-responsive"}
 
 Insert the JavaScript Code under *Settings - Form -> Advanced -> Custom JavaScript*.
 
-![nintex-forms-js-dropdown-06](/img/content/nintex-forms-js-dropdown-06.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-06](/img/content/nintex-forms-js-dropdown-06.png){:class="img-responsive"}
 
 In the JS code, function *tEcs.executeXql* is called to read the material number and the material long text from SAP table MAKT.
 
@@ -156,8 +156,8 @@ You can also realize this example with ECS Core (see [Developing with ECS Core](
 
 Run the form and enter a material number. The return values are read from SAP table MAKT and displayed in the dropdown list (Suggested Materials).  
 
-![nintex-forms-js-dropdown-07](/img/content/nintex-forms-js-dropdown-07.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-07](/img/content/nintex-forms-js-dropdown-07.png){:class="img-responsive"}
 
 When you select a material, the material long text should be displayed in the *Material* field. 
 
-![nintex-forms-js-dropdown-08](/img/content/nintex-forms-js-dropdown-08.jpg){:class="img-responsive"}
+![nintex-forms-js-dropdown-08](/img/content/nintex-forms-js-dropdown-08.png){:class="img-responsive"}

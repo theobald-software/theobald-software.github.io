@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=bcs-where-clause
 
 For the Finder operation (Read Table) of a table entity you can define a where clause.
 
-![BCS-Where](/img/content/BCS-Where.jpg){:class="img-responsive"}
+![BCS-Where](/img/content/BCS-Where.png){:class="img-responsive"}
 
 The WHERE clause must comply with the SAP OpenSQL syntax.
 

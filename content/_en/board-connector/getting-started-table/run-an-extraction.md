@@ -20,7 +20,7 @@ In the following window you can optionally specify details of the execution.
 
 The actual request of the data occurs via URL (see screenshot). To run an extraction it’s sufficient to specify its name. However, it is possible to override some extraction’s behavior with the help of parameters. If you want to change the maximum number of rows from 0 (unlimited) to 100, change the *Operation* from *Default*  to *Override* and set the desired parameter in the value column.
 
-![Table-Plants-Run](/img/content/Table-Plants-Run.jpg){:class="img-responsive"}
+![Table-Plants-Run](/img/content/Table-Plants-Run.png){:class="img-responsive"}
 
 The other parameters *format, bg* and *packagesize* are described in section Settings. To run the extraction, click *Run in Browser*. <br>
 Your default browser opens and displays the data in accordance with the criteria and format.

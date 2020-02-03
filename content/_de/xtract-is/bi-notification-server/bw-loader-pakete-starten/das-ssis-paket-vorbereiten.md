@@ -17,7 +17,7 @@ Um das SSIS-Paket für das externe Antriggern einzurichten, erstellen Sie bitte 
 
 In Ihrem Datenflusstask öffnen Sie den Settings Dialog der BW Loader Komponente. Markieren Sie die Option *Use external Notifier* und tragen Sie den Namen der Variable ein, in welcher sich die RequestID befindet.
 
-![XIS_BWL_Settings2](/img/content/XIS_BWL_Settings2.jpg){:class="img-responsive"}
+![XIS_BWL_Settings2](/img/content/XIS_BWL_Settings2.png){:class="img-responsive"}
 
 **Debug Details**<br>
 Diese Option erzeugt eine detailierter Ausgabe der einzelnen Schritte im SSIS-Protokoll.

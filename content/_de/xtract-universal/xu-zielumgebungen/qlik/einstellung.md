@@ -13,6 +13,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellung
 
 Wenn Sie auf die Schaltfläche "Destination" klicken, können Sie folgende Einstellungen für die Extraktion nach Qlik vornehmen.
 
-![XU_qlik_destination_settings](/img/content/XU_qlik_destination_settings.jpg){:class="img-responsive"}
+![XU_qlik_destination_settings](/img/content/XU_qlik_destination_settings.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}

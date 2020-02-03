@@ -15,13 +15,13 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=validierung
 
 Navigieren Sie zurück zur Liste für die Materialanträge und verifizieren Sie, dass der Workflow-Status Completed ist. 
 
-![Nintex-SP-List-Material-WF-Completed](/img/content/Nintex-SP-List-Material-WF-Completed.jpg){:class="img-responsive"}
+![Nintex-SP-List-Material-WF-Completed](/img/content/Nintex-SP-List-Material-WF-Completed.png){:class="img-responsive"}
 
 **Validierung in SAP**
 
 Mit der Transaktion MM03 (Material anzeigen) können Sie im SAP-System verfizieren, dass das Material erfolgreich angelegt wurde.
 
-![Nintex-SP-List-Material-in-SAP](/img/content/Nintex-SP-List-Material-in-SAP.jpg){:class="img-responsive"}
+![Nintex-SP-List-Material-in-SAP](/img/content/Nintex-SP-List-Material-in-SAP.png){:class="img-responsive"}
 
 
 

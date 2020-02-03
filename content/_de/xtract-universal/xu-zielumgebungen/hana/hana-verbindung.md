@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=hana-verbindung
 Folgende Einstellungen können für die Verbindung zur Zieldatenbank definiert werden.
 
 
-![hana-destination](/img/content/hana-destination.jpg){:class="img-responsive"}
+![hana-destination](/img/content/hana-destination.png){:class="img-responsive"}
 
 
 **Server Name**<br>

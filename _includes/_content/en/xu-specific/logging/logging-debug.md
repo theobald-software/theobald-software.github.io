@@ -6,7 +6,7 @@ If some errors occur, debug logging (tracing) information may be required to ana
 3. Compress the folder to a zip file (e.g. Trace.zip) and sent it to our support.
 4. After reproducing the error delete the entry in the field Trace Directory since tracing is not needed anymore. 
 
-![tracing-setting](/img/content/tracing-setting.jpg){:class="img-responsive"}
+![tracing-setting](/img/content/tracing-setting.png){:class="img-responsive"}
 
 Please note that the debug logging usually should be activated by request of the support team.<br>
 There are plenty of information that will be collected. This can decrease the capacity of your hard drives dramatically.<br>
