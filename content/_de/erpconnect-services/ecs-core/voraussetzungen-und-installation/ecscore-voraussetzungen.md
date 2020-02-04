@@ -11,33 +11,33 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-voraussetzungen
 ---
 
-**Windows-Betriebssystem** 
+### Windows-Betriebssystem 
 
 - Windows 8 oder höher
 - Windows Server 2012 R2oder höher
 - IIS-Webserver Version 8.5 oder höher
 - .Net Framework 4.5 oder höher
 
-**Benutzerrechte auf SharePoint** 
+### Benutzerrechte auf SharePoint 
 
 - Die Rechte eines Administrators sind nötig, um die Anwendung zu installieren.
 
-**Microsoft SharePoint Online**
+### Microsoft SharePoint Online
 
-**Microsoft Azure Service Bus**
+### Microsoft Azure Service Bus
 
 Falls Sie die Relay-Funktionalität von Microsoft Azure Service Bus nutzen möchten, brauchen Sie die Standard-Tier.
 
-**SAP System(e)**
+### SAP System(e)
 
 - SAP ERP: R/3 4.0B oder höher oder jede Version von SAP ECC
 - SAP BW: 3.0 oder höher
 
-**SAP Benutzer**
+### SAP Benutzer
 
 - Nötig ist ein SAP System- oder Dialog-Benutzer mit den entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-**Netzwerkeinstellungen**
+### Netzwerkeinstellungen
 
 - Port 33nn muss offen sein, wobei nn = der System Nummer des SAP Systems ist.
 

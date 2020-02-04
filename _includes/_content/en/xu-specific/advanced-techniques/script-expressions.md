@@ -44,7 +44,7 @@ The following expressions are defined and can be used:
 #{Extraction.Timestamp}#: Timestamp of the extraction 
 ```
 
-An example of the use of defined expressions in the Destination Custom-SQL settings can be found [here](../xu-destinations/microsoft-sql-server/sql-server-custom-sql).
+See an [example](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) of the use of defined expressions in the destination Custom-SQL settings.
  
 
 ### Supported data types
