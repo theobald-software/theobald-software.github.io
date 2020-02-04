@@ -11,7 +11,10 @@ weight: 12
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-infocube-und-bex-queries
 ---
+Der folgende Abschnitt beschreibt die Anwendung der BOARD Connector BW Cube Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
-**Achtung!!** Bitte beachten Sie, dass dieser Abschnitt nur die Anwendung der BOARD Connector BW Cube Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) . Das Wissen über die grundsätzliche Funktionsweise vo BOARD Connector wird in diesem Abschnitt vorausgesetzt!
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
+
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

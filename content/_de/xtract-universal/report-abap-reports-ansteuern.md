@@ -12,7 +12,10 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=report-abap-reports-ansteuern
 ---
 
-**Achtung!!** Bitte beachten Sie, das dieser Abschnitt nur die Anwendung der Xtract Universal Report Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-xtract-table) .
-Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Abschnitt vorausgesetzt!
+---
+Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal Report Komponente. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
