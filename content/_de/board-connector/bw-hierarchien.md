@@ -12,7 +12,6 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-hierarchien
 ---
 
-
 Der folgende Abschnitt beschreibt die Anwendung der BOARD Connector Hierarchy Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }

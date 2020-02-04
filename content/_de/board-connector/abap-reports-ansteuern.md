@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=abap-reports-ansteuern
 ---
 
-Dieser Abschnitt beschreibt die Anwendung der BOARD Connector Report Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Der folgende Abschnitt beschreibt die Anwendung der BOARD Connector Report Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
