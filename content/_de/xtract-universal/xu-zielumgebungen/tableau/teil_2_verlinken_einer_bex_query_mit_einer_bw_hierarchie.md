@@ -17,7 +17,7 @@ Bei SAP BW-Hierarchien werden die Ausprägungen eines Merkmals den verschiedenen
 
 Bei der Verlinkung einer BEx-Query mit einer BW-Hierarchie in Tableau, hängt die Anzeige des Not Assigned-Knotens davon ab, welche der Datenquellen (TDE-Datei mit BEx Query-Extrakt oder TDE-Datei mit BW Hierarchy-Extrakt) als primäre Datenquelle definiert wurde.
 
-Das ist folgendermaßen in der [Tableau Online-Hilfe](https://onlinehelp.tableau.com/current/pro/online/mac/de-de/multipleconnections_secondary.html) beschrieben:<br>
+Das ist folgendermaßen in der Tableau Online-Hilfe beschrieben:<br>
 "Die primäre Datenquelle ist die Verbindung, die Sie in der Ansicht zuerst verwenden. Nachdem Sie Felder in die Ansicht gezogen haben, wird die primäre Datenquelle mit einem blauen Häkchen gekennzeichnet."
 
 Der Not Assigned-Knoten ist nur dann sichtbar, wenn der BEx Query-Extrakt primäre Datenquelle ist. In Tableau wird der Knoten als "Null" bezeichnet.
