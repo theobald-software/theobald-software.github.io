@@ -154,7 +154,7 @@ In einer SharePoint-Farm werden die ERPConnect Services Runtime und die BCS Runt
 
 Installieren Sie ECS zunächst auf dem Server mit der Zentraladministration. Es ist egal, welche Server-Rolle dieser Server besitzt, auch Shared-Roles werden unterstützt. Schauen Sie nach der Installation zunächst unter Zentraladministration  -> System Settings -> Servers -> Manage services on server ob der ERPConnect Service dort vorhanden ist. Er sollte in der Liste auftauchen und zunächst als Not Compliant markiert sein. Mit Fix oder Stop stoppen Sie den Service auf den Servern, wo er nicht benötigt wird. 
 
-![ECS-Setup-SP-Farm_Services](/img/content/ECS-Setup-SP-Farm_Services.png){:class="img-responsive"}
+![ECS-Setup-SP-Farm_Services](/img/content/ECS-Setup-SP-Farm_Services.png.png){:class="img-responsive"}
 
 **Neustarten des SharePoint-Servers**<br>
 Jeder SharePoint-Server, auf dem die ERPConnect Services installiert wurden, muss neu gestartet werden.

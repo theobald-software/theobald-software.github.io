@@ -18,7 +18,7 @@ Note that only a local Windows user can be used to connect to the Services site 
 The *Services Site* can be opened via IIS Manager which is available in your Windows start menu.
 Default port is 8080  (http://localhost:8080). You can bookmark the web site in your internet browser then. 
 
-![ecscore-servicessite1](/img/content/ecscore-servicessite1.png){:class="img-responsive"}
+![ecscore-servicessite1](/img/content/ecscore-servicessite1.png.png){:class="img-responsive"}
 
 You can use the following services:
 
@@ -26,19 +26,19 @@ You can use the following services:
 
 IIS tends to do much Caching to spare CPU on compiling and fetching the page each time. That means, that if you update a setting on Management Site you have to Clear caches to insure effective settings are being propagated to clients.
 
-![ecscore-servicessite2](/img/content/ecscore-servicessite2.png){:class="img-responsive"}
+![ecscore-servicessite2](/img/content/ecscore-servicessite2.png.png){:class="img-responsive"}
 
-![ecscore-servicessite3](/img/content/ecscore-servicessite3.png){:class="img-responsive"}
+![ecscore-servicessite3](/img/content/ecscore-servicessite3.png.png){:class="img-responsive"}
 
 **Test services**
 
 Checks the reachability of a particular SAP-System as well as the validity of provided Credentials.
 
-![ecscore-servicessite5](/img/content/ecscore-servicessite5.png){:class="img-responsive"}
+![ecscore-servicessite5](/img/content/ecscore-servicessite5.png.png){:class="img-responsive"}
 
 **Setup Azure Service Bus**
 
 This section shows the current state of the Azure Service Bus registration (*connected or not connceted*). To connect manually from here is only necessary when the Azure Service Bus registration is set to false in the web.config file or it was disconnected somehow unintentionally.
 
 
-![ecscore-servicessite6](/img/content/ecscore-servicessite6.png){:class="img-responsive"}
+![ecscore-servicessite6](/img/content/ecscore-servicessite6.png.png){:class="img-responsive"}
