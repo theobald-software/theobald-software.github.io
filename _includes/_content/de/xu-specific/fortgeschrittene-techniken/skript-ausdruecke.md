@@ -17,7 +17,7 @@ Schauen wir uns nun folgende Beispiele an.
 
 **Verwendung** 
 
-Script-Ausdrücke können sowohl für die [Where-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql)(Xtract Universal Beispiel) verwendet werden. 
+Script-Ausdrücke können sowohl für die [Where-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
 
 **IF-Abfrage**<br>
 Eine IF-Abfrage hat die folgende Syntax: iif(bool condition, string trueResult, string falseResult)  
@@ -47,7 +47,7 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 #{Extraction.Timestamp}#: Zeitstempel der Extraktion
 ```
 
-Ein Beispiel für die Verwendung von definierten Ausdrücken mitteld Custom-SQL in den Destination Einstellungen, finden Sie [hier](../xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) . 
+Sehen Sie auch das [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) für die Verwendung von definierten Ausdrücken mittels Custom-SQL in den Destinationseinstellungen.
 
 
 **Unterstützte Datentypen**<br>
