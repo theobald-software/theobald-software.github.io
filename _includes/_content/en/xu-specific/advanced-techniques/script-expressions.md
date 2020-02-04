@@ -1,7 +1,7 @@
 A scripted expression has a C#.NET similar syntax and must start with #{ and end with #} .
 Basic .NET data types and operations in the System namespace of the .NET Environment including string operations are supported. 
 
-Let's look at the following examples. 
+Examples:
 
 | Description                           | Input                                                                         | Output              |
 |---------------------------------------|-------------------------------------------------------------------------------|---------------------|
@@ -13,27 +13,27 @@ Let's look at the following examples.
 | Current year concatenated with "0101" |``` #{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | 20130101            |
 | Current year concatenated with "0101" |``` #{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | 20130101            |
 
-**Using Scripted Expressions**
+### Using Scripted Expressions
 
 Scripted expressions can be used both for the [where-condition](../table/where-clause) of a table and in the destination settings using [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql)(Xtract Universal exapmle).
 
-**IF statement** 
+### IF-statement 
 
-An if statement is supported and has the following syntax iif(bool condition, string trueResult, string falseResult)  
+An IF-statement is supported and has the following syntax: iif(bool condition, string trueResult, string falseResult)  
 
-Let's look at the following example. 
+Example: 
 
 | Description                                                        | Input                                             | Output |
 |--------------------------------------------------------------------|---------------------------------------------------|--------|
 | When we are in the 7th month, the output is "July", else "Unknown" | #{ iif(DateTime.Now.Month==7, "July","Unknown")}# | July   |
 
-**Defined Expressions** 
+## Defined Expressions
 
-**Defined functions**
+### Defined functions
 
 bool ExistsTable(string tableName): check if the the table exists on the database destination. 
 
-**Defined properties** 
+### Defined properties
 
 The following expressions are defined and can be used: 
 ```
@@ -47,7 +47,7 @@ The following expressions are defined and can be used:
 An example of the use of defined expressions in the Destination Custom-SQL settings can be found [here](../xu-destinations/microsoft-sql-server/sql-server-custom-sql).
  
 
-**Supported data types**
+### Supported data types
 
 Following .NET datatypes are supported:<br>
 Object, object<br>
@@ -73,7 +73,7 @@ Guid<br>
 Math and<br>
 Convert<br>
 
-**Supported key words** 
+### Supported key words
 
 Following key words are supported: 
 true, false and null.

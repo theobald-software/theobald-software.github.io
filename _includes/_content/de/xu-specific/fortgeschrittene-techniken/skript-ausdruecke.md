@@ -2,7 +2,7 @@
 Eine Formel wird in C#.NET-ähnlicher Syntax geschrieben und muss mit #{ anfangen und #} enden.<br>
 Grundlegende .NET Typen und die entsprechenden Operationen aus dem System-Namensraum der .NET-Umgebung sowie Verkettungen werden standardmäßig unterstützt. 
 
-Schauen wir uns nun folgende Beispiele an.
+Beispiele:
 
 | Beschreibung                           | Eingabe                                                                         | Ausgabe              |
 |---------------------------------------|-------------------------------------------------------------------------------|---------------------|
@@ -15,27 +15,28 @@ Schauen wir uns nun folgende Beispiele an.
 | Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | 20130101            |
 
 
-**Verwendung** 
+### Verwendung
 
 Script-Ausdrücke können sowohl für die [Where-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
 
-**IF-Abfrage**<br>
+### IF-Abfrage
+
 Eine IF-Abfrage hat die folgende Syntax: iif(bool condition, string trueResult, string falseResult)  
 
-Schauen wir uns das folgende Beispiel an.
+Beispiel:
 
 | Beschreibung                                                        | Eingabe                                             | Ausgabe |
 |--------------------------------------------------------------------|---------------------------------------------------|--------|
 | Wenn wir im 7. Monat sind, dann "July" ausgeben, sonst "Unknown"  | #{ iif(DateTime.Now.Month==7, "July","Unknown")}# | July   |
 
-**Definierte Ausdrücke**
+## Definierte Ausdrücke
 
-**Definierte Methoden**
+### Definierte Methoden
 
 bool ExistsTable(string tableName): überprüft, ob die Tabelle auf der Zieldatenbank existiert.
 
 
-**Definierte Eigeschaften** 
+### Definierte Eigeschaften
 
 Folgende Ausdrücke sind definiert und können verwendet werden: 
 
@@ -50,7 +51,8 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 Sehen Sie auch das [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) für die Verwendung von definierten Ausdrücken mittels Custom-SQL in den Destinationseinstellungen.
 
 
-**Unterstützte Datentypen**<br>
+### Unterstützte Datentypen
+
 Folgende .NET-Datentypen werden unterstützt:<br>
 Object, object<br>
 Boolean, bool<br>
@@ -75,7 +77,7 @@ Guid<br>
 Math und<br> 
 Convert<br>
 
-**Unterstützte Schlüsselwörter**
+### Unterstützte Schlüsselwörter 
 
 Folgende Schlüsselwörter werden unterstützt: <br>
 true, false und null.
