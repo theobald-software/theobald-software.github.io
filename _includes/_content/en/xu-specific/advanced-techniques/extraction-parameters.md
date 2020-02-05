@@ -43,8 +43,3 @@ logonTicket | To dynamically change the ticket issuer of the [SAP logon ticket](
 To set the pre-defined parameter, check the box and enter the desired value.
  
 ![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
-
-- **rows:** To set the maximum number of rows to be extracted. 
-- **where:** To set the where clause. 
-- **packageSize:** To set the package size. 
-
