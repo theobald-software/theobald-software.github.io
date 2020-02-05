@@ -1,4 +1,3 @@
-
 Extraction parameters can be change in the window "Run extractions".
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
@@ -6,12 +5,10 @@ To open "Run extractions" window, select an extraction in the main window of the
 
 ### Subsection "Parameters" Tab "Extraction"
 
-<<<<<<< HEAD
 The amount of the parameters depends on the extraction type and destination.
 e.g., **decimalSeparator** is a parameter specific to CSV destination.
-=======
+
 ![XU_extraction_parameters](/img/content/XU_extraction_parameters.png){:class="img-responsive"}
->>>>>>> 3467116213375dbc2d84ab590cbc13404f6f3f4b
 
 Parameter name | Parameter description | Default value
 ------------ | ------------- | -------------
@@ -43,17 +40,11 @@ logonTicket | To dynamically change the ticket issuer of the [SAP logon ticket](
 {: .box-note }
 **Note:** The tab "Custom" is only active, when a variable with @-symbol is defined in the [WHERE clause](./tables/where-clause).
 
-<<<<<<< HEAD
 To set the pre-defined parameter, check the box and enter the desired value.
  
 ![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
-=======
-*rows*<br>
-To set the maximum number of rows to be extracted. 
 
-*where*<br>
-To set the where clause. 
+- **rows:** To set the maximum number of rows to be extracted. 
+- **where:** To set the where clause. 
+- **packageSize:** To set the package size. 
 
-*packageSize*<br>
-To set the package size. 
->>>>>>> f6bfbc102b1f7dcb2ffe55a72fee2f423c6ca7ea
