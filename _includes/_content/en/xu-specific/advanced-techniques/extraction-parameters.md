@@ -34,4 +34,4 @@ To set the maximum number of rows to be extracted.
 To set the where clause. 
 
 *packageSize*<br>
-To set the package size.
+To set the package size. 
