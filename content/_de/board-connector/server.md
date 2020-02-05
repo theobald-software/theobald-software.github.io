@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: server
 permalink: /:collection/:path
-weight: 3
+weight: 5
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=server
 ---

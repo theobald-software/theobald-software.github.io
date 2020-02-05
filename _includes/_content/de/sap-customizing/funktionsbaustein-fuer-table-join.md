@@ -1,5 +1,5 @@
 <div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Table Join Komponente wurde als *deprecated* gekennzeichnet. Bitte verwenden Sie die Table-Komponente, um SAP-Tabellen zu joinen.
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die Table Join Komponente wurde als *deprecated* gekennzeichnet. Verwenden Sie die Table-Komponente, um SAP-Tabellen zu joinen.
 </div>
 
 Die Table Join-Komponente dient dazu, mehrere Tabellen (und Views) auf SAP-Seite zusammenzufassen (Join).  

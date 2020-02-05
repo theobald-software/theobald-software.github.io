@@ -42,4 +42,4 @@ To run the extraction in a browser, click **[Run in Browser]**. Your default bro
 
 ### Scheduling an extraction
 
-Scheduling extractions at a later time is possible with the Windows task scheduler. To use the task scheduler functionality, run Xtract Universal from a [command line](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/run-from-a-command-line).
+Scheduling extractions at a later time is possible with the Windows task scheduler. To use the task scheduler functionality, run Xtract Universal from a [command line](../advanced-techniques/scheduling_extraction).

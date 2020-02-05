@@ -162,7 +162,7 @@ In a SharePoint farm the ERPConnect Services Runtime and the BCS Connector Runti
 
 Please install ERPConnect Services on the SharePoint server with the Central Administration. It doesn't matter which server role this server has, also shared roles are supported.  After the installation process please take a look in Central Administration -> Application Management  -> Manage services on server if the ERPConnect Service is listed there. It should be available there and marked as Not Compliant. With Fix or Stop you deactivate the service.  
 
-![ECS-Setup-SP-Farm_Services.png](/img/content/ECS-Setup-SP-Farm_Services.png.png){:class="img-responsive" }
+![ECS-Setup-SP-Farm_Services.png](/img/content/ECS-Setup-SP-Farm_Services.png){:class="img-responsive" }
 
 **Restarting the SharePoint Server**<br>
 Each SharePoint server, on each ERPConnect services has been installed, must be restarted.

@@ -1,1 +1,4 @@
-**Achtung!!** Bitte beachten Sie, dass dieser Abschnitt nur die Anwendung der Xtract Universal BAPI Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xtract-table). Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Abschnitt vorausgesetzt!
+Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal BAPI Komponente. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./content/_de/xtract-universal/erste-schritte-mit-table) beschrieben.

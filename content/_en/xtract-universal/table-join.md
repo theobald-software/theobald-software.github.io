@@ -14,7 +14,7 @@ lang: en_GB
 {: .box-warning }
 **Warning! Obsolete component** 
 As of [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html), the Table Join component is obsolete.<br>
-Use the table join functionality of the newer [Table Component](./table/table-join).
+Use the table join functionality of the newer [Table Component](./table/table-joins).
 
 The Table Join component allows to join many tables (and views) on the SAP side and to extract the result.  
 Possible scenarions are joining data from header and position tables or from attribute and text tables.  
@@ -29,7 +29,9 @@ It is required to install a [custom function module](./sap-customizing/custom-fu
 
 The following section describes the functions of the Table Join Component of older Xtract Universal versions. <br>
 Basic Xtract Universal the knowledge is required to understand the following sections. <br>
-To get information on the basics of Xtract Universal, refer to [Getting started with table](./getting-started-table). <br>
+
+{: .box-tip }
+**Tip:** To get information on the basics of Xtract Universal, refer to [Getting started with table](./getting-started-table). <br>
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

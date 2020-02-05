@@ -11,7 +11,9 @@ weight: 17
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-open-hub-services
 ---
+Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal OHS Komponente. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
-**Achtung!!** Bitte beachten Sie, das dieser Abschnitt nur die Anwendung der Xtract Universal OHS Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xtract-table). Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Abschnitt vorausgesetzt!
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

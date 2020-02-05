@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: sicherheit
 permalink: /:collection/:path
-weight: 6
+weight: 9
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sicherheit
 ---

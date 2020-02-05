@@ -11,7 +11,10 @@ weight: 14
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=bw-hierarchies
 ---
+The following section describes the functions of the Hierarchy Component of BOARD Connector. <br>
+Basic BOARD Connector the knowledge is required to understand the following sections. <br>
 
-**Caution!** Please note that this chapter only describes the use of the BOARD Connector Hierarchy Component. For all other Basics please refer to [Step I: Define a Table Extraction](./getting-started-table/step1-define-table-extraction). For this chapter the knowledge about the basic usage of the BOARD Connector is assumed! 
+{: .box-tip }
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with table](./getting-started-table). <br>
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

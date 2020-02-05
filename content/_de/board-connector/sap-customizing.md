@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: sap-customizing
 permalink: /:collection/:path
-weight: 17
+weight: 99
 lang: de_DE
 ---
 

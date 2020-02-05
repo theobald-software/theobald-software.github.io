@@ -7,11 +7,19 @@ product: board-connector
 parent: board-connector
 childidentifier: datasource-deltaq
 permalink: /:collection/:path
-weight: 16
+weight: 17
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=datasource-deltaq
 ---
+{: .box-warning } 
+**Warning! Newer component available**<br>
+DeltaQ is an old component. If possible, use the newer component **[ODP](https://help.theobald-software.com/en/xtract-universal/Operational%20Data%20Provisioning%20(ODP))**.
 
-**Caution!** Please note that this chapter only describes the use of the BOARD Connector DeltaQ Component. For all other Basics please refer to [Step I: Define a Table Extraction](./getting-started-table/step1-define-table-extraction). For this chapter the knowledge about the basic usage of the BOARD Connector is assumed! 
+This section describes the use of the BOARD Connector DeltaQ Component. The knowledge about the basic usage of BOARD Connector is assumed to follow the instructions.
+
+{: .box-tip }
+**Tip:** Basics of the product BOARD Connector are described in the section **[Getting started with table](./getting-started-table)**.
+
+
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
