@@ -10,7 +10,7 @@ This mode requests all data that meets the selection criteria you set.
 After that you can use the Delta Update.
 
 
-**Step 1 (alternatively): Delta Initi (without data)**
+**Step 1 (alternatively): delta init (without data)**
 
 It is similar to Delta Initialisation, but no data will be requested. 
 After that you can use the Delta Update.
