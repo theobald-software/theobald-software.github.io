@@ -2,7 +2,7 @@ Die BAPI Datenquelle wurde entwickelt, um BAPIs und RFC-Funktionsbausteine im SA
 
 Erstellen Sie mit Hilfe des Clients eine neue Extraktion vom Typ BAPI. Der folgende Dialog öffnet sich.
 
-![Define-Bapi-Data-Source](/img/content/Define-Bapi-Data-Source.jpg){:class="img-responsive"}
+![Define-Bapi-Data-Source](/img/content/Define-Bapi-Data-Source.png){:class="img-responsive"}
 
 Um ein BAPI oder einen RFC-Funktionsbaustein zu suchen, klicken Sie bitte auf den Button mit dem Fernglas. Bei der Suche nach Namen können auch Wildcards (z.B. * ) genutzt werden. 
 
@@ -10,5 +10,5 @@ Um ein BAPI oder einen RFC-Funktionsbaustein zu suchen, klicken Sie bitte auf de
 
 Die Metadaten des Bausteins werden vom SAP geholt. Es gibt skalare und strukturierte Parameter, die sich jeweils in Imports und Exports aufteilen (siehe Tab-Reiter im oberen Bereich), sowie Tabellen (unterer Bereich). 
 
-![XU-BAPI-Parameters](/img/content/XU-BAPI-Parameters.jpg){:class="img-responsive"}
+![XU-BAPI-Parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
 

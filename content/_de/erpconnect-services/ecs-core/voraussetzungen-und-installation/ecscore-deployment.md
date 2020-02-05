@@ -78,7 +78,7 @@ Wichtig: Verwahren Sie das Verschlüsselungskennwort an einem sicheren Platz.
 
 Klicken Sie auf *Finish*, um die Konfiguration abzuschließen.
 
-![2014-12-15-11_32_00-Deployment-Manager](/img/content/2014-12-15-11_32_00-Deployment-Manager.jpg){:class="img-responsive"}
+![2014-12-15-11_32_00-Deployment-Manager](/img/content/2014-12-15-11_32_00-Deployment-Manager.png){:class="img-responsive"}
 
 Die Einrichtung der Verwaltungs- bzw. Status-Webseiten ist damit abgeschlossen. Diese sind anschließend im IIS Manager aufgeführt.
 Erfahren Sie mehr unter Management Site und Services Site. 

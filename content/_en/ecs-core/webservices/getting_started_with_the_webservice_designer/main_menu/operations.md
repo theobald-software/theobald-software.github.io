@@ -14,7 +14,7 @@ New web service operations are created under *Operations*. Access to the SAP sys
 
 The following options are available:
 
-![WSD-Operations](/img/content/ecscore-wsd_17.jpg){:class="img-responsive"}
+![WSD-Operations](/img/content/ecscore-wsd_17.png){:class="img-responsive"}
  
 **Create a new operation** <br>
 Creation of a new web service operation. The name is freely selectable and must not contain any spaces. Sample templates for various web services can be loaded from the attached web service catalog. 

@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=exasol-verbindung
 
 Folgende Einstellungen müssen für die Verbindung zur Zieldatenbank definiert werden.
 
-![Exa-Connection](/img/content/Exa-Connection.jpg){:class="img-responsive"}
+![Exa-Connection](/img/content/Exa-Connection.png){:class="img-responsive"}
  
 **Host Name / Port**<br>
 Name bzw. IP des Datenbankservers und die Portnummer.

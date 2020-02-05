@@ -64,7 +64,7 @@ Having done this define a parameter named *PersonalData* which contains the data
 
 ![WSD-MappingStructureMappingInput8](/img/content/WSD-MappingStructureMappingInput8.png){:class="img-responsive"}
 
-Open the *Execute Function Activity Dialog* and scroll down to the input parameters. We first want to map the the element EMPLOYEE_ID of structure parameter PersonalData to the scalar input parameter EMPLOYEE_ID of the function module.
+Open the *Execute Function Activity Dialog* and scroll down to the input parameters. We first want to map the element EMPLOYEE_ID of structure parameter PersonalData to the scalar input parameter EMPLOYEE_ID of the function module.
 Mark the line with element EMPLOYEE_ID and open the *Mapping Expression Dialog* by clicking the button with the three points on the right side. 
 
 ![WSD-MappingStructureMappingInput9](/img/content/WSD-MappingStructureMappingInput9.png){:class="img-responsive"}

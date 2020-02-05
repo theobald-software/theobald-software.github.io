@@ -16,11 +16,11 @@ Es ist wichtig, dass ein entsprechender Index anlegt ist, um den Merge-Befehl sc
 
 Schauen wir uns den Datensatz für das Werk 1000 an, das Feld NAME2 hat den Wert NULL.
 
-![Exa-Select-Before-Merge](/img/content/Exa-Select-Before-Merge.jpg){:class="img-responsive"}
+![Exa-Select-Before-Merge](/img/content/Exa-Select-Before-Merge.png){:class="img-responsive"}
 
 Überschreiben wir nun das Feld NAME2 mit dem Wert 'Hamburg'.
 
-![Exa-Update-Merge-Example-Data](/img/content/Exa-Update-Merge-Example-Data.jpg){:class="img-responsive"}
+![Exa-Update-Merge-Example-Data](/img/content/Exa-Update-Merge-Example-Data.png){:class="img-responsive"}
 
 Nun ändern wir die extraktionsspezifischen Einstellungen und setzen 
 
@@ -28,7 +28,7 @@ Nun ändern wir die extraktionsspezifischen Einstellungen und setzen
 - Row Processing auf *Fill merge staging table*, um Daten in die Staging-Tabelle einzufügen und 
 - Finalization auf *Finalize Merge*, um die Staging-Tabelle mit der Zieltabelle zu mergen und anschließen die Staging-Tabelle zu löschen.
 
-![Exa-Extraction-Specific-Settings-Merge-Makt](/img/content/Exa-Extraction-Specific-Settings-Merge-Makt.jpg){:class="img-responsive"}
+![Exa-Extraction-Specific-Settings-Merge-Makt](/img/content/Exa-Extraction-Specific-Settings-Merge-Makt.png){:class="img-responsive"}
 
 Der Merge-Befehl sorgt dafür, dass neue Datensätze eingefügt bzw. bestehende aktualisiert werden. <br>
 Bei bestehenden Datensätzen wird ein Update ausgeführt, sonst ein Insert.
@@ -39,4 +39,4 @@ Felder, welche nicht im SQL-Statement auftauchen, sind von Änderungen nicht bet
 
 Bei der Ausführung wurde das Feld *NAME2* mit dem Wert aus SAP aktualisiert.
 
-![Exa-Merge-Result-Table-Data](/img/content/Exa-Merge-Result-Table-Data.jpg){:class="img-responsive"}
+![Exa-Merge-Result-Table-Data](/img/content/Exa-Merge-Result-Table-Data.png){:class="img-responsive"}

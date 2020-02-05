@@ -13,15 +13,15 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=bwcubefilter
 
 Each characteristic (dimension) of a BEx query or an InfoCube offers the possibility to set a filter to execute the MDX statement in BW using the selected filter values.
 
-![BWCube-Filter-01](/img/content/BWCube-Filter-01.jpg){:class="img-responsive" }
+![BWCube-Filter-01](/img/content/BWCube-Filter-01.png){:class="img-responsive" }
 
 Click on Filter. The dialog shows the available values. 
 
-![BWCube-Filter-02](/img/content/BWCube-Filter-02.jpg){:class="img-responsive" }
+![BWCube-Filter-02](/img/content/BWCube-Filter-02.png){:class="img-responsive" }
 
 Select the desired characteristic values to filter the result.  
 
-![BWCube-Filter-03](/img/content/BWCube-Filter-03.jpg){:class="img-responsive" }
+![BWCube-Filter-03](/img/content/BWCube-Filter-03.png){:class="img-responsive" }
 
 It's possible to set filter for different characteristics.  
 
@@ -33,8 +33,8 @@ Several values are supported too, just use comma as seperator, e.g. *CompanyCode
 
 The option **Exclude Values from Resultset** allows to exclude the filter values from the result set. 
 
-![BWCube-Filter-03-a](/img/content/BWCube-Filter-03-a.jpg){:class="img-responsive" } 
+![BWCube-Filter-03-a](/img/content/BWCube-Filter-03-a.png){:class="img-responsive" } 
 
 Dimensions with a hierarchy are supported too. 
 
-![BWCube_Hierarchy](/img/content/BWCube_Hierarchy.jpg){:class="img-responsive" } 
+![BWCube_Hierarchy](/img/content/BWCube_Hierarchy.png){:class="img-responsive" } 

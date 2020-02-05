@@ -4,7 +4,7 @@ There are two tabs to change the server settings: *Configuration Server* and *We
 
 ### Configuration Server
 
-![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.jpg){:class="img-responsive"}
+![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.png){:class="img-responsive"}
 
 **Port** <br>
 Defines the port number, where the server communicates with the designer. The default is 8064. If you set a different port, you will need to add this portnumber to the host name on the logon screen. [host name]:[port]
@@ -25,7 +25,7 @@ see chapter [Access Management](../security/access-management)
 
 ### Web Server
 
-![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.jpg){:class="img-responsive"} 
+![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"} 
 
 **Protocol / Access control** <br>
 **HTTP Unrestricted / HTTP port** <br>

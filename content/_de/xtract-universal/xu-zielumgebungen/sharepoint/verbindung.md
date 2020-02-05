@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung1
 
 Folgende Einstellungen können für die Verbindung zu SharePoint definiert werden:
 
-![XU_Sharepoint_Dest](/img/content/XU_Sharepoint_Dest.jpg){:class="img-responsive"}
+![XU_Sharepoint_Dest](/img/content/XU_Sharepoint_Dest.png){:class="img-responsive"}
 
 
 **SharePoint On-Premise oder SharePoint Online**<br>

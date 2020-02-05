@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-where-klausel
 
 In der Finder-Operation (Read Table) einer Tabellen-Entität haben Sie die Möglichkeit eine statische Where-Klausel einzugeben.
 
-![BCS-Where](/img/content/BCS-Where.jpg){:class="img-responsive"}
+![BCS-Where](/img/content/BCS-Where.png){:class="img-responsive"}
 
 
 Die WHERE-Bedingung muss dem SAP OpenSQL Syntax entsprechen.

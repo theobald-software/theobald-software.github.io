@@ -18,11 +18,11 @@ Without an index merging data may take very long depend on the amount of data.
 
 Let's look at the data row for the plant 1000, the field NAME2 has the value NULL.
 
-![DB2-Select-Before-Merge](/img/content/DB2-Select-Before-Merge.jpg){:class="img-responsive"}
+![DB2-Select-Before-Merge](/img/content/DB2-Select-Before-Merge.png){:class="img-responsive"}
 
 Let's update the field NAME2 with the value 'Hamburg'.
 
-![DB2-Update-Merge-Example-Data](/img/content/DB2-Update-Merge-Example-Data.jpg){:class="img-responsive"}
+![DB2-Update-Merge-Example-Data](/img/content/DB2-Update-Merge-Example-Data.png){:class="img-responsive"}
 
 Now let's change the Extraction-Specific Settings and set 
 - Preparation to *Create if Not Exists* and 
@@ -30,11 +30,11 @@ Now let's change the Extraction-Specific Settings and set
 to merge the data. 
 Alternatively you can set Preparation to None since the destination table exists. 
 
-![DB2-Extraction-Specific-Settings-Merge](/img/content/DB2-Extraction-Specific-Settings-Merge.jpg){:class="img-responsive"}
+![DB2-Extraction-Specific-Settings-Merge](/img/content/DB2-Extraction-Specific-Settings-Merge.png){:class="img-responsive"}
 
 The merge statement insert a new data row and updates an existent one. 
 
-![DB2-Edit-SQL-Merge-Statement](/img/content/DB2-Edit-SQL-Merge-Statement.jpg){:class="img-responsive"}
+![DB2-Edit-SQL-Merge-Statement](/img/content/DB2-Edit-SQL-Merge-Statement.png){:class="img-responsive"}
 
 The SQL statement contains the fields that will be updated.<br> 
 The SQL statement can be modified, e.g. if you would not like to update all fields bot only some.<br>
@@ -42,5 +42,5 @@ Fields that are not containet in the merge statement will not be modified.<br>
 
 In this case the field *NAME2* will be updated with the value from the SAP system.
 
-![DB2-Select-After-Merge](/img/content/DB2-Select-After-Merge.jpg){:class="img-responsive"}
+![DB2-Select-After-Merge](/img/content/DB2-Select-After-Merge.png){:class="img-responsive"}
 

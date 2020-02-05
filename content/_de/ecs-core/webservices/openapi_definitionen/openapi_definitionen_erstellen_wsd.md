@@ -17,7 +17,7 @@ Erstellen Sie einen neuen Webservice oder rufen Sie einen bereits deployten Webs
 
 Klicken Sie auf *OpenAPI...* unter *Exports* in der Menüleiste. Die Definition wird zur angegeben Destination im JSON-Format exportiert und kann dort manuell mit einem belliebigen JSON-Editor (z.B. Visual Studio) bearbeitet werden. 
 
-![ecscore-nwc_1](/img/content/ecscore-wsd_21.jpg){:class="img-responsive"}
+![ecscore-nwc_1](/img/content/ecscore-wsd_21.png){:class="img-responsive"}
 
 Der Export nach OpenAPI funktioniert auch bei neu angelegten Webservices, die noch nicht zum ECS Core Server deployed wurden. Der Webservice-Aufruf funktioniert jedoch nur nach erfolgtem Deployment.
 

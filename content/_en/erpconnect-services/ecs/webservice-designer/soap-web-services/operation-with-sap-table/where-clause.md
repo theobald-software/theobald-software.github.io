@@ -44,6 +44,6 @@ You will find more information about the OpenSQL syntax on the SAP help site: [h
 
 **Values must have the internal SAP representation:**
 
-- The date 01.01.1999 has the the internal representation 19990101 (YYYYMMDD),
+- The date 01.01.1999 has the internal representation 19990101 (YYYYMMDD),
 - The year period 001.1999 has the internal representation 1999001 (YYYYPPP),
 - Numbers must have the leading zeros, e.g. customer number 1000 has the internal representation 0000001000.

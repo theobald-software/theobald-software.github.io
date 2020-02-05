@@ -30,7 +30,7 @@ Das Tool legt während der Konvertierung ein Backup Ihrer Pakete an. Es ist jedo
 
 Wir starten das Tool und fügen mit *Add file(s)* neue SSIS Pakete hinzu, die Sie in einem Dateidialog auswählen können.
 
-![XIS_ConversionPreparer_2016](/img/content/XIS_ConversionPreparer_2016.jpg){:class="img-responsive"}
+![XIS_ConversionPreparer_2016](/img/content/XIS_ConversionPreparer_2016.png){:class="img-responsive"}
 
 Sofern ein Paket im Debug-Ordner existiert, wird dieses automatisch mit einbezogen.
 Anschließend wählen Sie aus der Drop-Down Liste die SSIS-Version aus, für die die Pakete konvertiert werden sollen.
@@ -50,7 +50,7 @@ Nachfolgend die detaillierte [Schritt für Schritt Anweisung](https://kb.theobal
 ### 2. Migration von SSIS 2014/2016 nach SSIS 2017
 Bei VS/SSDT 2015 sowie 2017 können Sie die Zielversion des SQL Servers (Deployment Target Version) in den Projekteigenschaften auswählen.
 
-![VS-Deployment-Target](/img/content/VS-Deployment-Target.jpg){:class="img-responsive"}
+![VS-Deployment-Target](/img/content/VS-Deployment-Target.png){:class="img-responsive"}
 
 Weitere Informationen zu den unterstützten SSIS- und Visual Studio-Versionen bzw. den Upgrade auf höhere SSIS-Versionen finden Sie hier:<br> 
 [List of the SSIS/VS Versions Supported by Xtract IS(englisch)](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is)

@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=connection5
 
 The following settings can be made when setting up an AWS S3 connection. 
 
-![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.jpg){:class="img-responsive"}
+![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.png){:class="img-responsive"}
 
 **Inherit Credentials from IAM role**<br>
 The credentials and permissions of the IAM role, that has been assigned to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html) which Xtract Universal is running on, will be used for authentication. 
@@ -50,4 +50,4 @@ Encryption using a custom encrpytion key created on AWS ([AWS Key Management Ser
 **CSV Settings:**<br>
 The settings in the tab CSV Settings correspond to the ones in the general [http-csv settings](../csv-via-http).
 	
-![XU_S3_DestinationDetails2](/img/content/XU_S3_DestinationDetails2.jpg){:class="img-responsive"}
+![XU_S3_DestinationDetails2](/img/content/XU_S3_DestinationDetails2.png){:class="img-responsive"}

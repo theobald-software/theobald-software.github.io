@@ -1,14 +1,14 @@
 Für jedes Merkmal (Dimension) einer BEx Query oder eines Infocubes besteht die Möglichkeit, einen Filter zu setzen, um den MDX-Ausdruck für die Datenextraktion mit den ausgewählten Filterwerten im BW auszuführen.
 
-![BWCube-Filter-01](/img/content/BWCube-Filter-01.jpg){:class="img-responsive"}
+![BWCube-Filter-01](/img/content/BWCube-Filter-01.png){:class="img-responsive"}
 
 Klicken Sie dafür auf Filter, dann erscheint ein Fenster mit den verfügbaren Werte. 
 
-![BWCube-Filter-02](/img/content/BWCube-Filter-02.jpg){:class="img-responsive"}
+![BWCube-Filter-02](/img/content/BWCube-Filter-02.png){:class="img-responsive"}
 
 Wählen Sie nun die Werte des Merkmals, auf die das Ergebnis gefiltert werden soll. 
 
-![BWCube-Filter-03](/img/content/BWCube-Filter-03.jpg){:class="img-responsive"}
+![BWCube-Filter-03](/img/content/BWCube-Filter-03.png){:class="img-responsive"}
 
 Sie können Filter für mehrere Merkmale setzen. 
 
@@ -25,8 +25,8 @@ CompanyCode=1000,2000
 ```
 Die Option **Exclude Values from Resultset** ermöglicht, die gewählten Werte aus dem Ergebnis auszuschließen. 
 
-![BWCube-Filter-03-a](/img/content/BWCube-Filter-03-a.jpg){:class="img-responsive"}
+![BWCube-Filter-03-a](/img/content/BWCube-Filter-03-a.png){:class="img-responsive"}
 
 Auch Dimensionen mit einer hierarchischen Darstellung werden unterstützt.
 
-![BWCube_Hierarchy](/img/content/BWCube_Hierarchy.jpg){:class="img-responsive"}
+![BWCube_Hierarchy](/img/content/BWCube_Hierarchy.png){:class="img-responsive"}

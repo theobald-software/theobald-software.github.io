@@ -17,7 +17,7 @@ This example illustrates how full access to your SAP data can be achieved throug
 
 The SAP business object used in this example is a product (or material) entity which is stored in a custom table 'ZECSPRODUCTS'.
 
-![BCS-CRUD-SAP-Tables-ZECSPRODUCTS](/img/content/BCS-CRUD-SAP-Tables-ZECSPRODUCTS.jpg){:class="img-responsive"}
+![BCS-CRUD-SAP-Tables-ZECSPRODUCTS](/img/content/BCS-CRUD-SAP-Tables-ZECSPRODUCTS.png){:class="img-responsive"}
 
 The custom SAP table has the following data structure:
 

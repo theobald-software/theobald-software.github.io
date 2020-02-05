@@ -13,16 +13,16 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=manager-approval
 
 On your SharePoint site, sign in as the Manager user: 
 
-![Nintex-SP-List-LogIn-Manager](/img/content/Nintex-SP-List-LogIn-Manager.jpg){:class="img-responsive"}
+![Nintex-SP-List-LogIn-Manager](/img/content/Nintex-SP-List-LogIn-Manager.png){:class="img-responsive"}
 
 Navigate to All Site Content -> Lists -> Workflow Tasks  
 
-![Nintex-SP-List-WF-Pending](/img/content/Nintex-SP-List-WF-Pending.jpg){:class="img-responsive"}
+![Nintex-SP-List-WF-Pending](/img/content/Nintex-SP-List-WF-Pending.png){:class="img-responsive"}
 
 Open the task item, set the Status to Approved and select OK. 
 
-![Nintex-SP-List-WF-Approving](/img/content/Nintex-SP-List-WF-Approving.jpg){:class="img-responsive"}
+![Nintex-SP-List-WF-Approving](/img/content/Nintex-SP-List-WF-Approving.png){:class="img-responsive"}
 
 The task is now approved.  
 
-![Nintex-SP-List-WF-Approved](/img/content/Nintex-SP-List-WF-Approved.jpg){:class="img-responsive"}
+![Nintex-SP-List-WF-Approved](/img/content/Nintex-SP-List-WF-Approved.png){:class="img-responsive"}

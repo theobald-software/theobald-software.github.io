@@ -12,7 +12,7 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=bwcube-settings
 ---
 
 
-![BWCube-settings](/img/content/BWCube-settings.jpg){:class="img-responsive"}
+![BWCube-settings](/img/content/BWCube-settings.png){:class="img-responsive"}
 
 **Use Caption as Column Name**<br>
 Die Beschreibung der Kennzahl wird für den Spaltennamen verwendet, statt dem technischen Namen.

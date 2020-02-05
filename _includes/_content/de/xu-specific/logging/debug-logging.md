@@ -7,7 +7,7 @@ Führen Sie folgende Schritte aus, um das Debug-Logging zu aktivieren:
 3. Machen Sie aus dem Verzeichnis eine Zip-Datei (z.B. Trace.zip) und senden Sie sie unserem Support. 
 4. Nach der Reproduktion des Fehlers entfernen Sie den Eintrag aus dem Feld *Trace Directory* , da das Tracing nicht mehr notwendig ist. 
 
-![tracing-setting](/img/content/tracing-setting.jpg){:class="img-responsive"}
+![tracing-setting](/img/content/tracing-setting.png){:class="img-responsive"}
 
 Bitte beachten Sie, dass das Debug-Logging in der Regel nur nach Aufforderung durch den Support aktiviert werden sollte. <br>
 Beim Debug-Logging werden eine Vielzahl von Informationen gesammelt. Dies kann bei permanent aktiviertem Logging dazu führen, dass die Kapazitätsgrenzen des Speichers schnell erschöpft ist. <br>

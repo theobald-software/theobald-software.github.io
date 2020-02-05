@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen2
 
 Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionsspezifische Einstellungen bezüglich des Ziels festlegen.
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form.jpg){:class="img-responsive"}
+![ext_spec_set_de_form](/img/content/ext_spec_set_de_form.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
 

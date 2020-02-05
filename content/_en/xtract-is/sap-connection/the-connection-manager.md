@@ -74,7 +74,7 @@ SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/suppo
 
 **Additions**
 
-![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.jpg){:class="img-responsive" width="600px" }
+![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.png){:class="img-responsive" width="600px" }
 
 **SNC enabled**
 
@@ -118,4 +118,4 @@ SAP connection parameters are set via a single connection string (default in XIS
 
 Obfuscates SAP connection password so it's not stored in clear text. Switched on per default when activating Legacy storage mode.
 
-![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.jpg){:class="img-responsive" width="600px" }
+![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.png){:class="img-responsive" width="600px" }

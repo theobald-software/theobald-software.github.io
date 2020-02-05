@@ -13,7 +13,7 @@ old_url:
 
 Hier können Sie die spezifischen Einstellungen für die gewählte Zielumgebung definieren:
 
-![pbi-configuration](/img/content/XU_pbi_connector_destination.jpg){:class="img-responsive"}
+![pbi-configuration](/img/content/XU_pbi_connector_destination.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 

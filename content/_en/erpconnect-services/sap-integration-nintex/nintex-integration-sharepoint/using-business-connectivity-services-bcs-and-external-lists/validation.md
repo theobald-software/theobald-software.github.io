@@ -15,12 +15,12 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=validation
 
 Navigate back to the Material Maintenance Request list and verify that the workflow status column shows Completed. 
 
-![Nintex-SP-List-Material-WF-Completed](/img/content/Nintex-SP-List-Material-WF-Completed.jpg){:class="img-responsive"}
+![Nintex-SP-List-Material-WF-Completed](/img/content/Nintex-SP-List-Material-WF-Completed.png){:class="img-responsive"}
 
 **SAP Validation**
 
 Using transaction MM03 (Display Material) in SAP, verify that the material record has been created.
 
 
-![Nintex-SP-List-Material-in-SAP](/img/content/Nintex-SP-List-Material-in-SAP.jpg){:class="img-responsive"}
+![Nintex-SP-List-Material-in-SAP](/img/content/Nintex-SP-List-Material-in-SAP.png){:class="img-responsive"}
 

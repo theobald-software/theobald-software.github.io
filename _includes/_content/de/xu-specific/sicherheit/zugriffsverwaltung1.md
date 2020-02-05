@@ -2,7 +2,7 @@
 Die Zugriffsverwaltung wird aktiviert, wenn die Checkbox *Restrict Designer access to the following users/groups angehakt wird*.<br>
 Danach können sich nur noch die aufgelisteten Benutzer bzw. Benutzergruppen am Designer anmelden.
 
-![Server-Settings_](/img/content/Server-Settings_.jpg){:class="img-responsive"}
+![Server-Settings_](/img/content/Server-Settings_.png){:class="img-responsive"}
 
 **Read, Modify, Create, Admin**<br>
 Einem Benutzer/Benutzergruppe können nachfolgende Rechte zugeordnet werden. Diese Rechte beziehen sich auf Aktionen die im Xtract Universal Designer durchgeführt werden. 

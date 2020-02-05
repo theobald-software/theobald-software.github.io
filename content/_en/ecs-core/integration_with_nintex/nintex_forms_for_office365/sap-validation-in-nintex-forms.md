@@ -20,20 +20,20 @@ In our Nintex form we need two fields:
 The first field *field_input* contains the customer number. 
 The second field *field_output* contains the SAP customer name if the entry is valid, otherwise an error message.
 
-![nintex-forms-js-ecs-01](/img/content/nintex-forms-js-ecs-01.jpg){:class="img-responsive"}
+![nintex-forms-js-ecs-01](/img/content/nintex-forms-js-ecs-01.png){:class="img-responsive"}
 
 Right-click on the first field and select *Settings*.
 
-![nintex-forms-js-ecs-02](/img/content/nintex-forms-js-ecs-02.jpg){:class="img-responsive"}
+![nintex-forms-js-ecs-02](/img/content/nintex-forms-js-ecs-02.png){:class="img-responsive"}
 
 Set the option *Store Client ID in JavaScript Variable* to *Yes*.<br>.
 Put a name in the field *Client ID JavaScript variable name*, e.g. *field_input*.
 
-![nintex-forms-js-ecs-03](/img/content/nintex-forms-js-ecs-03.jpg){:class="img-responsive"}
+![nintex-forms-js-ecs-03](/img/content/nintex-forms-js-ecs-03.png){:class="img-responsive"}
 
 Repeat the last steps for the second field and name it, e.g. *field_output*.
 
-![nintex-forms-js-ecs-04](/img/content/nintex-forms-js-ecs-04.jpg){:class="img-responsive"} 
+![nintex-forms-js-ecs-04](/img/content/nintex-forms-js-ecs-04.png){:class="img-responsive"} 
 
 **Step 2: Insert JavaScript code**
 
@@ -42,11 +42,11 @@ Add a reference to our JavaScript library under *Form Settings -> Advanced -> Cu
 [http://static.theobald-software.com/theobald.ecs.micro/5.4.2/theobald.ecs.micro.js]()
 
 
-![nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.jpg){:class="img-responsive"}
+![nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.png){:class="img-responsive"}
 
 Insert the JavaScript code under *Form Settings -> Advanced -> Custom JavaScript*.
 
-![nintex-forms-js-ecs-06](/img/content/nintex-forms-js-ecs-06.jpg){:class="img-responsive"}
+![nintex-forms-js-ecs-06](/img/content/nintex-forms-js-ecs-06.png){:class="img-responsive"}
 
 The *tEcs.ExeculeXQL* function is called in the code to read the customer name from the SAP table KNA1. 
 
@@ -106,11 +106,11 @@ Now execute the form and enter a customer number. The customer name is read from
 
 
 
-![nintex-forms-js-ecs-07](/img/content/nintex-forms-js-ecs-07.jpg){:class="img-responsive"}
+![nintex-forms-js-ecs-07](/img/content/nintex-forms-js-ecs-07.png){:class="img-responsive"}
 
 If the customer number you entered does not exist in SAP, an error message appears. 
 
-![nintex-forms-js-ecs-08](/img/content/nintex-forms-js-ecs-08.jpg){:class="img-responsive"}
+![nintex-forms-js-ecs-08](/img/content/nintex-forms-js-ecs-08.png){:class="img-responsive"}
 
 This example shows how to check input data for SAP validity in Nintex form. The check was implemented using JavaScript and ECS Core REST Services. <br>
 Many other scenarios are feasible. It would be possible, for example, to fill a combo box with SAP customer numbers or names, or to offer a direct SAP search.

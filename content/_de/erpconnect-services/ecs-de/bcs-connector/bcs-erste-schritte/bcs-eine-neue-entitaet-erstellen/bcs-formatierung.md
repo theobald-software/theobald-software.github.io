@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-formatierung
 
 Sie können mit dem BCS Connector eine Spalte formatieren. Betätigen Sie dazu die Schaltfläche neben dem Eigenschaftenfeld, um das Localization and Formatting Dialog zu öffnen und wechseln Sie zum Formatting-Reiter. Wählen Sie dort einen der folgende Werte:
 
-![BCS-Formatting](/img/content/BCS-Formatting.jpg){:class="img-responsive"}
+![BCS-Formatting](/img/content/BCS-Formatting.png){:class="img-responsive"}
 
 **Format as date (z.B. 8/28/2012)** <br>
 **Format as date (z.B. Tuesday, August 28, 2012)** <br>

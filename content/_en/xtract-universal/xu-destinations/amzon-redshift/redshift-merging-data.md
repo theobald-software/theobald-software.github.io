@@ -24,7 +24,7 @@ Now let´s change the Extraction Specific Settings and set
 - Row Processing to Fill merge staging table
 - Finalization to Finalize Merge
 
-![XU_redshift_merge](/img/content/XU_redshift_merge.jpg){:class="img-responsive"}
+![XU_redshift_merge](/img/content/XU_redshift_merge.png){:class="img-responsive"}
 
 The merge statement inserts new rows and updates existing ones.
 

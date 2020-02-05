@@ -19,7 +19,7 @@ Sprache (Logon Language)<br>
 Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort eigeben. 
 
 
-![sapgui-client-lang](/img/content/sapgui-client-lang.jpg){:class="img-responsive"}
+![sapgui-client-lang](/img/content/sapgui-client-lang.png){:class="img-responsive"}
 
 **SAP-Zielsystem**
 
@@ -33,7 +33,7 @@ Im Fall eines Applikationsservers werden folgende Angaben benötigt:
 - Systemnummer (Instance Number), eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
 
 
-![sapgui-appserver](/img/content/sapgui-appserver.jpg){:class="img-responsive"}
+![sapgui-appserver](/img/content/sapgui-appserver.png){:class="img-responsive"}
 
 **Message Server (Load Balancing)** 
 
@@ -43,13 +43,13 @@ Im Fall von einer Anmeldung an einem Message Server (Load Balancing) sind folgen
 - Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
 - Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. ist das PUBLIC)
 
-![sapgui-messageserver](/img/content/sapgui-messageserver.jpg){:class="img-responsive"}
+![sapgui-messageserver](/img/content/sapgui-messageserver.png){:class="img-responsive"}
 
 **Authentifizierung**
 
 Für die Authentifizierung mit SNC benötigen Sie den **SNC-Partnernamen**, den Sie im Feld *SNC Name* finden.
 
-![sapgui-sncname](/img/content/sapgui-sncname.jpg){:class="img-responsive"}
+![sapgui-sncname](/img/content/sapgui-sncname.png){:class="img-responsive"}
 
 
 

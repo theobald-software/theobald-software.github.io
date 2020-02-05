@@ -14,7 +14,7 @@ Unter *Operations* werden neue Webservice-Operationen angelegt. In der Webservic
 
 Folgende Optionen stehen zur Verfügung:
 
-![WSD-Operations](/img/content/ecscore-wsd_17.jpg){:class="img-responsive"}
+![WSD-Operations](/img/content/ecscore-wsd_17.png){:class="img-responsive"}
  
 **Create a new operation** <br>
 Anlage einer neuen Webservice-Operation. Der Name ist frei wählbar und darf keine Leerzeichen enthalten. Aus dem beigefügten Webservice-Katalog können beispielhafte Vorlagen zu verschiedenen Webservices geladen werden. 

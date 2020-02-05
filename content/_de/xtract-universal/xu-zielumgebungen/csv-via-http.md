@@ -17,7 +17,7 @@ CSV (via HTTP) wird von mehreren Produkten unterstützt. Folgende Produkte wurde
 
 Folgende Einstellungen können für das Ziel HTTP - CSV definiert werden.
 
-![CSV-Destination-Details](/img/content/CSV-Destination-Details.jpg){:class="img-responsive"}
+![CSV-Destination-Details](/img/content/CSV-Destination-Details.png){:class="img-responsive"}
 
 **CSV Settings**
 

@@ -17,13 +17,13 @@ To do so, please open the General Settings of the extraction and select
 - the option *Disable Buffer* in the *Misc.* tab, and 
 - the option Require *SAP Credentials* in the Security tab.
 
-![Require-SAP-Credentials](/img/content/Require-SAP-Credentials.jpg){:class="img-responsive"}
+![Require-SAP-Credentials](/img/content/Require-SAP-Credentials.png){:class="img-responsive"}
 
 In the OData Connection dialog the user must provide his SAP username and password. Using those credentials the data will be extracted from SAP. 
 
-![Tableau-Odata-Credentials](/img/content/Tableau-Odata-Credentials.jpg){:class="img-responsive"}
+![Tableau-Odata-Credentials](/img/content/Tableau-Odata-Credentials.png){:class="img-responsive"}
 
 Invalid SAP credentails delivers the following error message.
 
-![Tableau-SAP-Credentials-Error](/img/content/Tableau-SAP-Credentials-Error.jpg){:class="img-responsive"}
+![Tableau-SAP-Credentials-Error](/img/content/Tableau-SAP-Credentials-Error.png){:class="img-responsive"}
 

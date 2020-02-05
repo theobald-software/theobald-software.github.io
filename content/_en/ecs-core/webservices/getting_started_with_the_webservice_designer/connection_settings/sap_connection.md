@@ -12,7 +12,7 @@ lang: en_GB
 
 In the main screen of the WebService Designer click on *SAP...* in the ribbon at *Connections*. The *SAP Connection Dialog* opens.
 
-![WSD-SAPConnection](/img/content/ecscore-wsd_19.jpg){:class="img-responsive"}
+![WSD-SAPConnection](/img/content/ecscore-wsd_19.png){:class="img-responsive"}
 
 The SAP connection defined here is required to retrieve SAP metadata when creating a new Web service.
 The SAP connection for the Web service call is defined in the main menu under *SAP connection name to use*.  

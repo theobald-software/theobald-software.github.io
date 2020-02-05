@@ -53,7 +53,7 @@ Select *Next* to proceed.
 
 On the *Choose Components* page of the wizard, select the components you wish to install on your machine.
 
-![ECS-Setup-Components](/img/content/ECS-Setup-Components.jpg){:class="img-responsive" }
+![ECS-Setup-Components](/img/content/ECS-Setup-Components.png){:class="img-responsive" }
 
 Select *Next* to proceed.
 
@@ -83,7 +83,7 @@ For the client installation select one or both components on the Choose Componen
 - BCS Connector Designer: to install the BCS Connector.
 - WebService Designer: to install the WebService Designer (WS Designer).
 
-![ECS-Setup-Client-Components](/img/content/ECS-Setup-Client-Components.jpg){:class="img-responsive" }
+![ECS-Setup-Client-Components](/img/content/ECS-Setup-Client-Components.png){:class="img-responsive" }
 
 
 **Installation using WSP Packages**
@@ -119,12 +119,12 @@ Add-SPSolution -LiteralPath "C:\Program Files\ERPConnect Services\ERPConnectServ
 Add-SPSolution -LiteralPath "C:\Program Files\ERPConnect Services\ERPConnectServices.WebServiceDesigner.wsp"
 
 
-![ECS-Setup-WSP-01](/img/content/ECS-Setup-WSP-01.jpg){:class="img-responsive" }
+![ECS-Setup-WSP-01](/img/content/ECS-Setup-WSP-01.png){:class="img-responsive" }
 
 
 In SharePoint Central Administration (System Settings -> Manage farm solutions) check that the Solutions have been added.
 
-![ECS-Setup-SP-CA-Solutions-01](/img/content/ECS-Setup-SP-CA-Solutions-01.jpg){:class="img-responsive" }
+![ECS-Setup-SP-CA-Solutions-01](/img/content/ECS-Setup-SP-CA-Solutions-01.png){:class="img-responsive" }
 
 *Step 3: Deploy Solution Globally*<br>
 The Solutions can be deployed either using  SP Central Administration (System Settings -> Manage farm solutions) or using the SP Management Shell:
@@ -134,12 +134,12 @@ The Solutions can be deployed either using  SP Central Administration (System Se
 *Install-SPSolution -Identity erpconnectservices.bcsconnector.wsp -GACDeployment*<br>
 *Install-SPSolution -Identity erpconnectservices.webservicedesigner.wsp -GACDeployment*<br>
 
-![ECS-Setup-WSP-02](/img/content/ECS-Setup-WSP-02.jpg){:class="img-responsive" }
+![ECS-Setup-WSP-02](/img/content/ECS-Setup-WSP-02.png){:class="img-responsive" }
 
 
 In SharePoint Central Administration (System Settings -> Manage farm solutions) check that the Solutions have been deployed.
 
-![ECS-Setup-SP-CA-Solutions-02](/img/content/ECS-Setup-SP-CA-Solutions-02.jpg){:class="img-responsive" }
+![ECS-Setup-SP-CA-Solutions-02](/img/content/ECS-Setup-SP-CA-Solutions-02.png){:class="img-responsive" }
 
 **SharePoint farm**
 
@@ -162,7 +162,7 @@ In a SharePoint farm the ERPConnect Services Runtime and the BCS Connector Runti
 
 Please install ERPConnect Services on the SharePoint server with the Central Administration. It doesn't matter which server role this server has, also shared roles are supported.  After the installation process please take a look in Central Administration -> Application Management  -> Manage services on server if the ERPConnect Service is listed there. It should be available there and marked as Not Compliant. With Fix or Stop you deactivate the service.  
 
-![ECS-Setup-SP-Farm_Services.jpg](/img/content/ECS-Setup-SP-Farm_Services.jpg.png){:class="img-responsive" }
+![ECS-Setup-SP-Farm_Services.png](/img/content/ECS-Setup-SP-Farm_Services.png.png){:class="img-responsive" }
 
 **Restarting the SharePoint Server**<br>
 Each SharePoint server, on each ERPConnect services has been installed, must be restarted.
@@ -180,7 +180,7 @@ In the second step [create an ECS Service Application]().
 Verify that the ERPConnect Service is started (especially *SP2016*): <br>
 System Settings -> Servers -> Manage services on Server -> ERPConnect Services -> Start
 
-![ECS-Setup-SP-CA](/img/content/ECS-Setup-SP-CA.jpg){:class="img-responsive" }
+![ECS-Setup-SP-CA](/img/content/ECS-Setup-SP-CA.png){:class="img-responsive" }
 
 
 

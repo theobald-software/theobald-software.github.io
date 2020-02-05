@@ -17,28 +17,28 @@ In diesem Beispiel laden wir eine Extraktion in die Microsoft SQL-Datenbank.
 
 Wir definieren eine Extraktion basierend auf der Tabelle T001W für Werke.
 
-![MSSql-Table-Extraction-T001w](/img/content/MSSql-Table-Extraction-T001w.jpg){:class="img-responsive"}
+![MSSql-Table-Extraction-T001w](/img/content/MSSql-Table-Extraction-T001w.png){:class="img-responsive"}
 
 **Destination festlegen**
 
 Wir wählen eine Zielverbindung zur Datenbank. 
 
-![MSSql-Destination-Details-Integrated-Security](/img/content/MSSql-Destination-Details-Integrated-Security.jpg){:class="img-responsive"}
+![MSSql-Destination-Details-Integrated-Security](/img/content/MSSql-Destination-Details-Integrated-Security.png){:class="img-responsive"}
 
 **Einstellungen festlegen**
 
 Wir übernehmen die Default-Einstellungen.
 
-![MSSql-Extraction-Specific-Settings-T001w](/img/content/MSSql-Extraction-Specific-Settings-T001w.jpg){:class="img-responsive"}
+![MSSql-Extraction-Specific-Settings-T001w](/img/content/MSSql-Extraction-Specific-Settings-T001w.png){:class="img-responsive"}
 
 Damit wird mit der Option "Drop & Create" eine Tabelle mit dem Namen T001W neu angelegt. Falls die Tabelle schon existiert, wird sie ggf. vorher von der Datenbank gelöscht. <br>
 Sie können sich das SQL-Statement dafür anschauen, dazu wählen Sie *Custom SQL* für Preparation und klicken Sie dann auf *Edit SQL*.
 
-![MSSql-Extraction-Specific-Settings-Custom-SQL](/img/content/MSSql-Extraction-Specific-Settings-Custom-SQL.jpg){:class="img-responsive"}
+![MSSql-Extraction-Specific-Settings-Custom-SQL](/img/content/MSSql-Extraction-Specific-Settings-Custom-SQL.png){:class="img-responsive"}
 
 Im neuen Fenster wählen Sie *Drop & Create* und klicken Sie auf *Generate Statement*. 
 
-![MSSql-Custom-SQL-Drop-And-Create](/img/content/MSSql-Custom-SQL-Drop-And-Create.jpg){:class="img-responsive"}
+![MSSql-Custom-SQL-Drop-And-Create](/img/content/MSSql-Custom-SQL-Drop-And-Create.png){:class="img-responsive"}
 
 Spalten werden mit dem entsprechenden Datentyp angelegt. Sie haben die Möglichkeit das SQL-Statement anzupassen bzw. ein anderes zu verwerden. Wir belassen es bei der Standard-Option *Create & Drop* für Preparation.
 
@@ -46,15 +46,15 @@ Spalten werden mit dem entsprechenden Datentyp angelegt. Sie haben die Möglichk
 
 Um die Extraktion auszuführen, klicken Sie auf den Button *Run*. Im Fenster Run Extraction klicken Sie erneut auf den Button *Run*. 
 
-![MSSql-Run-Extraction](/img/content/MSSql-Run-Extraction.jpg){:class="img-responsive"}
+![MSSql-Run-Extraction](/img/content/MSSql-Run-Extraction.png){:class="img-responsive"}
 
 Im Designer klicken Sie auf Refresh, um sich den Status der Ausführung anzuschauen. In unserem Beispiel wurden 185 Datensätze in die Datenbank geladen.  
 
-![MSSql-Designer-Status](/img/content/MSSql-Designer-Status.jpg){:class="img-responsive"}
+![MSSql-Designer-Status](/img/content/MSSql-Designer-Status.png){:class="img-responsive"}
 
 **Ergebnis in der Datenbank überprüfen**
 
 Im SQL Server Management Studio können Sie sich Tabellenstruktur sowie -Inhalt  anschauen.
 
 
-![MSSql-Extraction-Table-Data](/img/content/MSSql-Extraction-Table-Data.jpg){:class="img-responsive"}
+![MSSql-Extraction-Table-Data](/img/content/MSSql-Extraction-Table-Data.png){:class="img-responsive"}

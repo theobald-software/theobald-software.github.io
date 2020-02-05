@@ -15,7 +15,7 @@ lang: de_DE
 Ab der ERPConnect Services Version 1.10.0 wird das sogenannte *Error Handling* für alle Custom Actions unterstützt.
 Es ist damit möglich, Fehler zu erfassen und anzufangen, die während der Ausführung der Aktion auftreten. Ein Fehler in der Action führt damit nicht zum Abbruch des Workflows. 
 
-![ECS-Nintex-WorkflowAction_ErrorHandling](/img/content/ECS-Nintex-WorkflowAction_ErrorHandling.jpg){:class="img-responsive"}
+![ECS-Nintex-WorkflowAction_ErrorHandling](/img/content/ECS-Nintex-WorkflowAction_ErrorHandling.png){:class="img-responsive"}
 
 Erfahren Sie alles zum Thema *Error Handling* in der [Nintex-Hilfe](https://help.nintex.com/en-us/nintex2013/help/Workflow/RootCategory/Designer/Nintex.Workflow.ErrorHandling.htm).
 

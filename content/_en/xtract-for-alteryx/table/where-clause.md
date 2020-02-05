@@ -16,4 +16,4 @@ lang: en_GB
 
 Beginning with version 2.13.5 scripted expressions are supported within the WHERE clause. 
 
-![Table-Extraction-Where-Clause-Scripted-Expression](/img/content/Table-Extraction-Where-Clause-Scripted-Expression.jpg){:class="img-responsive"}
+![Table-Extraction-Where-Clause-Scripted-Expression](/img/content/Table-Extraction-Where-Clause-Scripted-Expression.png){:class="img-responsive"}

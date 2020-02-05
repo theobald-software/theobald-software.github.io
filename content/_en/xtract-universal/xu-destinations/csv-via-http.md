@@ -18,7 +18,7 @@ The CSV (via HTTP) destination is supported by many products. The following prod
 
 The following settings can be definet for the destination HTTP-CSV.
 
-![CSV-Destination-Details](/img/content/CSV-Destination-Details.jpg){:class="img-responsive"}
+![CSV-Destination-Details](/img/content/CSV-Destination-Details.png){:class="img-responsive"}
 
 **CSV Settings**
 

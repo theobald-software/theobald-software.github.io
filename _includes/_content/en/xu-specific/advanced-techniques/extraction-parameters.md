@@ -6,8 +6,12 @@ To open "Run extractions" window, select an extraction in the main window of the
 
 ### Subsection "Parameters" Tab "Extraction"
 
+<<<<<<< HEAD
 The amount of the parameters depends on the extraction type and destination.
 e.g., **decimalSeparator** is a parameter specific to CSV destination.
+=======
+![XU_extraction_parameters](/img/content/XU_extraction_parameters.png){:class="img-responsive"}
+>>>>>>> 3467116213375dbc2d84ab590cbc13404f6f3f4b
 
 Parameter name | Parameter description | Default value
 ------------ | ------------- | -------------

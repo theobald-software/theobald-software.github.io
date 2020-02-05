@@ -13,12 +13,12 @@ lang: de_DE
 Im Beispiel mit den MARA- und MAKT-Tabellen, ist das Feld MATNR (Materialnummer) in beiden Tabellen ein Schlüsselfeld. Daher wird MATNR anhand der Namensgleichheit für die Verknüpfung der beiden Tabellen verwendet. <br>
 Wenn der Mauszeiger sich über dem Join-Rechteck befindet, werden Tooltips mit den jeweiligen Feldverknüpfungen angezeigt.
 
-![tj-2-tables-where](/img/content/tj-2-tables-where.jpg){:class="img-responsive"}
+![tj-2-tables-where](/img/content/tj-2-tables-where.png){:class="img-responsive"}
 
 Mit einem Doppelklick auf das Join-Rechteck öffen Sie das Fenster für die Verknüpfung.<br>
 In dem Beispiel sehen wir, dass das Feld MATNR aus der Tabelle MARA mit dem Feld MATNR aus der Tabelle MAKT verknüpft ist.
 
-![tj-relation](/img/content/tj-relation.jpg){:class="img-responsive"}
+![tj-relation](/img/content/tj-relation.png){:class="img-responsive"}
 
 Um weitere Verknüpfungen hinzufügen, klicken Sie auf Add und wählen Sie die entsprechenden Felder für die beiden Tabellen. 
 

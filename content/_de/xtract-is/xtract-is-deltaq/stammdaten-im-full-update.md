@@ -34,7 +34,7 @@ Damit wird der gesamte Datenbestand aus SAP geholt, ohne einen Delta-Meschanismu
 Nun müssen Sie noch Häkchen in die Spalten setzen, die Sie gerne extrahieren wollen. Alternativ können Sie auf Select All klicken, um alle Spalten zu wählen. <br>
 Ihre Maske sollte dann wie folgt aussehen:
 
-![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.jpg){:class="img-responsive"}
+![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
 
 **Schritt 5: Extraktor aktivieren** 
 

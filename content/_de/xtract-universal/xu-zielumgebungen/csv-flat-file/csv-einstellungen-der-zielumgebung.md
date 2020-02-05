@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=csv-einstellungen-der-zielumge
 
 Klicken Sie auf Destination, um über extractionsspezifische Einstellungen bezüglich des Ziels festlegen.
 
-![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.jpg){:class="img-responsive"}
+![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
 
 **File Name**
 
@@ -28,7 +28,7 @@ bestimmt den Namen der Zieltabelle. Sie haben die folgenden Optionen:
 
 Definiert den Spaltennamen. Folgende Optionen sind verfügbar: 
 
-![Ex-Spec-Settings-Makt-ColumnName](/img/content/Ex-Spec-Settings-Makt-ColumnName.jpg){:class="img-responsive"}
+![Ex-Spec-Settings-Makt-ColumnName](/img/content/Ex-Spec-Settings-Makt-ColumnName.png){:class="img-responsive"}
 
 **Code**: Der technische Spaltenname aus SAP wird als Spaltenname verwendet, z.B. MAKTX.<br>
 **CodeAndText**: Der technische Name und die Beschreibung der Spalte aus SAP werden mit einem Unterstrich verbunden als Spaltennamen verwendet, z.B. MAKTX_Material Description (Short Text).<br>

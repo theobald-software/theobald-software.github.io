@@ -15,10 +15,10 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-creating-purchase-order
 This sample provide a visual web part to create a purchase order in SAP.
 
 
-![ECS-Create-PO-Webpart](/img/content/ECS-Create-PO-Webpart.jpg){:class="img-responsive" }
+![ECS-Create-PO-Webpart](/img/content/ECS-Create-PO-Webpart.png){:class="img-responsive" }
 
 
-![ECS-SAP-Create-PO](/img/content/ECS-SAP-Create-PO.jpg){:class="img-responsive" }
+![ECS-SAP-Create-PO](/img/content/ECS-SAP-Create-PO.png){:class="img-responsive" }
 
 <details>
 <summary>Click to open C# example.</summary>

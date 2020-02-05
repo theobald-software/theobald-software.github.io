@@ -1,6 +1,6 @@
 Click the *Extraction Settings* link to open the settings dialog. 
 
-![XU_BWCube_Settings](/img/content/XU_BWCube_Settings.jpg){:class="img-responsive"}
+![XU_BWCube_Settings](/img/content/XU_BWCube_Settings.png){:class="img-responsive"}
 
 
 **Do not treat 'Axis has no rows' as Error** <br> 

@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=connection4
 
 The following settings can be defined for the AzureDWH destination.
 
-![XU_AzureDWH_Verbindungen](/img/content/XU_AzureDWH_Verbindungen.jpg){:class="img-responsive"}
+![XU_AzureDWH_Verbindungen](/img/content/XU_AzureDWH_Verbindungen.png){:class="img-responsive"}
 
 **Connection**
 

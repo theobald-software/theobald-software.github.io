@@ -6,7 +6,7 @@ Caution! You can only select a process chain that contains an InfoSpoke.
 
 After making your selections, all metadata are retrieved from the BW and displayed in the editor.
 
-![Open-Hub-Service-Data-Source](/img/content/Open-Hub-Service-Data-Source.jpg){:class="img-responsive"}
+![Open-Hub-Service-Data-Source](/img/content/Open-Hub-Service-Data-Source.png){:class="img-responsive"}
 
 The Execution Mode can have one of the following values: 
 

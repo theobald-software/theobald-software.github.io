@@ -3,7 +3,7 @@ Wenn Sie im Designer auf *Run* klicken, finden Sie im Reiter *Extraction Paramet
 
 Wenn Sie einen Wert überschreiben, wird die URL entsprechend angepasst. 
 
-![XU_extraction_parameters](/img/content/XU_extraction_parameters.jpg){:class="img-responsive"}
+![XU_extraction_parameters](/img/content/XU_extraction_parameters.png){:class="img-responsive"}
 
 *preview*<br>
 Um den Preview zu aktivieren. Default-Wert ist False.

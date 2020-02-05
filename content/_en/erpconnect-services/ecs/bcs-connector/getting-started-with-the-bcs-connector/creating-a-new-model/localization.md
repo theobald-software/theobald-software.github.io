@@ -20,5 +20,5 @@ Select a *Language*, and then enter the localized *Display Name* next to it. You
 
 The localized names will be shown to the user on SharePoint sites that are configured for a different display language.
 
-![BCS-Localization](/img/content/BCS-Localization.jpg){:class="img-responsive"}
+![BCS-Localization](/img/content/BCS-Localization.png){:class="img-responsive"}
 

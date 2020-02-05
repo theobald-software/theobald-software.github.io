@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=sap-connection-with-snc
 You can also use SNC (Secure Network Communication) to connect to the SAP system. <br>
 To do this, click **Additions** in the SAP Connection Manager. In the SNC section, check the box for **SNC enabled** and fill in the corresponding fields.
 
-![SNC](/img/content/SNC.jpg){:class="img-responsive"}
+![SNC](/img/content/SNC.png){:class="img-responsive"}
 
 The preferred security level can be set with the property **Quality Of Protection**. More details can be found here: [http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm)
 

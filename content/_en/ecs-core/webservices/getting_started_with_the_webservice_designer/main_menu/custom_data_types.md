@@ -12,7 +12,7 @@ lang: en_GB
 
 Under *Custom Data Types*, input or output parameters of a web service can be created in the form of an input list or structure. 
 
-![WSD-CustomDataTypes](/img/content/ecscore-wsd_18.jpg){:class="img-responsive"}
+![WSD-CustomDataTypes](/img/content/ecscore-wsd_18.png){:class="img-responsive"}
 
 The following settings are available:
 

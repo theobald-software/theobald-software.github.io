@@ -16,4 +16,4 @@ lang: de_DE
 
 Ab Version 2.13.5 können Sie Script-Ausdrücke in der WHERE-Bedingung verwenden.
 
-![Table-Extraction-Where-Clause-Scripted-Expression](/img/content/Table-Extraction-Where-Clause-Scripted-Expression.jpg){:class="img-responsive"}
+![Table-Extraction-Where-Clause-Scripted-Expression](/img/content/Table-Extraction-Where-Clause-Scripted-Expression.png){:class="img-responsive"}

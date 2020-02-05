@@ -4,7 +4,7 @@ Wir legen eine neue Extraktion von Typ OHS an. In dem leeren Dialog haben Sie di
 
 Nach der Selektion werden alle Metadaten vom BW abgerufen und im Editor angezeigt.
 
-![Open-Hub-Service-Data-Source](/img/content/Open-Hub-Service-Data-Source.jpg){:class="img-responsive"}
+![Open-Hub-Service-Data-Source](/img/content/Open-Hub-Service-Data-Source.png){:class="img-responsive"}
 
 Sie können für den Ausführungsmodus (Execution Mode) einen der folgenden Werte wählen: 
 

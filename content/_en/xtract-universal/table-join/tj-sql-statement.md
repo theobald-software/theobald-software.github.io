@@ -17,4 +17,4 @@ Use the buttons *Export to File* and *Import from File* to export and import the
 
 Click *Copy to Clipboard*  to copy the SQL statement to the clipboard. 
 
-![tj-sql-preview](/img/content/tj-sql-preview.jpg){:class="img-responsive"}
+![tj-sql-preview](/img/content/tj-sql-preview.png){:class="img-responsive"}

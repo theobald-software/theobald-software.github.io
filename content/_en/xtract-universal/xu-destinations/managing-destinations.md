@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=managing-destinations
 In the dialog **Shared Destinations** you can manage the destinations.  
 To open the dialog select the menu **Server -> Destinations** in Xtract Universal Designer.
 
-![Manage-Shared-Destinations](/img/content/Manage-Shared-Destinations.jpg){:class="img-responsive"}
+![Manage-Shared-Destinations](/img/content/Manage-Shared-Destinations.png){:class="img-responsive"}
 
 **Add a destination** <br>
 To add a new destination connection, click *Add* in the dialog *Shared Destinations*.<br>

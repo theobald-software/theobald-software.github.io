@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift-connection
 
 The following settings can be defined for the Redshift destination.
 
-![XU_redshift_destination](/img/content/XU_redshift_destination.jpg){:class="img-responsive"}
+![XU_redshift_destination](/img/content/XU_redshift_destination.png){:class="img-responsive"}
 
 **Connection**
 

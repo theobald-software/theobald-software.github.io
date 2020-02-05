@@ -23,7 +23,7 @@ You have the following mechanism options:
 - NTLM
 - SNC Library: this property specifies the path to the SNC library (dll) manually.
 
-![SAP-Connection-SNC-Ok](/img/content/SAP-Connection-SNC-Ok.jpg){:class="img-responsive"}
+![SAP-Connection-SNC-Ok](/img/content/SAP-Connection-SNC-Ok.png){:class="img-responsive"}
 
 If the mechanism option SNC Library is selected, the fields SNC Library and X.509 Certificated will be enabled. 
 
@@ -99,7 +99,7 @@ To log in on an SAP system you need:
 
 For the authentication you use an SAP username and a password.  
 
-![sapgui-client-lang](/img/content/sapgui-client-lang.jpg){:class="img-responsive"}
+![sapgui-client-lang](/img/content/sapgui-client-lang.png){:class="img-responsive"}
 
 **SAP target system**
 
@@ -113,7 +113,7 @@ For an application server the following data are required:
 - Host name or IP address of the applikation server (Property Host) 
 - System/Instance number , a two-digit number between 00 und 99 (Property SystemNumber)
 
-![sapgui-appserver](/img/content/sapgui-appserver.jpg){:class="img-responsive"}
+![sapgui-appserver](/img/content/sapgui-appserver.png){:class="img-responsive"}
 
 **Message Server (Load Balancing)** 
 
@@ -122,10 +122,10 @@ For a message server the following data are required:
 - Name or IP address of the Message Server (Property MessageServer) 
 - Logon group (Property LogonGroup, usually it is PUBLIC)
 
-![sapgui-messageserver](/img/content/sapgui-messageserver.jpg){:class="img-responsive"}
+![sapgui-messageserver](/img/content/sapgui-messageserver.png){:class="img-responsive"}
 
 **Authentication** 
 
 For the authentification with SNC the **SNC Partner name** is required,  this can be found in the field *SNC Name*.
 
-![sapgui-sncname](/img/content/sapgui-sncname.jpg){:class="img-responsive"}
+![sapgui-sncname](/img/content/sapgui-sncname.png){:class="img-responsive"}

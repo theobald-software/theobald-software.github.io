@@ -6,7 +6,7 @@ Nachdem Sie eine neue Hierarchie-Extraktion angelegt haben, öffnen Sie mit eine
 
 Nach der Selektion speichert die Komponente alle relevanten Daten, die für die spätere Extraktion benötigt werden:
 
-![Define-Data-Source-Hierarchy](/img/content/Define-Data-Source-Hierarchy.jpg){:class="img-responsive"}
+![Define-Data-Source-Hierarchy](/img/content/Define-Data-Source-Hierarchy.png){:class="img-responsive"}
 
 **Date To**<br>
 Das Feld Date To hat standardmäßig den Wert 99991231. Um den Wert zu ändern, klicken Sie auf Run und überschreiben Sie den Wert im Feld dateTo.

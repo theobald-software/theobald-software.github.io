@@ -12,7 +12,7 @@ lang: en_GB
 
 The following items can be selected in the menu bar of the ECS Core WebService Designer:
 
-![WSD-11](/img/content/ecscore-wsd_11.jpg){:class="img-responsive"}
+![WSD-11](/img/content/ecscore-wsd_11.png){:class="img-responsive"}
 
 
 **Connections** <br>

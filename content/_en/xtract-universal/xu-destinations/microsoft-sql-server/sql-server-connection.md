@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-connection
 
 The following settings can be defined for the Microsoft SQL Server connection. 
 
-![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.jpg){:class="img-responsive"}
+![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.png){:class="img-responsive"}
 
 
 **Server Name**<br>

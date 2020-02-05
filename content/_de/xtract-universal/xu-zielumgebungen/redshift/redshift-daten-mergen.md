@@ -25,7 +25,7 @@ Nun ändern wir die Extraction-Specific Settings und setzen
 - Finalization auf Finalize Merge
 um die bereits bestehende Tabelle zu aktualisieren.
 
-![XU_redshift_merge](/img/content/XU_redshift_merge.jpg){:class="img-responsive"}
+![XU_redshift_merge](/img/content/XU_redshift_merge.png){:class="img-responsive"}
 
 Der Merge-Befehl sorgt dafür, dass neue Datensätze eingefügt und bestehende Datensätze aktualisiert werden.<br>
 Welche Felder aktualisiert werden, kann über den SQL-Befehl gesteuert werden.<br>

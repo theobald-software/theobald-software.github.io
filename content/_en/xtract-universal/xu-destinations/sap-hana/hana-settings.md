@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=hana-settings
 
 Click on the **Destination** button to define extraction-specific settings of the extraction.
 
-![ext_spec_set_de_form_debug](/img/content/ext_spec_set_de_form_debug.jpg){:class="img-responsive"}
+![ext_spec_set_de_form_debug](/img/content/ext_spec_set_de_form_debug.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
 

@@ -44,12 +44,12 @@ This script modifies the registry at HKLM:\SOFTWARE\Policies\Microsoft\Power BI 
 1. Select Xtract Universal from the *Get Data* menu
 2. Click on the *Connect* button.
 3. Enter the URL of the Xtract Universal web server   
-   ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.jpg){:class="img-responsive"}
+   ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.png){:class="img-responsive"}
 
    When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) 
    The Navigator window lists all extractions that are set to *Power BI Connector* destination in Xtract Universal. 
 4. Select an extraction from the list. The preview data shows the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
 5. Click on the *Load* button. This triggers an extraction in Xtract Universal and writes the extracted data to Power BI.
 
-![powerbi-navigator](/img/content/XU_pbi_connector_navigator.jpg){:class="img-responsive"}
+![powerbi-navigator](/img/content/XU_pbi_connector_navigator.png){:class="img-responsive"}
 

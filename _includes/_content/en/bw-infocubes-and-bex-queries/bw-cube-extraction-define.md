@@ -2,7 +2,7 @@ The Xtract Universal BW Cube data source component was developed to extract data
 
 After the definition of a BW Cube data source the following screen pops up:
 
-![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.jpg){:class="img-responsive"}
+![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
 
 Click the binocular button to open up the search dialog as shown below.
 
@@ -16,7 +16,7 @@ After having chosen a cube, you will find all dimensions, key figures and dimens
 
 To extract one or more of these cube elements, drag and drop them to the grid on the right-hand side. If you are choosing the property of a dimension that is not yet contained in the result set, the dimension will be added automatically as well.
 
-![Cube-Details](/img/content/Cube-Details.jpg){:class="img-responsive"}
+![Cube-Details](/img/content/Cube-Details.png){:class="img-responsive"}
 
 If at least one measure has been selected, you can see the extraction output in the browser after clicking the *Run* button.
 

@@ -38,7 +38,7 @@ Fehlende IIS-Komponenten können automatisch beim Start des Deploymentmanagers n
 
 **Deployment**
 
-![ecscore-deploymentmanager-1.jpg](/img/content/ecscore-deploymentmanager-1.jpg){:class="img-responsive"}
+![ecscore-deploymentmanager-1.png](/img/content/ecscore-deploymentmanager-1.png){:class="img-responsive"}
 
 Wählen Sie *Express Install* zur Installation mit den Standardeinstellungen und -Ports. Zur Anpassung der Standardwerte klicken Sie auf *Next*. Damit wird der Expertenmodus durchlaufen, den wir nur erfahrenen Anwendern empfehlen.  
 
@@ -54,14 +54,14 @@ Standardverzeichnis für die Einrichtung der Komponenten: C:\ECSCore
 Der Deployment Manager legt die Seite in den IIS an. Sie können diese direkt von dort oder unter Angabe des eingetragenen Ports (8080) direkt im Browser aufrufen (http://localhost:8080).
 
 
-![ecscore-deploymentmanager-2.jpg](/img/content/ecscore-deploymentmanager-2.jpg){:class="img-responsive"}
+![ecscore-deploymentmanager-2.png](/img/content/ecscore-deploymentmanager-2.png){:class="img-responsive"}
 
 **Management Site**
 
 Auf der *Management Site* wird die Konfiguration für ECSCore vorgenommen. Sie dient außerdem für das Deployment und die Verwaltung erstellter Webservices. Mit dem Deployment Manager wird die Managment Site in den IIS angelegt und kann von dort oder unter Angabe des eingetragenen Ports (8085) direkt im Browser aufgerufen werden (http://localhost:8085).
 
 
-![ecscore-deploymentmanager-3.jpg](/img/content/ecscore-deploymentmanager-3.jpg){:class="img-responsive"}
+![ecscore-deploymentmanager-3.png](/img/content/ecscore-deploymentmanager-3.png){:class="img-responsive"}
 
 **Database**
 
@@ -72,7 +72,7 @@ Diese Einstellung wird nicht mehr unterstützt, ein *Microsoft SQL Server Compac
 Mit dem *Master Key* können sensible Informationen wie Anmeldedaten für das Management Dashboard oder die SAP Verbindungen wiederhergestellt werden.<br>
 Wichtig: Verwahren Sie das Kennwort an einem sicheren Platz.
 
-![ecscore-deploymentmanager-4.jpg](/img/content/ecscore-deploymentmanager-4.jpg){:class="img-responsive"}
+![ecscore-deploymentmanager-4.png](/img/content/ecscore-deploymentmanager-4.png){:class="img-responsive"}
 
 Klicken Sie auf *Finish*, um die Konfiguration abzuschließen.
 

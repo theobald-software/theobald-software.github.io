@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung5
 Folgende Einstellungen können für die Verbindung zur Zieldatenbank definiert werden.
 
 
-![XU_AzureDWH_Verbindungen](/img/content/XU_AzureDWH_Verbindungen.jpg){:class="img-responsive"}
+![XU_AzureDWH_Verbindungen](/img/content/XU_AzureDWH_Verbindungen.png){:class="img-responsive"}
 
 
 **Server Name**<br>

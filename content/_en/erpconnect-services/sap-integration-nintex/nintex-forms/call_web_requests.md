@@ -43,7 +43,7 @@ In our Nintex Form we require two controls:
 - Enter the web service URL without the */mex* part in the *Service URL* box.
 - Select *POST* as request method. 
 
-![nintex-forms-webrequest-03](/img/content/nintex-forms-webrequest-03.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-03](/img/content/nintex-forms-webrequest-03.png){:class="img-responsive"}
 
 - Define the request body.
 
@@ -72,12 +72,12 @@ For SOAP web service calls a so called SOAP envelope has to be created. The requ
 
 Don't forget to map list field *Customer Name* as an import parameter to the request body. 
 
-![nintex-forms-webrequest-04](/img/content/nintex-forms-webrequest-04.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-04](/img/content/nintex-forms-webrequest-04.png){:class="img-responsive"}
 
 
 For a more detailed explanation of how the SOAP envelop is composed look at the following screenshot, taken in a REST client:
 
-![nintex-forms-webrequest-01](/img/content/nintex-forms-webrequest-01.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-01](/img/content/nintex-forms-webrequest-01.png){:class="img-responsive"}
 
 - Use *text/xml; charset=UTF-8* for the content type
 - Select the authentication type. In this example we use *Windows Authentication*.
@@ -88,11 +88,11 @@ For a more detailed explanation of how the SOAP envelop is composed look at the 
 Name: SOAPAction <br> 
 Value: http://www.theobald-software.com/ERPConnectServices/WebServices/ISAPCustomerWebservice/GetSAPCustomers 
 
-![nintex-forms-webrequest-05](/img/content/nintex-forms-webrequest-05.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-05](/img/content/nintex-forms-webrequest-05.png){:class="img-responsive"}
 
 For a more detailed explanation of how the SOAPAction header is composed look at the following screenshot, taken in a REST client:
 
-![nintex-forms-webrequest-02](/img/content/nintex-forms-webrequest-02.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-02](/img/content/nintex-forms-webrequest-02.png){:class="img-responsive"}
 
 **Step 5: Test the Web Request**
 

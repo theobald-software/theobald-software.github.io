@@ -24,7 +24,7 @@ This parameter *namePattern* will be available when the web service is called.
 
 ![WSD-FM-Exports](/img/content/WSD-FM-Exports.PNG){:class="img-responsive"}
 
-The *TABLES* structure has table *CUSTOMER_T* as *Output* parameters. The table of the SAP function module is mapped to the the web service parameter *customerList*.
+The *TABLES* structure has table *CUSTOMER_T* as *Output* parameters. The table of the SAP function module is mapped to the web service parameter *customerList*.
 This parameter *customerList* will be available when the web service is called.
 
 ![WSD-FM-Tables](/img/content/WSD-FM-Tables.PNG){:class="img-responsive"}

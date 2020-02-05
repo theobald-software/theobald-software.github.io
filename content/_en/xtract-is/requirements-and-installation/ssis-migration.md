@@ -33,7 +33,7 @@ If there is a package in the debug folder, it will automatically be included.
 
 Secondly, select the SSIS version you are preparing the packages for from the drop down box .
 
-![XIS_ConversionPreparer_2016](/img/content/XIS_ConversionPreparer_2016.jpg){:class="img-responsive" width="600px"}
+![XIS_ConversionPreparer_2016](/img/content/XIS_ConversionPreparer_2016.png){:class="img-responsive" width="600px"}
 
 Finally, click on the *Prepare* button to start the conversion process.
 
@@ -50,7 +50,7 @@ Subsequently, you can read the detailed [step-by-step instructions](https://kb.t
 ### 2. Migration from SSIS 2014/2016 to SSIS 2017
 With VS/SSDT 2015 and 2017, you can select the target server version in the project's properties.
 
-![VS_Deployment_Target](/img/content/VS_Deployment_Target.jpg){:class="img-responsive" width="400px"}
+![VS_Deployment_Target](/img/content/VS_Deployment_Target.png){:class="img-responsive" width="400px"}
 
 For more information about supported SSIS versions, their relation to different Visual Studio versions and how to upgrade to higher SSIS versions please check:<br>
 [List of the SSIS/VS Versions Supported by Xtract IS](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is)

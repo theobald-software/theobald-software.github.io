@@ -12,7 +12,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-einstellungen
 ---
 
 
-![LINQToERP-Settings](/img/content/LINQToERP-Settings.jpg){:class="img-responsive"}
+![LINQToERP-Settings](/img/content/LINQToERP-Settings.png){:class="img-responsive"}
 
 **Reuse Classes** <br>
 erlaubt die Verwendung derselben Klasse (einer RFC-Struktur oder RFC-Tabelle) in verschiedenen SAP-Funktionsbausteinen. Haben z.B. zwei verschiedenen Bausteine eine RFC-Tabelle vom selben Typ, dann können beide Tabellen auch den selben Datentyp (z.B. RequestTable) haben und es ist nicht nötig, zwei verschiedene Datentypen(wie RequestTable und RequestTable1) zu definieren.

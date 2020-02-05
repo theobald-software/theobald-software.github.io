@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=bcs-where-clause
 
 For the Finder operation (Read Table) of a table entity you can define a where clause.
 
-![BCS-Where](/img/content/BCS-Where.jpg){:class="img-responsive"}
+![BCS-Where](/img/content/BCS-Where.png){:class="img-responsive"}
 
 The WHERE clause must comply with the SAP OpenSQL syntax.
 
@@ -25,6 +25,6 @@ You will find more information about the OpenSQL syntax on the SAP help site: [h
 
 Values must have the internal SAP representation:
 
-- The date 01.01.1999 has the the internal representation 19990101 (YYYYMMDD),
+- The date 01.01.1999 has the internal representation 19990101 (YYYYMMDD),
 - The year period 001.1999 has the internal representation 1999001 (YYYYPPP),
 - Numbers must have the leading zeros, e.g. customer number 1000 has the internal representation 0000001000.

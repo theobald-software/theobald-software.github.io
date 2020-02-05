@@ -34,9 +34,9 @@ rfcServer.IsUnicode = true;
   
 It's important that the partner name in the SAP transaction SM59 (e.g. p:RFCServerSNC@THEOBALD) is the same as the RFCServer.SNCSettings.OwnName.  
   
-![RFCServer-Destination](/img/content/RFCServer-Destination.jpg){:class="img-responsive" height="500px" width="550px"}
+![RFCServer-Destination](/img/content/RFCServer-Destination.png){:class="img-responsive" height="500px" width="550px"}
   
 If SNC is used with Kerberos and Active Directory, the Active Directory account used for the RFC server must have the right Service Principal Name.  
   
-![RFCServer-AD](/img/content/RFCServer-AD.jpg){:class="img-responsive" height="200px" width="350px"}  
+![RFCServer-AD](/img/content/RFCServer-AD.png){:class="img-responsive" height="200px" width="350px"}  
       

@@ -2,7 +2,7 @@
 Access Management will be activated once you check the checkbox *Restrict Designer access to the following users/groups*. <br>
 Once activated, only the listed users or user groups will be able to log on.
 
-![Server-Settings_](/img/content/Server-Settings_.jpg){:class="img-responsive"}
+![Server-Settings_](/img/content/Server-Settings_.png){:class="img-responsive"}
 
 **Read, Modify, Create, Admin**<br>
 A user group can have one of the following rights. These rights only concern actions (read, create, modify) that can be performed within the Xtract Universal designer. 

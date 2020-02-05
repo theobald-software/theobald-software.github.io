@@ -40,13 +40,13 @@ Um Napa zu installieren, öffnen Sie Ihre Developer Site und wählen Sie Site Co
 
 Öffnen Sie das Napa Add-in auf Ihrer Office 365 bzw. SharePoint Online-Seite.
 
-![ecscore-gettingstarted-01](/img/content/ecscore-gettingstarted-01.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-01](/img/content/ecscore-gettingstarted-01.png){:class="img-responsive"}
 
 Wählen Sie *Add New Project* und dann *Add-in for SharePoint*.
 
-![ecscore-gettingstarted-02](/img/content/ecscore-gettingstarted-02.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-02](/img/content/ecscore-gettingstarted-02.png){:class="img-responsive"}
 
-![ecscore-gettingstarted-03](/img/content/ecscore-gettingstarted-03.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-03](/img/content/ecscore-gettingstarted-03.png){:class="img-responsive"}
 
 Geben Sie einen Namen ein, z.B. SAPMaterials, und klicken Sie auf Create.
 Der Code Editor öffnet sich und zeigt die default Webpage mit einem Beispielcode. 
@@ -62,11 +62,11 @@ Im Beispiel nutzen wir die Version 4.10.2: src="//static.theobald-software.com/t
 Wichtig: Bitte nutzen Sie immer die aktuelle Version von tEcs, welche die neuesten Änderungen und Verbesserungen enthält. Siehe: [http://static.theobald-software.com/tEcs/](http://static.theobald-software.com/tEcs/)
 
 
-![ecscore-gettingstarted-04](/img/content/ecscore-gettingstarted-04.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-04](/img/content/ecscore-gettingstarted-04.png){:class="img-responsive"}
 
 In den Abschnitt *PlaceHolderMain* fügen Sie den unteren HTML-Code ein. 
 
-![ecscore-gettingstarted-05](/img/content/ecscore-gettingstarted-05.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-05](/img/content/ecscore-gettingstarted-05.png){:class="img-responsive"}
 
 Der HTML-Code definiert folgende Controls:             
 
@@ -85,13 +85,13 @@ Die JavaScript-Datei App.js enthält den Code für Ihr SharePoint Add-in. Sie k�
 Im ersten Schritt definieren wir unter der Funktion $(document).ready(), dass beim Klick auf den Button die folgende Funktion aufgerufen werden soll
 GetSAPData(): liest SAP-Daten aus der Tabelle MAKT.
 
-![ecscore-gettingstarted-06](/img/content/ecscore-gettingstarted-06.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-06](/img/content/ecscore-gettingstarted-06.png){:class="img-responsive"}
 
 Bemerkung: Rote, wellenförmige Unterstreichungen können als Hinweis auf Fehler auftreten, werden aber später verschwinden.  
 
 Fügen Sie nun den Code für die Funktion GetSAPData() nach der Funktion $(document).ready() ein.
 
-![ecscore-gettingstarted-07](/img/content/ecscore-gettingstarted-07.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-07](/img/content/ecscore-gettingstarted-07.png){:class="img-responsive"}
 
 Schauen wir uns nun den Code näher an, mit dem wir auf das on-premise SAP-System über Azure Relay und ECS Core zugreifen:
 - connection.ecs.coreApiKey ist der API Key aus Ihrer ECS Core Installation.
@@ -109,13 +109,13 @@ In diesem Beispiel haben wir Daten aus einer SAP-Tabelle gelesen. Im [nächsten 
 Auf der linken Seite klicken Sie auf den Button *run*. 
 Das Projekt wird nun auf Ihrer Office 365 Developer Site installiert.
 
-![ecscore-gettingstarted-08](/img/content/ecscore-gettingstarted-08.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-08](/img/content/ecscore-gettingstarted-08.png){:class="img-responsive"}
 
 Nach der Installation startet das SharePoint Add-In. Falls das Add-In nicht automatisch startet, weil z.B. ein Popup-Blocker aktiviert ist, klicken Sie auf den Add-In-Link, um das Add-In zu starten. 
 
-![ecscore-gettingstarted-09](/img/content/ecscore-gettingstarted-09.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-09](/img/content/ecscore-gettingstarted-09.png){:class="img-responsive"}
 
 Nun geben Sie eine Materialnummer ein und klicken Sie auf den Button.  
 Das Ergebnis wird aus SAP geholt und angezeigt.  
 
-![ecscore-gettingstarted-10](/img/content/ecscore-gettingstarted-10.jpg){:class="img-responsive"}
+![ecscore-gettingstarted-10](/img/content/ecscore-gettingstarted-10.png){:class="img-responsive"}

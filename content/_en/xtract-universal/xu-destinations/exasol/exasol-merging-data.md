@@ -18,11 +18,11 @@ Without an index merging data may take very long depend on the amount of data.
 
 Let's look at the data row for the plant 1000, the field NAME2 has the value NULL.
 
-![Exa-Select-Before-Merge](/img/content/Exa-Select-Before-Merge.jpg){:class="img-responsive"}
+![Exa-Select-Before-Merge](/img/content/Exa-Select-Before-Merge.png){:class="img-responsive"}
 
 Let's update the field NAME2 with the value 'Hamburg'.
 
-![Exa-Update-Merge-Example-Data](/img/content/Exa-Update-Merge-Example-Data.jpg){:class="img-responsive"}
+![Exa-Update-Merge-Example-Data](/img/content/Exa-Update-Merge-Example-Data.png){:class="img-responsive"}
 
 Now let's change the Extraction-Specific Settings and set 
 - Preparation to *Prepare Merge*,  
@@ -31,7 +31,7 @@ Now let's change the Extraction-Specific Settings and set
 to update the existent table. 
 
 
-![Exa-Extraction-Specific-Settings-Merge-Makt](/img/content/Exa-Extraction-Specific-Settings-Merge-Makt.jpg){:class="img-responsive"}
+![Exa-Extraction-Specific-Settings-Merge-Makt](/img/content/Exa-Extraction-Specific-Settings-Merge-Makt.png){:class="img-responsive"}
 
 The merge statement insert a new data row and updates an existent one. 
 
@@ -41,5 +41,5 @@ Fields that are not containet in the merge statement will not be modified.
 
 In this case the field *NAME2* will be updated with the value from the SAP system.
 
-![Exa-Merge-Result-Table-Data](/img/content/Exa-Merge-Result-Table-Data.jpg){:class="img-responsive"}
+![Exa-Merge-Result-Table-Data](/img/content/Exa-Merge-Result-Table-Data.png){:class="img-responsive"}
 

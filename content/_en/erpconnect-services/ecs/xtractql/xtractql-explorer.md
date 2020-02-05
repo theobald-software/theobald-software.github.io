@@ -14,21 +14,21 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-xtractql-explorer
 *XtractQL Explorer* is a tool that is installed as part of ERPConnect Services and allows the execution of XtractQL statements.
 Launch the *XtractQL Explorer* from the *Start menu -> ERP Connect Services*.
 
-![ECS-XtractQL-Explorer](/img/content/ECS-XtractQL-Explorer.jpg){:class="img-responsive"}
+![ECS-XtractQL-Explorer](/img/content/ECS-XtractQL-Explorer.png){:class="img-responsive"}
 
 Select *File -> Connection* ... to define the connection to your SAP system.
 
-![ECS-XtractQL-SAP-Connection](/img/content/ECS-XtractQL-SAP-Connection.jpg){:class="img-responsive"}
+![ECS-XtractQL-SAP-Connection](/img/content/ECS-XtractQL-SAP-Connection.png){:class="img-responsive"}
 
 In the upper portion of the window, enter the XtractQL expression, then select Execute. The result will be shown in the lower portion of the window.
 
-![ECS-XtractQL-Explorer-Table](/img/content/ECS-XtractQL-Explorer-Table.jpg){:class="img-responsive"}
+![ECS-XtractQL-Explorer-Table](/img/content/ECS-XtractQL-Explorer-Table.png){:class="img-responsive"}
 
 **Templates** 
 
 Select the template menu to insert commonly used XtractQL expressions.
 
-![ECS-XtractQL-Explorer-Template](/img/content/ECS-XtractQL-Explorer-Template.jpg){:class="img-responsive"}
+![ECS-XtractQL-Explorer-Template](/img/content/ECS-XtractQL-Explorer-Template.png){:class="img-responsive"}
 
 **Variables**
 
@@ -45,8 +45,8 @@ TABLES CUSTOMER_T INTO @RETVAL;
 
 The input variables can be defined under File -> Parameters.
 
-![ECS-XtractQL-Explorer-Menu](/img/content/ECS-XtractQL-Explorer-Menu.jpg){:class="img-responsive"}
+![ECS-XtractQL-Explorer-Menu](/img/content/ECS-XtractQL-Explorer-Menu.png){:class="img-responsive"}
 
-![ECS-XtractQL-Explorer-Function-Parameter](/img/content/ECS-XtractQL-Explorer-Function-Parameter.jpg){:class="img-responsive"}
+![ECS-XtractQL-Explorer-Function-Parameter](/img/content/ECS-XtractQL-Explorer-Function-Parameter.png){:class="img-responsive"}
 
-![ECS-XtractQL-Explorer-Function](/img/content/ECS-XtractQL-Explorer-Function.jpg){:class="img-responsive"}
+![ECS-XtractQL-Explorer-Function](/img/content/ECS-XtractQL-Explorer-Function.png){:class="img-responsive"}

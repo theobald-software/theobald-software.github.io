@@ -13,4 +13,4 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=externe-liste-in-sharepoint
 
 Mit dem BCS Connector legen Sie nun eine externe Liste in SharePoint an, basierend auf der Entität des SAP-Materials. Navigieren Sie zur SharePoint-Liste stellen Sie sicher, dass die Daten angezeigt werden und die Knöpfe View Item und New Item aktiviert sind. 
 
-![nintex-bcs-external-list](/img/content/nintex-bcs-external-list.jpg){:class="img-responsive"}
+![nintex-bcs-external-list](/img/content/nintex-bcs-external-list.png){:class="img-responsive"}

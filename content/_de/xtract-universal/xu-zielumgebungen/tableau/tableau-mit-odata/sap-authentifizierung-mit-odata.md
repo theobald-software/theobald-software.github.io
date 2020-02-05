@@ -18,12 +18,12 @@ Dazu öffnen Sie die *General Settings* der Extraktion und wählen Sie
 - im Reiter Misc. die Option *Disable Buffer*, und
 - im Reiter *Security* die Option *Require SAP Credentials*. 
 
-![Require-SAP-Credentials](/img/content/Require-SAP-Credentials.jpg){:class="img-responsive"}
+![Require-SAP-Credentials](/img/content/Require-SAP-Credentials.png){:class="img-responsive"}
 
 Im OData-Verbindungsdialog muss nun der Tableau-Benutzer seine SAP-Anmeldedaten (Benutername und Passwort) eingeben. Die Daten werden nun aus SAP mit diesen Anmeldedaten extrahiert. 
 
-![Tableau-Odata-Credentials](/img/content/Tableau-Odata-Credentials.jpg){:class="img-responsive"}
+![Tableau-Odata-Credentials](/img/content/Tableau-Odata-Credentials.png){:class="img-responsive"}
 
 Ungültige SAP-Anmeldedaten führen zur folgenden Fehlermeldung. 
 
-![Tableau-SAP-Credentials-Error](/img/content/Tableau-SAP-Credentials-Error.jpg){:class="img-responsive"}
+![Tableau-SAP-Credentials-Error](/img/content/Tableau-SAP-Credentials-Error.png){:class="img-responsive"}

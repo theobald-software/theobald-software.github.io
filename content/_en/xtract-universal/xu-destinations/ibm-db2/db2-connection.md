@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=db2-connection
 
 The following settings can be defined for the DB2 destination.
 
-![DB2-Connection](/img/content/DB2-Connection.jpg){:class="img-responsive"}
+![DB2-Connection](/img/content/DB2-Connection.png){:class="img-responsive"}
 
 **Connection**
 

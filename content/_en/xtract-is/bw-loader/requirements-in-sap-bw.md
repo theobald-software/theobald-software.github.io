@@ -24,6 +24,6 @@ In case you are using a 3.x data flow you can assign the source system to the In
 For 7.x data flows you create a DataSource for that newly created 3rd party source system and create an InfoPackage.
 Data will be loaded to the PSA of the DataSource.
 
-![XIS_BWLoader_7.x_DS](/img/content/XIS_BWLoader_7.x_DS.jpg){:class="img-responsive"}
+![XIS_BWLoader_7.x_DS](/img/content/XIS_BWLoader_7.x_DS.png){:class="img-responsive"}
 
 For the BW Loader component, the most important thing is the InfoPackage. No data can be loaded without the InfoPackage.

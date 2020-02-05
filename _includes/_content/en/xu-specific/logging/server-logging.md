@@ -3,7 +3,7 @@ Xtract Universal logs all steps performed on a system to log files. This happens
 To view the server log, please click in the main menu on *Server -> Log*. As the screenshot shows a log will be generated per day. To switch between protocols you can use the list on the left. 
 
   
-![View-Server-Log](/img/content/View-Server-Log.jpg){:class="img-responsive"}
+![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
 
 Each log entry is assigned a log level. The following log levels exist:
 

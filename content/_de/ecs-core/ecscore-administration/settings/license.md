@@ -16,4 +16,4 @@ Sie benötigen eine gültige Software-Lizenz, um ECS Core verwenden zu können. 
 Wenn Sie die Software kaufen, erhalten Sie einen neuen Lizenzschlüssel *ECSCoreLicense.json*, den Sie im Verzeichnis C://ECSCore auf dem Windows Server hinterlegen müssen. Selektieren Sie den Schlüssel mit *Browse* und fügen diesen 
 mit *Apply* hinzu.
 
-![ecscore-license](/img/content/ecscore_license.jpg){:class="img-responsive"}
+![ecscore-license](/img/content/ecscore_license.png){:class="img-responsive"}

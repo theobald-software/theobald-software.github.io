@@ -9,4 +9,4 @@ Falls Sie ein Protokoll per Mail an den Support senden wollen, achten Sie bitte 
 
 Sowohl Server- als auch Extraktionsprotokolle werden nach einem definierten Zeitraum automatisch gelöscht. Der Zeitraum kann in der Serverkonfiguration eingestellt werden.
 
-![View-Extraction-Log](/img/content/View-Extraction-Log.jpg){:class="img-responsive"}
+![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}

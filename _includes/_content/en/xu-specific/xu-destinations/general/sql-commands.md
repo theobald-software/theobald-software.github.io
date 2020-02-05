@@ -48,7 +48,7 @@ The merge process is performed using a staging table and takes place in three st
 In the first step, a temporary table is created in which the data is inserted in the second step.
 In the third step, the temporary table is merged with the target table and then the temporary table is deleted.
 
-![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.jpg){:class="img-responsive"}
+![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.png){:class="img-responsive"}
 
 The Merge command updates existing records or inserts non-existing ones. Which fields are updated can be found in the SQL statement.<br>
 The SQL command can be changed if necessary, e.g. to exclude certain columns from the update.<br>
@@ -79,7 +79,7 @@ To do this, you can use the SQL templates provided in the following phases:
 
 You can now also use script expressions for the Custom SQL command. You can find more information on the Script Expressions page (under Advanced Techniques).
 
-![Formula-ExistsTable](/img/content/Formula-ExistsTable.jpg){:class="img-responsive"}
+![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 
 Among other things, you can use the *ExistsTable(tableName)* command to verify the existence of a table. This function was introduced because some database systems only support this to a limited extent.
 

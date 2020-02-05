@@ -1,6 +1,6 @@
 Über den *Extraction Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
-![Report-Extraction-Settings](/img/content/Report-Extraction-Settings.jpg){:class="img-responsive"} 
+![Report-Extraction-Settings](/img/content/Report-Extraction-Settings.png){:class="img-responsive"} 
 
 **Use Batch**<br>
 definiert, ob der Report im Hintergrund ausgeführt werden soll. Das ist vor allem dann sinnvoll, wenn der Report eine ALV-Ausgabe hat.

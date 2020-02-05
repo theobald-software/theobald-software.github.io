@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=connection1
 The following settings can be defined in the SharePoint Destination configuration:
 
 
-![XU_Sharepoint_Dest](/img/content/XU_Sharepoint_Dest.jpg){:class="img-responsive"}            
+![XU_Sharepoint_Dest](/img/content/XU_Sharepoint_Dest.png){:class="img-responsive"}            
 
 
 **SharePoint On-Premise or SharePoint Online**<br>

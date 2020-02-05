@@ -20,7 +20,7 @@ Es öffnet sich das nachfolgende Fenster, in dem Sie Details der Ausführung fes
 
 Die eigentliche Anforderung der Daten erfolgt über eine URL (siehe Screenshot). Es reicht nur die Angabe des Namens, um die Extraktion anzustoßen. Allerdings ist es möglich, über zusätzliche Parameter bestimmte Dinge innerhalb der Extraktion zu übersteuern. Wenn Sie beispielsweise den Defaultwert von 0 (=unbegrenzt) für die maximale Anzahl von Zeilen auf 100 setzen möchten, stellen Sie die *Operationvon Default* auf Override und definieren Sie den gewünschten Parameter in der Value-Spalte. 
 
-![Table-Plants-Run](/img/content/Table-Plants-Run.jpg){:class="img-responsive"}
+![Table-Plants-Run](/img/content/Table-Plants-Run.png){:class="img-responsive"}
 
 Die Parameter *format*, bg und packagesize werden im Abschnitt Settings beschrieben. Um die Extraktion letztendlich auszuführen, klicken Sie auf *Run in Browser*. Ihr Standard-Browser öffnet sich und zeigt das Datenextrakt gemäß den gewünschten Kriterien mit dem gewünschten Format.
 

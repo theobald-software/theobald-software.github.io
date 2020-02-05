@@ -51,7 +51,7 @@ Bestätigen Sie die Auswahl mit *Next*.
 
 Auf der *Choose Components* Seite des Assistenten wählen Sie die Komponenten. die Sie installieren möchten.
 
-![ECS-Setup-Components](/img/content/ECS-Setup-Components.jpg){:class="img-responsive"}
+![ECS-Setup-Components](/img/content/ECS-Setup-Components.png){:class="img-responsive"}
 
 Betätigen Sie die *Next* Schaltfläche, um fortzufahren.
 
@@ -81,7 +81,7 @@ Für die Client-Installation wählen eine oder beide Komponenten auf der Wizard-
 - BCS Connector Designer: installiert den BCS Connector.
 - WebService Designer: installiert den WebService Designer (WS Designer).
 
-![ECS-Setup-Client-Components](/img/content/ECS-Setup-Client-Components.jpg){:class="img-responsive"}
+![ECS-Setup-Client-Components](/img/content/ECS-Setup-Client-Components.png){:class="img-responsive"}
 
 **Installation mit Hilfe der WSP-Packages**
 
@@ -114,11 +114,11 @@ Add-SPSolution -LiteralPath "C:\Program Files\ERPConnect Services\ERPConnectServ
 Add-SPSolution -LiteralPath "C:\Program Files\ERPConnect Services\ERPConnectServices.BCSConnector.wsp"<br>
 Add-SPSolution -LiteralPath "C:\Program Files\ERPConnect Services\ERPConnectServices.WebServiceDesigner.wsp"*
 
-![ECS-Setup-WSP-01](/img/content/ECS-Setup-WSP-01.jpg){:class="img-responsive"}
+![ECS-Setup-WSP-01](/img/content/ECS-Setup-WSP-01.png){:class="img-responsive"}
 
 In der Zentraladministration (System Settings -> Manage farm solutions) können Sie verifizieren, dass die Solutions hinzugefügt wurden.
 
-![ECS-Setup-SP-CA-Solutions-01](/img/content/ECS-Setup-SP-CA-Solutions-01.jpg){:class="img-responsive"}
+![ECS-Setup-SP-CA-Solutions-01](/img/content/ECS-Setup-SP-CA-Solutions-01.png){:class="img-responsive"}
 
 *Schritt 3: Die WSP Solutions (global) deployen*<br>
 Die Solutions können nun deployet werden, entweder in der Zentraladministration (System Settings -> Manage farm solutions) oder mit der SharePoint Management Shell:
@@ -128,11 +128,11 @@ Install-SPSolution -Identity erpconnectservices.wsp -GACDeployment<br>
 Install-SPSolution -Identity erpconnectservices.bcsconnector.wsp -GACDeployment<br>
 Install-SPSolution -Identity erpconnectservices.webservicedesigner.wsp -GACDeployment*
 
-![ECS-Setup-WSP-02](/img/content/ECS-Setup-WSP-02.jpg){:class="img-responsive"}
+![ECS-Setup-WSP-02](/img/content/ECS-Setup-WSP-02.png){:class="img-responsive"}
 
 In der Zentraladministration (System Settings -> Manage farm solutions) können Sie verifizieren, dass die Solutions hinzugefügt wurden.
 
-![ECS-Setup-SP-CA-Solutions-02](/img/content/ECS-Setup-SP-CA-Solutions-02.jpg){:class="img-responsive"}
+![ECS-Setup-SP-CA-Solutions-02](/img/content/ECS-Setup-SP-CA-Solutions-02.png){:class="img-responsive"}
 
 **SharePoint-Farm**
 
@@ -154,7 +154,7 @@ In einer SharePoint-Farm werden die ERPConnect Services Runtime und die BCS Runt
 
 Installieren Sie ECS zunächst auf dem Server mit der Zentraladministration. Es ist egal, welche Server-Rolle dieser Server besitzt, auch Shared-Roles werden unterstützt. Schauen Sie nach der Installation zunächst unter Zentraladministration  -> System Settings -> Servers -> Manage services on server ob der ERPConnect Service dort vorhanden ist. Er sollte in der Liste auftauchen und zunächst als Not Compliant markiert sein. Mit Fix oder Stop stoppen Sie den Service auf den Servern, wo er nicht benötigt wird. 
 
-![ECS-Setup-SP-Farm_Services](/img/content/ECS-Setup-SP-Farm_Services.jpg.png){:class="img-responsive"}
+![ECS-Setup-SP-Farm_Services](/img/content/ECS-Setup-SP-Farm_Services.png.png){:class="img-responsive"}
 
 **Neustarten des SharePoint-Servers**<br>
 Jeder SharePoint-Server, auf dem die ERPConnect Services installiert wurden, muss neu gestartet werden.
@@ -172,7 +172,7 @@ Im zweiten Schritt können Sie [eine ECS Service Application anlegen]().
 Überprüfen Sie außerdem, ob der ERPConnect Service gestartet ist (betrifft insbesondere [SP2016]()):<br>
 System Settings -> Servers -> Manage services on Server -> ERPConnect Services -> Start 
 
-![ECS-Setup-SP-CA](/img/content/ECS-Setup-SP-CA.jpg){:class="img-responsive"}
+![ECS-Setup-SP-CA](/img/content/ECS-Setup-SP-CA.png){:class="img-responsive"}
 
 **Dll-Dateien**<br>
 Alle mitgebrachten Dateien werden im Programmverzeichnis abgelegt. Folgende Dateien sind wichtig:<br>

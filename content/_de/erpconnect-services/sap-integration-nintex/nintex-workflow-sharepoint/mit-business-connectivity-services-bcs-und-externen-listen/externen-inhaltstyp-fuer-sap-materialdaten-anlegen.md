@@ -14,7 +14,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=externen-inhaltstyp-fuer-sa
 Im BCS Connector definieren Sie zuerst die Verbindungen zu den SharePoint- und SAP-Systemen.<br>
 Legen Sie dann eine neue Entität an. In diesem Beispiel nutzen wir einen Z-Funktionsbaustein, um Materialdatensätze in SAP anzulegen. 
 
-![nintex-bcs-material](/img/content/nintex-bcs-material.jpg){:class="img-responsive"}
+![nintex-bcs-material](/img/content/nintex-bcs-material.png){:class="img-responsive"}
 
 Legen Sie die gewünschten Operationen für die Entität an: Read Data Record, Read Data und Create Data Record.<br>
 Deployen Sie das BCS-Modell auf SharePoint.

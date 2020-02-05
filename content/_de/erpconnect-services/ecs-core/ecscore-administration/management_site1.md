@@ -19,7 +19,7 @@ Die Management Site kann auch über den IIS Manager gestartet werden.
 
 Das initiale Benutzer/Passwort-Paar lautet admin/admin. Ändern Sie es am besten direkt nach der erstmaligen Anmeldung an der Management Site. Wie Sie das Passwort ändern können, ist unter *[Settings>Administrators]()* beschrieben. 
 
-![2014-12-15-13_41_39-Log-in](/img/content/2014-12-15-13_41_39-Log-in.jpg){:class="img-responsive"}
+![2014-12-15-13_41_39-Log-in](/img/content/2014-12-15-13_41_39-Log-in.png){:class="img-responsive"}
 
 
 Es stehen folgende Dienste auf der Management Site zur Verfügung:

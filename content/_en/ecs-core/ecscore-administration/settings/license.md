@@ -15,4 +15,4 @@ You need a valid software license to use ECS Core. The *License* tab shows the c
 When you purchase the software, you will receive a new license key *ECSCoreLicense.json*, which you must store in the directory C://ECSCore on the Windows server. Select the key with *Browse* and add it 
 with "apply.
 
-![ecscore-license](/img/content/ecscore_license.jpg){:class="img-responsive"}
+![ecscore-license](/img/content/ecscore_license.png){:class="img-responsive"}

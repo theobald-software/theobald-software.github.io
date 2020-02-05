@@ -39,7 +39,7 @@ Please go to the Server Manager (Windows Server) or to Windows Features (Windows
 To start the Deployment Manager after the ECSCore installation go to the installation folder (normally C:\Program Files\ERPConnect Services Core) and run the file:
 **ERPConnectServices.DeploymentManager.exe**. Please also run the Deployment Manager after doing a software update or re-installation of ECS Core. In this case only an update is processed in the Deployment Manager and you don't have to go through all the steps described here again. 
 
-![Deployment-Manager](/img/content/Deployment-Manager.jpg){:class="img-responsive"}
+![Deployment-Manager](/img/content/Deployment-Manager.png){:class="img-responsive"}
 
 The Wizard checks the prerequisites
 
@@ -59,19 +59,19 @@ Default deployment path: C:\ECSCore
 The *Services Site* is used to check the current status of the SAP connection, clear caches.
 Default port is 8080. You can open the web site after the deployment process via IIS or directly in the web browser using the given port (http://localhost:8080).
 
-![Deployment-Manager-02](/img/content/Deployment-Manager-02.jpg){:class="img-responsive"}
+![Deployment-Manager-02](/img/content/Deployment-Manager-02.png){:class="img-responsive"}
 
 **Management Site**
 
 The *Management Site* incorporates administration tasks such as adding SAP services and users for them, Secure Stores, API Keys, managing Azure Service Bus, UI Administrators, License. Default port is 8085. You can open the web site after the deployment process via IIS or directly in the web browser using the given port (http://localhost:8085).
 
-![Deployment-Manager-03](/img/content/Deployment-Manager-03.jpg){:class="img-responsive"}
+![Deployment-Manager-03](/img/content/Deployment-Manager-03.png){:class="img-responsive"}
 
 **Database**
 
 In the *Database* ribbon *Microsoft SQL Server Compact*  is already selected. In this database all ECSCore configuration settings will be stored. 
 
-![Deployment-Manager-04](/img/content/Deployment-Manager-04.jpg){:class="img-responsive"}
+![Deployment-Manager-04](/img/content/Deployment-Manager-04.png){:class="img-responsive"}
 
 **Master Key** 
 
@@ -82,7 +82,7 @@ We recommend to save the Master Key at a save place.
 Press *Finish* to let the DM Wizard complete the configuration.
 
 
-![Deployment-Manager-05](/img/content/Deployment-Manager-05.jpg){:class="img-responsive"}
+![Deployment-Manager-05](/img/content/Deployment-Manager-05.png){:class="img-responsive"}
 
 After this step the Websites should be ready and functional. You can open them from the IIS Manager. 
 Check [Management Site](../administration/management-site) and [Services Site](../administration/services-site). 

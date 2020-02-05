@@ -14,7 +14,7 @@ old_url: /ECS-Core-DE/default.aspx?pageid=testen-des-webservice
 Um einen Webservice testen zu können, müssen Sie diesen zunächst zum ECS Core Server deployen. 
 Um das Testen des Service in einem REST-Client zu erleichtern, können die Einstellungen zuvor im *Web Service Test Data Generation Dialog* nachgeschlagen und von dort kopiert werden. 
 
-![ecscore-webservicetestdialog](/img/content/ecscore-wsd_20.jpg){:class="img-responsive"}
+![ecscore-webservicetestdialog](/img/content/ecscore-wsd_20.png){:class="img-responsive"}
 
 Folgende Einstellungen werden im Dialog angezeigt:
 

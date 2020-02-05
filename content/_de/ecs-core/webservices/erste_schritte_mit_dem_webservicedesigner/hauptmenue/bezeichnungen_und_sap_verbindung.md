@@ -12,7 +12,7 @@ lang: de_DE
 
 Folgende Einstellungen für Webservice-Bezeichnungen und die SAP-Verbindung lassen sich im Hauptmenü vornehmen:
 
-![WSD-16](/img/content/ecscore-wsd_16.jpg){:class="img-responsive"}
+![WSD-16](/img/content/ecscore-wsd_16.png){:class="img-responsive"}
 
 **Name** (Standard: NewECSCoreWebService) <br>
 Frei wählbarer Webservice-Name. Der Name darf keine Sonder- oder Leerzeichen enthalten.

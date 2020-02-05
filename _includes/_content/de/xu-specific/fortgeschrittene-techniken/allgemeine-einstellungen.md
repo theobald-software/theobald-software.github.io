@@ -2,7 +2,7 @@ Jeder Extraktionsdialog hat den Link General Settings, der allgemeine Einstellun
 
 **Misc. Reiter** 
 
-![General-Settings](/img/content/General-Settings.jpg){:class="img-responsive"}
+![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
 
 **Disable Buffer**
 

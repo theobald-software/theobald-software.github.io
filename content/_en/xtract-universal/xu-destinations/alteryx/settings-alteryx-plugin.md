@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=settings-alteryx-plugin-en-
 
 To use the Xtract Universal tool you will have to add it to a workflow.
 
-![XU_alteryx_plugin](/img/content/XU_alteryx_plugin.jpg){:class="img-responsive"}
+![XU_alteryx_plugin](/img/content/XU_alteryx_plugin.png){:class="img-responsive"}
 
 Following settings have to be specified for the Xtract Universal tool in the Alteryx Designer.
 

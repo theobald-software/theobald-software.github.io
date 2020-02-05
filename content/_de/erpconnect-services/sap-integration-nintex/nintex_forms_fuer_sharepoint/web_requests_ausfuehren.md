@@ -44,7 +44,7 @@ In unserer Nintex-Form benötigen wir zwei Controls:
 - Geben Sie die Webservice-URL ohne den */mex*-Teil im Feld *Service-URL* ein.
 - Wählen Sie *POST* als Authentifizierungsmethode. 
 
-![nintex-forms-webrequest-03](/img/content/nintex-forms-webrequest-03.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-03](/img/content/nintex-forms-webrequest-03.png){:class="img-responsive"}
 
 - Definieren Sie den Request Body.
 
@@ -64,12 +64,12 @@ Für SOAP-Webservice-Aufrufe muss ein sogenannter SOAP envelope erstellt werden.
 
 Vergessen Sie nicht, das Listenfeld *Customer Name* als Importparameter auf den Request Body zu mappen. 
 
-![nintex-forms-webrequest-04](/img/content/nintex-forms-webrequest-04.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-04](/img/content/nintex-forms-webrequest-04.png){:class="img-responsive"}
 
 
 Für eine detailliertere Erklärung des Aufbaus des SOAP envelopes siehe folgenden Screenshot aus einem REST-Client:
 
-![nintex-forms-webrequest-01](/img/content/nintex-forms-webrequest-01.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-01](/img/content/nintex-forms-webrequest-01.png){:class="img-responsive"}
 
 - Verwenden Sie *text/xml; charset=UTF-8* als Content Type.
 - Wählen Sie den Authentifizierungstyp aus. In diesem Beispiel verwenden wir *Windows Authentication*.
@@ -80,11 +80,11 @@ Für eine detailliertere Erklärung des Aufbaus des SOAP envelopes siehe folgend
 Name: SOAPAction <br>> 
 Wert: http://www.theobald-software.com/ERPConnectServices/WebServices/ISAPCustomerWebservice/GetSAPCustomers 
 
-![nintex-forms-webrequest-05](/img/content/nintex-forms-webrequest-05.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-05](/img/content/nintex-forms-webrequest-05.png){:class="img-responsive"}
 
 Für eine detailliertere Erklärung des Aufbaus des SOAPAction-Headers siehe folgenden Screenshot aus einem REST-Client:
 
-![nintex-forms-webrequest-02](/img/content/nintex-forms-webrequest-02.jpg){:class="img-responsive"}
+![nintex-forms-webrequest-02](/img/content/nintex-forms-webrequest-02.png){:class="img-responsive"}
 
 **Schritt 5: Testen Sie den Web Request**.
 

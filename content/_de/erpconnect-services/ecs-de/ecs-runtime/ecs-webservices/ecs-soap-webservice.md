@@ -28,4 +28,4 @@ Der Webdienst bietet folgende Oprationen an:
 - ExecuteTableQuery
 - ExecuteTableQueryAndReturnDataTable
 
-![ECS-SOAP-WS](/img/content/ECS-SOAP-WS.jpg){:class="img-responsive"}
+![ECS-SOAP-WS](/img/content/ECS-SOAP-WS.png){:class="img-responsive"}

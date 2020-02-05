@@ -19,16 +19,16 @@ The following steps describe how you can install an ERPConnect Services license.
 
 To install a license, go to the *Central Administration* and in the *ERPConnect Services* group select *Manage Licenses*.
 
-![ECS-License-SP-CA-01](/img/content/ECS-License-SP-CA-01.jpg){:class="img-responsive" }
+![ECS-License-SP-CA-01](/img/content/ECS-License-SP-CA-01.png){:class="img-responsive" }
 
 Select *Add License* to install a new license.
 
-![ECS-License-SP-CA-02](/img/content/ECS-License-SP-CA-02.jpg){:class="img-responsive" }
+![ECS-License-SP-CA-02](/img/content/ECS-License-SP-CA-02.png){:class="img-responsive" }
 
 Paste the encrypted license that you received from the Theobald Support team and then select *Add License*.
 
-![ECS-License-SP-CA-03](/img/content/ECS-License-SP-CA-03.jpg){:class="img-responsive" }
+![ECS-License-SP-CA-03](/img/content/ECS-License-SP-CA-03.png){:class="img-responsive" }
 
 Select *Refresh* if the new license is not immediately displayed.
 
-![ECS-License-SP-CA-04](/img/content/ECS-License-SP-CA-04.jpg){:class="img-responsive" }
+![ECS-License-SP-CA-04](/img/content/ECS-License-SP-CA-04.png){:class="img-responsive" }

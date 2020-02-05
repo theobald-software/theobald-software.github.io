@@ -24,18 +24,18 @@ Wir definieren eine Extraktion basierend auf der SAP Tabelle T001W für Werke.
 
 Klicken Sie auf die Schaltfläche *Destination* und wählen die bereits angelegte Azure DWH Zielumgebung aus dem Drop Down Menü (siehe Abschnitt Verbindung). Behalten Sie die sonstigen Einstellungen bei.
 
-![XU_Destination_Azure_DWH](/img/content/XU_Destination_Azure_DWH.jpg){:class="img-responsive"}
+![XU_Destination_Azure_DWH](/img/content/XU_Destination_Azure_DWH.png){:class="img-responsive"}
 
 Damit wird mit der Option "Drop & Create" eine Tabelle mit dem Namen "T001W" neu angelegt.<br>
 Falls die Tabelle schon existiert, wird sie vorher von der Datenbank gelöscht. 
 
 Sie können sich das SQL-Statement dafür anschauen, dazu wählen Sie unter Preparation den Eintrag *Custom SQL* und klicken dann auf *Edit SQL*.
 
-![XU_Azure_DWH_CustomSQL_Select](/img/content/XU_Azure_DWH_CustomSQL_Select.jpg){:class="img-responsive"}
+![XU_Azure_DWH_CustomSQL_Select](/img/content/XU_Azure_DWH_CustomSQL_Select.png){:class="img-responsive"}
 
 Im neuen Fenster wählen Sie *Drop & Create* und klicken auf *Generate Statement*.
 
-![XU_Azure_DWH_CustomSQL_SQL](/img/content/XU_Azure_DWH_CustomSQL_SQL.jpg){:class="img-responsive"}
+![XU_Azure_DWH_CustomSQL_SQL](/img/content/XU_Azure_DWH_CustomSQL_SQL.png){:class="img-responsive"}
 
 Tabellenspalten werden mit entsprechendem Datentyp angelegt.<br>
 Sie haben die Möglichkeit das SQL-Statement anzupassen bzw. ein anderes zu verwenden. Wir belassen es bei der Standard-Option Create & Drop für Preparation. 
@@ -49,4 +49,4 @@ Um die Extraktion auszuführen, klicken Sie auf den Button *Run*. Im Fenster *Ru
 
 Im Designer klicken Sie auf den Button Refresh, um sich den Status der Ausführung anzuschauen. In unserem Beispiel wurden 238 Datensätze in die Datenbank geladen.
 
-![XU_AzureDWH_Extraction_Overview](/img/content/XU_AzureDWH_Extraction_Overview.jpg){:class="img-responsive"}
+![XU_AzureDWH_Extraction_Overview](/img/content/XU_AzureDWH_Extraction_Overview.png){:class="img-responsive"}
