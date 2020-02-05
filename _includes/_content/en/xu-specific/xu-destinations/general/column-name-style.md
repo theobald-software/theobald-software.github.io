@@ -1,4 +1,4 @@
-### Column Name Style
+#### Subsection Column Name Style
 
 Defines the style of the column name. Following options are available: 
 
