@@ -41,6 +41,4 @@ The settings can be changed in the window "Destination Settings".
 {:.box-tip}
 **Recommendation:** Keep the default value (2) for Max. threads.
 
-#### Subsection Column Name Style
-
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
