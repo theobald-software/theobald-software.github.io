@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: odp
 permalink: /:collection/:path
-weight: 14
+weight: 15
 lang: de_DE
 ---
 

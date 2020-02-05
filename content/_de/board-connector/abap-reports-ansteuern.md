@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: abap-reports-ansteuern
 permalink: /:collection/:path
-weight: 11
+weight: 12
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=abap-reports-ansteuern
 ---

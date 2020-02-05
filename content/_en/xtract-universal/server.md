@@ -12,6 +12,6 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=server
 ---
 
-In this chapter we give you an overview about the Xtract Universal server.
+The follwing section contains an overview of the Xtract Universal server.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

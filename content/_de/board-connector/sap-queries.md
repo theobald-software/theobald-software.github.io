@@ -7,13 +7,18 @@ product: board-connector
 parent: board-connector
 childidentifier: sap-queries
 permalink: /:collection/:path
-weight: 10
+weight: 11
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sap-queries
 ---
 
-**Achtung!!** Bitte beachten Sie, dass dieser Abschnitt nur die Anwendung der Query Komponente enthält. Alle anderen Grundlagen entnehmen Sie bitte dem Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table). Das Wissen über die grundsätzliche Funktionsweise vom BOARD Connector wird in diesem Kapitel vorausgesetzt!
+Der folgende Abschnitt beschreibt die Anwendung der  BOARD Connector Query Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
-**Achtung!!** Mit dem Begriff Query ist keine BW Query sondern eine "normale" Query gemeint, die Sie in den Transaktionen SQ02 und SQ01 erstellen. Wenn Sie eine BW Query als Datengrundlage verwenden möchten, sehen Sie bitte im Abschnitt [BW InfoCubes und BEx Queries](./bw-infocube-und-bex-queries) nach.
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
+
+{: .box-note}
+**Hinweis** Mit dem Begriff Query ist keine BW Query sondern eine "normale" Query gemeint, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>
+Wenn Sie eine BW Query als Datengrundlage verwenden möchten, sehen Sie den Abschnitt [BW InfoCubes und BEx Queries](./bw-infocubes-und-bex-queries).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

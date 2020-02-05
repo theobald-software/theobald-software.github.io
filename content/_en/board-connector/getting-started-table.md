@@ -7,12 +7,12 @@ product: board-connector
 parent: board-connector
 childidentifier: getting-started-table
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: en_GB
 ---
 
-Please note that this chapter contains not only the details of the SAP table extraction with Table, but also is a general introduction to  the BOARD Connector.
+This section contains the details of the SAP table extraction with the Xtract Table component and a general introduction to BOARD Connector.
 
-It is therefore a prerequisite for all subsequent chapters.
+This section is therefore a prerequisite for all subsequent sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

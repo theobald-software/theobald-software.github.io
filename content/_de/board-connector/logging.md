@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: logging
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=logging
 ---

@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: bw-hierarchien
 permalink: /:collection/:path
-weight: 13
+weight: 14
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-hierarchien
 ---

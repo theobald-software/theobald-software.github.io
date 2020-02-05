@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: datasource-deltaq
 permalink: /:collection/:path
-weight: 15
+weight: 17
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=datasource-deltaq
 ---

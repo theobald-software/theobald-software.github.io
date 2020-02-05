@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: bapis-und-funktionsbausteine
 permalink: /:collection/:path
-weight: 9
+weight: 10
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
