@@ -24,21 +24,7 @@ Let's update the field NAME2 with the value 'Hamburg'.
 
 ![MSSql-Update-Merge-Example-Data](/img/content/MSSql-Update-Merge-Example-Data.png){:class="img-responsive"}
 
-Now let's change the Extraction-Specific Settings and set 
-- Preparation to Create *if Not Exists* and 
-- Row Processing to *Merge*
-to merge the data. 
-Alternatively you can set Preparation to None since the destination table exists. 
-
-![MSSql-Extraction-Specific-Settings-Merge-T001w](/img/content/MSSql-Extraction-Specific-Settings-Merge-T001w.png){:class="img-responsive"}
-
-The merge statement insert a new data row and updates an existent one. 
-
-![MSSql-Custom-SQL-Merge](/img/content/MSSql-Custom-SQL-Merge.png){:class="img-responsive"}
-
-The SQL statement contains the fields that will be updated.<br> 
-The SQL statement can be modified, e.g. if you would not like to update all fields bot only some.<br>
-Fields that are not containet in the merge statement will not be modified.
+{% include _content/en/xu-specific/xu-destinations/merge-data/db-merge-data.md  %}
 
 In this case the field NAME2 will be updated with the value from the SAP system.
 
