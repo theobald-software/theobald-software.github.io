@@ -1,38 +1,46 @@
 
-Wenn Sie im Designer auf *Run* klicken, finden Sie im Reiter *Extraction Parameters* die folgenden Parameter, welche Sie überschreiben können. 
+Der folgende Abschnitt beschreibt die Extraktionsparameter, die im Fenster "Run extractions" geändert werden können. 
 
-Wenn Sie einen Wert überschreiben, wird die URL entsprechend angepasst. 
+![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
-![XU_extraction_parameters](/img/content/XU_extraction_parameters.png){:class="img-responsive"}
+Um das Fenster "Run extractions" zu öffnen, wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** (siehe Details in [Eine Extraktion ausführen](../xtract-universal/erste-schritte-mit-table/eine-extraktion-ausfuehren)).
 
-*preview*<br>
-Um den Preview zu aktivieren. Default-Wert ist False.
+### Subsektion "Parameters" Tab "Extraction"
+Die Menge der Parameter hängt von dem Extraktionstyp und der Destination ab, z.B. ist **decimalSeparator** ein Parameter, der nur in der CSV-Destination vorhanden ist.
 
-*clearBuffer*<br>
-Um den Ergebnis-Buffer zu leeren. Default-Wert ist False.
+Parametername | Beschreibung | Spezielle Infos
+------------ | ------------- | -------------
+clearBuffer | leert den Ergebnis-Buffer | Default-Wert - false
+preview | aktiviert die Preview | Default-Wert - false
+source | ermöglicht das dynamische Auswählen eines SAP-Quellsystems aus dem die Daten extrahiert werden. Aktiv, wenn mehrere SAP-Quellsysteme verfügbar sind, z.B. sap_dev und sap_prod. | -
+destination | ermöglicht das dynamische Auswählen einer Destination, in die die extrahierten Daten geschrieben werden. Aktiv, wenn mehrere Destinationen verfügbar sind, z.B. db_1 und db_2.| -
+rows | setzt die maximale Anzahl der extrahierten Datensätze | verfügbar in Table
+where | setzt die WHERE-Bedingung | verfügbar in Table
+packageSize | setzt die Paketgröße | verfügbar in Table
+decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar in CSV
+columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV
 
-*source*<br>
-Wenn Sie mehrere SAP Quellsysteme angelegt haben, z.B. sap_dev und sap_prod, können Sie über diesen Parameter auswählen, aus welchem SAP System die Daten extrahiert werden.
+### Subsektion "Parameters" Tab "Extraction"
+![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
-*destination*<br>
-Wenn Sie mehrer Zielumgebungen angelegt haben, z.b. db_1 und db_2, können Sie über diesen Parameter auswählen, in welche Zielumgebung die extrahierten Daten geschrieben werden.
+In diesem Tab können Sie die Werte überschreiben, die in den [SAP-Quellendetails](../xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen)  definiert sind.
 
-*wait*
-Bestimmt, ob die http-Verbindung zum aufrufenden Client, bis zum Ende der Extraktion bestehen soll. Default-Wert is True.<br>
-Wenn Sie den Wert auf False setzen, wird die Extraktion asynchron aufgerufen. Die http-Verbindung zwischen aufrufendem Client  (xu.exe bzw. Browser) und XU-Server wird getrennt, nachdem die Extraktion gestartet wurde. Das kann z.B. bei langlaufenden Extraktionen sinnvoll sein. Dadurch wird die Extraktion z.B. auch dann nicht abgebrochen, wenn der aufrufende Client geschlossen wird.<br>
-In diesem Fall wird der Zeitstempel als Ergebnis zurückgeliefert. Der Zeitstempel kann verwendet werden, um das entsprechende Log aufzurufen. 
 
-**Table**
+Parametername | Beschreibung |
+------------ | ------------- | 
+lang | ändert dynamisch die SAP-Anmeldesprache des SAP-Quellsystems  
+logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Ticket](./sap-single-sign-on/sso-with-sap-logon-ticket) für mehr Details.
 
-Je nach Extraktionstyp stehen weitere Parameter zur Verfügung Für die Table-Extraktion stehen beispielsweise noch folgende Parameter zur Verfügung.
+{: .box-note }
+**Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket" als Authentifizierungsmethode in den [SAP-Quelldetails](../xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen)  ausgewählt ist.
 
-*rows*<br>
-Um die maximale Anzahl der extrahierten Datensätze zu setzen. 
 
-*where*<br>
-Um die Where-Bedingung zu setzen. 
+### Subsektion "Parameters" Tab "Custom"
 
-*packageSize*<br>
-Um die Paketgröße zu setzen.  
+{: .box-note }
+**Hinweis:** Das Tab "Custom" ist nur dann aktiv, wenn eine Variable mit dem @-Symbol in der [WHERE-Bedingung](../table/where-bedingung) definiert ist.
 
+Um den vordefinierten Parameter einzustellen, markieren Sie das Kästchen und geben Sie den gewünschten Wert ein.
+ 
+![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
 
