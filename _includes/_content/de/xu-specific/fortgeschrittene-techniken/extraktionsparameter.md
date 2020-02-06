@@ -12,7 +12,8 @@ Parametername | Beschreibung | Spezielle Infos
 ------------ | ------------- | -------------
 clearBuffer | leert den Ergebnis-Buffer | Default-Wert - false
 preview | aktiviert die Preview | Default-Wert - false
-source | ermöglicht das dynamische Auswählen eines SAP-Quellsystems aus dem die Daten extrahiert werden. Aktiv, wenn mehrere SAP-Quellsysteme verfügbar sind, z.B. sap_dev und sap_prod. | -
+source | ermöglicht das dynamische Auswählen eines SAP-Quellsystems aus dem die Daten extrahiert werden.
+ Aktiv, wenn mehrere SAP-Quellsysteme verfügbar sind, z.B. sap_dev und sap_prod. | -
 destination | ermöglicht das dynamische Auswählen einer Destination, in die die extrahierten Daten geschrieben werden. Aktiv, wenn mehrere Destinationen verfügbar sind, z.B. db_1 und db_2.| -
 rows | setzt die maximale Anzahl der extrahierten Datensätze | verfügbar in Table
 where | setzt die WHERE-Bedingung | verfügbar in Table
@@ -20,19 +21,19 @@ packageSize | setzt die Paketgröße | verfügbar in Table
 decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar in CSV
 columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV
 
-### Subsektion "Parameters" Tab "Extraction"
+### Subsektion "Parameters" Tab "Source"
 ![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
-In diesem Tab können Sie die Werte überschreiben, die in den [SAP-Quellendetails](../xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen)  definiert sind.
+In diesem Tab können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](.sap-verbindungen-anlegen)  definiert sind.
 
 
 Parametername | Beschreibung |
 ------------ | ------------- | 
 lang | ändert dynamisch die SAP-Anmeldesprache des SAP-Quellsystems  
-logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Ticket](./sap-single-sign-on/sso-with-sap-logon-ticket) für mehr Details.
+logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Ticket](./sap-single-sign-on/sso-mit-sap-logon-ticket) für mehr Details.
 
 {: .box-note }
-**Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket" als Authentifizierungsmethode in den [SAP-Quelldetails](../xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen)  ausgewählt ist.
+**Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket" als Authentifizierungsmethode in den [SAP-Quelldetails](.sap-verbindungen-anlegen)   ausgewählt ist.
 
 
 ### Subsektion "Parameters" Tab "Custom"
