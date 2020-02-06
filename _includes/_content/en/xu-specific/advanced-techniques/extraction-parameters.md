@@ -1,6 +1,6 @@
 The follwing section describes the extraction parameters can be changed in the window "Run extractions".
 
-![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
+![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
 To open "Run extractions" window, select an extraction in the main window of the Designer and click **[Run]** (see details in [Running an extraction](./content/_en/xtract-universal/getting-started-table/run-an-extraction)).
 
@@ -8,8 +8,6 @@ To open "Run extractions" window, select an extraction in the main window of the
 
 The amount of the parameters depends on the extraction type and destination.
 e.g., **decimalSeparator** is a parameter specific to CSV destination.
-
-![XU_extraction_parameters](/img/content/XU_extraction_parameters.png){:class="img-responsive"}
 
 Parameter name | Parameter description | Default value
 ------------ | ------------- | -------------
@@ -24,6 +22,8 @@ decimalSeparator | **CSV special:** To set a symbol between integer and fraction
 columnSeparator | **CSV special:** To set a symbol which indicates the start of a new column | -
 
 ### Subsection "Parameters" Tab "Source"
+
+![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
 In this tab you can override the values that are defined in the [SAP source details](./sap-connection).
 
