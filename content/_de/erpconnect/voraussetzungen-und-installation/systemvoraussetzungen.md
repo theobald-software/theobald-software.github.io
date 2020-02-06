@@ -32,18 +32,9 @@ Daraus ergibt sich folgende Kompatibilitätsmatrix:
 |.NET Core 2.0 und neuer | X |	X	| X |
 |Universal Windows Platform 10.0.16299 und neuer	| X | | |	 	 
 
+{% include _content/de/sap-releases.md %}
 
-### SAP Releases
- 	
-- SAP R/3 Version 4.0B oder höher oder SAP ECC.
-- SAP BW Version 3.1 oder höher.
-
-| Komponente | SAP Release            | Anforderung an das SAP System                                         |
-|------------|------------------------|-----------------------------------------------------------------------|
-| Table      | Rel. above 4.0B        | Keine.
-| Query      | Rel. 4.0B und höher.   | Keine.                                                                |
-| BAPI       | Rel. 4.0B und höher    | Keine.                                                                |
-| BW Cube    | Rel. BW 3.1 und höher. | Keine.                                                                |
+Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträgen ist nicht erforderlich. 
 
 {% include _content/de/operating-systems.md %}
 
