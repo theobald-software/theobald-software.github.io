@@ -3,7 +3,7 @@ The follwing section describes the extraction parameters can be changed in the w
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
 To open "Run extractions" window, select an extraction in the main window of the Designer and click 
-**[Run]** (see details in [Running an extraction](../xtract-universal/getting-started-table/run-an-extraction)).
+**[Run]** (see details in [Running an extraction](../getting-started-table/run-an-extraction)).
 
 ### Subsection "Parameters" Tab "Extraction"
 
