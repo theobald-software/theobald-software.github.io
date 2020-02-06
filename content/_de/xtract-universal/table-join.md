@@ -14,7 +14,6 @@ lang: de_DE
 {: .box-warning }
 **Warnung! Veraltete Komponente** 
 Ab [Xtract Universal Version 4.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html) ist die Table Join Komponente obsolet.<br>
-
 Nutzen sie die Table Join Funktionalität der neuen [Table-](./table/table-joins)Komponente.
 
 

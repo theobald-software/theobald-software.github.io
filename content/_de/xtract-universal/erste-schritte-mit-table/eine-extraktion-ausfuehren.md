@@ -41,6 +41,6 @@ Klicken Sie auf **[Run in Browser]**, um eine Extraktion im Browser auszuführen
 
 ### Planen einer Extraktion
 
-Das Planen von Extraktionen zu einem späteren Zeitpunkt ist mit dem Windows Task Scheduler möglich. Um die Task Scheduler-Funktionalität zu nutzen, führen Sie Xtract Universal über eine [Kommandozeile](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/run-from-a-command-line) aus.
+Das Planen von Extraktionen zu einem späteren Zeitpunkt ist mit dem Windows Task Scheduler möglich. Um die Task Scheduler-Funktionalität zu nutzen, führen Sie Xtract Universal über eine [Kommandozeile](../fortgeschrittene-techniken/extraktion_einplanen) aus.
 
 

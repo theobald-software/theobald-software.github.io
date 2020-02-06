@@ -14,7 +14,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=ssis-migration
 Dieses Kapitel behandelt die Migration von SSIS Paketen.<br>
 Beispielhaft wird ein SQL Server 2012 nach SQL Server 2017 migriert. Dies erfordert ebenfalls eine Migration der SSIS Pakete.
 
-Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSDT und SSIS, siehe [hier](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is).
+Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von . Mehr Details finden Sie im Knowledgebase-Artikel [Step-by-step instructions for migrating SSIS 2008/2012 packages to SSIS 2017](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
 
 ### Migration von SSIS 2008/2012 nach SSIS 2017
 1.  Migration mithilfe des *XtractISConversionPreparer.exe*
