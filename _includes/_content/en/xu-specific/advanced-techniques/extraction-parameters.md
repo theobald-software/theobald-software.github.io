@@ -1,4 +1,5 @@
-Extraction parameters can be change in the window "Run extractions".
+The follwing section describes the extraction parameters can be changed in the window "Run extractions".
+
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
 To open "Run extractions" window, select an extraction in the main window of the Designer and click **[Run]** (see details in [Running an extraction](./content/_en/xtract-universal/getting-started-table/run-an-extraction)).
@@ -38,7 +39,7 @@ logonTicket | To dynamically change the ticket issuer of the [SAP logon ticket](
 ### Subsection "Parameters" Tab "Custom"
 
 {: .box-note }
-**Note:** The tab "Custom" is only active, when a variable with @-symbol is defined in the [WHERE clause](./tables/where-clause).
+**Note:** The tab "Custom" is only active, when a variable with @-symbol is defined in the [WHERE clause](../table/where-clause).
 
 To set the pre-defined parameter, check the box and enter the desired value.
  
