@@ -11,11 +11,12 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-merging-data
 ---
 
-In this example we will run an extraction to merge data, i.e. insert a new data row or update an existing one. 
+The following example depicts the update of the existing records in a database by running an extraction to merge data, i.e. insert a new data row or update an existing one. 
 
-It's important that the destination table has the right index to execute the merge statement with good performance.
-Without an index merging data may take very long depend on the amount of data.  
+{:.box-tip}
+**Note:** Create an appropriate index to quickly execute the merge command. Without an appropriate index, the execution of the merge command takes more time depending on the amount of data. 
 
+### Updating a value in SAP
 Let's look at the data row for the plant 1000, the field NAME2 has the value NULL.
 
 ![MSSql-Select-Before-Merge](/img/content/MSSql-Select-Before-Merge.png){:class="img-responsive"}
@@ -26,6 +27,7 @@ Let's update the field NAME2 with the value 'Hamburg'.
 
 {% include _content/en/xu-specific/xu-destinations/merge-data/db-merge-data.md  %}
 
-In this case the field NAME2 will be updated with the value from the SAP system.
+### Checking the updated record in the database
+Check the database for the updated records. In the given example, the field *NAME2* was updated with the value from SAP during execution.
 
 ![MSSql-Select-After-Merge](/img/content/MSSql-Select-After-Merge.png){:class="img-responsive"}
