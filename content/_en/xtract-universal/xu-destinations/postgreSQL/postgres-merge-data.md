@@ -31,7 +31,7 @@ The following example depicts the update of the existing records in a database.<
 Check the database for the updated records. In the given example, the field *NAME2* was updated with the value from SAP during execution.
 
 ![Merge-Result-Table-Data](/img/content/xu/merge_name2_werks_1200.png){:class="img-responsive"}
-
+ 
 
 
 
