@@ -11,7 +11,7 @@
 
 The merge command ensures delta processing: new records are inserted into the database and / or existing records are updated. <br>
 
-Information about the exact fields that are updated can be found in the SQL statement ([Custom SQL only](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql)). <br>
+More information about the updated fields can be found in the SQL statement ([Custom SQL only](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql)). <br>
 
 It is possible to edit the SQL statement if necessary, e.g.,to exclude certain columns from the update.<br>
 Fields that do not appear in the SQL statement are not affected by changes.
