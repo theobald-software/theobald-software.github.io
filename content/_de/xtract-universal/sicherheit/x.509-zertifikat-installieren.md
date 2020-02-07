@@ -1,5 +1,5 @@
 ---
-ref: xu-security-x509-zertifikat
+ref: xu-security-x509-certificate
 layout: page
 title: X.509 Zertifikat installieren
 description: X.509 Zertifikat installieren
