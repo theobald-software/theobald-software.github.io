@@ -1,7 +1,7 @@
 ### Merge command in Xtract Universal
 
 1. In the main window of the Designer, select the respective extraction and click **[Destination]**. The window "Destination Settings" opens.
-{% include _content/en/xu-specific/xu-destinations/merge-data/db-merge-data.md  %}
+
 2. Make sure to choose the correct destination (e.g., PostgreSQL target database). 
 3. Navigate to the right part of the "Destination Settings" window and apply the following settings:
 - **Preparation** to *Prepare Merge* to create a temporary staging table
