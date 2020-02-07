@@ -19,7 +19,6 @@ The following example depicts the update of the existing data records in a datab
 
 1. In a table (T001W) "Plants" there is adata record "WERKS" = '1200' with the value *NULL* in the field **NAME2**.
 ![Select-Before-Merge](/img/content/xu/select_werks_1200.png){:class="img-responsive"}
-
 2. Field NAME2 is updated with the value 'Hamburg'.
 ![Update-Merge-Example-Data](/img/content/xu/update_werks_1200.png){:class="img-responsive"}
 
