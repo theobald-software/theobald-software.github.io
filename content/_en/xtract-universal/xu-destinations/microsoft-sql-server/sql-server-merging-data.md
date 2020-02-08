@@ -17,7 +17,7 @@ The following example depicts the update of the existing records in a database b
 **Note:** Create an appropriate index to quickly execute the merge command. Without an appropriate index, the execution of the merge command takes more time depending on the amount of data. 
 
 ### Updating a value in SAP
-1. In a table (T001W) "Plants" there is a data record "WERKS" = '1200' with the value *NULL* in the field **NAME2**.
+1. In a table (T001W) "Plants" there is a data record "WERKS" = '1000' with the value *NULL* in the field **NAME2**.
 ![MSSql-Select-Before-Merge](/img/content/MSSql-Select-Before-Merge.png){:class="img-responsive"}
 
 2. Field NAME2 is updated with the value 'Hamburg'.
@@ -28,4 +28,4 @@ The following example depicts the update of the existing records in a database b
 ### Checking the updated record in the database
 Check the database for the updated records. In the given example, the field *NAME2* was updated with the value from SAP during execution.
 
-![MSSql-Select-After-Merge](/img/content/MSSql-Select-After-Merge.png){:class="img-responsive"}
+![MSSql-Select-After-Merge](/img/content/MSSql-Update-Merge-Example-Data.png){:class="img-responsive"}
