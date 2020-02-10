@@ -47,6 +47,7 @@ Eine größere Zahl der Threads kann die Geschwindigkeit des Exports verbessern 
  Das Setzen auf *1* verlangsamt Exporte signifikant, kann aber hilfreich sein, wenn Ihr SharePoint-Server stark ausgelastet ist oder Verbindungsprobleme auftreten. 
  
 {:.box-tip}
-**Rekommendation:** Verändern Sie nicht den Standardwert (2) ohne einen triftigen Grund.  
+**Empfehlung:** Verändern Sie nicht den Standardwert (2) ohne einen triftigen Grund.  
 
+#### Column name style
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}

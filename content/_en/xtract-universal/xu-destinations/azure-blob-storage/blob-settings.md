@@ -15,6 +15,7 @@ When you click the **Destination** button, you can set extraction-specific setti
 
 {% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
 
+### Column name style
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}

@@ -24,7 +24,7 @@ The following tested programs can successfully consume data via OData: <br>
 The following settings can be defined for the OData destination.
 
 ![Odata-Atom-Destination-Details](/img/content/Odata-Atom-Destination-Details.png){:class="img-responsive"}
-
+### Column name style
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

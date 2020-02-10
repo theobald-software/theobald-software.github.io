@@ -15,7 +15,7 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 ![postgres_destination](/img/content/xu\postgres_destination.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
-
+### Column name style
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}

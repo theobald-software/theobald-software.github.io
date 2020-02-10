@@ -16,7 +16,7 @@ Wenn Sie auf die **Destination** Schaltfläche klicken, können Sie extraktionss
 ![mstr-destinations](/img/content/mstr-destinations.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
-
+### Column name style
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}

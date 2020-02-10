@@ -17,6 +17,7 @@ Wenn Sie auf Destination klicken, dann können Sie Einstellungen für die Extrak
 
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
 
+### Column name style
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
  

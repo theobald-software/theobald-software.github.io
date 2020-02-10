@@ -16,7 +16,7 @@ Click on the **Destination** button to define extraction-specific settings of th
 ![mstr-destinations](/img/content/mstr-destinations.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
-
+### Column name style
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}

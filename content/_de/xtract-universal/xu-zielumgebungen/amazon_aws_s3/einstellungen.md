@@ -17,6 +17,7 @@ Einstellungen zu AWS S3, die pro Extraktion vorgenommen werden können.
 
 {% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
+### Column name style
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}

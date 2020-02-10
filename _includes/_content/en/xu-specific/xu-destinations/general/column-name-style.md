@@ -1,4 +1,4 @@
-#### Subsection Column Name Style
+<!--Don't forget to place the h3 or h4 header, depending on the text body. Sometimes it makes sence to place h4-->
 
 Defines the style of the column name. Following options are available: 
 

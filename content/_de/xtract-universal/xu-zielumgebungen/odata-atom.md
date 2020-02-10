@@ -24,7 +24,7 @@ Folgende getesteten Programme können Daten über OData erfolgreich konsumieren:
 Folgende Einstellungen können für das Ziel OData Atom definiert werden.
 
 ![Odata-Atom-Destination-Details](/img/content/Odata-Atom-Destination-Details.png){:class="img-responsive"}
-
+### Column name style
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
