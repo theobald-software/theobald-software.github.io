@@ -1,4 +1,4 @@
-The following section gives an overview over the settings that can be changed withing the window "Define data source for SAP Tables", tab "Tables and Fields".
+
 The tab "Tables and Fields" contains of three main subsections:
 - Tables
 - Fields
