@@ -19,7 +19,7 @@ The settings can be changed in the window "Destination Settings".
 1. In the main window of the designer choose the extraction with the destination type SharePoint.
 2. Click **[Destination]**. The window "Destination Settings" opens.
 
-### Subsections of the window "Destination Settings"
+### Segments of the window "Destination Settings"
 
 #### SharePoint List Name
 

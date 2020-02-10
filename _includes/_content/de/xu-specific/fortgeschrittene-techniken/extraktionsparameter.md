@@ -5,7 +5,7 @@ Der folgende Abschnitt beschreibt die Extraktionsparameter, die im Fenster "Run 
 
 Um das Fenster "Run extractions" zu öffnen, wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** (siehe Details in [Eine Extraktion ausführen](../erste-schritte-mit-table/eine-extraktion-ausfuehren)).
 
-### Subsektion "Parameters" Tab "Extraction"
+### "Parameters" Tab *Extraction*
 Die Menge der Parameter hängt von dem Extraktionstyp und der Destination ab, z.B. ist **decimalSeparator** ein Parameter, der nur in der CSV-Destination vorhanden ist.
 
 Parametername | Beschreibung | Spezielle Infos
@@ -20,7 +20,7 @@ packageSize | setzt die Paketgröße | verfügbar in Table
 decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar in CSV
 columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV
 
-### Subsektion "Parameters" Tab "Source"
+### "Parameters" Tab *Source*
 ![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
 In diesem Tab können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen)  definiert sind.
@@ -35,7 +35,7 @@ logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Tick
 **Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket" als Authentifizierungsmethode in den [SAP-Source-Einstellungen](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen)   ausgewählt ist.
 
 
-### Subsektion "Parameters" Tab "Custom"
+### "Parameters" Tab *Custom*
 
 {: .box-note }
 **Hinweis:** Das Tab "Custom" ist nur dann aktiv, wenn eine Variable mit dem @-Symbol in der [WHERE-Bedingung](../table/where-bedingung) definiert ist.

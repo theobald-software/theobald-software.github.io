@@ -1,5 +1,5 @@
 
-The tab "Tables and Fields" contains of three main subsections:
+The tab *Tables and Fields* consists of three main subsections:
 - Tables
 - Fields
 - Preview
@@ -43,7 +43,7 @@ The *Load live preview* button allows a real-time preview of the extraction data
 You can also preview the data with aggregation functions. 
  
 **[Count rows]** <br>
-Returns the number of rows/data records of an extraction, taking into account the WHERE and HAVING Clauses stored. 
+Returns the number of rows/data records of an extraction, considering the WHERE and HAVING clauses stored. 
 
 **[Refresh metadata]** <br>
 A new lookup is performed on the selected table(s). Existing mappings and field selections are retained, which is not the case when the table is added again. <br>
