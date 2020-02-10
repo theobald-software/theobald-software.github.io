@@ -16,18 +16,18 @@ The settings can be changed in the window "Destination Settings".
 ![SharePointExtractionSpecificSettings](/img/content/xu/SP_destination_settings.png){:class="img-responsive"}
 
 ### Opening destination settings
-1. In the main window of the designer choose the extraction with the destination type SharePoint
-2. Click **[Destination]**. The window "Destination Settings" opens
+1. In the main window of the designer choose the extraction with the destination type SharePoint.
+2. Click **[Destination]**. The window "Destination Settings" opens.
 
 ### Subsections of the window "Destination Settings"
 
-#### Subsection SharePoint List Name
+#### SharePoint List Name
 
 - **Same as name of SAP object**: Gives the SharePoint list name, which is identical to the technical SAP object name.
 - **Same as name of extraction**: Gives the SharePoint list name, which is identical to the extraction name.
-- **Custom**: The SharePoint list name can be chosen freely  
+- **Custom**: The SharePoint list name can be chosen freely.  
 
-#### Subsection Mode
+#### Mode
 
 - **Drop, Create & Insert**: Creates a new list on the SharePoint system, deleting any previous list with the same name.
 - **Create if not exists & Merge**: Merges data with an existing list or creates a new list, if none with the specified name is found.

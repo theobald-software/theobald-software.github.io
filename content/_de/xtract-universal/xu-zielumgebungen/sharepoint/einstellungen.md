@@ -11,23 +11,42 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen1
 ---
 
-Sie können über **Extraction-Specific Settings** Einstellungen für jede Extraktion bezüglich des Ziels festlegen.
+Der folgende Abschnitt gibt einen Überblick über die Einstellungen, die für die SharePoint-Destination angepasst werden können.
+Die Einstellungen können im Fenster "Destination Settings" geändert werden. 
 
-![SharePointExtractionSpecificSettings](/img/content/SharePointExtractionSpecificSettings.png){:class="img-responsive"}
+![SharePointExtractionSpecificSettings](/img/content/xu/SP_destination_settings.png){:class="img-responsive"}
+
+### Destinationseinstellungen öffnen
+1. Wählen Sie im Hauptfenster des Designers die Extraktion mit dem Zieltyp SharePoint.
+2. Klicken Sie auf **[Destination]**. Das Fenster "Destination Settings" öffnet sich.
+
+### Untersektionen des Fensters "Destination Settings"
+
+#### SharePoint List Name
+
+- **Same as name of SAP object**: Der Name der SharePoint-Liste ist identisch mit dem technischen SAP-Objektnamen.
+- **Same as name of extraction**: Der Name der SharePoint-Liste ist identisch mit dem Namen der Extraktion.
+- **Custom**: Der Name der SharePoint-Liste kann frei gewählt werden.
+
+#### Mode
+
+- **Drop, Create & Insert**:  Legt eine neue Liste in SharePoint an und löscht dabei eine bereits vorhandene Liste gleichen Namens.
+- **Create if not exists & Merge**: Aktualisiert eine bestehende Liste bzw. legt eine Liste neu an, falls noch keine mit dem angegebenen Namen existiert.
+- **Truncate & Insert**:  Löscht alle Daten innerhalb der Liste und füllt die Liste mit den exportierten Daten auf. Im Unterschied zu "Drop & Create & Insert" werden die Liste und damit verknüpfte Informationen dabei nicht entfernt.
+- **Merge only**:  Führt Daten zusammen, ohne Datensätze oder die Liste selbst zu löschen.
+ - **Max. threads** (Expertenoption): Definiert die Anzahl der Threads, die zur Kommunikation mit dem SharePoint-Server verwendet werden.
 
 
-**Mode**<br>
-Sie können zwischen den folgenden Export-Varianten wählen:
 
+Eine größere Zahl der Threads kann die Geschwindigkeit des Exports verbessern oder aber auch verschlechtern, abhängig von der Server- und Netzwerkumgebung.
+ Das Setzen auf "1" verlangsamt Exporte signifikant, kann aber hilfreich sein, wenn Ihr SharePoint-Server stark ausgelastet ist oder Verbindungsprobleme auftreten. 
+   
+ 
+{:.box-note}
+**Note:** Eine größere Zahl der Threads kann die Geschwindigkeit des Exports verbessern oder aber auch verschlechtern, abhängig von der Server- und Netzwerkumgebung.
+ Das Setzen auf *1* verlangsamt Exporte signifikant, kann aber hilfreich sein, wenn Ihr SharePoint-Server stark ausgelastet ist oder Verbindungsprobleme auftreten. 
+ 
+{:.box-tip}
+**Rekommendation:** Verändern Sie nicht den Standardwert (2) ohne einen triftigen Grund.  
 
-**Drop & Create**: Legt eine neue Liste in SharePoint an und löscht dabei eine bereits vorhandene Liste gleichen Namens.
-
-**Create if not exists & Merge**: Aktualisiert eine bestehende Liste bzw. legt eine Liste neu an, falls noch keine mit dem angegebenen Namen existiert.
-
-**Truncate & Insert**: Löscht alle Daten innerhalb der Liste und füllt mit den exportierten Daten auf. Im Unterschied zu "Drop & Create" werden die Liste und damit verknüpfte Informationen dabei nicht entfernt.
-
-**Merge only**: Führt Daten zusammen, ohne Datensätze oder die Liste selbst zu löschen.
-
-
-**Max. threads** (Expertenoption):<br>
-Sie können die Anzahl der Threads einstellen, die zur Kommunikation mit dem SharePoint-Server verwendet werden. <br>Eine größere Zahl kann die Geschwindigkeit des Exports verbessern oder aber auch verschlechtern, abhängig von der Server- und Netzwerkumgebung. Das Setzen auf "1" verlangsamt Exporte signifikant, kann aber hilfreich sein, wenn Ihr SharePoint-Server stark ausgelastet ist oder Verbindungsprobleme auftreten. Im Allgemeinen raten wir den meisten Anwendern, den Standardwert nicht zu verändern.     
+{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
