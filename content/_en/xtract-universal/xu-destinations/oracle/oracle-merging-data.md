@@ -13,6 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=oracle-merging-data
 
 The following example depicts the update of the existing data records in a database by running an extraction to merge data, i.e. insert a new data row or update an existing one. 
 
+{:.box-warning}
 **Warning! Erroneous merge** <br>
 A primary key is a prerequisite for a merge command. If no primary key is set, the merge command runs into an error.
 Create an appropriate primary key in the [extraction settings](./_includes/_content/en/xu-specific/advanced-techniques/general-settings.md) to execute the merge command.
