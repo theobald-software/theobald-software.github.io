@@ -83,7 +83,7 @@ Grundsätzlich alle von Microsoft momentan untersützten Windows-Betriebssysteme
 
 **Andere Anwendungen und Frameworks**
  	
-- .NET Framework 4.7.1 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/en-US/download/details.aspx?id=56116) herunterladen.
+- .NET Framework 4.7.2 oder höher. Das Famework können Sie [hier](https://www.microsoft.com/en-US/download/details.aspx?id=56116) herunterladen.
 - Visual C++ 2005 Laufzeit-Bibliothek ist benötigt und wird mitinstalliert.
 
 **Hardware Anforderungen**

@@ -1,5 +1,5 @@
 ## Other Applications and Frameworks	
-- .NET Framework 4.7.1 or higher. You can download it from [Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=56116).
+- .NET Framework 4.7.2 or higher. You can download it from [Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=56116).
 
 ## Hardware Requirements
 ### Processor Cores
