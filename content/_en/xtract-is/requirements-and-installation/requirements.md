@@ -27,7 +27,7 @@ Check the [Microsoft Help for details](https://docs.microsoft.com/en-us/sql/ssdt
 {% include _content/en/requirements/operating-systems.md %}
 
 #### Other applications and frameworks	
-.NET Framework 4.7.2 or higher. <br>[Download .NET Framework from the Microsoft website](https://www.microsoft.com/en-us/download/details.aspx?id=56116).
+.NET Framework 4.7.2 or higher. <br>[Download .NET Framework from the Microsoft website](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows).
 
 ### Hardware <br/>
 

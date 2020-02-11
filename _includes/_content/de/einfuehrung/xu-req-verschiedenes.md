@@ -1,5 +1,5 @@
 ### Andere Anwendungen und Frameworks	
-- NET Framework 4.7.2 oder höher. Sie können es unter [Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=56116) herunterladen.
+- NET Framework 4.7.2 oder höher. Sie können es auf der [Microsoft Webiste](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows) herunterladen.
 
 ### Hardware-Anforderungen
 

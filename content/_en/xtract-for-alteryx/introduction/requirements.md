@@ -17,7 +17,7 @@ Alteryx Designer and Server version 2018 or higher.
 {% include _content/en/requirements/operating-systems.md %}
 
 ## Other Applications and Frameworks 	
-- .NET Framework 4.7.2 or higher. You can get it [here](https://www.microsoft.com/en-US/download/details.aspx?id=56116).
+- .NET Framework 4.7.2 or higher. [Download](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows).
 - Visual C++ 2005 Runtime library is required and would be by the setup program installed. 
 
 ## Hardware Requirements

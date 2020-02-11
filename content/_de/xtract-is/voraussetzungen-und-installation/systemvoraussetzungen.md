@@ -27,7 +27,7 @@ Für die Entwicklung: SQL Server Data Tools werden benötigt, um SSIS-Pakete zu 
 
 #### Andere Anwendungen und Frameworks
  	
-.NET Framework 4.7.2 oder höher. Laden Sie das Framework direkt von der [Website von Microsoft](https://www.microsoft.com/de-DE/download/details.aspx?id=56116) herunter.
+.NET Framework 4.7.2 oder höher. Laden Sie das Framework direkt von der [Website von Microsoft](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows) herunter.
 
 ### Hardware
 #### Arbeitsspeicher

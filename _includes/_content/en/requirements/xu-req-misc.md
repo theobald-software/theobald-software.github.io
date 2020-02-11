@@ -1,7 +1,8 @@
 ## Other Applications and Frameworks	
-- .NET Framework 4.7.2 or higher. You can download it from [Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=56116).
+- .NET Framework 4.7.2 or higher. You can download the framework from [Microsoft webiste](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows).
 
 ## Hardware Requirements
+
 ### Processor Cores
 Minimum: 2 Cores. 
 1 additional core is required for each additional parallel extraction. 
