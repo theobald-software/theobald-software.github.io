@@ -15,7 +15,7 @@ The following example depicts the update of the existing data records in a datab
 {:.box-warning}
 **Warning! Erroneous merge** <br>
 A primary key is a prerequisite for a merge command. If no primary key is set, the merge command runs into an error.
-Create an appropriate primary key in the [extraction settings](/advanced-techniques/general-settings) to execute the merge command. 
+Create an appropriate primary key in the [extraction settings](/xtract-universal/advanced-techniques/general-settings) to execute the merge command. 
 
 ### Updating a value in SAP
 
