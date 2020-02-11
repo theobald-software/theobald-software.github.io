@@ -16,7 +16,7 @@ Folgende Optionen stehen rechts unter *Fields* bei der Spaltenselektion zur Verf
 Der Spaltenname (Name) und die Spaltenbeschreibung (Description) lassen sich filtern.
 
 **Aggregate Function** <br>
-Es stehen folgende Aggregat-Funktionen für Spalteninhalte zur Verfügung:
+Es stehen folgende Aggregatfunktionen für Spalteninhalte zur Verfügung:
 - None: Keine Aggregierung 
 - AVG: Durchschnitt
 - COUNT: Anzahl  
@@ -25,20 +25,22 @@ Es stehen folgende Aggregat-Funktionen für Spalteninhalte zur Verfügung:
 - SUM: Summe
 
 **Conv. - Use Conversion Routine**  <br>
-Ankreuzen den Kästchens definiert, ob die im Data Dictionary hinterlegte Konvertierungsroutinen für die jeweiligen Felder angewendet werden. 
+Ankreuzen des Kästchens definiert, ob die im Data Dictionary hinterlegte Konvertierungsroutinen für die jeweiligen selektierten Felder angewendet werden. 
 Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). 
 Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
 
 {: .box-note}
-**Note:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein  Z_XTRACT_IS_TABLE_COMPRESSION unterstützt. 	
+**Note:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein [Z_XTRACT_IS_TABLE_COMPRESSION](./extraktionseinstellungen) unterstützt. 
+
 
 ### Preview
-Das Fenstersegment *Preview* zeigt eine Echtzeit-Vorschau der ausgewählten Felder an, wenn die Schaltfläche **[Load live preview]** angeklickt wird.
+Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
+
 
 ### Buttons
 **[Load live preview]** <br>
 Ermöglicht eine Echtzeit-Vorschau der Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
-Daten mit Aggregierungs-Funktionen lassen sich auch als Vorschau anzeigen. 
+Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen. 
  
 **[Count rows]** <br>
 Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der hinterlegten WHERE- und HAVING-Bedingungen. 

@@ -1,18 +1,18 @@
-
+One or more SAP tables or views can be selected under the tab *Tables And Fields*.
 The tab *Tables and Fields* consists of three main subsections:
 - Tables
 - Fields
 - Preview
 
 ### Tables
-One or more SAP tables or views can be selected under the tab *Tables And Fields*. <br>
- To add a new table or remove an existing table, click **[Add]** or **[Remove]**.
+To add a new table or remove an existing table, click **[Add]** or **[Remove]**.
  
- ![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
+![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
 
 ### Fields
-The following options are available on the right under *Fields* for the column selection: <br>
 ![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
+The following options are available on the right under *Fields* for the column selection: <br>
+
 
 **Filter** <br>
 The column name and the column description can be filtered.
@@ -32,14 +32,14 @@ Typical examples are the language key (for example, D in the database, but DE af
 After the conversion, the value is always displayed as it would appear in a transaction in the SAP GUI. 
 
 {: .box-note}
-**Note:** The option "Use Conversion Routine" is only supported with function module Z_XTRACT_IS_TABLE_COMPRESSION. 	
+**Note:** The option "Use Conversion Routine" is only supported with function module [Z_XTRACT_IS_TABLE_COMPRESSION](./extraction-settings). 	
 
 ### Preview
 The subsection *Preview* displays a real-time preview of the selected fields, when the button **"[Load live preview]** is clicked.
 
 ### Buttons
 **[Load live preview]** <br>
-The *Load live preview* button allows a real-time preview of the extraction data without executing the extraction. <br>
+Allows a real-time preview of the extraction data without executing the extraction. <br>
 You can also preview the data with aggregation functions. 
  
 **[Count rows]** <br>
