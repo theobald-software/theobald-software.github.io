@@ -13,8 +13,9 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-merging-data
 
 The following example depicts the update of the existing records in a database by running an extraction to merge data, i.e. insert a new data row or update an existing one. 
 
-{:.box-tip}
-**Note:** Create an appropriate index to quickly execute the merge command. Without an appropriate index, the execution of the merge command takes more time depending on the amount of data. 
+**Warning! Erroneous merge** <br>
+A primary key is a prerequisite for a merge command. If no primary key is set, the merge command runs into an error.
+Create an appropriate primary key in the [extraction settings](./_includes/_content/en/xu-specific/advanced-techniques/general-settings.md) to execute the merge command.
 
 ### Updating a value in SAP
 1. In a table (T001W) "Plants" there is a data record "WERKS" = '1000' with the value *NULL* in the field **NAME2**.
