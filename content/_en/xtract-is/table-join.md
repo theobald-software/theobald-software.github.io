@@ -26,7 +26,7 @@ The correspondent SQL statement will be generated and executed on the SAP server
 
 The componente provides additional features as the definition of aggregate functions, where and having conditions. 
 
-It is required to install a [custom funktion module](https://kb.theobald-software.com/sap/installation-of-the-function-module-z_xtract_is_table_join) on the SAP server to be able to use this component.  
+It is required to install a [custom function module](https://kb.theobald-software.com/sap/installation-of-the-function-module-z_xtract_is_table_join) on the SAP server to be able to use this component.  
 
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i>
