@@ -19,6 +19,6 @@ Der folgende Abschnitt beschreibt die Anwendung der  BOARD Connector Query Kompo
 
 {: .box-note}
 **Hinweis** Mit dem Begriff Query ist keine BW Query sondern eine "normale" Query gemeint, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>
-Wenn Sie eine BW Query als Datengrundlage verwenden möchten, sehen Sie den Abschnitt [BW InfoCubes und BEx Queries](../bw-infocubes-und-bex-queries).
+Wenn Sie eine BW Query als Datengrundlage verwenden möchten, sehen Sie den Abschnitt [BW InfoCubes und BEx Queries](./bw-infocube-und-bex-queries).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
