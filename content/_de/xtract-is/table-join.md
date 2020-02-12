@@ -25,7 +25,7 @@ Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Serve
 
 Die Komponente unterstützt darüber hinaus die Definition von Aggregat-Funktionen, Where- und Having-Bedingungen. 
 
-Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](https://kb.theobald-software.com/sap/installation-of-the-function-module-z_xtract_is_table_join) auf der SAP-Seite. 
+Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](./sap-customizing/funktionsbaustein-fuer-table-extraktion) auf der SAP-Seite. 
 
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden.

@@ -16,7 +16,7 @@ Mögliche Szenarien dafür sind Tabellen für Kopf- und Postionsdaten (z.B. eine
 Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt. 
 Die Komponente unterstützt darüber hinaus die Definition von Aggregat-Funktionen, WHERE- und HAVING-Bedingungen. 
 
-Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](../sap-customizing/funktionsbaustein-fuer-table-extraktion) auf der SAP-Seite. 
+Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](./sap-customizing/funktionsbaustein-fuer-table-extraktion) auf der SAP-Seite. 
 
 {: .box-note }
 **Hinweis:** Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden. 
