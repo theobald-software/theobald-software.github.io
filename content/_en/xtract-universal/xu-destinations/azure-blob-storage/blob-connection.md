@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 
 The following settings are required to connect to the Azure Blob Storage.  
 
-#### Blob Storage Settings - Connection
+### Blob Storage Settings - Connection
 
 This authenticates you to the Azure BLOB Storage. You can determine these values using the Azure Portal.
 
@@ -36,6 +36,6 @@ Selection of the blob container into which the extracted data is to be written.
 
 ![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02.png){:class="img-responsive"}
 
-#### CSV Settings
+### CSV Settings
 
 ![azure_blob_destination_settings_csv_settings](/img/content/azure_blob_destination_settings_csv_settings.png){:class="img-responsive"}
