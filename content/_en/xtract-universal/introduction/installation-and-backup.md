@@ -32,7 +32,7 @@ The service is installed during the setup and starts when the operating system i
 ### XtractConsole.exe
 
 {: .box-warning}
-**Warning! Internal feature**
+**Warning! Internal feature** <br>
 The option **XtractConsole** is for internal use only.<br>
 Do not use this option!
 

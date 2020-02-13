@@ -32,7 +32,7 @@ Der Service wird mit dem Setup installiert und startet beim Boot-Vorgang des Bet
 ### XtractConsole.exe
 
 {: .box-warning}
-**Warnung! Internes Feature**
+**Warnung! Internes Feature**<br>
 Die Option **XtractConsole** ist nur für interne Zwecke.
 Option nicht benutzen!
 
@@ -49,6 +49,7 @@ Eine neuere Version kann über die ältere Version installiert werden. Alle Eins
 
 
 ### Backup
+
 {:.box-tip}
 **Empfehlung:** Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.<br>
 Führen Sie ein Backup des Ordners: `C:\Program Files\XtractUniversal\config` in regelmäßigen Abständen durch.
