@@ -15,8 +15,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 
 ### Script Expressions
 
-Starting from version 2.13.5 scripted expressions are supported within the WHERE clause. 
-
-![Table-Extraction-Where-Clause-Scripted-Expression](/img/content/Table-Extraction-Where-Clause-Scripted-Expression.png){:class="img-responsive"}
-
-For more information refer to [Script Expressions](../advanced-techniques/script-expressions). 
+Starting from version 2.13.5 [scripted expressions](../advanced-techniques/script-expressions) are supported within the WHERE clause. 
