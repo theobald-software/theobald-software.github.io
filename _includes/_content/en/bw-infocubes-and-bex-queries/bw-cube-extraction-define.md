@@ -8,7 +8,11 @@ Click the binocular button to open up the search dialog as shown below.
 
 You can also use wildcards ( * ) to search for InfoCubes and QueryCubes. Select the cube you want to work with and click OK.
 
-**Caution!** A BW Query must have the attribute *Allow External Access to this Query* switched on in the BEx Query Designer or the BW Modeling Tool to appear in this list. Please see this [kb article](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/77/9/allow-external-access-to-bw-queries).
+{: .box-warning }
+**Warning! Invalid action**<br>
+ A BW Query must have the attribute *Allow External Access to this Query* switched on in the BEx Query Designer or the BW Modeling Tool to appear in the list.
+ 
+ For additional details see the knowledge base article [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
 
 ![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
 
