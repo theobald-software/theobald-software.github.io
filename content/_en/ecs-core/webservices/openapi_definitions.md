@@ -7,7 +7,7 @@ product: ecs-core
 parent: webservices
 childidentifier: openapi_definitions
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 ---
 After you have successfully created and tested a web service, you can export it to an OpenAPI definition. OpenAPI (formerly Swagger) is an API description format for REST APIs. Various cloud applications such as *Nintex Workflow Cloud* or *Microsoft Flow* support the import of OpenAPI files as custom connectors. <br>
