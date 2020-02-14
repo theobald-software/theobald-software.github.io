@@ -1,7 +1,10 @@
-All Theobald Software products log all steps performed on a system to log files. There are two types of logs: 
-- The server log, which contains logs that affect the server, such as starting and stopping the server. The server log also contains the information on execution of a single extraction.
-- Extraction log, which logs the extraction process of every single extraction.
+All Theobald Software products log all steps performed on a system to log files.
+The logs can be found in the directory:<br>
+e.g.: `C:\Program Files\[Product Name]\logs`
 
+The server logs contain three types of logs that affect the server, such as starting and stopping the service (web), configuration (config) and information on process (run) of every single extraction.
+
+In addition to the server logging there is a log for each [extraction](./extraction-logging).
 
 To view the server log, navigate to the main menu of the Designer and click **[Server > Log]**. 
   
@@ -13,7 +16,7 @@ Logs are generated per day. To switch between protocols you can use the list on 
 Each log entry is assigned a log level. 
 
 - **Errors** - error messages that are issued during the extraction process.
-- **Information** - status messages that do not result in an error.
+- **Information** - status messages that do not result in an extraction error.
 - **Warnings** - information about issues that do not result in an error. For example, authentication failures.
 - **Debug Details** - detailed information that helps finding the reason for occurred  errors.
 
