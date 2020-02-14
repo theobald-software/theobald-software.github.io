@@ -1,7 +1,7 @@
 ---
 ref: xu-introduction-03
 layout: page
-title: Installation
+title: Installation und Backup
 description: Installation
 product: xtract-universal
 parent: einfuehrung
@@ -11,46 +11,51 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=installation
 ---
 
-Das Installationsprogramm *XtractUniversalSetup.exe* ist eine branchenübliche Installationsroutine, die nichts anderes macht, als alle nötigen Dateien in das Programmverzeichnis zu kopieren und im Windows-Programmenü eine Gruppe mit einigen Shortcuts anzulegen.
-Das Setup installiert die Visual C++ 2015 und 2013 Laufzeit-Bibliotheken (Runtime libraries). 
+Das Installationsprogramm *XtractUniversalSetup.exe* ist eine branchenübliche Installationsroutine, die alle nötigen Dateien in das Programmverzeichnis kopiert und im Windows-Programmenü eine Gruppe mit Shortcuts anlegt.
 
-Bitte stellen Sie sicher, dass das .NET Framework 4.5.2 oder höher auf Ihrem Rechner installiert ist. Sollte das nicht der Fall sein, wird eine Warnung eingeblendet und das Setup beendet. 
-Sie werden auf die Download-Seite des Frameworks weitergeleitet.
+![XU-Setup](/img/content/xu/XU_Setup_1.png){:class="img-responsive"}
 
 Während des Setups können optionale Komponenten für die Installation ausgewählt werden:
 
-![XU-Setup](/img/content/XU-Setup.png){:class="img-responsive"}
+![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
-**XtractDesigner.exe** 
+### XtractDesigner.exe 
 
 Startet den Xtract Universal Designer, mit dem Extraktion angelegt, getestet und gemonitort werden können.
 
-**XtractService.exe**
+### XtractService.exe
 
 Ist der Server, der standardmäßig als Windows-Service installiert und gestartet wird. In der Regel muss der Service nicht manuell gestartet werden. 
 
-Der Service wird mit dem Setup installiert und startet beim Boot-Vorgang des Betriebssystems. Der Service läuft im Hingergrund.
+Der Service wird mit dem Setup installiert und startet beim Boot-Vorgang des Betriebssystems. Der Service läuft im Hintergrund.
 
-**XtractConsole.exe**
+### XtractConsole.exe
 
-Ist der Xtract Server, der für Testzwecke als Konsolenprogramm gestartet werden kann. Nur für interne Zwecke. Bitte nicht nutzen!
+{: .box-warning}
+**Warnung! Internes Feature**<br>
+Die Option **XtractConsole** ist nur für interne Zwecke.
+Option nicht benutzen!
 
+Ist der Xtract Server, der für Testzwecke als Konsolenprogramm gestartet werden kann. 
 Das Unterverzeichnis *config* wird mit der ersten Extraktion automatisch angelegt und enthält alle Extraktionen sowie die dazugehörigen Protokolldateien. 
 
-**Neue Installation und Update**
+### Neue Installation und Update
 
-Eine neuere Version kann einfach über die alte Version installiert werden. Alle Einstellungen und angelegten Objekte bleiben erhalten. 
+{: .box-tip}
+**Empfehlung:** Führen Sie einen Test auf einer nichtproduktiven Umgebung durch vor der Neuinstallation.
+Legen Sie ein Backup des kompletten Programmverzeichnisses oder zumindest des *config* Unterverzeichnisses an. 
 
-Es wird empfohlen, vor der Neuinstallation ein Test auf einer nichtproduktiven Umgebung und ein Backup des kompletten Programmverzeichnisses oder zumindest des *config* Unterverzeichnisses durchzuführen. 
+Eine neuere Version kann über die ältere Version installiert werden. Alle Einstellungen und angelegten Objekte bleiben erhalten. 
 
-**Backup**
 
-Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. 
+### Backup
 
-{:.box-warning}
-**Warnung:** **Verlust von Daten**<br>
-Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.<br>
+{:.box-tip}
+**Empfehlung:** Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.<br>
 Führen Sie ein Backup des Ordners: `C:\Program Files\XtractUniversal\config` in regelmäßigen Abständen durch.
 
-**Version History**<br>
-Eine Liste der aktuellen Versionen finden Sie in der [version history](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
+Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. 
+Ein Backup ermöglicht es Ihnen, einfach zur vorherigen Version von Xtract Universal zurück zu wechseln.
+
+### Version History
+Eine Liste der aktuellen Versionen finden Sie in der [Versionshistorie](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
