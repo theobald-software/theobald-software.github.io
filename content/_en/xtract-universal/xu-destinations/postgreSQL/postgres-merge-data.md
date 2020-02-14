@@ -20,16 +20,16 @@ Create an appropriate primary key in the [extraction settings](../../advanced-te
 ### Updating a value in SAP
 
 1. In a table (T001W) "Plants" there is adata record "WERKS" = '1200' with the value *NULL* in the field **NAME2**.
-![Select-Before-Merge](/img/content/xu/select_werks_1200.png){:class="img-responsive"}
+
 2. Field NAME2 is updated with the value 'Hamburg'.
-![Update-Merge-Example-Data](/img/content/xu/update_werks_1200.png){:class="img-responsive"}
+
 
 {% include _content/en/xu-specific/xu-destinations/merge-data/db-merge-data.md  %}
 
 ### Checking the updated record in the database
 Check the database for the updated records. In the given example, the field *NAME2* was updated with the value from SAP during execution.
 
-![Merge-Result-Table-Data](/img/content/xu/merge_name2_werks_1200.png){:class="img-responsive"}
+
  
 
 
