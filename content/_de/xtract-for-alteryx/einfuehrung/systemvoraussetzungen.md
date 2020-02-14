@@ -51,7 +51,7 @@ Informationen über die Installation der Z-Funktionsbausteine bzw. das Customizi
 - Benutzerauthentifizierung (Benutzername und Passwort).
 - SAP Authentifizierung mit Single Sign On (SSO) und Kerberos
 - SAP Logon Ticket (über SAP Ticket Issuer)
-- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects---sap-user-rights).
+- SAP System- oder Dialog-Anwender mit entsprechenden [Berechtigungsobjekten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
 **Ports**
 

@@ -11,8 +11,7 @@ lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=appendix
 ---
 
-Authority objects
+### Authority objects
+Go to the Knowledge base to find out more about authority objects that are needed to use Xtract RS:
 
-Please go to our Knowledgebase to find out more about authority objects that are needed to use Xtract RS:
-
-[http://my.theobald-software.com/index.php?/Knowledgebase/List](http://my.theobald-software.com/index.php?/Knowledgebase/List)
+- [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)
