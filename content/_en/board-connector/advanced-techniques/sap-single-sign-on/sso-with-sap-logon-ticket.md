@@ -3,7 +3,7 @@ ref: xu-sso-02
 layout: page
 title: SSO with SAP Logon Ticket
 description: SSO with SAP Logon Ticket
-product: xtract-universal
+product: board-connector
 parent: sap-single-sign-on
 permalink: /:collection/:path
 weight: 2

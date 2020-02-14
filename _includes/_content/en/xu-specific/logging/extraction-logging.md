@@ -1,11 +1,11 @@
-In addition to the logging server the log of each extraction process can be called from the main screen by clicking the *Log* button.
+In addition to the [server logging](./server-logging) the log of each extraction process is saved in the extraction log.
 
-![Extraction-Logging-Button-Position](/img/content/Extraction-Logging-Button-Position.png){:class="img-responsive"}
+To view the extraction log, nagivate to the main window of the designer and click **[Log]**.
+![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}
 
-Here you will find on the left side a time stamp for each extraction process, which can be shown by clicking.
+Time stamp for each extraction process is displayed at the left part of the "View Extraction Log" window.
 
-If you want to send a report via mail to the support, please make sure that the debug details are always showed to provide as much information as possible.
+When sending an email to the support, make sure to keep the debug details visible to provide as much information as possible.
 
 Both server and extraction logs are automatically deleted after a defined period. The period can be set in the server configuration.
 
-![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}

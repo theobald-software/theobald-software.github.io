@@ -1,17 +1,26 @@
-Xtract Universal logs all steps performed on a system to log files. This happens on two levels: The server log contains logs that affect the server, such as starting and stopping the server and the execution of a single extraction. In addition, there are extraction logs, which contain detailed information on each extraction process.
+All Theobald Software products log all steps performed on a system to log files. There are two types of logs: 
+- The server log, which contains logs that affect the server, such as starting and stopping the server. The server log also contains the information on execution of a single extraction.
+- Extraction log, which logs the extraction process of every single extraction.
 
-To view the server log, please click in the main menu on *Server -> Log*. As the screenshot shows a log will be generated per day. To switch between protocols you can use the list on the left. 
 
+To view the server log, navigate to the main menu of the Designer and click **[Server > Log]**. 
   
 ![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
 
-Each log entry is assigned a log level. The following log levels exist:
+Logs are generated per day. To switch between protocols you can use the list on the left. 
 
-**Errors –** are errors.
+### Log levels
+Each log entry is assigned a log level. 
 
-**Information –** about activities, that have not resulted in an error.
+- **Errors** - error messages that are issued during the extraction process.
+- **Information** - status messages that do not result in an error.
+- **Warnings** - information about issues that do not result in an error. For example, authentication failures.
+- **Debug Details** - detailed information that helps finding the reason for occurred  errors.
 
-**Debug Details –** are detail information that are not usually needed.
+Select the checkboxes on the top left to decide, which log levels to display. 
 
-You can select the checkboxes on the top left to decide, which log levels should be showed. Using the *Copy To Clipboard* button, the current log output is copied to the clipboard and can be pasted when needed in an email.
+### Copying the log
+Click **[Copy To Clipboard]** to copy the current log output to the clipboard. The copied log can be pasted anywhere (e.g., email).
+
+Both server and extraction logs are automatically deleted after a defined period. The period can be set in the server configuration.
 

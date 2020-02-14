@@ -1,4 +1,4 @@
-The Xtract Universal BW Cube data source component was developed to extract data from SAP BW InfoCubes and QueryCubes (also known as BEx Queries).
+The Xtract BW Cube data source component was developed to extract data from SAP BW InfoCubes and QueryCubes (also known as BEx Queries).
 
 After the definition of a BW Cube data source the following screen pops up:
 
