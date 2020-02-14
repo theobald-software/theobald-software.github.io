@@ -6,7 +6,7 @@ description: Example scenario
 product: ecs-core
 parent: webservices
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 ---
 

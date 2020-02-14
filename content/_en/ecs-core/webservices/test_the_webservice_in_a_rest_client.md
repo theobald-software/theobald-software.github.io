@@ -6,7 +6,7 @@ description: Test the web service
 product: ecs-core
 parent: webservices
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: en_GB
 ---
 
