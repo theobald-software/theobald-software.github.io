@@ -16,8 +16,8 @@ This setting is not directly related to using SSO, however it's a prerequisite a
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
-*HTTPS Port*: Go to Server Settings - *Web Server* tab and change the HTTPS Port to 443 (the default value is 8165).
-![XU_SSO_httpsPort](/img/content/XU_SSO_HTTPS_Port.png){:class="img-responsive"}
+<!--- *HTTPS Port*: Go to Server Settings - *Web Server* tab and change the HTTPS Port to 443 (the default value is 8165).
+![XU_SSO_httpsPort](/img/content/XU_SSO_HTTPS_Port.png){:class="img-responsive"}--->
 
 
 ### 2. Creation and configuration of a Windows AD service account
