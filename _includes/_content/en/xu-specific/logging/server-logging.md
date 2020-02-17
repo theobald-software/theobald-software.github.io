@@ -1,10 +1,10 @@
 All Theobald Software products log all steps performed on a system to log files.
-The logs can be found in the directory:<br>
+The logs can be found in the product directory:<br>
 e.g.: `C:\Program Files\[Product Name]\logs`
 
 The server logs contain three types of logs that affect the server, such as starting and stopping the service (web), configuration (config) and information on process (run) of every single extraction.
 
-In addition to the server logging there is a log for each [extraction](./extraction-logging).
+In addition to the server logging there is a log for each [extraction](./extraction-logging) and a [debug log](./logging-debug).
 
 To view the server log, navigate to the main menu of the Designer and click **[Server > Log]**. 
   
