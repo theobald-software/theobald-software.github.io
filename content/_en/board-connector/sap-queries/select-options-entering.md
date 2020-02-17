@@ -3,7 +3,7 @@ ref: bc-sap-queries-03
 layout: page
 title: Entering Select Options
 description: Entering Select Options
-product: xtract-universal
+product: board connector
 parent: sap-queries
 permalink: /:collection/:path
 weight: 3

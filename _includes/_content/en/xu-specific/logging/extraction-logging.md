@@ -1,11 +1,15 @@
-In addition to the logging server the log of each extraction process can be called from the main screen by clicking the *Log* button.
+All Theobald Software products log all steps performed on a system to log files.
+The logs can be found in the directory: <br>
+e.g.: `C:\Program Files\[Product Name]\logs`
 
-![Extraction-Logging-Button-Position](/img/content/Extraction-Logging-Button-Position.png){:class="img-responsive"}
+In addition to the extraction logging the [server log](./server-logging) and debug log is saved in the log directory.
 
-Here you will find on the left side a time stamp for each extraction process, which can be shown by clicking.
+To view the extraction log, nagivate to the main window of the designer and click **[Log]**.
+![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}
 
-If you want to send a report via mail to the support, please make sure that the debug details are always showed to provide as much information as possible.
+Time stamp for each extraction process is displayed at the left part of the "View Extraction Log" window.
+
+When sending an email to the support, make sure to keep the debug details visible to provide as much information as possible.
 
 Both server and extraction logs are automatically deleted after a defined period. The period can be set in the server configuration.
 
-![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}

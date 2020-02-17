@@ -44,5 +44,3 @@ You must also have the relevant DLLs from SAP. These DLLs are different for 32-b
 For 32-bit: gsskrb5.dll<br>
 For 64-bit x86: gx64krb5.dll<br>
 
-To configure SSO with SNC on your SAP System refer to or Knowledge Base article:<br>
-[http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso](http://my.theobald-software.com/index.php?/Knowledgebase/Article/View/87/3/snc-connection-with-sso)

@@ -1,32 +1,21 @@
-Here you find the guide for the manual installation of Z_XTRACT_IS_TABLE.
+### Installing Z_XTRACT_IS_TABLE manually
 
-**Step 1 - Create a new function module**
-
+1. Create a new function module:<br>
 Call transaction SE37 and create a new function module named Z_XTRACT_IS_TABLE. You can use an existing function group or create a new one. This is also valid for the development class (Package).
-In tab *Attributes* check *Remote Enabled*.
+In the tab *Attributes* check *Remote Enabled*.
+![Z-Custom-Funcion-01](/img/content/Z_XTRACT_IS_TABLE00.png){:class="img-responsive" }
 
-![Z-Custom-Function-01](/img/content/Z_XTRACT_IS_TABLE00.png){:class="img-responsive" }
+2. Import parameter - define the imports:
+![Z-Custom-Function-02](/img/content/Z_XTRACT_IS_TABLE01.png){:class="img-responsive" }
 
-**Step 2 - ImportParameter**
-
-Define the imports as shown in the screenshot.
-
-![Z-Custom-Function-03](/img/content/Z_XTRACT_IS_TABLE01.png){:class="img-responsive" }
-
-**Step 3 - Tables Parameter**
-
-Define the tables as shown in the screenshot.
-
+3. Define the tables parameter:
 ![Z-Custom-Function-03](/img/content/Z_XTRACT_IS_TABLE02.png){:class="img-responsive" }
 
-**Step 4 - Exception**
-Define the exceptions as shown in the screenshot.
-
+4. Define the exceptions:
 ![Z-Custom-Function-04](/img/content/Z_XTRACT_IS_TABLE03.png){:class="img-responsive" }
 
-**Step 5 - Code**<br>
-You can find the ABAP code in [Z_XTRACT_IS_TABLE.txt](/docs/sap-customizing/Z_XTRACT_IS_TABLE.txt){:download="Z_XTRACT_IS_TABLE"}. Use *Ctrl + C* and *Ctrl + V*  to paste the code in the source code editor.
-Save the function module and activate it.
+5. Code: You can find the ABAP code in [Z_XTRACT_IS_TABLE.txt](/docs/sap-customizing/Z_XTRACT_IS_TABLE.txt){:download="Z_XTRACT_IS_TABLE"}. Press **[Ctrl + C]** and **[Ctrl + V]**  to paste the code into the source code editor.
+6. Save the function module and activate it.
 
-
-You can use the transport request (thtrans.zip), that can be found in the ABAP subfolder of the installation folder, to install the function module. For more detail information about installing the transport request please read the following [Knowledgebase article](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) or check the SAP help.
+You can use the transport request (thtrans.zip) that can be found in the ABAP subfolder of the installation folder, to install the function module.
+For more detailed information about [installing the transport request](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) see the knowledge base article or check the SAP help.

@@ -3,7 +3,7 @@ ref: bc-table-join-03
 layout: page
 title: Felder selektieren
 description: Felder selektieren
-product: xtract-universal
+product: board-connector
 parent: table-join
 permalink: /:collection/:path
 weight: 3
