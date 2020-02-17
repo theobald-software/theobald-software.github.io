@@ -14,8 +14,4 @@ lang: de_DE
 
 ### Formeln - Skript-Ausdrücke
 
-Ab Version 2.13.5 können Sie Script-Ausdrücke in der WHERE-Bedingung verwenden.
-
-![Table-Extraction-Where-Clause-Scripted-Expression](/img/content/Table-Extraction-Where-Clause-Scripted-Expression.png){:class="img-responsive"}
-
-Für weitere Infomationen siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke). 
+Ab Version 2.13.5 können Sie [Script-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) in der WHERE-Bedingung verwenden.

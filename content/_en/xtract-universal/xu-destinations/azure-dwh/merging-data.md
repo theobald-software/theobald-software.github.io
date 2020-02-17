@@ -10,9 +10,8 @@ weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=merging_data1
 ---
-
-In this example we will run an extraction to merge data, i.e. insert a new data row or update an existing one.
-Prerequisite for executing the merge is defining a primary key in the General Settings of the extraction.
+{: .box-note }
+**Note** Prerequisite for executing the merge is defining a primary key in the **General Settings** of the extraction.
 
 ![XU_table_Primary_key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
