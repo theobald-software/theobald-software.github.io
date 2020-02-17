@@ -50,7 +50,7 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 ### Cloud Storage
 
 - [Amazon AWS S3](./xu-destinations/amazon-aws-s3)
-- [Azure Blob Storage](./xu-destinations/azure-blob-storage) 
+- [Azure storage account](./xu-destinations/azure-storage-account) 
 
 ### Generic Destinations
 
