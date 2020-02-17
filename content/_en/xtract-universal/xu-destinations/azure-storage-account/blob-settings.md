@@ -4,7 +4,7 @@ layout: page
 title: Settings
 description: Settings
 product: xtract-universal
-parent: azure-blob-storage
+parent: azure-storage-account
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

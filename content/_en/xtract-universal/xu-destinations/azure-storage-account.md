@@ -1,11 +1,11 @@
 ---
 ref: xu-destinations-24
 layout: page
-title: Azure BLOB Storage
-description: Azure BLOB Storage
+title: Azure storage account
+description: Azure storage account
 product: xtract-universal
 parent: xu-destinations
-childidentifier: azure-blob-storage
+childidentifier: azure-storage-account
 permalink: /:collection/:path
 weight: 24
 lang: en_GB
