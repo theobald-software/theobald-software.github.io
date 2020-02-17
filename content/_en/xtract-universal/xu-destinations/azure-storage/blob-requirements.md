@@ -4,7 +4,7 @@ layout: page
 title: Requirements
 description: Requirements
 product: xtract-universal
-parent: azure-storage-account
+parent: azure-storage
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

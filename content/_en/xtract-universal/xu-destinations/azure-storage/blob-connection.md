@@ -4,7 +4,7 @@ layout: page
 title: Connection
 description: Connection
 product: xtract-universal
-parent: azure-storage-account
+parent: azure-storage
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
