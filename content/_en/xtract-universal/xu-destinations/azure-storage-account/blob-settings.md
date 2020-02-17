@@ -46,3 +46,4 @@ After the successful extraction you will find the data in the Azure BLOB Storage
 ![azure-blob-file-gz](/img/content/azure-blob-file-gz.png){:class="img-responsive"}
 
 
+

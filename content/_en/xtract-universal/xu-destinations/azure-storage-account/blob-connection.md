@@ -39,3 +39,4 @@ Selection of the container into which the extracted data is to be written.
 ### CSV Settings
 
 ![azure_blob_destination_settings_csv_settings](/img/content/azure_blob_destination_settings_csv_settings.png){:class="img-responsive"}
+
