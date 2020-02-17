@@ -20,7 +20,7 @@ When you click the **Destination** button, you can set extraction-specific setti
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
-#### Compression
+### Compression
 
 **None**<br>
 The data is transferred uncompressed and stored as a csv file.
@@ -28,7 +28,7 @@ The data is transferred uncompressed and stored as a csv file.
 **gzip**<br>
 The data is transferred compressed and stored as a gz file. 
 
-#### Blob Type
+### Blob Type
 
 **Append Blob**<br>
 Consists of blocks, analogous to Blob Type, and are optimized for attachment operations.
@@ -36,14 +36,19 @@ Consists of blocks, analogous to Blob Type, and are optimized for attachment ope
 **Block Blob**<br>
 Text and binary data consisting of data blocks that can be managed individually.
 
-#### Folder Path
+### Folder Path
 
 Enter a folder name without slashes here if you want the extraction to be extracted to a folder within an Azure BLOB Storage container.
 Subfolders are also supported and can be entered as follows: Folder/Subfolder1/Subfolder2/…
 
-After the successful extraction you will find the data in the Azure BLOB Storage.
 
-![azure-blob-file-gz](/img/content/azure-blob-file-gz.png){:class="img-responsive"}
+### CSV File Splitting
+
+**No Splitting**
+
+**Split**
+
+**Max. CSV file size:**
 
 
 

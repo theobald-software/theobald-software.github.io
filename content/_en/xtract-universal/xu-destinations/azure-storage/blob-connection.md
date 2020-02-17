@@ -18,7 +18,7 @@ The following settings are required to connect to the Azure storage account.  Th
 
 ![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
 
-**Account Name**<br>
+**Account name**<br>
 Name of storage account.
 
 **Key**<br>
@@ -27,10 +27,11 @@ Access key to the Azure storage account.
 **Connect**<br>
 1. Enter account name and key
 2. Click **[Connect]**
+
 If the connection was successful, an info window pops up and you can then select a container.
 
 **Container**<br>
-Allows for selection of the container into which the extracted data is to be written.
+Allows selecting a container into which the extracted data is to be written.
 
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01.png){:class="img-responsive"}
 
