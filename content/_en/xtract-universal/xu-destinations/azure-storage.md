@@ -9,9 +9,10 @@ childidentifier: azure-storage
 permalink: /:collection/:path
 weight: 24
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=azure_dwh
+old_url: 
 ---
 
 This section describes how to load SAP data to an Azure storage account. 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+
