@@ -70,8 +70,7 @@ e.g., `C:\SNC\gx64krb5.dll` (3).
 8. Click **[OK]** to confirm.
 
 {: .box-note}
-**Note:** The SAP Logon Pad SNC settings for partner name differ from the ones used in Xtract Universal. SAP Logon Pad uses the UPN of the SAP service accounts and Xtract Universal uses the Service Principal Name (SPN). Use the following notation:<br>
-*p:[SAP Service Account]@[domain]*. SPN's are case sensitive in the SNC partner name.
+**Note:** The SAP Logon Pad SNC settings for partner name differ from the ones used in Xtract Universal. SAP Logon Pad uses the UPN of the SAP service accounts and Xtract Universal uses the Service Principal Name (SPN). Use the following notation: *p:[SAP Service Account]@[domain]*. SPN's are case sensitive in the SNC partner name.
 
 ### SNC Activation in SAP
 
