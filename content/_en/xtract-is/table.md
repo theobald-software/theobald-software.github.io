@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=table
 ---
 
-The following section explains how to use the Xtract IS Table component. 
+The following section gives an overview over the Xtract IS Table component. 
 ![XIS_Table_overview](/img/content/xis/xis_table_overview.png){:class="img-responsive"}
 
 ### Extraction types of Xtract IS Table component
@@ -24,7 +24,7 @@ The following section explains how to use the Xtract IS Table component.
 - Transparent tables
 - Views
 - ABAP CDS views
-- Pool tables (joing not allowed)
-- Cluster tables (joing not allowed)
+- Pool tables (joing not possible)
+- Cluster tables (joing not possible)
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
