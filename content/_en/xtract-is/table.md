@@ -12,17 +12,19 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=table
 ---
 
-This chapter explains how to handle the Xtract IS Table component. The component contains two extraction types:
+The following section explains how to use the Xtract IS Table component. 
+![XIS_Table_overview](/img/content/xis/xis_table_overview.png){:class="img-responsive"}
 
+### Extraction types of Xtract IS Table component
 - **Table**: Enables mass data extraction directly from SAP tables and views.
-- **Table Join**: Allows joining two or more SAP tables on the SAP side before extraction, a functionality previously only available in the separate *Xtract IS Table Join* component. 
+- **Table Join**: Allows joining two or more SAP tables on the SAP side before extracting. 
 
-The following source objects are supported by Xtract IS Table:
+### Objects supported by Xtract IS Table component
 
-- pool tables
-- transparent tables
-- cluster tables
-- views
+- Transparent tables
+- Views
 - ABAP CDS views
+- Pool tables (joing not allowed)
+- Cluster tables (joing not allowed)
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
