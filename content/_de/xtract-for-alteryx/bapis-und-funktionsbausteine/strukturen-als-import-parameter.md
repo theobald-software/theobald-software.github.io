@@ -1,9 +1,9 @@
 ---
-ref: xu-bapis-function-03
+ref: xfa-bapi-structures
 layout: page
 title: Strukturen als Import-Parameter
 description: Strukturen als Import-Parameter
-product: xtract-universal
+product: xtract-for-alteryx
 parent: bapis-und-funktionsbausteine
 permalink: /:collection/:path
 weight: 3
