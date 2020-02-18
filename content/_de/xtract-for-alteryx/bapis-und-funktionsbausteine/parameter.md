@@ -1,14 +1,13 @@
 ---
-ref: xfa-bapi-parameters
+ref: parameters
 layout: page
 title: Parameter
 description: Parameter
-product: xtract-for-alteryx
+product: xract-for-alteryx
 parent: bapis-und-funktionsbausteine
 permalink: /:collection/:path
-weight: 3
+weight: 6
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=strukturen-als-import-parameter
 ---
 
 Dieser Abschnitt ist in Bearbeitung, Informationen folgen in Kürze.

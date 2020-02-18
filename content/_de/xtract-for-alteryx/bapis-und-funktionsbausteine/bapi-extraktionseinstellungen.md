@@ -11,4 +11,4 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapi-extraktionseinstellungen
 ---
 
-{% include _content/de/bapi/bapi-extraktionseinstellungen.md %} 
+BAPI-Komponente verfügt über keine besonderen Extraktionseinstellungen.
