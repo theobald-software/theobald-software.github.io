@@ -1,17 +1,17 @@
 ---
-ref: xtract-universal-11
+ref: xtract-for-alteryx-07
 layout: page
 title: BAPIs und Funktionsbausteine
 description: BAPIs und Funktionsbausteine
-product: xtract-universal
-parent: xtract-universal
+product: xtract-for-alteryx
+parent: xtract-for-alteryx
 childidentifier: bapis-und-funktionsbausteine
 permalink: /:collection/:path
-weight: 11
+weight: 6
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
-Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal BAPI Komponente. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente. Kenntnisse über die Grundlagen von Xtract for Alteryx werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
