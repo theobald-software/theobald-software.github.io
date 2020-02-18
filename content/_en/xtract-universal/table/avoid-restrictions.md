@@ -1,5 +1,5 @@
 ---
-ref: xu-table-06
+ref: xu-table-07
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions

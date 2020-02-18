@@ -1,12 +1,12 @@
 ---
-ref: xu-table-06
+ref: xu-table-07
 layout: page
 title: Einschränkungen umgehen
 description: Einschränkungen umgehen
 product: xtract-universal
 parent: table
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
 ---
 
