@@ -1,12 +1,12 @@
 ---
-ref: xu-logging-03
+ref: xu-logging-02
 layout: page
 title: Extraktion-Logging
 description: Extraktion-Logging
 product: xtract-universal
 parent: logging
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktion-logging
 ---

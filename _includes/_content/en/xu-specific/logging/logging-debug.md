@@ -1,14 +1,26 @@
-If some errors occur, debug logging (tracing) information may be required to analyze the issue. To activate tracing please follow those steps: 
+All Theobald Software products log all steps performed on a system to log files.
+In case of debugging faulty behavior, Theobald support team may ask to hand over tracing information.
 
-1. Fill in a path (e.g. C:\Temp\Trace\) in the field Trace Directory in the SAP connection Manager.
-    To open the SAP connection manager, select the designer menu Server -> Manage Services. Select your SAP connection and click Edit. 
-2. Reproduce the error. XML Files are created in the folder specified with the tracing information.
-3. Compress the folder to a zip file (e.g. Trace.zip) and sent it to our support.
-4. After reproducing the error delete the entry in the field Trace Directory since tracing is not needed anymore. 
+{: .box-warning }
+**Warning!: Increase of used hard drive memory** <br>
+A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.
+Activate the debug logging only when necessary, e.g., upon request of the support team.
 
-![tracing-setting](/img/content/tracing-setting.png){:class="img-responsive"}
+### Activating tracing
 
-Please note that the debug logging usually should be activated by request of the support team.<br>
-There are plenty of information that will be collected. This can decrease the capacity of your hard drives dramatically.<br>
-Please note that the default logging is independent of the debug logging settings.<br>
-The default logging will be accessed even if the trace directory entry in the connection manager is left blank.
+1. Within the Designer, open "Manage Sources" window by selecting **[Server > Manage Sources]**. 
+2. Select the SAP source of your faulty extraction and click **[Edit]** (pencil symbol).
+![sap-source](/img/content/edit_sap_source.png){:class="img-responsive"}
+3. Under subsection **Miscellaneous** click **[...]** in the field 'Trace directory'.
+4. Create a new folder where to store tracing files e.g., `C:\trace` (1).
+![tracing-path](/img/content/xu_tracing_path.png){:class="img-responsive"}
+5. Confirm by clicking **[OK]**.
+6. Reproduce the error. 
+XML Files are created in the folder `C:\trace` with the tracing information.
+7. Compress the folder to a zip file (e.g. Trace.zip) and sent it to our support departmnent (support@theobald-software.com).
+8. Delete the entry in the field 'Trace directory'
+
+
+
+
+
