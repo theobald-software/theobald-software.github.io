@@ -14,9 +14,8 @@ The window "Manage Sources" opens. <br>
 2. Select the SAP source of your faulty extraction and click **[Edit]** (pencil symbol). The window "Manage Sources".
 ![sap-source](/img/content/edit_sap_source.png){:class="img-responsive"}
 3. Under subsection **Miscellaneous** click **[...]** in the field **Trace directory**.
-![tracing-path](/img/content/xu_tracing_path.png)
-4. Create a new folder for storing tracing files e.g., `C:\trace` (1).
 ![tracing-path](/img/content/xu_tracing_path.png){:class="img-responsive"}
+4. Create a new folder for storing tracing files e.g., `C:\trace` (1).
 5. Click **[OK]** to confirm.
 6. Reproduce the error. XML files with the tracing information are created in the folder `C:\trace`.
 7. Compress the folder to a zip file (e.g., Trace.zip) and send the zip file to Theobald support team (support@theobald-software.com).
