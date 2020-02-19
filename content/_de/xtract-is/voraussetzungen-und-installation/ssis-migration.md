@@ -52,8 +52,5 @@ Bei VS/SSDT 2015 sowie 2017 können Sie die Zielversion des SQL Servers (Deploym
 
 ![VS-Deployment-Target](/img/content/VS-Deployment-Target.png){:class="img-responsive"}
 
-Weitere Informationen zu den unterstützten SSIS- und Visual Studio-Versionen bzw. den Upgrade auf höhere SSIS-Versionen finden Sie hier:<br> 
-[List of the SSIS/VS Versions Supported by Xtract IS(englisch)](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is)
-
 ### 3. Aktuelle XtractISSetup.exe installieren
 Bitte installieren Sie mittels XtractISSetup.exe die aktuelle Xtract IS Version auf die Deployment Umgebung (SSIS Server). In diesem, Zuge ist die Ausführung und Installation der aktuellen  Version auf die Entwicklungsumgebung ebenfalls notwendig (Visual Studio).

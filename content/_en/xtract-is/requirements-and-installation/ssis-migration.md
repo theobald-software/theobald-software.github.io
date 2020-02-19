@@ -53,8 +53,5 @@ With VS/SSDT 2015 and 2017, you can select the target server version in the proj
 
 ![VS_Deployment_Target](/img/content/VS_Deployment_Target.png){:class="img-responsive" width="400px"}
 
-For more information about supported SSIS versions, their relation to different Visual Studio versions and how to upgrade to higher SSIS versions check:<br>
-[List of the SSIS/VS Versions Supported by Xtract IS](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is)
-
 ### 3. Install the latest version of Xtract IS
 Install the latest version of Xtract IS on your SSIS Server and any development environment (Visual Studio/SSDT).
