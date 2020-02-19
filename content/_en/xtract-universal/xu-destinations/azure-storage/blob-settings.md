@@ -13,7 +13,7 @@ Clic the **[Destination]** button to set extraction-specific settings for the de
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
 
-{% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
+{% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 
 ### Column name style
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
@@ -36,10 +36,13 @@ Creates an [Append Blob](https://docs.microsoft.com/en-us/rest/api/storageservic
 **Block Blob**<br>
 Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-block-blobs) 
 
+{: .box-note }
+**Note:** For both file types an MD5 hash will be created upon upload to Azure storage.
+
 ### Folder Path
 
-Enter a folder name without slashes if you want the extraction to be extracted to a folder within an Azure Blob container.
-Subfolders are also supported and can be entered as follows: folder/subfolder1/subfolder2/…
+Enter a folder name without slashes if you want the extraction to be extracted to a specific folder within an Azure Blob container.
+Subfolders are supported and can be entered using the following syntax: [folder[/[subfolder_1]/[subfolder_2]/…
 
 
 ### CSV File Splitting
@@ -53,5 +56,6 @@ Writes extraction data of a single extraction to multiple files in Azure storage
 **Max. CSV file size**
 Maximum size of a csv file stored in an Azure storage account. 
 
-
+{: .box-note }
+**Note:** The Max. CSV file size does not apply to gzip files. The size of a gzipped file cannot be determined in advance.
 
