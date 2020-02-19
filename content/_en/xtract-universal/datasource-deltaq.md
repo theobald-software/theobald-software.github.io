@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=datasource-deltaq
 
 {: .box-warning } 
 **Warning! Newer component available**<br>
-DeltaQ is an old component. If possible, use the newer component **[ODP](https://help.theobald-software.com/en/xtract-universal/Operational%20Data%20Provisioning%20(ODP))**.
+DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)**.
 
 This section describes the use of the Xtract Universal DeltaQ Component. The knowledge about the basic usage of Xtract Universal is assumed to follow the instructions.
 
