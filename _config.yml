@@ -51,7 +51,7 @@ language:
   en:
     navbar-links:
       - title: "Go to Knowledgebase"
-        url: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
+        url: "https://kb.theobald-software.com"
       - title: "Return to Theobald Software"
         url: "https://theobald-software.com/en/"
     navbar-back-to: "Back to"
@@ -72,7 +72,7 @@ language:
   de:
     navbar-links:
       - title: "Zur Knowledgebase"
-        url: "https://my.theobald-software.com/index.php?/Knowledgebase/List"
+        url: "https://kb.theobald-software.com"
       - title: "Zurück zur Theobald Software Website"
         url: "https://theobald-software.com/de/"
     navbar-back-to: "Zurück zur"
