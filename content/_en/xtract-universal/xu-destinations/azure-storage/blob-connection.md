@@ -14,24 +14,24 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 
 ### Blob Storage Settings
 
-The following settings are required to connect to the Azure storage account.  The required input values can be determined from the Azure Portal.
+The following settings are required to connect to the Azure storage account. The required input values can be determined from the Azure Portal.
 
 ![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
 
 **Account name**<br>
-Name of storage account.
+Storage account name.
 
 **Key**<br>
-Access key to the Azure storage account.  
+Access key of the Azure storage account.  
 
 **Connect**<br>
 1. Enter account name and key
 2. Click **[Connect]**
 
-If the connection was successful, an info window pops up and you can then select a container.
+If the connection was successful, a "Connection successful" info window opens. Click **[OK]** and select a *Container*.
 
 **Container**<br>
-Allows selecting a container into which the extracted data is to be written.
+Allows selecting a Blob container into which the extracted data is to be written.
 
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01.png){:class="img-responsive"}
 

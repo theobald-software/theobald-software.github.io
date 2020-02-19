@@ -19,7 +19,7 @@ The Azure Storage (Blob / Data Lake) destination supports the following Azure st
 - BlobStorage
  
 
-To use the Azure Storage (Blob / Data Lake) destination you need one of above mentioned Azure storage accounts. For further information, please refer to the official [Microsoft Azure Documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview.
+To use the Azure Storage (Blob / Data Lake) destination you need one of the above Azure storage accounts. For further information refer to the official [Microsoft Azure storage documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
 
 
 
