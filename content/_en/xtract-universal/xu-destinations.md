@@ -50,7 +50,7 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 ### Cloud Storage
 
 - [Amazon AWS S3](./xu-destinations/amazon-aws-s3)
-- [Azure Blob Storage](./xu-destinations/azure-blob-storage) 
+- [Azure Storage](./xu-destinations/azure-storage) 
 
 ### Generic Destinations
 
@@ -86,6 +86,4 @@ An extraction with push destinations involves the extracting of data from the SA
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc2MzUwMDFdfQ==
--->
+
