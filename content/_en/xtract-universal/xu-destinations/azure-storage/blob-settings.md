@@ -9,7 +9,8 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 ---
-Clic the **[Destination]** button to set extraction-specific settings for the destination.
+In the main window of the Designer, click **[Destination]** to set extraction-specific settings for the destination.<br>
+The window "Destination Setting" opens.
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
 
@@ -31,31 +32,32 @@ The data is transferred compressed and stored as a gz file.
 ### Blob Type
 
 **Append Blob**<br>
-Creates an [Append Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs)
+Creates an [Append Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs).
 
 **Block Blob**<br>
-Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-block-blobs) 
+Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-block-blobs).
 
 {: .box-note }
-**Note:** For both file types an MD5 hash will be created upon upload to Azure storage.
+**Note:** For both file types an MD5 hash is created upon upload to Azure storage.
 
-### Folder Path
+### Folder path
 
-Enter a folder name without slashes if you want the extraction to be extracted to a specific folder within an Azure Blob container.
-Subfolders are supported and can be entered using the following syntax: [folder[/[subfolder_1]/[subfolder_2]/…
+To determine the extration location within a specific folder in an Azure Blob container, enter a folder name without slashes.
+Subfolders are supported and can be defined using the following syntax: 
+`[folder[/[subfolder_1]/[subfolder_2]/…`
 
 
 ### CSV File Splitting
 
-**No Splitting**
+**No Splitting**<br>
 Writes extraction data of a single extraction to a single file in Azure storage.
 
-**Split**
-Writes extraction data of a single extraction to multiple files in Azure storage. Each filename will be appended by *_part[nnn]*. In case of csv files, the file size is determined by the value set in *Max. CSV file size*.
+**Split**<br>
+Writes extraction data of a single extraction to multiple files in Azure storage. Each filename is appended by *_part[nnn]*. In case of .csv files, the file size is determined by the value set in *Max. CSV file size*.
 
-**Max. CSV file size**
-Maximum size of a csv file stored in an Azure storage account. 
+**Max. CSV file size** <br>
+Maximum size of a .csv file stored in an Azure storage account. 
 
 {: .box-note }
-**Note:** The Max. CSV file size does not apply to gzip files. The size of a gzipped file cannot be determined in advance.
+**Note:** The option *Max. CSV file size* does not apply to gzip files. The size of a gzipped file cannot be determined in advance.
 
