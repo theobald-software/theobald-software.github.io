@@ -93,6 +93,8 @@ In the main menu bar of the designer there are additional adjustable settings:  
 
 ### Paths & URLs
 
+`C:\Program Files\ERPConnect Services\ERPConnectServices.NintexWorkflowActions.exe`
+
 #### URLs
 For more information on defining of the extractions, see [Define an Extraction](./about_template) with the "SAP Table or View" component as an example.
 
