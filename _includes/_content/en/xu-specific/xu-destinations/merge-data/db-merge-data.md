@@ -7,7 +7,7 @@ Ideally, the table with existing data is created in the first run with the corre
 {:.box-warning}
 **Warning! Faulty merge** <br>
 A primary key is a prerequisite for a merge command. If no primary key is set, the merge command runs into an error.
-Create an appropriate primary key in the [general settings](../../advanced-techniques/general-settings) to execute the merge command.
+Create an appropriate primary key in the [general settings](../../advanced-techniques/general-settings#primary-key-tab) to execute the merge command.
 
 ### Updating a value in SAP
 A field value in an SAP table is updated. With a merge command the updated value is written to the destination database table.<br>
