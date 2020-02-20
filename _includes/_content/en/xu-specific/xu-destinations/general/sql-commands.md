@@ -6,7 +6,7 @@ Defines the action on the target database before the data is inserted into the t
 - *Drop & Create*: Remove table if available and create new table (default).
 - *Truncate Or Create*: Empty table if available, otherwise create.
 - *Create If Not Exists*: Create table if not available.
-- *Prepare Merge*: prepares the merge process and creates e.g. a temporary staging table. See section [Merging Data](./merging-data) for more details. 
+- *Prepare Merge*: prepares the merge process and creates e.g. a temporary staging table. For more information see section About Merging. 
 - *None*: no action
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below. 
 
@@ -24,23 +24,30 @@ Defines how the data is inserted into the target table.
 - *Fill merge staging table*: Insert records into the staging table.
 - *None*: no action.
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
-- *Merge (deprecated)*: This option is obsolete. Use the *Fill merge staging* table option instead. 
+- *Merge (deprecated)*: This option is obsolete. Please use the Fill merge staging table option and check the About Merging section. 
 
 #### Finalization
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
-- *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example. 
+- *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example. For more information, see About Merging. 
 - *None*: no action (default).
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 
+#### About Merging
+Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
+See section [merging data](./)
+
 #### Custom SQL
 
-Here you can define your own SQL or script expressions. You can use existing SQL commands as templates. 
+Custom SQL option allows creating own SQL or script expressions. Existing SQL commands can be used as templates. 
 
-The following [link](../microsoft-sql-server/sql-server-custom-sql) provides an example of how to use predefined expressions. Please note that the custom SQL code is for SQL Server target environments. 
-```
-A syntactic adaptation of the code is necessary for other DB target environments!
-```
+See [Microsoft example](../microsoft-sql-server/sql-server-custom-sql) to understand how to use predefined expressions.
+
+{:.box-note}
+**Note:** the custom SQL code is used for SQL Server target environments. 
+A syntactic adaptation of the code is necessary for other DB target environments.
+
+See section [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) for more details.
 
 #### Templates
 

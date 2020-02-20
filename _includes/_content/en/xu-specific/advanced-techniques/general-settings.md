@@ -1,24 +1,50 @@
-Each extraction dialog has the link *General Settings*, which provides general settings that are independent of the extraction type.
+General Settings are independent of the extraction type.
+### To open General Settings
+1. In the main window of the Designer, double-click an extraction.<br>
+The window "Define data source for [...]" opens.<br>
+Example:
+![General-Settings](/img/content/table/table_main-window_2.png){:class="img-responsive"}
 
-**Misc. tab**
+2. Within the opened window, click **[General Settings]**.<br>
+The window "General Settings" opens.
+
+
+### Misc. tab
+The miscellaneous tab consists of two subsections:
+- Options
+- Keywords
 
 ![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
 
-**Disable Buffer**<br>
-This setting disables the extractions buffering and overwrites the server settings BufferExtractionCount  and BufferLifespanMinutes.
+#### Options
+**Cache results (1)**<br>
 
-If the data is in very short time intervals (see server setting BufferLifespanMinutes) is requested, the data is delivered from the buffer. This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the buffer must be explicitly turned off.
+{:.box-tip}
+**Note:** option only available in [pull destinations](../xu-destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
 
-With DeltaQ extractions buffering can only be used with update mode 'F'.
+Pull destinations often pull the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results**, this way the pull destination pulls the data from cache and not from the SAP.
+This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
 
-**Preview Mode**<br>
-If it is activated, only a small portion of data is extracted from SAP or (if that's not possible) sample data is generated instead.
+**Preview Mode (2)**<br>
+If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
 
-**Keywords**<br>
-You can assign one or more keywords (Tags) to an extraction. Within the designer you can use these keywords as a filter for the extraction.
+#### Keywords<br>
+One or more keywords (Tags) can be set to an extraction. 
+Keywords can be entered directly in the keyword field (3).
+Within the Designer you can use these keywords to filter  extractions. 
 
-**Primary Key Tab**<br>
-Select the primary key fields of the extraction. This is required for the merge operation.
+{:.box-tip}
+To display filter options, navigate to **[Extractions] > [Filter]** or press **[CTRL]+[F]**.
+ 
+### Primary Key tab<br>
+Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
+![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
-**Security Tab**<br>
-The security tab is described in the chapter [access management](../security/access-management).
+Depicted example demonstrates the SAP object *MAKT* with it's primary key inherited from SAP in the general settings of the Designer. In this example the primary key consists of *MANDT*, *MATNR*, *SPRAS*. The demonstrated primary key is also taken over in the destination. 
+
+{:.box-note}
+**Note:** A defined primary key field in a table is a prerequisite for merging data. 
+
+
+### Security Tab**<br>
+The security tab is described in the section [access management](../security/access-management).
