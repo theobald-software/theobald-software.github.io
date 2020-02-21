@@ -6,7 +6,7 @@ Defines the action on the target database before the data is inserted into the t
 - *Drop & Create*: Remove table if available and create new table (default).
 - *Truncate Or Create*: Empty table if available, otherwise create.
 - *Create If Not Exists*: Create table if not available.
-- *Prepare Merge*: prepares the merge process and creates e.g. a temporary staging table. For more information see section About Merging. 
+- *Prepare Merge*: prepares the merge process and creates e.g. a temporary staging table. See [merging](./merging-data) for more details. 
 - *None*: no action
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below. 
 
@@ -29,13 +29,13 @@ Defines how the data is inserted into the target table.
 #### Finalization
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
-- *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example. For more information, see About Merging. 
+- *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example.  
 - *None*: no action (default).
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 
 #### About Merging
 Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
-See section [merging data](./)
+See section [merging data](./merging-data)
 
 #### Custom SQL
 
