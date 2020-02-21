@@ -17,5 +17,3 @@ In the tab *Attributes* check *Remote Enabled*.
 5. Code: You can find the ABAP code in [Z_XTRACT_IS_TABLE.txt](/docs/sap-customizing/Z_XTRACT_IS_TABLE.txt){:download="Z_XTRACT_IS_TABLE"}. Press **[Ctrl + C]** and **[Ctrl + V]**  to paste the code into the source code editor.
 6. Save the function module and activate it.
 
-You can use the transport request (thtrans.zip) that can be found in the ABAP subfolder of the installation folder, to install the function module.
-For more detailed information about [installing the transport request](https://my.theobald-software.com/index.php?/Knowledgebase/Article/View/68/67/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) see the knowledge base article or check the SAP help.
