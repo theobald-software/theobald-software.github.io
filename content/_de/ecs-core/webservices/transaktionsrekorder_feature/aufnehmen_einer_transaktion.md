@@ -24,7 +24,6 @@ Zum Abschluß klicken Sie auf das *Speichern* Symbol.
  
 Beispiel für die Transaktion MM01 (Anlegen von Materialstammdaten): 
 
-Übersetzt mit www.DeepL.com/Translator (kostenlose Version)
 ![ta_rec_feature_05](/img/content/ecscore/ecscore-wsd_ta_rec_05.png){:class="img-responsive"}
 
 ![ta_rec_feature_06](/img/content/ecscore/ecscore-wsd_ta_rec_06.png){:class="img-responsive"}
