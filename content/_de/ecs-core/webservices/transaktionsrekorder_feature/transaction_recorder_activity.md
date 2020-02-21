@@ -10,26 +10,26 @@ weight: 3
 lang: de_DE
 ---
 
-After a successful recording, the SAP GUI will close and the *Transaction Recorder Activity* window appears in the WebService Designer. The following tabs can be found there:
+Nach einer erfolgreichen Aufzeichnung wird die SAP GUI geschlossen und das Fenster *Transaction Recorder Activity* erscheint im WebService Designer. Dort finden Sie die folgenden Registerkarten:
 
 **Standard**
 
-In the *Standard* tab you find the fields you somehow used or filled with values in the recording and can map them to input parameters. It’s the technical field names from SAP. 
-To understand the field meanings, the recording overview in the *References* tab helps. Besides that, all field descriptions can be looked up directly in the SAP transaction.  
+Im Karteireiter *Standard* finden Sie die Felder, die Sie irgendwie in der Aufzeichnung verwendet oder mit Werten gefüllt haben, und können diese auf Eingabeparameter abbilden. Es sind die technischen Feldnamen aus SAP. 
+Um die Bedeutung der Felder zu verstehen, hilft die Aufzeichnungsübersicht im Kareteireiter *References*. Außerdem können alle Feldbeschreibungen direkt in der SAP-Transaktion nachgeschaut werden. 
 
 ![ta_rec_feature_10](/img/content/ecscore/ecscore-wsd_ta_rec_10.png){:class="img-responsive"}
 
 **References**
 
-In the *References* tab, you get an overview of the transaction recording. You can see a sequence of actions, starting with entering the transaction code.
-In principle, only the sequence numbers where an entry was made, are significant. All other fields (beginning with „BDC“ in the example) are technical processes, 
-such as jumping with the cursor to the next field or the next input screen and can therefore be ignored.
+Im Karteireiter *References* erhalten Sie eine Übersicht über die Aufzeichnung der Transaktion. Sie sehen eine Folge von Aktionen, beginnend mit der Eingabe des Transaktionscodes.
+Im Prinzip sind nur die Sequenznummern, bei denen eine Eingabe gemacht wurde, von Bedeutung. Alle anderen Felder (im Beispiel beginnend mit "BDC") sind technische Vorgänge, 
+wie z.B. das Springen mit dem Cursor zum nächsten Feld oder zum nächsten Eingabebild und können daher ignoriert werden.
 
 ![ta_rec_feature_11](/img/content/ecscore/ecscore-wsd_ta_rec_11.png){:class="img-responsive"}
 
   
 **Labels**
 
-In the *Labels* tab you can rename the activity title and subtext for the recorded transaction (i.e. give a descriptive name for the transaction code).
+Im Karteireiter *Labels* können Sie den Activity Titel und den Subtitel für die aufgezeichnete Transaktion umbenennen (z.B. einen sprechenden Namen für den Transaktionscode angeben).
 
 ![ta_rec_feature_24](/img/content/ecscore/ecscore-wsd_ta_rec_24.png){:class="img-responsive"}

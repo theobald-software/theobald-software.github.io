@@ -10,13 +10,13 @@ weight: 6
 lang: de_DE
 ---
 
-After the parameter mapping, the web service can be deployed and tested. Close the operations dialog, give your web service a name and a title and click on *Deploy*. 
+Nach dem Parameter-Mapping kann der Webservice bereitgestellt und getestet werden. Schließen Sie den Operationsdialog, geben Sie Ihrem Webservice einen Namen und einen Titel und klicken Sie auf *Deploy*. 
 
 ![ta_rec_feature_22](/img/content/ecscore/ecscore-wsd_ta_rec_22.png){:class="img-responsive"} 
  
-After the successful deployment, the service can be tested (i.e. in a REST client). Calling up a web service with a recorded transaction works the same as calling any other web service not using this feature. <br>
+Nach der erfolgreichen Bereitstellung kann der Service getestet werden (z.b. in einem REST-Client). Der Aufruf eines Webservice mit einer aufgezeichneten Transaktion funktioniert genauso wie der Aufruf jedes anderen Webservice, der diese Funktion nicht nutzt. <br>
 
-Input parameters have to be filled with valid values and a output/result message will be given out in the web service body after the call. For example if a document number was created during the process, it be displayed in the body. 
+Die Eingabeparameter müssen mit gültigen Werten gefüllt werden, und nach dem Aufruf wird eine Ausgabe-/Ergebnisnachricht im Webservice-Body ausgegeben. Wenn beispielsweise eine Dokumentnummer während des Prozesses erstellt wurde, wird sie im Body angezeigt. 
 
 ![ta_rec_feature_23](/img/content/ecscore/ecscore-wsd_ta_rec_23.png){:class="img-responsive"} 
  

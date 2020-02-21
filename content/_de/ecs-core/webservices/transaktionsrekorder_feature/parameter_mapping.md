@@ -10,27 +10,28 @@ weight: 4
 lang: de_DE
 ---
 
-To map input parameters to the offered entry fields close the *Transaction Recorder Acivity* and define your parameters in the parameters box first.
+Um Eingabeparameter auf die angebotenen Input-Felder zu mappen, schließen Sie die *Transaction Recorder Activity* und definieren Sie Ihre Parameter zunächst unter *Parameters*.
 
 ![ta_rec_feature_12](/img/content/ecscore/ecscore-wsd_ta_rec_12.png){:class="img-responsive"}
 
 
-All parameters must be defined as input parameters, the default case would be parameter of data type *String*. 
-Note that you only need to define input parameters for fields you want to explicitely  allow interaction with through the web service. If you do not define input parameters for fields that have been recorded, 
-for these fields the recorded values will be taken as default values.
+Alle Parameter müssen als Eingabeparameter definiert werden, der Standardfall ist ein Parameter vom Datentyp *String*. 
+Beachten Sie, dass Sie nur Eingabeparameter für Felder definieren müssen, mit denen Sie die Interaktion über den Web Service explizit zulassen wollen. Wenn Sie keine Eingabeparameter für Felder definieren, die aufgezeichnet wurden, 
+werden für diese Felder die aufgezeichneten Werte als Standardwerte genommen.
 
-After defining your parameters, close the parameter dialog and open the *Transaction Recorder Activity*. You can map now the defined parameters to the fields offered in the *Standard* tab. 
+
+Nachdem Sie Ihre Parameter definiert haben, schließen Sie den Parameterdialog und öffnen die *Transaction Recorder Activity*. Sie können nun die definierten Parameter den im Karteireiter *Standard* angebotenen Feldern zuordnen. 
 
 ![ta_rec_feature_13](/img/content/ecscore/ecscore-wsd_ta_rec_13.png){:class="img-responsive"}
 
 
-In the example for material creation (transaction MM01) no input parameter shall be defined for field MSICHTAUSW-KZSEL(01) which stands for the selection of input screen *Basic Data 1*. 
-Furthermore for field MARA-MEINS which is the *Base Unit Of Measure* for the newly created material the recorded value shall be taken as default.  
+Im Beispiel für die Materialanlage (Transaktion MM01) soll für das Feld MSICHTAUSW-KZSEL(01), das für die Auswahl des Eingabebildes *Basisdaten 1* steht, kein Eingabeparameter definiert werden. 
+Außerdem soll für das Feld MARA-MEINS, das die Mengeneinheit für das neu angelegte Material darstellt, der aufgezeichnete Wert als Vorgabe genommen werden.   
 
 ![ta_rec_feature_14](/img/content/ecscore/ecscore-wsd_ta_rec_14.png){:class="img-responsive"}
 
-However it is possible to assign another fixed value by default for this field, by entering the value between quotation marks directly in the mapping expression field.
+Es ist möglich, diesem Feld standardmäßig einen anderen festen Wert zuzuweisen, indem der Wert zwischen den Anführungszeichen direkt im *Mapping expression* Feld eingegeben wird.
 
 ![ta_rec_feature_15](/img/content/ecscore/ecscore-wsd_ta_rec_15.png){:class="img-responsive"}
 
-It is recommended to first deploy and test a web service without any parameter mapping after a transaction recording. With this you can check whether the web service works with the default parameters from the recording. 
+Es wird empfohlen, einen Webservice nach einer Transaktionsaufzeichnung zunächst ohne Parameter-Mapping bereitzustellen und zu testen. Damit können Sie überprüfen, ob der Webservice mit den Standardeingabewerten aus der Aufzeichnung funktioniert. 

@@ -10,24 +10,24 @@ weight: 1
 lang: de_DE
 ---
 
-To use the Transaction Recorder feature, the SAP GUI must be installed on the same environment. Furthermore for most transactional processes customizing is necessary in SAP.
-To record a transaction, the SAP connection must be defined and working in the WebService Designer. 
+Um das Transaktionsrekorder Feature zu nutzen, muss der SAP GUI auf derselben Umgebung installiert sein. Außerdem ist für die meisten transaktionalen Prozesse ein Customizing in SAP erforderlich.
+Um eine Transaktion aufzuzeichnen, muß die SAP-Verbindung im WebService Designer definiert werden und funktionieren. 
 
 ![ta_rec_feature_01](/img/content/ecscore/ecscore-wsd_ta_rec_01.png){:class="img-responsive"}
 
-To get to the feature a new service operation must be created in the designer.
+Um zu dem Feature zu gelangen, muss im Designer eine neue Service-Operation erstellt werden.
 
 ![ta_rec_feature_02](/img/content/ecscore/ecscore-wsd_ta_rec_02.png){:class="img-responsive"}
 
-The feature can then be found on the right-hand side in the Activities bar.
+Die Funktion ist dann auf der rechten Seite in der Aktivitätsleiste zu finden.
 
 ![ta_rec_feature_03](/img/content/ecscore/ecscore-wsd_ta_rec_03.png){:class="img-responsive"}
 
-Drag and Drop the Transaction Recorder activity on the canvas and a box will appear, where you have to write down the tramsaction code of the transaction you would like to record.
+Ziehen Sie die Transaction Recorder Activity auf die Oberfläche und es erscheint eine Box, in der Sie den Transaktionscode der Transaktion, die Sie aufzeichnen möchten, eingeben müssen.
 
 ![ta_rec_feature_04](/img/content/ecscore/ecscore-wsd_ta_rec_04.png){:class="img-responsive"}
 
-Confirm your entry with OK and the transaction recording will start in the SAP GUI.
+Bestätigen Sie Ihre Eingabe mit OK und die Aufzeichnung der Transaktion wird im SAP GUI gestartet.
 
 
 
