@@ -12,6 +12,6 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=logging
 ---
 
-In diesem Kapitel erhalten Sie eine Übersicht über die Logging-Funktionen innerhalb von Xtract Universal.
+Im folgenden Abschnitt erhalten Sie Informationen über die Logging-Funktionen von Xtract Universal.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
