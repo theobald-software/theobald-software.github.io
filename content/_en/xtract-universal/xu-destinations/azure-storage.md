@@ -12,7 +12,7 @@ lang: en_GB
 old_url: 
 ---
 
-This section describes how to load SAP data to an Azure Storage. 
+The following section describes the loading of SAP data to a cloud based Azure Storage. 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 
