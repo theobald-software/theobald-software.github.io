@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 ---
+
 In the main window of the Designer, click **[Destination]** to set extraction-specific settings for the destination.<br>
 The window "Destination Setting" opens.
 

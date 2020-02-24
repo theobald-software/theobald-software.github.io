@@ -35,10 +35,10 @@ If the connection was successful, a "Connection successful" info window opens. C
 **Container**<br>
 Allows selecting a Blob container into which, the extracted data is written.
 
-![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01.png){:class="img-responsive"}
+![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
 ### CSV Settings
 
-![azure_blob_destination_settings_csv_settings](/img/content/azure_blob_destination_settings_csv_settings.png){:class="img-responsive"}
+![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
 
 
