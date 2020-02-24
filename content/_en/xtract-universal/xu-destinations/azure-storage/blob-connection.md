@@ -39,6 +39,8 @@ Allows selecting a Blob container into which, the extracted data is written.
 
 ### CSV Settings
 
+The settings in the tab CSV Settings correspond to the ones in the general [http-csv settings](../csv-via-http).
+
 ![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
 
 

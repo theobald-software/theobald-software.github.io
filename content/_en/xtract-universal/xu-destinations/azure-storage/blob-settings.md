@@ -43,7 +43,7 @@ Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices
 
 ### Folder path
 
-To determine the extration location within a specific folder in an Azure Blob container, enter a folder name without slashes.
+To write extraction data to a location within a specific folder in an Azure Blob container, enter a folder name without slashes.
 Subfolders are supported and can be defined using the following syntax: 
 `[folder[/[subfolder_1]/[subfolder_2]/…`
 

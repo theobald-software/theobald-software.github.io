@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-einstellungen
 ---
 
-Im Hauptfenster des Desginers, klicken Sie auf **[Destination]**, um die  
+Im Hauptfenster des Designers, klicken Sie auf **[Destination]**, um die  
 extraktionsspezifischen Einstellungen bezüglich des Ziels festlegen. Das Fenster "Destination Settings" wird geöffnet. 
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
@@ -41,11 +41,11 @@ Erstelt ein [Append Blob](https://docs.microsoft.com/en-us/rest/api/storageservi
 Erstellt ein [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-block-blobs).
 
 {: .box-note }
-**Note:** Für beide Dateientypen wird beim Hochladen ins Azure-Storage automatisch ein MD5-Hash erstellt.
+**Note:** Für beide Dateitypen wird beim Hochladen nach Azure-Storage automatisch ein MD5-Hash erstellt.
 
 #### Folder Path
 
-Wenn die extrahierten Daten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein.
+Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein.
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner[/[unterordner_1]/[unterordner_2]/…`
 
 
