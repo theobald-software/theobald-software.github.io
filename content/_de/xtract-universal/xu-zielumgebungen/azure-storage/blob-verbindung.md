@@ -15,19 +15,19 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-verbindung
 
 ### Blob Storage Einstellungen
 
-Folgende Einstellungen werden für die Verbindung zum Azure-Storage-Konto benötigt.  
+Folgende Einstellungen werden für die Verbindung zum Azure-Storage-Account benötigt.  
 Die notwendigen Eingabewerte können Sie dem Azure-Portal entnehmen.
 
 ![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
 
 **Account Name**<br>
-Storage-Kontoname im Azure-Portal.
+Storage-Account-Name im Azure-Portal.
 
 **Key**<br>
-Zugangsschlüssel zum Azure-Storage-Konto.  
+Zugangsschlüssel zum Azure-Storage-Account.  
 
 **Connect**<br>
-1. Geben Sie den Kontonamen und den Schlüssel ein.
+1. Geben Sie den Account-Nnamen und den Schlüssel ein.
 2. Klicken Sie auf **[Connect]**.
 
 Wenn die Verbindung erfolgreich ist, poppt das Infofenster "Connection successful" auf. Klicken Sie auf **[OK]** und 

@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-voraussetzungen
 ---
 
-Die Azure-Storage-Destination (Blob / Data Lake) unterstützt die folgenden Azure-Storage Kontotypen:
+Die Azure-Storage-Destination (Blob / Data Lake) unterstützt die folgenden Azure-Storage Account-Typen:
 - General-purpose V2 (Allgemein, inkl. Azure Data Lake Storage Gen2)
 - General-purpose V1 (Allgemein)
 - BlockBlobStorage
