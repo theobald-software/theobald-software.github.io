@@ -4,7 +4,7 @@ layout: page
 title: Voraussetzungen
 description: Voraussetzungen
 product: xtract-universal
-parent: azure_blob_storage
+parent: azure-storage
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

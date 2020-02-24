@@ -4,7 +4,7 @@ layout: page
 title: Verbindung
 description: Verbindung
 product: xtract-universal
-parent: azure_blob_storage
+parent: azure-storage
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
