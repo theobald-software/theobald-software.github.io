@@ -45,7 +45,7 @@ Erstellt ein [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservi
 
 #### Folder Path
 
-Um den Extraktionsort in einem bestimmten Ordner innerhalb des Azure-Blob-Containers zu bestimmen, geben Sie den Ordnernamen ohne Schrägstriche (Slashes) ein.
+Wenn die extrahierten Daten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein.
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner[/[unterordner_1]/[unterordner_2]/…`
 
 

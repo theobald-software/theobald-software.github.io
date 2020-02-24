@@ -41,6 +41,8 @@ Ermöglicht die Auswahl des Blob Containers, in den die extrahierten Daten gesch
 
 ### CSV Settings
 
+Die Einstellungsmöglichkeiten im Reiter CSV Settings entsprechen denen der allgemeinen [http-csv Settings](../csv-via-http).
+
 ![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
 
  
