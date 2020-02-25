@@ -38,7 +38,7 @@ Refer to [this github page](https://github.com/jneen/rouge/wiki/List-of-supporte
 
 A code block can be added with the following:
 
-``` csharp
+``` c#
 using(R3Connection con = new R3Connection())
 {
     con.UserName = „steffan";
