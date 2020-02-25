@@ -41,12 +41,12 @@ A code block can be added with the following:
 ``` c#
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = „steffan";
-    con.Password = „DontBeSoCurious";
-    con.Language = „EN";
-    con.Client = "800";
-    con.Host = „ec5.theobald-software.com";
-    con.SystemNumber = 00;
+    con.UserName = 'steffan';
+    con.Password = 'DontBeSoCurious';
+    con.Language = 'EN';
+    con.Client = '800';
+    con.Host = 'ec5.theobald-software.com';
+    con.SystemNumber = '00';
     con.Protocol = ClientProtocol.NWRFC;
     con.Open(false);
 }
