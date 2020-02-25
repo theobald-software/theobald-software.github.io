@@ -1,38 +1,33 @@
-In diesem Abschnitt werden die notwendigen Schritte beschrieben, um Single Sign On (SSO) mit (Secure Network Communication) SNC und Kerberos Verschlüsselung in Xtract Universal einzurichten.
+In diesem Abschnitt werden die notwendigen Schritte beschrieben, um Single Sign-On (SSO) mit Secure Network Communication (SNC) und Kerberos Verschlüsselung in Xtract Universal einzurichten.
 
 {: .box-warning }
 **Warnung! Single Sign-On Verfügbarkeit** <br> 
 ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss SNC mit Kerberos-Verschlüsselung auf SAP-Seite eingestellt sein. <br>
 
-**Die hier beschriebenen Schritte setzen voraus, dass des SAP-Applikationsserver unter Windows läuft und für SNC mit Kerberos eingerichtet wurde/wird.**
-
-
 ### Aktivierung von HTTPS in Xtract Universal 
 1. Aktivieren Sie das Zugriffskontrollprotokoll HTTPS (1) innerhalb des Tabs *Web Server* Einstellungen. 
-2. Verweisen Sie auf ein vorhandenes [X.509-Zertifikat](../../sicherheit/x.509-zertifikat-installieren)(2).<br>
+2. Verweisen Sie auf ein vorhandenes [X.509-Zertifikat](../../sicherheit/x.509-zertifikat-installieren) (2).<br>
 HTTPS-Port *8165* ist die Standardeinstellung.
 3. Klicken Sie auf **[OK]** zum Bestätigen. (3)<br>
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
 ### Konfiguration vom Windows AD Service-Account.
-
 1. Erstellen Sie einen Windows AD Service-Account für den Xtract Universal (XU) Server. Dies ist der Account, unter dem der XU-Dienst läuft (XU-Service-Account).
 ![XU_ServiceAccount](/img/content/XU-server-service-account.png){:class="img-responsive"}
 2. Im Tab *Attribute editor* definieren Sie zwei *Service Principal Names* (SPN). Verwenden Sie die folgende Notation: *&lt;service class&lt;/&lt;host&lt;*, z.B. *HTTP/FQDN.domain.local:8165*.
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
 3. Im Tab *Delegation* definieren Sie den XU-Service-Account für eingeschränkte Bevollmächtigung - *Use Kerberos Only*.
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
-4. Geben Sie den SPN des Service-Accounts ein. Unter diesem Service-Account wird der SAP-ABAP-Applikationssever laufen (SAP Service-Account) z.B. *SAPServiceERP/do_not_care*.
+4. Geben Sie den SPN des Service-Accounts ein. Unter diesem Service-Account wird der SAP ABAP-Applikationsserver laufen (SAP Service-Account) z.B. *SAPServiceERP/do_not_care*.
 Mehr Informationen zu den Notationen in SAP, finden Sie im [SAP Hilfe-Portal](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/en-US/440ebb40b9920d1be10000000a114a6b.html).
 5. Im Tab *Log On*, ändern Sie den Account zu XU-Service-Account, z.B. *svc_xusrv@theobald.local*.
 ![XU_SSO_WinAD_SPN](/img/content/XU_Service_Account.png)
 
 ### Xtract Universal Servereinstellungen
-
 {: .box-warning}
 **Warnung! Inkompatible Bibliothek**  <br>
-Xtract Universal läuft nur auf einem 64-Bit-Betriebssystem. Die Kerberos Wrapper-Bibliothek gx64krb5.dll ist erforderlich. <br>
+Xtract Universal läuft nur auf einem 64-Bit-Betriebssystem. Die Kerberos Wrapper-Bibliothek gx64krb5.dll (64-Bit Version) ist erforderlich. <br>
 Laden Sie die Bibliothek `gx64krb5.dll` direkt aus der [SAP Note 2115486](https://launchpad.support.sap.com/#/notes/2115486) herunter.
 
 1. Kopieren Sie die Kerberos Wrapper-Bibliothek in das Dateisystem des Rechners, auf dem der Xtract Universal Dienst läuft, z.B. nach `C:\SNC\gx64krb5.dll`.
@@ -62,7 +57,7 @@ Value (Wert) | 1
 
 1. Im Hauptmenü des Designers, navigieren Sie zu **[Server > Manage Sources]**. Das Fenster "Source Details" öffnet sich.
 ![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}
-2. Wählen Sie eine vorhandene SAP-Quelle aus und klicken Sie auf **[Edit]** (Bleistift-Symbol).
+2. Wählen Sie eine vorhandene SAP-Quellsystem aus und klicken Sie auf **[Edit]** (Bleistift-Symbol).
 ![Edit-SAP-source](/img/content/edit_sap_source.png){:class="img-responsive"}
 3. Aktivieren Sie die Option **SNC** (1) in der Sektion *Authentication*.
 4. Markieren Sie das Kästchen *Impersonate authenticated caller (SSO)* (2).
@@ -75,5 +70,5 @@ z.B. `C:\SNC\gx64krb5.dll` (3).
 
 {: .box-note}
 **Hinweis:** Die SNC-Einstellungen des SAP-Logon-Pads für den Partnernamen unterscheiden sich von denen, die in Xtract Universal verwendet werden. 
-Das SAP-Logon-Pad verwendet den UPN der SAP-Server-Accounts und Xtract Universal den Service Principal Name (SPN). Verwenden Sie die folgende Notation:
-*p:[SAP Service Account]@[domain]*. Bei SPNs wird im SNC-Partnernamen zwischen Groß- und Kleinschreibung unterschieden.
+Das SAP Logon-Pad verwendet den UPN der SAP-Server-Accounts und Xtract Universal den Service Principal Name (SPN). Verwenden Sie die folgende Notation:
+*p:[SAP Service Account]@[domain]*. Bei SPN's wird im SNC-Partnernamen zwischen Groß- und Kleinschreibung unterschieden.

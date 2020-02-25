@@ -29,7 +29,7 @@ For more detailed information about the partner name notation in SAP, see the [S
 
 {: .box-warning}
 **Warning! Incompatible library**  <br>
-Xtract Universal runs on 64bit OS only. Kerberos Wrapper Library gx64krb5.dll is required. <br>
+Xtract Universal runs on 64bit OS only. Kerberos Wrapper Library gx64krb5.dll(64-Bit version) is required. <br>
 Download `gx64krb5.dll` from [SAP Note 2115486](https://launchpad.support.sap.com/#/notes/2115486).
 
 1. Copy the Kerberos Wrapper Library to the file system, e.g., to `C:\SNC\gx64krb5.dll` of the machine, where the Xtract Universal service is running.
