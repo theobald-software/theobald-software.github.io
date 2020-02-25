@@ -6,8 +6,8 @@ description: Extraktoren und Datasources
 product: xtract-is
 parent: odp
 permalink: /:collection/:path
-weight: 1
+weight: 6
 lang: de_DE
 ---
 
-{% include _content/de/odp/odp-extractors.md %} 
+{% include _content/de/odp/odp-introduction.md %} 

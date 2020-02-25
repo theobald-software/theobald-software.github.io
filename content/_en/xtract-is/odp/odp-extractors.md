@@ -6,7 +6,7 @@ description: Extractors and Datasources
 product: xtract-is
 parent: odp
 permalink: /:collection/:path
-weight: 1
+weight: 6
 lang: en_GB
 ---
 

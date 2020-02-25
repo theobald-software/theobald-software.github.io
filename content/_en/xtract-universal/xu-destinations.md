@@ -17,12 +17,12 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 
 For more information on drivers, refer to [Requirements](./introduction/requirements).
 
-Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different [destination]() environments, including:  
+Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different [destination]() environments, including:  
 
-### Databases / Datawarehouses
+### Databases / Data Warehouses
 
 - [Amazon Redshift](./xu-destinations/amzon-redshift) 
-- [Azure DWH](./xu-destinations/azure-dwh) 
+- [Azure Synapse Analytics ](./xu-destinations/azure-dwh) (former Azure DWH)
 - [Azure SQL Database](./xu-destinations/microsoft-sql-server) 
 - [EXASolution](./xu-destinations/exasol) 
 - [IBM DB2](./xu-destinations/ibm-db2) 

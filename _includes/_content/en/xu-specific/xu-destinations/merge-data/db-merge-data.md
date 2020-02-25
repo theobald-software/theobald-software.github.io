@@ -29,6 +29,6 @@ In the third step, the temporary table is merged with the target table and then 
 - **Finalization** to *Finalize Merge* to merge the staging table with the target table and then delete the staging table.
 ![Extraction-Specific-Settings-Merge-Makt](/img/content/xu/destination_data_merge.png){:class="img-responsive"}
 
-More information about the updated fields can be found in the SQL statement ([Custom SQL only](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql).<br>
+More information about the updated fields can be found in the SQL statement ([Custom SQL only](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql)).<br>
 It is possible to edit the SQL statement if necessary, e.g., to exclude certain columns from the update.<br>
 Fields that do not appear in the SQL statement are not affected by changes.
