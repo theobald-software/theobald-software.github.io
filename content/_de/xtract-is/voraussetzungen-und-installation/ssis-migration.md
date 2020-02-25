@@ -53,7 +53,7 @@ Beispiel: Wenn Sie im XtractIS Conversion Preparer 'SSIS 2016' ausgewählt haben
 ### Migration von SSIS 2014/2016 nach SSIS 2019
 Bei VS/SSDT 2015 sowie 2019 können Sie die Zielversion des SQL Servers (Deployment Target Version) in den Projekteigenschaften auswählen.
 
-![VS-Deployment-Target](/img/content/VS-Deployment-Target.png){:class="img-responsive"}
+![VS-Deployment-Target](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
 
 ### Aktuelle XtractISSetup.exe installieren
 Installieren Sie die aktuelle Xtract IS Version auf Ihrem SSIS Server und auf jeder anderen Deployment-Umgebung (Visual Studio/SSDT).
