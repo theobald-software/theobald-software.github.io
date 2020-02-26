@@ -17,15 +17,15 @@ The miscellaneous tab consists of two subsections:
 ![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
 
 #### Options
-**Cache results (1)**
+**Cache results** (1)
 
 {:.box-note}
-**Note:** option only available in [pull destinations](../xu-destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+**Note:** *Cash results* option is only available in [pull destinations](../xu-destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
 
-Pull destinations often pull the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results**, this way the pull destination pulls the data from cache and not from the SAP.
+Pull destinations often pull the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way the pull destination pulls the data from cache and not from the SAP.
 This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
 
-**Preview Mode (2)**<br>
+**Preview Mode** (2)
 If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
 
 #### Keywords

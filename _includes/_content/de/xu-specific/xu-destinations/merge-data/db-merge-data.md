@@ -5,7 +5,7 @@ Alternativ zum Zusammenführen (Merge) können die Datensätze durch einen "Full
 
 Voraussetzung für das Zusammenführen (Merge) ist eine Tabelle mit vorhandenen Daten, in welche neue Daten zusammengeführt werden sollen.
 
-Im Idealfall wird die Tabelle mit den vorhandenen Daten im ersten Lauf mit der dazugehörigen Option **Preparation** erstellt und durch die Option *Insert* in **Row Processing** befüllt.
+Im Idealfall wird die Tabelle mit den vorhandenen Daten im initialen Lauf mit der dazugehörigen Option **Preparation** erstellt und durch die Option *Insert* in **Row Processing** befüllt.
 
 
 {:.box-warning}
@@ -25,7 +25,7 @@ Im ersten Schritt wird eine temporäre Tabelle angelegt, in die die Daten im zwe
 Im dritten Schritt wird die temporäre Tabelle mit der Zieltabelle zusammengeführt und anschließend wird die temporäre Tabelle gelöscht.
 
 1. Wählen Sie im Hauptfenster des Designers die entsprechende Extraktion aus und klicken Sie auf **[Destination]**. Das Fenster "Destination Settings" wird geöffnet.
-2. Stellen Sie sicher, dass Sie dir richtige Destination wählen (z.B. PostgreSQL-Zieldatenbank).
+2. Stellen Sie sicher, dass Sie die passende Destination wählen: eine Datenbankdestination.
 3. Navigieren Sie zum rechten Teil des Fensters "Destination Settings" und wenden Sie die folgenden Einstellungen an:
 - **Preparation**: *Prepare Merge*, um eine temporäre Staging-Tabelle zu erstellen
 - **Row Processing**: *Fill merge staging table*, um die Staging-Tabelle mit Dateien zu befüllen 
