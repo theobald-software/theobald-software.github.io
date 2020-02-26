@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 1
 lang: de_DE
 ---
-{% include _content/de/xu-specific/server/fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc.md %}
 
 
 

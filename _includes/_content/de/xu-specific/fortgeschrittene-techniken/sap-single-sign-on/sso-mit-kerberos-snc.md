@@ -25,6 +25,7 @@ Mehr Informationen zu den Notationen in SAP, finden Sie im [SAP Hilfe-Portal](ht
 ![XU_SSO_WinAD_SPN](/img/content/XU_Service_Account.png)
 
 ### Xtract Universal Servereinstellungen
+
 {: .box-warning}
 **Warnung! Inkompatible Bibliothek**  <br>
 Xtract Universal läuft nur auf einem 64-Bit-Betriebssystem. Die Kerberos Wrapper-Bibliothek gx64krb5.dll (64-Bit Version) ist erforderlich. <br>
