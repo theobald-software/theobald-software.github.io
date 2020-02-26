@@ -8,9 +8,7 @@ parent: sap-single-sign-on
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: 
 ---
-
 {% include _content/de/xu-specific/server/fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc.md %}
 
 
