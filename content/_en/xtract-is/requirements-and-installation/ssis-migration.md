@@ -14,15 +14,18 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=ssis-migration
 The following section contains detailed information on migrating SSIS packages (containing Xtract IS components) from a lower SQL Server/SSIS version to a higher version. 
 Example: You are migrating from SQL Server 2012 to SQL Server 2019. This migration requires a migration of your SSIS packages, as well.
 
-Keep in mind the dependency of Visual Studio/SSDT and SSIS version. See more details in the knowledge base article - [Step-by-step instructions for migrating SSIS 2008/2012 packages to SSIS 2019](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
+Keep in mind the dependency of Visual Studio/SSDT and SSIS version. See more details in the knowledge base article - [Step-by-step instructions for migrating SSIS 2012 packages to SSIS 2019](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
 
-### Migrating from SSIS 2008/2012 to SSIS 2019
+### Migrating from SSIS 2012 to SSIS 2019
 1. Prepare SSIS packages for migration using *XtractISConversionPreparer.exe*
 2. In the SSIS package, change the target deployment environment to SSIS 2019.
 3. Install the latest Xtract IS version.
 
 ### Executing XtractISConversionPreparer.exe
-The XtractIS Conversion Preparer is a tool that prepares SSIS packages (containing Xtract IS components) created for older versions of SSIS for migration to newer versions of SSIS. XtractIS Conversion Preparer tool can be found in the Xtract IS installation folder.
+The XtractIS Conversion Preparer is a tool that prepares SSIS packages (containing Xtract IS components) created for older versions of SSIS for migration to newer versions of SSIS.
+
+{: .box-note }
+**Note:** Only SSIS packages created with SSIS 2012 must be converted using XtractIS Conversion Preparer located in: `C:\Program Files\XtractIS\XtractISConversionPreparer.exe`. For any other newer SSIS packages adjust the Deployment Target Version in project properties, see below.<br>
 
 1. Start the XtractIS Conversion Preparer.
 2. For migration to SSIS 2019, select *SSIS 2016* from the pull-down menu.
