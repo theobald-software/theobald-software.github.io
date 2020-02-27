@@ -30,8 +30,6 @@ There are two ways for installing the assembly:
 - Open the command-line and browse to your Xtract Universal installation directory<br> 
 	cd "C:\Program Files\XtractUniversal"
 - Install the Mono.Security.dll file to your global assembly cache using gacutil<br>
-	gacutil -i "C:\Program Files (x86)\Mono-2.0\lib\mono\2.0\Mono.Security.dll"
-
-For more information, see the article abot [installing an assembly into the global assembly cache](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-install-an-assembly-into-the-gac)
-
+	gacutil -i "C:\Program Files (x86)\Mono-2.0\lib\mono\2.0\Mono.Security.dll"<br>
+	For more information, see the article abot [installing an assembly into the global assembly cache](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-install-an-assembly-into-the-gac)
 2. Copy the Mono.Security.dll file into your Xtract Universal directory.
