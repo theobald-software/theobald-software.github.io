@@ -22,10 +22,10 @@ Die Abbildungen können leicht abweichen, je nach dem, ob Sie den Wizard oder di
 5. Vergeben Sie im Reiter *General* (1) einen Namen für die neue Datenquelle (optional), als default Wert wird *DataSource1* vergeben (3).
 6. Auswählen des Typs *Xtract RS* (4).
 ![Report-Data-Source-001](/img/content/Report-Data-Source-001.png){:class="img-responsive"}
-7. Angabe eines Connection String zur SAP Quelle in folgendem Form (5)
+7. Angabe eines Connection String zur SAP Quelle unter Verwendung von SNC oder ohne SNC in folgendem Format (5)
 ```
-ApplicationHost=sap.theobald.local;SYSNR= 00;LANG=EN;Client=800;SNC_MODE=1;SNC_PARTNERNAME=p:SAPserviceERP/do_not_care@[domain];SNC_LIB=gx64krb5.dll - SSO mit SNC
-ApplicationHost=saperp.theobald.local; SYSNR=00; CLIENT=800;LANG=EN- ohne SNC
+ApplicationHost=sap.theobald.local;SYSNR= 00;LANG=EN;Client=800;SNC_MODE=1;SNC_PARTNERNAME=p:SAPserviceERP/do_not_care@[domain];SNC_LIB=gx64krb5.dll
+ApplicationHost=saperp.theobald.local; SYSNR=00; CLIENT=800;LANG=EN
 ```
 8. Wechseln Sie zum Reiter *Credentials* und geben Ihren SAP Benutzer sowie Passwort an (2).
 ![Report-Data-Source-002](/img/content/Report-Data-Source-002.png){:class="img-responsive"}
