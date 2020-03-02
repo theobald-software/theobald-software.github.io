@@ -16,7 +16,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
               
 Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (z.B. ERP, S/4 HANA, BW and BW/4 HANA) zu extrahierten und in verschiedene Zielumgebungen, sogenannte Destinations zu schreiben. Folgende Datenziele werden u.a. unterstützt:
 
-### Datenbanken / Datawarehouses
+### Datenbanken / Data Warehouses
 
 - [Amazon Redshift](./xu-zielumgebungen/redshift) 
 - [Azure DWH](./xu-zielumgebungen/azure_dwh) 
@@ -28,6 +28,7 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 - [PostgreSQL](./xu-zielumgebungen/postgreSQL)
 - [SAP HANA](./xu-zielumgebungen/hana) 
 - [SQL Server](./xu-zielumgebungen/microsoft-sql-server) 
+- [Snowflake](./xu-zielumgebungen/snowflake)
 
 
 ### Business Intelligence / Analytics / ETL
