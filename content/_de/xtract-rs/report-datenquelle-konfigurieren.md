@@ -15,6 +15,9 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=report-datenquelle-konfigurieren
 Der folgende Abschnitt führt durch die Neuanlage einer SAP Datenquelle im SQL Server Report Server (SSRS) Umfeld. 
 Die Abbildungen können leicht abweichen, je nach dem, ob Sie den Wizard oder die manuelle Anlage nutzen.
 
+{: .box-note }
+**Note:** Falls Sie sich direkt mit einem einzelnen Applikationsserver verbinden möchten, füllen Sie bitte die Parameter *ApplicationHost* und *SystemNumber* aus. Für eine Anmeldung per Load Balancing müssen die Parameter *MessageServer, SID* und *LogonGroup* im Connection String mitgegeben werden. Des Weiteren muss der Parameter *UseLoadBalancing* auf *true* stehen. Falls Sie Schwierigkeiten beim Ausfüllen dieser technischen Parameter haben, fragen Sie bitte in ihrer SAP-Basis nach.
+
 1. Führen Sie die Anwendung *XtractRSSetup.exe* auf der identischen Umgebung aus, in der auch Visual Studio installiert wurde.
 2. Stellen Sie sicher, dass die Erweiterung *Microsoft Reporting Services Projects* in VS2019 installiert und aktiviert wurde.
 3. Erstellen Sie eine neues *Report Server Project* in VS2019.
@@ -30,9 +33,6 @@ ApplicationHost=saperp.theobald.local; SYSNR=00; CLIENT=800;LANG=EN
 8. Wechseln Sie zum Reiter *Credentials* und geben Ihren SAP Benutzer sowie Passwort an (2).
 ![Report-Data-Source-002](/img/content/Report-Data-Source-002.png){:class="img-responsive"}
 9. Bestätigen Sie die Eingaben mit **[OK]** (6).
-
-{: .box-note }
-**Note:** Falls Sie sich direkt mit einem einzelnen Applikationsserver verbinden möchten, füllen Sie bitte die Parameter *ApplicationHost* und *SystemNumber* aus. Für eine Anmeldung per Load Balancing müssen die Parameter *MessageServer, SID* und *LogonGroup* im Connection String mitgegeben werden. Des Weiteren muss der Parameter *UseLoadBalancing* auf *true* stehen. Falls Sie Schwierigkeiten beim Ausfüllen dieser technischen Parameter haben, fragen Sie bitte in ihrer SAP-Basis nach.
 
 ### Die Kerberos DLLs herunterladen
 
