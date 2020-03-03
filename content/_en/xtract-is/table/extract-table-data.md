@@ -1,34 +1,40 @@
 ---
 ref: xi-table-01
 layout: page
-title: Extract Table Data
+title: Extracting Table Data
 description: Extract Table Data
 product: xtract-is
 parent: table
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=extract-table-data
 ---
+### Adding tables
 
-Drag the component from the SSIS toolbox on your data flow task. Double-click the icon to open the editor.
+1. Within the window "Define data source for SAP Tables", click **[Add]**. The window "Table lookup" opens.
+![Table-Lookup](/img/content/table/table_main-window_add.png){:class="img-responsive" }
+2. Enter the name of the SAP table and click **[Search]** (maginfying glass).  
+![Table-Lookup](/img/content/Table-Lookup.png){:class="img-responsive" }
+3. Select a table in the result list and click **[OK]**.
 
-![Table-01](/img/content/Table-01.png){:class="img-responsive" width="200px" }
+{: .box-tip }
+**Tip:** Wildcards uch as * are supported. Make sure to place them after the name of the searched item.
+
+To extract only certain table data use a [WHERE-condition](./where-clause).
 
 
-Click on the *Add* button to open a dialog for table lookup. Enter the name of the table (wildcards like * are supported) and click on the *looking glass* button to invoke the search. Mark the table in the result list and click OK.
+### Filtering tables
 
-![Table-Lookup](/img/content/Table-Lookup.png){:class="img-responsive" width="600px" }
+The subsection **Fields** displays all columns of the selected table. The columns are automatically selected for table extraction. Deselect the ones you don't wish to extract.<br>
+Click the header fields to sort the columns by name or description.<br>
+To search for a certain column name or description, start typing the word in the filter boxes.<br>
 
-The editor is now filled with all columns from the table. The columns are automatically selected for table extraction. Deselect the ones you don't wish to extract.
-By clicking on the header fields, you can sort the columns by name or description. Start typing a column name or description in the filter boxes to apply a display filter.
+![Table-Main](/img/content/table/fields_filter-search.png){:class="img-responsive"}
 
-![Table-Main](/img/content/Table-Main.png){:class="img-responsive"}
+### Using live preview
 
-Click on the *Load live preview* button to load 100 records for preview.
+Click **[Load live preview]** to load 100 records for preview.
 
-If you wish to extract only certain table data you can use a where condition. See chapter *WHERE clause*.
-
-As soon as the data source is configured accordingly, the output columns are available for further processing.
 
 
