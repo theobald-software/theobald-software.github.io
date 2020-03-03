@@ -12,24 +12,46 @@ lang: de_DE
 old_url: /Xtract-RS-DE/default.aspx?pageid=report-datenquelle-konfigurieren
 ---
 
-Nach der Installation steht Ihnen Xtract RS bei der Neuanlage von Datenquellen zur Verfügung. Die folgende Anleitung zeigt, wie Sie eine Verbindung einrichten. Die Abbildungen können leicht abweichen, je nach dem, ob Sie den Wizard oder die manuelle Anlage nutzen.
+Der folgende Abschnitt führt durch die Neuanlage einer SAP Datenquelle im SQL Server Report Server (SSRS) Umfeld. 
+Die Abbildungen können leicht abweichen, je nach dem, ob Sie den Wizard oder die manuelle Anlage nutzen.
 
+1. Führen Sie die Anwendung *XtractRSSetup.exe* auf der identischen Umgebung aus, in der auch Visual Studio installiert wurde.
+2. Stellen Sie sicher, dass die Erweiterung *Microsoft Reporting Services Projects* in VS2019 installiert und aktiviert wurde.
+3. Erstellen Sie eine neues *Report Server Project* in VS2019.
+4. Rechtsklick auf den Ordner *Shared Data Sources* und *Add New Data Source* auswählen.
+5. Vergeben Sie im Reiter **General** einen Namen für die neue Datenquelle (optional), als default Wert wird *DataSource1* vergeben (1).
+6. Auswählen des Typs *Xtract RS* (2).
 ![Report-Data-Source-001](/img/content/Report-Data-Source-001.png){:class="img-responsive"}
-
-Klicken Sie auf den *Edit* Button, um in den Dialog für die Verbindungseigenschaften zu gelangen.
-
+7. Angabe eines Connection Strings zur SAP Quelle (3).
+8. Wechseln Sie zum Reiter **Credentials** und geben Ihren SAP Benutzer sowie Passwort an (4).
 ![Report-Data-Source-002](/img/content/Report-Data-Source-002.png){:class="img-responsive"}
+9. Bestätigen Sie die Eingaben mit **[OK]**.
 
-Falls Sie sich direkt mit einem einzelnen Applikationsserver verbinden möchten, füllen Sie bitte die Parameter *ApplicationHost* und *SystemNumber* aus. Für eine Anmeldung per Load Balancing müssen die Felder *MessageServer, SID* und *LogonGroup* gefüllt werden, außerdem muss der Parameter *UseLoadBalancing* auf true stehen. Falls Sie Schwierigkeiten beim Ausfüllen dieser technischen Parameter haben, fragen Sie bitte in ihrer Basis-Abteilung nach.
+### Connection String Parameter
 
-Neben diesen technischen Einstellungen sind noch Angaben zum Anmelde-Account zu machen. Dazu gehören insbesondere der Mandant (*Client*) und die Anmeldesprache (*Language*). Es besteht zwar die Möglichkeit, hier bereits Benutzername und Passwort auszufüllen. Dies ist aber aus Sicherheitsgründen nicht empfohlen, da diese beiden Angaben ohne Verschlüsselung frei sichtbar im Connection-String auftauchen würden.
+{: .box-note }
+**Note:** Weitere Informationen entnehmen Sie der offiziellen [SAP Dokumentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true) .
 
-Bestätigen Sie Ihre Angaben mit *OK*. Die Einstellungen werden nun in den ConnectionString übernommen:
+Parameter | Beispielwert
+------------ | -------------
+ApplicationHost | `saperp.theobald.local`
+SYSNR | `00`
+LANG | `EN`
+Client | `800`
+SNCMode | `1` - enable
+SNCPartnerName | `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL` - Partnername des konfigurierten SAP Systems
+SNCLibrary | `C:\SNC\gsskrb5.dll` - lokaler Pfad zur Kerberos lib
+SSOType | `2` - SSO mit Kerberos
+MessageServer | `saperp.theobald.local`
+UseLoadBalancing | `true`
+LogonGroup | `PUBLIC`
+SID | `MBS`
 
-![Report-Data-Source-003](/img/content/Report-Data-Source-003.png){:class="img-responsive"}
+### Die Kerberos DLLs herunterladen
 
-Um nun noch den Benutzernamen und das Passwort zu übergeben, klicken Sie bitte auf den Button *Credentials*... . Sie können dort entweder feste Anmeldedaten hinterlegen, oder den Benutzer jedesmal eigene Anmeldedaten eingeben lassen, wenn ein Report gestartet wird.
+{: .box-note }
+**Note:** Sie können die relevanten DLLs von der [SAP ONE Support Launchpad](https://launchpad.support.sap.com/#/notes/2115486) herunterladen. 
 
-![Report-Data-Source-004](/img/content/Report-Data-Source-004.png){:class="img-responsive"}
+Die Kerberos Bibliotheken bitte in folgenden lokalen Pfad abspeichern: `C:\SNC\gx64krb5.dll` (64-bit) sowie `C:\SNC\gsskrb5.dll` (32-bit).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
