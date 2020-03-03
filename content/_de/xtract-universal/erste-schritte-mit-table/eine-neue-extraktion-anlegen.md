@@ -51,5 +51,9 @@ Das Fenster "Create Extraction" wird geöffnet.<br>
 3. Geben Sie einen frei wählbaren, eindeutigen Namen für Ihre Extraktion ein (2).
 4. Wählen Sie den Typ der Extraktion. Im aufgeführten Beispiel: **SAP-Tabelle oder View** (3). <br>
 5. Klicken Sie auf **[OK]** zum Bestätigen.
+Das Fenster "Define data source for SAP Tables" wird geöffnet. <br>
+In diesem Fenster können Sie einfache Tabellenextraktionen definieren oder Tabellen für Extraktionen zusammenfügen (Table Joins). Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
+
+
 
 {% include _content/de/table/extraktion-anlegen.md  %}

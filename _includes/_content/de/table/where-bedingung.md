@@ -1,9 +1,8 @@
 ### Verwendung von WHERE-Bedingung
-1. Wählen und doppelklicken Sie auf eine Extraktion vom Typ "Table" im Hauptfenster des Designers.
-Das Fenster "Define data source for SAP Table" wird geöffnet.
-2. Navigieren Sie zum Reiter **WHERE Clause**.
-3. Geben Sie die WHERE-Bedingung ein.
-4. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
+
+1. Navigieren Sie zum Reiter **WHERE Clause**.
+2. Geben Sie die WHERE-Bedingung ein.
+3. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
 
 {: .box-note }
 **Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei [Table Joins](./table-joins) der Fall sein.
