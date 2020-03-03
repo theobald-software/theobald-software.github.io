@@ -6,7 +6,7 @@ description: Tabellen und Felder
 product: xtract-is
 parent: xtract-is-table
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: de_DE
 ---
 {% include _content/de/table/tabellen-und-felder.md  %}
