@@ -50,15 +50,13 @@ Message | MessageServer | `saperp.theobald.local`
 ### Connection String Beispiele: 
 #### SNC
 
-```csharp
-ApplicationHost=saperp.theobald.local;SYSNR=00;LANG=EN;Client=800;SNCMode=1;SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2
-```
+ApplicationHost=saperp.theobald.local;SYSNR=00;LANG=EN;Client=800;SNCMode=1;
+SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2
 
 #### Single Application Server
 
-```csharp
 LANG=EN;ApplicationHost=ec5.theobald-software.com;SYSNR=00;Client=800
-```
+
 
 ### Die Kerberos DLLs herunterladen
 
