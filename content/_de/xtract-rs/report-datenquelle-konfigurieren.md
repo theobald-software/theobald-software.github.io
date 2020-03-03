@@ -19,15 +19,18 @@ Die Abbildungen können leicht abweichen, je nach dem, ob Sie den Wizard oder di
 2. Stellen Sie sicher, dass die Erweiterung *Microsoft Reporting Services Projects* in VS2019 installiert und aktiviert wurde.
 3. Erstellen Sie eine neues *Report Server Project* in VS2019.
 4. Rechtsklick auf den Ordner *Shared Data Sources* und *Add New Data Source* auswählen.
-5. Vergeben Sie im Reiter *General* (1) einen Namen für die neue Datenquelle (optional), als default Wert wird *DataSource1* vergeben (3).
-6. Auswählen des Typs *Xtract RS* (4).
+5. Vergeben Sie im Reiter **General** einen Namen für die neue Datenquelle (optional), als default Wert wird *DataSource1* vergeben (1).
+6. Auswählen des Typs *Xtract RS* (2).
 ![Report-Data-Source-001](/img/content/Report-Data-Source-001.png){:class="img-responsive"}
-7. Angabe eines Connection Strings zur SAP Quelle (5).
-8. Wechseln Sie zum Reiter *Credentials* und geben Ihren SAP Benutzer sowie Passwort an (2).
+7. Angabe eines Connection Strings zur SAP Quelle (3).
+8. Wechseln Sie zum Reiter **Credentials** und geben Ihren SAP Benutzer sowie Passwort an (4).
 ![Report-Data-Source-002](/img/content/Report-Data-Source-002.png){:class="img-responsive"}
-9. Bestätigen Sie die Eingaben mit **[OK]** (6).
+9. Bestätigen Sie die Eingaben mit **[OK]**.
 
 ### Connection String Parameter
+
+{: .box-note }
+**Note:** Weitere Informationen entnehmen Sie der offiziellen [SAP Dokumentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true) .
 
 Parameter | Beispielwert
 ------------ | -------------
@@ -44,13 +47,11 @@ UseLoadBalancing | `true`
 LogonGroup | `PUBLIC`
 SID | `MBS`
 
-{: .box-note }
-**Note:** Weitere Informationen entnehmen Sie der offiziellen [SAP Dokumentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true) .
-
 ### Die Kerberos DLLs herunterladen
 
 {: .box-note }
 **Note:** Sie können die relevanten DLLs von der [SAP ONE Support Launchpad](https://launchpad.support.sap.com/#/notes/2115486) herunterladen. 
+
 Die Kerberos Bibliotheken bitte in folgenden lokalen Pfad abspeichern: `C:\SNC\gx64krb5.dll` (64-bit) sowie `C:\SNC\gsskrb5.dll` (32-bit).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
