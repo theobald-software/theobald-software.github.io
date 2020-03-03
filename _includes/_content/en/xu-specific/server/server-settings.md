@@ -7,7 +7,7 @@ In the main window of the Designer navigate to **[Server] > [Settings]**. The 'S
 
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.png){:class="img-responsive"}
 
-#### Subsection Designer connections
+#### Designer connections
 
 **Port** <br>
 Defines the port number for communication between Server and Designer. The default is 8064. If you set a different port, add the new port number to the host name on the logon screen. [host name]:[port]
@@ -24,13 +24,13 @@ See section [User Management](../security/user-management).
 
 See section [Installing an X.509 certificate](../security/install-x.509-Certificate).
 
-#### Subsection Access Management
+#### Access Management
 See section [Access Management](../security/access-management).
 
 ### Web Server
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"} 
 
-#### Subsection Protocol / Access control
+#### Protocol / Access control
 
 **HTTP - Unrestricted / HTTP port** (default) <br>
 Defines the port number, on which the XU server receives HTTP requests of an extraction. The run statement generates an HTTP-URL.
@@ -46,7 +46,7 @@ See section [Installing an X.509 certificate](../security/install-x.509-Certific
 **HTTPS - Restricted to AD users with Designer read access** <br>
 See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by Windows AD users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and section [server security](../security/server-security).  
 
-#### Subsection Misc.
+#### Misc.
 
 **Max. age of log files (days)** <br>
 Defines the maximum age of the web server [log files](../logging/server-logging) in days. After this period the log files are deleted.
@@ -54,7 +54,7 @@ Defines the maximum age of the web server [log files](../logging/server-logging)
 **Enable setup distribution for clients** <br>
 Defines whether the setup of the Xtract Universal version running on the server should be downloaded. When an older XU designer version is connected to a newer XU server version, you will be prompted to download and update the designer with the XU version. 
 
-#### Subsection Result cache
+#### Result cache
 
 {:.box-note}
 **Note:** *Cash results* option is only available in [pull destinations](../xu-destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).

@@ -9,9 +9,9 @@ Der Tab *Tables and Fields* besteht aus drei Unterabschnitten:
  ![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
 
 ### Fields
-![Fields](/img/content/table/table_fields_filter.png)
+![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 Folgende Optionen stehen rechts unter *Fields* bei der Spaltenselektion zur Verfügung: <br>
-{:class="img-responsive"}
+
 **Filter** <br>
 Der Spaltenname (Name) und die Spaltenbeschreibung (Description) lassen sich filtern.
 
@@ -37,7 +37,7 @@ Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Tr
 Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
 
 
-### Buttons
+### Schaltflächen
 **[Load live preview]** <br>
 Ermöglicht eine Echtzeit-Vorschau der Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
 Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen. 
