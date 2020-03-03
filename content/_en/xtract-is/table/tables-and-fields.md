@@ -6,7 +6,7 @@ description: Tables and Fields
 product: xtract-is
 parent: table
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: en_GB
 ---
 {% include _content/en/tables/tables-and-fields.md  %}

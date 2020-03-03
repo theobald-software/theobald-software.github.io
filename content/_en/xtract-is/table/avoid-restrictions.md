@@ -6,7 +6,7 @@ description: Avoid Restrictions
 product: xtract-is
 parent: table
 permalink: /:collection/:path
-weight: 1
+weight: 7
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=restrictions
 ---
