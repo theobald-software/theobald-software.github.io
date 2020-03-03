@@ -32,20 +32,33 @@ Die Abbildungen können leicht abweichen, je nach dem, ob Sie den Wizard oder di
 {: .box-note }
 **Note:** Weitere Informationen entnehmen Sie der offiziellen [SAP Dokumentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true) .
 
-Parameter | Beispielwert
------------- | -------------
-ApplicationHost | `saperp.theobald.local`
-SYSNR | `00`
-LANG | `EN`
-Client | `800`
-SNCMode | `1` - enable
-SNCPartnerName | `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL` - Partnername des konfigurierten SAP Systems
-SNCLibrary | `C:\SNC\gsskrb5.dll` - lokaler Pfad zur Kerberos lib
-SSOType | `2` - SSO mit Kerberos
-MessageServer | `saperp.theobald.local`
-UseLoadBalancing | `true`
-LogonGroup | `PUBLIC`
-SID | `MBS`
+Server |Parameter | Beispielwert
+------------ |------------ | -------------
+ Application | ApplicationHost | `saperp.theobald.local`
+<!----> | SYSNR | `00`
+<!----> | LANG | `EN`
+<!----> | Client | `800`
+Secure Network Communication | SNCMode | `1` - enable
+<!----> | SNCPartnerName | `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL` - Partnername des konfigurierten SAP Systems
+<!----> | SNCLibrary | `C:\SNC\gsskrb5.dll` - lokaler Pfad zur Kerberos lib
+<!----> | SSOType | `2` - SSO mit Kerberos
+Message | MessageServer | `saperp.theobald.local`
+<!----> | UseLoadBalancing | `true`
+<!---->  | LogonGroup | `PUBLIC`
+<!----> | SID | `MBS`
+
+### Connection String Beispiele: 
+#### SNC
+
+```csharp
+ApplicationHost=saperp.theobald.local;SYSNR=00;LANG=EN;Client=800;SNCMode=1;SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2
+```
+
+#### Single Application Server
+
+```csharp
+LANG=EN;ApplicationHost=ec5.theobald-software.com;SYSNR=00;Client=800
+```
 
 ### Die Kerberos DLLs herunterladen
 
