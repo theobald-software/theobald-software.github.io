@@ -54,5 +54,8 @@ The window "Create Extraction" opens. <br>
 4. Choose the type of extraction. In the given example: **SAP Table or View** (3). <br>
 5. Click **[OK]** (4) to confirm.
 
+The window "Define data source for SAP Tables" opens. 
+In this window you can define simple table extractions or join tables for extractions. In the following example, a single table is extracted. <br>
+
 {% include _content/en/tables/define-a-table-extraction.md  %}
 
