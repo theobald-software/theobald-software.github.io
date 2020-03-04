@@ -1,4 +1,8 @@
-### Using Having clause
+### Using HAVING-clause
+The usage of HAVING-clause is shown with the help of an example. The following example shows how many material numbers are assigned to the material art (MTART). After applying the HAVING-clause the preview shows only the material arts with more than 10 material numbers assigned.
+
+{: .box-note }
+**Note:** Aggregate function is only supported by nummeric field type, which is why BRGEW (Gross Weight) is used in the example.
 
 1. Select an aggregate function (1) for a field you want to use for the HAVING-clause.  
 ![Extraction-Settings-01](/img/content/table/Table-Extraction-Having-Clause1.png){:class="img-responsive"}
