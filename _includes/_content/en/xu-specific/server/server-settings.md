@@ -10,7 +10,7 @@ In the main window of the Designer navigate to **[Server] > [Settings]**. The 'S
 #### Designer connections
 
 **Port** <br>
-Defines the port number for communication between Server and Designer. The default is 8064. If you set a different port, add the new port number to the host name on the logon screen. [host name]:[port]
+Defines the port number for communication between Server and Designer. The default is 8064. If you set a different port, add the new port number to the host name on the logon screen ([host name]:[port]).
 
 ![XU-Designer-Logon](/img/content/xu/xu-designer-logon.png){:class="img-responsive"}
 
@@ -33,12 +33,12 @@ See section [Access Management](../security/access-management).
 #### Protocol / Access control
 
 **HTTP - Unrestricted / HTTP port** (default) <br>
-Defines the port number, on which the XU server receives HTTP requests of an extraction. The run statement generates an HTTP-URL.
+Defines the port number, on which the XU server receives HTTP requests of an extraction. The run statement generates an HTTP-URL. 
 
 **HTTPS - Unrestricted / HTTPS port** <br>
 Enables secure data transfer via HTTPS.
 
-Defines the port number, on which the XU server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL.
+Defines the port number, on which the XU server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL. Port option defines the HTTPS listener port.
 
 If you want to receive data via HTTPS you need to install a TLS certificate on the server, on which the Xtract Universal service is running. <br>
 See section [Installing an X.509 certificate](../security/install-x.509-Certificate). 
@@ -52,7 +52,7 @@ See *HTTPS - Unrestricted*. This setting enables an additional access control fo
 Defines the maximum age of the web server [log files](../logging/server-logging) in days. After this period the log files are deleted.
 
 **Enable setup distribution for clients** <br>
-Defines whether the setup of the Xtract Universal version running on the server should be downloaded. When an older XU designer version is connected to a newer XU server version, you will be prompted to download and update the designer with the XU version. 
+Defines whether the setup of the Xtract Universal version running on the server needs to be downloaded. When an older Xtract Universal Designer version is connected to a newer Xtract Universal Server version, you are be prompted to download and update the Designer with the Xtract Universal version. 
 
 #### Result cache
 
