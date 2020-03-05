@@ -18,11 +18,14 @@ Der Spaltenname (Name) und die Spaltenbeschreibung (Description) lassen sich fil
 **Aggregate Function** <br>
 Es stehen folgende Aggregatfunktionen für Spalteninhalte zur Verfügung:
 - None: Keine Aggregierung 
-- AVG: Durchschnitt
+- MEAN: Durchschnitt
 - COUNT: Anzahl  
 - MAX: Maximum
 - MIN: Minimum 
 - SUM: Summe
+
+{: .box-tip }
+**Tipp:** Die Aggregatfunktionen sind nur bei nummerischen Felddatentypen (z.B. INT, FLOAT, DECIMAL) verfügbar.
 
 **Conv. - Use Conversion Routine**  <br>
 Ankreuzen des Kästchens definiert, ob die im Data Dictionary hinterlegte Konvertierungsroutinen für die jeweiligen selektierten Felder angewendet werden. 

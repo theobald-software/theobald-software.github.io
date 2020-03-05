@@ -20,11 +20,14 @@ The column name and the column description can be filtered.
 **Aggregate Function** <br>
 The following aggregation functions are available for column contents:
 - None: No aggregation 
-- AVG: Average
+- MEAN: Average
 - COUNT: Number  
 - MAX: Maximum
 - MIN: Minimum 
 - SUM: Total
+
+{: .box-tip }
+**Tipp:** The aggregate function is only available by numeric field data types (e.g., INT, FLOAT, DECIMAL).
 
 **Conv. - Use Conversion Routine** <br>
 Activating the checkboxes defines whether the conversion routines stored in the Data Dictionary are used for the respective fields. 

@@ -3,6 +3,9 @@ Die Verwendung der HAVING-Bedingung wird anhand eines Beispiels veranschaulicht.
 Das folgende Beispiel zeigt, wie viele Materialien einer Materialart (MTART) zugeordnet sind. Nach Anwendung der HAVING-Bedingung zeigt die Vorschau nur die Materialarten mit mehr als 10
  zugeordneten Materialien.
 
+{: .box-note}
+**Hinweis:** Aggregatfunktionen sind nur für nummerische Felddatentypen verfügbar, deswegen wird das Feld BRGEW (Bruttogewicht) im aufgeführten Beispiel verwendet.
+
 1. Wählen Sie eine Aggregatfunktion (1) für ein Feld aus, das Sie in der HAVING-Bedingung verwenden möchten.
 ![Extraction-Settings-01](/img/content/table/Table-Extraction-Having-Clause1.png){:class="img-responsive"}
 2. Navigieren Sie zum Reiter **HAVING Clause** (2).

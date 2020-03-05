@@ -2,7 +2,7 @@
 The usage of HAVING-clause is shown with the help of an example. The following example shows how many materials are assigned to a material type (MTART). After applying the HAVING-clause the preview shows only the material types with more than 10 materials assigned.
 
 {: .box-note }
-**Note:** Aggregate functions are only supported for numeric field types, which is why BRGEW (Gross Weight) is used in the example.
+**Note:** Aggregate functions are only supported for numeric field types, which is why the field BRGEW (Gross Weight) is used in the example.
 
 1. Select an aggregate function (1) for a field you want to use in the HAVING-clause.  
 ![Extraction-Settings-01](/img/content/table/Table-Extraction-Having-Clause1.png){:class="img-responsive"}
