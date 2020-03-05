@@ -10,8 +10,6 @@ Für die folgenden Komponenten ist die Installation eines kundenspezifischen Fun
 
 - **Table**: Für die meisten Aktionen ist die Installation eines ABAP Frameworks notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](https://help.theobald-software.com/de/xtract-is/sap-customizing/funktionsbaustein-fuer-table-extraktion). 
 
-- **Table Join**: Die Installation eines Z-Funktionsbausteins ist notwendig. Allerdings wurde die Table Join-Komponente als *deprecated* gekennzeichnet. Benutzen Sie anstattdessen die Join-Funktionalität der Table-Komponente.
-
 - **Report**: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
 
 ### Transportaufträge (Transport requests)
@@ -28,5 +26,4 @@ Weiterführende Informationen zur Installation eines Transportauftrags finden Si
 Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig. 
 
 - **OHS**: Siehe [Vorbereitung für OHS im BW](https://help.theobald-software.com/de/xtract-is/sap-customizing/vorbereitung-fuer-ohs-im-bw).
-
 - **DeltaQ**: Siehe [Customizing für DeltaQ](https://help.theobald-software.com/de/xtract-is/sap-customizing/customizing-fuer-deltaq).

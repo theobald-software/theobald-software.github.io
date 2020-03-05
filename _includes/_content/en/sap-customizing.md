@@ -7,9 +7,6 @@ The Custom function modules/ABAP framework are delivered as a part of Theobald S
 For the following components an installation of a custom function module/ABAP framework in SAP is required:
 
 - **Table**: For most tasks, the installation of an ABAP framework is recommended or required. Refer to [Custom function module for table extraction](./sap-customizing/custom-function-module-for-table-extraction). 
-
-- **Table Join**: The Table Join requires installation of a custom function module. Table Join component is deprecated, use the Table component for joining of SAP tables instead.
-
 - **Report**: The installation of a custom function module is required, refer to [Install Report Custom Function Module](./sap-customizing/install-report-custom-function-module).
 
 ### Transport Requests
@@ -28,6 +25,5 @@ For more detailed information about installing the transport request, see the kn
 For the following components a customizing on the SAP system is required: 
 
 - **OHS**: Refer to [Preparation for OHS in BW](./sap-customizing/preparation-for-ohs-in-bw).
-
 - **DeltaQ**: Refer to [Customizing for DeltaQ](./sap-customizing/customizing-for-deltaq).
 
