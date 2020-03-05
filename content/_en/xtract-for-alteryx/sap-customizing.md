@@ -18,8 +18,8 @@ The following section gives an overview over the installation of a custom functi
 The Custom function modules/ABAP framework are delivered as a part of Theobald Software products. The custom function modules /ABAP Framework can be installed using the transport requests (see below).
 For the following components an installation of a custom function module/ABAP framework in SAP is required:
 
-- **Table** - For most tasks, the installation of an ABAP framework is recommended or required. Refer to [Custom function module for table extraction](./sap-customizing/custom-function-module-for-table-extraction). 
-- Comming soon: **Report** - The installation of a custom function module is required, refer to [Install Report Custom Function Module](./sap-customizing/install-report-custom-function-module).
+- **Table** - For most tasks, the installation of an ABAP framework is recommended or required (see below).
+- Comming soon: **Report** - The installation of a custom function module is required.
 
 ### Transport Requests
 

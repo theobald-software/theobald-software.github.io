@@ -20,8 +20,8 @@ Der folgende Abschnitt gibt einen Überblick über die Installation von benutzer
 Die Z-Funktionsbausteine / ABAP-Framework werden als Teil der Theobald Software Produkte ausgeliefert und können mithilfe von Transportaufträgen (s.u.) installiert werden.
 Für die folgenden Komponenten ist die Installation eines kundenspezifischen Funktionsbausteins/ABAP-Frameworks in SAP erforderlich:
 
-- **Table** - Für die meisten Aktionen ist die Installation eines ABAP Frameworks notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](https://help.theobald-software.com/de/xtract-is/sap-customizing/funktionsbaustein-fuer-table-extraktion). 
-- Demnächst: **Report** - Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
+- **Table** - Für die meisten Aktionen ist die Installation eines ABAP Frameworks notwendig (s.u).
+- Demnächst: **Report** - Die Installation eines Z-Funktionsbausteins ist notwendig.
 
 ### Transportaufträge (Transport requests)
 Die Transportaufträge von Theobald Software müssen von Ihrem SAP-Basis-Team in SAP importiert werden.
