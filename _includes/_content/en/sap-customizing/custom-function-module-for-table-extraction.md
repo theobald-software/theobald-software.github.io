@@ -22,7 +22,6 @@ For older SAP releases, use the older transport request: Z_THEO_READ_TABLE-befor
 
 - Z_THEO_READ_TABLE.zip contains version 2.x of Z_THEO_READ_TABLE - the custom function module, a number of ABAP classes and other DDIC
 
-{: .box-note}
-**Note:** when importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. In such cases Contact Theobald Software support and send the dedicated error message text.
+When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. Contact Theobald Software support and send the dedicated error message text.
 
 ![Z_THEO_READ_TABLE_SE80](/img/content/Z_THEO_READ_TABLE_SE80.png){:class="img-responsive" }
