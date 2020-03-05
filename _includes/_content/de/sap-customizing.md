@@ -16,8 +16,8 @@ Die Transportaufträge von Theobald Software müssen von Ihrem SAP-Basis-Team in
 Die folgenden Transportaufträge finden Sie im ABAP-Unterordner des Installationsordners (z.B. `C:\Programme\XtractProduct\ABAP`):
 
 - thtrans.zip - enthält den Z-Funktionsbaustein für die *Report Komponente*
-- Z_THEO_READ_TABLE.zip - enthält den Z-Funktionsbaustein, die ABAP-Klassen und verschiedene DDIC-Objekte für die *Tabele Komponente*; <br> für SAP_ABA Version >= 740SP05
-- Z_THEO_READ_TABLE-before_740SP05.zip - enthält den Z-Funktionsbaustein, die ABAP-Klassen und verschiedene DDIC-Objekte für die *Tabele Komponente*; <br> für SAP_ABA Version 640 - 740 SP05 
+- Z_THEO_READ_TABLE.zip - enthält den Z-Funktionsbaustein, die ABAP-Klassen und verschiedene DDIC-Objekte für die *Table Komponente*; <br> für SAP_ABA Version >= 740SP05
+- Z_THEO_READ_TABLE-before_740SP05.zip - enthält den Z-Funktionsbaustein, die ABAP-Klassen und verschiedene DDIC-Objekte für die *Table Komponente*; <br> für SAP_ABA Version 640 - 740 SP05 
 
 Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im Knowledgebase-Artikel [How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
 
