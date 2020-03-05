@@ -16,8 +16,9 @@ The Theobald Software transport requests need to be imported into SAP by your SA
 The following transport requests can be found in the ABAP subfolder of the installation folder (e.g., `C:\Program Files\XtractProduct\ABAP`):
 
 - thtrans.zip - contains custom function module for the *Report component*
-- Z_THEO_READ_TABLE.zip - contains custom function module, ABAP classes and different DDIC objects for the *Table component*, applicable for SAP releases >= 740SP05
-- Z_THEO_READ_TABLE-before_740SP05.zip - contains a custom function module, ABAP classes and different DDIC objects for the *Table component* , applicable for SAP releases < 740SP05
+- Z_THEO_READ_TABLE.zip - contains custom function module, ABAP classes and different DDIC objects for the *Table component*; <br> for SAP_ABA version >= 740SP05
+- Z_THEO_READ_TABLE-before_740SP05.zip - contains a custom function module, ABAP classes and different DDIC objects for the *Table component*;<br>
+ for SAP_ABA version 640 - 740 SP05
 
 For more detailed information about installing the transport request, see the knowledge base article [How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms?fromSearch=true) or check the SAP help.
 

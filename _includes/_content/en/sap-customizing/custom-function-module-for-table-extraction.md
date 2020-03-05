@@ -18,10 +18,9 @@ If the above-mentioned restrictions hinder your work, install the Theobald Softw
 The transport request version must comply with the SAP_ABA version, otherwise an error occurs during the import procedure.
 For older SAP releases, use the older transport request: Z_THEO_READ_TABLE-before_740SP05.
 
-- Z_THEO_READ_TABLE-before_740SP05.zip contains version 1.x (till 1.11) of Z_THEO_READ_TABLE - a single function module
-
-- Z_THEO_READ_TABLE.zip contains version 2.x of Z_THEO_READ_TABLE - the custom function module, a number of ABAP classes and other DDIC objects
-
 When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. Contact Theobald Software support and send the dedicated error message text.
 
+- Z_THEO_READ_TABLE-before_740SP05.zip contains version 1.x (till 1.11) of Z_THEO_READ_TABLE - a single function module.
+
+- Z_THEO_READ_TABLE.zip contains version 2.x of Z_THEO_READ_TABLE - the custom function module, a number of ABAP classes and other DDIC objects. <br>
 ![Z_THEO_READ_TABLE_SE80](/img/content/Z_THEO_READ_TABLE_SE80.png){:class="img-responsive" }
