@@ -6,7 +6,7 @@ Insbesondere bei älteren SAP Releases bestehen einige Einschränkungen bei der 
   Fehler können auftreten bei der Extraktion von Tabellen, die eine oder mehrere Spalten vom Typ f (FLTP, floating point), DEC (Decimal und Prozentzahl z.B.) oder x (RAW, LRAW) haben.
 - Schlechte Extraktionsperformance bei Extraktion großer Tabellen.
 
-Um die oben genannte Einschränkungen zu umgehen, installieren Sie das ABAP Framework *Z_THEO_READ_TABLE* von Theobald Software auf Ihrem SAP-System.
+Um die oben genannte Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustein *Z_THEO_READ_TABLE* von Theobald Software auf Ihrem SAP-System.
 
 ## ABAP Framework Z_THEO_READ_TABLE installieren
 
