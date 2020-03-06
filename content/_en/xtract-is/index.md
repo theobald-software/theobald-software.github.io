@@ -26,7 +26,7 @@ In the overview below you can see for which components read (R) and write (W) ri
 The required license for using the different components in SAP ERP and SAP BW is also stated in the table.
 
 | Component   | ERP | BW | Enterprise <br> License | Ultimate <br> License |
-|-------------|-----|----|--------------------|------------------|
+|-------------|:-----:|:----:|:--------------------:|:------------------:|
 | Table       | R   | R  | X                  | X                |
 | Table Join  | R   | R  |                    | X                |
 | BAPI        | R/W  | R/W | X                  | X                |
