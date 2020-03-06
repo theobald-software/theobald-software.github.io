@@ -28,7 +28,7 @@ In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- u
 Die benötigte Lizenz für die Nutzung unterschiedlicher Komponenten im SAP ERP sowie SAP BW sind ebenfalls der Tabelle zu entnehmen.
 
 | Komponente | ERP | BW | Enterprise <br> Lizenz | Ultimate <br> Lizenz  |
-|-------------|-----|----|:--|:--|
+|-------------|:-----:|:----:|:--:|:--:|
 | Table       | R   | R  | X                  | X                |
 | Table Join  | R   | R  |                    | X                |
 | BAPI        | R/W  | R/W | X                  | X                |
