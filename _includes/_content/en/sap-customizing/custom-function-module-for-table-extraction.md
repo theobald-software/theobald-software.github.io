@@ -6,7 +6,7 @@ Especially with older SAP releases you may encounter a few restrictions when usi
   It is not possible to extract data from tables that contain one or more columns of the data type f (FLTP, floating point), DEC (decimal, e.g. for percentage) or x (RAW, LRAW).
 - Poor extraction performance with larger tables.
 
-If the above-mentioned restrictions hinder your work, install the Theobald Software ABAP Framework *Z_THEO_READ_TABLE* on your SAP system. 
+If the above-mentioned restrictions hinder your work, install the Theobald Software the custom function module *Z_THEO_READ_TABLE* on your SAP system. 
 
 ### Installing the ABAP Framework Z_THEO_READ_TABLE 
 
