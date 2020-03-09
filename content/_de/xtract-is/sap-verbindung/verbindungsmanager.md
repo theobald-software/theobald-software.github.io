@@ -72,7 +72,7 @@ Weitere Informationen finden Sie auf der SAP Help-Seite [RFC API: Classical & SA
 SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. 
 
 {: .box-note }
-**Hinweis:** : Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein.
+**Hinweis:** Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein.
 
 ### Additions (4)
 Klicken Sie im oberen Teil des "Xtract IS Connection Manager" auf **Additions** (4). Das Fenster "Xtract IS Connection Manager Additions" öffnet sich.

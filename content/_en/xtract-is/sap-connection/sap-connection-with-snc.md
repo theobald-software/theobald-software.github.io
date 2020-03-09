@@ -11,24 +11,25 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=sap-connection-with-snc
 ---
 To use encrypted communication between Xtract IS and SAP you can use Secure Network Communication (SNC) to connect to your SAP system. 
-Depending on your SAP settings, the following section explains the needed configuration of the SAP 'Connection Manager'. For more information about SNC configuration rely on the official [SAP Help Site](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm). 
+The following section explains the necessary configuration of the SAP "Connection Manager", depending on your SAP system. 
+For more information about SNC configuration, see the official [SAP Help Site](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm). 
 
 ### Configuring Connection Manager
 
 {: .box-tip }
 **Tip:** Values to fill out the forms can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
 
-1. Click **[Additions]** within *Xtract IS Connection Manager*. The window 'Xtract IS Connection Manager Additions' opens.
+1. Click **[Additions]** within "Xtract IS Connection Manager" window. The window "Xtract IS Connection Manager Additions" opens.
 ![SNC](/img/content/SNC.png){:class="img-responsive"}
 2. Enable the checkbox **SNC enabled**. The fields **SNC Library (32 Bit. & 64 Bit)**, **Partner Name** and **Quality of Protection** become customizable.
 ![SNC](/img/content/SNC_fields.png){:class="img-responsive"}
-3. Check the SAP paramater *snc/gssapi_lib* to determine, which library is used for encryption in your SAP system. <br>
+3. Check the SAP parameter *snc/gssapi_lib* to determine, which library is used for encryption in your SAP system. <br>
 Your SAP basis has to import and configure the same library on the application server and on the machine, where Xtract IS is running.   
 4. In the SNC library fields (1), fill in the complete path to the library location for 32 Bit & 64 Bit e.g., `C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll`.
 5. Fill in the SAP Partner Name (2) configured for the SAP application server e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 7. Define the SNC level of protection e.g., *9 - Maximum* default value. <br>
-The preferred security level can be set with the property **Quality Of Protection**. For more details see the oficial [SAP Help Site](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm).
-8. Enable **Legacy storage mode (connection string)** checkbox. **Obfuscate password** option becomes customizable (3).
+The preferred security level can be set with the property **Quality Of Protection**. For more details see the official [SAP Help Site](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm).
+8. Enable **Legacy storage mode (connection string)** checkbox. **Obfuscate password** (3) option becomes customizable.
 9. Click **[OK]** to confirm.
 10. Click **[Test Connection]** to test the successful connection.
 The confirmation window opens.
