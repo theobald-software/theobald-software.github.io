@@ -29,7 +29,6 @@ Ihre SAP-Basis muss auf dem Applikationsserver und auf dem Rechner, auf dem Xtra
 5. Geben Sie den SAP-Partnernamen (2) ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 7. Definieren Sie das SNC-Schutzniveau z.B. *9 - Maximum* Standardwert. <br>
 Die bevorzugte Sicherheitsstufe kann in der Einstellung **Quality Of Protection** angepasst werden. Weitere Informationen finden Sie auf der offiziellen [Hilfe-Seite von SAP](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm).
-8. Aktivieren Sie das Kästchen **Legacy storage mode (connection string)**. Die Option **Obfuscate password** (3) ist aktiv.
 9. Klicken Sie auf **[OK]** zum Bestätigen.
 10. Klicken Sie auf **[Test Connection]**, um die erfolgreiche Verbindung zu überprüfen.
 Das Bestätigungsfenster wird geöffnet.
