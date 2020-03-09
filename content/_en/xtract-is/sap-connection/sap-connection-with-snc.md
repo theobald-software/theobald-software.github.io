@@ -29,7 +29,6 @@ Your SAP basis has to import and configure the same library on the application s
 5. Fill in the SAP Partner Name (2) configured for the SAP application server e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 7. Define the SNC level of protection e.g., *9 - Maximum* default value. <br>
 The preferred security level can be set with the property **Quality Of Protection**. For more details see the official [SAP Help Site](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm).
-8. Enable **Legacy storage mode (connection string)** checkbox. **Obfuscate password** (3) option becomes customizable.
 9. Click **[OK]** to confirm.
 10. Click **[Test Connection]** to test the successful connection.
 The confirmation window opens.
