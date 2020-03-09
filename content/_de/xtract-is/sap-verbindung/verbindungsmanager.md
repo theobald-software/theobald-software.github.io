@@ -11,7 +11,7 @@ lang: de_DE
 ---
 ### SAP Verbindung herstellen 
 Jede Xtract IS Komponente benötigt einen Xtract IS Connection Manager, um auf das SAP-System zuzugreifen. 
-1. Um einen neuen Connection Manager zu erstellen, klicken Sie mit der rechten Maustaste in den Bereich der Connection Manager (normalerweise im unteren Teil des Fensters) und wählen Sie **Neue Verbindung**. 
+1. Um einen neuen Connection Manager zu erstellen, klicken Sie mit der rechten Maustaste in den Bereich "Solution Explorer" der Connection Manager und wählen Sie **Neue Verbindung**. 
 Das Fenster "Add SSIS Connection Manager" wird geöffnet.
 ![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive"}
 2. Wählen Sie den XTRACT Connection Manager aus der Liste aus und klicken Sie auf **[Add]**. Der Xtract IS Connection Manager erscheint im Tab *Connection Managers*.
@@ -60,17 +60,16 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 
 ### RFC Bibliotheken (3)
 
-Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
+Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem ABAP basierten SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
 Es gibt zwei Möglichkeiten, die RFC-Bibliotheken in Xtract IS zu nutzen:
 - Use classic RFC library (librfc32.dll) - Klassische RFC Bibliothek 
 - Use NetWeaver RFC libraries - NetWeaver RFC Bibliothek (sapnwrfc.dll)
 
-Weitere Informationen finden Sie auf der SAP Help-Seite [RFC API: Classical & SAP NetWeaver](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/48/a994a77e28674be10000000a421937/frameset.htm).<br>
-SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. 
-
 {: .box-tip }
 **Empfehlung:** Verwenden Sie die nicht unterstützte librfc32.dll für einige Extraktionstypen, z.B. DeltaQ, da diese stabiler als die NetWeaver-RFC-Bibliothek läuft.
 
+Weitere Informationen finden Sie auf der SAP Help-Seite [RFC API: Classical & SAP NetWeaver](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/48/a994a77e28674be10000000a421937/frameset.htm).<br>
+SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. 
 
 {: .box-note }
 **Hinweis:** : Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein.

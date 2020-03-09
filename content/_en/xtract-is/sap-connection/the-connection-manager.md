@@ -12,7 +12,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
 ---
 ### Connecting to SAP
 Every Xtract IS component needs a connection manager to establish access to the SAP system. 
-1. To create a new connection manager right-click in the connection managers area (normally located in the bottom of the window) and choose **New connection**. 
+1. To create a new connection manager right-click in the connection managers within "Solution Explorer" area and choose **New connection Manager**. 
 The window "Add SSIS Connection Manager" opens.
 ![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive"}
 2. Select the XTRACT Connection Manager from the list and click **[Add]**. Xtract IS Connection manager appears under the tab *Connection Managers*.
@@ -30,14 +30,14 @@ There are two possibilities to connect to an SAP source system:
 - **Instance number**: a two-digit number between 00 und 99 (Property SystemNumber)
 
 2. Use Load Balancing Server (message server)
-- **System ID**: three-digit System ID (Property SID, z.B. MSS) 
+- **System ID**: three-digit System ID (Property SID e.g.,  MSS) 
 - **Message Server**: name or IP address of the message server (Property MessageServer) 
 - **Logon group**: property LogonGroup, usually *PUBLIC*
 See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 #### Accessing via SAP router
 
-If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name or the message server. <br>
+If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name. <br>
 Example:<br>
 If the application server is "hamlet" and the router string is "/H/lear.theobald-software.com/H/", set the host property to "/H/lear.theobald-software.com/H/hamlet".
 
@@ -55,19 +55,20 @@ See further details in the knowledge base article [*Trace Directory*](https://kb
 {: .box-warning }
 **Warning!: Increase of used hard drive memory** <br>
 A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.
-Activate the debug logging only when necessary, e.g., upon request of the support team.
+Activate the debug logging only when necessary e.g., upon request of the support team.
 
 ### RFC libraries (3)
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system.  
 There are two options for using RFC libraries in Xtract IS:
 - Use classic RFC library (librfc32.dll)
 - Use NetWeaver RFC libraries (sapnwrfc.dll)
-See additional information on SAP libraries on the [SAP Help Site - RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm) <br>
-
-SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). 
 
 {: .box-tip }
 **Recommendation:** Use the not supported librfc32.dll for some extraction types, e.g., DeltaQ as runs more stable than the NetWeaver RFC library.
+
+See additional information on SAP libraries on the [SAP Help Site - RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm) <br>
+
+SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). 
 
 {: .box-note }
 **Note:** When using the NetWeaver RFC library with DeltaQ or OHS extractions, the RFC destination in SM59 must be set to Unicode. 
@@ -86,7 +87,7 @@ Since 09.2017, SAP connection parameters are no longer stored as *Connection Str
 There is a *Property* for each component of the *Connection string*.
 
 This feature allows using a [sensitive environment variable](./sensitive-environment-variable-in-ssis-catalog) for the password in the Integration Services catalog.<br>
-The *Connection stringW (see legacy mode below) did not support sensitive environment variables.<br>
+The *Connection string* (see legacy mode below) did not support sensitive environment variables.<br>
 The newer version provides stronger encryption than password obfuscation.
 
 You can either use *Connection properties* or a *Connection string*, not both.
