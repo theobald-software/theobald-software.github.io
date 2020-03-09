@@ -102,8 +102,6 @@ Die SAP-Verbindungsparameter werden über einen einzigen *Connection String* ein
 
 Das SAP-Verbindungspasswort wird maskiert, so dass es nicht im Klartext gespeichert wird. Diese Option wird standardmäßig eingeschaltet, wenn der *Legacy storage mode* aktiviert wird.
 
-![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.png){:class="img-responsive"}
-
 **Internal Table Function**
 Gibt den Funktionsbaustein an, der für die interne Kommunikation von Xtract IS mit SAP (z.B. Abruf der Metadaten) verwendet wird.
  Um den ausgewählten Funktionsbaustein zu ändern, geben Sie den Namen des Funktionsbausteins manuell ein. Die Verwendung eines anderen Funktionsbausteins kann erforderlich sein, wenn Sie innerhalb des Funktionsbausteins Berechtigungsbeschränkungen hinzufügen möchten.

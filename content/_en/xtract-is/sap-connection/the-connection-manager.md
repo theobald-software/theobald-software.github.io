@@ -100,7 +100,5 @@ SAP connection parameters are set via a single *Connection string* (default in X
 
 Masks SAP connection password. This option is switched on per default when activating **Legacy storage mode**.
 
-![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.png){:class="img-responsive"}
-
 **Internal Table Function**
 States the function module used for Xtract IS' internal communication with SAP (e.g., retrieving the metadata). To change the selected function module, type the name of function module manually. Using another function module can be necessary when adding permission restrictions within the functional module.
