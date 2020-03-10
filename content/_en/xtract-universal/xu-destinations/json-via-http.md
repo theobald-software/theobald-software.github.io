@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-10
+ref: xu-destinations-13
 layout: page
 title: JSON (via HTTP)
 description: JSON (via HTTP)
