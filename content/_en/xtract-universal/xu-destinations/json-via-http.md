@@ -20,7 +20,12 @@ The JSON destination is a generic JSON stream over HTTP.
 3. Select the *HTTP - JSON* destination from the drop-down list.
 ![JSON-Destination-Details](/img/content/xu/json/json-destination-det.png){:class="img-responsive"}
 4. Click **[OK]** to confirm.
-![JSON-Destination-Details](/img/content/JSON-Destination-Details.png){:class="img-responsive"}
+![JSON-Destination-Details](/img/content/xu/json/JSON-Destination-Details.png){:class="img-responsive"}
+
+### Destination Details
+The window "Destination Details" consists of two subsections:
+- Name - Extration name
+- Type - Extraction type
 
 ### Running an Extraction in Browser
 1. Run the extraction with HTTP-JSON destination in browser (see also [Getting Started with Table](./getting-started-table/run-an-extraction)).
