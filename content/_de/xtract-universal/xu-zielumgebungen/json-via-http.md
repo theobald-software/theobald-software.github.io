@@ -30,4 +30,4 @@ Das Fenster "Destination Details" besteht aus zwei Unterabschniten:
 ### Extraktion im Browser ausführen
 1. Führen Sie die HTTP-JSON-Destination im Browser aus. Sehen Sie auch [Erste Schritte mit Xtract Table](./erste-schritte-mit-table/eine-extraktion-ausfuehren).
 2. Überprüfen Sie das Ergebnis im Browser.
-![JSON-Extraction-in-Browser](/img/content/json/json_run-in-browser.png){:class="img-responsive"}
+![JSON-Extraction-in-Browser](/img/content/xu/json/json_run-in-browser.png){:class="img-responsive"}

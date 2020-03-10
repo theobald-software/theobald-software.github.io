@@ -5,11 +5,10 @@ title: Flat File - JSON
 description: Flat File - JSON
 product: xtract-universal
 parent: xu-destinations
-childidentifier: JSON-flat-file
+childidentifier: json-flat-file
 permalink: /:collection/:path
 weight: 14
 lang: en_GB
-
 ---
 The JSON flat file destination creates a generic JSON file.
 
@@ -24,5 +23,8 @@ The JSON flat file destination creates a generic JSON file.
 The window "Destination Details" consists of two subsections:
 - Name - Extration name
 - Type - Extraction type
-- File - Directory to save JSON flat files
+- File - **Directory** to save JSON flat files
 ![JSON-Flat-Destination-Details](/img/content/xu/json/json-flat-Destination-Details.png){:class="img-responsive"}
+
+{: .box-note }
+**Note:** Filling out the field **Directory** creates a new folder, if it doesn't exist. 

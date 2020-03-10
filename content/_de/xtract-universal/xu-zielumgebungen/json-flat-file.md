@@ -24,5 +24,8 @@ Die JSON-Flat-File-Destination erzeugt eine generische JSON-Datei.
 Das Fenster "Destination Details" besteht aus zwei Unterabschniten:
 - Name - Name der Extraktion
 - Type - Extraktionstyp
-- File - Verzeichnis zum Speichern von JSON Dateien
+- File - Verzeichnis (**Directory**) zum Speichern von JSON Dateien
 ![JSON-Flat-Destination-Details](/img/content/xu/json/json-flat-Destination-Details.png){:class="img-responsive"}
+
+{: .box-note }
+**Hinweis:** Das Ausfüllen des Feldes **Directory** erstellt einen neuen Ordner, falls er nicht existiert. 

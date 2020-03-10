@@ -8,8 +8,8 @@ parent: xu-destinations
 permalink: /:collection/:path
 weight: 13
 lang: en_GB
-
 ---
+
 The JSON destination is a generic JSON stream over HTTP. 
 
 ### Adding HTTP - JSON Destination
@@ -30,6 +30,6 @@ The window "Destination Details" consists of two subsections:
 ### Running an Extraction in Browser
 1. Run the extraction with HTTP-JSON destination in browser (see also [Getting Started with Table](./getting-started-table/run-an-extraction)).
 2. Check the extraction results.
-![JSON-Extraction-in-Browser](/img/content/json/json_run-in-browser.png){:class="img-responsive"}
+![JSON-Extraction-in-Browser](/img/content/xu/json/json_run-in-browser.png){:class="img-responsive"}
 
 
