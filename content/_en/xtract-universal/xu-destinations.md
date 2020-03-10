@@ -55,8 +55,10 @@ Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW
 ### Generic Destinations
 
 - [CSV web service](./xu-destinations/csv-via-http) (via HTTP)
+- [JSON web service](./xu-destinations/json-via-http)
 - [OData web service](./xu-destinations/odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
 - [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
+- [Flat File - JSON](./xu-destinations/json-flat-file)
             
             
 ### Pull and Push Destinations
