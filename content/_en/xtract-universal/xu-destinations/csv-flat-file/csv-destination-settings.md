@@ -10,40 +10,29 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-destination-settings
 ---
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Table](../getting-started-table/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
-Click on Destination to define extraction-specific settings.
+The following settings can be defined for the destination:  
+
+### Destination Settings
+The window "Destination Settings" consists out of four subsections:
+- File Name
+- Column Name Style
+- Date Conversion
+- Existing files
 
 ![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
-        
-           
-**File Name**
-
-Specify the name of the target file here. You have the following options:<br>
-**Same as name of SAP object** <br>
-**Same as name of extraction** and<br>
-**Custom** to specify a custom name yourself.
-
-**Append timestamp**: create a new target file and add timestamp to the file name.
-
-**Column Name Style**:<br>
-Code, CodeAndText or TextAndCode. Defines, whether the column name displays the technical name or the technical name and description of the SAP column.
-
-**Date Conversion** 
-
-**Convert invalid dates to**<br> 
-Every invalid value will be converted into this value. NULL is supported as value. 
-You should set this value to be used in case of non convertible date values.  
-During the conversion of invalid SAP dates the two specific cases 00000000 and 9999XXXX will be checked at first. 
-
-**Convert 00000000 to** <br>
-Converts all SAP date 00000000 to the specified value. 
-
-**Convert 9999XXXX to** <br>
-Converts all SAP date 9999XXXX to the specified value.                                                
-                          
-**Existing files** 
-
-**Replace file**: The export process will overwrite existing files.<br>
-**Append results**: The export process will append new data to an already existing file.<br>
-**Abort extraction**: The process will be aborted if the file already exists.  
+      
+{% include _content/en/xu-specific/xu-destinations/general/file-name.md %}	 
+### Column Name Style 
+{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}	  
+{% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}	  
+ 
+### Existing files
+**Replace file**: The export process overwrites existing files.<br>
+**Append results**: The export process appends new data to an already existing file.<br>
+**Abort extraction**: The process is aborted, if the file already exists.  
 
