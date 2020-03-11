@@ -54,25 +54,4 @@ Definiert ein benutzerdefiniertes Zeitformat (z.B. HH:MM:SS oder HH-MM-SS), um g
 **Text Encoding**<br>
 Definiert die Zeichenketten-Kodierung.
 
-**Extraktionsspezifische Einstellungen** 
-
-Klicken Sie auf Destination, um über extractionsspezifische Einstellungen bezüglich des Ziels festlegen.
-
-![Flatfile-Extraction-Specific-Settings](/img/content/Flatfile-Extraction-Specific-Settings.png){:class="img-responsive"}
-
-**File Name**<br>
-bestimmt den Namen der Zieldatei. Sie haben die folgenden Optionen: <br>
-**Same as name of SAP object**: Name des SAP-Objekts übernehmen <br>
-**Same as name of extraction** Name der Extraktion übernehmen und<br>
-**Custom**: Hier können Sie einen eigenen Namen definieren.
-
-**Append timestamp**: Eine neue Zieldatei wird angelegt und ein Zeitstempel wird an den Namen angehängt. 
-                                   
-                          
-**Existing files** 
-
-**Replace file**: eine vorhandene Zieldatei wird überschrieben. <br>
-**Append results**: Daten werden an eine bereits bestehende Zieldatei angehängt. <br>
-**Abord extraction**: Der Prozess wird abgebrochen, falls eine Zeildatei bereits existiert.  
-
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
