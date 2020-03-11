@@ -10,8 +10,14 @@ weight: 3
 lang: en_GB
 ---
 
-In the main window of the Designer, click **[Destination]** to set extraction-specific settings for the destination.<br>
-The window "Destination Setting" opens.
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Table](../../getting-started-table/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+The following settings can be defined for the destination:  
+
+### Destination Settings
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
 

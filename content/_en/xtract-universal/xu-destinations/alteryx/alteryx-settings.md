@@ -11,7 +11,14 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=settings-alteryx-en
 ---
 
-You can define the following extraction-specific settings:
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Table](../../getting-started-table/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+The following settings can be defined for the destination:  
+
+### Destination Settings
 
 ![alteryx-configuration](/img/content/alteryx-configuration.PNG){:class="img-responsive"}
 

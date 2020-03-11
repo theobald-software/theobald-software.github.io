@@ -10,8 +10,14 @@ weight: 2
 lang: en_GB
 old_url:
 ---
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Table](../../getting-started-table/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
-You can define the following destination-specific settings:
+The following settings can be defined for the destination:  
+
+### Destination Settings
 
 ![pbi-configuration](/img/content/XU_pbi_connector_destination.png){:class="img-responsive"}
 ### Column name style
