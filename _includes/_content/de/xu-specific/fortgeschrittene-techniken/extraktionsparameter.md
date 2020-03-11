@@ -38,7 +38,7 @@ logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Tick
 ### "Parameters" Tab *Custom*
 
 {: .box-note }
-**Hinweis:** Das Tab "Custom" ist nur dann aktiv, wenn eine Variable mit dem @-Symbol in der [WHERE-Bedingung](../table/where-bedingung) definiert ist.
+**Hinweis:** Der Tab "Custom" ist nur dann aktiv, wenn eine Variable mit dem @-Symbol in der [WHERE-Bedingung](../table/where-bedingung) definiert ist.
 
 Um den vordefinierten Parameter einzustellen, markieren Sie das Kästchen und geben Sie den gewünschten Wert ein.
  

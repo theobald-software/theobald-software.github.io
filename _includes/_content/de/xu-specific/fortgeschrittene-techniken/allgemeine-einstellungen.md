@@ -10,7 +10,7 @@ Das Fenster "General Settings" wird geöffnet.
 
 ### Misc. Tab
 
-Das Tab "Misc." besteht aus zwei Unterabschnitten:
+Der Tab "Misc." besteht aus zwei Unterabschnitten:
 - Optionen
 - Schlüsselwörter
 

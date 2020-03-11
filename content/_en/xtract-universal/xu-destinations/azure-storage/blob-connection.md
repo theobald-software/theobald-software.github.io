@@ -11,15 +11,29 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 ---
 
-
 ### Blob Storage Settings
-
 
 The following settings are required to connect to the Azure storage account. 
 The required input values can be determined from the Azure Portal.
 
 ![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
 
+### Adding Azure Storage Destination
+1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
+2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
+![XU_azure_Destination](/img/content/xu/azure_destination-det.png){:class="img-responsive"}
+3. Select the *Azure Storage* destination from the drop-down list.
+
+The window "Destination Details" consists of two tabs:
+- Blob Storage Settings
+- CSV Settings
+
+### Blob Storage Settings
+The tab *Blob Storage Settings* consists of two subsections:
+- Connection 
+- Container
+
+#### Connection
 **Account name**<br>
 Storage account name.
 
@@ -27,11 +41,11 @@ Storage account name.
 Access key of the Azure storage account.  
 
 **Connect**<br>
-1. Enter account name and key.
-2. Click **[Connect]**.
+Button to establish a connection.<br>
+If the connection is successful, a "Connection successful" info window opens. <br>
+Click **[OK]** to confirm.
 
-If the connection was successful, a "Connection successful" info window opens. Click **[OK]** and select a *Container*.
-
+#### Container
 **Container**<br>
 Allows selecting a Blob container into which, the extracted data is written.
 
