@@ -10,8 +10,14 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=mstr-settings
 ---
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Table](../../getting-started-table/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
-Click on the **Destination** button to define extraction-specific settings of the extraction.
+The following settings can be defined for the destination:  
+
+### Destination Settings
 
 ![mstr-destinations](/img/content/mstr-destinations.png){:class="img-responsive"}
 
