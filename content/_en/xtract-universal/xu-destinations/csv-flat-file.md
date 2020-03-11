@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-11
+ref: xu-destinations-14
 layout: page
 title: Flat File - CSV
 description: Flat File - CSV
@@ -7,24 +7,35 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: csv-flat-file
 permalink: /:collection/:path
-weight: 11
+weight: 14
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-flat-file
 ---
 
-**CSV Flat File**<br>
 The destination is a CSV (comma-seperated values) flat file. 
 
-The following options can be defined for the CSV flat file destination.
+### Adding Flat File CSV Destination
+
+1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
+2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
+3. Select the *Flat File - CSV* destination from the drop-down list.
+4. Click **[OK]** to confirm.
+
+### Destination Details
+The window "Destination Details" consists of five subsections:
+- Name (states the file name)
+- Type (states the destination type)
+- File (see below)
+- CSV Settings (see below)
+- Convert / Encoding (see below)
 
 ![CSV-Flat-Destination-Details](/img/content/CSV-Flat-Destination-Details.png){:class="img-responsive"}
 
-**File**
-
+### File
 **Directory**<br>
 Defines the directory to save the destination flat files.
 
-**CSV Settings**
+### CSV Settings
 
 **Column seperator**<br>
 Defines how two columns in CSV are separated.
@@ -41,8 +52,7 @@ Defines if the first row contains the column names. This option is set per defau
 **Row separator after last row**<br>
 Defines if the last row contains a row separator. This option is set per default.
 
-
-**Convert / Encoding**
+### Convert / Encoding
 
 **Decimal separator**<br>
 Defines the decimal separator of decimal number for the output. Dot (.) is the default value. 

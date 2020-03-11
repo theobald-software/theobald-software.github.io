@@ -1,16 +1,16 @@
 ---
-ref: xu-destinations-13
+ref: xu-destinations-10
 layout: page
-title: JSON (via HTTP)
+title:  Webservice - JSON
 description: JSON (via HTTP)
 product: xtract-universal
 parent: xu-zielumgebungen
 permalink: /:collection/:path
-weight: 13
+weight: 10
 lang: de_DE
 
 ---
-Das JSON-Destination ist ein generischer JSON-Stream über HTTP. 
+Die JSON-Destination ist ein generischer JSON-Stream über HTTP. 
 
 ### HTTP - JSON Destination hinzufügen
 
@@ -23,7 +23,7 @@ Das JSON-Destination ist ein generischer JSON-Stream über HTTP.
 ![JSON-Destination-Details](/img/content/xu/json/JSON-Destination-Details.png){:class="img-responsive"}
 
 ### Destination Details - Destinationsdetails
-Das Fenster "Destination Details" besteht aus zwei Unterabschniten:
+Das Fenster "Destination Details" besteht aus zwei Unterabschnitten:
 - Name - Name der Extraktion
 - Type - Extraktionstyp
 

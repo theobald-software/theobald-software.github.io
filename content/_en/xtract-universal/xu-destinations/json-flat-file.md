@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-10
+ref: xu-destinations-13
 layout: page
 title: Flat File - JSON
 description: Flat File - JSON
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: json-flat-file
 permalink: /:collection/:path
-weight: 10
+weight: 13
 lang: en_GB
 ---
 The JSON flat file destination creates a generic JSON file.

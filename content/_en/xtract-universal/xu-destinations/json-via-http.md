@@ -1,12 +1,12 @@
 ---
-ref: xu-destinations-13
+ref: xu-destinations-10
 layout: page
-title: JSON (via HTTP)
+title: Web Service - JSON
 description: JSON (via HTTP)
 product: xtract-universal
 parent: xu-destinations
 permalink: /:collection/:path
-weight: 13
+weight: 10
 lang: en_GB
 ---
 

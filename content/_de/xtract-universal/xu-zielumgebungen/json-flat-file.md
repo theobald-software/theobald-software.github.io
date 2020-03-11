@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-10
+ref: xu-destinations-13
 layout: page
 title: Flat File - JSON
 description: Flat File - JSON
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: json-flat-file
 permalink: /:collection/:path
-weight: 10
+weight: 13
 lang: de_DE
 
 ---
@@ -21,7 +21,7 @@ Die JSON-Flat-File-Destination erzeugt eine generische JSON-Datei.
 4. Klicken Sie auf **[OK]** zum Bestätigen.
  
 ### Destination Details - Destinationsdetails
-Das Fenster "Destination Details" besteht aus zwei Unterabschniten:
+Das Fenster "Destination Details" besteht aus zwei Unterabschnitten:
 - Name - Name der Extraktion
 - Type - Extraktionstyp
 - File - Verzeichnis (**Directory**) zum Speichern von JSON Dateien
