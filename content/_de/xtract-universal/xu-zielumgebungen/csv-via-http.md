@@ -1,12 +1,12 @@
 ---
-ref: xu-destinations-10
+ref: xu-destinations-14
 layout: page
 title: CSV (via HTTP)
 description: CSV (via HTTP)
 product: xtract-universal
 parent: xu-zielumgebungen
 permalink: /:collection/:path
-weight: 10
+weight: 14
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=csv-via-http
 ---
