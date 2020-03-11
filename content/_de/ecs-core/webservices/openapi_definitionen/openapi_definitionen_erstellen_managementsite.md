@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=openapi_definitionen_erstellen_managementsite
 ---
 
-Über die ECS Core Management Site ist ebenfalls der Export von Webservices in OpenAPI-Definitionen möglich. Rufen Sie dazu den Karteireiter *Web Services* im Menü auf, klicken links den gewünschten Webservice an und anschließend auf *Download Open Api Definition*.
+Über die ECS Core Management Site ist ebenfalls der Export von Webservices in OpenAPI-Definitionen möglich. Rufen Sie dazu den Tab *Web Services* im Menü auf, klicken links den gewünschten Webservice an und anschließend auf *Download Open Api Definition*.
 
 ![ecscore-nwc_1](/img/content/ecscore-wsd_25.png){:class="img-responsive"} 
 

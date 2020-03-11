@@ -32,6 +32,7 @@ The window "Destination Details" consists of two tabs:
 The tab *Blob Storage Settings* consists of two subsections:
 - Connection 
 - Container
+![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
 #### Connection
 **Account name**<br>
@@ -49,7 +50,6 @@ Click **[OK]** to confirm.
 **Container**<br>
 Allows selecting a Blob container into which, the extracted data is written.
 
-![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
 ### CSV Settings
 

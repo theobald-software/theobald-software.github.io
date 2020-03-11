@@ -26,17 +26,17 @@ der Name, die IP oder die Domain und der Port unter denen der Server zu erreiche
 der Name der auszuführenden Extraktion. Mit einem Klick auf den Pfeil werden alle verfügbaren Extraktionen des angegebenden Servers abgerufen und in einem Dropdown Menü dargestellt. Dies funktioniert nur, wenn der angegebene Server gültig und erreichbar ist.
 
 **Send SAP credentials** <br>
-wird für diejenigen Extraktionen benötigt, bei denen im *Security* Reiter der General Settings der Extraktion die Checkbox *Use SAP Credentials* angehakt wurde.<br>
+wird für diejenigen Extraktionen benötigt, bei denen im *Security* Tab der General Settings der Extraktion die Checkbox *Use SAP Credentials* angehakt wurde.<br>
 Das kann z.B. in Self Service Szenarien sinnvoll sein, bei denen die Extraktionen mit den SAP Logon-Daten des jeweiligen Users ausgeführt werden sollen.
 
 ![alteryx-extraction-selection](/img/content/alteryx-extraction-selection.png){:class="img-responsive"}
 
 ## Parameter 
 
-Unter dem Reiter **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. 
+Unter dem Tab **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. 
 
 **Das statische Überschreiben eines benutzerdefinierten Parameters**<br>
-In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) in dem Reiter **Custom defined Parameters** mit einem statische Wert (Stuttgart) überschrieben wird. 
+In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) in dem Tab **Custom defined Parameters** mit einem statische Wert (Stuttgart) überschrieben wird. 
 Dafür setzen Sie einen Haken für das Feld **Override** und geben Sie einen neuen Wert in das **Value** Feld ein.<br>
 
 
@@ -45,7 +45,7 @@ Dafür setzen Sie einen Haken für das Feld **Override** und geben Sie einen neu
 **Das dynamische Überschreiben eines benutzerdefinierten Parameters**<br>
 Das Xtract Universal-Tool kann also eine Eingabe entgegennehmen, z.B. das Input Data Tool.
 Die Daten-Eingabe kann dynamisch fürs das  Überschreiben des benutzerdefinierten parameters in Xtract Universal verwendet werden.<br> 
-Unter dem Reiter **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. Dafür müssen Sie einen Haken für das Feld **Override** und **Map** setzen und den Eingabeparameter aus der Wertehilfe wählen. <br>
+Unter dem Tab **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. Dafür müssen Sie einen Haken für das Feld **Override** und **Map** setzen und den Eingabeparameter aus der Wertehilfe wählen. <br>
 In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) mit einem dynamischen Wert (Stuttgart) überschrieben wird. 
 
 

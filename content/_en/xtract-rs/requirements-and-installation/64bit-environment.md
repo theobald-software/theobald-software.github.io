@@ -19,5 +19,5 @@ To run Xtract RS in 32-bit mode, the 32-bit version of librfc32.dll must be plac
 
 To run Xtract RS in 64-bit mode, the 64-bit version of librfc32.dll must be placed in [WindowsDir]\System32. This is valid for x64 and IA64 processor types. You will find a copy of the 64-bit version of the librfc32.dll in the SAPNet download center or you can ask your SAP system administrator for it.
 
-To download the librfc32.dll please refer to the following page [Theobald Products in a 64-bit environment](https://kb.theobald-software.com/general/useful-links). 
+To download the librfc32.dll, refer to the following page [Theobald Products in a 64-bit environment](https://kb.theobald-software.com/general/useful-links). 
 The assemblies have the same name and but a different file size.

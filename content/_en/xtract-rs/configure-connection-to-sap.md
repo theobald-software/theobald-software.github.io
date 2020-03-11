@@ -11,36 +11,57 @@ lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=configure-connection-to-sap
 ---
 
-After installation the Xtract RS data source type can be used in the Reporting Services wizard. Create a new connection to SAP as described in the next paragraphs. Depending on if you use the wizard or the manual creation the screenshot may look a bit different.
+The following section guides you through the creation of an SAP data source in the SQL Server Report Server (SSRS) environment. 
+The screenshots may slightly differ depending on whether you use the wizard or manual creation.
+After installation the Xtract RS data source type can be used in the Reporting Services wizard. Create a new connection to SAP as described in the following. 
 
-![Report-Data-Source-001](/img/content/Report-Data-Source-001.png){:class="img-responsive" }
+1. Run the *XtractRSSetup.exe* application on the same environment, where Visual Studio is installed.
+2. Make sure that the *Microsoft Reporting Services Projects* extension is installed and activated in VS2019.
+3. Create a new *Report Server Project* in VS2019.
+4. Right-click on the *Shared Data Sources* folder and select *Add New Data Source*.
+5. In tab *General*, assign a name for the new data source (optional), the default value is *DataSource1* (1).
+6. Select the type *Xtract RS* (2).
+![Report-Data-Source-001](/img/content/Report-Data-Source-001.png){:class="img-responsive"}
+7. Fill in the connection string to the SAP source (3).
+8. Switch to the *Credentials* tab and enter your SAP username and password (4).
+![Report-Data-Source-002](/img/content/Report-Data-Source-002.png){:class="img-responsive"}
+9. Click **[OK]** to confirm.
 
-Click on the *Edit* button to change the connection properties.
+### Connection String Parameter 
+{: .box-note }
+**Note:** For more information, see the official [SAP documentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true).
 
-    
-![Report-Data-Source-002](/img/content/Report-Data-Source-002.png){:class="img-responsive" }
+Server |Parameter | Example value
+------------ |------------ | -------------
+ Application | ApplicationHost | `saperp.theobald.local`
+<!----> | SYSNR | `00`
+<!----> | LANG | `EN`
+<!----> | Client | `800`
+Secure Network Communication | SNCMode | `1` - enable
+<!----> | SNCPartnerName | `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL` - Partnername des konfigurierten SAP Systems
+<!----> | SNCLibrary | `C:\SNC\gsskrb5.dll` - lokaler Pfad zur Kerberos lib
+<!----> | SSOType | `2` - SSO mit Kerberos
+Message | MessageServer | `saperp.theobald.local`
+<!----> | UseLoadBalancing | `true`
+<!---->  | LogonGroup | `PUBLIC`
+<!----> | SID | `MBS`
+
+### Connection String Examples: 
+#### SNC
+
+ApplicationHost=saperp.theobald.local;SYSNR=00;LANG=EN;Client=800;SNCMode=1;
+SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2
+
+#### Single Application Server
+
+LANG=EN;ApplicationHost=ec5.theobald-software.com;SYSNR=00;Client=800
 
 
-If you need to log on to a single application host, fill in the fields *ApplicationHost* and *SystemNumber*. If you want log on by load-balancing the message server field, the logon group and SID must be entered and the *UseLoadBalancing* property must be set to true. If you don’t know what these parameters in your SAP system environment are, please ask your SAP Basis Components department for help.
+### Downloading Kerberos DLLs
 
+{: .box-note }
+**Note:** You can download the relevant DLLs from the [SAP ONE Support Launchpad](https://launchpad.support.sap.com/#/notes/2115486).
 
-Besides these technical properties there also some account information to be added (*Client and Language*). It is possible to enter *user name* and *password* right here but it is not recommended to do so because of security reasons. Both values would be readable in the connection string.
+Store the Kerberos libraries in the following local path: `C:\SNC\gx64krb5.dll` (64-bit) and `C:\SNC\gsskrb5.dll` (32-bit).
 
-Click *OK* to apply the entered values.
-
-![Report-Data-Source-003](/img/content/Report-Data-Source-003.png){:class="img-responsive" }
-
-To provide User Name and Password click on *Credentials*. You can enter your account data there or you can choose the *Prompt option* to force the user to type in his own account data.
-
-![Report-Data-Source-004](/img/content/Report-Data-Source-004.png){:class="img-responsive" }
-
-Using SNC in the Connection Properties
-
-It is also possible to use SNC (Secure Network Communication) for the SAP Connection. 
-Please fill in the additional Fields: SNCLibrary, SNCPartnerName and SSOType like shown in the screenshot below. 
-(Values are only sample values, please replace with values of your own SAP System) 
-
-You must also have the relevant DLLs from SAP. These DLLs are different for 32-bit and 64-bit platforms and are available with SNOTE* 352295. The SAP note 352295 has an 'Attachments' option from where you can download the package. The names of the DLLs are:<br>
-For 32-bit: gsskrb5.dll<br>
-For 64-bit x86: gx64krb5.dll<br>
-
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

@@ -20,7 +20,7 @@ Wenn Sie auf *Generate* klicken, wird automatisch ein Custom Data Type für Rüc
 
 ![ta_rec_feature_18](/img/content/ecscore/ecscore-wsd_ta_rec_18.png){:class="img-responsive"}  
 
-Ein Return-Parameter, der diesen Custom Data Type verwendet, muss manuell erstellt werden und kann dann auf dem Karteireiter *Return Messages* als Mapping-Wert verwendet werden.
+Ein Return-Parameter, der diesen Custom Data Type verwendet, muss manuell erstellt werden und kann dann auf dem Tab *Return Messages* als Mapping-Wert verwendet werden.
 
 ![ta_rec_feature_19](/img/content/ecscore/ecscore-wsd_ta_rec_19.png){:class="img-responsive"} 
 

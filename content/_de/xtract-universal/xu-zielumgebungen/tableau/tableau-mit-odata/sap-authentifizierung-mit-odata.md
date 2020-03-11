@@ -15,8 +15,8 @@ OData-Extraktionen können im Kontext des SAP-Nutzers durch Eingabe der SAP-Anme
 
 Unter General Settings -> <br>
 Dazu öffnen Sie die *General Settings* der Extraktion und wählen Sie 
-- im Reiter Misc. die Option *Disable Buffer*, und
-- im Reiter *Security* die Option *Require SAP Credentials*. 
+- im Tab Misc. die Option *Disable Buffer*, und
+- im Tab *Security* die Option *Require SAP Credentials*. 
 
 ![Require-SAP-Credentials](/img/content/Require-SAP-Credentials.png){:class="img-responsive"}
 

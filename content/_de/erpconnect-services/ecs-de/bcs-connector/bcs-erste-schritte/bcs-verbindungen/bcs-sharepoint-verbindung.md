@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-sharepoint-verbindung
 ---
 
-Wählen Sie *Edit SharePoint* im Reiter *Home*.
+Wählen Sie *Edit SharePoint* im Tab *Home*.
 
 Das *SharePoint Connection* Dialogfenster öffnet sich.
 

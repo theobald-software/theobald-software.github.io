@@ -29,6 +29,6 @@ Um dem Dienst ein Benutzerkonto zuzuweisen, gehen Sie wie folgt vor:
 ![XU-Setup](/img/content/windows-dienste.png){:class="img-responsive"}
 3. Klicken Sie mit der rechten Maustaste auf den Dienst und wählen Sie Eigenschaft.
 ![XU-Setup](/img/content/xtract_dienst allgemein.png){:class="img-responsive"}
-4. Im Reiter Log On, ändern Sie das Benutzerkonto und klicken Sie auf Anwenden.
+4. Im Tab Log On, ändern Sie das Benutzerkonto und klicken Sie auf Anwenden.
 ![XU-Setup](/img/content/xtract_dienst_anmelden.png){:class="img-responsive"}
 

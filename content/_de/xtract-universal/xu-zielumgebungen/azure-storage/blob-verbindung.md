@@ -32,6 +32,7 @@ Das Fenster "Destination Details" besteht aus zwei Tabs:
 Der Tab *Blob Storage Settings* besteht aus zwei Unterabschnitten:
 - Connection 
 - Container
+![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
 #### Connection
 **Account Name**<br>
@@ -48,11 +49,11 @@ Wenn die Verbindung erfolgreich ist, poppt das Infofenster "Connection successfu
 **Container**<br>
 Ermöglicht die Auswahl des Blob Containers, in den die extrahierten Daten geschrieben werden.
 
-![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
+
 
 ### CSV Settings
 
-Die Einstellungsmöglichkeiten im Reiter CSV Settings entsprechen denen der allgemeinen [http-csv Settings](../csv-via-http).
+Die Einstellungsmöglichkeiten im Tab CSV Settings entsprechen denen der allgemeinen [http-csv Settings](../csv-via-http).
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
 

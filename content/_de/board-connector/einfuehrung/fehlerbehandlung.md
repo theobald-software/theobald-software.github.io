@@ -25,4 +25,4 @@ Um dem Dienst ein Benutzerkonto zuzuweisen, gehen Sie wie folgt vor:
 1. Klicken Sie auf Start -> Systemsteuerung -> Verwaltung.
 2. Doppelklicken Sie auf Dienste.
 3. Klicken Sie mit der rechten Maustaste auf den Dienst und wählen Sie Eigenschaft.
-4. Im Reiter Log On, ändern Sie das Benutzerkonto und klicken Sie auf Anwenden.
+4. Im Tab Log On, ändern Sie das Benutzerkonto und klicken Sie auf Anwenden.

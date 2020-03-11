@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=overview
 ---
 
-Im Reiter *Overview* werden aktuelle Hinweise angezeigt.
+Im Tab *Overview* werden aktuelle Hinweise angezeigt.
 
 
 

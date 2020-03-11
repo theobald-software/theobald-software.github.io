@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-service-applikation
 ---
 
-Im Karteireiter *SAP Connections* können Verbindungen zu einem oder mehreren SAP Systemen neu angelegt und verwaltet werden.  
+Im Tab *SAP Connections* können Verbindungen zu einem oder mehreren SAP Systemen neu angelegt und verwaltet werden.  
 
 Klicken Sie auf *New SAP Connection*, um eine neue Verbindung anzulegen.
 

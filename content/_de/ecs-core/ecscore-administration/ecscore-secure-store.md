@@ -18,6 +18,6 @@ Wichtig: Das Benutzer-Mapping über einen Secure Store funktioniert nur, wenn di
 
 Gehen Sie zum Menü *Secure Stores* und fügen Sie mit *Add Secure Store* einen neuen, frei benennbaren Secure Store hinzu.
 
-Mit dem Karteireiter *Credentials* können Sie nun entsprechende SAP-Anmeldedaten für einen oder mehrere Windows-Benutzer hinterlegen. Der SAP Benutzername muss mindestens 5 Zeichen lang sein.
+Mit dem Tab *Credentials* können Sie nun entsprechende SAP-Anmeldedaten für einen oder mehrere Windows-Benutzer hinterlegen. Der SAP Benutzername muss mindestens 5 Zeichen lang sein.
 
 Bei den *SAP Connections* lässt sich jetzt bei den Authentifizierungsmethoden unter *Use Secure Store* der neu hinterlegte Secure Store auswählen.

@@ -20,7 +20,7 @@ Beachten Sie, dass Sie nur Eingabeparameter für Felder definieren müssen, mit 
 werden für diese Felder die aufgezeichneten Werte als Standardwerte genommen.
 
 
-Nachdem Sie Ihre Parameter definiert haben, schließen Sie den Parameterdialog und öffnen die *Transaction Recorder Activity*. Sie können nun die definierten Parameter den im Karteireiter *Standard* angebotenen Feldern zuordnen. 
+Nachdem Sie Ihre Parameter definiert haben, schließen Sie den Parameterdialog und öffnen die *Transaction Recorder Activity*. Sie können nun die definierten Parameter den im Tab *Standard* angebotenen Feldern zuordnen. 
 
 ![ta_rec_feature_13](/img/content/ecscore/ecscore-wsd_ta_rec_13.png){:class="img-responsive"}
 

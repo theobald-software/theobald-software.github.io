@@ -18,19 +18,18 @@ Die Abbildungen können leicht abweichen, je nach dem, ob Sie den Wizard oder di
 1. Führen Sie die Anwendung *XtractRSSetup.exe* auf der identischen Umgebung aus, in der auch Visual Studio installiert wurde.
 2. Stellen Sie sicher, dass die Erweiterung *Microsoft Reporting Services Projects* in VS2019 installiert und aktiviert wurde.
 3. Erstellen Sie eine neues *Report Server Project* in VS2019.
-4. Rechtsklick auf den Ordner *Shared Data Sources* und *Add New Data Source* auswählen.
-5. Vergeben Sie im Reiter **General** einen Namen für die neue Datenquelle (optional), als default Wert wird *DataSource1* vergeben (1).
-6. Auswählen des Typs *Xtract RS* (2).
+4. Klicken Sie mit der rechten Maustaste auf den Ordner *Shared Data Sources* und wählen Sie *Add New Data Source* aus.
+5. Vergeben Sie im Tab *General* einen Namen für die neue Datenquelle (optional), als Standardwert wird *DataSource1* vergeben (1).
+6. Wählen Sie den Typ *Xtract RS* (2).
 ![Report-Data-Source-001](/img/content/Report-Data-Source-001.png){:class="img-responsive"}
-7. Angabe eines Connection Strings zur SAP Quelle (3).
-8. Wechseln Sie zum Reiter **Credentials** und geben Ihren SAP Benutzer sowie Passwort an (4).
+7. Geben Sie einen Connection String zur SAP Quelle (3) an.
+8. Wechseln Sie zum Tab **Credentials** und geben Ihren SAP Benutzer sowie Passwort an (4).
 ![Report-Data-Source-002](/img/content/Report-Data-Source-002.png){:class="img-responsive"}
-9. Bestätigen Sie die Eingaben mit **[OK]**.
+9. Klicken Sie auf **[OK]** zum Bestätigen.
 
-### Connection String Parameter
-
+### Connection String Parameter 
 {: .box-note }
-**Note:** Weitere Informationen entnehmen Sie der offiziellen [SAP Dokumentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true) .
+**Hinweis:** Weitere Informationen entnehmen Sie der offiziellen [SAP Dokumentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true).
 
 Server |Parameter | Beispielwert
 ------------ |------------ | -------------
@@ -61,8 +60,8 @@ LANG=EN;ApplicationHost=ec5.theobald-software.com;SYSNR=00;Client=800
 ### Die Kerberos DLLs herunterladen
 
 {: .box-note }
-**Note:** Sie können die relevanten DLLs von der [SAP ONE Support Launchpad](https://launchpad.support.sap.com/#/notes/2115486) herunterladen. 
+**Hinweis:** Sie können die relevanten DLLs von der [SAP ONE Support Launchpad](https://launchpad.support.sap.com/#/notes/2115486) herunterladen. 
 
-Die Kerberos Bibliotheken bitte in folgenden lokalen Pfad abspeichern: `C:\SNC\gx64krb5.dll` (64-bit) sowie `C:\SNC\gsskrb5.dll` (32-bit).
+Die Kerberos Bibliotheken in folgenden lokalen Pfad abspeichern: `C:\SNC\gx64krb5.dll` (64-bit) sowie `C:\SNC\gsskrb5.dll` (32-bit).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
