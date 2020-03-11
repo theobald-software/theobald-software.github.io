@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-14
+ref: xu-destinations-10
 layout: page
 title: Flat File - JSON
 description: Flat File - JSON
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: json-flat-file
 permalink: /:collection/:path
-weight: 14
+weight: 10
 lang: de_DE
 
 ---
@@ -29,3 +29,8 @@ Das Fenster "Destination Details" besteht aus zwei Unterabschniten:
 
 {: .box-note }
 **Hinweis:** Das Ausfüllen des Feldes **Directory** erstellt einen neuen Ordner, falls er nicht existiert. 
+
+### Überprüfen des Extraktionsergebnisses
+1. Überprüfen Sie das zuvor definierte Verzeichnis zum Speichern von JSON-Flat-Files.
+2. Öffnen Sie die JSON-Flat-Datei mit einem Editor Ihrer Wahl.
+![JSON-Flat-File](/img/content/xu/json/json_flat-file.png){:class="img-responsive"}

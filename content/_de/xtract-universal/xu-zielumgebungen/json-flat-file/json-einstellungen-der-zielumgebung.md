@@ -8,8 +8,8 @@ parent: json-flat-file
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-
 ---
+
 ### Destination Settings öffnen
 
 1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Table](../erste-schritte-mit-table/eine-neue-extraktion-anlegen)).

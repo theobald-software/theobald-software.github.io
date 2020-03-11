@@ -8,7 +8,6 @@ parent: json-flat-file
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-
 ---
 
 ### Opening Destination Settings
