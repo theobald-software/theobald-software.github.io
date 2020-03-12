@@ -11,6 +11,7 @@ weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=sap-connection
 ---
+
 To perdorm tasks such as designing ETL packages, extracting metadata, previewing and deploying data using Xtract IS a connection to SAP system is required. SSIS can be connected to SAP using the "XTRACT" connection manager.
 
 The following sections provide details on creating an SAP connection within SSIS.
