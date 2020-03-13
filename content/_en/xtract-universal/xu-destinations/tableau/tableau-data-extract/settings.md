@@ -11,7 +11,14 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=settings
 ---
 
-Click on Destination to define extraction-specific settings.
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Table](../../../getting-started-table/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+The following settings can be defined for the destination:  
+
+### Destination Settings
 
 ![Tableau-Extraction-Specific-Settings](/img/content/Tableau-Extraction-Specific-Settings.png){:class="img-responsive"}
       

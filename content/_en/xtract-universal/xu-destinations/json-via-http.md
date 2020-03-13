@@ -28,7 +28,7 @@ The window "Destination Details" consists of two subsections:
 - Type - Extraction type
 
 ### Running an Extraction in Browser
-1. Run the extraction with HTTP-JSON destination in browser (see also [Getting Started with Table](./getting-started-table/run-an-extraction)).
+1. Run the extraction with HTTP-JSON destination in browser (see also [Getting Started with Table](../getting-started-table/run-an-extraction)).
 2. Check the extraction results.
 ![JSON-Extraction-in-Browser](/img/content/xu/json/json_run-in-browser.png){:class="img-responsive"}
 
