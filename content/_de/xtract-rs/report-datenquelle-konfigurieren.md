@@ -28,6 +28,7 @@ Die Abbildungen können leicht abweichen, je nach dem, ob Sie den Wizard oder di
 9. Klicken Sie auf **[OK]** zum Bestätigen.
 
 ### Connection String Parameter 
+
 {: .box-note }
 **Hinweis:** Weitere Informationen entnehmen Sie der offiziellen [SAP Dokumentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true).
 
