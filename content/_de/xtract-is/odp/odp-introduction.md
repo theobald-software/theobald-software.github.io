@@ -9,5 +9,4 @@ permalink: /:collection/:path
 weight: 1
 lang: de_DE
 ---
-
-{% include _content/de/odp/odp-extractors.md %} 
+{% include _content/de/odp/odp-introduction.md %}
