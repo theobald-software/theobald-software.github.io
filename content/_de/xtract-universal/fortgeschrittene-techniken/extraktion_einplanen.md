@@ -1,7 +1,7 @@
 ---
 ref: xu-advanced-techniques-09
 layout: page
-title: Extraktion einplannen
+title: Extraktion einplanen
 description: Extraktion einplanen
 product: xtract-universal
 parent: fortgeschrittene-techniken
