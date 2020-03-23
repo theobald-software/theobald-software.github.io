@@ -6,7 +6,7 @@ description: HANA Views
 product: xtract-universal
 parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 ---
 
