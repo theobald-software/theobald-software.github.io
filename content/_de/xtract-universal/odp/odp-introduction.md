@@ -1,5 +1,5 @@
 ---
-ref: xu-odp-settings
+ref: xu-odp-introduction
 layout: page
 title: ODP Einführung
 description: ODP Einführung
