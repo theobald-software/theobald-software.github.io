@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 18
+weight: 16
 lang: en_GB
 ---
 The Xtract ODP component is based on the Operational Data Provisioning (ODP) interface of SAP. 
