@@ -35,12 +35,11 @@ R3Connection.Protocol = ClientProtocol.NWRFC;
 Bei der Verwendung der Netweaver-DLLs sind bestimmte DLLs jeweils für die 32- bzw. 64-Bit Umgebung nötig.
 
 Für die 64-Bit Umgebung sind folgende DLLs nötig:
-- ERPConnect20.dll oder ERPConnect35.dll oder ERPConnect40.dll oder ERPConnect45.dll
-- ERPConnectNW.dll
+- ERPConnect35.dll oder ERPConnect45.dll
 - sapnwrfc.dll
-- icuuc34.dll
-- icudt34.dll
-- icuin34.dll 
+- icuucXX.dll
+- icudtXX.dll
+- icuinXX.dll 
 
 Die ERPConnect* .dll werden mit ERPConnect mitgeliefert. Die restlichen DLLs müssen von den SAP-Seiten heruntergeladen werden.
 
