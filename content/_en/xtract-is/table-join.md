@@ -12,13 +12,10 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=tablejoin
 ---
 
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i>
-  <strong>Note:</strong> As of Xtract IS Version <a href="https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html" class="alert-link">5.0</a> the Table Join component is obsolete. Please use the table join functionality of the <a href="./table" class="alert-link">new table component.</a>
-</div>
+{: .box-note }
+**Note:** As of Xtract IS Version 5.0, the Table Join component is obsolete. Use the table join functionality of the new [table component](./xtract-is-table).
 
-
-The Table Join component allows to join many tables (and views) on the SAP side and to extract the result.  
+The Table Join component allows to join several tables (and views) on the SAP side and to extract the result.  
 
 Possible scenarions are joining data from header and position tables or from attribute and text tables. 
  

@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-01
+ref: xtract-is-02
 layout: page
 title: Voraussetzungen und Installation
 description: Voraussetzungen und Installation
@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: voraussetzungen-und-installation
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=voraussetzungen-und-installation
 ---

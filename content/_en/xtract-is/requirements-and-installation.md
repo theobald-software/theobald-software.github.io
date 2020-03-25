@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-01
+ref: xtract-is-02
 layout: page
 title: Requirements and Installation
 description: Requirements and Installation
@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: requirements-and-installation
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements-and-installation
 ---
