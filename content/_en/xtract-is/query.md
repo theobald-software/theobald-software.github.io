@@ -12,8 +12,8 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=query
 ---
 
-This chapter shows how to extract data from SAP queries.
-Please drag and drop the appropriate icon from the toolbox to your data flow task. The connection manager is assigned to the component as shown in Chapter [Xtract IS Table](./table).
+The following section shows how to extract data from SAP queries.
+Drag and drop the appropriate icon from the toolbox to your data flow task. The connection manager is assigned to the component as shown in the section [Xtract IS Table](./table).
 
 ![Query-01](/img/content/Query-01.png){:class="img-responsive" }
 
