@@ -9,6 +9,19 @@
 
 ![Extraction-Settings-01](/img/content/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
+### Schaltflächen
+**[Load live preview]** <br>
+Ermöglicht eine Echtzeit-Vorschau der Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
+Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen. 
+ 
+**[Count rows]** <br>
+Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der hinterlegten WHERE- und HAVING-Bedingungen. 
+
+**[Refresh Metadata]** <br>
+Durchführung eines erneuten Lookups auf die selektierte(n) Tabelle(n). Bestehende Mappings und Feldselektionen bleiben dabei erhalten, anders als beim erneuten Hinzufügen.<br>
+Die *Refresh Metadata* Funktionalität kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. In solchen Fällen kann es zu Datenschiefständen kommen, die durch diese Funktion bereinigt werden.   
+ 
+
 ### Syntax der WHERE-Bedingung  
 
 {: .box-warning }
@@ -37,6 +50,15 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
   - Das Datum 01.01.1999 hat die interne Darstellung 19990101 (JJJJMMTT) 
   - Die Jahresperiode 001.1999 hat die interne Darstellung 1999001 (YYYYYPPP)
   - Zahlen müssen führende Nullen enthalten, z.B. hat die Kundennummer 1000 die interne Darstellung 0000001000.
+
+| Operator   |      Bedeutung      |  
+|----------|:-------------:|
+| =, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
+|<>, NE |Wahr, wenn der Inhalt von operand1 ungleich dem Inhalt von operand2 ist|
+| <, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|
+|>, GT |  Wahr, wenn der Inhalt von operand1 größer als der Inhalt von operand2 ist|
+| <=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
+|>=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
 
  Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 

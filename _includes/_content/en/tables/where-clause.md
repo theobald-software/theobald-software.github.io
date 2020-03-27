@@ -10,6 +10,19 @@ The window "Define data source for SAP Table " opens.
 
 ![Extraction Settings-01](/img/content/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
+### Buttons
+**[Load live preview]** <br>
+Allows a real-time preview of the extraction data without executing the extraction. <br>
+You can also preview the data with aggregation functions. 
+ 
+**[Count rows]** <br>
+Returns the number of rows/data records of an extraction, considering the WHERE and HAVING clauses stored. 
+
+**[Refresh metadata]** <br>
+A new lookup is performed on the selected table(s). Existing mappings and field selections are retained, which is not the case when the table is added again. <br>
+It may be necessary to renew the metadata, for example, if a table has been adjusted on the SAP side, another source system has been connected, or the source system has been updated. 
+In such cases, data inconsistencies can occur that are resolved by this function.   
+
 ### WHERE clause syntax 
 
 {: .box-warning }
@@ -35,8 +48,17 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
   - The date 01.01.1999 has the internal representation 19990101 (YYYYMMDD) 
   - The year period 001.1999 has the internal representation 1999001 (YYYYPPP)
   - Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
+  
+| Operator   |      Meaning      |  
+|----------|:-------------:|
+| =, EQ |  True if the content of operand1 is equal to the content of operand2|
+|<>, NE | True if the content of operand1 is not equal to the content of operand2|
+| <, LT | True if the content of operand1 is less than the content of operand2|
+|>, GT |  True if the content of operand1 is greater than the content of operand2|
+| <=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
+|>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
 
- Get more information about the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
+Get more information about the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
 ### WHERE clause restrictions
 
