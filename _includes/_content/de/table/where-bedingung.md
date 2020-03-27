@@ -52,7 +52,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
   - Zahlen müssen führende Nullen enthalten, z.B. hat die Kundennummer 1000 die interne Darstellung 0000001000.
 
 | Operator   |      Bedeutung      |  
-|----------|:-------------:|
+|----------|:------------- |
 | =, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
 |<>, NE |Wahr, wenn der Inhalt von operand1 ungleich dem Inhalt von operand2 ist|
 | <, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|

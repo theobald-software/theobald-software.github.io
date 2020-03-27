@@ -50,7 +50,7 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
   - Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
   
 | Operator   |      Meaning      |  
-|----------|:-------------:|
+|----------|:------------- |
 | =, EQ |  True if the content of operand1 is equal to the content of operand2|
 |<>, NE | True if the content of operand1 is not equal to the content of operand2|
 | <, LT | True if the content of operand1 is less than the content of operand2|
