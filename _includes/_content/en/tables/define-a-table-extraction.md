@@ -10,7 +10,7 @@ Search results appear in the preview window.
 4. Select the desired table (3) and click **[OK]** (4). <br>
 
 {: .box-tip }
-**Tip:** Wildcards uch as * are supported. Make sure to place them after the name of the searched item.
+**Tip:** Wildcard such as * are supported. Make sure to place them after the name of the searched item.
 
 The application now returns to the main window "Define data source for SAP Tables". <br>
 
