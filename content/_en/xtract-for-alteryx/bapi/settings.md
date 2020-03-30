@@ -6,8 +6,8 @@ description: Settings
 product: xtract-for-alteryx
 parent: bapi
 permalink: /:collection/:path
-weight: 7
+weight: 3
 lang: en_GB
 ---
 
-{% include _content/en/extractors.bapi/bapi-settings.md %} 
+The BAPI component contains no specific settings. 
