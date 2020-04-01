@@ -20,3 +20,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=generating_data_load_script
 ![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script_2.png){:class="img-responsive"}
 2. Paste the copied script into the data load editor in Qlik View or Qlik Sense.
 
+{: .box-note }
+**Note:** the "SET methods" cannot be edited in the "Script" window. Edit the SET methods at the destination side. 
+
+

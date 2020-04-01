@@ -19,3 +19,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=script_generieren
 1. Klicken Sie auf **[Copy to Clipboard]**, um das Skript zu kopieren.
 ![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script_2.png){:class="img-responsive"}
 2. Fügen Sie das kopierte Skript in den Datenlade-Editor von Qlik View oder von Qlik Sense ein.
+
+{: .box-note }
+**Hinweis:** die "SET-Methoden" können nicht im Fenster "Script" editiert werden. Editieren Sie die SET-Methoden auf der Destinationsseite.  
