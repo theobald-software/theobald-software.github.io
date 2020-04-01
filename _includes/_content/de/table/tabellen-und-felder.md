@@ -33,8 +33,12 @@ Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank,
 Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
 
 {: .box-note}
-**Note:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein [Z_XTRACT_IS_TABLE_COMPRESSION](./extraktionseinstellungen) unterstützt. 
+**Hinweis:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein [Z_XTRACT_IS_TABLE_COMPRESSION](./extraktionseinstellungen) unterstützt. 
 
+Die Table-Komponente importiert und markiert die dedizierten Indizes, wie z.B. Primärschlüssel oder Sortieroptionen, aus SAP.
+
+{: .box-note}
+**Hinweis:** Die Verwendung der indizierten Felder zur Filterung erhöht die Performance bei der Anwendung der WHERE-Bedingung.
 
 ### Preview
 Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
