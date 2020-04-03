@@ -10,4 +10,4 @@ weight: 3
 lang: en_GB
 ---
 
-The BAPI component contains no specific settings. 
+There are no specific settings for the BAPI component.
