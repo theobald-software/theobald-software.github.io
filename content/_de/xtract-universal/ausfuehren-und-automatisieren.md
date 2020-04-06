@@ -27,29 +27,33 @@ https://cdn-files.theobald-software.com/download/XtractUniversal/xu.elf.tar.gz
 
 ### Hilfe anzeigen
 Eine Kurzdokumentation zur Verwendung kann mit dem Parameter -h angezeigt werden:
-* xu.exe -h
-* xu.elf -h
-
+```
+xu.exe -h
+xu.elf -h
+```
 ### Eine Extraktion starten
 xu.exe verbindet sich zu einem XU Service und startet dort eine Extraktion mit optionalen Laufzeitparametern. Der XU Service, die Extraktion, sowie die Laufzeitparameter werden per über Kommandozeilenparameter angegeben.
 Um eine Extraktion auf dem Xtract Universal Server zu starten, nutzen Sie den folgenden Befehl
 ```
-    xu.exe -n <name> [-s <host>] [-p <port>] [-o <option>]
+xu.exe -n <name> [-s <host>] [-p <port>] [-o <option>]
 ```
 
 #### Optionen
--h 
+* -h 
 Gibt die Hilfe-Seite aus
--s HOST    
+* -s HOST    
 Die Host- oder IP-Adresse, die für die Verbindung verwendet werden soll. [Standardwert: localhost]. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.
--p PORT    
+* -p PORT    
 Der Port vom XU Server. [Standardwert: 8065]. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.
--o OPTION  
+* -o OPTION  
 Laufparameter, die beim Ausführen der Extraktion verwendet werden.
-Das Format für OPTION ist <Name>=<Wert>. Es können mehrere Parameter verwendet werden. Format ist: -o parameter1=wert1 -o parameter2=wert2  
--e         Verwendet TLS (1.1 oder höher) für die Transportsicherheit.
--a         Bricht alle aktuell laufenden Instanzen der angegebenen Extraktion ab.
--c         Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen. Dies gilt nur für Pull-Destinationen.
+Das Format für OPTION ist <Name>=<Wert>. Es können mehrere Parameter verwendet werden. Format ist: 
+```
+-o parameter1=wert1 -o parameter2=wert2  
+```
+* -e         Verwendet TLS (1.1 oder höher) für die Transportsicherheit.
+* -a         Bricht alle aktuell laufenden Instanzen der angegebenen Extraktion ab.
+* -c         Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen. Dies gilt nur für Pull-Destinationen.
 
 #### Beispiele
 ```
