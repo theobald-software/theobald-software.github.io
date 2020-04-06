@@ -90,7 +90,8 @@ Rückgabewerte unter 1000 entsprechen dem HTTP Status Code des Fehlers.
 Rückgabewerte ab 1000 zeigen andere Fehler an. Die Details des jeweiligen Fehlers können den Logmeldungen (stderr) entnommen werden. 
 
 Rückgabewert	Beschreibung
-0	Extraktion wurde erfolgreich ausgeführt
+```
+0		Extraktion wurde erfolgreich ausgeführt
 404 	Extraktion existiert nicht
 1001 	Ein undefinierter Fehler ist aufgetreten
 1002 	Die Datei konnte nicht gefunden werden
@@ -100,6 +101,7 @@ Rückgabewert	Beschreibung
 1016 	Das Argument ist ungültig
 1053 	Die URL ist falsch
 1087 	Der Parameter ist ungültig
+```
 
 #### Beispiel
 Mit dem folgenden Befehl führe ich die Extraktion mit dem Namen sapcustomers aus. Für Host und Port werden die Standardwerte verwendet.
