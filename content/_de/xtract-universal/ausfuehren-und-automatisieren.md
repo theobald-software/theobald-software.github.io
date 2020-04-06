@@ -33,7 +33,9 @@ Eine Kurzdokumentation zur Verwendung kann mit dem Parameter -h angezeigt werden
 ### Eine Extraktion starten
 xu.exe verbindet sich zu einem XU Service und startet dort eine Extraktion mit optionalen Laufzeitparametern. Der XU Service, die Extraktion, sowie die Laufzeitparameter werden per über Kommandozeilenparameter angegeben.
 Um eine Extraktion auf dem Xtract Universal Server zu starten, nutzen Sie den folgenden Befehl
+```
     xu.exe -n <name> [-s <host>] [-p <port>] [-o <option>]
+```
 
 #### Optionen
 -h 
@@ -50,25 +52,31 @@ Das Format für OPTION ist <Name>=<Wert>. Es können mehrere Parameter verwendet
 -c         Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen. Dies gilt nur für Pull-Destinationen.
 
 #### Beispiele
+```
 xu.exe -n MaterialText
 xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000
 xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e
 xu.exe -n MaterialText -a
+```
 
 #### URL als Parameter (nicht mehr empfohlen)
 Die Möglichkeit, eine URL als einzigen Parameter mitzugeben, existiert nur aus Rückwärtskompatibilitätsgründen und wird nicht empfohlen:
-
+```
 xu.exe <url>
+```
 Führt eine Extraktion basierend auf dem <url> aus dem "Run"-Dialog des Xtract Universal Designers aus. <url> sollte in doppelte Anführungszeichen (") gesetzt werden.
 
 Beispiel:
+```
 xu.exe "http://localhost:8065/?name=MaterialText"
-
+```
 
 #### Standardausgabe & Standardfehlerausgabe
 xu.exe / xu.elf läuft während der gesamten Ausführungsdauer der Extraktion. 
-Bei Pull Destinations werden die extrahierten Daten im Format der Destination (z.B. CSV, JSON, ...) in die Standardausgabe (stdout) geschrieben. 
+Bei Pull Destinations werden die extrahierten Daten im Format der Destination (z.B. CSV, JSON, ...) in die Standardausgabe (stdout) geschrieben.
+
 Bei Push Destinations wird, nachdem die Ausführung einer Extraktion beendet ist, das Log der Extraktion im CSV-Format in die Standardausgabe (stdout) geschrieben. Anschließend wird xu.exe / xu.elf beendet. 
+
 Logmeldungen werden dabei in die Standardfehlerausgabe (stderr) geschrieben.
 
 #### Rückgabewert 
@@ -91,9 +99,13 @@ Rückgabewert	Beschreibung
 
 #### Beispiel
 Mit dem folgenden Befehl führe ich die Extraktion mit dem Namen sapcustomers aus. Für Host und Port werden die Standardwerte verwendet.
+```
 "C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers 1>>output1.txt 2>>output2.txt
+```
+
 Mit den Befehlen 1>>output1.txt bzw. 2>>output2.txt wird die Standardausgabe bzw. Standardfehlerausgabe in die entsprechende Datei geschrieben. 
 Die Extraktion hat eine Push-Destination, somit wird das Log im CSV-Format in die Standardausgabe (stdout) geschrieben:
+```
 LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 1,sapcustomers,2020-04-06_16:26:32.354,3,FinishedNoErrors,Info,LiveDataExtraction,Product version 4.8.5.3
 2,sapcustomers,2020-04-06_16:26:32.355,3,FinishedNoErrors,Info,LiveDataExtraction,Using Theobald.Extractors Interface
@@ -119,7 +131,9 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 22,sapcustomers,2020-04-06_16:26:34.429,3,FinishedNoErrors,Debug,LiveDataExtraction,Waiting for destination...
 23,sapcustomers,2020-04-06_16:26:35.848,3,FinishedNoErrors,Info,LiveDataExtraction,Finished writing rows to destination
 24,sapcustomers,2020-04-06_16:26:35.848,3,FinishedNoErrors,Debug,LiveDataExtraction,Writing results to destination completed
+```
 Die Datei zur Standardfehlerausgabe hat folgenden Inhalt:
+```
 xu.exe - Xtract Universal Command Line Utility, Version 4.8.5.3
 Found 2 IP addresses for localhost
 Connecting to [::1]:8065
@@ -128,23 +142,30 @@ Extraction timestamp: 2020-04-06_16:26:32.284
 Detected push destination.
 Content-Type: text/plain; charset=utf-8
 Extraction finished successfully
-
+```
 Wenn wir nun eine Pull-Destination wie z.B. Webservice mit JSON-Format nehmen, dann zeigt die Standardausgabe die extrahierten Daten im JSON-Format: 
+```
 [
 {"KUNNR":"0000000001","LAND1":"US","NAME1":"B2B Demo Peakboard","ORT01":"PHILADELPHIA"},
 {"KUNNR":"0000000002","LAND1":"DE","NAME1":"Wett","ORT01":"Walldorf"}
 ]
+```
 
 ### Extraktion asynchron aufrufen
 Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter
 -o wait=false 
 kann der Aufruf asynchron erfolgen, wie z.B. im folgenden Befehl:
+```
 "C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers2 -o wait=false 1>>false_output1.txt 2>>false_output2.txt 
+```
 In diesem Fall wird der Zeitstempel der Ausführung in die Standardausgabe geschrieben:
+```
 2020-04-06_16:13:19.926 
+```
 Mit diesem Zeitstempel kann dann auf das entsprechende Log über die entsprechende URL zugegriffen werden: 
+```
 http://localhost:8065/log/?req_type=extraction&name=sapcustomers2&timestamp=2020-04-06_16:17:10.121 
-
+```
 
 ### Aufruf einer URL direkt über HTTP(S)
 Alternativ können Sie dann direkt die URL einer Extraktion im Browser oder in einem entsprechenden Skript oder Programm aufrufen. Als Ergebnis wird dasselbe wie bei der Standardausgabe des Kommandozeilenprogrammes geliefert. 
