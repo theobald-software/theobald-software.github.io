@@ -1,13 +1,13 @@
 ---
 ref: xu-automation-02
 layout: page
-title: Extraktion mit Power Shell ausführen
+title: Executing Extractions with Power Shell
 description: Power Shell
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
 weight: 1
-lang: de_DE
+lang: en_EN
 ---
 
 

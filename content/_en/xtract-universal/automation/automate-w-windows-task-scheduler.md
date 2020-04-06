@@ -1,13 +1,13 @@
 ---
 ref: xu-automation-03
 layout: page
-title: Extraktion mit Windows Task Scheduler Automatisieren
+title: Automating Extractions with Windows Task Scheduler
 description: Windows Task Scheduler
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
 weight: 3
-lang: de_DE
+lang: en_EN
 ---
 
 
