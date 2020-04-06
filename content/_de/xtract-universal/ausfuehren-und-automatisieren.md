@@ -159,7 +159,9 @@ Wenn wir nun eine Pull-Destination wie z.B. Webservice mit JSON-Format nehmen, d
 
 ### Extraktion asynchron aufrufen
 Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter
+```
 -o wait=false 
+```
 kann der Aufruf asynchron erfolgen, wie z.B. im folgenden Befehl:
 ```
 "C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers2 -o wait=false 1>>false_output1.txt 2>>false_output2.txt 
