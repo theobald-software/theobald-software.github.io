@@ -21,8 +21,8 @@ Die Funktionalitäten von von den beiden Versionen sind dieselben. Daher spreche
 ### Installation der Kommandozeile
 
 xu.exe / xu.elf sind eigenständige Programme, die keine Installation benötigen. Die xu.exe / xu.elf Datei kann einzeln in beliebige Verzeichnisse kopiert und dort ausgeführt werden. 
-xu.exe finden Sie im Installationsverzeichnis (Standardmäßig unter: C:\Program Files\XtractUniversal).
-Die Linux Version können Sie unter folgendem Link herunterladen.
+Die Windows-Version xu.exe finden Sie im Installationsverzeichnis (Standardmäßig unter: C:\Program Files\XtractUniversal).
+Die Linux Version können Sie unter folgendem Link herunterladen:
 https://cdn-files.theobald-software.com/download/XtractUniversal/xu.elf.tar.gz 
 
 ### Hilfe anzeigen
@@ -62,6 +62,8 @@ xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000
 xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e
 xu.exe -n MaterialText -a
 ```
+#### Vordefinierte & eigens definierte Parameter
+Vordefinierte bzw. eigens definierte Parameter finden Sie im Run-Dialog unter dem Reiter Extraction bzw. Custom. Diese Parameter können Sie mit der Option -o überschreiben.
 
 #### URL als Parameter (nicht mehr empfohlen)
 Die Möglichkeit, eine URL als einzigen Parameter mitzugeben, existiert nur aus Rückwärtskompatibilitätsgründen und wird nicht empfohlen:
@@ -73,6 +75,11 @@ Führt eine Extraktion basierend auf dem <url> aus dem "Run"-Dialog des Xtract U
 Beispiel:
 ```
 xu.exe "http://localhost:8065/?name=MaterialText"
+```
+
+Wenn Sie Parameter nutzen, stellen Sie ein Escape-Zeichen ^ vor dem & Zeichen.
+```
+C:\Program Files\XtractUniversal\xu.exe http://localhost:8065/?name=MyExtractionName^&Variable=Value
 ```
 
 #### Standardausgabe & Standardfehlerausgabe
