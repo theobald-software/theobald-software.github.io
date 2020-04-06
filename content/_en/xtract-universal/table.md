@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-09
+ref: xtract-universal-10
 layout: page
 title: Table
 description: Table
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: table
 permalink: /:collection/:path
-weight: 9
+weight: 10
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=tablejoin
 ---

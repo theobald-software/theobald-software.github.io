@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-11
+ref: xtract-universal-12
 layout: page
 title: BAPIs and Function Modules
 description: BAPIs and Function Modules
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: bapis-and-function-modules
 permalink: /:collection/:path
-weight: 11
+weight: 12
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=bapis-and-function-modules
 ---

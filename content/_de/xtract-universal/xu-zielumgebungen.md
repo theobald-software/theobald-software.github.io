@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-05
+ref: xtract-universal-06
 layout: page
 title: Zielumgebungen
 description: Zielumgebungen
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: xu-zielumgebungen
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
 ---

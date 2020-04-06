@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-05
+ref: xtract-universal-06
 layout: page
 title: Destinations
 description: Destinations
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: xu-destinations
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---

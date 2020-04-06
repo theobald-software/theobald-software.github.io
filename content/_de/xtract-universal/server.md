@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-06
+ref: xtract-universal-07
 layout: page
 title: Server
 description: Server
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: server
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
