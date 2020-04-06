@@ -27,8 +27,8 @@ https://cdn-files.theobald-software.com/download/XtractUniversal/xu.elf.tar.gz
 
 ### Hilfe anzeigen
 Eine Kurzdokumentation zur Verwendung kann mit dem Parameter -h angezeigt werden:
-xu.exe -h
-xu.elf -h
+* xu.exe -h
+* xu.elf -h
 
 ### Eine Extraktion starten
 xu.exe verbindet sich zu einem XU Service und startet dort eine Extraktion mit optionalen Laufzeitparametern. Der XU Service, die Extraktion, sowie die Laufzeitparameter werden per über Kommandozeilenparameter angegeben.
