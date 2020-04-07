@@ -22,9 +22,7 @@ lang: en_GB
 ![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module.png){:class="img-responsive"}
 3. Select the necessary BAPI from the search results (6). 
 4. Click **[OK]** (7) to confirm the selection.
-5. The Xtract BAPI window displays the SAP metadata and the parameters of the selected BAPI. 
-BAPI can have up to four [parameter types](./parameters): Imports, Exports, Changing and Tables.
+5. The Xtract BAPI window displays the parameters of the selected BAPI. 
+BAPI can have up to four [parameter types](./parameters): Imports, Exports, Changings and Tables.
 ![BAPI-Parameters](/img/content/xfa/BAPI-Parameters.png){:class="img-responsive"}
 
-{: .box-note }
-**Note:** the value of a scalar import parameter and changing parameter can be set either with a constant value or dynamically with a parameter (see [Edit Parameters](./parameters#edit-parameters)). 
