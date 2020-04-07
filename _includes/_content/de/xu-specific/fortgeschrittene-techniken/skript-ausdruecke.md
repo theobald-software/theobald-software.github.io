@@ -20,8 +20,8 @@ Beispiele:
 Script-Ausdrücke können sowohl für die [Where-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
 
 {: .box-note }
-**Note:** Die Werte bei der Verwendung einer WHERE-Bedingung sind stets in einfachen Anführunsgstrichen anzugeben.
-**Syntax:**```[field_name][Leerzeichen][operator][Leerzeichen]'#[Skript-Ausdruck]#'```
+**Note:** Die Werte bei der Verwendung einer WHERE-Bedingung sind stets in einfachen Anführunsgstrichen anzugeben.<br>
+**Syntax:**```[field_name][Leerzeichen][operator][Leerzeichen]'#[Skript-Ausdruck]#'```<br>
 **Beispiel:** ```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("d")}#'```
 
 ### IF-Abfrage
