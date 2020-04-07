@@ -1,23 +1,28 @@
 
-Eine Formel wird in C#.NET-ähnlicher Syntax geschrieben und muss mit #{ anfangen und #} enden.<br>
+Eine Formel wird in C#.NET-ähnlicher Syntax geschrieben und muss mit Raute Symbol (#) beginnen und enden.<br>
 Grundlegende .NET Typen und die entsprechenden Operationen aus dem System-Namensraum der .NET-Umgebung sowie Verkettungen werden standardmäßig unterstützt. 
 
 Beispiele:
 
 | Beschreibung                           | Eingabe                                                                         | Ausgabe              |
 |---------------------------------------|-------------------------------------------------------------------------------|---------------------|
-| Jetziges Datum und Zeitstempel            |``` #{ DateTime.Now}#```                                                             | 23.07.2013 10:17:37 |
-| Datum vor 5 Tagen                       | ```#{ DateTime.Now.AddDays(-5).ToString("d") }#```                                 | 18.07.2013          |
-| Jetziges Datum                          | ```#{ DateTime.Now.ToShortDateString() }#```                                        | 23.07.2013          |
-| Jetziges Datum im SAP-Format            | ```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | 20130723            |
-| Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | 20130101            |
-| Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | 20130101            |
-| Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | 20130101            |
+| Jetziges Datum und Zeitstempel            |``` '#{ DateTime.Now}#'```                                                             | DD.MM.YYYY HH:MM:SS |
+| Datum vor 5 Tagen                       | ```'#{ DateTime.Now.AddDays(-5).ToString("d") }#'```                                 | DD.MM.YYYY          |
+| Jetziges Datum                          | ```'#{ DateTime.Now.ToShortDateString() }#'```                                        | DD.MM.YYYY          |
+| Jetziges Datum im SAP-Format            | ```'#{ DateTime.Now.ToString("yyyyMMdd") }#'```                                       | yyyyMMdd            |
+| Jetziges Jahr mit "0101" verketten | ```'#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#'```                     | yyyy0101            |
+| Jetziges Jahr mit "0101" verketten | ```'#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#'```                    | yyyy0101            |
+| Jetziges Jahr mit "0101" verketten | ```'#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#'``` | yyyy0101            |
 
 
 ### Verwendung
 
 Script-Ausdrücke können sowohl für die [Where-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
+
+{: .box-note }
+**Note:** Die Werte bei der Verwendung einer WHERE-Bedingung sind stets in einfachen Anführunsgstrichen anzugeben.
+**Syntax:**```[field_name][Leerzeichen][operator][Leerzeichen]'#[Skript-Ausdruck]#'```
+**Beispiel:** ```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("d")}#'```
 
 ### IF-Abfrage
 
