@@ -9,13 +9,13 @@ Beispiele:
 
 | Beschreibung                           | Eingabe                                                                         | Ausgabe              |
 |---------------------------------------|-------------------------------------------------------------------------------|---------------------|
-| Jetziges Datum und Zeitstempel            |```'#{ DateTime.Now}#'```                                                             | DD.MM.YYYY HH:MM:SS |
-| Datum vor 5 Tagen. Wenn heutiges Datum 10., dann wird 05. ausgegeben.| ```'#{ DateTime.Now.AddDays(-5).ToString("d") }#'```     | DD.MM.YYYY          |
-| Jetziges Datum                          | ```'#{ DateTime.Now.ToShortDateString() }#'```                                        | DD.MM.YYYY          |
-| Jetziges Datum im SAP-Format            | ```'#{ DateTime.Now.ToString("yyyyMMdd") }#'```                                       | yyyyMMdd            |
-| Jetziges Jahr mit "0101" verketten | ```'#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#'```                     | yyyy0101            |
-| Jetziges Jahr mit "0101" verketten | ```'#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#'```                    | yyyy0101            |
-| Jetziges Jahr mit "0101" verketten | ```'#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#'``` | yyyy0101            |
+| Jetziges Datum und Zeitstempel            |```#{ DateTime.Now}#```                                                             | DD.MM.YYYY HH:MM:SS |
+| Datum vor 5 Tagen. Wenn heutiges Datum 10.01.2020, dann wird 05.01.2020 ausgegeben.| ```#{ DateTime.Now.AddDays(-5).ToString("d") }#```     | DD.MM.YYYY          |
+| Jetziges Datum                          | ```#{ DateTime.Now.ToShortDateString() }#```                                        | DD.MM.YYYY          |
+| Jetziges Datum im SAP-Format            | ```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | yyyyMMdd            |
+| Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | yyyy0101            |
+| Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101            |
+| Jetziges Jahr mit "0101" verketten | ```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101            |
 
 
 ### Verwendung
