@@ -16,12 +16,12 @@ Examples:
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
 
-### Using Scripted Expressions
+### Using Script Expressions
 
-Scripted expressions can be used both for the [where-condition](../table/where-clause) of a table and in the destination settings using [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql)(Xtract Universal exapmle).
+Script expressions can be used both for the [WHERE-condition](../table/where-clause) of a table and in the destination settings using [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal example).
 
 {: .box-note }
-**Note:** The values when using a WHERE condition must always be given in single quotation marks.<br>
+**Note:** Using a WHERE-condition the value must be entered in single quotation marks.<br>
 *Syntax:*```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
 *Example:*```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("d")}#'```
 
