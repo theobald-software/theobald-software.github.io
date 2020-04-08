@@ -6,7 +6,7 @@ description: Run
 product: xtract-for-alteryx
 parent: bapi
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 ---
 The following screenshot shows the data of the table ADDRESSDATA, which has the output type *Pipeline*.

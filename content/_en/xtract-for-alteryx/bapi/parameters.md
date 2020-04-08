@@ -1,5 +1,5 @@
 ---
-ref: xfa-bapi-scalar
+ref: xfa-bapi-param
 layout: page
 title: BAPI Parameters
 description: BAPI Parameters
@@ -26,7 +26,7 @@ Each Import, Export and Changings parameter can have one of the following repres
 - a table - an array of structures of the same type
 
 {: .box-note }
-**Note:** setting input values differs for scalar fields, structures and tables. See ....#####
+**Note:** See section [Setting Input and Output Values](./input-output-values) for more details.
 
 #### Structures
 
@@ -36,8 +36,9 @@ Structures are named as follows, depending on the data object type:
 - Flat structures contain components with elementary data types (e.g., char, integer, float) and assume scalar values.
 - Nested structures contain at least one substructure. All components and sub-components are flat.
 - Deep structures contain at least one deep component, such as table, at any nesting level.
-![Bapi-Structures](/img/content/xfa/BAPI-Structures.png){:class="img-responsive"}
-<!--neues Bild mit Metadaten von Structure-->
+
+![Bapi-Structures](/img/content/xfa/BAPI-structure.png){:class="img-responsive"}
+
 
 ### Imports
 **Imports** represent the input values sent from the client to SAP. Within the tab **Imports** you can define import parameters that can be presented as scalar values or structures.<br>
@@ -57,7 +58,6 @@ To use the filtering function, enter text in the headers of the columns **Name**
 Within the tab **Changing** you can define import and export parameters. Changing combines importing and exporting functions.
 
 
-
 ### Tables
 
 **Tables** contain parameters in a table structure consisting of multiple rows. Tables can be used for input and output.
@@ -66,54 +66,13 @@ Within the tab **Tables** you can define table parameters for importing and expo
 ![BAPI table](/img/content/xfa/bapi_table.png){:class="img-responsive"}<br>
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
-Marking the checkbox in the output column (1) determines the table used for output.<br> 
+#### Navigating in the Tables tab
 
 {: .box-note }
 **Note:** Only **five** tables are available for parallel exporting.
 
-
-Drop-down lists (2) in the column value show the defined tables in your Alteryx workflow that can be used as an input table (see [Setting an input value]()).
-
-To clear the values, click **[X]**. 
-Click **Search** (glasses symbol) (3) to display the metadata of the selected table including the name and the data type of all fields.
-
-
-
-### Setting an input value
-
-#### Scalar field
-Scalar fields for inputs are usually set using the following two options:
-- a static constant value (e.g., 0987654321) <!--bild einfügen-->
-- a dynamic value set at run-time using a parameter (see [Edit Parameters](./parameters#edit-parameters)).
-
-#### Structure 
-When using a structure, a value for each scalar field can be set similarly to scalar field. Setting a value or a parameter for the whole structure is not possible.
-
-When a structure is available, click **[Edit Structures]** to assign structure elements (i.e. fields).
-![BAPI table fields](/img/content/xfa/bapi_table_sap_fields.png){:class="img-responsive"}<br>
-
-#### Table
-Only a table can be used as input for a table parameter. Fields in the input table are mapped to fields in the SAP table with the same name. 
-Values in the fields are expected to have a compatible data type. Fields with names that cannot be mapped, are ignored.
-Drop-down lists (2) in the column value show the defined tables in your Alteryx workflow that can be used as an input table.
-
-{: .box-warning }
-**Warning!** If the data types of the input table values are not compatible with the SAP tables and the value cannot be converted, an error occurs. 
-
-
-### Edit Parameters
-The function **Edit Parameters** allows setting a dynamic value for an added parameter at run-time.
-Use the function **Edit Parameters** to define parameters that can be used as placeholders for data selections. These placeholders need to be populated with actual values at run-time.
-
-1. To display editing function for the parameters, click **Edit Parameters**. The window "Edit Runtime Parameters" opens.<br> 
-![BAPI add parameters](/img/content/xfa/bapi-add-parameter.png){:class="img-responsive"}<br> 
-2. Click **[Add]** to create a new parameter. <br>
-**Tip:** Parameter0..-n is the default naming for the added parameters. You can enter a name of your choice.
-3. Click on the drop-down menu and assign one of the following data types to a parameter. 
-- String: This data type can be used for any type of SAP selection field.
-- Integer: This data type can be used for numeric SAP selection fields.
-- Flag: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value. <br> The data types of the parameters must correspond with or be convertible to SAP data types. 
-4. Click **[OK]** to confirm.
-5. If there are defined parameters, input field icon switches to the parameter icon. <br>
-Clicking the icons switches the option between entering static input values and using defined dynamic parameters.<br>
-![BAPI select parameters](/img/content/xfa/bapi-select-parameters.png){:class="img-responsive"}<br> 
+1. Mark the checkbox in the output column (1) to determine the table used for output.<br> 
+2. Drop-down lists (2) in the column value show the defined tables in your Alteryx workflow that can be used as an input table (see [Setting an input value](./input-output-values)). <br>
+3. Click **[X]** (3) to clear the values. <br> 
+4. Click **Search** (glasses symbol) (4) to display the metadata of the selected table including the name and the data type of all fields.
+![BAPI meta-data](/img/content/xfa/bapi_table_sap_fields.png){:class="img-responsive"}<br>

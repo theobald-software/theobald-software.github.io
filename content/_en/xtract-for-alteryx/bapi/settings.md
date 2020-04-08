@@ -6,7 +6,7 @@ description: Settings
 product: xtract-for-alteryx
 parent: bapi
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 ---
 
