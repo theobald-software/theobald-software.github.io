@@ -9,7 +9,7 @@ Beispiele:
 
 |Eingabe|Ausgabe|Beschreibung|
 |:---|:---|:---|
-|```#{ DateTime.Now}#```  DD.MM.YYYY HH:MM:SS | Jetziges Datum und Zeitstempel  |
+|```#{ DateTime.Now}#``` | DD.MM.YYYY HH:MM:SS | Jetziges Datum und Zeitstempel  |
 | ```#{ DateTime.Now.AddDays(-5).ToString("d") }#```     							  | DD.MM.YYYY          | Datum vor 5 Tagen. Wenn heutiges Datum 10.01.2020, dann wird 05.01.2020 ausgegeben.|
 | ```#{ DateTime.Now.ToShortDateString() }#```                                        | DD.MM.YYYY        | Jetziges Datum  |
 | ```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | yyyyMMdd            | Jetziges Datum im SAP-Format |
@@ -53,7 +53,7 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 | ```#{ Extraction.RowsCount }#``` | Anzahl der extrahierten Datensätze |
 | ```#{Extraction.RunState}#``` | Status der Extraktion (Running, FinishedNoErrors, FinishedErrors) |
 | ```#(int)Extraction.RunState}#``` | Status der Extraktion als Zahl (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors |
-| ```#{Extraction.Timestamp}#``` | | Zeitstempel der Extraktion |
+| ```#{Extraction.Timestamp}#``` | Zeitstempel der Extraktion |
 
 Sehen Sie auch das [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) für die Verwendung von definierten Ausdrücken mittels Custom-SQL in den Destinationseinstellungen.
 
