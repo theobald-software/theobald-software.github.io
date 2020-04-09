@@ -39,9 +39,14 @@ Setzen Sie das Feld Add arguments (optional) auf:
 
 Klicken Sie auf Weiter.
 
+![xu-wts-command](/img/content/xu/automation/xu-command-task-scheduler.png){:class="img-responsive"}
+
 8. Überprüfen Sie die Zusammenfassung und klicken Sie auf Fertigstellen.
 
 Jetzt wird der Task geplant. Sie können mit der rechten Maustaste auf den Task klicken und Ausführen wählen, um sie sofort auszuführen.
+
+![xu-wts-command](/img/content/xu/automation/task_run.jpg){:class="img-responsive"}
+
 
 Wenn Sie möchten, dass der Task mehr als eine Extraktion ausführt, klicken Sie auf Bearbeiten und gehen Sie zur Registerkarte Aktionen und erstellen Sie neue Aktionen wie in Schritt 7 beschrieben.
 
