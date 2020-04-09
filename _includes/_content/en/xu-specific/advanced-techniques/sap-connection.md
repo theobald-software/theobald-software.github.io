@@ -14,9 +14,9 @@
 - Language - the logon language for the SAP system, e.g., EN for English or DE for German.
 4. Choose an authentication method in the subsection **Authentication** (4). The following authentication modes are supported:
     -  SAP username and password (system or dialogue user)
-    - [SNC (Secure Network Communication)](./sap-single-sign-on/sso-with-kerberos-snc) with username and password
-    - [SNC with SSO](./sap-single-sign-on) (Single Sign On)
-    - [Log On Ticket](./sap-single-sign-on/sso-with-sap-logon-ticket) (available only for some connectors, e.g., ERPConnect, ERPConnect Services and Xtract Universal)
+    - [SNC (Secure Network Communication)](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) with username and password
+    - [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On)
+    - [Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) (available only for some connectors, e.g., ERPConnect, ERPConnect Services and Xtract Universal)
 
 5. In the subsection **Miscellaneous** (5) select an [RFC library](#rfc-libraries) and optionally, define the [trace directory](#trace-directory).
 
