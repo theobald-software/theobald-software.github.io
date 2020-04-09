@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-05
+ref: xu-introduction-07
 layout: page
 title: Evaluation
 description: Evaluation
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 7
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=evaluation
 ---
