@@ -33,7 +33,7 @@ In the *Joins* tab, click **Edit** (pencil icon) to display joining options. <br
 In the depicted example a left outer join on tables MARA (left table) and MAKT (right table) on the field MATNR is performed. A WHERE clause on MAKT~SPRAS = 'EN' is specified.<br>
 ![Table-Join-Connections](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 
-*Left Table*, *Right Table*, *Join Type* and *Join Mapping* are preset with default values. They can be modified as required. <br>
+*Left Table*, *Right Table*, *Join Type* and *Join Mapping* are preset with default values. They can be modified as required. The *Join Mapping* is based on the foreign key relationship of the joined tables.<br>
 - Click **[Add]** to extend the join condition to more fields. 
 - Click **Remove** (trash can icon) to remove existing joins. 
 - Join additional tables in the tab *Tables and Fields*. 
@@ -42,7 +42,7 @@ In the depicted example a left outer join on tables MARA (left table) and MAKT (
 **Recommendation**: To avoid poor extraction performance, do not join more than five tables.
 
 {: .box-tip }
-**Tip**: Different tables can have identical field names. Defining a join condition based on the identical field names is not always delivers the expected result (e.g., VBAK~VBELN <> LIPS~VBELN).
+**Tip**: Different tables can have identical field names. Defining a join condition based on the identical field names not always delivers the expected result (e.g., VBAK~VBELN <> LIPS~VBELN).
 Make sure the fields you use in a join condition contain the same content/data.
 
 #### Auto Mapping Function (optional)
@@ -53,7 +53,7 @@ The **[Auto-map]** button deletes existing join conditions and performs a new fi
 
 
 
-### Joining three tables
+### Joining three Tables
 Example of a join with a third table MARC:
 
 ![Table-Join-Verknüpfungen2](/img/content/join_verknüpfungen_02.png){:class="img-responsive"}
