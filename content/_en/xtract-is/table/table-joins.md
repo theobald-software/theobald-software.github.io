@@ -10,4 +10,9 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=table-join
 ---
+
+### Join Functionality
+
+As of version 5.x. table joins can be defined in the *Joins* tab of the Xtract Table component. For versions older than 4.x, see the section on the separate [Table Join](../table-join) component. <br>
+![Table join ](/img/content/table-join-tab.png){:class="img-responsive"}
 {% include _content/en/tables/table-joins.md  %}
