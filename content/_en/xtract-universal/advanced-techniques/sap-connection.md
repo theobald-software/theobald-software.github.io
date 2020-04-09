@@ -1,12 +1,12 @@
 ---
-ref: xu-advanced-techniques-05
+ref: xu-xu-introduction-04
 layout: page
 title: SAP Connection
 description: SAP Connection
 product: xtract-universal
-parent: advanced-techniques
+parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
 ---
