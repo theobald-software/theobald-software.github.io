@@ -173,7 +173,7 @@ kann der Aufruf asynchron erfolgen, wie z.B. im folgenden Befehl:
 ```
 "C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers2 -o wait=false 1>>false_output1.txt 2>>false_output2.txt 
 ```
-In diesem Fall wird der Zeitstempel der Ausführung in die Standardausgabe geschrieben:
+In diesem Fall wird der Zeitstempel der Ausführung zurückgegeben:
 ```
 2020-04-06_16:13:19.926 
 ```
