@@ -1,47 +1,64 @@
-The *Join* functionality allows to join many tables (and views) on the SAP side and to extract the result. <br>
-Possible scenarios would be to join tables for header and item data (for example, a purchase order or invoice) or tables for master data and texts (for example, a material). <br>
-To do this, the corresponding SQL command is generated dynamically and executed on the SAP server. <br>
+The *Join* functionality of the Xtract Table component allows joining two or more tables and extract the result of the join. 
+To perform the extraction the corresponding SQL command is generated dynamically and the join is executed on the SAP server. <br>
 
-The prerequisite for use is the installation of function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) in SAP. <br> 
+Possible scenarios can be to join tables for header and item data or tables for master data and texts. 
 
-*Note*: Joins of cluster and pool tables are not supported, but can be extracted as individual tables.
+Supported join types:
+- Inner Join
+- Left Outer Join, also referred to as *Left Join*.
 
-To define table joins, follow the steps below:
+For more information on join types see [SAP Online help](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
 
-**Define Tables** <br>
 
-In the example, the tables MARA and MAKT are to be joined. To do this, add the two tables using the *Tables* dialog. 
+{: .box-note }
+**Note**: As a prerequisite for using the table join, function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) needs to be available in SAP. <br> 
 
-![Table join tables](/img/content/join_tabellen_auswählen.png){:class="img-responsive"}
+{: .box-note }
+**Note**: Joining of cluster or pool tables is not supported. Cluster or pool tables need to be extracted individually and joined in the destination.
 
-**Select fields** <br>
+### Joining two Tables
+The following example shows, how tables MARA and MAKT can be joined.
 
-Then select the required fields in the tables. The aggregation functions described under [Tables and fields](./tables-and-fields) are available for selection. 
+![Table join steps](/img/content/join_steps_1.png){:class="img-responsive"}
 
-Here is an example of how to return the number of language fields (SPRAS) in table MAKT.   
+1. In the tab *Tables and Fields*, click **[Add]** (1) to add two tables (e.g., MARA and MAKT).
+2. Select both tables on the left and mark the fields, which you want to extract (2). 
+3. Switch to the *Joins* tab to define the join condition. A Join condition is automatically preset. The Join condition is based on the foreign key relationship of the joined tables, 
+4. Optional: Switch to the *WHERE clause* tab and specify a [WHERE clause](./where-clause).
 
-![Table join fields](/img/content/join_felder_auswählen.png){:class="img-responsive"}
+{: .box-note }
+**Note**: Pay attention to the [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE clause.
 
-**Define links** <br>
-
-If you switch to the *Joins* dialog, an Inner Join between the two tables is already predefined. The terms *Inner Join* and *Outer Join* are explained [here](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
-Click on the pencil icon for details. In the example the table MARA (left table) was merged with the table MAKT (right table) using the fields MATNR and MANDT with the join type "Inner". <br>
-The settings and links offered are only default values. All components, that is, *Left Table*, *Right Table*, *Join Type* and *Join Mapping* can be changed subsequently. <br>
-- To add more field links, click *Add*. 
-- Existing links can be removed with *Remove* (trash can icon). 
-- More tables can be added using the *Tables and Fields* dialog. We recommend that you do not join more than five tables.    
-
+In the *Joins* tab, click **Edit** (pencil icon) to display joining options. <br>
+In the depicted example a left outer join on tables MARA (left table) and MAKT (right table) on the field MATNR is performed. A WHERE clause on *MAKT~SPRAS = 'EN'* is specified.<br>
 ![Table-Join-Connections](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 
-Example of a join with a third table:
+*Left Table*, *Right Table*, *Join Type* and *Join Mapping* are preset with default values. They can be modified as required. The *Join Mapping* is based on the foreign key relationship of the joined tables.<br>
+- Click **[Add]** to extend the join condition to more fields. 
+- Click **Remove** (trash can icon) to remove existing joins. 
+- Join additional tables in the tab *Tables and Fields*. 
+
+{: .box-tip }
+**Recommendation**: To avoid poor extraction performance, do not join more than five tables.
+
+{: .box-tip }
+**Tip**: Different tables can have identical field names. Defining a join condition based on the identical field names not always delivers the expected result (e.g., VBAK~VBELN <> LIPS~VBELN).
+Make sure the fields you use in a join condition contain the same content/data.
+
+#### Auto Mapping Function (optional)
+
+The **[Auto-map]** button deletes existing join conditions and performs a new field mapping based on the foreign key relationship of the joined tables. 
+
+![Table-Join-Automapping](/img/content/join_automap.png){:class="img-responsive"}
+
+
+
+### Joining three Tables
+Example of a join with a third table MARC:
 
 ![Table-Join-Verknüpfungen2](/img/content/join_verknüpfungen_02.png){:class="img-responsive"}
 
 ![Table-Join-Verknüpfungen3](/img/content/join_verknüpfungen_03.png){:class="img-responsive"}
 
    
-**Auto mapping function** <br>
 
-The *Auto-map* button deletes existing mapping values and performs a new field mapping of identically named fields. This step is optional and may be necessary, for example, if the reference table is only added at the end.     
-
-![Table-Join-Automapping](/img/content/join_automap.png){:class="img-responsive"}
