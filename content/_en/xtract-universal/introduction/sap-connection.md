@@ -18,5 +18,6 @@ The window "Manage Sources" opens. <br>
 ![XU-Create-Connection-2](/img/content/xu_manage_source.png){:class="img-responsive"}
 
 2. Click **[Add]**. The window "SAP Source Details" opens. <br>
+3. Enter a name of your added connection.
 
 {% include _content/en/xu-specific/advanced-techniques/sap-connection.md %}
