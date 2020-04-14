@@ -11,8 +11,10 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=where-bedingung
 ---
 
-Unter dem Tab *Joins* können in der Komponente ab Version 4.x Tabellen-Joins definiert werden. Für Versionen älter als 4.x beachten Sie den Abschnitt zur separaten [Table Join](../table-join) Komponente. <br>
-
+### Join-Funktionalität
+Ab Xtract Universal Version 4.0.0 können Table Joins in dem Tab *Joins* der Xtract Table-Komponente definiert werden.
+ Für Produktversionen älter als 4.x schauen Sie den Abschnitt über die separate [Table-Join-Komponente](../table-join).
+ 
 {% include _content/de/table/table-joins.md  %}
 
 
