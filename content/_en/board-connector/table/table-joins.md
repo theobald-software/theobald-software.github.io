@@ -12,7 +12,8 @@ lang: en_GB
 
 ### Join Functionality
 
-As of Board Connector version 4.0.0 table joins can be defined in the *Joins* tab of the Xtract Table component. For versions older than 4.x, see the section on the separate [Table Join](../table-join) component. <br>
+As of Board Connector version 4.0.0 table joins can be defined in the *Joins* tab of the Xtract Table component. 
+In product versions older than 5.0.0 the tables are joined using a separate [Table Join]((../table-join)) component.
 ![Table join ](/img/content/table-join-tab.png){:class="img-responsive"}
 {% include _content/en/tables/table-joins.md  %}
 
