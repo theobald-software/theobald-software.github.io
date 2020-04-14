@@ -1,5 +1,5 @@
 ---
-ref: xu-xu-introduction-04
+ref: xu-introduction-04
 layout: page
 title: SAP Connection
 description: SAP Connection
