@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-05
+ref: bc-introduction-04
 layout: page
 title: SAP Connection
 description: SAP Connection
 product: board-connector
-parent: advanced-techniques
+parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=sap-connection
 ---	

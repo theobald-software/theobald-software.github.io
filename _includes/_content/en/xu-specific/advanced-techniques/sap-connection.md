@@ -62,7 +62,7 @@ Select a library and optionally define a trace directory.
 
 #### RFC libraries
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system.  
-There are two options for using RFC libraries in Xtract IS:
+There are two options for using RFC libraries:
 - Use classic RFC library (librfc32.dll)
 - Use NetWeaver RFC libraries (sapnwrfc.dll)
 

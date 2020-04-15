@@ -6,7 +6,7 @@ description: Maintenance
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 ---
 

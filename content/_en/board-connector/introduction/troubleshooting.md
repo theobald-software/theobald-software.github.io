@@ -6,7 +6,7 @@ description: Troubleshooting
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 ---
 

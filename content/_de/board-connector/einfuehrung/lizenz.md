@@ -6,7 +6,7 @@ description: Lizenz
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 ---
 
