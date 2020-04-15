@@ -23,7 +23,7 @@ The following example shows, how tables MARA and MAKT can be joined.
 
 1. In the tab *Tables and Fields*, click **[Add]** (1) to add two tables (e.g., MARA and MAKT).
 2. Select both tables on the left and mark the fields, which you want to extract (2). 
-3. Switch to the *Joins* tab to define the join condition. A Join condition is automatically preset. The Join condition is based on the foreign key relationship of the joined tables, 
+3. Switch to the *Joins* (3) tab to define the join condition. A Join condition is automatically preset. The Join condition is based on the foreign key relationship of the joined tables, 
 4. Optional: Switch to the *WHERE clause* tab and specify a [WHERE clause](./where-clause).
 
 {: .box-note }

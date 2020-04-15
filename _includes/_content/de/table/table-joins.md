@@ -7,7 +7,7 @@ Unterstützte Join-Typen:
 - Inner Join
 - Left Outer Join, auch als *Left Join* bezeichnet.
 
-Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Hilfe] (https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true).
+Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Hilfe](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true).
 
 {: .box-note }
 **Hinweis**: Als Voraussetzung für die Verwendung von Table Join muss der Funktionsbaustein [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) in SAP verfügbar sein. <br> 
@@ -23,7 +23,7 @@ Das folgende Beispiel zeigt, wie die Tabellen MARA und MAKT verknüpft werden k�
 
 1. Klicken Sie im Tab *Tables and Fields* auf **[Add]** (1), um zwei Tabellen (z.B. MARA und MAKT) hinzuzufügen.
 2. Wählen Sie beide Tabellen auf der linken Seite aus und markieren Sie die Felder, die Sie extrahieren möchten (2). 
-3. Wechseln Sie zum Tab *Joins*, um die Join-Bedingung zu definieren. Eine Join-Bedingung ist automatisch voreingestellt. Die Join-Bedingung basiert auf der Fremdschlüsselbeziehung der beteiligten Tabellen.
+3. Wechseln Sie zum Tab *Joins* (3), um die Join-Bedingung zu definieren. Eine Join-Bedingung ist automatisch voreingestellt. Die Join-Bedingung basiert auf der Fremdschlüsselbeziehung der beteiligten Tabellen.
 4. Optional: Wechseln Sie zum Tab *WHERE clause* und geben Sie eine [WHERE-Bedingung](./where-bedingung) ein.
 
 {: .box-note }
