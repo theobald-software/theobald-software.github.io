@@ -56,6 +56,10 @@ The following authentication modes are supported:
 ![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
 You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) for authentication (available only for some connectors, e.g., ERPConnect, ERPConnect Services and Xtract Universal).
 
+{: .box-note }
+**Note:** when marking the checkbox **Require SAP credentials to be explicitly supplied for execution** the SAP credentials are not cached. This option is only available 
+using *Plain* or *SNC* authentication method and running an extraction in browser. During an extraction a window pops-up and the user is required to enter SAP credentials for every extraction. 
+
 
 ### Miscellaneous
 Select a library and optionally define a trace directory.
