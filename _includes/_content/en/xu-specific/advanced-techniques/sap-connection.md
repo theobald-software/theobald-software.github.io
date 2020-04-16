@@ -49,9 +49,9 @@ See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01
 
 ### Authentication
 The following authentication methods are supported:
--  Plain - SAP username and password (system or dialogue user)
-- [SNC (Secure Network Communication)](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) with username and password
-- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On)
+-  Plain (1) - SAP username and password (system or dialogue user)
+- [SNC (Secure Network Communication)](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) (2) with username and password
+- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On)(3)
 	
 ![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
 You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) for authentication (available only for several connectors, e.g., ERPConnect, ERPConnect Services, Xtract Universal and Board Connector).
