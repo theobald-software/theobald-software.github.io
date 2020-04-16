@@ -10,7 +10,7 @@ Unterstützte Join-Typen:
 Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Hilfe](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true).
 
 {: .box-note }
-**Hinweis**: Als Voraussetzung für die Verwendung von Table Join muss der Funktionsbaustein [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) in SAP verfügbar sein. <br> 
+**Hinweis**: Als Voraussetzung für die Verwendung von Table Join muss der Funktionsbaustein [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP verfügbar sein. <br> 
 
 {: .box-note }
 **Hinweis**: Das Joinen von Cluster- oder Pool-Tabellen wird nicht unterstützt. Cluster- und Pool-Tabellen müssen einzeln extrahiert und im Datenziel miteinander verknüpft (gejoint) werden.
@@ -27,7 +27,7 @@ Das folgende Beispiel zeigt, wie die Tabellen MARA und MAKT verknüpft werden k�
 4. Optional: Wechseln Sie zum Tab *WHERE clause* und geben Sie eine [WHERE-Bedingung](./where-bedingung) ein.
 
 {: .box-note }
-**Hinweis**: Achten Sie bei der Angabe einer WHERE-Bedingung auf die Einschränkungen bei [WHERE-Bedingung](./where-clause#where-clause#where-clause_restrictions).
+**Hinweis**: Achten Sie bei der Angabe einer WHERE-Bedingung auf die Einschränkungen bei [WHERE-Bedingung](./where-bedingung#einschränkungen-bei-where-bedingungen).
 
 Klicken Sie in dem Tab *Joins* auf **Edit** (Bleistift-Symbol), um die Join-Optionen anzuzeigen. <br>
 Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen MARA (linke Tabelle) und MAKT (rechte Tabelle) auf dem Feld MATNR durchgeführt. Es wird eine WHERE-Bedingung *MAKT~SPRAS = 'EN'* spezifiziert.<br>
