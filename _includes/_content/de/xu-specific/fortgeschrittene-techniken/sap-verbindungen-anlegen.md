@@ -52,11 +52,11 @@ Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpd
 ### Authentication 
 Die folgenden Authentifizierungsmethoden werden unterstützt:
 -  Plain - SAP-Benutzername und Passwort (System- oder Dialogbenutzer)
-- [SNC (Secure Network Communication)](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) mit einem Benutzernamen und einem Passwort
-- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On)
+- [SNC (Secure Network Communication)](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc) mit einem Benutzernamen und einem Passwort
+- [SNC with SSO](../fortgeschrittene-techniken/sap-single-sign-on) (Single Sign On)
 	
 ![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
-Zusätzlich können Sie auch [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services, Xtract Universal und Board Connector).
+Zusätzlich können Sie auch [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services, Xtract Universal und Board Connector).
 
 {: .box-note }
 **Hinweis:** beim Markieren des Kästchens **Require SAP credentials to be explicitly supplied for execution** werden die SAP-Anmeldedaten nicht im Cache gespeichert. Diese Option ist nur aktiv bei Verwendung von *Plain* oder *SNC* Authentifizierungsmethoden und beim Ausführen der Extraktion im Browser (Schaltfläche **[Run in Browser]**.
