@@ -11,35 +11,8 @@ lang: de_DE
 ---
 ### SAP-Verbindung anlegen
 
-1. Im Hauptfenster des Xtract Universal Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
-![XU Quelle managen 1](/img/content/server_manage_sources.png){:class="img-responsive"}<br>
-Das Fenster "Manage Sources" wird geöffnet.<br>
-![XU Quelle managen 2](/img/content/xu_manage_source.png){:class="img-responsive"}<br>
+Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Extraktion. Um eine SAP-Verbindung herzustellen, folgen Sie den Schritten beschrieben im Abschnitt [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen) beschrieben vor. 
 
-2. Klicken Sie auf **[Add]**. Das Fenster "SAP Source Details" wird geöffnet.<br>
-![SAP Quelle Details](/img/content/xu/sap_source-details.png){:class="img-responsive"}<br>
-3. Geben Sie im Feld **Name** (1) einen frei wählbaren Verbindungsnamen ein. 
-4. Geben Sie die SAP-Verbindungsdaten ein (2). <br>
-- Um eine Verbindung zu einem Single-Application-Server herzustellen, füllen Sie die Felder **Host** und **System Number** aus. <br>
-- Um eine Verbindung zu einem Message-Server über Load-Balancing herzustellen, füllen Sie die Felder **Message Server**, **Group** und **SID** aus. <br>
-5. Setzen Sie die folgenden Parameter:
-- Mandant (Client) und Sprache (Language) (3)
-- Benutzer (User) und Passwort (Password) (4) <br>
-6. Klicken Sie auf **[Test connection]** (5), um die erfolgreiche Verbindung zu testen. <br>
-Das Bestätigungsfenster wird geöffnet. <br>
-
-{: .box-tip }
-**Tipp:** Wenn Sie die Parameter nicht kennen, schauen Sie in Ihrer SAP-GUI nach oder fragen Sie Ihre SAP-Basis.
-
-Die SAP-Verbindung ist erfolgreich aufgebaut.<br> 
-![XU Verbindung testen 4](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
-
-#### Angelegte SAP-Verbindung überprüfen
-
-1. Im Hauptfenster des Xtract Universal Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
-Das Fenster "Manage Sources" wird geöffnet.<br>
-Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist.<br>
-![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}
 
 ### Extraktion anlegen
 Das folgende Beispiel zeigt die Erstellung einer Extraktion mit der Komponente "SAP Table or View".

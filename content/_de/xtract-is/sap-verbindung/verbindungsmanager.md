@@ -24,11 +24,11 @@ Wenn der Verbindungstest erfolgreich ist, ist die Komponente Xtract IS einsatzbe
 ### SAP Quellsystem (1)
 Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 
-1. Use Single Application Server
+1. Use Single Application Server (Verwendung eines Single Application Servers)
 - **Application server**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
 - **Instance number**: Systemnummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
 
-2. Use Load Balancing Server (message server)
+2. Use Load Balancing Server (message server) (Verwendung eines Load-Balancing / Message-Servers)
 - **System ID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
 - **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
 - **Logon group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*)
@@ -61,7 +61,7 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 ### RFC Bibliotheken (3)
 
 Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem ABAP basierten SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
-Es gibt zwei Möglichkeiten, die RFC-Bibliotheken in Xtract IS zu nutzen:
+Es gibt zwei Möglichkeiten die RFC-Bibliotheken in Xtract IS zu nutzen:
 - Use classic RFC library (librfc32.dll) - Klassische RFC Bibliothek 
 - Use NetWeaver RFC libraries - NetWeaver RFC Bibliothek (sapnwrfc.dll)
 

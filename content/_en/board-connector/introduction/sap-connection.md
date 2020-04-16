@@ -12,7 +12,7 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=sap-connection
 ---	
 
 ### Creating an SAP connection
-1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
+1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**.<br>
 ![BC-Create-Connection-1](/img/content/bc_server_manage_sources.png){:class="img-responsive"} <br>
 The window "Manage Sources" opens. <br>
 ![BC-Create-Connection-2](/img/content/bc_manage_sources.png){:class="img-responsive"}
