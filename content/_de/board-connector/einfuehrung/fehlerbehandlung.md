@@ -6,7 +6,7 @@ description: Fehlerbehandlung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: de_DE
 ---
 

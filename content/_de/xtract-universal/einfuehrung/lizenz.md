@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-04
+ref: xu-introduction-05
 layout: page
 title: Lizensierung
 description: Lizensierung von Xtract Universal
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=lizenz
 ---

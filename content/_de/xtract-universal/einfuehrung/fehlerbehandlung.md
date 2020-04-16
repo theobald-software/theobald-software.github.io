@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-07
+ref: xu-introduction-08
 layout: page
 title: Fehlerbehandlung
 description: Fehlerbehandlung
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=fehlerbehandlung
 ---

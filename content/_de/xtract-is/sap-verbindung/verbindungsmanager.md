@@ -11,6 +11,13 @@ lang: de_DE
 ---
 ### SAP Verbindung herstellen 
 Jede Xtract IS Komponente benötigt einen Xtract IS Connection Manager, um auf das SAP-System zuzugreifen. 
+
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um eine Verbindung zu SAP herzustellen, muss der Zugriff auf allgemeine Berechtigungsobjekte (RFC) verfügbar sein.
+Stellen Sie sicher, dass der Zugriff auf die allgemeinen Berechtigungsobjekte möglich ist. Weitere Informationen finden Sie im Knowledge-Base-Artikel zu [SAP Zugriffsrechten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+
+
 1. Um einen neuen Connection Manager zu erstellen, klicken Sie mit der rechten Maustaste in den Bereich "Solution Explorer" der Connection Manager und wählen Sie **Neue Verbindung**. 
 Das Fenster "Add SSIS Connection Manager" wird geöffnet.
 ![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive"}
@@ -24,16 +31,16 @@ Wenn der Verbindungstest erfolgreich ist, ist die Komponente Xtract IS einsatzbe
 ### SAP Quellsystem (1)
 Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 
-1. Use Single Application Server
+1. Use Single Application Server (Verwendung eines Single Application Servers)
 - **Application server**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
 - **Instance number**: Systemnummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
 
-2. Use Load Balancing Server (message server)
+2. Use Load Balancing Server (message server) (Verwendung eines Load-Balancing / Message-Servers)
 - **System ID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
 - **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
 - **Logon group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*)
 
-Siehe auch SAP Online-Help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+Siehe auch SAP Online-Help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm.
 
 
 #### Zugriff über SAP-Router
@@ -42,7 +49,7 @@ Wenn Sie auf das SAP-System (Application-Server oder Message-Server) über einen
 Beispiel: <br>
 Wenn der Anwendungsserver "hamlet" ist und der Router-String "/H/lear.theobald-software.com/H/" lautet, sollten Sie die Host Property auf "/H/lear.theobald-software.com/H/hamlet" setzen.
 
-Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true) <br>
+Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm) <br>
 
 {: .box-tip }
 **Tipp:** Falls Sie nicht wissen, welche Parameter einzugeben sind, können Sie die Informationen im SAP Logon Pad in den *Properties* nachschauen. Ansonsten fragen Sie Ihre SAP-Basis.
@@ -50,7 +57,7 @@ Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpd
 
 ### Trace Directory (2)
 
-Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products?fromSearch=true) ein gültiger Pfad eintragen werden. <br> 
+Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products) ein gültiger Pfad eintragen werden. <br> 
 
 {: .box-warning }
 **Warnung!: Erhöhter Verbrauch des Festplattenspeichers** <br>
@@ -61,7 +68,7 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 ### RFC Bibliotheken (3)
 
 Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem ABAP basierten SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
-Es gibt zwei Möglichkeiten, die RFC-Bibliotheken in Xtract IS zu nutzen:
+Es gibt zwei Möglichkeiten die RFC-Bibliotheken in Xtract IS zu nutzen:
 - Use classic RFC library (librfc32.dll) - Klassische RFC Bibliothek 
 - Use NetWeaver RFC libraries - NetWeaver RFC Bibliothek (sapnwrfc.dll)
 

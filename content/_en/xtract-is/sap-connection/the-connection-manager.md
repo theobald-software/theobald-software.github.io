@@ -12,6 +12,12 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
 ---
 ### Connecting to SAP
 Every Xtract IS component needs a connection manager to establish access to the SAP system. 
+
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To establish a connection to SAP the access to general authority objects (RFC) must be available.
+Make sure to gain access to the general authority objects. For more information, see the knowledge base article on [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+
 1. To create a new connection manager right-click in the connection managers within "Solution Explorer" area and choose **New connection Manager**. 
 The window "Add SSIS Connection Manager" opens.
 ![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive"}
@@ -50,7 +56,7 @@ See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01
 ### Trace Directory (2)
 
 You can log debug information and save it locally. Fill the **Trace directory** field with a local path to a folder, where you want to save the debug information.
-See further details in the knowledge base article [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products?fromSearch=true).
+See further details in the knowledge base article [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products).
 
 {: .box-warning }
 **Warning!: Increase of used hard drive memory** <br>

@@ -6,7 +6,7 @@ description: Installation eines Updates
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 8
+weight: 9
 lang: de_DE
 ---
 
