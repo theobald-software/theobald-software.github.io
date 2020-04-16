@@ -12,6 +12,13 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=sap-connection
 ---	
 
 ### Creating an SAP connection
+
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To establish a connection to SAP the access to general authority objects (RFC) must be available.
+Make sure to gain access to the general authority objects. For more information, see the knowledge base article on [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+
+
 1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**.<br>
 ![BC-Create-Connection-1](/img/content/bc_server_manage_sources.png){:class="img-responsive"} <br>
 The window "Manage Sources" opens. <br>

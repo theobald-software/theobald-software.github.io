@@ -37,7 +37,7 @@ Siehe auch SAP Online-Help: [Load Balancing](https://help.sap.com/saphelp_nwpi71
 
 Wenn Sie auf das SAP-System (Application-Server oder Message-Server) über einen SAP-Router zugreifen, setzen Sie den Router-String unmittelbar vor dem Hostnamen bzw. dem Message-Server. <br>
 Beispiel: <br>
-Wenn der Anwendungsserver "hamlet" ist und der Router-String '"/H/lear.theobald-software.com/H/' lautet, sollten Sie die Host Property auf "/H/lear.theobald-software.com/H/hamlet" setzen.
+Wenn der Anwendungsserver "hamlet" ist und der Router-String ``/H/lear.theobald-software.com/H/`` lautet, sollten Sie die Host Property auf ``/H/lear.theobald-software.com/H/hamlet`` setzen.
 
 Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true). <br>
 
@@ -56,11 +56,11 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 - [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On)
 	
 ![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
-Zusätzlich können Sie auch [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services und Xtract Universal).
+Zusätzlich können Sie auch [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services, Xtract Universal und Board Connector).
 
 {: .box-note }
-**Hinweis:** beim Markieren des Kästchens **Require SAP credentials to be explicitly supplied for execution** werden die SAP-Anmeldedaten nicht im Cache gespeichert. Diese Option ist nur aktiv bei Verwendung von *Plain* oder *SNC* Authentifizierungsmethoden und beim Ausführen der Extraktion im Browser.
-Während einer Extraktion wird ein Pop-Up-Fenster geöffnet und der Benutzer wird bei jeder Extraktion aufgefordert seine SAP-Anmeldedaten einzugeben. 
+**Hinweis:** beim Markieren des Kästchens **Require SAP credentials to be explicitly supplied for execution** werden die SAP-Anmeldedaten nicht im Cache gespeichert. Diese Option ist nur aktiv bei Verwendung von *Plain* oder *SNC* Authentifizierungsmethoden und beim Ausführen der Extraktion im Browser (Schaltfläche **[Run in Browser]**.
+Nach dem Start einer Extraktion wird ein Pop-Up-Fenster geöffnet und der Benutzer wird bei jeder Extraktion aufgefordert seine SAP-Anmeldedaten einzugeben. 
 
 ### Miscellaneous
 
@@ -82,7 +82,7 @@ SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/sup
 **Hinweis:** Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein.
 
 #### Trace Directory (Verzeichnis zur Ablage der Debug-Logs)
-Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products?fromSearch=true) ein gültiger Pfad eintragen werden. <br> 
+Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products) ein gültiger Pfad eintragen werden. <br> 
 
 {: .box-warning }
 **Warnung!: Erhöhter Verbrauch des Festplattenspeichers** <br>
@@ -92,7 +92,7 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 
 ### Angelegte SAP-Verbindung überprüfen
 
-1. Im Hauptfenster des Xtract Universal Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
+1. Im Hauptfenster des Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
 Das Fenster "Manage Sources" wird geöffnet.<br>
 Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist.<br>
 ![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}

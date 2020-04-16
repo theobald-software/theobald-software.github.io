@@ -35,7 +35,7 @@ See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/
 
 If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name. <br>
 Example:<br>
-If the application server is "hamlet" and the router string is '/H/lear.theobald-software.com/H/', set the host property to "/H/lear.theobald-software.com/H/hamlet".
+If the application server is "hamlet" and the router string is ``/H/lear.theobald-software.com/H/``, set the host property to ``/H/lear.theobald-software.com/H/hamlet``.
 
 See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm).
 
@@ -54,11 +54,11 @@ The following authentication methods are supported:
 - [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On)
 	
 ![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
-You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) for authentication (available only for several connectors, e.g., ERPConnect, ERPConnect Services and Xtract Universal).
+You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) for authentication (available only for several connectors, e.g., ERPConnect, ERPConnect Services, Xtract Universal and Board Connector).
 
 {: .box-note }
 **Note:** when marking the checkbox **Require SAP credentials to be explicitly supplied for execution** the SAP credentials are not cached. This option is only active 
-using *Plain* or *SNC* authentication method and running an extraction in browser. During an extraction a window pops-up and the user is required to enter SAP credentials for every extraction. 
+using *Plain* or *SNC* authentication method and running an extraction in browser (button **[Run in Browser]**. After starting an extraction a window pops-up and the user is required to enter SAP credentials for every extraction. 
 
 
 ### Miscellaneous
@@ -83,7 +83,7 @@ SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/suppo
 #### Trace Directory
 
 You can log debug information and save it locally. Fill the **Trace directory** field with a local path to a folder, where you want to save the debug information.
-See further details in the knowledge base article [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products?fromSearch=true).
+See further details in the knowledge base article [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products).
 
 {: .box-warning }
 **Warning!: Increase of used hard drive memory** <br>
@@ -92,7 +92,7 @@ Activate the debug logging only when necessary e.g., upon request of the support
 
  
 ### To check the New SAP Connection
-1. In the main window of the Xtract Universal Designer. Navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
+1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
 The window "Manage Sources" opens. <br>
 2. Check if created SAP connection is listed.<br>
 ![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
