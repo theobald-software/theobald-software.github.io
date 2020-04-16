@@ -1,0 +1,14 @@
+---
+ref: bc-advanced-techniques-12
+layout: page
+title: Delta processing
+description: Delta processing
+product: board-connector
+parent: advanced-techniques
+permalink: /:collection/:path
+weight: 12
+lang: en_GB
+old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
+---
+
+{% include _content/en/xu-specific/advanced-techniques/delta-processing.md %}

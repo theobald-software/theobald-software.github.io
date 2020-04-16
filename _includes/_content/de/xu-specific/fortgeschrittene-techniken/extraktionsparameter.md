@@ -23,7 +23,7 @@ columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | ver
 ### "Parameters" Tab *Source*
 ![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
-In diesem Tab können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen)  definiert sind.
+In diesem Tab können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen)  definiert sind.
 
 
 Parametername | Beschreibung |
@@ -32,8 +32,7 @@ lang | ändert dynamisch die SAP-Anmeldesprache des SAP-Quellsystems
 logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Ticket](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) für mehr Details.
 
 {: .box-note }
-**Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket" als Authentifizierungsmethode in den [SAP-Source-Einstellungen](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen)   ausgewählt ist.
-
+**Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket" als Authentifizierungsmethode in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen).
 
 ### "Parameters" Tab *Custom*
 
