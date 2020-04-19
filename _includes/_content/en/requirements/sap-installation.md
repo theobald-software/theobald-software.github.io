@@ -16,4 +16,4 @@
 |OHS                   | Rel. above BW 3.5     | customizing                                                                   |
 
 
-For Information about the installation of the custom function modules and the SAP customizing, check the section [SAP customizing](https://help.theobald-software.com/en/xtract-is/sap-customizing).
+For Information about the installation of the custom function modules and the SAP customizing, check the section [SAP customizing](../sap-customizing).
