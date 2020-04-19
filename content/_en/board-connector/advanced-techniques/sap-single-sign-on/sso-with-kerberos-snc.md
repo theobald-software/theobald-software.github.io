@@ -1,5 +1,5 @@
 ---
-ref: xu-sso-01
+ref: bc-sso-01
 layout: page
 title: SSO with Kerberos SNC
 description: SSO with Kerberos SNC

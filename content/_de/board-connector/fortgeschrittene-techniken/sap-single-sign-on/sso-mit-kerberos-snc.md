@@ -1,9 +1,9 @@
 ---
-ref: xu-sso-01
+ref: bc-sso-01
 layout: page
 title: SSO mit Kerberos SNC
 description: SSO mit Kerberos SNC
-product: xtract-universal
+product: board-connector
 parent: sap-single-sign-on
 permalink: /:collection/:path
 weight: 1
