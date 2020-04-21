@@ -58,7 +58,7 @@ Value | 1
 ### SAP Source Settings
 
 {: .box-note }
-**Note:** An existing [SAP connection](../../advanced-techniques/sap-connection) to a Single Application Server or Message Server is the prerequisite for using SSO with SNC.
+**Note:** An existing [SAP connection](../../introduction/sap-connection) to a Single Application Server or Message Server is the prerequisite for using SSO with SNC.
 
 1. In the main menu of the Designer, navigate to **[Server > Manage Sources]**. The window "Source Details" opens.
 ![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}

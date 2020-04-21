@@ -59,7 +59,7 @@ Value (Wert) | 1
 ### Einstellungen der SAP-Quelle 
 
 {: .box-note }
-**Hinweis:** Eine bestehende [SAP-Verbindung](../../fortgeschrittene-techniken/sap-verbindungen-anlegen) zu einem Single Application Server oder einem Message Server ist die Voraussetzung für die Verwendung von SSO mit SNC.
+**Hinweis:** Eine bestehende [SAP-Verbindung](../../einfuehrung/sap-verbindungen-anlegen) zu einem Single Application Server oder einem Message Server ist die Voraussetzung für die Verwendung von SSO mit SNC.
 
 1. Im Hauptmenü des Designers, navigieren Sie zu **[Server > Manage Sources]**. Das Fenster "Source Details" öffnet sich.
 ![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}
