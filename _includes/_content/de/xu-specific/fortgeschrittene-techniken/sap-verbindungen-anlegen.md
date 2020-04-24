@@ -11,8 +11,6 @@ Der Tab *General* enthält die Verbindungsdetails und ist in vier Unterabschnitt
 
 Ergänzen Sie die Verbindungsdetails, um eine SAP-Verbindung herzustellen.
 
-{: .box-tip }
-**Tipp:** Wenn Sie die Parameter nicht kennen, schauen Sie in Ihrer SAP-GUI nach oder fragen Sie Ihre SAP-Basis.
 
 Klicken Sie **[Test Connection]** (1), um eine erfolgreiche Verbindung zu SAP zu überprüfen. 
 Das Bestätigungsfenster öffnet sich. <br>
@@ -72,8 +70,6 @@ Es gibt zwei Möglichkeiten die RFC-Bibliotheken zu nutzen:
 - Use classic RFC library (librfc32.dll) - Klassische RFC Bibliothek 
 - Use NetWeaver RFC libraries - NetWeaver RFC Bibliothek (sapnwrfc.dll)
 
-{: .box-tip }
-**Empfehlung:** Verwenden Sie die nicht unterstützte librfc32.dll für einige Extraktionstypen, z.B. DeltaQ, da diese stabiler als die NetWeaver-RFC-Bibliothek läuft.
 
 Weitere Informationen finden Sie auf der SAP Help-Seite [RFC API: Classical & SAP NetWeaver](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/48/a994a77e28674be10000000a421937/frameset.htm).<br>
 SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. 
@@ -94,5 +90,6 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 
 1. Im Hauptfenster des Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
 Das Fenster "Manage Sources" wird geöffnet.<br>
-Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist.<br>
+
+2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist.<br>
 ![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}

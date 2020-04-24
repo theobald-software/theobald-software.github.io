@@ -11,7 +11,7 @@ The tab *General* contains the connection details and is divided into four subse
 Fill out the connection details to establish an SAP connection.
 
 {: .box-tip }
-**Tip:** If you don't know the parameters, look in your SAP GUI or ask your SAP Basis.
+**Tip:** Values to fill out the forms can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
 
 Click **[Test Connection]** (1) to test the successful connection. 
 The confirmation window opens. <br>
@@ -70,8 +70,6 @@ There are two options for using RFC libraries:
 - Use classic RFC library (librfc32.dll)
 - Use NetWeaver RFC libraries (sapnwrfc.dll)
 
-{: .box-tip }
-**Recommendation:** Use the not supported librfc32.dll for some extraction types, e.g., DeltaQ as runs more stable than the NetWeaver RFC library.
 
 See additional information on SAP libraries on the [SAP Help Site - RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). <br>
 
