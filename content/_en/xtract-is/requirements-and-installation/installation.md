@@ -35,10 +35,10 @@ The list below shows several most important files that are placed into the defau
 
 |Filename | Description |
 |:----|:---|
-| ABAP folder | Folder with customer-specific function modules (.txt) and SAP transport requests (.zip).|
+| ABAP folder | Folder with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
 | InstallXtractIS.exe | Console program for installing and registering the Xtract IS components and DLLs on the system.|
 |XtractISConversionPreparer.exe| Tool, which prepares older version of SSIS packages (containing Xtract IS components) for migration to newer versions of SSIS. See also section [SSIS Migration](./ssis-migration).|
-| xis_version.bat | Version batch file. When starting xis_version.bat, make sure to pass XtractISVersionInfo.exe file from the isntallation directory as a parameter.|
+| xis_version.bat | Version batch file. When starting xis_version.bat, make sure to pass XtractISVersionInfo.exe file from the installation directory as a parameter.|
 | XtractLicenseManager.exe | Program to manage and view licenses.|
 | uninst.exe | Tool for uninstalling and removing Xtract IS with all its components from your machine. |
 | gac-uninstall.bat | Tool to clear the GAC of all Xtract IS related components.|
@@ -76,6 +76,6 @@ After a successful installation of the Xtract IS, the Xtract IS components are a
 ![XIS_SSIS_Toolbox](/img/content/XIS_SSIS_Toolbox.png){:class="img-responsive"}<br>
 
 {: .box-warning }
-**Warning! Xtract IS components not visibler**<br> With the current version of the SSDT for VS 2015, *SQL Server vNext* or *SQL Server 2017* are selected by default as the target environment for the deployment network of SSIS projects.  With this setting, the Xtract IS components are not visible in the SSIS toolbox. <br> Change the target environment for the deployment to SQL Server 2016 to display the Xtract IS components in the toolbox.
+**Warning! Xtract IS components not visible**<br> With the current version of the SSDT for VS 2015, *SQL Server vNext* or *SQL Server 2017* are selected by default as the target environment for the deployment network of SSIS projects.  With this setting, the Xtract IS components are not visible in the SSIS toolbox. <br> Change the target environment for the deployment to SQL Server 2016 to display the Xtract IS components in the toolbox.
 
 ![XIS_deployment_target_version_vNext](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
