@@ -10,50 +10,72 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 ---
+### Prerequisites
 
-The installation program *XtractUniversalSetup.exe* is an industry standard installation routine that copies all necessary files into the program directory and creates a group with shortcuts in the Windows program menu.
+{: .box-note }
+**Note:** administrator permissions are required to install Xtract IS.
 
-![XU-Setup](/img/content/xu/XU_Setup_1.png){:class="img-responsive"}
+### Installation Routine
+The installation program *XtractUniversalSetup.exe* is an industry standard installation routine.  Execute the *XtractISSetup.exe* file and follow the instructions of the setup program.<br>
 
-During setup, optional components can be selected for installation:
+When starting the installation program, optional components (1) can be selected during the setup. When choosing a component details are displayed in the description field (2).
 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
-### XtractDesigner.exe
+|Components | Description |
+|:----|:---|
+|Tableau Extract API | Component is only required for Tableau destination |
+|Main Program Files | Default setting of the installation routine. |
+|Start Menu Shortcut | Adds shortcuts to the start menu |
+|Convert Config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
+Install Service | Installs the server component as a windows service and automatically boots it. See also section [Architecture](./introduction/architecture).|
 
-Launches Xtract Universal Designer to create, test and monitor extractions.
 
-### XtractService.exe
+The license installation procedure is described in the section [Installing the license](license#installing-the-xtract-universal-license---xtractuniversallicensejson).
 
-The server that is installed and started by default as a Windows service. Usually the service does not have to be started manually. 
+#### Installation Folder Files
+The list below shows several most important files that are placed into the default directory ``C:\Program Files\XtractUniversal`` after installation:
 
-The service is installed during the setup and starts when the operating system is booted. The service runs in the background.
+|Filename | Description |
+|:----|:---|
+| ABAP folder | Folder with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
+| logs folder| Folder with server and extraction etc. logs. See also section [Logging](./logging). |
+| config folder | Folder created automatically with the first extraction, containing all extractions and the corresponding log files. See also section [Backup](#backup). |
+| result-cache folder | Folder with extraction cache files, only applicable for pull destinations. See also section [Pull Destinations](./xu-destinations#pull-and-push-destinations)|
+| xu.exe | Command line tool used for scheduling extractions (automation). See also section [Scheduling an Extraction](./advanced-techniques/scheduling_extraction) |
+| XtractDesigner.exe | Application that launches Xtract Universal Designer to create, test and monitor extractions.|
+| XtractService.exe | Application that launches Xtract Server, XU Windows Service.  Usually boots automatically and runs in the background. |
+| ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
+| XtractLicenseManager.exe | Application to manage and view licenses.|
+| uninstall.exe| Tool for uninstalling and removing Xtract Universal with all its components from your machine. |
+| Eula_xtractUniversal.rtf | Document containing the license agreement for the use of the software Xtract Universal.|
+| XtractUniversalLicense.json |  License file with information about the server, the component and runtime. |
 
-### XtractConsole.exe
 
-{: .box-warning}
-**Warning! Internal feature** <br>
-The option **XtractConsole** is for internal use only.<br>
-Do not use this option!
+{: .box-note }
+**Note:** The Xtract Server can be started as a console program for test purposes. See also section [Troubleshooting](./introduction/troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
-Is the Xtract server that can be started as a console program for test purposes.
-The subdirectory *config* is created automatically with the first extraction and contains all extractions as well as the corresponding log files. 
-
-### New Installation and Update
-
-{: .box-tip}
-**Recommendation:** run a test on a non-productive environment and create a backup of the complete program directory or at least of the *config* subdirectory before reinstalling. 
-
-A newer version can be installed over the older version. All settings and created objects are preserved. 
 
 ### Backup
+
+Before installing a new product version or updating the current version, make sure to create a backup. 
+Backup allows you to easily switch back to the previous version of Xtract Universal, if needed. See also section [Update Installation](./update#how-do-i-create-a-backup).
+
 
 {: .box-tip}
 **Recommendation:** create a backup of the directory: `C:\Program Files\XtractUniversal\config` at regular intervals. 
 
 All settings for extractions, sources, destinations, etc. are stored in the subdirectory *config*. 
 
-Backup allows you to easily switch back to the previous version of Xtract Universal.
+
+### New Installation and Update
+
+{: .box-tip}
+**Recommendation:** run a test on a non-productive environment and create a backup of the complete program directory or at least of the *config* subdirectory before updating. 
+
+A newer version can be installed over the older version. All settings and created objects are preserved. See also section [Installing an Update](./update#installing-an-update-or-a-newer-version-on-a-test-environment).
+
 
 ### Version History
 A list of the versions can be found in the [version history](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
+To check the version of your product, open the Designer, navigate to **Help > Version History** or press **[F12]**.
