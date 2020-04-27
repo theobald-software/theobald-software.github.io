@@ -16,17 +16,18 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 **Note:** administrator permissions are required to install Xtract Universal.
 
 ### Installation Routine
-The installation program *XtractUniversalSetup.exe* is an industry standard installation routine.  Execute the *XtractUniversalSetup.exe* file and follow the instructions of the setup program.<br>
 
-When starting the installation program, optional components (1) can be selected during the setup. When choosing a component details are displayed in the description field (2).
+The installation program *XtractUniversalSetup.exe* is an industry standard installation routine.  Execute the *XtractUniversalSetup.exe* file and follow the instructions of the installation program.
+
+When starting the installation program, optional components (1) can be selected during the setup. When selecting a component details are displayed in the description field (2).
 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
-|Components | Description |
+|Component | Description |
 |:----|:---|
 |Tableau Extract API | Component is only required for Tableau destination |
-|Main Program Files | Default setting of the installation routine. |
-|Start Menu Shortcut | Adds shortcuts to the start menu |
+|Main Program Files | Default setting of the installation routine |
+|Start Menu Shortcut | Component that adds shortcuts to the start menu |
 |Convert Config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
 Install Service | Installs the server component as a windows service and automatically boots it. See also section [Architecture](./architecture).|
 
@@ -53,7 +54,9 @@ The list below shows several most important files that are placed into the defau
 
 
 {: .box-note }
-**Note:** The Xtract Universal Server can be started as a console program for test purposes. See also section [Troubleshooting](./troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+**Note:** The Xtract Universal Server can be started as a console program for test purposes.
+
+For more details on starting Xtract Universal Server as a console program see section [Troubleshooting](./troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 
 ### Backup
@@ -62,16 +65,14 @@ Before installing a new product version or updating the current version, make su
 Backup allows you to easily switch back to the previous version of Xtract Universal, if needed. See also section [Update Installation](./update#how-do-i-create-a-backup).
 
 
-{: .box-tip}
-**Recommendation:** create a backup of the directory: `C:\Program Files\XtractUniversal\config` at regular intervals. 
+{: .box-warning}
+**Warning! Data loss:**
+System updates or changes can restrict software functionalities and this may lead to data loss. 
+Create a backup of the directory: `C:\Program Files\XtractUniversal\config` at regular intervals.
 
 All settings for extractions, sources, destinations, etc. are stored in the subdirectory *config*. 
 
-
 ### New Installation and Update
-
-{: .box-tip}
-**Recommendation:** run a test on a non-productive environment and create a backup of the complete program directory or at least of the *config* subdirectory before updating. 
 
 A newer version can be installed over the older version. All settings and created objects are preserved. See also section [Installing an Update](./update#installing-an-update-or-a-newer-version-on-a-test-environment).
 

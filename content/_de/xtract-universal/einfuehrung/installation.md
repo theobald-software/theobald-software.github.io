@@ -11,51 +11,71 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=installation
 ---
 
-Das Installationsprogramm *XtractUniversalSetup.exe* ist eine branchenübliche Installationsroutine, die alle nötigen Dateien in das Programmverzeichnis kopiert und im Windows-Programmenü eine Gruppe mit Shortcuts anlegt.
+### Voraussetzungen
 
-![XU-Setup](/img/content/xu/XU_Setup_1.png){:class="img-responsive"}
+{: .box-note }
+**Hinweis:** Administratorberechtigungen sind notwendig, um Xtract Universal zu installieren.
 
-Während des Setups können optionale Komponenten für die Installation ausgewählt werden:
+### Installationsroutine
+
+Das Installationsprogramm *XtractUniversalSetup.exe* ist eine branchenübliche Installationsroutine.  Führen Sie die Datei *XtractUniversalSetup.exe* aus und folgen Sie den Anweisungen des Installationsprogramms.
+
+
+Beim Starten des Installationsprogramms können die optionalen Komponenten (1) für die Installation ausgewählt werden. Bei der Auswahl der Komponenten werden die Optionsdetails im "Description" Feld angezeigt (2). 
 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
-### XtractDesigner.exe 
+|Komponente | Beschreibung| 
+||:---|
+|Tableau Extract API | Komponente erforderlich nur für die Tableau Destination
+|Main Program Files | Standardeinstellung der Installationsroutine
+|Start Menu Shortcut | Komponente, die dem Startmenü Verknüpfungen hinzufügt
+|Convert Config files | Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. <br> Diese Komponente ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x.
+Install Service | Installiert die Serverkomponente als Windows-Service und bootet den Service automatisch. Mehr Details im Abschnitt [Architektur](./architektur).
 
-Startet den Xtract Universal Designer, mit dem Extraktion angelegt, getestet und gemonitort werden können.
+Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz#installieren-von-xtract-universal-lizenz---xtractuniversallicensejson) beschrieben.
 
-### XtractService.exe
+#### Dateien des Installationsordners
+Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Program Files\XtractUniversal`` abgelegt werden:
 
-Ist der Server, der standardmäßig als Windows-Service installiert und gestartet wird. In der Regel muss der Service nicht manuell gestartet werden. 
+|Dateiname | Beschreibung |
+|:----|:---|
+| ABAP folder | Ordner mit eigenentwickelten Z-Funktionsbausteinen (.txt) und den dazugehörigen Transportaufträgen (.zip).|
+| logs folder| Ordner mit Server- und Extraktionsprotokollen etc. Siehe auch Abschnitt [Logging](../logging). |
+| config folder | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. Siehe auch Abschnitt [Backup](#backup). |
+| result-cache folder | Ordner mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Siehe auch Abschnitt [Pull-Destinationen](../xu-zielumgebungen/#pull--und-push-destinationen).|
+| xu.exe | Kommandozeilen-Tool zum Planen von Extraktionen (Automatisierung). Siehe auch Abschnitt [Extraktion einplanen](../fortgeschrittene-techniken/extraktion_einplanen). |
+| XtractDesigner.exe | Anwendung zum Starten von Xtract Universal Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
+| XtractService.exe | Anwendung zum Starten von Xtract Universal Server und XU Windows-Service. Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
+| ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert.<br>
+ Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
+| XtractLicenseManager.exe | Programm zum Einspielen und Prüfen der aktuellen Lizenz.|
+| uninstall.exe| Tool zum Deinstallieren und Entfernen von Xtract Universal mit allen dazugehörigen Komponenten von Ihrem Rechner. |
+| Eula_xtractUniversal.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Xtract Universal.|
+| XtractUniversalLicense.json |  Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
-Der Service wird mit dem Setup installiert und startet beim Boot-Vorgang des Betriebssystems. Der Service läuft im Hintergrund.
+{: .box-note }
+**Hinweis:** Der Xtract Universal Server kann zu Testzwecken als Konsolenprogramm 
+gestartet werden. 
 
-### XtractConsole.exe
-
-{: .box-warning}
-**Warnung! Internes Feature**<br>
-Die Option **XtractConsole** ist nur für interne Zwecke.
-Option nicht benutzen!
-
-Ist der Xtract Server, der für Testzwecke als Konsolenprogramm gestartet werden kann. 
-Das Unterverzeichnis *config* wird mit der ersten Extraktion automatisch angelegt und enthält alle Extraktionen sowie die dazugehörigen Protokolldateien. 
-
-### Neue Installation und Update
-
-{: .box-tip}
-**Empfehlung:** Führen Sie einen Test auf einer nichtproduktiven Umgebung durch vor der Neuinstallation.
-Legen Sie ein Backup des kompletten Programmverzeichnisses oder zumindest des *config* Unterverzeichnisses an. 
-
-Eine neuere Version kann über die ältere Version installiert werden. Alle Einstellungen und angelegten Objekte bleiben erhalten. 
-
+Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Abschnitt [Fehlerbehandlung](./fehlerbehandlung) und im Knowledgebase-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 ### Backup
 
-{:.box-tip}
-**Empfehlung:** Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.<br>
+Bevor Sie eine neue Produktversion installieren oder die aktuelle Version aktualisieren, stellen Sie sicher, dass Sie ein Backup erstellen. 
+Mit einem Backup können Sie bei Bedarf einfach auf die vorherige Version von Xtract Universal zurückwechseln. Mehr Details dazu finden Sie im Abschnitt [Installation eines Updates](update#wie-erstelle-ich-ein-backup).
+
+{:.box-warning}
+**Warnung! Datenverlust:** Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.<br>
 Führen Sie ein Backup des Ordners: `C:\Program Files\XtractUniversal\config` in regelmäßigen Abständen durch.
 
 Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. 
-Ein Backup ermöglicht es Ihnen, einfach zur vorherigen Version von Xtract Universal zurück zu wechseln.
+	
+### Neuinstallation und Update
 
-### Version History
+Eine neuere Version kann über die ältere Version installiert werden. Alle Einstellungen und angelegten Objekte bleiben erhalten. 
+
+### Versionshistorie
+
 Eine Liste der aktuellen Versionen finden Sie in der [Versionshistorie](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
+Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer, navigieren Sie zu **Help > Version History** oder drücken Sie **[F12]**.
