@@ -45,7 +45,7 @@ The list below shows several most important files that are placed into the defau
 | result-cache folder | Folder with extraction cache files, only applicable for pull destinations. See also section [Pull Destinations](../xu-destinations#pull-and-push-destinations)|
 | xu.exe | Command line tool used for scheduling extractions (automation). See also section [Scheduling an Extraction](../advanced-techniques/scheduling_extraction) |
 | XtractDesigner.exe | Application that launches Xtract Universal Designer to create, test and monitor extractions.|
-| XtractService.exe | Application that launches Xtract Universal Server, XU Windows Service.  Usually boots automatically and runs in the background. |
+| XtractService.exe | Application that launches Xtract Universal Server as XU Windows Service.  Usually boots automatically and runs in the background. |
 | ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | XtractLicenseManager.exe | Application to manage and view licenses.|
 | uninstall.exe| Tool for uninstalling and removing Xtract Universal with all its components from your machine. |

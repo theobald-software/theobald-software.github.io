@@ -40,13 +40,13 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 
 |Dateiname | Beschreibung |
 |:----|:---|
-| ABAP folder | Ordner mit eigenentwickelten Z-Funktionsbausteinen (.txt) und den dazugehörigen Transportaufträgen (.zip).|
-| logs folder| Ordner mit Server- und Extraktionsprotokollen etc. Siehe auch Abschnitt [Logging](../logging). |
-| config folder | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. Siehe auch Abschnitt [Backup](#backup). |
-| result-cache folder | Ordner mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Siehe auch Abschnitt [Pull-Destinationen](../xu-zielumgebungen/#pull--und-push-destinationen).|
-| xu.exe | Kommandozeilen-Tool zum Planen von Extraktionen (Automatisierung). Siehe auch Abschnitt [Extraktion einplanen](../fortgeschrittene-techniken/extraktion_einplanen). |
+| ABAP Ordner | Ordner mit eigenentwickelten Z-Funktionsbausteinen (.txt) und den dazugehörigen Transportaufträgen (.zip).|
+| logs Ordner| Ordner mit Server- und Extraktionsprotokollen etc. Siehe auch Abschnitt [Logging](../logging). |
+| config Ordner | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. Siehe auch Abschnitt [Backup](#backup). |
+| result-cache Ordner | Ordner mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Siehe auch Abschnitt [Pull-Destinationen](../xu-zielumgebungen/#pull--und-push-destinationen).|
+| xu.exe | Kommandozeilen-Tool zum Einplanen von Extraktionen (Automatisierung). Siehe auch Abschnitt [Extraktion einplanen](../fortgeschrittene-techniken/extraktion_einplanen). |
 | XtractDesigner.exe | Anwendung zum Starten von Xtract Universal Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
-| XtractService.exe | Anwendung zum Starten von Xtract Universal Server und XU Windows-Service. Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
+| XtractService.exe | Anwendung zum Starten von Xtract Universal Server als XU Windows-Service (Dienst). Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert.<br>
  Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | XtractLicenseManager.exe | Programm zum Einspielen und Prüfen der aktuellen Lizenz.|
