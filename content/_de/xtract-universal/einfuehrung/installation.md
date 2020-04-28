@@ -47,8 +47,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | xu.exe | Kommandozeilen-Tool zum Einplanen von Extraktionen (Automatisierung). Siehe auch Abschnitt [Extraktion einplanen](../fortgeschrittene-techniken/extraktion_einplanen). |
 | XtractDesigner.exe | Anwendung zum Starten von Xtract Universal Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
 | XtractService.exe | Anwendung zum Starten von Xtract Universal Server als XU Windows-Service (Dienst). Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
-| ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert.<br>
- Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
+| ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | XtractLicenseManager.exe | Programm zum Einspielen und Prüfen der aktuellen Lizenz.|
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von Xtract Universal mit allen dazugehörigen Komponenten von Ihrem Rechner. |
 | Eula_xtractUniversal.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Xtract Universal.|
