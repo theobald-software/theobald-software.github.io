@@ -21,14 +21,13 @@ Die SAP-Verbindung ist erfolgreich aufgebaut.<br>
 Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 
 1. Use Single Application Server (Verwendung eines Single Application Servers)
-- **Application server**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
-- **Instance number**: Systemnummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
+- **Host**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
+- **System No**: Systemnummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
 
 2. Use Load Balancing Server (message server) (Verwendung eines Load-Balancing / Message-Servers)
-- **System ID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
 - **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
-- **Logon group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*)
-
+- **Group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*)
+- **SID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
 Siehe auch SAP Online-Help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 #### Zugriff über SAP-Router

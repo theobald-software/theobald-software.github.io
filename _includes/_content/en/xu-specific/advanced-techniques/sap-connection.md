@@ -22,13 +22,13 @@ The SAP connection is set up successfully.<br>
 ### System
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server
-	- **Application server**:  host name or IP address of the application server (Property Host) 
-	- **Instance number**: a two-digit number between 00 und 99 (Property SystemNumber)
+	- **Host**:  host name or IP address of the application server (Property Host) 
+	- **System No**: a two-digit number between 00 und 99 (Property SystemNumber)
 
 - Use a Load Balancing Server (message server)
-	- **System ID**: three-digit System ID (Property SID e.g.,  MSS) 
 	- **Message Server**: name or IP address of the message server (Property MessageServer) 
-	- **Logon group**: property LogonGroup, usually *PUBLIC*
+	- **Group**: property LogonGroup, usually *PUBLIC*
+	- **SID**: three-digit System ID (Property SID e.g.,  MSS) 
 See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 #### Accessing via SAP router
