@@ -57,6 +57,8 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 |>, GT |  True if the content of operand1 is greater than the content of operand2|
 | <=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
 |>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
+| LIKE | True if the value of the operand operand1 matches the pattern ('%' is any character string - including an empty string) in the operand operand2.|
+| NOT LIKE | True if the value of the operand operand1 does not match the pattern ('%' is any character string - including an empty string)in the operand operand2. |
 
 Get more information about the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
