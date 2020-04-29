@@ -44,7 +44,7 @@ Storage account name.
 Access key of the Azure storage account.  
 
 {: .box-tip }
-Tip: Copy storage account name and access key from the [Azure portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
+**Tip:** Copy storage account name and access key from the [Azure portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
 
 ![xu-azure-blob-con-10](/img/content/xu-azure-blob-con-10.png){:class="img-responsive"}
 
@@ -66,7 +66,7 @@ When authenticating with an access key, a Blob container can be selected from th
 Button to check if the storage container can be accessed. <br>
 If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
-Got to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
+Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
 ![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02_.png){:class="img-responsive"}
 
@@ -77,18 +77,18 @@ This method uses OAuth 2.0 and Azure AD for authentication. Compared to *Authent
 #### Prerequisites 
 
 {: .box-note }
-Note: Authentication via Azure Active Directory requires an Azure AD tenant. Setting up an Azure AD tenant is described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant). 
+**Note:** Authentication via Azure Active Directory requires an Azure AD tenant. Setting up an Azure AD tenant is described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant). 
 
-Before using this method of authentication, the following steps need to be performed on the Azure portal.
+Before using authentication via Azure active directory, perform the following steps on the Azure portal:
 1. On the Azure portal, open the *Azure Active Directory* service.
-2. Register an app with your Azure AD tenant. For doing so, follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Register the app as *Public client/native (mobile & desktop)*.
+2. Register an app with your Azure AD tenant. To do this, follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Register the app as *Public client/native (mobile & desktop)*.
 3. Add *API permissions* to the registered app to grant access to the Azure Storage web API. The following permissions are required: *Azure Storage - Delegated permissions - user impersonation*, *Microsot Graph - User.Read*. Follow the steps as outlined in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
 4. On the Azure portal, open your Azure storage account.
 4. Assign access rights to the Azure storage as outlined in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). The required RBAC role is *Storage Blob Data Contributor*.
 ![xu-azure-blob-con-07](/img/content/xu-azure-blob-con-07.png){:class="img-responsive"}
 
 {: .box-tip }
-Tip: Access rights can be granted on storage account or on container level. 
+**Tip:** Access rights can be granted on storage account or on container level. 
 
 #### Connection
 **Tenant ID**<br>
@@ -98,7 +98,7 @@ ID of the Azure AD tenant
 ID of the registered app.
 
 {: .box-tip }
-Tip: Copy tenant ID and client ID from the Azure portal.
+**Tip:** Copy tenant ID and client ID from the Azure portal.
 
 ![xu-azure-blob-con-08](/img/content/xu-azure-blob-con-08.png){:class="img-responsive"}
 
@@ -106,36 +106,36 @@ Tip: Copy tenant ID and client ID from the Azure portal.
 
 **Connect**<br>
 Button to establish a connection to the storage account.<br>
-1. Click **[Connect]**
-2. A browser window pops up. Sign in using your Azure AD credentials.
+1. Click **[Connect]**. A browser window pops up.
+2. Sign in using your Azure AD credentials.
 ![xu-azure-blob-con-05](/img/content/xu-azure-blob-con-05.png){:class="img-responsive"}
-3. The *Permissions requested* windows lists the requested permissions (see above). Click **[Accept]**.
+3. The "Permissions requested" window lists the requested permissions (see above). Click **[Accept]**.
 ![xu-azure-blob-con-06](/img/content/xu-azure-blob-con-06.png){:class="img-responsive"}
 4. If the connection is successful, a "Connection successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
 
 #### Container
-This subsection is activated after a connection to the storage account has successfully been established.<br><br>
+This subsection is activated after a connection to the storage account was successfully established.<br><br>
 **Storage account** <br>
-When authenticating via Azure Active directory, the storage account name must be entered here.
+When authenticating via Azure Active directory, the storage account name needs to be entered here.
 
 **Container**<br>
-When authenticating via Azure Active directory, a Blob container must be entered here.
+When authenticating via Azure Active directory, a Blob container needs to be entered here.
 
 {: .box-note }
-Note: With Azure Active directory authentication, the drop down menu is not supported. Enter the name of the Blob container manually.
+**Note:** With Azure Active directory authentication, the drop down menu is not supported. Enter the name of the Blob container manually.
 
 **Test connection to container**<br>
 Button to check if the storage container can be accessed. <br>
 If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
-Got to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
+Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
 ![xu-azure-blob-con-09](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 
 ### CSV Settings
 
-The settings in the tab CSV Settings correspond to the ones in the general [http-csv settings](../csv-via-http).
+The settings in the tab *CSV Settings* correspond to the settings in the general [http-csv settings](../csv-via-http).
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
 
