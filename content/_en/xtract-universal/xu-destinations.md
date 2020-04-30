@@ -17,7 +17,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 
 For more information on drivers, refer to [Requirements](./introduction/requirements).
 
-Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different [destination]() environments, including:  
+Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different destination environments, including:  
 
 ### Databases / Data Warehouses
 
