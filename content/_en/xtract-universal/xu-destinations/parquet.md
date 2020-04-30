@@ -20,7 +20,7 @@ The Parquet destination creates a generic Parquet file.
 4. Click **[OK]** to confirm.
 
 ### Destination Details
-The window "Destination Details" consists of two subsections:
+The window "Destination Details" consists of three subsections:
 - Name - Destination name
 - Type - Destination type
 - File - **Directory** to save Parquet files

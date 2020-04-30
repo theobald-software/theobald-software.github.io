@@ -21,7 +21,7 @@ Die Parquet Destination erzeugt eine generische Parquet-Datei.
 4. Klicken Sie auf **[OK]** zum Bestätigen.
  
 ### Destination Details - Destinationsdetails
-Das Fenster "Destination Details" besteht aus zwei Unterabschnitten:
+Das Fenster "Destination Details" besteht aus drei Unterabschnitten:
 - Name - Name der Zielumgebung
 - Type - Zielumgebungstyp
 - File - Verzeichnis (**Directory**) zum Speichern von Parquet Dateien
