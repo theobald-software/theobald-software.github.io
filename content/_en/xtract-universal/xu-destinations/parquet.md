@@ -21,8 +21,8 @@ The Parquet destination creates a generic Parquet file.
 
 ### Destination Details
 The window "Destination Details" consists of two subsections:
-- Name - Extration name
-- Type - Extraction type
+- Name - Destination name
+- Type - Destination type
 - File - **Directory** to save Parquet files
 ![Parquet-Destination-Details](/img/content/xu/parquet/parquet_destination_details.png){:class="img-responsive"}
 
