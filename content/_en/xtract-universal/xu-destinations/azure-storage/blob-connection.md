@@ -79,7 +79,7 @@ This method uses OAuth 2.0 and Azure AD for authentication. Compared to *Authent
 {: .box-note }
 **Note:** Authentication via Azure Active Directory requires an Azure AD tenant. Setting up an Azure AD tenant is described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant). 
 
-Before using authentication via Azure active directory, perform the following steps on the Azure portal:
+Before using authentication via Azure Active Directory, perform the following steps on the Azure portal:
 1. On the Azure portal, open the *Azure Active Directory* service.
 2. Register an app with your Azure AD tenant. To do this, follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Register the app as *Public client/native (mobile & desktop)*.
 3. Add *API permissions* to the registered app to grant access to the Azure Storage web API. The following permissions are required: *Azure Storage - Delegated permissions - user impersonation*, *Microsot Graph - User.Read*. Follow the steps as outlined in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
