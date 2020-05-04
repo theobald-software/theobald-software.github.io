@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-06
+ref: xu-introduction-08
 layout: page
 title: Troubleshooting
 description: Troubleshooting
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 6
+weight: 8
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=troubleshooting
 ---

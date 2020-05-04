@@ -17,7 +17,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 
 For more information on drivers, refer to [Requirements](./introduction/requirements).
 
-Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different [destination]() environments, including:  
+Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different destination environments, including:  
 
 ### Databases / Data Warehouses
 
@@ -59,6 +59,7 @@ Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW
 - [OData web service](./xu-destinations/odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
 - [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
 - [Flat File - JSON](./xu-destinations/json-flat-file)
+- [Parquet](./xu-destinations/parquet)
             
             
 ### Pull and Push Destinations

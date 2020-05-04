@@ -27,7 +27,7 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 - [Oracle](./xu-zielumgebungen/oracle) 
 - [PostgreSQL](./xu-zielumgebungen/postgreSQL)
 - [SAP HANA](./xu-zielumgebungen/hana) 
-- [SQL Server](./xu-zielumgebungen/microsoft-sql-server) 
+- [SQL Server](./xu-zielumgebungen//microsoft-sql-server) 
 - [Snowflake](./xu-zielumgebungen/snowflake)
 
 
@@ -59,6 +59,7 @@ Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-P
 - [OData Webservice](./xu-zielumgebungen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
 - [Flat File - CSV](./xu-zielumgebungen/csv-flat-file) (Comma-seperated values)
 - [Flat File - JSON](./xu-zielumgebungen/json-flat-file)
+- [Parquet](./xu-zielumgebungen/parquet)
             
 ### Pull- und Push-Destinationen
 

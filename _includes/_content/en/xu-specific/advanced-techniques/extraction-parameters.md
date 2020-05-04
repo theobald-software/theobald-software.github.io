@@ -26,7 +26,7 @@ columnSeparator |  to set a symbol which indicates the start of a new column | a
 
 ![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
-In this tab you can override the values that are defined in the [SAP source details](./sap-connection).
+In this tab you can override the values that are defined in the [SAP source details](../introduction/sap-connection).
 
 Parameter name | Parameter description 
 ------------ | ------------- 
@@ -34,7 +34,7 @@ lang | to dynamically change the logon language of the source SAP system
 logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](./sap-single-sign-on/sso-with-sap-logon-ticket)
 
 {: .box-note }
-**Note:** The parameter **logonTicket** can only be set, only if SAP logon ticket is selected as authentication method in the [SAP source details](./sap-connection).
+**Note:** The parameter **logonTicket** can only be set, only if SAP logon ticket is selected as authentication method in the [SAP source details](../introduction/sap-connection).
 
 
 ### Subsection "Parameters" Tab "Custom"

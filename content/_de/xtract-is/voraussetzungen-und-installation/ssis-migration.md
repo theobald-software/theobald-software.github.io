@@ -23,7 +23,14 @@ Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSD
 
 ### Ausführen der XtractISConversionPreparer.exe
 Der XtractIS Conversion Preparer ist ein Tool, das SSIS-Pakete (inkl. Xtract IS-Komponente), die für ältere Versionen von SSIS erstellt wurden, für die Migration auf neuere Versionen von SSIS vorbereitet. 
-Der XtractIS Conversion Preparer Tool befindet sich im Xtract IS Installationsordner.
+
+
+{: .box-note }
+**Hinweis:** Nur SSIS-Pakete, die mit SSIS 2012 erstellt wurden, müssen mit dem XtractIS Conversion Preparer konvertiert werden.  Der XtractIS Conversion Preparer befindet sich im Verzeichnis `C:\Program Files\XtractIS\XtractISConversionPreparer.exe`. 
+
+
+Für alle anderen neueren SSIS-Pakete passen Sie die "Deployment Target Version" (s.u.) in den Projekteigenschaften an. <br>
+
 
 1. Starten Sie den XtractIS Conversion Preparer.
 2. Für die Migration nach SSIS 2019 wählen Sie *SSIS 2016* aus dem Pull-Down-Menü aus.

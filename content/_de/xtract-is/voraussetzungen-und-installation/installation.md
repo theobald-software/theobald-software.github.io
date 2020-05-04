@@ -10,34 +10,61 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 ---
-Um Xtract IS verwenden zu können, müssen sowohl in der lokalen Entwicklungsumgebung (visual studio oder SSDT) als auch auf dem  SSIS Server die Datei  *XtractISSetup.exe* ausgeführt werden. Somit muss zwingend auf **beiden** Umgebungen die Installationsroutine von Xtract IS installiert werden.
+### Voraussetzungen
+
+{: .box-note }
+**Hinweis:** Administratorberechtigungen sind notwendig, um Xtract IS zu installieren.
+
+Um Xtract IS verwenden zu können, muss die Datei  *XtractISSetup.exe* in der lokalen Entwicklungsumgebung (Visual Studio oder SSDT)
+**und** auf dem  SSIS Server ausgeführt und installiert werden. Weitere Informationen finden Sie im Abschnitt [Lizenzierung](./lizenz-einspielen).
 
 ### Standard Setup
 
-Beim Standard Setup führen Sie die Datei *XtractISSetup.exe* aus und folgen den Anweisungen des Setup-Programms. 
+Beim Standard Setup führen Sie die Datei *XtractISSetup.exe* aus und folgen Sie den Anweisungen des Setup-Programms. 
 
-Beim Setup werden verschiedene DLLs in bestimmte Verzeichnisse kopiert, damit sie von  den Integration Services verwendet werden können. <br>
+![XIS_Setup](/img/content/xis/xis_setup-exe.png){:class="img-responsive"}
 
-Die Installation der Lizenzdatei ist im Kapitel [Lizenz einspielen](./lizenz-einspielen) beschrieben.
+Beim Setup werden verschiedene DLLs in bestimmte Verzeichnisse kopiert, um von den Integration Services verwendet zu werden. <br>
 
+Der Lizenzinstallationsvorgang ist im Abschnitt [Lizenz einspielen](./lizenz-einspielen#installation-der-xtract-is-lizenz---xtractislicensejson) beschrieben.
+
+#### Dateien des Installationsverzeichnisses
+
+Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Programme\XtractIS`` abgelegt werden:
+
+|Dateiname | Beschreibung |
+|:----|:---|
+| ABAP Ordner | Ordner mit eigenentwickelten Z-Funktionsbausteinen (.txt) und den dazugehörigen Transportaufträgen (.zip).|
+| InstallXtractIS.exe | Konsolenprogramm zum Installieren und Registrieren der Xtract IS Komponenten und DLLs auf dem System.|
+| XtractISConversionPreparer.exe | Tool, das SSIS-Pakete (inkl. Xtract IS-Komponente), die für ältere Versionen von SSIS erstellt wurden, für die Migration auf neuere Versionen von SSIS vorbereitet. Weitere Informationen im Abschnitt [SSIS Migration](./ssis-migration).|
+|xis_version.bat | Versions-Batchdatei. Achten Sie beim Start von xis_version.bat darauf, die Datei XtractISVersionInfo.exe aus dem Installationsverzeichnis als Parameter zu übergeben.|
+| XtractLicenseManager.exe | Anwendung zum Einspielen und Prüfen der aktuellen Lizenz. |
+| uninst.exe | Tool zum Deinstallieren und Entfernen von Xtract IS mit allen dazugehörigen Komponenten von Ihrem Rechner. |
+| gac-uninstall.bat | Tool zum Leeren des GAC von allen Xtract IS-bezogenen Komponenten.|
+| Eula_XtractIS.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Xtract IS.|
+|XtractISLicense.json| Lizenzdatei mit Server-, Komponenten-  und Laufzeitinformationen|
 
 ### Silent Setup
 
-Das Standard Setup kann auch ohne die Anzeige der GUI gestartet werden. Dazu muss das Setup mit dem /S Parameter gestartet werden. Über den /D Parameter lässt sich das Installationsverzeichnis festlegen. 
+{: .box-note }
+**Hinweis:** Achten Sie auf die Groß- und Kleinschreibung der Parameter. 
 
-Weitere Einstellung- und Steuermöglichkeiten für das Setup finden Sie unter [Command Line Usage](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1).
+Das Setup-Programm kann auch ohne die Anzeige der GUI gestartet werden. Diese Art von Ausführung des Setup-Programms heißt "Silent Setup". 
 
-**Wichtig:** <br>Bitte achten Sie auf die Groß- und Kleinschreibung der Parameter. 
+Wenn Sie das Silent Setup ausführen möchten, verwenden Sie dazu den Parameter */S*. <b>
 
-**XtractLicenseManager**<br>
-Dem XtractLicenseManager kann die zu installierende Lizenzdatei als Argument übergeben werden. Diese Datei wird ohne GUI installiert, im Fehlerfall geht eine Messagebox auf und es wird ein enstprechender Exit-Code zurückgegeben.
+Um das Installationsverzeichnis festzulegen, verwenden Sie den Parameter */D*.  
 
-**Blocking, Exit-Codes und Berechtigung**<br>
-Wenn man möchte, dass das Setup bzw. der License Manager den aufrufenden Prozess (z. B. ein Batch) blockiert bis die Installation fertig ist und wenn man einen korrekten Exit-Code haben möchte, um zu prüfen, ob die Installation erfolgreich war, muss man das jeweilige Programm mit dem start Befehl und /w switch starten. Das kommt daher, dass beides keine Konsolenanwendungen sind.
+Weitere Einstellung- und Steuermöglichkeiten für das Setup finden Sie auf der folgenden Webseite: [Command Line Usage](http://nsis.sourceforge.net/Docs/Chapter3.html#3.2.1).
 
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Admininistratorrechte für die Ausführung beider Programme werden benötigt.
-</div>
+
+#### Blocking, Exit-Codes und Berechtigung
+
+Die Verwendung des */w*-Schalters am Anfang der Anweisung bietet die folgenden Funktionen:
+
+- Sie können das Setup bzw. den License Manager den aufrufenden Prozess (z. B. ein Batch) blockieren lassen bis die Installation abgeschlossen ist
+- Sie können einen korrekten Exit-Code bekommen, um den Erfolg der Installation zu überprüfen
+
 
 **Beispiele:**
 ```
@@ -45,18 +72,19 @@ start /w XtractISSetup.exe /S
 start /w XtractLicenseManager.exe "My License\XtractIS.License.json"
 start /w XtractLicenseManager.exe XtractIS.License.json
 ```
-Die folgende Tabelle zeigt wichtige Dateien, die die Installationsroutine mitbringt und auf dem Zielrechner Im Verzeichnis \XtractIS\: installiert:
 
 
-|Dateiname | Beschreibung |
-|:----|:---|
-| ABAP Ordner | Enthält kundeneigene Funktionsbausteine (.txt) und SAP Transportaufträge (.zip).|
-| InstallXtractIS.exe | Konsolenprogramm für die Installation (verteilen und registrieren der Dlls).|
-| XtractISConversionPreparer.exe | Tool zum Konvertieren der Xtract-Komponenten auf eine höhere SSIS-Version (siehe Kapitel [SSIS Migration](https://help.theobald-software.com/de/xtract-is/voraussetzungen-und-installation/ssis-migration)).|
-| XtractLicenseManager.exe | Programm zum Einspielen und Prüfen Ihrer aktuellen Lizenz. |
-| uninst.exe | Tool zum De-installieren von Xtract IS. |
-| gac-uninstall.bat | Tool zum Deregistrieren aller Xtract-eigenen dlls.|
-| Eula_XtractIS.rtf | Enthält die Lizenzvereinbarung zur Nutzung der Software XtractIS.|
 
-Sämtliche  Dll-Dateien werden im Global Assembley Cache registriert.
+### Xtract IS Komponenten in SSIS anzeigen
+Nach erfolgreicher Installation von Xtract IS erscheinen die Xtract IS Komponenten automatisch als Datenfluss-Komponenten in der SSIS-Toolbox Ihres Visual Studio Integration Services Projekts.
+
+![XIS_SSIS_Toolbox](/img/content/XIS_SSIS_Toolbox.png){:class="img-responsive"} <br>
+
+{: .box-warning }
+**Warnung! Xtract IS Komponenten nicht sichtbar**<br> Mit der aktuellen Version der SSDT für VS 2015 ist der *SQL Server vNext* oder *SQL Server 2017* standardmäßig als Zielumgebung für das Deployment von SSIS Projekten ausgewählt. Mit dieser Einstellung sind die Xtract IS Komponenten in der SSIS Toolbox nicht sichtbar. <br> Ändern Sie die Zielumgebung für das Deployment auf SQL Server 2016, um die Xtract IS Komponenten in der Toolbox anzuzeigen.
+
+![XIS_deployment_target_version_vNext](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
+
+
+
 

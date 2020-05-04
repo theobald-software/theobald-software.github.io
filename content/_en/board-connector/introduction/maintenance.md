@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-05
+ref: bc-introduction-06
 layout: page
 title: Maintenance
 description: Maintenance
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 ---
 

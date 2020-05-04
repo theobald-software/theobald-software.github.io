@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-07
+ref: bc-introduction-08
 layout: page
 title: Fehlerbehandlung
 description: Fehlerbehandlung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: de_DE
 ---
 

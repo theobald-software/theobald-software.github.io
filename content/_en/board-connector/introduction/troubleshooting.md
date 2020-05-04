@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-07
+ref: bc-introduction-08
 layout: page
 title: Troubleshooting
 description: Troubleshooting
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 ---
 

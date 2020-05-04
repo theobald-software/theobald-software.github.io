@@ -1,135 +1,94 @@
-Wählen Sie den Menüeintrag *Server -> Manage Sources*, um die SAP-Verbindungen zu verwalten. Dort können Sie SAP-Verbindungen anlegen, editieren und löschen.
 
 
-![Shared-SAP-Connections](/img/content/Shared-SAP-Connections.png){:class="img-responsive"}
+### Verbindungsdetails
 
-Um eine Verbindungsvorlage anzulegen, klicken Sie auf *Add*.<br>
-Geben Sie der Vorlage einen Namen und füllen Sie die notwendigen Felder. 
+Der Tab *General* enthält die Verbindungsdetails und ist in vier Unterabschnitte unterteilt:
+- [System](#system)
+- [Client and Language](#client-and-language) (Mandant und Sprache)
+- [Authentication](#authentication) (Authentifizierung)
+- [Miscellaneous](#miscellaneous) (Verschiedenes)
+![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}<br>
 
-![SAP-Connection-Settings](/img/content/SAP-Connection-Settings.png){:class="img-responsive"}
-
-Wenn Sie die erforderlichen Verbindungsparameter angegeben haben können Sie die Verbindung mit einem Klick auf den *Test Connection* Button überprüfen. Wenn die Verbindung hergestellt wurde, erscheint das nachfolgende Informationsfenster.
-
-
-![SAP-Connection-Test-Ok](/img/content/SAP-Connection-Test-Ok.png){:class="img-responsive"}
-
-Um eine Vorlage zu editieren bzw. zu löschen, klicken Sie entsprechend auf *Edit* bzw. *Delete*.
-
-**Authentifizierung via SSO/SNC**
-
-siehe [hier](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-single-sign-on)
+Ergänzen Sie die Verbindungsdetails, um eine SAP-Verbindung herzustellen.
 
 
+Klicken Sie **[Test Connection]** (1), um eine erfolgreiche Verbindung zu SAP zu überprüfen. 
+Das Bestätigungsfenster öffnet sich. <br>
+Die SAP-Verbindung ist erfolgreich aufgebaut.<br>
+![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
 
-![SAP-Connection-SNC-Ok](/img/content/SAP-Connection-SNC-Ok.png){:class="img-responsive"}
+### System
+Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 
-Wenn Sie bei *Mechanism* die Option *SNC Library* wählen, dann werden die Felder SNC Library and X.509 Certificate aktiviert.
+1. Use Single Application Server (Verwendung eines Single Application Servers)
+- **Host**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
+- **System No**: Systemnummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
 
-**Informationen über die SAP-Verbindung** 
+2. Use Load Balancing Server (message server) (Verwendung eines Load-Balancing / Message-Servers)
+- **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
+- **Group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*)
+- **SID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
+Siehe auch SAP Online-Help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
-Für die Anmeldung an einem SAP-System müssen Sie folgende Daten angeben: 
+#### Zugriff über SAP-Router
 
-1. Mandant
-2. Sprache
-3. Authentifizierung
-4. SAP-Zielsystem
-5. SAP-Router
+Wenn Sie auf das SAP-System (Application-Server oder Message-Server) über einen SAP-Router zugreifen, setzen Sie den Router-String unmittelbar vor dem Hostnamen bzw. dem Message-Server. <br>
+Beispiel: <br>
+Wenn der Anwendungsserver "hamlet" ist und der Router-String ``/H/lear.theobald-software.com/H/`` lautet, sollten Sie die Host Property auf ``/H/lear.theobald-software.com/H/hamlet`` setzen.
 
-Abgesehen davon können Sie wählen, ob Sie die klassische oder die Netweaver RFC-Bibliothek (API) verwenden wollen, wobei die klassische RFC API die Standardeinstellung ist. 
+Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true). <br>
 
-**Mandant** 
+{: .box-tip }
+**Tipp:** Falls Sie nicht wissen, welche Parameter einzugeben sind, können Sie die Informationen im SAP Logon Pad in den *Properties* nachschauen. Ansonsten fragen Sie Ihre SAP-Basis.
+ 
+### Client and Language 
 
-Die dreistellige Mandantennummer Ihres SAP-Systems, z.B. 800. 
+- Client (Mandant) -  die dreistellige Mandantennummer Ihres SAP-Systems zwischen 000 und 999, z.B. 800. 
+- Language (Sprache) - der Sprachenschlüssel für die von Ihnen verwendete Sprache, z.B. EN für Englisch oder DE für Deutsch.
 
-**Sprache** 
+### Authentication 
+Die folgenden Authentifizierungsmethoden werden unterstützt:
+-  Plain (1) - SAP-Benutzername und Passwort (System- oder Dialogbenutzer)
+- [SNC (Secure Network Communication)](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc) (2) mit einem Benutzernamen und einem Passwort
+- [SNC with SSO](../fortgeschrittene-techniken/sap-single-sign-on) (Single Sign On) (3)
+	
+![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
+Zusätzlich können Sie auch [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services, Xtract Universal und Board Connector).
 
-Den Sprachenschlüssel für die von Ihnen verwendete Sprache, z.B. DE für Deutsch oder EN für Englisch. 
+{: .box-note }
+**Hinweis:** beim Markieren des Kästchens **Require SAP credentials to be explicitly supplied for execution** werden die SAP-Anmeldedaten nicht im Cache gespeichert. Diese Option ist nur aktiv bei Verwendung von *Plain* oder *SNC* Authentifizierungsmethoden und beim Ausführen der Extraktion im Browser (Schaltfläche **[Run in Browser]**.
+Nach dem Start einer Extraktion wird ein Pop-Up-Fenster geöffnet und der Benutzer wird bei jeder Extraktion aufgefordert seine SAP-Anmeldedaten einzugeben. 
 
-**Authentifizierung**
+### Miscellaneous
 
-Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort eingeben. <br>
-Insgesamt werden aber folgende Authentifizierungsformen unterstützt: 
+Wählen Sie eine Bibliothek aus und definieren Sie optional ein Verzeichnis für das Debug-Logging.
 
-a. SAP-Benutzername und Passwort<br>
-b. SNC (Secure Network Communication) mit Benutzername und Passwort<br>
-c. SNC mit SSO (Single Sign On) <br>
-d. SAP Log On Ticket 
-
-
-**Zielsystem**
-
-Das SAP-Zielsystem, welches ein Application-Server oder ein Message-Server (Load Balancing) sein kann.
-
-Im Fall eines Applikationsservers werden folgende Angaben benötigt: 
-
-- Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
-- Systemnummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
-
-Im Fall von einer Anmeldung an einem Message Server (Load Balancing) sind folgende Daten zu füllen: 
-
-- Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
-- Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
-- Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. ist das PUBLIC)
-
-[SAP Dokumentation zu Load Balancing](https://help.sap.com/saphelp_dm40/helpdata/de/22/04295c488911d189490000e829fbbd/content.htm?no_cache=true)
-<br>
-
-**SAP-Router**
-
-Falls Sie auf das SAP-System (Application-Server oder Message-Server) über einen SAP-Router zugreifen, setzen Sie den Routerstring unmittelbar vor dem Hostnamen bzw. dem Message-Server. 
-
-[SAP Dokumentation zu SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true) 
-(<br>
-
-**RFC Bibliothek (API)**: Klassisch oder NetWeaver. 
-
-Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
-Die RFC API existiert in zwei unterschiedlichen Versionen: 
-- Klassische RFC Bibliothek (librfc32.dll).
-- NetWeaver RFC Bibliothek (sapnwrfc.dll). 
+#### RFC libraries (RFC-Bibliotheken)
+Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem ABAP basierten SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
+Es gibt zwei Möglichkeiten die RFC-Bibliotheken zu nutzen:
+- Use classic RFC library (librfc32.dll) - Klassische RFC Bibliothek 
+- Use NetWeaver RFC libraries - NetWeaver RFC Bibliothek (sapnwrfc.dll)
 
 
-Weitere Informationen finden Sie hier [RFC API: Classical & SAP NetWeaver](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/48/a994a77e28674be10000000a421937/frameset.htm) in der SAP Dokumentation. 
-<br>
-SAP hat den [Support für die librfc32.dll[(https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. Diese funktioniert nach unserer Erfahrung jedoch nach wie vor und läuft in machen Fällen (z.B. DeltaQ) stabiler als die NetWeaver RFC Bibliothek.
+Weitere Informationen finden Sie auf der SAP Help-Seite [RFC API: Classical & SAP NetWeaver](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/48/a994a77e28674be10000000a421937/frameset.htm).<br>
+SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. 
 
-<br>
+{: .box-note }
+**Hinweis:** Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein.
 
-### SAP Log On
+#### Trace Directory (Verzeichnis zur Ablage der Debug-Logs)
+Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products) ein gültiger Pfad eintragen werden. <br> 
 
-In diesem Abschnitt zeigen wir Ihnen, wo Sie die benötigten Informationen für die SAP-Verbindung im SAP-Logon finden können. 
-
-Für die Anmeldung an einem SAP-System müssen Sie folgende Daten angeben: <br>
-Mandant (Client)<br>
-Sprache (Logon Language)<br>
-
-Für die Authentifizierung können Sie einen SAP-Benutzername und Kennwort eingeben. 
-
-![sapgui-client-lang](/img/content/sapgui-client-lang.png){:class="img-responsive"}
-
-**SAP-Zielsystem**
+{: .box-warning }
+**Warnung!: Erhöhter Verbrauch des Festplattenspeichers** <br>
+Bei der Aktivierung des Debug-Logging wird eine große Menge an Informationen gesammelt. Dies kann die Kapazität Ihrer Festplatten drastisch verringern.
+Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
 
 
-Das SAP-Zielsystem kann ein Application-Server oder ein Message-Server (Load Balancing) sein.
+### Angelegte SAP-Verbindung überprüfen
 
-**Application Server** 
+1. Im Hauptfenster des Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
+Das Fenster "Manage Sources" wird geöffnet.<br>
 
-Im Fall eines Applikationsservers werden folgende Angaben benötigt: 
-
-- Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
-- Systemnummer (Instance Number), eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
-
-
-![sapgui-appserver](/img/content/sapgui-appserver.png){:class="img-responsive"}
-
-**Message Server (Load Balancing)** 
-
-Im Fall von einer Anmeldung an einem Message Server (Load Balancing) sind folgende Daten zu füllen: 
-
-- Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
-- Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
-- Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. ist das PUBLIC)
-
-![sapgui-messageserver](/img/content/sapgui-messageserver.png){:class="img-responsive"}
-
-
+2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist.<br>
+![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}
