@@ -55,7 +55,7 @@ Click **[OK]** to confirm. <br>
 
 
 #### Container
-This subsection is activated after a connection to the storage account has successfully been established.<br><br>
+This subsection is activated after a connection to the storage account was successfully established.<br><br>
 **Storage account** <br>
 When authenticating with an access key, this field is deactivated for input.
 
@@ -72,7 +72,7 @@ Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data 
 
 
 ### Authentication via Azure Active Directory
-This method uses OAuth 2.0 and Azure AD for authentication. Compared to *Authentication via Access Key*, it allows a more granular way of authorizing access to a storage account and its individual storage containers. General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
+Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. Compared to *Authentication via Access Key*, this option allows a more granular way of authorizing access to a storage account and its individual storage containers. General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
 
 #### Prerequisites 
 
@@ -81,10 +81,10 @@ This method uses OAuth 2.0 and Azure AD for authentication. Compared to *Authent
 
 Before using authentication via Azure Active Directory, perform the following steps on the Azure portal:
 1. On the Azure portal, open the *Azure Active Directory* service.
-2. Register an app with your Azure AD tenant. To do this, follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Register the app as *Public client/native (mobile & desktop)*.
-3. Add *API permissions* to the registered app to grant access to the Azure Storage web API. The following permissions are required: *Azure Storage - Delegated permissions - user impersonation*, *Microsot Graph - User.Read*. Follow the steps as outlined in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
+2. Register an app with your Azure AD tenant. To do this, follow the steps as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Register the app as *Public client/native (mobile & desktop)*.
+3. Add *API permissions* to the registered app to grant access to the Azure Storage web API.<br> The following permissions are required: *Azure Storage - Delegated permissions - user impersonation*, *Microsot Graph - User.Read*. Follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
 4. On the Azure portal, open your Azure storage account.
-4. Assign access rights to the Azure storage as outlined in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). The required RBAC role is *Storage Blob Data Contributor*.
+5. Assign access rights to the Azure storage as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). The required RBAC role is *Storage Blob Data Contributor*.
 ![xu-azure-blob-con-07](/img/content/xu-azure-blob-con-07.png){:class="img-responsive"}
 
 {: .box-tip }
@@ -95,7 +95,7 @@ Before using authentication via Azure Active Directory, perform the following st
 ID of the Azure AD tenant
 
 **Client ID**<br>
-ID of the registered app.
+ID of the registered app
 
 {: .box-tip }
 **Tip:** Copy tenant ID and client ID from the Azure portal.
@@ -105,7 +105,7 @@ ID of the registered app.
 
 
 **Connect**<br>
-Button to establish a connection to the storage account.<br>
+Button to establish a connection to the Azure storage account.<br>
 1. Click **[Connect]**. A browser window pops up.
 2. Sign in using your Azure AD credentials.
 ![xu-azure-blob-con-05](/img/content/xu-azure-blob-con-05.png){:class="img-responsive"}
@@ -117,13 +117,13 @@ Click **[OK]** to confirm. <br>
 #### Container
 This subsection is activated after a connection to the storage account was successfully established.<br><br>
 **Storage account** <br>
-When authenticating via Azure Active directory, the storage account name needs to be entered here.
+When authenticating via Azure Active Directory, the storage account name needs to be entered here.
 
 **Container**<br>
-When authenticating via Azure Active directory, a Blob container needs to be entered here.
+When authenticating via Azure Active Directory, a Blob container needs to be entered here.
 
 {: .box-note }
-**Note:** With Azure Active directory authentication, the drop down menu is not supported. Enter the name of the Blob container manually.
+**Note:** With Azure Active Directory authentication, the drop down menu is not supported. Enter the name of the Blob container manually.
 
 **Test connection to container**<br>
 Button to check if the storage container can be accessed. <br>
