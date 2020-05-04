@@ -16,7 +16,7 @@ lang: de_DE
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
-Die folgenden Einstellungen können für die Parquet-Flat-File-Destination definiert werden. 
+Die folgenden Einstellungen können für die Parquet-Destination definiert werden. 
   
 ### Destination Settings - Destinationseinstellungen
 Das Fenster "Destination Settings" besteht aus den folgenden Unterabschnitten:
