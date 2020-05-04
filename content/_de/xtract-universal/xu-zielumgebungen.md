@@ -18,48 +18,48 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 
 ### Datenbanken / Data Warehouses
 
-- [Amazon Redshift](./redshift) 
-- [Azure DWH](./azure_dwh) 
-- [Azure SQL Database](./microsoft-sql-server) 
-- [EXASolution](./exasol) 
-- [IBM DB2](./ibm-db2) 
-- [MySQL](./mysql) 
-- [Oracle](./oracle) 
-- [PostgreSQL](./postgreSQL)
-- [SAP HANA](./hana) 
-- [SQL Server](.//microsoft-sql-server) 
-- [Snowflake](./snowflake)
+- [Amazon Redshift](./xu-zielumgebungen/redshift) 
+- [Azure DWH](./xu-zielumgebungen/azure_dwh) 
+- [Azure SQL Database](./xu-zielumgebungen/microsoft-sql-server) 
+- [EXASolution](./xu-zielumgebungen/exasol) 
+- [IBM DB2](./xu-zielumgebungen/ibm-db2) 
+- [MySQL](./xu-zielumgebungen/mysql) 
+- [Oracle](./xu-zielumgebungen/oracle) 
+- [PostgreSQL](./xu-zielumgebungen/postgreSQL)
+- [SAP HANA](./xu-zielumgebungen/hana) 
+- [SQL Server](./xu-zielumgebungen//microsoft-sql-server) 
+- [Snowflake](./xu-zielumgebungen/snowflake)
 
 
 ### Business Intelligence / Analytics / ETL
 
-- [Alteryx](./alteryx-de) 
-- [Alteryx Connect](./alteryx_connect) 
-- [Microstrategy](./microstrategy)
-- [Power BI connector (Cloud/Desktop)](./Power-BI-Connector) 
-- [Tableau](./tableau) 
-- [QlikSense and QlikView](./qlik)  
+- [Alteryx](./xu-zielumgebungen/alteryx-de) 
+- [Alteryx Connect](./xu-zielumgebungen/alteryx_connect) 
+- [Microstrategy](./xu-zielumgebungen/microstrategy)
+- [Power BI connector (Cloud/Desktop)](./xu-zielumgebungen/Power-BI-Connector) 
+- [Tableau](./xu-zielumgebungen/tableau) 
+- [QlikSense and QlikView](./xu-zielumgebungen/qlik)  
 
 ### Cloud Speicher
 
-- [Amazon AWS S3](./amazon_aws_s3)
-- [Azure Storage](./azure-storage) 
+- [Amazon AWS S3](./xu-zielumgebungen/amazon_aws_s3)
+- [Azure Storage](./xu-zielumgebungen/azure-storage) 
 
 Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-Programm bzw. Scheduler aufgerufen werden. 
 
 ### Business Systeme
 
-- [Salesforce](./salesforce) 
-- [Sharepoint](./sharepoint) 
+- [Salesforce](./xu-zielumgebungen/salesforce) 
+- [Sharepoint](./xu-zielumgebungen/sharepoint) 
 
 ### Generische Destinationen
 
-- [CSV Webservice](./csv-via-http) 
-- [JSON Webservice](./json-via-http)
-- [OData Webservice](./odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
-- [Flat File - CSV](./csv-flat-file) (Comma-seperated values)
-- [Flat File - JSON](./json-flat-file)
-- [Parquet](./parquet)
+- [CSV Webservice](./xu-zielumgebungen/csv-via-http) 
+- [JSON Webservice](./xu-zielumgebungen/json-via-http)
+- [OData Webservice](./xu-zielumgebungen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
+- [Flat File - CSV](./xu-zielumgebungen/csv-flat-file) (Comma-seperated values)
+- [Flat File - JSON](./xu-zielumgebungen/json-flat-file)
+- [Parquet](./xu-zielumgebungen/parquet)
             
 ### Pull- und Push-Destinationen
 
