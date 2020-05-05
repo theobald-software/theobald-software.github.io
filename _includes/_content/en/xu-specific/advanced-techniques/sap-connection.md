@@ -89,7 +89,7 @@ A big amount of information is collected when debug logging is activated. This c
 Activate the debug logging only when necessary e.g., upon request of the support team.
 
  
-### To check the New SAP Connection
+### To Check the New SAP Connection
 1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
 The window "Manage Sources" opens. <br>
 2. Check if created SAP connection is listed.<br>
