@@ -10,9 +10,15 @@ weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen1
 ---
+### Destination Settings öffnen
 
-Der folgende Abschnitt gibt einen Überblick über die Einstellungen, die für die SharePoint-Destination angepasst werden können.
-Die Einstellungen können im Fenster "Destination Settings" geändert werden. 
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Table](../../erste-schritte-mit-table/eine-neue-extraktion-anlegen)).
+2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+Die folgenden Einstellungen können für die Destination definiert werden. 
+  
+### Destination Settings - Destinationseinstellungen
 
 ![SharePointExtractionSpecificSettings](/img/content/xu/SP_destination_settings.png){:class="img-responsive"}
 

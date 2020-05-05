@@ -1,9 +1,14 @@
 
-Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien. Es gibt zwei Arten von Log-Dateien: 
-- Das Server Log, das Protokolle enthält, die den Server betreffen, wie z.B. das Starten und Stoppen des Servers. 
-Das Server-Log enthält auch die Informationen über die Ausführung einer einzelnen Extraktion.
-- Das Extraktionslog, das den Extraktionsprozess jeder einzelnen Extraktion protokolliert.
-Um das Server-Log anzuzeigen, navigieren Sie zum Hauptmenü des Designers und klicken Sie **[Server > Log]**
+Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien. 
+Die Log-Dateien werden im Produktverzeichnis gespeichert:<br>
+z.B.: `C:\Program Files\[Product Name]\logs`
+
+Die Server-Logs enthalten drei Arten von Protokollen, die den Server betreffen, wie das Starten und Stoppen des
+ Dienstes (Web), die Konfiguration (Config) und Informationen über den Prozess (run) jeder einzelnen Extraktion. 
+ 
+Zusätzlich zu den Server-Logs gibt es ein Protokoll für jede [Extraktion](./extraktion-logging) und einen [Debug-Log](./debug-logging).
+ 
+Um das Server-Log anzuzeigen, navigieren Sie zum Hauptmenü des Designers und klicken Sie auf **[Server > Log]**.
 
 ![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
 

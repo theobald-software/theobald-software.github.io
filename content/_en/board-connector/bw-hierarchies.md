@@ -1,5 +1,5 @@
 ---
-ref: board-connector-14
+ref: board-connector-13
 layout: page
 title: BW Hierarchies
 description: BW Hierarchies

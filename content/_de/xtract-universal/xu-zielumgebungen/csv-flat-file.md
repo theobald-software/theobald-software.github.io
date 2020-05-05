@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-11
+ref: xu-destinations-14
 layout: page
 title: Flat File - CSV
 description: Flat File - CSV
@@ -7,23 +7,35 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: csv-flat-file
 permalink: /:collection/:path
-weight: 11
+weight: 14
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=zielumgebungen
 ---
 
-Das Ziel *Flat File* erzeugt eine generische CSV-Datei. 
+Die Destination *Flat File* erzeugt eine generische CSV-Datei. 
 
-Folgende Einstellungen können fürs Ziel Flat File definiert werden.
+### Flat File - CSV Destination hinzufügen
+1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster "Manage Destinations" wird geöffnet.
+2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
+3. Wähen Sie die Destination *Flat File - CSV* aus der Drop-Down-Liste aus.
+4. Klicken Sie auf **[OK]** zum Bestätigen. 
+
+### Destination Details - Destinationsdetails
+Das Fenster "Destination Details" besteht aus vier Unterabschnitten:
+- Name (Dateiname)
+- Type (Typ der Destination)
+- File (s. u.)
+- CSV Settings (s. u.)
+- Convert / Encoding (s. u.)
 
 ![CSV-Flat-Destination-Details](/img/content/CSV-Flat-Destination-Details.png){:class="img-responsive"}
 
-**File**
+### File
 
 **Directory**<br>
 Angabe eines vorhandenen Verzeichnises, in das die Zieldateien abgelegt werden.
 
-**CSV Settings**
+### CSV Settings
 
 **Column seperator**<br>
 Definiert, wie bei CSV zwei Spalten getrennt werden sollen.
@@ -40,7 +52,7 @@ Definiert, ob die erste Zeile die Spaltennamen enthält. Die Option ist standard
 **Row separator after last row**<br>
 Definiert, ob die letzte Zeile einen Zeilenseparator enthält. Die Option ist standardmäßig gesetzt.
 
-**Convert / Encoding**
+### Convert / Encoding
 
 **Decimal separator**<br>
 Definiert den Dezimaltrenner für die Dezimalzahlen. Punkt (.) ist der Standard-Wert.             
@@ -53,26 +65,5 @@ Definiert ein benutzerdefiniertes Zeitformat (z.B. HH:MM:SS oder HH-MM-SS), um g
 
 **Text Encoding**<br>
 Definiert die Zeichenketten-Kodierung.
-
-**Extraktionsspezifische Einstellungen** 
-
-Klicken Sie auf Destination, um über extractionsspezifische Einstellungen bezüglich des Ziels festlegen.
-
-![Flatfile-Extraction-Specific-Settings](/img/content/Flatfile-Extraction-Specific-Settings.png){:class="img-responsive"}
-
-**File Name**<br>
-bestimmt den Namen der Zieldatei. Sie haben die folgenden Optionen: <br>
-**Same as name of SAP object**: Name des SAP-Objekts übernehmen <br>
-**Same as name of extraction** Name der Extraktion übernehmen und<br>
-**Custom**: Hier können Sie einen eigenen Namen definieren.
-
-**Append timestamp**: Eine neue Zieldatei wird angelegt und ein Zeitstempel wird an den Namen angehängt. 
-                                   
-                          
-**Existing files** 
-
-**Replace file**: eine vorhandene Zieldatei wird überschrieben. <br>
-**Append results**: Daten werden an eine bereits bestehende Zieldatei angehängt. <br>
-**Abord extraction**: Der Prozess wird abgebrochen, falls eine Zeildatei bereits existiert.  
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-04
+ref: bc-introduction-05
 layout: page
 title: Lizenz
 description: Lizenz
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 ---
 

@@ -10,112 +10,101 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
 ---
+### Connecting to SAP
+Every Xtract IS component needs a connection manager to establish access to the SAP system. 
 
-Every Xtract IS component needs a connection manager to establish access to the SAP system. To create a new connection manager, please right-click in the area of the data flow task where the connection managers are located and choose New connection. The dialog shown below will then appear.
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To establish a connection to SAP the access to general authority objects (RFC) must be available.
+Make sure to gain access to the general authority objects. For more information, see the knowledge base article on [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-Select XTRACT from the list and click Add...
+1. To create a new connection manager right-click in the connection managers within "Solution Explorer" area and choose **New connection Manager**. 
+The window "Add SSIS Connection Manager" opens.
+![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive"}
+2. Select the XTRACT Connection Manager from the list and click **[Add]**. Xtract IS Connection manager appears under the tab *Connection Managers*.
+3. To configure the SAP connection, double-click the Xtract IS Connection Manager icon. The window "Xtract IS Connection Manager" opens.
+![Connection-Manager](/img/content/Connection-Manager.png){:class="img-responsive" }
+4. Fill in all the necessary data (*Client*, *Username*, *Password* ect. see below). 
+5. Click **[Test connection]** to check the connection to your SAP system. <br>
+If the connection test is successful, the Xtract IS component is ready to use.
 
-![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive" width="600px" }
+### SAP source system (1)
+There are two possibilities to connect to an SAP source system:
 
-To configure the SAP connection, please double-click the connection manager icon.
+1. Use Single Application Server
+- **Application server**:  host name or IP address of the application server (Property Host) 
+- **Instance number**: a two-digit number between 00 und 99 (Property SystemNumber)
 
-![Connection-Manager-02](/img/content/Connection-Manager-02.png){:class="img-responsive" width="400px;" }
+2. Use Load Balancing Server (message server)
+- **System ID**: three-digit System ID (Property SID e.g.,  MSS) 
+- **Message Server**: name or IP address of the message server (Property MessageServer) 
+- **Logon group**: property LogonGroup, usually *PUBLIC*
+See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
-The form must be filled in as shown below. 
+#### Accessing via SAP router
 
-![Connection-Manager](/img/content/Connection-Manager.png){:class="img-responsive" width="600px" }
+If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name. <br>
+Example:<br>
+If the application server is "hamlet" and the router string is "/H/lear.theobald-software.com/H/", set the host property to "/H/lear.theobald-software.com/H/hamlet".
 
-**SAP target system**
+See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm).
 
-The SAP target system kann be an application server or message server (Load Balancing).
-For an application server the following data are required:  
-
-- Host name or IP address of the applikation server (Property Host) 
-- System/Instance number , a two-digit number between 00 und 99 (Property SystemNumber)
-
-For a message server the following data are required:  
-
-- Three-digit System ID (Property SID, z.B. MSS) 
-- Name or IP address of the Message Server (Property MessageServer) 
-- Logon group (Property LogonGroup, usually it is PUBLIC)
-
-SAP Library: [Load Balancing](https://help.sap.com/viewer/page-not-found?url=https%3A%2F%2Fhelp.sap.com%2Fsaphelp_nw2004s%2Fhelpdata%2Fde%2F22%2F04295c488911d189490000e829fbbd%2Fframeset.htm)
-
-**SAP router**
-
-If you access the SAP target system (Application server or Message server) via an SAP router. You should set the router string just before the host name or the message server. <br>
-Example: If the Application server is "hamlet" and the router string is "/H/lear.theobald-software.com/H/", you should set the Host property to "/H/lear.theobald-software.com/H/hamlet".
-
-SAP Library: [SAP-Router](https://help.sap.com/viewer/page-not-found?url=https%3A%2F%2Fhelp.sap.com%2Fsaphelp_nw04%2Fhelpdata%2Fde%2F4f%2F992df1446d11d189700000e8322d00%2Fframeset.htm)
-
-If you don't know which values to fill in, you may find that information by taking a look at the entries in your SAP logon pad.
-Otherwise please ask your SAP Basis team for help.
-
-If everything is filled out correctly, try to establish a connection to SAP by clicking the Test Connection button. If the connection is ok, you can start using the Xtract IS components now.
-
-**Trace Directory**
-
-You also have the option to log debug information. If you want to log debug information you have to enter a valid directory path into the [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products?fromSearch=true) field. 
-
-Please note that the logging usually should only be activated when requested by the Theobald Software support team. There is plenty of information that will be collected. This can decrease the capacity of your hard drives dramatically. Please note that the default logging is independent of the debug logging settings. The default logging will be accessed even if the trace directory entry in the connection manager is left blank.
-
-**RFC library (API)**: Classic or NetWeaver. <br>
-
-The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system, that communicates as Client or Server with the SAP system.  
-The RFC API exists in two different versions: 
-- Classic RFC API (classic RFC library)
-- NetWeaver RFC API (NetWeaver RFC library). 
-
-Note: When using the NetWeaver RFC library with DeltaQ or OHS extractions, the RFC destination in SM59 must be set to Unicode. 
-
-SAP Library: [RFC API: Classical & NetWeaver](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm) <br>
-SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). In our experience, however, it still works and in some cases (e.g. DeltaQ) runs more stable than the NetWeaver RFC library.
+{: .box-tip }
+**Tip:** Values to fill out the forms can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
 
 
-**Additions**
+### Trace Directory (2)
 
-![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.png){:class="img-responsive" width="600px" }
+You can log debug information and save it locally. Fill the **Trace directory** field with a local path to a folder, where you want to save the debug information.
+See further details in the knowledge base article [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products).
 
-**SNC enabled**
+{: .box-warning }
+**Warning!: Increase of used hard drive memory** <br>
+A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.
+Activate the debug logging only when necessary e.g., upon request of the support team.
 
-see also [SAP Connection with SNC](./sap-connection-with-snc)<br>
-Enable [SNC](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/e656f466e99a11d1a5b00000e835363f.html) (Secure Network Connection) for data encryption between SAP and Xtract IS.<br>
-Requires respective settings on the SAP side, as well. Please contact your SAP Basis team for support.
+### RFC libraries (3)
+The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system.  
+There are two options for using RFC libraries in Xtract IS:
+- Use classic RFC library (librfc32.dll)
+- Use NetWeaver RFC libraries (sapnwrfc.dll)
 
-**SNC Library (32 Bit, Visual Studio)**
+{: .box-tip }
+**Recommendation:** Use the not supported librfc32.dll for some extraction types, e.g., DeltaQ as runs more stable than the NetWeaver RFC library.
 
-Path to 32 bit version of encryption library used (when running the package in debug mode in VS/SSDT).
+See additional information on SAP libraries on the [SAP Help Site - RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm) <br>
 
-**SNC Library (64 Bit)**
+SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). 
 
-Path to 64 bit version of encryption library used (when running the deployed package on SSIS server).
+{: .box-note }
+**Note:** When using the NetWeaver RFC library with DeltaQ or OHS extractions, the RFC destination in SM59 must be set to Unicode. 
 
-**Partner Name**
+### Additions (4)
+In the upper part of the "Xtract IS Connection Manager" click **Additions** (4). The window "Xtract IS Connection Manager Additions" opens.
+![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.png){:class="img-responsive"}
 
-SNC partner name
+#### SNC (5)
+In the window "Xtract IS Connection Manager Additions" you can find several SNC (Secure Network Connection) options.
+For more details see [SAP Connection with SNC](./sap-connection-with-snc)<br>
 
-**Quality of Protection**
+#### Expert Options (6)
 
-Defines the SNC level of protection.
+Since 09.2017, SAP connection parameters are no longer stored as *Connection Strings*, but as *Properties*.<br>
+There is a *Property* for each component of the *Connection string*.
 
+This feature allows using a [sensitive environment variable](./sensitive-environment-variable-in-ssis-catalog) for the password in the Integration Services catalog.<br>
+The *Connection string* (see legacy mode below) did not support sensitive environment variables.<br>
+The newer version provides stronger encryption than password obfuscation.
 
-**Expert Options**
-
-Since 09.2017, SAP connection parameters are no longer stored as a single connection string but as properties.<br>
-There is a property for each component of the connection string. See Screenshot below.
-
-This allows for using a [sensitive environment variable](./sensitive-environment-variable-in-ssis-catalog) for the password in the Integration Services catalog.<br>
-The connection string (see legacy mode below) did not support sensitive environment variables.<br>
-This provides stronger encryption than password obfuscation (see below).
-
-You can either use connection properties or a connection string, not both.
+You can either use *Connection properties* or a *Connection string*, not both.
 
 **Legacy storage mode (connection string)**
 
-SAP connection parameters are set via a single connection string (default in XIS versions pre 09.2017).
+SAP connection parameters are set via a single *Connection string* (default in XIS versions pre 09.2017).
 
 **Obfuscate Password**
 
-Obfuscates SAP connection password so it's not stored in clear text. Switched on per default when activating Legacy storage mode.
+Masks SAP connection password. This option is switched on per default when activating **Legacy storage mode**.
 
-![XIS_Connection_Properties](/img/content/XIS_Connection_Properties.png){:class="img-responsive" width="600px" }
+**Internal Table Function**
+States the function module used for Xtract IS' internal communication with SAP (e.g., retrieving the metadata). To change the selected function module, type the name of function module manually. Using another function module can be necessary when adding permission restrictions within the functional module.

@@ -1,26 +1,37 @@
 ---
-ref: xu-destinations-10
+ref: xu-destinations-11
 layout: page
-title: CSV (via HTTP)
+title: Web Service - CSV
 description: CSV (via HTTP)
 product: xtract-universal
 parent: xu-destinations
 permalink: /:collection/:path
-weight: 10
+weight: 11
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-via-http
 ---
 
-**HTTP-CSV** <br>
 The destination is a generic CSV stream over HTTP. 
 
 The CSV (via HTTP) destination is supported by many products. The following products have been tested: Layer2 und INFONEA. 
 
-The following settings can be definet for the destination HTTP-CSV.
+### Adding HTTP - CSV Destination
+
+1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
+2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
+3. Select the *HTTP - CSV* destination from the drop-down list.
+4. Click **[OK]** to confirm.
+
+### Destination Details
+The window "Destination Details" consists of four subsections:
+- Name (states the file name)
+- Type (states the destination type)
+- CSV Settings (see below)
+- Convert / Encoding (see below)
 
 ![CSV-Destination-Details](/img/content/CSV-Destination-Details.png){:class="img-responsive"}
 
-**CSV Settings**
+### CSV Settings
 
 **Column seperator** <br>
 Defines how two columns in CSV are separated.
@@ -38,7 +49,7 @@ Defines if the first row contains the column names. This option is set per defau
 Defines if the last row contains a row separator. This option is set per default.
 
 
-**Convert / Encoding**
+### Convert / Encoding
 
 **Decimal separator** <br>
 Defines the decimal separator of decimal number for the output. Dot (.) is the default value. 

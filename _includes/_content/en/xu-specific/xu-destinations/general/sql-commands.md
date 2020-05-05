@@ -6,7 +6,7 @@ Defines the action on the target database before the data is inserted into the t
 - *Drop & Create*: Remove table if available and create new table (default).
 - *Truncate Or Create*: Empty table if available, otherwise create.
 - *Create If Not Exists*: Create table if not available.
-- *Prepare Merge*: prepares the merge process and creates e.g. a temporary staging table. For more information see section About Merging. 
+- *Prepare Merge*: prepares the merge process and creates e.g. a temporary staging table. See [merging](./merging-data) for more details. 
 - *None*: no action
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below. 
 
@@ -29,42 +29,25 @@ Defines how the data is inserted into the target table.
 #### Finalization
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
-- *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example. For more information, see About Merging. 
+- *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example.  
 - *None*: no action (default).
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 
 #### About Merging
-
-The prerequisite is that you have a table in which you want to merge the new data with the existing data.
-Ideally, you created this table in the first run with the corresponding preparation option and filled it with data with the Row Processing option Insert.
-
-In the subsequent runs, you now want to merge the new data records with the existing ones. 
-You therefore set the following options: 
-- Preparation to *Prepare Merge*, 
-- Row Processing on *Fill merge staging table* and 
-- Finalization to *Finalize merge.
-
-The merge process is performed using a staging table and takes place in three steps.
-In the first step, a temporary table is created in which the data is inserted in the second step.
-In the third step, the temporary table is merged with the target table and then the temporary table is deleted.
-
-![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.png){:class="img-responsive"}
-
-The Merge command updates existing records or inserts non-existing ones. Which fields are updated can be found in the SQL statement.<br>
-The SQL command can be changed if necessary, e.g. to exclude certain columns from the update.<br>
-Fields that do not appear in the SQL statement are not affected by changes.
-
-It is important that an appropriate index is created in order to execute the merge command quickly. 
-Without an index, the execution of the merge command would take a long time depending on the amount of data.
+Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
+See section [merging data](./merging-data)
 
 #### Custom SQL
 
-Here you can define your own SQL or script expressions. You can use existing SQL commands as templates. 
+Custom SQL option allows creating own SQL or script expressions. Existing SQL commands can be used as templates. 
 
-The following [link](../microsoft-sql-server/sql-server-custom-sql) provides an example of how to use predefined expressions. Please note that the custom SQL code is for SQL Server target environments. 
-```
-A syntactic adaptation of the code is necessary for other DB target environments!
-```
+See [Microsoft example](../microsoft-sql-server/sql-server-custom-sql) to understand how to use predefined expressions.
+
+{:.box-note}
+**Note:** the custom SQL code is used for SQL Server target environments. 
+A syntactic adaptation of the code is necessary for other DB target environments.
+
+See section [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) for more details.
 
 #### Templates
 

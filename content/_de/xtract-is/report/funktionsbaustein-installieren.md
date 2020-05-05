@@ -20,5 +20,5 @@ Falls Sie dies nicht selber machen können, bitten Sie einen Kollegen aus Ihrer 
 
 ![Report-CustomFunction-03](/img/content/Report-CustomFunction-03.png){:class="img-responsive"}
 
-Den Quellcode kopieren Sie bitte per Strg+C und Strg+V aus der Datei Z_XTRACT_IS_REMOTE_REPORT.txt in den Code-Editor (Reiter Source Code). Diese Datei finden Sie im Xtract-Installationsverzeichnis. Sichern Sie den Baustein und aktivieren Sie ihn. Nun ist er für die Benutzung bereit.<br>
+Den Quellcode kopieren Sie bitte per Strg+C und Strg+V aus der Datei Z_XTRACT_IS_REMOTE_REPORT.txt in den Code-Editor (Tab Source Code). Diese Datei finden Sie im Xtract-Installationsverzeichnis. Sichern Sie den Baustein und aktivieren Sie ihn. Nun ist er für die Benutzung bereit.<br>
 Im Code sind die einzelnen Schritte (Programmausführung, Spoolabruf, Job-Überwachung usw...) entsprechend dokumentiert. So kann der geneigte Leser leicht herausfinden, wie der ABAP Code funktioniert.

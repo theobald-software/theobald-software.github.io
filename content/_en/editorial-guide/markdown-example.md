@@ -38,13 +38,19 @@ Refer to [this github page](https://github.com/jneen/rouge/wiki/List-of-supporte
 
 A code block can be added with the following:
 
-{% highlight liquid %}
-
-{% raw %}{% highlight html %}
-  <html></html>
-{% endhighlight %} {% endraw %}
-
-{% endhighlight %}
+``` c#
+using(R3Connection con = new R3Connection())
+{
+    con.UserName = "steffan";
+    con.Password = "DontBeSoCurious";
+    con.Language = "EN";
+    con.Client = "800";
+    con.Host = "ec5.theobald-software.com";
+    con.SystemNumber = 00;
+    con.Protocol = ClientProtocol.NWRFC;
+    con.Open(false);
+}
+```
 
 # Elements
 ## Info boxes

@@ -21,7 +21,7 @@ Als Anwendungsbeispiel soll ein Urlaubsantrag gestellt und vom Manager genehmigt
 
 ![bia-manage-05](/img/content/bia-manage-05.png){:class="img-responsive"}
 
-Legen Sie anschließend über den Karteireiter *Meine Abwesenheiten* oder Team Kalender eine neue ein- oder mehrtägige Abwesenheit an. Verwenden Sie die Abwesenheitsart Urlaub, dann lässt sich auch gleich die Kontingentabtragung im Karteireiter *Übersicht* nachvollziehen. 
+Legen Sie anschließend über den Tab *Meine Abwesenheiten* oder Team Kalender eine neue ein- oder mehrtägige Abwesenheit an. Verwenden Sie die Abwesenheitsart Urlaub, dann lässt sich auch gleich die Kontingentabtragung im Tab *Übersicht* nachvollziehen. 
 
 Validieren Sie vor dem Abschicken Ihre Daten. Ein Urlaub darf beispielsweise nur für die Zukunft beantragt werden. 
 
@@ -31,7 +31,7 @@ Validieren Sie vor dem Abschicken Ihre Daten. Ein Urlaub darf beispielsweise nur
 
 ![bia-manage-07](/img/content/bia-manage-07.png){:class="img-responsive"}
 
-Öffnen Sie, bevor Sie zum Szenario für die Genehmigung von Abwesenheiten wechseln, den Karteireiter Übersicht und schauen Sie sich den Kontingentstand an. Im Beispiel stehen im Status ungenehmigt noch zwei Urlaubsanträge.
+Öffnen Sie, bevor Sie zum Szenario für die Genehmigung von Abwesenheiten wechseln, den Tab Übersicht und schauen Sie sich den Kontingentstand an. Im Beispiel stehen im Status ungenehmigt noch zwei Urlaubsanträge.
 
 ![bia-manage-08](/img/content/bia-manage-08.png){:class="img-responsive"}
 
@@ -39,7 +39,7 @@ Wechseln Sie danach zum Szenario für die Genehmigung von Abwesenheiten. Überpr
 
 ![bia-manage-09](/img/content/bia-manage-09.png){:class="img-responsive"}
 
-Passen Sie anschließend wieder das Zeitintervall für die Anwendung auf das laufende Kalenderjahr an, damit Sie den Antrag angezeigt bekommen. Wechseln Sie danach zum Karteireiter meine Abwesenheiten. 
+Passen Sie anschließend wieder das Zeitintervall für die Anwendung auf das laufende Kalenderjahr an, damit Sie den Antrag angezeigt bekommen. Wechseln Sie danach zum Tab meine Abwesenheiten. 
 
 ![bia-manage-10](/img/content/bia-manage-10.png){:class="img-responsive"}
 
@@ -55,7 +55,7 @@ Wechseln Sie anschließend zum Szenario für den Mitarbeiter und aktualisieren S
 
 ![bia-manage-13](/img/content/bia-manage-13.png){:class="img-responsive"}
 
-Ob die Abwesenheit auch tatsächlich in SAP verbucht wurde, lässt sich zum einen überprüfen, indem Sie auf den Karteireiter *Übersicht* wechseln. Dort ist jetzt nur noch ein Tag ungenehmigter Urlaub aufgeführt. Dies bedeutet, dass die Abwesenheit ordnungsgemäß in SAP verbucht wurde, denn nur in diesem Fall trägt eine Abwesenheit von einem Kontingent ab. 
+Ob die Abwesenheit auch tatsächlich in SAP verbucht wurde, lässt sich zum einen überprüfen, indem Sie auf den Tab *Übersicht* wechseln. Dort ist jetzt nur noch ein Tag ungenehmigter Urlaub aufgeführt. Dies bedeutet, dass die Abwesenheit ordnungsgemäß in SAP verbucht wurde, denn nur in diesem Fall trägt eine Abwesenheit von einem Kontingent ab. 
 
 
 ![bia-manage-14](/img/content/bia-manage-14.png){:class="img-responsive"}
@@ -84,7 +84,7 @@ Wie Sie dort sehen können, wurden insgesamt 6 Urlaubstage vom Gesamtanspruch vo
 
 ![bia-manage-20](/img/content/bia-manage-20.png){:class="img-responsive"}
 
-Dies deckt sich mit der Anzeige im Szenario in Karteireiter *Übersicht* (Genehmigt bis...). 
+Dies deckt sich mit der Anzeige im Szenario in Tab *Übersicht* (Genehmigt bis...). 
 
 ![bia-manage-21](/img/content/bia-manage-21.png){:class="img-responsive"}
 

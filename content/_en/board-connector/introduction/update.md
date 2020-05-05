@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-08
+ref: bc-introduction-09
 layout: page
 title: Update Installation
 description: Update Installation
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 8
+weight: 9
 lang: en_GB
 ---
 

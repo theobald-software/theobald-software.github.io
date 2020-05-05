@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-08
+ref: xu-introduction-09
 layout: page
 title: Update Installation
 description: Update Installation
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 8
+weight: 9
 lang: en_GB
 ---
 

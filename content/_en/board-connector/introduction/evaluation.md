@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-06
+ref: bc-introduction-07
 layout: page
 title: Evaluation
 description: Evaluation
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: en_GB
 ---
 

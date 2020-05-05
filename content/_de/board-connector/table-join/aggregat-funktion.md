@@ -10,11 +10,11 @@ weight: 5
 lang: de_DE
 ---
 
-Im Reiter Grouping Criteria können Sie eine Bedingung mit einer Aggregat-Funktion definieren. Davor müssen Sie aber erstmal die Aggregat-Funktion definieren.
+Im Tab Grouping Criteria können Sie eine Bedingung mit einer Aggregat-Funktion definieren. Davor müssen Sie aber erstmal die Aggregat-Funktion definieren.
 
 ![tj-aggregate-count](/img/content/tj-aggregate-count.png){:class="img-responsive"}
 
-Im Reiter Grouping Criteria klicken Sie auf Click here to define criteria.
+Im Tab Grouping Criteria klicken Sie auf Click here to define criteria.
 
 ![tj-grouping-criteria-0](/img/content/tj-grouping-criteria-0.png){:class="img-responsive"}
 

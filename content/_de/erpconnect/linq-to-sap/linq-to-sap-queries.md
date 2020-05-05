@@ -27,7 +27,7 @@ Im Dialog kann dann angegeben werden, ob die Werte der jeweiligen Select Option 
 
 ![LINQToERP-Queries_004](/img/content/LINQToERP-Queries_004.png){:class="img-responsive"}
 
-Im *Fields*-Reiter können nicht benötigte Felder ausgeklammert oder umbenannt werden.
+Im *Fields*-Tab können nicht benötigte Felder ausgeklammert oder umbenannt werden.
 
 ![LINQToERP-Queries_005](/img/content/LINQToERP-Queries_005.png){:class="img-responsive"}
 

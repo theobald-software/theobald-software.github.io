@@ -1,12 +1,12 @@
 ---
-ref: xu-table-06
+ref: xu-table-07
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions
 product: xtract-universal
 parent: table
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=avoid-restrictions
 ---

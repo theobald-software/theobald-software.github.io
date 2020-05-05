@@ -47,6 +47,6 @@ HINWEIS: Diese Einstellungen beziehen sich nicht auf die Transportverschlüsselu
 
 
 **CSV Settings**<br>
-Die Einstellungsmöglichkeiten im Reiter CSV Settings entsprechen denen der allgemeinen [http-csv](../csv-via-http) Settings.
+Die Einstellungsmöglichkeiten im Tab CSV Settings entsprechen denen der allgemeinen [http-csv](../csv-via-http) Settings.
 
 ![XU_S3_DestinationDetails2](/img/content/XU_S3_DestinationDetails2.png){:class="img-responsive"}

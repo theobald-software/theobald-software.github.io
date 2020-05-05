@@ -147,7 +147,7 @@ Gehen Sie zur Zentraladministration -> System Setting -> Manage services on serv
 
 **Eine ERPConnect Service Instanz auf einem neuen Farmserver installieren** 
 
-Um eine ERPConnect Service Instanz auf einem neu zur Farm hinzugefügtem Server zu installieren, starten Sie das ECS Support Tool ERPConnectServices.SupportTool.exe, gehen Sie zum Servers-Reiter, wählen Sie den SP-Server und wählen Sie den entsprechenden Eintrag im Kontextmenü.
+Um eine ERPConnect Service Instanz auf einem neu zur Farm hinzugefügtem Server zu installieren, starten Sie das ECS Support Tool ERPConnectServices.SupportTool.exe, gehen Sie zum Servers-Tab, wählen Sie den SP-Server und wählen Sie den entsprechenden Eintrag im Kontextmenü.
 In einer SharePoint-Farm werden die ERPConnect Services Runtime und die BCS Runtime automatisch global installiert. 
 
 **SharePoint-Farm-Installation für SharePoint 2016 (MinRole-Serverrollen-Konzept)**

@@ -12,6 +12,6 @@ old_url: /Xtract-RS-DE/default.aspx?pageid=anhang
 ---
 
 ### Berechtigungen 
-Die aktuellen Informationen zum Thema Berechtigung finden Sie in der  Knowledge Base unter:
+Die aktuellen Informationen zum Thema Berechtigung finden Sie in der Knowledge Base unter:
 
 - [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)

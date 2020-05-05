@@ -21,7 +21,7 @@ Legen Sie einen neuen Material-Datensatz an:
 
 Speichern Sie. 
 
-Selektieren Sie nun den neuen Datensatz und klicken Sie im List-Reiter auf Workflows. 
+Selektieren Sie nun den neuen Datensatz und klicken Sie im List-Tab auf Workflows. 
 
 ![Nintex-SP-List-Material-WF-InProgress](/img/content/Nintex-SP-List-Material-WF-InProgress.png){:class="img-responsive"}
 

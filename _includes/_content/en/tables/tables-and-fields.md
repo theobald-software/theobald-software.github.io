@@ -20,11 +20,14 @@ The column name and the column description can be filtered.
 **Aggregate Function** <br>
 The following aggregation functions are available for column contents:
 - None: No aggregation 
-- AVG: Average
+- MEAN: Average
 - COUNT: Number  
 - MAX: Maximum
 - MIN: Minimum 
 - SUM: Total
+
+{: .box-tip }
+**Tipp:** The aggregate function is only available by numeric field data types (e.g., INT, FLOAT, DECIMAL).
 
 **Conv. - Use Conversion Routine** <br>
 Activating the checkboxes defines whether the conversion routines stored in the Data Dictionary are used for the respective fields. 
@@ -32,7 +35,12 @@ Typical examples are the language key (for example, D in the database, but DE af
 After the conversion, the value is always displayed as it would appear in a transaction in the SAP GUI. 
 
 {: .box-note}
-**Note:** The option "Use Conversion Routine" is only supported with function module [Z_XTRACT_IS_TABLE_COMPRESSION](./extraction-settings). 	
+**Note:** the option "Use Conversion Routine" is only supported with function module [Z_XTRACT_IS_TABLE_COMPRESSION](./extraction-settings). 
+
+The Table component imports and highlights the dedicated indices, such as primary key or sorting options, from SAP. 
+
+{: .box-note}
+**Note:** using the indicated fields for filtering increases performance when applying WHERE-clause.   
 
 ### Preview
 The subsection *Preview* displays a real-time preview of the selected fields, when the button **"[Load live preview]** is clicked.

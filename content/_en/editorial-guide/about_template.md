@@ -86,6 +86,7 @@ The OLs (ordered lists) are used for instructions and steps, if possible.
 - Fields within a window: bold - **Name** 
 - Input values: italics - *MATNR*
 - Drop-down menu options: italics - *EC5* 
+- Tabs: italics - *Exports*
 
 ### Tables
 <!---Einfache Tabellen verwenden, Markierungen in Tabellen möglichst vermeiden-->
@@ -218,11 +219,11 @@ WHERE [Extraction_Date] IS NULL;
 
 <!--Code soll mit dem Element inline code ausgezeichnet werden-->
 
-#### Examples
-Use code blocks for exapmles.
+#### Error messages
+Use code blocks for error messages.
 
 ```
-This is an example. 
+This statement only works with lib:// paths in this script mode.
 ```
 
 

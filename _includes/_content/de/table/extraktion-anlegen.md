@@ -1,16 +1,31 @@
-Das Fenster "Define data source for SAP Tables" wird geöffnet. <br>
-In diesem Fenster können Sie einfache Tabellenextraktionen definieren oder Tabellen für Extraktionen zusammenfügen (Table Joins). Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
+### Tabellen hinzufügen
 
-1. Klicken Sie auf **[Add]**, um eine Tabelle hinzuzufügen.<br>
-![Add-New-Table](/img/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
-Das Fenster "Table Lookup" wird geöffnet.<br/>
+1. Innerhalb des Fensters "Define data source for SAP Tables" klicken Sie auf **[Add]**. Das Fenster "Table lookup" wird geöffnet.
+![Table-Lookup](/img/content/table/table_main-window_add.png){:class="img-responsive" }
+2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden Tabelle ein.
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
-2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden Tabelle ein. Die Verwendung des Wildcard-Operators (*) ist unterstützt.<br>
-3. Klicken Sie auf den Suche-Button (2). <br>
+3. Klicken Sie auf **[Search]** (Vergrößerungsglas)(2).
 Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
 4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **OK** (4). <br>
+
+{: .box-tip }
+**Tipp:** Wildcards wie * werden unterstützt. Beachten Sie, dass die Wildcard nach dem Suchnamen gestellt werden soll.
+
 Die Anwendung kehrt zum Hauptfenster "Define data source for SAP Tables" zurück. <br>
-Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Felder** angezeigt. <br>
-Sie können entweder alle oder nur einzelne Spalten auswählen. <br>
+
+Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt. <br>
 ![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
-5. Klicken Sie auf **[OK]**, um die Extraktion zu bestätigen und im Repository, d.h. auf dem Server, zu speichern.
+
+
+### Tabellen filtern
+
+Sie können entweder alle oder nur einzelne Spalten für die Extraktion auswählen. Die Spalten werden automatisch für die Tabellenextraktion ausgewählt. Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.<br>
+Durch Anklicken der Kopfzeilen können Sie die Spalten nach Namen oder Beschreibung sortieren. <br>
+Um nach einem bestimmten Spaltennamen oder Beschreibung zu suchen, beginnen Sie mit der Eingabe eines Wortes in einem der Filterfelder.<br>
+
+![Table-Main](/img/content/table/fields_filter-search.png){:class="img-responsive"}
+
+### Live-Vorschau anzeigen
+
+1. Klicken Sie auf **[Load live preview]**, um 100 Datensätze zur Vorschau zu laden.
+2. Klicken Sie auf **[OK]**, um die Extraktion zu bestätigen und im Repository, d.h. auf dem Server, zu speichern.

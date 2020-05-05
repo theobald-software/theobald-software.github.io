@@ -11,49 +11,56 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=ssis-migration
 ---
 
-Dieses Kapitel behandelt die Migration von SSIS Paketen.<br>
-Beispielhaft wird ein SQL Server 2012 nach SQL Server 2017 migriert. Dies erfordert ebenfalls eine Migration der SSIS Pakete.
+Der folgende Abschnitt befasst sich mit den Informationen über die Migration von SSIS Paketen (mit Xtract IS-Komponenten) von einer niedrigeren SQL Server/SSIS-Version in eine höhere Version. 
+Beispielweise Sie migrieren von SQL Server 2012 nach SQL Server 2019. Diese Migration erfordert ebenfalls eine Migration der SSIS Pakete.
 
-Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von . Mehr Details finden Sie im Knowledgebase-Artikel [Step-by-step instructions for migrating SSIS 2008/2012 packages to SSIS 2017](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
+Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSDT- und SSIS-Version. Mehr Informationen dazu finden Sie im Knowledgebase-Artikel [Step-by-step instructions for migrating SSIS 2008/2012 packages to SSIS 2019](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
 
-### Migration von SSIS 2008/2012 nach SSIS 2017
-1.  Migration mithilfe des *XtractISConversionPreparer.exe*
-2.  Anpassung der Deployment-Zielumgebung *Migration von SSIS 2014/2016 nach SSIS 2017*
-3.  Installation der aktuellen Xtract IS Version 
+### Migration von SSIS 2008/2012 nach SSIS 2019
+1.  Bereiten Sie die SSIS-Pakete für Migration mithilfe des *XtractISConversionPreparer.exe*.
+2.  Im SSIS-Paket, passen sie die Deployment-Zielumgebung an: SSIS 2019.
+3.  Installieren Sie die aktuelle Xtract IS Version.
 
-### 1. Ausführen der XtractISConversionPreparer.exe
-Der Xtract IS Conversion Preparer ist ein Tool, welches Pakete, die für ältere Versionen von SSIS (z.B. 2008) erstellt worden sind und Xtract Komponenten beinhalten, auf die Migration für neuere SSIS-Versionen (z.B. 2014 oder 2016) vorbereitet. Sie finden es im Installationsverzeichnis von Xtract IS.
+### Ausführen der XtractISConversionPreparer.exe
+Der XtractIS Conversion Preparer ist ein Tool, das SSIS-Pakete (inkl. Xtract IS-Komponente), die für ältere Versionen von SSIS erstellt wurden, für die Migration auf neuere Versionen von SSIS vorbereitet. 
 
-Für die Migration nach SSIS 2017 wählen Sie bitte SSIS 2014 oder SSIS 2016 aus.
 
-Das Tool legt während der Konvertierung ein Backup Ihrer Pakete an. Es ist jedoch sinnvoll, vor der Konvertierung manuell eine Sicherheitskopie der SSIS Pakete anzulegen.
+{: .box-note }
+**Hinweis:** Nur SSIS-Pakete, die mit SSIS 2012 erstellt wurden, müssen mit dem XtractIS Conversion Preparer konvertiert werden.  Der XtractIS Conversion Preparer befindet sich im Verzeichnis `C:\Program Files\XtractIS\XtractISConversionPreparer.exe`. 
 
-Wir starten das Tool und fügen mit *Add file(s)* neue SSIS Pakete hinzu, die Sie in einem Dateidialog auswählen können.
 
+Für alle anderen neueren SSIS-Pakete passen Sie die "Deployment Target Version" (s.u.) in den Projekteigenschaften an. <br>
+
+
+1. Starten Sie den XtractIS Conversion Preparer.
+2. Für die Migration nach SSIS 2019 wählen Sie *SSIS 2016* aus dem Pull-Down-Menü aus.
+Während der Konvertierung erstellt das Tool ein Backup Ihres SSIS-Pakets. <br>
+**Empfehlung:** Erstellen Sie vor der Konvertierung manuell eine Sicherungskopie (Backup).
+3. Klicken Sie auf **[Add file(s)]** und wählen Sie im Dateidialog die Pakete aus, die für die Konvertierung vorbereitet werden müssen.
+Wenn sich ein Paket im Debug-Ordner befindet, wird es automatisch eingebunden. 
+4. Wählen Sie aus der Drop-Down-Liste die SSIS-Version aus, für die die Pakete konvertiert werden sollen.
 ![XIS_ConversionPreparer_2016](/img/content/XIS_ConversionPreparer_2016.png){:class="img-responsive"}
+5. Klicken Sie auf **[Prepare]**, um den Konvertierungsprozess zu starten.<br>
+Nach dem Öffnen des konvertierten Pakets in Visual Studio wird, je nach Version, 
+der Visual Studio-Konvertierungsassistent (Conversion Wizard) gestartet und konvertiert das Paket in das Format der ausgewählten Visual Studio Version.
 
-Sofern ein Paket im Debug-Ordner existiert, wird dieses automatisch mit einbezogen.
-Anschließend wählen Sie aus der Drop-Down Liste die SSIS-Version aus, für die die Pakete konvertiert werden sollen.
+{: .box-tip }
+**Tipp:** Wenn nach der Konvertierung des SSIS-Pakets mit dem XtractIS Conversion Preparer eine Fehlermeldung erscheint, 
+müssen Sie möglicherweise den SSIS-Paketschutz zuerst deaktivieren, bevor Sie den XtractIS Conversion Preparer ausführen können.<br>
 
-Mit Klick auf den Button Prepare wird die Konvertierung schließlich ausgeführt.
+{: .box-warning }
+**Warnung! Paket läuft nicht erfolgreich durch**<br> 
+Beim Öffnen der konvertierten SSIS-Pakete in Visual Studio muss die Version des Zielservers entsprechend geändert werden.
+Klicken auf **[Save the SSIS package]**, um dies sicherzustellen.
 
-Nach dem Öffnen des Paketes in Visual Studio erscheint gegebenenfalls der Visual Studio Conversion Wizard, der das Paket in das entsprechende Visual Studio Format konvertiert.
 
-Sollte nach Konvertierung des Pakets und Öffnen in Visual Studio eine entsprechende Fehlermeldung erscheinen, müssen Sie eventuell den ProtectionLevel im SSIS Paket vor der Konvertierung deaktivieren.
+Beispiel: Wenn Sie im XtractIS Conversion Preparer 'SSIS 2016' ausgewählt haben, ändern Sie die Version des Zielservers zu 'SQL Server 2016'. 
 
-**ACHTUNG:**<br>
-Nachdem Sie die konvertierten Pakete in Visual Studio geöffnet haben, ändern Sie die Zielversion des SQL Servers in den Projekteigenschaften und **speichern Sie das SSIS-Paket**, siehe Screenshot.
-Wenn Sie im Xtract IS Conversion Preparer 'SSIS 2014' ausgewählt hatten, ändern Sie die Zielversion auf 'SQL Server 2014'. Wenn Sie 'SSIS 2016' ausgewählt hatten, ändern Sie auf 'SQL Server 2016'.
 
-Nachfolgend die detaillierte [Schritt für Schritt Anweisung](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
+### Migration von SSIS 2014/2016 nach SSIS 2019
+Bei VS/SSDT 2015 sowie 2019 können Sie die Zielversion des SQL Servers (Deployment Target Version) in den Projekteigenschaften auswählen.
 
-### 2. Migration von SSIS 2014/2016 nach SSIS 2017
-Bei VS/SSDT 2015 sowie 2017 können Sie die Zielversion des SQL Servers (Deployment Target Version) in den Projekteigenschaften auswählen.
+![VS-Deployment-Target](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
 
-![VS-Deployment-Target](/img/content/VS-Deployment-Target.png){:class="img-responsive"}
-
-Weitere Informationen zu den unterstützten SSIS- und Visual Studio-Versionen bzw. den Upgrade auf höhere SSIS-Versionen finden Sie hier:<br> 
-[List of the SSIS/VS Versions Supported by Xtract IS(englisch)](https://kb.theobald-software.com/xtract-is/list-of-the-ssisvs-versions-supported-by-xtract-is)
-
-### 3. Aktuelle XtractISSetup.exe installieren
-Bitte installieren Sie mittels XtractISSetup.exe die aktuelle Xtract IS Version auf die Deployment Umgebung (SSIS Server). In diesem, Zuge ist die Ausführung und Installation der aktuellen  Version auf die Entwicklungsumgebung ebenfalls notwendig (Visual Studio).
+### Aktuelle XtractISSetup.exe installieren
+Installieren Sie die aktuelle Xtract IS Version auf Ihrem SSIS Server und auf jeder anderen Deployment-Umgebung (Visual Studio/SSDT).

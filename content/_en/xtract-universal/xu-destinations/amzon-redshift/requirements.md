@@ -15,7 +15,7 @@ For using this destination you need a running Redshift instance and valid creden
 Furthermore your client computer has to be authorized to access the cluster.
 
 For establishing a connection to Redshift a suitable database driver is required.
-Please download and install the 64 bit Amazon Redshift ODBC driver from [here](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html).
+Download and install the 64 bit Amazon Redshift ODBC driver from the official [website](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html).
 
 If the driver is missing the connection test will fail:
 
@@ -29,11 +29,7 @@ There are two ways for installing the assembly:
 1. Register the Mono.Security assembly in your global assembly cache (gac):
 - Open the command-line and browse to your Xtract Universal installation directory<br> 
 	cd "C:\Program Files\XtractUniversal"
-
 - Install the Mono.Security.dll file to your global assembly cache using gacutil<br>
-	gacutil -i "C:\Program Files (x86)\Mono-2.0\lib\mono\2.0\Mono.Security.dll"
-
-(For further information, please have a look at [This article](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-install-an-assembly-into-the-gac))	
-
-
+	gacutil -i "C:\Program Files (x86)\Mono-2.0\lib\mono\2.0\Mono.Security.dll"<br>
+	For more information, see the article abot [installing an assembly into the global assembly cache](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-install-an-assembly-into-the-gac)
 2. Copy the Mono.Security.dll file into your Xtract Universal directory.

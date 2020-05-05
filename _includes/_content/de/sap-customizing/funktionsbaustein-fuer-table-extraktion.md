@@ -1,28 +1,25 @@
-Insbesondere bei älteren SAP Releases bestehen einige Einschränkungen bei der Extraktion von Tabellen wenn der SAP Standardfunktionsbaustein RFC_READ_TABLE verwendet wird:
+### Einschränkungen von RFC_READ_TABLE 
+Insbesondere bei älteren SAP Releases bestehen einige Einschränkungen bei der Extraktion von Tabellen wenn der SAP Standardfunktionsbaustein (RFC_READ_TABLE) verwendet wird:
 
 - Die Gesamtbreite der zu extrahierenden Spalten darf 512 Bytes nicht überschreiten
 - Andere Einschränkungen existieren abhängig von der SAP-Version. 
   Fehler können auftreten bei der Extraktion von Tabellen, die eine oder mehrere Spalten vom Typ f (FLTP, floating point), DEC (Decimal und Prozentzahl z.B.) oder x (RAW, LRAW) haben.
 - Schlechte Extraktionsperformance bei Extraktion großer Tabellen.
 
-Um diese Einschränkungen zu umgehen, installieren Sie bitte unser ABAP Framework Z_THEO_READ_TABLE auf Ihrem SAP-System.
-(Bis Version 1.x des Z_THEO_READ_TABLE handelte es sich um einen einfachen Funktionsbaustein. Seit 2.x wurde eine Reihe von ABAP Klassen und weiteren DDIC Objekten hinzugefügt, s. Screenshot unten).
+Um die oben genannte Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustein *Z_THEO_READ_TABLE* von Theobald Software auf Ihrem SAP-System.
 
+## ABAP Framework Z_THEO_READ_TABLE installieren
 
-Sie können das ABAP Framework mit Hilfe eines der mitgelieferten Transportaufträge installieren.
-- Z_THEO_READ_TABLE.zip *oder* 
-- Z_THEO_READ_TABLE-before_740SP05.zip<br>
+{: .box-note}
+**Hinweis:** Lesen Sie die README.txt, die sich im Installationsornder (z.B.`C:\Program Files\XtractProduct\ABAP\README.txt`) befindet, bevor Sie den Z-Funktionsbaustein installieren.
 
-Die zip-Dateien finden Sie im Unterordner *ABAP* des Xtract-Installationsordners. <br>
-Bitte leiten Sie die zip-Dateien an Ihre SAP Basis Administratoren weiter mit der Bitte um Import ins SAP System.
+{: .box-warning}
+**Warnung! Fehlerhafter Import des Funktionsbausteins**
+Die Version des Transportauftrags muss mit der Version von SAP_ABA übereinstimmen, sonst tritt beim Importvorgang ein Fehler auf.
+Für ältere SAP-Releases verwenden Sie den älteren Transportauftrag: Z_THEO_READ_TABLE-before_740SP05.
 
-Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im folgenden [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
+Beim Einspielen der Z_THEO_READ_TABLE-before_740SP05 auf älteren SAP-Releases kann ein Syntaxfehler auftreten. Wenden Sie sich an den Support von Theobald Software und senden Sie die dedizierte Fehlermeldung.
 
-**Achtung**:
-- Die Verwendung des Z_THEO_READ_TABLE erfordert **SAP_ABA Version 6.40** oder höher.
-- Z_THEO_READ_TABLE-before_740SP05 unterstützt keine sub-selects in WHERE-Bedingungen. Das ist eine Einschränkung des [SAP Open SQL](https://blogs.sap.com/2014/02/06/abap-news-for-release-740-sp05/). Bitte nutzen Sie für diesen Fall den Z_XTRACT_IS_TABLE_COMPRESSION.
-- Auf einigen älteren SAP Releases kann der Import des Z_THEO_READ_TABLE-before_740SP05 einen Syntax Fehler erzeugen. Bitte kontaktieren Sie für diesen Fall den Theobald Software Support.
-- Zur De-Installation des ABAP Frameworks Z_THEO_READ_TABLE können Sie den Löschauftrag *Z_THEO_READ_TABLE-deletion_ request* verwenden.
-
-
+- Z_THEO_READ_TABLE.zip enthält die Version 1.x (bis 1.11) von Z_THEO_READ_TABLE - den einzigen benutzerdefinierten Funktionsbaustein.
+- Z_THEO_READ_TABLE-before_740SP05.zip enthält die Version 2.x von Z_THEO_READ_TABLE - den benutzerdefinierten Funktionsbaustein, eine Reihe von ABAP-Klassen und andere DDIC-Objekte. <br>
 ![Z_THEO_READ_TABLE_SE80](/img/content/Z_THEO_READ_TABLE_SE80.png){:class="img-responsive" }

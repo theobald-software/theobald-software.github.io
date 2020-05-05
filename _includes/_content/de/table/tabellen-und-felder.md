@@ -9,20 +9,23 @@ Der Tab *Tables and Fields* besteht aus drei Unterabschnitten:
  ![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
 
 ### Fields
-![Fields](/img/content/table/table_fields_filter.png)
+![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 Folgende Optionen stehen rechts unter *Fields* bei der Spaltenselektion zur Verfügung: <br>
-{:class="img-responsive"}
+
 **Filter** <br>
 Der Spaltenname (Name) und die Spaltenbeschreibung (Description) lassen sich filtern.
 
 **Aggregate Function** <br>
 Es stehen folgende Aggregatfunktionen für Spalteninhalte zur Verfügung:
 - None: Keine Aggregierung 
-- AVG: Durchschnitt
+- MEAN: Durchschnitt
 - COUNT: Anzahl  
 - MAX: Maximum
 - MIN: Minimum 
 - SUM: Summe
+
+{: .box-tip }
+**Tipp:** Die Aggregatfunktionen sind nur bei nummerischen Felddatentypen (z.B. INT, FLOAT, DECIMAL) verfügbar.
 
 **Conv. - Use Conversion Routine**  <br>
 Ankreuzen des Kästchens definiert, ob die im Data Dictionary hinterlegte Konvertierungsroutinen für die jeweiligen selektierten Felder angewendet werden. 
@@ -30,14 +33,18 @@ Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank,
 Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
 
 {: .box-note}
-**Note:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein [Z_XTRACT_IS_TABLE_COMPRESSION](./extraktionseinstellungen) unterstützt. 
+**Hinweis:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein [Z_XTRACT_IS_TABLE_COMPRESSION](./extraktionseinstellungen) unterstützt. 
 
+Die Table-Komponente importiert und markiert die dedizierten Indizes, wie z.B. Primärschlüssel oder Sortieroptionen, aus SAP.
+
+{: .box-note}
+**Hinweis:** Die Verwendung der indizierten Felder zur Filterung erhöht die Performance bei der Anwendung der WHERE-Bedingung.
 
 ### Preview
 Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
 
 
-### Buttons
+### Schaltflächen
 **[Load live preview]** <br>
 Ermöglicht eine Echtzeit-Vorschau der Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
 Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen. 

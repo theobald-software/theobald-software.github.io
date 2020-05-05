@@ -1,60 +1,67 @@
-To change the server settings, please click on the main menu on *Server -> Settings*.
-
-There are two tabs to change the server settings: *Configuration Server* and *Web Server*. 
+### To open server settings
+In the main window of the Designer navigate to **[Server] > [Settings]**. The 'Server settings' window opens. There are two tabs in the 'Server settings' window:
+- *Configuration Server*
+- *Web Server*
 
 ### Configuration Server
 
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.png){:class="img-responsive"}
 
+#### Designer connections
+
 **Port** <br>
-Defines the port number, where the server communicates with the designer. The default is 8064. If you set a different port, you will need to add this portnumber to the host name on the logon screen. [host name]:[port]
+Defines the port number for communication between Server and Designer. The default is 8064. If you set a different port, add the new port number to the host name on the logon screen ([host name]:[port]).
+
+![XU-Designer-Logon](/img/content/xu/xu-designer-logon.png){:class="img-responsive"}
 
 **Max. age of log files (days)** <br>
-Defines the maximum age of the congig server log files in days. After this period, the log files are beeing deleted.
+Defines the maximum age of the config server [log files](../logging/server-logging) in days. After this period the log files are deleted.
 
 **Authentication methods** <br>
-see chapter [User Management](../security/user-management)
+See section [User Management](../security/user-management).
 
 **Select X.509 certificate** <br>
 
-See chapter [Installing an X.509 certificate](../security/install-x.509-Certificate) 
+See section [Installing an X.509 certificate](../security/install-x.509-Certificate).
 
-
-**Access Management** <br>
-see chapter [Access Management](../security/access-management)
+#### Access Management
+See section [Access Management](../security/access-management).
 
 ### Web Server
-
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"} 
 
-**Protocol / Access control** <br>
-**HTTP Unrestricted / HTTP port** <br>
-Defines the port number, on which the XU server receives HTTP requests of an extraction. The run statement generates an HTTP-URL.
+#### Protocol / Access control
 
-**HTTPS Unrestricted / HTTPS port** <br>
-Enables secure datatranfer via HTTPS.
+**HTTP - Unrestricted / HTTP port** (default) <br>
+Defines the port number, on which the XU server receives HTTP requests of an extraction. The run statement generates an HTTP-URL. 
 
-Defines the port number, on which the XU server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL.
+**HTTPS - Unrestricted / HTTPS port** <br>
+Enables secure data transfer via HTTPS.
 
-If you want to receive data via HTTPS you need to install a TLS certificate on the server where the Xtract Universal service is running. 
-See chapter [Installing an X.509 certificate](../security/install-x.509-Certificate) 
+Defines the port number, on which the XU server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL. Port option defines the HTTPS listener port.
 
+If you want to receive data via HTTPS you need to install a TLS certificate on the server, on which the Xtract Universal service is running. <br>
+See section [Installing an X.509 certificate](../security/install-x.509-Certificate). 
 
 **HTTPS - Restricted to AD users with Designer read access** <br>
-See *HTTPS - Unrestricted*. In addition to that this setting enables access control for executing an extraction. Extractions can only be executed by Windows AD users who have at least been assigned *read access* in the *Configuration Server* tab. Please do also see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and chapter on [server security](../security/server-security).  
+See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by Windows AD users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and section [server security](../security/server-security).  
 
+#### Misc.
 
 **Max. age of log files (days)** <br>
-Defines the maximum age of the webserver log files in days. After that the log files will be deleted. 
+Defines the maximum age of the web server [log files](../logging/server-logging) in days. After this period the log files are deleted.
 
 **Enable setup distribution for clients** <br>
-Defines, whether the setup of the Xtract Universal version running on the server should be downloaded.
-When an older XU designer version is connected to a newer XU server version, you will be prompted to download and update the designer with the XU version. 
+Defines whether the setup of the Xtract Universal version running on the server needs to be downloaded. When an older Xtract Universal Designer version is connected to a newer Xtract Universal Server version, you are be prompted to download and update the Designer with the Xtract Universal version. 
 
+#### Result cache
 
-**Result cache** <br>
+{:.box-note}
+**Note:** *Cash results* option is only available in [pull destinations](../xu-destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+
 **Target directory** <br>
-Sets the directory for the buffer files. The default ist the result-cache folder in the Xtract Universal installation directory.
+Sets the directory for the buffer files. The default ist the result-cache folder in the Xtract Universal installation directory: <br>
+`C:\Program Files\XtractUniversal\result-cache`.
 
 **Max. cached runs** <br>
 Defines the maximum count of results of different extractions in the buffer.

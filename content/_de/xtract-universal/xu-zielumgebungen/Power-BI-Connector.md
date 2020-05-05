@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-81
+ref: xu-destinations-82
 layout: page
 title: Power BI Connector
 description: Power BI Connector
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-zielumgebungen
 childidentifier: Power-BI-Connector
 permalink: /:collection/:path
-weight: 81
+weight: 82
 lang: DE_DE
 old_url: 
 ---

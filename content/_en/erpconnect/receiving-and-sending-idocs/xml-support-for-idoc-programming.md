@@ -11,11 +11,10 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=xml-support-for-idoc-programming
 ---
 
-**The sample code is located in the ERPConnect installation directory in the in IdocSendXML directory.**
 
 ERPConnect offers support for both the IDoc schema and IDoc data located in XML-files.
 
-The two screenshots below show an IDoc schema file (of the ORDERS01 type) and an IDoc data file. Both are also included in the samples directory. Please refer to chapter [IDoc-Schema-Generator](../tools/idoc-schema-generator).
+The two screenshots below show an IDoc schema file (of the ORDERS01 type) and an IDoc data file. Creating an Schema is possible with the IDoc Schema Generator. Please refer to chapter [IDoc-Schema-Generator](../tools/idoc-schema-generator).
 
 {% highlight xml %}
 xml version="1.0" encoding="ISO-8859-1" ?>

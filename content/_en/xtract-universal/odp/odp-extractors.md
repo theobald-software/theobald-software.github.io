@@ -6,7 +6,7 @@ description: Extractors and Datasources
 product: xtract-universal
 parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 ---
 

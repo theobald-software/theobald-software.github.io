@@ -23,7 +23,3 @@ The node’s (technical) name.
 **NodeText** <br>
 The descriptive text in the respective logon language (only when FetchText is set to true in the settings).
 
-The original hierarchy of PM_COUNTRY looks in SAP as follows:
-
-![Hierarchy-Table-SAP](/img/content/extractors.bwhier/Hierarchy-Table-Output.png){:class="img-responsive"}
-

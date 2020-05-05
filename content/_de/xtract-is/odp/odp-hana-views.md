@@ -6,7 +6,7 @@ description: HANA Views
 product: xtract-is
 parent: odp
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 ---
 

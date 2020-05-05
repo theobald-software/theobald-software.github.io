@@ -15,3 +15,4 @@ The editorial guidelines consist of the following parts:
 - [Document template](./editorial-guide/about_template)
 - [Conventions for creating screenshots](./editorial-guide/screenshot_conventions)
 - [Editorial processes - visualised ](https://theobaldsoftware.sharepoint.com/:f:/s/PresalesSupportProdMgmtDoc/EqxZ6qf_qmVMvwsmkZPIHD4BlR6W0kYCFxwQ7iRg7SJ1ZQ?e=Jy4oN5)
+- [Review Process using Fork](https://theobaldsoftware.sharepoint.com/:w:/s/PresalesSupportProdMgmtDoc/EXOWJPmxCAtBkiGB7HOToD8BBLxidy_eX42CypMdAPLNLQ?e=PCXuyj)

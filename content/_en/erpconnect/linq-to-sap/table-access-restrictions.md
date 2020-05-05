@@ -13,7 +13,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-table-access-restriction
 
 As shown in the previous section, tables can be called without having to do any installations in the SAP system. Unfortunately though, the same restrictions apply here as with the traditional ReadTable class (see chapter [Reading SAP Tables Directly with ReadTable](../special-classes/reading-sap-tables-directly-with-readtable)).
 
-To deal with this problem, it is possible to install a Z-module in the SAP system, see chapter [Installing the Z-function module](../sap-customizing/install-report-custom-function-module).
+To deal with this problem, it is possible to install a Z-module in the SAP system, see chapter [table restrictions](../sap-customizing/table-restrictions).
 
 As long as this module is available in the system, you can activate it by entering the name of the LINQ table dialog (if necessary, the module's name can be changed according to your naming requirements).
 

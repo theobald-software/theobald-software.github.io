@@ -17,12 +17,12 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 
 For more information on drivers, refer to [Requirements](./introduction/requirements).
 
-Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different [destination]() environments, including:  
+Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different destination environments, including:  
 
-### Databases / Datawarehouses
+### Databases / Data Warehouses
 
 - [Amazon Redshift](./xu-destinations/amzon-redshift) 
-- [Azure DWH](./xu-destinations/azure-dwh) 
+- [Azure Synapse Analytics ](./xu-destinations/azure-dwh) (former Azure DWH)
 - [Azure SQL Database](./xu-destinations/microsoft-sql-server) 
 - [EXASolution](./xu-destinations/exasol) 
 - [IBM DB2](./xu-destinations/ibm-db2) 
@@ -50,13 +50,16 @@ Xtract Universal allows to extract data from SAP (e.g. ERP, S/4 HANA, BW and BW/
 ### Cloud Storage
 
 - [Amazon AWS S3](./xu-destinations/amazon-aws-s3)
-- [Azure Blob Storage](./xu-destinations/azure-blob-storage) 
+- [Azure Storage](./xu-destinations/azure-storage) 
 
 ### Generic Destinations
 
 - [CSV web service](./xu-destinations/csv-via-http) (via HTTP)
+- [JSON web service](./xu-destinations/json-via-http)
 - [OData web service](./xu-destinations/odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
 - [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
+- [Flat File - JSON](./xu-destinations/json-flat-file)
+- [Parquet](./xu-destinations/parquet)
             
             
 ### Pull and Push Destinations
@@ -86,6 +89,4 @@ An extraction with push destinations involves the extracting of data from the SA
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc2MzUwMDFdfQ==
--->
+

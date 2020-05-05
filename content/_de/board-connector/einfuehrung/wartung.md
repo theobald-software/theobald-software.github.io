@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-05
+ref: bc-introduction-06
 layout: page
 title: Wartung
 description: Wartung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 ---
 

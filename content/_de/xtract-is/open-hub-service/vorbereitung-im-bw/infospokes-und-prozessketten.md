@@ -16,7 +16,7 @@ In der Transaktion RSA1 erhalten Sie über das Menü *Werkzeuge -> Open Hub Serv
 
 ![OHS-InfoSpoke-01](/img/content/OHS-InfoSpoke-01.png){:class="img-responsive"}
 
-Im Reiter Destination definieren Sie den Infospoke so, dass eine Extraktion in ein Fremdsystem möglich ist (siehe Screenshot). Insbesondere muss hier die zuvor angelegte RFC-Destination eingetragen werden.
+Im Tab Destination definieren Sie den Infospoke so, dass eine Extraktion in ein Fremdsystem möglich ist (siehe Screenshot). Insbesondere muss hier die zuvor angelegte RFC-Destination eingetragen werden.
 
 ![OHS-InfoSpoke-02](/img/content/OHS-InfoSpoke-02.png){:class="img-responsive"}
 

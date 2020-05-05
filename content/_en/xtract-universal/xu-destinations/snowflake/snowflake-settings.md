@@ -9,8 +9,14 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 ---
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Table](../../getting-started-table/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
-The **Destination** button enables the changing of settings concerning the extractions targets.
+The following settings can be defined for the destination:  
+
+### Destination Settings
 
 ![Snowflake-Destination- Settings](/img/content/xu/snowflake/snowflake-destination-spec-settings.png){:class="img-responsive"}
 

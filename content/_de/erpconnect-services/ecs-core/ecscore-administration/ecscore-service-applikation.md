@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecscore-service-applikation
 ---
 
-Im Karteireiter *Services* können Services zur Verbindung zu einem SAP System neu angelegt und verwaltet werden.  
+Im Tab *Services* können Services zur Verbindung zu einem SAP System neu angelegt und verwaltet werden.  
 
 Klicken Sie auf *Add Service*, um einen neuen Service anzulegen.
 

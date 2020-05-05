@@ -1,5 +1,5 @@
 ---
-ref: board-connector-06
+ref: board-connector-04
 layout: page
 title: Logging
 description: Logging

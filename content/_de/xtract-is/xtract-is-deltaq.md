@@ -12,7 +12,8 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=deltaq
 ---
 
-Die Xtract IS DeltaQ Komponente ist die Königsklasse unter den Xtract-Komponenten, da sie es ermöglicht, echtes Delta-Management zwischen dem Produktivsystem und der BI / Staging-Schicht zu betreiben. Zunächst werden im nachfolgenden Kapitel die Schritte beschrieben, um alle nötigen Customizing-Einstellungen vorzunehmen.
+Die Xtract IS DeltaQ Komponente ermöglicht ein echtes Delta-Management zwischen dem Produktivsystem und der BI / Staging-Schicht zu betreiben. 
+![DeltaQ](/img/content/xis/xis_deltaq_overview.png){:class="img-responsive" }
 
-
+Die folgenden Abschnitte enthalten Details zu den erforderlichen Customizing-Einstellungen und zur Konfiguration.
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

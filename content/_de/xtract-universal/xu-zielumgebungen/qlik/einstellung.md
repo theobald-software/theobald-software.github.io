@@ -10,8 +10,15 @@ weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellung
 ---
+### Destination Settings öffnen
 
-Wenn Sie auf die Schaltfläche "Destination" klicken, können Sie folgende Einstellungen für die Extraktion nach Qlik vornehmen.
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Table](../../erste-schritte-mit-table/eine-neue-extraktion-anlegen)).
+2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+Die folgenden Einstellungen können für die Destination definiert werden. 
+  
+### Destination Settings - Destinationseinstellungen
 
 ![XU_qlik_destination_settings](/img/content/XU_qlik_destination_settings.png){:class="img-responsive"}
 

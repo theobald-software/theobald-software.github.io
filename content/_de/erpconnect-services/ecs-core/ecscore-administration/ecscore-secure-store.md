@@ -21,7 +21,7 @@ Gehen Sie zum Menü *Secure Stores*:
 Klicken Sie auf *Add Secure Store* und geben Sie ihm einen Namen.
 
 
-Der *Secure Store* wird anschließend unter *Secure Stores* auf der linken Seite aufgeführt. Klicken Sie anschließend auf den Karteireiter Credentials. Dort können Sie die entsprechenden Anmeldedaten für einen Benutzer festlegen.
+Der *Secure Store* wird anschließend unter *Secure Stores* auf der linken Seite aufgeführt. Klicken Sie anschließend auf den Tab Credentials. Dort können Sie die entsprechenden Anmeldedaten für einen Benutzer festlegen.
 
 
 Klicken Sie auf *Add Credentials*.

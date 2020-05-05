@@ -10,13 +10,15 @@ weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=script_generieren
 ---
-
-Wenn für eine Extraktion eine Destination vom Typ "Qlik" ausgewählt ist, steht beim Klick auf die Schaltfläche "Run" die Schaltfläche  "Generate Qlik Script" zur Verfügung.<br>
-Über diese Schaltfläche kann ein Datenladeskript generiert und in die Zwischenablage kopiert werden. 
-
-
+### Anzeigen eines Qlik-Skripts
+1. Führen Sie eine Extraktion mit der Destination "Qlik" aus. Das Fenster "Run Extraction" wird geöffnet.
 ![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script.png){:class="img-responsive"}
+2. Klicken Sie auf **[Generate Qlik Script]**, um ein Datenladeskript zu generieren. Das Fenster "Script" wird geöffnet.
 
-Aus der Zwischenablage können Sie das Skript in den Skript-Editor von Qlik View oder Qlik Sense einfügen.
+### Skript Weiterverarbeiten
+1. Klicken Sie auf **[Copy to Clipboard]**, um das Skript zu kopieren.
+![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script_2.png){:class="img-responsive"}
+2. Fügen Sie das kopierte Skript in den Datenlade-Editor von Qlik View oder von Qlik Sense ein.
 
-![Insert_Qlik_Script](/img/content/Insert_Qlik_Script.png){:class="img-responsive"}
+{: .box-note }
+**Hinweis:** die "SET-Methoden" können nicht im Fenster "Script" editiert werden. Editieren Sie die SET-Methoden auf der Destinationsseite.  

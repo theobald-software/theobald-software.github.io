@@ -89,17 +89,17 @@ das Symbol rechts der Zeile mit dem Parameter DATE die *Insert Reference* Einste
 
 ![ECS-Nintex-CallSAPFunction-Variables11](/img/content/ECS-Nintex-CallSAPFunction-Variables11.png){:class="img-responsive"}
 
-Dort kann über den Karteireiter Common das automatisch generierte aktuelle Datum mit *Current Date* ausgewählt werden. Die Auswahl von 
+Dort kann über den Tab Common das automatisch generierte aktuelle Datum mit *Current Date* ausgewählt werden. Die Auswahl von 
 *Current Date* reicht jedoch zur automatischen Datumsgenerierung nicht aus, da hier das SharePoint-interne Datumsformat zur Anwendung 
 kommt und nicht das erforderliche SAP-Datumsformat. Das Datumsformat muss daher noch mit einer internen Funktion umformatiert werden. 
-Wählen Sie daher *Current Date* noch nicht aus und wechseln Sie zunächst zum Karteireiter *Inline Functions*.
+Wählen Sie daher *Current Date* noch nicht aus und wechseln Sie zunächst zum Tab *Inline Functions*.
 
 ![ECS-Nintex-CallSAPFunction-Variables12](/img/content/ECS-Nintex-CallSAPFunction-Variables12.png){:class="img-responsive"}
 
-Wählen Sie im Karteireiter Inline Functions mit einem Doppelklick die Funktion *FormatDate* aus. Die Formatierungsfunktion für das 
+Wählen Sie im Tab Inline Functions mit einem Doppelklick die Funktion *FormatDate* aus. Die Formatierungsfunktion für das 
 Datum hat folgenden Aufbau: fn-FormatDate(Datum, "Datumsformat"). In unserem Beispiel lautet die Funktion damit 
 *fn-FormatDate(Current Date, "yyyyMMdd")*. Klicken Sie zur Vervollständigung der Funktion mit der linken Maustaste zwischen die beiden 
-Klammern und fügen dann mit einem Doppelklick im Karteireiter Common das Feld *Current Date* hinzu. 
+Klammern und fügen dann mit einem Doppelklick im Tab Common das Feld *Current Date* hinzu. 
 Das Datumsformat *yyyyMMdd* muss dann noch manuell ergänzt werden.  
 
 ![ECS-Nintex-CallSAPFunction-Variables13](/img/content/ECS-Nintex-CallSAPFunction-Variables13.png){:class="img-responsive"}
@@ -129,7 +129,7 @@ In der Zeile mit *Equals* kann dem Feld dann ein Wert zugewiesen werden. Unser Z
 
 ![ECS-Nintex-CallSAPFunction-Variables18](/img/content/ECS-Nintex-CallSAPFunction-Variables18.png){:class="img-responsive"}
 
-Rufen Sie hier den Karteireiter *Workflow Variables* auf und wählen dann die Workflow-Variable *Output* aus. Bestätigen Sie die Auswahl mit OK.
+Rufen Sie hier den Tab *Workflow Variables* auf und wählen dann die Workflow-Variable *Output* aus. Bestätigen Sie die Auswahl mit OK.
 
 ![ECS-Nintex-CallSAPFunction-Variables19](/img/content/ECS-Nintex-CallSAPFunction-Variables19.png){:class="img-responsive"}
 

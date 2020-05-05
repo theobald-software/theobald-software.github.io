@@ -10,11 +10,15 @@ weight: 6
 lang: en_GB
 old_url: 
 ---
+
+### Opening Extraction Settings
+Within the window "Define data source for SAP Tables" click **Settings**. The window "Table Settings" opens. 
 {% include _content/en/tables/extraction-settings.md  %}
 
-![Table-XIS-Properties](/img/content/Table-XIS-Properties.png){:class="img-responsive"}
 
 ### Custom Properties
+
+![Table-XIS-Properties](/img/content/Table-XIS-Properties.png){:class="img-responsive"}
 
 **ConvertsDates**<br>
 The default value of this property is *True*. Setting this property to *True* does two things:

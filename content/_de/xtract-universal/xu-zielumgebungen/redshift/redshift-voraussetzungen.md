@@ -15,7 +15,7 @@ Um Daten in das Ziel zu laden, werden eine laufende Redshift-Instanz sowie die Z
 Zusätzlich muss ihr System für den Zugriff auf das Cluster autorisiert sein.
 
 Um sich mit dem Redshift Cluster verbinden zu können, ist die Installation eines geeigneten Datenbank-Treibers notwendig.<br>
-Bitte laden Sie hierfür die 64 bit-Version des Amazon Redshift ODBC Treibers [hier](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html) herunter.
+Laden Sie hierfür die 64 bit-Version des [Amazon Redshift ODBC Treibers](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html) herunter.
 
 Bei fehlendem Treiber schlägt der Connection Test fehl:
 
@@ -30,6 +30,6 @@ Um die Datei zu installieren, gibt es zwei Möglichkeiten:
 	cd "C:\Program Files\XtractUniversal"
 - Installieren Sie die Mono.Security.dll Datei mit Hilfe des gacutil in Ihren global assembly cache 
 	gacutil -i "C:\Program Files (x86)\Mono-2.0\lib\mono\2.0\Mono.Security.dll"<br>
-	Für weitere Informationen schauen Sie sich bitte [diesen Artikel](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-install-an-assembly-into-the-gac) an.
+Weitere Informationen finden Sie in dem Artikel über das [Installieren einer Assembly im globalen Assemblycache](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-install-an-assembly-into-the-gac).
 
 2. Kopieren Sie die Mono.Security.dll in das Xtract Universal Installationsverzeichnis.

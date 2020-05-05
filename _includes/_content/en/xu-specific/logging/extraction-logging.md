@@ -2,7 +2,7 @@ All Theobald Software products log all steps performed on a system to log files.
 The logs can be found in the directory: <br>
 e.g.: `C:\Program Files\[Product Name]\logs`
 
-In addition to the [server logging](./server-logging) the log of each extraction process is saved in the extraction log.
+In addition to the extraction logging the [server log](./server-logging) and debug log is saved in the log directory.
 
 To view the extraction log, nagivate to the main window of the designer and click **[Log]**.
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}

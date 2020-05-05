@@ -14,7 +14,7 @@ This step is optional and shows how to display the extraction result in a web br
 
 ### Defining the extraction properties 
 
-1. In the main window of the Xtract Universal Designer, select a created table extraction.
+ 
 2. To open the extraction settings, click **[Run]**.<br>
 ![Run-Table-Extraction](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}<br>
 The window "Run Extraction" opens.

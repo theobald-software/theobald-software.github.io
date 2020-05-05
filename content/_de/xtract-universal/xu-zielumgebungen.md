@@ -16,7 +16,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
               
 Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (z.B. ERP, S/4 HANA, BW and BW/4 HANA) zu extrahierten und in verschiedene Zielumgebungen, sogenannte Destinations zu schreiben. Folgende Datenziele werden u.a. unterstützt:
 
-### Datenbanken / Datawarehouses
+### Datenbanken / Data Warehouses
 
 - [Amazon Redshift](./xu-zielumgebungen/redshift) 
 - [Azure DWH](./xu-zielumgebungen/azure_dwh) 
@@ -27,7 +27,8 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 - [Oracle](./xu-zielumgebungen/oracle) 
 - [PostgreSQL](./xu-zielumgebungen/postgreSQL)
 - [SAP HANA](./xu-zielumgebungen/hana) 
-- [SQL Server](./xu-zielumgebungen/microsoft-sql-server) 
+- [SQL Server](./xu-zielumgebungen//microsoft-sql-server) 
+- [Snowflake](./xu-zielumgebungen/snowflake)
 
 
 ### Business Intelligence / Analytics / ETL
@@ -42,7 +43,7 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 ### Cloud Speicher
 
 - [Amazon AWS S3](./xu-zielumgebungen/amazon_aws_s3)
-- [Azure Blob Storage](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/azure_blob_storage) 
+- [Azure Storage](./xu-zielumgebungen/azure-storage) 
 
 Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-Programm bzw. Scheduler aufgerufen werden. 
 
@@ -54,8 +55,11 @@ Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-P
 ### Generische Destinationen
 
 - [CSV Webservice](./xu-zielumgebungen/csv-via-http) 
+- [JSON Webservice](./xu-zielumgebungen/json-via-http)
 - [OData Webservice](./xu-zielumgebungen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
 - [Flat File - CSV](./xu-zielumgebungen/csv-flat-file) (Comma-seperated values)
+- [Flat File - JSON](./xu-zielumgebungen/json-flat-file)
+- [Parquet](./xu-zielumgebungen/parquet)
             
 ### Pull- und Push-Destinationen
 

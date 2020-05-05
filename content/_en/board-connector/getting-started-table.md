@@ -1,5 +1,5 @@
 ---
-ref: board-connector-03
+ref: board-connector-02
 layout: page
 title: Getting Started with Table
 description: Getting Started with Table

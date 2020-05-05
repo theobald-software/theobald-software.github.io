@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-07
+ref: xu-introduction-08
 layout: page
 title: Fehlerbehandlung
 description: Fehlerbehandlung
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=fehlerbehandlung
 ---
@@ -29,6 +29,6 @@ Um dem Dienst ein Benutzerkonto zuzuweisen, gehen Sie wie folgt vor:
 ![XU-Setup](/img/content/windows-dienste.png){:class="img-responsive"}
 3. Klicken Sie mit der rechten Maustaste auf den Dienst und wählen Sie Eigenschaft.
 ![XU-Setup](/img/content/xtract_dienst allgemein.png){:class="img-responsive"}
-4. Im Reiter Log On, ändern Sie das Benutzerkonto und klicken Sie auf Anwenden.
+4. Im Tab Log On, ändern Sie das Benutzerkonto und klicken Sie auf Anwenden.
 ![XU-Setup](/img/content/xtract_dienst_anmelden.png){:class="img-responsive"}
 

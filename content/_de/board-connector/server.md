@@ -1,5 +1,5 @@
 ---
-ref: board-connector-03
+ref: board-connector-05
 layout: page
 title: Server
 description: Server
