@@ -22,8 +22,8 @@ The window "Destination Details" consists of two tabs:
 - Blob Storage Settings
 - CSV Settings
 
-### Blob Storage Settings
-The tab *Blob Storage Settings* consists of two subsections:
+### Azure Storage Connection
+The tab *Azure Storage Connection* consists of two subsections:
 - Connection 
 - Container
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
