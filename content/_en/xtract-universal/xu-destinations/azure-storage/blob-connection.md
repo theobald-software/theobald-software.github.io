@@ -19,7 +19,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 3. Select the *Azure Storage (Blob / Data Lake)* destination from the drop-down list.
 
 The window "Destination Details" consists of two tabs:
-- Blob Storage Settings
+- Azure Storage Connection
 - CSV Settings
 
 ### Azure Storage Connection
@@ -72,7 +72,9 @@ Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data 
 
 
 ### Authentication via Azure Active Directory
-Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. Compared to *Authentication via Access Key*, this option allows a more granular way of authorizing access to a storage account and its individual storage containers. General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
+Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
+Compared to *Authentication via Access Key*, this option allows a more granular way of authorizing access to a storage account and its individual storage containers. 
+General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
 
 #### Prerequisites 
 
@@ -117,10 +119,10 @@ Click **[OK]** to confirm. <br>
 #### Container
 This subsection is activated after a connection to the storage account was successfully established.<br><br>
 **Storage account** <br>
-When authenticating via Azure Active Directory, the storage account name needs to be entered here.
+When authenticating via Azure Active Directory, the storage account name needs to be entered in this field.
 
 **Container**<br>
-When authenticating via Azure Active Directory, a Blob container needs to be entered here.
+When authenticating via Azure Active Directory, a Blob container needs to be entered in this field.
 
 {: .box-note }
 **Note:** With Azure Active Directory authentication, the drop down menu is not supported. Enter the name of the Blob container manually.
