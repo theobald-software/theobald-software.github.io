@@ -11,50 +11,141 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-verbindung
 ---
 
-### Blob Storage Einstellungen
 
-Folgende Einstellungen werden für die Verbindung zum Azure-Storage-Account benötigt.  
-Die notwendigen Eingabewerte können Sie dem Azure-Portal entnehmen.
-
-![azure-blob-access-keys](/img/content/azure-blob-access-keys.png){:class="img-responsive"}
-
-### Azure Storage Destination hinzufügen
+### Eine Azure Storage Destination hinzufügen
 1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster "Manage Destinations" wird geöffnet.
 2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
 ![XU_azure_Destination](/img/content/xu/azure_destination-det.png){:class="img-responsive"}
-3. Wähen Sie die Destination *Azure Storage* aus der Drop-Down-Liste aus.
+3. Wähen Sie die Destination *Azure Storage (Blob / Data Lake)* aus der Drop-down-Liste aus.
 
 Das Fenster "Destination Details" besteht aus zwei Tabs:
-- Blob Storage Settings
+- Azure Storage Connection
 - CSV Settings
 
-### Blob Storage Settings -  Blob Storage Einstellungen
-Der Tab *Blob Storage Settings* besteht aus zwei Unterabschnitten:
+### Azure Storage Connection -  Azure Storage Einstellungen
+Der Tab *Azure Storage Settings* besteht aus zwei Unterabschnitten:
 - Connection 
 - Container
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
-#### Connection
-**Account Name**<br>
-Storage-Account-Name im Azure-Portal.
+Der Unterabschnitt *Connection* bietet zwei verschiedene Methoden zur Authentifizierung und Zugriffssteuerung auf dem Azure Speicherkonto:
 
-**Key**<br>
-Zugangsschlüssel zum Azure-Storage-Account.  
+1. Authentifizierung über Access Key (Zugangsschlüssel)
+2. Authentifizierung über Azure Active Directory  
+
+### Authentifizierung über Access Key (Zugangsschlüssel)
+
+Diese Authentifizierungsmethode ermöglicht den Zugriff auf den gesamten Azure Speicherkonto. Allgemeine Informationen über diese Authentifizierungsmethode finden Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage).
+
+#### Connection (Verbindung)
+**Storage account**<br>
+Name des Speicherkontos im Azure-Portal
+
+**Access Key**<br>
+Zugangsschlüsel des Azure Speicherkontos.  
+
+
+{: .box-tip }
+**Tipp**: Kopieren Sie Namen und Access Key (Zugangsschlüssel) des Azure Speicherkontos aus dem [Azure-Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
+
+![xu-azure-blob-con-10](/img/content/xu-azure-blob-con-10.png){:class="img-responsive"}
 
 **Connect**<br>
-Schaltfläche zum Herstellen einer Verbindung.<br>
-Wenn die Verbindung erfolgreich ist, poppt das Infofenster "Connection successful" auf. Klicken Sie auf **[OK]** zum Bestätigen.
+Schaltfläche zum Herstellen einer Verbindung zum Azure Speicherkonto.<br>
+Wenn die Verbindung erfolgreich ist, poppt das Info-Fenster "Connection successful" auf.<br> 
+Klicken Sie auf **[OK]** zum Bestätigen.
 
 #### Container
+Dieser Unterabschnitt wird aktiviert nachdem eine Verbindung zum Azure Speicherkonto (Storage account) erfolgreich hergestellt wurde.<br>
+**Storage account** <br>
+Bei der Authentifizierung über Access Key (Zugangsschlüssel) ist dieses Feld für die Eingabe deaktiviert.
+
 **Container**<br>
-Ermöglicht die Auswahl des Blob Containers, in den die extrahierten Daten geschrieben werden.
+Bei der Authentifizierung  über Access Key (Zugangsschlüssel) kann ein Blob-Container aus dem Drop-down-Menü ausgewählt werden.
+
+**Test connection to container** <br>
+(Verbindung zum Container testen)<br>
+Schaltfläche zur Überprüfung, ob auf den Storage-Container zugegriffen werden kann. <br>
+Bei einer erfolgreichen Verbindung wird das Info-Fenster "Connection to container <*Container-Name*> successful" geöffnet. <br>
+Klicken Sie auf **[OK]** zum Bestätigen. <br>
+Navigieren Sie zum Tab *CSV Settings* oder klicken Sie auf **[OK]**.<br>
+Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
+
+![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02_.png){:class="img-responsive"}
 
 
+### Authentifizierung über Azure Active Directory 
+Die Authentifizierung über Azure Active Directory verwendet OAuth 2.0 und Azure AD zur Authentifizierung.
+Im Vergleich zur *Authentication via Access Key* (Authentifizierung über Zugriffsschlüssel) erlaubt diese Option eine granularere Zugriffssteuerung.
+Der Zugriff kann auf das komplette Azure Speicherkonto oder auf einzelne Storage-Container autorisiert werden. Allgemeine Informationen über diese Art der Authentifizierung finden Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
 
-### CSV Settings
+#### Voraussetzungen 
+
+{: .box-note }
+**Hinweis:** Die Authentifizierung über Azure Active Directory erfordert einen Azure AD-Mandanten (tenant). Die Einrichtung eines Azure AD-Mandanten ist in der [Microsoft-Dokumentation] (https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant) beschrieben. 
+
+Bevor Sie die Authentifizierung über Azure Active Directory verwenden, führen Sie die folgenden Schritte auf dem Azure-Portal durch:
+1. Öffnen Sie auf dem Azure-Portal den Dienst *Azure Active Directory*.
+2. Registrieren Sie eine Anwendung auf Ihrem Azure AD-Mandanten, wie beschrieben in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Registrieren Sie die Anwendung als *Public client/native (mobile & desktop)*.
+3. Fügen Sie der registrierten Anwendung *API-Berechtigungen* hinzu, um den Zugriff auf die Azure Storage-Web-API zu gewähren.<br> 
+Die folgenden Berechtigungen sind erforderlich: *Azure Storage - Delegated permissions - user impersonation*, *Microsot Graph - User.Read*. Folgen Sie hierfür den Schritten beschrieben in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
+4. Öffnen Sie auf dem Azure-Portal Ihr Azure Speicherkonto.
+5. Weisen Sie dem Azure-Storage Zugriffsrechte zu. Folgen Sie hierfür den Schritten beschrieben in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). Die erforderliche RBAC-Rolle ist *Storage Blob Data Contributor*.
+![xu-azure-blob-con-07](/img/content/xu-azure-blob-con-07.png){:class="img-responsive"}
+
+{: .box-tip }
+**Tipp:** Zugriffsrechte können auf Azure Speicherkonto- oder auf Container-Ebene gewährt werden. 
+
+#### Connection (Verbindung)
+**Tenant ID**<br>
+ID des Azure AD-Mandanten
+
+**Client ID**<br>
+ID der registrierten Anwendung
+
+{: .box-tip }
+**Tipp:** Kopieren Sie die Mandanten-ID und Anwendungs-ID aus dem Azure-Portal.
+
+![xu-azure-blob-con-08](/img/content/xu-azure-blob-con-08.png){:class="img-responsive"}
+
+
+**Connect**<br>
+Schaltfläche zum Verbinden mit dem Azure Speicherkonto.<br>
+1. Klicken Sie auf **[Connect]**. Ein Browser-Fenster wird geöffnet.
+2. Melden Sie sich mit Ihren Azure AD-Zugangsdaten an.
+![xu-azure-blob-con-05](/img/content/xu-azure-blob-con-05.png){:class="img-responsive"}
+3. Das Fenster "Permissions requested" (Angeforderte Berechtigungen) listet die angeforderten Berechtigungen auf (siehe oben). Klicken Sie auf **[Accept]**.
+![xu-azure-blob-con-06](/img/content/xu-azure-blob-con-06.png){:class="img-responsive"}
+4. Wenn die Verbindung erfolgreich ist, wird das Info-Fenster "Connection successful" geöffnet. Klicken Sie auf **[OK]** zum Bestätigen. <br>
+
+
+#### Container
+Dieser Unterabschnitt wird aktiviert, nachdem eine Verbindung zum Azure Speicherkonto erfolgreich hergestellt wurde.<br>
+**Storage account** <br>
+Bei Authentifizierung über Azure Active Directory muss der Azure Speicherkontoname in diesem Feld eingegeben werden.
+
+**Container**<br>
+Bei Authentifizierung über Azure Active Directory muss der Blob-Container in diesem Feld eingegeben werden.
+
+{: .box-note }
+**Hinweis:** Bei Authentifizierung über Azure Active Directory, ist das Drop-down-Menü nicht verfügbar.
+Geben Sie den Namen des Blob-Containers manuell ein.
+
+**Test connection to container** (Verbindung zum Container Testen)<br>
+Schaltfläche zur Überprüfung, ob auf den Storage-Container zugegriffen werden kann. <br>
+Bei einer erfolgreichen Verbindung wird das Info-Fenster "Connection to container <*Container-Name*> successful" geöffnet. <br>
+Klicken Sie auf **[OK]** zum Bestätigen. <br>
+Navigieren Sie zum Tab *CSV Settings* oder klicken Sie auf **[OK]**.<br>
+Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
+
+![xu-azure-blob-con-09](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
+
+
+### CSV Settings (CSV Einstellungen)
 
 Die Einstellungsmöglichkeiten im Tab CSV Settings entsprechen denen der allgemeinen [http-csv Settings](../csv-via-http).
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
+
 
  
