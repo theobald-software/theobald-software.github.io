@@ -2,7 +2,7 @@
 ref: xu-sap-customizing-03
 layout: page
 title: Custom function module for Table Join
-description: Custom function module for Table Join
+description: Custom Function Module for Table Join
 product: xtract-universal
 parent: sap-customizing
 permalink: /:collection/:path

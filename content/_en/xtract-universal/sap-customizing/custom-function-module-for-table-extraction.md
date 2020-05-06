@@ -2,7 +2,7 @@
 ref: xu-sap-customizing-01
 layout: page
 title: Custom function module for table extraction
-description: Custom function module for table extraction
+description: Custom Function Module for Table Extraction
 product: xtract-universal
 parent: sap-customizing
 permalink: /:collection/:path

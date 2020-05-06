@@ -1,4 +1,4 @@
-### Installing Z_XTRACT_IS_TABLE manually
+### Installing Z_XTRACT_IS_TABLE Manually
 
 1. Create a new function module:<br>
 Call transaction SE37 and create a new function module named Z_XTRACT_IS_TABLE. You can use an existing function group or create a new one. This is also valid for the development class (Package).
