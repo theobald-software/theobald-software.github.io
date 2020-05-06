@@ -23,7 +23,7 @@ Xtract Universal ist ein SAP Connector und ermöglicht es, Datenobjekte aus SAP 
 In der unteren Übersicht finden Sie, welche Komponente für die Datenextraktion aus einem SAP ERP- bzw. BW-System verwendet werden können. 
 
 | Komponente   | ERP | BW |
-|-------------|-----|----|
+|-------------|:---:|:--:|
 | Table       | X   | X  |
 | Table Join  | X   | X  |
 | BAPI        | X   | X  |
@@ -33,7 +33,7 @@ In der unteren Übersicht finden Sie, welche Komponente für die Datenextraktion
 | BW Cube     |     | X  |
 | Hierarchy   |     | X  |
 | OHS         |     | X  |
-| ODP | X | X |
+| ODP         | X   | X |
 
 Hier finden Sie die folgenden Kapitel:
 
