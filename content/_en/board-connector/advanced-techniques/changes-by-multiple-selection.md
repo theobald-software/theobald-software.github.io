@@ -1,9 +1,9 @@
 ---
-ref: xu-advanced-techniques-11
+ref: bc-advanced-techniques-11
 layout: page
 title: Changes by multiple selection
 description: Changes by multiple selection
-product: xtract-universal
+product: board-connector
 parent: advanced-techniques
 permalink: /:collection/:path
 weight: 11
