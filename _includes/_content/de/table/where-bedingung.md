@@ -7,7 +7,7 @@
 {: .box-note }
 **Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei [Table Joins](./table-joins) der Fall sein.
 
-![Extraction-Settings-01](/img/content/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+![Extraction-Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
 ### Schaltflächen
 **[Load live preview]** <br>

@@ -8,7 +8,7 @@ The window "Define data source for SAP Table " opens.
 {: .box-note }
 **Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g. MAKT~MATNR. This can be the case with [table joins](./table-joins).
 
-![Extraction Settings-01](/img/content/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+![Extraction Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
 ### Buttons
 **[Load live preview]** <br>
