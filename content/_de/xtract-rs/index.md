@@ -18,6 +18,6 @@ sodass eine SQL Server Lizenz notwendig ist, auch bei nicht verwendeter SQL Serv
 
 Die Xtract RS Komponentensuite bietet Ihnen insgesamt 5 unterschiedliche Komponenten für die SAP-Integration in SSRS an.
 
-![XRS-Architecture](/img/content/xrs/Xtract RS.png){:class="img-responsive"}
+![XRS-Architecture](/img/content/xrs/Xtract_RS.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent="xtract-rs" collection=site.de %}
