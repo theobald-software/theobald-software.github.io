@@ -1,8 +1,8 @@
 ---
 ref: xu-dynamic-connection-paramters-01
 layout: page
-title: Dynamische Verbindungsinformationen
-description: Dynamische Verbindungsinformationen
+title: Dynamische Verbindungsparameter
+description: Dynamische Verbindungsparameter
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path

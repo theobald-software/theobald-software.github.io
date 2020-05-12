@@ -1,8 +1,8 @@
 ---
-ref: xu-advanced-techniques-01
+ref: xu-custom-parameters-01
 layout: page
-title: Benutzerdefinierte Variablen
-description: Benutzerdefinierte Variablen
+title: Benutzerdefinierte Parameter
+description: Benutzerdefinierte Parameter
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
