@@ -1,5 +1,5 @@
 ### Filtering - dynamic setting of the selection filters
-Filtering options are located in the window "Define data source for SAP ODP” under subsection **Fields**.<br/>
+FFiltering options are located under subsection **Fields** in the main window of the component.
 ![ODP Fields](/img/content/odp/odp-fiter.png){:class="img-responsive" width="600px"}
 
 The number of defined filters, e.g. [1], is displayed in the square brackets to the left of the field name under **Selections**.<br/>
