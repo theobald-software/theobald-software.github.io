@@ -6,7 +6,7 @@ description: Skript-Ausdrücke
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 9
+weight: 8
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=skript-ausdruecke
 ---
