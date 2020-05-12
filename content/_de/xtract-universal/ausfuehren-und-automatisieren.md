@@ -20,4 +20,4 @@ In diesem Kapitel beschreiben wir, wie Sie eine Extraktion ausführen und dies a
 - mit einem Scheduler / Orchestrator (z.B. windows Task Scheduler) oder
 - mit einem ETL-Tool (z.B. KNIME oder Talend)
 
-Wir beschreiben auch, wie Sie dynamische Paramter zur Laufzeit setzen können und sogenannte Skript-Ausdrücke verwenden. 
+Wir beschreiben auch, wie Sie Parameter zur Laufzeit oder durch Skript-Ausdrücke dynamisch setzen können. 

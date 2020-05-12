@@ -4,7 +4,7 @@ layout: page
 title: Skript-Ausdrücke
 description: Skript-Ausdrücke
 product: xtract-universal
-parent: fortgeschrittene-techniken
+parent: automation
 permalink: /:collection/:path
 weight: 9
 lang: de_DE
