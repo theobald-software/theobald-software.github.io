@@ -7,7 +7,7 @@ Choose a field under **Selections** and click **[Edit]** to define a filter.<br/
 The window "Edit selection" opens. 
 <br/>
 ![ODP ABAP CDS View Filter](/img/content/odp/odp-component-cds-costcenter-03-filter.png){:class="img-responsive"}
-Within the window "Edit selection" you can add new, edit and delete existing fiters.
+Within the window "Edit selection" you can add new, edit and delete existing filters.
 
 
 
