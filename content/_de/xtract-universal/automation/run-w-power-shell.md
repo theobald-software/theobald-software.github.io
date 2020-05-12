@@ -6,7 +6,7 @@ description: Power Shell
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 1
+weight: 11
 lang: de_DE
 ---
 

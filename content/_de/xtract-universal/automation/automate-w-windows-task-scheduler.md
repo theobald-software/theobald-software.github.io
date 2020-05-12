@@ -6,7 +6,7 @@ description: Windows Task Scheduler
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 3
+weight: 12
 lang: de_DE
 ---
 

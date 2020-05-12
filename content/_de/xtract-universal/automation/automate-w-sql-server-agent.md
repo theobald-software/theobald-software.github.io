@@ -6,7 +6,7 @@ description: SQL Server Agent
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 4
+weight: 13
 lang: de_DE
 ---
 

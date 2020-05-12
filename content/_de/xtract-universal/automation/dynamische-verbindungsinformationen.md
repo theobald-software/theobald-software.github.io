@@ -1,12 +1,12 @@
 ---
-ref: xu-advanced-techniques-03
+ref: xu-dynamic-connection-paramters-01
 layout: page
 title: Dynamische Verbindungsinformationen
 description: Dynamische Verbindungsinformationen
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 3
+weight: 6
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=dynamische-verbindungsinformationen
 ---

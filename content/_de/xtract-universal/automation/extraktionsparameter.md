@@ -1,12 +1,12 @@
 ---
-ref: xu-advanced-techniques-02
+ref: xu-extraction-parameter-01
 layout: page
 title: Extraktionsparameter
 description: Extraktionsparameter
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 2
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionsparameter
 ---

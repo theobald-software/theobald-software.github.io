@@ -6,7 +6,7 @@ description: Benutzerdefinierte Variablen
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 1
+weight: 7
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=benutzerdefinierte-variablen
 ---

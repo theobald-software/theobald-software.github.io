@@ -6,7 +6,7 @@ description: Windows Script
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 1
+weight: 10
 lang: de_DE
 ---
 
