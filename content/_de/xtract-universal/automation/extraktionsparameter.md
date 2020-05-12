@@ -4,7 +4,7 @@ layout: page
 title: Extraktionsparameter
 description: Extraktionsparameter
 product: xtract-universal
-parent: fortgeschrittene-techniken
+parent: automation
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

@@ -4,7 +4,7 @@ layout: page
 title: Dynamische Verbindungsinformationen
 description: Dynamische Verbindungsinformationen
 product: xtract-universal
-parent: fortgeschrittene-techniken
+parent: automation
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

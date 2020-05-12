@@ -1,10 +1,10 @@
 ---
-ref: xu-advanced-techniques-03
+ref: xu-dynamic-connection-parameters-01
 layout: page
 title: Dynamic Connection Parameters
 description: Dynamic Connection Parameters
 product: xtract-universal
-parent: advanced-techniques
+parent: automation
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

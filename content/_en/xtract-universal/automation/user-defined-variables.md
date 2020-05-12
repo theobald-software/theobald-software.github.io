@@ -1,12 +1,12 @@
 ---
-ref: xu-advanced-techniques-01
+ref: xu-user-defined-variables-01
 layout: page
 title: User-Defined Variables
 description: User-Defined Variables
 product: xtract-universal
-parent: advanced-techniques
+parent: automation
 permalink: /:collection/:path
-weight: 1
+weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=user-defined-variables
 ---

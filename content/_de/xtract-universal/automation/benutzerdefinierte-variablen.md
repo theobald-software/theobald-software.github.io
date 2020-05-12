@@ -4,7 +4,7 @@ layout: page
 title: Benutzerdefinierte Variablen
 description: Benutzerdefinierte Variablen
 product: xtract-universal
-parent: fortgeschrittene-techniken
+parent: automation
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
