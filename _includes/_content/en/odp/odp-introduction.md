@@ -1,4 +1,4 @@
-## About ODP 
+### About ODP 
 
 The ODP component can be used to extract data via the SAP Operational Data Provisioning (ODP) framework. 
 
@@ -32,7 +32,7 @@ See below the ODP provider content available in our demo BW/4 HANA system.
 <br/>
 ![ODP Provider Context from an BW/4 HANA System](/img/content/odp/odp-component-context-bw.png){:class="img-responsive"}
 
-## Technical prerequisites
+### Technical prerequisites
 
 There are a few prerequisites, that need to be fulfilled on the SAP side, when using ODP. SAP has released a number of SAP notes that deal with questions around ODP. These notes do apply when using our ODP component, as far as the SAP source system is concerned.
 
