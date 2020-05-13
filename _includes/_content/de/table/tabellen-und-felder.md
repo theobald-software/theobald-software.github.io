@@ -12,6 +12,11 @@ Der Tab *Tables and Fields* besteht aus drei Unterabschnitten:
 ![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 Folgende Optionen stehen rechts unter *Fields* bei der Spaltenselektion zur Verfügung: <br>
 
+Die Table-Komponente importiert und markiert die dedizierten Indizes, wie z.B. Primärschlüssel oder Sortieroptionen, aus SAP.
+
+{: .box-note}
+**Hinweis:** Die Verwendung der indizierten Felder zur Filterung erhöht die Performance bei der Anwendung der WHERE-Bedingung.
+
 **Filter** <br>
 Der Spaltenname (Name) und die Spaltenbeschreibung (Description) lassen sich filtern.
 
@@ -32,14 +37,10 @@ Ankreuzen des Kästchens definiert, ob die im Data Dictionary hinterlegte Konver
 Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). 
 Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
 
+<!---
 {: .box-note}
 **Hinweis:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein [Z_XTRACT_IS_TABLE_COMPRESSION](./extraktionseinstellungen) unterstützt. 
-
-Die Table-Komponente importiert und markiert die dedizierten Indizes, wie z.B. Primärschlüssel oder Sortieroptionen, aus SAP.
-
-{: .box-note}
-**Hinweis:** Die Verwendung der indizierten Felder zur Filterung erhöht die Performance bei der Anwendung der WHERE-Bedingung.
-
+--->
 ### Preview
 Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
 
