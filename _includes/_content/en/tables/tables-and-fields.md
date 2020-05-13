@@ -13,6 +13,10 @@ To add a new table or remove an existing table, click **[Add]** or **[Remove]**.
 ![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 The following options are available on the right under *Fields* for the column selection: <br>
 
+The Table component imports and highlights the dedicated indices, such as primary key or sorting options, from SAP. 
+
+{: .box-note}
+**Note:** using the indicated fields for filtering increases performance when applying WHERE-clause.
 
 **Filter** <br>
 The column name and the column description can be filtered.
@@ -34,13 +38,10 @@ Activating the checkboxes defines whether the conversion routines stored in the 
 Typical examples are the language key (for example, D in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). 
 After the conversion, the value is always displayed as it would appear in a transaction in the SAP GUI. 
 
+<!---
 {: .box-note}
 **Note:** the option "Use Conversion Routine" is only supported with function module [Z_XTRACT_IS_TABLE_COMPRESSION](./extraction-settings). 
-
-The Table component imports and highlights the dedicated indices, such as primary key or sorting options, from SAP. 
-
-{: .box-note}
-**Note:** using the indicated fields for filtering increases performance when applying WHERE-clause.   
+--->
 
 ### Preview
 The subsection *Preview* displays a real-time preview of the selected fields, when the button **"[Load live preview]** is clicked.
