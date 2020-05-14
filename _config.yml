@@ -52,8 +52,8 @@ language:
     navbar-links:
       - title: "Go to Knowledge Base"
         url: "https://kb.theobald-software.com"   
-      - title: "Go to Theobald Software"
-        url: "https://theobald-software.com/en/"      
+      - title: "Go to Customer Portal"
+        url: "https://my.theobald-software.com/"      
     navbar-back-to: "Back to"
     homepage: "Homepage"
     homepage-title: "Browse through our documentation"
@@ -73,8 +73,8 @@ language:
     navbar-links:
       - title: "Zur Knowledge-base"
         url: "https://kb.theobald-software.com"
-      - title: "Zu Theobald Software"
-        url: "https://theobald-software.com/de/"
+      - title: "Zum Kundenportal"
+        url: "https://my.theobald-software.com/"
     navbar-back-to: "Zurück zur"
     homepage: "Startseite"
     homepage-title: "Bitte wählen Sie Ihr Produkt"
