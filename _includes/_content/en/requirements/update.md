@@ -1,5 +1,5 @@
 ### Installing an update (or a newer version) on a test environment
-To install an newer software version over an existing version, follow the steps below. 
+To install a newer software version over an existing version, follow the steps below. 
 
 1. Recommendation:
  - A working test environment with a valid license and maintenance  
