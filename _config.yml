@@ -71,7 +71,7 @@ language:
     sidebar-right-title: "On this page"
   de:
     navbar-links:
-      - title: "Zur Knowledge-base"
+      - title: "Zur Knowledge-Base"
         url: "https://kb.theobald-software.com"
       - title: "Zum Kundenportal"
         url: "https://my.theobald-software.com/"
