@@ -1,0 +1,147 @@
+########## SECTION 1 - GENERAL SETTINGS ##########
+########## Will probably never change
+url: "http://edna.theobald.local:81"
+baseurl: ""
+
+# Name of website
+title: Theobald Online Help
+# Short description of site
+description: Theobald's Online Help Portal contains all documentation about our products
+
+# For variables in the head such as for twitter cards
+author:
+  name: Theobald Software
+  twitter: TheobaldSoftw
+
+twitter:
+  username: TheobaldSoftw
+  card: summary
+
+logo: /img/company/theobald_onlinehelplogo.png
+
+# Only for SEO purposes, change the footer under _include/_footer as well if any of this changes.
+social:
+  name: Theobald Software
+  links:
+  - https://www.facebook.com/TheobaldSoftware
+  - https://twitter.com/TheobaldSoftw
+  - https://www.linkedin.com/company/theobald-software/
+  - https://www.youtube.com/user/TheobaldSoftware
+  - http://blog.theobald-software.com
+
+# TODO: please fill in
+# google_site_verification:
+
+# Maximum depth for breadcrumb. Do not change.
+breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+algolia:
+  application_id: '4C27F1P1UC'
+  index_name: theobald-software-online-help
+  settings:
+    attributesForFaceting: ['title','searchable(collection)', 'searchable(title)', 'searchable(product)', 'searchable(lang)', 'searchable(old_url)']
+    searchableAttributes: ['title','unordered(content)','collection','description','lang','old_url']
+
+########## SECTION 2 - HEADER CONTENT ##########
+########## These are configurable here rather than in the html pages and include files
+########## Languages can easily be added this way as well.
+##########  see the readme file for more information regarding that,
+##########  requires more than just adding a language here.
+language:
+  en:
+    navbar-links:
+      - title: "Go to Knowledgebase"
+        url: "https://kb.theobald-software.com"
+      - title: "Return to Theobald Software"
+        url: "https://theobald-software.com/en/"
+    navbar-back-to: "Back to"
+    homepage: "Homepage"
+    homepage-title: "Browse through our documentation"
+    homepage-search-title: "How can we help?"
+    search-no-results: "We didn't find any results for the search: "
+    search-title: "Search the Online Help"
+    search-results: "Results"
+    search-box-text: "Search..."
+    search-filters: "Filters"
+    search-filter-all-products: "Search through all products"
+    info-box-type-warning: "Warning!"
+    info-box-type-note: "Note:"
+    info-box-type-tip: "Tip:"
+    info-box-type-recommendation: "Recommendation:"
+    sidebar-right-title: "On this page"
+  de:
+    navbar-links:
+      - title: "Zur Knowledgebase"
+        url: "https://kb.theobald-software.com"
+      - title: "Zurück zur Theobald Software Website"
+        url: "https://theobald-software.com/de/"
+    navbar-back-to: "Zurück zur"
+    homepage: "Startseite"
+    homepage-title: "Bitte wählen Sie Ihr Produkt"
+    homepage-search-title: "Wie können wir Ihnen weiterhelfen?"
+    search-no-results: "Wir haben leider nichts gefunden: "
+    search-title: "Online-Help Suche"
+    search-results: "Sucherergebnisse"
+    search-box-text: "Suche..."
+    search-filters: "Filter"
+    search-filter-all-products: "Alle Produkte durchsuchen"
+    info-box-type-warning: "Warnung!"
+    info-box-type-note: "Hinweis:"
+    info-box-type-tip: "Tipp:"
+    info-box-type-recommendation: "Empfehlung:"
+    sidebar-right-title: "Auf dieser Seite"
+
+########## SECTION 3 - COLLECTION CONFIGURATIONS ##########
+########## Languages can easily be added this way.
+##########  requires more than just adding a language here.
+collections_dir: content
+collections:
+  en:
+    output: true
+    name: 'English'
+    language_label: 'gb'
+  de:
+    output: true
+    name: 'Deutsch'
+    language_label: 'de'
+
+########## SECTION 4 - OTHER SETTINGS ##########
+########## Be careful with changes to these settings, as it could break things.
+timezone: "Europe/Berlin"
+markdown: kramdown
+kramdown:
+  toc_levels: "3"
+highlighter: rouge
+plugins:
+- jekyll-sitemap
+- jekyll-redirect-from
+- jekyll-seo-tag
+# sass (styling)
+sass:
+  sass_dir: css/scss
+  style: compressed
+# Default YAML values
+defaults:
+  - scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      image: /img/company/theobald_onlinehelplogo.png
+      product: none
+# Exclude
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Vagrantfile
+  - .idea/workspace.xml
+  - vendor
+
+########## SECTION 5 - TRACK SETTINGS ##########
+# GA gatg.js ID
+#gtag: ""
+# GA ID
+#google_analytics: ""
+# GTM ID
+#gtm: ""
