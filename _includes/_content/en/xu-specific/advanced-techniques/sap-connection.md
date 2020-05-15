@@ -50,7 +50,7 @@ See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01
 ### Authentication
 The following authentication methods are supported:
 -  Plain (1) - SAP username and password (system or dialogue user)
-- [SNC (Secure Network Communication)](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) (2) with username and password
+- SNC (Secure Network Communication) (2) with username and password
 - [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On) (3)
 	
 ![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
@@ -60,6 +60,14 @@ You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-s
 **Note:** when marking the checkbox **Require SAP credentials to be explicitly supplied for execution** the SAP credentials are not cached. This option is only active 
 using *Plain* or *SNC* authentication method and running an extraction in browser (button **[Run in Browser]**. After starting an extraction a window pops-up and the user is required to enter SAP credentials for every extraction. 
 
+#### SNC 
+
+1. Check the SAP parameter snc/gssapi_lib to determine, which library is used for encryption in your SAP system.
+Your SAP basis has to import and configure the same library on the application server and on the machine with installed Xtract Universal.
+2. In the **SNC library** field, fill in the complete path to the library location e.g., C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll.
+3. Fill in the SAP **Partner Name** configured for the SAP application server e.g., ``p:SAPserviceERP/do_not_care@THEOBALD.LOCAL``.
+
+Follow the steps described in [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) when working with Kerberos library.
 
 ### Miscellaneous
 Select a library and optionally define a trace directory for debug logging.
