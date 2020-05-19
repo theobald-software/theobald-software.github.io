@@ -27,7 +27,7 @@ The following example shows, how tables MARA and MAKT can be joined.
 4. Optional: Switch to the *WHERE clause* tab and specify a [WHERE clause](./where-clause).
 
 {: .box-note }
-**Note**: Pay attention to the [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE clause.
+**Note**: Pay attention to the [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
 In the *Joins* tab, click **Edit** (pencil icon) to display joining options. <br>
 In the depicted example a left outer join on tables MARA (left table) and MAKT (right table) on the field MATNR is performed. A WHERE clause on *MAKT~SPRAS = 'EN'* is specified.<br>
