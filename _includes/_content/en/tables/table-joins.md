@@ -11,10 +11,10 @@ For more information on join types see [SAP Online help](https://help.sap.com/do
 
 
 {: .box-note }
-**Note**: As a prerequisite for using the table join, function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) needs to be available in SAP. <br> 
+**Note**: as a prerequisite for using the table join, function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) needs to be available in SAP. <br> 
 
 {: .box-note }
-**Note**: Joining of cluster or pool tables is not supported. Cluster or pool tables need to be extracted individually and joined in the destination.
+**Note**: joining of cluster or pool tables is not supported. Cluster or pool tables need to be extracted individually and joined in the destination.
 
 ### Joining two Tables
 The following example shows, how tables MARA and MAKT can be joined.
@@ -27,7 +27,7 @@ The following example shows, how tables MARA and MAKT can be joined.
 4. Optional: Switch to the *WHERE clause* tab and specify a [WHERE clause](./where-clause).
 
 {: .box-note }
-**Note**: Pay attention to the [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
+**Note**: pay attention to the [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
 In the *Joins* tab, click **Edit** (pencil icon) to display joining options. <br>
 In the depicted example a left outer join on tables MARA (left table) and MAKT (right table) on the field MATNR is performed. A WHERE clause on *MAKT~SPRAS = 'EN'* is specified.<br>
@@ -39,10 +39,10 @@ In the depicted example a left outer join on tables MARA (left table) and MAKT (
 - Join additional tables in the tab *Tables and Fields*. 
 
 {: .box-tip }
-**Recommendation**: To avoid poor extraction performance, do not join more than five tables.
+**Recommendation**: to avoid poor extraction performance, do not join more than five tables.
 
 {: .box-tip }
-**Tip**: Different tables can have identical field names. Defining a join condition based on the identical field names not always delivers the expected result (e.g., VBAK~VBELN <> LIPS~VBELN).
+**Tip**: different tables can have identical field names. Defining a join condition based on the identical field names not always delivers the expected result (e.g., VBAK~VBELN <> LIPS~VBELN).
 Make sure the fields you use in a join condition contain the same content/data.
 
 #### Auto Mapping Function (optional)
