@@ -7,7 +7,7 @@ To install a newer software version over an existing version, follow the steps b
  - A Regular update of the software, especially for major changes and high ([H]) update recommendation
  - A backup of the current installation, see the corresponding section below
 
-2. Before updating, check the [Version History](https://kb.theobald-software.com/version-history) and release notes in the knowledgebase.   
+2. Before updating, check the [Version History](https://kb.theobald-software.com/version-history) and release notes in the knowledge base.   
  - Make any necessary preparations and changes as described in the Release Note / Version History, especially for major changes and high ([H]) update recommendation.
  - You can subscribe to Theobald Software's regular newsletter about changes in the version history and release notes via sending an email to info@theobald-software.com.  
 
