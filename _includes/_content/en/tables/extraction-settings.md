@@ -28,7 +28,7 @@ Specifies the name of the function module used for data extraction. The field is
 
 **Extract data in background job** <br>
 If this checkbox is checked, the table extraction is executed as a background job in SAP. Extract data in background job setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0.
-Activate the setting *Extract data in background job*  for long-running extractions with a very large amounts of data that may run into a timeout error ("Time limit exceeded"), when using the foreground mode. <br>
+Activate the setting *Extract data in background job*  for long-running extractions with a very large amounts of data that may run into a timeout error ("Time limit exceeded"), when using the standard function module. <br>
 
 {: .box-tip }
 **Tip:** the extraction jobs can be found in the SAP JobLog (SM37) under the JobName *theo_read_table*.
