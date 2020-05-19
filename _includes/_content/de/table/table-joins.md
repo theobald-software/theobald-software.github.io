@@ -27,7 +27,7 @@ Das folgende Beispiel zeigt, wie die Tabellen MARA und MAKT verkn체pft werden k�
 4. Optional: Wechseln Sie zum Tab *WHERE clause* und geben Sie eine [WHERE-Bedingung](./where-bedingung) ein.
 
 {: .box-note }
-**Hinweis**: Achten Sie bei der Angabe einer WHERE-Bedingung auf die Einschr채nkungen bei [WHERE-Bedingung](./where-bedingung#einschr채nkungen-bei-where-bedingungen).
+**Hinweis**: Achten Sie bei der Angabe einer WHERE-Bedingung auf die Einschr채nkungen beim Definieren der [WHERE-Bedingung](./where-bedingung#einschr채nkungen-bei-where-bedingungen) auf die rechte Tabelle des Table-Joins 체ber einen LEFT OUTER JOIN.
 
 Klicken Sie in dem Tab *Joins* auf **Edit** (Bleistift-Symbol), um die Join-Optionen anzuzeigen. <br>
 Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen MARA (linke Tabelle) und MAKT (rechte Tabelle) auf dem Feld MATNR durchgef체hrt. Es wird eine WHERE-Bedingung *MAKT~SPRAS = 'EN'* spezifiziert.<br>
