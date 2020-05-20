@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 ---
 

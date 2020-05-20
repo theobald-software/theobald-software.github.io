@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: table
 permalink: /:collection/:path
-weight: 10
+weight: 20
 lang: de_DE
 ---
 

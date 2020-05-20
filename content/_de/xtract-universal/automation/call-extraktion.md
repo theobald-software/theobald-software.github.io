@@ -10,6 +10,16 @@ weight: 1
 lang: de_DE
 ---
 
+### Run Dialog 
+
+
+### Aufruf via Kommandozeile 
+
+
+### Aufruf via Kommandozeile in Linux 
+
+### Parameter 
+
 In diesem Kapitel zeigen wir, wie man eine Extraktion mit dem Windows Script ausführen kann. 
 Wir erstellen eine Batch-Datei, in der wir dann das Kommandozeilenprogramm xu.exe aufrufen.
 

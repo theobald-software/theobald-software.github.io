@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: server
 permalink: /:collection/:path
-weight: 7
+weight: 12
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---

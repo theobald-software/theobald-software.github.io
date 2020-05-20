@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: best-practices
 permalink: /:collection/:path
-weight: 20
+weight: 40
 lang: de_DE
 old_url:
 ---

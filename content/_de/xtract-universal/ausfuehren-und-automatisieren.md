@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-05
+ref: xtract-universal-execution
 layout: page
 title: Ausführen und Automatisieren von Extraktionen
 description: Ausführen und Automatisieren von Extraktionen
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: automation
 permalink: /:collection/:path
-weight: 5
+weight: 8
 lang: de_DE
 
 ---
