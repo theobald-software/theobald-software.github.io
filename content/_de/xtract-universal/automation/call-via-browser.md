@@ -6,7 +6,7 @@ description: Extraktion im Browser oder über HTTP aufrufen
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 9
+weight: 3
 lang: de_DE
 ---
 

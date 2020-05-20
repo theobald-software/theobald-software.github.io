@@ -12,12 +12,27 @@ lang: de_DE
 
 ---
 
-In diesem Kapitel beschreiben wir, wie Sie eine Extraktion ausführen und dies automatisieren können. Wir beschreiben die folgenden Optionen: 
-- Manuell im Designer 
-- mit der Kommandozeile
-- per HTTP Aufruf oder im Browser
-- mit einem Skript (z.B. Windows Skript oder Power Shell)
-- mit einem Scheduler / Orchestrator (z.B. windows Task Scheduler) oder
-- mit einem ETL-Tool (z.B. KNIME oder Talend)
+<!--
+Ausführen und Einplanen von Extraktionen
+1.      Einführung
+    a.      Run Dialog (Extraktion im Xtract Universal Designer ausführen)
+    b.      GRUNDSÄTZLICH: Command Line und http-Aufruf
+    c.      Aufruf aus Linux
+    d.      Pro / Contra
+2.      Aufruf via Skript (Powershell, Command)
+3.      Aufruf via Scheduler
+4.      Aufruf via ETL-Tool
+5.      Parametrisierter Aufruf via URL-Parameter
+a.      Parameterübergabe via http-Aufruf
+b.      Parameterübergabe in xu.exe
+6.      Ausführlicher Use Case (asynchroner Aufruf, parallel…)
+-->
 
-Wir beschreiben auch, wie Sie Parameter zur Laufzeit oder durch Skript-Ausdrücke dynamisch setzen können. 
+In diesem Kapitel werden folgende Themen beschrieben: 
+- Extraktion ausführen
+- Parametrisierung
+- Aufruf via Skript (z.B. Windows Skript oder Power Shell)
+- Aufruf via Scheduler (z.B. windows Task Scheduler) oder
+- mit einem ETL-Tool (z.B. KNIME oder Talend)
+- Ausführliches Beispiel
+- Referenz zur Kommandozeile

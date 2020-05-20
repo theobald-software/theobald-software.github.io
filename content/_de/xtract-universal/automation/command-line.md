@@ -1,12 +1,12 @@
 ---
 ref: xu-command-line-01
 layout: page
-title: Extraktion mit der Kommandozeile ausführen
-description: Extraktion mit der Kommandozeile ausführen
+title: Referenz zur Kommandozeile
+description: Referenz zum Aufruf mit der Kommandozeile
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 9
+weight: 15
 lang: de_DE
 ---
 
