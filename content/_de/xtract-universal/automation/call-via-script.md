@@ -1,8 +1,8 @@
 ---
 ref: xu-script-01
 layout: page
-title: Extraktion mit Windows Script ausführen
-description: Windows Script
+title: Aufruf via Skript
+description: Extraktion mit Windows Skript aufrufen
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path

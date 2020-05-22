@@ -1,7 +1,7 @@
 ---
 ref: xu-run-dialog-01
 layout: page
-title: Run Dialog
+title: Extraktion ausführen
 description: Extraktion manuell mit dem Run Dialog ausführen
 product: xtract-universal
 parent: automation

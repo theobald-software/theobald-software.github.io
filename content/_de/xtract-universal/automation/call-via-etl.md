@@ -1,8 +1,8 @@
 ---
 ref: xu-etl-01
 layout: page
-title: Extraktion mit Windows Task Scheduler Automatisieren
-description: Windows Task Scheduler
+title: Aufruf via ETL-Tool
+description: Aufruf einer Extraktion mit einem ETL-Tool
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path

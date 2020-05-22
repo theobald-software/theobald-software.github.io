@@ -1,7 +1,7 @@
 ---
 ref: xu-extraction-in-browser-01
 layout: page
-title: Extraktion im Browser aufrufen
+title: Aufruf via Browser
 description: Extraktion im Browser oder über HTTP aufrufen
 product: xtract-universal
 parent: automation
