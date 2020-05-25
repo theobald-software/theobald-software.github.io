@@ -26,6 +26,11 @@ Ausführen und Einplanen von Extraktionen
 a.      Parameterübergabe via http-Aufruf
 b.      Parameterübergabe in xu.exe
 6.      Ausführlicher Use Case (asynchroner Aufruf, parallel…)
+        - asynchroner Aufruf
+        - Run extraction in parallel
+        – especially for incremental data load.
+        - Ability to do dynamics filtering for the extraction
+
 -->
 
 In diesem Kapitel werden folgende Themen beschrieben: 
