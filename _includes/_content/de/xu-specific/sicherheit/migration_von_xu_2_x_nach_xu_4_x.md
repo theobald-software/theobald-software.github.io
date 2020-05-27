@@ -1,16 +1,16 @@
 Es gibt zwei Möglichkeiten, die Produktversion von XU 2.x und 3.x auf XU 4.x zu upgraden:
 - Upgrade während der Installation
-- Manueller Upgrade
+- Manuelles Upgrade
 
 ### Upgrade während der Installation
-1. Startten Sie die [Installationsroutine](../einfuehrung/installation).
+1. Starten Sie die [Installationsroutine](../einfuehrung/installation).
 2. Markieren Sie das Kästchen **Convert config files**.
 Die Option *Convert config files* ruft den *ConfigConverter* auf, der gewährleistet, dass alle Extraktionen, Quellsysteme, Destinationen, Server- und Benutzersettings aus XU 2.x und XU 3.x in der neuen Version bereitstehen. <br>
 ![XU3_Migration_1](/img/content/XU4_Migration_1.png){:class="img-responsive"} <br>
 3. Bestätigen Sie den Konvertierungsprozesses im Pop-up-Fenster der Kommandozeile.
 ![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"} <br>
 
-### Manueller Upgrade
+### Manuelles Upgrade
 Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, kann dieser auch nachträglich manuell aus dem Installationsverzeichnis ``C:\Program Files\XtractUniversal`` gestartet werden. <br>
 
 ![XU3_Migration_3](/img/content/XU3_Migration_3.png){:class="img-responsive"}
