@@ -21,9 +21,8 @@ ECS provide the following options for the SAP integration with Nintex Workflow:
 
 ![ECS-Nintex-Integration](/img/content/ECS-Nintex-Integration.png){:class="img-responsive" }
 
-The following white papers provides you with an overview and specific examples of how Nintex Workflow can work together with ERP Connect Services in scenarios that require SAP data access:<br>
-[White Paper - Integrating Your Nintex Workflow Solutions With SAP](http://theobald-software.com/files/Product/ERPConnect-Services/Integrating-Your-Nintex-Workflow-Solutions-With-SAP.pdf)<br>
-[White Paper - SAP integrated Travel Scenarios with Nintex Workflow](http://theobald-software.com/files/Product/ERPConnect-Services/Nintex-Workflow.pdf) <br>
-Attachment for the WhitePaper: [SOAP Request XML.txt](http://theobald-software.com/files/Product/ERPConnect-Services/SOAP-Request-XML.txt) <br>
+The following white papers provide you with an overview and specific examples of how Nintex Workflow can work together with ERP Connect Services in scenarios that require SAP data access:<br>
+[White Paper - Integrating Your Nintex Workflow Solutions With SAP](https://www.theobald-software.com/wp-content/uploads/2018/05/Integrating-Your-Nintex-Workflow-Solutions-With-SAP.pdf)<br>
+[White Paper - SAP integrated Travel Scenarios with Nintex Workflow](https://www.theobald-software.com/wp-content/uploads/2018/05/Nintex-Workflow.pdf) <br>
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

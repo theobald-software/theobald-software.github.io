@@ -23,9 +23,8 @@ ECS bietet die folgende Optionen:
 
 ![ECS-Nintex-Integration](/img/content/ECS-Nintex-Integration.png){:class="img-responsive"}
 
-Kunden können ERPConnect Services mit Nintex Workflow in ihrer SharePoint-Umgebung verwenden, um SAP-Daten und Prozesse in ihre Workflow-Szenarien zu integrieren. Das Dokument bietet eine Übersicht und einige Beispiele, wie Nintex Workflow und ERPConnect Services zusammenarbeiten können, um auf SAP-Daten und Prozesse zuzugreifen:<br>
-[White Paper - Integrating Your Nintex Workflow Solutions With SAP]()<br>
-[White Paper - SAP integrated Travel Scenarios with Nintex Workflow]() (englisch)<br>
-Anlage für das White Paper: SOAP Request XML.txt 
+Die folgenden Dokumente bieten eine Übersicht und einige Beispiele, wie Nintex Workflow und ERPConnect Services genutzt werden können, um auf SAP-Daten und Prozesse zuzugreifen:<br>
+[White Paper - Integrating Your Nintex Workflow Solutions With SAP](https://www.theobald-software.com/wp-content/uploads/2018/05/Integrating-Your-Nintex-Workflow-Solutions-With-SAP.pdf) (Englisch)<br>
+[White Paper - SAP integrated Travel Scenarios with Nintex Workflow](https://www.theobald-software.com/wp-content/uploads/2018/05/Nintex-Workflow.pdf) (Englisch)<br>
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
