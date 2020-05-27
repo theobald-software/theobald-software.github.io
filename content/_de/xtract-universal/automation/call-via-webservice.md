@@ -1,8 +1,8 @@
 ---
-ref: xu-extraction-in-browser-01
+ref: xu-extraction-via-webservice-01
 layout: page
-title: Aufruf via Browser
-description: Extraktion im Browser oder über HTTP aufrufen
+title: Aufruf via Webservice
+description: Extraktion via Webservice z.B. im Browser aufrufen
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
@@ -10,75 +10,18 @@ weight: 3
 lang: de_DE
 ---
 
-### Ausführen mit der Kommandozeile
 
-Zum Ausführen von Extraktionen bietet Xtract Universal (XU) bietet ein Kommandozeilenprogramm an.
-Die Windows-Version heißt xu.exe, während xu.elf die Version für Unix / Linux ist. 
-Die Funktionalitäten von von den beiden Versionen sind dieselben. Daher sprechen wir im Folgenden meistens nur von der Windows-Version xu.exe stellvertretend für beide Versionen. Wenn es Unterschiede gibt, werden wir explizit drauf hinweisen.
+### Aufruf via Webservice (über HTTP oder HTTPS)
+Sie können eine Extraktion via Webservice-Aufruf direkt im Browser oder in einem entsprechenden Skript oder Tool aufrufen. Als Ergebnis wird dasselbe wie bei der Standardausgabe des Kommandozeilenprogrammes geliefert. 
 
-### Installation der Kommandozeile
+Zum Aufruf werden folgende Werte übergeben: 
+- Host oder IP des XU-Servers
+- Post des XU-Servers
+- Name der Extraktion
+- Optionale Parameter
 
-xu.exe / xu.elf sind eigenständige Programme, die keine Installation benötigen. Die xu.exe / xu.elf Datei kann einzeln in beliebige Verzeichnisse kopiert und dort ausgeführt werden. 
-Die Windows-Version xu.exe finden Sie im Installationsverzeichnis (Standardmäßig unter: C:\Program Files\XtractUniversal).
-Die Linux Version können Sie unter folgendem Link herunterladen:
-https://cdn-files.theobald-software.com/download/XtractUniversal/xu.elf.tar.gz 
+HTTPS wird auch unterstützt, siehe Konfiguration dazu. 
 
-### Hilfe anzeigen
-Eine Kurzdokumentation zur Verwendung kann mit dem Parameter -h angezeigt werden:
-```
-xu.exe -h
-xu.elf -h
-```
-### Eine Extraktion starten
-xu.exe verbindet sich zu einem XU Service und startet dort eine Extraktion mit optionalen Laufzeitparametern. Der XU Service, die Extraktion, sowie die Laufzeitparameter werden per über Kommandozeilenparameter angegeben.
-Um eine Extraktion auf dem Xtract Universal Server zu starten, nutzen Sie den folgenden Befehl
-```
-xu.exe -n <name> [-s <host>] [-p <port>] [-o <option>]
-```
-
-#### Optionen
-* -h 
-Gibt die Hilfe-Seite aus
-* -s HOST    
-Die Host- oder IP-Adresse, die für die Verbindung verwendet werden soll. [Standardwert: localhost]. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.
-* -p PORT    
-Der Port vom XU Server. [Standardwert: 8065]. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.
-* -o OPTION  
-Laufparameter, die beim Ausführen der Extraktion verwendet werden.
-Das Format für OPTION ist <Name>=<Wert>. Es können mehrere Parameter verwendet werden. Format ist: 
-```
--o parameter1=wert1 -o parameter2=wert2  
-```
-* -e         Verwendet TLS (1.1 oder höher) für die Transportsicherheit.
-* -a         Bricht alle aktuell laufenden Instanzen der angegebenen Extraktion ab.
-* -c         Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen. Dies gilt nur für Pull-Destinationen.
-
-#### Beispiele
-```
-xu.exe -n MaterialText
-xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000
-xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e
-xu.exe -n MaterialText -a
-```
-#### Vordefinierte & eigens definierte Parameter
-Vordefinierte bzw. eigens definierte Parameter finden Sie im Run-Dialog unter dem Reiter Extraction bzw. Custom. Diese Parameter können Sie mit der Option -o überschreiben.
-
-#### URL als Parameter (nicht mehr empfohlen)
-Die Möglichkeit, eine URL als einzigen Parameter mitzugeben, existiert nur aus Rückwärtskompatibilitätsgründen und wird nicht empfohlen:
-```
-xu.exe <url>
-```
-Führt eine Extraktion basierend auf dem <url> aus dem "Run"-Dialog des Xtract Universal Designers aus. <url> sollte in doppelte Anführungszeichen (") gesetzt werden.
-
-Beispiel:
-```
-xu.exe "http://localhost:8065/?name=MaterialText"
-```
-
-Wenn Sie Parameter nutzen, stellen Sie ein Escape-Zeichen ^ vor dem & Zeichen.
-```
-C:\Program Files\XtractUniversal\xu.exe http://localhost:8065/?name=MyExtractionName^&Variable=Value
-```
 
 #### Standardausgabe & Standardfehlerausgabe
 xu.exe / xu.elf läuft während der gesamten Ausführungsdauer der Extraktion. 
@@ -179,14 +122,3 @@ Mit diesem Zeitstempel kann dann auf das entsprechende Log über die entsprechen
 ```
 http://localhost:8065/log/?req_type=extraction&name=sapcustomers2&timestamp=2020-04-06_16:17:10.121 
 ```
-
-### Aufruf einer URL direkt über HTTP(S)
-Alternativ können Sie dann direkt die URL einer Extraktion im Browser oder in einem entsprechenden Skript oder Programm aufrufen. Als Ergebnis wird dasselbe wie bei der Standardausgabe des Kommandozeilenprogrammes geliefert. 
-
-### Weitere Themen:
-- Extraktion ausführen mit:
-	- [Windows Script](./automation/run-w-windows-script)
-	- [Power Shell](./automation/run-w-power-shell)
-- Extraktion automatisieren mit:
-	- [Windows Task Scheduler](./automation/automate-w-windows-task-scheduler)
-	- [SQL Server Agent](./automation/automate-w-sql-server-agent)

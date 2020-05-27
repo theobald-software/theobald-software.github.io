@@ -9,7 +9,6 @@ childidentifier: automation
 permalink: /:collection/:path
 weight: 8
 lang: de_DE
-
 ---
 
 <!--
@@ -36,8 +35,6 @@ b.      Parameterübergabe in xu.exe
 In diesem Kapitel werden folgende Themen beschrieben: 
 - Extraktion ausführen
 - Parametrisierung
-- Aufruf via Skript (z.B. Windows Skript oder Power Shell)
-- Aufruf via Scheduler (z.B. windows Task Scheduler) oder
-- mit einem ETL-Tool (z.B. KNIME oder Talend)
+- Aufruf mit einem externen Skript, Scheduler oder ETL-Tool 
 - Ausführliches Beispiel
 - Referenz zur Kommandozeile
