@@ -111,7 +111,6 @@ Wenn wir nun eine Pull-Destination wie z.B. Webservice mit JSON-Format nehmen, d
 ]
 ```
 
-
 Weiterführende Links
 - Daten-Aufruf via Webservice (Pull-Destination)
 - Extraktion-Aufruf via Webservice (Push-Destination)
