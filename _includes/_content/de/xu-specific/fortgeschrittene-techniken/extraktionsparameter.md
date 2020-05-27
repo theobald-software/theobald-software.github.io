@@ -4,7 +4,7 @@ Der folgende Abschnitt beschreibt die Parameter einer Extraktion, welche dynamis
 
 Um das Fenster "Run extractions" zu öffnen, wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** (siehe Details in [Eine Extraktion ausführen](../erste-schritte-mit-table/eine-extraktion-ausfuehren)).
 
-### "Parameters" Tab *Extraction*
+### Extraction Parameters
 Es gibt Parameter, die bei allen Extraktion zur Verfügung stehen, z.B. **clearBuffer**, **preview**, **source** und **destination**.
 Es gibt auch Parameter, welche nur vom Extraktionstyp abhängen. Bei einer Table-Komponente sind es **rows**, **where** und **packageSize**.
 Zuletzt gibt es dann Parameter, welche vom Typ der Destination abhängen. Bei einer Destination vom Typ vom Typ HTTP-CSV oder Flatfile-CSV sind es **decimalSeparator** und **columnSeperator**.
@@ -21,7 +21,7 @@ packageSize | setzt die Paketgröße | verfügbar bei Table-Extraktionen
 decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar bei Destinationen vom Typ HTTP-CSV oder Flatfile-CSV
 columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar bei Destinationen vom Typ HTTP-CSV oder Flatfile-CSV
 
-### "Parameters" Tab *Source*
+### Source Parameters
 ![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
 In diesem Tab können Sie Parameter zur SAP-Verbindung, siehe [SAP-Source-Einstellungen](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen).
@@ -36,10 +36,10 @@ logonTicket | setzt dynamisch das Anmeldeticket, falls diese Option in der SAP-V
 **Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket" als Authentifizierungsmethode in den [SAP-Verbindung](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/sap-verbindungen-anlegen) ausgewählt ist.
 
 
-### "Parameters" Tab *Custom*
+### Custom Parameters
 
 {: .box-note }
-**Hinweis:** Der Tab "Custom" ist nur dann aktiv, wenn ein benutzerdefinierter Parameter definiert ist, z.B. in der [WHERE-Bedingung](../table/where-bedingung) einer Table-Komponente.
+**Hinweis:** Der Tab "Custom" ist nur dann aktiv, wenn ein benutzerdefinierter Parameter definiert ist, z.B. in der [WHERE-Bedingung](../table/where-bedingung) bei einer Table-Komponente.
 
 
 Um den Wert eines Parameters im Run-Dialog zu setzen bzw. zu überschreiben, markieren Sie das Kästchen und geben Sie den gewünschten Wert ins Feld Value ein. Im Feld URL wird dieser Parameter entsprechend dann auch gezeigt.
