@@ -11,7 +11,7 @@ The tab *General* contains the connection details and is divided into four subse
 Fill out the connection details to establish an SAP connection.
 
 {: .box-tip }
-**Tip:** Values to fill out the forms can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
+**Tip:** Values to fill out the fields can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
 
 Click **[Test Connection]** (1) to test the successful connection. 
 The confirmation window opens. <br>
