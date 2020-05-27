@@ -31,8 +31,17 @@ Extraktion mit der rechten Maustaste wählen und einen der folgenden Optionen w�
 ### Run Dialog 
 
 Run-Dialog beschreiben. 
-- URL: Jede Extraktion ist über eine spezifische URL erreichbar.
-- Button rechts um die URL zu kopieren
+
+**URL**<br>
+Das URL-Feld zeigt die URL der Extraktion. Diese enthält den Host bzw. IP und die Portnummber des XU-Servers sowie den Namen der Extraktion. Diese URL kann dann für den Aufruf der Extraktion verwendet.
+```
+http://localhost:8065/?name=Plants
+```
+
+
+Mit dem Knopf oben rechts können Sie die URL in den Zwischenspeicher kopieren. 
+
 - 3 Reiter für dynamische Parametrisierung, die wir separat beschreiben. Link dazu.
 
+- Buttons, um die Extraktion auszuführen. Link dazu.
 
