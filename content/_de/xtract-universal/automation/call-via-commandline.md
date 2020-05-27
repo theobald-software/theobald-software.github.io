@@ -36,7 +36,7 @@ Um eine Extraktion auf dem Xtract Universal Server zu starten, nutzen Sie den fo
 xu.exe -n <name> [-s <host>] [-p <port>] [-o <option>]
 ```
 
-#### Optionen
+### Optionen beim Aufruf einer Extraktion
 * -h 
 Gibt die Hilfe-Seite aus
 * -s HOST    
@@ -53,35 +53,34 @@ Das Format für OPTION ist <Name>=<Wert>. Es können mehrere Parameter verwendet
 * -a         Bricht alle aktuell laufenden Instanzen der angegebenen Extraktion ab.
 * -c         Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen. Dies gilt nur für Pull-Destinationen.
 
-#### Beispiele
+### Beispiele
 ```
 xu.exe -n MaterialText
+```
+
+Vordefinierte bzw. Benutzerdefinierte Parameter finden Sie im "Run Extraction"-Dialog. Diese Parameter können Sie mit der Option -o überschreiben.
+
+```
 xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000
 xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e
 xu.exe -n MaterialText -a
 ```
-#### Vordefinierte & eigens definierte Parameter
-Vordefinierte bzw. eigens definierte Parameter finden Sie im Run-Dialog unter dem Reiter Extraction bzw. Custom. Diese Parameter können Sie mit der Option -o überschreiben.
 
-#### URL als Parameter (nicht mehr empfohlen)
+### Aufruf einer Extraktion über URL (nicht mehr empfohlen)
 Die Möglichkeit, eine URL als einzigen Parameter mitzugeben, existiert nur aus Rückwärtskompatibilitätsgründen und wird nicht mehr empfohlen:
 ```
 xu.exe <url>
 ```
-Führt eine Extraktion basierend auf dem <url> aus dem "Run"-Dialog des Xtract Universal Designers aus. <url> sollte in doppelte Anführungszeichen (") gesetzt werden.
+Führt eine Extraktion basierend auf der <url> die Extraktion. 
+Die URL finden Sie im "Run Extraction"-Dialog des Xtract Universal Designers. <url> sollte in doppelte Anführungszeichen (") gesetzt werden.
 
 Beispiel:
 ```
 xu.exe "http://localhost:8065/?name=MaterialText"
-```
-
-Wenn Sie Parameter nutzen, stellen Sie ein Escape-Zeichen ^ vor dem & Zeichen.
-```
 xu.exe "http://localhost:8065/?name=MyExtractionName&Variable=Value"
-xu.exe http://localhost:8065/?name=MyExtractionName^&Variable=Value
 ```
 
-#### Standardausgabe & Standardfehlerausgabe
+### Standardausgabe & Standardfehlerausgabe
 xu.exe / xu.elf läuft während der gesamten Ausführungsdauer der Extraktion. 
 Bei Pull Destinations werden die extrahierten Daten im Format der Destination (z.B. CSV, JSON, ...) in die Standardausgabe (stdout) geschrieben.
 
@@ -89,7 +88,7 @@ Bei Push Destinations wird, nachdem die Ausführung einer Extraktion beendet ist
 
 Logmeldungen werden dabei in die Standardfehlerausgabe (stderr) geschrieben.
 
-#### Rückgabewert 
+### Rückgabewert 
 Nachdem xu.exe / xu.elf beendet wurde, zeigt der Rückgabewert des Programms an, ob Fehler während der Ausführung aufgetreten sind oder nicht. 
 Ein Rückgabewert 0 zeigt eine fehlerfreie Ausführung an. 
 Rückgabewerte unter 1000 entsprechen dem HTTP Status Code des Fehlers. 
@@ -109,7 +108,7 @@ Rückgabewert	Beschreibung
 1087 	Der Parameter ist ungültig
 ```
 
-#### Beispiel
+### Ausführliches Beispiel
 Mit dem folgenden Befehl führe ich die Extraktion mit dem Namen sapcustomers aus. Für Host und Port werden die Standardwerte verwendet.
 ```
 "C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers 1>>output1.txt 2>>output2.txt
@@ -162,7 +161,6 @@ Wenn wir nun eine Pull-Destination wie z.B. Webservice mit JSON-Format nehmen, d
 {"KUNNR":"0000000002","LAND1":"DE","NAME1":"Wett","ORT01":"Walldorf"}
 ]
 ```
-
 ### Extraktion asynchron aufrufen
 Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter
 ```
@@ -181,8 +179,15 @@ Mit diesem Zeitstempel kann dann auf das entsprechende Log über die entsprechen
 http://localhost:8065/log/?req_type=extraction&name=sapcustomers2&timestamp=2020-04-06_16:17:10.121 
 ```
 
-### Aufruf via Webservice (über HTTP oder HTTPS)
-Alternativ können Sie dann direkt eine Extraktion via Webservice-Aufruf direkt im Browser oder in einem entsprechenden Skript oder Tool aufrufen. Als Ergebnis wird dasselbe wie bei der Standardausgabe des Kommandozeilenprogrammes geliefert. 
+
+### Log-Ausgabe einer Extraktion unterdrücken 
+
+Mit dem Parameter quiet-push=true kann man die Log-Ausgabe bei einem 
+- synchronen Aufruf einer Extraktion 
+- mit einer Push-Destination 
+
+unterdrücken. Default Wert ist false und somit wird standardmäßig das Log der Extraktion als Rückgabe bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
+
 
 ### Weitere Themen:
 - Extraktion ausführen mit:

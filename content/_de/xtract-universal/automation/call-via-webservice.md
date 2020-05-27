@@ -12,7 +12,7 @@ lang: de_DE
 
 
 ### Aufruf via Webservice (über HTTP oder HTTPS)
-Sie können eine Extraktion via Webservice-Aufruf direkt im Browser oder in einem entsprechenden Skript oder Tool aufrufen. Als Ergebnis wird dasselbe wie bei der Standardausgabe des Kommandozeilenprogrammes geliefert. 
+Sie können eine Extraktion via Webservice-Aufruf direkt im Browser oder in einem entsprechenden Skript oder Tool aufrufen. 
 
 Zum Aufruf werden folgende Werte übergeben: 
 - Host oder IP des XU-Servers
@@ -20,38 +20,44 @@ Zum Aufruf werden folgende Werte übergeben:
 - Name der Extraktion
 - Optionale Parameter
 
-HTTPS wird auch unterstützt, siehe Konfiguration dazu. 
+HTTPS wird als Protokoll ebenfalls unterstützt, siehe Konfiguration dazu. 
 
+### Rückage 
+Die Rückgabe ist ähnlich wie bei der Standardausgabe des Kommandozeilenprogrammes. 
+Bei Pull Destinations werden die extrahierten Daten im entsprechenden Format der Destination (z.B. CSV, JSON, ...) zurückgegeben.
+Bei Push Destinations wird standardmäßig, nachdem die Ausführung einer Extraktion beendet ist, das Log der Extraktion im CSV-Format zurückgegeben. 
 
-#### Standardausgabe & Standardfehlerausgabe
-xu.exe / xu.elf läuft während der gesamten Ausführungsdauer der Extraktion. 
-Bei Pull Destinations werden die extrahierten Daten im Format der Destination (z.B. CSV, JSON, ...) in die Standardausgabe (stdout) geschrieben.
+### Log-Ausgabe einer Extraktion unterdrücken 
+Mit dem Parameter quiet-push=true kann man die Log-Ausgabe bei einem 
+- synchronen Aufruf einer Extraktion 
+- mit einer Push-Destination 
+unterdrücken. 
+Default Wert ist false und somit wird standardmäßig das Log der Extraktion bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
 
-Bei Push Destinations wird, nachdem die Ausführung einer Extraktion beendet ist, das Log der Extraktion im CSV-Format in die Standardausgabe (stdout) geschrieben. Anschließend wird xu.exe / xu.elf beendet. 
-
-Logmeldungen werden dabei in die Standardfehlerausgabe (stderr) geschrieben.
-
-#### Rückgabewert 
-Nachdem xu.exe / xu.elf beendet wurde, zeigt der Rückgabewert des Programms an, ob Fehler während der Ausführung aufgetreten sind oder nicht. 
-Ein Rückgabewert 0 zeigt eine fehlerfreie Ausführung an. 
-Rückgabewerte unter 1000 entsprechen dem HTTP Status Code des Fehlers. 
-Rückgabewerte ab 1000 zeigen andere Fehler an. Die Details des jeweiligen Fehlers können den Logmeldungen (stderr) entnommen werden. 
-
-Rückgabewert	Beschreibung
+### Rückgabe bei asynchronen Aufruf
+Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter
 ```
-0		Extraktion wurde erfolgreich ausgeführt
-404 	Extraktion existiert nicht
-1001 	Ein undefinierter Fehler ist aufgetreten
-1002 	Die Datei konnte nicht gefunden werden
-1013 	Ungültige Eingabedaten
-1014 	Die Anzahl der Argumente ist ungültig
-1015 	Der Name des Parameters ist unbekannt
-1016 	Das Argument ist ungültig
-1053 	Die URL ist falsch
-1087 	Der Parameter ist ungültig
+&wait=false 
+```
+kann der Aufruf asynchron erfolgen, wie z.B. im folgenden Befehl:
+```
+"C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers2 -o wait=false 1>>false_output1.txt 2>>false_output2.txt 
+```
+In diesem Fall wird der Zeitstempel der Ausführung zurückgegeben:
+```
+2020-04-06_16:13:19.926 
+```
+Mit diesem Zeitstempel kann dann auf das entsprechende Log über die entsprechende URL zugegriffen werden: 
+```
+http://localhost:8065/log/?req_type=extraction&name=sapcustomers2&timestamp=2020-04-06_16:17:10.121 
 ```
 
-#### Beispiel
+### HTTP Status Code 
+Bei jedem Aufruf einer Extraktion gibt es neben dem Ergebis noch einen HTTP-Status Code. 
+Ein HTTP Status Code 200 zeigt einen fehlerfreien Aufruf der Extraktion an, sagt jedoch nicht über den Status der Ausführung der Extraktion. Das kann über den Log-Webservice überprüft werden.<br>
+Ein HTTP Status Code 404 bedeutet, dass die aufgerufene Extraktion nicht existiert. Detaillierte Infos können über den Log-Webservice aufgerufen werden.<br>
+
+### Beispiel
 Mit dem folgenden Befehl führe ich die Extraktion mit dem Namen sapcustomers aus. Für Host und Port werden die Standardwerte verwendet.
 ```
 "C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers 1>>output1.txt 2>>output2.txt
@@ -105,20 +111,9 @@ Wenn wir nun eine Pull-Destination wie z.B. Webservice mit JSON-Format nehmen, d
 ]
 ```
 
-### Extraktion asynchron aufrufen
-Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter
-```
--o wait=false 
-```
-kann der Aufruf asynchron erfolgen, wie z.B. im folgenden Befehl:
-```
-"C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers2 -o wait=false 1>>false_output1.txt 2>>false_output2.txt 
-```
-In diesem Fall wird der Zeitstempel der Ausführung zurückgegeben:
-```
-2020-04-06_16:13:19.926 
-```
-Mit diesem Zeitstempel kann dann auf das entsprechende Log über die entsprechende URL zugegriffen werden: 
-```
-http://localhost:8065/log/?req_type=extraction&name=sapcustomers2&timestamp=2020-04-06_16:17:10.121 
-```
+
+Weiterführende Links
+- Daten-Aufruf via Webservice (Pull-Destination)
+- Extraktion-Aufruf via Webservice (Push-Destination)
+- Metadaten-Aufruf via Webservice
+- Log-Aufruf via Webservice
