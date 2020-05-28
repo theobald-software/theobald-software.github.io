@@ -9,6 +9,12 @@ Um den Wert eines Parameters im Run-Dialog zu setzen bzw. zu überschreiben, mar
 ```
 http://localhost:8065/?name=Plants&rows=1000
 ```
+
+Mit dem folgenden Befehl können Sie diese Extraktion mit der XU-Kommandozeile aufrufen.
+```
+"C:\Program Files\XtractUniversal\xu.exe" -s localhost -p 8065 -n Plants -o rows=1000
+```
+
 Die Parameter sind über die folgende Reiter verteilt:
 - Extraction
 - Source und

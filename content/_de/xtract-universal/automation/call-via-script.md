@@ -10,10 +10,11 @@ weight: 7
 lang: de_DE
 ---
 
-### Aufruf via Windows-Skript
+In diesem Kapitel zeigen wir, wie man eine Extraktion in einem Skript aufrufen kann.Dazu werden wir das Kommandozeilenprogramm xu.exe nutzen.
 
-In diesem Kapitel zeigen wir, wie man eine Extraktion mit dem Windows Script ausführen kann. 
-Wir erstellen eine Batch-Datei, in der wir dann das Kommandozeilenprogramm xu.exe aufrufen.
+## Aufruf via Windows-Skript
+
+In diesem Beispiel zeigen wir, wie man eine Extraktion mit dem Windows Script ausführen kann. Wir erstellen eine Batch-Datei, in der wir dann das Kommandozeilenprogramm xu.exe aufrufen.
 
 ### Variablen definieren
 
@@ -98,13 +99,12 @@ for %%e in (%extraction_list%) do (
 )
 ```
 
-#### Extraktion im Windows Event-Viewer anzeigen
+### Log der Extraktionim in die Windows-Logs schreiben
 Die Extraktionen von Xtract Universal können auch in die Windows Logs aufgenommen und im Event Viewer angezeigt werden.
-Mehr dazu im Knowledge Base Artikel - How to insert Xtract Universal Extraction Events into the windows logs
-https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer
+Mehr dazu im Knowledge Base Artikel [How to insert Xtract Universal Extraction Events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)
 
 
-### Aufruf via PowerShell
+## Aufruf via PowerShell
 
 Power Shell ist eine mächtige Skriptsprache. In diesem Kapitel zeigen wir, wie man eine Extraktion mit Power Shell ausführen kann. Im Skript rufen wir dann das Kommandozeilenprogramm xu.exe.
 
