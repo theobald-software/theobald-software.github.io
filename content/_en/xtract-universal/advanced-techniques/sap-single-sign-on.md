@@ -9,7 +9,7 @@ childidentifier: sap-single-sign-on
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=sso-with-snc
+progressstate: 5
 ---
 {% include _content/en/xu-specific/advanced-techniques/sap-single-sign-on.md %}
 
