@@ -8,6 +8,6 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=troubleshooting-deltaq
+progressstate: 3
 ---
 {% include _content/en/datasource-deltaq/update-mode.md%}

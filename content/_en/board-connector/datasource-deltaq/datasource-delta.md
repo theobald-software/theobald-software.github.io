@@ -8,6 +8,6 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=delta
+progressstate: 3
 ---
 {% include _content/en/datasource-deltaq/datasource-delta.md %}

@@ -1,14 +1,14 @@
 ---
-ref: bc-datasource-deltaq-10
+ref: bc-datasource-deltaq-11
 layout: page
 title: Miscellaneous
 description: Miscellaneous
 product: board-connector
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 10
+weight: 11
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=hierarchies
+progressstate: 3
 ---
 {% include _content/en/datasource-deltaq/misc-deltaq.md %}
 

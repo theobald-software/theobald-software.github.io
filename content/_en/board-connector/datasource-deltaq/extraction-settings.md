@@ -8,7 +8,7 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 7
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=deltaq-extraction-settings
+progressstate: 3
 ---
 {% include _content/en/datasource-deltaq/extraction-settings.md %}
 

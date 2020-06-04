@@ -8,7 +8,7 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=hierarchies
+progressstate: 3
 ---
 {% include _content/en/datasource-deltaq/hierarchies.md %}
 

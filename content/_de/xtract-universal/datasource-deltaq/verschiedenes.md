@@ -6,8 +6,8 @@ description: Verschiedenes
 product: xtract-universal
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 10
+weight: 11
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=verschiedenes
+progressstate: 3
 ---
 {% include _content/de/datasource-deltaq/verschiedenes.md %}
