@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
+progressstate: 5
 ---
 ### Supported SQL Server Integration Services (SSIS) Versions <br/> 	
 
@@ -19,9 +20,9 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 - SQL Server Integration Services (SSIS) 2019 (until 2030-01-08) 
 
 For development: SQL Server Data Tools are required to create SSIS packages. Use the related SSDT for the SQL Server Integration Services (SSIS) version you are using. <br>
-Check the [Microsoft Help for details](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
+Check the [Microsoft Help](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15) for details.
 
-The version of the SQL Server Database used in SSIS to read or write data can be different from the version of the SQL Server Integration Services (SSIS) version, i.e. one can use SSIS version 2019 to write data to SQL Server Database version 2014.  
+The version of the SQL Server Database used in SSIS to read or write data can differ from the version of the SQL Server Integration Services (SSIS) version, i.e. one can use SSIS version 2019 to write data to SQL Server Database version 2014.  
 
 
 {% include _content/en/requirements/sap-requirements-xtract.md %}
