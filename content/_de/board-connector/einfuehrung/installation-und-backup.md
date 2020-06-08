@@ -70,7 +70,7 @@ Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unter
 
 ### Neuinstallation und Update
 
-Eine neuere Version kann über die ältere Version installiert werden. Alle Einstellungen und angelegten Objekte bleiben erhalten. Mehr Informationen finden Sie im Abschnitt[Installation eines Updates](./update).
+Eine neuere Version kann über die ältere Version installiert werden. Alle Einstellungen und angelegten Objekte bleiben erhalten. Mehr Informationen finden Sie im Abschnitt [Installation eines Updates](./update).
 
 
 ### Versionshistorie
