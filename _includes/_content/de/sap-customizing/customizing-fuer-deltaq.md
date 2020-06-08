@@ -64,4 +64,4 @@ In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc
 
 ![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
-Bei Fehlern bitte im [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide) (Englisch) nachschlagen.
+Bei Fehlern bitte im [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide) (Englisch) nachschlagen.
