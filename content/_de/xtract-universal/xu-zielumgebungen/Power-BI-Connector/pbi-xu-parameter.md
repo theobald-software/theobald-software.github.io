@@ -23,7 +23,7 @@ Im dargestellten Beispiel enthält die Liste einen Eintrag *BUKRS_low*. <br>
 
 ![XU-Custom-Parameter-angezeigt](/img/content/XU_PBI_XU_Parameters_1.png){:class="img-responsive"}
 
-In Power BI Desktop wird die Liste der verfügbaren XU Custom Parameter angezeigt, wenn ein Report auf Basis der ausgewählten Extraktion erstellt wird. Die angezeigten XU Parameter können in Power BI Desktop mit Werten befüllt werden. 
+In Power BI Desktop können Sie sich die Liste der verfügbaren XU Custom Parameter ansehen, wenn ein Report auf Basis der ausgewählten Extraktion erstellt wird. Die angezeigten XU Parameter können in Power BI Desktop mit Werten befüllt werden. 
 ![XU-Custom-Parameter-angezeigt](/img/content/XU_PBI_XU_Parameters_2.png){:class="img-responsive"}
 
 ### Power Query M-Script
