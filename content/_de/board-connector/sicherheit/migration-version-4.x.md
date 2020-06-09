@@ -4,11 +4,10 @@ layout: page
 title: Migration nach BOARD Connector Version 4.x
 description: Migration von BC 2.x und BC 3.x nach BC 4.x
 product: board-connector
-parent: security
+parent: sicherheit
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
-
 progressstate: 5
 ---
 
@@ -17,7 +16,7 @@ Es gibt zwei Möglichkeiten, die Produktversion von BOARD Connector Version 2.x 
 - Manuelles Upgrade
 
 ### Upgrade während der Installation
-1. Starten Sie die [Installationsroutine](../einfuehrung/installation).
+1. Starten Sie die [Installationsroutine](../einfuehrung/installation-und-backup).
 2. Markieren Sie das Kästchen **Convert config files**.<br>
 Die Option *Convert config files* ruft den *ConfigConverter* auf, der gewährleistet, dass alle Extraktionen, Quellsysteme, Destinationen, Server- und Benutzersettings aus BC 2.x und BC 3.x in der neuen Version bereitstehen. <br>
 Mehr Informationen über die Dateien im Installationsordner finden Sie im Abschnitt [Installation und Backup](../einfuehrung/installation).
