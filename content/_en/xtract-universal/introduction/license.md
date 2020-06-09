@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=license
+progressstate: 5
 ---
 ### About licensing concept of Xtract Universal
 The following graphic shows the on which workstations the installation of Xtract Universal with a valid license required.  <br>
