@@ -31,4 +31,4 @@ Ein Neustart des BOARD Connector Service ist nicht notwendig.
 
 ![Demo_License](/img/content/BOARDConnector_Demo_License.png){:class="img-responsive"}
 
-In früheren Versionen von BOARD Connector wurde die Lizenz in Form einer .dll-Datei ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des BOARD Connector Serivce ist bei .dll-Datei unabdingbar.
+In früheren Versionen von BOARD Connector wurde die Lizenz in Form einer .dll-Datei ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des BOARD Connector Service ist bei einer .dll-Datei unabdingbar.

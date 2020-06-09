@@ -16,14 +16,14 @@ Custom Parameter (benutzerdefinierte Parameter), die in Xtract Universal für ei
 Wenn Sie den Power BI Custom Connector verwenden, können die in Xtract Universal definierten Custom Parameter zum Zeitpunkt einer Extraktion in Power BI Desktop befüllt werden.
 
 ### Power BI Custom Connector 
-Bei der Verwendung von Power BI Custom Connector, XU Custom Parameter können befüllt werden, wenn eine Verbindung in Power BI eingerichtet wird. 
+Bei der Verwendung des Power BI Custom Connectors können XU Custom Parameter beim Erstellen einer Verbindung befüllt werden.
 
 Sie haben eine Extraktion erstellt, die über XU Custom Parameter verfügt. Die Liste der Custom Parameter der ausgewählten Extraktion werden unter dem Tab *Custom* im Fenster *Run Extraction* angezeigt. 
 Im dargestellten Beispiel enthält die Liste einen Eintrag *BUKRS_low*. <br>
 
 ![XU-Custom-Parameter-angezeigt](/img/content/XU_PBI_XU_Parameters_1.png){:class="img-responsive"}
 
-In Power BI Desktop können Sie sich die Liste der verfügbaren XU Custom Parameter ansehen, wenn ein Report auf Basis der ausgewählten Extraktion erstellt wird. Die angezeigten XU Parameter können in Power BI Desktop mit Werten befüllt werden. 
+In Power BI Desktop können Sie sich die Liste der verfügbaren XU Custom Parameter ansehen, wenn ein Report auf Basis der ausgewählten Extraktion erstellt wird. Die angezeigten XU Custom Parameter können in Power BI Desktop mit Werten befüllt werden. 
 ![XU-Custom-Parameter-angezeigt](/img/content/XU_PBI_XU_Parameters_2.png){:class="img-responsive"}
 
 ### Power Query M-Script

@@ -32,4 +32,4 @@ Ein Neustart des Xtract Universal Service ist nicht notwendig.
 
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
 
-Vor der Xtract Universal Version 2.99.0 wurden die Lizenzdateien als .dll Dateien ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des Xtract Universal Serivce ist bei .dll-Datei unabdingbar.
+Vor der Xtract Universal Version 2.99.0 wurden die Lizenzdateien als .dll Dateien ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des Xtract Universal Service ist bei einer .dll-Datei unabdingbar.
