@@ -15,7 +15,7 @@ lang: de_DE
 Sie können eine Extraktion via Webservice-Aufruf direkt im Browser oder in einem entsprechenden Skript oder Tool aufrufen. Der Aufruf hat das folgende Format:
 
 ```
-<Protokoll://<HOST oder IP-Adresse>:<Port>/?name=<Name der Extraktion>{&<parameter_i>=<wert_i>}
+<Protokoll>://<HOST oder IP-Adresse>:<Port>/?name=<Name der Extraktion>{&<parameter_i>=<wert_i>}
 ```
 
 Zum Aufruf werden folgende Werte übergeben: 
