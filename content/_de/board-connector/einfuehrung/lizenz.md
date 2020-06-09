@@ -1,8 +1,8 @@
 ---
 ref: bc-introduction-05
 layout: page
-title: Lizensierung
-description: Lizensierung
+title: Lizenzierung
+description: Lizenzierung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path

@@ -1,7 +1,7 @@
 ---
 ref: xfa-introduction-02
 layout: page
-title: Lizensierung
+title: Lizenzierung
 description: Lizenzkonzept von Xtract for Alteryx
 product: xtract-for-alteryx
 parent: einfuehrung
@@ -11,7 +11,7 @@ lang: de_DE
 ---
 
 ### Über das Lizenzkonzept von Xtract for Alteryx
-Für die Nutzung von Xtract for Alteryx werden die folgenden Lizensierungsoptionen angeboten:
+Für die Nutzung von Xtract for Alteryx werden die folgenden Lizenzierungsoptionen angeboten:
 - Desktop-Lizenz - für die Verwendung mit dem Ateryx Designer
 - Serverlizenz - für Deployment auf den Alteryx-Server
 <br>

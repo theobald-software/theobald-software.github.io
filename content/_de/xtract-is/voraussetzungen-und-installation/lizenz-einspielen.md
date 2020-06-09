@@ -1,8 +1,8 @@
 ---
 ref: xi-requirements-and-installation-04
 layout: page
-title: Lizensierung
-description: Über Lizensierung von Xtract IS
+title: Lizenzierung
+description: Über Lizenzierung von Xtract IS
 product: xtract-is
 parent: voraussetzungen-und-installation
 permalink: /:collection/:path

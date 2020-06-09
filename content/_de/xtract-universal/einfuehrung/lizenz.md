@@ -1,8 +1,8 @@
 ---
 ref: xu-introduction-05
 layout: page
-title: Lizensierung
-description: Lizensierung von Xtract Universal
+title: Lizenzierung
+description: Lizenzierung von Xtract Universal
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
