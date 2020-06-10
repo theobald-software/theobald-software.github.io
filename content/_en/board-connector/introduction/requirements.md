@@ -8,7 +8,7 @@ parent: introduction
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-Progressstate: 2
+Progressstate: 5
 ---
 
 {% include _content/en/requirements/sap-requirements-xtract.md %}

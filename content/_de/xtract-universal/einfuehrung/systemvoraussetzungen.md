@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=systemvoraussetzungen
-Progressstate: 2
+Progressstate: 5
 ---
 
 {% include _content/de/einfuehrung/sap-anforderungen-xtract.md %} 
