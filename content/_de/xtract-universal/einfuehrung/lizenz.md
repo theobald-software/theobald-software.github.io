@@ -1,8 +1,8 @@
 ---
 ref: xu-introduction-05
 layout: page
-title: Lizensierung
-description: Lizensierung von Xtract Universal
+title: Lizenzierung
+description: Lizenzierung von Xtract Universal
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
@@ -17,7 +17,7 @@ Die folgende Grafik zeigt, auf welchen Arbeitsplätzen die Installation von Xtra
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}<br>
 
 Xtract Universal wird pro Windows Server lizenziert, d.h. die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Eine Demo-Lizenz wird automatisch mit der Installation von Xtract Universal installiert. <br>
-Eine reguläre Lizenz wird nach dem Kauf des Produkts zur Verfügung gestellt. Die Produktlizenz ist an Ihr Unternehmen und einen bestimmten Servernamen gebunden.<br>
+Eine reguläre Lizenz wird nach dem Kauf des Produkts zur Verfügung gestellt. Die Produktlizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
 Wenn Sie den Xtract Universal Designer und den Xtract Universal Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
  
 ### Installieren von Xtract Universal Lizenz - XtractUniversalLicense.json
@@ -32,4 +32,4 @@ Ein Neustart des Xtract Universal Service ist nicht notwendig.
 
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
 
-Vor der Xtract Universal Version 2.99.0 wurden die Lizenzdateien als .dll Dateien ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des Xtract Universal Serivce ist bei .dll-Datei unabdingbar.
+Vor der Xtract Universal Version 2.99.0 wurden die Lizenzdateien als .dll Dateien ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des Xtract Universal Service ist bei einer .dll-Datei unabdingbar.

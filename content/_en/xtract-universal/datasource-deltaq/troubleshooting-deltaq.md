@@ -1,7 +1,7 @@
 ---
 ref: xu-datasource-deltaq-09
 layout: page
-title: Troubleshooting DeltaQ
+title: Troubleshooting
 description: Troubleshooting DeltaQ
 product: xtract-universal
 parent: datasource-deltaq

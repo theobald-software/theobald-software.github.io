@@ -78,4 +78,4 @@ Go to SAP transaction `SMQS`. Select the destination created in STEP 4, e.g. XTR
 ![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
 
-For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide).              
+For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide).              

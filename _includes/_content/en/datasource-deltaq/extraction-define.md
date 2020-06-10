@@ -46,4 +46,4 @@ The Update Mode can be controlled via a variable too. See Extraction Settings.
 To set a Filter see the section Datasource parameters.
 
  
-In case of errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide). 
+In case of errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide). 

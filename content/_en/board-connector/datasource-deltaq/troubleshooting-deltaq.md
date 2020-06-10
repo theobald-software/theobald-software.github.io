@@ -1,7 +1,7 @@
 ---
 ref: bc-datasource-deltaq-08
 layout: page
-title: Troubleshooting DeltaQ
+title: Troubleshooting
 description: Troubleshooting DeltaQ
 product: board-connector
 parent: datasource-deltaq

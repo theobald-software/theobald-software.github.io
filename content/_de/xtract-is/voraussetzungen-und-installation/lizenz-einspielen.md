@@ -1,8 +1,8 @@
 ---
 ref: xi-requirements-and-installation-04
 layout: page
-title: Lizensierung
-description: Über Lizensierung von Xtract IS
+title: Lizenzierung
+description: Über Lizenzierung von Xtract IS
 product: xtract-is
 parent: voraussetzungen-und-installation
 permalink: /:collection/:path
@@ -16,7 +16,7 @@ Die folgende Grafik zeigt, auf welchen Rechnern die Installation von Xtract IS m
 
 Die Lizenzierung von Xtract IS erfolgt pro Windows-Server auf dem SSIS-Pakete bereitgestellt und ausgeführt werden. Dieselbe Lizenzdatei kann auf den lokalen Rechnern für die Entwicklung der SSIS-Pakete verwendet werden.
 Mit der Installation von Xtract IS wird automatisch eine Demo-Lizenz installiert. <br>
-Die Produktlizenz ist an Ihr Unternehmen und einen bestimmten Servernamen gebunden.
+Die Produktlizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.
 
 ### Installation der Xtract IS-Lizenz - XtractISLicense.json
 1. Um die reguläre Lizenz zu installieren, wählen Sie die ausführbare Xtract IS Lizensmanager-Datei im Installationsverzeichnis von Xtract IS aus:<br>

@@ -1,28 +1,34 @@
 ---
 ref: bc-introduction-05
 layout: page
-title: Lizenz
-description: Lizenz
+title: Lizenzierung
+description: Lizenzierung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
+progressstate: 5
 ---
 
-Der BOARD Connector wird standardmäßig mit einer Demo-Lizenz installiert. Im Menü des BOARD Connector Designers können Sie unter *Help -> Info* die Lizenz-Details einsehen.  
+### Über das Lizenzierungskonzept von BOARD Connector
 
-![BOARDConnector_Demo_License](/img/content/BOARDConnector_Demo_License.png){:class="img-responsive"} 
+BOARD Connector wird pro Windows Server lizenziert, d.h. die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Eine Demo-Lizenz wird automatisch mit der Installation von Board Connector installiert. <br>
+Eine reguläre Lizenz wird nach dem Kauf des Produkts zur Verfügung gestellt. Die Produktlizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
+Wenn Sie den BOARD Connector Designer und den  BOARD Connector Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
+ 
 
+### Installieren von BOARD Connector Lizenz - BoardConnectorLicense.json
+Um die reguläre Lizenz zu installieren, legen Sie die BoardConnectorLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:<br>
+`C:\Program Files\BoardConnector`
+ <br>
+ ![BC_license](/img/content/BOARDConnector_License_Folder.png ){:class="img-responsive"}
+ 
+Ein Neustart des BOARD Connector Service ist nicht notwendig.
 
-Wenn Sie das Produkt erworben haben, bekommen Sie eine Lizenzdatei zugesendet. Ab BOARD Connector Version 2.28.0 werden die Lizenzdateien im Textformat als json-Dateien ausgeliefert. Davor wurden die Dateien als .dlls ausgeliefert.
+{: .box-tip }
+**Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom BOARD Connector Designer  **[Help] > [Info]** oder drücken Sie F12.
 
-- Legen Sie die Lizenzdatei ins Programm-Verzeichnis des Servers ab, auf dem der BOARD Connector Server läuft 
-  (standardmäßig C:\Program Files\BOARDConnector). 
-- Im Falle von json-Lizenzen werden diese automatisch gezogen.
-- Im Falle von dll-Lizenzen stoppen Sie den BOARD Connector Service.
-- Starten Sie danach den BOARD Connector Service neu.
+![Demo_License](/img/content/BOARDConnector_Demo_License.png){:class="img-responsive"}
 
-![BOARDConnector_License_Folder](/img/content/BOARDConnector_License_Folder.png){:class="img-responsive"}
-
-Falls Sie Server und Client Komponente auf getrennten Maschinen betreiben, braucht die Lizenz nur auf dem Server ersetzt zu werden. Bei gekauften Lizenzen ist der Servername Teil der Lizenzdatei.
+In früheren Versionen von BOARD Connector wurde die Lizenz in Form einer .dll-Datei ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des BOARD Connector Service ist bei einer .dll-Datei unabdingbar.
