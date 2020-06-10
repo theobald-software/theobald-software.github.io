@@ -17,7 +17,7 @@ To load an extraction Microsoft SQL Server destination needs to be created and d
 ### Creating Microsoft SQL Server destination
 There are several ways to create a destination. This example depicts 
 1. In the main window of the designer, click **[Destination]** to open destination settings.
-![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
+![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive list-img"}
 
 2. In the window "Destination Settings" click **[...]** (1) to manage destinations. 
 ![Load-Manage-Shared-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive list-img"}
