@@ -1,5 +1,6 @@
 ## Andere Anwendungen und Frameworks	
-- NET Framework 4.7.2 oder höher. Sie können es auf der [Microsoft Webiste](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows) herunterladen.
+- NET Framework 4.7.2 oder höher. Sie können es auf der [Microsoft Website](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows) herunterladen.
+- [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) oder höher für die Nutzung mit TLS/HTTPS.
 
 ## Hardware-Anforderungen
 
