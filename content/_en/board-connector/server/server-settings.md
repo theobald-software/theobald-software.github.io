@@ -46,12 +46,12 @@ See section [Access Management](../security/access-management).
 #### Protocol / Access control
 
 **HTTP - Unrestricted / HTTP port** (default) <br>
-Defines the port number, on which the XU server receives HTTP requests of an extraction. The run statement generates an HTTP-URL. 
+Defines the port number, on which the server receives HTTP requests of an extraction. The run statement generates an HTTP-URL. 
 
 **HTTPS - Unrestricted / HTTPS port** <br>
 Enables secure data transfer via HTTPS.
 
-Defines the port number, on which the XU server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL. Port option defines the HTTPS listener port.
+Defines the port number, on which the server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL. Port option defines the HTTPS listener port.
 
 If you want to receive data via HTTPS you need to install a TLS certificate on the server, on which the Board Connector service is running. <br>
 See section [Installing an X.509 certificate](../security/install-x.509-Certificate). 
