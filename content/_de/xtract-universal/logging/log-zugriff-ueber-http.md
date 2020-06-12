@@ -87,8 +87,8 @@ Der Log enthält folgende Spalten:
 - **LineCount**: enthält die Zeilennummer.
 - **Name**: enthält den Namen der Extraktion bei einem Extraktionslog bzw.[server] bei einem Serverlog.
 - **Timestamp**: enthält den Zeitstempel.
-- **State**: enthält eine Zahl zwischen 2 und 4 bei einer Extraktion bzw. die Zahl 5 bei einem Serverlog.
-- **StateDescr**: Beschreibung des Status.
+- **State** (s. u.): enthält eine Zahl zwischen 2 und 4 bei einer Extraktion bzw. die Zahl 5 bei einem Serverlog.
+- **StateDescr** (s. u.): Beschreibung des Status.
 - **LogLevel**: hat den Wert Error, Info oder Debug und beschreibt, ob es sich um eine Fehler-, Info- oder Debug-Logzeile handelt.
 - **Source** enthält den Namen der technischen Komponente, welche  den Log-Eintrag erzeugt hat. 
 - **Message**: enthält den Loginhalt.
