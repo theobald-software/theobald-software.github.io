@@ -4,6 +4,7 @@
 
 In order to be able to use the DeltaQ components, some customizing settings have to be made in SAP as described step-by-step in the following:
 
+
 ### STEP 1
 
 Use transaction `SM59` to create an RFC destination of type `3`, e. g.  name it `XTRACT01`. 
@@ -12,6 +13,7 @@ Use transaction `SM59` to create an RFC destination of type `3`, e. g.  name it 
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> You don't need to conduct a transmission test - only the destination has to be created
 </div> 
 
+
 ### STEP 2 [optional]
 
 STEP 2 to create a logical system is optional, since the functional module in STEP 3 will automatically create it if it does not exist. 
@@ -19,6 +21,7 @@ STEP 2 to create a logical system is optional, since the functional module in ST
 With the help of the SALE transaction, create a logical system with the same name as your destination in STEP 1.
 
 ![DeltaQ-Customizing-01](/img/content/DeltaQ-Customizing-01.png){:class="img-responsive" }
+
 
 ### STEP 3
 
@@ -42,6 +45,7 @@ If you set the values ZXTIDOC and XT for XTRACT01, you can set e.g. ZX2IDOC and 
 
 ![DeltaQ-Customizing-03](/img/content/DeltaQ-Customizing-03.png){:class="img-responsive" }
 
+
 ### STEP 4
 
 Now go back into the `SM59` transaction and delete the destination that you created in STEP 1 
@@ -56,11 +60,13 @@ Set the following fields:
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive" }
 
+
 ### STEP 5
 
 Launch the `RSAS_RBWBCRL_STORE` module as shown below. Its purpose is to activate the new target system.
 
 ![DeltaQ-Customizing-05](/img/content/DeltaQ-Customizing-05.png){:class="img-responsive" }
+
 
 ### STEP 6
 
@@ -69,6 +75,7 @@ Refer to our [knowledge base](https://kb.theobald-software.com/sap/registering-r
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> STEP 6 is for SAP Kernel Release 720 or higher.
 </div>
+
 
 
 ### STEP 7

@@ -1,4 +1,6 @@
+
 ### SQL Anweisungen
+
 
 #### Preparation
 
@@ -17,6 +19,7 @@ Wollen Sie im ersten Schritt nur die Tabelle anlegen und keine Daten einfügen, 
 Nachdem die Tabelle angelegt ist, bleibt es Ihnen überlassen, die Tabellendefinition zu ändern, 
 indem Sie bspw. entsprechende Schlüsselfelder und Indizes bzw. zusätzliche Felder anlegen.
 
+
 #### Row Processing
 
 Definiert, wie die Daten in die Zieltabelle eingefügt werden.
@@ -26,12 +29,14 @@ Definiert, wie die Daten in die Zieltabelle eingefügt werden.
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL.
 - *Merge (deprecated)*: Diese Option ist veraltet. Bitte nutzen Sie die Option Fill merge staging table und prüfen Sie den Abschnitt Über Merging. 
 
+
 #### Finalization
 
 Definiert die Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle erfolgreich eingefügt werden.
 - *Finalize Merge*: schließt den Merge-Prozess ab und löscht z.B. die temporäre Staging-Tabelle. Für weitere Infos siehe Abschnitt Über Merging. 
 - *None*: keine Aktion (Default).
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL. 
+
 
 #### Über Merging
 
@@ -58,12 +63,14 @@ Es ist wichtig, dass ein entsprechender Index angelegt ist, um den Merge-Befehl 
 Ohne einen Index würde die Ausführung des Merge-Befehls abhängig von der Datenmenge lange dauern.
 
 
+
 #### Custom SQL 
 
 Hier können Sie eigene SQL- bzw. Skript-Ausdrücke definieren. Bestehende SQL-Befehle können Sie als Vorlage verwenden. 
 
 Im folgenden [Link](../microsoft-sql-server/sql-server-custom-sql) finden Sie ein Beispiel für die Verwendung von vordefinierten Ausdrücken. 
 > **Note:** Eine syntaktische Anpassung des Codes ist für andere DB Zielumgebungen notwendig!
+
 
 
 #### Vorlagen
@@ -74,6 +81,7 @@ Dafür können Sie die angeboten SQL-Vorlagen der folgenden Phasen verwenden:
 - *Preparation (z.B. Drop & Create oder Create if Not Exists)* 
 - *Row Processing (z.B. Insert oder Merge)* und 
 - *Finalization*.
+
 
 #### Skript-Ausdrücke
 

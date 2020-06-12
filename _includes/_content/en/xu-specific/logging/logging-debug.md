@@ -8,6 +8,7 @@ Activate the debug logging only when necessary, e.g., upon request of the suppor
 
 Standard logging is independent of the debug logging setting and is executed even if debug logging is inactive.
 
+
 ### Activating tracing
 
 1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**. 

@@ -2,8 +2,10 @@ Unlike the other components, the Report component requires the installation of a
 
 If you can’t do this on your own, please ask your SAP system administrator for help.
 
+
 ### SAP transport
 You can either use SAP transport file *(thtrans.zip)*, which can be found in the ABAP subfolder of the installation folder of our software.
+
 
 
 ### Manual installation
@@ -29,11 +31,13 @@ If you are interested in how the function module works, have a look at the sourc
 
 ![Report-Custom-Function-Source-Code](/img/content/Report-Custom-Function-Source-Code.png){:class="img-responsive" }
 
+
 ### LIST_OUTPUT
 
 Instead of using the SAP delivered data type TAB512 for the LIST_OUTPUT Tables parameter, you can create your own custom Z data type. This is needed in cases where the length of one report output row exceeds 512 characters. The maximum length is 1023 characters.
 
 ![SAPCust-Report-ListOutput](/img/content/SAPCust-Report-ListOutput.png){:class="img-responsive" }
+
 
 ### Exceptions
 

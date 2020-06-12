@@ -1,10 +1,12 @@
 
 ![Extraction-Settings-01](/img/content/xu/Table-Extraction-Settings.png){:class="img-responsive"}
 
+
 ### Table Settings
 Das Fenster "Table Settings" besteht aus zwei Unterabschnitten:
 - Extraction Settings
 - Function Module 
+
 
 ### Extraction Settings
 
@@ -19,6 +21,7 @@ Die Paketgröße (Package Size) zwischen 15000 und 50000 ist sinnvoll für groß
 
 **Row limit** <br>
 Gibt die maximale Anzahl der extrahierten Datensätze an. *0* extrahiert die komplette Tabelle.
+
 
 ### Function Module
 Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Das Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind.

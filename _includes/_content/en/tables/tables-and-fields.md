@@ -4,10 +4,12 @@ The tab *Tables and Fields* consists of three main subsections:
 - Fields
 - Preview
 
+
 ### Tables
 To add a new table or remove an existing table, click **[Add]** or **[Remove]**.
  
 ![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
+
 
 ### Fields
 ![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
@@ -43,8 +45,10 @@ After the conversion, the value is always displayed as it would appear in a tran
 **Note:** the option "Use Conversion Routine" is only supported with function module [Z_XTRACT_IS_TABLE_COMPRESSION](./extraction-settings). 
 --->
 
+
 ### Preview
 The subsection *Preview* displays a real-time preview of the selected fields, when the button **"[Load live preview]** is clicked.
+
 
 ### Buttons
 **[Load live preview]** <br>

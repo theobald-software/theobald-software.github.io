@@ -1,3 +1,4 @@
+
 ### Using WHERE clause 
 1. Select and double-click an extraction of type "table" in the main window of the Designer.
 The window "Define data source for SAP Table " opens.
@@ -9,6 +10,7 @@ The window "Define data source for SAP Table " opens.
 **Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g. MAKT~MATNR. This can be the case with [table joins](./table-joins).
 
 ![Extraction Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+
 
 ### Buttons
 **[Load live preview]** <br>
@@ -23,6 +25,7 @@ A new lookup is performed on the selected table(s). Existing mappings and field 
 It may be necessary to renew the metadata, for example, if a table has been adjusted on the SAP side, another source system has been connected, or the source system has been updated. 
 In such cases, data inconsistencies can occur that are resolved by this function.   
 
+
 ### WHERE clause syntax 
 
 {: .box-warning }
@@ -31,6 +34,7 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 
 {: .box-tip}
 **Tip:** To check the syntax of the WHERE clause, click **[Load live preview]**. This way there is no need to run an extraction to see, if the syntax is correct.
+
 
 #### Syntax rules
 - Enter a space before and after the equal sign:<br>
@@ -61,6 +65,7 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 | NOT LIKE | True if the value of the operand operand1 does not match the pattern ('%' is any character string) in the operand2. |
 
 Get more information about the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
+
 
 ### WHERE clause restrictions
 

@@ -1,3 +1,4 @@
+
 ### SAP Requirements
 
 {% include _content/en/requirements/sap-systems.md %}

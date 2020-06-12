@@ -5,6 +5,7 @@ The follwing section describes the extraction parameters can be changed in the w
 To open "Run extractions" window, select an extraction in the main window of the Designer and click 
 **[Run]** (see details in [Running an extraction](../getting-started-table/run-an-extraction)).
 
+
 ### Subsection "Parameters" Tab "Extraction"
 
 The amount of the parameters depends on the extraction type and destination.
@@ -22,6 +23,7 @@ packageSize | to set the package size | available in Table
 decimalSeparator | to set a symbol between integer and fractional part | available in CSV
 columnSeparator |  to set a symbol which indicates the start of a new column | available in CSV
 
+
 ### Subsection "Parameters" Tab "Source"
 
 ![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
@@ -35,6 +37,7 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 
 {: .box-note }
 **Note:** The parameter **logonTicket** can only be set, only if SAP logon ticket is selected as authentication method in the [SAP source details](../introduction/sap-connection).
+
 
 
 ### Subsection "Parameters" Tab "Custom"

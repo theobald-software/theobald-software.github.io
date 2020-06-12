@@ -14,8 +14,10 @@ Die Einstellungen befinden sich auf der linken Seite des Fensters "Define data s
 ![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive"}
 <br/>
 
+
 ### Operational Data Provider <br/>
 zeigt den Namen des Quellobjekts an 
+
 
 ### Additional info <br/>
 **Context**<br/>
@@ -23,6 +25,7 @@ zeigt den Kontext des ODP-Anbieters an
 
 **Type**<br/>
 zeigt den Datentyp des Quellobjekts an.
+
 
 ### Update Mode <br/>
 **Full update**:<br/>

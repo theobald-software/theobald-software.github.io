@@ -16,6 +16,7 @@ Examples:
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
 
+
 ### Using Script Expressions
 
 Script expressions can be used both for the [WHERE-condition](../table/where-clause) of a table and in the destination settings using [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal example).
@@ -24,6 +25,7 @@ Script expressions can be used both for the [WHERE-condition](../table/where-cla
 **Note:** Using a WHERE-condition the value must be entered in single quotation marks.<br>
 *Syntax:*```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
 *Example:*```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("d")}#'```
+
 
 ### IF-statement 
 
@@ -35,11 +37,13 @@ Example:
 |:--------------------------------------------------------|:---------|:-------|
 |```#{ iif(DateTime.Now.Month==7, "July","Unknown")}# ```| July     | When we are in the 7th month, the output is "July", else "Unknown" |
 
+
 ### Defined functions
 
 | Input                                                   | Description|
 |:--------------------------------------------------------|:-------|
 |``` bool ExistsTable(string tableName) ``` | Check if the the table exists on the database destination. |
+
 
 ### Defined properties
 
@@ -55,9 +59,11 @@ The following expressions are defined and can be used:
 
 See an [example](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) of the use of defined expressions in the destination Custom-SQL settings.
  
+
 ### Supported data types
 
 For the complete list of supported [data types](https://docs.microsoft.com/de-de/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) including [date and time](https://docs.microsoft.com/de-de/dotnet/standard/base-types/custom-date-and-time-format-strings), see the Microsoft online help.
+
 
 ### Supported key words
 

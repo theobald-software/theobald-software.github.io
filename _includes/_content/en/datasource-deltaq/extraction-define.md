@@ -1,3 +1,4 @@
+
 ### Step 1: Search for extractor
 
 Within the editor, you can look up a DataSource (OLTP Source) by clicking the binocular button. You can also use wildcards ( * ) in your search.
@@ -5,6 +6,7 @@ Within the editor, you can look up a DataSource (OLTP Source) by clicking the bi
 The following example shows the download of material master data from the DataSource 0MATERIAL_ATTR.
 
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
+
 
 ### Step 2: Define and Check Customizing 
 
@@ -14,16 +16,19 @@ Gateway Host is the name (or IP address of your SAP system). Be sure that the Ga
 The Gateway Service is generally sapgwNN, where NN is the ID of your SAP system, i.e. a number between 00 andd 99.
 See Customizing Check.
   
+
 ### Step 3: Set Update Mode
 
 In our example, we will make a **Full Update**. A full update requests all data that meets the selection criteria you set.
 To get a real Delta procedure running, Delta first has to be initialized. See Delta.
+
 
 ### Step 4: Select Columns
 
 You also have to put a checkmark next to the columns you would like to extract. Your template should look like this when you're done:
 
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
+
 
 ### Step 5: Activation
 

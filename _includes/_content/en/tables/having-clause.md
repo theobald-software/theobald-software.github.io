@@ -1,3 +1,4 @@
+
 ### Using HAVING-clause
 The usage of HAVING-clause is shown with the help of an example. The following example shows how many materials are assigned to a material type (MTART). After applying the HAVING-clause the preview shows only the material types with more than 10 materials assigned.
 

@@ -1,3 +1,4 @@
+
 ### Filterung - Setzen dynamischer Selektionsfilter<br/>
 Filterungsoptionen werden über das Hauptfenster der Komponente im Unterabschnitt **Fields** aufgerufen. <br/>
 <br/>

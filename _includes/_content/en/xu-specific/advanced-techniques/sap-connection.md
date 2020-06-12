@@ -1,4 +1,5 @@
 
+
 ### Connection Details
 
 The tab *General* contains the connection details and is divided into four subsections:
@@ -19,6 +20,7 @@ The SAP connection is set up successfully.
 ![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"}
 
 
+
 ### System
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server
@@ -30,6 +32,7 @@ There are two possibilities to connect to an SAP source system:
 	- **Group**: property LogonGroup, usually *PUBLIC*
 	- **SID**: three-digit System ID (Property SID e.g.,  MSS) 
 See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+
 
 #### Accessing via SAP router
 
@@ -43,9 +46,11 @@ See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01
 **Tip:** Values to fill out the forms can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
 
 
+
 ### Client and Language
 - Client - a three-digit number of the SAP client between 000 and 999, e.g., 800.
 - Language - the logon language for the SAP system, e.g., EN for English or DE for German.
+
 
 ### Authentication
 The following authentication methods are supported:
@@ -60,6 +65,7 @@ You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-s
 **Note:** when marking the checkbox **Require SAP credentials to be explicitly supplied for execution** the SAP credentials are not cached. This option is only active 
 using *Plain* or *SNC* authentication method and running an extraction in browser (button **[Run in Browser]**. After starting an extraction a window pops-up and the user is required to enter SAP credentials for every extraction. 
 
+
 #### SNC 
 
 1. Check the SAP parameter snc/gssapi_lib to determine, which library is used for encryption in your SAP system.
@@ -69,8 +75,10 @@ Your SAP basis has to import and configure the same library on the application s
 
 Follow the steps described in [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) when working with Kerberos library.
 
+
 ### Miscellaneous
 Select a library and optionally define a trace directory for debug logging.
+
 
 #### RFC libraries
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system.  
@@ -86,6 +94,7 @@ SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/suppo
 {: .box-note }
 **Note:** When using the NetWeaver RFC library with DeltaQ or OHS extractions, the RFC destination in SM59 must be set to Unicode. 
 
+
 #### Trace Directory
 
 You can log debug information and save it locally. Fill the **Trace directory** field with a local path to a folder, where you want to save the debug information.
@@ -97,6 +106,7 @@ A big amount of information is collected when debug logging is activated. This c
 Activate the debug logging only when necessary e.g., upon request of the support team.
 
  
+
 ### To Check the New SAP Connection
 1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
 The window "Manage Sources" opens. <br>

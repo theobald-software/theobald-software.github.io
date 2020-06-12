@@ -1,3 +1,4 @@
+
 ### SAP-Authentifizierung
 - SAP-Benutzerauthentifizierung (Benutzername und Kennwort)
 - SAP-Authentifizierung mit Single Sign On (SSO) und Kerberos

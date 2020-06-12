@@ -1,10 +1,12 @@
 Im Gegensatz zu den meisten anderen Komponenten ist es bei der Report Komponente nötig, einen Z-Funktionsbaustein im SAP-System zu installieren.<br>
 Falls Sie dies nicht selber machen können, bitten Sie einen Kollegen aus Ihrer SAP-Basis-Abteilung, Ihnen zu helfen. 
 
+
 ### SAP Transport
 Sie können den Funktionsbaustein mit Hilfe des mitgelieferten Transportauftrags installieren, den Sie als zip-Datei *(thtrans.zip)* im Unterordner ABAP des Installationsordners unserer Software finden. 
 
 Alternativ installieren Sie den Baustein manuell.
+
 
 ### Manuelle Installation
 
@@ -26,11 +28,13 @@ Im Code sind die einzelnen Schritte (Programmausführung, Spoolabruf, Job-Überw
 
 ![Report-Custom-Function-Source-Code](/img/content/Report-Custom-Function-Source-Code.png){:class="img-responsive"}
 
+
 ### LIST_OUTPUT
 
 Anstatt den SAP Standard Datentyp TAB512 für den LIST_OUTPUT Tabellen Parameter zu verwenden, können Sie einen eigenen Z-Datentyp erstellen. Das ist notwendig sofern die Output Länge einer Report-Zeile mehr als 512 Zeichen beträgt. Die maximal mögliche Länge beträgt 1023 Zeichen.
 
 ![SAPCust-Report-ListOutput](/img/content/SAPCust-Report-ListOutput.png){:class="img-responsive"}
+
 
 ### Exceptions
 

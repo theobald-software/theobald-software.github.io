@@ -1,3 +1,4 @@
+
 ### SAP-Releases
 
 Die gesamte Kommunikation mit SAP wird über das RFC-Protokoll abgewickelt. Das heißt, die Integration erfolgt auf der Ebene des SAP-Applikationsservers. 

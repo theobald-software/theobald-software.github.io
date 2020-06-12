@@ -2,6 +2,7 @@ There are two ways of upgrading the product version from XU 2.x and 3.x to XU 4.
 - Upgrade during installation
 - Manual upgrade
 
+
 ### Upgrade During Installation
 1. Start the [installation routine](../introduction/installation-and-backup).
 2. Make sure to mark the checkbox **Convert config files** checkbox. <br>
@@ -10,6 +11,7 @@ Fore more information about installation folder files see also section [Installa
 ![XU3_Migration_1](/img/content/XU4_Migration_1.png){:class="img-responsive"}
 3. Confirm the conversion process in the command line pop-up window.  
 ![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"}
+
 
 ### Manual Upgrade
 If the *ConfigConverter* is not executed automatically during installation, it can also be started manually from the installation directory: ``C:\Program Files\XtractUniversal``. <br>

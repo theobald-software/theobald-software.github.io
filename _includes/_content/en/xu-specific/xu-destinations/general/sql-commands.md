@@ -1,4 +1,6 @@
+
 ### SQL Commands
+
 
 #### Preparation
 
@@ -17,6 +19,7 @@ If you only want to create the table in the first step and do not want to insert
 Once the table is created, it is up to you to change the table definition, 
 by, for example, creating corresponding key fields and indexes or additional fields.
 
+
 #### Row Processing
 
 Defines how the data is inserted into the target table.
@@ -26,6 +29,7 @@ Defines how the data is inserted into the target table.
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 - *Merge (deprecated)*: This option is obsolete. Please use the Fill merge staging table option and check the About Merging section. 
 
+
 #### Finalization
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
@@ -33,9 +37,11 @@ Defines the action on the target database after the data has been successfully i
 - *None*: no action (default).
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 
+
 #### About Merging
 Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
 See section [merging data](./merging-data)
+
 
 #### Custom SQL
 
@@ -49,6 +55,7 @@ A syntactic adaptation of the code is necessary for other DB target environments
 
 See section [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) for more details.
 
+
 #### Templates
 
 You can write your own SQL expressions and thus have the possibility to adapt the loading of the data to your needs. <br>
@@ -57,6 +64,7 @@ To do this, you can use the SQL templates provided in the following phases:
 - *Preparation (e.g. Drop & Create or Create if Not Exists)* 
 - *Row Processing (e.g. Insert or Merge)* and 
 - *Finalization*.
+
 
 #### Script Expressions
 

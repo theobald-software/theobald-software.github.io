@@ -1,3 +1,4 @@
+
 ### Schritt 1: Extraktor suchen
 
 Im leeren Dialog klicken Sie auf den Fernglas-Button, um eine OLTP-Quelle im SAP zu suchen.<br>
@@ -5,9 +6,11 @@ Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSour
 
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
 
+
 ### Schritt 2: Customizing Überprüfen 
 
 Prüfen Sie die Customizing-Einstellungen mit dem Link Customizing Check, falls Sie das noch nicht getan haben.
+
 
 
 ### Schritt 3: Update Mode setzen 
@@ -15,12 +18,14 @@ Prüfen Sie die Customizing-Einstellungen mit dem Link Customizing Check, falls 
 Das Feld Update Mode ist standardmäßig auf F - Full gesetzt. <br>
 Damit wird der gesamte Datenbestand aus SAP geholt, ohne einen Delta-Mechanismus zu initialisieren. Wir behalten diese Einstellung. 
 
+
 ### Schritt 4: Spalten wählen
 
 Nun müssen Sie noch Häkchen in die Spalten setzen, die Sie gerne extrahieren wollen. Alternativ können Sie auf Select All klicken, um alle Spalten zu wählen. <br>
 Ihre Maske sollte dann wie folgt aussehen:
 
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
+
 
 ### Schritt 5: Extraktor aktivieren 
 

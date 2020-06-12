@@ -1,4 +1,5 @@
 General Settings are independent of the extraction type.
+
 ### To open General Settings
 1. In the main window of the Designer, double-click an extraction.<br>
 The window "Define data source for [...]" opens.<br>
@@ -9,12 +10,14 @@ Example:
 The window "General Settings" opens.
 
 
+
 ### Misc. tab
 The miscellaneous tab consists of two subsections:
 - Options
 - Keywords
 
 ![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
+
 
 #### Options
 **Cache results** (1)
@@ -28,6 +31,7 @@ This increases the performance and limits the impact on the SAP system. If this 
 **Preview Mode** (2)
 If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
 
+
 #### Keywords
 One or more keywords (Tags) can be set to an extraction. 
 Keywords can be entered directly in the keyword field (3).
@@ -36,6 +40,7 @@ Within the Designer you can use these keywords to filter  extractions.
 {:.box-tip}
 **Tip:** to display filter options, navigate to **[Extractions] > [Filter]** or press **[CTRL]+[F]**.
  
+
 ### Primary Key tab
 Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
@@ -44,6 +49,7 @@ Depicted example demonstrates the SAP object *MAKT* with it's primary key inheri
 
 {:.box-note}
 **Note:** A defined primary key field in a table is a prerequisite for merging data. 
+
 
 
 ### Security Tab

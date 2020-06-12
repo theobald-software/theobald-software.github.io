@@ -4,6 +4,7 @@
    
 Um die DeltaQ-Komponente nutzen zu können, sind einige Customizing-Einstellungen im SAP vorzunehmen, die im Folgenden Schritt für Schritt beschrieben sind.
 
+
 ### Schritt 1<br>
 Legen Sie in der Transaktion SM59 eine neue RFC-Destination vom Typ R/3 an (z.B. mit Namen XTRACT01, Connection Type 3). Sie brauchen keinen Verbindungstest durchzuführen. Die Destination muss nur vorhanden sein.
 
@@ -18,6 +19,7 @@ Legen Sie mit Hilfe der Transaktion SALE ein logisches System an mit demselben N
 
 Der 2. Schritt, also die Anlage der logischen Destination, ist optional. 
 Im Schritt 3 wird beim Ausführen des FuBas RSAP_BIW_CONNECT_40 automatisch die logische Destination angelegt. 
+
 
 ### Schritt 3<br>
 Gehen Sie in die Transaktion SE37 und rufen Sie den Baustein RSAP_BIW_CONNECT_40 in der Testumgebung auf. Füllen Sie die Import-Parameter wie im Screenshot angegeben. <br>
@@ -39,6 +41,7 @@ Mit *F8* starten Sie den Baustein.
 
 ![DeltaQ-Customizing-03](/img/content/DeltaQ-Customizing-03.png){:class="img-responsive"}
 
+
 ### Schritt 4<br>
 Gehen Sie wieder in die Transaktion SM59 und löschen Sie die Destination, die Sie im Schritt 1 angelegt haben (*Detailanzeige -> Menü Löschen*). Legen Sie dann eine neue Destination an mit exakt demselben Namen, diesmal aber vom Connection *Typ* T=TCP/IP. Der Aktivierungstyp muss *registrierbares Serverprogramm* sein; als *Program ID* tragen Sie den Namen der Destination ein.
 
@@ -47,10 +50,12 @@ Gehen Sie wieder in die Transaktion SM59 und löschen Sie die Destination, die S
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
 
+
 ### Schritt 5<br>
 Führen Sie den Baustein RSAS_RBWBCRL_STORE wie unten gezeigt aus. Er dient dazu, das neue Zielsystem zu aktivieren.
 
 ![DeltaQ-Customizing-05](/img/content/DeltaQ-Customizing-05.png){:class="img-responsive"}
+
 
 ### Schritt 6<br>
 In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher) finden Sie die Anleitung zu der Registrierung des RFC Servers in SAP. 
@@ -58,6 +63,7 @@ In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc
 <div class="alert alert-info">
   <i class="fas fa-info-circle"></i> <strong>Note:</strong> Dieser Schritt gilt ab der SAP Kernel-Version 720.
 </div>
+
 
 ### Schritt 7<br>
 Öffnen Sie Transaktion SMQS. Markieren Sie die RFC Destination aus Schritt 4, z.B. XTRACT01. Klicken Sie dann auf die Schaltfläche ‘Register without activation’ (or ‘Reg. o. Aktivierung’) und ändern Sie den Parameter Max.Verb. auf den Wert 10. Erhöhen Sie diesen Wert, wenn Sie mehrere DeltaQ-Extraktionen auf derselben RFC Destination parallel ausführen.

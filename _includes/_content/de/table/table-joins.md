@@ -15,6 +15,7 @@ Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Hilfe](http
 {: .box-note }
 **Hinweis**: Das Joinen von Cluster- oder Pool-Tabellen wird nicht unterstützt. Cluster- und Pool-Tabellen müssen einzeln extrahiert und im Datenziel miteinander verknüpft (gejoint) werden.
 
+
 ### Joinen von zwei Tabellen
 
 Das folgende Beispiel zeigt, wie die Tabellen MARA und MAKT verknüpft werden können.
@@ -46,10 +47,12 @@ Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen MARA (linke 
 **Tipp**: Verschiedene Tabellen können identische Feldnamen haben. Die Definition einer Join-Bedingung auf der Grundlage der identischen Feldnamen liefert nicht immer das erwartete Ergebnis (z.B. VBAK~VBELN <> LIPS~VBELN).
 Stellen Sie sicher, dass die Felder, die Sie in einer Join-Bedingung verwenden, den gleichen Inhalt/die gleichen Daten enthalten.
 
+
 ##### Auto-Mapping-Funktion (optional)
 
 Der Button **[Auto-Map]** löscht bestehende Join-Bedingungen und führt eine neue Feldzuordnung auf der Grundlage der Fremdschlüsselbeziehung der verknüpften Tabellen durch. 
 ![Table-Join-Automapping](/img/content/join_automap.png){:class="img-responsive"}
+
 
 
 ### Joinen von drei Tabellen

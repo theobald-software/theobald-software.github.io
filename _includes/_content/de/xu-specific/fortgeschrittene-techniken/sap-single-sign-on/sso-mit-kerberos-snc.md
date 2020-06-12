@@ -4,6 +4,7 @@ In diesem Abschnitt werden die notwendigen Schritte beschrieben, um Single Sign-
 **Warnung! Single Sign-On Verfügbarkeit** <br> 
 ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss SNC mit Kerberos-Verschlüsselung auf SAP-Seite eingestellt sein. <br>
 
+
 ### Aktivierung von HTTPS
 1. Aktivieren Sie das Zugriffskontrollprotokoll HTTPS (1) innerhalb des Tabs *Web Server* Einstellungen. 
 2. Verweisen Sie auf ein vorhandenes [X.509-Zertifikat](../../sicherheit/x.509-zertifikat-installieren) (2).<br>
@@ -17,6 +18,7 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
+
 ### Konfiguration vom Windows AD Service-Account.
 1. Erstellen Sie einen Windows AD Service-Account für den Xtract Server. Dies ist der Account, unter dem der Dienst läuft (z.B. XU-Service oder BOARD Connector Service).
 ![XU_ServiceAccount](/img/content/XU-server-service-account.png){:class="img-responsive"}
@@ -28,6 +30,7 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 Mehr Informationen zu den Notationen in SAP, finden Sie im [SAP Hilfe-Portal](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/en-US/440ebb40b9920d1be10000000a114a6b.html).
 5. Im Tab *Log On*, ändern Sie den Account zu Service-Account, z.B. *svc_xusrv@theobald.local*.
 ![XU_SSO_WinAD_SPN](/img/content/XU_Service_Account.png)
+
 
 ### Servereinstellungen
 
@@ -55,6 +58,7 @@ SubKey | HKEY_LOCAL_MACHINE\SOFTWARE\SAP\gsskrb5
 Entry (Eintrag) | ForceIniCredOK
 Type (Typ) | REG_DWORD
 Value (Wert) | 1
+
 
 ### Einstellungen der SAP-Quelle 
 

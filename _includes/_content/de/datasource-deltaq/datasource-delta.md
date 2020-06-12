@@ -15,7 +15,6 @@ Hier werden keine Daten geladen. Danach können Sie aber das Delta Update nutzen
 
 Lassen Sie Ihr Paket einmalig laufen, und stellen Sie dann den UpdateType auf ***Delta Update***. <br>
 Mit dem Delta Update werden nur noch die Änderungen seit der letzten Übertragung extrahiert.
-
 ### Optional
 
 **Delta Queue - RSA7** 

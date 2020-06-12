@@ -8,6 +8,7 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 
 Das Standard-Logging ist von Debug-Logging-Einstellung unabhängig und wird auch bei einem inaktivem Debug-Logging ausgeführt.
 
+
 ### Aktivieren der Nachverfolgung (Tracing)
 1. Im Hauptfenster des Designers, navigieren Sie zur Hauptmenüleiste und wählen Sie **Server > Manage Sources**.
 ![XU-Create-Connection-1](/img/content/server_manage_sources.png){:class="img-responsive"}

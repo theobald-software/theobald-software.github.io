@@ -1,3 +1,4 @@
+
 ### Authentication and encryption procedures <br>
 The connection between the Xtract Universal Designer and the Xtract Universal Server can be made using different authentication and encryption methods. 
 
@@ -30,16 +31,19 @@ These different logon options can be activated/deactivated in the Server Setting
 
 ![XU3_ServerSettings_authenticaion_methods](/img/content/xu/authentisierung_xu.png){:class="img-responsive"}
 
+
 ### Target principal<br>
 To use Kerberos transport encryption or authenticate an Active Directory user, a Kerberos Target Principal Name (TPN) is required. 
 
 This can be either a User Principal Name (UPN) or a Service Principal Name (SPN). For further information about this topic, please click [here](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+
 
 ### User<br>
 Creating custom users works in the same way as creating basic users in XU 2.x. At the time of user creation, no rights need to be assigned, see chapter Access Management.<br>
 Custom users are created and assigned to custom user groups via *Security - Manage Users*.
 
 ![XU3_assign_UserGroups](/img/content/XU3_assign_UserGroups.png){:class="img-responsive"}
+
 
 ### User groups<br>
 In XU 2.x, user groups could only be created in Xtract Universal. XU 3.x additionally supports Windows AD user groups, which are created outside Xtract Universal. At the time of user group creation no rights have to be assigned, see chapter Access Management.<br>

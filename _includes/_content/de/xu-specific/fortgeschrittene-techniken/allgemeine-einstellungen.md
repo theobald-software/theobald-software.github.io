@@ -1,5 +1,6 @@
 Die allgemeinen Einstellungen sind unabhängig vom Extraktionstyp.
 
+
 ### Allgemeine Einstellungen öffnen
 1. Im Hauptfenster des Designers doppelklicken Sie auf eine Extraktion.<br>
 Das Fenster "Define data source for [...]" wird geöffnet.<br>
@@ -8,6 +9,7 @@ Beispiel:
 2. Klicken Sie in dem geöffneten Fenster auf **[General Settings]**.<br>
 Das Fenster "General Settings" wird geöffnet.
 
+
 ### Misc. Tab
 
 Der Tab "Misc." besteht aus zwei Unterabschnitten:
@@ -15,6 +17,7 @@ Der Tab "Misc." besteht aus zwei Unterabschnitten:
 - Schlüsselwörter
 
 ![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
+
 
 #### Options
 
@@ -32,6 +35,7 @@ Dies erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
 
 Wenn der Preview-Modus aktiviert ist, wird nur ein kleiner Teil der Daten aus SAP extrahiert oder, falls eine Extraktion nicht möglich ist, werden stattdessen Beispieldaten erzeugt.
 
+
 #### Keywords (Schlüsselwörter)
 
 Ein oder mehrere Schlüsselwörter (Tags) können auf eine Extraktion gesetzt werden. 
@@ -40,6 +44,7 @@ Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extr
 
 {:.box-tip}
 **Tipp:** zum Anzeigen der Filteroptionen, navigieren Sie zu **[Extractions] > [Filter]** oder drücken Sie **[CTRL]+[F]**.
+
 
 
 ### Primary Key Tab
@@ -51,6 +56,7 @@ In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. 
 
 {:.box-note}
 *Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
+
 
 
 ### Security Tab

@@ -4,6 +4,7 @@ The following section describes the required steps for setting up Single Sign-On
 **Warning!  Single Sign-On availability** <br> 
 ABAP application server has to run on a Windows OS and SNC with Kerberos encryption setup on SAP. <br>
 
+
 ### Activation of HTTPS 
 
 1. Enable access control protocol HTTPS (1) within the tab *Web Server* settings.
@@ -14,6 +15,7 @@ ABAP application server has to run on a Windows OS and SNC with Kerberos encrypt
 **Note:** Make sure to check the default ports depending on your product. HTTPS port *8165* is e.g., set up by default in Xtract Universal. BOARD Connector's default HTTPS port *8197*.
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
+
 
 ### Configuration of Windows AD service account
 
@@ -27,6 +29,7 @@ ABAP application server has to run on a Windows OS and SNC with Kerberos encrypt
 For more detailed information about the partner name notation in SAP, see the [SAP Help portal](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/en-US/440ebb40b9920d1be10000000a114a6b.html).
 5. In the tab *Log On*, change the account to service account, e.g., *svc_xusrv@theobald.local*.
 ![XU_SSO_WinAD_SPN](/img/content/XU_Service_Account.png)
+
 
 ### Server Settings
 
@@ -55,6 +58,7 @@ Entry | ForceIniCredOK
 Type | REG_DWORD
 Value | 1
 
+
 ### SAP Source Settings
 
 {: .box-note }
@@ -74,6 +78,7 @@ e.g., `C:\SNC\gx64krb5.dll` (3).
 
 {: .box-note}
 **Note:** The SAP Logon Pad SNC settings for partner name differ from the ones used in Xtract products. SAP Logon Pad uses the UPN of the SAP service accounts and Xtract products use the Service Principal Name (SPN). Use the following notation: *p:[SAP Service Account]@[domain]*. SPN's are case sensitive in the SNC partner name.
+
 
 ### SNC Activation in SAP
 

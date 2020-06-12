@@ -1,3 +1,4 @@
+
 ### RFC_READ_TABLE Restrictions
 Especially with older SAP releases you may encounter a few restrictions when using the SAP standard function module (RFC_READ_TABLE) for table extraction:
 
@@ -7,6 +8,7 @@ Especially with older SAP releases you may encounter a few restrictions when usi
 - Poor extraction performance with larger tables.
 
 If the above-mentioned restrictions hinder your work, install the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 
+
 
 ### Installing the ABAP Framework Z_THEO_READ_TABLE 
 
