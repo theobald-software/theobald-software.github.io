@@ -8,10 +8,11 @@ Activate the debug logging only when necessary, e.g., upon request of the suppor
 
 Standard logging is independent of the debug logging setting and is executed even if debug logging is inactive.
 
+
 ### Activating tracing
 
-1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
-![XU-Create-Connection-1](/img/content/server_manage_sources.png){:class="img-responsive"}<br>
+1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**. 
+![XU-Create-Connection-1](/img/content/server_manage_sources.png){:class="img-responsive"}
 The window "Manage Sources" opens. <br> 
 2. Select the SAP source of your faulty extraction and click **[Edit]** (pencil symbol). 
 ![sap-source](/img/content/edit_sap_source.png){:class="img-responsive"}

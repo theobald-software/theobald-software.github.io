@@ -1,3 +1,4 @@
+
 ### Tabellen hinzufügen
 
 1. Innerhalb des Fensters "Define data source for SAP Tables" klicken Sie auf **[Add]**. Das Fenster "Table lookup" wird geöffnet.
@@ -13,8 +14,9 @@ Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
 
 Die Anwendung kehrt zum Hauptfenster "Define data source for SAP Tables" zurück. <br>
 
-Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt. <br>
-![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
+Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt.  
+![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
+
 
 
 ### Tabellen filtern
@@ -24,6 +26,7 @@ Durch Anklicken der Kopfzeilen können Sie die Spalten nach Namen oder Beschreib
 Um nach einem bestimmten Spaltennamen oder Beschreibung zu suchen, beginnen Sie mit der Eingabe eines Wortes in einem der Filterfelder.<br>
 
 ![Table-Main](/img/content/table/fields_filter-search.png){:class="img-responsive"}
+
 
 ### Live-Vorschau anzeigen
 

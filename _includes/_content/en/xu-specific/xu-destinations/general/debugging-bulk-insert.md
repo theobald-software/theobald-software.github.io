@@ -1,3 +1,4 @@
+
 ### Debugging
 
 By checking debugging, the default BULK insert is deactivated when writing to the database.

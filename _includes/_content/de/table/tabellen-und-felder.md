@@ -4,9 +4,11 @@ Der Tab *Tables and Fields* besteht aus drei Unterabschnitten:
 - Fields
 - Preview
 
+
 ### Tables
  Um eine neue Tabelle hinzuzufügen oder eine bestehende Tabelle zu entfernen, klicken Sie auf **[Add]** oder **[Remove]**
  ![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
+
 
 ### Fields
 ![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
@@ -41,8 +43,10 @@ Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Tr
 {: .box-note}
 **Hinweis:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein [Z_XTRACT_IS_TABLE_COMPRESSION](./extraktionseinstellungen) unterstützt. 
 --->
+
 ### Preview
 Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
+
 
 
 ### Schaltflächen

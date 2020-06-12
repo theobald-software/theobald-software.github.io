@@ -1,3 +1,4 @@
+
 ### Unterstützte SAP Systeme und Releases
 Die gesamte Kommunikation mit SAP wird über das RFC-Protokoll abgewickelt. Es werden alle SAP-ABAP-basierten Systeme unterstützt, die eine RFC-Konnektivität bieten.
 Die Integration erfolgt auf der Ebene des SAP-Applikationsservers. Daher ist es unerheblich, welche Datenbank das SAP-System verwendet.
@@ -18,6 +19,7 @@ SAP Releases 4.6C und höher werden unterstützt. Dazu gehören:
 * SAP BW/4HANA
 * SAP Application Server ABAP, Message Server, Router, Standalone Gateway
 
+
 ### HANA Datenbank
 Mit Operational Data Provisioning (ODP) können Sie die SAP-HANA-Datenbank eines SAP-ABAP-Quellsystems anschließen.
 Die Kommunikation erfolgt über RFC. 
@@ -27,6 +29,7 @@ Mit ODP für SAP HANA (HANA) können die folgenden HANA-View-Typen extrahiert we
 - Ansichten für verknüpfte Attribute (Associated Attribute Views)
 
 Der direkte Zugriff auf eine HANA-Datenbank ohne ein SAP-ABAP-Quellsystem, das auf der entsprechenden HANA-Datenbank läuft, wird nicht unterstützt.
+
 
 ### Nicht unterstützte SAP Systeme
 Nicht unterstützt werden die SAP-Systeme, die nicht auf ABAP-Systemen laufen oder keine RFC-Konnektivität bieten. Die folgenden Systeme werden nicht unterstützt:

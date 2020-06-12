@@ -1,5 +1,6 @@
 
 
+
 ### Verbindungsdetails
 
 Der Tab *General* enthält die Verbindungsdetails und ist in vier Unterabschnitte unterteilt:
@@ -7,15 +8,16 @@ Der Tab *General* enthält die Verbindungsdetails und ist in vier Unterabschnitt
 - [Client and Language](#client-and-language) (Mandant und Sprache)
 - [Authentication](#authentication) (Authentifizierung)
 - [Miscellaneous](#miscellaneous) (Verschiedenes)
-![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}<br>
+![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}
 
 Ergänzen Sie die Verbindungsdetails, um eine SAP-Verbindung herzustellen.
 
 
 Klicken Sie **[Test Connection]** (1), um eine erfolgreiche Verbindung zu SAP zu überprüfen. 
 Das Bestätigungsfenster öffnet sich. <br>
-Die SAP-Verbindung ist erfolgreich aufgebaut.<br>
-![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
+Die SAP-Verbindung ist erfolgreich aufgebaut. 
+![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"}
+
 
 ### System
 Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
@@ -30,6 +32,7 @@ Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 - **SID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
 Siehe auch SAP Online-Help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
+
 #### Zugriff über SAP-Router
 
 Wenn Sie auf das SAP-System (Application-Server oder Message-Server) über einen SAP-Router zugreifen, setzen Sie den Router-String unmittelbar vor dem Hostnamen bzw. dem Message-Server. <br>
@@ -41,10 +44,12 @@ Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpd
 {: .box-tip }
 **Tipp:** Falls Sie nicht wissen, welche Parameter einzugeben sind, können Sie die Informationen im SAP Logon Pad in den *Properties* nachschauen. Ansonsten fragen Sie Ihre SAP-Basis.
  
+
 ### Client and Language 
 
 - Client (Mandant) -  die dreistellige Mandantennummer Ihres SAP-Systems zwischen 000 und 999, z.B. 800. 
 - Language (Sprache) - der Sprachenschlüssel für die von Ihnen verwendete Sprache, z.B. EN für Englisch oder DE für Deutsch.
+
 
 ### Authentication 
 Die folgenden Authentifizierungsmethoden werden unterstützt:
@@ -52,12 +57,13 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 - SNC (Secure Network Communication) (2) mit einem Benutzernamen und einem Passwort
 - [SNC with SSO](../fortgeschrittene-techniken/sap-single-sign-on) (Single Sign On) (3)
 	
-![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
+![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"} 
 Zusätzlich können Sie auch [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services, Xtract Universal und Board Connector).
 
 {: .box-note }
 **Hinweis:** beim Markieren des Kästchens **Require SAP credentials to be explicitly supplied for execution** werden die SAP-Anmeldedaten nicht im Cache gespeichert. Diese Option ist nur aktiv bei Verwendung von *Plain* oder *SNC* Authentifizierungsmethoden und beim Ausführen der Extraktion im Browser (Schaltfläche **[Run in Browser]**.
 Nach dem Start einer Extraktion wird ein Pop-Up-Fenster geöffnet und der Benutzer wird bei jeder Extraktion aufgefordert seine SAP-Anmeldedaten einzugeben. 
+
 
 #### SNC
 
@@ -67,9 +73,11 @@ Nach dem Start einer Extraktion wird ein Pop-Up-Fenster geöffnet und der Benutz
 4. Geben Sie den SAP-Partnernamen (**Partner Name**) ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. p:SAPserviceERP/do_not_care@THEOBALD.LOCAL.
 
 Folgen Sie den Schritten beschrieben in  [SSO mit Kerberos SNC](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc), wenn Sie die Kerberos-Bibliothek verwenden.
+
 ### Miscellaneous
 
 Wählen Sie eine Bibliothek aus und definieren Sie optional ein Verzeichnis für das Debug-Logging.
+
 
 #### RFC libraries (RFC-Bibliotheken)
 Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem ABAP basierten SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
@@ -84,6 +92,7 @@ SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/sup
 {: .box-note }
 **Hinweis:** Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein.
 
+
 #### Trace Directory (Verzeichnis zur Ablage der Debug-Logs)
 Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products) ein gültiger Pfad eintragen werden. <br> 
 
@@ -93,10 +102,11 @@ Bei der Aktivierung des Debug-Logging wird eine große Menge an Informationen ge
 Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
 
 
+
 ### Angelegte SAP-Verbindung überprüfen
 
 1. Im Hauptfenster des Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
 Das Fenster "Manage Sources" wird geöffnet.<br>
 
-2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist.<br>
+2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist. 
 ![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}

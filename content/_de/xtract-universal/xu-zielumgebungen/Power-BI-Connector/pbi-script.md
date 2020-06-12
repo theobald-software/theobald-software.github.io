@@ -28,7 +28,7 @@ Verwenden Sie entweder das Power Query M-script **oder** den Power BI Custom Con
 **Achtung:** Verwenden Sie nur die Extraktionen mit der *Power BI Connector* Destination.
 6. Schließen Sie den *Erweiterten Editor*.
 7. Klicken Sie die Schaltfläche *Fertig* (Close & Apply).
-8. Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden auszuwählen: *Anonymous*, *Basic* or *Windows*, befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](./pbi-SSO).<br>
+8. Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden auszuwählen: *Anonymous*, *Basic* or *Windows*, befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](./pbi-SSO). 
 ![M-Script](/img/content/XU_PowerQueryScript.png){:class="img-responsive"}
 ---
 ![PowerQueryEditor](/img/content/XU_PBI_PowerQueryEditor.png){:class="img-responsive"}

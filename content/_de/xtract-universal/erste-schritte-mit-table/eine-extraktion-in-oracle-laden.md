@@ -23,27 +23,27 @@ Um eine Extraktion zu in die Microsoft SQL Server Datenbank zu laden, muss die D
 
 3. Klicken Sie auf **[Add]** (2), um eine neue Destination hinzuzufügen.
 
-4. Geben Sie einen Namen ein im Feld **Name**. Wählen Sie **SQLServer** aus der Dropdown-Liste **Type** (3).<br>
+4. Geben Sie einen Namen ein im Feld **Name**. Wählen Sie **SQLServer** aus der Dropdown-Liste **Type** (3). 
 ![Select-Destination-Type](/img/content/destination_details_sqlserver.png){:class="img-responsive"}
 
 5. Füllen Sie im Abschnitt "Connection" die Felder **Server Name** und **Database Name** aus. 
-6. Klicken Sie auf **[Test connection]** (4), um die Verbindung zur Datenbank zu überprüfen.<br>
+6. Klicken Sie auf **[Test connection]** (4), um die Verbindung zur Datenbank zu überprüfen. 
 ![Test-Verbindung - erfolgreich](/img/content/sqlserver_destination-details.png){:class="img-responsive"}
 
 7. Klicken Sie auf **[OK]** (5), um die Verbindung zu speichern. 
 
 ### Extraktion in die Microsoft SQL Server-Datenbank laden
 
-1. Wählen Sie im Hauptfenster des Designers eine Extraktion mit einem beliebigen Ziel aus und klicken Sie auf **[Destination]**.<br>
-![Lade-Destinations](/img/content/destination_xu.png){:class="img-responsive"}<br>
+1. Wählen Sie im Hauptfenster des Designers eine Extraktion mit einem beliebigen Ziel aus und klicken Sie auf **[Destination]**. 
+![Lade-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
 Das Fenster "Destination Settings".
 
 2. Im Fenster "Destination Settings" wählen Sie Ihre erstellte Destination **SQLServer** aus der Dropdown-Liste aus. Hier können Sie auch die extraktionsspezifischen Einstellungen bei Bedarf ändern. Im Beispiel werden die Standardeinstellungen beibehalten:
 ![Load-Shared-Destination-SQLServer](/img/content/sqlserver_destination-settings.png){:class="img-responsive"}
 
 9. Klicken Sie auf **[OK]**, um zum Hauptfenster des Designers zurückzukehren.       
-4. Klicken Sie auf **[Run] > [run in xu.exe]**<br>
-![Eine Extraktion ausführen](/img/content/run_extraction.png){:class="img-responsive"} <br>
+4. Klicken Sie auf **[Run] > [run in xu.exe]** 
+![Eine Extraktion ausführen](/img/content/run_extraction.png){:class="img-responsive"}
 Das Kommandozeilenfenster wird geöffnet und ein erfolgreicher Extraktionsvorgang endet mit der Meldung *Extraction finished successfully*.
 ![Datenbank-Metadaten](/img/content/xu/konsole_run_in_xu_exe.png){:class="img-responsive"}
 

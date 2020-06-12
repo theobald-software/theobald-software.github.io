@@ -17,10 +17,10 @@ Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Ext
 ### Extraktion anlegen
 Das folgende Beispiel zeigt die Erstellung einer Extraktion mit der Komponente "SAP Table or View".
 1. Im Hauptfenster des Xtract Universal Designers klicken Sie auf **[Neu]** (1).
-Das Fenster "Create Extraction" wird geöffnet.<br>
-![Create-New-Table-Extraction](/img/content/xu_extraction_anlegen.png){:class="img-responsive"}<br>
+Das Fenster "Create Extraction" wird geöffnet. 
+![Create-New-Table-Extraction](/img/content/xu_extraction_anlegen.png){:class="img-responsive"}
 2. Das Feld **Source** gibt die SAP-Verbindung an. Wählen Sie die zuvor angelegte SAP-Verbindung aus dem Dropdown-Menü (1).
-![Table_or_View](/img/content/table/table_new_extraction.png){:class="img-responsive"}<br>
+![Table_or_View](/img/content/table/table_new_extraction.png){:class="img-responsive"}
 3. Geben Sie einen frei wählbaren, eindeutigen Namen für Ihre Extraktion ein (2).
 4. Wählen Sie den Typ der Extraktion. Im aufgeführten Beispiel: **SAP-Tabelle oder View** (3). <br>
 5. Klicken Sie auf **[OK]** zum Bestätigen.

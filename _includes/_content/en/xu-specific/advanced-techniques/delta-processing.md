@@ -1,6 +1,7 @@
 Delta processing means updating data records in the destination by only writing changed (update) or new (insert) data records into the destination. 
 Instead of delta processing, data can be processed in so called "full load" by importing the whole amount of data repeatedly.
 
+
 ### Delta processing in Xtract products
 
 There are three ways of delta processing supported by your Xtract product:
@@ -9,6 +10,7 @@ There are three ways of delta processing supported by your Xtract product:
 - Using Table / Table Join component with a database destination <br>
 
 For delta processing it is advisable to use a database on the destination side.
+
 
 ### Database destinations
 - [Amazon Redshift](../xu-destinations/amzon-redshift/merging-data) 

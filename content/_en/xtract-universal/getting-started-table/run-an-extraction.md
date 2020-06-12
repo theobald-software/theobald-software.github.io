@@ -15,8 +15,8 @@ This step is optional and shows how to display the extraction result in a web br
 ### Defining the extraction properties 
 
  
-2. To open the extraction settings, click **[Run]**.<br>
-![Run-Table-Extraction](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}<br>
+2. To open the extraction settings, click **[Run]**. 
+![Run-Table-Extraction](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}
 The window "Run Extraction" opens.
 3. Specify details of the execution with parameters, if needed. 
 
@@ -26,8 +26,10 @@ The window "Run Extraction" opens.
 - Before changing a parameter:
 `http://localhost:8065?name=Plants`
 - After choosing the parameter **rows**:
-`http://localhost:8065?name=Plants&rows=100`<br>
-![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)<br>
+`http://localhost:8065?name=Plants&rows=100` 
+
+![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)
+
 3. Run an extraction in xu.exe. The settings change during runtime, no new start is necessary. 
 
 {: .box-note }

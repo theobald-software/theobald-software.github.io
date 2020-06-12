@@ -11,11 +11,13 @@ Ideally, the table with existing data is created in the initial load with the co
 A primary key is a prerequisite for a merge command. If no primary key is set, the merge command runs into an error.
 Create an appropriate primary key in the [General Settings](../../advanced-techniques/general-settings#primary-key-tab) to execute the merge command.
 
+
 ### Updated record in SAP
-A field value within an SAP table is updated. With a merge command the updated value is written to the destination database table.<br>
+A field value within an SAP table is updated. With a merge command the updated value is written to the destination database table. 
 ![Update-Merge-Example-Data](/img/content/xu/merge_db_scheme.png){:class="img-responsive"}
 
 The merge command ensures delta processing: new records are inserted into the database and / or existing records are updated. <br>
+
 
 ### Merge command in Xtract Universal
 The merge process is performed using a staging table and takes place in three steps.

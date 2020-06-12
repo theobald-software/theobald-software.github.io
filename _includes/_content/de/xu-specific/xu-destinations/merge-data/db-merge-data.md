@@ -13,11 +13,13 @@ Im Idealfall wird die Tabelle mit den vorhandenen Daten im initialen Lauf mit de
 Ein Primärschlüssel ist eine Voraussetzung für einen Merge-Befehl. Wenn kein Primärschlüssel gesetzt ist, läuft der Zusammenführungsbefehl in einen Fehler.
 Erstellen Sie einen entsprechenden Primärschlüssel in [General Settings](../../fortgeschrittene-techniken/allgemeine-einstellungen#primary-key-tab), um den Merge-Befehl ausführen zu können.
 
+
 ### Aktualisierter Datensatz in SAP
-Ein Feldwert innerhalb einer SAP-Tabelle wird aktualisiert. Mit einem Merge-Befehl wird der aktualisierte Wert in die Zieldatenbanktabelle geschrieben.<br>
+Ein Feldwert innerhalb einer SAP-Tabelle wird aktualisiert. Mit einem Merge-Befehl wird der aktualisierte Wert in die Zieldatenbanktabelle geschrieben. 
 ![Update-Merge-Example-Data](/img/content/xu/merge_db_scheme.png){:class="img-responsive"}
 
 Der Merge-Befehl gewährleistet eine Deltaverarbeitung: neue Datensätze werden in die Datenbank eingefügt und/oder bestehende Datensätze aktualisiert. <br>
+
 
 ### Merge-Befehl in Xtract Universal
 Der Merge-Prozess wird mit Hilfe einer Staging-Tabelle durchgeführt und erfolgt in drei Schritten.

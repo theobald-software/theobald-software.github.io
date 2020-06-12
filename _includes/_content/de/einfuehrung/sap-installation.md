@@ -1,3 +1,4 @@
+
 ### Installation und Konfiguration auf SAP
 
 |Komponente             | SAP Release           | Anforderungen an das SAP-System                                                |

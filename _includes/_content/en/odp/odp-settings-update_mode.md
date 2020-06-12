@@ -13,8 +13,10 @@ The settings are located the left side of the window "Define data source for SAP
 ![ODP Settings](/img/content/odp/odp-settings-01.png){:class="img-responsive" width="200px"}
 <br/>
 
+
 ### Operational Data Provider 
 shows the name of the source object 
+
 
 ### Additional info 
 **Context**<br/>
@@ -22,6 +24,7 @@ shows the ODP provider context
 
 **Type**<br/>
 shows the data type of the source object
+
 
 ### Update Mode
 **Full update**: <br/>

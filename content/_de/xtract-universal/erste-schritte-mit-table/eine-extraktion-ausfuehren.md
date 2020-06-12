@@ -15,8 +15,8 @@ Dieser Schritt ist optional. Es wird gezeigt, wie das Extraktionsergebnis in ein
 ### Definieren der Extraktionseigenschaften 
 
 1. Wählen Sie im Hauptfenster von Xtract Universal Designer eine erstellte Tabellenextraktion aus.
-2. Um die Extraktionseinstellungen zu öffnen, klicken Sie auf **[Run]**.<br>
-![Run-Table-Extraktion](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}<br>
+2. Um die Extraktionseinstellungen zu öffnen, klicken Sie auf **[Run]**. 
+![Run-Table-Extraktion](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}
 Das Fenster "Run Extraction" wird geöffnet.
 3. Passen Sie die Details der Ausführung mit Parametern an, falls erforderlich. 
 
@@ -26,7 +26,7 @@ Das Fenster "Run Extraction" wird geöffnet.
 - Vor der Änderung eines Parameters:
 `http://localhost:8065?name=Plants`
 - Nach Auswahl des Parameters **Rows**:
-`http://localhost:8065?name=Plants&rows=100`<br>
+`http://localhost:8065?name=Plants&rows=100` 
 ![Run-Table-Extraktion-Param](/img/content/xu/xu_run_extraction_param.png)<br>
 3. Führen Sie eine Extraktion in xu.exe aus. Die Einstellungen ändern sich zur Laufzeit, ein Neustart des Designers ist nicht erforderlich. 
 

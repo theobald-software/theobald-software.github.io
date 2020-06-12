@@ -1,3 +1,4 @@
+
 ### Abonnements
 Um Informationen über den Abonnenten zu erhalten, klicken Sie auf **Show Subscriptions / Show active subscriptions** oben im Fenster “Define data source for SAP ODP”:
 <br/>

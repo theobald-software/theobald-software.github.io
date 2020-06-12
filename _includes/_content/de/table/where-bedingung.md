@@ -1,3 +1,4 @@
+
 ### Verwendung von WHERE-Bedingung
 
 1. Navigieren Sie zum Reiter **WHERE Clause**.
@@ -8,6 +9,7 @@
 **Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei [Table Joins](./table-joins) der Fall sein.
 
 ![Extraction-Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+
 
 ### Schaltflächen
 **[Load live preview]** <br>
@@ -22,6 +24,7 @@ Durchführung eines erneuten Lookups auf die selektierte(n) Tabelle(n). Bestehen
 Die *Refresh Metadata* Funktionalität kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. In solchen Fällen kann es zu Datenschiefständen kommen, die durch diese Funktion bereinigt werden.   
  
 
+
 ### Syntax der WHERE-Bedingung  
 
 {: .box-warning }
@@ -31,6 +34,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
 {: .box-tip}
 **Tipp:** Um die Syntax der WHERE-Bedingung zu überprüfen, klicken Sie auf **[Load live preview]**. Auf diese Weise ist es nicht notwendig, eine Extraktion durchzuführen, um zu sehen, ob die Syntax korrekt ist.
+
 
 #### Syntaxregeln
 
@@ -63,6 +67,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 | NOT LIKE |  Wahr, wenn der Wert von operand1 mit dem Muster ('%' ist eine beliebige Zeichenkette) im operand2 nicht übereinstimmt |
 
  Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
+
 
 ### Einschränkungen bei WHERE-Bedingungen
 

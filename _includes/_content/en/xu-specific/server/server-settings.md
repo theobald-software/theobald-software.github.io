@@ -1,11 +1,14 @@
+
 ### To open server settings
 In the main window of the Designer navigate to **[Server] > [Settings]**. The 'Server settings' window opens. There are two tabs in the 'Server settings' window:
 - *Configuration Server*
 - *Web Server*
 
+
 ### Configuration Server
 
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.png){:class="img-responsive"}
+
 
 #### Designer connections
 
@@ -24,11 +27,14 @@ See section [User Management](../security/user-management).
 
 See section [Installing an X.509 certificate](../security/install-x.509-Certificate).
 
+
 #### Access Management
 See section [Access Management](../security/access-management).
 
+
 ### Web Server
 ![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"} 
+
 
 #### Protocol / Access control
 
@@ -46,6 +52,7 @@ See section [Installing an X.509 certificate](../security/install-x.509-Certific
 **HTTPS - Restricted to AD users with Designer read access** <br>
 See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by Windows AD users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and section [server security](../security/server-security).  
 
+
 #### Misc.
 
 **Max. age of log files (days)** <br>
@@ -53,6 +60,7 @@ Defines the maximum age of the web server [log files](../logging/server-logging)
 
 **Enable setup distribution for clients** <br>
 Defines whether the setup of the Xtract Universal version running on the server needs to be downloaded. When an older Xtract Universal Designer version is connected to a newer Xtract Universal Server version, you are be prompted to download and update the Designer with the Xtract Universal version. 
+
 
 #### Result cache
 

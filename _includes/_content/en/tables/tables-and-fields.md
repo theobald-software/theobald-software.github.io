@@ -4,10 +4,12 @@ The tab *Tables and Fields* consists of three main subsections:
 - Fields
 - Preview
 
+
 ### Tables
 To add a new table or remove an existing table, click **[Add]** or **[Remove]**.
  
 ![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
+
 
 ### Fields
 ![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
@@ -47,8 +49,10 @@ Activating the tri-state checkbox defines whether the conversion routines stored
 Typical examples are the language key (for example, D **(4)** in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). 
 After the conversion, the value is always displayed as it appears in the transaction *SE16N* in the SAP GUI. 
 
+
 ### Preview
 The subsection *Preview* displays a real-time preview of the selected fields, when the button **"[Load live preview]** is clicked.
+
 
 ### Buttons
 **[Load live preview]** <br>

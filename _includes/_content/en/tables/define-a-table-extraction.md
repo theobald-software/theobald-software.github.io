@@ -1,6 +1,7 @@
 
+
 ### Adding tables
-1. Within the window "Define data source for SAP Tables" click **[Add]** to add a table.<br>
+1. Within the window "Define data source for SAP Tables" click **[Add]** to add a table. 
 ![Add-New-Table](/img/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
 The window "Table Lookup" opens. <br/>
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
@@ -14,8 +15,9 @@ Search results appear in the preview window.
 
 The application now returns to the main window "Define data source for SAP Tables". <br>
 
-Columns of the table retrieved from SAP are displayed in the subsection **Fields**. <br>
-![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
+Columns of the table retrieved from SAP are displayed in the subsection **Fields**.  
+![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
+
 
 ### Filtering tables
 
@@ -25,6 +27,7 @@ Click the header fields to sort the columns by name or description.<br>
 To search for a certain column name or description, start typing the word in the filter boxes.<br>
 
 ![Table-Main](/img/content/table/fields_filter-search.png){:class="img-responsive"}
+
 
 ### Using live preview
 

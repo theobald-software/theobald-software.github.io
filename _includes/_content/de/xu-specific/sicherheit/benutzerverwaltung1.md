@@ -1,3 +1,4 @@
+
 ### Authentisierung- und Verschlüsselungsverfahren<br>
 Die Verbindung zwischen dem Designer und dem Server kann durch unterschiedliche Authentisierung- und Verschlüsselungsverfahren durchgeführt werden. 
 
@@ -30,16 +31,19 @@ Diese unterschiedlichen Anmeldeoptionen können in den Server Settings aktiviert
 
 ![XU3_ServerSettings_authenticaion_methods](/img/content/xu/authentisierung_xu.png){:class="img-responsive"}
 
+
 ### Target principal<br>
 Um Kerberos Transportverschlüsselung zu verwenden oder einen Active Directory Benutzer zu authentisieren, wird ein Kerberos Target Principal Name (TPN) benötigt. Dieser kann entweder ein User Principal Name (UPN) sein oder ein Service Principal Name (SPN).<br>
 
 Weitere Informationen zu diesem Thema, finden Sie in unserem [Knowledge Base Artikel](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+
 
 ### Benutzer<br>
 Zum Zeitpunkt der Benutzeranlage müssen noch keine Rechte vergeben werden, siehe Kapitel Zugriffsverwaltung.<br>
 Custom Benutzer werden angelegt und Custom Benutzergruppen zugeordnet via *Security - Manage Users*.
 
 ![XU3_assign_UserGroups](/img/content/XU3_assign_UserGroups.png){:class="img-responsive"}
+
 
 ### Benutzergruppen<br>
 Es ist möglich Benutzergruppen innerhalb der Anwendung sowie zusätzliche Windows AD Benutzergruppen angelegt werden. 

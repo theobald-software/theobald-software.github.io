@@ -52,5 +52,5 @@ Wenn Sie den Power BI Custom Connector verwenden, gehen Sie so vor:
 <br>
 Nach dem Ausfüllen der Felder, klicken Sie auf die Schaltfläche *Apply*. <br>
 Bei einer korrekten Konfiguration der Datenquelle, erscheint die Meldung *Verbindung erfolgreich*.
-<br>
+ 
 ![datagw_service_datasource_successful](/img/content/XU_PBI_datagateway_service_datasource_successful.png){:class="img-responsive"}

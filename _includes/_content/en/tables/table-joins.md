@@ -16,6 +16,7 @@ For more information on join types see [SAP Online help](https://help.sap.com/do
 {: .box-note }
 **Note**: joining of cluster or pool tables is not supported. Cluster or pool tables need to be extracted individually and joined in the destination.
 
+
 ### Joining two Tables
 The following example shows, how tables MARA and MAKT can be joined.
 
@@ -30,7 +31,7 @@ The following example shows, how tables MARA and MAKT can be joined.
 **Note**: pay attention to the [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
 In the *Joins* tab, click **Edit** (pencil icon) to display joining options. <br>
-In the depicted example a left outer join on tables MARA (left table) and MAKT (right table) on the field MATNR is performed. A WHERE clause on *MAKT~SPRAS = 'EN'* is specified.<br>
+In the depicted example a left outer join on tables MARA (left table) and MAKT (right table) on the field MATNR is performed. A WHERE clause on *MAKT~SPRAS = 'EN'* is specified. 
 ![Table-Join-Connections](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 
 *Left Table*, *Right Table*, *Join Type* and *Join Mapping* are preset with default values. They can be modified as required. The *Join Mapping* is based on the foreign key relationship of the joined tables.<br>
@@ -45,11 +46,13 @@ In the depicted example a left outer join on tables MARA (left table) and MAKT (
 **Tip**: different tables can have identical field names. Defining a join condition based on the identical field names not always delivers the expected result (e.g., VBAK~VBELN <> LIPS~VBELN).
 Make sure the fields you use in a join condition contain the same content/data.
 
+
 #### Auto Mapping Function (optional)
 
 The **[Auto-map]** button deletes existing join conditions and performs a new field mapping based on the foreign key relationship of the joined tables. 
 
 ![Table-Join-Automapping](/img/content/join_automap.png){:class="img-responsive"}
+
 
 
 

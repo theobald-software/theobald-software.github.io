@@ -1,10 +1,12 @@
 
 ![Extraction-Settings-01](/img/content/xu/Table-Extraction-Settings.png){:class="img-responsive"}
 
+
 ### Table Settings
 The window "Table Settings" consists of two subsections:
 - Extraction Settings
 - Function Module 
+
 
 ### Extraction Settings
 
@@ -18,6 +20,7 @@ A package size between 15000 and 50000 is advisable for large amounts of data.
 
 **Row limit** <br>
 Specifies the maximum number of extracted records. *0* Extracts the entire table.
+
 
 ### Function Module
 Specifies the name of the function module used for data extraction. The field is filled automatically depending on which function modules are installed on your SAP system.

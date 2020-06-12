@@ -14,6 +14,7 @@ Um das Server-Log anzuzeigen, navigieren Sie zum Hauptmenü des Designers und kl
 
 Die Logs werden pro Tag erstellt. Um zwischen den Logs zu wechseln, können Sie die Liste auf der linken Seite verwenden. 
 
+
 ### Log Levels
 Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende Log-Level:
 
@@ -23,6 +24,7 @@ Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende 
 - **Debug Details** - detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
 
 Markieren Sie die die Kästchen oben links, um zu entscheiden, welche Log-Levels angezeigt werden sollen.
+
 
 ### Kopieren von Logs
 Klicken Sie auf **[Copy To Clipboard]**, um das aktuelle Log in die Zwischenablage zu kopieren. Das kopierte Log kann an beliebiger Stelle eingefügt werden (z.B. in eine E-Mail).

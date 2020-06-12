@@ -1,3 +1,4 @@
+
 ### Anwendungsfall
 
 BI Client Tools wie z.B. Power BI, Power Pivot, Alteryx, etc. können Extraktionen in Xtract-Produkten (z.B. Xtract Universal oder BOARD Connector) starten. Die extrahierten Daten werden von Xtract-Produkten direkt in genannten Tools geladen.
@@ -9,6 +10,7 @@ Single Sign-On (SSO) mit Xtract-Produkten lässt sich über zwei unterschiedlich
 
 - Secure Network Communication (SNC) mit SAPs Kerberos Wrapper Library
 - SAP Logon Ticket
+
 
 
 ### SSO und SNC mit Kerberos Wrapper Library
@@ -44,6 +46,7 @@ Weitere Informationen finden Sie in den folgenden Quellen:
 [Microsoft - Understanding Kerberos Double Hop](https://blogs.technet.microsoft.com/askds/2008/06/13/understanding-kerberos-double-hop/)
 
 [SAP help - Single Sign-On mit Microsoft Kerberos SSP](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/DE-DE/440ebf6c9b2b0d1ae10000000a114a6b.html)
+
 
 
 

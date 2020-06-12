@@ -1,6 +1,7 @@
 Deltaverarbeitung bedeutet, dass Datensätze in der Destination aktualisiert werden, indem nur geänderte (Update) oder neue (Insert) Datensätze in der Destination geschrieben werden. 
 Anstelle der Deltaverarbeitung können die Daten im sogenannten Full Load durch wiederholtes Einlesen der gesamten Datenmenge (z.B. der gesamten Tabelle) verarbeitet werden.
 
+
 ### Deltaverarbeitung in Xtract Produkten
 Es gibt drei Arten der Deltaverarbeitung, die von Ihrem Xtract Produkt unterstützt werden:
 - Mit der [DeltaQ-Komponente](../datasource-deltaq/eine-deltaq-quelle-definieren) und Verwendung der SAP-eigenen Deltaverarbeitungs-Funktionalität 
@@ -8,6 +9,7 @@ Es gibt drei Arten der Deltaverarbeitung, die von Ihrem Xtract Produkt unterstü
 - Mit der Table/Table-Join-Komponente und einer Datenbank-Destination.
 
 Für Deltaverarbeitung ist es ratsam auf der Destinationsseite eine Datenbank zu verwenden.
+
 
 ### Datenbank Destinationen
 - [Amazon Redshift](../xu-zielumgebungen/redshift/daten-mergen) 

@@ -19,9 +19,9 @@ Der folgende Abschnitt erläutert die erforderliche Konfiguration des "Connectio
 {: .box-tip }
 **Tipp:** Falls Sie nicht wissen, welche Parameter einzugeben sind, können Sie die Informationen im SAP Logon Pad in den Properties nachschauen. Ansonsten fragen Sie Ihre SAP-Basis.
 
- 1. Klicken Sie innerhalb des "Xtract IS Connection Manager" Fensters auf **[Additions]**. Das Fenster "Xtract IS Connection Manager Additions" wird geöffnet.<br>
+ 1. Klicken Sie innerhalb des "Xtract IS Connection Manager" Fensters auf **[Additions]**. Das Fenster "Xtract IS Connection Manager Additions" wird geöffnet. 
 ![SNC](/img/content/SNC.png){:class="img-responsive"}
-2. Aktivieren Sie das Kästchen **SNC enabled**. Die Felder **SNC Library (32 Bit. & 64 Bit)**, **Partner Name** und **Quality of Protection** sind aktiv.<br>
+2. Aktivieren Sie das Kästchen **SNC enabled**. Die Felder **SNC Library (32 Bit. & 64 Bit)**, **Partner Name** und **Quality of Protection** sind aktiv. 
 ![SNC](/img/content/SNC_fields.png){:class="img-responsive"}
 3. Überprüfen Sie den SAP parameter *snc/gssapi_lib* um zu bestimmen, welche Bibliothek für die Verschlüsselung in Ihrem SAP System verwendet wird. <br>
 Ihre SAP-Basis muss auf dem Applikationsserver und auf dem Rechner, auf dem Xtract IS läuft, die gleiche Bibliothek importieren und konfigurieren.   

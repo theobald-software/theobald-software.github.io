@@ -2,6 +2,7 @@ Scheduling extractions at a later time is possible
 with any task scheduler e.g., Windows task scheduler
  (see [Blog article - How to schedule Xtract Universal extractions to load data from SAP](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/0) ). To use the task scheduler functionality, run Xtract Universal from a command line.
 
+
 ### Running Xtract Universal from a command line
 1. Navigate to the the installation folder of Xtract Universal e.g.,
  `C:\Program Files\XtractUniversal` <br>
@@ -9,6 +10,7 @@ with any task scheduler e.g., Windows task scheduler
 
 `C:\Program Files\XtractUniversal\xu.exe`<br>
 `http://localhost:8065/?name=MyExtractionName`
+
 
 ### Variables
 
@@ -20,9 +22,11 @@ If the extraction is called via the parameters, any number of variables can be a
 - -o variableName=variableValue 
 - -o variableName2=variableValue2 ...
 
+
 ### Predefined variables
 
 Predefined variables are described in [Extraction Parameters](./extraction-parameters). 
+
 
 ### Returned value 
 
@@ -40,6 +44,7 @@ In case of an error, it returns one of the following codes:
 |1016 | The argument is invalid |
 |1053 | The URL is wrong |
 |1087 | The parameter is invalid |
+
 
 #### Parameters
 
@@ -61,6 +66,7 @@ xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200
 xu.exe -s localhost -p 8065 -n MyExtractionName
 xu.exe -h
 ```
+
 
 ### Call in PowerShell
 
@@ -138,6 +144,7 @@ write-host $errorMessage
 }
 {% endhighlight %}
 </details>
+
 
 ### Showing extraction in the Windows Event viewer
 Xtract Universal extraction events can be inserted into the Windows logs and displayed in the Event Viewer (see [Knowledge base article - How to insert Xtract Universal extraction events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)).

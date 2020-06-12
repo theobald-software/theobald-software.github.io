@@ -1,3 +1,4 @@
+
 ### Ports
 Folgende Ports müssen abhängig vom SAP-System offen sein. *nn* ist die Instanznummer des SAP Systems (z.B. 00 oder 99).
 
@@ -5,6 +6,7 @@ Folgende Ports müssen abhängig vom SAP-System offen sein. *nn* ist die Instanz
 - SAP Message Server (Load Balancing): Port 36*nn*
 - Secure Communication Network (SCN): Port 48*nn*
 - SAP Router: Port 3399
+
 
 ### SAP-Lizenzen
 

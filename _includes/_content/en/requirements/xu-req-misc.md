@@ -4,12 +4,15 @@
 
 ## Hardware Requirements
 
+
 ### Processor Cores
 Minimum: 2 Cores. 
 1 additional core is required for each additional parallel extraction. 
 
+
 ### Processor Speed   
 Minimum: Processor: 1.4 GHz, Recommended: 2.0 GHz or faster.
+
 
 ### Main Memory
 Minimum: 8 GB, Recommended: 12 GB for up two parallel extractions.
@@ -18,6 +21,7 @@ You must check the exact storage requirements of an extraction in your scenario.
 
 Memory consumption depends on many factors including component type (i.e. Table, Extractor or BW Query), number of columns and number of rows in each data package (i.e. package size). <br> 
 E.g. the BW Cube component needs for extracting and processing data more main memory space than the Table component for the same data amount. 
+
 
 ### Disk space
 For the installation 150 MB disk space is required.

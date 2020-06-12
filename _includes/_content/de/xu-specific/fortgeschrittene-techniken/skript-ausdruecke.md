@@ -18,6 +18,7 @@ Beispiele:
 | ```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101            | Jetziges Jahr mit "0101" verketten |
 
 
+
 ### Verwendung
 
 Skript-Ausdrücke können sowohl für die [WHERE-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
@@ -26,6 +27,7 @@ Skript-Ausdrücke können sowohl für die [WHERE-Bedingung](../table/where-bedin
 **Hinweis:** Die Werte bei der Verwendung einer WHERE-Bedingung sind stets in einfachen Anführungsstrichen anzugeben.<br>
 *Syntax:*```[field_name][Leerzeichen][Operator][Leerzeichen]'#[Skript-Ausdruck]#'```<br>
 *Beispiel:*```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("d")}#'```
+
 
 ### IF-Abfrage
 
@@ -37,11 +39,13 @@ Beispiel:
 |:---|:---|:---|
 |```#{ iif(DateTime.Now.Month==7, "July","Unknown")}#``` | July   | Wenn wir im 7. Monat sind, dann "July" ausgeben, sonst "Unknown"
 
+
 ### Definierte Methoden
 
 |    Eingabe                        | Beschreibung                                                                         |
 |:--------------------------------------|:------------------------------------------------------------------------------|
 | ```bool ExistsTable(string tableName)``` | Überprüft, ob die Tabelle auf der Zieldatenbank existiert.|
+
 
 ### Definierte Eigenschaften
 
@@ -57,9 +61,11 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 
 Sehen Sie auch das [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) für die Verwendung von definierten Ausdrücken mittels Custom-SQL in den Destinationseinstellungen.
 
+
 ### Unterstützte Datentypen
 
 Die vollständige Liste der unterstützen [Datentypen](https://docs.microsoft.com/de-de/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) inklusive [Datum und Zeit](https://docs.microsoft.com/de-de/dotnet/standard/base-types/custom-date-and-time-format-strings) finden Sie in der Online-Hilfe von Microsoft.
+
 
 ### Unterstützte Schlüsselwörter 
 

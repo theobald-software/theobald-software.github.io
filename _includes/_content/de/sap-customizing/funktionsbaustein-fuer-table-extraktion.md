@@ -1,3 +1,4 @@
+
 ### Einschränkungen von RFC_READ_TABLE 
 Insbesondere bei älteren SAP Releases bestehen einige Einschränkungen bei der Extraktion von Tabellen wenn der SAP Standardfunktionsbaustein (RFC_READ_TABLE) verwendet wird:
 
@@ -21,5 +22,5 @@ Für ältere SAP-Releases verwenden Sie den älteren Transportauftrag: Z_THEO_RE
 Beim Einspielen der Z_THEO_READ_TABLE-before_740SP05 auf älteren SAP-Releases kann ein Syntaxfehler auftreten. Wenden Sie sich an den Support von Theobald Software und senden Sie die dedizierte Fehlermeldung.
 
 - Z_THEO_READ_TABLE.zip enthält die Version 1.x (bis 1.11) von Z_THEO_READ_TABLE - den einzigen benutzerdefinierten Funktionsbaustein.
-- Z_THEO_READ_TABLE-before_740SP05.zip enthält die Version 2.x von Z_THEO_READ_TABLE - den benutzerdefinierten Funktionsbaustein, eine Reihe von ABAP-Klassen und andere DDIC-Objekte. <br>
+- Z_THEO_READ_TABLE-before_740SP05.zip enthält die Version 2.x von Z_THEO_READ_TABLE - den benutzerdefinierten Funktionsbaustein, eine Reihe von ABAP-Klassen und andere DDIC-Objekte.  
 ![Z_THEO_READ_TABLE_SE80](/img/content/Z_THEO_READ_TABLE_SE80.png){:class="img-responsive" }

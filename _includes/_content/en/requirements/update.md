@@ -1,3 +1,4 @@
+
 ### Installing an update (or a newer version) on a test environment
 To install a newer software version over an existing version, follow the steps below. 
 
@@ -16,8 +17,10 @@ To install a newer software version over an existing version, follow the steps b
  - After a successful test, follow the steps to install the current version on the productive environment, see the corresponding section below.    
  - In case of an error, contact Theobald Software's support team via email: [support@theobald-software.com](mailto:support@theobald-software.com). You can reinstall / reuse your backup until a solution is provided.
 
+
 ### Installing an update on a productive environment 
 After sucessfull installation and test of the update version on the test environment, follow the corresponding steps described above for the production environment. Make sure to create a backup beforehand and make any necessary preparations and changes. 
+
 
 ### Do I need to deinstall the old version before updating? 
 A newer version can be installed over the old version. It is not necessary to uninstall the previous version. 

@@ -1,3 +1,4 @@
+
 ### Verwendung von HAVING-Bedingung
 Die Verwendung der HAVING-Bedingung wird anhand eines Beispiels veranschaulicht. 
 Das folgende Beispiel zeigt, wie viele Materialien einer Materialart (MTART) zugeordnet sind. Nach Anwendung der HAVING-Bedingung zeigt die Vorschau nur die Materialarten mit mehr als 10

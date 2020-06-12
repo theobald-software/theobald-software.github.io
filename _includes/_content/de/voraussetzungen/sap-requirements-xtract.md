@@ -1,3 +1,4 @@
+
 ### SAP Voraussetzungen
 
 {% include _content/de/voraussetzungen/sap-systems.md %}
