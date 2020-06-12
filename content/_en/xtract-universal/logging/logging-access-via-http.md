@@ -39,7 +39,7 @@ In the succeeding examples the following URL `https://todd.theobald.local:8165/`
 
 |Parameter | Description | Example |
 |------------ | -------------|-----|
- | Destinations | List of all Defined Destinations | `http://localhost:8065/destinations` |
+ | Destinations | List of all Defined Destinations | `http://todd.theobald.local:8065/destinations` |
  | req_type=server | List of all server logs according to [web server settings > Misc.](../server/server-settings#web-server) | `https://todd.theobald.local:8165/log/?req_type=server` |
  | req_type=extraction | List of all Defined Extractions | `https://todd.theobald.local:8165/log/?req_type=extraction` |
  | req_type=all| List of all server & extraction logs | `https://todd.theobald.local:8165/log/?req_type=all`

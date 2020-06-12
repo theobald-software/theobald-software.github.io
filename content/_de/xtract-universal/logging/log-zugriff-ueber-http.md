@@ -38,7 +38,7 @@ In den nachfolgenden Beispielen wird folgende URL `https://todd.theobald.local:8
 
 |Parameter | Beschreibung | Beispiel |
 |------------ | -------------|-----|
- | destinations | Auslistung aller definierten Destinationen | `http://localhost:8065/destinations` |
+ | destinations | Auslistung aller definierten Destinationen | `http://todd.theobald.local:8065/destinations` |
  | req_type=server | Auflistung aller Server-Logs gemäß [Web-Server Einstellungen > Misc.](../server/server_einstellungen#web-server) | `https://todd.theobald.local:8165/log/?req_type=server` |
 | req_type=extraction | Auslistung aller definierten Extraktionen. | `https://todd.theobald.local:8165/log/?req_type=extraction` |
  | req_type=all| Auslistung aller Server & Extraktions-Logs | `https://todd.theobald.local:8165/log/?req_type=all`
