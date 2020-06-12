@@ -26,7 +26,7 @@
 
 ## Hilfreiche (englischsprachige) Links zum Thema Extraktoren (DataSources)
 
-* [DeltaQ Troubleshooting Guide (KB)](https://kb.theobald-software.com/xtract-is/deltaq-troubleshooting-guide)
+* [DeltaQ Troubleshooting Guide (KB)](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide)
 * [How to activate DataSources in the SAP OLTP System (Blog)](http://theobald-software.com/blog/2013/04/15/activating-datasources-in-the-oltp-system/)
 * [How to activate activate the BI Content DataSource (SAP Help)](http://help.sap.com/saphelp_nw70ehp2/helpdata/en/d8/8f5738f988d439e10000009b38f842/content.htm)
 * [How to extract data from SAP BW/BI via Export DataSources (Blog)](http://theobald-software.com/blog/2010/06/17/extracting-data-from-sap-bwbi-via-export-datasources-with-xtract-is/)
