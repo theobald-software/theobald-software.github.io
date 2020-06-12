@@ -6,7 +6,7 @@ The tab *General* contains the connection details and is divided into four subse
 - [Client and Language](#client-and-language)
 - [Authentication](#authentication)
 - [Miscellaneous](#miscellaneous)
-![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}<br>
+![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}
 
 Fill out the connection details to establish an SAP connection.
 
@@ -15,8 +15,8 @@ Fill out the connection details to establish an SAP connection.
 
 Click **[Test Connection]** (1) to test the successful connection. 
 The confirmation window opens. <br>
-The SAP connection is set up successfully.<br>
-![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
+The SAP connection is set up successfully. 
+![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"}
 
 
 ### System
@@ -53,7 +53,7 @@ The following authentication methods are supported:
 - SNC (Secure Network Communication) (2) with username and password
 - [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On) (3)
 	
-![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
+![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"} 
 You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) for authentication (available only for several connectors, e.g., ERPConnect, ERPConnect Services, Xtract Universal and Board Connector).
 
 {: .box-note }
@@ -100,7 +100,7 @@ Activate the debug logging only when necessary e.g., upon request of the support
 ### To Check the New SAP Connection
 1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>
 The window "Manage Sources" opens. <br>
-2. Check if created SAP connection is listed.<br>
+2. Check if created SAP connection is listed. 
 ![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
 
 

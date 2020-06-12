@@ -105,7 +105,7 @@ To keep the squares consistent, check the line thickness & hold down **[Ctrl]**
 ### Position numbers
 Use position numbers for action steps. Make sure not to cover important information (buttons, text) when placing position numbers. Place the position numbers in reading direction (from left to right & clockwise) or depending on steps order. <br>
 
-![Position numbers](/img/content/help_concept/xu_tabelle_auswählen.png){:class="img-responsive"} <br>
+![Position numbers](/img/content/help_concept/xu_tabelle_auswählen.png){:class="img-responsive"}
 
 Use the default position numbers provided in Greenshot. Change the color to Theobald red (1).<br>
 

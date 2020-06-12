@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installing-the-license
 ---
 ### About licensing concept of Xtract IS
-The following graphic shows the on which workstations the installation of Xtract IS with a valid license required.  <br>
+The following graphic shows the on which workstations the installation of Xtract IS with a valid license required.   
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png)<br>
 
 Xtract IS is licensed per Windows server on which SSIS packages are deployed and executed. The same license file can be used on the local workstations to develop the SSIS packages.
@@ -21,12 +21,12 @@ A regular license is provided, after purchasing the product. The product license
 ### Installing the Xtract IS license - XtractISLicense.json
 1. For installing the regular license, find and double-click the Xtract IS License Manager executable file in the installation directory of Xtract IS:<br>
 `C:\Program Files\XtractIS\XtractLicenseManager.exe` <br>
-The license manager opens.<br>
+The license manager opens. 
 ![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
 2. Click **[Install]**. The window "Install Xtract License" opens.
 3. Locate and select the regular "XtractISLicense.json" file within the installation directory of Xtract IS:<br>
 `C:\Program Files\XtractIS\XtractISLicense.json`
-4. Close and restart the license manager to view the properly installed license. <br>
+4. Close and restart the license manager to view the properly installed license.  
 ![XIS_License_Info](/img/content/XIS_License_Info.png){:class="img-responsive"}
 
 {: .box-tip }

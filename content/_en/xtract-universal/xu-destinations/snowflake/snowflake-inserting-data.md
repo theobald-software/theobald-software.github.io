@@ -15,7 +15,7 @@ This example depicts an SAP extraction into Snowflake.
 
 An extraction is defined based on the SAP table T001W for plants.
 
-![Table-Extraction-T001w](/img/content/xu/xu-table-t001w-main.png){:class="img-responsive"} <br>
+![Table-Extraction-T001w](/img/content/xu/xu-table-t001w-main.png){:class="img-responsive"}
 ![Table-Extraction-T001w-Where](/img/content/xu/xu-table-t001w-where.png){:class="img-responsive"}
 
 
@@ -42,7 +42,7 @@ Columns will be created using the corresponding data type.
 
 The option *Copy data to table* copies the data from the staging layer into the table with the name T001W. <br>
 To preview the SQL statement select *Custom SQL* in Row processing, then click *Edit SQL*: a new dialog opens.
-In the new dialog select *Copy data to table* and click *Generate Statement*. <br> 
+In the new dialog select *Copy data to table* and click *Generate Statement*.  
 ![Snowflake-Copy-data-to-table](/img/content/xu/snowflake/snowflake-t001w-copy-data-into-table.png){:class="img-responsive"}
 
 **Run extraction**

@@ -36,7 +36,7 @@ There are several ways to create a destination. This example depicts
 
 ### Loading the extraction into the Microsoft SQL Server database
 
-1. In the main window of the designer, select an extraction with any destination and click **[Destination]**.<br>
+1. In the main window of the designer, select an extraction with any destination and click **[Destination]**. 
 ![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive list-img"}<br>
 The window "Destination Settings" opens.
 
@@ -44,7 +44,7 @@ The window "Destination Settings" opens.
 ![Load-Shared-Destination-SQLServer](/img/content/sqlserver_destination-settings.png){:class="img-responsive list-img"}
 
 9. Click **[OK]** to get back to the main window of the Designer.       
-4. Click **[Run] > [run in xu.exe]**<br>
+4. Click **[Run] > [run in xu.exe]** 
 ![Run an extraction](/img/content/run_extraction.png){:class="img-responsive list-img"} <br>
 The command line window opens and the successful extraction procedure ends with a message *Extraction finished successfully*.
 ![Database-Metadata](/img/content/xu/konsole_run_in_xu_exe.png){:class="img-responsive list-img"}

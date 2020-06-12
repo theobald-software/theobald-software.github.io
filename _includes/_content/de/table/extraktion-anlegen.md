@@ -13,8 +13,8 @@ Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
 
 Die Anwendung kehrt zum Hauptfenster "Define data source for SAP Tables" zurück. <br>
 
-Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt. <br>
-![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
+Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt.  
+![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 
 
 ### Tabellen filtern

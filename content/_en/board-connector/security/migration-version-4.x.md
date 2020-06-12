@@ -21,9 +21,9 @@ There are two ways of upgrading the product version from BOARD Connector version
 2. Make sure to mark the checkbox **Convert config files** checkbox. <br>
 The option *Convert config files* starts the *ConfigConverter* application, which ensures that all extractions, source systems, destinations, server and user settings from BC 2.x or 3.x are available in the new version. <br>
 Fore more information about installation folder files see also section [Installation and Backup](../introduction/installation-and-backup). 
-![BC4_Migration_1](/img/content/BC4_Migration_1.png){:class="img-responsive"} <br>
-3. Confirm the conversion process in the command line pop-up window. <br>
-![BC4_Migration_2](/img/content/BC4_Migration_2.png){:class="img-responsive"} <br>
+![BC4_Migration_1](/img/content/BC4_Migration_1.png){:class="img-responsive"}
+3. Confirm the conversion process in the command line pop-up window.  
+![BC4_Migration_2](/img/content/BC4_Migration_2.png){:class="img-responsive"}
 
 ### Manual Upgrade
 If the *ConfigConverter* is not executed automatically during installation, it can also be started manually from the installation directory: ``C:\Program Files\BoardConnector``. <br>

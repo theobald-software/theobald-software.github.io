@@ -21,12 +21,12 @@ Dieses Szenario setzt voraus, dass Pentaho auf einem Windows-Betriebssystem läu
 Im Fall anderer Betriebssysteme kann alternativ der Aufruf über HTTP aufrufen. 
 <br>
 **Extraktion in Xtract Universal**<br>
-Hier sehen wir die Definition der Extraktion in Xtract Universal mit SQL Server Destination:<br>
+Hier sehen wir die Definition der Extraktion in Xtract Universal mit SQL Server Destination: 
 ![pdi-cmd-xu](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-xu.png){:class="img-responsive"}
 
 <br>
 **Transformation in PDI**<br>
-Die Übersicht der Transformation in Kettle zeigt die verwendeten Schritte:<br>
+Die Übersicht der Transformation in Kettle zeigt die verwendeten Schritte: 
 ![pdi-cmd-transf-overview](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-overview.png){:class="img-responsive"}
 
 <br>
@@ -35,43 +35,43 @@ Wir schauen uns die Einstellungen der wichtigen Schritte.
 Im ersten Schritt definieren wir 2 Parameter: 
 - Das Feld XUCmd enthält den Pfad zur Kommandozeite: "C:\Program Files\XtractUniversal\xu.exe"	
 - Das Feld XUArg enthält die URL der Extraktion in Xtract Universal: http://KETSWIN16DC02:8065/?name=SAPCustomersToSQL
-<br>
+ 
 ![pdi-cmd-transf-generate-rows-settings](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-generate-rows-settings.png){:class="img-responsive"}
 
 <br>
 **Kommandozeile aufrufen**<br>
-Im zweiten Schritt rufen wir die Kommandozeile mit den folgenden Einstellungen auf. Wie man leicht sieht, haben wir auch Fehlerbehanldung eingebaut. <br>
+Im zweiten Schritt rufen wir die Kommandozeile mit den folgenden Einstellungen auf. Wie man leicht sieht, haben wir auch Fehlerbehanldung eingebaut.  
 ![pdi-cmd-transf-exe-settings01](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-exe-settings01.png){:class="img-responsive"}
-<br>
+ 
 ![pdi-cmd-transf-exe-settings02](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-exe-settings02.png){:class="img-responsive"}
 
 <br>
 **Datenbank-Verbindung**<br>
-So sieht die Verbindung zum SQL Server, die wir nutzen, um die Daten aus der Tabelle zu lesen:<br>
+So sieht die Verbindung zum SQL Server, die wir nutzen, um die Daten aus der Tabelle zu lesen: 
 ![pdi-cmd-transf-sql-server-connection](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-sql-server-connection.png){:class="img-responsive"}
 
 <br>
 **Table Input**<br>
-Folgende Einstellungen nutzen wir in Table Input:<br>
+Folgende Einstellungen nutzen wir in Table Input: 
 ![pdi-cmd-transf-table-input-settings](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-table-input-settings.png){:class="img-responsive"}
 
 <br>
 **Ausführung der Transformation in PDI**<br>
-Nach erfolgreicher Ausführung schauen wir uns die Metriken.<br>
+Nach erfolgreicher Ausführung schauen wir uns die Metriken. 
 ![pdi-cmd-transf-metrics](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-metrics.png){:class="img-responsive"}
 
 <br>
 **Preview in PDI**<br>
-Auch das Preview der einzelnen Schritte ist möglich.Preview der Eingabefelder: <br>
+Auch das Preview der einzelnen Schritte ist möglich.Preview der Eingabefelder:  
 ![pdi-cmd-transf-generate-rows-preview](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-generate-rows-preview.png){:class="img-responsive"}
 
 <br>
-Preview der Daten vom Table Input:<br>
+Preview der Daten vom Table Input: 
 ![pdi-cmd-transf-table-input-preview](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-transf-table-input-preview.png){:class="img-responsive"}
 
 <br>
 **Daten im SQL Server**<br>
-Hier nochmal ein Preview der Daten im SQL Server:<br>
+Hier nochmal ein Preview der Daten im SQL Server: 
 ![pdi-cmd-sql](/img/content/xu/best-practices/pdi-cmd/pdi-cmd-sql.png){:class="img-responsive"}
 
 <br>

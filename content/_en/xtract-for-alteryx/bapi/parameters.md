@@ -41,15 +41,15 @@ Structures are named as follows, depending on the data object type:
 
 
 ### Imports
-**Imports** represent the input values sent from the client to SAP. Within the tab **Imports** you can define import parameters that can be presented as scalar values or structures.<br>
-![BAPI import parameters](/img/content/xfa/bapi_import1.png){:class="img-responsive"}<br>
+**Imports** represent the input values sent from the client to SAP. Within the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
+![BAPI import parameters](/img/content/xfa/bapi_import1.png){:class="img-responsive"}
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
 
 ### Exports
 **Exports** represent the output values sent from SAP back to the client after execution of a function module.
-Within the tab **Exports** you can define export parameters that can be presented as scalar values or structures. You can select an **Export** for an output by marking the checkbox in the output column.<br>
-![BAPI export parameters](/img/content/xfa/bapi_export.png){:class="img-responsive"}<br>
+Within the tab **Exports** you can define export parameters that can be presented as scalar values or structures. You can select an **Export** for an output by marking the checkbox in the output column. 
+![BAPI export parameters](/img/content/xfa/bapi_export.png){:class="img-responsive"}
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
  
@@ -63,7 +63,7 @@ Within the tab **Changing** you can define import and export parameters. Changin
 **Tables** contain parameters in a table structure consisting of multiple rows. Tables can be used for input and output.
 
 Within the tab **Tables** you can define table parameters for importing and exporting into and from an SAP BAPI. Tables, in this case, represent a structure of multiple rows of the same data type.
-![BAPI table](/img/content/xfa/bapi_table.png){:class="img-responsive"}<br>
+![BAPI table](/img/content/xfa/bapi_table.png){:class="img-responsive"}
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
 #### Navigating in the Tables tab
@@ -75,4 +75,4 @@ To use the filtering function, enter text in the headers of the columns **Name**
 2. Drop-down lists (2) in the column value show the defined tables in your Alteryx workflow that can be used as an input table (see [Setting an input value](./input-output-values)). <br>
 3. Click **[X]** (3) to clear the values. <br> 
 4. Click **Search** (glasses symbol) (4) to display the metadata of the selected table including the name and the data type of all fields.
-![BAPI meta-data](/img/content/xfa/bapi_table_sap_fields.png){:class="img-responsive"}<br>
+![BAPI meta-data](/img/content/xfa/bapi_table_sap_fields.png){:class="img-responsive"}

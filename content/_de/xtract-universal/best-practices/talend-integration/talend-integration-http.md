@@ -20,12 +20,12 @@ In Talend können wir anschließend die extrahierten Daten weiterverarbeiten und
 Dieses Szenario setzt kein bestimmtes Betriebssystem voraus, im Unterschied zum Szenario mit der Kommandozeile, das nur auf einem Windows-Betriebssystem läuft.
 <br>
 **Jobübersicht in Talend**<br>
-Die Übersicht des Jobs in Talend zeigt die verwendeten Schritte. Es sind insgesamt fünf Schritte, auf die wir unten noch näher eingehen:<br>
+Die Übersicht des Jobs in Talend zeigt die verwendeten Schritte. Es sind insgesamt fünf Schritte, auf die wir unten noch näher eingehen: 
 ![talend-00-job-overview](/img/content/xu/best-practices/talend-http/talend-00-job-overview.png){:class="img-responsive"}
 
 <br>
 **Extraktion in Xtract Universal**<br>
-Hier sehen wir die Definition der Extraktion in Xtract Universal. Wir extrahhieren Kundendaten aus der SAP-Tabelle KNA1: <br> 
+Hier sehen wir die Definition der Extraktion in Xtract Universal. Wir extrahhieren Kundendaten aus der SAP-Tabelle KNA1:  
 ![talend-xu-extraction-def](/img/content/xu/best-practices/talend-http/talend-xu-extraction-def.png){:class="img-responsive"}
 <br>
 In Xtract Universal haben wir eine Extraktion mit Destination vom typ HTTP-CSV definiert. <br>
@@ -47,21 +47,21 @@ CREATE TABLE [dbo].[customers](
 	[Account_Group_Customer_KTOKD] [nvarchar](4) NULL
 ) ON [PRIMARY]
 ```
-Hier nochmal die Tabelle im SQL-Server:<br>
+Hier nochmal die Tabelle im SQL-Server: 
 ![talend-mssql-schema](/img/content/xu/best-practices/talend-http/talend-mssql-schema.png){:class="img-responsive"}
 
 <br>
 **Talend**
 Bevor wir in Talend die Schritte definieren, haben wir unter Metadata -> Db Connections die Verbindung zum SQL Server 
-<br>
+ 
 ![talend-db-connection-01](/img/content/xu/best-practices/talend-http/talend-db-connection-01.png){:class="img-responsive"}
-<br>
+ 
 ![talend-db-connection-02](/img/content/xu/best-practices/talend-http/talend-db-connection-02.png){:class="img-responsive"}
 
-und das Tabellenschema definiert. <br>
+und das Tabellenschema definiert.  
 ![talend-db-schema](/img/content/xu/best-practices/talend-http/talend-db-schema.png){:class="img-responsive"}
 
-Hier die Übersicht der Metadata-Definition:<br>
+Hier die Übersicht der Metadata-Definition: 
 ![talend-db-metadata](/img/content/xu/best-practices/talend-http/talend-db-metadata.png){:class="img-responsive"}
 
 Wir schauen uns nun die Einstellungen der fünf Schritte im Talend-Job an.
@@ -79,26 +79,26 @@ Die Daten werden anhand des Zeichens für Zeilenumbruch "\r\n" in Zeilen gesplit
 <br>
 **Schritt 3 - In Spalten splitten**<br>
 Datensätze werden in Spalten gesplittet, dazu wird der folgende reguläre Ausdruck "\\s*,\\s*(?=(?:(?:[^\"]*\"){2})*[^\"]*$)" verwendet. <br>
-Wir nutzen das vorher definierte Schema für die Spalten.<br>
+Wir nutzen das vorher definierte Schema für die Spalten. 
 ![talend-03-extract-delimited-fields](/img/content/xu/best-practices/talend-http/talend-03-extract-delimited-fields.png){:class="img-responsive"}
 
 <br>
 ** Schritt 4 - In Datenbank schreiben**<br>
-Nun schreiben wir die Daten in die SQL-Tabelle. Dazu nutzen wir die Verbindung und das Schema, welche wir am Anfang definiert haben:<br>
+Nun schreiben wir die Daten in die SQL-Tabelle. Dazu nutzen wir die Verbindung und das Schema, welche wir am Anfang definiert haben: 
 ![talend-04-dboutput](/img/content/xu/best-practices/talend-http/talend-04-dboutput.png){:class="img-responsive"}
 
 <br>
 ** Schritt 5 - Log schreiben (optional)**<br>
-In diesem optionalen Schritt nutzen wir eine Java-Komponente, um im Erfolgsfall die Anzahl der verarbeiteten und eingefügten Datensätze ins Log zu schreiben. <br>
+In diesem optionalen Schritt nutzen wir eine Java-Komponente, um im Erfolgsfall die Anzahl der verarbeiteten und eingefügten Datensätze ins Log zu schreiben.  
 ![talend-05-print-message](/img/content/xu/best-practices/talend-http/talend-05-print-message.png){:class="img-responsive"}
 
 <br>
 **Job ausführen**<br>
-Nun führen wir den Job aus. Der Job ist erfolgreich und es wurden Kundendatensätze aus SAP extrahiert und in den SQL Server geschrieben.<br>
+Nun führen wir den Job aus. Der Job ist erfolgreich und es wurden Kundendatensätze aus SAP extrahiert und in den SQL Server geschrieben. 
 ![talend-http-job-executed](/img/content/xu/best-practices/talend-http/talend-http-job-executed.png){:class="img-responsive"}
 
 **Ergebnis im SQL Server prüfen**<br>
-Nun können wir im SQL Server das Ergebnis prüfen.<br>
+Nun können wir im SQL Server das Ergebnis prüfen. 
 ![talend-mssql-result](/img/content/xu/best-practices/talend-http/talend-mssql-result.png){:class="img-responsive"}
 
 <br>

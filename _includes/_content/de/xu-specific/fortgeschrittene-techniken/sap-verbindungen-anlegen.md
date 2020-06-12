@@ -7,15 +7,15 @@ Der Tab *General* enthält die Verbindungsdetails und ist in vier Unterabschnitt
 - [Client and Language](#client-and-language) (Mandant und Sprache)
 - [Authentication](#authentication) (Authentifizierung)
 - [Miscellaneous](#miscellaneous) (Verschiedenes)
-![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}<br>
+![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}
 
 Ergänzen Sie die Verbindungsdetails, um eine SAP-Verbindung herzustellen.
 
 
 Klicken Sie **[Test Connection]** (1), um eine erfolgreiche Verbindung zu SAP zu überprüfen. 
 Das Bestätigungsfenster öffnet sich. <br>
-Die SAP-Verbindung ist erfolgreich aufgebaut.<br>
-![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"} <br>
+Die SAP-Verbindung ist erfolgreich aufgebaut. 
+![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"}
 
 ### System
 Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
@@ -52,7 +52,7 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 - SNC (Secure Network Communication) (2) mit einem Benutzernamen und einem Passwort
 - [SNC with SSO](../fortgeschrittene-techniken/sap-single-sign-on) (Single Sign On) (3)
 	
-![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"}<br> 
+![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"} 
 Zusätzlich können Sie auch [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services, Xtract Universal und Board Connector).
 
 {: .box-note }
@@ -98,5 +98,5 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 1. Im Hauptfenster des Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
 Das Fenster "Manage Sources" wird geöffnet.<br>
 
-2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist.<br>
+2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist. 
 ![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}

@@ -20,9 +20,9 @@ Es gibt zwei Möglichkeiten, die Produktversion von BOARD Connector Version 2.x 
 2. Markieren Sie das Kästchen **Convert config files**.<br>
 Die Option *Convert config files* ruft den *ConfigConverter* auf, der gewährleistet, dass alle Extraktionen, Quellsysteme, Destinationen, Server- und Benutzersettings aus BC 2.x und BC 3.x in der neuen Version bereitstehen. <br>
 Mehr Informationen über die Dateien im Installationsordner finden Sie im Abschnitt [Installation und Backup](../einfuehrung/installation).
-![BC4_Migration_1](/img/content/BC4_Migration_1.png){:class="img-responsive"} <br>
-3. Confirm the conversion process in the command line pop-up window. <br>
-![BC4_Migration_2](/img/content/BC4_Migration_2.png){:class="img-responsive"} <br>
+![BC4_Migration_1](/img/content/BC4_Migration_1.png){:class="img-responsive"}
+3. Confirm the conversion process in the command line pop-up window.  
+![BC4_Migration_2](/img/content/BC4_Migration_2.png){:class="img-responsive"}
 
 ### Manuelles Upgrade
 Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, kann dieser auch nachträglich manuell aus dem Installationsverzeichnis ``C:\Program Files\XtractUniversal gestartet werden.C:\Program Files\BoardConnector``. <br>

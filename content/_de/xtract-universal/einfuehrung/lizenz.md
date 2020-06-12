@@ -13,8 +13,8 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=lizenz
 
 ### Über das Lizenzierungskonzept von Xtract Universal
 Die folgende Grafik zeigt, auf welchen Arbeitsplätzen die Installation von Xtract Universal mit einer gültigen Lizenz erforderlich ist.
-<br>
-![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}<br>
+ 
+![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
 Xtract Universal wird pro Windows Server lizenziert, d.h. die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Eine Demo-Lizenz wird automatisch mit der Installation von Xtract Universal installiert. <br>
 Eine reguläre Lizenz wird nach dem Kauf des Produkts zur Verfügung gestellt. Die Produktlizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
