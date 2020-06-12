@@ -13,15 +13,15 @@ To add a new table or remove an existing table, click **[Add]** or **[Remove]**.
 ![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 The following options are available on the right under *Fields* for the column selection: <br>
 
-The Table component imports and highlights the dedicated indices, such as primary key or sorting options, from SAP. 
+The Table component imports and highlights the dedicated indices, such as primary key and/or sorting options, from SAP. 
 
 {: .box-note}
 **Note:** using the indicated fields for filtering increases performance when applying WHERE-clause.
 
-**Filter** <br>
+**Filter(1)** <br>
 The column name and the column description can be filtered.
 
-**Aggregate Function** <br>
+**Aggregate Function(2)** <br>
 The following aggregation functions are available for column contents:
 - None: No aggregation 
 - MEAN: Average
@@ -33,15 +33,19 @@ The following aggregation functions are available for column contents:
 {: .box-tip }
 **Tipp:** The aggregate function is only available by numeric field data types (e.g., INT, FLOAT, DECIMAL).
 
-**Conv. - Use Conversion Routine** <br>
-Activating the checkboxes defines whether the conversion routines stored in the Data Dictionary are used for the respective fields. 
-Typical examples are the language key (for example, D in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). 
-After the conversion, the value is always displayed as it would appear in a transaction in the SAP GUI. 
+**Conv. - Use Conversion Routine(3)** <br>
+Activating the tri-state checkbox defines whether the conversion routines stored in the Data Dictionary are used for the respective fields. 
+![Conversion routine](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
 
-<!---
-{: .box-note}
-**Note:** the option "Use Conversion Routine" is only supported with function module [Z_XTRACT_IS_TABLE_COMPRESSION](./extraction-settings). 
---->
+|Checkbox State | Description | Comment |
+|-----|-----|
+|- [ ] | no conversion routines selected | | 
+|- [X]| conversion routines enabled;<br> only avaiable with function module Z_XTRACT_IS_TABLE_COMPRESSION | no data type safety |
+|- [■]    | conversion routines enabled;<br> only avaiable with function module Z_THEO_READ_TABLE | assured data type safety |
+|- [V] | &squf;| |
+
+Typical examples are the language key (for example, D **(4)** in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). 
+After the conversion, the value is always displayed as it appears in the transaction *SE16N* in the SAP GUI. 
 
 ### Preview
 The subsection *Preview* displays a real-time preview of the selected fields, when the button **"[Load live preview]** is clicked.
