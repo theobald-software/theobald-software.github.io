@@ -1,7 +1,7 @@
 ---
 ref: xu-logging-03
 layout: page
-title: Log-Zugriff über HTTP / HTTPS
+title: Log-Zugriff über Web-Service
 description: Log-Zugriff über HTTP / HTTPS
 product: xtract-universal
 parent: logging
@@ -14,7 +14,7 @@ progressstate: 5
 Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien. Die Log-Dateien werden im Produktverzeichnis gespeichert:
 z.B.: `C:\Program Files\XtractUniversal\logs`.
 
-Der XU-Server bietet Zugriff über HTTP / HTTPS auf verschiedene Metadaten- und Logging-Informationen. Stellen Sie sicher, dass die richtige URL verwendet wird. 
+Der XU-Server bietet Zugriff über Web-Service (HTTP / HTTPS) auf verschiedene Metadaten- und Logging-Informationen. Stellen Sie sicher, dass die richtige URL verwendet wird. 
 Die korrekte URL entnehmen Sie Ihren Xtract Universal [Web-Server-Einstellungen](../server/server_einstellungen#web-server).
 
 {: .box-note }
@@ -51,7 +51,7 @@ In den nachfolgenden Beispielen wird folgende URL `https://todd.theobald.local:8
 
 ### Beispiele der HTTP-Aufrufe
 
-#### HTTP-Aufruf aller definierten Extraktionen
+#### Web-Service-Aufruf aller definierten Extraktionen
 - `https://todd.theobald.local:8165/`
 ![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
 
@@ -65,7 +65,7 @@ Der Log enthält folgende Spalten:<br>
 - **LastChange**: enthält den Zeitstempel der letzten Änderung. 
 - **Created**: enthält den Zeitstempel der Erstellung. 
 
-#### HTTP-Aufruf aller definierten Destinationen
+#### Web-Service-Aufruf aller definierten Destinationen
 - `https://todd.theobald.local:8165/destinations`
 ![XU Server connection](/img/content/xu/http_log_destinations.png){:class="img-responsive"}
 
@@ -79,7 +79,7 @@ Der Log enthält folgende Spalten:
 - **Schema**: enthält den Schema-Namen, falls zutrifft.  
 - **Directory**: enthält den Verzeichnisnamen, falls zutrifft.
 
-#### HTTP-Aufruf aller Server & Extraktions-Logs
+#### Web-Service-Aufruf aller Server & Extraktions-Logs
 - `https://todd.theobald.local:8165/log/?req_type=all`
 ![XU Server connection](/img/content/xu/http_log_all_logs.png){:class="img-responsive"}
 
@@ -90,7 +90,7 @@ Der Log enthält folgende Spalten:
 - **Timestamp**: enthält den Zeitstempel.
 - **State** (s. u.): enthält eine Zahl zwischen 2 und 4 bei einer Extraktion bzw. die Zahl 5 bei einem Serverlog.
 - **StateDescr** (s. u.): enthält Beschreibung des Status.
--**LogLevel**: gibt den Wert des Typs "Error", "Info" "Warning" oder "Debug" zurück und beschreibt, ob es sich um eine Fehler-, Info-, Warning- oder Debug-Logzeile handelt.
+- **LogLevel**: gibt den Wert des Typs "Error", "Info" "Warning" oder "Debug" zurück und beschreibt, ob es sich um eine Fehler-, Info-, Warning- oder Debug-Logzeile handelt.
 - **Source**: enthält den Namen der technischen Komponente, welche  den Log-Eintrag erzeugt hat. 
 - **Message**: enthält den Loginhalt.
 
@@ -101,40 +101,42 @@ Der Log enthält folgende Spalten:
 | 4     | FinishedErrors   | Die Extraktion ist abgeschlossen aber mindestens ein Fehler ist aufgetreten. |
 | 5     | NotAvailable     | Der Status bei einem Server-Log.                                              |
 
-#### HTTP-Aufruf aller definierten Extraktionen
+#### Web-Service-Aufruf aller definierten Extraktionen
 - `https://todd.theobald.local:8165/log/?req_type=extraction`
 ![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
 
-#### HTTP-Aufruf der Ergebnis- Tabelle / -Datei eines bestimmten Zeitstempels
+#### Web-Service-Aufruf der Ergebnis- Tabelle / -Datei eines bestimmten Zeitstempels
 
 - `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.141`
 ![XU Server connection](/img/content/xu/http_log_resultName.png){:class="img-responsive"}
 
-Gibt den Namen der Ergebnistabelle / Datei für einen bestimmten Zeitstempel zurück.   
+Gibt den Namen der Ergebnistabelle / Datei für einen bestimmten Zeitstempel zurück.  
+
+ 
 {: .box-note }
 **Hinweis:** Der Vorgang funktioniert nur, wenn seit dem letzten Lauf die **Destination Settings** oder **Extraction Settings** nicht verändert wurden.
 
-#### HTTP-Aufruf aller Serverlogs
+#### Web-Service-Aufruf aller Serverlogs
 - `https://todd.theobald.local:8165/log/?req_type=server`
 ![XU Server connection](/img/content/xu/http_log__req_type=server.png){:class="img-responsive"}
 
-#### HTTP-Aufruf einer bestimmten Extraktion
+#### Web-Service-Aufruf einer bestimmten Extraktion
 - `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt`
 ![XU Server connection](/img/content/xu/http_log_extraction_name.png){:class="img-responsive"}
 
-#### HTTP-Aufruf einer bestimmten Extraktion zu einem bestimmten Zeitstempel
+#### Web-Service-Aufruf einer bestimmten Extraktion zu einem bestimmten Zeitstempel
 - `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_extraction_name_timestamp.png){:class="img-responsive"}
 
-#### HTTP-Aufruf eines Serverlogs zu einem bestimmten Zeitstempel 
+#### Web-Service-Aufruf eines Serverlogs zu einem bestimmten Zeitstempel 
 - `https://todd.theobald.local:8165/log/?req_type=server&timestamp=2020-06-05_07:49:24.150`
 ![XU Server connection](/img/content/xu/http_log_bestimmter_timestamp.png){:class="img-responsive"}
 
-#### HTTP-Aufruf aller Logs zwischen zwei Zeitstempel
+#### Web-Service-Aufruf aller Logs zwischen zwei Zeitstempel
 - `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_min_max_timestamp.png){:class="img-responsive"}
 
-#### HTTP-Aufruf aller Logs seit n Tagen
+#### Web-Service-Aufruf aller Logs seit n Tagen
 - `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'`
 ![XU Server connection](/img/content/xu/http_log_past_day.png){:class="img-responsive"}
 

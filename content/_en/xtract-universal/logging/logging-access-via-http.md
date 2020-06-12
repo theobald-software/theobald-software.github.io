@@ -1,7 +1,7 @@
 ---
 ref: xu-logging-03
 layout: page
-title: Log Access via HTTP / HTTPS
+title: Log Access via Web Service
 description: Log access via HTTP / HTTPS
 product: xtract-universal
 parent: logging
@@ -15,7 +15,7 @@ progressstate: 5
 All Theobald Software products log all steps performed on a system to log files. The logs can be found in the product directory:
 e.g.,: `C:\Program Files\XtractUniversal\logs`.
 
-The XU Server allows accessing the different meta data and logging information through HTTP / HTTPS. Make sure to use the correct URL. 
+The XU Server allows accessing the different meta data and logging information through web service (HTTP / HTTPS). Make sure to use the correct URL. 
 The correct URL can be found in your Xtract Universal [web server settings](../server/server-settings#web-server).
 
 {: .box-note }
@@ -41,7 +41,7 @@ In the succeeding examples the following URL `https://todd.theobald.local:8165/`
 |------------ | -------------|-----|
  | Destinations | List of all Defined Destinations | `http://localhost:8065/destinations` |
  | req_type=server | List of all server logs according to [web server settings > Misc.](../server/server-settings#web-server) | `https://todd.theobald.local:8165/log/?req_type=server` |
-| req_type=extraction | List of all Defined Extractions | `https://todd.theobald.local:8165/log/?req_type=extraction` |
+ | req_type=extraction | List of all Defined Extractions | `https://todd.theobald.local:8165/log/?req_type=extraction` |
  | req_type=all| List of all server & extraction logs | `https://todd.theobald.local:8165/log/?req_type=all`
  | req_type=all&past_days=n | List of all logs since n days | `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'` | 
  | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log of a specific extraction with a specific time stamp | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
@@ -52,7 +52,7 @@ In the succeeding examples the following URL `https://todd.theobald.local:8165/`
 
 ### Examples of the HTTP Requests
 
-#### HTTP request of all defined extractions
+#### Web Service request of all defined extractions
 - `https://todd.theobald.local:8165/`
 ![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
 
@@ -67,7 +67,7 @@ The log contains the following columns:<br>
 - **Created**: contains the time stamp of the creation.
 
 
-#### HTTP request of all defined destinations
+#### Web Service request of all defined destinations
 - `https://todd.theobald.local:8165/destinations`
 ![XU Server connection](/img/content/xu/http_log_destinations.png){:class="img-responsive"}
 
@@ -81,7 +81,7 @@ The log contains the following columns:
 - **Schema**: contains the schema name, if applicable.
 - **Directory**: contains the directory name, if applicable.
 
-#### HTTP Request of all Server & Extraction Logs
+#### Web Service Request of all Server & Extraction Logs
 - `https://todd.theobald.local:8165/log/?req_type=all`
 ![XU Server connection](/img/content/xu/http_log_all_logs.png){:class="img-responsive"}
 
@@ -90,7 +90,6 @@ The log contains the following columns:
 - **LineCount**: contains the row number.
 - **Name**:  contains the name of the extraction or the [server] name in case of a server log. .
 - **Timestamp**: contains the time stamp.
-
 - **State** (see below): contains a number between 2 and 4 for a server extraction or the number 5 for a server log.
 - **StateDescr** (see below): contains the state description.
 - **LogLevel**: returns the value of the type "Error", "Info" "Warning" or "Debug" and describes the kind of the log line.
@@ -104,40 +103,41 @@ The log contains the following columns:
 | 4     | FinishedErrors   | Extraction is finished with at least one error. |
 | 5     | NotAvailable     | The status for a server log.                                              |
 
-#### HTTP request of all defined extractions
+#### Web Service request of all defined extractions
 - `https://todd.theobald.local:8165/log/?req_type=extraction`
 ![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
 
-#### HTTP Request of the Result Table or File of a Specific Time Stamp
+#### Web Service Request of the Result Table or File of a Specific Time Stamp
 
 - `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.141`
 ![XU Server connection](/img/content/xu/http_log_resultName.png){:class="img-responsive"}
 
 Returns the name of the result table or file for a specific time stamp.   
+
 {: .box-note }
 **Note:** This process works only, if the **Destination Settings** or **Extraction Settings** were not changed since the last execution. 
 
-#### HTTP Request of all Server Logs
+#### Web Service Request of all Server Logs
 - `https://todd.theobald.local:8165/log/?req_type=server`
 ![XU Server connection](/img/content/xu/http_log__req_type=server.png){:class="img-responsive"}
 
-#### HTTP Request of a Specific Extraction
+#### Web Service Request of a Specific Extraction
 - `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt`
 ![XU Server connection](/img/content/xu/http_log_extraction_name.png){:class="img-responsive"}
 
-#### HTTP Request of a Specific Extraction at a Specific Time Stamp
+#### Web Service Request of a Specific Extraction at a Specific Time Stamp
 - `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_extraction_name_timestamp.png){:class="img-responsive"}
 
-#### HTTP Request of a Server Log at a Specific Time Stamp
+#### Web Service Request of a Server Log at a Specific Time Stamp
 - `https://todd.theobald.local:8165/log/?req_type=server&timestamp=2020-06-05_07:49:24.150`
 ![XU Server connection](/img/content/xu/http_log_bestimmter_timestamp.png){:class="img-responsive"}
 
-#### HTTP Request of all Logs between two Time Stamps
+#### Web Service Request of all Logs between two Time Stamps
 - `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_min_max_timestamp.png){:class="img-responsive"}
 
-#### HTTP Request  of all Logs since n Days
+#### Web Service Request  of all Logs since n Days
 - `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'`
 ![XU Server connection](/img/content/xu/http_log_past_day.png){:class="img-responsive"}
 
