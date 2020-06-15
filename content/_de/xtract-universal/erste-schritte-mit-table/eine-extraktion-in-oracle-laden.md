@@ -7,7 +7,9 @@ product: xtract-universal
 parent: erste-schritte-mit-table
 permalink: /:collection/:path
 weight: 4
+progressstate: 5
 lang: de_DE
+progressstate: 5
 ---
 Im Folgenden wird das Laden der Extraktion in eine Datenbank dargestellt. Als Zieldatenbank dient Microsoft SQL Server. 
 
@@ -16,7 +18,7 @@ Um eine Extraktion zu in die Microsoft SQL Server Datenbank zu laden, muss die D
 ### Microsoft SQL Server Destination erstellen
 
 1. Klicken Sie im Hauptfenster des Designers auf **[Destination]**, um die Destinationseinstellungen zu öffnen.
-![Laden d. Destination](/img/content/destination_xu.png){:class="img-responsive"}
+![Laden d. Destination](/img/content/xu/destination_xu.png){:class="img-responsive"}
 
 2. Im Fenster "Destination Settings" klicken Sie auf **[...]** (1), um die Destinationen zu verwalten. 
 ![Laden-Manage-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}
@@ -35,7 +37,7 @@ Um eine Extraktion zu in die Microsoft SQL Server Datenbank zu laden, muss die D
 ### Extraktion in die Microsoft SQL Server-Datenbank laden
 
 1. Wählen Sie im Hauptfenster des Designers eine Extraktion mit einem beliebigen Ziel aus und klicken Sie auf **[Destination]**. 
-![Lade-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
+![Lade-Destinations](/img/content/xu/destination_xu.png){:class="img-responsive"}
 Das Fenster "Destination Settings".
 
 2. Im Fenster "Destination Settings" wählen Sie Ihre erstellte Destination **SQLServer** aus der Dropdown-Liste aus. Hier können Sie auch die extraktionsspezifischen Einstellungen bei Bedarf ändern. Im Beispiel werden die Standardeinstellungen beibehalten:

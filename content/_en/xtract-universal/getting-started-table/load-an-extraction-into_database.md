@@ -8,6 +8,7 @@ parent: getting-started-table
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+progressstate: 5
 ---
 
 The following steps depict the loading of the extraction into a database - Microsoft SQL Server. 
@@ -17,7 +18,7 @@ To load an extraction Microsoft SQL Server destination needs to be created and d
 ### Creating Microsoft SQL Server destination
 There are several ways to create a destination. This example depicts 
 1. In the main window of the designer, click **[Destination]** to open destination settings.
-![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
+![Load-Destinations](/img/content/xu/destination_xu.png){:class="img-responsive"}
 
 2. In the window "Destination Settings" click **[...]** (1) to manage destinations. 
 ![Load-Manage-Shared-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}
@@ -35,7 +36,7 @@ There are several ways to create a destination. This example depicts
 ### Loading the extraction into the Microsoft SQL Server database
 
 1. In the main window of the designer, select an extraction with any destination and click **[Destination]**.
-![Load-Destinations](/img/content/destination_xu.png){:class="img-responsive"}
+![Load-Destinations](/img/content/xu/destination_xu.png){:class="img-responsive"}
 The window "Destination Settings" opens.
 
 2. In the "Destination Settings" window, choose your created **SQLServer** destination from the drop down menu. You can change the extraction-specific settings, if needed. In the example, the default settings are kept:
