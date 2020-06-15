@@ -27,14 +27,11 @@ The window "Run Extraction" opens.
 `http://localhost:8065?name=Plants`
 - After choosing the parameter **rows**:
 `http://localhost:8065?name=Plants&rows=100` 
-
-![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png)
-
+![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png){:class="img-responsive"}
 3. Run an extraction in xu.exe. The settings change during runtime, no new start is necessary. 
 
 {: .box-note }
 **Note** <br> Additional parameters such as *Package size* or *Row limit* etc. are described in section [Extraction settings](https://help.theobald-software.com/en/xtract-universal/table/extraction-settings). 
-
 
 
 ### Running an extraction in a browser

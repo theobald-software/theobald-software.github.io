@@ -7,6 +7,7 @@ Der Tab *Tables and Fields* besteht aus drei Unterabschnitten:
 
 ### Tables
  Um eine neue Tabelle hinzuzufügen oder eine bestehende Tabelle zu entfernen, klicken Sie auf **[Add]** oder **[Remove]**
+ 
  ![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
 
 
@@ -19,10 +20,10 @@ Die Table-Komponente importiert und markiert die dedizierten Indizes, wie z.B. P
 {: .box-note}
 **Hinweis:** Die Verwendung der indizierten Felder zur Filterung erhöht die Performance bei der Anwendung der WHERE-Bedingung.
 
-**Filter** <br>
+**Filter (1)** <br>
 Der Spaltenname (Name) und die Spaltenbeschreibung (Description) lassen sich filtern.
 
-**Aggregate Function** <br>
+**Aggregate Function (2)** <br>
 Es stehen folgende Aggregatfunktionen für Spalteninhalte zur Verfügung:
 - None: Keine Aggregierung 
 - MEAN: Durchschnitt
@@ -34,16 +35,20 @@ Es stehen folgende Aggregatfunktionen für Spalteninhalte zur Verfügung:
 {: .box-tip }
 **Tipp:** Die Aggregatfunktionen sind nur bei nummerischen Felddatentypen (z.B. INT, FLOAT, DECIMAL) verfügbar.
 
-**Conv. - Use Conversion Routine**  <br>
-Ankreuzen des Kästchens definiert, ob die im Data Dictionary hinterlegte Konvertierungsroutinen für die jeweiligen selektierten Felder angewendet werden. 
-Typische Beispiele dafür sind der Sprachenschlüssel (z.B. D auf der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). 
-Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in einer Transaktion im SAP GUI erscheinen würde. 
+**Conv. - Use Conversion Routine (3)**  <br>
+Durch Aktivieren des Tri-State-Kästchens wird festgelegt, ob die im Data Dictionary gespeicherten Konvertierungsroutinen für die jeweiligen Felder verwendet werden. 
 
-<!---
-{: .box-note}
-**Hinweis:** Die Option "Use Conversion Routine" wird nur im Zusammenhang mit dem Funktionsbaustein [Z_XTRACT_IS_TABLE_COMPRESSION](./extraktionseinstellungen) unterstützt. 
---->
+![tri-state box](/img/content/table/tri-state_checkbox.png){:class="img-responsive"}
 
+| Status des Kontrollkästchens | Beschreibung | Kommentar |
+|:-----:|-----|
+|(1) | keine Konvertierungsroutine ausgewählt | | 
+|(2)| Konvertierungsroutine aktiviert;<br> nur mit dem Funktionsbaustein Z_XTRACT_IS_TABLE_COMPRESSION verfügbar| keine Datentypsicherheit |
+|(3)  | Konvertierungsroutine aktiviert;<br> nur mit dem Funktionsbaustein Z_THEO_READ_TABLE verfügbar| Datentypsicherheit garantiert |
+
+![Conversion routine](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
+
+Typische Beispiele für Konvertierungsroutinen sind der Sprachenschlüssel (z.B. D **(4)** auf der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in der Transaktion *SE16N* im SAP GUI erscheinen würde
 ### Preview
 Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
 
