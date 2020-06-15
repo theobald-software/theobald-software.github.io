@@ -9,8 +9,9 @@ childidentifier: snowflake
 permalink: /:collection/:path
 weight: 103
 lang: en_GB
+progressstate: 5
 ---
 
-This chapter contains information on loading data into a Snowflake environment.
+The following section describes the loading of the SAP extraction data into Snowflake environment.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

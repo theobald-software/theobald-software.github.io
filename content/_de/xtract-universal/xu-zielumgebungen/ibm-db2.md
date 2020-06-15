@@ -9,11 +9,10 @@ childidentifier: ibm-db2
 permalink: /:collection/:path
 weight: 50
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=db2
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir das Laden der Daten in eine IBM DB2-Zieldatenbank.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine IBM DB2-Zieldatenbank.
 
-![DB2-Extraction-Designer](/img/content/DB2-Extraction-Designer.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

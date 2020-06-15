@@ -9,10 +9,10 @@ childidentifier: postgreSQL
 permalink: /:collection/:path
 weight: 81
 lang: de_DE
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir das Laden der Daten in eine PostgreSQL-Zieldatenbank.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine PostgreSQL-Zieldatenbank.
 
-![PostgreSQL](/img/content/xu/postgreSQL_architecture.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

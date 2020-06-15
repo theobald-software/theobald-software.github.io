@@ -9,6 +9,7 @@ childidentifier: json-flat-file
 permalink: /:collection/:path
 weight: 13
 lang: en_GB
+progressstate: 5
 ---
 The JSON flat file destination creates a generic JSON file.
 

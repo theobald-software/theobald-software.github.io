@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 12
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=odata-atom
+progressstate: 5
 ---
 
 The destination HTTP - OData delivers the extracted data in a generic format via an HTTP OData stream or web service. 

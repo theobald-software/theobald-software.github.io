@@ -9,9 +9,9 @@ childidentifier: sharepoint_list
 permalink: /:collection/:path
 weight: 102
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=sharepoint_list
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir das Importieren der Daten in eine Liste eines SharePoint-Servers.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten auf einen SharePoint-Server.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

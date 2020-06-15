@@ -12,8 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=microsoft-sql-server
 ---
 
-In this section we will describe how to load SAP extraction data to a Microsoft SQL Server Database destination.
+The following section describes the loading of the SAP extraction data to a Microsoft SQL Server Database destination.
 
-![MSSql-Extraction-Designer](/img/content/MSSql-Extraction-Designer.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

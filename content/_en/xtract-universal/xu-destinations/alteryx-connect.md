@@ -10,9 +10,10 @@ permalink: /:collection/:path
 weight: 21
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=alteryx_connect
+progressstate: 5
 ---
 
-In this section we will describe how to load the SAP extraction data to Alteryx Connect. <br> 
-The extracted SAP data can be found under Administration -> Stage.
+The following section describes the loading of the SAP extraction data to Alteryx Connect. <br> 
+Check the extracted SAP data under **Administration > Stage**.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

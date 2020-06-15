@@ -10,8 +10,9 @@ permalink: /:collection/:path
 weight: 110
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=tableau
+progressstate: 5
 ---
 
-In this section we will describe how to export SAP data into Tableau. 
+The following section describes the loading of the SAP extraction data into Tableau. 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

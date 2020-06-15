@@ -10,10 +10,10 @@ permalink: /:collection/:path
 weight: 61
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=microstrategy
+progressstate: 5
 ---
 
-In this section we will describe how to load SAP extraction data to **Microstrategy** server as **Intelligent Cube**.
+The following section describes the loading of the SAP extraction data to Microstrategy server as Intelligent Cube.
 
-![mstr-intelligent-cube](/img/content/mstr-intelligent-cube.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

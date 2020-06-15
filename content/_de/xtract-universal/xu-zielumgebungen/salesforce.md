@@ -9,9 +9,10 @@ childidentifier: salesforce
 permalink: /:collection/:path
 weight: 100
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=salesforce
+progressstate: 5
 ---
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in ein Salesforce-Objekt.
 
-In diesem Kapitel beschreiben wir das Laden der Daten in ein Salesforce-Objekt. 
+In diesem Kapitel beschreiben wir das . 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

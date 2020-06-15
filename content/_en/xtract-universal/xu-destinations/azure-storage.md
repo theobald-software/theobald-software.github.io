@@ -9,7 +9,7 @@ childidentifier: azure-storage
 permalink: /:collection/:path
 weight: 24
 lang: en_GB
-old_url: 
+progressstate: 5
 ---
 
 The following section describes the loading of SAP data to a cloud based Azure Storage. 

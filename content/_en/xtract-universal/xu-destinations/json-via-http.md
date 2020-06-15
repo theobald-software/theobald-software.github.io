@@ -8,6 +8,7 @@ parent: xu-destinations
 permalink: /:collection/:path
 weight: 10
 lang: en_GB
+progressstate: 5
 ---
 
 The JSON destination is a generic JSON stream over HTTP. 

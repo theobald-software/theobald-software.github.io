@@ -9,10 +9,10 @@ childidentifier: tableau
 permalink: /:collection/:path
 weight: 110
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=tableau
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir die Integration mit Tableau. 
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in Tableau. 
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

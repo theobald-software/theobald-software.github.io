@@ -9,12 +9,9 @@ childidentifier: oracle
 permalink: /:collection/:path
 weight: 70
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=oracle
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir das Laden der Daten in eine Oracle-Zieldatenbank.
-
-![Oracle-Extraction-Designer](/img/content/Oracle-Extraction-Designer.png){:class="img-responsive"}
-
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine Oracle-Zieldatenbank.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

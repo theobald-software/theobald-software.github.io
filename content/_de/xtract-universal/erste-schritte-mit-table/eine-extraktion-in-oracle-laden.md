@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 4
 progressstate: 5
 lang: de_DE
-progressstate: 5
+
 ---
 Im Folgenden wird das Laden der Extraktion in eine Datenbank dargestellt. Als Zieldatenbank dient Microsoft SQL Server. 
 
@@ -18,7 +18,7 @@ Um eine Extraktion zu in die Microsoft SQL Server Datenbank zu laden, muss die D
 ### Microsoft SQL Server Destination erstellen
 
 1. Klicken Sie im Hauptfenster des Designers auf **[Destination]**, um die Destinationseinstellungen zu öffnen.
-![Laden d. Destination](/img/content/xu/destination_xu.png){:class="img-responsive"}
+![Laden d. Destination](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
 2. Im Fenster "Destination Settings" klicken Sie auf **[...]** (1), um die Destinationen zu verwalten. 
 ![Laden-Manage-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}

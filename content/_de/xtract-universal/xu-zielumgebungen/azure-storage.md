@@ -10,8 +10,9 @@ permalink: /:collection/:path
 weight: 24
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=azure_blob_storage
+progressstate: 5
 ---
 
-Im folgenden Abschnitt wird das Speichern der extrahierten Daten in den Cloudspeicher Azure Storage beschrieben.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud-Speicher Azure Storage.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

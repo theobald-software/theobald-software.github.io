@@ -9,9 +9,9 @@ childidentifier: alteryx-de
 permalink: /:collection/:path
 weight: 20
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=alteryx-de
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir das Laden von SAP-Daten in Alteryx.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten aus Alteryx.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -9,10 +9,10 @@ childidentifier: hana
 permalink: /:collection/:path
 weight: 101
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=hana
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir das Laden der Daten in eine HANA-Zieldatenbank.  
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine HANA-Zieldatenbank.  
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

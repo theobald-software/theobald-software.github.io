@@ -9,11 +9,10 @@ childidentifier: microstrategy
 permalink: /:collection/:path
 weight: 61
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=microstrategy
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir, wie die Daten in den **Microstrategy Server** als Intelligent **Cube geladen** werden. 
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in einen Microstrategy Server als Intelligent Cube. 
 
-![mstr-intelligent-cube](/img/content/mstr-intelligent-cube.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

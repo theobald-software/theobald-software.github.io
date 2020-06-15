@@ -9,9 +9,9 @@ childidentifier: azure_dwh
 permalink: /:collection/:path
 weight: 25
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=azure_dwh
+progressstate: 5
 ---
 
-In diesem Kapitel wird das Speichern der extrahierten Daten in den Azure Data Warehouse beschrieben.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in ein Azure Data Warehouse.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

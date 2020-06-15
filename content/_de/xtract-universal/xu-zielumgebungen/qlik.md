@@ -10,9 +10,10 @@ permalink: /:collection/:path
 weight: 90
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=qlik
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir die Extraktion von SAP Daten in QlikView bzw. QlikSense.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in QlikView bzw. QlikSense.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

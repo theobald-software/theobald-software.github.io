@@ -9,10 +9,10 @@ childidentifier: snowflake
 permalink: /:collection/:path
 weight: 103
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=microsoft-sql-server
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir das Laden der Daten in eine Snowflake-Umgebung. 
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine Snowflake-Umgebung. 
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

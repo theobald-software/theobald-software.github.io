@@ -10,8 +10,9 @@ permalink: /:collection/:path
 weight: 100
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=salesforce
+progressstate: 5
 ---
 
-In this section we will describe how to extract SAP data to Salesforce.
+The following section describes the loading of the SAP extraction data to Salesforce.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

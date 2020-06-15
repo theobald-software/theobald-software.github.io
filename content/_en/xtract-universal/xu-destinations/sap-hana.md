@@ -10,8 +10,9 @@ permalink: /:collection/:path
 weight: 101
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=hana
+progressstate: 5
 ---
 
-In this section we will describe how to load SAP extraction data to a HANA Database destination. 
+The following section describes the loading of the SAP extraction data to a HANA Database destination. 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

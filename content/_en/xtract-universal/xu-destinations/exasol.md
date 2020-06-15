@@ -10,10 +10,11 @@ permalink: /:collection/:path
 weight: 30
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol
+progressstate: 5
 ---
 
-In this section we will describe how to load the SAP extraction data to an EXASOL Database destination.
 
-![Exa-Extraction-Designer](/img/content/Exa-Extraction-Designer.png){:class="img-responsive"}
+The following section describes the loading of the SAP extraction data to an EXASOL Database destination.
+
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

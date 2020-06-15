@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 82
 lang: DE_DE
 old_url: 
+progressstate: 5
 ---
 ### Einführung
 

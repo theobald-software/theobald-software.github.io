@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 11
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-via-http
+progressstate: 5
 ---
 
 The destination is a generic CSV stream over HTTP. 

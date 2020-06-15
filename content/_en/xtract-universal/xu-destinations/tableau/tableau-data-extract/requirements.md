@@ -18,6 +18,6 @@ The required Visual C++ 2013 / 2015 Runtime and the Tableau Export Library will 
 
 Make sure to check the checkbox "Tableau Extract API" during setup.
 
-![XU_Setup](/img/content/XU_Setup_2.png){:class="img-responsive"}
+![XU_Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
 When starting the installation program, optional components (1) can be selected during the setup. When selecting a component details are displayed in the description field (2).

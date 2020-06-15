@@ -9,6 +9,7 @@ childidentifier: parquet
 permalink: /:collection/:path
 weight: 80
 lang: en_GB
+progressstate: 5
 ---
 The Parquet destination creates a generic Parquet file.
 

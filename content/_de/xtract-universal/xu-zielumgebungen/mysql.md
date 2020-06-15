@@ -9,10 +9,10 @@ childidentifier: mysql
 permalink: /:collection/:path
 weight: 62
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=mysql
+progressstate: 5
 ---
 
-In diesem Kapitel beschreiben wir das Laden der extrahierten SAP-Daten in ein MySQL-Zieldatenbank.  
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine MySQL-Zieldatenbank.  
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

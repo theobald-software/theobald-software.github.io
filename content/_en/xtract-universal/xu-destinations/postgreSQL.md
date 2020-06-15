@@ -9,9 +9,10 @@ childidentifier: postgreSQL
 permalink: /:collection/:path
 weight: 81
 lang: en_GB
+progressstate: 5
 ---
 
-In this chapter we describe how to load the data into a PostgreSQL target database.
+The following section describes the loading of the SAP extraction data into PostgreSQL target database.
 
 ![PostgreSQL](/img/content/xu/postgreSQL_architecture.png){:class="img-responsive"}
 
