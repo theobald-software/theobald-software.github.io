@@ -8,6 +8,7 @@ parent: postgreSQL
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+progressstate: 3
 ---
 
 In this example we load an extraction into the PostgreSQL database.
@@ -49,7 +50,6 @@ To perform the extraction, click the *Run* button. In the Run Extraction window,
 
 In the Designer, click Refresh to view the status of the execution. In our example, 239 records have been loaded into the database.  
 
-![Designer-Status](/img/content/xu/postgres_xu_designer_overview.png){:class="img-responsive"}
 
 **Check the result in the database**<br>
 

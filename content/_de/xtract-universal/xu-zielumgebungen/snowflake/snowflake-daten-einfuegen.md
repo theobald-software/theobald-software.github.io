@@ -8,6 +8,7 @@ parent: snowflake
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
+progressstate: 3
 ---
 
 In diesem Beispiel laden wir eine SAP Extraktion in die Snowflake-Datenbank.
@@ -60,7 +61,6 @@ Sie können die Kommandozeile schließen. Im Designer klicken Sie auf *Refresh*,
 Bei einer erfolgreichen Extraktion sehen Sie ein grünes Icon in der Status-Spalte. 
 In unserem Beispiel wurden 239 Datensätze in die Datenbank geladen.  
 
-![Snowflake-Designer-Status](/img/content/xu/snowflake/snowflake-t001w-designer-status.png){:class="img-responsive"}
 
 **Ergebnis in der Datenbank überprüfen**
 

@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=inserting_data
+progressstate: 3
 ---
 
 In this example we will load an extraction to a Vertica database table. 

@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift-inserting-data
+progressstate: 3
 ---
 
 In this example we will load an extraction to a Redshift database.

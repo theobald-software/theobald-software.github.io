@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=inserting_data2
+progressstate: 3
 ---	
 
 In this example we will load an extraction to an Azure SQL Data Warehouse table. 
@@ -40,5 +41,3 @@ Click the button *Run*. In the dialog click on either of the two *Run* buttons t
 ![XU_Vertica_Vertica_RunExtraction](/img/content/XU_Vertica_Vertica_RunExtraction.png){:class="img-responsive"}
 
 Click on the *Refresh* button in the Designer to check the execution status. In our example 238 rows have been loaded to the database. 
-
-![XU_AzureDWH_Extraction_Overview](/img/content/XU_AzureDWH_Extraction_Overview.png){:class="img-responsive"}

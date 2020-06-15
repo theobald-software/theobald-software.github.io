@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=daten_einf_gen2
+progressstate: 3
 ---
 
 In diesem Beispiel laden wir eine Extraktion in eine Azure SQL Data Warehouse-Tabelle.
@@ -49,4 +50,4 @@ Um die Extraktion auszuführen, klicken Sie auf den Button *Run*. Im Fenster *Ru
 
 Im Designer klicken Sie auf den Button Refresh, um sich den Status der Ausführung anzuschauen. In unserem Beispiel wurden 238 Datensätze in die Datenbank geladen.
 
-![XU_AzureDWH_Extraction_Overview](/img/content/XU_AzureDWH_Extraction_Overview.png){:class="img-responsive"}
+

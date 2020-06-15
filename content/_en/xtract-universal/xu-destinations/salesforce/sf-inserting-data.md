@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4	
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=inserting_data1
+progressstate: 3
 ---
 
 In this example we will extract data to Salesforce.
@@ -46,7 +47,6 @@ Click the **Run** button in the extraction definition window. In the dialog clic
 
 Refresh the Designer by clicking the **Refresh** button. Check the execution status and the number of rows that have been extracted.
 
-![sf-designer_view](/img/content/sf-designer_view.PNG){:class="img-responsive"}
 
 To check the processing status in Salesforce we have to navigate to **Setup > Jobs > Bulk Data Load Jobs**. Here we can check the status of our extraction job. Make sure the number of records processed matches the number of rows extracted in Xtract Universal.
 

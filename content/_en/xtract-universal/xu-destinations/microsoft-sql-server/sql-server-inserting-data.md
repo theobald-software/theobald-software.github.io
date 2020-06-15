@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-inserting-data
+progressstate: 3
 ---
 
 In this example we will load an extraction to Microsoft SQL Server database.
@@ -49,7 +50,7 @@ Click the button *Run*. In the dialog Run Extraction click again on *Run* to run
 
 Click on *Refresh* in the Designer to check the execution status. In our example 185 rows has been loaded to the database.
 
-![MSSql-Designer-Status](/img/content/MSSql-Designer-Status.png){:class="img-responsive"}
+
 
 **Check the result in the database** 
 

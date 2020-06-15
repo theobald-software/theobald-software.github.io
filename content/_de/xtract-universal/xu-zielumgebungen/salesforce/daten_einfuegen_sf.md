@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=daten_einfuegen_sf
+progressstate: 3
 ---
 
 In diesem Beispiel laden wir eine Extraktion in Salesforce.
@@ -38,8 +39,6 @@ Um die Extraktion auszuführen, klicken Sie auf den Button Run. Im Fenster Run E
 ![sf-run_extraction_popup](/img/content/sf-run_extraction_popup.PNG){:class="img-responsive"}
 
 Im Designer klicken Sie auf Refresh, um sich den Status der Ausführung anzuschauen. 
-
-![sf-designer_view](/img/content/sf-designer_view.PNG){:class="img-responsive"}
 
 **Ergebnis in Salesforce überprüfen**
 

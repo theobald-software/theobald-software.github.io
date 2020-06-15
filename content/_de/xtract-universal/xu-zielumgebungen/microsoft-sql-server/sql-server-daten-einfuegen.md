@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sql-server-daten-einfuegen
+progressstate: 3
 ---
 
 In diesem Beispiel laden wir eine Extraktion in die Microsoft SQL-Datenbank.
@@ -50,7 +51,6 @@ Um die Extraktion auszuführen, klicken Sie auf den Button *Run*. Im Fenster Run
 
 Im Designer klicken Sie auf Refresh, um sich den Status der Ausführung anzuschauen. In unserem Beispiel wurden 185 Datensätze in die Datenbank geladen.  
 
-![MSSql-Designer-Status](/img/content/MSSql-Designer-Status.png){:class="img-responsive"}
 
 **Ergebnis in der Datenbank überprüfen**
 

@@ -8,6 +8,7 @@ parent: snowflake
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+progressstate: 3
 ---
 
 This example depicts an SAP extraction into Snowflake.
@@ -55,7 +56,6 @@ The command line can be closed. To check the execution status click *Refresh* in
 If the extraction is successful, a green icon appears in the status row.
 In the given example, 239 data records are loaded into the database.
 
-![Snowflake-Designer-Status](/img/content/xu/snowflake/snowflake-t001w-designer-status.png){:class="img-responsive"}
 
 **Check the result in the database**
 

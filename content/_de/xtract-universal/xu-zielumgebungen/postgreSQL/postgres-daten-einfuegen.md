@@ -8,6 +8,7 @@ parent: postgreSQL
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
+progressstate: 3
 ---
 
 In diesem Beispiel laden wir eine Extraktion in die PostgreSQL-Datenbank.
@@ -49,7 +50,6 @@ Um die Extraktion auszuführen, klicken Sie auf den Button *Run*. Im Fenster Run
 
 Im Designer klicken Sie auf Refresh, um sich den Status der Ausführung anzuschauen. In unserem Beispiel wurden 239 Datensätze in die Datenbank geladen.  
 
-![Exa-Designer-Status](/img/content/xu/postgres_xu_designer_overview.png){:class="img-responsive"}
 
 **Ergebnis in der Datenbank überprüfen**
 
