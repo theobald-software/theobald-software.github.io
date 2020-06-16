@@ -20,3 +20,4 @@ If the *ConfigConverter* is not executed automatically during installation, it c
 
 {:.box-note}
 **Note:** Any issues that may occur during the conversion process are displayed in the command line window. Copy and send the command line context to the support team, if required.   
+
