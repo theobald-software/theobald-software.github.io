@@ -18,6 +18,6 @@ Die benötigten Visual C++ Runtime und die Tableau Export Libraries werden autom
 
 Beim Setup muss die Checkbox "Tableau Extract API" angehakt werden.
 
-![XU-Setup](/img/content/xu/xu_setup_2.png){:class="img-responsive"}
+![XU_Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
 Beim Start des Installationsprogramms können während des Setups optionale Komponenten (1) ausgewählt werden. Bei der Auswahl einer Komponente werden Details im Beschreibungsfeld (2) angezeigt.
