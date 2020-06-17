@@ -145,7 +145,6 @@ Returns the name of the result table or file for a specific time stamp.
 *****
 #### Related Links
 - [Web Server Settings](../server/server-settings#web-server)
-- [Logging](../logging)
 
 
 
