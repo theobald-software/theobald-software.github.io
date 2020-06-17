@@ -16,7 +16,7 @@ Progressstate: 5
 {% include _content/de/einfuehrung/betriebssysteme.md %} 
 {% include _content/de/einfuehrung/xu-req-verschiedenes.md %}
 
-### Zielumgebungen
-Für die Verwendung der Ziele kann ein geeigneter Treiber oder eine entsprechende Bibliothek erforderlich sein. Weitere Informationen finden Sie im Abschnitt Anforderungen der einzelnen Destinationen.
-Zusätzlicher Speicherplatz kann für die Treiber bestimmter Destinationen erforderlich sein (z.B. für Tableau).
+### Destinationen
+Für die Verwendung bestimmter [Destinationen](../xu-zielumgebungen) kann ein geeigneter Treiber oder eine entsprechende Bibliothek erforderlich sein. Weitere Informationen entnehmen Sie dem Abschnitt Voraussetzungen der einzelnen Destinationen.
+
 

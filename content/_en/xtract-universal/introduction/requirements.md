@@ -16,6 +16,7 @@ Progressstate: 5
 {% include _content/en/requirements/operating-systems.md %}
 {% include _content/en/requirements/xu-req-misc.md %}
 
-## Destinations
-For the use of the Destinations, an appropriate driver or library may  be required. More information can be found under the requirements section of each Destination.
-Additional space may be required for specific drivers for destinations (e.g. for Tableau). 
+### Destinations
+To use the different [Destinations](../xu-destinations), an appropriate driver or library can be required. 
+More information can be found under the requirements section of each destination.
+
