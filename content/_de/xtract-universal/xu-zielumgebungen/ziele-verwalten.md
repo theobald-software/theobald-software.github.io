@@ -33,7 +33,7 @@ Das Fenster "Manage Destinations" öffnet sich.
 #### Vordefinierte Zielumgebungen
 Die folgenden Zielumgebungen sind vordefiniert und können nicht gelöscht werden:
 - [Web Service CSV](./csv-via-http)
-- [Web Service Odata Atom](/odata)
+- [Web Service Odata Atom](./odata)
 
 ******
 #### Weiterführende Links
