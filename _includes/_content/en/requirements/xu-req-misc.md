@@ -1,8 +1,8 @@
-## Other Applications and Frameworks	
+### Other Applications and Frameworks	
 - .NET Framework 4.7.2 or higher. You can download the framework from [Microsoft website](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows).
 - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) or later when using TLS/HTTPS.
 
-## Hardware Requirements
+### Hardware Requirements
 
 
 ### Processor Cores
@@ -26,5 +26,5 @@ E.g. the BW Cube component needs for extracting and processing data more main me
 ### Disk space
 For the installation 150 MB disk space is required.
 
-## 64-Bit Environment	
+### 64-Bit Environment	
 The product can be installed on 64-Bit operating systems only.
