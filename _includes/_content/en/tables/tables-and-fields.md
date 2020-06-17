@@ -38,6 +38,9 @@ The following aggregation functions are available for column contents:
 **Conv. - Use Conversion Routine (3)** <br>
 Activating the tri-state checkbox defines whether the conversion routines stored in the Data Dictionary are used for the respective fields. 
 
+{: .box-note}
+**Note:** activating the conversion routines in SAP leads to significant performance decrease. The extraction duration increases. <br>
+
 ![tri-state box](/img/content/table/tri-state_checkbox.png){:class="img-responsive"}
 
 |Checkbox State | Description | Comment |

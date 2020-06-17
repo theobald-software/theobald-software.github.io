@@ -38,6 +38,10 @@ Es stehen folgende Aggregatfunktionen für Spalteninhalte zur Verfügung:
 **Conv. - Use Conversion Routine (3)**  <br>
 Durch Aktivieren des Tri-State-Kästchens wird festgelegt, ob die im Data Dictionary gespeicherten Konvertierungsroutinen für die jeweiligen Felder verwendet werden. 
 
+{: .box-note}
+**Hinweis:** die Verwendung von Conversion Routines in SAP führt zu einem merklichen Performance-Verlust (Leistungseinbuße). Die Extraktionsdauer erhöht sich. 
+
+
 ![tri-state box](/img/content/table/tri-state_checkbox.png){:class="img-responsive"}
 
 | Status des Kontrollkästchens | Beschreibung | Kommentar |
