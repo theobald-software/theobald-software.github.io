@@ -61,8 +61,6 @@ Png is recommended file type for online content. Jpeg is not forbidden but remem
 ### Frames & shadows
 When creating a screenshot of a prompted window with the option *Capture Window* (**[Alt]+[Print]**), the frame appears automatically.<br>
 
-![Frames](/img/content/help_concept/xu_demo_license.png){:class="img-responsive"}
-
 When creating a part of a screen, use *Capture region* (**[Print]**) or / then crop the image to the needed size and add a shadow **[CTRL]+[Q]**. 
 <br>
 
