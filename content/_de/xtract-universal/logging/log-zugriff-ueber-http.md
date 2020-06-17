@@ -144,7 +144,6 @@ Gibt den Namen der Ergebnistabelle / Datei für einen bestimmten Zeitstempel zur
 *****
 #### Weiterführende Links
 - [Web-Server-Einstellungen](../server/server_einstellungen#web-server)
-- [Logging](./logging)
 
 
 
