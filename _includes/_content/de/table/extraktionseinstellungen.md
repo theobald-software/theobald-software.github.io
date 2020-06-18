@@ -1,6 +1,10 @@
 
 ![Extraction-Settings-01](/img/content/xu/Table-Extraction-Settings.png){:class="img-responsive"}
 
+{: .box-note }
+**Hinweis:** Wenn ein technischer SAP-Benutzer keine Berechtigungen für den Zugriff auf die Tabelle *ENLFDIR* hat, erscheint die folgende Warnung:<br>
+*Could not load list of available function modules because permission for table ENLFDIR is missing*. <br>
+Nachdem Bestätigen der Warnung, kann der Benutzer die Extraktionseinstellungen **trotzdem** anpassen.
 
 ### Table Settings
 Das Fenster "Table Settings" besteht aus zwei Unterabschnitten:

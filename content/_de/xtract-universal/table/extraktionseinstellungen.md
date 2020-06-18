@@ -18,4 +18,9 @@ Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen
 ### Extraction Settings Öffnen
 Innerhalb des Fensters "Define data source for SAP Tables" klicken Sie auf **Extraction Settings**. Das Fenster "Table Settings" wird geöffnet. 
 
+
 {% include _content/de/table/extraktionseinstellungen.md  %}
+
+***********
+#### Weiterführende Links
+- [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)

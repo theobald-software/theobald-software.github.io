@@ -15,3 +15,7 @@ An extraction has two types of settings. The *Extraction Settings* include setti
 Within the window "Define data source for SAP Tables" click **Extraction Settings**. The window "Table Settings" opens. 
 
 {% include _content/en/tables/extraction-settings.md  %}
+
+***********
+#### Related Links
+- [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)
