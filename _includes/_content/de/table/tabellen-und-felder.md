@@ -56,6 +56,8 @@ Typische Beispiele für Konvertierungsroutinen sind der Sprachenschlüssel (z.B.
 ### Preview
 Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
 
+{: .box-note }
+**Hinweis:** das Verwenden von nicht indizierten Feldern in der WHERE-Bedingung kann bei großen Tabellen ggf. zu langen Wartezeiten / Timeouts beim Preview führen.
 
 
 ### Schaltflächen
