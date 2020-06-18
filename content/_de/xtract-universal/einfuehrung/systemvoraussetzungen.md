@@ -19,4 +19,6 @@ Progressstate: 5
 ### Destinationen
 Für die Verwendung bestimmter [Destinationen](../xu-zielumgebungen) kann ein geeigneter Treiber oder eine entsprechende Bibliothek erforderlich sein. Weitere Informationen entnehmen Sie dem Abschnitt Voraussetzungen der einzelnen Destinationen.
 
+Bei der Verwendung bestimmter Destinationen (z.B. [Tableau](../xu-zielumgebungen/tableau/tableau-mit-data-extract/voraussetzungen)) kann zusätzlicher Festplattenspeicher benötigt werden.
+
 
