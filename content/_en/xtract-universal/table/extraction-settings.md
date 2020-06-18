@@ -17,5 +17,8 @@ Within the window "Define data source for SAP Tables" click **Extraction Setting
 {: .box-note }
 **Note:** if a technical SAP user does not have authorization rights to access *ENLFDIR* table, a corresponding error appears. After confirming the error message, the user can **still** adjust the extraction settings.
 
-
 {% include _content/en/tables/extraction-settings.md  %}
+
+***********
+#### Related Links
+- [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)

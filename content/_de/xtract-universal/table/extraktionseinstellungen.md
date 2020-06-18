@@ -24,3 +24,7 @@ Nachdem Bestätigen der Fehlermeldung, kann der Benutzer die Extraktionseinstell
 
 
 {% include _content/de/table/extraktionseinstellungen.md  %}
+
+***********
+#### Weiterführende Links
+- [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)
