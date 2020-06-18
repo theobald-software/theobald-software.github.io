@@ -18,10 +18,6 @@ Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen
 ### Extraction Settings Öffnen
 Innerhalb des Fensters "Define data source for SAP Tables" klicken Sie auf **Extraction Settings**. Das Fenster "Table Settings" wird geöffnet. 
 
-{: .box-note }
-**Hinweis:** Wenn ein technischer SAP-Benutzer keine Berechtigungen für den Zugriff auf die Tabelle *ENLFDIR* hat, erscheint eine entsprechende Fehlermeldung. 
-Nachdem Bestätigen der Fehlermeldung, kann der Benutzer die Extraktionseinstellungen **trotzdem** anpassen.
-
 
 {% include _content/de/table/extraktionseinstellungen.md  %}
 

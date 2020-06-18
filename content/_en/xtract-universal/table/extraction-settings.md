@@ -14,9 +14,6 @@ An extraction has two types of settings. The *Extraction Settings* include setti
 ### Opening Extraction Settings
 Within the window "Define data source for SAP Tables" click **Extraction Settings**. The window "Table Settings" opens. 
 
-{: .box-note }
-**Note:** if a technical SAP user does not have authorization rights to access *ENLFDIR* table, a corresponding error appears. After confirming the error message, the user can **still** adjust the extraction settings.
-
 {% include _content/en/tables/extraction-settings.md  %}
 
 ***********
