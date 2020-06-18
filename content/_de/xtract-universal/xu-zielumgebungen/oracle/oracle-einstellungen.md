@@ -41,7 +41,6 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 Die Performance sinkt, wenn Bulk Insert deaktiviert ist.
 Deaktivieren Sie den Bulk Insert nur wenn es notwendig ist, z.B. auf Anfrage des Support-Teams.
 
-
 Durch das Anhaken des Kästchens **Disable bulk operations** wird der standardmäßige Bulk Insert beim Schreiben auf die Datenbank deaktiviert.
 
 Diese Option ermöglicht eine detaillierte Fehleranalyse, falls bestimmte Datenzeilen nicht auf der Datenbank persistiert werden können. 
@@ -52,7 +51,7 @@ Das Debugging sollte nach der erfolgreichen Fehleranalyse wieder deaktiviert wer
 #### Verwendung von Custom SQL
 
 {: .box-note }
-**Hinweis:** Bulk Operations werden beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) (z.B. bei *Row Processing*) grunsätzlich unterstützt, aber die Performance sind signifikant.
+**Hinweis:** Bulk Operations werden beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) (z.B. bei *Row Processing*) grunsätzlich in Oracle unterstützt.
 
 {: .box-tip }
 **Tip:** Um die Performance beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) zu steigern, wird empfohlen die Custom-Verarbeitung im *Finalization*-Schritt zu verwenden.

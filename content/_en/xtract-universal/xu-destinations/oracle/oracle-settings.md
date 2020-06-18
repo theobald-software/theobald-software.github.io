@@ -51,7 +51,7 @@ Debugging needs to be deactivated again after the successful error analysis, oth
 #### Using Custom SQL
 
 {: .box-note }
-**Note:** Bulk operations are generally supported when using [Custom SQL statements](#sql-commands) (e.g., by *Row Processing*), but the performance decreases significantly.
+**Note:** Bulk operations are generally supported when using [Custom SQL statements](#sql-commands) (e.g., by *Row Processing*) with Oracle.
 
 {: .box-tip }
 **Tip:** To increase performance when using [Custom SQL statements](#sql-commands), it is recommended to perform the custom processing in the *Finalization* step.
