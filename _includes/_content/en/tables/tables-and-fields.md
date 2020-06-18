@@ -57,6 +57,9 @@ After the conversion, the value is always displayed as it appears in the transac
 ### Preview
 The subsection *Preview* displays a real-time preview of the selected fields, when the button **"[Load live preview]** is clicked.
 
+{: .box-note }
+**Note:** Using non-indexed fields in the WHERE-clause can lead to timeouts during the preview of large tables.
+
 
 ### Buttons
 **[Load live preview]** <br>
