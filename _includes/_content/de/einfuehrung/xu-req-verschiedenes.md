@@ -20,7 +20,7 @@ Prüfen Sie den genauen Speicherbedarf einer Extraktion in Ihrem Szenario.
 Beispielsweise benötigt die BW-Cube-Komponente für die Extraktion und Verarbeitung der Daten mehr Hauptspeicherplatz als z.B. die Tabellenkomponente für die gleiche Datenmenge.--->
 
 #### Festplattenspeicher
-Für die Installation werden 150 MB Festplattenspeicher benötigt. Bei der Verwendung bestimmter Destinationen kann zusätzlicher Festplattenspeicher benötigt werden z.B. [Tableau](../xu-zielumgebungen/tableau/tableau-mit-data-extract/voraussetzungen).
+Für die Installation werden 150 MB Festplattenspeicher benötigt.
 
 #### 64-Bit-Umgebung	
 Das Produkt kann nur auf 64-Bit-Betriebssystemen installiert werden.
