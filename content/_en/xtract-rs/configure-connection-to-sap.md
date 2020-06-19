@@ -8,7 +8,7 @@ parent: xtract-rs
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /Xtract-RS-EN/default.aspx?pageid=configure-connection-to-sap
+Progressstate: 5
 ---
 
 The following section guides you through the creation of an SAP data source in the SQL Server Report Server (SSRS) environment. 
@@ -35,7 +35,7 @@ Server |Parameter | Example value
 ------------ |------------ | -------------
  Application | ApplicationHost | `saperp.theobald.local`
 <!----> | SystemNumber | `00`
-<!----> | LANG | `EN`
+<!----> | Language | `EN`
 <!----> | Client | `800`
 Secure Network Communication | SNCMode | `1` - enable
 <!----> | SNCPartnerName | `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL` - Partnername des konfigurierten SAP Systems
@@ -49,13 +49,12 @@ Message | MessageServer | `saperp.theobald.local`
 ### Connection String Examples: 
 #### SNC
 
-ApplicationHost=saperp.theobald.local;SystemNumber=00;LANG=EN;Client=800;SNCMode=1;
-SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2
+ `ApplicationHost=saperp.theobald.local;SystemNumber=00;Language=EN;Client=800;SNCMode=1;
+SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2 `
 
 #### Single Application Server
 
-LANG=EN;ApplicationHost=ec5.theobald-software.com;SystemNumber=00;Client=800
-
+ `ApplicationHost=ec5.theobald-software.com;SystemNumber=00;Language=EN;Client=800 `
 
 ### Downloading Kerberos DLLs
 
@@ -63,5 +62,3 @@ LANG=EN;ApplicationHost=ec5.theobald-software.com;SystemNumber=00;Client=800
 **Note:** You can download the relevant DLLs from the [SAP ONE Support Launchpad](https://launchpad.support.sap.com/#/notes/2115486).
 
 Store the Kerberos libraries in the following local path: `C:\SNC\gx64krb5.dll` (64-bit) and `C:\SNC\gsskrb5.dll` (32-bit).
-
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
