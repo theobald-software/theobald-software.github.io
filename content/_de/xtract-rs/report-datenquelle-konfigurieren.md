@@ -9,7 +9,7 @@ childidentifier: report-datenquelle-konfigurieren
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Xtract-RS-DE/default.aspx?pageid=report-datenquelle-konfigurieren
+progressstate: 5
 ---
 
 Der folgende Abschnitt führt durch die Neuanlage einer SAP Datenquelle im SQL Server Report Server (SSRS) Umfeld. 
@@ -50,12 +50,12 @@ Message | MessageServer | `saperp.theobald.local`
 ### Connection String Beispiele: 
 #### SNC
 
-ApplicationHost=saperp.theobald.local;SystemNumber=00;Language=EN;Client=800;SNCMode=1;
-SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2
+`ApplicationHost=saperp.theobald.local;SystemNumber=00;Language=EN;Client=800;SNCMode=1;
+SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2`
 
 #### Single Application Server
 
-Language=EN;ApplicationHost=ec5.theobald-software.com;SystemNumber=00;Client=800
+`ApplicationHost=ec5.theobald-software.com;SystemNumber=00;Language=EN;Client=800`
 
 
 ### Die Kerberos DLLs herunterladen
