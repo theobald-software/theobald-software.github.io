@@ -8,6 +8,7 @@ parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
+progresstate: 5
 ---
 
 {% include _content/en/odp/odp-settings-update_mode.md %} 
