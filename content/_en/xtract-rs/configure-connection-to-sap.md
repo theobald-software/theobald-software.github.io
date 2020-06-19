@@ -28,6 +28,7 @@ After installation the Xtract RS data source type can be used in the Reporting S
 9. Click **[OK]** to confirm.
 
 ### Connection String Parameter 
+
 {: .box-note }
 **Note:** For more information, see the official [SAP documentation](https://help.sap.com/doc/saphelp_nwes72/7.2.3/de-DE/44/0ebf6c9b2b0d1ae10000000a114a6b/content.htm?no_cache=true).
 
