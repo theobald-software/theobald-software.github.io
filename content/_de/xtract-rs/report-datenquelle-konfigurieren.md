@@ -36,7 +36,7 @@ Server |Parameter | Beispielwert
 ------------ |------------ | -------------
  Application | ApplicationHost | `saperp.theobald.local`
 <!----> | SystemNumber | `00`
-<!----> | LANG | `EN`
+<!----> | Language | `EN`
 <!----> | Client | `800`
 Secure Network Communication | SNCMode | `1` - enable
 <!----> | SNCPartnerName | `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL` - Partnername des konfigurierten SAP Systems
@@ -50,12 +50,12 @@ Message | MessageServer | `saperp.theobald.local`
 ### Connection String Beispiele: 
 #### SNC
 
-ApplicationHost=saperp.theobald.local;SystemNumber=00;LANG=EN;Client=800;SNCMode=1;
+ApplicationHost=saperp.theobald.local;SystemNumber=00;Language=EN;Client=800;SNCMode=1;
 SNCPartnerName=p:SAPserviceERP/do_not_care@THEOBALD.LOCAL;SNCLibrary="C:\SNC\gsskrb5.dll";SSOType=2
 
 #### Single Application Server
 
-LANG=EN;ApplicationHost=ec5.theobald-software.com;SystemNumber=00;Client=800
+Language=EN;ApplicationHost=ec5.theobald-software.com;SystemNumber=00;Client=800
 
 
 ### Die Kerberos DLLs herunterladen
