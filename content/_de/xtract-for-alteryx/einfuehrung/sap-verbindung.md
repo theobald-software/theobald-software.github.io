@@ -113,8 +113,7 @@ Die SAP-Verbindung ist erfolgreich aufgebaut.
 
 ****
 #### Weiterführende Links
-- [Extraktion mit Xtract Table - Anwendungsfall](./use-case-extraction-with-table)
 - [Xract ODP](../odp)
-- [Xtract Hierarchy](../bwhierarchy)
+- [Xtract Hierarchy](../bw-hierarchien)
 - [Xtract Cube](../bw-cube)
 - [Xtract BAPI](../bapi)
