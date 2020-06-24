@@ -18,7 +18,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=settings4
 The following settings can be defined for the destination:  
 
 ### Destination Settings
-
+![ext_spec_set_de_form](/img/content/ext_spec_set_de_form_debug.png)){:class="img-responsive"}
 {% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
 
 ### Column name style

@@ -33,3 +33,8 @@ The following settings can be defined for the destination:
 {% include _content/en/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/transaction-style.md %}
+
+****
+#### Related Links
+- [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) 
+- [Merging data](./merging-data)

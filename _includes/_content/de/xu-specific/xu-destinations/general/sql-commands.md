@@ -39,57 +39,45 @@ Definiert die Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle
 
 
 #### Über Merging
-
-Die Voraussetzung ist, dass Sie eine Tabelle haben, in die Sie die neu kommende Daten mit den vorhandenen Daten zusammenführen (Merge) wollen.<br>
-Diese Tabelle haben Sie idealerweise im ersten Lauf mit der entsprechenden Preparation-Option angelegt und mit der Row Processing-Option Insert mit Daten befüllt.
-
-In den weiteren Läufen wollen Sie nun die neuen Datensätze mit den bestehenden mergen. 
-Daher setzen Sie die folgenden Optionen: 
-- Preparation auf *Prepare Merge*, 
-- Row Processing auf  *Fill merge staging table* und 
-- Finalization auf *Finalize Merge*.
-
-Der Merge-Vorgang wird mittels einer Staging-Tabelle durchgeführt und findet in drei Schritten statt.<br>
-Im ersten Schritt wird eine temporäre Tabelle angelegt, in welche die Daten im zweiten Schritt eingefügt werden.<br>
-Im dritten Schritt wird dann die temporäre Tabelle mit der Zieltabelle gemergt und anschließend die temporäre Tabelle gelöscht.
-
-![Destination-Exa-Makt-Merge](/img/content/Destination-Exa-Makt-Merge.png){:class="img-responsive"}
-
-Der Merge-Befehl aktualisiert vorhandene Datensätze bzw. fügt nicht vorhandene ein. Welche Felder aktualisiert werden, kann man dem SQL-Statement entnehmen.<br>
-Der SQL-Befehl kann bei Bedarf geändert werden, um z.B. bestimmte Spalten von der Aktualisierung auszuschließen.<br>
-Felder, welche nicht im SQL-Statement auftauchen, sind von Änderungen nicht betroffen.
-
-Es ist wichtig, dass ein entsprechender Index angelegt ist, um den Merge-Befehl schnell auszuführen. 
-Ohne einen Index würde die Ausführung des Merge-Befehls abhängig von der Datenmenge lange dauern.
-
+Die Zusammenführung gewährleistet eine Deltaverarbeitung: neue Datensätze werden in die Datenbank eingefügt und/oder bestehende Datensätze werden aktualisiert. 
+Mehr Details im Abschnitt [Daten zusammenführen (mergen)](./daten-mergen).
 
 
 #### Custom SQL 
 
-Hier können Sie eigene SQL- bzw. Skript-Ausdrücke definieren. Bestehende SQL-Befehle können Sie als Vorlage verwenden. 
+Die Option Custom SQL ermöglicht die Erstellung benutzerdefinierter SQL- oder Skriptausdrücke. Vorhandene SQL-Befehle können 
+als Vorlagen verwendet werden:
 
-Im folgenden [Link](../microsoft-sql-server/sql-server-custom-sql) finden Sie ein Beispiel für die Verwendung von vordefinierten Ausdrücken. 
-> **Note:** Eine syntaktische Anpassung des Codes ist für andere DB Zielumgebungen notwendig!
+1. Wählen Sie im Unterabschnitt z.B. **Preparation** die Option **Custom SQL** (1) aus der Dropdown-Liste.
+2. Klicken Sie auf **[Edit SQL]**. Das Fenster "Edit SQL" wird geöffnet.
+3. Navigieren Sie zum Dropdown-Menü und wählen Sie einen vorhandenen Befehl (3). 
+4. Klicken Sie auf **[Generate Statement]**. Eine neue Anweisung wird generiert.
+5. Kopieren Sie die Erklärung zur weiteren Verwendung und klicken Sie zur Bestätigung auf **[OK]**.
 
+![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 
+Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](../microsoft-sql-sql-server/sql-server-custom-sql).
+
+{:.box-note}
+**Note:** Der benutzerdefinierte SQL-Code wird für SQL Server-Destinationen verwendet. 
+Um den benutzerdefinierten SQL-Code für andere Datenbank-Destinationen zu verwenden, ist eine syntaktische Anpassung des Codes erforderlich.
 
 #### Vorlagen
 
 Sie können eigene SQL-Ausdrücke schreiben und haben damit die Möglichkeit, das Laden der Daten an Ihre Bedürfnisse anzupassen. <br>
-Darüber hinaus können Sie z.B. auch auf der Datenbank bestehende Stored Procedures ausführen.
-Dafür können Sie die angeboten SQL-Vorlagen der folgenden Phasen verwenden:
+Darüber hinaus können Sie z.B. auch auf der Datenbank bestehende "Stored Procedures" ausführen.
+Dafür können Sie die vordefinierten SQL-Vorlagen der folgenden Phasen verwenden:
 - *Preparation (z.B. Drop & Create oder Create if Not Exists)* 
 - *Row Processing (z.B. Insert oder Merge)* und 
-- *Finalization*.
+- *Finalization*
 
 
 #### Skript-Ausdrücke
 
-Für den Custom SQL-Befehl können Sie nun auch Skript-Ausdrücke einsetzen. Weitere Infos finden Sie auf der Seite Skript-Ausdrücke (unter Fortgeschrittene Techniken).
+Sie können [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) für die Custom-SQL-Befehle verwenden.
 
-![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
-
-Unter anderem können Sie den Befehl *ExistsTable(tableName)* verwenden, um die Existenz einer Tabelle zu überprüfen. Diese Funktion wurde eingeführt, da manche Datenbanksysteme dies nur unter Einschränkung unterstützen.
+{:.box-tip}
+**Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.
 
 <details>
 <summary>SQL-Skript</summary>

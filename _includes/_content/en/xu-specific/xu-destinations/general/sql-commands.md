@@ -40,39 +40,43 @@ Defines the action on the target database after the data has been successfully i
 
 #### About Merging
 Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
-See section [merging data](./merging-data)
+See section [merging data](./merging-data).
 
 
 #### Custom SQL
 
-Custom SQL option allows creating own SQL or script expressions. Existing SQL commands can be used as templates. 
+Custom SQL option allows creating user-defined SQL or script expressions. Existing SQL commands can 
+be used as templates:
 
-See [Microsoft example](../microsoft-sql-server/sql-server-custom-sql) to understand how to use predefined expressions.
+1. Within subsection e.g., **Preparation** select the **Custom SQL** (1) option from the drop-down list.
+2. Click **[Edit SQL]**. The window "Edit SQL" opens.
+3. Navigate to the drop-down menu and select an existing command (3). 
+4. Click **[Generate Statement]**. A new statement is generated.
+5. Copy the statement for further use and click **[OK]** to confirm.
+ 
+![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
+
+Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-custom-sql) for details on predefined expressions.
 
 {:.box-note}
-**Note:** the custom SQL code is used for SQL Server target environments. 
-A syntactic adaptation of the code is necessary for other DB target environments.
-
-See section [Custom SQL](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql) for more details.
-
+**Note:** the custom SQL code is used for SQL Server destinations. A syntactic adaptation of the code is necessary to use the custom SQL code for other database destinations.
 
 #### Templates
 
-You can write your own SQL expressions and thus have the possibility to adapt the loading of the data to your needs. <br>
-You can also, for example, execute stored procedures that exist in the database.
-To do this, you can use the SQL templates provided in the following phases:
-- *Preparation (e.g. Drop & Create or Create if Not Exists)* 
-- *Row Processing (e.g. Insert or Merge)* and 
-- *Finalization*.
+You can write your user-defined SQL expressions and adapt the loading of the data to your needs. <br>
+You can additionally execute stored procedures that exist in the database.
+To do so, use the SQL templates provided in the following phases:
+- *Preparation (e.g., Drop & Create or Create if Not Exists)* 
+- *Row Processing (e.g., Insert or Merge)*  
+- *Finalization*
 
 
 #### Script Expressions
 
-You can now also use script expressions for the Custom SQL command. You can find more information on the Script Expressions page (under Advanced Techniques).
+You can use [script expressions](../advanced-techniques/script-expressions) for the Custom SQL commands.
 
-![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
-
-Among other things, you can use the *ExistsTable(tableName)* command to verify the existence of a table. This function was introduced because some database systems only support this to a limited extent.
+{:.box-tip}
+**Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.
 
 <details>
 <summary>SQL-Skript</summary>
