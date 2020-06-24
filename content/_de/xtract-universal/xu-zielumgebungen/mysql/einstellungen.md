@@ -20,7 +20,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
   
 ### Destination Settings - Destinationseinstellungen
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form.png){:class="img-responsive"}
+![ext_spec_set_de_form](/img/content/ext_spec_set_de_form_debug.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
 ### Column name style
