@@ -20,8 +20,8 @@ Debugging needs to be deactivated again after the successful error analysis, oth
 #### Using Custom SQL
 
 {: .box-note }
-**Note:** Bulk operations are not supported when using [Custom SQL statements](#sql-commands) (e.g., by *Row Processing*), which leads to 
+**Note:** Bulk operations are not supported when using [Custom SQL statements](#custom-sql) (e.g., by *Row Processing*), which leads to 
 performance decrease. 
 
 {: .box-tip }
-**Tip:** To increase performance when using [Custom SQL statements](#sql-commands), it is recommended to perform the custom processing in the *Finalization* step.
+**Tip:** To increase performance when using [Custom SQL statements](#custom-sql), it is recommended to perform the custom processing in the *Finalization* step.

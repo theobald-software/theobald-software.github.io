@@ -19,7 +19,7 @@ Das Debugging sollte nach der erfolgreichen Fehleranalyse wieder deaktiviert wer
 #### Verwendung von Custom SQL
 
 {: .box-note }
-**Hinweis:** Bulk Operations werden beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) (z.B. bei *Row Processing*) nicht unterstützt. Dies führt zu Performance-Verlust (Leistungseinbußen).
+**Hinweis:** Bulk Operations werden beim Verwenden von [Custom SQL Anweisungen](#custom-sql) (z.B. bei *Row Processing*) nicht unterstützt. Dies führt zu Performance-Verlust (Leistungseinbußen).
 
 {: .box-tip }
-**Tip:** Um die Performance beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) zu steigern, wird empfohlen die Custom-Verarbeitung im *Finalization*-Schritt zu verwenden.
+**Tip:** Um die Performance beim Verwenden von [Custom SQL Anweisungen](#custom-sql) zu steigern, wird empfohlen die Custom-Verarbeitung im *Finalization*-Schritt zu verwenden.
