@@ -1,8 +1,5 @@
 
-### SQL Commands
-
-
-#### Preparation
+### Preparation - SQL Commands
 
 Defines the action on the target database before the data is inserted into the target table.
 - *Drop & Create*: Remove table if available and create new table (default).
@@ -20,7 +17,7 @@ Once the table is created, it is up to you to change the table definition,
 by, for example, creating corresponding key fields and indexes or additional fields.
 
 
-#### Row Processing
+### Row Processing
 
 Defines how the data is inserted into the target table.
 - *Insert*: Insert records (default).
@@ -30,7 +27,7 @@ Defines how the data is inserted into the target table.
 - *Merge (deprecated)*: This option is obsolete. Please use the Fill merge staging table option and check the About Merging section. 
 
 
-#### Finalization
+### Finalization
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
 - *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example.  
