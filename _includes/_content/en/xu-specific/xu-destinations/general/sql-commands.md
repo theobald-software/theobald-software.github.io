@@ -70,7 +70,7 @@ To do so, use the SQL templates provided in the following phases:
 
 #### Script Expressions
 
-You can use [script expressions](../advanced-techniques/script-expressions) for the Custom SQL commands.
+You can use [script expressions](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/script-expressions) for the Custom SQL commands.
 
 {:.box-tip}
 **Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.
