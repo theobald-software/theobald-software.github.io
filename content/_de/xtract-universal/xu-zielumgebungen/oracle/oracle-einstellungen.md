@@ -50,7 +50,7 @@ Das Debugging sollte nach der erfolgreichen Fehleranalyse wieder deaktiviert wer
 #### Verwendung von Custom SQL
 
 {: .box-note }
-**Hinweis:** Bulk Operations werden beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) (z.B. bei *Row Processing*) grunsätzlich in Oracle unterstützt.
+**Hinweis:** Bulk Operations werden grundsätzlich beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) (z.B. bei *Row Processing*) mit Oracle Destination unterstützt.
 
 {: .box-tip }
 **Tip:** Um die Performance beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) zu steigern, wird empfohlen die Custom-Verarbeitung im *Finalization*-Schritt zu verwenden.
