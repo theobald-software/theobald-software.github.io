@@ -40,7 +40,7 @@ Die Zusammenführung gewährleistet eine Deltaverarbeitung: neue Datensätze wer
 Mehr Details im Abschnitt [Daten zusammenführen (mergen)](./daten-mergen).
 
 
-#### Custom SQL 
+### Custom SQL 
 
 Die Option Custom SQL ermöglicht die Erstellung benutzerdefinierter SQL- oder Skriptausdrücke. Vorhandene SQL-Befehle können 
 als Vorlagen verwendet werden:

@@ -40,7 +40,7 @@ Merging ensures delta processing: new records are inserted into the database and
 See section [merging data](./merging-data).
 
 
-#### Custom SQL
+### Custom SQL
 
 Custom SQL option allows creating user-defined SQL or script expressions. Existing SQL commands can 
 be used as templates:
