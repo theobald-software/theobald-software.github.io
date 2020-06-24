@@ -20,7 +20,6 @@ The following settings can be defined for the destination:
 
 ### Destination Settings
 
-
 ![XU_S3_DestinationEinstellungen](/img/content/XU_S3_DestinationEinstellungen.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
