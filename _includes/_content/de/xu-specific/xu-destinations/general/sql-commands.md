@@ -71,7 +71,7 @@ Dafür können Sie die vordefinierten SQL-Vorlagen der folgenden Phasen verwende
 
 #### Skript-Ausdrücke
 
-Sie können [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) für die Custom-SQL-Befehle verwenden.
+Sie können [Skript-Ausdrücke](.../fortgeschrittene-techniken/script-ausdruecke) für die Custom-SQL-Befehle verwenden.
 
 {:.box-tip}
 **Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.

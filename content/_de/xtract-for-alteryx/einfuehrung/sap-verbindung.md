@@ -116,4 +116,4 @@ Die SAP-Verbindung ist erfolgreich aufgebaut.
 - [Xract ODP](../odp)
 - [Xtract Hierarchy](../bw-hierarchien)
 - [Xtract Cube](../bw-cube)
-- [Xtract BAPI](../bapi)
+- [Xtract BAPI](../bapis-und-funktionsbausteine)
