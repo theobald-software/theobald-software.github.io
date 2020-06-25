@@ -22,7 +22,7 @@ Exit | Beendet den Designer | -
 
 Menüeintrag |Beschreibung | Details
 ------------ | ------------ | -------------
-New  | Neue Extraktion anlegen | [Eine neue Extraktion anlegen](../erste-schritte-mit-xu/eine-neue-extraktion-anlegen)
+New  | Neue Extraktion anlegen | [Defining a Table Extraction](../getting-started-xu/define-a-table-extraction)
 Edit | Vorhandene Extraktion bearbeiten | -
 Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
@@ -83,6 +83,9 @@ Destination | Destination auswählen  |
 Log | Extraktions-Log aufrufen  |
 Run  | Ausgewählte Extraktion ausführen  | 
 
+*****
+### Weiterführende Links
+- [Xtract Universal Sever](./server)
 
 
 
