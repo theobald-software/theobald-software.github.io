@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-02
+ref: xu-getting-started-xu-03
 layout: page
-title: 2. Eine neue Extraktion anlegen
+title: Eine neue Extraktion anlegen
 description: 2 - Eine neue Extraktion anlegen
 product: xtract-universal
-parent: erste-schritte-mit-table
+parent: erste-schritte-mit-xu
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-01
+ref: xu-getting-started-xu-02
 layout: page
-title: 1. Connecting Xtract Universal Designer with Xtract Universal Server
+title: Connecting Xtract Universal Designer with Xtract Universal Server
 description:  1. Connecting the designer with the server
 product: xtract-universal
-parent: getting-started-table
+parent: getting-started-xu
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

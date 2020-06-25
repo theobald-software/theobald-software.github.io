@@ -1,11 +1,11 @@
 ---
 ref: xtract-universal-03
 layout: page
-title: Getting started with Xtract Table
+title: Getting Started with Xtract Universal
 description: Getting Started with Table
 product: xtract-universal
 parent: xtract-universal
-childidentifier: getting-started-table
+childidentifier: getting-started-xu
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

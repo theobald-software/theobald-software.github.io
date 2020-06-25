@@ -12,7 +12,7 @@ lang: de_DE
 
 ### Destination Settings öffnen
 
-1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an (siehe auch [Erste Schritte mit Xtract Table](../../erste-schritte-mit-table/eine-neue-extraktion-anlegen)).
+1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte-mit-xu/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

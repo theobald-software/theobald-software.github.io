@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=odata_destination_setzen
 progressstate: 5
 ---
 ### OData-Destination setzen
-**Voraussetung:** Eine Extraktion ist angelegt (siehe [Eine neue Extraktion anlegen](../../erste-schritte-mit-table/eine-neue-extraktion-anlegen)).
+**Voraussetung:** Eine Extraktion ist angelegt (siehe [Eine neue Extraktion anlegen](../../erste-schritte-mit-xu/eine-neue-extraktion-anlegen)).
 
 1. Im Hauptfenster des Designers, navigieren Sie zum Menüpunkt **Server > Manage Destinations**.
 2. Definieren Sie die standardmäßige http-odata-atom-Destination (siehe [Ziele verwalten](../ziele-verwalten) und [OData](../odata-atom) ).

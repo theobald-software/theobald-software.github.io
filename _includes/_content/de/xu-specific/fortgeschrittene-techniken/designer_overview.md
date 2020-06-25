@@ -1,4 +1,10 @@
-Der Designer bietet verschiedenen Funktionalitäten für eine Extraktion. Einfache und selbsterklärende Funktionen werden nicht beschrieben. 
+
+Das Hauptfenster vom Designer besteht aus drei Hauptabschnitten:
+- Hauptmenüleiste (1)
+- GUI-Schaltflächen (2)
+- Auflistung der Extraktionen (3)
+
+## Hauptmenüleiste
 
 ### Designer
 
@@ -63,5 +69,4 @@ Support Client | ... | <!---->
 Info | SAP Quellsystem auswählen | <!---->
 Version History | Destination auswählen | [Zielumgebungen](../xu-zielumgebungen)
 
-
-
+## GUI-Schaltflächen

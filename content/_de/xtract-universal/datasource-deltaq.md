@@ -20,6 +20,6 @@ DeltaQ ist eine veraltete Komponente. Verwenden Sie, wenn möglich, die neuere K
 Dieser Abschnitt beschreibt die Verwendung der DeltaQ Komponente von Xtract Universal. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt Xtract Universal sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
+**Tipp:** Grundlagen zum Produkt Xtract Universal sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xu) beschrieben.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

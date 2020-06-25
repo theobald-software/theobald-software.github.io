@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-03
+ref: xu-getting-started-xu-04
 layout: page
-title:  3. Runing an extraction
+title:  Runing an extraction
 description: Step 3 - Run an Extraction
 product: xtract-universal
-parent: getting-started-table
+parent: getting-started-xu
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

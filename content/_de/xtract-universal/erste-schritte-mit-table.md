@@ -1,11 +1,11 @@
 ---
 ref: xtract-universal-03
 layout: page
-title: Erste Schritte mit Xtract Table
-description: Erste Schritte mit Xtract Table
+title: Erste Schritte mit Xtract Universal
+description: Erste Schritte mit Xtract Universal
 product: xtract-universal
 parent: xtract-universal
-childidentifier: erste-schritte-mit-table
+childidentifier: erste-schritte-mit-xu
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-02
+ref: xu-getting-started-xu-03
 layout: page
-title: 2. Defining a table extraction
+title: Defining a Table Extraction
 description: Step 2 - Define a Table Extraction
 product: xtract-universal
-parent: getting-started-table
+parent: getting-started-xu
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
@@ -27,6 +27,31 @@ The window "Create Extraction" opens. <br>
 
 The window "Define data source for SAP Tables" opens. 
 In this window you can define simple table extractions or join tables for extractions. In the following example, a single table is extracted. <br>
+																							  
+											
+																				 
 
 {% include _content/en/tables/define-a-table-extraction.md  %}
+																																	   
+																		  
+									 
+								   
+									   
+											 
+																			  
+																																			  
+
+			  
+																																																																 
+
+
+												
+																																														 
+
+																										 
+
+						   
+
+																																																																	   
+
 
