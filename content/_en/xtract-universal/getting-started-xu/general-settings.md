@@ -1,12 +1,12 @@
 ---
-ref: xu-advanced-techniques-04
+ref: xu-getting-started-xu-06
 layout: page
 title: General Settings
 description: General Settings
 product: xtract-universal
-parent: advanced-techniques
+parent: getting-started-xu
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=general-settings-of-the-extractions
 progressstate: 5

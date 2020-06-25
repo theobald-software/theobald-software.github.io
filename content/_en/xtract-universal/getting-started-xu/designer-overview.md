@@ -1,14 +1,15 @@
 ---
-ref: xu-getting-started-xu-01
+ref: xu-getting-started-xu-05
 layout: page
-title: Xtract Universal Designer - Main Window Overview
+title: Designer - Main Window Overview
 description: Additional Functions in Designer
 product: xtract-universal
-parent: advanced-techniques
+parent: getting-started-xu
 permalink: /:collection/:path
-weight: 1
+weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=additional-functions-in-designer
+progessstate: 5
 ---
 
 The Designer features different functionalities for an extraction. Simple and self-explanatory functions are not described. 

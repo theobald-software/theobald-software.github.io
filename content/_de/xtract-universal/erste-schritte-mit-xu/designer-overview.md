@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-xu-01
+ref: xu-getting-started-xu-05
 layout: page
-title: Xtract Universal Designer - Hauptfenster Übersicht 
+title: Designer - Hauptfenster Übersicht 
 description: Zusätzliche Funktionen im Designer
 product: xtract-universal
 parent: erste-schritte-mit-xu
 permalink: /:collection/:path
-weight: 1
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
 ---

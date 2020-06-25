@@ -1,13 +1,14 @@
 ---
-ref: xu-getting-started-xu-04
+ref: xu-getting-started-xu-03
 layout: page
-title:  Runing an extraction
+title:  3. Running an Extraction
 description: Step 3 - Run an Extraction
 product: xtract-universal
 parent: getting-started-xu
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+progressstate: 5
 ---
 
 This step is optional and shows how to display the extraction result in a web browser to make sure that the extraction runs properly and delivers the appropriate result.

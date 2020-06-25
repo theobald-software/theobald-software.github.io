@@ -1,7 +1,7 @@
 ---
-ref: xu-getting-started-xu-04
+ref: xu-getting-started-xu-03
 layout: page
-title: Eine Extraktion ausführen
+title: 3. Eine Extraktion ausführen
 description: Schritt 3 - Eine Extraktion ausführen
 product: xtract-universal
 parent: erste-schritte-mit-xu
