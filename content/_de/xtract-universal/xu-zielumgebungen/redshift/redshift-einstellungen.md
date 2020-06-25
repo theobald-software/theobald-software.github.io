@@ -1,3 +1,4 @@
+
 ---
 ref: xu-amzon-redshift-03
 layout: page
@@ -9,6 +10,8 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=redshift-einstellungen
+progressstate: 5
+
 ---
 ### Destination Settings öffnen
 

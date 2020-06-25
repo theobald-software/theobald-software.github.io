@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen4
+progressstate: 5
 ---
 
 ### Destination Settings öffnen

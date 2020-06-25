@@ -8,6 +8,7 @@ parent: postgreSQL
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+progressstate: 5
 ---
 
 ### Opening the Destination Settings

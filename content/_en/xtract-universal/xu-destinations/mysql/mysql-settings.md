@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=mysql-settings
+progressstate: 5
 ---
 
 ### Opening the Destination Settings

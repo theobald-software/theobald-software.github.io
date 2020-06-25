@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=db2-settings
+progressstate: 5
 ---
 ### Opening the Destination Settings
 1. Create or select an existing extraction (see also [Getting Started with Table](../../getting-started-table/define-a-table-extraction)).
