@@ -1,0 +1,922 @@
+[33m049f69c93c5b1994c66ea87218021123b195425f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull --verbose --progress origin master: Fast-forward
+[33meab59acc6db0754894e729fdf3474a98439bf871[m HEAD@{1}: commit: xfa sap connection
+[33ma7491a84538596e398dda63a1e8346d67718d168[m HEAD@{2}: checkout: moving from xfa_kebranch to master
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{3}: reset: moving to HEAD
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{4}: checkout: moving from master to xfa_kebranch
+[33ma7491a84538596e398dda63a1e8346d67718d168[m HEAD@{5}: reset: moving to HEAD
+[33ma7491a84538596e398dda63a1e8346d67718d168[m HEAD@{6}: commit: img dead link
+[33mc7253259fdbfc8b95ccb833969e460f440cb2a2a[m HEAD@{7}: checkout: moving from xfa_migration to master
+[33m644a228b173442834a1cde61342fd2ac9f266d91[m[33m ([m[1;32mxfa_migration[m[33m)[m HEAD@{8}: checkout: moving from xfa_kebranch to xfa_migration
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{9}: checkout: moving from master to xfa_kebranch
+[33mc7253259fdbfc8b95ccb833969e460f440cb2a2a[m HEAD@{10}: pull --verbose --progress origin master: Fast-forward
+[33m644a228b173442834a1cde61342fd2ac9f266d91[m[33m ([m[1;32mxfa_migration[m[33m)[m HEAD@{11}: checkout: moving from xfa_kebranch to master
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{12}: checkout: moving from xfa_migration to xfa_kebranch
+[33m644a228b173442834a1cde61342fd2ac9f266d91[m[33m ([m[1;32mxfa_migration[m[33m)[m HEAD@{13}: checkout: moving from master to xfa_migration
+[33m644a228b173442834a1cde61342fd2ac9f266d91[m[33m ([m[1;32mxfa_migration[m[33m)[m HEAD@{14}: commit: subscriptions screenshot
+[33m3a1a072a7696ffa5ef4a83940bc186c5de9a17cd[m HEAD@{15}: pull --verbose --progress origin master: Fast-forward
+[33m4d477f4d5069c9aa4fb6c31e919d18988f0c8477[m HEAD@{16}: checkout: moving from xfa_kebranch to master
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{17}: checkout: moving from master to xfa_kebranch
+[33m4d477f4d5069c9aa4fb6c31e919d18988f0c8477[m HEAD@{18}: pull --verbose --progress origin master: Fast-forward
+[33mead79c5afc20e54e23a48629cbac1f550da87d50[m HEAD@{19}: checkout: moving from bulk-insert-warning to master
+[33m372bc8bc4e1800e5dc066abcc5cb862b69968a16[m HEAD@{20}: commit: grammar subject
+[33md2fa3aaa2af6bcefa0eab1575880a21696efa028[m HEAD@{21}: commit: grammar
+[33m1456d9d0f67fdd723b88c0f5ab4799d73c8c1490[m HEAD@{22}: pull --verbose --progress origin bulk-insert-warning: Fast-forward
+[33mf8bfddb677b7e1915c86c1cb8260bdcfc5c097c0[m HEAD@{23}: checkout: moving from master to bulk-insert-warning
+[33mead79c5afc20e54e23a48629cbac1f550da87d50[m HEAD@{24}: commit: dead link
+[33m77d78c393a0768d3cd611b659b32017f8efa89f2[m HEAD@{25}: commit: best practices removed to kb
+[33me47e0a10b11aaf216ced8e36f2e96355fc224fcb[m HEAD@{26}: pull --verbose --progress origin master: Fast-forward
+[33mca77ca825845c39a1453e5278b235ae0d686ac6a[m HEAD@{27}: merge origin/xis-properties-2: Merge made by the 'recursive' strategy.
+[33mad6bd37c993fe58d79e43a3cf69c241c7b955c7a[m HEAD@{28}: checkout: moving from xis-properties-2 to master
+[33me89760415a6b04850d460bff245ce7730cdbdb49[m[33m ([m[1;31morigin/xis-properties-2[m[33m, [m[1;32mxis-properties-2[m[33m)[m HEAD@{29}: commit: warning enlfdir
+[33mfcf61c2c88651e6d2a8af3245365404120a647c7[m HEAD@{30}: commit: related links kb article
+[33me8265dd2faed388b8c103c4a3c4acfde3666bc32[m HEAD@{31}: checkout: moving from master to xis-properties-2
+[33mad6bd37c993fe58d79e43a3cf69c241c7b955c7a[m HEAD@{32}: checkout: moving from xis-properties-2 to master
+[33me8265dd2faed388b8c103c4a3c4acfde3666bc32[m HEAD@{33}: commit: extraction settings warning ENLFDIR
+[33ma0a1d16d1cc987094fde3d4f15b0fbf36b1a4a17[m HEAD@{34}: checkout: moving from master to xis-properties-2
+[33mad6bd37c993fe58d79e43a3cf69c241c7b955c7a[m HEAD@{35}: pull --verbose --progress origin master: Fast-forward
+[33mf5b1b5219924b204d92db343af15a07a98fe2b88[m HEAD@{36}: checkout: moving from xis-properties-2 to master
+[33ma0a1d16d1cc987094fde3d4f15b0fbf36b1a4a17[m HEAD@{37}: commit: properties xis
+[33mf5b1b5219924b204d92db343af15a07a98fe2b88[m HEAD@{38}: checkout: moving from master to xis-properties-2
+[33mf5b1b5219924b204d92db343af15a07a98fe2b88[m HEAD@{39}: pull --verbose --progress origin master: Fast-forward
+[33mc6eec235444e7324e8257fe2e04aacfa8fe5d2de[m HEAD@{40}: checkout: moving from xis-properties to master
+[33ma88aa7ae48fef975b1c0e97e3892b817bdde2069[m HEAD@{41}: checkout: moving from master to xis-properties
+[33mc6eec235444e7324e8257fe2e04aacfa8fe5d2de[m HEAD@{42}: commit: dead links
+[33md78d03bfbb54733c9d4f1c64e1877296a4a76ded[m HEAD@{43}: pull --verbose --progress origin master: Fast-forward
+[33m677bf83ae3ade42c5bd2bbdaf0ee07c16d6beb6e[m HEAD@{44}: checkout: moving from xis-properties to master
+[33ma88aa7ae48fef975b1c0e97e3892b817bdde2069[m HEAD@{45}: commit: xis-properties
+[33m677bf83ae3ade42c5bd2bbdaf0ee07c16d6beb6e[m HEAD@{46}: checkout: moving from master to xis-properties
+[33m677bf83ae3ade42c5bd2bbdaf0ee07c16d6beb6e[m HEAD@{47}: pull --verbose --progress origin master: Fast-forward
+[33m4c5247f895c9e5c679616b193702a4a915166671[m HEAD@{48}: checkout: moving from bulk-insert-warning to master
+[33mf8bfddb677b7e1915c86c1cb8260bdcfc5c097c0[m HEAD@{49}: commit: bulk insert warnings
+[33m4c5247f895c9e5c679616b193702a4a915166671[m HEAD@{50}: checkout: moving from master to bulk-insert-warning
+[33m4c5247f895c9e5c679616b193702a4a915166671[m HEAD@{51}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33m6cc5a7ed234ba83db3646bf669ea8d89c73d29c5[m HEAD@{52}: commit: img edit
+[33m1c1c8fb867f4bc54dd3f818591dd782ae699af69[m HEAD@{53}: commit: xu interface
+[33m7ec5f88a0cd04ae1e6c8e84331f40d9f8dbf1315[m HEAD@{54}: commit: xu interface
+[33m9a88fee14c088eefb9f71beea28f4a6aeee37ded[m HEAD@{55}: commit: xu new interface
+[33me9217caac967312ec9cd37b19eb62a209297add1[m HEAD@{56}: commit: xu interface
+[33mbf89f6467398565f84a78538fdd58c434bce896b[m HEAD@{57}: commit: editorial
+[33m5fbd22352763f2f0d78307da18e77bef66ae4c34[m HEAD@{58}: commit: img xu interface
+[33m2966376459b6e9585085da789cfcc9a5f1c68e93[m HEAD@{59}: commit: spacing test reverse
+[33m9f4e9c3ea9a5227114af3840d0ab66e98fdf94b8[m HEAD@{60}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33m1b4bc2b314290e0d44d3f1e1cd2747dcc0bd6f07[m HEAD@{61}: commit: test, abstand
+[33m1737fa3fae11335f3fafe396b63e450ed6db6dc2[m HEAD@{62}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33me878fc7e385323c36c213686bd519e7810eb2dd8[m HEAD@{63}: commit: xu new screens
+[33m886ec09b5f1004484dd116cf38b1d7a3908e3c56[m HEAD@{64}: commit: xu in bc ersetzt
+[33mb9b431e70b03f105627a277fb9de485d88ad23a6[m HEAD@{65}: commit: editorial
+[33m6193ba5f1fe347a6284ea781d96592f4ced191ba[m HEAD@{66}: merge origin/http_log: Merge made by the 'recursive' strategy.
+[33m89d40ea17d85e5df79be4a497c0e26ece487a1db[m HEAD@{67}: checkout: moving from http_log to master
+[33m0b2a0242be733c7a8f747ee2314de36c2e40b4df[m[33m ([m[1;31morigin/http_log[m[33m, [m[1;32mhttp_log[m[33m)[m HEAD@{68}: commit: translation logging http
+[33m9307746bdc1fb9fc3b8b161df811b490cb57ecfc[m HEAD@{69}: checkout: moving from master to http_log
+[33m89d40ea17d85e5df79be4a497c0e26ece487a1db[m HEAD@{70}: commit: new xu interface
+[33m1d9dd5960dbdd05c53a692c28484eb4ae7c774bf[m HEAD@{71}: checkout: moving from http_log to master
+[33m9307746bdc1fb9fc3b8b161df811b490cb57ecfc[m HEAD@{72}: reset: moving to HEAD
+[33m9307746bdc1fb9fc3b8b161df811b490cb57ecfc[m HEAD@{73}: commit: review 2
+[33m92731824d9406432e4842f39624f6e9b004d33bd[m HEAD@{74}: checkout: moving from master to http_log
+[33m1d9dd5960dbdd05c53a692c28484eb4ae7c774bf[m HEAD@{75}: reset: moving to HEAD
+[33m1d9dd5960dbdd05c53a692c28484eb4ae7c774bf[m HEAD@{76}: checkout: moving from http_log to master
+[33m92731824d9406432e4842f39624f6e9b004d33bd[m HEAD@{77}: commit: review 1
+[33m0f6f0512da082091e3495f3383dc7579cff7eeac[m HEAD@{78}: checkout: moving from master to http_log
+[33m1d9dd5960dbdd05c53a692c28484eb4ae7c774bf[m HEAD@{79}: commit: dead links
+[33m05411ca2477bbbbb51c1046418923e7d270536c0[m HEAD@{80}: commit: dead links
+[33m3bb9c3c4555f97b3f2975109b9ed082b514f33ca[m HEAD@{81}: commit: spacing between the paragraphs
+[33m409cfda8e70f979975c7e518f9e9d8380b05775d[m HEAD@{82}: commit: image spacing changes
+[33m97b73ceeeb84b1e22c5fe12e101a1212cb2229f0[m HEAD@{83}: commit (merge): Merge branch 'master' of https://github.com/theobald-software/theobald-software.github.io
+[33md672e75e89f6735c031710c95e8c1ca93b605b7f[m HEAD@{84}: commit: image spaces adjusted
+[33m0dbc414a246be44f41d41ef449bb874815768a6d[m HEAD@{85}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33mee33b44dc7b4c455d695989e817992d1a300b243[m HEAD@{86}: commit: list class
+[33m3a831fe37cee2cce1f43fcff042367d5c590dc18[m HEAD@{87}: commit: progressstate 5
+[33m226727750dc7aeaeb659b3b06018e397abc85a1a[m HEAD@{88}: pull --verbose --progress origin master: Fast-forward
+[33md3f75c19014d5df0dd7d6a4591251d1f0760c629[m HEAD@{89}: commit: bc migration
+[33mf5d599c5d95b76ccd185e776586e10a13b70723e[m HEAD@{90}: pull --verbose --progress origin master: Fast-forward
+[33mec1186bb5be50041d1a024e69715e6e5c8707444[m HEAD@{91}: commit: eintity
+[33mb9e20cca3ca59a9a93a6fcc75391e062621a0262[m HEAD@{92}: commit: pbi
+[33m97aa76fe2a804288ce219f5a4a14271d5a671f84[m HEAD@{93}: commit: Kasus
+[33m099a7ce406777d8f2ba61ef624f406e7aadbf6e4[m HEAD@{94}: commit: missing character
+[33mb242985bfaf439a95741e7f8a7e15f476a530b76[m HEAD@{95}: commit: spelling
+[33m41e956840fbb36917c20c33ef562f9d34fa39b4c[m HEAD@{96}: commit: bc
+[33m5d04b6bceb5885e4961aaab0692d60f84579268b[m HEAD@{97}: pull --verbose --progress origin master: Fast-forward
+[33m27fdac1ab8a73ef6f670d09a63368a531f61c8ff[m HEAD@{98}: commit: BC, Installation
+[33me99ccaf84136a653ec4964794d6eaa7a45f0537e[m HEAD@{99}: commit: PBI parameter / BC migration
+[33m07c4cd34a199f62a805b6439dfb0c57a94663d08[m HEAD@{100}: commit: BC-migration
+[33m900f53299c32b8bb586ad58f5ebbeaa2b675cb3e[m HEAD@{101}: commit: editorial change
+[33md50a276f8b9a6e60bbf62583fbd4cd2a6279a36f[m HEAD@{102}: pull --verbose --progress origin master: Fast-forward
+[33m78d42f388c6f14076715dc9a20fbb5d8bb89fb02[m HEAD@{103}: checkout: moving from xfa_kebranch to master
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{104}: checkout: moving from master to xfa_kebranch
+[33m78d42f388c6f14076715dc9a20fbb5d8bb89fb02[m HEAD@{105}: commit: linkanpassung deltaq
+[33m2106a33ba915b394d9a6ee9fc46096d7daa16455[m HEAD@{106}: commit: dead link
+[33m4a68f896689c8cd98f3b876a67382c555190d326[m HEAD@{107}: commit: error corrected
+[33m0b71609bc5bb4eeff466faa201539813b7c78236[m HEAD@{108}: commit: troubleshooting progressstate
+[33mb126000aaebdfa3661f99f5dce742d24157bd291[m HEAD@{109}: checkout: moving from xfa_kebranch to master
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{110}: checkout: moving from master to xfa_kebranch
+[33mb126000aaebdfa3661f99f5dce742d24157bd291[m HEAD@{111}: checkout: moving from xfa_kebranch to master
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{112}: checkout: moving from master to xfa_kebranch
+[33mb126000aaebdfa3661f99f5dce742d24157bd291[m HEAD@{113}: commit: progressstate
+[33m3c60ffeeb5f59cce38aa341e5c305b14ad745f18[m HEAD@{114}: pull --verbose --progress origin master: Fast-forward
+[33mc3f37f539758ae5873a213b6b72ad78e7f44f337[m HEAD@{115}: checkout: moving from xfa_kebranch to master
+[33macd4d36287fc14f5feb8eb18f8cb60cf825a3fd8[m[33m ([m[1;31morigin/xfa_kebranch[m[33m, [m[1;32mxfa_kebranch[m[33m)[m HEAD@{116}: commit: editorial changes
+[33m9bc59ec9f6b698b5f74d48d3ee18942f21053a68[m HEAD@{117}: commit: review
+[33md862c58c5aef3cc77ca62c51c02dd64c860dd5fd[m HEAD@{118}: checkout: moving from master to xfa_kebranch
+[33mc3f37f539758ae5873a213b6b72ad78e7f44f337[m HEAD@{119}: pull --verbose --progress origin master: Fast-forward
+[33md7e5ba99a5f9283cc7a87c3f491e0e13b2329dc1[m HEAD@{120}: checkout: moving from xfa_kebranch to master
+[33md862c58c5aef3cc77ca62c51c02dd64c860dd5fd[m HEAD@{121}: commit: review_results
+[33mb28da221ec6dbeaa314147963887c8ee743cbfef[m HEAD@{122}: checkout: moving from master to xfa_kebranch
+[33md7e5ba99a5f9283cc7a87c3f491e0e13b2329dc1[m HEAD@{123}: merge origin/xu-migration: Merge made by the 'recursive' strategy.
+[33mde86aa3819bada6af8dcdc19763cb2826bf5e9f4[m HEAD@{124}: checkout: moving from xu-migration to master
+[33m67f4afaf6d32a1b784dd8f7bbdf9c0d78a95561e[m HEAD@{125}: commit: migration version upgrade
+[33m46478bd7eb693596f7949d34a3d0d897d2624a74[m HEAD@{126}: checkout: moving from master to xu-migration
+[33mde86aa3819bada6af8dcdc19763cb2826bf5e9f4[m HEAD@{127}: commit: edit
+[33ma0a93002b7d9f371534a8704878ca7fe742e9bd2[m HEAD@{128}: checkout: moving from xfa_kebranch to master
+[33mb28da221ec6dbeaa314147963887c8ee743cbfef[m HEAD@{129}: commit: review
+[33m147e7010e432f2649c8a7941ceea79b2255d4099[m HEAD@{130}: pull --verbose --progress origin xfa_kebranch: Merge made by the 'recursive' strategy.
+[33m1a88d788c5a2803c13905a61f9af625c4fabc38a[m HEAD@{131}: commit: poc
+[33m8a30511a3bd7c7b900f795166011ac804265ea90[m HEAD@{132}: commit: poc
+[33m7761a307d0e311a6c10cc87ea93a8945dddf5604[m HEAD@{133}: checkout: moving from master to xfa_kebranch
+[33ma0a93002b7d9f371534a8704878ca7fe742e9bd2[m HEAD@{134}: pull --verbose --progress origin master: Fast-forward
+[33m33f43434791828c63abe660453338cab94a2f353[m HEAD@{135}: checkout: moving from xfa_kebranch to master
+[33m7761a307d0e311a6c10cc87ea93a8945dddf5604[m HEAD@{136}: pull --verbose --progress origin xfa_kebranch: Merge made by the 'recursive' strategy.
+[33m007f87373b9e2553e2a2d049cacc4f5236e0efe7[m HEAD@{137}: commit: odp, hierarchy
+[33mce68f96aa101aabffb79c3156a07535cffcfc62c[m HEAD@{138}: pull --verbose --progress origin xfa_kebranch: Merge made by the 'recursive' strategy.
+[33mb0b853c428121974c066fca9bf8221a31f993a2b[m HEAD@{139}: commit: odp
+[33me814f5efcab9200107278f1470e9ec036d22dce5[m HEAD@{140}: commit: odp
+[33maf40742d5f475cc80f63add553ef178f09d17b9b[m HEAD@{141}: checkout: moving from xu-migration to xfa_kebranch
+[33m46478bd7eb693596f7949d34a3d0d897d2624a74[m HEAD@{142}: pull --verbose --progress origin xu-migration: Fast-forward
+[33m224dd1c27cf95f2484668192734e0ffbfefa12a4[m HEAD@{143}: checkout: moving from master to xu-migration
+[33m33f43434791828c63abe660453338cab94a2f353[m HEAD@{144}: pull --verbose --progress origin master: Fast-forward
+[33m05bc9bc9b80c0c4082f8369c0907c05ce7b5deac[m HEAD@{145}: checkout: moving from xu-migration to master
+[33m224dd1c27cf95f2484668192734e0ffbfefa12a4[m HEAD@{146}: checkout: moving from xfa_kebranch to xu-migration
+[33maf40742d5f475cc80f63add553ef178f09d17b9b[m HEAD@{147}: commit: review
+[33m9c1ac0697db46e593b25f8194cccb98b8d5c706f[m HEAD@{148}: checkout: moving from xfa_kebranch to xfa_kebranch
+[33m9c1ac0697db46e593b25f8194cccb98b8d5c706f[m HEAD@{149}: pull --verbose --progress origin xfa_kebranch: Fast-forward
+[33m63e279b17ee7dc124db1b250bed745f195b03709[m HEAD@{150}: checkout: moving from master to xfa_kebranch
+[33m05bc9bc9b80c0c4082f8369c0907c05ce7b5deac[m HEAD@{151}: commit: snc, sso
+[33m7aebe6b6135dcec93b5ae9b28d130146ed9fe468[m HEAD@{152}: checkout: moving from xfa_kebranch to master
+[33m63e279b17ee7dc124db1b250bed745f195b03709[m HEAD@{153}: checkout: moving from master to xfa_kebranch
+[33m7aebe6b6135dcec93b5ae9b28d130146ed9fe468[m HEAD@{154}: commit: spelling
+[33m7ad69c9ab3b7a01869fc5bdd1f5ab25bf6360282[m HEAD@{155}: pull --verbose --progress origin master: Fast-forward
+[33m5d74c9bc3ff7c458df765cbf110506cb30d9f54a[m HEAD@{156}: pull --verbose --progress origin master: Fast-forward
+[33mfe49e02fc5cf94cc2be8078bafec1a3bafcf21c0[m HEAD@{157}: checkout: moving from xfa_kebranch to master
+[33m63e279b17ee7dc124db1b250bed745f195b03709[m HEAD@{158}: commit: snc
+[33m88e7bc70b49883e54dc54944ffc69b528c3fff23[m HEAD@{159}: commit: hierarchy
+[33mbf860d68cc8a66647eac764d5a347ff74c51ec60[m HEAD@{160}: commit: hierarchy, odp
+[33m70201340034606d29fc10db4ec15b35e2dc28510[m HEAD@{161}: commit: cube
+[33md0d33a03d94c785a8d06c58c9d7a7c351b988290[m HEAD@{162}: commit: hierarchy
+[33m97ab904d5f0ee6959ea3d2124a8bbf066009889e[m HEAD@{163}: pull --verbose --progress origin xfa_kebranch: Fast-forward
+[33mf29adc377ca6c1d00c1d6f367cc946cf0789e03b[m HEAD@{164}: checkout: moving from automation_branch to xfa_kebranch
+[33m57f57162ea4b99f92af7fa6074af6f602a998b33[m HEAD@{165}: pull --verbose --progress origin automation_branch: Fast-forward
+[33m1078855ea458648a335205e2f933b610a3723693[m HEAD@{166}: checkout: moving from bapi_xfa to automation_branch
+[33m4dd47020a10134dc1729b7bffd5c7b409b489790[m HEAD@{167}: pull --verbose --progress origin bapi_xfa: Fast-forward
+[33m7983ecc2cfcc5e93ad70eef41d621687746a39c3[m HEAD@{168}: checkout: moving from master to bapi_xfa
+[33mfe49e02fc5cf94cc2be8078bafec1a3bafcf21c0[m HEAD@{169}: pull --verbose --progress origin master: Fast-forward
+[33m2370d0894a4b77bf49df619c257b3e94110097ca[m HEAD@{170}: checkout: moving from xfa_kebranch to master
+[33mf29adc377ca6c1d00c1d6f367cc946cf0789e03b[m HEAD@{171}: commit: hierarchy
+[33m71888d5b6552f0b0d4772026fd4cee747e3901aa[m HEAD@{172}: commit: hierarchy
+[33m2d7cb788b967662cbfe6d2b0a3174148482fbfa2[m HEAD@{173}: commit: poc
+[33m23d919a72e05ad7cc5912c09c16d8e7cab685fc5[m HEAD@{174}: commit: img
+[33m9cc0c48acd301404c5b2007863b199a66befb340[m HEAD@{175}: checkout: moving from master to xfa_kebranch
+[33m2370d0894a4b77bf49df619c257b3e94110097ca[m HEAD@{176}: commit: operational systems corrected
+[33mcf4f033a126be30ae1a41d0abd71e108f323dda1[m HEAD@{177}: checkout: moving from xfa_kebranch to master
+[33m9cc0c48acd301404c5b2007863b199a66befb340[m HEAD@{178}: commit: odp
+[33m1cae57db68de8a122f5af250b14602d0c5da0691[m HEAD@{179}: commit: avoid restrictions
+[33m9bcf765b732ef61797a770f2d66e7ee052da00db[m HEAD@{180}: commit: odp
+[33mfce6a1f36143637364643781296d236e741f8238[m HEAD@{181}: checkout: moving from master to xfa_kebranch
+[33mcf4f033a126be30ae1a41d0abd71e108f323dda1[m HEAD@{182}: commit: where clause img
+[33mdac7aad2f8fb1a3d637bacaf181eba47de0dc86a[m HEAD@{183}: checkout: moving from azure_storage_oauth_AD to master
+[33mcb5cfc01e31e7affd2e2c3cfa2e6c5e2a4dc26a6[m HEAD@{184}: checkout: moving from master to azure_storage_oauth_AD
+[33mdac7aad2f8fb1a3d637bacaf181eba47de0dc86a[m HEAD@{185}: commit: dead link img rs
+[33mfc51f5612ac84942445793ba71b513f02dd8b79d[m HEAD@{186}: pull --verbose --progress origin master: Fast-forward
+[33mce8a4c22bae3d6c9c70207cbaea6b5f6ac749eb7[m HEAD@{187}: checkout: moving from xfa_kebranch to master
+[33mfce6a1f36143637364643781296d236e741f8238[m HEAD@{188}: commit: poc
+[33m0964f6c0d40f1e3ab31f973635c2b810d84da2ae[m HEAD@{189}: commit: poc
+[33mf139ab2fbcd5be554aa0edecb334166ba406390d[m HEAD@{190}: commit: poc
+[33m6ca57410568292731635c857fb63bc6ce5e3240e[m HEAD@{191}: checkout: moving from master to xfa_kebranch
+[33mce8a4c22bae3d6c9c70207cbaea6b5f6ac749eb7[m HEAD@{192}: checkout: moving from xfa_kebranch to master
+[33m6ca57410568292731635c857fb63bc6ce5e3240e[m HEAD@{193}: checkout: moving from master to xfa_kebranch
+[33mce8a4c22bae3d6c9c70207cbaea6b5f6ac749eb7[m HEAD@{194}: checkout: moving from bapi_xfa to master
+[33m7983ecc2cfcc5e93ad70eef41d621687746a39c3[m HEAD@{195}: pull --verbose --progress origin bapi_xfa: Fast-forward
+[33m14837c3ad33de36217d9aa034f2bcf9fe10d247d[m HEAD@{196}: checkout: moving from master to bapi_xfa
+[33mce8a4c22bae3d6c9c70207cbaea6b5f6ac749eb7[m HEAD@{197}: pull --verbose --progress origin master: Fast-forward
+[33m9f2f521acc29ef8057d79751528777689b2e29c3[m HEAD@{198}: checkout: moving from xfa_kebranch to master
+[33m6ca57410568292731635c857fb63bc6ce5e3240e[m HEAD@{199}: commit: poc
+[33mbf17e247a4aa2e8dc184bbcbb55ef4f2163dfcc0[m HEAD@{200}: checkout: moving from master to xfa_kebranch
+[33m9f2f521acc29ef8057d79751528777689b2e29c3[m HEAD@{201}: merge origin/azure_storage_oauth_AD: Merge made by the 'recursive' strategy.
+[33m087817a33ba5779b5a315a65d9e39fdb147823ff[m HEAD@{202}: checkout: moving from azure_storage_oauth_AD to master
+[33mcb5cfc01e31e7affd2e2c3cfa2e6c5e2a4dc26a6[m HEAD@{203}: commit: editorial changes
+[33m628ec54a711ea6050b4cfacac38440d7aa233890[m HEAD@{204}: commit: transl_2
+[33me93a6e42af5468382227dd792119475cee54452a[m HEAD@{205}: pull --verbose --progress origin azure_storage_oauth_AD: Fast-forward
+[33m66ffacbbde0a4010f5a2d9e9a7e8a3b9e6935952[m HEAD@{206}: checkout: moving from master to azure_storage_oauth_AD
+[33m087817a33ba5779b5a315a65d9e39fdb147823ff[m HEAD@{207}: commit: improvements noticed due to poc
+[33ma074e956b60b03c11cbb102e97c76e739806306c[m HEAD@{208}: pull --verbose --progress origin master: Fast-forward
+[33m22f1b1f490ca13c1b55ba5a155ad647cea22f41e[m HEAD@{209}: checkout: moving from xfa_kebranch to master
+[33mbf17e247a4aa2e8dc184bbcbb55ef4f2163dfcc0[m HEAD@{210}: commit: poc
+[33m31f6fe1539eebf1126deed63c1e89617ca4a86e3[m HEAD@{211}: commit: where
+[33m6bd7463292512eb4ce1959ed7fe6be664b10a3ce[m HEAD@{212}: checkout: moving from master to xfa_kebranch
+[33m22f1b1f490ca13c1b55ba5a155ad647cea22f41e[m HEAD@{213}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33m7e95404cd071316d1f64b4afb75064c782fda6ca[m HEAD@{214}: commit: img
+[33m7e045c6f4cc3e21fbcc642357671e4b703517f4b[m HEAD@{215}: checkout: moving from xfa_kebranch to master
+[33m6bd7463292512eb4ce1959ed7fe6be664b10a3ce[m HEAD@{216}: commit: poc download
+[33m9c529db10b4dda707c6670e80e50b1d52f9b6258[m HEAD@{217}: checkout: moving from master to xfa_kebranch
+[33m7e045c6f4cc3e21fbcc642357671e4b703517f4b[m HEAD@{218}: commit: editorial changes
+[33m814ecc0bb5aa37e25aa3f52f1d43607da82b98a5[m HEAD@{219}: checkout: moving from xfa_kebranch to master
+[33m9c529db10b4dda707c6670e80e50b1d52f9b6258[m HEAD@{220}: commit: poc
+[33m6196735a92c4d10b9f1e0db0f869dd429bc1430e[m HEAD@{221}: checkout: moving from master to xfa_kebranch
+[33m814ecc0bb5aa37e25aa3f52f1d43607da82b98a5[m HEAD@{222}: pull --verbose --progress origin master: Fast-forward
+[33m664397ed05720c171a6e3e696b0df5c0d32e0305[m HEAD@{223}: checkout: moving from xfa_kebranch to master
+[33m6196735a92c4d10b9f1e0db0f869dd429bc1430e[m HEAD@{224}: commit: poc
+[33m0feb8391558313ef8f1c795b79f9f63ec27e401b[m HEAD@{225}: commit: tables
+[33m6b5d8c8aaf53d2707ef0c6a0e366c988d1ce5f5b[m HEAD@{226}: checkout: moving from master to xfa_kebranch
+[33m664397ed05720c171a6e3e696b0df5c0d32e0305[m HEAD@{227}: pull --progress origin: Fast-forward
+[33m520d088fe992dc8bfe225efa788026acdbf0a1f2[m HEAD@{228}: checkout: moving from xfa_kebranch to master
+[33m6b5d8c8aaf53d2707ef0c6a0e366c988d1ce5f5b[m HEAD@{229}: Branch: renamed refs/heads/poc_xfa_kebranch to refs/heads/xfa_kebranch
+[33m6b5d8c8aaf53d2707ef0c6a0e366c988d1ce5f5b[m HEAD@{231}: pull --verbose --progress origin xfa_kebranch: Fast-forward
+[33m836d7e37909bb155b8e3153b0a2a5ef27769097a[m HEAD@{232}: checkout: moving from azure_storage_oauth_AD to poc_xfa_kebranch
+[33m66ffacbbde0a4010f5a2d9e9a7e8a3b9e6935952[m HEAD@{233}: checkout: moving from poc_xfa_kebranch to azure_storage_oauth_AD
+[33m836d7e37909bb155b8e3153b0a2a5ef27769097a[m HEAD@{234}: checkout: moving from azure_storage_oauth_AD to poc_xfa_kebranch
+[33m66ffacbbde0a4010f5a2d9e9a7e8a3b9e6935952[m HEAD@{235}: commit: translation, small editorial changes
+[33m991dc1bcb8ed83f03434f6475bee44f45b5851d1[m HEAD@{236}: checkout: moving from master to azure_storage_oauth_AD
+[33m520d088fe992dc8bfe225efa788026acdbf0a1f2[m HEAD@{237}: commit: editorial changes
+[33m86c39c3203d88288f2fde62694d29045c5c5bd53[m HEAD@{238}: checkout: moving from azure_storage_oauth_AD to master
+[33m991dc1bcb8ed83f03434f6475bee44f45b5851d1[m HEAD@{239}: checkout: moving from master to azure_storage_oauth_AD
+[33m86c39c3203d88288f2fde62694d29045c5c5bd53[m HEAD@{240}: commit: dead links
+[33ma3fd3e4e6e4311997ae7a40e9e1afa96cca2235f[m HEAD@{241}: checkout: moving from azure_storage_oauth_AD to master
+[33m991dc1bcb8ed83f03434f6475bee44f45b5851d1[m HEAD@{242}: pull --verbose --progress origin azure_storage_oauth_AD: Fast-forward
+[33mc759a4597b1ca15f2eafe2116ff7f90f18f38336[m HEAD@{243}: checkout: moving from master to azure_storage_oauth_AD
+[33ma3fd3e4e6e4311997ae7a40e9e1afa96cca2235f[m HEAD@{244}: merge origin/parquet_destination: Fast-forward
+[33ma05a7e9a82e3b619fdf583915c3f9b5b4b768339[m HEAD@{245}: checkout: moving from parquet_destination to master
+[33ma3fd3e4e6e4311997ae7a40e9e1afa96cca2235f[m HEAD@{246}: commit: review
+[33me10c9939786fcc23087ecde4f4638a6bf165c6be[m HEAD@{247}: checkout: moving from parquet_destination to parquet_destination
+[33me10c9939786fcc23087ecde4f4638a6bf165c6be[m HEAD@{248}: checkout: moving from poc_xfa_kebranch to parquet_destination
+[33m836d7e37909bb155b8e3153b0a2a5ef27769097a[m HEAD@{249}: commit: related links
+[33m4c60505359c775195f31252a95e50dc5642ac0a8[m HEAD@{250}: checkout: moving from poc_xfa_kebranch to poc_xfa_kebranch
+[33m4c60505359c775195f31252a95e50dc5642ac0a8[m HEAD@{251}: commit: tables
+[33me79d4d05fcb951aa9b0781e56d26f82444385fac[m HEAD@{252}: commit: table
+[33m26eaed474e4372a822ea7271b6200ffd40a18fc9[m HEAD@{253}: checkout: moving from azure_storage_oauth_AD to poc_xfa_kebranch
+[33mc759a4597b1ca15f2eafe2116ff7f90f18f38336[m HEAD@{254}: commit: editorial_review_1
+[33m23e058748d15b3222b1133ec13aad61767a05ba0[m HEAD@{255}: checkout: moving from master to azure_storage_oauth_AD
+[33ma05a7e9a82e3b619fdf583915c3f9b5b4b768339[m HEAD@{256}: pull --verbose --progress origin master: Fast-forward
+[33me67f17ab9d3b6100fa65fb8cee7d83a10f3cda1f[m HEAD@{257}: commit: editorial corrections
+[33mda60ea0c4ee714090b136438d269d54d0591efaf[m HEAD@{258}: checkout: moving from poc_xfa_kebranch to master
+[33m26eaed474e4372a822ea7271b6200ffd40a18fc9[m HEAD@{259}: commit: related links
+[33m0c063a71c808e76f64a6c42e9189b5630aef9ba1[m HEAD@{260}: commit: poc
+[33m868dc2398f904d2eed8012bff24aec31f2fc9642[m HEAD@{261}: Branch: renamed refs/heads/xfa_kebranch to refs/heads/poc_xfa_kebranch
+[33m868dc2398f904d2eed8012bff24aec31f2fc9642[m HEAD@{263}: checkout: moving from master to xfa_kebranch
+[33mda60ea0c4ee714090b136438d269d54d0591efaf[m HEAD@{264}: checkout: moving from xfa_kebranch to master
+[33m868dc2398f904d2eed8012bff24aec31f2fc9642[m HEAD@{265}: commit: poc
+[33m8d8471eaed80039a8f8447aa4d150b76eabc7637[m HEAD@{266}: checkout: moving from master to xfa_kebranch
+[33mda60ea0c4ee714090b136438d269d54d0591efaf[m HEAD@{267}: commit: doc template corrected
+[33me70708b9fe2750cf9da59bea07eac98577fcc9d2[m HEAD@{268}: merge origin/xu_installation: Merge made by the 'recursive' strategy.
+[33mb9bad06e7eb12921946d781e1b236936d5a2af63[m HEAD@{269}: checkout: moving from xu_installation to master
+[33m27b2579fd3911f91438d3f880bc88d3129a210ed[m HEAD@{270}: commit: Translat_2
+[33m227305d80f600447bac368ece5ebeaa6c639b833[m HEAD@{271}: commit: Translat_1
+[33m2790a568ff5044ca43c983d9db188b9f6b877719[m HEAD@{272}: commit: editorial improvements
+[33mcda08ed186fa2886c8cc75a62c7064194aac5f1a[m HEAD@{273}: checkout: moving from master to xu_installation
+[33mb9bad06e7eb12921946d781e1b236936d5a2af63[m HEAD@{274}: commit: editorial changes
+[33me593655468e6a6a4a3de9502ee6e01aeddf2c9fe[m HEAD@{275}: checkout: moving from xu_installation to master
+[33mcda08ed186fa2886c8cc75a62c7064194aac5f1a[m HEAD@{276}: commit: review_1
+[33me593655468e6a6a4a3de9502ee6e01aeddf2c9fe[m HEAD@{277}: checkout: moving from master to xu_installation
+[33me593655468e6a6a4a3de9502ee6e01aeddf2c9fe[m HEAD@{278}: commit: editorial changes
+[33mb85e75a7a5f550c5657009ab839e55d7a32ed96d[m HEAD@{279}: merge origin/installation: Merge made by the 'recursive' strategy.
+[33m71c095cfd8eb8e6aee7db67a5e0858db6a59d1e5[m HEAD@{280}: checkout: moving from installation to master
+[33mc3453bb42c4807e5336c11ff1230f80161d68a50[m HEAD@{281}: commit: rev_4, tr_2
+[33m87389220d31e09527d9f8ace19969bbd3a669e3f[m HEAD@{282}: pull --verbose --progress origin installation: Fast-forward
+[33mc259ce1acff6c00fdd9af3a734a75d4b2a3f3647[m HEAD@{283}: checkout: moving from master to installation
+[33m71c095cfd8eb8e6aee7db67a5e0858db6a59d1e5[m HEAD@{284}: checkout: moving from xfa_kebranch to master
+[33m8d8471eaed80039a8f8447aa4d150b76eabc7637[m HEAD@{285}: checkout: moving from bapi_xfa to xfa_kebranch
+[33m08f1f0157d3433d5b1be9e87b6887d16382c8709[m HEAD@{286}: checkout: moving from master to bapi_xfa
+[33m71c095cfd8eb8e6aee7db67a5e0858db6a59d1e5[m HEAD@{287}: checkout: moving from installation to master
+[33mc259ce1acff6c00fdd9af3a734a75d4b2a3f3647[m HEAD@{288}: commit: review_4 transl_1
+[33md5c18ad0d39fe4b80e0d8b0113f98dc48bd139fe[m HEAD@{289}: commit: review_3
+[33m104ade0facd46ecef48e7b108d769d995d3f800d[m HEAD@{290}: pull --verbose --progress origin installation: Fast-forward
+[33m49ee2b23ca54ce35fc7eb6b43fe700abdaea6624[m HEAD@{291}: commit: review 2
+[33mb461b2fc8257294f1de10f5a94d5f9206d5641a2[m HEAD@{292}: checkout: moving from bapi_xfa to installation
+[33m08f1f0157d3433d5b1be9e87b6887d16382c8709[m HEAD@{293}: checkout: moving from master to bapi_xfa
+[33m71c095cfd8eb8e6aee7db67a5e0858db6a59d1e5[m HEAD@{294}: commit: universalisation img
+[33m34a6c54e7203ff15c2a75b9b51c754bf8e957de2[m HEAD@{295}: checkout: moving from installation to master
+[33mb461b2fc8257294f1de10f5a94d5f9206d5641a2[m HEAD@{296}: checkout: moving from master to installation
+[33m34a6c54e7203ff15c2a75b9b51c754bf8e957de2[m HEAD@{297}: checkout: moving from bapi_xfa to master
+[33m08f1f0157d3433d5b1be9e87b6887d16382c8709[m HEAD@{298}: pull --verbose --progress origin bapi_xfa: Fast-forward
+[33med2893767deab869d8f91e0b32e5c871da5f210e[m HEAD@{299}: checkout: moving from master to bapi_xfa
+[33m34a6c54e7203ff15c2a75b9b51c754bf8e957de2[m HEAD@{300}: commit: dead links BC
+[33m458e13082908fe73e29f715a11bbd7f0f9bf765a[m HEAD@{301}: commit: logon ticket BC
+[33m995e51f29553117bdabcd5a9fd7e669c0fe54cfa[m HEAD@{302}: commit: sso, bc
+[33m928adf7d08f355ab6b2fdf990616e52f42d69daa[m HEAD@{303}: commit: dead links, wrong product names bc /xu
+[33mfc90b1dcf787d4407efce13c64433d76b09e78ef[m HEAD@{304}: checkout: moving from installation to master
+[33mb461b2fc8257294f1de10f5a94d5f9206d5641a2[m HEAD@{305}: checkout: moving from master to installation
+[33mfc90b1dcf787d4407efce13c64433d76b09e78ef[m HEAD@{306}: commit: dead links repair
+[33m5b56c4e0357f63c73cc1e3ed9bb339e01643e437[m HEAD@{307}: pull --verbose --progress origin master: Fast-forward
+[33mc29747b969540ca0257c7cc9b9ae65053c545320[m HEAD@{308}: checkout: moving from installation to master
+[33mb461b2fc8257294f1de10f5a94d5f9206d5641a2[m HEAD@{309}: commit: erste_fassung
+[33mc29747b969540ca0257c7cc9b9ae65053c545320[m HEAD@{310}: checkout: moving from master to installation
+[33mc29747b969540ca0257c7cc9b9ae65053c545320[m HEAD@{311}: commit: links angepasst, bc
+[33m619cc8ffded3dd63560ee4d5f7c2b6ad0158bcb9[m HEAD@{312}: commit: editorial changes
+[33m8223896ffba8f6e015b6340506bd021a0ec2c362[m HEAD@{313}: commit: sap connection position nr added
+[33mc8bb71f85b4357cdaf44fc3fcd5a9704a8fa2b32[m HEAD@{314}: commit: SAP connection links, img
+[33m6a9493aeea3e9d1a79eafcd2db94121cd3c64ca3[m HEAD@{315}: merge origin/SAP_Connection: Merge made by the 'recursive' strategy.
+[33mac79d204387b38c784ad43e3ad815c0269f3bf24[m HEAD@{316}: checkout: moving from SAP_Connection to master
+[33m73fd87c65139973d061b407638028049e330d68d[m HEAD@{317}: commit: XU, BC, XIS translation review
+[33mff76fbc86014913a4309912601f6a80ee48fd07c[m HEAD@{318}: checkout: moving from master to SAP_Connection
+[33mac79d204387b38c784ad43e3ad815c0269f3bf24[m HEAD@{319}: commit: xu, bc - tj version angepasst
+[33mb4d473e0d8d723d53f2aa488a12bc0756b009b99[m HEAD@{320}: commit: TJ links repaired
+[33mdced472546e8f1374f35a9e40144bcf832db85ab[m HEAD@{321}: checkout: moving from SAP_Connection to master
+[33mff76fbc86014913a4309912601f6a80ee48fd07c[m HEAD@{322}: commit: links
+[33mb06a50c6e3a86dbb8509b25a1be19812ff81cd9d[m HEAD@{323}: commit: XU, BC - DE, EN, Links
+[33mf766df0ba96bb8b84102b019f594499df922c0f6[m HEAD@{324}: commit: cache credentials run in browser restriction
+[33md6246942c371f75c8879f97f5425502b8096c741[m HEAD@{325}: commit: BC Reihenfolge
+[33m6c0186cc5142cc93d968f2ed759019dcdc3b04f5[m HEAD@{326}: commit: img changed
+[33m9602d1b1ce176d0df70088a8893707bc44062445[m HEAD@{327}: checkout: moving from master to SAP_Connection
+[33mdced472546e8f1374f35a9e40144bcf832db85ab[m HEAD@{328}: commit: small editorial changes
+[33m8d3cb4fef14c8f6df03cb1b031561b78546f9d7e[m HEAD@{329}: checkout: moving from SAP_Connection to master
+[33m9602d1b1ce176d0df70088a8893707bc44062445[m HEAD@{330}: checkout: moving from master to SAP_Connection
+[33m8d3cb4fef14c8f6df03cb1b031561b78546f9d7e[m HEAD@{331}: checkout: moving from SAP_Connection to master
+[33m9602d1b1ce176d0df70088a8893707bc44062445[m HEAD@{332}: checkout: moving from master to SAP_Connection
+[33m8d3cb4fef14c8f6df03cb1b031561b78546f9d7e[m HEAD@{333}: merge origin/table_alias_removed: Merge made by the 'recursive' strategy.
+[33mba7ba13f5b90eb5a9784779bdb01f8bad6e0b9d7[m HEAD@{334}: checkout: moving from table_alias_removed to master
+[33mf995b3825c7ff6d7027396b3d9ffc8b1c1b7037f[m HEAD@{335}: commit: Übersetzung und Anpassung der EN Version entspr DE Kommentaren
+[33m2812cd01a4e2bb1f602dda5ff2cca6c71615874c[m HEAD@{336}: checkout: moving from master to table_alias_removed
+[33mba7ba13f5b90eb5a9784779bdb01f8bad6e0b9d7[m HEAD@{337}: checkout: moving from SAP_Connection to master
+[33m9602d1b1ce176d0df70088a8893707bc44062445[m HEAD@{338}: commit: sap_connection_EN
+[33m881448161c513f863de85bd8dbefdf6861bcba6e[m HEAD@{339}: checkout: moving from xfa_kebranch to SAP_Connection
+[33m8d8471eaed80039a8f8447aa4d150b76eabc7637[m HEAD@{340}: checkout: moving from SAP_Connection to xfa_kebranch
+[33m881448161c513f863de85bd8dbefdf6861bcba6e[m HEAD@{341}: checkout: moving from master to SAP_Connection
+[33mba7ba13f5b90eb5a9784779bdb01f8bad6e0b9d7[m HEAD@{342}: checkout: moving from SAP_Connection to master
+[33m881448161c513f863de85bd8dbefdf6861bcba6e[m HEAD@{343}: commit: syntax error
+[33m003834cbfb5d79946f0569d923ad7d3abbe6ca15[m HEAD@{344}: checkout: moving from master to SAP_Connection
+[33mba7ba13f5b90eb5a9784779bdb01f8bad6e0b9d7[m HEAD@{345}: checkout: moving from SAP_Connection to master
+[33m003834cbfb5d79946f0569d923ad7d3abbe6ca15[m HEAD@{346}: pull --verbose --progress origin SAP_Connection: Fast-forward
+[33m3615a3fe9372898ee8b9a481686cb0dccae725df[m HEAD@{347}: checkout: moving from table_alias_removed to SAP_Connection
+[33m2812cd01a4e2bb1f602dda5ff2cca6c71615874c[m HEAD@{348}: commit: EN: small editorial changes, DE Uebersetzung
+[33m3ce66b794cd8b96666d65b369a7dfc3cd7ff9cfb[m HEAD@{349}: pull --verbose --progress origin table_alias_removed: Fast-forward
+[33mbb1e6ab9a9be231409be048abd4b95e6671a6409[m HEAD@{350}: checkout: moving from master to table_alias_removed
+[33mba7ba13f5b90eb5a9784779bdb01f8bad6e0b9d7[m HEAD@{351}: pull --verbose --progress origin master: Fast-forward
+[33m275c547aa7ffe9e7e0f3077cef66d427f54bd12a[m HEAD@{352}: checkout: moving from table_alias_removed to master
+[33mbb1e6ab9a9be231409be048abd4b95e6671a6409[m HEAD@{353}: commit: Review_zurück_tj
+[33m37551979930ef394f7f76e9370c36bdc10903368[m HEAD@{354}: checkout: moving from SAP_Connection to table_alias_removed
+[33m3615a3fe9372898ee8b9a481686cb0dccae725df[m HEAD@{355}: commit: bc_sap_connection
+[33mb1000c93f021457528d537a40ca80b65c91b4543[m HEAD@{356}: commit: SAP_connection_define_table_extraction_xu
+[33med2893767deab869d8f91e0b32e5c871da5f210e[m HEAD@{357}: checkout: moving from bapi_xfa to SAP_Connection
+[33med2893767deab869d8f91e0b32e5c871da5f210e[m HEAD@{358}: commit: Review 2
+[33m7b120813af5d33d97a6d6f1b28dd0df1eeb3a13d[m HEAD@{359}: commit: review 3
+[33mbf75ebb662d35eeaad809d8404b944e16054b97d[m HEAD@{360}: checkout: moving from automation_branch to bapi_xfa
+[33m5761d3dfc5381d9c04d051da48d190b28f51c044[m HEAD@{361}: pull --verbose --progress origin automation_branch: Fast-forward
+[33m209c170c8729c6d555d45c8f08c0595ac6cacd6a[m HEAD@{362}: checkout: moving from master to automation_branch
+[33m12d81514b2816ad451d5013f3724d6274b0b2fd5[m HEAD@{363}: pull --verbose --progress origin master: Fast-forward
+[33mba112dc3ee793c2c7e08709363a0b188aaf3e7ce[m HEAD@{364}: checkout: moving from bapi_xfa to master
+[33mbf75ebb662d35eeaad809d8404b944e16054b97d[m HEAD@{365}: commit: Edit
+[33mef5f6ba59ed24b2409e03a914e278518451aceb8[m HEAD@{366}: checkout: moving from bapi_xfa to bapi_xfa
+[33mef5f6ba59ed24b2409e03a914e278518451aceb8[m HEAD@{367}: checkout: moving from master to bapi_xfa
+[33mba112dc3ee793c2c7e08709363a0b188aaf3e7ce[m HEAD@{368}: checkout: moving from automation_branch to master
+[33m209c170c8729c6d555d45c8f08c0595ac6cacd6a[m HEAD@{369}: commit: Automation EN
+[33m78053a8ea139d0010c8499ace3748a8bb97f1705[m HEAD@{370}: commit: template_for_ke
+[33mba112dc3ee793c2c7e08709363a0b188aaf3e7ce[m HEAD@{371}: checkout: moving from master to automation_branch
+[33mba112dc3ee793c2c7e08709363a0b188aaf3e7ce[m HEAD@{372}: checkout: moving from table_alias_removed to master
+[33m37551979930ef394f7f76e9370c36bdc10903368[m HEAD@{373}: checkout: moving from bapi_xfa to table_alias_removed
+[33mef5f6ba59ed24b2409e03a914e278518451aceb8[m HEAD@{374}: commit: BAPI changes
+[33mfc8d01998d9c3080df6babb1cdb0d6509e1ea26f[m HEAD@{375}: checkout: moving from master to bapi_xfa
+[33mba112dc3ee793c2c7e08709363a0b188aaf3e7ce[m HEAD@{376}: commit: note added
+[33m5ae503095edb989c04cbcb45b3dde36a5a47dfe7[m HEAD@{377}: commit: Qlik, new img, editorial changes
+[33m6564905c27fc37f2326946f7cda01a4d83fec5ab[m HEAD@{378}: merge origin/twinings_feature_review: Merge made by the 'recursive' strategy.
+[33m8cbd2fb550da7f758f40bd591c5ed9d4a9e2297c[m HEAD@{379}: checkout: moving from xfa_kebranch to master
+[33m8d8471eaed80039a8f8447aa4d150b76eabc7637[m HEAD@{380}: commit: img
+[33m3a33e12d235be443aa443bfed6ed4babb201572e[m HEAD@{381}: checkout: moving from master to xfa_kebranch
+[33m8cbd2fb550da7f758f40bd591c5ed9d4a9e2297c[m HEAD@{382}: checkout: moving from xfa_kebranch to master
+[33m3a33e12d235be443aa443bfed6ed4babb201572e[m HEAD@{383}: commit: poc
+[33mb68e4c6f03e25c8066669cdd49d1d0304b26c9b2[m HEAD@{384}: checkout: moving from master to xfa_kebranch
+[33m8cbd2fb550da7f758f40bd591c5ed9d4a9e2297c[m HEAD@{385}: checkout: moving from bapi_xfa to master
+[33mfc8d01998d9c3080df6babb1cdb0d6509e1ea26f[m HEAD@{386}: commit: BAPI_define_parameters_review
+[33m4d61e33d3336892e2c316c48f3ae55503ca818f8[m HEAD@{387}: checkout: moving from master to bapi_xfa
+[33m4d61e33d3336892e2c316c48f3ae55503ca818f8[m HEAD@{388}: commit: template update
+[33m0f9a6ba7ccedb1f5cef7c544966b84f0c97ad080[m HEAD@{389}: commit: open sql added to where clause, "count rows" mentioned too
+[33m14265b2024d1420bd6d779262d251ebf61568d95[m HEAD@{390}: checkout: moving from twinings_feature_review to master
+[33m058325610f43f7d8c890672e5dbfee1248d1c311[m HEAD@{391}: commit: indices, EN, include
+[33m14265b2024d1420bd6d779262d251ebf61568d95[m HEAD@{392}: checkout: moving from master to twinings_feature_review
+[33m14265b2024d1420bd6d779262d251ebf61568d95[m HEAD@{393}: checkout: moving from xfa_kebranch to master
+[33mb68e4c6f03e25c8066669cdd49d1d0304b26c9b2[m HEAD@{394}: commit: poc
+[33m491d8671059a1ac4fb9ca0ba9e31bdb06bb24e63[m HEAD@{395}: checkout: moving from master to xfa_kebranch
+[33m14265b2024d1420bd6d779262d251ebf61568d95[m HEAD@{396}: commit: xis, editorial
+[33mb243bf3079826bf523c778e4031e2bd304d0e445[m HEAD@{397}: commit: xis, editorial
+[33ma39934267f525217ec17f5adc50f3ea61b0e23ad[m HEAD@{398}: commit: Update sap-connection.md
+[33m755ae4e1e0b802c951a250b223f3977adc9d59ca[m HEAD@{399}: commit: xis, img update
+[33m00e13b44670344beb4f4f85469fadf381142021c[m HEAD@{400}: commit: Update xu-zielumgebungen.md
+[33mf9ba80fcfe045edf6d0f4b84153af0fd2a7a8f48[m HEAD@{401}: commit: tj
+[33mc51c19985d6c2972e34cee918c2bf20f07e8c077[m HEAD@{402}: commit: Update table-join.md
+[33me88965960da4c91a818e0049fe178af4474a28e0[m HEAD@{403}: commit: xis; update; general improvements, acc. styleguide
+[33m2bc3d460f56a2eb6245b1f5a17192a36ed8859cc[m HEAD@{404}: commit: xis; intro
+[33m5481b633f4ba51545881a4e950fd4592bde448cd[m HEAD@{405}: checkout: moving from old_help_test to master
+[33mf649f5f8862ffdcd751a1527b741bb639a0a97ec[m[33m ([m[1;32mold_help_test[m[33m)[m HEAD@{406}: checkout: moving from master to old_help_test
+[33mf11abdf3c90000ae46dbfeaec0afd3c7e6e02c3d[m HEAD@{407}: checkout: moving from old_help_test to master
+[33mf649f5f8862ffdcd751a1527b741bb639a0a97ec[m[33m ([m[1;32mold_help_test[m[33m)[m HEAD@{408}: reset: moving to f649f5f8862ffdcd751a1527b741bb639a0a97ec
+[33mf11abdf3c90000ae46dbfeaec0afd3c7e6e02c3d[m HEAD@{409}: checkout: moving from master to old_help_test
+[33mf11abdf3c90000ae46dbfeaec0afd3c7e6e02c3d[m HEAD@{410}: commit: dead link
+[33me523451c7dd89099080a70af758b404d67727071[m HEAD@{411}: commit: dead link xfa
+[33m545a2ad87275ec6d9845e1d06cbebd74c107125f[m HEAD@{412}: pull --verbose --progress origin master: Fast-forward
+[33m5af23b06bac29779f7f93975d75d0498b6685b63[m HEAD@{413}: pull --verbose --progress origin master: Fast-forward
+[33m9261c2011e1ae2d8a2161702d83bc301276deda0[m HEAD@{414}: commit: xis, deltaq intro
+[33m5464c1e75c8a9a4edfda1a640bcc79143b981f83[m HEAD@{415}: checkout: moving from xfa_kebranch to master
+[33m491d8671059a1ac4fb9ca0ba9e31bdb06bb24e63[m HEAD@{416}: commit: poc
+[33m937057e67e4cbbd68effed5743d4185ce9953aeb[m HEAD@{417}: commit: xfa overview
+[33m83dac820cb8f6b3576147b2bc628c1984606d8d6[m HEAD@{418}: commit: function & components
+[33mda6322d9fcb416e92ed35e81463cfaafaac2cba9[m HEAD@{419}: checkout: moving from master to xfa_kebranch
+[33m5464c1e75c8a9a4edfda1a640bcc79143b981f83[m HEAD@{420}: commit: xfa, extraction settings
+[33m8d591c4ce8e98c5d34cfb51f7d4057a1a363cae6[m HEAD@{421}: commit: sap connection, xis, de
+[33ma8483824c7eca6d28180ff1fe4efb59f275441a5[m HEAD@{422}: commit: xis, sap connection
+[33m318f1e2520b43350bdcd59bff2c1fc2f725f6f91[m HEAD@{423}: commit: xis, sap connection preface
+[33me415b4cba4f87fb47f25f87bb25cb39f678de578[m HEAD@{424}: commit: includes, extraction settings
+[33mc4ee972cf7db9ca613c64fb90afca4243424dfda[m HEAD@{425}: commit: editorial improvements, feedback after editorial deadline
+[33m6706f69ac4993764a1fc29135531b47557454e29[m HEAD@{426}: commit: Update json_flat-file.png
+[33mb333f0c8d7fbdd28595b043abcccfa10a8baa4a2[m HEAD@{427}: commit: broken link fixed
+[33m5a92893ccd21abc31a9566cecd14ec86d53fee00[m HEAD@{428}: commit (merge): Merge remote-tracking branch 'origin/json_destination'
+[33m333ec1c8ce8228795d868078526c0efa11b99449[m HEAD@{429}: checkout: moving from json_destination to master
+[33mcde54c4c9940f29ea1290656229df13d8be33134[m HEAD@{430}: commit: json_review_implementation
+[33m706a70ea6a9e05d980ae608264dac1daedcf0a10[m HEAD@{431}: checkout: moving from master to json_destination
+[33m333ec1c8ce8228795d868078526c0efa11b99449[m HEAD@{432}: commit: editorial changes, XRS Translation EN
+[33mc93c5581f3016e52890eb073e7a3d42093aebbf6[m HEAD@{433}: commit: azure storage facelift connection, csv new img
+[33m24d100bca6440ee843561c68e1dae4d0bf2a71dc[m HEAD@{434}: checkout: moving from json_destination to master
+[33m706a70ea6a9e05d980ae608264dac1daedcf0a10[m HEAD@{435}: checkout: moving from master to json_destination
+[33m24d100bca6440ee843561c68e1dae4d0bf2a71dc[m HEAD@{436}: commit: editorial improvements, de, destination settings
+[33mc283cac097589c0b7c78d970eeabdc29692c8c27[m HEAD@{437}: commit: de, settings destinations
+[33me335be86ab5b840727bf8313d9f5e89f53de6904[m HEAD@{438}: checkout: moving from json_destination to master
+[33m706a70ea6a9e05d980ae608264dac1daedcf0a10[m HEAD@{439}: checkout: moving from xfa_kebranch to json_destination
+[33mda6322d9fcb416e92ed35e81463cfaafaac2cba9[m HEAD@{440}: checkout: moving from master to xfa_kebranch
+[33me335be86ab5b840727bf8313d9f5e89f53de6904[m HEAD@{441}: commit: improvements settings opening
+[33me714ff3fde21d422503fdaad203c33883748ff9d[m HEAD@{442}: commit: old images removed, settings opening
+[33m3623fd52fabd390c84211d79bb06a446e9e35a4d[m HEAD@{443}: pull --verbose --progress origin master: Fast-forward
+[33m3cf39e4ec024d30ac7e6b381dd71412e0441dc3d[m HEAD@{444}: commit: flat file csv editorial
+[33m0efe42fe552c37217df3242e92c67ca1c0e66aea[m HEAD@{445}: checkout: moving from json_destination to master
+[33m706a70ea6a9e05d980ae608264dac1daedcf0a10[m HEAD@{446}: checkout: moving from master to json_destination
+[33m0efe42fe552c37217df3242e92c67ca1c0e66aea[m HEAD@{447}: commit: settings
+[33m205c718a1580845fb8375c03cf850f6a48a2e63e[m HEAD@{448}: checkout: moving from json_destination to master
+[33m706a70ea6a9e05d980ae608264dac1daedcf0a10[m HEAD@{449}: commit: editorial changes broken links
+[33m27bf66a29d98ca82e09be8ea25a7e8f442906301[m HEAD@{450}: commit: editorial changes
+[33mc1ea03fc2abd0b236361096b1b98402bf80f102a[m HEAD@{451}: commit: xu_destinations
+[33m57c172fad74551b9485fa708ce82e0ad3dd0d04b[m HEAD@{452}: commit: json
+[33m6618d8d388f8e6ddfc76e1ef7a754bedf2c806c6[m HEAD@{453}: commit: json flat settings
+[33mf06f39d3f564764ca37f2b0e1478375cd4aa5a9d[m HEAD@{454}: commit: http
+[33m219ec9968bd59ad394dd6072f0678c237868dfba[m HEAD@{455}: commit: json_http
+[33m205c718a1580845fb8375c03cf850f6a48a2e63e[m HEAD@{456}: Branch: renamed refs/heads/json_destinatopn to refs/heads/json_destination
+[33m205c718a1580845fb8375c03cf850f6a48a2e63e[m HEAD@{458}: checkout: moving from master to json_destinatopn
+[33m205c718a1580845fb8375c03cf850f6a48a2e63e[m HEAD@{459}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m2249f10d3b9a59088031570eeef21e4c83a825f2[m HEAD@{460}: commit: xfa img
+[33mfa12f61641c5ea7d309375cdd4b0868b86857fd3[m HEAD@{461}: checkout: moving from xfa_kebranch to master
+[33mda6322d9fcb416e92ed35e81463cfaafaac2cba9[m HEAD@{462}: commit: poc
+[33mbf602c6abe16ad8fd65901bc56e2ca25276d963f[m HEAD@{463}: checkout: moving from master to xfa_kebranch
+[33mfa12f61641c5ea7d309375cdd4b0868b86857fd3[m HEAD@{464}: commit: Update xtract_for_alteryx_tools.png
+[33m0c87c640ff994c29b5b1ca2f7e81f66691541942[m HEAD@{465}: checkout: moving from xfa_kebranch to master
+[33mbf602c6abe16ad8fd65901bc56e2ca25276d963f[m HEAD@{466}: commit: poc
+[33m8f32beabb8f5beb4dc9e9d044a314218e86d44bd[m HEAD@{467}: pull --verbose --progress origin xfa_kebranch: Fast-forward
+[33m86601addd6e7fede55d11c0e0ab9595cd75cb71f[m HEAD@{468}: pull --verbose --progress origin xfa_kebranch: Fast-forward
+[33m5bdb0cafdeee2a3c3468840e51e1d1df50e4e9ff[m HEAD@{469}: checkout: moving from master to xfa_kebranch
+[33m0c87c640ff994c29b5b1ca2f7e81f66691541942[m HEAD@{470}: checkout: moving from xfa_kebranch to master
+[33m5bdb0cafdeee2a3c3468840e51e1d1df50e4e9ff[m HEAD@{471}: commit: changes
+[33mc66826c9da60ca599711a4038cf3f638053df6a8[m HEAD@{472}: checkout: moving from master to xfa_kebranch
+[33m0c87c640ff994c29b5b1ca2f7e81f66691541942[m HEAD@{473}: commit: xis, de, snc en review
+[33m2811b7b567eab2563e577fa68ae7972c8d236b82[m HEAD@{474}: commit: img removed
+[33maba8f2e569edbf483be7b8d3e074f5bfc7d23920[m HEAD@{475}: merge xtract-is-snc: Merge made by the 'recursive' strategy.
+[33m39ab770132d93b32e52cd57eb8e20f3d44f0e19e[m HEAD@{476}: checkout: moving from xtract-is-snc to master
+[33m963c1935e4a440627aa3a9ba53af897aef9920fe[m HEAD@{477}: commit: review changes
+[33macf32cc20eae2fb642797aa33e680976334d15e7[m HEAD@{478}: checkout: moving from master to xtract-is-snc
+[33m39ab770132d93b32e52cd57eb8e20f3d44f0e19e[m HEAD@{479}: merge origin/review_connection_manager: Fast-forward
+[33mf35054fd65a8be144b61acb63ecdfbccf393b4a5[m HEAD@{480}: checkout: moving from review_connection_manager to master
+[33m39ab770132d93b32e52cd57eb8e20f3d44f0e19e[m HEAD@{481}: checkout: moving from master to review_connection_manager
+[33mf35054fd65a8be144b61acb63ecdfbccf393b4a5[m HEAD@{482}: checkout: moving from review_connection_manager to master
+[33m39ab770132d93b32e52cd57eb8e20f3d44f0e19e[m HEAD@{483}: pull --verbose --progress origin review_connection_manager: Fast-forward
+[33m6aeb86f3a84c1ec704d9bad34956b6a8634ef60c[m HEAD@{484}: checkout: moving from xtract-is-snc to review_connection_manager
+[33macf32cc20eae2fb642797aa33e680976334d15e7[m HEAD@{485}: checkout: moving from xtract-is-snc to xtract-is-snc
+[33macf32cc20eae2fb642797aa33e680976334d15e7[m HEAD@{486}: checkout: moving from review_connection_manager to xtract-is-snc
+[33m6aeb86f3a84c1ec704d9bad34956b6a8634ef60c[m HEAD@{487}: commit: connection manager
+[33mf35054fd65a8be144b61acb63ecdfbccf393b4a5[m HEAD@{488}: checkout: moving from master to review_connection_manager
+[33mf35054fd65a8be144b61acb63ecdfbccf393b4a5[m HEAD@{489}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33m8f2adbfb3f3eb14b1856f7769a89f82bea1727b4[m HEAD@{490}: commit: connection manager, toolbox
+[33mb11649a783b18e9a5c45d3fdd88c2d705b2cd5af[m HEAD@{491}: commit: changed img
+[33m766a9ad75dc5317c438f309f80d0ff34016ba711[m HEAD@{492}: commit: image change
+[33m2a247c711c46c3a2cd8156788b9057519a27fab7[m HEAD@{493}: commit: xis bereinigung
+[33mf86ee742e7b3f30dc1edd55652f5e40f5a3a75c4[m HEAD@{494}: commit: xis, bereinigung
+[33m76e69f789d96d033dacb77179890a0eb27139e95[m HEAD@{495}: commit: aggregate function
+[33m94bc8431fb4dec0d7d7c49616ef7465669dc743e[m HEAD@{496}: commit: sap customizing xfa
+[33m50a2a458b35fc0bdd3fa723a56397e4fb4837379[m HEAD@{497}: commit: xfa dead link
+[33m110f1d26c02d869f51e7f54d678e594b01e60f68[m HEAD@{498}: commit: sap customizing editorial xfa
+[33ma480c8f3c25dc5b2b08d8c9fcb4596d71756d75e[m HEAD@{499}: commit: editorial changes
+[33m4b7ec2929734039716038ed18f17077f4b431c60[m HEAD@{500}: commit: sap_customizing
+[33mf04e5f5e0ba32096af785602df76c9faf946907b[m HEAD@{501}: commit: sap_customizing
+[33mce68ad73b92039627f737092e852a4fa96ec7cb0[m HEAD@{502}: commit: Update custom-function-module-for-table-extraction.md
+[33m4b2a40dff9b53b0ed4e15737e18a1046691125d3[m HEAD@{503}: commit: Update custom-function-module-for-table-extraction.md
+[33m59dd9a9f853bc7d2971fca8d0f3f2843e020fd53[m HEAD@{504}: commit: sap customizing editorial corrections
+[33mc7119e0c5d343525e7f4639828476a445e00ad64[m HEAD@{505}: commit: cfm, update
+[33m2870d281cd823e84d4a0c341d45b436ed1fe4b2d[m HEAD@{506}: commit: include sap customizing
+[33m510989f23d8ef2810e85f4081b5b369d5b98e4b0[m HEAD@{507}: commit: having-bedingung; de
+[33m40b88769d6ad649cffef5c515c430de7f62fadac[m HEAD@{508}: commit: xis; query, deadlink
+[33mec5b6deaf7b6fd332ea3e086406b78a26b6bc0c7[m HEAD@{509}: commit: bc; deadlink
+[33me1667aef21fc02c7f2b852beb3125eeca8f39b07[m HEAD@{510}: merge origin/having_clause_review: Merge made by the 'recursive' strategy.
+[33m14e48dee9e6b0e9a86df1bc068b8de82e233a5ca[m HEAD@{511}: checkout: moving from having_clause_review to master
+[33m110255803a64b768deb90ece871b9fe869764a48[m HEAD@{512}: pull --verbose --progress origin having_clause_review: Fast-forward
+[33mb86e484f70d2acf9207a820d4f18343fde917b25[m HEAD@{513}: checkout: moving from having_clause_review to having_clause_review
+[33mb86e484f70d2acf9207a820d4f18343fde917b25[m HEAD@{514}: checkout: moving from master to having_clause_review
+[33m14e48dee9e6b0e9a86df1bc068b8de82e233a5ca[m HEAD@{515}: checkout: moving from having_clause_review to master
+[33mb86e484f70d2acf9207a820d4f18343fde917b25[m HEAD@{516}: commit: Update having-clause.md
+[33mdb2e0b11fce6fb1b8fa4effc6f89a01bfb7933ea[m HEAD@{517}: checkout: moving from master to having_clause_review
+[33m14e48dee9e6b0e9a86df1bc068b8de82e233a5ca[m HEAD@{518}: commit: server settings
+[33m8b1923ccfc605b284ec8626b7e7b67460c4816ee[m HEAD@{519}: commit: Update server_einstellungen_in_xu_3_x.md
+[33m1ea7c4694ad5083784d05fa9babae215ad62bf94[m HEAD@{520}: commit: de; include; server einstellungen
+[33m38043ae7c3a2895d040cb3a00d4a1b4b8531fb42[m HEAD@{521}: checkout: moving from having_clause_review to master
+[33mdb2e0b11fce6fb1b8fa4effc6f89a01bfb7933ea[m HEAD@{522}: commit: having clause review
+[33m38043ae7c3a2895d040cb3a00d4a1b4b8531fb42[m HEAD@{523}: checkout: moving from master to having_clause_review
+[33m38043ae7c3a2895d040cb3a00d4a1b4b8531fb42[m HEAD@{524}: commit: xis, xu server settings
+[33m62f0fbbd63633bac66ced13e08102c6cf753dd5e[m HEAD@{525}: pull --progress origin: Fast-forward
+[33mff453e5eccd765240d823b256c4ba2cf9c821dc5[m HEAD@{526}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m4e5b555e3c78630eb4c4daf685f90d3638a30034[m HEAD@{527}: commit: xis, table
+[33mefa4bca6aeed9fe0e26d7dcd413305acdf8705a7[m HEAD@{528}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33mbf4dac7d73d31a487e623d603009343ce6bbeec9[m HEAD@{529}: commit: xis, table
+[33m2c3eba957652a4694d7ff7e1d9691b4384752d5d[m HEAD@{530}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m0857bc3481d0e8eb2af3257025572f1d77b74f9f[m HEAD@{531}: commit: xis; table improvement
+[33mef6573f2c7094081f72d64c55bcfea4248f2027a[m HEAD@{532}: checkout: moving from xfa_kebranch to master
+[33mc66826c9da60ca599711a4038cf3f638053df6a8[m HEAD@{533}: commit: Update about-help-content-ts.md
+[33m8d009fb3fd5348cbf7b5f2804ff449a8e48afdd8[m HEAD@{534}: checkout: moving from master to xfa_kebranch
+[33mef6573f2c7094081f72d64c55bcfea4248f2027a[m HEAD@{535}: commit: xfa, requirements, ssi - hinweis nur 2012
+[33mb820342a6ed75a92f60fac5805dfd910fdc4d6e9[m HEAD@{536}: commit: table restrictions
+[33mf17dec3bbb962935d25702ec523c0c2bd2172212[m HEAD@{537}: commit: hunk
+[33m32bec1722e8b2714be1e9525b3648a82c7ab01dd[m HEAD@{538}: commit: reverse
+[33m6959beb45c8d3c672b516e8c1bbf4130fd6b9943[m HEAD@{539}: commit: Update requirements.md
+[33m0fcb27f9400f66feff972c2ee033b44926e2472e[m HEAD@{540}: commit: redshift editorial correction
+[33m0d0e2d6e0cbf29de2e55bccfe21e940b36c00690[m HEAD@{541}: checkout: moving from master to master
+[33m0d0e2d6e0cbf29de2e55bccfe21e940b36c00690[m HEAD@{542}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m65dbc3b12acb12759f9894d7cb042fde7d21750b[m HEAD@{543}: commit: customizing
+[33m52a0bbb67d50588332579bad1bef2aee28aaae95[m HEAD@{544}: checkout: moving from xfa_kebranch to master
+[33m8d009fb3fd5348cbf7b5f2804ff449a8e48afdd8[m HEAD@{545}: reset: moving to HEAD
+[33m8d009fb3fd5348cbf7b5f2804ff449a8e48afdd8[m HEAD@{546}: checkout: moving from master to xfa_kebranch
+[33m52a0bbb67d50588332579bad1bef2aee28aaae95[m HEAD@{547}: commit: dead link
+[33m1d5f0a8d69857857905ba82e4a75601d58fe9a00[m HEAD@{548}: commit: delta processing
+[33mac8c49d41a8162351fcd7a6051b44f6f6fee4c74[m HEAD@{549}: commit: editorial changes
+[33m280b38f0a432222971895a6c2e79e51fe29285c7[m HEAD@{550}: commit: Update delta-processing.md
+[33mc98ed2dc4e7a28219af08e694f646956ee6523b8[m HEAD@{551}: commit: editorial corrections
+[33m20ecfaccef4ca0632acbe6b997fb02974fa34efd[m HEAD@{552}: commit: de, merge, delta processing
+[33me7fab82a0914b290f4f16552e7eed3554a1aaf35[m HEAD@{553}: commit: delta processing, merge
+[33mc384ea18064fd6e6d9355048ea1238932a1396f7[m HEAD@{554}: checkout: moving from xfa_kebranch to master
+[33m8d009fb3fd5348cbf7b5f2804ff449a8e48afdd8[m HEAD@{555}: checkout: moving from master to xfa_kebranch
+[33m4698be2dc4b3e48d1253ea33bc3246fbb9a3a4eb[m HEAD@{556}: pull --verbose --progress origin master: Fast-forward
+[33mc500664f46a511ceae610c065fd68e8102664455[m HEAD@{557}: checkout: moving from xfa_kebranch to master
+[33m8d009fb3fd5348cbf7b5f2804ff449a8e48afdd8[m HEAD@{558}: commit: about this help
+[33mb7e31ee05e84c048153df28d848d144cf5746709[m HEAD@{559}: checkout: moving from sso-kerberos-deutsch to xfa_kebranch
+[33m78bdd9b250908f3fe3dad92f796bc1692e405163[m HEAD@{560}: checkout: moving from xfa_kebranch to sso-kerberos-deutsch
+[33mb7e31ee05e84c048153df28d848d144cf5746709[m HEAD@{561}: checkout: moving from sso-kerberos-deutsch to xfa_kebranch
+[33m78bdd9b250908f3fe3dad92f796bc1692e405163[m HEAD@{562}: checkout: moving from xfa_kebranch to sso-kerberos-deutsch
+[33mb7e31ee05e84c048153df28d848d144cf5746709[m HEAD@{563}: commit: changes
+[33m343bf6f28ed5f9f4d89e55a93bc21df3f660956a[m HEAD@{564}: checkout: moving from master to xfa_kebranch
+[33mc500664f46a511ceae610c065fd68e8102664455[m HEAD@{565}: checkout: moving from xfa_kebranch to master
+[33m343bf6f28ed5f9f4d89e55a93bc21df3f660956a[m HEAD@{566}: commit: ebene 1
+[33mbfd4ca3b48a229e691e0f64b310dd349b8ed94e2[m HEAD@{567}: checkout: moving from master to xfa_kebranch
+[33mc500664f46a511ceae610c065fd68e8102664455[m HEAD@{568}: reset: moving to HEAD
+[33mc500664f46a511ceae610c065fd68e8102664455[m HEAD@{569}: commit: xis, odp, img
+[33m43f15d1bd0767e264a5d6e2693a9d43359b5f5df[m HEAD@{570}: commit: editorial correction
+[33m3f4c0926132c726a09f67c4448a89dd097fd3ad1[m HEAD@{571}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33m402d11a11af1b4196a855acb464a06dd695ecbcf[m HEAD@{572}: commit: xis; odp; de/en einstieg
+[33m9e93b77e88fa6410b1cf15d96d00c7ed882964cb[m HEAD@{573}: commit: improved picture
+[33m935e875e31c68eda37274bb47fea32d76cdfb496[m HEAD@{574}: pull --verbose --progress origin master: Fast-forward
+[33mf9622818011b30e71321b1f0e5ee117168c9bfce[m HEAD@{575}: commit: Update ssis-migration.md
+[33m7d2f98bfb71cfc03ea7208efe2732e723aa3e8f2[m HEAD@{576}: commit: picture update
+[33me1473c57722d963b09d01bbd76f35a03ac9ce49c[m HEAD@{577}: commit: sql 2019
+[33macb02d1617342dca43464a5ce5a28146e2000509[m HEAD@{578}: merge origin/azure_storage: Merge made by the 'recursive' strategy.
+[33mc7fef3d3f14ecab64e0fae79e67ea0edf7c77e90[m HEAD@{579}: checkout: moving from azure_storage to master
+[33m2e0df5aad37fef78af5632e55b8c795112e0d3d3[m HEAD@{580}: commit: editorial changes
+[33m135a64b230379d6fc5a36d32d5b0c08afdf5d9b4[m HEAD@{581}: checkout: moving from azure_storage to azure_storage
+[33m135a64b230379d6fc5a36d32d5b0c08afdf5d9b4[m HEAD@{582}: reset: moving to HEAD
+[33m135a64b230379d6fc5a36d32d5b0c08afdf5d9b4[m HEAD@{583}: checkout: moving from azure_storage to azure_storage
+[33m135a64b230379d6fc5a36d32d5b0c08afdf5d9b4[m HEAD@{584}: pull --verbose --progress origin azure_storage: Fast-forward
+[33mda70eb8133b7cd0d110689c6dee37487ad64f252[m HEAD@{585}: checkout: moving from master to azure_storage
+[33mc7fef3d3f14ecab64e0fae79e67ea0edf7c77e90[m HEAD@{586}: commit: xu, de, debug logging
+[33mce79ff8041d4659887dd2fb1c954ed89b243b8ee[m HEAD@{587}: commit: xu, logging
+[33m22fba0fd67577a61457444dc79e19d87cb1d25f6[m HEAD@{588}: checkout: moving from sso-kerberos-deutsch to master
+[33m78bdd9b250908f3fe3dad92f796bc1692e405163[m HEAD@{589}: commit: Übersetzung sso Kerberos. Minimale redaktionelle Anpassungen im EN
+[33m22fba0fd67577a61457444dc79e19d87cb1d25f6[m HEAD@{590}: checkout: moving from master to sso-kerberos-deutsch
+[33m22fba0fd67577a61457444dc79e19d87cb1d25f6[m HEAD@{591}: reset: moving to HEAD
+[33m22fba0fd67577a61457444dc79e19d87cb1d25f6[m HEAD@{592}: commit: editorial improvements
+[33mb73e45deea7fac1808c0a51627352aa8c308eb1d[m HEAD@{593}: checkout: moving from azure_storage to master
+[33mda70eb8133b7cd0d110689c6dee37487ad64f252[m HEAD@{594}: commit: Translation azure storage; small editorial changes in EN
+[33m04937259e1ec4b21baab15b746d01e84f5f39e46[m HEAD@{595}: checkout: moving from master to azure_storage
+[33mb73e45deea7fac1808c0a51627352aa8c308eb1d[m HEAD@{596}: reset: moving to HEAD
+[33mb73e45deea7fac1808c0a51627352aa8c308eb1d[m HEAD@{597}: pull --progress origin: Fast-forward
+[33m81b8c190103361ba4996c93994cec5ea5faa1f29[m HEAD@{598}: commit: Update db-merge-data.md
+[33m3d668c53622953dd137c268b28ec0145588a0828[m HEAD@{599}: commit: snowflake merging data
+[33mf9579fa29c36aac8c350677bbfe12e76fd1d741e[m HEAD@{600}: commit: editorial changes
+[33m669af3c4811b61db228c4dad544f4e7eb991b900[m HEAD@{601}: commit: general settings
+[33m4515af3871e9db35affe57a69edc1b28a7bc5c87[m HEAD@{602}: pull --verbose --progress origin master: Fast-forward
+[33mded112ea30e7dc3a361219d7d11c1313ce83af09[m HEAD@{603}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33m535e1192ee515518587bf1f8c6ece3c6a0293f99[m HEAD@{604}: merge origin/azure_storage: Merge made by the 'recursive' strategy.
+[33m6417b85967cd7e303c65a62e26fe1e377b7ac269[m HEAD@{605}: checkout: moving from master to master
+[33m6417b85967cd7e303c65a62e26fe1e377b7ac269[m HEAD@{606}: checkout: moving from azure_storage to master
+[33m04937259e1ec4b21baab15b746d01e84f5f39e46[m HEAD@{607}: checkout: moving from master to azure_storage
+[33m6417b85967cd7e303c65a62e26fe1e377b7ac269[m HEAD@{608}: checkout: moving from master to master
+[33m6417b85967cd7e303c65a62e26fe1e377b7ac269[m HEAD@{609}: commit: ssis 2019
+[33mdc9f0d3ff6895ddfb47cffcd2282efabd650b001[m HEAD@{610}: pull --progress origin: Fast-forward
+[33mdeac21498db26f7044a15ee4039d8f5d7b0c285d[m HEAD@{611}: checkout: moving from master to master
+[33mdeac21498db26f7044a15ee4039d8f5d7b0c285d[m HEAD@{612}: checkout: moving from azure_storage to master
+[33m04937259e1ec4b21baab15b746d01e84f5f39e46[m HEAD@{613}: checkout: moving from master to azure_storage
+[33mdeac21498db26f7044a15ee4039d8f5d7b0c285d[m HEAD@{614}: reset: moving to HEAD
+[33mdeac21498db26f7044a15ee4039d8f5d7b0c285d[m HEAD@{615}: commit: image
+[33m7407ee132032400ed3bc1dd1b306e4fdb9bbf88b[m HEAD@{616}: commit: change
+[33m463a7ef2dfbfdd6d7f6bab5aaa7f7a40795d9a76[m HEAD@{617}: checkout: moving from master to master
+[33m463a7ef2dfbfdd6d7f6bab5aaa7f7a40795d9a76[m HEAD@{618}: checkout: moving from azure_storage to master
+[33m04937259e1ec4b21baab15b746d01e84f5f39e46[m HEAD@{619}: reset: moving to HEAD
+[33m04937259e1ec4b21baab15b746d01e84f5f39e46[m HEAD@{620}: commit: editorial_review
+[33m90817b247fb15517cb65a5df9b5e671130b79edd[m HEAD@{621}: checkout: moving from master to azure_storage
+[33m463a7ef2dfbfdd6d7f6bab5aaa7f7a40795d9a76[m HEAD@{622}: reset: moving to HEAD
+[33m463a7ef2dfbfdd6d7f6bab5aaa7f7a40795d9a76[m HEAD@{623}: pull --verbose --progress origin master: Fast-forward
+[33mcc18bef6d4184dfa7318c60e7cd28b11e532b9d6[m HEAD@{624}: checkout: moving from debug-logging to master
+[33ma44b670c1238697b44e685860787bfe8cf12e617[m HEAD@{625}: commit: editorial review
+[33m17e2292a7cb3fb96ee74e37e9321a579d4f86ba9[m HEAD@{626}: checkout: moving from debug-logging to debug-logging
+[33m17e2292a7cb3fb96ee74e37e9321a579d4f86ba9[m HEAD@{627}: checkout: moving from master to debug-logging
+[33mcc18bef6d4184dfa7318c60e7cd28b11e532b9d6[m HEAD@{628}: commit: fork process hinzugefügt
+[33m07f2da58e933018edafc454bac8b9c1580f61588[m HEAD@{629}: pull --verbose --progress origin master: Fast-forward
+[33mb0837fa9c71d598b94220363913ed49cd8eceeeb[m HEAD@{630}: checkout: moving from ECS-Core-TA-Rec-Deutsch to master
+[33m4c304eb47860604947c86a88b1708279aacc4320[m HEAD@{631}: commit: test
+[33m582a70b903d00dd22ba86d1de020401e874ec5fa[m HEAD@{632}: checkout: moving from review_test_2 to ECS-Core-TA-Rec-Deutsch
+[33m2fbd380a1f314501dd1d4c60625cb4434d7e6093[m HEAD@{633}: commit: test 2
+[33m60a0d002558290ed34516720ce6d0acc12c14bd3[m HEAD@{634}: commit: test 2
+[33md12e98c2349c19f8bc18c1c51bb9b76713471935[m HEAD@{635}: checkout: moving from review_test_merge to review_test_2
+[33md12e98c2349c19f8bc18c1c51bb9b76713471935[m HEAD@{636}: checkout: moving from master to review_test_merge
+[33m8cbc8233d186708410e51556c66f20f611033a1d[m HEAD@{637}: reset: moving to HEAD
+[33m8cbc8233d186708410e51556c66f20f611033a1d[m HEAD@{638}: checkout: moving from review_test_merge to master
+[33md12e98c2349c19f8bc18c1c51bb9b76713471935[m HEAD@{639}: reset: moving to HEAD
+[33md12e98c2349c19f8bc18c1c51bb9b76713471935[m HEAD@{640}: commit: Review test merge
+[33m8cbc8233d186708410e51556c66f20f611033a1d[m HEAD@{641}: checkout: moving from master to review_test_merge
+[33m8cbc8233d186708410e51556c66f20f611033a1d[m HEAD@{642}: commit: xis ssis migration
+[33m9c2c17f829f5475a1df3054bef9c9355ce67792a[m HEAD@{643}: commit: link correction
+[33mf7ac0ecb74f06d20eae62e12a15a6b72c59691e0[m HEAD@{644}: commit: xu, gen settings, xfa deadlink
+[33m195c2c2e9082fd4bd46a34826ee0958f39b3f3fc[m HEAD@{645}: commit: update of editorial guidelines
+[33m5671241483eaf802ceaed5f9ba1f97c3ec35bf63[m HEAD@{646}: commit: merge img update
+[33m3ae6c8f76af29896911bc9fe113e960aa908de93[m HEAD@{647}: commit: clean up xis
+[33m8c911378284771a5f0ac19af288796b376ee5728[m HEAD@{648}: commit: xis clean up
+[33m34685361ccd1a23c82bf266b69aca177e0a8480b[m HEAD@{649}: commit: xfa bapi
+[33m1fef38a2ff1cba2a55a87200b2f7195918803845[m HEAD@{650}: commit: bapi xfa de
+[33m5e34b03851f2bcf3c6a7fe76b7c532e020314a56[m HEAD@{651}: commit: bapi xfa de
+[33me0ec22d68b66997d265457973d059fa97e538b27[m HEAD@{652}: commit: xfa_bapi platzhalter
+[33m58d84495287d9a44ec375fc150def34de44f578a[m HEAD@{653}: commit: edit
+[33m41235aeb172c584bd635ecb6bbf63394e6863f07[m HEAD@{654}: merge sso-with-kerberos: Merge made by the 'recursive' strategy.
+[33m62b83c212ca53214959e416b15db5734d246dc30[m HEAD@{655}: checkout: moving from sso-with-kerberos to master
+[33medc799f7e8f091a07d4d2abe674b8d3bb48fa508[m HEAD@{656}: commit: editorial review sso kerberos
+[33mc25207275919527951afa1ae9ee4ed8b55853432[m HEAD@{657}: checkout: moving from master to sso-with-kerberos
+[33m62b83c212ca53214959e416b15db5734d246dc30[m HEAD@{658}: commit: merge
+[33m79ccd477217fa75ceeaddda760510b8b3f65e6ed[m HEAD@{659}: checkout: moving from sso-with-kerberos to master
+[33mc25207275919527951afa1ae9ee4ed8b55853432[m HEAD@{660}: reset: moving to HEAD
+[33mc25207275919527951afa1ae9ee4ed8b55853432[m HEAD@{661}: checkout: moving from master to sso-with-kerberos
+[33m79ccd477217fa75ceeaddda760510b8b3f65e6ed[m HEAD@{662}: checkout: moving from review-merge-for-db to master
+[33m79ccd477217fa75ceeaddda760510b8b3f65e6ed[m HEAD@{663}: checkout: moving from master to review-merge-for-db
+[33m79ccd477217fa75ceeaddda760510b8b3f65e6ed[m HEAD@{664}: pull --verbose --progress origin master: Fast-forward
+[33m93297a69d440ee9c12b47b2edf21d666991481b0[m HEAD@{665}: checkout: moving from review-merge-for-db to master
+[33m79ccd477217fa75ceeaddda760510b8b3f65e6ed[m HEAD@{666}: checkout: moving from review-merge-for-db to review-merge-for-db
+[33m79ccd477217fa75ceeaddda760510b8b3f65e6ed[m HEAD@{667}: pull --verbose --progress origin master: Merge made by the 'recursive' strategy.
+[33m46f17ab6d327b059f35032dabed4147f0dc73991[m HEAD@{668}: commit: corrections
+[33m93076dff72a224d732f61f8aa0b967fcf7b8fee9[m HEAD@{669}: pull --verbose --progress origin review-merge-for-db: Fast-forward
+[33m17d0b57b22fee4228e5f14ce925c10726000aeb2[m HEAD@{670}: commit: review_ct
+[33m2c3500e1045f27fcd72cd24df85ed1b60803f591[m HEAD@{671}: checkout: moving from master to review-merge-for-db
+[33m93297a69d440ee9c12b47b2edf21d666991481b0[m HEAD@{672}: reset: moving to HEAD
+[33m93297a69d440ee9c12b47b2edf21d666991481b0[m HEAD@{673}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m688692d4db151e0420132fe84ecd287aeed5faa1[m HEAD@{674}: commit: logging
+[33ma9997dc6ee827ebb63e8f7caab0cc31da76d60f0[m HEAD@{675}: commit: improvements
+[33me44f92b62e41fd90751f690c0aea9ea73463bdd5[m HEAD@{676}: commit: improvements dead links
+[33m388ac10c85a3c23e2a305c5817647ef945499814[m HEAD@{677}: commit: dead links, editorial improvements
+[33mfed60ba33130523343c97cd7562d4042918edbca[m HEAD@{678}: commit: deadlink
+[33mfe0f268965c31fc38a790bcbfdf2ffdd958550ea[m HEAD@{679}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m3ad0c729745669bbf518f4cdcaeb850473b688ad[m HEAD@{680}: commit: Create sso-with-sap-logon-ticket.md
+[33maa1e0a8b9567ecf63169253681afcfbf4bab0f46[m HEAD@{681}: checkout: moving from review-merge-for-db to master
+[33m2c3500e1045f27fcd72cd24df85ed1b60803f591[m HEAD@{682}: checkout: moving from master to review-merge-for-db
+[33maa1e0a8b9567ecf63169253681afcfbf4bab0f46[m HEAD@{683}: commit: dead links
+[33mc14435497356ff54fa0f4c536be86a6b85c8eaf1[m HEAD@{684}: commit: deadlink, editorial
+[33m284c267def7ec8d30d4b606299daa866c6dc61f8[m HEAD@{685}: commit: dead links, editorial corrections
+[33m59c8db2e9ddd61bfc4d92fe815eba8ffbed58db6[m HEAD@{686}: commit: dead links, editorial changes
+[33mac5ba5482b2cf0899a52aef77b019d6511407547[m HEAD@{687}: commit: editorial changes, deadlink
+[33mac140866eb39e8d022c46ffb9755d7dccfd1ea0d[m HEAD@{688}: checkout: moving from review-merge-for-db to master
+[33mac140866eb39e8d022c46ffb9755d7dccfd1ea0d[m HEAD@{689}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m543f8ea9f562f0705ed5bebe2a0bc68a72eb5421[m HEAD@{690}: commit: Update bw-cube-extraction-define.md
+[33m9c4d91b0010a62b20c484b6a7c8375d96672a6c6[m HEAD@{691}: pull --progress origin: Fast-forward
+[33m27730b17817d958c35b0f40b1bce6f44d85ab415[m HEAD@{692}: checkout: moving from master to master
+[33m27730b17817d958c35b0f40b1bce6f44d85ab415[m HEAD@{693}: checkout: moving from xfa_kebranch to master
+[33mbfd4ca3b48a229e691e0f64b310dd349b8ed94e2[m HEAD@{694}: pull --progress origin: Fast-forward
+[33m9fa5746f890ced75ea8ef7200d47fe267f1d840a[m HEAD@{695}: commit: test 2
+[33m3d0bdc21750dcef459e45a1a857ab93a004ecd35[m HEAD@{696}: checkout: moving from master to xfa_kebranch
+[33m27730b17817d958c35b0f40b1bce6f44d85ab415[m HEAD@{697}: commit: Update installation.md
+[33m47665b62e85bb0b90ce93bb4a9dbb357eaaca399[m HEAD@{698}: commit: editorial correction
+[33m12cb295116ba4e3704e7db264f127d32f68898a2[m HEAD@{699}: commit: xu; setup
+[33m0a6945ceeca18988a18e94a6a1739f8cf9370717[m HEAD@{700}: commit: Editorial corrections
+[33mb4731af1efc0295886dc63f11a8ef8723bfa0030[m HEAD@{701}: pull --progress origin: Fast-forward
+[33m6af46b108631f0a4c2b531c27c23dbfe87847ce7[m HEAD@{702}: commit: dead link
+[33m8c3477ad3f1190b9abbd96ad60f98ddb2a88bf21[m HEAD@{703}: commit: dead link
+[33m095c1679698ebe17778bae4f4c519b5c398cdab5[m HEAD@{704}: commit: deadink
+[33m993d89ae5591ab83574f023bddcd2785e5433ec2[m HEAD@{705}: commit: editorial changes
+[33m18ce08752f72d2b5d4f8a596ba314ea0329bdc4c[m HEAD@{706}: pull --progress origin: Fast-forward
+[33m64868dc5b46db3e5da678ee68db8f1467213d500[m HEAD@{707}: pull --progress origin: Fast-forward
+[33m32ef2d204b6a076a7c4dc9e772295982fda6721d[m HEAD@{708}: commit: repair broken link
+[33m82a4b4c3493af2b00ba712d86e24c8d0663f3923[m HEAD@{709}: commit: merging data - db
+[33mc1b943b0cdc08a22ffc18549e91eef812804c0a5[m HEAD@{710}: commit: merge
+[33m59fa67fe1400f3d09334e7907dd97fc04dff3355[m HEAD@{711}: commit: .net 472 link
+[33m55ddfd8c145e72f045303463bced15d23e42d186[m HEAD@{712}: commit: 4.7.1 .NET framework
+[33m53dc0f1051900321c9c2c4736f75619e72c70991[m HEAD@{713}: commit: table & fields
+[33m95ebfe3c41f0986e3da9c036f8719c6a0390a7c4[m HEAD@{714}: commit: Update tabellen_und_felder.md
+[33meff273cafa33ecdded5c3d0b3684b0e75ff524a0[m HEAD@{715}: commit: tables and fields
+[33md5307fb31d262af8e7a165bd5b7fb8d86c88eed3[m HEAD@{716}: commit: include tables and fields angepasst
+[33m158a6f378da8c23f34a47a921fa50c2f6ec2eada[m HEAD@{717}: commit: include tables and fields conversion routines
+[33mb90f5c90547dcec0b8d38f46ec82f562a43df796[m HEAD@{718}: commit: _include anpassung, column name stlye
+[33mff6a9319420d9310acacca6d5fee124e18e1152c[m HEAD@{719}: commit: xu, de; sp settings
+[33m2a8d567692b640fe3a33951bd9b25cb4d0ff7ff1[m HEAD@{720}: pull --progress origin: Fast-forward
+[33m40736387a44bc49298bcc59c7d08a18ab43407b6[m HEAD@{721}: pull --progress origin: Fast-forward
+[33m7892a00b53ea7403f9dcb18131e524cb92ca2f6e[m HEAD@{722}: commit: merge update
+[33m85f128630a209e3f0f70dba17e37f84a7cde5367[m HEAD@{723}: commit: include, merge
+[33m047a8b2df45ca1e85cd53984fb0bbb9b50b0c456[m HEAD@{724}: commit: Update db-merge-data.md
+[33mcfa4bc2fe5128175f81a55773d68ee9d39dcd364[m HEAD@{725}: commit: merge update
+[33m48f2b141e5000e781c547eb03e9f9f875fd45b92[m HEAD@{726}: pull --progress origin: Fast-forward
+[33m271e92cb623fe4aee7bc350db8e650f0b63e92dd[m HEAD@{727}: commit: changes to merge
+[33me5beac66544d3529890a2affed6f3beede377edb[m HEAD@{728}: commit: changes to merge
+[33m1664a6c38bc5cbeb8cfa6bcdeab3d6e5da546b00[m HEAD@{729}: commit: update merge
+[33m929fb2845d8590eb4ba6192c09b2674514c74100[m HEAD@{730}: commit: postgres merge
+[33m070d4a76d889a6ad3a0c9faffda9d545a219f38b[m HEAD@{731}: commit: Update x.509-zertifikat-installieren.md
+[33m964297376db4370f4a729885f3ddcdaf7cc02e82[m HEAD@{732}: commit: sql server include inserted
+[33mc3e1d9f35dda9f5ecfa37902a18c41393ab5f8e2[m HEAD@{733}: commit: merge data include created
+[33m20ce4ec18066e9556caebdbe46497098ee7ae0d6[m HEAD@{734}: commit: ERP connect Systemvoraussetzungen
+[33m4a39fdc89d0ad9c3c398e1bd62b4830e3e5c24a9[m HEAD@{735}: commit: Update extraktionsparameter.md
+[33m6360165519603f7c3a4a6643071e9d214b37208f[m HEAD@{736}: commit: de; xu; extraktionsparameter anpassung
+[33m8c06ba4f47f34726e3e6b35dd982a7b051f7aa3f[m HEAD@{737}: commit: dead link
+[33m0a3aecdd42821f916569f5a2b8446b036fdc509f[m HEAD@{738}: commit: xu, EN changes, DE- translation extraction parameters
+[33mbad04b2855344b90174632b7c1ee93253161f522[m HEAD@{739}: commit: small corrections
+[33m7e9b8bc8e88faf78647665225996ab9df03b9494[m HEAD@{740}: commit: dead link update
+[33m6ebfd7cf4bc7155f386964a68e0d204bc7c82f2c[m HEAD@{741}: commit: dead links removed
+[33m944b3f774ad41f3fd3b7363ac2245deb46e25297[m HEAD@{742}: checkout: moving from master to master
+[33m944b3f774ad41f3fd3b7363ac2245deb46e25297[m HEAD@{743}: checkout: moving from master to master
+[33m944b3f774ad41f3fd3b7363ac2245deb46e25297[m HEAD@{744}: checkout: moving from master to master
+[33m944b3f774ad41f3fd3b7363ac2245deb46e25297[m HEAD@{745}: pull --verbose --progress origin master: Fast-forward
+[33me23966480afac1b6c37f9487ad3d346d48526851[m HEAD@{746}: commit: dead links, wrong linking DE/EN
+[33m6dd7b855b03823fe50b3a91c1fed77528b0e0f73[m HEAD@{747}: commit: Update extraction-parameters.md
+[33md05db2ff92c2934e43d0100cbf833f087d453e26[m HEAD@{748}: checkout: moving from master to custom-param
+[33m19f02006ade33baff28eaa8d7b30a2c271d89123[m HEAD@{749}: revert: Revert "paramter changes"
+[33m98a31fcba37950c4296b8eba0d6b2975a0e727dc[m HEAD@{750}: commit: paramter changes
+[33m6941bd52d80831590829d1171ca68558954c31db[m HEAD@{751}: checkout: moving from master to master
+[33m6941bd52d80831590829d1171ca68558954c31db[m HEAD@{752}: reset: moving to HEAD
+[33m6941bd52d80831590829d1171ca68558954c31db[m HEAD@{753}: commit: initi
+[33m304c1115922509897a0ee0b5d8e791a01299cf87[m HEAD@{754}: checkout: moving from custom-param to master
+[33md05db2ff92c2934e43d0100cbf833f087d453e26[m HEAD@{755}: reset: moving to HEAD
+[33md05db2ff92c2934e43d0100cbf833f087d453e26[m HEAD@{756}: checkout: moving from master to custom-param
+[33m304c1115922509897a0ee0b5d8e791a01299cf87[m HEAD@{757}: checkout: moving from custom-param to master
+[33md05db2ff92c2934e43d0100cbf833f087d453e26[m HEAD@{758}: reset: moving to HEAD
+[33m304c1115922509897a0ee0b5d8e791a01299cf87[m HEAD@{759}: pull --verbose --progress origin master: Fast-forward
+[33mb1f45fa76b48063a477f7382936a6fd4795ebcff[m HEAD@{760}: commit: Update table-join.md
+[33m2d886c7cdaa47e528c485387c7f5149836e8717a[m HEAD@{761}: commit: Update table-join.md
+[33m190e29e938117fb03983e8cf3d309352b7ab01ef[m HEAD@{762}: commit: editorial changes
+[33m2f05eaa4179cf87d8f695a6b1b6792718beb77ed[m HEAD@{763}: commit: dead link removed
+[33m67aa98831e75484c9578f9c6773b0187cf19786a[m HEAD@{764}: commit: dead link
+[33m0383447ec265aaf84c9029bd8deac33e6fda6b26[m HEAD@{765}: commit: dead link + editorial
+[33m51887baf60c10e31fee61518f963cc2b0230f5e2[m HEAD@{766}: commit: deadlink editorial
+[33m361ddb7511f4f40f28fe1b33383b6f1e89413ded[m HEAD@{767}: commit: deadlink remove img
+[33m0fdd479a94e8820b26f37e67969f3404bbec8961[m HEAD@{768}: commit: deadlink img
+[33m12fec290666e4f3152f266fbd8b6060025b0934f[m HEAD@{769}: revert: Revert "dead link, img"
+[33mc927eb75aadf51eab053ddf92d48f2e183835fff[m HEAD@{770}: revert: Revert "dead links removed"
+[33md49ff0bc0e69ad7f3489bc5aadd1f96d4f8451ca[m HEAD@{771}: commit: dead link, img
+[33mf4d92951f0eac98570dd91d234e5b1abe1002bc0[m HEAD@{772}: commit: dead links removed
+[33m3467116213375dbc2d84ab590cbc13404f6f3f4b[m HEAD@{773}: commit: img_edit
+[33m3731dc4d8a1e2ad3027b66c0b265c727850b3d99[m HEAD@{774}: commit: img replace
+[33m350e895eb395d967b0edbd666c58384c82ebbfe7[m HEAD@{775}: checkout: moving from custom-param to master
+[33ma948f86452154d83cb1ff91a99ae4bf1cc5d6e1e[m HEAD@{776}: commit: Source, Custom parameter
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{777}: checkout: moving from 300cf3aca3ca9d7f5787a6b6b2f0234183d54859 to custom-param
+[33m300cf3aca3ca9d7f5787a6b6b2f0234183d54859[m HEAD@{778}: checkout: moving from custom-param to 300cf3aca3ca9d7f5787a6b6b2f0234183d54859
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{779}: checkout: moving from master to custom-param
+[33m350e895eb395d967b0edbd666c58384c82ebbfe7[m HEAD@{780}: commit: Update where-clause.md
+[33m6daacabd1f8f5042f6e9ce70b05620335b27519a[m HEAD@{781}: commit: removed images
+[33m17b23eac13f57a49535684a95282a4051ff391fb[m HEAD@{782}: commit: removed imgs
+[33m5d25d26186fa5755219da24850ac2f304f6b7363[m HEAD@{783}: revert: Revert "removed images"
+[33ma764fc4eacaea2ea656c17b5f4fc4083db98a12b[m HEAD@{784}: checkout: moving from master to master
+[33ma764fc4eacaea2ea656c17b5f4fc4083db98a12b[m HEAD@{785}: commit: removed images
+[33m9469d376786b2430b6fcd27f330b963180a6943b[m HEAD@{786}: checkout: moving from custom-param to master
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{787}: reset: moving to HEAD
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{788}: checkout: moving from master to custom-param
+[33m9469d376786b2430b6fcd27f330b963180a6943b[m HEAD@{789}: checkout: moving from custom-param to master
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{790}: reset: moving to HEAD
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{791}: checkout: moving from custom-param to custom-param
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{792}: checkout: moving from master to custom-param
+[33m9469d376786b2430b6fcd27f330b963180a6943b[m HEAD@{793}: checkout: moving from 300cf3aca3ca9d7f5787a6b6b2f0234183d54859 to master
+[33m300cf3aca3ca9d7f5787a6b6b2f0234183d54859[m HEAD@{794}: checkout: moving from custom-param to 300cf3aca3ca9d7f5787a6b6b2f0234183d54859
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{795}: checkout: moving from custom-param to custom-param
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{796}: checkout: moving from custom-param to custom-param
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{797}: checkout: moving from custom-param to custom-param
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{798}: checkout: moving from custom-param to custom-param
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{799}: checkout: moving from custom-param to custom-param
+[33m03c2c448ff75f1915fa853133e40e98411f38b65[m HEAD@{800}: checkout: moving from master to custom-param
+[33m9469d376786b2430b6fcd27f330b963180a6943b[m HEAD@{801}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m7cb430373c2621ca78c5c02a89908043f3163bdd[m HEAD@{802}: commit: editorial correction
+[33m7836e8b28eca58aec4b681ba4361ea8fd99fbd7b[m HEAD@{803}: pull --progress origin: Fast-forward
+[33m573326317b4f0fa992bd27224a2d9f83cbe525ee[m HEAD@{804}: checkout: moving from custom-param to xfa
+[33ma6046a10418369f837103c2dd05e4f3379b39308[m HEAD@{805}: reset: moving to HEAD
+[33ma6046a10418369f837103c2dd05e4f3379b39308[m HEAD@{806}: checkout: moving from xfa to custom-param
+[33m573326317b4f0fa992bd27224a2d9f83cbe525ee[m HEAD@{807}: reset: moving to HEAD
+[33m573326317b4f0fa992bd27224a2d9f83cbe525ee[m HEAD@{808}: checkout: moving from master to xfa
+[33m573326317b4f0fa992bd27224a2d9f83cbe525ee[m HEAD@{809}: pull: Fast-forward
+[33m879b643836260695eae53b3bb7998c49653b4557[m HEAD@{810}: checkout: moving from custom-param to master
+[33ma6046a10418369f837103c2dd05e4f3379b39308[m HEAD@{811}: reset: moving to HEAD
+[33ma6046a10418369f837103c2dd05e4f3379b39308[m HEAD@{812}: commit: Create xu_run_extraction_param_gen.png
+[33mdcb9c5c62dd8fb8b0cf8e22eb5857f62d247f722[m HEAD@{813}: commit: param
+[33m0740ccde0897e0d2b00e60dc81a8975f3cc2ee69[m HEAD@{814}: commit: custom parameter
+[33m879b643836260695eae53b3bb7998c49653b4557[m HEAD@{815}: checkout: moving from master to custom-param
+[33m879b643836260695eae53b3bb7998c49653b4557[m HEAD@{816}: pull --progress origin: Fast-forward
+[33m4ef3bf4356421bb8671ead7005d8e5e567cb70e0[m HEAD@{817}: commit: Delete editorial_process.md
+[33mf674864119c133e21d767ac19f7f31b2ebe92992[m HEAD@{818}: commit: Update theobald_onlinehelplogo.png
+[33mf40aef3d7cb842940e5dd2e06653ae0d4dd3fc66[m HEAD@{819}: commit: dead link correction
+[33m9fdcad745b253f9b9ed50e152eeb3572cf175a08[m HEAD@{820}: commit: deadlink correction
+[33m91191ed6538c687b9a7a0357cb7ee80168c70a6b[m HEAD@{821}: commit: dead link correction
+[33mc0835feb2241a034ca77132e6c5b9edf742efe54[m HEAD@{822}: commit: image editorial correction
+[33ma121e0d32e2e61147bc3867e0e64406d65626ead[m HEAD@{823}: commit: dead link correction
+[33mfa4965259ae8274a7849ea1aca26ead8df5565ed[m HEAD@{824}: commit: dead link correction
+[33maadbc820c7cc597f0997c4245f83baf5c683039c[m HEAD@{825}: commit: dead link correction
+[33m03284c23de64a57e994c5e0e250d2a6e8902dfff[m HEAD@{826}: commit: dead link correction
+[33m0108dd721a886154d29d7df07e7dc59191b52a36[m HEAD@{827}: commit: dead link correction
+[33mb016bf5f60e5803ca5ad7a72f57229da9b716a8b[m HEAD@{828}: commit: OData dead link
+[33m55d34540f69e25697afbf6c70fbfc6dc09b1aed6[m HEAD@{829}: commit: dead link correction
+[33mb96c330aba2b62014019863f01f8519c5d2bdf42[m HEAD@{830}: pull --progress origin: Fast-forward
+[33mf4f9ed04cc2ff649888627699d609bb76a2381b2[m HEAD@{831}: commit: de, teradata obsolete
+[33maebd79b9d9a8d221a79b98536cef60f93c417474[m HEAD@{832}: commit: Delete teradata.md.obsolete
+[33m300f74f2f1ebd9224784a612c7a9a1f9896649f4[m HEAD@{833}: commit: teradata
+[33m04da7cab436c12afc207f4b22587a5db53d5ab70[m HEAD@{834}: commit: teradata link removed
+[33mcacbdfe486a4fb4515b4bb27bd416a8d5b8ffed4[m HEAD@{835}: commit: removed teradata link
+[33ma1fcf46fdfbdb75e897a295c083a087c659821f1[m HEAD@{836}: commit: teradara
+[33m8a22faa60d1f6b6682488df25ff1798cca53a3d0[m HEAD@{837}: checkout: moving from testyw to master
+[33m00979384917eb1cb2a12640c5968d9331db26c56[m HEAD@{838}: checkout: moving from testyw to testyw
+[33m00979384917eb1cb2a12640c5968d9331db26c56[m HEAD@{839}: checkout: moving from master to testyw
+[33m8a22faa60d1f6b6682488df25ff1798cca53a3d0[m HEAD@{840}: commit: teradata
+[33m00979384917eb1cb2a12640c5968d9331db26c56[m HEAD@{841}: pull --verbose --progress origin testyw: Fast-forward
+[33mfdb1090bcb801441e9cff6fb0e0cda1b9052f703[m HEAD@{842}: checkout: moving from testyw to master
+[33m00979384917eb1cb2a12640c5968d9331db26c56[m HEAD@{843}: commit: Test MRB
+[33mfdb1090bcb801441e9cff6fb0e0cda1b9052f703[m HEAD@{844}: checkout: moving from master to review_sap-queries
+[33mfdb1090bcb801441e9cff6fb0e0cda1b9052f703[m HEAD@{845}: commit: teradata removed
+[33md98872fc111d965aa9e72d0e43bf1b63c8d20c21[m HEAD@{846}: checkout: moving from test to master
+[33me8a5100e1b1ef00fac54fa3b23e16468830471fb[m HEAD@{847}: reset: moving to HEAD
+[33me8a5100e1b1ef00fac54fa3b23e16468830471fb[m HEAD@{848}: checkout: moving from master to test
+[33md98872fc111d965aa9e72d0e43bf1b63c8d20c21[m HEAD@{849}: checkout: moving from test to master
+[33me8a5100e1b1ef00fac54fa3b23e16468830471fb[m HEAD@{850}: pull --verbose --progress origin test: Fast-forward
+[33m78ff51d1f8a04357ce2f4953c1991816f7e23498[m HEAD@{851}: commit: Test-Commit
+[33md98872fc111d965aa9e72d0e43bf1b63c8d20c21[m HEAD@{852}: checkout: moving from master to test
+[33md98872fc111d965aa9e72d0e43bf1b63c8d20c21[m HEAD@{853}: commit: test
+[33m1a7f8c4e90317abea9be384296b4b71b69b6967a[m HEAD@{854}: commit: iclude update, caution
+[33me38acc000f7d86220f309a76a52a67995a1e532d[m HEAD@{855}: commit: Update where-bedingung.md
+[33mddf24c68711a4db78478b700dd1811fd5b4a2420[m HEAD@{856}: commit: xu, where clause Anpassung
+[33m9fe1ff7e88973699b91ecaa37fa0ac348f3428c4[m HEAD@{857}: commit: where clause, corrections
+[33m5120a857cfa4684f80ca56cecd1c3e33de16f587[m HEAD@{858}: commit: where clause; de; en correction
+[33m3ad25253d052c691ed8084b342ea44565c70667a[m HEAD@{859}: commit: where clause
+[33m205809102ba533f79f46d0f5a09188b9ad724916[m HEAD@{860}: pull --progress origin: Fast-forward
+[33mb72ab72fc1ea25a99b9c552c4135d6064ad76236[m HEAD@{861}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33mcb439ab4ad681451baeadb327f01bb1964347c26[m HEAD@{862}: commit: where clause restriction
+[33mdda8aa524995a54e241310f034d38e6d5efe68e1[m HEAD@{863}: commit: xis; vs 2019
+[33mf7bb8a62c52709e2f8ba1ac10ac952d51687ccd9[m HEAD@{864}: commit: table join include
+[33m1446000017533c647e81f0eb31191e20b4e6b5a9[m HEAD@{865}: commit: Update script-expressions.md
+[33m6edf71d4747e1f223ed4cc3bda31d81a92e0e061[m HEAD@{866}: checkout: moving from feature/side-menu-scroll to master
+[33m664e5bf5fc75751d69323e08e4e964fc1a5bd6f5[m[33m ([m[1;31morigin/feature/side-menu-scroll[m[33m)[m HEAD@{867}: checkout: moving from master to feature/side-menu-scroll
+[33m3e8fa91a66984dccca6d1d65746fcd69659db5dc[m HEAD@{868}: commit: automation
+[33mee43f5f16f5b86449b69f909b452d93bc034685f[m HEAD@{869}: commit: test
+[33m803a675b277ded679fa7ec435cc9ab1fe61a4661[m HEAD@{870}: commit: xu; automation
+[33mfbac2796e817e4fff05878f13635727b79324697[m HEAD@{871}: commit: xu; automation
+[33m57f0c725045a984e3159d189820746cffb5d22ac[m HEAD@{872}: commit: xu, automation
+[33mf30921955db42738b0a284decfb67781044cab26[m HEAD@{873}: commit: xu; getting started
+[33mfc90d66e0b17f2ef5054751edb3cb2508229f378[m HEAD@{874}: commit: scheduling
+[33m934a9c8774d2e9f3cbeb9855ba348e95440f15e4[m HEAD@{875}: commit: xu; de
+[33ma3391503edcca84f7cde92bb69727d9c2ea56e4f[m HEAD@{876}: pull origin master: Merge made by the 'recursive' strategy.
+[33m681190b553346338d8ee12d6092b949fcfff2f0d[m HEAD@{877}: commit: xu, de; getting
+[33m8fce72f59e6de481d096e0b6082497e983311734[m HEAD@{878}: commit: concept
+[33m387df422fbe541e48d2213d391dbb0bbf1ddb0c0[m HEAD@{879}: commit: concept
+[33m25c9b851eaf8b866d800aeed1aea9c5d22dfe096[m HEAD@{880}: commit: xu; gst
+[33m84f566c7caf5154df0a8d4873c88ce74ea1efba9[m HEAD@{881}: commit: xu
+[33md64b1c0c40c902ee7408ae48ff8c6cddb7560e5d[m HEAD@{882}: pull origin master: Fast-forward
+[33m3b84a58be204b2bc91a27bb8e4ab00e1125eabf1[m HEAD@{883}: commit: editorial, xu, getting started
+[33m9f1b816886cf82b603c2340166530d70a3f77ca5[m HEAD@{884}: pull origin master: Merge made by the 'recursive' strategy.
+[33m48524f878d475c470128b12bd78762ba123ef57c[m HEAD@{885}: commit: editorial
+[33mbda31837fd4068103256956a98d2a6b21338907f[m HEAD@{886}: pull origin master: Fast-forward
+[33m13d327b7c4fa765e5d337ceb3560d8c8020b61ef[m HEAD@{887}: commit: editorial
+[33m675f6e6ccf5d8bdf9ae036cb12c96ec01b1236e0[m HEAD@{888}: pull origin master: Fast-forward
+[33m97ad982e0837f45b165ba899b28843b2b70d5851[m HEAD@{889}: commit: editorial
+[33m2f992b89fbcac7dbdd0ace1d7b4bdae5c8cac6a0[m HEAD@{890}: commit: editorial
+[33m27fa35c0301c6f9d9d2ce81b16abae7494d508be[m HEAD@{891}: commit: concept
+[33m8e43536e01ded73d5ffca3513b800a2cb5120a01[m HEAD@{892}: commit: xu, de, lizenz
+[33m0158f394971736f02d05ecb95982deed7a1c9edc[m HEAD@{893}: pull origin master: Fast-forward
+[33m1cb7fcfa9d9183ace2254f9b33b7eb15f42b568a[m HEAD@{894}: commit: editorial
+[33m14419603054ae0c3ad9f7db166a903e66ada1409[m HEAD@{895}: commit: xis
+[33mf00b3a0077d187ddb776f9660b047fb2fedb4e8b[m HEAD@{896}: pull origin master: Fast-forward
+[33m98b68bdf4de1b83f174cb30a4f9001f990c52fe2[m HEAD@{897}: pull origin master: Merge made by the 'recursive' strategy.
+[33m5dba9b719873c336e79bbe5291b805221e97ec86[m HEAD@{898}: commit: xis; requirements, en,de
+[33m5438831278eb1235da70397029abca5db0419601[m HEAD@{899}: commit: xis, requirements, en
+[33m6f000835c6a2a431ebb5bf584159f49d16129449[m HEAD@{900}: commit: concept
+[33m6f0d659dec2b64298fae35a790c479e1629de37a[m HEAD@{901}: pull origin master: Fast-forward
+[33m78c67cf63a112de87cd823cb7df7f608ba549cc0[m HEAD@{902}: commit: concept
+[33m7c98b84ecaea9f765ee5d3889aec80eac1a7680f[m HEAD@{903}: commit: test
+[33m8c49091862af4104ef5ec1c05680eaa624d6e01b[m HEAD@{904}: commit: xu
+[33m1447fee1206d785c73a7db0761c5e443bbe46403[m HEAD@{905}: pull origin master: Fast-forward
+[33maa9d8d02c89d90eadf402e1709e3c1d4566d3d1a[m HEAD@{906}: commit: xu
+[33m1a3574beed1b4a41a4b8074cc7eeb4bd27b8ff1a[m HEAD@{907}: pull origin master: Fast-forward
+[33mca1aaed0f135a2f9afec05a561ee61841bed3370[m HEAD@{908}: commit: xu
+[33m276dc1d5850a4b0395cc351a86aea30ae4883b58[m HEAD@{909}: commit: xu
+[33m4efde41412acc529aca73ccc6765ab3b549c8fe4[m HEAD@{910}: commit: xu, getting started
+[33mb22a629715d64f12fde1123e8dd70c42f0355a3d[m HEAD@{911}: commit: xu; en: getting started
+[33mbb0667535244cc19f10505a9bc34f88fa22b5842[m HEAD@{912}: commit: xu; en; getting started
+[33m94534d924639241447808f259485739f3c7c977a[m HEAD@{913}: commit: xu; en; getting started
+[33m1316b0697ffa92c820b13bdbd927e85372457bef[m HEAD@{914}: commit: xu; getting started; en; fix
+[33me112706310e9756ca5adb60d860c942cd550c281[m HEAD@{915}: commit: xu; en; getting strtd, fix
+[33m5477ecff881173ae0b6382c2d96c5fc5653b8b47[m HEAD@{916}: commit: xu, getting started, en, fix
+[33m4838d6abf7df567ba9bb43917f8ac93954d56e63[m HEAD@{917}: commit: xu; getting started table; en
+[33m2816db90b13978ae1b5dd423fdfd4d2b8adef3ef[m HEAD@{918}: commit: xu, en, getting started with table
+[33mfbbd25e05586273c2243feda7a525b3eded2251f[m HEAD@{919}: commit: concept
+[33m643b34e4c28239f5ab2bd4b75977c7a5f64a84dd[m HEAD@{920}: pull origin master: Fast-forward
+[33m535626860da8a732a39d0ff4f974bcc88a7daa1a[m HEAD@{921}: commit: concept
+[33ma0f87e65f59816c431a3861f2edd67065185350f[m HEAD@{922}: commit: concept
+[33mbe3b8dc19e307862286877a5ca177c88c0f69e69[m HEAD@{923}: commit: bitte
+[33m040795a9db919ccc0bf7199c49b71b7d923e75ee[m HEAD@{924}: clone: from https://github.com/theobald-software/theobald-software.github.io.git
