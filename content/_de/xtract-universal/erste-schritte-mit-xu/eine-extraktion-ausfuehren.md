@@ -1,18 +1,29 @@
 ---
-ref: xu-getting-started-table-03
+ref: xu-getting-started-xu-03
 layout: page
 title: 3. Eine Extraktion ausführen
 description: Schritt 3 - Eine Extraktion ausführen
 product: xtract-universal
-parent: erste-schritte-mit-table
+parent: erste-schritte-mit-xu
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
 ---
 
 Dieser Schritt ist optional. Es wird gezeigt, wie das Extraktionsergebnis in einem Webbrowser dargestellt werden kann, um sicherzustellen, dass die Extraktion ordnungsgemäß abläuft und das benötigte Ergebnis liefert.
+																																							 
+							
 
 ### Definieren der Extraktionseigenschaften 
+																								  
+																		 
+																							   
+										  
+																																 
+																					  
+											   
+																					   
+								 
 
 1. Wählen Sie im Hauptfenster von Xtract Universal Designer eine erstellte Tabellenextraktion aus.
 2. Um die Extraktionseinstellungen zu öffnen, klicken Sie auf **[Run]**. 

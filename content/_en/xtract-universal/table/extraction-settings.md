@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 5
 lang: en_GB
 ---
-An extraction has two types of settings. The *Extraction Settings* include settings that affect only the respective extraction type, while the *General Settings* are the same for all extraction types and determine common settings. See also [General Settings](../advanced-techniques/general-settings).
+An extraction has two types of settings. The *Extraction Settings* include settings that affect only the respective extraction type, while the *General Settings* are the same for all extraction types and determine common settings. See also [General Settings](../getting-started-xu/general-settings).
 
 ### Opening Extraction Settings
 Within the window "Define data source for SAP Tables" click **Extraction Settings**. The window "Table Settings" opens. 

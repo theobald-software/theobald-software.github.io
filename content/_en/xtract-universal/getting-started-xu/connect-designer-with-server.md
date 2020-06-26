@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-01
+ref: xu-getting-started-xu-01
 layout: page
-title: 1. Connecting Xtract Universal Designer with Xtract Universal Server
+title: 1. Connecting the Designer with the Server
 description:  1. Connecting the designer with the server
 product: xtract-universal
-parent: getting-started-table
+parent: getting-started-xu
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
@@ -31,5 +31,10 @@ Once logged in, you can activate or deactivate methods of authentication. <br>
 1. In the main window of the Xtract Universal Designer, navigate to the menu bar and select the menu item **Server > Settings**.  
 ![Server-Settings](/img/content/Server-Settings.png){:class="img-responsive"}
 2. To restrict the access rights, define the users / groups and select the box "Restrict Designer access to the following users/groups".
+
+****
+#### Related Links
+- [Xtract Universal](../introduction/architecture)
+- [Xtract Universal Server](../server)
 
 

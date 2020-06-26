@@ -28,7 +28,7 @@ Voraussetzung dafür ist die Installation eines [Z-Funktionssbausteins](./sap-cu
 **Hinweis:** Cluster- und Pool-Tabellen werden von der Table Join-Komponente nicht unterstützt, können aber wie gewohnt mit der Table-Komponente extrahiert werden. 
 
 Beachten Sie, dass dieser Abschnitt nur die Beschreibung der Anwendung der Table Join-Komponente von Xtract Universal enthält. Das Wissen über die grundsätzliche Funktionsweise von Xtract Universal wird in diesem Abschnitt vorausgesetzt. 
-Die Grundlagen von Xtract Unviversal werden im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
+Die Grundlagen von Xtract Unviversal werden im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-xu) beschrieben.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -11,4 +11,4 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapi-extraktionseinstellungen
 ---
 
-Die BAPI-Komponente enthält keine speziellen Einstellungen, außer den *General Settings*, die bereits im Abschnitt [Allgemeine Einstellungen](../fortgeschrittene-techniken/allgemeine-einstellungen) diskutiert wurden.
+Die BAPI-Komponente enthält keine speziellen Einstellungen, außer den *General Settings*, die bereits im Abschnitt [Allgemeine Einstellungen](../erste-schritte-mit-xu/allgemeine-einstellungen) diskutiert wurden.

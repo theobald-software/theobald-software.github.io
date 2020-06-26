@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-04
+ref: xu-getting-started-xu-04
 layout: page
-title: 4. Loading an extraction into a database
+title: 4. Loading an Extraction into a Database
 description: Step 4 - Load an Extraction into Microsoft SQL Server
 product: xtract-universal
-parent: getting-started-table
+parent: getting-started-xu
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

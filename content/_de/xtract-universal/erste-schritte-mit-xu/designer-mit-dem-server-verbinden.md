@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-table-01
+ref: xu-getting-started-xu-01
 layout: page
-title: 1. Xtract Universal Designer mit Xtract Universal Server verbinden
+title: 1. Den Designer mit dem Server verbinden
 description: 1 - Designer mit dem Server verbinden
 product: xtract-universal
-parent: erste-schritte-mit-table
+parent: erste-schritte-mit-xu
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
