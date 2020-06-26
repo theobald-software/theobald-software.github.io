@@ -11,7 +11,7 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started-table
 ---
-This section contains the details of the SAP table extraction with the Xtract Table component and a general introduction to Xtract Universal.
+This section contains the details on the SAP table extraction with the Xtract Table component and a general introduction to Xtract Universal.
 
 This section is therefore a prerequisite for all subsequent sections.
 
