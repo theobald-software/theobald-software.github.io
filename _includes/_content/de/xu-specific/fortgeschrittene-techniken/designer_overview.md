@@ -22,7 +22,7 @@ Exit | Beendet den Designer | -
 
 Menüeintrag |Beschreibung | Details
 ------------ | ------------ | -------------
-New  | Neue Extraktion anlegen | [Defining a Table Extraction](../erste-schritte-mit-xu/define-a-table-extraction)
+New  | Neue Extraktion anlegen | [Eine neue Extraktion anlegen](../erste-schritte-mit-xu/eine-neue-extraktion-anlegen)
 Edit | Vorhandene Extraktion bearbeiten | -
 Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
