@@ -12,8 +12,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=additional-functions-in-design
 progessstate: 5
 ---
 
-The Designer features different functionalities for an extraction. Simple and self-explanatory functions are not described. 
+The Designer features different functionalities for an extraction. 
 
 ![Designer](/img/content/xu/xu_designer_main-window.png){:class="img-responsive"}
 
-{% include _content/en/xu-specific/advanced-techniques/additional-functions-in-designer.md %}
+{% include _content/en/xu-specific/advanced-techniques/designer_overview.md %}

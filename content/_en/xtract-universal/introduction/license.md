@@ -28,6 +28,8 @@ For installing the regular license, place the regular XtractUniversalLicense.jso
  
 A restart of the Xtract Universal service is no longer necessary.
 
+### About Xtract Universal - Info Window
+
 {: .box-tip }
 **Tip:** To inspect your current license data, go to the main menu bar of the Xtract Universal Designer and choose **[Help] > [Info]** or press F12.
 

@@ -27,6 +27,8 @@ Um die reguläre Lizenz zu installieren, legen Sie die XtractUniversalLicense.js
 
 Ein Neustart des Xtract Universal Service ist nicht notwendig.
 
+### About Xtract Universal - Info-Fenster
+
 {: .box-tip }
 **Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom Xtract Universal Designer  **[Help] > [Info]** oder drücken Sie F12.<br>
 

@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
 ---
 
-Der Designer bietet verschiedenen Funktionalitäten für eine Extraktion. Einfache und selbsterklärende Funktionen werden nicht beschrieben. 
+Der Designer bietet verschiedenen Funktionalitäten für eine Extraktion. 
 
 ![Designer](/img/content/xu/xu_designer_main-window.png){:class="img-responsive"}
 

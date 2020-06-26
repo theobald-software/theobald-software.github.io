@@ -12,7 +12,7 @@ Das Hauptfenster vom Designer besteht aus drei Hauptabschnitten:
 
 Menüeintrag |Beschreibung | Details
 ------------ | ------------ | -------------
-Reset Preferences  | Einstellungen (z.B. Log Viewer) zurücksetzen | [Logging](../logging)
+Reset Preferences  | Zurücksetzen der Verbindungsparameter zum Server | [Den Designer mit dem Server verbinden](../erste-schritte-mit-xu/designer-mit-dem-server-verbinden#verbindung-zu-einem-server)
 Disconnect | Abmeldung vom Server | -
 Exit | Beendet den Designer | -
 
@@ -22,7 +22,7 @@ Exit | Beendet den Designer | -
 
 Menüeintrag |Beschreibung | Details
 ------------ | ------------ | -------------
-New  | Neue Extraktion anlegen | [Defining a Table Extraction](../getting-started-xu/define-a-table-extraction)
+New  | Neue Extraktion anlegen | [Defining a Table Extraction](../erste-schritte-mit-xu/define-a-table-extraction)
 Edit | Vorhandene Extraktion bearbeiten | -
 Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
@@ -33,7 +33,7 @@ Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erst
 Abort | Ausgewählte Extraktion abbrechen | -
 Clear Result Cache | Extraktions-Cache leeren | [Cache results](../erste-schritte-mit-xu/allgemeine-einstellungen#misc-tab)
 Refresh | Aktualisierung des Extraktionsstatus | -
-Filter | Filter oder Keywords definieren | neuer Link####
+Filter | Filter oder Keywords definieren | [Keywords definieren](../erste-schritte-mit-xu/allgemeine-einstellungen#misc-tab)
 
 ### Server
 
@@ -61,12 +61,12 @@ Manage Users | Benutzergruppen verwalten | [Benutzergruppen](../sicherheit/benut
 
 Menüeintrag |Beschreibung | Details
 ------------ | ------------ | -------------
-Online Help (EN) | <!-----> - <!-----> | <!-----> - <!-----> 
+Online Help (EN) |  -  | -
 Online Help (DE) | - | -
-Submit Support Ticket | Support-Ticket einreichen | -
-Support Client | Direkter Support | -
-Info | Produktinfos | -
-Version History | Destination auswählen | [Zielumgebungen](../xu-zielumgebungen)
+Submit Support Ticket | Support-Ticket einreichen | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
+Support Client | Direkter Support | [TeamViewer Client](https://get.teamviewer.com/theobaldsoftware)
+Info | Produktinfos | [Info-Fenster](../einfuehrung/lizenz#about-xtract-universal---info-fenster)
+Version History | Versionshistorie | [Update installieren]( ../einfuehrung/update#installation-eines-updates-bzw-einer-neueren-version-auf-einer-test-umgebung)
 
 ## GUI-Schaltflächen (2)
 
@@ -74,18 +74,18 @@ Schaltfläche |Beschreibung
 ------------ | ------------ 
 New | Neue Extraktion anlegen 
 Edit |  Vorhandene Extraktion bearbeiten |
-Delete | Vorhandene Extraktion bearbeiten  |
+Delete | Vorhandene Extraktion löschen  |
 Clone| Vorhandene Extraktion klonen  |
 Refresh | Aktualisierung des Extraktionsstatus  |
 Filter |  Filter oder Keywords definieren |
 Source| Vorhandenes SAP Quellsystem auswählen  |
-Destination | Destination auswählen  |
+Destination | Vorhandene Destination auswählen  |
 Log | Extraktions-Log aufrufen  |
 Run  | Ausgewählte Extraktion ausführen  | 
 
 *****
 ### Weiterführende Links
-- [Xtract Universal Sever](./server)
+- [Xtract Universal Sever](../server)
 
 
 

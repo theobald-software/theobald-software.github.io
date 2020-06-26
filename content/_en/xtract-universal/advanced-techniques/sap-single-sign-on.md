@@ -11,5 +11,6 @@ weight: 6
 lang: en_GB
 progressstate: 5
 ---
+
 {% include _content/en/xu-specific/advanced-techniques/sap-single-sign-on.md %}
 

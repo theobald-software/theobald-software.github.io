@@ -12,7 +12,7 @@ The main window of the Designer consists of three main sections:
 
 Menu Item |Description | Details
 ------------ | ------------ | -------------
-Reset Preferences  | Reset settings (e.g., Log Viewer) | [Logging](../logging)
+Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started-xu/connect-designer-with-server)
 Disconnect | Logging off the server | -
 Exit | Exits the Designer | -
 
@@ -33,7 +33,7 @@ Run  | Run a selected extraction | [Running an Extraction](../getting-started-xu
 Abort | Abort a selected extraction | -
 Clear Result Cache | Clear extraction cache | [Cache results](../getting-started-xu/general-settings#misc-tab)
 Refresh | Refreshing extraction status | -
-Filter | Define filters or keywords |  Link####
+Filter | Define filters or keywords |  [Define Keywords](../getting-started-xu/general-settings#misc-tab)
 
 ### Server
 
@@ -63,9 +63,9 @@ Menu Item | Description | Details
 ------------ | ------------ | -------------
 Online Help (EN) | <!-----> - <!-----> | <!-----> - <!-----> 
 Online Help (DE) | - | -
-Submit Support Ticket | - | -
-Support Client | Direct support | -
-Info | Product information | -
+Submit Support Ticket | - | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
+Support Client | Direct support | [TeamViewer Client](https://get.teamviewer.com/theobaldsoftware)
+Info | Product information | [Info window](../introduction/license#about-xtract-universal---info-window)
 Version History | Select a destination | [Destinations](../xu-destinations)
 
 ## GUI Buttons(2)

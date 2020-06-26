@@ -11,3 +11,8 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=allgemeine-einstellungen
 ---
 {% include _content/de/xu-specific/fortgeschrittene-techniken/allgemeine-einstellungen.md %}
+
+*******
+#### Weiterführende Links
+
+- [Filterung von Extraktionen](../fortgeschrittene-techniken/regulaere-ausdruecke)
