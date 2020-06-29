@@ -10,10 +10,11 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=fortgeschrittene-techniken
+progressstate: 5
 ---
 
-Der Abschnitt [Erste Schritte mit Table](https://help.theobald-software.com/de/xtract-universal/erste-schritte-mit-xu) stellt eine Einführung in die Komponente Xtract Table or View dar und erklärt einige Basistechniken, wie eine Extraktion mit Xtract Universal gestaltet und ausgeführt werden kann. 
+Der Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte-mit-xu) bietet eine Einführung in die Grundlagen von Xtract Universal am Beispiel der Komponente Xtract Table. 
 
-Der folgende Abschnitt ermöglicht eine tiefere Einsicht in weitere Aspekte von Xtract Universal.
+Der folgende Abschnitt ermöglicht eine tiefere Einsicht in komplexere Aspekte von Xtract Universal.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

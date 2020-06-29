@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
+progressstate: 5
 ---
 
 Der Designer bietet verschiedenen Funktionalitäten für eine Extraktion. 

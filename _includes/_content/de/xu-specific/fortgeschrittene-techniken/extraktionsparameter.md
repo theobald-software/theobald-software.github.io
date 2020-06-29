@@ -3,7 +3,7 @@ Der folgende Abschnitt beschreibt die Extraktionsparameter, die im Fenster "Run 
 
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
-Um das Fenster "Run extractions" zu öffnen, wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** (siehe Details in [Eine Extraktion ausführen](../erste-schritte-mit-table/eine-extraktion-ausfuehren)).
+Um das Fenster "Run extractions" zu öffnen, wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** (siehe Details in [Eine Extraktion ausführen](../erste-schritte-mit-xu/eine-extraktion-ausfuehren)).
 
 
 ### "Parameters" Tab *Extraction*

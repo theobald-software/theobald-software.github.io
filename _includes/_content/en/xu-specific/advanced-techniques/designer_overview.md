@@ -85,7 +85,7 @@ Run  | Run a selected extraction  |
 
 *****
 ### Related Links
-- [Xtract Universal Sever](./server)
+- [Xtract Universal Sever](../server)
 
 
 

@@ -10,7 +10,8 @@ weight: 6
 lang: en_GB
 progresstate: 5
 ---
-
+The following section gives an overview over the settings that can be changed for the ODP component.
+The settings can be changed in the window "Define data source for SAP ODP". 
 {% include _content/en/odp/odp-settings-update_mode.md %} 
 {% include _content/en/odp/odp-settings-subscriptions.md %}
 {% include _content/en/odp/odp-settings-filtering.md %} 
