@@ -53,7 +53,7 @@ Manage Destinations | Edit or delete destinations | [Manage Destinations](../xu-
 Menu Item | Description  | Details
 ------------ | ------------ | -------------
 Set User Password  | Set or change user password  | [User Managements](../security/user-management#user)
-Manage Users | Manage user groups | [User Groups](../user-management#user-groups)
+Manage Users | Manage user groups | [User Groups](../security/user-management#user-groups)
 
 ### Help
 
@@ -68,7 +68,7 @@ Support Client | Direct support | [TeamViewer Client](https://get.teamviewer.com
 Info | Product information | [Info window](../introduction/license#about-xtract-universal---info-window)
 Version History | Select a destination | [Destinations](../xu-destinations)
 
-## GUI Buttons(2)
+## GUI Buttons (2)
 
 Buttons | Description 
 ------------ | ------------ 
