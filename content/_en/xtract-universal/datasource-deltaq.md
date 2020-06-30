@@ -19,7 +19,7 @@ DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)*
 This section describes the use of the Xtract Universal DeltaQ Component. The knowledge about the basic usage of Xtract Universal is assumed to follow the instructions.
 
 {: .box-tip }
-**Tip:** Basics of the product Xtract Universal are described in the section **[Getting started with table](./getting-started-table)**.
+**Tip:** Basics of the product Xtract Universal are described in the section **[Getting Started with Xtract Universal](./getting-started-xu)**.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

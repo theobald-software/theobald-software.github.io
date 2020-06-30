@@ -15,7 +15,7 @@ The following section describes the functions of the Hierarchy Component of Xtra
 Basic Xtract Universal the knowledge is required to understand the following sections. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract Universal, refer to [Getting started with table](./getting-started-table). <br>
+**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started-xu). <br>
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 <!--stackedit_data:

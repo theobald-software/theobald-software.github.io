@@ -53,7 +53,7 @@ als Vorlagen verwendet werden:
 
 ![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 
-Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](../microsoft-sql-sql-server/sql-server-custom-sql).
+Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql).
 
 {:.box-note}
 **Note:** Der benutzerdefinierte SQL-Code wird für SQL Server-Destinationen verwendet. 

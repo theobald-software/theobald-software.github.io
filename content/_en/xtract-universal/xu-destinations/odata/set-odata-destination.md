@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 ### To set OData destination
-**Requirement:** An extraction is created (see [Create an extraction](../../getting-started-table/define-a-table-extraction)).
+**Requirement:** An extraction is created (see [Create an extraction](../../getting-started-xu/define-a-table-extraction)).
 
 1. In the main window of the Designer, navigat to menu item **Server > Manage Destinations**.
 2. Define a default http-odata-atom-Destination (see [Managing destinations](../managing-destinations) and [OData](../odata) ).
