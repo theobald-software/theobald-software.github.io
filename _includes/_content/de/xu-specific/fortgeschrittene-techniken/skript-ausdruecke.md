@@ -21,7 +21,7 @@ Beispiele:
 
 ### Verwendung
 
-Skript-Ausdrücke können sowohl für die [WHERE-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
+Skript-Ausdrücke können sowohl für die [WHERE-Bedingung](../table/where-bedingung) einer Tabelle als auch in den Destination Settings mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
 
 {: .box-note }
 **Hinweis:** Die Werte bei der Verwendung einer WHERE-Bedingung sind stets in einfachen Anführungsstrichen anzugeben.<br>
@@ -59,7 +59,7 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 | ```#(int)Extraction.RunState}#``` | Status der Extraktion als Zahl (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors |
 | ```#{Extraction.Timestamp}#``` | Zeitstempel der Extraktion |
 
-Sehen Sie auch das [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-zielumgebungen/microsoft-sql-server/sql-server-custom-sql) für die Verwendung von definierten Ausdrücken mittels Custom-SQL in den Destinationseinstellungen.
+Sehen Sie auch das [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql) für die Verwendung von definierten Ausdrücken mittels Custom-SQL in den Destinationseinstellungen.
 
 
 ### Unterstützte Datentypen

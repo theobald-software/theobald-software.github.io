@@ -44,7 +44,7 @@ Menüeintrag |Beschreibung | Details
 Logs  | Server-Log aufrufen | [Server-Logging](../logging/server-logging)
 Settings | Server-Einstellungen aufrufen | [Server-Einstellungen](../server/server_einstellungen)
 Manage Sources | Verbindung zum Quellsystem bearbeiten | [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen)
-Manage Destinations | Destinationen verwalten | [Destinationen verwalten](../xu-zielumgebungen/ziele-verwalten)
+Manage Destinations | Destinationen verwalten | [Destinationen verwalten](../xu-destinationen/ziele-verwalten)
 
 ### Security
 
