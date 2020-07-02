@@ -4,7 +4,7 @@ layout: page
 title: Salesforce
 description: Salesforce
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: salesforce
 permalink: /:collection/:path
 weight: 100

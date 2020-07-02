@@ -4,7 +4,7 @@ layout: page
 title:  Webservice - JSON
 description: JSON (via HTTP)
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 permalink: /:collection/:path
 weight: 10
 lang: de_DE

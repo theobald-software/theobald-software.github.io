@@ -4,7 +4,7 @@ layout: page
 title: PostgreSQL
 description: PostgreSQL
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: postgreSQL
 permalink: /:collection/:path
 weight: 81

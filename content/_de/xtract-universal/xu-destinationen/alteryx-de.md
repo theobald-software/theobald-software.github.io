@@ -4,7 +4,7 @@ layout: page
 title: Alteryx
 description: Alteryx
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: alteryx-de
 permalink: /:collection/:path
 weight: 20

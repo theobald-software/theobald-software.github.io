@@ -17,8 +17,8 @@ Progressstate: 5
 {% include _content/de/einfuehrung/xu-req-verschiedenes.md %}
 
 ### Destinationen
-Für die Verwendung bestimmter [Destinationen](../xu-zielumgebungen) kann ein geeigneter Treiber oder eine entsprechende Bibliothek erforderlich sein. Weitere Informationen entnehmen Sie dem Abschnitt Voraussetzungen der einzelnen Destinationen.
+Für die Verwendung bestimmter [Destinationen](../xu-destinationen) kann ein geeigneter Treiber oder eine entsprechende Bibliothek erforderlich sein. Weitere Informationen entnehmen Sie dem Abschnitt Voraussetzungen der einzelnen Destinationen.
 
-Bei der Verwendung bestimmter Destinationen (z.B. [Tableau](../xu-zielumgebungen/tableau/tableau-mit-data-extract/voraussetzungen)) kann zusätzlicher Festplattenspeicher benötigt werden.
+Bei der Verwendung bestimmter Destinationen (z.B. [Tableau](../xu-destinationen/tableau/tableau-mit-data-extract/voraussetzungen)) kann zusätzlicher Festplattenspeicher benötigt werden.
 
 

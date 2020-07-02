@@ -4,7 +4,7 @@ layout: page
 title: Destinationen verwalten
 description: Zielumgebungen verwalten
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

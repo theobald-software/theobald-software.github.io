@@ -4,7 +4,7 @@ layout: page
 title: Tableau
 description: Tableau
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: tableau
 permalink: /:collection/:path
 weight: 110

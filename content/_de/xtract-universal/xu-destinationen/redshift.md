@@ -4,7 +4,7 @@ layout: page
 title: Amazon Redshift
 description: Amazon Redshift
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: redshift
 permalink: /:collection/:path
 weight: 23

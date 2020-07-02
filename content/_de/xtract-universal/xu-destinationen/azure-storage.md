@@ -4,7 +4,7 @@ layout: page
 title: Azure Storage
 description: Azure Storage
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: azure-storage
 permalink: /:collection/:path
 weight: 24

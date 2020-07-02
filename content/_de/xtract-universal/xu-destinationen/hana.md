@@ -4,7 +4,7 @@ layout: page
 title: SAP HANA
 description: SAP HANA
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: hana
 permalink: /:collection/:path
 weight: 101

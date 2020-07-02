@@ -4,7 +4,7 @@ layout: page
 title: Power BI Connector
 description: Power BI Connector
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: Power-BI-Connector
 permalink: /:collection/:path
 weight: 82

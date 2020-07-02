@@ -4,7 +4,7 @@ layout: page
 title: QlikSense & QlikView
 description: QlikSense & QlikView
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: qlik
 permalink: /:collection/:path
 weight: 90

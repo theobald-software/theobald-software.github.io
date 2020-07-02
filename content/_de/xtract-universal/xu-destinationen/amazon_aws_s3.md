@@ -4,7 +4,7 @@ layout: page
 title: Amazon AWS S3
 description: Amazon AWS S3
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: amazon_aws_s3
 permalink: /:collection/:path
 weight: 22

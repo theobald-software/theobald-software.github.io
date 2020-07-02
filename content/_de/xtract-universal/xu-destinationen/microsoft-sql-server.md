@@ -4,7 +4,7 @@ layout: page
 title: Microsoft SQL Server
 description: Microsoft SQL Server
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: microsoft-sql-server
 permalink: /:collection/:path
 weight: 60

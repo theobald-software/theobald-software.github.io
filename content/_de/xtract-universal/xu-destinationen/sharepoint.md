@@ -4,7 +4,7 @@ layout: page
 title: SharePoint
 description: SharePoint
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: sharepoint_list
 permalink: /:collection/:path
 weight: 102

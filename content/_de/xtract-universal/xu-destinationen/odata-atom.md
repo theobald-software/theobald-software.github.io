@@ -4,7 +4,7 @@ layout: page
 title: Webservice - OData
 description: OData
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: odata-atom
 permalink: /:collection/:path
 weight: 12

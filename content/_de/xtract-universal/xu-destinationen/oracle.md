@@ -4,7 +4,7 @@ layout: page
 title: Oracle
 description: Oracle
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: oracle
 permalink: /:collection/:path
 weight: 70

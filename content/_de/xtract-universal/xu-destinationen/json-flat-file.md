@@ -4,7 +4,7 @@ layout: page
 title: Flat File - JSON
 description: Flat File - JSON
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: json-flat-file
 permalink: /:collection/:path
 weight: 13

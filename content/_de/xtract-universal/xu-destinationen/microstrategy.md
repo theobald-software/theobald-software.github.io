@@ -4,7 +4,7 @@ layout: page
 title: Microstrategy
 description: Microstrategy
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: microstrategy
 permalink: /:collection/:path
 weight: 61

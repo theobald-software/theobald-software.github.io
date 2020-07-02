@@ -4,7 +4,7 @@ layout: page
 title: MySQL
 description: MySQL
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: mysql
 permalink: /:collection/:path
 weight: 62

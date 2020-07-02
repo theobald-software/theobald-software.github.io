@@ -4,7 +4,7 @@ layout: page
 title: IBM DB2
 description: IBM DB2
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: ibm-db2
 permalink: /:collection/:path
 weight: 50

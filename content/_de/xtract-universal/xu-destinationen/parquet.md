@@ -4,7 +4,7 @@ layout: page
 title: Parquet
 description: Parquet
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: parquet
 permalink: /:collection/:path
 weight: 80

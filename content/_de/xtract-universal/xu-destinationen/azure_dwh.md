@@ -4,7 +4,7 @@ layout: page
 title: Azure DWH
 description: Azure DWH
 product: xtract-universal
-parent: xu-zielumgebungen
+parent: xu-destinationen
 childidentifier: azure_dwh
 permalink: /:collection/:path
 weight: 25
