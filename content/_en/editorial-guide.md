@@ -50,5 +50,5 @@ Foo, Bar, Baz, Qux
 - [Wikipedia Article on Placeholder Names](https://en.wikipedia.org/wiki/Placeholder_name)
 - [Alice and Bob - Placeholder Names](https://en.wikipedia.org/wiki/Alice_and_Bob)
 - [23 Enigma](https://en.wikipedia.org/wiki/23_enigma)
-- [Law of Fives]https://discordia.fandom.com/wiki/Law_of_Fives
+- [Law of Fives](https://discordia.fandom.com/wiki/Law_of_Fives)
 
