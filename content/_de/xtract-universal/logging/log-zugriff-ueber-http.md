@@ -38,15 +38,15 @@ In den nachfolgenden Beispielen wird folgende URL `https://todd.theobald.local:8
 
 |Parameter | Beschreibung | Beispiel |
 |------------ | -------------|-----|
- | destinations | Auslistung aller definierten Destinationen | `http://todd.theobald.local:8065/destinations` |
+ | destinations | Auflistung aller definierten Destinationen | `http://todd.theobald.local:8065/destinations` |
  | req_type=server | Auflistung aller Server-Logs gemäß [Web-Server Einstellungen > Misc.](../server/server_einstellungen#web-server) | `https://todd.theobald.local:8165/log/?req_type=server` |
-| req_type=extraction | Auslistung aller definierten Extraktionen. | `https://todd.theobald.local:8165/log/?req_type=extraction` |
- | req_type=all| Auslistung aller Server & Extraktions-Logs | `https://todd.theobald.local:8165/log/?req_type=all`
- | req_type=all&past_days=n | Aufistung aller Logs seit n Tagen | `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'` | 
+| req_type=extraction | Auflistung aller definierten Extraktionen. | `https://todd.theobald.local:8165/log/?req_type=extraction` |
+ | req_type=all| Auflistung aller Server & Extraktions-Logs | `https://todd.theobald.local:8165/log/?req_type=all`
+ | req_type=all&past_days=n | Auflistung aller Logs seit n Tagen | `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'` | 
  | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log einer bestimmten Extraktion zu einem bestimmten Zeitstempel (Time Stamp) | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
- | req_type=extraction&name=[Extraction Name] | Auslistung aller Logs einer bestimmten Extraktion | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt` |
- | req_type=all&min=[timestamp] | Ausflistung aller Logs ab einem bestimmten Zeitstempel (Time Stamp) | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219` |
- | req_type=all&min=[timestamp]&max=[timestamp] | Ausflistung aller Logs zwischen zwei Zeitstempeln (Timestamps) | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136` |
+ | req_type=extraction&name=[Extraction Name] | Auflistung aller Logs einer bestimmten Extraktion | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt` |
+ | req_type=all&min=[timestamp] | Auflistung aller Logs ab einem bestimmten Zeitstempel (Time Stamp) | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219` |
+ | req_type=all&min=[timestamp]&max=[timestamp] | Auflistung aller Logs zwischen zwei Zeitstempeln (Timestamps) | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136` |
  | resultName=[Extraction Name]&timestamp[timestamp] | Rückgabe des Namens der Ergebnis-Tabelle/-Datei für einen bestimmten Zeitstempel (Time Stamp) | `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.136` |
 
 ### Beispiele der HTTP-Aufrufe
