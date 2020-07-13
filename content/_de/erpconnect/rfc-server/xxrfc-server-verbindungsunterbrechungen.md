@@ -3,7 +3,7 @@ ref: ec-rfc-server-03
 layout: page
 title: Verbindungsunterbrechungen
 description: Verbindungsunterbrechungen
-product: erpconnect
+produc: erpconnectx
 parent: rfc-server
 permalink: /:collection/:path
 weight: 3
