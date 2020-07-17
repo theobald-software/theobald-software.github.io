@@ -10,14 +10,14 @@ weight: 4
 lang: en_GB
 ---
 
-*Azure Service Bus* is a generic cloud-based messaging system that connects applications, services and devices wherever they are. <br>
-**Azure Relay** is a service that is based on the service bus and with which it is possible to tunnel on-premise web services through the firewall into the cloud. 
+**Azure Relay** is a service that is based on the *Azure Service Bus* and with which it is possible to tunnel on-premise web services through the firewall into the cloud. 
 
-With the help of Azure Service Bus and Azure Relay you can set up a secure system environment, decoupled from your business system with ECS Core and SAP.
+With the help of Azure Relay you can set up a secure system environment, decoupled from your business system with ECS Core and SAP.
 Azure Relay connects to a dedicated server via TCP and provides an endpoint that is visible to client applications. This endpoint can be used for data exchange with ECS Core and your SAP system. 
 The advantage of such a system architecture is that no ports need to be opened from the cloud to the SAP system installed on-premise. 
 
-Important: To use this functionality, a standard Tier Subscription for Microsoft Azure is required, which is not included in ECS Core.
+{: .box-tip }
+**Important note**: To use this functionality, a standard Tier Subscription for Microsoft Azure is required, which is not included in ECS Core. Only the registration with Azure Relay is supported, not Azure Service Bus. 
 
 Setting up *Azure Relay* with ECS Core works as follows:
 
@@ -42,6 +42,10 @@ Important: After adding a new Azure Relay registration it is mandatory to recycl
 The Azure Management Portal should now list the relay with the registration.
 
 ![ecscore-azurerelay_4](/img/content/ecscore-azurerelay_4.png){:class="img-responsive"}
+
+{: .box-tip }
+**Tip:** For a load balanced architecture Azure Relay can be registered with multiple ECS Core installations. In this case more than one listener will be displayed in the *WCF Relays* section. 
+Note that for such a scenario the ECS Core configuration need to be identical on all machines.
 
  
 

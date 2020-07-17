@@ -31,4 +31,5 @@ Click on the API key to display the following options:
 - Update
 - remove
 
-You will need the *Update* option if the user's credentials have changed.
+You will need the *Update* option if the user's credentials have changed. 
+The API key can be overwritten with values from another installation, for example. This would make sense in a load balanced architecture using [Azure Relay](../../ecscore-administration/settings/azure_relay). 
