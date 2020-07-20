@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=requirements4
 ---
 
-There are no particular requirements for using the Qlik destination.
+There are no particular technical prerequisites for using the Qlik destination.
