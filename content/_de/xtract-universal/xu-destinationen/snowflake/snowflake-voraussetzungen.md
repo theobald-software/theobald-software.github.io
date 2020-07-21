@@ -8,9 +8,10 @@ parent: snowflake
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
+progressstate: 5
 ---
 
 
 SnowSQL ist ein Kommandozeilen-Programm für die Verbindung zu Snowflake und die Ausführung aller Arten von Abfragen.
-Dieser Client wird zusammen mit dem Setup von Xtract Universal ausgeliefert. 
-Daher sind keine zusätzlichen Installationen erforderlich.
+Laden Sie den Client von der offiziellen [Snowflake Webseite](https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/windows_x86_64/index.html) herunter.
+Es sind keine weiteren Installationen erforderlich.

@@ -8,7 +8,10 @@ parent: snowflake
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+progressstate: 5
 ---
 
 SnowSQL is a command line client for connecting to Snowflake to execute SQL queries and perform all DDL and DML operations, including loading data into and unloading data out of database tables.
-SnowSQL client is provided with the setup of Xtract Universal and can be used without any additional installations.
+SnowSQL client can be downloaded from the [official Snowflake](/ https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/windows_x86_64/index.html) website.  
+
+No additional installations are required. 
