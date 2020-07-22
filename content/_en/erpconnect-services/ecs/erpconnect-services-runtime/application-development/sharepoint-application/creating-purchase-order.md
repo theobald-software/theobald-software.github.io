@@ -59,4 +59,4 @@ using (ERPConnectServiceClient client = new ERPConnectServiceClient())
 {% endhighlight %}
 </details>
 
-Download the [sample](http://www.theobald-software.com/download/ERPConnectServices/help/PurchaseOrderSample.zip) for Visual Studio 2012.  
+Download the [sample](https://cdn-files.theobald-software.com/help/ECS/PurchaseOrderSample.zip) for Visual Studio 2012.  

@@ -37,4 +37,4 @@ Now you can view Bank items  ...
 
 ![ECS-Bank-SP-External-List-Edit](/img/content/ECS-Bank-SP-External-List-Edit.png){:class="img-responsive"}
 
-You can download the sample [here](http://www.theobald-software.com/download/ERPConnectServices/help/SAPBDCSample.zip) (Visual Studio 2012).
+You can download the sample [here](https://cdn-files.theobald-software.com/help/ECS/SAPBDCSample.zip) (Visual Studio 2012).

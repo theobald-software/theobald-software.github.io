@@ -37,4 +37,4 @@ Nun können Sie Bank-Datensätze aus SAP direkt in SharePoint anzeigen ...
 
 ![ECS-Bank-SP-External-List-Edit](/img/content/ECS-Bank-SP-External-List-Edit.png){:class="img-responsive"}
 
-Die Vorlage (Visual Studio 2012) können Sie [hier](http://www.theobald-software.com/download/ERPConnectServices/help/SAPBDCSample.zip) runterladen.
+Die Vorlage (Visual Studio 2012) können Sie [hier](https://cdn-files.theobald-software.com/help/ECS/SAPBDCSample.zip) runterladen.
