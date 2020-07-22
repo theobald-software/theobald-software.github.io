@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-empfangen-eines-idocs
+progessstate: 3
 ---
 
 Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis SimpleIdocServer 
@@ -17,7 +18,6 @@ Das folgende Beispiel zeigt den Empfang und die Verarbeitung eines MATMAS-IDocs.
 
 Bei einem IDoc-Server handelt es sich in erster Linie um einen ganz normalen RFC-Server (siehe RFC-Server-Beispiel), nur mit dem Unterschied, dass die Eigenschaft *CanReceiveIdocs* auf true gesetzt werden muss. Darüber hinaus muss das Ereignis *IncomingIdoc* abgefangen werden. Der folgende Code zeigt die Initialisierungsarbeiten innerhalb der Main-Prozedur bis hin zum Starten des Servers.
 
-Bitte beachten Sie auch das Teilkapitel [Verbindungsunterbrechungen](../rfc-server/rfc-server-verbindungsunterbrechungen) im RFC-Server-Kapitel. Es gilt genauso für IDoc-Server.
 
 <details>
 <summary>[C#]</summary>

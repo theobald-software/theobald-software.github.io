@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=example-receiving-an-idoc
+progressstate:3
 ---
 
 **The sample code is located in the ERPConnect installation directory in the SimpleIdocServer directory**
@@ -20,7 +21,7 @@ As shown in another example (RFC Server) an RFC Server object is needed to accep
 
 The event IncomingIdoc is fired when an IDoc is received by ERPConnect, so you can use this event to process the IDoc object. The code shows how to initialize and start the RFC Server and how to install the event.
 
-Please also refer to chapter [Connection time-outs](../rfc-server/connection-time-outs). The same applies for IDoc servers. 
+
 
 <details>
 <summary>Click to open C# example.</summary>
