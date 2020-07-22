@@ -1,8 +1,8 @@
 ---
 ref: xu-introduction-03
 layout: page
-title: Installation and Backup
-description: Installation and Backup
+title: Installation and Update
+description: Installation and Update
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
@@ -60,24 +60,55 @@ The list below shows several most important files that are placed into the defau
 For more details on starting Xtract Universal Server as a console program see section [Troubleshooting](./troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 
-### Backup
-
-Before installing a new product version or updating the current version, make sure to create a backup. 
-Backup allows you to easily switch back to the previous version of Xtract Universal, if needed. See also section [Update Installation](./update#how-do-i-create-a-backup).
-
+### New Installation and Update
 
 {: .box-warning}
 **Warning! Data loss:**
 System updates or changes can restrict software functionalities and this may lead to data loss. 
 Create a backup of the directory: `C:\Program Files\XtractUniversal\config` at regular intervals.
 
-All settings for extractions, sources, destinations, etc. are stored in the subdirectory *config*. 
+A regular update of the software is crucial for stable performance, especially major changes and high ([H]) priority
+updates. Check the version history (https://kb.theobald-software.com/version-history) for updates. A newer version
+can be installed over the older version. All settings and created objects are preserved. When migrating data and
+settings to another server, follow the instructions described in section [Backup and Migration](./backup-and-migration).
 
-### New Installation and Update
+#### Update Preparation
 
-A newer version can be installed over the older version. All settings and created objects are preserved. See also section [Installing an Update](./update#installing-an-update-or-a-newer-version-on-a-test-environment).
+{: .box-tip }
+**Tip:** Subscribe via [email](mailto:info@theobald-software.com) to Theobald Software’s regular newsletter that
+informs about changes in the version history and release notes.
+
+1. Check if you have a working test environment with a valid license and maintenance.
+2. Make sure that the test environment is a copy of the current productive environment.
+3. Check the [Version History](https://kb.theobald-software.com/version-history) and release notes in the
+knowledge base to check, if update is needed.
+4. Create a [backup](./backup-migration) of the current installation.
+5. Conduct any necessary preparations and changes as described in the Release Note / Version History,
+especially for major changes and high priority **([H])** update recommendation.
+
+There are two ways of upgrading the product version from XU 2.x and 3.x to XU 4.x:
+- Upgrade during installation
+- Manual upgrade
 
 
-### Version History
-A list of the versions can be found in the [version history](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
-To check the version of your product, open the Designer, navigate to **Help > Version History** or press **[F12]**.
+### Upgrade During Installation
+1. Start the [installation routine](../introduction/installation-and-backup).
+2. Make sure to mark the checkbox **Convert config files** checkbox. <br>
+The option *Convert config files* starts the *ConfigConverter* application, which ensures that all extractions, source systems, destinations, server and user settings from XU 2.x or 3.x are available in the new version. <br>
+Fore more information about installation folder files see also section [Installation and Backup](../introduction/installation-and-backup). 
+![XU3_Migration_1](/img/content/XU4_Migration_1.png){:class="img-responsive"}
+3. Confirm the conversion process in the command line pop-up window.  
+![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"}
+
+
+### Manual Upgrade
+If the *ConfigConverter* is not executed automatically during installation, it can also be started manually from the installation directory: ``C:\Program Files\XtractUniversal``. <br>
+
+![XU3_Migration_3](/img/content/XU3_Migration_3.png){:class="img-responsive"}
+
+{:.box-note}
+**Note:** Any issues that may occur during the conversion process are displayed in the command line window. Copy and send the command line context to the support team, if required.   
+
+****
+#### Related Links
+- [Backup and Migration](./backup-and-migration)
