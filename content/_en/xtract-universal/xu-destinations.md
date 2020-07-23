@@ -36,7 +36,6 @@ Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW
 ### Business Intelligence / Analytics / ETL
 
 - [Alteryx](./xu-destinations/alteryx) 
-- [Alteryx Connect](./xu-destinations/alteryx-connect) 
 - [Microstrategy](./xu-destinations/microstrategy)
 - [Power BI connector (Cloud/Desktop)](./xu-destinations/Power-BI-Connector) 
 - [Tableau](./xu-destinations/tableau) 
