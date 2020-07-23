@@ -1,14 +1,14 @@
 ---
-ref: xu-alteryx-connect-01
+ref: 
 layout: page
 title: Requirements
 description: Requirements
-product: xtract-universal
-parent: alteryx-connect
+product: 
+parent: 
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=ac-requirements
+
 ---
 
 In order to use the Alteryx Connect destination you need: 

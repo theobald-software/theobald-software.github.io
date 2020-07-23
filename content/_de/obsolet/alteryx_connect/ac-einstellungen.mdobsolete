@@ -3,12 +3,12 @@ ref: xu-alteryx-connect-03
 layout: page
 title: Einstellungen
 description: Einstellungen
-product: xtract-universal
-parent: alteryx_connect
+product: 
+parent: 
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=ac-einstellungen
+
 ---
 ### Destination Settings öffnen
 

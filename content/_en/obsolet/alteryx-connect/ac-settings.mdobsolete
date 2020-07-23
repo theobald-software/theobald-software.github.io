@@ -1,10 +1,10 @@
 ---
-ref: xu-alteryx-connect-03
+ref: 
 layout: page
 title: Settings
 description: Settings
-product: xtract-universal
-parent: alteryx-connect
+product: 
+parent: 
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

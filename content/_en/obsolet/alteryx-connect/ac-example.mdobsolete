@@ -1,14 +1,14 @@
 ---
-ref: xu-alteryx-connect-04
+ref: 
 layout: page
 title: Example
 description: Example
-product: xtract-universal
-parent: alteryx-connect
+product: 
+parent: 
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=ac-example
+
 ---
 
 In this example we will extract SAP Plants to Alteryx Connect. 

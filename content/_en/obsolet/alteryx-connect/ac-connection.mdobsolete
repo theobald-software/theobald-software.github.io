@@ -1,14 +1,14 @@
 ---
-ref: xu-alteryx-connect-02
+ref: 
 layout: page
 title: Connection
 description: Connection
-product: xtract-universal
-parent: alteryx-connect
+product: 
+parent: 
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=ac-connection
+
 ---
 
 The following settings can be made when setting up an connection. 
