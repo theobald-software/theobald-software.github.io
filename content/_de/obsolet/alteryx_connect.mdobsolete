@@ -4,7 +4,7 @@ layout: page
 title: Alteryx Connect
 description: Alteryx Connect
 product: xtract-universal
-parent: xu-destinationen
+parent:
 childidentifier: alteryx_connect
 permalink: /:collection/:path
 weight: 21
