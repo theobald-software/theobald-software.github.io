@@ -9,11 +9,12 @@ permalink: /:collection/:path
 weight: 6
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-eine-externe-liste-erstellen
+progressstate: 3
 ---
 
 Sie können eine externe Liste in SharePoint direkt aus dem BCS Connecor Designer heraus erstellen. Eine externe Liste in SharePoint ermöglich es dem Benutzer, mit den externen Daten in Form einer Liste auf die gleiche Art und Weise wie mit anderen externen Daten im Listenformat, zu arbeiten. 
 
-Um eine externe Liste mit dem BCS Connector Designer zu erstellen, wählen Sie auf dem Ribbon die Registerkarte *External Lists* .<br>
+Um eine externe Liste mit dem BCS Connector Designer zu erstellen, wählen Sie auf dem Ribbon den Tab *External Lists* .<br>
 Betätigen Sie die *New External List* Schaltfläche.
 
 ![BCS-External-List-New](/img/content/BCS-External-List-New.png){:class="img-responsive"}
@@ -30,7 +31,7 @@ Um die neue Liste im Browser anzuzeigen, betätigen Sie die Yes Schaltfläche im
 
 Die Entitätseigenschaften werden in der Liste als Spalten angezeigt. Die Entitätsmethode 'Read Table' ermöglicht die Anzeige der Listeneinträge.
 
-Öffnen Sie das Menü in der Nähe eines Listeneintrags und klicken auf *View Item*. Alternativ können Sie die Registerkarte *List Tools – Items* auf dem Ribon aktivieren und dann die *View Item* Schaltfläche betätigen.
+Öffnen Sie das Menü in der Nähe eines Listeneintrags und klicken auf *View Item*. Alternativ können Sie den Tab *List Tools – Items* auf dem Ribon aktivieren und dann die *View Item* Schaltfläche betätigen.
 
 ![BCS-External-List-View-Item-01](/img/content/BCS-External-List-View-Item-01.png){:class="img-responsive"}
 

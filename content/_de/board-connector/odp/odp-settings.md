@@ -8,7 +8,7 @@ parent: odp
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
-progresstate: 5
+progressstate: 5
 ---
 
 {% include _content/de/odp/odp-settings-update_mode.md %} 

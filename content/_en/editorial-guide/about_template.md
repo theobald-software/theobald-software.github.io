@@ -6,6 +6,7 @@ parent: editorial-guide
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+progressstate: 5
 ---
 ### About the template
 To maintain the constant formatting, follow the guidelines described in this document template.

@@ -8,6 +8,7 @@ parent: sap-verbindung
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
+progressstate: 5
 ---
 ### SAP Verbindung herstellen 
 Jede Xtract IS Komponente benötigt einen Xtract IS Connection Manager, um auf das SAP-System zuzugreifen. 
@@ -52,7 +53,7 @@ Wenn der Anwendungsserver "hamlet" ist und der Router-String "/H/lear.theobald-s
 Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm) <br>
 
 {: .box-tip }
-**Tipp:** Falls Sie nicht wissen, welche Parameter einzugeben sind, können Sie die Informationen im SAP Logon Pad in den *Properties* nachschauen. Ansonsten fragen Sie Ihre SAP-Basis.
+**Tipp:** Falls Sie nicht wissen, welche Parameter einzugeben sind, können Sie die Informationen im SAP-Logon-Pad in den *Properties* nachschauen. Ansonsten fragen Sie Ihre SAP-Basis.
  
 
 ### Trace Directory (2)

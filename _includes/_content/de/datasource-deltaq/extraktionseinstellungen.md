@@ -37,7 +37,7 @@ Erlaubt die Löschung der Init-Abfragen für die Export DataSources in BW.
 
 **Hierarchy Settings**<br>
 
-Falls Sie eine Hierachie-Datasource extrahieren, finden Sie im Reiter Hierarchy die entsprechenden Einstellungen.
+Falls Sie eine Hierachie-Datasource extrahieren, finden Sie im Tab "Hierarchy" die entsprechenden Einstellungen.
 
 ![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
 

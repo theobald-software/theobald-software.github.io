@@ -9,7 +9,7 @@ Das folgende Beispiel zeigt, wie viele Materialien einer Materialart (MTART) zug
 
 1. Wählen Sie eine Aggregatfunktion (1) für ein Feld aus, das Sie in der HAVING-Bedingung verwenden möchten.
 ![Extraction-Settings-01](/img/content/table/Table-Extraction-Having-Clause1.png){:class="img-responsive"}
-2. Navigieren Sie zum Reiter **HAVING Clause** (2).
+2. Navigieren Sie zum Tab **HAVING Clause** (2).
 2. Geben Sie die HAVING-Bedingung ein.
 3. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
 ![Extraction-Settings-01](/img/content/table/having-clause.png){:class="img-responsive"}

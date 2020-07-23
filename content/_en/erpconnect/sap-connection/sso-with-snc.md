@@ -9,16 +9,17 @@ permalink: /:collection/:path
 weight: 4
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=sso-with-snc
+progressstate: 3
 ---
 
 
 You can create a SAP connection using Single-Sign-On (SSO) and Secure Network Communication (SNC).  If you use the SNC mechanism you can select the NTLM or the Kerberos 5 mechanism. 
 
-**NTLM**
+### NTLM 
 
 NTLM (abbreviation for NT LAN Manager) is an authentication procedure for computernetworks. NTLM will perform the SSO authentication via a challenge-response authentication beween the client and the server. 
 
-**Kerberos**
+### Kerberos
 
 The Kerberos method uses a Kerberos server to authenticate the client. The server will create so called tickets an send them to the client. The client uses this ticket to authenticate. The client authenticates itself with this ticket to the server.
 
@@ -29,7 +30,7 @@ More detail information about Kerberos you will find here: [http://technet.micro
 More detail information about NTLM you will find here: [https://technet.microsoft.com/library/aa378749](https://technet.microsoft.com/library/aa378749)
 
 
-**Double Hop Problem**
+### Double Hop Problem
 
 Double hop describes the passing of authentication information across two or more computers (hops).
 NTLM works for technical reasons only one hop. For security reasons Kerberos is transmitting the authentication data only in one hop by default, but it can be configured, that the data can be send over two or more computers (Hops).
@@ -45,13 +46,13 @@ The Kerberos configuration you will find here:[http://blogs.technet.com/b/askds/
 More information about the SSO configuration you will find here:[http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm)
 
 
-**Download the DLLs**
+### Download the DLLs
 
 You must also have the relevant DLLs from SAP. These DLLs are different for 32-bit and 64-bit platforms and are available with SNOTE* 352295. 
 The SAP note 352295 has an 'Attachments' option from where you can download the package. The names of the DLLs are:
 For 32-bit: gsskrb5.dll
 For 64-bit x86: gx64krb5.dll
 
-**Settings on SAP**
+### Settings on SAP
 
 Please apply the Kerberos SNC settings as described in the [SAP help](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/EN-US/440ebf6c9b2b0d1ae10000000a114a6b.html). If you can log on via SSO from SAP GUI to your SAP system, that's already a good sign.

@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 5
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=table
+progressstate: 5
 ---
 
 Der folgende Abschnitt gibt einen Überblick über die Komponente Xtract IS Table. 
@@ -17,7 +18,7 @@ Der folgende Abschnitt gibt einen Überblick über die Komponente Xtract IS Tabl
 
 ### Extraktionstypen von Xtract IS Table
 
-- **Table**: ermöglicht die Massendatenextraktion direkt aus SAP-Tabellen und -Views.<br>
+- **Table**: ermöglicht die Datenextraktion in großen Mengen direkt aus SAP-Tabellen und -Views.<br>
 - **Table-Join**: ermöglicht das Zusammenführen von zwei oder mehr SAP-Tabellen auf der SAP-Seite vor der Extraktion.<br>
 
 ### Quell-Objekte unterstützt von Xtract IS Table

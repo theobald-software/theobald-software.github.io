@@ -29,4 +29,4 @@ Xtract Universal bietet verschiedene Methoden zur Authentifizierung und Sicherun
 Sobald Sie angemeldet sind, können Sie die Authentifizierungsmethoden aktivieren oder deaktivieren. <br>
 1. Navigieren Sie im Hauptfenster des Xtract Universal Designers in die Menüleiste und wählen Sie den Menüpunkt **Server > Einstellungen** aus.  
 ![Server Einstellungen](/img/content/Server-Settings.png){:class="img-responsive"}
-2. Um die Zugriffsrechte einzuschränken, definieren Sie die Benutzer/Gruppen und markieren Sie das Kästchen "Designer-Zugriff auf folgende Benutzer/Gruppen beschränken".
+2. Um die Zugriffsrechte einzuschränken, definieren Sie die Benutzer/Gruppen und markieren Sie die Checkbox "Designer-Zugriff auf folgende Benutzer/Gruppen beschränken".

@@ -8,22 +8,15 @@ parent: erste-schritte-mit-xu
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
+progressstate: 5
+
 ---
 
 Dieser Schritt ist optional. Es wird gezeigt, wie das Extraktionsergebnis in einem Webbrowser dargestellt werden kann, um sicherzustellen, dass die Extraktion ordnungsgemäß abläuft und das benötigte Ergebnis liefert.
 																																							 
 							
 
-### Definieren der Extraktionseigenschaften 
-																								  
-																		 
-																							   
-										  
-																																 
-																					  
-											   
-																					   
-								 
+### Definieren der Extraktionseigenschaften 			 
 
 1. Wählen Sie im Hauptfenster von Xtract Universal Designer eine erstellte Tabellenextraktion aus.
 2. Um die Extraktionseinstellungen zu öffnen, klicken Sie auf **[Run]**. 
@@ -32,7 +25,7 @@ Das Fenster "Run Extraction" wird geöffnet.
 3. Passen Sie die Details der Ausführung mit Parametern an, falls erforderlich. 
 
 ### Extraktionsparameter festlegen
-1. Wählen Sie im Fenster "Run Extraction" ein Parameter aus, den Sie überschreiben möchten. Markieren Sie das zugehörige Kästchen.
+1. Wählen Sie im Fenster "Run Extraction" ein Parameter aus, den Sie überschreiben möchten. Markieren Sie die zugehörige Checkbox.
 2. Geben Sie den Wert ein. Die eigentliche Datenanfrage erfolgt über URL:
 - Vor der Änderung eines Parameters:
 `http://localhost:8065?name=Plants`

@@ -9,5 +9,6 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=dynamic-connection-parameters
+progressstate: 3
 ---	
 {% include _content/en/xu-specific/advanced-techniques/dynamic-connection-parameters.md %}

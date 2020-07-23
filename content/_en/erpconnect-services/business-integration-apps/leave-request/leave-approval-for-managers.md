@@ -9,20 +9,21 @@ permalink: /:collection/:path
 weight: 2
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=leave-approval-for-managers
+progressstate: 3
 ---
 
 The manager app for leave approval consists of two tabs:
 
-- My Absences: This is the manager’s workitem list for all the requests sent by employees. Requests can be simply approved or rejected here.   
+- My Absences: This is the manager’s work item list for all the requests sent by employees. Requests can be simply approved or rejected here.   
 - Team Calendar: The manager gets an overview about the absences in the team.
 
 UI Leave Approval app:
 
 ![bia-manage-01](/img/content/bia-manage-01.png){:class="img-responsive"}
 
-**Approve or reject requests**
+### Approve or reject requests
 
-An employee’s leave request not yet approved or rejected is in status Sent. In this status the manager gets the request listed in his personal worklist. By calling up the application and by clicking the refresh button all new requests are loaded into the list.  
+An employee’s leave request not yet approved or rejected is in status Sent. In this status the manager gets the request listed in his personal work item list. By calling up the application and by clicking the refresh button all new requests are loaded into the list.  
 
 
 Approval scenario:
@@ -34,7 +35,7 @@ With the *Reject* button the manager can dismiss leave requests instantly and ca
 
  
 
-**Team calendar** 
+### Team calendar
 
 There is also a *Team Calendar* tab in the manager’s app for leave request approval. It is similar to the team calendar in the employee’s app. Only the function to post request within the team calendar is not available in the approval application. If a manager is also required to request absences at the next higher-level superior, he\she can also use the employee’s app for leave requests. 
 

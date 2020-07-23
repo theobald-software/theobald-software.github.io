@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-bearbeiten-des-modells-in-visual-studio
+progressstate: 3
 ---
 
 In den nachfolgenden Schritten exportieren Sie das 'SAP PO Model' nach Visual Studio und erweitern die Lösung dort. Sie werden dem Modell eine benutzerdefinierte Methode *Release* hinzufügen, die es Ihnen erlaubt eine ausgewählte Bestellung freizugeben.
@@ -63,7 +64,7 @@ Die Datei beinhaltet den Quellcode für die beiden Public Methoden der Entität,
 
 ![BCS-PO-VS-BDC-Model-03](/img/content/BCS-PO-VS-BDC-Model-03.png){:class="img-responsive"}
 
-Gehen Sie zurück zum Modell Designer Fenster, indem Sie die Registerkarte 'SAPPOModelVS2010' wählen.
+Gehen Sie zurück zum Modell Designer Fenster, indem Sie den Tab *SAPPOModelVS2010* wählen.
 
 
 Minimieren Sie im *BDC Method* Details Fenster die vorhandenen Methoden 'ReadData' und 'ReadDataItem'.

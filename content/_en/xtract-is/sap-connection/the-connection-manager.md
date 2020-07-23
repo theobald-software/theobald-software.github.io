@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
+progressstate: 5
 ---
 ### Connecting to SAP
 Every Xtract IS component needs a connection manager to establish access to the SAP system. 
@@ -50,7 +51,7 @@ If the application server is "hamlet" and the router string is "/H/lear.theobald
 See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm).
 
 {: .box-tip }
-**Tip:** Values to fill out the forms can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
+**Tip:** Values to fill out the forms can be found in the SAP Logon Pad in the *Properties* or acquired from SAP Basis team.
 
 
 ### Trace Directory (2)

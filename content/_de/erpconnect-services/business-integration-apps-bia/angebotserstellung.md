@@ -10,21 +10,22 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=angebotserstellung
+progressstate: 3
 ---
 
 **SAP Quotation** ist eine mit ERPConnect Services entwickelte Business Integration App für SharePoint.
-Die App ermöglicht es, Angebote für Materialien oder Dienstleistungen im SAP-System zu erfassen oder sich über eine Suchfunktion bereits angelegte Datensätze anzeigen zu lassen. Während die SAP-Transaktion zur Angebotserstellung aus mehreren Eingabeebenen und Karteireitern besteht, ist der Aufbau der Business Integration App möglichst einfach gehalten. Es sind die für eine Angebotserstellung unbedingt notwendigen Eingabefelder vorhanden. Damit ist es auch SAP-fremden Anwendern ohne Schulungsaufwand möglich, Datensätze zu erfassen, die dann von den SAP-Spezialisten weiterbearbeitet werden können.
+Die App ermöglicht es, Angebote für Materialien oder Dienstleistungen im SAP-System zu erfassen oder sich über eine Suchfunktion bereits angelegte Datensätze anzeigen zu lassen. Während die SAP-Transaktion zur Angebotserstellung aus mehreren Eingabeebenen und Tabs besteht, ist der Aufbau der Business Integration App möglichst einfach gehalten. Es sind die für eine Angebotserstellung unbedingt notwendigen Eingabefelder vorhanden. Damit ist es auch SAP-fremden Anwendern ohne Schulungsaufwand möglich, Datensätze zu erfassen, die dann von den SAP-Spezialisten weiterbearbeitet werden können.
 
 
-Die Lösung wird als Installerpaket ausgeliefert und kann damit bequem auf Ihrem SharePoint Server installiert werden.
+Die Lösung wird als Installer-Paket ausgeliefert und kann damit bequem auf Ihrem SharePoint Server installiert werden.
 
-**Aufbau der App**
+### Aufbau der App
 
 Die Anwendung besteht aus einer einzigen Eingabemaske mit einer überschaubaren Anzahl an Feldern. Im Hauptbereich sind die für eine Angebotserstellung zwingend erforderlichen Eingabefelder aufgeführt und im unteren Bildschirmbereich können dem Angebot entsprechende Materialpositionen hinzugefügt werden. Über die Menüleiste am unteren Rand besteht zudem die Möglichkeit, sich über eine einfache Suchfunktion bereits angelegte Angebote anzeigen zu lassen.
 
 ![ECS-BIA-SAPQuotation1](/img/content/ECS-BIA-SAPQuotation1.png){:class="img-responsive"}
 
-**Durchführung einer Angebotserstellung**
+### Durchführung einer Angebotserstellung
 
 
 Zur Erstellung eines neuen Angebots müssen alle Muss-Felder der Eingabeoberfläche mit Daten hinterlegt werden. Beim Klicken in die Eingabefelder wird der User über die Schaltflächen informiert, ob es sich um ein erforderliches Feld handelt oder nicht. Es werden dabei alle Felder angesprochen, die auch in der SAP-Anwendung zwingend für die Anlage eines Angebots benötigt werden. 
@@ -49,7 +50,7 @@ Erfolgreiche Anlage eines Datensatzes:
 
 ![ECS-BIA-SAPQuotation6](/img/content/ECS-BIA-SAPQuotation6.png){:class="img-responsive"}
 
-**Angebotsanzeige** 
+### Angebotsanzeige
 
 
 Neben der Erstellung neuer Angebote bietet der Service auch die Möglichkeit, über die eindeutig zugewiesene Belegnummer des Vertriebsdokuments, nach bereits angelegten Angeboten zu suchen und sich diese anzeigen zu lassen. Der Service vereint damit eine Anlage- und Auswertungsfunktion, was ihn vielfältig nutzbar macht.<br>   
@@ -68,7 +69,7 @@ Die weiteren Felder der Menüleiste beinhalten Funktionen wie z.B. das Zurückse
 
 ![ECS-BIA-SAPQuotation9](/img/content/ECS-BIA-SAPQuotation9.png){:class="img-responsive"}
 
-**Anwendungsbeispiel** 
+### Anwendungsbeispiel
 
 Mit dem Button *Eingabefelder zurücksetzen* in der Menüleiste werden die Eingabefelder mit beispielhaften Testdaten befüllt, mit denen ein Angebot angelegt werden kann. 
 
@@ -121,7 +122,7 @@ Einstieg Angebote anzeigen:
 
 ![ECS-BIA-SAPQuotation18](/img/content/ECS-BIA-SAPQuotation18.png){:class="img-responsive"}
 
-Sie landen beim Betätigen der Buttons *Verkauf, Positionsübersicht* und *Besteller* immer in der Übersichtsmaske für die Anzeige von Angeboten aber in unterschiedlichen Karteireitern mit unterschiedlichen Informationen.
+Sie landen beim Betätigen der Buttons *Verkauf, Positionsübersicht* und *Besteller* immer in der Übersichtsmaske für die Anzeige von Angeboten aber in unterschiedlichen Tabs mit unterschiedlichen Informationen.
 
 
 Übersichtsmaske Angebote anzeigen:

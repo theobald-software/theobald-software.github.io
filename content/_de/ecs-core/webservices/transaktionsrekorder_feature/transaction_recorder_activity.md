@@ -8,9 +8,10 @@ parent: transaktionsrekorder_feature
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
+progressstate: 3
 ---
 
-Nach einer erfolgreichen Aufzeichnung wird die SAP GUI geschlossen und das Fenster *Transaction Recorder Activity* erscheint im WebService Designer. Dort finden Sie die folgenden Registerkarten:
+Nach einer erfolgreichen Aufzeichnung wird die SAP GUI geschlossen und das Fenster *Transaction Recorder Activity* erscheint im WebService Designer. Dort finden Sie die folgenden Tabs:
 
 **Standard**
 

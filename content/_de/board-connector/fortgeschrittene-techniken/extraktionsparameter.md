@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
+progressstate: 5
 ---
 
 Der folgende Abschnitt beschreibt die Extraktionsparameter, die im Fenster "Run extractions" geändert werden können. 
@@ -54,7 +55,7 @@ logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Tick
 {: .box-note }
 **Hinweis:** Der Tab "Custom" ist nur dann aktiv, wenn eine Variable mit dem @-Symbol in der [WHERE-Bedingung](../table/where-bedingung) definiert ist.
 
-Um den vordefinierten Parameter einzustellen, markieren Sie das Kästchen und geben Sie den gewünschten Wert ein.
+Um den vordefinierten Parameter einzustellen, markieren Sie die Checkbox und geben Sie den gewünschten Wert ein.
  
 ![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
 

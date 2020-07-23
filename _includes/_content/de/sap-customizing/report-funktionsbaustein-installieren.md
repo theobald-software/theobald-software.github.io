@@ -20,7 +20,7 @@ Legen Sie zunächst eine Funktionsgruppe (z.B. mit dem Namen ZXTRACT) an, um den
 
 ![Report-Custom-Function-04](/img/content/Report-Custom-Function-04.png){:class="img-responsive"}
 
-Den Quellcode kopieren Sie bitte per Strg+C und Strg+V aus der Datei Z_XTRACT_IS_REMOTE_REPORT.txt in den Code-Editor (Reiter Source Code). 
+Den Quellcode kopieren Sie bitte per Strg+C und Strg+V aus der Datei Z_XTRACT_IS_REMOTE_REPORT.txt in den Code-Editor (Tab "Source Code"). 
 Diese Datei finden Sie im Xtract-Installationsverzeichnis. <br>
 
 Sichern Sie den Baustein und aktivieren Sie ihn. Nun ist er für die Benutzung bereit.<br>

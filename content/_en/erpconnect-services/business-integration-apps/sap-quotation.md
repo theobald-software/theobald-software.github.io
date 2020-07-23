@@ -10,18 +10,19 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=sap-quotation
+progressstate: 3
 ---
 
 With the Business Integration App SAP Quotation, it is possible to create quotations for materials or services in SAP or to use a convenient search function to obtain data already generated from the SAP system. Whereas the SAP transaction for quotation creation consists of multiple input levels and ribbons the Business Integration App’s user interface is kept as simple as possible. Only the minimum required input fields for quotation creation are provided. It is therefore possible for users without any specific SAP knowledge to create data records which can be processed further by SAP specialists. 
 
 
-**App structure**
+### App structure
 
-The App consists of one single selection screen with a manageable number of input fields. In the main section all fields which are necessary to create a qoutation in SAP are listed and in the lower part of the screen material positions can be added to the quotation. Furthermore, there is also the possibility to display already created quotations with a simple search function. 
+The App consists of one single selection screen with a manageable number of input fields. In the main section all fields which are necessary to create a quotation in SAP are listed and in the lower part of the screen material positions can be added to the quotation. Furthermore, there is also the possibility to display already created quotations with a simple search function. 
 
 ![ECS-BIA-SAPQuotation1](/img/content/ECS-BIA-SAPQuotation1.png){:class="img-responsive"}
 
-**Create a quotation**
+### Create a quotation
 
 To prepare a quotation all mandatory fields have to be filled with data. By clicking a field, the user gets informed if the field is required. 
 
@@ -47,7 +48,7 @@ Successful quotation creation:
 
 ![ECS-BIA-SAPQuotation6](/img/content/ECS-BIA-SAPQuotation6.png){:class="img-responsive"}
 
-**Display a quotation**
+### Display a quotation
 
 
 Besides the creation of new quotations the app also offers the possibility to display already created quotations by searching for a specific document number. To display a quotation, you just have to click the magnifier symbol and enter the document number of the quotation you want to display.  
@@ -68,7 +69,7 @@ Menu bar:
 
 ![ECS-BIA-SAPQuotation9](/img/content/ECS-BIA-SAPQuotation9.png){:class="img-responsive"}
 
-**Application example**
+### Application example
 
 
 With the button *Init inputs* in the menu bar the input fields are filled with test data, which can be used for testing the creation of a quotation.  

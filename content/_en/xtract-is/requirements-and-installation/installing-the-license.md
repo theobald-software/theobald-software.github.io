@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installing-the-license
+progressstate: 5
 ---
 ### About licensing concept of Xtract IS
 The following graphic shows the on which workstations the installation of Xtract IS with a valid license required.   

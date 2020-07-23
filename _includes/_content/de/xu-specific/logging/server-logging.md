@@ -23,7 +23,7 @@ Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende 
 - **Warnings** - Informationen über Probleme, die nicht zu einem Extraktionsfehler führen. Zum Beispiel Authentifizierungsfehler.
 - **Debug Details** - detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
 
-Markieren Sie die die Kästchen oben links, um zu entscheiden, welche Log-Levels angezeigt werden sollen.
+Markieren Sie die Checkboxen oben links, um zu entscheiden, welche Log-Levels angezeigt werden sollen.
 
 
 ### Kopieren von Logs

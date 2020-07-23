@@ -8,7 +8,7 @@ Um ein BAPI oder einen RFC-Funktionsbaustein zu suchen, klicken Sie bitte auf de
 
 ![Look-Up-Function-Module](/img/content/Look-Up-Function-Module.png){:class="img-responsive"}
 
-Die Metadaten des Bausteins werden vom SAP geholt. Es gibt skalare und strukturierte Parameter, die sich jeweils in Imports und Exports aufteilen (siehe Tab-Reiter im oberen Bereich), sowie Tabellen (unterer Bereich). 
+Die Metadaten des Bausteins werden vom SAP geholt. Es gibt skalare und strukturierte Parameter, die sich jeweils in Imports und Exports aufteilen (siehe Tab im oberen Bereich), sowie Tabellen (unterer Bereich). 
 
 ![XU-BAPI-Parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
 

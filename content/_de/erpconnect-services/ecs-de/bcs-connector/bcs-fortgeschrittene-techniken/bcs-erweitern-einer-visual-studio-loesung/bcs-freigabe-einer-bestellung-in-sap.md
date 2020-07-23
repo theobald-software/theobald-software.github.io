@@ -9,9 +9,10 @@ permalink: /:collection/:path
 weight: 1
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-freigabe-einer-bestellung-in-sap
+progressstate: 3
 ---
 
-Dieses Beispiel setzt voraus, dass ein Freigabeverfahren für Bestellungen in Ihrem SAP-System konfiguriert wurde.  Im Freigabeverfahren in SAP können Bedingungen definiert werden (z.B. der Gesamtwert ist auf 10.000 USD begrenzt), die vor einer Bestellung erfüllt sein müssen, bevor sie weiter verarbeitet werden darf. Der SAP Anwender kann dies auf der Registerkarte 'Release strategy' im 'Purchase Order Display' Bildschirm sehen.
+Dieses Beispiel setzt voraus, dass ein Freigabeverfahren für Bestellungen in Ihrem SAP-System konfiguriert wurde.  Im Freigabeverfahren in SAP können Bedingungen definiert werden (z.B. der Gesamtwert ist auf 10.000 USD begrenzt), die vor einer Bestellung erfüllt sein müssen, bevor sie weiter verarbeitet werden darf. Der SAP Anwender kann dies im Tab *Release strategy* im *Purchase Order Display* Bildschirm sehen.
 
 ![BCS-PO-VS-SAP](/img/content/BCS-PO-VS-SAP.png){:class="img-responsive"}
 

@@ -36,7 +36,7 @@ Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion
 Z_THEO_READ_TABLE. Siehe auch [SAP Customizing](../sap-customizing/funktionsbaustein-fuer-table-extraktion). 
 
 **Extract data in background job** <br>
-Durch Ankreuzen den Kästchens "Extract data in background" wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
+Durch Ankreuzen der Checkbox "Extract data in background" wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
 Diese Einstellung ist optional und wird in Kombination mit dem Baustein Z_THEO_READ_TABLE ab Version 2.0 unterstützt.
 Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen könnten. <br>
 

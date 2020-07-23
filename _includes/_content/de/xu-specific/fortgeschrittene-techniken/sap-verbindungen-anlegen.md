@@ -61,7 +61,7 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 Zusätzlich können Sie auch [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services, Xtract Universal und Board Connector).
 
 {: .box-note }
-**Hinweis:** beim Markieren des Kästchens **Require SAP credentials to be explicitly supplied for execution** werden die SAP-Anmeldedaten nicht im Cache gespeichert. Diese Option ist nur aktiv bei Verwendung von *Plain* oder *SNC* Authentifizierungsmethoden und beim Ausführen der Extraktion im Browser (Schaltfläche **[Run in Browser]**.
+**Hinweis:** beim Markieren der Checkbox **Require SAP credentials to be explicitly supplied for execution** werden die SAP-Anmeldedaten nicht im Cache gespeichert. Diese Option ist nur aktiv bei Verwendung von *Plain* oder *SNC* Authentifizierungsmethoden und beim Ausführen der Extraktion im Browser (Schaltfläche **[Run in Browser]**.
 Nach dem Start einer Extraktion wird ein Pop-Up-Fenster geöffnet und der Benutzer wird bei jeder Extraktion aufgefordert seine SAP-Anmeldedaten einzugeben. 
 
 

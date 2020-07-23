@@ -8,9 +8,10 @@ parent: transaktionsrekorder_feature
 permalink: /:collection/:path
 weight: 5
 lang: de_DE
+progressstate: 3
 ---
 
-Um Rückmeldungen aus einer aufgezeichneten Transaktion zu protokollieren, gehen Sie zur Registerkarte *Return Messages*.
+Um Rückmeldungen aus einer aufgezeichneten Transaktion zu protokollieren, gehen Sie zu Tab *Return Messages*.
 
 ![ta_rec_feature_16](/img/content/ecscore/ecscore-wsd_ta_rec_16.png){:class="img-responsive"} 
 

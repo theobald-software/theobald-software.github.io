@@ -8,7 +8,7 @@ parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-progresstate: 5
+progressstate: 5
 ---
 The following section gives an overview over the settings that can be changed for the ODP component.
 The settings can be changed in the window "Define data source for SAP ODP". 

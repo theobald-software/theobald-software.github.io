@@ -36,7 +36,7 @@ Es stehen folgende Aggregatfunktionen für Spalteninhalte zur Verfügung:
 **Tipp:** Die Aggregatfunktionen sind nur bei nummerischen Felddatentypen (z.B. INT, FLOAT, DECIMAL) verfügbar.
 
 **Conv. - Use Conversion Routine (3)**  <br>
-Durch Aktivieren des Tri-State-Kästchens wird festgelegt, ob die im Data Dictionary gespeicherten Konvertierungsroutinen für die jeweiligen Felder verwendet werden. 
+Durch Aktivieren der Tri-State-Checkbox wird festgelegt, ob die im Data Dictionary gespeicherten Konvertierungsroutinen für die jeweiligen Felder verwendet werden. 
 
 {: .box-note}
 **Hinweis:** die Verwendung von Conversion Routines in SAP führt zu einem merklichen Performance-Verlust (Leistungseinbuße). Die Extraktionsdauer erhöht sich. 
@@ -44,7 +44,7 @@ Durch Aktivieren des Tri-State-Kästchens wird festgelegt, ob die im Data Dictio
 
 ![tri-state box](/img/content/table/tri-state_checkbox.png){:class="img-responsive"}
 
-| Status des Kontrollkästchens | Beschreibung | Kommentar |
+| Status der Checkbox| Beschreibung | Kommentar |
 |:-----:|-----|
 |(1) | keine Konvertierungsroutine ausgewählt | | 
 |(2)| Konvertierungsroutine aktiviert;<br> nur mit dem Funktionsbaustein Z_XTRACT_IS_TABLE_COMPRESSION verfügbar| keine Datentypsicherheit |

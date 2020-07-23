@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=leave-request-for-employees
+progressstate: 
 ---
 
 The Leave Request solution for employees consists of three tabs:
@@ -19,7 +20,7 @@ The Leave Request solution for employees consists of three tabs:
 
 ![bia-leave-1](/img/content/bia-leave-1.png){:class="img-responsive"}
 
-**Create and display Leave Requests**
+### Create and display Leave Requests
 
 With the Leave Request app employees can create new leave requests and post them – with a notice for the approver or not – to their responsible manager. A new request is created in the *My Absences* tab by clicking the *Create* button. A popup screen for entering all necessary data (e.g. absence type, time frame etc.) appears.  
  
@@ -43,7 +44,7 @@ My Absences:
 
 ![bia-leave-4](/img/content/bia-leave-4.png){:class="img-responsive"}
 
-**Team Calendar**
+### Team Calendar
 
 In the *Team Calendar* tab employees get an overview about team members’ absences. The displayed time period can be adapted individually (weekly, monthly or daily view). For both completed and future time periods the customer gets an overview of the team members’ requested and approved absences. With this, employees have an up-to-date overview about absences in the team and can do their absence planning accordingly.   
 
@@ -61,7 +62,7 @@ In addition to the display of absences employees can also use the team calendar 
 
 ![bia-leave-7](/img/content/bia-leave-7.png){:class="img-responsive"}
 
-**Leave Summary**
+### Leave Summary
 
 In the *Leave Summary* tab employees get an overview about their time quotas - these are absences which are connected with a quota. The overview contains both, a list of the customized time quotas and a graphical view of the quotas displayed as a diagram.  
 
@@ -72,7 +73,7 @@ Leave summary:
 A classic example for an absence type connected with a quota would be annual leave. If an employee requests five days` annual leave and get it approved, then the quota of e.g. thirty days will be reduced to twenty-five days. The employee will get an exact summary then of how many days were already requested, approved and how many remaining days of paid leave are still available for the selected time period.
 
 
-**Menu bar**
+### Menu bar
 
 In the menu bar several settings can be applied on the solution.  
 

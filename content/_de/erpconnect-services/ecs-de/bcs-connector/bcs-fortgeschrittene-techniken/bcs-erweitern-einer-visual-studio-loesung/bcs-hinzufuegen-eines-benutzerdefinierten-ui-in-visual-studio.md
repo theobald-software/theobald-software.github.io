@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-hinzufuegen-eines-benutzerdefinierten-ui-in-visual-studio
+progressstate: 3
 ---
 
 In den nachfolgenden Schritten erstellen Sie einen einfachen, benutzerdefinierten Web Part, der die Bestellungen und eine Freigabeschaltfläche darstellen wird. Dieser Web Part wird auf einer Seite dargestellt wenn der Benutzer die *Release* Aktion im Purchase Order Menü wählt.
@@ -35,7 +36,7 @@ Ordnen Sie die Controls wie auf dem nachfolgenden Bild an. Sie können Styles ve
 
 ![BCS-PO-VS-Web-Part-02](/img/content/BCS-PO-VS-Web-Part-02.png){:class="img-responsive"}
 
-Wechseln Sie auf die Registerkarte die den Sourcecode der Datei 'ReleasePOUserControl.ascx.cs' anzeigt. Fügen Sie den nachfolgenden Code hinzu, um die Controls mit den Daten zu verknüpfen und um die Release Methode aufzurufen, wenn die Schaltfläche geklickt wird.
+Wechseln Sie zum Tab der den Sourcecode der Datei 'ReleasePOUserControl.ascx.cs' anzeigt. Fügen Sie den nachfolgenden Code hinzu, um die Controls mit den Daten zu verknüpfen und um die Release Methode aufzurufen, wenn die Schaltfläche geklickt wird.
 
 <details>
 <summary>[C#]</summary>

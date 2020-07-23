@@ -31,7 +31,7 @@ The window "SAP Connection Details" consists of four subsections:
 Fill out the connection details to establish an SAP connection.
 
 {: .box-tip }
-**Tip:** Values to fill out the fields can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
+**Tip:** Values to fill out the fields can be found in the SAP Logon Pad in the *Properties* or acquired from SAP Basis team.
 
 
 ### System

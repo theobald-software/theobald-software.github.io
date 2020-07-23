@@ -9,11 +9,12 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-entitaet-zur-suche-in-sap
+progressstate: 3
 ---
 
 Im Beispiel soll eine Suche nach SAP-Kundendaten ermöglicht werden. Dazu wird eine neue Entität definiert, die auf dem SAP-Funktionsbaustein SD_RFC_CUSTOMER_GET basiert.
 
-Damit die Entität vom Suchdienst durchforstet werden kann, muss das Kontrollkästchen *Crawlable* aktiviert werden.
+Damit die Entität vom Suchdienst durchforstet werden kann, muss die Checkbox *Crawlable* aktiviert werden.
 
 ![BCS-Search-Entity](/img/content/BCS-Search-Entity.png){:class="img-responsive"}
 
@@ -23,6 +24,6 @@ Markieren Sie eines der Felder als Titel-Feld der Entität. Das Titel-Feld wird 
 
 Wählen Sie die Schaltfläche (…) neben dem Feld welches Sie als Titel-Feld markieren möchten, im Beispiel verwenden wir das Feld *KUNNR*.
 
-Im darauffolgenden Dialog wählen Sie *Options* und aktivieren das Kontrollkästchen Set as *Title*.
+Im darauffolgenden Dialog wählen Sie *Options* und aktivieren Sie die Checkbox Set as *Title*.
 
 ![BCS-Search-Set-Title](/img/content/BCS-Search-Set-Title.png){:class="img-responsive"}

@@ -70,7 +70,7 @@ Value (Wert) | 1
 2. Wählen Sie eine vorhandene SAP-Quellsystem aus und klicken Sie auf **[Edit]** (Bleistift-Symbol).
 ![Edit-SAP-source](/img/content/edit_sap_source.png){:class="img-responsive"}
 3. Aktivieren Sie die Option **SNC** (1) in der Sektion *Authentication*.
-4. Markieren Sie das Kästchen *Impersonate authenticated caller (SSO)* (2).
+4. Markieren Sie die Checkbox *Impersonate authenticated caller (SSO)* (2).
 5. Geben Sie den vollständigen Pfad der Kerberos-Bibliothek in das Feld *SNC library* ein.
 z.B. `C:\SNC\gx64krb5.dll` (3).
 6. Geben Sie die SPN des SAP-Service-Accounts in das Feld *Partner name* ein. Verwenden Sie die folgende Notation: *p:[SPN]@[Domain-FQDN-Uppercase]* (4). 

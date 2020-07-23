@@ -1,7 +1,7 @@
 
 ### Verwendung von WHERE-Bedingung
 
-1. Navigieren Sie zum Reiter **WHERE Clause**.
+1. Navigieren Sie zum Tab **WHERE Clause**.
 2. Geben Sie die WHERE-Bedingung ein.
 3. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
 

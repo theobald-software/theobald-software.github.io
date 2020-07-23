@@ -8,6 +8,7 @@ parent: getting-started-table
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
+progressstate: 3
 ---
 
 The next step is to load an extraction in BOARD using the data reader. In the BOARD designer we defined the extraction plants, which extract the plants table *T001W* from SAP. In BOARD we defined the entity plants, in which we want to load the SAP data. Now select *Database -> Data Reader -> SAP -> New Protocol*  to create a new protocol.

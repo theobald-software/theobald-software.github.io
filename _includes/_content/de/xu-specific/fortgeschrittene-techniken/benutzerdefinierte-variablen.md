@@ -7,7 +7,7 @@ Das folgende Bild zeigt eine Where-Klausel mit zwei veränderlichen Variablen @P
 ![Extraction-User-Variables](/img/content/Extraction-User-Variables.png){:class="img-responsive"}
 
 Klicken Sie nun auf den Run-Knopf und bestätigen Sie eine eventuelle Anfrage, ob die Änderungen übernommen werden sollen.<br>
-Wenn Sie auf Basis dieser Where-Klausel den Run-Dialog öffnen, finden Sie die Variablen im zweiten Reiter wieder, um sie mit einem Wert zu bestücken. Xtract Universal erkennt anhand des @-Zeichens, dass es sich um eine Variable handelt.
+Wenn Sie auf Basis dieser Where-Klausel den Run-Dialog öffnen, finden Sie die Variablen im zweiten Tab wieder, um sie mit einem Wert zu bestücken. Xtract Universal erkennt anhand des @-Zeichens, dass es sich um eine Variable handelt.
 
 ![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
 
