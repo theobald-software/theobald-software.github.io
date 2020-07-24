@@ -1,7 +1,0 @@
----
-
----
-
-In this section we will describe how to load the SAP extraction data to an Teradata Database destination.
-
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
