@@ -20,3 +20,4 @@ For this purpose Xtract Universal offers a destination of type *Qlik*. This dest
 Running the qlik application triggers the respective Xtract Universal extraction via the data load script. Xtract Universal sends the extracted SAP data through an http-csv stream directly to your qlik application.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+
