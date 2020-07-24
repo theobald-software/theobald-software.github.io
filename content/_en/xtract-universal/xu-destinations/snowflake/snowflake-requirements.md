@@ -22,6 +22,6 @@ No additional installations are required.
 
 *************
 #### Related Links
-- [.NET Framework](../introduction/requirements#other-applications-and-frameworks)
-- [64-bit Architecture](../introduction/requirements#hardware-requirements)
+- [.NET Framework](../../introduction/requirements#other-applications-and-frameworks)
+- [64-bit Architecture](../../introduction/requirements#hardware-requirements)
 
