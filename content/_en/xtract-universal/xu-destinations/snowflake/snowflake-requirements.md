@@ -11,7 +11,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-- [x] SnowSQL client version 1.2.5
+[x]  SnowSQL client version 1.2.5
 
 SnowSQL is a command line client for connecting to Snowflake to execute SQL queries and perform all DDL and DML operations,<br>
 including loading data into and unloading data out of database tables.
