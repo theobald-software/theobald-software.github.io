@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-05
+ref: xu-introduction-06
 layout: page
 title: Licensing
 description: About the license of Xtract Universal
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 progressstate: 5

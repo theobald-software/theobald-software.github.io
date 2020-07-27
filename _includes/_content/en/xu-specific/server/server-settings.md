@@ -5,6 +5,10 @@ In the main window of the Designer navigate to **[Server] > [Settings]**. The 'S
 - *Web Server*
 
 
+{: .box-note }
+**Note:** The settings are stored in the following directory: `C:\Program Files\XtractUniversal\config\server` (by default).
+
+
 ### Configuration Server
 
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.png){:class="img-responsive"}

@@ -1,14 +1,15 @@
 ---
-ref: xu-introduction-04
+ref: xu-introduction-05
 layout: page
 title: SAP Connection
 description: SAP Connection
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
+progressstate: 5
 ---
 
 ### Creating an SAP connection

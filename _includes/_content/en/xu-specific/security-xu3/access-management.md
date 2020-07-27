@@ -1,4 +1,4 @@
-## Server Settings
+### Server Settings
 Access Management will be activated once you check the checkbox *Restrict Designer access to the following users/groups*. <br>
 Once activated, only the listed users or user groups will be able to log on.
 
@@ -19,7 +19,7 @@ Additionally, they can modify existing extractions, however they may not create 
 
 
 
-## Extraction Settings
+### Extraction Settings
 Access restrictions can be performend on extraction level, as well. Access restrictions for extractions override restrictions made on server level.
 
 ![Server-Settings_](/img/content/XU_Extraction_Security.png){:class="img-responsive"}
