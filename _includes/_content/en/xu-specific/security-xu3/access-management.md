@@ -24,4 +24,9 @@ Access restrictions can be performend on extraction level, as well. Access restr
 
 ![Server-Settings_](/img/content/XU_Extraction_Security.png){:class="img-responsive"}
 
+## Source Settings
+Access restrictions can be performend on source level, as well. Access restrictions for sources override restrictions made on server level.
+
+![Server-Settings_](/img/content/XU_Extraction_Security2.png){:class="img-responsive"}
+
 
