@@ -22,3 +22,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=script_generieren
 
 {: .box-note }
 **Hinweis:** die "SET-Methoden" können nicht im Fenster "Script" editiert werden. Editieren Sie die SET-Methoden auf der Destinationsseite.  
+
+
+****
+#### Weiterführende Links
+- [Destinationen](./xu-destinationen)
+- [Qlik Help](https://help.qlik.com/)

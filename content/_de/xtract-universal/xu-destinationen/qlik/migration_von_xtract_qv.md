@@ -16,3 +16,8 @@ Sie möchten dieses Szenario nach Xtract Universal migrieren.
 
 Bitte wenden Sie sich an [info@theobald-software.com](mailto:info@theobald-software.com).<br>
 Wir werden Ihnen dann alle notwendigen Informationen zum Migrationsprozess zukommen lassen.
+
+****
+#### Weiterführende Links
+- [Destinationen](./xu-destinationen)
+- [Qlik Help](https://help.qlik.com/)

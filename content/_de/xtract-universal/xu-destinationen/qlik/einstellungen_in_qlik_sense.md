@@ -26,3 +26,7 @@ Falls Sie daher beim Ausführen eines Qlik Sense Berichtes die Meldung *Forbidde
 
 ["Access is denied" when connecting to localhost with WebFile connection ](https://qliksupport.force.com/articles/000054581?_ga=2.234987393.1633897554.1546511952-1716671580.1545392499).
 
+****
+#### Weiterführende Links
+- [Destinationen](./xu-destinationen)
+- [Qlik Help](https://help.qlik.com/)

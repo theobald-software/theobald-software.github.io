@@ -19,9 +19,13 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=connection3
 4. Click **[OK]** to confirm.
 
 ### Destination Details
-The window "Destination Details" consists of three subsections:
+The window "Destination Details" consists of two subsections:
 - Name - Destination name
 - Type - Destination type
 
 ![XU_qlik_destination](/img/content/XU_qlik_destination.png){:class="img-responsive"}
 
+*****
+#### Related Links
+- [Destinations](./xu-destinations)
+- [Qlik Help](https://help.qlik.com/)

@@ -12,3 +12,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=requirements4
 ---
 
 There are no particular technical prerequisites for using the Qlik destination.
+
+*****
+#### Related Links
+- [Destinations](./xu-destinations)
+- [Qlik Help](https://help.qlik.com/)
