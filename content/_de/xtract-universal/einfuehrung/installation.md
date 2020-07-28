@@ -43,7 +43,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | ABAP Ordner | Ordner mit eigenentwickelten Z-Funktionsbausteinen (.txt) und den dazugehörigen Transportaufträgen (.zip).|
 | logs Ordner| Ordner mit Server- und Extraktionsprotokollen etc. Siehe auch Abschnitt [Logging](../logging). |
 | config Ordner | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. Siehe auch Abschnitt [Backup](#backup). |
-| result-cache Ordner | Ordner mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Siehe auch Abschnitt [Pull-Destinationen](../xu-zielumgebungen#pull--und-push-destinationen).|
+| result-cache Ordner | Ordner mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Siehe auch Abschnitt [Pull-Destinationen](../xu-destinations#pull--und-push-destinationen).|
 | xu.exe | Kommandozeilen-Tool zum Einplanen von Extraktionen (Automatisierung). Siehe auch Abschnitt [Extraktion einplanen](../fortgeschrittene-techniken/extraktion_einplanen). |
 | XtractDesigner.exe | Anwendung zum Starten von Xtract Universal Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
 | XtractService.exe | Anwendung zum Starten von Xtract Universal Server als XU Windows-Service (Dienst). Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
