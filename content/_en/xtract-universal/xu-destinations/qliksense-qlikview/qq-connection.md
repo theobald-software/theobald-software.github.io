@@ -14,12 +14,12 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=connection3
 ### Adding a Qlik Destination
 1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
 2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![XU_parquet_Destination](/img/content/xu/parquet/parquet_manage_destination.png){:class="img-responsive"}
+![XU_parquet_Destination](/img/content/xu/qlik_manage_destination.png){:class="img-responsive"}
 3. Select the *Qlik* destination from the drop-down list.
 4. Click **[OK]** to confirm.
 
 ### Destination Details
-The window "Destination Details" consists of three subsections:
+The window "Destination Details" consists of two subsections:
 - Name - Destination name
 - Type - Destination type
 

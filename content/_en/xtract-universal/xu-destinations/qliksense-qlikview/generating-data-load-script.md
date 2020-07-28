@@ -15,14 +15,14 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=generating_data_load_script
 ![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script.png){:class="img-responsive"}
 2. Click **[Generate Qlik Script]** to generate a data load script. The window "Script" opens.
 
-### Further Processing the Script
-1. Select the *QlikView Script* or *QlikSense Script* tab
+### Further Processing of the Script
+1. Select the *QlikView Script* or *QlikSense Script* tab.
 2. Click **[Copy to Clipboard]** to copy the script.
 ![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script_3.png){:class="img-responsive"}
-3. When using QlikView, paste the copied script into the QlikView data load editor. For QlikSense, see chapter [Settings in QlikSense](./settings-in-qlik-sense).
+3. When using QlikView, paste the copied script into the QlikView data load editor. For QlikSense, see section [Settings in QlikSense](./settings-in-qlik-sense).
 
 {: .box-note }
-**Note:** the "SET methods" cannot be edited in the "Script" window. Edit the SET methods in the Qlik data load editor. 
+**Note:** The "SET methods" cannot be edited in the "Script" window. Edit the SET methods in the Qlik data load editor. 
 
 
 
