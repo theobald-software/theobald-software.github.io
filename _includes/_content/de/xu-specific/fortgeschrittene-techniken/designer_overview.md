@@ -27,7 +27,7 @@ Edit | Vorhandene Extraktion bearbeiten | -
 Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
 Source | Vorhandenes SAP Quellsystem auswählen | -
-Destination | Destination auswählen | [Zielumgebungen](../xu-zielumgebungen)
+Destination | Destination auswählen | [Destinationen](../xu-destinationen)
 Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/extraktion-logging)
 Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte-mit-xu/eine-extraktion-ausfuehren)
 Abort | Ausgewählte Extraktion abbrechen | -
