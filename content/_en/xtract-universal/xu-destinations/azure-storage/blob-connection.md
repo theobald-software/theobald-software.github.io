@@ -23,9 +23,10 @@ The window "Destination Details" consists of two tabs:
 - CSV Settings
 
 ### Azure Storage Connection
-The tab *Azure Storage Connection* consists of two subsections:
+The tab *Azure Storage Connection* consists of three subsections:
 - Connection 
 - Container
+- Folder path
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
 The subsection *Connection* offers two different methods for authenticating and authorizing access to an Azure storage account:
@@ -68,7 +69,8 @@ If the connection is successful, a "Connection to container <*name of container*
 Click **[OK]** to confirm. <br>
 Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
-![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02_.png){:class="img-responsive"}
+**Folder path**
+Option to create a directory within the container for saving files. 
 
 
 ### Authentication via Azure Active Directory

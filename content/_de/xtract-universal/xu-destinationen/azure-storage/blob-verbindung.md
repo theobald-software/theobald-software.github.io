@@ -71,8 +71,8 @@ Klicken Sie auf **[OK]** zum Bestätigen. <br>
 Navigieren Sie zum Tab *CSV Settings* oder klicken Sie auf **[OK]**.<br>
 Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
-![xu-azure-blob-con-02](/img/content/xu-azure-blob-con-02_.png){:class="img-responsive"}
-
+**Folder path**
+Option zum Erstellen eines Verzeichnises innerhalb des Containers zum Abspeichern von Dateien.
 
 ### Authentifizierung über Azure Active Directory 
 Die Authentifizierung über Azure Active Directory verwendet OAuth 2.0 und Azure AD zur Authentifizierung.
