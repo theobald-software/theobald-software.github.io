@@ -73,7 +73,8 @@ Klicken Sie auf **[OK]** zum Bestätigen. <br>
 Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
 **Folder path**<br>
-Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. Mehr Details im Abschnitt [Destination Settings - Destinationseinstellungen > Folder Path](./blob-einstellungen#destination-settings---destinationseinstellungen).
+Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. <br>
+Mehr Details im Abschnitt [Destination Settings - Destinationseinstellungen > Folder Path](./blob-einstellungen#destination-settings---destinationseinstellungen).
 
 *****************
 

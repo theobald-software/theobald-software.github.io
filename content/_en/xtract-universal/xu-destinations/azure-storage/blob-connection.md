@@ -138,7 +138,7 @@ If the connection is successful, a "Connection to container <*name of container*
 Click **[OK]** to confirm. <br>
 The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
-**Folder path**
+**Folder path** <br>
 Option to create a directory within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#destination-settings).
 
 ### File Format 
