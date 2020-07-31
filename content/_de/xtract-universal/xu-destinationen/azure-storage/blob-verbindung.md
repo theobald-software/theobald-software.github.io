@@ -23,10 +23,9 @@ Das Fenster "Destination Details" besteht aus zwei Tabs:
 - File Format
 
 ### Azure Storage Connection -  Azure Storage Einstellungen
-Der Tab *Azure Storage Settings* besteht aus drei Unterabschnitten:
+Der Tab *Azure Storage Settings* besteht aus zwei Unterabschnitten:
 - Connection 
 - Container
-- Folder path
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
 Der Unterabschnitt *Connection* bietet zwei verschiedene Methoden zur Authentifizierung und Zugriffssteuerung auf dem Azure Speicherkonto:

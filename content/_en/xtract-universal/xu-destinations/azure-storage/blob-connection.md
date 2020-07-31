@@ -23,10 +23,9 @@ The window "Destination Details" consists of two tabs:
 - File Format
 
 ### Azure Storage Connection
-The tab *Azure Storage Connection* consists of three subsections:
+The tab *Azure Storage Connection* consists of two subsections:
 - Connection 
 - Container
-- Folder path
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
 The subsection *Connection* offers two different methods for authenticating and authorizing access to an Azure storage account:
@@ -71,7 +70,7 @@ Click **[OK]** to confirm. <br>
 Go to the *File Format* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
 
-**Folder path**
+**Folder path** <br>
 Option to create a directory within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#destination-settings).
 
 *********
