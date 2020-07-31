@@ -20,7 +20,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 
 The window "Destination Details" consists of two tabs:
 - Azure Storage Connection
-- CSV Settings
+- File Format
 
 ### Azure Storage Connection
 The tab *Azure Storage Connection* consists of three subsections:
@@ -68,7 +68,7 @@ Button to check if the storage container can be accessed. <br>
 If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. 
 ![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 Click **[OK]** to confirm. <br>
-Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
+Go to the *File Format* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
 
 **Folder path**
@@ -109,7 +109,6 @@ ID of the registered app
 
 ![xu-azure-blob-con-08](/img/content/xu-azure-blob-con-08.png){:class="img-responsive"}
 
-
 **Connect**<br>
 Button to establish a connection to the Azure storage account.<br>
 1. Click **[Connect]**. A browser window pops up.
@@ -138,14 +137,15 @@ If the connection is successful, a "Connection to container <*name of container*
 ![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 
 Click **[OK]** to confirm. <br>
-Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
+The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
 **Folder path**
 Option to create a directory within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#destination-settings).
 
-### CSV Settings
+### File Format 
+Select the required file format between "Parquet" and "CSV".
 
-The settings in the tab *CSV Settings* correspond to the settings in the general [http-csv settings](../csv-via-http).
+The csv settings correspond to the settings in the general [http-csv settings](../csv-via-http).
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
 

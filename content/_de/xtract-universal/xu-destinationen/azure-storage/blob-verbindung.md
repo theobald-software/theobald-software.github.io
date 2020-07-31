@@ -20,12 +20,13 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-verbindung
 
 Das Fenster "Destination Details" besteht aus zwei Tabs:
 - Azure Storage Connection
-- CSV Settings
+- File Format
 
 ### Azure Storage Connection -  Azure Storage Einstellungen
-Der Tab *Azure Storage Settings* besteht aus zwei Unterabschnitten:
+Der Tab *Azure Storage Settings* besteht aus drei Unterabschnitten:
 - Connection 
 - Container
+- Folder path
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
 Der Unterabschnitt *Connection* bietet zwei verschiedene Methoden zur Authentifizierung und Zugriffssteuerung auf dem Azure Speicherkonto:
@@ -70,10 +71,9 @@ Bei einer erfolgreichen Verbindung wird das Info-Fenster "Connection to containe
 
 ![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 Klicken Sie auf **[OK]** zum Bestätigen. <br>
-Navigieren Sie zum Tab *CSV Settings* oder klicken Sie auf **[OK]**.<br>
 Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
-**Folder path**
+**Folder path**<br>
 Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. Mehr Details im Abschnitt [Destination Settings - Destinationseinstellungen > Folder Path](./blob-einstellungen#destination-settings---destinationseinstellungen).
 
 *****************
@@ -140,17 +140,16 @@ Schaltfläche zur Überprüfung, ob auf den Storage-Container zugegriffen werden
 Bei einer erfolgreichen Verbindung wird das Info-Fenster "Connection to container <*Container-Name*> successful" geöffnet. <br>
 ![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 Klicken Sie auf **[OK]** zum Bestätigen. <br>
-Navigieren Sie zum Tab *CSV Settings* oder klicken Sie auf **[OK]**.<br>
 Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
-**Folder path**
+**Folder path** <br>
 Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. Mehr Details im Abschnitt [Destination Settings - Destinationseinstellungen > Folder Path](./blob-einstellungen#destination-settings---destinationseinstellungen).
 
 
+### File Format 
+Wählen Sie das gewünschte Dateiformat zwischen "Parquet" und "CSV".
 
-### CSV Settings (CSV Einstellungen)
-
-Die Einstellungsmöglichkeiten im Tab CSV Settings entsprechen denen der allgemeinen [http-csv Settings](../csv-via-http).
+Die CSV Settings entsprechen denen der allgemeinen [http-csv Settings](../csv-via-http).
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
 
