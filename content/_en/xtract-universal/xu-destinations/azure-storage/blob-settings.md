@@ -28,7 +28,7 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
-### Compression
+#### Compression
 
 **None**<br>
 The data is transferred uncompressed and stored as a csv file.
@@ -36,7 +36,7 @@ The data is transferred uncompressed and stored as a csv file.
 **gzip**<br>
 The data is transferred compressed and stored as a gz file. 
 
-### Blob Type
+#### Blob Type
 
 **Append Blob**<br>
 Creates an [Append Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs).
@@ -47,7 +47,7 @@ Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices
 {: .box-note }
 **Note:** For both file types an MD5 hash is created upon upload to Azure storage.
 
-### Folder path
+#### Folder path
 
 To write extraction data to a location within a specific folder in an Azure Blob container, enter a folder name without slashes.
 Subfolders are supported and can be defined using the following syntax: 

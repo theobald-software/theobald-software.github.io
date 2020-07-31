@@ -33,7 +33,7 @@ The subsection *Connection* offers two different methods for authenticating and 
 1. Authentication via Access Key
 2. Authentication via Azure Active Directory  
 
-### Authentication via Access Key
+### Authentication via Access Key (1)
 This method of authentication authorizes access to the complete storage account. General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage).
 
 
@@ -65,15 +65,18 @@ When authenticating with an access key, a Blob container can be selected from th
 
 **Test connection to container**<br>
 Button to check if the storage container can be accessed. <br>
-If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. <br>
+If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. 
+![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 Click **[OK]** to confirm. <br>
 Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
+
 **Folder path**
-Option to create a directory within the container for saving files. 
+Option to create a directory within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#destination-settings).
 
+*********
 
-### Authentication via Azure Active Directory
+### Authentication via Azure Active Directory (2)
 Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
 Compared to *Authentication via Access Key*, this option allows a more granular way of authorizing access to a storage account and its individual storage containers. 
 General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
@@ -107,7 +110,6 @@ ID of the registered app
 ![xu-azure-blob-con-08](/img/content/xu-azure-blob-con-08.png){:class="img-responsive"}
 
 
-
 **Connect**<br>
 Button to establish a connection to the Azure storage account.<br>
 1. Click **[Connect]**. A browser window pops up.
@@ -132,10 +134,14 @@ When authenticating via Azure Active Directory, a Blob container needs to be ent
 **Test connection to container**<br>
 Button to check if the storage container can be accessed. <br>
 If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. <br>
+
+![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
+
 Click **[OK]** to confirm. <br>
 Go to the *CSV Settings* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
-![xu-azure-blob-con-09](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
+**Folder path**
+Option to create a directory within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#destination-settings).
 
 ### CSV Settings
 

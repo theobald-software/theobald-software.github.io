@@ -33,7 +33,7 @@ Der Unterabschnitt *Connection* bietet zwei verschiedene Methoden zur Authentifi
 1. Authentifizierung über Access Key (Zugangsschlüssel)
 2. Authentifizierung über Azure Active Directory  
 
-### Authentifizierung über Access Key (Zugangsschlüssel)
+### Authentifizierung über Access Key (Zugangsschlüssel) (1)
 
 Diese Authentifizierungsmethode ermöglicht den Zugriff auf den gesamten Azure Speicherkonto. Allgemeine Informationen über diese Authentifizierungsmethode finden Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage).
 
@@ -67,14 +67,18 @@ Bei der Authentifizierung  über Access Key (Zugangsschlüssel) kann ein Blob-Co
 (Verbindung zum Container testen)<br>
 Schaltfläche zur Überprüfung, ob auf den Storage-Container zugegriffen werden kann. <br>
 Bei einer erfolgreichen Verbindung wird das Info-Fenster "Connection to container <*Container-Name*> successful" geöffnet. <br>
+
+![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 Klicken Sie auf **[OK]** zum Bestätigen. <br>
 Navigieren Sie zum Tab *CSV Settings* oder klicken Sie auf **[OK]**.<br>
 Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
 **Folder path**
-Option zum Erstellen eines Verzeichnises innerhalb des Containers zum Abspeichern von Dateien.
+Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. Mehr Details im Abschnitt [Destination Settings - Destinationseinstellungen > Folder Path](./blob-einstellungen#destination-settings---destinationseinstellungen).
 
-### Authentifizierung über Azure Active Directory 
+*****************
+
+### Authentifizierung über Azure Active Directory  (2)
 Die Authentifizierung über Azure Active Directory verwendet OAuth 2.0 und Azure AD zur Authentifizierung.
 Im Vergleich zur *Authentication via Access Key* (Authentifizierung über Zugriffsschlüssel) erlaubt diese Option eine granularere Zugriffssteuerung.
 Der Zugriff kann auf das komplette Azure Speicherkonto oder auf einzelne Storage-Container autorisiert werden. Allgemeine Informationen über diese Art der Authentifizierung finden Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
@@ -134,11 +138,14 @@ Geben Sie den Namen des Blob-Containers manuell ein.
 **Test connection to container** (Verbindung zum Container Testen)<br>
 Schaltfläche zur Überprüfung, ob auf den Storage-Container zugegriffen werden kann. <br>
 Bei einer erfolgreichen Verbindung wird das Info-Fenster "Connection to container <*Container-Name*> successful" geöffnet. <br>
+![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 Klicken Sie auf **[OK]** zum Bestätigen. <br>
 Navigieren Sie zum Tab *CSV Settings* oder klicken Sie auf **[OK]**.<br>
 Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
-![xu-azure-blob-con-09](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
+**Folder path**
+Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. Mehr Details im Abschnitt [Destination Settings - Destinationseinstellungen > Folder Path](./blob-einstellungen#destination-settings---destinationseinstellungen).
+
 
 
 ### CSV Settings (CSV Einstellungen)
@@ -146,6 +153,7 @@ Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 Die Einstellungsmöglichkeiten im Tab CSV Settings entsprechen denen der allgemeinen [http-csv Settings](../csv-via-http).
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
+
 
 
  
