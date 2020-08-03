@@ -35,5 +35,6 @@ Nachfolgend finden Sie den in unserem Demo BW/4 HANA-System verfügbaren ODP-Kon
 
 Um unsere ODP Komponente nutzen zu können, müssen einige Voraussetzungen auf SAP-Seite gegeben sein. SAP hat eine Reihe von Hinweisen veröffentlicht, die Fragestellungen rund um das Thema ODP behandeln. Diese Hinweise, sofern Sie das SAP System betreffen, aus dem extrahiert wird, gelten idR auch für die Nutzung unserer ODP Komponente.
 
-- [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427)
-- [1560241 - Release of DataSources for ODP data replication API](https://launchpad.support.sap.com/#/notes/1560241)
+- [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427/D)
+- [2232584 - Freigabe von SAP Extraktoren für ODP Replikation (ODP-SAPI)](https://launchpad.support.sap.com/#/notes/2232584/D)
+- [1560241 - Freigabe von DataSources für das 'ODP data replication API'](https://launchpad.support.sap.com/#/notes/1560241/D)
