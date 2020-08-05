@@ -6,8 +6,12 @@ description: Extractors and Datasources
 product: xtract-universal
 parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 2
+weight: 5
 lang: en_GB
 ---
 
 {% include _content/en/odp/odp-extractors.md %} 
+
+****
+#### Related Links
+- [SAP Objects and Suitable ODP Contexts](../odp/#about-xtract-odp)
