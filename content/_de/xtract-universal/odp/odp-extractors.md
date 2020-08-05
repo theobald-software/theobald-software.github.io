@@ -8,6 +8,7 @@ parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
+progressstate: 5
 ---
 
 {% include _content/de/odp/odp-extractors.md %} 

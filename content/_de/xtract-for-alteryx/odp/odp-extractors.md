@@ -1,13 +1,17 @@
 ---
 ref: xfa-odp-extractor
 layout: page
-title: Extraktoren
+title: Extraktoren und Datasources
 description: Extraktoren und Datasources
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
-weight: 1
+weight: 5
 lang: de_DE
+progressstate: 5
 ---
 
 {% include _content/de/odp/odp-extractors.md %} 
+****
+#### Weiterführende Links
+- SAP Objects and Suitable ODP Contexts(../odp/#about-xtract-odp)																   

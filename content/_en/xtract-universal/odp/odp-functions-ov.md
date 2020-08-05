@@ -8,6 +8,7 @@ parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+progressstate: 5
 ---
 The following section describes the settings of the Xtract ODP component that can be accessed through the main component window “Define Data Source for SAP ODP”.
 ![ODP Component](/img/content/xu/xu_odp_overview.png){:class="img-responsive"}

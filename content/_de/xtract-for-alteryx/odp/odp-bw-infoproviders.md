@@ -1,12 +1,12 @@
 ---
 ref: xfa-odp-bw
 layout: page
-title: BW InfoProvider
-description: BW InfoProvider
+title: BW & BW/4HANA InfoProviders
+description: BW InfoProviders
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 ---
 
