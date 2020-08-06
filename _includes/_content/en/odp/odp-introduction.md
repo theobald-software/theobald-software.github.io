@@ -14,11 +14,10 @@ ODP is a framework in SAP ABAP applications for transferring data between system
 ODP provides a technical infrastructure for data extraction and replication from different SAP (ABAP) Systems e.g.:
 - ECC 
 - S/4 HANA
-- BW and 
+- BW 
 - BW/4 HANA
 
-Xtract ODP allows to subscribe to (ODP Consumer) and publish various data providers (ODP Providers). Data can be sent to different ODP Consumers (also several in 
-parallel).  
+The Xtract ODP component, which requires the data, acts as a so-called subscriber (consumer). The ODP component subscribes to a data provider, for example to an SAP Extractor or to a CDS View.  
 
 Operational data provisioning supports mechanisms to load data incrementally, e.g., from extractors, ABAP CDS Views and aDSO objects (see below).
 With SAP BW/4HANA, Operational Data Provisioning (ODP) becomes the central infrastructure for data extraction and replication from SAP (ABAP) applications to a SAP BW/4HANA Data Warehouse. 
@@ -31,8 +30,7 @@ ODP provides data transfer from the following providers (also called Provider Co
 - DataSources and Extractors 
 
 {: .box-note }
-
-**Note:** depending on the connected SAP source system there are differences in available provider context. 
+**Note:** Depending on the connected SAP source system there are differences in available provider context. 
 
 The following example depicts the available provider context with BW /4 HANA connected as SAP source system.
 A BW or ECC system contains less options in the provider context list.
@@ -46,7 +44,7 @@ ODP context | SAP Source objects |
 ------------ |------------ |
 ABAP Core Data Services [[ABAP_CDS](./odp-abap-cds-views)]|- CDS Views |
 SAP NetWeaver Business Warehouse [[BW](./odp-bw-infoproviders)] |**BW/4HANA:**<br> - DSO / aDSO<br> - CompositeProvider<br> - InfoObjects <br> - Query as InfoProvider<br> **BW systems:**<br> - CompositeProvider<br> - InfoCubes<br> - Semantically partitioned objects<br> - HybridProviders<br> - MultiProviders<br> - InfoSets |
-HANA Information Views [[HANA](./odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
+SAP HANA Information Views [[HANA](./odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
 DataSources/Extractos [[SAPI](./odp-extractors)] | - DataSources and Extractors |
 
 Suitable ODP contexts can be selected within the [ODP Lookup window](./odp-extractors#extractor-search).
