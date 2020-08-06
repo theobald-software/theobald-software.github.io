@@ -24,7 +24,7 @@ Der Tab "Misc." besteht aus zwei Unterabschnitten:
 **Cache results** (1)
 
 {:.box-note}
-**Hinweis:** die Option *Cash results* ist nur Verfügbar in [Pull-Destinationen](../xu-zielumgebungen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
+**Hinweis:** die Option *Cash results* ist nur Verfügbar in [Pull-Destinationen](../xu-destinationen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
 
 Pull-Destinationen ziehen die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
  so dass die Pull-Destination die Daten aus dem Cache und nicht aus dem SAP zieht.
