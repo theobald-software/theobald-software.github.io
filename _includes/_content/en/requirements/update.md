@@ -4,7 +4,7 @@ To install a newer software version over an existing version, follow the steps b
 
 1. Recommendation:
  - A working test environment with a valid license and maintenance  
- - The test environment, which is a copy of the current productive environment   
+ - The test environment, which is a copy of the current production environment   
  - A regular update of the software, especially for major changes and high (**[H]**) priority update recommendation in the [version history](https://kb.theobald-software.com/version-history)
  - A backup of the current installation, see the corresponding section below
 
@@ -14,12 +14,12 @@ To install a newer software version over an existing version, follow the steps b
 
 3. At first, install the current version of the software on the test environment and test the new version carefully. 
  - Test all your existing projects.  
- - After a successful test, follow the steps to install the current version on the productive environment, see the corresponding section below.    
+ - After a successful test, follow the steps to install the current version on the production environment, see the corresponding section below.    
  - In case of an error, contact Theobald Software's support team via email: [support@theobald-software.com](mailto:support@theobald-software.com). You can reinstall / reuse your backup until a solution is provided.
 
 
-### Installing an update on a productive environment 
-After sucessfull installation and test of the update version on the test environment, follow the corresponding steps described above for the productive environment. Make sure to create a backup beforehand and make any necessary preparations and changes. 
+### Installing an update on a production environment 
+After sucessfull installation and test of the update version on the test environment, follow the corresponding steps described above for the production environment. Make sure to create a backup beforehand and make any necessary preparations and changes. 
 
 
 ### Do I need to deinstall the old version before updating? 

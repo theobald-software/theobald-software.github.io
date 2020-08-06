@@ -14,14 +14,16 @@ old_url: /Xtract-Universal-EN/
 
 Welcome to the Online Help for Xtract Universal. 
 
-Xtract Universal is an SAP Connector that allows you to extract data objects from SAP and deliver them to any target environment.
-
-### Architecture
+Xtract Universal is a tool for data extraction from SAP to various target environments. The extracted data can than be further processed  e.g., 
+in the context of business intelligence, data integration and data analytics.
 
 ![XU-architecture](/img/content/xu/theobald-software-graphic.png)
 
+### Available Components
+<!--- Tabelle notwendig? Nicht vollständig nicht 100%ig korrekt. Pre-Sales fragen. Unterteilung in BW und ERP sinnvoll für den Kunden?--->
+The following overview shows, which components are available to extract data from SAP systems. 
 
-The following overview shows which components can be used to extract data from SAP ERP and/or BW systems. 
+<!-- Auflistung der Komponenten mit der kurzen Beschreibung und dem Link zu den Inhalten-->
 
 | Component   | ERP | BW |
 |-------------|-----|----|
