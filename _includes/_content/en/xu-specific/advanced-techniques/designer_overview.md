@@ -66,7 +66,7 @@ Online Help (DE) | - | -
 Submit Support Ticket | - | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
 Support Client | Direct support | [TeamViewer Client](https://get.teamviewer.com/theobaldsoftware)
 Info | Product information | [Info window](../introduction/license#about-xtract-universal---info-window)
-Version History | Select a destination | [Destinations](../xu-destinations)
+Version History | - | [Version History](https://kb.theobald-software.com/version-history)
 
 ## GUI Buttons (2)
 
