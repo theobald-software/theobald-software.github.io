@@ -21,7 +21,7 @@ A backup allows you to easily switch back to the previous version, if needed. Se
 ### Configuration Files
 All configuration files of extractions, sources, destinations and the server are stored in the sub-directory `config` of the Xtract Universal program directory. 
 
-|Filename      | Description                                                                                                                                                 |
+|Filename      | Description                                                                                                                                                  |
 |:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |`destinations`|Directory containing the [destinations](../xu-destinations). Each `.json` file contains a destination of the same name.                                       |
 |`extractions` |Directory containing the [extractions](../getting-started-xu/define-a-table-extraction). Each sub-directory contains an extraction of the same name.          |
@@ -34,7 +34,7 @@ Copy the complete `config` directory (`C:\Program Files\XtractUniversal\config` 
 Optionally, copy the complete `logs` directory (`C:\Program Files\XtractUniversal\logs` by default) if you want to backup the log files.
 
 {: .box-warning }
-**Data security** Both `config` and `logs` directories may contain sensitive information.
+**Data Security Warning:** Both `config` and `logs` directories may contain sensitive information.
 
 
 <!-- TODO How to restore a backup-->
