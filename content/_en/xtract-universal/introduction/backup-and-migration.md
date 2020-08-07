@@ -25,7 +25,7 @@ All settings for extractions, sources, destinations, etc. are stored in the sub-
 | Extractions  directory | Directory containing the [extractions](../getting-started-xu/define-a-table-extraction).|
 | Server directory | Directory containing the [server settings](../server/server-settings).|
 | Sources directory | Directory containing [SAP connections](./sap-connection).|
-| Version.txt | Textfile containing the version number that aligns with the current configuration. See also [New Installation and Update](./installation-and-update#new-installation-and-update).|
+| Version.txt | Text file containing the version number that aligns with the current configuration. See also [New Installation and Update](./installation-and-update#new-installation-and-update).|
 
 ### How do I Create a Backup?
 Copy the complete *config* sub-directory, `C:\Program Files\XtractUniversal\config` (by default), of the machine running the Xtract Universal Service. 
