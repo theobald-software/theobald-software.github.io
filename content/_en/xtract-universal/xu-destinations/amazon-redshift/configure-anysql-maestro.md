@@ -1,10 +1,10 @@
 ---
-ref: xu-amzon-redshift-06
+ref: xu-amazon-redshift-06
 layout: page
 title: Configure AnySQL Maestro
 description: Configure AnySQL Maestro
 product: xtract-universal
-parent: amzon-redshift
+parent: amazon-redshift
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

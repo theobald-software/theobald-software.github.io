@@ -1,10 +1,10 @@
 ---
-ref: xu-amzon-redshift-04
+ref: xu-amazon-redshift-04
 layout: page
 title: Inserting Data
 description: Inserting Data
 product: xtract-universal
-parent: amzon-redshift
+parent: amazon-redshift
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

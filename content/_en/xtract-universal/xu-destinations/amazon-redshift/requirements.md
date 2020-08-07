@@ -1,10 +1,10 @@
 ---
-ref: xu-amzon-redshift-01
+ref: xu-amazon-redshift-01
 layout: page
 title: Requirements
 description: Requirements
 product: xtract-universal
-parent: amzon-redshift
+parent: amazon-redshift
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

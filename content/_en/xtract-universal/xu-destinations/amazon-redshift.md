@@ -5,7 +5,7 @@ title: Amazon Redshift
 description: Amazon Redshift
 product: xtract-universal
 parent: xu-destinations
-childidentifier: amzon-redshift
+childidentifier: amazon-redshift
 permalink: /:collection/:path
 weight: 23
 lang: en_GB

@@ -1,10 +1,10 @@
 ---
-ref: xu-amzon-redshift-02
+ref: xu-amazon-redshift-02
 layout: page
 title: Connection
 description: Connection
 product: xtract-universal
-parent: amzon-redshift
+parent: amazon-redshift
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

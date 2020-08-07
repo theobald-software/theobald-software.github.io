@@ -1,10 +1,10 @@
 ---
-ref: xu-amzon-redshift-05
+ref: xu-amazon-redshift-05
 layout: page
 title: Merging Data
 description: Merging Data
 product: xtract-universal
-parent: amzon-redshift
+parent: amazon-redshift
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

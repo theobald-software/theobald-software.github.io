@@ -15,53 +15,53 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 {: .box-note }
 **Note**: For some destinations (e.g., Oracle, DB2 etc.) the appropriate driver must be installed. 
 
-For more information on drivers, refer to [Requirements](./introduction/requirements).
+For more information on drivers, refer to [Requirements](../introduction/requirements).
 
 {: .box-note }
-**Note**: The [configuration files](./introduction/backup-and-migration#configuration-files) of destinations are stored in `config\destinations`.
+**Note**: The [configuration files](../introduction/backup-and-migration#configuration-files) of destinations are stored in `config\destinations`.
 
 Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different destination environments, including:  
 
 ### Databases / Data Warehouses
 
-- [Amazon Redshift](./xu-destinations/amzon-redshift) 
-- [Azure Synapse Analytics ](./xu-destinations/azure-dwh) (former Azure DWH)
-- [Azure SQL Database](./xu-destinations/microsoft-sql-server) 
-- [EXASolution](./xu-destinations/exasol) 
-- [IBM DB2](./xu-destinations/ibm-db2) 
-- [MySQL](./xu-destinations/mysql) 
-- [Oracle](./xu-destinations/oracle) 
-- [PostgreSQL](./xu-destinations/postgreSQL)
-- [SAP HANA](./xu-destinations/sap-hana) 
-- [SQL Server](./xu-destinations/microsoft-sql-server) 
+- [Amazon Redshift](./amazon-redshift) 
+- [Azure Synapse Analytics ](./azure-dwh) (former Azure DWH)
+- [Azure SQL Database](./microsoft-sql-server) 
+- [EXASolution](./exasol) 
+- [IBM DB2](./ibm-db2) 
+- [MySQL](./mysql) 
+- [Oracle](./oracle) 
+- [PostgreSQL](./postgreSQL)
+- [SAP HANA](./sap-hana) 
+- [SQL Server](./microsoft-sql-server) 
 
 
 ### Business Intelligence / Analytics / ETL
 
-- [Alteryx](./xu-destinations/alteryx) 
-- [Microstrategy](./xu-destinations/microstrategy)
-- [Power BI connector (Cloud/Desktop)](./xu-destinations/Power-BI-Connector) 
-- [Tableau](./xu-destinations/tableau) 
-- [Qlik (QlikSense and QlikView)](./xu-destinations/qliksense-qlikview) 
+- [Alteryx](./alteryx) 
+- [Microstrategy](./microstrategy)
+- [Power BI connector (Cloud/Desktop)](./Power-BI-Connector) 
+- [Tableau](./tableau) 
+- [Qlik (QlikSense and QlikView)](./qliksense-qlikview) 
 
 ### Business Systems
 
-- [Salesforce](./xu-destinations/salesforce) 
-- [SharePoint](./xu-destinations/sharepoint) 
+- [Salesforce](./salesforce) 
+- [SharePoint](./sharepoint) 
 
 ### Cloud Storage
 
-- [Amazon AWS S3](./xu-destinations/amazon-aws-s3)
-- [Azure Storage](./xu-destinations/azure-storage) 
+- [Amazon AWS S3](./amazon-aws-s3)
+- [Azure Storage](./azure-storage) 
 
 ### Generic Destinations
 
-- [CSV web service](./xu-destinations/csv-via-http) (via HTTP)
-- [JSON web service](./xu-destinations/json-via-http)
-- [OData web service](./xu-destinations/odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
-- [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
-- [Flat File - JSON](./xu-destinations/json-flat-file)
-- [Parquet](./xu-destinations/parquet)
+- [CSV web service](./csv-via-http) (via HTTP)
+- [JSON web service](./json-via-http)
+- [OData web service](./odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
+- [Flat File - CSV](./csv-flat-file)  (comma-seperated values)
+- [Flat File - JSON](./json-flat-file)
+- [Parquet](./parquet)
             
             
 ### Pull and Push Destinations

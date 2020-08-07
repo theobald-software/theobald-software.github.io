@@ -1,10 +1,10 @@
 ---
-ref: xu-amzon-redshift-03
+ref: xu-amazon-redshift-03
 layout: page
 title: Settings
 description: Settings
 product: xtract-universal
-parent: amzon-redshift
+parent: amazon-redshift
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
