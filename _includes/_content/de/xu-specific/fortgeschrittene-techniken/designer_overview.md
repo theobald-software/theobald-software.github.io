@@ -66,7 +66,7 @@ Online Help (DE) | - | -
 Submit Support Ticket | Support-Ticket einreichen | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
 Support Client | Direkter Support | [TeamViewer Client](https://get.teamviewer.com/theobaldsoftware)
 Info | Produktinfos | [Info-Fenster](../einfuehrung/lizenz#about-xtract-universal---info-fenster)
-Version History | Versionshistorie | [Update installieren]( ../einfuehrung/update#installation-eines-updates-bzw-einer-neueren-version-auf-einer-test-umgebung)
+Version History | Versionshistorie | [UVersionshistorie]( https://kb.theobald-software.com/version-history)
 
 ## GUI-Schaltflächen (2)
 
