@@ -65,7 +65,7 @@ Systemänderungen oder Updates können die Funktionalität der Software einschr�
 Erstellen Sie ein Backup des Verzeichnis: `C:\Program Files\XtractUniversal\config` in regelmäßigen Abständen.
 
 Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabile Performance, insbesondere bei größeren Änderungen und Updates hoher ([H])-Priorität. 
- Prüfen Sie die Versionshistorie (https://kb.theobald-software.com/version-history) auf Updates. Eine neuere Version kann über die ältere Version installiert werden. 
+ Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) auf Updates. Eine neuere Version kann über die ältere Version installiert werden. 
 
 Alle Einstellungen und angelegten Objekte bleiben erhalten.
 Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie den Anweisungen, die im Abschnitt  [Backup und Migration](./backup-und-migration).
@@ -80,7 +80,7 @@ Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie 
 3. Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) und die Veröffentlichungshinweise (Release Notes) in der Knowledge-Base, um eine Update-Notwendigkeit auszuschließen. 
 
 4. Erstellen Sie ein [Backup](./backup-und-migration) der aktuellen Installation.
-5. Führen Sie alle notwendigen Vorbereitungen und Änderungen durch, die in den Veröffentlichungshinweisen (Release Notes) / Versionshistorie  beschrieben sind.Bei größeren Änderungen verwenden Sie den ConfigConverter.
+5. Führen Sie alle notwendigen Vorbereitungen und Änderungen durch, die in den Veröffentlichungshinweisen (Release Notes) / Versionshistorie  beschrieben sind. Bei größeren Änderungen verwenden Sie den ConfigConverter.
 
 ### Aktualisieren von Hauptversionen (Major Releases) - ConfigConverter
 

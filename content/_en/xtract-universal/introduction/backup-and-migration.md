@@ -22,12 +22,12 @@ A backup allows you to easily switch back to the previous version, if needed. Se
 All configuration files of extractions, sources, destinations and the server are stored in the sub-directory `config` of the Xtract Universal program directory. 
 
 |Filename      | Description                                                                                                                                                 |
-|:-------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|`destinations`|Directory containing the [destinations](../xu-destinations). Each `.json` file contains a destination of the same name.                                      |
-|`extractions` |Directory containing the [extractions](../getting-started-xu/define-a-table-extraction). Each sub-directory contains an extraction of the same name.         |
-|`server`      |Directory containing the [server settings](../server/server-settings).                                                                                       |
-|`sources`     |Directory containing [SAP connections](./sap-connection). Each sub-directory contains a source of the same name.                                             |
-|`version.txt` |Textfile containing the product version of this configuration. See also [New Installation and Update](./installation-and-update#new-installation-and-update).|
+|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|`destinations`|Directory containing the [destinations](../xu-destinations). Each `.json` file contains a destination of the same name.                                       |
+|`extractions` |Directory containing the [extractions](../getting-started-xu/define-a-table-extraction). Each sub-directory contains an extraction of the same name.          |
+|`server`      |Directory containing the [server settings](../server/server-settings).                                                                                        |
+|`sources`     |Directory containing [SAP connections](./sap-connection). Each sub-directory contains a source of the same name.                                              |
+|`version.txt` |Text file containing the product version of this configuration. See also [New Installation and Update](./installation-and-update#new-installation-and-update).|
 
 ### How do I Create a Backup?
 Copy the complete `config` directory (`C:\Program Files\XtractUniversal\config` by default) of the machine running the Xtract Universal Service and store it in safe and secure locations.
