@@ -27,7 +27,7 @@ All settings for extractions, sources, destinations, etc. are stored in the sub-
 | Sources directory | Directory containing [SAP connections](./sap-connection).|
 | Version.txt | Textfile containing the version number that aligns with the current configuration. See also [New Installation and Update](./installation-and-update#new-installation-and-update).|
 
-### How do I create a backup?
+### How do I Create a Backup?
 Copy the complete *config* sub-directory, `C:\Program Files\XtractUniversal\config` (by default), of the machine running the Xtract Universal Service. 
 The config directory contains all settings, extractions and connections. 
 Note the product version you are currently using to be able to switch back to the same [version](https://kb.theobald-software.com/version-history/xtract-universal-version-history), in the case of problems.
@@ -38,7 +38,7 @@ Migrating to a different server is possible without losing any settings such as 
 **Prerequisite**: Xtract Universal versions installed on both machines match.
 
 {: .box-tip }
-**Tip**: To check the version of your product, open the Designer, navigate to **Help > Version History** or press **[F12]**.
+**Tip**: To check the version of your product, open the Designer, navigate to **Help > Info** or press **[F12]**.
 
 {: .box-note }
 **Note:** If your current version is not the latest version of Xtract Universal, install the matching version on the different machine using the `XtractUniversalSetup.exe` from the Xtract Universal directory: `C:\Program Files\XtractUniversal` (by default).
@@ -46,7 +46,7 @@ Migrating to a different server is possible without losing any settings such as 
 1. Make sure the versions of Xtract Universal on both machines match.
 2. Create a backup of the config directory of the current machine.
 3. Decide whether you need a partial or a full migration. <br> 
-For a full migration you can restore the whole config directory (default: `C:\Program Files\XtractUniversal\config`) on the different machine.
+For a full migration you can restore the whole config directory (by default: `C:\Program Files\XtractUniversal\config`) on the different machine.
 You can alternatively restore parts of the backup, by copying e.g., only the destinations or extractions directories.
 4. Restart the Xtract Universal Service, when performing a full migration or copying the "sources" directory onto the different machine.
 

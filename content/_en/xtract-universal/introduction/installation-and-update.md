@@ -16,7 +16,7 @@ progressstate: 5
 {: .box-note }
 **Note:** administrator permissions are required to install Xtract Universal.
 
-### Installation Routine
+### Setup
 
 *XtractUniversalSetup.exe* is an industry standard setup.  Execute the *XtractUniversalSetup.exe* file and follow the instructions of the setup.
 
@@ -44,7 +44,7 @@ The list below shows several most important files that are placed into the defau
 | config directory | Directory containing all SAP connections, extractions, destinations and other settings. See also [Backup and Migration](./backup-and-migration).|
 | powerbi directory| Directory containing files related to [Power BI Connector Destination](../xu-destinations/Power-BI-Connector/).|
 | result-cache directory | Directory with extraction cache files, only applicable for pull destinations. See also sections [Pull Destinations](../xu-destinations#pull-and-push-destinations) and [General Settings > Misc. Tab > Cache Result Setting](../getting-started-xu/general-settings#misc-tab).|
-| xu.exe | Command line tool used for running extractions. See also section [Scheduling an Extraction](../advanced-techniques/scheduling_extraction). |
+| xu.exe | Command line tool used for executing extractions. See also section [Scheduling an Extraction](../advanced-techniques/scheduling_extraction). |
 | XtractDesigner.exe | [Xtract Universal Designer](../getting-started-xu/designer-overview) application to create, test and monitor extractions.|
 | ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing Xtract Universal with all its components from your machine. |
@@ -54,7 +54,7 @@ The list below shows several most important files that are placed into the defau
 
 
 {: .box-note }
-**Note:** For more details on starting Xtract Universal Server see section [Troubleshooting](./troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+**Note:** For more details on starting Xtract Universal Server as a console application see section [Troubleshooting](./troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 
 ### New Installation and Update
@@ -65,7 +65,7 @@ System updates or changes can restrict software functionalities and this may lea
 Create a backup of the directory: `C:\Program Files\XtractUniversal\config` at regular intervals.
 
 A regular update of the software is crucial for stable performance, especially major changes and high ([H]) priority
-updates. Check the version history (https://kb.theobald-software.com/version-history) for updates. A newer version
+updates. Check the [Version history](https://kb.theobald-software.com/version-history) for updates. A newer version
 can be installed over the older version. All settings and created objects are preserved. When migrating data and
 settings to another server, follow the instructions described in section [Backup and Migration](./backup-and-migration).
 
@@ -76,13 +76,13 @@ settings to another server, follow the instructions described in section [Backup
 informs about changes in the version history and release notes.
 
 1. Check if you have a working test environment with a valid license and maintenance.
-2. Make sure that the test environment is a copy of the current productive environment.
+2. Make sure that the test environment is a copy of the current production environment.
 3. Check the [Version History](https://kb.theobald-software.com/version-history) and release notes in the
 knowledge base to check, if update is needed.
-4. Create a [backup](./backup-migration) of the current installation.
+4. Create a [backup](./backup-and-migration) of the current installation.
 5. Conduct any necessary preparations and changes as described in the Release Note / Version History. In case of major changes, use the ConfigConverter.
 
-### Upgrating Major Releases - ConfigConverter
+### Upgrading Major Releases - ConfigConverter
 
 There are two ways of upgrading the product version from XU 2.x and 3.x to XU 4.x:
 - Upgrade during installation

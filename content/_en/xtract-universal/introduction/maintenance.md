@@ -6,7 +6,7 @@ description: Maintenance
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=maintenance
 ---
