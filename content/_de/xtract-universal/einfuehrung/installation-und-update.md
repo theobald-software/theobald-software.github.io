@@ -1,7 +1,7 @@
 ---
 ref: xu-introduction-03
 layout: page
-title: Installation und Backup
+title: Installation und Update
 description: Installation
 product: xtract-universal
 parent: einfuehrung
@@ -12,6 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=installation
 ---
 
 ### Voraussetzungen
+
 {: .box-note }
 **Hinweis:** Administratorberechtigungen sind notwendig, um Xtract Universal zu installieren.
 
@@ -59,7 +60,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 ### Neuinstallation und Update
 
 {: .box-warning}
-<**>**Warnung!** **Datenverlust:**</**>
+**Warnung!** **Datenverlust:**
 Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen. 
 Erstellen Sie ein Backup des Verzeichnis: `C:\Program Files\XtractUniversal\config` in regelmäßigen Abständen.
 
