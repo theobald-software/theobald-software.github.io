@@ -13,7 +13,7 @@ For delta processing it is advisable to use a database on the destination side.
 
 
 ### Database destinations
-- [Amazon Redshift](../xu-destinations/amzon-redshift/merging-data) 
+- [Amazon Redshift](../xu-destinations/amazon-redshift/merging-data) 
 - [Azure Synapse Analytics ](../xu-destinations/azure-dwh/merging-data) (former Azure DWH)
 - [Azure SQL Database](../xu-destinations/microsoft-sql-server/merging-data) 
 - [EXASolution](../xu-destinations/exasol/merging-data) 

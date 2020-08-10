@@ -42,7 +42,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | Alteryx Verzeichnis| Verzeichnis mit dem Plugin-Setup für die [Alteryx Destination](../xu-destinationen/alteryx-de/voraussetzungen-alteryx-de).|
 | logs Verzeichnis| Verzeichnis mit Server- und Extraktionsprotokollen etc. Mehr Details dazu finden Sie in [Logging](../logging). |
 | config Verzeichnis | Verzeichnis mit allen SAP-Verbindungen, Extraktionen, Destinationen und anderen Einstellungen. Mehr Details dazu finden Sie auch [Backup und Migration](./backup-und-migration).|
-| powerbi Verzeichnis| Verzeichnis mit Dateien, die mit der [Power BI Connector Destination](../xu-destinationen/Power-BI-Connector/) in Zusammenhang stehen.|
+| powerbi Verzeichnis| Verzeichnis mit Dateien, die mit der [Power BI Connector Destination](../xu-destinationen/Power-BI-Connector) in Zusammenhang stehen.|
 | result-cache Verzeichnis | Verzeichnis mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Mehr Details dazu finden Sie auch in Abschnitten [Pull-Destinationen](../xu-destinationen#pull--und-push-destinationen) und [Allgemeine Einstellungen: General Settings > Misc. Tab > Cache Result Setting](../erste-schritte-mit-xu/allgemeine-einstellungen#misc-tab).|
 | xu.exe | Kommandozeilentool zum Ausführen von Extraktionen. Mehr Details dazu finden Sie auch im Abschnitt [Extraktion einplanen](../fortgeschrittene-techniken/extraktion_einplanen). |
 | XtractDesigner.exe | [Xtract Universal Designer](../erste-schritte-mit-xu/designer-overview) Anwendung zum Erstellen, Testen und Überwachen von Extraktionen.|
