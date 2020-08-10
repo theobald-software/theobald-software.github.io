@@ -65,7 +65,7 @@ fragt der Designer, ob man das neuere Setup herunterladen möchte.
 #### Result cache
 
 {:.box-note}
-**Hinweis:** die Option *Cash results* ist nur Verfügbar in [Pull-Destinationen](../xu-zielumgebungen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
+**Hinweis:** die Option *Cash results* ist nur Verfügbar in [Pull-Destinationen](../xu-destinationen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
 
 **Target directory**<br>
 Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Installationsverszeichnis von Xtract Universal: <br>
