@@ -38,7 +38,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 
 |Dateiname | Beschreibung |
 |:----|:---|
-| ABAP Verzeichnis | Verzeichnis mit den SAP-Funktionsbausteinen. Die readme.txt innerhalb des Verzeichnisses beinhaltet weitere Informationen. Mehr Details dazu finden Sie auch in [SAP Customizing](./sap-customizing).|
+| ABAP Verzeichnis | Verzeichnis mit den SAP-Funktionsbausteinen. Die readme.txt innerhalb des Verzeichnisses beinhaltet weitere Informationen. Mehr Details dazu finden Sie auch in [SAP Customizing](../sap-customizing).|
 | Alteryx Verzeichnis| Verzeichnis mit dem Plugin-Setup für die [Alteryx Destination](../xu-destinationen/alteryx-de/voraussetzungen-alteryx-de).|
 | logs Verzeichnis| Verzeichnis mit Server- und Extraktionsprotokollen etc. Mehr Details dazu finden Sie in [Logging](../logging). |
 | config Verzeichnis | Verzeichnis mit allen SAP-Verbindungen, Extraktionen, Destinationen und anderen Einstellungen. Mehr Details dazu finden Sie auch [Backup und Migration](./backup-und-migration).|
