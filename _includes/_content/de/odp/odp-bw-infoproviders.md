@@ -1,27 +1,34 @@
 Das Operational Data Provisioning Framework ermöglicht es Ihnen, Daten aus den Infoprovidern in Ihren Quellsystemen BW und BW/4 HANA zu extrahieren. 
+
 Die verfügbaren InfoProvider-Typen sind abhängig von Ihrem BW und BW/4 HANA Quellsystem.
 
-Die BW∕4 HANA Systeme bieten die folgenden InfoProvider über den ODP BW-Kontext an:
+### InfoProvider verfügbar in SAP BW∕4HANA:
+
 - DataStore-Objekte (erweitert) (mit Delta-Extraktion)
 - CompositeProvider - Objekttyp HCPR (vollständige Extraktion)
 - InfoObjects
-- Stammdaten
-- Texte
-- Hierarchien
+Stammdaten
+  - Texte
+Hierarchien
 - Query als InfoProvider
 
-Zusätzlich bieten BW-Systeme (abhängig von ihrer Version) die folgenden InfoProvider über den ODP BW-Kontext an:
-- InfoCubes (mit Deltaextraktion)
-- Semantisch partitionierte Objekte
-- HybridProvider
-- MultiProvider
+### Zusätzliche InfoProvider verfügbar in BW-Systemen
+
+- CompositeProvider - Objekttyp HCPR (vollständige Extraktion)
+- InfoCubes (mit Delta-Extraktion)
+- Semantically partitioned objects
+- HybridProviders
+- MultiProviders
 - InfoSets
 
 
-Wählen Sie den Kontext und Typ aus, um nach einem BW-InfoProvider zu suchen. <br/>
-![ODP BW Suche](/img/content/odp/odp-component-bw-nwdemo-01.png){:class="img-responsive"}
-<br/>
-Klicken Sie auf OK, dann sehen Sie die verfügbaren Felder und die Beschreibung. Klicken Sie auf Live-Vorschau laden, um die Datenvorschau zu sehen.<br/>
-![ODP BW Vorschau](/img/content/odp/odp-component-bw-nwdemo-02-preview.png){:class="img-responsive"}
-<br/>
-Wenn das Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option Delta Update in der ODP-Komponente verfügbar. 
+### Using BW InfoProviders
+When [searching](./odp-functions-ov#operational-data-provider) for BW InfoProviders, make sure to select the correct context. 
+![ODP BW Search](/img/content/odp/odp-component-bw-nwdemo-01.png){:class="img-responsive"}
+
+{: .box-note }
+**Hinweis:** When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
+
+![ODP BW Delta](/img/content/odp/odp-bw-infoprov-delta.png){:class="img-responsive"}
+
+Click **[Load live preview]** to preview the data without executing an extraction.
