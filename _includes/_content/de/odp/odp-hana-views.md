@@ -1,14 +1,18 @@
-Mit Operational Data Provisioning (ODP) können Sie die SAP HANA-Datenbank eines SAP ABAP-Quellsystems anbinden. 
-Die Kommunikation erfolgt über das RFC-Protokoll.
+Mit Operational Data Provisioning (ODP) können Sie die SAP HANA-Datenbank eines SAP ABAP-Quellsystems anbinden. Die Verbindung wird über RFC bereitgestellt. 
 
-Mit dem ODP-Kontext für SAP HANA (HANA) stehen folgende HANA-View-Typen zur Verfügung: 
+### Verfügbare HANA Views
+
 - Analysis Views
-- Calculation Views und 
+- Calculation Views 
 - Associated Attribute Views 
 
-Wählen Sie den Kontext und den Typ, um nach einer HANA-View zu suchen. <br/>
+### HANA Views verwenden
+Wenn Sie nach HANA Views [suchen](./odp-functions-ov#operational-data-provider), stellen Sie sicher, dass Sie den richtigen Kontext auswählen. 
+
 ![ODP HANA View](/img/content/odp/odp-component-hanaview-salesdocumentitem-01.png){:class="img-responsive"}
-<br/>
-Klicken Sie auf OK, dann sehen Sie die verfügbaren Felder und die Beschreibung. Klicken Sie auf Live-Vorschau laden, um die Datenvorschau zu sehen.
-<br/>
-![ODP HANA View Preview](/img/content/odp/odp-component-hanaview-salesdocumentitem-02-preview.png){:class="img-responsive"}
+
+{: .box-note }
+**Hinweis:** Wenn Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option **Delta Update** in der ODP-Komponente verfügbar . 
+
+
+Klicken Sie auf **[Load live preview]**, um eine Echtzeitvorschau anzuzeigen, ohne dabei eine Extraktion auszuführen.

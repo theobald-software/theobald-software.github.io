@@ -1,27 +1,20 @@
-
 ### Abonnements
-Um Informationen über den Abonnenten zu erhalten, klicken Sie auf **Show Subscriptions / Show active subscriptions** oben im Fenster “Define data source for SAP ODP”:
+Um weitere Details über den Abonnentenprozess anzuzeigen, klicken Sie auf **Show active subscriptions**.
+<br/>
+![Abonnements](/img/content/odp/odp-settings-subscriptions.png){:class="img-responsive"}
+<br/>
 
-![Subscriptions](/img/content/odp/odp-settings-subscriptions.png){:class="img-responsive"}
-
-{: .box-tip }
-**Tipp:**  Die Informationen, die Im Fenster “Delta Subscriptions for product” angezeigt werden, können auch in der SAP-Transaktion *ODQMON* angeschaut werden.
-
-
-![ODP-Abonnent](/img/content/odp/odp-settings-02.png){:class="img-responsive"}<br/>
+{: .box-tip } 
+**Tip:** Die Informationen, die Im Fenster “Delta Subscriptions for product” angezeigt werden, können auch in der SAP-Transaktion *ODQMON* angeschaut werden.
 
 Spaltenbezeichnung | Erklärung
------------- | -------------
-Queue | Technischer Name aller Abonnements eines bestimmten Xtract-Produkts von Theobald Software (z.B. Xtract Universal). Ein Abonnement ist an ein bestimmtes Produkt und die ODP-Komponente gebunden, aus der die init ursprünglich gestartet wurde. Ein ODP-Datenanbieter, wie beispielsweise 2LIS_02_ITM, kann mehrere Abonnements haben. Das Abonnement, das sich auf die vorliegende ODP-Komponente bezieht, ist mit einem roten Sternchen gekennzeichnet.
-Process| Technischer Name des Abonnements
-R.(number of requests) | Anzahl der ausgeführten Delta-Anfragen
-Last request |  Zeitstempel der letzten Anforderung
-Created | Erstellungszeitstempel 
+------------| -------------
+Queue | Technischer Name aller Abonnements eines bestimmten Xtract-Produkts von Theobald Software (z.B. Xtract Universal). 
+Process | Technischer Name des Abonnements
+R. (Anzahl der Anfragen (Requests)) | Anzahl der ausgeführten Delta-Anfragen
+Last request | Zeitstempel der letzten Anfrage
+Created | Erstellungszeitstempel der initialen Anfrage
 
 
 Um das Abonnement zu löschen, klicken Sie auf das Mülltonnensymbol auf der rechten Seite des Fensters. 
 
-********
-#### Weiterführende Links
-- [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427)
-- [1560241 - Release of DataSources for ODP data replication API](https://launchpad.support.sap.com/#/notes/1560241)

@@ -8,6 +8,7 @@ parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
+progressstate: 5
 ---
 
 

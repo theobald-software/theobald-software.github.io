@@ -9,13 +9,6 @@ childidentifier: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 16
 lang: de_DE
+progressstate: 5
 ---
-Die Xtract ODP-Komponente basiert auf der Operational Data Provisioning, ODP-Schnittstelle von SAP. 
-Mit der Komponente Xtract ODP können die folgenden SAP-Objekte extrahiert werden:
-- SAP-DataSources (Extraktoren)
-- ABAP-CDS-Ansichten
-- SAP BW und SAP BW/4 HANA-InfoProvider
-- SAP-HANA-Informationsansichten in SAP-ABAP-basierten Systemen
-- Data Store Object (DSO) / Advanced Store Objects (ADSO)
-
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+{% include _content/de/odp/odp-introduction.md %} 
