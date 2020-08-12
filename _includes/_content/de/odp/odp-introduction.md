@@ -45,25 +45,25 @@ Ein BW- oder ein ECC-System beinhalten weniger Optionen in der Liste mit den Pro
  
 ODP-Kontext | SAP-Quellobjekte |
 ------------ |------------ |
-ABAP Core Data Services [[ABAP_CDS](./odp-abap-cds-views)]|- CDS Views |
-SAP NetWeaver Business Warehouse [[BW](./odp-bw-infoproviders)] |**BW/4HANA:**<br> - DSO / aDSO<br> - CompositeProvider<br> - InfoObjects <br> - Query als InfoProvider<br> **BW Systeme:**<br> - CompositeProvider<br> - InfoCubes<br> - Semantically partitioned objects<br> - HybridProviders<br> - MultiProviders<br> - InfoSets |
-HANA Information Views [[HANA](./odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
-DataSources/Extraktoren [[SAPI](./odp-extractors)] | - DataSources und Extraktoren |
+ABAP Core Data Services [[ABAP_CDS](./odp/odp-abap-cds-views)]|- CDS Views |
+SAP NetWeaver Business Warehouse [[BW](./odp/odp-bw-infoproviders)] |**BW/4HANA:**<br> - DSO / aDSO<br> - CompositeProvider<br> - InfoObjects <br> - Query als InfoProvider<br> **BW Systeme:**<br> - CompositeProvider<br> - InfoCubes<br> - Semantically partitioned objects<br> - HybridProviders<br> - MultiProviders<br> - InfoSets |
+HANA Information Views [[HANA](./odp/odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
+DataSources/Extraktoren [[SAPI](./odp/odp-extractors)] | - DataSources und Extraktoren |
 
-Geeignete ODP-Kontexte können innerhalb des [ODP-Lookup-Fensters ](./odp-extractors#extraktorsuche) ausgewählt werden.
+Geeignete ODP-Kontexte können innerhalb des [ODP-Lookup-Fensters ](./odp/odp-extractors#extraktorsuche) ausgewählt werden.
 
 ###  Xtract ODP - Funktionsübersicht
 Das Fenster "Define data source for SAP ODP" besteht aus einigen Unterabschnitten:
 
-- [Operational Data Provider](./odp-functions-ov#operational-data-provider) - zeigt den Namen des Quellobjekts an
-- [Additional info](./odp-functions-ov#additional-info) - zeigt den ODP-Provider-Kontext und den Datentyp des Quellobjekts an
-- [Update mode](./odp-functions-ov#update-mode) - definiert das Load-Verfahren - Full-Load oder Deltaverarbeitung.
-- [Fields](./odp-functions-ov#filtering---dynamic-setting-of-the-selection-filters) - ermöglicht die Auswahl und Einstellung der Filteroptionen für [Extraktoren](./odp-extractors)
+- [Operational Data Provider](./odp/odp-functions-ov#operational-data-provider) - zeigt den Namen des Quellobjekts an
+- [Additional info](./odp/odp-functions-ov#additional-info) - zeigt den ODP-Provider-Kontext und den Datentyp des Quellobjekts an
+- [Update mode](./odp/odp-functions-ov#update-mode) - definiert das Load-Verfahren - Full-Load oder Deltaverarbeitung.
+- [Fields](./odp/odp-functions-ov#filtering---dynamic-setting-of-the-selection-filters) - ermöglicht die Auswahl und Einstellung der Filteroptionen für [Extraktoren](./odp/odp-extractors)
 - Preview - Echtzeit-Vorschau der Extraktionsdaten
 
 #### Schaltflächen
-- **[[Show active subscriptions ](./odp-functions-ov#subscriptions)]** - Schaltfläche zum Anzeigen der Details zum Abonnentenprozess.
-- **[[Edit parameters](./odp-functions-ov#edit-parameters-)]** - Schaltfläche zum Definieren der  Laufzeitparameter, die als Platzhalter zum Auwählen der Daten verwendet werden können.
+- **[[Show active subscriptions ](./odp/odp-functions-ov#subscriptions)]** - Schaltfläche zum Anzeigen der Details zum Abonnentenprozess.
+- **[[Edit parameters](./odp/odp-functions-ov#edit-parameters-)]** - Schaltfläche zum Definieren der  Laufzeitparameter, die als Platzhalter zum Auwählen der Daten verwendet werden können.
 - **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
 
 ****

@@ -73,7 +73,7 @@ Defines whether the setup of the Board Connector version running on the server n
 **Note:** *Cash results* option is only available in pull destinations (e.g., PBI, Qlik etc.).
 
 **Target directory** <br>
-Sets the directory for the buffer files. The default ist the result-cache folder in the Board Connector installation directory: <br>
+Sets the directory for the buffer files. The default ist the result-cache directory in the Board Connector installation directory: <br>
 `C:\Program Files\XtractUniversal\result-cache`.
 
 **Max. cached runs** <br>

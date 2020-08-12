@@ -27,4 +27,4 @@ Beachten Sie, dass die Dateien den gleichen Dateinamen haben, nur die Dateigrös
 
 Die Ausnahmemeldung für falsche oder fehlende librfc32.dlls lautet:
 
-*ERPConnect.ERPException: Cannot access librfc32.dll. Please put a 64-bit version of librfc32.dll in your System32 folder (typically C:\Windows\System32) and a 32-bit version of librfc32.dll in your SysWow64 folder (typically C:\Windows\SysWow64)*.
+*ERPConnect.ERPException: Cannot access librfc32.dll. Put a 64-bit version of librfc32.dll in your System32 directory (typically C:\Windows\System32) and a 32-bit version of librfc32.dll in your SysWow64 directory (typically C:\Windows\SysWow64)*.
