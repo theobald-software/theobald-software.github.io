@@ -9,7 +9,7 @@ childidentifier: odp
 permalink: /:collection/:path
 weight: 15
 lang: en_GB
+progressstate: 5
 ---
 {% include _content/en/odp/odp-introduction.md %} 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

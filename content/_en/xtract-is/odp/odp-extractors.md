@@ -15,4 +15,4 @@ progressstate: 5
 
 ****
 #### Related Links
-- [SAP Objects and Suitable ODP Contexts](../odp/#about-xtract-odp)
+- [SAP Objects and Suitable ODP Contexts](../odp#about-xtract-odp)

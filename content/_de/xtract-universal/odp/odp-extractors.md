@@ -6,7 +6,7 @@ description: Extraktoren und Datasources
 product: xtract-universal
 parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 5
+weight: 2
 lang: de_DE
 progressstate: 5
 ---
@@ -15,4 +15,4 @@ progressstate: 5
 
 ****
 #### Weiterführende Links
-- [Was ist Xtract ODP?](../odp/#was-ist-xtract-odp)
+- [Was ist Xtract ODP?](../odp#was-ist-xtract-odp)

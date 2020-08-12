@@ -1,7 +1,7 @@
 ---
 ref: xfa-odp-bw
 layout: page
-title: BW & BW/4HANA InfoProviders
+title: BW InfoProviders
 description: BW InfoProviders
 product: xtract-for-alteryx
 parent: odp

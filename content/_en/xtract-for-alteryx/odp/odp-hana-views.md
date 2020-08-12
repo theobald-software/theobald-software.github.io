@@ -1,8 +1,8 @@
 ---
 ref: xfa-odp-hana-views
 layout: page
-title: HANA Information Views
-description: HANA Information Views
+title: HANA Views
+description: HANA Views
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path

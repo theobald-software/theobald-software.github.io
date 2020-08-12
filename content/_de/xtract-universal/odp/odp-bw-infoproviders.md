@@ -6,7 +6,7 @@ description: BW InfoProvider
 product: xtract-universal
 parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: de_DE
 progressstate: 5
 ---

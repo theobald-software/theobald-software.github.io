@@ -1,12 +1,12 @@
 ---
-ref: xis-odp-settings
+ref: xis-odp-introduction
 layout: page
-title: ODP Settings
-description: ODP Settings
+title: Xtract ODP Functions Overview
+description: ODP Introduction
 product: xtract-is
 parent: odp
 permalink: /:collection/:path
-weight: 6
+weight: 1
 lang: en_GB
 progressstate: 5
 ---

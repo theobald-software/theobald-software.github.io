@@ -1,7 +1,7 @@
 ---
 ref: xfa-odp-extractor
 layout: page
-title: Extractors and DataSources
+title: Extractors
 description: Extractors and DataSources
 product: xtract-for-alteryx
 parent: odp
@@ -14,4 +14,4 @@ progressstate: 5
 
 ****
 #### Related Links
-- [SAP Objects and Suitable ODP Contexts](../odp/#about-xtract-odp)
+- [SAP Objects and Suitable ODP Contexts](../odp#about-xtract-odp)

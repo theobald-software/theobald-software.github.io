@@ -14,4 +14,4 @@ progressstate: 5
 
 ****
 #### Weiterführende Links
-- SAP Objects and Suitable ODP Contexts(../odp/#about-xtract-odp)
+- [Was ist Xtract ODP?](../odp#was-ist-xtract-odp)

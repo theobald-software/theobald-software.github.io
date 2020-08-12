@@ -12,6 +12,15 @@ progressstate: 5
 ---
 
 {% include _content/de/odp/odp-settings-update_mode.md %} 
+{% include _content/de/odp/odp-settings-filtering.md %} 
 {% include _content/de/odp/odp-settings-subscriptions.md %} 
 {% include _content/de/odp/odp-settings-parameters.md %}
-{% include _content/de/odp/odp-settings-filtering.md %} 
+
+
+### Parameter innerhalb Alteryx
+ODP-Parameter erscheinen als RuntimeParameter einer *Update-Value*-Komponente in einem Alteryx-Makro-Workflow. Parameter können zur Workflow-Laufzeit mit Hilfe der Alteryx-Standardfunktionalität aufgefüllt werden.
+![ODP alteryx parameter](/img/content/odp/set-odp-parameter-in-xfa.png){:class="img-responsive"}
+
+****
+#### Weiterführende Links
+- [Alteryx Online Help - Einstellungen](https://help.alteryx.com/current/designer/user-settings)
