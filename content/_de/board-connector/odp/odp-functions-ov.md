@@ -1,7 +1,7 @@
 ---
 ref: bc-odp-settings-05
 layout: page
-title: Xtract ODP Funktionsübersicht
+title: ODP Funktionsübersicht
 description: ODP Einführung
 product: board-connector
 parent: odp
