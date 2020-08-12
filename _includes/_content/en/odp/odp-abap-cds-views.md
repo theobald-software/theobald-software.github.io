@@ -14,7 +14,7 @@ There are two types of CDS available:
 For each ABAP CDS entity defined in the DDL source code, an SQL view is generated in the ABAP Dictionary. 
 The same way as the views created with Dictionary tools (transaction SE11), ABAP CDS entities can be accessed in ABAP using Open SQL statements. 
 
-CDS is important for SAP application development. For example S/4HANA uses CDS to provide both core transactional functionality as well as analytical content for reporting. 
+CDS is important for SAP application development. For example, S/4HANA uses CDS to provide both core transactional functionality as well as analytical content for reporting. 
 In BW/4 HANA, ABAP based CDS views can be used for data extraction.  
 
 Two possible use cases for CDS:

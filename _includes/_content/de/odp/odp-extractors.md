@@ -1,7 +1,7 @@
 ### Extraktoren - Extractors
 Xrtact ODP wird dazu verwendet Daten aus den Business Content DataSources (Extraktoren) zu extrahieren. Die Mehrzahl der DataSources, inklusive generischer (benutzerdefinierter) DataSources, kann für ODP freigegeben werden. 
 
-Xtract ODP ändert die Implementierung von Anwendungsextraktoren nicht, alle Funktionen und Eigenschaften bleiben unverändert. 
+Xtract ODP ändert die Implementierung von Anwendungs-Extraktoren nicht, alle Funktionen und Eigenschaften bleiben unverändert. 
 
 Ein Extraktor (in ERP oder S/4 HANA) ist ein gekapseltes Business-Objekt, das mehrere Quelltabellen im Quellsystem repräsentiert und Geschäftslogik bringt. Es ist wirklich eine Stärke des SAP-Quellsystems, weil es sehr einfach ermöglicht, die Geschäftslogik zu extrahieren. 
 
@@ -15,7 +15,7 @@ Für Stamm- und Bewegungsdaten stehen standardmäßig Deltaextraktionsmethoden z
 
 ### Extraktoren verwenden
 
-Wenn Sie nach BW InfoProvidern [suchen](./odp-funktionsuebersicht#operational-data-provider), stellen Sie sicher, dass Sie den richtigen Kontext auswählen. 
+Wenn Sie nach BW InfoProvidern [suchen](./odp-functions-ov#operational-data-provider), stellen Sie sicher, dass Sie den richtigen Kontext auswählen. 
 ![ODP SAPI Search](/img/content/odp/odp-datasource-sapi.png){:class="img-responsive"}
 
 {: .box-note }

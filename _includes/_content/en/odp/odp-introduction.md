@@ -20,7 +20,7 @@ ODP provides a technical infrastructure for data extraction and replication from
 The Xtract ODP component, which requires the data, acts as a so-called subscriber (consumer). The ODP component subscribes to a data provider, for example to an SAP Extractor or to a CDS View.  
 
 Operational data provisioning supports mechanisms to load data incrementally, e.g., from extractors, ABAP CDS Views and aDSO objects (see below).
-With SAP BW/4HANA, Operational Data Provisioning (ODP) becomes the central infrastructure for data extraction and replication from SAP (ABAP) applications to a SAP BW/4HANA Data Warehouse. 
+With SAP BW/4HANA, Operational Data Provisioning (ODP) becomes the central infrastructure for data extraction and replication from SAP (ABAP) applications to an SAP BW/4HANA Data Warehouse. 
 <br/>
 
 ODP provides data transfer from the following providers (also called Provider Context): 

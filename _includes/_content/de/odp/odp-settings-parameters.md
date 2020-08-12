@@ -19,6 +19,6 @@ Wenn es definierte Parameter gibt, wechselt das Symbol zum Parametersymbol. <br>
 Klicken auf die Icons wechselt die Optionen zwischen der Eingabe echter Eingabewerte und der Eingabe der definierten Parameter.  
 <br>
 ![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}<br>
-7. Um die definierten Parameter zu überprüfen, klicken Sie auf **[Load live preview]Load live preview**. <br>
+7. Um die definierten Parameter zu überprüfen, klicken Sie auf **[Load live preview]**. <br>
 Wenn Sie Parameter als Selektionsfilter definiert haben, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen.  <br>
 ![ODP provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}

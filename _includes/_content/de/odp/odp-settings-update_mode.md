@@ -32,7 +32,7 @@ extrahiert die Daten im Full-Update-Modus.<br/>
 **Hinweis:** Die Option **Delta update** ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt.
 
 **Delta update**:<br/>
-Runs a delta initialization, if no delta initialization is available for selected subscriber. Runs a delta update, if there is a delta initialization for the selected subscriber. <br/>
+Führt eine Delta-Initialisierung aus, wenn für den ausgewählten Abonnenten keine Delta-Initialisierung verfügbar ist. Führt ein Delta-Update aus, wenn eine Delta-Initialisierung für den ausgewählten Abonnenten vorhanden ist. <br/>
 
 - **On delta initialization** <br/>
 Aktivieren der Checkbox *Extract data* ermöglicht eine Datenextraktion während einer laufenden Delta-Initialisierung.

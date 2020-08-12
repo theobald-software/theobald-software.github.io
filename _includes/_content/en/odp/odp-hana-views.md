@@ -1,6 +1,6 @@
 Operational Data Provisioning (ODP) can be used to connect SAP HANA database of an SAP ABAP source system. The connection is provided via RFC. 
 
-### Avalable HANA Views
+### Available HANA Views
 
 - Analysis Views
 - Calculation Views 
