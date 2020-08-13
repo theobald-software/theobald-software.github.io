@@ -23,7 +23,7 @@ Zwei mögliche Anwendungsfälle für CDS sind:
 
 CDS Views unterstützen die Extraktion im Full- und Delta-Modus. 
 
-### **Ersatz von BW-Extraktoren durch CDS Views in S/4 HANA** 
+### Ersatz von BW-Extraktoren durch CDS Views in S/4 HANA
 Meistens können traditionelle BW-Extraktoren verwendet werden, um Daten aus einem S/4 HANA-System zu extrahieren. 
 Aufgrund von Vereinfachungen im S/4 HANA-System sind einige Extraktoren abgekündigt oder können nicht mehr in gleicher Weise verwendet werden. 
 Um die abgekündigte und veraltete Extraktoren zu verwenden, kann SAP CDS-Views liefern, die extraktionsrelevant sind (über die analytischen Annotationen).
