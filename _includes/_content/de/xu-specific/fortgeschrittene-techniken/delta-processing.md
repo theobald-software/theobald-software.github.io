@@ -5,7 +5,7 @@ Anstelle der Deltaverarbeitung können die Daten im sogenannten Full Load durch 
 ### Deltaverarbeitung in Xtract Produkten
 Es gibt drei Arten der Deltaverarbeitung, die von Ihrem Xtract Produkt unterstützt werden:
 - Mit der [DeltaQ-Komponente](../datasource-deltaq/eine-deltaq-quelle-definieren) und Verwendung der SAP-eigenen Deltaverarbeitungs-Funktionalität 
-- Mit der [ODP-Komponente](../odp/odp-settings#update-mode-) und Verwendung der SAP-eigenen Deltaverarbeitungs-Funktionalität-Funktionalität
+- Mit der [ODP-Komponente](../odp/odp-functions-ov#update-mode) und Verwendung der SAP-eigenen Deltaverarbeitungs-Funktionalität-Funktionalität
 - Mit der Table/Table-Join-Komponente und einer Datenbank-Destination.
 
 Für Deltaverarbeitung ist es ratsam auf der Destinationsseite eine Datenbank zu verwenden.

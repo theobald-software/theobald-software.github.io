@@ -10,6 +10,7 @@ weight: 1
 lang: en_GB
 progressstate: 5
 ---
+
 The following section describes the settings of the Xtract ODP component that can be accessed through the main component window “Xtract ODP”.
 ![ODP Component](/img/content/xfa/xfa_odp_overview.png){:class="img-responsive"}
 
@@ -20,7 +21,6 @@ The following section describes the settings of the Xtract ODP component that ca
 
 ### Parameters within Alteryx
 ODP parameters appear as RuntimeParameters of an *Update Value* component in an Alteryx Macro workflow. Parameters can be populated at workflow run time using standard Alteryx functionality.
-
 ![ODP alteryx parameter](/img/content/odp/set-odp-parameter-in-xfa.png){:class="img-responsive"}
 
 ****
