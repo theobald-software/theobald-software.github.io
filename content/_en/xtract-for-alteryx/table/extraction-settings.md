@@ -8,6 +8,7 @@ parent: table
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+progressstate: 5
 ---
 
 ### Opening Extraction Settings

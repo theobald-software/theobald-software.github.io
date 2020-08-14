@@ -8,6 +8,7 @@ parent: table
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
+progressstate: 5
 ---
 The following section gives an overview over the settings that can be changed withing the window "Extract Single and Joint SAP Tables or Views", tab "Tables and Fields".
 For basic information on extracting tables, see [Getting Started with Table](../getting-started-table). <br>

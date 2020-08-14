@@ -9,6 +9,7 @@ childidentifier: table
 permalink: /:collection/:path
 weight: 9
 lang: de_DE
+progressstate: 5
 ---
 
 Mit der Komponente *SAP Table or View* lassen sich Inhalte aus SAP Tabellen und Views abziehen. 

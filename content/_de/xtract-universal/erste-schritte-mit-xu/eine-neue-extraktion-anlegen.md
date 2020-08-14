@@ -8,6 +8,7 @@ parent: erste-schritte-mit-xu
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
+progressstate: 5
 ---
 ### SAP-Verbindung anlegen
 

@@ -8,6 +8,7 @@ parent: getting-started-table
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+progressstate: 5
 ---
 
 ### Creating an SAP connection

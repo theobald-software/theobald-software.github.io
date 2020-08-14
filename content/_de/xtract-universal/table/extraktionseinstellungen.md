@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionseinstellungen
+progressstate: 5
 ---
 
 Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen vorzunehmen.

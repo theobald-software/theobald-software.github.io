@@ -8,6 +8,7 @@ parent: table
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+progressstate: 5
 ---
 An extraction has two types of settings. The *Extraction Settings* include settings that affect only the respective extraction type, while the *General Settings* are the same for all extraction types and determine common settings. See also [General Settings](../getting-started-xu/general-settings).
 

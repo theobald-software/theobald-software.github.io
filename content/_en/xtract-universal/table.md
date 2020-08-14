@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 9
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=tablejoin
+progressstate: 5
 ---
 
 The component *SAP Table or View* can be used to extract contents from SAP tables and views. <br>
