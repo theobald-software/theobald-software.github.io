@@ -18,11 +18,11 @@ For more information on join types see [SAP Online help](https://help.sap.com/do
 
 
 ### Joining two Tables
-The following example shows, how tables MARA and MAKT can be joined.
+The following example shows, how tables KNA1 and KNVV can be joined.
 
 ![Table join steps](/img/content/join_steps_1.png){:class="img-responsive"}
 
-1. In the tab *Tables and Fields*, click **[Add]** (1) to add two tables (e.g., MARA and MAKT).
+1. In the tab *Tables and Fields*, click **[Add]** (1) to add two tables (e.g., KNA1 and KNVV).
 2. Select both tables on the left and mark the fields, which you want to extract (2). 
 3. Switch to the *Joins* (3) tab to define the join condition. A Join condition is automatically preset. The Join condition is based on the foreign key relationship of the joined tables, 
 4. Optional: Switch to the *WHERE clause* tab and specify a [WHERE clause](./where-clause).
@@ -31,7 +31,7 @@ The following example shows, how tables MARA and MAKT can be joined.
 **Note**: pay attention to the [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
 In the *Joins* tab, click **Edit** (pencil icon) to display joining options. <br>
-In the depicted example a left outer join on tables MARA (left table) and MAKT (right table) on the field MATNR is performed. A WHERE clause on *MAKT~SPRAS = 'EN'* is specified. 
+In the depicted example a left outer join on tables KNA1 (left table) and KNVV (right table) on the field KUNNR is performed. A WHERE clause on *KNA1~LAND1 = 'DE'* is specified. 
 ![Table-Join-Connections](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 
 *Left Table*, *Right Table*, *Join Type* and *Join Mapping* are preset with default values. They can be modified as required. The *Join Mapping* is based on the foreign key relationship of the joined tables.<br>
@@ -57,7 +57,7 @@ The **[Auto-map]** button deletes existing join conditions and performs a new fi
 
 
 ### Joining three Tables
-Example of a join with a third table MARC:
+Example of a join with a third table KNB1:
 
 ![Table-Join-Verknüpfungen2](/img/content/join_verknüpfungen_02.png){:class="img-responsive"}
 

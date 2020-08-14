@@ -18,11 +18,11 @@ Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Hilfe](http
 
 ### Joinen von zwei Tabellen
 
-Das folgende Beispiel zeigt, wie die Tabellen MARA und MAKT verknüpft werden können.
+Das folgende Beispiel zeigt, wie die Tabellen KNA1 und KNVV verknüpft werden können.
 
 ![Table join steps](/img/content/join_steps_1.png){:class="img-responsive"}
 
-1. Klicken Sie im Tab *Tables and Fields* auf **[Add]** (1), um zwei Tabellen (z.B. MARA und MAKT) hinzuzufügen.
+1. Klicken Sie im Tab *Tables and Fields* auf **[Add]** (1), um zwei Tabellen (z.B. KNA1 und KNVV) hinzuzufügen.
 2. Wählen Sie beide Tabellen auf der linken Seite aus und markieren Sie die Felder, die Sie extrahieren möchten (2). 
 3. Wechseln Sie zum Tab *Joins* (3), um die Join-Bedingung zu definieren. Eine Join-Bedingung ist automatisch voreingestellt. Die Join-Bedingung basiert auf der Fremdschlüsselbeziehung der beteiligten Tabellen.
 4. Optional: Wechseln Sie zum Tab *WHERE clause* und geben Sie eine [WHERE-Bedingung](./where-bedingung) ein.
@@ -31,7 +31,7 @@ Das folgende Beispiel zeigt, wie die Tabellen MARA und MAKT verknüpft werden k�
 **Hinweis**: Achten Sie bei der Angabe einer WHERE-Bedingung auf die Einschränkungen beim Definieren der [WHERE-Bedingung](./where-bedingung#einschränkungen-bei-where-bedingungen) auf die rechte Tabelle des Table-Joins über einen LEFT OUTER JOIN.
 
 Klicken Sie in dem Tab *Joins* auf **Edit** (Bleistift-Symbol), um die Join-Optionen anzuzeigen. <br>
-Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen MARA (linke Tabelle) und MAKT (rechte Tabelle) auf dem Feld MATNR durchgeführt. Es wird eine WHERE-Bedingung *MAKT~SPRAS = 'EN'* spezifiziert. 
+Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen KNA1 (linke Tabelle) und KNVV (rechte Tabelle) auf dem Feld KUNNR durchgeführt. Es wird eine WHERE-Bedingung *KNA1~LAND1 = 'DE'* spezifiziert. 
 ![Table-Join](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 
 
@@ -56,7 +56,7 @@ Der Button **[Auto-Map]** löscht bestehende Join-Bedingungen und führt eine ne
 
 
 ### Joinen von drei Tabellen
-Beispiel für einen Join mit einer dritten Tabelle MARC:
+Beispiel für einen Join mit einer dritten Tabelle KNB1:
 
 ![Table-Join-Verknüpfungen2](/img/content/join_verknüpfungen_02.png){:class="img-responsive"}
 
