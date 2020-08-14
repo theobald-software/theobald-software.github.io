@@ -35,7 +35,10 @@ All configuration files of extractions, sources, destinations and the server are
 
 ### How do I Create a Backup?
 Copy the complete `config` directory (`C:\Program Files\XtractUniversal\config` by default) of the machine running the Xtract Universal Service and store the files in safe and secure locations.
-Optionally, copy the complete `logs` directory (`C:\Program Files\XtractUniversal\logs` by default) to create a backup of the log files.
+Optionally, copy the complete `logs` directory (`C:\Program Files\XtractUniversal\logs` by default) to create a backup of the log files. 
+To backup your licence, create a copy of your `XtractUniversalLicense.json` file.
+
+
 
 {: .box-warning }
 **Warning!** <br>
