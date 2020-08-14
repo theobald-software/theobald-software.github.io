@@ -11,7 +11,7 @@ lang: en_GB
 ---
 
 ### Opening Extraction Settings
-Within the window "Define data source for SAP Tables" click **Extraction Settings**. The window "Table Settings" opens. 
+Within the window "Extract Single and Joint SAP Tables or Views" click **Extraction Settings**. The window "Table Settings" opens. 
 
 ![Extraction-Settings-01](/img/content/xu/Table-Extraction-Settings.png){:class="img-responsive"}
 

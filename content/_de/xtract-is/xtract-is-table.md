@@ -32,9 +32,9 @@ Der folgende Abschnitt gibt einen Überblick über die Komponente Xtract IS Tabl
 ### Xtract Table component
 1. Wählen Sie die Komponente Xtract Table aus der SSIS-Toolbox aus. 
 2. Ziehen Sie die Komponente per Drag & Drop auf die Datenflussaufgabe. 
-3. Doppelklicken Sie auf das Symbol **Xtract Table**. Das Fenster "Define data source for SAP Tables" wird geöffnet.
+3. Doppelklicken Sie auf das Symbol **Xtract Table**. Das Fenster "Extract Single and Joint SAP Tables or Views" wird geöffnet.
 
-Die folgenden Abschnitte geben einen Überblick über die Funktionen, die über das Hauptfenster "Define data source for SAP Tables" zugänglich sind.
+Die folgenden Abschnitte geben einen Überblick über die Funktionen, die über das Hauptfenster "Extract Single and Joint SAP Tables or Views" zugänglich sind.
 ![Table_define_source](/img/content/xis/table_define_data_source_window.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

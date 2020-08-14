@@ -13,5 +13,5 @@ An extraction has two types of settings. The *Extraction Settings* include setti
 You can find information about *General Settings* in chapter [General Settings](../advanced-techniques/general-settings).
 
 ### Opening Extraction Settings
-Within the window "Define data source for SAP Tables" click **Extraction Settings**. The window "Table Settings" opens. 
+Within the window "Extract Single and Joint SAP Tables or Views" click **Extraction Settings**. The window "Table Settings" opens. 
 {% include _content/en/tables/extraction-settings.md  %}

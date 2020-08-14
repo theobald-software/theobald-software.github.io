@@ -15,6 +15,6 @@ Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen
  Sie finden Informationen zu den *General Settings* im Abschnitt [Allgemeine Einstellungen](../fortgeschrittene-techniken/allgemeine-einstellungen). 
  
 ### Extraction Settings Öffnen
-Innerhalb des Fensters "Define data source for SAP Tables" klicken Sie auf **Extraction Settings**. Das Fenster "Table Settings" wird geöffnet. 
+Innerhalb des Fensters "Extract Single and Joint SAP Tables or Views" klicken Sie auf **Extraction Settings**. Das Fenster "Table Settings" wird geöffnet. 
 
 {% include _content/de/table/extraktionseinstellungen.md  %}

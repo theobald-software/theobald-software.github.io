@@ -12,7 +12,7 @@ old_url:
 ---
 
 ### Opening Extraction Settings
-Within the window "Define data source for SAP Tables" click **Settings**. The window "Table Settings" opens. 
+Within the window "Extract Single and Joint SAP Tables or Views" click **Settings**. The window "Table Settings" opens. 
 {% include _content/en/tables/extraction-settings.md  %}
 
 

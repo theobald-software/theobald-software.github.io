@@ -12,7 +12,7 @@ progressstate: 5
 ---
 
 ### Extraction Settings Öffnen
-Innerhalb des Fensters "Define data source for SAP Tables" klicken Sie auf **Extraction Settings**. Das Fenster "Table Settings" wird geöffnet. 
+Innerhalb des Fensters "Extract Single and Joint SAP Tables or Views" klicken Sie auf **Extraction Settings**. Das Fenster "Table Settings" wird geöffnet. 
 
 ![Extraction-Settings-01](/img/content/xu/Table-Extraction-Settings.png){:class="img-responsive"}
 

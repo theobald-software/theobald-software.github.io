@@ -12,7 +12,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=erweiterte-table-eigenschaften
 ---
 
 ### Extraction Settings Öffnen
-Innerhalb des Fensters "Define data source for SAP Tables" klicken Sie auf **Settings**. Das Fenster "Table Settings" wird geöffnet. 
+Innerhalb des Fensters "Extract Single and Joint SAP Tables or Views" klicken Sie auf **Settings**. Das Fenster "Table Settings" wird geöffnet. 
 {% include _content/de/table/extraktionseinstellungen.md  %}
 
 ### Benutzerdefinierte Eigenschaften - Custom Properties
