@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=generating_data_load_script
 ### Displaying the Qlik Data Load Script
 1. Run an extraction with a "Qlik" destination. The window "Run Extraction" opens.
 ![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script.png){:class="img-responsive"}
-2. *Optional (when using QlikSense)*: In the *Parameters* section mark the checkboxes for the parameters which you would like to have added as SET variables in the QlikSense script.
+2. *Optional (when using QlikSense)*: In the *Parameters* section, mark the check boxes for the parameters which you wish to add as SET variables in the QlikSense script.
 3. Click **[Generate Qlik Script]** to generate a data load script. The window "Script" opens.
 
 ### Further Processing of the Script
@@ -26,6 +26,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=generating_data_load_script
 **Note:** The "SET methods" cannot be edited in the "Script" window. Edit the SET methods in the Qlik data load editor. 
 
 
-
-
+****
+#### Related Links
+- [Destinations](./xu-destinations)
+- [Qlik Help](https://help.qlik.com/)
 
