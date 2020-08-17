@@ -29,5 +29,5 @@ Mehr Details zu QlikSense finden Sie im Abschnitt [Einstellungen in QlikSense](.
 
 ****
 #### Weiterführende Links
-- [Destinationen](./xu-destinationen)
+
 - [Qlik Help](https://help.qlik.com/)

@@ -28,6 +28,6 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=generating_data_load_script
 
 ****
 #### Related Links
-- [Destinations](./xu-destinations)
+
 - [Qlik Help](https://help.qlik.com/)
 
