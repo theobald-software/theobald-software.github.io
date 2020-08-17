@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung4
+progressstate: 5
 ---
 ### Hinzufügen einer Qlik-Destination
 1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster “Manage Destinations” wird geöffnet.
@@ -26,5 +27,5 @@ Das Fenster "Destination Details" besteht aus zwei Unterabschnitten:
 
 ****
 #### Weiterführende Links
-- [Destinationen](./xu-destinationen)
+
 - [Qlik Help](https://help.qlik.com/)

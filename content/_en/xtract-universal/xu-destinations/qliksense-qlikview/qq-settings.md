@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=settings3
+progressstate: 5
 ---
 
 ### Opening the Destination Settings
@@ -26,5 +27,4 @@ The following settings can be defined for the destination:
 
 *****
 #### Related Links
-- [Destinations](./xu-destinations)
 - [Qlik Help](https://help.qlik.com/)

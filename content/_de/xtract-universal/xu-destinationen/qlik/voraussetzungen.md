@@ -15,5 +15,5 @@ Für die Nutzung der Qlik Destination müssen keine besonderen Voraussetzungen e
 
 ****
 #### Weiterführende Links
-- [Destinationen](./xu-destinationen)
+
 - [Qlik Help](https://help.qlik.com/)

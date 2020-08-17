@@ -1,12 +1,12 @@
 ---
-ref: xu-qliksense-qlikview-05
+ref: xu-qliksense-qlikview-04
 layout: page
 title: Datenladeskript generieren
 description: Datenladeskript generieren
 product: xtract-universal
 parent: qlik
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=script_generieren
 ---

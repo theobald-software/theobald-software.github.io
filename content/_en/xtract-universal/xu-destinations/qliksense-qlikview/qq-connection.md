@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection3
+progressstate: 5
 ---
 
 ### Adding a Qlik Destination
@@ -27,5 +28,5 @@ The window "Destination Details" consists of two subsections:
 
 *****
 #### Related Links
-- [Destinations](./xu-destinations)
+
 - [Qlik Help](https://help.qlik.com/)

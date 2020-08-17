@@ -1,12 +1,12 @@
 ---
-ref: xu-qliksense-qlikview-04
+ref: xu-qliksense-qlikview-05
 layout: page
 title: Einstellungen in Qlik Sense
 description: Einstellungen in Qlik Sense
 product: xtract-universal
 parent: qlik
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen_in_qlik_sense
 ---
@@ -44,5 +44,4 @@ Bevor Sie das von Xtract Universal generierte Qlik-Skript nach QlikSense kopiere
 *****
 
 #### Weiterführende Links
-- [Destinationen](./xu-destinationen)
 - [Qlik Help](https://help.qlik.com/)
