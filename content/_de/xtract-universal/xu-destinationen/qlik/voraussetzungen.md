@@ -12,3 +12,8 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=voraussetzungen4
 ---
 
 Für die Nutzung der Qlik Destination müssen keine besonderen Voraussetzungen erfüllt sein.
+
+****
+#### Weiterführende Links
+- [Destinationen](./xu-destinationen)
+- [Qlik Help](https://help.qlik.com/)

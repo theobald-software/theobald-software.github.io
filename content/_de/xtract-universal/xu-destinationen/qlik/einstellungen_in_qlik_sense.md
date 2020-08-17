@@ -11,18 +11,38 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen_in_qlik_sense
 ---
 
-Wenn Sie ein von Xtract Universal generiertes Qlik Script in Qlik Sense verwenden bekommen Sie möglicherweise folgende Fehlermeldung: *This statement only works with lib:// paths in this script mode*.
+### Eine Extraktion aus QlikSense triggern
 
-Das dynamische Laden von Daten aus einer Webseite ist in Qlik Sense standardmäßig deaktiviert. Wie Sie es aktivieren finden Sie in der Hilfe-Seite von Qlik Sense. Suchen Sie dort nach 'Disabling standard mode' oder probieren Sie es über die folgende [Seite](https://help.qlik.com/en-US/sense/2.2/Subsystems/Hub/Content/LoadData/disable-standard-mode.htm).  
+Bevor Sie das von Xtract Universal generierte Qlik-Skript nach QlikSense kopieren, führen Sie die folgenden Schritte in QlikSense aus:
 
-In *Qlik Sense* deaktivieren Sie den Standard Mode in der Qlik Management Console -> Engine Properties.<br>
-In *Qlik Sense Desktop* öffnen Sie die Datei C:\Users\{user}\Documents\Qlik\Sense\Settings.ini in einem Texteditor.<br>
-Ändern Sie StandardReload=1 zu StandardReload=0. Speichern Sie die Datei und starten Sie Qlik Sense erneut.  
+1. Erstellen Sie eine neue Datenverbindung vom Typ REST.
+2. Geben Sie die URL des Xtract Universal Servers und den Port in das URL-Textfeld ein. Im Beispiel unten läuft der Xtract Universal Server auf `http://localhost:8065/`.
+3. Geben Sie *Xtract_Universal* in das Textfeld für den Namen ein.
+    ![XU_qlik_QlikSense_data_connection](/img/content/XU_qlik_QlikSense_data_connection.png){:class="img-responsive"}
+4. Fügen Sie das QlikSense-Skript aus Xtract Universal in den Data-Load-Editor von QlikSense ein.
+    ![XU_qlik_QlikSense_load_editor](/img/content/XU_qlik_QlikSense_load_editor.png){:class="img-responsive"}
+	
+{: .box-note }
+**Hinweis**: In QlikSense ist der Standardwert für das *Timeout* 30 Sekunden. Erhöhen Sie den Timeout auf einen ausreichend hohen Wert, wenn die Zeit bis zum Eintreffen des ersten Datenpakets von SAP höher als 30 Sekunden ist. Der maximale Eingabewert beträgt 10.000 Sekunden.
 
-Mit der Qlik Sense Version vom Juni 2018 wird standardmäßig Port 5555 (Default Port der Qlik Web Connectors) für die WebFile Verbindung mit *http://localhost* verwendet. 
-Falls Sie daher beim Ausführen eines Qlik Sense Berichtes die Meldung *Forbidden* oder *Access is denied* erhalten..Dieses Verhalten ist unter den nachfolgenden Links beschrieben:
 
-[Cannot load data from Qlik Web Connectors](https://help.qlik.com/en-US/connectors/Subsystems/Web_Connectors_help/Content/Connectors_QWC/Install/troubleshooting_load.htm?l=DE-DE).
+### Erläuterung des QlikSense Datenlade-Skripts 
 
-["Access is denied" when connecting to localhost with WebFile connection ](https://qliksupport.force.com/articles/000054581?_ga=2.234987393.1633897554.1546511952-1716671580.1545392499).
+1. Xtract Universal erstellt ein QlikSense-Skript, das die [QlikSense-Interpretationsfunktionen](https://help.qlik.com/en-US/sense/June2020/Subsystems/Hub/Content/Sense_Hub/Scripting/InterpretationFunctions/interpretation-functions.htm) *Num#*, *Text*, *Datum* und *Zeit* verwendet. Für Felder, für die kein adäquater Datentyp bestimmt werden kann, wird keine Interpretationsfunktion verwendet. 
+2. Xtract Universal erstellt ein QlikSense-Skript, das allen Feldern die Feldbeschreibung und die SAP-Herkunft des Feldes als Tags zuordnet.
+3. Xtract Universal erstellt ein QlikSense-Skript, das alle Datumsfelder explizit mit *$date* markiert. Diese Funktion stellt sicher, dass Felder, die ein [Datum vor dem 1. Januar 1980] enthalten (https://help.qlik.com/en-US/sense/April2020/Subsystems/Hub/Content/Sense_Hub/Scripting/date-time-interpretation.htm), in QlikSense als Datumsfelder erkannt werden.
+4. Das QlikSense-Skript unterstützt die Verwendung von Xtract Universal [Extraktionsparameter](../../fortgeschrittene-techniken/extraktionsparameter). 
+    ![XU_qlik_QlikSense_XUParameter](/img/content/XU_qlik_QlikSense_XUParameter.png){:class="img-responsive"}
+    
+    ![XU_qlik_QlikSense_XUParameter_Log2](/img/content/XU_qlik_QlikSense_XUParameter_Log2.png){:class="img-responsive"}
 
+
+{: .box-note }
+**Hinweis**: Ändern Sie nicht den zugewiesenen Wert der Variablen *xuOriginDateFormat* und *xuOriginTimeFormat*.
+ Das gewählte Format ermöglicht es Xtract Universal, die Daten von Datums- und Zeitfeldern an QlikSense zu senden. Eine Änderung des Formats verhindert die Ausführung des QlikSense-Skripts.
+
+*****
+
+#### Weiterführende Links
+- [Destinationen](./xu-destinationen)
+- [Qlik Help](https://help.qlik.com/)
