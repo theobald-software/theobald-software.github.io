@@ -74,7 +74,7 @@ When replacing a machine completely, conduct a full migration.
 2. Decide whether you need a partial or a full migration. <br> 
 For a full migration you can restore the entire `config` directory on the different machine.
 You can alternatively restore parts of the backup, by copying e.g., only the destinations or extractions directories.
-3. Restart the [Xtract Universal Service](./server/start-server), when performing a full migration or copying the `server` directory onto the different machine.
+3. Restart the [Xtract Universal Service](../server/start-server), when performing a full migration or copying the `server` directory onto the different machine.
 
 ****
 #### Related Links
