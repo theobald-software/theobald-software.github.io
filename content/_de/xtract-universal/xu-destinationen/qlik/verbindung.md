@@ -14,7 +14,7 @@ progressstate: 5
 ### Hinzufügen einer Qlik-Destination
 1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster “Manage Destinations” wird geöffnet.
 2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster “Destination Details” wird geöffnet.
-![XU_Qlik_Ziel](/img/Inhalt/XU_qlik_verwalten_Ziel.png){:class="img-responsive"}
+![XU_Qlik_Ziel](/img/content/XU_qlik_manage_destination.png){:class="img-responsive"}
 3. Wähen Sie die Destination *Qlik* aus der Drop-Down-Liste aus.
 4. Klicken Sie auf **[OK]** zum Bestätigen.
 
@@ -23,7 +23,7 @@ Das Fenster "Destination Details" besteht aus zwei Unterabschnitten:
 - Name - Name des Datenziels
 - Type - Destinationstyp
 
-![XU_qlik_destination](/img/content/XU_qlik_destination.png){:class="img-responsive
+![XU_qlik_destination](/img/content/XU_qlik_destination.png){:class="img-responsive}
 
 ****
 #### Weiterführende Links
