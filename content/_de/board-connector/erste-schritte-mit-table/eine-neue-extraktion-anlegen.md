@@ -17,16 +17,20 @@ Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Ext
 
 
 ### Extraktion anlegen
+Das folgende Beispiel zeigt die Erstellung einer Extraktion unter Verwendung der Komponente "SAP Table or View".
 
-Klicken Sie auf *New*, um eine neue Extraktion anzulegen.
+1. Im Hauptfenster des Board Connector Designers klicken Sie auf **[New]**.
+![Create-New-Table-Extraction](/img/content/bc_extraction_anlegen.png){:class="img-responsive list-img"}
+Das Fenster "Create Extraction" wird geöffnet. <br>
+2. Das Feld **Source** (1) gibt die SAP-Verbindung an. Wählen Sie die angelegte SAP-Verbindung aus dem Dropdown-Menü.
+![Add-Extraction](/img/content/bc_tabellen_extraktion_anlegen.png){:class="img-responsive list-img"}
+3. Geben Sie einen eindeutigen Namen für Ihre Extraktion ein (2).
+4. Wählen Sie die Art der Extraktion. Im aufgeführten Beispiel: **SAP Table or View** (3).
+5. Klicken Sie auf **[OK]** (4) zum Bestätigen.
 
-![Create-New-Table-Extraction](/img/content/bc_extraction_anlegen.png){:class="img-responsive"}
-
+Das Fenster "Extract Single and Joint SAP Tables or Views" wird geöffnet.
 Wählen Sie die zuvor erstellte SAP-Verbindung und geben Sie der Extraktion einen eindeutigen Namen.
 
-Anschließend definieren Sie, um welchen Typ von Extraktion es sich handelt. In unserem Fall wollen wir eine *Tabelle* aus SAP extrahieren. 
+In dem geöffneten Fenster können Sie einfache Tabellenextraktionen oder Join-Tabellen für Extraktionen definieren. Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
 
-![Add-Extraction](/img/content/bc_tabellen_extraktion_anlegen.png){:class="img-responsive"}
-
-{% include _content/de/table/extraktion-anlegen.md  %}
 

@@ -17,5 +17,9 @@ Basic BOARD Connector the knowledge is required to understand the following sect
 {: .box-tip }
 **Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with table](./getting-started-table). <br>
 
+{: .box-note}
+**Note:** The term query does not refer to a BW query but to a "normal" query that you create in transactions SQ02 and SQ01. <br>
+If you want to use a BW query as the data basis, see the section [BW InfoCubes and BEx Queries](./bw-infocubes-and-bex-queries).
+
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
