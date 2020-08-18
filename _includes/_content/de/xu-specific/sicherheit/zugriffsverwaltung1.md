@@ -7,7 +7,7 @@ Danach können sich nur die aufgelisteten Benutzer bzw. Benutzergruppen am Desig
 
 #### Zugriffsrechte - Read, Modify, Create, Admin
 
-Einem Benutzer oder einer Benutzergruppe können nachfolgende Rechte zugeordnet werden. Diese Rechte beziehen sich auf Aktionen, die im Xtract Universal Designer durchgeführt werden. 
+Einem Benutzer oder einer Benutzergruppe können nachfolgende Rechte zugeordnet werden. Diese Rechte beziehen sich auf Aktionen (read, create, modify), die im Designer durchgeführt werden. 
 
 | Typ der Rechte | Beschreibung |
 | :------ |:--- | 
@@ -20,7 +20,7 @@ Einem Benutzer oder einer Benutzergruppe können nachfolgende Rechte zugeordnet 
 ### Zugriffssteuerung auf Extrakionsebene - Extraction Settings
 Eine Zugriffssteuerung kann auch auf Extraktionsebene vorgenommen werden. Diese Zugriffssteuerung übersteuert die Einstellungen auf Serverebene.
 
-![Server-Settings_](/img/content/XU_Extraction_Security.png){:class="img-responsive"}
+
 
 ### Zugriffsteuerung auf Source-Ebene - Einstellungen der Datenquelle
 Eine Zugriffssteuerung kann auch auf Datenquellebene (Source-Ebene) vorgenommen werden. Diese Zugriffssteuerung übersteuert die Einstellungen auf Serverebene.

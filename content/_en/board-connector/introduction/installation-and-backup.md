@@ -30,7 +30,7 @@ When starting the installation program, optional components (1) can be selected 
 |Convert Config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.
 |Install Service | Installs the server component as a windows service and automatically boots it. See also section [Architecture](./architecture).|
 
-The license installation procedure is described in the section [Installing the license](license#installing-the-xtract-universal-license---xtractuniversallicensejson).
+The license installation procedure is described in the section [Installing the license](license#installing-the-board-connector-license---boardconnectorlicensejson).
 
 #### Installation Folder Files
 The list below shows several most important files that are placed into the default directory ``C:\Program Files\BoardConnector`` after installation:

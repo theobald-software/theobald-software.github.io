@@ -1,27 +1,30 @@
 ### Server Settings
-Access Management will be activated once you check the checkbox *Restrict Designer access to the following users/groups*. <br>
-Once activated, only the listed users or user groups will be able to log on.
+Access Management is activated when the checkbox **Restrict Designer access to the following users/groups** is marked. <br>
+Once activated, only the listed users or user groups can log on.
 
 ![Server-Settings_](/img/content/Server-Settings_.png){:class="img-responsive"}
 
-**Read, Modify, Create, Admin**<br>
-A user group can have one of the following rights. These rights only concern actions (read, create, modify) that can be performed within the Xtract Universal designer. 
+#### Access Rights - Read, Modify, Create, Admin
+A user group can have one of the following rights. These rights only concern actions (read, create, modify) that can be performed within the Designer. 
 
-- Admin rights: Users of this group have all privileges. They can do anything that “Create”
-users can do. Additionally, they can perform admin tasks, such as changing server settings, access server logs or manage users and connections (SAP sources and target destinations). Access limitations on extractions or sources will be ignored.
-
-- Create new extractions: Members of this group can do anything that “Modify” users can do. Additionally they can create or clone extractions. Group members may not perform any admin tasks.
-
-- Modify extractions: Members of this group can do anything that “Read” users can do.
-Additionally, they can modify existing extractions, however they may not create or clone extractions.
-
-- Read extractions: Group members may not edit extractions but may read their definition.
+|Rights Type | Description| 
+| :--------  | :-------|
+|Read | Members of this group have read access, but cannot edit extractions.|
+|Modify | Members of this group have the same access rights as users with "read" rights. Furthermore, users with "modify" rights can edit existing extractions, but cannot create or clone extractions.|
+|Create |  Members of this group have identical access rights as the users with "modify" rights. In addition, users with "create" rights can create and clone extractions, but cannot perform any admin activities.|
+| Admin| Members of this group have all rights, no restrictions and can perform admin tasks. Admin activities include changing server settings, accessing server logs, or editing users and connections (SAP and target environments). Access restrictions on extractions or the source system are ignored.|
 
 
 
-### Extraction Settings
-Access restrictions can be performend on extraction level, as well. Access restrictions for extractions override restrictions made on server level.
+### Extraction Settings - Extraction Level
+Access control can also be performed at extraction level. This access control overrides the settings at server level.
 
 ![Server-Settings_](/img/content/XU_Extraction_Security.png){:class="img-responsive"}
+
+
+### Extraction Settings - Source Level
+Access control can also be performed at the source level. This access control overrides the settings at server level.
+![Server-Settings_](/img/content/XU_Extraction_Security2.png){:class="img-responsive"}
+
 
 

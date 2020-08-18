@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=access_management
+progressstate: 5
 ---
 {% include _content/en/xu-specific/security-xu3/access-management.md %}
 
