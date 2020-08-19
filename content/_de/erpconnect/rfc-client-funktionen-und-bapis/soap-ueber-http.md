@@ -15,9 +15,9 @@ Warnung: Das SOAP-Protokoll ist obsolete in ERPConnect ab Version 4.25.0 (Mai 20
 
 **Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis SOAPGetCustomerDetail** 
 
-Bei allen Beispielen der vergangenen Seiten haben wir RFC als Protokoll genutzt, um mit dem SAP-System zu kommunizieren. Es gibt ab Release 6.20 aber auch eine andere Möglichkeit, nämlich das XML-basierende SOAP/HTTP-Protokoll. Bitte werfen Sie zu diesem Thema auch einen Blick in das Administrationskapitel. Es zeigt, wie die erforderlichen Services im SAP-System aktiviert und administriert werden.
+Bei allen Beispielen der vergangenen Seiten haben wir RFC als Protokoll genutzt, um mit dem SAP-System zu kommunizieren. Es gibt ab Release 6.20 aber auch eine andere Möglichkeit, nämlich das XML-basierende SOAP/HTTP-Protokoll. Bitte werfen Sie zu diesem Thema auch einen Blick in das AdministrationsAbschnitt. Es zeigt, wie die erforderlichen Services im SAP-System aktiviert und administriert werden.
 
-Das folgende Beispiel zeigt eine einfache Client-Kommunikation analog zu den anderen Teilkapiteln. Bitte beachten Sie die Programmzeilen, die gelb markiert sind. Die Eigenschaft Protocol des *R3Connection Objekts* wird von *RFC* (Standard) auf *HttpSoap* gestellt. Außerdem ist die http-URL zum SAP-System anzugeben. Der Rest sollte soweit bekannt sein.
+Das folgende Beispiel zeigt eine einfache Client-Kommunikation analog zu den anderen TeilAbschnittn. Bitte beachten Sie die Programmzeilen, die gelb markiert sind. Die Eigenschaft Protocol des *R3Connection Objekts* wird von *RFC* (Standard) auf *HttpSoap* gestellt. Außerdem ist die http-URL zum SAP-System anzugeben. Der Rest sollte soweit bekannt sein.
 
 <details>
 <summary>[C#]</summary>

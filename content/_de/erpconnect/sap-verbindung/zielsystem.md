@@ -55,7 +55,7 @@ using(R3Connection con = new R3Connection())
 {% endhighlight %}
 </details>
 
-**Tipp**: Der Konstruktor der R3-Connection-Klasse kann dazu dienen, bereits gleich die Anmeldedaten mitzugeben. Das spart ein paar Code-Zeilen, siehe Kapitel [Kundeninfos abrufen mit SD_RFC_CUSTOMER_GET](../rfc-client-funktionen-und-bapis/kundeninfos-abrufen-mit-sd_rfc_customer_get).  
+**Tipp**: Der Konstruktor der R3-Connection-Klasse kann dazu dienen, bereits gleich die Anmeldedaten mitzugeben. Das spart ein paar Code-Zeilen, siehe Abschnitt [Kundeninfos abrufen mit SD_RFC_CUSTOMER_GET](../rfc-client-funktionen-und-bapis/kundeninfos-abrufen-mit-sd_rfc_customer_get).  
 
 **Beispiel mit einem SAP Message Server (Load Balancing)**
 

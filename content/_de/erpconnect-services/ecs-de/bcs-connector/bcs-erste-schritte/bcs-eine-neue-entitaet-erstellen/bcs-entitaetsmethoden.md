@@ -38,6 +38,6 @@ Das *Edit Method* Dialogfenster zeigt den Typ und das SAP-Objekt für die Method
 
 Das Dialogfenster zeigt die *Input Parameters* für die Methode mit den verknüpften Eintitätseigenschaften.
 
-Das Dialogfenster zeigt ebenfalls die *Return Parameters* für die Methode und alle für die Methode definierten Filters. Für weitere Informationen lesen Sie das Kapitel [Filter](./bcs-filter).
+Das Dialogfenster zeigt ebenfalls die *Return Parameters* für die Methode und alle für die Methode definierten Filters. Für weitere Informationen lesen Sie das Abschnitt [Filter](./bcs-filter).
 
 ![BCS-Generic-Edit-Method](/img/content/BCS-Generic-Edit-Method.png){:class="img-responsive"}

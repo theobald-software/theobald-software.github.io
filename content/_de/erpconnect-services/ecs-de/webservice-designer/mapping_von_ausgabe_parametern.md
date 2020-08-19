@@ -11,6 +11,6 @@ weight: 4
 lang: de_DE
 ---
 
-In den folgenden Kapiteln erfahren Sie alles über das Mapping von Ausgabe-Parametern einer WebService Operation.
+In den folgenden Abschnittn erfahren Sie alles über das Mapping von Ausgabe-Parametern einer WebService Operation.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=mapping_einzelner_tabellenwerte
 ---
 
-In diesem Kapitel zeigen wir Ihnen, wie Sie unterschiedliche Ausgabe-Parameter eines SAP Funktionsbausteins auf skalare Ausgabe-Parameter einer WebService Operation mappen können. Beachten Sie, dass die Mapping-Richtung nun umgekehrt ist: Vom Funktionsbaustein zu den WebService Parametern. 
+In diesem Abschnitt zeigen wir Ihnen, wie Sie unterschiedliche Ausgabe-Parameter eines SAP Funktionsbausteins auf skalare Ausgabe-Parameter einer WebService Operation mappen können. Beachten Sie, dass die Mapping-Richtung nun umgekehrt ist: Vom Funktionsbaustein zu den WebService Parametern. 
 
 
 **Struktur-Parameter auf skalare Parameter mappen**

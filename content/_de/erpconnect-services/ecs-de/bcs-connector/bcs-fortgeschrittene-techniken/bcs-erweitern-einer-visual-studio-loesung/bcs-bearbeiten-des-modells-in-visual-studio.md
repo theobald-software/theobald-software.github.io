@@ -22,7 +22,7 @@ Geben Sie die Exportparameter für die Solution an und betätigen Sie OK.
 
 In diesem Beispiel ändern Sie den the *Solution Folder* und bei den übrigen Parametern übernehmen wir die Standardwerte und die Standardsprachauswahl 'CSharp'.
 
-Für nähere Informationen lesen Sie das Kapitel [Exportieren eines Modells](../../bcs-erste-schritte/bcs-exportieren-eines-modells).
+Für nähere Informationen lesen Sie das Abschnitt [Exportieren eines Modells](../../bcs-erste-schritte/bcs-exportieren-eines-modells).
 
 ![BCS-PO-VS-Export](/img/content/BCS-PO-VS-Export.png){:class="img-responsive"}
 

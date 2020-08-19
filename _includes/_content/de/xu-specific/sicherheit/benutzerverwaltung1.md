@@ -39,7 +39,7 @@ Weitere Informationen zu diesem Thema, finden Sie in unserem [Knowledge Base Art
 
 
 ### Benutzer<br>
-Zum Zeitpunkt der Benutzeranlage müssen noch keine Rechte vergeben werden, siehe Kapitel Zugriffsverwaltung.<br>
+Zum Zeitpunkt der Benutzeranlage müssen noch keine Rechte vergeben werden, siehe Abschnitt Zugriffsverwaltung.<br>
 Custom Benutzer werden angelegt und Custom Benutzergruppen zugeordnet via *Security - Manage Users*.
 
 ![XU3_assign_UserGroups](/img/content/XU3_assign_UserGroups.png){:class="img-responsive"}
@@ -47,7 +47,7 @@ Custom Benutzer werden angelegt und Custom Benutzergruppen zugeordnet via *Secur
 
 ### Benutzergruppen<br>
 Es ist möglich Benutzergruppen innerhalb der Anwendung sowie zusätzliche Windows AD Benutzergruppen angelegt werden. 
-Zum Zeitpunkt der Benutzergruppenanlage müssen noch keine Rechte vergeben werden, siehe Kapitel Zugriffsverwaltung.<br>
+Zum Zeitpunkt der Benutzergruppenanlage müssen noch keine Rechte vergeben werden, siehe Abschnitt Zugriffsverwaltung.<br>
 Windows AD Benutzer werden Windows AD Benutzergruppen außerhalb der Anwendung zugeordnet.
 
 **ACHTUNG:**<br>

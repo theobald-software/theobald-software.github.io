@@ -32,7 +32,7 @@ Geben Sie die nachfolgenden Verbindungsparameter ein:
 **Language** -	Die Anmeldesprache für das SAP System. Beispiel: EN<br>
 **Username** -	Der Benutzername für die SAP Verbindung.<br>
 **Password** -	Das Kennwort für die SAP Verbindung.<br>
-**Secure Store ID** -	Optionaler Parameter. Wird benötigt um die Verbindungsinformationen für die SAP Anmeldung aus einer SharePoint Secure Store Anwendung zu beziehen (für mehr Informationen lesen Sie bitte Kapitel [Konfiguration Single Sign-On](../../bcs-sharepiont-konfigurieren/bcs-konfiguration-single-sign-on)).
+**Secure Store ID** -	Optionaler Parameter. Wird benötigt um die Verbindungsinformationen für die SAP Anmeldung aus einer SharePoint Secure Store Anwendung zu beziehen (für mehr Informationen lesen Sie bitte Abschnitt [Konfiguration Single Sign-On](../../bcs-sharepiont-konfigurieren/bcs-konfiguration-single-sign-on)).
 
 Wählen Sie eine der nachfolgenden Optionen für die Verbindung zu Ihrem SAP System:
 

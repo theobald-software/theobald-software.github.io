@@ -14,7 +14,7 @@ progessstate: 3
 
 Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis SimpleIdocServer 
 
-Das folgende Beispiel zeigt den Empfang und die Verarbeitung eines MATMAS-IDocs. Wie Sie ihr SAP-System so konfigurieren, dass es MATMAS-IDocs sendet, erfahren Sie im Kapitel [Einrichten einer IDoc-Testumgebung](../administration/einrichten-einer-idoc-testumgebung).
+Das folgende Beispiel zeigt den Empfang und die Verarbeitung eines MATMAS-IDocs. Wie Sie ihr SAP-System so konfigurieren, dass es MATMAS-IDocs sendet, erfahren Sie im Abschnitt [Einrichten einer IDoc-Testumgebung](../administration/einrichten-einer-idoc-testumgebung).
 
 Bei einem IDoc-Server handelt es sich in erster Linie um einen ganz normalen RFC-Server (siehe RFC-Server-Beispiel), nur mit dem Unterschied, dass die Eigenschaft *CanReceiveIdocs* auf true gesetzt werden muss. Darüber hinaus muss das Ereignis *IncomingIdoc* abgefangen werden. Der folgende Code zeigt die Initialisierungsarbeiten innerhalb der Main-Prozedur bis hin zum Starten des Servers.
 
@@ -65,7 +65,7 @@ End Sub
 Tritt das Ereignis *IncomingIdoc* auf, wird eine Referenz auf das *RFCServer*-Objekt sowie ein *IDoc*-Objekt übergeben. Mit Hilfe der Segment-Collection kann nun der Inhalt der *IDocs* analysiert und ausgelesen werden. Im folgenden Fall besorgen wir uns zunächst das E2MARAM005-Segment. Es enthält beliebig viele E2MAKTM001-Segmente, die wiederum jeweils einen Kurztext des Materials in unterschiedlichen Sprachen beinhalten.
 
 Mit Hilfe von *ReadDataBuffer* kann der Datenpuffer des Segments ausgelesen werden. Der eigentliche Text befindet sich an der Stelle 4 und ist 40 Zeichen lang (nachzulesen in der *IDoc*-Doku, z.B. Transaktion WE60). Alle Texte werden auf der Console ausgegeben.
-Falls Sie nicht direkt auf den Daten-Puffer lesen möchten (unter Angabe des Offsets und der Länge) gibt es auch die Möglichkeit, über ein XML-Schema den Daten-Puffer in Felder aufzulösen. Mehr dazu im Kapitel [IDocs als XML](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) verarbeiten. 
+Falls Sie nicht direkt auf den Daten-Puffer lesen möchten (unter Angabe des Offsets und der Länge) gibt es auch die Möglichkeit, über ein XML-Schema den Daten-Puffer in Felder aufzulösen. Mehr dazu im Abschnitt [IDocs als XML](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) verarbeiten. 
 
 <details>
 <summary>[C#]</summary>

@@ -11,9 +11,9 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-einschraenkungen-beim-tabellenzugriff
 ---
 
-Der Zugriff auf Tabellen wie im letzten Teilkapitel gezeigt funktioniert ohne irgendwelche Installationen im SAP-System. Leider gibt es dieselben Beschränkungen wie schon bei der traditionellen ReadTable-Klasse (siehe [SAP-Tabellen lesen mit der ReadTable-Klasse](../spezialklassen/sap-tabellen-lesen-mit-der-readtable-klasse)).
+Der Zugriff auf Tabellen wie im letzten TeilAbschnitt gezeigt funktioniert ohne irgendwelche Installationen im SAP-System. Leider gibt es dieselben Beschränkungen wie schon bei der traditionellen ReadTable-Klasse (siehe [SAP-Tabellen lesen mit der ReadTable-Klasse](../spezialklassen/sap-tabellen-lesen-mit-der-readtable-klasse)).
 
-Um dieses Problem in den Griff zu bekommen, ist es aber möglich, einen Z-Baustein im SAP-System zu installieren, siehe Kapitel [Z-Baustein installieren](../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion). Sobald dieser Baustein im System verfügbar ist, können Sie ihn aktivieren, in dem Sie den Namen im LINQ-Table-Dialog eintragen (bei Bedarf kann der Baustein-Name je nach Benennungsvorschiften geändert werden). 
+Um dieses Problem in den Griff zu bekommen, ist es aber möglich, einen Z-Baustein im SAP-System zu installieren, siehe Abschnitt [Z-Baustein installieren](../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion). Sobald dieser Baustein im System verfügbar ist, können Sie ihn aktivieren, in dem Sie den Namen im LINQ-Table-Dialog eintragen (bei Bedarf kann der Baustein-Name je nach Benennungsvorschiften geändert werden). 
 
 ![LINQToERP-Tables-004](/img/content/LINQToERP-Tables-004.png){:class="img-responsive"}
 

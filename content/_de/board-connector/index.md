@@ -34,6 +34,6 @@ Die verwendbaren Komponenten in einem SAP ERP- und BW-System werden in der nachf
 | OHS         |     | X  |
 | ODP         | X | X |
 
-Diese Hilfe beinhaltet folgende Kapitel:
+Diese Hilfe beinhaltet folgende Abschnitt:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

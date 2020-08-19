@@ -1,16 +1,18 @@
 ---
-ref: bc-advanced-techniques-04
+ref: bc-getting-started-bc-05
 layout: page
 title: General Settings
 description: General Settings
 product: board-connector
-parent: advanced-techniques
+parent: getting-started-bc
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=general-settings
+progressstate: 5
 ---	
 General Settings are independent of the extraction type.
+
 ### To open General Settings
 1. In the main window of the Designer, double-click an extraction.<br>
 The window "Define data source for [...]" opens.<br>

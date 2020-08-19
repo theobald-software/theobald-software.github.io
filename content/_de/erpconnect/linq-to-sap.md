@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap
 ---
 
-Bevor wir in diesem Kapitel tiefer in LINQ to SAP einsteigen, sind im folgenden die Antworten auf einige wichtige Fragen gegeben, die dem einen oder anderen Leser unter den Nägeln brennen werden:
+Bevor wir in diesem Abschnitt tiefer in LINQ to SAP einsteigen, sind im folgenden die Antworten auf einige wichtige Fragen gegeben, die dem einen oder anderen Leser unter den Nägeln brennen werden:
 
 - *LINQ to SAP* heißt im Quellcode immer *LINQ to ERP*. Das hat markenrechtliche Gründe. Aus dem selben Grund heißt ERPConnect auch ERPConnect und nicht SAPConnect, was eigentlich näher liegen würde. 
 - *LINQ to SAP* ist ausschließlich ein AddOn für ERPConnect. Es baut intern auf ERPConnect auf und wird niemals alleine existieren. Daraus folgt auch, dass eventuell bestehender ERPConnect-Code immer kompatibel zu „LINQ to SAP" sein wird. Es macht also keinen Sinn, bestehenden Code unbedingt auf LINQ to SAP zu migrieren. 

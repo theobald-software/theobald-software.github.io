@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=customizing-check
 ---
 
-Füllen Sie nun noch oben rechts die Felder aus, wie im Kapitel [DeltaQ Customizing](https://help.theobald-software.com/de/xtract-is/sap-customizing/customizing-fuer-deltaq) angelegt. 
+Füllen Sie nun noch oben rechts die Felder aus, wie im Abschnitt [DeltaQ Customizing](https://help.theobald-software.com/de/xtract-is/sap-customizing/customizing-fuer-deltaq) angelegt. 
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 

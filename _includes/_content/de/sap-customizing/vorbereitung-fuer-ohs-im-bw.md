@@ -10,7 +10,7 @@ Legen Sie zuerst in der Transaktion SM59 eine RFC-Destination vom Typ *T*(=TCP/I
 
 
 ### InfoSpokes und Prozessketten (< BI 7.0)<br>
-Bis zum Release BI 7.0 sind InfoSpokes der zentrale Dreh- und Angelpunkt für die Open Hub Services. Falls Sie bereits ein Release 7.0 nutzen, können Sie alternativ auch in das nächste Teilkapitel springen und erfahren, wie OHS-Destinations gehandhabt werden.
+Bis zum Release BI 7.0 sind InfoSpokes der zentrale Dreh- und Angelpunkt für die Open Hub Services. Falls Sie bereits ein Release 7.0 nutzen, können Sie alternativ auch in das nächste TeilAbschnitt springen und erfahren, wie OHS-Destinations gehandhabt werden.
 
 In der Transaktion RSA1 erhalten Sie über das Menü *Werkzeuge -> Open Hub Service -> Infospoke* editieren den Einstieg zum Anlegen eines Infospokes. Hinterlegen Sie dort eine Datenquelle (z.B. ein ODS-Objekt oder einen Cube)
 

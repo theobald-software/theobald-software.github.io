@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=infospokes-und-prozessketten
 ---
 
-Bis zum Release BW 7.0 sind InfoSpokes der zentrale Dreh- und Angelpunkt für die Open Hub Services. Falls Sie bereits ein Release 7.0 nutzen, können Sie alternativ auch in das nächste Teilkapitel springen und erfahren, wie OHS-Destinations gehandhabt werden.<br>
+Bis zum Release BW 7.0 sind InfoSpokes der zentrale Dreh- und Angelpunkt für die Open Hub Services. Falls Sie bereits ein Release 7.0 nutzen, können Sie alternativ auch in das nächste TeilAbschnitt springen und erfahren, wie OHS-Destinations gehandhabt werden.<br>
 In der Transaktion RSA1 erhalten Sie über das Menü *Werkzeuge -> Open Hub Service -> Infospoke* editieren den Einstieg zum Anlegen eines Infospokes. Hinterlegen Sie dort eine Datenquelle (z.B. ein ODS-Objekt oder einen Cube)
 
 ![OHS-InfoSpoke-01](/img/content/OHS-InfoSpoke-01.png){:class="img-responsive"}

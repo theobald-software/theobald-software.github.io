@@ -13,7 +13,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-queries
 
 **Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis LINQQuery**
 
-Neben der Tabellenintegration aus den letzten beiden Teilkapiteln unterstützt LINQ to SAP auch SAP-Queries als LINQ-fähige Datenquelle (Achtung! Bitte nicht mit BW-Queries verwechseln). Das folgende Beispiel demonstriert die Ansteuerung einer Demo-Query namens ZVV01 in der Benutzergruppe ZTHEO. Der folgende Screenshot zeigt den Selection Screen der Query, sowie die Listausgabe. Inhaltlich gibt die Query Vertriebsdaten aus (Join aus VBAK und VBAP).
+Neben der Tabellenintegration aus den letzten beiden TeilAbschnittn unterstützt LINQ to SAP auch SAP-Queries als LINQ-fähige Datenquelle (Achtung! Bitte nicht mit BW-Queries verwechseln). Das folgende Beispiel demonstriert die Ansteuerung einer Demo-Query namens ZVV01 in der Benutzergruppe ZTHEO. Der folgende Screenshot zeigt den Selection Screen der Query, sowie die Listausgabe. Inhaltlich gibt die Query Vertriebsdaten aus (Join aus VBAK und VBAP).
 
 ![LINQToERP-Queries_001](/img/content/LINQToERP-Queries_001.png){:class="img-responsive"}
 
@@ -35,7 +35,7 @@ Wie der folgende Code-Ausschnitt zeigt, bietet die DataContext-Klasse nun eine F
 
 ![LINQToERP-Queries_006](/img/content/LINQToERP-Queries_006.png){:class="img-responsive"}
 
-Die beiden Übergabe-Parameter entsprechen den Range-Objekten wie sie bereits in Kapitel [Beispiel für das Aufrufen einer Query](../sap-queries/beispiel-fuer-das-aufrufen-einer-query)  vorgestellt wurden. Hier folgt nun der Code für die Ansteuerung. Als Variable dienen Textboxen (siehe folgender Screenshot).
+Die beiden Übergabe-Parameter entsprechen den Range-Objekten wie sie bereits in Abschnitt [Beispiel für das Aufrufen einer Query](../sap-queries/beispiel-fuer-das-aufrufen-einer-query)  vorgestellt wurden. Hier folgt nun der Code für die Ansteuerung. Als Variable dienen Textboxen (siehe folgender Screenshot).
 
 <details>
 <summary>[C#]</summary>

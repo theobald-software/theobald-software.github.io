@@ -19,7 +19,7 @@ Zunächst wird ein BWCube-Objekt mit Hilfe der CreateCube-Funktion gebildet. Der
 
 Das Cube-Objekt bietet eine Collection für alle enthaltenen Dimensionen (*Dimensions*) und für alle enthaltenen Kennzahlen (*Measures*). Die Eigenschaft *SelectForFlatMDX* definiert, ob die jeweilige Komponente in der Egebnismenge enthalten sein soll. Sie wird im Beispiel auf *true* gesetzt. Bitte beachten Sie, dass die Benennung der Kennzahlen durch die Query-Generierung im Designer nicht den originalen, technischen Namen folgt, daher werden die Kennzahlen hier im Beispiel über die Ordinalzahl und nicht über den Namen angesprochen.
 
-Um die Variable mit Werten zu füllen, wird sie über die Variables-Collection angesprochen. Hinter einer Variablen liegen immer Range-Tabellen, die wir bereits aus dem SAP Query Kapitel kennen.
+Um die Variable mit Werten zu füllen, wird sie über die Variables-Collection angesprochen. Hinter einer Variablen liegen immer Range-Tabellen, die wir bereits aus dem SAP Query Abschnitt kennen.
 
 Die BW-Query kann über *Execute()* ausgeführt werden und liefert eine Tabelle vom Typ DataTable zurück. Der Screenshot des Beispiels zeigt die Ergebnismenge im Grid.
 

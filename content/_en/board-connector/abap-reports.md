@@ -16,7 +16,7 @@ The following section describes the functions of the Report Component of BOARD C
 Basic BOARD Connector the knowledge is required to understand the following sections. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with table](./getting-started-table). <br>
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with table](./getting-started-bc). <br>
 
 
 

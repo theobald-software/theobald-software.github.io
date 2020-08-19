@@ -21,7 +21,7 @@ Mit dem BCS Connector kann der Anwender mit Hilfe der Standard SharePoint Funkti
 
 Mit dem BCS Connector Designer entwickeln Sie schnell und einfach Business Connectivity Services (BCS) Modelle auf Basis eines SAP Business Objektes, eines Funktionsbausteins oder einer Tabelle. Zur Laufzeit aktiviert der BCS Connector die Interaktion zwischen dem SharePoint Business Connectivity Service und Ihrem SAP System. Mit dem eingebauten Single Sign-On kann jeder Benutzer sicher und nachvollziehbar auf Ihr SAP System zugreifen.
 
-Die Online Hilfe für den BCS Connector beinhaltet die nachfolgenden Kapitel:
+Die Online Hilfe für den BCS Connector beinhaltet die nachfolgenden Abschnitt:
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

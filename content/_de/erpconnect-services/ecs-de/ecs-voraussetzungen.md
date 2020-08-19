@@ -12,6 +12,6 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecs-voraussetzungen
 ---
 
-Dieses Kapitel beschreibt die Voraussetzungen für die ERPConnect Services Runtime sowie die Installation.
+Dieses Abschnitt beschreibt die Voraussetzungen für die ERPConnect Services Runtime sowie die Installation.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

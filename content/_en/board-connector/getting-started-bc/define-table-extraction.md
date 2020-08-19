@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-table-02
+ref: bc-getting-started-bc-02
 layout: page
 title: Step 2 - Define a Table Extraction
 description: Step 2 - Define a Table Extraction
 product: board-connector
-parent: getting-started-table
+parent: getting-started-bc
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

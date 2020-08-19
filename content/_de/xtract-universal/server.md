@@ -12,6 +12,6 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
 
-Dieses Kapitel beinhaltet Informationen zum Thema Server und Servereinstellungen.
+Dieses Abschnitt beinhaltet Informationen zum Thema Server und Servereinstellungen.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -15,6 +15,6 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-open-hub-service
 Der folgende Abschnitt beschreibt die Anwendung der BOARD Connector OHS Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-bc) beschrieben.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

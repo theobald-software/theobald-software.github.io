@@ -14,6 +14,6 @@ old_url: /ECS-Core-DE/default.aspx?pageid=nintex_workflow_cloud
 
 SAP-Integration mit der Nintex Workflow Cloud (NWC) Plattform wird voll unterstützt mit ECS Core.
 
-Mit dem in der NWC integrierten Nintex Xtensions Framework können REST Services, die in eine OpenAPI Definition exportiert wurden, als benutzerdefinierte Konnektoren eingespielt werden. Die Vorgehensweise dazu wird in den folgenden Kapiteln beschrieben. 
+Mit dem in der NWC integrierten Nintex Xtensions Framework können REST Services, die in eine OpenAPI Definition exportiert wurden, als benutzerdefinierte Konnektoren eingespielt werden. Die Vorgehensweise dazu wird in den folgenden Abschnittn beschrieben. 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

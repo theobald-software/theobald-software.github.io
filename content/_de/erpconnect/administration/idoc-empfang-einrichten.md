@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=idoc-empfang-einrichten
 ---
 
-In dem Beispielprogramm, das Sie in Kapitel [Ein ORDER-IDoc versenden](../idocs-senden-und-empfangen/beispiel-fuer-das-senden-eines-idocs) finden, wird aus einem externen System ein IDoc an das SAP-System gesendet. Um das dort gesendete IDoc auch wirklich zu einem Kundenauftrag weiter zu verarbeiten, sind nur die zwei folgenden Schritte nötig.
+In dem Beispielprogramm, das Sie in Abschnitt [Ein ORDER-IDoc versenden](../idocs-senden-und-empfangen/beispiel-fuer-das-senden-eines-idocs) finden, wird aus einem externen System ein IDoc an das SAP-System gesendet. Um das dort gesendete IDoc auch wirklich zu einem Kundenauftrag weiter zu verarbeiten, sind nur die zwei folgenden Schritte nötig.
 
 **Schritt 1: Partnervereinbarung**
 

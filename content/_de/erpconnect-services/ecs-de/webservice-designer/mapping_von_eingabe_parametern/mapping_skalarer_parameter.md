@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=mapping_skalarer_parameter
 ---
 
-In diesem Kapitel erläutern wir das Vorgehen für das Mapping skalarer Eingabe-Parameter einer WebService-Operation - das bedeutet Parameter mit einem Einzelwert - auf verschiedene Eingabe-Parameter eines SAP Funktionsbausteins. 
+In diesem Abschnitt erläutern wir das Vorgehen für das Mapping skalarer Eingabe-Parameter einer WebService-Operation - das bedeutet Parameter mit einem Einzelwert - auf verschiedene Eingabe-Parameter eines SAP Funktionsbausteins. 
 
 **Skalare Parameter auf Struktur-Parameter mappen**
 

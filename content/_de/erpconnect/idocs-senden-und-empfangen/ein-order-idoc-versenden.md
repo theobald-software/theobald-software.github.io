@@ -15,7 +15,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=ein-order-idoc-versenden
 
 Wir haben bereits in einem anderen Beispiel das Senden von IDocs behandelt. Dieses Mal wollen wir allerdings ein etwas komplexeres IDoc behandeln, nämlich ORDERS01, um damit einen Kundenauftrag anzulegen.
 
-Es sind einige Voraussetzungen nötig, damit das SAP-System das IDoc auch wirklich zu einem Auftrag weiterverarbeitet. Diese Schritte sind im Administrationskapitel für Sie zusammengefasst.
+Es sind einige Voraussetzungen nötig, damit das SAP-System das IDoc auch wirklich zu einem Auftrag weiterverarbeitet. Diese Schritte sind im AdministrationsAbschnitt für Sie zusammengefasst.
 
 Nach dem Verbinden mit dem SAP-System gibt es zwei Möglichkeiten ein IDoc-Objekt zu erstellen, entweder mit *CreateIdoc* oder mit *CreateEmptyIdoc*. Im ersten Fall werden alle Kind-Segmente bereits gefüllt. Bei einem ORDERS-IDoc ist es aber sinnvoll, *CreateEmptyIdoc* zu nutzen, um nicht so viele leere Segmente, die gar nicht genutzt werden, an das IDoc zu hängen.
 

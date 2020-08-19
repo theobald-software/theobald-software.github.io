@@ -35,6 +35,6 @@ In der unteren Übersicht finden Sie, welche Komponente für die Datenextraktion
 | OHS         |     | X  |
 | ODP         | X   | X |
 
-Hier finden Sie die folgenden Kapitel:
+Hier finden Sie die folgenden Abschnitt:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

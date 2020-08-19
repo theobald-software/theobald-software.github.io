@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=mapping_struktureller_parameter
 ---
 
-In diesem Kapitel erläutern wir das Vorgehen für das Mapping von Struktur-Parametern einer WebService-Operation, also Parametern, die sich auf eine Datenstruktur beziehen, auf verschiedene Eingabe-Parameter eines SAP Funktionsbausteins. 
+In diesem Abschnitt erläutern wir das Vorgehen für das Mapping von Struktur-Parametern einer WebService-Operation, also Parametern, die sich auf eine Datenstruktur beziehen, auf verschiedene Eingabe-Parameter eines SAP Funktionsbausteins. 
 
 **Struktur-Parameter auf Struktur-Parameter mappen**
 

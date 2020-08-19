@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=tableau-mit-odata
 ---
 
-In diesem Kapitel beschreiben wir die Integration mit Tableau über OData. 
+In diesem Abschnitt beschreiben wir die Integration mit Tableau über OData. 
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

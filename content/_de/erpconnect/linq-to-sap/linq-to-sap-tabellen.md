@@ -13,7 +13,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-tabellen
 
 **Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis LINQTable**
 
-Anknüpfend an das letzte Teilkapitel öffnet sich nun die Suchmaske für die Tabellenauswahl. Übernehmen Sie die gewünschte Tabelle, indem Sie mit OK bestätigen.
+Anknüpfend an das letzte TeilAbschnitt öffnet sich nun die Suchmaske für die Tabellenauswahl. Übernehmen Sie die gewünschte Tabelle, indem Sie mit OK bestätigen.
 
 ![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive"}
 

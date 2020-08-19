@@ -35,7 +35,7 @@ Die Werte in der *Field* und der *Type* Spalte basieren auf der SAP-Tabellendefi
 
 Ändern Sie die Werte der Entitätseigenschaften wie im Beispiel unten dargestellt. Dies versetzt Sie in die Lage, benutzerfreundliche bzw. aussagekräftigere Namen für die Eigenschaften zu vergeben. Diese werden dann später im SharePoint UI angezeigt. 
 
-Für weiterführende Informationen lesen Sie die Kapitel [Entitätsdetails](./bcs-eine-neue-entitaet-erstellen/bcs-entitaetsdetails) und [Lokalisierung](./bcs-eine-neue-entitaet-erstellen/bcs-lokalisierung).
+Für weiterführende Informationen lesen Sie die Abschnitt [Entitätsdetails](./bcs-eine-neue-entitaet-erstellen/bcs-entitaetsdetails) und [Lokalisierung](./bcs-eine-neue-entitaet-erstellen/bcs-lokalisierung).
 
 ![BCS-Table-Entity-MAKT-With-Changed-Properties](/img/content/BCS-Table-Entity-MAKT-With-Changed-Properties.png){:class="img-responsive"}
 
@@ -45,7 +45,7 @@ Die ‘Read Table’ Methode verweist auf die 'Finder' Methode in BCS und gibt a
 
 Sie können eine vorhandene Methode mit der *Edit* Schaltfläche bearbeiten. In diesem Beispiel, unter Verwendung der SAP-Tabelle 'MAKT', ändern Sie die 'Read Table' Methode durch das Hinzufügen eines Filters, sodass die Methode nur Datensätze zurückgibt, bei denen die Beschreibung in der gewählten Sprache nicht leer ist.
 
-Für weiterführende Informationen lesen Sie das Kapitel [Entitätsmethoden](./bcs-eine-neue-entitaet-erstellen/bcs-entitaetsmethoden).<br>
+Für weiterführende Informationen lesen Sie das Abschnitt [Entitätsmethoden](./bcs-eine-neue-entitaet-erstellen/bcs-entitaetsmethoden).<br>
 Wählen Sie die 'Read Table' Methode und betätigen Sie dann die *Edit *Schaltfläche. Das *Edit Method* Dialogfenster wird geöffnet.
 
 ![BCS-Table-Entity-Edit-Method-01](/img/content/BCS-Table-Entity-Edit-Method-01.png){:class="img-responsive"}

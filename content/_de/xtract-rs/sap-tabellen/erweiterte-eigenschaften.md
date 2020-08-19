@@ -23,7 +23,7 @@ Die einzelnen Parameter haben folgende Bedeutung:
 Gibt die maximale Anzahl der extrahierten Datensätze an. 0 steht für unlimitiert.
 
 **Custom Function**<br>
-Der Name der kundeneigenen Funktion (siehe nächstes Teilkapitel).
+Der Name der kundeneigenen Funktion (siehe nächstes TeilAbschnitt).
 
 **Use Custom Function**<br>
 Definiert, ob der SAP-Standard-Baustein oder der kundeneigene Baustein genutzt werden soll.

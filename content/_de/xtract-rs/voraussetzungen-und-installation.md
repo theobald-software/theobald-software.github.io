@@ -19,6 +19,6 @@ Weitere Informationen hierzu finden Sie in den nachfolgenden Abschnitten.
 ![client_server_architektur_xrs](/img/content/xrs/client_server_architektur_xrs.png){:class="img-responsive"}
 
 
-Diese Kapitel enthält Informationen zum Thema Systemvoraussetzungen und Installation.
+Diese Abschnitt enthält Informationen zum Thema Systemvoraussetzungen und Installation.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

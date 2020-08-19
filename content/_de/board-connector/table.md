@@ -13,6 +13,6 @@ lang: de_DE
 
 Mit der Komponente *SAP Table or View* lassen sich Inhalte aus SAP Tabellen und Views abziehen. 
 
-Der Einstieg in die Komponente und die Grundfunktionalitäten sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) erläutert.    
+Der Einstieg in die Komponente und die Grundfunktionalitäten sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-bc) erläutert.    
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

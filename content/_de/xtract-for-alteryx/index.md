@@ -34,6 +34,6 @@ In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- u
 | Hierarchy   |     | R  | 
 
 
-Diese Hilfe beinhaltet folgende Kapitel:
+Diese Hilfe beinhaltet folgende Abschnitt:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

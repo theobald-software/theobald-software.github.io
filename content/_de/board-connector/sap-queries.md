@@ -15,7 +15,7 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=sap-queries
 Der folgende Abschnitt beschreibt die Anwendung der  BOARD Connector Query Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-table) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte-mit-bc) beschrieben.
 
 {: .box-note}
 **Hinweis** Mit dem Begriff Query ist keine BW Query sondern eine "normale" Query gemeint, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>

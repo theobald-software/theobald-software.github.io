@@ -36,7 +36,7 @@ Bitte speichern und aktivieren Sie die Tabelle.
 
 **Schritt 2 - Baustein anlegen**
 
-Legen Sie den Baustein an, wie bereits im letzten Kapitel beschrieben. Bitte beachten Sie die leicht abweichenden Import / Export und Tabellen-Parameter wie in den folgenden Screenshots gezeigt.
+Legen Sie den Baustein an, wie bereits im letzten Abschnitt beschrieben. Bitte beachten Sie die leicht abweichenden Import / Export und Tabellen-Parameter wie in den folgenden Screenshots gezeigt.
 
 Den ABAP-Code finden Sie in den folgenden Dateien im Installationsordner:
 

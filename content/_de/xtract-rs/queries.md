@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-RS-DE/default.aspx?pageid=queries
 ---
 
-Dieses Kapitel zeigt, wie man ein DataSet anlegen kann, das auf einer SAP-Queries basiert. Je nach dem, ob Sie ein neues DataSet in einem bestehenden Bericht anlegen, oder den Neuanlage-Wizard nutzen (Button *QueryBuilder*) sehen die Abbildungen etwas anders aus. Das Prinzip ist aber immer genau dasselbe.
+Dieses Abschnitt zeigt, wie man ein DataSet anlegen kann, das auf einer SAP-Queries basiert. Je nach dem, ob Sie ein neues DataSet in einem bestehenden Bericht anlegen, oder den Neuanlage-Wizard nutzen (Button *QueryBuilder*) sehen die Abbildungen etwas anders aus. Das Prinzip ist aber immer genau dasselbe.
 
 Die wichtigsten Transaktionen für das Anlegen von Queries im SAP sind SQ01/SQ02/SQ03.
 

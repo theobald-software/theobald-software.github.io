@@ -13,9 +13,9 @@ old_url: /ERPConnect-DE/default.aspx?pageid=batch-input-hintergrundverarbeitung
 
 **Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis BatchInputCreatePurchaseOrder** 
 
-Im letzten Teilkapitel haben wir einen Absprung in den SAP GUI entwickelt; das nachfolgende Beispiel hingegen zeigt eine Verarbeitung, die komplett im Hintergrund stattfinden soll, nämlich das Anlegen einer Lieferanten-Bestellung mit der Transaktion ME21.
+Im letzten TeilAbschnitt haben wir einen Absprung in den SAP GUI entwickelt; das nachfolgende Beispiel hingegen zeigt eine Verarbeitung, die komplett im Hintergrund stattfinden soll, nämlich das Anlegen einer Lieferanten-Bestellung mit der Transaktion ME21.
 
-Dazu nutzen wir den TransactionRecorder, um gleich die wichtigsten Transaktionsschritte als VB- oder C#-Quellocde automatisch zu erstellen (siehe Kapitel [TransactionRecorder](../tools/transactionrecorder)).
+Dazu nutzen wir den TransactionRecorder, um gleich die wichtigsten Transaktionsschritte als VB- oder C#-Quellocde automatisch zu erstellen (siehe Abschnitt [TransactionRecorder](../tools/transactionrecorder)).
 
 Der Code kann nicht 1 zu 1 übernommen werden, sondern muss noch minimal angepasst werden. Die angepassten Stellen sind im Folgenden markiert. Am Ende des Codes sehen Sie auch, wie die Rückgabe-Nachrichten in Form von BatchReturn Objekten über die Returns-Collection ausgewertet werden.
 

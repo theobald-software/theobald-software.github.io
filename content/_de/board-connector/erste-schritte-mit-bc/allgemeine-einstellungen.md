@@ -1,14 +1,15 @@
 ---
-ref: bc-advanced-techniques-04
+ref: bc-getting-started-bc-05
 layout: page
 title: Allgemeine Einstellungen
 description: Allgemeine Einstellungen
 product: board-connector
-parent: fortgeschrittene-techniken
+parent: erste-schritte-mit-bc
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=allgemeine-einstellungen
+progressstate: 5
 ---
 
 Die allgemeinen Einstellungen sind unabhängig vom Extraktionstyp.
@@ -68,4 +69,4 @@ In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. 
 
 ### Security Tab
 
-Das Security Tab ist im Kapitel [Zugriffsverwaltung](https://help.theobald-software.com/de/board-connector/sicherheit/zugriffsverwaltung) beschrieben. 
+Das Security Tab ist im Abschnitt [Zugriffsverwaltung](https://help.theobald-software.com/de/board-connector/sicherheit/zugriffsverwaltung) beschrieben. 

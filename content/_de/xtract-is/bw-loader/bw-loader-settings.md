@@ -29,10 +29,10 @@ Ist in dieses Textfeld der Name einer BW-Prozesskette eingetragen, wird diese na
 Standardmäßig wird das InfoPackage beim Starten des SSIS-Packete ebenfalls mit gestartet. Wenn diese Option gesetzt ist, passiert das nicht. Die Komponente wartet dann, bis das Infopackage im BW von Hand gestartet wurde.
 
 **Use external Notifier**<br>
-Siehe Kapitel [Externe Benachrichtigung](./externe-benachrichtigung) 
+Siehe Abschnitt [Externe Benachrichtigung](./externe-benachrichtigung) 
 
 **Request ID variable**<br>
-Siehe Kapitel [Externe Benachrichtigung](./externe-benachrichtigung)
+Siehe Abschnitt [Externe Benachrichtigung](./externe-benachrichtigung)
 
 **Debug Details**<br>
 Erzeugt mehr und detailliertere Protokolleinträge, die für die Fehlersuche genutzt werden können.

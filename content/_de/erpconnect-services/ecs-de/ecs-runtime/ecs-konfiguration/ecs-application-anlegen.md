@@ -21,7 +21,7 @@ Um eine neue ECS Service Application anzulegen, klicken Sie auf *New -> ERPConne
 
 Für den Einsatz individueller SAP-Zugangsdaten pro angemeldetem SharePoint-Benutzer unterstützt ERPConnect Services die Verwendung der *Secure Store Services*. Hier nutzen wir eine schon vorhandene Secure Store Services Application. Alternativ können Sie auch den Technial Access (SAP-Benutzer und Passwort) verwenden.
 
-Das Kapitel [Secure Store Application anlegen](./ecs-secure-store-application-anlegen)  beschreibt, wie eine Secure Store Application für ERPConnect Services angelegt und eingerichtet wird.<br>
+Das Abschnitt [Secure Store Application anlegen](./ecs-secure-store-application-anlegen)  beschreibt, wie eine Secure Store Application für ERPConnect Services angelegt und eingerichtet wird.<br>
 Weitere Infos zur Authentifizierung finden Sie unter [SAP-Authentifizierung](../ecs-sap-verbindung/ecs-sap-authentifizierung).
 
 ![ECS-Create-Application-02](/img/content/ECS-Create-Application-02.png){:class="img-responsive"}

@@ -1,6 +1,6 @@
 Die Server nutzen verschiedene Ports für die Kommunikation. Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
 Der Configuration-Server kommuniziert mit dem Designer über einen dedizierten Port. <br>
-Der jeweils verwendete Port hat einen Default-Wert, der überschrieben werden kann. Weitere Infos dazu finden Sie im Kapitel Server Einstellungen.
+Der jeweils verwendete Port hat einen Default-Wert, der überschrieben werden kann. Weitere Infos dazu finden Sie im Abschnitt Server Einstellungen.
 
 Sollte der Service nicht starten, weil der Default-Port belegt ist, öffnen Sie die Datei *general.json* in den Ordnern:
 

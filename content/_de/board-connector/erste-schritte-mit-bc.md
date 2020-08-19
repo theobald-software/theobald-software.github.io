@@ -1,0 +1,19 @@
+---
+ref: board-connector-02
+layout: page
+title: Erste Schritte mit Table
+description: Erste Schritte mit Table
+product: board-connector
+parent: board-connector
+childidentifier: erste-schritte-mit-bc
+permalink: /:collection/:path
+weight: 2
+lang: de_DE
+old_url: /BOARD-Connector-DE/default.aspx?pageid=erste-schritte-mit-bc
+---
+
+Bitte beachten Sie, dass dieses Abschnitt nicht nur die Details zur SAP-Tabellenextraktion mit der Table Komponente enthält, sondern gleichzeitig als allgemeine Einführung in den Board Connector zu sehen ist.
+
+Es ist also Voraussetzung für alle nachfolgenden Abschnitt.
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

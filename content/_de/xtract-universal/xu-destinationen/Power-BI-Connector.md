@@ -14,7 +14,7 @@ progressstate: 5
 ---
 ### Einführung
 
-Dieses Kapitel beinhaltet Informationen zu Verbindung von Power BI und Xtract Universal über die  *Power BI Connector* Zielumgebung von Xtract Universal. <br>
+Dieses Abschnitt beinhaltet Informationen zu Verbindung von Power BI und Xtract Universal über die  *Power BI Connector* Zielumgebung von Xtract Universal. <br>
 
 Die Zielumgebung *Power BI Connector* bietet zwei Wege zum Verbinden von Power BI mit Xtract Universal:
 

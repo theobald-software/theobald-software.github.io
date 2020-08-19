@@ -14,6 +14,6 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=bi-notification-server
 
 Mit Hilfe des BI Notification Servers können SSIS-Pakete aus dem SAP BW System heraus gestartet werden. Dabei werden für die Steuerung nötige Variablen übergeben.
 
-Diese Kapitel zeigen den Einsatz des BI Notification Servers.
+Diese Abschnitt zeigen den Einsatz des BI Notification Servers.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

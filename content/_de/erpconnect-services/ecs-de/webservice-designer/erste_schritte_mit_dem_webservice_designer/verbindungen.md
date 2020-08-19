@@ -12,6 +12,6 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=verbindungen
 ---
 
-Die nachfolgenden Kapitel geben Ihnen eine Einführung in die Funktionsweise des WebService Designers anhand von leicht vollziehbaren Beispielen.
+Die nachfolgenden Abschnitt geben Ihnen eine Einführung in die Funktionsweise des WebService Designers anhand von leicht vollziehbaren Beispielen.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

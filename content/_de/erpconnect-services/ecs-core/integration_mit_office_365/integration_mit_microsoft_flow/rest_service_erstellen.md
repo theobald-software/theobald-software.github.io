@@ -13,4 +13,4 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=rest_service_erstellen
 
 Der erste Schritt für die SAP Integration mit Flow ist die Erstellung eines REST Webservice mit dem [WebService Designer](../../webservices). 
 
-Für das Szenario, das in den folgenden Kapiteln beschrieben wird, verwenden wir das Beispiel zur Erstellung von Bestellanforderungen (BANF) in SAP. Die Erstellung des entsprechenden Webservices wird [hier](../../webservices/ecsc-rest-webservices) beschrieben.
+Für das Szenario, das in den folgenden Abschnittn beschrieben wird, verwenden wir das Beispiel zur Erstellung von Bestellanforderungen (BANF) in SAP. Die Erstellung des entsprechenden Webservices wird [hier](../../webservices/ecsc-rest-webservices) beschrieben.

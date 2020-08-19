@@ -1,17 +1,17 @@
 ---
 ref: board-connector-02
 layout: page
-title: Getting Started with Table
-description: Getting Started with Table
+title: Getting Started with BOARD Connector
+description: Getting Started with  BOARD Connector
 product: board-connector
 parent: board-connector
-childidentifier: getting-started-table
+childidentifier: getting-started-bc
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
 ---
 
-This section contains the details of the SAP table extraction with the Xtract Table component and a general introduction to BOARD Connector.
+This sections contains the details of the SAP table extraction with the Table component and a general introduction to BOARD Connector.
 
 This section is therefore a prerequisite for all subsequent sections.
 

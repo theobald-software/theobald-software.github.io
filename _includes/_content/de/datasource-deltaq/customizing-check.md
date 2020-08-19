@@ -1,4 +1,4 @@
-Füllen Sie nun noch oben rechts die Felder aus, wie im Kapitel [DeltaQ Customizing](../sap-customizing/customizing-fuer-deltaq) angelegt. 
+Füllen Sie nun noch oben rechts die Felder aus, wie im Abschnitt [DeltaQ Customizing](../sap-customizing/customizing-fuer-deltaq) angelegt. 
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 

@@ -11,6 +11,6 @@ weight: 1
 lang: de_DE
 ---
 
-Willkommen in der Online-Hilfe von ECS Core. Sie finden hier folgende Kapitel:
+Willkommen in der Online-Hilfe von ECS Core. Sie finden hier folgende Abschnitt:
 
 {% include _content/table-of-contents.html parent="ecs-core" collection=site.de %}

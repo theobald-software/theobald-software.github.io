@@ -22,6 +22,6 @@ Die Servicefunktionalitäten decken die unterschiedlichsten Entwickleranforderun
 
 ![ECS-Architecture](/img/content/ECS-Architecture.png){:class="img-responsive"}
 
-Die Online-Hilfe für die ERPConnect Service (ECS) Runtime beinhaltet die nachfolgenden Kapitel:
+Die Online-Hilfe für die ERPConnect Service (ECS) Runtime beinhaltet die nachfolgenden Abschnitt:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

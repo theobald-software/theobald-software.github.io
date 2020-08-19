@@ -14,7 +14,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=idocs-als-xml-verarbeiten
 **The sample code is located in the ERPConnect installation directory in the in IdocSendXML directory**
 
 Die IDoc-Klassen von ERPConnect bieten an etlichen Stellen Unterstützung für den Einsatz von XML. Wir unterscheiden hier Schema-Dateien, die definieren wie ein IDoc auszusehen hat, und Daten-Dateien, die den eigentlichen Inhalt enthalten.<br>
-Die beiden nachfolgenden Abbildungen zeigen einen Auszug der Schema-Datei ORDERS01.xsd und der Daten-Datei OrderIdoc.xml (beide sind im Beispiel-Verzeichnis zu finden). Bitte beachten Sie auch Kapitel IDoc-Schema-Generator.
+Die beiden nachfolgenden Abbildungen zeigen einen Auszug der Schema-Datei ORDERS01.xsd und der Daten-Datei OrderIdoc.xml (beide sind im Beispiel-Verzeichnis zu finden). Bitte beachten Sie auch Abschnitt IDoc-Schema-Generator.
 
 {% highlight xml %}
 xml version="1.0" encoding="ISO-8859-1" ?>

@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=bcs-berechtigungen-einstellen
 ---
 
-In einem SharePoint System speichert der BCS Metadata Store alle Informationen über Modelle, externe Systeme, externe Inhaltstypen und deren Methoden. Im vorhergehenden Kapitel wurde ein Modell mit einem externen Inhaltstyp aus SAP im BCS Metadata Store veröffentlicht. Damit der Benutzer auf die externen Daten zugreifen kann, müssen die Berechtigungen im BCS Metadata Store gesetzt werden.
+In einem SharePoint System speichert der BCS Metadata Store alle Informationen über Modelle, externe Systeme, externe Inhaltstypen und deren Methoden. Im vorhergehenden Abschnitt wurde ein Modell mit einem externen Inhaltstyp aus SAP im BCS Metadata Store veröffentlicht. Damit der Benutzer auf die externen Daten zugreifen kann, müssen die Berechtigungen im BCS Metadata Store gesetzt werden.
 
 Im BCS Connector Designer können Sie die Berechtigungsstufen des aktiven Users innerhalb des BCS Metadata Store einsehen.
 

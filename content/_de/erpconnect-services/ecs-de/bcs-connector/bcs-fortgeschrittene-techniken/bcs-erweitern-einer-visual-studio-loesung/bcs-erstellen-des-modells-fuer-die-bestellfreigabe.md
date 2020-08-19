@@ -21,7 +21,7 @@ Zum Konfigurieren der SharePoint Verbindung betätigen Sie die *Edit SharePoint*
 
 Zum Konfigurieren der SAP Verbindung betätigen Sie die Schaltfläche neben *SAP R/3 Connection*. 
 
-Die Statuszeile am unteren Rand des BCS Connector Designer Fensters sollte nun anzeigen, dass beide Verbindungen eingerichtet sind.  Für detaillierte Informationen lesen Sie das Kapitel [Verbindungen](../../bcs-erste-schritte/bcs-verbindungen).
+Die Statuszeile am unteren Rand des BCS Connector Designer Fensters sollte nun anzeigen, dass beide Verbindungen eingerichtet sind.  Für detaillierte Informationen lesen Sie das Abschnitt [Verbindungen](../../bcs-erste-schritte/bcs-verbindungen).
 
 Um ein neues BCS Modell zu erstellen, ändern Sie den Standardnamen im Model Feld. Ändern Sie ebenfalls die Standardnamen für *LOB System* und *LOB System Instance* in einen anderen Wert, z.B.:
 

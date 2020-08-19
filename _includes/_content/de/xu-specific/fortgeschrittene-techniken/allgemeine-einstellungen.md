@@ -61,4 +61,4 @@ In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. 
 
 ### Security Tab
 
-Das Security Tab ist im Kapitel [Zugriffsverwaltung](../sicherheit/zugriffsverwaltung) beschrieben. 
+Das Security Tab ist im Abschnitt [Zugriffsverwaltung](../sicherheit/zugriffsverwaltung) beschrieben. 

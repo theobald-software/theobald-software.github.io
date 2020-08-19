@@ -11,6 +11,6 @@ weight: 2
 lang: de_DE
 ---
 
-Dieses Kapitel stellt eine allgemeine Einführung in die Erstellung von Extraction mit Xtract for Alteryx dar und ist damit Voraussetzung die nachfolgenden Kapitel.
+Dieses Abschnitt stellt eine allgemeine Einführung in die Erstellung von Extraction mit Xtract for Alteryx dar und ist damit Voraussetzung die nachfolgenden Abschnitt.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

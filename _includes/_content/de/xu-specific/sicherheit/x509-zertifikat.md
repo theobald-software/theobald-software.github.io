@@ -1,5 +1,5 @@
 Einige der Funktionalitäten unserer Software erfordern die Installation eines X.509-Zertifikats für Datensicherheit und -verschlüsselung. <br>
-In diesem Kapitel werden die Voraussetzungen für die Installation eines X.509-Zertifikats beschrieben.
+In diesem Abschnitt werden die Voraussetzungen für die Installation eines X.509-Zertifikats beschrieben.
 
 Lassen Sie ein TLS Zertifikat von Ihrem IT Netzwerk Team erstellen. Stellen Sie bitte folgendes sicher:
 
