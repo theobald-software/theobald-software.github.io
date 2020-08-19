@@ -15,7 +15,7 @@ progressstate: 5
 2. Connect the Designer to the BOARD Connector Server and the extraction repository.
 - When BOARD Connector Server is a local server, the server address is then *localhost*.<br>
 The default port (8096) may vary depending on the configuration.  
-![XU3_Designer_Connect](/img/content/board/bc_connect_screen){:class="img-responsive"}
+![XU3_Designer_Connect](/img/content/board/bc_connect_screen.png){:class="img-responsive"}
 - When the BOARD Connector Designer and the BOARD Connector Server are not running on the same machine, type
  in the host name the BOARD Connector Server is running on. Make sure the port is not blocked by your firewall.
 3. If the service is not running on default port 8096 (can be configured in the server settings), specify the port by adding :[port] after the host name.

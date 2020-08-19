@@ -64,7 +64,7 @@ Das abgebildete Beispiel zeigt das SAP-Objekt *MAKT* mit seinem Primärschlüsse
 In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. Der gezeigte Primärschlüssel wird auch in der Destination übernommen. 
 
 {:.box-note}
-*Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
+**Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
 
 
 ### Security Tab

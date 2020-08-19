@@ -14,6 +14,6 @@ progressstate: 5
 
 The Designer features different functionalities for an extraction. 
 
-![Designer](/img/content/xu/xu_designer_main-window.png){:class="img-responsive"}
+![Designer](/img/content/board/bc_designer_main-window.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/advanced-techniques/designer_overview.md %}
