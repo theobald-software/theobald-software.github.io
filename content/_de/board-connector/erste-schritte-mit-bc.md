@@ -1,7 +1,7 @@
 ---
 ref: board-connector-02
 layout: page
-title: Erste Schritte mit Table
+title: Erste Schritte mit BOARD Connector
 description: Erste Schritte mit Table
 product: board-connector
 parent: board-connector
