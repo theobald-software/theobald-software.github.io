@@ -15,7 +15,7 @@ Welcome to the Online Help of the BOARDConnector.
 
 The BOARDConnector is a SAP Connector that makes various SAP objects available in the BOARD Server in pull mode.
 
-### Architektur
+### Architecture
 
 ![BOARDConnector-architecture](/img/content/board/Board.png)
 
