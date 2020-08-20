@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-xu-06
+ref: xu-getting-started-06
 layout: page
 title: Allgemeine Einstellungen
 description: Allgemeine Einstellungen
 product: xtract-universal
-parent: erste-schritte-mit-xu
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 6
 lang: de_DE

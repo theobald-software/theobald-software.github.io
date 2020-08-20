@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-bc-01
+ref: bc-getting-started-01
 layout: page
 title: Step 1 - Connect Designer with Server 
 description: Step 1- Connect Designer with Server
 product: board-connector
-parent: getting-started-bc
+parent: getting-started
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

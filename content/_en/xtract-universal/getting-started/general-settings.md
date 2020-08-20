@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-xu-06
+ref: xu-getting-started-06
 layout: page
 title: General Settings
 description: General Settings
 product: xtract-universal
-parent: getting-started-xu
+parent: getting-started
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

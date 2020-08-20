@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-bc-06
+ref: bc-getting-started-06
 layout: page
 title: Designer - Main Window Overview
 description: Additional Functions in Designer
 product: board-connector
-parent: getting-started-bc
+parent: getting-started
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

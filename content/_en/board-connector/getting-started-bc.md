@@ -5,7 +5,7 @@ title: Getting Started with BOARD Connector
 description: Getting Started with  BOARD Connector
 product: board-connector
 parent: board-connector
-childidentifier: getting-started-bc
+childidentifier: getting-started
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

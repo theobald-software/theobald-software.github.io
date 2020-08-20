@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-bc-05
+ref: bc-getting-started-05
 layout: page
 title: Allgemeine Einstellungen
 description: Allgemeine Einstellungen
 product: board-connector
-parent: erste-schritte-mit-bc
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 5
 lang: de_DE

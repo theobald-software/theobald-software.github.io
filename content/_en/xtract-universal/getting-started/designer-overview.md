@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-xu-05
+ref: xu-getting-started-05
 layout: page
 title: Designer - Main Window Overview
 description: Additional Functions in Designer
 product: xtract-universal
-parent: getting-started-xu
+parent: getting-started
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

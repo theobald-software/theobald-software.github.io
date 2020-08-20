@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=sqp-queries
 Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal Query Komponente. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte-mit-xu) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.
 
 {: .box-note}
 **Hinweis** Mit dem Begriff Query ist keine BW Query sondern eine "normale" Query gemeint, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>

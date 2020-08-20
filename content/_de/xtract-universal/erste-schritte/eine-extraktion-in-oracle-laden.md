@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-xu-04
+ref: xu-getting-started-04
 layout: page
 title: 4.  Extraktion in eine Datenbank laden
 description: Schritt 4 - Eine Extraktion in eine Datenbank laden
 product: xtract-universal
-parent: erste-schritte-mit-xu
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 4
 progressstate: 5

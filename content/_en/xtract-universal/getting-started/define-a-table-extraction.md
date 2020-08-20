@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-xu-02
+ref: xu-getting-started-02
 layout: page
 title: 2. Defining a Table Extraction
 description: Step 2 - Define a Table Extraction
 product: xtract-universal
-parent: getting-started-xu
+parent: getting-started
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

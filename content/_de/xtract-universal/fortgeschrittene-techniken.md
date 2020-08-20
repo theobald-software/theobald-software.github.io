@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=fortgeschrittene-techniken
 progressstate: 5
 ---
 
-Der Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte-mit-xu) bietet eine Einführung in die Grundlagen von Xtract Universal am Beispiel der Komponente Xtract Table. 
+Der Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) bietet eine Einführung in die Grundlagen von Xtract Universal am Beispiel der Komponente Xtract Table. 
 
 Der folgende Abschnitt ermöglicht eine tiefere Einsicht in komplexere Aspekte von Xtract Universal.
 

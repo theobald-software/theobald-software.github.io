@@ -12,7 +12,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-The section [Getting Started with Xtract Universal](./getting-started-xu) provides a basic introduction to Xtract Universal using Xtract Table component as an example.  
+The section [Getting Started with Xtract Universal](./getting-started) provides a basic introduction to Xtract Universal using Xtract Table component as an example.  
 
 The following section provides a deeper insight into more advanced techniques and aspects of Xtract Universal.<br>
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

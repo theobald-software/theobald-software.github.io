@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-xu-01
+ref: xu-getting-started-01
 layout: page
 title: 1. Connecting the Designer with the Server
 description:  1. Connecting the designer with the server
 product: xtract-universal
-parent: getting-started-xu
+parent: getting-started
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

@@ -1,10 +1,10 @@
 ---
-ref: xu-getting-started-xu-05
+ref: xu-getting-started-05
 layout: page
 title: Designer - Hauptfenster Übersicht 
 description: Zusätzliche Funktionen im Designer
 product: xtract-universal
-parent: erste-schritte-mit-xu
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 5
 lang: de_DE

@@ -32,8 +32,8 @@ Sie können auch [reguläre Ausdrücke](https://cs.lmu.edu/~ray/notes/regex/) (4
 ******
 #### Weiterführende Links
 
-- [Allgemeine Einstellungen](../erste-schritte-mit-xu/allgemeine-einstellungen#misc-tab)
+- [Allgemeine Einstellungen](../erste-schritte/allgemeine-einstellungen#misc-tab)
 - [Reguläre Ausdrücke](https://cs.lmu.edu/~ray/notes/regex/)
-- [Designer Hauptfenster Übersicht](../erste-schritte-mit-xu/designer-overview)
+- [Designer Hauptfenster Übersicht](../erste-schritte/designer-overview)
 
  

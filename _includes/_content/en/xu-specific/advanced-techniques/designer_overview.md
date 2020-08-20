@@ -12,7 +12,7 @@ The main window of the Designer consists of three main sections:
 
 Menu Item |Description | Details
 ------------ | ------------ | -------------
-Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started-xu/connect-designer-with-server)
+Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started/connect-designer-with-server)
 Disconnect | Logging off the server | -
 Exit | Exits the Designer | -
 
@@ -22,18 +22,18 @@ Exit | Exits the Designer | -
 
 Menu Item | Description | Details
 ------------ | ------------ | -------------
-New  | Creating a new extraction | [Defining a Table Extraction](../getting-started-xu/define-a-table-extraction)
+New  | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
 Edit | Edit an existing extraction | -
 Delete | Delete an existing extraction | -
 Clone | Clone an existing extraction | -
 Source | Select an existing SAP source system | -
 Destination | Select a destination | [Destinations](../xu-destinations)
 Log | Open extraction log | [Extraction Logging](../logging/extraction-logging)
-Run  | Run a selected extraction | [Running an Extraction](../getting-started-xu/run-an-extraction)
+Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
 Abort | Abort a selected extraction | -
-Clear Result Cache | Clear extraction cache | [Cache results](../getting-started-xu/general-settings#misc-tab)
+Clear Result Cache | Clear extraction cache | [Cache results](../getting-started/general-settings#misc-tab)
 Refresh | Refreshing extraction status | -
-Filter | Define filters or keywords |  [Define Keywords](../getting-started-xu/general-settings#misc-tab)
+Filter | Define filters or keywords |  [Define Keywords](../getting-started/general-settings#misc-tab)
 
 ### Server
 

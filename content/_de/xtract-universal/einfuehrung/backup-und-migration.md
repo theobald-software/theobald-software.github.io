@@ -29,7 +29,7 @@ Standardmäßig: `C:\Program Files\XtractUniversal\config`.
 |Dateiname | Beschreibung |
 |:----|:---|
 |`destinations`| Verzeichnis mit den [Destinationen](../xu-destinationen). Jede `.json`-Datei enthält eine gleichnamige Destination.|
-| `extractions` | Verzeichnis mit den [Extraktionen](../erste-schritte-mit-xu/eine-neue-extraktion-anlegen). Jedes Unterverzeichnis enthält eine gleichnamige Extraktion. |
+| `extractions` | Verzeichnis mit den [Extraktionen](../erste-schritte/eine-neue-extraktion-anlegen). Jedes Unterverzeichnis enthält eine gleichnamige Extraktion. |
 |`server`  | Verzeichnis mit den [Servereinstellungen](../server/server_einstellungen).|
 | `sources` | Verzeichnis mit den[SAP-Verbindungen](./sap-verbindungen-anlegen). Jedes Unterverzeichnis enthält eine gleichnamige Quelle (Source). |
 | `version.txt` | Textdatei mit der Versionsnummer, die mit der aktuellen Konfiguration übereinstimmt. Mehr Details dazu finden Sie auch im Abschnitt [New Installation and Update](./installation-und-update#neuinstallation-und-update).|

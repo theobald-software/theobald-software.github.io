@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-bc-01
+ref: bc-getting-started-01
 layout: page
 title: Schritt 1 - Designer mit dem Server verbinden
 description: Schritt 1 - Designer mit dem Server verbinden
 product: board-connector
-parent: erste-schritte-mit-bc
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

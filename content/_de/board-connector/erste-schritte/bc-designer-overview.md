@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-bc-06
+ref: bc-getting-started-06
 layout: page
 title: Zusätzliche Funktionen im Designer
 description: Zusätzliche Funktionen im Designer
 product: board-connector
-parent: erste-schritte-mit-bc
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 6
 lang: de_DE

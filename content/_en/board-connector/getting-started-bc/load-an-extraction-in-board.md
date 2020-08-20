@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-bc-04
+ref: bc-getting-started-04
 layout: page
 title: Step 4 - Load an Extraction in BOARD
 description: Step 4 - Load an Extraction in BOARD
 product: board-connector
-parent: getting-started-bc
+parent: getting-started
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

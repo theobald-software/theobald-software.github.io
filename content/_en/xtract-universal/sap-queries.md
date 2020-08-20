@@ -16,7 +16,7 @@ The following section describes the functions of the Query Component of Xtract U
 Basic Xtract Universal the knowledge is required to understand the following sections. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started-xu). <br>
+**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
 {: .box-note }
 **Note:** A Query component doesn’t mean a BW Query, but a "normal" query that can be created in the SAP transactions *SQ02* and *SQ01*. 

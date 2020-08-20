@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-bc-02
+ref: bc-getting-started-02
 layout: page
 title: Schritt 2 - Eine neue Extraktion anlegen
 description: Schritt 2 - Eine neue Extraktion anlegen
 product: board-connector
-parent: erste-schritte-mit-bc
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

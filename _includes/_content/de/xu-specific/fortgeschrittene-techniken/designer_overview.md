@@ -12,7 +12,7 @@ Das Hauptfenster vom Designer besteht aus drei Hauptabschnitten:
 
 Menüeintrag |Beschreibung | Details
 ------------ | ------------ | -------------
-Reset Preferences  | Zurücksetzen der Verbindungsparameter zum Server | [Den Designer mit dem Server verbinden](../erste-schritte-mit-xu/designer-mit-dem-server-verbinden#verbindung-zu-einem-server)
+Reset Preferences  | Zurücksetzen der Verbindungsparameter zum Server | [Den Designer mit dem Server verbinden](../erste-schritte/designer-mit-dem-server-verbinden#verbindung-zu-einem-server)
 Disconnect | Abmeldung vom Server | -
 Exit | Beendet den Designer | -
 
@@ -22,18 +22,18 @@ Exit | Beendet den Designer | -
 
 Menüeintrag |Beschreibung | Details
 ------------ | ------------ | -------------
-New  | Neue Extraktion anlegen | [Eine neue Extraktion anlegen](../erste-schritte-mit-xu/eine-neue-extraktion-anlegen)
+New  | Neue Extraktion anlegen | [Eine neue Extraktion anlegen](../erste-schritte/eine-neue-extraktion-anlegen)
 Edit | Vorhandene Extraktion bearbeiten | -
 Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
 Source | Vorhandenes SAP Quellsystem auswählen | -
 Destination | Destination auswählen | [Destinationen](../xu-destinationen)
 Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/extraktion-logging)
-Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte-mit-xu/eine-extraktion-ausfuehren)
+Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
 Abort | Ausgewählte Extraktion abbrechen | -
-Clear Result Cache | Extraktions-Cache leeren | [Cache results](../erste-schritte-mit-xu/allgemeine-einstellungen#misc-tab)
+Clear Result Cache | Extraktions-Cache leeren | [Cache results](../erste-schritte/allgemeine-einstellungen#misc-tab)
 Refresh | Aktualisierung des Extraktionsstatus | -
-Filter | Filter oder Keywords definieren | [Keywords definieren](../erste-schritte-mit-xu/allgemeine-einstellungen#misc-tab)
+Filter | Filter oder Keywords definieren | [Keywords definieren](../erste-schritte/allgemeine-einstellungen#misc-tab)
 
 ### Server
 

@@ -5,7 +5,7 @@ title: Erste Schritte mit Xtract Universal
 description: Erste Schritte mit Xtract Universal
 product: xtract-universal
 parent: xtract-universal
-childidentifier: erste-schritte-mit-xu
+childidentifier: erste-schritte
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

@@ -32,7 +32,7 @@ You can also use regular expressions (4) for filtering. To reset the use of filt
 ******
 #### Related Links
 
-- [General Settings](../getting-started-xu/general-settings#misc-tab)
+- [General Settings](../getting-started/general-settings#misc-tab)
 - [Regular Expressions](https://cs.lmu.edu/~ray/notes/regex/)
-- [Designer Main Window Overview](../getting-started-xu/designer-overview)
+- [Designer Main Window Overview](../getting-started/designer-overview)
 

@@ -1,10 +1,10 @@
 ---
-ref: bc-getting-started-bc-05
+ref: bc-getting-started-05
 layout: page
 title: General Settings
 description: General Settings
 product: board-connector
-parent: getting-started-bc
+parent: getting-started
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

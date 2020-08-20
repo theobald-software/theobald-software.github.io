@@ -18,7 +18,7 @@ DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)*
 This section describes the use of the BOARD Connector DeltaQ Component. The knowledge about the basic usage of BOARD Connector is assumed to follow the instructions.
 
 {: .box-tip }
-**Tip:** Basics of the product BOARD Connector are described in the section **[Getting started with table](./getting-started-bc)**.
+**Tip:** Basics of the product BOARD Connector are described in the section **[Getting started with table](./getting-started)**.
 
 
 

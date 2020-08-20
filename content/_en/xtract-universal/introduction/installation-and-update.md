@@ -43,9 +43,9 @@ The list below shows several most important files that are placed into the defau
 | logs directory| Directory with server and extraction etc. logs. See also section [Logging](../logging). |
 | config directory | Directory containing all SAP connections, extractions, destinations and other settings. See also [Backup and Migration](./backup-and-migration).|
 | powerbi directory| Directory containing files related to [Power BI Connector Destination](../xu-destinations/Power-BI-Connector).|
-| result-cache directory | Directory with extraction cache files, only applicable for pull destinations. See also sections [Pull Destinations](../xu-destinations#pull-and-push-destinations) and [General Settings > Misc. Tab > Cache Result Setting](../getting-started-xu/general-settings#misc-tab).|
+| result-cache directory | Directory with extraction cache files, only applicable for pull destinations. See also sections [Pull Destinations](../xu-destinations#pull-and-push-destinations) and [General Settings > Misc. Tab > Cache Result Setting](../getting-started/general-settings#misc-tab).|
 | xu.exe | Command line tool used for executing extractions. See also section [Scheduling an Extraction](../advanced-techniques/scheduling_extraction). |
-| XtractDesigner.exe | [Xtract Universal Designer](../getting-started-xu/designer-overview) application to create, test and monitor extractions.|
+| XtractDesigner.exe | [Xtract Universal Designer](../getting-started/designer-overview) application to create, test and monitor extractions.|
 | ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing Xtract Universal with all its components from your machine. |
 |XtractUniversalSetup.exe| Setup of the currently installed version. See also [Migrating to a Different Machine](./backup-and-migration#migration-to-a-different-machine).|

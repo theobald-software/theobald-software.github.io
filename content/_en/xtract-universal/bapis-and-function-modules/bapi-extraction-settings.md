@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=run
 ---
 
-The BAPI component contains no other specific settings than the [General Settings](../getting-started-xu/general-settings).
+The BAPI component contains no other specific settings than the [General Settings](../getting-started/general-settings).
