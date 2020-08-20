@@ -27,7 +27,7 @@ Edit | Vorhandene Extraktion bearbeiten | -
 Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
 Source | Vorhandenes SAP Quellsystem auswählen | -
-Destination | Destination auswählen | [Destinationen](../xu-destinationen)
+Destination (nur Xtract Universal) | Destination auswählen | [Destinationen](https://help.theobald-software.com/de/xtract-universal/xu-destinationen)
 Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/extraktion-logging)
 Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
 Abort | Ausgewählte Extraktion abbrechen | -
@@ -44,7 +44,7 @@ Menüeintrag |Beschreibung | Details
 Logs  | Server-Log aufrufen | [Server-Logging](../logging/server-logging)
 Settings | Server-Einstellungen aufrufen | [Server-Einstellungen](../server/server_einstellungen)
 Manage Sources | Verbindung zum Quellsystem bearbeiten | [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen)
-Manage Destinations | Destinationen verwalten | [Destinationen verwalten](../xu-destinationen/ziele-verwalten)
+Manage Destinations (nur Xtract Universal) | Destinationen verwalten | [Destinationen verwalten](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/ziele-verwalten)
 
 ### Security
 
@@ -79,13 +79,13 @@ Clone| Vorhandene Extraktion klonen  |
 Refresh | Aktualisierung des Extraktionsstatus  |
 Filter |  Filter oder Keywords definieren |
 Source| Vorhandenes SAP Quellsystem auswählen  |
-Destination | Vorhandene Destination auswählen  |
+Destination (nur Xtract Unviersal)| Vorhandene Destination auswählen  |
 Log | Extraktions-Log aufrufen  |
 Run  | Ausgewählte Extraktion ausführen  | 
 
 *****
 ### Weiterführende Links
-- [Xtract Universal Sever](../server)
+- [Sever Einstellungen](../server)
 
 
 

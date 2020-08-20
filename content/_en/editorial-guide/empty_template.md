@@ -68,7 +68,7 @@ Content in the first column | Content in the second column
 
 {: .box-warning }
 **Warning! Data loss**<br>
-A big amount of information is collected when ogging is activated. This can decrease the capacity of your hard drives dramatically.<br>
+A big amount of information is collected when logging is activated. This can decrease the capacity of your hard drives dramatically.<br>
 Activate the debug logging only when necessary, e.g., upon request of the support team.
 
 #### Tip & Recommendation:
@@ -89,6 +89,7 @@ The window "Connection settings" opens.
 In the main menu bar of the designer there are additional adjustable settings:   **Servers > Settings**.
 <!--Mit dem Symbol ">" können Menusprünge ausgedrückt werden-->
 
+Dialog is another type of a window.
 ----
 
 ### Paths & URLs
@@ -96,7 +97,7 @@ In the main menu bar of the designer there are additional adjustable settings:  
 `C:\Program Files\ERPConnect Services\ERPConnectServices.NintexWorkflowActions.exe`
 
 #### URLs
-For more information on defining of the extractions, see [Define an Extraction](./about_template) with the "SAP Table or View" component as an example.
+For more information on defining of the extractions, see [Define an Extraction](#) with the "SAP Table or View" component as an example.
 
 #### Paths
 `C:\Program Files\ERPConnect Services\ERPConnectServices.NintexWorkflowActions.exe`

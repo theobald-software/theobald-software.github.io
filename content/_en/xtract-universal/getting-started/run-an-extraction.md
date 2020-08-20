@@ -17,7 +17,7 @@ This step is optional and shows how to display the extraction result in a web br
 
  
 1. To open the extraction settings, click **[Run]**. 
-![Run-Table-Extraction](/img/content/BC-Run-Table-Extraction-Plants.png){:class="img-responsive"}
+![Run-Table-Extraktion](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}
 The window "Run Extraction" opens.
 2. Specify details of the execution with parameters, if needed. 
 
@@ -27,7 +27,7 @@ The window "Run Extraction" opens.
 - Before changing a parameter:
 `http://localhost:8065?name=Plants`
 - After choosing the parameter **rows**:
-`http://localhost:8097/?name=random_table&rows=100`
+`http://localhost:8065?name=Plants&rows=100` 
 
 ![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png){:class="img-responsive"}
 3. Run an extraction using xu.exe. The settings change during runtime, no new start is necessary. 

@@ -27,7 +27,7 @@ Edit | Edit an existing extraction | -
 Delete | Delete an existing extraction | -
 Clone | Clone an existing extraction | -
 Source | Select an existing SAP source system | -
-Destination | Select a destination | [Destinations](../xu-destinations)
+Destination (Xtract Universal only)| Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/xu-destinations/index)
 Log | Open extraction log | [Extraction Logging](../logging/extraction-logging)
 Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
 Abort | Abort a selected extraction | -
@@ -44,7 +44,7 @@ Menu Item | Description | Details
 Logs  | Open server logs | [Server Logging](../logging/server-logging)
 Settings | Open server settings | [Server Settings](../server/server-settings)
 Manage Sources | Edit connection to source system | [SAP Connection](../introduction/sap-connection)
-Manage Destinations | Edit or delete destinations | [Manage Destinations](../xu-destinations/managing-destinations)
+Manage Destinations (Xtract Universal only) | Edit or delete destinations | [Manage Destinations](https://help.theobald-software.com/en/xtract-universal/xu-destinations/managing-destinations)
 
 ### Security
 
@@ -79,13 +79,13 @@ Clone |  Clone existing extraction  |
 Refresh | Update of the extraction status  |
 Filter |  Define filters or keywords |
 Source|  Select existing SAP source system  |
-Destination | Select destination  |
+Destination (Xtract Universal only) | Select destination  |
 Log | Open extraction log  |
 Run  | Run a selected extraction  | 
 
 *****
 ### Related Links
-- [Xtract Universal Sever](../server)
+- [Sever Settings](../server)
 
 
 
