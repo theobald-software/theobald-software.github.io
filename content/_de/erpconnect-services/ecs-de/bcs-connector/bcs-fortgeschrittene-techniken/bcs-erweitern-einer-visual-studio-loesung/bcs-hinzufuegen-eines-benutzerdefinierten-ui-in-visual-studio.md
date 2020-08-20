@@ -36,7 +36,7 @@ Ordnen Sie die Controls wie auf dem nachfolgenden Bild an. Sie können Styles ve
 
 ![BCS-PO-VS-Web-Part-02](/img/content/BCS-PO-VS-Web-Part-02.png){:class="img-responsive"}
 
-Wechseln Sie zum Tab der den Sourcecode der Datei 'ReleasePOUserControl.ascx.cs' anzeigt. Fügen Sie den nachfolgenden Code hinzu, um die Controls mit den Daten zu verknüpfen und um die Release Methode aufzurufen, wenn die Schaltfläche geklickt wird.
+Wechseln Sie zum Tab der den Quellcode der Datei 'ReleasePOUserControl.ascx.cs' anzeigt. Fügen Sie den nachfolgenden Code hinzu, um die Controls mit den Daten zu verknüpfen und um die Release Methode aufzurufen, wenn die Schaltfläche geklickt wird.
 
 <details>
 <summary>[C#]</summary>

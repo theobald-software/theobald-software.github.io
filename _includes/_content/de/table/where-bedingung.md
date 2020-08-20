@@ -68,6 +68,19 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
  Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
+### Verwendung von Subqueries
+
+{: .box-note }
+**Hinweis:** Die Verwendung von Subqueries (Unterabfragen) ist ab SAP Release 7.40, SP05 oder höher möglich.
+
+Eine Subquery ist eine SQL-Abfrage, die innerhalb einer größeren Abfrage verschachtelt ist. 
+Subqueries sind verschachtelte Abfragen, die Daten an die umschließende Abfrage liefern. Subqueries müssen in Klammern gesetzt werden und können einzelne Werte oder eine Liste von Datensätzen zurückgeben.
+Weitere Informationen über die Subqueries erhalten Sie auf der [SAP Helpseite - Bedingungen](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenwhere_logexp_in_subquery.htm).)
+
+Im folgenden Beispiel wird eine Subquery mit dem Operator *IN* verwendet. 
+Die folgende Anweisung gibt alle *aktiven* Kunden (Zeilen in der Tabelle KNA1) zurück, die z.B. einen Verkaufsbeleg in der Tabelle VBAK für Verkaufsbelegkopfdaten haben.
+
+![WHERE Clause Subquery](/img/content/table/table_where_sub-select.png){:class="img-responsive"}
 
 ### Einschränkungen bei WHERE-Bedingungen
 

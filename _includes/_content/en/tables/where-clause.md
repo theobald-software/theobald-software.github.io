@@ -1,5 +1,5 @@
 
-### Using WHERE clause 
+### Using WHERE Clause 
 1. Select and double-click an extraction of type "table" in the main window of the Designer.
 The window "Define data source for SAP Table " opens.
 2. Navigate to tab **WHERE Clause**.
@@ -26,7 +26,7 @@ It may be necessary to renew the metadata, for example, if a table has been adju
 In such cases, data inconsistencies can occur that are resolved by this function.   
 
 
-### WHERE clause syntax 
+### WHERE Clause Syntax 
 
 {: .box-warning }
 **Warning! Extraction fails due to incorrect syntax!** <br>
@@ -36,7 +36,7 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 **Tip:** To check the syntax of the WHERE clause, click **[Load live preview]**. This way there is no need to run an extraction to see, if the syntax is correct.
 
 
-#### Syntax rules
+#### Syntax Rules
 - Enter a space before and after the equal sign:<br>
  **Correct:** *YEAR = '1999'* <br>
  **Wrong:** *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*
@@ -64,10 +64,27 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 | LIKE | True if the value of operand1 matches the pattern ('%' is any character string) in the operand2.|
 | NOT LIKE | True if the value of the operand operand1 does not match the pattern ('%' is any character string) in the operand2. |
 
-Get more information about the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
+Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
 
-### WHERE clause restrictions
+### Using Subqueries
+
+{: .box-note }
+**Note:** The usage of subqueries is only possible starting from SAP Release 7.40, SP05.
+
+
+A subquery is an SQL query nested inside a larger query. 
+Subqueries are nested queries that provide data to the enclosing query. Subqueries need be enclosed with parenthesis and can return individual values or a list of records.
+Get more details about subqueries on the [SAP help site - Conditions](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenwhere_logexp_in_subquery.htm).
+
+In the following example a subquery is used with the *IN* operator. 
+The following statement returns all the *active* customers (rows in the table KNA1) that have i.e. a sales document in the table VBAK for sales document header data.
+
+![WHERE Clause Subquery](/img/content/table/table_where_sub-select.png){:class="img-responsive"}
+
+
+
+### WHERE Clause Restrictions
 
 {: .box-note }
 **Note:** 
@@ -76,7 +93,10 @@ When using table joins, restricting the right table of a LEFT OUTER JOIN is only
 If your SAP System is older than Release 7.40, SP05, the following error appears:
 *RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
 
-Get more information about the changes in Release 7.40, SP05 on the [SAP help site](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/index.htm).
+
+****
+#### Related Links
+- [SAP Kernel Release 7.40, SP05](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/index.htm).
 
 
 
