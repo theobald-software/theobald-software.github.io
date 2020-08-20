@@ -3,8 +3,8 @@ In diesem Abschnitt werden die Voraussetzungen für die Installation eines X.509
 
 Lassen Sie ein TLS Zertifikat von Ihrem IT Netzwerk Team erstellen. Stellen Sie bitte folgendes sicher:
 
-- In der Zertifikatseigenschaft “Subject Alternative Name” muss der DNS Name des Servers stehen, auf dem der Windows-Dienst (z.B. Xtract Universal oder Board Connector) läuft. Ansonsten erscheint das Zertifikat nicht im Lookup Dialog.
-- Das Zertifikat muss im Windows Certificate Store auf dem Server, auf dem der Windows-Dienst (z.B. Xtract Universal oder Board Connector) läuft, hinterlegt werden.
+- In der Zertifikatseigenschaft “Subject Alternative Name” muss der DNS Name des Servers stehen, auf dem der Windows-Dienst (z.B. Xtract Universal oder BOARD Connector) läuft. Ansonsten erscheint das Zertifikat nicht im Lookup Dialog.
+- Das Zertifikat muss im Windows Certificate Store auf dem Server, auf dem der Windows-Dienst (z.B. Xtract Universal oder BOARD Connector) läuft, hinterlegt werden.
 - Das Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten. 
 
 

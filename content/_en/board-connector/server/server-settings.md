@@ -53,7 +53,7 @@ Enables secure data transfer via HTTPS.
 
 Defines the port number, on which the server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL. Port option defines the HTTPS listener port.
 
-If you want to receive data via HTTPS you need to install a TLS certificate on the server, on which the Board Connector service is running. <br>
+If you want to receive data via HTTPS you need to install a TLS certificate on the server, on which the BOARD Connector service is running. <br>
 See section [Installing an X.509 certificate](../security/install-x.509-Certificate). 
 
 **HTTPS - Restricted to AD users with Designer read access** <br>
@@ -65,7 +65,7 @@ See *HTTPS - Unrestricted*. This setting enables an additional access control fo
 Defines the maximum age of the web server [log files](../logging/server-logging) in days. After this period the log files are deleted.
 
 **Enable setup distribution for clients** <br>
-Defines whether the setup of the Board Connector version running on the server needs to be downloaded. When an older Board Connector Designer version is connected to a newer Board Connector Server version, you are be prompted to download and update the Designer with the Board Connector version. 
+Defines whether the setup of the BOARD Connector version running on the server needs to be downloaded. When an older BOARD Connector Designer version is connected to a newer BOARD Connector Server version, you are be prompted to download and update the Designer with the BOARD Connector version. 
 
 #### Result cache
 
@@ -73,7 +73,7 @@ Defines whether the setup of the Board Connector version running on the server n
 **Note:** *Cash results* option is only available in pull destinations (e.g., PBI, Qlik etc.).
 
 **Target directory** <br>
-Sets the directory for the buffer files. The default ist the result-cache directory in the Board Connector installation directory: <br>
+Sets the directory for the buffer files. The default ist the result-cache directory in the BOARD Connector installation directory: <br>
 `C:\Program Files\BoardConnector\result-cache`.
 
 **Max. cached runs** <br>

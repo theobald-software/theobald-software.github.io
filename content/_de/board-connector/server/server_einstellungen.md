@@ -64,7 +64,7 @@ Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine
 Definiert das maximale Alter der [Webserver-Logdateien](../logging/server-logging) in Tagen. Danach werden die Logdateien gelöscht. 
 
 **Enable setup distribution for clients**<br>
-Legt fest, ob das Setup der Board Connector Version, die auf dem Server läuft, vom Server heruntergeladen werden kann.<br>
+Legt fest, ob das Setup der BOARD Connector Version, die auf dem Server läuft, vom Server heruntergeladen werden kann.<br>
 Wenn man sich mit einer älteren Designer-Version an einem neueren Server anmeldet und diese Option aktiviert ist,
 fragt der Designer, ob man das neuere Setup herunterladen möchte.
 
@@ -74,7 +74,7 @@ fragt der Designer, ob man das neuere Setup herunterladen möchte.
 **Hinweis:** die Option *Cash results* ist nur Verfügbar in Pull-Destinationen (z.B. PBI, Qlik etc.).
 
 **Target directory**<br>
-Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Installationsverszeichnis von Board Connector: <br>
+Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Installationsverszeichnis von BOARD Connector: <br>
 `C:\Program Files\BoardConnector\result-cache`.
 
 **Max. cached runs**<br>

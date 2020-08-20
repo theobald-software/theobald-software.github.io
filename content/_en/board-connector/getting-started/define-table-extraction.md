@@ -19,7 +19,7 @@ A successful SAP connection is a prerequisite for creating an extraction. Follow
 
 The following example shows the creation of an extraction using "SAP Table or View" component.<br>
 
-1. In the main window of the Board Connector Designer click **[New]**.  
+1. In the main window of the BOARD Connector Designer click **[New]**.  
 ![Create-New-Table-Extraction](/img/content/bc_extraction_anlegen.png){:class="img-responsive list-img"}
 The window "Create Extraction" opens. <br>
 2. Field **Source** (1) states the SAP connection. Choose the SAP connection you created previously from the drop-down menu. 

@@ -59,7 +59,7 @@ The following authentication methods are supported:
 - [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On) (3)
 	
 ![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"} 
-You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) for authentication (available only for several connectors, e.g., ERPConnect, ERPConnect Services, Xtract Universal and Board Connector).
+You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) for authentication (available only for several connectors, e.g., ERPConnect, ERPConnect Services, Xtract Universal and BOARD Connector).
 
 {: .box-note }
 **Note:** when marking the checkbox **Require SAP credentials to be explicitly supplied for execution** the SAP credentials are not cached. This option is only active 
@@ -69,7 +69,7 @@ using *Plain* or *SNC* authentication method and running an extraction in browse
 #### SNC 
 
 1. Check the SAP parameter snc/gssapi_lib to determine, which library is used for encryption in your SAP system.
-Your SAP basis has to import and configure the same library on the application server and on the machine with installed Xtract Universal.
+Your SAP basis has to import and configure the same library on the application server and on the machine with installed Xtract Universal or BOARD Connector.
 2. In the **SNC library** field, fill in the complete path to the library location e.g., C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll.
 3. Fill in the SAP **Partner Name** configured for the SAP application server e.g., ``p:SAPserviceERP/do_not_care@THEOBALD.LOCAL``.
 

@@ -41,7 +41,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | logs Ordner| Ordner mit Server- und Extraktionsprotokollen etc. Siehe auch Abschnitt [Logging](../logging). |
 | config Ordner | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. Siehe auch Abschnitt [Backup](#backup). |
 | result-cache Ordner | Ordner mit Extraktions-Cache-Dateien.  |
-| BCDesigner.exe | Anwendung zum Starten von Board Connector Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
+| BCDesigner.exe | Anwendung zum Starten von BOARD Connector Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
 | BCService.exe | Anwendung, die den BOARD Connector Server als einen Windows Service startet.  Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von BOARD Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
