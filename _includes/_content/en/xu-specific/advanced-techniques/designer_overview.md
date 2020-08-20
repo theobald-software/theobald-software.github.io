@@ -12,7 +12,7 @@ The main window of the Designer consists of three main sections:
 
 Menu Item |Description | Details
 ------------ | ------------ | -------------
-Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started/connect-designer-with-server)
+Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started/connect-designer-to-server)
 Disconnect | Logging off the server | -
 Exit | Exits the Designer | -
 
@@ -22,7 +22,7 @@ Exit | Exits the Designer | -
 
 Menu Item | Description | Details
 ------------ | ------------ | -------------
-New  | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
+New  | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-table-extraction)
 Edit | Edit an existing extraction | -
 Delete | Delete an existing extraction | -
 Clone | Clone an existing extraction | -

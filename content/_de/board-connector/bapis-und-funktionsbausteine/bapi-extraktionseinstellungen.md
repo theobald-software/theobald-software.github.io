@@ -11,5 +11,5 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bapi-extraktionseinstellungen
 ---
 
-Die BAPI-Komponente enthält keine speziellen Einstellungen, außer den *General Settings*, die bereits im Abschnitt [Allgemeine Einstellungen](../fortgeschrittene-techniken/allgemeine-einstellungen) diskutiert wurden.
+Die BAPI-Komponente enthält keine speziellen Einstellungen, außer den *General Settings*, die bereits im Abschnitt [Allgemeine Einstellungen](../erste-schritte/allgemeine-einstellungen) diskutiert wurden.
 
