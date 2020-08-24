@@ -41,14 +41,14 @@ To backup your licence, create a copy of your `XtractUniversalLicense.json` file
 
 
 {: .box-warning }
-**Warning!** <br>
-**Data security**. Both `config` and `logs` directories may contain sensitive information.
+**Warning! Data security**. <br>
+Both `config` and `logs` directories may contain sensitive information.
 
 
 ### How to Restore a Backup?
 
 {: .box-warning}
-**Warning!** **Data Loss! ** <br>
+**Warning! Data Loss!** <br>
 Restoring the backup of the `config` directory replaces the exisiting configuration. Make sure to remove the existing files before restoring the backups.
 
 1. To restore the configuration files, remove the `config` directory from the program directory (`C:\Program Files\XtractUniversal` by deafult) of the machine running the Xtract Universal Service.
