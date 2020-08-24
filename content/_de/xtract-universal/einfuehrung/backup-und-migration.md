@@ -39,14 +39,14 @@ Kopieren Sie das komplette `config`-Verzeichnis, der Maschine auf der der Xtract
 Optional, können Sie auch das komplette`logs`-Verzeichnis (`C:\Program Files\XtractUniversal\logs` standardmäßig) kopieren, um ein Backup der Log-Dateien zu erstellen.
 
 {: .box-warning }
-**Warnung!** <br>
-**Datensicherheit.** Sowohl `config`- als auch `logs`-Verzeichnisse können sensible Informationen enthalten.
+**Warnung! Datensicherheit.** <br>
+Sowohl `config`- als auch `logs`-Verzeichnisse können sensible Informationen enthalten.
 
 
 ### Wiederherstellen des Backups
 
-{: .box-warning} **Warnung!** <br>
-**Datenverlust!** Das Wiederherstellen des Backups des Konfigurationsverzeichnisses (`config`) ersetzt die bestehende Konfiguration. Stellen Sie sicher, dass Sie die vorhandenen Dateien entfernen, bevor Sie die Backups wiederherstellen.
+{: .box-warning} **Warnung!Datenverlust!** <br>
+Das Wiederherstellen des Backups des Konfigurationsverzeichnisses (`config`) ersetzt die bestehende Konfiguration. Stellen Sie sicher, dass Sie die vorhandenen Dateien entfernen, bevor Sie die Backups wiederherstellen.
 
 1. Um die Konfigurationsdateien wiederherzustellen, entfernen Sie das Konfigurationsverzeichnis (`config`) aus dem Programmverzeichnis (`C:\Program Files\XtractUniversal` standardmäßig) der Maschine, auf der der Xtract Universal Service läuft.
 2. Kopieren Sie das Backup des Konfigurationsverzeichnisses in das Programmverzeichnis.
