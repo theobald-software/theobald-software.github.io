@@ -15,16 +15,14 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen_in_qlik_sense
 
 Bevor Sie das von Xtract Universal generierte Qlik-Skript nach QlikSense kopieren, führen Sie die folgenden Schritte in QlikSense aus:
 
-1. Erstellen Sie eine neue Datenverbindung vom Typ REST.
+1. Erstellen Sie eine neue Datenverbindung vom Typ REST. <br>
+**Hinweis**: In QlikSense ist der Standardwert für das *Timeout* 30 Sekunden. Erhöhen Sie den Timeout auf einen ausreichend hohen Wert, wenn die Zeit bis zum Eintreffen des ersten Datenpakets von SAP höher als 30 Sekunden ist. Der maximale Eingabewert beträgt 10.000 Sekunden.
 2. Geben Sie die URL des Xtract Universal Servers und den Port in das URL-Textfeld ein. Im Beispiel unten läuft der Xtract Universal Server auf `http://localhost:8065/`.
 3. Geben Sie *Xtract_Universal* in das Textfeld für den Namen ein.
     ![XU_qlik_QlikSense_data_connection](/img/content/XU_qlik_QlikSense_data_connection.png){:class="img-responsive"}
 4. Fügen Sie das QlikSense-Skript aus Xtract Universal in den Data-Load-Editor von QlikSense ein.
     ![XU_qlik_QlikSense_load_editor](/img/content/XU_qlik_QlikSense_load_editor.png){:class="img-responsive"}
 	
-{: .box-note }
-**Hinweis**: In QlikSense ist der Standardwert für das *Timeout* 30 Sekunden. Erhöhen Sie den Timeout auf einen ausreichend hohen Wert, wenn die Zeit bis zum Eintreffen des ersten Datenpakets von SAP höher als 30 Sekunden ist. Der maximale Eingabewert beträgt 10.000 Sekunden.
-
 
 ### Erläuterung des QlikSense Datenlade-Skripts 
 
@@ -35,11 +33,9 @@ Bevor Sie das von Xtract Universal generierte Qlik-Skript nach QlikSense kopiere
     ![XU_qlik_QlikSense_XUParameter](/img/content/XU_qlik_QlikSense_XUParameter.png){:class="img-responsive"}
     
     ![XU_qlik_QlikSense_XUParameter_Log2](/img/content/XU_qlik_QlikSense_XUParameter_Log2.png){:class="img-responsive"}
-
-
-{: .box-note }
-**Hinweis**: Ändern Sie nicht den zugewiesenen Wert der Variablen *xuOriginDateFormat* und *xuOriginTimeFormat*.
+5. **Hinweis**: Ändern Sie nicht den zugewiesenen Wert der Variablen *xuOriginDateFormat* und *xuOriginTimeFormat*.
  Das gewählte Format ermöglicht es Xtract Universal, die Daten von Datums- und Zeitfeldern an QlikSense zu senden. Eine Änderung des Formats verhindert die Ausführung des QlikSense-Skripts.
+
 
 *****
 
