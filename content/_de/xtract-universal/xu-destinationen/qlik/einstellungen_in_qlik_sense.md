@@ -30,7 +30,7 @@ Bevor Sie das von Xtract Universal generierte Qlik-Skript nach QlikSense kopiere
 
 1. Xtract Universal erstellt ein QlikSense-Skript, das die [QlikSense-Interpretationsfunktionen](https://help.qlik.com/en-US/sense/June2020/Subsystems/Hub/Content/Sense_Hub/Scripting/InterpretationFunctions/interpretation-functions.htm) *Num#*, *Text*, *Datum* und *Zeit* verwendet. Für Felder, für die kein adäquater Datentyp bestimmt werden kann, wird keine Interpretationsfunktion verwendet. 
 2. Xtract Universal erstellt ein QlikSense-Skript, das allen Feldern die Feldbeschreibung und die SAP-Herkunft des Feldes als Tags zuordnet.
-3. Xtract Universal erstellt ein QlikSense-Skript, das alle Datumsfelder explizit mit *$date* markiert. Diese Funktion stellt sicher, dass Felder, die ein [Datum vor dem 1. Januar 1980] enthalten (https://help.qlik.com/en-US/sense/April2020/Subsystems/Hub/Content/Sense_Hub/Scripting/date-time-interpretation.htm), in QlikSense als Datumsfelder erkannt werden.
+3. Xtract Universal erstellt ein QlikSense-Skript, das alle Datumsfelder explizit mit *$date* markiert. Diese Funktion stellt sicher, dass Felder, die ein [Datum vor dem 1. Januar 1980](https://help.qlik.com/en-US/sense/April2020/Subsystems/Hub/Content/Sense_Hub/Scripting/date-time-interpretation.htm) enthalten, in QlikSense als Datumsfelder erkannt werden.
 4. Das QlikSense-Skript unterstützt die Verwendung von Xtract Universal [Extraktionsparameter](../../fortgeschrittene-techniken/extraktionsparameter). 
     ![XU_qlik_QlikSense_XUParameter](/img/content/XU_qlik_QlikSense_XUParameter.png){:class="img-responsive"}
     
