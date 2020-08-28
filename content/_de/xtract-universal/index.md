@@ -26,14 +26,14 @@ Xtract Universal bietet einen Satz von neun Extraktionstypen, um eine Reihe von 
 
 Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
 
-- [**BAPI**](./bapis-and-function-modules) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**BW Cube**](./bw-infocubes-and-bex-queries) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
-- [**BW Hierarchy**](../bw-hierarchies) extrahiert Hierarchien aus SAP BW / BI Systemen.
+- [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
+- [**BW Cube**](./bw-infocubes-und-bex-queries) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
+- [**BW Hierarchy**](../bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
 - [**DeltaQ**](./datasource-deltaq) extrahiert DataSources (OLTP) und Extraktoren aus dem ERP und ECC System.
 - [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
-- [**Open Hub Services (OHS)**](../bw-open-hub-services) extrahiert InfoSpokes und OHS Destinationen. <!--Frage: kann man destinations extrahieren?-->
+- [**Open Hub Services (OHS)**](./bw-open-hub-services) extrahiert InfoSpokes und OHS Destinationen. <!--Frage: kann man destinations extrahieren?-->
 - [**Query**](./sap-queries) extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
-- [**Report**](./abap-reports) extrahiert ABAP Reports.
+- [**Report**](./report-abap-reports-ansteuern) extrahiert ABAP Reports.
 - [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 - [**Table Join**](./table-join) -  ermöglicht das Joinen von mehreren SAP-Tabellen. Der Join-Prozess findet vollständig innerhalb des SAP-Systems statt, ohne dass einzelne Tabellen heruntergeladen werden müssen.ermöglicht das Joinen von mehreren SAP-Tabellen. Der Join-Prozess findet vollständig innerhalb des SAP-Systems statt, ohne dass einzelne Tabellen heruntergeladen werden müssen.<br>
 **Hinweis: veraltete Komponente! Verwenden Sie die Table-Komponente**

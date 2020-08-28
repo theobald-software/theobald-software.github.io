@@ -31,10 +31,10 @@ Xtract Universal offers a set of nine extraction types to cover a range of deman
 
 - [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
 - [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
-- [**BW Hierarchy**](../bw-hierarchies) extracts Hierarchies from an SAP BW / BI system.
+- [**BW Hierarchy**](./bw-hierarchies) extracts Hierarchies from an SAP BW / BI system.
 - [**DeltaQ**](./datasource-deltaq) extracts DataSources (OLTP) and extractors from ERP and ECC systems.
 - [**ODP**](./odp) extracts data via the SAP Operational Data Provisioning (ODP) framework.
-- [**Open Hub Services (OHS)**](../bw-open-hub-services) extracts InfoSpokes and OHS destinations. <!--Frage: kann man destinations extrahieren?-->
+- [**Open Hub Services (OHS)**](./bw-open-hub-services) extracts InfoSpokes and OHS destinations. <!--Frage: kann man destinations extrahieren?-->
 - [**Query**](./sap-queries) extracts ERP queries. **Note: not BEx queries supplied by BW Cube**.
 - [**Report**](./abap-reports) extracts ABAP Reports.
 - [**Table**](./table) extracts data from SAP tables and views; allows joining several tables on the SAP side.

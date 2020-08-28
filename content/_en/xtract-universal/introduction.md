@@ -18,7 +18,7 @@ Extractions are the main entities in Xtract Universal. An [extraction](./getting
 destination (e.g., SQL server) and a defined extraction type (e.g., Xtract Table). 
 
 
-A source represents a [connection to an SAP System](./sap-connection). A [destination](../xu-destinations) represents a connection to a target environment.
+A source represents a [connection to an SAP System](./introduction/sap-connection). A [destination](../xu-destinations/index) represents a connection to a target environment.
 
 
 Using Xtract Universal contains two main phases:

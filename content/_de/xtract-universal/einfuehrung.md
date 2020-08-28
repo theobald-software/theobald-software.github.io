@@ -18,7 +18,7 @@ Extraktionen sind die Hauptentitäten in Xtract Universal. Eine [Extraktion] (./
 einer Destination (Xtract Unversal Seite) / Zielumgebung (z.B. SQL-Server) (Kundenseitig) und einen definierten Extraktionstyp (z.B. Xtract Table).
 
 
-Eine Quelle stellt eine [Verbindung zu einem SAP-System](./einfuehrung/sap-verbindungen-anlegen) dar. Eine [Destination](../xu-destinations) repräsentiert eine Verbindung zu einer Zielumgebung.
+Eine Quelle stellt eine [Verbindung zu einem SAP-System](./einfuehrung/sap-verbindungen-anlegen) dar. Eine [Destination](../xu-destinationen) repräsentiert eine Verbindung zu einer Zielumgebung.
 Die Verwendung von Xtract Universal umfasst zwei Hauptphasen:
 - Entwurfsphase
 - Ausführungsphase
