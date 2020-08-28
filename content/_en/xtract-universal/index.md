@@ -29,50 +29,35 @@ The following overview shows, which components are available to extract data fro
 
 Xtract Universal offers a set of nine extraction types to cover a range of demands of SAP data extraction.
 
-Common scenarios when using the components depending on the type of the SAP source system:
-
-| Component   | ERP/ ECC | BW |
-|-------------|-----|----|
-| Table       | X   | X  |
-| BAPI        | X   | X  |
-| Query       | X   |    |
-| ABAP Report | X   |    |
-| DeltaQ      | X   | X  |
-| BW Cube     |     | X  |
-| Hierarchy   |     | X  |
-| OHS         |     | X  |
-| ODP         | X   | X  |
-
-{: .box-note }
-**Note:** Further scenarios and combinations are possible.
-
-
-### Extraction from ERP / ECC systems
-
-
+- [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
+- [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
+- [**BW Hierarchy**](../bw-hierarchies) extracts Hierarchies from an SAP BW / BI system.
+- [**DeltaQ**](./datasource-deltaq) extracts DataSources (OLTP) and extractors from ERP and ECC systems.
+- [**ODP**](./odp) extracts data via the SAP Operational Data Provisioning (ODP) framework.
+- [**Open Hub Services (OHS)**](../bw-open-hub-services) extracts InfoSpokes and OHS destinations. <!--Frage: kann man destinations extrahieren?-->
+- [**Query**](./sap-queries) extracts ERP queries. **Note: not BEx queries supplied by BW Cube**.
+- [**Report**](./abap-reports) extracts ABAP Reports.
 - [**Table**](./table) extracts data from SAP tables and views; allows joining several tables on the SAP side.
-
 - [**Table Join**](./table-join) -  allows to join several SAP tables. The Join-process takes place entirely within the SAP system without downloading single tables.<br>
 **Note: obsolete component! Use Table component instead.**
 
-- [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
 
-- [**Query**](./sap-queries) extracts ERP queries. **Note: not BEx queries supplied by BW Cube**.
+Common scenarios when using the components depending on the type of the SAP source system:
 
-- [**Report**](./abap-reports) extracts ABAP Reports.
+| Extraction Type   | ERP/ ECC | BW |
+|-------------|-----|----|
+| BAPI        | X   | X  |
+| BW Cube     |     | X  |
+| DeltaQ      | X   | X  |
+| BW Hierarchy   |     | X  |
+| ODP         | X   | X |
+| OHS         |     | X  |
+| Query       | X   |    |
+| Report | X   |    |
+| Table       | X   | X  |
 
-- [**DeltaQ**](./datasource-deltaq) extracts DataSources (OLTP) and extractors from ERP and ECC systems.
-
-### Extraction from BW systems
-
-
-- [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
-
-- [**BW Hierarchy**](../bw-hierarchies) extracts Hierarchies from an SAP BW / BI system.
-
-- [**Open Hub Services (OHS)**](../bw-open-hub-services) extracts InfoSpokes and OHS destinations. <!--Frage: kann man destinations extrahieren?-->
-
-- [**DeltaQ**](../datasource-deltaq) extracts Export DataSources.
+{: .box-note }
+**Note:** Further scenarios and combinations are possible.
 
 More information on functions of Xtract Universal is provided in the following sections:
 

@@ -10,6 +10,13 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installation
 ---
+
+Xtract IS is required when developing and running SSIS packages. Make sure to install Xtract IS on development machine running Visual Studio / SQL Sever Data Tools and on the machine running the SQL server, where the packages are 
+deployed to and later on ran on.
+<!---text anpassen --->
+![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
+
+
 ### Prerequisites
 
 {: .box-note }

@@ -11,6 +11,28 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installing-the-license
 progressstate: 5
 ---
+
+
+<!---Xtract IS cannot be used outside SSIS,
+which is why an SQL Server license is required, even if the SQL Server database is not used.-->
+
+<!---
+| Component   | ERP | BW | Enterprise <br> License | Ultimate <br> License |
+|-------------|:-----:|:----:|:--------------------:|:------------------:|
+| Table       | R   | R  | X                  | X                |
+| BAPI        | R/W  | R/W | X                  | X                |
+| Query       | R   |    | X                  | X                |
+| ABAP Report | R   |    |                    | X                |
+| DeltaQ      | R   | R  |                    | X                |
+| BW Cube     |     | R  | X                  | X                |
+| Hierarchy   |     | R  |                    | X                |
+| OHS         |     | R  |                    | X                |
+| BW Loader   |     | W  |                    | X                | 
+| ODP         | R | R |  | X |
+-->
+
+
+
 ### About licensing concept of Xtract IS
 The following graphic shows the on which workstations the installation of Xtract IS with a valid license required.   
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png)<br>

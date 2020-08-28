@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-02
 layout: page
-title: Introduction
+title: Introduction to Xtract Universal
 description: Introduction
 product: xtract-universal
 parent: xtract-universal
@@ -22,10 +22,10 @@ A source represents a [connection to an SAP System](./sap-connection). A [destin
 
 
 Using Xtract Universal contains two main phases:
-- Design phases
+- Design phase
 - Execution phase
 
-![xu-arch-01](/img/content/xu/arch.png){:class="img-responsive"}
+![xu-arch-01](/img/content/xu/xu-arch-01.png){:class="img-responsive"}
 
 During the design phase the user can create and modify extractions, sources and destinations; and alter the [server settings](../server/server-settings) with the help of the [Designer](../getting-started-xu/designer-overview). 
 

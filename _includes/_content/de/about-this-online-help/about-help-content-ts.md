@@ -38,7 +38,7 @@ Empfehlung | Grün | Theobald Software Empfehlungen und Best Practice-Methoden.
 Beispiel:
 
 {: .box-warning } 
-<**>**Warnung!** Single Sign-On Verfügbarkeit</**>
+**Warnung! Single Sign-On Verfügbarkeit**
 Der ABAP-Anwendungsserver muss auf einem Windows-Betriebssystem und SNC mit Kerberos-Verschlüsselung auf SAP laufen.
 
 
