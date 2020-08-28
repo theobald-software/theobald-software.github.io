@@ -47,24 +47,22 @@ The overview below depicts the types of the Data Flow components.
 - [**Table Join**](./table-join) -  allows to join several SAP tables. The Join-process takes place entirely within the SAP system without downloading single tables.<br>
 **Note: obsolete component! Use Table component instead.**
 
-- [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
+- [**BAPI**](./bapi) accesses BAPIs and RFC function modules.
 
-- [**Query**](./sap-queries) extracts ERP queries. **Note: not BEx queries supplied by BW Cube**.
+- [**Query**](./query) extracts ERP queries. **Note: not BEx queries supplied by BW Cube**.
 
-- [**Report**](./abap-reports) extracts ABAP Reports.
+- [**Report**](./report) extracts ABAP Reports.
 
-- [**DeltaQ**](./datasource-deltaq) extracts DataSources (OLTP) and extractors from ERP and ECC systems.
+- [**DeltaQ**](./deltaq) extracts DataSources (OLTP) and extractors from ERP and ECC systems.
 
-- [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
+- [**BW Cube**](./bw-cube) extracts data from SAP BW InfoCubes and BEx Queries.
 
-- [**BW Hierarchy**](../bw-hierarchies) extracts Hierarchies from an SAP BW / BI system.
+- [**BW Hierarchy**](./hierarchy) extracts Hierarchies from an SAP BW / BI system.
 
-- [**Open Hub Services (OHS)**](../bw-open-hub-services) extracts InfoSpokes and OHS destinations. <!--Frage: kann man destinations extrahieren?-->
+- [**Open Hub Services (OHS)**](./open-hub-service-ohs) extracts InfoSpokes and OHS destinations. <!--Frage: kann man destinations extrahieren?-->
 
-- [**DeltaQ**](../datasource-deltaq) extracts Export DataSources.
-
-- [**BW Loader**](../bw-loader) loads data into SAP BW systems.
-
+- [**BW Loader**](./bw-loader) loads data into SAP BW systems.
+- [**ODP**](./odp) extracts data via the SAP Operational Data Provisioning (ODP) framework.
 
 
 The online help for Xtract IS consists of the following sections:

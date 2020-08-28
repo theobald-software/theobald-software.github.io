@@ -29,7 +29,7 @@ When starting the setup, components (1) can be selected during the installation.
 |Tableau Extract API | Component is only required for Tableau destination |
 |Start Menu Shortcut | Component that adds shortcuts to the start menu |
 |Convert Config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
-Install Service | Installs the server component as a windows service. See also section [Architecture](./architecture).|
+Install Service | Installs the server component as a windows service. See also section [Introduction to Xtract Universal](./introduction).|
 
 The license installation procedure is described in the section [Installing the license](license#installing-the-xtract-universal-license---xtractuniversallicensejson).
 
