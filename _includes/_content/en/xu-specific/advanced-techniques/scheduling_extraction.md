@@ -42,6 +42,7 @@ In case of an error, it returns one of the following codes:
 |1014 | The number of arguments is invalid |
 |1015 | The name of the parameter is unknown |
 |1016 | The argument is invalid |
+|1040 | Timeout error: Waiting time for HTTP response of xu.exe exceeded. |
 |1053 | The URL is wrong |
 |1087 | The parameter is invalid |
 

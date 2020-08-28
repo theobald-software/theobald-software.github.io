@@ -16,22 +16,22 @@ Extractions can be loaded in BOARD using the DataReader. In the following exampl
 The extraction "Plants", which extract the plants table *T001W* from SAP. 
 In BOARD the entity plants is defined to load the SAP data. 
 
-1. Select **Database > DataReader > SAP > New Protocol**  to create a new protocol.
+1. Select **Database > DataReader > SAP > New Protocol**  to create a new protocol.<br>
 ![Load-Extraction-01](/img/content/Load-Extraction-01.png)
-2. Create a new connection for the BOARD Connector Server. Optionally, you can select an existing connection. Set a *name* and the *URL* of the BOARD Connector server (e.g., localhost:8098).
-3. Click **[OK]** to confirm.
+2. Create a new connection for the BOARD Connector Server. Optionally, you can select an existing connection. Set a *name* and the *URL* of the BOARD Connector server (e.g., localhost:8098).<br>
+3. Click **[OK]** to confirm.<br>
 ![Load-Extraction-02](/img/content/Load-Extraction-02.png)
 4. The *SAP* tab on the right hand side lists all the existing extractions grouped by extraction type. 
-5. Select the extraction "Plants".  The details window displays a list of all available fields including description and datatype information.
+5. Select the extraction "Plants".  The details window displays a list of all available fields including description and datatype information. <br>
 ![Load-Extraction-03](/img/content/Load-Extraction-03.png)
 6. Select the *MDB* tab and mark the fields **Code** and **Desc**  of the entity **Plants**.
 The selected fields appear in the top region of the form. 
 7. In the column **Position**, map each field of the entity to an SAP field. 
-8. In the column **Action**  select the corresponding entry, fill in the field **Title** with a name and click **OK**.
+8. In the column **Action**  select the corresponding entry, fill in the field **Title** with a name and click **OK**. <br>
 ![Load-Extraction-04](/img/content/Load-Extraction-04.png)
-9. Execute the DataReader to extract the SAP data.
+9. Execute the DataReader to extract the SAP data. <br>
 ![Load-Extraction-05](/img/content/Load-Extraction-05.png)
 
-After executing the DataReader, the protocol shows how many rows are loaded into the entity.
+After executing the DataReader, the protocol shows how many rows are loaded into the entity. <br>
 
 ![Load-Extraction-06](/img/content/Load-Extraction-06.png)
