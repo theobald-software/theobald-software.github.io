@@ -4,7 +4,7 @@ layout: page
 title: Installation eines Updates
 description: Installation eines Updates
 product: xtract-is
-parent: voraussetzungen-und-installation
+parent: einfuehrung
 permalink: /:collection/:path
 weight: 6
 lang: de_DE

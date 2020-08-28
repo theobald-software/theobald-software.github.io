@@ -11,36 +11,34 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/
 ---
-### Architektur
+Willkommen in der Online Help von Xtract IS.
 
-Xtract IS ist ein Plug-In für die SQL-Server-Integration-Services (SSIS). Xtract IS kann nicht außerhalb von SSIS verwendet werden, <br>
-sodass eine SQL Server Lizenz notwendig ist, auch bei nicht verwendeter SQL Server Datenbank. 
+Xtract IS ist ein Plug-in für die [SQL Server Integration Services (SSIS)] (https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services).
+Xtract IS ermöglicht die Extraktion von Daten aus SAP-Systemen und das Schreiben von Daten in SAP-Systeme.
 
+### Verfügbare Komponenten
 Die Xtract IS Komponentensuite bietet Ihnen insgesamt 10 unterschiedliche Komponenten für die SQL-Server-Integration-Services an.
-
-Somit bietet die Xtract IS Komponentensuite Ihnen die komplette Bandbreite der Datenextraktion für unterschiedliche SAP-Objekte. 
 
 ![XIS-Architecture](/img/content/xis/architectures_xis_neu.png){:class="img-responsive"}
 
-### Verwendung der Komponenten
-In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- und Schreibrechte (W) zur Verfügung stehen. 
-
-Die benötigte Lizenz für die Nutzung unterschiedlicher Komponenten im SAP ERP sowie SAP BW sind ebenfalls der Tabelle zu entnehmen.
-
-| Komponente | ERP | BW | Enterprise <br> Lizenz | Ultimate <br> Lizenz  |
-|-------------|:-----:|:----:|:--:|:--:|
-| Table       | R   | R  | X                  | X                |
-| Table Join  | R   | R  |                    | X                |
-| BAPI        | R/W  | R/W | X                  | X                |
-| Query       | R   |    | X                  | X                |
-| ABAP Report | R   |    |                    | X                |
-| DeltaQ      | R   | R  |                    | X                |
-| BW Cube     |     | R  | X                  | X                |
-| Hierarchy   |     | R  |                    | X                |
-| OHS         |     | R  |                    | X                |
-| BW Loader   |     | W  |                    | X                | 
 
 
-Die Online-Hilfe zu Xtract IS besteht aus den folgenden Abschnitten:
+Die folgende Übersicht stellt die Typen der Data-Flow-Komponenten dar.
+
+| Name   | Data Flow Component Type | 
+|-------------|:-----:|
+| Table       | Source   |
+| BAPI        | Transformation  | 
+| Query       | Source   | 
+| ABAP Report | Source   | 
+| DeltaQ      | Source   | 
+| BW Cube     | Source   |  
+| Hierarchy   | Source |
+| OHS         | Source  |  
+| BW Loader   |  Destination   |
+| ODP         | Source |
+
+
+Die Online Help zu Xtract IS besteht aus den folgenden Abschnitten:
 
 {% include _content/table-of-contents.html parent="xtract-is" collection=site.de %}

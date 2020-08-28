@@ -4,7 +4,7 @@ layout: page
 title: Lizenzierung
 description: Über Lizenzierung von Xtract IS
 product: xtract-is
-parent: voraussetzungen-und-installation
+parent: einfuehrung
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

@@ -4,7 +4,7 @@ layout: page
 title: Update Installation
 description: Update Installation
 product: xtract-is
-parent: requirements-and-installation
+parent: introduction
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

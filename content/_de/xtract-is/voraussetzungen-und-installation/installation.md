@@ -4,12 +4,21 @@ layout: page
 title: Installation
 description: Installation
 product: xtract-is
-parent: voraussetzungen-und-installation
+parent: einfuehrung
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 ---
+Xtract IS wird für die Entwicklung und Ausführung von SSIS-Paketen benötigt. 
+Stellen Sie sicher, dass Sie Xtract IS auf beiden Maschinentypen installieren:
+- Auf der Entwicklungsmaschine, auf der Visual Studio / SQL Sever Data Tools läuft. Es können auch mehrere Maschinen sein.
+- Auf der Maschine, auf dem der SQL-Server läuft. Diese Maschine wird für das Deployment und den Betrieb der Pakete verwendet.
+
+
+![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
+
+
 ### Voraussetzungen
 
 {: .box-note }

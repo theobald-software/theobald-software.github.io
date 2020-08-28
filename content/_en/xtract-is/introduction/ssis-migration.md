@@ -4,7 +4,7 @@ layout: page
 title: SSIS Migration
 description: SSIS Migration
 product: xtract-is
-parent: requirements-and-installation
+parent: introduction
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

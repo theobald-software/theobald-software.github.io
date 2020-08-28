@@ -4,7 +4,7 @@ layout: page
 title: Systemvoraussetzungen
 description: Systemvoraussetzungen
 product: xtract-is
-parent: voraussetzungen-und-installation
+parent: einfuehrung
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

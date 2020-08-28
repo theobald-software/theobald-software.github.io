@@ -11,7 +11,7 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/
 ---
-Welcome...
+Welcome to the Online Help for Xtract IS. 
 
 Xtract IS is a plug-in for the [SQL Server Integration Services (SSIS)](https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services).
 Xtract IS allows extracting data from SAP systems and writing data to SAP systems.

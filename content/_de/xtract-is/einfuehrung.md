@@ -1,20 +1,19 @@
 ---
 ref: xtract-is-02
 layout: page
-title: Voraussetzungen und Installation
+title: Einführung in Xtract IS
 description: Voraussetzungen und Installation
 product: xtract-is
 parent: xtract-is
-childidentifier: voraussetzungen-und-installation
+childidentifier: einfuehrung
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=voraussetzungen-und-installation
 ---
+Xtract IS ist ein Plug-in für die [SQL Server Integration Services (SSIS)] (https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services).
+Xtract IS ermöglicht die Extraktion von Daten aus SAP-Systemen und das Schreiben von Daten in SAP-Systeme.
 
-Xtract IS basiert auf der Client-Server-Architektur. Aus diesem Grund ist die Installation von Xtract IS sowohl auf der Deployment-Umgebung (SSIS Server) als auch auf der Entwicklungs-Umgebung (Visual Studio).
-
-![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 
 Weitere Informationen hierzu finden Sie in den nachfolgenden Abschnitten, die einen Überblick über die Voraussetzungen bieteb und in die Installation einführen.
 

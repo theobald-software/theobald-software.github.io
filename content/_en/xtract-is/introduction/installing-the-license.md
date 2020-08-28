@@ -4,7 +4,7 @@ layout: page
 title: Licensing
 description: About the license of Xtract IS
 product: xtract-is
-parent: requirements-and-installation
+parent: introduction
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
