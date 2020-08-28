@@ -14,10 +14,9 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=introduction
 
 ### Basic Functionality - Architecture
 
-Extractions are the main entities in Xtract Universal. An [extraction](https://help.theobald-software.com/en/xtract-universal/getting-started-xu/define-a-table-extraction) is a combination of a source (SAP system), 
+Extractions are the main entities in Xtract Universal. An [extraction](./getting-started/define-a-table-extraction) is a combination of a source (SAP system), 
 destination (e.g., SQL server) and a defined extraction type (e.g., Xtract Table). 
 
-<!---![xu-arch-01](/img/content/xu/xu_architecture.png){:class="img-responsive"}--->
 
 A source represents a [connection to an SAP System](./sap-connection). A [destination](../xu-destinations) represents a connection to a target environment.
 
