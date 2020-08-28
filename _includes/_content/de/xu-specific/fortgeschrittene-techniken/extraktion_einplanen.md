@@ -42,7 +42,7 @@ Im Falle eines Fehlers, gibt das Programm einen der folgenden Codes zurück:
 |1014 | Die Anzahl der Argumente ist ungültig |
 |1015 | Der Name des Parameters ist unbekannt |
 |1016 | Das Argument ist ungültig |
-|1040 | Timeout Fehler: Warten auf HTTP-Antwort der xu.exe überschritten | 
+|1040 | Timeout Fehler: Wartezeit auf HTTP-Antwort der xu.exe überschritten | 
 |1053 | Die URL ist falsch |
 |1087 | Der Parameter ist ungültig |
 
