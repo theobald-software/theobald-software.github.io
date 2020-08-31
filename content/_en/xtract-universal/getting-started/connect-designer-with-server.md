@@ -34,7 +34,7 @@ Once logged in, you can activate or deactivate methods of authentication. <br>
 
 ****
 #### Related Links
-- [Xtract Universal](../introduction/architecture)
+- [Xtract Universal](../introduction#basic-functionality---architecture)
 - [Xtract Universal Server](../server)
 
 

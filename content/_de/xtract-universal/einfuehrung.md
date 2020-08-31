@@ -25,7 +25,7 @@ Die Verwendung von Xtract Universal umfasst zwei Hauptphasen:
 
 ![xu-arch-01](/img/content/xu/xu-arch-01.png){:class="img-responsive"}
 
-Während der Designphase kann der Benutzer Extraktionen, Quellen und Destinationen erstellen und modifizieren; und die [Servereinstellungen](./server/server-settings) mit Hilfe des [Designers](./erste-schritte/designer-overview) anpassen. 
+Während der Designphase kann der Benutzer Extraktionen, Quellen und Destinationen erstellen und modifizieren; und die [Servereinstellungen](./server/server_einstellungen) mit Hilfe des [Designers](./erste-schritte/designer-overview) anpassen. 
 
 Während der Ausführungsphase kann der Benutzer die in der Designphase entworfenen Extraktionen ausführen. Abhängig von der Destination kann eine Ausführung entweder durch das [XU-Kommandozeilen-Tool - xu.exe oder xu.elf](./fortgeschrittene-techniken/extraktion_einplanen) oder durch den Datenkonsumenten ausgelöst werden. Mehr Details dazu im Abschnitt [Pull- und Push-Destinationen](./xu-destinationen#pull--und-push-destinationen). 
 

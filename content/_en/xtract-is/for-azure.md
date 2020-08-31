@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=xtract_is_for_azure
+progressstate: 3
 ---
 
 *Xtract IS for Azure* is a solution that allows running SSIS packages, containing Xtract IS components, on an [Azure-SSIS Integration Runtime (IR), based on Microsoft's Azure Data Factory v2 (ADFv2)](https://azure.microsoft.com/en-us/blog/lift-sql-server-integration-services-packages-to-azure-with-azure-data-factory/).
@@ -26,7 +27,7 @@ Xtract IS for Azure makes sure, that Azure-SSIS IR supports SSIS packages, conta
 Xtract IS for Azure is based on the existing Xtract IS version, that's been around for on prem installations for years now.
 Hence Xtract IS for Azure offers exactly the same SAP data extraction functionality as Xtract IS.
 
-**Prerequisites and installation on a Visual Studio/SSDT environment** (for development of SSIS packages) don't differ from the [existing Xtract IS setup](./requirements-and-installation).
+**Prerequisites and installation on a Visual Studio/SSDT environment** (for development of SSIS packages) don't differ from the [existing Xtract IS setup](./introduction/installation).
 
 **Prerequisites and installation on an Azure-SSIS IR** (for running SSIS packages) are described in the following chapter.
 
