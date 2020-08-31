@@ -22,9 +22,9 @@ Xtract for Alteryx enables integrating data from the SAP system into the data fl
 The Xtract for Alteryx component suite offers you a total of 5 different components for SAP integration in Alteryx.
 Common scenarios when using the components depending on the type of the SAP source system:
 
-- [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
-- [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
-- [**BW Hierarchy**](./bw-hierarchies) extracts Hierarchies from an SAP BW / BI system.
+- [**BAPI**](./bapis-und-funktionsbausteine) accesses BAPIs and RFC function modules.
+- [**BW Cube**](./bw-cube) extracts data from SAP BW InfoCubes and BEx Queries.
+- [**BW Hierarchy**](./bwhierarchy) extracts Hierarchies from an SAP BW / BI system.
 - [**ODP**](./odp) extracts data via the SAP Operational Data Provisioning (ODP) framework.
 - [**Table**](./table) extracts data from SAP tables and views; allows joining several tables on the SAP side.
 
