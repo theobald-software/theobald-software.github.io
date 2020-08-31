@@ -4,7 +4,7 @@ layout: page
 title: Requirements
 description: Requirements
 product: xtract-is
-parent: introduciton
+parent: introduction
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
