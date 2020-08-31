@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-02
+ref: xtract-for-alteryx-04
 layout: page
 title: Erste Schritte mit Table
 description: Erste Schritte mit Table
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: erste-schritte-mit-table
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: de_DE
 ---
 

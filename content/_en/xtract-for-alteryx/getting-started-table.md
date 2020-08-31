@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-02
+ref: xtract-for-alteryx-04
 layout: page
 title: Getting Started with Table
 description: Getting Started with Table
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: getting-started-table
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: en_GB
 
 ---

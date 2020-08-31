@@ -50,7 +50,7 @@ The list below shows several most important files that are placed into the defau
 |XtractISConversionPreparer.exe| Tool, which prepares older version of SSIS packages (containing Xtract IS components) for migration to newer versions of SSIS. See also section [SSIS Migration](./ssis-migration).|
 | xis_version.bat | Version batch file. When starting xis_version.bat, make sure to pass XtractISVersionInfo.exe file from the installation directory as a parameter.|
 | XtractLicenseManager.exe | Application to manage and view licenses.|
-| uninst.exe | Tool for uninstalling and removing Xtract IS with all its components from your machine. |
+| Uninstall Xtract IS.lnk | Tool for uninstalling and removing Xtract IS with all its components from your machine. |
 | gac-uninstall.bat | Tool to clear the GAC of all Xtract IS related components.|
 | Eula_XtractIS.rtf | Document containing the license agreement for the use of the software Xtract IS.|
 | XtractISLicense.json | License file with information about the server, the component and runtime. |

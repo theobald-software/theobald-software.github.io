@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-04
+ref: xtract-for-alteryx-05
 layout: page
 title: BW Cube
 description: BW Cube
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: bw-cube
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 ---
 
