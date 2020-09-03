@@ -96,7 +96,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [*How to activate tra
 Leeren Sie das Feld**Trace Directory** , wenn Debug-Logging nicht mehr gebraucht wird.
 
 {: .box-warning }
-**Warnung!: ****Erhöhter Verbrauch des Festplattenspeichers** <br>
+**Warnung!: **Erhöhter Verbrauch des Festplattenspeichers** <br>
 Bei der Aktivierung des Debug-Logging wird eine große Menge an Informationen gesammelt. Dies kann die Kapazität Ihrer Festplatten drastisch verringern.
 Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
 
@@ -109,8 +109,9 @@ Die SAP-Verbindung ist erfolgreich aufgebaut.
 
 ****
 #### Weiterführende Links
-- [Extraktion mit Xtract Table - Anwendungsfall](./use-case-extraction-with-table)
-- [Xract ODP](../odp)
-- [Xtract Hierarchy](../bw-hierarchien)
-- [Xtract Cube](../bw-cube)
 - [Xtract BAPI](../bapis-und-funktionsbausteine)
+- [Xtract BW Cube](../bw-cube)
+- [Xtract BW Hierarchy](../bw-hierarchien)
+- [Xract ODP](../odp)
+
+
