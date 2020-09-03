@@ -27,7 +27,7 @@ Diese Pakete werden dann allerdings nicht auf einem on-prem SSIS Server deployt,
 *Xtract IS for Azure* basiert auf *Xtract IS Ultimate*, welches bereits seit Jahren für on-prem Installationen existiert.<br>
 *Xtract IS for Azure* bietet daher genau die gleiche Funktionalität bezüglich Datenextraktion aus SAP wie *Xtract IS Ultimate*.
 
-**Voraussetzungen und Installation auf einer Visual Studio/SSDT Umgebung** (für die Entwicklung von SSIS-Paketen) unterscheidet sich nicht vom [Xtract IS Setup](./voraussetzungen-und-installation/installation).
+**Voraussetzungen und Installation auf einer Visual Studio/SSDT Umgebung** (für die Entwicklung von SSIS-Paketen) unterscheidet sich nicht vom [Xtract IS Setup](./einfuehrung/installation).
 
 **Voraussetzungen und Installation auf einer Azure-SSIS IR** (zum Ausführen der SSIS-Pakete) ist in den nachfolgenden Abschnitten beschrieben.
 
