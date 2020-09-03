@@ -13,7 +13,7 @@ lang: en_GB
 ---
 
 Various settings of the extractions (e.g., package size, selection criteria, etc.) can be parameterized.
-Xtract IS offers two technical options for parameterization:
-- via variables
-- via Expression Properties
+Xtract IS offers two technical options for parameterization using:
+- [Variables](./parameterization-var)
+- [Expression Properties](./parameterization-prop)
 

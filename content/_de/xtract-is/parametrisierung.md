@@ -13,5 +13,5 @@ lang: de_DE
 
 Verschiedene Einstellungen der Extraktionen (z. B. Package Size, Selektionskriterien, etc.) können parametrisiert werden.
 Dazu bietet Xtract IS zwei technische Möglichkeiten an:
-- über Variablen
-- über Ausdrucks-Eigenschaften (Expression Properties)
+- über [Variablen](./parametrisierung-variablen)
+- über [Expression Properties](./parametrisierung-properties) (Ausdrucks-Eigenschaften)
