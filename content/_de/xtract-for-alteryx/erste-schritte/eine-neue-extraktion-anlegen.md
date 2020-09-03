@@ -1,12 +1,12 @@
 ---
-ref: afc-getting-started-table-01
+ref: xfa-getting-started-02
 layout: page
-title:  Eine neue Extraktion anlegen
+title: Eine neue Extraktion anlegen
 description: Eine neue Extraktion anlegen
 product: xtract-for-alteryx
-parent: erste-schritte-mit-table
+parent: erste-schritte
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 ---
 ### Extraktion anlegen

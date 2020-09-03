@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 ### To Use Xtract ODP 
-Basic knowledge of Xtract for Alteryx is required to understand the following sections, see [Extraction with Xtract Table - Use case](./getting-started-table).
+Basic knowledge of Xtract for Alteryx is required to understand the following sections, see [Extraction with Xtract Table - Use case](./getting-started).
 1. Drag & drop Xtract ODP the component to your Alteryx workflow.
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component “Xtract ODP” opens.
 The majority of the functions of the component can be accessed using the main window.

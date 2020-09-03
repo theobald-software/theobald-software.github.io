@@ -5,7 +5,7 @@ title: Getting Started with Table
 description: Getting Started with Table
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
-childidentifier: getting-started-table
+childidentifier: getting-started
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

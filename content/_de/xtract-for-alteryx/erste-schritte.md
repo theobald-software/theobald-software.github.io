@@ -5,7 +5,7 @@ title: Erste Schritte mit Table
 description: Erste Schritte mit Table
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
-childidentifier: erste-schritte-mit-table
+childidentifier: erste-schritte
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

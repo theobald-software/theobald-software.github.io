@@ -11,7 +11,7 @@ lang: en_GB
 ---
 ### Using BAPI Component
 1. Drag and drop the BAPI component from the menu bar to the workflow canvas (1). The window "Configuration" opens.
-2. Fill in the connection data (2) similarly to the procedure described for the [Table component](../getting-started-table).
+2. Fill in the connection data (2) similarly to the procedure described for the [Table component](../getting-started).
 3. Within **Selected Extraction**, click **[Edit]** (3). The window "Xtract BAPI" opens.
 ![BAPI component](/img/content/xfa/Define-bapi-component.png){:class="img-responsive"}
 
