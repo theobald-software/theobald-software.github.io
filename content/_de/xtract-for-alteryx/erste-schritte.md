@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-04
 layout: page
-title: Erste Schritte mit Table
+title: Erste Schritte mit Xtract for Alteryx
 description: Erste Schritte mit Table
 product: xtract-for-alteryx
 parent: xtract-for-alteryx

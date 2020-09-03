@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-04
 layout: page
-title: Getting Started with Table
+title: Getting Started with Xtract for Alteryx
 description: Getting Started with Table
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
