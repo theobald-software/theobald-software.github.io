@@ -15,8 +15,8 @@ lang: en_GB
 Various settings of the extractions (e.g., package size, selection criteria, etc.) can be parameterized. 
 The parameters and properties be populated at SSIS package runtime using standard SSIS functionality, such as expressions, variables, etc. 
 Xtract IS offers two technical options for parameterization using:
-- [Variables](./parameterization-var)
 - [Properties](./parameterization-prop)
+- [Variables](./parameterization-var)
 
 Depending on a component you can either use variables or properties or both to set parameters.
 
@@ -38,6 +38,7 @@ Depending on a component you can either use variables or properties or both to s
 
 ### Displaying Parameters within SSIS
 Parameters appear as properties of the Xtract ODP object as well as the SSIS Data Flow. 
+
 ![Properties](/img/content/xis/properties.png){:class="img-reagierend"}
 
- {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

@@ -17,6 +17,7 @@ The settings can be changed in the window "Define data source for SAP ODP".
 {% include _content/en/odp/odp-settings-update_mode.md %} 
 {% include _content/en/odp/odp-settings-subscriptions.md %}
 {% include _content/en/odp/odp-settings-filtering.md %} 
-{% include _content/en/odp/odp-settings-parameters.md %} 
 
+### Edit Parameters
+To edit parameters, follow the instructions described in the section [ODP Parametrization](./odp-parametrization).
 

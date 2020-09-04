@@ -1,12 +1,12 @@
 ---
-ref: xis-parametrization-01
+ref: xis-parametrization-02
 layout: page
 title: Parametrisierung mit Variablen
 description: Parametrisierung mit Variablen
 product: xtract-is
 parent: parametrisierung
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 
 ---

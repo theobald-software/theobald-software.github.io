@@ -14,8 +14,9 @@ lang: de_DE
 Verschiedene Einstellungen der Extraktionen (z. B. Package Size, Selektionskriterien, etc.) können parametrisiert werden.
 Die Parameter und die Eigenschaften (Properties) werden zur Laufzeit des SSIS-Pakets mit Hilfe von Standard-SSIS-Funktionen wie Ausdrücken, Variablen usw. gefüllt. 
 Dazu bietet Xtract IS zwei technische Möglichkeiten an:
-- über [Variablen](./parametrisierung-variablen)
 - über [Properties](./parametrisierung-properties) (Ausdrucks-Eigenschaften)
+- über [Variablen](./parametrisierung-variablen)
+
 
 Abhängig von einer Komponente können Sie entweder Variablen oder Properties oder beides verwenden, um Parameter einzustellen.
 
@@ -37,7 +38,8 @@ Abhängig von einer Komponente können Sie entweder Variablen oder Properties od
 
 
 ### Parameter in SSIS anschauen
-Parameter erscheinen als Eigenschaften des SSIS-Datenflusses (Data Flow). 
+Parameter erscheinen als Eigenschaften des SSIS-Datenflusses (Data Flow).
+
 ![Properties](/img/content/xis/properties.png){:class="img-reagierend"}
 
-{% include _content/table-of-contents.html parent="xtract-is" collection=site.de %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
