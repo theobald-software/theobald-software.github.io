@@ -31,10 +31,17 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- und Schreibrechte (W) zur Verfügung stehen. 
 
 | Komponente | ERP | BW | 
+<<<<<<< Updated upstream
 |:------------:|:-----:|:----:|
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
 | BW Hierarchy   |     | R  | 
+=======
+|:------------|:-----:|:----:|
+| Table       | R   | R  | 
+| Table Join  | R   | R  | 
+| Function/BAPI        | R/W  | R/W |
+>>>>>>> Stashed changes
 | ODP       | R   |  R  |
 | Table       | R   | R  |
 

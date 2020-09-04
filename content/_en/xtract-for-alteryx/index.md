@@ -33,11 +33,19 @@ The following components are available within Xtract for Alteryx:
 
 The overview below shows you for which component read (R) and write (W) rights are available.  
 
+<<<<<<< Updated upstream
 | Component | ERP | BW | 
 |:------------:|:-----:|:----:|
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
 | BW Hierarchy   |     | R  | 
+=======
+| Komponente | ERP | BW | 
+|:------------|:-----:|:----:|
+| Table       | R   | R  | 
+| Table Join  | R   | R  | 
+| Function/BAPI        | R/W  | R/W |
+>>>>>>> Stashed changes
 | ODP       | R   |  R  |
 | Table       | R   | R  |
 
