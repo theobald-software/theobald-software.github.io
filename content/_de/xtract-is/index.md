@@ -28,18 +28,18 @@ In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- u
 Die benötigte Lizenz für die Nutzung unterschiedlicher Komponenten im SAP ERP sowie SAP BW sind ebenfalls der Tabelle zu entnehmen.
 
 | Komponente | ERP | BW | Enterprise <br> Lizenz | Ultimate <br> Lizenz  |
-|-------------|:-----:|:----:|:--:|:--:|
+|-------------|:-----:|:----:|:--------------------:|:------------------:|
+| ABAP Report | R   |    |                    | X                |
+| BAPI        | R/W | R/W| X                  | X                |
+| BW Cube     |     | R  | X                  | X                |
+| BW Hierarchy|     | R  |                    | X                |
+| BW Loader   |     | W  |                    | X                | 
+| DeltaQ      | R   | R  |                    | X                |
+| ODP         | R   | R  |                    | X                |
+| OHS         |     | R  |                    | X                |
+| Query       | R   |    | X                  | X                |
 | Table       | R   | R  | X                  | X                |
 | Table Join  | R   | R  |                    | X                |
-| BAPI        | R/W  | R/W | X                  | X                |
-| Query       | R   |    | X                  | X                |
-| ABAP Report | R   |    |                    | X                |
-| DeltaQ      | R   | R  |                    | X                |
-| BW Cube     |     | R  | X                  | X                |
-| Hierarchy   |     | R  |                    | X                |
-| OHS         |     | R  |                    | X                |
-| BW Loader   |     | W  |                    | X                | 
-
 
 Die Online-Hilfe zu Xtract IS besteht aus den folgenden Abschnitten:
 

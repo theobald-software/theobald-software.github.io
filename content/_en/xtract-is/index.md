@@ -27,17 +27,18 @@ The required license for using the different components in SAP ERP and SAP BW is
 
 | Component   | ERP | BW | Enterprise <br> License | Ultimate <br> License |
 |-------------|:-----:|:----:|:--------------------:|:------------------:|
+| ABAP Report | R   |    |                    | X                |
+| BAPI        | R/W | R/W| X                  | X                |
+| BW Cube     |     | R  | X                  | X                |
+| BW Hierarchy|     | R  |                    | X                |
+| BW Loader   |     | W  |                    | X                | 
+| DeltaQ      | R   | R  |                    | X                |
+| ODP         | R   | R  |                    | X                |
+| OHS         |     | R  |                    | X                |
+| Query       | R   |    | X                  | X                |
 | Table       | R   | R  | X                  | X                |
 | Table Join  | R   | R  |                    | X                |
-| BAPI        | R/W  | R/W | X                  | X                |
-| Query       | R   |    | X                  | X                |
-| ABAP Report | R   |    |                    | X                |
-| DeltaQ      | R   | R  |                    | X                |
-| BW Cube     |     | R  | X                  | X                |
-| Hierarchy   |     | R  |                    | X                |
-| OHS         |     | R  |                    | X                |
-| BW Loader   |     | W  |                    | X                | 
-| ODP | R | R |  | X |
+
 
 The online help for Xtract IS consists of the following sections:
 

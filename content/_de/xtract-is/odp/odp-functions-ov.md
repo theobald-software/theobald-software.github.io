@@ -20,7 +20,4 @@ Die Einstellungen können über das Fenster "Define data source for SAP ODP" ge�
 {% include _content/de/odp/odp-settings-filtering.md %}
 {% include _content/de/odp/odp-settings-parameters.md %} <br>
 
-#### Parameter in SSIS anschauen
-Parameter erscheinen als Eigenschaften des Xtract ODP-Objekts sowie des SSIS-Datenflusses (Data Flow). Die Parameter und die Eigenschaften werden zur Laufzeit des SSIS-Pakets mit Hilfe von Standard-SSIS-Funktionen wie Ausdrücken, Variablen usw. gefüllt. 
-![ODP-Eigenschaften](/img/content/xis/odp_parameter.png){:class="img-reagierend"}
 
