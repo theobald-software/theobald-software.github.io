@@ -6,7 +6,7 @@ description: ODP Parametrization
 product: xtract-is
 parent: odp
 permalink: /:collection/:path
-weight: 88
+weight: 6
 lang: en_GB
 progressstate: 3
 ---

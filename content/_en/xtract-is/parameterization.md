@@ -37,7 +37,7 @@ Depending on a component you can either use variables or properties or both to s
 | Table Join  |       |      |
 
 ### Displaying Parameters within SSIS
-Parameters appear as properties of the Xtract ODP object as well as the SSIS Data Flow. 
+Parameters appear as properties of the SSIS Data Flow. 
 
 ![Properties](/img/content/xis/properties.png){:class="img-reagierend"}
 
