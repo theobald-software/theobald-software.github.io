@@ -22,32 +22,24 @@ Xtract for Alteryx enables integrating data from the SAP system into the data fl
 The following components are available within Xtract for Alteryx:
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
-- [Xtract Table](../table) - extracts data from SAP tables and views; allows joining several tables on the SAP side
-- [Xtract BAPI](../bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP
-- [Xract ODP](../odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework
-- [Xtract Cube](../bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders
-- [Xtract Hierarchy](../bwhierarchy) - extracts hierarchies from SAP BW systems
+- [Xtract Table](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side
+- [Xtract BAPI](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP
+- [Xract ODP](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework
+- [Xtract Cube](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders
+- [Xtract Hierarchy](./bwhierarchy) - extracts hierarchies from SAP BW systems
 
 {: .box-note }
 **Note:** An [SAP Connection](.getting-started/sap-connection) is a requirement for using any of Xtract for Alteryx components.
 
 The overview below shows you for which component read (R) and write (W) rights are available.  
 
-<<<<<<< Updated upstream
 | Component | ERP | BW | 
 |:------------:|:-----:|:----:|
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
 | BW Hierarchy   |     | R  | 
-=======
-| Komponente | ERP | BW | 
-|:------------|:-----:|:----:|
 | Table       | R   | R  | 
 | Table Join  | R   | R  | 
-| Function/BAPI        | R/W  | R/W |
->>>>>>> Stashed changes
-| ODP       | R   |  R  |
-| Table       | R   | R  |
 
 
 {: .box-note }

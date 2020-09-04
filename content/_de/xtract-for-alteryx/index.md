@@ -22,28 +22,24 @@ Xtract for Alteryx ermöglicht es Daten aus dem SAP-System direkt innerhalb des 
 Die Xtract for Alteryx Komponentensuite bietet Ihnen insgesamt 5 unterschiedliche Komponenten für die SAP-Integration in Alteryx an.
 Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
 
-- [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**BW Cube**](./bw-cube) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
-- [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
-- [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
-- [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
+
+- [**Xtract BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
+- [**Xtract BW Cube**](./bw-cube) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
+- [**Xtract BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
+- [**Xtract ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
+- [**Xtract Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 
 In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- und Schreibrechte (W) zur Verfügung stehen. 
 
 | Komponente | ERP | BW | 
-<<<<<<< Updated upstream
 |:------------:|:-----:|:----:|
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
 | BW Hierarchy   |     | R  | 
-=======
-|:------------|:-----:|:----:|
 | Table       | R   | R  | 
 | Table Join  | R   | R  | 
-| Function/BAPI        | R/W  | R/W |
->>>>>>> Stashed changes
-| ODP       | R   |  R  |
-| Table       | R   | R  |
+
 
 {: .box-note }
 **Hinweis:** Weitere Szenarien und Kombinationen sind möglich.
