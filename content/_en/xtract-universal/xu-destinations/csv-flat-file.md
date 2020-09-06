@@ -45,7 +45,16 @@ Defines how two columns in CSV are separated.
 Defines how two rows in CSV are separated.
 
 **Quote symbol**<br>
-Defines which character will be encased in the value of a table row, if the value contains the column separator.
+Defines which character is used to encase field data. A sequence of charaters may be used as *Quote symbol*.
+Quotation is applied in the following scenarios:
+- The Column separator is part of the field data.
+- The Quote symbol is part of the field data.
+- The Row separator is part of the field data.
+- The Escape character is part of the field data.
+
+**Escape character**<br>
+When this character is part of the field data, the respective field containing this character is encased by the *Quote symbol*.
+The default escape character is the backslash '\\'. The field may remain empty.
 
 **Column names in first row**<br>
 Defines if the first row contains the column names. This option is set per default.
