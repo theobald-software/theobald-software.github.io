@@ -43,7 +43,16 @@ Search results appear in the preview window.
 The application returns to the main window of the component. <br>
 
 Columns of the table retrieved from SAP are displayed in the subsection **Fields**. <br>
-![Table-Form](/img/content/xfa/table_fields_filter.png){:class="img-responsive"}<br>
+![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
+
+
+| Number | Element | Description | 
+|:------------|:-----:|:----:|
+| 1 | Field selection, filtering   |  
+| 2  |   Filter fields  |  
+| 3  |  Conversion Routine  |   
+| 4 | Preview window, result of the conversion    |
+
 
 ### Filtering tables
 

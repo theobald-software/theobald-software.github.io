@@ -17,6 +17,13 @@ Die Anwendung kehrt zum Hauptfenster "Extract Single and Joint SAP Tables or Vie
 Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt.  
 ![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 
+| Nummer | Element / Beschreibung | 
+|:------------|:-----|
+| 1  | Feldselektion, Filterung |  
+| 2  | Filterfelder   |  
+| 3  | [Conversion Routine](./table/tabellen_und_felder#fields)  |
+| 4  | Vorschaufenster, Ergebnis der Umwandlung (Conversion)   |   
+
 
 
 ### Tabellen filtern

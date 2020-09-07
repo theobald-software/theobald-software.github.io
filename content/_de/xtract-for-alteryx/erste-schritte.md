@@ -43,7 +43,14 @@ Suchergebnisse erscheinen im Vorschaufenster.
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.<br>
 
 Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt.<br>
-![Table-Form](/img/content/xfa/table_fields_filter.png){:class="img-responsive"}<br>
+![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
+
+| Nummer | Element / Beschreibung | 
+|:------------|:-----|
+| 1  | Feldselektion, Filterung |  
+| 2  | Filterfelder   |  
+| 3  | Conversion Routine  |
+| 4  | Vorschaufenster, Ergebnis der Umwandlung (Conversion)   |   
 
 ### Filtern von Tabellen
 
