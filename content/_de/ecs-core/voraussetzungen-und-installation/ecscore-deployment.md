@@ -69,7 +69,7 @@ Diese Einstellung wird nicht mehr unterstützt, ein *Microsoft SQL Server Compac
 
 **Master Key**
 
-Mit dem *Master Key* können sensible Informationen wie Anmeldedaten für das Management Dashboard oder die SAP Verbindungen wiederhergestellt werden.<br>
+Mit dem *Master Key* können sensible Informationen wie Anmeldedaten für das Management Dashboard oder die SAP-Verbindungen wiederhergestellt werden.<br>
 Wichtig: Verwahren Sie das Kennwort an einem sicheren Platz.
 
 ![ecscore-deploymentmanager-4.png](/img/content/ecscore-deploymentmanager-4.png){:class="img-responsive"}

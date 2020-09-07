@@ -43,7 +43,7 @@ Danach fügen Sie den benutzerdefinierten Konnektor zur Anlage einer BANF zum *A
 Es ist außerdem notwendig das Feld *Quantity* mit einer *int(value)* Formel ins Integer-Format zu konvertieren, da im Moment 
 das Hinzufügen von Nummernfeldern in Microsoft Forms noch nicht unterstützt wird. 
 
-Das Feld *applicationName* kann leer gelassen werden, dann wird der Default-Service für die SAP Verbindung in ECS Core verwendet, wenn nicht explizit ein Service im REST Webservice hinzugefügt wurde.   
+Das Feld *applicationName* kann leer gelassen werden, dann wird der Default-Service für die SAP-Verbindung in ECS Core verwendet, wenn nicht explizit ein Service im REST Webservice hinzugefügt wurde.   
 
 ![ecscore_flow_11](/img/content/ecscore_flow_11.png){:class="img-responsive"}
 

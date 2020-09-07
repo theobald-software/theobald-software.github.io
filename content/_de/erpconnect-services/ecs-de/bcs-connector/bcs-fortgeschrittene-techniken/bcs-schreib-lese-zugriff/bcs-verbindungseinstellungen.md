@@ -24,14 +24,14 @@ Geben Sie die nachfolgenden Verbindungsparameter ein:
 
 Benutzen Sie die *Test Connection* Schaltfläche, um die Verbindungseinstellungen zu testen und schließen Sie die Konfiguration der SharePoint-Verbindung mit *OK* ab. In der Statuszeile des BCS Connector Designer Fensters wird die SharePoint Seite, mit der Sie verbunden sind, angezeigt.
 
-Um die SAP Verbindung einzurichten, betätigen Sie die Schaltfläche neben dem Text *SAP R/3 Connection*. Das *SAP Connection* Dialogfenster wird geöffnet.
+Um die SAP-Verbindung einzurichten, betätigen Sie die Schaltfläche neben dem Text *SAP R/3 Connection*. Das *SAP Connection* Dialogfenster wird geöffnet.
 
 Geben Sie die nachfolgenden Verbindungsparameter ein:
 
 **Client** -	Der SAP Client. Beispiel: 800 <br>
 **Language** -	Die Anmeldesprache für das SAP System. Beispiel: EN<br>
-**Username** -	Der Benutzername für die SAP Verbindung.<br>
-**Password** -	Das Kennwort für die SAP Verbindung.<br>
+**Username** -	Der Benutzername für die SAP-Verbindung.<br>
+**Password** -	Das Kennwort für die SAP-Verbindung.<br>
 **Secure Store ID** -	Optionaler Parameter. Wird benötigt um die Verbindungsinformationen für die SAP Anmeldung aus einer SharePoint Secure Store Anwendung zu beziehen (für mehr Informationen lesen Sie bitte Abschnitt [Konfiguration Single Sign-On](../../bcs-sharepiont-konfigurieren/bcs-konfiguration-single-sign-on)).
 
 Wählen Sie eine der nachfolgenden Optionen für die Verbindung zu Ihrem SAP System:
@@ -45,4 +45,4 @@ Wählen Sie eine der nachfolgenden Optionen für die Verbindung zu Ihrem SAP Sys
 **Use HTTP / Web Service** -	Wählen Sie diese Option, wenn Sie einen Web Service nutzen wollen.<br>
 **HTTP-URL** -	Die URL zum SAP Webservice.
 
-Nutzen Sie die *Test Connection* Schaltfläche, um die Verbindungsparameter zu testen und anschließend *OK*, um die Konfiguration der SAP Verbindungseinstellungen abzuschließen. Beachten Sie die Anzeige in der Statusleiste des Fensters die jetzt anzeigt, dass die SAP Verbindung konfiguriert ist.
+Nutzen Sie die *Test Connection* Schaltfläche, um die Verbindungsparameter zu testen und anschließend *OK*, um die Konfiguration der SAP-Verbindungseinstellungen abzuschließen. Beachten Sie die Anzeige in der Statusleiste des Fensters die jetzt anzeigt, dass die SAP-Verbindung konfiguriert ist.

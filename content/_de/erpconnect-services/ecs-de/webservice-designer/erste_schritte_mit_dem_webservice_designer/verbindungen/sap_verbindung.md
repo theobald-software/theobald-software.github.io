@@ -23,8 +23,8 @@ Ergänzen Sie die nachfolgenden Parameter:
 
 **Client** - Der SAP Client. Beispiel: 800<br>
 **Language** - Die Sprache in der die Anmeldung am SAP System erfolgen soll. Beispiel: EN<br>
-**Username** -	Der Benutzername für die SAP Verbindung.<br>
-**Password** -	Das Kennwort für die SAP Verbindung.<br>
+**Username** -	Der Benutzername für die SAP-Verbindung.<br>
+**Password** -	Das Kennwort für die SAP-Verbindung.<br>
 **Secure Store ID** -	Der optionale Parameter wird benötigt um die SAP Anmeldedaten aus der SharePoint Secure Store Anwendung zu ermitteln (für weiterführende Informationen lesen Sie das Abschnitt [Secure Store Application anlegen](../../../ecs-runtime/ecs-konfiguration/ecs-secure-store-application-anlegen)).
 
 Wählen Sie eine der folgenden Optionen für die Verbindung zu Ihrem SAP System:

@@ -22,19 +22,20 @@ Xtract for Alteryx enables integrating data from the SAP system into the data fl
 The following components are available within Xtract for Alteryx:
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
-- [Xtract Table](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side
-- [Xtract BAPI](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP
-- [Xract ODP](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework
-- [Xtract Cube](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders
-- [Xtract Hierarchy](./bwhierarchy) - extracts hierarchies from SAP BW systems
+- [**BAPI**](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP
+- [**BW Cube**](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders
+- [**BW Hierarchy**](./bwhierarchy) - extracts hierarchies from SAP BW systems
+- [**ODP**](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework
+- [**Table**](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side
 
 {: .box-note }
-**Note:** An [SAP Connection](.getting-started/sap-connection) is a requirement for using any of Xtract for Alteryx components.
+**Note:** An [SAP Connection](./introduction/sap-connection) is a requirement for using any of Xtract for Alteryx components.
 
+Depending on the type of SAP source system, there are different scenarios when using the components:
 The overview below shows you for which component read (R) and write (W) rights are available.  
 
 | Component | ERP | BW | 
-|:------------:|:-----:|:----:|
+|:------------|:-----:|:----:|
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
 | BW Hierarchy   |     | R  | 

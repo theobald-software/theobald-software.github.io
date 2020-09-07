@@ -19,21 +19,24 @@ Xtract for Alteryx ermöglicht es Daten aus dem SAP-System direkt innerhalb des 
 ![XFA-Architecture](/img/content/xfa/Xtract_for_Alteryx.png){:class="img-responsive"}
 
 ### Verfügbare Komponenten
-Die Xtract for Alteryx Komponentensuite bietet Ihnen insgesamt 5 unterschiedliche Komponenten für die SAP-Integration in Alteryx an.
-Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
+Die folgenden Komponenten sind innerhalb von Xtract for Alteryx verfügbar:
 
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
-- [**Xtract BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**Xtract BW Cube**](./bw-cube) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
-- [**Xtract BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
-- [**Xtract ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
-- [**Xtract Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+- [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
+- [**BW Cube**](./bw-cube) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
+- [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
+- [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
+- [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+
+{: .box-note }
+**Hinweis:** Eine [SAP-Verbindung](./einfuehrung/sap-verbindung) ist eine Voraussetzung für die Verwendung der Komponenten von Xtract for Alteryx.
+Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
 
 In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- und Schreibrechte (W) zur Verfügung stehen. 
 
 | Komponente | ERP | BW | 
-|:------------:|:-----:|:----:|
+|:------------|:-----:|:----:|
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
 | BW Hierarchy   |     | R  | 

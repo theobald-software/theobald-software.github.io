@@ -42,7 +42,7 @@ Zuletzt legen Sie den Return-Parameter ReqItemID an und mappen diesen auf den Ou
 
 Beachten Sie, dass Sie auch einen *Custom Data Type* anlegen können, der die erforderlichen Felder enthält. In diesem Fall würden Sie im Parameter Dialog einen Listenparameter anstatt skalarer Parameter anlegen (List of [Custom Data Type]). Mit der Nutzung von Listenparametern ist es möglich, mehrere Positionen zu erstellen. Der SAP Baustein muss das erlauben. 
 
-Vor dem Deployment können Sie explizit wählen, welche Service Applikation für die SAP Verbindung in ECS Core verwendet werden soll.
+Vor dem Deployment können Sie explizit wählen, welche Service Applikation für die SAP-Verbindung in ECS Core verwendet werden soll.
 
 Öffnen Sie den *ECS Service Application* Selektionsdialog:
 

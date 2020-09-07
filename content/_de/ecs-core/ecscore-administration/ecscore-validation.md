@@ -13,7 +13,7 @@ old_url: /ECS-Core-DE/default.aspx?pageid=ecscore-validation
 
 Um sicherzustellen, dass alles korrekt konfiguriert ist und die Verbindungseinstellungen wie gewünscht funktionieren, können Sie die [tecs-Bibliothek](http://static.theobald-software.com/theobald.ecs.micro/) nutzen (empfohlen: Abschnitt *Live Test of your ECSCore*), sowie reines Javascript oder REST-Clients wie [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) oder [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox) verwenden, die als Browsererweiterungen frei verfügbar sind. <br>
 
-Wichtig: Der Test bezieht sich rein auf die hinterlegten SAP Verbindungen der Management Site ('Management Endpoint'). Für das Konsumieren von Services muss die *Services Site* ('Consumer Endpoint') verwendet werden. Näheres dazu finden Sie im Abschnitt *Webservice Authentifizierung*.  
+Wichtig: Der Test bezieht sich rein auf die hinterlegten SAP-Verbindungen der Management Site ('Management Endpoint'). Für das Konsumieren von Services muss die *Services Site* ('Consumer Endpoint') verwendet werden. Näheres dazu finden Sie im Abschnitt *Webservice Authentifizierung*.  
 
 Mit tEcs:
 ```

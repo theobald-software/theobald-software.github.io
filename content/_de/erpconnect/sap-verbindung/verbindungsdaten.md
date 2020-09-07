@@ -19,8 +19,8 @@ Grundsätzlich stehen zwei Methoden zur Anmeldung zur Verfügung; entweder direk
 
 Für die Authentifizierung können Benutzername und Passwort verwendet werden. Andere Optionen werden ebenfalls angeboten. 
 
-**Username**-	Der Benutzername für die SAP Verbindung.<br>
-**Password**-	Das Kennwort für die SAP Verbindung.
+**Username**-	Der Benutzername für die SAP-Verbindung.<br>
+**Password**-	Das Kennwort für die SAP-Verbindung.
 
 Diese Parameter können Sie direkt über die entsprechenden Eigenschaften der SAP-Verbindung (R3Connection) setzen.
 Alternativ können Sie auch einen ConnectionString verwenden. 

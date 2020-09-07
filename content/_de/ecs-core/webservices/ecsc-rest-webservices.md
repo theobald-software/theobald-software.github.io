@@ -16,7 +16,7 @@ Im folgenden Beispiel möchten wir einen REST-Service erstellen, mit dem Bestell
 Um einen neuen REST-Webservice für ECS Core anzulegen, öffnen Sie den WebService Designer und definieren Sie zunächst Ihre Server- und SAP-Verbindung (In der Menüleiste bei *Connections*). 
 Detailierte Informationen zum Thema Webservice-Authentifizierung finden Sie im Abschnitt [Webservice Authentifizierung](./webservice_authentifizierung) 
 
-Die SAP Verbindung wird zum Zugriff auf die SAP Metadaten bei der Erstellung des Webservice benötigt.
+Die SAP-Verbindung wird zum Zugriff auf die SAP Metadaten bei der Erstellung des Webservice benötigt.
 
 Geben Sie die im *SAP Connection Dialog* Ihre Verbindungsinformationen ein. 
 

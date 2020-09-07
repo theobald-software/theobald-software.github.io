@@ -23,8 +23,8 @@ Ergänzen Sie die nachfolgenden Parameter:
 
 **Client** - Der SAP Client. Beispiel: 800<br>
 **Language** - Die SAP-Anmeldesprache. Beispiel: EN<br>
-**Username** -	Der Benutzername für die SAP Verbindung.<br>
-**Password** -	Das Kennwort für die SAP Verbindung.<br>
+**Username** -	Der Benutzername für die SAP-Verbindung.<br>
+**Password** -	Das Kennwort für die SAP-Verbindung.<br>
 
 Wählen Sie eine der folgenden Optionen für die Verbindung zu Ihrem SAP System:
 

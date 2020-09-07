@@ -64,11 +64,13 @@ To search for a certain column name or description, start typing the word in the
 
 *****
 #### Related Links
-- [SAP-Integration with Alteryx: Unlock and analyze your SAP data in Alteryx](https://www.theobald-software.com/en/xtract-for-alteryx-webinar-unlock-and-analyze-your-sap-data-in-alteryx) - Introductory webinar
-- [Xtract Table](../table) - further details to Xtract Table component
-- [Xract ODP](../odp)
-- [Xtract Hierarchy](../bwhierarchy)
-- [Xtract Cube](../bw-cube)
-- [Xtract BAPI](../bapi)
+- [Xtract BAPI](./bapi)
+- [Xtract BW Cube](./bw-cube)
+- [Xtract BW Hierarchy](./bwhierarchy)
+- [Xract ODP](./odp)
+- [Xtract Table](./table) - further details to Xtract Table component
+
+
+
 
 

@@ -1,8 +1,8 @@
 ---
 ref: ecscore-wd-getting-started-01
 layout: page
-title: Bezeichnungen und SAP Verbindung
-description: Bezeichnungen und SAP Verbindung
+title: Bezeichnungen und SAP-Verbindung
+description: Bezeichnungen und SAP-Verbindung
 product: ecs-core
 parent: hauptmenue
 permalink: /:collection/:path

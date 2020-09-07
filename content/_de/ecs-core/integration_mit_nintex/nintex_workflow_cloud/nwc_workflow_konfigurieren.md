@@ -27,7 +27,7 @@ Wählen Sie hier die Verbindung zu Ihrem SAP system aus. Wie eine neue Verbindun
 
 **Custom Service Application**
 
-Hier können Sie explizit wählen, welcher Service in ECS Core für die SAP Verbindung genutzt werden soll. Falls Sie weder im WebService Designer noch hier einen Service vorgeben wird der Standard-Service verwendet. 
+Hier können Sie explizit wählen, welcher Service in ECS Core für die SAP-Verbindung genutzt werden soll. Falls Sie weder im WebService Designer noch hier einen Service vorgeben wird der Standard-Service verwendet. 
 
 **Eingabeparameter**
 

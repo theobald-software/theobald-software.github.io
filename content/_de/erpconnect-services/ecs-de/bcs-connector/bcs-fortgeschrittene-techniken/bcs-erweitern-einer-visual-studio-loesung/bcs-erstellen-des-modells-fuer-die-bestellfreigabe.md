@@ -19,7 +19,7 @@ Starten Sie den BCS Connector Designer und beginnen Sie mit der Definition der V
 
 Zum Konfigurieren der SharePoint Verbindung betätigen Sie die *Edit SharePoint* Schaltfläche auf dem Ribbon.
 
-Zum Konfigurieren der SAP Verbindung betätigen Sie die Schaltfläche neben *SAP R/3 Connection*. 
+Zum Konfigurieren der SAP-Verbindung betätigen Sie die Schaltfläche neben *SAP R/3 Connection*. 
 
 Die Statuszeile am unteren Rand des BCS Connector Designer Fensters sollte nun anzeigen, dass beide Verbindungen eingerichtet sind.  Für detaillierte Informationen lesen Sie das Abschnitt [Verbindungen](../../bcs-erste-schritte/bcs-verbindungen).
 
