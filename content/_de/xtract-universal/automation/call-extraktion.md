@@ -10,27 +10,22 @@ weight: 1
 lang: de_DE
 ---
 
-### Extraktion im Designer ausführen 
-Extraktion mit der rechten Maustaste wählen und einen der folgenden Optionen wählen:
+Xtract Universal bietet zwei Möglichkeiten, um eine angelegte Extraktion auszuführen:
+- [Aufruf der mitgelieferten Kommandozeile](./call-via-commandline) , welche in einer Windows- und einer Linux-Version angeboten wird oder 
+- [Aufruf via Webservice-Call](./call-via-webservice). Diese Option eignet sich insbesondere für eine webbasierte Umgebung. 
 
-- **Run in xu.exe**: Um die Extraktion mit der Kommadozeile ausführen
-- **Run in browser**: Um die Extraktion über einen Webservice-Aufruf im Browser ausführen
-- **Run**: Um das Run-Dialog für weitere Optionen zur Ausführung zu öffnen
+### Extraktion im Designer manuell ausführen 
+Um eine Extraktion im Designer manuell und direkt auszufüren, klicken Sie auf die entsprechende Extraktion und wählen Sie mit der rechten Maustaste eine der folgenden Optionen wählen:
+- **Run in xu.exe**: Um die Extraktion mit der Kommadozeile direkt ausführen
+- **Run in browser**: Um die Extraktion über einen Webservice-Aufruf direkt im Browser ausführen
 
-### Aufruf via Kommandozeile 
-- Kurze Beschreibung, dass die Extraktion ausgeführt wird.
-- Link zum Kapitel/Abschnitt zum Aufruf mit der Kommandozeile  für weitere Details. 
-- Hinweis, dass es ein Kommandozeile-Tool für Linux gibt
-
-
-### Aufruf via Webservice (in Browser)
-- Kurze Beschreibung, dass die Extraktion durch den Aufruf des Webservices ausgeführt wird. Es öffnet sich ein Webbrowser. 
-- In der Adressleiste des Browsers sieht man die spezifische URL der Extraktion.
-- Link zum Kapitel/Abschnitt zum Aufruf via Webservice für weitere Details.
+![Run](/img/content/xu/automation/xu-extraction-right-click-run.png){:class="img-responsive"}
 
 ### Run Dialog 
 
-Run-Dialog beschreiben. 
+Um eine Extraktion im Designer mit weiteren Optionen auszuführen, nutzen Sie das Run-Dialog. Dazu selektieren Sie die entsprechende Extraktion und:
+- wählen Sie mit der rechten Maustaste die Option **Run** oder
+- klicken Sie die Schaltfläche **Run** im Designer.
 
 **URL**<br>
 Das URL-Feld zeigt die URL der Extraktion. Diese enthält den Host bzw. IP und die Portnummber des XU-Servers sowie den Namen der Extraktion. Diese URL kann dann für den Aufruf der Extraktion verwendet.
@@ -38,10 +33,8 @@ Das URL-Feld zeigt die URL der Extraktion. Diese enthält den Host bzw. IP und d
 http://localhost:8065/?name=Plants
 ```
 
-
 Mit dem Knopf oben rechts können Sie die URL in den Zwischenspeicher kopieren. 
 
-- 3 Reiter für dynamische Parametrisierung, die wir separat beschreiben. Link dazu.
+![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
-- Buttons, um die Extraktion auszuführen. Link dazu.
-
+Die [Parameter](./xu-parameter) werden separat ausführlich beschrieben.

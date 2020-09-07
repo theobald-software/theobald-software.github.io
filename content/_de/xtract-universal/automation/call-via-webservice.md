@@ -12,7 +12,7 @@ lang: de_DE
 
 
 ### Aufruf via Webservice
-Sie können eine Extraktion via Webservice-Aufruf direkt im Browser oder in einem entsprechenden Skript oder Tool aufrufen. Der Aufruf hat das folgende Format:
+Sie können eine Extraktion via Webservice-Aufruf direkt ausführen. Das können Sie dann direkt im Browser oder in einem entsprechenden Skript oder Tool aufrufen. Der Aufruf hat das folgende Format:
 
 ```
 <Protokoll>://<HOST oder IP-Adresse>:<Port>/?name=<Name der Extraktion>{&<parameter_i>=<wert_i>}

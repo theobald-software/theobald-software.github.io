@@ -13,15 +13,9 @@ lang: de_DE
 {% include _content/de/xu-specific/fortgeschrittene-techniken/extraktionsparameter.md %}
 
 ### Benutzerdefinierte Parameter 
-
 {% include _content/de/xu-specific/fortgeschrittene-techniken/benutzerdefinierte-variablen.md %}
-
-### Parameter im SQL-Statement verwenden
-
-{% include _content/de/xu-specific/fortgeschrittene-techniken/parameter-in-sql.md %}
-
 
 Weiterführende Links
 - Skript-Ausdrücke
-- Parameter im SQL-Statement verwenden
+- [Parameter im SQL-Statement verwenden](./xu-parameter-sql)
 - Vordefinierte Variablen

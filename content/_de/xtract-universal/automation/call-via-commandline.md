@@ -10,9 +10,8 @@ weight: 2
 lang: de_DE
 ---
 
-Zum Ausführen von Extraktionen bietet Xtract Universal (XU) bietet ein Kommandozeilenprogramm an.
-Die Windows-Version heißt xu.exe, während xu.elf die Version für Unix / Linux ist. 
-Die Funktionalität von von den beiden Versionen ist dieselbe. Daher sprechen wir im Folgenden meistens nur von der Windows-Version xu.exe stellvertretend für beide Versionen. Wenn es Unterschiede gibt, werden wir explizit drauf hinweisen.
+Zum Ausführen von Extraktionen bietet Xtract Universal (XU) ein Kommandozeilenprogramm an, sowohl in einer Windows-Version (xu.exe) als auch in einer für Unix / Linux (xu.elf). 
+Die Funktionalität beider Versionen ist dieselbe. Daher sprechen wir im Folgenden meistens nur von der Windows-Version xu.exe stellvertretend für beide Versionen. Wenn es Unterschiede gibt, werden wir explizit drauf hinweisen.
 
 ### Installation der Kommandozeile
 
@@ -99,25 +98,23 @@ Rückgabewert	Beschreibung
 1087 	Der Parameter ist ungültig
 ```
 
-#### Standardausgabe
+### Standardausgabe
 Die Ausgabe ist abhängig vom Destinationstyp der Extraktion. 
-
-##### Standardausgabe bei Pull-Destinations
-
 Bei einem erfolgreichen Aufruf kommt der Rückgabewert 0.
-Bei Pull Destinations (z.B. HTTP-CSV, HTTP-JSON, ...) werden die extrahierten Daten im entsprechenden Format der Destination (3) (z.B. CSV, JSON, ...) in die Standardausgabe (stdout) geschrieben.
 
-##### Standardausgabe bei Push-Destinations
+#### Standardausgabe bei Pull-Destinations
+Bei Pull Destinations (z.B. HTTP-CSV, HTTP-JSON, ...) werden die extrahierten Daten im entsprechenden Format (3) (z.B. CSV, JSON, ...) in die Standardausgabe (stdout) geschrieben.
+
+#### Standardausgabe bei Push-Destinations
 Bei Push Destinations wird standardmäßig das Log der Extraktion im CSV-Format in die Standardausgabe (stdout) geschrieben. 
 
-##### Standardfehlerausgabe
-Logmeldungen werden dabei in die Standardfehlerausgabe (stderr) geschrieben.
+#### Standardfehlerausgabe
+Log- und Fehlermeldungen werden dabei in die Standardfehlerausgabe (stderr) geschrieben.
 
 ### Log-Ausgabe einer Extraktion unterdrücken 
 Mit dem Parameter quiet-push=true kann man die Log-Ausgabe bei einem 
 - synchronen Aufruf einer Extraktion 
 - mit einer Push-Destination 
-
 unterdrücken. Default Wert ist false und somit wird standardmäßig das Log der Extraktion als Rückgabe bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
 
 ### Asynchroner Aufruf
