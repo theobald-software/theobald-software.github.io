@@ -111,13 +111,18 @@ Bei Push Destinations wird standardmäßig das Log der Extraktion im CSV-Format 
 #### Standardfehlerausgabe
 Log- und Fehlermeldungen werden dabei in die Standardfehlerausgabe (stderr) geschrieben.
 
-### Log-Ausgabe einer Extraktion unterdrücken 
-Mit dem Parameter quiet-push=true kann man die Log-Ausgabe bei einem 
-- synchronen Aufruf einer Extraktion 
-- mit einer Push-Destination 
-unterdrücken. Default Wert ist false und somit wird standardmäßig das Log der Extraktion als Rückgabe bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
+### Weitere Optionen zum Aufruf einer Extraktion
+#### Log-Ausgabe einer Extraktion unterdrücken 
+Mit dem Parameter 
+```
+-o quiet-push=true 
+```
+kann man die Log-Ausgabe unterdrücken, wenn die Extraktion  
+- synchron aufgerufen wird und  
+- eine Push-Destination hat 
+unterdrücken. Default Wert ist false und somit wird standardmäßig das Log der Extraktion bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
 
-### Asynchroner Aufruf
+#### Asynchroner Aufruf einer Extraktion
 Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter
 ```
 -o wait=false 
@@ -130,7 +135,7 @@ In diesem Fall wird der Zeitstempel der Ausführung zurückgegeben:
 ```
 2020-04-06_16:13:19.926 
 ```
-### Weiterführende Abfragen 
+### Weiterführende Abfragen über den Webservice
 Xtract Universal bietet auch einen Webservice, über den z.B. folgende Informationen aufgerufen werden können. 
 - Status der (asynchronen) Extraktion prüfen
 - Log der Extraktion abfragen 

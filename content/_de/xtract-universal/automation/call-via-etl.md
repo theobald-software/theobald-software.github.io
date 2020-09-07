@@ -10,32 +10,25 @@ weight: 11
 lang: de_DE
 ---
 
-In diesem Abschnitt zeigen wir, wie man eine Xtract Universal Extraktion von einem ETL-Tool aufrufen kann.
-Es ist so einfach wie der Aufruf des Kommandozeilenprogrammes mit den richtigen Parametern.
-
-## Aufruf via KNIME
-KNIME bietet einen eingebauten Konnektor, den wir empfehlen zu nutzen. 
-
 Bei allen ETL-Tools hat man grundsätzlich zwei Möglichkeiten zur Ausführung einer Extraktion:
-- Aufruf der Kommandozeile 
-- Aufruf des Webservices
+- [Aufruf der Kommandozeile](./call-via-commandline) 
+- [Aufruf des Webservices](./call-via-webservice)
 
-## Aufruf via Talend
 
-### Aufruf der Kommandozeile 
-Für den Aufruf der Kommandozeile in Talend nutzt man das Tool.
-Siehe weitere Infos zum Aufruf via Kommandozeile.
+### Integration mit Alteryx
+Für die Integration von Xtract Universam mit Alteryx [siehe Alteryx Destination](../xu-zielumgebungen/alteryx-de/)
 
-### Aufruf des Webservcies
-Für den Aufruf eines Webservices in Talend nutzt man das Tool.
-Siehe weitere Infos zum Aufruf via Webservice.
+### Integration mit KNIME 
+Für die Integration von Xtract Universam mit KNIME bietet unser Partner KNIME ein Plug-In, siehe 
+- [ KNIME SAP Integration based on Theobald Xtract Universal](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest) und
+- [SAP Reader (Theobald)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory). 
 
-## Aufruf via Pentaho
+### Integration mit Talend via Webservice
+Für den Aufruf eines Webservices in Talend siehe [das Beispiel in unserer KB](https://kb.theobald-software.com/xtract-universal/talend-integration-http).
 
-### Aufruf der Kommandozeile 
-Für den Aufruf der Kommandozeile in Pentaho nutzt man das Tool.
-Siehe weitere Infos zum Aufruf via Kommandozeile.
+### Integration mit Pentaho via Kommandozeile 
+Für den Aufruf der Kommandozeile in Pentaho [das Beispiel in unserer KB](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
 
-### Aufruf des Webservcies
-Für den Aufruf eines Webservices in Pentaho nutzt man das Tool.
-Siehe weitere Infos zum Aufruf via Webservice.
+### Integration mit Pentaho via Webservice
+Für den Aufruf eines Webservices in Pentaho siehe [das Beispiel in unserer KB](https://kb.theobald-software.com/xtract-universal/pentaho-di-http).
+

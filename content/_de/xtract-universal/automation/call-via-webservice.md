@@ -12,7 +12,7 @@ lang: de_DE
 
 
 ### Aufruf via Webservice
-Sie können eine Extraktion via Webservice-Aufruf direkt ausführen. Das können Sie dann direkt im Browser oder in einem entsprechenden Skript oder Tool aufrufen. Der Aufruf hat das folgende Format:
+Sie können eine Extraktion via Webservice-Aufruf direkt ausführen. Der Aufruf kann direkt im Browser oder in einem entsprechenden Skript oder Tool erfolgen. Der Aufruf hat das folgende Format:
 
 ```
 <Protokoll>://<HOST oder IP-Adresse>:<Port>/?name=<Name der Extraktion>{&<parameter_i>=<wert_i>}
@@ -67,7 +67,7 @@ Die Rückgabe im HTTP-Body ist abhängig vom Destinationstyp der Extraktion.
 
 #### Rückgabe bei pull destinations
 Bei einem erfolgreichen Aufruf (1) kommt der HTTP-Statuscode 200 (2).
-Bei Pull Destinations (z.B. HTTP-CSV, HTTP-JSON, ...) werden die extrahierten Daten im entsprechenden Format der Destination (3) (z.B. CSV, JSON, ...) zurückgegeben.
+Bei Pull Destinations (HTTP-CSV oder HTTP-JSON) werden die extrahierten Daten im entsprechenden Format der Destination (3) (CSV, JSON) zurückgegeben.
 
 ![Webservice Call pull](/img/content/xu/automation/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
 
@@ -76,15 +76,18 @@ Bei Push Destinations wird standardmäßig das Log der Extraktion im CSV-Format 
 
 ![Webservice Call push](/img/content/xu/automation/webservice/xu_call_webservice_push_sql.png){:class="img-responsive"}
 
-### Log-Ausgabe unterdrücken 
-Mit dem Parameter **quiet-push=true** kann die Log-Ausgabe bei einem 
-- synchronen Aufruf einer Extraktion 
-- mit einer Push-Destination 
+### Weitere Optionen zum Aufruf einer Extraktion
+#### Log-Ausgabe einer Extraktion unterdrücken 
+Mit dem Parameter 
+```
+-o quiet-push=true 
+```
+kann man die Log-Ausgabe unterdrücken, wenn die Extraktion  
+- synchron aufgerufen wird und  
+- eine Push-Destination hat 
+unterdrücken. Default Wert ist false und somit wird standardmäßig das Log der Extraktion bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
 
-unterdrückt werden. <br>
-Standardmäßig ist Wert quiet-push=true und somit wird das Log der Extraktion bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
-
-### Asynchroner Aufruf
+#### Asynchroner Aufruf
 Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter
 ```
 &wait=false 
@@ -97,30 +100,29 @@ In diesem Fall wird der Zeitstempel der Ausführung im HTTP-Body zurückgegeben:
 2020-05-28_09:58:47.312
 ```
 
+### Weitere Webservices 
+Folgende Webservices werden noch angeboten.
 
-### Status der Extraktion prüfen
+#### Status der Extraktion prüfen
 Mit dem Zeitstempel und dem Namen der Extraktion kann der Status über den folgenden Webservice aufgerufen werden:
 ```
 http://localhost:8065/status/?name=sapcustomers2&timestamp=2020-04-06_16:13:19.926 
 ```
 
-### Log der Extraktion abfragen 
+#### Log der Extraktion abfragen 
 
 Mit diesem Zeitstempel kann dann auf das ausführliche Log über den folgenden Webservice zugegriffen werden: 
 ```
 http://localhost:8065/log/?req_type=extraction&name=sapcustomers2&timestamp=2020-04-06_16:13:19.926 
 ```
 
-### Medataten der Extraktion abfragen 
+#### Medataten der Extraktion abfragen 
 
 Mit dem Namen der Extraktion kann auf die entsprechenden Metadaten über den folgenden Webservice zugegriffen werden: 
 ```
 http://localhost:8065/metadata/?name=sapcustomers2 
 ```
 
-
 Weiterführende Links
-- Daten-Aufruf via Webservice (Pull-Destination)
-- Extraktion-Aufruf via Webservice (Push-Destination)
-- Metadaten-Aufruf via Webservice
-- Log-Aufruf via Webservice
+- [Metadaten-Aufruf via Webservice](../fortgeschrittene-techniken/metadaten-zugriff-ueber-http)
+- [Log-Aufruf via Webservice](../logging/log-zugriff-ueber-http)
