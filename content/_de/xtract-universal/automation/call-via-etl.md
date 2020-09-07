@@ -24,11 +24,11 @@ Für die Integration von Xtract Universam mit KNIME bietet unser Partner KNIME e
 - [SAP Reader (Theobald)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory). 
 
 ### Integration mit Talend via Webservice
-Für den Aufruf eines Webservices in Talend siehe [das Beispiel in unserer KB](https://kb.theobald-software.com/xtract-universal/talend-integration-http).
+Für den Aufruf eines Webservices in Talend siehe [Talend Integration via HTTP](https://kb.theobald-software.com/xtract-universal/talend-integration-http).
 
 ### Integration mit Pentaho via Kommandozeile 
-Für den Aufruf der Kommandozeile in Pentaho [das Beispiel in unserer KB](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
+Für den Aufruf der Kommandozeile in Pentaho [Pentaho Integration via the Command Line](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
 
 ### Integration mit Pentaho via Webservice
-Für den Aufruf eines Webservices in Pentaho siehe [das Beispiel in unserer KB](https://kb.theobald-software.com/xtract-universal/pentaho-di-http).
+Für den Aufruf eines Webservices in Pentaho siehe [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http).
 
