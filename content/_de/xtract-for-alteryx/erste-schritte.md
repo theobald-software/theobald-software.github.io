@@ -71,10 +71,10 @@ Um nach bestimmten Namen oder Beschreibungen einer Tabelle zu suchen, fangen Sie
 
 *****
 #### Weiterführende Links
-- [BAPI](../bapi)
-- [BW Cube](../bw-cube)
-- [BW Hierarchy](../bwhierarchy)
-- [ODP](../odp)
-- [Table](../table) - weitere Details zur Table-Komponente
+- [BAPI](./bapis-und-funktionsbausteine)
+- [BW Cube](./bw-cube)
+- [BW Hierarchy](./bw-hierarchien)
+- [ODP](./odp)
+- [Table](./table) - weitere Details zur Table-Komponente
 
 
