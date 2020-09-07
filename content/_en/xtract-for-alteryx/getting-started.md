@@ -46,8 +46,8 @@ Columns of the table retrieved from SAP are displayed in the subsection **Fields
 ![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
 
 
-| Number | Element | Description | 
-|:------------|:-----:|:----:|
+| Number | Element | 
+|:------------|:-----|
 | 1 | Field selection, filtering   |  
 | 2  |   Filter fields  |  
 | 3  |  Conversion Routine  |   

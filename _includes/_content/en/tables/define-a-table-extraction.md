@@ -18,8 +18,8 @@ The application now returns to the main window "Extract Single and Joint SAP Tab
 Columns of the table retrieved from SAP are displayed in the subsection **Fields**.  
 ![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 
-| Number | Element | Description | 
-|:------------|:-----:|:----:|
+| Number | Element / Description | 
+|:------------|:----- |
 | 1 | Field selection, filtering   |  
 | 2  |   Filter fields  |  
 | 3  |  [Conversion Routine](./table/tables-and-fields#fields)    |   
