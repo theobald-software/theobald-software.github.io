@@ -16,6 +16,5 @@ lang: de_DE
 {% include _content/de/xu-specific/fortgeschrittene-techniken/benutzerdefinierte-variablen.md %}
 
 Weiterführende Links
-- Skript-Ausdrücke
+- [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke)
 - [Parameter im SQL-Statement verwenden](./xu-parameter-sql)
-- Vordefinierte Variablen

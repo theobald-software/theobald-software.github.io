@@ -32,6 +32,7 @@ Das Format ist &<parameter>=<wert>. Es können mehrere Parameter verwendet werde
 ```
 &parameter1=wert1&parameter2=wert2  
 ```
+
 Unten werden ein paar Beispiele aufgeführt.
 
 ```
