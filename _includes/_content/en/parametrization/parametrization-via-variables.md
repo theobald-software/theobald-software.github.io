@@ -5,6 +5,7 @@ The following example depicts a variable @compcode_low using the BW Cube compone
 1. Within the main window of the component, choose [**Variables**] (1). The variable editing window opens (2).
 2. Edit the variables.
 3. Display the created variables within the designated window within SSIS.
-![Properties](/img/content/xis/properties.png){:class="img-reagierend"}
+![Properties](/img/content/xis/xis_vars.png){:class="img-reagierend"}
+
 
 
