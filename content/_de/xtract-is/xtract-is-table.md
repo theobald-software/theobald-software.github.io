@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-05
+ref: xtract-is-14
 layout: page
 title: Xtract IS Table
 description: Xtract IS Table
@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: xtract-is-table
 permalink: /:collection/:path
-weight: 5
+weight: 14
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=table
 progressstate: 5

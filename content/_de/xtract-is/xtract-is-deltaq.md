@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-13
+ref: xtract-is-09
 layout: page
 title: Xtract IS DeltaQ
 description: Xtract IS DeltaQ
@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: xtract-is-deltaq
 permalink: /:collection/:path
-weight: 13
+weight: 9
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=deltaq
 ---

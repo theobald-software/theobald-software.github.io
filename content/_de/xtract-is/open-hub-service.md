@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-14
+ref: xtract-is-11
 layout: page
 title: Xtract IS Open Hub Service OHS
 description: Xtract IS Open Hub Service OHS
@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: open-hub-service
 permalink: /:collection/:path
-weight: 14
+weight: 11
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=open-hub-service
 ---
