@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-06
+ref: xtract-universal-05
 layout: page
 title: Advanced techniques
 description: Advanced techniques
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: advanced-techniques
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 progressstate: 5
 ---
