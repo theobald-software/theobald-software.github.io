@@ -38,7 +38,7 @@ A BW or ECC system contains less options in the provider context list.
 ![ODP Provider Context from an BW/4 HANA System](/img/content/odp/odp-component-context-bw.png){:class="img-responsive"}
 
 
-#### SAP Source Objects and Suitable ODP Contexts
+### SAP Source Objects and Suitable ODP Contexts
  
 ODP context | SAP Source objects |
 ------------ |------------ |
