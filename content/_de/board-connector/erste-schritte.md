@@ -1,5 +1,5 @@
 ---
-ref: board-connector-02
+ref: board-connector-03
 layout: page
 title: Erste Schritte mit BOARD Connector
 description: Erste Schritte mit Table
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: erste-schritte
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=erste-schritte
 ---

@@ -1,5 +1,5 @@
 ---
-ref: board-connector-99
+ref: board-connector-16
 layout: page
 title: SAP Customizing
 description: SAP Customizing
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: sap-customizing
 permalink: /:collection/:path
-weight: 99
+weight: 16
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---

@@ -1,5 +1,5 @@
 ---
-ref: board-connector-06
+ref: board-connector-07
 layout: page
 title: Security
 description: Security
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: security
 permalink: /:collection/:path
-weight: 9
+weight: 7
 lang: en_GB
 ---
 
