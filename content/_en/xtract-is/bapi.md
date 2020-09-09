@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-05
 layout: page
-title: Xtract IS BAPI
+title: Xtract BAPI
 description: Xtract IS BAPI
 product: xtract-is
 parent: xtract-is

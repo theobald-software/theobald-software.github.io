@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-08
 layout: page
-title: Xtract IS BW Loader
+title: Xtract BW Loader
 description: Xtract IS BW Loader
 product: xtract-is
 parent: xtract-is

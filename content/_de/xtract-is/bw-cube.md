@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-06
 layout: page
-title: Xtract IS BW Cube
+title: Xtract BW Cube
 description: Xtract IS BW Cube
 product: xtract-is
 parent: xtract-is

@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-15
 layout: page
-title: Xtract IS Table Join
+title: Xtract Table Join
 description: Xtract IS Table Join
 product: xtract-is
 parent: xtract-is

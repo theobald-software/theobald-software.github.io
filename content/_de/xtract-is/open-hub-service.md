@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-11
 layout: page
-title: Xtract IS Open Hub Service OHS
+title: Xtract Open Hub Service (OHS)
 description: Xtract IS Open Hub Service OHS
 product: xtract-is
 parent: xtract-is

@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-13
 layout: page
-title: Xtract IS Report
+title: Xtract Report
 description: Xtract IS Report
 product: xtract-is
 parent: xtract-is

@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-12
 layout: page
-title: Xtract IS Query
+title: Xtract Query
 description: Xtract IS Query
 product: xtract-is
 parent: xtract-is
