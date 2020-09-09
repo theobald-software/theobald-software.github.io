@@ -41,7 +41,7 @@ Ein BW- oder ein ECC-System beinhalten weniger Optionen in der Liste mit den Pro
 ![ODP Provider Kontext aus dem BW/4 HANA System](/img/content/odp/odp-component-context-bw.png){:class="img-responsive"}
 
 
-#### SAP Quellobjekte und die geeigneten ODP-Kontexte
+### SAP Quellobjekte und die geeigneten ODP-Kontexte
  
 ODP-Kontext | SAP-Quellobjekte |
 ------------ |------------ |
