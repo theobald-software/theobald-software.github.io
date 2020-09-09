@@ -1,5 +1,5 @@
 ---
-ref: board-connector-08
+ref: board-connector-15
 layout: page
 title: Table Join
 description: Table Join
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: table-join
 permalink: /:collection/:path
-weight: 8
+weight: 15
 lang: de_DE
 progressstate: 5
 ---

@@ -1,13 +1,13 @@
 ---
-ref: board-connector-10
+ref: board-connector-06
 layout: page
-title: BAPIs und Funktionsbausteine
+title: BAPI
 description: BAPIs und Funktionsbausteine
 product: board-connector
 parent: board-connector
 childidentifier: bapis-und-funktionsbausteine
 permalink: /:collection/:path
-weight: 10
+weight: 06
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---

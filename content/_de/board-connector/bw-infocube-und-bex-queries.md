@@ -1,13 +1,13 @@
 ---
-ref: board-connector-12
+ref: board-connector-07
 layout: page
-title: BW InfoCubes und BEx Queries
+title: BW Cube
 description: BW InfoCubes und BEx Queries
 product: board-connector
 parent: board-connector
 childidentifier: bw-infocube-und-bex-queries
 permalink: /:collection/:path
-weight: 13
+weight: 7
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-infocube-und-bex-queries
 ---
