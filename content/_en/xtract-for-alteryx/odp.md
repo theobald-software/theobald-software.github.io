@@ -1,13 +1,13 @@
 ---
-ref: xtract-for-alteryx-05
+ref: xtract-for-alteryx-08
 layout: page
-title: ODP
+title: Operational Data Provisioning (ODP)
 description: Operational Data Provisioning (ODP)
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: odp
 permalink: /:collection/:path
-weight: 5
+weight: 8
 lang: en_GB
 progressstate: 5
 ---

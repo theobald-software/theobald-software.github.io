@@ -1,13 +1,13 @@
 ---
-ref: xtract-for-alteryx-07
+ref: xtract-for-alteryx-05
 layout: page
-title: BAPIs und Funktionsbausteine
+title: BAPI
 description: BAPIs und Funktionsbausteine
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: bapis-und-funktionsbausteine
 permalink: /:collection/:path
-weight: 6
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
