@@ -1,5 +1,5 @@
 ---
-ref: board-connector-06
+ref: board-connector-08
 layout: page
 title: Logging
 description: Logging
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: logging
 permalink: /:collection/:path
-weight: 6
+weight: 8
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=logging
 ---

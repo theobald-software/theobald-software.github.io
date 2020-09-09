@@ -1,13 +1,13 @@
 ---
-ref: board-connector-13
+ref: board-connector-17
 layout: page
-title: Reports
+title: Report
 description: ABAP Reports
 product: board-connector
 parent: board-connector
 childidentifier: abap-reports
 permalink: /:collection/:path
-weight: 13
+weight: 17
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=abap-reports
 ---

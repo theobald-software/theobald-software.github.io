@@ -1,5 +1,5 @@
 ---
-ref: board-connector-09
+ref: board-connector-13
 layout: page
 title: DeltaQ
 description: Datasource DeltaQ
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: datasource-deltaq
 permalink: /:collection/:path
-weight: 9
+weight: 13
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=datasource-deltaq
 ---

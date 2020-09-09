@@ -1,13 +1,13 @@
 ---
-ref: board-connector-10
+ref: board-connector-14
 layout: page
-title: Operational Data Provisioning (ODP)
+title: ODP (Operational Data Provisioning)
 description: Operational Data Provisioning (ODP)
 product: board-connector
 parent: board-connector
 childidentifier: odp
 permalink: /:collection/:path
-weight: 10
+weight: 14
 lang: de_DE
 ---
 

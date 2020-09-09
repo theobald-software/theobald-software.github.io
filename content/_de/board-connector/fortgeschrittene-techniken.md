@@ -1,5 +1,5 @@
 ---
-ref: board-connector-04
+ref: board-connector-05
 layout: page
 title: Fortgeschrittene Techniken
 description: Fortgeschrittene Techniken
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: fortgeschrittene-techniken
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=fortgeschrittene-techniken
 ---

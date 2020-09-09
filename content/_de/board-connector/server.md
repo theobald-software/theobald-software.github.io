@@ -1,5 +1,5 @@
 ---
-ref: board-connector-05
+ref: board-connector-07
 layout: page
 title: Server
 description: Server
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: server
 permalink: /:collection/:path
-weight: 5
+weight: 7
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=server
 ---

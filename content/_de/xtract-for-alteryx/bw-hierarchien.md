@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-07
 layout: page
-title: BW Hierarchien
+title: BW Hierarchy
 description: BW Hierarchien
 product: xtract-for-alteryx
 parent: xtract-for-alteryx

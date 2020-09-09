@@ -1,13 +1,13 @@
 ---
-ref: board-connector-08
+ref: board-connector-12
 layout: page
-title: BW Hierarchies
+title: BW Hierarchy
 description: BW Hierarchies
 product: board-connector
 parent: board-connector
 childidentifier: bw-hierarchies
 permalink: /:collection/:path
-weight: 8
+weight: 12
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=bw-hierarchies
 ---

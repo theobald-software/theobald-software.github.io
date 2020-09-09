@@ -1,13 +1,13 @@
 ---
-ref: board-connector-11
+ref: board-connector-15
 layout: page
-title: BW Open Hub Services (OHS)
+title: OHS (Open Hub Services)
 description: BW Open Hub Services
 product: board-connector
 parent: board-connector
 childidentifier: bw-open-hub-service
 permalink: /:collection/:path
-weight: 11
+weight: 15
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-open-hub-service
 ---

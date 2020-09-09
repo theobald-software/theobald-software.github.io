@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-15
 layout: page
-title: BW OHS (Open Hub Services)
+title: OHS (Open Hub Services)
 description: BW Open Hub Services
 product: xtract-universal
 parent: xtract-universal

@@ -1,5 +1,5 @@
 ---
-ref: board-connector-06
+ref: board-connector-10
 layout: page
 title: BAPI
 description: BAPIs and Function Modules
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: bapis-and-function-modules
 permalink: /:collection/:path
-weight: 6
+weight: 10
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=bapi-and-function-modules
 ---

@@ -1,12 +1,12 @@
 ---
-ref: xtract-universal-03
+ref: xtract-universal-02
 layout: page
 title: About this Online Help
 description: General information on Online Help content
 product: xtract-universal
 parent: xtract-universal
 permalink: /:collection/:path
-weight: 3
+weight: 2
 lang: en_GB
 ---
 

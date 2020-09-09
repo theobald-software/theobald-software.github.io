@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-08
 layout: page
-title: Operational Data Provisioning (ODP)
+title: ODP (Operational Data Provisioning)
 description: Operational Data Provisioning (ODP)
 product: xtract-for-alteryx
 parent: xtract-for-alteryx

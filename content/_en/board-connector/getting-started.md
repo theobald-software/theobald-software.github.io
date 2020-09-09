@@ -1,5 +1,5 @@
 ---
-ref: board-connector-03
+ref: board-connector-04
 layout: page
 title: Getting Started with BOARD Connector
 description: Getting Started with  BOARD Connector
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: getting-started
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 ---
 

@@ -1,13 +1,13 @@
 ---
-ref: board-connector-12
+ref: board-connector-16
 layout: page
-title: SAP Queries
+title: SAP Query
 description: SAP Queries
 product: board-connector
 parent: board-connector
 childidentifier: sap-queries
 permalink: /:collection/:path
-weight: 12
+weight: 16
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sap-queries
 ---

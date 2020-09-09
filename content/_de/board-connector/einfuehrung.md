@@ -1,5 +1,5 @@
 ---
-ref: board-connector-02
+ref: board-connector-03
 layout: page
 title: Einführung
 description: Einführung
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: einfuehrung
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=einfuehrung
 ---

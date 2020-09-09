@@ -1,5 +1,5 @@
 ---
-ref: board-connector-04
+ref: board-connector-05
 layout: page
 title: Advanced Techniques
 description: Advanced Techniques
@@ -7,7 +7,7 @@ product: board-connector
 parent: board-connector
 childidentifier: advanced-techniques
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=advanced_technics__variables_and_logging
 ---
