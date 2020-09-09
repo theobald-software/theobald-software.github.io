@@ -1,7 +1,7 @@
 ---
 ref: xis-odp-param
 layout: page
-title: ODP Parametrisierung
+title: Parametrisierung
 description: ODP Parametrisierung
 product: xtract-is
 parent: odp

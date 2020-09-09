@@ -1,13 +1,13 @@
 ---
 ref: xi-q-delta-11
 layout: page
-title: Miscellaneous
-description: Miscellaneous
+title: Parametrization
+description: Parametrization
 product: xtract-is
 parent: deltaq
 permalink: /:collection/:path
-weight: 12
+weight: 11
 lang: en_GB
-progressstate: 5
+progressstate: 3
 ---
 

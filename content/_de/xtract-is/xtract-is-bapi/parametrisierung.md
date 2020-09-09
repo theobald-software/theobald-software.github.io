@@ -1,13 +1,12 @@
 ---
 ref: xi-bapi-08
 layout: page
-title: Parametrization
-description: Parametrization
+title: Settings
+description: Settings
 product: xtract-is
-parent: bapi
+parent: xtract-is-bapi
 permalink: /:collection/:path
 weight: 8
-lang: en_GB
+lang: de_DE
 
 ---
-
