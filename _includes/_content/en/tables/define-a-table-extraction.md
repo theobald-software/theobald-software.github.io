@@ -22,7 +22,7 @@ Columns of the table retrieved from SAP are displayed in the subsection **Fields
 |:------------|:----- |
 | 1 | Field selection, filtering   |  
 | 2  |   Filter fields  |  
-| 3  |  [Conversion Routine](./table/tables-and-fields#fields)    |   
+| 3  |  Conversion Routine  |   
 | 4 | Preview window, result of the conversion    |
 
 

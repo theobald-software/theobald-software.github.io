@@ -21,7 +21,7 @@ Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** ange
 |:------------|:-----|
 | 1  | Feldselektion, Filterung |  
 | 2  | Filterfelder   |  
-| 3  | [Conversion Routine](./tabellen_und_felder#fields)  |
+| 3  | Conversion Routine  |
 | 4  | Vorschaufenster, Ergebnis der Umwandlung (Conversion)   |   
 
 
