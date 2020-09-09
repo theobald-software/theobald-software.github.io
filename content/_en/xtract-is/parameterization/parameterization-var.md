@@ -1,8 +1,8 @@
 ---
 ref: xis-parametrization-01
 layout: page
-title: Parameterization using Extraction Properties
-description: Parameterization using Extraction Properties
+title: Parameterization using Variables
+description: Parameterization using Variables
 product: xtract-is
 parent: parameterization
 permalink: /:collection/:path

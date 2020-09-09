@@ -1,8 +1,8 @@
 ---
 ref: xi-table-07
 layout: page
-title: Table Parametrization 
-description: Table Parametrization 
+title: Parametrization 
+description: Parametrization 
 product: xtract-is
 parent: table
 permalink: /:collection/:path

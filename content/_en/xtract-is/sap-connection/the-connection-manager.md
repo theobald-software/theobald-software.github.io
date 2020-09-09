@@ -94,7 +94,7 @@ Since 09.2017, SAP connection parameters are no longer stored as *Connection Str
 There is a *Property* for each component of the *Connection string*.
 
 This feature allows using a [sensitive environment variable](./sensitive-environment-variable-in-ssis-catalog) for the password in the Integration Services catalog.<br>
-The *Connection string* (see legacy mode below) did not support sensitive environment variables.<br>
+The *Connection string* (see legacy mode below) did not support sensitive environment SSIS variables.<br>
 The newer version provides stronger encryption than password obfuscation.
 
 You can either use *Connection properties* or a *Connection string*, not both.

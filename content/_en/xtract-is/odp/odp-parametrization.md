@@ -1,8 +1,8 @@
 ---
 ref: xis-odp-param
 layout: page
-title: ODP Parametrization
-description: ODP Parametrization
+title: Parametrization
+description: Parametrization
 product: xtract-is
 parent: odp
 permalink: /:collection/:path
