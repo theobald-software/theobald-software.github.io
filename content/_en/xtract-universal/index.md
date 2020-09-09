@@ -20,7 +20,7 @@ in the context of business intelligence, data integration and data analytics.
 ### Available Components
 <!--- Tabelle notwendig? Nicht vollständig nicht 100%ig korrekt. Pre-Sales fragen. Unterteilung in BW und ERP sinnvoll für den Kunden?--->
 The following overview shows, which components are available to extract data from SAP systems. 
-![XU-Components](/img/content/xu/xu_components.png){:class="img-responsive"}
+![XU-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
 
 <!-- Auflistung der Komponenten mit der kurzen Beschreibung und dem Link zu den Inhalten-->
 
