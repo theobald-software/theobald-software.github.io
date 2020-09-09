@@ -6,7 +6,7 @@ description: General information on Online Help content
 product: xtract-universal
 parent: xtract-universal
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 ---
 

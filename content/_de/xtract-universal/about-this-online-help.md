@@ -6,7 +6,7 @@ description:  Allgemeine Informationen zum Inhalt der Online-Hilfe
 product: xtract-universal
 parent: xtract-universal
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 ---
 

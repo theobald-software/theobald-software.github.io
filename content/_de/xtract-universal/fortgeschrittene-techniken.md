@@ -1,5 +1,5 @@
 ---
-ref: xtract-universal-06
+ref: xtract-universal-05
 layout: page
 title: Fortgeschrittene Techniken
 description: Fortgeschrittene Techniken
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: fortgeschrittene-techniken
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=fortgeschrittene-techniken
 progressstate: 5

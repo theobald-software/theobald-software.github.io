@@ -1,4 +1,4 @@
----
+--9
 ref: xtract-universal-08
 layout: page
 title: Sicherheit
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: Sicherheit
 permalink: /:collection/:path
-weight: 8
+weight: 9
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sicherheit_in_xu_3_x
 ---

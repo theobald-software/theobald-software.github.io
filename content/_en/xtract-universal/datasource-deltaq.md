@@ -1,13 +1,13 @@
 ---
-ref: xtract-universal-16
+ref: xtract-universal-13
 layout: page
-title: Datasource DeltaQ
+title: DeltaQ
 description: Datasource DeltaQ
 product: xtract-universal
 parent: xtract-universal
 childidentifier: datasource-deltaq
 permalink: /:collection/:path
-weight: 17
+weight: 13
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=datasource-deltaq
 ---

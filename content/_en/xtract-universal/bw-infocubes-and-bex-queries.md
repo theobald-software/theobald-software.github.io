@@ -1,13 +1,13 @@
 ---
-ref: xtract-universal-14
+ref: xtract-universal-11
 layout: page
-title: BW InfoCubes and BEx Queries
+title: BW Cube
 description: BW InfoCubes and BEx Queries
 product: xtract-universal
 parent: xtract-universal
 childidentifier: bw-infocubes-and-bex-queries
 permalink: /:collection/:path
-weight: 14
+weight: 11
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=bw-infocubes-and-bex-queries
 ---

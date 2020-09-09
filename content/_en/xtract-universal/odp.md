@@ -1,13 +1,13 @@
 ---
-ref: xtract-universal-18
+ref: xtract-universal-14
 layout: page
-title: Operational Data Provisioning (ODP)
+title: ODP (Operational Data Provisioning)
 description: Operational Data Provisioning (ODP)
 product: xtract-universal
 parent: xtract-universal
 childidentifier: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 16
+weight: 14
 lang: en_GB
 progressstate: 5
 ---
