@@ -149,9 +149,9 @@ Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeiche
 ### File Format 
 Wählen Sie das gewünschte Dateiformat zwischen "Parquet" und "CSV".
 
-Die CSV Settings entsprechen denen der allgemeinen [http-csv Settings](../csv-via-http).
+Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
 
-![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
+![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
 
 
 
