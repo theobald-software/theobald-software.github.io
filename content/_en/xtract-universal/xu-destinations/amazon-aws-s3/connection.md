@@ -52,6 +52,6 @@ Encryption using a custom encrpytion key created on AWS ([AWS Key Management Ser
 ### File Format
 Select the required file format between "Parquet" and "CSV".
 
-The settings for file type *csv* correspond to the ones in the general [Flat File csv settings](../csv-flat-file).
+The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
 	
-![XU_S3_DestinationDetails2](/img/content/XU_S3_DestinationDetails2.png){:class="img-responsive"}
+![XU_S3_DestinationDetails2](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}

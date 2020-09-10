@@ -144,8 +144,8 @@ Option to create a directory within the container for saving files. See also [De
 ### File Format 
 Select the required file format between "Parquet" and "CSV".
 
-The settings for file type *csv* correspond to the ones in the general [Flat File csv settings](../csv-flat-file).
+The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
 
-![azure_blob_destination_settings_csv_settings](/img/content/xu-azure-blob-con-04.png){:class="img-responsive"}
+![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
 
 
