@@ -15,6 +15,8 @@ Folgende Einstellungen können für die Verbindung zu Amazon S3 vorgenommen werd
 
 ![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.png){:class="img-responsive"}
 
+### S§ Einstellungen
+
 **Inherit Credentials from IAM role** <br>
 Die Anmeldeinformationen und Berechtigungen der IAM Rolle, die der [EC2-Instanz](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), auf der Xtract Universal läuft, zugewiesen wurde, werden für die Authentisierung verwendet.
 
@@ -46,7 +48,9 @@ HINWEIS: Diese Einstellungen beziehen sich nicht auf die Transportverschlüsselu
    Verschlüsselung über einen AWS-seitig selber kreierten Schlüssel ([AWS Key Management Services](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingKMSEncryption.html)). Der Schlüssel kann in AWS [hier](https://console.aws.amazon.com/iam/home#/encryptionKeys/) angelegt werden.
 
 
-**CSV Settings**<br>
-Die Einstellungsmöglichkeiten im Tab CSV Settings entsprechen denen der allgemeinen [http-csv](../csv-via-http) Settings.
+### File Format
+Wählen Sie das gewünschte Dateiformat zwischen "Parquet" und "CSV".
 
-![XU_S3_DestinationDetails2](/img/content/XU_S3_DestinationDetails2.png){:class="img-responsive"}
+Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
+
+![XU_S3_DestinationDetails2](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
