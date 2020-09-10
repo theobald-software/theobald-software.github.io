@@ -1,5 +1,5 @@
 ---
-ref: xtract-rs-02
+ref: xtract-rs-09
 layout: page
 title: SAP Customizing
 description: SAP Customizing
@@ -7,7 +7,7 @@ product: xtract-rs
 parent: xtract-rs
 childidentifier: sap-customizing
 permalink: /:collection/:path
-weight: 2
+weight: 9
 lang: de_DE
 ---
 
