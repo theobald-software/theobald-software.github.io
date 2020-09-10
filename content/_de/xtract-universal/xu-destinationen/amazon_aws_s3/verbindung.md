@@ -15,7 +15,7 @@ Folgende Einstellungen können für die Verbindung zu Amazon S3 vorgenommen werd
 
 ![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.png){:class="img-responsive"}
 
-### S§ Einstellungen
+### S3 Einstellungen
 
 **Inherit Credentials from IAM role** <br>
 Die Anmeldeinformationen und Berechtigungen der IAM Rolle, die der [EC2-Instanz](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), auf der Xtract Universal läuft, zugewiesen wurde, werden für die Authentisierung verwendet.
