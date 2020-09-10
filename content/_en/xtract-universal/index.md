@@ -26,7 +26,7 @@ The following overview shows, which components are available to extract data fro
 
 <!--- KE: wir könnten allerdings das so beschreiben, dass die als Orientierungshilfe gilt und auch andere Szenarien technisch möglich sind--->
 
-#### Extraction Types
+### Extraction Types
 
 Xtract Universal offers a set of nine extraction types to cover a range of demands of SAP data extraction.
 
