@@ -27,21 +27,16 @@ Depending on a component you can either use SSIS variables or properties or both
 
 | Component   | SSIS Variables | Properties |
 |-------------|:-----:|:----:|
-| ABAP Report |    x   |      | 
-| BAPI        |    x   |      | 
-| BW Cube     |   x    |      | 
-| BW Hierarchy|   x    |      |
-| BW Loader   |    x   |      |
-| DeltaQ      |   x    |  x    |
-| ODP         |   x    |   x   |
-| OHS         |   x    |      |
-| Query       |   x    |      |
-| Table       |   x    |    x  |
+| [BAPI](../bapi/parametrization)        |   x    |      | 
+| [BW Cube](../bw-cube/parametrization)     |   x    |      | 
+| [BW Hierarchy](../hierarchy/paramerization)|    x   |      |
+| [BW Loader](../bw-loader/parametrization)   |  x     |      |
+| [DeltaQ](../deltaq/parametrization)      | x      |  x    |
+| [ODP](../odp/odp-parametrization)         |   x    |   x   |
+| [OHS](../open-hub-service-ohs/parametrization)         |     x  |      |
+|[Query](../query/parametrization)       |   x    |      |
+| [Report](../report/parametrization) |    x   |      | 
+| [Table](../table/table-parametrization)       | x      |  x    |
 
-
-### Displaying Properties within SSIS
-Parameters appear as properties of the SSIS Data Flow. 
-
-![Properties](/img/content/xis/properties.png){:class="img-reagierend"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

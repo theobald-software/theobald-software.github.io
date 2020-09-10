@@ -24,22 +24,16 @@ Abhängig von einer Komponente können Sie entweder Variablen oder Properties od
 
 | Komponente   | Variablen | Eigenschaften |
 |-------------|:-----:|:----:|
-| ABAP Report |       |      | 
-| BAPI        |       |      | 
-| BW Cube     |       |      | 
-| BW Hierarchy|       |      |
-| BW Loader   |       |      |
-| DeltaQ      |       |      |
-| ODP         |   x    |   x   |
-| OHS         |       |      |
-| Query       |       |      |
-| Table       |       |      |
-| Table Join  |       |      |
+| [BAPI](../xtract-is-bapi/parametrisierung)        |   x    |      | 
+| [BW Cube](../bw-cube/parametrisierung)     |   x    |      | 
+| [BW Hierarchy](../hierarchy/parametrisierung)|    x   |      |
+| [BW Loader](../bw-loader/parametrisierung)   |  x     |      |
+| [DeltaQ](../xtract-is-deltaq/parametrisierung)      | x      |  x    |
+| [ODP](../odp/odp-parametrisierung)         |   x    |   x   |
+| [OHS](../open-hub-service/parametrisierung)         |     x  |      |
+|[Query](../query/parametrisierung)       |   x    |      |
+| [Report](../report/parametrisierung) |    x   |      | 
+| [Table](../xtract-is-table/table-parametrisierung)       | x      |  x    |
 
-
-### Parameter in SSIS anschauen
-Parameter erscheinen als Eigenschaften des SSIS-Datenflusses (Data Flow).
-
-![Properties](/img/content/xis/properties.png){:class="img-reagierend"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

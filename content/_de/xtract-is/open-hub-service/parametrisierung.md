@@ -1,8 +1,8 @@
 ---
 ref: xi-open-hub-service-ohs-05
 layout: page
-title: Settings
-description: Settings
+title: Parametrisierung
+description: Parametrisierung
 product: xtract-is
 parent: open-hub-service
 permalink: /:collection/:path

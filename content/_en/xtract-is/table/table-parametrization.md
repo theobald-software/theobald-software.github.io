@@ -11,6 +11,8 @@ lang: en_GB
 
 ---
 
+The following properties are parameterizable:
+
 |Property Name|Description|
 |:----|:----|
 | `[Xtract Table].[WhereClause]`| Restricts the number of rows included in the results set by the statement SELECT of a query, by using a logical expression.|
@@ -21,4 +23,4 @@ lang: en_GB
 | `[Xtract Table].[MaxDateReplacement]`|Date conversions are applied in case of invalid data in SAP date fields.|
 | `[Xtract Table].[PackageSize]`| Specifies the number of records retrieved per data package.|
 
-Weitere Informationen zur Parametrisierung finden Sie im Knowledge-Base-Artikel ["Dynamization of WHERE conditions of the XIS table components"](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
+Get further information on parameterization from the knowledge base article ["Dynamization of WHERE conditions of the XIS table components"](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).

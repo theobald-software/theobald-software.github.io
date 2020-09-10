@@ -1,8 +1,8 @@
 ---
 ref: xi-table-07
 layout: page
-title: Table Parametrisierung
-description: Table Parametrisierung
+title: Parametrisierung
+description: Parametrisierung
 product: xtract-is
 parent: xtract-is-table
 permalink: /:collection/:path
@@ -10,8 +10,9 @@ weight: 7
 lang: de_DE
 
 ---
+Die folgenden Properties sind parametrisierbar:
 
-|Property Name|Description|
+|Property Name|Beschreibung|
 |:----|:----|
 | `[Xtract Table].[WhereClause]`| Restricts the number of rows included in the results set by the statement SELECT of a query, by using a logical expression.|
 | `[Xtract Table].[ConvertsDates]`|Converts the character-type SAP date to a special date format.|
@@ -22,5 +23,5 @@ lang: de_DE
 | `[Xtract Table].[PackageSize]`| Specifies the number of records retrieved per data package.|
 
 
-["Dynamization of WHERE conditions of the XIS table components"](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
+Weitere Informationen zur Parametrisierung finden Sie im Knowledge-Base-Artikel ["Dynamization of WHERE conditions of the XIS table components"](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
 

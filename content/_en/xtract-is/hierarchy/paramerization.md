@@ -1,8 +1,8 @@
 ---
 ref: xi-hierarchy-04
 layout: page
-title: Settings
-description: Settings
+title: Parametrization
+description: Parametrization
 product: xtract-is
 parent: hierarchy
 permalink: /:collection/:path

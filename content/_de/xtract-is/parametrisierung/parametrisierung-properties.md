@@ -11,4 +11,8 @@ lang: de_DE
 
 ---
 
+### Parameter in SSIS anschauen
+Parameter erscheinen als Eigenschaften des SSIS-Datenflusses (Data Flow).
+
+![Properties](/img/content/xis/properties.png){:class="img-reagierend"} 
 {% include _content/de/parametrization/parametrization-via-variables.md  %}
