@@ -1,13 +1,13 @@
 ---
-ref: xtract-rs-07
+ref: xtract-rs-04
 layout: page
-title: BAPIs and RFC function modules
+title: BAPI
 description: BAPIs and RFC function modules
 product: xtract-rs
 parent: xtract-rs
 childidentifier: bapis-and-rfc-function-modules
 permalink: /:collection/:path
-weight: 7
+weight: 4
 lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=bapis-and-rfc-function-modules
 ---

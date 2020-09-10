@@ -1,13 +1,13 @@
 ---
-ref: xtract-rs-07
+ref: xtract-rs-04
 layout: page
-title: BAPIs und RFC-Funktionsbausteine
+title: BAPI
 description: BAPIs und RFC-Funktionsbausteine
 product: xtract-rs
 parent: xtract-rs
 childidentifier: bapis-und-rfc-funktionsbausteine
 permalink: /:collection/:path
-weight: 7
+weight: 4
 lang: de_DE
 old_url: /Xtract-RS-DE/default.aspx?pageid=bapis-und-rfc-funktionsbausteine
 ---

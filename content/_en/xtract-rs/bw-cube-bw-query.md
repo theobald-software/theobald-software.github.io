@@ -1,13 +1,13 @@
 ---
-ref: xtract-rs-06
+ref: xtract-rs-05
 layout: page
-title: BW Cube / BW Query
+title: BW Cube 
 description: BW Cube / BW Query
 product: xtract-rs
 parent: xtract-rs
 childidentifier: bw-cube-bw-query
 permalink: /:collection/:path
-weight: 6
+weight: 5
 lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=bwcube
 ---

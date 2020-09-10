@@ -1,13 +1,13 @@
 ---
-ref: xtract-rs-05
+ref: xtract-rs-06
 layout: page
-title: Queries
+title: SAP Query
 description: Queries
 product: xtract-rs
 parent: xtract-rs
 childidentifier: queries
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 old_url: /Xtract-RS-EN/default.aspx?pageid=queries
 ---

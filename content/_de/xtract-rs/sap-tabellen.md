@@ -1,13 +1,13 @@
 ---
-ref: xtract-rs-04
+ref: xtract-rs-08
 layout: page
-title: SAP-Tabellen
+title: Table
 description: SAP-Tabellen
 product: xtract-rs
 parent: xtract-rs
 childidentifier: sap-tabellen
 permalink: /:collection/:path
-weight: 4
+weight: 8
 lang: de_DE
 old_url: /Xtract-RS-DE/default.aspx?pageid=sap-tabellen
 ---

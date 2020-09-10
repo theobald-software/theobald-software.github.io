@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-17
 layout: page
-title: ABAP Report
+title: Report
 description: Reports
 product: xtract-universal
 parent: xtract-universal
