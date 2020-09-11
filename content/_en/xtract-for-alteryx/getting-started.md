@@ -23,8 +23,8 @@ The information described in the following section is a prerequisite for all sub
 ![Create-New-Table-Extraction](/img/content/xfa/xfa_create_table_extraction_01.png){:class="img-responsive"}
 2. Under subsection **Connection**, select an existing SAP connection (2) or create a new one (3). (See also [SAP Connection](./introduction/sap-connection)).
 3. Under subsection **Selected Extraction** click **[Edit]**  to configure a new table extraction.
-![Create-New-Table-Extraction2](/img/content/xfa_create_table_extraction_02.png){:class="img-responsive"}. <br>
-The main window of the component opens. In this window you can define simple table extractions or join tables for extractions. In the following example, a single table is extracted.
+![Create-New-Table-Extraction2](/img/content/xfa_create_table_extraction_02.png){:class="img-responsive"}
+4. The main window of the component opens. In this window you can define simple table extractions or join tables for extractions. In the following example, a single table is extracted.
 
 ### Adding an SAP Table
 

@@ -23,4 +23,4 @@ Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail ode
 ****
 #### Weiterführende Links
 - [Voraussetzungen](./systemvoraussetzungen)
-- [Lizenzierung](./lizenz)
+- [Lizenzierung](./lizensierung)

@@ -54,7 +54,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 
 
 {: .box-note }
-**Hinweis:** Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Abschnitt [Fehlerbehandlung](./fehlerbehandlung) und im Knowledge-Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+**Hinweis:** Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Abschnitt [Fehlerbehandlung](./fortgeschrittene-techniken/fehlerbehandlung) und im Knowledge-Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 
 ### Neuinstallation und Update
@@ -68,7 +68,7 @@ Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabil
  Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) auf Updates. Eine neuere Version kann über die ältere Version installiert werden. 
 
 Alle Einstellungen und angelegten Objekte bleiben erhalten.
-Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie den Anweisungen, die im Abschnitt  [Backup und Migration](./backup-und-migration).
+Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie den Anweisungen, die im Abschnitt  [Backup und Migration](./fortgeschrittene-techniken/backup-und-migration).
 
 #### Update-Vorbereitung
 
@@ -108,4 +108,4 @@ Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, k
 
 ****
 #### Weiterführende Links
-- [Backup und Migration](./backup-und-migration)
+- [Backup und Migration](./fortgeschrittene-techniken/backup-und-migration)
