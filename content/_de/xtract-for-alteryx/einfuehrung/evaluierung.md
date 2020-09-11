@@ -9,9 +9,18 @@ permalink: /:collection/:path
 weight: 6
 lang: de_DE
 ---
+### Download von Xtract for Alteryx
 
-Gerne unterstützen wir Sie während der Evaluierungsphase. Selbstverständlich können Sie eine Demoversion von unserer Webseite herunterladen und in Ruhe ausprobieren. <br>
-Sie ist nur zeitlich limitiert und funktioniert sonst ohne Einschränkung.<br>
-Gerne stehen wir Ihnen jederzeit telefonisch oder per Mail für Fragen zur Verfügung:
-[support@theobald-software.com](mailto:support@theobald-software.com)<br>
-[www.theobald-software.com](https://www.theobald-software.com)
+Sie können eine Testversion von der [Theobald Software-Website] (https://theobald-software.com/en/download-trial/) herunterladen und diese 30 Tage lang testen.
+Die Testversion ist nur zeitlich begrenzt und funktioniert ansonsten uneingeschränkt.
+
+### Evaluieren von Xtract for Alteryx
+Während der Evaluierungsphase erhalten Sie garantiert eine uneingeschränkte Unterstützung durch das Theobald Software Support-Team.
+Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail oder Telefon an Theobald Software wenden: <br>
+- [support@theobald-software.com](mailto:support@theobald-software.com)
+- [Internationale Kontaktdaten] (https://theobald-software.com/en/contact/)
+
+****
+#### Weiterführende Links
+- [Voraussetzungen](./systemvoraussetzungen)
+- [Lizenzierung](./lizenz)
