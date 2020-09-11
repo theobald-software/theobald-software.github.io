@@ -1,17 +1,17 @@
 ---
-ref: xu-introduction-08
+ref: xu-advanced-techniques-11
 layout: page
 title: Fehlerbehandlung
 description: Fehlerbehandlung
 product: xtract-universal
-parent: einfuehrung
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
-weight: 8
+weight: 11
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=fehlerbehandlung
 ---
 
-**Dienst startet nicht**
+#### Dienst startet nicht
 
 Wenn der Dienst nicht startet, dann ändern Sie das Benutzerkonto, unter dem der Dienst läuft und stellen Sie sicher, dass es folgende Rechte hat: 
 

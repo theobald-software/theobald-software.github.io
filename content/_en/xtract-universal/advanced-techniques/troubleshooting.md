@@ -1,17 +1,17 @@
 ---
-ref: xu-introduction-09
+ref: xu-advanced-techniques-11
 layout: page
 title: Troubleshooting
 description: Troubleshooting
 product: xtract-universal
-parent: introduction
+parent: advanced-techniques
 permalink: /:collection/:path
-weight: 8
+weight: 11
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=troubleshooting
 ---
 
-**Service did not start**
+#### Service did not start
 
 When a service does not start, configure the service to use an user account with the following rights: 
 
