@@ -10,27 +10,47 @@ weight: 3
 lang: en_GB
 ---
 
-The installation program is a standard installation routine which copies all necessary files into the program directory.
-The setup installs the Visual C++ 2005 Runtime library.  
+### Prerequisites
 
-**recommendation**<br>
-Before installing Xtract For Alteryx, make sure that Alteryx is installed and the Alterxy Designer is closed on your computer.
-This procedure ensures that the XfA components are available and can be displayed in the Alteryx Designer.
+{: .box-note }
+**Note:** administrator permissions are required to install Xtract for Alteryx.
+
+1. Install Alteryx Designer before installing Xtract for Alteryx.
+2. Close Alteryx Designer and then install Xtract for Alteryx as described in the following section.<br>
+Closing Alteryx Designer ensures that the Xtract for Alteryx components are installed properly.
+3. Reopen Alteryx Designer and check if Xtract for Alteryx components are available.
+
+### Installation Routine
+
+The installation program *XtractForAlteryxSetup.exe* is an industry standard installation routine. Execute the *XtractForAlteryxSetup.exe* file and follow the instructions of the installation program.<br>
+
+![Xtract for Alteryx Installation](/img/content/xfa/xfa_install.png){:class="img-responsive"}<br>
+
+Visual C++ 2005 Runtime Libraries and VC++ 2013 Runtime Libraries are installed during the setup. 
+These libraries are prerequisites for using librfc32.dll (Visual C++ 2005 Runtime Libraries) and sapnwrfc.dll (VC++ 2013 Runtime Libraries).
+
+#### Beta version 
+If you have a beta version of Xtract for Alteryx installed on your machine, use uninst.exe to uninstall the beta version.
+Beta version may not be compatible with the released versions. 
+
+### Installation Folder Files
+The list below shows several most important files that are placed into the default directory `C:\Program Files\XtractForAlteryx`: <br>
+
+|Filename | Description |
+|:----|:---|
+| ABAP folder | Folder with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
+| Theobald.Alteryx.Installer.exe | Application for installing Xtract for Alteryx as a plug-in to the Alteryx Designer / Server running on the system. |
+| XtractForAlteryxSetup.exe |Main installation application that extracts the files and starts Theobald.Alteryx.Installer.exe internally |
+| uninst.exe | Tool for uninstalling and removing Xtract for Alteryx with all its components from your machine.|
+| Eula_Xtract_for_Alteryx.rtf |Document containing the license agreement for the use of the software Xtract for Alteryx. |
+|XtractForAlteryxLicense.json| License file with information about the server, the component and runtime.|
+|XtractForAlteryxInstallComponents.json|A metadata file, which contains Information about Xtract for Alteryx (e.g., Name or Keywords for searching within the Alteryx Designer)|
+|XtractForAlteryxSetup.log| Log file to see the exact modifications performed on your system and check whether any errors occurred during installation |
 
 
-### Installation and First Steps
+****
+#### Related Links
+- [Update Installation](./update)
+- [Licensing](./licensing)
 
-The installation is carried out using the supplied installation program in the standard folder C:\Program Files\XtractForAlteryx. <br>
-During installation, certain libraries and programs are stored in the Alteryx installation on the same machine to make the components available later in the Alteryx UI. <br>
-This installation in the target environment is done by the program XtractForAlteryxPluginInstaller.exe. It is triggered by the setup program under the hood. <br>
-In the log file XtractForAlteryxSetup.txt you can read exactly which modifications were made to the system and whether errors occurred during installation.
-If you start Alteryx after installation, the XfA components are available in a separate tab in the toolbox within the Alteryx UI and can be dragged and dropped onto the workflow as usual.
-If you don't see the tab immediately, scroll to the right of the Toolbox tabs. You should find it there.
-
-![Designer](/img/content/xtract_for_alteryx_tools.png){:class="img-responsive"}
-
-
-**Beta version**<br>
-If you have installed the beta version prior to 1.0, please use the uninstaller in the installation folder to uninstall the earlier version. 
-Beta version is not compatible with version 1.0. Only the SAP connections are compatible and can be reused with version 1.0. All extractions must be recreated. 
 
