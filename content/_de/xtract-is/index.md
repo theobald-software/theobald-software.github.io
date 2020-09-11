@@ -37,7 +37,7 @@ Die folgende Übersicht stellt die Typen der Data-Flow-Komponenten dar.
 | Report | Source   | 
 | Table       | Source   |
 
-##### Extraktionstypen
+### Extraktionstypen
 
 - [**BAPI**](./xtract-is-bapi) greift auf BAPIs und RFC-Funktionsmodule zu.
 - [**BW Cube**](./bw-cube) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.

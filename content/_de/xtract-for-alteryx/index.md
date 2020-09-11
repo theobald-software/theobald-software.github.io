@@ -16,6 +16,8 @@ Willkommen in der Online Help von Xtract for Alteryx.
 Xtract for Alteryx ist ein Plug-In für den [Alteryx Designer und Server](https://help.alteryx.com/).
 Xtract for Alteryx ermöglicht es Daten aus dem SAP-System direkt innerhalb des Alteryx Designers in den Datenfluss einzubinden.
 
+### Verfügbare Komponenten
+
 ![XFA-Architecture](/img/content/xfa/Xtract_for_Alteryx.png){:class="img-responsive"}
 
 
@@ -23,8 +25,8 @@ Xtract for Alteryx ermöglicht es Daten aus dem SAP-System direkt innerhalb des 
 **Tipp:** Eine kurze Einführung in das Produkt finden Sie unter [Erste Schritte mit Alteryx](./erste-schritte).
 
 
-### Verfügbare Komponenten
-Die folgenden Komponenten sind innerhalb von Xtract for Alteryx verfügbar:
+### Extraktionstypen
+Die folgenden Extraktionstypen sind innerhalb von Xtract for Alteryx verfügbar:
 
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 

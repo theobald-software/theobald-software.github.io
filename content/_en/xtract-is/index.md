@@ -39,7 +39,7 @@ The overview below depicts the types of the Data Flow components.
 | Table       | Source   |
 
 
-#### Extraction Types
+### Extraction Types
 
 - [**BAPI**](./bapi) accesses BAPIs and RFC function modules.
 - [**BW Cube**](./bw-cube) extracts data from SAP BW InfoCubes and BEx Queries.

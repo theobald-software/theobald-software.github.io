@@ -16,14 +16,16 @@ Welcome to the Online Help of Xtract for Alteryx.
 Xtract for Alteryx is a plug-in for [Alteryx Designer and Server](https://help.alteryx.com/). 
 Xtract for Alteryx enables integrating data from the SAP system into the data flow of your Alteryx solution.
 
+### Available Components
+
 ![XFA-Architecture](/img/content/xfa/Xtract_for_Alteryx.png){:class="img-responsive"}
 
 {: .box-tip }
 **Tip:** For a short introduction into the product, see [Getting Started with Alteryx](./getting-started).
 
 
-### Xtract for Alteryx Components
-The following components are available within Xtract for Alteryx:
+### Extraction Types
+The following extraction types  are available within Xtract for Alteryx:
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
 - [**BAPI**](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP
