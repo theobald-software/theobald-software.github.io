@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-04
+ref: xu-advanced-techniques-12
 layout: page
 title: Backup und Migration
 description: Backup und Migratio
 product: xtract-universal
-parent: einfuehrung
+parent: fortgeschrittene-techniken
 permalink: /:collection/:path
-weight: 4
+weight: 12
 lang: de_DE
 progressstate: 5
 ---
