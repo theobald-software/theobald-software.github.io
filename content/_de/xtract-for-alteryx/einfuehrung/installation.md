@@ -10,22 +10,48 @@ weight: 3
 lang: de_DE
 ---
 
-Das Installationsprogramm ist eine branchenübliche Installationsroutine, die alle nötigen Dateien in das Programmverzeichnis kopieret 
-und im Windows-Programmenü einen Menüeintrag mit einigen Shortcuts anlegt.<br>
-Das Setup installiert die Visual C++ 2005 Laufzeit-Bibliothek (Runtime library).  
+### Voraussetzungen
 
-## Installation und erste Schritte
+{: .box-note }
+**Hinweis:** Administratorberechtigungen sind für die Installation von Xtract for Alteryx erforderlich.
 
-Die Installation erfolgt durch das mitgelieferte Installationsprogramm in den Standardordner *C:\Program Files\XtractForAlteryx*. <br>
-Während der Installation werden bestimmte Bibliotheken und Programmartefakte in die Alteryx-Installation auf derselben Maschine abgelegt, um die Komponenten später in der Alteryx-UI verfügbar zu machen. <br>
-Diese Installation in der Zielumgebung erledigt das Programm *XtractForAlteryxPluginInstaller.exe*. Es wird vom Setup-Programm unter der Haube angestoßen. <br>
-In der Log-Datei *XtractForAlteryxSetup.txt* kann exakt nachgelesen werden, welche Modifikationen am System vorgenommen wurden und ob bei der Installation Fehler aufgetreten sind.<br>
-Wenn Sie nach der Installtion Alteryx starten, stehen die XfA-Komponenten in einem eigenen Tab in der Toolbox innerhalb der Alteryx-UI zur Verfügung und können wie üblich per Drag & Drop auf den Workflow gezogen werden.<br>
-Falls sie den Tab nicht gleich sehen, scrollen sie bei den Toolbox-Tabweiter nach rechts. Er versteckt sich bestimmt dort.
+1. Installieren Sie Alteryx Designer, bevor Sie Xtract for Alteryx installieren.
+2. Schließen Sie den Alteryx Designer und installieren Sie dann Xtract for Alteryx wie im folgenden Abschnitt beschrieben.
+Das Schließen des Alteryx-Designers stellt sicher, dass die Xtract for Alteryx Komponenten korrekt installiert sind.
+3. Öffnen Sie den Alteryx Designer erneut und prüfen Sie, ob Xtract for Alteryx Komponenten verfügbar sind.
 
-![Designer](/img/content/xtract_for_alteryx_tools.png){:class="img-responsive"}
+### Installation von Xtract for Alteryx
 
-**Empfehlung**<br>
-Stellen Sie sicher, dass vor der Installation von Xtract For Alteryx der Alterxy Designer auf Ihrem Rechner geschlossen ist.
-Durch dieses Vorgehen wird sicher gestellt, dass die XfA Komponenten im Alteryx Designer verfügbar sind und angezeigt werden können.
+Das Installationsprogramm *XtractForAlteryxSetup.exe* ist ein branchenübliches Installationsprogramm. Führen Sie die Datei *XtractForAlteryxSetup.exe* aus und folgen Sie den Anweisungen des Installationsprogramms.<br>
 
+![Xtract for Alteryx Installation](/img/content/xfa/xfa_install.png){:class="img-responsive"}<br>
+
+
+Visual C++ 2005 Laufzeitbibliotheken und VC++ 2013-Laufzeitbibliotheken werden während des Setups installiert. 
+Diese Bibliotheken sind Voraussetzung für die Verwendung von librfc32.dll (Visual C++ 2005 Runtime Libraries) und sapnwrfc.dll (VC++ 2013 Runtime Libraries).
+
+#### Beta-Version
+
+Wenn Sie eine Beta-Version von Xtract for Alteryx auf Ihrem Rechner installiert haben, verwenden Sie uninst.exe, um die Beta-Version zu deinstallieren.
+Die Beta-Version ist möglicherweise nicht mit den veröffentlichten Versionen kompatibel. 
+
+### Installationsverzeichnis-Dateien
+Die folgende Liste zeigt einige der wichtigsten Dateien, die im Standardverzeichnis `C:\Programme\XtractForAlteryx` abgelegt werden: <br>
+
+|Dateiname | Beschreibung |
+|:----|:---|
+| ABAP Verzeichnis | Verzeichnis mit kundenspezifischen Funktionsbausteinen (.txt), die den SAP-Transportaufträgen (.zip) entsprechen.|
+| Theobald.Alteryx.Installer.exe | Anwendung zur Installation von Xtract for Alteryx als Plugin für den auf dem System laufenden Alteryx Designer / Server. |
+| XtractForAlteryxSetup.exe | Installationsanwendung, die die Dateien extrahiert und den Theobald.Alteryx.Installer.exe startet. |
+| uninst.exe |Deinstallations-Tool, das Xtract for Alteryx mit all seinen Komponenten von Ihrem Rechner entfernt.|
+| Eula_Xtract_for_Alteryx.rtf |Dokument mit dem Lizenzvertrag für die Nutzung der Software Xtract for Alteryx.  |
+|XtractForAlteryxLicense.json| Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen.|
+|XtractForAlteryxInstallComponents.json|  Eine Metadaten-Datei, die Informationen über Xtract for Alteryx enthält (z.B. Name oder Schlüsselwörter für die Suche innerhalb des Alteryx-Designers)|
+|XtractForAlteryxSetup.log| Protokolldatei, in der die genauen Änderungen aufgezeichnet werden, die auf Ihrem System durchgeführt wurden. Diese Datei wird auch verwendet zum Überprüfen, ob während der Installation Fehler aufgetreten sind .|
+
+
+
+****
+#### Weiterführende Links
+- [Installation eines Updates](./update)
+- [Lizensierung](./lizensierung)
