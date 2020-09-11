@@ -1,8 +1,8 @@
 ---
 ref: xu-introduction-07
 layout: page
-title: Evaluation
-description: Evaluation
+title: Download and Evaluation
+description: Download and Evaluation
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
@@ -11,13 +11,18 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=evaluation
 ---
 
-We also offer support during the evaluation phase for Xtract Universal. 
+### Downloading Xtract Universal
 
-Of course, you can download a demo version from our website and try it by yourself. 
+You can download a trial version from the [Theobald Software website](https://theobald-software.com/en/download-trial/) and evaluate it for 30 days.
+The trial version is only time limited and works otherwise without any restrictions.
 
-It is only time limited and works without any restrictions.
+### Evaluating Xtract Unversal
+You are guaranteed to get an unrestricted support by the Theobald Software support team during the evaluation phase.
+In case of any questions or doubts, feel free to contact Theobald Software by e-mail or phone at any time: <br>
+- [support@theobald-software.com](mailto:support@theobald-software.com)
+- [International contact details](https://theobald-software.com/en/contact/)
 
-If you have any further questions, please don't hesitate to contact us via phone or mail.
-
-[support@theobald-software.com](mailto:support@theobald-software.com)<br> 
-[www.theobald-software.com](https://www.theobald-software.com)
+****
+#### Related Links
+- [Requirements](./requirements)
+- [Licensing](./licensing)

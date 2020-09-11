@@ -1,12 +1,12 @@
 ---
-ref: xu-introduction-08
+ref: xu-introduction-01
 layout: page
 title: Systemvoraussetzungen
 description: Systemvoraussetzungen
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 8
+weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=systemvoraussetzungen
 Progressstate: 5
