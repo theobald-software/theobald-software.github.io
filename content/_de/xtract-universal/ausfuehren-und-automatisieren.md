@@ -32,9 +32,16 @@ b.      Parameterübergabe in xu.exe
 
 -->
 
-In diesem Kapitel werden folgende Themen beschrieben: 
-- Extraktion ausführen
-- Parametrisierung
-- Aufruf mit einem externen Skript, Scheduler oder ETL-Tool 
-- Ausführliches Beispiel
-- Referenz zur Kommandozeile
+Dieser Abschnitt beschäftigt sich mit dem [Ausführen](./automation/call-extraction) und Automatisieren von Extraktionen.
+
+Die Extraktionen können über verschiedene Wege aufgerufen werden: 
+- Über die [Kommandozeile](./automation/call-via-commandline)
+- Über ein [Webservice](./automation/call-via-webservice)
+- Über ein [externes Skript](./automation/call-via-script)
+- Über einen [Scheduler](./automation/call-via-scheduler)
+- Über ein [ETL-Tool](./automation/call-via-etl)
+
+Extraktionen können über zwei Wege parametrisiert werden:
+- Über [Extraktionsparameter](../xu-parameter)
+- Über [Parametrisierung in SQL](../xu-parameter-sql)
+

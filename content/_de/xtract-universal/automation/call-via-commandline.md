@@ -10,73 +10,58 @@ weight: 2
 lang: de_DE
 ---
 
-Zum Ausführen von Extraktionen bietet Xtract Universal (XU) ein Kommandozeilenprogramm an, sowohl in einer Windows-Version (xu.exe) als auch in einer für Unix / Linux (xu.elf). 
-Die Funktionalität beider Versionen ist dieselbe. Daher sprechen wir im Folgenden meistens nur von der Windows-Version xu.exe stellvertretend für beide Versionen. Wenn es Unterschiede gibt, werden wir explizit drauf hinweisen.
+Zum Ausführen von Extraktionen bietet Xtract Universal ein Kommandozeilen-Tool an, sowohl in einer Windows-Version (xu.exe) als auch in einer für Unix- / Linux-Version (xu.elf). 
+Die Funktionalität beider Versionen ist identisch. 
 
-### Installation der Kommandozeile
+### Installation des Kommandozeilen-Tools
 
-xu.exe / xu.elf sind eigenständige Programme, die keine Installation benötigen. Die xu.exe / xu.elf Datei kann einzeln in beliebige Verzeichnisse kopiert und dort ausgeführt werden. 
-Die Windows-Version xu.exe finden Sie im Installationsverzeichnis (Standardmäßig unter: C:\Program Files\XtractUniversal).
+xu.exe / xu.elf sind eigenständige Programme, die keine Installation benötigen. Die xu.exe / xu.elf-Datei kann einzeln in beliebige Verzeichnisse kopiert und dort ausgeführt werden. 
 
-#### Linux-Version der Kommandozeile
-Die Linux Version können Sie unter folgendem Link herunterladen:
-https://cdn-files.theobald-software.com/download/XtractUniversal/xu.elf.tar.gz 
+Die Windows-Version des Kommandozeilen-Tools `xu.exe` finden Sie im Installationsverzeichnis (standardmäßig unter: `C:\Program Files\XtractUniversal´).
 
-## Bedienung der Kommandozeile 
-Eine Kurzdokumentation zur Verwendung kann mit dem Parameter -h angezeigt werden:
-```
-xu.exe -h
-xu.elf -h
-```
+Die Linux-Version Kommandozeilen-Tools `xu.elf` können Sie von der [Theobald Software](https://cdn-files.theobald-software.com/download/XtractUniversal/xu.elf.tar.gz ) herunterladen.
+
+
 ### Eine Extraktion aufrufen
-xu.exe verbindet sich zu einem XU Service und startet dort eine Extraktion mit optionalen Laufzeitparametern. Der XU Service, die Extraktion, sowie die Laufzeitparameter werden per über Kommandozeilenparameter angegeben.
-Um eine Extraktion auf dem Xtract Universal Server zu starten, nutzen Sie den folgenden Befehl
-```
-xu.exe -n <name> [-s <host>] [-p <port>] [-o <option>]
-```
+Das Kommandozeilen-Tool `xu.exe / xu.elf` verbindet sich zu einem XU-Service und startet eine Extraktion mit optionalen Laufzeitparametern. 
 
-Es gibt folgende Optionen beim Aufruf einer Extraktion: 
-* -h 
-Gibt die Hilfe-Seite aus
-* -s HOST    
-Die Host- oder IP-Adresse, die für die Verbindung verwendet werden soll. [Standardwert: localhost]. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.
-* -p PORT    
-Der Port vom XU Server. [Standardwert: 8065]. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.
-* -o OPTION  
-Laufparameter, die beim Ausführen der Extraktion verwendet werden.
-Das Format für OPTION ist <Name>=<Wert>. Es können mehrere Parameter verwendet werden. Format ist: 
-```
--o parameter1=wert1 -o parameter2=wert2  
-```
-* -e         Verwendet TLS (1.1 oder höher) für die Transportsicherheit.
-* -a         Bricht alle aktuell laufenden Instanzen der angegebenen Extraktion ab.
-* -c         Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen. Dies gilt nur für Pull-Destinationen.
+Der XU-Service, die Extraktion, sowie die Laufzeitparameter werden über Kommandozeilenparameter angegeben.
+
+Um eine Extraktion auf dem Xtract Universal Server zu starten, nutzen Sie den folgenden Befehl:
+
+`xu.exe -n <name> [-s <host>] [-p <port>] [-o <option>]`
+
+
+### Bedienung des Kommandozeilen-Tools
+
+| Befehl   | Beschreibung |   |
+|----------|-----| ----- |
+| -h       | Eine Kurzdokumentation zur Verwendung kann mit dem Parameter -h angezeigt werden  |   |
+|   -s     |   HOST   |  Die Host- oder IP-Adresse, die für die Verbindung verwendet werden soll. [Standardwert: localhost]. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.|
+| -p   |  PORT | Der Port vom XU Server. [Standardwert: 8065]. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.  |
+|  -o    |   OPTION    | Laufparameter, die beim Ausführen der Extraktion verwendet werden. Das Format für OPTION ist <Name>=<Wert>. Es können mehrere Parameter verwendet werden. Format ist: `-o parameter1=wert1 -o parameter2=wert2`.|
+|  -e   | Verwendet TLS (1.1 oder höher) für die Transportsicherheit. |  |
+| -a   |  Bricht alle aktuell laufenden Instanzen der angegebenen Extraktion ab.|   |
+|  -c  |  Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen. Dies gilt nur für Pull-Destinationen.  |     | 
+| -n  |     |    |
 
 Unten werden ein paar Beispiele aufgeführt.
-```
-xu.exe -n MaterialText
-```
+`xu.exe -n MaterialText`
 Vordefinierte bzw. Benutzerdefinierte Parameter finden Sie im "Run Extraction"-Dialog. Diese Parameter können Sie mit der Option -o überschreiben.
 
-```
-xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000
-xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e
-xu.exe -n MaterialText -a
-```
+`xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000` <br>
+`xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e` <br>
+`xu.exe -n MaterialText -a` <br>
 
-#### Aufruf über URL-Parameter (nicht mehr empfohlen)
+### Aufruf über URL-Parameter (nicht mehr empfohlen)
 Die Möglichkeit, eine URL als einzigen Parameter mitzugeben, existiert nur aus Rückwärtskompatibilitätsgründen und wird nicht mehr empfohlen:
-```
-xu.exe <url>
-```
+`xu.exe <url>`
 Führt eine Extraktion basierend auf der <url> die Extraktion. 
 Die URL finden Sie im "Run Extraction"-Dialog des Xtract Universal Designers. <url> sollte in doppelte Anführungszeichen (") gesetzt werden.
 
-Beispiel:
-```
-xu.exe "http://localhost:8065/?name=MaterialText"
-xu.exe "http://localhost:8065/?name=MyExtractionName&Variable=Value"
-```
+Beispiel: <br>
+`xu.exe "http://localhost:8065/?name=MaterialText"` <br>
+`xu.exe "http://localhost:8065/?name=MyExtractionName&Variable=Value"`
 
 ### Rückgabewert 
 Nachdem xu.exe / xu.elf beendet wurde, zeigt der Rückgabewert des Programms an, ob Fehler während der Ausführung aufgetreten sind oder nicht. 
@@ -84,19 +69,19 @@ Ein Rückgabewert 0 zeigt eine fehlerfreie Ausführung an.
 Rückgabewerte unter 1000 entsprechen dem HTTP Status Code des Fehlers. 
 Rückgabewerte ab 1000 zeigen andere Fehler an. Die Details des jeweiligen Fehlers können den Logmeldungen (stderr) entnommen werden. 
 
-Rückgabewert	Beschreibung
-```
-0		Extraktion wurde erfolgreich ausgeführt
-404 	Extraktion existiert nicht
-1001 	Ein undefinierter Fehler ist aufgetreten
-1002 	Die Datei konnte nicht gefunden werden
-1013 	Ungültige Eingabedaten
-1014 	Die Anzahl der Argumente ist ungültig
-1015 	Der Name des Parameters ist unbekannt
-1016 	Das Argument ist ungültig
-1053 	Die URL ist falsch
-1087 	Der Parameter ist ungültig
-```
+|Rückgabewert |	Beschreibung |
+|  ----  |  -------    |
+|0	|	Extraktion wurde erfolgreich ausgeführt |
+|404 |	Extraktion existiert nicht |
+|1001 |	Ein undefinierter Fehler ist aufgetreten |
+|1002 |	Die Datei konnte nicht gefunden werden |
+|1013 |	Ungültige Eingabedaten |
+|1014 |	Die Anzahl der Argumente ist ungültig |
+|1015 |	Der Name des Parameters ist unbekannt |
+|1016 |	Das Argument ist ungültig |
+|1053 |	Die URL ist falsch |
+|1087 |	Der Parameter ist ungültig |
+
 
 ### Standardausgabe
 Die Ausgabe ist abhängig vom Destinationstyp der Extraktion. 
@@ -142,7 +127,7 @@ Xtract Universal bietet auch weitere [Webservices](./call-via-webservice#weitere
 - Medataten der Extraktion abfragen 
 Siehe dazu die Dokumentation zum Aufruf via Webservice.
 
-Weitere Themen:
+#### Weiterführende Links:
 - [Extraktion via Skript ausführen](./call-via-script)
 - [Extraktion via Scheduler ausführen](./call-via-scheduler)
 - [Extraktion via ETL-Tool ausführen](./call-via-etl)
