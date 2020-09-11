@@ -1,7 +1,7 @@
 ---
 ref: xfa-introduction-03
 layout: page
-title: Installation and First Steps
+title: Installation 
 description: Installation and First Steps
 product: xtract-for-alteryx
 parent: introduction
