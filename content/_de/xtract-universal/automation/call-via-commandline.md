@@ -28,10 +28,12 @@ oder als übersichtliche Tabelle
 ### Eine Extraktion aufrufen
 Der XU-Service, die Extraktion, sowie die Laufzeitparameter werden über Kommandozeilenparameter angegeben.
 
-Um eine Extraktion auf dem Xtract Universal Server zu starten, muss der Befehl in folgender Syntax aufgerufen werden:
+Um eine Extraktion auf dem Xtract Universal Server zu starten, muss der Befehl in folgender Form aufgerufen werden:
 
+Syntax:
 `xu.exe -n <name> [-s <host>] [-p <port>] [-o <option>]... [-e] [-a] [-c]`
-example:
+
+Beispiel:
 `xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e`
 
 Das Kommandozeilen-Tool verbindet sich zu einem XU-Service und startet eine Extraktion mit den folgenden optionalen Laufzeitparametern.
