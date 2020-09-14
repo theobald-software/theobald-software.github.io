@@ -13,7 +13,8 @@ lang: de_DE
 Die Ausführung von Extraktionen kann in Xtract Universal über die Kommandozeilen-Tools `xu.exe` (Windows Umgebung) als auch `xu.elf` (Unix-, Linuxumgebung) durchgeführt werden.
 Beide Versionen unterscheiden sich nicht in ihrer Funktionalität und können als eigenständige Programme in beliebigen Verzeichnissen kopiert uns ausgeführt werden. 
 
-Das Kommandozeilen-Tools `xu.exe` befindet sich nach der Installation in das Standardverzeichnis `C:\Program Files\XtractUniversal`, siehe [Dateien des Installationsverzeichnisses](./einfuehrung/installation-und-update#dateien-des-installationsverzeichnisses).
+Das Kommandozeilen-Tools `xu.exe` befindet sich nach der Installation in das Standardverzeichnis `C:\Program Files\XtractUniversal`,<br> 
+siehe [Dateien des Installationsverzeichnisses](./einfuehrung/installation-und-update#dateien-des-installationsverzeichnisses).
 
 Die Linux-Version Kommandozeilen-Tools `xu.elf` kann von folgendem [Download Link](https://cdn-files.theobald-software.com/download/XtractUniversal/xu.elf.tar.gz ) bezogen werden.
 
@@ -38,24 +39,24 @@ Beispiel:
 
 Das Kommandozeilen-Tool verbindet sich zu einem XU-Service und startet eine Extraktion mit den folgenden optionalen Laufzeitparametern.
 
-| Laufzeitparameter   | Beschreibung | Syntax  |
-|---|---| --- |
+| Laufzeit-<br>parameter   | Beschreibung | Syntax  |
+|:---|:---| --- |
 | -n   |  Angabe des Namens der Extraktion analog zum XU-Designer.  | `c:\Program Files\XtractUniversal>xu.exe -n <name>` |
-| -h        |  Eine Kurzdokumentation zur Verwendung kann mit dem Parameter -h angezeigt werden  |  | `c:\Program Files\XtractUniversal>xu.exe -h` |
-|   -s       |  Die Host- oder IP-Adresse, die für die Verbindung verwendet werden soll - Standardwert: localhost. Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.|  `c:\Program Files\XtractUniversal>xu.exe -s <host>`|
+| -h        |  Eine Kurzdokumentation zur Verwendung kann mit dem Parameter -h angezeigt werden  |   `c:\Program Files\XtractUniversal>xu.exe -h` |
+|   -s       |  Die Host- oder IP-Adresse, die für die Verbindung verwendet werden soll - Standardwert: localhost. <br> Den aktuellen Wert finden Sie im Dialog "Run" des Xtract Universal Designers.|  `c:\Program Files\XtractUniversal>xu.exe -s <host>`|
 | -p    | Der Port vom XU-Server - Standardwert: 8065. Den aktuellen Wert finden Sie im Dialog *Run* des Xtract Universal Designers.  | `c:\Program Files\XtractUniversal>xu.exe -p <port>` |
-|  -o     | Laufparameter, die beim Ausführen der Extraktion verwendet werden. Das Format für den Parameter OPTION ist <Name> = <Wert>. Es können mehrere Parameter verwendet werden. Format ist: `-o parameter1=wert1 -o parameter2=wert2`.|
+|  -o     | Laufparameter, die beim Ausführen der Extraktion verwendet werden. Es können mehrere Parameter verwendet werden. | `-o parameter1=wert1 -o parameter2=wert2`.|
 |  -e  |Verwendet TLS (1.1 oder höher) für die Transportsicherheit. |   `c:\Program Files\XtractUniversal>xu.exe -e`|
 | -a    |Bricht alle aktuell laufenden Instanzen der angegebenen Extraktion ab. | `c:\Program Files\XtractUniversal>xu.exe -a` |
-|  -c   | Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen. Dies gilt nur für Pull-Destinationen. | `c:\Program Files\XtractUniversal>xu.exe -c` |  
+|  -c   | Löscht den Ergebnis-Cache für die angegebene Extraktion und Optionen.<br> Dies gilt nur für Pull-Destinationen. | `c:\Program Files\XtractUniversal>xu.exe -c` |  
 
 #### Beispiele
 
-`xu.exe -n MaterialText`
-`xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000`
-`xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e`
-`xu.exe -n MaterialText -a`
-`xu.exe "http://localhost:8065/?name=MaterialText&rows=1000"`
+`xu.exe -n MaterialText`<br>
+`xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000`<br>
+`xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e`<br>
+`xu.exe -n MaterialText -a`<br>
+`xu.exe "http://localhost:8065/?name=MaterialText&rows=1000"`<br>
 
 
 ### Rückgabewert 
