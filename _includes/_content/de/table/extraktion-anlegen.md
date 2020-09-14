@@ -21,7 +21,7 @@ Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** ange
 |:------------|:-----|
 | 1  | Feldselektion, Filterung |  
 | 2  | Filterfelder   |  
-| 3  | Conversion Routine  |
+| 3  | Conversion Routine - Im Data Dictionary gespeicherten Konvertierungsroutinen für die jeweiligen Felder der Tabelle. |
 | 4  | Vorschaufenster, Ergebnis der Umwandlung (Conversion)   |   
 
 

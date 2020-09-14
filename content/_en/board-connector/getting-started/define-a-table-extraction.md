@@ -33,3 +33,4 @@ In the opened window you can define simple table extractions or join tables for 
 
 
 
+{% include _content/en/tables/define-a-table-extraction.md  %}

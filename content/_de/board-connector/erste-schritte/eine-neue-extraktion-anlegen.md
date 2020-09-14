@@ -29,9 +29,9 @@ Das Fenster "Create Extraction" wird geöffnet. <br>
 4. Wählen Sie die Art der Extraktion. Im aufgeführten Beispiel: **SAP Table or View** (3).
 5. Klicken Sie auf **[OK]** (4) zum Bestätigen.
 
-Das Fenster "Extract Single and Joint SAP Tables or Views" wird geöffnet.
-Wählen Sie die zuvor erstellte SAP-Verbindung und geben Sie der Extraktion einen eindeutigen Namen.
+Das Fenster "Extract Single and Joint SAP Tables or Views" wird geöffnet. <br>
+In diesem Fenster können Sie einfache Tabellenextraktionen definieren oder Tabellen für Extraktionen zusammenfügen (Table Joins). Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
 
-In dem geöffneten Fenster können Sie einfache Tabellenextraktionen oder Join-Tabellen für Extraktionen definieren. Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
 
+{% include _content/de/table/extraktion-anlegen.md  %}
 
