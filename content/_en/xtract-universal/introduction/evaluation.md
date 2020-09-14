@@ -25,4 +25,4 @@ In case of any questions or doubts, feel free to contact Theobald Software by e-
 ****
 #### Related Links
 - [Requirements](./requirements)
-- [Licensing](./licensing)
+- [Licensing](./license)
