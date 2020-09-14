@@ -54,7 +54,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 
 
 {: .box-note }
-**Hinweis:** Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Abschnitt [Fehlerbehandlung](./fortgeschrittene-techniken/fehlerbehandlung) und im Knowledge-Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+**Hinweis:** Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Abschnitt [Fehlerbehandlung](../fortgeschrittene-techniken/fehlerbehandlung) und im Knowledge-Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 
 ### Neuinstallation und Update
