@@ -30,3 +30,14 @@ Das Standardverzeichnis ist `C:\Program Files\XtractForAlteryx`.
 </div>
 
 ![License information](/img/content/xfa/xfa_about_license.png){:class="img-responsive" width="600px"}
+
+### Wartung
+Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website] (https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) von Theobald Software. Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
+Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).
+
+
+****
+##### Verwandte Links
+- [Kundenportal - My Theobald Software](https://my.theobald-software.com/)
+
+
