@@ -6,7 +6,7 @@ description: CSV (via HTTP)
 product: xtract-universal
 parent: xu-destinationen
 permalink: /:collection/:path
-weight: 11
+weight: 12
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=csv-via-http
 ---

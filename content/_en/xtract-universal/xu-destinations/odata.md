@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: odata
 permalink: /:collection/:path
-weight: 12
+weight: 14
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=odata-atom
 progressstate: 5

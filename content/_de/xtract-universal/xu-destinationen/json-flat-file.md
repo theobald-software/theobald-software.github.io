@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinationen
 childidentifier: json-flat-file
 permalink: /:collection/:path
-weight: 13
+weight: 11
 lang: de_DE
 
 ---

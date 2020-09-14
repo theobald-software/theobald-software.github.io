@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinations
 childidentifier: csv-flat-file
 permalink: /:collection/:path
-weight: 14
+weight: 10
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-flat-file
 progressstate: 5

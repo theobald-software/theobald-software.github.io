@@ -6,7 +6,7 @@ description: JSON (via HTTP)
 product: xtract-universal
 parent: xu-destinations
 permalink: /:collection/:path
-weight: 10
+weight: 13
 lang: en_GB
 progressstate: 5
 ---

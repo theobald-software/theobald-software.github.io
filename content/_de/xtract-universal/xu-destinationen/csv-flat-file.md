@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xu-destinationen
 childidentifier: csv-flat-file
 permalink: /:collection/:path
-weight: 14
+weight: 10
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=zielumgebungen
 ---
