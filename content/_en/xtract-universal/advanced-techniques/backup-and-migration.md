@@ -18,7 +18,7 @@ progressstate: 5
 {: .box-tip }
 **Recommendation:** Make sure to create *regular* backups of the configuration files to save the work invested in designing and optimizing your data extraction processes.
 
-A backup allows you to easily switch back to the previous product version, if needed. See also section [Installation and Update](./installation-and-update).
+A backup allows you to easily switch back to the previous product version, if needed. See also section [Installation and Update](../introduction/installation-and-update).
 
 ### Configuration Files
 All configuration files of extractions, sources, destinations and the server are stored in the sub-directory `config` of the Xtract Universal program directory. <br>
@@ -30,8 +30,8 @@ All configuration files of extractions, sources, destinations and the server are
 |`destinations`|Directory containing the [destinations](../xu-destinations). Each `.json` file contains a destination of the same name.                                       |
 |`extractions` |Directory containing the [extractions](../getting-started/define-a-table-extraction). Each sub-directory contains an extraction of the same name.          |
 |`server`      |Directory containing the [server settings](../server/server-settings).                                                                                        |
-|`sources`     |Directory containing [SAP connections](./sap-connection). Each sub-directory contains a source of the same name.                                              |
-|`version.txt` |Text file containing the product version of the current configuration. See also [New Installation and Update](./installation-and-update#new-installation-and-update).|
+|`sources`     |Directory containing [SAP connections](../introduction/sap-connection). Each sub-directory contains a source of the same name.                                              |
+|`version.txt` |Text file containing the product version of the current configuration. See also [New Installation and Update](../introduction/installation-and-update#new-installation-and-update).|
 
 ### How do I Create a Backup?
 Copy the complete `config` directory (`C:\Program Files\XtractUniversal\config` by default) of the machine running the Xtract Universal Service and store the files in safe and secure locations.
@@ -78,5 +78,5 @@ You can alternatively restore parts of the backup, by copying e.g., only the des
 
 ****
 #### Related Links
-- [Installation and Update](./installation-and-update)
+- [Installation and Update](../introduction/installation-and-update)
 - [Version History](https://kb.theobald-software.com/version-history/xtract-universal-version-history)

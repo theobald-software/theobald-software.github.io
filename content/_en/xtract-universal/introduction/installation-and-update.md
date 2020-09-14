@@ -41,14 +41,14 @@ The list below shows several most important files that are placed into the defau
 | ABAP directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../sap-customizing).|
 | Alteryx directory| Directory with a plugin setup for the [Alteryx destination](../xu-destinations/alteryx/alteryx-requirements).|
 | logs directory| Directory with server and extraction etc. logs. See also section [Logging](../logging). |
-| config directory | Directory containing all SAP connections, extractions, destinations and other settings. See also [Backup and Migration](./backup-and-migration).|
+| config directory | Directory containing all SAP connections, extractions, destinations and other settings. See also [Backup and Migration](../advanced-techniques/backup-and-migration).|
 | powerbi directory| Directory containing files related to [Power BI Connector Destination](../xu-destinations/Power-BI-Connector).|
 | result-cache directory | Directory with extraction cache files, only applicable for pull destinations. See also sections [Pull Destinations](../xu-destinations#pull-and-push-destinations) and [General Settings > Misc. Tab > Cache Result Setting](../getting-started/general-settings#misc-tab).|
 | xu.exe | Command line tool used for executing extractions. See also section [Scheduling an Extraction](../advanced-techniques/scheduling_extraction). |
 | XtractDesigner.exe | [Xtract Universal Designer](../getting-started/designer-overview) application to create, test and monitor extractions.|
 | ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing Xtract Universal with all its components from your machine. |
-|XtractUniversalSetup.exe| Setup of the currently installed version. See also [Migrating to a Different Machine](./backup-and-migration#migration-to-a-different-machine).|
+|XtractUniversalSetup.exe| Setup of the currently installed version. See also [Migrating to a Different Machine](../advanced-techniques/backup-and-migration#migration-to-a-different-machine).|
 | Eula_XtractUniversal.rtf | Document containing the license agreement for the use of the software Xtract Universal.|
 | XtractUniversalLicense.json |  License file with information about the server, the component and runtime. |
 
@@ -67,7 +67,7 @@ Create a backup of the directory: `C:\Program Files\XtractUniversal\config` at r
 A regular update of the software is crucial for stable performance, especially major changes and high ([H]) priority
 updates. Check the [Version history](https://kb.theobald-software.com/version-history) for updates. A newer version
 can be installed over the older version. All settings and created objects are preserved. When migrating data and
-settings to another server, follow the instructions described in section [Backup and Migration](./backup-and-migration).
+settings to another server, follow the instructions described in section [Backup and Migration](../advanced-techniques/backup-and-migration).
 
 #### Update Preparation
 
@@ -79,7 +79,7 @@ informs about changes in the version history and release notes.
 2. Make sure that the test environment is a copy of the current production environment.
 3. Check the [Version History](https://kb.theobald-software.com/version-history) and release notes in the
 knowledge base to check, if update is needed.
-4. Create a [backup](./backup-and-migration) of the current installation.
+4. Create a [backup](../advanced-techniques/backup-and-migration) of the current installation.
 5. Conduct any necessary preparations and changes as described in the Release Note / Version History. In case of major changes, use the ConfigConverter.
 
 ### Upgrading Major Releases - ConfigConverter
@@ -108,4 +108,4 @@ If the *ConfigConverter* is not executed automatically during installation, it c
 
 ****
 #### Related Links
-- [Backup and Migration](./backup-and-migration)
+- [Backup and Migration](../advanced-techniques/backup-and-migration)
