@@ -48,7 +48,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | XtractDesigner.exe | [Xtract Universal Designer](../erste-schritte/designer-overview) Anwendung zum Erstellen, Testen und Überwachen von Extraktionen.|
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Quellen (Sources), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von Xtract Universal mit allen dazugehörigen Komponenten von Ihrer Maschine. |
-|XtractUniversalSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](.fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).|
+|XtractUniversalSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](../fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).|
 | Eula_XtractUniversal.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Xtract Universal.|
 | XtractUniversalLicense.json | Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
