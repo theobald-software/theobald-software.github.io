@@ -33,7 +33,7 @@ When starting the setup, components (1) can be selected during the installation.
 
 The license installation procedure is described in the section [Installing the license](license#installing-the-xtract-universal-license---xtractuniversallicensejson).
 
-#### Installation Directory Files
+### Installation Directory Files
 The list below shows several most important files that are placed into the default directory ``C:\Program Files\XtractUniversal`` after installation:
 
 |Filename | Description |
