@@ -9,23 +9,42 @@ childidentifier: table
 permalink: /:collection/:path
 weight: 9
 lang: en_GB
+progressstate: 5
 ---
 
-The Xtract for Alteryx Table data source is used to extract data from SAP tables and views and process it in Alteryx in the usual way. <br> 
+### About the Table Component
+The Table component can be used to extract content from SAP tables and views and process it in Alteryx.
+The Table component is also used to join several tables on the SAP side, see [Table Joins](./table-joins).<br> 
 
-The table component is also used to join several tables (and views) on the SAP side.<br> 
-Possible scenarios would be to join tables with header and item data (for example, a purchase order or invoice) or tables with master data and texts (for example, a material). <br> 
-The corresponding SQL command is generated dynamically and executed on the SAP server. <br> 
+Table component supports the following table types:
+- Transparent tables
+- Pool tables
+- Cluster tables
 
-The component can use standard SAP function modules to extract data from a single table and view. <br> 
-However, we offer our own function module, which extracts the data more efficiently and solves many problems of the SAP standard function modules. <br>
-Joining tables is only possible with our own function module. <br> 
+For an introduction to the component and its basic functions, see [Getting Started with Xtract for Alteryx](../getting-started).
 
-So if you'd like 
-- want to have better performance when extracting the data, or 
-- Extract large tables and views, which is impossible with the standard function module, or 
-- have further restrictions with the SAP standard function module (data type, table type, and so on) or 
-- Want to join several tables
-then you have to install the function module supplied by us in the SAP system and use it. 
+{: .box-note }
+**Note:** when extracting tables from SAP you may encounter several **restrictions** when using the SAP standard function module (RFC_READ_TABLE).<br>
+To avoid possible restrictions, you can use the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 
 
+See further information on possible restrictions and on installing the [custom function module](../sap-customizing#rfc_read_table-restrictions).
+
+{: .box-note }
+**Note:** The Table component is generally used for full load. For incremental data extraction from tables and views, you can define a WHERE-clause on specific fields e.g., time stamp. 
+
+{: .box-tip }
+**Tip:** ODP component is a more convenient option for incremental extraction e.g., using [extractors](../odp/odp-extractors).
+
+### To Use Table Component
+
+1. Drag & drop "Xtract Table" to your Alteryx workflow.
+2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the Table component opens.
+
+The majority of the functions of the component can be accessed using the main window.
+
+### Table Main Window - Functions Overview
+The following sections give an overview over the functions that can be accessed over the main component window.
+![Table Extractor](/img/content/xfa/xfa-table-extractor.png){:class="img-responsive"}
+
+The following sections contain details on the component:
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
