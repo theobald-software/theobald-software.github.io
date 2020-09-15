@@ -13,26 +13,26 @@ lang: de_DE
 
 ### Über die Table-Komponente
 Die Table-Komponente kann verwendet werden, um Inhalte aus SAP-Tabellen und Views zu extrahieren und sie in Alteryx zu verarbeiten.
-Die Table-Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe[Table-Joins](../table-joins).<br> 
+Die Table-Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe[Table-Joins](./table/table-joins).<br> 
 
 Die Table-Komponente unterstützt die folgenden Tabellentypen:
 - Transparente Tabellen
 - Pool-Tabellen
 - Cluster-Tabellen
 
-Eine Einführung in die Komponente und ihre Grundfunktionen finden Sie unter [Erste Schritte mit Xtract for Alteryx](../erste-schritte).
+Eine Einführung in die Komponente und ihre Grundfunktionen finden Sie unter [Erste Schritte mit Xtract for Alteryx](./erste-schritte).
 
 {: .box-note }
 **Hinweis:** Beim Extrahieren von Tabellen aus SAP können Sie bei der Verwendung des SAP-Standardfunktionsbausteins (RFC_READ_TABLE) auf einige **Einschränkungen** stoßen.<br>
 Um mögliche Einschränkungen umzugehen, können Sie auf Ihrem SAP-System den Theobald Software Z-Funktionsbaustein  *Z_THEO_READ_TABLE* verwenden. 
 
-Weitere Informationen zu möglichen Einschränkungen und zur Installation des Z-Funktionsbausteins finden Sie unter [SAP Customizing - Z-Funktionsbaustein](../sap-customizing).
+Weitere Informationen zu möglichen Einschränkungen und zur Installation des Z-Funktionsbausteins finden Sie unter [SAP Customizing - Z-Funktionsbaustein](./sap-customizing).
 
 {: .box-note }
 **Hinweis:** Die Table-Komponente wird im Allgemeinen für ein Full-Load verwendet. Für die inkrementelle Datenextraktion aus Tabellen und Views können Sie eine WHERE-Bedingung für bestimmte Felder, z.B. Zeitstempel, definieren. 
 
 {: .box-tip }
-**Tipp:** Die ODP-Komponente ist eine bequemere Option für die inkrementelle Datenextraktion, z.B. mit Hilfe von [Extraktoren](../odp/odp-extractors).
+**Tipp:** Die ODP-Komponente ist eine bequemere Option für die inkrementelle Datenextraktion, z.B. mit Hilfe von [Extraktoren](./odp/odp-extractors).
 
 ### Table-Komponente verwenden
 
