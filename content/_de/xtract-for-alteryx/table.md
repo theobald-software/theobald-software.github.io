@@ -10,21 +10,39 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 ---
+### Über die Table-Komponente
+Die Table-Komponente kann verwendet werden, um Inhalte aus SAP-Tabellen und Views zu extrahieren und sie in Alteryx zu verarbeiten.
+Die Table-Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe[Table-Joins](./table-joins).<br> 
 
-Die Xtract for Alteryx Table Datenquelle wird verwendet, um Daten aus SAP Tabellen und Views abzuziehen und in bekannter Weise in Alteryx weiterzuverarbeiten. <br> 
+Die Table-Komponente unterstützt die folgenden Tabellentypen:
+- Transparente Tabellen
+- Pool-Tabellen
+- Cluster-Tabellen
 
-Darüber hinaus dient die Table-Komponente dazu, mehrere Tabellen (und Views) auf der SAP-Seite zu joinen.<br> 
-Mögliche Szenarien dafür wären, Tabellen mit Kopf- und Postionsdaten (z.B. einer Bestellung oder Rechnung) oder Tabellen mit Stammdaten und Texte (z.B. eines Materials) zu joinen.<br> 
-Dazu wird dynamisch der entsprechende SQL-Befehl generiert und auf dem SAP-Server ausgeführt.<br> 
+Eine Einführung in die Komponente und ihre Grundfunktionen finden Sie unter [Erste Schritte mit Xtract for Alteryx](../erste-schritte).
 
-Die Komponente kann die Standardfunktionsbausteine im SAP nutzen, um Daten aus einer einzigen Tabelle und  einem einzigen View zu extrahieren. <br> 
-Wir bieten allerdings einen eigenen Funktionsbaustein, der die Daten performanter extrahiert und viele Probleme der SAP-Standardfunktionsbausteine löst.<br> 
-Das Joinen von Tabellen ist nur mit unserem eigenen Funktionsbaustein möglich. <br> 
-Wenn Sie also 
-- eine bessere Performance bei der Extraktion der Daten haben wollen oder 
-- große Tabellen und Views extrahieren wollen, was mit dem Standardfunktionsbaustein unmöglich ist oder 
-- weitiere Einschräung mit dem SAP-Standardfunktionsbaustein (Datentyp, Tabellentyp usw.) haben oder 
-- mehrere Tabellen joinen wollen
-dann sollten Sie den von uns mitgelieferten Funktionssbaustein auf dem SAP-System installieren und nutzen.<br> 
+{: .box-note }
+**Hinweis:** Beim Extrahieren von Tabellen aus SAP können Sie bei der Verwendung des SAP-Standardfunktionsbausteins (RFC_READ_TABLE) auf einige **Einschränkungen** stoßen.<br>
+Um mögliche Einschränkungen umzugehen, können Sie auf Ihrem SAP-System den Theobald Software Z-Funktionsbaustein  *Z_THEO_READ_TABLE* verwenden. 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+Weitere Informationen zu möglichen Einschränkungen und zur Installation des Z-Funktionsbausteins finden Sie unter [SAP Customizing - Z-Funktionsbaustein](../sap-customizing#einschränkungen-von-rfc_read_table).
+
+{: .box-note }
+**Hinweis:** Die Table-Komponente wird im Allgemeinen für ein Full-Load verwendet. Für die inkrementelle Datenextraktion aus Tabellen und Views können Sie eine WHERE-Bedingung für bestimmte Felder, z.B. Zeitstempel, definieren. 
+
+{: .box-tip }
+**Tipp:** Die ODP-Komponente ist eine bequemere Option für die inkrementelle Datenextraktion, z.B. mit Hilfe von [Extraktoren](../odp/odp-extractors).
+
+### Table-Komponente verwenden
+
+1. Ziehen Sie "Xtract Table" per drag & drop auf Ihr Alteryx-Workflow.
+2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu der **gewählten Extraktion** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
+
+Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
+
+### Table Hauptfenster - Funktionsübersicht
+Die folgenden Abschnitte geben einen Überblick über die Funktionen, auf die über das Hauptkomponentenfenster zugegriffen werden kann.
+![Table Extractor](/img/content/xfa/xfa-table-extractor.png){:class="img-responsive"}
+
+Die folgenden Abschnitte enthalten Einzelheiten zu der Komponente:
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
