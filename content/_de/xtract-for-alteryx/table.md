@@ -13,7 +13,7 @@ lang: de_DE
 
 ### Über die Table-Komponente
 Die Table-Komponente kann verwendet werden, um Inhalte aus SAP-Tabellen und Views zu extrahieren und sie in Alteryx zu verarbeiten.
-Die Table-Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe[Table-Joins](./table-joins).<br> 
+Die Table-Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe[Table-Joins](../table-joins).<br> 
 
 Die Table-Komponente unterstützt die folgenden Tabellentypen:
 - Transparente Tabellen
