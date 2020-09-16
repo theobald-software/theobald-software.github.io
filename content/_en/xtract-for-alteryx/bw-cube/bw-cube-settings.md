@@ -10,28 +10,41 @@ weight: 3
 lang: en_GB
 ---
 
-Click on the "Extraction Settings" button to find and change the settings:
+### To Open Extraction Settings
 
+1. In the main window of the component click **[Extraction Settings]**. The window “Cube Settings” opens.
+![Cube Extraction Settings](/img/content/xfa/xfa_cube_settings.png){:class="img-responsive"}
+2. Change the settings, if needed.
+3. Click **[OK]** to confirm.
+
+### Cube Settings
+The window “Cube Settings” contains two subsections:
+- Extraction Settings
+- Automatic Slicing Dimension
+
+#### Extraction Settings
 **Package Size**<br>
-defines how many data records are to be fetched from SAP in a data package. <br>
-Values between 10,000 and 100,000 are useful, but only if the data volume is large enough. <br>
-If the value is 0, then the complete result set is fetched in one go.
+defines how many data records are fetched from SAP in a data package. <br>
+Values between 10,000 and 100,000 are practical for large data volumes. <br>
+If the value is set to 0, the complete result set is fetched at one time.
+
+{: .box-tip }
+**Recommendation**: Always define a package size.
 
 **Row Limit**<br>
 defines the maximum number of rows in the result set. <br>
-If the value is 0, then the complete result set is fetched.<br>
-For example, when testing, it may be useful to specify something other than 0 (e.g. 1000) here in order to test first with little data.<br>
-If you change the value, remember to set it to 0 again.<br>
+If the value is set to 0, the complete result set is fetched.<br>
+For example, when testing, it may be useful to specify a row limit of e.g., 1000 (**not** 0) to perform a test with a small amount of data.<br>
 
-**Automatic Slicing dimension**
-This allows to set a dimension for an automatic slicing. Slicing is the act of picking a subset of a cube by choosing a single value for one of its dimensions. Automatic slicing means that a loop is executed for each single value of the chosen slicing dimension (characteristic) to extract the result from BW. This option allows the extraction of a large amount of data (millions of records) from BW, which was previously not possible due to errors on BW-side (such as buffer overflow and timeout). Be sure to choose the appropriate dimension for automatic slicing. In some cases you should select a dimension with more granular values (e.g. period or week).
+{: .box-note }
+**Note:** if you change the row limit value, remember to set it to 0 again to get the complete result set fetched.<br>
 
-**Column Name Style**<br>
-defines the logic for naming the columns: 
-- Code names the columns with the technical name of the original element. 
-- CodeAndText with the technical name and the plain text 
-- TextAndCode with Larschrift and then the technical name
+#### Automatic Slicing Dimension
 
-![Designer](/img/content/xfa/bwcube04.png){:class="img-responsive"}
+This option sets a dimension for an automatic slicing. Slicing is the act of picking a subset of a cube by choosing a single value for one of its dimensions. Automatic slicing means that a loop is executed for each single value of the chosen slicing dimension (characteristic) to extract the result from BW.
+Automatic Slicing Dimension allows the extraction of a large amount of data (millions of records) from BW, which was previously not possible due to errors on BW-side (such as buffer overflow and timeout).
+
+{: .box-note }
+**Note:** make sure to choose the appropriate dimension for automatic slicing. In some cases, it is advisable to select a dimension with more granular values (e.g. period or week).
 
 

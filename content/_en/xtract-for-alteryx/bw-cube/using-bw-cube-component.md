@@ -9,36 +9,38 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
+The BW Cube component can be used to extract data from BW InfoProviders (e.g., Cubes) directly or from BW Queries. The BW Queries, in this case, can be based on all possible InfoProviders. <br>
+A common approach for this the extraction is to build the query that meets the business requirements.
 
-The BW Cube component is used to extract data from BW InfoProviders (e.g. Cubes) directly or from BW Queries, which in turn can be based on all possible InfoProviders. <br>
-A common approach would be to build the query so that it fits well into the architecture. <br>
-Click on New Extraction to search for either a Query or a BW Cube / InfoProvider directly in the corresponding search field. Confirm with OK.
-
-
-![Designer](/img/content/xfa/bwcube01.png){:class="img-responsive"}
+### To Search for a BW Cube or Query
+1. In the main window of the component navigate to subsection **Cube or Query** and click **Search** (magnifying glass symbol). The window “Cube or Query Lookup” opens.
+![Cube Query search](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
+2. In the field **Name** (1) enter a name of a Query or a BW Cube / InfoProvider using wildcards (*), if needed. 
+3. Define the type of the searched object in the field **Type** (2).
+4. Click **Search** (magnifying glass symbol)(3).
+5. Select (4) the object from the list and click **[OK]** (5) to confirm.
 
 ### Selecting Measure (Key Figures), Dimensions and Properties
+When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. The tree structure represents the metadata of the query (or InfoProvider). <br>
+![Query Structure](/img/content/xfa/xfa_cube-query-select.png){:class="img-responsive"}
+The first folder contains all the measures (key figures) (1). The following folders correspond to dimensions and often contain additional dimension properties (2). <br>
+1. Select the key figures, dimensions, and properties for an extraction.
+2. Within the key figures folder, click the arrow to open the available units. Select a unit, if needed.
+3. Click **[Load live preview]** to display the output with data from BW. If a unit is selected (e.g., currency) the corresponding field is displayed in the preview.
 
-In the main dialog box, you see a tree on the left that represents the query (or InfoProvider). <br>
-The first folder contains all the measures (key figures). <br>
-All folders below it correspond to one dimension each, which contain the additional dimension properties. <br>
-Select the key figures, dimensions, and properties you want to extract. <br>
-On the right side you can see the output table. A click on Preview fills the output table with data from BW.<br>.
+{: .box-note }
+**Note:** for every selected dimension or property, a key figure and a unit is displayed in the result. 
 
-![Designer](/img/content/xfa/bwcube02.png){:class="img-responsive"}
+### Setting a Dimension Filter 
+1. Right-click a dimension. The button **[Edit Filter]** pops-up.
+![Query Filter](/img/content/xfa/xfa_cube-query-filter.png){:class="img-responsive"}
+2. Click **[Edit Filter]**. The window "Member Filter" opens. You can set the *Single Values* (left hand-side) and / or define the *Value Ranges* (right hand-side).
+![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
+3. Select a single value (3) or  click **[Add]** (4) to add value ranges.
+4. Define the values for filtering. Delete the filters (dustbin symbol), if needed.
+5. Click **[OK]** to confirm. The "Member Filter" window closes.
+6. If a filter is defined, a filter symbol appears in the metadata structure.
 
-### Selecting the units of the measures (key figures) 
-Using the right mouse button on a key figure, you can select whether the unit is to be displayed or hided (show column unit / hide column unit). <br>
-
-### Dimension Filter 
-You can define a filter using the right mouse button on a dimension (Edit Filter). <br> 
-If a filter is defined, a corresponding icon is displayed for the dimension.
-
-
-- Single Values
-Here you select from the list which values should be included in the filter. <br>
-With the option **Exclue values from result set** these values can be excluded. 
-
-- Value Ranges 
-Here you can define one or more intervals, that can be included in the filter.<br>
-With the option **Exclue values from result set** these values can be excluded. 
+****
+#### Related Links
+- [Query Variables](./bw-cube-variables)
