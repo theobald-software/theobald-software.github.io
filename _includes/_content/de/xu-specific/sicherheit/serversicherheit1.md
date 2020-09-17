@@ -1,34 +1,37 @@
-Der Zugriff aud den Webserver kann durch Verwendung folgenden Optionen beschränkt werden:
+Der Zugriff auf den Webserver kann durch Verwendung folgenden Optionen beschränkt werden:
 
-- HTTPS - unrestricted (1)
-- HTTPS - Restricted to AD users with Designer read access (2)
+- HTTPS - unrestricted
+- HTTPS - Restricted to AD users with Designer read access
 
-<!---![webserver settings](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"}--->
+![webserver settings](/img/content/xu/server-settings-security.png){:class="img-responsive"}
 
 ### HTTPS - unrestricted
-1. HTTPS - unrestricted auswählen.
-2. Die Schaltfläche **[ Select X.509 certificate}** anklicken. Der Dialog "Edit certificate location" wird geöffnet.
+1. Wählen Sie die Option "HTTPS - unrestricted" aus.
+2. Klicken Sie die Schaltfläche **[ Select X.509 certificate}** an. Der Dialog "Edit certificate location" wird geöffnet.
 3. Wählen Sie unter **Local Machine > Personal** das für die Maschine erstellte [X.509 Zertifikat](./x.509-zertifikat-installieren) aus.
-4. Bestätigen Sie mit **[OK]** zum Schließen des Dialogs.
+4. Bestätigen Sie mit **[OK]**. Der Dialog wird geschlossen.
 
 ### HTTPS - Restricted to AD users with Designer read access 
 
-Warnung: Verbindung zum XU Server wird mit Fehlermeldung abgebrochen, falls keine Benutzer hinterlegt wurden.
+{: .box-warning}
+**Warnung! Verbindung zum Server wird abgebrochen!**
+Wenn keine Benutzer hinterlegt sind und die Option "HTTPS - Restricted to AD users with Designer read access" aktiviert ist, wird die Verbindung zum XU Server abgebrochen.
+Legen Sie Benutzer an und vergeben Sie die benötigten Rechte. Mehr Details dazu finden Sie im Abschnitt [Benutzerverwaltung](./sicherheit/benutzerverwaltung).
 
-Im Tab *Configuation Server* markieren Sie die Checkbox ["Restrict Designer Access ..."](./zugriffsverwaltung).
 
-Über **[Add]** - neues Fenster öffnet sich, Suche nach entweder AD Usern oder in XU angelegte custom user  - [](./sicherheit/benutzerverwaltung)
- 
-<!---![Add Window](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"}--->
-
-1. Im Tab *Web Server* wählen Sie HTTPS - Restricted to AD users with Designer read access aus.
-2. Die Schaltfläche **[ Select X.509 certificate}** anklicken. Der Dialog "Edit certificate location" wird geöffnet.
-3. Wählen Sie unter **Local Machine > Personal** das für die Maschine erstellte [X.509 Zertifikat](./x.509-zertifikat-installieren) aus.
-4. Bestätigen Sie mit **[OK]** zum Schließen des Dialogs.
+1. Wechseln Sie zum Tab *Configuation Server* und markieren Sie die Checkbox ["Restrict Designer access to the following users / groups"](./zugriffsverwaltung).
+2. Zum Suchen von [angelegten Benutzern oder Benutzergruppen](./sicherheit/benutzerverwaltung) klicken Sie auf **[Add]**. Der Dialog zum Suchen wird geöffnet. 
+3. Suchen Sie nach den gewünschten Benutzern oder Benutzergruppen. Die Verwendung von Wildcards (*) wird unterstützt.
+![Add Window](/img/content/xu/add-user.png){:class="img-responsive"}
+4. Wechseln Sie zurück zum Tab *Web Server* und wählen Sie die Option "HTTPS - Restricted to AD users with Designer read access" aus.
+![webserver settings https](/img/content/xu/server-settings-security-https.png){:class="img-responsive"}
+5. Klicken Sie die Schaltfläche **[ Select X.509 certificate}** an. Der Dialog "Edit certificate location" wird geöffnet.
+6. Wählen Sie unter **Local Machine > Personal** das für die Maschine erstellte [X.509 Zertifikat](./x.509-zertifikat-installieren) aus.
+7. Bestätigen Sie mit **[OK]**. Der Dialog wird geschlossen.
 
 Diese vorgenommenen Änderungen müssen durch den Neustart des XU-Server aktiviert werden.  
 
-<!---![Question Bild](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"}--->
+![Question Bild](/img/content/xu/restart-server.png){:class="img-responsive"}
 
 
 
