@@ -7,7 +7,7 @@ Der Zugriff auf den Webserver kann durch Verwendung folgenden Optionen beschrän
 
 ### HTTPS - unrestricted
 1. Wählen Sie die Option "HTTPS - unrestricted" aus.
-2. Klicken Sie die Schaltfläche **[ Select X.509 certificate}** an. Der Dialog "Edit certificate location" wird geöffnet.
+2. Klicken Sie die Schaltfläche **[Select X.509 certificate]** an. Der Dialog "Edit certificate location" wird geöffnet.
 3. Wählen Sie unter **Local Machine > Personal** das für die Maschine erstellte [X.509 Zertifikat](./x.509-zertifikat-installieren) aus.
 4. Bestätigen Sie mit **[OK]**. Der Dialog wird geschlossen.
 
@@ -26,7 +26,7 @@ Legen Sie Benutzer an und vergeben Sie die benötigten Rechte. Mehr Details dazu
 ![Add Window](/img/content/xu/add-user.png){:class="img-responsive"}
 4. Wechseln Sie zurück zum Tab *Web Server* und wählen Sie die Option "HTTPS - Restricted to AD users with Designer read access" aus.
 ![webserver settings https](/img/content/xu/server-settings-security-https.png){:class="img-responsive"}
-5. Klicken Sie die Schaltfläche **[ Select X.509 certificate}** an. Der Dialog "Edit certificate location" wird geöffnet.
+5. Klicken Sie die Schaltfläche **[Select X.509 certificate]** an. Der Dialog "Edit certificate location" wird geöffnet.
 6. Wählen Sie unter **Local Machine > Personal** das für die Maschine erstellte [X.509 Zertifikat](./x.509-zertifikat-installieren) aus.
 7. Bestätigen Sie mit **[OK]**. Der Dialog wird geschlossen.
 
