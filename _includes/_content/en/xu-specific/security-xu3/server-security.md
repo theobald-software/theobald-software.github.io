@@ -22,7 +22,7 @@ Create users and/or user groups and assign the required rights. See also [User M
 1.Switch to the *Configuration Server* tab and mark the checkbox ["Restrict Designer access to the following users / groups"](./access-management).
 ![configuration server tab](/img/content/xu/server-settings-configuration-tab.png){:class="img-responsive"}
 2. Click **[Add]** to search for [created users or user groups](./user-management). The search dialog opens.
-3. Search for the desired users or user groups. The use of wildcards (*) is supported..
+3. Search for the desired users or user groups. The use of wildcards (*) is supported.
 ![Add Window](/img/content/xu/add-user.png){:class="img-responsive"}
 4. Switch back to the tab *Web Server* and select the option "HTTPS - Restricted to AD users with Designer read access".
 ![webserver settings https](/img/content/xu/server-settings-security-https.png){:class="img-responsive"}
