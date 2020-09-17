@@ -14,12 +14,13 @@ Der Zugriff auf den Webserver kann durch Verwendung folgenden Optionen beschrän
 ### HTTPS - Restricted to AD users with Designer read access 
 
 {: .box-warning}
-**Warnung! Verbindung zum Server wird abgebrochen!**
+**Warnung! Verbindung zum Server wird abgebrochen!** <br>
 Wenn keine Benutzer hinterlegt sind und die Option "HTTPS - Restricted to AD users with Designer read access" aktiviert ist, wird die Verbindung zum XU Server abgebrochen.
 Legen Sie Benutzer an und vergeben Sie die benötigten Rechte. Mehr Details dazu finden Sie im Abschnitt [Benutzerverwaltung](./sicherheit/benutzerverwaltung).
 
 
 1. Wechseln Sie zum Tab *Configuation Server* und markieren Sie die Checkbox ["Restrict Designer access to the following users / groups"](./zugriffsverwaltung).
+![configuration server tab](/img/content/xu/server-settings-configuration-tab.png){:class="img-responsive"}
 2. Zum Suchen von [angelegten Benutzern oder Benutzergruppen](./sicherheit/benutzerverwaltung) klicken Sie auf **[Add]**. Der Dialog zum Suchen wird geöffnet. 
 3. Suchen Sie nach den gewünschten Benutzern oder Benutzergruppen. Die Verwendung von Wildcards (*) wird unterstützt.
 ![Add Window](/img/content/xu/add-user.png){:class="img-responsive"}
