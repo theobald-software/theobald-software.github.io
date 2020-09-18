@@ -16,7 +16,7 @@ The component Xtract Cube for Alteryx BW Cube data source can be used to extract
  further in Alteryx.
 
 ### To Use BW Cube
-Basic knowledge of Xtract for Alteryx is required to understand the following sections, see [Getting Started with Xtract for Alteryx](../getting-started).
+Basic knowledge of Xtract for Alteryx is required to understand the following sections, see [Getting Started with Xtract for Alteryx](./getting-started).
 
 1. Drag & drop BW Cube component to your Alteryx workflow.
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
@@ -40,10 +40,10 @@ The *Key Figures*, *Dimensions* and *Properties* that can be selected for the ou
 The **Preview** subsection displays the content of the selected Query or a BW Cube / InfoProvider when clicking the **[Load Live Preview]** button.
 
 #### Buttons
-- **[Extraction Settings]** opens the [extraction specific settings](./bw-cube-settings) e.g., Package Size, Row Limit or Automatic Slicing Dimension. <br>
+- **[Extraction Settings]** opens the [extraction specific settings](./bw-cube/bw-cube-settings) e.g., Package Size, Row Limit or Automatic Slicing Dimension. <br>
 - **[Load live preview]** loads a preview of a Query or a BW Cube / InfoProvider.
 - **[Show MDX]** displays the MDX statement generated for the selection, which will be executed at run-time on the BW system. When the access to BW system is available, you can additionally use the transaction *MDXTEST* to run the MDX statement.
-- **[Edit Variables]** allows defining [variables](./bw-cube-variables). 
+- **[Edit Variables]** allows defining [variables](./bw-cube/bw-cube-variables). 
 
 More information on working with Xtract Cube is provided in the following sections:
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

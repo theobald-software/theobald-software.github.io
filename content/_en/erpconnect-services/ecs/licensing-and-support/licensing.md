@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-licensing
 ---
 
-Please visit our Web site for licensing and pricing information: [http://theobald-software.com/](http://theobald-software.com/)
+Information about licensing and prices can be found on the official [website](https://theobald-software.com/en/erpconnect-services/pricing-and-order/).
