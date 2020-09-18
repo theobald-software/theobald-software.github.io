@@ -5,7 +5,7 @@ Der Zugriff auf den Webserver kann durch Verwendung folgenden Optionen beschrän
 
 ![webserver settings](/img/content/xu/server-settings-security.png){:class="img-responsive"}
 
-### HTTPS - unrestricted
+### HTTPS - Unrestricted
 1. Wählen Sie die Option "HTTPS - Unrestricted" aus.
 2. Klicken Sie die Schaltfläche **[Select X.509 certificate]** an. Der Dialog "Edit certificate location" wird geöffnet.
 3. Wählen Sie unter **Local Machine > Personal** das für Ihre Maschine erstellte [X.509 Zertifikat](./x.509-zertifikat-installieren) aus.
