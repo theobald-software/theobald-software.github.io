@@ -36,7 +36,7 @@ Die vorgenommenen Änderungen werden durch den Neustart des XU-Server aktiviert.
 *******
 #### Weiterführende Links
 - [Benutzerverwaltung](./benutzerverwaltung)
-- [Zugriffsverwaltung]((./zugriffsverwaltung)
+- [Zugriffsverwaltung](./zugriffsverwaltung)
 
 
 
