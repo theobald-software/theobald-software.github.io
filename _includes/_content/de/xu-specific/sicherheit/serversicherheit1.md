@@ -21,9 +21,9 @@ Legen Sie Benutzer und/oder Benutzergruppen an und vergeben Sie die benötigten 
 
 1. Wechseln Sie zum Tab *Configuation Server* und markieren Sie die Checkbox ["Restrict Designer access to the following users / groups"](./zugriffsverwaltung).
 ![configuration server tab](/img/content/xu/server-settings-configuration-tab.png){:class="img-responsive"}
-2. Zum Suchen von [angelegten Benutzern oder Benutzergruppen](./benutzerverwaltung) . Der Dialog zum Suchen wird geöffnet. 
-3. Klicken Sie auf **[Add]**, um nach den gewünschten Benutzern oder Benutzergruppen zu suchen. Die Verwendung von Wildcards (*) wird unterstützt.
+2. Klicken Sie auf **[Add]**, um nach den gewünschten Benutzern oder Benutzergruppen zu suchen. Die Verwendung von Wildcards (*) wird unterstützt.
 ![Add Window](/img/content/xu/add-user.png){:class="img-responsive"}
+3. Zum Suchen von [angelegten Benutzern oder Benutzergruppen](./benutzerverwaltung) . Der Dialog zum Suchen wird geöffnet.
 4. Wechseln Sie zurück zum Tab *Web Server* und wählen Sie die Option "HTTPS - Restricted to AD users with Designer read access" aus.
 ![webserver settings https](/img/content/xu/server-settings-security-https.png){:class="img-responsive"}
 5. Klicken Sie die Schaltfläche **[Select X.509 certificate]** an. Der Dialog "Edit certificate location" wird geöffnet.
