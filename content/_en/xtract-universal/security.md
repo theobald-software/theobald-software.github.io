@@ -12,32 +12,30 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=security_in_xu_3_x
 ---
 
-Security in XU 3.x for communication between Xtract Universal Designer and Xtract Universal Server consists of three components:
-- Transport encryption
+Communication security between the Designer and the Server is provided using the following techniques:
+
 - Authentication
+- Transport encryption
 - Access control
 
-**Transport encryption** provides security against spying on or manipulating data (such as SAP credentials) that is exchanged between Xtract Unviersal Designer and Server.
+### Authentication 
+The authentication security method guarantees the verification of the identity of the logged in user.  
+After the initial connecting to the server using the default authentication methods such as "Windows Credentials" or "Anonymous", you can define 
+further details within the server settings. See also [User Management](./user-management).
+
+
+### Transport encryption
+The transport encryption security method prevents spying or manipulating of the data (such as SAP credentials) that is exchanged between the Designer and the Server. 
 
 Xtract Universal supports two different methods of transport encryption:
--	Kerberos (https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx)
--	Transport Layer Security (TLS)
+-	[Kerberos](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx)
+-	[Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol)
 
-**Authentication** guarantees, that the logged on user is actually the one he/she pretends to be. 
 
-Xtract Universal supports two types of user management:
--	Active Directory user + groups, managed via the Windows domain.
-- Own users + groups (custom), managed via Xtract Univesal.
+### Access Control
+Access control security method allows the granting and restricting of access to certain users or user groups. 
+Access rights are assigned on the server level, but can be further restricted for selected extractions or sources.
+See also [Access Management](./access-management).
 
-**Access Control** allows the assignment of different rights to users or user groups. Those rights are assigned on server level, but they can be further restricted for selected extractions or sources.
-
-The following rights can be assigned. See chapter Access Management for a detailed explanation.
-- read
-- modify
-- create
-- admin
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTUxODk0XX0=
--->
