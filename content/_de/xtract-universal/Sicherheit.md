@@ -22,7 +22,7 @@ Die Kommunikationssicherheit zwischen dem Designer und dem Server wird mit Hilfe
 
 Das Sicherheitsverfahren der Authentisierung garantiert die Überprüfung der Identität des angemeldeten Benutzers.  
 Nach der erstmaligen Verbindung mit dem Server unter Verwendung der Standardauthentifizierungsmethoden wie "Windows Credentials" oder "Anonymous" können Sie 
-weitere Details innerhalb der Servereinstellungen anpassen. Mehr Details finden Sie im Abschnitt [Benutzerverwaltung](./benutzerverwaltung).
+weitere Details innerhalb der Servereinstellungen anpassen. Mehr Details finden Sie im Abschnitt [Benutzerverwaltung](./Sicherheit/benutzerverwaltung).
 
 
 
@@ -38,7 +38,7 @@ Es werden zwei Verfahren zur Transportverschlüsselung unterstützt:
 ### Zugriffskontrolle
 Die Sicherheitsmethode der Zugriffskontrolle ermöglicht die Zugriffsgewährung und -einschränkung für bestimmte Benutzer oder Benutzergruppen. 
 Die Zugriffsrechte werden auf Serverebene zugewiesen, können aber für ausgewählte Extraktionen oder Quellen (Sources) weiter eingeschränkt werden.
-Mehr Details finden Sie auch [Zugriffsverwaltung](./zugriffsverwaltung).
+Mehr Details finden Sie auch [Zugriffsverwaltung](./Sicherheit/zugriffsverwaltung).
 
 
 
