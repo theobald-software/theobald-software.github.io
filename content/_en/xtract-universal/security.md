@@ -38,4 +38,4 @@ Access rights are assigned on the server level, but can be further restricted fo
 See also [Access Management](./access-management).
 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+

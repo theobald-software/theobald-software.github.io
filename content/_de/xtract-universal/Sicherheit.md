@@ -41,8 +41,5 @@ Die Zugriffsrechte werden auf Serverebene zugewiesen, können aber für ausgewä
 Mehr Details finden Sie auch [Zugriffsverwaltung](./zugriffsverwaltung).
 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
-
-
 
 
