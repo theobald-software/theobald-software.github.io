@@ -40,10 +40,10 @@ Die Felder *Key Figures*, *Dimensions* und *Properties*, die für ein Output aus
 Im Unterabschnitt **Preview**  wird der Inhalt des ausgewählten Querys oder BW Cubes / InfoProviders when clicking the **[Load Live Preview]** button.
 
 #### Schaltflächen
-- **[Extraction Settings]** öffnet die [extraktionsspezifische Einstellungen](./bw-cube/bw-cube-settings) z.B. Paketgröße (Package Size), Zeilenbegrenzung (Row Limit) oder Automatic Slicing Dimension. <br>
+- **[Extraction Settings]** öffnet die [extraktionsspezifische Einstellungen](./bw-cube/bw-cube-einstellungen) z.B. Paketgröße (Package Size), Zeilenbegrenzung (Row Limit) oder Automatic Slicing Dimension. <br>
 - **[Load live preview]** lädt eine Echtzeitvorschau einer Query oder eines BW Cubes / InfoProviders ohne eine Extraktion auszuführen.
 - **[Show MDX]** zeigt das für die Selektion generierte MDX-Statement, das zur Laufzeit auf dem BW-System ausgeführt wird.Wenn der Zugang zum BW-System verfügbar ist, können Sie zusätzlich die Transaktion *MDXTEST* verwenden, um das MDX-Statement zu verwenden.
-- **[Edit Variables]** ermöglicht die Definition der [Variablen](./bw-cube/bw-cube-variables). 
+- **[Edit Variables]** ermöglicht die Definition der [Variablen](./bw-cube/bw-cube-variablen). 
 
 Weitere Informationen finden Sie zum Thema "Arbeiten mit der BW Cube Komponente" finden Sie in den folgenden Unterabschnitten:
 
