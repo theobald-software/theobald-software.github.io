@@ -72,13 +72,13 @@ The KMS can be enabled in the GCP console's navigation menu under **Security > C
 
 **Customer-supplied** <br>
 If you check the *Customer-supplied* option, you need to provide a valid AES256 Crypto Key (256 bit in length). <br>
-The Crypto key is passed to Google to encrypt your data. The key is not stored within the GCP and hence demands the additional effort. Otherwise you won´t be able to decrypt your data later. <!---ab hier weitermachen-->
+The Crypto key is passed to Google to encrypt your data. The key is not stored within the GCP and hence demands the additional effort to be able to to decrypt your data later. <!---ab hier weitermachen-->
 
 **Crypto field** <br>
-Depending on the selected encryption method apply the respective cryptographic key here. 
+Apply the respective cryptographic key depending on the selected encryption method. 
 
 ### File Format 
-Select the required file format between "Csv", "Json" and "Parquet".
+Select the required file format between "CSV", "JSON" and "Parquet".
 
 The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
 

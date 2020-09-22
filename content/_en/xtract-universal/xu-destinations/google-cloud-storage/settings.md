@@ -51,7 +51,7 @@ Writes extraction data of a single extraction to a single file in Google Cloud S
 Writes extraction data of a single extraction to multiple files in Google Cloud Storage. Each filename is appended by *_part[nnn]*. In case of .csv files, the file size is determined by the value set in *Max. CSV file size*.
 
 **Max. CSV file size** <br>
-Maximum size of a .csv file stored in an Azure storage account. 
+Maximum size of a .csv file stored in the Google Cloud Storage account. 
 
 {: .box-note }
 **Note:** The option *Max. CSV file size* does not apply to gzip files. The size of a gzipped file cannot be determined in advance.
