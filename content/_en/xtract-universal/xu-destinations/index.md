@@ -53,16 +53,16 @@ Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW
 
 - [Amazon AWS S3](./amazon-aws-s3)
 - [Azure Storage](./azure-storage) 
-
+- [Google Cloud Storage](./google-cloud-storage)
 ### Generic Destinations
 
+- [Flat File - CSV](./csv-flat-file)  (comma-seperated values)
+- [Flat File - JSON](./json-flat-file)
 - [CSV web service](./csv-via-http) (via HTTP)
 - [JSON web service](./json-via-http)
 - [OData web service](./odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
-- [Flat File - CSV](./csv-flat-file)  (comma-seperated values)
-- [Flat File - JSON](./json-flat-file)
 - [Parquet](./parquet)
-            
+      
             
 ### Pull and Push Destinations
 
