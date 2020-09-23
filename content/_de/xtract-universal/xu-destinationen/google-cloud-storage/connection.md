@@ -9,4 +9,4 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 ---
-Derzeit existiert nur die [englische Version](#) der Inhalte. Die deutsche Version folgt in Kürze. 
+Derzeit existiert nur die [englische Version](https://help.theobald-software.com/en/xtract-universal/xu-destinations/google-cloud-storage/connection) der Inhalte. Die deutsche Version folgt in Kürze. 
