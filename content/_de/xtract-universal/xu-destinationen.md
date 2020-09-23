@@ -43,6 +43,7 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 
 - [Amazon AWS S3](./xu-destinationen/amazon_aws_s3)
 - [Azure Storage](./xu-destinationen/azure-storage) 
+- [Google Cloud Storage](./xu-destinationen/google-cloud-storage)
 
 Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-Programm bzw. Scheduler aufgerufen werden. 
 

@@ -68,18 +68,18 @@ The list below shows several most important files that are placed into the defau
 The setup program and the license installer can also be started without the GUI in a so called "silent setup" way.
 
 #### XtractISSetup.exe
-To execute the silent setup, use the switch *--no-gui* . <br>
-![Silent](/img/content/xis/silent-setup-cmd.png){:class="img-responsive"}
+To execute the silent setup, use the switch *--unattended* . <br>
+
 
 #### Waiting Switch
 
-As both programs `XtractISSetup.exe` and `XtractLicenseManager.exe` are windows applications they return immediately when called from the command line. 
-To wait until the setup or the installation is complete use the start command with the */wait* switch. Get more details on Windows Commands in the official [Microsoft Documentation](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start).
+As both programs `XtractISSetup.exe` and `XtractLicenseManager.exe` are windows applications, they return immediately when called from the command line. 
+To wait until the setup or the installation is complete, use the start command with the */wait* switch. Get more details on Windows Commands in the official [Microsoft Documentation](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start).
 
 
 **Examples:**
 ```
-start /wait XtractISSetup.exe --no-gui
+start /wait XtractISSetup.exe --unattended
 start /wait XtractLicenseManager.exe "C:\temp\Xtract IS\XtractIS.License.json"
 
 ```
