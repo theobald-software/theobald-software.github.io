@@ -1,8 +1,8 @@
 ---
 ref: xis-parametrization-01
 layout: page
-title: Parameterization using Extraction Properties
-description: Parameterization using Extraction Properties
+title: Parameterization using SSIS Properties
+description: Parameterization using SSIS Properties
 product: xtract-is
 parent: parameterization
 permalink: /:collection/:path
@@ -11,10 +11,11 @@ lang: en_GB
 
 ---
 ### Displaying Properties within SSIS
-Parameters appear as properties of the SSIS Data Flow. 
+Parameters appear as properties of the Xtract IS component and the SSIS Data Flow. 
 
-![Properties](/img/content/xis/properties.png){:class="img-reagierend"}
+![Properties](/img/content/xis/properties_component.png){:class="img-reagierend"}
+
+![DataFlow Properties](/img/content/xis/properties_data_flow.png){:class="img-reagierend"}
 
 {% include _content/en/parametrization/parametrization-via-properties.md  %}
-
 
