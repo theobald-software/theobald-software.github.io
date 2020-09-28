@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 {: .box-note }
 **Note**: For some destinations (e.g., Oracle, DB2 etc.) the appropriate driver must be installed. 
 
-For more information on drivers, refer to [Requirements](../introduction/requirements).
+For more information on drivers, refer to [Requirements](./introduction/requirements).
 
 {: .box-note }
 **Note**: The [configuration files](./advanced-techniques/backup-and-migration#configuration-files) of destinations are stored in `config\destinations`.

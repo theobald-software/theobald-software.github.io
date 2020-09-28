@@ -47,7 +47,7 @@ The list below shows several most important files that are placed into the defau
 
 |Filename | Description |
 |:----|:---|
-| ABAP folder | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](./sap-customizing) |
+| ABAP folder | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../sap-customizing). |
 | XtractISSetup.exe | Application for installing and registering the Xtract IS components within SSIS.|
 |XtractISConversionPreparer.exe| Tool, which prepares older version of SSIS packages (containing Xtract IS components) for migration to newer versions of SSIS. See also section [SSIS Migration](./ssis-migration).|
 | xis_version.bat | Starts the `XtractISVerisonInfo.exe` to display and read the currently installed version.|

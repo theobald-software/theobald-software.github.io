@@ -44,7 +44,7 @@ Menu Item | Description | Details
 Logs  | Open server logs | [Server Logging](../logging/server-logging)
 Settings | Open server settings | [Server Settings](../server/server-settings)
 Manage Sources | Edit connection to source system | [SAP Connection](../introduction/sap-connection)
-Manage Destinations (Xtract Universal only) | Edit or delete destinations | [Manage Destinations](https://help.theobald-software.com/en/xtract-universal/xu-destinations/managing-destinations)
+Manage Destinations (Xtract Universal only) | Edit or delete destinations | [Manage Destinations](https://help.theobald-software.com/en/xtract-universal/xu-destinations/managing-destinations).
 
 ### Security
 
