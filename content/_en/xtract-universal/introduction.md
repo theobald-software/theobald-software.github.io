@@ -29,6 +29,6 @@ Using Xtract Universal contains two main phases:
 
 During the design phase the user can create and modify extractions, sources and destinations; and alter the [server settings](./server/server-settings) with the help of the [Designer](./getting-started/designer-overview). 
 
-During the execution phase the user can execute the extractions designed in the design phase. Depending on the target environment an execution can be triggered either by the [XU command line tool - xu.exe or xu.elf](./advanced-techniques/scheduling_extraction) by the data consumer. See also [Pull and Push Destinations](./xu-destinations#pull-and-push-destinations). 
+During the execution phase the user can execute the extractions designed in the design phase. Depending on the target environment an execution can be triggered either by the [XU command line tool - xu.exe or xu.elf](./advanced-techniques/scheduling_extraction) by the data consumer. See also [Pull and Push Destinations](./destinations#pull-and-push-destinations). 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
