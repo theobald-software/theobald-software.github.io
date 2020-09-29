@@ -27,7 +27,7 @@ Edit | Edit an existing extraction | -
 Delete | Delete an existing extraction | -
 Clone | Clone an existing extraction | -
 Source | Select an existing SAP source system | -
-Destination (Xtract Universal only)| Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/xu-destinations/index)
+Destination (Xtract Universal only)| Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
 Log | Open extraction log | [Extraction Logging](../logging/extraction-logging)
 Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
 Abort | Abort a selected extraction | -
