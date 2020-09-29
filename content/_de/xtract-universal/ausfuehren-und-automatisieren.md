@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-execution
 layout: page
-title: Ausführen und Automatisieren von Extraktionen
+title: Extraktionen Ausführen
 description: Ausführen und Automatisieren von Extraktionen
 product: xtract-universal
 parent: xtract-universal
@@ -32,9 +32,10 @@ b.      Parameterübergabe in xu.exe
 
 -->
 
-Dieser Abschnitt beschäftigt sich mit dem [Ausführen](./automation/call-extraction) und Automatisieren von Extraktionen.
+Dieser Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowie [manuell](./automation/call-extraction) als auch automatisch. 
 
-Die Extraktionen können über verschiedene Wege aufgerufen werden: 
+Die Automatisierung (Aufruf) der Extraktionen kann über die folgenden Wege erfolgen:
+
 - Über die [Kommandozeile](./automation/call-via-commandline)
 - Über ein [Webservice](./automation/call-via-webservice)
 - Über ein [externes Skript](./automation/call-via-script)

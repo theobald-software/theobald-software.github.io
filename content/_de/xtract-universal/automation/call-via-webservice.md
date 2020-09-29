@@ -79,50 +79,31 @@ Bei Push Destinations wird standardmäßig das Log der Extraktion im CSV-Format 
 
 ### Weitere Optionen zum Aufruf einer Extraktion
 #### Log-Ausgabe einer Extraktion unterdrücken 
-Mit dem Parameter 
-```
--o quiet-push=true 
-```
-kann man die Log-Ausgabe unterdrücken, wenn die Extraktion  
-- synchron aufgerufen wird und  
-- eine Push-Destination hat 
-unterdrücken. Default Wert ist false und somit wird standardmäßig das Log der Extraktion bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
+Mit dem Parameter `&quite-push=true statt -o quite-push=true` kann man die Log-Ausgabe unterdrücken, wenn die Extraktion synchron aufgerufen wird und mit einer Push-Destination verbunden ist. 
+Default Wert ist `false` und somit wird standardmäßig das Log der Extraktion bei einer Push-Destination zurückgegeben. Sowohl bei einer Pull-Destination als auch bei einem asynchronem Aufruf hat dieser Parameter keine Wirkung.
 
 #### Asynchroner Aufruf
-Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter
-```
-&wait=false 
-```
-kann der Aufruf asynchron erfolgen.
+Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter `&wait=false` kann der Aufruf asynchron erfolgen.
 ![Webservice Call async](/img/content/xu/automation/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
 
 In diesem Fall wird der Zeitstempel der Ausführung im HTTP-Body zurückgegeben:
-```
-2020-05-28_09:58:47.312
-```
+`2020-05-28_09:58:47.312`
 
 ### Weitere Webservices 
-Folgende Webservices werden noch angeboten.
 
 #### Status der Extraktion prüfen
-Mit dem Zeitstempel und dem Namen der Extraktion kann der Status über den folgenden Webservice aufgerufen werden:
-```
-http://localhost:8065/status/?name=sapcustomers2&timestamp=2020-04-06_16:13:19.926 
-```
+Mit dem Zeitstempel und dem Namen der Extraktion kann der Status über den folgenden Webservice aufgerufen werden: <br>
+`http://localhost:8065/status/?name=sapcustomers2&timestamp=2020-04-06_16:13:19.926`
 
 #### Log der Extraktion abfragen 
 
-Mit diesem Zeitstempel kann dann auf das ausführliche Log über den folgenden Webservice zugegriffen werden: 
-```
-http://localhost:8065/log/?req_type=extraction&name=sapcustomers2&timestamp=2020-04-06_16:13:19.926 
-```
+Mit dem Zeitstempel kann dann auf das ausführliche Log über den folgenden Webservice zugegriffen werden: <br>
+`http://localhost:8065/log/?req_type=extraction&name=sapcustomers2&timestamp=2020-04-06_16:13:19.926`
 
 #### Medataten der Extraktion abfragen 
 
-Mit dem Namen der Extraktion kann auf die entsprechenden Metadaten über den folgenden Webservice zugegriffen werden: 
-```
-http://localhost:8065/metadata/?name=sapcustomers2 
-```
+Mit dem Namen der Extraktion kann auf die entsprechenden Metadaten über den folgenden Webservice zugegriffen werden: <br>
+`http://localhost:8065/metadata/?name=sapcustomers2 `
 
 Weiterführende Links
 - [Metadaten-Aufruf via Webservice](../fortgeschrittene-techniken/metadaten-zugriff-ueber-http)

@@ -101,12 +101,9 @@ Log- und Fehlermeldungen werden dabei in die Standardfehlerausgabe (stderr) gesc
 |Aufruf synchrone Extraktion (Standard)|	`-o wait=false`|
 |Rückgabe des Zeitstempels einer Extraktion |`"C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers2 -o wait=false 1>>false_output1.txt 2>>false_output2.txt`|
 
-### Weiterführende Abfragen
-Xtract Universal bietet auch weitere [Webservices](./call-via-webservice#weitere-webservices), über die weitere Informationen aufgerufen werden können. 
-- Status der (asynchronen) Extraktion prüfen
-- Log der Extraktion abfragen 
-- Medataten der Extraktion abfragen 
-Siehe dazu die Dokumentation zum Aufruf via Webservice.
+{: .box-tip }
+**Tipp:** Xtract Universal bietet auch weitere [Webservices](./call-via-webservice#weitere-webservices), über die weitere Informationen aufgerufen werden können z.B. Status der (asynchronen) Extraktion prüfen, Logs oder Metadaten der Extraktion abfragen. 
+
 
 #### Weiterführende Links:
 - [Extraktion via Skript ausführen](./call-via-script)
