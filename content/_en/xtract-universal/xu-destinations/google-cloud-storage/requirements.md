@@ -46,7 +46,7 @@ Click **[Create]** to continue.
 "Support email" and "Developer contact information" are also mandatory fields. Click **[Save and continue]** to get to the next section. <br>
 ![xu-google-cloud-req-06](/img/content/xu/googlecloudstorage/xu-google-cloud-req-06.png){:class="img-responsive"}
 ![xu-google-cloud-req-07](/img/content/xu/googlecloudstorage/xu-google-cloud-req-07.png){:class="img-responsive"}
-6. In the following screen click **[Add or remove scopes]**.
+6. In the following section click **[Add or remove scopes]**.
 Xtract Universal needs read and write permissions for its operations, which are configured in the "Scopes" section.
 ![xu-google-cloud-req-08](/img/content/xu/googlecloudstorage/xu-google-cloud-req-08.png){:class="img-responsive"}
 7. Enter [https://www.googleapis.com/auth/devstorage.read_write](https://www.googleapis.com/auth/devstorage.read_write) under **Manually add scopes** and click **[Add to table]**.
@@ -63,6 +63,6 @@ The newly added scope is the first entry in the table. Click **[Update]** to cre
 Select "Desktop app" as application type, give the app a name of your choice and click **[Create]**.
 ![xu-google-cloud-req-15](/img/content/xu/googlecloudstorage/xu-google-cloud-req-15.png){:class="img-responsive"}
 11. Your OAuth client is now created. <br>
-The "Client ID" and the "Client secret" is needed for the destination configuration in Xtract Universal (see [Connection](./connection)).
+The "Client ID" and the "Client secret" are needed for the destination configuration in Xtract Universal (see [Connection](./connection)).
 ![xu-google-cloud-req-16](/img/content/xu/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 

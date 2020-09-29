@@ -38,7 +38,7 @@ Processes the previously created OAuth flow to establish a connection with the s
 Choose your Google account and grant access to Xtract Universal in all required windows. <br>
 
 {: .box-note }
-**Note**: If you did not verify the app, a window with the message "This app isn't verified" is displayed. Click **[Advanced]** and **[Go to Xtract Universal (unsafe)]**. <br>  
+**Note**: If you did not verify the app, a window with the message: "This app isn't verified" is displayed. Click **[Advanced]** and **[Go to Xtract Universal (unsafe)]**. <br>  
 
 When a connection is successful, an "Authentication succeeded" message is displayed in the browser. In Xtract Universal a "Connection established" message is displayed in a separate dialogue. <br>  
 

@@ -16,7 +16,7 @@ progressstate: 5
 The following section describes data extraction to a Google Cloud Storage.
 
 Google Cloud Platform (GCP) is a collection of cloud services provided by Google.
-It is available via [cloud.google.com](https://cloud.google.com).
-Google Cloud Storage is one of these services used for storing data in the Google infrastructure.
+Google Cloud Platform is available at [cloud.google.com](https://cloud.google.com).
+Google Cloud Storage is one of the Google services used for storing data in the Google infrastructure.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
