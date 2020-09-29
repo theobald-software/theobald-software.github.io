@@ -47,7 +47,7 @@ The list below shows several most important files that are placed into the defau
 
 |Filename | Description |
 |:----|:---|
-| ABAP folder | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../sap-customizing). |
+| ABAP Directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../sap-customizing). |
 | XtractISSetup.exe | Application for installing and registering the Xtract IS components within SSIS.|
 |XtractISConversionPreparer.exe| Tool, which prepares older version of SSIS packages (containing Xtract IS components) for migration to newer versions of SSIS. See also section [SSIS Migration](./ssis-migration).|
 | xis_version.bat | Starts the `XtractISVerisonInfo.exe` to display and read the currently installed version.|
@@ -67,22 +67,7 @@ The list below shows several most important files that are placed into the defau
 
 The setup program and the license installer can also be started without the GUI in a so called "silent setup" way.
 
-#### XtractISSetup.exe
-To execute the silent setup, use the switch *--unattended* . <br>
 
-
-#### Waiting Switch
-
-As both programs `XtractISSetup.exe` and `XtractLicenseManager.exe` are windows applications, they return immediately when called from the command line. 
-To wait until the setup or the installation is complete, use the start command with the */wait* switch. Get more details on Windows Commands in the official [Microsoft Documentation](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start).
-
-
-**Examples:**
-```
-start /wait XtractISSetup.exe --unattended
-start /wait XtractLicenseManager.exe "C:\temp\Xtract IS\XtractIS.License.json"
-
-```
 
 ### Displaying the Xtract IS components within SSIS
 After a successful installation of the Xtract IS, the Xtract IS components are automatically available in the SSIS Toolbox of a Data Flow Task in your Visual Studio Integration Services project.
