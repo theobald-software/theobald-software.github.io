@@ -1,7 +1,7 @@
 ---
 ref: xu-google-cloud-storage-01
 layout: page
-title: Voraussetzungen
+title: Anforderungen
 description: Voraussetzungen
 product: xtract-universal
 parent: google-cloud-storage
@@ -11,10 +11,10 @@ lang: de_DE
 progressstate: 5
 ---
 
-### Prerequisites
+### Voraussetzungen
 - Google account
 - Google Cloud Platform (GCP) Abonnement (Demoversion wird angeboten)
-- Projekt ("My First Project" ist  per-definiert)
+- Projekt ("My First Project" ist  vordefiniert)
 - Google Cloud Storage (GCS) Bucket für Datenextraktionen.
 
 ### GCP-Konsole
@@ -41,20 +41,20 @@ Der Verifizierungsprozess ist optional. Offizielle App-Verifizierung beinhaltet 
 ![xu-google-cloud-req-04](/img/content/xu/googlecloudstorage/xu-google-cloud-req-04.png){:class="img-responsive"}
 4. Wenn Ihr Konto zu einer Organisation gehört, können Sie die Nutzung von Xtract Universal in Kombination mit GCS auf Ihre Organisation beschränken. Wählen Sie dazu "intern" in der Option " User Type".  Die Einschränkungsoption ist nur verfügbar, wenn Sie ein [GSuite-Benutzer](https://gsuite.google.com/) sind. <br>
 Alternativ können Sie jedem Benutzer mit Zugriff auf die OAuth-Anmeldeinformationen erlauben, Xtract Universal die Erlaubnis zu erteilen, Daten in Ihre GCS-Buckets zu schreiben.. Wählen Sie dazu "extern" in der Option " User Type". <br> 
-Klicken Sie auf**[Create]**, zum Fortfahren.
+Klicken Sie auf **[Create]**, zum Fortfahren.
 ![xu-google-cloud-req-05](/img/content/xu/googlecloudstorage/xu-google-cloud-req-05.png){:class="img-responsive"}
 5. Geben Sie im Abschnitt "App information" einen App-Namen Ihrer Wahl . <br>
 "Support email" und "Developer contact information" sind auch Pflichtfelder. Klicken Sie auf **[Save and continue]**, um zur nächsten Sektion weiterzugehen. <br>
 ![xu-google-cloud-req-06](/img/content/xu/googlecloudstorage/xu-google-cloud-req-06.png){:class="img-responsive"}
 ![xu-google-cloud-req-07](/img/content/xu/googlecloudstorage/xu-google-cloud-req-07.png){:class="img-responsive"}
 6. Klicken Sie im folgenden Abschnitt auf **[Add or remove scopes]**.
-Xtract Universal benötigt Lese- und Schreibrechte für seine Operationen, die im Abschnitt " Scopes" konfiguriert werden.
+Xtract Universal benötigt Lese- und Schreibrechte für seine Operationen, die im Abschnitt "Scopes" konfiguriert werden.
 ![xu-google-cloud-req-08](/img/content/xu/googlecloudstorage/xu-google-cloud-req-08.png){:class="img-responsive"}
 7. Geben Sie [https://www.googleapis.com/auth/devstorage.read_write](https://www.googleapis.com/auth/devstorage.read_write) unter **Manually add scopes** ein und klicken Sie auf **[Add to table]**.
 ![xu-google-cloud-req-09](/img/content/xu/googlecloudstorage/xu-google-cloud-req-09.png){:class="img-responsive"}
 Der neu hinzugefügte Bereich (Scope) ist der erste Eintrag in der Tabelle. Klicken Sie auf **[Update]**, um den Eintrag zu erstellen. 
 ![xu-google-cloud-req-10](/img/content/xu/googlecloudstorage/xu-google-cloud-req-10.png){:class="img-responsive"}
-8. Klicken Sie auf**[Continue]**, wenn mit der Dialog mit Meldung "Verfification required" erscheint. <br>
+8. Klicken Sie auf **[Continue]**, wenn mit der Dialog mit Meldung "Verfification required" erscheint. <br>
 ![xu-google-cloud-req-11](/img/content/xu/googlecloudstorage/xu-google-cloud-req-11.png){:class="img-responsive"}
 9. Bestätigen Sie zweimal mit **[Save and continue]**. Klicken Sie auf **[Back to dashboard]**, um zu Dashboard zurück zu kehren.      
 ![xu-google-cloud-req-12](/img/content/xu/googlecloudstorage/xu-google-cloud-req-12.png){:class="img-responsive"}

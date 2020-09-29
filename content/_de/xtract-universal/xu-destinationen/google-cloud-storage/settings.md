@@ -13,7 +13,7 @@ progressstate: 5
 
 ### Destination Settings öffnen
 1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
-2. Klicken Sie auf**[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
+2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
 Die folgenden Einstellungen können für die Destination definiert werden. 
@@ -49,7 +49,7 @@ Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt.
 Schreibt Extraktionsdaten einer einzelnen Extraktion in eine einzelne Datei in Google Cloud Storage.
 
 **Split**<br>
-Schreibt Extraktionsdaten einer einzelnen Extraktion in mehrere Dateien in Google Cloud Storage. Jeder Dateiname wird angehängt durch *_part[nnn]*. Im Falle von csv-Dateien wird die Dateigröße durch den Wert bestimmt, der in *Max. CSV file size* steht.
+Schreibt Extraktionsdaten einer einzelnen Extraktion in mehrere Dateien in Google Cloud Storage. Jeder Dateiname wird angehängt durch *_part[nnn]*. <br> Im Falle von csv-Dateien wird die Dateigröße durch den Wert bestimmt, der in *Max. CSV file size* steht.
 
 **Max. CSV file size** <br>
 Maximale Größe einer im Google Cloud Storage-Konto gespeicherten csv-Datei. 
