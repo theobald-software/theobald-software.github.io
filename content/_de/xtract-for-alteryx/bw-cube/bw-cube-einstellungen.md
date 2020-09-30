@@ -10,34 +10,41 @@ weight: 3
 lang: de_DE
 ---
 
-Über den Button „Extraction Settings“ können noch Einstellungen zum Verhalten vorgenommen werden:
+### Extraction Settings öffnen
 
+1. Im Hauptfenster des Designers klicken Sie auf **[Extraction Settings]**. Das Fenster “Cube Settings” wird geöffnet.
+![Cube Extraction Settings](/img/content/xfa/xfa_cube_settings.png){:class="img-responsive"}
+2. Ändern Sie die Einstellungen, falls erforderlich.
+3. Klicken Sie auf **[OK]** zum Bestätigen.
+
+### Cube Einstellungen
+Das Fenster “Cube Settings” besteht aus zwei Unterabschnitten:
+- Extraction Settings
+- Automatic Slicing Dimension
+
+#### Extraction Settings
 **Package Size**<br>
-definiert, wieviele Datensätze in einem RFC-Call vom SAP geholt werden sollen. <br>
-Werte zwischen 10.000 und 100.000 sind sinnvoll, aber nur wenn die Datenmenge entsprechend groß ist. <br>
-Wenn der Wert 0 ist, dann wird die komplette Ergebnismenge in einem Rutsch geholt.
+definiert, wie viele Datensätze in einem Datenpaket von SAP geholt werden. <br>
+Werte zwischen 10.000 und 100.000 sind bei großen Datenmengen sinnvoll. <br>
+Wenn der Wert auf 0 gesetzt wird, wird die gesamte Ergebnismenge auf einmal abgerufen.
 
-**Max Rows**<br>
-definiert die maximale Anzahl von Zeilen in der Egebnismenge. <br>
-Wenn der Wert 0 ist, dann wird die komplette Ergebnismenge geholt.<br>
-Es kann z.B. beim Testen sinnvoll sein, hier etwas anderes als 0 (z.B. 1000) anzugeben, um erstmal mit wenig Daten zu testen.<br>
-Wenn Sie den Wert ändern, denken Sie dran ihn wieder auf 0 zu setzen.<br>
+{: .box-tip }
+**Empfehlung**: Definieren Sie immer eine Paketgröße.
 
+**Row Limit**<br>
+definiert die maximale Anzahl von Zeilen in der Ergebnismenge. <br>
+Wenn der Wert auf 0 gesetzt wird, wird die komplette Ergebnismenge abgerufen.<br>
+Beim Testen kann es sinnvoll sein, eine Zeilengrenze von z.B. 1000 (**nicht** 0) zu setzen,um einen Test mit einer kleinen Datenmenge durchzuführen.<br>
 
-**Automatic Slicing Dimension**<br/>
-Ermöglicht die Auswahl einer Dimension für ein automatisches Slicing.
-Slicing steht für das Ausschneiden von Scheiben aus dem Datenwürfel durch die Selektion eines einzelnen Wertes einer Dimension.
-Beim automatischen Slicing wird über jeden einzelnen Wert (Ausprägung) der gewählten Slicing-Dimension (Merkmal) iteriert und für jeden dieser Werte das Abfrageergebnis aus BW extrahiert.
-Diese Option ermöglicht die Extraktion größerer Datenmengen (mehrere Millionen Datensätze) aus BW, welche bisher aufgrund von BW-seitigen Fehlern (wie Speicherüberlauf und Timeout) nicht möglich war.
-Wählen Sie eine geeignete Dimension fürs Slicing, bei größeren Datenmengen selektieren Sie eine Dimension mit einer granularen Ausprägung (z.B. Periode oder Woche).
+{: .box-note }
+**Hinweis:** wenn Sie den Zeilengrenzwert ändern, denken Sie daran, ihn wieder auf 0 zu setzen, um die vollständige Ergebnismenge zu erhalten.<br>
 
-**Column Name Style**<br>
-definiert die Logik für die Benneung der Spalten: 
-- Code bennent die Spalten mit dem technischen Namen des Originalelements 
-- CodeAndText mit dem technischen Namen und der Klarschrift 
-- TextAndCode mit Larschrift und dann dem technischen Namen
+#### Automatic Slicing Dimension
 
+Diese Option legt eine Dimension für ein automatisches Slicing fest. Unter Slicing versteht man das Auswählen einer Teilmenge eines Würfels durch Auswahl eines einzelnen Wertes für eine seiner Dimensionen. Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicing-Dimension (Merkmal) eine Schleife ausgeführt wird, um das Ergebnis aus dem BW zu extrahieren.
+Automatic Slicing Dimension ermöglicht die Extraktion einer großen Datenmenge (Millionen von Sätzen) aus dem BW, was bisher aufgrund von Fehlern auf BW-Seite (wie z.B. Pufferüberlauf und Timeout) nicht möglich war.
 
-![Designer](/img/content/xfa/bwcube04.png){:class="img-responsive"}
+{: .box-note }
+**Hinweis:** Stellen Sie sicher, dass Sie die geeignete Dimension für Automatic Slicing wählen. In einigen Fällen ist es ratsam, eine Dimension mit granulareren Werten zu wählen (z.B. einen bestimmten Zeitabschnitt oder Woche).
 
 

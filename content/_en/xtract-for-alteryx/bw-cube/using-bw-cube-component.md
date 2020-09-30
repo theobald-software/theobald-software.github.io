@@ -23,9 +23,9 @@ A common approach for this the extraction is to build the query that meets the b
 ### Selecting Measure (Key Figures), Dimensions and Properties
 When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. The tree structure represents the metadata of the query (or InfoProvider). <br>
 ![Query Structure](/img/content/xfa/xfa_cube-query-select.png){:class="img-responsive"}
-The first folder contains all the measures (key figures) (1). The following folders correspond to dimensions and often contain additional dimension properties (2). <br>
+The first directory contains all the measures (key figures) (1). The following directories correspond to dimensions and often contain additional dimension properties (2). <br>
 1. Select the key figures, dimensions, and properties for an extraction.
-2. Within the key figures folder, click the arrow to open the available units. Select a unit, if needed.
+2. Within the key figures directory, click the arrow to open the available units. Select a unit, if needed.
 3. Click **[Load live preview]** to display the output with data from BW. If a unit is selected (e.g., currency) the corresponding field is displayed in the preview.
 
 {: .box-note }

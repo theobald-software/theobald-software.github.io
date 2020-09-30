@@ -8,35 +8,40 @@ parent: bw-cube
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
+progressstate: 5
 ---
+Die Komponente BW Cube kann verwendet werden, um Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. Die BW Queries können in diesem Fall auf allen möglichen InfoProvidern basieren. <br>
+Ein üblicher Ansatz für die Extraktion besteht darin, eine Abfrage zu erstellen, die Ihren Geschäftsanforderungen entspricht..
 
-Die BW Cube Komponente dient dazu, Daten aus direkt aus BW Cubes oder aus BW Queries zu extrahieren, die wiederum auf alle möglichen Infoprovider basieren können. <br>
-Eine übliche Vorgehensweise wäre, die Query schon so zu bauen, dass sie gut in die Architektur passt. <br>
-Klicken Sie auf New Extraction, um im entsprechenden Suchfeld entweder eine Query, oder direkt einen BW Cube zu suchen. Bestätigen Sie dann mit OK.
+### Nach BW Cube oder Query suchen
+1. Im Hauptfenster des Designers navigieren Sie zum Unterabschnitt **Cube or Query** und klicken Sie auf  **Search** (Lupensymbol). Das Fenster “Cube or Query Lookup” wird geöffnet.
+![Cube Query search](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
+2. Geben Sie im Feld **Name** (1) den Namen des Query oder des BW Cubes / InfoProviders ein. Die Verwendung von Wildcards (*) ist unterstützt. 
+3. Definieren Sie den Typ des gesuchten Objekts im Feld **Type** (2).
+4. Klicken Sie auf **Search** (Lupensymbol)(3).
+5. Wählen Sie (4) das Objekt aus der Liste und klicken Sie auf **[OK]** (5) zum Bestätigen.
 
-![Designer](/img/content/xfa/bwcube01.png){:class="img-responsive"}
+### Auswählen von Messwerten ( Key Figures), Abmessungen und Eigenschaften
+Wenn ein Objekt ausgewählt ist, wird im Hauptfenster der Komponente auf der linken Seite eine Baumstruktur angezeigt. Die Baumstruktur stellt die Metadaten der Query (oder des InfoProviders) dar. <br>
+![Query Structure](/img/content/xfa/xfa_cube-query-select.png){:class="img-responsive"}
+Das erste Verzeichnis enthält alle Messwerte (Kennzahlen)(1). Die folgenden Verzeichnisse entsprechen den Dimensionen und enthalten oft zusätzliche Dimensionseigenschaften (2). <br>
+1. Wählen Sie die Kennzahlen, Dimensionen und Eigenschaften für eine Extraktion.
+2. Klicken Sie innerhalb des Kennzahlenverzeichnisses auf den Pfeil, um die verfügbaren Einheiten zu öffnen. Wählen Sie die Einheiten aus, falls erforderlich.
+3. Klicken Sie auf **[Load live preview]** um die Ausgabe mit Daten aus dem BW anzuzeigen. Wenn eine Einheit ausgewählt ist (z.B. Währung), wird das entsprechende Feld in der Echtzeitvorschau angezeigt.
 
-## Auswahl der gewünschten Spalten
+{: .box-note }
+**Hinweis:** Für jede ausgewählte Dimension oder Eigenschaft wird im Ergebnis eine Kennzahl und eine Einheit angezeigt. 
 
-Im Hauptdialog sehen Sie auf der linken Seite einen Baum, der die Query (oder den Cube) repräsentiert. <br>
-Im ersten Ordner sind alle Kennzahlen enthalten. <br>
-Alle darunter liegen Ordner entsprechen jeweils einer Dimension, die die zusätzlichen Dimensionseigenschaften enthalten. <br>
-Wählen Sie die Kennzahlen, Dimensionen und Eigenschaften, die Sie extrahieren möchten. <br>
-Auf der rechten Seite sehen die Ausgabetabelle. Ein Klick auf Preview füllt die Ausgabetabelle mit Daten vom BW.<br>
+### Einstellen eines Dimensionsfilters 
+1. Klicken Sie mit der rechten Maustaste auf eine Dimension. Die Schaltfläche **[Edit Filter]** erscheint.
+![Query Filter](/img/content/xfa/xfa_cube-query-filter.png){:class="img-responsive"}
+2. Klicken Sie **[Edit Filter]**. Das Fenster "Member Filter" wird geöffnet. Sie können die *Einzelnen Werte (Single Values)* (linke Seite des Fensters) setzen und / oder *Wertebereiche (Value Ranges)* (rechte Seite des Fensters) definieren.
+![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
+3. Wählen Sie einen einzelnen Wert (3)oder klicken Sie auf **[Add]** (4) um Wertebereiche hinzuzufügen. 
+4. Definieren Sie die Werte für die Filterung. Löschen Sie ggf. die Filter (Mülltonnensymbol).
+5. Klicken Sie auf **[OK]** zum Bestätigen. Das Fenster "Member Filter" wird geschlossen.
+6. Wenn ein Filter definiert ist, erscheint ein Filtersymbol in der Metadatenstruktur.
 
-![Designer](/img/content/xfa/bwcube02.png){:class="img-responsive"}
-
-## Auswahl der Einheiten bei den Kennzahlen 
-Über die Rechtmaustaste bei einer Kennzahl können Sie wählen, ob die Einheit angezeigt (show column unit / hide column unit) werden soll. <br>
-Wird die Einheit angezeigt, wird bei der Kennzahl ein entsprechendes Icon angezeigt.
-
-## Filtern von Dimensionen
-Über die Rechtmaustaste bei einer Dimension (Edit Filter) können Sie einen Filter definieren.<br> 
-Wird ein Filter definiert, wird bei der Dimension ein entsprechendes Icon angezeigt.
-
-- Single Values
-Hier wählen Sie aus der Liste, welche Werte im Filter inkludiert werden sollen. <br>
-Über die Option **Exclue values from result set** können diese Werte exkludiert werden. 
-- Value Ranges 
-Hier definieren Sie mehrere Interevalle, welche im Filter inkludiert werden sollen. <br>
-Über die Option **Exclue values from result set** können diese Werte exkludiert werden. 
+****
+#### Weiterführende Links
+- [Query Variablen](./bw-cube-variables)

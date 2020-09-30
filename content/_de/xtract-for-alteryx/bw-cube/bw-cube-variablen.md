@@ -10,14 +10,25 @@ weight: 2
 lang: de_DE
 ---
 
-Häufig haben BW Queries Variablen, um so Filtermöglichkeiten zu schaffen. Der Variablendialog wird über den Button Edit Variables erreicht. <br>
-Je nach Variablentyp können für die Einschränkung einzelne Werte oder ein Range (von/bis) gewählt werden. <br>
-Die Buttons mit den drei Punkten rechts des jeweiligen Eingabefelds dienen als Wertehilfe und listen alle möglichen Eingabewerte auf.<br>
-Bei Variablen mit komplexen Selektionsmöglichkeiten ist die direkte Eingabe ausgraut. Hier muss die Eingabe in einer separaten Maske gemacht werden, die über Edit erreichbar ist. <br>
-Die Logik komplexer Selektion ist den üblichen Möglichkeiten nachempfunden. <br>
-Die Angabe Sign definiert, ob die jeweiligen Selektionsspalte inkludiert oder exkludiert wird. <br>
-Option definiert, wie die Werte zu interpretieren sind (z.B. „Equals“ für „gleich“, „Greater Than“ für „Größer“, usw...) <br>
+### Über Query Variablen
+BW-Queries haben oft definierte Variablen zum Erstellen von Filteroptionen. Abhängig vom Typ der BEx-Variablen (Einzelwert, Mehrfachwert, Intervall oder komplexe Auswahl) werden die Eingabefelder der Variablen aktiviert oder deaktiviert.
+Anstatt einen Wert für die BEx-Variable hart einzugeben, können Sie Variablen mit Werten definieren, die dynamisch gesetzt werden können..
+Verwenden Sie das **@**-Symbol vor dem Variablennamen im Eingabefeld, um den Eintrag als Variable zu definieren z.B.  *@salesorg*. 
 
-![Designer](/img/content/xfa/bwcube02.png){:class="img-responsive"}
+### Variablen anpassen
+1. Um nach Queries zu [suchen](./bw-cube/using-bw-cube-component#to-search-for-a-bw-cube-or-query) und wählen Sie ein Query mit definierten Variablen aus(1).
+2. Laden Sie eine Echtzeitvorschau (2), falls erforderlich. 
+![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}
+3. Klicken Sie auf **[Edit Variables]** (3). Das Fenster "Edit variables for [Name des Query]" wird geöffnet.
+4. Felder mit verfügbaren Variablen werden aktiviert. Definieren Sie die Variablen mit Hilfe der Dropdown-Listenoptionen in den Feldern **Sign** und **Option**. Wählen Sie den Wertebereich, falls erforderlich. Die Logik der komplexen Auswahl beruht auf den üblichen Möglichkeiten. Die Spezifikation **Sign** definiert, ob die zugehörige Auswahl ein- oder ausgeschlossen werden soll.
+5. Klicken Sie auf das Lupensymbol, um die auswählbaren Variablenwerte anzuzeigen.
+![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
+6. Klicken Sie auf **[Ok]** zum Bestätigen. 
+7. Klicken Sie auf **[Load Live Preview]** um eine Vorschau der gefilterten Ergebnisse anzuzeigen.
+
+*****
+#### Weiterführende Links
+- [Variablen in Alteryx Designer](https://help.alteryx.com/10.6/Reference/Variables.htm)
+
 
 
