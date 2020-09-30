@@ -8,6 +8,7 @@ parent: google-cloud-storage
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+progressstate: 5
 ---
 
 ### Adding a Google Cloud Storage Destination
@@ -72,7 +73,7 @@ The KMS can be enabled in the GCP console's navigation menu under **Security > C
 
 **Customer-supplied** <br>
 If you check the *Customer-supplied* option, you need to provide a valid AES256 Crypto Key (256 bit in length). <br>
-The Crypto key is passed to Google to encrypt your data. The key is not stored within the GCP and hence demands the additional effort to be able to to decrypt your data later. <!---ab hier weitermachen-->
+The Crypto key is not stored in the GCP and demands the additional effort to be able to to decrypt your data later. 
 
 **Crypto field** <br>
 Apply the respective cryptographic key depending on the selected encryption method. 

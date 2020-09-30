@@ -22,7 +22,7 @@ Das Fenster "Destination Details" besteht aus zwei Tabs:
 - File Format
 
 ### GCS Settings
-Der Tab *GCS Settings* * besteht aus zwei Unterabschnitten:
+Der Tab *GCS Settings* besteht aus drei Unterabschnitten:
 - Connection 
 - Bucket
 - Encryption
@@ -35,33 +35,33 @@ Der Tab *GCS Settings* * besteht aus zwei Unterabschnitten:
 *Client Secret* erstellt im OAuth 2.0-Setup.
 
 **Connect**<br>
-Verarbeitet den zuvor erstellten OAuth-Flow, um eine Verbindung mit dem Speicherkonto herzustellen. .
-Wählend Sie Ihr Google-Konto aus und gewähren Sie Xtract Universal den Zugang in allen erforderlichen Fenstern. <br>
+Verarbeitet den zuvor erstellten OAuth-Flow, um eine Verbindung mit dem Speicherkonto herzustellen.
+Wählend Sie Ihr Google-Konto aus und gewähren Sie Xtract Universal Zugriff in allen erforderlichen Fenstern. <br>
 
 {: .box-note }
-Hinweis: Wenn Sie die Anwendung nicht verifiziert haben, erscheint ein Fenster mit der Meldung: "Diese App ist nicht verifizert". Klicken Sie auf **[Advanced]** und **[Go to Xtract Universal (unsafe)]**. <br>  
+Hinweis: Wenn Sie die Anwendung nicht verifiziert haben, erscheint ein Fenster mit der Meldung: "This App isn't verified" (Diese App ist nicht verifizert). Klicken Sie auf **[Advanced]** und **[Go to Xtract Universal (unsafe)]**. <br>  
 
-Nach einer erfolgreichen Verbindung erscheint die Meldung: "Authentifizierung erfolgreich"  im Browser.In Xtract Universal wird die Meldung "Connection established" (Verbindung hergestellt" in einem separaten Dialog angezeigt. <br>  
+Nach einer erfolgreichen Verbindung erscheint die Meldung: "Authentication succeeded" (Authentifizierung erfolgreich)  im Browser. In Xtract Universal wird die Meldung "Connection established" (Verbindung hergestellt" in einem separaten Dialog angezeigt. <br>  
 
 ![xu-google-cloud-con-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-03.png){:class="img-responsive"}
 
 #### Bucket
-Der Unterabschnitt "Bucket" kann nach einer erfolgreichen Verbindung zum Speicherkonto ausgefüllt werden.<br>
+Der Unterabschnitt "Bucket" kann nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden..<br>
 **Project ID** <br>
 Die Projekt-ID kann im GCP-Dashboard unter *Project info* nachgeschlagen werden.
 
 ![xu-google-cloud-con-04](/img/content/xu/googlecloudstorage/xu-google-cloud-con-04.png){:class="img-responsive"}
 
 **Bucket name**<br>
-Klicken Sie auf **[Get buckets]**, um verfügbare Buckents anzeigen zu lassen.
+Klicken Sie auf **[Get buckets]**, um verfügbare Buckets anzeigen zu lassen.
 
 Ein Bucket kann im Navigationsmenü unter **Storage > Browser** erstellt werden.
 
 ![xu-google-cloud-con-05](/img/content/xu/googlecloudstorage/xu-google-cloud-con-05.png){:class="img-responsive"}
 
-Sie können den Bucket-Namen, den Standorttyp und die Storage-Klasse oder die Zugriffskontrolle frei wählen.
+Sie können den Bucket-Namen (bucket name), den Standorttyp (location type) und die Storage-Klasse (storage class) oder die Zugriffskontrolle (access control) frei wählen.
 
-Unter**Advanced Settings (optional)** können Sie die gewünschte Verschlüsselungsmethode auswählen, die auf den Bucket angewendet wird. Weitere Informationen zur Verschlüsselung finden Sie auf der offiziellen [Google-Hilfeseite]https://cloud.google.com/storage/docs/encryption).      
+Unter **Advanced Settings (optional)** können Sie die gewünschte Verschlüsselungsmethode auswählen, die auf den Bucket angewendet wird. Weitere Informationen zur Verschlüsselung finden Sie auf der offiziellen [Google-Hilfeseite]https://cloud.google.com/storage/docs/encryption).      
 ![xu-google-cloud-con-06](/img/content/xu/googlecloudstorage/xu-google-cloud-con-06.png){:class="img-responsive"}
 
 
@@ -73,8 +73,7 @@ Das KMS kann im Navigationsmenü der GCP-Konsole aktiviert werden unter **Securi
 
 **Customer-supplied** <br>
 Wenn Sie die Option *Customer-supplied* ankreuzen, müssen Sie einen gültigen AES256-Kryptoschlüssel (256 Bit lang) angeben.<br>
-Der Kryptoschlüssel wird an Google weitergegeben, um Ihre Daten zu verschlüsseln.Der Schlüssel wird nicht innerhalb der GCP gespeichert und erfordert daher den zusätzlichen Aufwand, um Ihre Daten später entschlüsseln zu können. <!---ab hier weitermachen-->
-
+Der Kryptoschlüssel wird nicht innerhalb der GCP gespeichert und es erfordert daher zusätzlichen Aufbewahrungsaufwand, um Ihre Daten später entschlüsseln zu können.
 **Crypto field** <br>
 Verwenden Sie den jeweiligen kryptographischen Schlüssels in Abhängigkeit von der gewählten Verschlüsselungsmethode. 
 
