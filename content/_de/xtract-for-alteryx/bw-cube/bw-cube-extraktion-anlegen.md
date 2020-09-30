@@ -44,4 +44,4 @@ Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (1). Die folgenden Ve
 
 ****
 #### Weiterführende Links
-- [Query Variablen](./bw-cube-variablen)
+- [Query Variablen](./bw-cube-variables)

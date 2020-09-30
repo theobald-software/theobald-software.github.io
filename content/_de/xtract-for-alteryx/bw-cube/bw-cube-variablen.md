@@ -1,7 +1,7 @@
 ---
 ref: xfa-bw-cube-02
 layout: page
-title: Query-Variablen
+title: BW Cube / Query-Variablen
 description: Query-Variablen
 product: xtract-for-alteryx
 parent: bw-cube
@@ -12,11 +12,11 @@ lang: de_DE
 
 ### Über Query Variablen
 BW-Queries haben oft definierte Variablen zum Erstellen von Filteroptionen. Abhängig vom Typ der BEx-Variablen (Einzelwert, Mehrfachwert, Intervall oder komplexe Auswahl) werden die Eingabefelder der Variablen aktiviert oder deaktiviert.
-Anstatt einen Wert für die BEx-Variable hart einzugeben, können Sie Variablen mit Werten definieren, die dynamisch gesetzt werden können..
+Anstatt einen Wert für die BEx-Variable hart einzugeben, können Sie Variablen mit Werten definieren, die dynamisch gesetzt werden können.
 Verwenden Sie das **@**-Symbol vor dem Variablennamen im Eingabefeld, um den Eintrag als Variable zu definieren z.B.  *@salesorg*. 
 
 ### Variablen anpassen
-1. Um nach Queries zu [suchen](./bw-cube/using-bw-cube-component#to-search-for-a-bw-cube-or-query) und wählen Sie ein Query mit definierten Variablen aus(1).
+1. Um nach Queries zu [suchen](./bw-cube/bw-cube-extraktion-anlegen#nach-bw-cube-oder-query-suchen) und wählen Sie ein Query mit definierten Variablen aus (1).
 2. Laden Sie eine Echtzeitvorschau (2), falls erforderlich. 
 ![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}
 3. Klicken Sie auf **[Edit Variables]** (3). Das Fenster "Edit variables for [Name des Query]" wird geöffnet.
