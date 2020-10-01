@@ -3,10 +3,11 @@ The main window of the Designer consists of three main sections:
 - Main Menu Bar (1)
 - GUI Buttons(2)
 - List of Extractions(3)
+- Staus bar (4)
 
-## Main Menu Bar (1)
+### Main Menu Bar (1)
 
-### Designer
+#### Designer
 
 ![menueleiste_designer](/img/content/xu/menueleiste_designer.png){:class="img-responsive"}
 
@@ -16,7 +17,7 @@ Reset Preferences  | Reset connection settings to server | [Connecting Designer 
 Disconnect | Logging off the server | -
 Exit | Exits the Designer | -
 
-### Extraction
+#### Extraction
 
 ![menueleiste_extraction](/img/content/xu/menueleiste_extraction.png){:class="img-responsive"}
 
@@ -35,7 +36,7 @@ Clear Result Cache | Clear extraction cache | [Cache results](../getting-started
 Refresh | Refreshing extraction status | -
 Filter | Define filters or keywords |  [Define Keywords](../getting-started/general-settings#misc-tab)
 
-### Server
+#### Server
 
 ![menueleiste_server](/img/content/xu/menueleiste_server.png){:class="img-responsive"}
 
@@ -46,7 +47,7 @@ Settings | Open server settings | [Server Settings](../server/server-settings)
 Manage Sources | Edit connection to source system | [SAP Connection](../introduction/sap-connection)
 Manage Destinations (Xtract Universal only) | Edit or delete destinations | [Manage Destinations](https://help.theobald-software.com/en/xtract-universal/xu-destinations/managing-destinations).
 
-### Security
+#### Security
 
 ![menueleiste_security](/img/content/xu/menueleiste_security.png){:class="img-responsive"}
 
@@ -55,7 +56,7 @@ Menu Item | Description  | Details
 Set User Password  | Set or change user password  | [User Managements](../security/user-management#user)
 Manage Users | Manage user groups | [User Groups](../security/user-management#user-groups)
 
-### Help
+#### Help
 
 ![menueleiste_help](/img/content/xu/menueleiste_help.png){:class="img-responsive"}
 
@@ -68,7 +69,7 @@ Support Client | Direct support | [TeamViewer Client](https://get.teamviewer.com
 Info | Product information | [Info window](../introduction/license#about-xtract-universal---info-window)
 Version History | - | [Version History](https://kb.theobald-software.com/version-history)
 
-## GUI Buttons (2)
+### GUI Buttons (2)
 
 Buttons | Description 
 ------------ | ------------ 
@@ -82,6 +83,15 @@ Source|  Select existing SAP source system  |
 Destination (Xtract Universal only) | Select destination  |
 Log | Open extraction log  |
 Run  | Run a selected extraction  | 
+
+
+### List of Extractions (3)
+List of all extractions divided by name, type, modification and creation date etc.
+
+
+### Status Bar (4)
+Status bar contains information about authentication method, connected server, license with validity period, etc.
+
 
 *****
 ### Related Links

@@ -3,10 +3,11 @@ Das Hauptfenster vom Designer besteht aus drei Hauptabschnitten:
 - Hauptmenüleiste (1)
 - GUI-Schaltflächen (2)
 - Auflistung der Extraktionen (3)
+- Statusleiste (4)
 
-## Hauptmenüleiste (1)
+### Hauptmenüleiste (1)
 
-### Designer
+#### Designer
 
 ![menueleiste_designer](/img/content/xu/menueleiste_designer.png){:class="img-responsive"}
 
@@ -16,7 +17,7 @@ Reset Preferences  | Zurücksetzen der Verbindungsparameter zum Server | [Den De
 Disconnect | Abmeldung vom Server | -
 Exit | Beendet den Designer | -
 
-### Extraction
+#### Extraction
 
 ![menueleiste_extraction](/img/content/xu/menueleiste_extraction.png){:class="img-responsive"}
 
@@ -35,7 +36,7 @@ Clear Result Cache | Extraktions-Cache leeren | [Cache results](../erste-schritt
 Refresh | Aktualisierung des Extraktionsstatus | -
 Filter | Filter oder Keywords definieren | [Keywords definieren](../erste-schritte/allgemeine-einstellungen#misc-tab)
 
-### Server
+#### Server
 
 ![menueleiste_server](/img/content/xu/menueleiste_server.png){:class="img-responsive"}
 
@@ -46,7 +47,7 @@ Settings | Server-Einstellungen aufrufen | [Server-Einstellungen](../server/serv
 Manage Sources | Verbindung zum Quellsystem bearbeiten | [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen)
 Manage Destinations (nur Xtract Universal) | Destinationen verwalten | [Destinationen verwalten](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/ziele-verwalten)
 
-### Security
+#### Security
 
 ![menueleiste_security](/img/content/xu/menueleiste_security.png){:class="img-responsive"}
 
@@ -55,7 +56,7 @@ Menüeintrag |Beschreibung | Details
 Set User Password  | Benutzerkennwort festlegen oder ändern  | [Benutzerverwaltung](../sicherheit/benutzerverwaltung#benutzer)
 Manage Users | Benutzergruppen verwalten | [Benutzergruppen](../sicherheit/benutzerverwaltung#benutzergruppen)
 
-### Help
+#### Help
 
 ![menueleiste_help](/img/content/xu/menueleiste_help.png){:class="img-responsive"}
 
@@ -68,7 +69,7 @@ Support Client | Direkter Support | [TeamViewer Client](https://get.teamviewer.c
 Info | Produktinfos | [Info-Fenster](../einfuehrung/lizenz#about-xtract-universal---info-fenster)
 Version History | Versionshistorie | [UVersionshistorie]( https://kb.theobald-software.com/version-history)
 
-## GUI-Schaltflächen (2)
+### GUI-Schaltflächen (2)
 
 Schaltfläche |Beschreibung 
 ------------ | ------------ 
@@ -82,6 +83,14 @@ Source| Vorhandenes SAP Quellsystem auswählen  |
 Destination (nur Xtract Unviersal)| Vorhandene Destination auswählen  |
 Log | Extraktions-Log aufrufen  |
 Run  | Ausgewählte Extraktion ausführen  | 
+
+### Auflistung der Extraktionen (3)
+Liste aller Extraktionen unterteilt nach Namen, Typ, Änderungs- und Erstellungsdatum usw.
+
+
+### Statusleiste (4)
+Statusleiste beinhaltet Informationen zu Authentifizierungsmethode, zum verbundenen Server, zu der Lizenz mit der Gültigkeitsdauer usw.
+
 
 *****
 ### Weiterführende Links
