@@ -1,7 +1,7 @@
 ---
 ref: xfa-bw-cube-01
 layout: page
-title: BW Cube Extraktion Anlegen
+title: BW Cube verwenden
 description: BW Cube Extraction Anlegen
 product: xtract-for-alteryx
 parent: bw-cube

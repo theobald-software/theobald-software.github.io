@@ -17,8 +17,8 @@ Progressstate: 5
 {% include _content/en/requirements/xu-req-misc.md %}
 
 ### Destinations
-To use the different [Destinations](../xu-destinations), an appropriate driver or library can be required. 
+To use the different [Destinations](../destinations), an appropriate driver or library can be required. 
 More information can be found under the requirements section of each destination.
 
-When using specific destinations (e.g. [Tableau](../xu-destinations/tableau)), additional disk space may be required, .
+When using specific destinations (e.g. [Tableau](../destinations/tableau)), additional disk space may be required, .
 

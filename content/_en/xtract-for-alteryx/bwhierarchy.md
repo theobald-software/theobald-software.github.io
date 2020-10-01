@@ -15,7 +15,7 @@ The component Xtract Hierarchy enables the extraction of hierarchies from an SAP
 
 
 ### To Use Xtract Hierarchy
-Basic knowledge of Xtract for Alteryx is required to understand the following sections, see [Getting Started with Xtract for Alteryx](../getting-started#creating-an-extraction).
+Basic knowledge of Xtract for Alteryx is required to understand the following sections, see [Getting Started with Xtract for Alteryx](./getting-started#creating-an-extraction).
 
 1. Drag & drop Xtract Hierarchy component to your Alteryx workflow.
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component “Hierarchy Extractor” opens.
@@ -30,7 +30,7 @@ The window "Hierarchy Extractor" consists out of two subsections:
 ![Hierarchy Extractor](/img/content/xfa/xfa_hierarchy.png){:class="img-responsive"}
 
 #### Hierarchy Extraction
-Within the subsection **Hierarchy Extraction** you can [search for SAP BW hierarchies](./bwhier-define) using the **Hierarchy Lookup** (magnifying glass symbol).
+Within the subsection **Hierarchy Extraction** you can [search for SAP BW hierarchies](./bwhierarchy/bwhier-define) using the **Hierarchy Lookup** (magnifying glass symbol).
 ![Hierarchy search](/img/content/xfa/xfa_hierarchy_search.png){:class="img-responsive"}
 
 **Date To**<br>
@@ -41,7 +41,7 @@ The **Preview** subsection [displays the fields](./bwhier-define#to-preview-sele
 ![Hierarchy preview](/img/content/xfa/xfa_hierarchy_buttons.png){:class="img-responsive"}
 
 #### Buttons
-- **[Extraction Settings]** opens the [extraction specific settings](./bwhier-settings) e.g., representation or level count. <br>
+- **[Extraction Settings]** opens the [extraction specific settings](./bwhierarchy/bwhier-settings) e.g., representation or level count. <br>
 - **[Load Live Preview]** loads a preview of the hierarchy without executing an extraction.
 
 
