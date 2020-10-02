@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=introduction
+progressstate: 5
 ---
 
 ### Basic Functionality - Architecture

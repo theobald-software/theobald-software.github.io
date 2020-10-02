@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation
+progressstate: 5
 ---
 Xtract IS wird für die Entwicklung und Ausführung von SSIS-Paketen benötigt. 
 Stellen Sie sicher, dass Sie Xtract IS auf beiden Maschinentypen installieren:

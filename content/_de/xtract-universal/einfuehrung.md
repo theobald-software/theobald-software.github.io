@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einfuehrung
+progressstate: 5
 ---
 
 ### Grundfunktionalität - Architektur
