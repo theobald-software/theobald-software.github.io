@@ -69,7 +69,7 @@ Defines whether the setup of the Xtract Universal version running on the server 
 #### Result cache
 
 {:.box-note}
-**Note:** *Cash results* option is only available in [pull destinations](../xu-destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+**Note:** *Cash results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
 
 **Target directory** <br>
 Sets the directory for the buffer files. The default ist the result-cache folder in the Xtract Universal installation directory: <br>

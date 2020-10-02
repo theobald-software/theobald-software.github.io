@@ -16,7 +16,7 @@ Anstatt einen Wert für die BEx-Variable hart einzugeben, können Sie Variablen 
 Verwenden Sie das **@**-Symbol vor dem Variablennamen im Eingabefeld, um den Eintrag als Variable zu definieren z.B.  *@salesorg*. 
 
 ### Variablen anpassen
-1. Um nach Queries zu [suchen](./bw-cube-extraktion-anlegen) und wählen Sie ein Query mit definierten Variablen aus (1).
+1. Um nach Queries zu [suchen](https://help.theobald-software.com/de/xtract-for-alteryx/bw-cube/bw-cube-extraction-anlegen#nach-bw-cube-oder-query-suchen) und wählen Sie ein Query mit definierten Variablen aus (1).
 2. Laden Sie eine Echtzeitvorschau (2), falls erforderlich. 
 ![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}
 3. Klicken Sie auf **[Edit Variables]** (3). Das Fenster "Edit variables for [Name des Query]" wird geöffnet.

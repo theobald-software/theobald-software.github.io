@@ -188,7 +188,7 @@ Example:
 #### URLs
 Don't use the "full qualified URLs". Square brackets have to contain a meaningful description, not just "click here" or "click me".
 
-For more information on defining of the extractions, see [Define an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started-table/define-a-table-extraction) with the "SAP Table or View" component as an example.
+For more information on defining of the extractions, see [Define an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction) with the "SAP Table or View" component as an example.
 
 <!-- Nicht den "full qualified URL" verwenden.
 In den eckigen Klammern soll eine sinnvolle Bezeichung stehen, nicht z.B. nur "hier" oder "Klick mich".-->
