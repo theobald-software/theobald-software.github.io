@@ -37,7 +37,7 @@ Within the subsection **Hierarchy Extraction** you can [search for SAP BW hierar
 The default value for Date To is 99991231. To change it, click on Run and override the value in the field dateTo. 
 
 #### Preview
-The **Preview** subsection [displays the fields](./bwhier-define#to-preview-selected-hierarchy) of the selected SAP BW hierarchy, when clicking the **[Load Live Preview]** button.
+The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-preview-selected-hierarchy) of the selected SAP BW hierarchy, when clicking the **[Load Live Preview]** button.
 ![Hierarchy preview](/img/content/xfa/xfa_hierarchy_buttons.png){:class="img-responsive"}
 
 #### Buttons

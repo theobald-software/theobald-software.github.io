@@ -179,7 +179,7 @@ The symbol ">" can be used to demonstrate menu jumps.
 
 ### Paths & URLs
 When inserting links it is recommended to use relative links
-Example:  [([ Link text](./ filename) )] *remove spaces
+Example:  '[ Link text](./ filename)' *remove spaces and apostrophes
 
 #### URLs
 Don't use the "full qualified URLs". Square brackets have to contain a meaningful description, not just "click here" or "click me".
