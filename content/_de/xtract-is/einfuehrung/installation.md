@@ -29,9 +29,9 @@ Stellen Sie sicher, dass Sie Xtract IS auf beiden Maschinentypen installieren:
 Um Xtract IS verwenden zu können, muss die Datei  *XtractISSetup.exe* in der lokalen Entwicklungsumgebung (Visual Studio oder SSDT)
 **und** auf dem  SSIS Server ausgeführt und installiert werden. Weitere Informationen finden Sie im Abschnitt [Lizenzierung](./lizenz-einspielen).
 
-### Standard Setup
+### Interaktive Installation
 
-Beim Standard Setup führen Sie die Datei *XtractISSetup.exe* aus und folgen Sie den Anweisungen des Setup-Programms. 
+Interaktive Installation ist die Standardprozedur mit GUI. Führen Sie die Datei *XtractISSetup.exe* aus und folgen Sie den Anweisungen des Setup-Programms. 
 
 ![XIS_Setup](/img/content/xis/xis_setup-exe.png){:class="img-responsive"}
 
@@ -58,37 +58,38 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 
 
 
-### Unattended Installation (Unbeaufsichtigte Installation) - Silent Setup 
+### Unbeaufsichtigte Installation 
 
 {: .box-note }
 **Hinweis:** Achten Sie auf die Groß- und Kleinschreibung der Parameter. 
 
-Das Setup-Programm kann auch ohne die Anzeige der GUI gestartet werden. Diese Art von Ausführung des Setup-Programms heißt "Silent Setup". 
+Das Setup-Programm und der Lizenz-Manager können auch nichtinteraktiv und ohne die Anzeige der GUI gestartet werden. 
 
 #### XtractISSetup.exe
-Um eine unbeaufsichtigte Installation auszuführen, verwenden Sie den Switch *--unattended* . <br>
+Um ein unbeaufsichtigtes Setup auszuführen, verwenden Sie den Switch *--unattended* . <br>
 
+![XIS_Setup-unattended](/img/content/xis/cmd-unattended-switch.png){:class="img-responsive"}
+
+#### XtractLicenseManager.exe
+Um den Lizenz-Manager im unbeaufsichtigten Modus auszuführen, übergeben Sie den Pfad zur Lizenzdatei als Kommandozeilenargument.
 
 #### Waiting Switch
-Da beide Programme `XtractISSetup.exe` und `XtractLicenseManager.exe` Windows-Anwendungen sind, schließen sie sofort, wenn sie von der Kommandozeile aus aufgerufen werden. 
-Um zu warten, bis das Setup oder die Installation abgeschlossen ist, verwenden Sie den Startbefehl mit dem Switch */wait*. 
-Weitere Einzelheiten zu Windows-Befehlen finden Sie in der offiziellen [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start).
-
+Da beide Programme `XtractISSetup.exe` und `XtractLicenseManager.exe` Windows-Anwendungen sind, wartet die Windows Eingabeaufforderung nicht bis die Installation abgeschlossen ist. 
+Um zu warten, bis die Installation abgeschlossen ist, verwenden Sie den `[start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)`-Befehlt mit dem Switch */wait*. 
 
 **Beispiele:**
 ```
 start /wait XtractISSetup.exe --unattended
 start /wait XtractLicenseManager.exe "C:\temp\Xtract IS\XtractIS.License.json"
-
 ```
 
-### Xtract IS Komponenten in SSIS anzeigen
+### Xtract IS Komponenten in Visual Studio anzeigen
 Nach erfolgreicher Installation von Xtract IS erscheinen die Xtract IS Komponenten automatisch als Datenfluss-Komponenten in der SSIS-Toolbox Ihres Visual Studio Integration Services Projekts.
 
 ![XIS_SSIS_Toolbox](/img/content/XIS_SSIS_Toolbox.png){:class="img-responsive"}
 
 {: .box-warning }
-**Warnung! Xtract IS Komponenten nicht sichtbar**<br> Mit der aktuellen Version der SSDT für VS 2015 ist der *SQL Server vNext* oder *SQL Server 2017* standardmäßig als Zielumgebung für das Deployment von SSIS Projekten ausgewählt. Mit dieser Einstellung sind die Xtract IS Komponenten in der SSIS Toolbox nicht sichtbar. <br> Ändern Sie die Zielumgebung für das Deployment auf SQL Server 2016, um die Xtract IS Komponenten in der Toolbox anzuzeigen.
+**Warnung! Xtract IS Komponenten nicht sichtbar.**<br> Mit der aktuellen Version der SSDT für VS 2015 ist der *SQL Server vNext* oder *SQL Server 2017* standardmäßig als Zielumgebung für das Deployment von SSIS Projekten ausgewählt. Mit dieser Einstellung sind die Xtract IS Komponenten in der SSIS Toolbox nicht sichtbar. <br> Ändern Sie die Zielumgebung für das Deployment auf SQL Server 2016, um die Xtract IS Komponenten in der Toolbox anzuzeigen.
 
 ![XIS_deployment_target_version_vNext](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
 

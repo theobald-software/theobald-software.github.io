@@ -33,7 +33,7 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz#installieren-von-xtract-universal-lizenz---xtractuniversallicensejson) beschrieben.
 
-### Dateien des Installationsverzeichnisses
+### Dateien des Programmverzeichnisses
 Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Program Files\XtractUniversal`` abgelegt werden:
 
 |Dateiname | Beschreibung |

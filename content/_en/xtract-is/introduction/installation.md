@@ -31,9 +31,9 @@ To use Xtract IS, the file *XtractISSetup.exe* must be executed and installed **
 
 
 
-### Normal Setup
+### Interactive Installation
 
-In the standard setup, execute the *XtractISSetup.exe* file and follow the instructions of the setup program.
+Interactive installation is the standard procedure with GUI. Execute the *XtractISSetup.exe* file and follow the instructions of the setup program.
 
 ![XIS_Setup](/img/content/xis/xis_setup-exe.png){:class="img-responsive"}
 
@@ -42,7 +42,7 @@ The Xtract IS Setup installs Xtract IS as a plug-in into SSIS.
 The license installation procedure is described in the section [Installing the license](./installing-the-license#installing-the-xtract-is-license---xtractislicensejson).
 
 
-#### Installation Folder Files
+#### Installation Directory Files
 The list below shows several most important files that are placed into the default directory ``C:\Program Files\XtractIS`` after installation:
 
 |Filename | Description |
@@ -60,16 +60,36 @@ The list below shows several most important files that are placed into the defau
 
 
 
-### Unattended Installation - Silent Setup
+### Unattended Installation
 
 {: .box-note }
 **Note:** All switches are case sensitive.
 
-The setup program and the license installer can also be started without the GUI in a so called "silent setup" way.
+The setup program and the License Manager (installer) can also be started without the GUI in a non-interactive mode.
+
+#### XtractISSetup.exe
+To execute the setup program in the unattended mode, use the switch *--unattended* . <br>
+
+![XIS_Setup-unattended](/img/content/xis/cmd-unattended-switch.png){:class="img-responsive"}
+
+#### XtractLicenseManager.exe
+To execute the License Manager in the unattended mode, pass the path to the license file as a command line argument.
 
 
+#### Waiting Switch
 
-### Displaying the Xtract IS components within SSIS
+As both programs `XtractISSetup.exe` and `XtractLicenseManager.exe` are Windows applications, so Windows Command Prompt does not wait until the installation is complete. 
+To wait until the installation is complete, use the `[start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)` command with the */wait* switch. 
+
+**Examples:**
+```
+start /wait XtractISSetup.exe --unattended
+start /wait XtractLicenseManager.exe "C:\temp\Xtract IS\XtractIS.License.json"
+
+```
+
+
+### Displaying the Xtract IS components within Visual Studio
 After a successful installation of the Xtract IS, the Xtract IS components are automatically available in the SSIS Toolbox of a Data Flow Task in your Visual Studio Integration Services project.
 
 ![XIS_SSIS_Toolbox](/img/content/XIS_SSIS_Toolbox.png){:class="img-responsive"}
