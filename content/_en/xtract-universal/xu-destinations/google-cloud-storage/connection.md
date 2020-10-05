@@ -61,7 +61,7 @@ A bucket can be created in the navigation menu under **Storage > Browser**.
 
 You can freely choose the bucket name, the location type and the storage class or access control. 
 
-Under **Advanced Settings (optional)** you can select the desired encryption method applied to the bucket. Get more details on encryption on the official [Google Help Page]https://cloud.google.com/storage/docs/encryption).      
+Under **Advanced Settings (optional)** you can select the desired encryption method applied to the bucket. Get more details on encryption on the official [Google Help Page](https://cloud.google.com/storage/docs/encryption).      
 ![xu-google-cloud-con-06](/img/content/xu/googlecloudstorage/xu-google-cloud-con-06.png){:class="img-responsive"}
 
 
