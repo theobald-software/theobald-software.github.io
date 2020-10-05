@@ -76,7 +76,7 @@ If you check the *Customer-supplied* option, you need to provide a valid AES256 
 The Crypto key is not stored in the GCP and demands the additional effort to be able to to decrypt your data later. 
 
 **Crypto field** <br>
-Apply the respective cryptographic key depending on the selected encryption method. 
+Enter the cryptographic key into the *Crypto field* if you selected "*Customer Supplied"* as the encryption method.
 
 ### File Format 
 Select the required file format between "CSV", "JSON" and "Parquet".
