@@ -27,7 +27,7 @@ All configuration files of extractions, sources, destinations and the server are
 
 |Filename      | Description                                                                                                                                                  |
 |:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|`destinations`|Directory containing the [destinations](../xu-destinations). Each `.json` file contains a destination of the same name.                                       |
+|`destinations`|Directory containing the [destinations](../destinations). Each `.json` file contains a destination of the same name.                                       |
 |`extractions` |Directory containing the [extractions](../getting-started/define-a-table-extraction). Each sub-directory contains an extraction of the same name.          |
 |`server`      |Directory containing the [server settings](../server/server-settings).                                                                                        |
 |`sources`     |Directory containing [SAP connections](../introduction/sap-connection). Each sub-directory contains a source of the same name.                                              |
