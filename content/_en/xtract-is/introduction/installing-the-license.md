@@ -41,6 +41,11 @@ Xtract IS is licensed per Windows server on which SSIS packages are deployed and
 A demo license is automatically installed with the installation of Xtract IS. <br>
 A regular license is provided, after purchasing the product. The product license is bound to your company and a specific server name. 
 
+### Maintenance
+General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software. Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
+In case of technical difficulties, contact the support team by email: [support@theobald-software.com](mailto:support@theobald-software.com).
+
+
 ### Installing the Xtract IS license - XtractISLicense.json
 1. For installing the regular license, find and double-click the Xtract IS License Manager executable file in the installation directory of Xtract IS:<br>
 `C:\Program Files\XtractIS\XtractLicenseManager.exe` <br>
@@ -68,3 +73,9 @@ If you have an older .dll license file, remove the older version to be able to u
 2. Run the uninstall license file: `C:\Program Files\XtractIS>UninstallDllLicense.bat` <br>
 The .dll license is removed.
 3. Perform the installation of the newer XtractISLicense.json file.
+
+****
+#### Related Links
+- [Customer Portal - My Theobald Software](https://my.theobald-software.com/)
+
+
