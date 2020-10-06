@@ -8,7 +8,7 @@ parent: logging
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-progressstate: 5
+progressstate: 3
 ---
 
 Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien. Die Log-Dateien werden im Produktverzeichnis gespeichert:
@@ -19,9 +19,6 @@ Die korrekte URL entnehmen Sie Ihren Xtract Universal [Web-Server-Einstellungen]
 
 {: .box-note }
 **Hinweis:** Achten Sie auf die korrekten Standardports der unterschiedlichen Komponenten [(Configuration Server, Web Server)](../server/ports). 
-
-Zusätzlich wird die URL des XU-Servers beim Starten des Xtract Universal Designers angezeigt.<br>
-![XU Server connection](/img/content/xu/Connect-to-Xtract-Universal-Server.png){:class="img-responsive"}
 
 Die grundlegende URL-Syntax setzt sich wie folgt zusammen: `http://[XU Server Name].[Domain]:[Port]`
 

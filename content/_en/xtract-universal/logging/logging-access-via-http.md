@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=logging-access-via-http
-progressstate: 5
+progressstate: 3
 ---
 
 All Theobald Software products log all steps performed on a system to log files. The logs can be found in the product directory:
@@ -21,8 +21,6 @@ The correct URL can be found in your Xtract Universal [web server settings](../s
 {: .box-note }
 **Note:** Make sure to select the correct standard ports of the different components [(configuration server, web server)](../server/ports). 
 
-Additionally, you can see the URL of the XU server when starting the Xtract Universal Designer. <br>
-![XU Server connection](/img/content/xu/Connect-to-Xtract-Universal-Server.png){:class="img-responsive"}
 
 The basic URL syntax consists of the following parts: `http://[XU server name].[domain]:[port]`
 
