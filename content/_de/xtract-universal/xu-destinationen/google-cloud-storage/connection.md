@@ -73,7 +73,8 @@ Das KMS kann im Navigationsmenü der GCP-Konsole aktiviert werden unter **Securi
 
 **Customer-supplied** <br>
 Wenn Sie die Option *Customer-supplied* ankreuzen, müssen Sie einen gültigen AES256-Kryptoschlüssel (256 Bit lang) angeben.<br>
-Der Kryptoschlüssel wird nicht innerhalb der GCP gespeichert und es erfordert daher zusätzlichen Aufbewahrungsaufwand, um Ihre Daten später entschlüsseln zu können.
+Der Kryptoschlüssel wird nicht innerhalb der GCP gespeichert und es erfordert daher zusätzlichen Aufbewahrungsaufwand, um Ihre Daten später entschlüsseln zu können.<br>
+
 **Crypto field** <br>
 Tragen Sie im Feld *Crypto field* den kryptografischen Schlüssel ein, wenn Sie "*Customer Supplied"* als Verschlüsselungsmethode gewählt haben.
 
