@@ -1,8 +1,8 @@
 ---
 ref: xu-logging-02
 layout: page
-title: Extraktion-Logging
-description: Extraktion-Logging
+title: Extraktions-Logging
+description: Extraktions-Logging
 product: xtract-universal
 parent: logging
 permalink: /:collection/:path
