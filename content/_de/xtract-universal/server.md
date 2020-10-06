@@ -17,7 +17,6 @@ Dieses Abschnitt beinhaltet Informationen zum Thema Server und Servereinstellung
 Der Server übernimmt zwei Hauptaufgaben:
 
 - Im [Config](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Extraktionen ausführen (inkl Lizenzthemen)
-
 - Im [Config](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Extraktionen dem Designer zur Verfügung stellen.
 
 ### Extraktion auf dem Server ausführen

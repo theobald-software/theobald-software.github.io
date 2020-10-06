@@ -17,12 +17,11 @@ The follwing section contains an overview of the Xtract Universal server.
 The server performs two main tasks:
 
 - Run extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory. 
-
 - Make extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory available to the designer.
 
 ### Run Extraction on the Server
 
-Execution is triggered by an HTTP request. The HTTP request can be triggered from the target environment for [pull destinations](./xu-destinations#pull--and-push destinations) or from the xu command line tool (xu.exe /xu.elf). 
+Execution is triggered by an HTTP request. The HTTP request can be triggered from the target environment for [pull destinations](./destinations#pull-and-push-destinations) or from the xu command line tool (xu.exe /xu.elf). 
 
 {: .box-tip }
 **Tip:** The process can be traced in the [Extraction Log](./logging/extraction-logging).
