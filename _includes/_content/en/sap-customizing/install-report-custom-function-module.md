@@ -4,21 +4,22 @@ If you can’t install the custom function module, ask your SAP system administr
 
 
 ### Installation via SAP transport
-Use the SAP transport file *(thtrans.zip)* to install the custom function module. *(thtrans.zip)* is provided in the ABAP sub-directory of the programm directory - `C:\Program Files\XtractProduct\ABAP` (by default).
+Use the SAP transport file *(thtrans.zip)* to install the custom function module. *thtrans.zip* is provided in the ABAP sub-directory of the programm directory - `C:\Program Files\XtractProduct\ABAP` (by default).
 
 
 ### Manual installation
 
 
-1. Create a new function group for placing the function module (name it ZXTRACT or change the name if you like).
-2. Create a new function module called Z_XTRACT_IS_REMOTE_REPORT. 
-3. Set the attribute *remote enabled* to true. <br> The screenshots below show the import, export and tables parameters to be created.<br>
+1. Create a new function group for placing the function module (name it e.g., ZXTRACT).
+2. Create a new function module called Z_XTRACT_IS_REMOTE_REPORT, change name if needed. 
+3. Set the attribute *remote enabled* to true.
+4. Set the import, export and tables parameters as depicted below.<br>
 ![Report-Custom-Function-01](/img/content/Report-Custom-Function-01.png){:class="img-responsive" }
 ![Report-Custom-Function-02](/img/content/Report-Custom-Function-02.png){:class="img-responsive" }
 ![Report-Custom-Function-03](/img/content/Report-Custom-Function-03.png){:class="img-responsive" }
 ![Report-Custom-Function-04](/img/content/Report-Custom-Function-04.png){:class="img-responsive" }
-4. Copy the source code from the file Z_XTRACT_REMOTE_REPORT.txt from the programm directory into the text box for the source code using *Ctrl+C* and *Ctrl+V*.
-
+5. Copy the source code from the file Z_XTRACT_REMOTE_REPORT.txt from the programm directory into the text box for the source code editor using **[Ctrl+C]** and **[Ctrl+V]** (Tab *Source Code*).
+6. Save and activate the custom function module.
 If you are interested in how the function module works, look at the source code. Each step (Execution, Job Monitoring, Spool Reading etc.) is commented in the source code.
 ![Report-Custom-Function-Source-Code](/img/content/Report-Custom-Function-Source-Code.png){:class="img-responsive" }
 

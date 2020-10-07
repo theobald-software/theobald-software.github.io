@@ -8,7 +8,7 @@ parent: sap-customizing
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=SAPCustomizing-DE:report-funktionsbaustein-installieren
+progressstate: 5
 ---
 
 {% include _content/de/sap-customizing/report-funktionsbaustein-installieren.md  %}
