@@ -69,7 +69,7 @@ Unter **Advanced Settings (optional)** können Sie die gewünschte Verschlüssel
 **Default** <br>
 Wendet die in Ihrem GCS-Bucket angegebene Verschlüsselungsmethode an. <br>
 Google verschlüsselt standardmäßig alle Daten, die auf den Google-Servern gespeichert sind. Darüber hinaus können Sie den Google Cloud Key Management Service (KMS) nutzen, um Schlüssel zu erstellen und auf Ihre Buckets anzuwenden. <br>
-Das KMS kann im Navigationsmenü der GCP-Konsole aktiviert werden unter **Security > Cryptographic Keys**.
+Der KMS kann im Navigationsmenü der GCP-Konsole aktiviert werden unter **Security > Cryptographic Keys**.
 
 **Customer-supplied** <br>
 Wenn Sie die Option *Customer-supplied* ankreuzen, müssen Sie einen gültigen AES256-Kryptoschlüssel (256 Bit lang) angeben.<br>
