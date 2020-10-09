@@ -2,7 +2,7 @@
 Access Management is activated when the checkbox **Restrict Designer access to the following users/groups** is marked. <br>
 Once activated, only the listed users or user groups can log on.
 
-![Server-Settings_](/img/content/Server-Settings_.png){:class="img-responsive"}
+![Server-Settings_](/img/content/Server-Settings.png){:class="img-responsive"}
 
 #### Access Rights - Read, Modify, Create, Admin
 A user group can have one of the following rights. These rights only concern actions (read, create, modify) that can be performed within the Designer. 
