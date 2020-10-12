@@ -6,7 +6,7 @@ In the main window of the Designer navigate to **[Server] > [Settings]**. The 'S
 
 
 {: .box-note }
-**Note:** The settings are stored in the following directory: `C:\Program Files\XtractUniversal\config\server` (by default).
+**Note:** The settings are stored in the following directory: `C:\Program Files\[XtractProduct]\config\server` (by default).
 
 
 ### Configuration Server
@@ -43,18 +43,18 @@ See section [Access Management](../security/access-management).
 #### Protocol / Access control
 
 **HTTP - Unrestricted / HTTP port** (default) <br>
-Defines the port number, on which the XU server receives HTTP requests of an extraction. The run statement generates an HTTP-URL. 
+Defines the port number, on which the Server receives HTTP requests of an extraction. The run statement generates an HTTP-URL. 
 
 **HTTPS - Unrestricted / HTTPS port** <br>
 Enables secure data transfer via HTTPS.
 
-Defines the port number, on which the XU server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL. Port option defines the HTTPS listener port.
+Defines the port number, on which the Server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL. Port option defines the HTTPS listener port.
 
-If you want to receive data via HTTPS you need to install a TLS certificate on the server, on which the Xtract Universal service is running. <br>
+If you want to receive data via HTTPS you need to install a TLS certificate on the server, on which the Service is running. <br>
 See section [Installing an X.509 certificate](../security/install-x.509-Certificate). 
 
 **HTTPS - Restricted to AD users with Designer read access** <br>
-See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by Windows AD users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and section [server security](../security/server-security).  
+See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by Windows AD users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note, Xtract Universal only](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and section [server security](../security/server-security).  
 
 
 #### Misc.
@@ -63,17 +63,17 @@ See *HTTPS - Unrestricted*. This setting enables an additional access control fo
 Defines the maximum age of the web server [log files](../logging/server-logging) in days. After this period the log files are deleted.
 
 **Enable setup distribution for clients** <br>
-Defines whether the setup of the Xtract Universal version running on the server needs to be downloaded. When an older Xtract Universal Designer version is connected to a newer Xtract Universal Server version, you are be prompted to download and update the Designer with the Xtract Universal version. 
+Defines whether the setup of the product version running on the server needs to be downloaded. When an older Designer version is connected to a newer Server version, you are be prompted to download and update the Designer with the product version. 
 
 
 #### Result cache
 
 {:.box-note}
-**Note:** *Cash results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+**Note:** Xtract Universal only! *Cash results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
 
 **Target directory** <br>
-Sets the directory for the buffer files. The default ist the result-cache folder in the Xtract Universal installation directory: <br>
-`C:\Program Files\XtractUniversal\result-cache`.
+Sets the directory for the buffer files. The default ist the result-cache folder in the product's program files directory: <br>
+`C:\Program Files\[XtractProduct]\result-cache`.
 
 **Max. cached runs** <br>
 Defines the maximum count of results of different extractions in the buffer.

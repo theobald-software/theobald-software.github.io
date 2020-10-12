@@ -48,7 +48,7 @@ Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat inst
 Siehe Abschnitt [X.509 Zertifikat installieren](../sicherheit/x.509-zertifikat-installieren).
 
 **HTTPS - Restricted to AD users with Designer read access**<br>
-Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tab *Configuration Server* mindestens ein *Read* (Lesezugriff) zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Abschnitt [Serversicherheit](../sicherheit/serversicherheit).
+Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tab *Configuration Server* mindestens ein *Read* (Lesezugriff) zugewiesen wurde. Siehe auch [Release Note, nur Xtract Universal](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Abschnitt [Serversicherheit](../sicherheit/serversicherheit).
 
 
 #### Misc.
@@ -57,7 +57,7 @@ Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine
 Definiert das maximale Alter der [Webserver-Logdateien](../logging/server-logging) in Tagen. Danach werden die Logdateien gelöscht. 
 
 **Enable setup distribution for clients**<br>
-Legt fest, ob das Setup der Xtract Universal Version, die auf dem Server läuft, vom Server heruntergeladen werden kann.<br>
+Legt fest, ob das Setup der Produktversion, die auf dem Server läuft, vom Server heruntergeladen werden kann.<br>
 Wenn man sich mit einer älteren Designer-Version an einem neueren Server anmeldet und diese Option aktiviert ist,
 fragt der Designer, ob man das neuere Setup herunterladen möchte.
 
@@ -65,11 +65,11 @@ fragt der Designer, ob man das neuere Setup herunterladen möchte.
 #### Result cache
 
 {:.box-note}
-**Hinweis:** die Option *Cash results* ist nur Verfügbar in [Pull-Destinationen](../xu-destinationen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
+**Hinweis:** Nur Xtract Universal! Die Option *Cash results* ist nur Verfügbar in [Pull-Destinationen](../xu-destinationen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
 
 **Target directory**<br>
-Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Installationsverszeichnis von Xtract Universal: <br>
-`C:\Program Files\XtractUniversal\result-cache`.
+Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Programmverzeichnis des Produkts: <br>
+`C:\Program Files\[XtractProduct]\result-cache`.
 
 **Max. cached runs**<br>
 Definiert die maximale Anzahl der Ergebnisse verschiedener Extraktionen im Puffer.
