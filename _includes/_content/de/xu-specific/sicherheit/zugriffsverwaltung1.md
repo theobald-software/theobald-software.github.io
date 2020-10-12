@@ -2,7 +2,7 @@
 Die Zugriffssteuerung wird aktiviert, wenn die Checkbox **Restrict Designer access to the following users/groups** markiert wird.<br>
 Danach können sich nur die aufgelisteten Benutzer bzw. Benutzergruppen am Designer anmelden.
 
-![Server-Settings_](/img/content/Server-Settings_.png){:class="img-responsive"}
+![Server-Settings_](/img/content/Server-Settings.png){:class="img-responsive"}
 
 
 #### Zugriffsrechte - Read, Modify, Create, Admin

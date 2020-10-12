@@ -5,14 +5,14 @@ The connection between the Designer and the Server can be established using diff
 The following combinations of transport encryption and authentication are available:
 
 {: .box-note }
-**Note:** To use Kerberos transport encryption or authenticate an Active Directory user, a Kerberos Target Principal Name (TPN) is required. 
+**Note:** To use Kerberos transport encryption or authenticate an Active Directory (AD) user, a Kerberos Target Principal Name (TPN) is required. 
 
 TPN can either be a User Principal Name (UPN) or a Service Principal Name (SPN). 
 Further information on TPN can be found in the Knowledge Base Article [How to use target principal field (TPN)](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 | Authentication Method | Description | TPN required |
 | :------ |:--- | :---: |
-| Windows credentials (current user) | The AD user who runs the Designer authenticates himself to the Server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos. | x |
+| Windows credentials (current user) | The AD user, who runs the Designer authenticates himself towards the Server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos. | x |
 | Windows credentials (different users) | The AD user, whose user name and password are entered in the login window, authenticates himself to the XU server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos.| x |
 | Custom credentials (TLS encryption) | The custom user, whose user name and password are entered in the login window, authenticates himself to the Server. All data exchanged between Designer & Server is encrypted via TLS. To use TLS transport encryption, an [X.509 server certificate](./install-x.509-Certificate) is required for the Service (can be stored in the [server settings](../server/server-settings). In the login window, the DNS hostname of the server for which the certificate is issued needs to be entered into the *Server* field. | - |
 | Custom credentials (Kerberos encryption) | The custom user, whose user name and password are entered in the login window, authenticates himself to the Server. All data exchanged between Designer & Server is encrypted using Kerberos. | x |  
