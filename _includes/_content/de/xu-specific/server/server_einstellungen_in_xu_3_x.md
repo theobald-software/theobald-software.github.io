@@ -12,7 +12,7 @@ Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Settings]**. Das F
 
 #### Designer connections
 
-**Port**<br>
+**Port (1)**<br>
 Definiert die Portnummer, über die der Server mit dem Designer kommuniziert. Standardport ist 8064. Wird ein anderer Port verwendet, fügen Sie die neue Portnummer dem Hostnamen auf der Anmeldemaske hinzu ([host name]:[port]).
 
 ![XU-Designer-Logon](/img/content/xu/xu-designer-logon.png){:class="img-responsive"}

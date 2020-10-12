@@ -16,7 +16,7 @@ In the main window of the Designer navigate to **[Server] > [Settings]**. The 'S
 
 #### Designer connections
 
-**Port** <br>
+**Port (1)** <br>
 Defines the port number for communication between Server and Designer. The default is 8064. If you set a different port, add the new port number to the host name on the logon screen ([host name]:[port]).
 
 ![XU-Designer-Logon](/img/content/xu/xu-designer-logon.png){:class="img-responsive"}
