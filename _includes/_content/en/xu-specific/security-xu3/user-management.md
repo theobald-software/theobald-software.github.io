@@ -1,12 +1,8 @@
 ### Authentication and encryption procedures
-The connection between the Xtract Universal Designer and the Xtract Universal Server can be established using different authentication and encryption methods. 
+The connection between the Designer and the Server can be established using different authentication and encryption methods. 
 ![XU3_Designer_Authentication](/img/content/xu/authentication_xu.png){:class="img-responsive"}
 
-XU supports the following combinations of transport encryption and authentication:
-
-- **Windows credentials (current user)**<br>
-The AD user who runs the XU Designer authenticates himself to the XU server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos.
-
+The following combinations of transport encryption and authentication are available:
 
 {: .box-note }
 **Note:** To use Kerberos transport encryption or authenticate an Active Directory user, a Kerberos Target Principal Name (TPN) is required. 
@@ -14,25 +10,19 @@ The AD user who runs the XU Designer authenticates himself to the XU server via 
 TPN can either be a User Principal Name (UPN) or a Service Principal Name (SPN). 
 Further information on TPN can be found in the Knowledge Base Article [How to use target principal field (TPN)](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
-
-- **Windows credentials (different users)**<br> 
-The AD user, whose user name and password are entered in the login window, authenticates himself to the XU server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos.
-
-- **Custom credentials (TLS encryption)**<br>
-The custom user, whose user name and password are entered in the login window, authenticates himself to the XU server. All data exchanged between Designer & Server is encrypted via TLS.<br>
-To use TLS transport encryption, an [X.509 server certificate](./install-x.509-Certificate) is required for the XU service (can be stored in the [server settings](../server/server-settings).
-In the login window, the DNS hostname of the server for which the certificate is issued needs to be entered into the *Server* field.
-
-- **Custom credentials (Kerberos encryption)**<br>
-The custom user, whose user name and password are entered in the login window, authenticates himself to the XU server. All data exchanged between Designer & Server is encrypted using Kerberos.
-
-- **Anonymous (no encryption)**<br>
-There is no authentication. The data exchanged between Designer & Server is transferred in plain text without transport encryption.
+| Authentication Method | Description | TPN required |
+| :------ |:--- | :--- |
+| **Windows credentials (current user)**| The AD user who runs the Designer authenticates himself to the Server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos. | Four |
+| **Windows credentials (different users)**  | The AD user, whose user name and password are entered in the login window, authenticates himself to the XU server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos.| Nine |
+|  **Custom credentials (TLS encryption)** | The custom user, whose user name and password are entered in the login window, authenticates himself to the Server. All data exchanged between Designer & Server is encrypted via TLS.<br>
+To use TLS transport encryption, an [X.509 server certificate](./install-x.509-Certificate) is required for the Service (can be stored in the [server settings](../server/server-settings).
+In the login window, the DNS hostname of the server for which the certificate is issued needs to be entered into the *Server* field. | Six |
+| **Custom credentials (Kerberos encryption)** | The custom user, whose user name and password are entered in the login window, authenticates himself to the Server. All data exchanged between Designer & Server is encrypted using Kerberos. | One |  
+| **Anonymous (no encryption)** | There is no authentication. The data exchanged between Designer & Server is transferred in plain text without transport encryption. | One |  
 
 ### Activating Authentication Methods 
 The different logon options can be activated/deactivated in the [Server Settings](../server/server-settings).
 ![XU3_ServerSettings_authenticaion_methods](/img/content/xu/authentisierung_xu.png){:class="img-responsive"}
-
 
 
 ### Users and User Groups
