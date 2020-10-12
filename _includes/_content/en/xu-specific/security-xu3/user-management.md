@@ -11,33 +11,36 @@ TPN can either be a User Principal Name (UPN) or a Service Principal Name (SPN).
 Further information on TPN can be found in the Knowledge Base Article [How to use target principal field (TPN)](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 | Authentication Method | Description | TPN required |
-| :------ |:--- | :--- |
-| **Windows credentials (current user)**| The AD user who runs the Designer authenticates himself to the Server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos. | Four |
-| **Windows credentials (different users)**  | The AD user, whose user name and password are entered in the login window, authenticates himself to the XU server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos.| Nine |
-|  **Custom credentials (TLS encryption)** | The custom user, whose user name and password are entered in the login window, authenticates himself to the Server. All data exchanged between Designer & Server is encrypted via TLS.<br>
-To use TLS transport encryption, an [X.509 server certificate](./install-x.509-Certificate) is required for the Service (can be stored in the [server settings](../server/server-settings).
-In the login window, the DNS hostname of the server for which the certificate is issued needs to be entered into the *Server* field. | Six |
-| **Custom credentials (Kerberos encryption)** | The custom user, whose user name and password are entered in the login window, authenticates himself to the Server. All data exchanged between Designer & Server is encrypted using Kerberos. | One |  
-| **Anonymous (no encryption)** | There is no authentication. The data exchanged between Designer & Server is transferred in plain text without transport encryption. | One |  
+| :------ |:--- | :---: |
+| Windows credentials (current user) | The AD user who runs the Designer authenticates himself to the Server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos. | x |
+| Windows credentials (different users) | The AD user, whose user name and password are entered in the login window, authenticates himself to the XU server via Kerberos. All data exchanged between Designer & Server is encrypted using Kerberos.| x |
+| Custom credentials (TLS encryption) | The custom user, whose user name and password are entered in the login window, authenticates himself to the Server. All data exchanged between Designer & Server is encrypted via TLS. To use TLS transport encryption, an [X.509 server certificate](./install-x.509-Certificate) is required for the Service (can be stored in the [server settings](../server/server-settings). In the login window, the DNS hostname of the server for which the certificate is issued needs to be entered into the *Server* field. | - |
+| Custom credentials (Kerberos encryption) | The custom user, whose user name and password are entered in the login window, authenticates himself to the Server. All data exchanged between Designer & Server is encrypted using Kerberos. | x |  
+| Anonymous (no encryption) | There is no authentication. The data exchanged between Designer & Server is transferred in plain text without transport encryption. | - |  
+
 
 ### Activating Authentication Methods 
 The different logon options can be activated/deactivated in the [Server Settings](../server/server-settings).
+![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
+Select the tab *Configuration Server*.
 ![XU3_ServerSettings_authenticaion_methods](/img/content/xu/authentisierung_xu.png){:class="img-responsive"}
 
 
 ### Users and User Groups
 
 {: .box-note }
-**Note:** Windows AD Groups are created outside the Designer.
+**Note:** Windows AD Users and Groups are created outside the Designer.
 
-To create custom users and assign the created users to user groups navigate to **Security > Manage Users**.
+To create custom users and assign the created users to user groups navigate to **Security > Manage Users > Add**.
 ![XU_security-manage-users](/img/content/security-manage-users.png){:class="img-responsive"}
 At the time of user creation, no rights need to be assigned. See also [Access Management](./access-management).
 Custom user groups can be created under **Server > Server Settings > Add**. 
+![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
+Select the tab *Configuration Server*.
 ![XU_server-settings-add](/img/content/server-settings-add-group.png){:class="img-responsive"}
 Make sure to select the option "Restrict Designer access to the following users/groups".
 ![XU_server-settings-add-groups](/img/content/server-seetings-create-user-group.png){:class="img-responsive"}
-After creating a group, you can assign user to the created groups under **Security > Manage Users > Edit**
+After creating a group, you can assign user to the created groups under **Security > Manage Users > Edit**.
 ![XU_server-settings-add](/img/content/user-management-groups.png){:class="img-responsive"}
 Use the arrows **[<]** and **[>]** to assign and remove users to and from groups.
 
