@@ -148,4 +148,9 @@ The settings for file type "CSV" correspond to the [Flat File CSV settings](../c
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
 
+### Connection Retry Function
 
+The Retry is a built-in function that prevents extractions from failing in case of short connection interruptions to Azure.
+The Retry function is implemented according to Microsoft guidelines. The Retry function tries to establish connection up to 2 minutes.
+<!---- using an exponential backoff, meaning 8 retries with an increasing waiting time between the requests: 1s, 2s, 4s, 8s, 16s, etc.
+See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines).--- >
