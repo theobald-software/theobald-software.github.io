@@ -29,8 +29,7 @@ Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [supp
 Der Lizenzmanager wird geöffnet. 
 ![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
 2. Klicken Sie auf **[Install]**. Das Fenster "Install Xtract License" wird geöffnet.
-3. Suchen Sie die reguläre Datei "XtractISLicense.json" im Installationsverzeichnis von Xtract IS:
-`C:\Program Files\XtractIS\XtractISLicense.json`
+3. Suchen Sie die erworbene reguläre Lizenzdatei "XtractISLicense.json" aus, die Sie vom [Kundenportal - My Theobald Software](https://my.theobald-software.com) heruntergeladen haben.
 4. Schließen und starten Sie den Lizenzmanager neu, um die korrekt installierte Lizenz anzuzeigen.  
 ![XIS_Lizenz_Info](/img/content/XIS_License_Info.png){:class="img-responsive" width="400px"}
 
