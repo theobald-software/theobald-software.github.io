@@ -85,3 +85,9 @@ Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstel
 
 ![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
 
+### Retry-Funktion zur Erhaltung der Verbindung
+
+Die Retry-Funktion ist eine eingebaute Funktion, die verhindert, dass Extraktionen fehlschlagen, wenn es kurze Verbindungsunterbrechungen zu Google Cloud passieren.
+Die Retry-Funktion ist nach den Richtlinien von Microsoft implementiert. Die Retry-Funktion versucht eine Verbindung bis zu 2 Minuten herzustellen.
+
+

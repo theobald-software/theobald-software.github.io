@@ -153,6 +153,9 @@ Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstel
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
 
+### Retry-Funktion zur Erhaltung der Verbindung
 
+Die Retry-Funktion ist eine eingebaute Funktion, die verhindert, dass Extraktionen fehlschlagen, wenn es kurze Verbindungsunterbrechungen zu Azure passieren.
+Die Retry-Funktion ist nach den Richtlinien von Microsoft implementiert. Die Retry-Funktion versucht eine Verbindung bis zu 2 Minuten herzustellen.
 
  

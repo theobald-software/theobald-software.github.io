@@ -55,3 +55,8 @@ Select the required file format between "Parquet" and "CSV".
 The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
 	
 ![XU_S3_DestinationDetails2](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
+
+### Connection Retry Function
+
+The Retry is a built-in function that prevents extractions from failing in case of short connection interruptions to AWS S3.
+The Retry function is implemented according to Microsoft guidelines. The Retry function tries to establish connection up to 2 minutes.
