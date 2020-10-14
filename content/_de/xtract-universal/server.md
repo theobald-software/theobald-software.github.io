@@ -24,7 +24,7 @@ Der Server übernimmt zwei Hauptaufgaben:
 Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von der xu-Kommandozeilen-Tool (xu.exe /xu.elf) gestartet werden. 
 
 {: .box-tip }
-**Tipp:** Der Server-Prozess kann im [Extraktions-Log](./logging/extraktion-logging) nachvollzogen werden.
+**Tipp:** Der Server-Prozess kann im [Extraktions-Log](../logging/extraktion-logging) nachvollzogen werden.
 
 1. XtractRun.exe prüft die Authentisierung und Autorisierung der Anfrage. 
 2. Die Zielumgebung wird für das Schreiben der extrahierten Daten vorbereitet (z.B. Datenbakverbindung herstellen, Datei anlegen).
@@ -46,7 +46,7 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 
 ### Serverarchitektur
 
-Der Server läuft als Windows-Service und der Hauptprozess von diesem Service ist XtractService.exe. Der Windows-Service kann über die Windows-Diensteverwaltung oder den Taskmanager [verwaltet](./server-starten) werden.
+Der Server läuft als Windows-Service und der Hauptprozess von diesem Service ist XtractService.exe. Der Windows-Service kann über die Windows-Diensteverwaltung oder den Taskmanager [verwaltet](./server/server-starten) werden.
 xtractservice.exe startet zwei Listener-Prozesse:
 - XtractWebServer.exe
 - XtractConfigServer.exe
@@ -56,7 +56,7 @@ xtractservice.exe startet zwei Listener-Prozesse:
 Die Log-Datei befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs` (standartmäßig).
 
 
-Die beiden Listener-Prozesse lauschen auf den [Ports](./ports), die in den [Server-Einstellungen](./server_einstellungen) definiert sind.
+Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server_einstellungen) definiert sind.
 
 XtractConfigServer.exe wartet auf neue Verbindungsanfragen vom Designer. 
 
