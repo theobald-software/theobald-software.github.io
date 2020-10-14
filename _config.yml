@@ -52,7 +52,7 @@ language:
     navbar-links:
       - title: "Go to Knowledge Base"
         url: "https://kb.theobald-software.com"   
-      - title: "Go to Customer Portal"
+      - title: "Go to My Theobald"
         url: "https://my.theobald-software.com/"      
     navbar-back-to: "Back to"
     homepage: "Homepage"
@@ -73,7 +73,7 @@ language:
     navbar-links:
       - title: "Zur Knowledge-Base"
         url: "https://kb.theobald-software.com"
-      - title: "Zum Kundenportal"
+      - title: "Zu My Theobald"
         url: "https://my.theobald-software.com/"
     navbar-back-to: "Zurück zur"
     homepage: "Startseite"
