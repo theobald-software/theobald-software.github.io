@@ -24,7 +24,7 @@ Der Server übernimmt zwei Hauptaufgaben:
 Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von der xu-Kommandozeilen-Tool (xu.exe /xu.elf) gestartet werden. 
 
 {: .box-tip }
-**Tipp:** Der Server-Prozess kann im [Extraktions-Log](../logging/extraktion-logging) nachvollzogen werden.
+**Tipp:** Der Server-Prozess kann im [Extraktions-Log](./logging/extraktion-logging) nachvollzogen werden.
 
 1. XtractRun.exe prüft die Authentisierung und Autorisierung der Anfrage. 
 2. Die Zielumgebung wird für das Schreiben der extrahierten Daten vorbereitet (z.B. Datenbakverbindung herstellen, Datei anlegen).

@@ -54,7 +54,7 @@ Xtractservice.exe starts two listener processes:
 The log file is located in the logs subdirectory of the program directory: 'C:ProgramFiles\XtractUniversal\logs' (default).
 
 
-The both listener processes listen on the [Ports](./ports) defined in the [Server Settings](./server-settings).
+The both listener processes listen on the [Ports](./server/ports) defined in the [Server Settings](./sever/server-settings).
 
 XtractConfigServer.exe waits for new connection requests from the designer. 
 
