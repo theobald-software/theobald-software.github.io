@@ -71,11 +71,11 @@ Für jede TCP-Verbindung startet die XtractWebServer.exe eine neue Instanz der X
 {: .box-tip }
 **Tipp:** Die XtractRun.exe protokolliert ihre Aktionen in dem Log-Unterverzeichnis. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:ProgramFiles\XtractUniversal\logs\server\run` (standartmäßig). 
-Das sind auch die Logs, die man sich im Designer unter **{Server]>[Logs]** anzeigen lassen kann.
+Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs]** anzeigen lassen kann.
 
 Die folgenden HTTP-Anfragen sind möglich:
 - Ausführen einer Extraktion
-- Leeren des Result-Caches der Extraktion
+- Leeren des Result-Caches einer Extraktion
 - Abbrechen aller Läufe einer Extraktion
 - REST API-Anfragen z.B. [Logs](./logging/log-zugriff-ueber-http), [Metadaten](./fortgeschrittene-techniken/metadaten-zugriff-ueber-http) etc.
 
