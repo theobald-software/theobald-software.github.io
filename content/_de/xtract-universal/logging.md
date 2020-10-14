@@ -16,7 +16,7 @@ progressstate: 3
 Xtract Universal protokolliert verschiedene Aktionen in Log-Dateien.
 Die Log-Dateien befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs` (standartmäßig).
 
-Es gibt verschiedene Arten der Log-Dateien.
+<!---Es gibt verschiedene Arten der Log-Dateien.
 
 
 |Typ | Name | Beschreibung | Pfad zum Ablageort |
@@ -45,7 +45,7 @@ Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs]** anzei
 10. Paket Nr. 2 in SQL Server schreiben.
 11. Paket Nr. 3 von SAP empfangen
 12. Paket Nr. 3 in SQL Server schreiben.
-13. Extraktion abschließen.
+13. Extraktion abschließen.--->
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
