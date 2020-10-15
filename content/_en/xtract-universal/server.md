@@ -44,7 +44,7 @@ Execution is triggered by an HTTP request. The HTTP request can be triggered fro
 
 ### Server Architecture
 
-The server runs as a Windows Service and the main process of the XU Service is XtractService.exe. The Windows Service can be [managed](./start-server) via the Windows Services administration or the Task Manager.
+The server runs as a Windows Service and the main process of the XU Service is XtractService.exe. The Windows Service can be [managed](./server/start-server) via the Windows Services administration or the Task Manager.
 Xtractservice.exe starts two listener processes:
 - XtractWebServer.exe
 - XtractConfigServer.exe
@@ -54,7 +54,7 @@ Xtractservice.exe starts two listener processes:
 The log file is located in the logs subdirectory of the program directory: 'C:ProgramFiles\XtractUniversal\logs' (default).
 
 
-The both listener processes listen on the [Ports](./server/ports) defined in the [Server Settings](./sever/server-settings).
+The both listener processes listen on the [Ports](./server/ports) defined in the [Server Settings](./server/server-settings).
 
 XtractConfigServer.exe waits for new connection requests from the designer. 
 
