@@ -1,5 +1,5 @@
 ---
-ref: xu-bw-hierarchies-03
+ref: xfa-bwhier-settings
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
@@ -11,4 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=hierarchie-extraktionseinstellungen
 ---
 {% include _content/de/bw-hierarchien/hierarchie-extraktionseinstellungen.md %}
+
+### Tabellenausgabe
+{% include _content/de/bw-hierarchien/tabellenausgabe.md %}
 

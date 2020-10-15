@@ -1,5 +1,5 @@
 ---
-ref: xu-bw-hierarchies-01
+ref: xfa-bwhier-define
 layout: page
 title: Hierarchien als Datenquelle definieren
 description: Hierarchien als Datenquelle definieren
