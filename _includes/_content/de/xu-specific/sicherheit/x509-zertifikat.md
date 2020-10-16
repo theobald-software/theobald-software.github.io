@@ -1,8 +1,8 @@
 Für Transportverschlüsselung und Authentisierung wird ein X.509-Zertifikat benötigt.
 
 Es gibt zwei Ansätze für die Erstellung eines X.509-Zertifikats:
-- ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat 
-- ein selbst signiertes Zertifikat (self-signed certificate)
+- Ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat 
+- Ein selbst signiertes Zertifikat (self-signed certificate)
 
 {: .box-note }
 **Hinweis:** In Testumgebungen können Sie ein selbst signiertes Zertifikat verwenden. Für Ihre Produktivumgebung wird ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat empfohlen. 

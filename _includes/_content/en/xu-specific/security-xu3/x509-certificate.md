@@ -2,8 +2,8 @@ For Transport encryption and authentication require to install an X.509 certific
 This chapter describes the requirements to install an X.509 certificate.
 
 There are two approaches for creating an X.509 certificate:
-- a certificate released by an (internal) certification authority (CA) 
-- a self-signed certificate
+- Certificate released by an (internal) certification authority (CA) 
+- Self-signed certificate
 
 {: .box-note }
 **Note:** On test environments you can use a self-signed certificate. For production environment it is recommend to use a certificate released by an (internal) certificate authority (CA). 
