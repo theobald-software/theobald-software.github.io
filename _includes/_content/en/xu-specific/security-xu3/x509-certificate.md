@@ -1,22 +1,32 @@
-Some of the functionalities in our software require you to install an X.509 certificate for trust and data encryption. <br>
+For Transport encryption and authentication require to install an X.509 certificate.
 This chapter describes the requirements to install an X.509 certificate.
 
-An X.509 certificate can be provided by your network team. Please make sure: 
-- that the certificate property “Subject Alternative Name” contains the DNS name of the server on which the service (e.g. Xtract Universal or BOARD Connector) is running. Otherwise the certificate won’t appear in our software's lookup dialog.
-- that the certificate common name (CN) attribute contains the DNS name of the server on which the service (e.g. Xtract Universal or BOARD Connector) is running.
-- to place the certificate in the [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) on the server machine.
+There are two approaches for creating an X.509 certificate:
+- a certificate released by an (internal) certification authority (CA) 
+- a self-signed certificate
 
-On test environments you can use a self-signed certificate. For your production environment we recommend to use a certificate released by an (internal) certificate authority (CA). 
+{: .box-note }
+**Note:** On test environments you can use a self-signed certificate. For production environment it is recommend to use a certificate released by an (internal) certificate authority (CA). 
 
-**Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc)**
+### Create X.509 Certificate
+
+Make sure to have a TLS certificate issued by your IT network team considering the following points:
+ 
+- The certificate property “Subject Alternative Name” contains the DNS name of the server on which the Windows service (e.g. Xtract Universal Service or BOARD Connector Service) is running. 
+- Place the certificate in the [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) on the machine, on which the Windows service is running.
+- The certificate common name (CN) attribute contains the DNS name of the server. 
+
+{: .box-tip }
+**Tip:** To display the Common Name (CN) of the certificate, double-click on the certificate in the Cetrificate Manager and navigate to the *Details* tab.
+
+### Integrate X.509 certificate
+
+1. Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc).
+In the example shown, the server name is "TODD":
 ![XU-X509-MMC](/img/content/XU-X509-MMC.png){:class="img-responsive"}
-
-<br>
-
-**Reference that same certificate (here in Xtract Universal)**
-![XU-X509-Lookup](/img/content/XU-X509-Lookup.png){:class="img-responsive"}
-
-
-
+2. Reference to the certificate in the Designer under **[Server] > [Settings] > Tab [Configuration Server / Web Server] > [Select X.509 certificate]**.
+![Server-settings_manage](/img/content/server-settings_manage.png){:class="img-responsive"}
+![Server-settings_manage](/img/content/server-settings-certificate-web.png){:class="img-responsive"}
+![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}.
 
  

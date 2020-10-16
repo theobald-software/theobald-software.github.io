@@ -1,7 +1,6 @@
 ### Server Settings
 Access Management is activated when the checkbox **Restrict Designer access to the following users/groups** is marked. <br>
 Once activated, only the listed users or user groups can log on.
-
 ![Server-Settings_](/img/content/Server-Settings.png){:class="img-responsive"}
 
 #### Access Rights - Read, Modify, Create, Admin
@@ -17,7 +16,10 @@ A user group can have one of the following rights. These rights only concern act
 
 
 ### Extraction Settings - Extraction Level
-Access control can also be performed at extraction level. This access control overrides the settings at server level.
+Access control can also be performed at extraction level. <br>
+Open the main window of the component and click **[General Settings] > Tab *Security**.
+![Extraction-Settings_](/img/content/XU_Extraction_Security3.png){:class="img-responsive"}
+The access control on extraction level overrides the settings at server level.
 
 ![Server-Settings_](/img/content/XU_Extraction_Security.png){:class="img-responsive"}
 

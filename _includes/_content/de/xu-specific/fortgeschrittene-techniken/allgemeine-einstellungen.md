@@ -61,4 +61,5 @@ In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. 
 
 ### Security Tab
 
-Das Security Tab ist im Abschnitt [Zugriffsverwaltung](../sicherheit/zugriffsverwaltung) beschrieben. 
+Das Security Tab ist im Abschnitt [Zugriffsverwaltung](../sicherheit/zugriffsverwaltung#zugriffssteuerung-auf-extrakionsebene---extraction-settingsg) beschrieben. 
+![Extraction-Settings_](/img/content/XU_Extraction_Security3.png){:class="img-responsive"}

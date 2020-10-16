@@ -2,7 +2,7 @@ General Settings are independent of the extraction type.
 
 ### To open General Settings
 1. In the main window of the Designer, double-click an extraction.<br>
-The window "Define data source for [...]" opens.<br>
+The main window of the component opens.<br>
 Example:
 ![General-Settings](/img/content/General-Settings_designer.png){:class="img-responsive"}
 

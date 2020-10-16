@@ -1,7 +1,8 @@
+
 ### Zugriffssteuerung auf Serverebene - Server Settings
+
 Die Zugriffssteuerung wird aktiviert, wenn die Checkbox **Restrict Designer access to the following users/groups** markiert wird.<br>
 Danach können sich nur die aufgelisteten Benutzer bzw. Benutzergruppen am Designer anmelden.
-
 ![Server-Settings_](/img/content/Server-Settings.png){:class="img-responsive"}
 
 
@@ -17,14 +18,15 @@ Einem Benutzer oder einer Benutzergruppe können nachfolgende Rechte zugeordnet 
 |Admin|Mitglieder dieser Gruppe haben alle Rechte, keine Beschränkungen und können Admin-Tätigkeiten ausführen. Zu Admin-Tätigkeiten gehört das Ändern von Server-Einstellungen, Zugriff auf Server-Logs oder das Bearbeiten von Benutzern und Verbindungen (SAP und Zielumgebungen). Zugriffseinschränkungen auf Extraktionen oder des Quellsystem werden ignoriert.|
 
 
-### Zugriffssteuerung auf Extrakionsebene - Extraction Settings
-Eine Zugriffssteuerung kann auch auf Extraktionsebene vorgenommen werden. Diese Zugriffssteuerung übersteuert die Einstellungen auf Serverebene.
-
+### Zugriffssteuerung auf Extrakionsebene - Extraction Settings 
+Eine Zugriffssteuerung kann auch auf Extraktionsebene vorgenommen werden. <br>
+Öffnen Sie das Hauptfenster der Komponente und klicken Sie auf **[General Settings] > Tab *Security**. 
+![Extraction-Settings_](/img/content/XU_Extraction_Security3.png){:class="img-responsive"}
+Diese Zugriffssteuerung auf Extraktionsebene übersteuert die Einstellungen auf Serverebene.
 
 
 ### Zugriffsteuerung auf Source-Ebene - Einstellungen der Datenquelle
 Eine Zugriffssteuerung kann auch auf Datenquellebene (Source-Ebene) vorgenommen werden. Diese Zugriffssteuerung übersteuert die Einstellungen auf Serverebene.
-
 ![Server-Settings_](/img/content/XU_Extraction_Security2.png){:class="img-responsive"}
 
 

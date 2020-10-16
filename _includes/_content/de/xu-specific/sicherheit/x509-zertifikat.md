@@ -1,25 +1,30 @@
-Einige der Funktionalitäten unserer Software erfordern die Installation eines X.509-Zertifikats für Datensicherheit und -verschlüsselung. <br>
-In diesem Abschnitt werden die Voraussetzungen für die Installation eines X.509-Zertifikats beschrieben.
+Für Transportverschlüsselung und Authentisierung wird ein X.509-Zertifikat benötigt.
 
-Lassen Sie ein TLS Zertifikat von Ihrem IT Netzwerk Team erstellen. Stellen Sie bitte folgendes sicher:
+Es gibt zwei Ansätze für die Erstellung eines X.509-Zertifikats:
+- ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat 
+- ein selbst signiertes Zertifikat (self-signed certificate)
 
-- In der Zertifikatseigenschaft “Subject Alternative Name” muss der DNS Name des Servers stehen, auf dem der Windows-Dienst (z.B. Xtract Universal oder BOARD Connector) läuft. Ansonsten erscheint das Zertifikat nicht im Lookup Dialog.
-- Das Zertifikat muss im Windows Certificate Store auf dem Server, auf dem der Windows-Dienst (z.B. Xtract Universal oder BOARD Connector) läuft, hinterlegt werden.
+{: .box-note }
+**Hinweis:** In Testumgebungen können Sie ein selbst signiertes Zertifikat verwenden. Für Ihre Produktivumgebung wird ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat empfohlen. 
+
+
+### X.509-Zertifikat erstellen
+
+Lassen Sie ein TLS Zertifikat von Ihrem IT-Netzwerk-Team unter Beachtung folgender Punkte erstellen:
+
+- In der Zertifikatseigenschaft “Subject Alternative Name” muss der DNS Name des Servers stehen, auf dem der Windows-Service (z.B. Xtract Universal Service oder BOARD Connector Service) läuft.
+- Das Zertifikat muss im [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91) auf dem Server hinterlegt werden, auf dem der Windows-Service läuft.<br>
 - Das Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten. 
 
+{: .box-tip }
+**Tipp:** Um den Common-Name (CN) des Zertifikats anzeigen zu lassen, doppel-klicken Sie auf das Zertifikat im Cetrificate Manager und navigieren Sie zum Tab *Details*.
 
-In Testumgebungen können Sie ein selbst signiertes Zertifikat verwenden. Für Ihre Produktionsumgebung empfehlen wir, ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat zu verwenden. 
+### X.509-Zertifikat einbinden
 
-
-**Importieren Sie das Zertifikat über die Microsoft Management Console (mmc) in den Windows Certificate Store**
+1. Importieren Sie das Zertifikat über die Microsoft Management Console (mmc) in den Windows Certificate Manager. <br>
+Im abgebildeten Beispiel lautet der Servername "TODD":
 ![XU-X509-MMC](/img/content/XU-X509-MMC.png){:class="img-responsive"}
-
-<br>
-
-**Verweisen Sie auf das Zertifikat (hier in Xtract Universal)**
-![XU-X509-Lookup](/img/content/XU-X509-Lookup.png){:class="img-responsive"}
-
-
-
-
- 
+2. Verweisen Sie auf das Zertifikat im Designer unter **[Server] > [Settings] > Tab [Configuration Server / Web Server] > [Select X.509 certificate]**.
+![Server-settings_manage](/img/content/server-settings_manage.png){:class="img-responsive"}
+![Server-settings_manage](/img/content/server-settings-certificate-web.png){:class="img-responsive"}
+![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}.

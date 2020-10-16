@@ -9,5 +9,11 @@ permalink: /:collection/:path
 weight: 2
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=access-management
+Progessstate: 5
 ---
+
+The access control can be performed on several levels. The stored authorizations on server level are extended by authorizations on source and extraction level.
+
+For example, the user may only execute an extraction if he has read rights on the extraction and source level. 
+This also applies to data from the [Result Cache](./getting-started/general-settings).
 {% include _content/en/xu-specific/security-xu3/access-management.md %}
