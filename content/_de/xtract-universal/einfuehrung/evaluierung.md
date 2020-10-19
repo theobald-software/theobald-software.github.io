@@ -20,7 +20,7 @@ Die Testversion ist nur zeitlich begrenzt und funktioniert ansonsten uneingeschr
 Während der Evaluierungsphase erhalten Sie garantiert eine uneingeschränkte Unterstützung durch das Theobald Software Support-Team.
 Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail oder Telefon an Theobald Software wenden: <br>
 - [support@theobald-software.com](mailto:support@theobald-software.com)
-- [Internationale Kontaktdaten] (https://theobald-software.com/en/contact/)
+- [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
 
 ****
 #### Weiterführende Links
