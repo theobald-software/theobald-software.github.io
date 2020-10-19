@@ -19,7 +19,7 @@ The JSON destination is a generic JSON stream over HTTP.
 2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
 ![JSON-Destination-Details](/img/content/xu/xu_manage-destinations.png){:class="img-responsive"}
 3. Select the *HTTP - JSON* destination from the drop-down list.
-![JSON-Destination-Details](/img/content/xu/json/json-destination-det.png){:class="img-responsive"}
+![JSON-Destination-Details](/img/content/add-select-destination.png){:class="img-responsive"}
 4. Click **[OK]** to confirm.
 ![JSON-Destination-Details](/img/content/xu/json/JSON-Destination-Details.png){:class="img-responsive"}
 

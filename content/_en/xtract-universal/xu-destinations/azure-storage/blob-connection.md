@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 ### Adding an Azure Storage Destination
 1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
 2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![XU_azure_Destination](/img/content/xu/azure_destination-det.png){:class="img-responsive"}
+![XU_azure_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
 3. Select the *Azure Storage (Blob / Data Lake)* destination from the drop-down list.
 
 The window "Destination Details" consists of two tabs:

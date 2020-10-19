@@ -18,7 +18,7 @@ Die JSON-Destination ist ein generischer JSON-Stream über HTTP.
 2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
 ![JSON-Destination-Details](/img/content/xu/xu_manage-destinations.png){:class="img-responsive"}
 3. Wähen Sie die Destination *HTTP - JSON* aus der Drop-Down-Liste aus.
-![JSON-Destination-Details](/img/content/xu/json/json-destination-det.png){:class="img-responsive"}
+![JSON-Destination-Details](/img/content/add-select-destination.png){:class="img-responsive"}
 4. Klicken Sie auf **[OK]** zum Bestätigen.
 ![JSON-Destination-Details](/img/content/xu/json/JSON-Destination-Details.png){:class="img-responsive"}
 

@@ -16,7 +16,7 @@ Die Parquet Destination erzeugt eine generische Parquet-Datei.
 ### Parquet Destination hinzufügen
 1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster "Manage Destinations" wird geöffnet.
 2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
-![XU_flatfile_Parquet_Destination](/img/content/xu/parquet/parquet_manage_destination.png){:class="img-responsive"}
+![XU_flatfile_Parquet_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
 3. Wähen Sie die Destination *Parquet* aus der Drop-Down-Liste aus.
 4. Klicken Sie auf **[OK]** zum Bestätigen.
  
