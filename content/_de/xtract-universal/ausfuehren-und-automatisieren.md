@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-execution
 layout: page
-title: Extraktionen Ausführen
+title: Extraktionen Ausführen und Einplanen 
 description: Ausführen und Automatisieren von Extraktionen
 product: xtract-universal
 parent: xtract-universal
@@ -11,30 +11,9 @@ weight: 8
 lang: de_DE
 ---
 
-<!--
-Ausführen und Einplanen von Extraktionen
-1.      Einführung
-    a.      Run Dialog (Extraktion im Xtract Universal Designer ausführen)
-    b.      GRUNDSÄTZLICH: Command Line und http-Aufruf
-    c.      Aufruf aus Linux
-    d.      Pro / Contra
-2.      Aufruf via Skript (Powershell, Command)
-3.      Aufruf via Scheduler
-4.      Aufruf via ETL-Tool
-5.      Parametrisierter Aufruf via URL-Parameter
-a.      Parameterübergabe via http-Aufruf
-b.      Parameterübergabe in xu.exe
-6.      Ausführlicher Use Case (asynchroner Aufruf, parallel…)
-        - asynchroner Aufruf
-        - Run extraction in parallel
-        – especially for incremental data load.
-        - Ability to do dynamics filtering for the extraction
+Dieser Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowohl [manuell](./automation/call-extraction) als auch automatisch. 
 
--->
-
-Dieser Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowie [manuell](./automation/call-extraction) als auch automatisch. 
-
-Die Automatisierung (Aufruf) der Extraktionen kann über die folgenden Wege erfolgen:
+Extraktionen können über folgende Wege automatisch aufgerufen und eingeplant werden: 
 
 - Über die [Kommandozeile](./automation/call-via-commandline)
 - Über ein [Webservice](./automation/call-via-webservice)
@@ -42,7 +21,12 @@ Die Automatisierung (Aufruf) der Extraktionen kann über die folgenden Wege erfo
 - Über einen [Scheduler](./automation/call-via-scheduler)
 - Über ein [ETL-Tool](./automation/call-via-etl)
 
-Extraktionen können über zwei Wege parametrisiert werden:
-- Über [Extraktionsparameter](../xu-parameter)
-- Über [Parametrisierung in SQL](../xu-parameter-sql)
+Hinweis: Xtract Universal verfügt über keinen eigenen Scheduler. In der Regel können Sie einen beliebigen Scheduler nutzen. 
+
+Hinweis: Bei den pull-Destinationen erfolgt die Automatisierung bzw. Scheduling über dem Tool, welches die Webservice-Schnittstelle (http- oder https-Streams in CSV oder json-Format) konsumiert. 
+
+
+Beim Aufruf von Extraktionen können Extraktionsparameter dynamisch zur Laufzeit mitgegeben werden:
+- Siehe [Extraktionsparameter](../xu-parameter)
+- Diese Parameter können auch in einem SQL-Skript verwendet werden, falls die Destination eine SQL-Datenbank ist. [Parametrisierung in SQL](../xu-parameter-sql)
 
