@@ -28,3 +28,4 @@ Im abgebildeten Beispiel lautet der Servername "TODD":
 ![Server-settings_manage](/img/content/server-settings_manage.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/server-settings-certificate-web.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}.
+3. Achten Sie darauf den XU-Service neuzustarten. Ansonsten werden die Änderungen nicht übernommen.
