@@ -31,9 +31,11 @@ Gibt die maximale Anzahl der extrahierten Datensätze an. *0* extrahiert die kom
 Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Das Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind.
 
 
-{: .box-tip }
-**Empfehlung:** Für bessere Performance und um Einschränkungen umzugehen, verwenden Sie den Funktionsbaustein von Theobald Software 
-Z_THEO_READ_TABLE. Siehe auch [SAP Customizing](../sap-customizing/funktionsbaustein-fuer-table-extraktion). 
+{: .box-warning }
+**Warnung! Duplikate in der Zielumgebung!** 
+Die SAP-Standardbausteine für Tabellenextraktion besitzen keine Pointer in den Tabellenfeldern und können bei größeren Tabellen Duplikate in der Zielumgebung verursachen.
+Verwenden Sie den [Funktionsbaustein von Theobald Software Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion). 
+
 
 **Extract data in background job** <br>
 Durch Ankreuzen der Checkbox "Extract data in background" wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 

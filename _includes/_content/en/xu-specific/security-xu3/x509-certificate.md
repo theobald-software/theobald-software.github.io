@@ -27,6 +27,7 @@ In the example shown, the server name is "TODD":
 2. Reference to the certificate in the Designer under **[Server] > [Settings] > Tab [Configuration Server / Web Server] > [Select X.509 certificate]**.
 ![Server-settings_manage](/img/content/server-settings_manage.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/server-settings-certificate-web.png){:class="img-responsive"}
-![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}.
-3. Make sure to restart the XU service. Otherwise, the changes are not applied.
- 
+![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}
+![Server-new-start](/img/content/restart-server.png){:class="img-responsive"}
+3. Confirm with **[OK]**. The dialog closes. The performed changes are activated by restarting the XU server.
+
