@@ -29,8 +29,10 @@ Specifies the maximum number of extracted records. *0* Extracts the entire table
 ### Function Module
 Specifies the name of the function module used for data extraction. The field is filled automatically depending on which function modules are installed on your SAP system.
 
-{: .box-tip }
-**Recommendation:** For better performance and restriction avoidance use the function module from Theobald Software *Z_THEO_READ_TABLE*. See also [SAP Customizing](../sap-customizing/custom-function-module-for-table-extraction). 
+{: .box-warning }
+**Warning! Duplicates in the target environment!** <br>
+The SAP standard modules for table extraction do not have pointers in the table fields and can cause duplicates in the target environment for larger tables.<br>.
+Use the function module from Theobald Software [Z_THEO_READ_TABLE](../sap-customizing/function module-for-table-extraction).
 
 
 **Extract data in background job** <br>
