@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 9
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sicherheit
+progressstate: 5
 ---
 
 Die Kommunikationssicherheit zwischen dem Designer und dem Server wird mit Hilfe folgender Verfahren gewährleistet:

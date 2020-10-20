@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 9
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=security_in_xu_3_x
+progressstate: 5
 ---
 
 Communication security between the Designer and the Server is provided using the following techniques:
