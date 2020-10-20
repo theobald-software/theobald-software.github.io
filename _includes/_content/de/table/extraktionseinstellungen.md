@@ -32,9 +32,9 @@ Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion
 
 
 {: .box-warning }
-**Warnung! Duplikate in der Zielumgebung!** 
-Die SAP-Standardbausteine für Tabellenextraktion besitzen keine Pointer in den Tabellenfeldern und können bei größeren Tabellen Duplikate in der Zielumgebung verursachen.
-Verwenden Sie den [Funktionsbaustein von Theobald Software Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion). 
+**Warnung! Duplikate in der Zielumgebung!** <br>
+Die SAP-Standardbausteine für Tabellenextraktion besitzen keine Pointer in den Tabellenfeldern und können bei größeren Tabellen Duplikate in der Zielumgebung verursachen.<br>
+Verwenden Sie den Funktionsbaustein von Theobald Software [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion). 
 
 
 **Extract data in background job** <br>

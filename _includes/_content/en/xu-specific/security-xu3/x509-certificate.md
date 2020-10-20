@@ -28,6 +28,6 @@ In the example shown, the server name is "TODD":
 ![Server-settings_manage](/img/content/server-settings_manage.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/server-settings-certificate-web.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}
-![Server-new-start](/img/content/restart-server.png){:class="img-responsive"}
+![Server-new-start](/img/content/xu/restart-server.png){:class="img-responsive"}
 3. Confirm with **[OK]**. The dialog closes. The performed changes are activated by restarting the XU server.
 
