@@ -10,15 +10,15 @@ weight: 1
 lang: de_DE
 ---
 
-Xtract Universal hat eine [Client-Server-Architektur](./einfuehrung).
+Xtract Universal ist entsprechend einer [Client-Server-Architektur](./einfuehrung) aufgebaut. 
 Die Ausführung einer Extraktion findet auf dem [Server](./server) statt. Xtract Universal bietet zwei Möglichkeiten, um eine angelegte Extraktion auszuführen:
 - Aufruf über das mitgelieferte [Kommandozeilen-Tool](./call-via-commandline), das in einer Windows- und einer Linux-Version (xu.exe bzw. xu.elf) angeboten wird  
-- Aufruf via [Webservice-Call](./call-via-webservice).  
+- Aufruf via [Webservice-Call](./call-via-webservice) 
 
 ### Extraktion im XU Designer manuell ausführen 
-Um eine Extraktion im XU Designer manuell und direkt auszufüren, siehe das Beispiel [Eine Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren). 
+Die manuelle Extraktion und direkte Ausführung im Designer wird im Abschnitt [Eine Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren) beschrieben.
 
-Wie in dem Beispiel sichtbar ist, kann man die Werte bestimmter Parameter der Extraktionen dynamisch beim Aufruf setzen. Mehr Details zum Setzen der Parameter finden Sie im Abschnitt [Parametrisierung](./xu-parameter).
+Das beschriebene Beispiel zeigt, dass die Werte bestimmter Parameter der Extraktionen dynamisch beim Aufruf gesetzt werden können. Mehr Details zum Setzen der Parameter finden Sie im Abschnitt [Parametrisierung](./xu-parameter).
 
 <!---
 Offene Frage und Vorschläge von YW:
@@ -26,6 +26,6 @@ Offene Frage und Vorschläge von YW:
 - Frage: Was passiert, wenn man dieselbe Extraktione mehrfach anstartet?
 - Wieviele Extraktionen können gleichzeitig ausgeführt werden?
 -->
-
-Weitereführende Links:
+*********
+#### Weitereführende Links:
 - [Pull- und Push-Destinationen ](./xu-destinationen#pull--und-push-destinationen)
