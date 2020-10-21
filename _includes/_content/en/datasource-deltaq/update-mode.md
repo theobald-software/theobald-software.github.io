@@ -1,3 +1,8 @@
+The update mode allows delta update meaning that only added or changed data is extracted, instead of a full update.
+The update mode can be set dynamically in the "updatemode" parameter in the "Run" dialogue.
+
+Alternatively you can select the update mode in the main window of the component:
+ ![Update-Mode](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
 
 | Letter | Desgination | Description |
 | :------: |:--- | :--- |
