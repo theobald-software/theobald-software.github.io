@@ -9,6 +9,7 @@ childidentifier: automation
 permalink: /:collection/:path
 weight: 8
 lang: de_DE
+progressstate: 3
 ---
 
 Der folgende Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowohl [manuell](./automation/call-extraction) als auch automatisch. 
@@ -26,7 +27,7 @@ Extraktionen können über folgende Wege automatisch aufgerufen und eingeplant w
 
 
 {: .box-note }
-**Hinweis:** Bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) erfolgt die Automatisierung bzw. Scheduling über das Tool, welches die Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV oder json-Format konsumiert. 
+**Hinweis:** Bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) erfolgt die Automatisierung bzw. Scheduling über das Tool, welches die Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV oder json-Format konsumiert. <!---Maia: "ich verstehe den Zusammenhang nicht. Ich denke nicht, dass ich das richtig angepasst habe".--->
 
 
 Beim Aufruf von Extraktionen können die [Extraktionsparameter](../xu-parameter) dynamisch zur Laufzeit mitgegeben werden. 
