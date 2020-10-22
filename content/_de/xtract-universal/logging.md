@@ -33,19 +33,24 @@ Extraktions-Logs und die Run-Logs genannt Sever-Logs im Designer.
 Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs]** anzeigen lassen kann.
 
 ### Logs Lesen
-1. allg Technische Informationen
-2. SQL Destination für Empfang von Daten vorbereiten
-3. Lizenzprüfung, mit Entität usw. Link
-4. Verbindung zum SAP herstellen
+
+Um die Abläufe von Xtract Universal besser verstehen zu können, können Sie die in verständlicher Sprache geschriebenen Logs lesen.  Im folgenden Beispiel von einem Extraktions-Log werden die Abläufe näher erläutert.
+1. Allgemeine technische Informationen werden angezeigt.
+ ![XU_logging_1](/img/content/xu/logging-extract-detail-01.png){:class="img-responsive"}
+2. Die [SQL-Destination]() wird für Empfang von Daten vorbereitet.
+3. Die Lizenzprüfung wird durchgeführt inklusive Entität und anderen relevanten Informationen.
+4. Verbindung zum SAP wird hergestellt.
 5. [Run-Parameter](./erste-schritte/eine-extraktion-ausfuehren#extraktionsparameter-festlegen) werden gelogt.
-6. Daten von SAP anfordern
-7. Paket Nr. 1 von SAP empfangen
-8. Paket Nr. 1 in SQL Server schreiben.
-9. Paket Nr. 2 von SAP empfangen
-10. Paket Nr. 2 in SQL Server schreiben.
-11. Paket Nr. 3 von SAP empfangen
-12. Paket Nr. 3 in SQL Server schreiben.
-13. Extraktion abschließen.
+6. Daten von SAP werden angefordert.
+ ![XU_logging_2](/img/content/xu/logging-extract-detail-02.png){:class="img-responsive"}
+7. Paket Nr. 1 wird von SAP empfangen.
+8. Paket Nr. 1 wird in den SQL-Server geschrieben.
+9. Paket Nr. 2 wird von SAP empfangen.
+10. Paket Nr. 2 wird in den SQL-Server geschrieben.
+11. Paket Nr. 3 wird von SAP empfangen.
+ ![XU_logging_3](/img/content/xu/logging-extract-detail-03.png){:class="img-responsive"}
+12. Paket Nr. 3 wird in den SQL-Server geschrieben.
+13. Extraktion wird abgeschlossen.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
