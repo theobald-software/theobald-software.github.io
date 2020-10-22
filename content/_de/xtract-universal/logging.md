@@ -16,16 +16,16 @@ progressstate: 3
 Xtract Universal protokolliert verschiedene Aktionen in Log-Dateien.
 Die Log-Dateien befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs` (standartmäßig).
 
-<!---Es gibt verschiedene Arten der Log-Dateien.
+Es werden verschiedene Arten der Log-Dateien erstellt.
 
 
 |Typ | Name | Beschreibung | Pfad zum Ablageort |
 |:------ | :------ |:--- | :--- |
-|Server| ServiceLog.txt | Enthält die Aktivitat von XtractService.exe.| C:ProgramFiles\XtractUniversal\logs |
-|Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. XtractConfigServer.exe ist der dazugehörige Prozess.| C:ProgramFiles\XtractUniversal\logs\server\config |
-|Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. XtractWebServer.exe| C:ProgramFiles\XtractUniversal\logs\server\web |
-|Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Zeitpunkt der Entgegennahme einer TCP-Verbingung erstellt.  der dazugehörige Prozess XtractRun.exe| C:ProgramFiles\XtractUniversal\logs\server\run |  
-|Extraktion| Extraktions-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start einer Extraktion erstellt. der dazugehörige Prozess XtractRun.exe | C:\Program Files\XtractUniversal\logs\extractions\[Name_der_Extaktion]|
+|Server| ServiceLog.txt | Enthält die Aktivitäten von XtractService.exe.| `C:ProgramFiles\XtractUniversal\logs` |
+|Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. XtractConfigServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\server\config` |
+|Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. XtractWebServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\server\web` |
+|Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Zeitpunkt der Entgegennahme einer TCP-Verbindung erstellt. XtractRun.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\server\run` |  
+|Extraktion| Extraktions-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start einer Extraktion erstellt. XtractRun.exe ist der dazugehörige Prozess. | `C:\Program Files\XtractUniversal\logs\extractions\[Name_der_Extaktion]`|
 
 ### Logs im Designer
 
@@ -45,7 +45,7 @@ Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs]** anzei
 10. Paket Nr. 2 in SQL Server schreiben.
 11. Paket Nr. 3 von SAP empfangen
 12. Paket Nr. 3 in SQL Server schreiben.
-13. Extraktion abschließen.--->
+13. Extraktion abschließen.
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
