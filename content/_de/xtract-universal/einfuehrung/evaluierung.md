@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=evaluierung
 
 ### Download von Xtract Universal
 
-Sie können eine Testversion von der [Theobald Software-Website] (https://theobald-software.com/en/download-trial/) herunterladen und diese 30 Tage lang testen.
+Sie können eine Testversion von der [Theobald Software-Website](https://theobald-software.com/en/download-trial/) herunterladen und diese 30 Tage lang testen.
 Die Testversion ist nur zeitlich begrenzt und funktioniert ansonsten uneingeschränkt.
 
 ### Evaluieren von Xtract Unversal
