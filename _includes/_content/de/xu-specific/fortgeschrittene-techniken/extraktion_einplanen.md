@@ -1,6 +1,4 @@
-Die Extraktionen von Xtract Universal können eingeplant und zu einem späteren Zeitpunkt ausgeführt werden. Dazu benötigen Sie einen beliebigen Taskplaner z.B. den Windows Task Scheduler (siehe [Blogartikel - How to schedule Xtract Universal extractions to load data from SAP](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/0)). Um die Taskplaner-Funktionalität zu nutzen, führen Sie Xtract Universal von einer Kommandozeile aus.
-
-
+Die Extraktionen von Xtract Universal können eingeplant und zu einem späteren Zeitpunkt ausgeführt werden. Dazu benötigen Sie einen beliebigen Taskplaner z.B. den Windows Task Scheduler. 
 ### Xtract Universal von der Kommandozeile ausführen
 1. Navigieren Sie zum Installationsordner von Xtract Universal, z.B.
  `C:\Program Files\XtractUniversal` <br>
@@ -70,9 +68,8 @@ xu.exe -h
 
 ### Aufruf in PowerShell
 
-Das folgende Beispiel zeigt, wie man eine Extraktion in PowerShell mit Hilfe des Kommandozeilen-Tools xu.exe aufrufen kann. 
-Im Beispiel hat die Extraktion hat eine dynamische Variable, welche im Skript gesetzt werden kann. Im [Blogartikel - Mastering SAP Access with Xtract Universal and Powershell](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/) sind noch weitere Skripte und Beispiele beschrieben. 
-
+Das folgende Beispiel zeigt, wie man eine Extraktion in PowerShell mit Hilfe des Kommandozeilen-Tools xu.exe /xu.elf aufrufen kann. 
+Im Beispiel hat die Extraktion hat eine dynamische Variable, welche im Skript gesetzt werden kann. 
 <details>
 <summary>Hier klicken, um PowerShell Script anzuzeigen</summary>
 {% highlight javascript %}
@@ -149,4 +146,3 @@ write-host $errorMessage
 ### Extraktion im Windows Event-Viewer anzeigen
 
 Die Extraktionen von Xtract Universal können auch in die Windows Logs aufgenommen und im Event Viewer angezeigt werden.<br> 
-Mehr dazu im [Knowledge Base Artikel - How to insert Xtract Universal Extraction Events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer).

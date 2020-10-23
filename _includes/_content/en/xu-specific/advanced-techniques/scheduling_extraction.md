@@ -1,6 +1,5 @@
 Scheduling extractions at a later time is possible 
-with any task scheduler e.g., Windows task scheduler
- (see [Blog article - How to schedule Xtract Universal extractions to load data from SAP](http://www.theobald-software.com/blog/2013/01/28/how-to-schedule-xtract-universal-extractions-with-the-windows-task-scheduler-to-load-data-from-sap/0) ). To use the task scheduler functionality, run Xtract Universal from a command line.
+with any task scheduler e.g., Windows task scheduler.
 
 
 ### Running Xtract Universal from a command line
@@ -71,8 +70,7 @@ xu.exe -h
 
 ### Call in PowerShell
 
-The following example shows how to call an extraction in PowerShell using the xu.exe command tool (see also [Blog article - Mastering SAP Access with Xtract Universal and Powershell](https://blog.theobald-software.com/2018/04/26/mastering-sap-access-with-xtract-universal-and-powershell/)).<br>
-In the example, the extraction has a dynamic variable that can be set in the script. 
+The following example shows how to call an extraction in PowerShell using the xu.exe /xu.elf commandline tool. In the example, the extraction has a dynamic variable that can be set in the script. 
 
 <details>
 <summary>Click here to show PowerShell Script.</summary>
@@ -148,4 +146,4 @@ write-host $errorMessage
 
 
 ### Showing extraction in the Windows Event viewer
-Xtract Universal extraction events can be inserted into the Windows logs and displayed in the Event Viewer (see [Knowledge base article - How to insert Xtract Universal extraction events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)).
+Xtract Universal extraction events can be inserted into the Windows logs and displayed in the Event Viewer. 
