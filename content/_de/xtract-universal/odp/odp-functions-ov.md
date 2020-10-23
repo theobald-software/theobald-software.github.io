@@ -11,7 +11,7 @@ lang: de_DE
 progressstate: 5
 ---
 
-Der folgende Abschnitt beschreibt die Einstellungen der Komponente Xtract ODP. Die Einstellungen können im Hauptfenster “Define Data Source for SAP ODP” der Komponente angepasst werden. ![ODP Component](/img/content/xu/xu_odp_overview.png){:class="img-responsive"}
+Der folgende Abschnitt beschreibt die Einstellungen der Komponente Xtract ODP. Die Einstellungen können im Hauptfenster “Define Data Source for SAP ODP” der Komponente angepasst werden. ![ODP Component](/img/content/odp/odp_overview.png){:class="img-responsive"}
 
 {% include _content/de/odp/odp-settings-update_mode.md %} 
 {% include _content/de/odp/odp-settings-filtering.md %}
