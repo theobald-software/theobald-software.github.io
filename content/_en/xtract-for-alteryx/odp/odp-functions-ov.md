@@ -12,7 +12,7 @@ progressstate: 5
 ---
 
 The following section describes the settings of the Xtract ODP component that can be accessed through the main component window “Xtract ODP”.
-![ODP Component](/img/content/xfa/xfa_odp_overview.png){:class="img-responsive"}
+![ODP Component](/img/content/odp/odp_overview.png){:class="img-responsive"}
 
 {% include _content/en/odp/odp-settings-update_mode.md %} 
 {% include _content/en/odp/odp-settings-filtering.md %}
