@@ -85,8 +85,10 @@ The settings for file type "CSV" correspond to the [Flat File CSV settings](../c
 
 ![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
 
-### Connection Retry Function
+### Connection Retry
 
-The Retry is a built-in function that prevents extractions from failing in case of short connection interruptions to Google Cloud.
-The Retry function is implemented according to Microsoft guidelines. The Retry function tries to establish connection up to 2 minutes.
+Connection retry is a built-in function of the Google Cloud Storage destination. It is automatically activated.
+
+Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to Google Cloud Storage. General information about retry strategies in a Google Cloud Storage environment can be found [here] (https://cloud.google.com/storage/docs/gsutil/addlhelp/RetryHandlingStrategy).
+XU follows an exponential retry strategy. This results in 8 retry attempts and an overall timespan of 140 seconds. If a retry is not succesful during that timespan, the extraction fails.
 

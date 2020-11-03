@@ -56,7 +56,10 @@ The settings for file type "CSV" correspond to the [Flat File CSV settings](../c
 	
 ![XU_S3_DestinationDetails2](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 
-### Connection Retry Function
+### Connection Retry
 
-The Retry is a built-in function that prevents extractions from failing in case of short connection interruptions to AWS S3.
-The Retry function is implemented according to Microsoft guidelines. The Retry function tries to establish connection up to 2 minutes.
+Connection retry is a built-in function of the AWS S3 destination. It is automatically activated.
+
+Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to S3. General information about retry strategies in an AWS environment can be found [here](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
+XU follows an exponential retry strategy. This results in 7 retry attempts and an overall timespan of 140 seconds. If a retry is not succesful during that timespan, the extraction fails.
+
