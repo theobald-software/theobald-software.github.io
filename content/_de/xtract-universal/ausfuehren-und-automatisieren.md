@@ -9,9 +9,10 @@ childidentifier: automation
 permalink: /:collection/:path
 weight: 8
 lang: de_DE
+progressstate: 3
 ---
 
-Dieser Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowohl [manuell](./automation/call-extraction) als auch automatisch. 
+Der folgende Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowohl [manuell](./automation/call-extraction) als auch automatisch. 
 
 Extraktionen können über folgende Wege automatisch aufgerufen und eingeplant werden: 
 
@@ -21,12 +22,14 @@ Extraktionen können über folgende Wege automatisch aufgerufen und eingeplant w
 - Über einen [Scheduler](./automation/call-via-scheduler)
 - Über ein [ETL-Tool](./automation/call-via-etl)
 
-Hinweis: Xtract Universal verfügt über keinen eigenen Scheduler. In der Regel können Sie einen beliebigen Scheduler nutzen. 
+{: .box-note }
+**Hinweis:** Xtract Universal verfügt über keinen eigenen Scheduler. In der Regel können Sie einen beliebigen Scheduler nutzen. 
 
-Hinweis: Bei den pull-Destinationen erfolgt die Automatisierung bzw. Scheduling über dem Tool, welches die Webservice-Schnittstelle (http- oder https-Streams in CSV oder json-Format) konsumiert. 
+
+{: .box-note }
+**Hinweis:** Bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) erfolgt die Automatisierung bzw. Scheduling über das Tool, welches die Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV oder json-Format konsumiert. <!---Maia: "ich verstehe den Zusammenhang nicht. Ich denke nicht, dass ich das richtig angepasst habe".--->
 
 
-Beim Aufruf von Extraktionen können Extraktionsparameter dynamisch zur Laufzeit mitgegeben werden:
-- Siehe [Extraktionsparameter](../xu-parameter)
-- Diese Parameter können auch in einem SQL-Skript verwendet werden, falls die Destination eine SQL-Datenbank ist. [Parametrisierung in SQL](../xu-parameter-sql)
+Beim Aufruf von Extraktionen können die [Extraktionsparameter](../xu-parameter) dynamisch zur Laufzeit mitgegeben werden. 
+Diese Parameter können auch in einem [SQL-Skript](../xu-parameter-sql) verwendet werden, falls die Destination eine SQL-Datenbank ist. 
 
