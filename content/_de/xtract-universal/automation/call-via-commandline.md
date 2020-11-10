@@ -97,9 +97,10 @@ Log- und Fehlermeldungen werden dabei in die Standardfehlerausgabe (stderr) gesc
 |Aufruf synchrone Extraktion (Standard)|	`-o wait=false`|
 |Rückgabe des Zeitstempels einer Extraktion |`"C:\Program Files\XtractUniversal\xu.exe" -n sapcustomers2 -o wait=false 1>>false_output1.txt 2>>false_output2.txt`|
 
-<!---
-kann man das irgendwo noch erklären? Synchroner uns asynchroner Aufruf?
--->
+#### Synchroner vs. asynchroner Aufruf
+Ein synchroner Aufruf einer Extraktion ist ein blockierender Aufruf. D.h. die Anwendung wartet, bis die Extraktion beendet wird und ein Rückgabecode zurückgegeben wird.
+
+Ein asynchroner Aufruf einer Extraktion ist ein nichtblockierender Aufruf. D.h. es wird einen eindeutigen Zeitstempel der aufgerufenen Extraktion zurückgegeben und die Anwendung muss nicht warten, bis die Extraktion beendet wird. Mit dem eindeutigen Zeitstempel der aufgerufenen Extraktion kann dann später z.B. der Status der Extraktion überprüft werden. 
 
 {: .box-tip }
 **Tipp:** Der XU-Server bietet auch weitere Funktionalität, welche nicht über das Kommandozeilen-Tool sondern nur über [Webservices](./call-via-webservice#weitere-webservices) aufgerufen werden können. wie z.B. den Status eines (asynchronen) Extraktionsaufrufs prüfen, Logs oder Metadaten einer Extraktion abfragen. 

@@ -10,7 +10,7 @@ weight: 7
 lang: de_DE
 ---
 
-In diesem Kapitel zeigen wir, wie man eine Extraktion in einem Skript aufrufen kann.Dazu werden wir das Kommandozeilenprogramm xu.exe nutzen.
+In diesem Kapitel zeigen wir, wie man eine Extraktion in einem Windows-Skript per DOS-Kommandozeile oder Power Shell aufrufen kann.
 
 ## Aufruf via Windows-Skript
 
@@ -104,7 +104,7 @@ Die Extraktionen von Xtract Universal können auch in die Windows Logs aufgenomm
 Mehr dazu im Knowledge Base Artikel [How to insert Xtract Universal Extraction Events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)
 
 
-## Aufruf via PowerShell
+## Aufruf via PowerShell-Skript
 
 Power Shell ist eine mächtige Skriptsprache. In diesem Kapitel zeigen wir, wie man eine Extraktion mit Power Shell ausführen kann. Im Skript rufen wir dann das Kommandozeilenprogramm xu.exe.
 

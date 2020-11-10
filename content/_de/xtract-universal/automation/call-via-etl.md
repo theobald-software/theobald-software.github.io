@@ -32,3 +32,8 @@ Für den Aufruf der Kommandozeile in Pentaho [Pentaho Integration via the Comman
 ### Integration mit Pentaho via Webservice
 Für den Aufruf eines Webservices in Pentaho siehe [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http).
 
+<!---
+ADF
+Google 
+AWS Lambda
+-->

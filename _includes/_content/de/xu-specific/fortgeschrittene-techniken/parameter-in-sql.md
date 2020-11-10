@@ -1,4 +1,4 @@
-In Xtract Universal stehen benutzerdefinierte Parameter (Custom Parameters), welche man per Query-String übergeben kann, z.B. um eine WHERE-Clause zu dynamisieren, nun auch als SQL-Parameter in den SQL-Befehlen für Datenbank-Destinations zur Verfügung.
+In Xtract Universal stehen benutzerdefinierte Parameter (Custom Parameters), deren Werte man beim Aufruf setzen kann. Ein typischer Anwendungsfall ist, bei einer Table-Komponente die WHERE-Bedingung zu dynamisieren. Diese benutzerdefinierte Parameter stehen auch als SQL-Parameter in den SQL-Befehlen zur Verfügung, falls die Destination eine SQL-Datenbank ist. 
  
 Folgende Table-Extraktion hat einen benutzerdefinierten Parameter *WNAME* in der WHERE-Clause:
 
