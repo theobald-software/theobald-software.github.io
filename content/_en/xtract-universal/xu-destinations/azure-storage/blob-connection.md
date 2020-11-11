@@ -149,13 +149,12 @@ The settings for file type "CSV" correspond to the [Flat File CSV settings](../c
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
 
 ### Connection Retry and Rollback
-
 Connection retry and rollback are built-in functions of the Azure Storage destination, which are automatically activated.
 
 Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to Azure.
 The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
 The retry logic is based on WebExceptionStatus. If any exception is thrown, Xtract Universal tries to reestablish connection to Azure following an exponential retry strategy.
-The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. If a retry is not successful during the timespan of 140 seconds, the extraction fails.
+The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. If a connection is not established during the timespan of 140 seconds, the extraction fails.
 
 Rollback covers scenarios, where an extraction fails due to an issue that is not caused by a connection failure to Azure. An example is an extraction that fails due to an error when connecting to SAP.
 In particular cases, Xtract Universal tries and removes any files from Azure storage that were created in the course of the extraction.

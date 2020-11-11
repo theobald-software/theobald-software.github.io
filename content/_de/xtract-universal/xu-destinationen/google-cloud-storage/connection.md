@@ -85,9 +85,12 @@ Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstel
 
 ![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
 
-### Retry-Funktion zur Erhaltung der Verbindung
+### Retry-Funktion
 
-Die Retry-Funktion ist eine eingebaute Funktion, die verhindert, dass Extraktionen fehlschlagen, wenn es kurze Verbindungsunterbrechungen zu Google Cloud passieren.
-Die Retry-Funktion ist nach den Richtlinien von Microsoft implementiert. Die Retry-Funktion versucht eine Verbindung bis zu 2 Minuten herzustellen.
+Die Retry-Funktion ist eine eingebaute Funktion von der Google Cloud Storage Destination. Die Retry-Funktion ist automatisch aktiviert.
+Die Retry-Funktion verhindert, dass Extraktionen fehlschlagen, wenn es kurzzeitige Verbindungsunterbrechungen zu Google Cloud auftreten.
+Weitere allgemeine Informationen über Wiederholungsstrategien in einer Google Cloud Storage-Umgebung finden Sie in der offiziellen [Google Cloud-Hilfe](https://cloud.google.com/storage/docs/gsutil/addlhelp/RetryHandlingStrategy).
+Xtract Universal verfolgt eine exponentielle Retry-Strategie. Dies bedeutet, dass 8 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. Sollte in dem Zeitraum von 140 Sekunden keine Verbindung zu Stande kommen, wird die Extraktion abgebrochen. 
+
 
 

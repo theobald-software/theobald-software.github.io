@@ -55,8 +55,9 @@ Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstel
 
 ![XU_S3_DestinationDetails2](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 
-### Retry-Funktion zur Erhaltung der Verbindung
+### Retry-Funktion
 
-Die Retry-Funktion ist eine eingebaute Funktion, die verhindert, dass Extraktionen fehlschlagen, wenn es kurze Verbindungsunterbrechungen zu AWS S3 passieren.
-Die Retry-Funktion ist nach den Richtlinien von Microsoft implementiert. Die Retry-Funktion versucht eine Verbindung bis zu 2 Minuten herzustellen.
-
+Die Retry-Funktion ist eine eingebaute Funktion der AWS S3 Destination. Die Retry-Funktion ist automatisch aktiviert.
+Die Retry-Funktion verhindert, dass Extraktionen fehlschlagen, wenn es kurzzeitige Verbindungsunterbrechungen zu AWS S3 auftreten.
+Weitere allgemeine Informationen über Wiederholungsstrategien in einer AWS-S3-Umgebung finden Sie in der offiziellen [AWS Hilfe](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
+Xtract Universal verfolgt eine exponentielle Retry-Strategie. Dies bedeutet, dass 8 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. Sollte in dem Zeitraum von 140 Sekunden keine Verbindung zu Stande kommen, wird die Extraktion abgebrochen. 

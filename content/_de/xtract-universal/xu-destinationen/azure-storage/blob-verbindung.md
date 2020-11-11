@@ -153,9 +153,17 @@ Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstel
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
 
-### Retry-Funktion zur Erhaltung der Verbindung
+### Retry- und Rollback-Funktion
 
-Die Retry-Funktion ist eine eingebaute Funktion, die verhindert, dass Extraktionen fehlschlagen, wenn es kurze Verbindungsunterbrechungen zu Azure passieren.
-Die Retry-Funktion ist nach den Richtlinien von Microsoft implementiert. Die Retry-Funktion versucht eine Verbindung bis zu 2 Minuten herzustellen.
+Die Retry- und Rollback-Funktionen sind eingebaute Funktionen der Azure Storage Destination, die automatisch aktiviert sind.
+Die Retry-Funktion verhindert, dass Extraktionen fehlschlagen, wenn es kurzzeitige Verbindungsunterbrechungen zu Azure auftreten.
+Die Retry- und Rollback-Funktion ist implementiert entsprechend den [Microsoft Richtlinien](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
+Die Logik hinter der Funktion basiert auf WebExceptionStatus. Sollte eine Ausnahme (Exception) ausgelöst sein, verfolgt Xtract Universal eine exponentielle Retry-Strategie.
+Dies bedeutet, dass 7 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. Sollte in dem Zeitraum von 140 Sekunden keine Verbindung zu Stande kommen, wird die Extraktion abgebrochen. 
+
+Die Rollback-Funktion deckt Szenarien ab, bei denen eine Extraktion fehlschlägt, wenn ein Problem auftritt, das nicht mit der Verbindung zu Azure im Zusammenhang steht. Ein Beispiel dafür ist eine Extraktion, die aufgrund eines Verbinungsfehlers zu SAP fehlschlägt.
+In solchen Fällen versucht Xtract Universal, alle Dateien aus dem Azure-Speicher zu entfernen, die im Laufe der Extraktion erstellt wurden.
+  
+
 
  
