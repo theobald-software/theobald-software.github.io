@@ -15,3 +15,4 @@ Alternatively you can select the update mode in the main window of the component
 | A | Activate (don't extract) | Activates a DataSource similar to clicking **[Activate]**, but is more practical when activating all DataSources in batch. Activate option is an alternative to "Automatic Synchronization".  No data is extracted. |
 | V | **[Xtract IS only:]** SSIS Variable <br> Depricated, see [Variables](https://help.theobald-software.com/en/xtract-is/bw-cube/variables) |  If "V" is selected, a variable name needs to be entered in the [DeltaQ settings](https://help.theobald-software.com/en/xtract-is/deltaq/settings). The same SSIS variable needs to be created in SSIS and assigned a value. The following values are possible: F, D, C, R, S, I and A. |
 
+
