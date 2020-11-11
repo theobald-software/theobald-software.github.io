@@ -58,8 +58,8 @@ The settings for file type "CSV" correspond to the [Flat File CSV settings](../c
 
 ### Connection Retry
 
-Connection retry is a built-in function of the AWS S3 destination. It is automatically activated.
+Connection retry is a built-in function of the AWS S3 destination. The retry function is automatically activated.
 
-Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to S3. General information about retry strategies in an AWS environment can be found [here](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
-XU follows an exponential retry strategy. This results in 7 retry attempts and an overall timespan of 140 seconds. If a retry is not succesful during that timespan, the extraction fails.
+Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to S3. For more general information about retry strategies in an AWS environment go to the official [AWS Help](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
+Xtract Universal follows an exponential retry strategy. he selected exponential strategy results in 7 retry attempts and an overall timespan of 140 seconds. If a retry is not successful during the timespan of 140 seconds, the extraction fails.
 
