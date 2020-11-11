@@ -1,31 +1,17 @@
-**Update Mode**<br>
-Die DeltaQ bietet folgende Update Modi:
+Der Update-Modus erlaubt Delta-Update, d.h. es werden nur neu hinzugefügte oder geänderte Daten extrahiert, anstatt eines Full-Updates.
+Der Update-Modus kann dynamisch im "Run"-Dialog unter dem Parameter "updatemode"gesetzt werden.
 
-**F - Full**<br>
-Der Full-Modus extrahiert alle Daten, welche den Selektionskriterien entsprechen.
+Alternativ können Sie den Update-Modus im Hauptfenster der Komponente wählen:
+![Update-Mode](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
 
-**D - Delta Update**<br>
-Der Delta Update Modus fordert nur Daten an, welche seit dem letzten Delta in SAP hinzugekommen sind bzw. verändert wurden.<br>
-Bevor Sie ein Delta Update ausführen, müssen Sie den Delta-Prozess initialisieren.<br>
-Sollte ein Fehler während des Delta-Requests auftreten, nutzen Sie für die nächste Ausführung bitte den Repeat-Modus.
+| Buchstabe | Bezeichnung | Beschreibung |
+| :------: |:--- | :--- |
+| F | Full | Extrahiert alle Daten, die den festgelegten Auswahlkriterien entsprechen. |
+| D | Delta Update | Extrahiert nur Daten, die seit der letzten Delta-Anfrage im SAP-System hinzugefügt oder geändert wurden. Initialisieren Sie das Delta-Verfahren, bevor Sie ein Delta-Update durchführen. Um Fehler, Abbrüche und Lücken in Ihren Daten während eines Delta-Updates zu vermeiden, führen Sie die nächste Extraktion im Update-Modus "Repeat" durch. |
+| C | Delta Initialisation | Initiliazies the delta process and extracts all data in full mode simultaneously. When re-initilizing a delta process, delete any exsiting Inits by clicking **[Request Maintenance]** in the DeltaQ extraction settings.|
+| R | Repeat | Repeats the last delta run and updates and any delta data accumulated since the last run. Delete any data from the last (unsuccesful) delta update before running a repeat. You can run a repeate multiple times.|
+| S | Delta Init (without data)  | Initiliazies the delta process without extracting any data from the SAP Datasource. The result of the Delta inits is a so called "Request Maintenance" on the SAP side. When re-initilizeing a delta process, delete any exsiting Inits by clicking **[Request Maintenance]** in the DeltaQ extraction settings.|
+| I |  Non-cumulative Init   |  Relevant for DataSources such as *2LIS_03_BX*.  |
+| A | Activate (don't extract) | Activates a DataSource similar to clicking **[Activate]**, but is more practical when activating all DataSources in batch. Activate option is an alternative to "Automatic Synchronization".  No data is extracted. |
+| V | **[Nur Xtract IS:]** SSIS-Variable <br> Abgekündigt, siehe [Variablen](https://help.theobald-software.com/de/xtract-is/bw-cube/variablen) |  If "V" is selected, a variable name needs to be entered in the [DeltaQ settings](https://help.theobald-software.com/en/xtract-is/deltaq/settings). The same SSIS variable needs to be created in SSIS and assigned a value. The following values are possible: F, D, C, R, S, I and A. |
 
-**C - Delta Initialisation**<br>
-Um Deltas zu extrahieren, müssen Sie den Delta-Prozess initialisieren. Der Delta Initialisation-Modus extrahiert alle Daten und initialisiert den Delta-Prozess.<br>
-Möchten Sie einen Delta-Prozess erneut initialisieren, sollten Sie vorher über die Schaltfläche "Request Maintenance" in den DeltaQ Extraction Settings vorhandene Inits löschen.
-
-**C - Delta Init (ohne Daten)**<br>
-Um Deltas zu extrahieren, müssen Sie den Delta-Prozess initialisieren. Das Delta Init (ohne Daten) Modus initialisiert den Delta-Prozess, ohne Daten zu extrahieren.<br>
-Möchten Sie einen Delta-Prozess erneut initialisieren, sollten Sie vorher über die Schaltfläche "Request Maintenance" in den DeltaQ Extraction Settings vorhandene Inits löschen.
-
-**I - Anfangsbestand aufbauen**<br>
-Relevant für DataSources wie 2LIS_03_BX
-
-**R - Repeat**<br>
-Sollte ein Fehler während eines Delta-Prozesses auftreten, müssen Sie den Repeat-Modus bei der nächsten Ausführung verwenden.<br>
-Dieser Modus extrahiert alle falsch und unvollständig geladene Daten aus dem fehlerhaften Delta-Lauf seit dem letzten Aufruf.<br>
-Daten aus einem fehlerhaften Delta-Lauf, die eventuell bereits in die Datenziele gespeichert wurden, sollten zunächst aus dem Ziel gelöscht werden, bevor ein Repeat gestartet wird.<br>
-Sie können einen Repeat mehrmals durchführen.
-
-**A - Activate (don't extract)**<br>
-Dieser Modus führt lediglich eine Aktivierung der DataSource durch, so wie ein manueller Klick auf die Schaltfläche "Activate". Es werden keine Daten extrahiert.<br>
-Der Modus kann z.B. verwendet werden, um zunächst alle DataSources im Batch zu aktivieren und ist damit eine Alternative zum DeltaQ Setting "Automatic Synchronization".
