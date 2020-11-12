@@ -1,12 +1,12 @@
 ---
-ref: bc-datasource-deltaq-07
+ref: bc-datasource-deltaq-08
 layout: page
 title: Extraction Settings
 description: Extraction Settings
 product: board-connector
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 progressstate: 3
 ---

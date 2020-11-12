@@ -1,12 +1,12 @@
 ---
-ref: bc-datasource-deltaq-06
+ref: bc-datasource-deltaq-07
 layout: page
 title: Update Mode
 description: Update Mode
 product: board-connector
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: en_GB
 progressstate: 3
 ---

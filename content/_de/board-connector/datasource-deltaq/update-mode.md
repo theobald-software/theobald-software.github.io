@@ -1,12 +1,12 @@
 ---
-ref: bc-datasource-deltaq-06
+ref: bc-datasource-deltaq-07
 layout: page
 title: Update Mode
 description: Hierarchien
 product: board-connector
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
 progressstate: 3
 ---
