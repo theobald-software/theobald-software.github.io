@@ -45,7 +45,7 @@ Within the Designer you can use these keywords to filter  extractions.
 Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
-Depicted example demonstrates the SAP object *MAKT* with it's primary key inherited from SAP in the general settings of the Designer. In this example the primary key consists of *MANDT*, *MATNR*, *SPRAS*. The demonstrated primary key is also taken over in the destination. 
+Depicted example demonstrates the SAP object *KNA1* and *KNVV" with their primary key inherited from SAP in the general settings of the Designer. In this example the primary key consists of *KUNNR*, *VKORG*, *VTWEG* and *SPART*. The demonstrated primary key is also taken over in the destination. 
 
 {:.box-note}
 **Note:** A defined primary key field in a table is a prerequisite for merging data. 

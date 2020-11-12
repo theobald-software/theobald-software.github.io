@@ -51,8 +51,8 @@ Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extr
 Tabellenextraktionen erben die Primärschlüssel von SAP. Andere Objekte wie z.B. SAP Query, BW Cube etc. erfordern eine manuelle Einstellung von Primärschlüsseln. 
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
-Das abgebildete Beispiel zeigt das SAP-Objekt *MAKT* mit seinem Primärschlüssel. Der Primärschlüssel wurde SAP geerbt wurde und wird in den allgemeinen Einstellungen des Designers angezeigt.
-In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. Der gezeigte Primärschlüssel wird auch in der Destination übernommen. 
+Das abgebildete Beispiel zeigt das SAP-Objekt *KNA1* und *KNVV* mit deren Primärschlüssel. Der Primärschlüssel wurde SAP geerbt wurde und wird in den allgemeinen Einstellungen des Designers angezeigt.
+In diesem Beispiel besteht der Primärschlüssel aus *KUNNR*, *VKORG*, *VTWEG* und *SPART*. Der gezeigte Primärschlüssel wird auch in der Destination übernommen. 
 
 {:.box-note}
 *Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
