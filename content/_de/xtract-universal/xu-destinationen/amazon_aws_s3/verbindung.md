@@ -50,10 +50,19 @@ HINWEIS: Diese Einstellungen beziehen sich nicht auf die Transportverschlüsselu
 
 ### File Format
 Wählen Sie das gewünschte Dateiformat zwischen "Parquet" und "CSV".
-
+![azure_blob_destination_settings_csv_settings](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
 
-![XU_S3_DestinationDetails2](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
+Wenn Sie "Parquet" Dateiformat auswählen, können Sie im Feld "Compatibility mode" zwischen "Pure" und "Spark" auswählen.
+
+![azure_blob_destination_settings_csv_settings](/img/content/xu/xu_S3_dest_comp_mode.png){:class="img-responsive"}
+
+| SAP | Pure | Spark |
+|------|-------------|-------|
+| INT1 | UINT_8 | INT16 |
+| TIMS | TIME_MILLIS | UTF8 |
+
+Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
 
 ### Retry-Funktion zur Erhaltung der Verbindung
 

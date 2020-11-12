@@ -51,10 +51,20 @@ Encryption using a custom encrpytion key created on AWS ([AWS Key Management Ser
 
 ### File Format
 Select the required file format between "Parquet" and "CSV".
-
+![AWS S3](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
-	
-![XU_S3_DestinationDetails2](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
+
+When you select "Parquet" file format, in the field "Compatibility mode" you can choose between "Pure" and "Spark".
+
+![AWS S3 compability](/img/content/xu/xu_S3_dest_comp_mode.png){:class="img-responsive"}
+
+
+| SAP | Pure | Spark |
+|------|-------------|-------|
+| INT1 | UINT_8 | INT16 |
+| TIMS | TIME_MILLIS | UTF8 |
+
+Spark does not support the datatypes used in pure mode, so other datatypes need to be used.
 
 ### Connection Retry
 
