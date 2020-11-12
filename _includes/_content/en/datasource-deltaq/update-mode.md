@@ -4,7 +4,7 @@ The update mode can be set dynamically in the "updatemode" parameter in the "Run
 Alternatively you can select the update mode in the main window of the component:
  ![Update-Mode](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
 
-| Letter | Desgination &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Description |
+| Letter | `     Desgination      ` | Description |
 | :------: |:--- | :--- |
 | F | Full  | Extracts all data corresponding to any selection criteria set. |
 | D | Delta Update | Only extracts data added or changed on the SAP system since the last delta request. Initialize the delta process before running a delta update. To prevent errors, aborts and gaps in your data during a delta run, run the next extraction in the update mode "Repeat". |
