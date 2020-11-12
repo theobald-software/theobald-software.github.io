@@ -148,7 +148,11 @@ Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeiche
 
 ### File Format 
 Wählen Sie das gewünschte Dateiformat zwischen "Parquet" und "CSV".
+![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
+
 Wenn Sie "Parquet" Dateiformat auswählen, können Sie zwischen "Pure" und "Spark" Kompabilitätsmodi auswählen.
+
+![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-05.png){:class="img-responsive"}
 
 | SAP | Pure | Spark |
 |------|-------------|-------|
@@ -158,8 +162,6 @@ Wenn Sie "Parquet" Dateiformat auswählen, können Sie zwischen "Pure" und "Spar
 Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
 
 Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
-
-![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
 
 ### Retry-Funktion zur Erhaltung der Verbindung
 
