@@ -143,6 +143,14 @@ Option to create a directory within the container for saving files. See also [De
 
 ### File Format 
 Select the required file format between "Parquet" and "CSV".
+When you select "Parquet" file format, you can choose between "Pure" and "Spark" compatibility modes.
+
+| SAP | Pure | Spark |
+|------|-------------|-------|
+| INT1 | UINT_8 | INT16 |
+| TIMS | TIME_MILLIS | UTF8 |
+
+Spark does not support the datatypes used in pure mode, so other datatypes need to be used.
 
 The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
 
