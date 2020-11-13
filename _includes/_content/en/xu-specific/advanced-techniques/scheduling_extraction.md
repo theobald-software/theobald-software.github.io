@@ -13,9 +13,9 @@ with any task scheduler e.g., Windows task scheduler.
 
 ### Variables
 
-When using variables, place an escape character *^* before the character *&* <br>
+When using several variables, make sure to use the character *&* for every variable.<br>
 `C:\Program Files\XtractUniversal\xu.exe`
-`http://localhost:8065/?name=MyExtractionName^&Variable=Value`
+`http://localhost:8065/?name=MyExtractionName&Variable=Value`
 
 If the extraction is called via the parameters, any number of variables can be added via the -o parameter:<br>
 - -o variableName=variableValue 
@@ -61,7 +61,7 @@ In case of an error, it returns one of the following codes:
 Examples:
 
 ```
-xu.exe http://localhost:8065/?name=MyExtractionName^&rows=200
+xu.exe http://localhost:8065/?name=MyExtractionName&rows=200
 xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200 
 xu.exe -s localhost -p 8065 -n MyExtractionName
 xu.exe -h
