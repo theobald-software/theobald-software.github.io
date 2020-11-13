@@ -11,9 +11,9 @@ Die Extraktionen von Xtract Universal können eingeplant und zu einem späteren 
 
 ### Variablen
 
-Wenn Sie Variablen nutzen, stellen Sie ein Escape-Zeichen *^* vor dem *&* Zeichen. <br>
+Wenn Sie mehrere Variablen nutzen, muss jede Cariable mittels *&* Zeichen verknüft werden. <br>
 `C:\Program Files\XtractUniversal\xu.exe`
-`http://localhost:8065/?name=MyExtractionName^&Variable=Value`
+`http://localhost:8065/?name=MyExtractionName&Variable=Value`
 
 
 Wird die Extraktion über die Parameter aufgerufen, können über den -o Parameter beliebig viele Variablen hinzugefügt werden:<br>
@@ -59,7 +59,7 @@ Im Falle eines Fehlers, gibt das Programm einen der folgenden Codes zurück:
 
 Beispiele: <br>
 ```
-xu.exe http://localhost:8065/?name=MyExtractionName^&rows=200
+xu.exe http://localhost:8065/?name=MyExtractionName&rows=200
 xu.exe -s localhost -p 8065 -n MyExtractionName -o rows=200
 xu.exe -s localhost -p 8065 -n MyExtractionName
 xu.exe -h
