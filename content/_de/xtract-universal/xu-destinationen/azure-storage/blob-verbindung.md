@@ -162,9 +162,17 @@ Wenn Sie "Parquet" Dateiformat auswählen, können Sie im Feld "Compatibility mo
 
 Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
 
-### Retry-Funktion zur Erhaltung der Verbindung
+### Retry- und Rollback-Funktion
 
-Die Retry-Funktion ist eine eingebaute Funktion, die verhindert, dass Extraktionen fehlschlagen, wenn es kurze Verbindungsunterbrechungen zu Azure passieren.
-Die Retry-Funktion ist nach den Richtlinien von Microsoft implementiert. Die Retry-Funktion versucht eine Verbindung bis zu 2 Minuten herzustellen.
+Die Retry- und Rollback-Funktionen sind eingebaute Wiederholungsmechanismen der Azure Storage Destination, die automatisch aktiviert sind.
+Die Retry-Funktion verhindert, dass Extraktionen fehlschlagen, wenn kurzzeitige Verbindungsunterbrechungen zu Azure auftreten.
+Die Retry- und Rollback-Funktion ist implementiert entsprechend den [Microsoft Richtlinien](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
+Die Logik hinter der Funktion basiert auf dem WebExceptionStatus. Sollte eine Ausnahme (Exception) ausgelöst sein, verfolgt Xtract Universal eine exponentielle Strategie der Wiederholversuche.
+Dies bedeutet, dass 7 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. Sollte in dem Zeitraum von 140 Sekunden keine Verbindung zustande kommen, wird die Extraktion abgebrochen. 
+
+Die Rollback-Funktion deckt Szenarien ab, bei denen eine Extraktion fehlschlägt, wenn ein Problem auftritt, das nicht mit der Verbindung zu Azure im Zusammenhang steht. Ein Beispiel dafür ist eine Extraktion, die aufgrund eines Verbindungsfehlers zu SAP fehlschlägt.
+In solchen Fällen versucht Xtract Universal, alle Dateien aus dem Azure-Speicher zu entfernen, die im Laufe der Extraktion erstellt wurden.
+  
+
 
  
