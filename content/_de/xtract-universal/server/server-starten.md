@@ -8,17 +8,37 @@ parent: server
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=server-starten
 ---
 
-Die Server-Komponente wird standardmäßig als Windows-Service installiert und gestartet. Sie können den Server als Konsolenprogramm oder als Windows Service starten. In einer Umgebung, in der mehrere Anwender auf dasselbe Repository zugreifen möchten, ist es sinnvoll, die Server-Komponente als Windows-Dienst auf einem zentralen Server zu betreiben. 
+Bei Ausführung der *XtractUniversalSetup.exe* wird standardmäßig der Xtract Universal Server als Standard Windows-Dienst installiert und gestartet.
 
-Nach der Installation kann der Service über die Windows-Dienste-Verwaltung gestartet und gestoppt werden.
+Die Installation sowie Deinstallation des Xtract Universal Dienstes kann ebenfalls über nachfolgende Anwendung `C:\Program Files\XtractUniversal\XtractService.exe` durchgeführt werden.
+Die Verwendung wird über das Windows-Konsolenprogramm ermöglicht und unterstützt nachfolgende Befehle:
+
+``` .net
+/i install Windows Service
+/u uninstall Windows Service
+```
+
+Nach der Installation kann der Windows-Dienst über die Windows-Dienste-Verwaltung getartet, gestoppt and konfiguriert werden.
 
 ![Services-Start-Server](/img/content/Services-Start-Server.png){:class="img-responsive"}
 
-Wenn Sie den Service manuell deinstallieren wollen, dann nutzen Sie folgendes Kommando
 
-*XtractService.exe /u* 
+{: .box-warning }
+**Warnung! Änderung der Standardports**<br>
+Nach der manuelle Anpassung der Standardports, startet der Xtract Universal Dienst nicht.<br>
+Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Config-Dateien angepasst werden. 
+`C:\Program Files\XtractUniversal\config\server\config\general.json`
+`C:\Program Files\XtractUniversal\config\server\web\general.json`
 
-Wenn Sie den Server nicht starten können, weil der Default-Port belegt ist, dann öffnen Sie die Datei *XtractServerConfig.xml* bzw. *general.json* im Ordner config des Installationsorders und legen Sie einen passenden Port fest. Zusätzlich können Sie hier verschiedene Server-Einstellungen vornehmen.
+
+Xtract Universal ist für die verteilte Anwendung konzipiert. Die Installation des Xtract Universal Dienstes auf einer zentralen Serverinstanz, z.B. einem firmenweiten Anwendungsserver.
+Demzufolge ist der Zugriff auf ein gemeinsames Xtract Universal Repository `C:\Program Files\XtractUniversal\config` möglich und kann durch mehrere Xtract Universal Anwender genutzt werden.
+
+{: .box-tip }
+**Tip:** Stellen Sie durch eine geeignete Rechtverwaltung in Xtract Universal sicher, dass lediglich Benutzer mit Admin-User-Rechten grundlegende Änderungen am zentralen Reporsitory durchführen können.<br> Weitere Einformationen entnehmen sie dem Abschnitt [Zugriffsverwaltung](./sicherheit/zugriffsverwaltung).
+
+
+
+
