@@ -1,12 +1,29 @@
-Die Server nutzen verschiedene Ports für die Kommunikation. Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
-Der Configuration-Server kommuniziert mit dem Designer über einen dedizierten Port. <br>
-Der jeweils verwendete Port hat einen Default-Wert, der überschrieben werden kann. Weitere Infos dazu finden Sie im Abschnitt Server Einstellungen.
+Der Xtract Universal Server läuft als Windows-Service und der Hauptprozess von diesem Service ist `C:\Program Files\XtractUniversal\XtractService.exe`. 
 
-Sollte der Service nicht starten, weil der Default-Port belegt ist, öffnen Sie die Datei *general.json* in den Ordnern:
+*xtractService.exe* startet zwei Listener-Prozesse und lauscht standardmäßig auf folgenden Ports:
 
-- *config\server\web*
-- *config\server\config* 
+Listener-Prozess| Standardport
+------------ | -------------
+*XtractWebServer.exe* 1 | 8065 (HTTP) und 8165 (HTTPS)
+*XtractConfigServer.exe* | 8064
 
-in Ihrem Installationsordner und legen Sie einen passenden Port fest.
+Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation. Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
+Der Configuration-Server kommuniziert mit dem Xtract Universal Designer über einen dedizierten Port. <br>
 
-Die in dieser Dokumentation verwendeten Ports sind auf unsere Systeme abgestimmt. Es ist möglich, dass auf Ihren Systemen andere Ports verwendet werden. Sollten einzelne Beispiele aufgrund der Portnummer nicht funktionieren, erfragen Sie die korrekten Ports bitte bei Ihrem Administrator.
+Sollten manuelle Anpassungen der Portnummer notwendig sein, erfragen Sie die korrekten Ports bitte bei Ihrem Netzwerk-Team.
+
+- `*\config\server\config\general.json`
+![configuration-server-general-json](/img/content/configuration-server-general-json.png){:class="img-responsive"}
+- `*\config\server\web\general.json`
+![web-server-general-json](/img/content/web-server-general-json.png){:class="img-responsive"}
+
+{: .box-note }
+**Hinweis** Admin-User-Rechte sind für die Änderungen der Config-Dateien notwendig.
+
+{: .box-warning }
+**Warnung! Änderung der Standardports**<br>
+Nach der manuelle Anpassung der Standardports, startet der Xtract Universal Dienst nicht.<br>
+Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Config-Dateien angepasst werden.<br>
+`C:\Program Files\XtractUniversal\config\server\config\general.json`<br>
+`C:\Program Files\XtractUniversal\config\server\web\general.json`
+
