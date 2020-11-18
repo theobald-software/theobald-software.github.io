@@ -27,10 +27,21 @@ Es werden verschiedene Arten der Log-Dateien erstellt.
 |Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Zeitpunkt der Entgegennahme einer TCP-Verbindung erstellt. XtractRun.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\server\run` |  
 |Extraktion| Extraktions-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start einer Extraktion erstellt. XtractRun.exe ist der dazugehörige Prozess. | `C:\Program Files\XtractUniversal\logs\extractions\[Name_der_Extaktion]`|
 
-### Logs im Designer
+### Log Levels
+Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende Log-Level:
 
-Extraktions-Logs und die Run-Logs genannt Sever-Logs im Designer.
-Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs]** anzeigen lassen kann.
+- **Errors** sind Fehlermeldungen, die während des Extraktionsprozesses ausgegeben werden.
+- **Information** - Statusmeldungen, über Vorgänge, die nicht zu einem Fehler führen.
+- **Warnings** - Informationen über Probleme, die nicht zu einem Extraktionsfehler führen. Zum Beispiel Authentifizierungsfehler.
+- **Debug Details** - detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
+
+Markieren Sie die Checkboxen oben links, um zu entscheiden, welche Log-Levels angezeigt werden sollen.
+
+### Kopieren von Logs
+Klicken Sie auf **[Copy To Clipboard]**, um das aktuelle Log in die Zwischenablage zu kopieren. Das kopierte Log kann an beliebiger Stelle eingefügt werden (z.B. in eine E-Mail).
+
+Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in der Serverkonfiguration eingestellt werden.
+
 
 ### Logs Lesen
 
