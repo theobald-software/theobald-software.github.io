@@ -12,16 +12,20 @@ lang: de_DE
 
 Bei Ausführung der *XtractUniversalSetup.exe* wird der Xtract Universal Server als Standard Windows Service (Dienst) installiert und gestartet.
 
-Achten Sie darauf, bei der [Installation](./introduction/installation-and-update) die Option "Server > Install Service auszuwählen".
+Achten Sie darauf, bei der [Installation](./introduction/installation-and-update) die Option "Server > Install Service" auszuwählen.
 
 ![Services-Install](/img/content/xu/XU_Setup_3.png){:class="img-responsive"}
 
-Die Installation sowie Deinstallation des Xtract Universal Service kann über die Anwendung `C:\Program Files\XtractUniversal\XtractService.exe` durchgeführt werden.
-Die Verwendung wird über das Windows-Konsolenprogramm ermöglicht und unterstützt nachfolgende Befehle:
+Die Installation sowie Deinstallation des Xtract Universal Service kann über die Anwendung XtractService.exe durchgeführt werden.
+Die Verwendung der Applikation XtractService.exe wird über das Windows-Konsolenprogramm ermöglicht und unterstützt nachfolgende Befehle:
 
-``` .net
-/i install Windows Service
-/u uninstall Windows Service
+- /i - install Windows service
+- /u - uninstall Windows service
+
+**Beispiel:**
+```
+C:\Program Files\XtractUniversal>XtractService.exe /i
+C:\Program Files\XtractUniversal>XtractService.exe /u
 ```
 
 ### Windows Diensteverwaltung
@@ -46,6 +50,8 @@ Demzufolge ist der Zugriff auf ein gemeinsames Xtract Universal Repository `C:\P
 {: .box-tip }
 **Tip:** Stellen Sie durch eine geeignete Rechteverwaltung in Xtract Universal sicher, dass lediglich Benutzer mit Admin-User-Rechten grundlegende Änderungen am zentralen Reporsitory durchführen können. Weitere Einformationen entnehmen sie dem Abschnitt [Zugriffsverwaltung](../sicherheit/zugriffsverwaltung).
 
-
+*****
+#### Weiterführende Links
+- [Installation](./einfuehrung/installation-und-update)
 
 
