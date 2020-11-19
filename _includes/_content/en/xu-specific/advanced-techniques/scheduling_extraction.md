@@ -46,7 +46,7 @@ In case of an error, it returns one of the following codes:
 |1087 | The parameter is invalid |
 
 
-#### Parameters
+### Parameters
 
 -h Outputs the help page
 
