@@ -17,7 +17,7 @@ Achten Sie darauf, bei der [Installation](./introduction/installation-and-update
 ![Services-Install](/img/content/xu/XU_Setup_3.png){:class="img-responsive"}
 
 Die Installation sowie Deinstallation des Xtract Universal Service kann über die Anwendung XtractService.exe durchgeführt werden.
-Die Verwendung der Applikation XtractService.exe wird über das Windows-Konsolenprogramm ermöglicht und unterstützt nachfolgende Befehle:
+Die Verwendung der Applikation XtractService.exe wird über die Windows Eingabeaufforderung (Konsole) ermöglicht und unterstützt nachfolgende Befehle:
 
 - /i - install Windows service
 - /u - uninstall Windows service
