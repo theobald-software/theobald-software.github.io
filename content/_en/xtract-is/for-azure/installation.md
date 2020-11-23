@@ -11,6 +11,8 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installation1
 ---
 
+### General setup
+
 Follow the [instructions](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup) on how to set up 3rd party extensibility for Azure-SSIS IR. Only the part with setting up an Azure storage container and creating a Shared Access Signature is relevant.
 
 Download, unzip and place *Xtract IS for Azure* setup in the storage container created previously.
@@ -32,3 +34,9 @@ When you provision your Azure-SSIS IR via the Azure Portal UI, enter te Custom C
 
 ![XISforAzure_Poral_CustomSetupContainer](/img/content/XISforAzure_Poral_CustomSetupContainer.png){:class="img-responsive" }
 Finally, start the Integration Runtime. ATTENTION: The startup process of the IR might take 20 to 30 minutes.
+
+### Using a self-hosted Integration Runtime (SHIR)
+
+Xtract IS for Azure supports usage of SHIR for connecting to an on-premises SAP system from Azure SSIS-IR. General information about this setup can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/self-hosted-integration-runtime-proxy-ssis). 
+
+We have documented the setup for Xtract IS for Azure in our [knowledgebase](https://kb.theobald-software.com/xtract-is/XIS-for-Azure-SHIR).

@@ -3,7 +3,7 @@ ref: xfa-bwhier-settings
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
-product: xtract-universal
+product: xtract-for-alteryx
 parent: bw-hierarchien
 permalink: /:collection/:path
 weight: 2
