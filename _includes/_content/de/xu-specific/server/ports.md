@@ -1,15 +1,3 @@
----
-ref: xu-server-02
-layout: page
-title: Ports
-description: Ports
-product: xtract-universal
-parent: server
-permalink: /:collection/:path
-weight: 2
-lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=ports
----
 Der Xtract Universal Server läuft als Windows-Service mit dem Hauptprozess `C:\Program Files\XtractUniversal\XtractService.exe`. 
 
 *XtractService.exe* startet zwei Listener-Prozesse und lauscht standardmäßig auf folgenden Ports:
@@ -32,10 +20,9 @@ Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Co
 Sollten manuelle Anpassungen der Portnummer notwendig sein, erfragen Sie die korrekten Ports bei Ihrem Netzwerk-Team.
 
 {: .box-note }
-**Hinweis:** Administratorberechtigungen sind für die Änderung der [Config-Dateien](./einfuehrung/installation-und-update#dateien-des-programmverzeichnisses) notwendig.
+**Hinweis:** Administratorberechtigungen sind für die [Config-Dateien](./einfuehrung/installation-und-update#dateien-des-programmverzeichnisses) notwendig.
 
 *****
 #### Weiterführende Links
  - [Installation](./einfuehrung/installation-und-update)
-
 

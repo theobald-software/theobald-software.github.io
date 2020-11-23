@@ -23,7 +23,7 @@ Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Settings]**. Das F
 #### Designer connections
 
 **Port**<br>
-Definiert die Portnummer, über die der Server mit dem Designer kommuniziert. Standardport ist 8064. Wird ein anderer Port verwendet, fügen Sie die neue Portnummer dem Hostnamen auf der Anmeldemaske hinzu ([host name]:[port]).
+Definiert die Portnummer, über die der Server mit dem Designer kommuniziert. Standardport ist 8096. Wird ein anderer Port verwendet, fügen Sie die neue Portnummer dem Hostnamen auf der Anmeldemaske hinzu ([host name]:[port]).
 
 ![XU-Designer-Logon](/img/content/xu/xu-designer-logon.png){:class="img-responsive"}
 
@@ -56,7 +56,7 @@ Wenn Sie Daten über HTTPS empfangen wollen, müssen Sie ein TLS-Zertifikat inst
 Siehe Abschnitt [X.509 Zertifikat installieren](../sicherheit/x.509-zertifikat-installieren).
 
 **HTTPS - Restricted to AD users with Designer read access**<br>
-Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tab *Configuration Server* mindestens ein *Read* (Lesezugriff) zugewiesen wurde. Siehe auch [Release Note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Abschnitt [Serversicherheit](../sicherheit/serversicherheit).
+Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tab *Configuration Server* mindestens ein *Read* (Lesezugriff) zugewiesen wurde. Siehe auch [Release Note 3.11 für Xtract Universal](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Abschnitt [Serversicherheit](../sicherheit/serversicherheit).
 
 #### Misc.
 
@@ -69,9 +69,6 @@ Wenn man sich mit einer älteren Designer-Version an einem neueren Server anmeld
 fragt der Designer, ob man das neuere Setup herunterladen möchte.
 
 #### Result cache
-
-{:.box-note}
-**Hinweis:** die Option *Cash results* ist nur Verfügbar in Pull-Destinationen (z.B. PBI, Qlik etc.).
 
 **Target directory**<br>
 Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Installationsverszeichnis von BOARD Connector: <br>
