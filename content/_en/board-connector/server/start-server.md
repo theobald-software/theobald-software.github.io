@@ -13,7 +13,7 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=start-server
 
 When executing *BoardConnectorSetup.exe* the BOARD Connector server is installed and started as a standard Windows..
 
-Make sure to mark the option "Server > Install Service" during the [Installation](./introduction/installation-and-update).
+Make sure to mark the option "Server > Install Service" during the [Installation](../introduction/installation-and-update).
 
 ![Services-Install](/img/content/xu/XU_Setup_3.png){:class="img-responsive"}
 
@@ -52,7 +52,7 @@ BOARD Connector is created for [distributed use](../introduction#basic-functiona
 
 *****
 #### Related links
-- [Installation](./introduction/installation-and-update)
+- [Installation](../introduction/installation-and-update)
 
 
 

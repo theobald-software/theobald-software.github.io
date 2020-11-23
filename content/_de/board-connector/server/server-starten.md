@@ -12,7 +12,7 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=server-starten
 ---
 Bei Ausführung der *BOARDConnectorSetup.exe* wird der BOARD Connector Server als Standard Windows Service (Dienst) installiert und gestartet.
 
-Achten Sie darauf, bei der [Installation](./introduction/installation-and-update) die Option "Server > Install Service" auszuwählen.
+Achten Sie darauf, bei der [Installation](../einfuehrung/installation-und-update) die Option "Server > Install Service" auszuwählen.
 
 ![Services-Install](/img/content/board/BC_Setup_3.png){:class="img-responsive"}
 
@@ -52,5 +52,5 @@ Demzufolge ist der Zugriff auf ein gemeinsames BOARD Connector Repository `C:\Pr
 
 *****
 #### Weiterführende Links
-- [Installation](./einfuehrung/installation-und-update)
+- [Installation](../einfuehrung/installation-und-update)
 

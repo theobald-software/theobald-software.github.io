@@ -12,7 +12,7 @@ lang: de_DE
 
 Bei Ausführung der *XtractUniversalSetup.exe* wird der Xtract Universal Server als Standard Windows Service (Dienst) installiert und gestartet.
 
-Achten Sie darauf, bei der [Installation](./introduction/installation-and-update) die Option "Server > Install Service" auszuwählen.
+Achten Sie darauf, bei der [Installation](../einfuehrung/installation-und-update) die Option "Server > Install Service" auszuwählen.
 
 ![Services-Install](/img/content/xu/XU_Setup_3.png){:class="img-responsive"}
 
@@ -52,6 +52,6 @@ Demzufolge ist der Zugriff auf ein gemeinsames Xtract Universal Repository `C:\P
 
 *****
 #### Weiterführende Links
-- [Installation](./einfuehrung/installation-und-update)
+- [Installation](../einfuehrung/installation-und-update)
 
 

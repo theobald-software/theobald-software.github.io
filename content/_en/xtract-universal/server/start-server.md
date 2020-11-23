@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=start-server
 
 When executing *XtractUniversalSetup.exe* the Xtract Universal server is installed and started as a standard Windows..
 
-Make sure to mark the option "Server > Install Service" during the [Installation](./introduction/installation-and-update).
+Make sure to mark the option "Server > Install Service" during the [Installation](../introduction/installation-and-update).
 
 ![Services-Install](/img/content/xu/XU_Setup_3.png){:class="img-responsive"}
 
@@ -54,6 +54,6 @@ Xtract Universal is created for [distributed use](../introduction#basic-function
 
 *****
 #### Related links
-- [Installation](./introduction/installation-and-update)
+- [Installation](../introduction/installation-and-update)
 
 

@@ -36,4 +36,4 @@ If manual adjustments of the port number are necessary, ask your network team fo
 
 *****
 #### Related links
- - [Installation](./introduction/installation-and-update)
+ - [Installation](../introduction/installation-and-update)
