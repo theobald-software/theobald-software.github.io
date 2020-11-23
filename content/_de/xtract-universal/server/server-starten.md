@@ -48,7 +48,7 @@ Xtract Universal ist für die [verteilte Anwendung](../einfuehrung#grundfunktion
 Demzufolge ist der Zugriff auf ein gemeinsames Xtract Universal Repository `C:\Program Files\XtractUniversal\config` möglich und kann durch mehrere Xtract Universal Anwender genutzt werden.
 
 {: .box-tip }
-**Tip:** Stellen Sie durch eine geeignete Rechteverwaltung in Xtract Universal sicher, dass lediglich Benutzer mit Administratorberechtigungen (Administrator User Rights) grundlegende Änderungen am zentralen Reporsitory durchführen können. Weitere Informationen entnehmen sie dem Abschnitt [Zugriffssteuerung](../sicherheit/zugriffsverwaltung).
+**Tipp:** Stellen Sie durch eine geeignete Rechteverwaltung in Xtract Universal sicher, dass lediglich Benutzer mit Administratorberechtigungen (Administrator User Rights) grundlegende Änderungen am zentralen Reporsitory durchführen können. Weitere Informationen entnehmen sie dem Abschnitt [Zugriffssteuerung](../sicherheit/zugriffsverwaltung).
 
 *****
 #### Weiterführende Links

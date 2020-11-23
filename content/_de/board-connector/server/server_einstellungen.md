@@ -20,7 +20,7 @@ Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Settings]**. Das F
 
 ![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.png){:class="img-responsive"}
 
-#### Designer connections
+#### Designer connection
 
 **Port**<br>
 Definiert die Portnummer, über die der Server mit dem Designer kommuniziert. Standardport ist 8096. Wird ein anderer Port verwendet, fügen Sie die neue Portnummer dem Hostnamen auf der Anmeldemaske hinzu ([host name]:[port]).

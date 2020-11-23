@@ -25,7 +25,7 @@ The configuration server communicates with the Xtract Universal Designer via a d
 {: .box-warning }
 **Warning! Changing the default ports**<br>
 After manually adjusting the default ports, the Xtract Universal service does not start.<br>
-The stored ports are already assigned and must be adapted in the following config files.<br>.
+The stored ports are already assigned and must be adapted in the following config files.<br>
 `C:\Program Files\XtractUniversal\config\server\config\general.json`<br>
 `C:\Program Files\XtractUniversal\config\server\web\general.json`
 
@@ -35,5 +35,5 @@ If manual adjustments of the port number are necessary, ask your network team fo
 **Note:** Administrator access rights are required for altering the [config files](./introduction/installation-and-update#program-directory-files).
 
 *****
-#### Further links
+#### Related links
  - [Installation](./introduction/installation-and-update)

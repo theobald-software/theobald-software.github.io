@@ -16,7 +16,7 @@ Achten Sie darauf, bei der [Installation](./introduction/installation-and-update
 
 ![Services-Install](/img/content/board/BC_Setup_3.png){:class="img-responsive"}
 
-Die Installation sowie Deinstallation des BOARD Connector Service kann über die Anwendung BCService.exee durchgeführt werden.
+Die Installation sowie Deinstallation des BOARD Connector Service kann über die Anwendung BCService.exe durchgeführt werden.
 Die Verwendung der Anwendung BCService.exe wird über die Windows Eingabeaufforderung (Konsole) ermöglicht und unterstützt nachfolgende Befehle:
 
 - /i - install Windows service
@@ -48,7 +48,7 @@ BOARD Connector ist für die [verteilte Anwendung](../einfuehrung#grundfunktiona
 Demzufolge ist der Zugriff auf ein gemeinsames BOARD Connector Repository `C:\Program Files\BOARDConnector\config` möglich und kann durch mehrere BOARD Connector Anwender genutzt werden.
 
 {: .box-tip }
-**Tip:** Stellen Sie durch eine geeignete Rechteverwaltung in BOARD Connector sicher, dass lediglich Benutzer mit Administratorberechtigungen (Administrator User Rights) grundlegende Änderungen am zentralen Reporsitory durchführen können. Weitere Informationen entnehmen sie dem Abschnitt [Zugriffssteuerung](../sicherheit/zugriffsverwaltung).
+**Tipp:** Stellen Sie durch eine geeignete Rechteverwaltung in BOARD Connector sicher, dass lediglich Benutzer mit Administratorberechtigungen (Administrator User Rights) grundlegende Änderungen am zentralen Reporsitory durchführen können. Weitere Informationen entnehmen sie dem Abschnitt [Zugriffssteuerung](../sicherheit/zugriffsverwaltung).
 
 *****
 #### Weiterführende Links
