@@ -13,8 +13,10 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=logging
 progressstate: 3
 ---
 
-Xtract Universal protokolliert verschiedene Aktionen in Log-Dateien.
-Die Log-Dateien befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs` (standartmäßig).
+Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien. 
+Die Log-Dateien werden im Produktverzeichnis gespeichert:<br>
+z.B.: `C:\Program Files\[Product Name]\logs`
+
 
 Es werden verschiedene Arten der Log-Dateien erstellt.
 
