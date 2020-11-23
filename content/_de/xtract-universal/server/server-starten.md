@@ -30,7 +30,7 @@ C:\Program Files\XtractUniversal>XtractService.exe /u
 
 ### Windows Diensteverwaltung
 
-Nach der Installation kann der Windows-Service über die Windows-Diensteverwaltung getartet, gestoppt und konfiguriert werden.
+Nach der Installation kann der Windows-Service über die Windows-Diensteverwaltung gestartet, gestoppt und konfiguriert werden.
 
 ![Services-Start-Server](/img/content/Services-Start-Server.png){:class="img-responsive"}
 
@@ -48,7 +48,7 @@ Xtract Universal ist für die [verteilte Anwendung](../einfuehrung#grundfunktion
 Demzufolge ist der Zugriff auf ein gemeinsames Xtract Universal Repository `C:\Program Files\XtractUniversal\config` möglich und kann durch mehrere Xtract Universal Anwender genutzt werden.
 
 {: .box-tip }
-**Tip:** Stellen Sie durch eine geeignete Rechteverwaltung in Xtract Universal sicher, dass lediglich Benutzer mit Admin-User-Rechten grundlegende Änderungen am zentralen Reporsitory durchführen können. Weitere Einformationen entnehmen sie dem Abschnitt [Zugriffsverwaltung](../sicherheit/zugriffsverwaltung).
+**Tip:** Stellen Sie durch eine geeignete Rechteverwaltung in Xtract Universal sicher, dass lediglich Benutzer mit Administratorberechtigungen (Administrator User Rights) grundlegende Änderungen am zentralen Reporsitory durchführen können. Weitere Informationen entnehmen sie dem Abschnitt [Zugriffssteuerung](../sicherheit/zugriffsverwaltung).
 
 *****
 #### Weiterführende Links

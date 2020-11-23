@@ -69,7 +69,7 @@ Defines whether the setup of the product version running on the server needs to 
 #### Result cache
 
 {:.box-note}
-**Note:** Xtract Universal only! *Cash results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+**Note:** **Xtract Universal only!** *Cash results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
 
 **Target directory** <br>
 Sets the directory for the buffer files. The default ist the result-cache folder in the product's program files directory: <br>

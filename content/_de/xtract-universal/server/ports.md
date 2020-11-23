@@ -10,5 +10,32 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=ports
 ---
-{% include _content/de/xu-specific/server/ports.md %}
+Der Xtract Universal Server läuft als Windows-Service mit dem Hauptprozess `C:\Program Files\XtractUniversal\XtractService.exe`. 
+
+*XtractService.exe* startet zwei Listener-Prozesse und lauscht standardmäßig auf folgenden Ports:
+
+Listener-Prozess| Standardport
+------------ | -------------
+*XtractWebServer.exe* | 8065 (HTTP) und 8165 (HTTPS)
+*XtractConfigServer.exe* | 8064
+
+Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation. Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
+Der Configuration-Server kommuniziert mit dem Xtract Universal Designer über einen dedizierten Port. <br>
+
+{: .box-warning }
+**Warnung! Änderung der Standardports**<br>
+Nach der manuellen Anpassung der Standardports, startet der Xtract Universal Dienst nicht.<br>
+Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Config-Dateien angepasst werden.<br>
+`C:\Program Files\XtractUniversal\config\server\config\general.json`<br>
+`C:\Program Files\XtractUniversal\config\server\web\general.json`
+
+Sollten manuelle Anpassungen der Portnummer notwendig sein, erfragen Sie die korrekten Ports bei Ihrem Netzwerk-Team.
+
+{: .box-note }
+**Hinweis:** Administratorberechtigungen sind für die [Config-Dateien](./einfuehrung/installation-und-update#dateien-des-programmverzeichnisses) notwendig.
+
+*****
+#### Weiterführende Links
+ - [Installation](./einfuehrung/installation-und-update)
+
 
