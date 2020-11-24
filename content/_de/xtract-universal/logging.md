@@ -53,7 +53,7 @@ Um die Abläufe von Xtract Universal besser verstehen zu können, können Sie di
 2. Die [SQL-Destination]() wird für Empfang von Daten vorbereitet.
 3. Die Lizenzprüfung wird durchgeführt inklusive Entität und anderen relevanten Informationen.
 4. Verbindung zum SAP wird hergestellt.
-5. [Run-Parameter](./erste-schritte/eine-extraktion-ausfuehren#extraktionsparameter-festlegen) werden gelogt.
+5. [Run-Parameter](./erste-schritte/eine-extraktion-ausfuehren#extraktionsparameter-festlegen) werden geloggt.
 6. Daten von SAP werden angefordert.
  ![XU_logging_2](/img/content/xu/logging-extract-detail-02.png){:class="img-responsive"}
 7. Paket Nr. 1 wird von SAP empfangen.
