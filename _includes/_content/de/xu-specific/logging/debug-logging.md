@@ -1,5 +1,5 @@
 Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien.
-Im Falle der Fehlersuche kann das Theobald-Supportteam um die Übergabe von Rückverfolgungsinformationen bitten.
+Im Falle der Fehlersuche kann das Theobald-Support-Team um die Übergabe von Rückverfolgungsinformationen bitten.
 
 {: .box-warning }
 **Warnung!: Erhöhter Verbrauch des Festplattenspeichers** <br>

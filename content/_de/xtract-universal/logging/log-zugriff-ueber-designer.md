@@ -12,13 +12,13 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktion-logging
 ---
 
 ### Logs im Designer
-Im Desginer können Server (Run)- und Extraktions-Logs angezeigt werden. Zusätzlich kann man auch auf andere [Logs über Web-Service](/log-zugriff-ueber-http) zugreifen.
+Im Designer können Server (Run)- und Extraktions-Logs angezeigt werden. Zusätzlich kann man auch auf andere [Logs über Web-Service](/log-zugriff-ueber-http) zugreifen.
 
 Sowohl die Server- als auch die Extraktionsprotokolle werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) definiert werden.
 
 ### Server-Logs (Run)
 
-Die Server-Logs (Run) können im Desiger über das Hauptmenü **[Server]>[Logs (Run)]** angezeigt werden.
+Die Server-Logs (Run) können im Designer über das Hauptmenü **[Server]>[Logs (Run)]** angezeigt werden.
 
 ![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
  

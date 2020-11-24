@@ -21,9 +21,9 @@ The log contains the following columns:<br>
 - **Type**: contains the extraction type.
 - **Source**: contains the name of the source connection.
 - **Destination**: contains the name of the target connection.
-- **LastRun**: contains the time stamp of the last execution. 
+- **LastRun**: contains the timestamp of the last execution. 
 - **RowCount**: contains the number of last extracted data records. 
-- **LastChange**: contains the time stamp of the last change. 
+- **LastChange**: contains the timestamp of the last change. 
 - **Created**: contains the timestamp of the creation. 
 
 **List of all defined target connections**
