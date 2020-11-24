@@ -13,10 +13,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=logging
 progressstate: 3
 ---
 
-Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien. 
+Xtract Universal protokolliert alle auf einem System durchgeführten Schritte in Log-Dateien. 
 Die Log-Dateien werden im Produktverzeichnis gespeichert:<br>
-z.B.: `C:\Program Files\[Product Name]\logs`
-
+z.B.: `C:\Program Files\XtractUniversal\logs`
 
 Es werden verschiedene Arten der Log-Dateien erstellt.
 
@@ -37,15 +36,10 @@ Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende 
 - **Warnings** - Informationen über Probleme, die nicht zu einem Extraktionsfehler führen. Zum Beispiel Authentifizierungsfehler.
 - **Debug Details** - detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
 
+### Logs Lesen - Extraktions-Log
+
+<!---Bild-->
 Markieren Sie die Checkboxen oben links, um zu entscheiden, welche Log-Levels angezeigt werden sollen.
-
-### Kopieren von Logs
-Klicken Sie auf **[Copy To Clipboard]**, um das aktuelle Log in die Zwischenablage zu kopieren. Das kopierte Log kann an beliebiger Stelle eingefügt werden (z.B. in eine E-Mail).
-
-Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in der Serverkonfiguration eingestellt werden.
-
-
-### Logs Lesen
 
 Um die Abläufe von Xtract Universal besser verstehen zu können, können Sie die in verständlicher Sprache geschriebenen Logs lesen.  Im folgenden Beispiel von einem Extraktions-Log werden die Abläufe näher erläutert.
 1. Allgemeine technische Informationen werden angezeigt.

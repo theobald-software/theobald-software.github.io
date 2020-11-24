@@ -12,9 +12,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktion-logging
 ---
 
 ### Logs im Designer
-Im Designer können Server (Run)- und Extraktions-Logs angezeigt werden. Zusätzlich kann man auch auf andere [Logs über Web-Service](/log-zugriff-ueber-http) zugreifen.
+Im Designer können Server (Run)- und Extraktions-Logs angezeigt werden. Zusätzlich kann man die [Logs über Web-Service](/log-zugriff-ueber-http) abrufen.
 
-Sowohl die Server- als auch die Extraktionsprotokolle werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) definiert werden.
+Sowohl die Server- als auch die Extraktions-Logs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) definiert werden.
 
 ### Server-Logs (Run)
 
@@ -22,12 +22,7 @@ Die Server-Logs (Run) können im Designer über das Hauptmenü **[Server]>[Logs 
 
 ![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
  
-Die Logs werden pro Tag erstellt. Um zwischen den Logs zu wechseln, können Sie die Liste auf der linken Seite verwenden. 
-
-Die Server-Logs (Run) enthalten drei Arten von Protokollen, die den Server betreffen:
- - Starten und Stoppen des Services (Web)
- - Konfiguration (Config)
- - Informationen über den Prozess (run) jeder einzelnen Extraktion
+Die Logs werden pro TCP-Verbindung erstellt. Um zwischen den Logs zu wechseln, können Sie die Liste auf der linken Seite verwenden. 
 
 ### Extraktions-Logs
 
@@ -39,4 +34,8 @@ Die Extraktions-Logs können im Designer unter **[Log]** angezeigt werden.
 Der Zeitstempel für jeden Extraktionsprozess wird im linken Teil des Dialogs "View Extraction Log" angezeigt.
 
 
+### Kopieren von Logs
+Klicken Sie auf **[Copy To Clipboard]**, um das aktuelle Log in die Zwischenablage zu kopieren. Das kopierte Log kann an beliebiger Stelle eingefügt werden (z.B. in eine E-Mail).
+
+Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in der Serverkonfiguration eingestellt werden.
 
