@@ -14,7 +14,7 @@ Bei Ausführung der *BOARDConnectorSetup.exe* wird der BOARD Connector Server al
 
 Achten Sie darauf, bei der [Installation](../einfuehrung/installation-und-update) die Option "Server > Install Service" auszuwählen.
 
-![Services-Install](/img/content/board/BC_Setup_3.png){:class="img-responsive"}
+![Services-Install](/img/content/xu/XU_Setup_3.png){:class="img-responsive"}
 
 Die Installation sowie Deinstallation des BOARD Connector Service kann über die Anwendung BCService.exe durchgeführt werden.
 Die Verwendung der Anwendung BCService.exe wird über die Windows Eingabeaufforderung (Konsole) ermöglicht und unterstützt nachfolgende Befehle:
@@ -32,7 +32,7 @@ C:\Program Files\BOARDConnector>BCService.exe /u
 
 Nach der Installation kann der Windows-Service über die Windows-Diensteverwaltung gestartet, gestoppt und konfiguriert werden.
 
-![Services-Start-Server](/img/content/Services-Start-Server.png){:class="img-responsive"}
+![Services-Install](/img/content/board/BC_Setup_3.png){:class="img-responsive"}
 
 
 {: .box-warning }
