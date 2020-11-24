@@ -21,7 +21,7 @@ Der Server übernimmt zwei Hauptaufgaben:
 
 ### 1. Extraktion auf dem Server ausführen
 
-Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von der xu-Kommandozeilen-Tool (xu.exe /xu.elf) gestartet werden. 
+Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage wird aus der Zielumgebung gestartet.
 
 {: .box-tip }
 **Tipp:** Der Server-Prozess kann im [Extraktions-Log](./logging/extraktion-logging) nachvollzogen werden.
