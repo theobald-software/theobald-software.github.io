@@ -49,7 +49,7 @@ Click **[Create]** to continue.
 6. In the following section click **[Add or remove scopes]**.
 Xtract Universal needs read and write permissions for its operations, which are configured in the "Scopes" section.
 ![xu-google-cloud-req-08](/img/content/xu/googlecloudstorage/xu-google-cloud-req-08.png){:class="img-responsive"}
-7. Enter [https://www.googleapis.com/auth/devstorage.read_write](https://www.googleapis.com/auth/devstorage.read_write) under **Manually add scopes** and click **[Add to table]**.
+7. Enter `https://www.googleapis.com/auth/devstorage.read_write` under **Manually add scopes** and click **[Add to table]**.
 ![xu-google-cloud-req-09](/img/content/xu/googlecloudstorage/xu-google-cloud-req-09.png){:class="img-responsive"}
 The newly added scope is the first entry in the table. Click **[Update]** to create the entry. 
 ![xu-google-cloud-req-10](/img/content/xu/googlecloudstorage/xu-google-cloud-req-10.png){:class="img-responsive"}
