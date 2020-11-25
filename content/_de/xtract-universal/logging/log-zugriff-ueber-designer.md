@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktion-logging
 ---
 
 ### Logs im Designer
-Im Designer können Server (Run)- und Extraktions-Logs angezeigt werden. Zusätzlich kann man die [Logs über Web-Service](/log-zugriff-ueber-http) abrufen.
+Im Designer können Server (Run)- und Extraktions-Logs angezeigt werden.
 
 Sowohl die Server- als auch die Extraktions-Logs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) definiert werden.
 
