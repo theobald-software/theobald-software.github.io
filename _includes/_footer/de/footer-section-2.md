@@ -14,6 +14,3 @@
 <a href="https://www.youtube.com/user/TheobaldSoftware"  title="Youtube" data-toggle="tooltip" data-placement="bottom">
   <i class="fab fa-youtube-square fa-2x"></i>
 </a>
-<a href="http://blog.theobald-software.com"  title="Blog" data-toggle="tooltip" data-placement="bottom">
-  <i class="fab fa-blogger fa-2x"></i>
-</a>
