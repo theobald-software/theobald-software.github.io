@@ -15,7 +15,7 @@ progressstate: 5
 ### Logs in Designer
 Server (run) and extraction logs can be displayed in Designer.
 
-Both the server and extraction logs are automatically deleted after a defined period of time. The period can be defined in the[server settings.](../server/server-settings).
+Both the server and extraction logs are automatically deleted after a defined period of time. The period can be defined in the [server settings.](../server/server-settings).
 
 ### Server Logs (Run)
 
@@ -37,7 +37,7 @@ The timestamp for each extraction process is displayed in the left part of the "
 
 
 ### Copying Logs
-Click**[Copy To Clipboard]**, to copy the current log to the clipboard. The copied log can be inserted to any application (e.g., into an e-mail).
+Click **[Copy To Clipboard]**, to copy the current log to the clipboard. The copied log can be inserted to any application (e.g., into an e-mail).
 
 Both the server and extraction logs are automatically deleted after a defined period of time. The period can be set in the server settings.
 

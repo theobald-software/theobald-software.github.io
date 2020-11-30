@@ -40,23 +40,7 @@ Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende 
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
 Markieren Sie die Checkboxen oben links, um zu entscheiden, welche Log-Levels angezeigt werden sollen.
 
-Um die Abläufe von BOARD Connector besser verstehen zu können, können Sie die in verständlicher Sprache geschriebenen Logs lesen.  Im folgenden Beispiel von einem Extraktions-Log werden die Abläufe näher erläutert.
-1. Allgemeine technische Informationen werden angezeigt.
- ![XU_logging_1](/img/content/xu/logging-extract-detail-01.png){:class="img-responsive"}
-2. Die [SQL-Destination]() wird für Empfang von Daten vorbereitet.
-3. Die Lizenzprüfung wird durchgeführt inklusive Entität und anderen relevanten Informationen.
-4. Verbindung zum SAP wird hergestellt.
-5. [Run-Parameter](./erste-schritte/eine-extraktion-ausfuehren#extraktionsparameter-festlegen) werden geloggt.
-6. Daten von SAP werden angefordert.
- ![XU_logging_2](/img/content/xu/logging-extract-detail-02.png){:class="img-responsive"}
-7. Paket Nr. 1 wird von SAP empfangen.
-8. Paket Nr. 1 wird in den SQL-Server geschrieben.
-9. Paket Nr. 2 wird von SAP empfangen.
-10. Paket Nr. 2 wird in den SQL-Server geschrieben.
-11. Paket Nr. 3 wird von SAP empfangen.
- ![XU_logging_3](/img/content/xu/logging-extract-detail-03.png){:class="img-responsive"}
-12. Paket Nr. 3 wird in den SQL-Server geschrieben.
-13. Extraktion wird abgeschlossen.
-
+Um die Prozesse von BOARD Connector besser zu verstehen, können Sie die in verständlicher Sprache verfassten Logs lesen.
+Das [Beispiel eines lesbaren Logs] (https://help.theobald-software.com/de/xtract-universal/logging#logs-lesen---extraktions-log) kann von Xtract Universal übernommen werden, da die Prozeduren ähnlich sind. Der einzige Unterschied besteht darin, dass der BOARD Connector keine Destinationen hat und die Daten immer nach BOARD geschrieben werden. 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
