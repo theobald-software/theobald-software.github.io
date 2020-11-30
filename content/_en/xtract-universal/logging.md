@@ -10,6 +10,7 @@ permalink: /:collection/:path
 weight: 8
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=logging
+progressstate: 5
 ---
 Xtract Universal logs all steps performed on a system in log files. 
 The log files are stored in the product directory <br>

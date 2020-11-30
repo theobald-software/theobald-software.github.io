@@ -1,14 +1,14 @@
 ---
-ref: xu-logging-02
+ref: bc-logging-03
 layout: page
 title: Zugriff auf Logs im Designer
 description: Zugriff auf Logs im Designer
-product: xtract-universal
+product: board-connector
 parent: logging
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktion-logging
+old_url: /BOARD-Connector-DE/default.aspx?pageid=extraktion-logging
 progressstate: 5
 ---
 
