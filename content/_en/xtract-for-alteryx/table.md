@@ -30,7 +30,7 @@ To avoid possible restrictions, you can use the Theobald Software custom functio
 See further information on possible restrictions and on installing the [custom function module](./sap-customizing#rfc_read_table-restrictions).
 
 {: .box-note }
-**Note:** The Table component is generally used for full load. For incremental data extraction from tables and views, you can define a WHERE-clause on specific fields e.g., time stamp. 
+**Note:** The Table component is generally used for full load. For incremental data extraction from tables and views, you can define a WHERE-clause on specific fields e.g., timestamp. 
 
 {: .box-tip }
 **Tip:** ODP component is a more convenient option for incremental extraction e.g., using [extractors](./odp/odp-extractors).

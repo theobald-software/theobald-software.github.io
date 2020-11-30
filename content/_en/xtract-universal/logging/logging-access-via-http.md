@@ -42,11 +42,11 @@ In the succeeding examples the following URL `https://todd.theobald.local:8165/`
  | req_type=extraction | List of all Defined Extractions | `https://todd.theobald.local:8165/log/?req_type=extraction` |
  | req_type=all| List of all server & extraction logs | `https://todd.theobald.local:8165/log/?req_type=all`
  | req_type=all&past_days=n | List of all logs since n days | `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'` | 
- | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log of a specific extraction with a specific time stamp | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
+ | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log of a specific extraction with a specific timestamp | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
  | req_type=extraction&name=[Extraction Name] | List of all logs of a specific extraction | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt` |
- | req_type=all&min=[timestamp] | List of all logs starting from a specific time stamp | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219` |
- | req_type=all&min=[timestamp]&max=[timestamp] | List of all logs between two time stamps. | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136` |
- | resultName=[Extraction Name]&timestamp[timestamp] | Return of the name of the result table or file for a specific time stamp. | `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.136` |
+ | req_type=all&min=[timestamp] | List of all logs starting from a specific timestamp | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219` |
+ | req_type=all&min=[timestamp]&max=[timestamp] | List of all logs between two timestamps. | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136` |
+ | resultName=[Extraction Name]&timestamp[timestamp] | Return of the name of the result table or file for a specific timestamp. | `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.136` |
 
 ### Examples of the HTTP Requests
 
@@ -59,10 +59,10 @@ The log contains the following columns:<br>
 - **Type**: contains the extraction type.
 - **Source**: contains the name of the source connection.
 - **Destination**: contains the name of the destination.
-- **LastRun**: contains the time stamp of the last execution. 
+- **LastRun**: contains the timestamp of the last execution. 
 - **RowCount**: contains the number of last extracted data records. 
-- **LastChange**: contains the time stamp of the last change. 
-- **Created**: contains the time stamp of the creation.
+- **LastChange**: contains the timestamp of the last change. 
+- **Created**: contains the timestamp of the creation.
 
 
 #### Web Service request of all defined destinations
@@ -87,7 +87,7 @@ The log contains the following columns:
 
 - **LineCount**: contains the row number.
 - **Name**:  contains the name of the extraction or the [server] name in case of a server log. .
-- **Timestamp**: contains the time stamp.
+- **Timestamp**: contains the timestamp.
 - **State** (see below): contains a number between 2 and 4 for a server extraction or the number 5 for a server log.
 - **StateDescr** (see below): contains the state description.
 - **LogLevel**: returns the value of the type "Error", "Info" "Warning" or "Debug" and describes the kind of the log line.
@@ -105,12 +105,12 @@ The log contains the following columns:
 - `https://todd.theobald.local:8165/log/?req_type=extraction`
 ![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
 
-#### Web Service Request of the Result Table or File of a Specific Time Stamp
+#### Web Service Request of the Result Table or File of a Specific Timestamp
 
 - `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.141`
 ![XU Server connection](/img/content/xu/http_log_resultName.png){:class="img-responsive"}
 
-Returns the name of the result table or file for a specific time stamp.   
+Returns the name of the result table or file for a specific timestamp.   
 
 {: .box-note }
 **Note:** This process works only, if the **Destination Settings** or **Extraction Settings** were not changed since the last execution. 
@@ -123,15 +123,15 @@ Returns the name of the result table or file for a specific time stamp.
 - `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt`
 ![XU Server connection](/img/content/xu/http_log_extraction_name.png){:class="img-responsive"}
 
-#### Web Service Request of a Specific Extraction at a Specific Time Stamp
+#### Web Service Request of a Specific Extraction at a Specific Timestamp
 - `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_extraction_name_timestamp.png){:class="img-responsive"}
 
-#### Web Service Request of a Server Log at a Specific Time Stamp
+#### Web Service Request of a Server Log at a Specific Timestamp
 - `https://todd.theobald.local:8165/log/?req_type=server&timestamp=2020-06-05_07:49:24.150`
 ![XU Server connection](/img/content/xu/http_log_bestimmter_timestamp.png){:class="img-responsive"}
 
-#### Web Service Request of all Logs between two Time Stamps
+#### Web Service Request of all Logs between two Timestamps
 - `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_min_max_timestamp.png){:class="img-responsive"}
 

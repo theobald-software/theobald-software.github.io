@@ -1,7 +1,7 @@
 ---
 ref: xu-logging-04
 layout: page
-title: Debug-Logging
+title: Tracing 
 description: Debug-Logging
 product: xtract-universal
 parent: logging

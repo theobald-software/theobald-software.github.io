@@ -1,12 +1,11 @@
-Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien.
-Im Falle der Fehlersuche kann das Theobald-Supportteam um die Übergabe von Rückverfolgungsinformationen bitten.
+RFC-Kommunikation mit SAP kann zur Fehlersuche ( mittels Tracing aufgezeichnet werden.
+
+Das Standard-Logging ist immer aktiv und ist von Tracing-Einstellung unabhängig. 
 
 {: .box-warning }
 **Warnung!: Erhöhter Verbrauch des Festplattenspeichers** <br>
-Bei der Aktivierung des Debug-Logging wird eine große Menge an Informationen gesammelt. Dies kann die Kapazität Ihrer Festplatten drastisch verringern.
-Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
-
-Das Standard-Logging ist von Debug-Logging-Einstellung unabhängig und wird auch bei einem inaktivem Debug-Logging ausgeführt.
+Bei der Aktivierung des Tracings wird eine große Menge an Informationen gesammelt. Dies kann die Kapazität Ihrer Festplatten drastisch verringern.
+Aktivieren Sie das Tracing nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
 
 
 ### Aktivieren der Nachverfolgung (Tracing)
@@ -23,5 +22,3 @@ Das Standard-Logging ist von Debug-Logging-Einstellung unabhängig und wird auch
 7. Erstellen Sie aus dem Tracing-Verzeichnis eine Zip-Datei (z.B. Trace.zip) und senden Sie die Zip-Datei an das Support-Team von Theobald Software (support@theobald-software.com).
 8. Öffnen Sie das Fenster "Source Details" wieder und entfernen Sie den Eintrag aus dem Feld **Trace Directory** (1), da das Tracing nicht mehr notwendig ist. 
 ![tracing-path](/img/content/xu_tracing_path.png){:class="img-responsive"}
-
-Das Standard-Logging ist von dieser Einstellung unabhängig und wird auch bei einem inaktivem Debug-Logging ausgeführt.
