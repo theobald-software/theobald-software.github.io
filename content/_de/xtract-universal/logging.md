@@ -29,7 +29,7 @@ Es werden verschiedene Arten der Log-Dateien erstellt.
 |Extraktion| Extraktions-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start einer Extraktion erstellt. XtractRun.exe ist der dazugehörige Prozess. | `C:\Program Files\XtractUniversal\logs\extractions\[Name_der_Extaktion]`|
 
 ### Log Levels
-Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende Log-Level:
+Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende Log-Levels:
 
 - **Errors** sind Fehlermeldungen, die während des Extraktionsprozesses ausgegeben werden.
 - **Information** - Statusmeldungen, über Vorgänge, die nicht zu einem Fehler führen.
@@ -38,7 +38,7 @@ Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende 
 
 ### Logs Lesen - Extraktions-Log
 
-<!---Bild-->
+![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
 Markieren Sie die Checkboxen oben links, um zu entscheiden, welche Log-Levels angezeigt werden sollen.
 
 Um die Abläufe von Xtract Universal besser verstehen zu können, können Sie die in verständlicher Sprache geschriebenen Logs lesen.  Im folgenden Beispiel von einem Extraktions-Log werden die Abläufe näher erläutert.

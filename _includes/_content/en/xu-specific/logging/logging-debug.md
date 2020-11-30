@@ -1,12 +1,11 @@
-All Theobald Software products log all steps performed on a system to log files.
-In case of debugging faulty behavior, Theobald support team may ask to hand over tracing information.
+RFC communication with SAP can be recorded by tracing for troubleshooting purposes.
+
+Standard logging is always active and is independent of the tracing setting. 
 
 {: .box-warning }
 **Warning!: Increase of used hard drive memory** <br>
 A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.
 Activate the debug logging only when necessary, e.g., upon request of the support team.
-
-Standard logging is independent of the debug logging setting and is executed even if debug logging is inactive.
 
 
 ### Activating tracing

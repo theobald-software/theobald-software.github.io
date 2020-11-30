@@ -30,12 +30,13 @@ Die Logs werden pro TCP-Verbindung erstellt. Um zwischen den Logs zu wechseln, k
 **Hinweis:** Markieren Sie die gewünschte Extraktion für die, Sie die Extraktions-Logs anzeigen lassen wollen. 
 
 Die Extraktions-Logs können im Designer unter **[Log]** angezeigt werden.
-![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
+![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}
+ 
 Der Zeitstempel für jeden Extraktionsprozess wird im linken Teil des Dialogs "View Extraction Log" angezeigt.
 
 
 ### Kopieren von Logs
 Klicken Sie auf **[Copy To Clipboard]**, um das aktuelle Log in die Zwischenablage zu kopieren. Das kopierte Log kann an beliebiger Stelle eingefügt werden (z.B. in eine E-Mail).
 
-Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in der Serverkonfiguration eingestellt werden.
+Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server-settings) eingestellt werden.
 
