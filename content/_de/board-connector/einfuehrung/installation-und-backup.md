@@ -1,8 +1,8 @@
 ---
 ref: bc-introduction-03
 layout: page
-title: Installation und Backup
-description: Installation und Backup
+title: Installation und Update
+description: Installation und Update
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
