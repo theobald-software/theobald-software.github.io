@@ -54,17 +54,16 @@ Subfolders are supported and can be defined using the following syntax:
 `[folder]/[subfolder_1]/[subfolder_2]/…`
 
 
-### CSV File Splitting
+### File Splitting
 
-**No Splitting**<br>
-Writes extraction data of a single extraction to a single file in Azure storage.
+**File Splitting**<br>
 
-**Split**<br>
-Writes extraction data of a single extraction to multiple files in Azure storage. Each filename is appended by *_part[nnn]*. In case of .csv files, the file size is determined by the value set in *Max. CSV file size*.
+Writes extraction data of a single extraction to multiple files in Azure storage. Each filename is appended by *_part[nnn]*. 
 
-**Max. CSV file size** <br>
-Maximum size of a .csv file stored in an Azure storage account. 
+**Max. file size** <br>
+The value set in *Max. file size* determines the maximum size of the file stored in Azure storage. 
+
 
 {: .box-note }
-**Note:** The option *Max. CSV file size* does not apply to gzip files. The size of a gzipped file cannot be determined in advance.
+**Note:** The option *Max. file size* does not apply to gzip files. The size of a gzipped file cannot be determined in advance.
 

@@ -55,21 +55,18 @@ Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers 
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 
 
-### CSV File Splitting
+### File Splitting
 
-**No Splitting**<br>
-Schreibt die Extraktionsdaten einer einzelnen Extraktion in eine einzelne Datei im Azure-Storage.
+**File Splitting**<br>
 
-**Split**<br>
 Schreibt die Extraktionsdaten einer einzelnen Extraktion in mehrere Dateien im Azure-Storage. 
 Dabei wird an jeden Dateinamen *_part[nnn]* angehägt. 
-Beim Verwenden von .csv-Dateien, bestimmt der Wert eingestellt in *Max. CSV file size* die Größe der Dateien. 
 
-**Max. CSV file size** <br>
-Maximalgröße der .csv-Datei gespeichert im Azure-Storage. 
+**Max. file size** <br>
+Der Wert eingestellt in *Max. file size* bestimmt die Maximalgröße der Datei gespeichert im Azure-Storage. 
 
 {: .box-note }
-**Note:** Die Option *Max. CSV file size* wird nicht von gzip-Dateien unterstützt.
+**Note:** Die Option *Max. file size* wird nicht von gzip-Dateien unterstützt.
 Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus bestimmt werden.
 
 
