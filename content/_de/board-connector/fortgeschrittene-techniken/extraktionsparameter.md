@@ -20,14 +20,13 @@ Um das Fenster "Run extractions" zu öffnen, wählen Sie eine Extraktion im Haup
 
 
 ### "Parameters" Tab *Extraction*
-Die Menge der Parameter hängt von dem Extraktionstyp und der Destination ab, z.B. ist **decimalSeparator** ein Parameter, der nur in der CSV-Destination vorhanden ist.
+Die Menge der Parameter hängt von dem Extraktionstyp ab.
 
 Parametername | Beschreibung | Spezielle Infos
 ------------ | ------------- | -------------
 clearBuffer | leert den Ergebnis-Buffer | Default-Wert - false
 preview | aktiviert die Preview | Default-Wert - false
 source | ermöglicht das dynamische Auswählen eines SAP-Quellsystems aus dem die Daten extrahiert werden. Aktiv, wenn mehrere SAP-Quellsysteme verfügbar sind, z.B. sap_dev und sap_prod. | -
-destination | ermöglicht das dynamische Auswählen einer Destination, in die die extrahierten Daten geschrieben werden. Aktiv, wenn mehrere Destinationen verfügbar sind, z.B. db_1 und db_2.| -
 rows | setzt die maximale Anzahl der extrahierten Datensätze | verfügbar in Table
 where | setzt die WHERE-Bedingung | verfügbar in Table
 packageSize | setzt die Paketgröße | verfügbar in Table

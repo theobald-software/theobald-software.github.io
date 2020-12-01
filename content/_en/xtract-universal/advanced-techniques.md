@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-05
 layout: page
-title: Advanced techniques
+title: Advanced Techniques
 description: Advanced techniques
 product: xtract-universal
 parent: xtract-universal

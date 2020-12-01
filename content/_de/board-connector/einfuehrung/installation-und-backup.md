@@ -27,7 +27,7 @@ Beim Starten des Installationsprogramms können die optionalen Komponenten (1) f
 |:----|:---|
 |Main Program Files | Standardeinstellung der Installationsroutine |
 |Start Menu Shortcut | Komponente, die dem Startmenü Verknüpfungen hinzufügt |
-|Convert Config files | Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x.
+|Convert Config files | Konvertiert Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x.
 Install Service | Installiert die Serverkomponente als Windows-Service und bootet den Service automatisch. Mehr Details im Abschnitt [Architektur](./architektur).
 
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz) beschrieben.
@@ -43,7 +43,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | result-cache Ordner | Ordner mit Extraktions-Cache-Dateien.  |
 | BCDesigner.exe | Anwendung zum Starten von BOARD Connector Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
 | BCService.exe | Anwendung, die den BOARD Connector Server als einen Windows Service startet.  Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
-| ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
+| ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von BOARD Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
 | Eula_BOARDConnector.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software BOARD Connector.|
 | BOARDConnectorLicense.json |  Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
@@ -66,7 +66,7 @@ Mit einem Backup können Sie bei Bedarf einfach auf die vorherige Version von BO
 Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.
 Führen Sie ein Backup des Ordners: `C:\Program Files\BoardConnector\config` in regelmäßigen Abständen durch. 
 
-Alle Einstellungen zu Extraktionen, Sources, Destinationen, etc. werden im Unterverzeichnis *config* gespeichert. 
+Alle Einstellungen zu Extraktionen, Sources etc. werden im Unterverzeichnis *config* gespeichert. 
 
 ### Neuinstallation und Update
 

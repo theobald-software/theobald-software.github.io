@@ -34,7 +34,7 @@ The miscellaneous tab consists of two subsections:
 **Cache results** (1)
 
 
-Pull destinations often pull the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way the pull destination pulls the data from cache and not from the SAP.
+BOARD often pulls the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way BOARD pulls the data from cache and not from the SAP.
 This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
 
 **Preview Mode** (2)
@@ -52,7 +52,7 @@ Within the Designer you can use these keywords to filter  extractions.
 Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
-Depicted example demonstrates the SAP object *MAKT* with it's primary key inherited from SAP in the general settings of the Designer. In this example the primary key consists of *MANDT*, *MATNR*, *SPRAS*. The demonstrated primary key is also taken over in the destination. 
+Depicted example demonstrates the SAP object *MAKT* with it's primary key inherited from SAP in the general settings of the Designer. In this example the primary key consists of *MANDT*, *MATNR*, *SPRAS*. The demonstrated primary key is also taken over BOARD. 
 
 {:.box-note}
 **Note:** A defined primary key field in a table is a prerequisite for merging data. 

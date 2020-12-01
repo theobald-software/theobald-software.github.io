@@ -34,8 +34,8 @@ Der Tab "Misc." besteht aus zwei Unterabschnitten:
 
 **Cache results** (1)
 
-Pull-Destinationen ziehen die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
- so dass die Pull-Destination die Daten aus dem Cache und nicht aus dem SAP zieht.
+BOARD zieht die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
+ so dass BOARD die Daten aus dem Cache und nicht aus dem SAP zieht.
 Dies erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
  Wenn dieses Verhalten nicht erwünscht ist (z.B. weil die Daten immer zu 100% aktuell sein müssen), muss die Cache-Option explizit ausgeschaltet werden.
 
@@ -58,7 +58,7 @@ Tabellenextraktionen erben die Primärschlüssel von SAP. Andere Objekte wie z.B
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
 Das abgebildete Beispiel zeigt das SAP-Objekt *MAKT* mit seinem Primärschlüssel. Der Primärschlüssel wurde SAP geerbt wurde und wird in den allgemeinen Einstellungen des Designers angezeigt.
-In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. Der gezeigte Primärschlüssel wird auch in der Destination übernommen. 
+In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. Der gezeigte Primärschlüssel wird auch in BOARD übernommen. 
 
 {:.box-note}
 **Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 

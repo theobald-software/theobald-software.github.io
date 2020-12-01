@@ -22,7 +22,7 @@ To open "Run extractions" window, select an extraction in the main window of the
 
 ### Subsection "Parameters" Tab "Extraction"
 
-The amount of the parameters depends on the extraction type and destination.
+The amount of the parameters depends on the extraction type.
 e.g., **decimalSeparator** is a parameter specific to CSV destination.
 
 Parameter name | Parameter description | Special information

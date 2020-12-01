@@ -27,7 +27,7 @@ When starting the installation program, optional components (1) can be selected 
 |:----|:---|
 |Main Program Files | Default setting of the installation routine |
 |Start Menu Shortcut | Component that adds shortcuts to the start menu |
-|Convert Config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.
+|Convert Config files | Converts extractions, sources, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.
 |Install Service | Installs the server component as a windows service and automatically boots it. See also section [Architecture](./architecture).|
 
 The license installation procedure is described in the section [Installing the license](license#installing-the-board-connector-license---boardconnectorlicensejson).
@@ -43,7 +43,7 @@ The list below shows several most important files that are placed into the defau
 | result-cache folder | Folder with extraction cache files. |
 | BCDesigner.exe | Application that launches BOARD Connector Designer to create, test and monitor extractions.|
 | BCService.exe | Application that launches BOARD Connector Server as Windows Service.  Usually boots automatically and runs in the background. |
-| ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
+| ConfigConverter.exe| Application that converts extractions, sources, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing BOARD Connector with all its components from your machine. |
 | Eula_BOARDConnector.rtf | Document containing the license agreement for the use of the software BOARD Connector.|
 | BOARDConnectorLicense.json |  License file with information about the server, the component and runtime. |
@@ -66,7 +66,7 @@ Backup allows you to easily switch back to the previous version of BOARD Connect
 System updates or changes can restrict software functionalities and this may lead to data loss. 
 Create a backup of the directory: `C:\Program Files\BoardConnector\config` at regular intervals.
 
-All settings for extractions, sources, destinations, etc. are stored in the subdirectory *config*. 
+All settings for extractions, sources, etc. are stored in the subdirectory *config*. 
 
 ### New Installation and Update
 

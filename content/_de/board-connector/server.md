@@ -40,7 +40,7 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 1. BCConfigServer.exe prüft die Authentisierung und Autorisierung der Anfrage.
 2. Designer fragt eine bestimmte Einstellung an, z.B. Liste aller Extraktionen. 
 3. BCConfigServer.exe liest die angefragten Einstellungen aus dem [Config-Verzeichnis](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien) und sendet diese Einstellungen an den Designer.
-4. Der Benutzer ändert die die Einstellungen im Designer (z.B. Destinationseinstellungen).
+4. Der Benutzer ändert die die Einstellungen im Designer.
 5. Der Designer sendet die geänderten Einstellungen an BCConfigServer.exe zurück. BCConfigServer.exe speichert die geänderten Einstellungen im [Config-Verzeichnis](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien).
 
 
