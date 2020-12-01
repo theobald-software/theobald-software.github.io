@@ -11,22 +11,30 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection
 ---
 
-The following setting can be defined in the Tableau Destination configuration:
+The following settings are available when setting up the Tableau destination:
 
 ![tableauDestinationDetails-hyper](/img/content/tableauDestinationDetails-hyper.png){:class="img-responsive"}
 
-**Output directory**<br>
-The directory on the Xtract Universal Server where the generated TDE Tableau files will be saved.
-Make sure that the directory exists.
-
+### Connection
 **TDE** or **Hyper**<br>
 Select the desired format for the Data Extract file.
 
-**Tableau Server**<br>
-You can choose to upload the extracted TDE file (as a data source) to Tableau Server or Tableau Online.
+**Output directory**<br>
+The directory on the Xtract Universal Server to store the generated TDE Tableau files.
+
+{: .box-note }
+**Note:** Make sure that the directory exists.
+
+
+
+### Tableau Server
+- **Upload to Tableau Server**
+Option to upload the extracted TDE file (as a data source) to Tableau Server or Tableau Online.
+- **Delete local file after upload**
+Option to remove the local file after a successful upload.
 
 **Host**<br>
-The IP address or domain name of the remote server, starting with http:// or https://.
+The IP address or domain name of the remote server, starting with `http://` or `https://`.
 
 **Username**<br>
 Your username for Tableau Server/Online.
@@ -34,15 +42,21 @@ Your username for Tableau Server/Online.
 **Password**<br>
 Your password for Tableau Server/Online.
 
-**Site**<br>
-The ID of the site, where you want to publish your data source in. 
-On Tableau Server, the default site will be selected if you leave the field blank. 
-For Tableau Online this parameter is mandatory. Please sign in to Tableau Online and determine your Site parameter from the URL:
+**Site (for Tableau online)**<br>
+The ID of the site for publishing your data source. 
+The field is mandatory and cannot be left blank. 
 
-[https://online.tableau.com/#/site/Site/workbooks](https://online.tableau.com/#/site/Site/workbooks)
+Get the correct site URL from [Tableau Online](https://online.tableau.com/#/site/Site/workbooks).
+
+For the extraction of data to Tableau Online the role "Server Administrator" is required as "Site Role".
+![Tableau_Server_Admin](/img/content/tableau_server_admin.png){:class="img-responsive"}
+
+**[Test Connection]**<br>
+Button to check if the connection data is correct and a connection can be established.
+
+### Tableau Server Settings
+**Site**<br>
+A drop-down list of the sites stored on the connected on-prem server.
 
 **Project**<br>
-The project where the data source should be published. A new project will be created if it doesn't exist yet.
-
-**Delete local file after upload**<br>
-You can choose to remove the local file after successful upload.
+The project for publishing data source. A new project is created, if it doesn't exist yet.

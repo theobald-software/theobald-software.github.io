@@ -69,7 +69,7 @@ For each TCP connection the XtractWebServer.exe starts a new instance of XtractR
 {: .box-tip }
 **Tip:** The XtractRun.exe logs its actions in the log subdirectory. 
 The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\XtractUniversal\logs\server\run` (default) 
-These are also the logs that can be displayed in the Designer under **[Server]>[Logs]**.
+These are also the logs that can be displayed in the Designer under **[Server]>[Logs (Run)]**.
 
 The following HTTP requests are possible:
 - Executing an extraction

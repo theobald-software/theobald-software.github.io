@@ -71,7 +71,7 @@ Für jede TCP-Verbindung startet die BCWebServer.exe eine neue Instanz der BCRun
 {: .box-tip }
 **Tipp:** Die BCRun.exe protokolliert ihre Aktionen in dem Log-Unterverzeichnis. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:ProgramFiles\BOARDConnector\logs\server\run` (standartmäßig). 
-Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs]** anzeigen lassen kann.
+Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen kann.
 
 Die folgenden HTTP-Anfragen sind möglich:
 - Ausführen einer Extraktion
