@@ -72,7 +72,7 @@ http://localhost:8065/
 ```
 Product version
 
-You can find out the current verion numbers by using the following HTTP requests:
+You can find out the current version numbers by using the following HTTP requests:
 ```
 http://localhost:8065/CurrentVersion
 http://localhost:8065/ProductVersionHistory

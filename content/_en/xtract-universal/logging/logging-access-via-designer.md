@@ -15,7 +15,7 @@ progressstate: 5
 ### Logs in Designer
 Server (run) and extraction logs can be displayed in Designer.
 
-Both the server and extraction logs are automatically deleted after a defined period of time. The period can be defined in the [server settings.](../server/server-settings).
+Both the server and extraction logs are automatically deleted after a defined period of time. The period can be defined in the [server settings](../server/server-settings).
 
 ### Server Logs (Run)
 
