@@ -12,9 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=logging-access-via-http
 progressstate: 3
 ---
 
-All Theobald Software products log all steps performed on a system to log files. The logs can be found in the product directory:
-e.g.,: `C:\Program Files\XtractUniversal\logs`.
-
+### Using the Correct URL
 The XU Server allows accessing the different meta data and logging information through web service (HTTP / HTTPS). Make sure to use the correct URL. 
 The correct URL can be found in your Xtract Universal [web server settings](../server/server-settings#web-server).
 

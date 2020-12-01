@@ -25,7 +25,7 @@ Different types of log files are created.
 |Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log | The name contains the timestamp in UTC. A new file is created when the server is started, additionally a new log file is created every 24 hours. XtractConfigServer.exe is the corresponding process.| `C:ProgramFiles\XtractUniversal\logs\server\config` |
 |Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log  | The name contains the timestamp in UTC. A new file is created when the server is started, additionally a new log file is created every 24 hours. XtractWebServer.exe is the corresponding process.| `C:ProgramFiles\XtractUniversal\logs\server\web` |
 |Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log  | The name contains the timestamp in UTC. A new file is created when a TCP connection is accepted.XtractRun.exe is the corresponding process.| `C:ProgramFiles\XtractUniversal\logs\server\run` |  
-|Extraction| Extraction logs: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log | The name contains the timestamp in UTC. A new file is created to start an extraction. XtractRun.exe is the corresponding process.|  | `C:\Program Files\XtractUniversal\logs\extractions\[Name_der_Extaktion]`|
+|Extraction| Extraction logs: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log | The name contains the timestamp in UTC. A new file is created to start an extraction. XtractRun.exe is the corresponding process.| `C:\Program Files\XtractUniversal\logs\extractions\[Name_der_Extaktion]`|
 
 ### Log Levels
 Each log entry is assigned to a so-called log level. There are the following log levels:

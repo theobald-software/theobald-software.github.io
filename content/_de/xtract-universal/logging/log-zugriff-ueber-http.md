@@ -11,8 +11,7 @@ lang: de_DE
 progressstate: 3
 ---
 
-Alle Produkte von Theobald Software protokollieren alle auf einem System durchgeführten Schritte in Log-Dateien. Die Log-Dateien werden im Produktverzeichnis gespeichert:
-z.B.: `C:\Program Files\XtractUniversal\logs`.
+### Korrekte URL verwenden
 
 Der XU-Server bietet Zugriff über Web-Service (HTTP / HTTPS) auf verschiedene Metadaten- und Logging-Informationen. Stellen Sie sicher, dass die richtige URL verwendet wird. 
 Die korrekte URL entnehmen Sie Ihren Xtract Universal [Web-Server-Einstellungen](../server/server_einstellungen#web-server).
