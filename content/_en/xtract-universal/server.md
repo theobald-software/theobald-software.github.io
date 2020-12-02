@@ -19,7 +19,7 @@ The server performs two main tasks:
 - Run extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory. 
 - Make extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory available to the designer.
 
-### 1. Run Extraction on the Server
+### Run Extraction on the Server
 
 Execution is triggered by an HTTP request. The HTTP request can be triggered from the target environment for [pull destinations](./destinations#pull-and-push-destinations) or from the xu command line tool (xu.exe /xu.elf). 
 
@@ -34,7 +34,7 @@ Execution is triggered by an HTTP request. The HTTP request can be triggered fro
 6. Each extracted data package is written to the target environment.
 7. After all packages are received, the connection to the SAP system is terminated and the target environment is informed that the extraction is complete.
 
-### 2. Access the Settings using the Designer
+### Access the Settings using the Designer
 
 1. XtractConfigServer.exe checks the authentication and authorization of the request.
 2. Designer requests a certain setting, e.g., list of all extractions. 

@@ -19,7 +19,7 @@ Der Server übernimmt zwei Hauptaufgaben:
 1. Im [Config](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Extraktionen ausführen 
 2. Im [Config](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Einstellungen dem Designer zur Verfügung stellen
 
-### 1. Extraktion auf dem Server ausführen
+### Extraktion auf dem Server ausführen
 
 Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage wird aus der Zielumgebung gestartet.
 
@@ -35,7 +35,7 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 7. Nachdem alle Pakete empfangen wurden, wird die Verbindung zum SAP-System getrennt und die Zielumgebung wird über den Abschluss der Extraktion informiert.
 
 
-### 2. Auf die Einstellungen mit dem Designer zugreifen
+### Auf die Einstellungen mit dem Designer zugreifen
 
 1. BCConfigServer.exe prüft die Authentisierung und Autorisierung der Anfrage.
 2. Designer fragt eine bestimmte Einstellung an, z.B. Liste aller Extraktionen. 
@@ -73,11 +73,6 @@ Für jede TCP-Verbindung startet die BCWebServer.exe eine neue Instanz der BCRun
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:ProgramFiles\BOARDConnector\logs\server\run` (standartmäßig). 
 Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen kann.
 
-Die folgenden HTTP-Anfragen sind möglich:
-- Ausführen einer Extraktion
-- Leeren des Result-Caches einer Extraktion
-- Abbrechen aller Läufe einer Extraktion
-- REST API-Anfragen z.B. [Logs](./logging/log-zugriff-ueber-http), [Metadaten](./fortgeschrittene-techniken/metadaten-zugriff-ueber-http) etc.
 
 {: .box-tip }
 **Tipp:** Die BCWebServer.exe protokolliert ihre Aktionen in Log-Dateien. 

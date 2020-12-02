@@ -19,7 +19,7 @@ Der Server übernimmt zwei Hauptaufgaben:
 1. Im [Config](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Extraktionen ausführen 
 2. Im [Config](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Einstellungen dem Designer zur Verfügung stellen
 
-### 1. Extraktion auf dem Server ausführen
+### Extraktion auf dem Server ausführen
 
 Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von der xu-Kommandozeilen-Tool (xu.exe /xu.elf) gestartet werden. 
 
@@ -35,7 +35,7 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 7. Nachdem alle Pakete empfangen wurden, wird die Verbindung zum SAP-System getrennt und die Zielumgebung wird über den Abschluss der Extraktion informiert.
 
 
-### 2. Auf die Einstellungen mit dem Designer zugreifen
+### Auf die Einstellungen mit dem Designer zugreifen
 
 1. XtractConfigServer.exe prüft die Authentisierung und Autorisierung der Anfrage.
 2. Designer fragt eine bestimmte Einstellung an, z.B. Liste aller Extraktionen. 

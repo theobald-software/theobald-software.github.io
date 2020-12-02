@@ -19,7 +19,7 @@ The server performs two main tasks:
 - Run extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory. 
 - Make extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory available to the designer.
 
-### 1. Run Extraction on the Server
+### Run Extraction on the Server
 
 Execution is triggered by an HTTP request. The HTTP request is triggered from the target environment. 
 
@@ -34,7 +34,7 @@ Execution is triggered by an HTTP request. The HTTP request is triggered from th
 6. Each extracted data package is written to the target environment.
 7. After all packages are received, the connection to the SAP system is terminated and the target environment is informed that the extraction is complete.
 
-### 2. Access the Settings using the Designer
+### Access the Settings using the Designer
 
 1. BCConfigServer.exe checks the authentication and authorization of the request.
 2. Designer requests a certain setting, e.g., list of all extractions. 
@@ -70,12 +70,6 @@ For each TCP connection the BCWebServer.exe starts a new instance of BCRun.exe, 
 **Tip:** The BCRun.exe logs its actions in the log subdirectory. 
 The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\BOARDConnector\logs\server\run` (default) 
 These are also the logs that can be displayed in the Designer under **[Server]>[Logs (Run)]**.
-
-The following HTTP requests are possible:
-- Executing an extraction
-- Emptying the result cache of an extraction
-- Canceling all runs of an extraction
-- REST API requests e.g., [Logs](./logging/logging-access-via-http), [Metadata](./advanced-techniques/metadata-access-via-http) etc.
 
 {: .box-tip }
 **Tip:** The XtractWebServer.exe logs its actions in log files. 
