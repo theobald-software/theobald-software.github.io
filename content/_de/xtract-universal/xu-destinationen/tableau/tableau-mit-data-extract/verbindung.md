@@ -47,7 +47,7 @@ Das Feld ist obligatorisch und kann nicht leer gelassen werden.
 Erhalten Sie die korrekte Website-URL von [Tableau Online](https://online.tableau.com/#/site/Site/workbooks).
 
 Für die Extraktion von Daten nach Tableau Online ist die Rolle "Server Administrator" als "Site Role" erforderlich.
-![Tableau_Server_Admin](/img/content/tableau_server_admin.png){:class="img-responsive"}
+![Tableau_Server_Admin](/img/content/xu/tableau_server_admin.png){:class="img-responsive"}
 
 **[Test Connection]**<br>
 Schaltfläche zur Überprüfung, ob die Verbindungsdaten korrekt sind und eine Verbindung hergestellt werden kann.

@@ -49,7 +49,7 @@ The field is mandatory and cannot be left blank.
 Get the correct site URL from [Tableau Online](https://online.tableau.com/#/site/Site/workbooks).
 
 For the extraction of data to Tableau Online the role "Server Administrator" is required as "Site Role".
-![Tableau_Server_Admin](/img/content/tableau_server_admin.png){:class="img-responsive"}
+![Tableau_Server_Admin](/img/content/xu/tableau_server_admin.png){:class="img-responsive"}
 
 **[Test Connection]**<br>
 Button to check if the connection data is correct and a connection can be established.
