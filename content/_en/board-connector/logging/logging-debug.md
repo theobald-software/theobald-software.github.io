@@ -1,7 +1,7 @@
 ---
 ref: bc-logging-01
 layout: page
-title: Debug Logging
+title: Tracing
 description: Debug Logging
 product: board-connector
 parent: logging
