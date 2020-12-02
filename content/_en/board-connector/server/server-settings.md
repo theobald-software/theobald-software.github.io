@@ -28,7 +28,7 @@ Defines the port number for communication between Server and Designer. The defau
 ![XU-Designer-Logon](/img/content/xu/xu-designer-logon.png){:class="img-responsive"}
 
 **Max. age of log files (days)** <br>
-Defines the maximum age of the config server [log files](../logging/server-logging) in days. After this period the log files are deleted.
+Defines the maximum age of the config server [log files](../logging/logging-access-via-designer#server-logs-run) in days. After this period the log files are deleted.
 
 **Authentication methods** <br>
 See section [User Management](../security/user-management).
@@ -62,7 +62,7 @@ See *HTTPS - Unrestricted*. This setting enables an additional access control fo
 #### Misc.
 
 **Max. age of log files (days)** <br>
-Defines the maximum age of the web server [log files](../logging/server-logging) in days. After this period the log files are deleted.
+Defines the maximum age of the web server [log files](../logging/logging-access-via-designer#server-logs-run) in days. After this period the log files are deleted.
 
 **Enable setup distribution for clients** <br>
 Defines whether the setup of the BOARD Connector version running on the server needs to be downloaded. When an older BOARD Connector Designer version is connected to a newer BOARD Connector Server version, you are be prompted to download and update the Designer with the BOARD Connector version. 

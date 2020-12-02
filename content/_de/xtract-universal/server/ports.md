@@ -32,7 +32,7 @@ Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Co
 Sollten manuelle Anpassungen der Portnummer notwendig sein, erfragen Sie die korrekten Ports bei Ihrem Netzwerk-Team.
 
 {: .box-note }
-**Hinweis:** Administratorberechtigungen sind für die Änderung der [Config-Dateien](./einfuehrung/installation-und-update#dateien-des-programmverzeichnisses) notwendig.
+**Hinweis:** Administratorberechtigungen sind für die Änderung der [Config-Dateien](../einfuehrung/installation-und-update#dateien-des-programmverzeichnisses) notwendig.
 
 *****
 #### Weiterführende Links

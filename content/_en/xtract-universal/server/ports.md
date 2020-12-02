@@ -32,7 +32,7 @@ The stored ports are already assigned and must be adapted in the following confi
 If manual adjustments of the port number are necessary, ask your network team for the correct ports.
 
 {: .box-note }
-**Note:** Administrator access rights are required for altering the [config files](./introduction/installation-and-update#program-directory-files).
+**Note:** Administrator access rights are required for altering the [config files](../introduction/installation-and-update#program-directory-files).
 
 *****
 #### Related links

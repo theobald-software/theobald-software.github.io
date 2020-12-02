@@ -16,10 +16,10 @@ Es gibt zwei Möglichkeiten, die Produktversion von BOARD Connector Version 2.x 
 - Manuelles Upgrade
 
 ### Upgrade während der Installation
-1. Starten Sie die [Installationsroutine](../einfuehrung/installation-und-backup).
+1. Starten Sie die [Installationsroutine](../einfuehrung/installation-und-update).
 2. Markieren Sie die Checkbox **Convert config files**.<br>
 Die Option *Convert config files* ruft den *ConfigConverter* auf, der gewährleistet, dass alle Extraktionen, Quellsysteme, Server- und Benutzersettings aus BC 2.x und BC 3.x in der neuen Version bereitstehen. <br>
-Mehr Informationen über die Dateien im Installationsordner finden Sie im Abschnitt [Installation und Backup](../einfuehrung/installation-und-backup).
+Mehr Informationen über die Dateien im Installationsordner finden Sie im Abschnitt [Installation und Update](../einfuehrung/installation-und-update).
 ![BC4_Migration_1](/img/content/BC4_Migration_1.png){:class="img-responsive"}
 3. Confirm the conversion process in the command line pop-up window.  
 ![BC4_Migration_2](/img/content/BC4_Migration_2.png){:class="img-responsive"}

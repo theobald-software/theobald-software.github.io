@@ -19,7 +19,7 @@ progressstate: 5
 
 ### Setup
 
-Das XtractUniversalSetup.exe ist ein branchenübliches Setup.  Führen Sie die Datei *XtractUniversalSetup.exe* aus und folgen Sie den Anweisungen des Setups.
+Die `XtractUniversalSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei *XtractUniversalSetup.exe* aus und folgen Sie den Anweisungen des Setups.
 
 Beim Starten des Setups können die optionalen Komponenten (1) für die Installation ausgewählt werden. Bei der Auswahl der Komponenten werden die Optionsdetails im "Description" Feld angezeigt (2). 
 

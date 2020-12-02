@@ -29,7 +29,7 @@ Delete | Delete an existing extraction | -
 Clone | Clone an existing extraction | -
 Source | Select an existing SAP source system | -
 Destination (Xtract Universal only)| Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
-Log | Open extraction log | [Extraction Logging](../logging/extraction-logging)
+Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
 Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
 Abort | Abort a selected extraction | -
 Clear Result Cache | Clear extraction cache | [Cache results](../getting-started/general-settings#misc-tab)
@@ -42,7 +42,7 @@ Filter | Define filters or keywords |  [Define Keywords](../getting-started/gene
 
 Menu Item | Description | Details
 ------------ | ------------ | -------------
-Logs  | Open server logs | [Server Logging](../logging/server-logging)
+Logs  | Open server logs | [Server Logging](../logging/logging-access-via-designer#server-logs-run)
 Settings | Open server settings | [Server Settings](../server/server-settings)
 Manage Sources | Edit connection to source system | [SAP Connection](../introduction/sap-connection)
 Manage Destinations (Xtract Universal only) | Edit or delete destinations | [Manage Destinations](https://help.theobald-software.com/en/xtract-universal/xu-destinations/managing-destinations).

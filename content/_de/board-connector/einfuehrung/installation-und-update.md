@@ -15,11 +15,11 @@ progressstate: 5
 {: .box-note }
 **Hinweis:** Administratorberechtigungen sind notwendig, um BOARD Connector zu installieren.
 
-### Installationsroutine
+### Setup
 
-Das Installationsprogramm *BoardConnectorSetup.exe* ist eine branchenübliche Installationsroutine.  Führen Sie die Datei *BoardConnectorSetup.exe* aus und folgen Sie den Anweisungen des Installationsprogramms.
+Die `BoardConnectorSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei *BoardConnectorSetup.exe* aus und folgen Sie den Anweisungen des Setups.
 
-Beim Starten des Installationsprogramms können die optionalen Komponenten (1) für die Installation ausgewählt werden. Bei der Auswahl der Komponenten werden die Optionsdetails im "Description" Feld angezeigt (2). 
+Beim Starten des Setups können die optionalen Komponenten (1) für die Installation ausgewählt werden. Bei der Auswahl der Komponenten werden die Optionsdetails im "Description" Feld angezeigt (2). 
 
 ![BC-Setup](/img/content/board/BC_Setup_2.png){:class="img-responsive"}
 

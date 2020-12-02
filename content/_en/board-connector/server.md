@@ -24,7 +24,7 @@ The server performs two main tasks:
 Execution is triggered by an HTTP request. The HTTP request is triggered from the target environment. 
 
 {: .box-tip }
-**Tip:** The process can be traced in the [Extraction Log](./logging/extraction-logging).
+**Tip:** The process can be traced in the [Extraction Log](./logging/logging-access-via-designer#extraction-logs).
 
 1. Server checks the authentication and authorization of the request.
 2. The target environment is prepared for writing the extracted data (e.g. establish database connection, create file).

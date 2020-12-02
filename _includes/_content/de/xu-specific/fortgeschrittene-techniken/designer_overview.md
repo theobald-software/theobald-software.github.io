@@ -29,7 +29,7 @@ Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
 Source | Vorhandenes SAP Quellsystem auswählen | -
 Destination (nur Xtract Universal) | Destination auswählen | [Destinationen](https://help.theobald-software.com/de/xtract-universal/xu-destinationen)
-Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/extraktion-logging)
+Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/log-zugriff-ueber-designer#extraktions-logs)
 Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
 Abort | Ausgewählte Extraktion abbrechen | -
 Clear Result Cache | Extraktions-Cache leeren | [Cache results](../erste-schritte/allgemeine-einstellungen#misc-tab)
@@ -42,7 +42,7 @@ Filter | Filter oder Keywords definieren | [Keywords definieren](../erste-schrit
 
 Menüeintrag |Beschreibung | Details
 ------------ | ------------ | -------------
-Logs  | Server-Log aufrufen | [Server-Logging](../logging/server-logging)
+Logs  | Server-Log aufrufen | [Server-Logging](../logging/log-zugriff-ueber-designer#server-logs-run)
 Settings | Server-Einstellungen aufrufen | [Server-Einstellungen](../server/server_einstellungen)
 Manage Sources | Verbindung zum Quellsystem bearbeiten | [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen)
 Manage Destinations (nur Xtract Universal) | Destinationen verwalten | [Destinationen verwalten](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/ziele-verwalten)
@@ -67,7 +67,7 @@ Online Help (DE) | - | -
 Submit Support Ticket | Support-Ticket einreichen | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
 Support Client | Direkter Support | [TeamViewer Client](https://get.teamviewer.com/theobaldsoftware)
 Info | Produktinfos | [Info-Fenster](../einfuehrung/lizenz#about-xtract-universal---info-fenster)
-Version History | Versionshistorie | [UVersionshistorie]( https://kb.theobald-software.com/version-history)
+Version History | Versionshistorie | [Versionshistorie]( https://kb.theobald-software.com/version-history)
 
 ### GUI-Schaltflächen (2)
 

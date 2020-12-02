@@ -28,7 +28,7 @@ Definiert die Portnummer, über die der Server mit dem Designer kommuniziert. St
 ![XU-Designer-Logon](/img/content/xu/xu-designer-logon.png){:class="img-responsive"}
 
 **Max. age of log files (days)**<br>
-Definiert das maximale Alter der [Logdateien](../logging/server-logging) des Config-Servers in Tagen. Danach werden die Logdateien gelöscht. 
+Definiert das maximale Alter der [Logdateien](../logging/log-zugriff-ueber-designer#server-logs-run) des Config-Servers in Tagen. Danach werden die Logdateien gelöscht. 
 
 **Authentication methods**<br>
 Siehe Abschnitt [Benutzerverwaltung](../sicherheit/benutzerverwaltung).
@@ -61,7 +61,7 @@ Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine
 #### Misc.
 
 **Max. age of log files (days)**<br>
-Definiert das maximale Alter der [Webserver-Logdateien](../logging/server-logging) in Tagen. Danach werden die Logdateien gelöscht. 
+Definiert das maximale Alter der [Webserver-Logdateien](../logging/log-zugriff-ueber-designer#server-logs-run) in Tagen. Danach werden die Logdateien gelöscht. 
 
 **Enable setup distribution for clients**<br>
 Legt fest, ob das Setup der BOARD Connector Version, die auf dem Server läuft, vom Server heruntergeladen werden kann.<br>
