@@ -20,16 +20,20 @@ progressstate: 5
 
 *XtractUniversalSetup.exe* is an industry standard setup.  Execute the *XtractUniversalSetup.exe* file and follow the instructions of the setup.
 
-When starting the setup, components (1) can be selected during the installation. When selecting a component details are displayed in the description field (2).
+When starting the setup, components can be selected during the installation. 
 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
 |Component | Description |
 |:----|:---|
+|Main Product Files | All required files to use Xtract Universal |
+|Designer | Installs the Designer application, uncheck the option if you want to use Xtract Universal without the desktop application |
+|Server <br> Install Service <br> Convert config files | Installs the Xtract Universal Server <br> Installs the server component as a windows service. See also section [Start Server](../server/start-server) <br> Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
+|Start Menu Shortcuts | Component that adds shortcuts to the start menu.|
 |Tableau Extract API | Component is only required for Tableau destination |
-|Start Menu Shortcut | Component that adds shortcuts to the start menu |
-|Convert Config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
-|Install Service | Installs the server component as a windows service. See also section [Start Server](../server/start-server).|
+
+{: .box-note }
+**Note:** Make sure to mark the option “Server > Install Service” during the Installation, as installing a server without the service is only used for development purposes.
 
 The license installation procedure is described in the section [Installing the license](license#installing-the-xtract-universal-license---xtractuniversallicensejson).
 

@@ -27,10 +27,14 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 
 |Komponente | Beschreibung |
 |:----|:---|
-|Tableau Extract API | Komponente erforderlich nur für die Tableau Destination |
-|Start Menu Shortcut | Komponente, die dem Startmenü Verknüpfungen hinzufügt |
-|Convert Config files | Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Komponente ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x.
-|Install Service | Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten).
+|Main Product Files | All required files to use Xtract Universal |
+|Designer | Installs the Designer application, uncheck the option if you want to use Xtract Universal without the desktop application |
+|Server <br> Install Service <br> Convert config files | Installiert Xtract Universal Server <br> Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) <br> Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Komponente ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x.|
+|Start Menu Shortcuts | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
+|Tableau Extract API |  Komponente erforderlich nur für die Tableau Destination |
+
+{: .box-note }
+**Hinweis:** Achten Sie darauf die Option “Server > Install Service” während der Installation. Die Option der Installation vom Server ohne Service dient nur den Entwicklungszwecken.
 
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz#installieren-von-xtract-universal-lizenz---xtractuniversallicensejson) beschrieben.
 

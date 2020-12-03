@@ -3,7 +3,7 @@ The main window of the Designer consists of three main sections:
 - Main Menu Bar (1)
 - GUI Buttons(2)
 - List of Extractions(3)
-- Staus bar (4)
+- Status bar (4)
 
 ### Main Menu Bar (1)
 
