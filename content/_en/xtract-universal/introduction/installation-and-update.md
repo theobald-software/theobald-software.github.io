@@ -99,7 +99,7 @@ There are two ways of upgrading the product version from XU 2.x and 3.x to XU 4.
 1. Start the Xtract Universal setup.
 2. Make sure to mark the checkbox **Convert config files** checkbox. <br>
 The option *Convert config files* starts the *ConfigConverter* application, which ensures that all extractions, source systems, destinations, server and user settings from XU 2.x or 3.x are available in the new version. <br> 
-![XU3_Migration_1](/img/content/XU4_Migration_1.png){:class="img-responsive"}
+![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 3. Confirm the conversion process in the command line pop-up window.  
 ![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"}
 
