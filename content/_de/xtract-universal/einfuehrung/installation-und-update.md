@@ -25,11 +25,13 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
-|Komponente | Beschreibung |
-|:----|:---|
-|Main Product Files | All required files to use Xtract Universal |
-|Designer | Installs the Designer application, uncheck the option if you want to use Xtract Universal without the desktop application |
-|Server <br> Install Service <br> Convert config files | Installiert Xtract Universal Server <br> Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) <br> Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Komponente ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x.|
+|Komponente | Subkomponente |Beschreibung |
+|:----|:---| :---|
+|Main Product Files |- |Installiert alle notwendigen Dateien, die zum Verwenden von Xtract Universal notwendig sind.|
+|Designer | -|Installiert die Designer-Anwendung, entfernen Sie die Markierung bei dieser Option, wenn Sie Xtract Universal ohne die grafische Schnittstelle verwenden wollen. |
+|Server || Installiert Xtract Universal Server. | 
+|<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) |
+| <!---->| Convert config files| Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Komponente ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
 |Start Menu Shortcuts | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
 |Tableau Extract API |  Komponente erforderlich nur für die Tableau Destination |
 

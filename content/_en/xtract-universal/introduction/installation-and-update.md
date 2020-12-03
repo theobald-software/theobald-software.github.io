@@ -26,13 +26,13 @@ When starting the setup, components can be selected during the installation.
 
 |Component | Sub Component| Description |
 |:----|:---|:---|
-|Main Product Files |- | All required files to use Xtract Universal |
-|Designer | -| Installs the Designer application, uncheck the option if you want to use Xtract Universal without the desktop application |
+|Main Product Files |- | All required files to use Xtract Universal. |
+|Designer | -| Installs the Designer application, uncheck the option if you want to use Xtract Universal without a graphical interface. |
 |Server | | Installs the Xtract Universal Server |
-|<!---->| Install Service| Installs the server component as a windows service. See also section [Start Server](../server/start-server) |
+|<!---->| Install Service| Installs the server component as a windows service. See also section [Start Server](../server/start-server). |
 | <!---->  |  Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
-|Start Menu Shortcuts | Component that adds shortcuts to the start menu.|
-|Tableau Extract API | Component is only required for Tableau destination |
+|Start Menu Shortcuts |- |Component that adds shortcuts to the start menu.|
+|Tableau Extract API |- |Component is only required for Tableau destination. |
 
 {: .box-note }
 **Note:** Make sure to mark the option “Server > Install Service” during the Installation, as installing a server without the service is only used for development purposes.
