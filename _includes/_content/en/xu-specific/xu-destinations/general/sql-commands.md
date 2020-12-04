@@ -47,11 +47,11 @@ be used as templates:
 
 1. Within subsection e.g., **Preparation** select the **Custom SQL** (1) option from the drop-down list.
 2. Click **[Edit SQL]**. The window "Edit SQL" opens.
+![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 3. Navigate to the drop-down menu and select an existing command (3). 
 4. Click **[Generate Statement]**. A new statement is generated.
 5. Copy the statement for further use and click **[OK]** to confirm.
- 
-![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
+![Formula-ExistsTable](/img/content/Formula-ExistsTable-02.png){:class="img-responsive"}
 
 Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-custom-sql) for details on predefined expressions.
 

@@ -9,34 +9,38 @@ permalink: /:collection/:path
 weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-settings
+progressstate: 5
 ---
+### Custom SQL Statement
 
-You have the possibility to use your own SQL statement for the three different DB process steps and / or to adapt it to your requirements.
-
-The necessary adjustments must be made for the sections *Preparation, Row & Processing* and *Finalization* in the destination settings. 
-To do this, select an existing extraction in Xtract Universal and click on the Destination button.
-
+In the dialogue [destination settings](./sql-server-settings#opening-the-destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
+1. Select a particular extraction (1).
+2. Click **[Destination]** (2), the dialogue "Destination Settings" opens.
+3. Select the option *Custom SQL* from the drop-down list (3) in one of the following sections:
+- Preparation 
+- Row Processing
+- Finalization
+4. Click **[Edit SQL]** (4), the dialogue "Edit SQL" opens.
 
-In the following example, the table *KNA1* is extended by a column with the current timestamp of type *DATETIME*. 
-This new column is filled dynamically using a .NET-based function. 
+### Custom SQL Example
+In the following example, the table *KNA1* is extended by a column with the current timestamp of type *DATETIME*. <br>
+The new column is filled dynamically using a .NET-based function. 
 
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> The data types that can be used in the SQL statement depend on the SQL Server database version.
-</div>
+{: .box-note }
+**Note:** The data types that can be used in the SQL statement depend on the SQL Server database version.
 
 ![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 
-Start by selecting *Custom SQL* in the Preparation section from the drop-down menu. Then click the *Edit SQL* button to edit the code.
-From the drop-down menu, select *Drop & Create* and click *Generate Statement*. At the end of the generated statement, add the following line and confirm with *OK*.
-
+1. In the dialogue "Destination Settings", within the section **Preparation**, select *Custom SQL* and click **[Edit SQL]**.
+2. In the drop-down menu, select the option *Drop & Create* and click **[Generate Statement]**. 
+3. At the end of the generated statement, add the following line: <br>
 ```sql
 [Extraction_Date] DATETIME
-```
-
-In the *Row Processing* section, the column values from SAP are processed in the previously created columns of the SQL target table. This SQL statement is therefore left on the standard *Insert* as an SQL statement. At this point, no data is written from the SAP source system, but `NULL` values are written to the newly created *Extraction_Date* column.
-
-In the last section *Finalization*, the `NULL` values are filled with the following SQL statement of the current date of the extraction and written to the SQL target table by the T-SQL command `UPDATE`. Confirm the input with *OK*.
+``` 
+4. Confirm with **[OK]**.
+In the section **Row Processing**, the column values from SAP are processed in the previously created columns of the SQL target table. This SQL statement is therefore left on the standard *Insert* as an SQL statement. At this point, no data is written from the SAP source system, but `NULL` values are written to the newly created *Extraction_Date* column.
+In the section section **Finalization**, the `NULL` values are filled with the following SQL statement of the current date of the extraction and written to the SQL target table by the T-SQL command `UPDATE`. <br>
 
 ```sql
 UPDATE [dbo].[KNA1] 
@@ -46,15 +50,17 @@ WHERE [Extraction_Date] IS NULL;
 
 ![Custom-SQL_Final](/img/content/custom_sql_finalization_statement.png){:class="img-responsive"}
 
-SQL Server View of table *KNA1* with the extended column *Extraction_Date*.
+#### Checking the Result
+
+Check the existence of the extended column *Extraction_Date*  in the SQL Server View of table *KNA1*.
 
 ![Custom_SQL_SQL_Server_Ausgabe](/img/content/sql_server_ansicht_extraction_date_spalte.png){:class="img-responsive"}
 
-#### Creation of the SQL table ExtractionStatistics
+#### Creation of the SQL Table ExtractionStatistics
 
-This table provides an overview and status of the executed Xtract Universal extractions.
+The table "ExtractionStatistics" provides an overview and status of the executed Xtract Universal extractions.
 
-To do this, create an SQL table according to the following example:
+To create the "ExtractionStatistics" table, create an SQL table according to the following example:
 
 ```sql
 CREATE TABLE [dbo].[ExtractionStatistics](
@@ -65,7 +71,7 @@ CREATE TABLE [dbo].[ExtractionStatistics](
 ) ON [PRIMARY]
 GO
 ```
-The *ExtractionStatistics* table is filled in the *Finalization* DB process step using the following SQL code:
+The *ExtractionStatistics* table is filled in the *Finalization* DB process step, using the following SQL code:
 
 ```sql
 INSERT INTO [ExtractionStatistics]
@@ -83,3 +89,7 @@ VALUES
      '#{Extraction.RunState}#'
 );
 ```
+
+***********
+#### Related Links
+- [Post-Processing Column Name Style](https://kb.theobald-software.com/xtract-universal/adjust-column-name-style)

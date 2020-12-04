@@ -47,11 +47,11 @@ als Vorlagen verwendet werden:
 
 1. Wählen Sie im Unterabschnitt z.B. **Preparation** die Option **Custom SQL** (1) aus der Dropdown-Liste.
 2. Klicken Sie auf **[Edit SQL]**. Das Fenster "Edit SQL" wird geöffnet.
+![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 3. Navigieren Sie zum Dropdown-Menü und wählen Sie einen vorhandenen Befehl (3). 
 4. Klicken Sie auf **[Generate Statement]**. Eine neue Anweisung wird generiert.
 5. Kopieren Sie die Erklärung zur weiteren Verwendung und klicken Sie zur Bestätigung auf **[OK]**.
-
-![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
+![Formula-ExistsTable](/img/content/Formula-ExistsTable-02.png){:class="img-responsive"}
 
 Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql).
 
