@@ -1,7 +1,7 @@
 ---
 ref: xi-open-hub-service-ohs-02
 layout: page
-title: Look up an OHS Extraction
+title: Look Up an OHS Extraction
 description: Look up an OHS Extraction
 product: xtract-is
 parent: open-hub-service-ohs
@@ -9,23 +9,26 @@ permalink: /:collection/:path
 weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=look-up-an-ohs-extraction
+progressstate: 5
 ---
 
-Within the editor, you can look up an OHS extraction by clicking the binocular button. You can search either according to InfoSpoke, destination or process chain. You can also use wildcards ( * ) in your search.
+### Look Up
+Within the main window of the component, click **Look Up** (binocular symbol) to look up an OHS extraction.
+![OHS-Look-Up](/img/content/ohs-main-window-look-up.png){:class="img-responsive" }
+You can search either according to InfoSpoke, Destination or Process Chain. You can also use wildcards ( * ) in your search.
+![OHS-Search-001](/img/content/xis/OHS-Search-001.png){:class="img-responsive" }
+After making your selections, all meta data are retrieved from the BW and displayed in the main window of the component.
+![OHS-Search-002](/img/content/xis/OHS-Search-002.png){:class="img-responsive" }
 
-![OHS-Search-001](/img/content/OHS-Search-001.png){:class="img-responsive" }
-
-After making your selections, all meta data are retrieved from the BW and displayed in the editor.
-
+### Extraction Types
 The type of extraction is defined by three cases:
 
-**P - Trigger Process Chain**<br>
-The specified process chain is started, the extraction is made and after ending the extraction, data is extracted in packets.
+- **P - Trigger Process Chain**<br>
+The specified process chain is started, the extraction is executed and finished. After the finish of the extraction, data is extracted in packages.
 
-**W – Wait for Notify**<br>
-No process chain is started up; instead the tool only waits until it is notified of completion of extraction. Someone else is responsible for starting up the extraction (e.g. SAP's own scheduler).
+- **W – Wait for Notify**<br>
+No process chain is started. The tool waits for the extraction completion notification. Another instance is responsible for starting of the extraction (e.g., SAP's own scheduler).
 
-**E – Extract Only**<br>
-Neither a process chain is started up, nor is a notification of extraction waited for. The Request ID entered in the field Request ID is used to retrieve data that is hidden behind the respective request. Only data of the last request for that OHS Destination can be extracted. Data of previous requests can not be extracted.
+- **E – Extract Only**<br>
+Neither a process chain is started, nor a notification of an extraction completion is awaited. The request ID entered in the field *Request ID* and is used to retrieve data hidden behind the respective request. Only data of the last request for the particular OHS destination can be extracted. Data of previous requests can not be extracted.
 
-![OHS-Search-002](/img/content/OHS-Search-002.png){:class="img-responsive" }

@@ -9,22 +9,24 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=suchen-einer-ohs-extraktion
+progressstate: 5
 ---
 
-Innerhalb des Editors haben Sie die Möglichkeit, mit dem Fernglas eine OHS-Extrakion zu suchen. Entweder nach Infospoke, Destination oder Prozesskette. Natürlich können auch Wildcards ( * ) für die Suche verwendet werden. Achtung! Eine Selektion nach Prozessketten ist nur möglich, wenn die jeweilige Prozesskette einen InfoSpoke enthält.
+### Look Up
+Klicken Sie im Hauptfenster der Komponente auf **Look Up** (Binokularsymbol), um eine OHS-Extraktion nachzuschlagen.
+![OHS-Look-Up](/img/content/ohs-main-window-look-up.png){:class="img-responsive" }
+Sie können entweder nach InfoSpoke, Destination oder Process Chain suchen. Sie können bei der Suche auch Wildcards ( * ) verwenden.
+![OHS-Search-001](/img/content/xis/OHS-Search-001.png){:class="img-responsive" }
+Nachdem Sie Ihre Auswahl getroffen haben, werden alle Metadaten aus dem BW geholt und im Hauptfenster der Komponente angezeigt.
+![OHS-Search-002](/img/content/xis/OHS-Search-002.png){:class="img-responsive" }
 
-![OHS-Search-001](/img/content/OHS-Search-001.png){:class="img-responsive"}
+### Extraktionstypen
 
-Nach der Selektion werden alle Metadaten vom BW abgerufen und im Editor angezeigt.
-Die Art der Extraktion definiert sich durch drei Fälle:
-
+Die Art der Extraktion wird durch drei Fälle definiert:
 **P - Trigger Process Chain**<br>
 Die angegebene Prozesskette wird gestartet, die Extraktion durchgeführt und nach Beendigung der Extraktion werden die Daten paketweise extrahiert.
 
 **W – Wait for Notify**<br>
-Es wird keine Prozesskette angestartet, sondern das Tool wartet nur, bis es über die Beendigung der Extraktion informiert wird. Für das Anstarten der Extraktion ist jemand anderes zuständig (z.B. der SAP-eigene Scheduler).
-
+Es wird keine Prozesskette gestartet. Das Werkzeug wartet auf die Benachrichtigung über den Abschluss der Extraktion. Eine andere Instanz ist für den Start der Extraktion zuständig (z.B. der SAP-eigene Scheduler).
 **E – Extract Only**<br>
-Es wird weder eine Prozesskette angestartet, noch wird auf eine Extraktionsbenachrichtung gewartet. Die im Feld *Request ID* eingetragene Request ID wird genutzt, um die Daten abzurufen, die sich hinter dem jeweiligen Request verbergen. Diese Option ist dann sinnvoll, wenn Sie beispielsweise einen abgebrochenen Request erneut extrahieren möchten. Es können nur Daten des letzten Requests der OHS Destination extrahiert werden.
-
-![OHS-Search-002](/img/content/OHS-Search-002.png){:class="img-responsive"}
+Weder wird eine Prozesskette gestartet, noch wird eine Benachrichtigung über den Abschluss einer Extraktion abgewartet. Die im Feld *Request-ID* eingegebene Request-ID wird verwendet, um Daten abzurufen, die sich hinter dem jeweiligen Request verbergen. Es können nur Daten der letzten Anforderung für die jeweilige Arbeitsschutz-Destination extrahiert werden. Daten früherer Anforderungen können nicht extrahiert werden.
