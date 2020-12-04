@@ -13,7 +13,7 @@ progressstate: 5
 ---
 ### Custom SQL Statement
 
-In the dialogue [destination settings](./sql-server-settings#opening-the-destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
+In the dialogue [Destination settings](./sql-server-settings#opening-the-destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 1. Select a particular extraction (1).
 2. Click **[Destination]** (2), the dialogue "Destination Settings" opens.
@@ -30,15 +30,15 @@ The new column is filled dynamically using a .NET-based function.
 {: .box-note }
 **Note:** The data types that can be used in the SQL statement depend on the SQL Server database version.
 
-![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
-
 1. In the dialogue "Destination Settings", within the section **Preparation**, select *Custom SQL* and click **[Edit SQL]**.
+![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 2. In the drop-down menu, select the option *Drop & Create* and click **[Generate Statement]**. 
 3. At the end of the generated statement, add the following line: <br>
 ```sql
 [Extraction_Date] DATETIME
-``` 
-4. Confirm with **[OK]**.
+```
+4. Confirm with **[OK]**. <br>
+
 In the section **Row Processing**, the column values from SAP are processed in the previously created columns of the SQL target table. This SQL statement is therefore left on the standard *Insert* as an SQL statement. At this point, no data is written from the SAP source system, but `NULL` values are written to the newly created *Extraction_Date* column.
 In the section section **Finalization**, the `NULL` values are filled with the following SQL statement of the current date of the extraction and written to the SQL target table by the T-SQL command `UPDATE`. <br>
 
@@ -47,8 +47,6 @@ UPDATE [dbo].[KNA1]
 SET [Extraction_Date] = '#{DateTime.Now}#' 
 WHERE [Extraction_Date] IS NULL;
 ```
-
-![Custom-SQL_Final](/img/content/custom_sql_finalization_statement.png){:class="img-responsive"}
 
 #### Checking the Result
 

@@ -9,34 +9,38 @@ permalink: /:collection/:path
 weight: 6
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sql-server-voraussetzungen
+progressstate: 5
 ---
+### Custom SQL Statement - Benutzerdefinierte SQL-Anweisung
 
-Sie haben die Möglichkeit abseits vom Standard eigene SQL-Statement für die drei unterschiedlichen DB Prozessschritte zu verwenden und / oder diese an Ihre Bedürfnissen anzupassen.
-
-Die notwendigen Anpassungen sind für die Abschnitte *Preparation, Row & Processing* sowie *Finalization* in den Destination Settings vorzunehmen. 
-Selektieren Sie dafür eine bestehende Extraction in Xtract Universal und klicken auf die Schaltfläche Destination.
-
+Im Dialog [Destination settings](./sql-server-einstellungen#destination-settings-öffnen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
+1. Wählen Sie eine bestimmte Extraktion (1).
+2. Klicken Sie auf **[Destination]** (2), der Dialog "Destination Settings" wird geöffnet.
+3. Wählen Sie die Option *Custom SQL* aus der Dropdown-Liste (3) in einem der folgenden Abschnitte:
+- Preparation 
+- Row Processing
+- Finalization
+4. Klicken Sie auf **[Edit SQL]** (4), der Dialog "Edit SQL" wird geöffnet.
 
-Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Datum vom Typ `DATETIME` erweitert. 
-Das Befüllen dieser neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. 
+### Custom SQL Beispiel
+Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Datum vom Typ *DATETIME* erweitert. <br>
+Das Befüllen der neuen Spalte wird dynamisch mit einer .NET basierten Funktion umgesetzt. 
 
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
-</div>
+{: .box-note }
+**Hinweis:** Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 
+1. Wählen Sie im Dialog "Destination Settings" im Abschnitt **Preparation** die Option *Custom SQL* und klicken Sie auf **Edit SQL**.
 ![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
-
-Beginnen Sie damit im Preparation Abschnitt über das Drop-Down Menü *Custom SQL* auszuwählen. Anschließend klicken Sie auf die Schaltfläche *Edit SQL*, um den Code zu bearbeiten.
-Wählen Sie aus dem Drop-Down Menü *Drop & Create* aus und klicken Sie auf *Generate Statement*. Fügen Sie am Ende des erzeugten Statements folgende Zeile ein und bestätigen Sie die Eingabe mit *OK*. 
-
+2. Wählen Sie im Dropdown-Menü die Option *Drop & Create* und klicken Sie auf **[Generate Statement]**. 
+3. Fügen Sie am Ende des generierten Statements die folgende Zeile hinzu: <br>
 ```sql
 [Extraction_Date] DATETIME
 ```
+4. Bestätigen Sie mit **[OK]**. <br>
 
-Im Abschnitt *Row Processing* werden die Spaltenwerte aus SAP in die vorab angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *Extraction_Date* geschrieben.
-
-Im letzten Abschnitt *Finalization* werden die `NULL` Werte mit folgenden SQL-Statement des aktuellen Datums der Extraktion befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben: 
+Im Abschnitt **Row Processing** werden die Spaltenwerte aus SAP in die zuvor angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *Extraction_Date* geschrieben.
+Im Abschnitt **Finalization** werden die `NULL` Werte mit folgenden SQL-Statement des aktuellen Datums der Extraktion befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben: 
 
 ```sql
 UPDATE [dbo].[KNA1] 
@@ -44,19 +48,20 @@ SET [Extraction_Date] = '#{DateTime.Now}#'
 WHERE [Extraction_Date] IS NULL; 
 ```
 
-Bestätigen Sie die Eingabe mit *OK*. 
-
 ![Custom-SQL_Final](/img/content/custom_sql_finalization_statement.png){:class="img-responsive"}
 
-SQL-Server Ansicht der Tabelle *KNA1* mit der erweiterten Spalte *Extraction_Date*.
+#### Ergebnis überprüfen
+
+Überprüfen Sie die Existenz der erweiterten Spalte *Extraction_Date* in der SQL Server-Ansicht der Tabelle *KNA1*.
 
 ![Custom_SQL_SQL_Server_Ausgabe](/img/content/sql_server_ansicht_extraction_date_spalte.png){:class="img-responsive"}
 
 #### Anlage SQL Tabelle ExtractionStatistics
 
-Diese Tabelle ermöglicht eine Gesamtübersicht und Status der ausgeführten Xtract Universal Extraktionen.
+Die Tabelle "ExtractionStatistics" ermöglicht eine Gesamtübersicht und Status der ausgeführten Xtract Universal Extraktionen.
 
-Erstellen Sie dafür eine SQL Tabelle nach folgenden Beispiel:
+Um die Tabelle "ExtractionStatistics" zu erstellen, erstellen Sie eine SQL-Tabelle gemäß dem folgenden Beispiel:
+
 
 ```sql
 CREATE TABLE [dbo].[ExtractionStatistics](
@@ -86,3 +91,6 @@ VALUES
      '#{Extraction.RunState}#'
 );
 ```
+***********
+#### Weiterführende Links
+- [Post-Processing Column Name Style](https://kb.theobald-software.com/xtract-universal/adjust-column-name-style)

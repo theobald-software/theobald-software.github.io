@@ -34,11 +34,9 @@ Definiert die Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle
 - *None*: keine Aktion (Default).
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL. 
 
-
 #### Über Merging
 Die Zusammenführung gewährleistet eine Deltaverarbeitung: neue Datensätze werden in die Datenbank eingefügt und/oder bestehende Datensätze werden aktualisiert. 
 Mehr Details im Abschnitt [Daten zusammenführen (mergen)](./daten-mergen).
-
 
 ### Custom SQL 
 
@@ -46,12 +44,13 @@ Die Option Custom SQL ermöglicht die Erstellung benutzerdefinierter SQL- oder S
 als Vorlagen verwendet werden:
 
 1. Wählen Sie im Unterabschnitt z.B. **Preparation** die Option **Custom SQL** (1) aus der Dropdown-Liste.
-2. Klicken Sie auf **[Edit SQL]**. Das Fenster "Edit SQL" wird geöffnet.
+2. Klicken Sie auf **[Edit SQL]**. Der Dialog "Edit SQL" wird geöffnet.
 ![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 3. Navigieren Sie zum Dropdown-Menü und wählen Sie einen vorhandenen Befehl (3). 
 4. Klicken Sie auf **[Generate Statement]**. Eine neue Anweisung wird generiert.
-5. Kopieren Sie die Erklärung zur weiteren Verwendung und klicken Sie zur Bestätigung auf **[OK]**.
 ![Formula-ExistsTable](/img/content/Formula-ExistsTable-02.png){:class="img-responsive"}
+5. Klicken Sie auf **[Copy]** um die Anweisung in den Zwischenspeicher zu kopieren.
+6. Klicken Sie zur Bestätigung auf **[OK]**.
 
 Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql).
 

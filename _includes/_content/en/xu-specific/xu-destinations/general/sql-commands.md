@@ -34,11 +34,9 @@ Defines the action on the target database after the data has been successfully i
 - *None*: no action (default).
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 
-
 #### About Merging
 Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
 See section [merging data](./merging-data).
-
 
 ### Custom SQL
 
@@ -46,12 +44,13 @@ Custom SQL option allows creating user-defined SQL or script expressions. Existi
 be used as templates:
 
 1. Within subsection e.g., **Preparation** select the **Custom SQL** (1) option from the drop-down list.
-2. Click **[Edit SQL]**. The window "Edit SQL" opens.
+2. Click **[Edit SQL]**. The dialogue "Edit SQL" opens.
 ![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 3. Navigate to the drop-down menu and select an existing command (3). 
 4. Click **[Generate Statement]**. A new statement is generated.
-5. Copy the statement for further use and click **[OK]** to confirm.
 ![Formula-ExistsTable](/img/content/Formula-ExistsTable-02.png){:class="img-responsive"}
+5. Click **[Copy]** to copy the statement to the clipboard.
+6. Click **[OK]** to confirm.
 
 Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-custom-sql) for details on predefined expressions.
 
