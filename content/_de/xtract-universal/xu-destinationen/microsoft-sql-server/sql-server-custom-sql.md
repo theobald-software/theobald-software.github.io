@@ -32,7 +32,7 @@ Das Befüllen der neuen Spalte wird dynamisch mit einer .NET basierten Funktion 
 
 1. Wählen Sie im Dialog "Destination Settings" im Abschnitt **Preparation** die Option *Custom SQL* und klicken Sie auf **Edit SQL**.
 ![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
-2. Wählen Sie im Dropdown-Menü die Option *Drop & Create* und klicken Sie auf **[Generate Statement]**. 
+2. Wählen Sie im Dropdown-Menü die Option *Drop & Create* und klicken Sie auf **[Generate Statement]** (5). 
 3. Fügen Sie am Ende des generierten Statements die folgende Zeile hinzu: <br>
 ```sql
 [Extraction_Date] DATETIME
