@@ -28,9 +28,9 @@ The window “Hierarchy Settings” contains two subsections:
 
 **Remove Leading Zeros**<br>
 Removes all leading zeros (via ALPHA conversion) in the column NodeName.
-NodeName can then be used in a join condition with the corresponding Dimension-Key of a BWCube extraction.<br>
-Works also for compound InfoObjects.<br> 
-Example: 0CO_AREA (1000) and 0COSTCENTER (0000003100) will become 1000/3100.
+NodeName can then be used in a join condition with the corresponding Dimension-Key of a BW Cube extraction.<br>
+The conversion works also for compound InfoObjects.<br> 
+Example: 0CO_AREA (1000) and 0COSTCENTER (0000003100) becomes 1000/3100.
 
 **Fetch description texts**<br>
 Sets the field *NodeText* to the node text based on the system language settings. 
@@ -38,7 +38,7 @@ Sets the field *NodeText* to the node text based on the system language settings
 #### Natural Representation Settings
 
 {: .box-note}
-**Note:** the subsection **Natural Representation Settings** is only active, when **Representation** is set to value *Natural*.
+**Note:** the subsection **Natural Representation Settings** is only active, when **Representation** field is set to value *Natural*.
 
 **Level Count** <br>
 Defines the maximum number of levels. 
