@@ -1,7 +1,7 @@
 ---
-ref: xfa-bapi-scalar
+ref: xfa-bapi-param
 layout: page
-title: Skalare Parameter
+title: BAPI Parameter
 description: Skalare Parameter
 product: xtract-for-alteryx
 parent: bapis-und-funktionsbausteine
@@ -11,4 +11,4 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=skalare-parameter
 ---
 
-{% include _content/de/bapi/skalare-parameter.md %}
+Dieser Abschnitt ist in Bearbeitung, Informationen folgen in Kürze.

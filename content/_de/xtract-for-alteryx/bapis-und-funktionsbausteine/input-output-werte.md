@@ -1,7 +1,7 @@
 ---
-ref: xfa-bapi-structures
+ref: xfa-bapi-input-output
 layout: page
-title: Strukturen als Import-Parameter
+title: Input- und Output-Werte im BAPI
 description: Strukturen als Import-Parameter
 product: xtract-for-alteryx
 parent: bapis-und-funktionsbausteine
