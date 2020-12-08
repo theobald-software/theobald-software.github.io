@@ -28,7 +28,7 @@ Direct access to a HANA database without an SAP ABAP source system running on th
 
 
 ### Not supported SAP systems
-Not supported are the SAP systems that don’t run on ABAP systems or don't provide RFC connectivity. The following systems are not supported:
+Not supported are the SAP systems that don’t run on ABAP systems or don't provide RFC connectivity. For example, the following systems are not supported:
 - Business By Design 
 - Business One
 - Business Objects

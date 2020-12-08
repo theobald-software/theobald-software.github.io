@@ -32,7 +32,7 @@ Der direkte Zugriff auf eine HANA-Datenbank ohne ein SAP-ABAP-Quellsystem, das a
 
 
 ### Nicht unterstützte SAP Systeme
-Nicht unterstützt werden die SAP-Systeme, die nicht auf ABAP-Systemen laufen oder keine RFC-Konnektivität bieten. Die folgenden Systeme werden nicht unterstützt:
+Nicht unterstützt werden die SAP-Systeme, die nicht auf ABAP-Systemen laufen oder keine RFC-Konnektivität bieten. Die folgenden Systeme werden beispielsweise nicht unterstützt:
 - Business By Design 
 - Business One
 - Business Objects
