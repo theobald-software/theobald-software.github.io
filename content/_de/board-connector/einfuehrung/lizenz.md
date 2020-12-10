@@ -14,7 +14,7 @@ progressstate: 5
 ### Über das Lizenzierungskonzept von BOARD Connector
 
 BOARD Connector wird pro Windows Server lizenziert, d.h. die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Eine Demo-Lizenz wird automatisch mit der Installation von BOARD Connector installiert. <br>
-Eine reguläre Lizenz wird nach dem Kauf des Produkts zur Verfügung gestellt. Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
+Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theobald Software](https://my.theobald-software.com/) zur Verfügung gestellt. Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
 Wenn Sie den BOARD Connector Designer und den  BOARD Connector Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
  
 
@@ -40,4 +40,4 @@ Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [supp
 
 ****
 ##### Verwandte Links
-- [Kundenportal - My Theobald Software](https://my.theobald-software.com/)
+- [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/)

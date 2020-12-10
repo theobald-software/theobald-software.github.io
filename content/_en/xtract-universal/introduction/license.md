@@ -39,10 +39,10 @@ Prior to Xtract Universal version 2.99.0 license files were delivered as .dll fi
 
 
 ### Maintenance
-General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software. Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
+General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
 In case of technical difficulties, contact the support team by email: [support@theobald-software.com](mailto:support@theobald-software.com).
 
 
 ****
 #### Related Links
-- [Customer Portal - My Theobald Software](https://my.theobald-software.com/)
+- [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/)
