@@ -28,7 +28,7 @@ When starting the installation program, optional components (1) can be selected 
 |Main Program Files | Default setting of the installation routine |
 |Start Menu Shortcut | Component that adds shortcuts to the start menu |
 |Convert Config files | Converts extractions, sources, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.
-|Install Service | Installs the server component as a windows service and automatically boots it. See also section [Architecture](./architecture).|
+|Install Service | Installs the server component as a windows service and automatically boots it. <!---See also section [Architecture](./architecture).--->|
 
 The license installation procedure is described in the section [Installing the license](license#installing-the-board-connector-license---boardconnectorlicensejson).
 
@@ -52,13 +52,13 @@ The list below shows several most important files that are placed into the defau
 {: .box-note }
 **Note:** The BOARD Connector Server can be started as a console program for test purposes.
 
-For more details on starting BOARD Connector Server as a console program see section [Troubleshooting](./troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Xtract Universal example).
+For more details on starting BOARD Connector Server as a console program see <!---section [Troubleshooting](./troubleshooting) and ---> the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Xtract Universal example).
 
 
 ### Backup
 
 Before installing a new product version or updating the current version, make sure to create a backup. 
-Backup allows you to easily switch back to the previous version of BOARD Connector, if needed. See also section [Update Installation](./update#how-do-i-create-a-backup).
+Backup allows you to easily switch back to the previous version of BOARD Connector, if needed. <!----See also section [Update Installation](./update#how-do-i-create-a-backup)--->.
 
 
 {: .box-warning}
@@ -70,7 +70,7 @@ All settings for extractions, sources, etc. are stored in the subdirectory *conf
 
 ### New Installation and Update
 
-A newer version can be installed over the older version. All settings and created objects are preserved. See also section [Installing an Update](./update#installing-an-update-or-a-newer-version-on-a-test-environment).
+A newer version can be installed over the older version. All settings and created objects are preserved. <!----See also section [Installing an Update](./update#installing-an-update-or-a-newer-version-on-a-test-environment)--->.
 
 
 ### Version History

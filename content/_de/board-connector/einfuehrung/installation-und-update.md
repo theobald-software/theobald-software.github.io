@@ -28,7 +28,7 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 |Main Program Files | Standardeinstellung der Installationsroutine |
 |Start Menu Shortcut | Komponente, die dem Startmenü Verknüpfungen hinzufügt |
 |Convert Config files | Konvertiert Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x.
-Install Service | Installiert die Serverkomponente als Windows-Service und bootet den Service automatisch. Mehr Details im Abschnitt [Architektur](./architektur).
+Install Service | Installiert die Serverkomponente als Windows-Service und bootet den Service automatisch. <!----Mehr Details im Abschnitt [Architektur](./architektur) ---->.
 
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz) beschrieben.
 
@@ -39,7 +39,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 |:----|:---|
 | ABAP Ordner | Ordner mit eigenentwickelten Z-Funktionsbausteinen (.txt) und den dazugehörigen Transportaufträgen (.zip).|
 | logs Ordner| Ordner mit Server- und Extraktionsprotokollen etc. Siehe auch Abschnitt [Logging](../logging). |
-| config Ordner | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. Siehe auch Abschnitt [Backup](#backup). |
+| config Ordner | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. <!-----Siehe auch Abschnitt [Backup](#backup). ----> |
 | result-cache Ordner | Ordner mit Extraktions-Cache-Dateien.  |
 | BCDesigner.exe | Anwendung zum Starten von BOARD Connector Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
 | BCService.exe | Anwendung, die den BOARD Connector Server als einen Windows Service startet.  Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
@@ -52,13 +52,13 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 {: .box-note }
 **Hinweis:** Der BOARD Connector Server kann zu Testzwecken als Konsolenprogramm gestartet werden. 
 
-Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Abschnitt [Fehlerbehandlung](./fehlerbehandlung) und im Knowledgebase-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Am Beispiel von Xtract Universal).
+Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im <!---- Abschnitt [Fehlerbehandlung](./fehlerbehandlung) und im ----> Knowledgebase-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Am Beispiel von Xtract Universal).
 
 
 ### Backup
 
 Bevor Sie eine neue Produktversion installieren oder die aktuelle Version aktualisieren, stellen Sie sicher, dass Sie ein Backup erstellen. 
-Mit einem Backup können Sie bei Bedarf einfach auf die vorherige Version von BOARD Connector zurückwechseln. Mehr Details dazu finden Sie im Abschnitt [Installation eines Updates](update#wie-erstelle-ich-ein-backup).
+Mit einem Backup können Sie bei Bedarf einfach auf die vorherige Version von BOARD Connector zurückwechseln. <!----Mehr Details dazu finden Sie im Abschnitt [Installation eines Updates](update#wie-erstelle-ich-ein-backup)---->.
 
 
 {: .box-warning}
@@ -70,7 +70,7 @@ Alle Einstellungen zu Extraktionen, Sources etc. werden im Unterverzeichnis *con
 
 ### Neuinstallation und Update
 
-Eine neuere Version kann über die ältere Version installiert werden. Alle Einstellungen und angelegten Objekte bleiben erhalten. Mehr Informationen finden Sie im Abschnitt [Installation eines Updates](./update).
+Eine neuere Version kann über die ältere Version installiert werden. Alle Einstellungen und angelegten Objekte bleiben erhalten. <!---- Mehr Informationen finden Sie im Abschnitt [Installation eines Updates](./update)--->.
 
 
 ### Versionshistorie
