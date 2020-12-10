@@ -24,7 +24,7 @@ Der Server übernimmt zwei Hauptaufgaben:
 Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage wird aus der Zielumgebung gestartet.
 
 {: .box-tip }
-**Tipp:** Der Server-Prozess kann im [Extraktions-Log](./logging/log-zugriff-ueber-designer#extraktions-logs) nachvollzogen werden.
+**Tipp:** Der Server-Prozess kann im [Extraktions-Log](./logging/logzugriff-ueber-designer#extraktions-logs) nachvollzogen werden.
 
 1. BCRun.exe prüft die Authentisierung und Autorisierung der Anfrage. 
 2. Die Zielumgebung wird für das Schreiben der extrahierten Daten vorbereitet (z.B. Datenbakverbindung herstellen, Datei anlegen).
