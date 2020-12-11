@@ -44,9 +44,9 @@ Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträge
 - Visual Studio 2015 (bis 14.10.2025)
 - Visual Studio 2013 (bis 09.04.2024)
 - Visual Studio 2012 Update 5 (bis 10.01.2023)
-- Visual Studio 2010 (bis 14.07.2020)
 
-**Achtung**: Visual Studio Express-Versionen unterstützen den LINQ to ERP Designer nicht.
+{: .box-note }
+**Hinweis**: Visual Studio Express-Versionen unterstützen den LINQ to ERP Designer nicht.
 
 ## Andere Anwendungen und Frameworks
 

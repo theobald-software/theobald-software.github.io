@@ -39,5 +39,5 @@ Der Zeitstempel für jeden Extraktionsprozess wird im linken Teil des Dialogs "V
 ### Kopieren von Logs
 Klicken Sie auf **[Copy To Clipboard]**, um das aktuelle Log in die Zwischenablage zu kopieren. Das kopierte Log kann an beliebiger Stelle eingefügt werden (z.B. in eine E-Mail).
 
-Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server-einstellungen) eingestellt werden.
+Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) eingestellt werden.
 

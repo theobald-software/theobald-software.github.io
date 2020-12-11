@@ -13,12 +13,12 @@ old_url: /ERPConnect-EN/default.aspx?pageid=prerequisites
 
 ### .NET Framework
 
-ERPConnect (without LINQ to ERP) consists of three .NET assemblies, that [target different frameworks](https://docs.microsoft.com/en-US/dotnet/standard/frameworks):
+ERPConnect (without LINQ to ERP) consists of three .NET assemblies that [target different frameworks](https://docs.microsoft.com/en-US/dotnet/standard/frameworks):
 -	ERPConnect35.dll (targets .NET Framework 3.5 SP1)
 -	ERPConnect45.dll (targets .NET Framework 4.5.2)
 -	ERPConnectStandard20.dll (targets .NET Standard 2.0)
 
-That results in the following compatibility matrix:
+That results in the following compatibility matrix: <!--- bei den Sätzen fehlen Verben. Die Personalpronomen müssen ersetzt werden--->
 
 | |	ERPConnectStandard20.dll	| ERPConnect45.dll	| ERPConnect35.dll|
 |:------|:------|:------ |:------ |
@@ -45,9 +45,9 @@ Installation of custom function modules / transport requests is not required.
 - Visual Studio 2015 (until 14.10.2025)
 - Visual Studio 2013 (until 09.04.2024)
 - Visual Studio 2012 Update 5 (until 10.01.2023)
-- Visual Studio 2010 (until 14.07.2020)
 
-* **Caution:** Visual Studio Express versions don't support the LINQ to ERP Designer.
+{: .box-note }
+**Note:** Visual Studio Express versions don't support the LINQ to ERP Designer.
 
 
 ### Other Applications and Frameworks
@@ -75,5 +75,5 @@ Installation of custom function modules / transport requests is not required.
 
 ### Network Settings
  	
-Ports need to be opened depending on the technique how the connection to an SAP System is made.
-Details can be found [here](https://kb.theobald-software.com/sap/how-to-check-the-accessibility-to-a-sap-system).
+Ports need to be opened depending on the SAP System connection technique.
+Details can be found in the knowledge base article [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/how-to-check-the-accessibility-to-a-sap-system).

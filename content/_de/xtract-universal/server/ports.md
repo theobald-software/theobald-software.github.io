@@ -36,6 +36,6 @@ Sollten manuelle Anpassungen der Portnummer notwendig sein, erfragen Sie die kor
 
 *****
 #### Weiterführende Links
- - [Installation](./einfuehrung/installation-und-update)
+ - [Installation](../einfuehrung/installation-und-update)
 
 
