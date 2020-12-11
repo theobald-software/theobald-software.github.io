@@ -21,7 +21,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
   
 ### Destination Settings - Destinationseinstellungen
 
-![XU_qlik_destination_settings](/img/content/XU_qlik_destination_settings.png){:class="img-responsive"}
+![XU_qlik_destination_settings](/img/content/XU_qlik_destination_settings){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 

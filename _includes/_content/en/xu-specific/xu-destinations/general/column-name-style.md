@@ -1,4 +1,5 @@
 <!--Don't forget to place the h3 or h4 header, depending on the text body. Sometimes it makes sence to place h4-->
+### Column Name Style
 
 Defines the style of the column name. Following options are available: 
 
