@@ -23,6 +23,8 @@ The following settings can be defined for the destination:
 
 ![XU_qlik_destination_settings](/img/content/XU_qlik_destination_settings.png){:class="img-responsive"}
 
+{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
+
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
 *****
