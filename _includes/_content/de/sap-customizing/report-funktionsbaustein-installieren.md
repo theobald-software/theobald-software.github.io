@@ -18,7 +18,7 @@ Bitte den Transportauftrag an das SAP-Basis-Team weiterleiten.
 ![Report_function_export](/img/content/report_function_export.png){:class="img-responsive"}
 ![Report_function_tables](/img/content/report_function_tables.png){:class="img-responsive"}
 ![Report_function_exceptions](/img/content/report_function_exceptions.png){:class="img-responsive"}
-5. Kopieren Sie den Quellcode per **[Strg+C]** und **[Strg+V]** aus der Datei *Z_XTRACT_IS_REMOTE_REPORT.txt* in den Code-Editor - Tab *Source Code*.
+5. Kopieren Sie den Quellcode per **[Ctrl+C]** und **[Ctrl+V]** aus der Datei `C:\Program Files\[Xtract Product]\ABAP\Z_XTRACT_IS_REMOTE_REPORT.txt` in den Code-Editor - Tab *Source Code*.
 ![Report_function_source](/img/content/report_function_source.png){:class="img-responsive"}
 6. Sicherung sowie Aktivierung des Bausteins.
 
@@ -39,6 +39,7 @@ Anstatt den SAP Standard Datentyp TAB512 für den LIST_OUTPUT Tabellen Parameter
 ***********
 #### Weiterführende Links
 - [How to import an SAP Transport Request with the Transport Management System STMS](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
+- [Create Function Group](https://help.sap.com/saphelp_ewm94/helpdata/en/d1/801ef5454211d189710000e8322d00/content.htm?no_cache=true)
 
 
 
