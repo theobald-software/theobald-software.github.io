@@ -23,9 +23,10 @@ Nachdem Sie Ihre Auswahl getroffen haben, werden alle Metadaten aus dem BW gehol
 ### Extraktionstypen
 
 Die Art der Extraktion wird durch drei Fälle definiert: <br>
-**P - Trigger Process Chain**<br>
+**P - Trigger Process Chain** (Beispiel im Screenshot) <br>
 Die angegebene Prozesskette wird gestartet, die Extraktion durchgeführt und nach Beendigung der Extraktion werden die Daten paketweise extrahiert.<br>
 **W – Wait for Notify**<br>
 Es wird keine Prozesskette gestartet. Das Werkzeug wartet auf die Benachrichtigung über den Abschluss der Extraktion. Eine andere Instanz ist für den Start der Extraktion zuständig (z.B. der SAP-eigene Scheduler). <br>
 **E – Extract Only**<br>
-Weder wird eine Prozesskette gestartet, noch wird eine Benachrichtigung über den Abschluss einer Extraktion abgewartet. Die im Feld *Request-ID* eingegebene Request-ID wird verwendet, um Daten abzurufen, die sich hinter dem jeweiligen Request verbergen. Es können nur Daten der letzten Anforderung für die jeweilige Arbeitsschutz-Destination extrahiert werden. Daten früherer Anforderungen können nicht extrahiert werden.
+Weder wird eine Prozesskette gestartet, noch wird eine Benachrichtigung über den Abschluss einer Extraktion abgewartet. Die im Feld *Request-ID* eingegebene Request-ID wird verwendet, um Daten abzurufen, die sich hinter dem jeweiligen Request verbergen.
+Es können nur Daten der letzten Anforderung für die jeweilige OHS-Destination extrahiert werden. Daten früherer Anforderungen können nicht extrahiert werden.

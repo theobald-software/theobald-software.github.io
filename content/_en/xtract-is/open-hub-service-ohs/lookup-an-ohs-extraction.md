@@ -23,7 +23,7 @@ After making your selections, all meta data are retrieved from the BW and displa
 ### Extraction Types
 
 The type of extraction is defined by three cases: <br>
-- **P - Trigger Process Chain**<br>
+- **P - Trigger Process Chain** (Example in the screenshot) <br>
 The specified process chain is started, the extraction is executed and finished. After the finish of the extraction, data is extracted in packages.<br>
 - **W – Wait for Notify**<br>
 No process chain is started. The tool waits for the extraction completion notification. Another instance is responsible for starting of the extraction (e.g., SAP's own scheduler).<br>
