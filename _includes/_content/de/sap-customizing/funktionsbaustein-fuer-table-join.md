@@ -12,13 +12,13 @@ Voraussetzung dafür ist die Installation eines Z-Funktionssbausteins auf der SA
 In diesem Schritt müssen fünf Strukturen über die Transaktion *SE11* angelegt werden, siehe nachfolgende Screenshots. <br>
 Die benötigten Textdateien sind nachfolgend als Pfade gekennzeichnet.
 
-`"C:\Program Files\XtractUniversal\ABAP\Z_XTRACT_IS_TABLE_JOIN - ZXTRACTTABLEFIELDS.txt"`
+`"C:\Program Files\[Xtract Product]\ABAP\Z_XTRACT_IS_TABLE_JOIN - ZXTRACTTABLEFIELDS.txt"`
 ![Z_XTRACT_TABLE_JOIN_01](/img/content/table_join_structure1.png){:class="img-responsive"}
-`"C:\Program Files\XtractUniversal\ABAP\Z_XTRACT_IS_TABLE_JOIN - ZXTRACTTABLEJOINDEF.txt"`
+`"C:\Program Files\[Xtract Product]\ABAP\Z_XTRACT_IS_TABLE_JOIN - ZXTRACTTABLEJOINDEF.txt"`
 ![Z_XTRACT_TABLE_JOIN_02](/img/content/table_join_structure2.png){:class="img-responsive"}
-`"C:\Program Files\XtractUniversal\ABAP\Z_XTRACT_IS_TABLE_JOIN - ZXTRACTTABLECODELINE.txt"`
+`"C:\Program Files\[Xtract Product]\ABAP\Z_XTRACT_IS_TABLE_JOIN - ZXTRACTTABLECODELINE.txt"`
 ![Z_XTRACT_TABLE_JOIN_03](/img/content/table_join_structure3.png){:class="img-responsive"}
-`"C:\Program Files\XtractUniversal\ABAP\Z_XTRACT_IS_TABLE_JOIN - ZXTRACTRANGE.txt"`
+`"C:\Program Files\[Xtract Product]\ABAP\Z_XTRACT_IS_TABLE_JOIN - ZXTRACTRANGE.txt"`
 ![Z_XTRACT_TABLE_JOIN_04](/img/content/table_join_structure4.png){:class="img-responsive"}
 ![Z_XTRACT_TABLE_JOIN_05](/img/content/table_join_structure5.png){:class="img-responsive"}
 
@@ -35,6 +35,6 @@ Die benötigten Textdateien sind nachfolgend als Pfade gekennzeichnet.
 ![Table-Join_function_tables](/img/content/table-join_tables.png){:class="img-responsive"}
 5. Kopieren Sie den Quellcode per **[Ctrl+C]** und **[Ctrl+V]** aus der Datei `"C:\Program Files\[Xtract Product]\ABAP\Z_XTRACT_IS_TABLE_JOIN.txt"` in den Code-Editor - Tab *Source Code*.
 ![Table-Join_function_source](/img/content/table-join_source.png){:class="img-responsive"}
-6. Kopieren Sie den Quellcode per **[Ctrl+C]** und **[Ctrl+V]** aus der Datei `"C:\Program Files\[Xtract Product]\ABAP\Z_XTRACT_IS_TABLE_JOIN - Global Data.txt"` nach *Tab Goto -> Global Data*.
+6. Kopieren Sie den Quellcode per **[Ctrl+C]** und **[Ctrl+V]** aus der Datei `"C:\Program Files\[Xtract Product]\ABAP\Z_XTRACT_IS_TABLE_JOIN - Global Data.txt"` in den Code-Editor *Goto -> Global Data*.
 7. Sicherung sowie Aktivierung des Bausteins.
 
