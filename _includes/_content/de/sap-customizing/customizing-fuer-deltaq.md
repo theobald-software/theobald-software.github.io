@@ -1,4 +1,4 @@
-Die Verwendung der DeltaQ-Komponente macht die erstellung einer RFC-Destination im SAP-System notwendig.
+Die Verwendung der DeltaQ-Komponente macht die erstellung einer RFC-Destination im SAP-System notwendig. <br>
 Diese Customizing-Einstellungen im SAP vorzunehmen werden nachfolgend als Schritt für Schritt Anweisung beschrieben.
 
 {: .box-note }
@@ -31,22 +31,22 @@ I_LANGU | EN
 I_SLOGSYS | T90CLNT090
 I_LOGSYS | XTRACT01 | Logischer Name des Quellsystems. Falls Sie diesen nicht wissen, schauen Sie in die Tabelle **T000** für den jeweiligen Mandanten (Feld LOGSYS).
 I_STEXT | Xtract Destination
-I_BASIC_IDOC | ZXTIDOC | Eindeutiger Name für alle RFC-Destinationen.
-I_TSPREFIX | XT | Eindeutiger Name für alle RFC-Destinationen.
+I_BASIC_IDOC | ZXTIDOC | Eindeutiger Name der RFC-Destinationen.
+I_TSPREFIX | XT | Eindeutiger Name der RFC-Destinationen.
 I_SAPRL | 700 | Automatisch vom SAP-System gesetzt.
 I_RESTORE | X
 
 ![DeltaQ-Customizing-03](/img/content/DeltaQ-Customizing-03.png){:class="img-responsive"}
 
 ### 4. Löschen der RFC-Destination vom Typ R/3 
-Aufruf der Transaktion *SM59* und löschen der RFC-Destination vom Typ R/3 über *Detailanzeige -> Menü Löschen*. 
-Legen Sie dann eine neue Destination vom **Connection Typ T=TCP/IP** mit identischem Namen an und setzten nachfolgenden Parameter müssen gesetzt werden.
+Aufruf der Transaktion *SM59* und löschen der RFC-Destination vom Typ R/3 über *Detailanzeige -> Menü Löschen*. <br>
+Legen Sie dann eine neue Destination vom **Connection Typ T=TCP/IP** mit identischem Namen an und setzten die nachfolgenden Parameter.
 
 Feld | Beispielwert | Bemerkung
 ------------ | ------------- | ------------
 RFC Destination | XTRACT01 |
 Connection Type | TCP/IP Connection |
-Description | Xtract Destination | 
+Description 1| Xtract Destination | 
 Activation Type | Registered Server Program |
 Program ID | XTRACT01 |
 Gateway Host | sap-erp-as05.example.com | Name oder IP-Adresse des SAP-Systems.
