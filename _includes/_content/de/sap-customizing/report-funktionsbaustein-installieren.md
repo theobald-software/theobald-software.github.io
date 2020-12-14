@@ -22,11 +22,8 @@ Bitte den Transportauftrag an das SAP-Basis-Team weiterleiten.
 ![Report_function_source](/img/content/report_function_source.png){:class="img-responsive"}
 6. Sicherung sowie Aktivierung des Bausteins.
 
-{: .box-tipp }
+{: .box-tip }
 **Tipp:** Die Funktionsweise des Baustein Z_XTRACT_IS_REMOTE_REPORT kann im Quellcode nachvollzogen werden. Sämtliche Schritte für die Ausführung, Job-Überwachung und den Spool-Abruf sind im Quellcode kommentiert.
-
-![Report-Custom-Function-Source-Code](/img/content/Report-Custom-Function-Source-Code.png){:class="img-responsive"}
-
 
 ### SAP Standard Datentyp TAB512
 
