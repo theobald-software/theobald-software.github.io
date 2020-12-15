@@ -17,7 +17,7 @@ Legen Sie mit Hilfe der Transaktion *SALE* ein logisches System analog zum Namen
 ![DeltaQ-Customizing-01](/img/content/DeltaQ-Customizing-01.png){:class="img-responsive"}
 
 ### 3. Funktionsbaustein RSAP_BIW_CONNECT_40 ausführen
-Gehen Sie in die Transaktion *SE37* und führen Sie den Baustein **RSAP_BIW_CONNECT_40** mit den nachfolgenden Import-Parameter. <br>
+Gehen Sie in die Transaktion *SE37* und führen Sie den Baustein **RSAP_BIW_CONNECT_40** mit den nachfolgenden Import-Parameter aus. <br>
 Ausführung des Bausteins mittels *F8*.
 
 ![DeltaQ-Customizing-02](/img/content/DeltaQ-Customizing-02.png){:class="img-responsive"}
@@ -28,8 +28,8 @@ Ausführung des Bausteins mittels *F8*.
 Importparameter | Beispielwert | Bemerkung
 ------------ | ------------- | ------------
 I_LANGU | EN
-I_SLOGSYS | T90CLNT090
-I_LOGSYS | XTRACT01 | Logischer Name des Quellsystems. Falls Sie diesen nicht wissen, schauen Sie in die Tabelle **T000** für den jeweiligen Mandanten (Feld LOGSYS).
+I_SLOGSYS | T90CLNT090 | Logischer Name des Quellsystems. Falls Sie diesen nicht wissen, schauen Sie in die Tabelle **T000** für den jeweiligen Mandanten (Feld LOGSYS).
+I_LOGSYS | XTRACT01 | 
 I_STEXT | Xtract Destination
 I_BASIC_IDOC | ZXTIDOC | Eindeutiger Name der RFC-Destinationen.
 I_TSPREFIX | XT | Eindeutiger Name der RFC-Destinationen.
@@ -50,7 +50,7 @@ Description 1| Xtract Destination |
 Activation Type | Registered Server Program |
 Program ID | XTRACT01 |
 Gateway Host | sap-erp-as05.example.com | Name oder IP-Adresse des SAP-Systems.
-Gateway service | sapgw00 | In der Form *sapgwNN*, wobei NN die ID, eine zweistellige Zahl zwischen *00* und *99*, des SAP-Systems ist.
+Gateway service | sapgw00 | In der Form sapgwNN, wobei NN die SAP Instanznummer, eine zweistellige Zahl zwischen *00* und *99*, ist.
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
 

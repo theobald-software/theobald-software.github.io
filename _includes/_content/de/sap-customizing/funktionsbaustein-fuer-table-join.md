@@ -5,9 +5,7 @@ Die Table Join-Komponente dient dazu, mehrere Tabellen, Views auf SAP-Seite zusa
 
 Voraussetzung dafür ist die Installation eines Z-Funktionssbausteins auf der SAP-Seite.
 
-### Manuelle Installation
-
-#### DDIC-Strukturen anlegen
+### DDIC-Strukturen anlegen
 
 In diesem Schritt müssen fünf Strukturen über die Transaktion *SE11* angelegt werden, siehe nachfolgende Screenshots. <br>
 Die benötigten Textdateien sind nachfolgend als Pfade gekennzeichnet.
@@ -22,7 +20,7 @@ Die benötigten Textdateien sind nachfolgend als Pfade gekennzeichnet.
 ![Z_XTRACT_TABLE_JOIN_04](/img/content/table_join_structure4.png){:class="img-responsive"}
 ![Z_XTRACT_TABLE_JOIN_05](/img/content/table_join_structure5.png){:class="img-responsive"}
 
-#### Funktionsbaustein anlegen
+### Funktionsbaustein anlegen
 
 1. Auruf der Transaktion *SE80 - Object Navigator* zur Erstellung einer neuen Funktionsgruppe, z.B. ZXTRACT
 ![Create_new_function_group](/img/content/create_function_group.png){:class="img-responsive"}
