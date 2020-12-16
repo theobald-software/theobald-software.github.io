@@ -56,7 +56,7 @@ Button to check if the connection data is correct and a connection can be establ
 
 ### Tableau Server Settings
 **Site**<br>
-A drop-down list of the sites stored on the connected on-prem server.
+A drop-down list of the sites stored on the connected on-prem server. Selecting a site is mandatory for uploading files. 
 
 **Project**<br>
-The project for publishing data source. A new project is created, if it doesn't exist yet.
+The project for publishing data source.

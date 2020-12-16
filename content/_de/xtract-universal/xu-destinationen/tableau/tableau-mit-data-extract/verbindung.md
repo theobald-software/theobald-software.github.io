@@ -54,10 +54,10 @@ Schaltfläche zur Überprüfung, ob die Verbindungsdaten korrekt sind und eine V
 
 ### Tableau Server Settings
 **Site**<br>
-Eine Dropdown-Liste mit Sites, die auf dem verbundenen On-Prem-Server gespeichert sind.
+Eine Dropdown-Liste mit Sites, die auf dem verbundenen On-Prem-Server gespeichert sind. Die Auswahl eines Sites ist für das Hochladen von Dateien obligatorisch. 
 
 **Project**<br>
-Das Projekt zum Veröffentlichen der Datenquelle. Es wird ein neues Projekt angelegt, falls noch kein Projekt existiert.
+Das Projekt zum Veröffentlichen der Datenquelle. 
 
 
 Sie können die lokal erstellte Datei nach dem erfolgreichen Hochladen entfernen lassen.
