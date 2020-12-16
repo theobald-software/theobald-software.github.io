@@ -35,6 +35,9 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 {: .box-tip}
 **Tipp:** Um die Syntax der WHERE-Bedingung zu überprüfen, klicken Sie auf **[Load live preview]**. Auf diese Weise ist es nicht notwendig, eine Extraktion durchzuführen, um zu sehen, ob die Syntax korrekt ist.
 
+{: .box-tip}
+**Tipp:** Um die Leistung beim Extrahieren zu erhöhen, stellen Sie sicher, dass Sie die idizierten Felder als erste Auswahlfilteroperation in der WHERE-Bedingung platzieren.
+
 
 #### Syntaxregeln
 
