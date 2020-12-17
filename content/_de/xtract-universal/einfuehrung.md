@@ -16,7 +16,7 @@ progressstate: 5
 ### Grundfunktionalität - Architektur
 
 Extraktionen sind die Hauptentitäten in Xtract Universal. Eine [Extraktion](./erste-schritte/eine-neue-extraktion-anlegen) ist eine Kombination aus einer Quelle (SAP-System), 
-einer Destination (Xtract Unversal Seite) / Zielumgebung (z.B. SQL-Server) (Kundenseitig) und einen definierten Extraktionstyp (z.B. Xtract Table).
+einer Destination (Xtract Unversal Seite) / Zielumgebung (z.B. SQL-Server) (Kundenseitig) und einen definierten Extraktionstyp (z.B. [Table](./table)).
 
 
 Eine Quelle stellt eine [Verbindung zu einem SAP-System](./einfuehrung/sap-verbindungen-anlegen) dar. Eine [Destination](./xu-destinationen) repräsentiert eine Verbindung zu einer Zielumgebung.

@@ -17,7 +17,7 @@ progressstate: 5
 
 ### Installation Routine
 
-The installation program *BoardConnectorSetup.exe* is an industry standard installation routine.  Execute the *BoardConnectorSetup.exe* file and follow the instructions of the installation program.
+The installation program *BOARD ConnectorSetup.exe* is an industry standard installation routine.  Execute the *BOARD ConnectorSetup.exe* file and follow the instructions of the installation program.
 
 When starting the installation program, optional components (1) can be selected during the setup. When selecting a component details are displayed in the description field (2).
 
@@ -30,10 +30,10 @@ When starting the installation program, optional components (1) can be selected 
 |Convert Config files | Converts extractions, sources, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.
 |Install Service | Installs the server component as a windows service and automatically boots it. <!---See also section [Architecture](./architecture).--->|
 
-The license installation procedure is described in the section [Installing the license](license#installing-the-board-connector-license---boardconnectorlicensejson).
+The license installation procedure is described in the section [Installing the license](license#installing-the-board-connector-license---BOARD Connectorlicensejson).
 
 #### Installation Folder Files
-The list below shows several most important files that are placed into the default directory ``C:\Program Files\BoardConnector`` after installation:
+The list below shows several most important files that are placed into the default directory ``C:\Program Files\BOARD Connector`` after installation:
 
 |Filename | Description |
 |:----|:---|
@@ -45,8 +45,8 @@ The list below shows several most important files that are placed into the defau
 | BCService.exe | Application that launches BOARD Connector Server as Windows Service.  Usually boots automatically and runs in the background. |
 | ConfigConverter.exe| Application that converts extractions, sources, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing BOARD Connector with all its components from your machine. |
-| Eula_BOARDConnector.rtf | Document containing the license agreement for the use of the software BOARD Connector.|
-| BOARDConnectorLicense.json |  License file with information about the server, the component and runtime. |
+| Eula_BOARD Connector.rtf | Document containing the license agreement for the use of the software BOARD Connector.|
+| BOARD ConnectorLicense.json |  License file with information about the server, the component and runtime. |
 
 
 {: .box-note }
@@ -64,7 +64,7 @@ Backup allows you to easily switch back to the previous version of BOARD Connect
 {: .box-warning}
 **Warning! Data loss:**
 System updates or changes can restrict software functionalities and this may lead to data loss. 
-Create a backup of the directory: `C:\Program Files\BoardConnector\config` at regular intervals.
+Create a backup of the directory: `C:\Program Files\BOARD Connector\config` at regular intervals.
 
 All settings for extractions, sources, etc. are stored in the subdirectory *config*. 
 

@@ -1,8 +1,8 @@
 ---
 ref: board-connector-01
 layout: page
-title: BoardConnector
-description: BoardConnector main page
+title: BOARD Connector
+description: BOARD Connector main page
 product: board-connector
 parent: home
 childidentifier: board-connector
@@ -11,29 +11,51 @@ weight: 1
 lang: de_DE
 old_url: /BOARD-Connector-DE/
 ---
-Willkommen in der Online Help vom BOARDConnector.
+Willkommen in der Online Help vom BOARD Connector.
 
-Der BOARDConnector ist ein SAP Connector, der diverse SAP Objekte im Pull-Verfahren im BOARD Server verfügbar macht. 
+Der BOARD Connector ist ein SAP Connector, der diverse SAP Objekte im Pull-Verfahren im BOARD Server verfügbar macht. 
 
-### Architektur
+### Verfügbare Komponenten
 
-![BOARDConnector-architecture](/img/content/board/Board.png)
 
-Die verwendbaren Komponenten in einem SAP ERP- und BW-System werden in der nachfolgenden Übersicht dargestellt.
+In der folgenen Übersicht finden Sie, welche Komponente für die Datenextraktion aus einem SAP-System verwendet werden können. 
+![BOARD Connector-architecture](/img/content/board/Board.png)
 
-| Komponente   | ERP | BW |
+### Extraktionstypen
+BOARD Connector bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
+
+Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
+
+- [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
+- [**BW Cube**](./bw-infocubes-und-bex-queries) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
+- [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
+- [**DeltaQ**](./datasource-deltaq) extrahiert DataSources (OLTP) und Extraktoren aus dem ERP und ECC System.
+- [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
+- [**Open Hub Services (OHS)**](./bw-open-hub-services) extrahiert InfoSpokes und OHS Destinationen. <!--Frage: kann man destinations extrahieren?-->
+- [**Query**](./sap-queries) extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
+- [**Report**](./report-abap-reports-ansteuern) extrahiert ABAP Reports.
+- [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+- [**Table Join**](./table-join) -  ermöglicht das Joinen von mehreren SAP-Tabellen. Der Join-Prozess findet vollständig innerhalb des SAP-Systems statt, ohne dass einzelne Tabellen heruntergeladen werden müssen.<br>
+**Hinweis: veraltete Komponente! Verwenden Sie die Table-Komponente**
+
+
+| Extraktionstyp   | ERP | BW |
 |-------------|:---:|:--:|
-| Table       | X   | X  |
-| Table Join  | X   | X  |
 | BAPI        | X   | X  |
-| Query       | X   |    |
-| ABAP Report | X   |    |
-| DeltaQ      | X   | X  |
 | BW Cube     |     | X  |
-| Hierarchy   |     | X  |
+| BW Hierarchy   |     | X  |
+| DeltaQ      | X   | X  |
+| ODP         | X   | X |
 | OHS         |     | X  |
-| ODP         | X | X |
+| Query       | X   |    |
+| Report | X   |    |
+| Table       | X   | X  |
 
-Diese Hilfe beinhaltet folgende Abschnitt:
+
+{: .box-note }
+**Hinweis:** Weitere Szenarien und Kombinationen sind möglich.
+
+
+Weitere Informationen zu den Funktionen von BOARD Connector finden Sie in den folgenden Abschnitten:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

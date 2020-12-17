@@ -23,7 +23,7 @@ A backup allows you to easily switch back to the previous product version, if ne
 ### Configuration Files
 All configuration files of extractions, sources and the server are stored in the sub-directory `config` of the BOARD Connector program directory. <br>
 
-`C:\Program Files\BOARDConnector\config` by default.
+`C:\Program Files\BOARD Connector\config` by default.
 
 |Filename      | Description                                                                                                                                                  |
 |:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -33,9 +33,9 @@ All configuration files of extractions, sources and the server are stored in the
 |`version.txt` |Text file containing the product version of the current configuration. See also [New Installation and Update](../introduction/installation-and-update#new-installation-and-update).|
 
 ### How do I Create a Backup?
-Copy the complete `config` directory (`C:\Program Files\BOARDConnector\config` by default) of the machine running the BOARD Connector Service and store the files in safe and secure locations.
-Optionally, copy the complete `logs` directory (`C:\Program Files\BOARDConnector\logs` by default) to create a backup of the log files. 
-To backup your licence, create a copy of your `BOARDConnectorLicense.json` file.
+Copy the complete `config` directory (`C:\Program Files\BOARD Connector\config` by default) of the machine running the BOARD Connector Service and store the files in safe and secure locations.
+Optionally, copy the complete `logs` directory (`C:\Program Files\BOARD Connector\logs` by default) to create a backup of the log files. 
+To backup your licence, create a copy of your `BOARD ConnectorLicense.json` file.
 
 
 
@@ -50,9 +50,9 @@ Both `config` and `logs` directories may contain sensitive information.
 **Warning! Data Loss!** <br>
 Restoring the backup of the `config` directory replaces the exisiting configuration. Make sure to remove the existing files before restoring the backups.
 
-1. To restore the configuration files, remove the `config` directory from the program directory (`C:\Program Files\BOARDConnector` by deafult) of the machine running the BOARD Connector Service.
+1. To restore the configuration files, remove the `config` directory from the program directory (`C:\Program Files\BOARD Connector` by deafult) of the machine running the BOARD Connector Service.
 2. Copy the backup of the `config` directory into the program directory.
-3. To restore the licence replace the `BOARDConnectorLicense.json` file within the program directory with the backup.
+3. To restore the licence replace the `BOARD ConnectorLicense.json` file within the program directory with the backup.
 
 ### Migration to a Different Machine
 Configuration files can be migrated partially or entirely (full migration).
@@ -67,7 +67,7 @@ When replacing a machine completely, conduct a full migration.
 **Tip**: To check the version of your product, open the Designer, navigate to **Help > Info** or press **[F12]**.
 
 {: .box-tip }
-**Tip:** Install the matching version on the different machine by using the `BOARDConnectorSetup.exe` from the program directory (`C:\Program Files\BOARDConnector` by default) of the current machine.
+**Tip:** Install the matching version on the different machine by using the `BOARD ConnectorSetup.exe` from the program directory (`C:\Program Files\BOARD Connector` by default) of the current machine.
 
 1. Create a backup of the `config` directory of the current machine.
 2. Decide whether you need a partial or a full migration. <br> 

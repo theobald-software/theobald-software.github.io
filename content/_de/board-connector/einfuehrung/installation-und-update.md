@@ -17,7 +17,7 @@ progressstate: 5
 
 ### Setup
 
-Die `BoardConnectorSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei *BoardConnectorSetup.exe* aus und folgen Sie den Anweisungen des Setups.
+Die `BOARD ConnectorSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei *BOARD ConnectorSetup.exe* aus und folgen Sie den Anweisungen des Setups.
 
 Beim Starten des Setups können die optionalen Komponenten (1) für die Installation ausgewählt werden. Bei der Auswahl der Komponenten werden die Optionsdetails im "Description" Feld angezeigt (2). 
 
@@ -33,7 +33,7 @@ Install Service | Installiert die Serverkomponente als Windows-Service und boote
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz) beschrieben.
 
 #### Dateien des Installationsordners
-Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Program Files\BoardConnector`` abgelegt werden:
+Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Program Files\BOARD Connector`` abgelegt werden:
 
 |Dateiname | Beschreibung |
 |:----|:---|
@@ -45,8 +45,8 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | BCService.exe | Anwendung, die den BOARD Connector Server als einen Windows Service startet.  Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von BOARD Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
-| Eula_BOARDConnector.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software BOARD Connector.|
-| BOARDConnectorLicense.json |  Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
+| Eula_BOARD Connector.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software BOARD Connector.|
+| BOARD ConnectorLicense.json |  Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
 
 {: .box-note }
@@ -64,7 +64,7 @@ Mit einem Backup können Sie bei Bedarf einfach auf die vorherige Version von BO
 {: .box-warning}
 **Warnung! Datenverlust:** <br>
 Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.
-Führen Sie ein Backup des Ordners: `C:\Program Files\BoardConnector\config` in regelmäßigen Abständen durch. 
+Führen Sie ein Backup des Ordners: `C:\Program Files\BOARD Connector\config` in regelmäßigen Abständen durch. 
 
 Alle Einstellungen zu Extraktionen, Sources etc. werden im Unterverzeichnis *config* gespeichert. 
 

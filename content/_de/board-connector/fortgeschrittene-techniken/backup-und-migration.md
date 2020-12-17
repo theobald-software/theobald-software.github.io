@@ -23,7 +23,7 @@ Mehr Details dazu finden Sie auch im Abschnitt [Installation und Update](../einf
 
 ### Konfigurationsdateien 
 Alle Einstellungen für Extraktionen, Quellen (Sources) usw. werden im Unterverzeichnis `config` gespeichert.  
-Standardmäßig: `C:\Program Files\BOARDConnector\config`.
+Standardmäßig: `C:\Program Files\BOARD Connector\config`.
 
 |Dateiname | Beschreibung |
 |:----|:---|
@@ -33,8 +33,8 @@ Standardmäßig: `C:\Program Files\BOARDConnector\config`.
 | `version.txt` | Textdatei mit der Versionsnummer, die mit der aktuellen Konfiguration übereinstimmt. Mehr Details dazu finden Sie auch im Abschnitt [Neuinstallation und Update](../einfuehrung/installation-und-update#neuinstallation-und-update).|
 
 ### Wie erstelle ich ein Backup?
-Kopieren Sie das komplette `config`-Verzeichnis, der Maschine auf der der BOARD Connector Service läuft: `C:\Program Files\BOARDConnector\config` (standardmäßig). 
-Optional, können Sie auch das komplette`logs`-Verzeichnis (`C:\Program Files\BOARDConnector\logs` standardmäßig) kopieren, um ein Backup der Log-Dateien zu erstellen.
+Kopieren Sie das komplette `config`-Verzeichnis, der Maschine auf der der BOARD Connector Service läuft: `C:\Program Files\BOARD Connector\config` (standardmäßig). 
+Optional, können Sie auch das komplette`logs`-Verzeichnis (`C:\Program Files\BOARD Connector\logs` standardmäßig) kopieren, um ein Backup der Log-Dateien zu erstellen.
 
 {: .box-warning }
 **Warnung! Datensicherheit.** <br>
@@ -46,9 +46,9 @@ Sowohl `config`- als auch `logs`-Verzeichnisse können sensible Informationen en
 {: .box-warning} **Warnung!Datenverlust!** <br>
 Das Wiederherstellen des Backups des Konfigurationsverzeichnisses (`config`) ersetzt die bestehende Konfiguration. Stellen Sie sicher, dass Sie die vorhandenen Dateien entfernen, bevor Sie die Backups wiederherstellen.
 
-1. Um die Konfigurationsdateien wiederherzustellen, entfernen Sie das Konfigurationsverzeichnis (`config`) aus dem Programmverzeichnis (`C:\Program Files\BOARDConnector` standardmäßig) der Maschine, auf der der BOARD Connector Service läuft.
+1. Um die Konfigurationsdateien wiederherzustellen, entfernen Sie das Konfigurationsverzeichnis (`config`) aus dem Programmverzeichnis (`C:\Program Files\BOARD Connector` standardmäßig) der Maschine, auf der der BOARD Connector Service läuft.
 2. Kopieren Sie das Backup des Konfigurationsverzeichnisses in das Programmverzeichnis.
-3. Um die Lizenz wiederherzustellen, ersetzen Sie die Datei BOARDConnectorLicense.json innerhalb des Programmverzeichnisses durch das Backup.
+3. Um die Lizenz wiederherzustellen, ersetzen Sie die Datei BOARD ConnectorLicense.json innerhalb des Programmverzeichnisses durch das Backup.
 
 
 ### Migration auf eine andere Maschine
@@ -64,7 +64,7 @@ Wenn Sie eine Maschine vollständig ersetzen, führen Sie eine vollständige Mig
 **Tipp**: Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer und navigieren Sie zu **Help > Info** oder drücken Sie **[F12]**.
 
 {: .box-tip }
-**Tipp:** Wenn Ihre aktuelle Version nicht die neueste Version von BOARD Connector ist, installieren Sie die passende Version `BOARDConnectorSetup.exe` aus dem BOARD Connector Verzeichnis: `C:\Program Files\BOARDConnector` (standardmäßig) auf der anderen Maschine.
+**Tipp:** Wenn Ihre aktuelle Version nicht die neueste Version von BOARD Connector ist, installieren Sie die passende Version `BOARD ConnectorSetup.exe` aus dem BOARD Connector Verzeichnis: `C:\Program Files\BOARD Connector` (standardmäßig) auf der anderen Maschine.
 
 
 1. Erstellen Sie ein Backup des `config`-Verzeichnisses der aktuellen Maschine.

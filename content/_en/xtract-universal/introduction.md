@@ -16,7 +16,7 @@ progressstate: 5
 ### Basic Functionality - Architecture
 
 Extractions are the main entities in Xtract Universal. An [extraction](./getting-started/define-a-table-extraction) is a combination of a source (SAP system), 
-destination (e.g., SQL server) and a defined extraction type (e.g., Xtract Table). 
+destination (e.g., SQL server) and a defined extraction type (e.g., [Table](./table)). 
 
 
 A source represents a [connection to an SAP System](./introduction/sap-connection). A [destination](./destinations) represents a connection to a target environment.

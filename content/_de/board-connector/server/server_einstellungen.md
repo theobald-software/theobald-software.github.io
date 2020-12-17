@@ -72,7 +72,7 @@ fragt der Designer, ob man das neuere Setup herunterladen möchte.
 
 **Target directory**<br>
 Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Installationsverszeichnis von BOARD Connector: <br>
-`C:\Program Files\BoardConnector\result-cache`.
+`C:\Program Files\BOARD Connector\result-cache`.
 
 **Max. cached runs**<br>
 Definiert die maximale Anzahl der Ergebnisse verschiedener Extraktionen im Puffer.

@@ -1,7 +1,7 @@
 ---
 ref: board-connector-03
 layout: page
-title: Einführung
+title: Einführung in BOARD Connector
 description: Einführung
 product: board-connector
 parent: board-connector
@@ -9,35 +9,23 @@ childidentifier: einfuehrung
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=einfuehrung
+progressstate: 5
 ---
+### Grundfunktionalität - Architektur
 
-Dieser Abschnitt bietet einen Überblick über die Architektur vom BOARD Connector und führt in die Installation und Benutzung ein.
-BOARDConnector für SAP ist eine Middleware-Komponente, die es ermöglicht, Daten aus SAP-Systemen zu extrahieren, um sie dann in BOARD weiterzuverarbeiten.
+BOARD Connector für SAP ist eine Middleware-Komponente, die eine Datenextraktion aus SAP-Systemen ermöglicht, um die Daten in BOARD weiterzuverarbeiten.
+Extraktionen sind die Hauptentitäten in BOARD Connector. Eine [Extraktion](./erste-schritte/eine-neue-extraktion-anlegen) ist eine Kombination aus einer [Verbindung zu einer Quelle (SAP-System)](./einfuehrung/sap-verbindungen-anlegen), 
+einer Verbindung zu BOARD im Sinne einer Destination und einen definierten Extraktionstyp (z.B. [Table](./table)).
 
-Im Wesentlichen besteht BOARD aus zwei Komponenten: Eine Server-Komponente BOARDConnector Server und eine Client-Komponente BOARDConnector Designer.
-
-Die Server-Komponente ist für die eigentliche Extraktion zuständig. BOARD kommuniziert mit der Server-Komponente, und diese wiederum mit SAP. Der Designer wird für die Verwaltung der Extraktionen verwendet. Vom Designer besteht auch eine Verbindung direkt zum SAP. Dieser wird nicht für den Datentransport, sondern ausschließlich für die Metadatenabfrage während des Design-Prozesses verwendet. 
-
+BOARD Connector besteht aus zwei Komponenten:
+- Designer
+- Server
 
 ![Architecture-01](/img/content/Architecture-01.png){:class="img-responsive"}
 
- 
-BOARD ist ein Satz von insgesamt acht Extraktionstypen, die es ermöglichen, die komplette Brandbreite an unterschiedlichsten Anforderungen an eine SAP-Extraktion abzudecken:
+Während der Designphase kann der Benutzer Extraktionen, Quellen und die [Servereinstellungen](./server/server_einstellungen) mit Hilfe des [Designers](./erste-schritte/designer-overview) erstellen, modifizieren und anpassen. 
 
-**Table** extrahiert aus Tabellen und Views.
+Während der Ausführungsphase kann der Benutzer die in der Designphase entworfenen Extraktionen ausführen. Die Ausführung der Extraktionen findet auf dem [Server](./server) statt. 
 
-**Query** extrahiert aus Queries (nicht zu verwechseln mit den BEx-Queries, die von BW Cube abgedeckt werden)
-
-**BAPI** extrahiert Daten aus BAPIs und RFC-Funktionsbausteinen.
-
-**BW Cube** extrahiert flache Daten aus SAP BW InfoCubes und QueryCubes (auch bekannt als BEx-Queries).
-
-**Hierarchy** extrahiert Hierarchien aus SAP BW / BI.
-
-**Open Hub Service** extrahiert InfoSpokes und OHS Destinationen.
-
-**DeltaQ** extrahiert DataSources (OLTP).
-
-**Report** führt ABAP-Reports aus.
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+

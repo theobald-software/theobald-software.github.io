@@ -10,7 +10,7 @@ weight: 1
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=server-starten
 ---
-Bei Ausführung der *BOARDConnectorSetup.exe* wird der BOARD Connector Server als Standard Windows Service (Dienst) installiert und gestartet.
+Bei Ausführung der *BOARD ConnectorSetup.exe* wird der BOARD Connector Server als Standard Windows Service (Dienst) installiert und gestartet.
 
 Achten Sie darauf, bei der [Installation](../einfuehrung/installation-und-update) die Option "Server > Install Service" auszuwählen.
 
@@ -22,10 +22,10 @@ Die Verwendung der Anwendung BCService.exe wird über die Windows Eingabeaufford
 - /i - install Windows service
 - /u - uninstall Windows service
 
-**Beispiel:** BOARDConnector\BCService.exe
+**Beispiel:** BOARD Connector\BCService.exe
 ```
-C:\Program Files\BOARDConnector>BCService.exe /i
-C:\Program Files\BOARDConnector>BCService.exe /u
+C:\Program Files\BOARD Connector>BCService.exe /i
+C:\Program Files\BOARD Connector>BCService.exe /u
 ```
 
 ### Windows Diensteverwaltung
@@ -39,13 +39,13 @@ Nach der Installation kann der Windows-Service über die Windows-Diensteverwaltu
 **Warnung! Änderung der Standardports**<br>
 Nach der manuellen Anpassung der Standardports, startet der BOARD Connector Service nicht.<br>
 Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden [Config-Dateien](./ports) angepasst werden:<br>
-`C:\Program Files\BOARDConnector\config\server\config\general.json`<br>
-`C:\Program Files\BOARDConnector\config\server\web\general.json`
+`C:\Program Files\BOARD Connector\config\server\config\general.json`<br>
+`C:\Program Files\BOARD Connector\config\server\web\general.json`
 
 ### Architektur
 
 BOARD Connector ist für die [verteilte Anwendung](../einfuehrung#grundfunktionalit%C3%A4t---architektur) konzipiert. Der BOARD Connector Service kann auf einer zentralen Serverinstanz, z.B. einem firmenweiten Anwendungsserver, installiert werden.
-Demzufolge ist der Zugriff auf ein gemeinsames BOARD Connector Repository `C:\Program Files\BOARDConnector\config` möglich und kann durch mehrere BOARD Connector Anwender genutzt werden.
+Demzufolge ist der Zugriff auf ein gemeinsames BOARD Connector Repository `C:\Program Files\BOARD Connector\config` möglich und kann durch mehrere BOARD Connector Anwender genutzt werden.
 
 {: .box-tip }
 **Tipp:** Stellen Sie durch eine geeignete Rechteverwaltung in BOARD Connector sicher, dass lediglich Benutzer mit Administratorberechtigungen (Administrator User Rights) grundlegende Änderungen am zentralen Reporsitory durchführen können. Weitere Informationen entnehmen sie dem Abschnitt [Zugriffssteuerung](../sicherheit/zugriffsverwaltung).
