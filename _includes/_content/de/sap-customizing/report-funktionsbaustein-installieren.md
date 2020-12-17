@@ -4,7 +4,8 @@ Falls Sie den Z-Funktionsbaustein nicht selbst installieren können, bitten Sie 
 
 
 ### Installation mit Hilfe von SAP Transport
-Sie können den Funktionsbaustein mit Hilfe des mitgelieferten Transportauftrags (*thtrans.zip*) installieren. *thtrans.zip* finden Sie im Unterverzeichnis ABAP des Programmverzeichnisses: `C:\Program Files\XtractProduct\ABAP` (standartmäßig).
+Sie können den Funktionsbaustein mit Hilfe des mitgelieferten Transportauftrags *thtrans.zip* installieren. <br>
+Der Transport befindet sich standardmäßig in folgendem Programmverzeichnisses: `C:\Program Files\XtractProduct\ABAP\thtrans.zip` 
 
 ### Manuelle Installation
 
