@@ -20,7 +20,7 @@ If you run BOARD Connector Designer and BOARD Connector Server on different mach
 
 ### Installing the BOARD Connector license - BOARD ConnectorLicense.json
 For installing the regular license, place the regular BOARD ConnectorLicense.json into the following directory of the server: <br>
-`C:\Program Files\BOARD Connector`
+`C:\Program Files\BOARDConnector`
  <br>
  ![XU_license](/img/content/BOARDConnector_License_Folder.png ){:class="img-responsive"}
  

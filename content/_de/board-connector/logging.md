@@ -14,7 +14,7 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=logging
 
 BOARD Connector protokolliert alle auf einem System durchgeführten Schritte in Log-Dateien. 
 Die Log-Dateien werden im Produktverzeichnis gespeichert:<br>
-z.B.: `C:\Program Files\BOARD Connector\logs`
+z.B.: `C:\Program Files\BOARDConnector\logs`
 
 Es werden verschiedene Arten der Log-Dateien erstellt.
 
@@ -25,7 +25,7 @@ Es werden verschiedene Arten der Log-Dateien erstellt.
 |Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. BCConfigServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARD Connector\logs\server\config` |
 |Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. BCWebServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARD Connector\logs\server\web` |
 |Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Zeitpunkt der Entgegennahme einer TCP-Verbindung erstellt. BCRun.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARD Connector\logs\server\run` |  
-|Extraktion| Extraktions-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start einer Extraktion erstellt. BCRun.exe ist der dazugehörige Prozess. | `C:\Program Files\BOARD Connector\logs\extractions\[Name_der_Extaktion]`|
+|Extraktion| Extraktions-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start einer Extraktion erstellt. BCRun.exe ist der dazugehörige Prozess. | `C:\Program Files\BOARDConnector\logs\extractions\[Name_der_Extaktion]`|
 
 ### Log Levels
 Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende Log-Levels:

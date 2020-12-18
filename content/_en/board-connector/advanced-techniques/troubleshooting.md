@@ -4,7 +4,7 @@ layout: page
 title: Troubleshooting
 description: Troubleshooting
 product: board-connector
-parent: introduction
+parent: advanced-techniques
 permalink: /:collection/:path
 weight: 8
 lang: en_GB

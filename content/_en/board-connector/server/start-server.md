@@ -17,7 +17,7 @@ Make sure to mark the option "Server > Install Service" during the [Installation
 
 ![Services-Install](/img/content/xu/XU_Setup_3.png){:class="img-responsive"}
 
-The installation and removal of  the BOARD Connector Service is conducted using the `C:\Program Files\BOARD Connector\BCService.exe` application.
+The installation and removal of  the BOARD Connector Service is conducted using the `C:\Program Files\BOARDConnector\BCService.exe` application.
 BCService.exe is used via the Windows command line and supports the following commands:
 
 - /i - install Windows service
@@ -25,8 +25,8 @@ BCService.exe is used via the Windows command line and supports the following co
 
 **Example:**
 ```
-C:\Program Files\BOARD Connector>BCService.exe /i
-C:\Program Files\BOARD Connector>BCService.exe /u
+C:\Program Files\BOARDConnector>BCService.exe /i
+C:\Program Files\BOARDConnector>BCService.exe /u
 ```
 
 ### Windows Serivces
@@ -39,13 +39,13 @@ After installation, the Windows service can be started, stopped and configured v
 **Warning! Changing the standard ports**<br>
 After manually adjusting the default ports, the BOARD Connector Service does not start.<br>
 The stored ports are already assigned and need to be adjusted the following [Config files]:<br>
-`C:\Program Files\BOARD Connector\config\server\config\general.json`<br>
-`C:\Program Files\BOARD Connector\config\server\web\general.json`
+`C:\Program Files\BOARDConnector\config\server\config\general.json`<br>
+`C:\Program Files\BOARDConnector\config\server\web\general.json`
 
 ### Architecture
 
 BOARD Connector is created for [distributed use](../introduction#basic-functionality---architecture). The BOARD Connector Service can be installed on a central server instance, e.g., a company-wide application server.
-`C:\Program Files\BOARD Connector\config` As a result, access to a common BOARD Connector repository is possible and can be used by several BOARD Connector users.
+`C:\Program Files\BOARDConnector\config` As a result, access to a common BOARD Connector repository is possible and can be used by several BOARD Connector users.
 
 {: .box-tip }
 **Tip:** Use the appropriate user rights management in BOARD Connector to make only the users with administrator user rights are allowed to perform fundamental changes on the central repository. See also [Access Management](../security/access-management) for more details.

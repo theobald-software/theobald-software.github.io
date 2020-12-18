@@ -20,7 +20,7 @@ Wenn Sie den BOARD Connector Designer und den  BOARD Connector Server auf versch
 
 ### Installieren von BOARD Connector Lizenz - BOARD ConnectorLicense.json
 Um die reguläre Lizenz zu installieren, legen Sie die BOARD ConnectorLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:<br>
-`C:\Program Files\BOARD Connector`
+`C:\Program Files\BOARDConnector`
  <br>
  ![BC_license](/img/content/BOARDConnector_License_Folder.png ){:class="img-responsive"}
  

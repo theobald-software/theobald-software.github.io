@@ -17,7 +17,7 @@ The follwing section contains an overview of the Xtract Universal server.
 The server performs two main tasks:
 
 - Run extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory. 
-- Make extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory available to the designer.
+- Make extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory available to the Designer.
 
 ### Run Extraction on the Server
 
@@ -64,7 +64,7 @@ The log files are located in the logs subdirectory of the program directory: 'C:
 
 XtractWebServer.exe waits for HTTP requests. 
 
-For each TCP connection the XtractWebServer.exe starts a new instance of XtractRun.exe, which processes all HTTP requests coming in over this TCP connection.
+For each TCP connection the XtractWebServer.exe starts a new instance of XtractRun.exe, which processes all HTTP requests coming in over the particular TCP connection.
 
 {: .box-tip }
 **Tip:** The XtractRun.exe logs its actions in the log subdirectory. 

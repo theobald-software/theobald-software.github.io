@@ -33,7 +33,7 @@ Install Service | Installiert die Serverkomponente als Windows-Service und boote
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz) beschrieben.
 
 #### Dateien des Installationsordners
-Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Program Files\BOARD Connector`` abgelegt werden:
+Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Program Files\BOARDConnector`` abgelegt werden:
 
 |Dateiname | Beschreibung |
 |:----|:---|
@@ -64,7 +64,7 @@ Mit einem Backup können Sie bei Bedarf einfach auf die vorherige Version von BO
 {: .box-warning}
 **Warnung! Datenverlust:** <br>
 Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen.
-Führen Sie ein Backup des Ordners: `C:\Program Files\BOARD Connector\config` in regelmäßigen Abständen durch. 
+Führen Sie ein Backup des Ordners: `C:\Program Files\BOARDConnector\config` in regelmäßigen Abständen durch. 
 
 Alle Einstellungen zu Extraktionen, Sources etc. werden im Unterverzeichnis *config* gespeichert. 
 

@@ -71,7 +71,7 @@ Defines whether the setup of the BOARD Connector version running on the server n
 
 **Target directory** <br>
 Sets the directory for the buffer files. The default ist the result-cache directory in the BOARD Connector installation directory: <br>
-`C:\Program Files\BOARD Connector\result-cache`.
+`C:\Program Files\BOARDConnector\result-cache`.
 
 **Max. cached runs** <br>
 Defines the maximum count of results of different extractions in the buffer.

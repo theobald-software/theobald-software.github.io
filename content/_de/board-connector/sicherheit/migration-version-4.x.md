@@ -25,7 +25,7 @@ Mehr Informationen über die Dateien im Installationsordner finden Sie im Abschn
 ![BC4_Migration_2](/img/content/BC4_Migration_2.png){:class="img-responsive"}
 
 ### Manuelles Upgrade
-Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, kann dieser auch nachträglich manuell aus dem Installationsverzeichnis ``C:\Program Files\BOARD Connector`` gestartet werden. <br>
+Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, kann dieser auch nachträglich manuell aus dem Installationsverzeichnis ``C:\Program Files\BOARDConnector`` gestartet werden. <br>
 
 ![BC4_Migration_3](/img/content/BC4_Migration_3.png){:class="img-responsive"}
 

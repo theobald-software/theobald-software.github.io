@@ -37,7 +37,7 @@ When starting the setup, components can be selected during the installation.
 {: .box-note }
 **Note:** Make sure to mark the option “Server > Install Service” during the Installation, as installing a server without the service is only used for development purposes.
 
-The license installation procedure is described in the section [Installing the license](license#installing-the-xtract-universal-license---xtractuniversallicensejson).
+The license installation procedure is described in the section [Installing the license](./license#installing-the-xtract-universal-license---xtractuniversallicensejson).
 
 ### Program Directory Files
 The list below shows several most important files that are placed into the default directory ``C:\Program Files\XtractUniversal`` after installation:
@@ -59,11 +59,11 @@ The list below shows several most important files that are placed into the defau
 | XtractUniversalLicense.json |  License file with information about the server, the component and runtime. |
 
 
-{: .box-note }
+{: .box-note }																   
 **Note:** For more details on starting Xtract Universal Server as a console application see section [Troubleshooting](../advanced-techniques/troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 
-### New Installation and Update
+### Backup																																											   
 
 {: .box-warning}
 **Warning! Data loss:**
@@ -105,7 +105,7 @@ The option *Convert config files* starts the *ConfigConverter* application, whic
 
 
 #### Manual Upgrade
-If the *ConfigConverter* is not executed automatically during installation, it can also be started manually from the installation directory: ``C:\Program Files\XtractUniversal``. <br>
+If the *ConfigConverter* is not executed automatically during installation, the converter can also be started manually from the installation directory: ``C:\Program Files\XtractUniversal``. <br>
 
 ![XU3_Migration_3](/img/content/XU3_Migration_3.png){:class="img-responsive"}
 

@@ -11,7 +11,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-<!-- TOOD Better structure needed for explaining versions, backward compatiblity, etc. -->
+<!-- TOOD Better structure needed for explaining versions, backward compatibility, etc. -->
 
 ### Backup
 
