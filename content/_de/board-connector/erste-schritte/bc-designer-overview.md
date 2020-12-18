@@ -1,7 +1,7 @@
 ---
 ref: bc-getting-started-06
 layout: page
-title: Zusätzliche Funktionen im Designer
+title: Designer - Hauptfenster Übersicht
 description: Zusätzliche Funktionen im Designer
 product: board-connector
 parent: erste-schritte

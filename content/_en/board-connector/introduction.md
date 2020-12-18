@@ -24,7 +24,7 @@ BOARD Connector consists of two components:
 
 ![Architecture-01](/img/content/Architecture-01.png){:class="img-responsive"}
 
-When desigining extractions the user can create and modify extractions, sources and alter the [server settings](./server/server-settings) with the help of the [Designer](./getting-started/designer-overview).
+When desigining extractions the user can create and modify extractions, sources and alter the [server settings](./server/server-settings) with the help of the [Designer](./getting-started/bc-designer-overview).
 During the execution phase the user can execute the extractions designed in the design phase. 
 The execution of the extractions takes place on the [server](./server). 
 
