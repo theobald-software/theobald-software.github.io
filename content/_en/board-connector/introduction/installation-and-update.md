@@ -97,9 +97,9 @@ There are two ways of upgrading the product version from BC 2.x and 3.x to BC 4.
 1. Start the BOARD Connector setup.
 2. Make sure to mark the checkbox **Convert config files** checkbox. <br>
 The option *Convert config files* starts the *ConfigConverter* application, which ensures that all extractions, source systems, server and user settings from BC 2.x or 3.x are available in the new version. <br> 
-![BC-Setup](/img/content/content/BC_Setup_2.png){:class="img-responsive"}
+![BC-Setup](/img/content/content/board/BC_Setup_2.png){:class="img-responsive"}
 3. Confirm the conversion process in the command line pop-up window.  
-![BC3_Migration_2.png](/img/content/board/BC3_Migration_2.png){:class="img-responsive"}
+![BC3_Migration_2.png](/img/content/board/BC_Migration_3.png){:class="img-responsive"}
 
 
 #### Manual Upgrade
