@@ -61,7 +61,7 @@ The list below shows several most important files that are placed into the defau
 
 {: .box-note }
 **Note:** The BOARD Connector Server can be started as a console program for test purposes.
-For more details on starting BOARD Connector Server as a console program see section [Troubleshooting](../advanced-techniques/troubleshooting) and ---> the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Xtract Universal example).
+For more details on starting BOARD Connector Server as a console program see section [Troubleshooting](../advanced-techniques/troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Xtract Universal example).
 
 
 ### Backup
@@ -105,7 +105,7 @@ The option *Convert config files* starts the *ConfigConverter* application, whic
 #### Manual Upgrade
 If the *ConfigConverter* is not executed automatically during installation, the converter can also be started manually from the installation directory: ``C:\Program Files\BOARDConnector``. <br>
 
-![BC3_Migration_3](/img/content/BC3_Migration_3.png){:class="img-responsive"}
+![BC3_Migration_3](/img/content/BC_Migration_3.png){:class="img-responsive"}
 
 {:.box-note}
 **Note:** Any issues that may occur during the conversion process are displayed in the command line window. Copy and send the command line context to the support team, if required.   
