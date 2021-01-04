@@ -27,10 +27,11 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 |:----|:---| :---|
 |Main Product Files |- |Installiert alle notwendigen Dateien, die zum Verwenden von BOARD Connector notwendig sind.|
 |Designer | -|Installiert die Designer-Anwendung, entfernen Sie die Markierung bei dieser Option, wenn Sie BOARD Connector ohne die grafische Schnittstelle verwenden wollen. |
-|Server || Installiert BOARD Connector Server. | 
+|Server | Installiert BOARD Connector Server. | 
 |<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) |
 | <!---->| Convert config files| Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Komponente ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
 |Start Menu Shortcuts | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
+
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz) beschrieben.
 
 ### Dateien des Installationsordners
