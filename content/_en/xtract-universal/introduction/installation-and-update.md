@@ -63,7 +63,7 @@ The list below shows several most important files that are placed into the defau
 **Note:** For more details on starting Xtract Universal Server as a console application see section [Troubleshooting](../advanced-techniques/troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 
-### Backup																																											   
+### New Installation and Update																																										   
 
 {: .box-warning}
 **Warning! Data loss:**

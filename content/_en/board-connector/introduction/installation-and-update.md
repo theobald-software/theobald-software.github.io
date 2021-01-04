@@ -64,7 +64,7 @@ The list below shows several most important files that are placed into the defau
 For more details on starting BOARD Connector Server as a console program see section [Troubleshooting](../advanced-techniques/troubleshooting) and the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Xtract Universal example).
 
 
-### Backup
+### New Installation and Update
 
 {: .box-warning}
 **Warning! Data loss:**
@@ -75,6 +75,7 @@ A regular update of the software is crucial for stable performance, especially m
 updates. Check the [Version history](https://kb.theobald-software.com/version-history) for updates. A newer version
 can be installed over the older version. All settings and created objects are preserved. When migrating data and
 settings to another server, follow the instructions described in section [Backup and Migration](../advanced-techniques/backup-and-migration).
+
 {: .box-tip }
 **Tip:** Subscribe via [email](mailto:info@theobald-software.com) to Theobald Software’s regular newsletter that
 informs about changes in the version history and release notes.
@@ -105,7 +106,7 @@ The option *Convert config files* starts the *ConfigConverter* application, whic
 #### Manual Upgrade
 If the *ConfigConverter* is not executed automatically during installation, the converter can also be started manually from the installation directory: ``C:\Program Files\BOARDConnector``. <br>
 
-![BC3_Migration_3](/img/content/board/BC_Migration_3.png){:class="img-responsive"}
+![BC3_Migration_3](/img/content/XU3_Migration_3.png){:class="img-responsive"}
 
 {:.box-note}
 **Note:** Any issues that may occur during the conversion process are displayed in the command line window. Copy and send the command line context to the support team, if required.   
