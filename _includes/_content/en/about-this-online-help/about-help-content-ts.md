@@ -31,7 +31,7 @@ There are three main types of warning messages with the corresponding colors.
 Signal word| Color | Severity and meaning
 ------------ | ------------- | ---------
 Note |Blue | Additional information
-Warning | Yellow | Information that is important for executing an error free procedure.
+Warning | Yellow | Information that is important for executing an error free procedure
 Tip| Green | Tips
 Recommendation | Green | Theobald Software recommendations and best practices advice
 

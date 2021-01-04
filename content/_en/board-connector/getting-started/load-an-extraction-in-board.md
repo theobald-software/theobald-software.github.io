@@ -15,7 +15,7 @@ Extractions can be loaded in BOARD using the DataReader. In the following exampl
 The extraction "Plants" extracts the table *T001W* from SAP. 
 In BOARD the entity "plants" is defined to load the SAP data. 
 
-1. In BOARD, select **[+ DataReader] > DataReader**  to create a new DataReader. Enter a name, in the example "Plants" and a group, in the example "Main Group". Select the source type "SAP". <br>
+1. In BOARD, select **[+ DATAREADER]**  to create a new DataReader. Enter a name, in the example "Plants" and a group, in the example "Main Group". Select the source type "SAP". <br>
 ![Load-Extraction-01](/img/content/board/Load-Extraction-01.png)
 2. Create a new connection for the BOARD Connector Server. Optionally, you can select an existing connection. Set a *name* and the *URL* of the BOARD Connector server (e.g., localhost:8098).<br>
 3. Click **[OK]** to confirm.<br>
