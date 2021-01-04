@@ -46,7 +46,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | BCApiServer.exe| Unverschlüsselter WCF-Service zum Abrufen von Metadaten durch den Designer.  |
 | BCWebServer.exe| BCWebServer.exe ein Listener-Prozess, der auf HTTP-Anfragen wartet. |
 | BCRun.exe| Für jede TCP-Verbindung startet die BCWebServer.exe eine neue Instanz von BCRun.exe, die alle über die TCP-Verbindung eingehenden HTTP-Requests abarbeitet. |
-| BCCleanup.exe| Anwendung, die die alten Server-Logs aufräumt, wie in den [Server-Einstellungen](../server/server-settings) definiert. |
+| BCCleanup.exe| Anwendung, die die alten Server-Logs aufräumt, wie in den [Server-Einstellungen](../server/server_einstellungen) definiert. |
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von BOARD Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
 | Eula_BOARD Connector.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software BOARD Connector.|
