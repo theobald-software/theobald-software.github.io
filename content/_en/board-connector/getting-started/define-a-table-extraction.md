@@ -1,7 +1,7 @@
 ---
 ref: bc-getting-started-02
 layout: page
-title: Step 2 - Define a Table Extraction
+title: 2. Define a Table Extraction
 description: Step 2 - Define a Table Extraction
 product: board-connector
 parent: getting-started

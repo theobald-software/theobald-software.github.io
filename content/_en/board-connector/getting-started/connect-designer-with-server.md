@@ -1,7 +1,7 @@
 ---
 ref: bc-getting-started-01
 layout: page
-title: Step 1 - Connect Designer with Server 
+title: 1. Connect Designer with Server 
 description: Step 1- Connect Designer with Server
 product: board-connector
 parent: getting-started
