@@ -26,9 +26,9 @@ the name, IP or domain and port the server can be accessed with within the netwo
 the name of the desired extraction. When clicking the arrow next to the text area, all available extractions will be loaded into a dropdown menu. Only those extractions will be displayed, for which you selected the alteryx destination type in Xtract Universal designer.
 For this functionality the Xtract Universal server has to be up and running.
 
-The **Send SAP credentials** <br>
-setting is only required, if the *Require SAP Credentials* checkbox has been flagged in the *[Security]()* tab in the extraction's *General Settings*.
-This might be useful in self service scenarios, where each extraction needs to be executed using an individual user's *SAP credentials* instead of the one, globally defined in the *Xtract Universal SAP* source.
+**Send SAP credentials** <br>
+This setting is required, if the *Require SAP Credentials to be explicitly supplied for execution* checkbox has been flagged in the [SAP source](../../introduction/sap-connection#authentication) in Xtract Universal.
+This might be useful in self service scenarios, where each extraction needs to be executed using an individual user's SAP credentials instead of the one, globally defined in the Xtract Universal SAP source.
 
 ![alteryx-extraction-selection](/img/content/alteryx-extraction-selection.png){:class="img-responsive"}
 
