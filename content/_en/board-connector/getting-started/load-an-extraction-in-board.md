@@ -22,7 +22,7 @@ The extraction "Plants" extracts the table *T001W* from SAP.
 ![Load-Extraction-02](/img/content/board/Load-Extraction-02.png)
 5. **Optionally:** Specify URL parameter(s) to add to the connection string. 
 In the depicted scenario a WHERE-clause is specified, restricting the extraction to purchasing organization (EKORG) '1000'. 
-For more information about URL parameters, see [Dynamic Connection Parameters](./advanced-techniques/extraction-parameters#subsection-parameters-tab-source).
+For more information about URL parameters, see [Dynamic Connection Parameters](../advanced-techniques/extraction-parameters#subsection-parameters-tab-source).
 6. Click **[Browse Table]** to get a preview of the extracted SAP data. 
 **Note:** The preview displays real or dummy data depending on the type of extraction.
 ![Load-Extraction-03](/img/content/board/Load-Extraction-03.png)
