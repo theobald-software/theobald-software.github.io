@@ -26,9 +26,11 @@ columnSeparator |  to set a symbol which indicates the start of a new column | a
 
 ### Subsection "Parameters" Tab "Source"
 
-![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
+In the same way as the system parameters and user-defined parameters, the connection settings to a source (SAP) can also be changed dynamically via the URL. 
 
-In this tab you can override the values that are defined in the [SAP source details](../introduction/sap-connection).
+In the *Source* tab you can override the values that are defined in the [SAP source details](../introduction/sap-connection).
+
+![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"} 
 
 Parameter name | Parameter description 
 ------------ | ------------- 
@@ -39,6 +41,13 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 **Note:** The parameter **logonTicket** can only be set, only if SAP logon ticket is selected as authentication method in the [SAP source details](../introduction/sap-connection).
 
 
+#### To Adjust Source Parameters
+1. Select an extraction.
+2. Click **[Run]**. The dialogue "Run Extraction" opens. 
+3. Select the tab *Source* and adjust the parameters.
+![Run-Extraction-Connection-Parameters](/img/content/Run-Extraction-Connection-Parameters.png){:class="img-responsive"}
+
+**Example:** Overriding the connection language to DE using the URL: `http://localhost:8085/?name=plants&lang=DE`
 
 ### Subsection "Parameters" Tab "Custom"
 
