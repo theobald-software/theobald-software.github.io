@@ -12,8 +12,8 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=tableau-mit-data-extract
 ---
 
-Mit der Tableau destination können Sie die extrahierten SAP-Daten als Data Extract ablegen. <br>
-Dabei werden die beiden Formate TDE (Tableau Data Extract) und Hyper unterstützt.<br>
+Mit der Tableau Destination können Sie die extrahierten SAP-Daten als Data Extract im Hyper-Format ablegen. <br>
+
 Optional ist es auch möglich, die erzeugte Data Extract-Datei zu einem Tableau-Server oder Tableau Online hochzuladen.
 
 

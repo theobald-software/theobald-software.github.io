@@ -15,11 +15,7 @@ Die folgenden Einstellungen sind beim Einrichten der Tableau Destination verfüg
 
 ![tableauDestinationDetails-hyper](/img/content/tableauDestinationDetails-hyper.png){:class="img-responsive"}
 
-### Connection
-**TDE oder Hyper** <br>
-Wählen Sie das gewünschte Format der Data Extract-Datei. 
-
-**Output directory** <br>
+### Output directory <br>
 Geben Sie das Verzeichnis auf dem Xtract Universal Server an, in das die exportierten Tableau-Dateien gespeichert werden sollen.
 
 {: .box-note }
@@ -27,7 +23,7 @@ Geben Sie das Verzeichnis auf dem Xtract Universal Server an, in das die exporti
 
 ### Tableau Server
 - **Upload to Tableau Server** <br>
-Option zum Hochladen der extrahierten TDE-Datei (als Datenquelle) auf Tableau Server oder Tableau Online.
+Option zum Hochladen der extrahierten Datei (als Datenquelle) auf Tableau Server oder Tableau Online.
 - **Delete local file after upload**
 Option zum Entfernen der lokalen Datei nach einem erfolgreichen Upload.
 
