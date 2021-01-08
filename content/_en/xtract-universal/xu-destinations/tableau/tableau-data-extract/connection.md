@@ -15,12 +15,8 @@ The following settings are available when setting up the Tableau destination:
 
 ![tableauDestinationDetails-hyper](/img/content/tableauDestinationDetails-hyper.png){:class="img-responsive"}
 
-### Connection
-**TDE** or **Hyper**<br>
-Select the desired format for the Data Extract file.
-
-**Output directory**<br>
-The directory on the Xtract Universal Server to store the generated TDE Tableau files.
+### Output directory
+The directory on the Xtract Universal Server to store the generated Tableau files.
 
 {: .box-note }
 **Note:** Make sure that the directory exists.
@@ -29,7 +25,7 @@ The directory on the Xtract Universal Server to store the generated TDE Tableau 
 
 ### Tableau Server
 - **Upload to Tableau Server**
-Option to upload the extracted TDE file (as a data source) to Tableau Server or Tableau Online.
+Option to upload the extracted file (as a data source) to Tableau Server or Tableau Online.
 - **Delete local file after upload**
 Option to remove the local file after a successful upload.
 
