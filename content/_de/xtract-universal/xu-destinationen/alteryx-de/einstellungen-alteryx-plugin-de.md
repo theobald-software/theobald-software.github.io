@@ -11,48 +11,52 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen-alteryx-plugin-de
 ---
 
-Um das Xtract Universal-Tool verwenden zu können, müssen Sie es in einen Workflow einfügen.	
-
+### Xtract Universal Tool in Alteryx verwenden
+1. Fügen Sie das Werkzeug Xtract Universal zu Ihrem Alteryx-Workflow hinzu.
 ![XU_alteryx_plugin](/img/content/XU_alteryx_plugin.png){:class="img-responsive"}
+2. Legen Sie die folgenden Einstellungen für das Xtract Universal-Werkzeug im Alteryx Designer fest:
+- Connection (1)
+- Parameters (2
 
-Folgende Einstellungen müssen im Alteryx Designer für das  Xtract Universal-Tool festgelegt werden.
+### Verbindung
 
-## Verbindung
 **Server**<br>
-der Name, die IP oder die Domain und der Port unter denen der Server zu erreichen ist.<br>
-(Format: [Server]:[Port])
+Der Name, die IP oder die Domain und der Port unter denen der Server zu erreichen ist.<br>
+Format: [Server]:[Port].
 
 **Extraction**<br>
-der Name der auszuführenden Extraktion. Mit einem Klick auf den Pfeil werden alle verfügbaren Extraktionen des angegebenden Servers abgerufen und in einem Dropdown Menü dargestellt. Dies funktioniert nur, wenn der angegebene Server gültig und erreichbar ist.
+Der Name der auszuführenden Extraktion. Durch das Klicken auf den Pfeil neben dem Textbereich, werden alle verfügbaren Extraktionen des angegebenden Servers abgerufen und in einem Dropdown-Menü dargestellt. 
+Es werden nur die Extraktionen mit Alteryx als Destinationstyp angezeigt. Den Destinationstyp können Sie im Xtract Universal Designer definieren.
+
+{: .box-note }
+**Hinweis:** Stellen Sie sicher, dass der Xtract Universal Server läuft.
 
 **Send SAP credentials** <br>
-wird für diejenigen Extraktionen benötigt, bei denen im *Security* Tab der General Settings der Extraktion die Checkbox *Use SAP Credentials* angehakt wurde.<br>
-Das kann z.B. in Self Service Szenarien sinnvoll sein, bei denen die Extraktionen mit den SAP Logon-Daten des jeweiligen Users ausgeführt werden sollen.
+Die Checkbox *Send SAP credentials* ist nur dann verfügbar, wenn die Checkbox *Require SAP Credentials to be explicitly supplied for execution* in den [SAP Source-Einstellungen](../../einfuehrung/sap-verbindungen-anlegen) in Xtract Unviersal markert ist.
 
-![alteryx-extraction-selection](/img/content/alteryx-extraction-selection.png){:class="img-responsive"}
+Die Einstellung *Send SAP credentials* kann in Self-Service-Szenarien nützlich sein. Wenn jede Extraktion mit den SAP-Anmeldeinformationen eines einzelnen Benutzers anstelle der global definierten Anmeldeinformationen ausgeführt werden muss.
 
-## Parameter 
+
+### Parameter 
 
 Unter dem Tab **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. 
 
-**Das statische Überschreiben eines benutzerdefinierten Parameters**<br>
-In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) in dem Tab **Custom defined Parameters** mit einem statische Wert (Stuttgart) überschrieben wird. 
-Dafür setzen Sie einen Haken für das Feld **Override** und geben Sie einen neuen Wert in das **Value** Feld ein.<br>
-
+### Beispiel 1: Das statische Überschreiben eines benutzerdefinierten Parameters
+Im angegebenen Beispiel enthält eine Extraktion von SAP-Kunden den Parameter *city*, der in den **Custom Defined Parameters** definiert ist. Der Parameter *city* muss mit einem statischen Wert überschrieben werden (hier: Stuttgart).
+Um den Parameter *city* zu überschreiben, markieren Sie die Checkbox **Override** und geben einen neuen  Wert *vert* ein.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
 
-**Das dynamische Überschreiben eines benutzerdefinierten Parameters**<br>
-Das Xtract Universal-Tool kann also eine Eingabe entgegennehmen, z.B. das Input Data Tool.
-Die Daten-Eingabe kann dynamisch fürs das  Überschreiben des benutzerdefinierten parameters in Xtract Universal verwendet werden.<br> 
-Unter dem Tab **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. Dafür müssen Sie einen Haken für das Feld **Override** und **Map** setzen und den Eingabeparameter aus der Wertehilfe wählen. <br>
-In diesem Fall haben wir eine Extraktion für SAP-Kundendaten (customers), in welcher ein Parameter City (für die Stadt) mit einem dynamischen Wert (Stuttgart) überschrieben wird. 
-
+### Beispiel 2: Das dynamische Überschreiben eines benutzerdefinierten Parameters**<br>
+Das Xtract Universal-Tool kann auch Eingaben empfangen, z. B. über das Input Data Tool.
+Die eingegebenen Daten können dynamisch verwendet werden, um den benutzerdefinierten Parameter in Xtract Universal zu übersteuern.<br> 
+Im angegebenen Beispiel liegt eine Extraktion von SAP-Kunden vor, bei der der Parameter Stadt dynamisch parametrisiert werden soll.
+Um den Parameter *city* zu überschreiben, markieren Sie die Checkbox **Override** und die Checkbox **Map**. Wählen Sie einen Eintrag aus der Dropdown-Liste im Feld **value**.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters-override.PNG){:class="img-responsive"}
 
-[Hier]() können Sie mehr über benutzerdefinierte Parameter erfahren.
+Weitere Informationen zu benutzerdefinierten Parametern finden Sie unter [Benutzerdefinierte Variablen](../../fortgeschrittene-techniken/benutzerdefinierte-variablen).
 
-Sind bei der Verbindung zu Ihrem Xtract Universal Server keine Fehler aufgetreten, dann trägt das Tool eine Unterschrift in folgendem Format: [Extraktion] @ [Server]
+Sind bei der Verbindung zu Ihrem Xtract Universal Server keine Fehler aufgetreten, dann trägt das Tool ein Tooltip in folgendem Format: [Extraktion] @ [Server].
 
 ![alteryx-full-workflow](/img/content/alteryx-full-workflow.PNG){:class="img-responsive"}
