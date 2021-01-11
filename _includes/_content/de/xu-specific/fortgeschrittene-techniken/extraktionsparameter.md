@@ -23,9 +23,11 @@ columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | ver
 
 
 ### "Parameters" Tab *Source*
-![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
+Ebenso wie die Systemparameter und benutzerdefinierten Parameter können auch die Verbindungseinstellungen zu einer Quelle (SAP) dynamisch über die URL geändert werden. 
 
-In diesem Tab können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen)  definiert sind.
+Im Tab *Source* können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) definiert sind.
+
+![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
 
 
 Parametername | Beschreibung |
@@ -36,6 +38,13 @@ logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Tick
 {: .box-note }
 **Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket" als Authentifizierungsmethode in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen).
 
+#### "Source" Parameter verändern
+1. Wählen Sie eine Extraktion aus.
+2. Klicken Sie auf **[Run]**. Der Dialog "Run Extraction" wird geöffnet. 
+3. Wählen Sie den Tab  *Source* und ändern  Sie die Parameter.
+![Run-Extraction-Connection-Parameters](/img/content/Run-Extraction-Connection-Parameters.png){:class="img-responsive"}
+
+**Beispiel:** Überschreiben der Verbindungssprache zu DE unter Verwendung der URL: `http://localhost:8085/?name=plants&lang=DE`
 
 ### "Parameters" Tab *Custom*
 
