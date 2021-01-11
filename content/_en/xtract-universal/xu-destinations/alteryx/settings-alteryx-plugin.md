@@ -33,7 +33,7 @@ Only the extractions with Alteryx as destination type are displayed. You can def
 **Note:** Make sure the Xtract Universal server is running.
 
 **Send SAP credentials** (3) <br>
-Checkbox *Send SAP credentials* is only available, if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is marked in the [SAP source](../../introduction/sap-connection#authentication) settings in Xtract Universal.
+Mark the checkbox *Send SAP credentials*, if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is also marked in the [SAP source](../../introduction/sap-connection#authentication) settings in Xtract Universal.
 The setting *Send SAP credentials* can be useful in self service scenarios. When each extraction needs to be executed using an individual user's SAP credentials instead of the globally defined credentials.
 
 
