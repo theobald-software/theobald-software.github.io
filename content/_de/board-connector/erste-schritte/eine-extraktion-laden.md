@@ -11,24 +11,28 @@ lang: de_DE
 progressstate: 3
 ---
 
-Extraktionen können mit dem DataReader in BOARD geladen werden. Im folgenden Beispiel wird eine Extraktion "Plants" im BOARD Designer erstellt. 
-Die Extraktion "Plants", die die Tabelle Plants *T001W* aus SAP extrahiert. 
-In BOARD wird die Entität "Plants" definiert, um die SAP-Daten zu laden. 
+Extraktionen können mit dem Data Reader in BOARD geladen werden. Im folgenden Beispiel wird eine Extraktion "Plants" im BOARD Designer erstellt. 
+Die Extraktion "Plants", die die Tabelle Plants *T001W* aus SAP extrahiert.  
 
-1. Wählen Sie **Database > DataReader > SAP > New Protocol**, um ein neues Protokoll zu erstellen. <br>
-![Load-Extraction-01](/img/content/Load-Extraction-01.png)
-2. Erstellen Sie eine neue Verbindung für den BOARD-Connector-Server. Optional können Sie eine bestehende Verbindung auswählen. Legen Sie einen *Namen* und die *URL* des BOARD-Connector-Servers fest (z.B. localhost:8098). 
-3. Klicken Sie auf **[OK]** zum Bestätigen. <br>
-![Load-Extraction-02](/img/content/Load-Extraction-02.png)
-4. Der Tab *SAP* auf der rechten Seite listet alle vorhandenen Extraktionen gruppiert nach Extraktionsart auf. 
-5. Wählen Sie die Extraktion "Plants".  Im Detailfenster wird eine Liste aller verfügbaren Felder mit Beschreibung und Datentyp-Informationen angezeigt. <br>
-![Load-Extraction-03](/img/content/Load-Extraction-03.png)
-6. Wählen Sie den Tab *MDB* und markieren Sie die Felder **Code** und **Desc** der Entität **Plants**.<br>.
-Die ausgewählten Felder werden im oberen Bereich des Formulars angezeigt. 
-7. Ordnen Sie in der Spalte **Position** jedes Feld Ihrer Entität einem SAP-Feld zu.
-8. Wählen Sie in der Spalte **Action** den entsprechenden Eintrag aus. Füllen Sie das Feld **Title** mit einem Namen aus und klicken Sie auf **[OK]**. <br>
-![Load-Extraction-04](/img/content/Load-Extraction-04.png){:class="img-responsive"}
-9. Führen Sie den DataReader aus, um die SAP-Daten zu extrahieren. <br>
-![Load-Extraction-05](/img/content/Load-Extraction-05.png){:class="img-responsive"}
-
-Nach dem Ausführen des DataReaders sehen Sie im Protokoll, wie viele Zeilen in die Entität geladen wurden.
+1.In BOARD, wählen Sie **[+ DATA READER]**, um einen neuen Data Reader anzulegen. Geben Sie einen Namen ein, im dargestellten Beispiel "Plants"; und eine Gruppe, im dargestellten Beispiel "Main Group". Wählen Sie den Quelltyp "SAP". <br>
+![Load-Extraction-01](/img/content/board/Load-Extraction-01.png)
+2.  Erstellen Sie eine neue Verbindung für den BOARD Connector Server. Optional können Sie auch eine bestehende Verbindung auswählen. Bestimmen Sie einen Namen im Feld *Name* und die *URL* des BOARD Connector Servers (z. B. localhost:8098).<br>
+3. Klicken Sie auf das Symbol "Verbinden" (1), um eine Liste von Extraktionen aus BOARD Connector zu ziehen.
+4. Wählen Sie eine Extraktion (hier: T001W) aus dem Feld EXTRACTOR auf der rechten Seite aus. Die Metadaten der Extraktion (Feldnamen, Datentypen) werden im unteren Fenster aufgelistet.
+![Load-Extraction-02](/img/content/board/Load-Extraction-02.png)
+5. **Optional:** Geben Sie URL-Parameter an, die dem Verbindungsstring hinzugefügt werden sollen. 
+Im abgebildeten Szenario wird eine WHERE-Bedingung angegeben, die die Extraktion auf die Einkaufsorganisation (EKORG) '1000' einschränkt. 
+Weitere Informationen zu URL-Parametern finden Sie unter [Dynamische Verbindungsparameter](../fortgeschrittene-techniken/extraktionsparameter#parameters-tab-source).
+6. Klicken Sie auf **[Browse Table]**, um eine Vorschau der extrahierten SAP-Daten zu erhalten. 
+**Hinweis:** Die Vorschau zeigt je nach Art der Extraktion echte oder Dummy-Daten an.
+![Load-Extraction-03](/img/content/board/Load-Extraction-03.png)
+7. Klicken Sie auf **[MAPPING]**, um mit dem Mapping der Felder der Extraktion mit existierenden BOARD-Entitäten fortzufahren. 
+8. Wählen Sie die entsprechenden Felder für die Zuordnung aus (z. B. WERKS, NAME1, usw.).
+![Load-Extraction-04](/img/content/board/Load-Extraction-04.png)
+9. Mappen Sie in der Spalte **Position** jedes Feld der Entität auf ein SAP-Feld. Wählen Sie den richtigen Modus für *Insert* oder *Update*. Im abgebildeten Beispiel ist für alle Felder der Modus "ADD NEW ITEM" ausgewählt.
+10. Klicken Sie auf **[Browse Query]** und **[OK]**.
+![Load-Extraction-05](/img/content/board/Load-Extraction-05.png)
+11. Führen Sie den Data Reader aus, um die SAP-Daten zu extrahieren. <br>
+![Load-Extraction-06](/img/content/board/Load-Extraction-06.png)
+![Load-Extraction-06](/img/content/board/Load-Extraction-07.png)
+Nach dem Ausführen des Data Readers zeigt das BOARD Protokoll an, wie viele Zeilen geladen wurden. <br>
