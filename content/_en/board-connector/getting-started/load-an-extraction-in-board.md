@@ -14,10 +14,10 @@ progressstate: 3
 Extractions can be loaded in BOARD using the Data Reader. In the following example an extraction "Plants" is created in the BOARD Designer. 
 The extraction "Plants" extracts the table *T001W* from SAP. 
 
-1. In BOARD, select **[+ DATA READER]**  to create a new Data Reader. Enter a name, in the depicted example "Plants"; and a group, in the depicted example "Main Group". Select the source type "SAP". <br>
+1. In BOARD, select **[+ DATA READER]**  to create a new Data Reader. Enter a name (here: "Plants") and a group (here: "Main Group"). Select the source type "SAP". <br>
 ![Load-Extraction-01](/img/content/board/Load-Extraction-01.png)
 2. Create a new connection for the BOARD Connector Server. Optionally, you can select an existing connection. Set a *name* and the *URL* of the BOARD Connector server (e.g., localhost:8098).<br>
-3. Click the "Connect" icon (1) to pull a list of extractions from BOARD Connector.
+3. Click the "Connect" icon (1) to pull a list of extractions from the BOARD Connector.
 4. Select an extraction (here: T001W)  from the EXTRACTOR box on the right hand-side. The extraction's metadata (field names, data types) is listed in the window below.
 ![Load-Extraction-02](/img/content/board/Load-Extraction-02.png)
 5. **Optionally:** Specify URL parameter(s) to add to the connection string. 
