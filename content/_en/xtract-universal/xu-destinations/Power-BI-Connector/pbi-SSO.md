@@ -8,7 +8,7 @@ parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url:
+progessstate: 5
 ---
 
 When setting up the Xtract Universal data source in Power BI for the first time, you are prompted for one of the following auhtorization methods. Select an auhtorization method according to your landscape:

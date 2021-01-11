@@ -8,7 +8,7 @@ parent: alteryx-de
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen-alteryx-plugin-de
+progressstate: 5
 ---
 
 ### Xtract Universal Tool in Alteryx verwenden

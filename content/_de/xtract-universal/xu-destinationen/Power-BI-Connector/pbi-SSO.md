@@ -8,7 +8,7 @@ parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-old_url:
+progressstate: 5
 ---
 
 Beim erstmaligem Einrichten der Xtract Universal-Datenquelle in Power BI, werden Sie aufgefordert eine der folgenden Authentifizierungsmethoden auszuwählen:

@@ -8,7 +8,7 @@ parent: getting-started
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-progressstate: 3
+progressstate: 5
 ---
 
 Extractions can be loaded in BOARD using the Data Reader. In the following example an extraction "Plants" is created in the BOARD Designer. 
@@ -23,7 +23,7 @@ The extraction "Plants" extracts the table *T001W* from SAP.
 5. **Optionally:** Specify URL parameter(s) to add to the connection string. 
 In the depicted scenario a WHERE-clause is specified, restricting the extraction to purchasing organization (EKORG) '1000'. 
 For more information about URL parameters, see [Dynamic Connection Parameters](../advanced-techniques/extraction-parameters#subsection-parameters-tab-source).
-6. Click **[Browse Table]** to get a preview of the extracted SAP data. 
+6. Click **[Browse Table]** to get a preview of the extracted SAP data. <br>
 **Note:** The preview displays real or dummy data depending on the type of extraction.
 ![Load-Extraction-03](/img/content/board/Load-Extraction-03.png)
 7. Click **[MAPPING]** to proceed to mapping the fields of the extraction with existing BOARD entities. 
