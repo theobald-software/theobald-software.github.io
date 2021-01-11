@@ -9,48 +9,54 @@ permalink: /:collection/:path
 weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=settings-alteryx-plugin-en-
+progressstate: 5
 ---
 
-To use the Xtract Universal tool you will have to add it to a workflow.
-
+### Using Xtract Universal Tool in Alteryx
+1. Add the the Xtract Universal tool to your Alteryx workflow.
 ![XU_alteryx_plugin](/img/content/XU_alteryx_plugin.png){:class="img-responsive"}
+2. Specify the following settings for the Xtract Universal tool in the Alteryx Designer:
+- Connection (1)
+- Parameters (2)
 
-Following settings have to be specified for the Xtract Universal tool in the Alteryx Designer.
-
-## Connection
+### Connection
 
 **Server**<br>
-the name, IP or domain and port the server can be accessed with within the network.
+The name, IP or domain and port to access the server within the network. <br>
+Format: [Server]:[Port].
 
 **Extraction**<br>
-the name of the desired extraction. When clicking the arrow next to the text area, all available extractions will be loaded into a dropdown menu. Only those extractions will be displayed, for which you selected the alteryx destination type in Xtract Universal designer.
-For this functionality the Xtract Universal server has to be up and running.
+The name of the desired extraction. When clicking the arrow next to the text area, all available extractions are loaded into a drop-down menu. 
+Only the extractions with Alteryx as destination type are displayed. You can define the destination type in the Xtract Universal Designer.
 
-**Send SAP credentials** <br>
-This setting is required, if the *Require SAP Credentials to be explicitly supplied for execution* checkbox has been flagged in the [SAP source](../../introduction/sap-connection#authentication) in Xtract Universal.
-This might be useful in self service scenarios, where each extraction needs to be executed using an individual user's SAP credentials instead of the one, globally defined in the Xtract Universal SAP source.
+{: .box-note }
+**Note:** Make sure the Xtract Universal server is running.
 
-![alteryx-extraction-selection](/img/content/alteryx-extraction-selection.png){:class="img-responsive"}
+**Send SAP credentials** (3) <br>
+Checkbox *Send SAP credentials* is only available, if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is marked in the [SAP source](../../introduction/sap-connection#authentication) settings in Xtract Universal.
+The setting *Send SAP credentials* can be useful in self service scenarios. When each extraction needs to be executed using an individual user's SAP credentials instead of the globally defined credentials.
 
-## Parameters 
-When selecting the **Parameters** tab, the tool will load the available parameters for the specified extraction. 
 
-**Override custom Parameters with static values**<br>
+### Parameters 
+In the tab *Parameters* tab, the Xtract Universal tool can load the available parameters for the specified extraction. 
 
-In this case we have an extraction of SAP customers, where the city parameter in the **custom defined parameters** tab will be overwritten with a static value. This is done by checking the **Override** field and entering a new **value**.
+### Example 1: Overriding Custom Parameters with Static Values
+
+In the given example, an extraction of SAP customers contains the *city* parameter defined in the **Custom Defined Parameters**. The *city* parameter needs to be overwritten with a static value (here: Stuttgart).
+To override the parameter *city*, mark the checkbox **Override** and entering a new *value*.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
 
-**Override custom Parameters with dynamic values**<br>
-The Xtract Universal tool can also have an input, e.g. the Input Data Tool.
-The data input can dynamically be used to override the custom parameter in Xtract Universal.<br> 
-In this case we have an extraction of SAP customers, where the city parameter will be dynamically parametrized.
-Those can be edited by checking the **Override** and **Map** field and selecting the incomping input field as a new **value**.
+### Example 2: Overriding Custom Parameters with Dynamic Values
+The Xtract Universal tool can also receive inputs, e.g., via the Input Data Tool.
+The data input can be dynamically used to override the custom parameter in Xtract Universal.<br> 
+In the given example there is an extraction of SAP customers with the city parameter to be dynamically parametrized.
+To override the parameter *city*, mark the checkbox **Override** and the checkbox **Map**. Select an item out of the drop-down list in the field **value**.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters-override.PNG){:class="img-responsive"}
 
-You can read more about custom parameters [here](../../advanced-techniques/user-defined-variables).
+For more information on custom parameters go to [User-Defined Variables](../../advanced-techniques/user-defined-variables).
 
-If the connection to the specified Xtract Universal server could be established without any errors, the tool will have a tooltip in the following format: [Extraction] @ [Server]
+If the connection to the specified Xtract Universal server is not established and no errors are shown, the Xtract Unversal tool has a tooltip in the following format: [Extraction] @ [Server].
 
 ![alteryx-full-workflow](/img/content/alteryx-full-workflow.PNG){:class="img-responsive"}

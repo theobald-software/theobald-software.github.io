@@ -62,11 +62,15 @@ The following authentication methods are supported:
 You can additionally use [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) for authentication (available only for several connectors, e.g., ERPConnect, ERPConnect Services, Xtract Universal and BOARD Connector).
 
 
-**Require SAP credentials to be explicitly supplied for execution** <br>
-This option is only active when using *Plain* or *SNC* authentication method. SAP credentials entered in the *User* and *Password* fields are not applied. Instead, SAP credentials need to be provided via basic authentication when executing an extraction. Caching the result of extractions is inactive. See [Alteryx](../xu-destinations/alteryx/settings-alteryx-plugin/) or [Power BI Connector](../xu-destinations/Power-BI-Connector/pbi-SSO/) destinations for possible examples. 
+**Require SAP credentials to be explicitly supplied for execution** (4) <br>
+Option available only when using *Plain* or *SNC* authentication method. SAP credentials entered in the *User* and *Password* fields are not applied.
+Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
+Caching the result of extractions is inactive. 
+
+See [Alteryx](../xu-destinations/alteryx/settings-alteryx-plugin) or [Power BI Connector](../xu-destinations/Power-BI-Connector/pbi-SSO) destinations for possible examples. 
 
 {: .box-note }
-**Note:** This option requires extractions to be called via [HTTPS - unrestricted](../server/server-settings#web-server).
+**Note:** The option "Require SAP credentials to be explicitly supplied for execution" requires extractions to be called via [HTTPS - unrestricted](../server/server-settings#web-server).
 
 #### SNC 
 
