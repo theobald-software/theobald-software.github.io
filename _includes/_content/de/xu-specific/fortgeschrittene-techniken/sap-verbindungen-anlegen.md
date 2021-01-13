@@ -60,9 +60,15 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 ![XU-Authentication](/img/content/xu/sap-details-authentication.png){:class="img-responsive"} 
 Zusätzlich können Sie auch [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket) zur Authentifizierung verwenden (verfügbar nur für einige Produkte, z.B. ERPConnect, ERPConnect Services, Xtract Universal und BOARD Connector).
 
+**Require SAP credentials to be explicitly supplied for execution** (4) <br>
+Option nur bei Verwendung der Authentifizierungsmethode *Plain* oder *SNC* verfügbar. Die in die Felder *User* und *Password* eingegebenen SAP-Anmeldeinformationen werden nicht übernommen.
+Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
+Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inaktiv.
+
+**Nur Xtract Universal**: Siehe [Power BI Connector](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/Power-BI-Connector/pbi-SSO) oder [Alteryx](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/alteryx-de/einstellungen-alteryx-plugin-de#verbindung) Destinationen für mögliche Beispiele. 
+
 {: .box-note }
-**Hinweis:** beim Markieren der Checkbox **Require SAP credentials to be explicitly supplied for execution** werden die SAP-Anmeldedaten nicht im Cache gespeichert. Diese Option ist nur aktiv bei Verwendung von *Plain* oder *SNC* Authentifizierungsmethoden und beim Ausführen der Extraktion im Browser (Schaltfläche **[Run in Browser]**.
-Nach dem Start einer Extraktion wird ein Pop-Up-Fenster geöffnet und der Benutzer wird bei jeder Extraktion aufgefordert seine SAP-Anmeldedaten einzugeben. 
+**Hinweis:** Die Option "Require SAP credentials to be explicitly supplied for execution" erfordert, dass die Extraktionen über [HTTPS - unrestricted](../server/server_einstellungen#web-server) aufgerufen werden.
 
 
 #### SNC
@@ -107,6 +113,5 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 
 1. Im Hauptfenster des Designers navigieren Sie zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
 Das Fenster "Manage Sources" wird geöffnet.<br>
-
 2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist. 
 ![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}

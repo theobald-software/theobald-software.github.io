@@ -64,7 +64,7 @@ To create the "ExtractionStatistics" table, create an SQL table according to the
 CREATE TABLE [dbo].[ExtractionStatistics](
 	[TableName] [nchar](50) NULL,
 	[RowsCount] [int] NULL,
-	[Datestamp] [nchar](50) NULL,
+	[Timestamp] [nchar](50) NULL,
 	[RunState] [nchar](50) NULL
 ) ON [PRIMARY]
 GO
@@ -76,14 +76,14 @@ INSERT INTO [ExtractionStatistics]
 (
      [TableName], 
      [RowsCount], 
-     [Datestamp],
+     [Timestamp],
      [RunState]
 )
 VALUES
 (
      '#{Extraction.TableName}#', 
      '#{Extraction.RowsCount}#', 
-     '#{Extraction.Datestamp}#',
+     '#{Extraction.Timestamp}#',
      '#{Extraction.RunState}#'
 );
 ```

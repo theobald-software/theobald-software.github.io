@@ -20,10 +20,10 @@ Different types of log files are created.
 
 |Type | Name | Description | Location path |
 |:------ | :------ |:--- | :--- |
-|Server| ServiceLog.txt | Contains the activities of BCService.exe.| `C:ProgramFiles\BOARDConnector\logs` |
-|Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log | The name contains the timestamp in UTC. A new file is created when the server is started, additionally a new log file is created every 24 hours. BCConfigServer.exe is the corresponding process.| `C:ProgramFiles\BOARDConnector\logs\server\config` |
-|Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log  | The name contains the timestamp in UTC. A new file is created when the server is started, additionally a new log file is created every 24 hours. BCWebServer.exe is the corresponding process.| `C:ProgramFiles\BOARDConnector\logs\server\web` |
-|Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log  | The name contains the timestamp in UTC. A new file is created when a TCP connection is accepted.BCRun.exe is the corresponding process.| `C:ProgramFiles\BOARDConnector\logs\server\run` |  
+|Server| ServiceLog.txt | Contains the activities of BCService.exe.| `C:ProgramFiles\BOARD Connector\logs` |
+|Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log | The name contains the timestamp in UTC. A new file is created when the server is started, additionally a new log file is created every 24 hours. BCConfigServer.exe is the corresponding process.| `C:ProgramFiles\BOARD Connector\logs\server\config` |
+|Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log  | The name contains the timestamp in UTC. A new file is created when the server is started, additionally a new log file is created every 24 hours. BCWebServer.exe is the corresponding process.| `C:ProgramFiles\BOARD Connector\logs\server\web` |
+|Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log  | The name contains the timestamp in UTC. A new file is created when a TCP connection is accepted.BCRun.exe is the corresponding process.| `C:ProgramFiles\BOARD Connector\logs\server\run` |  
 |Extraction| Extraction logs: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log | The name contains the timestamp in UTC. A new file is created to start an extraction. BCRun.exe is the corresponding process.| `C:\Program Files\BOARDConnector\logs\extractions\[Name_der_Extaktion]`|
 
 ### Log Levels

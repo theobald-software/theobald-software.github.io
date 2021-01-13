@@ -21,10 +21,10 @@ Es werden verschiedene Arten der Log-Dateien erstellt.
 
 |Typ | Name | Beschreibung | Pfad zum Ablageort |
 |:------ | :------ |:--- | :--- |
-|Server| ServiceLog.txt | Enthält die Aktivitäten von BCService.exe.| `C:ProgramFiles\BOARDConnector\logs` |
-|Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. BCConfigServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARDConnector\logs\server\config` |
-|Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. BCWebServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARDConnector\logs\server\web` |
-|Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Zeitpunkt der Entgegennahme einer TCP-Verbindung erstellt. BCRun.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARDConnector\logs\server\run` |  
+|Server| ServiceLog.txt | Enthält die Aktivitäten von BCService.exe.| `C:ProgramFiles\BOARD Connector\logs` |
+|Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. BCConfigServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARD Connector\logs\server\config` |
+|Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. BCWebServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARD Connector\logs\server\web` |
+|Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Zeitpunkt der Entgegennahme einer TCP-Verbindung erstellt. BCRun.exe ist der dazugehörige Prozess.| `C:ProgramFiles\BOARD Connector\logs\server\run` |  
 |Extraktion| Extraktions-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start einer Extraktion erstellt. BCRun.exe ist der dazugehörige Prozess. | `C:\Program Files\BOARDConnector\logs\extractions\[Name_der_Extaktion]`|
 
 ### Log Levels

@@ -1,6 +1,6 @@
 General Settings are independent of the extraction type.
 
-### To open General Settings
+### To Open General Settings
 1. In the main window of the Designer, double-click an extraction.<br>
 The main window of the component opens.<br>
 Example:
@@ -11,7 +11,7 @@ The window "General Settings" opens.
 
 
 
-### Misc. tab
+### Misc. Tab
 The miscellaneous tab consists of two subsections:
 - Options
 - Keywords
@@ -41,7 +41,7 @@ Within the Designer you can use these keywords to filter  extractions.
 **Tip:** to display filter options, navigate to **[Extractions] > [Filter]** or press **[CTRL]+[F]**.
  
 
-### Primary Key tab
+### Primary Key Tab
 Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 

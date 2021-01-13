@@ -4,18 +4,19 @@ layout: page
 title: Troubleshooting
 description: Troubleshooting
 product: board-connector
-parent: introduction
+parent: advanced-techniques
 permalink: /:collection/:path
 weight: 8
 lang: en_GB
+progressstate: 3
 ---
 
-**Service did not start**
+### Service Did Not Start
 
 When a service does not start, configure the service to use an user account with the following rights: 
 
-- Local Security Policy -> Local Policies -> User Right Management: Log on as a service
-- Permissions for the installation directory + sub-directory: Modify
+- Local Security Policy > Local Policies > User Right Management: log on as a *service*.
+- Permissions for the installation directory + sub-directory: Modify.
 - HTTP URL Access Control List for http://+:httpPort/. 
 please refer to the following site to set the URLACL: [http://msdn.microsoft.com/en-us/library/ms733768.aspx](http://msdn.microsoft.com/en-us/library/ms733768.aspx)
 Instead of the URLACL, you may also use an administrator account.

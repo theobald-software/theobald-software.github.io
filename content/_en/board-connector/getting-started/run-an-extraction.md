@@ -1,7 +1,7 @@
 ---
 ref: bc-getting-started-03
 layout: page
-title: Step 3 - Run an Extraction
+title: 3. Run an Extraction
 description: Step 3 - Run an Extraction
 product: board-connector
 parent: getting-started
