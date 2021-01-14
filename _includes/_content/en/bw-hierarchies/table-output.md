@@ -25,7 +25,7 @@ The node’s (technical) name.
 **NodeText** <br>
 The descriptive text in the respective logon language (only when FetchText is set to true in the settings).
 
-<br>
+### Output of SAP
 The following example depicts the original hierarchy in SAP of PM_COUNTRY.
 
 ![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
