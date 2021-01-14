@@ -1,4 +1,8 @@
-Compared to other source components, the output of hierarchy components is fixed. It always has the same columns for every hierarchy, as described in the following:
+
+### Output of Hierarchy Tables
+
+Compared to other source components, the output of hierarchy components is fixed. It always contains the same columns.
+![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 
 **NodeID**<br>
 Unique node key.
@@ -21,10 +25,10 @@ The node’s (technical) name.
 **NodeText** <br>
 The descriptive text in the respective logon language (only when FetchText is set to true in the settings).
 
-The original hierarchy of PM_COUNTRY looks in SAP as follows:
+<br>
+The following example depicts the original hierarchy in SAP of PM_COUNTRY.
 
 ![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
 
-The output looks as follows:
 
-![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
+

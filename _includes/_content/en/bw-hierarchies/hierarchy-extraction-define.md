@@ -21,4 +21,5 @@ The component saves all relevant data for further processing.<br>
 The settings can be altered after creating extractions any time.<br>
 
 **Date To**<br>
-The defalut value for **Date To** is *99991231*. To change the value, click **[Run]** and override the value.
+![Change Date To](/img/content/xu/xu_search-hierarchy-name-filled.png){:class="img-responsive"}
+The defalut value for **Date To** is *99991231*. To change the value, click **[Run]**( and override the value.

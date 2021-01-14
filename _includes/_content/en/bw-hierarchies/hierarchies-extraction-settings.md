@@ -1,36 +1,52 @@
-Click the *Extraction Settings* link to open the Extraction Settings dialog.
+### To Open Extraction Settings
 
-**Representation** 
+![Extraction Settings](/img/content/xu/xu_bw-hierarchies_Extraction-Settings.png){:class="img-responsive"}
+1. In the window "Extract SAP BW Hierarchies" click on **[Extraction Settings]**. The window "Hierarchy Settings" opens.
+2. Change the settings, if needed.
+3. Click **[OK]** to confirm.
 
-- **ParentChild**: The hierarchy has the SAP parent-child format.
+### Hierarchy Settings
+![Hierarchies-Settings](/img/content/Hierarchy-settings.png){:class="img-responsive"}
+The window “Hierarchy Settings” contains two subsections:
+- Extraction Settings
+- Natural Representation Settings
 
+#### Extraction Settings
+**Representation:** 
+- **ParentChild**: The hierarchy is represented in the SAP parent-child format.
 ![Hierarchies-Parent-Child](/img/content/Hierarchies-Parent-Child.png){:class="img-responsive"}
+- **Natural**: The SAP parent-child hierarchy is transformed into a regular hierarchy.
 
-- **Natural**: The parent child hierarchy will be transformed in a regular hierarchy.
 
 **Remove Leading Zeros**<br>
-Removes all leading zeros using ALPHA conversion in the column NodeName. NodeName can then be used in a join condition with the corresponding Dimension-Key of a BWCube extraction.<br>
-Works also for compound InfoObjects. Example: 0CO_AREA (1000) and 0COSTCENTER (0000003100) will become 1000/3100.
+Removes all leading zeros (via ALPHA conversion) in the column NodeName.
+NodeName can then be used in a join condition with the corresponding Dimension-Key of a BW Cube extraction.<br>
+The conversion works also for compound InfoObjects.<br> 
+Example: 0CO_AREA (1000) and 0COSTCENTER (0000003100) becomes 1000/3100.
 
 **Fetch description texts**<br>
-This means that the field NodeText contains the node text based on the system language settings. 
+Sets the field *NodeText* to the node text based on the system language settings. 
 
-**Natural Representation Settings**<br>
-is active only, when Representation has the value Natural
+#### Natural Representation Settings
+
+{: .box-note}
+**Note:** the subsection **Natural Representation Settings** is only active, when **Representation** field is set to value *Natural*.
 
 **Level Count** <br>
-Defines the maximum number of levels if the representation natural is selected. In the following screenshot you see the hierarchie shown in the previous screenshot with five levels in the representation natural.
-
+Defines the maximum number of levels. 
+The following example depicts the previously shown hierarchy with five levels and in the representation set to *Natural*.
 ![Hierarchy-Parent-Child-Natural](/img/content/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
-
-**Fill empty levels**  <br>
-If the natural representation is selected the bottom element of the hierarchy will be copied until the last level. In the following screenshot you will see the hierarchy from above with the option Repeat Leaves activated.
-
-
-![Hierarchy-Parent-Child-Repeat](/img/content/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
-
-**Description texts for levels**<br>
-Means, that the output has a field LevelTextN for each field LevelN, that contains the text based on the system language settings.
 
 **Leaves only**<br>
 Delivers only the leaves as data records.
+![Hierarchy-Parent-Child-Repeat](/img/content/Hierarchy-leaves-only.png){:class="img-responsive"}
+
+**Fill empty levels**  <br>
+Copies the bottom element of the hierarchy until the last level.
+The following example depicts the previously shown hierarchy with the activated *Repeat Leaves* option.
+![Hierarchy-Parent-Child-Repeat](/img/content/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
+
+
+**Description texts for levels**<br>
+Sets the output field *LevelTextN* for each field *LevelN* containing the text based on the system language settings.
+
