@@ -10,13 +10,16 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements1
 ---
-### Setting up the Environment
+
+### Necessary Components
 - ADFv2
 - Azure-SSIS Integration Runtime (IR)
 
+### Setting up the Environment
+
 Setting up the necessary environment is documented in the Microsoft documentation below:
 
-- [Provision the Azure-SSIS Integration Runtime in Azure Data Factory with Azure portal UI ](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-deploy-ssis-packages-azure) or
+- [Provision the Azure-SSIS Integration Runtime in Azure Data Factory with Azure portal UI ](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-deploy-ssis-packages-azure) 
 - [Provision the Azure-SSIS Integration Runtime in Azure Data Factory with PowerShell](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-deploy-ssis-packages-azure-powershell)
 
 Once the environment is running, develop a simple SSIS package (NOT containing any Xtract IS components) and deploy and run the package on the Azure-SSIS IR.
