@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installation1
 ---
 
-This section describes how to setup Xtract IS for Azure on an Azure SSIS-IR for running SSIS packages containing Xtract IS components.
+The following section describes how to setup Xtract IS for Azure on an Azure SSIS-IR for running SSIS packages containing Xtract IS components.
 
 
 ### Manual Setup

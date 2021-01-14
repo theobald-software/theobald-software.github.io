@@ -11,8 +11,9 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation1
 ---
 
+Im folgenden Abschnitt wird beschrieben, wie Sie Xtract IS für Azure auf einer Azure SSIS-IR für die Ausführung von SSIS-Paketen mit Xtract IS-Komponenten einrichten.
 
-### Allgemeines Setup
+### Manuelles Setup
 
 Die Installtion von *Xtract IS for Azure* erfolgt gemäß der von Microsoft [hier](https://docs.microsoft.com/de-de/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup) beschriebenen Installation von Drittanbieter-Komponenten. Relevant ist der Abschnitt für das Einrichten eines Azure Storage Containers und das Anlegen einer Shared Access Signature (SAS).
 
