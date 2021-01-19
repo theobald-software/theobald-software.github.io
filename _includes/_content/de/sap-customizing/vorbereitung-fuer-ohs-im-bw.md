@@ -44,6 +44,9 @@ In Abhängigkeit des verwendeten SAP-Releases kann eine OHS-Extraktion wie folgt
 3. Speichern und Aktivieren der OHS-Destination.
 4. Anlage eines neuen Datentransfers sowie zugehörige Transformationen. Klicken Sie in dem mittleren Baum der InfoAreas auf die neu angelegte RFC-Destination und wählen *Data Transfer Prozess anlegen*.
 5. Speicherung und Aktivierung der DTP (je nach Bedarf sollte vor dem Aktivieren der Extraktionstyp von Delta auf Full gestellt werden). Anordnung von Destination, Transformationen und DTP im OHS-Baum nachfolgend.
+6. Erstellen Sie eine Prozesskette, die den im vorherigen Schritt erstellten DTP enthält.
+7. Stellen Sie sicher, dass bei der Variante Prozesskettenstart die Planungsoptionen *Start Using Meta Chain or API* ausgewählt ist.
+8. Aktivieren Sie die Prozesskette.
 ![OHS-BW-02](/img/content/ohs_4.png){:class="img-responsive"}
 ![OHS-BW-02](/img/content/ohs_5.png){:class="img-responsive"}
 ![OHS-BW-02](/img/content/ohs_7.png){:class="img-responsive"}
