@@ -19,3 +19,4 @@ vendor/cache
 # no temporary vim files
 *~
 *.swp
+_config-local-build.yml
