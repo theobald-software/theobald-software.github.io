@@ -11,6 +11,13 @@ lang: de_DE
 progressstate: 5
 ---
 
+
+Ab Xtract Universal version 4.21.6 wird  der ODBC-Treiber für  die Snowflake-Destination geändert.
+Durch diese Änderung wurde die Performance für dieses Ziel deutlich verbessert.
+Daher müssen Sie den neuesten ODBC-Treiber für Snowflake installieren (x64, Windows):
+https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html 
+
+Nur bis Version 4.21.5 (SnowSql-Treiber):
 - [SnowSql Driver version 1.2.9](https://kb.theobald-software.com/release-notes/XtractUniversal-4.16.5.html)
 - SnowSQL Client Version 1.2.5
 
