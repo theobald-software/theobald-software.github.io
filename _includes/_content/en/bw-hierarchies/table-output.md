@@ -1,5 +1,5 @@
 
-### Output of Hierarchy Tables
+### Output of a Hierarchy Structure
 
 Compared to other source components, the output of hierarchy components is fixed. It always contains the same columns.
 ![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
