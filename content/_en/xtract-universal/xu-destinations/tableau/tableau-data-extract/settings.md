@@ -23,7 +23,7 @@ The following settings can be defined for the destination:
 ![Tableau-Extraction-Specific-Settings](/img/content/Tableau-Extraction-Specific-Settings.png){:class="img-responsive"}
       
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
-### Column name style
+
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
