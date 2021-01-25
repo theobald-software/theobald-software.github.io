@@ -22,9 +22,7 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 ### Konfiguration vom Windows AD Service-Account.
 1. Erstellen Sie einen Windows AD Service-Account für den Xtract Server. Dies ist der Account, unter dem der Dienst läuft (z.B. XU-Service oder BOARD Connector Service).
 ![XU_ServiceAccount](/img/content/XU-server-service-account.png){:class="img-responsive"}
-2. Im Tab *Attribute editor* definieren Sie zwei *Service Principal Names* (SPN). Verwenden Sie die folgende Notation: *&lt;service class&lt;/&lt;host&lt;*, z.B.
-- *HTTP/FQDN.domain.local*.
-- *HTTP/FQDN.domain.local:8165*
+2. Im Tab *Attribute editor* definieren Sie zwei *Service Principal Names* (SPN). Verwenden Sie die folgende Notation: *&lt;service class&lt;/&lt;host&lt;*, z.B. *HTTP/FQDN.domain.local* & *HTTP/FQDN.domain.local:8165*
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
 3. Im Tab *Delegation* definieren Sie den Service-Account für eingeschränkte Bevollmächtigung - *Use Kerberos Only*.
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
