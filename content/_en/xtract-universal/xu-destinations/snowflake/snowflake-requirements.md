@@ -16,7 +16,7 @@ No additional installations are required to use the Snowflake destination.
 - [Download SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html)
 
 *****
-#### Weiterführende Links
+#### Related Links
 - [.NET-Framework](../../einfuehrung/systemvoraussetzungen#andere-anwendungen-und-frameworks)
 - [64-Bit Architektur](../../einfuehrung/systemvoraussetzungen#hardware-anforderungen)
 - [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)
