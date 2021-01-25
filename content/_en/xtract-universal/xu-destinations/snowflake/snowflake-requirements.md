@@ -18,6 +18,6 @@ No additional installations are required to use the Snowflake destination.
 *****
 #### Related Links
 - [.NET-Framework](../../introduction/requirements#other-applications-and-frameworks)
-- [64-Bit Architektur](../../introduction/requirements#hardware-requirements)
+- [64-Bit Architecture](../../introduction/requirements#hardware-requirements)
 - [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)
 
