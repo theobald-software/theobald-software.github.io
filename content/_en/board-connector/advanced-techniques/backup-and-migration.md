@@ -46,7 +46,7 @@ Both `config` and `logs` directories may contain sensitive information.
 
 ### How to Restore a Backup?
 
-{: .box-warning}
+{: .box-warning }
 **Warning! Data Loss!** <br>
 Restoring the backup of the `config` directory replaces the exisiting configuration. Make sure to remove the existing files before restoring the backups.
 
