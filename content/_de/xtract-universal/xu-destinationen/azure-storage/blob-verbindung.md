@@ -93,8 +93,10 @@ Bevor Sie die Authentifizierung über Azure Active Directory verwenden, führen 
 2. Registrieren Sie eine Anwendung auf Ihrem Azure AD-Mandanten, wie beschrieben in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Registrieren Sie die Anwendung als *Public client/native (mobile & desktop)*.
 3. Fügen Sie der registrierten Anwendung *API-Berechtigungen* hinzu, um den Zugriff auf die Azure Storage-Web-API zu gewähren.<br> 
 Die folgenden Berechtigungen sind erforderlich: *Azure Storage - Delegated permissions - user impersonation*, *Microsot Graph - User.Read*. Folgen Sie hierfür den Schritten beschrieben in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
-4. Öffnen Sie auf dem Azure-Portal Ihr Azure Speicherkonto.
-5. Weisen Sie dem Azure-Storage Zugriffsrechte zu. Folgen Sie hierfür den Schritten beschrieben in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). Die erforderliche RBAC-Rolle ist *Storage Blob Data Contributor*.
+4.  Weisen Sie [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient) als Standard-Redirect-URI zu. Dies kann in der Azure AD-App-Registrierung über **Manage > Authentication > Add a platform > Mobile and desktop applications** erfolgen. Kopieren Sie die URL und fügen Sie sie in das Feld *Custom redirect URI* ein und klicken Sie auf **[Configure]**. Bestätigen Sie im Bildschirm *Authentication* mit **[Save]**.
+![xu-azure-blob-con-11](/img/content/xu/xu-azure-blob-con-11.png){:class="img-responsive"} 
+5. Öffnen Sie auf dem Azure-Portal Ihr Azure Speicherkonto.
+6. Weisen Sie dem Azure-Storage Zugriffsrechte zu. Folgen Sie hierfür den Schritten beschrieben in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). Die erforderliche RBAC-Rolle ist *Storage Blob Data Contributor*.
 ![xu-azure-blob-con-07](/img/content/xu-azure-blob-con-07.png){:class="img-responsive"}
 
 {: .box-tip }
