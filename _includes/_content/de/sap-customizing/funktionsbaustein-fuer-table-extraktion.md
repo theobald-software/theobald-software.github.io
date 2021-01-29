@@ -1,4 +1,3 @@
-
 ### Einschränkungen von RFC_READ_TABLE 
 Insbesondere bei älteren SAP Releases bestehen einige Einschränkungen bei der Extraktion von Tabellen wenn der SAP Standardfunktionsbaustein (RFC_READ_TABLE) verwendet wird:
 

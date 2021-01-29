@@ -1,5 +1,5 @@
 {: .box-note }
-**Note** Die Table-Join Komponente wurde als *deprecated* (veraltet) gekennzeichnet. Verwenden Sie daher die Table-Komponente mit dem Z-Baustein Z_THEO_READ_TABLE, um SAP-Tabellen zu joinen.
+**Hinweis** Die Table-Join Komponente wurde als *deprecated* (veraltet) gekennzeichnet. Verwenden Sie daher die Table-Komponente mit dem Z-Baustein Z_THEO_READ_TABLE, um SAP-Tabellen zu joinen.
 
 Die Table Join-Komponente dient dazu, mehrere Tabellen oder Views auf SAP-Seite zusammenzufassen (Join).  
 

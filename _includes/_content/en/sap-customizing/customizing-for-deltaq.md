@@ -1,88 +1,85 @@
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Those steps for the DeltaQ customizing except step 2 are client specific.
-</div>  
+The use of the DeltaQ component makes it necessary to create an RFC destination in the SAP system. <br>
+The customising settings to be made in the SAP system are explained step by step below.
 
-In order to be able to use the DeltaQ components, some customizing settings have to be made in SAP as described step-by-step in the following:
+{: .box-note }
+**Note** The steps of DeltaQ customising, except for the creation of the logical destination, are client-dependent.
 
+### 1. Create RFC destination of type R/3
+Create a new RFC destination of type R/3 in transaction *SM59*, e.g. with name **XTRACT01**, **Connection Type 3**. No connection test is necessary for the creation.
 
-### STEP 1
+### 2. Create logical destination - optional
 
-Use transaction `SM59` to create an RFC destination of type `3`, e. g.  name it `XTRACT01`. 
+{: .box-note }
+**Note** In the step *Execute function module RSAP_BIW_CONNECT_40*, the logical destination is automatically created. 
 
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> You don't need to conduct a transmission test - only the destination has to be created
-</div> 
+Use transaction *SALE* to create a logical system analogous to the name of the RFC destination.
 
+![DeltaQ-Customising-01](/img/content/DeltaQ-Customizing-01.png){:class="img-responsive"}
 
-### STEP 2 [optional]
+### 3. Execute function module RSAP_BIW_CONNECT_40
+Go to transaction *SE37* and execute the module **RSAP_BIW_CONNECT_40** with the following import parameters. <br>
+Execute the module by pressing *F8*.
 
-STEP 2 to create a logical system is optional, since the functional module in STEP 3 will automatically create it if it does not exist. 
- 
-With the help of the SALE transaction, create a logical system with the same name as your destination in STEP 1.
+![DeltaQ-Customising-02](/img/content/DeltaQ-Customising-02.png){:class="img-responsive"}
 
-![DeltaQ-Customizing-01](/img/content/DeltaQ-Customizing-01.png){:class="img-responsive" }
+{: .box-note }
+**Note** This step assumes that the SAP system is modifiable.
 
+Import parameter | Example value | Comment
+------------ | ------------- | ------------
+I_LANGU | EN
+I_SLOGSYS | T90CLNT090 | Logical name of the source system. If you do not know this, look in table **T000** for the respective client (LOGSYS field).
+I_LOGSYS | XTRACT01 | 
+I_STEXT | Xtract Destination
+I_BASIC_IDOC | ZXTIDOC | Unique name of the RFC destinations.
+I_TSPREFIX | XT | Unique name of the RFC destinations.
+I_SAPRL | 700 | Automatically set by the SAP system.
+I_RESTORE | X
 
-### STEP 3
+![DeltaQ-Customizing-03](/img/content/DeltaQ-Customizing-03.png){:class="img-responsive"}
 
-Go to transaction SE37 and bring up the `RSAP_BIW_CONNECT_40` module in the test environment. 
+### 4. Delete the RFC destination of type R/3 
+Call transaction *SM59* and delete the RFC destination of type R/3 via **Detailed View > Menu > Delete**.
 
-Fill in your import parameters as shown in the screenshot. 
+### 5. Create RFC destination of type T
+Create a new destination of the *Connection Type* **T=TCP/IP** with identical name and set the following parameters.
 
-The parameter `I_SLOGSYS` is the logical name of the source system. If you're not sure what this is,<br> consult the `T000` table for the respective client (LOGSYS field). 
+Field | Example Value | Comment
+------------ | ------------- | ------------
+RFC Destination | XTRACT01 |
+Connection Type | TCP/IP Connection |
+Description 1| Xtract Destination | 
+Activation Type | Registered Server Program |
+Program ID | XTRACT01 |
+Gateway Host | sap-erp-as05.example.com | Name or IP address of the SAP system.
+Gateway service | sapgw00 | In the form sapgwnn, where nn is the SAP instance number, a two-digit number between *00* and *99*.
 
-The field `I_SAPRL` will have a default value set by the SAP system.
+![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
 
-Then execute the function module using F8.
+### 6. Execute function module RSAS_RBWBCRL_STORE
+Execution of the function block **RSAS_RBWBCRL_STORE** to activate the target system.
 
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> This STEP needs some parts (2-3) of the SAP System to be modifiable.
-</div>
+Import parameter | Example value 
+------------ | -------------
+I_RBWBCRL | 700 
+I_RLOGSYS | XTRACT01
 
-**Caution:** 
-The values for the parameters `I_BASIC_IDOC` and `I_TSPREFIX` must be **unique** for the different RFC Destinations.
-If you set the values ZXTIDOC and XT for XTRACT01, you can set e.g. ZX2IDOC and X2 for XTRACT02.
+{: .box-note }
+**Note:** The parameter *I_RBWBCRL* is the current SAP system release number.
 
-![DeltaQ-Customizing-03](/img/content/DeltaQ-Customizing-03.png){:class="img-responsive" }
+![DeltaQ-Customizing-05](/img/content/DeltaQ-Customizing-05.png){:class="img-responsive"}
 
+### 7. Registration of the RFC destination  
+In our [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher) you will find the instructions for registering the RFC server in SAP. 
 
-### STEP 4
+{: .box-note }
+**Note** This step applies to SAP kernel version 720 and higher.
 
-Now go back into the `SM59` transaction and delete the destination that you created in STEP 1 
-(Detailed *View -> Menu -> Delete*). 
-
-Then create a new destination with exactly the same name, but this time of the type `T = TCP/IP`. The activation type has to be a *Registered Server Program*. Enter the name of the destination for the program ID.
-
-Set the following fields:
-
-**Gateway Host:** is the name (or IP address) of your SAP system (`ptmalg` is the name of our SAP system used in this example)<br>
-**Gateway Service:** is generally `sapgwNN`, where NN is the ID of your SAP system, i.e. a number between 00 and 99. 
-
-![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive" }
-
-
-### STEP 5
-
-Launch the `RSAS_RBWBCRL_STORE` module as shown below. Its purpose is to activate the new target system.
-
-![DeltaQ-Customizing-05](/img/content/DeltaQ-Customizing-05.png){:class="img-responsive" }
-
-
-### STEP 6
-
-Refer to our [knowledge base](https://kb.theobald-software.com/sap/registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher) for registering the RFC Server in SAP
-
-<div class="alert alert-info">
-  <i class="fas fa-info-circle"></i> <strong>Note:</strong> STEP 6 is for SAP Kernel Release 720 or higher.
-</div>
-
-
-
-### STEP 7
-
-Go to SAP transaction `SMQS`. Select the destination created in STEP 4, e.g. XTRACT01. Use button `Register without activation` (or `Reg. o. Aktivierung`) and change the Max.Conn. parameter to 10. Increase this value when running several DeltaQ extractions in parallel on the same RFC destination.
+### 8. qRFC Monitor (QOUT Scheduler)
+Call transaction *SMQS*. Select the previously created RFC destination, e.g. **XTRACT01**. Then click on the button 'Register without activation' and change the parameter *Max.Verb.* to the value *10*. 
+Increase this value in case of parallel execution of several DeltaQ extractions on the same RFC destination.
 
 ![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
-
-For any Errors please refer to our [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide).              
+{: .box-note }
+**Note** For DeltaQ customising errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide).
