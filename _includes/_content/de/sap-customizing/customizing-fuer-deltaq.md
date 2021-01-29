@@ -1,29 +1,29 @@
-Die Verwendung der DeltaQ-Komponente macht die erstellung einer RFC-Destination im SAP-System notwendig. <br>
-Diese Customizing-Einstellungen im SAP vorzunehmen werden nachfolgend als Schritt für Schritt Anweisung beschrieben.
+Die Verwendung der DeltaQ-Komponente macht die Erstellung einer RFC-Destination im SAP-System notwendig. <br>
+Die im SAP-System vorzunehmenden Customizing-Einstellungen werden nachfolgend Schritt für Schritt erläutert.
 
 {: .box-note }
-**Note** Die Schritte des DeltaQ-Customizings außer dem Schritt, Logische Destination anlegen - optional, sind Mandanten abhängig.
+**Note** Die Schritte des DeltaQ-Customizings außer der Anlage der Logischen Destination, sind mandantenabhängig.
 
 ### 1. RFC-Destination vom Typ R/3 anlegen
-Legen Sie in der Transaktion *SM59* eine neue RFC-Destination vom Typ R/3 an, z.B. mit Namen **XTRACT01**, **Connection Type 3**. Es wird kein Verbindungstest für die Erstellung notwendig.
+Legen Sie in der Transaktion *SM59* eine neue RFC-Destination vom Typ R/3 an, z.B. mit Namen **XTRACT01**, **Connection Type 3**. Es ist kein Verbindungstest für die Erstellung notwendig.
 
 ### 2. Logische Destination anlegen - optional
 
 {: .box-note }
-**Hinweis** Im Schritt, Funktionsbaustein RSAP_BIW_CONNECT_40 ausführen, wird automatisch die logische Destination angelegt. 
+**Hinweis** Im Schritt *Funktionsbaustein RSAP_BIW_CONNECT_40 ausführen* wird automatisch die logische Destination angelegt. 
 
 Legen Sie mit Hilfe der Transaktion *SALE* ein logisches System analog zum Namen der RFC-Destination an.
 
 ![DeltaQ-Customizing-01](/img/content/DeltaQ-Customizing-01.png){:class="img-responsive"}
 
 ### 3. Funktionsbaustein RSAP_BIW_CONNECT_40 ausführen
-Gehen Sie in die Transaktion *SE37* und führen Sie den Baustein **RSAP_BIW_CONNECT_40** mit den nachfolgenden Import-Parameter aus. <br>
-Ausführung des Bausteins mittels *F8*.
+Gehen Sie in die Transaktion *SE37* und führen Sie den Baustein **RSAP_BIW_CONNECT_40** mit den nachfolgenden Import-Parametern aus. <br>
+Ausführung des Bausteins mittels Taste *F8*.
 
 ![DeltaQ-Customizing-02](/img/content/DeltaQ-Customizing-02.png){:class="img-responsive"}
 
 {: .box-note }
-**Hinweis** Dieser Schritt setzt voraus, dass das SAP-System in veränderbar ist.
+**Hinweis** Dieser Schritt setzt voraus, dass das SAP-System veränderbar ist.
 
 Importparameter | Beispielwert | Bemerkung
 ------------ | ------------- | ------------
@@ -39,10 +39,10 @@ I_RESTORE | X
 ![DeltaQ-Customizing-03](/img/content/DeltaQ-Customizing-03.png){:class="img-responsive"}
 
 ### 4. Löschen der RFC-Destination vom Typ R/3 
-Aufruf der Transaktion *SM59* und löschen der RFC-Destination vom Typ R/3 über *Detailanzeige -> Menü Löschen*.
+Aufruf der Transaktion *SM59* und Löschen der RFC-Destination vom Typ R/3 über **Detailed View > Menu > Delete**.
 
 ### 5. RFC-Destination vom Typ T anlegen
-Anlage einer neuen Destination vom **Connection Typ T=TCP/IP** mit identischem Namen und setzen nachfolgender Parameter.
+Anlage einer neuen Destination vom *Connection Type* **T=TCP/IP** mit identischem Namen und setzen nachfolgender Parameter.
 
 Feld | Beispielwert | Bemerkung
 ------------ | ------------- | ------------
@@ -52,11 +52,11 @@ Description 1| Xtract Destination |
 Activation Type | Registered Server Program |
 Program ID | XTRACT01 |
 Gateway Host | sap-erp-as05.example.com | Name oder IP-Adresse des SAP-Systems.
-Gateway service | sapgw00 | In der Form sapgwNN, wobei NN die SAP Instanznummer, eine zweistellige Zahl zwischen *00* und *99*, ist.
+Gateway service | sapgw00 | In der Form sapgwnn, wobei nn die SAP Instanznummer, eine zweistellige Zahl zwischen *00* und *99*, ist.
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
 
-### 6. Funktionsbaustein Baustein RSAS_RBWBCRL_STORE ausführen
+### 6. Funktionsbaustein RSAS_RBWBCRL_STORE ausführen
 Ausführung des Bausteins **RSAS_RBWBCRL_STORE** zur Aktivierung des Zielsystems.
 
 Importparameter | Beispielwert 
@@ -70,13 +70,13 @@ I_RLOGSYS | XTRACT01
 ![DeltaQ-Customizing-05](/img/content/DeltaQ-Customizing-05.png){:class="img-responsive"}
 
 ### 7. Registrierung der RFC-Destination  
-In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher) finden Sie die Anleitung zu der Registrierung des RFC Servers in SAP. 
+In unserer [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher) finden Sie die Anleitung zur Registrierung des RFC-Servers in SAP. 
 
 {: .box-note }
 **Hinweis** Dieser Schritt gilt ab der SAP Kernel-Version 720.
 
 ### 8. qRFC Monitor (QOUT Scheduler)
-Aufruf der Transaktion *SMQS*. Markieren der zuvor angelegten RFC-Destination, z.B. **XTRACT01**. Klicken Sie dann auf die Schaltfläche ‘Register without activation’ (or ‘Reg. o. Aktivierung’) und ändern Sie den Parameter Max.Verb. auf den Wert *10*. 
+Aufruf der Transaktion *SMQS*. Markieren der zuvor angelegten RFC-Destination, z.B. **XTRACT01**. Klicken Sie dann auf die Schaltfläche ‘Register without activation’ und ändern Sie den Parameter *Max.Verb.* auf den Wert *10*. 
 Erhöhung dieses Wertes bei paraller Ausführung mehrerer DeltaQ-Extraktionen auf derselben RFC-Destination.
 
 ![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }

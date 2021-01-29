@@ -9,13 +9,13 @@ In Abhängigkeit des verwendeten SAP-Releases kann eine OHS-Extraktion wie folgt
 
 
 {: .box-tip }
-**Tipp:** Die Verwendung von InfoSpokes wird ebenfalls unter BI 7.0 empfohlen, da sich diese in der Praxis als robuster als OHS-Destination gezeigt haben.
+**Tipp:** Die Verwendung von InfoSpokes wird ebenfalls unter BI 7.0 empfohlen, da sich diese in der Praxis robuster als OHS-Destinationen gezeigt haben.
 
 ### RFC-Destination anlegen
 
-1. Anlage einer RFC-Destination vom Typ *TCP/IP* mittels Transaktion *SM59*. (1)
-2. Der Aktivierungstyp muss *Registrierbares Serverprogramm* sein. (2)
-3. Vergabe einer frei wählbarer Programm ID. (3)
+1. Anlage einer RFC-Destination vom Typ *TCP/IP* mittels Transaktion *SM59*.
+2. Der Aktivierungstyp muss *Registrierbares Serverprogramm* lauten.
+3. Vergabe einer frei wählbaren Programm ID.
 
 {: .box-note }
 **Hinweis:** Der Name der Programm ID wird für die spätere Konfiguration erneut benötigt.
@@ -24,28 +24,28 @@ In Abhängigkeit des verwendeten SAP-Releases kann eine OHS-Extraktion wie folgt
 
 ### InfoSpokes und Prozessketten (BI < 7.0)
 
-1. Anlage eines InfoSpoke mittels Transaktion *RSA1* über das Menü **Werkzeuge -> Open Hub Service -> Infospoke**.
+1. Anlage eines InfoSpokes mittels Transaktion *RSA1* über das Menü **Werkzeuge -> Open Hub Service -> Infospoke**.
 2. Datenquelle im InfoSpoke hinterlegen, z.B. ODS-Objekt oder Cube.
-3. Im Tab *Destination* definieren eines Infospoke zur Datenextraktion in ein Fremdsystem. 
+3. Definieren eines InfoSpokes zur Datenextraktion in ein Fremdsystem im Tab *Destination*. 
 4. Angabe der vorab angelegten RFC-Destination. 
-5. Befüllung von zu übertragenden Spalten sowie ggf. eine Selektion. 
-6. Speicherung und Aktivierung des InfoSpokes.
-7. Generierung einer Prozesskette Transaktion *RSA1* in das Menü **Editieren -> Prozessketten**.
-8. Die Variante für die Prozesskette den Start durch *API* angehaken.
-9. Den vorhab angelegten Infospoke in die Prozesskette einfügen.
+5. Befüllen von zu übertragenden Spalten sowie ggf. einer Selektion. 
+6. Speichern und Aktivieren des InfoSpokes.
+7. Generieren einer Prozesskette mit Transaktion *RSA1* in das Menü **Editieren -> Prozessketten**.
+8. Anhaken von Start durch *API* in der Variante für die Prozesskette.
+9. Einfügen des vorab angelegten InfoSpokes in die Prozesskette.
 10. Speichern und Aktivieren der Prozesskette.
 
 ### OHS Destinations und Data Transfer Processes (BI >= 7.0)
 
-1. Im Administrator Workbench mittels Transaktion *RSA1* im linken Baum auf *Open Hub Destination* klicken. Klicken Sie mit der rechten Maustaste auf eine InfoArea und wählen Sie im Kontextmenü *Open Hub Destination* anlegen.
+1. In der Administrator Workbench mittels Transaktion *RSA1* im linken Baum auf *Open Hub Destination* klicken. Mit der rechten Maustaste auf eine InfoArea klicken und im Kontextmenü *Create Open Hub Destination* auswählen. 
 ![OHS-BW-02](/img/content/ohs_1.png){:class="img-responsive"}
-2. Im  Editiermodus der Destination den Typ auf *Third Party Tool* setzen sowie die vorab angelegte OHS-Destination ein.
+2. Im  Editiermodus der Destination den *Destination Type* auf *Third Party Tool* setzen, sowie die vorab angelegte OHS-Destination eintragen.
 ![OHS-BW-03](/img/content/ohs_2.png){:class="img-responsive"}
 3. Speichern und Aktivieren der OHS-Destination.
-4. Anlage eines neuen Datentransfers sowie zugehörige Transformationen. Klicken Sie in dem mittleren Baum der InfoAreas auf die neu angelegte RFC-Destination und wählen *Data Transfer Prozess anlegen*.
-5. Speicherung und Aktivierung der DTP (je nach Bedarf sollte vor dem Aktivieren der Extraktionstyp von Delta auf Full gestellt werden). Anordnung von Destination, Transformationen und DTP im OHS-Baum nachfolgend.
+4. Anlage eines neuen Datentransferprozesses (DTP) sowie zugehöriger Transformationen. Klicken Sie in dem mittleren Baum der InfoAreas auf die neu angelegte RFC-Destination und wählen *Create Data Transfer Process*.
+5. Speichern und Aktivieren des DTP (je nach Bedarf sollte vor dem Aktivieren der Extraktionstyp von *Delta* auf *Full* gestellt werden). Die Anordnung von Destination, Transformationen und DTP im OHS-Baum erfolgt danach.
 6. Erstellen Sie eine Prozesskette, die den im vorherigen Schritt erstellten DTP enthält.
-7. Stellen Sie sicher, dass bei der Variante Prozesskettenstart die Planungsoptionen *Start Using Meta Chain or API* ausgewählt ist.
+7. Stellen Sie sicher, dass bei der Variante Prozesskettenstart die Planungsoption *Start Using Meta Chain or API* ausgewählt ist.
 8. Aktivieren Sie die Prozesskette.
 ![OHS-BW-02](/img/content/ohs_4.png){:class="img-responsive"}
 ![OHS-BW-02](/img/content/ohs_5.png){:class="img-responsive"}
