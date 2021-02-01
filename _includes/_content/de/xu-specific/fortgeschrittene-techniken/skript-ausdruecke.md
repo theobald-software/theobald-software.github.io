@@ -1,5 +1,5 @@
 
-In Skript-Ausdrücken wird eine Formel in C#.Net-ähnlicher Syntax geschrieben: die Formel muss mit einem Raute-Symbol (#) beginnen und enden und kann als eine dynamische WHERE-Bedingung verwendet werden.
+In Skript-Ausdrücken wird eine Formel in C# Syntax geschrieben:Die Formel muss mit einem Raute-Symbol (#) beginnen und enden und kann als eine dynamische WHERE-Bedingung verwendet werden.
 
 Die folgenden grundlegenden .NET Objekte werden standardmäßig unterstützt:
 - Operationen aus dem System-Namensraum
@@ -25,7 +25,7 @@ Die folgenden grundlegenden .NET Objekte werden standardmäßig unterstützt:
 Skript-Ausdrücke können an foldenen Stellen in Xtract Universal verwendet werden:
 - Für die [WHERE-Bedingung](../table/where-bedingung) einer Tabelle.
 - Als Selektionsparameter einer DeltaQ-Extraktion.
-- In den Destination Settings der Datenbank-Destinationen mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
+- In den Destination Settings der Datenbank-Destinationen mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel). 
 - Als Verzeichnispfad der Azure-Storage-Destination.
 
 {: .box-note }
@@ -48,7 +48,7 @@ Folgende Ausdrücke sind definiert und können verwendet werden:
 | ```#(int)Extraction.RunState}#``` | Status der Extraktion als Zahl (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors |
 | ```#{Extraction.Timestamp}#``` | Zeitstempel der Extraktion |
 
-Sehen Sie auch das [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql) für die Verwendung von definierten Ausdrücken mittels Custom-SQL in den Destinationseinstellungen.
+Sehen Sie sich dazu auch das [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql) für die Verwendung von definierten Ausdrücken mittels Custom-SQL in den Destinationseinstellungen an.
 
 #### Skript-Ausdrücke bei der Azure Storage-Destination:
 
@@ -76,7 +76,7 @@ Eine IF-Abfrage hat die folgende Syntax: ```iif([bool condition], [string trueRe
 
 | Eingabe                                                | Ausgabe   |   Beschreibung |
 |:---|:---|:---|
-|```#{ iif(DateTime.Now.Month==7, "July","Unknown")}#``` | July   | Wenn wir im 7. Monat sind, dann "July" ausgeben, sonst "Unknown"
+|```#{ iif(DateTime.Now.Month==7, "July","Unknown")}#``` | July   | Wenn wir im 7. Monat sind, dann wird "July" ausgeben, sonst "Unknown"
 |```#{Extraction.ExtractionName}##{ iif(string.IsNullOrEmpty(Extraction.Context), string.Empty, "/" + Extraction.Context)}#```|| *Extraction.Context* liefert nur bei ODP-Extraktionen eine Rückgabe. Bei allen anderen Extraktionstypen ist die Rückgabe leer. Annahme: Der Name der Extraktion lautet 'SAP_1' und es handelt sich um eine Extraktion vom Typ 'Table'; der erzeugte Dateipfad lautet dann: ```SAP_1/[filename]```. Annahme: Der Name der Extraktion lautet 'SAP_2', es handelt sich um eine Extraktion vom Typ 'ODP' und eine DataSource (SAPI) wird extrahiert; der erzeugte Dateipfad lautet dann:```SAP_2/SAPI/[filename]```. 
 
 ### Definierte Methoden
@@ -88,7 +88,7 @@ Eine IF-Abfrage hat die folgende Syntax: ```iif([bool condition], [string trueRe
 
 ### Unterstützte Datentypen
 
-Die vollständige Liste der unterstützen [Datentypen](https://docs.microsoft.com/de-de/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) inklusive [Datum und Zeit](https://docs.microsoft.com/de-de/dotnet/standard/base-types/custom-date-and-time-format-strings) finden Sie in der Online-Hilfe von Microsoft.
+Die vollständige Liste der unterstützen [Datentypen](https://docs.microsoft.com/de-de/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) inklusive [Datum und Zeit](https://docs.microsoft.com/de-de/dotnet/standard/base-types/custom-date-and-time-format-strings) finden Sie in der Online-Dokumentation von Microsoft.
 
 
 ### Unterstützte Schlüsselwörter 

@@ -14,7 +14,7 @@ There are two types of script expressions in Xtract Universal:
 
 
 ### Syntax of Script Expressions
-In Script expressions, a formula is written in C# syntax: The formula must begin and end with a hash symbol (#). The formula starts with and ends with curly brackets ({}).
+In script expressions, a formula is written in C# syntax: The formula must begin and end with a hash symbol (#). The formula starts with and ends with curly brackets ({}).
 Example: ```#{ Extraction.TableName }# ```
 
 {: .box-note }
@@ -55,14 +55,14 @@ Xtract Universal script expressions support the following .NET objects, properti
 |   Input                         | Output                                                                         | Description              |
 |:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|
 |```#{ DateTime.Now}#```                                                             | DD.MM.YYYY HH:MM:SS | Current date and timestamp |
-|```#{ DateTime.Now.AddDays(-5).ToString("d") }#```                                  | DD.MM.YYYY | Date 5 days ago. If today's date is 10th, then 05th is output.         |
+|```#{ DateTime.Now.AddDays(-5).ToString("d") }#```                                  | DD.MM.YYYY | Date 5 days ago. If today's date is 10th, then 05th is the output.         |
 |```#{ DateTime.Now.ToShortDateString() }#```                                        | DD.MM.YYYY | Current date         |
 |```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | yyyyMMdd | Current date in SAP format          |
 |```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | yyyy0101 | Current year concatenated with "0101"           |
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
-|```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```                    | BIO/TMATERIAL | Trims the first Slash '/' of an SAP object, e.g. /BIO/TMATERIAL, so as not to create an empty folder in a file path
-|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | _BIO_TMATERIAL | Replaces alle Slashes '/' of an SAP object, e.g. /BIO/TMATERIAL, so as not to split the SAP object name by folders in a file path.         |
+|```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```                    | BIO/TMATERIAL | Trims the first slash '/' of an SAP object, e.g. /BIO/TMATERIAL, so as not to create an empty folder in a file path.
+|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | _BIO_TMATERIAL | Replaces all slashes '/' of an SAP object, e.g. /BIO/TMATERIAL, so as not to split the SAP object name by folders in a file path.         |
 
 
 
@@ -147,7 +147,7 @@ An IF-statement (ternary operator) is supported and has the following syntax: ``
 | Input                                                   | Output   | Description|
 |:--------------------------------------------------------|:---------|:-------|
 |```#{ iif(DateTime.Now.Month==7, "July","Unknown")}# ```| July     | When we are in the 7th month, the output is "July", all else is "Unknown". |
-|```#{Extraction.ExtractionName}##{ iif(string.IsNullOrEmpty(Extraction.Context), string.Empty, "/" + Extraction.Context)}#```|| *Extraction.Context* returns a result only with ODP extractions. With all other extraction types the result is empty. If the extraction name is 'SAP_1' and the extraction type is 'Table', the resulting file path would be ```SAP_1/[filename]```. If the extraction's name is 'SAP_2' and the extraction type is 'ODP' and a SAP DataSource (extraction context: SAPI) is being extracted, the resulting file path would be ```SAP_2/SAPI/[filename]```. 
+|```#{Extraction.ExtractionName}##{ iif(string.IsNullOrEmpty(Extraction.Context), string.Empty, "/" + Extraction.Context)}#```|| *Extraction.Context* returns a result only with ODP extractions. With all other extraction types the result is empty. If the extraction name is 'SAP_1' and the extraction type is 'Table', the resulting file path would be ```SAP_1/[filename]```. If the extraction name is 'SAP_2' and the extraction type is 'ODP' and a SAP DataSource (extraction context: SAPI) is being extracted, the resulting file path would be ```SAP_2/SAPI/[filename]```. 
 
 
 
