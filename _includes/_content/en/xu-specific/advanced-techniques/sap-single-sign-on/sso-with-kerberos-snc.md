@@ -21,7 +21,7 @@ ABAP application server has to run on a Windows OS and SNC with Kerberos encrypt
 
 1. Create a Windows AD service account for an Xtract Server. This is the account the service is running under (e.g., XU service account or BOARD Connector Service).
 ![XU_ServiceAccount](/img/content/XU-server-service-account.png){:class="img-responsive"}
-2. In the *Attribute editor* tab define two *Service Principal Names* (SPN). Use the following notation *&lt;service class&lt;/&lt;host&lt;*, e.g., *HTTP/FQDN.domain.local:8165*.
+2. In the *Attribute editor* tab define two *Service Principal Names* (SPN). Use the following notation *&lt;service class&lt;/&lt;host&lt;*, e.g., *HTTP/FQDN.domain.local* & *HTTP/FQDN.domain.local:8165*.
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
 3. In the *Delegation* tab define the service account for constrained delegation - *Use Kerberos Only*.
 ![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}

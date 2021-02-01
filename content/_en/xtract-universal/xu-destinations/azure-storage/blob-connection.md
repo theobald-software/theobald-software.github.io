@@ -88,9 +88,11 @@ General information about this method of authentication can be found in the [Mic
 Before using authentication via Azure Active Directory, perform the following steps on the Azure portal:
 1. On the Azure portal, open the *Azure Active Directory* service.
 2. Register an app with your Azure AD tenant. To do this, follow the steps as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Register the app as *Public client/native (mobile & desktop)*.
-3. Add *API permissions* to the registered app to grant access to the Azure Storage web API.<br> The following permissions are required: *Azure Storage - Delegated permissions - user impersonation*, *Microsot Graph - User.Read*. Follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
-4. On the Azure portal, open your Azure storage account.
-5. Assign access rights to the Azure storage as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). The required RBAC role is *Storage Blob Data Contributor*.
+3. Add *API permissions* to the registered app to grant access to the Azure Storage web API.<br> The following permissions are required: *Azure Storage - Delegated permissions - user impersonation*, *Microsoft Graph - User.Read*. Follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
+4. Assign [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient) as the standard Redirect URI. This can be done in the Azure AD app registration via **Manage > Authentication > Add a platform > Mobile and desktop applications**. Copy and paste the URL into in the *Custom redirect URI* field and click **[Configure]**. In the *Authentication* screen confirm with **[Save]**.
+![xu-azure-blob-con-11](/img/content/xu/xu-azure-blob-con-11.png){:class="img-responsive"} 
+5. On the Azure portal, open your Azure storage account.
+6. Assign access rights to the Azure storage as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). The required RBAC role is *Storage Blob Data Contributor*.
 ![xu-azure-blob-con-07](/img/content/xu-azure-blob-con-07.png){:class="img-responsive"}
 
 {: .box-tip }
