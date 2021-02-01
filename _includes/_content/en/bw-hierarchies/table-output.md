@@ -23,12 +23,13 @@ Name of InfoObject behind the corresponding node.
 The node’s (technical) name.
 
 **NodeText** <br>
-The descriptive text in the respective logon language (only when FetchText is set to true in the settings).
+The descriptive text in the respective logon language (only when FetchText is set to *true* in the settings).
 
-### Output of SAP
-The following example depicts the original hierarchy in SAP of PM_COUNTRY.
+### Output in SAP
+The PM_COUNTRY hierarchy from the example, looks in SAP as follows:
 
 ![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
 
-
+The corresponding flat data output in a browser looks as follows:
+![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output-Browser.png){:class="img-responsive"}
 

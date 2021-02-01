@@ -1,7 +1,7 @@
 ### To Open Extraction Settings
 
 ![Extraction Settings](/img/content/xu/xu_bw-hierarchies_Extraction-Settings.png){:class="img-responsive"}
-1. In the window "Extract SAP BW Hierarchies" click on **[Extraction Settings]**. The window "Hierarchy Settings" opens.
+1. In the window "Extract SAP BW Hierarchies" click **[Extraction Settings]**. The window "Hierarchy Settings" opens.
 2. Change the settings, if needed.
 3. Click **[OK]** to confirm.
 
@@ -20,7 +20,7 @@ The window “Hierarchy Settings” contains two subsections:
 
 **Remove Leading Zeros**<br>
 Removes all leading zeros (via ALPHA conversion) in the column NodeName.
-NodeName can then be used in a join condition with the corresponding Dimension-Key of a BW Cube extraction.<br>
+NodeName can then be used in a JOIN-condition with the corresponding Dimension-Key of a BW Cube extraction.<br>
 The conversion works also for compound InfoObjects.<br> 
 Example: 0CO_AREA (1000) and 0COSTCENTER (0000003100) becomes 1000/3100.
 
