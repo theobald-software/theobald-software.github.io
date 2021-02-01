@@ -1,7 +1,7 @@
 ---
 ref: xu-bw-hierarchies-03
 layout: page
-title: Extraction Settings
+title: Hierarchy Extraction Settings
 description: Extraction Settings
 product: xtract-universal
 parent: bw-hierarchies
