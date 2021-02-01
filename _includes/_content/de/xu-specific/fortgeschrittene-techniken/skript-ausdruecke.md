@@ -17,16 +17,16 @@ Die folgenden grundlegenden .NET Objekte werden standardmäßig unterstützt:
 | ```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101            | Jetziges Jahr mit "0101" verketten |
 | ```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101            | Jetziges Jahr mit "0101" verketten |
 |```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```                    | BIO/TMATERIAL | Entfernt einen führenden Schrägstrich, z.B. bei /BIO/TMATERIAL, damit kein leeres Verzeichnis angelegt wird.
-|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | _BIO_TMATERIAL | Entfernt alle Schrägstriche eines SAP Ojekts, z.B. /BIO/TMATERIAL, damit die Schrägstriche innerhalb des Namens das SAP Objekt nicht auf mehrere Verzeichnisse aufteilen.         |
+|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | _BIO_TMATERIAL | Entfernt alle Schrägstriche eines SAP Objekts, z.B. /BIO/TMATERIAL. Dadurch wird verhindert, dass die Schrägstriche innerhalb des Namens des SAP Objekts, nicht als Verzeichnistrenner interpretiert werden.         |
 
 
 ### Verwendung
 
-Skript-Ausdrücke können an foldenen Stellen verwendet werden:
-- Für die [WHERE-Bedingung](../table/where-bedingung) einer Tabelle
-- Als Selektionsparameter einer DeltaQ-Extraktion
+Skript-Ausdrücke können an foldenen Stellen in Xtract Universal verwendet werden:
+- Für die [WHERE-Bedingung](../table/where-bedingung) einer Tabelle.
+- Als Selektionsparameter einer DeltaQ-Extraktion.
 - In den Destination Settings der Datenbank-Destinationen mittels [Custom SQL](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql) (Xtract Universal Beispiel) verwendet werden. 
-- Als Verzeichnispfad der Azure-Storage-Destination
+- Als Verzeichnispfad der Azure-Storage-Destination.
 
 {: .box-note }
 **Hinweis:** Die Werte bei der Verwendung einer WHERE-Bedingung sind stets in einfachen Anführungsstrichen anzugeben.<br>
