@@ -51,7 +51,7 @@ Xtract Universal script expressions support the following .NET objects, properti
 **Note:** The most common usage scenario is using the methods and properties of the .NET ```DateTime``` and ```String``` classes.
 
 
-For further information of supported [.NET classes and their properties and methods](https://docs.microsoft.com/de-de/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) including [DateTime](https://docs.microsoft.com/de-de/dotnet/standard/base-types/custom-date-and-time-format-strings) and [String](https://docs.microsoft.com/de-de/dotnet/api/system.string?view=netframework-4.7.2) see the Microsoft online help.
+For further information of supported [.NET classes and their properties and methods](https://docs.microsoft.com/en-us/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) including [DateTime](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) and [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2) see the Microsoft online help.
 
 **Examples:**
 
