@@ -12,4 +12,3 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=script-expressions
 progressstate: 5
 ---
 {% include _content/en/xu-specific/advanced-techniques/script-expressions.md %}
-

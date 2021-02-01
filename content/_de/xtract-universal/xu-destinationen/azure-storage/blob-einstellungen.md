@@ -24,12 +24,12 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
-### Column name style
+<!-- ### Column name style -->
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
-
+<!-- ### Date Conversion -->
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
 
-#### Compression
+### Compression
 
 **None**<br>
 Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
@@ -37,7 +37,7 @@ Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
 **gzip**<br>
 Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt. 
 
-#### Blob Type
+### Blob Type
 
 **Append Blob**<br>
 Erstelt ein [Append Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs).
@@ -49,10 +49,13 @@ Erstellt ein [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservi
 {: .box-note }
 **Note:** Für beide Dateitypen wird beim Hochladen nach Azure-Storage automatisch ein MD5-Hash erstellt.
 
-#### Folder Path
+### Folder Path
 
-Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein.
+Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein: `[Ordner]` <br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
+
+Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
+
 
 
 ### File Splitting
