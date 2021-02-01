@@ -71,7 +71,14 @@ Go to the *File Format* tab or click **[OK]**. The *Azure Storage (Blob / Data L
 
 
 **Folder path** <br>
-Option to create a directory within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#destination-settings).
+
+Option to create a folder structure within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#folder-path). <br>
+For creating a single folder, enter a folder name without slashes: `[folder]` <br>
+Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
+
+This field allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
+
+
 
 *********
 
@@ -141,7 +148,11 @@ Click **[OK]** to confirm. <br>
 The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
 **Folder path** <br>
-Option to create a directory within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#destination-settings).
+Option to create a folder structure within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#folder-path). <br>
+For creating a single folder, enter a folder name without slashes: `[folder]` <br>
+Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
+
+This field allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
 
 ### File Format 
 Select the required file format between "Parquet" and "CSV".
