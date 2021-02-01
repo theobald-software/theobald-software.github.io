@@ -24,7 +24,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ![ext_spec_set_de_form_debug](/img/content/dest_set_hana.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
-### Column name style
+
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
