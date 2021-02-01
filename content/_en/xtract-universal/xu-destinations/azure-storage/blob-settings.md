@@ -23,12 +23,14 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 
-### Column name style
+<!-- ### Column name style -->
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 
+
+<!-- ### Date Conversion -->
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
-#### Compression
+### Compression
 
 **None**<br>
 The data is transferred uncompressed and stored as a csv file.
@@ -36,7 +38,7 @@ The data is transferred uncompressed and stored as a csv file.
 **gzip**<br>
 The data is transferred compressed and stored as a gz file. 
 
-#### Blob Type
+### Blob Type
 
 **Append Blob**<br>
 Creates an [Append Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs).
@@ -47,11 +49,14 @@ Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices
 {: .box-note }
 **Note:** For both file types an MD5 hash is created upon upload to Azure storage.
 
-#### Folder path
+### Folder path
 
-To write extraction data to a location within a specific folder in an Azure Blob container, enter a folder name without slashes.
-Subfolders are supported and can be defined using the following syntax: 
-`[folder]/[subfolder_1]/[subfolder_2]/…`
+Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](./blob-connection#azure-storage-connection). <br>
+For creating a single folder, enter a folder name without slashes: `[folder]` <br>
+Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
+
+This field allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
+
 
 
 ### File Splitting
