@@ -1,10 +1,14 @@
-Im Gegensatz zu den anderen Quellkomponenten ist die Ausgabe der Hierarchie-Komponente starr. Sie hat bei jeder Hierarchie immer dieselben Spalten, die im Folgenden beschrieben sind:
+
+### Ausgabe einer Hierarchie Struktur
+
+Im Vergleich zu anderen Quellkomponenten ist die Ausgabe von Hierarchiekomponenten vorgegeben. Sie enthält immer die gleichen Spalten.
+![Hierarchy-Table-Output (Hierachietabelle Ausgabe)](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 
 **NodeID**<br>
 Eindeutiger Schlüssel des Knoten.
 
 **ParentNodeID**<br>
-Schlüssel des Elternknotens.
+Schlüssel des ersten Kindknotens.
 
 **FirstChildNodeID**<br>
 Schlüssel des ersten Kindknotens.
@@ -16,16 +20,15 @@ Schlüssel des nächsten Knotens in derselben Hierarchieebene.
 Name des InfoObjects, das hinter dem jeweiligen Knoten steht.
 
 **NodeName**<br>
-Der (technische) Name des Knotens.
+Der (technische) Name des Knotens..
 
-**NodeText**<br>
-Der Beschreibungstext in der jeweiligen Anmeldesprache (nur wenn *FetchText* in den Settings auf *true* steht).
+**NodeText** <br>
+Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den Einstellungen auf *true/wahr* gesetzt wurde).
 
-Die Original-Hierarchie zu dem Beispiel PM_COUNTRY aus dem SAP sieht folgendermaßen aus:
+### Ausgabe aus SAP
+Das folgende Beispiel gibt die Original Hierarchie aus SAP von PM_COUNTRY wieder.
 
-![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
+![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
 
-Daraus ergibt sich folgende, flache Datenausgabe:
 
-![Hierarchy-Table-Output-Browser](/img/content/Hierarchy-Table-Output-Browser.png){:class="img-responsive"}
 
