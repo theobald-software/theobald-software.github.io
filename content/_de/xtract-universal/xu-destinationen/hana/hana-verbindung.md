@@ -11,26 +11,31 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=hana-verbindung
 ---
 
-Folgende Einstellungen können für die Verbindung zur Zieldatenbank definiert werden.
+Folgende Einstellungen können für die Verbindung zur Zielumgebung (SAP HANA-Datenbank und SAP Data Warehouse Cloud (DWC)) definiert werden:
 
-
+- SAP HANA-Datenbank
+![hana-destination](/img/content/hana-destination2.png){:class="img-responsive"}
+- SAP Data Warehouse Cloud
 ![hana-destination](/img/content/hana-destination.png){:class="img-responsive"}
 
 
 **Server Name**<br>
-Name des Datenbank-Servers.
+Adresse, unter der die SAP HANA-/DWC-Zielumgebung erreichbar ist; einschließlich Port. 
 
 **User Name**<br>
-einen Benutzernamen und 
+SAP HANA/DWC-Benutzername.
 
 **Password**<br>
-ein Passwort.
+Passwort des SAP HANA/DWC-Benutzers.
 
 **Database**<br> 
 Name der Datenbank.
 
 **Schema**<br> 
-Name des Datenbanknschemas.
+Name des Datenbankschemas.
+
+**Use encryption**<br>
+Schaltet Verschlüsselung ein. Wird bei der Verbindung zur SAP DWC benötigt.
              
 **Test Connection**<br>
-Klicken Sie auf den Knopf, um die Datenbankverbindung zu testen.  
+Schaltfläche, um die Verbindung zur Zielumgebung zu testen.

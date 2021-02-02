@@ -11,12 +11,16 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=haha-requirements
 ---
 
-For establishing a connection to the HANA database the SAP HANA Data Provider for Microsoft ADO .NET is required.<br>
-This data provider is part of the SAP HANA Client setup.<br> 
+For establishing a connection to the HANA database or SAP Data Warehouse Cloud the *SAP HANA Data Provider for Microsoft ADO.NET*, part of the SAP HANA Client setup, is required.
 
-**ATTENTION:** The HANA destination will only work with HANA data provider version 2.3.130.
 
-Please install the [SAP HANA Client 2.0](https://blogs.sap.com/2017/12/14/sap-hana-2.0-client-installation-and-update-by-the-sap-hana-academy/) to install the required data provider. 
+ {: .box-note }
+**Note:** The HANA destination only works with SAP HANA data provider version **2.6.61**.
 
-For more information refer to [SAP Help](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.00/en-US/469dee9e6d611014af70d4e9a9cd6b0a.html).
+
+******
+#### Related Links:
+
+- [SAP Help](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.00/en-US/469dee9e6d611014af70d4e9a9cd6b0a.html)
+- [SAP HANA Client setup](https://blogs.sap.com/2017/12/14/sap-hana-2.0-client-installation-and-update-by-the-sap-hana-academy/)
 
