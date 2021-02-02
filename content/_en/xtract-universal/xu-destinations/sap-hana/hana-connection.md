@@ -11,12 +11,12 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=hana-connection
 ---
 
-The following settings can be defined for the HANA database or SAP DWC connection. 
+The following settings can be defined for the HANA database or SAP Data Warehouse Cloud (DWC) connection:
 
-![hana-destination](/img/content/hana-destination.png){:class="img-responsive"}
-
+- SAP HANA-Datenbank
 ![hana-destination](/img/content/hana-destination2.png){:class="img-responsive"}
-
+- SAP Data Warehouse Cloud (DWC)
+![hana-destination](/img/content/hana-destination.png){:class="img-responsive"}
 
 **Server Name**<br>
 Defines the address of the server (including the port number). Note the different port numbers for HANA and DWC (see screenshots).

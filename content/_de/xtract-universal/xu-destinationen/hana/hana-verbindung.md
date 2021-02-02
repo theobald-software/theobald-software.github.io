@@ -11,11 +11,12 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=hana-verbindung
 ---
 
-Folgende Einstellungen können für die Verbindung zur Zielumgebung (SAP HANA-Datenbank und SAP DWC) definiert werden.
+Folgende Einstellungen können für die Verbindung zur Zielumgebung (SAP HANA-Datenbank und SAP DWC) definiert werden:
 
-
-![hana-destination](/img/content/hana-destination.png){:class="img-responsive"}
+- SAP HANA-Datenbank
 ![hana-destination](/img/content/hana-destination2.png){:class="img-responsive"}
+- SAP Data Warehouse Cloud (DWC)
+![hana-destination](/img/content/hana-destination.png){:class="img-responsive"}
 
 
 **Server Name**<br>
