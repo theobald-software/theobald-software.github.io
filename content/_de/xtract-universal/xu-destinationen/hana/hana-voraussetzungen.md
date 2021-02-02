@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=hana-voraussetzungen
 ---
 
-Für die Verbindung zur HANA Datenbank wird der *SAP HANA Data Provider for Microsoft ADO.NET*, Bestandteil des SAP HANA Client Setups, benötigt.
+Für die Verbindung zur HANA-Datenbank und SAP Data Warehouse Cloud wird der *SAP HANA Data Provider for Microsoft ADO.NET*, Bestandteil des SAP HANA Client Setups, benötigt.
 
  {: .box-note }
 **Hinweis:**

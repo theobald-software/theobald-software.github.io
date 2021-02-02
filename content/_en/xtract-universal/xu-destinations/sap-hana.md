@@ -14,7 +14,7 @@ progressstate: 5
 ---
 
 The following section describes how to setup Xtract Universal's HANA destination.
-The HANA destination supports loading SAP data to a SAP HANA database and to SAP's Data Warehouse Cloud (DWC). <br>
+The HANA destination supports loading SAP data to a SAP HANA database and to [SAP Data Warehouse Cloud](https://saphanajourney.com/data-warehouse-cloud/). <br>
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

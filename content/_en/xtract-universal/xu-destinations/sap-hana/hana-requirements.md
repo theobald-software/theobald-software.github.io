@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=haha-requirements
 ---
 
-For establishing a connection to the HANA database or SAP Data Warehouse Cloud (DWC) the *SAP HANA Data Provider for Microsoft ADO.NET*, part of the SAP HANA Client setup, is required.
+For establishing a connection to the HANA database or SAP Data Warehouse Cloud the *SAP HANA Data Provider for Microsoft ADO.NET*, part of the SAP HANA Client setup, is required.
 
 
  {: .box-note }

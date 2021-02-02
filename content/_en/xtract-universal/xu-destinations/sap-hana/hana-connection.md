@@ -13,9 +13,9 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=hana-connection
 
 The following settings can be defined for the HANA database or SAP Data Warehouse Cloud (DWC) connection:
 
-- SAP HANA-Datenbank
+- SAP HANA database
 ![hana-destination](/img/content/hana-destination2.png){:class="img-responsive"}
-- SAP Data Warehouse Cloud (DWC)
+- SAP Data Warehouse Cloud
 ![hana-destination](/img/content/hana-destination.png){:class="img-responsive"}
 
 **Server Name**<br>
