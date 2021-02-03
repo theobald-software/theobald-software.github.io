@@ -1,8 +1,14 @@
-The use of the DeltaQ component makes it necessary to create an RFC destination in the SAP system. <br>
-The customising settings to be made in the SAP system are explained step by step below.
+<!-- 03.02.2021, YW -> Fabian: Ich würde den Step 2 - Create logical Destination - komplett rausnehmen. Der muss nicht durchgeführt werden, also weg damit. Damit dann auch die box-note
+Ich persönlich finde, die Tabelle zur Erklärung der Input-Parameter ist etwas overkill. Zumal Du einige Einträge nicht erklärst und die Felder leer bleiben...
+
+
+ -->
+
+Before using the DeltaQ component an RFC destination has to be created in the SAP system. This is referred to as *DeltaQ customizing*.<br>
+The DeltaQ customizing is explained step by step below.
 
 {: .box-note }
-**Note** The steps of DeltaQ customising, except for the creation of the logical destination, are client-dependent.
+**Note** The following steps, except step 2 - creation of the logical destination, are client-dependent.
 
 ### 1. Create RFC destination of type R/3
 Create a new RFC destination of type R/3 in transaction *SM59*, e.g. with name **XTRACT01**, **Connection Type 3**. No connection test is necessary for the creation.
@@ -14,13 +20,13 @@ Create a new RFC destination of type R/3 in transaction *SM59*, e.g. with name *
 
 Use transaction *SALE* to create a logical system analogous to the name of the RFC destination.
 
-![DeltaQ-Customising-01](/img/content/DeltaQ-Customizing-01.png){:class="img-responsive"}
+![DeltaQ-Customizing-01](/img/content/DeltaQ-Customizing-01.png){:class="img-responsive"}
 
 ### 3. Execute function module RSAP_BIW_CONNECT_40
 Go to transaction *SE37* and execute the module **RSAP_BIW_CONNECT_40** with the following import parameters. <br>
-Execute the module by pressing *F8*.
 
-![DeltaQ-Customising-02](/img/content/DeltaQ-Customising-02.png){:class="img-responsive"}
+
+![DeltaQ-Customizing-02](/img/content/DeltaQ-Customizing-02.png){:class="img-responsive"}
 
 {: .box-note }
 **Note** This step assumes that the SAP system is modifiable.
@@ -82,4 +88,4 @@ Increase this value in case of parallel execution of several DeltaQ extractions 
 ![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
 {: .box-note }
-**Note** For DeltaQ customising errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide).
+**Note** For DeltaQ customizing errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide).

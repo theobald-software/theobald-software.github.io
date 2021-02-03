@@ -1,6 +1,6 @@
-The report component requires the installation of a Z-function module on your SAP system.<br>
+The report component requires the installation of a custom function module in your SAP system.<br>
 
-If you are unable to install the Z function module yourself, ask your SAP Basis department for help. 
+
 
 ### Installation with an SAP transport
 Installation of the function module using the transport request *thtrans.zip* supplied. <br> 
@@ -23,7 +23,7 @@ The transport request is located in the following installation directory `C:\Pro
 6. Save and activate the module.
 
 {: .box-tip }
-**Tip:** The functionality of the module Z_XTRACT_IS_REMOTE_REPORT can be understood in the source code. All steps for execution, job monitoring and spool retrieval are commented in the source code.
+**Tip:** The functionality of the module Z_XTRACT_IS_REMOTE_REPORT can be understood from reading the source code. All steps for execution, job monitoring and spool retrieval are commented in the source code.
 
 ### SAP Standard Data Type TAB512
 
@@ -37,4 +37,4 @@ This is necessary if the output length of a report line is more than 512 charact
 ***********
 #### Related Links
 - [How to import an SAP Transport Request with the Transport Management System STMS](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
-- [Create Function Group](https://help.sap.com/saphelp_ewm94/helpdata/de/d1/801ef5454211d189710000e8322d00/content.htm?no_cache=true)
+- [Create Function Group](https://help.sap.com/viewer/bd833c8355f34e96a6e83096b38bf192/7.52.0/en-US/d1801ef5454211d189710000e8322d00.html)

@@ -1,6 +1,8 @@
-Using the OHS extraction type as a data source requires the prerequisites in the SAP source system documented below.
+<!-- YW. 03.02.2021 -> Fabian: Das  Kapitel muss demnächst nochmals überarbeitet werden, wenn die neue OHS veröffentlicht wird. -->
 
-Depending on the SAP release used, an OHS extraction can be used as follows:
+Before using the OHS component the following steps have to be performed in the SAP system.
+
+Depending on the SAP release, an OHS extraction can be used as follows:
 
 |SAP release| SAP object |
 |:----|:----|
@@ -8,17 +10,16 @@ Depending on the SAP release used, an OHS extraction can be used as follows:
 | BI >= 7.0 | OHS-Destination |
 
 
-{: .box-tip }
-**Tip:** The use of InfoSpokes is also recommended under BI 7.0, as they have proven to be more robust than OHS destinations in practice.
+<!-- YW. 03.02.2021 -> Fabian: InfoSpokes werden nicht mehr empfohlen, diese Empfehlung ist mehrere Jahre alt und gilt nicht mehr. -->
 
 ### Creating an RFC destination
 
-1. create an RFC destination of type *TCP/IP* using transaction *SM59*. (1)
+1. Create an RFC destination of type *TCP/IP* using transaction *SM59*. (1)
 2. The activation type must be *Registered Server Program*. (2)
-3. assign a freely selectable program ID. (3)
+3. Enter any name in the field *Program ID*. (3)
 
 {: .box-note }
-**Note:** The name of the programme ID is needed again for later configuration.
+**Note:** The name of the Program ID is needed again for later configuration.
 
 ![OHS-BW-01](/img/content/ohs_destination.png){:class="img-responsive"}
 

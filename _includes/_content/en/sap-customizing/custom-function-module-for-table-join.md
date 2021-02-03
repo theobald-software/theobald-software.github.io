@@ -1,9 +1,17 @@
 {: .box-note }
-**Note** The table join component has been marked as *deprecated*. Therefore, use the Table component with the Z module Z_THEO_READ_TABLE to join SAP tables.
+**Note:** The Table Join component has been marked as *deprecated*. Use the Table component with custom function module Z_THEO_READ_TABLE for joining SAP tables.
 
-The table join component is used to combine several tables or views on the SAP side (join).  
+The Table Join component is used for joining several tables or views on the SAP side before data extraction.
 
-The prerequisite for this is the installation of a Z function module on the SAP side.
+Prerequisite for using the Table Join component is the installation of a custom function module on the SAP side.
+
+<!--YW, 03.02.2021 -> Fabian: Was ist mit dem Hinweis auf den SAP Transport? Das wäre eigentlich der Normalfall, wie der Baustein eingespielt wird. Ich würde daher die Struktur unten vorschlagen -->
+<!-- 
+### Import of function module Z_XTRACT_IS_TABLE_JOIN
+### Manual installation of function module Z_XTRACT_IS_TABLE_JOIN
+#### Create DDIC structures
+#### Create function module
+ -->
 
 ### Create DDIC structures
 

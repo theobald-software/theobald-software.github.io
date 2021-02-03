@@ -1,8 +1,8 @@
 ---
 ref: xu-sap-customizing-06
 layout: page
-title: Install Report Custom Function Module
-description: Install Report Custom Function Module
+title: Custom function module for Report
+description: Custom function module for Report
 product: xtract-universal
 parent: sap-customizing
 permalink: /:collection/:path
