@@ -1,5 +1,5 @@
 <!-- YW. 03.02.2021 -> Fabian: Das  Kapitel muss demnächst nochmals überarbeitet werden, wenn die neue OHS veröffentlicht wird. -->
-
+<!-- Fas. 03.02.2021 -> Yogen: Dennoch veröffentlichen? -->
 Before using the OHS component the following steps have to be performed in the SAP system.
 
 Depending on the SAP release, an OHS extraction can be used as follows:

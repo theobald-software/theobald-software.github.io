@@ -11,6 +11,7 @@ If the above-mentioned restrictions hinder your work, install the Theobald Softw
 
 ### Installing the ABAP Framework Z_THEO_READ_TABLE 
 <!--- YW, 03.02.2021  -> Fabian: Den Abschnitt würde ich überarbeiten und etwas klarer gestalten. Es gibt zwei Transporte, einen für SAP Systeme >= 7.40 SP5, und einen für Systeme  mit kleinerer Version. Punkt. Den Abschnitt auch nicht mit einer Note und einer Warning beginnen. "Faulty custom module import" weglassen, das klingt seltsam. Eigentlich die komplette Warning weglassen, wenn wir oben erklären, welcher Baustein auf welchem System eingespielt werden soll und weiter unten, dass es auf 7.00 Systemen Probleme geben kann. --->
+<!--- Fas, 03.02.2021 -> Yogen: Diesen Abschnitt habe ich nicht angefasst oder überarbeitet. Die Inhalte wurden von Maia erstellt. Also da es bis Anfang April eine Lösung für die 700 Systeme geben wird, möchte ich hier nicht tätig werden.
 <!--- When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. Contact Theobald Software support and send the dedicated error message text.
 Was genau ist damit gemeint? Schreib doch konkret, dass es auf 7.00-Systemen, oder welche das sind, einen Fehler beim Import geben kann und man sich an den Support wenden soll? Das würde dich dann in eine Note packen.--->
 

@@ -1,7 +1,4 @@
 The report component requires the installation of a custom function module in your SAP system.<br>
-
-
-
 ### Installation with an SAP transport
 Installation of the function module using the transport request *thtrans.zip* supplied. <br> 
 The transport request is located in the following installation directory `C:\Program Files\[XtractProduct]\ABAP\thtrans.zip`.
