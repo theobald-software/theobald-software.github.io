@@ -1,9 +1,6 @@
 Die Verwendung der DeltaQ-Komponente macht die Erstellung einer RFC-Destination im SAP-System notwendig. <br>
 Die im SAP-System vorzunehmenden Customizing-Einstellungen werden nachfolgend Schritt für Schritt erläutert.
 
-{: .box-note }
-**Note** Die Schritte des DeltaQ-Customizings außer der Anlage der Logischen Destination, sind mandantenabhängig.
-
 ### 1. RFC-Destination vom Typ R/3 anlegen
 Legen Sie in der Transaktion *SM59* eine neue RFC-Destination vom Typ R/3 an, z.B. mit Namen **XTRACT01**, **Connection Type 3**. Es ist kein Verbindungstest für die Erstellung notwendig.
 
