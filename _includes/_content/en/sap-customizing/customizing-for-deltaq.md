@@ -1,15 +1,5 @@
-<!-- 03.02.2021, YW -> Fabian: Ich würde den Step 2 - Create logical Destination - komplett rausnehmen. Der muss nicht durchgeführt werden, also weg damit. Damit dann auch die box-note
-Ich persönlich finde, die Tabelle zur Erklärung der Input-Parameter ist etwas overkill. Zumal Du einige Einträge nicht erklärst und die Felder leer bleiben...
-<!-- 03.02.2021, Fas -> Yogen: Ja ich habe den Schritt 2 lediglich übernommen. Ich selbe wurde mit diesem Problme noch nie konfrontiert. Ja mach ich gern. Die Tabellen sind erstellt worden, weil ich immer wieder Nachfragen von Kunden hatte. Nicht oft, aber regelmäßig. 
-Ich kann ja die Beschreibung der offenen Zeilen noch ergänzen oder bist du komplett dagegen?
-
- -->
-
 Before using the DeltaQ component an RFC destination has to be created in the SAP system. This is referred to as *DeltaQ customizing*.<br>
 The DeltaQ customizing is explained step by step below.
-
-{: .box-note }
-**Note** The following steps, except step 2 - creation of the logical destination, are client-dependent.
 
 ### 1. Create RFC destination of type R/3
 Create a new RFC destination of type R/3 in transaction *SM59*, e.g. with name **XTRACT01**, **Connection Type 3**. No connection test is necessary for the creation.
