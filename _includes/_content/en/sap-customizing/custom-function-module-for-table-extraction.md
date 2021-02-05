@@ -1,4 +1,3 @@
-
 ### RFC_READ_TABLE Restrictions
 Especially with older SAP releases you may encounter a few restrictions when using the SAP standard function module (RFC_READ_TABLE) for table extraction:
 
@@ -9,19 +8,20 @@ Especially with older SAP releases you may encounter a few restrictions when usi
 
 If the above-mentioned restrictions hinder your work, install the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 
 
-
 ### Installing the ABAP Framework Z_THEO_READ_TABLE 
 
-{: .box-note}
-**Note:** Read the README.txt placed in the installing folder (e.g.,`C:\Program Files\XtractProduct\ABAP\README.txt`) before installing any custom function modules.
-
-{: .box-warning}
-**Warning! Faulty custom module import**
-The transport request version must comply with the SAP_ABA version, otherwise an error occurs during the import procedure.
-For older SAP releases, use the older transport request: Z_THEO_READ_TABLE-before_740SP05.
-
-When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. Contact Theobald Software support and send the dedicated error message text.
+There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), and one for systems with a lower version (*Z_THEO_READ_TABLE-before_740SP05.zip*).<br>
 
 - Z_THEO_READ_TABLE-before_740SP05.zip contains version 1.x (till 1.11) of Z_THEO_READ_TABLE - the single custom function module.
 - Z_THEO_READ_TABLE.zip contains version 2.x of Z_THEO_READ_TABLE - the custom function module, a number of ABAP classes and other DDIC objects.  
 ![Z_THEO_READ_TABLE_SE80](/img/content/Z_THEO_READ_TABLE_SE80.png){:class="img-responsive" }
+
+{: .box-note}
+**Note:** Take a look at the README.txt in the installation directory (e.g.,`C:\Program Files\XtractProduct\ABAP\README.txt`) before installing any custom function modules.
+
+When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. Contact Theobald Software support and send the dedicated error message text.
+
+
+
+
+

@@ -1,8 +1,8 @@
 ---
 ref: xu-sap-customizing-01
 layout: page
-title: Custom function module for table extraction
-description: Custom Function Module for Table Extraction
+title: Custom function module for Table
+description: Custom function module for Table
 product: xtract-universal
 parent: sap-customizing
 permalink: /:collection/:path
@@ -12,3 +12,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=SAPCustomizing-EN:custom-funct
 ---
 
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
+

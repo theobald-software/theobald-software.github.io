@@ -1,56 +1,60 @@
-In order to be able to use the OHS data source, it is necessary to configure a few things in the SAP BW first, as described in the following.
-Depending on the SAP release you can extract an OHS using InfoSpokes (< BI 7.0) or using an OHS destination (BI 7.0 or newer). SAP recommends from BI 7.0 on only the use of the OHS destination. Contrary to this recommendation we recommend even with BI 7.0 to use InfoSpokes because they are in practice more robust than the OHS destinations.
-Please also note that the following instructions for creating InfoSpokes / OHS destinations should be seen as an introduction. Please also read the relevant notes in SAP OSS.
+<!-- YW. 03.02.2021 -> Fabian: Das  Kapitel muss demnächst nochmals überarbeitet werden, wenn die neue OHS veröffentlicht wird. -->
+<!-- Fas. 03.02.2021 -> Yogen: Dennoch veröffentlichen? -->
+Before using the OHS component the following steps have to be performed in the SAP system.
 
-**RFC-Destination**
+Depending on the SAP release, an OHS extraction can be used as follows:
 
-First, create an RFC destination of type *T* (=TCP/IP) in the transaction SM59. The activation type has to be a *registered server program*. The program ID can be selected arbitrarily, but must by all means be specified and be concise. Please make a note of this ID; it will be needed later on.
-
-![OHS-BW-01](/img/content/OHS-BW-01.png){:class="img-responsive" } 
-
-**InfoSpokes and Process Chains (< BI 7.0)**
-
-Up to release BI 7.0, InfoSpokes are the pivotal point for Open Hub Services. If you are already using release 7.0, you can jump to the next section to learn how OHS destinations are handled.
-
-Once inside transaction RSA1, you will find an interface for creating an InfoSpoke in the menu *Tools -> Open Hub Service -> Edit InfoSpoke*. Provide a data source here (e.g. an ODS object or a cube).
-
-![OHS-BW-02](/img/content/OHS-BW-02.png){:class="img-responsive" }
+|SAP release| SAP object |
+|:----|:----|
+| BI < 7.0 | InfoSpoke |
+| BI >= 7.0 | OHS-Destination |
 
 
-In the *Destination* tab, define the InfoSpoke so that an extraction to a third-party system is possible (see screenshot). Be sure to enter the previously created RFC destination here.
+<!-- YW. 03.02.2021 -> Fabian: InfoSpokes werden nicht mehr empfohlen, diese Empfehlung ist mehrere Jahre alt und gilt nicht mehr. -->
 
-![OHS-BW-03](/img/content/OHS-BW-03.png){:class="img-responsive" }
+### Creating an RFC destination
+
+1. Create an RFC destination of type *TCP/IP* using transaction *SM59*. (1)
+2. The activation type must be *Registered Server Program*. (2)
+3. Enter any name in the field *Program ID*. (3)
+
+{: .box-note }
+**Note:** The name of the Program ID is needed again for later configuration.
+
+![OHS-BW-01](/img/content/ohs_destination.png){:class="img-responsive"}
+
+### InfoSpokes and process chains (BI < 7.0)
+
+1. Create an InfoSpoke using transaction *RSA1* via the menu **Tools -> Open Hub Service -> Infospoke**. 
+2. Store data source in the InfoSpoke, e.g. ODS object or cube. 
+3. Define an InfoSpoke for data extraction into an external system in the *Destination* tab. 
+4. Specify the RFC destination created in advance. 
+5. Fill in the columns to be transferred and, if necessary, a selection. 
+6. Save and activate the InfoSpoke. 
+7. Generate a process chain with transaction *RSA1* in the menu **Edit -> Process Chains**. 
+8. Check Start by *API* in the variant for the process chain. 
+9. Insert the previously created InfoSpoke into the process chain. 
+10. Save and activate the process chain.
+
+### OHS Destinations and Data Transfer Processes (BI >= 7.0)
+
+1. In the Administrator Workbench, click on *Open Hub Destination* in the left tree using transaction *RSA1*. Right-click on an InfoArea and select *Create Open Hub Destination* in the context menu. 
+![OHS-BW-02](/img/content/ohs_1.png){:class="img-responsive"}
+2. In the edit mode of the destination, set the *Destination Type* to *Third Party Tool* and enter the previously created OHS destination.
+![OHS-BW-03](/img/content/ohs_2.png){:class="img-responsive"}
+3. Save and activate the OHS destination. 
+4. Create a new data transfer process (DTP) and associated transformations. Click on the newly created OHS destination in the middle tree of the InfoAreas and select *Create Data Transfer Process*. 
+5. Save and activate the DTP (if necessary, change the extraction type from *Delta* to *Full* before activating). The arrangement of Destination, Transformations and DTP in the OHS tree is done afterwards.
+6. Create a process chain containing the DTP created in the previous step. 7.
+7. Make sure that the planning option *Start Using Meta Chain or API* is selected in the process chain start variant. 
+8. Activate the process chain.
+![OHS-BW-02](/img/content/ohs_4.png){:class="img-responsive"}
+![OHS-BW-02](/img/content/ohs_5.png){:class="img-responsive"}
+![OHS-BW-02](/img/content/ohs_7.png){:class="img-responsive"}
 
 
-When you're done, the columns and, if applicable, selections to be transmitted have to be filled in. Afterwards the spoke can be saved and activated.
-In the last step, we need a process chain. To proceed, go from transaction RSA1 to the menu *Edit -> Process Chains* and enter a new process chain there. In the variant for the chain, *start via API* must be marked. Then enter the previously created InfoSpoke in the chain. 
+****
+#### Related Links
+- [SAP Note 2437637](https://launchpad.support.sap.com/#/notes/2437637)
+- [SAP Note 1983356](https://launchpad.support.sap.com/#/notes/1983356)
 
-![OHS-BW-04](/img/content/OHS-BW-04.png){:class="img-responsive" }
-
-
-Finally, you have to save the process chain and activate it.
-
-**OHS Destinations and Data Transfer Processes (BI 7.0)**
-
-From BI 7.0 on, SAP does not recommend using InfoSpokes anymore. Instead, OHS destinations should be created as described in following.
-In the Administrator Workbench RSA1, click *Open Hub Destination* in the left-hand tree. With the right-hand mouse button, click an InfoArea and select *Create Open Hub Destination* in the context menu.
-
-![OHS-BW-05](/img/content/OHS-BW-05.png){:class="img-responsive" }
-
-
-In the editing mode, set the destination *type to third-party*, enter the previously created RFC destination, and save and activate the destination.
-
-
-Click the newly created destination in the center tree of the InfoArea and select *Create data transfer* process. This action creates a new data transfer and the corresponding transmission rules (see screenshots).
-
-
-![OHS-BW-07](/img/content/OHS-BW-07.png){:class="img-responsive" }
-
-
-The DTP can be stored and activated as recommended by the system (depending on your particular needs, the extraction type should be changed from Delta to *full* prior to activation). In the OHS tree destination, the transmission rules and the DTP are then arranged as shown below:
-
-
-To activate the transfer process, we now need a process chain. From the RSA1 transaction, go to the menu *Edit -> Process Chains*. Create a new process chain here. In the variant for the chain, start via API must be checkmarked. The DTP then has to be added in the process chain. Once activated, the chain is ready to run.
-
-
-![OHS-BW-09](/img/content/OHS-BW-09.png){:class="img-responsive" }
