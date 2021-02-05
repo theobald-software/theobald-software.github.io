@@ -1,9 +1,10 @@
 The report component requires the installation of a custom function module in your SAP system.<br>
+
 ### Installation with an SAP transport
 Installation of the function module using the transport request *thtrans.zip* supplied. <br> 
 The transport request is located in the following installation directory `C:\Program Files\[XtractProduct]\ABAP\thtrans.zip`.
 
-### Manual installation
+### Manual installation of function module Z_XTRACT_IS_REMOTE_REPORT
 
 1. Call transaction *SE80 - Object Navigator* to create a new function group, e.g. ZXTRACT
 ![Create_new_function_group](/img/content/create_function_group.png){:class="img-responsive"}

@@ -5,7 +5,7 @@ Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installiere
 ### Installation mit einem SAP-Transport
 Installation des Funktionsbaustein mit Hilfe des mitgelieferten Transportauftrags *thtrans.zip*. <br> Der Transportauftrag befindet sich im folgendem Installationsverzeichnis `C:\Program Files\[XtractProduct]\ABAP\thtrans.zip`.
 
-### Manuelle Installation
+### Manuelle Installation des Funktionsbaustein Z_XTRACT_IS_REMOTE_REPORT
 
 1. Aufruf der Transaktion *SE80 - Object Navigator* zur Erstellung einer neuen Funktionsgruppe, z.B. ZXTRACT
 ![Create_new_function_group](/img/content/create_function_group.png){:class="img-responsive"}
