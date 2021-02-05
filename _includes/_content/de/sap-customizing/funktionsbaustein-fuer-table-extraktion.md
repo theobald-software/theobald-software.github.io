@@ -8,7 +8,7 @@ Insbesondere bei älteren SAP Releases bestehen einige Einschränkungen bei der 
 
 Um die oben genannte Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustein *Z_THEO_READ_TABLE* von Theobald Software auf Ihrem SAP-System.
 
-## ABAP Framework Z_THEO_READ_TABLE installieren
+### ABAP Framework Z_THEO_READ_TABLE installieren
 
 Es gibt zwei Transporte, einen für SAP-Systeme >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), und einen für Systeme mit einer niedrigeren Version (*Z_THEO_READ_TABLE-before_740SP05.zip*).<br>
 

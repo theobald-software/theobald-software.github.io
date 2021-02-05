@@ -1,13 +1,13 @@
 {: .box-note }
 **Hinweis** Die Table-Join Komponente wurde als *deprecated* (veraltet) gekennzeichnet. Verwenden Sie daher die Table-Komponente mit dem Z-Baustein Z_THEO_READ_TABLE, um SAP-Tabellen zu joinen.
 
+### Manuelle Installation des Funktionsbausteins Z_XTRACT_IS_TABLE_JOIN
+
 Die Table Join-Komponente dient dazu, mehrere Tabellen oder Views auf SAP-Seite zusammenzufassen (Join).  
 
 Voraussetzung dafür ist die Installation eines Z-Funktionssbausteins auf der SAP-Seite.
 
-### Manuelle Installation des Funktionsbaustein Z_XTRACT_IS_TABLE_JOIN
-
-#### DDIC-Strukturen anlegen
+### DDIC-Strukturen anlegen
 
 In diesem Schritt müssen fünf Strukturen über die Transaktion *SE11* angelegt werden, siehe nachfolgende Screenshots. <br>
 Die benötigten Textdateien sind als Pfade gekennzeichnet.
@@ -22,7 +22,7 @@ Die benötigten Textdateien sind als Pfade gekennzeichnet.
 ![Z_XTRACT_TABLE_JOIN_04](/img/content/table_join_structure4.png){:class="img-responsive"}
 ![Z_XTRACT_TABLE_JOIN_05](/img/content/table_join_structure5.png){:class="img-responsive"}
 
-#### Funktionsbaustein anlegen
+### Funktionsbaustein anlegen
 
 1. Auruf der Transaktion *SE80 - Object Navigator* zur Erstellung einer neuen Funktionsgruppe, z.B. ZXTRACT
 ![Create_new_function_group](/img/content/create_function_group.png){:class="img-responsive"}

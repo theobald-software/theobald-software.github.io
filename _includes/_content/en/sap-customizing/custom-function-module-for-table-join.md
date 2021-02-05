@@ -1,13 +1,13 @@
 {: .box-note }
 **Note:** The Table Join component has been marked as *deprecated*. Use the Table component with custom function module Z_THEO_READ_TABLE for joining SAP tables.
 
-The Table Join component is used for joining several tables or views on the SAP side before data extraction.
-
-Prerequisite for using the Table Join component is the installation of a custom function module on the SAP side.
-
 ### Manual installation of function module Z_XTRACT_IS_TABLE_JOIN
 
-#### Create DDIC structures
+The Table Join component is used for joining several tables or views on the SAP side before data extraction.
+
+Prerequisite for using the Table Join component is the installation of a custom function module on the SAP side
+
+### Create DDIC structures
 
 In this step, five structures must be created via transaction *SE11*, see the following screenshots. <br>
 The required text files are marked as paths.
@@ -22,7 +22,7 @@ The required text files are marked as paths.
 ![Z_XTRACT_TABLE_JOIN_04](/img/content/table_join_structure4.png){:class="img-responsive"}
 ![Z_XTRACT_TABLE_JOIN_05](/img/content/table_join_structure5.png){:class="img-responsive"}
 
-#### Create function module
+### Create function module
 
 1. Call transaction *SE80 - Object Navigator* to create a new function group, e.g. ZXTRACT.
 ![Create_new_function_group](/img/content/create_function_group.png){:class="img-responsive"}
