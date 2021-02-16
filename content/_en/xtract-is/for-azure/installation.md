@@ -22,7 +22,7 @@ Place *XtractISSetup.exe* and [main.cmd](https://cdn-files.theobald-software.com
 
 ![XISforAzure_StorageContainer](/img/content/XISforAzure_StorageContainer.png){:class="img-responsive" }
 
-When running a trial version of Xtract IS for Azure, place the two mentioned files *XtractISSetup.exe* and [main.cmd] into the storage container.
+When running a trial version of Xtract IS for Azure, place the two mentioned files *XtractISSetup.exe* and *main.cmd* into the storage container.
 With the purchase of Xtract IS for Azure a [license file](./introduction/installing-the-license) is provided. Place the license file in the storage container, as well.
 
 
@@ -31,7 +31,7 @@ With the purchase of Xtract IS for Azure a [license file](./introduction/install
 - When provisioning the Azure-SSIS IR via the Azure Portal UI, enter the Azure Storage container's SAS URI in the *Custom setup container SAS URI* field. 
 
 ![XISforAzure_Portal_CustomSetupContainer](/img/content/XISforAzure_Portal_CustomSetupContainer.png){:class="img-responsive" }
-Start the Integration Runtime. During the startup of the Intergation Runtime the *main.cmd* is executed, which triggers an unintended installation of Xtract IS for Azure on the SSIS-IR.
+Start the Integration Runtime. During the startup of the Intergation Runtime the *main.cmd* is executed, which triggers an unattended installation of Xtract IS for Azure on the SSIS-IR.
 
 {: .box-note }
 **Note** The startup process of the Azure SSIS-IR might take up to 20 minutes.
@@ -48,7 +48,7 @@ For using Xtract IS for Azure via the Express Custom Setup a valid [license file
 The Express Custom Setup installs a specific version of Xtract IS for Azure. For information on a currently used version, see [Microsoft Documentation - Installing licensed components](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#installing-licensed-components) or contact [Theobald Software](mailto:info@theobald-software.com).
 
 {: .box-note }
-**Note** The specific version of Xtract IS for Azure is updated in regular intervals without a further notice.
+**Note** The specific version of Xtract IS for Azure is updated in regular intervals without further notice.
 
 
 ### Azure SSIS Cluster ID
