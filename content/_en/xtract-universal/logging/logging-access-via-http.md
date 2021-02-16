@@ -138,6 +138,32 @@ Returns the name of the result table or file for a specific timestamp.
 ![XU Server connection](/img/content/xu/http_log_past_day.png){:class="img-responsive"}
 
 
+### Querying the extraction status
+An extraction can be triggered through the extraction's URL. For example, the following URL triggers an extraction named *Plants*:
+```
+http://localhost:8065/?name=Plants
+```
+When adding the URL parameter ```&wait=false``` to the URL, the extraction is called in asynchronous mode. For example:
+```
+http://localhost:8065/?name=Plants&wait=false
+```
+ An asynchronous call immediately returns an http-response, while the extraction is still running. As part of the http-response header and body, the timestamp of the extraction is returned. For example:
+ ```
+ X-XU-Timestamp: 2020-05-28_09:58:47.312
+ ```
+
+The status of the extraction can be queried using the extraction's name and the returned timestamp. For example:
+
+```
+http://localhost:8065/status/?name=Plants&timestamp=2020-05-28_09:58:47.312
+```
+
+This call returns one of the following statuses in the http body: ```Running```, ```FinishedNoErrors``` or ```FinishedErrors```.
+The status of an extraction changes in time. By regularly polling the status, follow-up actions can be taken once the extraction is finished.
+
+{: .box-note }
+**Note:** Triggering an extraction in asynchronous mode and polling the extraction status is only used with push-destinations (e.g. database or file destinations). 
+
 *****
 #### Related Links
 - [Web Server Settings](../server/server-settings#web-server)

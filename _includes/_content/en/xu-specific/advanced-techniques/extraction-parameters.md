@@ -1,8 +1,8 @@
-The follwing section describes the extraction parameters can be changed in the window "Run extractions".
+The following section describes the extraction parameters that can be changed in the "Run Extraction" window.
 
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
-To open "Run extractions" window, select an extraction in the main window of the Designer and click 
+To open the "Run Extraction" window, select an extraction in the main window of the Designer and click 
 **[Run]** (see details in [Running an extraction](../getting-started/run-an-extraction)).
 
 
