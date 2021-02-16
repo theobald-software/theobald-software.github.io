@@ -1,8 +1,8 @@
 ---
 ref: xu-datasource-deltaq-03
 layout: page
-title: Define an extractor
-description: Define an extractor
+title: Defining an extractor
+description: Defining an extractor
 product: xtract-universal
 parent: datasource-deltaq
 permalink: /:collection/:path

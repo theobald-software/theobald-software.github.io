@@ -1,40 +1,63 @@
-In our last example, we did a **Full Update**. To get a real Delta procedure running, Delta first has to be initialized. 
-A full update requests all data that meets the selection criteria you set.
+
+To get a real Delta process running, Delta must first be initialized. For an overview of the modes, see at [Update Mode](./update-mode). 
 
 
-**Step 1: Delta Initialisation** 
 
-To do this, set your UpdateType to ***Delta Initialization***. 
-You need to initialize a delta process before you can execute it. The initialization selections are copied to load the delta records.
+### Step 1: Delta Initialisation [C]
 This mode requests all data that meets the selection criteria you set.
-After that you can use the Delta Update.
+
+Set the **Update Mode** to *Delta Initialization* and execute it.<br>
+The initialization selections are copied to load the delta records. You can use the Delta Update.
+
+{: .box-note } 
+**Note:**<br>
+When re-initilizing a delta process, first delete any exsiting Inits (initialization requests) by clicking **[Request Maintenance]** in the DeltaQ extraction settings.
 
 
-**Step 1 (alternatively): delta init (without data)**
+### Alternative Step 1: Delta Init (without data) [S]
+It is similar to **Delta Initialisation** without extracting any data from the SAP Datasource.
+After execute the **Delta Init** you can use the Delta Update.
 
-It is similar to Delta Initialisation, but no data will be requested. 
-After that you can use the Delta Update.
+{: .box-note } 
+**Note:**<br>
+When re-initilizing a delta process, first delete any exsiting Inits (initialization requests) by clicking **[Request Maintenance]** in the DeltaQ extraction settings.
 
 
-**Step 2: Delta Update** 
+### Step 2: Delta Update [D]
+Delta update only extracts data added or changed on the SAP system since the last delta request.
 
-Run your package once and then set the UpdateType to ***Delta Update***. Then, only the changes will be extracted which have been made since the last transfer.
+First run your package once and then set the **Update Mode** to *Delta Update*.
+Only the changes will be extracted which have been made since the last transfer.
 
-**Optional: Delta Queue - RSA7** 
+{: .box-note } 
+**Note:**<br>
+To prevent errors, aborts and gaps run the next extraction in the update mode *Repeat*.
 
+
+### Optional: Delta Queue - RSA7
 Once Delta is activated, you can view the queued datasets in the Delta queue in transaction RSA7.
 
 ![Delta](/img/content/Delta.png){:class="img-responsive"}
 
 If there is no new data to be transferred at the moment, a corresponding protocol message will be noted and the data pipeline remains empty.
 
-You must ensure that a Delta update is properly executed before the next one is initiated. The execution of a new Delta update removes the last. 
+{: .box-note } 
+**Note:**<br>
+Before initiating the next update, make sure that a Delta update has been properly executed. Running a new delta update removes the last one. 
 
-**Optional: Delta Repeat** 
 
-A **Repeat** always repeats to the last executed Delta update request, which will delivered the data again. It does not matter whether the last Delta update was successful or not. The Repair step may optionally be performed several times.
 
-Many Datasources deliver the field ROCANCEL. This field stipulates whether the records are added to or overwritten dependent on the delta process type of the datasource. It defines how a record is updated in the delta process. In an ABR mode leaving it blank returns an after image, 'X' a before image, 'D' deletes the record and 'R' returns a reverse image.
+### Optional: Repeat [R]
+Repeats the last delta run and updates all data accumulated since the last run. If the last run was unsuccessful, all data from the last delta update will be deleted before a new run is started.
+A **Repeat** can be started several times.
+
+
+Many Data sources deliver the field ROCANCEL. This field stipulates whether the records are added to or overwritten dependent on the delta process type of the datasource. It defines how a record is updated in the delta process.<br>
+In an ABR mode a:<br>
+* *blank* returns an after image,<br>
+* *'X'*  returns a before image,<br>
+* *'D'* deletes the record and<br>
+* *'R'* returns a reverse image.
 
 
 More information about the delta process can be found in the SAP Help. <br>

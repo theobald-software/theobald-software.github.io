@@ -1,22 +1,28 @@
-Fill the fields on the top right for the logical target system and the technical settings for the RFC destination as defined in [DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
+### Settings
+
+1. Open the DeltaQ Extraction.
+2. Fill in the fields on the top right. Search for technical settings from the drop-down menu by using the **[magnifying glass symbol]**. The settings are defined in [DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
+
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 
-**Log. Destination** is the logical RFC target system (check step 1 in the DeltaQ Customizing).
+**Log. Destination**<br>is the logical RFC target system. See step 1 at [SAP Customizing/DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
 
-**Gateway Host** is the Name (or IP address) of your SAP system of your SAP system. <br>
-Be sure that the Gateway Host is the same as in your SAP Connection.
+**Gateway Host**<br>is the Name (or IP address) of your SAP system. <br>
+Make sure that the Gateway Host is the same as in your SAP Connection.
 
-**Gateway Service** is generally sapgwNN, where NN is the instance number of your SAP system, i.e. a number between 00 andd 99.<br>
-NN must have the same value as the field System No in your SAP connection or instance number in your SAP Logon. 
+**Gateway Service**<br>is generally *sapgwNN*, where NN is the instance number of your SAP system. NN is a number between *00* and *99*.
+NN must have the same value as the *System No* field in your SAP connection or the instance number in your SAP logon. 
 
-**Program ID** is the name of the registered RFC server (check step 4 in the DeltaQ Customizing).
+**Program ID**<br>is the name of the registered RFC server. See step 4 at [SAP Customizing/DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
 
-The values Gateway Host and Gateway Service corresponds to the following SAP connection.
+The values **Gateway Host** and **Gateway Service** corresponds to the following SAP connection.
 
 ![sap-conn-app-ecc](/img/content/sap-conn-app-ecc.png){:class="img-responsive"} 
 
-Now click on the *Customizing Check* link to validate the DeltaQ Customizing on the SAP system.<br>
-Be sure that all lines are green. 
+### Check Customizing
+
+Click on the link *Customizing Check* to validate the DeltaQ Customizing on the SAP system.
+Make sure that all lines are green.  
 
 ![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}

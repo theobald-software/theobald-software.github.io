@@ -1,9 +1,14 @@
-Click the *Extraction Settings* link to open the Extraction Settings dialog.
+Click the the main window "Extract SAP DataSources and Extractors" on **[Extraction Settings]**.
+The Dialog "Xtract DeltaQPrefernces - DelatQ_1" open.
+The window consists of two tabs for settings:
+* Base
+* Hierarchy
 
 ![XU_DeltaQ_Settings_thumb](/img/content/XU_DeltaQ_Settings_thumb.png){:class="img-responsive"}
 
+### Base Settings
 **Transfer Mode**<br>
-The raw data packages can be send by SAP by a *tRFC* call or a *Data-IDoc*. Normally the tRFC is optimal for the default setting. If it is necessary, e.g. to examine the raw data packages for debugging reasons, you can change the transfer mode to IDoc. Then you can examine the data packages in the transaction WE02 (IDoc-Monitoring).
+The raw data packages can be send by SAP by a *tRFC* call or a *Data-IDoc*. Normally the tRFC is optimal for the default setting. If it is necessary, e.g. to examine the raw data packages for debugging reasons, you can change the transfer mode to *IDoc*. Then you can examine the data packages in the transaction WE02 (IDoc-Monitoring).
 
 **Automatic Synchronisation**<br>
 Depending on the system landscape it could happen that developments only be performed in a test system. If SSIS packages should be used later in the production environment, the data source has to be enabled there. To avoid manual changes in the transactional system you can activate this option. In this case the activation will be automatically done and the timestamp of the data source will be changed that it will be consistent to the SAP system setting. <br>
@@ -25,15 +30,15 @@ Defines a time period (in seconds) how long Xtract Universal will wait, after th
 To show and delete the init requests of this DataSource (requests in RSA7).
 
 - **Delete Request**<br>
-    delete the init requests (requests in RSA7).
+    Delete the init requests (requests in RSA7).
 
 - **Allow BW requests deletion**<br>
-  	allow the deletion of the initialisation requests of the export datasources in BW. 
+  	Allow the deletion of the initialisation requests of the export datasources in BW. 
 
 
-**Hierarchy Settings**
+### Hierarchy Settings
 
-For a Hierarchy DataSource Extraction you can use the following hierarchy settings on the Hierarchy tab.
+Settings for a Hierarchy DataSource Extraction.
 
 ![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
 
@@ -52,22 +57,21 @@ Defines the Hierarchy Class.
 
 ![Deltaq-Hierarchies-Parent-Child](/img/content/Deltaq-Hierarchies-Parent-Child.png){:class="img-responsive"}
 
-- **Natural**: The parent child hierarchy will be transformed in a regular hierarchy.
+If **Representation** is set to **Natural**, the section **Natural Representation** is activated.
+The parent child hierarchy will be transformed in a regular hierarchy.
 
 **Level Count**
-
-Defines the maximum number of levels if the representation natural is selected. In the following screenshot you see the hierarchie shown in the previous screenshot with five levels in the representation natural.
+defines the maximum number of levels if the representation natural is selected. In the following screenshot you see the hierarchie shown in the previous screenshot with five levels in the representation natural.
 
 ![Deltaq-Hierarchies-Parent-Child-Natural](/img/content/Deltaq-Hierarchies-Parent-Child-Natural.png){:class="img-responsive"}
 
-**Fill empty levels** 
-
-If the representation natural is selected the bottom element of the hierarchy will be copied until the last level. In the following screenshot you will see the hierarchy from above with the option Repeat Leaves activated.
+**Fill empty levels** <br>
+If the representation *Natural* is selected, the bottom element of the hierarchy will be copied until the last level. In the following screenshot you will see the hierarchy from above with the option Repeat Leaves activated.
 
 ![Deltaq-Hierarchies-Parent-Child-Repeat](/img/content/Deltaq-Hierarchies-Parent-Child-Repeat.png){:class="img-responsive"}
 
 **Description texts for levels**<br>
-Means, that the output has a field LevelTextN for each field LevelN, that contains the text based on the system language settings.
+Means, that the output has a field *LevelTextN* for each field *LevelN*, that contains the text based on the system language settings.
 
 **Leaves only**<br>
 Delivers only the leaves as data records. 

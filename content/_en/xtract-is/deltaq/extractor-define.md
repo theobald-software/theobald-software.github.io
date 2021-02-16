@@ -1,8 +1,8 @@
 ---
 ref: xi-q-delta-03
 layout: page
-title: Define and extractor
-description: Define and extractor
+title: Defining an extractor
+description: Defining an extractor
 product: xtract-is
 parent: deltaq
 permalink: /:collection/:path
@@ -16,34 +16,39 @@ Place the DeltaQ component on your data flow task by dragging it from the toolbo
 
 ### Step 1: Search for extractor
 
-Within the editor, you can look up a *DataSource* (OLTP Source) by clicking the binocular button. You can also use wildcards ( * ) in your search.
+Within the editor "Look Up OLTP Source", search for **OLTP Source** (Data Source) by using the **[magnifying glass symbol]**. You can use wildcards (*), if needed.
 
-The following example shows the download of material master data from the DataSource 0MATERIAL_ATTR.
+The following example shows the download of material master data from the DataSource *0MATERIAL_ATTR*.
 
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
 
-### Step 2: Define and Check Customizing 
 
-Now set the logical target system and the technical settings for the RFC destination (as shown in section Customizing) on the top right.
+### Step 2: Define and Check Customizing
 
-Gateway Host is the name (or IP address of your SAP system). Be sure that the Gateway Host is the same as in your SAP Connection.
-The Gateway Service is generally *sapgwNN*, where NN is the ID of your SAP system, i.e. a number between 00 andd 99.
-See Customizing Check.
+Set the logical target system (**Log.Destination**) and the technical settings for the RFC destination, see at  [Customizing Check](./customizing-check).
+
+**Gateway Host** is the name (or IP address of your SAP system). Make sure that the Gateway Host is the same as in your SAP Connection.<br>
+**Gateway Service** is generally *sapgwNN*, where NN is the ID of your SAP system. NN is a number between 00 and 99.
   
-### Step 3: Set Update Mode**<br>
-In the given example, we will make a Full Update. A full update requests all data that meets the selection criteria you set.
-To get a real Delta procedure running, Delta first has to be initialized. See Delta.
 
-### Step 4: Select Columns**<br>
+### Step 3: Set Update Mode
 
-You also have to put a checkmark next to the columns you would like to extract. Your template should look like this when you're done:
+**Full Update** requests all data that meets the selection criteria you set.<br>
+To get a real **Delta** procedure running, Delta first has to be initialized. See at [Delta](./content-delta).<br>
+To get an overview see at [Update Mode](./update-mode).
+
+
+### Step 4: Select Columns
+
+Tick the checkmarks next to the columns you would like to extract. See the following example:
 
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
 
+
 ### Step 5: Activation
 
-If the validation finished without errors you can activate this extraction in SAP (click the Activate button). 
-If activation is successful, the corresponding status messages will appear within the course of a few seconds:
+If the validation finished without errors klick on **[Activate]** to run this extraction in SAP.<br> 
+After successful activation, the corresponding status messages appear in the course of a few seconds:
 
 ![Deltaq-System-Parameters-Info](/img/content/Deltaq-System-Parameters-Info.png){:class="img-responsive"}
 
@@ -51,13 +56,21 @@ If activation is successful, the corresponding status messages will appear withi
 
 Once activated successfully, the extraction can be executed. 
 
-The activation must be done only for the Delta Full or Init Mode.
-If you had an old activation, be sure to delete it (see Extraction Settings) before the new activation.
-For the Delta Update Mode don't make any activation. 
+The activation must only be done for **Delta**, **Full** or **Init** modes.
+Delete the old activation before starting a new one, see at **Extraction Settings**.
+Don't make any activation for the **Delta Update** mode. 
 
-**Variables** can be used for the following settings: Log. Destination, Gateway Host, Gateway Service and Program ID. 
-The Update Mode can be controlled via a variable too. See Extraction Settings. 
+### Variables and Filters
 
-**To set a Filter** see the section Datasource parameters.
+**Variables** can be used for the following settings:
+* **Log. Destination**, 
+* **Gateway Host**,
+* **Gateway Service**,
+* **Program ID**. 
 
-In case of errors, refer to the [Troubleshooting DeltaQ](./miscellaneous).
+The **Update Mode** can be controlled via a variable too, see at **Extraction Settings**.
+
+**Filters** see at [Datasource Parameters](./datasource-parameters).
+
+ 
+In case of errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide). 

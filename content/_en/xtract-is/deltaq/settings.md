@@ -11,12 +11,26 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=deltaq-settings
 ---
 
-Click the *Settings* link to open the Extraction Settings dialog.
+1. Click the the main window "Extract SAP DataSources and Extractors" on **[Settings]**.
+The Dialog **Xtract IS DeltaQPrefernces** open.
+The window consists of four main sections and buttons.
+
+Sections:
+* String Conversion (1)
+* Transfer Mode (2)
+* Misc: (3)
+* Hierarchy Settings (6)
+
+Buttons:
+* [Generate Documentation] (4)
+* [Request Maintenance] (5)
+* [OK] and [Cancel]
 
 
-![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings.png){:class="img-responsive"}
 
+![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings_01.png){:class="img-responsive"}
 
+### String Conversion (1)
 **Automatic String Conversion**<br>
 All strings are converted into VarChar strings if the source system is non-Unicode, and all strings are converted into NVarChar if the source system is Unicode.
 
@@ -26,26 +40,18 @@ All strings are converted to VarChar regardless if the source system is Unicode 
 **Convert Strings to NVarChar**<br>
 All strings are converted to NVarChar regardless if the source system is Unicode or not.
 
-**Transfer Mode**<br>
-The raw data packages can be send by SAP by a *tRFC* call or a Data-*IDoc*. Normally the tRFC is optimal for the default setting. If it is necessary, e.g. to examine the raw data packages for debugging reasons, you can change the transfer mode to IDoc. Then you can examine the data packages in the transaction WE02 (IDoc-Monitoring).
+### Transfer Mode (2)
+The raw data packages can be send by SAP by a *tRFC* call or a Data-*IDoc*. Normally the tRFC is optimal for the default setting. If it is necessary, e.g. to examine the raw data packages for debugging reasons, you can change the transfer mode to *IDoc*. Then you can examine the data packages in the transaction WE02 (IDoc-Monitoring).
 
-**Language**<br>
-Defines the Language, if a Hierarchy is extracted.
 
-**Hierarchy Name**<br>
-Defines the Hierarchy Name.
-
-**Hierarchy Class**<br>
-Defines the Hierarchy Class.
-
+### Misc. (3)
 **Update Mode Variable**<br>
 Defines a variable for the update mode.
-Set the value of the **Update Mode** to **V - SSIS Variable** and define the SSIS Variable for the Update Mode. The SSIS Variable can process the following values: F, C, D, S, I and R, as it is listed in the values of the Update Mode.
+Set the value of the **Update Mode** to **V - SSIS Variable** and define the SSIS Variable for the Update Mode. The SSIS Variable can process the following values: *F, C, D, S, I* and *R*, as it is listed in the values of the Update Mode.
 
 **Request ID**<br>
 This field is optional. 
 If a value (e.g. XtractDatasource) is set, it will be used as suffix in the SAP job name (e.g. BIXtractDatasource), otherwise a combination of process ID and timestamp will be used (e.g. REQU_pppppppp_yyyyMMddHHmmss), with process ID being the ID of the Windows process, the XtractDeltaQServerPool.exe is running under.
-
 
 **Automatic Synchronisation**<br>
 Depending on the system landscape it could happen that developments only be performed in a test system. If SSIS packages should be used later in the production environment, the data source has to be enabled there. To avoid manual changes in the transactional system you can activate this option. In this case the activation will be automatically done and the timestamp of the data source will be changed that it will be consistent to the SAP system setting. 
@@ -64,14 +70,27 @@ In case of no convertable date values you have to enter a default date value int
 **Replace date 00000000 with [YYYYMMDD]**<br>
 SAP date '00000000' will be converted to NULL or the entered date [YYYYMMDD]. 
 
-**Replace invalid date  with[YYYYMMDD]**<br>
+**Replace invalid date  with [YYYYMMDD]**<br>
 In case of no convertable date values you have to enter a default date value into the textbox. Every invalid value will be converted into this value.<br>
 
-**Request Maintenance**<br>
+### Hierarchy Settings (6)
+**Language**<br>
+Defines the Language, if a Hierarchy is extracted.
+
+**Hierarchy Name**<br>
+Defines the Hierarchy Name.
+
+**Hierarchy Class**<br>
+Defines the Hierarchy Class.
+
+### Buttons (4),(5)
+**Generate Documentation** (4)<br>
+Generates an excel documentation about the datasource and its fields.
+
+**Request Maintenance** (5)<br>
 Shows the content of SAP table ROOSPRMSC.
 Allows the deletion of Init Requests (Requests in RSA7).
 In general, only one entry which corresponds to one Init Request should be visible here.
 Only if you've executed Init Requests with non-overlapping selection criteria, can you have more than one entry in this view.
 
-**Generate Documentation**<br>
-Generates an excel documentation about the datasource and its fields.
+
