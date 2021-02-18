@@ -8,7 +8,6 @@ parent: getting-started
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=general-settings
 progressstate: 5
 ---	
 General Settings are independent of the extraction type.
@@ -23,7 +22,7 @@ Example:
 The window "General Settings" opens.
 
 
-### Misc. tab
+### Misc. Tab
 The miscellaneous tab consists of two subsections:
 - Options
 - Keywords
@@ -40,23 +39,30 @@ This increases the performance and limits the impact on the SAP system. If this 
 **Preview Mode** (2)
 If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
 
+**Enable column level encryption** (3)
+
+
 #### Keywords
 One or more keywords (Tags) can be set to an extraction. 
-Keywords can be entered directly in the keyword field (3).
+Keywords can be entered directly in the keyword field (4).
 Within the Designer you can use these keywords to filter  extractions. 
 
 {:.box-tip}
 **Tip:** to display filter options, navigate to **[Extractions] > [Filter]** or press **[CTRL]+[F]**.
  
-### Primary Key tab
-Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
-![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
-
-Depicted example demonstrates the SAP object *MAKT* with it's primary key inherited from SAP in the general settings of the Designer. In this example the primary key consists of *MANDT*, *MATNR*, *SPRAS*. The demonstrated primary key is also taken over BOARD. 
-
-{:.box-note}
-**Note:** A defined primary key field in a table is a prerequisite for merging data. 
-
-
 ### Security Tab
 The security tab is described in the section [access management](https://help.theobald-software.com/en/board-connector/security/access-management).
+
+### CSV Tab
+
+#### Column Name Style
+
+Defines the style of the column name. Following options are available: 
+
+- **Code**: The SAP technical column name is used as column name in the destination e.g., MAKTX.<br>
+- **PrefixedCode**: The SAP technical column name is prefixed by SAP object name and the tilde character e.g., MAKT~MAKTX
+- **CodeAndText**: The SAP technical column name and the SAP description separated by an underscore are used as column name in the destination e.g., MAKTX_Material Description (Short Text).<br>
+- **TextAndCode**: The SAP description and the SAP technical column name description separated by an underscore are used as column name in the destination e.g., Material Description (Short Text)_MAKTX.
+
+#### Date conversion
+{% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
