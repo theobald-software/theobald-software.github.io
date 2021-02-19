@@ -32,7 +32,6 @@ The miscellaneous tab consists of two subsections:
 #### Options
 **Cache results** (1)
 
-
 BOARD often pulls the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way BOARD pulls the data from cache and not from the SAP.
 This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
 
@@ -40,6 +39,8 @@ This increases the performance and limits the impact on the SAP system. If this 
 If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
 
 **Enable column level encryption** (3)
+
+Comming soon...
 
 
 #### Keywords
@@ -59,10 +60,23 @@ The security tab is described in the section [access management](https://help.th
 
 Defines the style of the column name. Following options are available: 
 
-- **Code**: The SAP technical column name is used as column name in the destination e.g., MAKTX.<br>
+- **Code**: The SAP technical column name is used as column name in the destination e.g. MAKTX<br>
 - **PrefixedCode**: The SAP technical column name is prefixed by SAP object name and the tilde character e.g., MAKT~MAKTX
-- **CodeAndText**: The SAP technical column name and the SAP description separated by an underscore are used as column name in the destination e.g., MAKTX_Material Description (Short Text).<br>
-- **TextAndCode**: The SAP description and the SAP technical column name description separated by an underscore are used as column name in the destination e.g., Material Description (Short Text)_MAKTX.
+- **CodeAndText**: The SAP technical column name and the SAP description separated by an underscore are used as column name in the destination e.g., MAKTX_Material Description (Short Text)<br>
+- **TextAndCode**: The SAP description and the SAP technical column name description separated by an underscore are used as column name in the destination e.g., Material Description (Short Text)_MAKTX
 
 #### Date conversion
-{% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
+
+**Convert date strings**<br>
+Converts the character-type SAP date (YYYYMMDD, e.g., 19900101) to a special date format (YYYY-MM-DD, e.g., 1990-01-01). Target data uses a real date data-type and not the string data-type to store dates.
+
+**Convert invalid dates to**<br>
+If an SAP date cannot be converted to a valid date format, the invalid date is converted to the entered value. NULL is supported as a value.
+
+When converting the SAP date the two special cases 00000000 and 9999XXXX are checked at first.
+
+**Convert 00000000 to**<br>
+Converts the SAP date 00000000 to the entered value.
+
+**Convert 9999XXXX to**<br>
+Converts the SAP date 9999XXXX to the entered value.
