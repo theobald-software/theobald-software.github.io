@@ -3,7 +3,7 @@ ref: xu-sap-queries-04
 layout: page
 title: Extraction Settings
 description: Extraction Settings
-product: board-connector
+product: xtract-universal
 parent: sap-queries
 permalink: /:collection/:path
 weight: 4
