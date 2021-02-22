@@ -28,7 +28,7 @@ The miscellaneous tab consists of two subsections:
 - Options
 - Keywords
 
-![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
+![General-Settings](/img/content/General-SettingsBC.png){:class="img-responsive"}
 
 #### Options
 **Cache results** (1)
@@ -38,25 +38,48 @@ BOARD often pulls the data from SAP for several times. To decrease the SAP serve
 This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
 
 **Preview Mode** (2)
+
 If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
+
+**Enable column level encryption** (3)
+
+Comming soon.
 
 #### Keywords
 One or more keywords (Tags) can be set to an extraction. 
-Keywords can be entered directly in the keyword field (3).
+Keywords can be entered directly in the keyword field (4).
 Within the Designer you can use these keywords to filter  extractions. 
 
 {:.box-tip}
 **Tip:** to display filter options, navigate to **[Extractions] > [Filter]** or press **[CTRL]+[F]**.
  
-### Primary Key tab
-Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
-![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
-
-Depicted example demonstrates the SAP object *MAKT* with it's primary key inherited from SAP in the general settings of the Designer. In this example the primary key consists of *MANDT*, *MATNR*, *SPRAS*. The demonstrated primary key is also taken over BOARD. 
-
-{:.box-note}
-**Note:** A defined primary key field in a table is a prerequisite for merging data. 
-
 
 ### Security Tab
 The security tab is described in the section [access management](https://help.theobald-software.com/en/board-connector/security/access-management).
+
+### CSV Tab
+
+#### Column Name Style
+
+Defines the style of the column name. Following options are available: 
+
+- **Code**: The SAP technical column name is used as column name in the destination e.g. MAKTX<br>
+- **PrefixedCode**: The SAP technical column name is prefixed by SAP object name and the tilde character e.g., MAKT~MAKTX
+- **CodeAndText**: The SAP technical column name and the SAP description separated by an underscore are used as column name in the destination e.g., MAKTX_Material Description (Short Text)<br>
+- **TextAndCode**: The SAP description and the SAP technical column name description separated by an underscore are used as column name in the destination e.g., Material Description (Short Text)_MAKTX
+
+#### Date conversion
+
+**Convert date strings**<br>
+Converts the character-type SAP date (YYYYMMDD, e.g., 19900101) to a special date format (YYYY-MM-DD, e.g., 1990-01-01). Target data uses a real date data-type and not the string data-type to store dates.
+
+**Convert invalid dates to**<br>
+If an SAP date cannot be converted to a valid date format, the invalid date is converted to the entered value. NULL is supported as a value.
+
+When converting the SAP date the two special cases 00000000 and 9999XXXX are checked at first.
+
+**Convert 00000000 to**<br>
+Converts the SAP date 00000000 to the entered value.
+
+**Convert 9999XXXX to**<br>
+Converts the SAP date 9999XXXX to the entered value.

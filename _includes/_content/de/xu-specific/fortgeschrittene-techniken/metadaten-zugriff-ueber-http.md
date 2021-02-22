@@ -3,7 +3,7 @@ Man kann über Xtract Universals Web-API verschiedene Metadaten-Informationen ei
 
 ### Metadaten einer Extraktion
 
-Das URL-Schema lautet: 
+Das URL-Pattern lautet: 
 ```
 http://[host]:[port]/metadata/?name=[extractionName]
 ```
@@ -43,6 +43,10 @@ Der Aufruf der Metadaten der Extraktion BSEG mit der URL ```http://localhost:806
 10,BDIF2,Valuation Difference for the Second Local Currency,P,15,2,false,HWAE2<br>
 
 ### Parameter
+
+Jede Extraktion hat ein Set an *Extraction*, *Source* und *Custom* [Parametern](./extraktionsparameter).
+Diese Parameter sind im Xtract Universal Designer unter "Run Extraction" einsehbar.
+
 
 Die URL 
 ```
@@ -88,11 +92,16 @@ Der Aufruf von```http://localhost:8065/``` gibt eine Liste aller Extraktionen mi
 Die aktuellen Versionsinformationen können über die nachfolgenden HTTP Abfragen ermittelt werden:
 ```
 http://localhost:8065/CurrentVersion
-http://localhost:8065/ProductVersionHistory
-http://localhost:8065/KernelVersionHistory
 ```
 
-Eine Extraktionsliste aller auf dem Server wird ausgegeben, wenn man die Basis-URL ohne jeglichen Parameter aufruft:
+Xtract Universal's Versionsinformationen können über folgende URL aufgerufen werden:
+```
+http://localhost:8065/ProductVersionHistory
+```
+```
+http://localhost:8065/KernelVersionHistory
+```
+Eine Extraktionsliste aller Extraktionen auf dem Server wird ausgegeben, indem man die Basis-URL ohne jegliche Parameter aufruft:
 ```
 http://localhost:8065/
 ```

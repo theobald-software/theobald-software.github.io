@@ -1,6 +1,6 @@
 ### About
 Xtract Universal offers a Web API which allows querying different meta information from Xtract Universal through a web call.
-An extraction's metadata is exposed through this Web API. The following describes what metadata is exposed and what URLs to call to retrieve that data.
+The following section contains information about the available metadata and the URLs to retrieve that data.
 
 ### Metadata of an extraction
 
@@ -90,12 +90,17 @@ http://[host]:[port]/CurrentVersion
 ```
 
 
-Xtract Universal's version history can retreived by the following URL pattern:  
+Xtract Universal's version history can be retreived by the following URL pattern:  
 ```
 http://[host]:[port]/ProductVersionHistory
 ```
 ```
 http://[host]:[port]/KernelVersionHistory
+```
+
+A list of all extractions on the server can be retrieved by the using the base URL without any parameters:
+```
+http://localhost:8065/
 ```
 
 ### Log Access via Web Service
