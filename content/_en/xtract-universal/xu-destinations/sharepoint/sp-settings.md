@@ -10,24 +10,23 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=settings1
 ---
-The following section gives an overview over the settings that can be changed for the SharePoint destination.
-The settings can be changed in the window "Destination Settings". 
-
-![SharePointExtractionSpecificSettings](/img/content/xu/SP_destination_settings.png){:class="img-responsive"}
 
 ### Opening destination settings
 1. In the main window of the designer choose the extraction with the destination type SharePoint.
 2. Click **[Destination]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
-### Segments of the window "Destination Settings"
+The following settings can be defined for the destination:  
 
-#### SharePoint List Name
+### Destination Settings
 
-- **Same as name of SAP object**: Gives the SharePoint list name, which is identical to the technical SAP object name.
-- **Same as name of extraction**: Gives the SharePoint list name, which is identical to the extraction name.
-- **Custom**: The SharePoint list name can be chosen freely.  
+![SharePointExtractionSpecificSettings](/img/content/xu/SP_destination_settings.png){:class="img-responsive"}
 
-#### Mode
+{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
+
+{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
+
+### Mode
 
 - **Drop, Create & Insert**: Creates a new list on the SharePoint system, deleting any previous list with the same name.
 - **Create if not exists & Merge**: Merges data with an existing list or creates a new list, if none with the specified name is found.
@@ -41,5 +40,4 @@ The settings can be changed in the window "Destination Settings".
 {:.box-tip}
 **Recommendation:** Keep the default value (2) for Max. threads.
 
-#### Column name style
-{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
+

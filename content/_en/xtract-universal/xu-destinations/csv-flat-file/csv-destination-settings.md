@@ -27,7 +27,7 @@ The window "Destination Settings" consists out of four subsections:
 ![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
       
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}	 
-### Column Name Style 
+
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}	  
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}	  
  

@@ -22,19 +22,11 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ![SharePointExtractionSpecificSettings](/img/content/xu/SP_destination_settings.png){:class="img-responsive"}
 
-### Destinationseinstellungen öffnen
-1. Wählen Sie im Hauptfenster des Designers die Extraktion mit dem Zieltyp SharePoint.
-2. Klicken Sie auf **[Destination]**. Das Fenster "Destination Settings" öffnet sich.
+{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
-### Untersektionen des Fensters "Destination Settings"
+{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 
-#### SharePoint List Name
-
-- **Same as name of SAP object**: Der Name der SharePoint-Liste ist identisch mit dem technischen SAP-Objektnamen.
-- **Same as name of extraction**: Der Name der SharePoint-Liste ist identisch mit dem Namen der Extraktion.
-- **Custom**: Der Name der SharePoint-Liste kann frei gewählt werden.
-
-#### Mode
+### Mode
 
 - **Drop, Create & Insert**:  Legt eine neue Liste in SharePoint an und löscht dabei eine bereits vorhandene Liste gleichen Namens.
 - **Create if not exists & Merge**: Aktualisiert eine bestehende Liste bzw. legt eine Liste neu an, falls noch keine mit dem angegebenen Namen existiert.
@@ -45,7 +37,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 
 Eine größere Zahl der Threads kann die Geschwindigkeit des Exports verbessern oder aber auch verschlechtern, abhängig von der Server- und Netzwerkumgebung.
- Das Setzen auf "1" verlangsamt Exporte signifikant, kann aber hilfreich sein, wenn Ihr SharePoint-Server stark ausgelastet ist oder Verbindungsprobleme auftreten. 
+Das Setzen auf "1" verlangsamt Exporte signifikant, kann aber hilfreich sein, wenn Ihr SharePoint-Server stark ausgelastet ist oder Verbindungsprobleme auftreten. 
    
  
 {:.box-note}
@@ -55,5 +47,3 @@ Eine größere Zahl der Threads kann die Geschwindigkeit des Exports verbessern 
 {:.box-tip}
 **Empfehlung:** Verändern Sie nicht den Standardwert (2) ohne einen triftigen Grund.  
 
-#### Column name style
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}

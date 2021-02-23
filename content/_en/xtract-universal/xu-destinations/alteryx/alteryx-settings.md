@@ -24,5 +24,5 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
-### Column name style
+
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
