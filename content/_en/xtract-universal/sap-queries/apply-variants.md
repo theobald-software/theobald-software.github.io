@@ -3,7 +3,7 @@ ref: xu-sap-queries-02
 layout: page
 title: Apply Variants
 description: Apply Variants
-product: xtract-universal
+product: board-connector
 parent: sap-queries
 permalink: /:collection/:path
 weight: 2

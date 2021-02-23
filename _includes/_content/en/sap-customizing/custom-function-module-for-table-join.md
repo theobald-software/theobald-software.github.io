@@ -1,10 +1,6 @@
 {: .box-note }
 **Note:** The Table Join component has been marked as *deprecated*. Use the Table component with custom function module Z_THEO_READ_TABLE for joining SAP tables.
 
-### Installation with an SAP transport
-Installation of the function module using the transport request *thtrans.zip* supplied. <br> 
-The transport request is located in the following installation directory `C:\Program Files\[XtractProduct]\ABAP\thtrans.zip`.
-
 ### Manual installation of function module Z_XTRACT_IS_TABLE_JOIN
 
 The Table Join component is used for joining several tables or views on the SAP side before data extraction.

@@ -3,7 +3,7 @@ ref: xu-sap-queries-01
 layout: page
 title: Define a Query Extraction
 description: Define a Query Extraction
-product: xtract-universal
+product: board-connector
 parent: sap-queries
 permalink: /:collection/:path
 weight: 1
