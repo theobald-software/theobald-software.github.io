@@ -43,7 +43,7 @@ If preview mode is activated, only a small portion of data is extracted from SAP
 
 **Enable column level encryption** (3)
 
-Comming soon.
+Coming soon.
 
 #### Keywords
 One or more keywords (Tags) can be set to an extraction. 
