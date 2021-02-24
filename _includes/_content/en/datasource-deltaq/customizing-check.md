@@ -1,20 +1,20 @@
 ### Settings
 
 1. Open the DeltaQ extraction.
-2. Fill in the fields on the top right. Search for technical settings from the drop-down menu by clicking **Search**(magnifying glass symbol). The settings are defined in [DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
+2. Fill in the fields on the top right. Search for technical settings from the drop-down menu by clicking **Search** (magnifying glass symbol). The settings are defined in [DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
 
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 
-**Log. Destination**<br>This is the logical RFC target system. See step 1 at [SAP Customizing/DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
+**Log. Destination**<br>This is the logical RFC target system.
 
 **Gateway Host**<br>This the Name (or IP address) of your SAP system. <br>
 Make sure that the Gateway Host is the same as in your SAP Connection.
 
-**Gateway Service**<br>This is generally *sapgwNN*, where NN is the instance number of your SAP system. NN is a number between *00* and *99*.
-NN must have the same value as the *System No* field in your SAP connection or the instance number in your SAP logon. 
+**Gateway Service**<br>This is generally *sapgwNN*, where *NN* is the instance number of your SAP system e.g., a number between *00* and *99*.
+*NN* must have the same value as the *System No* field in your SAP connection or the instance number in your SAP logon. 
 
-**Program ID**<br>This is the name of the registered RFC server. See step 4 at [SAP Customizing/DeltaQ Customizing](../sap-customizing/customizing-for-deltaq).
+**Program ID**<br>This is the name of the registered RFC server.
 
 The values **Gateway Host** and **Gateway Service** correspond to the following SAP connection.
 
@@ -22,7 +22,7 @@ The values **Gateway Host** and **Gateway Service** correspond to the following 
 
 ### Customizing Check
 
-Click on the link *Customizing Check* to validate the DeltaQ Customizing on the SAP system.
+Click **[Customizing Check]** to validate the DeltaQ Customizing on the SAP system.
 Make sure that all lines are green.  
 
 ![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
