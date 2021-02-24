@@ -13,9 +13,6 @@ The raw data packages can be send by SAP by a *tRFC* call or a *Data-IDoc*. Norm
 
 #### Subsection Misc.
 
-**Check IDoc Request State**<br>
-information needed!!!
-
 **Automatic Synchronisation**<br>
 Depending on the system landscape it could happen that developments only be performed in a test system. If SSIS packages should be used later in the production environment, the data source has to be enabled there. To avoid manual changes in the transactional system you can activate this option. In this case the activation will be automatically done and the timestamp of the data source will be changed that it will be consistent to the SAP system setting. <br>
 If the DataSource was modified in the SAP system, e.g. a field’s name, data type or length was changed or a field was excluded from data transfer, you will still have to manually activate the DataSource in the DeltaQ component, even if Automatic Synchronisation is switched on. Otherwise data load will fail. This behaviour is by SAP design and is described in [SAP help](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
