@@ -1,6 +1,7 @@
-Man kann über HTTP verschiedene Metadaten-Informationen einer Extraktion abrufen. 
+### Über diese Seite 
+Man kann über Xtract Universals Web-API verschiedene Metadaten-Informationen einer Extraktion abrufen. 
 
-**Spalten einer Extraktion**
+### Metadaten einer Extraktion
 
 Das URL-Pattern lautet: 
 ```
@@ -18,34 +19,30 @@ Die Metadatentabelle hat folgendes Schema:
 | TYPE     | Einstellige ABAP Datentyp ID | ABAP Datentyp             |
 | LENGTH   | Länge der Spalte             | Länge der Spalte          |
 | DECIMALS | Integer                      | Anzahl der Dezimalstellen |
+| KEY      | Bool                         | Spalte ist Primärschlüssel der Extraktion |
+| REFERENCEFIELD   | String               | Referenzfeld der Währung            |
 
-Die "einstellige ABAP Datentyp ID" ist [hier](http://help.sap.com/abapdocu_702/en/abapdescribe_field.htm) definiert: 
+Die "einstellige ABAP Datentyp ID" ist [hier](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/DE-DE/abapdescribe_field.htm) definiert: 
            
-Die eingebauten ABAP Datentypen [hier](http://help.sap.com/abapdocu_702/en/ABENBUILT_IN_TYPES_COMPLETE.htm) .
-         
 
-**Beispiel**: Der Aufruf der Metadaten der Extraktion 0COSTCENTER_ATTR mit der URL 
 
-```
-http://localhost:8095/metadata/?name=delta01
-```
+**Beispiel**:<br>
+Der Aufruf der Metadaten der Extraktion BSEG mit der URL ```http://localhost:8065/metadata/?name=BSEG``` liefert:
 
-liefert:
+*POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS,KEY,REFERENCEFIELD*<br>
+0,MANDT,Client,C,3,0,true,<br>
+1,BUKRS,Company Code,C,4,0,true,<br>
+2,BELNR,Accounting Document Number,C,10,0,true,<br>
+3,GJAHR,Fiscal Year,N,4,0,true,<br>
+4,BUZEI,Number of Line Item Within Accounting Document,N,3,0,true,<br>
+5,BUZID,Identification of the Line Item,C,1,0,false,<br>
+6,AUGDT,Clearing Date,,8,0,false,<br>
+7,DMBTR,Amount in Local Currency,P,15,2,false,WAERS<br>
+8,KZBTR,Original Reduction Amount in Local Currency,P,15,2,false,HWAER<br>
+9,PSWBT,Amount for Updating in General Ledger,P,15,2,false,PSWSL<br>
+10,BDIF2,Valuation Difference for the Second Local Currency,P,15,2,false,HWAE2<br>
 
-POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS<br>
-1,KOKRS,Kostenrechnungskreis,C,8,0<br>
-2,KOSTL,Kostenstelle,C,20,0<br>
-3,DATETO,Datum gültig bis,D,16,0<br>
-4,DATEFROM,Datum gültig ab,D,16,0<br>
-5,VERAK,Verantwortlicher,C,40,0<br>
-6,BUKRS,Buchungskreis,C,8,0<br>
-7,GSBER,Geschäftsbereich,C,8,0<br>
-8,ABTEI,Abteilung,C,24,0<br>
-9,KOSAR,Art der Kostenstelle,C,2,0<br>
-10,WAERS,Währungsschlüssel,C,10,0<br>
-11,PRCTR,Profitcenter,C,20,0<br>
-
-**Parameter (Variablen)**
+### Parameter
 
 Jede Extraktion hat ein Set an *Extraction*, *Source* und *Custom* [Parametern](./extraktionsparameter).
 Diese Parameter sind im Xtract Universal Designer unter "Run Extraction" einsehbar.
@@ -62,7 +59,7 @@ Im folgenden Beispiel liefert die URL die folgenden Parameter:
 http://localhost:8065/parameters/?name=Customers
 ```
 
-Name,Description,Category,Type,DefaultValue <br>
+*Name,Description,Category,Type,DefaultValue* <br>
 preview,Enable/disable preview mode,Extraction,Flag,False <br>
 clearBuffer,Clear/keep the result <br>buffer,Extraction,Flag,False <br>
 rows,Maximum number of rows,Extraction,Number,0 <br>
@@ -76,7 +73,21 @@ client,Client,Connection,Text,800 <br>
 sysnr,System Number,Connection,Number,0 <br>
 ashost,Application Server,Connection,Text,ecc.theobald-software.com
 
-**Produkt-Version**
+### Liste aller Extraktionen 
+
+Eine Liste aller in Xtract Universal vorhandenen Extraktionen kann über das folgende URL-Schema ausgegeben werden:
+
+```
+http://[host]:[port]
+```
+
+**Beispiel:** <br>
+Der Aufruf von```http://localhost:8065/``` gibt eine Liste aller Extraktionen mit folgender Struktur zurück: <br>
+*Name,Type,Source,Destination,LastRun,RowCount,LastChange,Created*
+
+
+
+### Produkt-Version
 
 Die aktuellen Versionsinformationen können über die nachfolgenden HTTP Abfragen ermittelt werden:
 ```
@@ -94,3 +105,7 @@ Eine Extraktionsliste aller Extraktionen auf dem Server wird ausgegeben, indem m
 ```
 http://localhost:8065/
 ```
+
+
+### Log-Zugriff über Web-Service
+Der Abschnitt [Log-Zugriff über Web-Service](./../logging/log-zugriff-ueber-http) beschreibt weitere Anwendungsfälle der Xtract Universal Metadaten Web API.
