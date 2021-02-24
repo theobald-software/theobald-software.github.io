@@ -2,10 +2,13 @@
 The update mode allows delta update meaning that only added or changed data is extracted, instead of a full load.
 
 ### Settings
-- The **Update mode** can be set dynamically as runtime parameter **updateType** in the "Run Extraction" dialog.
-![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
-- In the main window "Extract SAP DataSources and Extractors" select the **Update-Mode** from the drop-down menu.
+
+In the main window "Extract SAP DataSources and Extractors" select the **Update-Mode** from the drop-down menu.
 ![Update-Mode2](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
+
+The **Update mode** can be set dynamically as runtime parameter **updateType** in the "Run Extraction" dialog.
+![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
+
 
 | Letter |  Desgination   | Description |
 | :------: |:--- | :--- |
