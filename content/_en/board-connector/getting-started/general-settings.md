@@ -8,6 +8,7 @@ parent: getting-started
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+old_url: /BOARD-Connector-EN/default.aspx?pageid=general-settings
 progressstate: 5
 ---	
 General Settings are independent of the extraction type.
@@ -22,26 +23,27 @@ Example:
 The window "General Settings" opens.
 
 
-### Misc. Tab
+### Misc. tab
 The miscellaneous tab consists of two subsections:
 - Options
 - Keywords
 
-![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
+![General-Settings](/img/content/General-SettingsBC.png){:class="img-responsive"}
 
 #### Options
 **Cache results** (1)
+
 
 BOARD often pulls the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way BOARD pulls the data from cache and not from the SAP.
 This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
 
 **Preview Mode** (2)
+
 If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
 
 **Enable column level encryption** (3)
 
-Comming soon...
-
+Coming soon.
 
 #### Keywords
 One or more keywords (Tags) can be set to an extraction. 
@@ -51,6 +53,7 @@ Within the Designer you can use these keywords to filter  extractions.
 {:.box-tip}
 **Tip:** to display filter options, navigate to **[Extractions] > [Filter]** or press **[CTRL]+[F]**.
  
+
 ### Security Tab
 The security tab is described in the section [access management](https://help.theobald-software.com/en/board-connector/security/access-management).
 

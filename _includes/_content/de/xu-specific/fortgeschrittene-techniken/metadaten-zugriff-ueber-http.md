@@ -47,6 +47,10 @@ POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS<br>
 
 **Parameter (Variablen)**
 
+Jede Extraktion hat ein Set an *Extraction*, *Source* und *Custom* [Parametern](./extraktionsparameter).
+Diese Parameter sind im Xtract Universal Designer unter "Run Extraction" einsehbar.
+
+
 Die URL 
 ```
 http://[host]:[port]/parameters/?name=[extractionName]
@@ -77,11 +81,16 @@ ashost,Application Server,Connection,Text,ecc.theobald-software.com
 Die aktuellen Versionsinformationen können über die nachfolgenden HTTP Abfragen ermittelt werden:
 ```
 http://localhost:8065/CurrentVersion
-http://localhost:8065/ProductVersionHistory
-http://localhost:8065/KernelVersionHistory
 ```
 
-Eine Extraktionsliste aller auf dem Server wird ausgegeben, wenn man die Basis-URL ohne jeglichen Parameter aufruft:
+Xtract Universal's Versionsinformationen können über folgende URL aufgerufen werden:
+```
+http://localhost:8065/ProductVersionHistory
+```
+```
+http://localhost:8065/KernelVersionHistory
+```
+Eine Extraktionsliste aller Extraktionen auf dem Server wird ausgegeben, indem man die Basis-URL ohne jegliche Parameter aufruft:
 ```
 http://localhost:8065/
 ```

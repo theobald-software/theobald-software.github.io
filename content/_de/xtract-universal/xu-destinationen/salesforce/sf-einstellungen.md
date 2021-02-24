@@ -22,21 +22,23 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ### Destination Settings - Destinationseinstellungen
 ![sf-destination-settings3](/img/content/sf-destination-settings3.PNG){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/entity-name.md %}
+{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
 
-**Preparation**<br>
+### Preparation
+
 bestimmt, was geschehen soll, bevor die Daten in ein Zielobjekt geschrieben werden.
 - **Delete & Create**: Löscht das Objekt mit dem angegebenen Namen und erstellt ein neues Objekt mit den benötigten Einstellungen.
 - **Create if not exists**: Erstellt ein neues Objekt, falls kein Objekt mit dem angegebenen Namen existiert.
 
-**Row processing**<br>
+### Row processing
+
 bestimmt, wie die Daten in das Zielobjekt geschrieben werden sollen.
 - **Insert**: Fügt alle neuen Datensätze in das Objekt ein.
 - **Merge**: Fügt alle neuen Datensätze in das Objekt ein und aktualisiert bereits vorhandene Einträge anhand des Primärschlüssels.
 
-#### Concurrency mode
+### Concurrency mode
 
 bestimmt, wie die Salesforce Bulk-API die Daten verarbeitet.
 - **Parallel**: Alle Batches werden parallel zueinander verarbeitet.

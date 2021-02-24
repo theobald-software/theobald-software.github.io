@@ -25,10 +25,10 @@ Das Fenster "General Settings" wird geöffnet.
 ### Misc. Tab
 
 Der Tab "Misc." besteht aus zwei Unterabschnitten:
-- Optionen
-- Schlüsselwörter
+- Options
+- Keywords
 
-![General-Settings](/img/content/General-Settings.png){:class="img-responsive"}
+![General-Settings](/img/content/General-SettingsBC.png){:class="img-responsive"}
 
 #### Options
 
@@ -43,9 +43,10 @@ Dies erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
 
 Wenn der Preview-Modus aktiviert ist, wird nur ein kleiner Teil der Daten aus SAP extrahiert oder, falls eine Extraktion nicht möglich ist, werden stattdessen Beispieldaten erzeugt.
 
+
 **Enable column level encryption** (3)
 
-In Kürze verfügbar...
+In Kürze verfügbar.
 
 #### Keywords (Schlüsselwörter)
 
@@ -55,17 +56,6 @@ Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extr
 
 {:.box-tip}
 **Tipp:** zum Anzeigen der Filteroptionen, navigieren Sie zu **[Extractions] > [Filter]** oder drücken Sie **[CTRL]+[F]**.
-
-
-### Primary Key Tab
-Tabellenextraktionen erben die Primärschlüssel von SAP. Andere Objekte wie z.B. SAP Query, BW Cube etc. erfordern eine manuelle Einstellung von Primärschlüsseln. 
-![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
-
-Das abgebildete Beispiel zeigt das SAP-Objekt *MAKT* mit seinem Primärschlüssel. Der Primärschlüssel wurde SAP geerbt wurde und wird in den allgemeinen Einstellungen des Designers angezeigt.
-In diesem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, *SPRAS*. Der gezeigte Primärschlüssel wird auch in BOARD übernommen. 
-
-{:.box-note}
-**Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
 
 
 ### Security Tab
