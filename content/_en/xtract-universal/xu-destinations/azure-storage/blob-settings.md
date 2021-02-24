@@ -51,11 +51,11 @@ Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices
 
 ### Folder path
 
-Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](./blob-connection#azure-storage-connection). <br>
+Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](./blob-connection#azure-storage-connection).
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-This field allows entry of [script expressions](/../../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
+This field allows entry of [script expressions](./../../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
 
 ### File Splitting
 
