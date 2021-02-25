@@ -1,4 +1,3 @@
-
 ---
 ref: xu-amzon-redshift-03
 layout: page
