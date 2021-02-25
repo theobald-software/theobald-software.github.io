@@ -8,6 +8,7 @@ parent: Power-BI-Connector
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
+progressstate: 5
 old_url:
 ---
 ### Opening the Destination Settings

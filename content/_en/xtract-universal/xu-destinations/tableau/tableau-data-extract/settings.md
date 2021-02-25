@@ -7,6 +7,7 @@ product: xtract-universal
 parent: tableau-data-extract
 permalink: /:collection/:path
 weight: 3
+progressstate: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=settings
 ---
@@ -19,7 +20,6 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=settings
 The following settings can be defined for the destination:  
 
 ### Destination Settings
-
 ![Tableau-Extraction-Specific-Settings](/img/content/Tableau-Extraction-Specific-Settings.png){:class="img-responsive"}
       
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
@@ -28,8 +28,5 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
      
-**Existing files** <br>
-**Replace file**: The export process will overwrite existing files.<br>
-**Append results**: The export process will append new data to an already existing file.<br>
-**Abort extraction**: The process will be aborted if the file already exists. 
+{% include _content/en/xu-specific/xu-destinations/general/existing-files.md %}
 

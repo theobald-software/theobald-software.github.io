@@ -11,6 +11,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=part_2___linking_a_bex_query_with_a_hierarchy
 ---
 
+
 With BW hierarchies, the different values of a Characteristc InfoObject are assigned to different hierarchy nodes. Those values of a characteristic, that were not assigned to a hierarchy node will be grouped under the so called "Not Assigned" node.
 
 ![BExQuery_notAssigned_node](/img/content/BExQuery_notAssigned_node.png){:class="img-responsive"}

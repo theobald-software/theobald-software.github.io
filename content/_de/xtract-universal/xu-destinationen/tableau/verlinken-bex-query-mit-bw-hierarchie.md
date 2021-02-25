@@ -1,8 +1,8 @@
 ---
 ref: xu-tableau-03
 layout: page
-title: Verlinken einer BEx-Query mit einer BW-Hierarchie
-description: Verlinken einer BEx-Query mit einer BW-Hierarchie
+title: Teil 1 - Verlinken einer BEx-Query mit einer BW-Hierarchie
+description: Teil 1 - Verlinken einer BEx-Query mit einer BW-Hierarchie
 product: xtract-universal
 parent: tableau
 permalink: /:collection/:path

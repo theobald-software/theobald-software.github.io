@@ -1,5 +1,5 @@
 ---
-ref: xu-amzon-redshift-01
+ref: xu-amazon-redshift-01
 layout: page
 title: Voraussetzungen
 description: Voraussetzungen

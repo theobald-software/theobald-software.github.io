@@ -1,6 +1,5 @@
-
 ---
-ref: xu-amzon-redshift-03
+ref: xu-amazon-redshift-03
 layout: page
 title: Einstellungen
 description: Einstellungen
@@ -23,9 +22,9 @@ Die folgenden Einstellungen können für die Destination definiert werden.
   
 ### Destination Settings - Destinationseinstellungen
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form_debug.png){:class="img-responsive"}
+![ext_spec_set_de_form](/img/content/redshift-configuration.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
+{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 

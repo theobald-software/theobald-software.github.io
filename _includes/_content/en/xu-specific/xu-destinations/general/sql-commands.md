@@ -17,7 +17,8 @@ Once the table is created, it is up to you to change the table definition,
 by, for example, creating corresponding key fields and indexes or additional fields.
 
 
-### Row Processing
+
+### Row Processing - SQL Commands
 
 Defines how the data is inserted into the target table.
 - *Insert*: Insert records (default).
@@ -27,7 +28,7 @@ Defines how the data is inserted into the target table.
 - *Merge (deprecated)*: This option is obsolete. Please use the Fill merge staging table option and check the About Merging section. 
 
 
-### Finalization
+### Finalization - SQL Commands
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
 - *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example.  
@@ -57,7 +58,7 @@ Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-
 {:.box-note}
 **Note:** The custom SQL code is used for SQL Server destinations. A syntactic adaptation of the code is necessary to use the custom SQL code for other database destinations.
 
-#### Templates
+##### **Templates**
 
 You can write your user-defined SQL expressions and adapt the loading of the data to your needs. <br>
 You can additionally execute stored procedures that exist in the database.
@@ -67,12 +68,9 @@ To do so, use the SQL templates provided in the following phases:
 - *Finalization*
 
 
-#### Script Expressions
+##### **Script Expressions**
 
 You can use [script expressions](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/script-expressions) for the Custom SQL commands.
-
-{:.box-tip}
-**Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.
 
 <details>
 <summary>SQL-Skript</summary>
@@ -93,3 +91,8 @@ You can use [script expressions](https://help.theobald-software.com/en/xtract-un
 
 {% endhighlight %}
 </details>
+
+
+{:.box-tip}
+**Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.
+

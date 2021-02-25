@@ -27,13 +27,13 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
-#### Folder name
+### Folder name
 
 To write extraction data to a location within a specific folder in a Google Cloud Storage bucket, enter a folder name without slashes.
 Subfolders are supported and can be defined using the following syntax: 
 `[folder]/[subfolder_1]/[subfolder_2]/…`
 
-#### Compression
+### Compression
 
 **None**<br>
 The data is transferred uncompressed and stored as a csv file.
@@ -41,7 +41,7 @@ The data is transferred uncompressed and stored as a csv file.
 **gzip**<br>
 The data is transferred compressed and stored as a gz file. 
 
-### CSV File Splitting
+### File Splitting
 
 **No Splitting**<br>
 Writes extraction data of a single extraction to a single file in Google Cloud Storage.

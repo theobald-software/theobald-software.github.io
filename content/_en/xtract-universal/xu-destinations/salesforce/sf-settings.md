@@ -23,7 +23,7 @@ The following settings can be defined for the destination:
 ![sf-destination-settings3](/img/content/sf-destination-settings3.PNG){:class="img-responsive"}
 
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
-
+{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
 ### Preparation

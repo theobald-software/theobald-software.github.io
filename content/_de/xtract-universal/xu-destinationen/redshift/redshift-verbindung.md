@@ -1,5 +1,5 @@
 ---
-ref: xu-amzon-redshift-02
+ref: xu-amazon-redshift-02
 layout: page
 title: Verbindung
 description: Verbindung

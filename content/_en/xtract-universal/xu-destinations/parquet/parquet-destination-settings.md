@@ -1,13 +1,14 @@
 ---
 ref: xu-parquet-01
 layout: page
-title: Destination Settings
+title: Settings
 description: Destination Settings
 product: xtract-universal
 parent: parquet
 permalink: /:collection/:path
-weight: 1
+weight: 3
 lang: en_GB
+progressstate: 5
 ---
 
 ### Opening Destination Settings
@@ -19,11 +20,6 @@ lang: en_GB
 The following settings can be defined for the Parquet destination.  
   
 ### Destination Settings
-The window "Destination Settings" consists of the following subsections:
-- File Name
-- Column Name Style
-- Date Conversion
-- Existing files
 
 ![XU_parquet_Destination](/img/content/xu/parquet/parquet_destination_settings.png){:class="img-responsive"}
 

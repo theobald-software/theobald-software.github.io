@@ -7,6 +7,7 @@ product: xtract-universal
 parent: azure-storage
 permalink: /:collection/:path
 weight: 3
+progressstate: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-einstellungen
 ---
@@ -29,13 +30,6 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 <!-- ### Date Conversion -->
 {% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
 
-### Compression
-
-**None**<br>
-Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
-
-**gzip**<br>
-Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt. 
 
 ### Blob Type
 
@@ -49,13 +43,20 @@ Erstellt ein [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservi
 {: .box-note }
 **Note:** Für beide Dateitypen wird beim Hochladen nach Azure-Storage automatisch ein MD5-Hash erstellt.
 
-### Folder Path
+### Folder
 
 Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein: `[Ordner]` <br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 
 Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
 
+### Compression
+
+**None**<br>
+Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
+
+**gzip**<br>
+Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt. 
 
 
 ### File Splitting

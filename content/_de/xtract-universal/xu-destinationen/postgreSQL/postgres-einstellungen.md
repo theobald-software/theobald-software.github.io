@@ -19,9 +19,9 @@ Die folgenden Einstellungen können für die Destination definiert werden.
   
 ### Destination Settings - Destinationseinstellungen
 
-![postgres_destination](/img/content/xu\postgres_destination.png){:class="img-responsive"}
+![postgres_destination](/img/content/xu/postgres_destination.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
+{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 

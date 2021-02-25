@@ -1,12 +1,12 @@
 ---
 ref: xu-parquet-01
 layout: page
-title: Destinationseinstellungen
+title: Einstellungen
 description: Einstellungen der Zielumgebung
 product: xtract-universal
 parent: parquet
 permalink: /:collection/:path
-weight: 1
+weight: 3
 lang: de_DE
 ---
 
@@ -19,11 +19,6 @@ lang: de_DE
 Die folgenden Einstellungen können für die Parquet-Destination definiert werden. 
   
 ### Destination Settings - Destinationseinstellungen
-Das Fenster "Destination Settings" besteht aus den folgenden Unterabschnitten:
-- File Name
-- Column Name Style
-- Date Conversion
-- Existing files
 
 ![XU_flatfile_JSON_Destination](/img/content/xu/parquet/parquet_destination_settings.png){:class="img-responsive"}
 

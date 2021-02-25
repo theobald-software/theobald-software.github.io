@@ -19,12 +19,13 @@ progressstate: 5
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
 Die folgenden Einstellungen können für die Destination definiert werden. 
+
   
 ### Destination Settings - Destinationseinstellungen
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form_debug.png){:class="img-responsive"}
+![ext_spec_set_de_form](/img/content/azuredwh-configuration.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/table-name.md %}
+{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
 

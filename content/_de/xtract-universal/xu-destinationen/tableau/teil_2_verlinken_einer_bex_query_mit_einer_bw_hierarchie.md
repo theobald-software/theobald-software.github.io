@@ -11,6 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=teil_2___verlinken_einer_bex_query_mit_einer_bw_hierarchie
 ---
 
+
 Bei SAP BW-Hierarchien werden die Ausprägungen eines Merkmals den verschiedenen Knoten einer Hierarchie zugeordnet. Alle Ausprägungen des Merkmals, die keinem Hierarchie-Knoten zugeordnet wurden, tauchen unter dem sog. "Not Assigned"-Knoten auf.
 
 ![BExQuery_notAssigned_node](/img/content/BExQuery_notAssigned_node.png){:class="img-responsive"}

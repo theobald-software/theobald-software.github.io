@@ -8,6 +8,7 @@ parent: amazon-redshift
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
+progressstate: 5
 old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift-settings
 ---
 
@@ -22,7 +23,7 @@ The following settings can be defined for the destination:
 
 ![ext_spec_set_de_form](/img/content/ext_spec_set_de_form_debug.png)){:class="img-responsive"}
 
-{% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
+{% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 
