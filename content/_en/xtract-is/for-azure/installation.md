@@ -23,7 +23,7 @@ Place *XtractISSetup.exe* and [main.cmd](https://cdn-files.theobald-software.com
 ![XISforAzure_StorageContainer](/img/content/XISforAzure_StorageContainer.png){:class="img-responsive" }
 
 When running a trial version of Xtract IS for Azure, place the two mentioned files *XtractISSetup.exe* and *main.cmd* into the storage container.
-With the purchase of Xtract IS for Azure a [license file](./introduction/installing-the-license) is provided. Place the license file in the storage container, as well.
+With the purchase of Xtract IS for Azure a [license file](../introduction/installing-the-license) is provided. Place the license file in the storage container, as well.
 
 
 **2. Add Azure Storage Container to SSIS-IR** <br>

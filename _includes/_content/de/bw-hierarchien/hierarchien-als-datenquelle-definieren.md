@@ -1,6 +1,6 @@
 ### SAP-Verbindung Erstellen
-Eine erfolgreiche SAP-Verbindung ist Voraussetzung für das Erstellen einer Extraktion.Folgen Sie der Vorgehensweise, die beschrieben ist in [SAP Connection](../introduction/sap-connection) 
-Eine SAP-Verbindung erstellen.
+Eine erfolgreiche SAP-Verbindung ist Voraussetzung für das Erstellen einer Extraktion. 
+Folgen Sie der Vorgehensweise, die beschrieben ist in [SAP Verbindung](../einfuehrung/sap-verbindungen-anlegen), um eine SAP-Verbindung erstellen.
 
 ### Eine neue Extraktion anlegen
 1. Im Hauptfenster des Designers klicken Sie auf **[New]**.

@@ -10,6 +10,7 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=hierarchien-als-datenquelle-definieren
 ---
+
 {% include _content/de/bw-hierarchien/hierarchien-als-datenquelle-definieren.md %}
 
 

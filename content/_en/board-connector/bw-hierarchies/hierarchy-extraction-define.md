@@ -10,4 +10,5 @@ weight: 1
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-hierarchy-extraction
 ---
+
 {% include _content/en/bw-hierarchies/hierarchy-extraction-define.md %}

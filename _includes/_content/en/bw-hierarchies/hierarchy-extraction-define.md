@@ -1,5 +1,6 @@
 ### Creating an SAP Connection
-A successful SAP connection is a prerequisite for creating an extraction. Follow the procedure described in [SAP Connection](../introduction/sap-connection) 
+A successful SAP connection is a prerequisite for creating an extraction. 
+Follow the procedure described in [SAP Connection](../introduction/sap-connection) 
 to create an SAP connection.
 
 ### Defining a new Extraction
