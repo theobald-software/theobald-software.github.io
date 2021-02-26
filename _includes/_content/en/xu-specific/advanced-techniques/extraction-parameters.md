@@ -1,12 +1,12 @@
-The following section describes the extraction parameters that can be changed in the "Run Extraction" dialogue.
+The following section describes the parameters that can be defined under "Runtime Parameters" in the "Run Extraction" dialogue.
 
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
-To open the "Run Extraction" window, select an extraction in the List of Extractions in the Designer Main Window Overview and click 
+To open the "Run Extraction" dialogue, select an extraction in the List of Extractions in the Designer Main Window Overview and click 
 **[Run]** (see details in [Running an extraction](../getting-started/run-an-extraction)).
 
 
-### Subsection "Parameters" Tab "Extraction"
+### Subsection "Runtime Parameters" Tab "Extraction"
 
 The amount of the parameters depends on the extraction type and destination.
 e.g., **decimalSeparator** is a parameter specific to CSV destination.
@@ -24,9 +24,9 @@ decimalSeparator | to set a symbol between integer and fractional part | availab
 columnSeparator |  to set a symbol which indicates the start of a new column | available in CSV
 
 
-### Subsection "Parameters" Tab "Source"
+### Subsection "Runtime Parameters" Tab "Source"
 
-In the same way as the system parameters and user-defined parameters, the connection settings to a source (SAP) can also be changed dynamically via the URL. 
+In the same way as the system parameters and user-defined parameters, the connection settings to a source (SAP) can also be changed dynamically via the URL and the command-line tool "xu.exe". 
 
 In the *Source* tab you can override the values that are defined in the [SAP source details](../introduction/sap-connection).
 
@@ -49,16 +49,11 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 
 **Example:** Overriding the connection language to EN generates the following extraction URL: `http://localhost:8065/?name=Plants&lang=EN`
 
-### Subsection "Parameters" Tab "Custom"
+### Subsection "Runtime Parameters" Tab "Custom"
 
 {: .box-note }
-**Note:** The tab "Custom" is only active, when a user defined variable was created before (see [User-Defined Variables](./advanced-techniques/user-defined-variables)). 
+**Note:** The tab "Custom" is only active, when a user defined variable was created before (see [User-Defined Variables](./user-defined-variables)). 
 
 To set the pre-defined parameter, check the box and enter the desired value.
  
 ![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
-
-#### URL and command-line tool expression
-
-
-

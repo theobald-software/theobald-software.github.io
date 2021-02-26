@@ -11,7 +11,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-This step is optional and allows to directly run an extraction from the Xtract Universal designer, define runtime parameters and the setting and checking of other options related to the execution of an extraction. 
+This step is optional and allows to directly run an extraction from the Xtract Universal designer, define runtime parameters and other options. 
 
 
 ### Run Extraction dialogue ###
@@ -20,9 +20,9 @@ To open the "Run Extraction" dialogue, select an extraction from the list and cl
 This can be done through the Main Menu Bar, the GUI Buttons or through the dialogue when right-clicking on an extraction in the List of Extractions (see [Designer - Main Window Overview](./designer-overview)).   
 
 ![Run-Table-Extraktion](/img/content/xu/xu_run_extraction_dialogue.png){:class="img-responsive"}
-The "Run extraction dialogue" window consists of the following sections:
+The "Run extraction dialogue" window consists of the following subsections:
 - General Info (1)
-- Runtime parameters(2)
+- Runtime parameters (2)
 - Extraction URL and command line tool (xu.exe) expression (3)
 - Logs and Output (4)
 - Run, Abort and Close (5)  
@@ -46,7 +46,7 @@ The three tabs "Extraction", "Source" and "Custom" are described in detail [here
 
 #### Example ####
 1. Select the checkbox of the parameter you want to override.
-2. Enter the value. The actual request of the data occurs in the URL box below, also the modified expression for the command-line tool "xu.exe". 
+2. Enter the value and confirm with **[ENTER]**. The actual request of the data occurs in the URL box below, also the modified expression for the command-line tool "xu.exe". 
 - Before changing a parameter:
 `http://localhost:8065?name=Plants`
 - After editing the parameter **rows**:
@@ -59,17 +59,17 @@ The three tabs "Extraction", "Source" and "Custom" are described in detail [here
 
 
 ### Extraction URL and command-line tool expression (3) ###
-The entries in these two fields change according to the settings made in the "Runtime parameters" section. The entries only change when confirming the settings with **[ENTER]** or by clicking in on of the two fields after the settings have been made.  
+The entries in these two fields change according to the settings made in the "Runtime parameters" section. The entries only change when the settings are confirmed with **[ENTER]** or when clicking in one of the two fields after the setting.  
 
 #### URL ####
-The URL to run the extraction in a browser is displyed here. Copy the URL with the button on the right side and enter it in a web browser of your choice. 
+The URL to run the extraction in a browser is displayed here. Copy the URL with the button on the right side and enter it in a web browser of your choice. 
 This procedure corresponds to the "Run in browser" functionality available with a right-click on an extraction in the extraction list.
 
 ![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
 
 #### xu.exe ####
-The expression to be used in the command-line tool "xu.exe" is displayed here. It allows to shcedule extraktions with the Windows task scheduler.
-For more detailed information see [Scheduling an extraction](../advanced-techniques/scheduling_extraction).
+The expression to be used in the command-line tool "xu.exe" is displayed here. It allows to schedule extractions with the Windows task scheduler.
+For more detailed information about scheduling with "xu.exe" see [Scheduling an extraction](../advanced-techniques/scheduling_extraction).
 
 By default the parameters "-s" (Server for extraction), "-p" (Listener port of the Xtract Universal Server) and "-n" (Name of the extraction) are generated for any extraction. 
 
