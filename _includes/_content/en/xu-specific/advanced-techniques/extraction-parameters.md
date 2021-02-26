@@ -1,8 +1,8 @@
-The following section describes the extraction parameters that can be changed in the "Run Extraction" window.
+The following section describes the extraction parameters that can be changed in the "Run Extraction" dialogue.
 
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
-To open the "Run Extraction" window, select an extraction in the main window of the Designer and click 
+To open the "Run Extraction" window, select an extraction in the List of Extractions in the Designer Main Window Overview and click 
 **[Run]** (see details in [Running an extraction](../getting-started/run-an-extraction)).
 
 
@@ -43,17 +43,22 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 
 #### To Adjust Source Parameters
 1. Select an extraction.
-2. Click **[Run]**. The dialogue "Run Extraction" opens. 
+2. Click **[Run]**. The "Run Extraction" dialogue opens. 
 3. Select the tab *Source* and adjust the parameters.
-![Run-Extraction-Connection-Parameters](/img/content/Run-Extraction-Connection-Parameters.png){:class="img-responsive"}
+![Run-Extraction-Connection-Parameters](/img/content/xu/xu_run_extraction_source_param.png){:class="img-responsive"}
 
-**Example:** Overriding the connection language to DE using the URL: `http://localhost:8085/?name=plants&lang=DE`
+**Example:** Overriding the connection language to EN generates the following extraction URL: `http://localhost:8065/?name=Plants&lang=EN`
 
 ### Subsection "Parameters" Tab "Custom"
 
 {: .box-note }
-**Note:** The tab "Custom" is only active, when a variable with @-symbol is defined in the [WHERE clause](../table/where-clause).
+**Note:** The tab "Custom" is only active, when a user defined variable was created before (see [User-Defined Variables](./advanced-techniques/user-defined-variables)). 
 
 To set the pre-defined parameter, check the box and enter the desired value.
  
 ![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
+
+#### URL and command-line tool expression
+
+
+
