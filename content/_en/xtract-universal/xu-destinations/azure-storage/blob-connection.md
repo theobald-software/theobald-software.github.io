@@ -18,29 +18,37 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 ![XU_azure_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
 3. Select the *Azure Storage (Blob / Data Lake)* destination from the drop-down list.
 
+### Destination Details 
+
 The window "Destination Details" consists of two tabs:
 - Azure Storage Connection
 - File Format
 
 ### Azure Storage Connection
-The tab *Azure Storage Connection* consists of two subsections:
-- Connection 
-- Container
-![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
+The tab *Azure Storage Connection* consists of the following subsections:
+- Connection Type(1)
+	- Access key parameters
+	- Azure active directory parameters
+- Container (2)
+- Misc (3)
+- Column Encryption (4)
+![xu-azure-blob-con-01](/img/content/xu/xu-azure-blob-con-01.png){:class="img-responsive"}
 
-The subsection *Connection* offers two different methods for authenticating and authorizing access to an Azure storage account:
+### Connection Type (1)
+
+The subsection *Connection Type* offers two different methods for authenticating and authorizing access to an Azure Storage account:
 1. Authentication via Access Key
 2. Authentication via Azure Active Directory  
 
-### Authentication via Access Key (1)
-This method of authentication authorizes access to the complete storage account. General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage).
+### Authentication via Access Key
+This method of authentication authorizes access to the complete storage account. General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). <br>
+To select this connection type choose **[Access key]**.
 
-
-#### Connection
-**Storage account**<br>
+### Connection via Access Key
+#### Storage account
 Storage account name.
 
-**Access key**<br>
+#### Access key
 Access key of the Azure storage account.  
 
 {: .box-tip }
@@ -48,41 +56,14 @@ Access key of the Azure storage account.
 
 ![xu-azure-blob-con-10](/img/content/xu-azure-blob-con-10.png){:class="img-responsive"}
 
-**Connect**<br>
+#### Connect
 Button to establish a connection to the storage account.<br>
 If the connection is successful, a "Connection successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
 
-
-#### Container
-This subsection is activated after a connection to the storage account was successfully established.<br><br>
-**Storage account** <br>
-When authenticating with an access key, this field is deactivated for input.
-
-**Container**<br>
-When authenticating with an access key, a Blob container can be selected from the drop down menu.
-
-**Test connection to container**<br>
-Button to check if the storage container can be accessed. <br>
-If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. 
-![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
-Click **[OK]** to confirm. <br>
-Go to the *File Format* tab or click **[OK]**. The *Azure Storage (Blob / Data Lake)* destination can now be used.
-
-
-**Folder path** <br>
-
-Option to create a folder structure within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#folder-path). <br>
-For creating a single folder, enter a folder name without slashes: `[folder]` <br>
-Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
-
-This field allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
-
-
-
 *********
 
-### Authentication via Azure Active Directory (2)
+### Authentication via Azure Active Directory
 Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
 Compared to *Authentication via Access Key*, this option allows a more granular way of authorizing access to a storage account and its individual storage containers. 
 General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
@@ -105,7 +86,7 @@ Before using authentication via Azure Active Directory, perform the following st
 {: .box-tip }
 **Tip:** Access rights can be granted on storage account or on container level. 
 
-#### Connection
+### Connection via Azure Active Directory
 **Tenant ID**<br>
 ID of the Azure AD tenant
 
@@ -127,7 +108,7 @@ Button to establish a connection to the Azure storage account.<br>
 4. If the connection is successful, a "Connection successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
 
-#### Container
+### Container (2)
 This subsection is activated after a connection to the storage account was successfully established.<br><br>
 **Storage account** <br>
 When authenticating via Azure Active Directory, the storage account name needs to be entered in this field.
@@ -147,12 +128,17 @@ If the connection is successful, a "Connection to container <*name of container*
 Click **[OK]** to confirm. <br>
 The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
+### Misc (3)
+The settings under "Misc" can only be used in combination with a blob container.<br> 
 **Folder path** <br>
 Option to create a folder structure within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#folder-path). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
 This field allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
+
+### Column Encryption (4)
+{% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
 
 ### File Format 
 Select the required file format between "Parquet" and "CSV".
@@ -181,7 +167,6 @@ The selected exponential retry strategy results in 7 retry attempts and an overa
 
 Rollback covers scenarios, where an extraction fails due to an issue that is not caused by a connection failure to Azure. An example is an extraction that fails due to an error when connecting to SAP.
 In particular cases, Xtract Universal tries and removes any files from Azure storage that were created in the course of the extraction.
-  
 
 <!---- using an exponential backoff, meaning 8 retries with an increasing waiting time between the requests: 1s, 2s, 4s, 8s, 16s, etc.
 See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines). --->
