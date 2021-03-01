@@ -1,39 +1,28 @@
+### Step 1: Search for extractor (1)
 
-### Step 1: Search for extractor
+Within the editor "Look Up OLTP Source", search for **OLTP Source** (Data Source) by using the **Search** (magnifying glass symbol). You can use wildcards (*), if needed.
 
-Within the editor, you can look up a DataSource (OLTP Source) by clicking the binocular button. You can also use wildcards ( * ) in your search.
-
-The following example shows the download of material master data from the DataSource 0MATERIAL_ATTR.
+The following example shows the download of material master data from the DataSource *0MATERIAL_ATTR*.
 
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
 
+![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
 
-### Step 2: Define and Check Customizing 
+### Step 2: Set Update Mode (2)
 
-Now set the logical target system and the technical settings for the RFC destination (as shown in section Customizing) on the top right.
+**Full Update** requests all data that meets the selection criteria you set. To get a real **Delta** procedure running, Delta first has to be initialized, see at [Delta](./datasource-delta).<br>
+To get an overview which update modes are available, see at [Update Mode](./update-mode).
 
-Gateway Host is the name (or IP address of your SAP system). Be sure that the Gateway Host is the same as in your SAP Connection.
-The Gateway Service is generally sapgwNN, where NN is the ID of your SAP system, i.e. a number between 00 andd 99.
-See Customizing Check.
-  
+### Step 3: Select Columns
 
-### Step 3: Set Update Mode
-
-In our example, we will make a **Full Update**. A full update requests all data that meets the selection criteria you set.
-To get a real Delta procedure running, Delta first has to be initialized. See Delta.
-
-
-### Step 4: Select Columns
-
-You also have to put a checkmark next to the columns you would like to extract. Your template should look like this when you're done:
+Tick the checkmarks next to the columns you would like to extract. See the following example:
 
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
 
+### Step 4: Activation
 
-### Step 5: Activation
-
-If the validation finished without errors you can activate this extraction in SAP (click the *Activate* button).<br> 
-If activation is successful, the corresponding status messages will appear within the course of a few seconds:
+If the validation finished without errors klick on **[Activate]** to activate this extraction in SAP.<br> 
+After successful activation, the corresponding status messages appear in the course of a few seconds:
 
 ![Deltaq-System-Parameters-Info](/img/content/Deltaq-System-Parameters-Info.png){:class="img-responsive"}
 
@@ -41,14 +30,20 @@ If activation is successful, the corresponding status messages will appear withi
 
 Once activated successfully, the extraction can be executed. 
 
-The activation must be done only for the Delta Full or Init Mode.
-If you had an old activation, please be sure to delete it (see Extraction Settings) before the new activation.
-For the Delta Update Mode don't make any activation. 
+The activation must only be done for **Delta**, **Full** or **Init** modes.
+Delete the old activation before starting a new one, see at **[Extraction Settings]**.
+Don't make any activation for the **Delta Update** mode. 
 
-**Variables** can be used for the following settings: Log. Destination, Gateway Host, Gateway Service and Program ID. 
-The Update Mode can be controlled via a variable too. See Extraction Settings. 
+### Variables and Filters
 
-To set a Filter see the section Datasource parameters.
+**Variables** can be used for the following settings:
+* **Log. Destination**, 
+* **Gateway Host**,
+* **Gateway Service**,
+* **Program ID**. 
 
+The **Update Mode** can be controlled via a variable too, see at **[Extraction Settings]**.
+
+**Filters** see at [Datasource Parameters](./datasource-parameters).
  
 In case of errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide). 

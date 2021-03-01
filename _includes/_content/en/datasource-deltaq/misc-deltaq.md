@@ -1,6 +1,5 @@
 ### Helpful Transactions in the SAP System for Working with DataSources
 
-
 #### Initial Setup
 * SBIW - SAP DataSources start page
 * RSA3 - Extractor Checker 
@@ -9,7 +8,7 @@
 * SM59 - Configuration of RFC Connections 
 
 
-##### Error Analysis
+#### Error Analysis
 * SMQS - qRFC Monitor (QOUT Scheduler): Number of *Max.Conn.* should be at least 10
 * SM37 - Background jobs
 * SM58 - Transactional RFC
@@ -17,25 +16,25 @@
 * SMGW - Gateway Monitor
 
 
-##### Other Transaction
+#### Other Transaction
 * RSA7 - Delta Queue Maintenance
 * SMQ1 - qRFC Monitor (outbound queue)
 * WE02 - IDoc list
 * WE20 - Partner profiles
 
-
-### Helpful Links about Extractors (DataSources)
-
-* [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide)
-* [How to activate DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System)
-* [How to activate activate the BI Content DataSource (SAP Help)](http://help.sap.com/saphelp_nw70ehp2/helpdata/en/d8/8f5738f988d439e10000009b38f842/content.htm)
-* [How to extract data from SAP BW/BI via Export DataSources](https://kb.theobald-software.com/xtract-is/extracting-data-from-sap-bw-bi-via-export-data-sources-with-xtract-is)
-* [How to create Generic DataSource using Function Module and Timestamps](https://kb.theobald-software.com/sap/create-generic-datasource-using-function-module-and-timestamps)
-* [How to Create Generic DataSources which use the Delta Queue (SAP Community Network)](https://www.sdn.sap.com/irj/sdn/go/portal/prtroot/docs/library/uuid/d3219af2-0c01-0010-71ac-dbb4356cf4bf)
-* [How to create a generic extractor for BW (SAP Community Network)](http://www.sdn.sap.com/irj/scn/go/portal/prtroot/docs/library/uuid/a0f46157-e1c4-2910-27aa-e3f4a9c8df33?QuickLink=index&overridelayout=true)
-
-### Other
-
-#### Execute DeltaQ in Parallel
+### Execute DeltaQ in Parallel
 You can execute multiple DataSources with the same RFC destination in parallel.
-However, it is recommended to use a separate RFC destination for each parallel DeltaQ extraction, for example XTRACT01, XTRACT02 etc.
+
+{: .box-tip }
+**Recommendation:** Use a separate RFC destination for each parallel DeltaQ extraction e.g.,  *XTRACT01*, *XTRACT02* and so on.
+
+*****
+#### Helpful Links about Extractors (DataSources)
+- [How to activate DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System)
+- [How to activate activate the BI Content DataSource (SAP Help)](https://help.sap.com/saphelp_scm70/helpdata/ru/d8/8f5738f988d439e10000009b38f842/content.htm?no_cache=true)
+- [How to extract data from SAP BW/BI via Export DataSources](https://kb.theobald-software.com/xtract-is/extracting-data-from-sap-bw-bi-via-export-data-sources-with-xtract-is)
+- [How to create Generic DataSource using Function Module and Timestamps](https://kb.theobald-software.com/sap/create-generic-datasource-using-function-module-and-timestamps)
+- [How to Create Generic DataSources which use the Delta Queue (SAP Community Network)](https://www.sdn.sap.com/irj/sdn/go/portal/prtroot/docs/library/uuid/d3219af2-0c01-0010-71ac-dbb4356cf4bf)
+- [How to create a generic extractor for BW (SAP Community Network)](http://www.sdn.sap.com/irj/scn/go/portal/prtroot/docs/library/uuid/a0f46157-e1c4-2910-27aa-e3f4a9c8df33?QuickLink=index&overridelayout=true)
+
+
