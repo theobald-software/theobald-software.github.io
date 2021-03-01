@@ -16,6 +16,6 @@ Die Komponente BW Hierarchy ermöglicht die Extraktion von Hierarchien aus einem
 
 ### BW Hierarchy verwenden
 Grundkenntnisse von Xtract Universal sind erforderlich, um die folgenden Abschnitte zu verstehen, mehr Details finden Sie im Abschnitt
- [Erste Schritte mit Xtract Universal](../erste-schritte).
+ [Erste Schritte mit Xtract Universal](./erste-schritte.md).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
