@@ -14,7 +14,7 @@ Set the values for **Sign** (2); **Option** (3), **Low Value** (4) and **High Va
 **High Value** (5) designates the upper interval limitation.
 
 {: .box-note }
-**Note** Add *@* right before the value to mark it as a variable.
+**Note:** Add *@* right before the value to mark it as a variable.
 
 |Operator|Description|
 |:---|:---|
@@ -36,5 +36,4 @@ To *delete* a row, click the icon at the bottom left.
 Variables and [script expressions](../advanced-techniques/script-expressions) are supported too. 
 
 {: .box-note } 
-**Note:** <br>
-Parameters are not allowed with the **Delta Update** mode, since the parameters of the **Init** mode will be automatically applied.
+**Note:** Parameters are not allowed with the **Delta Update** mode, since the parameters of the **Init** mode will be automatically applied.

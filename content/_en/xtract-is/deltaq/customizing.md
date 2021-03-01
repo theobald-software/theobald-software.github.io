@@ -10,6 +10,6 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=customizing
 ---
+{% include _content/de/datasource-deltaq/customizing-check.md %}
 
-In order to be able to use the DeltaQ components, some customizing settings have to be made in SAP ERP as described step-by-step in the chapter [SAP Customizing](../sap-customizing).
 
