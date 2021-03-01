@@ -7,16 +7,14 @@ Set the **Update Mode** to *Delta Initialization* and execute it.<br>
 The initialization selections are copied to load the delta records. You can use the Delta Update.
 
 {: .box-note } 
-**Note:**<br>
-When re-initilizing a delta process, first delete any exsiting Inits (initialization requests) by clicking **[Request Maintenance]** in the DeltaQ extraction settings.
+**Note:** When re-initilizing a delta process, first delete any exsiting Inits (initialization requests) by clicking **[Request Maintenance]** in the DeltaQ extraction settings.
 
 ### Alternative Step 1: Delta Init (without data) [S]
 It is similar to **Delta Initialisation** without extracting any data from the SAP Datasource.
 After execute the **Delta Init** you can use the **Delta Update**.
 
 {: .box-note } 
-**Note:**<br>
-When re-initilizing a delta process, first delete any exsiting Inits (initialization requests) by clicking **[Request Maintenance]** in the DeltaQ extraction settings.
+**Note:** When re-initilizing a delta process, first delete any exsiting Inits (initialization requests) by clicking **[Request Maintenance]** in the DeltaQ extraction settings.
 
 ### Step 2: Delta Update [D]
 Delta update only extracts data added or changed on the SAP system since the last delta request.
@@ -25,8 +23,7 @@ First run your package once and then set the **Update Mode** to *Delta Update*.
 Only the changes will be extracted which have been made since the last transfer.
 
 {: .box-note } 
-**Note:**<br>
-To prevent errors, aborts and gaps run the next extraction in the update mode *Repeat*.
+**Note:** To prevent errors, aborts and gaps run the next extraction in the update mode *Repeat*.
 
 ### Optional: Repeat [R]
 Repeats the last delta run and updates all data accumulated since the last run. If the last run was unsuccessful, all data from the last delta update will be deleted before a new run is started.<br>
@@ -48,8 +45,7 @@ Once Delta is activated, you can view the queued datasets in the Delta queue in 
 If there is no new data to be transferred at the moment, a corresponding protocol message will be noted and the data pipeline remains empty.
 
 {: .box-note } 
-**Note:**<br>
-Before initiating the next update, make sure that a Delta update has been properly executed. Running a new delta update removes the last one. 
+**Note:** Before initiating the next update, make sure that a Delta update has been properly executed. Running a new delta update removes the last one. 
 
 
 *****

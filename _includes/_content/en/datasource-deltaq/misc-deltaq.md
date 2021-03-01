@@ -22,9 +22,7 @@
 * WE02 - IDoc list
 * WE20 - Partner profiles
 
-### Other
-
-#### Execute DeltaQ in Parallel
+### Execute DeltaQ in Parallel
 You can execute multiple DataSources with the same RFC destination in parallel.
 
 {: .box-tip }

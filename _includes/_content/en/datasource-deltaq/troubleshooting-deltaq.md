@@ -1,4 +1,4 @@
-The **DeltaQ Troubleshooting Guide** can be found in the Theobald Software Knowledge Base.
+The DeltaQ Troubleshooting Guide can be found in the Theobald Software Knowledge Base.
 
 The guide contains a collection of answers and corrective actions to possible problems, known pitfalls and issues when setting up or running DeltaQ extractions.
 

@@ -20,7 +20,8 @@ The update mode allows delta update meaning that only added or changed data is e
 In the main window "Extract SAP DataSources and Extractors" select the **Update-Mode** from the drop-down menu.
 ![Update-Mode2](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
 
-The **Update mode** can be set dynamically as SSIS property **[Xtract DeltaQ].[UpdateType]** in the "Data Flow Task Properties" dialog.
+{: .box-note } 
+**Note:** The **Update mode** can be set dynamically as SSIS property **[Xtract DeltaQ].[UpdateType]** in the "Data Flow Task Properties" dialog.
 
 
 | Letter |  Desgination   | Description |
@@ -32,7 +33,7 @@ The **Update mode** can be set dynamically as SSIS property **[Xtract DeltaQ].[U
 | S | Delta Init (without data)   | Initiliazies the delta process without extracting any data from the SAP Datasource. The result of the **Delta inits** is a so called **[Request Maintenance]** on the SAP side. When re-initilizeing a delta process, first delete any exsiting Inits by clicking **[Request Maintenance]** in the DeltaQ extraction settings.|
 | I | Non-cumulative Init    |  Relevant for DataSources such as *2LIS_03_BX*.  |
 | A | Activate (don't extract)  | Activates a DataSource similar to clicking **[Activate]**, but is more practical when activating all DataSources in batch. **[Activate]** is an alternative to **[Automatic Synchronization]**.  No data is extracted. |
-| V | **[Xtract IS only:]** SSIS Variable; Deprecated, see [Variables](https://help.theobald-software.com/en/xtract-universal/bw-infocubes-and-bex-queries/variables) |  If **V** is selected, a variable name needs to be entered in the [DeltaQ settings](https://help.theobald-software.com/en/xtract-universal/datasource-deltaq/extraction-settings). The same SSIS variable needs to be created in SSIS and assigned a value. The following values are possible: F, D, C, R, S, I and A. |
+| V | **[Xtract IS only:]** SSIS Variable deprecated, see [Variables](../bw-cube/variables)|  If **V** is selected, a variable name needs to be entered in the [DeltaQ settings](./settings). The same SSIS variable needs to be created in SSIS and assigned a value. The following values are possible: F, D, C, R, S, I and A. |
 
 
 
