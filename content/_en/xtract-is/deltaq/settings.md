@@ -12,7 +12,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=deltaq-settings
 ---
 
 1. Click the the main window "Extract SAP DataSources and Extractors" on **[Settings]**.
-The Dialog **Xtract IS DeltaQPrefernces** open. The window consists of four main sections and buttons.
+The Dialog "Xtract IS DeltaQPreferences" open. The window consists of four main sections and buttons.
 
 ![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings.png){:class="img-responsive"}
 
