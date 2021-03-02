@@ -24,9 +24,9 @@ The window "Destination Details" consists of two tabs:
 - Azure Storage Connection
 - File Format
 
-### Azure Storage Connection
-The tab *Azure Storage Connection* consists of the following subsections:
-- Connection Type(1)
+### Azure Storage
+The tab *Azure Storage* consists of the following subsections:
+- Connection Type(1) in combination with
 	- Access key parameters
 	- Azure active directory parameters
 - Container (2)
@@ -45,18 +45,18 @@ This method of authentication authorizes access to the complete storage account.
 To select this connection type choose **[Access key]**.
 
 ### Connection via Access Key
-#### Storage account
+**Storage account** <br>
 Storage account name.
 
-#### Access key
-Access key of the Azure storage account.  
+**Access key** <br>
+Access key of the Azure Storage account.  
 
 {: .box-tip }
 **Tip:** Copy storage account name and access key from the [Azure portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
 
 ![xu-azure-blob-con-10](/img/content/xu-azure-blob-con-10.png){:class="img-responsive"}
 
-#### Connect
+**Connect** <br>
 Button to establish a connection to the storage account.<br>
 If the connection is successful, a "Connection successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
@@ -87,6 +87,9 @@ Before using authentication via Azure Active Directory, perform the following st
 **Tip:** Access rights can be granted on storage account or on container level. 
 
 ### Connection via Azure Active Directory
+**Storage account** <br>
+Storage account name.
+
 **Tenant ID**<br>
 ID of the Azure AD tenant
 
@@ -98,8 +101,8 @@ ID of the registered app
 
 ![xu-azure-blob-con-08](/img/content/xu-azure-blob-con-08.png){:class="img-responsive"}
 
-**Connect**<br>
-Button to establish a connection to the Azure storage account.<br>
+**Connect** <br>
+Button to establish a connection to the Azure Storage account.<br>
 1. Click **[Connect]**. A browser window pops up.
 2. Sign in using your Azure AD credentials.
 ![xu-azure-blob-con-05](/img/content/xu-azure-blob-con-05.png){:class="img-responsive"}
@@ -109,17 +112,15 @@ Button to establish a connection to the Azure storage account.<br>
 Click **[OK]** to confirm. <br>
 
 ### Container (2)
-This subsection is activated after a connection to the storage account was successfully established.<br><br>
-**Storage account** <br>
-When authenticating via Azure Active Directory, the storage account name needs to be entered in this field.
+This subsection is activated after a connection to the storage account was successfully established.<br>
 
-**Container**<br>
+**Container** <br>
 When authenticating via Azure Active Directory, a Blob container needs to be entered in this field.
 
 {: .box-note }
 **Note:** With Azure Active Directory authentication, the drop down menu is not supported. Enter the name of the Blob container manually.
 
-**Test connection to container**<br>
+**Test connection** <br>
 Button to check if the storage container can be accessed. <br>
 If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. <br>
 
@@ -129,7 +130,10 @@ Click **[OK]** to confirm. <br>
 The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
 ### Misc (3)
-The settings under "Misc" can only be used in combination with a blob container.<br> 
+
+{: .box-note }
+**Note:** The settings under "Misc" can only be used in combination with a blob container.<br> 
+
 **Folder path** <br>
 Option to create a folder structure within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#folder-path). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
