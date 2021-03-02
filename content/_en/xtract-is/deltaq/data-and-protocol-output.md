@@ -15,15 +15,16 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=data-and-protocol-output
 A DeltaQ source has two outputs:
 
 **DeltaQDataOutput (1)**<br>
-The data output correlates with the checkmarked columns (and the RequestID).
+The data output correlates with the checkmarked columns including the RequestID.
 
 **DeltaQRequestLog (2)**<br>
 The protocol output has the following columns:
 
 - DataSource
-- Request-ID
-- Update Type
-- Message Type
+- RequestID
+- UpdateType
+- TimeStamp
+- MessageType
 - Message
 
 ### Best practice
