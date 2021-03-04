@@ -13,5 +13,5 @@ lang: de_DE
 
 {% include _content/de/sap-customizing.md  %}
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+
 
