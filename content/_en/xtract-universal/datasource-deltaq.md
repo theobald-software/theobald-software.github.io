@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=datasource-deltaq
 
 {: .box-warning } 
 **Warning! Newer component available.**<br>
-Xtract Universal DeltaQ is an old component. If possible, use the newer component **[ODP](../odp)**.
+Xtract Universal DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)**.
 
 ### To Use DeltaQ
 Basic knowledge of Xtract Universal is required to understand the following sections, see [Getting Started with Xtract Universal](../getting-started).
