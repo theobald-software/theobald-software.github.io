@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-customizing-01
+ref: xis-sap-customizing-01
 layout: page
 title: Custom function module for table extraction
 description: Custom function module for table extraction

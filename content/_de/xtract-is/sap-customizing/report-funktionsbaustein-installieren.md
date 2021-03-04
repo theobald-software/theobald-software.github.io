@@ -1,12 +1,12 @@
 ---
-ref: xi-sap-customizing-06
+ref: xis-sap-customizing-03
 layout: page
 title: Report-Funktionsbaustein installieren
 description: Report-Funktionsbaustein installieren
 product: xtract-is
 parent: sap-customizing
 permalink: /:collection/:path
-weight: 6
+weight: 3
 lang: de_DE
 progressstate: 5
 ---

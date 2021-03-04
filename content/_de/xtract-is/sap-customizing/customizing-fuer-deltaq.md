@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-customizing-05
+ref: xis-sap-customizing-05
 layout: page
 title: Customizing für DeltaQ
 description: Customizing für DeltaQ

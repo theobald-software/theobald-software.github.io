@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-customizing-01
+ref: xis-sap-customizing-01
 layout: page
 title: Funktionsbaustein für Tabellen-Extraktion
 description: Funktionsbaustein für Tabellen-Extraktion

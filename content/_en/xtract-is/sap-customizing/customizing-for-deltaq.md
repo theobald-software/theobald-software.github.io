@@ -1,12 +1,12 @@
 ---
-ref: xi-sap-customizing-05
+ref: xis-sap-customizing-04
 layout: page
 title: Customizing for DeltaQ
 description: Customizing for DeltaQ
 product: xtract-is
 parent: sap-customizing
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=SAPCustomizing-EN:customizing-for-deltaq
 ---
