@@ -21,16 +21,14 @@ The following settings can be defined for the destination:
 
 ### Destination Settings
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form_debug.png){:class="img-responsive"}
+![ext_spec_set_de_form](/img/content/mysql-configuration.png){:class="img-responsive"}
 
-{% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
+{% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/sql-commands.md %}
-
-{% include _content/en/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/transaction-style.md %}

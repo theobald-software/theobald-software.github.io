@@ -7,6 +7,7 @@ product: xtract-universal
 parent: azure-storage
 permalink: /:collection/:path
 weight: 3
+progressstate: 5
 lang: en_GB
 ---
 
@@ -30,13 +31,6 @@ The following settings can be defined for the destination:
 <!-- ### Date Conversion -->
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
-### Compression
-
-**None**<br>
-The data is transferred uncompressed and stored as a csv file.
-
-**gzip**<br>
-The data is transferred compressed and stored as a gz file. 
 
 ### Blob Type
 
@@ -49,13 +43,22 @@ Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices
 {: .box-note }
 **Note:** For both file types an MD5 hash is created upon upload to Azure storage.
 
-### Folder path
+### Folder
 
-Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](./blob-connection#azure-storage-connection).
+Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](./blob-connection#azure-storage-connection). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-This field allows entry of [script expressions](./../../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
+This field allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
+
+### Compression
+
+**None**<br>
+The data is transferred uncompressed and stored as a csv file.
+
+**gzip**<br>
+The data is transferred compressed and stored as a gz file. 
+
 
 ### File Splitting
 

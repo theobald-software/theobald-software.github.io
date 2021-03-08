@@ -17,7 +17,7 @@ Nachdem die Tabelle angelegt ist, bleibt es Ihnen überlassen, die Tabellendefin
 indem Sie bspw. entsprechende Schlüsselfelder und Indizes bzw. zusätzliche Felder anlegen.
 
 
-### Row Processing
+### Row Processing - SQL Anweisungen
 
 Definiert, wie die Daten in die Zieltabelle eingefügt werden.
 - *Insert*: Datensätze einfügen (Default).
@@ -27,7 +27,7 @@ Definiert, wie die Daten in die Zieltabelle eingefügt werden.
 - *Merge (deprecated)*: Diese Option ist veraltet. Bitte nutzen Sie die Option Fill merge staging table und prüfen Sie den Abschnitt Über Merging. 
 
 
-### Finalization
+### Finalization - SQL Anweisungen
 
 Definiert die Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle erfolgreich eingefügt werden.
 - *Finalize Merge*: schließt den Merge-Prozess ab und löscht z.B. die temporäre Staging-Tabelle. Für weitere Infos siehe Abschnitt Über Merging. 
@@ -58,7 +58,7 @@ Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server B
 **Note:** Der benutzerdefinierte SQL-Code wird für SQL Server-Destinationen verwendet. 
 Um den benutzerdefinierten SQL-Code für andere Datenbank-Destinationen zu verwenden, ist eine syntaktische Anpassung des Codes erforderlich.
 
-#### Vorlagen
+##### **Vorlagen**
 
 Sie können eigene SQL-Ausdrücke schreiben und haben damit die Möglichkeit, das Laden der Daten an Ihre Bedürfnisse anzupassen. <br>
 Darüber hinaus können Sie z.B. auch auf der Datenbank bestehende "Stored Procedures" ausführen.
@@ -68,12 +68,9 @@ Dafür können Sie die vordefinierten SQL-Vorlagen der folgenden Phasen verwende
 - *Finalization*
 
 
-#### Skript-Ausdrücke
+##### **Skript-Ausdrücke**
 
 Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/script-ausdruecke) für die Custom-SQL-Befehle verwenden.
-
-{:.box-tip}
-**Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.
 
 <details>
 <summary>SQL-Skript</summary>
@@ -94,3 +91,7 @@ Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-uni
 
 {% endhighlight %}
 </details>
+
+{:.box-tip}
+**Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.
+

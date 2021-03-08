@@ -28,13 +28,13 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
 
-#### Folder name - Verzeichnisname
+### Folder name - Verzeichnisname
 
 Um Extraktionsdaten an einen Speicherort innerhalb eines bestimmten Ordners in einem Google Cloud Storage-Bucket zu schreiben, geben Sie einen Ordnernamen ohne Slashes ein.
 Unterordner werden unterstützt und können mit der folgenden Syntax definiert werden: 
 `[Verzeichnis]/[Unterverzeichnis_1]/[Unterverzeichnis_2]/…`
 
-#### Compression
+### Compression
 
 **None**<br>
 Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
@@ -42,7 +42,7 @@ Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
 **gzip**<br>
 Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt. 
 
-### CSV File Splitting
+### File Splitting
 
 **No Splitting**<br>
 Schreibt Extraktionsdaten einer einzelnen Extraktion in eine einzelne Datei in Google Cloud Storage.

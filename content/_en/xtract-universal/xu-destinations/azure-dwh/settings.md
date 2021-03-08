@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=settings4
+progressstate: 5
 ---
 ### Opening the Destination Settings
 1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
@@ -17,9 +18,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=settings4
 
 The following settings can be defined for the destination:  
 
+
 ### Destination Settings
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form_debug.png)){:class="img-responsive"}
-{% include _content/en/xu-specific/xu-destinations/general/table-name.md %}
+![ext_spec_set_de_form](/img/content/azuredwh-configuration.png)){:class="img-responsive"}
+
+{% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
 

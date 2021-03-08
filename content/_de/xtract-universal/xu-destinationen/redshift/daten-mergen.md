@@ -1,5 +1,5 @@
 ---
-ref: xu-amzon-redshift-05
+ref: xu-amazon-redshift-05
 layout: page
 title: Daten zusammenführen (mergen)
 description: Daten mergen

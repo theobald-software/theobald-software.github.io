@@ -23,7 +23,7 @@ The miscellaneous tab consists of two subsections:
 **Cache results** (1)
 
 {:.box-note}
-**Note:** *Cache results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+**Note:** The *Cache results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
 
 Pull destinations often pull the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way the pull destination pulls the data from cache and not from the SAP.
 This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
@@ -50,6 +50,11 @@ Depicted example demonstrates the SAP object *KNA1* and *KNVV* with their primar
 {:.box-note}
 **Note:** A defined primary key field in a table is a prerequisite for merging data. 
 
+### Encryption
+
+Coming soon.
+
+![General-Settings-Encryption](/img/content/XU-General_Settings-Encryption.png){:class="img-responsive"}
 
 
 ### Security Tab

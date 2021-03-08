@@ -12,6 +12,7 @@ lang: de_DE
 progressstate: 5
 ---
 
+
 Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in Tableau. 
 
 

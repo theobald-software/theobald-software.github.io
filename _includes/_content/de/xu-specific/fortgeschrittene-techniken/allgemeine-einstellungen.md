@@ -57,6 +57,11 @@ In diesem Beispiel besteht der Primärschlüssel aus *KUNNR*, *VKORG*, *VTWEG* u
 {:.box-note}
 *Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
 
+### Encryption
+
+Bald verfügbar.
+
+![General-Settings-Encryption](/img/content/XU-General_Settings-Encryption.png){:class="img-responsive"}
 
 
 ### Security Tab

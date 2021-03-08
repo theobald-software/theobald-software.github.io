@@ -7,6 +7,7 @@ product: xtract-universal
 parent: alteryx-de
 permalink: /:collection/:path
 weight: 3
+progressstate: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=einstelungen-alteryx-de
 ---
@@ -22,10 +23,9 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ### Destination Settings - Destinationseinstellungen
 ![alteryx-configuration](/img/content/alteryx-configuration.PNG){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
-
-
 {% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+
+{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
 
  
 
