@@ -68,19 +68,26 @@ In **URL** und **xu.exe** wird ein generierter String angezeigt, der sich automa
 Benutzen Sie diese Strings, um eine Extraktion auch außerhalb vom Xtract Universal Designer durchzuführen.
 
 #### URL
-1. Kopieren Sie die URL mit dem Button rechts.
-2. Geben Sie die URL in einem Webbrowser Ihrer Wahl ein.
-3. Die Extraktion wird ausgeführt und das Ergebnis im Browser angezeigt. 
-	
-Dieses Vorgehen entspricht der "Run in browser"-Funktionalität, die über Rechtsklick auf eine Extraktion verfügbar ist.
+Die Extraktions-URL kann für verschiedene Anwendungsfälle verwendet werden. 
+- Rufen Sie die Extraktion dort auf, wo es mit dem Kommandozeilen-Tool xu.exe nicht möglich ist, z. B. aus cloudbasierten Zielumgebungen.
+- Rufen Sie die URL auf, wenn eine [Pull-Destination] (../xu-destinationen/#pull--und-push-destinationen) verwendet wird.
+- Führen Sie die Extraktion in einem Webbrowser aus, z. B. zu Testzwecken. 
+- Weitere Anwendungsfälle sind möglich, z. B. der Aufruf in einem PowerShell-Skript. 
 
-![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
+{: .box-note }
+**Hinweis:** 
+Das Kopieren der URL mit **[Strg+C]** oder dem Button auf der rechten Seite und das Ausführen in einem Webbrowser entspricht der Funktionalität "Run in browser", die durch Rechtsklick auf eine Extraktion in der [Hauptfenster Übersicht](../erste-schritte/designer-overview) verfügbar ist.
 
 #### xu.exe 
-Der in **xu.exe** angezeigte Befehl ermöglicht es, Extraktionen mit einem Windows Task Scheduler zu planen.
-Mehr Informationen bzgl. des Planens einer Extraktion mit **xu.exe** finden Sie unter [Exraktion einplanen](../fortgeschrittene-techniken/extraktion_einplanen).
+Der in **xu.exe** angezeigte Befehl ermöglicht die Ausführung einer Extraktion mit dem Kommandozeilen-Tool, das mit Xtract Universal installiert wird.
+Das Tool befindet sich im Installationsordner: ```C:\Program Files\XtractUniversal\xu.exe``` <br>
+Der Befehl kann mit **[STRG+C]** oder dem Button auf der rechten Seite kopiert werden. 
 
-Die Parameter "-s" (Server der Extraktion), "-p" (Listening-Port des Xtract Universal Servers) und "-n" (Name der Exraktion) werden für jede Extraktion generiert.
+Wir empfehlen die Verwendung des Kommandozeilen-Tools mit [Push-Destinationen](../xu-destinationen/#pull--und-push-destinationen).
+Der Befehl kann von einem Windows-Skript oder einem beliebigen Scheduler, der Windows-Kommandozeilenaufrufe ausführen kann, aufgerufen werden. <br>
+Im einfachsten Fall kann der Windows Task Scheduler zum Aufrufen und Planen von Extraktionen mit **xu.exe** verwendet werden. Ausführlichere Informationen zum einplanen von Extraktionen finden Sie unter [Planen einer Extraktion](../fortgeschrittene-techniken/extraktion_einplanen).
+
+Die Parameter "-s" (Server für die Extraktion), "-p" (Listener-Port des Xtract Universal Servers) und "-n" (Name der Exraktion) werden standardmäßig für jede Extraktion generiert.
 
 ### Logs und Output (4) 
 Wenn eine Extraktion ausgeführt wird, werden hier aktuelle Informationen angezeigt.

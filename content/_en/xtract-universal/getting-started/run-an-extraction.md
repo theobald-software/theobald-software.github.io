@@ -67,19 +67,19 @@ Use them to run the extraction outside of the Xtract Universal Designer.
 
 #### URL
 The extraction URL can be used in different integration scenarios and use cases. 
-- Call the extraction where it is not possible with the command-line tool xu.exe. 
+- Call the extraction where it is not possible with the command-line tool xu.exe, e.g. from cloud based environments.
 - Call the URL when the extraction is set to a [Pull Destination](../destinations#pull-and-push-destinations).
 - Run the extraction in a web browser, e.g. for testing purposes. 
-- Other use cases are basically possible (e.g. usage in a PowerShell script, etc.) 
+- Other use cases are possible, e.g. calling it in a PowerShell script. 
 
 {: .box-note }
 **Note:** 
-Copying the URL with Ctrl+C or the button on the right side and execute it in a web browser corresponds to the "Run in browser" functionality available by right-clicking an extraction in the [Main Window Overview](../getting-started/designer-overview).
+Copying the URL with **[Ctrl+C]** or the button on the right side and execute it in a web browser corresponds to the "Run in browser" functionality available by right-clicking an extraction in the [Main Window Overview](../getting-started/designer-overview).
 
 #### xu.exe 
 This command allows running an extraction with the command-line tool **xu.exe**, which is installed with Xtract Universal.
-The tool can be found in the installation folder: ```C:\Program Files\XtractUniversal\``` <br>
-The expression can be copied with CTRL+C or the button on the right side. 
+The tool can be found in the installation folder: ```C:\Program Files\XtractUniversal\xu.exe``` <br>
+The expression can be copied with **[CTRL+C]** or the button on the right side. 
 
 We recommend using the command-line tool with [Push Destinations](../destinations#pull-and-push-destinations).
 It can be called from a Windows script or any scheduler, that can invoke Windows command-line calls. <br>
