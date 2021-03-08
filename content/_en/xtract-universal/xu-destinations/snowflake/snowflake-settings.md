@@ -123,6 +123,4 @@ You can use [script expressions](https://help.theobald-software.com/en/xtract-un
 **Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.
 
 
-{% include _content/de/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
-
 {% include _content/en/xu-specific/xu-destinations/general/transaction-style.md %}

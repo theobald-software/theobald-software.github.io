@@ -30,6 +30,4 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/xu-destinations/general/sql-commands.md %}
 
-{% include _content/en/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
-
 {% include _content/en/xu-specific/xu-destinations/general/transaction-style.md %}

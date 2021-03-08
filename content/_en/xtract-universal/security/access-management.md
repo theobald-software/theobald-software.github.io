@@ -13,6 +13,7 @@ progressstate: 5
 ---
 The access control can be performed on several levels. The stored authorizations on server level are extended by authorizations on source and extraction level.
 
+
 {% include _content/en/xu-specific/security-xu3/access-management.md %}
 
 

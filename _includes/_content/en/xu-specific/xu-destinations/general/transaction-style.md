@@ -19,8 +19,6 @@ Only Row Processing is executed in a transaction. Prepare and finalization witho
 Advantage: DDL in perpare and finalization for DMBS that do not allow DDL in explicit transactions (e.g. AzureDWH)<br>
 Disadvantage: No rollback of Prepare/Finalization, not even as partial step 
 
-
-
 #### No Transaction
 No explicit transactions.<br>
 Advantage: No transaction management required by DBMS (locking, DB transaction log, etc.). This means no locking and possible performance advantages.<br>

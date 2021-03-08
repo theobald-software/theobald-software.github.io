@@ -31,6 +31,4 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/de/xu-specific/xu-destinations/general/sql-commands.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
-
 {% include _content/de/xu-specific/xu-destinations/general/transaction-style.md %}
