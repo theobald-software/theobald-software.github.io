@@ -86,8 +86,23 @@ Run  | Run a selected extraction  |
 
 
 ### List of Extractions (3)
-List of all extractions divided by name, type, modification and creation date etc.
+List of all extractions divided by name, type, modification and creation date etc. <br>
+Right-clicking on an extraction in the list opens the following menu:
 
+![menu_list_of_extractions](/img/content/xu/menu_list_of_extractions.png){:class="img-responsive"}
+
+Menu Item | Description | Details
+------------ | ------------ | -------------
+Edit | Edit an existing extraction | -
+Delete | Delete an existing extraction | -
+Clone | Clone an existing extraction | -
+Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
+Source | Select an existing SAP source system | -
+Destination (Xtract Universal only)| Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
+Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
+Run in browser | Run a selected extraction in the default web browser | - 
+Run in xu.exe | Run a selected extraction in the command-line tool xu.exe | - 
+Abort | Abort a selected extraction | -
 
 ### Status Bar (4)
 Status bar contains information about authentication method, connected server, license with validity period, etc.

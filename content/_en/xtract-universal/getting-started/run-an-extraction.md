@@ -25,7 +25,7 @@ You can also right-click on an extraction or use the Main Menu Bar to open the "
 The "Run extraction" window consists of:
 - General Info (1)
 - Runtime parameters (2)
-- URL and command line(3)
+- URL and command-line(3)
 - Logs and Output (4)
 - Buttons (5)  
 
@@ -45,7 +45,7 @@ Duration | Extraction duration |
 ### Runtime parameters (2)
 
 The three tabs "Extraction", "Source" and "Custom" contain [Extraction Parameters](../advanced-techniques/extraction-parameters).
-When you change these parameters, the *extraction URL and command line (3)* also changes.
+When you change these parameters, the *extraction URL and command-line (3)* also changes.
 
 #### Example
 1. Select the checkbox of the parameter you want to override.
@@ -66,17 +66,24 @@ The strings displayed in **URL** and **xu.exe** are generated and automatically 
 Use them to run the extraction outside of the Xtract Universal Designer.
 
 #### URL
-1. Copy the URL with the button on the right side.
-2. Enter the URL in a web browser of your choice.
-3. The results of the extraction are displayed in the browser
+The extraction URL can be used in different integration scenarios and use cases. 
+- Call the extraction where it is not possible with the command-line tool xu.exe. 
+- Call the URL when the extraction is set to a [Pull Destination](../destinations#pull-and-push-destinations).
+- Run the extraction in a web browser, e.g. for testing purposes. 
+- Other use cases are basically possible (e.g. usage in a PowerShell script, etc.) 
 
-This procedure corresponds to the "Run in browser" functionality available by right-clicking an extraction.
-
-![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
+{: .box-note }
+**Note:** 
+Copying the URL with Ctrl+C or the button on the right side and execute it in a web browser corresponds to the "Run in browser" functionality available by right-clicking an extraction in the [Main Window Overview](../getting-started/designer-overview).
 
 #### xu.exe 
-This command for the **xu.exe** command line tool allows you to schedule extractions with Windows task scheduler.
-For more detailed information about scheduling with **xu.exe** see [Scheduling an extraction](../advanced-techniques/scheduling_extraction).
+This command allows running an extraction with the command-line tool **xu.exe**, which is installed with Xtract Universal.
+The tool can be found in the installation folder: ```C:\Program Files\XtractUniversal\``` <br>
+The expression can be copied with CTRL+C or the button on the right side. 
+
+We recommend using the command-line tool with [Push Destinations](../destinations#pull-and-push-destinations).
+It can be called from a Windows script or any scheduler, that can invoke Windows command-line calls. <br>
+In the most simple case, the Windows task scheduler can be used for calling and scheduling extractions using xu.exe. For more detailed information about scheduling with **xu.exe**, see [Scheduling an extraction](../advanced-techniques/scheduling_extraction).
 
 By default the parameters "-s" (Server for extraction), "-p" (Listening port of the Xtract Universal Server) and "-n" (Name of the extraction) are generated for any extraction. 
 
