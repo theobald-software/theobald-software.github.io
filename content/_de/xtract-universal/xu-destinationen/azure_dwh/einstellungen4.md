@@ -23,7 +23,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
   
 ### Destination Settings - Destinationseinstellungen
 
-![ext_spec_set_de_form](/img/content/azuredwh-configuration.png){:class="img-responsive"}
+![ext_spec_set_de_form](/img/content/azuredwh-configurations.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
 

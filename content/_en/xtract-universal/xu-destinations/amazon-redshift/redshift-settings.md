@@ -21,7 +21,7 @@ The following settings can be defined for the destination:
 
 ### Destination Settings
 
-![ext_spec_set_de_form](/img/content/ext_spec_set_de_form_debug.png){:class="img-responsive"}
+![ext_spec_set_de_form](/img/content/redshift-configurations.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 
@@ -31,6 +31,6 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/xu-destinations/general/sql-commands.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
+{% include _content/en/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
 
 {% include _content/en/xu-specific/xu-destinations/general/transaction-style.md %}

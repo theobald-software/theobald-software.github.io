@@ -20,7 +20,7 @@ The following settings can be defined for the destination:
 
 
 ### Destination Settings
-![ext_spec_set_de_form](/img/content/azuredwh-configuration.png)){:class="img-responsive"}
+![ext_spec_set_de_form](/img/content/azuredwh-configurations.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
 
