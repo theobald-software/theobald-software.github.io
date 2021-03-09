@@ -14,6 +14,7 @@ You have trust set up between your AS ABAP instance (the SAP system Xtract produ
 4. AS Java looks up the mapping between Windows user and the corresponding SAP user and issues an SAP logon ticket for this SAP user. The logon ticket is delivered as part of the MYSAPSSO2 cookie.
 5. The server fetches the SAP logon ticket from the cookie, uses the ticket for logging onto AS ABAP and executes the extraction.
 
+![XU_WebServerSettings_https](/img/content/SSO_with_SAP_Logon_Ticket_Arch.png){:class="img-responsive"}
 
 #### Further information (SAP Online Help):
 * [Kerberos and SAP NetWeaver AS for Java](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4c/8a4d292e2849a8b7cbd229be5c94a5/frameset.htm)
