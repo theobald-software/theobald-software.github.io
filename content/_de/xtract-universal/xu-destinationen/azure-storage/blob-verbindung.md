@@ -7,6 +7,7 @@ product: xtract-universal
 parent: azure-storage
 permalink: /:collection/:path
 weight: 2
+progressstate: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-verbindung
 ---
@@ -20,12 +21,11 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-verbindung
 3. Geben Sie einen Namen für die neue Destination ein.
 4. Wählen Sie als Typ die Destination *Azure Storage (Blob / Data Lake)* aus der Drop-down-Liste aus. Die Parameter der Destination werden angezeigt.
 
-
 Das Fenster "Destination Details" besteht nun aus zwei Tabs:
 - Azure Storage
 - File Format
 
-### Azure Storage 
+### Azure Storage Parameter
 
 ![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
 
@@ -49,9 +49,9 @@ Der Unterabschnitt *Connection* bietet zwei verschiedene Methoden zur Authentifi
 
 Diese Authentifizierungsmethode ermöglicht den Zugriff auf das gesamte Azure Speicherkonto. 
 Allgemeine Informationen über diese Authentifizierungsmethode finden Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage).<br>
-Wählen Sie **[Access key]** aus, um diesen Verbindungstyp zu verwenden.
+Wählen Sie die **[Access key]** Checkbox aus, um diesen Verbindungstyp zu verwenden.
 
-### Verbindung via Acces Key (Zugangsschlüssel)
+#### Verbindung via Acces Key (Zugangsschlüssel)
 **Storage account**<br>
 Geben Sie den Namen Ihres Speicherkontos ein.
 
@@ -65,9 +65,10 @@ Geben Sie den Zugangsschlüssel Ihres Azure Speicherkontos ein.
 ![xu-azure-blob-con-10](/img/content/xu-azure-blob-con-10.png){:class="img-responsive"}
 
 **Connect**<br>
-Klicken Sie auf **[Connect]**, um eine Verbindung zum Azure Speicherkonto herzustellen.<br>
-Wenn die Verbindung erfolgreich ist, poppt das Info-Fenster "Connection successful" auf.<br> 
+Klicken Sie auf **[Connect]**, um eine Verbindung zum Azure Speicherkonto herzustellen. 
+Wenn die Verbindung erfolgreich ist, poppt das Info-Fenster "Connection successful" auf. 
 Klicken Sie auf **[OK]** zum Bestätigen.
+
 
 
 
@@ -104,7 +105,10 @@ Die erforderliche RBAC-Rolle ist *Storage Blob Data Contributor*.
 **Tipp:** Zugriffsrechte können auf Azure Speicherkonto- oder Container-Ebene gewährt werden. 
 
 
-### Verbindung über Azure Active Directory
+#### Verbindung über Azure Active Directory
+
+![xu-azure-active-directory-connection](/img/content/xu/azure_destination-activedirectory.png){:class="img-responsive"}
+
 **Storage account**<br>
 Geben Sie den Namen Ihres Speicherkontos ein.
 
@@ -165,11 +169,12 @@ Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermitt
 {% include _content/de/xu-specific/xu-destinations/general/column-encryption.md %}
 
 ### File Format 
-Wählen Sie das gewünschte Dateiformat zwischen "Parquet" und "CSV".
+Wählen Sie das gewünschte Dateiformat aus dem Drop-down-Menü. 
+Die Formate *Parquet* und *CSV* sind verfügbar.
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
-Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
+Die *CSV*-Einstellungen entsprechen den allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
 
-Wenn Sie "Parquet" Dateiformat auswählen, können Sie im Feld "Compatibility mode" zwischen "Pure" und "Spark" auswählen.
+Wenn Sie das *Parquet* Dateiformat auswählen, können Sie im Feld **Compatibility mode** zwischen *Pure* und *Spark* auswählen.
 
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-05.png){:class="img-responsive"}
 
@@ -182,14 +187,18 @@ Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen 
 
 ### Retry- und Rollback-Funktion
 
-Die Retry- und Rollback-Funktionen sind eingebaute Wiederholungsmechanismen der Azure Storage Destination, die automatisch aktiviert sind.
-Die Retry-Funktion verhindert, dass Extraktionen fehlschlagen, wenn kurzzeitige Verbindungsunterbrechungen zu Azure auftreten.
-Die Retry- und Rollback-Funktion ist implementiert entsprechend den [Microsoft Richtlinien](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
-Die Logik hinter der Funktion basiert auf dem WebExceptionStatus. Sollte eine Ausnahme (Exception) ausgelöst sein, verfolgt Xtract Universal eine exponentielle Strategie der Wiederholversuche.
-Dies bedeutet, dass 7 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. Sollte in dem Zeitraum von 140 Sekunden keine Verbindung zustande kommen, wird die Extraktion abgebrochen. 
+Die Retry- und Rollback-Funktionen sind eingebaute Wiederholungsmechanismen der 
+Azure Storage Destination, die automatisch aktiviert sind.
+Die Retry-Funktion verhindert, dass Extraktionen fehlschlagen wenn kurzzeitige Verbindungsunterbrechungen zu Azure auftreten.
+Die Implementierung der Retry- und Rollback-Funktion entspricht den [Microsoft Richtlinien](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
+Die Logik der Funktion basiert auf dem WebExceptionStatus. 
+Sollte eine Ausnahme (Exception) ausgelöst werden, verfolgt Xtract Universal eine exponentielle Strategie der Wiederholversuche.
+Das bedeutet, dass 7 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. 
+Sollte in diesem Zeitraum keine Verbindung zustande kommen, wird die Extraktion abgebrochen. 
 
-Die Rollback-Funktion deckt Szenarien ab, bei denen eine Extraktion fehlschlägt, wenn ein Problem auftritt, das nicht mit der Verbindung zu Azure im Zusammenhang steht. Ein Beispiel dafür ist eine Extraktion, die aufgrund eines Verbindungsfehlers zu SAP fehlschlägt.
-In solchen Fällen versucht Xtract Universal, alle Dateien aus dem Azure-Speicher zu entfernen, die im Laufe der Extraktion erstellt wurden.
+Die Rollback-Funktion deckt Szenarien ab, bei denen eine Extraktion fehlschlägt wenn ein Problem auftritt, das nicht mit der Verbindung zu Azure im Zusammenhang steht. 
+Ein Beispiel dafür ist eine Extraktion, die aufgrund eines Verbindungsfehlers zu SAP fehlschlägt.
+In solchen Fällen versucht Xtract Universal alle Dateien aus dem Azure-Speicher zu entfernen, die im Laufe der Extraktion erstellt wurden.
   
 
 

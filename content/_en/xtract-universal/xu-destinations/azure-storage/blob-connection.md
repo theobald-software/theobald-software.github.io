@@ -7,6 +7,7 @@ product: xtract-universal
 parent: azure-storage
 permalink: /:collection/:path
 weight: 2
+progressstate: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 ---
@@ -24,7 +25,7 @@ The window "Destination Details" now consists of two tabs:
 - Azure Storage
 - File Format
 
-### Azure Storage
+### Azure Storage Parameters
 
 ![xu-azure-blob-con-01](/img/content/xu/xu-azure-blob-con-01.png){:class="img-responsive"}
 
@@ -46,25 +47,24 @@ The subsection *Connection Type* offers two different methods for authenticating
 ### Authentication via Access Key
 This method of authentication authorizes access to the complete storage account. 
 General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). <br>
-Choose **[Access key]** to select this connection type.
+Choeck the **Access key** checkbox to select this connection type.
 
-### Connection via Access Key
+#### Connection via Access Key
 **Storage account** <br>
 Enter your storage account name.
 
 **Access key** <br>
-Enter the access key of the Azure Storage account.  
-
-{: .box-tip }
+Enter the access key of the Azure Storage account. 
+ 
+ {: .box-tip }
 **Tip:** Copy your storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
 
 ![xu-azure-blob-con-10](/img/content/xu-azure-blob-con-10.png){:class="img-responsive"}
 
 **Connect** <br>
-Click **[Connect]** to establish a connection to the storage account.<br>
-If the connection is successful, a "Connection successful" info window opens. <br>
+Click **[Connect]** to establish a connection to the storage account. 
+If the connection is successful, a "Connection successful" info window opens.
 Click **[OK]** to confirm. <br>
-
 
 
 ### Authentication via Azure Active Directory
@@ -76,7 +76,7 @@ General information about this method of authentication can be found in the [Mic
 #### Prerequisites 
 
 {: .box-note }
-**Note:** Authentication via Azure Active Directory requires an Azure AD tenant. Setting up an Azure AD tenant is described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant). 
+**Note:** Authentication via Azure Active Directory requires an Azure AD tenant. How to set up an Azure AD tenant is described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant). 
 
 Before using authentication via Azure Active Directory, perform the following steps in the Azure Portal:
 1. In the Azure Portal, open the *Azure Active Directory* service.
@@ -98,7 +98,10 @@ The required RBAC role is *Storage Blob Data Contributor*.
 {: .box-tip }
 **Tip:** Access rights can be granted on storage account or container level. 
 
-### Connection via Azure Active Directory
+#### Connection via Azure Active Directory
+
+![xu-azure-active-directory-connection](/img/content/xu/azure_destination-activedirectory.png){:class="img-responsive"}
+
 **Storage account** <br>
 Enter your storage account name.
 
@@ -155,15 +158,16 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 This way, a folder path can be set dynamically when running an execution. <br>
 
 ### Column Encryption (4)
+
 {% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
 
 ### File Format 
-Select the required file format between "Parquet" and "CSV".
+Select the required file format from the drop down menu. 
+The formats *Parquet* and *CSV* are available.
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
-The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
+The settings for *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).
 
-When you select "Parquet" file format, in the field "Compatibility mode" you can choose between "Pure" and "Spark".
-
+If you select *Parquet* as the file format, the **Compatibility mode** offers the options *Pure* or *Spark*.
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-05.png){:class="img-responsive"}
 
 
@@ -175,15 +179,21 @@ When you select "Parquet" file format, in the field "Compatibility mode" you can
 Spark does not support the datatypes used in pure mode, so other datatypes need to be used.
 
 ### Connection Retry and Rollback
-Connection retry and rollback are built-in functions of the Azure Storage destination, which are automatically activated.
 
-Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to Azure.
+Connection retry and rollback are built-in functions of the Azure Storage destination.
+They are activated by default. 
+
+Connection retry is a functionality that prevents extractions from failing in case of 
+transient connection interruptions to Azure.
 The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
-The retry logic is based on WebExceptionStatus. If any exception is thrown, Xtract Universal tries to reestablish connection to Azure following an exponential retry strategy.
-The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. If a connection is not established during the timespan of 140 seconds, the extraction fails.
+The retry logic is based on WebExceptionStatus. 
+If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Azure.
+The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
+If a connection is not established during this timespan, the extraction fails.
 
-Rollback covers scenarios, where an extraction fails due to an issue that is not caused by a connection failure to Azure. An example is an extraction that fails due to an error when connecting to SAP.
-In particular cases, Xtract Universal tries and removes any files from Azure storage that were created in the course of the extraction.
+Rollback covers scenarios where extractions fail due to issues that are not caused by a connection failure to Azure. 
+An example is an extraction that fails due to an error when connecting to SAP.
+In those particular cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
 
 <!---- using an exponential backoff, meaning 8 retries with an increasing waiting time between the requests: 1s, 2s, 4s, 8s, 16s, etc.
 See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines). --->
