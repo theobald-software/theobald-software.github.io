@@ -44,14 +44,10 @@ Dies erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
 Wenn der Preview-Modus aktiviert ist, wird nur ein kleiner Teil der Daten aus SAP extrahiert oder, falls eine Extraktion nicht möglich ist, werden stattdessen Beispieldaten erzeugt.
 
 
-**Enable column level encryption** (3)
-
-In Kürze verfügbar.
-
 #### Keywords (Schlüsselwörter)
 
 Ein oder mehrere Schlüsselwörter (Tags) können auf eine Extraktion gesetzt werden. 
-Schlüsselwörter können direkt in das Schlüsselwortfeld (4) eingegeben werden.
+Schlüsselwörter können direkt in das Schlüsselwortfeld (3) eingegeben werden.
 Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extraktionen verwenden. 
 
 {:.box-tip}

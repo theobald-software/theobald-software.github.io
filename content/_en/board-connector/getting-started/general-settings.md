@@ -23,7 +23,7 @@ Example:
 The window "General Settings" opens.
 
 
-### Misc. tab
+### Misc. Tab
 The miscellaneous tab consists of two subsections:
 - Options
 - Keywords
@@ -41,13 +41,10 @@ This increases the performance and limits the impact on the SAP system. If this 
 
 If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
 
-**Enable column level encryption** (3)
-
-Coming soon.
 
 #### Keywords
 One or more keywords (Tags) can be set to an extraction. 
-Keywords can be entered directly in the keyword field (4).
+Keywords can be entered directly in the keyword field (3).
 Within the Designer you can use these keywords to filter  extractions. 
 
 {:.box-tip}
