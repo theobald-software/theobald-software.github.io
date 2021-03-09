@@ -46,7 +46,7 @@ Duration |Dauer der Extraktion |
 
 ### Runtime parameters (2)
 
-Die Tabs "Extraction", "Source" und "Custom" beinhalten die [Extraktionsparameter](../advanced-techniques/extraction-parameters) der Extraktion.
+Die Tabs "Extraction", "Source" und "Custom" beinhalten die [Extraktionsparameter](../fortgeschrittene-techniken/extraktionsparameter) der Extraktion.
 Wenn diese Parameter geändert werden, passen sich auch automatisch *URL und Kommandozeile (3)* entsprechend an.
 
 #### Beispiel
@@ -70,7 +70,7 @@ Benutzen Sie diese Strings, um eine Extraktion auch außerhalb vom Xtract Univer
 #### URL
 Die Extraktions-URL kann für verschiedene Anwendungsfälle verwendet werden. 
 - Rufen Sie die Extraktion dort auf, wo es mit dem Kommandozeilen-Tool xu.exe nicht möglich ist, z. B. aus cloudbasierten Zielumgebungen.
-- Rufen Sie die URL auf, wenn eine [Pull-Destination] (../xu-destinationen/#pull--und-push-destinationen) verwendet wird.
+- Rufen Sie die URL auf, wenn eine [Pull-Destination](../xu-destinationen/#pull--und-push-destinationen) verwendet wird.
 - Führen Sie die Extraktion in einem Webbrowser aus, z. B. zu Testzwecken. 
 - Weitere Anwendungsfälle sind möglich, z. B. der Aufruf in einem PowerShell-Skript. 
 

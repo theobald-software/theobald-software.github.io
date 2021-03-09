@@ -1,4 +1,4 @@
-The usage of user-defined variables is possible, as in the following example with the previously defined variable @MaxRows:
+The usage of [user-defined variables](../advanced-techniques/user-defined-variables) is possible, as in the following example with the previously defined variable @MaxRows:
 
 ![Bapi-Run-Parameters](/img/content/Bapi-Run-Parameters.png){:class="img-responsive"}
 

@@ -25,7 +25,7 @@ You can also right-click on an extraction or use the Main Menu Bar to open the "
 The "Run extraction" window consists of:
 - General Info (1)
 - Runtime parameters (2)
-- URL and command-line(3)
+- URL and command-line (3)
 - Logs and Output (4)
 - Buttons (5)  
 
@@ -79,7 +79,7 @@ Copying the URL with **[Ctrl+C]** or the button on the right side and execute it
 #### xu.exe 
 This command allows running an extraction with the command-line tool **xu.exe**, which is installed with Xtract Universal.
 The tool can be found in the installation folder: ```C:\Program Files\XtractUniversal\xu.exe``` <br>
-The expression can be copied with **[CTRL+C]** or the button on the right side. 
+Copy the expression with **[CTRL+C]** or the button on the right side. 
 
 We recommend using the command-line tool with [Push Destinations](../destinations#pull-and-push-destinations).
 It can be called from a Windows script or any scheduler, that can invoke Windows command-line calls. <br>
