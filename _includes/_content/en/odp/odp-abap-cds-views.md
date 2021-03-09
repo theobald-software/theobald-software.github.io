@@ -39,3 +39,9 @@ When [searching](./odp-functions-ov#operational-data-provider) for ABAP CDS View
 ![ODP ABAP CDS View Preview](/img/content/odp/odp-component-cds-costcenter-02-preview.png){:class="img-responsive"}
 
 Click **[Load live preview]** to preview the data without executing an extraction.
+
+### Annotations in ABAP CDS Views
+Use below Annotation, to find ABAP CDS view in ODP extraction type
+@Analytics.dataExtraction.Enabled: true
+
+If Source SAP system is not on HANA DB, in addition to the above annotation, use @Analytics.dataCategory: #CUBE/#FACT/#DIMENSION
