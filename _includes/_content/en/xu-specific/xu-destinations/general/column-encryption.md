@@ -1,6 +1,12 @@
 #### General
-The "Column encryption" feature enables the user to encrypt columns in the extracted data set, containing sensitive information before uploading it to the destination. Furthermore, the user can decide whether to store the data in its encrypted form or decrypt it right away. 
-The feature also supports random access, meaning that the data is decryptable at any starting point. Since random access has a significant overhead, it is not recommended to use column encryption for encrypting the whole data set.
+
+The "Column encryption" feature enables the user to encrypt columns in the extracted data set 
+before uploading them to the destination.
+By encrypting the columns you can ensure the safety of sensitive information.
+You can store data in its encrypted form or decrypt it right away.
+
+The feature also supports random access, meaning that the data is decryptable at any starting point. 
+Since random access has a significant overhead, it is not recommended to use column encryption for encrypting the whole data set.
 
 #### How to proceed
 The user must provide the RSA public key.
@@ -10,10 +16,10 @@ Set up column encryption with the following steps:
 1. Select the columns to encrypt under **Extraction settings > [General settings](https://help.theobald-software.com/en/xtract-universal/getting-started/general-settings) > Encryption**.
 	![XU_Column_Encryption_01](/img/content/xu/xu-column-encryption-01.png){:class="img-responsive"}
 	
- 2. Make sure the "Enable column level encryption" checkbox is activated under **Extraction settings > General settings > Misc.**. 
+ 2. Make sure the **Enable column level encryption** checkbox is activated under **Extraction settings > General settings > Misc.**. 
 	![XU_Column_Encryption_02](/img/content/xu/xu-column-encryption-02.png){:class="img-responsive"}
 
-3. Under **Destination Details > Column Encryption** click on the "..."-Button to import the public key as xml.
+3. Click **[...]** in **Destination Details > Column Encryption** to import the public key as an .xml file.
 	
 4. Run the extraction.
 	

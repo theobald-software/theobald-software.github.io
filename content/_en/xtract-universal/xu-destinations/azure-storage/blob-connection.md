@@ -13,26 +13,29 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 
 
 ### Adding an Azure Storage Destination
-1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
+1. Navigate to **Server > Manage Destinations** in the main window of the Designer. The window "Manage Destinations" opens.
+![XU_Manage_Destinations](/img/content/sever_manage_dest.png){:class="img-responsive"}
 2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
 ![XU_azure_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
-3. Select the *Azure Storage (Blob / Data Lake)* destination from the drop-down list.
+3. Enter a name for the new destination.
+4. Select the *Azure Storage (Blob / Data Lake)* destination type from the drop-down list. The destination parameters appear.
 
-### Destination Details 
-
-The window "Destination Details" consists of two tabs:
-- Azure Storage Connection
+The window "Destination Details" now consists of two tabs:
+- Azure Storage
 - File Format
 
 ### Azure Storage
+
+![xu-azure-blob-con-01](/img/content/xu/xu-azure-blob-con-01.png){:class="img-responsive"}
+
 The tab *Azure Storage* consists of the following subsections:
+
 - Connection Type(1) in combination with
 	- Access key parameters
 	- Azure active directory parameters
 - Container (2)
 - Misc (3)
 - Column Encryption (4)
-![xu-azure-blob-con-01](/img/content/xu/xu-azure-blob-con-01.png){:class="img-responsive"}
 
 ### Connection Type (1)
 
@@ -41,29 +44,33 @@ The subsection *Connection Type* offers two different methods for authenticating
 2. Authentication via Azure Active Directory  
 
 ### Authentication via Access Key
-This method of authentication authorizes access to the complete storage account. General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). <br>
-To select this connection type choose **[Access key]**.
+This method of authentication authorizes access to the complete storage account. 
+General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). <br>
+Choose **[Access key]** to select this connection type.
 
 ### Connection via Access Key
 **Storage account** <br>
-Storage account name.
+Enter your storage account name.
 
 **Access key** <br>
-Access key of the Azure Storage account.  
+Enter the access key of the Azure Storage account.  
 
 {: .box-tip }
-**Tip:** Copy storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
+**Tip:** Copy your storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
 
 ![xu-azure-blob-con-10](/img/content/xu-azure-blob-con-10.png){:class="img-responsive"}
 
 **Connect** <br>
-Button to establish a connection to the storage account.<br>
+Click **[Connect]** to establish a connection to the storage account.<br>
 If the connection is successful, a "Connection successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
 
+
+
 ### Authentication via Azure Active Directory
 Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
-Compared to *Authentication via Access Key*, this option allows a more granular way of authorizing access to a storage account and its individual storage containers. 
+Compared to *Authentication via Access Key*, this option allows a more granular way of 
+authorizing access to a storage account and its individual storage containers. 
 General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
 
 #### Prerequisites 
@@ -74,25 +81,32 @@ General information about this method of authentication can be found in the [Mic
 Before using authentication via Azure Active Directory, perform the following steps in the Azure Portal:
 1. In the Azure Portal, open the *Azure Active Directory* service.
 2. Register an app with your Azure AD tenant. To do this, follow the steps as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Register the app as *Public client/native (mobile & desktop)*.
-3. Add *API permissions* to the registered app to grant access to the Azure Storage web API.<br> The following permissions are required: *Azure Storage - Delegated permissions - user impersonation*, *Microsoft Graph - User.Read*. Follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
-4. Assign [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient) as the standard Redirect URI. This can be done in the Azure AD app registration via **Manage > Authentication > Add a platform > Mobile and desktop applications**. Copy and paste the URL into in the *Custom redirect URI* field and click **[Configure]**. In the *Authentication* screen confirm with **[Save]**.
+3. Add *API permissions* to the registered app to grant access to the Azure Storage web API. The following permissions are required:<br> 
+*Azure Storage - Delegated permissions - user impersonation*,<br> 
+*Microsoft Graph - User.Read*. <br>
+Follow the steps described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
+4. Assign [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient) as the standard Redirect URI (1). 
+This can be done in the Azure AD app registration via **Manage > Authentication > Add a platform > Mobile and desktop applications**. 
+Copy and paste the URL into in the *Custom redirect URI* field (2) and click **[Configure]** (3). 
+In the *Authentication* screen confirm with **[Save]**.
 ![xu-azure-blob-con-11](/img/content/xu/xu-azure-blob-con-11.png){:class="img-responsive"} 
 5. In the Azure Portal, open your Azure Storage account.
-6. Assign access rights to the Azure Storage as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). The required RBAC role is *Storage Blob Data Contributor*.
+6. Assign access rights to the Azure Storage as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). 
+The required RBAC role is *Storage Blob Data Contributor*.
 ![xu-azure-blob-con-07](/img/content/xu-azure-blob-con-07.png){:class="img-responsive"}
 
 {: .box-tip }
-**Tip:** Access rights can be granted on storage account or on container level. 
+**Tip:** Access rights can be granted on storage account or container level. 
 
 ### Connection via Azure Active Directory
 **Storage account** <br>
-Storage account name.
+Enter your storage account name.
 
 **Tenant ID**<br>
-ID of the Azure AD tenant
+Enter the ID of the Azure AD tenant.
 
 **Client ID**<br>
-ID of the registered app
+Enter the ID of the registered app.
 
 {: .box-tip }
 **Tip:** Copy tenant ID and client ID from the Azure portal.
@@ -100,11 +114,11 @@ ID of the registered app
 ![xu-azure-blob-con-08](/img/content/xu-azure-blob-con-08.png){:class="img-responsive"}
 
 **Connect** <br>
-Button to establish a connection to the Azure Storage account.<br>
+Establish a connection to the Azure Storage account:<br>
 1. Click **[Connect]**. A browser window pops up.
 2. Sign in using your Azure AD credentials.
 ![xu-azure-blob-con-05](/img/content/xu-azure-blob-con-05.png){:class="img-responsive"}
-3. The "Permissions requested" window lists the requested permissions (see above). Click **[Accept]**.
+3. The "Permissions requested" window lists the requested permissions (see *Prerequisites* above)). Click **[Accept]**.
 ![xu-azure-blob-con-06](/img/content/xu-azure-blob-con-06.png){:class="img-responsive"}
 4. If the connection is successful, a "Connection successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
@@ -113,13 +127,12 @@ Click **[OK]** to confirm. <br>
 This subsection is activated after a connection to the storage account was successfully established.<br>
 
 **Container** <br>
-When authenticating via Azure Active Directory, a Blob container needs to be entered in this field.
 
-{: .box-note }
-**Note:** With Azure Active Directory authentication, the drop down menu is not supported. Enter the name of the Blob container manually.
+With Access Key authentication, choose a Blob container from the drop down menu.
+With Azure Active Directory authentication, enter the name of the Blob container manually.
 
 **Test connection** <br>
-Button to check if the storage container can be accessed. <br>
+Click **[Test Connection]** to check if the storage container can be accessed. <br>
 If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. <br>
 
 ![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
@@ -130,14 +143,16 @@ The *Azure Storage (Blob / Data Lake)* destination can now be used.
 ### Misc (3)
 
 {: .box-note }
-**Note:** The settings under "Misc" can only be used in combination with a blob container.<br> 
+**Note:** The settings in *Misc* can only be used in combination with a blob container.<br> 
 
 **Folder path** <br>
-Option to create a folder structure within the container for saving files. See also [Destination Settings > Folder Path](./blob-settings#folder-path). <br>
+Option to create a folder structure within the container for saving files. 
+See also [Destination Settings > Folder Path](./blob-settings#folder-path). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-This field allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
+**Folder path** allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths).
+This way, a folder path can be set dynamically when running an execution. <br>
 
 ### Column Encryption (4)
 {% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
