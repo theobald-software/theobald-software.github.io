@@ -11,36 +11,97 @@ lang: en_GB
 progressstate: 5
 ---
 
-This step is optional and shows how to display the extraction result in a web browser to make sure the extraction runs properly and delivers the appropriate result.
 
-### Defining the extraction properties 
+Xtract Universal Designer offers a test run option for extractions. 
+You can define runtime parameters and other options to run an extraction directly from the Xtract Universal Designer.
 
+### Run Extraction 
  
-1. To open the extraction settings, click **[Run]**. 
-![Run-Table-Extraktion](/img/content/Run-Table-Extraction-Plants.png){:class="img-responsive"}
-The window "Run Extraction" opens.
-2. Specify details of the execution with parameters, if needed. 
+Select an extraction from the list of Extractions and click **[Run]** to open the "Run Extraction" window.<br>
+You can also right-click on an extraction or use the Main Menu Bar to open the "Run Extraction" window.
 
-### To set the extraction parameters
-1. In the window "Run Extraction", select the checkbox of the parameter you want to override.
-2. Enter the value. The actual request of the data occurs via URL:
-- Before changing a parameter:
+![Run-Table-Extraction](/img/content/xu/xu_run_extraction_dialogue.png){:class="img-responsive"}
+
+The "Run extraction" window consists of:
+- General Info (1)
+- Runtime parameters (2)
+- URL and command-line (3)
+- Logs and Output (4)
+- Buttons (5)  
+
+### General Info (1)
+
+Info object |Details
+------------ | ------------ |
+Extraction name  | Name of the extraction |
+Source | Information about the source settings chosen for that extraction (Name, Host, Client, User Name, Instance No., Language) |
+Destination | Name of the destination (Name, Type, Pull destination info)|
+Execution start | Start date and time stamp of extraction run |
+Time elapsed | Elapsed time of the extraction run |
+Rows extracted| Number of extracted rows |
+Status | Extraction status |
+Duration | Extraction duration |
+
+### Runtime parameters (2)
+
+The three tabs "Extraction", "Source" and "Custom" contain [Extraction Parameters](../advanced-techniques/extraction-parameters).
+When you change these parameters, the *extraction URL and command-line (3)* also change.
+
+#### Example
+1. Select the checkbox of the parameter you want to override.
+2. Enter the value and confirm by pressing enter. 
+- Extraction URL before changing a parameter:<br>
 `http://localhost:8065?name=Plants`
-- After choosing the parameter **rows**:
+- Extraction URL after editing the parameter **rows**:<br>
 `http://localhost:8065?name=Plants&rows=100` 
 
 ![Run-Table-Extraction-param](/img/content/xu/xu_run_extraction_param.png){:class="img-responsive"}
-3. Run an extraction using xu.exe. The settings change during runtime, no new start is necessary. 
 
 {: .box-note }
-**Note:** Additional parameters such as *Package size* or *Row limit* etc. are described in section [Extraction settings](https://help.theobald-software.com/en/xtract-universal/table/extraction-settings). 
+**Note:** Additional parameters such as **Package size**, **Row limit**, etc. are described in [Extraction settings](./../table/extraction-settings). 
 
 
-### Running an extraction in a browser
-To run the extraction in a browser, click **[Run in Browser]**. Your default browser opens and displays the data in accordance with the criteria and format. <br>
+### URL and command-line (3)
+The strings displayed in **URL** and **xu.exe** are generated and automatically update when you change the *Runtime Parameters (1)*.
+Use them to run the extraction outside of the Xtract Universal Designer.
 
-![Table-Extraction-Browser-Result](/img/content/run_ausgabe_browser_xu.png){:class="img-responsive"}
+#### URL
+The extraction URL can be used in different integration scenarios and use cases. 
+- Call the extraction where it is not possible to use the command-line tool xu.exe, e.g. in cloud based environments.
+- Call the URL when the extraction is set to a [Pull Destination](../destinations#pull-and-push-destinations).
+- Run the extraction in a web browser, e.g. for testing purposes. 
+- Other use cases are possible, e.g. calling it in a PowerShell script. 
 
-### Scheduling an extraction
+{: .box-note }
+**Note:** 
+Copying the URL with *Ctrl+C* or the button on the right side and execute it in a web browser corresponds to the "Run in browser" functionality available by right-clicking an extraction in the [Main Window Overview](../getting-started/designer-overview).
 
-Scheduling extractions at a later time is possible with the Windows task scheduler. To use the task scheduler functionality, run Xtract Universal from a [command line](../advanced-techniques/scheduling_extraction).
+#### xu.exe 
+This command allows running an extraction with the command-line tool **xu.exe**, which is installed with Xtract Universal.
+The tool can be found in the installation folder: ```C:\Program Files\XtractUniversal\xu.exe``` <br>
+Copy the expression with *CTRL+C* or the button on the right side. 
+
+We recommend using the command-line tool with [Push Destinations](../destinations#pull-and-push-destinations).
+It can be called from a Windows script or any scheduler, that can invoke Windows command-line calls. <br>
+In the most simple case, the Windows task scheduler can be used for calling and scheduling extractions using xu.exe. For more detailed information about scheduling with **xu.exe**, see [Scheduling an extraction](../advanced-techniques/scheduling_extraction).
+
+By default the parameters "-s" (Server for extraction), "-p" (Listening port of the Xtract Universal Server) and "-n" (Name of the extraction) are generated for any extraction. 
+
+### Logs and Output (4) 
+When an extraction is executed, information about the extraction is displayed in this section.
+
+#### Log 
+In the *Log* tab the extraction log is displayed in real time.
+Activate the checkbox **Auto scroll to the end** to automatically scroll down to the last protocol.  
+
+#### xu.exe 
+In the *xu.exe* tab the log of the command-line tool is displayed. 
+ 
+#### Output 
+In the *Output* tab the extraction result is displayed to a maximum amount of 500 rows.
+The number of rows to be displayed can be changed using the **Display rows from line** boxes. 
+
+![Run-Extraction-Output](/img/content/xu/xu_run_extraction_output.png){:class="img-responsive"}
+
+### Buttons (5) 
+Run the extraction with **[Run]**, abort it with **[Abort]** and close the window with **[Close]**.

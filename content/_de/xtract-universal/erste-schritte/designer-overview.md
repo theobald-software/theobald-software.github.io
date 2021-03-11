@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=zusaetzliche-funktionen-im-des
 progressstate: 5
 ---
 
-Der Designer bietet verschiedenen Funktionalitäten für eine Extraktion. 
+Der Designer bietet verschiedenen Funktionalitäten für eine Extraktion.
 
 ![Designer](/img/content/xu/xu_designer_main-window.png){:class="img-responsive"}
 

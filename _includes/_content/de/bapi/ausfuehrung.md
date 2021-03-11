@@ -1,8 +1,8 @@
-Bei der Ausführung müssen / können die benutzerdefinierten Variablen gefüllt werden, wie bei unserem Beispiel mit der Variable @MaxRows:
+Die Verwendung von [benutzerdefinierten Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen) ist möglich, wie im folgenden Beispiel mit der zuvor definierten Variable @MaxRows:
 
 ![Bapi-Run-Parameters](/img/content/Bapi-Run-Parameters.png){:class="img-responsive"}
 
-
-Das folgende Bild zeigt die Rohdaten der Tabelle ADDRESSDATA, die wir ja mit dem Output-Type *Pipeline* versehen hatten.
+Die Rückgabedaten einer BAPI-Extraktion können beim Ausführen einer Extraktion im Browser überprüft werden. 
+Das folgende Beispiel zeigt die Daten der Tabelle ADDRESSDATA, die den Output-Type "Pipeline" hat.
 
 ![Bapi-Run-Output](/img/content/Bapi-Run-Output.png){:class="img-responsive"}

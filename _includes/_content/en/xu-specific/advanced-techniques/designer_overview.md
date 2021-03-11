@@ -1,8 +1,8 @@
 
 The main window of the Designer consists of three main sections:
 - Main Menu Bar (1)
-- GUI Buttons(2)
-- List of Extractions(3)
+- GUI Buttons (2)
+- List of Extractions (3)
 - Status bar (4)
 
 ### Main Menu Bar (1)
@@ -86,8 +86,26 @@ Run  | Run a selected extraction  |
 
 
 ### List of Extractions (3)
-List of all extractions divided by name, type, modification and creation date etc.
+List of all extractions divided by name, type, modification and creation date etc. <br>
+You can enter a filter value for the extraction name, wildcard characters are not supported. <br> 
+More extensive filter options are available via the [Filter](../advanced-techniques/regular-expressions) button in the [GUI Buttons (2)](./designer-overview#gui-buttons-2) section. 
 
+Right-clicking on an extraction in the list opens the following menu:
+
+![menu_list_of_extractions](/img/content/xu/menu_list_of_extractions.png){:class="img-responsive"}
+
+Menu Item | Description | Details
+------------ | ------------ | -------------
+Edit | Edit an existing extraction | -
+Delete | Delete an existing extraction | -
+Clone | Clone an existing extraction | -
+Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
+Source | Select an existing SAP source system | -
+Destination (Xtract Universal only)| Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
+Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
+Run in browser | Run a selected extraction in the default web browser | - 
+Run in xu.exe | Run a selected extraction in the command-line tool xu.exe | - 
+Abort | Abort a selected extraction | -
 
 ### Status Bar (4)
 Status bar contains information about authentication method, connected server, license with validity period, etc.

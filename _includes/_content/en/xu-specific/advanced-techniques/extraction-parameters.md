@@ -1,34 +1,36 @@
-The following section describes the extraction parameters that can be changed in the "Run Extraction" window.
+
+The extraction parameters define how data is extracted from the source.
+They are set under *Runtime Parameters* in the "Run Extraction" window.
+
 
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
-To open the "Run Extraction" window, select an extraction in the main window of the Designer and click 
-**[Run]** (see details in [Running an extraction](../getting-started/run-an-extraction)).
+Select an extraction in the Main Window Overview and click 
+**[Run]** to open the "Run Extraction" window. For more information see [Running an extraction](../getting-started/run-an-extraction)).
 
 
-### Subsection "Parameters" Tab "Extraction"
+### Extraction
 
-The amount of the parameters depends on the extraction type and destination.
+The amount of available parameters depends on the extraction type and destination.
 e.g., **decimalSeparator** is a parameter specific to CSV destination.
 
-Parameter name | Parameter description | Special information
+Parameter name | Description | Special information
 ------------ | ------------- | -------------
 clearBuffer | to clear/keep the result buffer | default value -  false
 preview | to enable/disable preview mode | default value - false
-source | to dynamically select the source SAP system from which data is extracted (e.g., SAP_DEV and SAP_PROD). Applies only when more than one SAP system is used. | -
-destination | to dynamically select the destination to which extraction is written (e.g., db_1 and db_2). Applies only when more than one destination is used.| -
+source | to dynamically select the source SAP system from which data is extracted (e.g., SAP_DEV and SAP_PROD). Applies only if more than one SAP system is used. | -
+destination | to dynamically select the destination to which extraction is written (e.g., db_1 and db_2). Applies only if more than one destination is used.| -
 rows | to set the maximum number of rows to be extracted | available in Table 
-where |to set the where clause | available in Table 
+where | to set a where clause | available in Table 
 packageSize | to set the package size | available in Table  
 decimalSeparator | to set a symbol between integer and fractional part | available in CSV
 columnSeparator |  to set a symbol which indicates the start of a new column | available in CSV
 
 
-### Subsection "Parameters" Tab "Source"
+### Source
 
-In the same way as the system parameters and user-defined parameters, the connection settings to a source (SAP) can also be changed dynamically via the URL. 
-
-In the *Source* tab you can override the values that are defined in the [SAP source details](../introduction/sap-connection).
+The connection settings to an SAP source can be changed dynamically via the URL and the command-line tool xu.exe. 
+In the *Source* tab you can override the values that are defined in [SAP source details](../introduction/sap-connection).
 
 ![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"} 
 
@@ -38,22 +40,23 @@ lang | to dynamically change the logon language of the source SAP system
 logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](./sap-single-sign-on/sso-with-sap-logon-ticket)
 
 {: .box-note }
-**Note:** The parameter **logonTicket** can only be set, only if SAP logon ticket is selected as authentication method in the [SAP source details](../introduction/sap-connection).
+**Note:** The parameter **logonTicket** can only be set if SAP logon ticket is selected as the authentication method in [SAP source details](../introduction/sap-connection).
 
 
-#### To Adjust Source Parameters
+#### Adjusting Source Parameters
 1. Select an extraction.
-2. Click **[Run]**. The dialogue "Run Extraction" opens. 
-3. Select the tab *Source* and adjust the parameters.
-![Run-Extraction-Connection-Parameters](/img/content/Run-Extraction-Connection-Parameters.png){:class="img-responsive"}
+2. Click **[Run]**. The "Run Extraction" window opens. 
+3. Select the tab *Source* and check the checkbox of the parameter you want to change.
+4. Adjust the parameter.
+![Run-Extraction-Connection-Parameters](/img/content/xu/xu_run_extraction_source_param.png){:class="img-responsive"}
 
-**Example:** Overriding the connection language to DE using the URL: `http://localhost:8085/?name=plants&lang=DE`
+**Example:** Overwriting the connection language to EN generates the following extraction URL: `http://localhost:8065/?name=Plants&lang=EN`
 
-### Subsection "Parameters" Tab "Custom"
+### Custom
 
 {: .box-note }
-**Note:** The tab "Custom" is only active, when a variable with @-symbol is defined in the [WHERE clause](../table/where-clause).
+**Note:** The tab *Custom* is only active when a [User-Defined Variable](./user-defined-variables) was created. 
 
-To set the pre-defined parameter, check the box and enter the desired value.
+Check the checkbox and enter a new value to set the user defined parameter.
  
 ![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
