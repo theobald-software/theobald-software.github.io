@@ -21,7 +21,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 3. Enter a name for the new destination.
 4. Select the *Azure Storage (Blob / Data Lake)* destination type from the drop-down list. The destination parameters appear.
 
-The window "Destination Details" now consists of two tabs:
+The window "Destination Details" consists of two tabs:
 - Azure Storage
 - File Format
 
@@ -121,7 +121,7 @@ To establish a connection to the Azure Storage account:<br>
 1. Click **[Connect]**. A browser window pops up.
 2. Sign in using your Azure AD credentials.
 ![xu-azure-blob-con-05](/img/content/xu-azure-blob-con-05.png){:class="img-responsive"}
-3. The "Permissions requested" window lists the requested permissions (see *Prerequisites* above)). Click **[Accept]**.
+3. The "Permissions requested" window lists the requested permissions (see *Prerequisites* above). Click **[Accept]**.
 ![xu-azure-blob-con-06](/img/content/xu-azure-blob-con-06.png){:class="img-responsive"}
 4. If the connection is successful, a "Connection successful" info window opens. <br>
 Click **[OK]** to confirm. <br>
@@ -147,7 +147,7 @@ The *Azure Storage (Blob / Data Lake)* destination can now be used.
 ### Misc (3)
 
 {: .box-note }
-**Note:** The settings in *Misc* can only be used in combination with a blob container.<br> 
+**Note:** The settings in *Misc* can only be used in combination with a Blob container.<br> 
 
 **Folder path** <br>
 Option to create a folder structure within the container for saving files. 
@@ -156,7 +156,7 @@ For creating a single folder, enter a folder name without slashes: `[folder]` <b
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
 **Folder path** allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths).
-This way, a folder path can be set dynamically when running an execution. <br>
+This allows to dynamically set a folder path when executing an extraction. <br>
 
 ### Column Encryption (4)
 
