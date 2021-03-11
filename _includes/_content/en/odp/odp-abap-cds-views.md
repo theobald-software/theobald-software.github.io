@@ -31,6 +31,10 @@ To use the deprecated or altered extractors, SAP may deliver extraction relevant
 ### Using ABAP CDS Views
 When [searching](./odp-functions-ov#operational-data-provider) for ABAP CDS Views, make sure to select the correct context. 
 
+{: .box-note }
+**Note:** To find an ABAP CDS view in Xtract Universal Designer, the CDS view must have the following Annotation: ```@Analytics.dataExtraction.Enabled: true```. If the source SAP system is not on a HANA DB, an additional Annotation is needed: ```@Analytics.dataCategory: #CUBE/#FACT/#DIMENSION```.
+
+
 ![ODP ABAP CDS View](/img/content/odp/odp-component-cds-costcenter-01.png){:class="img-responsive"}
 
 {: .box-note }
@@ -39,9 +43,3 @@ When [searching](./odp-functions-ov#operational-data-provider) for ABAP CDS View
 ![ODP ABAP CDS View Preview](/img/content/odp/odp-component-cds-costcenter-02-preview.png){:class="img-responsive"}
 
 Click **[Load live preview]** to preview the data without executing an extraction.
-
-### Annotations in ABAP CDS Views
-Use below Annotation, to find ABAP CDS view in ODP extraction type
-@Analytics.dataExtraction.Enabled: true
-
-If Source SAP system is not on HANA DB, in addition to the above annotation, use @Analytics.dataCategory: #CUBE/#FACT/#DIMENSION
