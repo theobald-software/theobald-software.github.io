@@ -18,8 +18,8 @@ CDS ist wichtig für die SAP-Anwendungsentwicklung. Zum Beispiel verwendet S/4HA
 In BW/4 HANA können ABAP-basierte CDS-Views zur Datenextraktion verwendet werden.  
 
 Zwei mögliche Anwendungsfälle für CDS sind:
-- Direkter Zugriff auf eine CDS-Sicht aus BW/4 HANA 
-- Delta-Extraktion aus einer CDS-Sicht in S/4 HANA nach BW
+- Direkter Zugriff auf eine CDS-View aus BW/4 HANA 
+- Delta-Extraktion aus einer CDS-View in S/4 HANA nach BW
 
 CDS Views unterstützen die Extraktion im Full- und Delta-Modus. 
 
@@ -30,6 +30,9 @@ Um die abgekündigte und veraltete Extraktoren zu verwenden, kann SAP CDS-Views 
 
 ### ABAP CDS Views verwenden 
 Wenn Sie nach ABAP CDS Views [suchen](./odp-functions-ov#operational-data-provider), achten Sie darauf den richtigen Kontext auszuwählen. 
+
+{: .box-note }
+**Hinweis:** Um eine ABAP CDS-View im Xtract Universal Designer zu finden, muss sie folgende Annotation haben: ```@Analytics.dataExtraction.Enabled: true```. Falls das Quellsystem keine HANA DB ist, muss eine zusätzliche Annotation vorhanden sein: ```@Analytics.dataCategory: #CUBE/#FACT/#DIMENSION```.
 
 ![ODP ABAP CDS View](/img/content/odp/odp-component-cds-costcenter-01.png){:class="img-responsive"}
 
