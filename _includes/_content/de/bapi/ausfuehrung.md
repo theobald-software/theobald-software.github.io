@@ -2,6 +2,7 @@ Die Verwendung von [benutzerdefinierten Variablen](../fortgeschrittene-techniken
 
 ![Bapi-Run-Parameters](/img/content/Bapi-Run-Parameters.png){:class="img-responsive"}
 
-Die Rückgabedaten einer BAPI-Extraktion können beim Ausführen einer Extraktion im Browser überprüft werden. Das folgende Beispiel zeigt die Daten der Tabelle ADDRESSDATA, die den Output-Type "Pipeline" hat.
+Die Rückgabedaten einer BAPI-Extraktion können beim Ausführen einer Extraktion im Browser überprüft werden. 
+Das folgende Beispiel zeigt die Daten der Tabelle ADDRESSDATA, die den Output-Type "Pipeline" hat.
 
 ![Bapi-Run-Output](/img/content/Bapi-Run-Output.png){:class="img-responsive"}

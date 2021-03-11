@@ -45,7 +45,7 @@ Duration | Extraction duration |
 ### Runtime parameters (2)
 
 The three tabs "Extraction", "Source" and "Custom" contain [Extraction Parameters](../advanced-techniques/extraction-parameters).
-When you change these parameters, the *extraction URL and command-line (3)* also changes.
+When you change these parameters, the *extraction URL and command-line (3)* also change.
 
 #### Example
 1. Select the checkbox of the parameter you want to override.
@@ -67,19 +67,19 @@ Use them to run the extraction outside of the Xtract Universal Designer.
 
 #### URL
 The extraction URL can be used in different integration scenarios and use cases. 
-- Call the extraction where it is not possible with the command-line tool xu.exe, e.g. from cloud based environments.
+- Call the extraction where it is not possible to use the command-line tool xu.exe, e.g. in cloud based environments.
 - Call the URL when the extraction is set to a [Pull Destination](../destinations#pull-and-push-destinations).
 - Run the extraction in a web browser, e.g. for testing purposes. 
 - Other use cases are possible, e.g. calling it in a PowerShell script. 
 
 {: .box-note }
 **Note:** 
-Copying the URL with **[Ctrl+C]** or the button on the right side and execute it in a web browser corresponds to the "Run in browser" functionality available by right-clicking an extraction in the [Main Window Overview](../getting-started/designer-overview).
+Copying the URL with *Ctrl+C* or the button on the right side and execute it in a web browser corresponds to the "Run in browser" functionality available by right-clicking an extraction in the [Main Window Overview](../getting-started/designer-overview).
 
 #### xu.exe 
 This command allows running an extraction with the command-line tool **xu.exe**, which is installed with Xtract Universal.
 The tool can be found in the installation folder: ```C:\Program Files\XtractUniversal\xu.exe``` <br>
-Copy the expression with **[CTRL+C]** or the button on the right side. 
+Copy the expression with *CTRL+C* or the button on the right side. 
 
 We recommend using the command-line tool with [Push Destinations](../destinations#pull-and-push-destinations).
 It can be called from a Windows script or any scheduler, that can invoke Windows command-line calls. <br>
