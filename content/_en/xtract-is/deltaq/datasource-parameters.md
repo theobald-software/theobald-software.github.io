@@ -28,6 +28,11 @@ Set the values for **Sign** (2); **Option** (3), **Low Value** (4) and **High Va
 **Low Value** (4) designates the comparison value or the lower interval limit.<br>
 **High Value** (5) designates the upper interval limitation.
 
+{: .box-note }
+**Note:** The Low Value column must be filled for each operator.<br>
+The High Value column is only used by operators that expect a second parameter.<br>
+Add *@* right before the value to mark it as a variable. 
+
 |Operator|Description|
 |:---|:---|
 | = | Equal|
@@ -47,7 +52,5 @@ To *delete* a row, click the icon at the bottom left.
 
 SSIS Variables are supported. 
 
-{: .box-note }
-**Note:** Add *@* right before the value to mark it as a variable.
 
 

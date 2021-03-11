@@ -10,69 +10,73 @@ weight: 9
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=deltaq-settings
 ---
-
-Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
+1. Klicken Sie im Hauptfenster "Extract SAP DataSources and Extractors" auf **[Settings]**.
+Der Dialog **Xtract IS DeltaQPrefernces** öffnet sich. Das Fenster besteht aus vier Hauptbereichen und Schaltflächen.
 
 ![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings.png){:class="img-responsive"}
 
+### String Conversion
 
 **Automatic String Conversion**<br>
-bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert, wenn SAP ein Unicode-System ist, und nach VarChar, wenn SAP kein Unicode-System ist.
+Alle Strings werden in VarChar-Strings konvertiert, wenn das Quellsystem nicht Unicode ist, und alle Strings werden in NVarChar konvertiert, wenn das Quellsystem Unicode ist.
 
 **Convert Strings to VarChar**<br>
-bedeutet, dass die Datenquelle alle Strings nach VarChar konvertiert.
+Alle Zeichenketten werden in VarChar konvertiert, unabhängig davon, ob das Quellsystem Unicode ist oder nicht.
 
 **Convert Strings to NVarChar**<br>
-bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert.
+Alle Strings werden in NVarChar konvertiert, unabhängig davon, ob das Quellsystem Unicode ist oder nicht.
 
-**Transfer Mode**<br>
-Die Rohdatenpakete können aus SAP mittels *tRFC*-Calls oder Daten-*IDocs* versendet werden. <br>
-In der Regel ist *tRFC* als Default-Wert optimal. Sollte es aber nötig sein, um z.B. die Rohdatenpakete zu Debugging-Zwecken anschauen zu können, kann der Datentransfer auf Idoc umgestellt werden. Dann lassen sich die Datenpakete in der Transaktion WE02 (Idoc-Monitoring) einsehen. 
+### Transfer Mode
+
+Die Rohdatenpakete können von SAP durch einen *tRFC*-Aufruf oder ein Data-*IDoc* gesendet werden. Normalerweise ist der tRFC für die Standardeinstellung optimal. 
+Wenn es notwendig ist, z. B. die Rohdatenpakete zu Debugging-Zwecken zu untersuchen, können Sie den Übertragungsmodus auf IDoc ändern. Dann können Sie die Datenpakete in der Transaktion WE02 (IDoc-Monitoring) untersuchen.
+
+### Hierarchie Settings
 
 **Language**<br>
-Legt die Sprache fest, falls eine Hierarchie extrahiert wird.
+Definiert die Sprache, wenn eine Hierarchie extrahiert wird.
 
 **Hierarchy Name**<br>
-Legt den Hierarchienamen fest.
+Legt den Namen der Hierarchie fest.
 
 **Hierarchy Class**<br>
-Legt die Hierarchieklasse fest.
+Definiert die Hierarchieklasse.
+
+### Misc. 
 
 **Update Mode Variable**<br>
-Setzen Sie den Wert für **Update Mode** auf **V - SSIS Variable** und definieren Sie hier den Namen der SSIS-Variable für den Update-Mode. Die Variable kann dann folgende Werte verarbeiten: A, F, C, D, S, I und R, wie es in der Werteliste des Update Mode steht.
+Definiert eine Variable für den Aktualisierungsmodus.
+Setzen Sie den Wert von **Update Mode** auf **V - SSIS Variable** und definieren Sie die SSIS Variable für den Update Mode. Die SSIS-Variable kann die folgenden Werte verarbeiten: F, C, D, S, I und R, wie sie in den Werten des Aktualisierungsmodus aufgeführt sind.
 
 **Request ID**<br>
-Diese Angabe ist optional. 
-Wenn hier ein Wert (z.B. XtractDatasource) eingetragen wird, wird dieser im Namen des SAP-Jobs (Transaktion SM37) als Suffix verwendet (z.B. BIXtractDatasource). <br>
-Andernfalls wird eine Kombination aus Prozess ID und Zeitstempel verwendet ( z.B. REQU_pppppppp_yyyyMMddHHmmss). Dabei ist die Prozess ID die ID des Windows Prozesses, unter dem der XtractKernel.DeltaQServerPool.exe läuft.
+Dieses Feld ist optional. 
+Wenn ein Wert (z.B. XtractDatasource) gesetzt ist, wird dieser als Suffix im SAP-Jobnamen verwendet (z.B. BIXtractDatasource), ansonsten wird eine Kombination aus Prozess-ID und Zeitstempel verwendet (z.B. REQU_pppppppppp_yyyMMddHHmmss), wobei die Prozess-ID die ID des Windows-Prozesses ist, unter dem die XtractDeltaQServerPool.exe läuft.
 
 **Automatic Synchronisation**<br>
-Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen ausschließlich in einem Testsystem vorgenommen werden. Wenn SSIS-Pakete dann in der produktiven Umgebung eingesetzt werden, muss die DataSource dort aktiviert werden. Um manuelles Eingreifen im Produktivsystem zu vermeiden, kann diese Option gesetzt werden. Dann wird die Aktivierung automatisch erledigt und der Timestamp der DataSource so angepasst, dass er konsistent mit dem SAP-System übereinstimmt.<br>
-Wenn was in der DataSource im SAP-System geändert wird, z.B. ein Feldname, Datentyp, Datentyplänge oder die Datentransferstruktur, müssen Sie in der DeltaQ-Komponente die DataSource manuell aktivieren, auch wenn diese Option gesetzt ist, sonst wird die Extraktion fehlschlagen. Dieses Verhalten ist von SAP vorgegeben und wird in der [SAP help](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/de-DE/4a12eaff76df1b42e10000000a42189c.html) dokumentiert.
+Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen nur in einem Testsystem durchgeführt werden. Sollen SSIS-Pakete später in der Produktionsumgebung verwendet werden, muss die Datenquelle dort aktiviert werden. Um manuelle Änderungen im transaktionalen System zu vermeiden, können Sie diese Option aktivieren. In diesem Fall erfolgt die Aktivierung automatisch und der Zeitstempel der Datenquelle wird so geändert, dass er mit der Einstellung im SAP-System übereinstimmt. 
+Wenn die DataSource im SAP-System geändert wurde: Z. B. wurde der Name eines Feldes, der Datentyp oder die Länge geändert oder ein Feld von der Datenübertragung ausgeschlossen, dann müssen Sie die DataSource in der DeltaQ-Komponente manuell aktivieren, auch wenn die automatische Synchronisation eingeschaltet ist. Andernfalls wird das Laden der Daten fehlschlagen. Dieses Verhalten ist von SAP so vorgesehen und wird in der [SAP-Hilfe](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html) beschrieben.
 
 **Add Serialization Info to Output**<br>
-Fügt der Ausgabe zwei zusätzliche Spalten hinzu: *DataPackageID* für die Paketnummer und *RowCounter* für den Datensatz innerhalb des Paketes.<br>
-Gemeinsam mit der Spalte *RequestID* haben die Daten einen zusammengesetzten Schlüssel der von SAP gelieferten Datensätze.<br>
-Neuere Datensätze haben eine höhere PackageID.
-Im selben Paket haben neuere Daten einen höheren RowCounter-Wert. 
+Fügt der Ausgabe die beiden Spalten *DataPackageID* und *RowCounter* hinzu. In diesem Fall werden die folgenden drei Spalten in der Ausgabe verfügbar sein: *RequestID*, *DataPackageID* und *RowCounter*, die einen zusammengesetzten Schlüssel der von SAP gelieferten Datensätze darstellen.  
+Neuere Daten haben eine höhere PackageID. Im gleichen Paket haben neuere Daten einen höheren RowCounter. 
 
 **Automatic Data Type conversion**<br>
-Konvertiert SAP-Datentypen (z.B. Datum) zu einem passenden SQL-Datentyp.
+SAP-Datentypen (wie Datum) werden in einen passenden SQL-Datentyp konvertiert.  
+
+**Value for invalid date [YYYYMMDD]**<br>
+Falls keine konvertierbaren Datumswerte vorhanden sind, müssen Sie einen Standard-Datumswert in die Textbox eingeben. Jeder ungültige Wert wird in diesen Wert konvertiert. Das SAP-Datum '00000000' wird unabhängig vom eingegebenen Datum in NULL umgewandelt.
 
 **Replace date 00000000 with [YYYYMMDD]**<br>
-Konvertiert SAP-Datumsfelder mit Wert '00000000' nach NULL oder in das eingegebene Datum [YYYYMMDD].
+SAP-Datum '00000000' wird in NULL oder das eingegebene Datum [YYYYMMDD] umgewandelt. 
 
 **Replace invalid date  with[YYYYMMDD]**<br>
-Für den Fall, dass ein SAP-Datum nicht in ein gültiges SQL-Datum konvertiert werden kann, muss ein Standard-Datumswert in die Textbox eingetragen werden. Jeder ungültige Wert wird dann in das eingegebene Datum konvertiert.<br>
+Falls keine konvertierbaren Datumswerte vorhanden sind, müssen Sie einen Standard-Datumswert in die Textbox eingeben. Jeder ungültige Wert wird in diesen Wert umgewandelt.<br>
 
-**Request Maintenance**<br>
-Zum Anzeigen bzw. Löschen von vorigen Init-Anfragen (Einträge in RSA7).
+**[Request Maintenance]**<br>
+Zeigt den Inhalt der SAP-Tabelle ROOSPRMSC an.
+Erlaubt das Löschen von Init-Requests (Requests in RSA7).
+Im Allgemeinen sollte hier nur ein Eintrag sichtbar sein, der einem Init Request entspricht.
+Nur wenn Sie Init Requests mit sich nicht überschneidenden Auswahlkriterien ausgeführt haben, können Sie mehr als einen Eintrag in dieser Ansicht haben.
 
-- **Delete Request**<br>
-    Löscht die Init-Abfragen (Einträge in RSA7).
-
-- **Allow BW requests deletion**<br>
-    Erlaubt die Löschung der Init-Abfragen für die Export DataSources in BW. 
-
-**Generate Documentation**<br>
-Generiert eine Dokumentation über die Datasource und deren Felder im Excel-Format.
+**[Generate Documentation]**<br>
+Erzeugt eine Exceldokumentation über die Datenquelle und ihre Felder.

@@ -1,16 +1,22 @@
-Der Update-Modus erlaubt Delta-Update, d.h. es werden nur neu hinzugefügte oder geänderte Daten extrahiert, anstatt eines Full-Updates.
-Der Update-Modus kann dynamisch im "Run"-Dialog unter dem Parameter "updatemode"gesetzt werden.
+### Funktion
+Der Update Mode ermöglicht ein Delta-Update, d. h. es werden nur hinzugefügte oder geänderte Daten extrahiert, anstelle eines vollständigen Ladevorgangs.
 
-Alternativ können Sie den Update-Modus im Hauptfenster der Komponente wählen:
-![Update-Mode](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
+### Einstellungen
 
-| Buchstabe | Bezeichnung | Beschreibung |
+Wählen Sie im Hauptfenster "SAP DataSources und Extraktoren extrahieren" den **Update-Mode** aus dem Dropdown-Menü aus.
+![Update-Mode2](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
+
+Der **Update-Modus** kann dynamisch als Laufzeitparameter **updateType** im "Run Extraction"-Dialog gesetzt werden.
+![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
+
+| Bruchstabe| Bezeichnung | Beschreibung |
 | :------: |:--- | :--- |
-| F | Full | Extrahiert alle Daten, die den festgelegten Auswahlkriterien entsprechen. |
-| D | Delta Update | Extrahiert nur Daten, die seit der letzten Delta-Anfrage im SAP-System hinzugefügt oder geändert wurden. Initialisieren Sie das Delta-Verfahren, bevor Sie ein Delta-Update durchführen. Um Fehler, Abbrüche und Lücken in Ihren Daten während eines Delta-Updates zu vermeiden, führen Sie die nächste Extraktion im Update-Modus "Repeat" durch. |
-| C | Delta Initialisation | Initiliert das Delta-Verfahren und extrahiert gleichzeitig alle Daten im Vollmodus. Das Ergebnis einer Delta-Initialisierung wird auf der SAP-Seite "Request Maintenance" genannt. Wenn Sie einen Re-initilizing-Delta-Process starten, löschen Sie alle austretenden Inits durch Klicken auf **[Request Maintenance]** in den DeltaQ Extraktionseinstellungen.|
-| R | Repeat | Wiederholt den letzten Delta-Lauf und die letzten Delta-Updates sowie alle seit dem letzten Lauf aufgelaufenen Delta-Daten. Löschen Sie alle Daten aus dem letzten (nicht erfolgreichen) Delta-Update, bevor Sie einen Wiederholungslauf durchführen. Sie können eine Wiederholung mehrmals ausführen.|
-| S | Delta Init (without data)  | Initiliert das Delta-Verfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis einer Delta-Initialisierung wird auf der SAP-Seite "Request Maintenance" genannt. Wenn Sie einen Re-initilizing-Delta-Process starten, löschen Sie alle austretenden Inits durch Klicken auf **[Request Maintenance]** in den DeltaQ Extraktionseinstellungen.|
-| I |  Non-cumulative Init   | Relevant für DataSources wie z.B. *2LIS_03_BX*.  |
-| A | Activate (don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. Die Option "Activate" ist eine Alternative zu "Automatic Synchronization" (Automatische Synchronisierung).  Es werden keine Daten extrahiert.|
-| V | **[nur Xtract IS:]** SSIS-Variable <br> Abgekündigt, siehe [Variablen](https://help.theobald-software.com/de/xtract-is/bw-cube/variablen) |  Wenn Sie "V" auswählen, muss die Variable in den [DeltaQ Einstellungen](https://help.theobald-software.com/en/xtract-is/deltaq/settings) gesetzt werden. Eine gleichnamige SSIS-Variable muss in SSIS definiert werden und einen Wert bekommen. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
+| F | Full | Extrahiert alle Daten, die den festgelegten Auswahlkriterien entsprechen.
+| D | Delta Update | Extrahiert nur Daten, die seit der letzten Delta-Anforderung im SAP-System hinzugefügt oder geändert wurden. Initialisieren Sie das Deltaverfahren, bevor Sie ein Delta-Update durchführen. Um Fehler, Abbrüche und Lücken in Ihren Daten während eines Deltalaufs zu vermeiden, führen Sie die nächste Extraktion im Updatemodus **Repeat** durch. |
+| C | Delta Initialisation | Initialisiert das Delta-Verfahren und extrahiert gleichzeitig alle Daten im Vollmodus. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
+| R | Repeat | Wiederholt den letzten Deltalauf und aktualisiert alle seit dem letzten Lauf angesammelten Deltadaten. Löscht alle Daten des letzten (erfolglosen) Delta-Updates, bevor eine Wiederholung ausgeführt wird. Sie können eine Wiederholung mehrmals ausführen.
+| S | Delta Init (ohne Daten) | Initiliaziert das Deltaverfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis des **Delta-Inits** ist ein sogenannter **[Request Maintenance]** auf der SAP-Seite. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
+| I | Non-cumulative Init | Relevant für DataSources wie *2LIS_03_BX*.  |
+| A | Activate (don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. **[Activate]** ist eine Alternative zu **[Automatic Synchronization]**.  Es werden keine Daten extrahiert. |
+| V | **[Nur Xtract IS]** SSIS-Variable; veraltet, siehe [Variablen](https://help.theobald-software.com/de/xtract-is/bw-cube/variablen) | Wenn **V** ausgewählt ist, muss in den [DeltaQ Settings](https://help.theobald-software.com/de/xtract-is/xtract-is-deltaq/settings) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
+

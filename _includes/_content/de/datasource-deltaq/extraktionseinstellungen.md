@@ -1,76 +1,95 @@
-Über den *Extraction Settings*-Link im Editor öffnet sich das Einstellungsfenster.
+Klicken Sie im Hauptfenster "Extract SAP DataSources and Extractors" auf **[Extraction Settings]**. Der Dialog "DeltaQ-Einstellungen - [Extraktionsname]" wird geöffnet.
+Das Fenster besteht aus zwei Registerkarten:
+* Base
+* Hierarchy
 
-![XU_DeltaQ_Settings](/img/content/XU_DeltaQ_Settings.png){:class="img-responsive"}
+![XU_DeltaQ_Settings_thumb](/img/content/XU_DeltaQ_Settings_thumb.png){:class="img-responsive"}
 
-**Transfer Mode**<br>
-Die Rohdatenpakete können aus SAP über tRFC-Calls oder Daten-IDocs versendet werden. <br>
-In der Regel ist tRFC als Default-Wert optimal. <br>Sollte es aber nötig sein, um z.B. die Rohdatenpakete zu Debugging-Zwecken anschauen zu können, kann der Datentransfer auf Idoc umgestellt werden. Dann lassen sich die Datenpakete in der Transaktion WE02 (IDoc-Monitoring) einsehen.
+### Registerkarte Base
 
+Die Registerkarte "Basis" besteht aus zwei Unterabschnitten:
+- Übertragungsmodus
+- Verschiedenes.
+
+#### Transfer Mode
+
+Die Rohdatenpakete können von SAP über einen *tRFC*-Aufruf oder ein *Data-IDoc* gesendet werden. Normalerweise ist der tRFC für die Standardeinstellung optimal. Wenn es notwendig ist, z. B. die Rohdatenpakete zu Debugging-Zwecken zu untersuchen, können Sie den Übertragungsmodus auf *IDoc* ändern. Dann können Sie die Datenpakete in der Transaktion WE02 (IDoc-Monitoring) untersuchen.
+
+#### Misc.
 
 **Automatic Synchronisation**<br>
-Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen ausschließlich in einem Testsystem vorgenommen werden. Wenn Extraktionen dann in der produktiven Umgebung eingesetzt werden, muss die DataSource dort aktiviert werden. Um manuelles Eingreifen im Produktivsystem zu vermeiden, kann diese Option gesetzt werden. Dann wird die Aktivierung automatisch erledigt und der Timestamp der DataSource so angepasst, dass er konsistent mit dem SAP-System übereinstimmt.<br>
-Wenn was in der DataSource im SAP-System geändert wird, z.B. ein Feldname, Datentyp, Datentyplänge oder die Datentransferstruktur, müssen Sie in der DeltaQ-Komponente die DataSource manuell aktivieren, auch wenn diese Option gesetzt ist, sonst wird die Extraktion fehlschlagen. Dieses Verhalten ist von SAP vorgegeben und wird in der [SAP help](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/de-DE/4a12eaff76df1b42e10000000a42189c.html) dokumentiert.
+Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen nur in einem Testsystem durchgeführt werden. Sollen SSIS-Pakete später in der Produktionsumgebung eingesetzt werden, muss die Datenquelle dort freigeschaltet werden. Um manuelle Änderungen im transaktionalen System zu vermeiden, können Sie diese Option aktivieren. In diesem Fall wird die Aktivierung automatisch durchgeführt und der Zeitstempel der Datenquelle wird so geändert, dass er mit der Einstellung des SAP-Systems übereinstimmt. <br>
+Wenn die DataSource im SAP-System modifiziert wurde, z.B. der Name, der Datentyp oder die Länge eines Feldes geändert wurde oder ein Feld von der Datenübertragung ausgeschlossen wurde, müssen Sie die DataSource in der DeltaQ-Komponente manuell aktivieren, auch wenn die automatische Synchronisation eingeschaltet ist. Andernfalls wird das Laden der Daten fehlschlagen. Dieses Verhalten ist von SAP so vorgesehen und wird in der [SAP-Hilfe](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html) beschrieben (in Englisch).
 
 **Add Serialization Info to Output**<br>
-Fügt der Ausgabe zwei zusätzliche Spalten hinzu: DataPackageID für die Paketnummer und RowCounter für den Datensatz innerhalb des Paketes.<br>
-Gemeinsam mit der Spalte RequestID haben die Daten einen zusammengesetzten Schlüssel der von SAP gelieferten Datensätze.<br>
-Neuere Datensätze haben eine höhere PackageID.
-Im selben Paket haben neuere Daten einen höheren RowCounter-Wert. 
+Fügt der Ausgabe die beiden Spalten *DataPackageID* und *RowCounter* hinzu.<br>
+In diesem Fall werden die folgenden drei Spalten, die ein zusammengesetzter Schlüssel der von SAP gelieferten Datensätze sind, in der Ausgabe vorhanden sein:
+- *RequestID*
+- *DataPackageID* 
+- *RowCounter*
 
+{: .box-note }
+**Hinweis** Neuere Daten haben eine höhere PackageID. Im gleichen Paket haben neuere Daten einen höheren RowCounter.
 
 **Accept Gaps in DataPackage Id**<br>
-Die DeltaQ-Komponente macht am Ende jede Extraktion einen Konsistenz-Check. Nur wenn alle Pakete korrekt angekommen sind, gilt die Extraktion als konsistent. Für den Fall, dass der Kunde im User-Exit einer OLTP-Source nun aber eine Filterfunktion eingebaut hat, die dafür sorgt, dass bestimmte Datenpakete nicht versendet werden, muss der Konsistenz-Check etwas entschärft werden. Sonst würde der Kundenfilter als Inkonsistenz gewertet. Wenn diese Option also aktiviert ist, werden von der DeltaQ Lücken in der Paketnummerierung nicht als Inkonsistenz gewertet sondern als bewusst zurückgehaltene Daten. Die Option sollte man nur dann verwenden, wenn wirklich eine entsprechende Filterfunktion im User-Exit vorliegt. Das Verhalten lässt sich häufig bei 0FI- oder 0CO-DataSources beobachten.
+Die Delta Q-Komponente führt am Ende jeder Extraktion eine Konsistenzprüfung durch. Nur wenn alle Datenpakete korrekt angekommen sind, wird die Extraktion als konsistent angesehen. Für den Fall, dass der Kunde im User-Exit einer OLTP-Quelle eine Filterfunktion eingebaut hat, die bewirkt, dass bestimmte Datenpakete nicht gesendet werden, muss die Konsistenzprüfung entschärft werden. 
+Ansonsten würde die Filterfunktion des Kunden als Inkonsistenz gewertet werden. Wenn diese Option aktiviert ist, werden Lücken in der Paketnummerierung vom DeltaQ nicht als Inkonsistenz, sondern als absichtlich zurückgehaltene Information gewertet. Die Option sollte nur verwendet werden, wenn eine entsprechende Filterfunktion im User-Exit vorhanden ist.
 
 **Timeout (sec)**<br>
-Der Timeout definiert die Zeitspanne, wie lange die Komponente maximal auf fehlende IDocs oder Datenpakete vom SAP System warten soll (in Sekunden), nachdem der Extraktionsjob auf SAP-Seite beendet wurde. Der Default-Wert sind 300 Sekunden.
+Definiert eine Zeitspanne (in Sekunden), wie lange das Xtract-Produkt wartet, nachdem der Extraktionsauftrag auf SAP-Seite beendet ist, aber noch nicht alle tRFC-Aufrufe empfangen wurden.
 
-**Request Maintenance**<br>
-Zum Anzeigen bzw. Löschen von vorigen Init-Anfragen (Einträge in RSA7).
+#### Request Maintenance
 
-**Delete Request**<br>
-Löscht die Init-Abfragen (Einträge in RSA7).
+Zum Anzeigen und Löschen der Init-Requests dieser DataSource (Requests in RSA7).
 
-**Allow BW requests deletion**<br>
-Erlaubt die Löschung der Init-Abfragen für die Export DataSources in BW.
+![DeltaQ_Request_Maintenance](/img/content/DeltaQ_Request_Maintenance.png){:class="img-responsive"}
 
+- **Delete Request**<br>
+    Löscht die Init-Requests (Requests in RSA7).
+- **Allow BW requests deletion**<br>
+  	Erlauben Sie das Löschen der Initialisierungsrequests der Exportdatenquellen im BW. 
 
+### Registerkarte Hierarchy
 
-**Hierarchy Settings**<br>
+Die Registerkarte Hierarchie besteht aus zwei Unterabschnitten:
+- Extraction
+- Natural Representation
 
-Falls Sie eine Hierachie-Datasource extrahieren, finden Sie im Tab "Hierarchy" die entsprechenden Einstellungen.
+![Deltaq-Präferenzen-Hierarchie](/img/content/Deltaq-Präferenzen-Hierarchie.png){:class="img-responsive"}
 
-![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
+#### Extraction
 
 **Language**<br>
-Legt die Sprache fest, falls eine Hierarchie extrahiert wird.
+Definiert die Sprache, wenn eine Hierarchie extrahiert wird.
 
 **Hierarchy Name**<br>
-Legt den Hierarchienamen fest.
+Definiert den Hierarchienamen.
 
 **Hierarchy Class**<br>
 Legt die Hierarchieklasse fest.
 
-
 **Representation**<br>
-
-ParentChild: Die Hierarchie hat das SAP Parent-Child Format.
+- **ParentChild**: Die Hierarchie hat das SAP-Eltern-Kind-Format.
 
 ![Deltaq-Hierarchies-Parent-Child](/img/content/Deltaq-Hierarchies-Parent-Child.png){:class="img-responsive"}
 
-- Natural: Die Parent-Child Beziehung wird in eine reguläre Hierarchie umgewandelt.
+Wenn **Representation** auf **Natural** eingestellt ist, ist auch der Abschnitt **Natural Representation** aktiviert.
+Die Eltern-Kind-Hierarchie wird dann in eine reguläre Hierarchie umgewandelt.
 
-**Level Count**<br>
-Legt die maximale Anzahl der Ebenen fest, falls die Repräsentation Natural gewählt ist. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen.
+#### Natural Representation
+
+**Level Count**
+Legt die maximale Anzahl der Ebenen fest, wenn die natürliche Darstellung ausgewählt ist. Im folgenden Screenshot sehen Sie die im vorherigen Screenshot gezeigte Hierarchie mit fünf Ebenen in der Darstellung *Natural*.
 
 ![Deltaq-Hierarchies-Parent-Child-Natural](/img/content/Deltaq-Hierarchies-Parent-Child-Natural.png){:class="img-responsive"}
 
-**Fill empty levels**<br>
-Falls die Repräsentation Natural gewählt ist, wird das unterste Element in der Hierarchie bis in die letzte Ebene kopiert. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen und der Option Repeat Leaves.
+**Fill empty levels** <br>
+Wenn die Darstellung *Natural* ausgewählt ist, wird das unterste Element der Hierarchie bis zur letzten Ebene kopiert. Im folgenden Screenshot sehen Sie die Hierarchie von oben mit aktivierter Option *Repeat Leaves*.
 
 ![Deltaq-Hierarchies-Parent-Child-Repeat](/img/content/Deltaq-Hierarchies-Parent-Child-Repeat.png){:class="img-responsive"}
 
-**Description texts for levels** <br>
-bedeutet, dass für jedes Level-Feld LevelN das Feld LevelTextN ausgegeben wird, welches den Stammdatentext in der jeweiligen Anmeldesprache enthält.
+**Description texts for levels**<br>
+Bedeutet, dass die Ausgabe für jedes Feld *LevelN* ein Feld *LevelTextN* hat, das den Text basierend auf den System-Spracheinstellungen enthält.
 
 **Leaves only**<br>
-liefert nur für die Blätter jeweils einen eigenen Datensatz. 
+Liefert nur die Seiten als Datensätze. 
