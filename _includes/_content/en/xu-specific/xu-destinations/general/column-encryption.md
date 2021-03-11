@@ -1,6 +1,6 @@
 #### General
 
-The "Column encryption" feature enables the user to encrypt columns in the extracted data set 
+The "Column Encryption" feature enables users to encrypt columns in the extracted data set 
 before uploading them to the destination.
 By encrypting the columns you can ensure the safety of sensitive information.
 You can store data in its encrypted form or decrypt it right away.
@@ -38,14 +38,14 @@ Included are the cryptographic aspect, which is open source and also the interfa
 
 The encryption is implemented as a hybrid cryptosystem. 
 This means that a randomized AES session key is created when starting the extraction. 
-The data is then encrypted via the [AES-GCM](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf) algorithm using the session key. <br>
+The data is then encrypted via the [AES-GCM](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf) algorithm with the session key. <br>
 The implementation uses the recommended length of 96 bits for the IV.
 To guarantee random access, each cell gets its own IV/nonce and Message Authentication Code (MAC).
 The MAC is the authenticity token in GCM providing a signature for the data.
-In the resulting (encrypted) data set, the encrypted cells are assembled like that:
+In the resulting encrypted data set, the encrypted cells are assembled like this:
 ```
     IV|ciphertext|MAC
 ```
-where the IV is encoded as 7-Bit integer.
+The IV is encoded as 7-Bit integer.
 The session key is then encrypted with the RSA public key provided by the user. 
-This encrypted session key is uploaded to the destination as a "metadata.json" file, including a list of the encrypted columns and some formatting information of the destination.
+This encrypted session key is uploaded to the destination as a "metadata.json" file, including a list of the encrypted columns and formatting information of the destination.

@@ -148,6 +148,7 @@ Bei einer erfolgreichen Verbindung wird das Info-Fenster "Connection to containe
 
 ![azure_blob_test-connection](/img/content/xu-azure-blob-con-09.png){:class="img-responsive"}
 Klicken Sie auf **[OK]** zum Bestätigen. <br>
+
 Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
 ### Misc (3)
@@ -157,7 +158,7 @@ Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
 **Folder path**<br>
 Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. 
-Siehe auch: [Einstellungen > Folder Path](./blob-einstellungen#folder-path).<br>
+Siehe auch: **Einstellungen > Folder Path**](./blob-einstellungen#folder-path).<br>
 Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein: `[Ordner]` <br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 
@@ -196,8 +197,7 @@ Sollte eine Ausnahme (Exception) ausgelöst werden, verfolgt Xtract Universal ei
 Das bedeutet, dass 7 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. 
 Sollte in diesem Zeitraum keine Verbindung zustande kommen, wird die Extraktion abgebrochen. 
 
-Die Rollback-Funktion deckt Szenarien ab, bei denen eine Extraktion fehlschlägt wenn ein Problem auftritt, das nicht mit der Verbindung zu Azure im Zusammenhang steht. 
-Ein Beispiel dafür ist eine Extraktion, die aufgrund eines Verbindungsfehlers zu SAP fehlschlägt.
+Die Rollback-Funktion deckt Szenarien ab, bei denen eine Extraktion nicht wegen eines Verbindungsfehlers zu Azure fehlschlägt, sondern z.B. wegen eines Verbindungsfehlers zu SAP.
 In solchen Fällen versucht Xtract Universal alle Dateien aus dem Azure-Speicher zu entfernen, die im Laufe der Extraktion erstellt wurden.
   
 
