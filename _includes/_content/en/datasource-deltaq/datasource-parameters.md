@@ -1,11 +1,14 @@
 ### Edit Parameters 
 
+{: .box-note } 
+**Note:** Parameters are not allowed with the **Delta Update** mode, since the parameters of the **Init** mode will be automatically applied.
+
 Parameters can have *single values*, *intervals* and *complex selections*. <br>
 ![Edit-Parameters](/img/content/Parameters_edit.png){:class="img-responsive"}
 
 Click on **[Edit]** (1) and open the editor to change the parameters. The window "Edit Range" opens.
 
-Set the values for **Sign** (2); **Option** (3), **Low Value** (4) and **High Value** (5), if needed.<br>
+Set the values for **Sign** (2), **Option** (3), **Low Value** (4) and if needed, for **High Value** (5).<br>
 ![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
 
 **Sign** (2) can get two values: *Include* or *Exclude*. This determines for every row whether the result of the condition is included or excluded in the entire resulting set for all rows.<br>
@@ -34,6 +37,3 @@ To *delete* a row, click the icon at the bottom left.
 ### Supported features
 
 Variables and [script expressions](../advanced-techniques/script-expressions) are supported too. 
-
-{: .box-note } 
-**Note:** Parameters are not allowed with the **Delta Update** mode, since the parameters of the **Init** mode will be automatically applied.

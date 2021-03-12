@@ -20,7 +20,7 @@ Parameters can have *single values*, *intervals* and *complex selections*. <br>
 
 Click on **[Edit]** (1) and open the editor to change the parameters. The window "Edit Range" opens.
 
-Set the values for **Sign** (2); **Option** (3), **Low Value** (4) and **High Value** (5), if needed.<br>
+Set the values for **Sign** (2), **Option** (3), **Low Value** (4) and if needed, for **High Value** (5).<br>
 ![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
 
 **Sign** (2) can get two values: *Include* or *Exclude*. This determines for every row whether the result of the condition is included or excluded in the entire resulting set for all rows.<br>
@@ -29,9 +29,8 @@ Set the values for **Sign** (2); **Option** (3), **Low Value** (4) and **High Va
 **High Value** (5) designates the upper interval limitation.
 
 {: .box-note }
-**Note:** The Low Value column must be filled for each operator.<br>
-The High Value column is only used by operators that expect a second parameter.<br>
-Add *@* right before the value to mark it as a variable. 
+**Note:** Add *@* right before the value to mark it as a variable.<br>
+ 
 
 |Operator|Description|
 |:---|:---|
