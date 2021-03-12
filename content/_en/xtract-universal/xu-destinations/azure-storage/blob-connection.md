@@ -32,8 +32,8 @@ The window "Destination Details" consists of two tabs:
 The tab *Azure Storage* consists of the following subsections:
 
 - Connection Type(1) in combination with
-	- Access key parameters
-	- Azure active directory parameters
+	- Access key
+	- Azure active directory
 - Container (2)
 - Misc (3)
 - Column Encryption (4)
@@ -131,7 +131,7 @@ This subsection is activated after a connection to the storage account was succe
 
 **Container** <br>
 
-When using Access Key authentication, choose a Blob container from the drop down menu.
+When using Access Key authentication, choose a Blob container from the drop-down menu.
 When using Azure Active Directory authentication, enter the name of the Blob container manually.
 
 **Test connection** <br>
@@ -163,7 +163,7 @@ This allows to dynamically set a folder path when executing an extraction. <br>
 {% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
 
 ### File Format 
-Select the required file format from the drop down menu. 
+Select the required file format from the drop-down menu. 
 The formats *Parquet* and *CSV* are available.
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
 The settings for *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).

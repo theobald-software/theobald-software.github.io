@@ -6,7 +6,7 @@ By encrypting the columns you can ensure the safety of sensitive information.
 You can store data in its encrypted form or decrypt it right away.
 
 The feature also supports random access, meaning that the data is decryptable at any starting point. 
-Since random access has a significant overhead, it is not recommended to use column encryption for encrypting the whole data set.
+Because random access has a significant overhead, it is not recommended to use column encryption for encrypting the whole data set.
 
 #### How to proceed
 

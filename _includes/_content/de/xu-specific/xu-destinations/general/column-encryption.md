@@ -34,7 +34,7 @@ Da wahlfreier Zugriff einen erheblichen Overhead verursacht, wird empfohlen die 
 
 Die Entschlüsselung ist abhängig von der Destination.
 Beispiele für eine Implementierung mit Azure Storage, AWS S3 und lokalen CVS Dateien finden Sie in [GitHub](https://github.com/theobald-software/xu-column-decryption).
-Die Beispiele beinhalten sowohl Kryptografie ald auch ein Interface, um "metadata.json" und CSV Daten zu lesen.
+Die Beispiele beinhalten sowohl Kryptografie als auch ein Interface, um "metadata.json" und CSV Daten zu lesen.
 Der kryptografische Aspekt ist Open Source, das Interface nicht.
 
 #### Technische Informationen
