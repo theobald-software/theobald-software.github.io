@@ -87,7 +87,7 @@ Run  | Ausgewählte Extraktion ausführen  |
 ### Auflistung der Extraktionen (3)
 Liste aller Extraktionen unterteilt nach Namen, Typ, Änderungs- und Erstellungsdatum usw.
 Sie können einen Filterwert für den Extraktionsnamen eingeben, Platzhalterzeichen werden nicht unterstützt. <br> 
-Umfangreichere Filteroptionen sind über die Schaltfläche [Filter](../fortgeschrittene-techniken/regulaere-ausdruecke) im Bereich [GUI-Schaltflächen (2)](./designer-overview#gui-schaltflächen-2) verfügbar. 
+Umfangreichere Filteroptionen sind über die Schaltfläche [Filter](../fortgeschrittene-techniken/regulaere-ausdruecke) im Bereich [GUI-Schaltflächen (2)](#gui-schaltflächen-2) verfügbar. 
 
 Ein Rechtsklick auf eine Extraktion in der Liste öffnet das folgende Menü:
 ![menu_list_of_extractions](/img/content/xu/menu_list_of_extractions.png){:class="img-responsive"}

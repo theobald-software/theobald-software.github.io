@@ -88,7 +88,7 @@ Run  | Run a selected extraction  |
 ### List of Extractions (3)
 List of all extractions divided by name, type, modification and creation date etc. <br>
 You can enter a filter value for the extraction name, wildcard characters are not supported. <br> 
-More extensive filter options are available via the [Filter](../advanced-techniques/regular-expressions) button in the [GUI Buttons (2)](./designer-overview#gui-buttons-2) section. 
+More extensive filter options are available via the [Filter](../advanced-techniques/regular-expressions) button in the [GUI Buttons (2)](#gui-buttons-2) section. 
 
 Right-clicking on an extraction in the list opens the following menu:
 
