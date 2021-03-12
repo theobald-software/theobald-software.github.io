@@ -154,6 +154,7 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 This field allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
 
+
 ### File Format 
 Select the required file format between "Parquet" and "CSV".
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
