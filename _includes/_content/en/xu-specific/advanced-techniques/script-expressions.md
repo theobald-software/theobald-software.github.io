@@ -79,7 +79,7 @@ This scenario supports:
 {: .box-note }
 **Note:** When using a WHERE Clause, the value must be entered in single quotation marks.<br>
 *Syntax:*```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
-*Example:*```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("d")}#'```
+*Example:*```BUDAT >= '#{DateTime.Now.AddYears(-5).ToString("yyyyMMdd")}#'```
 
 
 ### Using Script Expressions as Dynamic Folder Paths
