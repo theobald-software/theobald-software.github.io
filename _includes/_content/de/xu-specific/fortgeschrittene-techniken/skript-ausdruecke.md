@@ -2,7 +2,7 @@
 In Skript-Ausdrücken wird eine Formel in C# Syntax geschrieben:Die Formel muss mit einem Raute-Symbol (#) beginnen und enden und kann als eine dynamische WHERE-Bedingung verwendet werden.
 
 Die folgenden grundlegenden .NET Objekte werden standardmäßig unterstützt:
-- Operationen aus dem System-Namensraum
+- Operationen aus dem System-Namensraum z.B. [DateTime Struktur](https://docs.microsoft.com/de-DE/dotnet/api/system.datetime?view=net-5.0)
 - Verkettungen
 
 **Beispiele:** 
@@ -31,7 +31,7 @@ Skript-Ausdrücke können an foldenen Stellen in Xtract Universal verwendet werd
 {: .box-note }
 **Hinweis:** Die Werte bei der Verwendung einer WHERE-Bedingung sind stets in einfachen Anführungsstrichen anzugeben.<br>
 *Syntax:*```[field_name][Leerzeichen][Operator][Leerzeichen]'#[Skript-Ausdruck]#'```<br>
-*Beispiel:*```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("d")}#'```
+*Beispiel:*```BUDAT >= '#{DateTime.Now.AddYears(-5).ToString("yyyMMdd")}#'```
 
 
 ### Definierte Eigenschaften
