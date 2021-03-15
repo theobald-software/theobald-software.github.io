@@ -1,62 +1,57 @@
 ### About Script Expressions
 
-Script expressions offer a way of adding dynamic parameters to Xtract Universal. They can be used instead of entering a hard coded value. Script expressions are resolved at extraction runtime.
-The output of a script expression is a string. This string can be used as input for further .NET string operations (see below)
+Script expressions offer a way of adding dynamic parameters to Xtract Universal. 
+They can be used instead of entering a hard coded value. 
+Script expressions are resolved at extraction runtime.
+The output of a script expression is a string. 
+This string can be used as input for further .NET string operations (see below)
 
 Script expressions can be used in the following scenarios:
-- as dynamic selection parameters for extractions
-- as dynamic folder paths in destinations where a flat file is written
-- as parameters in database destinations
-
-There are two types of script expressions in Xtract Universal:
-1. XU-specific custom script expressions 
-2. Script expressions which are based on .NET classes
+- [Script Expressions as Selection Parameters for Extractions](#using-script-expressions-as-selection-parameters-for-extractions)
+- [Script Expressions as Dynamic Folder Paths](#using-script-expressions-as-dynamic-folder-paths)
+- [Script Expressions in Database Destinations](#using-script-expressions-in-database-destinations)
 
 
 ### Syntax of Script Expressions
-In script expressions, a formula is written in C# syntax: The formula must begin and end with a hash symbol (#). The formula starts with and ends with curly brackets ({}).
-Example: ```#{ Extraction.TableName }# ```
+Script expressions use the C# syntax. They must begin and end with a hash symbol (#). The formula starts and ends with curly brackets ({}).
+Example: <br>
+```#{ Extraction.TableName }# ```
 
 {: .box-note }
 **Note:** XU-specific custom expressions are case sensitive. The exact syntax as documented on this page has to be used.
 
-
-
 ### Script Expressions based on .NET 
-Xtract Universal script expressions support the following .NET objects, properties and methods from the .NET System Namespace of Xtract Universal's current [.NET framework](https://help.theobald-software.com/en/xtract-universal/introduction/requirements#other-applications-and-frameworks).
+Xtract Universal script expressions support the following .NET objects, properties and methods from the .NET System Namespace of Xtract Universal's current [.NET framework](https://help.theobald-software.com/en/xtract-universal/introduction/requirements#other-applications-and-frameworks):
 
-```Object```,
-```Boolean```,
-```Char```,
-```String```,
-```SByte```,
-```Byte```,
-```Int16```,
-```UInt16```,
-```Int32```,
-```UInt32```,
-```Int64```,
-```UInt64```,
-```Single```,
-```Double```,
-```Decimal```,
-```DateTime```,
-```TimeSpan```,
-```Guid```,
-```Math```,
-```Convert```
+*Object*,
+*Boolean*,
+*Char*,
+*String*,
+*SByte*,
+*Byte*,
+*Int16*,
+*UInt16*,
+*Int32*,
+*UInt32*,
+*Int64*,
+*UInt64*,
+*Single*,
+*Double*,
+*Decimal*,
+*DateTime*,
+*TimeSpan*,
+*Guid*,
+*Math*,
+*Convert*
 
 
 {: .box-note }
-**Note:** The most common usage scenario is using the methods and properties of the .NET ```DateTime``` and ```String``` classes. For further information of supported [.NET classes and their properties and methods](https://docs.microsoft.com/en-us/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) including [DateTime](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) and [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2) see the Microsoft online documentation.
+**Note:** The most common usage scenario is using the methods and properties of the .NET *DateTime* and *String* classes. For further information of supported [.NET classes and their properties and methods](https://docs.microsoft.com/en-us/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) including [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-5.0) and [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2) see the Microsoft online documentation.
 
 **Examples:**
 
 |   Input                         | Output                                                                         | Description              |
 |:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|
-|```#{ DateTime.Now}#```                                                             | DD.MM.YYYY HH:MM:SS | Current date and timestamp |
-|```#{ DateTime.Now.AddDays(-5).ToString("d") }#```                                  | DD.MM.YYYY | Date 5 days ago. If today's date is 10th, then 05th is the output.         |
-|```#{ DateTime.Now.ToShortDateString() }#```                                        | DD.MM.YYYY | Current date         |
 |```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | yyyyMMdd | Current date in SAP format          |
 |```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | yyyy0101 | Current year concatenated with "0101"           |
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
@@ -66,12 +61,11 @@ Xtract Universal script expressions support the following .NET objects, properti
 
 
 
-
-
-
 ### Using Script Expressions as Selection Parameters for Extractions
 
-Script expressions can be used as selection parameters in Table or DeltaQ extractions. They are usually used to determine a dynamic date based on the current date. With Table extractions they are used as part of the [WHERE Clause](../table/where-clause).
+Script expressions can be used as selection parameters in Table or DeltaQ extractions. 
+They are usually used to determine a dynamic date based on the current date. 
+With Table extractions they are used as part of the [WHERE Clause](../table/where-clause).
 
 This scenario supports:
 - Script expressions based on .NET
@@ -87,7 +81,8 @@ This scenario supports:
 {: .box-note }
 **Note:** This is currently only supported for the [Azure Storage destination](https://help.theobald-software.com/en/xtract-universal/xu-destinations/azure-storage).
 
-In this scenario, script expressions are used for generating a dynamic folder path for destinations that write a flat file. This allows generating a folder path which is composed of an extraction's properties like extraction name, SAP source object, etc.
+In this scenario, script expressions are used to generate a dynamic folder path for destinations that write flat files. 
+This allows generating folder paths that are composed of an extraction's properties, e.g. extraction name, SAP source object.
 
 
 This scenario supports:
@@ -110,11 +105,11 @@ The following XU-specific custom script expressions are supported:
 
 | Input                                                   | Output   | Description|
 |:--------------------------------------------------------|:---------|:-------|
-|```#{Source.Name}#/#{Extraction.SapObjectName}#/#{Extraction.ExtractionName}#/#{Extraction.Timestamp}# ```| ```ECC/2LIS_02_ITM/MyDataSource1/2021-01-30_20-27-19.686/[filename]```   | If the SAP Source is called *ECC* and the extracted object is SAP DataSource *2LIS_02_ITM* and the extraction name is *MyDataSource1*, the generated file path could look like illustrated in the *Output* column.
+|```#{Source.Name}#/#{Extraction.SapObjectName}#/#{Extraction.ExtractionName}#/#{Extraction.Timestamp}# ```| ```ECC/2LIS_02_ITM/MyDataSource1/2021-01-30_20-27-19.686/[filename]```   | If the SAP Source is called *ECC* and the extracted object is SAP DataSource *2LIS_02_ITM* and the extraction name is *MyDataSource1*, the generated file path could look like the one in the *Output* column.
 
 ### Using Script Expressions in Database Destinations
 
-In this scenario script expressions are used as part of a Custom-SQL statement (see example [here](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql)).
+In this scenario script expressions are used as part of a Custom-SQL statement (see [example](../xu-destinations/microsoft-sql-server/sql-server-custom-sql)).
 
 This scenario supports:
 - Script expressions based on .NET
@@ -146,12 +141,8 @@ An IF-statement (ternary operator) is supported and has the following syntax: ``
 
 | Input                                                   | Output   | Description|
 |:--------------------------------------------------------|:---------|:-------|
-|```#{ iif(DateTime.Now.Month==7, "July","Unknown")}# ```| July     | When we are in the 7th month, the output is "July", all else is "Unknown". |
+|```#{ iif(DateTime.Now.Month==7, "July","Unknown")}# ```| July     | In month 7 the output is "July", all else is "Unknown". |
 |```#{Extraction.ExtractionName}##{ iif(string.IsNullOrEmpty(Extraction.Context), string.Empty, "/" + Extraction.Context)}#```|| *Extraction.Context* returns a result only with ODP extractions. With all other extraction types the result is empty. If the extraction name is 'SAP_1' and the extraction type is 'Table', the resulting file path would be ```SAP_1/[filename]```. If the extraction name is 'SAP_2' and the extraction type is 'ODP' and a SAP DataSource (extraction context: SAPI) is being extracted, the resulting file path would be ```SAP_2/SAPI/[filename]```. 
-
-
-
-
 
 
 ### Supported Key Words
@@ -160,7 +151,3 @@ Following key words are supported:
 - true
 - false
 - null
-
-
-
-
