@@ -5,6 +5,7 @@ title: Skript-Ausdrücke
 description: Skript-Ausdrücke
 product: xtract-universal
 parent: fortgeschrittene-techniken
+progressstate: 5
 permalink: /:collection/:path
 weight: 10
 lang: de_DE
