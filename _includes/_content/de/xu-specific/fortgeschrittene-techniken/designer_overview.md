@@ -98,8 +98,8 @@ Edit | Vorhandene Extraktion bearbeiten | -
 Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
 Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/log-zugriff-ueber-designer#extraktions-logs)
-Source | Vorhandenes SAP Quellsystem auswählen | -
-Destination (nur Xtract Universal) | Destination auswählen | [Destinationen](https://help.theobald-software.com/de/xtract-universal/xu-destinationen)
+Source settings | Vorhandenes SAP Quellsystem auswählen | -
+Destination settings (nur Xtract Universal) | Destination auswählen | [Destinationen](https://help.theobald-software.com/de/xtract-universal/xu-destinationen)
 Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
 Run in browser | Ausgewählte Extraktion im Standard Webbrowser ausführen | - 
 Run in xu.exe | Ausgewählte Extraktion im Kommandozeilen-Tool xu.exe ausführen | - 
@@ -111,7 +111,7 @@ Statusleiste beinhaltet Informationen zu Authentifizierungsmethode, zum verbunde
 
 *****
 ### Weiterführende Links
-- [Sever Einstellungen](../server)
+- [Server Einstellungen](../server)
 
 
 

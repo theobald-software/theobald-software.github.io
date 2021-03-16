@@ -32,14 +32,15 @@ Andernfalls wird die Datenquelle *Xtract Universal* in Power BI nicht angezeigt.
 2. Klicken Sie auf die Schaltfläche *Connect*.
 3. Geben Sie die URL des Xtract Universal-Webservers an.
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.png){:class="img-responsive"}
-
-Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden auszuwählen: *Anonymous*, *Basic* or *Windows*, befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](./pbi-SSO).
-
-Im Fenster Navigator werden alle *Power BI Connector*- Extraktionen von Xtract Universal aufgelistet. 
-
-5. Wählen Sie eine Extraktion aus der Liste. <br>
+	Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden auszuwählen: *Anonymous*, *Basic* or *Windows*, befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](./pbi-SSO).
+	Im Fenster Navigator werden alle *Power BI Connector*- Extraktionen von Xtract Universal aufgelistet. 
+4. Wählen Sie eine Extraktion aus der Liste. <br>
 Die Vorschau zeigt die SAP-Spaltenkofbezeichnungen und  Vorschaudaten abhängig vom Extraktionstyp, z.B. Echt-Daten oder Dummy-Daten.
-
-6. Klicken Sie auf die Schaltfläche *Load*. <br>
+5. Klicken Sie auf die Schaltfläche *Load*. <br>
 Dies stößt eine Extraktion in Xtract Universal an und die Daten werden in Power BI geladen .
 
+![powerbi-navigator](/img/content/XU_pbi_connector_navigator.png){:class="img-responsive"}
+
+****
+### Weiterführende Links
+- [Youtube Tutorial: SAP Power BI Schnittstelle in Xtract Universal](https://www.youtube.com/watch?v=1jqw755yqP4){:target="_blank"}

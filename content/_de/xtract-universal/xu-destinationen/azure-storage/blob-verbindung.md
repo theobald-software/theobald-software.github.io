@@ -27,7 +27,7 @@ Das Fenster "Destination Details" besteht aus zwei Tabs:
 
 ### Azure Storage Parameter
 
-![xu-azure-blob-con-01](/img/content/xu-azure-blob-con-01_.png){:class="img-responsive"}
+![xu-azure-blob-con-01](/img/content/xu/xu-azure-blob-con-01.png){:class="img-responsive"}
 
 Der Tab *Azure Storage Settings* besteht aus folgenden Unterabschnitten:
 
@@ -89,7 +89,7 @@ Bevor Sie die Authentifizierung über Azure AD verwenden, führen Sie die folgen
 3. Fügen Sie der registrierten Anwendung *API-Berechtigungen* hinzu, um den Zugriff auf die Azure Storage-Web-API zu gewähren.<br> 
 Die folgenden Berechtigungen sind erforderlich: <br> 
 *Azure Storage - Delegated permissions - user impersonation*, <br> 
-*Microsot Graph - User.Read*. <br> 
+*Microsoft Graph - User.Read*. <br> 
 Folgen Sie hierfür den Schritten aus der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#grant-your-registered-app-permissions-to-azure-storage).
 4. Weisen Sie [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient) als Standard-Redirect-URI zu (1). 
 Dies kann in der Azure AD-App-Registrierung über **Manage > Authentication > Add a platform > Mobile and desktop applications** erfolgen. 

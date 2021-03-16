@@ -76,7 +76,7 @@ Dieses Szenario unterstützt:
 ### Skript-Ausdrücke als dynamische Ordnerpfade verwenden
 
 {: .box-note }
-**Hinweis:** Dies wird derzeit nur für die Destination [Azure Storage](../xu-destinationen/azure-storage) unterstützt.
+**Hinweis:** Dies wird derzeit nur für die Destination [Azure Storage](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/azure-storage) unterstützt.
 
 In diesem Szenario werden Skript-Ausdrücke zur Generierung eines dynamischen Ordnerpfads für Destinationen verwendet, die flachen Dateien (Flat Files) schreiben. 
 Dadurch kann ein Ordnerpfad generiert werden, der sich aus den Eigenschaften einer Extraktion zusammensetzt, z.B. Extraktionsname, SAP-Quellobjekt.
@@ -105,7 +105,7 @@ Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unter
 
 ### Skript-Ausdrücke in Datenbank-Destinationen verwenden
 
-In diesem Szenario werden Skript-Ausdrücke als Teil einer benutzerdefinierten SQL-Anweisung verwendet (siehe [Beispiel](../xu-destinationen/microsoft-sql-server/sql-server-custom-sql)).
+In diesem Szenario werden Skript-Ausdrücke als Teil einer benutzerdefinierten SQL-Anweisung verwendet (siehe [Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql)).
 
 Dieses Szenario unterstützt:
 - Skript-Ausdrücke, die auf .NET basieren
