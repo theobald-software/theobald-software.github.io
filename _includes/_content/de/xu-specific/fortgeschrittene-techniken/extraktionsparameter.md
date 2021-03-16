@@ -41,14 +41,16 @@ logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Tick
 **Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket"
  als Authentifizierungsmethode in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) ausgewählt ist.
 
-#### "Source" Parameter verändern
-1. Wählen Sie eine Extraktion aus.
-2. Klicken Sie auf **[Run]**. Das Fenster "Run Extraction" wird geöffnet. 
-3. Aktivieren Sie im Tab  *Source* die Checkbox des zu ändernden Parameters.
-4. Ändern Sie den Parameter.
-![Run-Extraction-Connection-Parameters](/img/content/Run-Extraction-Connection-Parameters.png){:class="img-responsive"}
+![Run-Extraction-Connection-Parameters](/img/content/xu/xu_run_extraction_source_param.png){:class="img-responsive"}
 
-**Beispiel:** Das Überschreiben der Verbindungssprache zu DE generiert die Extraktions-URL: `http://localhost:8085/?name=plants&lang=DE`
+#### Beispiel
+1. Wählen Sie eine Checkbox aus, um einen Parameter zu überschreiben.
+2. Tragen Sie den neuen Wert ein und bestätigen Sie ihn über die Eingabetaste.
+- Extraktions-URL vor der Parameteränderung<br>
+`http://localhost:8065?name=Plants`
+- Extraktions-URL nach der Parameteränderung in **lang**:<br>
+`http://localhost:8085/?name=Plants&lang=DE` 
+
 
 ### Custom
 
@@ -59,3 +61,10 @@ Aktivieren Sie die Checkbox und geben Sie einen neuen Wert ein, um den Parameter
  
 ![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
 
+#### Beispiel
+1. Wählen Sie eine Checkbox aus, um einen Parameter zu überschreiben.
+2. Tragen Sie den neuen Wert ein und bestätigen Sie ihn über die Eingabetaste.
+- Extraktions-URL vor der Parameteränderung<br>
+`http://localhost:8065?name=Plants`
+- Extraktions-URL nach der Parameteränderung in **myParameter**:<br>
+`http://localhost:8085/?name=Plants&myParameter=EN` 

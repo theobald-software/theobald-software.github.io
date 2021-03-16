@@ -42,15 +42,16 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 {: .box-note }
 **Note:** The parameter **logonTicket** can only be set if SAP logon ticket is selected as the authentication method in [SAP source details](../introduction/sap-connection).
 
-
-#### Adjusting Source Parameters
-1. Select an extraction.
-2. Click **[Run]**. The "Run Extraction" window opens. 
-3. Select the tab *Source* and check the checkbox of the parameter you want to change.
-4. Adjust the parameter.
 ![Run-Extraction-Connection-Parameters](/img/content/xu/xu_run_extraction_source_param.png){:class="img-responsive"}
 
-**Example:** Overwriting the connection language to EN generates the following extraction URL: `http://localhost:8065/?name=Plants&lang=EN`
+#### Example
+1. Select the checkbox of the parameter you want to override.
+2. Enter the value and confirm by pressing enter. 
+- Extraction URL before changing the parameter:<br>
+`http://localhost:8065?name=Plants`
+- Extraction URL after editing the parameter **lang**:<br>
+`http://localhost:8065/?name=Plants&lang=DE` 
+
 
 ### Custom
 
@@ -58,5 +59,13 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 **Note:** The tab *Custom* is only active when a [User-Defined Variable](./user-defined-variables) was created. 
 
 Check the checkbox and enter a new value to set the user defined parameter.
- 
+
 ![Custom parameters](/img/content/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
+
+#### Example
+1. Select the checkbox of the parameter you want to override.
+2. Enter the value and confirm by pressing enter. 
+- Extraction URL before changing the parameter:<br>
+`http://localhost:8065?name=Plants`
+- Extraction URL after editing the parameter **myParameter**:<br>
+`http://localhost:8085/?name=Plants&myParameter=EN`  

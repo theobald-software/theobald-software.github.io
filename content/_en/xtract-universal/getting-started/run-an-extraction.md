@@ -50,7 +50,7 @@ When you change these parameters, the *extraction URL and command-line (3)* also
 #### Example
 1. Select the checkbox of the parameter you want to override.
 2. Enter the value and confirm by pressing enter. 
-- Extraction URL before changing a parameter:<br>
+- Extraction URL before changing the parameter:<br>
 `http://localhost:8065?name=Plants`
 - Extraction URL after editing the parameter **rows**:<br>
 `http://localhost:8065?name=Plants&rows=100` 

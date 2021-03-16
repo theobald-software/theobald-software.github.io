@@ -40,7 +40,7 @@ Source | Information über die Quelleigenschaften (Name, Host, Client, Benutzern
 Destination | Name of der Destination (Name, Typ, Pull Destination)|
 Execution start | Zeitstempel für den Beginn der Extraction |
 Time elapsed | Vergangene Zeit seit Beginn der Extraktion |
-Rows extracted| Number of extracted rows |
+Rows extracted| Anzahl extrahierter Zeilen |
 Status | Status der Extraktion |
 Duration |Dauer der Extraktion |
 
