@@ -12,8 +12,11 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=systemvoraussetzungen
 Progressstate: 5
 ---
 
-{% include _content/de/einfuehrung/sap-anforderungen-xtract.md %} 
-{% include _content/de/einfuehrung/betriebssysteme.md %} 
+{% include _content/de/einfuehrung/sap-systeme.md %} 
+{% include _content/de/einfuehrung/sap-installation.md %} 
+{% include _content/de/einfuehrung/sap-authentication-xtract.md %}
+{% include _content/de/einfuehrung/sap-misc.md %}
+{% include _content/de/einfuehrung/operating-systems.md %}
 {% include _content/de/einfuehrung/xu-req-verschiedenes.md %}
 
 ### Destinationen

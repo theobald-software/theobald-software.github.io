@@ -1,6 +1,4 @@
-
 ### Installation und Konfiguration auf SAP
-<br/>
 
 | Komponente  | SAP Release       | Anforderung an das SAP System                                                                         |
 |------------|:------------------|--------------------------------------------------------------------------------------------------------|

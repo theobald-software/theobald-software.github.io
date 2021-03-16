@@ -1,4 +1,3 @@
-
 ### Unterstützte SAP Systeme und Releases
 Die gesamte Kommunikation mit SAP wird über das RFC-Protokoll abgewickelt. Es werden alle SAP-ABAP-basierten Systeme unterstützt, die eine RFC-Konnektivität bieten.
 Die Integration erfolgt auf der Ebene des SAP-Applikationsservers. Daher ist es unerheblich, welche Datenbank das SAP-System verwendet.
