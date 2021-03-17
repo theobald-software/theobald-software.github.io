@@ -1,8 +1,8 @@
 ---
 ref: ecscore-nintex-workflow-cloud-nwc-05
 layout: page
-title: NWC Workflow konfigurieren
-description: NWC Workflow konfigurieren
+title: Nintex Workflow Cloud Workflow konfigurieren
+description: Nintex Workflow Cloud Workflow konfigurieren
 product: ecs-core
 parent: nintex_workflow_cloud
 permalink: /:collection/:path
@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=nwc_workflow_konfigurieren
 ---
 
-Erstellen Sie einen neuen NWC Workflow. Der neu erstellte Konnektor beindet sich auf der linken Seite in der Toolbox zwischen den Standard-Konnektoren. Die Reihenfolge der Toolbox-Actions können Sie in NWC Einstellungen unter *Action and connector sorting* ändern.
+Erstellen Sie einen neuen Nintex Workflow Cloud Workflow. Der neu erstellte Konnektor beindet sich auf der linken Seite in der Toolbox zwischen den Standard-Konnektoren. Die Reihenfolge der Toolbox-Actions können Sie in Nintex Workflow Cloud Einstellungen unter *Action and connector sorting* ändern.
 
 *PurchaseRequisiton* lautet der Name der Webservice Operation, die zuvor im [WebService Designer](../../webservices) erstellt wurde. Optional: Die zusätzlich angezeigten Actions im Konnektor sind generische Services, die hinzugeneriert werden, falls in den OpenAPI Einstellungen des WebService Designers die Option *Add default actions* to the definition angehakt wird.  
 

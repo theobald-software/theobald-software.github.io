@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=verbindung_anlegen
 ---
 
-Nach erfolgreichem Importieren der OpenAPI Definition und Veröffentlichung des benutzerdefinierten Konnektors können Sie eine neue Verbindung in der NWC anlegen. Diese Verbindung zeigt auf die in ECS Core angelegten SAP Services und ermöglicht die Verbindung zum SAP System.    
+Nach erfolgreichem Importieren der OpenAPI Definition und Veröffentlichung des benutzerdefinierten Konnektors können Sie eine neue Verbindung in der Nintex Workflow Cloud anlegen. Diese Verbindung zeigt auf die in ECS Core angelegten SAP Services und ermöglicht die Verbindung zum SAP System.    
 
 Das vorliegende Beispiel ist erläutert mit einem API Key als Authentifizierungsmethode. Bitte verwenden Sie die Einstellungen für Authentifizierung per API Key im Connection Dialog des Webservice Designers. API Key wird dann automatisch auch als Authentifizierungsmethode vorgeschlagen, wenn Sie eine neue Verbindung anlegen.  
 
@@ -26,4 +26,4 @@ Beispiel: APIKEY QjGCMTMxMjE0MTA3NDhCMUE5MUNZTzAyQjBDRTg1OUP= (vgl. Verbindungse
 
 ![ecscore-nwc_9](/img/content/ecscore-nwc_9.png){:class="img-responsive"}
 
-Die Verbindung kann anschließend in einem NWC Workflow genutzt werden. 
+Die Verbindung kann anschließend in einem Nintex Workflow Cloud Workflow genutzt werden.

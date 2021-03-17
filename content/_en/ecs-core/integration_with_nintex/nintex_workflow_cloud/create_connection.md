@@ -10,7 +10,7 @@ weight: 4
 lang: en_GB
 ---
 
-After successfully importing the OpenAPI definition and publishing the custom connector, you can create a new connection in the NWC. This connection points to the SAP services created in ECS Core and enables the connection to the SAP system.    
+After successfully importing the OpenAPI definition and publishing the custom connector, you can create a new connection in the Nintex Workflow Cloud. This connection points to the SAP services created in ECS Core and enables the connection to the SAP system.    
 
 This example is explained using an API key as the authentication method. Please use the settings for authentication using an API key in the Connection dialog of the Web Service Designer. The API Key is then automatically proposed as the authentication method when you create a new connection.  
 
@@ -25,4 +25,4 @@ Example: APIKEY QjGCMTMxMjE0MTA3NDhCMUE5MUNZTzAyQjBDRTg1OUP= (see Connection Set
 
 {ecscore-nwc_9](/img/content/ecscore-nwc_9.png){:class="img-responsive"}
 
-The connection can then be used in an NWC workflow.
+The connection can then be used in an Nintex Workflow Cloud workflow.

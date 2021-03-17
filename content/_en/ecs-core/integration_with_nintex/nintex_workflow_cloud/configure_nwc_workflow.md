@@ -1,8 +1,8 @@
 ---
-ref: ecscore-nintex-workflow-cloud-nwc-05
+ref: ecscore-nintex-workflow-cloud-Nintex Workflow Cloud-05
 layout: page
-title: Configure NWC Workflow
-description: Configure NWC Workflow
+title: Configure Nintex Workflow Cloud Workflow
+description: Configure Nintex Workflow Cloud Workflow
 product: ecs-core
 parent: nintex_workflow_cloud
 permalink: /:collection/:path
@@ -10,7 +10,7 @@ weight: 5
 lang: en_GB
 ---
 
-Create a new NWC workflow. The newly created connector is located on the left side in the toolbox between the standard connectors. You can change the order of the Toolbox actions in the NWC settings under *Action and connector sorting*.
+Create a new Nintex Workflow Cloud workflow. The newly created connector is located on the left side in the toolbox between the standard connectors. You can change the order of the Toolbox actions in the Nintex Workflow Cloud settings under *Action and connector sorting*.
 
 The name of the Web service operation that was previously created in [WebService Designer](../../webservices) is *PurchaseRequisiton*. Optional: The additional actions displayed in the connector are generic services that are generated if the option *Add default actions* to the definition is checked in the WebService Designer's OpenAPI settings.  
 
