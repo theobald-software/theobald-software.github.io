@@ -35,11 +35,11 @@ The version of the SQL Server Database used in SSIS to read or write data can di
 
 ### Hardware
 
-### Memory 	
+#### Memory 	
 - Minimum 4 GB.<br> Depending on data volume, more memory may be required.
 
-### Disk space 	
+#### Disk space 	
 - 50 MB total for installation
 
-### 32/64-Bit Environment 	
+#### 32/64-Bit Environment 	
 - 32-Bit and 64-Bit operating systems

@@ -25,6 +25,8 @@ lang: de_DE
 | ODP | 	SAP_BASIS >= 730, BW >= 7,3X |	Keine spezifischen Anforderungen. |
 | Table      | Rel. above 4.6C    | Installation eines Funktionsbausteins ist empfohlen.| 
 
+Weitere Informationen bzgl. der Installation von benutzerdefinierten Funktionsbausteinen finden Sie unter [SAP customizing](../sap-customizing).
+
 {% include _content/de/einfuehrung/sap-authentication-xtract.md %}
 {% include _content/de/einfuehrung/sap-misc.md %}
 {% include _content/de/einfuehrung/operating-systems.md %}

@@ -10,7 +10,7 @@ weight: 1
 lang: de_DE
 progressstate: 5
 ---
-### SQL Server
+### Unterstützte Versionen der SQL Server Integration Services (SSIS)
  	
 - SQL Server Integration Services (SSIS) 2012 SP4 (bis 12.07.2022)
 - SQL Server Integration Services (SSIS) 2014 SP3 (bis 09.07.2024)
@@ -34,15 +34,15 @@ Die Version der SQL Server-Datenbank, die in SSIS zum Lesen oder Schreiben von D
 
 ### Hardware
 
-### Arbeitsspeicher
+#### Arbeitsspeicher
  	
-- 4 GB minimum. Abhängig vom Datenvolumen kann auch mehr Arbeitsspeicher benötigt werden.
+- 4 GB minimum. Abhängig vom Datenvolumen kann mehr Arbeitsspeicher benötigt werden.
 
-### Festplattenspeicher
+#### Festplattenspeicher
  	
 - Für die Installation werden 50 MB Festplattenspeicher benötigt
 
-### 32/64-Bit Umgebung
+#### 32/64-Bit Umgebung
  	
 - 32-Bit und 64-Bit Betriebssysteme
 

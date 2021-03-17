@@ -25,7 +25,7 @@ lang: en_GB
 |ODP                   | SAP_BASIS >= 730, BW >= 7,3X   | No special requirements.                                                             |
 |Table                 | Rel. above 4.6C       | Installation of a Z-module is advisable.                   |
 
-For Information about the installation of the custom function modules and the SAP customizing, check the section [SAP customizing](../sap-customizing).
+For Information about the installation of the custom function modules and the SAP customizing, see section [SAP customizing](../sap-customizing).
 
 {% include _content/en/requirements/sap-authentication-xtract.md %}
 {% include _content/en/requirements/sap-misc.md %}

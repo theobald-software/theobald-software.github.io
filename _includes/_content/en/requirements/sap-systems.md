@@ -1,6 +1,9 @@
 ### Supported SAP Systems and releases
-All communication with SAP is performed via the RFC protocol. All SAP ABAP based systems that provide RFC connectivity are supported.
-The integration occurs at SAP application server level. Therefore, the database used by the SAP system is irrelevant. SAP ABAP Systems on any database (including HANA) are supported. This means that the operating system of the SAP system is irrelevant - all operating systems are supported.
+All communication with SAP is performed via the RFC protocol. 
+All SAP ABAP based systems that provide RFC connectivity are supported.
+The integration occurs at SAP application server level. Therefore, the database used by the SAP system is irrelevant. 
+SAP ABAP Systems on any database (including HANA) are supported. 
+This means that the operating system of the SAP system is irrelevant - all operating systems are supported.
 SAP Systems running on Big Endian and Little Endian hardware are supported.
 
 SAP Releases 4.6C and newer are supported. Including the following:
@@ -18,7 +21,9 @@ SAP Releases 4.6C and newer are supported. Including the following:
 
 
 ### HANA Database
-You can use Operational Data Provisioning (ODP) to connect the SAP HANA database of an SAP ABAP source system. Communication is performed using RFC. With the ODP context for SAP HANA (HANA) the following HANA views types are available  for extracting:
+You can use Operational Data Provisioning (ODP) to connect the SAP HANA database of an SAP ABAP source system. 
+Communication is done via RFC. 
+With the ODP context for SAP HANA (HANA) the following HANA View types are available for extracting:
 - Analysis Views
 - Calculation Views
 - Associated Attribute Views

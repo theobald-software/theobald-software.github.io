@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-02
+ref: bc-introduction-01
 layout: page
 title: Requirements
 description: Requirements
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: en_GB
 Progressstate: 5
 ---
