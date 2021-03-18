@@ -25,7 +25,7 @@ The SAP connection is set up successfully.
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server
 	- **Host**:  host name or IP address of the application server (Property Host) 
-	- **System No**: a two-digit number between 00 und 99 (Property SystemNumber)
+	- **Instance No**: a two-digit number between 00 und 99 (Property SystemNumber)
 
 - Use a Load Balancing Server (message server)
 	- **Message Server**: name or IP address of the message server (Property MessageServer) 

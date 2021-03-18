@@ -24,7 +24,7 @@ Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 
 1. Use Single Application Server (Verwendung eines Single Application Servers)
 - **Host**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
-- **System No**: Systemnummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
+- **Instance No**: Instanznummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
 
 2. Use Load Balancing Server (message server) (Verwendung eines Load-Balancing / Message-Servers)
 - **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
