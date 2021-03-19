@@ -21,6 +21,7 @@ Beispielsweise benötigt die BW-Cube-Komponente für die Extraktion und Verarbei
 
 #### Festplattenspeicher
 Für die Installation werden 150 MB Festplattenspeicher benötigt.
+Bei manchen Destinationen kann zusätzlicher Speicherplatz benötigt werden.
 
 #### 64-Bit-Umgebung	
 Das Produkt kann nur auf 64-Bit-Betriebssystemen installiert werden.

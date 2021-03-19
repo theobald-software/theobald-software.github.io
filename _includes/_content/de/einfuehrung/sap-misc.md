@@ -1,4 +1,3 @@
-
 ### Ports
 Folgende Ports müssen abhängig vom SAP-System offen sein. *nn* ist die Instanznummer des SAP Systems (z.B. 00 oder 99).
 

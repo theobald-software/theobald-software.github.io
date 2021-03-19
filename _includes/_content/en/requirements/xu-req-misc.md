@@ -12,10 +12,8 @@
 - Minimum: processor: 1.4 GHz, recommended: 2.0 GHz or faster.
 
 #### Main Memory
-- Minimum: 8 GB, recommended: 12 GB for up two parallel extractions.<br>
-4 GB dedicated memory in average for each additional parallel extraction.
-
-Check the exact storage requirements of an extraction in your scenario.
+- Minimum: 8 GB, recommended: 12 GB for up to two parallel extractions.<br>
+4 GB dedicated memory in average for each additional parallel extraction. Check the exact storage requirements of an extraction in your scenario.
 <!---Memory consumption depends on many factors including component type (i.e. Table, Extractor or BW Query), number of columns and number of rows in each data package (i.e. package size). <br> 
 E.g. the BW Cube component needs for extracting and processing data more main memory space than the Table component for the same data amount. ---->
 

@@ -11,8 +11,10 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=requirements
 Progressstate: 5
 ---
-
-{% include _content/en/requirements/sap-requirements-xtract.md %}
+{% include _content/en/requirements/sap-systems.md %}
+{% include _content/en/requirements/sap-installation.md %}
+{% include _content/en/requirements/sap-authentication-xtract.md %}
+{% include _content/en/requirements/sap-misc.md %}
 {% include _content/en/requirements/operating-systems.md %}
 {% include _content/en/requirements/xu-req-misc.md %}
 

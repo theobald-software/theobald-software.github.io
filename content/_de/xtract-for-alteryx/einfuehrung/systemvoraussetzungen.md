@@ -9,31 +9,25 @@ permalink: /:collection/:path
 weight: 1
 lang: de_DE
 ---
-
-## Alteryx
+### Alteryx
  	
-Alteryx Designer und Server ab Version 2018 oder höher.
+- Alteryx Designer und Server ab Version 2018 oder höher.
 
-{% include _content/de/voraussetzungen/sap-requirements-xtract.md %}
-{% include _content/de/voraussetzungen/operating-systems.md %}
+{% include _content/de/einfuehrung/sap-systeme.md %} 
 
-### 64-Bit-Umgebung	
+### Installation und Konfiguration auf SAP
 
-Das Produkt kann nur auf 64-Bit-Betriebssystemen installiert werden.
+| Komponente  | SAP Release       | Anforderung an das SAP System                                                                         |
+|------------|:------------------|--------------------------------------------------------------------------------------------------------|
+| BAPI       | Rel. above 4.6C   | Keine - **Hinweis:** Nur remote-enabled functions werden unterstützt.      |
+| BW Cube    | Rel. above BW 3.1 | Keine spezifischen Anforderungen.          |
+| BW Hierarchy  | Rel. above BW 3.1 | Keine spezifischen Anforderungen.            |
+| ODP | 	SAP_BASIS >= 730, BW >= 7,3X |	Keine spezifischen Anforderungen. |
+| Table      | Rel. above 4.6C    | Installation eines Funktionsbausteins ist empfohlen.| 
 
-## Andere Anwendungen und Frameworks
- 	
-- .NET Framework 4.7.2 oder höher. Das Famework können Sie von [Microsoft Website](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows) herunterladen.
-- Visual C++ 2005 Laufzeit-Bibliothek ist benötigt und wird mitinstalliert.
+Weitere Informationen bzgl. der Installation von benutzerdefinierten Funktionsbausteinen finden Sie unter [SAP customizing](../sap-customizing).
 
-## Hardware Anforderungen
-
-Beachten Sie die Anforderung an den Alteryx Designer bzw. Server. 
- 	
-### Arbeitsspeicher
-Der Verbrauch des Arbeitsspeichers hängt von vielen Faktoren ab, u.a. vom Komponententyp, Anzahl der Spalten und Anzahl der Zeilen pro Paket (d.h. package size). Z.B. benötigt die BW Cube Komponente im Vergleich mehr Speicher als die Table-Komponente.<br>
-Minimum: 8 GB, Empfohlen: 12 GB oder mehr abhängig vom Datenvolumen.
-
-### Festplattenspeicher
-Für die Installation werden 150 MB Festplattenspeicher benötigt. 
-
+{% include _content/de/einfuehrung/sap-authentication-xtract.md %}
+{% include _content/de/einfuehrung/sap-misc.md %}
+{% include _content/de/einfuehrung/operating-systems.md %}
+{% include _content/de/einfuehrung/xu-req-verschiedenes.md %}
