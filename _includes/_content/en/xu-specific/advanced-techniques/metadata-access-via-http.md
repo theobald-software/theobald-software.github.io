@@ -2,6 +2,9 @@
 Xtract Universal offers a Web API which allows querying different meta information from Xtract Universal through a web call.
 The following section contains information about the available metadata and the URLs to retrieve that data.
 
+{: .box-note }
+**Note:** The sections on *Metadata of an extraction*, *Parameters* and *Extraction List* are marked as deprecated as of [version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history). Access the metadata via the [http-json-API](./metadata-access-via-http-json).
+
 ### Metadata of an extraction
 
 The URL pattern is: 
@@ -72,7 +75,7 @@ logonTicket,SAP Logon Ticket,Connection,Text,<br>
 
 ### Extraction List 
 
-A list of all extractions defined in Xtract Universal can be retreived by the following URL pattern:
+A list of all extractions defined in Xtract Universal can be retrieved by the following URL pattern:
 
 ```
 http://[host]:[port]
