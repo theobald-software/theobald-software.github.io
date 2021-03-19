@@ -7,7 +7,7 @@ Especially with older SAP releases you may encounter a few restrictions when usi
 - Poor extraction performance with larger tables.
 
 {: .box-warning }
-**Warning! Error while converting value \'*.0'\ of row 1530, column 3** <br>
+**Warning! Error while converting value '\*.0' of row 1530, column 3** <br>
 The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
 Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
