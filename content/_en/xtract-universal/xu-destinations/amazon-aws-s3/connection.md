@@ -44,7 +44,7 @@ Encrypts the data after uploading to S3.<br>
 **Note:** The setting "Server-side encryption" does not relate to transport encryption between Xtract Universal and S3. By default, the channel for sending data to S3 is always encrypted. 
 
 - **None**<br>
-Sever sided encryption of data not active.
+Server-sided encryption of data not active.
 
 - **SSE-S3**<br>
 Encrypts data using the by default available S3 user account encryption key ([S3 Managed Encryption Keys](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html)).
