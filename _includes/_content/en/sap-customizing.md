@@ -7,8 +7,8 @@ The following section gives an overview over the installation of custom function
 The Custom function modules/ABAP framework are delivered as a part of Theobald Software products. The custom function modules /ABAP Framework can be installed using the transport requests (see below).
 For the following components an installation of a custom function module/ABAP framework in SAP is required:
 
-- **Table**: For most tasks, the installation of an ABAP framework is recommended or required. Refer to [Custom function module for table extraction](./custom-function-module-for-table-extraction). 
-- **Report**: The installation of a custom function module is required, refer to [Install Report Custom Function Module](./install-report-custom-function-module).
+- **Table**: For most tasks, the installation of an ABAP framework is recommended or required. Refer to [Custom function module for table extraction](./sap-customizing/custom-function-module-for-table-extraction). 
+- **Report**: The installation of a custom function module is required, refer to [Install Report Custom Function Module](./sap-customizing/install-report-custom-function-module).
 
 
 ### Transport Requests
@@ -28,6 +28,6 @@ For more detailed information about installing the transport request, see the kn
 ### Customizing
 For the following components a customizing on the SAP system is required: 
 
-- **OHS**: Refer to [Preparation for OHS in BW](./preparation-for-ohs-in-bw).
-- **DeltaQ**: Refer to [Customizing for DeltaQ](./customizing-for-deltaq).
+- **OHS**: Refer to [Preparation for OHS in BW](./sap-customizing/preparation-for-ohs-in-bw).
+- **DeltaQ**: Refer to [Customizing for DeltaQ](./sap-customizing/customizing-for-deltaq).
 
