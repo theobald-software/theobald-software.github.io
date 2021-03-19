@@ -27,13 +27,21 @@ Specifies the maximum number of extracted records. *0* Extracts the entire table
 
 
 ### Function Module
-Specifies the name of the function module used for data extraction. The field is filled automatically depending on which function modules are installed on your SAP system.
+Specifies the name of the function module used for data extraction. 
+This field is filled automatically depending on what function modules are installed on your SAP system.<br>
+The following function modules can be used to extract tables: <br>
+
+- RFC_READ_TABLE (TAB512)
+- /BODS/RFC_READ_TABLE  (TAB2048)
+- /SAPDS/RFC_READ_TABLE  (TAB2048)
+- /BODS/RFC_READ_TABLE2
+- /SAPDS/RFC_READ_TABLE2
+- Z_THEO_READ_TABLE
 
 {: .box-warning }
 **Warning! Duplicates in the target environment!** <br>
-The SAP standard modules for table extraction do not have pointers in the table fields and can cause duplicates in the target environment for larger tables.<br>.
-Use the function module from Theobald Software [Z_THEO_READ_TABLE](../sap-customizing).
-
+The SAP standard modules for table extraction do not have pointers for table fields. In larger tables this may cause low performance and duplicates in the target environment
+Use the function module from Theobald Software [Z_THEO_READ_TABLE](../sap-customizing) to ensure smooth extractions.
 
 **Extract data in background job** <br>
 If this checkbox is checked, the table extraction is executed as a background job in SAP. Extract data in background job setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0.
