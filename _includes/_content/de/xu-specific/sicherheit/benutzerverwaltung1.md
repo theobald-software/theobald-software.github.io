@@ -20,34 +20,41 @@ Weitere Informationen zu diesem Thema, finden Sie im Knowledge-Base-Artikel [How
 | Anonymous (no encryption) | Es findet keine Authentisierung statt. Die zwischen Designer und Server ausgetauschten Daten werden ohne Transportverschlüsselung im Klartext übertragen. | - |
 
 ### Aktivieren von Authentifizierungsmethoden 
-Diese unterschiedlichen Anmeldeoptionen können in den [Server-Einstellungen](../server/server_einstellungen) aktiviert/deaktiviert werden.
+Diese unterschiedlichen Anmeldeoptionen können Sie in den [Server-Einstellungen](../server/server_einstellungen) aktivieren/deaktivieren.
+1. Öffnen Sie im Hauptfenster **Server > Settings**.
 ![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
-Wählen Sie den *Configuration Server*.
+2. Wählen Sie den Tab *Configuration Server*.
 ![XU3_ServerSettings_authenticaion_methods](/img/content/xu/authentisierung_xu.png){:class="img-responsive"}
-
+3. Aktivieren oder deaktivieren Sie Ihre Authentifizierungsmethoden.
 
 ### Benutzer und Benutzergruppen
 
 {: .box-note }
 **Hinweis:** Windows AD-Benutzer und -Gruppen werden außerhalb des Designers erstellt.
 
-Um benutzerdefinierte Benutzer zu erstellen und die erstellten Benutzer den Benutzergruppen zuzuordnen, navigieren Sie zu **Security > Manage Users > Add**.
+So erstellen Sie einen benutzerdefinierten Benutzer und weisen ihn einer Benutzergruppe zu:<br>
+1. Navigieren Sie zu **Security > Manage Users**.
 ![XU_security-manage-users](/img/content/security-manage-users.png){:class="img-responsive"}
+2. Kicken Sie auf **[Add]**, um einen neuen Benutzer hinzuzufügen.
 Zum Zeitpunkt der Benutzeranlage müssen noch keine Rechte vergeben werden. Mehr Details im Abschnitt [Zugriffsverwaltung](./zugriffsverwaltung).
-Benutzerdefinierte Benutzergruppen können erstellt werden unter **Server > Server Settings > Add**. 
+3. Navigieren Sie zu **Server > Settings**.
 ![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
-Wählen Sie den Tab *Configuration Server*.
+4. Wählen Sie den Tab *Configuration Server* und aktivieren Sie die Checkbox *Restrict Designer access to the following users/groups*.
 ![XU_server-settings-add](/img/content/server-settings-add-group.png){:class="img-responsive"}
-Wählen Sie die Option "Restrict Designer access to the following users/groups".
+5. Klicken Sie auf **[Add]**, um eine benutzerdefinierte Benutzergruppe anzulegen.
 ![XU_server-settings-add-groups](/img/content/server-seetings-create-user-group.png){:class="img-responsive"}
-Nachdem Sie eine Gruppe erstellt haben, können Sie die Benutzer den erstellten Gruppen unter **Security > Manage Users > Edit** zuweisen.
+6. Navigieren Sie zu **Security > Manage Users**.
+7. Klicken Sie auf **[Edit]**. Das Fenster "Create new user" öffnet sich.
 ![XU_server-settings-add](/img/content/user-management-groups.png){:class="img-responsive"}
-Verwenden Sie die Pfeile **[<]** und **[>]**, um Benutzer zu Gruppen zuzuweisen und aus Gruppen zu entfernen.
-
+8. Verwenden Sie die Pfeile **[<]** und **[>]**, um Benutzer Gruppen zuzuweisen und aus Gruppen zu entfernen.
 Benutzerdefinierte Benutzer können nur benutzerdefinierten Benutzergruppen zugewiesen werden. Windows AD-Benutzer können nur Windows AD-Gruppen, nicht aber benutzerdefinierten Benutzergruppen zugewiesen werden. 
 
+{: .box-note }
+**Hinweis:** Wenn Sie Benutzergruppen hinzufügen, achten Sie darauf, dass Sie nur Windows AD *Security Groups* auswählen.
+Benutzern, die einer *Distribution Group* zugewiesen wurden, wird beim Logon der Zugriff verweigert.
+
 {: .box-tip }
-**Empfehlung:** Fügen Sie Benutzer zu den Benutzergruppen hinzu und gewähren Sie Zugang zu bestimmten Aktionen, anstatt einzelne Benutzer hinzuzufügen und ihnen nacheinander Zugang zu gewähren.
+**Empfehlung:** Fügen Sie Benutzer zu Benutzergruppen hinzu, um mehreren Benutzern gleichzeitig Zugang zu bestimmten Aktionen zu gewähren.
 
 ### Migration und Update
 

@@ -21,30 +21,36 @@ Further information on TPN can be found in the Knowledge Base Article [How to us
 
 ### Activating Authentication Methods 
 The different logon options can be activated/deactivated in the [Server Settings](../server/server-settings).
+1. Open **Server > Settings** from the main window.
 ![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
-Select the tab *Configuration Server*.
+2. Select the tab *Configuration Server*.
 ![XU3_ServerSettings_authenticaion_methods](/img/content/xu/authentisierung_xu.png){:class="img-responsive"}
-
+3. Activate or deactivate your authentication methods.
 
 ### Users and User Groups
 
 {: .box-note }
 **Note:** Windows AD Users and Groups are created outside the Designer.
-
-To create custom users and assign the created users to user groups navigate to **Security > Manage Users > Add**.
+Create a customuser and assign the created users to user groups:<br>
+1. Navigate to **Security > Manage Users**.
 ![XU_security-manage-users](/img/content/security-manage-users.png){:class="img-responsive"}
+2. Click **[Add]** to create a new user.
 At the time of user creation, no rights need to be assigned. See also [Access Management](./access-management).
-Custom user groups can be created under **Server > Server Settings > Add**. 
+3. Navigate to **Server > Settings**. 
 ![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
-Select the tab *Configuration Server*.
+4. Select the tab *Configuration Server* and check the checkbox *Restrict Designer access to the following users/groups*.
 ![XU_server-settings-add](/img/content/server-settings-add-group.png){:class="img-responsive"}
-Make sure to select the option "Restrict Designer access to the following users/groups".
+5. Click **[Add]** to create a custom user group.
 ![XU_server-settings-add-groups](/img/content/server-seetings-create-user-group.png){:class="img-responsive"}
-After creating a group, you can assign user to the created groups under **Security > Manage Users > Edit**.
+6. Navigate to **Security > Manage Users**.
+7. Click **[Edit]**. The "Create new user" window opens.
 ![XU_server-settings-add](/img/content/user-management-groups.png){:class="img-responsive"}
-Use the arrows **[<]** and **[>]** to assign and remove users to and from groups.
-
+8. Use the arrows **[<]** and **[>]** to assign and remove users to and from groups.
 Custom users can only be assigned to custom user groups. Windows AD users can only be assigned to Windows AD groups, but not to custom user groups. 
+
+{: .box-note }
+**Note:** When adding a user group, be careful to only add Windows AD *Security Groups*.
+Users that are assigned to *Distribution Groups* are denied access at logon.
 
 {: .box-tip }
 **Recommendation:** It is advisable to assign users to groups and grant access to particular actions instead of adding single users and granting them access one by one.
