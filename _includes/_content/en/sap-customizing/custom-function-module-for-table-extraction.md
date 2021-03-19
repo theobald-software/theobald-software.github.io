@@ -6,6 +6,11 @@ Especially with older SAP releases you may encounter a few restrictions when usi
   It is not possible to extract data from tables that contain one or more columns of the data type f (FLTP, floating point), DEC (decimal, e.g. for percentage) or x (RAW, LRAW).
 - Poor extraction performance with larger tables.
 
+{: .box-warning }
+**Warning! Error while converting value \'*.0'\ of row 1530, column 3** <br>
+The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
+Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
+
 If the above-mentioned restrictions hinder your work, install the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 
 
 ### Installing the ABAP Framework Z_THEO_READ_TABLE 
@@ -20,7 +25,6 @@ There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zi
 **Note:** Take a look at the README.txt in the installation directory (e.g.,`C:\Program Files\XtractProduct\ABAP\README.txt`) before installing any custom function modules.
 
 When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. Contact Theobald Software support and send the dedicated error message text.
-
 
 
 

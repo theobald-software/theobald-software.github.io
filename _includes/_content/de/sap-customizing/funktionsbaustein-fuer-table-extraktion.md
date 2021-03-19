@@ -8,6 +8,11 @@ Insbesondere bei älteren SAP Releases bestehen einige Einschränkungen bei der 
 
 Um die oben genannte Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustein *Z_THEO_READ_TABLE* von Theobald Software auf Ihrem SAP-System.
 
+{: .box-warning }
+**Warnung! Error while converting value \'*.0'\ of row 1530, column 3** <br>
+Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.<br>
+Verwenden Sie den Funktionsbaustein von Theobald Software *Z_THEO_READ_TABLE*. 
+
 ### ABAP Framework Z_THEO_READ_TABLE installieren
 
 Es gibt zwei Transporte, einen für SAP-Systeme >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), und einen für Systeme mit einer niedrigeren Version (*Z_THEO_READ_TABLE-before_740SP05.zip*).<br>

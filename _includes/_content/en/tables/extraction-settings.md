@@ -31,7 +31,7 @@ Specifies the name of the function module used for data extraction. The field is
 
 {: .box-warning }
 **Warning! Duplicates in the target environment!** <br>
-The SAP standard modules for table extraction do not have pointers in the table fields and can cause duplicates in the target environment for larger tables.<br>.
+The SAP standard modules for table extraction do not have pointers in the table fields and can cause duplicates in the target environment for larger tables.<br>
 Use the function module from Theobald Software [Z_THEO_READ_TABLE](../sap-customizing).
 
 

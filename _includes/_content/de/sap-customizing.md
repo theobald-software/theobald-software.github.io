@@ -1,4 +1,3 @@
-
 Um mögliche Einschränkungen bei der Extraktion von Tabellen zu umgehen oder andere Xtract Extraktionstypen zu nutzen, müssen Sie in Ihrem SAP-System bestimmte Einstellungen anpassen oder Z-Funktionsbausteine 
 bzw. ABAP Framework von Theobald Software installieren.
 Der folgende Abschnitt gibt einen Überblick über die Installation von benutzerdefinierten Funktionsbausteinen/ABAP-Framework und das Customizing des SAP-Systems.
@@ -9,8 +8,8 @@ Der folgende Abschnitt gibt einen Überblick über die Installation von benutzer
 Die Z-Funktionsbausteine / ABAP-Framework werden als Teil der Theobald Software Produkte ausgeliefert und können mithilfe von Transportaufträgen (s.u.) installiert werden.
 Für die folgenden Komponenten ist die Installation eines kundenspezifischen Funktionsbausteins/ABAP-Frameworks in SAP erforderlich:
 
-- **Table**: Für die meisten Aktionen ist die Installation eines ABAP Frameworks notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](https://help.theobald-software.com/de/xtract-is/sap-customizing/funktionsbaustein-fuer-table-extraktion). 
-- **Report**: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
+- **Table**: Für die meisten Aktionen ist die Installation eines ABAP Frameworks notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](./funktionsbaustein-fuer-table-extraktion). 
+- **Report**: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./report-funktionsbaustein-installieren).
 
 
 ### Transportaufträge (Transport requests)
@@ -27,5 +26,5 @@ Weiterführende Informationen zur Installation eines Transportauftrags finden Si
 ### Konfiguration (Customizing)
 Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig. 
 
-- **OHS**: Siehe [Vorbereitung für OHS im BW](https://help.theobald-software.com/de/xtract-is/sap-customizing/vorbereitung-fuer-ohs-im-bw).
-- **DeltaQ**: Siehe [Customizing für DeltaQ](https://help.theobald-software.com/de/xtract-is/sap-customizing/customizing-fuer-deltaq).
+- **OHS**: Siehe [Vorbereitung für OHS im BW](./vorbereitung-fuer-ohs-im-bw).
+- **DeltaQ**: Siehe [Customizing für DeltaQ](./customizing-fuer-deltaq).
