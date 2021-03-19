@@ -32,5 +32,3 @@ Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig.
 
 
 
-
-"C:\source\Git\theobald-software.github.io\content\_en\xtract-universal\sap-customizing\custom-function-module-for-table-extraction.md"
