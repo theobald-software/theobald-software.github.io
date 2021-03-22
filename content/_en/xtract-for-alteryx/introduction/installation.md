@@ -34,19 +34,19 @@ If you have a beta version of Xtract for Alteryx installed on your machine, use 
 Beta version may not be compatible with the released versions. 
 
 ### Installation Directory Files
-The list below shows several most important files that are placed into the default directory `C:\Program Files\XtractForAlteryx`: <br>
+The list below shows several important files that are placed into the default directory `C:\Program Files\XtractForAlteryx`: <br>
 
 |Filename | Description |
 |:----|:---|
-| ABAP directory | Directory with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
-| Theobald.Alteryx.Installer.exe | Application for installing Xtract for Alteryx as a plug-in to the Alteryx Designer / Server running on the system. |
-| XtractForAlteryxSetup.exe |Main installation application that extracts the files and starts Theobald.Alteryx.Installer.exe internally |
-| uninst.exe | Tool for uninstalling and removing Xtract for Alteryx with all its components from your machine.|
-| Eula_Xtract_for_Alteryx.rtf |Document containing the license agreement for the use of the software Xtract for Alteryx. |
+|ABAP directory | Directory with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
+|XtractForAlteryxSetup.exe |Main installation application that installs Xtract for Alteryx as a plug-in to the Alteryx Designer / Server running on the system.|
+|Uninstall Xtract for Alteryx | Shortcut to uninstall and remove Xtract for Alteryx with all its components from your machine.|
+|Eula_Xtract_for_Alteryx.rtf |Document containing the license agreement for the use of the software Xtract for Alteryx. |
 |XtractForAlteryxLicense.json| License file with information about the server, the component and runtime.|
 |XtractForAlteryxInstallComponents.json|A metadata file, which contains Information about Xtract for Alteryx (e.g., Name or Keywords for searching within the Alteryx Designer)|
 |XtractForAlteryxSetup.log| Log file to see the exact modifications performed on your system and check whether any errors occurred during installation |
 
+Wenn die Installation erfolgreich war, sind die Xtract for Alteryx Komponenten jetzt in der Toolbox des Alteryx Designers verfügbar.
 
 ****
 #### Related Links

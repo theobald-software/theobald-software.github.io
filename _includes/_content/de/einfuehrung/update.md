@@ -5,9 +5,9 @@ Um eine neuere Version der Software zu installieren, führen Sie die folgenden S
 
 1. Empfehlung: 
  - Die Verwendung einer Testumgebung mit gültiger Lizenz und Wartung
- - Die Testumgebung ist eine Kopie der aktuellen Produktionsumgebung
+ - Die Testumgebung ist eine Kopie der aktuellen Produktivumgebung
  - Regelmäßige Aktualisierung der Software, insbesondere bei Versionen mit größeren Änderungen (Major Changes) und hoher ([H]) Empfehlung für die Aktualisierung
- - Ein Backup der aktuellen Installation. Für mehr Details siehe dazu den entsprechenden Abschnitt unten. 
+ - Ein Backup der aktuellen Installation. Für mehr Details siehe den entsprechenden Abschnitt unten. 
  
 2. Vor dem Update prüfen Sie sorgfältig die [Version History](https://kb.theobald-software.com/version-history) und Release-Notes in der Knowledgebase.
  - Führen Sie ggf. alle notwendigen Vorbereitungen und Änderungen durch, welche in der Release Note / Version History beschrieben werden, insbesondere bei größeren Änderungen (Major Changes) und hoher ([H]) Empfehlung für die Aktualisierung.
@@ -20,8 +20,10 @@ Um eine neuere Version der Software zu installieren, führen Sie die folgenden S
 
 
 ### Installation eines Updates auf einer Produktivumgebung
-Nach erfolgreicher Installation und Test der Update-Version auf der Testumgebung wiederholen Sie die entsprechenden Schritte für die Produktionsumgebung. Achten Sie unbedingt drauf, dass Sie ein Backup vorher erstellen und ggf. die notwendigen Vorbereitungen durchführen. 
+Nach erfolgreicher Installation und Test der Update-Version auf der Testumgebung wiederholen Sie die entsprechenden Schritte für die Produktionsumgebung. 
+Achten Sie unbedingt darauf, dass Sie vorher ein Backup erstellen und ggf. die notwendigen Vorbereitungen durchführen. 
 
 
 ### Wie installiere ich eine neue Version? 
 Eine neuere Version kann über die alte Version installiert werden. Es ist nicht notwendig, die vorige Version zu deinstallieren. 
+Neue Versionen sind über das [Kundenportal](https://my.theobald-software.com) verfügbar.

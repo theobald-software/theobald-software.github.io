@@ -40,16 +40,16 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die im Standardverzeich
 
 |Dateiname | Beschreibung |
 |:----|:---|
-| ABAP Verzeichnis | Verzeichnis mit kundenspezifischen Funktionsbausteinen (.txt), die den SAP-Transportaufträgen (.zip) entsprechen.|
-| Theobald.Alteryx.Installer.exe | Anwendung zur Installation von Xtract for Alteryx als Plugin für den auf dem System laufenden Alteryx Designer / Server. |
-| XtractForAlteryxSetup.exe | Installationsanwendung, die die Dateien extrahiert und den Theobald.Alteryx.Installer.exe startet. |
-| uninst.exe |Deinstallations-Tool, das Xtract for Alteryx mit all seinen Komponenten von Ihrem Rechner entfernt.|
-| Eula_Xtract_for_Alteryx.rtf |Dokument mit dem Lizenzvertrag für die Nutzung der Software Xtract for Alteryx.  |
+|ABAP Verzeichnis | Verzeichnis mit kundenspezifischen Funktionsbausteinen (.txt), die den SAP-Transportaufträgen (.zip) entsprechen.|
+|Theobald.Alteryx.Installer.exe | Anwendung zur Installation von  |
+|XtractForAlteryxSetup.exe | Installationsanwendung, die Xtract for Alteryx als Plugin für den Alteryx Designer / Server installiert. |
+|Uninstall Xtract for Alteryx | Shortcut zur Deinstallation von Xtract for Alteryx mit all seinen Komponenten.|
+|Eula_Xtract_for_Alteryx.rtf |Dokument mit dem Lizenzvertrag für die Nutzung der Software Xtract for Alteryx.  |
 |XtractForAlteryxLicense.json| Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen.|
 |XtractForAlteryxInstallComponents.json|  Eine Metadaten-Datei, die Informationen über Xtract for Alteryx enthält (z.B. Name oder Schlüsselwörter für die Suche innerhalb des Alteryx-Designers)|
 |XtractForAlteryxSetup.log| Protokolldatei, in der die genauen Änderungen aufgezeichnet werden, die auf Ihrem System durchgeführt wurden. Diese Datei wird auch verwendet zum Überprüfen, ob während der Installation Fehler aufgetreten sind .|
 
-
+If the installation was successful, the Xtract for Alteryx components are now available in the toolbox of Alteryx Designer.
 
 ****
 #### Weiterführende Links
