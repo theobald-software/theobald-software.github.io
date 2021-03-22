@@ -1,12 +1,11 @@
-For Transport encryption and authentication require to install an X.509 certificate.
-This chapter describes the requirements to install an X.509 certificate.
+For Transport encryption and authentication it is required to install an X.509 certificate.
 
 There are two approaches for creating an X.509 certificate:
 - Certificate released by an (internal) certification authority (CA) 
 - Self-signed certificate
 
 {: .box-note }
-**Note:** On test environments you can use a self-signed certificate. For production environment it is recommend to use a certificate released by an (internal) certificate authority (CA). 
+**Note:** On test environments you can use a self-signed certificate. For production environment it is recommended to use a certificate released by an (internal) certificate authority (CA). 
 
 ### Create X.509 Certificate
 
@@ -24,10 +23,11 @@ Make sure to have a TLS certificate issued by your IT network team considering t
 1. Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc).
 In the example shown, the server name is "TODD":
 ![XU-X509-MMC](/img/content/XU-X509-MMC.png){:class="img-responsive"}
-2. Reference to the certificate in the Designer under **[Server] > [Settings] > Tab [Configuration Server / Web Server] > [Select X.509 certificate]**.
+2. Reference to the certificate in the Designer under **Server > Settings > Tab *Web Server* > [Select X.509 certificate]**.
+The name of the currently saved certificate is displayed at the bottom of the window.
 ![Server-settings_manage](/img/content/server-settings_manage.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/server-settings-certificate-web.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}
 ![Server-new-start](/img/content/xu/restart-server.png){:class="img-responsive"}
-3. Confirm with **[OK]**. The dialog closes. The performed changes are activated by restarting the XU server.
+3. Confirm with **[OK]**. The performed changes are activated by restarting the XU server.
 

@@ -5,7 +5,7 @@ Es gibt zwei Ansätze für die Erstellung eines X.509-Zertifikats:
 - Ein selbst signiertes Zertifikat (self-signed certificate)
 
 {: .box-note }
-**Hinweis:** In Testumgebungen können Sie ein selbst signiertes Zertifikat verwenden. Für Ihre Produktivumgebung wird ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat empfohlen. 
+**Hinweis:** In Testumgebungen können Sie ein selbst signiertes Zertifikat verwenden. Für Ihre Produktionsumgebung wird ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat empfohlen. 
 
 
 ### X.509-Zertifikat erstellen
@@ -24,9 +24,10 @@ Lassen Sie ein TLS Zertifikat von Ihrem IT-Netzwerk-Team unter Beachtung folgend
 1. Importieren Sie das Zertifikat über die Microsoft Management Console (mmc) in den Windows Certificate Manager. <br>
 Im abgebildeten Beispiel lautet der Servername "TODD":
 ![XU-X509-MMC](/img/content/XU-X509-MMC.png){:class="img-responsive"}
-2. Verweisen Sie auf das Zertifikat im Designer unter **[Server] > [Settings] > Tab [Configuration Server / Web Server] > [Select X.509 certificate]**.
+2. Verweisen Sie auf das Zertifikat im Designer unter **Server > Settings > Tab *Web Server* > [Select X.509 certificate]**. 
+Der Name des aktuell gespeicherten Zertifikats wird im unteren Bereich des Fensters angezeigt.
 ![Server-settings_manage](/img/content/server-settings_manage.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/server-settings-certificate-web.png){:class="img-responsive"}
 ![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}
 ![Server-new-start](/img/content/xu/restart-server.png){:class="img-responsive"}
-3. Bestätigen Sie mit **[OK]**. Der Dialog wird geschlossen. Die vorgenommenen Änderungen werden durch den Neustart des XU-Server aktiviert.
+3. Bestätigen Sie mit **[OK]**. Die vorgenommenen Änderungen werden durch den Neustart des XU-Server aktiviert.
