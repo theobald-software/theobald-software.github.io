@@ -86,9 +86,19 @@ Run  | Ausgewählte Extraktion ausführen  |
 
 ### Auflistung der Extraktionen (3)
 Liste aller Extraktionen unterteilt nach Namen, Typ, Änderungs- und Erstellungsdatum usw.
+
+**Filtern**<br>
 Sie können einen Filterwert für den Extraktionsnamen eingeben, Platzhalterzeichen werden nicht unterstützt. <br> 
 Umfangreichere Filteroptionen sind über die Schaltfläche [Filter](../fortgeschrittene-techniken/regulaere-ausdruecke) im Bereich [GUI-Schaltflächen (2)](#gui-schaltflächen-2) verfügbar. 
 
+**Mehrfachauswahl**<br>
+Um mehrere Destinationen gleichzeitig zu bearbeiten, selektieren Sie mit **[STRG]+[linke Maustaste]** die Extraktionen.<br>
+Sie können über die [GUI-Schaltflächen (2)](#gui-schaltflächen-2) **[Destination]** oder **[Source]** die entsprechenden Einstellungen für alle ausgewählten Extraktionen anpassen. 
+
+**Doppelklick**<br>
+Mit einem Doppelklick auf eine Extraktion können Sie die Extraktion wie über die Schaltfläche **[Edit]** bearbeiten.<br>
+
+**Rechtsklick**<br>
 Ein Rechtsklick auf eine Extraktion in der Liste öffnet das folgende Menü:
 ![menu_list_of_extractions](/img/content/xu/menu_list_of_extractions.png){:class="img-responsive"}
 
