@@ -14,7 +14,7 @@ Das Fenster "Table Settings" besteht aus zwei Unterabschnitten:
 
 ### Extraction Settings
 
-**Package Size** <br>
+#### Package Size 
 Gibt die Anzahl der Datensätze an, die pro Datenpaket extrahiert werden.
 Optimale Werte können durch Ausprobieren gefunden werden. Der Standardwert ist 20000 Zeilen. 
 Die Paketgröße (Package Size) zwischen 15000 und 50000 ist sinnvoll für große Datenmengen.
@@ -23,7 +23,7 @@ Die Paketgröße (Package Size) zwischen 15000 und 50000 ist sinnvoll für groß
 {: .box-tip }
 **Empfehlung:** Insbesondere bei der Ausführung einer Tabellenextraktion als Hintergrund-Job (siehe *Extract data in background job*) spielt die Paketgröße eine wichtige Rolle und sollte sinnvoll in Bezug auf die Gesamtdatenmenge gewählt werden. 
 
-**Row limit** <br>
+#### Row limit
 Gibt die maximale Anzahl der extrahierten Datensätze an. *0* extrahiert die komplette Tabelle.
 
 
@@ -50,7 +50,7 @@ S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
 ```
 Weitere Informationen hierzu finden Sie in der Theobald [Knowledge Base](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
-#### Extract data in background job <br>
+#### Extract data in background job
 Durch Ankreuzen der Checkbox "Extract data in background" wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
 Diese Einstellung ist optional und wird in Kombination mit dem Baustein Z_THEO_READ_TABLE ab Version 2.0 unterstützt.
 Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen könnten. <br>
