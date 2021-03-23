@@ -16,11 +16,10 @@ Die Metadatentabelle hat folgendes Schema:
 | POSITION | Integer                      | Position der Spalte       |
 | NAME     | String                       | Name der Spalte           |
 | DESC     | String                       | Spaltenbeschreibung       |
-| TYPE     | Einstellige ABAP Datentyp ID | ABAP Datentyp             |
-| LENGTH   | Länge der Spalte             | Länge der Spalte          |
+| TYPE     | Einstelliger ABAP Datentyp ID| ABAP Datentyp             |
+| LENGTH   | Integer                      | Länge der Spalte          |
 | DECIMALS | Integer                      | Anzahl der Dezimalstellen |
 | KEY      | Bool                         | Spalte ist Primärschlüssel der Extraktion |
-| REFERENCEFIELD   | String               | Referenzfeld der Währung            |
 
 Die "einstellige ABAP Datentyp ID" ist [hier](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/DE-DE/abapdescribe_field.htm) definiert: 
            
@@ -29,18 +28,21 @@ Die "einstellige ABAP Datentyp ID" ist [hier](https://help.sap.com/doc/abapdocu_
 **Beispiel**:<br>
 Der Aufruf der Metadaten der Extraktion BSEG mit der URL ```http://localhost:8065/metadata/?name=BSEG``` liefert:
 
-*POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS,KEY,REFERENCEFIELD*<br>
-0,MANDT,Client,C,3,0,true,<br>
-1,BUKRS,Company Code,C,4,0,true,<br>
-2,BELNR,Accounting Document Number,C,10,0,true,<br>
-3,GJAHR,Fiscal Year,N,4,0,true,<br>
-4,BUZEI,Number of Line Item Within Accounting Document,N,3,0,true,<br>
-5,BUZID,Identification of the Line Item,C,1,0,false,<br>
-6,AUGDT,Clearing Date,,8,0,false,<br>
-7,DMBTR,Amount in Local Currency,P,15,2,false,WAERS<br>
-8,KZBTR,Original Reduction Amount in Local Currency,P,15,2,false,HWAER<br>
-9,PSWBT,Amount for Updating in General Ledger,P,15,2,false,PSWSL<br>
-10,BDIF2,Valuation Difference for the Second Local Currency,P,15,2,false,HWAE2<br>
+*POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS,KEY*<br>
+0,MANDT,Client,C,3,0,true<br>
+1,BUKRS,Company Code,C,4,0,true<br>
+2,BELNR,Accounting Document Number,C,10,0,true<br>
+3,GJAHR,Fiscal Year,N,4,0,true<br>
+4,BUZEI,Number of Line Item Within Accounting Document,N,3,0,true<br>
+5,BUZID,Identification of the Line Item,C,1,0,false<br>
+6,AUGDT,Clearing Date,D,8,0,false<br>
+7,DMBTR,Amount in Local Currency,P,15,2,false<br>
+8,KZBTR,Original Reduction Amount in Local Currency,P,15,2,false<br>
+
+{: .box-note }
+**Hinweis:** Datumsfelder wie *AUGDT* haben den Datentyp *D* (Spalte TYPE) sofern die Date Conversion in den Destination Settings aktiv ist. Ist die Date Conversion inaktiv, haben sie den Datentyp *C*.
+
+
 
 ### Parameter
 

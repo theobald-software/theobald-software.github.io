@@ -25,7 +25,7 @@ The metadata table has the followig schema:
 | LENGTH   | Integer                       | column length            |
 | DECIMALS | Integer                       | number of decimal places |
 | KEY      | boolean                       | column is Primary Key of extraction |
-| REFERENCEFIELD   | String                | currency reference field            |
+
 
 
 The "single-digit ABAP datatype ID" is defined in the [SAP help](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abapdescribe_field.htm) pages. <br>
@@ -33,18 +33,20 @@ The "single-digit ABAP datatype ID" is defined in the [SAP help](https://help.sa
 **Example:** <br>
 Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:8065/metadata/?name=BSEG``` returns the following result:<br>
 
-*POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS,KEY,REFERENCEFIELD*<br>
-0,MANDT,Client,C,3,0,true,<br>
-1,BUKRS,Company Code,C,4,0,true,<br>
-2,BELNR,Accounting Document Number,C,10,0,true,<br>
-3,GJAHR,Fiscal Year,N,4,0,true,<br>
-4,BUZEI,Number of Line Item Within Accounting Document,N,3,0,true,<br>
-5,BUZID,Identification of the Line Item,C,1,0,false,<br>
-6,AUGDT,Clearing Date,,8,0,false,<br>
-7,DMBTR,Amount in Local Currency,P,15,2,false,WAERS<br>
-8,KZBTR,Original Reduction Amount in Local Currency,P,15,2,false,HWAER<br>
-9,PSWBT,Amount for Updating in General Ledger,P,15,2,false,PSWSL<br>
-10,BDIF2,Valuation Difference for the Second Local Currency,P,15,2,false,HWAE2<br>
+*POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS,KEY*<br>
+0,MANDT,Client,C,3,0,true<br>
+1,BUKRS,Company Code,C,4,0,true<br>
+2,BELNR,Accounting Document Number,C,10,0,true<br>
+3,GJAHR,Fiscal Year,N,4,0,true<br>
+4,BUZEI,Number of Line Item Within Accounting Document,N,3,0,true<br>
+5,BUZID,Identification of the Line Item,C,1,0,false<br>
+6,AUGDT,Clearing Date,D,8,0,false<br>
+7,DMBTR,Amount in Local Currency,P,15,2,false<br>
+8,KZBTR,Original Reduction Amount in Local Currency,P,15,2,false<br>
+
+{: .box-note }
+**Note:** Date fields like *AUGDT* have data type *D* (column TYPE) if Date Conversion in the Destination Settings is active. If inactive, the data type is *C*.
+
 
 ### Parameters
 Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](./extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
