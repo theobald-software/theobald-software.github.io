@@ -1,9 +1,9 @@
 ### About
-Xtract Universal offers a Web API which allows querying different meta information from Xtract Universal through a web call.
+Xtract Universal offers a Web API that allows querying different meta information from Xtract Universal through a web call.
 The following section contains information about the available metadata and the URLs to retrieve that data.
 
 {: .box-note }
-**Note:** This metadata-API returns the result as an http-json stream. This API is available as of [version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
+**Note:** This metadata-API returns the result as an http-json stream. The API is available as of [version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
 
 ### Result columns of an extraction
 
@@ -27,8 +27,7 @@ The metadata table has the following schema:
 
 
 Possible values for *type* are: <br>
-```Byte, Short, Int, Long, Double, Decimal, NumericString, StringLengthMax, StringLengthUnknown, ByteArrayLengthExact, ByteArrayLengthMax, ByteArrayLengthUnknown, Date, ConvertedDate, Time```
-
+*Byte, Short, Int, Long, Double, Decimal, NumericString, StringLengthMax, StringLengthUnknown, ByteArrayLengthExact, ByteArrayLengthMax, ByteArrayLengthUnknown, Date, ConvertedDate, Time*
 
 
 Optional, for currency or quantity fields:
@@ -37,7 +36,7 @@ Optional, for currency or quantity fields:
 |----------------|---------|--------------------------|
 | decimalsCount  | Integer | number of decimal places |
 | referenceField** | String  | reference field for currency/quantity|
-| referenceTable** | String  | reference table currency/quantity|
+| referenceTable** | String  | reference table for currency/quantity|
 
 ** See [SAP Help Portal](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html).
 
@@ -46,7 +45,9 @@ Optional, for currency or quantity fields:
 **Example:** <br>
 Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:8065/config/extractions/BSEG/result-columns``` returns the following result:<br>
 
-```json
+<details>
+<summary>Click here to show the result</summary>
+{% highlight javascript %}
 {
     "columns": 
     [
@@ -87,7 +88,8 @@ Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:80
         }
     ]
 }
-```
+{% endhighlight %}
+</details>
 
 ### Parameters
 Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](./extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
@@ -101,8 +103,9 @@ This delivers a list of runtime parameters. <br>
 **Example:** <br>
 Calling the metadata of extraction *plants* using this URL: ```http://localhost:8065/config/extractions/plants/parameters/``` returns the following result:<br>
 
-  
-```json
+<details>
+<summary>Click here to show the result</summary>
+{% highlight javascript %}
 {
     "extraction": 
     [
@@ -174,8 +177,8 @@ Calling the metadata of extraction *plants* using this URL: ```http://localhost:
         }
     ]
 }
-```
-
+{% endhighlight %}
+</details>
 
 ### List of extractions
 A list of all extractions defined in Xtract Universal can be retrieved by the following URL pattern:
@@ -187,8 +190,9 @@ http://[host]:[port]/config/extractions/
 **Example:** <br>
 Calling ```http://localhost:8065/config/extractions/``` returns a list of all extractions defined on the Xtract Universal server running on localhost:8065.
 
-
-```json
+<details>
+<summary>Click here to show the list</summary>
+{% highlight javascript %}
 {
     "extractions": 
     [
@@ -257,8 +261,8 @@ Calling ```http://localhost:8065/config/extractions/``` returns a list of all ex
         }
     ]
 }
-```
-
+{% endhighlight %}
+</details>
 
 
 ### List of extractions with a specific destination type
@@ -271,15 +275,14 @@ http://[host]:[port]/config/extractions/?destinationType=[typename]
 
 Possible entries for [typename] are:
 
-
-```Unknown, Alteryx, AlteryxConnect, AzureDWH, AzureBlob, CSV, DB2, EXASOL, FileCSV, FileJSON, GoodData, GoogleCloudStorage, HANA, HTTPJSON, MicroStrategy, MySQL, ODataAtom,Oracle, Parquet, PostgreSQL, PowerBI, PowerBIConnector, Qlik, Redshift, S3Destination, Salesforce, SharePoint, Snowflake, SQLServer, SqlServerReportingServices, Tableau, Teradata, Vertica ```
-
+*Unknown, Alteryx, AlteryxConnect, AzureDWH, AzureBlob, CSV, DB2, EXASOL, FileCSV, FileJSON, GoodData, GoogleCloudStorage, HANA, HTTPJSON, MicroStrategy, MySQL, ODataAtom,Oracle, Parquet, PostgreSQL, PowerBI, PowerBIConnector, Qlik, Redshift, S3Destination, Salesforce, SharePoint, Snowflake, SQLServer, SqlServerReportingServices, Tableau, Teradata, Vertica*
 
 **Example:** <br>
 Calling ```http://localhost:8065/config/extractions/?destinationType=FileCSV``` returns a list of all extractions that write data to a csv flatfile destination. 
 
-
-```json
+<details>
+<summary>Click here to show the list</summary>
+{% highlight javascript %}
 {
     "extractions": 
     [
@@ -324,7 +327,8 @@ Calling ```http://localhost:8065/config/extractions/?destinationType=FileCSV``` 
         }
     ]
 }
-```
+{% endhighlight %}
+</details>
 
 
 

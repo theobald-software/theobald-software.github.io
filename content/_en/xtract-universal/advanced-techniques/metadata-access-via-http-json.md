@@ -13,8 +13,3 @@ progressstate: 3
 ---
 
 {% include _content/en/xu-specific/advanced-techniques/metadata-access-via-http-json.md %}
-
-
-
-
-

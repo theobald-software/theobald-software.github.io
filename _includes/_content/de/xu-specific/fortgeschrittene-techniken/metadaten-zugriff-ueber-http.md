@@ -1,6 +1,10 @@
 ### Über diese Seite 
 Man kann über Xtract Universals Web-API verschiedene Metadaten-Informationen einer Extraktion abrufen. 
 
+{: .box-note }
+**Hinweis:** Die Sektionen über *Metadaten einer Extraktion*, *Parameter* und *Liste aller Extraktionen* sind seit [Version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history) als veraltet markiert.
+Sie erhalten Zugriff auf die Metadaten über die [http-json-API](./metadata-access-via-http-json).
+
 ### Metadaten einer Extraktion
 
 Das URL-Pattern lautet: 
