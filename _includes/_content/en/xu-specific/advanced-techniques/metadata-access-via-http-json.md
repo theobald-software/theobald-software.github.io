@@ -47,12 +47,12 @@ Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:80
 
 <details>
 <summary>Click here to show the result</summary>
-{% highlight javascript %}
+{% highlight json %}
 {
     "columns": 
     [
         {
-            "name": "BSEG~BELNR",
+            "name": "BELNR",
             "description": "Accounting Document Number",
             "type": "StringLengthMax",
             "length": 10,
@@ -60,7 +60,7 @@ Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:80
             "isEncrypted": false
         },
         {
-            "name": "BSEG~GJAHR",
+            "name": "GJAHR",
             "description": "Fiscal Year",
             "type": "NumericString",
             "length": 4,
@@ -68,28 +68,31 @@ Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:80
             "isEncrypted": false
         },
         {
-            "name": "BSEG~AUGDT",
+            "name": "AUGDT",
             "description": "Clearing Date",
-            "type": "StringLengthMax",
-            "length": 8,
+            "type": "ConvertedDate",
             "isPrimaryKey": false,
             "isEncrypted": false
         },
         {
-            "name": "BSEG~DMBTR",
+            "name": "DMBTR",
             "description": "Amount in Local Currency",
             "type": "Decimal",
             "length": 13,
             "decimalsCount": 2,
             "isPrimaryKey": false,
             "isEncrypted": false,
-            "referenceField": "T001~WAERS",
+            "referenceField": "WAERS",
             "referenceTable": "T001"
         }
     ]
 }
 {% endhighlight %}
 </details>
+
+
+{: .box-note }
+**Note:** Date fields like *AUGDT* have data type *ConvertedDate* if Date Conversion in the Destination Settings is active. If inactive, the data type is *StringLengthMax* with a length of 8.
 
 ### Parameters
 Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](./extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
@@ -105,7 +108,7 @@ Calling the metadata of extraction *plants* using this URL: ```http://localhost:
 
 <details>
 <summary>Click here to show the result</summary>
-{% highlight javascript %}
+{% highlight json %}
 {
     "extraction": 
     [
@@ -192,7 +195,7 @@ Calling ```http://localhost:8065/config/extractions/``` returns a list of all ex
 
 <details>
 <summary>Click here to show the list</summary>
-{% highlight javascript %}
+{% highlight json %}
 {
     "extractions": 
     [
@@ -282,7 +285,7 @@ Calling ```http://localhost:8065/config/extractions/?destinationType=FileCSV``` 
 
 <details>
 <summary>Click here to show the list</summary>
-{% highlight javascript %}
+{% highlight json %}
 {
     "extractions": 
     [
