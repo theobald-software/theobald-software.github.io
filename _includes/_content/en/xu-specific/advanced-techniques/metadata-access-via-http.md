@@ -2,6 +2,9 @@
 Xtract Universal offers a Web API which allows querying different meta information from Xtract Universal through a web call.
 The following section contains information about the available metadata and the URLs to retrieve that data.
 
+{: .box-note }
+**Note:** The sections on *Metadata of an extraction*, *Parameters* and *Extraction List* are marked as deprecated as of [version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history). Access the metadata via the [http-json-API](./metadata-access-via-http-json).
+
 ### Metadata of an extraction
 
 The URL pattern is: 
@@ -22,7 +25,7 @@ The metadata table has the followig schema:
 | LENGTH   | Integer                       | column length            |
 | DECIMALS | Integer                       | number of decimal places |
 | KEY      | boolean                       | column is Primary Key of extraction |
-| REFERENCEFIELD   | String                | currency reference field            |
+
 
 
 The "single-digit ABAP datatype ID" is defined in the [SAP help](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abapdescribe_field.htm) pages. <br>
@@ -30,18 +33,20 @@ The "single-digit ABAP datatype ID" is defined in the [SAP help](https://help.sa
 **Example:** <br>
 Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:8065/metadata/?name=BSEG``` returns the following result:<br>
 
-*POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS,KEY,REFERENCEFIELD*<br>
-0,MANDT,Client,C,3,0,true,<br>
-1,BUKRS,Company Code,C,4,0,true,<br>
-2,BELNR,Accounting Document Number,C,10,0,true,<br>
-3,GJAHR,Fiscal Year,N,4,0,true,<br>
-4,BUZEI,Number of Line Item Within Accounting Document,N,3,0,true,<br>
-5,BUZID,Identification of the Line Item,C,1,0,false,<br>
-6,AUGDT,Clearing Date,,8,0,false,<br>
-7,DMBTR,Amount in Local Currency,P,15,2,false,WAERS<br>
-8,KZBTR,Original Reduction Amount in Local Currency,P,15,2,false,HWAER<br>
-9,PSWBT,Amount for Updating in General Ledger,P,15,2,false,PSWSL<br>
-10,BDIF2,Valuation Difference for the Second Local Currency,P,15,2,false,HWAE2<br>
+*POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS,KEY*<br>
+0,MANDT,Client,C,3,0,true<br>
+1,BUKRS,Company Code,C,4,0,true<br>
+2,BELNR,Accounting Document Number,C,10,0,true<br>
+3,GJAHR,Fiscal Year,N,4,0,true<br>
+4,BUZEI,Number of Line Item Within Accounting Document,N,3,0,true<br>
+5,BUZID,Identification of the Line Item,C,1,0,false<br>
+6,AUGDT,Clearing Date,D,8,0,false<br>
+7,DMBTR,Amount in Local Currency,P,15,2,false<br>
+8,KZBTR,Original Reduction Amount in Local Currency,P,15,2,false<br>
+
+{: .box-note }
+**Note:** Date fields like *AUGDT* have data type *D* (column TYPE) if Date Conversion in the Destination Settings is active. If inactive, the data type is *C*.
+
 
 ### Parameters
 Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](./extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
@@ -72,7 +77,7 @@ logonTicket,SAP Logon Ticket,Connection,Text,<br>
 
 ### Extraction List 
 
-A list of all extractions defined in Xtract Universal can be retreived by the following URL pattern:
+A list of all extractions defined in Xtract Universal can be retrieved by the following URL pattern:
 
 ```
 http://[host]:[port]
