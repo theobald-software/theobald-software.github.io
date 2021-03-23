@@ -29,9 +29,15 @@ The different logon options can be activated/deactivated in the [Server Settings
 
 ### Users and User Groups
 
+The Designer offers [Access Management](./access-management) for different users and user groups.
+You can use already existing Windows AD Users and Groups or create your own custom users and groups.
+
 {: .box-note }
 **Note:** Windows AD Users and Groups are created outside the Designer.
-Create a customuser and assign the created users to user groups:<br>
+Be careful to only add Windows AD *Security Groups* to the Designer.
+Users that are assigned to *Distribution Groups* are denied access at logon.
+
+How to create a custom user and assign the created users to user groups:<br>
 1. Navigate to **Security > Manage Users**.
 ![XU_security-manage-users](/img/content/security-manage-users.png){:class="img-responsive"}
 2. Click **[Add]** to create a new user.
@@ -40,17 +46,13 @@ At the time of user creation, no rights need to be assigned. See also [Access Ma
 ![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
 4. Select the tab *Configuration Server* and check the checkbox *Restrict Designer access to the following users/groups*.
 ![XU_server-settings-add](/img/content/server-settings-add-group.png){:class="img-responsive"}
-5. Click **[Add]** to create a custom user group.
+5. Click **[New]** to create a custom user group.
 ![XU_server-settings-add-groups](/img/content/server-seetings-create-user-group.png){:class="img-responsive"}
 6. Navigate to **Security > Manage Users**.
 7. Click **[Edit]**. The "Create new user" window opens.
 ![XU_server-settings-add](/img/content/user-management-groups.png){:class="img-responsive"}
 8. Use the arrows **[<]** and **[>]** to assign and remove users to and from groups.
 Custom users can only be assigned to custom user groups. Windows AD users can only be assigned to Windows AD groups, but not to custom user groups. 
-
-{: .box-note }
-**Note:** When adding a user group, be careful to only add Windows AD *Security Groups*.
-Users that are assigned to *Distribution Groups* are denied access at logon.
 
 {: .box-tip }
 **Recommendation:** It is advisable to assign users to groups and grant access to particular actions instead of adding single users and granting them access one by one.

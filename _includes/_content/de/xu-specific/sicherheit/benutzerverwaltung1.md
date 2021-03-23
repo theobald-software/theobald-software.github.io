@@ -29,8 +29,13 @@ Diese unterschiedlichen Anmeldeoptionen können Sie in den [Server-Einstellungen
 
 ### Benutzer und Benutzergruppen
 
+Der Designer bietet eine [Zugriffsverwaltung](./zugriffsverwaltung) für Benutzer und Benutzergruppen. 
+Dafür können sowohl Windows AD-Benutzer und -Gruppen als auch benutzerdefinierte Benutzer und Gruppen verwendet werden.
+Benutzerdefinierte Benutzer und Gruppen müssen im Designer erst angelegt werden, bevor sie zur Verfügung stehen.
+
 {: .box-note }
-**Hinweis:** Windows AD-Benutzer und -Gruppen werden außerhalb des Designers erstellt.
+**Hinweis:** Windows AD-Benutzer und -Gruppen werden außerhalb des Designers erstellt. Achten Sie darauf, im Designer nur Windows AD *Security Groups* auswählen.
+Benutzern, die einer *Distribution Group* zugewiesen wurden, wird beim Logon der Zugriff verweigert.
 
 So erstellen Sie einen benutzerdefinierten Benutzer und weisen ihn einer Benutzergruppe zu:<br>
 1. Navigieren Sie zu **Security > Manage Users**.
@@ -41,17 +46,13 @@ Zum Zeitpunkt der Benutzeranlage müssen noch keine Rechte vergeben werden. Mehr
 ![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
 4. Wählen Sie den Tab *Configuration Server* und aktivieren Sie die Checkbox *Restrict Designer access to the following users/groups*.
 ![XU_server-settings-add](/img/content/server-settings-add-group.png){:class="img-responsive"}
-5. Klicken Sie auf **[Add]**, um eine benutzerdefinierte Benutzergruppe anzulegen.
+5. Klicken Sie auf **[New]**, um eine benutzerdefinierte Benutzergruppe anzulegen.
 ![XU_server-settings-add-groups](/img/content/server-seetings-create-user-group.png){:class="img-responsive"}
 6. Navigieren Sie zu **Security > Manage Users**.
 7. Klicken Sie auf **[Edit]**. Das Fenster "Create new user" öffnet sich.
 ![XU_server-settings-add](/img/content/user-management-groups.png){:class="img-responsive"}
 8. Verwenden Sie die Pfeile **[<]** und **[>]**, um Benutzer Gruppen zuzuweisen und aus Gruppen zu entfernen.
 Benutzerdefinierte Benutzer können nur benutzerdefinierten Benutzergruppen zugewiesen werden. Windows AD-Benutzer können nur Windows AD-Gruppen, nicht aber benutzerdefinierten Benutzergruppen zugewiesen werden. 
-
-{: .box-note }
-**Hinweis:** Wenn Sie Benutzergruppen hinzufügen, achten Sie darauf, dass Sie nur Windows AD *Security Groups* auswählen.
-Benutzern, die einer *Distribution Group* zugewiesen wurden, wird beim Logon der Zugriff verweigert.
 
 {: .box-tip }
 **Empfehlung:** Fügen Sie Benutzer zu Benutzergruppen hinzu, um mehreren Benutzern gleichzeitig Zugang zu bestimmten Aktionen zu gewähren.
