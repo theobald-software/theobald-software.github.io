@@ -46,8 +46,6 @@ The list below shows several important files that are placed into the default di
 |XtractForAlteryxInstallComponents.json|A metadata file, which contains Information about Xtract for Alteryx (e.g., Name or Keywords for searching within the Alteryx Designer)|
 |XtractForAlteryxSetup.log| Log file to see the exact modifications performed on your system and check whether any errors occurred during installation |
 
-Wenn die Installation erfolgreich war, sind die Xtract for Alteryx Komponenten jetzt in der Toolbox des Alteryx Designers verfügbar.
-
 ****
 #### Related Links
 - [Update Installation](./update)

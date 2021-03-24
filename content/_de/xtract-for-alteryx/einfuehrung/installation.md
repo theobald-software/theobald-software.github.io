@@ -49,8 +49,6 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die im Standardverzeich
 |XtractForAlteryxInstallComponents.json|  Eine Metadaten-Datei, die Informationen über Xtract for Alteryx enthält (z.B. Name oder Schlüsselwörter für die Suche innerhalb des Alteryx-Designers)|
 |XtractForAlteryxSetup.log| Protokolldatei, in der die genauen Änderungen aufgezeichnet werden, die auf Ihrem System durchgeführt wurden. Diese Datei wird auch verwendet zum Überprüfen, ob während der Installation Fehler aufgetreten sind .|
 
-If the installation was successful, the Xtract for Alteryx components are now available in the toolbox of Alteryx Designer.
-
 ****
 #### Weiterführende Links
 - [Installation eines Updates](./update)
