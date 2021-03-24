@@ -9,12 +9,12 @@ childidentifier: xu-destinationen
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
+progressstate: 5
 old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
 ---
-{: .box-note }
-**Hinweis:** Für die Nutzung einiger Destinationen (wie z.B. Oracle, DB2 usw.) ist die Installation des entsprechenden Treibers bzw. Bibliothek notwendig.
               
-Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (z.B. ERP, S/4 HANA, BW and BW/4 HANA) mittels zahlreicher Destinationen zu extrahierten und in verschiedene Zielumgebungen zu schreiben. Die folgenden Zielumgebungen sind verfügbar:
+Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen zu extrahierten und in Zielumgebungen zu schreiben. 
+Die folgenden Zielumgebungen sind verfügbar:
 
 ### Datenbanken / Data Warehouses
 
@@ -30,6 +30,9 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 - [SQL Server](./xu-destinationen//microsoft-sql-server) 
 - [Snowflake](./xu-destinationen/snowflake)
 
+{: .box-note }
+**Hinweis:** Für die Nutzung einiger Destinationen, z.B. Oracle und DB2 muss ein entsprechender Treiber bzw. eine entsprechende Bibliothek installiert sein.
+Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen* der jeweiligen Destination.
 
 ### Business Intelligence / Analytics / ETL
 
@@ -45,8 +48,6 @@ Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen (
 - [Azure Storage](./xu-destinationen/azure-storage) 
 - [Google Cloud Storage](./xu-destinationen/google-cloud-storage)
 
-Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-Programm bzw. Scheduler aufgerufen werden. 
-
 ### Business Systeme
 
 - [Salesforce](./xu-destinationen/salesforce) 
@@ -60,17 +61,21 @@ Xtract Universal kann über das mitgelieferte Kommando-Tool von fast jedem ETL-P
 - [Flat File - CSV](./xu-destinationen/csv-flat-file) (Comma-seperated values)
 - [Flat File - JSON](./xu-destinationen/json-flat-file)
 - [Parquet](./xu-destinationen/parquet)
-            
+
+
+{: .box-note }
+**Hinweis**: Die [Konfigurationsdateien](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien) einer Destination werden unter `C:\Program Files\XtractUniversal\config\destinations` abgelegt.
+
 ### Pull- und Push-Destinationen
 
-Zwei Typen von Datenzielen werden angeboten, je nachdem wo der Extraktionsprozess gestartet wird. 
+Es gibt zwei Typen von Zielumgebungen, die sich darin unterscheiden von wo aus der Extraktionsprozess gestartet wird. 
 
 #### Pull-Destinationen
-Extraktionen mit Pull-Destinationen liefern die Datenextraktion auf Anforderung. Hier wird der Extraktionsprozess von der Zielumgebung gestartet. <br>
-Eine Extraktion mit  Pull-Destination unterstützt das Durchreichen (pass-through) der SAP-Daten. Wenn ein Konsument (z.N. ein  Self Service BI Tool) die Daten anfordert, 
-Xtract Universal übersetzt die Anforderung in eine Query für das SAP-Quellsystem, extrahiert die Daten direkt aus dem SAP-Quellsystem und liefert sie an den Konsumenten.
+Extraktionen mit Pull-Destinationen liefern die Datenextraktion auf Anforderung. Der Extraktionsprozess wird von der Zielumgebung gestartet.
+Eine Extraktion mit Pull-Destination unterstützt das Durchreichen (pass-through) der SAP-Daten.
+Das bedeutet, wenn ein Konsument (z.B. ein Self Service BI Tool) Daten anfordert, übersetzt Xtract Universal die Anforderung in eine Query für das SAP-Quellsystem, extrahiert die Daten und liefert sie an den Konsumenten.
 
-Dazu zählen folgende destinationen: 
+Folgende Destinationen sind Pull-Destinationen: 
 - Alteryx
 - CSV Webservice 
 - Qlik
@@ -81,7 +86,10 @@ Sofern die Zielumgebung http-Datenkomprimierung via gzip unterstützt, sendet Xt
 
 #### Push-Destinationen
 
-Extraktionen mit Push-Destinationen liefern die Daten proaktiv in die Zielumgebung. Hier wird der Extraktionsprozess in Xtract Universal gestartet, z.B. durch einen Scheduler.<br>
-Eine Extraktion mit Push-Destinationen extrahiert die Daten aus dem SAP-Quellsystem und lädt die Daten in ein Datenziel, welche dann weiter verarbeitet werden können. Beispielsweise können die Daten dann transformiert und ggf. in einer für Analytische Queries optimierten Form abgelegt werden.
+Extraktionen mit Push-Destinationen liefern Daten proaktiv in die Zielumgebung. Der Extraktionsprozess wird in Xtract Universal gestartet, z.B. durch einen [Scheduler](./fortgeschrittene-techniken/extraktion_einplanen).<br>
+Eine Extraktion mit Push-Destinationen extrahiert die Daten aus dem SAP-Quellsystem und lädt die in eine Zielumgebung, wo sie weiter verarbeitet werden können. 
+Beispielsweise können die Daten dann transformiert und ggf. in einer für Analytische Queries optimierten Form abgelegt werden.
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+******
+#### Weiterführende Links
+- [Destinationen verwalten](./xu-destinationen/ziele-verwalten)
