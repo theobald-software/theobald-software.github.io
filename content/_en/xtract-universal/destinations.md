@@ -9,23 +9,18 @@ childidentifier: xu-destinations
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
+progressstate: 5
 old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---
 
-{: .box-note }
-**Note**: For some destinations (e.g., Oracle, DB2 etc.) the appropriate driver must be installed. 
 
-For more information on drivers, refer to [Requirements](./introduction/requirements).
-
-{: .box-note }
-**Note**: The [configuration files](./advanced-techniques/backup-and-migration#configuration-files) of destinations are stored in `config\destinations`.
-
-Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW/4 HANA) systems and to load them to different destination environments, including:  
+Xtract Universal allows you to extract data from SAP systems and load them to different destination environments.
+The following destinations are available:  
 
 ### Databases / Data Warehouses
 
 - [Amazon Redshift](./xu-destinations/amazon-redshift) 
-- [Azure Synapse Analytics ](./xu-destinations/azure-dwh) (former Azure DWH)
+- [Azure DWH](./xu-destinations/azure-dwh)
 - [Azure SQL Database](./xu-destinations/microsoft-sql-server) 
 - [EXASolution](./xu-destinations/exasol) 
 - [IBM DB2](./xu-destinations/ibm-db2) 
@@ -35,6 +30,9 @@ Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW
 - [SAP HANA](./xu-destinations/sap-hana) 
 - [SQL Server](./xu-destinations/microsoft-sql-server) 
 
+{: .box-note }
+**Note**: For some destinations e.g., Oracle and DB2 the appropriate drivers need to be installed.
+More information can be found under the *Requirements* section of each destination.
 
 ### Business Intelligence / Analytics / ETL
 
@@ -63,15 +61,17 @@ Xtract Universal allows to extract data from SAP (e.g., ERP, S/4 HANA, BW and BW
 - [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
 - [Flat File - JSON](./xu-destinations/json-flat-file)
 - [Parquet](./xu-destinations/parquet)
-            
-            
+ 
+{: .box-note }
+**Note**: The [configuration files](./advanced-techniques/backup-and-migration#configuration-files) of destinations are stored in `C:\Program Files\XtractUniversal\config\destinations`.
+ 
 ### Pull and Push Destinations
 
-Two types of destinations is supported, depending on where the extraction process is started.  
+There are two types of destinations, depending on where the extraction process is started.  
 
 #### Pull Destinations
 
-Extractions with pull destinations provide the data on request. The extraction process is started by the destination product environment. <br>
+Extractions with pull destinations provide data on request. The extraction process is started by the destination product environment. <br>
 An extraction with  pull Destination supports the pass-through of data. When a consumer (e.g. a Self Service BI Tool) requests the data, 
 Xtract Universal translates the request into a query for the underlying SAP system, retrieves the data directly from the source system and delivers that to the consumer.
 
@@ -83,13 +83,12 @@ These include the following destinations:
 - OData web service
 
 If the destination supports the gzip http data compression, Xtract Universal will send the data to the destination client in a gzip compressed format.
-           
 
 #### Push Destinations
 
-Extractions with push destinations provide the data to the destination environment proactively. The extraction process is started in Xtract Universal, e.g. from a scheduled extraction. <br>
-An extraction with push destinations involves the extracting of data from the SAP source systems and once loaded into the destination, data can be processed further. E.g. it can be transformed to an optimized form ready for analytic query workloads.
+Extractions with push destinations provide the data to the destination environment proactively. The extraction process is started in Xtract Universal, e.g. via a [scheduled extraction](./advanced-techniques/scheduling_extraction). <br>
+An extraction with push destinations extracts data from the SAP source systems and loads them into the destination, where the data can be processed further. They can be transformed and optimized for analytic query workloads.
 
-
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
-
+*****
+#### Related Links
+- [Manage Destinations](./xu-destinations/managing-destinations)
