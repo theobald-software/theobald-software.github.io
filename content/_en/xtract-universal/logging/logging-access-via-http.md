@@ -24,9 +24,9 @@ The basic URL syntax consists of the following parts: `http://[XU server name].[
 
 | Type | Syntax       | Example                                                                  |
 |-------|------------------|--------------------------------------------------------------------|
-| HTTP   | `http://[XU server name].[domain]:[port]`         | `http://todd.theobald.local:8065`  |
-| HTTP | `http://localhost:[Port]` | `http://localhost:8065` |
-| HTTPS  | `https://[XU server name].[domain]:[port]` | `https://todd.theobald.local:8165`<br> functions only with a dedicated host name and X.509 certificate |
+| HTTP   | `http://[host].[domain]:[port]`         | `http://todd.theobald.local:8065`  |
+| HTTP | `http://[host]:[port]` | `http://localhost:8065` |
+| HTTPS  | `https://[host].[domain]:[port]` | `https://todd.theobald.local:8165`<br> functions only with a dedicated host name and X.509 certificate |
 
 
 In the succeeding examples the following URL `https://todd.theobald.local:8165/` is used.
