@@ -155,7 +155,7 @@ See also [**Destination Settings > Folder Path**](./blob-settings#folder-path). 
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-**Folder path** allows entry of [script expressions](./../../advanced-techniques/script-expressions/#using-script-expressions-as-dynamic-folder-paths).
+**Folder path** allows entry of [script expressions](./../../advanced-techniques/script-expressions).
 This allows to dynamically set a folder path when executing an extraction. <br>
 
 ### Column Encryption (4)
