@@ -14,6 +14,7 @@ SAP Release 4.6C und neuer werden unterstützt. Dazu gehören:<br/>
 * SAP Business Suite 7 (CRM, SRM, SCM etc.)
 * SAP Business All in One, CAR, APO, PI, IS-U etc.
 * SAP S/4HANA
+- SAP S/4HANA Cloud Extended Edition (EX)
 * SAP BW 3.1 and later
 * SAP BW/BI 7.x
 * SAP BW/4HANA
