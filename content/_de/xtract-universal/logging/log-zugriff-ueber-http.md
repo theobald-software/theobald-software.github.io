@@ -24,7 +24,7 @@ Die grundlegende URL-Syntax setzt sich wie folgt zusammen: `http://[XU Server Na
 | Typ | Syntax       | Beispiel                                                                  |
 |-------|------------------|--------------------------------------------------------------------|
 | HTTP   | `http://[host].[domain]:[Port]`         | `http://todd.theobald.local:8065`  |
-| HTTP | `http://localhost:[Port]` | `http://localhost:8065` |
+| HTTP | `http://[host]:[Port]` | `http://localhost:8065` |
 | HTTPS  | `https://[host]:[Port]` | `https://todd.theobald.local:8165`<br> funktioniert ausschließlich mit dedizierten Rechnernamen und X.509 Zertifikat |
 
 
