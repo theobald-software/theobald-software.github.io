@@ -15,9 +15,9 @@ lang: en_GB
 
 ### How do I create a backup?
 1. Copy all Alteryx workflows that use Xtract for Alteryx.
-2. Copy the folder that contains the SAP connections. Depending on the Alteryx Settings it is located in:<br>
-- `%AppData%\Theobald Software\Xtract for Alteryx` - general<br>
-- `C:\Users\[USERNAME]\AppData\Roaming\Theobald Software\Xtract for Alteryx` - local.
+2. Copy the folder that contains the SAP connections. 
+Depending on the Alteryx Settings it is located in:
+- `C:\Users\[USERNAME]\AppData\Roaming\Theobald Software\Xtract for Alteryx\Connections`
 
 A backup is also recommended when updating the version of Alteryx Desktop or Server. 
 We recommend that you create a backup at regular intervals so that you can easily switch back to the previous version if necessary.
