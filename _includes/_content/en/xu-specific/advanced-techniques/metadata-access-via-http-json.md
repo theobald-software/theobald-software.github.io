@@ -7,12 +7,8 @@ The following section contains information about the available metadata and the 
 
 ### Result columns of an extraction
 
-The URL pattern is: 
-```
-http://[host]:[port]/config/extractions/[extraction_name]/result-columns
-```
-
-[extraction_name] has to be replaced with the actual name of the extraction.
+The URL pattern to retrieve the result columns of an extraction is: <br> 
+``` http://[host]:[port]/config/extractions/[extraction_name]/result-columns ```
 
 The metadata table has the following schema:
 
@@ -24,29 +20,18 @@ The metadata table has the following schema:
 | length       | Integer | column lenght                       |
 | isPrimaryKey | boolean | column is primary key of extraction |
 | isEncrypted  | boolean | encryption for column is active     |
-
+| decimalsCount  | Integer | number of decimal places |
+| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity (optional)|
+| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity (optional)|
 
 Possible values for *type* are: <br>
 *Byte, Short, Int, Long, Double, Decimal, NumericString, StringLengthMax, StringLengthUnknown, ByteArrayLengthExact, ByteArrayLengthMax, ByteArrayLengthUnknown, Date, ConvertedDate, Time*
 
-
-Optional, for currency or quantity fields:
-
-| Column         | Type    | Description              |
-|----------------|---------|--------------------------|
-| decimalsCount  | Integer | number of decimal places |
-| referenceField** | String  | reference field for currency/quantity|
-| referenceTable** | String  | reference table for currency/quantity|
-
-** See [SAP Help Portal](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html).
-
-
- 
-**Example:** <br>
-Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:8065/config/extractions/BSEG/result-columns``` returns the following result:<br>
+Example: <br>
+Calling the metadata of extraction *BSEG* using the URL ```http://localhost:8065/config/extractions/BSEG/result-columns``` returns the following result:<br>
 
 <details>
-<summary>Click here to show the result</summary>
+<summary>Click here to show the example</summary>
 {% highlight json %}
 {
     "columns": 
@@ -92,22 +77,20 @@ Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:80
 
 
 {: .box-note }
-**Note:** Date fields like *AUGDT* have data type *ConvertedDate* if Date Conversion in the Destination Settings is active. If inactive, the data type is *StringLengthMax* with a length of 8.
+**Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. If inactive, the data type is *StringLengthMax* with a length of 8.
 
 ### Parameters
 Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](./extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
 
 The URL pattern is: 
-```
-http://[host]:[port]/config/extractions/[extraction_name]/parameters
-```
+```http://[host]:[port]/config/extractions/[extraction_name]/parameters```
 This delivers a list of runtime parameters. <br>
 
-**Example:** <br>
+Example: <br>
 Calling the metadata of extraction *plants* using this URL: ```http://localhost:8065/config/extractions/plants/parameters/``` returns the following result:<br>
 
 <details>
-<summary>Click here to show the result</summary>
+<summary>Click here to show the example</summary>
 {% highlight json %}
 {
     "extraction": 
@@ -184,17 +167,14 @@ Calling the metadata of extraction *plants* using this URL: ```http://localhost:
 </details>
 
 ### List of extractions
-A list of all extractions defined in Xtract Universal can be retrieved by the following URL pattern:
+A list of all extractions defined in Xtract Universal can be retrieved by the following URL pattern:<br>
+```http://[host]:[port]/config/extractions/```
 
-```
-http://[host]:[port]/config/extractions/
-```
-
-**Example:** <br>
+Example: <br>
 Calling ```http://localhost:8065/config/extractions/``` returns a list of all extractions defined on the Xtract Universal server running on localhost:8065.
 
 <details>
-<summary>Click here to show the list</summary>
+<summary>Click here to show the example</summary>
 {% highlight json %}
 {
     "extractions": 
@@ -272,19 +252,17 @@ Calling ```http://localhost:8065/config/extractions/``` returns a list of all ex
 
 A list of extractions writing data to a specific type of destination can be retreived by the following URL pattern:
 
-```
-http://[host]:[port]/config/extractions/?destinationType=[typename]
-```
+```http://[host]:[port]/config/extractions/?destinationType=[typename]```
 
 Possible entries for [typename] are:
 
 *Unknown, Alteryx, AlteryxConnect, AzureDWH, AzureBlob, CSV, DB2, EXASOL, FileCSV, FileJSON, GoodData, GoogleCloudStorage, HANA, HTTPJSON, MicroStrategy, MySQL, ODataAtom,Oracle, Parquet, PostgreSQL, PowerBI, PowerBIConnector, Qlik, Redshift, S3Destination, Salesforce, SharePoint, Snowflake, SQLServer, SqlServerReportingServices, Tableau, Teradata, Vertica*
 
-**Example:** <br>
+Example: <br>
 Calling ```http://localhost:8065/config/extractions/?destinationType=FileCSV``` returns a list of all extractions that write data to a csv flatfile destination. 
 
 <details>
-<summary>Click here to show the list</summary>
+<summary>Click here to show the example</summary>
 {% highlight json %}
 {
     "extractions": 
