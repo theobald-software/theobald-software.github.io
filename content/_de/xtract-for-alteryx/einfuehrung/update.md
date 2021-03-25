@@ -16,9 +16,9 @@ lang: de_DE
 
 1. Kopieren Sie alle Alteryx-Workflows, die das Xtract-for-Alteryx Plug-in verwenden.
 2. Erstellen Sie eine Kopie des Verzeichnisses der SAP-Verbindungen. 
-Abhängig von Ihren Alteryx-Einstellungen, finden Sie das Verzeichnis in: <br>
-- `%AppData%\Theobald Software\Xtract for Alteryx` - allgemein<br>
-- `C:\Users\[USERNAME]\AppData\Roaming\Theobald Software\Xtract for Alteryx` - lokal
+
+Abhängig von Ihren Alteryx-Einstellungen, prüfen Sie nachfolgendes Verzeichnis:
+- `C:\Users\[USERNAME]\AppData\Roaming\Theobald Software\Xtract for Alteryx\Connections`
 
 Ein Backup ist ebenfalls empfehlenswert, wenn Sie die Alteryx-Version aktualisieren.
 Wir empfehlen in regelmäßigem Abstand ein Backup zu erstellen, damit Sie bei Bedarf problemlos wieder auf die vorige Version wechseln können.
