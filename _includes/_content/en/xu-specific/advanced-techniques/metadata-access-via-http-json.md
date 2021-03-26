@@ -10,7 +10,7 @@ The following section contains information about the available metadata and the 
 The URL pattern to retrieve the result columns of an extraction is: <br> 
 ``` http://[host]:[port]/config/extractions/[extraction_name]/result-columns ```
 
-The metadata table has the following schema:
+The result column has the following schema:
 
 | Column       | Type    | Description                         |
 |--------------|---------|-------------------------------------|
@@ -21,8 +21,8 @@ The metadata table has the following schema:
 | isPrimaryKey | boolean | column is primary key of extraction |
 | isEncrypted  | boolean | encryption for column is active     |
 | decimalsCount  | Integer | number of decimal places |
-| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity (optional)|
-| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity (optional)|
+| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity |
+| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity |
 
 Possible values for *type* are: <br>
 *Byte, Short, Int, Long, Double, Decimal, NumericString, StringLengthMax, StringLengthUnknown, ByteArrayLengthExact, ByteArrayLengthMax, ByteArrayLengthUnknown, Date, ConvertedDate, Time*

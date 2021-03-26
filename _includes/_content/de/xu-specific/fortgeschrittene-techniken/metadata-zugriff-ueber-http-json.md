@@ -1,16 +1,16 @@
 ### Über diese Seite
 Xtract Universal bietet die Möglichkeit, verschiedene Metadaten-Informationen über eine Web-API abzurufen.
-Der folgende Abschnitt beinhaltet Informationen über die verfügbaren Metadaten die dazugehörigen URLs.
+Der folgende Abschnitt beinhaltet Informationen über die verfügbaren Metadaten und die dazugehörigen URLs.
 
 {: .box-note }
-**Hinweis:** Die Metadaten-API gibt Daten als http-json stream aus. Die API ist ab [Version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history) verfügbar.
+**Hinweis:** Die Metadaten-API gibt Daten im http-json Format aus. Die API ist ab [Version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history) verfügbar.
 
 ### Ergebnisspalten einer Extraktion
 
 Das URL Pattern zum Abruf von Ergebnisspalten einer Extraktion lautet: <br> 
 ``` http://[host]:[port]/config/extractions/[extraction_name]/result-columns ```
 
-Die Metadaten-Tabelle hat folgendes Schema:
+Die Ergebnisspalte wird über folgende Felder definiert:
 
 | Spalte       | Typ    | Beschreibung                         |
 |--------------|---------|-------------------------------------|
@@ -21,8 +21,8 @@ Die Metadaten-Tabelle hat folgendes Schema:
 | isPrimaryKey | boolean | Spalte ist Primärschlüssel der Extraktion |
 | isEncrypted  | boolean | Verschlüsselung für Spalte ist aktiv     |
 | decimalsCount  | Integer | Anzahl der Dezimalstellen |
-| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity (optional)|
-| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity (optional)|
+| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/de-DE/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity|
+| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/de-DE/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity|
 
 Mögliche Werte für *type* sind: <br>
 *Byte, Short, Int, Long, Double, Decimal, NumericString, StringLengthMax, StringLengthUnknown, ByteArrayLengthExact, ByteArrayLengthMax, ByteArrayLengthUnknown, Date, ConvertedDate, Time*
@@ -248,9 +248,9 @@ Beispiel: <br>
 </details>
 
 
-### List von Extractionen mit einer bestimmen Destination
+### Liste von Extraktionen mit einer bestimmen Destination
 
-Eine Liste aller Extraktionen die Daten in eine bestimmte Destination schreiben, kann über folgendes URL-Pattern abgerufen werden:<br>
+Eine Liste aller Extraktionen, die Daten in eine bestimmte Destination schreiben, kann über folgendes URL-Pattern abgerufen werden:<br>
 ```http://[host]:[port]/config/extractions/?destinationType=[typename]```
 
 Mögliche Einträge für [typename] sind:<br>
