@@ -10,7 +10,6 @@ weight: 4
 lang: en_GB
 old_url:
 ---
-
 Anstelle des Power BI Custom Connector, können Sie auch das Custom Power Query M-script zum Verbinden von Power BI mit Xtract Universal verwenden. 
 
 Das Power BI Query M-Script befindet sich innerhalb des Installationsverzeichnisses von Xtract Universal: `C:\Program Files\XtractUniversal\powerbi\loading_script.txt`.

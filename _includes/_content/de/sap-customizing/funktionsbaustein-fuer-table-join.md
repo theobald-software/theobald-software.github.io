@@ -1,6 +1,9 @@
 {: .box-note }
 **Hinweis** Die Table-Join Komponente wurde als *deprecated* (veraltet) gekennzeichnet. Verwenden Sie daher die Table-Komponente mit dem Z-Baustein Z_THEO_READ_TABLE, um SAP-Tabellen zu joinen.
 
+### Installation mit einem SAP-Transport
+Installation des Funktionsbaustein mit Hilfe des mitgelieferten Transportauftrags *thtrans.zip*. <br> Der Transportauftrag befindet sich im folgendem Installationsverzeichnis `C:\Program Files\[XtractProduct]\ABAP\thtrans.zip`.
+
 ### Manuelle Installation des Funktionsbausteins Z_XTRACT_IS_TABLE_JOIN
 
 Die Table Join-Komponente dient dazu, mehrere Tabellen oder Views auf SAP-Seite zusammenzufassen (Join).  
