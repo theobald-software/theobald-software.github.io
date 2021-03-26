@@ -17,7 +17,7 @@ Die folgende Grafik zeigt, auf welchen Arbeitsplätzen die Installation von Xtra
  
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-Xtract Universal wird pro Windows Server lizenziert, d.h. die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Eine Demo-Lizenz wird automatisch mit der Installation von Xtract Universal installiert. <br>
+Xtract Universal wird pro Zielumgebung und Windows Server lizenziert. Die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Jede Zielumgebung muss zusätzlich lizenziert werden. Eine Demo-Lizenz wird automatisch mit der Installation von Xtract Universal installiert. <br>
 Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theobald Software](https://my.theobald-software.com/)zur Verfügung gestellt. Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
 Wenn Sie den Xtract Universal Designer und den Xtract Universal Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
  
@@ -34,6 +34,9 @@ Ein Neustart des Xtract Universal Service ist nicht notwendig.
 **Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom Xtract Universal Designer  **[Help] > [Info]** oder drücken Sie F12.<br>
 
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
+
+Die Anzahl der lizensierten Zielumgebungen wird unter 
+*Sources limit* zeigt an, wie viele Zielumgebungen die Lizenz aktuell unterstützt.<br>
 
 Vor der Xtract Universal Version 2.99.0 wurden die Lizenzdateien als .dll Dateien ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des Xtract Universal Service ist bei einer .dll-Datei unabdingbar.
 
