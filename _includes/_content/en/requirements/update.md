@@ -24,4 +24,4 @@ After sucessfull installation and test of the update version on the test environ
 
 ### How to install a new version? 
 A newer version can be installed over the old version. It is not necessary to uninstall the previous version. 
-New versions are available via our [customer portal]https://my.theobald-software.com).
+New versions are available via our [customer portal](https://my.theobald-software.com).
