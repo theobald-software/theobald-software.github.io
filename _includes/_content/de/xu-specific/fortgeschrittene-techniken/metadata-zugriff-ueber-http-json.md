@@ -21,8 +21,8 @@ Die Ergebnisspalte wird über folgende Felder definiert:
 | isPrimaryKey | boolean | Spalte ist Primärschlüssel der Extraktion |
 | isEncrypted  | boolean | Verschlüsselung für Spalte ist aktiv     |
 | decimalsCount  | Integer | Anzahl der Dezimalstellen |
-| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/de-DE/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity|
-| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/de-DE/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity|
+| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/de-DE/cf21ea5d446011d189700000e8322d00.html) | String  | Referenzfeld für Währung/Quantität|
+| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/de-DE/cf21ea5d446011d189700000e8322d00.html) | String  | Referenztabelle für Währung/Quantität|
 
 Mögliche Werte für *type* sind: <br>
 *Byte, Short, Int, Long, Double, Decimal, NumericString, StringLengthMax, StringLengthUnknown, ByteArrayLengthExact, ByteArrayLengthMax, ByteArrayLengthUnknown, Date, ConvertedDate, Time*
