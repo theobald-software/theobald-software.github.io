@@ -14,7 +14,7 @@ An extraction has two types of settings.
 The *Extraction Settings* include settings that affect only the respective extraction type, while [*General Settings*](../getting-started/general-settings) are the same for all extraction types. 
 
 ### Opening Extraction Settings
-1In the window "Extract Single and Joint SAP Tables or Views" click **Extraction Settings**. The window "Table Settings" opens. 
+In the window "Extract Single and Joint SAP Tables or Views" click **Extraction Settings**. The window "Table Settings" opens. 
 
 
 {% include _content/en/tables/extraction-settings.md  %}
