@@ -25,9 +25,9 @@ The target environment *Power BI Connector* offers two ways to connect Power BI 
 ### Supported Power BI environments
 
 Xtract Universal supports the following environments:
-- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) via [Power BI Custom Connector](./pbi-custom-connector)
+- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) via [Power BI Custom Connector](./Power-BI-Connector/pbi-custom-connector)
 - [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) via [Power BI on-premises data gateway](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem)
-- [Power BI Report Server](https://docs.microsoft.com/en-us/power-bi/report-server/get-started) via [Power Query M-script](./pbi-script)
+- [Power BI Report Server](https://docs.microsoft.com/en-us/power-bi/report-server/get-started) via [Power Query M-script](./Power-BI-Connector/pbi-script)
 
 
 |                        | Custom Connector | M-script |

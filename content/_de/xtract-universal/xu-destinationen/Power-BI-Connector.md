@@ -25,9 +25,9 @@ Die Zielumgebung *Power BI Connector* bietet zwei Wege zum Verbinden von Power B
 ### Unterstützte Power BI Umgebungen
 
 Xtract Universal unterstützt folgende Umgebungen: 
-- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) mittels [Power BI Custom Connector](./pbi-custom-connector-einrichten)
+- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) mittels [Power BI Custom Connector](./Power-BI-Connector/pbi-custom-connector-einrichten)
 - [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) mittels [Power BI on-premises data gateway](https://docs.microsoft.com/de-de/data-integration/gateway/service-gateway-onprem)
-- [Power BI Report Server](https://docs.microsoft.com/de-de/power-bi/report-server/get-started) mittels [Power Query M-script](./pbi-script)
+- [Power BI Report Server](https://docs.microsoft.com/de-de/power-bi/report-server/get-started) mittels [Power Query M-script](./Power-BI-Connector/pbi-script)
 
 
 |  | Custom Connector | M-script |
