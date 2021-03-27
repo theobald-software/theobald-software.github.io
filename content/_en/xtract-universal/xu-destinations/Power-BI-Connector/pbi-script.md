@@ -22,17 +22,17 @@ Use either the Power Query M-script **or** the Power BI Custom Connector.
 ### Set up the Power Query M-script in Power BI
 
 {: .box-note }
-**Note:** Only use the extractions with the *Power BI Connector* destination.
+**Note:** Only use the extractions with the [Power BI Connector destination](./pbi-connection).
 
-1. Create a new Power BI report using a *Blank Query* as data source.
-2. Open the *Advanced Editor*.
+1. Create a new Power BI report using **Home > Get Data > Blank Query** as data source.
+2. Open the **[Advanced Editor]**.
+![Advanced Editor](/img/content/pbi_advanced_editor.png){:class="img-responsive"}
 3. Open the Xtract Universal *loading_script* in any text editor.
 4. Copy the complete content into the *Advanced Editor* window in Power BI.
-5. Change the values for **ExtractionName** and the **ServerURL** to match the names of your Xtract Universal extraction and web server.<br>
-6. Close the *Advanced Editor*.
-![M-Script](/img/content/XU_PowerQueryScript.png){:class="img-responsive"}
-7. Click on *Close & Apply*.
+5. Change the values for **ExtractionName** and the **ServerURL** to match the names of your Xtract Universal extraction and web server (1).
 ![PowerQueryEditor](/img/content/XU_PBI_PowerQueryEditor.png){:class="img-responsive"}
+6. Confirm the script by clicking **[Done]** (2) within *Advanced Editor*.}
+7. Click on **{Close & Apply]**.
 8. When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) 
 
 
