@@ -1,36 +1,54 @@
-Im letzten Beispiel haben wir ein **Full-Update** ausgeführt. <br>
-Ein Full-Update fordert alle Daten an, die den von Ihnen festgelegten Selektionskriterien entsprechen.
+Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update_mode).
 
-**Schritt 1: Delta Initialisation** 
+### Schritt 1: Delta Initialisierung [C]
+In diesem Modus werden alle Daten angefordert, die den von Ihnen eingestellten Auswahlkriterien entsprechen.
 
-Um ein echtes Delta-Verfahren zum Laufen zu bringen, muss das Delta zunächst initialisiert werden. Um das zu tun, stellen Sie im Hauptfenster der Extraktion den UpdateMode auf ***Delta Initialisation***. <br>
-Somit werden alle Daten angefordert, die den von Ihnen festgelegten Selektionskriterien entsprechen.<br>
-Danach können Sie das Delta Update nutzen.
+Stellen Sie den **Update-Modus** auf *Delta-Initialisierung* und führen Sie ihn aus.<br>
+Die Initialisierungsselektionen werden kopiert, um die Deltasätze zu laden. Sie können das Delta-Update verwenden.
 
-**Schritt 1 Alternativ: Delta Init (without data)** 
+{: .box-note } 
+**Hinweis:** Wenn Sie einen Delta-Prozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits (Initialisierungsanforderungen), indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
 
-Hier werden keine Daten geladen. Danach können Sie aber das Delta Update nutzen.
+### Alternativer Schritt 1: Delta Init (ohne Daten) [S]
+Sie entspricht der **Delta-Initialisierung**, ohne Daten aus der SAP-Datenquelle zu extrahieren.
+Nach der Ausführung der **Delta Init** können Sie das **Delta Update** verwenden.
 
-**Schritt 2: Delta Update** 
+{: .box-note } 
+**Hinweis:** Wenn Sie einen Delta-Prozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits (Initialisierungsanforderungen), indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
 
-Lassen Sie Ihr Paket einmalig laufen, und stellen Sie dann den UpdateType auf ***Delta Update***. <br>
-Mit dem Delta Update werden nur noch die Änderungen seit der letzten Übertragung extrahiert.
-### Optional
+### Schritt 2: Delta-Update [D]
+Das Delta-Update extrahiert nur Daten, die seit der letzten Delta-Anforderung im SAP-System hinzugefügt oder geändert wurden.
 
-**Delta Queue - RSA7** 
+Führen Sie Ihr Paket zunächst einmal aus und setzen Sie dann den **Update-Modus** auf *Delta-Update*.
+Es werden nur die Änderungen extrahiert, die seit der letzten Übertragung vorgenommen wurden.
 
-Ist das Delta einmal aktiviert, können Sie die anstehenden Sätze in der Delta-Queue in der Transaktion RSA7 ansehen.
+{: .box-note } 
+**Hinweis:** Um Fehler, Abbrüche und Lücken zu vermeiden, führen Sie die nächste Extraktion im Update-Modus *Wiederholen* durch.
+
+### Optional: Wiederholen [R]
+Wiederholt den letzten Deltalauf und aktualisiert alle Daten, die seit dem letzten Lauf aufgelaufen sind. Wenn der letzte Lauf nicht erfolgreich war, werden alle Daten des letzten Delta-Updates gelöscht, bevor ein neuer Lauf gestartet wird.<br>
+Ein **Wiederholungslauf** kann mehrmals gestartet werden.
+
+Viele Datenquellen liefern das Feld ROCANCEL. Dieses Feld legt fest, ob die Datensätze in Abhängigkeit von der Delta-Verfahrensart der Datenquelle ergänzt oder überschrieben werden. Es definiert, wie ein Datensatz im Delta-Verfahren aktualisiert wird.<br>
+In einem ABR-Modus: <br>
+* *'Blank'* gibt ein Nachbild zurück,<br>
+* *'X'* gibt ein Vorher-Bild zurück,<br>
+* *'D'* löscht den Datensatz und<br>
+* *'R'* gibt ein umgekehrtes Bild zurück.
+
+### Optional: Delta-Queue - RSA7
+Sobald Delta aktiviert ist, können Sie in der SAP-Transaktion RSA7 die in der Delta-Queue anstehenden Datensätze einsehen.
 
 ![Delta](/img/content/Delta.png){:class="img-responsive"}
 
-Falls im Moment keine neuen Daten zur Übertragung anstehen, wird ein entsprechender Protokollvermerk geschrieben und die Daten-Pipeline bleibt leer.
+Wenn im Moment keine neuen Daten zu übertragen sind, wird eine entsprechende Protokollmeldung vermerkt und die Datenpipeline bleibt leer.
 
-Sie müssen sicherstellen, dass ein Delta-Update korrekt verbucht wird, bevor das Nächste angestoßen wird. Der Anstoß eines neuen Delta-Updates löscht den Letzten.
+{: .box-note } 
+**Hinweis:** Bevor Sie das nächste Update einleiten, stellen Sie sicher, dass ein Delta-Update ordnungsgemäß ausgeführt wurde. Durch das Ausführen eines neuen Delta-Updates wird das letzte Update entfernt. 
 
-**Repeat** 
 
-Ein **Repeat** bezieht sich immer auf das letzte Delta-Update, welches dann komplett wiederholt wird. Es spielt dabei keine Rolle, ob das letzte Delta-Update erfolgreich ausgeführt wurde oder nicht. Ein Repeat kann gegebenfalls mehrmals ausgeführt werden.
-
-Weitere Informationen über das Delta-Verfahren finden Sie in der SAP-Hilfe:<br>
-[Delta Übertragung ins BI](http://help.sap.de/saphelp_nw70/helpdata/de/37/4f3ca8b672a34082ab3085d3c22145/content.htm)<br>
-[Delta-Verfahren](https://help.sap.com/saphelp_nw70/helpdata/de/84/81eb588fc211d4b2c90050da4c74dc/content.htm?no_cache=true) 
+*****
+#### Freigegebene Links
+- [Delta Transfer to BI](https://help.sap.com/doc/saphelp_nw70/7.0.31/en-US/37/4f3ca8b672a34082ab3085d3c22145/content.htm?no_cache=true)
+- [Delta Process](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.23/en-US/4f18f6aa3fca410ae10000000a42189d.html)
+- [Delta Verfahren](http://help.sap.com/saphelp_nw73/helpdata/de/4f/18f6aa3fca410ae10000000a42189d/content.htm).

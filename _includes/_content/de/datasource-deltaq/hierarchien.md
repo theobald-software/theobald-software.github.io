@@ -1,22 +1,29 @@
-Im folgenden Beispiel erfolgt der Download von Hierarchiedaten aus der DataSource 0Costcenter_0101_Hier. Selektieren Sie diese DataSource mit der Suchhilfe (erster Fernglas-Button im Editor)
+### Datenquelle auswählen
+Wie in [Einen Extraktor definieren](./eine-deltaq-quelle-definieren) gezeigt, wählen Sie im Editor "Look Up OLTP Source" über die **Suche** (Lupensymbol) einen **OLTP Source Name**.
 
-![Look-Up-Deltaq-Oltp-Source](/img/content/Look-Up-Deltaq-Oltp-Source.png){:class="img-responsive"}
+Beispiel: Datenquelle *0COSTCENTER_0101_HIER*.
+![DeltaQ-Hierarchy-001](/img/content/DeltaQ-Hierarchy-001.png){:class="img-responsive"}
 
+Wählen Sie im Editor "Look UP Hierarchy Details" einen **Hierarchy Name**.
 
-Im folgenden Fenster wählen Sie eine Hierarchie aus (in diesem Beispiel 0001C2000).
+Beispiel: Hierarchy Name *0001C2000*.
+![DeltaQ-Hierarchy-002](/img/content/DeltaQ-Hierarchy-002.png){:class="img-responsive"}
 
+Im Hauptfenster "Extract SAP DataSources and Extractors" wird die Struktur angezeigt, die in jeder Hierarchie die gleiche ist. 
 
-![Look-Up-Deltaq-Hierarchy-Details](/img/content/Look-Up-Deltaq-Hierarchy-Details.png){:class="img-responsive"}
+Klicken Sie auf **[Extraction Settings]**, um die Sprache der Hierarchie einzustellen.
+![DeltaQ-Hierarchy-003](/img/content/Deltaq-Hierarchy-Selected.png){:class="img-responsive"}
 
-In der folgenden Maske sehen wir die Struktur, die in jeder Hierarchie gleich ist. Wir setzen noch oben rechts das logische Zielsystem und die technischen Einstellungen zur RFC-Destination ein. Unter *Extraction Settings* ist die Sprache der Hierarchie noch anzugeben.
+### Vorschau der Extraktion
+Klicken Sie auf **[Run]**, um das Fenster **Run Extraction** anzuzeigen und den Laufzeitparameter **Preview** zu aktivieren
+![DeltaQ-Hierarchy-004](/img/content/DeltaQ-Hierarchy-004.png){:class="img-responsive"}
 
+**NodeID**ist die fortlaufende Nummer eines Knotens in der Hierarchie. **NodeName** ist der aktuelle Wert (die laufende Nummer des Knotens in der Hierarchie). Mit der **ParentID** und **ChildID** kann die Hierarchie rekonstruiert werden.
+Der **Short/Medium/Long Text** befindet sich im Backend-Bereich.
 
-![Deltaq-Hierarchy-Selected](/img/content/Deltaq-Hierarchy-Selected.png){:class="img-responsive"}
+{: .box-tip }
+**Tipp:** Im Gegensatz zu Attributen und Transaktionen müssen Hierarchien nicht aktiviert werden.
 
-![Deltaq-Hierarchy-Selected](/img/content/Deltaq-Hierarchy-Selected.png){:class="img-responsive"}
-
-Im Gegensatz zu Attributen und Transaktionen müssen Hierarchien nicht aktiviert werden. Es kann sofort ein Preview erfolgen, der das folgende Ergebnis liefert.
-
-![DeltaQ-Hierarchies-04](/img/content/DeltaQ-Hierarchies-04.png){:class="img-responsive"}
-
-Die *NodeID* ist die laufende Nummer des Knotens in der Hierarchie. *NodeName* ist der eigentliche Wert. Durch die *ParentID* und die *ChildID* kann die Hierarchie rekonstruiert werden. Im hinteren Bereich findet man die Texte.
+### Vorschau der Extraktion
+Klicken Sie auf **[Run]**, um das Fenster **Run Extraction** anzuzeigen und den Laufzeitparameter **Preview** zu aktivieren
+![DeltaQ-Hierarchy-004](/img/content/DeltaQ-Hierarchy-004.png){:class="img-responsive"}

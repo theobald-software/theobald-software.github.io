@@ -8,7 +8,7 @@ parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=customizing
+progressstate: 5
 ---
 
-Um die DeltaQ-Komponente nutzen zu können, sind einige Customizing-Einstellungen im SAP ERP vorzunehmen, die im Abschnitt [SAP Customizing](../sap-customizing)  beschrieben sind.
+Um die DeltaQ-Komponente nutzen zu können, sind einige Customizing-Einstellungen im SAP ERP vorzunehmen, die Schritt für Schritt im Abschnitt [SAP Customizing](../sap-customizing/customizing-fuer-deltaq) beschrieben werden.

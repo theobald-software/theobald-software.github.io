@@ -20,13 +20,17 @@ Parameters can have *single values*, *intervals* and *complex selections*. <br>
 
 Click on **[Edit]** (1) and open the editor to change the parameters. The window "Edit Range" opens.
 
-Set the values for **Sign** (2); **Option** (3), **Low Value** (4) and **High Value** (5), if needed.<br>
+Set the values for **Sign** (2), **Option** (3), **Low Value** (4) and if needed, for **High Value** (5).<br>
 ![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
 
 **Sign** (2) can get two values: *Include* or *Exclude*. This determines for every row whether the result of the condition is included or excluded in the entire resulting set for all rows.<br>
 **Option** (3) contains the selection option for the condition of the row in form of logical operators.<br>
 **Low Value** (4) designates the comparison value or the lower interval limit.<br>
 **High Value** (5) designates the upper interval limitation.
+
+{: .box-note }
+**Note:** Add *@* right before the value to mark it as a variable.<br>
+ 
 
 |Operator|Description|
 |:---|:---|
@@ -47,7 +51,5 @@ To *delete* a row, click the icon at the bottom left.
 
 SSIS Variables are supported. 
 
-{: .box-note }
-**Note:** Add *@* right before the value to mark it as a variable.
 
 

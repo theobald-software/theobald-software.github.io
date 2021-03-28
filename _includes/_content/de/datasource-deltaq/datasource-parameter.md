@@ -1,36 +1,36 @@
-Bei den Paremetern kann es sich um Einzelwerte, einen Intervall oder um eine komplexe Selektion handeln. 
+### Parameter bearbeiten 
 
-Bei einer komplexen Selektion springen Sie über den Edit-Link in ein neues Fenster ab.<br> 
-Natürlich können in die Textfelder auch Variablen eingetragen werden (wie im Bild zu sehen).<br>
-Bitte fügen Sie eine @ direkt vor den Wert, um es als Variable zu markieren.
+{: .box-note } 
+**Hinweis:** Parameter sind beim Modus **Delta Update** nicht erlaubt, da die Parameter des Modus **Init** automatisch übernommen werden.
 
-Das folgende Bild zeigt eine komplexe Selektion:
+Parameter können *Einzelwerte*, *Intervalle* und *komplexe Filter* haben. <br>
+![Edit-Parameters](/img/content/Parameters_edit.png){:class="img-responsive"}
 
+Klicken Sie auf **[Edit]** (1) und öffnen Sie den Editor zum Ändern der Parameter. Es öffnet sich das Fenster "Edit Range".
+
+Stellen Sie die Werte für **Sign** (2), **Option** (3), **Low Value** (4) und falls erforderlich, für **High Value** (5) ein.<br>
 ![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
 
-Das Feld Sign hat zwei Optionen: 
-- Include 
-- Exclude 
-
-Mit dieser Funktion können Sie jene Werte wählen, die Sie für das Ergebnis ein- bzw. ausschließen wollen. 
-
-Das Feld Option enthält den logischen Operator für die Bedingung: <br>
-
-|Operator|Beschreibung|
-|:----|:----|
-|"=" | gleich |
-|"!="| ungleich |
-| "<" | Kleiner als |
-|"<=" |Kleiner oder gleich |
-|">"| Größer als |
-|">=" |Größer oder gleich |
-|"[]"| zwischen (Intervall) |
-|"][" | nicht zwischen (Intervall) |
-|"*" | enthält (Like)|
-
-Die Spalte Low Value muss bei jedem Operator gefüllt werden.<br>
-Die Spalte High Value wird nur von den Operatoren verwendet, welche einen zweiten Paramter erwarten. 
+**Sign** (2) kann zwei Werte erhalten: *Include* oder *Exclude*. Damit wird für jede Zeile festgelegt, ob das Ergebnis der Bedingung in der gesamten Ergebnismenge für alle Zeilen ein- oder ausgeschlossen wird.<br>
+**Option** (3) enthält die Auswahlmöglichkeit für die Bedingung der Zeile in Form von logischen Operatoren.<br>
+**Low Value** (4) bezeichnet den Vergleichswert bzw. die untere Intervallgrenze.<br>
+**High Value** (5) bezeichnet die obere Intervallgrenze.
 
 
-Auch Variablen und [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) werden unterstützt.<br>
-Parameter (Filter) sind nicht erlaubt für den Delta Update Modus, denn die Filter des Init Modus werden hier angewendet. 
+| Operator   |      Bedeutung      |  
+|:---------|:------------- |
+| =, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
+| <>, NE |Wahr, wenn der Inhalt von operand1 ungleich dem Inhalt von operand2 ist|
+| <, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|
+| >, GT |  Wahr, wenn der Inhalt von operand1 größer als der Inhalt von operand2 ist|
+| <=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
+| >=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
+| *, LIKE |  Wahr, wenn der Wert von operand1 mit dem Muster ('%' ist eine beliebige Zeichenkette) im operand2 übereinstimmt.|
+
+### Löschen
+Um eine Zeile zu *löschen*, klicken Sie auf das Symbol unten links.
+
+### Unterstützte Funktionen
+
+Variablen und [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) werden ebenfalls unterstützt. 
+

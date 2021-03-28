@@ -8,6 +8,6 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 8
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=deltaq-extraktionseinstellungen
+progressstate: 5
 ---
 {% include _content/de/datasource-deltaq/extraktionseinstellungen.md %}

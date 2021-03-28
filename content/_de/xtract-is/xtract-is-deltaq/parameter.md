@@ -8,31 +8,42 @@ parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=parameter
+progressstate: 5
 ---
+### Parameter bearbeiten 
 
-Bei den Paremetern kann es sich um Einzelwerte, einen Intervall oder um eine komplexe Selektion handeln. 
+{: .box-note } 
+**Hinweis:** Parameter sind beim Modus **Delta Update** nicht erlaubt, da die Parameter des Modus **Init** automatisch übernommen werden.
 
-Bei einer komplexen Selektion springen Sie über den Edit-Link in ein neues Fenster ab. <br>
-Natürlich können in die Textfelder auch Variablen eingetragen werden (wie im Bild zu sehen).<br>
-Bitte fügen Sie eine @ diret vor den Wert, um es als variable zu markieren.
+Parameter können *Einzelwerte*, *Intervalle* und *komplexe Auswahlen* haben. <br>
+![Edit-Parameters](/img/content/Parameters_edit.png){:class="img-responsive"}
 
-Das folgende Bild zeigt eine komplexe Selektion:
+Klicken Sie auf **[Edit]** (1) und öffnen Sie den Editor zum Ändern der Parameter. Es öffnet sich das Fenster "Edit Range".
 
+Stellen Sie die Werte für **Sign** (2), **Option** (3), **Low Value** (4) und falls erforderlich, für **High Value** (5) ein.<br>
 ![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
 
-Das Feld Sign hat 2 Optionen: Include - Exclude. Mit dieser Funktion können Sie jene Werte wählen, die Sie für das Ergebnis ein- bzw. ausschließen wollen. 
+**Sign** (2) kann zwei Werte erhalten: *Include* oder *Exclude*. Damit wird für jede Zeile festgelegt, ob das Ergebnis der Bedingung in der gesamten Ergebnismenge für alle Zeilen ein- oder ausgeschlossen wird.<br>
+**Option** (3) enthält die Auswahlmöglichkeit für die Bedingung der Zeile in Form von logischen Operatoren.<br>
+**Low Value** (4) bezeichnet den Vergleichswert bzw. die untere Intervallgrenze.<br>
+**High Value** (5) bezeichnet die obere Intervallgrenze.
 
-Das Feld Option enthält den logischen Operator für die Bedingung: <br>
-"="  Gleich<br>
-"!=" Ungleich<br>
-"<" Kleiner als<br>
-"<=" Kleiner oder gleich<br>
-">" Größer als <br>
-">=" Größer oder gleich <br>
-"[]" zwischen (Intervall)<br>
-"][" nicht zwischen (Intervall)<br>
-" * "entählt (Like)
+| Operator   |      Bedeutung      |  
+|----------|:------------- |
+| =, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
+| <>, NE |Wahr, wenn der Inhalt von operand1 ungleich dem Inhalt von operand2 ist|
+| <, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|
+| >, GT |  Wahr, wenn der Inhalt von operand1 größer als der Inhalt von operand2 ist|
+| <=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
+| >=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
+| *,  LIKE |  Wahr, wenn der Wert von operand1 mit dem Muster ('%' ist eine beliebige Zeichenkette) im operand2 übereinstimmt.|
 
-Die Spalte Low Value muss bei jedem Operator gefüllt werden.<br>
-Die Spalte High Value wird nur von den Operatoren verwendet, welche einen zweiten Paramter erwarten. 
+### Löschen
+Um eine Zeile zu *löschen*, klicken Sie auf das Symbol unten links.
+
+### Unterstützte Funktionen
+
+SSIS-Variablen werden unterstützt. 
+
+{: .box-note }
+**Hinweis:** Fügen Sie *@* direkt vor dem Wert ein, um ihn als Variable zu kennzeichnen.

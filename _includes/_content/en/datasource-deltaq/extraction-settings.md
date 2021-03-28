@@ -79,12 +79,12 @@ The parent child hierarchy will be transformed in a regular hierarchy.
 #### Natural Representation
 
 **Level Count**
-Defines the maximum number of levels if the representation natural is selected. In the following screenshot you see the hierarchie shown in the previous screenshot with five levels in the representation natural.
+Defines the maximum number of levels if the representation natural is selected. In the following screenshot you see the hierarchie shown in the previous screenshot with five levels in the representation *Natural*.
 
 ![Deltaq-Hierarchies-Parent-Child-Natural](/img/content/Deltaq-Hierarchies-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Fill empty levels** <br>
-If the representation *Natural* is selected, the bottom element of the hierarchy will be copied until the last level. In the following screenshot you will see the hierarchy from above with the option Repeat Leaves activated.
+If the representation *Natural* is selected, the bottom element of the hierarchy will be copied until the last level. In the following screenshot you will see the hierarchy from above with the option *Repeat Leaves* activated.
 
 ![Deltaq-Hierarchies-Parent-Child-Repeat](/img/content/Deltaq-Hierarchies-Parent-Child-Repeat.png){:class="img-responsive"}
 
