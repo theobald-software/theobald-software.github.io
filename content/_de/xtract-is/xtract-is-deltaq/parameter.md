@@ -8,7 +8,7 @@ parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=parameter
+progressstate: 5
 ---
 ### Parameter bearbeiten 
 
@@ -28,21 +28,15 @@ Stellen Sie die Werte für **Sign** (2), **Option** (3), **Low Value** (4) und f
 **Low Value** (4) bezeichnet den Vergleichswert bzw. die untere Intervallgrenze.<br>
 **High Value** (5) bezeichnet die obere Intervallgrenze.
 
-{: .box-note }
-**Hinweis:** Fügen Sie *@* direkt vor dem Wert ein, um ihn als Variable zu kennzeichnen.
- 
-
-|Operator|Beschreibung
-|:---|:---|
-| = |Gleich|
-| != |Nicht gleich|
-| < |Niedriger als|
-| <= |Niedriger gleich als|
-| > |Größer als|
-| >= |Größer gleich als|
-| [] |Zwischen|
-| ][ |NichtZwischen|
-| * |Enthält Muster (wie)| 
+| Operator   |      Bedeutung      |  
+|----------|:------------- |
+| =, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
+| <>, NE |Wahr, wenn der Inhalt von operand1 ungleich dem Inhalt von operand2 ist|
+| <, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|
+| >, GT |  Wahr, wenn der Inhalt von operand1 größer als der Inhalt von operand2 ist|
+| <=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
+| >=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
+| *,  LIKE |  Wahr, wenn der Wert von operand1 mit dem Muster ('%' ist eine beliebige Zeichenkette) im operand2 übereinstimmt.|
 
 ### Löschen
 Um eine Zeile zu *löschen*, klicken Sie auf das Symbol unten links.
@@ -50,3 +44,6 @@ Um eine Zeile zu *löschen*, klicken Sie auf das Symbol unten links.
 ### Unterstützte Funktionen
 
 SSIS-Variablen werden unterstützt. 
+
+{: .box-note }
+**Hinweis:** Fügen Sie *@* direkt vor dem Wert ein, um ihn als Variable zu kennzeichnen.

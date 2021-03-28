@@ -8,6 +8,6 @@ parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=customizing-check
+progressstate: 5
 ---
 {% include _content/de/datasource-deltaq/customizing-check.md %}

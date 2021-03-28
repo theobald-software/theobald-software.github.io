@@ -1,8 +1,7 @@
 ### Einstellungen
 
-1. Öffnen Sie die DeltaQ.
-2. Füllen Sie die Felder oben rechts aus. Zur Suche nach den hinterlegten Einstellungen aus dem Dorpdown-Menü, klicken Sie auf **Suchen** (Lupensymbol).Die Einstellungen sind definiert in [DeltaQ Customizing](../sap-customizing/customizing-fuer-deltaq).
-
+1. Öffnen Sie die DeltaQ Extraktion.
+2. Füllen Sie die Felder oben rechts aus. Zur Suche nach den hinterlegten Einstellungen, klicken Sie auf **Suchen** (Lupensymbol).Die Einstellungen sind definiert in [DeltaQ Customizing](../sap-customizing/customizing-fuer-deltaq).
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 
@@ -16,13 +15,13 @@ Stellen Sie sicher, dass der Gateway-Host derselbe ist wie in Ihrer SAP-Verbindu
 
 **Program ID** <br>ist das registrierte RFC-Serverprogramm.
 
-Die Werte **Gateway Host** und **Gateway Service** entsprechen der folgenden SAP-Verbindung.
+Die Werte **Gateway Host** und **Gateway Service** entsprechen den Werten in der SAP-Verbindung.
 
 ![sap-conn-app-ecc](/img/content/sap-conn-app-ecc.png){:class="img-responsive"}
 
-### Prüfen der Anpassungen
+### Überprüfen der Eingaben
 
 Klicken Sie auf **[Customizing Check]**, um das DeltaQ-Customizing auf dem SAP-System zu validieren.
-Stellen Sie sicher, dass alle Zeilen grün sind.
+Stellen Sie sicher, dass alle Zeilen im Bericht grün sind.
 
 ![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}

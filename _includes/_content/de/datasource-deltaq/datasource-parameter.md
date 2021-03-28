@@ -3,7 +3,7 @@
 {: .box-note } 
 **Hinweis:** Parameter sind beim Modus **Delta Update** nicht erlaubt, da die Parameter des Modus **Init** automatisch übernommen werden.
 
-Parameter können *Einzelwerte*, *Intervalle* und *komplexe Auswahlen* haben. <br>
+Parameter können *Einzelwerte*, *Intervalle* und *komplexe Filter* haben. <br>
 ![Edit-Parameters](/img/content/Parameters_edit.png){:class="img-responsive"}
 
 Klicken Sie auf **[Edit]** (1) und öffnen Sie den Editor zum Ändern der Parameter. Es öffnet sich das Fenster "Edit Range".
@@ -16,20 +16,16 @@ Stellen Sie die Werte für **Sign** (2), **Option** (3), **Low Value** (4) und f
 **Low Value** (4) bezeichnet den Vergleichswert bzw. die untere Intervallgrenze.<br>
 **High Value** (5) bezeichnet die obere Intervallgrenze.
 
-{: .box-note }
-**Hinweis:** Fügen Sie *@* direkt vor dem Wert ein, um ihn als Variable zu kennzeichnen.
 
-|Operator|Beschreibung|
-|:---|:---|
-| = | Gleich|
-| != |Nicht gleich|
-| < |Niedriger als|
-| <= |Niedriger oder gleich als|
-| > |Größer als|
-| >= |Größer oder gleich al|
-| [] |Zwischen|
-| ][ |Nicht Zwischen|
-| * |Enthält Muster (wie)| 
+| Operator   |      Bedeutung      |  
+|:---------|:------------- |
+| =, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
+| <>, NE |Wahr, wenn der Inhalt von operand1 ungleich dem Inhalt von operand2 ist|
+| <, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|
+| >, GT |  Wahr, wenn der Inhalt von operand1 größer als der Inhalt von operand2 ist|
+| <=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
+| >=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
+| *, LIKE |  Wahr, wenn der Wert von operand1 mit dem Muster ('%' ist eine beliebige Zeichenkette) im operand2 übereinstimmt.|
 
 ### Löschen
 Um eine Zeile zu *löschen*, klicken Sie auf das Symbol unten links.
@@ -37,3 +33,4 @@ Um eine Zeile zu *löschen*, klicken Sie auf das Symbol unten links.
 ### Unterstützte Funktionen
 
 Variablen und [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) werden ebenfalls unterstützt. 
+

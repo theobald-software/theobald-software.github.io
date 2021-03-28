@@ -8,7 +8,7 @@ parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=stammdaten-im-full-update
+progressstate: 5
 ---
 
 Ziehen Sie eine DeltaQ-Komponente in den Datenflusstask und verknüpfen Sie diese wie gewohnt mit dem ConnectionManager.

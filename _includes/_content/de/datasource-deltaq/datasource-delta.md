@@ -1,7 +1,6 @@
-
 Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update_mode).
 
-### Step 1: Delta Initialisierung [C]
+### Schritt 1: Delta Initialisierung [C]
 In diesem Modus werden alle Daten angefordert, die den von Ihnen eingestellten Auswahlkriterien entsprechen.
 
 Stellen Sie den **Update-Modus** auf *Delta-Initialisierung* und führen Sie ihn aus.<br>
@@ -52,5 +51,4 @@ Wenn im Moment keine neuen Daten zu übertragen sind, wird eine entsprechende Pr
 #### Freigegebene Links
 - [Delta Transfer to BI](https://help.sap.com/doc/saphelp_nw70/7.0.31/en-US/37/4f3ca8b672a34082ab3085d3c22145/content.htm?no_cache=true)
 - [Delta Process](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.23/en-US/4f18f6aa3fca410ae10000000a42189d.html)
-alternativ:
-[Delta Verfahren](http://help.sap.com/saphelp_nw73/helpdata/de/4f/18f6aa3fca410ae10000000a42189d/content.htm).
+- [Delta Verfahren](http://help.sap.com/saphelp_nw73/helpdata/de/4f/18f6aa3fca410ae10000000a42189d/content.htm).

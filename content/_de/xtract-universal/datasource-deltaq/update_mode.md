@@ -8,6 +8,6 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=update_mode
+progressstate: 5
 ---
 {% include _content/de/datasource-deltaq/update_mode.md %}

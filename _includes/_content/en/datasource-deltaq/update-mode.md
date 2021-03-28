@@ -6,9 +6,6 @@ The update mode allows delta update meaning that only added or changed data is e
 In the main window "Extract SAP DataSources and Extractors" select the **Update-Mode** from the drop-down menu.
 ![Update-Mode2](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
 
-The **Update mode** can be set dynamically as runtime parameter **updateType** in the "Run Extraction" dialog.
-![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
-
 
 | Letter |  Desgination   | Description |
 | :------: |:--- | :--- |
@@ -22,3 +19,7 @@ The **Update mode** can be set dynamically as runtime parameter **updateType** i
 | V | **[Xtract IS only]** SSIS Variable; Deprecated, see [Variables](https://help.theobald-software.com/en/xtract-is/bw-cube/variables) |  If **V** is selected, a variable name needs to be entered in the [DeltaQ settings](https://help.theobald-software.com/en/xtract-is/deltaq/settings). The same SSIS variable needs to be created in SSIS and assigned a value. The following values are possible: F, D, C, R, S, I and A. |
 
 
+{: .box-note }
+**Note:** The **Update mode** can be set dynamically as runtime parameter **updateType** in the "Run Extraction" dialog.
+
+![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}

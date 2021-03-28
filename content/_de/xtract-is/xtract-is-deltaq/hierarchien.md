@@ -8,7 +8,7 @@ parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 8
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=hierarchien
+progressstate: 5
 ---
 ### Datenquelle auswählen
 Wie in [Defining an extractor](../xtract-is-deltaq/stammdaten-im-full-update) gezeigt, wählen Sie im Editor "Look Up OLTP Source" über die **Suche** (Lupensymbol) einen **OLTP Source Name**.

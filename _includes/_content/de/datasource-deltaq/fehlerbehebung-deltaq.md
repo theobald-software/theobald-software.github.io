@@ -5,6 +5,5 @@ Der Leitfaden enthält eine Sammlung von Antworten und Abhilfemaßnahmen zu mög
 Die Informationen im DeltaQ Troubleshooting Guide beruhen auf gelösten Problemen aus Supportfällen und werden regelmäßig erweitert. 
 
 ****
-#### Releated Links
-- [DeltaQ-Fehlerbehebungsleitfaden](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide)
-(in Englisch)
+#### Weiterführende Links
+- [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide) (in Englisch)

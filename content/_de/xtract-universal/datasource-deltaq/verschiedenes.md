@@ -8,6 +8,6 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 10
 lang: de_DE
-progressstate: 3
+progressstate: 5
 ---
 {% include _content/de/datasource-deltaq/verschiedenes.md %}

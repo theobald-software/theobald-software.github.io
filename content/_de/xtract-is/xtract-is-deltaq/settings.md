@@ -8,9 +8,9 @@ parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 9
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=deltaq-settings
+progressstate: 5
 ---
-1. Klicken Sie im Hauptfenster "Extract SAP DataSources and Extractors" auf **[Settings]**.
+Klicken Sie im Hauptfenster "Extract SAP DataSources and Extractors" auf **[Settings]**.
 Der Dialog **Xtract IS DeltaQPrefernces** öffnet sich. Das Fenster besteht aus vier Hauptbereichen und Schaltflächen.
 
 ![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings.png){:class="img-responsive"}
@@ -79,4 +79,4 @@ Im Allgemeinen sollte hier nur ein Eintrag sichtbar sein, der einem Init Request
 Nur wenn Sie Init Requests mit sich nicht überschneidenden Auswahlkriterien ausgeführt haben, können Sie mehr als einen Eintrag in dieser Ansicht haben.
 
 **[Generate Documentation]**<br>
-Erzeugt eine Exceldokumentation über die Datenquelle und ihre Felder.
+Erzeugt eine Excel-Datei über die Datenquelle und ihre Felder.

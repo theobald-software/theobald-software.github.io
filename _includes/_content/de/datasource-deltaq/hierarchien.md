@@ -11,16 +11,19 @@ Beispiel: Hierarchy Name *0001C2000*.
 
 Im Hauptfenster "Extract SAP DataSources and Extractors" wird die Struktur angezeigt, die in jeder Hierarchie die gleiche ist. 
 
-Klicken Sie auf **[Extraktionseinstellungen]**, um die Sprache der Hierarchie einzustellen.
+Klicken Sie auf **[Extraction Settings]**, um die Sprache der Hierarchie einzustellen.
 ![DeltaQ-Hierarchy-003](/img/content/Deltaq-Hierarchy-Selected.png){:class="img-responsive"}
 
 ### Vorschau der Extraktion
 Klicken Sie auf **[Run]**, um das Fenster **Run Extraction** anzuzeigen und den Laufzeitparameter **Preview** zu aktivieren
 ![DeltaQ-Hierarchy-004](/img/content/DeltaQ-Hierarchy-004.png){:class="img-responsive"}
 
-**NodeID** ist die fortlaufende Nummer eines Knotens in der Hierarchie.
-**NodeName** ist der aktuelle Wert (die laufende Nummer des Knotens in der Hierarchie). Mit der **ParentID** und **ChildID** kann die Hierarchie rekonstruiert werden.
+**NodeID**ist die fortlaufende Nummer eines Knotens in der Hierarchie. **NodeName** ist der aktuelle Wert (die laufende Nummer des Knotens in der Hierarchie). Mit der **ParentID** und **ChildID** kann die Hierarchie rekonstruiert werden.
 Der **Short/Medium/Long Text** befindet sich im Backend-Bereich.
 
 {: .box-tip }
 **Tipp:** Im Gegensatz zu Attributen und Transaktionen müssen Hierarchien nicht aktiviert werden.
+
+### Vorschau der Extraktion
+Klicken Sie auf **[Run]**, um das Fenster **Run Extraction** anzuzeigen und den Laufzeitparameter **Preview** zu aktivieren
+![DeltaQ-Hierarchy-004](/img/content/DeltaQ-Hierarchy-004.png){:class="img-responsive"}

@@ -1,4 +1,4 @@
-Klicken Sie im Hauptfenster "Extract SAP DataSources and Extractors" auf **[Extraction Settings]**. Der Dialog "DeltaQ-Einstellungen - [Extraktionsname]" wird geöffnet.
+Klicken Sie im Hauptfenster "Extract SAP DataSources and Extractors" auf **[Extraction Settings]**. Der Dialog "DeltaQ Settings - [Extraktionsname]" wird geöffnet.
 Das Fenster besteht aus zwei Registerkarten:
 * Base
 * Hierarchy
@@ -7,9 +7,9 @@ Das Fenster besteht aus zwei Registerkarten:
 
 ### Registerkarte Base
 
-Die Registerkarte "Basis" besteht aus zwei Unterabschnitten:
-- Übertragungsmodus
-- Verschiedenes.
+Die Registerkarte "Base" besteht aus zwei Unterabschnitten:
+- Transfer Mode
+- Misc.
 
 #### Transfer Mode
 
@@ -18,8 +18,8 @@ Die Rohdatenpakete können von SAP über einen *tRFC*-Aufruf oder ein *Data-IDoc
 #### Misc.
 
 **Automatic Synchronisation**<br>
-Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen nur in einem Testsystem durchgeführt werden. Sollen SSIS-Pakete später in der Produktionsumgebung eingesetzt werden, muss die Datenquelle dort freigeschaltet werden. Um manuelle Änderungen im transaktionalen System zu vermeiden, können Sie diese Option aktivieren. In diesem Fall wird die Aktivierung automatisch durchgeführt und der Zeitstempel der Datenquelle wird so geändert, dass er mit der Einstellung des SAP-Systems übereinstimmt. <br>
-Wenn die DataSource im SAP-System modifiziert wurde, z.B. der Name, der Datentyp oder die Länge eines Feldes geändert wurde oder ein Feld von der Datenübertragung ausgeschlossen wurde, müssen Sie die DataSource in der DeltaQ-Komponente manuell aktivieren, auch wenn die automatische Synchronisation eingeschaltet ist. Andernfalls wird das Laden der Daten fehlschlagen. Dieses Verhalten ist von SAP so vorgesehen und wird in der [SAP-Hilfe](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html) beschrieben (in Englisch).
+Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen nur in einem Testsystem durchgeführt werden. Sollen DeltaQ-Extraktionen später in der Produktionsumgebung eingesetzt werden, muss die Datenquelle dort freigeschaltet werden. Um manuelle Änderungen im transaktionalen System zu vermeiden, können Sie diese Option aktivieren. In diesem Fall wird die Aktivierung automatisch durchgeführt und der Zeitstempel der Datenquelle wird so geändert, dass er mit der Einstellung des SAP-Systems übereinstimmt. <br>
+Wenn die DataSource im SAP-System modifiziert wurde, z.B. der Name, der Datentyp, die Länge eines Feldes geändert wurde oder ein Feld von der Datenübertragung ausgeschlossen wurde, müssen Sie die DataSource in der DeltaQ-Extraktion manuell aktivieren, auch wenn die automatische Synchronisation eingeschaltet ist. Andernfalls wird das Laden der Daten fehlschlagen. Dieses Verhalten ist von SAP so vorgesehen und wird in der [SAP-Hilfe](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html) beschrieben (in Englisch).
 
 **Add Serialization Info to Output**<br>
 Fügt der Ausgabe die beiden Spalten *DataPackageID* und *RowCounter* hinzu.<br>
@@ -32,7 +32,7 @@ In diesem Fall werden die folgenden drei Spalten, die ein zusammengesetzter Schl
 **Hinweis** Neuere Daten haben eine höhere PackageID. Im gleichen Paket haben neuere Daten einen höheren RowCounter.
 
 **Accept Gaps in DataPackage Id**<br>
-Die Delta Q-Komponente führt am Ende jeder Extraktion eine Konsistenzprüfung durch. Nur wenn alle Datenpakete korrekt angekommen sind, wird die Extraktion als konsistent angesehen. Für den Fall, dass der Kunde im User-Exit einer OLTP-Quelle eine Filterfunktion eingebaut hat, die bewirkt, dass bestimmte Datenpakete nicht gesendet werden, muss die Konsistenzprüfung entschärft werden. 
+Die DeltaQ-Extraktionstyp führt am Ende jeder Extraktion eine Konsistenzprüfung durch. Nur wenn alle Datenpakete korrekt angekommen sind, wird die Extraktion als konsistent angesehen. Für den Fall, dass der Kunde im User-Exit einer OLTP-Quelle eine Filterfunktion eingebaut hat, die bewirkt, dass bestimmte Datenpakete nicht gesendet werden, muss die Konsistenzprüfung entschärft werden. 
 Ansonsten würde die Filterfunktion des Kunden als Inkonsistenz gewertet werden. Wenn diese Option aktiviert ist, werden Lücken in der Paketnummerierung vom DeltaQ nicht als Inkonsistenz, sondern als absichtlich zurückgehaltene Information gewertet. Die Option sollte nur verwendet werden, wenn eine entsprechende Filterfunktion im User-Exit vorhanden ist.
 
 **Timeout (sec)**<br>
@@ -55,7 +55,7 @@ Die Registerkarte Hierarchie besteht aus zwei Unterabschnitten:
 - Extraction
 - Natural Representation
 
-![Deltaq-Präferenzen-Hierarchie](/img/content/Deltaq-Präferenzen-Hierarchie.png){:class="img-responsive"}
+![Deltaq-Präferenzen-Hierarchie](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
 
 #### Extraction
 
@@ -69,12 +69,9 @@ Definiert den Hierarchienamen.
 Legt die Hierarchieklasse fest.
 
 **Representation**<br>
-- **ParentChild**: Die Hierarchie hat das SAP-Eltern-Kind-Format.
-
+- **ParentChild**: Die Hierarchie hat das SAP-Parent-Child-Format.
 ![Deltaq-Hierarchies-Parent-Child](/img/content/Deltaq-Hierarchies-Parent-Child.png){:class="img-responsive"}
-
-Wenn **Representation** auf **Natural** eingestellt ist, ist auch der Abschnitt **Natural Representation** aktiviert.
-Die Eltern-Kind-Hierarchie wird dann in eine reguläre Hierarchie umgewandelt.
+- **Natural**: Aktivierung des **Natural Representation** Abschnitts. Die Parent-Child-Hierarchie wird dann in eine reguläre Hierarchie umgewandelt.
 
 #### Natural Representation
 
@@ -92,4 +89,4 @@ Wenn die Darstellung *Natural* ausgewählt ist, wird das unterste Element der Hi
 Bedeutet, dass die Ausgabe für jedes Feld *LevelN* ein Feld *LevelTextN* hat, das den Text basierend auf den System-Spracheinstellungen enthält.
 
 **Leaves only**<br>
-Liefert nur die Seiten als Datensätze. 
+Liefert nur die Leaves als Datensätze. 

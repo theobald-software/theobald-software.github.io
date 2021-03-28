@@ -13,7 +13,7 @@
 * SMQS - qRFC Monitor (QOUT Scheduler)
 * SM37 - Hintergundjobs
 * SM58 - Transaktionaler RFC
-* SM50 - Porzessübersicht
+* SM50 - Prozessübersicht
 * SMGW - Gateway Monitor
 
 
@@ -29,8 +29,8 @@ Sie können mehrere DataSources mit der gleichen RFC-Destination parallel ausfü
 {: .box-tip }
 **Empfehlung:** Verwenden Sie für jede parallele DeltaQ-Extraktion eine eigene RFC-Destination, z. B. *XTRACT01*, *XTRACT02* usw.
 
-
-### Hilfreiche (englischsprachige) Links zum Thema Extraktoren (DataSources)
+****
+#### Hilfreiche (englischsprachige) Links zum Thema Extraktoren (DataSources)
 
 - [How to activate DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System)
 - [How to activate activate the BI Content DataSource (SAP Help)](https://help.sap.com/saphelp_scm70/helpdata/ru/d8/8f5738f988d439e10000009b38f842/content.htm?no_cache=true)

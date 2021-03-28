@@ -6,8 +6,6 @@ Der Update Mode ermöglicht ein Delta-Update, d. h. es werden nur hinzugefügte 
 Wählen Sie im Hauptfenster "SAP DataSources und Extraktoren extrahieren" den **Update-Mode** aus dem Dropdown-Menü aus.
 ![Update-Mode2](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
 
-Der **Update-Modus** kann dynamisch als Laufzeitparameter **updateType** im "Run Extraction"-Dialog gesetzt werden.
-![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
 
 | Bruchstabe| Bezeichnung | Beschreibung |
 | :------: |:--- | :--- |
@@ -18,5 +16,9 @@ Der **Update-Modus** kann dynamisch als Laufzeitparameter **updateType** im "Run
 | S | Delta Init (ohne Daten) | Initiliaziert das Deltaverfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis des **Delta-Inits** ist ein sogenannter **[Request Maintenance]** auf der SAP-Seite. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
 | I | Non-cumulative Init | Relevant für DataSources wie *2LIS_03_BX*.  |
 | A | Activate (don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. **[Activate]** ist eine Alternative zu **[Automatic Synchronization]**.  Es werden keine Daten extrahiert. |
-| V | **[Nur Xtract IS]** SSIS-Variable; veraltet, siehe [Variablen](https://help.theobald-software.com/de/xtract-is/bw-cube/variablen) | Wenn **V** ausgewählt ist, muss in den [DeltaQ Settings](https://help.theobald-software.com/de/xtract-is/xtract-is-deltaq/settings) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
+| V | **[Nur Xtract IS]** SSIS-Variable; veraltet, siehe [Variablen](./bw-cube/variablen) | Wenn **V** ausgewählt ist, muss in den [DeltaQ Settings](./settings) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
 
+{: .box-note }
+**Hinweis:** Der **Update-Modus** kann ebenfalls dynamisch als Laufzeitparameter **updateType** im "Run Extraction"-Dialog gesetzt werden.
+
+![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
