@@ -57,15 +57,15 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
   - Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
   
 | Operator   |      Meaning      |  
-|----------|:------------- |
-| =, EQ |  True if the content of operand1 is equal to the content of operand2|
+|:---------|:------------- |
+|=, EQ |  True if the content of operand1 is equal to the content of operand2|
 |<>, NE | True if the content of operand1 is not equal to the content of operand2|
 | <, LT | True if the content of operand1 is less than the content of operand2|
 |>, GT |  True if the content of operand1 is greater than the content of operand2|
-| <=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
+|<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
 |>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
-| LIKE | True if the value of operand1 matches the pattern ('%' is any character string) in the operand2.|
-| NOT LIKE | True if the value of the operand operand1 does not match the pattern ('%' is any character string) in the operand2. |
+| LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
+| BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
 
 Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 

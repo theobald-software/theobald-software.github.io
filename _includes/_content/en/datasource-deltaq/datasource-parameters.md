@@ -19,17 +19,16 @@ Set the values for **Sign** (2), **Option** (3), **Low Value** (4) and if needed
 {: .box-note }
 **Note:** Add *@* right before the value to mark it as a variable.
 
-|Operator|Description|
-|:---|:---|
-| = | Equal|
-| != |Not Equal|
-| < |Lower Than|
-| <= |Lower Equal Than|
-| > |Greater Than|
-| >= |Greater Equal Than|
-| [] |Between|
-| ][ |NotBetween|
-| * |Contains Pattern (Like)| 
+| Operator   |      Meaning      |  
+|:---------|:------------- |
+|=, EQ |  True if the content of operand1 is equal to the content of operand2|
+|<>, NE | True if the content of operand1 is not equal to the content of operand2|
+| <, LT | True if the content of operand1 is less than the content of operand2|
+|>, GT |  True if the content of operand1 is greater than the content of operand2|
+|<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
+|>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
+|*,  LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
+|[], BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
 
 ### Delete
 To *delete* a row, click the icon at the bottom left.

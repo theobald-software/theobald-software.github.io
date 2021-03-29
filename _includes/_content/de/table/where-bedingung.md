@@ -59,15 +59,15 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
   - Zahlen müssen führende Nullen enthalten, z.B. hat die Kundennummer 1000 die interne Darstellung 0000001000.
 
 | Operator   |      Bedeutung      |  
-|----------|:------------- |
-| =, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
+|:---------|:------------- |
+|=, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
 |<>, NE |Wahr, wenn der Inhalt von operand1 ungleich dem Inhalt von operand2 ist|
-| <, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|
+|<, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|
 |>, GT |  Wahr, wenn der Inhalt von operand1 größer als der Inhalt von operand2 ist|
-| <=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
+|<=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
 |>=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
-| LIKE |  Wahr, wenn der Wert von operand1 mit dem Muster ('%' ist eine beliebige Zeichenkette) im operand2 übereinstimmt.|
-| NOT LIKE |  Wahr, wenn der Wert von operand1 mit dem Muster ('%' ist eine beliebige Zeichenkette) im operand2 nicht übereinstimmt |
+| LIKE | Wahr, wenn der Wert des Operanden operand1 mit dem Muster im Operanden operand2 übereinstimmt (nicht übereinstimmt). |
+| BETWEEN | Wahr, wenn der Inhalt des Operanden operand (nicht) zwischen den Werten der Operanden operand1 und operand2 liegt. |
 
  Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
