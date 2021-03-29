@@ -41,22 +41,19 @@ Fields in the input table are mapped to fields in the SAP table with the identic
 Values in the table fields must be of a compatible data type. Fields with names that cannot be mapped, are ignored.
 
 ### Edit Parameters
-The function **Edit Parameters** allows setting a dynamic value for an added parameter at run-time.
-Use the function **Edit Parameters** to define parameters that can be used as placeholders for data selections. These placeholders need to be populated with actual values at run-time.
+The function **[Edit Parameters]** allows setting a dynamic value for an added parameter at run-time.
+Use the function **[Edit Parameters]** to define parameters that can be used as placeholders for data selections. These placeholders need to be populated with actual values at run-time.
 
-1. To display editing function for the parameters, click **Edit Parameters**. The window "Edit Runtime Parameters" opens. 
+1. To display editing function for the parameters, click **[Edit Parameters]**. The window "Edit Runtime Parameters" opens. 
 ![BAPI add parameters](/img/content/xfa/bapi-add-parameter.png){:class="img-responsive"} 
 2. Click **[Add]** to create a new parameter. <br>
 **Tip:** Parameter0..-n is the default naming for the added parameters. You can enter a name of your choice.
 3. Click on the drop-down menu and assign one of the following data types to a parameter. 
-- String: This data type can be used for any type of SAP selection field.
-- Integer: This data type can be used for numeric SAP selection fields.
-- Flag: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value. <br> The data types of the parameters must correspond with or be convertible to SAP data types. 
+- *String* - This data type can be used for any type of SAP selection field.
+- *Integer* - This data type can be used for numeric SAP selection fields.
+- *Flag* - This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value. <br> The data types of the parameters must correspond with or be convertible to SAP data types. 
 4. Click **[OK]** to confirm.
 5. If there are defined parameters, input field icon switches to the parameter icon. <br>
 Clicking the icons switches the option between entering static input values and using defined dynamic parameters. 
 ![BAPI select parameters](/img/content/xfa/bapi-select-parameters.png){:class="img-responsive"} 
 
-### Setting an export value
-
-#### 
