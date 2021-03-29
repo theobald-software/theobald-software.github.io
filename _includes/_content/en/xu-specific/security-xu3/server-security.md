@@ -1,13 +1,14 @@
 ### About
 
 This chapter describes how accessing Xtract Universal's built in web server can be restricted to predefined users or user groups. <br>
-By setting access restrictions on the Xtract Universal web server only dedicated users are authorized to execute an extraction.
+By setting access restrictions on the Xtract Universal web server only dedicated users are allowed to execute an extraction.
 
 
-There are two types of users, access can be restricted to. 
+There are two types of users and user groups, access can be restricted to. 
 1. Windows AD users (Kerberos authentication)
-2. [XU custom users]() (Basic authentication) 
+2. XU custom users (Basic authentication) 
 
+These are the same [users and user groups](user-management#users-and-user-groups) that are used for restricting access to the Xtract Universal Designer.
 
 ![webserver settings](/img/content/xu/server-settings-security.png){:class="img-responsive"}
 
@@ -16,11 +17,11 @@ If one of the above options is set, an extraction can only be executed if:
 2. The Windows AD user or XU custom user has at least [Read access](./access-management#server-settings) to the Xtract Universal Designer. 
 
 {: .box-note}
-**Note**: We assume that users that are allowed to run an extraction are also allowed to access the XU Designer with at least Read access. That is why granting access to running an extraction is bound to having at least Read access in the XU Designer.
+**Note**: We assume that users that are allowed to run an extraction are also allowed to access the Xtract Universal Designer with at least Read access. Running an extraction is therefore bound to having at least Read access in the Xtract Universal Designer.
 
 ### Prerequisite: Activating TLS encryption
-Both types of access restriction require installation of an X.509 certificate. This way user credentials are encrypted when sent to the Xtract Universal web server. <br>
-It is assumed that an X.509 certificate is already installed in the Windows certificate store. If not, follow the steps as outlined [here](./install-x.509-Certificate).
+Both types of access restriction require installation of an X.509 certificate. <br>
+It is assumed that an X.509 certificate is already installed in the Windows certificate store. If not, follow the steps as outlined in the section [Create X.509 Certificate](./install-x.509-Certificate#create-x509-certificate).
 
 1. Go to [menu] - Server - Settings - *Web Server* tab
 2. Depending on what type of user you want to restrict access to, select *HTTPS - Restricted to AD users with Designer read access* or *HTTPS - Restricted to custom users with Designer read access.*
@@ -45,52 +46,32 @@ The following describes the steps that are required for restricting access to Xt
 7. Close all windows with **[OK]**
 8. Restart the server when prompted.
 
-**Result:** An extraction can only be executed, if the Windows AD credentials of the caller are passed on to the XU web server and the caller has at least Designer Read access.
+**Result:** An extraction can only be executed, if the Windows AD credentials of the caller are passed on to the Xtract Universal web server and the caller has at least Designer Read access.
 
 
 
-### Restrict access to XU custom users (Basic authentication)
+### Restrict access to Xtract Universal custom users (Basic authentication)
 
 The following describes the steps that are required for restricting access to Xtract Universal's web server to XU custom users.
 
 1. Activate TLS encryption as outlined in the section [Prerequisite: Activating TLS encryption](./server-security#prerequisite-activating-tls-encryption).
 2. Go to [menu] - Server - Settings -  *Web Server* tab. Select *HTTPS - Restricted to custom users with Designer read access.*
 2. Switch to the *Configuration Server* tab
-3. Follow the steps for restricting Xtract Universal Designer access as documented [here](./access-management#server-settings).  Add the XU custom users or groups that are allowed to execute an extraction. 
-4. Assign at least Read permission to the XU custom users.
+3. Follow the steps for restricting Xtract Universal Designer access as documented [here](./access-management#server-settings).  Add the Xtract Universal custom users or groups that are allowed to execute an extraction. 
+4. Assign at least Read permission to the Xtract Universal custom users.
 5. Close all Windows with **[OK]**
 6. Restart the server when prompted.
 
 
 {: .box-note}
-**Note**: Basic authentication is only supported when calling an extraction through the extraction's URL. Calling an extraction through *xu.exe* is currently not supported when Basic authentication is active.
+**Note**: Basic authentication is currently only supported when calling an extraction through the extraction's URL. Calling an extraction through *xu.exe* is currently not supported when Basic authentication is active.
 
 
 
 ### Running the XU service under a Windows AD service account
 
-After installation of Xtract Universal, the Xtract Universal service runs under the *Local System* account.
+{% include _content/en/xu-specific/security-xu3/xu-service-account.md %}
 
-![xu service account](/img/content/xu/xu-service-account.png){:class="img-responsive"}
-
-For restricting access to Xtract Universal's web server to Windows AD users, the Xtract Universal service needs to run under a dedicated Windows AD service account.
-
-- Create a Windows AD service account and assign an SPN (Service Principle Name) to the service account in the following format: ```HTTP\[FQDN of XU Server]```
-
-![xu service account SPN](/img/content/xu/xu-service-account-SPN.png){:class="img-responsive"}
-
-
-- Let the Xtract Universal service run under the service account.
-![xu service account services](/img/content/xu/xu-service-account-services.png){:class="img-responsive"}
-
-
-- Grant access rights on Xtract Universal's installation folder and all subfolders to the service account as in the following screenshot:
-![xu service account permissions](/img/content/xu/xu-service-account-permissions.png){:class="img-responsive"}
-
-- Make sure the service account has Read access to the X.509 certificate's private key.
-
-![xu service account private key 1](/img/content/xu/xu-service-account-privatekey_1.png){:class="img-responsive"}
-![xu service account private key 2](/img/content/xu/xu-service-account-privatekey_2.png){:class="img-responsive"}
 
 
 
