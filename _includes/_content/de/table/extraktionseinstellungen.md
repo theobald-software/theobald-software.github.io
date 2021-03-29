@@ -44,11 +44,10 @@ Die SAP-Standardbausteine für Tabellenextraktion besitzen keine Pointer-Logik i
 Das führt bei großen Tabellen zu schlechter Performance und ggf. zu Dublikaten.
 Wir empfehlen daher die Verwendung des Funktionsbausteins [Z_THEO_READ_TABLE](../sap-customizing) von Theobald Software. 
 
-Berücksichtigen Sie die notwendige Berechtigung der SAP-Tabelle:
+Berücksichtigen Sie die notwendige [Berechtigung der SAP-Tabelle](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
 ```
 S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
 ```
-Weitere Informationen hierzu finden Sie in der Theobald [Knowledge Base](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
 #### Extract data in background job
 Durch Ankreuzen der Checkbox "Extract data in background" wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
