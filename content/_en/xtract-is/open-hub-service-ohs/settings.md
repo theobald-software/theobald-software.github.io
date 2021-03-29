@@ -7,23 +7,31 @@ product: xtract-is
 parent: open-hub-service-ohs
 permalink: /:collection/:path
 weight: 4
+progressstate: 5
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=OHS-settings
 ---
 
+### Settings
 
-You can open the preferences window by clicking the settings link in the editor.
+In the main window of the OHS component, click **Settings**. The window "Table Settings" opens.
 
-![OHS-Settings](/img/content/OHS-Settings.png){:class="img-responsive" }
+{: .box-note }
+**Note:** The settings correspond to the selected extraction type. Set either the **Table** or **Third party tool (legacy)** settings depending on your extraction type.<br>
 
-**Automatic String Conversion**<br>
-This means that the data source converts all strings to NVarChar when SAP is an Unicode system, and to VarChar when SAP is not an Unicode system.
+{% include _content/en/tables/extraction-settings.md  %}
 
-**Convert Strings to VarChar**<br>
-This means that the data source converts all strings to VarChar.
 
-**Convert Strings to NVarChar**<br>
-This means that the data source converts all strings to NVarChar.
+### Third party tool Settings
 
-Timeout
-If the value N is set for Execution Mode, Timeout defines the maximum duration for which the component is to wait for a notify from the BW (in seconds).
+![OHS-Search-002](/img/content/xis/ohs-tpt-settings.png){:class="img-responsive" }
+
+#### Gateway host
+Enter the data of your gateway host. It is often the same host as the SAP application server.
+
+#### Gateway service
+Enter the data of your gateway service. *sapgwXX*, where XX is the system number.
+
+#### Program ID 
+Enter the program ID from the RFC destination.
+

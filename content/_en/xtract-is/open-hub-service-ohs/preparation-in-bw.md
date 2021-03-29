@@ -12,6 +12,6 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=preparation-in-bw
 ---
 
-In order to be able to use the data source, it is necessary to configure a few things in SAP BW first, as described in the following.
+To use the data source SAP BW needs to be configurated as described in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

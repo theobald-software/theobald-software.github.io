@@ -12,7 +12,7 @@ The window "Table Settings" consists of two subsections:
 - Function Module 
 
 
-### Extraction Settings
+#### Extraction Settings
 
 **Package Size** <br>
 Specifies the number of records retrieved per data package. Optimal values can be found by trying out. The default value is 20000 lines. 
@@ -26,7 +26,7 @@ A package size between 15000 and 50000 is advisable for large amounts of data.
 Specifies the maximum number of extracted records. *0* Extracts the entire table.
 
 
-### Function Module
+#### Function Module
 Specifies the name of the function module used for data extraction. The field is filled automatically depending on which function modules are installed on your SAP system.
 
 {: .box-warning }
