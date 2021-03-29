@@ -23,7 +23,3 @@ Der **Short/Medium/Long Text** befindet sich im Backend-Bereich.
 
 {: .box-tip }
 **Tipp:** Im Gegensatz zu Attributen und Transaktionen müssen Hierarchien nicht aktiviert werden.
-
-### Vorschau der Extraktion
-Klicken Sie auf **[Run]**, um das Fenster **Run Extraction** anzuzeigen und den Laufzeitparameter **Preview** zu aktivieren
-![DeltaQ-Hierarchy-004](/img/content/DeltaQ-Hierarchy-004.png){:class="img-responsive"}

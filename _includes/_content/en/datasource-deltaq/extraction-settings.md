@@ -70,11 +70,8 @@ Defines the Hierarchy Class.
 
 **Representation**<br>
 - **ParentChild**: The hierarchy has the SAP parent-child format.
-
 ![Deltaq-Hierarchies-Parent-Child](/img/content/Deltaq-Hierarchies-Parent-Child.png){:class="img-responsive"}
-
-If **Representation** is set to **Natural**, the section **Natural Representation** is activated.
-The parent child hierarchy will be transformed in a regular hierarchy.
+- **Natural**: The section **Natural Representation** is activated. The parent child hierarchy will be transformed in a regular hierarchy.
 
 #### Natural Representation
 
