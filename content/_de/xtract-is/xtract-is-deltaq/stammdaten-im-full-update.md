@@ -57,6 +57,6 @@ Nehmen Sie keine Aktivierung für den Modus **Delta Update** vor.
 
 Der **Update Mode** kann auch über eine Variable gesteuert werden, siehe unter **[Extraktionseinstellungen]**.
 
-**Filter** siehe unter [Datasource Parameters](./parameter).
+**Filter** siehe unter [Datasource Parameters](./datasource-parameter).
  
 Im Falle von Fehlern siehe [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide) (in Englisch).

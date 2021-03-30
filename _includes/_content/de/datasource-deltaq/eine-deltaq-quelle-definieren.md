@@ -11,7 +11,7 @@ Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSour
 ### Schritt 2: Update Mode einstellen (2)
 
 Das **Full** Update fordert alle Daten an, die den von Ihnen eingestellten Auswahlkriterien entsprechen. Um eine echte **Delta**-Prozedur zum Laufen zu bringen, muss das Delta zunächst initialisiert werden, siehe unter [Delta](./datasource-delta).<br>
-Um eine Übersicht zu erhalten, welche Aktualisierungsmodi zur Verfügung stehen, siehe unter [Update Mode](./update_mode).
+Um eine Übersicht zu erhalten, welche Aktualisierungsmodi zur Verfügung stehen, siehe unter [Update Mode](./update-modus).
 
 ### Schritt 3: Spalten auswählen
 

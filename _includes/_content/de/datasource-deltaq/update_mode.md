@@ -16,7 +16,7 @@ Wählen Sie im Hauptfenster "SAP DataSources und Extraktoren extrahieren" den **
 | S | Delta Init (ohne Daten) | Initiliaziert das Deltaverfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis des **Delta-Inits** ist ein sogenannter **[Request Maintenance]** auf der SAP-Seite. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
 | I | Non-cumulative Init | Relevant für DataSources wie *2LIS_03_BX*.  |
 | A | Activate (don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. **[Activate]** ist eine Alternative zu **[Automatic Synchronization]**.  Es werden keine Daten extrahiert. |
-| V | **[Nur Xtract IS]** SSIS-Variable; veraltet, siehe [Variablen](./bw-cube/variablen) | Wenn **V** ausgewählt ist, muss in den [DeltaQ Settings](./settings) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
+| V | **[Nur Xtract IS]** SSIS-Variable; veraltet, siehe [Variablen](../bwcube/variablen) | Wenn **V** ausgewählt ist, muss in den [DeltaQ Settings](./extraktionseinstellungen) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
 
 {: .box-note }
 **Hinweis:** Der **Update-Modus** kann ebenfalls dynamisch als Laufzeitparameter **updateType** im "Run Extraction"-Dialog gesetzt werden.
