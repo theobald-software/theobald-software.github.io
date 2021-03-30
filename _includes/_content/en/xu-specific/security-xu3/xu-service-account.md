@@ -24,6 +24,8 @@ For restricting access to Xtract Universal's web server to Windows AD users, the
 ![xu service account private key 1](/img/content/xu/xu-service-account-privatekey_1.png){:class="img-responsive"}
 ![xu service account private key 2](/img/content/xu/xu-service-account-privatekey_2.png){:class="img-responsive"}
 
+- Change the *Target principal* in the "Connect to Xtract Universal Server" window in the Xtract Universal Designer to the User Principal Name (UPN) of the Windows AD service account, as described [here](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+
 
 
 
