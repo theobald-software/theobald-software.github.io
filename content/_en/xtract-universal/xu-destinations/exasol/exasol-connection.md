@@ -10,20 +10,24 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol-connection
 ---
+### Adding Exasol Destination
+1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
+2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
+![XU_Exasol_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
+3. Fill in **Name**. 
+4. Select the *EXASOL* destination from the drop-down list.
 
-The following settings can be defined for the Exasol destination.
+### Destination Details
 
 ![Exa-Connection](/img/content/Exa-Connection.png){:class="img-responsive"}
 
-**Connection**
-
-**Host Name / Port**<br>
+**Connection string**<br>
 Defines the name or IP of the DB2 server and the port number. 
 
 **User Id / Password**<br>
 Defines the user Id and password of the database user.
 
-Schema
+**Schema**<br>
 Defines the schema of the database.
 
 **Provider**<br>
