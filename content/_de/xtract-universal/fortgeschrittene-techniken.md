@@ -17,4 +17,5 @@ Der Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) bietet ein
 
 Der folgende Abschnitt ermöglicht eine tiefere Einsicht in komplexere Aspekte von Xtract Universal.
 
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

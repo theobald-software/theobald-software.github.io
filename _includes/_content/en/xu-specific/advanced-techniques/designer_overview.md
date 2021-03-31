@@ -87,10 +87,20 @@ Run  | Run a selected extraction  |
 
 ### List of Extractions (3)
 List of all extractions divided by name, type, modification and creation date etc. <br>
+
+**Filter**<br>
 You can enter a filter value for the extraction name, wildcard characters are not supported. <br> 
 More extensive filter options are available via the [Filter](../advanced-techniques/regular-expressions) button in the [GUI Buttons (2)](#gui-buttons-2) section. 
 
-Right-clicking on an extraction in the list opens the following menu:
+**Multiple selection**<br>
+To adjust the settings of multiple extractions at once, select multiple extractions using **[CTRL]+[left mouse button]**.<br>
+You can now adjust the **[Destination]** and **[Source]** settings in [GUI Buttons (2)](#gui-buttons-2) for all selected extractions.
+
+**Double click**<br>
+Double-clicking an extraction works as a shortcut to the **[Edit]** button. <br>
+
+**Right click**<br>
+Right-clicking an extraction in the list opens the following menu:
 
 ![menu_list_of_extractions](/img/content/xu/menu_list_of_extractions.png){:class="img-responsive"}
 
@@ -106,6 +116,7 @@ Run  | Run a selected extraction | [Running an Extraction](../getting-started/ru
 Run in browser | Run a selected extraction in the default web browser | - 
 Run in xu.exe | Run a selected extraction in the command-line tool xu.exe | - 
 Abort | Abort a selected extraction | -
+
 
 ### Status Bar (4)
 Status bar contains information about authentication method, connected server, license with validity period, etc.
