@@ -12,11 +12,13 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 progressstate: 5
 ---
 ### About licensing concept of Xtract Universal
+Xtract Universal is licensed per target environment, source system and Windows server. <br>
 The following graphic shows the on which workstations the installation of Xtract Universal with a valid license required.   
+
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-Xtract Universal is licensed per Windows server responsible for extractions. A demo license is automatically installed with the installation of Xtract Universal. <br>
-A regular license is provided after purchasing the product. The product license is bound to your company and a specific server name.<br>
+A demo license is automatically installed with the installation of Xtract Universal.<br>
+A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. The product license is bound to your company and a specific server name.<br>
 If you run Xtract Universal Designer and Xtract Universal Server on different machines, it is only necessary to replace the license on the server.
  
 
@@ -26,7 +28,7 @@ For installing the regular license, place the regular XtractUniversalLicense.jso
  <br>
  ![XU_license](/img/content/xu/xu_json_license.png ){:class="img-responsive"}
  
-A restart of the Xtract Universal service is no longer necessary.
+A restart of the Xtract Universal service is not necessary.
 
 ### About Xtract Universal - Info Window
 
@@ -34,9 +36,6 @@ A restart of the Xtract Universal service is no longer necessary.
 **Tip:** To inspect your current license data, go to the main menu bar of the Xtract Universal Designer and choose **[Help] > [Info]** or press F12.
 
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
-
-Prior to Xtract Universal version 2.99.0 license files were delivered as .dll files. The procedure for replacing a .dll file license is similar to the .json file procedure, but a restart of the Xtract Universal service is required.
-
 
 ### Maintenance
 General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>

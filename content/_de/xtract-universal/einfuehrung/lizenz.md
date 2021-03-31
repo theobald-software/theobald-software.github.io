@@ -13,12 +13,14 @@ progressstate: 5
 ---
 
 ### Über das Lizenzierungskonzept von Xtract Universal
+Xtract Universal wird pro Zielumgebung, Quellsystem und Windows Server lizenziert. <br>
 Die folgende Grafik zeigt, auf welchen Arbeitsplätzen die Installation von Xtract Universal mit einer gültigen Lizenz erforderlich ist.
  
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-Xtract Universal wird pro Windows Server lizenziert, d.h. die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Eine Demo-Lizenz wird automatisch mit der Installation von Xtract Universal installiert. <br>
-Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theobald Software](https://my.theobald-software.com/)zur Verfügung gestellt. Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
+Eine Demo-Lizenz wird automatisch mit der Installation von Xtract Universal installiert. <br>
+Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theobald Software](https://my.theobald-software.com/) zur Verfügung gestellt. 
+Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
 Wenn Sie den Xtract Universal Designer und den Xtract Universal Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
  
 ### Installieren von Xtract Universal Lizenz - XtractUniversalLicense.json
@@ -35,7 +37,6 @@ Ein Neustart des Xtract Universal Service ist nicht notwendig.
 
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
 
-Vor der Xtract Universal Version 2.99.0 wurden die Lizenzdateien als .dll Dateien ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des Xtract Universal Service ist bei einer .dll-Datei unabdingbar.
 
 ### Wartung
 Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
