@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 ### Über das Lizenzierungskonzept von Xtract Universal
-Xtract Universal wird pro [Zielumgebung](./../xu-destinationen), [Quellsystem](./sap-verbindungen-anlegen#angelegte-sap-verbindung-überprüfen) und Windows Server lizenziert. <br>
+Xtract Universal wird pro Zielumgebung, Quellsystem und Windows Server lizenziert. <br>
 Die folgende Grafik zeigt, auf welchen Arbeitsplätzen die Installation von Xtract Universal mit einer gültigen Lizenz erforderlich ist.
  
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}

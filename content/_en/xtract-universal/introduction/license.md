@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 progressstate: 5
 ---
 ### About licensing concept of Xtract Universal
-Xtract Universal is licensed per [target environment](./../destinations), [source system](./sap-connection#to-check-the-new-sap-connection) and Windows server. <br>
+Xtract Universal is licensed per target environment, source system and Windows server. <br>
 The following graphic shows the on which workstations the installation of Xtract Universal with a valid license required.   
 
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
