@@ -10,5 +10,5 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-bapi-quelle-definieren
 ---
-Dieser Abschnitt ist in Bearbeitung, Informationen folgen in Kürze.
+Dieser Abschnitt ist in Bearbeitung, Informationen erhalten Sie bis dahin auf der englischen Seite.
 
