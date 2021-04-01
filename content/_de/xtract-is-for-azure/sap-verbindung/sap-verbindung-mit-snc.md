@@ -12,7 +12,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=sap-verbindung-mit-snc
 progressstate: 5
 ---
 
-Um die verschlüsselte Kommunikation zwischen Xtract IS und SAP zu nutzen, können Sie die Secure Network Communication (SNC) für die Verbindung zu Ihrem SAP-System verwenden. 
+Um die verschlüsselte Kommunikation zwischen Xtract IS for Azure und SAP zu nutzen, können Sie die Secure Network Communication (SNC) für die Verbindung zu Ihrem SAP-System verwenden. 
 Der folgende Abschnitt erläutert die erforderliche Konfiguration des "Connection Managers" in Abhängigkeit von Ihrem SAP-System. Weitere Informationen zur SNC-Konfiguration finden Sie auf der offiziellen [Hilfe-Seite von SAP](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm). 
 
 ### Connection Manager konfigurieren
@@ -20,12 +20,12 @@ Der folgende Abschnitt erläutert die erforderliche Konfiguration des "Connectio
 {: .box-tip }
 **Tipp:** Falls Sie nicht wissen, welche Parameter einzugeben sind, können Sie die Informationen im SAP-Logon-Pad in den Properties nachschauen. Ansonsten fragen Sie Ihre SAP-Basis.
 
- 1. Klicken Sie innerhalb des "Xtract IS Connection Manager" Fensters auf **[Additions]**. Das Fenster "Xtract IS Connection Manager Additions" wird geöffnet. 
+ 1. Klicken Sie innerhalb des "Xtract IS for Azure Connection Manager" Fensters auf **[Additions]**. Das Fenster "Xtract IS for Azure Connection Manager Additions" wird geöffnet. 
 ![SNC](/img/content/SNC.png){:class="img-responsive"}
 2. Aktivieren Sie die Checkbox **SNC enabled**. Die Felder **SNC Library (32 Bit. & 64 Bit)**, **Partner Name** und **Quality of Protection** sind aktiv. 
 ![SNC](/img/content/SNC_fields.png){:class="img-responsive"}
 3. Überprüfen Sie den SAP parameter *snc/gssapi_lib* um zu bestimmen, welche Bibliothek für die Verschlüsselung in Ihrem SAP System verwendet wird. <br>
-Ihre SAP-Basis muss auf dem Applikationsserver und auf dem Rechner, auf dem Xtract IS läuft, die gleiche Bibliothek importieren und konfigurieren.   
+Ihre SAP-Basis muss auf dem Applikationsserver und auf dem Rechner, auf dem Xtract IS for Azure läuft, die gleiche Bibliothek importieren und konfigurieren.   
 4. Geben Sie in den SNC-Bibliotheksfeldern (1) den vollständigen Pfad zum Speicherort der Bibliotheken für 32 Bit & 64 Bit ein z.B., `C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll`.
 5. Geben Sie den SAP-Partnernamen (2) ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 7. Definieren Sie das SNC-Schutzniveau z.B. *9 - Maximum* Standardwert. <br>

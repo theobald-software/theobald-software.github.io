@@ -13,15 +13,15 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=table
 progressstate: 5
 ---
 
-Der folgende Abschnitt gibt einen Überblick über die Komponente Xtract IS Table. 
+Der folgende Abschnitt gibt einen Überblick über die Komponente Xtract IS for Azure Table. 
 ![XIS_Table_overview](/img/content/xis/xis_table_overview.png){:class="img-responsive"}
 
-### Extraktionstypen von Xtract IS Table
+### Extraktionstypen von Xtract IS for Azure Table
 
 - **Table**: ermöglicht die Datenextraktion in großen Mengen direkt aus SAP-Tabellen und -Views.<br>
 - **Table-Join**: ermöglicht das Zusammenführen von zwei oder mehr SAP-Tabellen auf der SAP-Seite vor der Extraktion.<br>
 
-### Quell-Objekte unterstützt von Xtract IS Table
+### Quell-Objekte unterstützt von Xtract IS for Azure Table
 
 - Transparente Tabellen
 - ABAP CDS views

@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=open-hub-service
 ---
 
-The Xtract IS OHS component is an SSIS data source with the help of which OSH In-foSpokes and/or OHS process chains can be run to receive the data.
+The Xtract IS for Azure OHS component is an SSIS data source with the help of which OSH In-foSpokes and/or OHS process chains can be run to receive the data.
 
 ![OHS](/img/content/OHS.png){:class="img-responsive" }
 

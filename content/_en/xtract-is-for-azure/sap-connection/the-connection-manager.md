@@ -12,7 +12,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
 progressstate: 5
 ---
 ### Connecting to SAP
-Every Xtract IS component needs a connection manager to establish access to the SAP system. 
+Every Xtract IS for Azure component needs a connection manager to establish access to the SAP system. 
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
@@ -22,12 +22,12 @@ Make sure to gain access to the general authority objects. For more information,
 1. To create a new connection manager right-click in the connection managers within "Solution Explorer" area and choose **New connection Manager**. 
 The window "Add SSIS Connection Manager" opens.
 ![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive"}
-2. Select the XTRACT Connection Manager from the list and click **[Add]**. Xtract IS Connection manager appears under the tab *Connection Managers*.
-3. To configure the SAP connection, double-click the Xtract IS Connection Manager icon. The window "Xtract IS Connection Manager" opens.
+2. Select the XTRACT Connection Manager from the list and click **[Add]**. Xtract IS for Azure Connection manager appears under the tab *Connection Managers*.
+3. To configure the SAP connection, double-click the Xtract IS for Azure Connection Manager icon. The window "Xtract IS for Azure Connection Manager" opens.
 ![Connection-Manager](/img/content/Connection-Manager.png){:class="img-responsive" }
 4. Fill in all the necessary data (*Client*, *Username*, *Password* ect. see below). 
 5. Click **[Test connection]** to check the connection to your SAP system. <br>
-If the connection test is successful, the Xtract IS component is ready to use.
+If the connection test is successful, the Xtract IS for Azure component is ready to use.
 
 ### SAP source system (1)
 There are two possibilities to connect to an SAP source system:
@@ -66,7 +66,7 @@ Activate the debug logging only when necessary e.g., upon request of the support
 
 ### RFC libraries (3)
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system.  
-There are two options for using RFC libraries in Xtract IS:
+There are two options for using RFC libraries in Xtract IS for Azure:
 - Use classic RFC library (librfc32.dll)
 - Use NetWeaver RFC libraries (sapnwrfc.dll)
 
@@ -81,11 +81,11 @@ SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/suppo
 **Note:** When using the NetWeaver RFC library with DeltaQ or OHS extractions, the RFC destination in SM59 must be set to Unicode. 
 
 ### Additions (4)
-In the upper part of the "Xtract IS Connection Manager" click **Additions** (4). The window "Xtract IS Connection Manager Additions" opens.
+In the upper part of the "Xtract IS for Azure Connection Manager" click **Additions** (4). The window "Xtract IS for Azure Connection Manager Additions" opens.
 ![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.png){:class="img-responsive"}
 
 #### SNC (5)
-In the window "Xtract IS Connection Manager Additions" you can find several SNC (Secure Network Connection) options.
+In the window "Xtract IS for Azure Connection Manager Additions" you can find several SNC (Secure Network Connection) options.
 For more details see [SAP Connection with SNC](./sap-connection-with-snc)<br>
 
 #### Expert Options (6)
@@ -108,4 +108,4 @@ SAP connection parameters are set via a single *Connection string* (default in X
 Masks SAP connection password. This option is switched on per default when activating **Legacy storage mode**.
 
 **Internal Table Function**
-States the function module used for Xtract IS' internal communication with SAP (e.g., retrieving the metadata). To change the selected function module, type the name of function module manually. Using another function module can be necessary when adding permission restrictions within the functional module.
+States the function module used for Xtract IS for Azure' internal communication with SAP (e.g., retrieving the metadata). To change the selected function module, type the name of function module manually. Using another function module can be necessary when adding permission restrictions within the functional module.

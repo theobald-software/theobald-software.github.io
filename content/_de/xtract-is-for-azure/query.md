@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=query
 ---
 
-Dieser Abschnitt zeigt, wie Sie SAP Queries mit der Xtract IS Query Datenquelle extrahieren. Ziehen Sie dazu das Query-Icon aus der Toolbox in Ihren Datenflusstask. 
+Dieser Abschnitt zeigt, wie Sie SAP Queries mit der Xtract IS for Azure Query Datenquelle extrahieren. Ziehen Sie dazu das Query-Icon aus der Toolbox in Ihren Datenflusstask. 
 Die Verknüpfung zum Verbindungsmanager funktioniert analog der Tabellenextraktion, siehe [Tabellen extrahieren](./xtract-is-table/extraktion-anlegen).
 
 

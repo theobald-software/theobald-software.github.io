@@ -1,8 +1,8 @@
 ---
 ref: xtract-is-for-azure-01
 layout: page
-title: Xtract IS for Azure
-description: Xtract IS for Azure
+title: Xtract IS for Azure for Azure
+description: Xtract IS for Azure for Azure
 product: xtract-is-for-azure
 parent: home
 childidentifier: xtract-is-for-azure
@@ -14,7 +14,7 @@ progressstate: 5
 ---
 ### Über Azure SSIS-IR
 
-*Xtract IS for Azure* ermöglicht es, SSIS Pakete, welche Xtract IS Komponenten enthalten, auf einer [Azure-SSIS Integration Runtime (IR), based on Microsoft's Azure Data Factory v2 (ADFv2)](https://azure.microsoft.com/en-us/blog/lift-sql-server-integration-services-packages-to-azure-with-azure-data-factory/) auszuführen.
+*Xtract IS for Azure for Azure* ermöglicht es, SSIS Pakete, welche Xtract IS for Azure Komponenten enthalten, auf einer [Azure-SSIS Integration Runtime (IR), based on Microsoft's Azure Data Factory v2 (ADFv2)](https://azure.microsoft.com/en-us/blog/lift-sql-server-integration-services-packages-to-azure-with-azure-data-factory/) auszuführen.
 
 Bei der Nutzung der Azure-SSIS IR werden die SSIS Pakete immer noch lokal und on-prem in Visual Studio/SSDT Umgebung entwickelt.
 Anstatt die entwickelten Pakete auf einem SSIS-Server vor Ort bereitzustellen, werden die Pakete auf einer Azure-SSIS IR bereitgestellt, um in der Azure-Cloud eingeplant und ausgeführt zu werden.
@@ -23,13 +23,13 @@ Anstatt die entwickelten Pakete auf einem SSIS-Server vor Ort bereitzustellen, w
 
 ![XISforAzure_Architecture](/img/content/xis/Xtract_IS_for_Azure.png){:class="img-responsive"}
 
-Xtract IS for Azure stellt sicher, dass Azure-SSIS IR SSIS-Pakete unterstützt, die Xtract IS-Komponenten zur Verbindung mit einer SAP-Quelle und zur Extraktion von Daten aus SAP enthalten.
+Xtract IS for Azure for Azure stellt sicher, dass Azure-SSIS IR SSIS-Pakete unterstützt, die Xtract IS for Azure-Komponenten zur Verbindung mit einer SAP-Quelle und zur Extraktion von Daten aus SAP enthalten.
 Das SAP-System muss von der Azure-SSIS IR aus erreichbar sein, zum Beispiel über einen VPN-Tunnel oder eine selbst gehostete Integration Runtime.
 
-Xtract IS for Azure basiert auf der bestehenden Xtract IS (on-prem) Version.
-Daher bietet Xtract IS for Azure genau die gleiche SAP-Datenextraktionsfunktionalität wie Xtract IS.
+Xtract IS for Azure for Azure basiert auf der bestehenden Xtract IS for Azure (on-prem) Version.
+Daher bietet Xtract IS for Azure for Azure genau die gleiche SAP-Datenextraktionsfunktionalität wie Xtract IS for Azure.
 
-**Voraussetzungen und Installation auf einer Visual Studio/SSDT Umgebung** (für die Entwicklung von SSIS-Paketen) unterscheiden sich nicht vom [Xtract IS Setup-Prozess](./einfuehrung/installation).
+**Voraussetzungen und Installation auf einer Visual Studio/SSDT Umgebung** (für die Entwicklung von SSIS-Paketen) unterscheiden sich nicht vom [Xtract IS for Azure Setup-Prozess](./einfuehrung/installation).
 
 **Voraussetzungen und Installation auf einer Azure-SSIS IR** (zum Ausführen der SSIS-Pakete) sind in den nachfolgenden Abschnitten beschrieben.
 

@@ -2,7 +2,7 @@
 ref: xi-requirements-and-installation-04
 layout: page
 title: Licensing
-description: About the license of Xtract IS
+description: About the license of Xtract IS for Azure
 product: xtract-is-for-azure
 parent: introduction
 permalink: /:collection/:path
@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 
-<!---Xtract IS cannot be used outside SSIS,
+<!---Xtract IS for Azure cannot be used outside SSIS,
 which is why an SQL Server license is required, even if the SQL Server database is not used.-->
 
 <!---
@@ -33,12 +33,12 @@ which is why an SQL Server license is required, even if the SQL Server database 
 
 
 
-### About licensing concept of Xtract IS
-The following graphic shows on which workstations the installation of Xtract IS is required to have a valid license.   
+### About licensing concept of Xtract IS for Azure
+The following graphic shows on which workstations the installation of Xtract IS for Azure is required to have a valid license.   
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png)<br>
 
-Xtract IS is licensed per source system and Windows server on which SSIS packages are deployed and executed. The same license file can be used on the local workstations to develop the SSIS packages.
-A demo license is automatically installed with the installation of Xtract IS. <br>
+Xtract IS for Azure is licensed per source system and Windows server on which SSIS packages are deployed and executed. The same license file can be used on the local workstations to develop the SSIS packages.
+A demo license is automatically installed with the installation of Xtract IS for Azure. <br>
 A regular license is provided, after purchasing the product. The product license is bound to your company and a specific server name. 
 
 ### Maintenance
@@ -46,8 +46,8 @@ General information on maintenance pricing is available on the [official website
 In case of technical difficulties, contact the support team by email: [support@theobald-software.com](mailto:support@theobald-software.com).
 
 
-### Installing the Xtract IS license - XtractISLicense.json
-1. For installing the regular license, find and double-click the Xtract IS License Manager executable file in the installation directory of Xtract IS:<br>
+### Installing the Xtract IS for Azure license - XtractISLicense.json
+1. For installing the regular license, find and double-click the Xtract IS for Azure License Manager executable file in the installation directory of Xtract IS for Azure:<br>
 `C:\Program Files\XtractIS\XtractLicenseManager.exe` <br>
 The license manager opens. 
 ![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
@@ -57,11 +57,11 @@ The license manager opens.
 ![XIS_License_Info](/img/content/XIS_License_Info.png){:class="img-responsive"}
 
 {: .box-tip }
-**Tip:** To inspect your current license data, click the Xtract IS Info link located at the top of each component editor.
+**Tip:** To inspect your current license data, click the Xtract IS for Azure Info link located at the top of each component editor.
 
 ### Updating the Xtract.License.dll to XtractISLicense.json
-The older version of Xtract IS license file is a .dll-file that was registered in the GAC.
-In the newer versions of Xtract IS license file is provided in form of a .json-file.<br>
+The older version of Xtract IS for Azure license file is a .dll-file that was registered in the GAC.
+In the newer versions of Xtract IS for Azure license file is provided in form of a .json-file.<br>
 Copy the XtractISLicense.json into one of the following paths: <br>
 `CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\` <br>
  or `C:\ProgramData\TheobaldSoftware\XtractIS\` <br>

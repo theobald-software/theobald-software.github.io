@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=bw-loader
 ---
 
-Unlike the other components, the Xtract IS BW Loader component is a data destination, not a data source. 
+Unlike the other components, the Xtract IS for Azure BW Loader component is a data destination, not a data source. 
 
 ![BWLoader](/img/content/BWLoader.png){:class="img-responsive" }
 

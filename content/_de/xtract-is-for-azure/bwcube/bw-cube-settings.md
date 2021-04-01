@@ -55,7 +55,7 @@ Diese Option ermöglicht die Extraktion größere Datenmengen (mehrere Millionen
 Wählen Sie eine geeignete Dimension für das Slicing, bei größeren Datenmengen selektieren Sie eine Dimension mit einer granularen Ausprägung.
 
 **Legacy metadata retrieval** <br>
-Betrifft BW Cube Extraktionen, die mit Xtract IS Version 2.5.17 oder früher erstellt wurden. Sollten Sie die Metadaten der Extraktion aktualisieren, sollten Sie vorher dieses Feld anhaken. Das betrifft insbesondere BEx Queries, die zwei Strukturen enthalten (Merkmals- und Kennzahlenstruktur), da sich der Metadatenabruf seit oben genannter Version geändert hat.
+Betrifft BW Cube Extraktionen, die mit Xtract IS for Azure Version 2.5.17 oder früher erstellt wurden. Sollten Sie die Metadaten der Extraktion aktualisieren, sollten Sie vorher dieses Feld anhaken. Das betrifft insbesondere BEx Queries, die zwei Strukturen enthalten (Merkmals- und Kennzahlenstruktur), da sich der Metadatenabruf seit oben genannter Version geändert hat.
  
 
 ***Extraction Type***

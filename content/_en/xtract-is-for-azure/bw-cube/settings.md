@@ -54,7 +54,7 @@ This option allows the extraction of a large amount of data (several million rec
 Be sure to select the appropriate dimension for automatic slicing. In some cases you may want to select an dimension with granular values (e.g. period or week)
 
 **Legacy metadata retrieval**<br>
-This is for BWCube extractions that were created with  Xtract IS version 2.5.17 or smaller. If you need to refresh the BW Cube's metadata please check this flag first. This is necessary as the metadata retrieval has changed after 2.5.17 which does especially affect BEx Queries which contain two structures.
+This is for BWCube extractions that were created with  Xtract IS for Azure version 2.5.17 or smaller. If you need to refresh the BW Cube's metadata please check this flag first. This is necessary as the metadata retrieval has changed after 2.5.17 which does especially affect BEx Queries which contain two structures.
 
 
 ***Extraction Type***

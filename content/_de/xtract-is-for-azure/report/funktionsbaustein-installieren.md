@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=funktionsbaustein-installieren
 ---
 
-Im Gegensatz zu den meisten anderen Komponenten ist es bei der Xtract IS Report Komponente nötig, einen kundeneigenen Funktionsbaustein im SAP-System zu installieren.<br>
+Im Gegensatz zu den meisten anderen Komponenten ist es bei der Xtract IS for Azure Report Komponente nötig, einen kundeneigenen Funktionsbaustein im SAP-System zu installieren.<br>
 Falls Sie dies nicht selber machen können, bitten Sie einen Kollegen aus Ihrer SAP-Basis-Abteilung, Ihnen zu helfen. Legen Sie zunächst eine Funktionsgruppe (z.B. mit dem Namen ZXTRACT) an, um den Baustein anzulegen. Legen Sie dann einen neuen Funktionsbaustein an. Der Name sollte Z_XTRACT_IS_REMOTE_REPORT sein, kann aber bei Bedarf auch geändert werden. Definieren Sie den Baustein in seinen Attributen als remotefähig und legen Sie die Import-, Export- und Tabellenparameter so an, wie in den nachfolgenden Screenshots gezeigt.
 
 ![Report-CustomFunction-01](/img/content/Report-CustomFunction-01.png){:class="img-responsive"}

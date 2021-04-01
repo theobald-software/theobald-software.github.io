@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=query
 ---
 
 The following section shows how to extract data from SAP queries.
-Drag and drop the appropriate icon from the toolbox to your data flow task. The connection manager is assigned to the component as shown in the section [Xtract IS Table](./table).
+Drag and drop the appropriate icon from the toolbox to your data flow task. The connection manager is assigned to the component as shown in the section [Xtract IS for Azure Table](./table).
 
 ![Query-01](/img/content/Query-01.png){:class="img-responsive" }
 

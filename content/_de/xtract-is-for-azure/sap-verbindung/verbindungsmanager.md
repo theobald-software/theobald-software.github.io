@@ -11,7 +11,7 @@ lang: de_DE
 progressstate: 5
 ---
 ### SAP-Verbindung herstellen 
-Jede Xtract IS Komponente benötigt einen Xtract IS Connection Manager, um auf das SAP-System zuzugreifen. 
+Jede Xtract IS for Azure Komponente benötigt einen Xtract IS for Azure Connection Manager, um auf das SAP-System zuzugreifen. 
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
@@ -22,12 +22,12 @@ Stellen Sie sicher, dass der Zugriff auf die allgemeinen Berechtigungsobjekte m�
 1. Um einen neuen Connection Manager zu erstellen, klicken Sie mit der rechten Maustaste in den Bereich "Solution Explorer" der Connection Manager und wählen Sie **Neue Verbindung**. 
 Das Fenster "Add SSIS Connection Manager" wird geöffnet.
 ![Connection-Manager-01](/img/content/Connection-Manager-01.png){:class="img-responsive"}
-2. Wählen Sie den XTRACT Connection Manager aus der Liste aus und klicken Sie auf **[Add]**. Der Xtract IS Connection Manager erscheint im Tab *Connection Managers*.
-3. Um die SAP-Verbindung zu konfigurieren, doppelklicken Sie auf das Symbol Xtract IS Connection Manager. Das Fenster "Xtract IS Connection Manager" wird geöffnet.
+2. Wählen Sie den XTRACT Connection Manager aus der Liste aus und klicken Sie auf **[Add]**. Der Xtract IS for Azure Connection Manager erscheint im Tab *Connection Managers*.
+3. Um die SAP-Verbindung zu konfigurieren, doppelklicken Sie auf das Symbol Xtract IS for Azure Connection Manager. Das Fenster "Xtract IS for Azure Connection Manager" wird geöffnet.
 ![Connection-Manager](/img/content/Connection-Manager.png){:class="img-responsive" }
 4. Ergänzen Sie alle notwendigen Daten (*Benutzername*, *Mandant*, *Passwort*, *Sprache* usw. siehe unten).
 5. Klicken Sie auf **[Test connection]**, um die Verbindung zu Ihrem SAP-System zu überprüfen. <br>
-Wenn der Verbindungstest erfolgreich ist, ist die Komponente Xtract IS einsatzbereit.
+Wenn der Verbindungstest erfolgreich ist, ist die Komponente Xtract IS for Azure einsatzbereit.
 
 ### SAP Quellsystem (1)
 Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
@@ -69,7 +69,7 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 ### RFC Bibliotheken (3)
 
 Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem ABAP basierten SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. <br>
-Es gibt zwei Möglichkeiten die RFC-Bibliotheken in Xtract IS zu nutzen:
+Es gibt zwei Möglichkeiten die RFC-Bibliotheken in Xtract IS for Azure zu nutzen:
 - Use classic RFC library (librfc32.dll) - Klassische RFC Bibliothek 
 - Use NetWeaver RFC libraries - NetWeaver RFC Bibliothek (sapnwrfc.dll)
 
@@ -83,11 +83,11 @@ SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/sup
 **Hinweis:** Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein.
 
 ### Additions (4)
-Klicken Sie im oberen Teil des "Xtract IS Connection Manager" auf **Additions** (4). Das Fenster "Xtract IS Connection Manager Additions" öffnet sich.
+Klicken Sie im oberen Teil des "Xtract IS for Azure Connection Manager" auf **Additions** (4). Das Fenster "Xtract IS for Azure Connection Manager Additions" öffnet sich.
 ![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.png){:class="img-responsive"}
 
 #### SNC
-Im Fenster "Xtract IS Connection Manager Additions" finden Sie verschiedene SNC (Secure Network Connection) Optionen.
+Im Fenster "Xtract IS for Azure Connection Manager Additions" finden Sie verschiedene SNC (Secure Network Connection) Optionen.
 Siehe auch [SAP-Verbindung mit SNC](./sap-verbindung-mit-snc). <br>
 
 
@@ -111,5 +111,5 @@ Die SAP-Verbindungsparameter werden über einen einzigen *Connection String* ein
 Das SAP-Verbindungspasswort wird maskiert, so dass es nicht im Klartext gespeichert wird. Diese Option wird standardmäßig eingeschaltet, wenn der *Legacy storage mode* aktiviert wird.
 
 **Internal Table Function**
-Gibt den Funktionsbaustein an, der für die interne Kommunikation von Xtract IS mit SAP (z.B. Abruf der Metadaten) verwendet wird.
+Gibt den Funktionsbaustein an, der für die interne Kommunikation von Xtract IS for Azure mit SAP (z.B. Abruf der Metadaten) verwendet wird.
  Um den ausgewählten Funktionsbaustein zu ändern, geben Sie den Namen des Funktionsbausteins manuell ein. Die Verwendung eines anderen Funktionsbausteins kann erforderlich sein, wenn Sie innerhalb des Funktionsbausteins Berechtigungsbeschränkungen hinzufügen möchten.

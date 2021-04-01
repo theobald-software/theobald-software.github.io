@@ -2,7 +2,7 @@
 ref: xi-requirements-and-installation-04
 layout: page
 title: Lizenzierung
-description: Über Lizenzierung von Xtract IS
+description: Über Lizenzierung von Xtract IS for Azure
 product: xtract-is-for-azure
 parent: einfuehrung
 permalink: /:collection/:path
@@ -11,20 +11,20 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=lizenz-einspielen
 progressstate: 5
 ---
-### Über das Lizenzkonzept von Xtract IS
-Die folgende Grafik zeigt, auf welchen Rechnern die Installation von Xtract IS mit einer gültigen Lizenz erforderlich ist.  
+### Über das Lizenzkonzept von Xtract IS for Azure
+Die folgende Grafik zeigt, auf welchen Rechnern die Installation von Xtract IS for Azure mit einer gültigen Lizenz erforderlich ist.  
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive" width="800px"} <br>
 
-Die Lizenzierung von Xtract IS erfolgt pro Quellsystem und Windows-Server auf dem SSIS-Pakete bereitgestellt und ausgeführt werden. Dieselbe Lizenzdatei kann auf den lokalen Rechnern für die Entwicklung der SSIS-Pakete verwendet werden.
-Mit der Installation von Xtract IS wird automatisch eine Demo-Lizenz installiert. <br>
+Die Lizenzierung von Xtract IS for Azure erfolgt pro Quellsystem und Windows-Server auf dem SSIS-Pakete bereitgestellt und ausgeführt werden. Dieselbe Lizenzdatei kann auf den lokalen Rechnern für die Entwicklung der SSIS-Pakete verwendet werden.
+Mit der Installation von Xtract IS for Azure wird automatisch eine Demo-Lizenz installiert. <br>
 Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.
 
 ### Wartung
 Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
 Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).
 
-### Installation der Xtract IS-Lizenz - XtractISLicense.json
-1. Um die reguläre Lizenz zu installieren, wählen Sie die ausführbare Xtract IS Lizensmanager-Datei im Installationsverzeichnis von Xtract IS aus:<br>
+### Installation der Xtract IS for Azure-Lizenz - XtractISLicense.json
+1. Um die reguläre Lizenz zu installieren, wählen Sie die ausführbare Xtract IS for Azure Lizensmanager-Datei im Installationsverzeichnis von Xtract IS for Azure aus:<br>
 `C:\Program Files\XtractIS\XtractLicenseManager.exe`
 Der Lizenzmanager wird geöffnet. 
 ![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
@@ -39,8 +39,8 @@ Der Lizenzmanager wird geöffnet.
 
 
 ### Aktualisierung der Xtract.License.dll auf XtractISLicense.json
-Die ältere Version der Xtract IS Lizenzdatei ist eine .dll-Datei, die im GAC registriert wurde.
-In den neueren Versionen von Xtract IS wird die Lizenzdatei in Form einer .json-Datei zur Verfügung gestellt.<br>
+Die ältere Version der Xtract IS for Azure Lizenzdatei ist eine .dll-Datei, die im GAC registriert wurde.
+In den neueren Versionen von Xtract IS for Azure wird die Lizenzdatei in Form einer .json-Datei zur Verfügung gestellt.<br>
 Kopieren Sie die XtractISLicense.json in einen der folgenden Pfade:<br>
 `CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\` <br>
  oder `C:\ProgramData\TheobaldSoftware\XtractIS\`

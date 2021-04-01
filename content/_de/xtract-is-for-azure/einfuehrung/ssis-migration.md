@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=ssis-migration
 ---
 
-Der folgende Abschnitt befasst sich mit den Informationen über die Migration von SSIS Paketen (mit Xtract IS-Komponenten) von einer niedrigeren SQL Server/SSIS-Version in eine höhere Version. 
+Der folgende Abschnitt befasst sich mit den Informationen über die Migration von SSIS Paketen (mit Xtract IS for Azure-Komponenten) von einer niedrigeren SQL Server/SSIS-Version in eine höhere Version. 
 Beispielweise Sie migrieren von SQL Server 2012 nach SQL Server 2019. Diese Migration erfordert ebenfalls eine Migration der SSIS Pakete.
 
 Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSDT- und SSIS-Version. Mehr Informationen dazu finden Sie im Knowledgebase-Artikel [Step-by-step instructions for migrating SSIS 2008/2012 packages to SSIS 2019](https://kb.theobald-software.com/xtract-is-for-azure/step-by-step-ssis-migration).
@@ -19,10 +19,10 @@ Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSD
 ### Migration von SSIS 2008/2012 nach SSIS 2019
 1.  Bereiten Sie die SSIS-Pakete für Migration mithilfe des *XtractISConversionPreparer.exe*.
 2.  Im SSIS-Paket, passen sie die Deployment-Zielumgebung an: SSIS 2019.
-3.  Installieren Sie die aktuelle Xtract IS Version.
+3.  Installieren Sie die aktuelle Xtract IS for Azure Version.
 
 ### Ausführen der XtractISConversionPreparer.exe
-Der XtractIS Conversion Preparer ist ein Tool, das SSIS-Pakete (inkl. Xtract IS-Komponente), die für ältere Versionen von SSIS erstellt wurden, für die Migration auf neuere Versionen von SSIS vorbereitet. 
+Der XtractIS Conversion Preparer ist ein Tool, das SSIS-Pakete (inkl. Xtract IS for Azure-Komponente), die für ältere Versionen von SSIS erstellt wurden, für die Migration auf neuere Versionen von SSIS vorbereitet. 
 
 
 {: .box-note }
@@ -63,4 +63,4 @@ Bei VS/SSDT 2015 sowie 2019 können Sie die Zielversion des SQL Servers (Deploym
 ![VS-Deployment-Target](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
 
 ### Aktuelle XtractISSetup.exe installieren
-Installieren Sie die aktuelle Xtract IS Version auf Ihrem SSIS Server und auf jeder anderen Deployment-Umgebung (Visual Studio/SSDT).
+Installieren Sie die aktuelle Xtract IS for Azure Version auf Ihrem SSIS Server und auf jeder anderen Deployment-Umgebung (Visual Studio/SSDT).

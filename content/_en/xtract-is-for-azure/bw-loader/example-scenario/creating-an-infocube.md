@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=creating-an-infocube
 
 Before we now discuss the last type of loading, the transaction data, we need an InfoCube into which the data can be loaded.
 Create a new SSIS package, define an OleDB source in the Sales test table and link the pipeline with a BW Loader target.
-Then click on the link *Create Cube* in the editor. The following window will open. Through the pipeline that you already linked from the source, Xtract IS already "knows" how the cube should look like. One InfoObject for each element will be needed to create a cube.
+Then click on the link *Create Cube* in the editor. The following window will open. Through the pipeline that you already linked from the source, Xtract IS for Azure already "knows" how the cube should look like. One InfoObject for each element will be needed to create a cube.
 
 
 ![BWLoader-Create-InfoCube-01](/img/content/BWLoader-Create-InfoCube-01.png){:class="img-responsive"}
@@ -43,4 +43,4 @@ We still need to create a new InfoSource of the *Transaction Data* type. It is s
 ![BWLoader-Create-InfoCube-06](/img/content/BWLoader-Create-InfoCube-06.png){:class="img-responsive"}
 
 
-Xtract IS does not support the automatic creation of updating rules in the cube. These therefore have to be manually created. To do so, open the cube administration in the RSA1 transaction and then select *Environment* in the *menu -> Update Rules -> Create*. Select the InfoSource you just created and confirm with *Enter*. Save and activate the rule.
+Xtract IS for Azure does not support the automatic creation of updating rules in the cube. These therefore have to be manually created. To do so, open the cube administration in the RSA1 transaction and then select *Environment* in the *menu -> Update Rules -> Create*. Select the InfoSource you just created and confirm with *Enter*. Save and activate the rule.
