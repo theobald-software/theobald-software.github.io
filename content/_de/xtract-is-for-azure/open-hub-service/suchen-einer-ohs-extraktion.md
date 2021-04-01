@@ -3,7 +3,7 @@ ref: xi-open-hub-service-ohs-02
 layout: page
 title: Suchen einer OHS-Extraktion
 description: Suchen einer OHS-Extraktion
-product: xtract-is
+product: xtract-is-for-azure
 parent: open-hub-service
 permalink: /:collection/:path
 weight: 2

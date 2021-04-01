@@ -3,7 +3,7 @@ ref: xi-table-02
 layout: page
 title: Tables and Fields
 description: Tables and Fields
-product: xtract-is
+product: xtract-is-for-azure
 parent: table
 permalink: /:collection/:path
 weight: 1

@@ -3,7 +3,7 @@ ref: xi-report-03
 layout: page
 title: Variants and Selections
 description: Variants and Selections
-product: xtract-is
+product: xtract-is-for-azure
 parent: report
 permalink: /:collection/:path
 weight: 3

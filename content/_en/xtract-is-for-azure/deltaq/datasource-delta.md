@@ -3,7 +3,7 @@ ref: xi-q-delta-05
 layout: page
 title: Delta
 description: Delta
-product: xtract-is
+product: xtract-is-for-azure
 parent: deltaq
 permalink: /:collection/:path
 weight: 5

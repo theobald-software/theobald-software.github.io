@@ -3,7 +3,7 @@ ref: xi-bw-loader-packages-04
 layout: page
 title: Override SAP settings
 description: Override SAP settings
-product: xtract-is
+product: xtract-is-for-azure
 parent: executing-bw-loader-packages
 permalink: /:collection/:path
 weight: 4

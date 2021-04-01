@@ -3,7 +3,7 @@ ref: xi-bw-cube-03
 layout: page
 title: Variables
 description: Variables
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-cube
 permalink: /:collection/:path
 weight: 3

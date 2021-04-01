@@ -3,7 +3,7 @@ ref: xi-ohs-extractions-02
 layout: page
 title: Das XML-Config-File vorbereiten
 description: Das XML-Config-File vorbereiten
-product: xtract-is
+product: xtract-is-for-azure
 parent: ohs-extraktionen-ausfuehren
 permalink: /:collection/:path
 weight: 2

@@ -3,7 +3,7 @@ ref: xi-ohs-extractions-03
 layout: page
 title: Ausführung
 description: Ausführung
-product: xtract-is
+product: xtract-is-for-azure
 parent: ohs-extraktionen-ausfuehren
 permalink: /:collection/:path
 weight: 3

@@ -3,7 +3,7 @@ ref: xi-report-02
 layout: page
 title: Define Report
 description: Define Report
-product: xtract-is
+product: xtract-is-for-azure
 parent: report
 permalink: /:collection/:path
 weight: 2

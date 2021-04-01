@@ -3,8 +3,8 @@ ref: xi-bapi-01
 layout: page
 title: BAPIs suchen
 description: BAPIs suchen
-product: xtract-is
-parent: xtract-is-bapi
+product: xtract-is-for-azure
+parent: xtract-is-for-azure-bapi
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

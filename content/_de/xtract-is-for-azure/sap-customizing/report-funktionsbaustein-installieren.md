@@ -3,7 +3,7 @@ ref: xi-sap-customizing-06
 layout: page
 title: Report-Funktionsbaustein installieren
 description: Report-Funktionsbaustein installieren
-product: xtract-is
+product: xtract-is-for-azure
 parent: sap-customizing
 permalink: /:collection/:path
 weight: 6

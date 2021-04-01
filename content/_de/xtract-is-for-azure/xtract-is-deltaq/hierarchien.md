@@ -3,15 +3,15 @@ ref: xi-q-delta-08
 layout: page
 title: Hierarchien
 description: Hierarchien
-product: xtract-is
-parent: xtract-is-deltaq
+product: xtract-is-for-azure
+parent: xtract-is-for-azure-deltaq
 permalink: /:collection/:path
 weight: 8
 lang: de_DE
 progressstate: 5
 ---
 ### Datenquelle auswählen
-Wie in [Defining an extractor](../xtract-is-deltaq/stammdaten-im-full-update) gezeigt, wählen Sie im Editor "Look Up OLTP Source" über die **Suche** (Lupensymbol) einen **OLTP Source Name**.
+Wie in [Defining an extractor](../xtract-is-for-azure-deltaq/stammdaten-im-full-update) gezeigt, wählen Sie im Editor "Look Up OLTP Source" über die **Suche** (Lupensymbol) einen **OLTP Source Name**.
 
 Beispiel: Datenquelle *0COSTCENTER_0101_HIER*.
 ![DeltaQ-Hierarchy-001](/img/content/DeltaQ-Hierarchy-001.png){:class="img-responsive"}

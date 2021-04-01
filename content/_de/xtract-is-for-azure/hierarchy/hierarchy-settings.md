@@ -3,7 +3,7 @@ ref: xi-hierarchy-03
 layout: page
 title: Settings
 description: Settings
-product: xtract-is
+product: xtract-is-for-azure
 parent: hierarchy
 permalink: /:collection/:path
 weight: 3

@@ -3,7 +3,7 @@ ref: xi-example-scenario-02
 layout: page
 title: Texts
 description: Texts
-product: xtract-is
+product: xtract-is-for-azure
 parent: example-scenario
 permalink: /:collection/:path
 weight: 2

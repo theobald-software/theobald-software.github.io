@@ -3,7 +3,7 @@ ref: xi-bw-loader-01
 layout: page
 title: Requirements in SAP BW
 description: Requirements in SAP BW
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-loader
 permalink: /:collection/:path
 weight: 1

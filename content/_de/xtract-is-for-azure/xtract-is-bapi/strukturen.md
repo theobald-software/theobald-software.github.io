@@ -3,8 +3,8 @@ ref: xi-bapi-03
 layout: page
 title: Strukturen
 description: Strukturen
-product: xtract-is
-parent: xtract-is-bapi
+product: xtract-is-for-azure
+parent: xtract-is-for-azure-bapi
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

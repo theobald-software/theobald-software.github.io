@@ -3,7 +3,7 @@ ref: xi-bapi-03
 layout: page
 title: Structures
 description: Structures
-product: xtract-is
+product: xtract-is-for-azure
 parent: bapi
 permalink: /:collection/:path
 weight: 3

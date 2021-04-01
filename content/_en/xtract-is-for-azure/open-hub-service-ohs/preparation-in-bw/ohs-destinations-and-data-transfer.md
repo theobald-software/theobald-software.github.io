@@ -3,7 +3,7 @@ ref: xi-preparation-in-bw-03
 layout: page
 title: OHS Destinations and Data Transfer Processes (BI 7.0)
 description: OHS Destinations and Data Transfer Processes (BI 7.0)
-product: xtract-is
+product: xtract-is-for-azure
 parent: preparation-in-bw
 permalink: /:collection/:path
 weight: 3

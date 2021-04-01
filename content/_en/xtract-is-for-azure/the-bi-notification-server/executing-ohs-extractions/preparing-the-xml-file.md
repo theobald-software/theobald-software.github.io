@@ -3,7 +3,7 @@ ref: xi-ohs-extractions-02
 layout: page
 title: Preparing the XML file
 description: Preparing the XML file
-product: xtract-is
+product: xtract-is-for-azure
 parent: executing-ohs-extractions
 permalink: /:collection/:path
 weight: 2

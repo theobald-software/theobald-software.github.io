@@ -3,7 +3,7 @@ ref: xis-odp-bw
 layout: page
 title: BW InfoProviders
 description: BW InfoProviders
-product: xtract-is
+product: xtract-is-for-azure
 parent: odp
 permalink: /:collection/:path
 weight: 3

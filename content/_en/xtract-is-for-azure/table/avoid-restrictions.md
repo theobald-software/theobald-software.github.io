@@ -3,7 +3,7 @@ ref: xi-table-07
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions
-product: xtract-is
+product: xtract-is-for-azure
 parent: table
 permalink: /:collection/:path
 weight: 7

@@ -3,8 +3,8 @@ ref: xi-bapi-02
 layout: page
 title: Skalare Parameter
 description: Skalare Parameter
-product: xtract-is
-parent: xtract-is-bapi
+product: xtract-is-for-azure
+parent: xtract-is-for-azure-bapi
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

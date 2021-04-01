@@ -3,7 +3,7 @@ ref: xi-requirements-and-installation-04
 layout: page
 title: Licensing
 description: About the license of Xtract IS
-product: xtract-is
+product: xtract-is-for-azure
 parent: introduction
 permalink: /:collection/:path
 weight: 4

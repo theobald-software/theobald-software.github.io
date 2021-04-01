@@ -3,7 +3,7 @@ ref: xi-sap-connection-02
 layout: page
 title: SAP-Verbindung mit SNC
 description: SAP-Verbindung mit SNC
-product: xtract-is
+product: xtract-is-for-azure
 parent: sap-verbindung
 permalink: /:collection/:path
 weight: 2

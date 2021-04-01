@@ -3,7 +3,7 @@ ref: xi-bw-cube-02
 layout: page
 title: Filter
 description: Filter
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-cube
 permalink: /:collection/:path
 weight: 2

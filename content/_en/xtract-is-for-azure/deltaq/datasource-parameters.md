@@ -3,7 +3,7 @@ ref: xi-q-delta-04
 layout: page
 title: Datasource Parameters
 description: Datasource Parameters
-product: xtract-is
+product: xtract-is-for-azure
 parent: deltaq
 permalink: /:collection/:path
 weight: 4

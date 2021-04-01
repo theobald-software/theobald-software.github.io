@@ -3,7 +3,7 @@ ref: xi-bapi-02
 layout: page
 title: Scalar Parameters
 description: Scalar Parameters
-product: xtract-is
+product: xtract-is-for-azure
 parent: bapi
 permalink: /:collection/:path
 weight: 2

@@ -3,7 +3,7 @@ ref: xi-preparation-in-bw-01
 layout: page
 title: RFC Destination
 description: RFC Destination
-product: xtract-is
+product: xtract-is-for-azure
 parent: preparation-in-bw
 permalink: /:collection/:path
 weight: 1

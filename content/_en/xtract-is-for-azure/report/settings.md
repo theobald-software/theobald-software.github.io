@@ -3,7 +3,7 @@ ref: xi-report-05
 layout: page
 title: Settings
 description: Settings
-product: xtract-is
+product: xtract-is-for-azure
 parent: report
 permalink: /:collection/:path
 weight: 5

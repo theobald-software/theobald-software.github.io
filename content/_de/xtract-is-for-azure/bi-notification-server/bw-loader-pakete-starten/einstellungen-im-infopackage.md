@@ -3,7 +3,7 @@ ref: xi-bw-loader-packages-02
 layout: page
 title: Einstellungen im InfoPackage
 description: Einstellungen im InfoPackage
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-loader-pakete-starten
 permalink: /:collection/:path
 weight: 2

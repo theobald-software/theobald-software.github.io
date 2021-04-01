@@ -3,7 +3,7 @@ ref: xi-q-delta-10
 layout: page
 title: Troubleshooting
 description: Troubleshooting Guide
-product: xtract-is
+product: xtract-is-for-azure
 parent: deltaq
 permalink: /:collection/:path
 weight: 10

@@ -3,7 +3,7 @@ ref: xis-odp-extractor
 layout: page
 title: Extraktoren
 description: Extraktoren und Datasources
-product: xtract-is
+product: xtract-is-for-azure
 parent: odp
 permalink: /:collection/:path
 weight: 2

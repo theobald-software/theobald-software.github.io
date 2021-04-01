@@ -3,7 +3,7 @@ ref: xi-sap-customizing-03
 layout: page
 title: Funktionsbaustein für Table-Join
 description: Funktionsbaustein für Table-Join
-product: xtract-is
+product: xtract-is-for-azure
 parent: sap-customizing
 permalink: /:collection/:path
 weight: 3

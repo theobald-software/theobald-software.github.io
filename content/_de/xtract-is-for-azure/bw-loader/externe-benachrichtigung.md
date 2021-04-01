@@ -3,7 +3,7 @@ ref: xi-bw-loader-06
 layout: page
 title: Externe Benachrichtigung
 description: Externe Benachrichtigung
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-loader
 permalink: /:collection/:path
 weight: 5

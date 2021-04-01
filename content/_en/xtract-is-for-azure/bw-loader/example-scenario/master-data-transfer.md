@@ -3,7 +3,7 @@ ref: xi-example-scenario-01
 layout: page
 title: Master Data Transfer
 description: Master Data Transfer
-product: xtract-is
+product: xtract-is-for-azure
 parent: example-scenario
 permalink: /:collection/:path
 weight: 1

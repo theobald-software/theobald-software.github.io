@@ -3,7 +3,7 @@ ref: xi-report-04
 layout: page
 title: Report-Spalten definieren
 description: Report-Spalten definieren
-product: xtract-is
+product: xtract-is-for-azure
 parent: report
 permalink: /:collection/:path
 weight: 4

@@ -3,7 +3,7 @@ ref: xi-table-04
 layout: page
 title: WHERE Clause
 description: WHERE Clause
-product: xtract-is
+product: xtract-is-for-azure
 parent: table
 permalink: /:collection/:path
 weight: 4

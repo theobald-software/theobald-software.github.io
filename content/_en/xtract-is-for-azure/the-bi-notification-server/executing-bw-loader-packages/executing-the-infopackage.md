@@ -3,7 +3,7 @@ ref: xi-bw-loader-packages-03
 layout: page
 title: Executing the InfoPackage
 description: Executing the InfoPackage
-product: xtract-is
+product: xtract-is-for-azure
 parent: executing-bw-loader-packages
 permalink: /:collection/:path
 weight: 3

@@ -3,7 +3,7 @@ ref: xi-report-01
 layout: page
 title: Funktionsbaustein installieren
 description: Funktionsbaustein installieren
-product: xtract-is
+product: xtract-is-for-azure
 parent: report
 permalink: /:collection/:path
 weight: 1

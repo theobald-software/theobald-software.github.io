@@ -3,7 +3,7 @@ ref: xi-open-hub-service-ohs-03
 layout: page
 title: Technische Einstellungen und Preview
 description: Technische Einstellungen und Preview
-product: xtract-is
+product: xtract-is-for-azure
 parent: open-hub-service
 permalink: /:collection/:path
 weight: 3

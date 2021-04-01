@@ -3,7 +3,7 @@ ref: xi-requirements-and-installation-05
 layout: page
 title: SSIS Migration
 description: SSIS Migration
-product: xtract-is
+product: xtract-is-for-azure
 parent: introduction
 permalink: /:collection/:path
 weight: 5
@@ -14,7 +14,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=ssis-migration
 The following section contains detailed information on migrating SSIS packages (containing Xtract IS components) from a lower SQL Server/SSIS version to a higher version. 
 Example: You are migrating from SQL Server 2012 to SQL Server 2019. This migration requires a migration of your SSIS packages, as well.
 
-Keep in mind the dependency of Visual Studio/SSDT and SSIS version. See more details in the knowledge base article - [Step-by-step instructions for migrating SSIS 2012 packages to SSIS 2019](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
+Keep in mind the dependency of Visual Studio/SSDT and SSIS version. See more details in the knowledge base article - [Step-by-step instructions for migrating SSIS 2012 packages to SSIS 2019](https://kb.theobald-software.com/xtract-is-for-azure/step-by-step-ssis-migration).
 
 ### Migrating from SSIS 2012 to SSIS 2019
 1. Prepare SSIS packages for migration using *XtractISConversionPreparer.exe*

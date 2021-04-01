@@ -3,7 +3,7 @@ ref: xi-query-01
 layout: page
 title: Searching Queries
 description: Searching Queries
-product: xtract-is
+product: xtract-is-for-azure
 parent: query
 permalink: /:collection/:path
 weight: 1

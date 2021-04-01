@@ -3,7 +3,7 @@ ref: xi-bw-loader-05
 layout: page
 title: Example Scenario
 description: Example Scenario
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-loader
 childidentifier: example-scenario
 permalink: /:collection/:path

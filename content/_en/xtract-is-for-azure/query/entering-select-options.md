@@ -3,7 +3,7 @@ ref: xi-query-03
 layout: page
 title: Entering Select Options
 description: Entering Select Options
-product: xtract-is
+product: xtract-is-for-azure
 parent: query
 permalink: /:collection/:path
 weight: 3

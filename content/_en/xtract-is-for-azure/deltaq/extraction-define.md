@@ -3,7 +3,7 @@ ref: xi-q-delta-03
 layout: page
 title: Defining an extractor
 description: Defining an extractor
-product: xtract-is
+product: xtract-is-for-azure
 parent: deltaq
 permalink: /:collection/:path
 weight: 3

@@ -3,7 +3,7 @@ ref: xi-open-hub-service-ohs-04
 layout: page
 title: Settings
 description: Settings
-product: xtract-is
+product: xtract-is-for-azure
 parent: open-hub-service-ohs
 permalink: /:collection/:path
 weight: 4

@@ -3,7 +3,7 @@ ref: xi-bw-loader-packages-04
 layout: page
 title: Die SAP-Einstellungen übersteuern
 description: Die SAP-Einstellungen übersteuern
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-loader-pakete-starten
 permalink: /:collection/:path
 weight: 4

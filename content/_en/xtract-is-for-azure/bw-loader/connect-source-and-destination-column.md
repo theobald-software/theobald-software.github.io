@@ -3,7 +3,7 @@ ref: xi-bw-loader-03
 layout: page
 title: Connect Source and Destination Columns
 description: Connect Source and Destination Columns
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-loader
 permalink: /:collection/:path
 weight: 3

@@ -3,7 +3,7 @@ ref: xi-requirements-and-installation-01
 layout: page
 title: Requirements
 description: Requirements
-product: xtract-is
+product: xtract-is-for-azure
 parent: introduction
 permalink: /:collection/:path
 weight: 1

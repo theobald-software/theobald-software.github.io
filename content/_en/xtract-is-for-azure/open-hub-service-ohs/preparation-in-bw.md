@@ -3,7 +3,7 @@ ref: xi-open-hub-service-ohs-01
 layout: page
 title: Preparation in BW
 description: Preparation in BW
-product: xtract-is
+product: xtract-is-for-azure
 parent: open-hub-service-ohs
 childidentifier: preparation-in-bw
 permalink: /:collection/:path

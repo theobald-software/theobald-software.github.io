@@ -3,7 +3,7 @@ ref: xi-bw-cube-01
 layout: page
 title: Eine BW Cube-Quelle suchen
 description: Eine BW Cube-Quelle suchen
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-cube
 permalink: /:collection/:path
 weight: 1

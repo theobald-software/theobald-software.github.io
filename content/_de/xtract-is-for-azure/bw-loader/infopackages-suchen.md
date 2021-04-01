@@ -3,7 +3,7 @@ ref: xi-bw-loader-02
 layout: page
 title: InfoPackages suchen
 description: InfoPackages suchen
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-loader
 permalink: /:collection/:path
 weight: 2

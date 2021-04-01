@@ -3,7 +3,7 @@ ref: xi-hierarchy-02
 layout: page
 title: Table Output
 description: Table Output
-product: xtract-is
+product: xtract-is-for-azure
 parent: hierarchy
 permalink: /:collection/:path
 weight: 2

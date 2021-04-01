@@ -3,7 +3,7 @@ ref: xi-ohs-extractions-01
 layout: page
 title: Vorbereitungen auf der SSIS-Seite
 description: Vorbereitungen auf der SSIS-Seite
-product: xtract-is
+product: xtract-is-for-azure
 parent: ohs-extraktionen-ausfuehren
 permalink: /:collection/:path
 weight: 1

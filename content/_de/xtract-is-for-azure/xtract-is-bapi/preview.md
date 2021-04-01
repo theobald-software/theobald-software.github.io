@@ -3,8 +3,8 @@ ref: xi-bapi-05
 layout: page
 title: Preview
 description: Preview
-product: xtract-is
-parent: xtract-is-bapi
+product: xtract-is-for-azure
+parent: xtract-is-for-azure-bapi
 permalink: /:collection/:path
 weight: 5
 lang: de_DE

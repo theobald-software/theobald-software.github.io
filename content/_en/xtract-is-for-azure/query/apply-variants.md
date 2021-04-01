@@ -3,7 +3,7 @@ ref: xi-query-02
 layout: page
 title: Apply Variants
 description: Apply Variants
-product: xtract-is
+product: xtract-is-for-azure
 parent: query
 permalink: /:collection/:path
 weight: 2

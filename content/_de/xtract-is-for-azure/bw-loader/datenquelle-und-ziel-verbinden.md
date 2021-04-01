@@ -3,7 +3,7 @@ ref: xi-bw-loader-03
 layout: page
 title: Datenquelle und Ziel verbinden
 description: Datenquelle und Ziel verbinden
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-loader
 permalink: /:collection/:path
 weight: 3

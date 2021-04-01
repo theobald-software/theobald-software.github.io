@@ -3,7 +3,7 @@ ref: xi-sap-connection-03
 layout: page
 title: Sensitive Environment Variable in SSIS Catalog
 description: Sensitive Environment Variable in SSIS Catalog
-product: xtract-is
+product: xtract-is-for-azure
 parent: sap-connection
 permalink: /:collection/:path
 weight: 3

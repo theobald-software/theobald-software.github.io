@@ -3,7 +3,7 @@ ref: xis-odp-introduction
 layout: page
 title: Xtract ODP Funktionsübersicht
 description: ODP Einführung
-product: xtract-is
+product: xtract-is-for-azure
 parent: odp
 permalink: /:collection/:path
 weight: 1

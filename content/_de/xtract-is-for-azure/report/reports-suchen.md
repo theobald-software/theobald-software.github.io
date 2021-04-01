@@ -3,7 +3,7 @@ ref: xi-report-02
 layout: page
 title: Report extrahieren
 description: Report extrahieren
-product: xtract-is
+product: xtract-is-for-azure
 parent: report
 permalink: /:collection/:path
 weight: 2

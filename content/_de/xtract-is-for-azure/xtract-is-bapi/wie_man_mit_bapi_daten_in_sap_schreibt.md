@@ -3,8 +3,8 @@ ref: xi-bapi-07
 layout: page
 title: Wie man mit BAPI Daten in SAP schreibt
 description: Wie man mit BAPI Daten in SAP schreibt
-product: xtract-is
-parent: xtract-is-bapi
+product: xtract-is-for-azure
+parent: xtract-is-for-azure-bapi
 permalink: /:collection/:path
 weight: 7
 lang: de_DE

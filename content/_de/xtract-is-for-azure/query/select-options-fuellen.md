@@ -3,7 +3,7 @@ ref: xi-query-03
 layout: page
 title: Select Options füllen
 description: Select Options füllen
-product: xtract-is
+product: xtract-is-for-azure
 parent: query
 permalink: /:collection/:path
 weight: 3

@@ -3,7 +3,7 @@ ref: xi-example-scenario-03
 layout: page
 title: Creating an InfoCube
 description: Creating an InfoCube
-product: xtract-is
+product: xtract-is-for-azure
 parent: example-scenario
 permalink: /:collection/:path
 weight: 3

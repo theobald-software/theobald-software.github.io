@@ -3,7 +3,7 @@ ref: xi-requirements-and-installation-02
 layout: page
 title: Installation
 description: Installation
-product: xtract-is
+product: xtract-is-for-azure
 parent: introduction
 permalink: /:collection/:path
 weight: 2
@@ -40,7 +40,7 @@ Interactive installation is the standard procedure with GUI. Execute the *Xtract
 
 The Xtract IS Setup installs Xtract IS as a plug-in into SSIS.
 
-The license installation procedure is described in the section [Installing the license](./installing-the-license#installing-the-xtract-is-license---xtractislicensejson).
+The license installation procedure is described in the section [Installing the license](./installing-the-license#installing-the-xtract-is-for-azure-license---xtractislicensejson).
 
 
 #### Installation Directory Files

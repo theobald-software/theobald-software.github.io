@@ -3,7 +3,7 @@ ref: xi-bi-notification-server-01
 layout: page
 title: Installation
 description: Installation
-product: xtract-is
+product: xtract-is-for-azure
 parent: bi-notification-server
 permalink: /:collection/:path
 weight: 1

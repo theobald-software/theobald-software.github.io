@@ -3,7 +3,7 @@ ref: xi-hierarchy-01
 layout: page
 title: Hierarchien suchen
 description: Hierarchien suchen
-product: xtract-is
+product: xtract-is-for-azure
 parent: hierarchy
 permalink: /:collection/:path
 weight: 1

@@ -3,7 +3,7 @@ ref: xi-query-01
 layout: page
 title: Queries suchen und zuweisen
 description: Queries suchen und zuweisen
-product: xtract-is
+product: xtract-is-for-azure
 parent: query
 permalink: /:collection/:path
 weight: 1

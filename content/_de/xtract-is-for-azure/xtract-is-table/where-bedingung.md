@@ -3,8 +3,8 @@ ref: xi-table-04
 layout: page
 title: WHERE Bedingung
 description: WHERE Bedingung
-product: xtract-is
-parent: xtract-is-table
+product: xtract-is-for-azure
+parent: xtract-is-for-azure-table
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

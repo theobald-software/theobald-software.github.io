@@ -3,7 +3,7 @@ ref: xi-preparation-in-bw-02
 layout: page
 title: InfoSpokes und Prozessketten BI 7.0
 description: InfoSpokes und Prozessketten BI 7.0
-product: xtract-is
+product: xtract-is-for-azure
 parent: vorbereitung-im-bw
 permalink: /:collection/:path
 weight: 2

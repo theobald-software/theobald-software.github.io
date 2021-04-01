@@ -3,7 +3,7 @@ ref: xi-sap-customizing-05
 layout: page
 title: Customizing für DeltaQ
 description: Customizing für DeltaQ
-product: xtract-is
+product: xtract-is-for-azure
 parent: sap-customizing
 permalink: /:collection/:path
 weight: 5

@@ -3,7 +3,7 @@ ref: xi-bapi-01
 layout: page
 title: Look Up BAPIs
 description: Look Up BAPIs
-product: xtract-is
+product: xtract-is-for-azure
 parent: bapi
 permalink: /:collection/:path
 weight: 1

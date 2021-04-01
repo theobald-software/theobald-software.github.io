@@ -3,7 +3,7 @@ ref: xi-bi-notification-server-03
 layout: page
 title: OHS Extraktionen ausführen
 description: OHS Extraktionen ausführen
-product: xtract-is
+product: xtract-is-for-azure
 parent: bi-notification-server
 childidentifier: ohs-extraktionen-ausfuehren
 permalink: /:collection/:path

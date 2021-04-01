@@ -3,7 +3,7 @@ ref: xi-table-01
 layout: page
 title: Extracting Table Data
 description: Extract Table Data
-product: xtract-is
+product: xtract-is-for-azure
 parent: table
 permalink: /:collection/:path
 weight: 2

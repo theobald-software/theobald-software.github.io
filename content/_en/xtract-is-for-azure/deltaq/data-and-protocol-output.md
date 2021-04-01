@@ -3,7 +3,7 @@ ref: xi-q-delta-07
 layout: page
 title: Data and Protocol Output
 description: Data and Protocol Output
-product: xtract-is
+product: xtract-is-for-azure
 parent: deltaq
 permalink: /:collection/:path
 weight: 7

@@ -3,7 +3,7 @@ ref: xi-sap-connection-01
 layout: page
 title: The Connection Manager
 description: The Connection Manager
-product: xtract-is
+product: xtract-is-for-azure
 parent: sap-connection
 permalink: /:collection/:path
 weight: 1

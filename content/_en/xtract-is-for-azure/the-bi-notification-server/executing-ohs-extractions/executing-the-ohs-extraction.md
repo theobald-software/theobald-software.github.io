@@ -3,7 +3,7 @@ ref: xi-ohs-extractions-03
 layout: page
 title: Executing the OHS extraction
 description: Executing the OHS extraction
-product: xtract-is
+product: xtract-is-for-azure
 parent: executing-ohs-extractions
 permalink: /:collection/:path
 weight: 3

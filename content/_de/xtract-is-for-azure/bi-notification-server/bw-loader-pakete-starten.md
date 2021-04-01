@@ -3,7 +3,7 @@ ref: xi-bi-notification-server-02
 layout: page
 title: BW Loader Pakete starten
 description: BW Loader Pakete starten
-product: xtract-is
+product: xtract-is-for-azure
 parent: bi-notification-server
 childidentifier: bw-loader-pakete-starten
 permalink: /:collection/:path

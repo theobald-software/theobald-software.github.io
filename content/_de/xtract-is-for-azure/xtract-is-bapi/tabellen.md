@@ -3,8 +3,8 @@ ref: xi-bapi-04
 layout: page
 title: Tabellen
 description: Tabellen
-product: xtract-is
-parent: xtract-is-bapi
+product: xtract-is-for-azure
+parent: xtract-is-for-azure-bapi
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
