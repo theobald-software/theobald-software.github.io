@@ -29,9 +29,6 @@ Defines the user Id and password of the database user.
 
 **Schema**<br>
 Defines the schema of the database.
-
-**Provider**<br>
-Defines the .Net provider for the database. To install the provider refer to [requirements](../amazon-aws-s3/requirements).
             
 **Test Connection**<br>
 Checks the database connection.

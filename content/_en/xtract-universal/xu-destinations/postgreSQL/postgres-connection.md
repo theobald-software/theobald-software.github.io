@@ -37,7 +37,7 @@ Please make sure that the Certification authority (CA) that signed the certifica
 For further information please see the following link: - [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
 **Private endpoint?**<br>
-Private endpoint.
+Alternative hostname under which you can establish a connection. Example use case is hosting a PostgreSQL on an Azure cloud.
 
 **Port**<br>
 Port 5432 is selected by default.
