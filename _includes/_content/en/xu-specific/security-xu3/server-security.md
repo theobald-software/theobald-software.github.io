@@ -7,18 +7,17 @@ There are two types of [users and user groups](user-management#users-and-user-gr
 - Windows AD users (Kerberos authentication)
 - XU custom users (Basic authentication) 
 
-When there are restrictions, Windows AD credentials or credentials of a custom user are submitted when running an extraction.
+When access to the web server is restricted, Windows AD credentials or credentials of a custom user must be submitted when running an extraction.
 
 [//]: # (How is it submitted? If there is a window where you have to enter your credential maybe post a screenshot of that instead of the webserver settings window - maybe put that below to prerequisites)
 
-![webserver settings](/img/content/xu/server-settings-security.png){:class="img-responsive"}
-
-{: .box-note}
-**Note**: Users allowed to run an extraction must have at least [Read access](./access-management#server-settings) to the software.
 
 ### Prerequisite: Activating TLS encryption
-Both types of access restriction require installation of an X.509 certificate.
-If it is not listed in the Windows certificate store, [install the X.509 certificate](./install-x.509-Certificate#create-x509-certificate).
+
+![webserver settings](/img/content/xu/server-settings-security.png){:class="img-responsive"}
+
+Both types of access restrictions require accessing the software's web server through an https connection. This requires installation of an X.509 certificate.
+If the certificate is not listed in the Windows certificate store, [install the X.509 certificate](./install-x.509-Certificate#create-x509-certificate).
 
 1. Navigate to the menu bar and select **Server > Settings** - *Web Server* tab.
 2. Depending on what type of user you want to restrict access to, select *HTTPS - Restricted to AD users with Designer read access* or *HTTPS - Restricted to custom users with Designer read access.*
@@ -30,7 +29,7 @@ If it is not listed in the Windows certificate store, [install the X.509 certifi
 
 ### Restrict access to Windows AD users (Kerberos authentication) 
 
-1. Assign a Windows service account under which the software service runs. See [Running a service under a Windows AD service account](./server-security#running-the-xu-service-under-a-windows-ad-service-account).
+1. Assign a Windows service account under which the software service runs. See [Running a service under a Windows service account](./server-security#running-a-service-under-a-windows-service-account).
 2. Activate TLS encryption as outlined in the [Prerequisite: Activating TLS encryption](./server-security#prerequisite-activating-tls-encryption).
 3. Navigate to the menu bar and select **Server > Settings** - *Web Server* tab. Select *HTTPS - Restricted to AD users with Designer read access*.
 4. Switch to the *Configuration Server* tab.
@@ -39,7 +38,10 @@ If it is not listed in the Windows certificate store, [install the X.509 certifi
 7. Close all windows with **[OK]**
 8. Restart the server when prompted.
 
-Result: An extraction can only be executed, if the Windows AD credentials of the caller are passed on to the web server and the caller has at least Read access to the software.
+Result: An extraction can only be successfully executed, if the Windows AD credentials of the caller are passed on to the web server and the caller has at least Read access to the software.
+
+{: .box-note}
+**Note**: This type of authentication uses Kerberos authentication via SPNEGO. NTLM is not supported.
 
 
 
@@ -54,14 +56,17 @@ Result: An extraction can only be executed, if the Windows AD credentials of the
 5. Close all Windows with **[OK]**
 6. Restart the server when prompted.
 
+Result: An extraction can only be successfully  executed, if the XU custom credentials of the caller are passed on to the web server and the caller has at least Read access to the software.
+
 
 {: .box-note}
 **Note**: Basic authentication is currently only supported when calling an extraction through the extraction's URL. Calling an extraction through *xu.exe* is currently not supported when Basic authentication is active.
 
 
-### Running a service under a Windows AD service account
+### Running a service under a Windows service account
 
-{% include _content/en/xu-specific/security-xu3/xu-service-account.md %}
+When restricting access to Windows AD users, the Xtract service must run under a dedicated service account. To do so, follow the steps as outlined [here](../advanced-techniques/service-account).
+
 
 
 
@@ -70,6 +75,7 @@ Result: An extraction can only be executed, if the Windows AD credentials of the
 #### Related Links
 - [User Management](./user-management)
 - [Access Management](./access-management)
+- [SPNEGO](https://en.wikipedia.org/wiki/SPNEGO)
 
 
 
