@@ -1,12 +1,12 @@
 ---
-ref: xi-q-delta-10
+ref: xi-q-delta-11
 layout: page
 title: Troubleshooting
 description: Troubleshooting Guide
 product: xtract-is
 parent: deltaq
 permalink: /:collection/:path
-weight: 10
+weight: 11
 lang: en_GB
 progressstate: 5
 ---
