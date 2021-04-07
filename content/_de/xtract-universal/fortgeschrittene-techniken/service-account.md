@@ -10,4 +10,4 @@ weight: 20
 lang: de_DE
 old_url: none
 ---
-Dieser Abschnitt ist in Bearbeitung, Informationen erhalten Sie auf der englischen Seite.
+{% include _content/de/xu-specific/fortgeschrittene-techniken/service-account.md %}
