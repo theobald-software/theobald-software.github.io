@@ -7,7 +7,7 @@ Instead of delta processing, data can be processed in so called "full load" by i
 There are three ways of delta processing supported by your Xtract product:
 - Using [DeltaQ component](../datasource-deltaq/extraction-define) with the SAP's own delta processing functionality 
 - Using [ODP component](../odp/odp-functions-ov#load-verfahren-update-mode) with the SAP's own delta processing functionality
-- Using Table / Table Join component with a database destination <br>
+- Using [Table / Table Join component](../table) with a database destination <br>
 
 For delta processing it is advisable to use a database on the destination side.
 
