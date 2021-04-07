@@ -35,7 +35,7 @@ If the certificate is not listed in the Windows certificate store, [install the 
 7. Close all windows with **[OK]**
 8. Restart the server when prompted.
 
-Result: An extraction can only be executed, if the Windows AD credentials of the caller are passed on to the web server and the caller has at least Read access to the Designer.
+Result: An extraction can only be executed, if the Windows AD credentials of the caller are passed on to the web server and the caller has at least *Read access* to the Designer.
 
 {: .box-note}
 **Note**: This type of authentication uses Kerberos authentication via SPNEGO. NTLM is not supported.
@@ -46,13 +46,13 @@ Result: An extraction can only be executed, if the Windows AD credentials of the
 
 1. Activate TLS encryption as outlined in the section [Prerequisite: Activating TLS encryption](./server-security#prerequisite-activating-tls-encryption).
 2. Navigate to the menu bar and select **Server > Settings**. In the *Web Server* tab select *HTTPS - Restricted to custom users with Designer read access*
-2. Switch to the *Configuration Server* tab
+2. Switch to the *Configuration Server* tab.
 3. Add the Windows AD users or groups that are allowed to execute an extraction to [*Access Management*](./access-management#server-settings).  
 4. Assign at least *Read* permission to the custom users.
 5. Close all Windows with **[OK]**
 6. Restart the server when prompted.
 
-Result: An extraction can only be executed, if the custom credentials of the caller are passed on to the web server and the caller has at least Read access to the Designer.
+Result: An extraction can only be executed, if the custom credentials of the caller are passed on to the web server and the caller has at least *Read access* to the Designer.
 
 
 {: .box-note}

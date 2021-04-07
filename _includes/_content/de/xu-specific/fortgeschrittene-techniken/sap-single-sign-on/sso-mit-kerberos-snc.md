@@ -11,7 +11,7 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 3. Klicken Sie auf **[OK]** zum Bestätigen. (3)<br>
 
 {: .box-note }
-**Hinweis:** Überprüfen Sie die Standardports in Abhängigkeit von Ihrem Produkt. Der Standart HTTPS-Port ist *8165* bei Xtract Universal und
+**Hinweis:** Überprüfen Sie die Standardports in Abhängigkeit von Ihrem Produkt. Der Standard HTTPS-Port ist *8165* bei Xtract Universal und
 *8197* bei BOARD Connector .
 
 

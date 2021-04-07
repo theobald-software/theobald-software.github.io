@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=server_security
 
 ### Running a service under a Windows service account
 
-When restricting access to Windows AD users, the Xtract Universal service must run under a dedicated service account. To do so, follow the steps as outlined [Running the Xtract Universal Service under a Windows Service Account](../advanced-techniques/service-account).
+When restricting access to Windows AD users, the Xtract Universal service must run under a dedicated service account. To do that, follow the steps in [Running the Xtract Universal Service under a Windows Service Account](../advanced-techniques/service-account).
 
 *********
 #### Related Links
