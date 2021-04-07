@@ -18,7 +18,7 @@ ABAP application server has to run on a Windows OS and SNC with Kerberos encrypt
 
 
 ### Configuration of Windows AD service account
-Wusing SSO with Kerberos SNC, the Xtract Universal service must run under a dedicated service account.  
+Using SSO with Kerberos SNC, the Xtract Universal service must run under a dedicated service account.  
 To do so, follow the steps as outlined in [Running the Xtract Universal Service under a Windows Service Account](../service-account).
 
 ### Server Settings

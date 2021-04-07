@@ -1,6 +1,6 @@
 ### About
 
-This section is about restricting access to the Xtract Universal/Board Connector Designer's built in web server to predefined users or user groups. <br>
+This section is about restricting access to Xtract Universal/Board Connector's built in web server to predefined users or user groups. <br>
 By setting access restrictions on the web server you ensure that only dedicated users can execute extractions. 
 
 There are two types of [users and user groups](user-management#users-and-user-groups), access can be restricted to. 
@@ -12,7 +12,7 @@ When access to the web server is restricted, Windows AD credentials or credentia
 
 ### Prerequisite: Activating TLS encryption
 
-Both types of access restrictions require accessing the Designer's web server through an https connection. This requires installation of an X.509 certificate.
+Both types of access restrictions require accessing the web server through an https connection. This requires installation of an X.509 certificate.
 If the certificate is not listed in the Windows certificate store, [install the X.509 certificate](./install-x.509-Certificate#create-x509-certificate).
 
 1. Navigate to the menu bar and select **Server > Settings**. Switch to the *Web Server* tab.
@@ -27,7 +27,7 @@ If the certificate is not listed in the Windows certificate store, [install the 
 ### Restrict access to Windows AD users (Kerberos authentication) 
 
 1. Assign a Windows service account under which the Xtract Universal/Board Connector service runs. See [Running a service under a Windows service account](./server-security#running-a-service-under-a-windows-service-account).
-2. Activate TLS encryption as outlined in the [Prerequisite: Activating TLS encryption](./server-security#prerequisite-activating-tls-encryption).
+2. Activate TLS encryption as outlined in [Prerequisite: Activating TLS encryption](./server-security#prerequisite-activating-tls-encryption).
 3. Navigate to the menu bar and select **Server > Settings**. In the *Web Server* tab select *HTTPS - Restricted to AD users with Designer read access*.
 4. Switch to the *Configuration Server* tab.
 5. Add the Windows AD users or groups that are allowed to execute an extraction to [*Access Management*](./access-management#server-settings). 
@@ -53,7 +53,3 @@ Result: An extraction can only be executed, if the Windows AD credentials of the
 6. Restart the server when prompted.
 
 Result: An extraction can only be executed, if the custom credentials of the caller are passed on to the web server and the caller has at least *Read access* to the Designer.
-
-
-{: .box-note}
-**Note**: Basic authentication is currently only supported when calling an extraction through the extraction's URL. Calling an extraction through *xu.exe* is currently not supported when Basic authentication is active.
