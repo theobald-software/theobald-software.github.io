@@ -1,22 +1,21 @@
-The following example shows the use of user-defined variables as filter values of a WHERE condition.
-
-These can be parameterised as user-defined (custom) runtime parameters of the extraction and thus dynamised.
+Variables can be set as user-defined (custom) runtime parameters of an extraction.
+The following example shows how to use user-defined variables as filter values in a WHERE condition.
 
 In the following steps, the SAP standard table T001W (Plants/Branches) is used. The basic setup of a table extraction is described in section [Defining a Table Extraction](../getting-started/define-a-table-extraction).
 
 ### Creating user-defined variables
 
-1. selecting the tab **[WHERE Clause]** and entering the user-defined variables *@PlantLow* and *@PlantHigh* as well as Open-SQL operators, e.g. 'T001W~WERKS BETWEEN @PlantLow AND @PlantHigh'.
+1. Select the tab *WHERE Clause* and enter the user-defined variables *@PlantLow* and *@PlantHigh* as well as Open-SQL operators, e.g. 'T001W~WERKS BETWEEN @PlantLow AND @PlantHigh'.
 ![Extraction-User-Variables](/img/content/Extraction-User-Variables.png){:class="img-responsive"}
-2. Confirm the entry with **[OK]**.
-3. Open the 'Run Extraction' dialogue with **[Run]**.
-4. Switch to the tab **[Custom]** (1) of the runtime parameters. The variables are recognised by the @ sign. 5.
-5. Enter the values and confirm with the enter key.
+2. Click **[OK]** to confirm the input.
+3. Click **[Run]**. The window 'Run Extraction' opens.
+4. Switch to the tab *Custom* (1) of the runtime parameters. The variables are recognised by the @ sign.
+5. Enter the values and confirm by pressing the enter key.
 ![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
 6. The values for the run-time parameters are taken from the extraction URL and the xu.exe command, e.g. `xu.exe -s todd.theobald.local -p 8065 -n Plants -o PlantLow= 1000 -o PlantHigh= 2000`.
-7. Execute the extraction by clicking on **[Run]** (2).
+7. Click **[Run]** (2) to execute the extraction.
 
-The exchange of the variables with the real values is reflected accordingly in the protocol. To do this, click on the **[Log]** button in the Designer:
+The exchange of variables with real values is logged in the protocol. Click the **[Log]** button in the Designer to access the protocoll:
 
 ``` text
 PT00H00M00.064S D LiveDataExtraction: Using Classic RFC SDK
@@ -42,7 +41,7 @@ PT00H00M00.593S D LiveDataExtraction: Writing results to destination completed
 ```
 
 ****
-#### Weiterführende Links:
+#### Related Links:
 - [XU Custom Parameters in Power BI](../xu-destinations/Power-BI-Connector/pbi-xuparameters)
 - [QlikSense Data Load Script Explanation](../xu-destinations/qliksense-qlikview/settings-in-qlik-sense#qliksense-data-load-script-explanation)
 - [WHERE Clause](../table/where-clause)
