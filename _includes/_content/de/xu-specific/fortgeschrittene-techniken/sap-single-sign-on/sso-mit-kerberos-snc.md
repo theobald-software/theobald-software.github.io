@@ -21,7 +21,7 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 
 ### Konfiguration vom Windows AD Service-Account.
 Wenn SSO mit Kerberos SNC verwendet wird, muss der Xtract Universal Service unter einem entsprechenden Service Account ausgeführt werden.
-Die Vorgehensweise ist in [Xtract Universal Service unter einem Windows Service Account ausführen](../service-account) beschrieben.
+Die Vorgehensweise ist in [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account) beschrieben.
 
 ### Servereinstellungen
 

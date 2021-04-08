@@ -29,9 +29,9 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
-### Konfiguration vom Windows AD Service-Account.
-Wenn SSO mit Kerberos SNC verwendet wird, muss der BOARD Connector Service unter einem entsprechenden Service Account ausgeführt werden.
-Die Vorgehensweise dafür entspricht dem des Xtract Universal Servers unter [Xtract Universal Service unter einem Windows Service Account ausführen](../../../xtract-universal/fortgeschrittene-techniken/service-account).
+### Konfiguration vom Windows AD Dienstkonto
+Wenn SSO mit Kerberos SNC verwendet wird, muss der BOARD Connector Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
+Die Vorgehensweise dafür entspricht dem des XU-Dienstes unter [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../../../xtract-universal/fortgeschrittene-techniken/service-account).
 
 
 ### Servereinstellungen

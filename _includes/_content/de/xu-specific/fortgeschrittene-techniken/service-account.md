@@ -42,5 +42,3 @@ Weitere Informationen über die Notation des Partnernamen in SAP finden Sie im [
 #### Weiterführende Links
 - [Über Service Logon Accounts](https://docs.microsoft.com/de-de/windows/win32/ad/about-service-logon-accounts)
 - [Service Principal Names](https://docs.microsoft.com/de-de/windows/win32/ad/service-principal-names)
-
-

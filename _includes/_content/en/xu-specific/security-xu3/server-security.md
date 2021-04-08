@@ -30,7 +30,7 @@ If the certificate is not listed in the Windows certificate store, [install the 
 2. Activate TLS encryption as outlined in [Prerequisite: Activating TLS encryption](./server-security#prerequisite-activating-tls-encryption).
 3. Navigate to the menu bar and select **Server > Settings**. In the *Web Server* tab select *HTTPS - Restricted to AD users with Designer read access*.
 4. Switch to the *Configuration Server* tab.
-5. Add the Windows AD users or groups that are allowed to execute an extraction to [*Access Management*](./access-management#server-settings). 
+5. Add the custom users or groups that are allowed to execute an extraction to [*Access Management*](./access-management#server-settings). 
 6. Assign at least *Read* permission to the Windows AD users.
 7. Close all windows with **[OK]**
 8. Restart the server when prompted.

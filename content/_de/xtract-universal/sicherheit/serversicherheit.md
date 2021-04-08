@@ -12,5 +12,18 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=serversicherheit1
 ---
 {% include _content/de/xu-specific/sicherheit/serversicherheit1.md %}
 
- 
+ {: .box-note}
+**Hinweis**: Allgemeine Authentifizierung wird momentan nur unterstützt, wenn Sie eine Extraktion über die Extraktions-URL ausführen.
+Eine Extraktion über *xu.exe* auszuführen ist nicht möglich, wenn die Allgemeine Authentifizierung aktiv ist.
 
+### Xtract Universal Dienst unter einem Windows Dienstkonto ausführen
+
+Wenn eine Zugriffsbeschränkung mit Windows AD Benutzern erfolgt, muss der Xtract Universal Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
+Folgen Sie dafür den Schritten in [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../fortgeschrittene-techniken/service-account).
+
+
+*********
+#### Weiterführende Links
+- [User Management](./benutzerverwaltung)
+- [Access Management](./zugriffssteuerung)
+- [SPNEGO](https://en.wikipedia.org/wiki/SPNEGO)
