@@ -18,18 +18,8 @@ ABAP application server has to run on a Windows OS and SNC with Kerberos encrypt
 
 
 ### Configuration of Windows AD service account
-
-1. Create a Windows AD service account for an Xtract Server. This is the account the service is running under (e.g., XU service account or BOARD Connector Service).
-![XU_ServiceAccount](/img/content/XU-server-service-account.png){:class="img-responsive"}
-2. In the *Attribute editor* tab define two *Service Principal Names* (SPN). Use the following notation *&lt;service class&lt;/&lt;host&lt;*, e.g., *HTTP/FQDN.domain.local* & *HTTP/FQDN.domain.local:8165*.
-![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
-3. In the *Delegation* tab define the service account for constrained delegation - *Use Kerberos Only*.
-![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
-4. Enter the SPN of the service account under which the SAP ABAP application server is running (SAP Service Account), e.g., *SAPServiceERP/do_not_care*
-For more detailed information about the partner name notation in SAP, see the [SAP Help portal](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/en-US/440ebb40b9920d1be10000000a114a6b.html).
-5. In the tab *Log On*, change the account to service account, e.g., *svc_xusrv@theobald.local*.
-![XU_SSO_WinAD_SPN](/img/content/XU_Service_Account.png)
-
+Using SSO with Kerberos SNC, the Xtract Universal service must run under a dedicated service account.  
+To do so, follow the steps as outlined in [Running the Xtract Universal Service under a Windows Service Account](../service-account).
 
 ### Server Settings
 

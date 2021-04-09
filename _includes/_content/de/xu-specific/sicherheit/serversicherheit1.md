@@ -1,45 +1,55 @@
-Der Zugriff auf den Webserver kann durch Verwendung folgenden Optionen beschränkt werden:
+### Über diese Seite
 
-- HTTPS - Unrestricted
-- HTTPS - Restricted to AD users with Designer read access
+Dieser Abschnitt behandelt den eingeschränkten Zugriff zu dem integrierten Webserver von Xtract Universal/Board Connector.
+Durch Zugriffsbeschränkungen auf den Webserver können nur ausgewählte Benutzer Extraktionen ausführen.
 
+Es gbt zwei Typen von [Benutzern und Benutzergruppen](benutzerverwaltung#benutzer-und-benutzergruppen), auf die der Zugriff eingeschränkt werden kann:
+- Windows AD Benutzer (Kerberos Authentication)
+- benutzerdefinierte Benutzer (Basic Authentication) 
+
+Wenn der Zugang zum Webserver eingeschränkt ist, müssen zum Ausführen einer Extraktion Windows AD Benutzerdaten oder Benutzerdaten eines benutzerdefinierten Benutzers übergeben werden.
+
+
+### Voraussetzungen: Aktivierung der TLS Verschlüsselung
+
+Bei beiden Typen der Zugriffsbeschränkung wird auf den Webserver über eine https-Verbindung zugegriffen. Dafür muss das X.509 Zertifikat installiert sein.
+Falls das Zertifikat nicht im Windows Certificate Store aufgelistet ist, [installieren Sie das X.509 Zertifikat](./x.509-zertifikat-installieren#x509-zertifikat-erstellen).
+
+1. Navigieren Sie zum Menü **Server > Settings**. Wechseln Sie in den *Web Server* Tab.
+2. Wählen Sie den Benutzertyp, auf den den Sie den Zugriff einschränken möchten: *HTTPS - Restricted to AD users with Designer read access* oder *HTTPS - Restricted to custom users with Designer read access.*
 ![webserver settings](/img/content/xu/server-settings-security.png){:class="img-responsive"}
-
-### HTTPS - Unrestricted
-1. Wählen Sie die Option "HTTPS - Unrestricted" aus.
-2. Klicken Sie die Schaltfläche **[Select X.509 certificate]** an. Der Dialog "Edit certificate location" wird geöffnet.
-3. Wählen Sie unter **Local Machine > Personal** das für Ihre Maschine erstellte [X.509 Zertifikat](./x.509-zertifikat-installieren) aus.
-4. Bestätigen Sie mit **[OK]**. Der Dialog wird geschlossen.
-
-### HTTPS - Restricted to AD users with Designer read access 
-
-{: .box-warning}
-**Warnung! Verbindung zum Server wird abgebrochen!** <br>
-Wenn die Option "HTTPS - Restricted to AD users with Designer read access" aktiviert ist und keine Benutzer hinterlegt sind, wird die Verbindung zum XU Server abgebrochen.
-Legen Sie Benutzer und/oder Benutzergruppen an und vergeben Sie die benötigten Rechte. Mehr Details dazu finden Sie im Abschnitt [Benutzerverwaltung](./benutzerverwaltung).
+3. Klicken Sie den **[Select X.509 certificate]** Button. Das "Edit certificate location"-Fenster öffnet sich.
+4. Wählen Sie das X.509 Zertifikat unter **Local Machine > Personal** aus.
+5. Bestätigen Sie mit **[OK]**. Das Fenster schließt sich.
+6. Optional: Ändern Sie die Port Nummer des *HTTPS Ports*.
 
 
-1. Wechseln Sie zum Tab *Configuation Server* und markieren Sie die Checkbox ["Restrict Designer access to the following users / groups"](./zugriffsverwaltung).
-![configuration server tab](/img/content/xu/server-settings-configuration-tab.png){:class="img-responsive"}
-2. Klicken Sie auf **[Add]**, um nach den gewünschten Benutzern oder Benutzergruppen zu suchen. Die Verwendung von Wildcards (*) wird unterstützt.
-![Add Window](/img/content/xu/add-user.png){:class="img-responsive"}
-3. Zum Suchen von [angelegten Benutzern oder Benutzergruppen](./benutzerverwaltung) . Der Dialog zum Suchen wird geöffnet.
-4. Wechseln Sie zurück zum Tab *Web Server* und wählen Sie die Option "HTTPS - Restricted to AD users with Designer read access" aus.
-![webserver settings https](/img/content/xu/server-settings-security-https.png){:class="img-responsive"}
-5. Klicken Sie die Schaltfläche **[Select X.509 certificate]** an. Der Dialog "Edit certificate location" wird geöffnet.
-6. Wählen Sie unter **Local Machine > Personal** das für die Maschine erstellte [X.509 Zertifikat](./x.509-zertifikat-installieren) aus.
-7. Bestätigen Sie mit **[OK]**. Der Dialog wird geschlossen. <br>
-Die vorgenommenen Änderungen werden durch den Neustart des XU-Server aktiviert.
-![Question Bild](/img/content/xu/restart-server.png){:class="img-responsive"}
-8. Klicken Sie auf **[OK]**, um den Server neuzustarten.
+### Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung) 
 
-*******
-#### Weiterführende Links
-- [Benutzerverwaltung](./benutzerverwaltung)
-- [Zugriffsverwaltung](./zugriffsverwaltung)
+1. Weisen Sie den Xtract Universal/BoardConnector Dienst einem Windows Dienstkonto zu. Informationen finden Sie unter [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](./serversicherheit#einen-dienst-unter-einem-windows-dienstkonto-ausführen).
+2. Aktivieren Sie die TLS Verschlüsselung wie in [Voraussetzungen: Aktivierung der TLS Verschlüsselung](./serversicherheit#voraussetzungen-aktivierung-der-tls-verschlüsselung) beschrieben.
+3. Navigieren Sie zum Menü **Server > Settings**. Wählen Sie im *Web Server* Tab *HTTPS - Restricted to AD users with Designer read access*.
+4. Wechseln Sie in den *Configuration Server* Tab.
+5. Fügen Sie die Windows AD Benutzer und Benutzergruppen, die Extraktionen ausführen dürfen unter [*Access Management*](./benutzerverwaltung#zugriffssteuerung-auf-serverebene--server-settings) hinzu. 
+6. Weisen Sie den Benutzern *Read* Erlaubnis zu.
+7. Bestätigen Sie mit **[OK]**. Das Fenster schließt sich.
+8. Wenn Sie dazu aufgefordert werden, starten Sie den Server neu.
+
+Ergebnis: Eine Extraktion kann nur ausgeführt werden, wenn bei der Ausführung Windows AD Benutzerdaten mitgegeben werden und der übergebene Windows AD Benutzer *Read* Zugriff auf den Designer hat.
+
+{: .box-note}
+**Hinweis**: Diese Authentifizierung verwendet Kerberos Authentifizierung via SPNEGO. NTLM wird nicht unterstützt.
 
 
 
+### Zugriffsbeschränkung auf benutzerdefinierte Benutzer (Basic Authentication)
 
- 
+1. Aktivieren Sie die TLS Verschlüsselung wie in [Voraussetzungen: Aktivierung der TLS Verschlüsselung](./serversicherheit#voraussetzungen-aktivierung-der-tls-verschlüsselung) beschrieben.
+2. Navigieren Sie zum Menü **Server > Settings**. Wählen Sie im *Web Server* Tab *HTTPS - Restricted to custom users with Designer read access*.
+2. Wechseln Sie in den *Configuration Server* Tab.
+3. Fügen Sie die benutzerdefinierte Benutzer und Benutzergruppen, die Extraktionen ausführen dürfen unter [*Access Management*](./benutzerverwaltung#zugriffssteuerung-auf-serverebene--server-settings) hinzu. 
+4. Weisen Sie den Benutzern *Read* Erlaubnis zu.
+5. Bestätigen Sie mit **[OK]**. Das Fenster schließt sich.
+6. Wenn Sie dazu aufgefordert werden, starten Sie den Server neu.
 
+Ergebnis: Eine Extraktion kann nur ausgeführt werden, wenn bei der Ausführung die benutzerdefinierten Benutzerdaten mitgegeben werden und der Benutzer *Read* Zugriff auf den Designer hat.

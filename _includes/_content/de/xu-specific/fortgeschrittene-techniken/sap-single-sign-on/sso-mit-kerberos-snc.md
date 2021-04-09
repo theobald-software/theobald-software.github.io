@@ -11,7 +11,7 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 3. Klicken Sie auf **[OK]** zum Bestätigen. (3)<br>
 
 {: .box-note }
-**Hinweis:** Überprüfen Sie die Standardports in Abhängigkeit von Ihrem Produkt. Der Standart HTTPS-Port ist *8165* bei Xtract Universal und
+**Hinweis:** Überprüfen Sie die Standardports in Abhängigkeit von Ihrem Produkt. Der Standard HTTPS-Port ist *8165* bei Xtract Universal und
 *8197* bei BOARD Connector .
 
 
@@ -20,17 +20,8 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 
 
 ### Konfiguration vom Windows AD Service-Account.
-1. Erstellen Sie einen Windows AD Service-Account für den Xtract Server. Dies ist der Account, unter dem der Dienst läuft (z.B. XU-Service oder BOARD Connector Service).
-![XU_ServiceAccount](/img/content/XU-server-service-account.png){:class="img-responsive"}
-2. Im Tab *Attribute editor* definieren Sie zwei *Service Principal Names* (SPN). Verwenden Sie die folgende Notation: *&lt;service class&lt;/&lt;host&lt;*, z.B. *HTTP/FQDN.domain.local* & *HTTP/FQDN.domain.local:8165*
-![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_SPN.png){:class="img-responsive"}
-3. Im Tab *Delegation* definieren Sie den Service-Account für eingeschränkte Bevollmächtigung - *Use Kerberos Only*.
-![XU_SSO_WinAD_SPN](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
-4. Geben Sie den SPN des Service-Accounts ein. Unter diesem Service-Account wird der SAP ABAP-Applikationsserver laufen (SAP Service-Account) z.B. *SAPServiceERP/do_not_care*.
-Mehr Informationen zu den Notationen in SAP, finden Sie im [SAP Hilfe-Portal](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/en-US/440ebb40b9920d1be10000000a114a6b.html).
-5. Im Tab *Log On*, ändern Sie den Account zu Service-Account, z.B. *svc_xusrv@theobald.local*.
-![XU_SSO_WinAD_SPN](/img/content/XU_Service_Account.png)
-
+Wenn SSO mit Kerberos SNC verwendet wird, muss der Xtract Universal Service unter einem entsprechenden Service Account ausgeführt werden.
+Die Vorgehensweise ist in [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account) beschrieben.
 
 ### Servereinstellungen
 
