@@ -1,8 +1,8 @@
 ### Über diese Seite
-Nach der Installation von Xtract Universal, wird der Xtract Universal Dienst unter *Lokal* ausgeführt.
+Nach der Installation von Xtract Universal, wird der Xtract Universal Dienst unter dem lokalen Systemkonto (local system) ausgeführt.
 In den folgenden Szenarien muss der Dienst stattdessen unter einem Windows Dienstkonto ausgeführt werden:
 
-- [Kerberos Authentifizierung](../sicherheit/serversicherheit) für den Xtract Universal Webserver verwenden.
+- [Kerberos Authentifizierung](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung) für den Xtract Universal Webserver verwenden.
 - Windows Authentizizierung für eine Xtract Universal Destination verwenden, die Windows-Anmeldedaten erlauben (z.B. SQL Server Destination, PostgreSQL Destination).
 - [SSO mit Kerberos SNC](./sap-single-sign-on/sso-mit-kerberos-snc) verwenden.
 
@@ -11,7 +11,7 @@ Dieser Abschnitt enthält Informationen darüber, wie man den Xtract Universal D
 
 ### Allgemeine Einstellungen
 
-1. Erstelle ein Windows AD Dienstkonto und weise ihm eine SPN (Service Principal Name) im folgenden Format zu: ```HTTP/[FQDN of XU Server]```.<br>
+1. Erstellen Sie ein Windows AD Dienstkonto und weisen Sie ihm eine SPN (Service Principal Name) im folgenden Format zu: ```HTTP/[FQDN of XU Server]```.<br>
 Mit dem ```setspn``` Befehl können die SPNs eines Benutzerkontos eingesehen werden.
 ![xu service account](/img/content/xu/xu-service-account-SPN.png){:class="img-responsive"}
 
@@ -34,7 +34,7 @@ Wenn Sie [SSO mit Kerberos SNC](./sap-single-sign-on/sso-mit-kerberos-snc) verwe
 
 1. Konfigurieren Sie für das Windows Dienstkonto, unter dem der Xtract Universal Dienst ausgeführt wird, eine eingeschränkte Delegierung.
 ![xu_service_account_constr_deleg](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
-2. Geben Sie die SPN des Dienstkontos ein, unter dem der SAP ABAB Server ausgeführt wird (SAP Service Account), z.B. SAPServiceERP/do_not_care.
+2. Geben Sie den SPN, unter dem der SAP ABAB Server ausgeführt wird (SAP Service Account), z.B. SAPServiceERP/do_not_care.
 Weitere Informationen über die Notation des Partnernamen in SAP finden Sie im [SAP Help Portal](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/de-DE/440ebb40b9920d1be10000000a114a6b.html).
 
 
