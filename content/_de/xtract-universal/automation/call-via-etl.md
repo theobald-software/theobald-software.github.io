@@ -20,7 +20,7 @@ Für die Integration von Xtract Universam mit Alteryx [siehe Alteryx Destination
 
 ### Integration mit KNIME 
 Für die Integration von Xtract Universam mit KNIME bietet unser Partner KNIME ein Plug-In, siehe 
-- [ KNIME SAP Integration based on Theobald Xtract Universal](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest) und
+- [KNIME SAP Integration based on Theobald Xtract Universal](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest) und
 - [SAP Reader (Theobald)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory). 
 
 ### Integration mit Talend via Webservice

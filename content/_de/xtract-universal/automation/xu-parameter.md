@@ -15,6 +15,7 @@ lang: de_DE
 ### Benutzerdefinierte Parameter 
 {% include _content/de/xu-specific/fortgeschrittene-techniken/benutzerdefinierte-variablen.md %}
 
-Weiterführende Links
+****
+#### Weiterführende Links:
 - [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke)
 - [Parameter im SQL-Statement verwenden](./xu-parameter-sql)
