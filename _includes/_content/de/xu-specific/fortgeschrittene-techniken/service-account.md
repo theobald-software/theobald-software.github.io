@@ -1,5 +1,5 @@
 ### Über diese Seite
-Nach der Installation von Xtract Universal, wird der Xtract Universal Dienst unter dem lokalen Systemkonto (local system) ausgeführt.
+Nach der Installation von Xtract Universal, wird der Xtract Universal Dienst unter dem lokalen Systemkonto (Local System) ausgeführt.
 In den folgenden Szenarien muss der Dienst stattdessen unter einem Windows Dienstkonto ausgeführt werden:
 
 - [Kerberos Authentifizierung](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung) für den Xtract Universal Webserver verwenden.
@@ -34,7 +34,7 @@ Wenn Sie [SSO mit Kerberos SNC](./sap-single-sign-on/sso-mit-kerberos-snc) verwe
 
 1. Konfigurieren Sie für das Windows Dienstkonto, unter dem der Xtract Universal Dienst ausgeführt wird, eine eingeschränkte Delegierung.
 ![xu_service_account_constr_deleg](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
-2. Geben Sie den SPN, unter dem der SAP ABAB Server ausgeführt wird (SAP Service Account), z.B. SAPServiceERP/do_not_care.
+2. Geben Sie den SPN, unter dem der SAP ABAP Server ausgeführt wird (SAP Service Account), z.B. SAPServiceERP/do_not_care.
 Weitere Informationen über die Notation des Partnernamen in SAP finden Sie im [SAP Help Portal](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/de-DE/440ebb40b9920d1be10000000a114a6b.html).
 
 
