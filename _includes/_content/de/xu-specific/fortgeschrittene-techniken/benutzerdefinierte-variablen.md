@@ -12,33 +12,13 @@ In den nachfolgenden Schritten wird die SAP-Standardtabelle T001W (Plants/Branch
 4. Wechsel Sie zum Tab *Custom* (1) der Laufzeitparameter. Anhand des @-Zeichens werden die Variablen erkannt.
 5. Tragen Sie die Werte ein und bestätigen Sie über die Eingabetaste.
 ![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
-6. Die Werte für die Laufzeitparameter werden in der Extraktions-URL sowie des xu.exe commands übernommen, z.B. `xu.exe -s todd.theobald.local -p 8065 -n Plants  -o PlantLow= 1000 -o PlantHigh= 2000`
+6. Die Werte für die Laufzeitparameter werden in der Extraktions-URL übernommen.
 7. Klicken Sie auf **[Run]**, um die Extraktion auszuführen (2).
 
-Das Austauschen der Variablen mit Echtwerten wird entsprechend im Protokoll wiedergegeben. Dazu klicken Sie auf den Button **[Log]** im Designer:
+{: .box-note }
+**Hinweis** Das Überschreiben der Variablen mit den Echtwerten wird ebenfalls im Log der Extraktion dokumentiert.
 
-``` text
-PT00H00M00.064S D LiveDataExtraction: Using Classic RFC SDK
-PT00H00M00.065S D LiveDataExtraction: Connecting to SAP application server...
-PT00H00M00.065S D LiveDataExtraction: Using plain authentication
-PT00H00M00.405S D LiveDataExtraction: Connected to SAP
-PT00H00M00.406S D LiveDataExtraction: Host: sap-erp-as05.example.com, System number: 00
-PT00H00M00.406S I RunParameter: Parameter 'PlantLow' overriden (new value: '1000')
-PT00H00M00.406S I RunParameter: Parameter 'PlantHigh' overriden (new value: '2000')
-PT00H00M00.407S I RunParameter: Parameter 'quiet-push' overriden (new value: 'true')
-PT00H00M00.422S I TheoReadTableExtractor: Starting extraction - using function module Z_THEO_READ_TABLE
-PT00H00M00.426S I TheoReadTableExtractor: Extracting table T001W
-PT00H00M00.436S D TheoReadTableExtractor: WHERE WERKS BETWEEN '1000' AND '2000'
-PT00H00M00.436S D TheoReadTableExtractor: HAVING clause is empty
-PT00H00M00.436S D TheoReadTableExtractor: Data will be extracted in dialog work process
-PT00H00M00.437S D TheoReadTableExtractor: Fetching packages (50,000 rows per package)
-PT00H00M00.503S D TheoReadTableExtractor: Z_THEO_READ_TABLE version 1.x
-PT00H00M00.503S D TheoReadTableExtractor: Received package #1 (8 rows)
-PT00H00M00.507S I LiveDataExtraction: Starting to write 8 rows to destination...
-PT00H00M00.514S I LiveDataExtraction: Finished writing rows to destination
-PT00H00M00.593S I TheoReadTableExtractor: Extraction finished - received 8 rows in total
-PT00H00M00.593S D LiveDataExtraction: Writing results to destination completed
-```
+![Extraction-User-Variables-Log](/img/content/Extraction-User-Variables-log.png){:class="img-responsive"}
 
 ****
 #### Weiterführende Links:
