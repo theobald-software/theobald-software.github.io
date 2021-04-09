@@ -1,38 +1,28 @@
-Grundsätzlich lässt sich jede Extraktion unter Angabe ihres Namens starten. 
+Variablen können als benutzerdefinierte (Custom) Laufzeitparameter an Extraktionen übergeben werden.
+Das nachfolgende Beispiel zeigt die Verwendung von benutzerdefinierten Variablen als Filterwerte einer WHERE-Bedingung.
 
-Darüber hinaus gibt es auch die Möglichkeit, benutzerdefinierte Parameter in die Extraktion einzubringen.
+In den nachfolgenden Schritten wird die SAP-Standardtabelle T001W (Plants/Branches) verwendet. Die grundlegende Einrichtung einer Tabellenextraktion ist in Abschnitt [Eine neue Extraktion anlegen](../erste-schritte/eine-neue-extraktion-anlegen) beschrieben.
 
-Das folgende Bild zeigt eine Where-Klausel mit zwei veränderlichen Variablen @PlantLow und @PlantHigh
+### Erstellung von benutzerdefinierten Variablen
 
+1. Wählen Sie den Tab *WHERE Clause* und geben Sie die benutzerdefinierten Variablen *@PlantLow* und *@PlantHigh* ein, sowie Open-SQL Operatoren, z.B. `T001W~WERKS BETWEEN @PlantLow AND @PlantHigh`.
 ![Extraction-User-Variables](/img/content/Extraction-User-Variables.png){:class="img-responsive"}
-
-Klicken Sie nun auf den Run-Knopf und bestätigen Sie eine eventuelle Anfrage, ob die Änderungen übernommen werden sollen.<br>
-Wenn Sie auf Basis dieser Where-Klausel den Run-Dialog öffnen, finden Sie die Variablen im zweiten Tab wieder, um sie mit einem Wert zu bestücken. Xtract Universal erkennt anhand des @-Zeichens, dass es sich um eine Variable handelt.
-
+2. Bestätigen Sie die Eingabe mit **[OK]**.
+3. Klicken Sie auf **[Run]**. Das Fenster 'Run Extraction' öffnet sich.
+4. Wechsel Sie zum Tab *Custom* der Laufzeitparameter. Anhand des @-Zeichens werden die Variablen erkannt.
+5. Tragen Sie die Werte ein und bestätigen Sie über die Eingabetaste.
 ![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
+6. Die Werte für die Laufzeitparameter werden in der Extraktions-URL übernommen.
+7. Klicken Sie auf **[Run]**, um die Extraktion auszuführen.
 
-Dies ergibt folgende URL, um die Werte zu setzen: 
+{: .box-note }
+**Hinweis** Das Überschreiben der Variablen mit den Echtwerten wird ebenfalls im Log der Extraktion dokumentiert.
 
-`
-http://localhost:8085/?name=plants&PlantLow=1000&PlantHigh=9999
-`
+![Extraction-User-Variables-Log](/img/content/Extraction-User-Variables-log.png){:class="img-responsive"}
 
-Das Austauschen der Variablen mit den Echtwerten wird auch entsprechend im Protokoll wiedergegeben. Dazu klicken Sie auf den Button Log im Designer:
-
-![User-Variables-In-Log](/img/content/User-Variables-In-Log.png){:class="img-responsive"}
-
-**Variablen als SQL-Parameter**
-
-In Xtract Universal stehen benutzerdefinierte Variablen (Custom Parameters),  welche man per Query-String übergeben kann, z. B. um eine WHERE-Clause zu dynamisieren, nun auch als SQL Parameter in den SQL Statements für Datenbank Destinations zur Verfügung.
- 
-Folgende Table-Extraktion hat einen Custom Parameter *WNAME* in der WHERE-Clause
-
-![xu-customerparam-where](/img/content/xu-customerparam-where.png){:class="img-responsive"}
-
-Die Extraktion benutzt eine Oracle-Destination, im Preparation Statement wird der Custom Parameter verwendet:
-
-![xu-customerparam-destination](/img/content/xu-customerparam-destination.png){:class="img-responsive"}
-
-Das Format der Variable ist abhängig von der Destination. Für die Variable WNAME wird z.B. :WNAME bei einer Oracle-Destination und @WMNAME bei einer SQL Server Destination verwendet. Das Format kann man sich z.B. im Insert-Statement anschauen.
-Wie sonst auch bei Custom Parameters, müssen Sie darauf achten, keine Namenskonflikte zu erzeugen.<br> 
-Der Custom Parameter im Beispiel darf nicht NAME1 heißen, weil im Row Processing Statement bereits der SQL Parameter, der den Wert der Spalte *NAME1* enthält, so heißt.
+****
+#### Weiterführende Links:
+- [XU Custom Parameter in Power BI](../xu-destinationen/Power-BI-Connector/pbi-xu-parameter)
+- [Erläuterung des QlikSense Datenlade-Skripts](../xu-destinationen/qlik/einstellungen_in_qlik_sense#erläuterung-des-qliksense-datenlade-skripts)
+- [WHERE Bedingung](../table/where-bedingung)
+- [Extraktion einplanen](./extraktion_einplanen)

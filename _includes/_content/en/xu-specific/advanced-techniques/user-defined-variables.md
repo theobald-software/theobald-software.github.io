@@ -1,35 +1,28 @@
-In principle, any extraction can be started by specifying its name. 
+Variables can be set as user-defined (custom) runtime parameters of an extraction.
+The following example shows how to use user-defined variables as filter values in a WHERE condition.
 
-In addition, there is also the possibility to use user-defined parameters in the extraction. The following screenshot shows a *Where* clause with two variables @PlantLow and @PlantHigh.
+In the following steps, the SAP standard table T001W (Plants/Branches) is used. The basic setup of a table extraction is described in section [Defining a Table Extraction](../getting-started/define-a-table-extraction).
 
+### Creating user-defined variables
+
+1. Select the tab *WHERE Clause* and enter the user-defined variables *@PlantLow* and *@PlantHigh* as well as Open-SQL operators, e.g. `T001W~WERKS BETWEEN @PlantLow AND @PlantHigh`.
 ![Extraction-User-Variables](/img/content/Extraction-User-Variables.png){:class="img-responsive"}
-
-Now click on the Run button and confirm the message, that the changes would be saved.
-When you open the Run dialog basing on this Where clause, you can find the variables in the second tab, so you can assign to them the wished value. Please use the @ symbol to identify variables. Please note that DATE values must be provided in form of YYYYMMDD.
-
+2. Click **[OK]** to confirm the input.
+3. Click **[Run]**. The window 'Run Extraction' opens.
+4. Switch to the tab *Custom* of the runtime parameters. The variables are recognised by the @ sign.
+5. Enter the values and confirm by pressing the enter key.
 ![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
+6. The values for the run-time parameters are taken from the extraction URL.
+7. Click **[Run]** to execute the extraction.
 
-Thus we have now the following URL to set the values:
- 
-	http://localhost:8085/?name=plants&**PlantLow=1000&PlantHigh=9999**
+{: .box-note }
+**Note** The overwriting of the variables with the real values is also documented in the log of the extraction.
 
-Replacing the variables with the data is logged and can be seen in the extraction log. To do this, click on the button Log in the Xtract Universal Designer:
+![Extraction-User-Variables-Log](/img/content/Extraction-User-Variables-log.png){:class="img-responsive"}
 
-![User-Variables-In-Log](/img/content/User-Variables-In-Log.png){:class="img-responsive"}
-
-**SQL Parameters for Database Destinations**
-
-In Xtract Universal user defined variables (custom parameters) that can be set as query string in the url, can be used as SQL parameter in the SQL statements for database destinations.
- 
-The following table extraktion has a custom parameter WNAME in the WHERE clause.
-
-![xu-customerparam-where](/img/content/xu-customerparam-where.png){:class="img-responsive"}
-
-The extraction uses an Oracle destination. In the preparation statement the custom parameter can be used:
-
-![xu-customerparam-destination](/img/content/xu-customerparam-destination.png){:class="img-responsive"}
-
-The format of the variable depends on the destination. For the variable WNAME, for example, :WNAME is used for an Oracle destination and @WMNAME for an SQL Server destination. You can view the format in the insert statement.
-
-Make sure to avoid name conflicts. 
-The custom parameter in our example may not be called *NAME1*, since in the row processing statement we have the SQL parameter *NAME1*.
+****
+#### Related Links:
+- [XU Custom Parameters in Power BI](../xu-destinations/Power-BI-Connector/pbi-xuparameters)
+- [QlikSense Data Load Script Explanation](../xu-destinations/qliksense-qlikview/settings-in-qlik-sense#qliksense-data-load-script-explanation)
+- [WHERE Clause](../table/where-clause)
+- [Scheduling an extraction](./scheduling_extraction)

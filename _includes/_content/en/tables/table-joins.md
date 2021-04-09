@@ -11,7 +11,7 @@ For more information on join types see [SAP Online help](https://help.sap.com/do
 
 
 {: .box-note }
-**Note**: as a prerequisite for using the table join, function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) needs to be available in SAP. <br> 
+**Note**: To use table join, the function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) (version 2.10 or higher) needs to be available in SAP (release 7.40, SP05 or higher). <br> 
 
 {: .box-note }
 **Note**: joining of cluster or pool tables is not supported. Cluster or pool tables need to be extracted individually and joined in the destination.
@@ -28,7 +28,7 @@ The following example shows, how tables KNA1 and KNVV can be joined.
 4. Optional: Switch to the *WHERE clause* tab and specify a [WHERE clause](./where-clause).
 
 {: .box-note }
-**Note**: pay attention to the [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
+**Note**: Be careful of [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
 In the *Joins* tab, click **Edit** (pencil icon) to display joining options. <br>
 In the depicted example a left outer join on tables KNA1 (left table) and KNVV (right table) on the field KUNNR is performed. A WHERE clause on *KNA1~LAND1 = 'DE'* is specified. 

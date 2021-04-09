@@ -24,10 +24,9 @@
 * WE20 - Partnerprofile
 
 ### DeltaQ parallel ausführen
-Sie können mehrere DataSources mit der gleichen RFC-Destination parallel ausführen.
 
 {: .box-tip }
-**Empfehlung:** Verwenden Sie für jede parallele DeltaQ-Extraktion eine eigene RFC-Destination, z. B. *XTRACT01*, *XTRACT02* usw.
+**Empfehlung:** Die parallele Ausführung mehrerer DataSources mit der identischen RFC-Destination ist möglich. <br> Die Empfehlung für parallele DeltaQ-Extraktionen ist jedoch eine separate RFC-Destination, z.B. XTRACT01, XTRACT02, usw. zu verwenden. 
 
 ****
 #### Hilfreiche (englischsprachige) Links zum Thema Extraktoren (DataSources)

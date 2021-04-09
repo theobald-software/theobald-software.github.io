@@ -10,7 +10,7 @@ Unterstützte Join-Typen:
 Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Hilfe](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true).
 
 {: .box-note }
-**Hinweis**: Als Voraussetzung für die Verwendung von Table Join muss der Funktionsbaustein [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP verfügbar sein. <br> 
+**Hinweis**: Die Verwendung von Table Join ist mit dem Funktionsbaustein [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) ab Version 2.10 oder höher in SAP ab Release 7.40, SP05 oder höher möglich. <br> 
 
 {: .box-note }
 **Hinweis**: Das Joinen von Cluster- oder Pool-Tabellen wird nicht unterstützt. Cluster- und Pool-Tabellen müssen einzeln extrahiert und im Datenziel miteinander verknüpft (gejoint) werden.
@@ -28,7 +28,7 @@ Das folgende Beispiel zeigt, wie die Tabellen KNA1 und KNVV verknüpft werden k�
 4. Optional: Wechseln Sie zum Tab *WHERE clause* und geben Sie eine [WHERE-Bedingung](./where-bedingung) ein.
 
 {: .box-note }
-**Hinweis**: Achten Sie bei der Angabe einer WHERE-Bedingung auf die Einschränkungen beim Definieren der [WHERE-Bedingung](./where-bedingung#einschränkungen-bei-where-bedingungen) auf die rechte Tabelle des Table-Joins über einen LEFT OUTER JOIN.
+**Hinweis**: Achten Sie bei der Angabe einer WHERE-Bedingung auf die [Einschränkungen der Bedingung](./where-bedingung#einschränkungen-bei-where-bedingungen) für rechte Tabellen eines Table-Joins über einen LEFT OUTER JOIN.
 
 Klicken Sie in dem Tab *Joins* auf **Edit** (Bleistift-Symbol), um die Join-Optionen anzuzeigen. <br>
 Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen KNA1 (linke Tabelle) und KNVV (rechte Tabelle) auf dem Feld KUNNR durchgeführt. Es wird eine WHERE-Bedingung *KNA1~LAND1 = 'DE'* spezifiziert. 
