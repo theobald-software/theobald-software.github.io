@@ -5,7 +5,7 @@ By setting access restrictions on the web server you ensure that only dedicated 
 
 There are two types of [users and user groups](user-management#users-and-user-groups), access can be restricted to. 
 - Windows AD users (Kerberos authentication)
-- XU custom users (Basic authentication) 
+- custom users (Basic authentication) 
 
 When access to the web server is restricted, Windows AD credentials or credentials of a custom user must be submitted when running an extraction.
 

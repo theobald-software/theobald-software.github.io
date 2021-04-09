@@ -3,7 +3,7 @@ Nach der Installation von Xtract Universal, wird der Xtract Universal Dienst unt
 In den folgenden Szenarien muss der Dienst stattdessen unter einem Windows Dienstkonto ausgeführt werden:
 
 - [Kerberos Authentifizierung](../sicherheit/serversicherheit) für den Xtract Universal Webserver verwenden.
-- Windows Authentizizierung für eine Xtract Universal Destination verwenden, die Windows-Anmeldedaten erlauben (z.B. SQL Server destination, PostgreSQL destination).
+- Windows Authentizizierung für eine Xtract Universal Destination verwenden, die Windows-Anmeldedaten erlauben (z.B. SQL Server Destination, PostgreSQL Destination).
 - [SSO mit Kerberos SNC](./sap-single-sign-on/sso-mit-kerberos-snc) verwenden.
 
 Dieser Abschnitt enthält Informationen darüber, wie man den Xtract Universal Dienst unter einem Dienstkonto ausführt.
@@ -15,7 +15,7 @@ Dieser Abschnitt enthält Informationen darüber, wie man den Xtract Universal D
 Mit dem ```setspn``` Befehl können die SPNs eines Benutzerkontos eingesehen werden.
 ![xu service account](/img/content/xu/xu-service-account-SPN.png){:class="img-responsive"}
 
-2. Gewähren Sie Zugriffsrechte auf Xtract Universal's Installationsordner und allen Unterordnern des Dienstkontos wie in folgendem Screenshot dargestellt:
+2. Gewähren Sie Zugriffsrechte auf Xtract Universal's Installationsordner und allen Unterordnern des Dienstkontos wie in folgendem Screenshot:
 ![xu service account permissions](/img/content/xu/xu-service-account-permissions.png){:class="img-responsive"}
 
 3. Falls anwendbar, stellen Sie sicher, dass das Dienstkonto Lese-Zugriff auf den privaten Schlüssel des [X.509 Zertifikats](../sicherheit/x.509-zertifikat-installieren) hat.

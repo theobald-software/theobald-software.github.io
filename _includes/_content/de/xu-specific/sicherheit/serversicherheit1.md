@@ -1,13 +1,13 @@
 ### Über diese Seite
 
-Dieser Abschnitt behandelt den eingeschränkten Zugriff zu Xtract Universals/Board Connectors integriertem Webserver.
-Wenn Sie Zugriffsbeschränkungen zum Webserver erstellen, können nur bestimmte Benutzer Extraktionen ausführen.
+Dieser Abschnitt behandelt den eingeschränkten Zugriff zu dem integrierten Webserver von Xtract Universal/Board Connector.
+Durch Zugriffsbeschränkungen auf den Webserver, können nur ausgewählte Benutzer Extraktionen ausführen.
 
-Es gbt zwei Typen von [Benutzern und Benutzergruppen](benutzerverwaltung#benutzer-und-benutzergruppen) auf die der Zugriff eingeschränkt werden kann:
+Es gbt zwei Typen von [Benutzern und Benutzergruppen](benutzerverwaltung#benutzer-und-benutzergruppen), auf die der Zugriff eingeschränkt werden kann:
 - Windows AD Benutzer (Kerberos Authentifizierung)
-- XU benutzerdefinierte Benutzer (Allgemeine Authentifizierung) 
+- benutzerdefinierte Benutzer (Allgemeine Authentifizierung) 
 
-Wenn der Zugang zum Webserver eingeschränkt ist, müssen beim Ausführen einer Extraktion Windows AD Benutzerdaten oder Benutzerdaten eines benutzerdefinierten Benutzers übergeben werden.
+Wenn der Zugang zum Webserver eingeschränkt ist, müssen zum Ausführen einer Extraktion Windows AD Benutzerdaten oder Benutzerdaten eines benutzerdefinierten Benutzers übergeben werden.
 
 
 ### Voraussetzungen: Aktivierung der TLS Verschlüsselung
@@ -26,7 +26,7 @@ Falls das Zertifikat nicht im Windows Certificate Store aufgelistet ist, [instal
 
 ### Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung) 
 
-1. Weisen Sie den Xtract Universal/BoardConnector Dienst einem Windows Dienstkonto zu. Informationen finden Sie unter [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](./serversicherheit#xtract-universal-dienst-unter-einem-windows-dienstkonto-ausführen).
+1. Weisen Sie den Xtract Universal/BoardConnector Dienst einem Windows Dienstkonto zu. Informationen finden Sie unter [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](./serversicherheit##einen-dienst-unter-einem-windows-dienstkonto-ausführen).
 2. Aktivieren Sie die TLS Verschlüsselung wie in [Voraussetzungen: Aktivierung der TLS Verschlüsselung](./serversicherheit#voraussetzungen-aktivierung-der-tls-verschlüsselung) beschrieben.
 3. Navigieren Sie zum Menü **Server > Settings**. Wählen Sie im *Web Server* Tab *HTTPS - Restricted to AD users with Designer read access*.
 4. Wechseln Sie in den *Configuration Server* Tab.
