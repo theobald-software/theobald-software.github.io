@@ -9,11 +9,11 @@ In the following steps, the SAP standard table T001W (Plants/Branches) is used. 
 ![Extraction-User-Variables](/img/content/Extraction-User-Variables.png){:class="img-responsive"}
 2. Click **[OK]** to confirm the input.
 3. Click **[Run]**. The window 'Run Extraction' opens.
-4. Switch to the tab *Custom* (1) of the runtime parameters. The variables are recognised by the @ sign.
+4. Switch to the tab *Custom* of the runtime parameters. The variables are recognised by the @ sign.
 5. Enter the values and confirm by pressing the enter key.
 ![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
 6. The values for the run-time parameters are taken from the extraction URL.
-7. Click **[Run]** (2) to execute the extraction.
+7. Click **[Run]** to execute the extraction.
 
 {: .box-note }
 **Note** The overwriting of the variables with the real values is also documented in the log of the extraction.
