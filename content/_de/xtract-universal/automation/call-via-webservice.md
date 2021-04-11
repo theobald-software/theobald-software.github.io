@@ -34,28 +34,29 @@ http://localhost:8065/?name=Plants&rows=100&lang=EN
 
 ### HTTP Status Code & Header der Antwort
 Die Antwort eines Webservice-Aufrufs enthält die folgenden Informationen:
-- einen HTTP-Status Code (1)
+- HTTP-Status Code (1)
 - Angaben im HTTP-Header (2)
 - Rückgabe im HTTP-Body (3)
 
+Antwort | Beschreibung
+:----------:| :------------
+ (1) | Ein HTTP Status Code *200* zeigt einen fehlerfreien Aufruf der Extraktion an, gibt jedoch nicht Status der Ausführung der Extraktion zurück. Der Code besagt nicht, dass die Extraktion erfolgreich ausgeführt und beendet wurde. Ein HTTP Status Code *404* bedeutet, dass die aufgerufene Extraktion nicht existiert. Detaillierte Infos können über den Log-Webservice aufgerufen werden.
+ (2) | Gibt den Timestamp des Extraktionslaufs über den nachfolgenden HTTP Header zurück, z.B. X-XU-Timestamp: *2021-04-09_19:03:09.971*
+ (3) | Die Rückgabe im HTTP-Body ist abhängig vom Destinationstyp der Extraktion. 
+
 ![Webservice Call pull](/img/content/xu/automation/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
 
-Antwort | Beschreibung
------------- | -------------
-HTTP-Status Code (1) | Ein HTTP Status Code *200* zeigt einen fehlerfreien Aufruf der Extraktion an, gibt jedoch nicht Status der Ausführung der Extraktion zurück. Der Code besagt nicht, dass die Extraktion erfolgreich ausgeführt und beendet wurde. Ein HTTP Status Code *404* bedeutet, dass die aufgerufene Extraktion nicht existiert. Detaillierte Infos können über den Log-Webservice aufgerufen werden.
-HTTP-Header (2) | Gibt den Timestamp des Extraktionslaufs über den nachfolgenden HTTP Header zurück, z.B. `X-XU-Timestamp: 2021-04-09_19:03:09.971`
-HTTP-Body (3) | Die Rückgabe im HTTP-Body ist abhängig vom Destinationstyp der Extraktion. 
+#### Rückgabe im HTTP-Body (3)
 
-#### Rückgabe (Pull Destination)
-Bei einem erfolgreichen Aufruf `http://todd.theobald.local:8065/?name=Plants` kommt der HTTP-Statuscode *200* (1) zurück. Bei Pull Destinations (HTTP-CSV oder HTTP-JSON) werden die extrahierten Daten im entsprechenden Format der Destination (3) (CSV, JSON) zurückgegeben.
-
-#### Rückgabe (Push Destination)
-Bei einem erfolgreichen Aufruf `http://todd.theobald.local:8065/?name=Plants` kommt der HTTP-Statuscode *200* (1) zurück. Bei Push Destinations wird standardmäßig das Log der Extraktion im CSV-Format zurückgegeben. 
+Status-Code | Destinationstyp | Beschreibung
+:----------: | :-----------: | :-----
+*200* | Pull | HTTP-CSV oder HTTP-JSON werden die extrahierten Daten im entsprechenden Format der Destination (3) (CSV, JSON) zurückgegeben.
+*200* | Push | Rückgabe des Extraktionslogs im CSV-Format.
 
 ### Weitere Optionen zum Aufruf einer Extraktion
 
 #### Log-Ausgabe einer Extraktion unterdrücken 
-Mit dem Parameter `&quiet-push=true` kann man die Log-Ausgabe unterdrücken, wenn die Extraktion synchron aufgerufen wird und mit einer Push-Destination verbunden ist, z.B. `http://todd.theobald.local:8065/?name=Plants&quiet-push=true`.
+Mit dem Parameter `&quiet-push=true` kann man die Log-Ausgabe unterdrücken, wenn die Extraktion synchron aufgerufen wird und mit einer Push-Destination verbunden ist, <br> z.B. `http://todd.theobald.local:8065/?name=Plants&quiet-push=true`.
 
 Default Wert des Parameters ist `false` und somit wird standardmäßig das Log der Extraktion bei einer Push-Destination zurückgegeben. 
 

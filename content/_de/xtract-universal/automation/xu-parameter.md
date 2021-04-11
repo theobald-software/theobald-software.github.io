@@ -9,11 +9,13 @@ permalink: /:collection/:path
 weight: 5
 lang: de_DE
 ---
+Der Xtract Universal Designer bietet die Möglichkeit Extraktionen auszuführen, indem Sie Laufzeitparameter und andere Optionen übergeben.
+
+### Extraktion ausführen 			 
+Wählen Sie eine Extraktion aus der Liste der Exraktionen aus und klicken Sie auf **[Run]**, um das Fenster "Run Extraction" zu öffnen.
+Alternativ öffnen Sie es per Rechtsklick auf die Extraktion oder durch die Menüleiste "Extraction".
 
 {% include _content/de/xu-specific/fortgeschrittene-techniken/extraktionsparameter.md %}
-
-### Benutzerdefinierte Parameter 
-{% include _content/de/xu-specific/fortgeschrittene-techniken/benutzerdefinierte-variablen.md %}
 
 ****
 #### Weiterführende Links:
