@@ -19,10 +19,3 @@ In den nachfolgenden Schritten wird die SAP-Standardtabelle T001W (Plants/Branch
 **Hinweis** Das Überschreiben der Variablen mit den Echtwerten wird ebenfalls im Log der Extraktion dokumentiert.
 
 ![Extraction-User-Variables-Log](/img/content/Extraction-User-Variables-log.png){:class="img-responsive"}
-
-****
-#### Weiterführende Links:
-- [XU Custom Parameter in Power BI](../xu-destinationen/Power-BI-Connector/pbi-xu-parameter)
-- [Erläuterung des QlikSense Datenlade-Skripts](../xu-destinationen/qlik/einstellungen_in_qlik_sense#erläuterung-des-qliksense-datenlade-skripts)
-- [WHERE Bedingung](../table/where-bedingung)
-- [Extraktion einplanen](./extraktion_einplanen)

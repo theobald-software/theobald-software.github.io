@@ -20,6 +20,6 @@ Die Vorgehensweise dafür entspricht dem des XU-Dienstes unter [Xtract Universal
 
 *********
 #### Weiterführende Links
-- [User Management](./benutzerverwaltung)
-- [Access Management](./zugriffssteuerung)
+- [Benutzerverwaltung](./benutzerverwaltung)
+- [Zugriffsverwaltung](./zugriffsverwaltung)
 - [SPNEGO](https://en.wikipedia.org/wiki/SPNEGO)

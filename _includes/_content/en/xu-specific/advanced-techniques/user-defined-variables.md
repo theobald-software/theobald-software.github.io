@@ -19,10 +19,3 @@ In the following steps, the SAP standard table T001W (Plants/Branches) is used. 
 **Note** The overwriting of the variables with the real values is also documented in the log of the extraction.
 
 ![Extraction-User-Variables-Log](/img/content/Extraction-User-Variables-log.png){:class="img-responsive"}
-
-****
-#### Related Links:
-- [XU Custom Parameters in Power BI](../xu-destinations/Power-BI-Connector/pbi-xuparameters)
-- [QlikSense Data Load Script Explanation](../xu-destinations/qliksense-qlikview/settings-in-qlik-sense#qliksense-data-load-script-explanation)
-- [WHERE Clause](../table/where-clause)
-- [Scheduling an extraction](./scheduling_extraction)
