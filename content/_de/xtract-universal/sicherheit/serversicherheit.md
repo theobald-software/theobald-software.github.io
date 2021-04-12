@@ -24,6 +24,6 @@ Folgen Sie dafür den Schritten in [Xtract Universal Dienst unter einem Windows 
 
 *********
 #### Weiterführende Links
-- [User Management](./benutzerverwaltung)
-- [Access Management](./zugriffssteuerung)
+- [Benutzerverwaltung](./benutzerverwaltung)
+- [Zugriffssteuerung](./zugriffsverwaltung)
 - [SPNEGO](https://en.wikipedia.org/wiki/SPNEGO)
