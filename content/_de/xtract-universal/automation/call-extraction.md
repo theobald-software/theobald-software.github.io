@@ -10,7 +10,9 @@ weight: 1
 lang: de_DE
 ---
 Xtract Universal ist entsprechend einer [Client-Server-Architektur](../einfuehrung) aufgebaut. 
+
 Die Ausführung einer Extraktion findet auf dem [XU Server](../server#extraktion-auf-dem-server-ausführen) statt. Xtract Universal bietet zwei Möglichkeiten, um eine angelegte Extraktion auszuführen:
+
 - Aufruf über das mitgelieferte [Kommandozeilen-Tool](../automation/call-via-commandline), das in einer Windows- und einer Linux-Version (xu.exe bzw. xu.elf) angeboten wird  
 - Aufruf via [Webservice-Call](../automation/call-via-webservice) 
 

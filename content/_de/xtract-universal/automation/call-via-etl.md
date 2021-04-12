@@ -9,31 +9,29 @@ permalink: /:collection/:path
 weight: 11
 lang: de_DE
 ---
+Bei allen ETL-Tools stehen grundsätzlich die folgenden Möglichkeiten für die Ausführung von Extraktionen zur Verfügung:
+- [Aufruf via Kommandozeile](./call-via-commandline) 
+- [Aufruf via Webservices](./call-via-webservice)
 
-Bei allen ETL-Tools hat man grundsätzlich zwei Möglichkeiten zur Ausführung einer Extraktion:
-- [Aufruf der Kommandozeile](./call-via-commandline) 
-- [Aufruf des Webservices](./call-via-webservice)
-
-
-### Integration mit Alteryx
-Für die Integration von Xtract Universam mit Alteryx [siehe Alteryx Destination](../xu-zielumgebungen/alteryx-de/)
-
-### Integration mit KNIME 
-Für die Integration von Xtract Universam mit KNIME bietet unser Partner KNIME ein Plug-In, siehe 
+### Integration mittels Plug-In
+- [Xtract Universal Alteryx Plugin](../xu-destinationen/alteryx-de/voraussetzungen-alteryx-de)
 - [KNIME SAP Integration based on Theobald Xtract Universal](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest) und
-- [SAP Reader (Theobald)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory). 
+- [SAP Reader (Theobald)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory)
+- [Xtract Universal Power BI Custom Connector](../xu-destinationen/Power-BI-Connector)
+- [Power BI Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
 
-### Integration mit Talend via Webservice
-Für den Aufruf eines Webservices in Talend siehe [Talend Integration via HTTP](https://kb.theobald-software.com/xtract-universal/talend-integration-http).
+### Integration mittels Webservice
+- [Talend Integration via HTTP](https://kb.theobald-software.com/xtract-universal/talend-integration-http)
+- [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http)
+- [GCS Integration with Google Scheduler](https://cloud.google.com/scheduler/docs/creating)
+- [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
 
-### Integration mit Pentaho via Kommandozeile 
-Für den Aufruf der Kommandozeile in Pentaho [Pentaho Integration via the Command Line](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
+### Integration mittels Kommandozeile
+- [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
+- [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/automation-of-xu-data-extracts-with-adf)
 
-### Integration mit Pentaho via Webservice
-Für den Aufruf eines Webservices in Pentaho siehe [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http).
 
-<!---
-ADF
-Google 
-AWS Lambda
--->
+
+
+
+
