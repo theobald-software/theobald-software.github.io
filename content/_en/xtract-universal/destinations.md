@@ -20,7 +20,7 @@ The following destinations are available:
 ### Databases / Data Warehouses
 
 - [Amazon Redshift](./xu-destinations/amazon-redshift) 
-- [Azure DWH](./xu-destinations/azure-dwh)
+- [Azure Synapse Analytics (SQl pool)](./xu-destinations/azure-synapse-analytics)
 - [Azure SQL Database](./xu-destinations/microsoft-sql-server) 
 - [EXASolution](./xu-destinations/exasol) 
 - [IBM DB2](./xu-destinations/ibm-db2) 

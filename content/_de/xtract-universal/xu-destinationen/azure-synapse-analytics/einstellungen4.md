@@ -1,5 +1,5 @@
 ---
-ref: xu-azure-dwh-03
+ref: xu-azure-synapse-analytics-03
 layout: page
 title: Einstellungen
 description: Einstellungen

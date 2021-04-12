@@ -1,10 +1,10 @@
 ---
-ref: xu-azure-dwh-05
+ref: xu-azure-synapse-analytics-05
 layout: page
 title: Merging Data
 description: Merging Data
 product: xtract-universal
-parent: azure-dwh
+parent: azure-synapse-analytics
 permalink: /:collection/:path
 weight: 5
 lang: en_GB

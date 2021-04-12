@@ -1,10 +1,10 @@
 ---
-ref: xu-azure-dwh-03
+ref: xu-azure-synapse-analytics-03
 layout: page
 title: Settings
 description: Settings
 product: xtract-universal
-parent: azure-dwh
+parent: azure-synapse-analytics
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

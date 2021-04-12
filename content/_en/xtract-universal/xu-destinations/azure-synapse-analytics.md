@@ -1,11 +1,11 @@
 ---
 ref: xu-destinations-25
 layout: page
-title: Azure DWH
-description: Azure DWH
+title: Azure Synapse Analytics (SQL pool)
+description: Azure Synapse Analytics (SQL pool)
 product: xtract-universal
 parent: xu-destinations
-childidentifier: azure-dwh
+childidentifier: azure-synapse-analytics
 permalink: /:collection/:path
 weight: 25
 lang: en_GB
@@ -13,6 +13,6 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=azure_dwh
 progressstate: 5
 ---
 
-The following section describes the loading of the SAP extraction data to an Azure Data warehouse.
+The following section describes the loading of the SAP extraction data to Azure Synapse Analytics (SQL pool).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

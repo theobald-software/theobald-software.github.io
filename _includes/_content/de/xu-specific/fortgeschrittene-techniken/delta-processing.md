@@ -13,7 +13,7 @@ Für Deltaverarbeitung ist es ratsam auf der Destinationsseite eine Datenbank zu
 
 ### Datenbank Destinationen
 - [Amazon Redshift](../xu-destinationen/redshift/daten-mergen) 
-- [Azure DWH](../xu-destinationen/azure_dwh/daten-mergen) 
+- [Azure Synapse Analytics (SQl pool)](../xu-destinationen/azure_dwh/daten-mergen) 
 - [Azure SQL Database](../xu-destinationen/microsoft-sql-server/daten-mergen) 
 - [EXASolution](../xu-destinationen/exasol/daten-mergen) 
 - [IBM DB2](../xu-destinationen/ibm-db2/daten-mergen) 

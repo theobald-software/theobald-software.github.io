@@ -19,7 +19,7 @@ Die folgenden Zielumgebungen sind verfügbar:
 ### Datenbanken / Data Warehouses
 
 - [Amazon Redshift](./xu-destinationen/redshift) 
-- [Azure DWH](./xu-destinationen/azure_dwh) 
+- [Azure Synapse Analytics (SQl pool)](./xu-destinationen/azure_dwh) 
 - [Azure SQL Database](./xu-destinationen/microsoft-sql-server) 
 - [EXASolution](./xu-destinationen/exasol) 
 - [IBM DB2](./xu-destinationen/ibm-db2) 

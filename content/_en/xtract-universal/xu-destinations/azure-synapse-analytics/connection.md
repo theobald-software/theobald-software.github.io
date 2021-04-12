@@ -1,10 +1,10 @@
 ---
-ref: xu-azure-dwh-02
+ref: xu-azure-synapse-analytics-02
 layout: page
 title: Connection
 description: Connections
 product: xtract-universal
-parent: azure-dwh
+parent: azure-synapse-analytics
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
@@ -27,7 +27,7 @@ Defines the user name.
 Defines the password.
 
 **Database Name**<br>
-Defines the name of the Azure DWH.
+Defines the name of the Azure Synapse Analytics (SQl pool).
             
 **Test Connection**<br>
 Checks the database connection. 

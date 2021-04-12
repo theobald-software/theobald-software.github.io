@@ -1,5 +1,5 @@
 ---
-ref: xu-azure-dwh-02
+ref: xu-azure-synapse-analytics-02
 layout: page
 title: Verbindung
 description: Verbindung
@@ -30,4 +30,4 @@ Passwort des Datenbanknutzers.
 Name der Datenbank.
              
 **Test Connection**<br>
-Klicken Sie auf die Schaltfläche, um die Verbindung zum Azure DWH zu testen. 
+Klicken Sie auf die Schaltfläche, um die Verbindung zu Azure Synapse Analytics (SQl pool) zu testen. 
