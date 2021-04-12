@@ -13,36 +13,16 @@ progressstate: 5
 ---
 
 
-<!---Xtract IS for Azure cannot be used outside SSIS,
-which is why an SQL Server license is required, even if the SQL Server database is not used.-->
-
-<!---
-| Component   | ERP | BW | Enterprise <br> License | Ultimate <br> License |
-|-------------|:-----:|:----:|:--------------------:|:------------------:|
-| Table       | R   | R  | X                  | X                |
-| BAPI        | R/W  | R/W | X                  | X                |
-| Query       | R   |    | X                  | X                |
-| ABAP Report | R   |    |                    | X                |
-| DeltaQ      | R   | R  |                    | X                |
-| BW Cube     |     | R  | X                  | X                |
-| Hierarchy   |     | R  |                    | X                |
-| OHS         |     | R  |                    | X                |
-| BW Loader   |     | W  |                    | X                | 
-| ODP         | R | R |  | X |
--->
-
-
-
 ### About licensing concept of Xtract IS for Azure
 The following graphic shows on which workstations the installation of Xtract IS for Azure is required to have a valid license.   
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png)<br>
 
-Xtract IS for Azure is licensed per source system and Windows server on which SSIS packages are deployed and executed. The same license file can be used on the local workstations to develop the SSIS packages.
+Xtract IS for Azure is licensed per source system and Integration Runtime (IR). The same license file can be used on the local workstations to develop the SSIS packages.
 A demo license is automatically installed with the installation of Xtract IS for Azure. <br>
-A regular license is provided, after purchasing the product. The product license is bound to your company and a specific server name. 
+A regular license is provided, after purchasing the product. The product license is bound to your company. 
 
 ### Maintenance
-General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
+General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/xtract-is/xtract-is-for-azure-pricing-order/) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
 In case of technical difficulties, contact the support team by email: [support@theobald-software.com](mailto:support@theobald-software.com).
 
 

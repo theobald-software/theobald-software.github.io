@@ -15,12 +15,12 @@ progressstate: 5
 Die folgende Grafik zeigt, auf welchen Rechnern die Installation von Xtract IS for Azure mit einer gültigen Lizenz erforderlich ist.  
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive" width="800px"} <br>
 
-Die Lizenzierung von Xtract IS for Azure erfolgt pro Quellsystem und Windows-Server auf dem SSIS-Pakete bereitgestellt und ausgeführt werden. Dieselbe Lizenzdatei kann auf den lokalen Rechnern für die Entwicklung der SSIS-Pakete verwendet werden.
+Die Lizenzierung von Xtract IS for Azure erfolgt pro Quellsystem und Integration Runtime (IR). Dieselbe Lizenzdatei kann auf den lokalen Rechnern für die Entwicklung der SSIS-Pakete verwendet werden.
 Mit der Installation von Xtract IS for Azure wird automatisch eine Demo-Lizenz installiert. <br>
-Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.
+Die Lizenz ist an Ihre Entität gebunden.
 
 ### Wartung
-Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
+Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/xtract-is-for-azure/preise-und-bestellungen/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
 Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).
 
 ### Installation der Xtract IS for Azure-Lizenz - XtractISLicense.json
