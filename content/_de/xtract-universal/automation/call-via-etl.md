@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 11
 lang: de_DE
 ---
-Bei allen ETL-Tools stehen grundsätzlich die folgenden Möglichkeiten für die Ausführung von Extraktionen zur Verfügung:
+Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extraktionen zur Verfügung:
 - [Aufruf via Kommandozeile](./call-via-commandline) 
 - [Aufruf via Webservices](./call-via-webservice)
 
@@ -18,7 +18,7 @@ Bei allen ETL-Tools stehen grundsätzlich die folgenden Möglichkeiten für die 
 - [KNIME SAP Integration based on Theobald Xtract Universal](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest) und
 - [SAP Reader (Theobald)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory)
 - [Xtract Universal Power BI Custom Connector](../xu-destinationen/Power-BI-Connector)
-- [Power BI Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
+- [Power BI Configure scheduled refresh](https://docs.microsoft.com/de-de/power-bi/connect-data/refresh-scheduled-refresh)
 
 ### Integration mittels Webservice
 - [Talend Integration via HTTP](https://kb.theobald-software.com/xtract-universal/talend-integration-http)

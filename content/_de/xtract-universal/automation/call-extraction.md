@@ -13,24 +13,20 @@ Xtract Universal ist entsprechend einer [Client-Server-Architektur](../einfuehru
 
 Die Ausführung einer Extraktion findet auf dem [XU Server](../server#extraktion-auf-dem-server-ausführen) statt. Xtract Universal bietet zwei Möglichkeiten, um eine angelegte Extraktion auszuführen:
 
-- Aufruf über das mitgelieferte [Kommandozeilen-Tool](../automation/call-via-commandline), das in einer Windows- und einer Linux-Version (xu.exe bzw. xu.elf) angeboten wird  
-- Aufruf via [Webservice-Call](../automation/call-via-webservice) 
+- Aufruf über das mitgelieferte [Kommandozeilen-Tool](./call-via-commandline), das in einer Windows- und einer Linux-Version (xu.exe bzw. xu.elf) angeboten wird  
+- Aufruf via [Webservice-Call](./call-via-webservice) 
 
 ### Ausführung paralleler Extraktionen
 
-Die Anzahl der parallel ausführbaren Extraktionen ist abhängig von den eingesetzten Hardware-Ressourcen des Windows-Servers. 
-
-Generell skaliert Xtract Universal im Zuge dieser Ressourcen durch gekapselte Ausführungsprozesse des Windows-Betriebsystems. 
-
+Die Anzahl der parallel ausführbaren Extraktionen ist abhängig von den eingesetzten Hardware-Ressourcen des Windows-Servers.  
 Jede gestartete Extraktion wird im Betriebssystem in einen separaten Prozess ausgeführt. Somit ist die Anzahl der Prozessorkerne für den Grad der Parallelisierung ausschlaggebend.
 
 {: .box-note }
-**Hinweis:** Xtract Universal skaliert im Zuge der eingesetzten Hardware-Ressourcen der Laufzeitumgebung.
+**Hinweis:** Xtract Universal skaliert entsprechend der eingesetzten Hardware-Ressourcen der Laufzeitumgebung.
 
 ### Extraktion im XU Designer manuell ausführen 
 Die manuelle Extraktion und direkte Ausführung im Designer wird im Abschnitt [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren) beschrieben.
-
-Das beschriebene Beispiel zeigt, dass die Werte bestimmter Parameter der Extraktionen dynamisch beim Aufruf gesetzt werden können. Mehr Details zum Setzen der Parameter finden Sie im Abschnitt [Parametrisierung](../automation/xu-parameter).
+Extraktionsparameter können wie im dort beschriebenen Beispiel beim Aufruf der Extraktion dynamisch gesetzt werden. Mehr Details zum Setzen der Parameter finden Sie im Abschnitt [Parametrisierung](./xu-parameter).
 
 <!---
 Offene Frage und Vorschläge von YW:

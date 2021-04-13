@@ -11,7 +11,7 @@ weight: 8
 lang: de_DE
 progressstate: 5
 ---
-Der folgende Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowohl [manuell im Xtract Universal Designer](../erste-schritte/eine-extraktion-ausfuehren) als auch automatisch. 
+Der folgende Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowohl [manuell im Xtract Universal Designer](./erste-schritte/eine-extraktion-ausfuehren) als auch automatisch. 
 
 Extraktionen können über folgende Wege automatisch aufgerufen und eingeplant werden: 
 
@@ -26,7 +26,7 @@ Extraktionen können über folgende Wege automatisch aufgerufen und eingeplant w
 
 
 {: .box-note }
-**Hinweis:** Bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) erfolgt die Automatisierung bzw. Scheduling über das Tool, welches die Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV oder json-Format konsumiert. 
+**Hinweis:** Bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) erfolgt die Automatisierung bzw. das Scheduling über das Tool, das die Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV oder json-Format konsumiert. 
 
 
 Beim Aufruf von Extraktionen können die [Extraktionsparameter](./automation/xu-parameter) dynamisch zur Laufzeit mitgegeben werden. 
