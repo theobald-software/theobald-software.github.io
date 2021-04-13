@@ -12,15 +12,18 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=ports
 ---
 The BOARD Connector Server runs as a Windows service with the main process 'C:\Program Files\BOARDConnector\BCService.exe'. 
 
-*BCService.exe* starts two listener processes and listens on the following ports by default:
+*BCService.exe* starts the following listener processes and listens on the following ports by default:
 
-Listener Process| Default Port
------------- | -------------
-*BCWebServer.exe* | 8097 (HTTP) and 8197 (HTTPS)
-*BCConfigServer.exe* | 8096
+Listener Process| Default Port | Comment
+------------ | ------------- | -------------
+*BCWebServer.exe* | 8097 (HTTP) and 8197 (HTTPS) | ports can be changed
+*BCConfigServer.exe* | 8096 | port can be changed
+*BCAPIServer.exe* | 8098 | port can not be changed, no encryption
 
-The server processes use different ports for communication. The web server accepts extraction calls via HTTP(S). 
-The configuration server communicates with the BOARD Connector Designer via a dedicated port. <br>
+The server processes use different ports for communication.
+- The web server accepts extraction calls from the BOARD server via HTTP(S).
+- The configuration server communicates with the BOARD Connector Designer.
+- The API Server makes the extractions' metadata available to the BOARD server's data reader.
 
 {: .box-warning }
 **Warning! Changing the default ports**<br>
