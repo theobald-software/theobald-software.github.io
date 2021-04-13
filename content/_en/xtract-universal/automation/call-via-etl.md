@@ -1,15 +1,14 @@
 ---
-ref: xu-run-dialog-01
+ref: xu-etl-01
 layout: page
-title: Run Dialog
-description: Run Dialog
+title: Call via ETL-Tool
+description: Call an Extraction via ETL-Tool
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 1
+weight: 11
 lang: en_EN
 ---
 
 
-
-
+Coming soon.

@@ -26,7 +26,7 @@ Jede gestartete Extraktion wird im Betriebssystem in einen separaten Prozess aus
 
 ### Extraktion im XU Designer manuell ausführen 
 Die manuelle Extraktion und direkte Ausführung im Designer wird im Abschnitt [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren) beschrieben.
-Extraktionsparameter können wie im dort beschriebenen Beispiel beim Aufruf der Extraktion dynamisch gesetzt werden. Mehr Details zum Setzen der Parameter finden Sie im Abschnitt [Parametrisierung](./xu-parameter).
+Extraktionsparameter können wie im dort beschriebenen Beispiel beim Aufruf der Extraktion dynamisch gesetzt werden. Mehr Details zum Setzen der Parameter finden Sie im Abschnitt [Extraktionsparameter](./extraktionsparameter).
 
 <!---
 Offene Frage und Vorschläge von YW:

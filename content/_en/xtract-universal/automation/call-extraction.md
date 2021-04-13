@@ -1,8 +1,8 @@
 ---
-ref: xu-automation-02
+ref: xu-run-dialog-01
 layout: page
-title: Executing Extractions with Power Shell
-description: Power Shell
+title: Call Extraction
+description: Call Extraction
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
@@ -10,6 +10,4 @@ weight: 1
 lang: en_EN
 ---
 
-
-
-
+Coming soon.

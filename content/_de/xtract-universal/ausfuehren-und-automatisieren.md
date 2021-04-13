@@ -29,7 +29,7 @@ Extraktionen können über folgende Wege automatisch aufgerufen und eingeplant w
 **Hinweis:** Bei [Pull-Destinationen](./xu-destinationen#pull--und-push-destinationen) erfolgt die Automatisierung bzw. das Scheduling über das Tool, das die Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV oder json-Format konsumiert. 
 
 
-Beim Aufruf von Extraktionen können die [Extraktionsparameter](./automation/xu-parameter) dynamisch zur Laufzeit mitgegeben werden. 
+Beim Aufruf von Extraktionen können die [Extraktionsparameter](./automation/extraktionsparameter) dynamisch zur Laufzeit mitgegeben werden. 
 
 Diese Parameter können auch in einem [SQL-Skript](./automation/xu-parameter-sql) verwendet werden, falls die Destination eine SQL-Datenbank ist. 
 
