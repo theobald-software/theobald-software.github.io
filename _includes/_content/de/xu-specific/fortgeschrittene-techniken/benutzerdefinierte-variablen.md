@@ -9,11 +9,11 @@ In den nachfolgenden Schritten wird die SAP-Standardtabelle T001W (Plants/Branch
 ![Extraction-User-Variables](/img/content/Extraction-User-Variables.png){:class="img-responsive"}
 2. Bestätigen Sie die Eingabe mit **[OK]**.
 3. Klicken Sie auf **[Run]**. Das Fenster 'Run Extraction' öffnet sich.
-4. Wechsel Sie zum Tab *Custom* der Laufzeitparameter. Anhand des @-Zeichens werden die Variablen erkannt.
+4. Wechsel Sie zum Tab *Custom* (1) der Laufzeitparameter. Anhand des @-Zeichens werden die Variablen erkannt.
 5. Tragen Sie die Werte ein und bestätigen Sie über die Eingabetaste.
 ![Run-Extraction-Custom-Defined-Parameters](/img/content/Run-Extraction-Custom-Defined-Parameters.png){:class="img-responsive"}
 6. Die Werte für die Laufzeitparameter werden in der Extraktions-URL übernommen.
-7. Klicken Sie auf **[Run]**, um die Extraktion auszuführen.
+7. Klicken Sie auf **[Run]**, um die Extraktion auszuführen (2).
 
 {: .box-note }
 **Hinweis** Das Überschreiben der Variablen mit den Echtwerten wird ebenfalls im Log der Extraktion dokumentiert.
