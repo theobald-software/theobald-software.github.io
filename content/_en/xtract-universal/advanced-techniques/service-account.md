@@ -1,8 +1,8 @@
 ---
 ref: xu-advanced-techniques-20
 layout: page
-title: Running the Xtract Universal Service under a Windows Service Account
-description: Running the Xtract Universal Service under a Windows Service Account
+title: Setting Up an XU Service Account
+description: Running the XU-Service under a Windows Service Account
 product: xtract-universal
 parent: advanced-techniques
 permalink: /:collection/:path

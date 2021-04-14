@@ -1,8 +1,8 @@
 ---
 ref: xu-advanced-techniques-20
 layout: page
-title: Xtract Universal Dienst unter einem Windows Dienstkonto ausführen
-description: Xtract Universal Dienst unter einem Windows Dienstkonto ausführen
+title: XU-Dienstkonto einrichten
+description: XU-Dienst unter Windows Dienstkonto ausführen
 product: xtract-universal
 parent: fortgeschrittene-techniken
 permalink: /:collection/:path
