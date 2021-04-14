@@ -23,7 +23,7 @@ The information described in the following section is a prerequisite for all sub
 1. Set up a **Data Flow Task** by dragging the dataflow component into the "Control Flow" canvas. Double-click the component to access the dataflow canvas.
 2. Add an SAP Connection using the [Xtract Connection Manager](./sap-connection/the-connection-manager).
 3. Drag & drop the **Xtract Table** component to the data flow task. 
-![xis_table_overview](/img/content/xis/xis_table_overview.png)
+![xis_table_overview](/img/content/xis/xis_table_overview.png){:class="img-responsive"}
 4. [Assign a Connection Manager](./sap-connection/the-connection-manager#assigning-a-connection-manager-to-a-component) by double-clicking the **Xtract Table** component. 
 5. Double-click the **Xtract Table**. The window “Extract Single and Joint SAP Tables or Views” opens.
 
@@ -37,3 +37,4 @@ The information described in the following section is a prerequisite for all sub
 - [BW Hierarchy](./hierarchy)
 - [ODP](./odp)
 - [Table](./table) - further details on the Table component
+
