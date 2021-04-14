@@ -25,6 +25,7 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 - [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http)
 - [GCS Integration with Google Scheduler](https://cloud.google.com/scheduler/docs/creating)
 - [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
+- [Qlik Datenladeskript generieren](../xu-destinationen/qlik/script_generieren)
 
 ### Integration mittels Kommandozeile
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).

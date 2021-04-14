@@ -91,3 +91,4 @@ Ein asynchroner Aufruf einer Extraktion ist ein nichtblockierender Aufruf. D.h. 
 - [Extraktion via Skript ausführen](./call-via-script)
 - [Extraktion via Scheduler ausführen](./call-via-scheduler)
 - [Extraktion via ETL-Tool ausführen](./call-via-etl)
+- [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/explanation-of-using-config-command-line-tool)
