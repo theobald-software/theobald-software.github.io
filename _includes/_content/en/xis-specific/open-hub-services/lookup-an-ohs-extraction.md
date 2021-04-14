@@ -1,6 +1,6 @@
 ### Look Up an OHS Extraction
 
-1. Double-click the OHS component to open the component's main window.
+1. Double-click the OHS component to open the main window of the component.
 ![OHS-Look-Up](/img/content/xis/ohs-main-window-look-up.png){:class="img-responsive" }
 2. In the main window, select an **Extraction type**. 
 - If you use BW4Hana2.0, select **Table** as your extraction type and make sure that the open hub destination type in SAP is set to *database table*. 

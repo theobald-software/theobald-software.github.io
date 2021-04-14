@@ -12,7 +12,8 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=open-hub-service
 ---
 
-The Xtract IS OHS component is an SSIS data source with the help of which OSH In-foSpokes and/or OHS process chains can be run to receive the data.
+The following section describes the functions of the OHS Component of Xtract IS.
+Basic knowledge about Xtract IS and OHS is required to understand the following sections.
 
 ![OHS](/img/content/OHS.png){:class="img-responsive" }
 

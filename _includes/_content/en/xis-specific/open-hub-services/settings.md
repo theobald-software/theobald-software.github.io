@@ -1,11 +1,13 @@
 ### Settings
 
-In the main window of the OHS component, click **Settings**. A window with two tabs opens:
-*Table Settings* and *Third party tool (legacy)*.
+To access the extraction settings, click **Settings** in the main window of the OHS component. A window with two tabs opens: <br>
+- *Table Settings* 
+- *Third party tool (legacy)*
+
 The settings correspond to the selected extraction type. Set either *Table* or *Third party tool (legacy)* settings.
+![OHS-Settings](/img/content/xis/ohs-main-window-settings.png){:class="img-responsive" }
 
 {% include _content/en/tables/extraction-settings.md  %}
-
 
 ### Third party tool Settings
 
