@@ -1,8 +1,8 @@
 ---
 ref: xu-parameters-sql
 layout: page
-title: Parameterizing in SQL
-description: Parameterizing in SQL
+title: SQL Parameters
+description: SQL Parameters
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
