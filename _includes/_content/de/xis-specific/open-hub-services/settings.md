@@ -7,7 +7,6 @@ Klicken Sie im Hauptfenster der OHS-Komponente auf **Settings**, um das Menü f�
 Die Tabs beziehen sich auf den ausgewählten **Extraction type**. <br>
 Wenn Sie *Table* als **Extraction type** ausgewählt haben, bearbeiten Sie die Einstellungen im Tab *Table Settings*. <br>
 Wenn Sie *Third party tool (legacy)* als **Extraction type** ausgewählt haben, bearbeiten Sie die Einstellungen im Tab *Third party tool (legacy)*. 
-![OHS-Settings](/img/content/xis/ohs-main-window-settings.png){:class="img-responsive" }
 
 {% include _content/en/tables/extraction-settings.md  %}
 
