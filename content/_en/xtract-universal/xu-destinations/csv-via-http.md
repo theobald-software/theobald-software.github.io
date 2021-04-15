@@ -34,4 +34,8 @@ The window "Destination Details" consists of four subsections:
 
 {% include _content/en/xu-specific/xu-destinations/general/csv-settings.md %}														 
 
-{% include _content/en/xu-specific/xu-destinations/general/convert-encoding.md %}		
+{% include _content/en/xu-specific/xu-destinations/general/convert-encoding.md %}	
+
+****
+#### Related Links
+- [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
