@@ -109,3 +109,26 @@ Masks SAP connection password. This option is switched on per default when activ
 
 **Internal Table Function**
 States the function module used for Xtract IS' internal communication with SAP (e.g., retrieving the metadata). To change the selected function module, type the name of function module manually. Using another function module can be necessary when adding permission restrictions within the functional module.
+
+### Assigning a Connection Manager to an Xtract Component
+
+Xtract Connection Managers can be assigned to an Xtract component automatically or manually.
+
+#### Automatically Assign a Connection Manager
+
+1. Create a Connection Manager as shown in [Connecting to SAP](./the-connection-manager#connecting-to-sap).
+2. Drag & drop an Xtract component e.g., **Xtract Table**, **Xtract BAPI**, etc.  
+3. Double-click the Xtract component to automatically assign a Connection Manager. The settings window of the component opens. 
+
+{: .box-note }
+**Note:** If there are multiple Connection Managers available, we recommend using a manual assignment. 
+
+#### Manually Assign a Connection Manager
+
+1. Create a Connection Manager as shown in [Connecting to SAP](./the-connection-manager#connecting-to-sap).
+2. Drag & drop the Xtract component e.g., **Xtract Table**, **Xtract BAPI**, etc.  
+3. Select the Xtract component. Under *Properties* Open *Show Advanced Editor* (1). The window "Advanced Editor" opens (2). 
+4. Select a Connection Manager from the drop-down-menu (3). 
+5. Confirm your selection with **[OK]** (4).
+
+![assign-connection-manager](/img/content/xis/assign-connection-manager.png)

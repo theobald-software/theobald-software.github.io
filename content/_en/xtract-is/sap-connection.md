@@ -7,7 +7,7 @@ product: xtract-is
 parent: xtract-is
 childidentifier: sap-connection
 permalink: /:collection/:path
-weight: 4
+weight: 3
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=sap-connection
 ---
