@@ -3,7 +3,7 @@
 
 |Komponente             | SAP Release           | Anforderungen an das SAP-System                                                |
 |----------------------|-----------------------|-------------------------------------------------------------------------------|
-|Table                 | Rel. above 4.0B       | Für die meisten Aufgaben ist die Installation eines Z-Moduls notwendig, aber nicht für alle. |
+|Table                 | Rel. above 4.0B       | Für die meisten Aufgaben ist die Installation eines eigenen Funktionsbausteins notwendig, aber nicht für alle. |
 |Table Join            | Rel. 7.0 or above     | Die Installation eines eigenen Funktionsbausteins ist erforderlich.                        |
 |BAPI & Function Module| Rel. above 4.0B       | keine - Nur remote-enabled functions werden unterstützt.                            |
 |Query                 | Rel. above 4.0B       | keine                                                                         |

@@ -3,7 +3,7 @@
 
 |Component             | SAP Release           | Requirements on the SAP system                                                |
 |----------------------|-----------------------|-------------------------------------------------------------------------------|
-|Table                 | Rel. above 4.6C       | Installation of a Z-module is advisable.                   |
+|Table                 | Rel. above 4.6C       | Installation of a custom function module is advisable.                   |
 |Table Join            | Rel. 7.0 or above     | Installation of a custom function module is necessary.                        |
 |BAPI & Function Module| Rel. above 4.6C       | No special requirements. **Note:** Only remote-enabled functions are supported.                            |
 |Query                 | Rel. above 4.6C       | No special requirements.                                                                        |
