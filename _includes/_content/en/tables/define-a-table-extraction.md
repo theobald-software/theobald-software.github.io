@@ -15,7 +15,7 @@ Search results appear in the preview window.
 
 The application now returns to the main window "Extract Single and Joint SAP Tables or Views". <br>
 
-Columns of the table retrieved from SAP are displayed in the subsection **Fields**.  
+All relevant metadata information of the table retrieved from SAP are displayed in the subsection **Fields**.  
 ![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 
 | Number | Element / Description | 
@@ -28,12 +28,11 @@ Columns of the table retrieved from SAP are displayed in the subsection **Fields
 
 
 
-### Filtering tables
+### Filtering table fields
 
-You can select either all or only individual columns for extraction. 
-All columns are automatically selected for table extraction. Deselect the ones you don't wish to extract.<br>
-Click the header fields to sort the columns by name or description.<br>
-To search for a certain column name or description, start typing the word in the filter boxes.<br>
+You can select either all or only individual columns for extraction. All columns are automatically selected for table extraction. Deselect the ones you don't wish to extract.
+
+Click the header fields to sort the columns by name or description. To search for a certain column name or description, start typing the word in the filter boxes.<br>
 
 ![Table-Main](/img/content/table/fields_filter-search.png){:class="img-responsive"}
 

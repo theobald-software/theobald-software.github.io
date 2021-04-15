@@ -117,7 +117,7 @@ Xtract Connection Managers can be assigned to an Xtract component automatically 
 #### Automatically Assign a Connection Manager
 
 1. Create a Connection Manager as shown in [Connecting to SAP](./the-connection-manager#connecting-to-sap).
-2. Add an Xtract component e.g., **Xtract Table**, **Xtract BAPI**, etc.  
+2. Drag & drop an Xtract component e.g., **Xtract Table**, **Xtract BAPI**, etc.  
 3. Double-click the Xtract component to automatically assign a Connection Manager. The settings window of the component opens. 
 
 {: .box-note }
@@ -126,7 +126,7 @@ Xtract Connection Managers can be assigned to an Xtract component automatically 
 #### Manually Assign a Connection Manager
 
 1. Create a Connection Manager as shown in [Connecting to SAP](./the-connection-manager#connecting-to-sap).
-2. Add an Xtract component e.g., **Xtract Table**, **Xtract BAPI**, etc.  
+2. Drag & drop the an Xtract component e.g., **Xtract Table**, **Xtract BAPI**, etc.  
 3. Select the Xtract component. Under *Properties* Open *Show Advanced Editor* (1). The window "Advanced Editor" opens (2). 
 4. Select a Connection Manager from the drop-down-menu (3). 
 5. Confirm your selection with **[OK]** (4).
