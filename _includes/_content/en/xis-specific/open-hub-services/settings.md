@@ -5,7 +5,6 @@ To access the extraction settings, click **Settings** in the main window of the 
 - *Third party tool (legacy)*
 
 The settings correspond to the selected extraction type. Set either *Table* or *Third party tool (legacy)* settings.
-![OHS-Settings](/img/content/xis/ohs-main-window-settings.png){:class="img-responsive" }
 
 {% include _content/en/tables/extraction-settings.md  %}
 
