@@ -15,7 +15,7 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 
 ### Integration mittels Plug-In
 - [Xtract Universal Alteryx Plugin](../xu-destinationen/alteryx-de/voraussetzungen-alteryx-de)
-- [KNIME SAP Integration based on Theobald Xtract Universal](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest) und
+- [KNIME SAP Integration based on Theobald Xtract Universal](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest)
 - [SAP Reader (Theobald)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory)
 - [Xtract Universal Power BI Custom Connector](../xu-destinationen/Power-BI-Connector)
 - [Power BI Configure scheduled refresh](https://docs.microsoft.com/de-de/power-bi/connect-data/refresh-scheduled-refresh)
@@ -30,9 +30,3 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 ### Integration mittels Kommandozeile
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
 - [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/automation-of-xu-data-extracts-with-adf)
-
-
-
-
-
-

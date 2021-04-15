@@ -24,13 +24,21 @@ packageSize | setzt die Paketgröße | verfügbar in Table
 decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar in CSV
 columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV
 
-
 ### Source
 Die Verbindungseinstellungen zu einer SAP Quelle können dynamisch über die URL oder die xu.exe geändert werden. 
 
 Im Tab *Source* können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) definiert sind.
 
 ![Source parameters](/img/content/xu/xu_run_extraction_param_gen.png){:class="img-responsive"}
+
+Parametername | Beschreibung |
+------------ | ------------- | 
+lang | ändert dynamisch die SAP-Anmeldesprache des SAP-Quellsystems  
+logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Ticket](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket) für mehr Details.
+
+{: .box-note }
+**Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket"
+ als Authentifizierungsmethode in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) ausgewählt ist.
 
 Es gibt auch Parameter, welche vom Typ der Destination abhängen. 
 Bei einer Destination vom Typ vom Typ HTTP-CSV oder Flatfile-CSV sind es **decimalSeparator** und **columnSeperator**.
@@ -40,9 +48,6 @@ Parametername | Beschreibung | Spezielle Infos
 decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar bei Destinationen vom Typ HTTP-CSV oder Flatfile-CSV
 columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar bei Destinationen vom Typ HTTP-CSV oder Flatfile-CSV
 
-{: .box-note }
-**Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket"
- als Authentifizierungsmethode in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) ausgewählt ist.
 
 ![Run-Extraction-Connection-Parameters](/img/content/xu/xu_run_extraction_source_param.png){:class="img-responsive"}
 
