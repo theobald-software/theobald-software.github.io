@@ -1,0 +1,38 @@
+---
+ref: xu-etl-01
+layout: page
+title: Aufruf via ETL-Tool
+description: Aufruf einer Extraktion mit einem ETL-Tool
+product: xtract-universal
+parent: automation
+permalink: /:collection/:path
+weight: 11
+lang: de_DE
+---
+Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extraktionen zur Verfügung:
+- [Aufruf via Kommandozeile](./call-via-commandline) 
+- [Aufruf via Webservices](./call-via-webservice)
+
+### Integration mittels Plug-In
+- [Xtract Universal Alteryx Plugin](../xu-destinationen/alteryx-de/voraussetzungen-alteryx-de)
+- [KNIME SAP Integration based on Theobald Xtract Universal](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest) und
+- [SAP Reader (Theobald)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory)
+- [Xtract Universal Power BI Custom Connector](../xu-destinationen/Power-BI-Connector)
+- [Power BI Configure scheduled refresh](https://docs.microsoft.com/de-de/power-bi/connect-data/refresh-scheduled-refresh)
+
+### Integration mittels Webservice
+- [Talend Integration via HTTP](https://kb.theobald-software.com/xtract-universal/talend-integration-http)
+- [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http)
+- [GCS Integration with Google Scheduler](https://cloud.google.com/scheduler/docs/creating)
+- [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
+- [Qlik Datenladeskript generieren](../xu-destinationen/qlik/script_generieren)
+
+### Integration mittels Kommandozeile
+- [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
+- [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/automation-of-xu-data-extracts-with-adf)
+
+
+
+
+
+

@@ -1,10 +1,10 @@
 ---
-ref: xu-advanced-techniques-02
+ref: xu-extraction-parameters-01
 layout: page
 title: Extraction Parameters
 description: Extraction Parameters
 product: xtract-universal
-parent: advanced-techniques
+parent: automation
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
