@@ -6,7 +6,7 @@ description: Call an Extraction via Webservice
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_EN
 ---
 

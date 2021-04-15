@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: logging
 permalink: /:collection/:path
-weight: 8
+weight: 35
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=logging
 progressstate: 5

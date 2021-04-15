@@ -6,7 +6,7 @@ description: Parametrisierung in SQL
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 6
+weight: 3
 lang: de_DE
 ---
 In Xtract Universal können benutzerdefinierte Parameter (Custom Parameters) definiert werden, deren Werte man beim Aufruf setzen kann. 

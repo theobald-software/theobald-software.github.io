@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: table
 permalink: /:collection/:path
-weight: 18
+weight: 85
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=tablejoin
 progressstate: 5

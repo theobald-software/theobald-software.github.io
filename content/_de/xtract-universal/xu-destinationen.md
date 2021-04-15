@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: xu-destinationen
 permalink: /:collection/:path
-weight: 6
+weight: 25
 lang: de_DE
 progressstate: 5
 old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen

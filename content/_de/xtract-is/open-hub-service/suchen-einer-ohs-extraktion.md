@@ -18,7 +18,6 @@ Klicken Sie im Hauptfenster der Komponente auf **Look Up** (Binokularsymbol), um
 Sie können entweder nach InfoSpoke, Destination oder Process Chain suchen. Sie können bei der Suche auch Wildcards ( * ) verwenden.
 ![OHS-Search-001](/img/content/xis/OHS-Search-001.png){:class="img-responsive" }
 Nachdem Sie Ihre Auswahl getroffen haben, werden alle Metadaten aus dem BW geholt und im Hauptfenster der Komponente angezeigt.
-![OHS-Search-002](/img/content/xis/OHS-Search-002.png){:class="img-responsive" }
 
 ### Extraktionstypen
 

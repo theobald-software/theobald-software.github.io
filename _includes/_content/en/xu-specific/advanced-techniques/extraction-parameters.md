@@ -37,7 +37,7 @@ In the *Source* tab you can override the values that are defined in [SAP source 
 Parameter name | Parameter description 
 ------------ | ------------- 
 lang | to dynamically change the logon language of the source SAP system  
-logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](./sap-single-sign-on/sso-with-sap-logon-ticket)
+logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket)
 
 {: .box-note }
 **Note:** The parameter **logonTicket** can only be set if SAP logon ticket is selected as the authentication method in [SAP source details](../introduction/sap-connection).
@@ -56,7 +56,7 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 ### Custom
 
 {: .box-note }
-**Note:** The tab *Custom* is only active when a [User-Defined Variable](./user-defined-variables) was created. 
+**Note:** The tab *Custom* is only active when a [User-Defined Variable](../advanced-techniques/user-defined-variables) was created. 
 
 Check the checkbox and enter a new value to set the user defined parameter.
 

@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: erste-schritte
 permalink: /:collection/:path
-weight: 4
+weight: 10
 lang: de_DE
 ---
 

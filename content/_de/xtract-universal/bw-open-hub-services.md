@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: bw-open-hub-services
 permalink: /:collection/:path
-weight: 15
+weight: 70
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-open-hub-services
 ---

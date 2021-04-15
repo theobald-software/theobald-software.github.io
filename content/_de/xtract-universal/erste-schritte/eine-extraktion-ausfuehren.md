@@ -46,7 +46,7 @@ Duration |Dauer der Extraktion |
 
 ### Runtime parameters (2)
 
-Die Tabs "Extraction", "Source" und "Custom" beinhalten die [Extraktionsparameter](../fortgeschrittene-techniken/extraktionsparameter) der Extraktion.
+Die Tabs "Extraction", "Source" und "Custom" beinhalten die [Extraktionsparameter](../automation/extraktionsparameter) der Extraktion.
 Wenn diese Parameter geändert werden, passen sich auch automatisch *URL und Kommandozeile (3)* entsprechend an.
 
 #### Beispiel

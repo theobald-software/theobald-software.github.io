@@ -6,7 +6,7 @@ description: Extraction Parameters
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 5
+weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-parameters
 progressstate: 5

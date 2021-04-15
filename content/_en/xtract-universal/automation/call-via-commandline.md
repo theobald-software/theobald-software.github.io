@@ -6,7 +6,7 @@ description: Call an Extraction via Command Line
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_EN
 ---
 

@@ -72,7 +72,7 @@ Nachdem wir nun alle notwenigen Variablen definiert haben, rufen wir das Kommand
 #### Rückgabewert prüfen 
 Nach der Ausführung prüfen wir nun den Rückgabewert und schreiben eine entsprechende Meldung. Ein Rückgabewert *0* zeigt eine fehlerfreie Ausführung an. 
 
-Ein anderer [Rückgabewert](/automation/call-via-commandline#rückgabewert) zeigt, dass ein Fehler während der Ausführung aufgetreten ist. 
+Ein anderer [Rückgabewert](./call-via-commandline#rückgabewert) zeigt, dass ein Fehler während der Ausführung aufgetreten ist. 
 
 ```bat
 :: check the last exit code

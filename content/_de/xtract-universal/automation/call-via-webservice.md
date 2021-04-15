@@ -6,7 +6,7 @@ description: Extraktion via Webservice z.B. im Browser aufrufen
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 ---
 Sie können eine Extraktion via Webservice-Aufruf ausführen. 

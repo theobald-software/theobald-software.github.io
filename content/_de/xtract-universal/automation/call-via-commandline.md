@@ -6,7 +6,7 @@ description: Aufruf einer Extraktion via Kommandozeile
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 ---
 Extraktionen können über die nachfolgenden Kommandozeilen-Tools ausgeführt werden:

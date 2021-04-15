@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: advanced-techniques
 permalink: /:collection/:path
-weight: 5
+weight: 20
 lang: en_GB
 progressstate: 5
 ---

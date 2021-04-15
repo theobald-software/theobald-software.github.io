@@ -6,7 +6,7 @@ description: Parameterizing in SQL
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 6
+weight: 3
 lang: en_EN
 ---
 

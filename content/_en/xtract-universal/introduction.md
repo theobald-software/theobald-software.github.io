@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: introduction
 permalink: /:collection/:path
-weight: 3
+weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=introduction
 progressstate: 5

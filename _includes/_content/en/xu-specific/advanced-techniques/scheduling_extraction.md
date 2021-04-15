@@ -24,7 +24,7 @@ If the extraction is called via the parameters, any number of variables can be a
 
 ### Predefined variables
 
-Predefined variables are described in [Extraction Parameters](./extraction-parameters). 
+Predefined variables are described in [Extraction Parameters](../automation/extraction-parameters). 
 
 
 ### Returned value 

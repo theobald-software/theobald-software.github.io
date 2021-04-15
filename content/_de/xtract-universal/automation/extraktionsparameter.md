@@ -6,7 +6,7 @@ description: Parametrisierung
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 5
+weight: 2
 lang: de_DE
 ---
 Der Xtract Universal Designer bietet die Möglichkeit Extraktionen auszuführen, indem Sie Laufzeitparameter und andere Optionen übergeben.

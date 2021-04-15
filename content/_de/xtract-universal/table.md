@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: table
 permalink: /:collection/:path
-weight: 18
+weight: 85
 lang: de_DE
 progressstate: 5
 ---

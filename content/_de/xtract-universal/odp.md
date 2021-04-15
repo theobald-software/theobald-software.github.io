@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 14
+weight: 65
 lang: de_DE
 progressstate: 5
 ---

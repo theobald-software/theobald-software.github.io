@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 childidentifier: bapis-und-funktionsbausteine
 permalink: /:collection/:path
-weight: 10
+weight: 45
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
