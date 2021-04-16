@@ -35,5 +35,5 @@ Das Fenster "Destination Details" besteht aus vier Unterabschnitten:
 
 ****
 #### Weiterführende Links
-- [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
+- KNIME Integration via [SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
 
