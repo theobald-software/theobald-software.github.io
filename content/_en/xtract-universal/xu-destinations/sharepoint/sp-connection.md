@@ -11,8 +11,15 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection1
 ---
 
-The following settings can be defined in the SharePoint Destination configuration:
+### Adding a SharePoint Destination
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
+3. Select the *SharePoint List* destination from the drop-down list.
 
+### Destination Details
+The window "Destination Details" consists of:
+- Name - Destination name
+- Type - Destination type
 
 ![XU_Sharepoint_Dest](/img/content/XU_Sharepoint_Dest.png){:class="img-responsive"}            
 

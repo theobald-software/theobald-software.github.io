@@ -10,9 +10,20 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection5
 ---
+### Adding AWS S3 Destination
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
+3. Select the *S3 AWS* destination from the drop-down list.
 
+### Destination Details
+The window "Destination Details" consists of:
+- Name (states the file name)
+- Type (states the destination type)
 
-The following settings are available when setting up an AWS S3 connection. 
+Subsections:
+- S3 Settings (see below) 
+- File format (see below)
+- Column encryption (see below)
 
 ![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.png){:class="img-responsive"}
 
@@ -70,6 +81,9 @@ When you select "Parquet" file format, in the field "Compatibility mode" you can
 
 Spark does not support the datatypes used in pure mode, so other datatypes need to be used.
 
+### Column encryption
+{% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
+
 ### Connection Retry
 
 Connection retry is a built-in function of the AWS S3 destination. 
@@ -77,4 +91,5 @@ The retry function is automatically activated.
 
 Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to AWS S3. For more general information about retry strategies in an AWS S3 environment go to the official [AWS Help](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
 Xtract Universal follows an exponential retry strategy. The selected exponential strategy results in 7 retry attempts and an overall timespan of 140 seconds. If a connection is not established during the timespan of 140 seconds, the extraction fails.
+
 

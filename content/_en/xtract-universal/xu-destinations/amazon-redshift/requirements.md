@@ -10,20 +10,21 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift-requirements
 ---
+### Prerequisites
+- Run a running instance and valid credentials.
+- Your client computer has to be authorized to access the cluster.
+- For establishing a connection to Redshift a suitable database driver is required.
+- Download and install the 64 bit Amazon Redshift ODBC driver from the official [website](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html).
 
-For using this destination you need a running Redshift instance and valid credentials.
-Furthermore your client computer has to be authorized to access the cluster.
-
-For establishing a connection to Redshift a suitable database driver is required.
-Download and install the 64 bit Amazon Redshift ODBC driver from the official [website](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html).
-
-If the driver is missing the connection test will fail:
+{: .box-note }
+**Note:** If the driver is missing the connection test will fail:
 
 ![XU-fehlender-redshift-treiber](/img/content/XU-fehlender-redshift-treiber.png){:class="img-responsive"}
 
 Prior to Xtract Universal version 2.102.0 you have to install the Mono.Security.dll assembly instead of above mentioned ODBC driver.
 You can download the complete Mono package from [the official project site](http://download.mono-project.com/archive/2.0/download/) or from any source of your choice. Please make sure to install the Mono.Security assembly, compiled on .NET 2.0. Other versions could cause problems with the assemblies used for accessing the Redshift Database.
 
+### Installing
 There are two ways for installing the assembly: 
 
 1. Register the Mono.Security assembly in your global assembly cache (gac):

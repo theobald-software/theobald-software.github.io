@@ -10,8 +10,15 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sf-connection-en
 ---
+### Adding a Salesforce Destination
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
+3. Select the *Salesforce* destination from the drop-down list.
 
-The following settings have to be defined in order to use the Salesforce destination.
+### Destination Details
+The window "Destination Details" consists of:
+- Name - Destination name
+- Type - Destination type
 
 ![sf-destination-details](/img/content/sf-destination-details.png){:class="img-responsive"}
 

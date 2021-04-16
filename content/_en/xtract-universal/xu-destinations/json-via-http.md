@@ -15,13 +15,9 @@ The JSON destination is a generic JSON stream over HTTP.
 
 ### Adding HTTP - JSON Destination
 
-1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![JSON-Destination-Details](/img/content/xu/xu_manage-destinations.png){:class="img-responsive"}
+1. To add a new destination, see [Managing Destinations](./managing-destinations)
+2. Fill in **Name**.
 3. Select the *HTTP - JSON* destination from the drop-down list.
-![JSON-Destination-Details](/img/content/add-select-destination.png){:class="img-responsive"}
-4. Click **[OK]** to confirm.
-![JSON-Destination-Details](/img/content/xu/json/JSON-Destination-Details.png){:class="img-responsive"}
 
 ### Destination Details
 The window "Destination Details" consists of two subsections:

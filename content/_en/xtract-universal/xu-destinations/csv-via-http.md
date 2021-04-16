@@ -17,11 +17,9 @@ The destination is a generic CSV stream over HTTP.
 The CSV (via HTTP) destination is supported by many products. The following products have been tested: Layer2 und INFONEA. 
 
 ### Adding HTTP - CSV Destination
-
-1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
+1. To add a new destination, see [Managing Destinations](./managing-destinations)
+2. Fill in **Name**.
 3. Select the *HTTP - CSV* destination from the drop-down list.
-4. Click **[OK]** to confirm.
 
 ### Destination Details
 The window "Destination Details" consists of four subsections:

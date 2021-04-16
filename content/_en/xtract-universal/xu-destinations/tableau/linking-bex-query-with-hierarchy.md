@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=linking-bex-query-with-hierarc
 
 In this section we will extract a BEx query and a BW hierarchy and create a relationship to link both data sources.
 
-**Step 1**: Create an BEx query extraction. 
+### Step 1: Create an BEx query extraction. 
 
 ![XU-Tableau-BExQuery](/img/content/XU-Tableau-BExQuery.png){:class="img-responsive"}
 
@@ -23,7 +23,7 @@ Check the General Settings:
 
 For more information refer to Define a [BW Cube Extraction](). 
 
-**Step 2**: Create a BW hierarchy extraction. 
+### Step 2: Create a BW hierarchy extraction. 
 
 ![XU-Tableau-Hierarchy](/img/content/XU-Tableau-Hierarchy.png){:class="img-responsive"}
 
@@ -33,8 +33,9 @@ Check the General Settings to get a *Natural* representation of the BW hierarchy
 
 For more information refer to [Define a Hierarchy Extraction](../../bw-hierarchies/hierarchy-extraction-define).
 
-**Step 3**: Load both extractions into Tableau and create a relation between them. 
+### Step 3: Create a relation
 
+Load both extractions into Tableau and create a relation between them.
 ![Tableau-BExQuery-Datasource](/img/content/Tableau-BExQuery-Datasource.png){:class="img-responsive"}
 
 ![Tableau-BWHierarchy-Datasource](/img/content/Tableau-BWHierarchy-Datasource.png){:class="img-responsive"}

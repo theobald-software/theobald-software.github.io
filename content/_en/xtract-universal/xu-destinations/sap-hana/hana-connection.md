@@ -10,7 +10,12 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=hana-connection
 ---
+### Adding a SAP HANA Destination
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
+3. Select the *HANA* destination from the drop-down list.
 
+### Destination Details
 The following settings can be defined for the HANA database or SAP Data Warehouse Cloud (DWC) connection:
 
 - SAP HANA database

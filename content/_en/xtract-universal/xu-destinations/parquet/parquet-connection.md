@@ -11,16 +11,13 @@ lang: en_GB
 progressstate: 5
 ---
 
-
 ### Adding Parquet Destination
-1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![XU_parquet_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
-3. Select the *Parquet* destination from the drop-down list.
-4. Click **[OK]** to confirm.
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
+3. Select the *Parquet* destination from the drop-down list. 
 
 ### Destination Details
-The window "Destination Details" consists of three subsections:
+The window "Destination Details" consists of subsections:
 - Name - Destination name
 - Type - Destination type
 - Output Directory - **Directory** to save Parquet files

@@ -10,8 +10,16 @@ weight: 2
 lang: en_GB
 ---
 
-Create a new Snowflake destination as described in the chapter [Managing destinations](../../xu-destinations/managing-destinations).
-The following settings can be defined for Snowflake environment.
+### Adding a Snowflake Destination
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
+3. Select the *Snowflake* destination from the drop-down list.
+
+### Destination Details
+The window "Destination Details" consists of:
+- Name - Destination name
+- Type - Destination type
+
 ![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_1.png){:class="img-responsive"}
 
 **Directory**<br>
@@ -35,6 +43,9 @@ Snowflake authentication - password.
 
 **Database**<br>
 The name of the Snowflake database.
+
+**Schema**<br>
+The schema of the Snowflake database.
 
 **Connect**<br>
 Button for checking the connection.

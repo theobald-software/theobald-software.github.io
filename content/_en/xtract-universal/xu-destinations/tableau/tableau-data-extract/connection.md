@@ -11,7 +11,17 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection
 ---
 
-The following settings are available when setting up the Tableau destination:
+### Adding a Tableau Destination
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
+3. Select the *Tableau* destination from the drop-down list.
+
+### Destination Details
+The window "Destination Details" consists of:
+- Name - Destination name
+- Type - Destination type
+- Output directory (see below)
+- Tableau server (see below)
 
 ![tableauDestinationDetails-hyper](/img/content/tableauDestinationDetails-hyper.png){:class="img-responsive"}
 

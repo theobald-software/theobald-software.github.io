@@ -14,16 +14,18 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 
 
 ### Adding an Azure Storage Destination
-1. Navigate to **Server > Manage Destinations** in the main window of the Designer. The window "Manage Destinations" opens.
-![XU_Manage_Destinations](/img/content/sever_manage_dest.png){:class="img-responsive"}
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![XU_azure_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
-3. Enter a name for the new destination.
-4. Select the *Azure Storage (Blob / Data Lake)* destination type from the drop-down list. The destination parameters appear.
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
+3. Select the *Azure Storage (Blob / Data Lake)* destination from the drop-down list.
 
-The window "Destination Details" consists of two tabs:
-- Azure Storage
-- File Format
+### Destination Details
+The window "Destination Details" consists of:
+- Name (states the file name)
+- Type (states the destination type)
+
+(1) Two tabs:
+- Azure Storage (see below)
+- File Format (see below)
 
 ### Azure Storage Parameters
 
@@ -31,7 +33,7 @@ The window "Destination Details" consists of two tabs:
 
 The tab *Azure Storage* consists of the following subsections:
 
-- Connection Type(1) in combination with
+- Connection Type (1) in combination with
 	- Access key
 	- Azure active directory
 - Container (2)
@@ -44,7 +46,7 @@ The subsection *Connection Type* offers two different methods for authenticating
 1. Authentication via Access Key
 2. Authentication via Azure Active Directory  
 
-### Authentication via Access Key
+#### 1. Authentication via Access Key
 This method of authentication authorizes access to the complete storage account. 
 General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). <br>
 Check the **Access key** checkbox to select this connection type.
@@ -67,7 +69,7 @@ If the connection is successful, a "Connection successful" info window opens.
 Click **[OK]** to confirm. <br>
 
 
-### Authentication via Azure Active Directory
+#### 2. Authentication via Azure Active Directory
 Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
 Compared to *Authentication via Access Key*, this option allows a more granular way of 
 authorizing access to a storage account and its individual storage containers. 

@@ -16,19 +16,18 @@ progressstate: 5
 The destination is a CSV (comma-seperated values) flat file. 
 
 ### Adding Flat File CSV Destination
-
-1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
 3. Select the *Flat File - CSV* destination from the drop-down list.
-4. Click **[OK]** to confirm.
 
 ### Destination Details
-The window "Destination Details" consists of five subsections:
+The window "Destination Details" consists of subsections:
 - Name (states the file name)
 - Type (states the destination type)
 - File (see below)
 - CSV Settings (see below)
 - Convert / Encoding (see below)
+- Column encryption (see below)
 
 ![CSV-Flat-Destination-Details](/img/content/xu/CSV-Flat-Destination-Details.png){:class="img-responsive"}
 
@@ -40,3 +39,5 @@ Defines the directory to save the destination flat files.
 
 {% include _content/en/xu-specific/xu-destinations/general/convert-encoding.md %}	
 
+### Column encryption
+{% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}

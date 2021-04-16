@@ -12,14 +12,20 @@ progressstate: 5
 ---
 
 ### Adding a Google Cloud Storage Destination
-1. In the main window of the Designer, navigate to **Server > Manage Destinations**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![xu-google-cloud-req-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-01.png){:class="img-responsive"}
+1. To add a new destination, see [Managing Destinations](../managing-destinations)
+2. Fill in **Name**.
 3. Select the *Google Cloud Storage* destination from the drop-down list.
 
-The window "Destination Details" consists of two tabs:
-- GCS Settings
-- File Format
+
+### Destination Details
+The window "Destination Details" consists of:
+- Name (states the file name)
+- Type (states the destination type)
+
+Two tabs:
+- GCS Settings (see below)
+- File Format (see below)
+![xu-google-cloud-req-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-01.png){:class="img-responsive"}
 
 ### GCS Settings
 The tab *GCS Settings* consists of three subsections:
