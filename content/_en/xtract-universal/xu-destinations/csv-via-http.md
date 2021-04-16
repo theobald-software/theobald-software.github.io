@@ -38,4 +38,4 @@ The window "Destination Details" consists of four subsections:
 
 ****
 #### Related Links
-- [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
+- KNIME Integration via [SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
