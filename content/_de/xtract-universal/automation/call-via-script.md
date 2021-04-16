@@ -174,7 +174,7 @@ Nachdem wir nun alle notwendigen Variablen definiert haben, rufen wir das Komman
 #### Rückgabewert prüfen 
 Nachdem *xu.exe* beendet wurde, wird der Rückgabewert des Programms angezeigt. Ein Rückgabewert *0* zeigt eine fehlerfreie Ausführung an. 
 
-Ein anderer [Rückgabewert](/automation/call-via-commandline#rückgabewert) zeigt, dass ein Fehler während der Ausführung aufgetreten ist. 
+Ein anderer [Rückgabewert](./automation/call-via-commandline#rückgabewert) zeigt, dass ein Fehler während der Ausführung aufgetreten ist. 
 
 Nach der Ausführung prüfen wir nun den Rückgabewert und schreiben eine entsprechende Meldung. 
 

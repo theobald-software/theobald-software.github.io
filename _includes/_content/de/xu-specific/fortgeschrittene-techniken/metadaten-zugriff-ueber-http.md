@@ -50,7 +50,7 @@ Der Aufruf der Metadaten der Extraktion BSEG mit der URL ```http://localhost:806
 
 ### Parameter
 
-Jede Extraktion hat ein Set an *Extraction*, *Source* und *Custom* [Parametern](./extraktionsparameter).
+Jede Extraktion hat ein Set an *Extraction*, *Source* und *Custom Parametern*.
 Diese Parameter sind im Xtract Universal Designer unter "Run Extraction" einsehbar.
 
 

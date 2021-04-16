@@ -86,7 +86,7 @@ Sofern die Zielumgebung http-Datenkomprimierung via gzip unterstützt, sendet Xt
 
 #### Push-Destinationen
 
-Extraktionen mit Push-Destinationen liefern Daten proaktiv in die Zielumgebung. Der Extraktionsprozess wird in Xtract Universal gestartet, z.B. durch einen [Scheduler](./fortgeschrittene-techniken/extraktion_einplanen).<br>
+Extraktionen mit Push-Destinationen liefern Daten proaktiv in die Zielumgebung. Der Extraktionsprozess wird in Xtract Universal gestartet, z.B. durch einen [Scheduler](./automation/call-via-scheduler).<br>
 Eine Extraktion mit Push-Destinationen extrahiert die Daten aus dem SAP-Quellsystem und lädt die in eine Zielumgebung, wo sie weiter verarbeitet werden können. 
 Beispielsweise können die Daten dann transformiert und ggf. in einer für Analytische Queries optimierten Form abgelegt werden.
 
