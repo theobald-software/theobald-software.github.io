@@ -33,10 +33,10 @@ Im Fenster [Destination Settings](../xu-destinationen/microsoft-sql-server/sql-s
 Im folgenden Beispiel wird die SAP-Tabelle *KNA1* um eine Spalte *Custom_Parameter* vom Typ *NATIONAL CHARACTER VARYING(10)* erweitert. 
 Das Befüllen der neuen Spalte wird dynamisch mit der Übergabe des Laufzeitparameters umgesetzt.
 
-Im Abschnitt **Row Processing** werden die Spaltenwerte aus SAP in die zuvor angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. 
+Im Abschnitt *Row Processing* werden die Spaltenwerte aus SAP in die zuvor angelegten Spalten der SQL-Zieltabelle prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Insert* als SQL-Statement belassen. 
 Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *Custom_Parameter* geschrieben.
 
-Im Abschnitt **Finalization** werden die `NULL` Werte mit SQL-Statements des Laufzeitparameters *WNAME* der Extraktion befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben.
+Im Abschnitt *Finalization* werden die `NULL` Werte mit SQL-Statements des Laufzeitparameters *WNAME* der Extraktion befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben.
 
 {: .box-note }
 **Hinweis:** Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
@@ -61,7 +61,7 @@ WHERE [Custom_Parameter] IS NULL;
 
 ### Custom Parameter WNAME setzen
 
-1. Aktivieren Sie die Checkbox neben dem Parameternamen, um den Parameter **WNAME** zu überschreiben.
+1. Aktivieren Sie die Checkbox neben dem Parameternamen, um den Parameter *WNAME* zu überschreiben.
 ![Custom parameters](/img/content/xu/automation/runtime_parameter_wname.png){:class="img-responsive"}
 2. Tragen Sie den neuen Wert *US* ein und bestätigen Sie ihn über die Eingabetaste.
 3. Klicken Sie auf **[Run]** (8), um die Extraktion auszuführen.
