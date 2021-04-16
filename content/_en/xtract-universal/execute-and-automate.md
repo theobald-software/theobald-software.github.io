@@ -16,11 +16,11 @@ This section is about running extractions [manually in Xtract Universal Designer
 
 Extractions can be called by the following options:
 
-- Via [Commandline](./automation/call-via-commandline)
-- Via [Webservice](./automation/call-via-webservice)
-- Via [Script](./automation/call-via-script)
-- Via [Scheduler](./automation/call-via-scheduler)
-- Via [ETL-Tool](./automation/call-via-etl)
+- [Commandline](./automation/call-via-commandline)
+- [Webservice](./automation/call-via-webservice)
+- [Script](./automation/call-via-script)
+- [Scheduler](./automation/call-via-scheduler)
+- [ETL-Tool](./automation/call-via-etl)
 
 {: .box-note }
 **Note:** Xtract Universal does not have its own scheduler. Most third party schedulers can be used. 

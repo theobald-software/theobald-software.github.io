@@ -9,15 +9,15 @@ permalink: /:collection/:path
 weight: 7
 lang: de_DE
 ---
-In diesem Kapitel zeigen wir, wie man eine Extraktion in einem [Windows-Skript (.bat)](../automation/call-via-script#aufruf-via-windows-skript-bat) oder [PowerShell-Skript](../automation/call-via-script#aufruf-via-powershell-skript) aufrufen kann.
+In diesem Abschnitt erfahren Sie, wie man eine Extraktion in einem [Windows-Skript (.bat)](../automation/call-via-script#aufruf-via-windows-skript-bat) oder [PowerShell-Skript](../automation/call-via-script#aufruf-via-powershell-skript) aufrufen kann.
 
 ### Aufruf via Windows-Skript (.bat)
 
-In diesem Beispiel zeigen wir, wie man eine Extraktion mit dem Windows-Skript ausführen kann. Wir erstellen eine Batch-Datei (.bat), in der wir dann das Kommandozeilenprogramm *xu.exe* aufrufen.
+Das folgende Beispiel zeigt, wie man eine Extraktion mit dem Windows-Skript ausführen kann. Sie erstellen eine Batch-Datei (.bat), in der Sie dann das Kommandozeilenprogramm *xu.exe* aufrufen.
 
 #### Variablen definieren
 
-Die nachfolgenden Variablen werden definiert:
+Definieren Sie die nachfolgenden Variablen:
 - Standardausgabe (*XUOutputfile*)
 - Standardfehlerausgabe (*XULogfile*)
 
@@ -33,7 +33,7 @@ set XUOutputfile="C:\Data\xubatch\output.txt"
 set XULogfile="C:\Data\xubatch\log.txt"
 ```
 
-Die nachfolgenden Variablen werden definiert:
+Definieren Sie die nachfolgenden Variablen:
 - Pfad zum Kommandozeilenprogramm (*XUCmd*)
 - XU Server Name (*XUServer*)
 - XU Server Port (*XUPort*) 
@@ -50,7 +50,7 @@ set XUExtraction=customers
 ```
 
 #### Parameter dynamisch setzen
-Die nachfolgende Variable wird definiert:
+Definieren Sie die nachfolgenden Variablen:
 - dynamischer Parameter (*v_country*)
 
 ```bat
@@ -62,7 +62,7 @@ set v_country=US
 ```
 
 #### Extraktion ausführen 
-Nachdem wir nun alle notwenigen Variablen definiert haben, rufen wir das Kommandozeilenprogramm mit den entsprechenden Parametern auf. 
+Nachdem alle notwenigen Variablen definiert sind, rufen Sie das Kommandozeilenprogramm mit den entsprechenden Parametern auf. 
 
 ```bat
 :: run the command tool with the right parameters
@@ -70,7 +70,7 @@ Nachdem wir nun alle notwenigen Variablen definiert haben, rufen wir das Kommand
 ```
 
 #### Rückgabewert prüfen 
-Nach der Ausführung prüfen wir nun den Rückgabewert und schreiben eine entsprechende Meldung. Ein Rückgabewert *0* zeigt eine fehlerfreie Ausführung an. 
+Nach der Ausführung prüfen Sie den Rückgabewert und schreiben eine entsprechende Meldung. Ein Rückgabewert *0* zeigt eine fehlerfreie Ausführung an. 
 
 Ein anderer [Rückgabewert](./call-via-commandline#rückgabewert) zeigt, dass ein Fehler während der Ausführung aufgetreten ist. 
 
@@ -88,7 +88,7 @@ IF %ERRORLEVEL% EQU 0 (
 ```
 
 #### Liste von Extraktionen ausführen
-Wir können auch eine Liste von Extraktionen anlegen, welche der Reihe nach ausgeführt werden. In dem Beispiel haben wir zwei Extraktionen mit den Namen *customers* und *materials*.
+Das folgende Beispiel zeigt, wie man eine Liste von Extraktionen anlegt, die der Reihe nach ausgeführt werden. In diesem Beispiel gibt zwei Extraktionen mit den Namen *customers* und *materials*.
 
 ```bat
 @echo off 
@@ -107,14 +107,14 @@ for %%e in (%extraction_list%) do (
 {: .box-note }
 **Hinweis:** Beachten Sie, dass Sie in dem unteren Beispiel die Ausgabe mit *>>* in die bestehende Datei anhängen.
 
-#### Log der Extraktionim in die Windows-Logs schreiben
+#### Log der Extraktion in die Windows-Logs schreiben
 Die Extraktionen von Xtract Universal können auch in die Windows-Logs aufgenommen und im Event-Viewer angezeigt werden.
 
 ### Aufruf via PowerShell-Skript
-In diesem Kapitel zeigen wir, wie man eine Extraktion mit PowerShell ausführen kann. Im Skript rufen wir dann das Kommandozeilenprogramm *xu.exe* auf.
+Sie können eine Extraktion mit PowerShell ausführen. Dafür rufen Sie im Skript das Kommandozeilenprogramm *xu.exe* auf.
 
 #### Variablen definieren
-Die nachfolgenden Variablen werden definiert:
+Definieren Sie die nachfolgenden Variablen:
 - Standardausgabe (*XUOutputfile*)
 - Standardfehlerausgabe (*XULogfile*)
 
@@ -128,7 +128,7 @@ $XUOutputfile = "C:\Data\powershell\output.txt"
 $XULogfile = "C:\Data\powershell\log.txt"
 ```
 
-Die nachfolgenden Variablen werden definiert:
+Definieren Sie die nachfolgenden Variablen:
 - Pfad zum Kommandozeilenprogramm (*XUCmd*)
 - XU Server Name (*XUServer*)
 - XU Server Port (*XUPort*) 
@@ -143,7 +143,7 @@ $XUPort = "8065"
 $XUExtraction = "SAPSalesCube" 
 ```
 #### Parameter dynamisch setzen
-Die nachfolgende Variable wird definiert, die den Wert des aktuellen Monats im Format "yyyyMM" enthalten soll, z.B. *201712*.
+Definieren Sie die nachfolgende Variable, die den Wert des aktuellen Monats im Format "yyyyMM" enthalten soll, z.B. *201712*.
 - dynamischer Parameter (*myCalendarMonth*) 
 
 ```shell
@@ -164,7 +164,7 @@ $myCalendarMonth = "$myyear$mymonth"
 ```
 
 #### Extraktion ausführen 
-Nachdem wir nun alle notwendigen Variablen definiert haben, rufen wir das Kommandozeilenprogramm mit den entsprechenden Parametern auf. 
+Nachdem alle notwendigen Variablen definiert sind, rufen Sie das Kommandozeilenprogramm mit den entsprechenden Parametern auf. 
 
 ```shell
 :: run the command tool with the right parameters
@@ -174,9 +174,9 @@ Nachdem wir nun alle notwendigen Variablen definiert haben, rufen wir das Komman
 #### Rückgabewert prüfen 
 Nachdem *xu.exe* beendet wurde, wird der Rückgabewert des Programms angezeigt. Ein Rückgabewert *0* zeigt eine fehlerfreie Ausführung an. 
 
-Ein anderer [Rückgabewert](./automation/call-via-commandline#rückgabewert) zeigt, dass ein Fehler während der Ausführung aufgetreten ist. 
+Ein anderer [Rückgabewert](./call-via-commandline#rückgabewert) zeigt, dass während der Ausführung ein Fehler aufgetreten ist. 
 
-Nach der Ausführung prüfen wir nun den Rückgabewert und schreiben eine entsprechende Meldung. 
+Nach der Ausführung prüfen Sie den Rückgabewert und schreiben eine entsprechende Meldung. 
 
 ```shell
 # check the last exit code
