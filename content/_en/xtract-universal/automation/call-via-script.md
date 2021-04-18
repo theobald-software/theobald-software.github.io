@@ -52,7 +52,7 @@ set XUExtraction=customers
 ```
 
 #### Set Parameters dynamically
-Define the following variables:
+Define the following variable:
 - dynamic parameter (*v_country*)
 
 ```bat
@@ -74,7 +74,7 @@ After defining all variables, call the command line tool with the corresponding 
 ####  Check Return Code
 After running the extraction, check the return code and write a corresponding message. The return code *0* indicates a successful execution.
 
-Other [Return Codes](./automation/call-via-commandline#return-codes) indicate errors during execution.
+Other [Return Codes](./call-via-commandline#return-codes) indicate errors during execution.
 
 ```bat
 :: check the last exit code

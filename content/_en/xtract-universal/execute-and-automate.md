@@ -12,7 +12,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-This section is about running extractions [manually in Xtract Universal Designer](./getting-started/run-an-extraction) and automatically.
+This section contains details about running extractions automatically and [manually in Xtract Universal Designer](./getting-started/run-an-extraction).
 
 Extractions can be called by the following options:
 
@@ -23,12 +23,13 @@ Extractions can be called by the following options:
 - [ETL-Tool](./automation/call-via-etl)
 
 {: .box-note }
-**Note:** Xtract Universal does not have its own scheduler. Most third party schedulers can be used. 
+**Note:** Xtract Universal does not have its own scheduler. You can use third party schedulers. 
 
 
 {: .box-note }
-**Note:** Scheduling [pull destinations](./destinations#pull-and-push-destinations) is done via the tool that communicates with the webservice interface (HTTP or HTTPS streams) in CSV or json format.
+**Note:** Use the tool that communicates with the webservice interface (HTTP or HTTPS streams) in CSV or JSON format to schedule [pull destinations](./destinations#pull-and-push-destinations).
 
 When calling extractions, [extraction parameters](./automation/extraction-parameters) can be passed dynamically.
+
 If the destination is an SQL database, the parameters are also available in [SQL-scripts](./automation/xu-parameter-sql). 
 

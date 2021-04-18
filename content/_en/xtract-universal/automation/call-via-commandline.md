@@ -52,11 +52,11 @@ When an operation is completed successfully, the program returns *0*. In case of
 |1001|	An undefined error occurred|
 |1002|	File could not be found|
 |1013|	Invalid input data|
-|1014|	Number of arguments is invalid|
+|1014|	Invalid number of arguments|
 |1015|	Name of the parameter is unknown|
 |1016|	Invalid argument|
 |1040|	Timeout error: Waiting period for HTTP-answer of the command line tool is exceeded |
-|1053|	The URL of the extraction is wrong |
+|1053|	The URL of the extraction is incorrect |
 |1087|	Invalid parameter |
 
 ### Standard Output and Standard Error Output
@@ -66,7 +66,7 @@ The output depends on the destination type of the extraction. If the extraction 
 When using [Pull Destinations](../destinations#pull-and-push-destinations) like HTTP-CSV, HTTP-JSON, etc., extracted data is written into the standard output (sdtout).
 
 #### Standard Output of Push Destinations
-When using [Push Destinations](../destinations#pull-and-push-destinations) an [Extraktion Log](../logging/log-zugriff-ueber-designer#extraktions-logs) in CSV format is written into the standard output (stdout).
+When using [Push Destinations](../destinations#pull-and-push-destinations) an [Extraktion Log](../logging/logging-access-via-designer#extraction-logs) in CSV format is written into the standard output (stdout).
 
 #### Standard Error Output
 Logs and error notifications are written into the standard error output (stderr).
@@ -74,10 +74,10 @@ Logs and error notifications are written into the standard error output (stderr)
 ### Options for Calling Extractions
 
 #### Synchronous vs. Asynchronous Call
-Calling an extraction synchronous blocks further processes, meaning that the application waits until the extraction is completed and a return code is received.
+Calling an synchronous extraction blocks further processes, meaning that the application waits until the extraction is completed and a return code is received.
 
-Calling an extraction asynchronous does not block further processes, meaning that an extraction returns an explicit timestamp so that the application does not have to wait for the extraction to complete.
-The timestamp can be used to check the status of an extraction.
+Calling an asynchronous extraction does not block further processes, meaning that an extraction returns an explicit timestamp so that the application does not have to wait for the extraction to complete.
+The timestamp can be used to check the status of the extraction.
 
 |Description	|Syntax|
 |:---|:---|
@@ -86,7 +86,7 @@ The timestamp can be used to check the status of an extraction.
 |Return the timestamp of an extraction |`xu.exe -n <name> -o wait=false 1>>false_output1.txt 2>>false_output2.txt`|
 
 {: .box-tip }
-**Tip:** The XU server offers further functionalities e.g., checking the status of an (asynchronous) extraction, receiving logs or metadara of an extraction, etc. These functionalities are only available vie [Webservices](./call-via-webservice#weitere-webservices), not via the command line tool.
+**Tip:** The XU server offers further functionalities e.g., checking the status of an (asynchronous) extraction, receiving logs or metadara of an extraction, etc. These functionalities are only available via [Webservices](./call-via-webservice#weitere-webservices).
 
 #### Related Links
 - [Call via Script](./call-via-script)

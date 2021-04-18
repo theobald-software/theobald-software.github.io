@@ -80,7 +80,7 @@ Calling the metadata of extraction *BSEG* using the URL ```http://localhost:8065
 **Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. If inactive, the data type is *StringLengthMax* with a length of 8.
 
 ### Parameters
-Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](./extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
+Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../automation/extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
 
 The URL pattern is: 
 ```http://[host]:[port]/config/extractions/[extraction_name]/parameters```

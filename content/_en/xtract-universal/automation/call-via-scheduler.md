@@ -11,7 +11,7 @@ lang: en_EN
 ---
 
 This section shows how to use the console program *xu.exe* to schedule extractions with third party scheduling tools.
-Windows Task Scheduler and the SQl Server Agent are used as examples for setting up extraction schedules.
+Windows Task Scheduler and the SQL Server Agent are used as examples for setting up extraction schedules.
 
 ### Call via Windows Task Scheduler
 
@@ -24,14 +24,14 @@ Windows Task Scheduler and the SQl Server Agent are used as examples for setting
 4. In the tab *Triggers* click **[New...]** to add a time option.
 5. Set a start date and time and confirm the entry with **[OK]** (3).
 ![Create Task Trigger](/img/content/xu/automation/create_task_trigger.png){:class="img-responsive"}
-6. State the start program *Program / script* in the tab *Actions*. Add the parameters of the extraction in *Add arguments (optional)* e.g., `"C:\Program Files\XtractUniversal\xu.exe" -s todd.theobald.local -p 8065 -n SAPPlants` (4).
+6. State the start program in *Program / script* in the tab *Actions*. Add the parameters of the extraction in *Add arguments (optional)* e.g., `"C:\Program Files\XtractUniversal\xu.exe" -s todd.theobald.local -p 8065 -n SAPPlants` (4).
 ![Create Task Actions](/img/content/xu/automation/create_task_actions.png){:class="img-responsive"}
 7. Click **[OK]** (5) to confirm the input.
 8. Check the summary and finish the setup.
 ![xu-wts-command](/img/content/xu/automation/task_run.jpg){:class="img-responsive"}
 
 {: .box-note }
-**Note:** The extraction is now scheduled and can be run by right-clicking the task and selecting *Run*. 
+**Note:** The extraction is now scheduled and can be run by right-clicking the task and selecting the *Run* option. 
 
 {: .box-tip }
 **Tip:** Multiple extractions can be assigned to a single task. Edit the task and switch to the *Actions* tab. Create a new action as described above.
@@ -40,7 +40,7 @@ Windows Task Scheduler and the SQl Server Agent are used as examples for setting
 ### Call via SQL Server Agent
 
 {: .box-note }
-**Note:** You must have all necessary authorization for creating and executing jobs with the SAL Server Agent.   
+**Note:** You must have all necessary authorization for creating and executing jobs with the SQL Server Agent.   
 
 1. Open the SQL-Server-Management-Studio (SSMS) to connect to an SQL-Server.
 2. Create a new job via **SQL Server Agent > New > Job...**. 

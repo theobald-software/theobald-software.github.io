@@ -13,15 +13,15 @@ lang: en_EN
 For testing purposes extractions can be called via web service.
 Calling extractions is usually done via script, scheduler or BI-tool. 
 
-To call an extraction via web services, use a URL in the following format: `<Protokoll>://<HOST oder IP-Adresse>:<Port>/?name=<Name der Extraktion>{&<parameter_i>=<wert_i>}`
+To call an extraction via web services, use the following URL-format: `<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`
 
  Format | Description
 :----------- | :------------
-`<Protokoll>` | HTTP or HTTPS - Activates a safe data transfer.
+`<Protocol>` | HTTP or HTTPS - Activates a safe data transfer.
 `<HOST or IP address>` | Host name or IP address of the XU server.
 `<Port>` | The port on which the Xtract Universal service runs. The default is 8065. You can find the current value in the "Run" window of the [Designer](../getting-started/run-an-extraction#run-extraction).
 `<Name of the Extraction>` | Name of the extraction.
-`{&<parameter_i>=<wert_i>}` | Optional parameters to be set when running the extraction. Multiple parameters can be set.
+`{&<parameter_i>=<value_i>}` | Optional parameter to be set when running the extraction. Multiple parameters can be set.
 
 #### Examples
 These are examples of URLs that call extractions:
@@ -41,7 +41,7 @@ The response of a web service call contains the following information:
 
 Response | Description
 :----------:| :------------
- (1) | The HTTP status code *200* indicates a successful extraction call. It does not indicate a successful execution of the extraction. <br> The HTTP status code *404* indicates that the called extraction does not exist. Detailed information can be accessed in the log of the web service.
+ (1) | The HTTP status code *200* indicates a successful extraction call. It does not indicate a successful execution of the extraction. <br> The HTTP status code *404* indicates that the called extraction does not exist. Detailed information can be found in the log of the web service.
  (2) | Shows the timestamp of the extraction in the following HTTP header e.g., X-XU-Timestamp: *2021-04-09_19:03:09.971*
  (3) | The Response in the HTTP body depends on the destination type of the extraction. 
 
@@ -54,7 +54,7 @@ Status code | Destination type | Description
 
 ### Options for Calling Extractions
 
-#### Suppress output of Extraction Logs
+#### Suppress Output of Extraction Logs
 The log output of a synchronous called extraction with a push destination can be suppressed using the parameter `&quiet-push=true`.<br>
 Example: `http://todd.theobald.local:8065/?name=Plants&quiet-push=true`
 
@@ -64,7 +64,7 @@ That parameters is set to `false` by default, meaning the extraction log of a pu
 **Note:** That parameter has no effect on pull destinations and asynchronous extractions.
 
 #### Asynchronous Call
-Extraktions are called synchronous by default. Using the parameter `&wait=false` the calls an asynchronous extraction.<br> 
+Extraktions are called synchronous by default. The parameter `&wait=false` calls an asynchronous extraction.<br> 
 Example: `http://todd.theobald.local:8065/?name=Plants&wait=false`
 
 In this case the timestamp (4) of the extraction is returned in the HTTP body.
@@ -73,5 +73,5 @@ In this case the timestamp (4) of the extraction is returned in the HTTP body.
 ****
 #### Related Links
 - [Metadata access via HTTP-JSON](../advanced-techniques/metadata-access-via-http-json)
-- [Log-Zugriff über Web-Service](../logging/logging-access-via-http)
+- [Log Access via Web Service](../logging/logging-access-via-http)
 

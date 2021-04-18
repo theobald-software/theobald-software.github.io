@@ -10,13 +10,13 @@ weight: 1
 lang: en_EN
 ---
 
-Xtract Universal is structured like a [Client-Server-Architecture](../introduction). 
+Xtract Universal is structured in a [Client-Server-Architecture](../introduction). 
 
 The execution of an extraction takes place on the [XU server](../server#run-extraction-on-the-server).
 Xtract Universal offers two ways to run an extractions:
 
 - Call via the provided [command line tool](./call-via-commandline), which is available for Windows (xu.exe) and Linux (xu.elf). 
-- Call via [webservice](./call-via-webservice) 
+- Call via [webservice](./call-via-webservice). 
 
 ### Run parallel Extractions
 

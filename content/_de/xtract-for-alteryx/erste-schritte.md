@@ -32,7 +32,7 @@ Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung f
 **Tipp:** Wildcard-Zeichen wie * werden unterstützt. 
 
 1. Innerhalb des Hauptfensters klicken Sie auf **[Add]**, um eine Tabelle hinzuzufügen.<br>
-![Add-New-Table](/img/content/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
+![Add-New-Table](/img/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
 Das Fenster "Table Lookup" wird geöffnet. <br/>
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
 2. Geben Sie den Namen der zu extrahierenden Tablelle ins Feld **Table name** (1) ein.<br>

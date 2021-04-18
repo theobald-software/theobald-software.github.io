@@ -20,7 +20,7 @@ The following table extraction has a custom parameter *WNAME* in the *WHERE-Clau
 
 ### Custom SQL Statement
 
-In the window [Destination Settings](../xu-destinations/microsoft-sql-server/sql-server-settings#opening-the-destination-settings) you can use a custom SQL statement for the three different database process steps and / or edit the SQL statement according to your requirements. 
+In the window [Destination Settings](../xu-destinations/microsoft-sql-server/sql-server-settings#opening-the-destination-settings) you can use a custom SQL statement for the three database process steps and / or edit the SQL statement according to your requirements. 
 ![Destination-Settings](/img/content/xu/automation/destination_settings_runtime_parameter.png){:class="img-responsive"}
 
 1. In the main window select an extraction with a custom parameter in the WHERE-Clause (1).
@@ -31,17 +31,17 @@ In the window [Destination Settings](../xu-destinations/microsoft-sql-server/sql
 4. Click **[Edit SQL]**. The window "Edit SQL" opens.
 
 ### Custom SQL Example for Custom Parameters
-In the following example the SAP table *KNA1* will be expanded. The column *Custom_Parameter* of the type *NATIONAL CHARACTER VARYING(10)* will be added.
-Filling the column will done dynamically by passing runtime parameters.
+In the following example the SAP table *KNA1* is expanded by adding the column *Custom_Parameter* of the type *NATIONAL CHARACTER VARYING(10)*.
+The column is filled dynamically by runtime parameters.
 
 In the section **Row Processing** the column values from SAP are written into the previously created SQL target table.
-This SQL-statement is therefore used as the default *Insert*.
+This SQL-statement is therefore used as the default *Insert* statement.
 When rows are processed only `NULL` values are written into the *Custom_Parameter* column.
 
 In the section **Finalization** these `NULL` values are replaced using the SQL statements of the runtime parameter *WNAME* and the T-SQL command `UPDATE`.
 
 {: .box-note }
-**Note:** What data types can be used in SQL statements depends on your SQL database version.
+**Note:** The data types that can be used in SQL statements depend on your SQL database version.
 
 1. In the window "Destination Settings" select the option *Custom SQL* in the section **Preparation**. Click **Edit SQL**.
 ![Custom-SQL_Prep](/img/content/xu/automation/custom_sql_preparation_statement_runtime_parameter.png){:class="img-responsive"}
