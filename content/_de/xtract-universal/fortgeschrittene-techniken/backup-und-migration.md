@@ -44,7 +44,8 @@ Sowohl `config`- als auch `logs`-Verzeichnisse können sensible Informationen en
 
 ### Wiederherstellen des Backups
 
-{: .box-warning} **Warnung!Datenverlust!** <br>
+{: .box-warning } 
+**Warnung!Datenverlust!** <br>
 Das Wiederherstellen des Backups des Konfigurationsverzeichnisses (`config`) ersetzt die bestehende Konfiguration. Stellen Sie sicher, dass Sie die vorhandenen Dateien entfernen, bevor Sie die Backups wiederherstellen.
 
 1. Um die Konfigurationsdateien wiederherzustellen, entfernen Sie das Konfigurationsverzeichnis (`config`) aus dem Programmverzeichnis (`C:\Program Files\XtractUniversal` standardmäßig) der Maschine, auf der der Xtract Universal Service läuft.
