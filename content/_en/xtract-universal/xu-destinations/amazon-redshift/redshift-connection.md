@@ -10,19 +10,12 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift-connection
 ---
-### Adding Redshift Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *Redshift* destination from the drop-down list
 
-![XU_redshift_destination](/img/content/XU_redshift_destination.png){:class="img-responsive"}
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
 ### Destination Details
-- Name (states the file name)
-- Type (states the destination type)
 
-#### Connection ####
-
+![XU_redshift_destination](/img/content/XU_redshift_destination.png){:class="img-responsive"}
 
 **Endpoint**<br>
 Defines the server address of the Redshift System.

@@ -12,11 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=connection3
 progressstate: 5
 ---
 
-### Adding a Qlik Destination
-To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *Qlik* destination from the drop-down list.
-4. Click **[OK]** to confirm.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
 To use the Qlik destination, no further settings have to be made.

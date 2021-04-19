@@ -48,4 +48,3 @@ Name der Datenbank
 **Test Connection**<br>
 Klicken Sie auf den Knopf, um die Datenbankverbindung zu testen.
 
-![DESTINATION DETAILS](/img/content/xu/postgres_test_connection.png){:class="img-responsive"}

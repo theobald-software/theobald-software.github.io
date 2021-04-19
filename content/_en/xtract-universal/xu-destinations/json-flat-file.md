@@ -13,17 +13,14 @@ progressstate: 5
 ---
 The JSON flat file destination creates a generic JSON file.
 
-### Adding Flat File JSON Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *Flat File - JSON* destination from the drop-down list.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
-The window "Destination Details" consists of two subsections:
-- Name - Extration name
-- Type - Extraction type
-- File - **Directory** to save JSON flat files
+
 ![JSON-Flat-Destination-Details](/img/content/xu/json/json-flat-Destination-Details.png){:class="img-responsive"}
+
+**File output path**<br>
+Enter the directory to save the destination flat files in.
 
 {: .box-note }
 **Note:** Filling out the field **Directory** creates a new folder, if it doesn't exist. 

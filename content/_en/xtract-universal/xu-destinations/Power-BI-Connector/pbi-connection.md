@@ -10,12 +10,8 @@ weight: 1
 lang: en_GB
 old_url:
 ---
-### Adding Power BI Connector Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *Power BI Connector* destination from the drop-down list.
-4. Click **[OK]** to confirm.
 
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
 ### Destination Details
 To use the Power BI Connector destination, no further settings have to be made.

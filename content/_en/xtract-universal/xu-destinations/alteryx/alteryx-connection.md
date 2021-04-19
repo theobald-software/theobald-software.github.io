@@ -10,10 +10,7 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=alteryx-connection-en
 ---
-### Adding Alteryx Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *Alteryx* destination from the drop-down list.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
 ### Destination Details
 To use the Alteryx destination, no further settings have to be made.

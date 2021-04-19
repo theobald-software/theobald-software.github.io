@@ -24,8 +24,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift-requirements
 Prior to Xtract Universal version 2.102.0 you have to install the Mono.Security.dll assembly instead of above mentioned ODBC driver.
 You can download the complete Mono package from [the official project site](http://download.mono-project.com/archive/2.0/download/) or from any source of your choice. Please make sure to install the Mono.Security assembly, compiled on .NET 2.0. Other versions could cause problems with the assemblies used for accessing the Redshift Database.
 
-### Installing
-There are two ways for installing the assembly: 
+### Installation
+There are two ways to install the assembly: 
 
 1. Register the Mono.Security assembly in your global assembly cache (gac):
 - Open the command-line and browse to your Xtract Universal installation directory<br> 

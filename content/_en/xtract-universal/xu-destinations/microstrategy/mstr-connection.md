@@ -10,10 +10,8 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=mstr-connection
 ---
-### Adding a Microstrategy Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *MicroStrategy* destination from the drop-down list.
+
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
 ![mstr-destination-details](/img/content/mstr-destination-details.png){:class="img-responsive"} 

@@ -10,10 +10,8 @@ weight: 2
 lang: en_GB
 
 ---
-### Adding PostgreSQL Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-4. Select the *PostgreSQL* destination from the drop-down list.
+
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
 
@@ -34,8 +32,11 @@ The following TLS modes can be selected for the connection:
 Please make sure that the Certification authority (CA) that signed the certificate or the certificate itself is trusted by the client.
 For further information please see the following link: - [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
-**Private endpoint?**<br>
-Alternative hostname under which you can establish a connection. Example use case is hosting a PostgreSQL on an Azure cloud.
+**Private endpoint**<br>
+This field is optional. You can enter an alternative hostname under which a connection is established. <br>
+Example: The PostgreSQL database is hosted on a cloud and access to the database's cloud domain name is restricted by company policy. 
+In this case the database can be accessed through a private endpoint. Enter the private endpoint in this field. 
+The PostgreSQL cloud domain name must be entered in the field Server Name for certificate validation.
 
 **Port**<br>
 Port 5432 is selected by default.
@@ -44,16 +45,15 @@ Port 5432 is selected by default.
 Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
 
 **Username**<br>
-Name of the database user.
+Enter the name of the database user.
 
 **Password**<br>
-Password of the database user
+Enter the password of the database user.
 
 **Database**<br>
-Name of the database.
+Enter the name of the database.
 
 **Test Connection**<br>
-Click on the button to test the database connection.
+Test the database connection.
 
-![DESTINATION DETAILS](/img/content/xu/postgres_test_connection.png){:class="img-responsive"}
 

@@ -10,32 +10,30 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=db2-connection
 ---
-### Adding DB2 Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *DB2* destination from the drop-down list.
+
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
 
 ![DB2-Connection](/img/content/DB2-Connection.png){:class="img-responsive"}
 
 **Type**<br>
-Defines the Destination type.
+Enter the Destination type.
 
 **Provider**<br>
-Defines the .Net provider for DB2. To install the provider refer to requirements.
+Enter the .Net provider for DB2. To install the provider refer to requirements.
 
 **Host Name / Port**<br>
-Defines the name or IP of the DB2 server and the port number. 
+Enter the name or IP of the DB2 server and the port number. 
 
 **Username / Password**<br>
 IBM DB2 authentication user name and password.
 
 **Database name**<br>
-Defines the name of the IBM database.
+Enter the name of the IBM database.
 
 **Default schema**<br>
-Defines the schema of the DB2 database.
+Enter the schema of the DB2 database.
 
 **Test Connection**<br>
 Check the database connection.

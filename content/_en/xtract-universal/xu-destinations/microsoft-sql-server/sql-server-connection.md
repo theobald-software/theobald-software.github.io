@@ -10,10 +10,8 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-connection
 ---
-### Adding SQL Server Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**. 
-3. Select the *SQLServer* destination from the drop-down list.
+
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
 
@@ -31,7 +29,7 @@ Specifies the host address of the SQL Server. Please note the following syntax:
 It is only necessary to specify the port if it has been edited outside the SQL standard.
 
 **Require TLS encryption**<br>
-Clientside enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following paramenters to the connection string:<br>
+Client-side enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following paramenters to the connection string:<br>
 * Encrypt = On
 * TrustServerCertificate = Off
 <br>
@@ -54,11 +52,6 @@ SQL Server authentication - password
 
 **Database Name**<br>
 Defines the name of the SQL Server database.
-             
+
 **Test Connection**<br>
 Checks the database connection. 
-
-
-**Database Schema**<br> 
-By default the user's default schema dbo will be used. 
-To use another schema, you should set it as the [default schema](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-user-transact-sql?view=sql-server-2017) for your user on the SQL Server database. 

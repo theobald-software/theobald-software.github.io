@@ -12,33 +12,11 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 ---
 
-
-### Adding an Azure Storage Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *Azure Storage (Blob / Data Lake)* destination from the drop-down list.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
 ### Destination Details
-The window "Destination Details" consists of:
-- Name (states the file name)
-- Type (states the destination type)
-
-(1) Two tabs:
-- Azure Storage (see below)
-- File Format (see below)
-
-### Azure Storage Parameters
 
 ![xu-azure-blob-con-01](/img/content/xu/xu-azure-blob-con-01.png){:class="img-responsive"}
-
-The tab *Azure Storage* consists of the following subsections:
-
-- Connection Type (1) in combination with
-	- Access key
-	- Azure active directory
-- Container (2)
-- Misc (3)
-- Column Encryption (4)
 
 ### Connection Type (1)
 
@@ -164,22 +142,26 @@ This allows to dynamically set a folder path when executing an extraction. <br>
 
 {% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
 
-### File Format 
-Select the required file format from the drop-down menu. 
-The formats *Parquet* and *CSV* are available.
-![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
-The settings for *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).
+### File Format
 
-If you select *Parquet* as the file format, the **Compatibility mode** offers the options *Pure* and *Spark*.
-![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-05.png){:class="img-responsive"}
+**File type**<br>
+Select the required file format. You can choose between *Parquet* and *CSV*.
+![AWS S3](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 
+#### CVS Settings
+
+The settings for file type *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).
+
+#### Parquet Settings
+
+**Compatibility mode**<br>
+You can choose between *Pure* and *Spark* for the compativavility mode.
+Spark does not support the data types used in pure mode, so other data types need to be used.
 
 | SAP | Pure | Spark |
 |------|-------------|-------|
 | INT1 | UINT_8 | INT16 |
 | TIMS | TIME_MILLIS | UTF8 |
-
-Spark does not support the datatypes used in pure mode, so other datatypes need to be used.
 
 ### Connection Retry and Rollback
 
@@ -189,6 +171,7 @@ They are activated by default.
 Connection retry is a functionality that prevents extractions from failing if the connection to Azure is interrupted.
 The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
 The retry logic is based on WebExceptionStatus. 
+
 If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Azure.
 The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
 If a connection is not established during this timespan, the extraction fails.

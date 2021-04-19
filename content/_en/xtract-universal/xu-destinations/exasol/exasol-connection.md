@@ -10,23 +10,21 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol-connection
 ---
-### Adding Exasol Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *EXASOL* destination from the drop-down list.
+
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
 ### Destination Details
 
 ![Exa-Connection](/img/content/Exa-Connection.png){:class="img-responsive"}
 
 **Connection string**<br>
-Defines the name or IP of the DB2 server and the port number. 
+Enter the name or IP of the DB2 server and the port number. 
 
 **User Id / Password**<br>
-Defines the user Id and password of the database user.
+Enter the user ID and password of the database user.
 
 **Schema**<br>
-Defines the schema of the database.
-            
+Enter the schema of the database.
+  
 **Test Connection**<br>
 Checks the database connection.

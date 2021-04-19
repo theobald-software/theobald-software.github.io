@@ -10,50 +10,47 @@ weight: 2
 lang: en_GB
 ---
 
-### Adding a Snowflake Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in **Name**.
-3. Select the *Snowflake* destination from the drop-down list.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
-The window "Destination Details" consists of:
-- Name - Destination name
-- Type - Destination type
 
 ![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_1.png){:class="img-responsive"}
 
-**Directory**<br>
-Specifies an existing local directory in which the extracted files are stored.
+#### Connection
+
+**Output Directory**<br>
+Enter an existing local directory in which the extracted files are stored.
 
 **Region**<br>
-Specifies the region of the Snowflake environment.<br>
-In the given example, the region "AWS - EU (Frankfurt)" is selected. 
+Select the region of the Snowflake environment from the drop-down-menu.<br>
+In the given example, the region *AWS - EU (Frankfurt)* is selected. 
 The selected region must match the information in the assigned account. 
 
 **Account**<br>
-Specifies the Snowflake authentication account.<br>
-In the given example it is: "dummy_account", see also the URL: <br>
-https://dummy_account.eu-central-1.snowflakecomputing.com/console#/
+Enter the Snowflake authentication account. In the given example it is: "dummy_account", see also the URL: <br>
+`https://dummy_account.eu-central-1.snowflakecomputing.com/console#/`
 
 **User Name**<br>
-Snowflake authentication - user name. 
+Enter the Snowflake authentication user name. 
 
 **Password**<br>
-Snowflake authentication - password.
+Enter the Snowflake authentication password.
 
 **Database**<br>
-The name of the Snowflake database.
+Enter the name of the Snowflake database.
 
 **Schema**<br>
-The schema of the Snowflake database.
+Enter the schema of the Snowflake database.
 
 **Connect**<br>
-Button for checking the connection.
-If the connection is successful, further settings can be changed. 
+Check the connection to the database.
+If the connection is successful, further settings can be edited. 
+
+#### Stage
 
 **Stage name**<br>
-Snowflake Stage name. 
+Enter the name of a Snowflake Stage. 
 Please be aware that only "internal" stages are supported. <!--please check if "supported" a good term in this case-->
 
 **Warehouse**<br>
-Snowflake Data Warehouse name.
+Enter the name of a Snowflake Data Warehouse.
