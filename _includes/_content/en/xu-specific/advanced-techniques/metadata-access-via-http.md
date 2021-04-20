@@ -49,7 +49,7 @@ Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:80
 
 
 ### Parameters
-Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](./extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
+Every extraction has a set of *Extraction*, *Source* and *Custom* runtime parameters. These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
 
 The URL pattern is: 
 ```

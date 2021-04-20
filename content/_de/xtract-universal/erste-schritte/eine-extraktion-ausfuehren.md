@@ -85,7 +85,7 @@ Der Befehl kann mit [STRG+C] oder dem Button auf der rechten Seite kopiert werde
 
 Wir empfehlen die Verwendung des Kommandozeilen-Tools mit [Push-Destinationen](../xu-destinationen#pull--und-push-destinationen).
 Der Befehl kann von einem Windows-Skript oder einem beliebigen Scheduler, der Windows-Kommandozeilenaufrufe ausführen kann, aufgerufen werden. <br>
-Im einfachsten Fall kann der Windows Task Scheduler zum Aufrufen und Planen von Extraktionen mit **xu.exe** verwendet werden. Ausführlichere Informationen zum Einplanen von Extraktionen finden Sie unter [Planen einer Extraktion](../fortgeschrittene-techniken/extraktion_einplanen).
+Im einfachsten Fall kann der Windows Task Scheduler zum Aufrufen und Planen von Extraktionen mit **xu.exe** verwendet werden. Ausführlichere Informationen zum Einplanen von Extraktionen finden Sie unter [Planen einer Extraktion](../automation/call-via-scheduler).
 
 Die Parameter "-s" (Server für die Extraktion), "-p" (Listener-Port des Xtract Universal Servers) und "-n" (Name der Exraktion) werden standardmäßig für jede Extraktion generiert.
 
