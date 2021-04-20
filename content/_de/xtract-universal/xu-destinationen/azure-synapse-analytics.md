@@ -1,8 +1,8 @@
 ---
 ref: xu-destinations-25
 layout: page
-title: Azure DWH
-description: Azure DWH
+title: Azure Synapse Analytics (SQl pool)
+description: Azure Synapse Analytics (SQl pool)
 product: xtract-universal
 parent: xu-destinationen
 childidentifier: azure_dwh

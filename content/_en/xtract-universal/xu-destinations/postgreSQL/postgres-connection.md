@@ -36,13 +36,16 @@ For further information please see the following link: - [Secure TCP/IP Connecti
 This field is optional. You can enter an alternative hostname under which a connection is established. <br>
 Example: The PostgreSQL database is hosted on a cloud and access to the database's cloud domain name is restricted by company policy. 
 In this case the database can be accessed through a private endpoint. Enter the private endpoint in this field. 
-The PostgreSQL cloud domain name must be entered in the field Server Name for certificate validation.
+The PostgreSQL cloud domain name must be entered in the field **Server Name** for certificate validation.
 
 **Port**<br>
 Port 5432 is selected by default.
 
 **Windows Authentication**<br>
-Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
+Uses the service account, under which the XU service is running, for authentication against the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
+
+{: .box-note }
+**Note:** To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../../advanced-techniques/service-account) with access to the database.
 
 **Username**<br>
 Enter the name of the database user.

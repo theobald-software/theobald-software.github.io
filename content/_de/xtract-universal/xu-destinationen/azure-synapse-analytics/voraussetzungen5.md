@@ -1,5 +1,5 @@
 ---
-ref: xu-azure-dwh-01
+ref: xu-azure-synapse-analytics-01
 layout: page
 title: Voraussetzungen
 description: Voraussetzungen

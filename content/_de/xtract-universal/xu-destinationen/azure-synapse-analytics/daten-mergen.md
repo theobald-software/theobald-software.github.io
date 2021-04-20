@@ -1,5 +1,5 @@
 ---
-ref: xu-azure-dwh-05
+ref: xu-azure-synapse-analytics-05
 layout: page
 title: Daten zusammenführen (mergen)
 description: Daten mergen
