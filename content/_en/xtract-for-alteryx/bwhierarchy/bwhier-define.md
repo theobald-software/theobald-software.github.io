@@ -17,8 +17,7 @@ lang: en_GB
 ![Look-Up-Hierarchy](/img/content/extractors.bwhier/Look-Up-Hierarchy.png){:class="img-responsive"}
 3. Click **Search** (magnifying glass symbol) (3) and select the extractor of your choice from the displayed list (4).
 4. Click **[OK]** (5) to confirm.
-
-Click **[[Extraction Settings](./bwhier-settings)]** to define hierarchy settings.
+5. Click **[[Extraction Settings](./bwhier-settings)]** to define hierarchy settings.
 
 ### To Preview Selected Hierarchy
 Click **[Load live preview]** (6) to display a live preview of the data without executing an extraction.<br>

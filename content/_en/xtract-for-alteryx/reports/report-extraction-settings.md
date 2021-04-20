@@ -10,4 +10,5 @@ weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=report-extraction-settings
 ---
+
 {% include _content/en/abap-reports/report-extraction-settings.md %}
