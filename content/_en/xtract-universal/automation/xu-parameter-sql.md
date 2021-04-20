@@ -6,7 +6,7 @@ description: SQL Parameters
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
-weight: 3
+weight: 13
 lang: en_EN
 ---
 
