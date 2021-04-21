@@ -22,7 +22,7 @@ The following overview shows, which components are available to extract data fro
 
 ### Extraction Types
 
-BOARD Connectr offers a set of nine extraction types to cover a range of demands of SAP data extraction.
+BOARD Connector offers a set of nine extraction types to cover a range of demands of SAP data extraction.
 
 - [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
 - [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
