@@ -83,7 +83,7 @@ Copy the expression with *CTRL+C* or the button on the right side.
 
 We recommend using the command-line tool with [Push Destinations](../destinations#pull-and-push-destinations).
 It can be called from a Windows script or any scheduler, that can invoke Windows command-line calls. <br>
-In the most simple case, the Windows task scheduler can be used for calling and scheduling extractions using xu.exe. For more detailed information about scheduling with **xu.exe**, see [Scheduling an extraction](../advanced-techniques/scheduling_extraction).
+In the most simple case, the Windows task scheduler can be used for calling and scheduling extractions using xu.exe. For more detailed information about scheduling with **xu.exe**, see [Scheduling an extraction](../automation/call-via-scheduler).
 
 By default the parameters "-s" (Server for extraction), "-p" (Listening port of the Xtract Universal Server) and "-n" (Name of the extraction) are generated for any extraction. 
 
