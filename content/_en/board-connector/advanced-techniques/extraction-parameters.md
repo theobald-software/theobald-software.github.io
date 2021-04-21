@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-parameters
 progressstate: 5
 ---
 
-The follwing section describes the extraction parameters can be changed in the window "Run extractions".
+The following section describes the extraction parameters can be changed in the window "Run extractions".
 
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 

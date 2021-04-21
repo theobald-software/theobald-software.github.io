@@ -1,7 +1,7 @@
 ---
 ref: board-connector-02
 layout: page
-title: Abozt this Online-Help
+title: About this Online-Help
 description:  General information about the Online-Hilfe
 product: board-connector
 parent: board-connector
