@@ -10,12 +10,16 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-odata-tableau
 ---
-
-At first we have to set the destination to OData, refer to Set [OData destination](../../odata/set-odata-destination).<br>
-In Tableau click on Connect and select OData. Paste the extraction OData URL and click Connect. Click OK to close the connection dialog.
+### Set a OData Destination
+At first we have to set the destination to OData, refer to Set [OData destination](..odata/set-odata-destination).<br>
+In Tableau click on Connect and select OData.<br>
+Paste the extraction OData URL and click Connect.<br>
+Click OK to close the connection dialog.
 
 ![Tableau-Connect-OData](/img/content/Tableau-Connect-OData.png){:class="img-responsive"}
 
+
+### Extract and Visualize
 The SAP data has been extracted by Xtract Universal Server from SAP and delivered to Tableau.
 
 ![Tableau-Data-Extracted](/img/content/Tableau-Data-Extracted.png){:class="img-responsive"}
@@ -24,6 +28,7 @@ Visualize your SAP data with Tableau.
 
 ![Tableau-Data-Chart](/img/content/Tableau-Data-Chart.png){:class="img-responsive"}
 
+### Check row count and Connection details
 Check the row count in Tableau and in Xtract Universal.
 
 ![Tableau-RowCount](/img/content/Tableau-RowCount.png){:class="img-responsive"}

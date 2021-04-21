@@ -11,15 +11,16 @@ lang: en_GB
 
 ---
 
-The following settings must be defined for the connection to the target database.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
+
+### Destination Details
 
 ![DESTINATION DETAILS](/img/content/xu/postgres_destination_details.png){:class="img-responsive"}
 
 **Server Name**<br>
-Name or IP of the database server
+Name or IP of the database server.
 
 **TLS Mode**<br>
-
 The following TLS modes can be selected for the connection:
 
 |Mode|Description
@@ -31,23 +32,31 @@ The following TLS modes can be selected for the connection:
 Please make sure that the Certification authority (CA) that signed the certificate or the certificate itself is trusted by the client.
 For further information please see the following link: - [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
 
-**Windows Authentication**<br>
-Uses the service account under which the XU service runs to authenticate itself to the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
+**Private endpoint**<br>
+This field is optional. You can enter an alternative hostname under which a connection is established. <br>
+Example: The PostgreSQL database is hosted on a cloud and access to the database's cloud domain name is restricted by company policy. 
+In this case the database can be accessed through a private endpoint. Enter the private endpoint in this field. 
+The PostgreSQL cloud domain name must be entered in the field **Server Name** for certificate validation.
 
 **Port**<br>
-Port 5432 is selected by default
+Port 5432 is selected by default.
 
-**Username**
-Name of the database user.
+**Windows Authentication**<br>
+Uses the service account, under which the XU service is running, for authentication against the PostgreSQL server, see also [Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
+
+{: .box-note }
+**Note:** To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../../advanced-techniques/service-account) with access to the database.
+
+**Username**<br>
+Enter the name of the database user.
 
 **Password**<br>
-Password of the database user
+Enter the password of the database user.
 
 **Database**<br>
-Name of the database
+Enter the name of the database.
 
 **Test Connection**<br>
-Click on the button to test the database connection.
+Test the database connection.
 
-![DESTINATION DETAILS](/img/content/xu/postgres_test_connection.png){:class="img-responsive"}
 

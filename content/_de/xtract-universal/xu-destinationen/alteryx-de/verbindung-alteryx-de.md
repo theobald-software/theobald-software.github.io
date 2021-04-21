@@ -10,6 +10,9 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung-alteryx-de
 ---
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	 
+
+### Destination Details
 
 Für das Anlegen einer Alteryx Zielumgebung müssen keine weiteren Einstellungen getätigt werden.
 

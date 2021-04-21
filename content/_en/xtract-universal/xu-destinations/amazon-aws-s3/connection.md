@@ -11,12 +11,15 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection5
 ---
 
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
-The following settings are available when setting up an AWS S3 connection. 
+### Destination Details
 
 ![XU_S3_DestinationDetails](/img/content/XU_S3_DestinationDetails.png){:class="img-responsive"}
 
 ### S3 Settings
+
+#### Connection
 
 **Inherit Credentials from IAM role**<br>
 The credentials and permissions of the IAM role assigned to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), on which Xtract Universal is running is be used for authentication. 
@@ -28,6 +31,8 @@ More information is available in the official [AWS documentation](https://docs.a
 **Connect**<br>
 After entering Access key ID and Secret key, click **[Connect]**. After successfully connecting, select bucket name and region.
 
+#### Bucket
+
 **Bucket name and Region**<br>
 Select a bucket and a region of the bucket's location. The SAP data is extracted into the particular bucket.
 
@@ -37,14 +42,15 @@ Select a bucket and a region of the bucket's location. The SAP data is extracted
 **Test Connection**<br>
 Validates the right combination of bucket and region. Insures bucket's accessibility from Xtract Universal using the entered access keys.
 
-**Server-side encryption**<br>
-Encrypts the data after uploading to S3.<br>
+#### Server-side encryption
+
+Choose how to encrypt data after uploading them to S3.<br>
 
 {: .box-note }
 **Note:** The setting "Server-side encryption" does not relate to transport encryption between Xtract Universal and S3. By default, the channel for sending data to S3 is always encrypted. 
 
 - **None**<br>
-Server-sided encryption of data not active.
+ [Server-sided](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html) encryption of data not active.
 
 - **SSE-S3**<br>
 Encrypts data using the by default available S3 user account encryption key ([S3 Managed Encryption Keys](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html)).
@@ -54,27 +60,40 @@ Encryption using a custom encryption key created on AWS ([AWS Key Management Ser
 
 
 ### File Format
-Select the required file format between "Parquet" and "CSV".
+
+**File type**<br>
+Select the required file format. You can choose between *Parquet* and *CSV*.
 ![AWS S3](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
-The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
 
-When you select "Parquet" file format, in the field "Compatibility mode" you can choose between "Pure" and "Spark".
+#### CVS Settings
 
-![AWS S3 compability](/img/content/xu/xu_S3_dest_comp_mode.png){:class="img-responsive"}
+The settings for file type *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).
 
+#### Parquet Settings
+
+**Compatibility mode**<br>
+You can choose between *Pure* and *Spark* for the compatibility mode.
+Spark does not support the data types used in pure mode, so other data types need to be used.
 
 | SAP | Pure | Spark |
 |------|-------------|-------|
 | INT1 | UINT_8 | INT16 |
 | TIMS | TIME_MILLIS | UTF8 |
 
-Spark does not support the datatypes used in pure mode, so other datatypes need to be used.
+![AWS S3 compability](/img/content/xu/xu_S3_dest_comp_mode.png){:class="img-responsive"}
+
+### Column encryption
+{% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
 
 ### Connection Retry
 
 Connection retry is a built-in function of the AWS S3 destination. 
 The retry function is automatically activated.
 
-Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to AWS S3. For more general information about retry strategies in an AWS S3 environment go to the official [AWS Help](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
-Xtract Universal follows an exponential retry strategy. The selected exponential strategy results in 7 retry attempts and an overall timespan of 140 seconds. If a connection is not established during the timespan of 140 seconds, the extraction fails.
+Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to AWS S3. 
+For more general information about retry strategies in an AWS S3 environment go to the official [AWS Help](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
+
+Xtract Universal follows an exponential retry strategy. The selected exponential strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
+If a connection is not established during the timespan of 140 seconds, the extraction fails.
+
 

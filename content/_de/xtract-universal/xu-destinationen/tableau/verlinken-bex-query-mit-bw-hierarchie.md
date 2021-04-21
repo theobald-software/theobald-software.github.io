@@ -13,8 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verlinken-bex-query-mit-bw-hie
 
 In diesem Beispiel extrahieren wir eine BEx-Query und eine BW-Hierarchie und erstellen eine Beziehung in Tableau, um die beiden Extraktionen zu verlinken. 
 
-**Schritt 1**: Eine BEx-Query-Extraction anlegen.
-
+### Schritt 1: Eine BEx-Query-Extraction anlegen.
 ![XU-Tableau-BExQuery](/img/content/XU-Tableau-BExQuery.png){:class="img-responsive"}
 
 Die Extraktion hat die folgenden General Settings:
@@ -23,7 +22,7 @@ Die Extraktion hat die folgenden General Settings:
 
 Für weitere Informationen siehe [BW InfoCubes und BEx Queries](../../bw-infocubes-und-bex-queries).
 
-**Schritt 2**: Eine BW-Hierarchie-Extraktion anlegen.
+### Schritt 2: Eine BW-Hierarchie-Extraktion anlegen.
 
 ![XU-Tableau-Hierarchy](/img/content/XU-Tableau-Hierarchy.png){:class="img-responsive"}
 
@@ -34,14 +33,13 @@ Die Extraktion hat die folgenden General Settings. Hier wird die Option *Natural
 Für weitere Informationen siehe [BW Hierarchien](../../bw-hierarchien).
 
 
-**Schritt 3**: Beide Extraktionen in Tableau laden und eine Beziehung dazwischen erstellen.
-
+### Schritt 3: Eine Beziehung erstellen.
+Beide Extraktionen in Tableau laden und eine Beziehung zwischen diesen erstellen.
 ![Tableau-BExQuery-Datasource](/img/content/Tableau-BExQuery-Datasource.png){:class="img-responsive"}
 
 ![Tableau-BWHierarchy-Datasource](/img/content/Tableau-BWHierarchy-Datasource.png){:class="img-responsive"}
 
-Wir erstellen eine Beziehung zwischen beiden Extraktionen, in dem wir die Felder Sold to *party key* (bexquery) und *Node Name* (bwhierarchy) verlinken.
-
+Wir erstellen eine Beziehung zwischen beiden Extraktionen, in dem wir die Felder Sold to *party key* (bexquery) und *Node Name* (bwhierarchy) verlinken.<br>
 Wählen Sie aus dem Menü Data -> *Edit Relationships*.<br>
 Wählen Sie *Custom* und klicken Sie auf Add.<br>
 Wählen Sie *Node Name* als das primary field und *Sold to party Key* als das secondary field.<br>

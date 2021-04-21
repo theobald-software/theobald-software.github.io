@@ -11,41 +11,20 @@ progressstate: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-verbindung
 ---
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}
 
-
-### Eine Azure Storage Destination hinzufügen
-1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster "Manage Destinations" wird geöffnet.
-![XU_Manage_Destinations](/img/content/sever_manage_dest.png){:class="img-responsive"}
-2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
-![XU_azure_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
-3. Geben Sie einen Namen für die neue Destination ein.
-4. Wählen Sie als Typ die Destination *Azure Storage (Blob / Data Lake)* aus der Drop-down-Liste aus. Die Parameter der Destination werden angezeigt.
-
-Das Fenster "Destination Details" besteht aus zwei Tabs:
-- Azure Storage
-- File Format
-
-### Azure Storage Parameter
+### Destination Details
 
 ![xu-azure-blob-con-01](/img/content/xu/xu-azure-blob-con-01.png){:class="img-responsive"}
 
-Der Tab *Azure Storage Settings* besteht aus folgenden Unterabschnitten:
-
-- Connection Type(1) in Kombination mit
-	- Access key
-	- Azure active directory
-- Container (2)
-- Misc (3)
-- Column Encryption (4)
-
-### Connection Type (1)
+### Connection Type - Verbindungstyp (1)
 
 Der Unterabschnitt *Connection* bietet zwei verschiedene Methoden zur Authentifizierung und Zugriffssteuerung auf dem Azure Storage:
 
 1. Authentifizierung über Access Key (Zugangsschlüssel)
 2. Authentifizierung über Azure Active Directory (Azure AD) 
 
-### Authentifizierung über Access Key (Zugangsschlüssel)
+#### 1. Authentifizierung über Access Key (Zugangsschlüssel)
 
 Diese Authentifizierungsmethode ermöglicht den Zugriff auf das gesamte Azure Storage. 
 Allgemeine Informationen über diese Authentifizierungsmethode finden Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage).<br>
@@ -69,10 +48,7 @@ Klicken Sie auf **[Connect]**, um eine Verbindung zum Azure Storage herzustellen
 Wenn die Verbindung erfolgreich ist, öffnet sich das Info-Fenster "Connection successful". 
 Klicken Sie auf **[OK]** zum Bestätigen.
 
-
-
-
-### Authentifizierung über Azure Active Directory 
+#### 2. Authentifizierung über Azure Active Directory 
 Die Authentifizierung über Azure AD verwendet OAuth 2.0 und Azure AD zur Authentifizierung.
 Im Vergleich zur *Authentifizierung via Access Key* erlaubt diese Option eine granularere Zugriffssteuerung.
 Der Zugriff kann auf das komplette Azure Storage oder auf einzelne Storage-Container autorisiert werden. 
@@ -170,29 +146,33 @@ Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermitt
 {% include _content/de/xu-specific/xu-destinations/general/column-encryption.md %}
 
 ### File Format 
-Wählen Sie das gewünschte Dateiformat aus dem Drop-down-Menü. 
+
+**File type**<br>
+Wählen Sie das gewünschte Dateiformat aus dem Dropdown Menü. 
 Die Formate *Parquet* und *CSV* sind verfügbar.
-![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
-Die *CSV*-Einstellungen entsprechen den allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
+![AWS S3](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 
-Wenn Sie das *Parquet* Dateiformat auswählen, können Sie im Feld **Compatibility mode** zwischen *Pure* und *Spark* auswählen.
+#### CVS Settings
+Die Einstellungen für den Dateityp *CSV* entsprechen den allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
 
-![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-05.png){:class="img-responsive"}
+#### Parquet Settings
+**Compatibility mode**<br>
+Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen.
+Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
 
 | SAP | Pure | Spark |
 |------|-------------|-------|
 | INT1 | UINT_8 | INT16 |
 | TIMS | TIME_MILLIS | UTF8 |
 
-Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
-
 ### Retry- und Rollback-Funktion
 
-Die Retry- und Rollback-Funktionen sind eingebaute Wiederholungsmechanismen der 
-Azure Storage Destination, die automatisch aktiviert sind.
+Die Retry- und Rollback-Funktionen sind eingebaute Wiederholungsmechanismen der Azure Storage Destination, die automatisch aktiviert sind.
+
 Die Retry-Funktion verhindert, dass Extraktionen fehlschlagen wenn kurzzeitige Verbindungsunterbrechungen zu Azure auftreten.
 Die Implementierung der Retry- und Rollback-Funktion entspricht den [Microsoft Richtlinien](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
 Die Logik der Funktion basiert auf dem WebExceptionStatus. 
+
 Sollte eine Ausnahme (Exception) ausgelöst werden, verfolgt Xtract Universal eine exponentielle Strategie der Wiederholversuche.
 Das bedeutet, dass 7 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. 
 Sollte in diesem Zeitraum keine Verbindung zustande kommen, wird die Extraktion abgebrochen. 

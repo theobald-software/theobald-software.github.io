@@ -11,10 +11,11 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sql-server-connection
 ---
 
-The following settings can be defined for the Microsoft SQL Server connection. 
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
+
+### Destination Details
 
 ![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.png){:class="img-responsive"}
-
 
 **Server Name**<br>
 Specifies the host address of the SQL Server. Please note the following syntax:
@@ -28,7 +29,7 @@ Specifies the host address of the SQL Server. Please note the following syntax:
 It is only necessary to specify the port if it has been edited outside the SQL standard.
 
 **Require TLS encryption**<br>
-Clientside enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following paramenters to the connection string:<br>
+Client-side enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following paramenters to the connection string:<br>
 * Encrypt = On
 * TrustServerCertificate = Off
 <br>
@@ -36,6 +37,9 @@ For further information, please see [Enable Encrypted Connections to the Databas
 
 **Windows Authentication**<br>
 Uses the service account, under which the XU service is running, for authentication against SQL Server.
+
+{: .box-note }
+**Note:** To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../../advanced-techniques/service-account) with access to the database.
 
 **Impersonate authenticated caller**<br>
 Uses the Windows AD user, executing the extraction, for authentication against SQL Server using [Kerberos authentication.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
@@ -51,11 +55,6 @@ SQL Server authentication - password
 
 **Database Name**<br>
 Defines the name of the SQL Server database.
-             
+
 **Test Connection**<br>
 Checks the database connection. 
-
-
-**Database Schema**<br> 
-By default the user's default schema dbo will be used. 
-To use another schema, you should set it as the [default schema](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-user-transact-sql?view=sql-server-2017) for your user on the SQL Server database. 

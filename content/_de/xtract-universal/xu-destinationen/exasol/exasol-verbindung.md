@@ -11,24 +11,23 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=exasol-verbindung
 ---
 
-Folgende Einstellungen müssen für die Verbindung zur Zieldatenbank definiert werden.
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	 
+
+### Destination Details
 
 ![Exa-Connection](/img/content/Exa-Connection.png){:class="img-responsive"}
  
-**Host Name / Port**<br>
-Name bzw. IP des Datenbankservers und die Portnummer.
+**Connection string**<br>
+Name bzw. IP des Datenbankservers und die Portnummer eingeben.
 
 **User Id / Password**<br>
-Name und Passwort des Datenbank-Benutzers.
+Name und Passwort des Datenbank-Benutzers eingeben.
 
 **Database Name**<br>
 Name der Datenbank.
 
 **Schema**<br>
-Schema der Datenbank.
-
-**Provider**<br>
-.NET Provider der Datenbank. Einen Link zur Installation des Providers finden Sie unter [Voraussetzungen](../../einfuehrung/systemvoraussetzungen). 
+Schema der Datenbank eingeben.
 
 **Test Connection**<br>
-Klicken Sie auf den Knopf, um die Datenbankverbindung zu testen. 
+Datenbankverbindung testen. 

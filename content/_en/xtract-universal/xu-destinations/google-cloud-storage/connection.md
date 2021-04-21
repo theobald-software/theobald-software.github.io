@@ -11,21 +11,13 @@ lang: en_GB
 progressstate: 5
 ---
 
-### Adding a Google Cloud Storage Destination
-1. In the main window of the Designer, navigate to **Server > Manage Destinations**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![xu-google-cloud-req-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-01.png){:class="img-responsive"}
-3. Select the *Google Cloud Storage* destination from the drop-down list.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
-The window "Destination Details" consists of two tabs:
-- GCS Settings
-- File Format
+### Destination Details
+
+![xu-google-cloud-req-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-01.png){:class="img-responsive"}
 
 ### GCS Settings
-The tab *GCS Settings* consists of three subsections:
-- Connection 
-- Bucket
-- Encryption
 
 #### Connection
 **Client ID**<br>
@@ -46,7 +38,8 @@ When a connection is successful, an "Authentication succeeded" message is displa
 ![xu-google-cloud-con-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-03.png){:class="img-responsive"}
 
 #### Bucket
-The "Bucket" subsection can be filled after a successful connection to the storage account.<br>
+The "Bucket" subsection can only be filled after a connection to the storage account has been established.<br>
+
 **Project ID** <br>
 The Project ID can be looked up in the GCP dashboard under *Project info*.
 
@@ -59,7 +52,7 @@ A bucket can be created in the navigation menu under **Storage > Browser**.
 
 ![xu-google-cloud-con-05](/img/content/xu/googlecloudstorage/xu-google-cloud-con-05.png){:class="img-responsive"}
 
-You can freely choose the bucket name, the location type and the storage class or access control. 
+Choose a bucket name, location type and storage class or access control. 
 
 Under **Advanced Settings (optional)** you can select the desired encryption method applied to the bucket. Get more details on encryption on the official [Google Help Page](https://cloud.google.com/storage/docs/encryption).      
 ![xu-google-cloud-con-06](/img/content/xu/googlecloudstorage/xu-google-cloud-con-06.png){:class="img-responsive"}

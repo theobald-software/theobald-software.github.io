@@ -11,24 +11,29 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=db2-verbindung
 ---
 
-Folgende Einstellungen können für die Verbindung zur Zieldatenbank definiert werden.
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+
+### Destination Details
 
 ![DB2-Connection](/img/content/DB2-Connection.png){:class="img-responsive"}
 
+**Type**<br>
+Destinations Typ eingeben.
+
+**Provider**<br>
+Netz-Anbieter für DB2 eingeben. Zur Installation des Providers siehe bei Anforderungen.
+
 **Host Name / Port** <br>
-Name bzw. IP des Datenbankservers und die Portnummer.
+Name bzw. IP des Datenbankservers und die Portnummer eingeben.
 
 **User Id / Password** <br>
-Name und Passwort des Datenbankbenutzers.
+IBM DB2 Authentifizierung: Name und Passwort des Datenbankbenutzers.
 
 **Database Name** <br>
-Name der Datenbank.
+Name der IBM Datenbank eingeben.
 
-**Schema** <br>
-Schema der Datenbank.
-
-**Provider** <br>
-.NET Provider der Datenbank. Einen Link zur Installation finden Sie unter Voraussetzungen. 
+**Default Schema** <br>
+Schema der DB2-Datenbank eingeben.
 
 **Test Connection** <br>
-Klicken Sie auf den Knopf, um die Datenbankverbindung zu testen. 
+Datenbankverbindung testen. 

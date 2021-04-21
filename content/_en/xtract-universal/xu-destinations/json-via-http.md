@@ -13,20 +13,11 @@ progressstate: 5
 
 The JSON destination is a generic JSON stream over HTTP. 
 
-### Adding HTTP - JSON Destination
+{% include _content/en/xu-specific/xu-destinations/general/connection_1.md %}	
 
-1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![JSON-Destination-Details](/img/content/xu/xu_manage-destinations.png){:class="img-responsive"}
-3. Select the *HTTP - JSON* destination from the drop-down list.
-![JSON-Destination-Details](/img/content/add-select-destination.png){:class="img-responsive"}
-4. Click **[OK]** to confirm.
-![JSON-Destination-Details](/img/content/xu/json/JSON-Destination-Details.png){:class="img-responsive"}
 
 ### Destination Details
-The window "Destination Details" consists of two subsections:
-- Name - Extration name
-- Type - Extraction type
+To use the JSON destination, no further settings have to be made.
 
 ### Running an Extraction in Browser
 1. Run the extraction with HTTP-JSON destination in browser (see also [Getting Started with Xtract Universal](../getting-started/run-an-extraction)).

@@ -11,14 +11,15 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung5
 ---
 
-Folgende Einstellungen können für die Verbindung zur Zieldatenbank definiert werden.
 
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
 
-![XU_AzureDWH_Verbindungen](/img/content/XU_AzureDWH_Verbindungen.png){:class="img-responsive"}
+### Destination Details
+![XU_AzureSA_Verbindungen](/img/content/XU_AzureSA_Verbindungen.png){:class="img-responsive"}
 
-
+#### Connection
 **Server Name**<br>
-Name des Azure Servers, [servername].database.windows.net.
+Name des Azure Servers eingeben: `[servername].database.windows.net`
 
 **User Name**<br>
 Benutzername des Datenbanknutzers.
@@ -30,4 +31,4 @@ Passwort des Datenbanknutzers.
 Name der Datenbank.
              
 **Test Connection**<br>
-Klicken Sie auf die Schaltfläche, um die Verbindung zu Azure Synapse Analytics (SQl pool) zu testen. 
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 

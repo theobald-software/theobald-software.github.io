@@ -10,10 +10,11 @@ weight: 1
 lang: en_GB
 old_url:
 ---
-### Create a connection
-1. Create a new destination of type *Power BI Connector* in Xtract Universal. 
-2. Give it a name of your choice. 
-3. Assign the destination to extractions which you want to use with Power BI.
 
-The extractions are now visible in the Power BI Custom Connector.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
+
+### Destination Details
+To use the Power BI Connector destination, no further settings have to be made.
+
 ![Power BI Connector (beta) destination](/img/content/XU_pbi_connector_connection.png){:class="img-responsive"}
+The extractions are now visible in the Power BI Custom Connector.

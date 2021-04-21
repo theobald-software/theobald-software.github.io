@@ -10,31 +10,24 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection4
 ---
-### Adding Azure Synapse Analytics Destination
-1. To add a new destination, see [Managing Destinations](../managing-destinations)
-2. Fill in Name.
-3. Select the *Azure Synapse Analytics (SQL pool)* destination from the drop-down list.
 
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
-- Name - Destination name
-- Type - Destination type
-- Connection (see below)
+![XU_AzureSA_Verbindungen](/img/content/XU_AzureSA_Verbindungen.png){:class="img-responsive"}
 
-![XU_AzureDWH_Verbindungen](/img/content/XU_AzureSA_Verbindungen.png){:class="img-responsive"}
-
-### Connection
+#### Connection
 **Server Name**<br>
-Defines the name of the Azure Servers, [servername].database.windows.net. 
+Enter the name of the Azure Servers: `[servername].database.windows.net`
 
 **User Name**<br> 
-Defines the user name.
+Enter the user name.
 
 **Password**<br>
-Defines the password.
+Enter the password.
 
 **Database Name**<br>
-Defines the name of the Azure Synapse Analytics (SQl pool).
-            
+Enter the name of the Azure Synapse Analytics (SQl pool).
+
 **Test Connection**<br>
-Checks the database connection. 
+Check the database connection. 

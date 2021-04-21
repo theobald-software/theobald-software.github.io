@@ -14,26 +14,23 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=zielumgebungen
 
 Die Destination *Flat File* erzeugt eine generische CSV-Datei. 
 
-### Flat File - CSV Destination hinzufügen
-1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster "Manage Destinations" wird geöffnet.
-2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
-3. Wähen Sie die Destination *Flat File - CSV* aus der Drop-Down-Liste aus.
-4. Klicken Sie auf **[OK]** zum Bestätigen. 
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}
+
 
 ### Destination Details - Destinationsdetails
-Das Fenster "Destination Details" besteht aus vier Unterabschnitten:
-- Name (Dateiname)
-- Type (Typ der Destination)
-- File (s. u.)
-- CSV Settings (s. u.)
-- Convert / Encoding (s. u.)
-
 ![CSV-Flat-Destination-Details](/img/content/xu/CSV-Flat-Destination-Details.png){:class="img-responsive"}
 
-### File
 
-**Directory**<br>
-Angabe eines vorhandenen Verzeichnises, in das die Zieldateien abgelegt werden.
+**File output path**<br>
+Geben Sie das Verzeichnis an, in dem die Flat Files gespeichert werden sollen. 
+
+{: .box-note }
+**Hinweis:** Das Ausfüllen des Feldes **Directory** erstellt einen neuen Ordner, falls er nicht existiert.
+
 {% include _content/de/xu-specific/xu-destinations/general/csv-settings.md %}														 
 
 {% include _content/de/xu-specific/xu-destinations/general/convert-encoding.md %}	
+
+### Column encryption
+{% include _content/de/xu-specific/xu-destinations/general/column-encryption.md %}
+

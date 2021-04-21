@@ -12,21 +12,12 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=csv-via-http
 ---
 
 Die Destination *HTTP - CSV*  liefert die extrahierten Daten im generischen CSV-Format über einen HTTP-Stream bzw. Webservice. 
+CSV (via HTTP) wird von mehreren Produkten unterstützt. Die folgenden Produkte wurden getestet: Layer2 und INFONEA. 
 
-CSV (via HTTP) wird von mehreren Produkten unterstützt. Folgende Produkte wurden u.a. getestet: Layer2 und INFONEA. 
-
-### HTTP - CSV Destination hinzufügen
-1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster "Manage Destinations" wird geöffnet.
-2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
-3. Wähen Sie die Destination *HTTP - CSV* aus der Drop-Down-Liste aus.
-4. Klicken Sie auf **[OK]** zum Bestätigen. 
+{% include _content/de/xu-specific/xu-destinations/general/connection_1.md %}	
 
 ### Destination Details - Destinationsdetails
-Das Fenster "Destination Details" besteht aus vier Unterabschnitten:
-- Name (Dateiname)
-- Type (Typ der Destination)
-- CSV Settings (s. u.)
-- Convert / Encoding (s. u.)
+
 ![CSV-Destination-Details](/img/content/xu/CSV-Destination-Details.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/xu-destinations/general/csv-settings.md %}														 

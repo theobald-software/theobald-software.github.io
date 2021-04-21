@@ -11,23 +11,29 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=db2-connection
 ---
 
-The following settings can be defined for the DB2 destination.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
+
+### Destination Details
 
 ![DB2-Connection](/img/content/DB2-Connection.png){:class="img-responsive"}
 
-**Connection**
-
-**Host Name / Port**<br>
-Defines the name or IP of the DB2 server and the port number. 
-
-**User Id / Password**<br>
-Defines the user Id and password of the DB2 user.
-
-**Schema**<br>
-Defines the schema of the DB2 database.
+**Type**<br>
+Enter the Destination type.
 
 **Provider**<br>
-Defines the .Net provider for DB2. To install the provider refer to requirements.
-            
+Enter the .Net provider for DB2. To install the provider refer to requirements.
+
+**Host Name / Port**<br>
+Enter the name or IP of the DB2 server and the port number. 
+
+**Username / Password**<br>
+IBM DB2 authentication user name and password.
+
+**Database name**<br>
+Enter the name of the IBM database.
+
+**Default schema**<br>
+Enter the schema of the DB2 database.
+
 **Test Connection**<br>
-Checks the database connection. 
+Check the database connection.
