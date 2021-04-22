@@ -76,8 +76,8 @@ Caching the result of extractions is inactive.
 
 1. Check the SAP parameter snc/gssapi_lib to determine, which library is used for encryption in your SAP system.
 Your SAP basis has to import and configure the same library on the application server and on the machine with installed Xtract Universal or BOARD Connector.
-2. In the **SNC library** field, fill in the complete path to the library location e.g., C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll.
-3. Fill in the SAP **Partner Name** configured for the SAP application server e.g., ``p:SAPserviceERP/do_not_care@THEOBALD.LOCAL``.
+2. In the **SNC library** field, fill in the complete path to the library location e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
+3. Fill in the SAP **Partner Name** configured for the SAP application server e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 
 Follow the steps described in [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) when working with Kerberos library.
 
