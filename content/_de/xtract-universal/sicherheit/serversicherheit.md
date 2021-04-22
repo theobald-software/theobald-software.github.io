@@ -27,3 +27,4 @@ Folgen Sie dafür den Schritten in [Xtract Universal Dienst unter einem Windows 
 - [Benutzerverwaltung](./benutzerverwaltung)
 - [Zugriffssteuerung](./zugriffsverwaltung)
 - [SPNEGO](https://en.wikipedia.org/wiki/SPNEGO)
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file)

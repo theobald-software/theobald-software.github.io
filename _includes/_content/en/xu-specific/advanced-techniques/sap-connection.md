@@ -67,7 +67,7 @@ Option available only when using *Plain* or *SNC* authentication method. SAP cre
 Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
 Caching the result of extractions is inactive. 
 
-** Xtract Universal only:** See [Power BI Connector](https://help.theobald-software.com/en/xtract-universal/xu-destinations/Power-BI-Connector/pbi-SSO) or [Alteryx](https://help.theobald-software.com/en/xtract-universal/xu-destinations/alteryx/settings-alteryx-plugin) destinations for possible examples. 
+**Xtract Universal only:** See [Power BI Connector](https://help.theobald-software.com/en/xtract-universal/xu-destinations/Power-BI-Connector/pbi-SSO) or [Alteryx](https://help.theobald-software.com/en/xtract-universal/xu-destinations/alteryx/settings-alteryx-plugin) destinations for possible examples. 
 
 {: .box-note }
 **Note:** The option "Require SAP credentials to be explicitly supplied for execution" requires extractions to be called via [HTTPS - unrestricted](../server/server-settings#web-server).
@@ -120,4 +120,5 @@ The window "Manage Sources" opens. <br>
 ![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
 
 
-
+Related Links:
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file)

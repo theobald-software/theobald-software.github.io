@@ -25,3 +25,4 @@ When restricting access to Windows AD users, the Xtract Universal service must r
 - [User Management](./user-management)
 - [Access Management](./access-management)
 - [SPNEGO](https://en.wikipedia.org/wiki/SPNEGO)
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file)

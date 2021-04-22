@@ -31,3 +31,7 @@ Der Name des aktuell gespeicherten Zertifikats wird im unteren Bereich des Fenst
 ![Server-settings_manage](/img/content/certificate-edit-location.png){:class="img-responsive"}
 ![Server-new-start](/img/content/xu/restart-server.png){:class="img-responsive"}
 3. Bestätigen Sie mit **[OK]**. Die vorgenommenen Änderungen werden durch den Neustart des XU-Server aktiviert.
+
+
+Weiterführende Links:
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file)
