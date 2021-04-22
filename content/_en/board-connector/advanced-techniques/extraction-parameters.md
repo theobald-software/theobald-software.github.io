@@ -17,7 +17,7 @@ The following section contains information about the extraction parameters that 
 ### Run an Extraction
 
 The extraction parameters define how data is extracted from the source. 
-![Extraction parameters](/img/content/board/Run Extraction.png){:class="img-responsive"}
+![Extraction parameters](/img/content/board/Run-Extraction.png){:class="img-responsive"}
 
 To open the "Run extractions" window, select an extraction in the main window of the Designer and click **[Run]** (see details in [Running an extraction](../getting-started/run-an-extraction)).
 
