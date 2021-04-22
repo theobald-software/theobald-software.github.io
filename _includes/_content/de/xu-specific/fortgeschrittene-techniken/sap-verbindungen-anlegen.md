@@ -75,8 +75,8 @@ Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inakti
 
 1. Überprüfen Sie den SAP parameter snc/gssapi_lib um zu bestimmen, welche Bibliothek für die Verschlüsselung in Ihrem SAP System verwendet wird.
 2. Ihre SAP-Basis muss auf dem Applikationsserver und auf dem Rechner, auf dem Xtract Unversal oder BOARD Connector installiert ist, die gleiche Bibliothek importieren und konfigurieren.
-3. Geben Sie in den SNC-Bibliotheksfeldern (**SNC library**) den vollständigen Pfad zum Speicherort der Bibliotheken z.B. C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll.
-4. Geben Sie den SAP-Partnernamen (**Partner Name**) ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. p:SAPserviceERP/do_not_care@THEOBALD.LOCAL.
+3. Geben Sie in den SNC-Bibliotheksfeldern (**SNC library**) den vollständigen Pfad zum Speicherort der Bibliotheken z.B. `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
+4. Geben Sie den SAP-Partnernamen (**Partner Name**) ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 
 Folgen Sie den Schritten beschrieben in  [SSO mit Kerberos SNC](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc), wenn Sie die Kerberos-Bibliothek verwenden.
 
