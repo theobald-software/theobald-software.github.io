@@ -11,9 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=voraussetzungen5
 ---
 
-Voraussetzungen für die Nutzung der AzureDWH-Zielumgebung sind ein vorhandenes Microsoft Azure SQL Data Warehouse sowie entsprechende in Azure vorgenommene Einstellungen bzgl. Firewallfreischaltung.
+Um die Azure Synapse Analytics (SQL pool) Destination nutzen zu können, brauchen Sie
 
-
-![XU_AzureDWH_Setup](/img/content/XU_AzureDWH_Setup.png){:class="img-responsive"}
-
-![XU_AzureDWH_Firewall_DE](/img/content/XU_AzureDWH_Firewall_DE.png){:class="img-responsive"}
+- eine vorhandene [Microsoft Azure Synapse Analytics SQL Datenbank](https://docs.microsoft.com/de-de/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal).
+- eine [Freischaltung in der Firewall](https://docs.microsoft.com/de-de/azure/azure-sql/database/secure-database-tutorial#create-firewall-rules) für die IP-Adressen, unter denen Xtract Universal läuft.

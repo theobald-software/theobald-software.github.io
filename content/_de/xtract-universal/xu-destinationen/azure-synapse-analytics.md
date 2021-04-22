@@ -12,6 +12,6 @@ lang: de_DE
 progressstate: 5
 ---
 
-Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in ein Azure Data Warehouse.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in einen Azure Synapse Analytics SQl pool.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

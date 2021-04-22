@@ -11,9 +11,8 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=requirements5
 ---
 
-As a prerequisite for using this destination you must have defined a Microsoft Azure Synapse Analytics SQL pool. The firewall settings in the Azure portal must be set to grant access for the IP addresses Xtract Universal is running on. 
+To use the Azure Synapse Analytics (SQL pool) destination, you need:
 
-![XU_AzureDWH_Setup_EN](/img/content/XU_AzureDWH_Setup_EN.png){:class="img-responsive"}
-
-![XU_AzureDWH_Firewall_EN](/img/content/XU_AzureDWH_Firewall_EN.png){:class="img-responsive"}
+- an existing [Microsoft Azure Analytics SQL database](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal).
+- [Azure portal firewall rules](https://docs.microsoft.com/en-us/azure/azure-sql/database/secure-database-tutorial#create-firewall-rules) that grant access for the IP addresses Xtract Universal is running on.
 

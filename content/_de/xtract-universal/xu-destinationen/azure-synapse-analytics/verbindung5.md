@@ -28,6 +28,6 @@ Passwort des Datenbanknutzers.
 
 **Database Name**<br>
 Name der Datenbank.
-             
+
 **Test Connection**<br>
-Klicken Sie auf die Schaltfläche, um die Verbindung zu Azure Synapse Analytics (SQl pool) zu testen. 
+Klicken Sie auf die Schaltfläche, um die Verbindung zur Azure Synapse Analytics Datenbank zu testen. 
