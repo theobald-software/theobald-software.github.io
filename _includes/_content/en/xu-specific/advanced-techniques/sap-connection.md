@@ -79,7 +79,9 @@ Your SAP basis has to import and configure the same library on the application s
 2. In the **SNC library** field, fill in the complete path to the library location e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
 3. Fill in the SAP **Partner Name** configured for the SAP application server e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 
-Follow the steps described in [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) when working with Kerberos library.
+For additional details see the knowledge base article [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
+
+When working with Kerberos library, follow the steps described in [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc).
 
 
 ### Miscellaneous
@@ -118,7 +120,3 @@ Activate the debug logging only when necessary e.g., upon request of the support
 The window "Manage Sources" opens. <br>
 2. Check if created SAP connection is listed. 
 ![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
-
-
-Related Links:
-- [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file)
