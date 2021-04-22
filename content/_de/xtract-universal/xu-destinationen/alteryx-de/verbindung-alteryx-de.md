@@ -14,6 +14,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung-alteryx-de
 
 ### Destination Details
 
-Für das Anlegen einer Alteryx Zielumgebung müssen keine weiteren Einstellungen getätigt werden.
+Für das Anlegen einer Alteryx Zielumgebung müssen keine weiteren Einstellungen vorgenommen werden.
 
 ![alteryx-create-destination](/img/content/alteryx-create-destination.PNG){:class="img-responsive"}

@@ -18,7 +18,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=db2-verbindung
 ![DB2-Connection](/img/content/DB2-Connection.png){:class="img-responsive"}
 
 **Type**<br>
-Destinations Typ eingeben.
+Destinations-Typ eingeben.
 
 **Provider**<br>
 Netz-Anbieter für DB2 eingeben. Zur Installation des Providers siehe bei Anforderungen.

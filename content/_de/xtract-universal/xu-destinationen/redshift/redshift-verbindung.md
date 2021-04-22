@@ -29,5 +29,5 @@ Definiert den Benutzernamen und das Passwort des Datenbanknutzers.
 **Database**<br>
 Definiert den Namen der Datenbank, auf die zugegriffen werden soll.
 
-**Test Connection**<br>                     
+**Test Connection**<br>
 Testet die Verbindung zur Datenbank. 

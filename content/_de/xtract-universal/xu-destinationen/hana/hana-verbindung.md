@@ -38,6 +38,6 @@ Name des Datenbankschemas eingeben.
 
 **Use encryption**<br>
 Schaltet Verschlüsselung ein. Wird bei der Verbindung zur SAP DWC benötigt.
-             
+
 **Test Connection**<br>
 Testet die Verbindung zur Zielumgebung.

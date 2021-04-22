@@ -23,7 +23,7 @@ Select the type of SharePoint environment you are going to export to.
 
 **Site URL**<br>
 Enter the URL of your SharePoint server here (optionally including sub-directories if you want to export into a specific site on the server).
-Make sure you only enter the base path, omit page information a browser might show you in the address line like "_layouts/15/start.aspx#/" or similar.
+Make sure you only enter the base path, omit page information a browser might show you in the address line like `_layouts/15/start.aspx#/` or similar.
 
 **User**<br>
 Enter your SharePoint user name.

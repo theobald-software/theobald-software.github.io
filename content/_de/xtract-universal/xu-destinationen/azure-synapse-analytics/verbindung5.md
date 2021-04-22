@@ -29,6 +29,6 @@ Passwort des Datenbanknutzers.
 
 **Database Name**<br>
 Name der Datenbank.
-             
+
 **Test Connection**<br>
 Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 

@@ -134,7 +134,7 @@ Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
 **Folder path**<br>
 Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. 
-Siehe auch: **Einstellungen > Folder Path**](./blob-einstellungen#folder-path).<br>
+Siehe auch: [**Einstellungen > Folder Path**](./blob-einstellungen#folder-path).<br>
 Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein: `[Ordner]` <br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 

@@ -46,7 +46,7 @@ Standardmäßig ist Port 5432 ausgewählt.
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am PostgreSQL Server zu authentisieren, siehe auch [Client Authentication](https://www.postgresql.org/docs/11/client-authentication.html).
 
 {: .box-note }
-**Hinweis:** Um eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung herzustellen, stellen Sie sicher, dass Sie [den XU-Dienst unter einem Windows AD-Benutzer ausführen](../../fortgeschrittene-techniken/service-account), mit Zugriff auf die Datenbank..
+**Hinweis:** Um eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung herzustellen, müssen Sie den [XU-Dienst unter einem Windows AD-Benutzer](../../fortgeschrittene-techniken/service-account) mit Zugriff auf die Datenbank ausführen.
 
 
 **Username**<br>

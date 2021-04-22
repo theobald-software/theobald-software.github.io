@@ -18,7 +18,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=sql-server-verbindung
 ![MSSql-Destination-Details](/img/content/MSSql-Destination-Details.png){:class="img-responsive"}
 
 **Server Name**<br>
-Angabe der Host Adresse des SQL Server. Bitte folgende Syntax beachten:
+Angabe der Host Adresse des SQL Servers. Bitte folgende Syntax beachten:
 
 |Syntax | Beispiel |
 |:---|:---|
@@ -39,7 +39,7 @@ siehe auch [Aktivieren von verschlüsselten Verbindungen zur Datenbank-Engine](h
 **Windows Authentication**<br>
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am SQL Server zu authentisieren.
 
-: .box-note }
+{: .box-note }
 **Hinweis:** Für eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung, stellen Sie sicher, dass [der XU-Dienst unter einem Windows AD-Benutzer ausgeführt wird](../../fortgeschrittene-techniken/service-account), mit Zugriff auf die Datenbank.
 
 **Impersonate authenticated caller**<br>
@@ -55,6 +55,6 @@ SQL Server Authentisierung - Passwort
 
 **Database Name**<br>
 Name der Datenbank
-             
+
 **Test Connection**<br>
 Klicken Sie auf die Schaltfläche, um die Datenbankverbindung zu testen. 

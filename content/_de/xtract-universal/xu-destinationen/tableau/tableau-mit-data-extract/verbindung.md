@@ -17,7 +17,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung
 
 ![tableauDestinationDetails-hyper](/img/content/tableauDestinationDetails-hyper.png){:class="img-responsive"}
 
-### Output directory <br>
+### Output directory
 Geben Sie das Verzeichnis auf dem Xtract Universal Server an, in das die exportierten Tableau-Dateien gespeichert werden sollen.
 
 {: .box-note }

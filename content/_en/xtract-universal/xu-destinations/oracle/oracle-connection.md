@@ -18,25 +18,16 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=oracle-connection
 ![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_1.png){:class="img-responsive"}
 
 
+**Host / Data source** <br>
+Enter the name of the Oracle server. 
 Alternatively you can enter the [connect descriptor](https://docs.oracle.com/html/E10927_01/featConnecting.htm), such as:
 
-(DESCRIPTION =<br>
- (ADDRESS = (PROTOCOL = TCP)<br>
-(HOST = [oracle host name])(PORT = [port number]))<br>
-(CONNECT_DATA =<br>
-(SERVER = DEDICATED)<br>
-(SERVICE_NAME = [oracle service name])))<br>
-
-**Example**
-- Host Name: dbtest
-- Instance Name: oracle12c
-- Server Version: 12.2.0.2.0
-
-![XU_oracle_connection_test_2](/img/content/XU_oracle_connection_test_2.png){:class="img-responsive"}
-
-
-**Host / Data source** <br>
-Enter the name of the Oracle server or the connect descriptor. 
+*(DESCRIPTION =*<br>
+*(ADDRESS = (PROTOCOL = TCP)*<br>
+*(HOST = [oracle host name])(PORT = [port number]))*<br>
+*(CONNECT_DATA =*<br>
+*(SERVER = DEDICATED)*<br>
+*(SERVICE_NAME = [oracle service name])))*<br>
 
 **Port** <br>
 Enter the Oracle server connection port (Default: 1521).

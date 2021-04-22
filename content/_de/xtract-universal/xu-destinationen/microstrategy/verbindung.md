@@ -15,9 +15,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung7
 ### Destination Details
 ![mstr-destination-details](/img/content/mstr-destination-details.png){:class="img-responsive"} 
 
-
-
-
 **JSON Data API Server**<br>
 Server API Endpoint, unter dem die JSON API erreichbar ist.<br>
 (Beispiel: https://env-12345.customer.cloud.microstrategy.com/MicroStrategyLibrary/api/)

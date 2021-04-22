@@ -29,11 +29,11 @@ Option zur Authentifizierung gegenüber Amazon AWS. Über das Identity and Acces
 Nähere Informationen finden Sie in der [AWS Dokumentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
 
 **Connect**<br>
-Klicken Sie auf **[Connect]**, nachdem Sie Access key ID und Secret key eingegeben haben. Wenn die Verbindung erfolgreich hergestellt ist, poppt ein Infofenster auf, und Sie können anschließend Bucket name und Region auswählen.
+Klicken Sie auf **[Connect]**, nachdem Sie Access key ID und Secret key eingegeben haben. Wenn die Verbindung erfolgreich hergestellt ist, können Sie Bucket Name und Region auswählen.
 
 #### Bucket
 
-**Bucket name und Region**<br>
+**Bucket Name und Region**<br>
 Wählen Sie einen Bucket und die diesem Bucket zugehörige Region aus. In diesen Bucket werden die extrahierten Daten geschrieben.<br>
 
 {: .box-note }
@@ -85,7 +85,7 @@ Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen 
 ![AWS S3 compability](/img/content/xu/xu_S3_dest_comp_mode.png){:class="img-responsive"}
 
 ### Column encryption - Verschlüsselung
-{% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
+{% include _content/de/xu-specific/xu-destinations/general/column-encryption.md %}
 
 ### Connection Retry -Verbindungswiederholung
 

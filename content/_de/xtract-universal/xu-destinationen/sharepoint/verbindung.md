@@ -22,7 +22,7 @@ Wählen Sie hier die SharePoint-Umgebung aus, in die Sie exportieren.
 
 **Site URL**<br>
 Geben Sie hier die URL des SharePoint-Servers an (optional mit Unterverzeichnissen, falls Sie in eine spezifische Seite auf dem Server exportieren möchten).<br>
-Bitte achten Sie darauf, nur den Basispfad anzugeben. Zusätzliche Seiteninformationen wie "_layouts/15/start.aspx#/", die Ihnen in einem Browser angezeigt werden, gehören nicht zur URL.
+Bitte achten Sie darauf, nur den Basispfad anzugeben. Zusätzliche Seiteninformationen wie `_layouts/15/start.aspx#/`, die Ihnen in einem Browser angezeigt werden, gehören nicht zur URL.
 
 **User**<br>
 SharePoint-Benutzername eingeben.
