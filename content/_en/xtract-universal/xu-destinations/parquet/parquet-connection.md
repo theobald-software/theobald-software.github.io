@@ -11,24 +11,20 @@ lang: en_GB
 progressstate: 5
 ---
 
-
-### Adding Parquet Destination
-1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![XU_parquet_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
-3. Select the *Parquet* destination from the drop-down list.
-4. Click **[OK]** to confirm.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
-The window "Destination Details" consists of three subsections:
-- Name - Destination name
-- Type - Destination type
-- Output Directory - **Directory** to save Parquet files
-- Compatibability Mode- 
+
 ![Parquet-Destination-Details](/img/content/xu/parquet/parquet_destination_details.png){:class="img-responsive"}
 
+**Output directory**<br>
+Enter an existing local directory in which the extracted files are stored.
+
 {: .box-note }
-**Note:** Filling out the field **Directory** creates a new folder, if it doesn't exist. 
+**Note:** Filling out the field **Output directory** creates a new folder, if it doesn't exist. 
+
+**Compatibability mode**<br>
+You can choose between *Pure* and *Spark* for the compatibility mode. *Spark* does not support the data types used in pure mode, so other data types need to be used.
 
 ### Checking the extraction result
 

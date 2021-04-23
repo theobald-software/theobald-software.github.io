@@ -13,15 +13,15 @@ progressstate: 5
 ---
 ### Custom SQL Statement - Benutzerdefinierte SQL-Anweisung
 
-Im Dialog [Destination settings](./sql-server-einstellungen#destination-settings-öffnen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
+Im Fenster [Destination settings](./sql-server-einstellungen#destination-settings-öffnen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 1. Wählen Sie eine bestimmte Extraktion (1).
-2. Klicken Sie auf **[Destination]** (2), der Dialog "Destination Settings" wird geöffnet.
+2. Klicken Sie auf **[Destination]** (2), das Fenster "Destination Settings" wird geöffnet.
 3. Wählen Sie die Option *Custom SQL* aus der Dropdown-Liste (3) in einem der folgenden Abschnitte:
 - Preparation 
 - Row Processing
 - Finalization
-4. Klicken Sie auf **[Edit SQL]** (4), der Dialog "Edit SQL" wird geöffnet.
+4. Klicken Sie auf **[Edit SQL]** (4), das Fenster "Edit SQL" wird geöffnet.
 
 ### Custom SQL Beispiel
 Im folgenden Beispiel wird die Tabelle *KNA1* um eine Spalte mit dem aktuellen Datum vom Typ *DATETIME* erweitert. <br>
@@ -30,7 +30,7 @@ Das Befüllen der neuen Spalte wird dynamisch mit einer .NET basierten Funktion 
 {: .box-note }
 **Hinweis:** Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 
-1. Wählen Sie im Dialog "Destination Settings" im Abschnitt **Preparation** die Option *Custom SQL* und klicken Sie auf **Edit SQL**.
+1. Wählen Sie im Fenster "Destination Settings" im Abschnitt **Preparation** die Option *Custom SQL* und klicken Sie auf **Edit SQL**.
 ![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 2. Wählen Sie im Dropdown-Menü die Option *Drop & Create* und klicken Sie auf **[Generate Statement]** (5). 
 3. Fügen Sie dem generierten Statement die folgende Zeile hinzu: <br>

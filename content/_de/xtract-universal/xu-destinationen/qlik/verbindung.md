@@ -11,17 +11,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung4
 progressstate: 5
 ---
-### Hinzufügen einer Qlik-Destination
-1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster “Manage Destinations” wird geöffnet.
-2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster “Destination Details” wird geöffnet.
-![XU_Qlik_Ziel](/img/content/add-select-destination.png){:class="img-responsive"}
-3. Wähen Sie die Destination *Qlik* aus der Drop-Down-Liste aus.
-4. Klicken Sie auf **[OK]** zum Bestätigen.
+
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
 
 ### Destination Details
-Das Fenster "Destination Details" besteht aus zwei Unterabschnitten:
-- Name - Name des Datenziels
-- Type - Destinationstyp
+Um Qlik zu verwenden, müssen keine weiteren Einstellungen vorgenommen werden.
 
 ![XU_qlik_destination](/img/content/XU_qlik_destination.png){:class="img-responsive}
 

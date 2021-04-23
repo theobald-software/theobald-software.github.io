@@ -13,30 +13,22 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-flat-file
 progressstate: 5
 ---
 
-The destination is a CSV (comma-seperated values) flat file. 
+This destination is a CSV (comma-separated values) flat file. 
 
-### Adding Flat File CSV Destination
-
-1. In the main window of the Designer, navigate to **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-3. Select the *Flat File - CSV* destination from the drop-down list.
-4. Click **[OK]** to confirm.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
 ### Destination Details
-The window "Destination Details" consists of five subsections:
-- Name (states the file name)
-- Type (states the destination type)
-- File (see below)
-- CSV Settings (see below)
-- Convert / Encoding (see below)
-
 ![CSV-Flat-Destination-Details](/img/content/xu/CSV-Flat-Destination-Details.png){:class="img-responsive"}
 
-### File
-**Directory**<br>
-Defines the directory to save the destination flat files.
+**File output path**<br>
+Enter the directory to save the destination flat files in. 
+
+{: .box-note }
+**Note:** Filling out the field **Directory** creates a new folder, if it doesn't exist. 
 
 {% include _content/en/xu-specific/xu-destinations/general/csv-settings.md %}														 
 
 {% include _content/en/xu-specific/xu-destinations/general/convert-encoding.md %}	
 
+### Column encryption
+{% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}

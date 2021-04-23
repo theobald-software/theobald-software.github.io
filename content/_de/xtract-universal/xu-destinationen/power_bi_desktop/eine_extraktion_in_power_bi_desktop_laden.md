@@ -21,7 +21,7 @@ Geben Sie die OData-URL der Extraktion und klicken Sie auf OK.
 
 ![xu_pbd_url](/img/content/xu_pbd_url.png){:class="img-responsive"}
 
-Im nächsten Dialog klicken Sie auf Load.
+Im nächsten Fenster klicken Sie auf Load.
 
 ![xu_pbd_load](/img/content/xu_pbd_load.png){:class="img-responsive"}
 

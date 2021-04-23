@@ -11,8 +11,9 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection1
 ---
 
-The following settings can be defined in the SharePoint Destination configuration:
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
+### Destination Details
 
 ![XU_Sharepoint_Dest](/img/content/XU_Sharepoint_Dest.png){:class="img-responsive"}            
 
@@ -22,13 +23,13 @@ Select the type of SharePoint environment you are going to export to.
 
 **Site URL**<br>
 Enter the URL of your SharePoint server here (optionally including sub-directories if you want to export into a specific site on the server).
-Make sure you only enter the base path, omit page information a browser might show you in the address line like "_layouts/15/start.aspx#/" or similar.
+Make sure you only enter the base path, omit page information a browser might show you in the address line like `_layouts/15/start.aspx#/` or similar.
 
 **User**<br>
-Your SharePoint user name.
+Enter your SharePoint user name.
 
 **Password**<br>
-The password for your SharePoint user account.
+Enter the password for your SharePoint user account.
 
 **Test connection**<br>
-Checks if a successful connection to the SharePoint server can be established.
+Check the database connection. 

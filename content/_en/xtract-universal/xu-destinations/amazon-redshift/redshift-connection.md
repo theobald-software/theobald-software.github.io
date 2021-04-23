@@ -11,12 +11,11 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift-connection
 ---
 
-The following settings can be defined for the Redshift destination.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
+
+### Destination Details
 
 ![XU_redshift_destination](/img/content/XU_redshift_destination.png){:class="img-responsive"}
-
-**Connection**
-
 
 **Endpoint**<br>
 Defines the server address of the Redshift System.

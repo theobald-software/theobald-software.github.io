@@ -54,7 +54,7 @@ Xtract Universal benötigt Lese- und Schreibrechte für seine Operationen, die i
 ![xu-google-cloud-req-09](/img/content/xu/googlecloudstorage/xu-google-cloud-req-09.png){:class="img-responsive"}
 Der neu hinzugefügte Bereich (Scope) ist der erste Eintrag in der Tabelle. Klicken Sie auf **[Update]**, um den Eintrag zu erstellen. 
 ![xu-google-cloud-req-10](/img/content/xu/googlecloudstorage/xu-google-cloud-req-10.png){:class="img-responsive"}
-8. Klicken Sie auf **[Continue]**, wenn der Dialog mit der Meldung "Verfification required" erscheint. <br>
+8. Klicken Sie auf **[Continue]**, wenn das Fenster mit der Meldung "Verfification required" erscheint. <br>
 ![xu-google-cloud-req-11](/img/content/xu/googlecloudstorage/xu-google-cloud-req-11.png){:class="img-responsive"}
 9. Bestätigen Sie zweimal mit **[Save and continue]**. Klicken Sie auf **[Back to dashboard]**, um zu Dashboard zurückzukehren.      
 ![xu-google-cloud-req-12](/img/content/xu/googlecloudstorage/xu-google-cloud-req-12.png){:class="img-responsive"}

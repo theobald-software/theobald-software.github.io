@@ -18,11 +18,6 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-destination-settings
 The following settings can be defined for the destination:  
 
 ### Destination Settings
-The window "Destination Settings" consists out of four subsections:
-- File Name
-- Column Name Style
-- Date Conversion
-- Existing files
 
 ![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
       

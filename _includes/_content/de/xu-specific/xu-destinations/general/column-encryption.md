@@ -13,7 +13,7 @@ Da wahlfreier Zugriff einen erheblichen Overhead verursacht, wird empfohlen die 
 #### Weiteres Vorgehen
 
 {: .box-note }
-**Hinweis:** TDer Benutzer muss einen öffentlichem RSA Schlüssel zur Verfügung stellen. 
+**Hinweis:** Der Benutzer muss einen öffentlichem RSA Schlüssel zur Verfügung stellen. 
 
 
 1. Wählen Sie die zu verschlüsselnden Spalten unter **Extraction settings > [General settings](https://help.theobald-software.com/en/xtract-universal/getting-started/general-settings) > Encryption** aus.

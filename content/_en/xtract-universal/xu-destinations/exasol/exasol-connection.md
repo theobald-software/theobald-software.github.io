@@ -11,23 +11,20 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol-connection
 ---
 
-The following settings can be defined for the Exasol destination.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
+
+### Destination Details
 
 ![Exa-Connection](/img/content/Exa-Connection.png){:class="img-responsive"}
 
-**Connection**
-
-**Host Name / Port**<br>
-Defines the name or IP of the DB2 server and the port number. 
+**Connection string**<br>
+Enter the name or IP of the DB2 server and the port number. 
 
 **User Id / Password**<br>
-Defines the user Id and password of the database user.
+Enter the user ID and password of the database user.
 
-Schema
-Defines the schema of the database.
-
-**Provider**<br>
-Defines the .Net provider for the database. To install the provider refer to [requirements](../amazon-aws-s3/requirements).
-            
+**Schema**<br>
+Enter the schema of the database.
+  
 **Test Connection**<br>
 Checks the database connection.

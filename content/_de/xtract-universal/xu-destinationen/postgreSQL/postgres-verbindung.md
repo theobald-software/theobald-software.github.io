@@ -10,7 +10,9 @@ weight: 2
 lang: de_DE
 ---
 
-Folgende Einstellungen müssen für die Verbindung zur Zieldatenbank definiert werden.
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+
+### Destination Details
 
 ![DESTINATION DETAILS](/img/content/xu/postgres_destination_details.png){:class="img-responsive"}
 
@@ -28,24 +30,34 @@ Folgende TLS Modi stehen für die Verbindung zur Verfügung:
 | Require | Xtract Universal erzwingt eine verschlüsselte TLS-Verbindungen zum PostgreSQL-Server - unverschlüsselte Verbindungen werden nicht hergestellt |
 | Disable |**Achtung** - Eine unverschlüsselte, unsichere Verbindung wird zum PostgreSQL-Server hergestellt |
 
-Bitte stellen Sie sicher, dass die Zertifizierungsstelle (CA), die das Zertifikat signiert hat, oder das Zertifikat selbst vom Client vertrauenswürdig ist. Weiterführende Information entnehmen Sie bitte folgendem Link: - [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
+Bitte stellen Sie sicher, dass die Zertifizierungsstelle (CA), die das Zertifikat signiert hat, oder das Zertifikat selbst vom Client vertrauenswürdig ist.
+Weiterführende Information entnehmen Sie bitte folgendem Link: - [Secure TCP/IP Connections with SSL](https://www.postgresql.org/docs/11/ssl-tcp.html).
+
+**Private endpoint**<br>
+Dieses Feld ist optional. Sie können einen alternativen Hostnamen eingeben, unter dem eine Verbindung aufgebaut wird. <br>
+Beispiel: Die PostgreSQL-Datenbank wird in einer Cloud gehostet und der Zugriff auf den Cloud-Domainnamen der Datenbank ist durch Unternehmensrichtlinien eingeschränkt. 
+In diesem Fall kann der Zugriff auf die Datenbank über einen privaten Endpunkt erfolgen. Geben Sie den privaten Endpunkt in diesem Feld ein. 
+Der PostgreSQL-Cloud-Domainname muss für die Zertifikatsvalidierung in das Feld **Server Name** eingegeben werden
+
+**Port**<br>
+Der Standard-Port ist 5432.
 
 **Windows Authentication**<br>
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am PostgreSQL Server zu authentisieren, siehe auch [Client Authentication](https://www.postgresql.org/docs/11/client-authentication.html).
 
-**Port**<br>
-standardmäßig wird der Port 5432 ausgewählt
+{: .box-note }
+**Hinweis:** Um eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung herzustellen, müssen Sie den [XU-Dienst unter einem Windows AD-Benutzer](../../fortgeschrittene-techniken/service-account) mit Zugriff auf die Datenbank ausführen.
+
 
 **Username**<br>
-Name des Datenbank-Benutzers.
+Name des Datenbank-Benutzers eingeben.
 
 **Password**<br>
-Passwort des Datenbank-Benutzers
+Passwort des Datenbank-Benutzers eingeben.
 
 **Database**<br>
-Name der Datenbank
+Name der Datenbank eingeben.
 
 **Test Connection**<br>
-Klicken Sie auf den Knopf, um die Datenbankverbindung zu testen.
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen.
 
-![DESTINATION DETAILS](/img/content/xu/postgres_test_connection.png){:class="img-responsive"}

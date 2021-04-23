@@ -11,11 +11,13 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung
 ---
 
-Die folgenden Einstellungen sind beim Einrichten der Tableau Destination verfügbar:
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+
+### Destination Details
 
 ![tableauDestinationDetails-hyper](/img/content/tableauDestinationDetails-hyper.png){:class="img-responsive"}
 
-### Output directory <br>
+### Output directory
 Geben Sie das Verzeichnis auf dem Xtract Universal Server an, in das die exportierten Tableau-Dateien gespeichert werden sollen.
 
 {: .box-note }
@@ -31,13 +33,13 @@ Option zum Entfernen der lokalen Datei nach einem erfolgreichen Upload.
 Die IP-Adresse oder der Domainname des Servers, beginnend mit `http://` oder `https://`.
 
 **Username** <br>
-Ihr Benutzername für Tableau Server/Online.
+Ihr Benutzername für Tableau Server/Online eingeben.
 
 **Password** <br>
-Ihr Passwort für Tableau Server/Online.
+Ihr Passwort für Tableau Server/Online eingeben.
 
 **Site (for Tableau online)** <br>
-Die ID der Website für die Veröffentlichung Ihrer Datenquelle. 
+Die ID der Website für die Veröffentlichung Ihrer Datenquelle eingeben. 
 Das Feld ist obligatorisch und kann nicht leer gelassen werden.
 
 Erhalten Sie die korrekte Website-URL von [Tableau Online](https://online.tableau.com/#/site/Site/workbooks).
@@ -54,6 +56,3 @@ Eine Dropdown-Liste mit Sites, die auf dem verbundenen On-Prem-Server gespeicher
 
 **Project**<br>
 Das Projekt zum Veröffentlichen der Datenquelle. 
-
-
-Sie können die lokal erstellte Datei nach dem erfolgreichen Hochladen entfernen lassen.

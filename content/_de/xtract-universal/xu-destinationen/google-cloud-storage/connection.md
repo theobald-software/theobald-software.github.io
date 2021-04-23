@@ -10,22 +10,12 @@ weight: 2
 lang: de_DE
 progressstate: 5
 ---
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	 
 
-### Google Cloud Storage Destination hinzufügen
-1. Im Hauptfenster des Designers navigieren Sie zu **Server > Manage Destinations**. Das Fenster "Manage Destinations" wird geöffnet.
-2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
+### Destination Details
 ![xu-google-cloud-req-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-01.png){:class="img-responsive"}
-3. Wählen Sie die Destination *Google Cloud Storage*  aus der Drop-Down-Liste aus.
-
-Das Fenster "Destination Details" besteht aus zwei Tabs:
-- GCS Settings
-- File Format
 
 ### GCS Settings
-Der Tab *GCS Settings* besteht aus drei Unterabschnitten:
-- Connection 
-- Bucket
-- Encryption
 
 #### Connection
 **Client ID**<br>
@@ -39,14 +29,13 @@ Verarbeitet den zuvor erstellten OAuth-Flow, um eine Verbindung mit dem Speicher
 Wählend Sie Ihr Google-Konto aus und gewähren Sie Xtract Universal Zugriff in allen erforderlichen Fenstern. <br>
 
 {: .box-note }
-Hinweis: Wenn Sie die Anwendung nicht verifiziert haben, erscheint ein Fenster mit der Meldung: "This App isn't verified" (Diese App ist nicht verifizert). Klicken Sie auf **[Advanced]** und **[Go to Xtract Universal (unsafe)]**. <br>  
+**Hinweis**: Wenn Sie die Anwendung nicht verifiziert haben, erscheint ein Fenster mit der Meldung: "This App isn't verified" (Diese App ist nicht verifizert). Klicken Sie auf **[Advanced]** und **[Go to Xtract Universal (unsafe)]**. <br>  
 
-Nach einer erfolgreichen Verbindung erscheint die Meldung: "Authentication succeeded" (Authentifizierung erfolgreich)  im Browser. In Xtract Universal wird die Meldung "Connection established" (Verbindung hergestellt" in einem separaten Dialog angezeigt. <br>  
-
-![xu-google-cloud-con-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-03.png){:class="img-responsive"}
+Nach einer erfolgreichen Verbindung erscheint die Meldung: "Authentication succeeded" (Authentifizierung erfolgreich)  im Browser. In Xtract Universal wird die Meldung "Connection established" (Verbindung hergestellt" in einem separaten Fenster angezeigt. <br>  
 
 #### Bucket
-Der Unterabschnitt "Bucket" kann nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden..<br>
+Der Unterabschnitt "Bucket" kann nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden.<br>
+
 **Project ID** <br>
 Die Projekt-ID kann im GCP-Dashboard unter *Project info* nachgeschlagen werden.
 
@@ -88,6 +77,7 @@ Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstel
 ### Retry-Funktion
 
 Die Retry-Funktion ist eine eingebaute Funktion von der Google Cloud Storage Destination. Die Retry-Funktion ist automatisch aktiviert.
+
 Die Retry-Funktion verhindert, dass Extraktionen fehlschlagen, wenn kurzzeitige Verbindungsunterbrechungen zu Google Cloud auftreten.
 Weitere allgemeine Informationen über Strategie der Wiederholversuche in einer Google Cloud Storage-Umgebung finden Sie in der offiziellen [Google Cloud-Hilfe](https://cloud.google.com/storage/docs/gsutil/addlhelp/RetryHandlingStrategy).
 Xtract Universal verfolgt eine exponentielle Strategie der Wiederholversuche. Dies bedeutet, dass 8 Verbindungsversuche gestartet werden in einem Zeitraum von 140 Sekunden. Sollte in dem Zeitraum von 140 Sekunden keine Verbindung zustande kommen, wird die Extraktion abgebrochen. 

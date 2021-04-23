@@ -11,23 +11,20 @@ lang: de_DE
 progressstate: 5
 ---
 
-### Parquet Destination hinzufügen
-1. Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Manage Destinations]**. Das Fenster "Manage Destinations" wird geöffnet.
-2. Klicken Sie auf **[Add]**, um eine neue Destination hinzuzufügen. Das Fenster "Destination Details" wird geöffnet.
-![XU_flatfile_Parquet_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
-3. Wähen Sie die Destination *Parquet* aus der Drop-Down-Liste aus.
-4. Klicken Sie auf **[OK]** zum Bestätigen.
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+
+### Destination Details
  
-### Destination Details - Destinationsdetails
-Das Fenster "Destination Details" besteht aus drei Unterabschnitten:
-- Name - Name der Zielumgebung
-- Type - Zielumgebungstyp
-- Output Directory - Verzeichnis (**Directory**) zum Speichern von Parquet Dateien
-- Compatibability Mode - 
 ![JSON-Parquet-Destination-Details](/img/content/xu/parquet/parquet_destination_details.png){:class="img-responsive"}
 
+**Output directory**<br>
+Angabe eines vorhandenen Verzeichnisses, in das die Zieldateien abgelegt werden.
+
 {: .box-note }
-**Hinweis:** Das Ausfüllen des Feldes **Directory** erstellt einen neuen Ordner, falls er nicht existiert. 
+**Hinweis:** Das Ausfüllen des Feldes **Output directory** erstellt einen neuen Ordner, falls er nicht existiert. 
+
+**Compatibability mode**<br>
+Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen. *Spark* unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
 
 ### Überprüfen des Extraktionsergebnisses 
 

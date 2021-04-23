@@ -11,39 +11,35 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=oracle-connection
 ---
 
-The following settings can be defined for the Oracle destination.
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
+
+### Destination Details
 
 ![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_1.png){:class="img-responsive"}
 
 
+**Host / Data source** <br>
+Enter the name of the Oracle server. 
 Alternatively you can enter the [connect descriptor](https://docs.oracle.com/html/E10927_01/featConnecting.htm), such as:
 
-(DESCRIPTION =<br>
- (ADDRESS = (PROTOCOL = TCP)<br>
-(HOST = [oracle host name])(PORT = [port number]))<br>
-(CONNECT_DATA =<br>
-(SERVER = DEDICATED)<br>
-(SERVICE_NAME = [oracle service name])))<br>
-
-![XU_oracle_connection_test_2](/img/content/XU_oracle_connection_test_2.png){:class="img-responsive"}
-
-
-**Connection**
-
-**Host / Data source** <br>
-Defines the name of the Oracle server or the connect descriptor. 
+*(DESCRIPTION =*<br>
+*(ADDRESS = (PROTOCOL = TCP)*<br>
+*(HOST = [oracle host name])(PORT = [port number]))*<br>
+*(CONNECT_DATA =*<br>
+*(SERVER = DEDICATED)*<br>
+*(SERVICE_NAME = [oracle service name])))*<br>
 
 **Port** <br>
-Defines the Oracle server connection port (Default: 1521).
+Enter the Oracle server connection port (Default: 1521).
 
 **SID / Service name** <br>
-Defines the unique name (SID) or the alias (service name) of the Oracle database.
+Enter the unique name (SID) or the alias (service name) of the Oracle database.
 
 **Username** <br> 
-Defines the user name.
+Enter the user name.
 
 **Password** <br>
-Defines the password.
-            
+Enter the password.
+
 **Test Connection** <br>
-Checks the database connection. 
+Check the database connection. 

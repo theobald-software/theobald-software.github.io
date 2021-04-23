@@ -19,7 +19,7 @@ To do so, please open the General Settings of the extraction and select
 
 ![Require-SAP-Credentials](/img/content/Require-SAP-Credentials.png){:class="img-responsive"}
 
-In the OData Connection dialog the user must provide his SAP username and password. Using those credentials the data will be extracted from SAP. 
+In the OData Connection window the user must provide his SAP username and password. Using those credentials the data will be extracted from SAP. 
 
 ![Tableau-Odata-Credentials](/img/content/Tableau-Odata-Credentials.png){:class="img-responsive"}
 

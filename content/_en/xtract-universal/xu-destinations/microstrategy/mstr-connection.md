@@ -11,8 +11,9 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=mstr-connection
 ---
 
-The following settings can be defined for the connection. 
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
+### Destination Details
 ![mstr-destination-details](/img/content/mstr-destination-details.png){:class="img-responsive"} 
 
 **JSON Data API Server**<br>

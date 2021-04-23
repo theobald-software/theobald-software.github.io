@@ -1,4 +1,3 @@
-#### General
 
 The "Column Encryption" feature enables users to encrypt columns in the extracted data set 
 before uploading them to the destination.

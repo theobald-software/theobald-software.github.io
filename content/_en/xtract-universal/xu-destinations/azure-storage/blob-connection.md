@@ -12,31 +12,11 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=blob-connection
 ---
 
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
-### Adding an Azure Storage Destination
-1. Navigate to **Server > Manage Destinations** in the main window of the Designer. The window "Manage Destinations" opens.
-![XU_Manage_Destinations](/img/content/sever_manage_dest.png){:class="img-responsive"}
-2. Click **[Add]** to add a new destination. The window "Destination Details" opens.
-![XU_azure_Destination](/img/content/add-select-destination.png){:class="img-responsive"}
-3. Enter a name for the new destination.
-4. Select the *Azure Storage (Blob / Data Lake)* destination type from the drop-down list. The destination parameters appear.
-
-The window "Destination Details" consists of two tabs:
-- Azure Storage
-- File Format
-
-### Azure Storage Parameters
+### Destination Details
 
 ![xu-azure-blob-con-01](/img/content/xu/xu-azure-blob-con-01.png){:class="img-responsive"}
-
-The tab *Azure Storage* consists of the following subsections:
-
-- Connection Type(1) in combination with
-	- Access key
-	- Azure active directory
-- Container (2)
-- Misc (3)
-- Column Encryption (4)
 
 ### Connection Type (1)
 
@@ -44,7 +24,7 @@ The subsection *Connection Type* offers two different methods for authenticating
 1. Authentication via Access Key
 2. Authentication via Azure Active Directory  
 
-### Authentication via Access Key
+#### 1. Authentication via Access Key
 This method of authentication authorizes access to the complete storage account. 
 General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). <br>
 Check the **Access key** checkbox to select this connection type.
@@ -67,7 +47,7 @@ If the connection is successful, a "Connection successful" info window opens.
 Click **[OK]** to confirm. <br>
 
 
-### Authentication via Azure Active Directory
+#### 2. Authentication via Azure Active Directory
 Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
 Compared to *Authentication via Access Key*, this option allows a more granular way of 
 authorizing access to a storage account and its individual storage containers. 
@@ -162,22 +142,26 @@ This allows to dynamically set a folder path when executing an extraction. <br>
 
 {% include _content/en/xu-specific/xu-destinations/general/column-encryption.md %}
 
-### File Format 
-Select the required file format from the drop-down menu. 
-The formats *Parquet* and *CSV* are available.
-![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-04.png){:class="img-responsive"}
-The settings for *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).
+### File Format
 
-If you select *Parquet* as the file format, the **Compatibility mode** offers the options *Pure* and *Spark*.
-![azure_blob_destination_settings_csv_settings](/img/content/xu/xu-azure-blob-con-05.png){:class="img-responsive"}
+**File type**<br>
+Select the required file format. You can choose between *Parquet* and *CSV*.
+![AWS S3](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 
+#### CVS Settings
+
+The settings for file type *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).
+
+#### Parquet Settings
+
+**Compatibility mode**<br>
+You can choose between *Pure* and *Spark* for the compatibility mode.
+Spark does not support the data types used in pure mode, so other data types need to be used.
 
 | SAP | Pure | Spark |
 |------|-------------|-------|
 | INT1 | UINT_8 | INT16 |
 | TIMS | TIME_MILLIS | UTF8 |
-
-Spark does not support the datatypes used in pure mode, so other datatypes need to be used.
 
 ### Connection Retry and Rollback
 
@@ -187,6 +171,7 @@ They are activated by default.
 Connection retry is a functionality that prevents extractions from failing if the connection to Azure is interrupted.
 The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
 The retry logic is based on WebExceptionStatus. 
+
 If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Azure.
 The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
 If a connection is not established during this timespan, the extraction fails.
