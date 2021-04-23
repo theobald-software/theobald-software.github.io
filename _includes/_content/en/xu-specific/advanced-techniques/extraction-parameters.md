@@ -20,11 +20,23 @@ clearBuffer | to clear/keep the result buffer | default value -  false
 preview | to enable/disable preview mode | default value - false
 source | to dynamically select the source SAP system from which data is extracted (e.g., SAP_DEV and SAP_PROD). Applies only if more than one SAP system is used. | -
 destination | to dynamically select the destination to which extraction is written (e.g., db_1 and db_2). Applies only if more than one destination is used.| -
-rows | to set the maximum number of rows to be extracted | available in Table 
-where | to set a where clause | available in Table 
-packageSize | to set the package size | available in Table  
-decimalSeparator | to set a symbol between integer and fractional part | available in CSV
-columnSeparator |  to set a symbol which indicates the start of a new column | available in CSV
+rows | to set the maximum number of rows to be extracted | available in Table & [SAP Query](../sap-queries/extraction-settings)
+where | to set a where clause | available in [Table](../table/where-clause) 
+packageSize | to set the package size | available in [Table](../table/extraction-settings#extraction-settings)  
+updateMode | Update mode to use for thie run| verfügbar in [ODP](../odp/odp-functions-ov#update-mode)
+subscriptionSuffix | Suffix to use multiple inits on a single SAP system | verfügbar in [ODP](../odp/odp-functions-ov#subscriptions)
+extractDataOnDeltaInit | Whether to extract data if request is delta init| verfügbar in [ODP](../odp/odp-functions-ov#update-mode)
+hierarchieName | The name of the hierarchy to extract for hierarchy extractors| verfügbar in ODP & [DeltaQ](../datasource-deltaq/hierarchien)
+variant | Variant | verfügbar in [Report](../abap-reports/variants-and-selections) & [SAP Query](../sap-queries/apply-variants)
+batchJobName | Name of the Batch Job| verfügbar in [Report](../abap-reports/report-extraction-settings)
+gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
+gatewayService | Gateway Service | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
+programID | Program ID | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
+logicalDestination | Logical Destination | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
+requestID | Request ID (for Repair Request only) | verfügbar in [DeltaQ](../datasource-deltaq/extraction-settings#base-tab)
+updateType | F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Repeat)| verfügbar in [DeltaQ](../datasource-deltaq/update-mode)
+decimalSeparator | to set a symbol between integer and fractional part | available in CSV destinations
+columnSeparator |  to set a symbol which indicates the start of a new column | available in CSV destinations
 
 
 ### Source

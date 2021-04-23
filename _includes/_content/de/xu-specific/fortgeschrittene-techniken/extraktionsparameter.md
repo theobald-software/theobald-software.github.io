@@ -16,13 +16,25 @@ Parametername | Beschreibung | Spezielle Infos
 ------------ | ------------- | -------------
 clearBuffer | leert den Ergebnis-Buffer | Default-Wert - false
 preview | aktiviert die Preview | Default-Wert - false
-source | ermöglicht das dynamische Auswählen eines SAP-Quellsystems aus dem die Daten extrahiert werden. Nur aktiv, wenn mehrere SAP-Quellsysteme verfügbar sind, z.B. sap_dev und sap_prod. | -
-destination | ermöglicht das dynamische Auswählen einer Destination, in die die extrahierten Daten geschrieben werden. Nur aktiv, wenn mehrere Destinationen verfügbar sind, z.B. db_1 und db_2.| -
-rows | setzt die maximale Anzahl der extrahierten Datensätze | verfügbar in Table
-where | setzt die WHERE-Bedingung | verfügbar in Table
-packageSize | setzt die Paketgröße | verfügbar in Table
-decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar in CSV
-columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV
+source | ermöglicht das dynamische Auswählen eines SAP-Quellsystems aus dem die Daten extrahiert werden. <br> Nur aktiv, wenn mehrere SAP-Quellsysteme verfügbar sind, z.B. sap_dev und sap_prod. | -
+destination | ermöglicht das dynamische Auswählen einer Destination, in die die extrahierten Daten geschrieben werden. <br> Nur aktiv, wenn mehrere Destinationen verfügbar sind, z.B. db_1 und db_2.| -
+rows | setzt die maximale Anzahl der extrahierten Datensätze | verfügbar in Table & [SAP Query](../sap-queries/extraktionseinstellungen_1)
+where | setzt die WHERE-Bedingung | verfügbar in [Table](../table/where-bedingung)
+packageSize | setzt die Paketgröße | verfügbar in [Table](../table/extraktionseinstellungen#extraction-settings)
+updateMode | Update mode to use for thie run| verfügbar in [ODP](../odp/odp-functions-ov#load-verfahren-update-mode)
+subscriptionSuffix | Suffix to use multiple inits on a single SAP system | verfügbar in [ODP](../odp/odp-functions-ov#abonnements)
+extractDataOnDeltaInit | Whether to extract data if request is delta init| verfügbar in [ODP](../odp/odp-functions-ov#load-verfahren-update-mode)
+hierarchieName | The name of the hierarchy to extract for hierarchy extractors| verfügbar in ODP & [DeltaQ](../datasource-deltaq/hierarchies)
+variant | Variant | verfügbar in [Report](../report-abap-reports-ansteuern/varianten-und-selektionen) & [SAP Query](../sap-queries/varianten-anwenden)
+batchJobName | Name of the Batch Job| verfügbar in [Report](../report-abap-reports-ansteuern/report-extraktionseinstellungen)
+gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)
+gatewayService | Gateway Service | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)
+programID | Program ID | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)
+logicalDestination | Logical Destination | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)
+requestID | Request ID (for Repair Request only) | verfügbar in [DeltaQ](../datasource-deltaq/extraktionseinstellungen#registerkarte-base)
+updateType | F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Repeat)| verfügbar in [DeltaQ](../datasource-deltaq/update-modus)
+decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar in CSV Destinationen
+columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV Destinationen
 
 ### Source
 Die Verbindungseinstellungen zu einer SAP Quelle können dynamisch über die URL oder die xu.exe geändert werden. 
