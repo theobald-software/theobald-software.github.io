@@ -20,7 +20,7 @@ Dazu öffnen Sie die *General Settings* der Extraktion und wählen Sie
 
 ![Require-SAP-Credentials](/img/content/Require-SAP-Credentials.png){:class="img-responsive"}
 
-Im OData-Verbindungsdialog muss nun der Tableau-Benutzer seine SAP-Anmeldedaten (Benutername und Passwort) eingeben. Die Daten werden nun aus SAP mit diesen Anmeldedaten extrahiert. 
+Im OData-VerbindungsFenster muss nun der Tableau-Benutzer seine SAP-Anmeldedaten (Benutername und Passwort) eingeben. Die Daten werden nun aus SAP mit diesen Anmeldedaten extrahiert. 
 
 ![Tableau-Odata-Credentials](/img/content/Tableau-Odata-Credentials.png){:class="img-responsive"}
 

@@ -53,7 +53,7 @@ Xtract Universal needs read and write permissions for its operations, which are 
 ![xu-google-cloud-req-09](/img/content/xu/googlecloudstorage/xu-google-cloud-req-09.png){:class="img-responsive"}
 The newly added scope is the first entry in the table. Click **[Update]** to create the entry. 
 ![xu-google-cloud-req-10](/img/content/xu/googlecloudstorage/xu-google-cloud-req-10.png){:class="img-responsive"}
-8. Click **[Continue]** when the "Verfification required" dialogue is prompted. <br>
+8. Click **[Continue]** when the "Verfification required" window is prompted. <br>
 ![xu-google-cloud-req-11](/img/content/xu/googlecloudstorage/xu-google-cloud-req-11.png){:class="img-responsive"}
 9. Confirm twice with **[Save and continue]**. Click **[Back to dashboard]** to return to the dashboard.      
 ![xu-google-cloud-req-12](/img/content/xu/googlecloudstorage/xu-google-cloud-req-12.png){:class="img-responsive"}

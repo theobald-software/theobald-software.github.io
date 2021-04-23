@@ -12,7 +12,7 @@ lang: de_DE
 ---
 Die JSON-Destination ist ein generischer JSON-Stream über HTTP. 
 
-{% include _content/de/xu-specific/xu-destinations/general/connection_1.md %}	
+{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
 
 
 ### Destination Details

@@ -30,7 +30,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ### Preparation - SQL Anweisungen
 
-Definiert die Aktion auf der Zieldatenbank, bevor die Daten in die Zieltabelle eingefügt werden.
+Aktion auf der Zieldatenbank, bevor die Daten in die Zieltabelle eingefügt werden.
 - *Drop & Create*: Tabelle entfernen falls vorhanden und neu anlegen (Default).
 - *Truncate Or Create*: Tabelle entleeren falls vorhanden, sonst anlegen.
 - *Create If Not Exists*: Tabelle anlegen falls nicht vorhanden.
@@ -57,7 +57,7 @@ Definiert, wie die Daten in die Zieltabelle eingefügt werden.
 
 ### Finalization - SQL Anweisungen
 
-Definiert die Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle erfolgreich eingefügt werden.
+Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle erfolgreich eingefügt werden.
 - *Finalize Merge*: schließt den Merge-Prozess ab und löscht z.B. die temporäre Staging-Tabelle. Für weitere Infos siehe Abschnitt Über Merging. 
 - *None*: keine Aktion (Default).
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL. 
@@ -72,7 +72,7 @@ Die Option Custom SQL ermöglicht die Erstellung benutzerdefinierter SQL- oder S
 als Vorlagen verwendet werden:
 
 1. Wählen Sie im Unterabschnitt z.B. **Preparation** die Option **Custom SQL** (1) aus der Dropdown-Liste.
-2. Klicken Sie auf **[Edit SQL]**. Der Dialog "Edit SQL" wird geöffnet.
+2. Klicken Sie auf **[Edit SQL]**. das Fenster "Edit SQL" wird geöffnet.
 ![Formula-ExistsTable](/img/content/Formula-ExistsTable.png){:class="img-responsive"}
 3. Navigieren Sie zum Dropdown-Menü und wählen Sie einen vorhandenen Befehl (3). 
 4. Klicken Sie auf **[Generate Statement]**. Eine neue Anweisung wird generiert.

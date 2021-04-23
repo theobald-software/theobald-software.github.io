@@ -30,4 +30,4 @@ Name der Datenbank.
 Schema der Datenbank eingeben.
 
 **Test Connection**<br>
-Datenbankverbindung testen. 
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 

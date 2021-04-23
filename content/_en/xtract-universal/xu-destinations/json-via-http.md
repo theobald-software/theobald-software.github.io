@@ -13,7 +13,7 @@ progressstate: 5
 
 The JSON destination is a generic JSON stream over HTTP. 
 
-{% include _content/en/xu-specific/xu-destinations/general/connection_1.md %}	
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
 
 
 ### Destination Details

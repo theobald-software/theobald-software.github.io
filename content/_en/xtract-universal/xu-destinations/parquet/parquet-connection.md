@@ -17,8 +17,14 @@ progressstate: 5
 
 ![Parquet-Destination-Details](/img/content/xu/parquet/parquet_destination_details.png){:class="img-responsive"}
 
+**Output directory**<br>
+Enter an existing local directory in which the extracted files are stored.
+
 {: .box-note }
-**Note:** Filling out the field **Directory** creates a new folder, if it doesn't exist. 
+**Note:** Filling out the field **Output directory** creates a new folder, if it doesn't exist. 
+
+**Compatibability mode**<br>
+You can choose between *Pure* and *Spark* for the compatibility mode. *Spark* does not support the data types used in pure mode, so other data types need to be used.
 
 ### Checking the extraction result
 

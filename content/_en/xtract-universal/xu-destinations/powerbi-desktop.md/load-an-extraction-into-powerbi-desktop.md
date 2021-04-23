@@ -22,7 +22,7 @@ Paste the extraction OData URL and click OK.
 
 ![xu_pbd_url](/img/content/xu_pbd_url.png){:class="img-responsive"}
 
-In the next dialog click on Load.
+In the next window click on Load.
 
 ![xu_pbd_load](/img/content/xu_pbd_load.png){:class="img-responsive"}
 

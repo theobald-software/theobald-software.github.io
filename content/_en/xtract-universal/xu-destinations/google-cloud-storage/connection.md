@@ -33,9 +33,7 @@ Choose your Google account and grant access to Xtract Universal in all required 
 {: .box-note }
 **Note**: If you did not verify the app, a window with the message: "This app isn't verified" is displayed. Click **[Advanced]** and **[Go to Xtract Universal (unsafe)]**. <br>  
 
-When a connection is successful, an "Authentication succeeded" message is displayed in the browser. In Xtract Universal a "Connection established" message is displayed in a separate dialogue. <br>  
-
-![xu-google-cloud-con-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-03.png){:class="img-responsive"}
+When a connection is successful, an "Authentication succeeded" message is displayed in the browser. In Xtract Universal a "Connection established" message is displayed in a separate window. <br>  
 
 #### Bucket
 The "Bucket" subsection can only be filled after a connection to the storage account has been established.<br>

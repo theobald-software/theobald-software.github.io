@@ -17,17 +17,17 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=redshift-verbindung
 ![XU_redshift_destination](/img/content/XU_redshift_destination.png){:class="img-responsive"}
 
 **Endpoint**<br>
-Definiert die Server-Adresse des Redshift-Systems.<br>
+Server-Adresse des Redshift-Systems.<br>
 (Zu finden in der Redshift Management Console)
 
 **Port**<br>
-Definiert die Portnummer für die Verbindung.
+Portnummer für die Verbindung.
 
 **Username / Password**<br>
-Definiert den Benutzernamen und das Passwort des Datenbanknutzers.
+Benutzername und Passwort des Datenbanknutzers.
 
 **Database**<br>
-Definiert den Namen der Datenbank, auf die zugegriffen werden soll.
+Name der Datenbank, auf die zugegriffen werden soll.
 
 **Test Connection**<br>
-Testet die Verbindung zur Datenbank. 
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen.

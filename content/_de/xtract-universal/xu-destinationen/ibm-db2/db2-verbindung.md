@@ -17,9 +17,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=db2-verbindung
 
 ![DB2-Connection](/img/content/DB2-Connection.png){:class="img-responsive"}
 
-**Type**<br>
-Destinations-Typ eingeben.
-
 **Provider**<br>
 Netz-Anbieter für DB2 eingeben. Zur Installation des Providers siehe bei Anforderungen.
 
@@ -36,4 +33,4 @@ Name der IBM Datenbank eingeben.
 Schema der DB2-Datenbank eingeben.
 
 **Test Connection** <br>
-Datenbankverbindung testen. 
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 

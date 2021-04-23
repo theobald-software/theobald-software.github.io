@@ -17,9 +17,6 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=db2-connection
 
 ![DB2-Connection](/img/content/DB2-Connection.png){:class="img-responsive"}
 
-**Type**<br>
-Enter the Destination type.
-
 **Provider**<br>
 Enter the .Net provider for DB2. To install the provider refer to requirements.
 

@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=tableau-mit-odata
 Als erstes müssen wir das Ziel auf OData setzen, siehe [OData-Ziel setzen](..odata-atom/odata_destination_setzen).<br>
 In Tableau klicken Sie auf Connect und selektieren Sie OData. <br>
 Fügen Sie die OData-URL der Extraktion ein und klicken Sie auf Connect. <br>
-Klicken Sie OK, um den Verbindungsdialog zu schließen. 
+Klicken Sie OK, um den VerbindungsFenster zu schließen. 
 
 ![Tableau-Connect-OData](/img/content/Tableau-Connect-OData.png){:class="img-responsive"}
 

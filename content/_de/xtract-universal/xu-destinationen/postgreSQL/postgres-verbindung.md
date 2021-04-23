@@ -37,10 +37,10 @@ Weiterführende Information entnehmen Sie bitte folgendem Link: - [Secure TCP/IP
 Dieses Feld ist optional. Sie können einen alternativen Hostnamen eingeben, unter dem eine Verbindung aufgebaut wird. <br>
 Beispiel: Die PostgreSQL-Datenbank wird in einer Cloud gehostet und der Zugriff auf den Cloud-Domainnamen der Datenbank ist durch Unternehmensrichtlinien eingeschränkt. 
 In diesem Fall kann der Zugriff auf die Datenbank über einen privaten Endpunkt erfolgen. Geben Sie den privaten Endpunkt in diesem Feld ein. 
-Der PostgreSQL-Cloud-Domain-Name muss für die Zertifikatsvalidierung in das Feld **Server Name** eingegeben werden
+Der PostgreSQL-Cloud-Domainname muss für die Zertifikatsvalidierung in das Feld **Server Name** eingegeben werden
 
 **Port**<br>
-Standardmäßig ist Port 5432 ausgewählt.
+Der Standard-Port ist 5432.
 
 **Windows Authentication**<br>
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am PostgreSQL Server zu authentisieren, siehe auch [Client Authentication](https://www.postgresql.org/docs/11/client-authentication.html).
@@ -59,5 +59,5 @@ Passwort des Datenbank-Benutzers eingeben.
 Name der Datenbank eingeben.
 
 **Test Connection**<br>
-Datenbankverbindung testen.
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen.
 

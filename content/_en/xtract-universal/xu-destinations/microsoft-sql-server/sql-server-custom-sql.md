@@ -13,15 +13,15 @@ progressstate: 5
 ---
 ### Custom SQL Statement
 
-In the dialogue [Destination settings](./sql-server-settings#opening-the-destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
+In the window [Destination settings](./sql-server-settings#opening-the-destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 1. Select a particular extraction (1).
-2. Click **[Destination]** (2), the dialogue "Destination Settings" opens.
+2. Click **[Destination]** (2), the window "Destination Settings" opens.
 3. Select the option *Custom SQL* from the drop-down list (3) in one of the following sections:
 - Preparation 
 - Row Processing
 - Finalization
-4. Click **[Edit SQL]** (4), the dialogue "Edit SQL" opens.
+4. Click **[Edit SQL]** (4), the window "Edit SQL" opens.
 
 ### Custom SQL Example
 In the following example, the table *KNA1* is extended by a column with the current timestamp of type *DATETIME*. <br>
@@ -30,7 +30,7 @@ The new column is filled dynamically using a .NET-based function.
 {: .box-note }
 **Note:** The data types that can be used in the SQL statement depend on the SQL Server database version.
 
-1. In the dialogue "Destination Settings", within the section **Preparation**, select *Custom SQL* and click **[Edit SQL]**.
+1. In the window "Destination Settings", within the section **Preparation**, select *Custom SQL* and click **[Edit SQL]**.
 ![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 2. In the drop-down menu, select the option *Drop & Create* and click **[Generate Statement]** (5). 
 3. Add the following line in the generated statement: <br>

@@ -42,4 +42,4 @@ Name des Datenbankbenutzers eingeben.
 Passwort des Datenbankbenutzers eingeben.
             
 **Test Connection**<br>
-Datenbankverbindung testen. 
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 

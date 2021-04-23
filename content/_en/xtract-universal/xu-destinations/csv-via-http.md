@@ -13,9 +13,9 @@ progressstate: 5
 ---
 
 This destination is a generic CSV stream over HTTP. 
-The CSV (via HTTP) destination is supported by many products. The following products have been tested: Layer2 and INFONEA. 
+The CSV (via HTTP) destination is supported by many products. The following products have been tested: Layer2, INFONEA and KNIME. 
 
-{% include _content/en/xu-specific/xu-destinations/general/connection_1.md %}	 
+{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
 
 ### Destination Details
 ![CSV-Destination-Details](/img/content/xu/CSV-Destination-Details.png){:class="img-responsive"}

@@ -17,8 +17,8 @@ lang: de_DE
 
 #### Connection
 
-**Directory**<br>
-Angabe eines vorhandenen Verzeichnises, in das die Zieldateien abgelegt werden.
+**Output directory**<br>
+Angabe eines vorhandenen Verzeichnisses, in das die Zieldateien abgelegt werden.
 
 **Region**<br>
 Angabe der Region der Snowflake-Umgebung.<br>
@@ -26,7 +26,7 @@ In unserem Beispiel haben wir die Region *AWS - EU (Frankfurt)* gewählt. Die ge
 
 **Account**<br>
 Name des vom Snowflake zugewiesenen Kontos.
-In unserem Beispiel ist es "dummy_account", wie es in der folgenden URL steht:<br>`
+In unserem Beispiel ist es "dummy_account", wie es in der folgenden URL steht:<br>
 `https://dummy_account.eu-central-1.snowflakecomputing.com/console#/`
 
 

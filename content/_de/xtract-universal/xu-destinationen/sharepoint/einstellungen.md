@@ -32,7 +32,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 - **Create if not exists & Merge**: Aktualisiert eine bestehende Liste bzw. legt eine Liste neu an, falls noch keine mit dem angegebenen Namen existiert.
 - **Truncate & Insert**:  Löscht alle Daten innerhalb der Liste und füllt die Liste mit den exportierten Daten auf. Im Unterschied zu "Drop & Create & Insert" werden die Liste und damit verknüpfte Informationen dabei nicht entfernt.
 - **Merge only**:  Führt Daten zusammen, ohne Datensätze oder die Liste selbst zu löschen.
- - **Max. threads** (Expertenoption): Definiert die Anzahl der Threads, die zur Kommunikation mit dem SharePoint-Server verwendet werden.
+ - **Max. threads** (Expertenoption): Anzahl der Threads, die zur Kommunikation mit dem SharePoint-Server verwendet werden.
 
 
 
