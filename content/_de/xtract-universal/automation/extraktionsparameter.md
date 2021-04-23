@@ -1,8 +1,8 @@
 ---
 ref: xu-parameters-01
 layout: page
-title: Parametrisierung
-description: Parametrisierung
+title: Extraktionsparameter
+description: Extraktionsparameter
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
