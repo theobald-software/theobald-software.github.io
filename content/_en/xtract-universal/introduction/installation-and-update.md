@@ -62,6 +62,8 @@ The list below shows several most important files that are placed into the defau
 {: .box-note }																   
 **Note:** For more details on starting Xtract Universal Server as a console application see the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
+### Unattended Installation
+{% include _content/en/silent-setup.md %}	
 
 ### New Installation and Update																																										   
 

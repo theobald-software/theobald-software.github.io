@@ -60,6 +60,8 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 **Hinweis:** Der BOARD Connector Server kann zu Testzwecken als Konsolenprogramm gestartet werden. 
 Mehr Details zum Starten von BOARD Connector Server als Konsolenprogramm, finden Sie im Knowledgebase-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Am Beispiel von Xtract Universal).
 
+### Unbeaufsichtigte Installation 
+{% include _content/de/silent-setup.md %}	
 
 ### Neuinstallation und Update
 

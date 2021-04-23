@@ -63,6 +63,8 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 {: .box-note }
 **Hinweis:** Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Knowledge-Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
+### Unbeaufsichtigte Installation 
+{% include _content/de/silent-setup.md %}	
 
 ### Neuinstallation und Update
 
