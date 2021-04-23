@@ -24,7 +24,7 @@ packageSize | setzt die Paketgröße | verfügbar in [Table](../table/extraktion
 updateMode | Update mode to use for thie run| verfügbar in [ODP](../odp/odp-functions-ov#load-verfahren-update-mode)
 subscriptionSuffix | Suffix to use multiple inits on a single SAP system | verfügbar in [ODP](../odp/odp-functions-ov#abonnements)
 extractDataOnDeltaInit | Whether to extract data if request is delta init| verfügbar in [ODP](../odp/odp-functions-ov#load-verfahren-update-mode)
-hierarchieName | The name of the hierarchy to extract for hierarchy extractors| verfügbar in ODP & [DeltaQ](../datasource-deltaq/hierarchies)
+hierarchieName | The name of the hierarchy to extract for hierarchy extractors| verfügbar in ODP & DeltaQ
 variant | Variant | verfügbar in [Report](../report-abap-reports-ansteuern/varianten-und-selektionen) & [SAP Query](../sap-queries/varianten-anwenden)
 batchJobName | Name of the Batch Job| verfügbar in [Report](../report-abap-reports-ansteuern/report-extraktionseinstellungen)
 gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)
