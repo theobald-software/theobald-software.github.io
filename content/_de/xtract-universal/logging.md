@@ -44,7 +44,7 @@ Markieren Sie die Checkboxen oben links, um zu entscheiden, welche Log-Levels an
 Um die Abläufe von Xtract Universal besser verstehen zu können, können Sie die in verständlicher Sprache geschriebenen Logs lesen.  Im folgenden Beispiel von einem Extraktions-Log werden die Abläufe näher erläutert.
 1. Allgemeine technische Informationen werden angezeigt.
  ![XU_logging_1](/img/content/xu/logging-extract-detail-01.png){:class="img-responsive"}
-2. Die [SQL-Destination](./xu-destinationen/microsoft-sql-server) wird für Empfang von Daten vorbereitet.
+2. Die [SQL-Destination](./destinationen/microsoft-sql-server) wird für Empfang von Daten vorbereitet.
 3. Die Lizenzprüfung wird durchgeführt inklusive Entität und anderen relevanten Informationen.
 4. Verbindung zum SAP wird hergestellt.
 5. [Run-Parameter](./erste-schritte/eine-extraktion-ausfuehren#extraktionsparameter-festlegen) werden geloggt.

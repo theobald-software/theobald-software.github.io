@@ -45,10 +45,10 @@ The list below shows several most important files that are placed into the defau
 |Filename | Description |
 |:----|:---|
 | ABAP directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../sap-customizing).|
-| Alteryx directory| Directory with a plugin setup for the [Alteryx destination](../xu-destinations/alteryx/alteryx-requirements).|
+| Alteryx directory| Directory with a plugin setup for the [Alteryx destination](../destinations/alteryx/alteryx-requirements).|
 | logs directory| Directory with server and extraction etc. logs. See also section [Logging](../logging). |
 | config directory | Directory containing all SAP connections, extractions, destinations and other settings. See also [Backup and Migration](../advanced-techniques/backup-and-migration).|
-| powerbi directory| Directory containing files related to [Power BI Connector Destination](../xu-destinations/Power-BI-Connector).|
+| powerbi directory| Directory containing files related to [Power BI Connector Destination](../destinations/Power-BI-Connector).|
 | result-cache directory | Directory with extraction cache files, only applicable for pull destinations. See also sections [Pull Destinations](../destinations#pull-and-push-destinations) and [General Settings > Misc. Tab > Cache Result Setting](../getting-started/general-settings#misc-tab).|
 | xu.exe | Command line tool used for executing extractions. See also section [Scheduling an Extraction](../execute-and-automate). |
 | XtractDesigner.exe | [Xtract Universal Designer](../getting-started/designer-overview) application to create, test and monitor extractions.|

@@ -46,11 +46,11 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 |Dateiname | Beschreibung |
 |:----|:---|
 | ABAP Verzeichnis | Verzeichnis mit den SAP-Funktionsbausteinen. Die readme.txt innerhalb des Verzeichnisses beinhaltet weitere Informationen. Mehr Details dazu finden Sie auch in [SAP Customizing](../sap-customizing).|
-| Alteryx Verzeichnis| Verzeichnis mit dem Plugin-Setup für die [Alteryx Destination](../xu-destinationen/alteryx-de/voraussetzungen-alteryx-de).|
+| Alteryx Verzeichnis| Verzeichnis mit dem Plugin-Setup für die [Alteryx Destination](../destinationen/alteryx-de/voraussetzungen-alteryx-de).|
 | logs Verzeichnis| Verzeichnis mit Server- und Extraktionsprotokollen etc. Mehr Details dazu finden Sie in [Logging](../logging). |
 | config Verzeichnis | Verzeichnis mit allen SAP-Verbindungen, Extraktionen, Destinationen und anderen Einstellungen. Mehr Details dazu finden Sie auch [Backup und Migration](../fortgeschrittene-techniken/backup-und-migration).|
-| powerbi Verzeichnis| Verzeichnis mit Dateien, die mit der [Power BI Connector Destination](../xu-destinationen/Power-BI-Connector) in Zusammenhang stehen.|
-| result-cache Verzeichnis | Verzeichnis mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Mehr Details dazu finden Sie auch in Abschnitten [Pull-Destinationen](../xu-destinationen#pull--und-push-destinationen) und [Allgemeine Einstellungen: General Settings > Misc. Tab > Cache Result Setting](../erste-schritte/allgemeine-einstellungen#misc-tab).|
+| powerbi Verzeichnis| Verzeichnis mit Dateien, die mit der [Power BI Connector Destination](../destinationen/Power-BI-Connector) in Zusammenhang stehen.|
+| result-cache Verzeichnis | Verzeichnis mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Mehr Details dazu finden Sie auch in Abschnitten [Pull-Destinationen](../destinationen#pull--und-push-destinationen) und [Allgemeine Einstellungen: General Settings > Misc. Tab > Cache Result Setting](../erste-schritte/allgemeine-einstellungen#misc-tab).|
 | xu.exe | Kommandozeilentool zum Ausführen von Extraktionen. Mehr Details dazu finden Sie auch im Abschnitt [Extraktion einplanen](../ausfuehren-und-automatisieren). |
 | XtractDesigner.exe | [Xtract Universal Designer](../erste-schritte/designer-overview) Anwendung zum Erstellen, Testen und Überwachen von Extraktionen.|
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Quellen (Sources), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
