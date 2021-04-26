@@ -15,7 +15,12 @@ progressstate: 5
 This destination is a generic CSV stream over HTTP. 
 The CSV (via HTTP) destination is supported by many products. The following products have been tested: Layer2, INFONEA and KNIME. 
 
-{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
+### Adding a Destination
+
+1. In the main window of the Designer, navigate to **Server > [Manage Destinations](./managing-destinations)**. The window “Manage Destinations” opens.
+2. Click **[Add]** to create a new destination. The window "Destination Details" opens.
+3. Enter a **Name** for the destination.
+4. Select the destination **Type** from the drop-down menu.
 
 ### Destination Details
 ![CSV-Destination-Details](/img/content/xu/CSV-Destination-Details.png){:class="img-responsive"}
