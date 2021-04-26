@@ -57,8 +57,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 ### Generische Destinationen
 
 - [CSV Webservice](./xu-destinationen/csv-via-http) 
-- [JSON Webservice](./xu-destinationen/json-via-http)
-- [OData Webservice](./xu-destinationen/odata-atom)  Atom (z.B. für PowerPivot, Datazen, Tableau und andere)    
+- [JSON Webservice](./xu-destinationen/json-via-http)  
 - [Flat File - CSV](./xu-destinationen/csv-flat-file) (Comma-seperated values)
 - [Flat File - JSON](./xu-destinationen/json-flat-file)
 - [Parquet](./xu-destinationen/parquet)

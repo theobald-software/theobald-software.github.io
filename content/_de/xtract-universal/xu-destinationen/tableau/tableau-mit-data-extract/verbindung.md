@@ -11,7 +11,13 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung
 ---
 
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+
+### Eine Destination hinzufügen
+
+1. Navigieren Sie im Hauptfenster des Designers zu **Server > [Manage Destinations](../../ziele-verwalten)**. Das Fenster "Manage Destination" wird geöffnet.
+2. Klicken Sie auf **[Add]**, um eine neue Destination hinzufügen. Das Fenster "Destination Details" wird geöffnet.
+3. Geben Sie einen **Namen** für die Destination ein.
+4. Wählen Sie den Destinationstyp aus dem Dropdown-Menü aus.
 
 ### Destination Details
 

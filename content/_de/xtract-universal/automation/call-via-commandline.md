@@ -1,8 +1,8 @@
 ---
-ref: xu-call-command-line-01
+ref: xu-commandline-01
 layout: page
-title: Aufruf via Kommandozeile 
-description: Aufruf einer Extraktion via Kommandozeile 
+title: Aufruf via Kommandozeile
+description: Aufruf via Kommandozeile
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path

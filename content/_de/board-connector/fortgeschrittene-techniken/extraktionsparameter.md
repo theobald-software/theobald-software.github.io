@@ -41,7 +41,7 @@ subscriptionSuffix | Suffix um mehrere inits auf einem SAP System zu verwenden |
 extractDataOnDeltaInit | Datenextraktion bei delta init | verfügbar in [ODP](../odp/odp-functions-ov#load-verfahren-update-mode)
 hierarchieName | Name der zu extrahierenden Hierarchie für Hierarchie-Extraktoren| verfügbar in ODP & DeltaQ
 variant | Name einer Variante | verfügbar in [Report](../abap-reports-ansteuern/varianten-und-selektionen) & [SAP Query](../sap-queries/varianten-anwenden)
-batchJobName | Name des Batch Jobs| verfügbar in [Report](../report-abap-reports-ansteuern/report-extraktionseinstellungen)
+batchJobName | Name des Batch Jobs| verfügbar in [Report](../abap-reports-ansteuern/report-extraktionseinstellungen)
 gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)
 gatewayService | Gateway Service | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)
 programID | Program ID | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)

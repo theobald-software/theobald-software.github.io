@@ -57,8 +57,7 @@ More information can be found under the *Requirements* section of each destinati
 ### Generic Destinations
 
 - [CSV web service](./xu-destinations/csv-via-http) (via HTTP)
-- [JSON web service](./xu-destinations/json-via-http)
-- [OData web service](./xu-destinations/odata)  (e.g. for PowerPivot, PowerQuery, Datazen and Tableau)      
+- [JSON web service](./xu-destinations/json-via-http)   
 - [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
 - [Flat File - JSON](./xu-destinations/json-flat-file)
 - [Parquet](./xu-destinations/parquet)

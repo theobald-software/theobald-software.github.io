@@ -1,14 +1,15 @@
 ---
-ref: xu-call-command-line-01
+ref: xu-commandline-01
 layout: page
-title: Call via Command Line 
-description: Call an Extraction via Command Line 
+title: Call via Commandline
+description: Call via Commandline
 product: xtract-universal
 parent: automation
 permalink: /:collection/:path
 weight: 3
 lang: en_EN
 ---
+
 Extractions can be run via the following command line tools:
 
 | Command line tool | Operating system | Directory |

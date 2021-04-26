@@ -15,7 +15,12 @@ progressstate: 5
 
 This destination is a CSV (comma-separated values) flat file. 
 
-{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	 
+### Adding a Destination
+
+1. In the main window of the Designer, navigate to **Server > [Manage Destinations](./managing-destinations)**. The window “Manage Destinations” opens.
+2. Click **[Add]** to create a new destination. The window "Destination Details" opens.
+3. Enter a **Name** for the destination.
+4. Select the destination **Type** from the drop-down menu.
 
 ### Destination Details
 ![CSV-Flat-Destination-Details](/img/content/xu/CSV-Flat-Destination-Details.png){:class="img-responsive"}
