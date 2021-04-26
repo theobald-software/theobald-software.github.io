@@ -76,12 +76,13 @@ Um den Lizenz-Manager im Silent-Modus auszuführen, übergeben Sie den Pfad zur 
 
 #### Warten bis die Installation abgeschlossen ist
 Da beide Programme `XtractISSetup.exe` und `XtractLicenseManager.exe` Windows-Anwendungen sind, wartet die Windows Eingabeaufforderung nicht bis die Installation abgeschlossen ist. 
-Um zu warten, bis die Installation abgeschlossen ist, verwenden Sie den [start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)-Befehlt mit dem Switch `/wait` 
+
+Um zu warten, bis die Installation abgeschlossen ist, verwenden Sie den [start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)-Befehlt mit dem Switch `/wait`.
 
 **Beispiele:**
 ```
 start /wait XtractISSetup.exe --unattended
-start /wait XtractLicenseManager.exe "C:\temp\Xtract IS\XtractIS.License.json"
+start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.json"
 ```
 
 ### Xtract IS Komponenten in Visual Studio anzeigen

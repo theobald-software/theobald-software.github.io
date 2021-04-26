@@ -79,12 +79,13 @@ To execute the License Manager in silent mode, pass the path to the license file
 #### Wait until Installation is Complete
 
 `XtractISSetup.exe` and `XtractLicenseManager.exe` are Windows applications, meaning the Windows Command Prompt does not wait until the installation is complete. 
+
 To wait until the installation is complete, use the [start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start) command with the `/wait` switch. 
 
 **Examples:**
 ```
 start /wait XtractISSetup.exe --unattended
-start /wait XtractLicenseManager.exe "C:\temp\Xtract IS\XtractIS.License.json"
+start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.json"
 ```
 
 
