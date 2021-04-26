@@ -30,6 +30,8 @@ After installation of Xtract for Alteryx the setup creates the following entries
 - `Alteryx\bin\RuntimeData\icons\categories\XtractForAlteryx.png`
 - `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
+### Unattended Installation
+{% include _content/en/silent-setup.md %}
 
 ### Installation Directory Files
 The list below shows several important files that are placed into the default directory `C:\Program Files\XtractForAlteryx`: <br>

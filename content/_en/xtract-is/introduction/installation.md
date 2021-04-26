@@ -63,30 +63,29 @@ The list below shows several most important files that are placed into the defau
 
 ### Unattended Installation
 
-{: .box-note }
-**Note:** All switches are case sensitive.
-
-The setup program and the License Manager (installer) can also be started without the GUI in a non-interactive mode.
+The installation of Xtract IS and the Xtract License Manager can be initiated without the GUI in a non-interactive mode.
 
 #### XtractISSetup.exe
-To execute the setup program in the unattended mode, use the switch *--unattended* . <br>
+To execute the installation in silent mode, use the switch *--unattended* . <br>
 
 ![XIS_Setup-unattended](/img/content/xis/cmd-unattended-switch.png){:class="img-responsive"}
 
+{: .box-note }
+**Note:** All switches are case sensitive.
+
 #### XtractLicenseManager.exe
-To execute the License Manager in the unattended mode, pass the path to the license file as a command line argument.
+To execute the License Manager in silent mode, pass the path to the license file as a command line argument.
 
+#### Wait until Installation is Complete
 
-#### Waiting Switch
+`XtractISSetup.exe` and `XtractLicenseManager.exe` are Windows applications, meaning the Windows Command Prompt does not wait until the installation is complete. 
 
-As both programs `XtractISSetup.exe` and `XtractLicenseManager.exe` are Windows applications, so Windows Command Prompt does not wait until the installation is complete. 
-To wait until the installation is complete, use the `[start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)` command with the */wait* switch. 
+To wait until the installation is complete, use the [start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start) command with the `/wait` switch. 
 
 **Examples:**
 ```
 start /wait XtractISSetup.exe --unattended
-start /wait XtractLicenseManager.exe "C:\temp\Xtract IS\XtractIS.License.json"
-
+start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.json"
 ```
 
 

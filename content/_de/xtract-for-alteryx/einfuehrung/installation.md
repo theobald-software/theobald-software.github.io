@@ -31,6 +31,9 @@ Nach der Installation legt Xtract for Alteryx folgende Einträge und Erweiterung
 - `Alteryx\bin\RuntimeData\icons\categories\XtractForAlteryx.png`
 - `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
+### Unbeaufsichtigte Installation 
+{% include _content/de/silent-setup.md %}	
+
 ### Installationsverzeichnis-Dateien
 Die folgende Liste zeigt einige der wichtigsten Dateien, die im Standardverzeichnis `C:\Programme\XtractForAlteryx` abgelegt werden: <br>
 
@@ -42,6 +45,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die im Standardverzeich
 |Eula_Xtract_for_Alteryx.rtf |Dokument mit dem Lizenzvertrag für die Nutzung der Software Xtract for Alteryx.  |
 |XtractForAlteryxLicense.json| Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen.|
 |XtractForAlteryxSetup.log| Protokolldatei, in der die genauen Änderungen aufgezeichnet werden, die auf Ihrem System durchgeführt wurden. Diese Datei wird auch verwendet zum Überprüfen, ob während der Installation Fehler aufgetreten sind .|
+
 
 ****
 #### Weiterführende Links

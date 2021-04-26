@@ -61,27 +61,28 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 
 ### Unbeaufsichtigte Installation 
 
-{: .box-note }
-**Hinweis:** Achten Sie auf die Groß- und Kleinschreibung der Parameter. 
-
-Das Setup-Programm und der Lizenz-Manager können auch nichtinteraktiv und ohne die Anzeige der GUI gestartet werden. 
+Das Setup-Programm und der Lizenz-Manager können nichtinteraktiv und ohne die Anzeige der GUI gestartet werden. 
 
 #### XtractISSetup.exe
-Um ein unbeaufsichtigtes Setup auszuführen, verwenden Sie den Switch *--unattended* . <br>
+Um ein Setup im Silent-Modus auszuführen, verwenden Sie den Switch *--unattended* . <br>
 
 ![XIS_Setup-unattended](/img/content/xis/cmd-unattended-switch.png){:class="img-responsive"}
 
-#### XtractLicenseManager.exe
-Um den Lizenz-Manager im unbeaufsichtigten Modus auszuführen, übergeben Sie den Pfad zur Lizenzdatei als Kommandozeilenargument.
+{: .box-note }
+**Hinweis:** Achten Sie auf die Groß- und Kleinschreibung der Parameter. 
 
-#### Waiting Switch
+#### XtractLicenseManager.exe
+Um den Lizenz-Manager im Silent-Modus auszuführen, übergeben Sie den Pfad zur Lizenzdatei als Argument.
+
+#### Warten bis die Installation abgeschlossen ist
 Da beide Programme `XtractISSetup.exe` und `XtractLicenseManager.exe` Windows-Anwendungen sind, wartet die Windows Eingabeaufforderung nicht bis die Installation abgeschlossen ist. 
-Um zu warten, bis die Installation abgeschlossen ist, verwenden Sie den `[start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)`-Befehlt mit dem Switch */wait*. 
+
+Um zu warten, bis die Installation abgeschlossen ist, verwenden Sie den [start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)-Befehlt mit dem Switch `/wait`.
 
 **Beispiele:**
 ```
 start /wait XtractISSetup.exe --unattended
-start /wait XtractLicenseManager.exe "C:\temp\Xtract IS\XtractIS.License.json"
+start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.json"
 ```
 
 ### Xtract IS Komponenten in Visual Studio anzeigen

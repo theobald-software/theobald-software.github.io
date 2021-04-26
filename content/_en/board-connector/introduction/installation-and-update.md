@@ -63,6 +63,8 @@ The list below shows several most important files that are placed into the defau
 **Note:** The BOARD Connector Server can be started as a console program for test purposes.
 For more details on starting BOARD Connector Server as a console program see the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Xtract Universal example).
 
+### Unattended Installation
+{% include _content/en/silent-setup.md %}
 
 ### New Installation and Update
 
