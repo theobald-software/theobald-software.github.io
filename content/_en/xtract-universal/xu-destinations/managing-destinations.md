@@ -33,7 +33,6 @@ The window "Manage Destinations" opens.
 
 The following destinations are created per default and can not be deleted:
 - [Web Service CSV](./csv-via-http)
-- [Web Service Odata Atom](./odata)
 
 *****
 #### Related Links

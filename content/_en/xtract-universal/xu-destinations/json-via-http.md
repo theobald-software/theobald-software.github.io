@@ -13,8 +13,12 @@ progressstate: 5
 
 The JSON destination is a generic JSON stream over HTTP. 
 
-{% include _content/en/xu-specific/xu-destinations/general/connection.md %}	
+### Adding a Destination
 
+1. In the main window of the Designer, navigate to **Server > [Manage Destinations](./managing-destinations)**. The window “Manage Destinations” opens.
+2. Click **[Add]** to create a new destination. The window "Destination Details" opens.
+3. Enter a **Name** for the destination.
+4. Select the destination **Type** from the drop-down menu.
 
 ### Destination Details
 To use the JSON destination, no further settings have to be made.
