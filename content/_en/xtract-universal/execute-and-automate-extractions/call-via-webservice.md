@@ -37,7 +37,7 @@ The response of a web service call contains the following information:
 - Information in the HTTP header (2)
 - Response in the HTTP body (3)
 
-![Webservice Call pull](/img/content/xu/execute-and-automate-extractions/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
+![Webservice Call pull](/img/content/xu/automation/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
 
 Response | Description
 :----------:| :------------
@@ -68,7 +68,7 @@ Extraktions are called synchronous by default. The parameter `&wait=false` calls
 Example: `http://todd.theobald.local:8065/?name=Plants&wait=false`
 
 In this case the timestamp (4) of the extraction is returned in the HTTP body.
-![Webservice Call async](/img/content/xu/execute-and-automate-extractions/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
+![Webservice Call async](/img/content/xu/automation/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
 
 ****
 #### Related Links

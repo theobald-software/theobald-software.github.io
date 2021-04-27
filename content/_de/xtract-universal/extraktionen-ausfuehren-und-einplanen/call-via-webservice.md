@@ -38,7 +38,7 @@ Die Antwort eines Webservice-Aufrufs enthält folgende Informationen:
 - Angaben im HTTP-Header (2)
 - Rückgabe im HTTP-Body (3)
 
-![Webservice Call pull](/img/content/xu/extraktionen-ausfuehren-und-einplanen/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
+![Webservice Call pull](/img/content/xu/automation/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
 
 Antwort | Beschreibung
 :----------:| :------------
@@ -69,7 +69,7 @@ Standardmäßig wird eine Extraktion synchron aufgerufen. Mit dem Parameter `&wa
 Beispiel: `http://todd.theobald.local:8065/?name=Plants&wait=false`
 
 In diesem Fall wird der Zeitstempel (4) der Ausführung im HTTP-Body zurückgegeben.
-![Webservice Call async](/img/content/xu/extraktionen-ausfuehren-und-einplanen/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
+![Webservice Call async](/img/content/xu/automation/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
 
 ****
 #### Weiterführende Links

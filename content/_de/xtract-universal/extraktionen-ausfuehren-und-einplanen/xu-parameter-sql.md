@@ -15,12 +15,12 @@ Diese benutzerdefinierten Parameter stehen bei SQL-Datenbank Destinationen in de
 Ein typischer Anwendungsfall ist die Dynamisierung von WHERE-Bedingungen bei Table-Komponenten. 
 Folgende Table-Extraktion hat z.B. einen benutzerdefinierten Parameter *WNAME* in der WHERE-Clause:
 
-![xu-customerparam-where](/img/content/xu/extraktionen-ausfuehren-und-einplanen/where_condition_custom_parameter.png){:class="img-responsive"}
+![xu-customerparam-where](/img/content/xu/automation/where_condition_custom_parameter.png){:class="img-responsive"}
 
 ### Custom SQL Statement - Benutzerdefinierte SQL-Anweisung
 
 Im Fenster [Destination Settings](../destinationen/microsoft-sql-server/sql-server-einstellungen#destination-settings-öffnen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
-![Destination-Settings](/img/content/xu/extraktionen-ausfuehren-und-einplanen/destination_settings_runtime_parameter.png){:class="img-responsive"}
+![Destination-Settings](/img/content/xu/automation/destination_settings_runtime_parameter.png){:class="img-responsive"}
 
 1. Wählen Sie im Hauptfenster die Extraktion mit einem benutzerdefinierten Parameter in der WHERE-Bedingung (1) aus.
 2. Klicken Sie auf **[Destination]** (2). Das Fenster "Destination Settings" öffnet sich.
@@ -42,7 +42,7 @@ Im Abschnitt **Finalization** werden die `NULL` Werte mit SQL-Statements des Lau
 **Hinweis:** Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 
 1. Wählen Sie im Fenster "Destination Settings" im Abschnitt **Preparation** die Option *Custom SQL* und klicken Sie auf **Edit SQL**.
-![Custom-SQL_Prep](/img/content/xu/extraktionen-ausfuehren-und-einplanen/custom_sql_preparation_statement_runtime_parameter.png){:class="img-responsive"}
+![Custom-SQL_Prep](/img/content/xu/automation/custom_sql_preparation_statement_runtime_parameter.png){:class="img-responsive"}
 2. Wählen Sie im Dropdown-Menü die Option *Drop & Create* und klicken Sie auf **[Generate Statement]** (6). 
 3. Fügen Sie dem generierten Statement die folgende Zeile hinzu:
 ```sql
@@ -50,7 +50,7 @@ Im Abschnitt **Finalization** werden die `NULL` Werte mit SQL-Statements des Lau
 ```
 4. Bestätigen Sie die Eingabe mit **[OK]**. 
 5. Wählen Sie im Fenster "Destination Settings" im Abschnitt **Finalization** die Option *Custom SQL* und klicken Sie auf **Edit SQL**.
-![Custom-SQL_Final](/img/content/xu/extraktionen-ausfuehren-und-einplanen/custom_sql_finalization_statement_custom_parameter.png){:class="img-responsive"}
+![Custom-SQL_Final](/img/content/xu/automation/custom_sql_finalization_statement_custom_parameter.png){:class="img-responsive"}
 6. Wählen Sie im Dropdown-Menü die Option *Insert* und fügen Sie das folgende SQL-Statement ein (7):
 ```sql
 UPDATE [dbo].[KNA1] 
@@ -62,7 +62,7 @@ WHERE [Custom_Parameter] IS NULL;
 ### Custom Parameter WNAME setzen
 
 1. Aktivieren Sie die Checkbox neben dem Parameternamen, um den Parameter *WNAME* zu überschreiben.
-![Custom parameters](/img/content/xu/extraktionen-ausfuehren-und-einplanen/runtime_parameter_wname.png){:class="img-responsive"}
+![Custom parameters](/img/content/xu/automation/runtime_parameter_wname.png){:class="img-responsive"}
 2. Tragen Sie den neuen Wert *US* ein und bestätigen Sie ihn über die Eingabetaste.
 3. Klicken Sie auf **[Run]** (8), um die Extraktion auszuführen.
 
@@ -70,7 +70,7 @@ WHERE [Custom_Parameter] IS NULL;
 
 Überprüfen Sie das Ergebnis der erweiterten Spalte *Custom_Parameter* in der SQL Server-Ansicht der Tabelle *KNA1*.
 
-![Custom_SQL_SQL_Server_Ausgabe](/img/content/xu/extraktionen-ausfuehren-und-einplanen/sql_server_ansicht_extraction_date_spalte_custom_parameter.png){:class="img-responsive"}
+![Custom_SQL_SQL_Server_Ausgabe](/img/content/xu/automation/sql_server_ansicht_extraction_date_spalte_custom_parameter.png){:class="img-responsive"}
 
 ***********
 #### Weiterführende Links
