@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-60
+ref: destinationen-60
 layout: page
 title: Microsoft SQL Server
 description: Microsoft SQL Server

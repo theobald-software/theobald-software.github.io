@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung4
 progressstate: 5
 ---
 
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+{% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
 Um Qlik zu verwenden, müssen keine weiteren Einstellungen vorgenommen werden.

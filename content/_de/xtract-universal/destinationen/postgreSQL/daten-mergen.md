@@ -9,4 +9,4 @@ permalink: /:collection/:path
 weight: 5
 lang: de_DE
 ---
-{% include _content/de/xu-specific/xu-destinations/merge-data/db-merge-data.md  %}
+{% include _content/de/xu-specific/destinationen/merge-data/db-merge-data.md  %}

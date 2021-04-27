@@ -23,12 +23,12 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ![xu-azure-blob-con-03](/img/content/xu-azure-blob-con-03.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
 <!-- ### Column name style -->
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 <!-- ### Date Conversion -->
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
 
 ### Blob Type

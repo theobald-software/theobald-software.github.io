@@ -10,7 +10,7 @@ weight: 1
 lang: de_DE
 old_url:
 ---
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+{% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
 Um Power BI Connector zu verwenden, müssen keine weiteren Einstellungen vorgenommen werden.

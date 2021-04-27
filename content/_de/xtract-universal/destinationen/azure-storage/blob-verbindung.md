@@ -11,7 +11,7 @@ progressstate: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=blob-verbindung
 ---
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}
+{% include _content/de/xu-specific/destinationen/general/connection.md %}
 
 ### Destination Details
 
@@ -143,7 +143,7 @@ Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skri
 Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
 
 ### Column Encryption (4)
-{% include _content/de/xu-specific/xu-destinations/general/column-encryption.md %}
+{% include _content/de/xu-specific/destinationen/general/column-encryption.md %}
 
 ### File Format 
 

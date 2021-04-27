@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-90
+ref: destinationen-90
 layout: page
 title: QlikSense & QlikView
 description: QlikSense & QlikView

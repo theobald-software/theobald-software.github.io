@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-13
+ref: destinationen-13
 layout: page
 title: Flat File - JSON
 description: Flat File - JSON

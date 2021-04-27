@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-30
+ref: destinationen-30
 layout: page
 title: EXASolution
 description: EXASolultion

@@ -10,7 +10,7 @@ weight: 2
 lang: de_DE
 ---
 
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+{% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
 

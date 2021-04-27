@@ -23,9 +23,9 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ### Destination Settings - Destinationseinstellungen
 ![alteryx-configuration](/img/content/alteryx-configuration.PNG){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
  
 

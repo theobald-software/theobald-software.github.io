@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-14
+ref: destinationen-14
 layout: page
 title: Flat File - CSV
 description: Flat File - CSV
@@ -32,10 +32,10 @@ Geben Sie das Verzeichnis an, in dem die Flat Files gespeichert werden sollen.
 {: .box-note }
 **Hinweis:** Das Ausfüllen des Feldes **Directory** erstellt einen neuen Ordner, falls er nicht existiert.
 
-{% include _content/de/xu-specific/xu-destinations/general/csv-settings.md %}														 
+{% include _content/de/xu-specific/destinationen/general/csv-settings.md %}														 
 
-{% include _content/de/xu-specific/xu-destinations/general/convert-encoding.md %}	
+{% include _content/de/xu-specific/destinationen/general/convert-encoding.md %}	
 
 ### Column encryption
-{% include _content/de/xu-specific/xu-destinations/general/column-encryption.md %}
+{% include _content/de/xu-specific/destinationen/general/column-encryption.md %}
 

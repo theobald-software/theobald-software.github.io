@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-70
+ref: destinationen-70
 layout: page
 title: Oracle
 description: Oracle

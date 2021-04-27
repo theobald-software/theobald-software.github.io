@@ -19,13 +19,13 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen6
 Die folgenden Einstellungen können für die Destination definiert werden. 
   
 ### Destination Settings - Destinationseinstellungen
-![mstr-destinations](/img/content/mstr-destinations.png){:class="img-responsive"}
+![mstr-destinationen](/img/content/mstr-destinationen.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
 ### Dataset ID
 

@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-80
+ref: destinationen-80
 layout: page
 title: Parquet
 description: Parquet

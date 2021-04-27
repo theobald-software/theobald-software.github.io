@@ -52,7 +52,7 @@ als Vorlagen verwendet werden:
 5. Klicken Sie auf **[Copy]** um die Anweisung in den Zwischenspeicher zu kopieren.
 6. Klicken Sie zur Bestätigung auf **[OK]**.
 
-Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/microsoft-sql-server/sql-server-custom-sql).
+Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](https://help.theobald-software.com/de/xtract-universal/destinationen/microsoft-sql-server/sql-server-custom-sql).
 
 {:.box-note}
 **Note:** Der benutzerdefinierte SQL-Code wird für SQL Server-Destinationen verwendet. 

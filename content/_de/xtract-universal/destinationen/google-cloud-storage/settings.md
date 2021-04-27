@@ -22,11 +22,11 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ![xu-google-cloud-dest-01](/img/content/xu/googlecloudstorage/xu-google-cloud-dest-01.png){:class="img-responsive"}
 
-{% include _content/en/xu-specific/xu-destinations/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
-{% include _content/en/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
-{% include _content/en/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
 ### Folder name - Verzeichnisname
 

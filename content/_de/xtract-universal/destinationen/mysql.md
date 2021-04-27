@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-62
+ref: destinationen-62
 layout: page
 title: MySQL
 description: MySQL

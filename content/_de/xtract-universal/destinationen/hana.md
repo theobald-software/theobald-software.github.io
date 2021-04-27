@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-101
+ref: destinationen-101
 layout: page
 title: SAP HANA
 description: SAP HANA

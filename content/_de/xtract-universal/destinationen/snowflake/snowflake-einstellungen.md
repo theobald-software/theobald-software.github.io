@@ -22,11 +22,11 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ![Snowflake-Destination-Einstellungen](/img/content/xu/snowflake/snowflake-destination-spec-settings.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
 ### Preparation - SQL Anweisungen
 
@@ -123,4 +123,4 @@ Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-uni
 {:.box-tip}
 **Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.
 
-{% include _content/de/xu-specific/xu-destinations/general/transaction-style.md %}
+{% include _content/de/xu-specific/destinationen/general/transaction-style.md %}

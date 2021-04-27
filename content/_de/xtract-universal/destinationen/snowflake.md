@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-103
+ref: destinationen-103
 layout: page
 title: Snowflake
 description: Snowflake

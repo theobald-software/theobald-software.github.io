@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-20
+ref: destinationen-20
 layout: page
 title: Alteryx
 description: Alteryx

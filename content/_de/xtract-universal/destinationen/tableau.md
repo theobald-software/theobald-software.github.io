@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-110
+ref: destinationen-110
 layout: page
 title: Tableau
 description: Tableau

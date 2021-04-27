@@ -23,13 +23,13 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ![ext_spec_set_de_form_debug](/img/content/oracle-configurations.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/sql-commands.md %}
+{% include _content/de/xu-specific/destinationen/general/sql-commands.md %}
 
 
 ### Debugging
@@ -56,5 +56,5 @@ Das Debugging sollte nach der erfolgreichen Fehleranalyse wieder deaktiviert wer
 {: .box-tip }
 **Tip:** Um die Performance beim Verwenden von [Custom SQL Anweisungen](#sql-anweisungen) zu steigern, wird empfohlen die Custom-Verarbeitung im *Finalization*-Schritt zu verwenden.
 
-{% include _content/de/xu-specific/xu-destinations/general/transaction-style.md %}
+{% include _content/de/xu-specific/destinationen/general/transaction-style.md %}
 

@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-82
+ref: destinationen-82
 layout: page
 title: Power BI Connector
 description: Power BI Connector

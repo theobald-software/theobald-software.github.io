@@ -22,11 +22,11 @@ Die folgenden Einstellungen können für die Parquet-Destination definiert werde
 
 ![XU_flatfile_JSON_Destination](/img/content/xu/parquet/parquet_destination_settings.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}        
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}        
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
 ### Existing files
-Die Option *Existing files* ist mit der Option *Directory* (Verzeichnis) verbunden, die in den [Destination Details](../parquet#destination-details---destinationsdetails) definiert ist.<br>
+Die Option *Existing files* ist mit der Option *Directory* (Verzeichnis) verbunden, die in den [Destination Details](../parquet#destination-details---destinationendetails) definiert ist.<br>
 **Replace file** - ersetzt die vorhandene Datei in dem Verzeichnis, in dem die Parquet-Datei gespeichert ist.<br>
 **Abort extraction** - bricht die Extraktion ab, wenn die Parquet-Datei bereits im definierten Verzeichnis existiert.

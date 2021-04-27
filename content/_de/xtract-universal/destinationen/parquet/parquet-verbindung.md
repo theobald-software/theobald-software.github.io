@@ -11,7 +11,7 @@ lang: de_DE
 progressstate: 5
 ---
 
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+{% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
  

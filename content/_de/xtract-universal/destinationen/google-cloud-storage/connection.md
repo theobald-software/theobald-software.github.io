@@ -10,7 +10,7 @@ weight: 2
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	 
+{% include _content/de/xu-specific/destinationen/general/connection.md %}	 
 
 ### Destination Details
 ![xu-google-cloud-req-01](/img/content/xu/googlecloudstorage/xu-google-cloud-con-01.png){:class="img-responsive"}

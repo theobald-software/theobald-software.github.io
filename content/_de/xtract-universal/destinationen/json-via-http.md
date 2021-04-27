@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-10
+ref: destinationen-10
 layout: page
 title:  Webservice - JSON
 description: JSON (via HTTP)
@@ -12,7 +12,7 @@ lang: de_DE
 ---
 Die JSON-Destination ist ein generischer JSON-Stream über HTTP. 
 
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+{% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 
 ### Destination Details

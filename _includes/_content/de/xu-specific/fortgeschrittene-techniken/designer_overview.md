@@ -28,7 +28,7 @@ Edit | Vorhandene Extraktion bearbeiten | -
 Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
 Source | Vorhandenes SAP Quellsystem auswählen | -
-Destination (nur Xtract Universal) | Destination auswählen | [Destinationen](https://help.theobald-software.com/de/xtract-universal/xu-destinationen)
+Destination (nur Xtract Universal) | Destination auswählen | [Destinationen](https://help.theobald-software.com/de/xtract-universal/destinationen)
 Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/log-zugriff-ueber-designer#extraktions-logs)
 Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
 Abort | Ausgewählte Extraktion abbrechen | -
@@ -45,7 +45,7 @@ Menüeintrag |Beschreibung | Details
 Logs  | Server-Log aufrufen | [Server-Logging](../logging/log-zugriff-ueber-designer#server-logs-run)
 Settings | Server-Einstellungen aufrufen | [Server-Einstellungen](../server/server_einstellungen)
 Manage Sources | Verbindung zum Quellsystem bearbeiten | [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen)
-Manage Destinations (nur Xtract Universal) | Destinationen verwalten | [Destinationen verwalten](https://help.theobald-software.com/de/xtract-universal/xu-destinationen/ziele-verwalten)
+Manage Destinations (nur Xtract Universal) | Destinationen verwalten | [Destinationen verwalten](https://help.theobald-software.com/de/xtract-universal/destinationen/ziele-verwalten)
 
 #### Security
 
@@ -109,7 +109,7 @@ Delete | Vorhandene Extraktion bearbeiten | -
 Clone | Vorhandene Extraktion klonen | -
 Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/log-zugriff-ueber-designer#extraktions-logs)
 Source settings | Vorhandenes SAP Quellsystem auswählen | -
-Destination settings (nur Xtract Universal) | Destination auswählen | [Destinationen](https://help.theobald-software.com/de/xtract-universal/xu-destinationen)
+Destination settings (nur Xtract Universal) | Destination auswählen | [Destinationen](https://help.theobald-software.com/de/xtract-universal/destinationen)
 Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
 Run in browser | Ausgewählte Extraktion im Standard Webbrowser ausführen | - 
 Run in xu.exe | Ausgewählte Extraktion im Kommandozeilen-Tool xu.exe ausführen | - 

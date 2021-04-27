@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-102
+ref: destinationen-102
 layout: page
 title: SharePoint
 description: SharePoint

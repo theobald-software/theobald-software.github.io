@@ -79,7 +79,7 @@ This scenario supports:
 ### Using Script Expressions as Dynamic Folder Paths
 
 {: .box-note }
-**Note:** This is currently only supported for the [Azure Storage destination](https://help.theobald-software.com/en/xtract-universal/xu-destinations/azure-storage).
+**Note:** This is currently only supported for the [Azure Storage destination](https://help.theobald-software.com/en/xtract-universal/destinations/azure-storage).
 
 In this scenario, script expressions are used to generate a dynamic folder path for destinations that write flat files. 
 This allows generating folder paths that are composed of an extraction's properties, e.g. extraction name, SAP source object.
@@ -109,7 +109,7 @@ The following XU-specific custom script expressions are supported:
 
 ### Using Script Expressions in Database Destinations
 
-In this scenario script expressions are used as part of a Custom-SQL statement (see [example](https://help.theobald-software.com/en/xtract-universal/xu-destinations/microsoft-sql-server/sql-server-custom-sql)).
+In this scenario script expressions are used as part of a Custom-SQL statement (see [example](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server/sql-server-custom-sql)).
 
 This scenario supports:
 - Script expressions based on .NET

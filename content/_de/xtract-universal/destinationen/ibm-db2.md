@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-50
+ref: destinationen-50
 layout: page
 title: IBM DB2
 description: IBM DB2

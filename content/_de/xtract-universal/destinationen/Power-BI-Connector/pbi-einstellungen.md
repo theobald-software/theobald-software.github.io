@@ -22,6 +22,6 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ![pbi-configuration](/img/content/XU_pbi_connector_destination.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}

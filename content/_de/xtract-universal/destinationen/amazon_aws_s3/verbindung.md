@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung6
 ---
 
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	 
+{% include _content/de/xu-specific/destinationen/general/connection.md %}	 
 
 ### Destination Details
 
@@ -85,7 +85,7 @@ Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen 
 ![AWS S3 compability](/img/content/xu/xu_S3_dest_comp_mode.png){:class="img-responsive"}
 
 ### Column encryption - Verschlüsselung
-{% include _content/de/xu-specific/xu-destinations/general/column-encryption.md %}
+{% include _content/de/xu-specific/destinationen/general/column-encryption.md %}
 
 ### Connection Retry -Verbindungswiederholung
 

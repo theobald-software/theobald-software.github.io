@@ -22,7 +22,7 @@ The following settings can be defined for the destination:
 
 ![SharePointExtractionSpecificSettings](/img/content/xu/SP_destination_settings.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/destinations/general/file-name.md %}
+{% include _content/en/xu-specific/destinations/general/file-name.md %}
 
 {% include _content/en/xu-specific/destinations/general/column-name-style.md %}
 

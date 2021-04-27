@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung5
 ---
 
 
-{% include _content/de/xu-specific/xu-destinations/general/connection.md %}	
+{% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
 ![XU_AzureSA_Verbindungen](/img/content/XU_AzureSA_Verbindungen.png){:class="img-responsive"}

@@ -21,14 +21,14 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ![postgres_destination](/img/content/xu/postgres_destination.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/sql-commands.md %}
+{% include _content/de/xu-specific/destinationen/general/sql-commands.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
+{% include _content/de/xu-specific/destinationen/general/debugging-bulk-insert.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/transaction-style.md %}
+{% include _content/de/xu-specific/destinationen/general/transaction-style.md %}

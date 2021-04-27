@@ -23,14 +23,14 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ![ext_spec_set_de_form_debug](/img/content/ext_spec_set_de_form_debug.png){:class="img-responsive"}
 
-{% include _content/de/xu-specific/xu-destinations/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/sql-commands.md %}
+{% include _content/de/xu-specific/destinationen/general/sql-commands.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/debugging-bulk-insert.md %}
+{% include _content/de/xu-specific/destinationen/general/debugging-bulk-insert.md %}
 
-{% include _content/de/xu-specific/xu-destinations/general/transaction-style.md %}
+{% include _content/de/xu-specific/destinationen/general/transaction-style.md %}

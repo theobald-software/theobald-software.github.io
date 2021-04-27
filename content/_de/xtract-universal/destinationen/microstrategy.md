@@ -1,5 +1,5 @@
 ---
-ref: xu-destinations-61
+ref: destinationen-61
 layout: page
 title: Microstrategy
 description: Microstrategy
