@@ -16,5 +16,9 @@ The following section describes the settings of the Xtract ODP component that ca
 {% include _content/en/odp/odp-settings-update_mode.md %} 
 {% include _content/en/odp/odp-settings-filtering.md %}
 {% include _content/en/odp/odp-settings-subscriptions.md %}
-{% include _content/en/odp/odp-settings-parameters.md %}
 
+### General Settings
+The [General Settings](../getting-started/general-settings) include security, encryption and keys.
+
+{% include _content/en/odp/odp-settings-parameters.md %}
+{% include _content/en/odp/odp-settings-advanced.md %}
