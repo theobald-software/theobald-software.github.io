@@ -26,6 +26,9 @@ There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zi
 
 When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. Contact Theobald Software support and send the dedicated error message text.
 
+### Testing the module in SAP
 
-
-
+{: .box-warning }
+**Warning! Generating Short Dumps** <br>
+The function module Z_THEO_READ_TABLE can only be called by Theobald products due to the callback function of the module.
+Testing the function module on an SAP system is therefore not possible.

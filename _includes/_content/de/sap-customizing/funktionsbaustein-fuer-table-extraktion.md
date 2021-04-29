@@ -26,3 +26,8 @@ Es gibt zwei Transporte, einen für SAP-Systeme >= 7.40 SP5 (*Z_THEO_READ_TABLE.
 
 Beim Einspielen der Z_THEO_READ_TABLE-before_740SP05 auf älteren SAP-Releases kann ein Syntaxfehler auftreten. Wenden Sie sich an den Support von Theobald Software und senden Sie die dedizierte Fehlermeldung.
 
+### Testen des Bausteins in SAP
+
+{: .box-warning }
+**Warnung! Erzeugung von Short Dumps** <br>
+Der Funktionsbaustein Z_THEO_READ_TABLE kann aufgrund seiner Callback-Funktionalität nur von Theobald-Produkten gestartet werden. Das Testen des Bausteins in einem SAP-System ist daher nicht möglich.
