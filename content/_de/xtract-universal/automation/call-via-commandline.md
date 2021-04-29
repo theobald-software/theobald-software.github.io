@@ -71,6 +71,7 @@ Bei [Push-Destinationen](../xu-destinationen#pull--und-push-destinationen) wird 
 #### Standardfehlerausgabe
 Log- und Fehlermeldungen werden in die Standardfehlerausgabe (stderr) geschrieben.
 
+<!---
 ### Weitere Optionen zum Aufruf einer Extraktion
 
 #### Synchroner vs. asynchroner Aufruf
@@ -86,7 +87,7 @@ Ein asynchroner Aufruf einer Extraktion ist ein nichtblockierender Aufruf. D.h. 
 
 {: .box-tip }
 **Tipp:** Der XU-Server verfügt über weitere Funktionalitäten wie z.B. den Status eines (asynchronen) Extraktionsaufrufs prüfen, Logs oder Metadaten einer Extraktion abfragen usw. Diese Funktionalitäten werden nicht über das Kommandozeilen-Tool, sondern nur über [Webservices](./call-via-webservice#weitere-webservices) aufgerufen.
-
+--->
 #### Weiterführende Links
 - [Extraktion via Skript ausführen](./call-via-script)
 - [Extraktion via Scheduler ausführen](./call-via-scheduler)

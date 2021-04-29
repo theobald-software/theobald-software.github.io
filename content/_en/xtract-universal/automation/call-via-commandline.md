@@ -72,6 +72,7 @@ When using [Push Destinations](../destinations#pull-and-push-destinations) an [E
 #### Standard Error Output
 Logs and error notifications are written into the standard error output (stderr).
 
+<!---
 ### Options for Calling Extractions
 
 #### Synchronous vs. Asynchronous Call
@@ -88,7 +89,7 @@ The timestamp can be used to check the status of the extraction.
 
 {: .box-tip }
 **Tip:** The XU server offers further functionalities e.g., checking the status of an (asynchronous) extraction, receiving logs or metadara of an extraction, etc. These functionalities are only available via [Webservices](./call-via-webservice#weitere-webservices).
-
+--->
 #### Related Links
 - [Call via Script](./call-via-script)
 - [Call via Scheduler](./call-via-scheduler)
