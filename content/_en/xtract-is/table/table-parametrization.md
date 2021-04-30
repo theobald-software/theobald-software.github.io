@@ -1,7 +1,7 @@
 ---
 ref: xi-table-07
 layout: page
-title: Parametrization 
+title: Parameterization 
 description: Parametrization 
 product: xtract-is
 parent: table
@@ -11,16 +11,44 @@ lang: en_GB
 
 ---
 
-The following properties are parameterizable:
+### About
+Some of the values that can be entered or selected in the component's UI can be dynamically changed at SSIS package runtime. This is explained in section [Parameterization](/../parameterization). <br>
+This section lists the component's fields whose values can be dynamically changed.
+
+
+{: .box-tip }
+**Recommendation:** Where possible, use properties for parameterization. 
+
+### Parameterization using Properties
+The following properties can be parameterized:
 
 |Property Name|Description|
 |:----|:----|
-| `[Xtract Table].[WhereClause]`| Restricts the number of rows included in the results set by the statement SELECT of a query, by using a logical expression.|
-| `[Xtract Table].[ConvertsDates]`|Converts the character-type SAP date to a special date format.|
-| `[Xtract Table].[CustomFunctionName]`| Specifies the name of the function module used for data extraction.|
-| `[Xtract Table].[MaxRows]`|Specifies the maximum number of extracted records.|
-| `[Xtract Table].[MinDateReplacement]`|Date conversions are applied in case of invalid data in SAP date fields.|
-| `[Xtract Table].[MaxDateReplacement]`|Date conversions are applied in case of invalid data in SAP date fields.|
-| `[Xtract Table].[PackageSize]`| Specifies the number of records retrieved per data package.|
+| `[Xtract Table].[WhereClause]`|Corresponds to the tab *WHERE clause* in the Table component. Allows parameterization of the complete WHERE clause.|
+| `[Xtract Table].[ConvertsDates]`|see [Custom Properties - ConvertsDates](./extraction-settings#custom-properties). Permitted Values are *True* and *False*. |
+| `[Xtract Table].[CustomFunctionName]`| Corresponds to the drop-down menu *Function Module* in the Table component's Settings.|
+| `[Xtract Table].[MaxRows]`|Corresponds to the field *Row Limit* in the Table component's Settings.|
+| `[Xtract Table].[MinDateReplacement]`|see [Custom Properties - MinDateReplacement](./extraction-settings#custom-properties).|
+| `[Xtract Table].[MaxDateReplacement]`|see [Custom Properties - MaxDateReplacement](./extraction-settings#custom-properties).|
+| `[Xtract Table].[InvalidDateReplacement]`|see [Custom Properties - InvalidDateReplacement](./extraction-settings#custom-properties).|
+| `[Xtract Table].[PackageSize]`| Corresponds to the field *Package Size* in the Table component's Settings.|
 
-Get further information on parameterization from the knowledge base article ["Dynamization of WHERE conditions of the XIS table components"](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
+
+### Parameterization using SSIS Variables
+The following fields in the Table component allow entry of an SSIS variable (instead of a hard coded value):
+
+|Field Name|Comment|
+|:----|:----|
+| *WHERE clause* tab|Allows parameterization of the complete WHERE clause or only parts of the WHERE clause. Example: AEDAT > @v_aedat|
+
+
+{: .box-tip }
+**Recommendation:** Where possible, use properties for parameterization. 
+
+
+
+****
+#### Related Links
+[Table Extraction Settings](./extraction-settings/) <br>
+[Parameterization](../parameterization/) <br>
+[Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
