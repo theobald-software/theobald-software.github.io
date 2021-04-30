@@ -10,7 +10,3 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=SAP-verbindung
----
-
-Um solche Aktionen wie Design von ETL-Paketen, Extraktion von Metadaten, Datenvorschau und -bereitstellung von Daten mit Xtract IS for Azure durchzuführen, ist eine Verbindung zum SAP-System erforderlich. SSIS kann mit Hilfe des Verbindungsmanagers “XTRACT” an SAP angeschlossen werden. In den folgenden Abschnitten finden Sie Details zur Erstellung einer SAP-Verbindung innerhalb des SSIS.
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

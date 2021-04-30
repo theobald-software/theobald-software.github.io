@@ -10,5 +10,3 @@ permalink: /:collection/:path
 weight: 10
 lang: en_GB
 ---
-
-{% include _content/en/odp/odp-introduction.md %} 

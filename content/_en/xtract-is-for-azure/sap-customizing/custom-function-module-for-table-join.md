@@ -10,6 +10,3 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=SAPCustomizing-EN:custom-function-module-for-table-join
 ---
-
-
-{% include _content/en/sap-customizing/custom-function-module-for-table-join.md  %}

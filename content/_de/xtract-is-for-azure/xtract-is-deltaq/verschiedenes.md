@@ -10,4 +10,3 @@ weight: 11
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/datasource-deltaq/verschiedenes.md %}

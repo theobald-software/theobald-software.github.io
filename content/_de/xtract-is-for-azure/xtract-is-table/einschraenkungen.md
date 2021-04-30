@@ -10,5 +10,3 @@ weight: 7
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=einschraenkungen
 ---
-
-{% include _content/de/table/einschraenkungen-umgehen.md  %}

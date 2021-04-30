@@ -10,4 +10,3 @@ weight: 3
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/odp/odp-bw-infoproviders.md %} 

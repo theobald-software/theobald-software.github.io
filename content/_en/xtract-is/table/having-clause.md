@@ -10,7 +10,3 @@ weight: 5
 lang: en_GB
 ---
 {% include _content/en/tables/having-clause.md  %}
-
-
-
-

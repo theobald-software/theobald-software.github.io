@@ -10,6 +10,3 @@ permalink: /:collection/:path
 weight: 99
 lang: de_DE
 ---
-
-{% include _content/de/sap-customizing.md  %}
-
