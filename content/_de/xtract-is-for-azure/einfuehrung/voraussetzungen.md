@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure-01
+ref: xi-for-azure-01
 layout: page
 title: Voraussetzungen
 description: Voraussetzungen

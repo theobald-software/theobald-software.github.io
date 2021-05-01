@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure-02
+ref: xi-for-azure-02
 layout: page
 title: Installation
 description: Installation

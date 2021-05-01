@@ -1,8 +1,5 @@
 ---
-ref: xi-requirements-and-installation-02
-layout: page
----
-ref: xtract-is-for-azure-02
+ref: xi-for-azure-02
 layout: page
 title: Installation
 description: Installation
@@ -11,91 +8,54 @@ parent: introduction
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /Xtract-IS-EN/default.aspx?pageid=installation
-progressstate: 5
+old_url: /Xtract-IS-EN/default.aspx?pageid=installation1
 ---
 
-Xtract IS for Azure is required when developing and running SSIS packages. 
-Make sure to install Xtract IS for Azure on both types of machines:
-- On the development machine running Visual Studio / SQL Sever Data Tools. Development can be performed on several machines.
-- On the machine running the SQL server, which is used for deploying and running the packages.
+The following section describes how to setup Xtract IS for Azure on an Azure SSIS-IR for running SSIS packages containing Xtract IS components.
 
 
-### Prerequisites
+### Manual Setup
+**1. Create an Azure Storage container** <br>
+Follow the [instructions](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#standard-custom-setup) on how to set up 3rd party extensibility for Azure-SSIS IR. Only the part with setting up an Azure storage container and creating a Shared Access Signature is relevant.
 
-- SSIS / Visual Studio Extentions are installed
+Place *XtractISSetup.exe* and [main.cmd](https://cdn-files.theobald-software.com/download/XtractIS/main.cmd) into the Azure storage container created above.
 
-{: .box-note }
-**Note:** administrator permissions are required to install Xtract IS for Azure.
+![XISforAzure_StorageContainer](/img/content/XISforAzure_StorageContainer.png){:class="img-responsive" }
 
-To use Xtract IS for Azure, the file *XtractISSetup.exe* must be executed and installed **both** on the local development environment (Visual Studio or SSDT) and on the SSIS server. For more information, see section [Licensing](./installing-the-license).
-
-
-
-### Interactive Installation
-
-Interactive installation is the standard procedure with GUI. Execute the *XtractISSetup.exe* file and follow the instructions of the setup program.
-
-![XIS_Setup](/img/content/xis/xis_setup-exe.png){:class="img-responsive"}
-
-The Xtract IS for Azure Setup installs Xtract IS for Azure as a plug-in into SSIS.
-
-The license installation procedure is described in the section [Installing the license](./installing-the-license#installing-the-xtract-is-for-azure-license---xtractislicensejson).
+When running a trial version of Xtract IS for Azure, place the two mentioned files *XtractISSetup.exe* and *main.cmd* into the storage container.
+With the purchase of Xtract IS for Azure a [license file](../introduction/installing-the-license) is provided. Place the license file in the storage container, as well.
 
 
-#### Installation Directory Files
-The list below shows several most important files that are placed into the default directory ``C:\Program Files\XtractIS`` after installation:
+**2. Add Azure Storage Container to SSIS-IR** <br>
+- When provisioning the Azure-SSIS IR via a [PowerShell](https://docs.microsoft.com/de-de/azure/data-factory/tutorial-deploy-ssis-packages-azure-powershell#create-an-azure-ssis-integration-runtime) populate the ```-SetupScriptContainerSasUri```parameter with the Azure Storage container's SAS URI.
+- When provisioning the Azure-SSIS IR via the Azure Portal UI, enter the Azure Storage container's SAS URI in the *Custom setup container SAS URI* field. 
 
-|Filename | Description |
-|:----|:---|
-| ABAP Directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../sap-customizing). |
-| XtractISSetup.exe | Application for installing and registering the Xtract IS for Azure components within SSIS.|
-|XtractISConversionPreparer.exe| Tool, which prepares older version of SSIS packages (containing Xtract IS for Azure components) for migration to newer versions of SSIS. See also section [SSIS Migration](./ssis-migration).|
-| xis_version.bat | Starts the `XtractISVerisonInfo.exe` to display and read the currently installed version.|
-| XtractLicenseManager.exe | Application to manage and view licenses.|
-| Uninstall Xtract IS for Azure| Tool for uninstalling and removing Xtract IS for Azure with all its components from your machine. |
-| gac-uninstall.bat | **For debugging only**. Tool to clear the GAC of all Xtract IS for Azure related components in case of installation issues.|
-| Eula_XtractIS.rtf | Document containing the license agreement for the use of the software Xtract IS for Azure.|
-| XtractISLicense.json | License file with information about the server, the component and runtime. |
-| UninstallDllLicense.bat| **For older license files**. See [Updating the Xtract.License.dll to XtractISLicense.json](./installing-the-license#updating-the-xtractlicensedll-to-xtractislicensejson)|
-
-
-
-### Unattended Installation
+![XISforAzure_Portal_CustomSetupContainer](/img/content/XISforAzure_Portal_CustomSetupContainer.png){:class="img-responsive" }
+Start the Integration Runtime. During the startup of the Intergation Runtime the *main.cmd* is executed, which triggers an unattended installation of Xtract IS for Azure on the SSIS-IR.
 
 {: .box-note }
-**Note:** All switches are case sensitive.
-
-The setup program and the License Manager (installer) can also be started without the GUI in a non-interactive mode.
-
-#### XtractISSetup.exe
-To execute the setup program in the unattended mode, use the switch *--unattended* . <br>
-
-![XIS_Setup-unattended](/img/content/xis/cmd-unattended-switch.png){:class="img-responsive"}
-
-#### XtractLicenseManager.exe
-To execute the License Manager in the unattended mode, pass the path to the license file as a command line argument.
+**Note** The startup process of the Azure SSIS-IR might take up to 20 minutes.
 
 
-#### Waiting Switch
+### Express Custom Setup
+As an alternative to the manual setup, the Express Custom Setup can be used for installing Xtract IS for Azure on an Azure SSIS-IR. See [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#express-custom-setup) for more information.
 
-As both programs `XtractISSetup.exe` and `XtractLicenseManager.exe` are Windows applications, so Windows Command Prompt does not wait until the installation is complete. 
-To wait until the installation is complete, use the `[start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)` command with the */wait* switch. 
+![XISforAzure_ExpressCustomSetup_1](/img/content/XISforAzure_ExpressCustomSetup_1.png){:class="img-responsive" }
 
-**Examples:**
-```
-start /wait XtractISSetup.exe --unattended
-start /wait XtractLicenseManager.exe "C:\temp\Xtract IS for Azure\XtractIS.License.json"
+![XISforAzure_ExpressCustomSetup_2](/img/content/XISforAzure_ExpressCustomSetup_2.png){:class="img-responsive" }
 
-```
+For using Xtract IS for Azure via the Express Custom Setup a valid license file is required.
+The Express Custom Setup installs a specific version of Xtract IS for Azure. For information on the currently used version, see [Microsoft Documentation - Installing licensed components](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#installing-licensed-components) or contact [Theobald Software](mailto:info@theobald-software.com).
+
+{: .box-note }
+**Note** The specific version of Xtract IS for Azure is updated in regular intervals without further notice.
 
 
-### Displaying the Xtract IS for Azure components within Visual Studio
-After a successful installation of the Xtract IS for Azure, the Xtract IS for Azure components are automatically available in the SSIS Toolbox of a Data Flow Task in your Visual Studio Integration Services project.
+### Azure SSIS Cluster ID
+After purchasing Xtract IS for Azure the [Cluster ID of the Azure SSIS-IR](https://docs.microsoft.com/en-us/azure/data-factory/how-to-develop-azure-ssis-ir-licensed-components) is required by Theobald Software for generating a license file. Refer to the knowledge base article [Determining the Azure SSIS-IR Cluster ID](https://kb.theobald-software.com/xtract-is/determining-the-azure-cluster-ID) for details on how to determine the Cluster ID.
 
-![XIS_SSIS_Toolbox](/img/content/XIS_SSIS_Toolbox.png){:class="img-responsive"}
+### Using a self-hosted Integration Runtime (SHIR)
 
-<!---{: .box-warning }
-**Warning! Xtract IS for Azure components not visible**<br> With the current version of the SSDT for VS 2015, *SQL Server vNext* or *SQL Server 2017* are selected by default as the target environment for the deployment network of SSIS projects.  With this setting, the Xtract IS for Azure components are not visible in the SSIS toolbox. <br> Change the target environment for the deployment to SQL Server 2016 to display the Xtract IS for Azure components in the toolbox.
+Xtract IS for Azure supports usage of SHIR for connecting to an on-prem SAP system from Azure SSIS-IR. See [Microsoft documentation - Configure a self-hosted IR as a proxy for an Azure-SSIS IR in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/self-hosted-integration-runtime-proxy-ssis) to get general information about SHIR setup. 
 
-![XIS_deployment_target_version_vNext](/img/content/VS_Deployment_Target.png){:class="img-responsive"}--->
+For information on the installation process of a self-hosted IR with Xtract IS for Azure, see the knowledge base article [Using a self-hosted IR with Xtract IS for Azure](https://kb.theobald-software.com/xtract-is/XIS-for-Azure-SHIR).
