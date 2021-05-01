@@ -11,7 +11,4 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=executing-bw-loader-packages
 ---
-
-The SSIS package to be executed is defined in the parameter list of the InfoPackage.
-
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+{% include _content/en/xis-specific/the-bi-notification-server/executing-bw-loader-packages.md %}

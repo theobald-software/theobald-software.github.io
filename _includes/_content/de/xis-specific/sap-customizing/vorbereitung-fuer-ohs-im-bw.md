@@ -1,0 +1,1 @@
+{% include _content/de/sap-customizing/vorbereitung-fuer-ohs-im-bw.md  %}

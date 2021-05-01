@@ -10,7 +10,4 @@ weight: 5
 lang: en_GB
 ---
 {% include _content/en/tables/having-clause.md  %}
-
-
-
-
+{% include _content/en/xis-specific/table/having-clause.md %}

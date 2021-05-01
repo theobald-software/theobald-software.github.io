@@ -10,10 +10,5 @@ permalink: /:collection/:path
 weight: 15
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=tablejoin
-progressstate: 5
 ---
-
-{: .box-warning }
-**Warning! Obsolete component** 
-As of Xtract IS Version 5.0, the Table Join component is obsolete.<br>
-Use the table join functionality of the newer [Table Component](./table/table-joins).
+{% include _content/en/xis-specific/table-join.md %}

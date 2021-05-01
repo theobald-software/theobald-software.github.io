@@ -10,8 +10,4 @@ weight: 11
 lang: en_GB
 progressstate: 5
 ---
-{% include _content/en/datasource-deltaq/troubleshooting-deltaq.md %}
-
-
-
-
+{% include _content/en/xis-specific/deltaq/troubleshooting.md %}

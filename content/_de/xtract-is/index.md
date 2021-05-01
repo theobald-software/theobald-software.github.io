@@ -10,8 +10,8 @@ permalink: /:collection/:path
 weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/
-progressstate: 5
 ---
+
 Willkommen in der Online Help von Xtract IS.
 
 Xtract IS ist ein Plug-in für die [SQL Server Integration Services (SSIS)](https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services).

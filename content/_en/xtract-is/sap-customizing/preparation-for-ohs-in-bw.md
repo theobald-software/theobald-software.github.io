@@ -10,5 +10,4 @@ weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=SAPCustomizing-EN:preparation-for-ohs-in-bw
 ---
-
-{% include _content/en/sap-customizing/preparation-for-ohs-in-bw.md  %}
+{% include _content/en/xis-specific/sap-customizing/preparation-for-ohs-in-bw.md %}

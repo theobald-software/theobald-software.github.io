@@ -10,4 +10,4 @@ weight: 7
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=restrictions
 ---
-{% include _content/en/tables/avoid-restrictions.md  %}
+{% include _content/en/xis-specific/table/avoid-restrictions.md %}

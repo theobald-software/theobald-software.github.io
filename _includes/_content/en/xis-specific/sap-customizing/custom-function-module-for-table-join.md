@@ -1,0 +1,1 @@
+{% include _content/en/sap-customizing/custom-function-module-for-table-join.md  %}

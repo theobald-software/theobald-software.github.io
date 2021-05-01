@@ -11,5 +11,4 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=look-up-an-ohs-extraction
 progressstate: 5
 ---
-
-{% include _content/en/xis-specific/open-hub-services/lookup-an-ohs-extraction.md  %}
+{% include _content/en/xis-specific/open-hub-service-ohs/lookup-an-ohs-extraction.md %}

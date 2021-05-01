@@ -1,0 +1,13 @@
+---
+ref: xi-report-05
+layout: page
+title: Settings
+description: Settings
+product: xtract-is-for-azure
+parent: report
+permalink: /:collection/:path
+weight: 5
+lang: en_GB
+old_url: /Xtract-IS-EN/default.aspx?pageid=report-settings
+---
+{% include _content/en/xis-specific/report/settings.md %}
