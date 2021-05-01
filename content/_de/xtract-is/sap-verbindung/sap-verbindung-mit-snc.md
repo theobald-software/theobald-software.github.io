@@ -10,3 +10,4 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=sap-verbindung-mit-snc
 progressstate: 5
+---

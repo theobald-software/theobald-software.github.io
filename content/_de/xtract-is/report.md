@@ -10,3 +10,4 @@ permalink: /:collection/:path
 weight: 13
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=report
+---

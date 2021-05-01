@@ -9,4 +9,3 @@ permalink: /:collection/:path
 weight: 6
 lang: de_DE
 ---
-

@@ -10,3 +10,4 @@ weight: 6
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=erweiterte-table-eigenschaften
 progressstate: 5
+---

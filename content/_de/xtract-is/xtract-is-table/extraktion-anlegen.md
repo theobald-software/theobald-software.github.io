@@ -10,3 +10,4 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=tabellen-extrahieren
 ---
+{% include _content/de/xis-specific/xtract-is-table/extraktion-anlegen.md %}
