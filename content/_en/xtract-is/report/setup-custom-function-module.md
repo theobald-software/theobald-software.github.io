@@ -10,3 +10,4 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=setup-of-the-custom-function-module
 ---
+{% include _content/en/xis-specific/report/setup-custom-function-module.md %}

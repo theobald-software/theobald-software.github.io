@@ -1,3 +1,4 @@
+Click the *Settings* link to open the settings dialog.
 
 ![XIS_BWHierarchy_settings](/img/content/XIS_BWHierarchy_settings.png){:class="img-responsive" }
 

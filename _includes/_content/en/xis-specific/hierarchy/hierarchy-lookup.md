@@ -1,3 +1,4 @@
+By double-clicking the data flow component, the editor is opened. The search form appears with another click of the binocular button. By using wildcards (* as a placeholder), a hierarchy can be selected.
 
 ![Hierarchy-Search-01](/img/content/Hierarchy-Search-01.png){:class="img-responsive" }
 

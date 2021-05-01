@@ -1,3 +1,4 @@
+First, at least one connection manager must be assigned as explained in the previous chapters on the other source components.
 
 Double-click the icon to launch the editor. Click the binocular button to open up the search dialogue as shown below.
 

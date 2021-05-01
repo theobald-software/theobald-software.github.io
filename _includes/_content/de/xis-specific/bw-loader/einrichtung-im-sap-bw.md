@@ -1,3 +1,4 @@
+Damit Xtract IS BW Loader die Daten korrekt abliefern kann, ist es nötig, im SAP BW entsprechende Vorkehrungen zu treffen. Um den Rahmen nicht zu sprengen, sind im Folgenden nur die wichtigsten Punkte beschrieben, weitere Infos zum Einrichten von externen Datenlieferanten im SAP BW finden Sie in der BW-Doku oder unter help.sap.com.<br> 
 Zunächst einmal ist es nötig, in der BW Administrator Workbench ein neues Quellsystem anzulegen (z.B. mit dem Namen XTRACTSYS). Dieses Quellsystem muss vom Typ *Drittanbieter / Staging BAPIs* sein. Bitte merken Sie sich die im Quellsystem vergebene *Programm ID*. Wir werden sie später wieder brauchen.
 
 ![BWLoader-Configuration-02](/img/content/BWLoader-Configuration-02.png){:class="img-responsive"}

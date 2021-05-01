@@ -10,3 +10,4 @@ weight: 3
 lang: de_DE
 ---
 
+{% include _content/de/xis-specific/xtract-is-table/table-joins.md %}

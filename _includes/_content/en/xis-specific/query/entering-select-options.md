@@ -1,4 +1,5 @@
-Please click the *Edit* link to define the selection for the parameters.
+Within the SAP GUI, you can create complex selection criteria in the selection screen of the query. This can be also done with the Xtract IS Query ent.
+Click the *Edit* link to define the selection for the parameters.
 
 ![Selection-Options-Fill-01](/img/content/Selection-Options-Fill-01.png){:class="img-responsive" }
 

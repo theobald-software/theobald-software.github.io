@@ -10,3 +10,4 @@ weight: 3
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=variablen
 ---
+{% include _content/de/xis-specific/bwcube/variablen.md %}

@@ -10,3 +10,4 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=queries-suchen-und-zuweisen
 ---
+{% include _content/de/xis-specific/query/queries-suchen-und-zuweisen.md %}

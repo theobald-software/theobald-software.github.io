@@ -10,3 +10,4 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=executing-the-ohs-extraction
 ---
+{% include _content/en/xis-specific/the-bi-notification-server/executing-ohs-extractions/executing-the-ohs-extraction.md %}

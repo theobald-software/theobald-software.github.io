@@ -10,3 +10,4 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements-in-sap-bw
 ---
+{% include _content/en/xis-specific/bw-loader/requirements-in-sap-bw.md %}

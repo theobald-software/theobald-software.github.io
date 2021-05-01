@@ -1,4 +1,4 @@
-
+Alle Tools befinden sich im Unterordner BINotificationReceiver im Xtract IS Installationsverzeichnis. Dieses Programm kann mit einem Doppelklick auf das Konsolenprogramm (BINotificationReceiverConsole.exe) gestartet oder als WindowsDienst (BINotificationReceiverService.exe) installiert werden. Es wird empfohlen für Testzwecke das Konsolenprogramm zu verwenden, da es einfacher zu verwenden ist. Später im Produktivbetrieb können Sie das Tool als Windows Dienst installieren und starten. Um den Dienst zu installieren führen Sie installutil.exe BINotificationReceiverService.exe in der Konsole aus.
 
 ![Notification-Server-Install-01](/img/content/Notification-Server-Install-01.png){:class="img-responsive"}
 

@@ -1,3 +1,4 @@
+Über den *Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![XIS_BWCube_Settings](/img/content/XIS_BWCube_Settings.png){:class="img-responsive"}
 

@@ -1,3 +1,4 @@
+Generally speaking there are two options on how data can be loaded into SAP BW.
 
 1. The InfoPackage which initiates the data load is triggered from SSIS.
 2. The InfoPackage is started from within SAP.

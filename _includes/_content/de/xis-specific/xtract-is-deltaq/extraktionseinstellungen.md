@@ -1,3 +1,5 @@
+Klicken Sie im Hauptfenster "Extract SAP DataSources and Extractors" auf **[Settings]**.
+Das Fenster **Xtract IS DeltaQPrefernces** öffnet sich. Das Fenster besteht aus vier Hauptbereichen und Schaltflächen.
 
 ![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings.png){:class="img-responsive"}
 

@@ -1,3 +1,4 @@
+First, at least one connection manager must be assigned as explained in the previous chapters on the other source components. A connection must be made with an SAP BW system.
 
 ![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive" }
 

@@ -1,3 +1,4 @@
+Each characteristic (dimension) of a BEx query or an InfoCube offers the possibility to set a filter to execute the MDX statement in BW using the selected filter values.
 
 ![BWCube-Filter-01](/img/content/BWCube-Filter-01.png){:class="img-responsive" }
 

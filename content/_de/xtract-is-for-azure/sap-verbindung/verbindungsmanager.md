@@ -10,3 +10,4 @@ weight: 1
 lang: de_DE
 progressstate: 5
 ---
+{% include _content/de/xis-specific/sap-verbindung/verbindungsmanager.md %}

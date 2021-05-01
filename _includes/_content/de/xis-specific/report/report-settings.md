@@ -1,3 +1,4 @@
+Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![Report-Preferences](/img/content/Report-Preferences.png){:class="img-responsive"}
 

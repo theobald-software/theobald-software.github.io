@@ -1,3 +1,4 @@
+Mit einem Doppelklick auf die Datenflusskomponente öffnet sich der Editor. Mit einem weiteren Klick auf den Button mit dem Fernglas öffnet sich das Such-Fenster. Mit Hilfe von Wildcards (* als Platzhalter) kann eine Hierarchie selektiert werden.
 
 ![Hierarchy-Search-01](/img/content/Hierarchy-Search-01.png){:class="img-responsive"} 
 

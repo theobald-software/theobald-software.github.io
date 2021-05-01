@@ -10,3 +10,4 @@ weight: 3
 lang: en_GB
 ---
 
+{% include _content/en/xis-specific/sap-connection/sensitive-environment-variable-in-ssis-catalog.md %}

@@ -1,3 +1,4 @@
+To launch the editor, double-click the icon in the SSIS data flow task. 
 
 ![Report-SSIS-Component](/img/content/Report-SSIS-Component.png){:class="img-responsive" }
 

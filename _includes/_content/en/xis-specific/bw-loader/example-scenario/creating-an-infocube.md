@@ -1,3 +1,4 @@
+Before we now discuss the last type of loading, the transaction data, we need an InfoCube into which the data can be loaded.
 Create a new SSIS package, define an OleDB source in the Sales test table and link the pipeline with a BW Loader target.
 Then click on the link *Create Cube* in the editor. The following window will open. Through the pipeline that you already linked from the source, Xtract IS already "knows" how the cube should look like. One InfoObject for each element will be needed to create a cube.
 

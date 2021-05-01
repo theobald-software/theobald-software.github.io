@@ -1,3 +1,4 @@
+Go to the InfoPackage and choose tab "3rd party selections". Here you can find 4 parameters. "Path to executable" is the path to the program to be executed (e.g. dtexec for executing an SSIS package). And there are 3 additional parameters for the command line. In our case we must provide the Request ID to the variable of the package. So the command line in our case would be:
 
 Dtexec.exe /f "C:\Source\XtractIS\Demos\BWLoadTest\BI7 InfoObject AdventureWorks ZAWVEND.dtsx" /set \package.variables[RequestID].Value;%REQUESTID%
 

@@ -1,3 +1,4 @@
+If you execute the InfoPackage now the SSIS package will be executed implicitly.
 
 If you use the windows service instead of the command line tool, a log.txt file will be created where you can find out details about problems.
 

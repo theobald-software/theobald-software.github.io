@@ -1,4 +1,5 @@
-Im Falle der *Parent-child Representation*, s. Settings, hat sie bei jeder Hierarchie immer dieselben Spalten, die im folgenden beschrieben sind:
+Im Gegensatz zu den anderen Quellkomponenten ist die Ausgabe der Hierarchie-Komponente starr. <br>
+Im Fall der *Parent-child Representation*, s. Settings, hat sie bei jeder Hierarchie immer dieselben Spalten, die im folgenden beschrieben sind:
 
 **NodeID**<br>
 Eindeutiger Schlüssel des Knoten.

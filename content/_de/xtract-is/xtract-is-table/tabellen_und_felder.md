@@ -9,3 +9,4 @@ permalink: /:collection/:path
 weight: 1
 lang: de_DE
 ---
+{% include _content/de/xis-specific/xtract-is-table/tabellen_und_felder.md %}

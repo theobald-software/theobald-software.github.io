@@ -10,3 +10,4 @@ weight: 6
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=external-notification
 ---
+{% include _content/en/xis-specific/bw-loader/external-notification.md %}

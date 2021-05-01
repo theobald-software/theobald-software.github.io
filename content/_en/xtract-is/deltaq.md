@@ -11,3 +11,4 @@ weight: 9
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=deltaq
 ---
+{% include _content/en/xis-specific/deltaq.md %}

@@ -11,3 +11,4 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=SAP-verbindung
 ---
+{% include _content/de/xis-specific/sap-verbindung.md %}

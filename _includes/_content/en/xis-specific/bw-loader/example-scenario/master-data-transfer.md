@@ -1,3 +1,4 @@
+In this first example, our goal is to create and fill in a master data InfoObject. Set up a new data flow and create an OleDB source that reads the product table. Link the pipeline with a BW Loader target (after setting up the connection manager to SAP):
 
 ![BWLoader-StammDataTransfer-01](/img/content/BWLoader-StammDataTransfer-01.png){:class="img-responsive"}
 

@@ -1,3 +1,4 @@
+Zunächst einmal wird mindestens ein gültiger Verbindungsmanager benötigt, der mit einem SAP BW System verbunden ist (siehe Abschnitt [Verbindungsmanager](../sap-verbindung/verbindungsmanager) ).<br>
 Um einen Cube für die Extraktion zu suchen, öffnen Sie mit einem Doppelklick die Datenquelle, so dass der Editor erscheint und klicken Sie auf den Button mit dem Fernglas.
 
 ![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}

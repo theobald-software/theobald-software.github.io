@@ -1,3 +1,5 @@
+### SAP-Verbindung herstellen 
+Jede Xtract IS Komponente benötigt einen Xtract IS Connection Manager, um auf das SAP-System zuzugreifen. 
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**

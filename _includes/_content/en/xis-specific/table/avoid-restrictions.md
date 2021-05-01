@@ -1,0 +1,1 @@
+{% include _content/en/tables/avoid-restrictions.md  %}

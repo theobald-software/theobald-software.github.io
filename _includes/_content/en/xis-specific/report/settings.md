@@ -1,3 +1,4 @@
+Click the *Settings* link to open the settings dialog.
 
 ![Report-Preferences](/img/content/Report-Preferences.png){:class="img-responsive" }
 

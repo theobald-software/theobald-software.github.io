@@ -1,4 +1,4 @@
-
+Um eine der hinterlegten Varianten anzuwenden, klicken Sie im Editor auf das Fernglas neben der Variantenangabe. 
 ![Use-Variants-01](/img/content/Use-Variants-01.png){:class="img-responsive"}
 
 Ein entsprechendes Selektionsfenster öffnet sich, in dem eine Variante gewählt werden kann.

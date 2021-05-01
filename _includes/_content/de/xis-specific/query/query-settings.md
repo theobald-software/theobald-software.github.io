@@ -1,3 +1,4 @@
+Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![Query-Settings](/img/content/Query-Settings.png){:class="img-responsive"}
 

@@ -1,3 +1,4 @@
+Unlike the other components, the Xtract IS Report component requires the installation of a custom function module in your SAP system before use.
 If you can't do this on your own, please ask your SAP system administrator for help.
 
 First, create a new function group to place the function module in (name it ZXTRACT or change the name if you like). Create a new function module called Z_XTRACT_IS_REMOTE_REPORT. Set the attribute remote enabled to true.

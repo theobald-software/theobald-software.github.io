@@ -1,4 +1,4 @@
-
+Hier beschreiben wir ein kurzes Beispiel, das zeigt, wie man mit Hilfe eines SAP-Funktionsbausteins Daten in SAP schreibt. 
 
 **SAP-Funktionsbaustein**
 

@@ -1,3 +1,4 @@
+In the previous section, we created a master data InfoObject while specifying that there are language-dependent texts. These are located in the ProductText table.
 
 Create a new data flow (or a new package), prepare the connection manager and define an OleDB source for the ProductText table. Now define a BW Loader target and draw the pipeline to the target.
 

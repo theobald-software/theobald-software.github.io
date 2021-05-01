@@ -1,3 +1,4 @@
+Here is a short example that shows, how to use an SAP function module to post data to SAP. 
 
 **SAP function module**<br>
 In SAP we have the following custom function module Z_ECS_PRODUCT_CREATE_MULTI. 

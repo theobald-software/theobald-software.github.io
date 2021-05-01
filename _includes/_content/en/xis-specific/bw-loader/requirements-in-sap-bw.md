@@ -1,3 +1,4 @@
+For enabling the BW Loader component to deliver data correctly, it is necessary to ensure several requirements in SAP BW. In this chapter, only the most important topics are described. Please refer to help.sap.com for further details on how to create data imports in SAP BW.
 
 First of all, we need a new source system of the type *3rd party / Staging BAPIs*. Please note the program ID. We will need it later on.
 

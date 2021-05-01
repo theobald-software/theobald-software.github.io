@@ -10,3 +10,4 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=das-ssis-paket-vorbereiten
 ---
+{% include _content/de/xis-specific/bi-notification-server/bw-loader-pakete-starten/das-ssis-paket-vorbereiten.md %}

@@ -10,3 +10,4 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=connect-source-and-destination-columns
 ---
+{% include _content/en/xis-specific/bw-loader/connect-source-and-destination-column.md %}

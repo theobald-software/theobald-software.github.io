@@ -1,3 +1,4 @@
+Compared to other source components, the output of hierarchy components is fixed. It always has the same columns for every hierarchy, as described in the following:
 
 **NodeID**<br>
 Unique node key.

@@ -11,3 +11,4 @@ weight: 15
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=xtract-is-table-join
 ---
+{% include _content/de/xis-specific/table-join.md %}

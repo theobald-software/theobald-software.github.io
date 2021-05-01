@@ -1,3 +1,5 @@
+### Datenquelle auswählen
+Wie in [Defining an extractor](../xtract-is-deltaq/stammdaten-im-full-update) gezeigt, wählen Sie im Editor "Look Up OLTP Source" über die **Suche** (Lupensymbol) einen **OLTP Source Name**.
 
 Beispiel: Datenquelle *0COSTCENTER_0101_HIER*.
 ![DeltaQ-Hierarchy-001](/img/content/DeltaQ-Hierarchy-001.png){:class="img-responsive"}

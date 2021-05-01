@@ -1,3 +1,4 @@
+### About DeltaQ
 The Xtract IS DeltaQ component allows to conduct a real delta management between the productive system and the BI/staging layer.
 DeltaQ extracts DataSources (OLTP) and extractors from ERP and ECC systems 
 ![DeltaQ](/img/content/xis/xis_deltaq_overview.png){:class="img-responsive" }

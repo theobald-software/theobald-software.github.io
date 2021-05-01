@@ -11,3 +11,4 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=sap-verbindung-mit-snc
 progressstate: 5
 ---
+{% include _content/de/xis-specific/sap-verbindung/sap-verbindung-mit-snc.md %}

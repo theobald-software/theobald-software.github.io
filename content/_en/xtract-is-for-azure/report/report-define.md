@@ -10,3 +10,4 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=define-report
 ---
+{% include _content/en/xis-specific/report/report-define.md %}

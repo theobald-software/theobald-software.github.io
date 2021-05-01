@@ -18,3 +18,4 @@ Xtract IS for Azure for Azure allows extracting data from SAP systems and writin
 The following sections include information about the requirements and the installation process of Xtract IS for Azure:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+

@@ -10,3 +10,4 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=einstellungen-im-infopackage
 ---
+{% include _content/de/xis-specific/bi-notification-server/bw-loader-pakete-starten/einstellungen-im-infopackage.md %}

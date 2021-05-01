@@ -10,3 +10,4 @@ permalink: /:collection/:path
 weight: 10
 lang: de_DE
 ---
+{% include _content/de/xis-specific/odp.md %}

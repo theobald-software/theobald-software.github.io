@@ -1,3 +1,4 @@
+Zunächst brauchen wir eine allgemeine SSIS-Variable, die später die *RequestID* der OHS-Extraktion aufnimmt.
 
 ![Notification-Server-OHS-ExtractExe-01](/img/content/Notification-Server-OHS-ExtractExe-01.png){:class="img-responsive"} 
 

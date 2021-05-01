@@ -1,3 +1,4 @@
+### Connecting to SAP
 Every Xtract IS component needs a connection manager to establish access to the SAP system. 
 
 {: .box-warning}

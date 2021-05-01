@@ -10,3 +10,4 @@ weight: 2
 lang: de_DE
 ---
 
+{% include _content/de/xis-specific/sap-verbindung/sensitive-umgebungsvariablen-in-ssis.md %}

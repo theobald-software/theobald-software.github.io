@@ -11,3 +11,4 @@ weight: 16
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=bi-notification-server
 ---
+{% include _content/en/xis-specific/the-bi-notification-server.md %}

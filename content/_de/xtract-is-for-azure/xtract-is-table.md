@@ -11,3 +11,4 @@ weight: 14
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=table
 ---
+{% include _content/de/xis-specific/xtract-is-table.md %}

@@ -10,3 +10,4 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=das-xml-config-file-vorbereiten
 ---
+{% include _content/de/xis-specific/bi-notification-server/ohs-extraktionen-ausfuehren/das-xml-config-file-vorbereiten.md %}

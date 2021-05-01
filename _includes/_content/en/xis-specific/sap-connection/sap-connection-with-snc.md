@@ -1,3 +1,4 @@
+To use encrypted communication between Xtract IS and SAP you can use Secure Network Communication (SNC) to connect to your SAP system. 
 The following section explains the necessary configuration of the SAP "Connection Manager", depending on your SAP system. 
 For more information about SNC configuration, see the official [SAP Help Site](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm). 
 

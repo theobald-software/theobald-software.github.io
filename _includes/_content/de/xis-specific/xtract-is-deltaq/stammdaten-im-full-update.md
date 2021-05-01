@@ -1,4 +1,6 @@
 
+Ziehen Sie eine DeltaQ-Komponente in den Datenflusstask und verknüpfen Sie diese wie gewohnt mit dem ConnectionManager.
+
 ### Schritt 1: Extraktor suchen (1)
 
 Suchen Sie im Editor "Look Up OLTP Source" mit Hilfe der **Suche** (Lupensymbol) nach **OLTP Source** (Datenquelle). Bei Bedarf können Sie Wildcards (*) verwenden.

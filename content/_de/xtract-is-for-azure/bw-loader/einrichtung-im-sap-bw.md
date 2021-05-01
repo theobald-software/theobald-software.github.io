@@ -10,3 +10,4 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=einrichtung-im-sap-bw
 ---
+{% include _content/de/xis-specific/bw-loader/einrichtung-im-sap-bw.md %}

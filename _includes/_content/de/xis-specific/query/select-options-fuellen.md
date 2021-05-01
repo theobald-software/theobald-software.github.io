@@ -1,3 +1,4 @@
+In dem Selektionsbildschirm einer Query haben Sie im SAP die Möglichkeit, komplexe Einschränkungen zu hinterlegen. Das geht im Xtract IS Query genauso. Klicken Sie im Editor im gewünschten Parameter auf den Edit-Link.
 
 ![Selection-Options-Fill-01](/img/content/Selection-Options-Fill-01.png){:class="img-responsive"}
 

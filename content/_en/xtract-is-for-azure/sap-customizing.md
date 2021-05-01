@@ -11,3 +11,4 @@ weight: 99
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
+{% include _content/en/xis-specific/sap-customizing.md %}

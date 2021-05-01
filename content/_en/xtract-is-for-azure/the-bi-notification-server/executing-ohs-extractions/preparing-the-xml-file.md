@@ -10,3 +10,4 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=preparing-the-xml-file
 ---
+{% include _content/en/xis-specific/the-bi-notification-server/executing-ohs-extractions/preparing-the-xml-file.md %}

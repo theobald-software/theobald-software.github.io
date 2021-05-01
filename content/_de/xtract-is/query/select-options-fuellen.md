@@ -10,3 +10,4 @@ weight: 3
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=select-options-fuellen
 ---
+{% include _content/de/xis-specific/query/select-options-fuellen.md %}

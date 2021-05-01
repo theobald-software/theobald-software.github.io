@@ -1,3 +1,4 @@
+In some situations it might be useful, to maintain the parameters for executing the SSIS package locally instead of using the parameters provided by the InfoPackage.
 
 To do so, just add the NotificationMapping XML sequence to the config file to overwrite the parameters provided by SAP. To find the correct parameters InfoSource and SourceSystem are the key columns.
 

@@ -1,3 +1,4 @@
+Use the *Setting* link to open up the settings dialog.
 
 ![BWLoader-Preferences](/img/content/BWLoader-Preferences.png){:class="img-responsive"}
 

@@ -10,3 +10,4 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=master-data-transfer
 ---
+{% include _content/en/xis-specific/bw-loader/example-scenario/master-data-transfer.md %}

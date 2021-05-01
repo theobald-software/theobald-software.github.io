@@ -1,3 +1,5 @@
+### Funktion
+Der Aktualisierungsmodus ermöglicht ein Delta-Update, d. h. es werden nur hinzugefügte oder geänderte Daten extrahiert, anstelle eines vollständigen Ladevorgangs.
 
 ### Einstellungen
 

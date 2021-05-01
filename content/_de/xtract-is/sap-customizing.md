@@ -10,3 +10,4 @@ permalink: /:collection/:path
 weight: 99
 lang: de_DE
 ---
+{% include _content/de/xis-specific/sap-customizing.md %}

@@ -10,3 +10,4 @@ weight: 7
 lang: de_DE
 progressstate: 5
 ---
+{% include _content/de/xis-specific/xtract-is-deltaq/daten-und-protokoll-output.md %}

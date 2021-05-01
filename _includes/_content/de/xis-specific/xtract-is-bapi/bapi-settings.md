@@ -1,3 +1,4 @@
+![BAPI-Settings](/img/content/BAPI-Settings.png){:class="img-responsive"}
 
 **Automatic String Conversion**
 

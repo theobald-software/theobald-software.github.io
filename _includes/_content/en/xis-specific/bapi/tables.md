@@ -1,3 +1,4 @@
+Tables can be entered in and extracted from the function module / BAPI. Therefore, there are two types of behavior for tables: *input type* and *output type*.
 
 ![BAPI-Tables](/img/content/BAPI-Tables.png){:class="img-responsive" }
 

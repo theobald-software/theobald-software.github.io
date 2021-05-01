@@ -1,3 +1,4 @@
+Tabellen können sowohl in den Baustein hinein, als auch aus ihm heraus 'fließen'. Im unteren Bereich des Editors können Sie für jede Tabelle des BAPI einen Input- und OutputType definieren.
 
 ![BAPI-Tables](/img/content/BAPI-Tables.png){:class="img-responsive"}
 

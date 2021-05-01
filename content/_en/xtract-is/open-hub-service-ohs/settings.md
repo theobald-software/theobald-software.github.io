@@ -10,3 +10,4 @@ weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=OHS-settings
 ---
+{% include _content/en/xis-specific/open-hub-service-ohs/settings.md %}

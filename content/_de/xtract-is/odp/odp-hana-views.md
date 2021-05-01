@@ -10,3 +10,4 @@ weight: 5
 lang: de_DE
 progressstate: 5
 ---
+{% include _content/de/xis-specific/odp/odp-hana-views.md %}

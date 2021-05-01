@@ -1,3 +1,4 @@
+The window below will open after clicking the *Settings* button.
 
 ![Query-Settings](/img/content/Query-Settings.png){:class="img-responsive" }
 

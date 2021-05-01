@@ -1,3 +1,4 @@
+Ab BI 7.0 wird von SAP empfohlen, keine InfoSpokes mehr zu benutzen, sondern anstatt dessen wie im Folgenden beschrieben, OHS-Destinationen anzulegen.<br>
 Klicken Sie in der Administrator Workbench RSA1 im linken Baum auf *Open Hub Destination*. Klicken Sie mit der rechten Maustaste auf eine InfoArea und wählen Sie im Kontextmenu *Open Hub Destination* anlegen.
 
 ![OHS-Destination-01](/img/content/OHS-Destination-01.png){:class="img-responsive"}

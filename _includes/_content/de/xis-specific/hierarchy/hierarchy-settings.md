@@ -1,3 +1,4 @@
+Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![XIS_BWHierarchy_settings](/img/content/XIS_BWHierarchy_settings.png){:class="img-responsive"}
 

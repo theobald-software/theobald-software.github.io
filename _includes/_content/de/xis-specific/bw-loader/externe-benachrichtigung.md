@@ -1,3 +1,4 @@
+Prinzipiell gibt es zwei Szenarien, wie die Daten ins SAP BW geladen werden:
 
 1. Der Ladeprozess (das InfoPackage) wird von SSIS-Seite aus angestoßen.
 2. Der Ladeprozess wird von SAP-Seite aus angestoßen.

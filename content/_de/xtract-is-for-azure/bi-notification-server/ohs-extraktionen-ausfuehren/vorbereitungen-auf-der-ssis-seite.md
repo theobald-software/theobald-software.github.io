@@ -10,3 +10,4 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=vorbereitungen-auf-der-ssis-seite
 ---
+{% include _content/de/xis-specific/bi-notification-server/ohs-extraktionen-ausfuehren/vorbereitungen-auf-der-ssis-seite.md %}

@@ -1,3 +1,4 @@
+Der folgende Abschnitt gibt einen Überblick über die Einstellungen, die für die ODP-Komponente geändert werden können.
 Die Einstellungen können über das Fenster "Define data source for SAP ODP" geändert werden. 
 ![ODP Component](/img/content/odp/odp_overview.png){:class="img-responsive"}
 

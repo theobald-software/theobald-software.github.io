@@ -1,3 +1,5 @@
+### Opening Extraction Settings
+Within the window "Extract Single and Joint SAP Tables or Views" click **Settings**. The window "Table Settings" opens. 
 
 {% include _content/en/tables/extraction-settings.md  %}
 

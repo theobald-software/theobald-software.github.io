@@ -1,3 +1,4 @@
+Für jedes Merkmal (Dimension) einer BEx Query oder eines Infocubes besteht die Möglichkeit, einen Filter zu setzen, um den MDX-Ausdruck für die Datenextraktion mit den ausgewählten Filterwerten im BW auszuführen.
 
 ![BWCube-Filter-01](/img/content/BWCube-Filter-01.png){:class="img-responsive"}
 

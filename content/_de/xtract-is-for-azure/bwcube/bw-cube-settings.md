@@ -10,3 +10,4 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=bw-cube-settings
 ---
+{% include _content/de/xis-specific/bwcube/bw-cube-settings.md %}

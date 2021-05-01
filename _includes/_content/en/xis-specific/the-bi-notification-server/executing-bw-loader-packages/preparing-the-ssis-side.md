@@ -1,3 +1,4 @@
+To set up the SSIS package for the external trigger, create a variable for the RequestID.
 
 ![Notification-Server-SSIS-Package-Prepare-01](/img/content/Notification-Server-SSIS-Package-Prepare-01.png){:class="img-responsive" }
 

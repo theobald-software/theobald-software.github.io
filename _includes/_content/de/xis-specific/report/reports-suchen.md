@@ -1,3 +1,4 @@
+Mit einem Doppelklick auf die Komponente innerhalb des Datenflusstasks springen Sie in den Editor ab:
 
 ![Report-SSIS-Component](/img/content/Report-SSIS-Component.png){:class="img-responsive"}
 

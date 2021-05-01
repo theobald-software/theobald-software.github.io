@@ -11,3 +11,4 @@ weight: 3
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=ohs-extraktionen-ausfuehren
 ---
+{% include _content/de/xis-specific/bi-notification-server/ohs-extraktionen-ausfuehren.md %}

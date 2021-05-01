@@ -11,3 +11,4 @@ weight: 7
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=hierarchy
 ---
+{% include _content/en/xis-specific/hierarchy.md %}

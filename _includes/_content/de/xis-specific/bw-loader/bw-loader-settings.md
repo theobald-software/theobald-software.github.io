@@ -1,4 +1,6 @@
 
+Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
+
 ![XIS_BWL_Settings](/img/content/XIS_BWL_Settings.png){:class="img-responsive"}
 
 

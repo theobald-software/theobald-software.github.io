@@ -1,3 +1,4 @@
+The window below will open after clicking the Settings button.
 
 ![BAPI-Settings](/img/content/BAPI-Settings.png){:class="img-responsive" }
 

@@ -1,3 +1,4 @@
+Um das SSIS-Paket für das externe Antriggern einzurichten, erstellen Sie bitte eine Variable für die RequestID.
 
 ![Notification-Server-SSIS-Package-Prepare-01](/img/content/Notification-Server-SSIS-Package-Prepare-01.png){:class="img-responsive"}
 
