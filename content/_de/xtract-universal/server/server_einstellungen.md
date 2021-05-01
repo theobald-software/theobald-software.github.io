@@ -79,7 +79,7 @@ fragt der Designer, ob man das neuere Setup herunterladen möchte.
 #### Result cache
 
 {:.box-note}
-**Hinweis:** Die Option *Cache results* ist nur Verfügbar in [Pull-Destinationen](../xu-destinationen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
+**Hinweis:** Die Option *Cache results* ist nur Verfügbar in [Pull-Destinationen](../destinationen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
 
 **Target directory**<br>
 Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Programmverzeichnis des Produkts: <br>

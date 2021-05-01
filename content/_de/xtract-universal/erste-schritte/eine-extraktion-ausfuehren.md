@@ -70,7 +70,7 @@ Benutzen Sie diese Strings, um eine Extraktion auch außerhalb vom Xtract Univer
 #### URL
 Die Extraktions-URL kann für verschiedene Anwendungsfälle verwendet werden. 
 - Rufen Sie die Extraktion dort auf, wo es mit dem Kommandozeilen-Tool xu.exe nicht möglich ist, z. B. aus cloudbasierten Zielumgebungen.
-- Rufen Sie die URL auf, wenn eine [Pull-Destination](../xu-destinationen#pull--und-push-destinationen) verwendet wird.
+- Rufen Sie die URL auf, wenn eine [Pull-Destination](../destinationen#pull--und-push-destinationen) verwendet wird.
 - Führen Sie die Extraktion in einem Webbrowser aus, z. B. zu Testzwecken. 
 - Weitere Anwendungsfälle sind möglich, z. B. der Aufruf in einem PowerShell-Skript. 
 
@@ -83,7 +83,7 @@ Der in **xu.exe** angezeigte Befehl ermöglicht die Ausführung einer Extraktion
 Das Tool befindet sich im Installationsordner: ```C:\Program Files\XtractUniversal\xu.exe``` <br>
 Der Befehl kann mit [STRG+C] oder dem Button auf der rechten Seite kopiert werden. 
 
-Wir empfehlen die Verwendung des Kommandozeilen-Tools mit [Push-Destinationen](../xu-destinationen#pull--und-push-destinationen).
+Wir empfehlen die Verwendung des Kommandozeilen-Tools mit [Push-Destinationen](../destinationen#pull--und-push-destinationen).
 Der Befehl kann von einem Windows-Skript oder einem beliebigen Scheduler, der Windows-Kommandozeilenaufrufe ausführen kann, aufgerufen werden. <br>
 Im einfachsten Fall kann der Windows Task Scheduler zum Aufrufen und Planen von Extraktionen mit **xu.exe** verwendet werden. Ausführlichere Informationen zum Einplanen von Extraktionen finden Sie unter [Planen einer Extraktion](../automation/call-via-scheduler).
 

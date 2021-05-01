@@ -32,7 +32,7 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 - [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
 - [**DeltaQ**](./datasource-deltaq) extrahiert DataSources (OLTP) und Extraktoren aus dem ERP und ECC System.
 - [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
-- [**Open Hub Services (OHS)**](./bw-open-hub-services) extrahiert InfoSpokes und OHS Destinationen. <!--Frage: kann man destinations extrahieren?-->
+- [**Open Hub Services (OHS)**](./bw-open-hub-services) extrahiert InfoSpokes und OHS Destinationen. <!--Frage: kann man destinationen extrahieren?-->
 - [**Query**](./sap-queries) extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
 - [**Report**](./report-abap-reports-ansteuern) extrahiert ABAP Reports.
 - [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.

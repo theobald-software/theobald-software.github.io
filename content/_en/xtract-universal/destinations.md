@@ -5,7 +5,7 @@ title: Destinations
 description: Destinations
 product: xtract-universal
 parent: xtract-universal
-childidentifier: xu-destinations
+childidentifier: destinations
 permalink: /:collection/:path
 weight: 25
 lang: en_GB
@@ -19,16 +19,16 @@ The following destinations are available:
 
 ### Databases / Data Warehouses
 
-- [Amazon Redshift](./xu-destinations/amazon-redshift) 
-- [Azure Synapse Analytics (SQl pool)](./xu-destinations/azure-synapse-analytics)
-- [Azure SQL Database](./xu-destinations/microsoft-sql-server) 
-- [EXASolution](./xu-destinations/exasol) 
-- [IBM DB2](./xu-destinations/ibm-db2) 
-- [MySQL](./xu-destinations/mysql) 
-- [Oracle](./xu-destinations/oracle) 
-- [PostgreSQL](./xu-destinations/postgreSQL)
-- [SAP HANA](./xu-destinations/sap-hana) 
-- [SQL Server](./xu-destinations/microsoft-sql-server) 
+- [Amazon Redshift](./destinations/amazon-redshift) 
+- [Azure Synapse Analytics (SQl pool)](./destinations/azure-synapse-analytics)
+- [Azure SQL Database](./destinations/microsoft-sql-server) 
+- [EXASolution](./destinations/exasol) 
+- [IBM DB2](./destinations/ibm-db2) 
+- [MySQL](./destinations/mysql) 
+- [Oracle](./destinations/oracle) 
+- [PostgreSQL](./destinations/postgreSQL)
+- [SAP HANA](./destinations/sap-hana) 
+- [SQL Server](./destinations/microsoft-sql-server) 
 
 {: .box-note }
 **Note**: For some destinations e.g., Oracle and DB2 the appropriate drivers need to be installed.
@@ -36,31 +36,31 @@ More information can be found under the *Requirements* section of each destinati
 
 ### Business Intelligence / Analytics / ETL
 
-- [Alteryx](./xu-destinations/alteryx) 
-- [Microstrategy](./xu-destinations/microstrategy)
-- [Power BI connector (Cloud/Desktop)](./xu-destinations/Power-BI-Connector) 
-- [Tableau](./xu-destinations/tableau) 
-- [Qlik (QlikSense and QlikView)](./xu-destinations/qliksense-qlikview) 
+- [Alteryx](./destinations/alteryx) 
+- [Microstrategy](./destinations/microstrategy)
+- [Power BI connector (Cloud/Desktop)](./destinations/Power-BI-Connector) 
+- [Tableau](./destinations/tableau) 
+- [Qlik (QlikSense and QlikView)](./destinations/qliksense-qlikview) 
 - [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
 
 ### Business Systems
 
-- [Salesforce](./xu-destinations/salesforce) 
-- [SharePoint](./xu-destinations/sharepoint) 
+- [Salesforce](./destinations/salesforce) 
+- [SharePoint](./destinations/sharepoint) 
 
 ### Cloud Storage
 
-- [Amazon AWS S3](./xu-destinations/amazon-aws-s3)
-- [Azure Storage](./xu-destinations/azure-storage) 
-- [Google Cloud Storage](./xu-destinations/google-cloud-storage)
+- [Amazon AWS S3](./destinations/amazon-aws-s3)
+- [Azure Storage](./destinations/azure-storage) 
+- [Google Cloud Storage](./destinations/google-cloud-storage)
 
 ### Generic Destinations
 
-- [CSV web service](./xu-destinations/csv-via-http) (via HTTP)
-- [JSON web service](./xu-destinations/json-via-http)   
-- [Flat File - CSV](./xu-destinations/csv-flat-file)  (comma-seperated values)
-- [Flat File - JSON](./xu-destinations/json-flat-file)
-- [Parquet](./xu-destinations/parquet)
+- [CSV web service](./destinations/csv-via-http) (via HTTP)
+- [JSON web service](./destinations/json-via-http)   
+- [Flat File - CSV](./destinations/csv-flat-file)  (comma-seperated values)
+- [Flat File - JSON](./destinations/json-flat-file)
+- [Parquet](./destinations/parquet)
  
 {: .box-note }
 **Note**: The [configuration files](./advanced-techniques/backup-and-migration#configuration-files) of destinations are stored in `C:\Program Files\XtractUniversal\config\destinations`.
@@ -91,4 +91,4 @@ An extraction with push destinations extracts data from the SAP source systems a
 
 *****
 #### Related Links
-- [Manage Destinations](./xu-destinations/managing-destinations)
+- [Manage Destinations](./destinations/managing-destinations)
