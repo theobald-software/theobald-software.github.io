@@ -101,3 +101,26 @@ Das SAP-Verbindungspasswort wird maskiert, so dass es nicht im Klartext gespeich
 **Internal Table Function**
 Gibt den Funktionsbaustein an, der für die interne Kommunikation von Xtract IS mit SAP (z.B. Abruf der Metadaten) verwendet wird.
  Um den ausgewählten Funktionsbaustein zu ändern, geben Sie den Namen des Funktionsbausteins manuell ein. Die Verwendung eines anderen Funktionsbausteins kann erforderlich sein, wenn Sie innerhalb des Funktionsbausteins Berechtigungsbeschränkungen hinzufügen möchten.
+
+### Einer Xtract Component einen Connection Manager zuweisen
+
+Xtract Connection Manager können Xtract Komponenten automatisch oder manuell zugewiesen werden.
+
+#### Einen Connection Manager automatisch zuweisen
+
+1. Erstellen Sie einen Connection Manager wie in [SAP-Verbindung herstellen ](./verbindungsmanager#sap-verbindung-herstellen) beschrieben.
+2. Drag & drop eine Xtract Komponente wie z.B. **Xtract Table**, **Xtract BAPI**, etc.  
+3. Doppelklicken Sie auf die Xtract Komponente um automatisch einen Connection Manager zuzuweisen. Das Fenster für die Einstellungen der Komponente öffnet sich. 
+
+{: .box-note }
+**Hinweis:** Wenn mehrere Connection Manager verfügbar sind, empfehlen wir eine manuelle Zuweisung. 
+
+#### Einen Connection Manager manuell zuweisen
+
+1. Erstellen Sie einen Connection Manager wie in [SAP-Verbindung herstellen ](./verbindungsmanager#sap-verbindung-herstellen) beschrieben.
+2. Drag & drop eine Xtract Komponente wie z.B. **Xtract Table**, **Xtract BAPI**, etc.  
+3. Wählen Sie die Xtract Komponente aus. Unter *Properties* öffnen Sie den *Show Advanced Editor* (1). Das Fenster "Advanced Editor" öffnet sich (2). 
+4. Wählen Sie einen Connection Manager aus der Dropdown-Liste aus (3). 
+5. Bestätigen Sie Ihre Auswahl mit **[OK]** (4).
+
+![assign-connection-manager](/img/content/xis/assign-connection-manager.png)
