@@ -86,7 +86,7 @@ If the destination supports the gzip http data compression, Xtract Universal wil
 
 #### Push Destinations
 
-Extractions with push destinations provide the data to the destination environment proactively. The extraction process is started in Xtract Universal, e.g. via a [scheduled extraction](./automation/call-via-scheduler). <br>
+Extractions with push destinations provide the data to the destination environment proactively. The extraction process is started in Xtract Universal, e.g. via a [scheduled extraction](./execute-and-automate-extractions/call-via-scheduler). <br>
 An extraction with push destinations extracts data from the SAP source systems and loads them into the destination, where the data can be processed further. They can be transformed and optimized for analytic query workloads.
 
 *****

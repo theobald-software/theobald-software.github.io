@@ -29,5 +29,5 @@ All ETL tools offer the following options for running extractions:
 
 ### Integration via Command Line
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
-- [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/execute-and-automate-extractions-of-xu-data-extracts-with-adf)
+- [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/automation-of-xu-data-extracts-with-adf)
 

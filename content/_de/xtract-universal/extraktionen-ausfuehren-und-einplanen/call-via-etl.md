@@ -28,4 +28,4 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 
 ### Integration mittels Kommandozeile
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
-- [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/extraktionen-ausfuehren-und-einplanen-of-xu-data-extracts-with-adf)
+- [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/automation-of-xu-data-extracts-with-adf)

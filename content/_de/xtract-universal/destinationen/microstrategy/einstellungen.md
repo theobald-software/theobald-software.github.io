@@ -19,7 +19,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einstellungen6
 Die folgenden Einstellungen können für die Destination definiert werden. 
   
 ### Destination Settings - Destinationseinstellungen
-![mstr-destinationen](/img/content/mstr-destinationen.png){:class="img-responsive"}
+![mstr-destinationen](/img/content/mstr-destinations.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
@@ -49,8 +49,8 @@ Optional. Geben Sie hier einen existierenden Ordner unter My Objects in Microstr
 
 ### Update Policy
 Beschreibt die Art, wie die Daten in MSTR geschrieben werden. <br>
-**DropAndCreate** ist der default Wert. Vorhandene Tabelle wird ggf. gelöscht und Daten werden eingefügt. <br>
-**Add** verhält sich wie ein Insert und fügt Daten in die vorhandene Tabelle neu hinzu, sofern sie noch nicht in der Datenbank existieren. Dataset ID wird benötigt. <br>
+**DropAndCreate**: ist der default Wert. Vorhandene Tabelle wird ggf. gelöscht und Daten werden eingefügt. <br>
+**Add**: verhält sich wie ein Insert und fügt Daten in die vorhandene Tabelle neu hinzu, sofern sie noch nicht in der Datenbank existieren. Dataset ID wird benötigt. <br>
 **Update**: aktualisiert die metrischen Werte im Datensatz, wenn bereits ein passender Schlüssel im Datensatz vorhanden ist; neue Datensätze werden ignoriert. <br>
 **Upsert**: aktualisiert bestehende Datensätze und fügt dann auch neue hinzu. <br>
-**Replace** verhält sich wie ein Truncate and Insert. Alle vorhandenen Daten werden gelöscht und durch die neuen ersetzt. Dataset ID wird benötigt.
+**Replace**: verhält sich wie ein Truncate and Insert. Alle vorhandenen Daten werden gelöscht und durch die neuen ersetzt. Dataset ID wird benötigt.

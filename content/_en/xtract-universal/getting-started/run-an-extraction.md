@@ -44,7 +44,7 @@ Duration | Extraction duration |
 
 ### Runtime parameters (2)
 
-The three tabs "Extraction", "Source" and "Custom" contain [Extraction Parameters](../automation/extraction-parameters).
+The three tabs "Extraction", "Source" and "Custom" contain [Extraction Parameters](../execute-and-automate-extractions/extraction-parameters).
 When you change these parameters, the *extraction URL and command-line (3)* also change.
 
 #### Example
