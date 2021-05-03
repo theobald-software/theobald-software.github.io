@@ -1,5 +1,5 @@
 ---
-ref: destinationen-14
+ref: destinations-14
 layout: page
 title: Flat File - CSV
 description: Flat File - CSV
@@ -33,7 +33,7 @@ Wenn das Verzeichnis nicht existiert, wird es erstellt.
 {: .box-note }
 **Hinweis:** Um Flat-Files auf ein Netzlaufwerk zu schreiben, muss Folgendes gegeben sein: <br>
 \- Das Verzeichnis in **File output path** muss im UNC-Format angegeben sein.<br>
-\- Der Benutzer, unter dem der Xtract Universal Dienst läuft, muss Schreibrechte auf das Verzeichnis haben. 
+\- Der Benutzer, unter dem der [Xtract Universal Dienst](../fortgeschrittene-techniken/service-account) läuft, muss Schreibrechte auf das Verzeichnis haben. 
 
 {% include _content/de/xu-specific/destinationen/general/csv-settings.md %}														 
 

@@ -32,7 +32,7 @@ Enter the directory to save the destination flat files in. If the entered folder
 {: .box-note }
 **Note:** To write flat files to a network drive, you need to: <br>
 \- Enter the **File output path** in UNC format.<br>
-\- Run the Xtract Universal service by a user with write permission to the directory. 
+\- Run the [Xtract Universal service](../advanced-techniques/service-account) by a user with write permission to the directory. 
  
 
 {% include _content/en/xu-specific/destinations/general/csv-settings.md %}														 

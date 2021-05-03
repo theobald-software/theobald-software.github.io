@@ -1,5 +1,5 @@
 ---
-ref: destinationen-13
+ref: destinations-13
 layout: page
 title: Flat File - JSON
 description: Flat File - JSON
@@ -32,7 +32,7 @@ Wenn das Verzeichnis nicht existiert, wird es erstellt.
 {: .box-note }
 **Hinweis:** Um Flat-Files auf ein Netzlaufwerk zu schreiben, muss Folgendes gegeben sein: <br>
 \- Das Verzeichnis in **File output path** muss im UNC-Format angegeben sein.<br>
-\- Der Benutzer, unter dem der Xtract Universal Dienst läuft, muss Schreibrechte auf das Verzeichnis haben. 
+\- Der Benutzer, unter dem der [Xtract Universal Dienst](../fortgeschrittene-techniken/service-account) läuft, muss Schreibrechte auf das Verzeichnis haben. 
 
 ### Überprüfen des Extraktionsergebnisses
 1. Überprüfen Sie das zuvor definierte Verzeichnis zum Speichern von JSON-Flat-Files.
