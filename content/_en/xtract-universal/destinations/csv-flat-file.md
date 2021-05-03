@@ -26,10 +26,14 @@ This destination is a CSV (comma-separated values) flat file.
 ![CSV-Flat-Destination-Details](/img/content/xu/CSV-Flat-Destination-Details.png){:class="img-responsive"}
 
 **File output path**<br>
-Enter the directory to save the destination flat files in. 
+Enter the directory to save the destination flat files in. If the entered folder does not exist, a new folder is created.
+
 
 {: .box-note }
-**Note:** Filling out the field **Directory** creates a new folder, if it doesn't exist. 
+**Note:** To write flat files to a network drive, you need to: <br>
+\- Enter the **File output path** in UNC format.<br>
+\- Run the Xtract Universal service by a user with write permission to the directory. 
+ 
 
 {% include _content/en/xu-specific/destinations/general/csv-settings.md %}														 
 

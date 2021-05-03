@@ -27,9 +27,12 @@ Die JSON-Flat-File-Destination erzeugt eine generische JSON-Datei.
 
 **File output path**<br>
 Geben Sie das Verzeichnis an, in dem die Flat Files gespeichert werden sollen.
+Wenn das Verzeichnis nicht existiert, wird es erstellt.
 
 {: .box-note }
-**Hinweis:** Das Ausfüllen des Feldes **Directory** erstellt einen neuen Ordner, falls er nicht existiert. 
+**Hinweis:** Um Flat-Files auf ein Netzlaufwerk zu schreiben, muss Folgendes gegeben sein: <br>
+\- Das Verzeichnis in **File output path** muss im UNC-Format angegeben sein.<br>
+\- Der Benutzer, unter dem der Xtract Universal Dienst läuft, muss Schreibrechte auf das Verzeichnis haben. 
 
 ### Überprüfen des Extraktionsergebnisses
 1. Überprüfen Sie das zuvor definierte Verzeichnis zum Speichern von JSON-Flat-Files.
