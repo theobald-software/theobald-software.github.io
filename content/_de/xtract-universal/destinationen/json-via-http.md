@@ -1,5 +1,5 @@
 ---
-ref: destinationen-10
+ref: destinations-10
 layout: page
 title:  Webservice - JSON
 description: JSON (via HTTP)

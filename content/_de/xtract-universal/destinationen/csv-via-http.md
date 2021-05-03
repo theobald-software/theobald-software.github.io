@@ -1,5 +1,5 @@
 ---
-ref: destinationen-11
+ref: destinations-11
 layout: page
 title: Webservice - CSV
 description: CSV (via HTTP)

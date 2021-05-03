@@ -1,5 +1,5 @@
 ---
-ref: destinationen-70
+ref: destinations-70
 layout: page
 title: Oracle
 description: Oracle

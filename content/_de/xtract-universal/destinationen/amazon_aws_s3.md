@@ -1,5 +1,5 @@
 ---
-ref: destinationen-22
+ref: destinations-22
 layout: page
 title: Amazon AWS S3
 description: Amazon AWS S3

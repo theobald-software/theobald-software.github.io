@@ -1,5 +1,5 @@
 ---
-ref: destinationen-23
+ref: destinations-23
 layout: page
 title: Amazon Redshift
 description: Amazon Redshift

@@ -1,5 +1,5 @@
 ---
-ref: destinationen-01
+ref: destinations-01
 layout: page
 title: Destinationen verwalten
 description: Zielumgebungen verwalten

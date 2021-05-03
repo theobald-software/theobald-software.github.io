@@ -1,5 +1,5 @@
 ---
-ref: destinationen-50
+ref: destinations-50
 layout: page
 title: IBM DB2
 description: IBM DB2

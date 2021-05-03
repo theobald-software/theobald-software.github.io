@@ -1,5 +1,5 @@
 ---
-ref: destinationen-61
+ref: destinations-61
 layout: page
 title: Microstrategy
 description: Microstrategy

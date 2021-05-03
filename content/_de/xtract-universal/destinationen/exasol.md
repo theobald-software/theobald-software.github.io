@@ -1,5 +1,5 @@
 ---
-ref: destinationen-30
+ref: destinations-30
 layout: page
 title: EXASolution
 description: EXASolultion

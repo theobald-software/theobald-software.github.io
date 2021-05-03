@@ -1,5 +1,5 @@
 ---
-ref: destinationen-24
+ref: destinations-24
 layout: page
 title: Azure Storage
 description: Azure Storage

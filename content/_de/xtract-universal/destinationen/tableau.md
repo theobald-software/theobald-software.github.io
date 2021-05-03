@@ -1,5 +1,5 @@
 ---
-ref: destinationen-110
+ref: destinations-110
 layout: page
 title: Tableau
 description: Tableau

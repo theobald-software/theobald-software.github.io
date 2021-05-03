@@ -1,5 +1,5 @@
 ---
-ref: destinationen-81
+ref: destinations-81
 layout: page
 title: PostgreSQL
 description: PostgreSQL

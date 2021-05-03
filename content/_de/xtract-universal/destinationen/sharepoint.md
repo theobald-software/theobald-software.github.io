@@ -1,5 +1,5 @@
 ---
-ref: destinationen-102
+ref: destinations-102
 layout: page
 title: SharePoint
 description: SharePoint

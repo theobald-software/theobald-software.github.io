@@ -1,5 +1,5 @@
 ---
-ref: destinationen-62
+ref: destinations-62
 layout: page
 title: MySQL
 description: MySQL

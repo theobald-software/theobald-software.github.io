@@ -1,5 +1,5 @@
 ---
-ref: destinationen-20
+ref: destinations-20
 layout: page
 title: Alteryx
 description: Alteryx

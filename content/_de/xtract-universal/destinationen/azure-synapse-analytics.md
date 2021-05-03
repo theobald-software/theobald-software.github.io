@@ -1,5 +1,5 @@
 ---
-ref: destinationen-25
+ref: destinations-25
 layout: page
 title: Azure Synapse Analytics (SQl pool)
 description: Azure Synapse Analytics (SQl pool)

@@ -1,5 +1,5 @@
 ---
-ref: destinationen-31
+ref: destinations-31
 layout: page
 title: Google Cloud Storage
 description: Google Cloud Storage
