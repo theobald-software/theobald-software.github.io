@@ -13,9 +13,9 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
 
 The following section describes the functions of the Report Component of Xtract for Alteryx. <br>
-Basic Xtract for Altery knowledge is required to understand the following sections. <br>
+Basic knowledge of Xtract for Alteryx is required to understand the following sections. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract IS, refer to [Getting Started with Xtract for Altery](./getting-started). <br>
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started). <br>
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
