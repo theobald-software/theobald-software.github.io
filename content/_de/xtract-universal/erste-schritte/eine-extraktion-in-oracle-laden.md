@@ -21,7 +21,7 @@ Um eine Extraktion zu in die Microsoft SQL Server Datenbank zu laden, muss die D
 ![Laden d. Destination](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
 2. Im Fenster "Destination Settings" klicken Sie auf **[...]** (1), um die Destinationen zu verwalten. 
-![Laden-Manage-Destination](/img/content/destinationen_load_manage_shared.png){:class="img-responsive"}
+![Laden-Manage-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}
 
 3. Klicken Sie auf **[Add]** (2), um eine neue Destination hinzuzufügen.
 

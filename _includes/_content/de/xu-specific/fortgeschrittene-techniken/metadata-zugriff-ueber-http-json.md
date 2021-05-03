@@ -79,7 +79,7 @@ Beispiel: <br>
 **Hinweis:** Falls *Date Conversion* in den *Destination Settings* aktiv ist, haben Datenfelder die ein Datum enthalten den Typ *ConvertedDate*. Falls Date Conversion inaktiv ist, wird der Datentyp zu *StringLengthMax*.
 
 ### Parameter
-Jede Extraktion hat ein Set an *Extraction*, *Source* und *Custom* [Laufzeit Parametern](../automation/extraktionsparameter).
+Jede Extraktion hat ein Set an *Extraction*, *Source* und *Custom* [Laufzeit Parametern](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter).
 Diese Parameter befinden sich im "Run Extraction" Fenster des Designers. 
 
 Das URL-Pattern zum Abruf der Parameter lautet: <br> 
