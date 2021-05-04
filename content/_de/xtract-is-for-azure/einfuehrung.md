@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure0
 layout: page
 title: Einführung in Xtract IS for Azure for Azure
 description: Einführung in Xtract IS for Azure for Azure
