@@ -91,7 +91,7 @@ The timestamp can be used to check the status of the extraction.
 **Tip:** The XU server offers further functionalities e.g., checking the status of an (asynchronous) extraction, receiving logs or metadara of an extraction, etc. These functionalities are only available via [Webservices](./call-via-webservice#weitere-webservices).
 --->
 #### Related Links
-- [Call via Script](./call-via-script)
+- [Call via Script](https://kb.theobald-software.com/xtract-universal/call-extraction-via-script)
 - [Call via Scheduler](./call-via-scheduler)
 - [Call via ETL-Tool](./call-via-etl)
 - [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/explanation-of-using-config-command-line-tool)
