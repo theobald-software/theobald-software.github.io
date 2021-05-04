@@ -89,7 +89,7 @@ Ein asynchroner Aufruf einer Extraktion ist ein nichtblockierender Aufruf. D.h. 
 **Tipp:** Der XU-Server verfügt über weitere Funktionalitäten wie z.B. den Status eines (asynchronen) Extraktionsaufrufs prüfen, Logs oder Metadaten einer Extraktion abfragen usw. Diese Funktionalitäten werden nicht über das Kommandozeilen-Tool, sondern nur über [Webservices](./call-via-webservice#weitere-webservices) aufgerufen.
 --->
 #### Weiterführende Links
-- [Extraktion via Skript ausführen](./call-via-script)
+- [Extraktion via Skript ausführen](https://kb.theobald-software.com/xtract-universal/call-extraction-via-script)
 - [Extraktion via Scheduler ausführen](./call-via-scheduler)
 - [Extraktion via ETL-Tool ausführen](./call-via-etl)
 - [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/explanation-of-using-config-command-line-tool)
