@@ -11,25 +11,45 @@ weight: 15
 lang: de_DE
 progressstate: 5
 ---
-Der folgende Abschnitt beschäftigt sich mit dem Ausführen von Extraktionen, sowohl [manuell im Xtract Universal Designer](./erste-schritte/eine-extraktion-ausfuehren) als auch automatisch. 
+Dieser Abschnitt enthält Details zum automatischen und manuellen Ausführen von Extraktionen mit [Xtract Universal](./erste-schritte/eine-extraktion-ausfuehren). 
+Extraktionen können über folgende Optionen aufgerufen werden:
+- [Kommandozeile](./extraktionen-ausfuehren-und-einplanen/call-via-commandline)
+- [Webservice](./extraktionen-ausfuehren-und-einplanen/call-via-webservice) 
+- [Scheduler](./extraktionen-ausfuehren-und-einplanen/call-via-scheduler)
+- [ETL-Tool](./extraktionen-ausfuehren-und-einplanen/call-via-etl)
 
-Extraktionen können über folgende Wege automatisch aufgerufen und eingeplant werden: 
+### Ausführen von Extraktionen
 
-- Über die [Kommandozeile](./extraktionen-ausfuehren-und-einplanen/call-via-commandline)
-- Über einen [Webservice](./extraktionen-ausfuehren-und-einplanen/call-via-webservice)
-- Über ein [externes Skript](./extraktionen-ausfuehren-und-einplanen/call-via-script)
-- Über einen [Scheduler](./extraktionen-ausfuehren-und-einplanen/call-via-scheduler)
-- Über ein [ETL-Tool](./extraktionen-ausfuehren-und-einplanen/call-via-etl)
+Extraktionen werden durch eine HTTP-Anfrage ausgelöst und auf dem [Xtract Universal Server](./server#extraktion-auf-dem-server-ausführen) ausgeführt.
+Abhängig von der Zielumgebung kann die Ausführung einer Extraktion entweder interaktiv oder unbeaufsichtigt ausgelöst werden.
+
+#### Interaktive Ausführung
+Extraktionen werden typischerweise interaktiv ausgelöst, wenn ein Benutzer neue oder aktualisierte Daten von SAP benötigt und kein zusätzliches Datenspeichersystem (wie ein Data Warehouse) vorhanden ist.
+
+In diesen Szenarien wird die Ausführung einer Extraktion typischerweise durch eines der Plugins von Xtract Universal ausgelöst:
+- [Alteryx](./destinationen/alteryx-de)
+- [Power BI Connector](./destinationen/Power-BI-Connector)
+
+Oder direkt über die Zielumgebung:
+- [QlikSense & QlikView](./destinationen/qlik)
+
+#### Unbeaufsichtigte Ausführung
+
+Wenn ein zusätzliches Datenspeichersystem (Datenbank, Cloud-Speicher, Flat-Files) vorhanden ist, werden Extraktionen typischerweise als Teil eines ELT-Prozesses (Extract, Load, Transport) ausgelöst.
+Dieser Prozess wird wiederum in regelmäßigen Abständen unbeaufsichtigt von einem Scheduler oder einer anderen Orchestrierungssoftware ausgeführt, die Extraktionen i.d.R. über das [XU-Kommandozeilen-Tool](./extraktionen-ausfuehren-und-einplanen/call-via-commandline) auslösen.
 
 {: .box-note }
-**Hinweis:** Xtract Universal verfügt über keinen eigenen Scheduler. In der Regel können eine Vielzahl von Drittanbieter Scheduler verwendet werden. 
-
+**Hinweis:** Xtract Universal verfügt nicht über einen eigenen Scheduler. Sie können Scheduler von Drittanbietern verwenden. 
 
 {: .box-note }
-**Hinweis:** Bei [Pull-Destinationen](./destinationen#pull--und-push-destinationen) erfolgt die Automatisierung bzw. das Scheduling über das Tool, das die Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV oder json-Format konsumiert. 
+**Hinweis:** Verwenden Sie das Tool, das mit der Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV- oder JSON-Format kommuniziert, um [Pull-Destinationen](./destinationen#pull--und-push-destinationen) zu planen.
 
+Für fortgeschrittene Szenarien oder Umgebungen, die keine Kommandozeilen-Tools unterstützen, können die [HTTP-Webservices](./extraktionen-ausfuehren-und-einplanen/call-via-webservice) zum Auslösen und Überwachen einer Extraktion auch über andere Wege gesendet werden.
 
-Beim Aufruf von Extraktionen können die [Extraktionsparameter](./extraktionen-ausfuehren-und-einplanen/extraktionsparameter) dynamisch zur Laufzeit mitgegeben werden. 
+### Ausführung paralleler Extraktionen
+Die Anzahl der parallel ausführbaren Extraktionen ist abhängig von den eingesetzten Hardware-Ressourcen des Windows-Servers.
 
-Diese Parameter können auch in einem [SQL-Skript](./extraktionen-ausfuehren-und-einplanen/xu-parameter-sql) verwendet werden, falls die Destination eine SQL-Datenbank ist. 
+Jede gestartete Extraktion wird im Betriebssystem in einen separaten Prozess ausgeführt. Somit ist die Anzahl der Prozessorkerne für den Grad der Parallelisierung ausschlaggebend.
 
+{: .box-note }
+**Hinweis:** Xtract Universal skaliert entsprechend der verfügbaren Hardware-Ressourcen der Laufzeitumgebung.
