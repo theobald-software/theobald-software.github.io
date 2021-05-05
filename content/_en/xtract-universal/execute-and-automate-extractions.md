@@ -27,7 +27,7 @@ Depending on the target environment, execution of an extraction can be triggered
 Extractions are typically triggered interactively when a user requires new or updated data from SAP, and no additional data storage system (like a data warehouse) is present.
 
 In these scenarios, execution of an extraction is typically triggered by one of Xtract Universal's plugins:
-- [Alteryx](../destinations/alteryx)
+- [Alteryx](./destinations/alteryx)
 - [Power BI Connector](./destinations/Power-BI-Connector)
 
 Or directly by the target environment:
