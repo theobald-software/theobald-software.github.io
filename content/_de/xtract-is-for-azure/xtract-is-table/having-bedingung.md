@@ -10,4 +10,4 @@ weight: 5
 lang: de_DE
 ---
 
-{% include _content/de/xis-specific/xtract-is-table/having-bedingung.md %}
+{% include _content/de/table/having-bedingung.md  %}

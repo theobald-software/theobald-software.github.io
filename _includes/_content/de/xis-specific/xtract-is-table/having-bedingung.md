@@ -1,1 +1,0 @@
-{% include _content/de/table/having-bedingung.md  %}
