@@ -10,4 +10,4 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=SAPCustomizing-DE:funktionsbaustein-fuer-table-komprimierung	
 ---
-{% include _content/de/xis-specific/sap-customizing/funktionsbaustein-fuer-table-extraktion.md %}
+{% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}

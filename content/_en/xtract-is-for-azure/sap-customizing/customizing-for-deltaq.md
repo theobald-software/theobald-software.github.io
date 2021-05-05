@@ -10,4 +10,4 @@ weight: 5
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=SAPCustomizing-EN:customizing-for-deltaq
 ---
-{% include _content/en/xis-specific/sap-customizing/customizing-for-deltaq.md %}
+{% include _content/en/sap-customizing/customizing-for-deltaq.md  %}

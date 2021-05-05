@@ -1,1 +1,0 @@
-{% include _content/en/sap-customizing/customizing-for-deltaq.md  %}

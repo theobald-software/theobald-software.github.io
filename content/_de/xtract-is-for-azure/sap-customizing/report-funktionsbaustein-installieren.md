@@ -10,4 +10,4 @@ weight: 6
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/xis-specific/sap-customizing/report-funktionsbaustein-installieren.md %}
+{% include _content/de/sap-customizing/report-funktionsbaustein-installieren.md  %}
