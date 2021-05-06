@@ -20,7 +20,7 @@ After having chosen a cube, you will find all dimensions, key figures and dimens
 
 To extract one or more of these cube elements, drag and drop them to the grid on the right-hand side. If you are choosing the property of a dimension that is not yet contained in the result set, the dimension will be added automatically as well.
 
-![Cube-Details](/img/content/Cube-Details.png){:class="img-responsive"}
+![Cube-Details](/img/content/XU-Tableau-BExQuery.png){:class="img-responsive"}
 
 If at least one measure has been selected, you can see the extraction output in the browser after clicking the *Run* button.
 
