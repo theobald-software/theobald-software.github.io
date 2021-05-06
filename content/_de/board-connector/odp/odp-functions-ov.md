@@ -16,5 +16,9 @@ Der folgende Abschnitt beschreibt die Einstellungen der Komponente SAP ODP. Die 
 {% include _content/de/odp/odp-settings-update_mode.md %} 
 {% include _content/de/odp/odp-settings-subscriptions.md %} 
 {% include _content/de/odp/odp-settings-filtering.md %} 
-{% include _content/de/odp/odp-settings-parameters.md %}
 
+### General Settings
+Die [General Settings](../erste-schritte/allgemeine-einstellungen) beinhalten Einstellungen zu Sicherheit, Verschlüsselung und Schlüsselwörtern.
+
+{% include _content/de/odp/odp-settings-parameters.md %}
+{% include _content/de/odp/odp-settings-advanced.md %}
