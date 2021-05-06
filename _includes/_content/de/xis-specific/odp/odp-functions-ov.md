@@ -6,9 +6,6 @@ Die Einstellungen können über das Fenster "Define data source for SAP ODP" ge�
 {% include _content/de/odp/odp-settings-subscriptions.md %} 
 {% include _content/de/odp/odp-settings-filtering.md %}
 
-### General Settings
-Die [General Settings](../erste-schritte/allgemeine-einstellungen) beinhalten Einstellungen zu Sicherheit, Verschlüsselung und Schlüsselwörtern.
-
 {% include _content/de/odp/odp-settings-parameters.md %}
 {% include _content/de/odp/odp-settings-advanced.md %}
 
