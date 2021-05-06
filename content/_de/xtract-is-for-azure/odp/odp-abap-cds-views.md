@@ -1,5 +1,5 @@
 ---
-ref: xis-odp-abap-cds
+ref: xisa-odp-abap-cds
 layout: page
 title: ABAP CDS Views
 description: ABAP CDS Views

@@ -1,5 +1,5 @@
 ---
-ref: xis-odp-introduction
+ref: xisa-odp-introduction
 layout: page
 title: Xtract ODP Funktionsübersicht
 description: ODP Einführung

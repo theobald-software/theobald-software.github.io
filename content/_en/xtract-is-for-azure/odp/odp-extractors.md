@@ -1,5 +1,5 @@
 ---
-ref: xis-odp-extractor
+ref: xisa-odp-extractor
 layout: page
 title: Extractors
 description: Extractors and Datasources
