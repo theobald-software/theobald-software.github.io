@@ -1,5 +1,5 @@
 ---
-ref: xi-bw-loader-01
+ref: xia-bw-loader-01
 layout: page
 title: Einrichtung im SAP BW
 description: Einrichtung im SAP BW

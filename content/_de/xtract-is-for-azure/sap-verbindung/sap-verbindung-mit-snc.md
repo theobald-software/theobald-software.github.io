@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-connection-02
+ref: xia-sap-connection-02
 layout: page
 title: SAP-Verbindung mit SNC
 description: SAP-Verbindung mit SNC

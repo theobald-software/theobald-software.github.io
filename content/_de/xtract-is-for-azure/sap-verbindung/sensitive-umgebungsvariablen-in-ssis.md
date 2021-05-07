@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-connection-03
+ref: xia-sap-connection-03
 layout: page
 title: Sensitive Umgebungsvariablen im SSIS Katalog
 description: Sensitive Umgebungsvariablen im SSIS Katalog

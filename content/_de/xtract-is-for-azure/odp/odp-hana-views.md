@@ -1,5 +1,5 @@
 ---
-ref: xis-odp-hana-views
+ref: xias-odp-hana-views
 layout: page
 title: HANA Views
 description: HANA Views

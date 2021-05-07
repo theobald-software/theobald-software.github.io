@@ -1,5 +1,5 @@
 ---
-ref: xi-requirements-and-installation-01
+ref: xia-requirements-and-installation-01
 layout: page
 title: Systemvoraussetzungen
 description: Systemvoraussetzungen

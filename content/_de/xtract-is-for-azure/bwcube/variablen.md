@@ -1,5 +1,5 @@
 ---
-ref: xi-bw-cube-03
+ref: xia-bw-cube-03
 layout: page
 title: Variablen
 description: Variablen

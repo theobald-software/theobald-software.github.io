@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-customizing-03
+ref: xia-sap-customizing-03
 layout: page
 title: Funktionsbaustein für Table-Join
 description: Funktionsbaustein für Table-Join

@@ -1,5 +1,5 @@
 ---
-ref: xi-query-02
+ref: xia-query-02
 layout: page
 title: Varianten anwenden
 description: Varianten anwenden

@@ -1,5 +1,5 @@
 ---
-ref: xi-bw-loader-04
+ref: xia-bw-loader-04
 layout: page
 title: Settings
 description: Settings

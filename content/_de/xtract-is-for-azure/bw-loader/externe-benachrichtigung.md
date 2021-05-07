@@ -1,5 +1,5 @@
 ---
-ref: xi-bw-loader-06
+ref: xia-bw-loader-06
 layout: page
 title: Externe Benachrichtigung
 description: Externe Benachrichtigung

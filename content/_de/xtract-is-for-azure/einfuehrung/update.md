@@ -1,5 +1,5 @@
 ---
-ref: xi-requirements-and-installation-06
+ref: xia-requirements-and-installation-06
 layout: page
 title: Installation eines Updates
 description: Installation eines Updates

@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-connection-01
+ref: xia-sap-connection-01
 layout: page
 title: Der Connection Manager
 description: Der Connection Manager
