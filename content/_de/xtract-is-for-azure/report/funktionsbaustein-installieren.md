@@ -1,5 +1,5 @@
 ---
-ref: xi-report-01
+ref: xiaa-report-01
 layout: page
 title: Funktionsbaustein installieren
 description: Funktionsbaustein installieren

@@ -1,5 +1,5 @@
 ---
-ref: xi-for-azure-01
+ref: xia-for-azure-01
 layout: page
 title: Requirements
 description: Requirements

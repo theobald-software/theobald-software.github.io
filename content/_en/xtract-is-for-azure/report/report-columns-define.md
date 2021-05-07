@@ -1,5 +1,5 @@
 ---
-ref: xi-report-04
+ref: xiaa-report-04
 layout: page
 title: Defining Report Columns
 description: Defining Report Columns

@@ -1,5 +1,5 @@
 ---
-ref: xi-bapi-07
+ref: xia-bapi-07
 layout: page
 title: How to post data to SAP with BAPI
 description: How to post data to SAP with BAPI

@@ -1,5 +1,5 @@
 ---
-ref: xi-q-delta-05
+ref: xia-q-delta-05
 layout: page
 title: Delta
 description: Delta

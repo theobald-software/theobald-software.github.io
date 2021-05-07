@@ -1,5 +1,5 @@
 ---
-ref: xi-table-01
+ref: xiaa-table-01
 layout: page
 title: Extracting Table Data
 description: Extract Table Data

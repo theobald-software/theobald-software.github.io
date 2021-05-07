@@ -1,5 +1,5 @@
 ---
-ref: xi-requirements-and-installation-05
+ref: xia-requirements-and-installation-05
 layout: page
 title: SSIS Migration
 description: SSIS Migration

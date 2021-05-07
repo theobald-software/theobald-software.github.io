@@ -1,5 +1,5 @@
 ---
-ref: xi-table-07
+ref: xiaa-table-07
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions

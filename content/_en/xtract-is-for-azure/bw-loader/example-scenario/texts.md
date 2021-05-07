@@ -1,5 +1,5 @@
 ---
-ref: xi-example-scenario-02
+ref: xia-example-scenario-02
 layout: page
 title: Texts
 description: Texts

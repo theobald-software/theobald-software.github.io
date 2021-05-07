@@ -1,5 +1,5 @@
 ---
-ref: xi-example-scenario-01
+ref: xia-example-scenario-01
 layout: page
 title: Master Data Transfer
 description: Master Data Transfer

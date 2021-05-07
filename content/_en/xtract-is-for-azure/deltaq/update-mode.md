@@ -1,5 +1,5 @@
 ---
-ref: xi-q-delta-06
+ref: xia-q-delta-06
 layout: page
 title: Update Mode
 description: Update Mode

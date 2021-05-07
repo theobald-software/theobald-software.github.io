@@ -1,5 +1,5 @@
 ---
-ref: xi-bapi-01
+ref: xia-bapi-01
 layout: page
 title: Look Up BAPIs
 description: Look Up BAPIs

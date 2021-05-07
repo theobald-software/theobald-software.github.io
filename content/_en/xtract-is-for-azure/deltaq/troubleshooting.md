@@ -1,5 +1,5 @@
 ---
-ref: xi-q-delta-10
+ref: xia-q-delta-10
 layout: page
 title: Troubleshooting
 description: Troubleshooting Guide

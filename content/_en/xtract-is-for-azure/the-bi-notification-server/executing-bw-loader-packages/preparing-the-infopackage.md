@@ -1,5 +1,5 @@
 ---
-ref: xi-bw-loader-packages-02
+ref: xiaa-bw-loader-packages-02
 layout: page
 title: Preparing the InfoPackage
 description: Preparing the InfoPackage

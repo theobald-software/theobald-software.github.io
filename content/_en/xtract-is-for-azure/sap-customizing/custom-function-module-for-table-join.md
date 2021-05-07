@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-customizing-03
+ref: xia-sap-customizing-03
 layout: page
 title: Custom function module for Table Join
 description: Custom function module for Table Join

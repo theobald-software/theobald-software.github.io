@@ -1,5 +1,5 @@
 ---
-ref: xi-bw-loader-05
+ref: xia-bw-loader-05
 layout: page
 title: Example Scenario
 description: Example Scenario

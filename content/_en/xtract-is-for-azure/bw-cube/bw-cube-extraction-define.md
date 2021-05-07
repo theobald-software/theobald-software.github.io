@@ -1,5 +1,5 @@
 ---
-ref: xi-bw-cube-01
+ref: xia-bw-cube-01
 layout: page
 title: Define a BW Cube extraction
 description: Define a BW Cube extraction

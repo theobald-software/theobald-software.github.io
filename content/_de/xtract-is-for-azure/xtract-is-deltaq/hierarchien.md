@@ -1,10 +1,10 @@
 ---
-ref: xi-q-delta-08
+ref: xia-q-delta-08
 layout: page
 title: Hierarchien
 description: Hierarchien
 product: xtract-is-for-azure
-parent: xtract-is-for-azure-deltaq
+parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 8
 lang: de_DE

@@ -1,5 +1,5 @@
 ---
-ref: xi-example-scenario-03
+ref: xia-example-scenario-03
 layout: page
 title: Creating an InfoCube
 description: Creating an InfoCube

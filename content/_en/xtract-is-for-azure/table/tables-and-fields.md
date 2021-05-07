@@ -1,5 +1,5 @@
 ---
-ref: xi-table-02
+ref: xiaa-table-02
 layout: page
 title: Tables and Fields
 description: Tables and Fields

@@ -1,5 +1,5 @@
 ---
-ref: xi-bapi-02
+ref: xia-bapi-02
 layout: page
 title: Scalar Parameters
 description: Scalar Parameters

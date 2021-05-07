@@ -1,5 +1,5 @@
 ---
-ref: xi-report-02
+ref: xiaa-report-02
 layout: page
 title: Report extrahieren
 description: Report extrahieren

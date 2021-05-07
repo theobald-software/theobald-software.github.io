@@ -1,10 +1,10 @@
 ---
-ref: xi-bapi-06
+ref: xia-bapi-06
 layout: page
 title: Settings
 description: Settings
 product: xtract-is-for-azure
-parent: xtract-is-for-azure-bapi
+parent: xtract-is-bapi
 permalink: /:collection/:path
 weight: 6
 lang: de_DE

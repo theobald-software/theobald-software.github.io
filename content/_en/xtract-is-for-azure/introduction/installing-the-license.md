@@ -1,5 +1,5 @@
 ---
-ref: xi-requirements-and-installation-04
+ref: xia-requirements-and-installation-04
 layout: page
 title: Licensing
 description: About the license of Xtract IS for Azure

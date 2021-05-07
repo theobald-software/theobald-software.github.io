@@ -1,5 +1,5 @@
 ---
-ref: xi-query-03
+ref: xia-query-03
 layout: page
 title: Entering Select Options
 description: Entering Select Options

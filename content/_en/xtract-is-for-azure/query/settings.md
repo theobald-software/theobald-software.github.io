@@ -1,5 +1,5 @@
 ---
-ref: xi-query-04
+ref: xia-query-04
 layout: page
 title: Settings
 description: Settings

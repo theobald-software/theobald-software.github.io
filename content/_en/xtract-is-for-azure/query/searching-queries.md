@@ -1,5 +1,5 @@
 ---
-ref: xi-query-01
+ref: xia-query-01
 layout: page
 title: Searching Queries
 description: Searching Queries

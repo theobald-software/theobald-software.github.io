@@ -1,5 +1,5 @@
 ---
-ref: xi-hierarchy-03
+ref: xia-hierarchy-03
 layout: page
 title: Settings
 description: Settings

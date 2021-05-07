@@ -1,5 +1,5 @@
 ---
-ref: xi-q-delta-02
+ref: xia-q-delta-02
 layout: page
 title: Customizing Check
 description: Customizing Check

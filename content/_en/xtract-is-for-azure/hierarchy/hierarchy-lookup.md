@@ -1,5 +1,5 @@
 ---
-ref: xi-hierarchy-01
+ref: xia-hierarchy-01
 layout: page
 title: Hierarchy Lookup
 description: Hierarchy Lookup

@@ -1,5 +1,5 @@
 ---
-ref: xi-table-03
+ref: xiaa-table-03
 layout: page
 title: Table Joins
 description: Table Joins

@@ -1,5 +1,5 @@
 ---
-ref: xi-q-delta-03
+ref: xia-q-delta-03
 layout: page
 title: Defining an extractor
 description: Defining an extractor

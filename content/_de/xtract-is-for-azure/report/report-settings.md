@@ -1,5 +1,5 @@
 ---
-ref: xi-report-05
+ref: xiaa-report-05
 layout: page
 title: Settings
 description: Settings

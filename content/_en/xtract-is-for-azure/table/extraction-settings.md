@@ -1,5 +1,5 @@
 ---
-ref: xi-table-06
+ref: xiaa-table-06
 layout: page
 title: Extraction settings
 description: Table Properties

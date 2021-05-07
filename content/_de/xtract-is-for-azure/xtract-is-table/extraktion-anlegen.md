@@ -1,10 +1,10 @@
 ---
-ref: xi-table-01
+ref: xiaa-table-01
 layout: page
 title: Tabellen extrahieren
 description: Tabellen extrahieren
 product: xtract-is-for-azure
-parent: xtract-is-for-azure-table
+parent: xtract-is-table
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

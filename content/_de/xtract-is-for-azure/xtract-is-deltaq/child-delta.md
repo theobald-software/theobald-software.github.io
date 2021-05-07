@@ -1,10 +1,10 @@
 ---
-ref: xi-q-delta-05
+ref: xia-q-delta-05
 layout: page
 title: Delta
 description: Delta
 product: xtract-is-for-azure
-parent: xtract-is-for-azure-deltaq
+parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 5
 lang: de_DE

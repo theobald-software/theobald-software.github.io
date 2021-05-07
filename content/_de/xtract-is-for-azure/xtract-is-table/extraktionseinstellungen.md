@@ -1,10 +1,10 @@
 ---
-ref: xi-table-06
+ref: xiaa-table-06
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
 product: xtract-is-for-azure
-parent: xtract-is-for-azure-table
+parent: xtract-is-table
 permalink: /:collection/:path
 weight: 6
 lang: de_DE

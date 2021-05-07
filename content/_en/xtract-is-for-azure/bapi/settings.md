@@ -1,5 +1,5 @@
 ---
-ref: xi-bapi-06
+ref: xia-bapi-06
 layout: page
 title: Settings
 description: Settings

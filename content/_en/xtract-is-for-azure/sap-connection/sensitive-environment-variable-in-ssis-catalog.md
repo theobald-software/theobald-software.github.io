@@ -1,5 +1,5 @@
 ---
-ref: xi-sap-connection-03
+ref: xia-sap-connection-03
 layout: page
 title: Sensitive Environment Variable in SSIS Catalog
 description: Sensitive Environment Variable in SSIS Catalog

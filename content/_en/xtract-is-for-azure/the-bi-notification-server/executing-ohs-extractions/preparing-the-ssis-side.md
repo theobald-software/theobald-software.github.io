@@ -1,5 +1,5 @@
 ---
-ref: xi-ohs-extractions-01
+ref: xiaa-ohs-extractions-01
 layout: page
 title: Preparing the SSIS side
 description: Preparing the SSIS side

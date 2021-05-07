@@ -1,5 +1,5 @@
 ---
-ref: xi-for-azure-02
+ref: xia-for-azure-02
 layout: page
 title: Installation
 description: Installation

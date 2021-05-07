@@ -1,5 +1,5 @@
 ---
-ref: xi-bw-loader-packages-01
+ref: xiaa-bw-loader-packages-01
 layout: page
 title: BW Loader Pakete starten
 description: BW Loader Pakete starten

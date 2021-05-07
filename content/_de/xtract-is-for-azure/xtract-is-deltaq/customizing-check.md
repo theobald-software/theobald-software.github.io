@@ -1,10 +1,10 @@
 ---
-ref: xi-q-delta-02
+ref: xia-q-delta-02
 layout: page
 title: Customizing Check
 description: Customizing Check
 product: xtract-is-for-azure
-parent: xtract-is-for-azure-deltaq
+parent: xtract-is-deltaq
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
