@@ -4,7 +4,7 @@ layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-universal
-parent: tableau-mit-data-extract
+parent: tableau
 permalink: /:collection/:path
 weight: 3
 progressstate: 5

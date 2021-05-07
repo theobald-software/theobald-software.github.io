@@ -6,7 +6,7 @@ description: Linking a BEx query with a Hierarchy
 product: xtract-universal
 parent: tableau
 permalink: /:collection/:path
-weight: 3
+weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=linking-bex-query-with-hierarchy
 ---
@@ -18,7 +18,7 @@ By linking the extractions, you can blend data from both data sources in a singl
 
 1. Create a BEx Query extraction as described in [Define a BW Cube Extraction](../../bwcube/bw-cube-extraction-define). 
 <!--- ![XU-Tableau-BExQuery](/img/content/XU-Tableau-BExQuery.png){:class="img-responsive"} -->
-2. Check the General Settings of the BEx Query:
+2. Check the General Settings of the BEx Query and activate *Use Description for Pipeline* and *Use formatted Values*.
 ![XU-Tableau-BExQuery-Settings](/img/content/XU-Tableau-BExQuery-Settings.png){:class="img-responsive"}
 3. Create a BW Hierarchy extraction as described in [Define a Hierarchy Extraction](../../bw-hierarchies/hierarchy-extraction-define). 
 <!--- ![XU-Tableau-Hierarchy](/img/content/XU-Tableau-Hierarchy.png){:class="img-responsive"} -->
