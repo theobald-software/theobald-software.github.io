@@ -6,13 +6,13 @@ The window "Extraction Settings" opens.
 ### Batch Processing
 
 **Use Background Mode**<br>
-If you choose this option, extractions are executed in background mode. Use this option for reports that have an ALV output.
+If you choose this option, the ABAP report is executed as a batch job in SAP. A spool is generated in SAP (transaction SP01) which is later fetched by the report component. Use this option for long running reports in SAP which would run into an RFC timeout when called in dialog mode. Also, some reports that throw an error message when running in dialog mode can be extracted when run in background mode.
 
 **Background Job Timeout**<br>
-Enter the time period (in seconds) how long the report may run in the background until the task aborts.
+Enter a time period (in seconds). The Xtract Report component polls the status of the batch job in SAP for the specified time period. If the SAP batch job is not finished by the specified time period, the extraction aborts.
 
 **Background Job Name**<br>
-Enter the name of the background job in the SAP system.
+This is the name of the background job under which the report is run in SAP.
 
 **Spool Destination**<br>
 Enter the name of the spool destination (printer).
@@ -21,19 +21,25 @@ Enter the name of the spool destination (printer).
 ### Automatic Detection
 
 **Header pattern**<br>
-Enter a search pattern (e.g. *header*) to detect the table header. If automatic column detection is enabled.
+Enter a search pattern (e.g. *Created on*) to detect the table header. The report component scans the report's output for this pattern and uses the complete line this pattern occurs in as report header.<br>
+This setting is usually not required if the report's columns can be [detected automatically](./report-extraction-define#define-columns-automatically) and *Dynamic column widths and offsets* is checked.
 
 **Row skip pattern**<br>
-Enter a regular expression as a search pattern to skip rows from the result.  <br>
-This setting allows e.g. skipping header rows that will be repeated in some reports. <br>
-To skip rows that contains the term DESCTEXT or LONGTEXT, set the value DESCTEXT | LONGTEXT. <br>
-For further information about regular expressions please refer to the [Microsoft Online Help](http://msdn.microsoft.com/en-us/library/az24scfc.aspx).
+The row skip pattern acts like a "reverse" WHERE clause: All report rows that contain the pattern are removed from the result set. Rows are being removed *after* the report data was extracted from SAP.<br>
+Entry of regular expressions is supported. Multiple row skip patterns can be entered separated by the pipe symbol '|', for example ```2020|2021|-|Sum```. This would remove all rows containing the pattern '2020', '2021', '-' and 'Sum'. <br>
+This setting can be used for skipping header rows that are repeated in the output body of some reports. <br>
+This setting is usually not required if the report's columns can be [detected automatically](./report-extraction-define#define-columns-automatically) and *Dynamic column widths and offsets* is checked.
+
+
 
 ### Function Module
 
-{: .box-note }
-**Note:** Unlike other components, the Report component requires the installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT`in your SAP system before use.
-For detailed information, see [Install Report Custom Fuction Module](../sap-customizing/install-report-custom-function-module).
 
 **Custom Function**<br>
-Enter the name of the function module. The default is `Z_XTRACT_IS_REMOTE_REPORT`.
+The Report component requires installation of custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. If you manually created the function module in your SAP system and gave the function module a different name, enter that name in this field. The default is `Z_XTRACT_IS_REMOTE_REPORT`.
+
+
+
+------------
+[Regular Expressions in the Microsoft Online Help](http://msdn.microsoft.com/en-us/library/az24scfc.aspx).
+[Install Report Custom Fuction Module](../sap-customizing/install-report-custom-function-module).

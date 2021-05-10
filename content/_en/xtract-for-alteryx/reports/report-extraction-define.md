@@ -15,23 +15,24 @@ lang: en_GB
 The Report component enables data extraction from most standard and custom ABAP reports and SAP transactions. In general, report extraction is possible if the report returns a table-like structure in SAP. This is the case for many Classical or ALV reports such as RLT10010 (Evaluation of Movements per Storage type) or RKEB0601 (Display Line Items). 
 
 {: .box-note }
-**Note:** The report component requires custom function module Z_THEO_READ_TABLE. Import this function module before proceeding.
+**Note:** The Report component requires installation of custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. Import this function module before proceeding.
+For detailed information, see [Install Report Custom Fuction Module](../sap-customizing/install-report-custom-function-module).
+
+
 
 
 ### General workflow for creating a report extraction
+
+The following describes the most simple scenario of a workflow for creating a report extraction. Further tweaking may be required, see below. <br>
+
 When creating a new report extraction, start with executing the report in SAP. Know the selections or variants when executing the report. Format the report layout/output in a way that it returns a table-like structure. Save the layout as a variant if possible.
 
-1. Look up the ABAP report or transaction you want to extract.
-2. Select a variant (preferred) or manually enter selections in the Selection Screen. 
-3. Automatically determine the report columns: Click the *Automatically detect columns* button. This executes the report. If the columns were automatically determined, column name, width and offset are listed in the columns section.
-    
-    {: .box-note }
-    **Note:**
-    The Report component can automatically detect report columns if the report's output separates the columns by the pipe symbol '|'.
+1. In the Report component, look up the ABAP report or transaction you want to extract, see [Look Up a Report or Transaction](#look-up-a-report-or-transaction)
+2. Select a variant or manually enter selections in the Selection Screen, see [Variants and Selections](#variants-and-selections)
+3. Automatically determine the report columns: Click **[Automatically detect columns]**. This executes the report. If the columns were automatically determined, column name, width and offset are listed in the columns section, see [Define Columns automatically](#define-columns-automatically)
+4. If step 3. returns a single field, the report columns could not be detected automatically. Set the report columns manually, see [Define Columns automatically](#define-columns-manually).
 
-4. If step 3. returns a single field, the report columns could not be detected automatically. Click the *Load Preview* button. This executes the report and displays the result in the Preview area. Click in the Preview area to manually set the report columns.  
 
-This is the most simple scenario of a workflow for creating a report extraction. Further tweaking may be required.
 
 
 
@@ -45,33 +46,31 @@ This is the most simple scenario of a workflow for creating a report extraction.
 
 ### Variants and Selections
 
-Most reports allow entering multiple selections before report execution. Selections limit the result set of the report so as to display only those records that match the entered selection. 
+Most reports allow entering selections before report execution. Selections limit the result set of the report so as to extract only records that match the entered selection. 
 
 A selection variant can be created in SAP at the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. This minimizes the need to enter selections each time you run a report. 
 
 {: .box-note }
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
 
-{: .box-tip }
-**Tip:** Instead of hard coding manual selections or variants, use parameters. This allows setting selections and variants at runtime.
+
 
 ![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
-#### Choose a Variant:
-1. Choose a variant from the drop-down-list *Variant* (1). 
-2. If you created a variant in SAP after the report extraction was created, click the **[Refresh]** button next to the drop-down-list to show the newly created variant.
+#### Choose a Variant
+Choose a variant from the drop-down-list *Variant*. If you created a variant in SAP after the report extraction was created, click the **[Refresh]** button next to the drop-down-list to show the newly created variant.
 
 {: .box-note }
 **Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. Take a look at the report's variant in SAP if you want to see the variant's definition.
 
 #### Edit Selections
 
-This section corresponds to the reports input screen which is displayed before executing a report in SAP. Some selection fields only have a technical name but no description. To understand which which field is which, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. This displays the technical name of a selection field.
+This section corresponds to the report's input screen in SAP. Some selection fields only have a technical name but no description. To understand which which field is which, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. This displays the technical name of a selection field.
 
 1. Click the **[Edit]** button next to the selection you want to edit. The window "Edit Selection" opens.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
 2. Choose if the selection is to be included or excluded (1) from the extracted data.
 3. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down(2). 
-4. Enter the selection in the respective *Low*/*High* fields.
+4. Enter the selection in the respective *Low* and *High* fields. The *High* field is ready for input when the *between* or *not between* operator was selected.
 
     {: .box-note }
     **Note:** Use the SAP database format when entering selections. Enter leading zeros for document numbers and enter date fields in the format yyyymmdd.
@@ -85,41 +84,77 @@ This section corresponds to the reports input screen which is displayed before e
 
 
 ### Define Report Columns
-As opposed to other components (e.g. table component), there is no metadata for ABAP Reports that defines the output columns (name and data type) of a report. The only way to identify the columns of a report is to execute the report and identify the columns based on the output.
+A report column is defined by its name, offset and length. Per default, all columns are of data type *string*. To identify a report's columns, the report needs to be executed. Columns can then be identified based on the output.
+    
+{: .box-tip }
+**Tip:**
+At this stage, use a selection or variant that returns only a few records. This can be adapted later on.
 
-With some reports, the output columns are separated by the pipe symbol '|'. In this case the report component can automatically determine the columns. For reports, whose output is not separated by the pipe, the columns need to be identified manually.
+
+Some Classical ABAP reports are developed in a way so that output columns are delimited by the pipe symbol '\|'. In this case the Report component can automatically identify the columns. Automatic column detection also works for most ALV reports.
+![Report-delimiters](/img/content/Report_new_delimiters.png){:class="img-responsive"}
+
+
+For reports where the output is not separated by the pipe symbol, the columns must be identified manually.
+![Report-no-delimiters](/img/content/Report_new_no_delimiters.png){:class="img-responsive"}
+
 
 ### Define Columns automatically
-Use the button **[Automatically Detect Columns]**(2) automatically divides columns using "|" as the delimiter.
+**Automatically detect columns** <br>
+When clicking **[Automatically detect columns]** the report is executed based on the selected variant or selections. Column name, width and offset are displayed in the *Columns* section if the Report component could identify them automatically.
+
+![Report-automatic-columns](/img/content/Report_new_automatic_columns.png){:class="img-responsive"}
+
 
 **Dynamic column width and offset**<br>
-Prerequisite for this setting: The report columns are separated by '|'. This setting adjusts column length and offset dynamically at report runtime.
+Prerequisite for this setting: The report columns can be detected automatically, see *Automatically Detect Columns*. This setting adjusts column length and offset dynamically at report runtime. This could be required for reports that have varying column widths depending on the report's selection criteria.
+
 
 ### Define Columns manually
-A column is defined by its name, offset and length.
+When automatic column detection is not possible, the report's column names, widths and offsets must be determined manually.
 
-[//]: # (How to add new columns????) 
-To manually define columns, edit name, offset and length of the columns in the section *Columns* (3).
+Report columns can be manually defined as follows:
+
+1. Make sure, no columns are defined, yet. Go to the *Columns* section and delete all columns by clicking on the *trash can* icon.
+![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}
+
+2. Click **[Load Preview]**. The report is executed based on the selected report variant or selections. The report output is displayed in the *Load Preview* section.
+3. Press and hold down the left mouse button in the *Load Preview* section.  
+4. Move the mouse pointer to the right while still holding down the left mouse button.
+5. Let go of the mouse button. The report column is highlighted with a green background. An entry is added to the *Columns* section. 
+6. To change the column name, offset and width, click in the respective fields in the *Columns* section and enter a new value.
+7. Repeat steps 3 to 6 till all columns are defined.
+
+{: .box-note }
+**Note:** Once a column is defined and highlighted with a green background, it's width and offset can't be changed through the graphics editor. Change it through the *Columns* section.
+
+![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
 
 
-#### Row Settings (4)
+#### Row Settings
+**Skip rows from top**<br>
+Some reports display meta information in the header section of the report, before the actual report body. This setting allows skipping this meta information. Enter the number of rows you want to skip at the beginning of the report.
 
-**skip rows from top**<br>
-Enter the number of rows you want to skip at the beginning of the report.
-The result is displayed in the preview section.
 
-**skip rows from bottom**<br>
-Enter the number of rows you want to skip at the end of the report.
-The result is displayed in the preview section.
+**Skip rows from bottom**<br>
+Similar to *skip rows from top*. Enter the number of rows you want to skip in the footer section of the report.
 
-{: .box-tip}
-**Tip:** You can use **skip rows from top** and **skip rows from bottom** to cut out headers or footers of a report.
 
-**report rows per data row**<br>
-You can use this parameter if rows are embedded in other rows of the source data. 
-By entering the number of report rows contained in one data row, the Xtract Report component extracts the embedded rows.
+**Report rows per data row**<br>
+Use this setting for ABAP reports, that return two or more "physical" rows to display a single "semantic" data row. This concatenates the physical rows into a single data row. <br>
+Example: Report RIEQUI20 
 
-**report width**<br>
+![Report_new_rows_per_data_row](/img/content/Report_new_rows_per_data_row.png){:class="img-responsive"}
+
+
+
+**Report width**<br>
+To be used in combination with **Report rows per data row**. Defines the length of each phsyical row.
+
+
+
+---------------
+[Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
 
 
 <!---
@@ -132,5 +167,8 @@ Reports that may cause issues:
 - Reports, that split a line over multiple lines
 - Interactive Reports that are meant for reporting purposes and offer navigational features.
 - Reports created via report painter
+
+{: .box-tip }
+**Tip:** Instead of hard coding manual selections or variants, use parameters. This allows setting selections and variants at runtime.
 
 --->
