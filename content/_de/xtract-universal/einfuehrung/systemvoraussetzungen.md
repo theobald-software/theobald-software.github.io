@@ -22,6 +22,6 @@ Progressstate: 5
 ### Destinationen
 Für die Verwendung bestimmter [Destinationen](../destinationen) kann ein geeigneter Treiber oder eine entsprechende Bibliothek erforderlich sein. Weitere Informationen entnehmen Sie dem Abschnitt Voraussetzungen der einzelnen Destinationen.
 
-Bei der Verwendung bestimmter Destinationen (z.B. [Tableau](../destinationen/tableau/tableau-mit-data-extract/voraussetzungen)) kann zusätzlicher Festplattenspeicher benötigt werden.
+Bei der Verwendung bestimmter Destinationen (z.B. [Tableau](../destinationen/tableau)) kann zusätzlicher Festplattenspeicher benötigt werden.
 
 

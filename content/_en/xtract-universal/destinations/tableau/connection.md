@@ -11,6 +11,8 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection
 ---
 
+{% include _content/en/xu-specific/destinations/general/connection.md %}	
+
 ### Adding a Destination
 
 1. In the main window of the Designer, navigate to **Server > [Manage Destinations](../../managing-destinations)**. The window “Manage Destinations” opens.
