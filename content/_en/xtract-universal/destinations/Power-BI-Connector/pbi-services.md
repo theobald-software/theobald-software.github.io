@@ -48,9 +48,9 @@ The configured On-premises Data Gateway is then integrated into the Power BI ser
 **Data Source Type**<br> Select *Xtract Universal Extraction* from the drop-down menu. 
 
 {: .box-note }
-**Note:** If Xtract Universal is not available in the drop-down menu, check the configuration in the [Setup On-premises Data Gateway](.pbi-services#setup-on-premises-data-gateway) section.
+**Note:** If Xtract Universal is not available in the drop-down menu, check the configuration in the [Setup On-premises Data Gateway](./pbi-services#setup-on-premises-data-gateway) section.
 
-**Xtract Universal Server**<br> Enter the Xract Universal Server URL, see [Web Server](../../server/server_settings#web-server).
+**Xtract Universal Server**<br> Enter the Xract Universal Server URL, see [Web Server](../../server/server-settings#web-server).
 
 **Authentication Method**<br> 
 Selection of an authentication method, see [Single Sign On and SAP Authentication](./pbi-SSO):
