@@ -4,7 +4,7 @@ layout: page
 title: Verbindung
 description: Verbindung
 product: xtract-universal
-parent: tableau-mit-data-extract
+parent: tableau
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

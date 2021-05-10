@@ -14,4 +14,7 @@ progressstate: 5
 ---
 The following section describes the loading of the SAP extraction data into Tableau. 
 
+The Tableau Destination enables you to save data extracted from SAP as Hyper files.
+It is also possible to upload the Hyper file to Tableau Server or Tableau Online.
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

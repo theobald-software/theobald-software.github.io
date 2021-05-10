@@ -1,12 +1,12 @@
 ---
 ref: xu-tableau-03
 layout: page
-title: Teil 1 - Verlinken einer BEx-Query mit einer BW-Hierarchie
-description: Teil 1 - Verlinken einer BEx-Query mit einer BW-Hierarchie
+title: Verlinken einer BEx-Query mit einer BW-Hierarchie
+description: Verlinken einer BEx-Query mit einer BW-Hierarchie
 product: xtract-universal
 parent: tableau
 permalink: /:collection/:path
-weight: 3
+weight: 6
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verlinken-bex-query-mit-bw-hierarchie
 ---
@@ -52,3 +52,23 @@ Die beiden Extraktionen sind nun verlinkt und Sie können Daten aus beiden Extra
 ![Tableau-Linked-Data-Sources](/img/content/Tableau-Linked-Data-Sources.png){:class="img-responsive"}
 
 Für weitere Informationen über Beziehungen in Tableau siehe [Tableau Online Help](https://www.tableau.com/support/online). 
+
+### "Not Assigned" Knoten
+
+Bei SAP BW-Hierarchien werden die Ausprägungen eines Merkmals den verschiedenen Knoten einer Hierarchie zugeordnet. Alle Ausprägungen des Merkmals, die keinem Hierarchie-Knoten zugeordnet wurden, tauchen unter dem sog. "Not Assigned"-Knoten auf.
+
+![BExQuery_notAssigned_node](/img/content/BExQuery_notAssigned_node.png){:class="img-responsive"}
+
+Bei der Verlinkung einer BEx-Query mit einer BW-Hierarchie in Tableau, hängt die Anzeige des Not Assigned-Knotens davon ab, welche der Datenquellen (TDE-Datei mit BEx Query-Extrakt oder TDE-Datei mit BW Hierarchy-Extrakt) als primäre Datenquelle definiert wurde.
+
+Das ist folgendermaßen in der Tableau Online-Hilfe beschrieben:<br>
+"Die primäre Datenquelle ist die Verbindung, die Sie in der Ansicht zuerst verwenden. Nachdem Sie Felder in die Ansicht gezogen haben, wird die primäre Datenquelle mit einem blauen Häkchen gekennzeichnet."
+
+Der Not Assigned-Knoten ist nur dann sichtbar, wenn der BEx Query-Extrakt primäre Datenquelle ist. In Tableau wird der Knoten als "Null" bezeichnet.
+
+![Tableau_Relationship_with_Null_Node](/img/content/Tableau_Relationship_with_Null_Node.png){:class="img-responsive"}
+
+Ist der BW Hierarchy-Extrakt die primäre Datenquelle, wird der Null-Knoten nicht angezeigt.
+
+![Tableau_Relationship_without_Null_Node](/img/content/Tableau_Relationship_without_Null_Node.png){:class="img-responsive"}
+

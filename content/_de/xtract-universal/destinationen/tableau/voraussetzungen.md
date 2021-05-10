@@ -4,7 +4,7 @@ layout: page
 title: Voraussetzungen
 description: Voraussetzungen
 product: xtract-universal
-parent: tableau-mit-data-extract
+parent: tableau
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
@@ -16,7 +16,8 @@ Keine Installation von weiteren Tools ist notwendig.
 
 Die benötigten Visual C++ Runtime und die Tableau Export Libraries werden automatisch von Xtract Universal installiert. 
 
-Beim Setup muss die Checkbox "Tableau Extract API" angehakt werden.
+{: .box-note }
+**Hinweis:** Beim Setup muss die Checkbox "Tableau Extract API" angehakt werden.
 
 ![XU_Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 
