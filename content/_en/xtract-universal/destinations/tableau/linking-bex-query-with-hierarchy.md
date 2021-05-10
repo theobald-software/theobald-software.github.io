@@ -1,12 +1,12 @@
 ---
 ref: xu-tableau-03
 layout: page
-title: Part 1 - Linking a BEx query with a Hierarchy
-description: Part 1 - Linking a BEx query with a Hierarchy
+title: Linking a BEx query with a Hierarchy
+description: Linking a BEx query with a Hierarchy
 product: xtract-universal
 parent: tableau
 permalink: /:collection/:path
-weight: 3
+weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=linking-bex-query-with-hierarchy
 ---
