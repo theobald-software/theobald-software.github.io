@@ -10,30 +10,20 @@ weight: 2
 lang: en_GB
 ---
 
-### About
+The following section shows how to use the Report Component of Xtract for Alteryx. <br>
+For information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
-The Report component enables data extraction from most standard and custom ABAP reports and SAP transactions. In general, report extraction is possible if the report returns a table-like structure in SAP. This is the case for many Classical or ALV reports such as RLT10010 (Evaluation of Movements per Storage type) or RKEB0601 (Display Line Items). 
+### General Workflow for Creating a Report Extraction
 
-{: .box-note }
-**Note:** The Report component requires installation of custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. Import this function module before proceeding.
-For detailed information, see [Install Report Custom Fuction Module](../sap-customizing/install-report-custom-function-module).
+The following steps describe the most simple workflow for creating a report extraction. Further tweaking may be required, see below. <br>
 
+When creating a new report extraction, start by executing the report in SAP. Know the selections or variants when executing the report. 
+Format the report layout/output in a way that it returns a table-like structure. Save the layout as a variant if possible.
 
-
-
-### General workflow for creating a report extraction
-
-The following describes the most simple scenario of a workflow for creating a report extraction. Further tweaking may be required, see below. <br>
-
-When creating a new report extraction, start with executing the report in SAP. Know the selections or variants when executing the report. Format the report layout/output in a way that it returns a table-like structure. Save the layout as a variant if possible.
-
-1. In the Report component, look up the ABAP report or transaction you want to extract, see [Look Up a Report or Transaction](#look-up-a-report-or-transaction)
-2. Select a variant or manually enter selections in the Selection Screen, see [Variants and Selections](#variants-and-selections)
-3. Automatically determine the report columns: Click **[Automatically detect columns]**. This executes the report. If the columns were automatically determined, column name, width and offset are listed in the columns section, see [Define Columns automatically](#define-columns-automatically)
-4. If step 3. returns a single field, the report columns could not be detected automatically. Set the report columns manually, see [Define Columns automatically](#define-columns-manually).
-
-
-
+1. In the Report component, look up the ABAP report or transaction you want to extract, see [Look Up a Report or Transaction](#look-up-a-report-or-transaction).
+2. Select a variant or manually enter selections in the Selection Screen, see [Variants and Selections](#variants-and-selections).
+3. Detect the report columns automatically. If the columns are detected, column name, width and offset are listed in the columns section, see [Define Columns automatically](#define-columns-automatically).
+4. If step 3 returns a single field, the report columns can not be detected automatically. Set the report columns manually, see [Define Columns automatically](#define-columns-manually).
 
 
 ### Look Up a Report or Transaction
@@ -46,41 +36,40 @@ When creating a new report extraction, start with executing the report in SAP. K
 
 ### Variants and Selections
 
-Most reports allow entering selections before report execution. Selections limit the result set of the report so as to extract only records that match the entered selection. 
+Most reports allow entering selections before report execution. Selections limit the result set of the report so as to extract only records that match the selection. 
 
-A selection variant can be created in SAP at the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. This minimizes the need to enter selections each time you run a report. 
+A selection variant can be created in SAP at the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. 
+This minimizes the need to enter selections each time you run a report. 
 
 {: .box-note }
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
 
-
-
 ![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
 #### Choose a Variant
-Choose a variant from the drop-down-list *Variant*. If you created a variant in SAP after the report extraction was created, click the **[Refresh]** button next to the drop-down-list to show the newly created variant.
+Choose a variant from the drop-down-list *Variant* (1). If you create a new variant in SAP after the report extraction was created, click the **[Refresh]** button next to the drop-down list to access the new variant.
 
 {: .box-note }
-**Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. Take a look at the report's variant in SAP if you want to see the variant's definition.
+**Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. To see the definition of a variant, take a look at the report's variant in SAP.
 
 #### Edit Selections
 
-This section corresponds to the report's input screen in SAP. Some selection fields only have a technical name but no description. To understand which which field is which, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. This displays the technical name of a selection field.
+This section corresponds to the report's input screen in SAP. Some selection fields only have a technical name and no description. 
+To understand which field corresponds to a field in SAP, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. 
+This displays the technical name of a selection field.
 
 1. Click the **[Edit]** button next to the selection you want to edit. The window "Edit Selection" opens.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
-2. Choose if the selection is to be included or excluded (1) from the extracted data.
-3. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down(2). 
-4. Enter the selection in the respective *Low* and *High* fields. The *High* field is ready for input when the *between* or *not between* operator was selected.
+2. Choose if the selection is to be included or excluded (3) from the extracted data.
+3. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down list (4). 
+4. Enter the selection in the respective *Low* and *High* fields. The *High* field is active for input when the *between* or *not between* operator was selected.
+5. Optional: click **[Add Selection]** (5) to conditions.
+6. Click **[OK]** (6) to confirm the selections.
 
-    {: .box-note }
-    **Note:** Use the SAP database format when entering selections. Enter leading zeros for document numbers and enter date fields in the format yyyymmdd.
+{: .box-note }
+**Note:** Use the SAP database format when entering selections. Enter leading zeros for document numbers and enter date fields in the format yyyymmdd.
 	
-5. Optional: click **[Add Selection]** (3) to add more conditions.
-6. Click **[OK]** (4) to confirm the selections.
-
-
 {: .box-tip }
-**Tip:** If you have a lot of selection parameters, create a variant in SAP. Use that variant instead of entering selections.
+**Tip:** If you have a lot of selection parameters, create a variant in SAP and use the variant instead of entering selections.
 
 
 ### Define Report Columns
@@ -152,9 +141,8 @@ Example: Report RIEQUI20
 To be used in combination with **Report rows per data row**. Defines the length of each phsyical row.
 
 
-
----------------
-[Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
+#### Related Links
+- [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
 
 
 <!---
