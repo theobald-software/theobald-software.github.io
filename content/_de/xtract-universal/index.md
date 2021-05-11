@@ -28,7 +28,7 @@ Xtract Universal bietet einen Satz von neun Extraktionstypen, um eine Reihe von 
 Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
 
 - [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**BW Cube**](./bw-infocubes-und-bex-queries) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
+- [**BW Cube**](./bw-infocubes-und-bex-queries) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
 - [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
 - [**DeltaQ**](./datasource-deltaq) extrahiert DataSources (OLTP) und Extraktoren aus dem ERP und ECC System.
 - [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
