@@ -115,7 +115,10 @@ Report columns can be manually defined as follows:
 6. To change the column name, offset and width, click in the respective fields in the *Columns* section and enter a new value.
 7. Repeat steps 3 to 6 until all columns are defined.
 
-<video src="/img/content/report-manual-columns.mp4" controls></video>
+<video autoplay loop muted playsinline>
+  <source src="/img/content/report-manual-columns.mp4" type="video/mp4">
+</video>
+
 
 {: .box-note }
 **Note:** Once a column is set and highlighted with a green background, its width and offset can't be changed via the graphics editor. Change it using the *Columns* section.
@@ -125,8 +128,8 @@ Report columns can be manually defined as follows:
 
 #### Row Settings
 **Skip rows from top**<br>
-Some reports display meta information in the header section of the report, before the actual report body. This setting allows skipping this meta information. Enter the number of rows you want to skip at the beginning of the report.
-
+Enter the number of rows you want to skip at the beginning of the report.
+Some reports display meta information in the header section of the report, before the actual report body. This setting allows skipping the meta information. 
 
 **Skip rows from bottom**<br>
 Similar to *skip rows from top*. Enter the number of rows you want to skip in the footer section of the report.
@@ -139,9 +142,8 @@ Example: Report RIEQUI20
 ![Report_new_rows_per_data_row](/img/content/Report_new_rows_per_data_row.png){:class="img-responsive"}
 
 
-
 **Report width**<br>
-To be used in combination with **Report rows per data row**. Defines the length of each phsyical row.
+Use this setting in combination with **Report rows per data row**. Defines the length of each physical row.
 
 
 #### Related Links
