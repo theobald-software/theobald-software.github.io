@@ -69,7 +69,7 @@ This displays the technical name of a selection field.
 **Note:** Use the SAP database format when entering selections. Enter leading zeros for document numbers and enter date fields in the format yyyymmdd.
 	
 {: .box-tip }
-**Tip:** If you have a lot of selection parameters, create a variant in SAP and use the variant instead of entering selections.
+**Tip:** If you use multiple selection parameters, create a variant in SAP. Use the variant instead of entering selections.
 
 
 ### Define Report Columns
@@ -80,42 +80,45 @@ A report column is defined by its name, offset and length. Per default, all colu
 At this stage, use a selection or variant that returns only a few records. This can be adapted later on.
 
 
-Some Classical ABAP reports are developed in a way so that output columns are delimited by the pipe symbol '\|'. In this case the Report component can automatically identify the columns. Automatic column detection also works for most ALV reports.
+Some Classical ABAP reports are developed in a way so that output columns are delimited by the pipe symbol '\|'. In this case the Report component can automatically identify the columns. Automatic column detection also works for most ALV reports. <br>
+Example:
 ![Report-delimiters](/img/content/Report_new_delimiters.png){:class="img-responsive"}
 
 
-For reports where the output is not separated by the pipe symbol, the columns must be identified manually.
+For reports where the output is not separated by the pipe symbol, the columns must be identified manually. <br>
+Example:
 ![Report-no-delimiters](/img/content/Report_new_no_delimiters.png){:class="img-responsive"}
 
 
 ### Define Columns automatically
 **Automatically detect columns** <br>
-When clicking **[Automatically detect columns]** the report is executed based on the selected variant or selections. Column name, width and offset are displayed in the *Columns* section if the Report component could identify them automatically.
+By clicking **[Automatically detect columns]** the report is executed based on the selected variant or selections. Column name, width and offset are displayed in the *Columns* section if they can be identified automatically.
 
 ![Report-automatic-columns](/img/content/Report_new_automatic_columns.png){:class="img-responsive"}
 
 
 **Dynamic column width and offset**<br>
-Prerequisite for this setting: The report columns can be detected automatically, see *Automatically Detect Columns*. This setting adjusts column length and offset dynamically at report runtime. This could be required for reports that have varying column widths depending on the report's selection criteria.
+You can use this setting when report columns can be detected automatically, see *Automatically Detect Columns*. If *Dynamic column width and offset* is active, the column length and offset is adjusted dynamically at report runtime. This can be required for reports that have varying column widths depending on the report's selection criteria.
 
 
 ### Define Columns manually
-When automatic column detection is not possible, the report's column names, widths and offsets must be determined manually.
+When automatic column detection is not possible, the report's column names, widths and offsets must be set manually.
 
 Report columns can be manually defined as follows:
 
-1. Make sure, no columns are defined, yet. Go to the *Columns* section and delete all columns by clicking on the *trash can* icon.
+1. Make sure no columns are defined yet. Go to the *Columns* section and delete all columns by clicking on the *trash can* icon.
 ![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}
-
 2. Click **[Load Preview]**. The report is executed based on the selected report variant or selections. The report output is displayed in the *Load Preview* section.
 3. Press and hold down the left mouse button in the *Load Preview* section.  
 4. Move the mouse pointer to the right while still holding down the left mouse button.
 5. Let go of the mouse button. The report column is highlighted with a green background. An entry is added to the *Columns* section. 
 6. To change the column name, offset and width, click in the respective fields in the *Columns* section and enter a new value.
-7. Repeat steps 3 to 6 till all columns are defined.
+7. Repeat steps 3 to 6 until all columns are defined.
+
+<video src="/img/content/report-manual-columns.mp4" controls></video>
 
 {: .box-note }
-**Note:** Once a column is defined and highlighted with a green background, it's width and offset can't be changed through the graphics editor. Change it through the *Columns* section.
+**Note:** Once a column is set and highlighted with a green background, its width and offset can't be changed via the graphics editor. Change it using the *Columns* section.
 
 ![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
 
