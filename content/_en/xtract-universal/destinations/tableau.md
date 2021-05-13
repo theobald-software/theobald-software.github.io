@@ -18,3 +18,6 @@ The Tableau Destination enables you to save data extracted from SAP as Hyper fil
 It is also possible to upload the Hyper file to Tableau Server or Tableau Online.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+
+#### Related Links:
+- [Webinar: Visualize your SAP data in Tableau](https://www.youtube.com/watch?v=X6T3NfVDhJE)

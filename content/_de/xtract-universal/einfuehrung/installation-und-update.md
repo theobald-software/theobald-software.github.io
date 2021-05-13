@@ -108,7 +108,7 @@ Die Option *Convert config files* startet die *ConfigConverter*-Anwendung, die s
 
 
 #### Manuelles Upgrade
-Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, kann dieser auch nachträglich manuell aus dem Installationsverzeichnis ``C:\Program Files\XtractUniversal gestartet werden.C:\Program Files\XtractUniversal``. <br>
+Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, kann dieser auch nachträglich manuell aus dem Installationsverzeichnis `C:\Program Files\XtractUniversal` gestartet werden. <br>
 
 ![XU3_Migration_3](/img/content/XU3_Migration_3.png){:class="img-responsive"}
 

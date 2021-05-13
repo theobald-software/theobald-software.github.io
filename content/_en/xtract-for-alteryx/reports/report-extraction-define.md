@@ -11,7 +11,6 @@ lang: en_GB
 ---
 
 The following section shows how to use the Report Component of Xtract for Alteryx. <br>
-For information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 ### General Workflow for Creating a Report Extraction
 
@@ -120,13 +119,31 @@ Report columns can be manually defined as follows:
 **Note:** Once a column is set and highlighted with a green background, its width and offset can't be changed via the graphics editor. Change it using the *Columns* section.
 
 Example:
-<video autoplay loop muted playsinline>
+<!---
+<video autoplay loop muted playsinline id="video" onended="myFunction()">
   <source src="/img/content/report-manual-columns.mp4" type="video/mp4">
 </video>
 
-<!---
-![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
+
+
+<script type='text/javascript'>
+function myFunction(){
+var myVideo = document.getElementById('video');
+if (typeof myVideo.loop == 'boolean') { // loop supported
+    myVideo.loop = true;
+} else { // loop property not supported
+    myVideo.on('ended', function () {
+    this.currentTime = 0;
+    this.play();
+    }, false);
+}
+myVideo.play();
+}
+</script>
 --->
+
+![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
+
 
 #### Row Settings
 **Skip rows from top**<br>

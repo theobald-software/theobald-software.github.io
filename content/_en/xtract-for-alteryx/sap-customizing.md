@@ -19,7 +19,7 @@ The Custom function modules/ABAP framework are delivered as a part of Theobald S
 For the following components an installation of a custom function module/ABAP framework in SAP is required:
 
 - **Table** - For most tasks, the installation of an ABAP framework is recommended or required (see below).
-- Comming soon: **Report** - The installation of a custom function module is required.
+- **Report** - The installation of a custom function module is required.
 
 ### Transport Requests
 
@@ -27,7 +27,7 @@ The Theobald Software transport requests need to be imported into SAP by your SA
 
 The following transport requests can be found in the ABAP subfolder of the installation folder (e.g., `C:\Program Files\XtractProduct\ABAP`):
 
-- Comming soon: thtrans.zip - contains custom function module for the *Report component*
+- thtrans.zip - contains the custom function module for the *Report component*
 - Z_THEO_READ_TABLE.zip - contains custom function module, ABAP classes and different DDIC objects for the *Table component*; <br>
 for SAP_ABA version >= 740SP05
 - Z_THEO_READ_TABLE-before_740SP05.zip - contains a custom function module, ABAP classes and different DDIC objects for the *Table component*; <br>
@@ -38,3 +38,4 @@ For more detailed information about installing the transport request, see the kn
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 
 
+{% include _content/en/sap-customizing/install-report-custom-function-module.md  %}
