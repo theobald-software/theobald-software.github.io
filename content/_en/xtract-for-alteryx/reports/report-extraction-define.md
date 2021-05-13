@@ -115,16 +115,18 @@ Report columns can be manually defined as follows:
 6. To change the column name, offset and width, click in the respective fields in the *Columns* section and enter a new value.
 7. Repeat steps 3 to 6 until all columns are defined.
 
-<video autoplay loop muted playsinline>
-  <source src="/img/content/report-manual-columns.mp4" type="video/mp4">
-</video>
-
 
 {: .box-note }
 **Note:** Once a column is set and highlighted with a green background, its width and offset can't be changed via the graphics editor. Change it using the *Columns* section.
 
-![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
+Example:
+<video autoplay loop muted playsinline>
+  <source src="/img/content/report-manual-columns.mp4" type="video/mp4">
+</video>
 
+<!---
+![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
+--->
 
 #### Row Settings
 **Skip rows from top**<br>
@@ -140,7 +142,6 @@ Use this setting for ABAP reports, that return two or more "physical" rows to di
 Example: Report RIEQUI20 
 
 ![Report_new_rows_per_data_row](/img/content/Report_new_rows_per_data_row.png){:class="img-responsive"}
-
 
 **Report width**<br>
 Use this setting in combination with **Report rows per data row**. Defines the length of each physical row.
