@@ -39,4 +39,4 @@ The Report component requires installation of the custom function module `Z_XTRA
 
 #### Related Links
 - [Regular Expressions in the Microsoft Online Help](http://msdn.microsoft.com/en-us/library/az24scfc.aspx).
-- [Install Report Custom Fuction Module](../sap-customizing/install-report-custom-function-module).
+- [Install Report Custom Fuction Module](../sap-customizing#installation-with-an-sap-transport).
