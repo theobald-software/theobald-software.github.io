@@ -24,53 +24,59 @@ Formatieren Sie das Layout oder die Ausgabe des Reports so, dass der Report eine
 1. Suchen Sie in der Report Komponente den ABAP Report oder die Transaktion, die Sie extrahieren möchten, siehe [Einen Report oder eine Transaktion finden](#einen-report-oder-eine-transaktion-finden).
 2. Wählen Sie eine Variante aus oder geben Sie manuell Selektionen ein, siehe [Varianten und Selektionen](#varianten-und-selektionen).
 3. Finden Sie automatisch die Spalten des Reports. Spaltenname, Spaltenbreite und Offset von detektierten Spalten werden in dem Abschnitt *columns* aufgelistet, siehe [Spalten automatisch definieren](#spalten-automatisch-definieren).
-4. Falls Schritt 3 ein einzelnes Feld zurückgibt, können die Spalten des Reports nicht automatisch ermittelt werden. Definieren Sie die Spalten manuell, siehe [Define Columns automatically](#define-columns-manually).
+4. Falls Schritt 3 ein einzelnes Feld zurückgibt, können die Spalten des Reports nicht automatisch ermittelt werden. Definieren Sie die Spalten manuell, siehe [Spalten manuell definieren](#spalten-manuell-definieren).
 
 
 ### Einen Report oder eine Transaktion finden
-1. In the main window of the component click the **[Search]** button (magnifying glass symbol). The window “Report Lookup” opens.
-2. In the field **Report Name** (1) enter the name of a report using wildcards (*) if needed. Alternatively you can search for SAP Transaction Codes by selecting TCODE.
+1. Clicken Sie auf den **[Suchen]** Button (Vergrößerungsglas) im Hauptfenster der Report Komponente. Das Fenster “Report Lookup” öffnet sich.
+2. Geben Sie im Feld **Report Name** (1) den Namen des Reports ein, den Sie suchen. Die Verwendung von Wildcards (*) wird unterstützt. 
+Alternativ können Sie nach SAP Transaktion Codes suchen, indem Sie die Checkbox TCODE aktivieren.
 ![Look-Up-Report](/img/content/Look-Up-Report.png){:class="img-responsive"}
-3. Click **[Search]** (magnifying glass symbol) and select the report of your choice from the displayed list (3).
-4. Click **[OK]** (4) to confirm.
+3. Klicken Sie auf **[Suchen]** (2) und wählen Sie den Report Ihrer Wahl aus der angezeigten Liste aus (3).
+4. Klicken Sie auf **[OK]** (4), um die Auswahl zu Bestätigen.
 
 
 ### Varianten und Selektionen
 
-Most reports allow entering selections before report execution. Selections limit the result set of the report so as to extract only records that match the selection. 
+Die meisten Reports erlauben die Eingabe von Selektionen vor Ausführung der Reports.
+Selektionen limitieren die Ausgabe des Reports so, dass nur Daten die der Selektion entsprechen extrahiert werden.
 
-A selection variant can be created in SAP at the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. 
-This minimizes the need to enter selections each time you run a report. 
+Eine Variante mit Selektionen kann in SAP im Eingabebildschirm eines ABAP Reports erstellt werden.
+Der Zweck einer Variante ist es, Selektionen in Ihrem Eingabebildschirm zu speichern.
+Das minimiert die Eingabe von Selektionen, wenn Sie Reports ausführen.
 
 {: .box-note }
-**Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
+**Hinweis:** Manuelle Selektionen und Varianten können kombiniert werden. Manuelle Selektionen überschreiben Selektionen in Varianten.
 
 ![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
-#### Choose a Variant
-Choose a variant from the drop-down-list *Variant* (1). If you create a new variant in SAP after the report extraction was created, click the **[Refresh]** button next to the drop-down list to access the new variant.
+#### Eine Variante wählen
+Wählen Sie eine Variante aus der Dropdown-Liste *Variant* (1).
+Wenn Sie eine neue Variante in SAP erstellen nachdem die Report Extraktion in XU erstellt wurde, klicken Sie auf den **[Refresh]** Button neben der Dropdown-Liste, um die neue Variante abzurufen.
 
 {: .box-note }
-**Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. To see the definition of a variant, take a look at the report's variant in SAP.
+**Hinweis:** Die Selektionen der Variante werden **nicht** im Abschnitt *Selection Screen* angezeigt. 
+Um die Definition einer Variante einzusehen, öffnen Sie die Variante in SAP.
 
-#### Edit Selections
+#### Selektionen bearbeiten
 
-This section corresponds to the report's input screen in SAP. Some selection fields only have a technical name and no description. 
-To understand which field corresponds to a field in SAP, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. 
-This displays the technical name of a selection field.
+Dieser Abschnitt bezieht sich auf den Eingabebildschirm von Reports in SAP.
+Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibungen.
+Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Eingabebildschirm in SAP.
+Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
 
-1. Click the **[Edit]** button next to the selection you want to edit. The window "Edit Selection" opens.
+1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]**. Das Fenster "Edit Selection" öffnet sich.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
-2. Choose if the selection is to be included or excluded (3) from the extracted data.
-3. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down list (4). 
-4. Enter the selection in the respective *Low* and *High* fields. The *High* field is active for input when the *between* or *not between* operator was selected.
-5. Optional: click **[Add Selection]** (5) to conditions.
-6. Click **[OK]** (6) to confirm the selections.
+2. Wählen Sie, ob die Selektion in der Extraktion inkludiert oder exkludiert werden soll (3).
+3. Wählen Sie einen Operator (*Equal*, *GreaterThan*, etc.) von der Dropdown-Liste *Option* (4). 
+4. Geben Sie die Selektion in dem *Low* und *High* Feldern ein. Das *High* Feld ist für eine Eingabe aktiv, wenn *between* oder *not between* als Operator ausgewählt wurde.
+5. Optional: Klicken Sie auf **[Add Selection]** (5), um wietere Bedingungen hinzuzufügen.
+6. Klicken Sie auf **[OK]** (6), um die Selektion zu bestätigen.
 
 {: .box-note }
-**Note:** Use the SAP database format when entering selections. Enter leading zeros for document numbers and enter date fields in the format yyyymmdd.
+**Hinweis:** Verwenden Sie das Format der SAP Datenbank wenn Sie Selektionen eingeben. Geben Sie führende Nullen für Dokumentnummern ein und geben Sie Daten im Format yyyymmdd an.
 	
 {: .box-tip }
-**Tip:** If you use multiple selection parameters, create a variant in SAP. Use the variant instead of entering selections.
+**Tipp:** Wenn Sie mehrere Selektionsparameter verwenden, erstellen Sie eine Variante in SAP, um die Parameter nicht mehrmals manuell eingeben zu müssen. 
 
 
 ### Define Report Columns
@@ -102,7 +108,7 @@ By clicking **[Automatically detect columns]** the report is executed based on t
 You can use this setting when report columns can be detected automatically, see *Automatically Detect Columns*. If *Dynamic column width and offset* is active, the column length and offset is adjusted dynamically at report runtime. This can be required for reports that have varying column widths depending on the report's selection criteria.
 
 
-### Define Columns manually
+### Spalten manuell definieren
 When automatic column detection is not possible, the report's column names, widths and offsets must be set manually.
 
 Report columns can be manually defined as follows:
