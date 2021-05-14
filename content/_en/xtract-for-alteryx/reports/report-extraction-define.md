@@ -22,7 +22,7 @@ Format the report layout/output in a way that it returns a table-like structure.
 1. In the Report component, look up the ABAP report or transaction you want to extract, see [Look Up a Report or Transaction](#look-up-a-report-or-transaction).
 2. Select a variant or manually enter selections in the Selection Screen, see [Variants and Selections](#variants-and-selections).
 3. Detect the report columns automatically. If the columns are detected, column name, width and offset are listed in the columns section, see [Define Columns automatically](#define-columns-automatically).
-4. If step 3 returns a single field, the report columns can not be detected automatically. Set the report columns manually, see [Define Columns automatically](#define-columns-manually).
+4. If step 3 returns a single field, the report columns can not be detected automatically. Set the report columns manually, see [Define Columns manually](#define-columns-manually).
 
 
 ### Look Up a Report or Transaction
@@ -118,30 +118,7 @@ Report columns can be manually defined as follows:
 {: .box-note }
 **Note:** Once a column is set and highlighted with a green background, its width and offset can't be changed via the graphics editor. Change it using the *Columns* section.
 
-Example:
-<!---
-<video autoplay loop muted playsinline id="video" onended="myFunction()">
-  <source src="/img/content/report-manual-columns.mp4" type="video/mp4">
-</video>
-
-
-
-<script type='text/javascript'>
-function myFunction(){
-var myVideo = document.getElementById('video');
-if (typeof myVideo.loop == 'boolean') { // loop supported
-    myVideo.loop = true;
-} else { // loop property not supported
-    myVideo.on('ended', function () {
-    this.currentTime = 0;
-    this.play();
-    }, false);
-}
-myVideo.play();
-}
-</script>
---->
-
+Example:<br>
 ![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
 
 
