@@ -1,7 +1,7 @@
 ---
 ref: xi-report-02
 layout: page
-title: Define Report
+title: Defining a Report Extraction
 description: Define Report
 product: xtract-is
 parent: report

@@ -2,8 +2,7 @@ Click the *Settings* link to open the settings dialog.
 
 ![XIS_BWCube_Settings](/img/content/XIS_BWCube_Settings.png){:class="img-responsive" }
 
-***String Conversion***
-
+### String Conversion
 **Automatic String Conversion**<br>
 All strings are converted into VarChar strings if the source system is non-Unicode, and all strings are converted into NVarChar if the source system is Unicode.
 
@@ -14,8 +13,7 @@ All strings are converted to VarChar regardless if the source system is Unicode 
 All strings are converted to NVarChar regardless if the source system is Unicode or not.
 
 
-***Misc***
-
+### Misc
 **Do not tread 'Axis has no rows' as Error**<br>
 Defines whether an error message is given when there is no data to be selected.
 
@@ -27,9 +25,11 @@ Defines that the valuie of the key data will be extracted as defined in the quer
 Debug Details
 Creates an detailed output of the single steps in the SSIS-protocol.
 
+**Debug Details**<br>
+
+
 **Measure Unit in Resultset**<br>
 Displays the units of the key figures.
-
 
 **Package Size**<br>
 Setting the packkage size to a value larger than zero cause that the query result will be splitted into packages with the defined size.
@@ -44,8 +44,7 @@ Be sure to select the appropriate dimension for automatic slicing. In some cases
 This is for BWCube extractions that were created with  Xtract IS version 2.5.17 or smaller. If you need to refresh the BW Cube's metadata please check this flag first. This is necessary as the metadata retrieval has changed after 2.5.17 which does especially affect BEx Queries which contain two structures.
 
 
-***Extraction Type***
-
+### Extraction Type
 **Regular**<br>
 extracts the data using the MDX interface.
 

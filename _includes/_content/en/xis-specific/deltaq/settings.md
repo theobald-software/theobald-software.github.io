@@ -19,7 +19,7 @@ All strings are converted to NVarChar regardless if the source system is Unicode
 The raw data packages can be send by SAP by a *tRFC* call or a Data-*IDoc*. Normally the tRFC is optimal for the default setting. 
 If it is necessary, e.g. to examine the raw data packages for debugging reasons, you can change the transfer mode to IDoc. Then you can examine the data packages in the transaction WE02 (IDoc-Monitoring).
 
-### Hierarchie Settings
+### Hierarchy Settings
 
 **Language**<br>
 Defines the Language, if a Hierarchy is extracted.

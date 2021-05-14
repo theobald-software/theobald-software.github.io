@@ -1,7 +1,7 @@
 ---
 ref: xi-hierarchy-01
 layout: page
-title: Hierarchy Lookup
+title: Defining a BW Hierarchy Extraction
 description: Hierarchy Lookup
 product: xtract-is
 parent: hierarchy

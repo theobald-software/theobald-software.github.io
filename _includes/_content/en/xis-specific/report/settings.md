@@ -2,6 +2,7 @@ Click the *Settings* link to open the settings dialog.
 
 ![Report-Preferences](/img/content/Report-Preferences.png){:class="img-responsive" }
 
+### String Conversion
 **Automatic String Conversion**<br>
 All strings are converted into VarChar strings if the source system is non-Unicode, and all strings are converted into NVarChar if the source system is Unicode.
 
@@ -11,6 +12,7 @@ All strings are converted to VarChar regardless of whether the source system is 
 **Convert Strings to NVarChar**<br>
 All strings are converted to NVarChar regardless of whether the source system is Unicode or not.
 
+### Batch Processing
 **Use Batch**<br>
 The report is executed in batch mode (choose this option for reports that have ALV output).
 
@@ -23,6 +25,7 @@ Name of the background job.
 **Spool Destination**<br>
 Name of the spool destination (printer).
 
+### Misc.
 **Custom Function**<br>
 The function module name installed in SAP.
 
