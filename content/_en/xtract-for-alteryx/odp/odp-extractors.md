@@ -1,7 +1,7 @@
 ---
 ref: xfa-odp-extractor
 layout: page
-title: Extractors and DataSources
+title: Defining a ODP Extraction
 description: Extractors and DataSources
 product: xtract-for-alteryx
 parent: odp
