@@ -136,24 +136,23 @@ Beispiel:
 #### Einstellungen für Zeilen
 **Skip rows from top**<br>
 Geben Sie die Anzahl der Zeilen ein, die Sie zu Beginn des Reports überspringen möchten. 
-Einige Reports zeigen im 
-Enter the number of rows you want to skip at the beginning of the report.
-Some reports display meta information in the header section of the report, before the actual report body. 
-This setting allows skipping the meta information. 
+Einige Reports zeigen im Dateikopf Metainformationen an. Hiermit können Sie die Metainformationen überspringen.
 
 **Skip rows from bottom**<br>
-Similar to *skip rows from top*. Enter the number of rows you want to skip in the footer section of the report.
+Ähnlich wie *skip rows from top*. 
+Geben Sie die Anzahl der Zeilen an, die Sie zum Ende des Reports überspringen möchten.
 
 
 **Report rows per data row**<br>
-Use this setting for ABAP reports, that return two or more "physical" rows to display a single "semantic" data row. This concatenates the physical rows into a single data row. <br>
-Example: Report RIEQUI20 
+Verwenden Sie diese Einstellung für ABAP Reports, die zwei oder mehr "physische" Zeilen als einzelne "semantische" Datenzeile zurückgeben.
+Hiermit werden physische Zeilen zu einzelnen Datenzeilen konvertiert. <br>
+Beispiel: Report RIEQUI20 
 
 ![Report_new_rows_per_data_row](/img/content/Report_new_rows_per_data_row.png){:class="img-responsive"}
 
 **Report width**<br>
-Use this setting in combination with **Report rows per data row**. Defines the length of each physical row.
-
+Verwenden Sie diese Einstellung in Kombination mit **Report rows per data row**. 
+Hier definieren Sie die Länge jeder physischen Zeile.
 
 #### Weiterführende Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
