@@ -69,7 +69,7 @@ Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird d
 2. Wählen Sie, ob die Selektion in der Extraktion inkludiert oder exkludiert werden soll (3).
 3. Wählen Sie einen Operator (*Equal*, *GreaterThan*, etc.) von der Dropdown-Liste *Option* (4). 
 4. Geben Sie die Selektion in dem *Low* und *High* Feldern ein. Das *High* Feld ist für eine Eingabe aktiv, wenn *between* oder *not between* als Operator ausgewählt wurde.
-5. Optional: Klicken Sie auf **[Add Selection]** (5), um wietere Bedingungen hinzuzufügen.
+5. Optional: Klicken Sie auf **[Add Selection]** (5), um weitere Bedingungen hinzuzufügen.
 6. Klicken Sie auf **[OK]** (6), um die Selektion zu bestätigen.
 
 {: .box-note }
@@ -79,66 +79,67 @@ Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird d
 **Tipp:** Wenn Sie mehrere Selektionsparameter verwenden, erstellen Sie eine Variante in SAP, um die Parameter nicht mehrmals manuell eingeben zu müssen. 
 
 
-### Define Report Columns
-A report column is defined by its name, offset and length. Per default, all columns are of data type *string*. To identify a report's columns, the report needs to be executed. Columns can then be identified based on the output.
+### Spalten definieren
+Die Spalten eines Reports werden definiert durch ihre Namen, ihren Offset und ihrer Länge. 
+Standardmäßig haben alle Spalten den Datentyp *string*.
+Um die Spalten eines Reports zu ermitteln, muss der Report ausgeführt werden. Die Spalten werden der Ausgabe entsprechend eingeteilt.
+
     
 {: .box-tip }
-**Tip:**
-At this stage, use a selection or variant that returns only a few records. This can be adapted later on.
+**Tipp:** Wir empfehlen für die Spalteneinteilung eine Selektion oder Variante zu verwenden, die nur wenige Daten zurückgeben. 
 
-
-Some Classical ABAP reports are developed in a way so that output columns are delimited by the pipe symbol '\|'. In this case the Report component can automatically identify the columns. Automatic column detection also works for most ALV reports. <br>
-Example:
+Einige klassische ABAP Reports werden so erstellt, dass die Spalten durch das Trennzeichen '\|' separiert sind.
+In diesem Fall kann die Report Komponente die Spalten automatisch definieren.
+Die automatische Spalteneinteilung funktioniert auch für die meisten ALV Reports.<br>
+Beispiel:
 ![Report-delimiters](/img/content/Report_new_delimiters.png){:class="img-responsive"}
 
-
-For reports where the output is not separated by the pipe symbol, the columns must be identified manually. <br>
-Example:
+Bei Reports, die das Trennzeichen '\|' nicht verwenden, muss eine manuelle Spalteneinteilung durchgeführt werden.<br>
+Beispiel:
 ![Report-no-delimiters](/img/content/Report_new_no_delimiters.png){:class="img-responsive"}
 
 
 ### Spalten automatisch definieren
 **Automatically detect columns** <br>
-By clicking **[Automatically detect columns]** the report is executed based on the selected variant or selections. Column name, width and offset are displayed in the *Columns* section if they can be identified automatically.
+Indem Sie auf **[Automatically detect columns]** klicken, wird der Report basierend auf der ausgewählten Variante oder Selektion ausgeführt.
+Wenn die Spalten automatisch detektiert werden können, werden Spaltenname, Spaltenbreite und Offset im Abschnitt *Columns* angezeigt.
 
 ![Report-automatic-columns](/img/content/Report_new_automatic_columns.png){:class="img-responsive"}
 
 
 **Dynamic column width and offset**<br>
-You can use this setting when report columns can be detected automatically, see *Automatically Detect Columns*. If *Dynamic column width and offset* is active, the column length and offset is adjusted dynamically at report runtime. This can be required for reports that have varying column widths depending on the report's selection criteria.
-
+Sie können diese Einstellung verwenden, wenn die Spalteneinteilung automatisch durchgeführt wird, siehe *Automatically Detect Columns*.
+Wenn *Dynamic column width and offset* aktiv ist, können die Spaltenbreite und der Offset der Spalten zur Laufzeit dynamisch angepasst werden.
 
 ### Spalten manuell definieren
-When automatic column detection is not possible, the report's column names, widths and offsets must be set manually.
+Wenn eine automatische SPalteneinteilung nicht möglich ist, müssen Spaltenname, Spaltenbreite und Offset manuell defineirt werden.
 
-Report columns can be manually defined as follows:
+Man definiert die Spalten eines Reports wie folgt:
 
-1. Make sure no columns are defined yet. Go to the *Columns* section and delete all columns by clicking on the *trash can* icon.
+1. Stellen Sie sicher, dass noch keine Spalten definiert sind. Gehen Sie in den Abschnitt *Columns* und löschen Sie alle Spalten, indem Sie auf das Papierkorb-Symbol klicken.
 ![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}
-2. Click **[Load Preview]**. The report is executed based on the selected report variant or selections. The report output is displayed in the *Load Preview* section.
-3. Press and hold down the left mouse button in the *Load Preview* section.  
-4. Move the mouse pointer to the right while still holding down the left mouse button.
-5. Let go of the mouse button. The report column is highlighted with a green background. An entry is added to the *Columns* section. 
-6. To change the column name, offset and width, click in the respective fields in the *Columns* section and enter a new value.
-7. Repeat steps 3 to 6 until all columns are defined.
+2. Klicken Sie auf **[Load Preview]**. Der Report wird basierend auf der ausgewählten Variante oder Selektion ausgeführt. Die Ausgabe des Reports wird im Abschnitt *Load Preview* angezeigt.
+3. Drücken Sie am Beginn der Spalte im *Load Preview* Abschnitt die linke Maustaste und lassen Sie die Taste gedrückt.  
+4. Bewegen Sie den Mauszeiger mit der linken Maustaste nachwievor gedrückt nach rechts, um die Breite der Spalte auszuwählen.
+5. Lassen Sie die Maustaste gehen. Die Spalte ist mit einem grünen Hintergrund markiert. Im Abschnitt *Columns* wird ein neuer Eintrag hinzugefügt. 
+6. Um Spaltenname, Spaltenbreite und Offset zu bearbeiten, klicken Sie auf die jeweiligen Felder im Abschnitt *Columns* und geben Sie dort neue Werte ein.
+7. Wiederholen Sie die Schritte 3 bis 6, bis alle Spalten definiert sind.
 
 
 {: .box-note }
-**Note:** Once a column is set and highlighted with a green background, its width and offset can't be changed via the graphics editor. Change it using the *Columns* section.
+**Hinweis:** Sobald eine Spalte definiert und grün hinterlegt wurde, können Spaltenbreite und Offset nicht über den Graphikeditor geändert werden. Bearbeiten Sie die Spalten im Abschnitt *Columns*.
 
-Example:
-<video autoplay loop muted playsinline>
-  <source src="/img/content/report-manual-columns.mp4" type="video/mp4">
-</video>
-
-<!---
+Beispiel:
 ![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
---->
 
-#### Row Settings
+
+#### Einstellungen für Zeilen
 **Skip rows from top**<br>
+Geben Sie die Anzahl der Zeilen ein, die Sie zu Beginn des Reports überspringen möchten. 
+Einige Reports zeigen im 
 Enter the number of rows you want to skip at the beginning of the report.
-Some reports display meta information in the header section of the report, before the actual report body. This setting allows skipping the meta information. 
+Some reports display meta information in the header section of the report, before the actual report body. 
+This setting allows skipping the meta information. 
 
 **Skip rows from bottom**<br>
 Similar to *skip rows from top*. Enter the number of rows you want to skip in the footer section of the report.
@@ -154,7 +155,7 @@ Example: Report RIEQUI20
 Use this setting in combination with **Report rows per data row**. Defines the length of each physical row.
 
 
-#### Related Links
+#### Weiterführende Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
 
 
