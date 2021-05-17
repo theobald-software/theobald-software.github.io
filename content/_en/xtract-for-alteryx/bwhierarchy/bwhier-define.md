@@ -2,7 +2,7 @@
 ref: xfa-bwhier-define
 layout: page
 title: Defining BW Hierarchy
-description: Defining BW Hierarchy
+description: Defining a BW Hierarchy Extraction
 product: xtract-for-alteryx
 parent: bwhierarchy
 permalink: /:collection/:path

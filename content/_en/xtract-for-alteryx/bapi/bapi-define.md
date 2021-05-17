@@ -1,7 +1,7 @@
 ---
 ref: xfa-bapi-define
 layout: page
-title: Defining BAPIs
+title: Defining a BAPI Extraction
 description: Define BAPI
 product: xtract-for-alteryx
 parent: bapi
