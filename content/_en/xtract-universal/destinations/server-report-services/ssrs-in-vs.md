@@ -45,7 +45,7 @@ If *Xtract Universal* is not available in the dropdown list (2) even though the 
 
 The following steps guide you through the creation of a Report in Visual Studio using an Xtract Universal data source: 
 
-1. [Add an SSRS extraction as a data source in Visual Studio](./ssrs-in-vs/#add-an-extraction-as-a-data-source-in-visual-studio).
+1. [Add an SSRS extraction as a data source in Visual Studio](./ssrs-in-vs#add-an-extraction-as-a-data-source-in-visual-studio).
 2. Right-click on the *Reports* folder in the *Solution Explorer* and select **Add New Report**. The "Report Wizard" opens.
 3. In the wizard, select a data source and click **[Next]**.
 4. Click **[Query Builder...]**. The window "Query Designer" opens.

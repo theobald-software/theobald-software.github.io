@@ -16,4 +16,4 @@ lang: de_DE
 
 Für das Anlegen einer SSRS Zielumgebung müssen keine weiteren Einstellungen vorgenommen werden.
 
-![ssrs-create-destination](/img/content/ssrs-create-destination.PNG){:class="img-responsive"}
+![ssrs-create-destination](/img/content/ssrs-create-destination.png){:class="img-responsive"}

@@ -21,7 +21,7 @@ The following settings can be defined for the destination:
 
 ### Destination Settings
 
-![ssrs-configuration](/img/content/ssrs-configuration.PNG){:class="img-responsive"}
+![ssrs-configuration](/img/content/ssrs-configuration.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/destinations/general/column-name-style.md %}
 
