@@ -53,8 +53,8 @@ Für fortgeschrittene Szenarien oder Umgebungen, die keine Kommandozeilen-Tools 
 ### Ausführung paralleler Extraktionen
 Die Anzahl der parallel ausführbaren Extraktionen ist abhängig von den eingesetzten Hardware-Ressourcen des Windows-Servers.
 
-Jede gestartete Extraktion wird im Betriebssystem in einen separaten Prozess ausgeführt. 
-Entscheidend sind Zuverlässigkeit und Durchsatz der Netzwerkverbindung, verfügbarer Arbeitsspeicher, und Festplattendurchsatz (für Logging und Caching).
+Jede gestartete Extraktion wird im Betriebssystem in einen separaten Prozess ausgeführt. <br>
+Entscheidend sind Zuverlässigkeit und Durchsatz der Netzwerkverbindung, verfügbarer Arbeitsspeicher, und Festplattendurchsatz (für Logging und Caching).<br>
 Darüber hinaus wird der der mögliche Parallelisierungsgrad wesentlich durch die Performance der SAP-Quellsysteme und der Zielumgebungen bestimmt.
 
 

@@ -19,5 +19,5 @@ Die benötigten Visual C++ Runtime und die Tableau Export Libraries werden autom
 {: .box-note }
 **Hinweis:** Beim Setup muss die Checkbox "Tableau Extract API" angehakt werden.
 
-![XU_Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
+![XU_Setup](/img/content/xu/XU_Setup_4.png){:class="img-responsive"}
 

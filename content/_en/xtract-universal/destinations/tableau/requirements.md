@@ -20,4 +20,4 @@ The required Visual C++ 2013 / 2015 Runtime and the Tableau Export Library will 
 **Note:** Make sure to check the checkbox "Tableau Extract API" during setup.
 
 
-![XU_Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
+![XU_Setup](/img/content/xu/XU_Setup_4.png){:class="img-responsive"}

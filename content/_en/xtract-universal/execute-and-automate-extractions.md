@@ -54,8 +54,8 @@ For advanced scenarios or environments that do not support command line programs
 ### Run parallel Extractions
 The amount of possible parallel extractions depends on the hardware resources of the Windows server. 
 
-Every triggered extraction is executed in a separate process of the operating system.
-Reliability and throughput of the network connection, available RAM and disk throughput (for logging and caching) are all crucial factors for the parallelization.
+Every triggered extraction is executed in a separate process of the operating system.<br>
+Reliability and throughput of the network connection, available RAM and disk throughput (for logging and caching) are all crucial factors for the parallelization.<br>
 Other factors are the performance of the SAP source system the destination.
 
 

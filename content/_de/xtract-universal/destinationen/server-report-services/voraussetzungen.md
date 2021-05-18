@@ -14,7 +14,7 @@ Um sie SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
 
 - Visual Studio 2017 oder höher
 - das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin (Version 2.6.11 oder höher) für Visual Studio.
-- SQL Server Reporting Services (Report Server von Januar 2020 oder später)
+- Power BI Report Server (Januar 2020 oder später)
 - Xtract Universal (Version 4.29 oder höher)
 
 {: .box-note }
@@ -28,7 +28,7 @@ Nach der Installation, schließen Sie Visual Studio.
 
 Microsoft SQL Server Reporting Services unterstützt eine große Auswahl von Datenquellen out-of-the-box.
 Um Xtract Universal als Datenquelle hinzuzufügen, installieren Sie die [Xtract Universal Data Extension](./voraussetzungen#installation-using-the-xtract-universal-data-extension) für Visual Studio und den Report Server.
-Die Erweiterung wird bei der Installation des [Xtract Universal Setup](../../introduction/installation-and-update) automatisch installiert.
+Die Erweiterung wird bei der Installation des [Xtract Universal Setup](../../einfuehrung/installation-und-update) automatisch installiert.
 
 Um die Installation zu beenden, schließen Sie Visual Studio.
 

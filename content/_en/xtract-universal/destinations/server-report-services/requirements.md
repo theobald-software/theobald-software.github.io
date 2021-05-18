@@ -14,7 +14,7 @@ To use the SSRS destination, you need the following components:
 
 - Visual Studio 2017 or higher
 - the [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) plugin (version 2.6.11 or higher) for Visual Studio.
-- SQL Server Reporting Services (Report Server January 2020 or later)
+- Power BI Report Server (January 2020 or later)
 - Xtract Universal (version 4.29 or higher)
 
 {: .box-note }
