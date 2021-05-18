@@ -21,8 +21,8 @@ This section contains details about running extractions automatically and manual
 
 Extractions are triggered by an HTTP request and executed on the [Xtract Universal server](./server#run-extraction-on-the-server).
 
-The configuration of [source](./introduction/sap-connection#creating-an-sap-connection), [destination](./xu-destinations/managing-destinations) and [extraction](./getting-started/define-a-table-extraction#creating-an-extraction) defines how the data transfer is performed. 
-This configuration can contain dynamic elements, like [runtime parameters](../execute-and-automate-extractions/extraction-parameters) and [script expressions](../advanced-techniques/script-expressions#using-script-expressions-as-selection-parameters-for-extractions).
+The configuration of [source](./introduction/sap-connection#creating-an-sap-connection), [destination](./destinations/managing-destinations) and [extraction](./getting-started/define-a-table-extraction#creating-an-extraction) defines how the data transfer is performed. <br>
+This configuration can contain dynamic elements, like [runtime parameters](./execute-and-automate-extractions/extraction-parameters) and [script expressions](./advanced-techniques/script-expressions#using-script-expressions-as-selection-parameters-for-extractions).
 
 Depending on the destination, the execution of an extraction can be triggered either interactively or unattended.
 

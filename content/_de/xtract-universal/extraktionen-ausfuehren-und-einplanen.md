@@ -22,7 +22,7 @@ Extraktionen können über folgende Optionen aufgerufen werden:
 
 Extraktionen werden durch eine HTTP-Anfrage ausgelöst und auf dem [Xtract Universal Server](./server#extraktion-auf-dem-server-ausführen) ausgeführt.
 
-Die Konfiguration von [Quellsystem](./einfuehrung/sap-verbindungen-anlegen#sap-verbindung-erstellen), [Zielumgebung](./destinationen/ziele-verwalten) und [Extraktion](./erste-schritte/eine-neue-extraktion-anlegen#extraktion-anlegen) definiert, wie der Datentransfer durchgeführt wird. 
+Die Konfiguration von [Quellsystem](./einfuehrung/sap-verbindungen-anlegen#sap-verbindung-erstellen), [Zielumgebung](./destinationen/ziele-verwalten) und [Extraktion](./erste-schritte/eine-neue-extraktion-anlegen#extraktion-anlegen) definiert, wie der Datentransfer durchgeführt wird. <br>
 Diese Konfiguration kann dynamische Elemente enthalten, wie [Laufzeitparameter](./extraktionen-ausfuehren-und-einplanen/extraktionsparameter) und [Skript-Ausdrücke](./fortgeschrittene-techniken/script-ausdruecke#skript-ausdrücke-als-auswahlparameter-für-extraktionen-verwenden).
 
 Abhängig von der Zielumgebung kann die Ausführung einer Extraktion entweder interaktiv oder unbeaufsichtigt ausgelöst werden.
