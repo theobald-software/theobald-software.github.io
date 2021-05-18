@@ -1,7 +1,7 @@
 ---
 ref: xfa-odp-settings
 layout: page
-title: Xtract ODP Functions Overview
+title: Defining an ODP Extraction
 description: ODP Settings
 product: xtract-for-alteryx
 parent: odp

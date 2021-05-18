@@ -1,7 +1,7 @@
 ---
 ref: xis-odp-introduction
 layout: page
-title: Xtract ODP Functions Overview
+title: Define an ODP Extraction
 description: ODP Introduction
 product: xtract-is
 parent: odp
