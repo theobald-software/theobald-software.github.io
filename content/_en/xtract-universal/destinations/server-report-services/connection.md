@@ -15,4 +15,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=alteryx-connection-en
 ### Destination Details
 To use the SSRS destination, no further settings have to be made.
 
-![ssrs-create-destination](/img/content/ssrs-create-destination.PNG){:class="img-responsive"}
+![ssrs-create-destination](/img/content/ssrs-create-destination.png){:class="img-responsive"}

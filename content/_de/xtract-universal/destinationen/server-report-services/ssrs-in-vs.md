@@ -33,13 +33,13 @@ Die folgenden Schritte beschreiben, wie man eine Xtract Universal Datenquelle in
 Falls *Xtract Universal* nicht verfügbar oder in Großbuchstaben ist, prüfen Sie ob die aktuelle Xtract Universal Version und das aktuelle *Microsoft Reporting Services Projects* Plugin installiert sind.
 5. Geben Sie einen *connection string* (3) zum Xtract Universal Web-Server im Format `Url=http://[host]:[port]/` ein, z.B. `Url=http://localhost:8065/`.
 ![Shared-Data-Source-Properties](/img/content/xu/ssrs/Shared-Data-Source-Properties.png){:class="img-responsive"}
-6. Optional (nur nötig, wenn die [XU-Serversicherheit](../../security/server-security) konfiguriert wurde oder an das SAP-Quellsystem entsprechende Credentials übergeben werden müssen): Wechseln Sie in den *Credentials* Tab (4) und geben Sie Ihren [Benutzernamen und Passwort](../../sicherheit/benutzerverwaltung) für Xtract Universal ein.
+6. Optional (nur nötig, wenn die [XU-Serversicherheit](../../sicherheit/serversicherheit) konfiguriert wurde oder an das SAP-Quellsystem entsprechende Credentials übergeben werden müssen): Wechseln Sie in den *Credentials* Tab (4) und geben Sie Ihren [Benutzernamen und Passwort](../../sicherheit/benutzerverwaltung) für Xtract Universal ein.
 7. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 
 Wenn *Xtract Universal* trotz aktuellem *Microsoft Reporting Services Projects* Plugin und aktuellem Xtract Universal nicht in der Drop-Down-Liste (2) verfügbar ist, schicken Sie Log-Datei in `C:\Program Files\XtractUniversal\ssrs\log.txt` an den [Theobald Support](mailto:support@theobald-software.com).
 
  {: .box-note }
-**Hinweis:** Abhängig von den Einstellungen des XU [Web-Servers](../../server_einstellungen#web-server), verwenden Sie entweder `http://` oder `https://` im *connection string*.
+**Hinweis:** Abhängig von den Einstellungen des XU [Web-Servers](../../serversicherheit#voraussetzungen-aktivierung-der-tls-verschlüsselung), verwenden Sie entweder `http://` oder `https://` im *connection string*.
 
 
 ### Einen Report mit einer Xtract Universal Datenquelle erstellen
