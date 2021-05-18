@@ -17,6 +17,9 @@ To use the SSRS destination, you need the following components:
 - SQL Server Reporting Services (Report Server January 2020 or later)
 - Xtract Universal (version 4.29 or higher)
 
+{: .box-note }
+**Note:** The Power BI Report Builder is not supported.
+
 ### Installation
 
 To use the SSRS destination, install the [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)

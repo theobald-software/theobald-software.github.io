@@ -17,6 +17,10 @@ Um sie SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
 - SQL Server Reporting Services (Report Server von Januar 2020 oder später)
 - Xtract Universal (Version 4.29 oder höher)
 
+{: .box-note }
+**Hinweis:** Der Power BI Report Builder wird nicht unterstützt.
+
+
 ### Installation
 
 Um die SSRS-Destination zu nutzen, installieren Sie das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin in Visual Studio.
