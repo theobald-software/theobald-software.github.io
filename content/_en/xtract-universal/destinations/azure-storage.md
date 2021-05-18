@@ -16,3 +16,6 @@ The following section describes the loading of SAP data to a cloud based Azure S
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 
+*****
+#### Related Links:
+-[Youtube Tutorial: SAP data in Azure Storage via Xtract Universal](https://www.youtube.com/watch?v=Q9mF-vsFxnQ){:target="_blank"}

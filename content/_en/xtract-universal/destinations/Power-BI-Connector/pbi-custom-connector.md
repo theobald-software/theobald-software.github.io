@@ -54,5 +54,5 @@ This script modifies the registry at HKLM:\SOFTWARE\Policies\Microsoft\Power BI 
 ![powerbi-navigator](/img/content/XU_pbi_connector_navigator.png){:class="img-responsive"}
 
 ****
-### Related Links
+#### Related Links
 - [Youtube Tutorial: Use your SAP data in Microsoft Power BI with Xtract Universal](https://www.youtube.com/watch?v=al1FOtJjVIM){:target="_blank"}

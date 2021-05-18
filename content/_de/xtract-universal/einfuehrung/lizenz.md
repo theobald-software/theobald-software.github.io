@@ -44,5 +44,5 @@ Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [supp
 
 
 ****
-##### Weiterführende Links
+#### Weiterführende Links
 - [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/)
