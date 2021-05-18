@@ -10,7 +10,6 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=connection
 ---
-
 {% include _content/en/xu-specific/destinations/general/connection.md %}	
 
 ### Destination Details
@@ -22,11 +21,10 @@ Enter the directory on the Xtract Universal Server to store the generated Tablea
 {: .box-note }
 **Note:** Make sure that the directory exists.
 
-
 ### Tableau Server
-- **Upload to Tableau Server**
+- **Upload to Tableau Server**<br>
 Option to upload the extracted file (as a data source) to Tableau Server or Tableau Online.
-- **Delete local file after upload**
+- **Delete local file after upload**<br>
 Option to remove the local file after a successful upload.
 
 **Host**<br>

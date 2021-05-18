@@ -10,8 +10,6 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung
 ---
-
-
 {% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details

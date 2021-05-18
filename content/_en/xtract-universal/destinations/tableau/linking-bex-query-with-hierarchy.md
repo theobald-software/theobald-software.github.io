@@ -10,7 +10,6 @@ weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=linking-bex-query-with-hierarchy
 ---
-
 In this section we will extract a BEx query and a BW hierarchy and create a relationship to link both data sources.
 
 ### Step 1: Create an BEx query extraction. 
