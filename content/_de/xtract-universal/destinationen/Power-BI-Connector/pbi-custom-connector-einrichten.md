@@ -55,5 +55,5 @@ Dies stößt eine Extraktion in Xtract Universal an und die Daten werden in Powe
 ![powerbi-navigator](/img/content/XU_pbi_connector_navigator.png){:class="img-responsive"}
 
 ****
-### Weiterführende Links
+#### Weiterführende Links
 - [Youtube Tutorial: SAP Power BI Schnittstelle in Xtract Universal](https://www.youtube.com/watch?v=1jqw755yqP4){:target="_blank"}

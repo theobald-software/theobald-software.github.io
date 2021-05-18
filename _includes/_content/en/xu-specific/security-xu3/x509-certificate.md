@@ -32,5 +32,5 @@ The name of the currently saved certificate is displayed at the bottom of the wi
 3. Confirm with **[OK]**. The performed changes are activated by restarting the XU server.
 
 
-Related Links:
+#### Related Links:
 - [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file)
