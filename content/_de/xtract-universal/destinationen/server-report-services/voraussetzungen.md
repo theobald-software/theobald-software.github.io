@@ -41,7 +41,7 @@ Um die Xtract Universal Erweiterung auf mehreren Umgebungen zu installieren, ohn
 
 1. Stellen Sie sicher, dass das *Microsoft Reporting Services Projects* Plugin für Visual Studio bereits installiert und aktiviert ist. 
 2. Schließen Sie Visual Studio.
-3. [Installieren Sie Xtract Universal](../../introduction/installation-and-update) auf der Umgebung, auf der die Lizenz läuft.
+3. [Installieren Sie Xtract Universal](../../einfuehrung/installation-und-update) auf der Umgebung, auf der die Lizenz läuft.
 4. Nach der Installation, öffnen Sie das Verzeichnis von Xtract Universal, z.B. `C:\Program files\Xtract Universal\`.
 5. Kopieren Sie den Ordner `\ssrs` auf jede Umgebung, auf der Visual Studio verwendet wird um Reports zu erstellen oder auf denen der Report Server läuft.
 6. Führen Sie die *SSRSDataExtensionSetup.exe* als Administrator aus, um die Xtract Universal Erweiterung auf allen kompatiblen Versionen von Visual Studio und/oder dem Report Server zu installieren. 

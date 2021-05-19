@@ -39,7 +39,7 @@ Falls *Xtract Universal* nicht verfügbar oder in Großbuchstaben ist, prüfen S
 Wenn *Xtract Universal* trotz aktuellem *Microsoft Reporting Services Projects* Plugin und aktuellem Xtract Universal nicht in der Drop-Down-Liste (2) verfügbar ist, schicken Sie Log-Datei in `C:\Program Files\XtractUniversal\ssrs\log.txt` an den [Theobald Support](mailto:support@theobald-software.com).
 
  {: .box-note }
-**Hinweis:** Abhängig von den Einstellungen des XU [Web-Servers](../../serversicherheit#voraussetzungen-aktivierung-der-tls-verschlüsselung), verwenden Sie entweder `http://` oder `https://` im *connection string*.
+**Hinweis:** Abhängig von den Einstellungen des XU [Web-Servers](../../sicherheit/serversicherheit), verwenden Sie entweder `http://` oder `https://` im *connection string*.
 
 
 ### Einen Report mit einer Xtract Universal Datenquelle erstellen

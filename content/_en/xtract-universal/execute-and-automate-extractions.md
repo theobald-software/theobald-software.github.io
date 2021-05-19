@@ -11,7 +11,8 @@ weight: 15
 lang: en_GB
 progressstate: 5
 ---
-This section contains details about running extractions automatically and manually in [Xtract Universal Designer](./getting-started/run-an-extraction). Extractions can be called by the following options:
+This section contains details about running extractions automatically and manually in [Xtract Universal Designer](./getting-started/run-an-extraction). 
+Examples on how to call extractions:
 - [Commandline](./execute-and-automate-extractions/call-via-commandline)
 - [Webservice](./execute-and-automate-extractions/call-via-webservice) 
 - [Scheduler](./execute-and-automate-extractions/call-via-scheduler)
@@ -42,13 +43,10 @@ Or directly by the target environment:
 When an additional data storage system (database, cloud storage, flat files) is present, extractions are typically triggered as part of an ELT-process (Extract, Load, Transform), which is run unattended at regular intervals by a scheduler or other orchestration software.
 In these scenarios, execution of an extractions is typically triggered by running the [XU command line tool](./execute-and-automate-extractions/call-via-commandline) from the orchestration software. 
 
+For advanced scenarios or environments that do not support command line programs, the [HTTP Webservices](./execute-and-automate-extractions/call-via-webservice) for triggering execution and monitoring can also be used by other tools.
+
 {: .box-note }
 **Note:** Xtract Universal does not have its own scheduler. You can use third party schedulers. 
-
-{: .box-note }
-**Note:** Use the tool that communicates with the webservice interface (HTTP or HTTPS streams) in CSV or JSON format to schedule [pull destinations](./destinations#pull-and-push-destinations).
-
-For advanced scenarios or environments that do not support command line programs, the [HTTP Webservices](./execute-and-automate-extractions/call-via-webservice) for triggering execution and monitoring can also be used through other means.
 
 
 ### Run parallel Extractions

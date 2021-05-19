@@ -12,7 +12,7 @@ lang: de_DE
 progressstate: 5
 ---
 Dieser Abschnitt enthält Details zum automatischen und manuellen Ausführen von Extraktionen mit [Xtract Universal](./erste-schritte/eine-extraktion-ausfuehren). 
-Extraktionen können über folgende Optionen aufgerufen werden:
+Extraktionen können beispielsweise über folgende Optionen aufgerufen werden:
 - [Kommandozeile](./extraktionen-ausfuehren-und-einplanen/call-via-commandline)
 - [Webservice](./extraktionen-ausfuehren-und-einplanen/call-via-webservice) 
 - [Scheduler](./extraktionen-ausfuehren-und-einplanen/call-via-scheduler)
@@ -42,13 +42,11 @@ Oder direkt über die Zielumgebung:
 Wenn ein zusätzliches Datenspeichersystem (Datenbank, Cloud-Speicher, Flat-Files) vorhanden ist, werden Extraktionen typischerweise als Teil eines ELT-Prozesses (Extract, Load, Transform) ausgelöst.
 Dieser Prozess wird wiederum in regelmäßigen Abständen unbeaufsichtigt von einem Scheduler oder einer anderen Orchestrierungssoftware ausgeführt, die Extraktionen i.d.R. über das [XU-Kommandozeilen-Tool](./extraktionen-ausfuehren-und-einplanen/call-via-commandline) auslösen.
 
+Für fortgeschrittene Szenarien oder Umgebungen, die keine Kommandozeilen-Tools unterstützen, können die [HTTP-Webservices](./extraktionen-ausfuehren-und-einplanen/call-via-webservice) zum Auslösen und Überwachen einer Extraktion auch über andere Tools genutzt werden.
+
 {: .box-note }
 **Hinweis:** Xtract Universal verfügt nicht über einen eigenen Scheduler. Sie können Scheduler von Drittanbietern verwenden. 
 
-{: .box-note }
-**Hinweis:** Verwenden Sie das Tool, das mit der Webservice-Schnittstelle (HTTP- oder HTTPS-Streams) im CSV- oder JSON-Format kommuniziert, um [Pull-Destinationen](./destinationen#pull--und-push-destinationen) zu planen.
-
-Für fortgeschrittene Szenarien oder Umgebungen, die keine Kommandozeilen-Tools unterstützen, können die [HTTP-Webservices](./extraktionen-ausfuehren-und-einplanen/call-via-webservice) zum Auslösen und Überwachen einer Extraktion auch über andere Wege genutzt werden.
 
 ### Ausführung paralleler Extraktionen
 Die Anzahl der parallel ausführbaren Extraktionen ist abhängig von den eingesetzten Hardware-Ressourcen des Windows-Servers.
@@ -56,7 +54,6 @@ Die Anzahl der parallel ausführbaren Extraktionen ist abhängig von den eingese
 Jede gestartete Extraktion wird im Betriebssystem in einen separaten Prozess ausgeführt. <br>
 Entscheidend sind Zuverlässigkeit und Durchsatz der Netzwerkverbindung, verfügbarer Arbeitsspeicher, und Festplattendurchsatz (für Logging und Caching).<br>
 Darüber hinaus wird der der mögliche Parallelisierungsgrad wesentlich durch die Performance der SAP-Quellsysteme und der Zielumgebungen bestimmt.
-
 
 {: .box-note }
 **Hinweis:** Xtract Universal skaliert entsprechend der verfügbaren Hardware-Ressourcen der Laufzeitumgebung.

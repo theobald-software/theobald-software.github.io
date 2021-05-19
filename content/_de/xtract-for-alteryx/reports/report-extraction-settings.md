@@ -11,3 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-EN/default.aspx?pageid=report-extraction-settings
 ---
 {% include _content/de/abap_reports/report-extraktionseinstellungen.md %}
+
+#### Weiterführende Links
+- [Reguläre Ausdrücke in der Microsoft Online Help](http://msdn.microsoft.com/de-de/library/az24scfc.aspx)
+- [Installieren des Report Funktionsbausteins](../sap-customizing#installation-mit-einem-sap-transport)
