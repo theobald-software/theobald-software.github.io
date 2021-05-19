@@ -1,7 +1,7 @@
 ---
 ref: xiasa-odp-extractor
 layout: page
-title: Extractors
+title: Defining an ODP Extraction
 description: Extractors and Datasources
 product: xtract-is-for-azure
 parent: odp

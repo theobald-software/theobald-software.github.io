@@ -1,7 +1,7 @@
 ---
 ref: xia-q-delta-03
 layout: page
-title: Defining an extractor
+title: Defining a DeltaQ Extraction
 description: Defining an extractor
 product: xtract-is-for-azure
 parent: deltaq

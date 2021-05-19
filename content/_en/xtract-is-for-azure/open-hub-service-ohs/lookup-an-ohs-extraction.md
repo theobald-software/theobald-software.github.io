@@ -1,7 +1,7 @@
 ---
 ref: xia-open-hub-service-ohs-02
 layout: page
-title: Look Up an OHS Extraction
+title: Defining an OHS Extraction
 description: Look up an OHS Extraction
 product: xtract-is-for-azure
 parent: open-hub-service-ohs

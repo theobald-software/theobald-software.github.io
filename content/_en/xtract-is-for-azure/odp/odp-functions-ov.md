@@ -1,7 +1,7 @@
 ---
 ref: xiasa-odp-introduction
 layout: page
-title: Define an ODP Extraction
+title: Xtract ODP Functions Overview
 description: ODP Introduction
 product: xtract-is-for-azure
 parent: odp

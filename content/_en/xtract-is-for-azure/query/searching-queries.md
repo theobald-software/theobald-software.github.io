@@ -1,7 +1,7 @@
 ---
 ref: xia-query-01
 layout: page
-title: Searching Queries
+title: Defining a Query Extraction
 description: Searching Queries
 product: xtract-is-for-azure
 parent: query

@@ -1,7 +1,7 @@
 ---
 ref: xia-bw-cube-01
 layout: page
-title: Define a BW Cube extraction
+title: Defining a BW Cube Extraction
 description: Define a BW Cube extraction
 product: xtract-is-for-azure
 parent: bw-cube
