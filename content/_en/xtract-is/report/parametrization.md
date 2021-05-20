@@ -27,7 +27,7 @@ The following fields in the Report component allow entry of an SSIS variable (in
 |*Spool Destination / BatchJobDestination* | see [Settings](./settings)|
 |*BatchJobName*        |see [Settings](./settings)|
 |*BatchJobTimeout*     |see [Settings](./settings)|
-|*ReportName*        |         Makes no sense to parameterize the Report name, as the result structure is different between different reports.    |
+|*ReportName*        |         Should not be used as the result structure is different between different reports.    |
 
 
 

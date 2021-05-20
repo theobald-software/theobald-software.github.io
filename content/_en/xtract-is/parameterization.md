@@ -30,7 +30,6 @@ Depending on the Xtract IS component you can either use SSIS variables or proper
 | [BAPI](../bapi/parametrization)        |   x    |      | 
 | [BW Cube](../bw-cube/parametrization)     |   x    |      | 
 | [BW Hierarchy](../hierarchy/paramerization)|    x   |      |
-| [BW Loader](../bw-loader/parametrization)   |  x     |      |
 | [DeltaQ](../deltaq/parametrization)      | x      |  x    |
 | [ODP](../odp/odp-parametrization)         |   x    |   x   |
 | [OHS](../open-hub-service-ohs/parametrization)         |     x  |      |

@@ -13,3 +13,9 @@ lang: en_GB
 
 {% include _content/en/parametrization/parametrization-via-variables.md  %}
 
+
+{: .box-note }
+**Note:** Create SSIS variables of data type *String*.
+
+
+
