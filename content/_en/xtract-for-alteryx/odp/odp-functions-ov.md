@@ -15,6 +15,7 @@ The following section describes the settings of the Xtract ODP component that ca
 ![ODP Component](/img/content/xfa/xfa_odp_overview.png){:class="img-responsive"}
 
 {% include _content/en/odp/odp-settings-update_mode.md %} 
+{% include _content/en/odp/odp-hierarchy.md %} 
 {% include _content/en/odp/odp-settings-filtering.md %}
 {% include _content/en/odp/odp-settings-subscriptions.md %}
 

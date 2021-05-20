@@ -3,6 +3,7 @@ The settings can be changed in the window "Define data source for SAP ODP".
 ![ODP Component](/img/content/odp/odp_overview.png){:class="img-responsive"}
 
 {% include _content/en/odp/odp-settings-update_mode.md %} 
+{% include _content/en/odp/odp-hierarchy.md %} 
 {% include _content/en/odp/odp-settings-subscriptions.md %}
 {% include _content/en/odp/odp-settings-filtering.md %} 
 
