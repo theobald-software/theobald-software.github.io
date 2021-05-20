@@ -1,7 +1,7 @@
 ---
 ref: xu-sap-customizing-06
 layout: page
-title: Report-Funktionsbaustein installieren
+title: Funktionsbaustein für Reports
 description: Report-Funktionsbaustein installieren
 product: xtract-universal
 parent: sap-customizing

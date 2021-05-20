@@ -3,10 +3,10 @@ ref: xu-sap-customizing-06
 layout: page
 title: Custom function module for Report
 description: Custom function module for Report
-product: xtract-universal
+product: xtract-for-alteryx
 parent: sap-customizing
 permalink: /:collection/:path
-weight: 6
+weight: 2
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=SAPCustomizing-EN:install-report-custom-function-module
 ---

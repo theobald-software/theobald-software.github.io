@@ -5,6 +5,7 @@ title: SAP Customizing - Custom Function Module
 description: SAP Customizing
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
+childidentifier: sap-customizing
 permalink: /:collection/:path
 weight: 99
 lang: en_GB

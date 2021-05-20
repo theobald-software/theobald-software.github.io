@@ -3,7 +3,7 @@ ref: xu-sap-customizing-04
 layout: page
 title: Vorbereitung für OHS im BW
 description: Vorbereitung für OHS im BW
-product: xtract-universal
+product: xtract-for-alteryx
 parent: sap-customizing
 permalink: /:collection/:path
 weight: 4
