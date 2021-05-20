@@ -23,4 +23,4 @@ Die gewählten Segmente werden im Abschnitt *Fields* angezeigt.
 
 
 {: .box-note }
-**Hinweis:** Hierarchien können zur Laufzeit als [Laufzeitparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#extraction) übergeben werden.
+**Hinweis:** Hierarchien können zur Laufzeit als Laufzeitparameter übergeben werden.

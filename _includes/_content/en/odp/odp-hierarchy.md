@@ -23,4 +23,4 @@ The selected data is displayed in the *Fields* section.
 
 
 {: .box-note }
-**Note:** Hierarchies can be passed at runtime as [runtime parameters](../execute-and-automate-extractions/extraction-parameters#extraction).
+**Note:** Hierarchies can be passed at runtime as runtime parameters.
