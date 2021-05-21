@@ -12,19 +12,21 @@ Für die folgenden Komponenten ist die Installation eines kundenspezifischen Fun
 - **Table**: Für die meisten Aktionen ist die Installation eines ABAP Frameworks notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](./sap-customizing/funktionsbaustein-fuer-table-extraktion). 
 - **Report**: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
 
-Der Funktionsbaustein für die TableJoin-Komponente ist nur auf Anfrage verfügbar.
+: .box-note }
+**Note:** Der Funktionsbaustein für die TableJoin-Komponente ist nur auf Anfrage verfügbar.
 
 ### Transportaufträge (Transport requests)
 Die Transportaufträge von Theobald Software müssen von Ihrem SAP-Basis-Team in SAP importiert werden.
 Die folgenden Transportaufträge finden Sie im ABAP-Unterordner des Installationsordners (z.B. `C:\Programme\XtractProduct\ABAP`):
 
-- Z_XTRACT_IS_REMOTE_REPORT-transport.zip - enthält den Z-Funktionsbaustein für die *Report Komponente*
-- Z_THEO_READ_TABLE-transport.zip - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Version 7.40 SP05 und höher
-- Z_THEO_READ_TABLE-transport-before-740SP05.zip - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br> kompatibel mit ABAP Version 640 - 740 SP04 
+- `Z_XTRACT_IS_REMOTE_REPORT-transport.zip` - enthält den Z-Funktionsbaustein für die *Report Komponente*
+- `Z_THEO_READ_TABLE-transport.zip` - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Version 7.40 SP05 und höher
+- `Z_THEO_READ_TABLE-transport-before-740SP05.zip` - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br> kompatibel mit ABAP Version 640 - 740 SP04 
 
-Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im Knowledgebase-Artikel [How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms).
+Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im Knowledgebase-Artikel [How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms). <br>
+Weiterführende Informationen zur manuellen Installation finden Sie im Knowledgebase-Artikel [Manual Installation of Custom Funtion Modules](https://kb.theobald-software.com/sap/custom-function-module-manual-installation).
 
-m die o.g. Komponenten zu deinstallieren, importieren Sie den Transportauftrag Z_THEO_READ_TABLE-deletion_request.zip.
+Um die o.g. Komponenten zu deinstallieren, importieren Sie den Transportauftrag Z_THEO_READ_TABLE-deletion_request.zip.
 
 
 ### Konfiguration (Customizing)
