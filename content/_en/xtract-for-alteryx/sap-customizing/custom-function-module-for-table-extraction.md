@@ -1,5 +1,5 @@
 ---
-ref: xu-sap-customizing-01
+ref: xfa-sap-customizing-01
 layout: page
 title: Custom function module for Table
 description: Custom function module for Table

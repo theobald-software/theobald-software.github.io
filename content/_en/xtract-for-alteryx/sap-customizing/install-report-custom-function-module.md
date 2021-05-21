@@ -1,5 +1,5 @@
 ---
-ref: xu-sap-customizing-06
+ref: xfa-sap-customizing-06
 layout: page
 title: Custom function module for Report
 description: Custom function module for Report

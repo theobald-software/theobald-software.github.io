@@ -12,6 +12,7 @@ Für die folgenden Komponenten ist die Installation eines kundenspezifischen Fun
 - **Table**: Für die meisten Aktionen ist die Installation eines ABAP Frameworks notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](./sap-customizing/funktionsbaustein-fuer-table-extraktion). 
 - **Report**: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
 
+Der Funktionsbaustein für die TableJoin-Komponente ist nur auf Anfrage verfügbar.
 
 ### Transportaufträge (Transport requests)
 Die Transportaufträge von Theobald Software müssen von Ihrem SAP-Basis-Team in SAP importiert werden.

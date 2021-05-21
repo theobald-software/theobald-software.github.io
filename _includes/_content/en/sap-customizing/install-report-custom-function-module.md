@@ -5,6 +5,7 @@ If you cannot install the function mudule, turn to your SAP Basis team for help.
 Install the function module using the transport request *Z_XTRACT_IS_REMOTE_REPORT-transport.zip*. <br> 
 The transport request is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\thtrans.zip`.
 
+
 ### SAP Standard Data Type TAB512
 
 Instead of using the SAP standard data type *TAB512* for the LIST_OUTPUT table parameter, you can create your own Z data type. <br> 
@@ -18,3 +19,4 @@ This is necessary if the output length of a report line is longer than 512 chara
 #### Related Links
 - [How to import an SAP Transport Request with the Transport Management System STMS](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
 - [Create Function Group](https://help.sap.com/viewer/bd833c8355f34e96a6e83096b38bf192/7.52.0/en-US/d1801ef5454211d189710000e8322d00.html)
+- [Install Z_XTRACT_IS_REMOTE_REPORT Manually](https://kb.theobald-software.com/sap/custom-function-module-manual-installation#install-z_xtract_is_remote_report)
