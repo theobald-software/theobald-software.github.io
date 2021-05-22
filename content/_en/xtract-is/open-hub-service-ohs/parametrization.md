@@ -14,24 +14,24 @@ lang: en_GB
 
 ### About
 Some of the values that can be entered or selected in the component's UI can be dynamically changed at SSIS package runtime. This is explained in section [Parameterization](/../parameterization). <br>
-This section lists the component's properties which can be dynamically changed at runtime.
+This section lists the component's fields and custom properties which can be dynamically changed at runtime.
 
 
 ### Parameterization using Properties
-The following properties can be parameterized:
+The following custom properties can be parameterized:
 
 |Property Name|Description|
 |:----|:----|
-| `[Xtract OHS].[ConvertsDates]`| |
-| `[Xtract OHS].[ConvertsTimes]`||
-| `[Xtract OHS].[InvalidDateReplacement]`| |
-| `[Xtract OHS].[MaxDateReplacement]`|  |
-| `[Xtract OHS].[MinDateReplacement]`|  |
+| *[Xtract OHS].[ConvertsDates]*| |
+| *[Xtract OHS].[ConvertsTimes]*||
+| *[Xtract OHS].[InvalidDateReplacement]*| |
+| *[Xtract OHS].[MaxDateReplacement]*|  |
+| *[Xtract OHS].[MinDateReplacement]*|  |
 
 
 
 ### Parameterization using SSIS Variables
-The following fields in the OHS component allow entry of an SSIS variable (instead of a hard coded value):
+The following fields in the component or the component's custom properties allow entry of an SSIS variable (instead of a hard coded value):
 
 |Field Name|Comment|
 |:----|:----|
