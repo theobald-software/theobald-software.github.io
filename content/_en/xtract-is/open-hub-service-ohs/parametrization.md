@@ -1,7 +1,7 @@
 ---
 ref: xi-open-hub-service-ohs-05
 layout: page
-title: Parametrization
+title: Parameterization
 description: Parametrization
 product: xtract-is
 parent: open-hub-service-ohs

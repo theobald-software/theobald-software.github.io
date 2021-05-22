@@ -1,7 +1,7 @@
 ---
 ref: xi-bw-cube-05
 layout: page
-title: Parametrization
+title: Parameterization
 description: parametrization
 product: xtract-is
 parent: bw-cube

@@ -1,7 +1,7 @@
 ---
 ref: xi-query-05
 layout: page
-title: Parametrization
+title: Parameterization
 description: parametrization
 product: xtract-is
 parent: query

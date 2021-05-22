@@ -1,7 +1,7 @@
 ---
 ref: xis-parametrization-02
 layout: page
-title: Parameterization using SSIS Variables
+title: SSIS Variables
 description: Parameterization using SSIS Variables
 product: xtract-is
 parent: parameterization
@@ -12,10 +12,3 @@ lang: en_GB
 ---
 
 {% include _content/en/parametrization/parametrization-via-variables.md  %}
-
-
-{: .box-note }
-**Note:** Create SSIS variables of data type *String*.
-
-
-

@@ -12,8 +12,10 @@ lang: en_GB
 
 ---
 
-Various settings of an Xtract IS component (e.g., package size, selection criteria, etc.) can be parameterized so that a different value can be assigned at SSIS package runtime.
-Parameters can be populated using standard SSIS functionality, such as expressions, SSIS variables, etc. 
+Various settings of Xtract IS components (e.g., package size, selection criteria, etc.) can be parameterized.
+Use parameters to assign different values at SSIS package runtime.
+Parameters can be populated using standard SSIS functionality, such as expressions and SSIS variables. 
+
 Xtract IS offers two technical options for parameterization:
 - [Properties](./parameterization-prop)
 - [SSIS Variables](./parameterization-var)
@@ -23,7 +25,7 @@ Xtract IS offers two technical options for parameterization:
 
 Depending on the Xtract IS component you can either use SSIS variables or properties or both to set parameters.
 
-### Parameterization Options in the Components 
+### Parameterization Options in Xtract Components 
 
 | Component   | SSIS Variables | Properties |
 |-------------|:-----:|:----:|
@@ -36,6 +38,3 @@ Depending on the Xtract IS component you can either use SSIS variables or proper
 |[Query](../query/parametrization)       |   x    |      |
 | [Report](../report/parametrization) |    x   |      | 
 | [Table](../table/table-parametrization)       | x      |  x    |
-
-
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

@@ -1,7 +1,7 @@
 ---
 ref: xi-bapi-08
 layout: page
-title: Parametrization
+title: Parameterization
 description: Parametrization
 product: xtract-is
 parent: bapi
