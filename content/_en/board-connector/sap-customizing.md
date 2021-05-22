@@ -12,7 +12,4 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
 
-
 {% include _content/en/sap-customizing.md  %}
-
-

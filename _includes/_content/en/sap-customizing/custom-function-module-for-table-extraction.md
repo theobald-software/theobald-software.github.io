@@ -17,14 +17,14 @@ Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
 There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), and one for systems with a lower version (*Z_THEO_READ_TABLE-before_740SP05.zip*).<br>
 
-- Z_THEO_READ_TABLE-before_740SP05.zip contains version 1.x (till 1.11) of Z_THEO_READ_TABLE - the single custom function module.
 - Z_THEO_READ_TABLE.zip contains version 2.x of Z_THEO_READ_TABLE - the custom function module, a number of ABAP classes and other DDIC objects.  
+- Z_THEO_READ_TABLE-transport-before-740SP05.zip contains version 1.x (till 1.11) of Z_THEO_READ_TABLE - the custom function module.
 ![Z_THEO_READ_TABLE_SE80](/img/content/Z_THEO_READ_TABLE_SE80.png){:class="img-responsive" }
 
 {: .box-note}
-**Note:** Take a look at the README.txt in the installation directory (e.g.,`C:\Program Files\XtractProduct\ABAP\README.txt`) before installing any custom function modules.
+**Note:** Take a look at the README.pdf in the installation directory (e.g.,`C:\Program Files\XtractProduct\ABAP\README.pdf`) before installing any custom function modules.
 
-When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a syntax error may occur. Contact Theobald Software support and send the dedicated error message text.
+When importing the Z_THEO_READ_TABLE-transport-before-740SP05 on older SAP releases a syntax error may occur. Contact [Theobald Support](mailto:support@theobald-software.com) and send the dedicated error message text.
 
 ### Testing the module in SAP
 
@@ -32,3 +32,8 @@ When importing the Z_THEO_READ_TABLE-before_740SP05 on older SAP releases a synt
 **Warning! Generating Short Dumps** <br>
 The function module Z_THEO_READ_TABLE can only be called by Theobald products due to the callback function of the module.
 Testing the function module on an SAP system is therefore not possible.
+
+
+***********
+#### Related Links
+- [Install Z_XTRACT_IS_TABLE Manually](https://kb.theobald-software.com/sap/custom-function-module-manual-installation#install-z_xtract_is_table)

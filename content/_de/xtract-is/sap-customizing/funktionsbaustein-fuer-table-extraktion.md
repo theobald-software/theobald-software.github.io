@@ -1,7 +1,7 @@
 ---
 ref: xi-sap-customizing-01
 layout: page
-title: Funktionsbaustein für Tabellen-Extraktion
+title: Funktionsbaustein für Table
 description: Funktionsbaustein für Tabellen-Extraktion
 product: xtract-is
 parent: sap-customizing
