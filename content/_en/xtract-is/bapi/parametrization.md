@@ -11,23 +11,18 @@ lang: en_GB
 
 ---
 
-
-### About
-Some of the values that can be entered or selected in the component's UI can be dynamically changed at SSIS package runtime. This is explained in section [Parameterization](/../parameterization). <br>
-This section lists the component's fields and custom properties which can be dynamically changed at runtime.
-
+{% include _content/en/parametrization/parametrization-about.md  %}
 
 ### Parameterization using SSIS Variables
-The following fields in the component or the component's custom properties allow entry of an SSIS variable (instead of a hard coded value):
+The following fields and/or custom properties of the component allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|
-| Imports - *Edit*|see [Scalar Parameters](./scalar-parameters) and [Structures](./structures); Enter an SSIS variable as selection criteria. In case of structures, enter an SSIS variable for each member of a structure.|
-| Exports - *Edit*|A BAPI's Export parameters can be written to an SSIS variable (or alternatively to the SSIS pipeline, see [Settings](./settings)) . Enter an SSIS variable in the respective field of the Export parameter. In case of structures, enter an SSIS variable for each member of a structure|
-
+| Imports - *Edit*|Enter an SSIS variable as selection criteria. In case of structures, enter an SSIS variable for each member of a structure, see [Scalar Parameters](./scalar-parameters) and [Structures](./structures).|
+| Exports - *Edit*|A BAPI's Export parameters can be written to an SSIS variable or to the SSIS pipeline, see [Settings](./settings). Enter an SSIS variable in the respective field of the Export parameter. In case of structures, enter an SSIS variable for each member of a structure.|
 
 
 ****
 #### Related Links
-[Parameterization](../parameterization/) <br>
-[Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
+- [How to use SSIS Variables with Xtract Components](../parameterization/parameterization-var) 
+- [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

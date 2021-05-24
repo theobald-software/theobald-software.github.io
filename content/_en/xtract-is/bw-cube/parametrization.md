@@ -11,26 +11,19 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=bw-cube-settings
 ---
 
-
-
-### About
-Some of the values that can be entered or selected in the component's UI can be dynamically changed at SSIS package runtime. This is explained in section [Parameterization](/../parameterization). <br>
-This section lists the component's fields and custom properties which can be dynamically changed at runtime.
-
+{% include _content/en/parametrization/parametrization-about.md  %}
 
 ### Parameterization using SSIS Variables
-The following fields in the component or the component's custom properties allow entry of an SSIS variable (instead of a hard coded value):
+The following fields and/or custom properties of the component allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|
-|*Variables*|see [Variables](./variables); Enter an SSIS variable to fill a BEx variable. For BEx variables of type *Multiple Single*: Enter a single SSIS variable, set a delimiter for custom property*DelimiterForMultipleSSISVariableValues*, enter multiple single values in the SSIS variable, separated by the delimiter. |
-|*Member Filter*        |Enter an SSIS variable in the field *variable*. The SSIS variable can be filled with multiple single entries, separated by comma.|
+|*Variables*| Enter an SSIS variable to fill a BEx variable, see [Variables](./variables). <br>For BEx variables of type *Multiple Single* enter a single SSIS variable, set a delimiter for custom property *DelimiterForMultipleSSISVariableValues*, enter multiple single values in the SSIS variable separated by the delimiter. |
+|*Member Filter*        |When the field *variable* is filled with multiple single entries separated by comma, use *Member Filter* to filter the input.|
 |*Extraction Type MDX* |SSIS variables can be used as part of the freehand MDX statement for BEx variables or dimension member filters. |
-|*MDXVariable*        |Use with Extraction Type *MDX*. Enter an SSIS variable in the MDX textbox. Fill the SSIS variable with the complete MDX statement.|
-
-
+|*MDXVariable*        |Use *MDXVariable* in combination with *Extraction Type MDX*. Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement.|
 
 ****
 #### Related Links
-[Parameterization](../parameterization/) <br>
-[Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
+- [How to use SSIS Variables with Xtract Components](../parameterization/parameterization-var) 
+- [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

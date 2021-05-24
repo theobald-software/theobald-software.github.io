@@ -11,27 +11,21 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=report-settings
 ---
 
-
-### About
-Some of the values that can be entered or selected in the component's UI can be dynamically changed at SSIS package runtime. This is explained in section [Parameterization](/../parameterization). <br>
-This section lists the component's fields and custom properties which can be dynamically changed at runtime.
-
+{% include _content/en/parametrization/parametrization-about.md  %}
 
 ### Parameterization using SSIS Variables
-The following fields in the component or the component's custom properties allow entry of an SSIS variable (instead of a hard coded value):
+The following fields and/or custom properties of the component allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|
-| *Variant*|see [Variants and Selections](./variants-and-selections)|
+| *Variant*|see [Variants and Selections](./variants-and-selections).|
 | *Edit*|see [Variants and Selections](./variants-and-selections); Enter an SSIS variable as selection criteria.|
-|*Spool Destination / BatchJobDestination* | see [Settings](./settings)|
-|*BatchJobName*        |see [Settings](./settings)|
-|*BatchJobTimeout*     |see [Settings](./settings)|
-|*ReportName*        |         Should not be used as the result structure is different between different reports.    |
-
-
+|*Spool Destination / BatchJobDestination* | see [Settings](./settings).|
+|*BatchJobName*        |see [Settings](./settings).|
+|*BatchJobTimeout*     |see [Settings](./settings).|
+|*ReportName*        |         Should not be used as the structure of the result is varies depending on the reports.    |
 
 ****
 #### Related Links
-[Parameterization](../parameterization/) <br>
-[Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
+- [How to use SSIS Variables with Xtract Components](../parameterization/parameterization-var) 
+- [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
