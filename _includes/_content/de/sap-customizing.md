@@ -1,13 +1,13 @@
 Um mögliche Einschränkungen bei der Extraktion von Tabellen zu umgehen oder andere Xtract Extraktionstypen zu nutzen, 
-müssen in Ihrem SAP-System bestimmte Einstellungen anpasst oder Z-Funktionsbausteine bzw. das ABAP Framework von Theobald Software installiert werden.
+müssen in Ihrem SAP-System bestimmte Einstellungen anpasst oder Z-Funktionsbausteine von Theobald Software installiert werden.
 
-Der folgende Abschnitt gibt einen Überblick über die Installation von benutzerdefinierten Funktionsbausteinen/ABAP-Framework und das Customizing des SAP-Systems.
+Der folgende Abschnitt gibt einen Überblick über die Installation von benutzerdefinierten Funktionsbausteinen und das Customizing des SAP-Systems.
 
 
 ### Z-Funktionsbausteine / ABAP Framework auf dem SAP-System
 
 Die Z-Funktionsbausteine / ABAP-Framework werden als Teil der Theobald Software Produkte ausgeliefert und können mithilfe von Transportaufträgen installiert werden.
-Für die folgenden Komponenten ist die Installation eines kundenspezifischen Funktionsbausteins/ABAP-Frameworks in SAP erforderlich:
+Für die folgenden Komponenten ist die Installation eines kundenspezifischen Funktionsbausteins in SAP erforderlich:
 
 - **Table**: Für die meisten Aktionen ist die Installation eines ABAP Frameworks notwendig. Siehe [Funktionsbaustein für Tabellen-Extraktion](./sap-customizing/funktionsbaustein-fuer-table-extraktion). 
 - **Report**: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
@@ -27,14 +27,3 @@ Weiterführende Informationen zur Installation eines Transportauftrags finden Si
 Weiterführende Informationen zur manuellen Installation finden Sie im Knowledgebase-Artikel [Manual Installation of Custom Funtion Modules](https://kb.theobald-software.com/sap/custom-function-module-manual-installation).
 
 Um die o.g. Komponenten zu deinstallieren, importieren Sie den Transportauftrag Z_THEO_READ_TABLE-deletion_request.zip.
-
-
-### Konfiguration (Customizing)
-Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig. 
-
-- **OHS**: Siehe [Vorbereitung für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw).
-- **DeltaQ**: Siehe [Customizing für DeltaQ](./sap-customizing/customizing-fuer-deltaq).
-
-
-
-

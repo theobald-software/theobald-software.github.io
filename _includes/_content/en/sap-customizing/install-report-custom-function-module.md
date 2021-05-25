@@ -3,7 +3,7 @@ If you cannot install the function mudule, turn to your SAP Basis team for help.
 
 ### Installation 
 Install the function module using the transport request *Z_XTRACT_IS_REMOTE_REPORT-transport.zip*. <br> 
-The transport request is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\thtrans.zip`.
+The transport request is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip`.
 
 
 ### SAP Standard Data Type TAB512
