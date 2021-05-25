@@ -24,3 +24,5 @@ When [searching](./odp-functions-ov#operational-data-provider) for BW InfoProvid
 ![ODP SAPI Search](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
 
 Click **[Load live preview]** to preview the data without executing an extraction.
+
+{% include _content/en/odp/odp-hierarchy.md %} 
