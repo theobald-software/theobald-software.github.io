@@ -1,3 +1,5 @@
+Um den Dialog "Xtract IS BAPI Preferences" zu öffnen, im Hauptfenster auf **[Settings]** klicken.
+
 ![BAPI-Settings](/img/content/BAPI-Settings.png){:class="img-responsive"}
 
 **Automatic String Conversion**

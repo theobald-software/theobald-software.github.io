@@ -16,13 +16,12 @@ lang: en_GB
 ![BAPI component](/img/content/xfa/Define-bapi-component.png){:class="img-responsive"}
 
 ### Looking up a BAPI
-1. Click **Search** (4) to look for a BAPI. The window "Function Module Lookup" opens.
-2. In the field **Function Name** enter the name of a desired BAPI and click **Search** (5). <br>
-**Tip:** Wildcard (*) can be used for searching.
+4. Search for **BAPI / Function Name** by using the **[magnifiying glass symbol]** (4), you can use wildcards (*), if needed. The window "Function Module Lookup" opens.
+5. By entering a search name in the **Function Name** field, you can narrow down the search. Start the search by using the **[magnifiying glass symbol]** (5). You can use wildcards (*), if needed.<br>
 ![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module.png){:class="img-responsive"}
-3. Select the necessary BAPI from the search results (6). 
-4. Click **[OK]** (7) to confirm the selection.
-5. The Xtract BAPI window displays the parameters of the selected BAPI. 
+6. Select an item from the list (6). 
+4. Click **[OK]** (7) to confirm.
+5. The "Xtract BAPI" window displays the parameters of the selected BAPI.<br>
 BAPI can have up to four [parameter types](./parameters): Imports, Exports, Changings and Tables.
 ![BAPI-Parameters](/img/content/xfa/BAPI-Parameters.png){:class="img-responsive"}
 
