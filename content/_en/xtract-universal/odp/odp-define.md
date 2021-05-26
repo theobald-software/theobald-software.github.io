@@ -27,32 +27,9 @@ The window "Operational Data Provider Lookup" opens.
 	DataSources/Extractors [[SAPI](./odp/odp-extractors)] | - DataSources and Extractors |
 4. Click **Search** (magnifying glass symbol) (4) and select the extractor of your choice from the displayed list (5).
 5. Click **[OK]** (6) to confirm.
-6. Update mode/Hierarchy
-7. Optional: Create selections by activating or deactivating fields. To add [filters](#selections-and-filters) click the **Edit** option next to the fields.
-8. Click **[Load live preview]** (7) to display a live preview of the data without executing an extraction.
+6. Optional: Create selections by activating or deactivating fields (7). To add [filters](#selections-and-filters) click the **Edit** option next to the fields. 
+If your data source is Hierarchy, see [Select Hierarchy](./odp-extractors#hierarchies) for filter options.
+7. Click **[Load live preview]** (8) to display a live preview of the data without executing an extraction.
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
-9. Before executing an extraction, check the [extraction settings](./odp-settings).
+8. Before executing an extraction, check the [extraction settings](./odp-settings).
 
-### Update Mode 
-**Full update**: <br/>
-Extracts the data in full mode <br/>
-
-{: .box-note }
-**Note:** The **Delta update** option is ready for input only if the ODP provider in the SAP source system supports delta updates.
-
-**Delta update**:<br/>
-Runs a delta initialization, if no delta initialization is available for selected subscriber. Runs a delta update, if there is a delta initialization for the selected subscriber. <br/>
-
-- **On delta initialization** <br/>
-Checking the *Extract data* checkbox, allows extracting data when running a delta initialization. 
-Leaving the checkbox unchecked runs a delta initialization without extracting data. <br/>
-- **Auto-sync subscription**<br/>
-Allows deletion of the existing subscription and creates a new subscription, if required.
-Each extraction has an internal ID, which is part of the subscriber. 
-If you change the filter of an extraction after the delta initialization, the *Auto-sync subscription* option automatically deletes the existing subscription and creates a new one. 
-A subscription is deleted, if the error message "Illegal change in selection parameters" returns from the SAP system.<br/>
-
-**Delta recovery:**<br/>
-Re-runs the last delta update 
-
-{% include _content/en/odp/odp-settings-filtering.md %}
