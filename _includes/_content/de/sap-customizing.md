@@ -4,7 +4,7 @@ müssen in Ihrem SAP-System bestimmte Einstellungen anpasst oder Z-Funktionsbaus
 Der folgende Abschnitt gibt einen Überblick über die Installation von benutzerdefinierten Funktionsbausteinen und das Customizing des SAP-Systems.
 
 
-### Z-Funktionsbausteine / ABAP Framework auf dem SAP-System
+### Z-Funktionsbausteine auf dem SAP-System
 
 Die Z-Funktionsbausteine / ABAP-Framework werden als Teil der Theobald Software Produkte ausgeliefert und können mithilfe von Transportaufträgen installiert werden.
 Für die folgenden Komponenten ist die Installation eines kundenspezifischen Funktionsbausteins in SAP erforderlich:

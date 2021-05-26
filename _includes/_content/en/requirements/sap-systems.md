@@ -8,17 +8,22 @@ SAP Systems running on Big Endian and Little Endian hardware are supported.
 
 SAP Releases 4.6C and newer are supported. Including the following:
 <br/> 	
-* SAP R/3 Version 4.6C and later
 * mySAP
-* SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
+* SAP Application Server ABAP, Message Server, Router, Standalone Gateway
 * SAP Business Suite 7 (CRM, SRM, SCM etc.)
 * SAP Business All in One, CAR, APO, PI, IS-U etc.
-* SAP S/4HANA
-- SAP S/4HANA Cloud Extended Edition (EX)
 * SAP BW 3.1 and later
 * SAP BW/BI 7.x
 * SAP BW/4HANA
-* SAP Application Server ABAP, Message Server, Router, Standalone Gateway
+* SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
+* SAP R/3 Version 4.6C and later
+* SAP S/4HANA
+
+The following SAP Releases have only limited support:
+- SAP S/4HANA Cloud Extended Edition (EX)
+
+The installation of Custom Function Modules on SAP S/4HANA Cloud Extended Edition is not yet supported.
+Therefore the functionality of [Table](../sap-customizing/custom-function-module-for-table-extraction#rfc_read_table-restrictions) and [Report](../sap-customizing/install-report-custom-function-module) extractions is limited for SAP S/4HANA Cloud Extended Edition.
 
 
 ### HANA Database

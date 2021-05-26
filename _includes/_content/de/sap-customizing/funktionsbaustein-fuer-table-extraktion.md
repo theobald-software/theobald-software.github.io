@@ -13,7 +13,7 @@ Um die o.g. Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustei
 Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.<br>
 Verwenden Sie den Funktionsbaustein von Theobald Software *Z_THEO_READ_TABLE*. 
 
-### ABAP Framework Z_THEO_READ_TABLE installieren
+### Z_THEO_READ_TABLE installieren
 
 Es gibt zwei Transportaufträge, einen für SAP-Systeme ab Version 7.40 SP05 (* Z_THEO_READ_TABLE-transport.zip*), und einen für Systeme mit einer niedrigeren Version (* Z_THEO_READ_TABLE-transport-before-740SP05.zip*).<br>
 

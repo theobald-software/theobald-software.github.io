@@ -3,7 +3,7 @@ To avoid possible restrictions for table extractions or to use other Xtract extr
 The following section gives an overview of the installation of custom function modules and customization of the SAP System.
 
 
-### Custom Function Modules / ABAP Framework on SAP System
+### Custom Function Modules on SAP System
 
 The Custom function modules/ABAP framework are delivered as a part of Theobald Software products. 
 The custom function modules/ABAP Framework can be installed using the transport requests.

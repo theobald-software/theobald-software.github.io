@@ -13,7 +13,7 @@ If the above-mentioned restrictions hinder your work, install the Theobald Softw
 The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
 Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
-### Installing the ABAP Framework Z_THEO_READ_TABLE 
+### Installing Z_THEO_READ_TABLE 
 
 There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), and one for systems with a lower version (*Z_THEO_READ_TABLE-before_740SP05.zip*).<br>
 

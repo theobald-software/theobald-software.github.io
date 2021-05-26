@@ -7,18 +7,23 @@ Daher ist die vom SAP-System verwendete Datenbank irrelevant. SAP-ABAP-Systeme a
 Das bedeutet auch, dass das Betriebssystem des SAP-Systems irrelevant ist - alle Betriebssysteme werden unterstützt.
 SAP-Systeme, die auf Big Endian- und Little Endian-Hardware laufen, werden unterstützt.
 
-SAP Release 4.6C und neuer werden unterstützt. Dazu gehören:<br/> 	
-* SAP R/3 Version 4.6C and later
-* mySAP
-* SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
+SAP Release 4.6C und neuer werden unterstützt. Dazu gehören:<br/> 
+* mySAP	
+* SAP Application Server ABAP, Message Server, Router, Standalone Gateway
 * SAP Business Suite 7 (CRM, SRM, SCM etc.)
 * SAP Business All in One, CAR, APO, PI, IS-U etc.
-* SAP S/4HANA
-- SAP S/4HANA Cloud Extended Edition (EX)
 * SAP BW 3.1 and later
 * SAP BW/BI 7.x
 * SAP BW/4HANA
-* SAP Application Server ABAP, Message Server, Router, Standalone Gateway
+* SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
+* SAP R/3 Version 4.6C and later
+* SAP S/4HANA
+
+Die folgenden SAP Releases werden nur eingeschränkt unterstützt:
+- SAP S/4HANA Cloud Extended Edition (EX)
+
+Die Installation von Z-Funktionsbausteinen auf der SAP S/4HANA Cloud Extended Edition wird noch nicht unterstützt.
+Daher ist die Funktionalität bei der Extraktion von [Tabellen](../sap-customizing/funktionsbaustein-fuer-table-extraktion#einschränkungen-von-rfc_read_table) und [Reports](sap-customizing/report-funktionsbaustein-installieren) für SAP S/4HANA Cloud Extended Edition eingeschränkt.
 
 
 ### HANA Datenbank
