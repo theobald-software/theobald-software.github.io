@@ -23,7 +23,7 @@ Die folgenden SAP Releases werden nur eingeschränkt unterstützt:
 - SAP S/4HANA Cloud Extended Edition (EX)
 
 Die Installation von Z-Funktionsbausteinen auf der SAP S/4HANA Cloud Extended Edition wird noch nicht unterstützt.
-Daher ist die Funktionalität bei der Extraktion von [Tabellen](../sap-customizing/funktionsbaustein-fuer-table-extraktion#einschränkungen-von-rfc_read_table) und [Reports](sap-customizing/report-funktionsbaustein-installieren) für SAP S/4HANA Cloud Extended Edition eingeschränkt.
+Daher ist die Funktionalität bei der Extraktion von [Tabellen](../sap-customizing/funktionsbaustein-fuer-table-extraktion#einschränkungen-von-rfc_read_table) und [Reports](../sap-customizing/report-funktionsbaustein-installieren) für SAP S/4HANA Cloud Extended Edition eingeschränkt.
 
 
 ### HANA Datenbank
