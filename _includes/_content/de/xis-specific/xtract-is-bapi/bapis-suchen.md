@@ -1,6 +1,6 @@
 ### Eine BAPI Exktraktion definieren
 1. Mindestens ein gültiger Verbindungsmanager, der mit einem SAP-System verbunden ist, ist Voraussetzung für das Erstellen einer Extraktion (siehe Abschnitt [Verbindungsmanager](../sap-verbindung/verbindungsmanager)).
-2. Klicken Sie doppelt auf das **[Programmsymbol]**. Das Fenster "Read and Write with SAP BAPIs of Function Modules" öffnet sich.
+2. Klicken Sie doppelt auf das **[Icon]**. Das Fenster "Read and Write with SAP BAPIs of Function Modules" öffnet sich.
 3. Klicken Sie auf das **[Lupensymbol]**.
 ![BAPI-Editor](/img/content/BAPI-Editor.png ){:class="img-responsive"}
 

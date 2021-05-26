@@ -1,7 +1,7 @@
 ---
 ref: xi-bw-cube-01
 layout: page
-title: Eine BW Cube-Quelle suchen
+title: Eine BW Cube Extraktion definieren
 description: Eine BW Cube-Quelle suchen
 product: xtract-is
 parent: bw-cube

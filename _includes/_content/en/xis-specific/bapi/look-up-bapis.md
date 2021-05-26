@@ -5,7 +5,7 @@
 3. Click on the **[binocular button]**.
 ![BAPI-Editor](/img/content/BAPI-Editor.png){:class="img-responsive"}
  
-The search dialoge "Look Up BAPI" opens.
+The search dialog "Look Up BAPI" opens.
 
 ### Looking up a BAPI
 ![BAPI-Search](/img/content/BAPI-Search.png){:class="img-responsive"}

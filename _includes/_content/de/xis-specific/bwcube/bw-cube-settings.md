@@ -3,7 +3,7 @@
 ![XIS_BWCube_Settings](/img/content/XIS_BWCube_Settings.png){:class="img-responsive"}
 
 
-***String Conversion***
+### String Conversion
 
 **Automatic String Conversion** <br>
 bedeutet, dass die Datenquelle alle Strings nach NvarChar konvertiert, wenn SAP ein Unicode-System ist, und nach VarChar, wenn SAP kein Unicode-System ist.
@@ -15,7 +15,7 @@ bedeutet, dass die Datenquelle alle Strings nach VarChar konvertiert.
 bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert.
 
 
-***Misc***
+### Misc
 
 **Do not tread 'Axis has no rows' as Error** <br>
 Definiert, ob ein leeres Ergebnis (keine Daten selektiert) einen Fehler auslöst oder nicht.
@@ -45,7 +45,7 @@ Wählen Sie eine geeignete Dimension für das Slicing, bei größeren Datenmenge
 Betrifft BW Cube Extraktionen, die mit Xtract IS Version 2.5.17 oder früher erstellt wurden. Sollten Sie die Metadaten der Extraktion aktualisieren, sollten Sie vorher dieses Feld anhaken. Das betrifft insbesondere BEx Queries, die zwei Strukturen enthalten (Merkmals- und Kennzahlenstruktur), da sich der Metadatenabruf seit oben genannter Version geändert hat.
  
 
-***Extraction Type***
+### Extraction Type
 
 **Regular** <br>
 extrahiert die Daten über die MDX-Schnittstelle. 

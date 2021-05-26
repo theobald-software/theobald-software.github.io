@@ -1,7 +1,7 @@
 ---
 ref: xfa-bwhier-define
 layout: page
-title: BW Hierarchy als Datenquelle definieren
+title: Eine BW Hierarchie Extraktion definieren
 description: Hierarchien als Datenquelle definieren
 product: xtract-for-alteryx
 parent: bw-hierarchien
@@ -21,7 +21,7 @@ progressstate: 5
 
 Klicken auf **[[Extraction Settings](./hierarchie-extraktionseinstellungen)]**, um die Hierarchieeinstellungen zu definieren.
 
-### Echtzeitvorschau der ausgewählten Hierarchie anzeigen
+### Ausgewählte BW Hierarchie in Echtzeitvorschau
 Klicken Sie auf **[Load live preview]** (6), um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.<br>
 
 ![Define-Data-Source-Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"}

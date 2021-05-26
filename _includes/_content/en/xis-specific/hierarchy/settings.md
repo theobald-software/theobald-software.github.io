@@ -33,12 +33,13 @@ All strings are converted to NVarChar regardless of whether the source system is
 is active only, when Representation has the value *Natural/flattened*.
 
 **Level Count**<br>
-Defines the maximum number of levels if the representation natural is selected. In the following screenshot you see the hierarchie shown in the previous screenshot with five levels in the representation natural.
+Defines the maximum number of levels if the representation natural is selected.
 
 **Leaves only**<br>
 Delivers only the leaves as data records.
 
-**Fill empty levels**
+**Fill empty levels**<br>
+The lowest element in the hierarchy is copied to the last level.
 
 **Description texts for levels**<br>
 Means, that the output has a field LevelTextN for each field LevelN, that contains the text based on the system language settings.

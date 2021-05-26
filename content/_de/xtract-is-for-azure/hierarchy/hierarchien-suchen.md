@@ -1,7 +1,7 @@
 ---
 ref: xia-hierarchy-01
 layout: page
-title: Hierarchien suchen
+title: Eine BW Hierarchie Extraktion definieren
 description: Hierarchien suchen
 product: xtract-is-for-azure
 parent: hierarchy
