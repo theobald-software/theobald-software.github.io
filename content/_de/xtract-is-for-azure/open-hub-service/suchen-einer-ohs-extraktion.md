@@ -1,7 +1,7 @@
 ---
 ref: xia-open-hub-service-ohs-02
 layout: page
-title: Suchen einer OHS-Extraktion
+title: Eine OHS Extraktion definieren
 description: Suchen einer OHS-Extraktion
 product: xtract-is-for-azure
 parent: open-hub-service

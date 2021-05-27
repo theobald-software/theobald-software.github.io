@@ -7,6 +7,6 @@ The search dialoge "Look Up Query" opens.
 
 ### Looking up Queries
 ![Query-Search](/img/content/Query-Search.png){:class="img-responsive" }
-3. Search for *Hierachy Name* or *InfoObject* by using the **[binocular button]**, you can use wildcards (*), if needed.
+3. Search for **Query Name** or **User Group** by using the **[binocular button]**, you can use wildcards (*), if needed.
 5. Select an item from the list. 
 6. Click **[OK]** to confirm.

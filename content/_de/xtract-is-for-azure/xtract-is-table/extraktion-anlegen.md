@@ -1,7 +1,7 @@
 ---
 ref: xiaa-table-01
 layout: page
-title: Tabellen extrahieren
+title: Eine Tabellen Extraktion definieren
 description: Tabellen extrahieren
 product: xtract-is-for-azure
 parent: xtract-is-table

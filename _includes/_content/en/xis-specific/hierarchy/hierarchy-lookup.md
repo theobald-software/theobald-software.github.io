@@ -2,6 +2,7 @@
 
 1. Double-click the **[icon]**. The window "Extract SAP BW Hierarchies" opens.
 2. Click on the **[binocular button]**.
+![Hierarchy-Search-02](/img/content/Hierarchy-Search-02.png){:class="img-responsive" }
 The search dialoge "Look Up Hierarchy" opens.
 	
 ### Looking up a BW Hierarchy
@@ -11,4 +12,3 @@ The search dialoge "Look Up Hierarchy" opens.
 5. Click **[OK]** to confirm.
 After making your selection, the component saves all relevant data need for extraction later on:
 
-![Hierarchy-Search-02](/img/content/Hierarchy-Search-02.png){:class="img-responsive" }
