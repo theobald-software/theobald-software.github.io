@@ -65,7 +65,25 @@ After creating the report, you can access the Query Builder by right-clicking th
  {: .box-tip }
 **Tip:** Experienced users can enter the Query string directly in the Report Wizard without using the Query Builder, see [Metadata access via HTTP](../../advanced-techniques/metadata-access-via-http-json).
 
+### Parameterization
+
+While Xtract Universal uses [runtime parameters](../../execute-and-automate-extractions/extraction-parameters) for parameterization, the Xtract plugin in Visual Studio supports Query Parameters.
+Using query parameters linked to Xtract runtime parameters allows users to dynamically edit parameters at runtime without using the Xtract Universal Designer.
+
+#### How to set Xtract Runtime Parameters
+
+Runtime parameters are accessible in the Query Builder. They can have one of the following *Behaviors*:
+- *Default:* Uses the value specified in Xtract Universal Designer.
+- *Constant:* Enter a constant value to be used during runtime.
+- *Parameterized:* Enter the name of a query parameter to use as a runtime parameter. <br>
+Only one parameter can be assigned. If you want to use multiple inputs for a runtime parameter, you can use Visual Studio tools to combine multiple parameters into a *Computed Query Parameter*. <br>
+The parameter can also contain formulas.
+
+ {: .box-note }
+**Note:** When using parameterized runtime parameters, you are prompted to enter parameter values after clicking **[Preview]**.
+
 
 #### Related Links
 - [Report Design Tips](https://docs.microsoft.com/en-us/sql/reporting-services/report-design/report-design-tips-report-builder-and-ssrs?view=sql-server-ver15)
 - [Reporting Services Tutorials (SSRS)](https://docs.microsoft.com/en-us/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15)
+- [Add a Query Parameter to Create a Report Parameter](https://docs.microsoft.com/en-us/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder?view=sql-server-ver15#Query)
