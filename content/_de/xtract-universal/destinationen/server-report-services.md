@@ -14,4 +14,4 @@ progressstate: 5
 
 Der folgende Abschnitt behandelt die Verwendung von Xtract Universal für eine SAP Integration in SSRS.
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -1,8 +1,8 @@
 ---
 ref: xu-ssrs-02
 layout: page
-title: Connection
-description: Connection
+title: Verbindung
+description: Verbindung
 product: xtract-universal
 parent: ssrs
 permalink: /:collection/:path
