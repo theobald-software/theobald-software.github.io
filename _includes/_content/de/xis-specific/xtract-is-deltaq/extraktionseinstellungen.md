@@ -30,6 +30,9 @@ Legt den Namen der Hierarchie fest.
 **Hierarchy Class**<br>
 Definiert die Hierarchieklasse.
 
+**Hierarchy Version**<br>
+Legt die Version der Hierarchie fest.
+
 ### Misc. 
 
 **Update Mode Variable**<br>

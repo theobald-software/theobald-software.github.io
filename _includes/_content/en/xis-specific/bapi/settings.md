@@ -1,4 +1,4 @@
-The window below will open after clicking the Settings button.
+To open the "Xtract IS BAPI Preferences" dialog, click **[Settings]** in the main window.
 
 ![BAPI-Settings](/img/content/BAPI-Settings.png){:class="img-responsive" }
 

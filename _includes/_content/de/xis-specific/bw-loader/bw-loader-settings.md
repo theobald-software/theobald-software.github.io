@@ -1,9 +1,8 @@
-
-Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
+Über den *Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![XIS_BWL_Settings](/img/content/XIS_BWL_Settings.png){:class="img-responsive"}
 
-
+### General
 **Package Size**<br>
 definiert, wieviel Datensätze auf einen Rutsch in das BW geladen werden sollen. Je nachdem, welche Folgeaktivitäten im BW für dieses InfoPackage hinterlegt sind, können Werte zwischen 2000 und 20000 sinnvoll sein.
 
@@ -13,6 +12,7 @@ Wenn diese Option angehakt ist, wartet die Komponente auf die vollständige Verb
 **Trigger Process Chain after Upload**<br>
 Ist in dieses Textfeld der Name einer BW-Prozesskette eingetragen, wird diese nach dem Ladevorgang automatisch gestartet.
 
+### SAP BI 3rd party notification
 **No InfoPackage Start (Only Wait)**<br>
 Standardmäßig wird das InfoPackage beim Starten des SSIS-Packete ebenfalls mit gestartet. Wenn diese Option gesetzt ist, passiert das nicht. Die Komponente wartet dann, bis das Infopackage im BW von Hand gestartet wurde.
 
@@ -22,6 +22,7 @@ Siehe Abschnitt [Externe Benachrichtigung](./externe-benachrichtigung)
 **Request ID variable**<br>
 Siehe Abschnitt [Externe Benachrichtigung](./externe-benachrichtigung)
 
+### Performance Improvement
 **Debug Details**<br>
 Erzeugt mehr und detailliertere Protokolleinträge, die für die Fehlersuche genutzt werden können.
 

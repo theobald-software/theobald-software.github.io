@@ -1,7 +1,7 @@
 ---
 ref: xi-open-hub-service-ohs-02
 layout: page
-title: Eine OHS-Extraktion definieren
+title: Eine OHS Extraktion definieren
 description: Suchen einer OHS-Extraktion
 product: xtract-is
 parent: open-hub-service

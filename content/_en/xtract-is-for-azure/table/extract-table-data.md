@@ -1,7 +1,7 @@
 ---
 ref: xiaa-table-01
 layout: page
-title: Extracting Table Data
+title: Defining a Table Data Extraction
 description: Extract Table Data
 product: xtract-is-for-azure
 parent: table

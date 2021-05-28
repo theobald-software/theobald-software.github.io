@@ -1,7 +1,7 @@
 ---
 ref: xi-hierarchy-01
 layout: page
-title: Hierarchien suchen
+title: Eine BW Hierarchie Extraktion definieren
 description: Hierarchien suchen
 product: xtract-is
 parent: hierarchy

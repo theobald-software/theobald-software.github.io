@@ -1,7 +1,7 @@
 ---
 ref: xu-abap-reports-02
 layout: page
-title: Define a Report Extraction
+title: Defining a Report Extraction
 description: Define a Report Extraction
 product: xtract-for-alteryx
 parent: reports

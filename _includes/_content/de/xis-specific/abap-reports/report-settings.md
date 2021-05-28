@@ -1,7 +1,8 @@
-Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
+Über den *Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![Report-Preferences](/img/content/Report-Preferences.png){:class="img-responsive"}
 
+### String Conversion
 **Automatic String Conversion** <br>
 bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert, wenn SAP ein Unicode-System ist, und nach VarChar, wenn SAP kein Unicode-System ist.
 
@@ -11,6 +12,7 @@ bedeutet, dass die Datenquelle alle Strings nach VarChar konvertiert.
 **Convert Strings to NVarChar** <br>
 bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert.
 
+### Batch Processing
 **Use Batch** <br>
 Definiert, ob der Report im Hintergrund ausgeführt werden soll. Das ist vor allem dann sinnvoll, wenn der Report eine ALV-Ausgabe hat.
 
@@ -23,6 +25,7 @@ Definiert den Name des Jobs im SAP unter dem der Report im Hintergrund ausgefüh
 **Spool Destination** <br>
 Definiert das Ausgabegerät (den Drucker) für den Spooljob.
 
+### Misc.
 **Custom Function** <br>
 Definiert den Funktionsbaustein der durch den Beutzer in SAP angelegt wurde.
 

@@ -1,7 +1,7 @@
 ---
 ref: xi-open-hub-service-ohs-04
 layout: page
-title: Extraction Settings
+title: Settings
 description: Settings
 product: xtract-is
 parent: open-hub-service-ohs

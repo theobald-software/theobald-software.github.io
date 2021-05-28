@@ -55,7 +55,7 @@ The window “Define Data Source for SAP ODP” contains several subsections:
 - [Operational Data Provider](./odp/odp-functions-ov#operational-data-provider) - displays the name of the source object
 - [Additional info](./odp/odp-functions-ov#additional-info) - displays the ODP provider context and the data type of the source object
 - [Update mode](./odp/odp-functions-ov#update-mode) - defines the update mode, full or delta update
-- [Fields](./odp/odp-functions-ov#filtering---dynamic-setting-of-the-selection-filters) - allows selection and setting of the filter options for [extractors](./odp/odp-extractors)
+- [Fields](./odp/odp-functions-ov#filtering---dynamic-setting-of-the-selection-filters) - allows selection and setting of the filter options for [extractors](../odp/odp-extractors)
 - Preview - Section with a real-time preview of the extraction data
 
 #### Buttons

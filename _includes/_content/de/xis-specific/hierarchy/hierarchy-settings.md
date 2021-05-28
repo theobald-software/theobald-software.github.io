@@ -1,16 +1,8 @@
-Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
+Über den *Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![XIS_BWHierarchy_settings](/img/content/XIS_BWHierarchy_settings.png){:class="img-responsive"}
 
-**Automatic String Conversion**<br>
-bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert, wenn SAP ein Unicode-System ist, und nach VarChar, wenn SAP kein Unicode-System ist.
-
-**Convert Strings to VarChar**<br>
-bedeutet, dass die Datenquelle alle Strings nach VarChar konvertiert.
-
-**Convert Strings to NVarChar**<br>
-bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert.
-
+### Extraction settings
 
 **Representation**
 
@@ -27,17 +19,28 @@ bedeutet, dass die zugehörigen Stammdaten-Texte in der jeweiligen Anmeldesprach
 **Legacy Mode**<br>
 wenn die Option aktiviert ist, werden weder Links noch Intervalle aufgelöst noch ungültige Knoten bei Hierarchien mit zeitabhängiger Struktur herausgefiltert und die Node-Ids genau so übetragen, wie sie im SAP in der Tabelle stehen.
 
-**Natural Representation Settings**<br>
-ist nur aktiv, wenn Representation den Wert *Natural/flattened* hat.
+### String conversion
+**Automatic String Conversion**<br>
+bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert, wenn SAP ein Unicode-System ist, und nach VarChar, wenn SAP kein Unicode-System ist.
+
+**Convert Strings to VarChar**<br>
+bedeutet, dass die Datenquelle alle Strings nach VarChar konvertiert.
+
+**Convert Strings to NVarChar**<br>
+bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert.
+
+
+### Natural Representation Settings
+Diese Einstellungen sind nur aktiv, wenn **Representation** den Wert *Natural/flattened* hat.
 
 **Level count**<br>
-Legt die maximale Anzahl der Ebenen fest, falls die Representation Natural gewählt ist. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen.
+Legt die maximale Anzahl der Ebenen fest, falls die Representation Natural gewählt ist.
 
 **Leaves only**<br>
 liefert nur für die Blätter jeweils einen eigenen Datensatz.
 
 **Fill empty levels**<br>
-Es wird das unterste Element in der Hierarchie bis in die letzte Ebene kopiert. Im nächsten Screenshot sehen Sie die obige Hierarchie in der Repräsentation Natural mit 5 Ebenen und der Option Repeat Leaves.
+Es wird das unterste Element in der Hierarchie bis in die letzte Ebene kopiert.
 
 **Description texts for levels**<br>
 bedeutet, dass für jedes Level-Feld *LevelN* das Feld *LevelTextN* ausgegeben wird, welches den Stammdaten-Text in der jeweiligen Anmeldesprache enthält. 

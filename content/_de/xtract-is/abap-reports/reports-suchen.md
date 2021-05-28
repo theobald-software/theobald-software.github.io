@@ -1,7 +1,7 @@
 ---
 ref: xi-report-02
 layout: page
-title: Report extrahieren
+title: Eine Report Extraktion definieren
 description: Report extrahieren
 product: xtract-is
 parent: report

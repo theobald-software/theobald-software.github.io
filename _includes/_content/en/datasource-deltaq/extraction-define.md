@@ -2,10 +2,10 @@
 
 Within the editor "Look Up OLTP Source", search for **OLTP Source** (Data Source) by using the **Search** (magnifying glass symbol). You can use wildcards (*), if needed.
 
-The following example shows the download of material master data from the DataSource *0MATERIAL_ATTR*.
-
+The search dialoge "Look Up OLTP Source" opens.
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
 
+The following example shows the download of material master data from the DataSource *0MATERIAL_ATTR*.
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
 
 ### Step 2: Set Update Mode (2)

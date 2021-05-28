@@ -6,7 +6,9 @@
 - If you use BW4Hana2.0, select **Table** as your extraction type and make sure that the open hub destination type in SAP is set to *database table*. 
 - If you use BW7.x or below, select **Third party tool (legacy)** as you extractionr type and make sure that the open hub destination type in SAP is set to *third party tool*.
 ![OHS-Look-Up](/img/content/xis/ohs-sap-destinationtype.png){:class="img-responsive" }
-3. In the main window of the OHS component, click **[Look Up]** (binocular symbol) to look up an OHS extraction.
+3. In the main window of the OHS component, click **[Look Up]** (binocular symbol) to look up an OHS extraction.<br/>
+The search dialoge "OHS Look Up" opens.
+
 4. Search and select your extraction. You can use wildcards ( * ) for the search.
 ![OHS-Search-001](/img/content/xis/OHS-Search-001.png){:class="img-responsive" }
 5. Click **[OK]** to confirm the selection. All meta data are retrieved from the BW and displayed in the main window of the component.

@@ -1,7 +1,7 @@
 ---
 ref: xi-bw-loader-02
 layout: page
-title: InfoPackages suchen
+title: Eine BW Loader Extraktion definieren
 description: InfoPackages suchen
 product: xtract-is
 parent: bw-loader

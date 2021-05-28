@@ -1,7 +1,7 @@
 ---
 ref: xi-table-01
 layout: page
-title: Tabellen extrahieren
+title: Eine Tabellen Extraktion definieren
 description: Tabellen extrahieren
 product: xtract-is
 parent: xtract-is-table

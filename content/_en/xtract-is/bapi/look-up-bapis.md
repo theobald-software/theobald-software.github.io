@@ -1,7 +1,7 @@
 ---
 ref: xi-bapi-01
 layout: page
-title: Look Up BAPIs
+title: Defining a BAPI Extraction
 description: Look Up BAPIs
 product: xtract-is
 parent: bapi

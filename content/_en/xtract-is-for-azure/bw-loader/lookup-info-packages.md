@@ -1,7 +1,7 @@
 ---
 ref: xia-bw-loader-02
 layout: page
-title: Look Up InfoPackages
+title: Defining a BW Loader Extraction
 description: Look Up InfoPackages
 product: xtract-is-for-azure
 parent: bw-loader

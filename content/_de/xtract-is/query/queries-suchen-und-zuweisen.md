@@ -1,7 +1,7 @@
 ---
 ref: xi-query-01
 layout: page
-title: Queries suchen und zuweisen
+title: Eine Query Extraktion definieren
 description: Queries suchen und zuweisen
 product: xtract-is
 parent: query

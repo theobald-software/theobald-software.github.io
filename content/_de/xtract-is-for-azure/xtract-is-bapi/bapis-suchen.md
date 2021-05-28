@@ -1,7 +1,7 @@
 ---
 ref: xia-bapi-01
 layout: page
-title: BAPIs suchen
+title: Eine BAPI Extraktion definieren
 description: BAPIs suchen
 product: xtract-is-for-azure
 parent: xtract-is-bapi

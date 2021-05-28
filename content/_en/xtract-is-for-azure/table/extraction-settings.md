@@ -1,7 +1,7 @@
 ---
 ref: xiaa-table-06
 layout: page
-title: Extraction settings
+title: Settings
 description: Table Properties
 product: xtract-is-for-azure
 parent: table

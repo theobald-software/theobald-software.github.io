@@ -1,7 +1,14 @@
-By double-clicking the data flow component, the editor is opened. The search form appears with another click of the binocular button. By using wildcards (* as a placeholder), a hierarchy can be selected.
+### Defining a BW Hierarchy Extraction
 
-![Hierarchy-Search-01](/img/content/Hierarchy-Search-01.png){:class="img-responsive" }
-
+1. Double-click the **[icon]**. The window "Extract SAP BW Hierarchies" opens.
+2. Click on the **[binocular button]**.
+![Hierarchy-Search-02](/img/content/Hierarchy-Search-02.png){:class="img-responsive" }
+The search dialoge "Look Up Hierarchy" opens.
+	
+### Looking up a BW Hierarchy
+![Hierarchy-Search-01](/img/content/Hierarchy-Search-01.png){:class="img-responsive"} 
+3. Search for **Hierarchy Name** or **InfoObject** by using the **[binocular button]**, you can use wildcards (*), if needed.
+4. Select an item from the list. 
+5. Click **[OK]** to confirm.
 After making your selection, the component saves all relevant data need for extraction later on:
 
-![Hierarchy-Search-02](/img/content/Hierarchy-Search-02.png){:class="img-responsive" }
