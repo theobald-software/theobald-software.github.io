@@ -19,7 +19,7 @@ The following fields and/or custom properties of the component allow entry of an
 |Field Name|Comment|
 |:----|:----|
 |*Variables*| Enter an SSIS variable to fill a BEx variable, see [Variables](./variables). <br>For BEx variables of type *Multiple Single* enter a single SSIS variable, set a delimiter for custom property *DelimiterForMultipleSSISVariableValues*, enter multiple single values in the SSIS variable separated by the delimiter. |
-|*Member Filter*        |When the field *variable* is filled with multiple single entries separated by comma, use *Member Filter* to filter the input.|
+|*Member Filter*        |Enter an SSIS variable in the field *variable*. The SSIS variable can be filled with multiple single entries separated by comma.|
 |*Extraction Type MDX* |SSIS variables can be used as part of the freehand MDX statement for BEx variables or dimension member filters. |
 |*MDXVariable*        |Use *MDXVariable* in combination with *Extraction Type MDX*. Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement.|
 

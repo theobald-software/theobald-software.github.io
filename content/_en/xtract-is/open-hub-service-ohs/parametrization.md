@@ -19,8 +19,8 @@ The following custom properties can be parameterized:
 |Property Name|Description|
 |:----|:----|
 | *[Xtract OHS].[ConvertsDates]*| Enable or disable conversion of SAP dates. |
-| *[Xtract OHS].[ConvertsTimes]*| Enable or disable conversion of SAP dates. |
-| *[Xtract OHS].[InvalidDateReplacement]*| In case of no convertable date values you need to enter a default date value. Every invalid value will be converted into this value.|
+| *[Xtract OHS].[ConvertsTimes]*| Enable or disable conversion of SAP times. |
+| *[Xtract OHS].[InvalidDateReplacement]*| In case of invalid date values you need to enter a default date value. Every invalid value will be converted into this value.|
 | *[Xtract OHS].[MaxDateReplacement]*| Converts the SAP date 9999XXXX to the entered value. |
 | *[Xtract OHS].[MinDateReplacement]*| Converts the SAP date 00000000 to the entered value.|
 
