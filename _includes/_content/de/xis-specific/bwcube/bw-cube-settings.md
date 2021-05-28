@@ -27,7 +27,7 @@ Definiert, dass sich der Name der Pipeline-Elemente aus der Beschreibung ergibt 
 Definiert, dass die Werte der Kennzahlen so ausgegeben werden, wie im Query-Designer definiert (z.B. Skalierungsfaktor und Dezimalstellen).
 
 **Debug Details** <br>
-Diese Option erzeugt eine detaillierte Ausgabe der einzelnen Schritte im SSIS-Protokoll.
+Erzeugt mehr und detailliertere Protokolleinträge, die für die Fehlersuche genutzt werden können.
 
 **Measure Unit in Resultset** <br>
 Die Einheiten der Kennzahlen werden angezeigt.

@@ -1,4 +1,4 @@
-Click the *Settings* link to open the settings dialog.
+Click the *Settings* link to open the settings window.
 
 ![XIS_BWHierarchy_settings](/img/content/XIS_BWHierarchy_settings.png){:class="img-responsive" }
 
@@ -30,7 +30,7 @@ All strings are converted to NVarChar regardless of whether the source system is
 
 
 ### Natural Representation Settings
-is active only, when Representation has the value *Natural/flattened*.
+These settings are only active if **Representation** has the value *Natural/flattened*.
 
 **Level Count**<br>
 Defines the maximum number of levels if the representation natural is selected.

@@ -31,7 +31,7 @@ bedeutet, dass die Datenquelle alle Strings nach NVarChar konvertiert.
 
 
 ### Natural Representation Settings
-ist nur aktiv, wenn Representation den Wert *Natural/flattened* hat.
+Diese Einstellungen sind nur aktiv, wenn **Representation** den Wert *Natural/flattened* hat.
 
 **Level count**<br>
 Legt die maximale Anzahl der Ebenen fest, falls die Representation Natural gewählt ist.

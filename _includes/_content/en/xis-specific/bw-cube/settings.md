@@ -26,7 +26,7 @@ Debug Details
 Creates an detailed output of the single steps in the SSIS-protocol.
 
 **Debug Details**<br>
-
+Generates more detailed log entries to enable easier error detection.
 
 **Measure Unit in Resultset**<br>
 Displays the units of the key figures.
