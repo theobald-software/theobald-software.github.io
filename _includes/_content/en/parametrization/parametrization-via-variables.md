@@ -12,7 +12,7 @@ The following example shows how an SSIS variable named *@vMONTH* is used as a pa
 4. Open the SSIS variables window and add an SSIS variable with the same name, but without the @-symbol (3).
 ![Variables](/img/content/xis/xis_vars.png){:class="img-reagierend"}
 5. Make sure to select the correct data type. In this case set the data type to *String*.
-6. Use the variable by entering values directly into the *Value* field or by assigning values in SSIS. <br>
+6. Use the variable by entering values directly into the *Value* field or by assigning dynamic values in SSIS. <br>
 
 ******
 #### Related Links
