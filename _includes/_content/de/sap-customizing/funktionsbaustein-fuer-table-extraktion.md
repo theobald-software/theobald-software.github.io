@@ -34,4 +34,4 @@ Der Funktionsbaustein Z_THEO_READ_TABLE kann aufgrund seiner Callback-Funktional
 
 ***********
 #### Weiterführende Links
-- [Install Z_XTRACT_IS_READ_TABLE Manually](https://kb.theobald-software.com/sap/custom-function-module-manual-installation#install-z_xtract_is_table)
+- [Install Z_THEO_READ_TABLE Manually](https://kb.theobald-software.com/sap/custom-function-module-manual-installation#installation-of-the-function-module-z_theo_read_table)
