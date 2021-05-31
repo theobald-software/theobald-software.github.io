@@ -69,6 +69,54 @@ Nachdem der Report erstellt wurde, können Sie auf den Query Builder zugreifen, 
 **Tipp:** Erfahrene Benutzer können den Query string direkt in den Report-Assistenten eingeben, ohne den Query Builder zu verwenden, siehe [Metadata-Zugriff über HTTP](../../fortgeschrittene-techniken/metadata-zugriff-ueber-http-json).
 
 
+### Parametrisierung
+
+Der Xtract Universal Designer verwendet für die Parametriesierung [Laufzeitparameter](../../extraktionen-ausfuehren-und-einplanen/extraktionsparameter).
+
+Die Laufzeitparameter sind im Query Builder verfügbar. Sie können eine der folgenden Eigenschaften (**Behaviours**) annehmen: <br>
+
+- *Default:* Verwendet den Wert, der im Xtract Universal Designer definiert wurde.
+- *Constant:* Geben Sie hier einen konstanten Wert ein für den Parameter ein.
+- *Parameterized:* Geben Sie hier den Namen eines dynamischen Abfrageparameters ein, der zu Laufzeit übergeben wird.
+Der Parameter unterstützt die Verwendung von Formeln.
+
+ {: .box-note }
+**Hinweis:** Laufzeitparameter erlauben die Eingabe eines einzelnen Parameters.  
+Wenn man mehrere Abfrageparameter verwenden möchte, kann man mit den Bordmitteln des VS Report Designers einen *berechneten Abfrageparameter* zusammenbauen und diesen als Laufzeitparameter übergeben.
+
+#### Dynamische Laufzeitparameter definieren
+
+Verwenden Sie VS Abfrageparameter als Eingabe für Xtract Laufzeitparameter.
+
+1. Um einen neuen Abfrageparameter zu erstellen, rechtklicken Sie auf das Dataset im Fenster *Report Data* und wählen Sie **Dataset Properties** Das Fenster "Dataset Properties" öffnet sich.
+2. Wechseln Sie in den Tab *Parameters* und klicken Sie auf **[Add]**.
+![Query-Parameter](/img/content/xu/ssrs/query-parameters.png){:class="img-responsive"}
+3. Geben Sie einen *Parameter Name*(1) und einen *Parameter Value* ein oder verwenden Sie **[f(x)]**, um Formeln hinzuzufügen oder mehrere Eingaben zu kombinieren.
+4. Wechseln Sie in den Tab *Query* und klicken Sie auf **[Query Designer...]**. Das Fenster "Query Designer" öffnet sich.
+![Query-Designer](/img/content/xu/ssrs/QueryDesigner.png){:class="img-responsive"}
+5. Wählen Sie *Parameterized* als **Behaviour** des Laufzeitparameters aus, den Sie dynamisieren möchten.
+6. Geben Sie den Namen des Abfrageparameters (1) unter **Value** ein.
+7. Bestätigen Sie Ihre Eingabe mit **[OK]**.
+
+
+#### Optionale Parameter
+
+Wenn ein Abfrageparameter NULL ist, wird der Parameter zu Laufzeit nicht übergeben und der Parameter wird ignoriert.
+
+ {: .box-note }
+**Hinweis:** Abhängig vom Extraktionstyp können einige Laufzeitparameter nicht ignoriert werden. Insbesondere *Custom Parameters* sind i.d.R. verpflichtend.
+
+1. Rechtsklicken Sie auf das Eingabefeld, das optional sein soll und wählen Sie *Parameter Properties*. Das Fenster "Report Parameter Properties" öffnet sich.
+![Input-Field](/img/content/xu/ssrs/optional-params.png){:class="img-responsive"}
+2. Aktivieren Sie die Checkbox **Allow null value** im Tab *General*.
+3. Bestätigen Sie Ihre Eingabe mit **[OK]**. Eine Checkbox **NULL** wird neben Ihrem Eingabefeld angezeigt.
+4. Wenn die Checkbox **NULL** aktiv ist, wird der Parameter zur Laufzeit ignoriert.
+
+ {: .box-tip }
+**Tipp:** Sie können auch einen berechneten Abfrageparameter verwenden, um den Wert NULL zu erhalten. Erstellen Sie eine Formel, die *Nothing* als Wert zurückgibt.
+
+
 #### Weiterführende Links
 - [Berichtsentwurfstipps (Berichts-Generator und SSRS)](https://docs.microsoft.com/de-de/sql/reporting-services/report-design/report-design-tips-report-builder-and-ssrs?view=sql-server-ver15)
 - [Reporting Services-Tutorials (SSRS)](https://docs.microsoft.com/de-de/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15)
+- [Hinzufügen eines Abfrageparameters zum Erstellen eines Berichtsparameters](https://docs.microsoft.com/de-de/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder?view=sql-server-ver15#Query)
