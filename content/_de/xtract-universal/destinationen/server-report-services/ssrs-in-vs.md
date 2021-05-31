@@ -70,41 +70,50 @@ Nachdem der Report erstellt wurde, können Sie auf den Query Builder zugreifen, 
 
 
 ### Parametrisierung
-Xtract Universal Designer uses [runtime parameters](../../execute-and-automate-extractions/extraction-parameters) for parameterization.
 
-Runtime parameters are accessible in the Query Builder. They can have one of the following **Behaviors**: <br>
+Der Xtract Universal Designer verwendet für die Parametriesierung [Laufzeitparameter](../../extraktionen-ausfuehren-und-einplanen/extraktionsparameter).
+
+Die Laufzeitparameter sind im Query Builder verfügbar. Sie können eine der folgenden Eigenschaften (**Behaviours**) annehmen: <br>
 
 - *Default:* Verwendet den Wert, der im Xtract Universal Designer definiert wurde.
-- *Constant:* Geben Sie hier einen konstanten Wert ein.
-- *Parameterized:* Geben Sie hier den Namen eines dynamischen Query-Parameters ein, der zu Laufzeit übergeben wird.
+- *Constant:* Geben Sie hier einen konstanten Wert ein für den Parameter ein.
+- *Parameterized:* Geben Sie hier den Namen eines dynamischen Abfrageparameters ein, der zu Laufzeit übergeben wird.
 Der Parameter unterstützt die Verwendung von Formeln.
 
  {: .box-note }
 **Hinweis:** Laufzeitparameter erlauben die Eingabe eines einzelnen Parameters.  
-Wenn man mehrere Query Parameter verwenden möchte, kann man mit den Bordmitteln des VS Report Designer einen *Computed Query Parameter* zusammenbauen und diesen als Laufzeitparameter übergeben.
+Wenn man mehrere Abfrageparameter verwenden möchte, kann man mit den Bordmitteln des VS Report Designers einen *berechneten Abfrageparameter* zusammenbauen und diesen als Laufzeitparameter übergeben.
 
+#### Dynamische Laufzeitparameter definieren
 
-#### How to set dynamic Runtime Parameters
+Verwenden Sie VS Abfrageparameter als Eingabe für Xtract Laufzeitparameter.
 
-Use VS query parameters as input for Xtract runtime parameters.
-
-1. To create a new query parameter right-click on the data set in the *Report Data* and select **Dataset Properties**. The window "Dataset Properties" opens.
-2. Switch to the tab *Parameters* and press **[Add]**.
+1. Um einen neuen Abfrageparameter zu erstellen, rechtklicken Sie auf das Dataset im Fenster *Report Data* und wählen Sie **Dataset Properties** Das Fenster "Dataset Properties" öffnet sich.
+2. Wechseln Sie in den Tab *Parameters* und klicken Sie auf **[Add]**.
 ![Query-Parameter](/img/content/xu/ssrs/query-parameters.png){:class="img-responsive"}
-3. Enter a *Parameter Name* (1) and a *Parameter Value* or use the **[f(x)]** button to use formulas and/or combine multiple input values.
-4. Confirm your input with **[OK]** and navigate to the *Query Builder*.
+3. Geben Sie einen *Parameter Name*(1) und einen *Parameter Value* ein oder verwenden Sie **[f(x)]**, um Formeln hinzuzufügen oder mehrere Eingaben zu kombinieren.
+4. Wechseln Sie in den Tab *Query* und klicken Sie auf **[Query Designer...]**. Das Fenster "Query Designer" öffnet sich.
 ![Query-Designer](/img/content/xu/ssrs/QueryDesigner.png){:class="img-responsive"}
-5. Select *Parameterized* as the **Behaviour** of the runtime parameter you want to dynamize.
-6. Enter the name of the new query parameter (1) under **Value**.
+5. Wählen Sie *Parameterized* als **Behaviour** des Laufzeitparameters aus, den Sie dynamisieren möchten.
+6. Geben Sie den Namen des Abfrageparameters (1) unter **Value** ein.
+7. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 
-#### How to make Parameters optional
 
-If a query parameter is NULL, that parameter is not passed at runtime and thus will be ignored.
+#### Optionale Parameter
 
-1. Right-click the input field of the parameter you want to be optional and select *Parameter Properties*. The window "Report Parameter Properties" opens.
-2. In the *General* tab, activate the checkbox **Allow null value**.
-3. Confirm your input with **[OK]**. A checkbox **NULL** appears next to the input field.
-4. If the checkbox **NULL** is activated, the parameter will be ignored at runtime.
+Wenn ein Abfrageparameter NULL ist, wird der Parameter zu Laufzeit nicht übergeben und der Parameter wird ignoriert.
+
+ {: .box-note }
+**Hinweis:** Abhängig vom Extraktionstyp können einige Laufzeitparameter nicht ignoriert werden. Insbesondere *Custom Parameters* sind i.d.R. verpflichtend.
+
+1. Rechtsklicken Sie auf das Eingabefeld, das optional sein soll und wählen Sie *Parameter Properties*. Das Fenster "Report Parameter Properties" öffnet sich.
+![Input-Field](/img/content/xu/ssrs/optional-params.png){:class="img-responsive"}
+2. Aktivieren Sie die Checkbox **Allow null value** im Tab *General*.
+3. Bestätigen Sie Ihre Eingabe mit **[OK]**. Eine Checkbox **NULL** wird neben Ihrem Eingabefeld angezeigt.
+4. Wenn die Checkbox **NULL** aktiv ist, wird der Parameter zur Laufzeit ignoriert.
+
+ {: .box-tip }
+**Tipp:** Sie können auch einen berechneten Abfrageparameter verwenden, um den Wert NULL zu erhalten. Erstellen Sie eine Formel, die *Nothing* als Wert zurückgibt.
 
 
 #### Weiterführende Links

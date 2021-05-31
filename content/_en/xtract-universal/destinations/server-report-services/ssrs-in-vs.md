@@ -85,11 +85,11 @@ If you want to use multiple inputs for a runtime parameter, you can use VS Repor
 
 Use VS query parameters as input for Xtract runtime parameters.
 
-1. To create a new query parameter right-click on the data set in the *Report Data* and select **Dataset Properties**. The window "Dataset Properties" opens.
+1. To create a new query parameter right-click the data set in the *Report Data* section and select **Dataset Properties**. The window "Dataset Properties" opens.
 2. Switch to the tab *Parameters* and press **[Add]**.
 ![Query-Parameter](/img/content/xu/ssrs/query-parameters.png){:class="img-responsive"}
 3. Enter a *Parameter Name* (1) and a *Parameter Value* or use the **[f(x)]** button to use formulas and/or combine multiple input values.
-4. Switch to the *Query* tab and press **[Query Builder...]**. The window "Query Designer" opens.
+4. Switch to the *Query* tab and press **[Query Designer...]**. The window "Query Designer" opens.
 ![Query-Designer](/img/content/xu/ssrs/QueryDesigner.png){:class="img-responsive"}
 5. Select *Parameterized* as the **Behaviour** of the runtime parameter you want to dynamize.
 6. Enter the name of the new query parameter (1) under **Value**.
