@@ -4,8 +4,8 @@ Use parameters to assign different values at SSIS package runtime.
 Parameters can be populated using standard SSIS functionality, such as expressions and SSIS variables. 
 
 Xtract IS offers two technical options for parameterization:
-- [Properties](./parameterization-prop)
-- [SSIS Variables](./parameterization-var)
+- [Properties](./parameterization/parameterization-prop)
+- [SSIS Variables](./pparameterization/parameterization-var)
 
 {: .box-tip }
 **Recommendation:** Microsoft's preferred and recommended way of parameterization is using properties. 
@@ -16,12 +16,12 @@ Depending on the Xtract IS component you can either use SSIS variables or proper
 
 | Component   | SSIS Variables | Properties |
 |-------------|:-----:|:----:|
-| [BAPI](../bapi/parametrization)        |   x    |      | 
-| [BW Cube](../bw-cube/parametrization)     |   x    |      | 
-| [BW Hierarchy](../hierarchy/paramerization)|    x   |      |
-| [DeltaQ](../deltaq/parametrization)      | x      |  x    |
-| [ODP](../odp/odp-parametrization)         |   x    |   x   |
-| [OHS](../open-hub-service-ohs/parametrization)         |     x  |    x  |
-|[Query](../query/parametrization)       |   x    |      |
-| [Report](../report/parametrization) |    x   |      | 
-| [Table](../table/table-parametrization)       | x      |  x    |
+| [BAPI](./bapi/parametrization)        |   x    |      | 
+| [BW Cube](./bw-cube/parametrization)     |   x    |      | 
+| [BW Hierarchy](./hierarchy/paramerization)|    x   |      |
+| [DeltaQ](./deltaq/parametrization)      | x      |  x    |
+| [ODP](./odp/odp-parametrization)         |   x    |   x   |
+| [OHS](./open-hub-service-ohs/parametrization)         |     x  |    x  |
+|[Query](./query/parametrization)       |   x    |      |
+| [Report](./report/parametrization) |    x   |      | 
+| [Table](./table/table-parametrization)       | x      |  x    |
