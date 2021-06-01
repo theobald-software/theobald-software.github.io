@@ -11,4 +11,4 @@ weight: 88
 lang: en_GB
 
 ---
-{% include _content/en/xis-specific/parametrization.md  %}
+{% include _content/en/xis-specific/parameterization.md  %}
