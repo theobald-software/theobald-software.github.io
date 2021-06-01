@@ -1,6 +1,5 @@
 ### Edit Parameters 
 1. To display editing function for the parameters, depending on the product, click **Edit Parameters** either at the *top* or at the *bottom* of the window “Define data source for SAP ODP”. <br/>
-![ODP Edit parameters](/img/content/odp/odp-settings-edit-parameters1.png){:class="img-responsive"}<br> 
 The window "Edit Runtime Parameters" opens.<br> 
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
 2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
@@ -19,6 +18,6 @@ If there are defined parameters, icon switches to the parameter icon. <br>
 Clicking the icons switches the option between entering actual input values and entering defined parameters.
 <br>
 ![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}<br>
-7. To check the defined parameters, click **[Load live preview]**. <br>
+8. To check the defined parameters, click **[Load live preview]**. <br>
 If you have assigned parameters as selection filters, you are prompted to populate the parameters with actual values. <br>
 ![ODP provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
