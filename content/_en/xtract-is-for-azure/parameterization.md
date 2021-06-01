@@ -1,10 +1,10 @@
 ---
-ref: xtract-is-88
+ref: xtract-is-for-azure88
 layout: page
 title: Parameterization
 description: Parameterization
-product: xtract-is
-parent: xtract-is
+product: xtract-is-for-azure
+parent: xtract-is-for-azure
 childidentifier: parameterization
 permalink: /:collection/:path
 weight: 88

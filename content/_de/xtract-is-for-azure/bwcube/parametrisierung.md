@@ -1,12 +1,13 @@
 ---
-ref: xi-bw-loader-07
+ref: xi-bw-cube-05
 layout: page
 title: Parametrisierung
 description: Parametrisierung
 product: xtract-is
-parent: bw-loader
+parent: bw-cube
 permalink: /:collection/:path
-weight: 7
+weight: 5
 lang: de_DE
 
 ---
+{% include _content/de/xis-specific/bwcube/parametrisierung.md  %}

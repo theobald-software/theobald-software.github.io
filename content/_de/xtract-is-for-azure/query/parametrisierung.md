@@ -1,9 +1,9 @@
 ---
-ref: xi-query-05
+ref: xifa-query-05
 layout: page
 title: Parametrisierung
 description: Parametrisierung
-product: xtract-is
+product: xtract-is-for-azure
 parent: query
 permalink: /:collection/:path
 weight: 5

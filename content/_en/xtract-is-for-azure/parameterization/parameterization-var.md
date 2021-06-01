@@ -1,9 +1,9 @@
 ---
-ref: xis-parametrization-02
+ref: xisfa-parametrization-02
 layout: page
 title: SSIS Variables
 description: Parameterization using SSIS Variables
-product: xtract-is
+product: xtract-is-for-azure
 parent: parameterization
 permalink: /:collection/:path
 weight: 2

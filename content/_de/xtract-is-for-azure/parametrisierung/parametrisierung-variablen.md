@@ -1,9 +1,9 @@
 ---
-ref: xis-parametrization-02
+ref: xisfa-parametrization-02
 layout: page
 title: Parametrisierung mit Variablen
 description: Parametrisierung mit Variablen
-product: xtract-is
+product: xtract-is-for-azure
 parent: parametrisierung
 permalink: /:collection/:path
 weight: 2

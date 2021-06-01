@@ -1,13 +1,13 @@
 ---
-ref: xi-q-delta-11
+ref: xi-report-06
 layout: page
 title: Parametrisierung
 description: Parametrisierung
 product: xtract-is
-parent: xtract-is-deltaq
+parent: report
 permalink: /:collection/:path
-weight: 12
+weight: 6
 lang: de_DE
 
 ---
-{% include _content/de/xis-specific/xtract-is-deltaq/parametrisierung.md  %}
+{% include _content/de/xis-specific/abap-reports/parametrisierung.md  %}

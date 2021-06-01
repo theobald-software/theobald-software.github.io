@@ -1,9 +1,9 @@
 ---
-ref: xi-bapi-08
+ref: xifa-bapi-08
 layout: page
 title: Parameterization
 description: Parametrization
-product: xtract-is
+product: xtract-is-for-azure
 parent: bapi
 permalink: /:collection/:path
 weight: 8

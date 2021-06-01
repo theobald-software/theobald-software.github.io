@@ -1,9 +1,9 @@
 ---
-ref: xi-bw-cube-05
+ref: xifa-bw-cube-05
 layout: page
 title: Parameterization
 description: parametrization
-product: xtract-is
+product: xtract-is-for-azure
 parent: bw-cube
 permalink: /:collection/:path
 weight: 5

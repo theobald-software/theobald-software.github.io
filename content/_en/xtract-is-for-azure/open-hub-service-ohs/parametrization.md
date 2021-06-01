@@ -1,9 +1,9 @@
 ---
-ref: xi-open-hub-service-ohs-05
+ref: xifa-open-hub-service-ohs-05
 layout: page
 title: Parameterization
 description: Parametrization
-product: xtract-is
+product: xtract-is-for-azure
 parent: open-hub-service-ohs
 permalink: /:collection/:path
 weight: 5

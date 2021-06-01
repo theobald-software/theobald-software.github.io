@@ -1,9 +1,9 @@
 ---
-ref: xi-hierarchy-04
+ref: xifa-hierarchy-04
 layout: page
 title: Parameterization
 description: Parameterization
-product: xtract-is
+product: xtract-is-for-azure
 parent: hierarchy
 permalink: /:collection/:path
 weight: 4

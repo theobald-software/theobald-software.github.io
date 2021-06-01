@@ -1,9 +1,9 @@
 ---
-ref: xis-parametrization-01
+ref: xisfa-parametrization-01
 layout: page
 title: Parametrisierung mit Expression Properties
 description: Parametrisierung mit Expression Properties
-product: xtract-is
+product: xtract-is-for-azure
 parent: parametrisierung
 permalink: /:collection/:path
 weight: 1

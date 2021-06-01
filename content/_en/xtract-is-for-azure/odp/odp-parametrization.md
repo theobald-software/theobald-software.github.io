@@ -1,9 +1,9 @@
 ---
-ref: xis-odp-param
+ref: xisfa-odp-param
 layout: page
 title: Parameterization
 description: Parameterization
-product: xtract-is
+product: xtract-is-for-azure
 parent: odp
 permalink: /:collection/:path
 weight: 6

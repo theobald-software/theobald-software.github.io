@@ -11,4 +11,4 @@ lang: en_GB
 
 ---
 
-{% include _content/en/parametrization/xis-specific/parameterization/parameterization-prop.md  %}
+{% include _content/en/xis-specific/parameterization/parameterization-prop.md  %}
