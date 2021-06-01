@@ -42,7 +42,7 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 
 ****
 #### Weiterführende Links
-- [Parameterisierung](../parameterisierung/) 
+- [Parameterisierung](../parameterisierung) 
 - [DeltaQ Datasource Parameters](./parameter) 
 - [Customizing Check](./customizing-check) 
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)

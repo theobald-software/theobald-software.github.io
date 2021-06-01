@@ -26,5 +26,5 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 
 ****
 #### Weiterführende Links
-- [SSIS Variablen mit Xtract Komponenten verwende](../parametrisierung/parametrisierung-variablen) 
+- [SSIS Variablen mit Xtract Komponenten verwenden](../parametrisierung/parametrisierung-variablen) 
 - [Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

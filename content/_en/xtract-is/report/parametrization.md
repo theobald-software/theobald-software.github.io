@@ -18,12 +18,12 @@ The following fields and/or custom properties of the component allow entry of an
 
 |Field Name|Comment|
 |:----|:----|
-| *Variant*|see [Variants and Selections](./variants-and-selections).|
-| *Edit*|see [Variants and Selections](./variants-and-selections); Enter an SSIS variable as selection criteria.|
-|*Spool Destination / BatchJobDestination* | see [Settings](./settings).|
-|*BatchJobName*        |see [Settings](./settings).|
-|*BatchJobTimeout*     |see [Settings](./settings).|
-|*ReportName*        |         Should not be used as the structure of the result is varies depending on the reports.    |
+| *Variant*|See [Variants and Selections](./variants-and-selections).|
+| *Edit*|Enter an SSIS variable as selection criteria, see [Variants and Selections](./variants-and-selections).|
+|*Spool Destination / BatchJobDestination* | See [Settings - Spool Destination / BatchJobDestination](./settings).|
+|*BatchJobName*        |See [Settings -BatchJobName](./settings).|
+|*BatchJobTimeout*     |See [Settings - BatchJobTimeout](./settings).|
+|*ReportName*        |  Should not be used as the structure of the result as it varies depending on the reports.    |
 
 ****
 #### Related Links
