@@ -7,12 +7,9 @@ Operational Data Provisioning (ODP) can be used to connect SAP HANA database of 
 - Associated Attribute Views 
 
 ### Using HANA Views
-When [searching](./odp-functions-ov#operational-data-provider) for HANA Views, make sure to select the correct context. 
+Things that need to be considered when using HANA Views:
 
+1. When [searching](./odp-define) for HANA Views, make sure to select the correct context. 
 ![ODP HANA View](/img/content/odp/odp-component-hanaview-salesdocumentitem-01.png){:class="img-responsive"}
-
-{: .box-note }
-**Note:** When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
-
-
-Click **[Load live preview]** to preview the data without executing an extraction.
+2. When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
+3. Click **[Load live preview]** to preview the data without executing an extraction.

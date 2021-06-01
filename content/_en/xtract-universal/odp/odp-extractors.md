@@ -11,7 +11,4 @@ lang: en_GB
 progressstate: 5
 ---
 {% include _content/en/odp/odp-extractors.md %} 
-
-****
-#### Related Links
-- [SAP Objects and Suitable ODP Contexts](../odp#about-xtract-odp)
+{% include _content/en/odp/odp-hierarchy.md %} 

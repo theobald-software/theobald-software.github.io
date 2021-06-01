@@ -7,7 +7,7 @@ Xtract ODP does not change the implementation of application extractors, all fea
 An extractor (in ERP or S/4 HANA) is an encapsulated business object, representing multiple source tables already in the source system  
 and containing business logic.
 
-Extractors can provide the following data types:
+### Available Extractors
 - Transactional data
 - Master data
 - Text data
@@ -23,5 +23,3 @@ Things that need to be considered when using Extractors:
 ![ODP SAPI Search](/img/content/odp/odp-datasource-sapi.png){:class="img-responsive"}
 2. If delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
 3. If the data source is a Hierarchy, there are additional settings, see [Hierarchies](#hierarchies).
-
-{% include _content/en/odp/odp-hierarchy.md %} 

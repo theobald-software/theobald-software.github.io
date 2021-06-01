@@ -6,9 +6,8 @@ description: ABAP CDS Views
 product: xtract-universal
 parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: de_DE
 progressstate: 5
 ---
-
 {% include _content/de/odp/odp-abap-cds-views.md %} 

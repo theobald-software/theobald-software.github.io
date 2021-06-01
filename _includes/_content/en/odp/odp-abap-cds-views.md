@@ -10,7 +10,6 @@ There are two types of CDS available:
 - HANA CDS (defined in XS engine) 
 - ABAP CDS
 
-
 For each ABAP CDS entity defined in the DDL source code, an SQL view is generated in the ABAP Dictionary. 
 The same way as the views created with Dictionary tools (transaction SE11), ABAP CDS entities can be accessed in ABAP using Open SQL statements. 
 
@@ -29,17 +28,12 @@ Due to simplifications in the S/4HANA system, several extractors are now depreca
 To use the deprecated or altered extractors, SAP may deliver extraction relevant (via the analytical annotations) CDS Views.
 
 ### Using ABAP CDS Views
-When [searching](./odp-functions-ov#operational-data-provider) for ABAP CDS Views, make sure to select the correct context. 
 
 {: .box-note }
-**Note:** To find an ABAP CDS view it must have the following Annotation: ```@Analytics.dataExtraction.Enabled: true```. If the source SAP system is not on a HANA DB, an additional Annotation is needed: ```@Analytics.dataCategory: #CUBE/#FACT/#DIMENSION```.
+**Note:**To find an ABAP CDS view it must have the following Annotation: ```@Analytics.dataExtraction.Enabled: true```. If the source SAP system is not on a HANA DB, an additional Annotation is needed: ```@Analytics.dataCategory: #CUBE/#FACT/#DIMENSION```.
 
-
+Things that need to be considered when using BW InfoProviders:
+1. When [searching](./odp-define) for ABAP CDS Views, make sure to select the correct context. 
 ![ODP ABAP CDS View](/img/content/odp/odp-component-cds-costcenter-01.png){:class="img-responsive"}
-
-{: .box-note }
-**Note:** When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
-
-![ODP ABAP CDS View Preview](/img/content/odp/odp-component-cds-costcenter-02-preview.png){:class="img-responsive"}
-
-Click **[Load live preview]** to preview the data without executing an extraction.
+2. When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
+3. Click **[Load live preview]** to preview the data without executing an extraction.

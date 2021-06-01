@@ -1,4 +1,7 @@
 ### Edit Parameters 
+
+Click **Edit Parameters** to create or edit dynamic runtime parameters.
+
 1. To display editing function for the parameters, depending on the product, click **Edit Parameters** either at the *top* or at the *bottom* of the window “Define data source for SAP ODP”. <br/>
 The window "Edit Runtime Parameters" opens.<br> 
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 

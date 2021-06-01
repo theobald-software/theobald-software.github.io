@@ -1,15 +1,14 @@
 ---
-ref: xu-odp-bw
+ref: xu-odp-define
 layout: page
-title: BW InfoProvider
-description: BW InfoProvider
+title: Eine ODP Extraktion definieren
+description: ODP Extracttion
 product: xtract-universal
 parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
-weight: 5
+weight: 2
 lang: de_DE
 progressstate: 5
 ---
 
-
-{% include _content/de/odp/odp-bw-infoproviders.md %} 
+{% include _content/de/odp/odp-define.md %}

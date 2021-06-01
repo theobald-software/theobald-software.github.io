@@ -10,5 +10,4 @@ weight: 4
 lang: en_GB
 progressstate: 5
 ---
-
 {% include _content/en/odp/odp-abap-cds-views.md %} 

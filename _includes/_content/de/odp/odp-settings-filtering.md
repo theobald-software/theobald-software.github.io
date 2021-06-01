@@ -1,4 +1,4 @@
-### Fields - Setzen dynamischer Selektionsfilter
+### Selektion und Filter
 Filterungsoptionen werden über das Hauptfenster der Komponente im Unterabschnitt **Fields** aufgerufen. <br/>
 ![ODP Fields](/img/content/odp/odp-fiter.png){:class="img-responsive" width="600px"}
 

@@ -1,4 +1,4 @@
-### Advanced Settings
+### Fortgeschrittene Einstellungen
 ![ODP General Settings](/img/content/odp/advanced-settings0.png){:class="img-responsive"}
 
 **Package Size**<br>

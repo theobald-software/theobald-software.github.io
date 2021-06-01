@@ -1,5 +1,8 @@
-### Parameter bearbeiten - Edit parameters 
-1. Um die Bearbeitungsfunktion für die Parameter anzuzeigen, klicken Sie je nach Produkt entweder *oben* oder *unten* auf **Edit parameter** im Fenster “Define data source for SAP ODP”. <br/>
+### Parameter bearbeiten 
+
+Klicken Sie auf **Edit Parameters**, um dynamische Laufzeitparameter anzulegen und zu bearbeiten.
+
+1. Um die Bearbeitungsfunktion für die Parameter anzuzeigen, klicken Sie je nach Produkt entweder *oben* oder *unten* auf **Edit parameter** im Fenster “ODP”. <br/>
 ![ODP Edit parameters](/img/content/odp/odp-settings-edit-parameters1.png){:class="img-responsive"}<br> 
 Das Fenster "Edit Runtime Parameters" wird geöffnet.<br> 
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 

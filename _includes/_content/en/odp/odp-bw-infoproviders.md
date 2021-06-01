@@ -23,12 +23,8 @@ Available InfoProvider types are dependent on your source BW and BW/4 HANA syste
 
 
 ### Using BW InfoProviders
-When [searching](./odp-functions-ov#operational-data-provider) for BW InfoProviders, make sure to select the correct context. 
+Things that need to be considered when using BW InfoProviders:
+1. When [searching](./odp-fdefine) for BW InfoProviders, make sure to select the correct context. 
 ![ODP BW Search](/img/content/odp/odp-component-bw-nwdemo-01.png){:class="img-responsive"}
-
-{: .box-note }
-**Note:** When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
-
-![ODP BW Delta](/img/content/odp/odp-bw-infoprov-delta.png){:class="img-responsive"}
-
-Click **[Load live preview]** to preview the data without executing an extraction.
+2. When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
+3. Click **[Load live preview]** to preview the data without executing an extraction.
