@@ -1,9 +1,9 @@
 ---
-ref: xi-table-07
+ref: xifa-table-07
 layout: page
 title: Parameterization 
 description: Parametrization 
-product: xtract-is
+product: xtract-is-for-azure
 parent: table
 permalink: /:collection/:path
 weight: 7

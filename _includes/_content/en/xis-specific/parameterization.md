@@ -5,7 +5,7 @@ Parameters can be populated using standard SSIS functionality, such as expressio
 
 Xtract IS offers two technical options for parameterization:
 - [Properties](./parameterization/parameterization-prop)
-- [SSIS Variables](./pparameterization/parameterization-var)
+- [SSIS Variables](./parameterization/parameterization-var)
 
 {: .box-tip }
 **Recommendation:** Microsoft's preferred and recommended way of parameterization is using properties. 
@@ -23,5 +23,5 @@ Depending on the Xtract IS component you can either use SSIS variables or proper
 | [ODP](./odp/odp-parametrization)         |   x    |   x   |
 | [OHS](./open-hub-service-ohs/parametrization)         |     x  |    x  |
 |[Query](./query/parametrization)       |   x    |      |
-| [Report](./report/parametrization) |    x   |      | 
+| [Report](./abap-reports/parametrization) |    x   |      | 
 | [Table](./table/table-parametrization)       | x      |  x    |
