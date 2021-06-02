@@ -10,9 +10,9 @@ Die folgenden *Custom Properties* können parametrisiert werden:
 | *[Xtract Table].[ConvertsDates]*|Siehe [Benutzerdefinierte Eigenschaften - ConvertsDates](./extraktionseinstellungen#benutzerdefinierte-eigenschaften---custom-properties). Erlaubte Werte sind *True* und *False*. |
 | *[Xtract Table].[CustomFunctionName]*| Entspricht dem Drop-down-Menü *Function Module* in den [Settings](./extraktionseinstellungen) der Table Komponente.|
 | *[Xtract Table].[MaxRows]*| Entspricht dem Feld *Row Limit* in den [Settings](./extraktionseinstellungen) der Table Komponente.|
-| *[Xtract Table].[MinDateReplacement]*|Siehe [Benutzerdefinierte Eigenschaften - MinDateReplacement](./extraktionseinstellungen#benutzerdefinierte-eigenschaften---custom-properties).|
-| *[Xtract Table].[MaxDateReplacement]*|Siehe [Benutzerdefinierte Eigenschaften - MaxDateReplacement](./extraktionseinstellungen#benutzerdefinierte-eigenschaften---custom-properties).|
-| *[Xtract Table].[InvalidDateReplacement]*|Siehe [Benutzerdefinierte Eigenschaften - InvalidDateReplacement](./extraktionseinstellungen#benutzerdefinierte-eigenschaften---custom-properties).|
+| *[Xtract Table].[MinDateReplacement]*|Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000.|
+| *[Xtract Table].[MaxDateReplacement]*|Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX.|
+| *[Xtract Table].[InvalidDateReplacement]*|Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen.|
 | *[Xtract Table].[PackageSize]*| Entspricht dem Feld *Package Size* in den [Settings](./extraktionseinstellungen) der Table Komponente.|
 
 ### Parametrierung mit SSIS Variablen

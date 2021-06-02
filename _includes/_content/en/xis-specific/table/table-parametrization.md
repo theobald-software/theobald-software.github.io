@@ -13,9 +13,9 @@ The following properties can be parameterized:
 | *[Xtract Table].[ConvertsDates]*|See [Custom Properties - ConvertsDates](./extraction-settings#custom-properties). Permitted values are *True* and *False*. |
 | *[Xtract Table].[CustomFunctionName]*| Corresponds to the drop-down menu *Function Module* in the Table component's [Settings](./extraction-settings).|
 | *[Xtract Table].[MaxRows]*|Corresponds to the field *Row Limit* in the Table component's [Settings](./extraction-settings).|
-| *[Xtract Table].[MinDateReplacement]*|See [Custom Properties - MinDateReplacement](./extraction-settings#custom-properties).|
-| *[Xtract Table].[MaxDateReplacement]*|See [Custom Properties - MaxDateReplacement](./extraction-settings#custom-properties).|
-| *[Xtract Table].[InvalidDateReplacement]*|See [Custom Properties - InvalidDateReplacement](./extraction-settings#custom-properties).|
+| *[Xtract Table].[MinDateReplacement]*|Converts the SAP date 00000000 to the entered value.|
+| *[Xtract Table].[MaxDateReplacement]*|Converts the SAP date 9999XXXX to the entered value.|
+| *[Xtract Table].[InvalidDateReplacement]*|In case of invalid date values you need to enter a default date value. Every invalid value will be converted into this value.|
 | *[Xtract Table].[PackageSize]*| Corresponds to the field *Package Size* in the Table component's [Settings](./extraction-settings).|
 
 
