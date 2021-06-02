@@ -24,13 +24,13 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 | *Gateway Service*|Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
 | *Program ID*|Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
 | *Update Mode Variable*| Verwende dieses Feld in Kombination mit dem Update Mode 'V'.|
-| *RequestID*|Entspricht dem Feld *RequestID* in den [Settings](./settings) der DeltaQ Komponente.|
+| *RequestID*|Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|
 | *Edit*| Geben Sie eine SSIS-Variable als Auswahlkriterium ein.|
 
 
 ****
 #### Weiterführende Links
-- [Parameterisierung](../parameterisierung) 
-- [DeltaQ Datasource Parameters](./parameter) 
+- [Parametrisierung](../parametrisierung) 
+- [DeltaQ Datasource Parameters](./datasource-parameter) 
 - [Customizing Check](./customizing-check) 
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)

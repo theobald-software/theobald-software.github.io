@@ -25,5 +25,5 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 ****
 #### Weiterführende Links
 - [Extractionseinstellungen](./extraktionseinstellungen) <br>
-- [Parameterisierung](../parametrisierung/) <br>
+- [Parametrisierung](../parametrisierung) <br>
 - [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)

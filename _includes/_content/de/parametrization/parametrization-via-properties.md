@@ -1,6 +1,6 @@
 ### Ausdrücke für Properties verwenden
 
-1. Erstellen Sie ein SSIS Paket, siehe [Getting Started](../getting-started).
+1. Erstellen Sie ein SSIS Paket, siehe [Erste Schritte](../erste-schritte).
 2. Rechtsklicken Sie auf die *Data Flow Canvas* und wählen Sie **Properties**. Das Fenster "Properties" öffnet sich.<br>
 3. Fügen Sie eine *Expression* hinzu, indem Sie auf **[...]** klicken. Das Fenster "Property Expression Editor" öffnet sich.<br>
 ![Expressions](/img/content/xis/expressions.png){:class="img-reagierend"}
