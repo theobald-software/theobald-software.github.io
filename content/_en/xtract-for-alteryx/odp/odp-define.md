@@ -1,9 +1,9 @@
 ---
-ref: bc-odp-define
+ref: xfa-odp-define
 layout: page
 title: Define an ODP Extraction
 description: ODP Extracttion
-product: board-connector
+product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
 weight: 2

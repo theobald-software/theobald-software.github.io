@@ -1,9 +1,9 @@
 ---
-ref: xu-odp-settings
+ref: xfa-odp-settings
 layout: page
 title: Settings
 description: ODP Settings
-product: board-connector
+product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
 weight: 3

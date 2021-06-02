@@ -6,7 +6,7 @@ description: BW InfoProviders
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
-weight: 3
+weight: 5
 lang: en_GB
 progressstate: 5
 ---

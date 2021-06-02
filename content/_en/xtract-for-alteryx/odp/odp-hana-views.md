@@ -6,7 +6,7 @@ description: HANA Views
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: en_GB
 progressstate: 5
 ---

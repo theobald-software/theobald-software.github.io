@@ -6,7 +6,7 @@ description: ABAP CDS Views
 product: board-connector
 parent: odp
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 progressstate: 5
 ---

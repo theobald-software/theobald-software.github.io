@@ -1,5 +1,4 @@
 ### Fortgeschrittene Einstellungen
-![ODP General Settings](/img/content/odp/advanced-settings0.png){:class="img-responsive"}
 
 **Package Size**<br>
 Die extrahierten Daten werden in Pakete mit der angegebenen Größe aufgeteilt.

@@ -16,11 +16,11 @@ The following section gives an overview of the functions accessible from the mai
 ###  Functions Overview
 The window “ODP” contains the following subsections:
 
-- [Operational Data Provider](./odp/odp-functions-ov#operational-data-provider) (1) - Search and display the name of the source object.
-- [Additional info](./odp/odp-functions-ov#additional-info) (2) - Displays the ODP provider context and the data type of the source object.
-- [Update mode](./odp/odp-functions-ov#update-mode) (3) - Defines the update mode, full or delta update.
-- [Fields](./odp/odp-functions-ov#filtering---dynamic-setting-of-the-selection-filters) (4) - Allows selection and setting of the filter options for [extractors](./odp/odp-extractors).
-- Preview (5) - Click [Load Live Preview] to display real-time preview of the extraction data.
+- [Operational Data Provider](./odp-define#to-search-for-a-data-object) (1) - Search and display the name of the source object.
+- Additional info (2) - Displays the ODP provider context and the data type of the source object.
+- [Update mode](./odp-functions-ov#update-mode) (3) - Defines the update mode, full or delta update.
+- [Fields](./odp-functions-ov#selections-and-filters) (4) - Allows selection and setting of the filter options for [extractors](./odp-extractors).
+- Preview (5) - Click **[Load Live Preview]** to display real-time preview of the extraction data.
 
 #### Buttons
 - **[General Settings](../getting-started/general-settings)** - The General Settings include security, encryption and keys.
