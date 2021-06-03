@@ -10,7 +10,7 @@ Die folgenden *Custom Properties* können parametrisiert werden:
 | *[Xtract DeltaQ].[GatewayService]*|ntspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
 | *[Xtract DeltaQ].[ProgramID]*|Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
 | *[Xtract DeltaQ].[TargetSystem]*|Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *[Xtract DeltaQ].[RequestID]*|Entspricht dem Feld *RequestID* in den [Settings](./settings) der DeltaQ Komponente.|
+| *[Xtract DeltaQ].[RequestID]*|Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|
 | *[Xtract DeltaQ].[UpdateType]*|Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.  |
 
 

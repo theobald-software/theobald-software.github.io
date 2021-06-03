@@ -29,7 +29,7 @@ The following fields and/or custom properties of the component allow entry of an
 
 ****
 #### Related Links
-- [Parameterization](../parameterization/) <br>
+- [Parameterization](../parameterization) <br>
 - [DeltaQ Datasource Parameters](./datasource-parameters) <br>
 - [Customizing Check](./customizing-check) <br>
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
