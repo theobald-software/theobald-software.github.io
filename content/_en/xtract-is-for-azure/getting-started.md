@@ -1,10 +1,10 @@
 ---
-ref: xtract-is-04
+ref: xtract-isfa-04
 layout: page
-title: Getting Started with Xtract IS
-description: Getting Started with Xtract IS
-product: xtract-is
-parent: xtract-is
+title: Getting Started
+description: Getting Started with Xtract IS for Azure
+product: xtract-is-for-azure
+parent: xtract-is-for-azure
 childidentifier: getting-started
 progressstate: 5
 permalink: /:collection/:path
