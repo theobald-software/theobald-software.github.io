@@ -6,7 +6,7 @@ description: BW InfoProvider
 product: board-connector
 parent: odp
 permalink: /:collection/:path
-weight: 2
+weight: 5
 lang: de_DE
 ---
 

@@ -1,15 +1,13 @@
 
-### Select Hierarchy
+### Hierarchies
 
 If the source object is of type Hierarchy, the window "Select Hierarchy" opens.
 
 1. Select a Hierarchy (1) from the list of Hierarchies in the "Select Hierarchy" window. 
-2. Confirm your selection with **[OK]**.
+2. Confirm your selection with **[OK]**. The name of the selected Hierarchy is displayed under **Selected Hierarchy** (2).
 3. Select which segments to extract (3). 
 ![Select-Hierarchy](/img/content/odp/select-hierarchy.png){:class="img-responsive"}
 
-#### Selected Hierarchy
-Displays the name of the selected Hierarchy (2).
 
 #### Segment(s) to extract
 Hierarchies are divided into segments by the API.
@@ -23,4 +21,4 @@ The selected data is displayed in the *Fields* section.
 
 
 {: .box-note }
-**Note:** Hierarchies can be passed at runtime as runtime parameters.
+**Note:** Hierarchies can be passed as runtime parameters at runtime.

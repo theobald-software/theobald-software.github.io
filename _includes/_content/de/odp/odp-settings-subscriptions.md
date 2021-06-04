@@ -1,8 +1,5 @@
 ### Abonnements
 Um weitere Details über den Abonnentenprozess anzuzeigen, klicken Sie auf **Show active subscriptions**.
-<br/>
-![Abonnements](/img/content/odp/odp-settings-subscriptions.png){:class="img-responsive"}
-<br/>
 
 {: .box-tip } 
 **Tip:** Die Informationen, die Im Fenster “Delta Subscriptions for product” angezeigt werden, können auch in der SAP-Transaktion *ODQMON* angeschaut werden.

@@ -1,18 +1,15 @@
 ---
 ref: xfa-odp-extractor
 layout: page
-title: Eine ODP Extraktion definieren
+title: Extraktoren
 description: Extraktoren und Datasources
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
-weight: 5
+weight: 7
 lang: de_DE
 progressstate: 5
 ---
 
 {% include _content/de/odp/odp-extractors.md %} 
-
-****
-#### Weiterführende Links
-- [SAP-Objekte und geeignete ODP-Kontexte](../odp#was-ist-xtract-odp)																   
+{% include _content/de/odp/odp-hierarchy.md %} 

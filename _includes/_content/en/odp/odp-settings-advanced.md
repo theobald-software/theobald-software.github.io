@@ -1,5 +1,4 @@
 ### Advanced Settings
-![ODP General Settings](/img/content/odp/advanced-settings0.png){:class="img-responsive"}
 
 **Package Size**<br>
 The extracted data will be split into packages of the defined size. 

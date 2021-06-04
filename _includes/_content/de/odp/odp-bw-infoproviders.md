@@ -7,9 +7,9 @@ Die verfügbaren InfoProvider-Typen sind abhängig von Ihrem BW und BW/4 HANA Qu
 - DataStore-Objekte (erweitert) (mit Delta-Extraktion)
 - CompositeProvider - Objekttyp HCPR (vollständige Extraktion)
 - InfoObjects
-Stammdaten
+  - Stammdaten
   - Texte
-Hierarchien
+  - Hierarchien
 - Query als InfoProvider
 
 ### Zusätzliche InfoProvider verfügbar in BW-Systemen
@@ -22,13 +22,9 @@ Hierarchien
 - InfoSets
 
 
-### Using BW InfoProviders
-When [searching](./odp-functions-ov#operational-data-provider) for BW InfoProviders, make sure to select the correct context. 
+### BW InfoProviders verwenden
+Worauf Sie bei der Verwendung von BW Infoproviders achten müssen: 
+1. Wenn Sie nach [suchen](./odp-fdefine) stellen Sie sicher, dass Sie den richtigen Kontext auswählen. 
 ![ODP BW Search](/img/content/odp/odp-component-bw-nwdemo-01.png){:class="img-responsive"}
-
-{: .box-note }
-**Hinweis:** When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
-
-![ODP BW Delta](/img/content/odp/odp-bw-infoprov-delta.png){:class="img-responsive"}
-
-Click **[Load live preview]** to preview the data without executing an extraction.
+2. Wenn Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option **Delta Update** in der ODP-Komponente verfügbar. 
+3. Klicken Sie auf **[Load live preview]**, um eine Echtzeitvorschau anzuzeigen, ohne dabei eine Extraktion auszuführen.

@@ -1,8 +1,5 @@
 ### Subscriptions
-To display more details about the subscriber process, click **Show active subscriptions**.
-<br/>
-![Subscriptions](/img/content/odp/odp-settings-subscriptions.png){:class="img-responsive"}
-<br/>
+Click **Show active subscriptions** to display details about subscribers.
 
 {: .box-tip } 
 **Tip:** the information displayed in the "Delta Subscriptions for product" window can also be viewed in SAP transaction *ODQMON*.  

@@ -6,7 +6,7 @@ description: ABAP CDS Views
 product: xtract-for-alteryx
 parent: odp
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: en_GB
 progressstate: 5
 ---

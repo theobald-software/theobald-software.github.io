@@ -1,7 +1,7 @@
 ---
 ref: xfa-odp-settings
 layout: page
-title: ODP Einstellungen
+title: Funktionsübersicht
 description: ODP Einstellungen
 product: xtract-for-alteryx
 parent: odp
@@ -11,20 +11,22 @@ lang: de_DE
 progressstate: 5
 ---
 Der folgende Abschnitt beschreibt die Einstellungen der Xtract ODP-Komponente, auf die über das Hauptkomponentenfenster "Xtract ODP" zugegriffen werden kann.
-![ODP Component](/img/content/odp/odp_overview.png){:class="img-responsive"}
+![ODP Component](/img/content/xfa/xfa_odp_overview.png){:class="img-responsive"}
 
-{% include _content/de/odp/odp-settings-update_mode.md %}
-{% include _content/de/odp/odp-hierarchy.md %}  
-{% include _content/de/odp/odp-settings-filtering.md %} 
-{% include _content/de/odp/odp-settings-subscriptions.md %} 
+###  Funktionsübersicht
 
-{% include _content/de/odp/odp-settings-parameters.md %}
-{% include _content/de/odp/odp-settings-advanced.md %}
+Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
+- [Operational Data Provider](./odp-define#ein-objekt-data-object-suchen) (1) - Suche und Anzeige des Namens des Quellobjekts.
+- Additional info (2) - Zeigt den ODP-Provider-Kontext und den Datentyp des Quellobjekts an.
+- [Update mode](./odp-functions-ov#load-verfahren-update-mode) (3) - Definiert das Load-Verfahren - Full-Load oder Deltaverarbeitung.
+- [Fields](./odp-functions-ov#selektion-und-filter) (4) - Ermöglicht die Auswahl und Einstellung der Filteroptionen für [Extraktoren](./odp-extractors).
+- Preview (5) - Klicken Sie auf **[Load Live Preview]**, um eine Echtzeit-Vorschau der Extraktionsdaten anzuzeigen.
 
-### Parameter innerhalb Alteryx
-ODP-Parameter erscheinen als RuntimeParameter einer *Update-Value*-Komponente in einem Alteryx-Makro-Workflow. Parameter können zur Workflow-Laufzeit mit Hilfe der Alteryx-Standardfunktionalität aufgefüllt werden.
-![ODP alteryx parameter](/img/content/odp/set-odp-parameter-in-xfa.png){:class="img-responsive"}
+#### Schaltflächen
+- **[[Show active subscriptions ](./odp-settings#abonnements)]** - Schaltfläche zum Anzeigen der Details zum Abonnentenprozess.
+- **[[Edit parameters](./odp-settings#parameter-bearbeiten)]** - Schaltfläche zum Definieren der Laufzeitparameter, die als Platzhalter zum Auswählen der Daten verwendet werden können.
+- **[[Advanced Settings](./odp-settings#fortgeschrittene-einstellungen)]** - Enthält Einstellungen für die **package size** der Extrraktion..
+- **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
 
-****
-#### Weiterführende Links
-- [Alteryx Online Help - Einstellungen](https://help.alteryx.com/current/designer/user-settings)
+{% include _content/de/odp/odp-settings-update_mode.md %} 
+{% include _content/de/odp/odp-settings-filtering.md %}

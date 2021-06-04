@@ -1,15 +1,7 @@
 
-### Technische Voraussetzungen
+### Über Xtract ODP
 
-Es gibt einige Voraussetzungen, die auf der SAP-Seite erfüllt sein müssen, wenn ODP verwendet wird. SAP hat eine Reihe von Hinweisen veröffentlicht, die bei der Verwendung der Xtract ODP-Komponente gelten:
-- [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427/D)
-- [2232584 - Freigabe von SAP Extraktoren für ODP Replikation (ODP-SAPI)](https://launchpad.support.sap.com/#/notes/2232584/D)
-- [Freigabe von DataSources für das 'ODP data replication API'](https://launchpad.support.sap.com/#/notes/1560241/D)
-
-### Was ist Xtract ODP?
-
-
-Die ODP-Komponente kann verwendet werden, um Daten über das SAP Operational Data Provisioning (ODP) Framework zu extrahieren. 
+Die ODP-Komponente wird verwendet, um Daten über das SAP Operational Data Provisioning (ODP) Framework zu extrahieren. 
 
 ODP ist ein Framework in ABAP-basierten SAP-Systemen für den Datentransfer zwischen verschiedenen Systemen.<br> 
 ODP stellt eine technische Infrastruktur für die Datenextraktion und -replikation aus verschiedenen SAP (ABAP)-Systemen zur Verfügung, z.B.:
@@ -19,29 +11,12 @@ ODP stellt eine technische Infrastruktur für die Datenextraktion und -replikati
 - BW/4 HANA
 
 Die Xtract-ODP-Komponente, welche die Daten benötigt, agiert als sogenannter Subscriber (Consumer). Die ODP-Komponente abonniert einen Data-Provider, z.B. einen SAP-Extraktor oder einen CDS-View.
- 
 
 Operational Data Provisioning (ODP) unterstützt auch Delta-Mechanismen (inkrementelles Laden), z.B. aus den Extraktoren, ABAP CDS Views und aDSO -Objekten (s.u.).
 Mit SAP BW/4HANA wird Operational Data Provisioning (ODP) zur zentralen Infrastruktur für die Datenextraktion und -replikation aus SAP-(ABAP)-Anwendungen in ein SAP BW/4 HANA Data Warehouse. 
-<br/>
-
-ODP bietet Datentransfer von den folgenden Providern (auch Provider Context genannt):
-- ABAP Core Data Services (CDS) Views 
-- BW und BW/4HANA InfoProviders
-- SAP HANA Informationsviews in ABAP-basierten SAP-Systemen
-- DataSources und Extraktoren 
-
-{: .box-note }
-
-**Hinweis:** Abhängig vom angeschlossenen SAP-Quellsystem sind verschiedene Provider-Kontexte (Provider-Contexts) verfügbar.
-
-Das nachfolgende Beispiel zeigt die verfügbaren ODP-Kontexte mit einem angeschlossenen BW /4 HANA als SAP-Quellsystem.
-Ein BW- oder ein ECC-System beinhalten weniger Optionen in der Liste mit den Provider-Kontexten.
-
-![ODP Provider Kontext aus dem BW/4 HANA System](/img/content/odp/odp-component-context-bw.png){:class="img-responsive"}
 
 
-### SAP Quellobjekte und die geeigneten ODP-Kontexte
+ODP bietet Datentransfer von den folgenden Providern (auch Provider Context genannt): 
  
 ODP-Kontext | SAP-Quellobjekte |
 ------------ |------------ |
@@ -50,21 +25,16 @@ SAP NetWeaver Business Warehouse [[BW](./odp/odp-bw-infoproviders)] |**BW/4HANA:
 HANA Information Views [[HANA](./odp/odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
 DataSources/Extraktoren [[SAPI](./odp/odp-extractors)] | - DataSources und Extraktoren |
 
-Geeignete ODP-Kontexte können innerhalb des [ODP-Lookup-Fensters ](./odp/odp-extractors#extraktorsuche) ausgewählt werden.
+{: .box-note }
+**Hinweis:** Abhängig vom angeschlossenen SAP-Quellsystem sind verschiedene Provider-Kontexte (Provider-Contexts) verfügbar.
 
-###  Xtract ODP - Funktionsübersicht
-Das Fenster "Define data source for SAP ODP" besteht aus einigen Unterabschnitten:
+### Technische Voraussetzungen
 
-- [Operational Data Provider](./odp/odp-functions-ov#operational-data-provider) - zeigt den Namen des Quellobjekts an
-- [Additional info](./odp/odp-functions-ov#additional-info) - zeigt den ODP-Provider-Kontext und den Datentyp des Quellobjekts an
-- [Update mode](./odp/odp-functions-ov#update-mode) - definiert das Load-Verfahren - Full-Load oder Deltaverarbeitung.
-- [Fields](./odp/odp-functions-ov#filtering---dynamic-setting-of-the-selection-filters) - ermöglicht die Auswahl und Einstellung der Filteroptionen für [Extraktoren](./odp/odp-extractors)
-- Preview - Echtzeit-Vorschau der Extraktionsdaten
+Es gibt einige Voraussetzungen, die auf der SAP-Seite erfüllt sein müssen, wenn ODP verwendet wird. SAP hat eine Reihe von Hinweisen veröffentlicht, die bei der Verwendung der Xtract ODP-Komponente gelten:
+- [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427/D)
+- [2232584 - Freigabe von SAP Extraktoren für ODP Replikation (ODP-SAPI)](https://launchpad.support.sap.com/#/notes/2232584/D)
+- [Freigabe von DataSources für das 'ODP data replication API'](https://launchpad.support.sap.com/#/notes/1560241/D)
 
-#### Schaltflächen
-- **[[Show active subscriptions ](./odp/odp-functions-ov#subscriptions)]** - Schaltfläche zum Anzeigen der Details zum Abonnentenprozess.
-- **[[Edit parameters](./odp/odp-functions-ov#edit-parameters-)]** - Schaltfläche zum Definieren der  Laufzeitparameter, die als Platzhalter zum Auwählen der Daten verwendet werden können.
-- **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
 
 ****
 #### Weiterführende Links

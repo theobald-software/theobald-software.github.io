@@ -1,7 +1,7 @@
 ---
 ref: xfa-odp-settings
 layout: page
-title: Xtract ODP Functions Overview
+title: Functions Overview
 description: ODP Settings
 product: xtract-for-alteryx
 parent: odp
@@ -11,21 +11,24 @@ lang: en_GB
 progressstate: 5
 ---
 
-The following section describes the settings of the Xtract ODP component that can be accessed through the main component window “Xtract ODP”.
+The following section gives an overview of the functions accessible from the main window of the Xtract ODP component.
 ![ODP Component](/img/content/xfa/xfa_odp_overview.png){:class="img-responsive"}
 
+
+###  Functions Overview
+The window “ODP” contains the following subsections:
+
+- [Operational Data Provider](./odp-define#to-search-for-a-data-object) (1) - Search and display the name of the source object.
+- Additional info (2) - Displays the ODP provider context and the data type of the source object.
+- [Update mode](./odp-functions-ov#update-mode) (3) - Defines the update mode, full or delta update.
+- [Fields](./odp-functions-ov#selections-and-filters) (4) - Allows selection and setting of the filter options for [extractors](./odp-extractors).
+- Preview (5) - Click **[Load Live Preview]** to display real-time preview of the extraction data.
+
+#### Buttons
+- **[[Show active subscriptions](./odp-settings#subscriptions)]** - Displays details of the subscriber process.
+- **[[Edit parameters](./odp-settings#edit-parameters)]** - Defines runtime parameters that can be used as placeholders for data selections.
+- **[[Advanced Settings](odp-settings#advanced-settings)]** - Includes the **package size** for the extraction.
+- **[Load Live Preview]** - Button to display a real-time preview of the extraction data without executing the extraction.
+
 {% include _content/en/odp/odp-settings-update_mode.md %} 
-{% include _content/en/odp/odp-hierarchy.md %} 
 {% include _content/en/odp/odp-settings-filtering.md %}
-{% include _content/en/odp/odp-settings-subscriptions.md %}
-
-{% include _content/en/odp/odp-settings-parameters.md %}
-{% include _content/en/odp/odp-settings-advanced.md %}
-
-### Parameters within Alteryx
-ODP parameters appear as RuntimeParameters of an *Update Value* component in an Alteryx Macro workflow. Parameters can be populated at workflow run time using standard Alteryx functionality.
-![ODP alteryx parameter](/img/content/odp/set-odp-parameter-in-xfa.png){:class="img-responsive"}
-
-****
-#### Related Links
-- [Alteryx Online Help - Settings](https://help.alteryx.com/current/designer/user-settings)

@@ -6,8 +6,8 @@ description: ABAP CDS Views
 product: xtract-is
 parent: odp
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: en_GB
 progressstate: 5
 ---
-{% include _content/en/xis-specific/odp/odp-abap-cds-views.md %}
+{% include _content/en/odp/odp-abap-cds-views.md %} 
