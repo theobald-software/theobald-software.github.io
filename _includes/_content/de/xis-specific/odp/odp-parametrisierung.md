@@ -1,7 +1,7 @@
 
 {% include _content/de/parametrization/parametrization-about.md  %}
 
-### Parameterisierung mit Properties
+### Parametrisierung mit Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
 
 |Property|Beschreibung|

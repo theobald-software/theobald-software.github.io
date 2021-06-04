@@ -31,15 +31,15 @@ Die folgenden Schritte beschreiben, wie man eine Xtract Universal Datenquelle in
 3. Weisen Sie im Tab *General* der neuen Datenquelle einen Namen zu oder verwenden Sie den Standardnamen (1).
 4. Wählen Sie den Typ *Xtract Universal* aus der Drop-Down-Liste aus (2). <br>
 Falls *Xtract Universal* nicht verfügbar oder in Großbuchstaben ist, prüfen Sie ob die aktuelle Xtract Universal Version und das aktuelle *Microsoft Reporting Services Projects* Plugin installiert sind.
-5. Geben Sie einen *connection string* (3) zum Xtract Universal Web-Server im Format `Url=http://[host]:[port]/` ein, z.B. `Url=http://localhost:8065/`.
+5. Geben Sie einen *connection string* (3) zum Xtract Universal [Web-Server](../../sicherheit/serversicherheit) im Format `Url=http://[host]:[port]/` ein, z.B. `Url=http://localhost:8065/`. Beachten Sie die Groß-Kleinschreibung.
 ![Shared-Data-Source-Properties](/img/content/xu/ssrs/Shared-Data-Source-Properties.png){:class="img-responsive"}
 6. Optional (nur nötig, wenn die [XU-Serversicherheit](../../sicherheit/serversicherheit) konfiguriert wurde oder an das SAP-Quellsystem entsprechende Credentials übergeben werden müssen): Wechseln Sie in den *Credentials* Tab (4) und geben Sie Ihren [Benutzernamen und Passwort](../../sicherheit/benutzerverwaltung) für Xtract Universal ein.
 7. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 
 Wenn *Xtract Universal* trotz aktuellem *Microsoft Reporting Services Projects* Plugin und aktuellem Xtract Universal nicht in der Drop-Down-Liste (2) verfügbar ist, schicken Sie Log-Datei in `C:\Program Files\XtractUniversal\ssrs\log.txt` an den [Theobald Support](mailto:support@theobald-software.com).
 
- {: .box-note }
-**Hinweis:** Abhängig von den Einstellungen des XU [Web-Servers](../../sicherheit/serversicherheit), verwenden Sie entweder `http://` oder `https://` im *connection string*.
+ {: .box-tip }
+**Tipp:** Der *connection string* ist im URL string aus dem "Run Extraction"-Fenster des Designers enthalten. Kopieren Sie den String bis zum '?' und fügen Sie ihn als *connection string* in Visual Studio ein.
 
 
 ### Einen Report mit einer Xtract Universal Datenquelle erstellen

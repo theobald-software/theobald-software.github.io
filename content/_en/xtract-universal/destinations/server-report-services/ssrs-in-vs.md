@@ -30,15 +30,15 @@ The following steps guide you through the creation of an Xtract Universal data s
 2. Right-click on the *Shared Data Sources* folder in the *Solution Explorer* and select **Add New Data Source**. The window "Shared Data Source Properties" opens.
 3. In the tab *General*, assign a name of your choice or leave the default one for the new data source (1).
 4. Select the type *Xtract Universal* from the drop-down list (2). <br>If *Xtract Universal* is not available or displayed in all caps, make sure that the latest Xtract Universal version and *Microsoft Reporting Services Projects* plugin are both installed.
-5. Enter a *connection string* (3) to XU's web server in the format `Url=http://[host]:[port]/` e.g, `Url=http://localhost:8065/`.
+5. Enter a *connection string* (3) to XU's [Web Server](../../security/server-security) in the format `Url=http://[host]:[port]/` e.g, `Url=http://localhost:8065/`. Note that the *connection string* is case sensitive.
 ![Shared-Data-Source-Properties](/img/content/xu/ssrs/Shared-Data-Source-Properties.png){:class="img-responsive"}
 6. Optional (only required if the XU [Web server security](../../security/server-security) is configured or the SAP source requires SAP credentials): Switch to the *Credentials* tab (4) and enter your [username and password](../../security/user-management) for Xtract Universal.
 7. Confirm your input with **[OK]**.
 
 If *Xtract Universal* is not available in the drop-down list (2) even though the *Microsoft Reporting Services Projects* plugin (version 2.6.11 or higher) and the latest version of Xtract Universal are both installed, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](mailto:support@theobald-software.com).
 
- {: .box-note }
-**Note:** Depending on the settings of XU's [Web server](../../security/server-security) use either `http://` or `https://` in the connection string.
+ {: .box-tip }
+**Tip:** The *connection string* is part of the URL string displayed in the "Run Extraction" window of the Designer. Copy the URL string up to '?' and paste it as the *connection string* into Visual Studio.
 
 
 ### Create a Report using an Xtract Universal Data Source
