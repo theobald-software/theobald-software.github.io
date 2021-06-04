@@ -3,7 +3,7 @@ ref: xu-odp-settings
 layout: page
 title: Settings
 description: ODP Settings
-product: board-connector
+product: xtract-universal
 parent: odp
 permalink: /:collection/:path
 weight: 3

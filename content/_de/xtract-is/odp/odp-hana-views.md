@@ -6,8 +6,8 @@ description: HANA Views
 product: xtract-is
 parent: odp
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/xis-specific/odp/odp-hana-views.md %}
+{% include _content/de/odp/odp-hana-views.md %} 

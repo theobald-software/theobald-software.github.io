@@ -1,10 +1,10 @@
 ---
-ref: bc-odp-define
+ref: xtract-isfa-odp-define
 layout: page
 title: Define an ODP Extraction
 description: ODP Extracttion
-product: board-connector
-parent: Operational Data Provisioning (ODP)
+product: xtract-is-for-azure
+parent: odp
 permalink: /:collection/:path
 weight: 2
 lang: en_GB

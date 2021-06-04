@@ -1,14 +1,14 @@
 ---
-ref: bc-odp-define
+ref: xisfa-odp-define
 layout: page
-title: Define an ODP Extraction
+title: Eine ODP Extraktion definieren
 description: ODP Extracttion
-product: board-connector
+product: xtract-is-for-azure
 parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 2
-lang: en_GB
+lang: de_DE
 progressstate: 5
 ---
 
-{% include _content/en/odp/odp-define.md %}
+{% include _content/de/odp/odp-define.md %}

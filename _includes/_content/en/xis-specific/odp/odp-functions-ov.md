@@ -1,19 +1,22 @@
-The following section gives an overview over the settings that can be changed for the ODP component.
-The settings can be changed in the window "Define data source for SAP ODP". 
+The following section gives an overview of the functions accessible from the main window of the Xtract ODP component.
 ![ODP Component](/img/content/odp/odp_overview.png){:class="img-responsive"}
 
+###  Functions Overview
+The window “ODP” contains the following subsections:
+
+- [Operational Data Provider](./odp-define#to-search-for-a-data-object) (1) - Search and display the name of the source object.
+- Additional info (2) - Displays the ODP provider context and the data type of the source object.
+- [Update mode](./odp-functions-ov#update-mode) (3) - Defines the update mode, full or delta update.
+- [Fields](./odp-functions-ov#selections-and-filters) (4) - Allows selection and setting of the filter options for [extractors](./odp-extractors).
+- Preview (5) - Click **[Load Live Preview]** to display real-time preview of the extraction data.
+
+#### Buttons
+- **[General Settings](../getting-started/general-settings)** - The General Settings include security, encryption and keys.
+- **[Show active subscriptions](./odp-settings#subscriptions)** - Displays details of the subscriber process.
+- **[Edit runtime parameters](./odp-settings#edit-parameters)** - Defines runtime parameters that can be used as placeholders for data selections.
+- **[Advanced Settings](odp-settings#advanced-settings)** - Includes the **package size** for the extraction.
+- **[Load Live Preview]** - Button to display a real-time preview of the extraction data without executing the extraction.
+
 {% include _content/en/odp/odp-settings-update_mode.md %} 
-{% include _content/en/odp/odp-hierarchy.md %} 
-{% include _content/en/odp/odp-settings-subscriptions.md %}
-{% include _content/en/odp/odp-settings-filtering.md %} 
-
-{% include _content/en/odp/odp-settings-parameters.md %}
-{% include _content/en/odp/odp-settings-advanced.md %}
-
-
-
-### To display parameters within SSIS
-Parameters appear as properties of the Xtract ODP object as well as the SSIS Data Flow. The parameters and properties be populated at SSIS package runtime using standard SSIS functionality, such as expressions, variables, etc. 
-
-![ODP properties](/img/content/xis/odp_parameter.png){:class="img-responsive"}
+{% include _content/en/odp/odp-settings-filtering.md %}
 

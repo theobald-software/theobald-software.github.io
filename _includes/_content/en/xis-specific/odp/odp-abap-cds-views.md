@@ -1,1 +1,0 @@
-{% include _content/en/odp/odp-abap-cds-views.md %} 
