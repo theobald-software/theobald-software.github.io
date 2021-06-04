@@ -13,4 +13,4 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started
 ---
 
-{% include _content/en/xtract-is/getting-started.md  %}
+{% include _content/en/xis-specific/getting-started.md  %}
