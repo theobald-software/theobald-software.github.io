@@ -11,7 +11,7 @@ The window “ODP” contains the following subsections:
 - Preview (5) - Click **[Load Live Preview]** to display real-time preview of the extraction data.
 
 #### Buttons
-- **[General Settings](../getting-started/general-settings)** - The General Settings include security, encryption and keys.
+- **General Settings** - The General Settings include security, encryption and keys.
 - **[Show active subscriptions](./odp-settings#subscriptions)** - Displays details of the subscriber process.
 - **[Edit runtime parameters](./odp-settings#edit-parameters)** - Defines runtime parameters that can be used as placeholders for data selections.
 - **[Advanced Settings](odp-settings#advanced-settings)** - Includes the **package size** for the extraction.

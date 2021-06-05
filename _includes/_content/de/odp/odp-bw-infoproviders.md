@@ -24,7 +24,7 @@ Die verfügbaren InfoProvider-Typen sind abhängig von Ihrem BW und BW/4 HANA Qu
 
 ### BW InfoProviders verwenden
 Worauf Sie bei der Verwendung von BW Infoproviders achten müssen: 
-1. Wenn Sie nach [suchen](./odp-fdefine) stellen Sie sicher, dass Sie den richtigen Kontext auswählen. 
+1. Wenn Sie nach [suchen](./odp-define) stellen Sie sicher, dass Sie den richtigen Kontext auswählen. 
 ![ODP BW Search](/img/content/odp/odp-component-bw-nwdemo-01.png){:class="img-responsive"}
 2. Wenn Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option **Delta Update** in der ODP-Komponente verfügbar. 
 3. Klicken Sie auf **[Load live preview]**, um eine Echtzeitvorschau anzuzeigen, ohne dabei eine Extraktion auszuführen.
