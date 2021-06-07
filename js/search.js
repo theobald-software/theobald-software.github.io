@@ -63,10 +63,10 @@ var main = {
                             case 'xtract-universal':
                                 data.label = 'Xtract Universal';
                                 break;
-                            case 'yunio':
-                                data.label = 'Yunio';
+							case 'xtract-is-for-azure':
+                                data.label = 'Xtract IS for Azure';
                                 break;
-							case 'ecs-core':
+                            case 'ecs-core':
                                 data.label = 'ECS Core';
                                 break;
                             case 'none':
@@ -187,8 +187,8 @@ var main = {
                     case 'Xtract Universal':
                         $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractUniversal.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract Universal</p>');
                         break;
-                    case 'Yunio':
-                        $(this).parent().html('<img src="/img/products/TS_Icon_2C_YunIO.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Yunio</p>');
+                    case 'Xtract IS for Azure':
+                        $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractAzure.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Yunio</p>');
                         break;
 					case 'ECS Core':
                         $(this).parent().html('<img src="/img/products/TS_Icon_2C_ECSCore.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">ECS Core</p>');
