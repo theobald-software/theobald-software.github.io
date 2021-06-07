@@ -2,17 +2,21 @@
 Most queries allow entering selections before query execution.
 Selections limit the result set of the Query so as to extract only records that match the selection.<br>
 
-A selection [variant](https://help.sap.com/doc/erp2005_ehp_07/6.07/en-US/6b/98f75305610114e10000000a174cb4/frameset.htm) can be created in SAP at the selection screen of a Query. The purpose of a variant is to save selection settings on your input screen. 
+A selection [variant](https://help.sap.com/doc/erp2005_ehp_07/6.07/en-US/6b/98f75305610114e10000000a174cb4/frameset.htm) can be created in SAP at the selection screen of a Query. The purpose of a variant is to save selection settings. 
 This minimizes the need to enter selections each time you run a query.
+
+{: .box-note }
+**Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
 
 ![Query-Variants-Selection](/img/content/Query-Variants-Selections.png){:class="img-responsive"}
 
 
 #### Choose a Variant
 
-1. Click the small **[Search]** button (binocular icon) (1). The window "Look Up Variant" opens.
+1. Click the small **[binocular icon]** (1). The window "Look Up Variant" opens.
 ![Query-Variant-02](/img/content/Query-Variant-02.png){:class="img-responsive"}
-2. Select a Variant from the list of available variants. Confirm your input with **[OK]**.
+2. Select a Variant from the list of available variants. 
+3. Confirm your input with **[OK]**.
 
 To remove the variant, click the **[X]** button (2).<br>
 

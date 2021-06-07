@@ -1,4 +1,4 @@
-### Extraction Settings
+### Xtract IS Query Preferences
 
 Klicken Sie im Hauptfenster der Komponente auf *Settings*. Das Fenster “Xtract IS Query Preferences” öffnet sich.
 

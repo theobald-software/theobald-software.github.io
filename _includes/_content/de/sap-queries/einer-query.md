@@ -1,21 +1,9 @@
-Erstellen Sie mit Hilfe des Designers eine neue Extraktion vom Typ Query. Der folgende Dialog öffnet sich. 
-
-![Define-Query-Extraction-Data-Source](/img/content/Define-Query-Extraction-Data-Source.png){:class="img-responsive list-img"}
-
-
-Klicken Sie auf den Suchen-Button, um eine Query zu suchen. Eine Query wird durch Angabe des Arbeitsbereiches, der Benutzergruppe und des Query-Namens eindeutig identifiziert. Selbstverständlich sind bei der Suche Wildcards erlaubt. Bestätigen Sie die Auswahl mit *OK*.
-
-![Look-Up-Query](/img/content/xu/xu_query_look-up.png){:class="img-responsive"}
-
-Im Hauptdialog werden nun die so genannten Select-Options angezeigt. Das sind die Selektionskriterien, die Sie auch sehen würden, wenn Sie die Query im SAP GUI starten.
-
-![Define-Query-Extraction-Data-Source-Selected](/img/content/Define-Query-Extraction-Data-Source-Selected.png){:class="img-responsive"}
-
-Sie müssen entweder eine Variante (siehe Abschnitt [Variante anwenden](./varianten-anwenden) ) wählen oder einen Wert für die maximale Anzahl der Zeilen (siehe Abschnitt [Extraktionseinstellungen](https://help.theobald-software.com/de/board-connector/sap-queries/query-extraktionseinstellungen) setzen.
-
-**Empfehlung:**
-1. beginnen Sie mit der Erstellung einer [Variante](https://help.sap.com/doc/saphelp_dm40/4.0/de-DE/c0/980389e58611d194cc00a0c94260a5/content.htm?no_cache=true), die Sie vorab im SAP GUI erstellen sowie testen
-2. im nächsten Schritt können über *Edit* [Select-Parameter](./select-options-fuellen) angepasst werden
-
-*Generell gilt, Selektionsparameter überschreiben die ausgewählte Variante. 
-Somit ist sicher gestellt, dass Kombinationsmöglichkeiten für die Selektion bestehen.*
+### Eine Query finden
+1. Klicken Sie auf das **[Fernglassymbol]**. Das Fenster "Look Up Query" öffnet sich.
+![SAPQuery-01](/img/content/SAPQuery-01.png){:class="img-responsive"}
+2. Suchen Sie nach **Query Name** oder **UserGroup** mit dem **[Lupensymbol]**, Sie können bei Bedarf Platzhalter (*) verwenden.
+![Query-Search](/img/content/Query-Search.png){:class="img-responsive" }
+3. Wählen Sie ein Element aus der Liste aus. 
+4. Klicken Sie auf **[OK]**, um die Auswahl zu bestätigen.
+5. Optional: Wenn die Query Varianten hat oder Sie neue Selektionen für die Extraktion erstellen möchten, siehe [Varianten und Selektionen](#varianten-und-selektionen).
+6. Geben Sie einen Wert für die maximale Anzahl der zu extrahierenden Zeilen an, siehe [Extraktionseinstellungen](./query-settings).
