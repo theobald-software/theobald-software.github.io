@@ -1,8 +1,8 @@
 ---
 ref: xis-odp-introduction
 layout: page
-title: Xtract ODP Funktionsübersicht
-description: ODP Einführung
+title: Funktionsübersicht
+description: ODP Funktionsübersicht
 product: xtract-is
 parent: odp
 permalink: /:collection/:path

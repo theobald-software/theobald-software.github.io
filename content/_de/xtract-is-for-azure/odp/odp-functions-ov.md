@@ -1,8 +1,8 @@
 ---
 ref: xiasa-odp-introduction
 layout: page
-title: Xtract ODP Funktionsübersicht
-description: ODP Einführung
+title: Funktionsübersicht
+description: ODP Funktionsübersicht
 product: xtract-is-for-azure
 parent: odp
 permalink: /:collection/:path

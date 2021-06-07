@@ -1,5 +1,5 @@
 The following section gives an overview of the functions accessible from the main window of the Xtract ODP component.
-![ODP Component](/img/content/odp/odp_overview.png){:class="img-responsive"}
+![ODP Component](/img/content/xis/odp_functions.png){:class="img-responsive"}
 
 ###  Functions Overview
 The window “ODP” contains the following subsections:
@@ -11,7 +11,7 @@ The window “ODP” contains the following subsections:
 - Preview (5) - Click **[Load Live Preview]** to display real-time preview of the extraction data.
 
 #### Buttons
-- **General Settings** - The General Settings include security, encryption and keys.
+- **Xtract IS Info** - Displays general information about Xtract IS.
 - **[Show active subscriptions](./odp-settings#subscriptions)** - Displays details of the subscriber process.
 - **[Edit runtime parameters](./odp-settings#edit-parameters)** - Defines runtime parameters that can be used as placeholders for data selections.
 - **[Advanced Settings](odp-settings#advanced-settings)** - Includes the **package size** for the extraction.
