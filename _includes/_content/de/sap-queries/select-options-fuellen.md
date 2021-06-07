@@ -7,8 +7,8 @@ Das folgende Fenster öffnet sich:
 ![SAP-Query-Select-Options](/img/content/SAP-Query-Select-Options.png){:class="img-responsive"}
 
 Die Spalte *Sign* definiert, ob die Ergebnismenge der Einschränkung eingeschlossen (Include) oder ausgeschlossen wird (Exclude). <br>
-Die Spalte *Option* ist ein Operator (z.B. =,> oder [] für von ... bis).  <br>
-In den Spalten *Low Value* und *High Value* sind dann die jeweiligen Werte einzutragen.  <br>
+Die Spalte *Option* ist ein Operator (z.B. =,> oder [] für von ... bis). <br>
+In den Spalten *Low Value* und *High Value* sind dann die jeweiligen Werte einzutragen. <br>
 Der Screenshot oben beispielsweise selektiert alle Werte von 100-100 bis 999-999 (Include, [] -> von ... bis), außer den Einzelwert 100-120 (Exclude, =). *HighValue* Werte müssen nur eingetragen werden wenn der Operator [] (zwischen) oder ][ (nicht zwischen) ausgewählt wurde. In allen anderen Fällen reicht es aus, wenn der *LowValue* Wert angegeben ist.  <br>
 Selbstverständlich können für die Wertfelder auch benutzerdefinierte Variablen verwendet werden (mit einem vorangestellten @, um die Variable als solche zu kennzeichnen).
 

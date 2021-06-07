@@ -1,4 +1,6 @@
-Über den Settings-Link im Editor öffnet sich das Einstellungsfenster.
+### Extraction Settings
+
+Klicken Sie im Hauptfenster der Komponente auf *Settings*. Das Fenster “Xtract IS Query Preferences” öffnet sich.
 
 ![Query-Settings](/img/content/Query-Settings.png){:class="img-responsive"}
 
@@ -17,5 +19,5 @@ bedeutet, dass die Datenquelle alle Strings nach NVarchar konvertiert.
 **Use Variant Variable** <br>
 Das Textfeld für die Variante ist für den Schreibzugriff geöffnet. Damit kann der User eine Variablen dort eintragen, um die Variante zu dynamisieren.
 
-**Do not tread "No Data Selected" as Error** <br>
-definiert, ob ein Fehler ausgelöst werden soll, wenn die Query-Extraktion keine Daten liefert.
+**Tread "No Data Selected" as Error** <br>
+Definiert, ob eine Fehlermeldung ausgelöst werden soll, wenn die Query-Extraktion keine Daten liefert.
