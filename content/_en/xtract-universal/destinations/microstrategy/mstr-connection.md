@@ -21,7 +21,7 @@ Microstrategy Server Endpoint for the JSON API.<br>
 (e.g.: https://env-12345.customer.cloud.microstrategy.com/MicroStrategyLibrary/api/)
 
 **Project Name**<br>
-Project name, where the SAP data must be loaded to. 
+Project name, where the SAP data is loaded to. To set a specific folder, see [Folder ID](./mstr-settings#folder-id).
 
 **User Name**<br>
 Name of the Microstrategy user.

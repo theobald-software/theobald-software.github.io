@@ -43,9 +43,12 @@ Um sie im Einzelfall anders definieren zu können, klicken Sie auf den entsprech
 
 ![mstr-extraction-settings_attr](/img/content/mstr-extraction-settings_attr.png){:class="img-responsive"}
 
-### Folder Name
+### Folder ID
 
-Optional. Geben Sie hier einen existierenden Ordner unter My Objects in Microstrategy an. Der Cube wird in dem definierten Ordner generiert.
+Optional. Geben Sie die ID eines in Microstrategy existierenden Ordners an.<br> 
+Die ID wird in Microstrategy unter *Properties* angezeigt. Der Cube wird in dem definierten Ordner generiert.
+
+![Folder-ID](/img/content/xu/microstrategy-folder.png){:class="img-responsive"}
 
 ### Update Policy
 Beschreibt die Art, wie die Daten in MSTR geschrieben werden. <br>

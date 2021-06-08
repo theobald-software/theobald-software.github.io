@@ -20,7 +20,7 @@ Server API Endpoint, unter dem die JSON API erreichbar ist.<br>
 (Beispiel: https://env-12345.customer.cloud.microstrategy.com/MicroStrategyLibrary/api/)
 
 **Project Name**<br> 
-Name des Projektes, in welches die Daten geschrieben werden sollen.
+Name des Projektes, in das die Daten geschrieben werden sollen. Um einen bestimmten Order auszuwählen, siehe [Folder ID](./einstellungen#folder-id).
 
 **Username**<br> 
 Name des Benutzers.

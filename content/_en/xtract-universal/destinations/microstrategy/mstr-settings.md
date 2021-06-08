@@ -45,9 +45,12 @@ If you wish to redefine attributes or metrics click on the correspondent button 
 
 ![mstr-extraction-settings_metrics](/img/content/mstr-extraction-settings_metrics.PNG){:class="img-responsive"}
 
-### Folder Name
+### Folder ID
 
-Optional. Set the name of an existing folder under My Objects in Microstrategy. The cube will be generated in the defined folder. 
+Optional. Enter the ID of a folder in Microstrategy. <br>The folder ID is displayed in Microstrategy under *Properties*. The cube will be generated in the defined folder. 
+
+![Folder-ID](/img/content/xu/microstrategy-folder.png){:class="img-responsive"}
+
 
 ### Update Policy
 
