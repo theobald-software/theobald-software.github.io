@@ -45,8 +45,8 @@ Um sie im Einzelfall anders definieren zu können, klicken Sie auf den entsprech
 
 ### Folder ID
 
-Optional. Geben Sie die ID eines in Microstrategy existierenden Ordners an.<br> 
-Die ID wird in Microstrategy unter *Properties* angezeigt. Der Cube wird in dem definierten Ordner generiert.
+Optional. Geben Sie die ID eines in Microstrategy existierenden Projektordners an. Die Daten werden in dem definierten Ordner abgelegt. Die Verwendung von Unterordnern ist möglich.<br> 
+Die ID eines Ordners wird in Microstrategy unter *Properties* angezeigt. 
 
 ![Folder-ID](/img/content/xu/microstrategy-folder.png){:class="img-responsive"}
 

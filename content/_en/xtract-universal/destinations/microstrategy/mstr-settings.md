@@ -47,7 +47,8 @@ If you wish to redefine attributes or metrics click on the correspondent button 
 
 ### Folder ID
 
-Optional. Enter the ID of a folder in Microstrategy. <br>The folder ID is displayed in Microstrategy under *Properties*. The cube will be generated in the defined folder. 
+Optional. Enter the ID of a project folder in Microstrategy. The data will be written into the defined folder. You can also use subfolders.<br>
+Folder IDs are displayed in Microstrategy under *Properties*.  
 
 ![Folder-ID](/img/content/xu/microstrategy-folder.png){:class="img-responsive"}
 
