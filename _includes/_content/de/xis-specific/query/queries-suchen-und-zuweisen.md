@@ -6,5 +6,4 @@
 ![Query-Search](/img/content/Query-Search.png){:class="img-responsive" }
 4. Wählen Sie ein Element aus der Liste aus. 
 5. Klicken Sie auf **[OK]**, um die Auswahl zu bestätigen.
-6. Optional: Wenn die Query Varianten hat oder Sie neue Selektionen für die Extraktion erstellen möchten, siehe [Varianten und Selektionen](#varianten-und-selektionen).
-7. Geben Sie einen Wert für die maximale Anzahl der zu extrahierenden Zeilen an, siehe [Extraktionseinstellungen](./query-settings).
+6. Optional: Wenn die Query Varianten hat oder Sie neue Selektionen für die Extraktion erstellen möchten, siehe [Varianten und Selektionen](#varianten-und-selektionen) oder geben Sie einen Wert für die maximale Anzahl der zu extrahierenden Zeilen an, siehe [Extraktionseinstellungen](./query-settings).

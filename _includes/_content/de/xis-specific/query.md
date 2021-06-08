@@ -1,11 +1,8 @@
-Dieser Abschnitt zeigt, wie Sie SAP Queries mit der Xtract IS Query Datenquelle extrahieren. Ziehen Sie dazu das Query-Icon aus der Toolbox in Ihren Datenflusstask. 
-Die Verknüpfung zum Verbindungsmanager funktioniert analog der Tabellenextraktion, siehe [Tabellen extrahieren](./xtract-is-table/extraktion-anlegen).
-
+Dieser Abschnitt zeigt, wie Sie SAP Queries mit der Xtract IS Query Datenquelle extrahieren. <br>
+Ziehen Sie dazu das Query-Icon aus der Toolbox in Ihren Data Flow Task. Die Verknüpfung zum Verbindungsmanager erstellen Sie wie in [Erste Schritte](./xtract-is-table/extraktion-anlegen) beschrieben.<br>
+Mit einem Doppelklick auf die Komponente öffnet sich der Query-Editor.
 
 ![Query-01](/img/content/Query-01.png){:class="img-responsive"}
 
-Mit einem Doppelklick öffnet sich der Query-Editor.
-
-![Query-02](/img/content/Query-02.png){:class="img-responsive"}
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

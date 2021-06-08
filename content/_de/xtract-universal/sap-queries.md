@@ -18,7 +18,7 @@ Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal Query Komp
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.
 
 {: .box-note}
-**Hinweis** Mit dem Begriff Query ist keine BW Query sondern eine "normale" Query gemeint, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>
-Wenn Sie eine BW Query als Datengrundlage verwenden möchten, sehen Sie den Abschnitt [BW InfoCubes und BEx Queries](./bw-infocubes-und-bex-queries).
+**Hinweis** Die Query-Komponente bezieht sich auf Queries, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>
+Wenn Sie eine BW Query als Datengrundlage verwenden möchten, siehe [BW InfoCubes und BEx Queries](./bw-infocubes-und-bex-queries).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
