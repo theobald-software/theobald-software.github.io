@@ -1,11 +1,11 @@
 ---
 ref: yunio-01
 layout: page
-title: Xtract Universal
-description: Xtract Universal
+title: YunIO
+description: YunIO
 product: yunio
 parent: home
-childidentifier: xtract-universal
+childidentifier: yunio
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
