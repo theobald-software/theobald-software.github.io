@@ -52,8 +52,11 @@ Die ID eines Ordners wird in Microstrategy unter *Properties* angezeigt.
 
 ### Update Policy
 Beschreibt die Art, wie die Daten in MSTR geschrieben werden. <br>
-**DropAndCreate**: ist der default Wert. Vorhandene Tabelle wird ggf. gelöscht und Daten werden eingefügt. <br>
-**Add**: verhält sich wie ein Insert und fügt Daten in die vorhandene Tabelle neu hinzu, sofern sie noch nicht in der Datenbank existieren. Dataset ID wird benötigt. <br>
-**Update**: aktualisiert die metrischen Werte im Datensatz, wenn bereits ein passender Schlüssel im Datensatz vorhanden ist; neue Datensätze werden ignoriert. <br>
-**Upsert**: aktualisiert bestehende Datensätze und fügt dann auch neue hinzu. <br>
-**Replace**: verhält sich wie ein Truncate and Insert. Alle vorhandenen Daten werden gelöscht und durch die neuen ersetzt. Dataset ID wird benötigt.
+
+|:---:|:---|
+|  **DropAndCreate** | Default-Wert. Vorhandene Tabelle wird ggf. gelöscht und Daten werden eingefügt.  | 
+|  **Add** | Verhält sich wie ein Insert und fügt Daten in die vorhandene Tabelle neu hinzu, sofern sie noch nicht in der Datenbank existieren. Dataset ID wird benötigt.  | 
+| **Update**  | Aktualisiert die metrischen Werte im Datensatz, wenn bereits ein passender Schlüssel im Datensatz vorhanden ist; neue Datensätze werden ignoriert.  | 
+|  **Upsert** |  Aktualisiert bestehende Datensätze und fügt dann neue hinzu. | 
+|  **Replace** |  Verhält sich wie ein Truncate and Insert. Alle vorhandenen Daten werden gelöscht und durch die neuen ersetzt. Dataset ID wird benötigt. | 
+

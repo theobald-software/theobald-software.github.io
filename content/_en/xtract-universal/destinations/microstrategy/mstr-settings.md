@@ -55,9 +55,10 @@ Folder IDs are displayed in Microstrategy under *Properties*.
 
 ### Update Policy
 
-Describes, how data is written to MSTR.
-**DropAndCreate** is the default value. Table will be dropped and created again. Data will be then inserted.
-**Add**: add data to the existing table. Dataset ID is required.
-**Update**: will update the metric values in the data set where there is already a matching key in the dataset; new records are ignored. 
-**Upsert**: Upsert will update existing records and then add any new ones as well.
-**Replace**: Table will be truncated. Data will be then inserted. Dataset ID is required.
+|:---:|:---|
+|  **DropAndCreate** | Default. Table will be dropped and created again. Data will be then inserted.  | 
+|  **Add** | Adds data to the existing table. Dataset ID is required.  | 
+| **Update**  | Updates the metric values in the data set where there is already a matching key in the dataset; new records are ignored.  | 
+|  **Upsert** |  Updates existing records and then add new ones. | 
+|  **Replace** |  Table will be truncated. Data will be then inserted. Dataset ID is required. | 
+
