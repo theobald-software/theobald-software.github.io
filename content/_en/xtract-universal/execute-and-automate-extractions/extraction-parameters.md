@@ -44,7 +44,7 @@ updateMode | Update mode to use for the run| verfügbar in [ODP](../odp/odp-func
 subscriptionSuffix | Suffix to use multiple inits on a single SAP system | verfügbar in [ODP](../odp/odp-functions-ov#subscriptions)
 extractDataOnDeltaInit | Whether to extract data if request is delta init| verfügbar in [ODP](../odp/odp-functions-ov#update-mode)
 hierarchieName | The name of the hierarchy to extract for hierarchy extractors| verfügbar in ODP & DeltaQ
-variant | Name of a variant | verfügbar in [Report](../abap-reports/variants-and-selections) & [SAP Query](../sap-queries/apply-variants)
+variant | Name of a variant | verfügbar in [Report](../abap-reports/variants-and-selections) & [SAP Query](../sap-queries/variant-selections)
 batchJobName | Name of the Batch Job| verfügbar in [Report](../abap-reports/report-extraction-settings)
 gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
 gatewayService | Gateway Service | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)

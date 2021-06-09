@@ -20,6 +20,6 @@ Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der fol
 
 {: .box-note}
 **Hinweis** Die Query-Komponente bezieht sich auf Queries, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>
-Wenn Sie eine BW Query als Datengrundlage verwenden möchten, siehe [BW InfoCubes und BEx Queries](./bw-infocubes-und-bex-queries).
+Wenn Sie eine BW Query als Datengrundlage verwenden möchten, siehe [BW InfoCubes und BEx Queries](./bw-infocube-und-bex-queries).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
