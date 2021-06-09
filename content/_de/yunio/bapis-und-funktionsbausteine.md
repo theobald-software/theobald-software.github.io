@@ -11,7 +11,7 @@ weight: 45
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
-Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal BAPI Komponente. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Der folgende Abschnitt beschreibt die Anwendung der  YunIO BAPI Komponente. Kenntnisse über die Grundlagen von YunIO werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.

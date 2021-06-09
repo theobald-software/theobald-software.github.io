@@ -16,10 +16,10 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=serversicherheit1
 **Hinweis**: Allgemeine Authentifizierung wird momentan nur unterstützt, wenn Sie eine Extraktion über die Extraktions-URL ausführen.
 Eine Extraktion über *xu.exe* auszuführen ist nicht möglich, wenn die Allgemeine Authentifizierung aktiv ist.
 
-### Xtract Universal Dienst unter einem Windows Dienstkonto ausführen
+### YunIO Dienst unter einem Windows Dienstkonto ausführen
 
-Wenn eine Zugriffsbeschränkung mit Windows AD Benutzern erfolgt, muss der Xtract Universal Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
-Folgen Sie dafür den Schritten in [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../fortgeschrittene-techniken/service-account).
+Wenn eine Zugriffsbeschränkung mit Windows AD Benutzern erfolgt, muss der YunIO Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
+Folgen Sie dafür den Schritten in [YunIO Dienst unter einem Windows Dienstkonto ausführen](../fortgeschrittene-techniken/service-account).
 
 
 *********

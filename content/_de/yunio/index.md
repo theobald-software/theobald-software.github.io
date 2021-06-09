@@ -12,9 +12,9 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/
 ---
 
-Willkommen in der Online Help für Xtract Universal. 
+Willkommen in der Online Help für YunIO. 
 
-Xtract Universal ist ein Werkzeug zur Datenextraktion aus SAP in verschiedene Zielumgebungen. Die extrahierten Daten können dann weiterverarbeitet werden, z.B. 
+YunIO ist ein Werkzeug zur Datenextraktion aus SAP in verschiedene Zielumgebungen. Die extrahierten Daten können dann weiterverarbeitet werden, z.B. 
 im Rahmen von Business Intelligence, Datenintegration und Datenanalyse. 
 
 ### Verfügbare Komponenten
@@ -23,7 +23,7 @@ In der folgenen Übersicht finden Sie, welche Komponente für die Datenextraktio
 ![XU-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
 
 ### Extraktionstypen
-Xtract Universal bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
+YunIO bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 
 Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
 
@@ -57,6 +57,6 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 **Hinweis:** Weitere Szenarien und Kombinationen sind möglich.
 
 
-Weitere Informationen zu den Funktionen von Xtract Universal finden Sie in den folgenden Abschnitten:
+Weitere Informationen zu den Funktionen von YunIO finden Sie in den folgenden Abschnitten:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

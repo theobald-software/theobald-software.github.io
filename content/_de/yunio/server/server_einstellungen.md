@@ -63,7 +63,7 @@ Siehe Abschnitt [X.509 Zertifikat installieren](../sicherheit/x.509-zertifikat-i
 Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von Windows AD Benutzern ausgeführt werden, denen im Tab *Configuration Server* mindestens ein *Read* (Lesezugriff) zugewiesen wurde. Siehe auch [Release Note 3.11](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) und Abschnitt [Serversicherheit](../sicherheit/serversicherheit).
 
 **HTTPS - Restricted to custom users with Designer read access** <br>
-Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von benutzerdefinierten (custom) Benutzern ausgeführt werden, denen im Tab *Configuration Server* mindestens ein *Read* (Lesezugriff) zugewiesen wurde. Siehe auch [Release Note 4.20 für Xtract Universal](https://kb.theobald-software.com/release-notes/XtractUniversal-4.20.0.html) und Abschnitt [Serversicherheit](../sicherheit/serversicherheit).
+Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine Zugriffskontrolle auf die Ausführung von Extraktionen. Extraktionen können nur von benutzerdefinierten (custom) Benutzern ausgeführt werden, denen im Tab *Configuration Server* mindestens ein *Read* (Lesezugriff) zugewiesen wurde. Siehe auch [Release Note 4.20 für YunIO](https://kb.theobald-software.com/release-notes/XtractUniversal-4.20.0.html) und Abschnitt [Serversicherheit](../sicherheit/serversicherheit).
 
 #### Misc.
 

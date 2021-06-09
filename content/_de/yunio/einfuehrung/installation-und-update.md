@@ -15,7 +15,7 @@ progressstate: 5
 ### Voraussetzungen
 
 {: .box-note }
-**Hinweis:** Administratorberechtigungen sind notwendig, um Xtract Universal zu installieren.
+**Hinweis:** Administratorberechtigungen sind notwendig, um YunIO zu installieren.
 
 ### Setup
 
@@ -27,9 +27,9 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 
 |Komponente | Subkomponente |Beschreibung |
 |:----|:---| :---|
-|Main Product Files |- |Installiert alle notwendigen Dateien, die zum Verwenden von Xtract Universal notwendig sind.|
-|Designer | -|Installiert die Designer-Anwendung, entfernen Sie die Markierung bei dieser Option, wenn Sie Xtract Universal ohne die grafische Schnittstelle verwenden wollen. |
-|Server || Installiert Xtract Universal Server. | 
+|Main Product Files |- |Installiert alle notwendigen Dateien, die zum Verwenden von YunIO notwendig sind.|
+|Designer | -|Installiert die Designer-Anwendung, entfernen Sie die Markierung bei dieser Option, wenn Sie YunIO ohne die grafische Schnittstelle verwenden wollen. |
+|Server || Installiert YunIO Server. | 
 |<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) |
 | <!---->| Convert config files| Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Komponente ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
 |Start Menu Shortcuts | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
@@ -52,16 +52,16 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | powerbi Verzeichnis| Verzeichnis mit Dateien, die mit der [Power BI Connector Destination](../destinationen/Power-BI-Connector) in Zusammenhang stehen.|
 | result-cache Verzeichnis | Verzeichnis mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Mehr Details dazu finden Sie auch in Abschnitten [Pull-Destinationen](../destinationen#pull--und-push-destinationen) und [Allgemeine Einstellungen: General Settings > Misc. Tab > Cache Result Setting](../erste-schritte/allgemeine-einstellungen#misc-tab).|
 | xu.exe | Kommandozeilentool zum Ausführen von Extraktionen. Mehr Details dazu finden Sie auch im Abschnitt [Extraktion einplanen](../extraktionen-ausfuehren-und-einplanen). |
-| XtractDesigner.exe | [Xtract Universal Designer](../erste-schritte/designer-overview) Anwendung zum Erstellen, Testen und Überwachen von Extraktionen.|
+| XtractDesigner.exe | [YunIO Designer](../erste-schritte/designer-overview) Anwendung zum Erstellen, Testen und Überwachen von Extraktionen.|
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Quellen (Sources), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
-| uninstall.exe| Tool zum Deinstallieren und Entfernen von Xtract Universal mit allen dazugehörigen Komponenten von Ihrer Maschine. |
+| uninstall.exe| Tool zum Deinstallieren und Entfernen von YunIO mit allen dazugehörigen Komponenten von Ihrer Maschine. |
 |XtractUniversalSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](../fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).|
-| Eula_XtractUniversal.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Xtract Universal.|
+| Eula_XtractUniversal.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software YunIO.|
 | XtractUniversalLicense.json | Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
 
 {: .box-note }
-**Hinweis:** Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Knowledge-Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+**Hinweis:** Mehr Details zum Starten von YunIO Server als Konsolenprogramm, finden Sie im Knowledge-Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 ### Unbeaufsichtigte Installation 
 {% include _content/de/silent-setup.md %}	
@@ -99,7 +99,7 @@ Es gibt zwei Möglichkeiten, die Produktversion von XU 2.x und 3.x auf XU 4.x zu
 
 
 #### Upgrade während der Installation
-1. Starten Sie das Xtract Universal Setup.
+1. Starten Sie das YunIO Setup.
 2. Markieren Sie die Checkbox **Convert config files**. <br>
 Die Option *Convert config files* startet die *ConfigConverter*-Anwendung, die sicherstellt, dass alle Extraktionen, Quellsysteme (Source Systems), Destinationen sowie Server- und Benutzereinstellungen von XU 2.x oder 3.x in der neuen Version verfügbar sind. <br> 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}

@@ -1,7 +1,7 @@
 ---
 ref: yunio-03
 layout: page
-title: Einführung in Xtract Universal
+title: Einführung in YunIO
 description: Einführung
 product: yunio
 parent: yunio
@@ -15,12 +15,12 @@ progressstate: 5
 
 ### Grundfunktionalität - Architektur
 
-Extraktionen sind die Hauptentitäten in Xtract Universal. Eine [Extraktion](./erste-schritte/eine-neue-extraktion-anlegen) ist eine Kombination aus einer Quelle (SAP-System), 
+Extraktionen sind die Hauptentitäten in YunIO. Eine [Extraktion](./erste-schritte/eine-neue-extraktion-anlegen) ist eine Kombination aus einer Quelle (SAP-System), 
 einer Destination (Xtract Unversal Seite) / Zielumgebung (z.B. SQL-Server) (Kundenseitig) und einen definierten Extraktionstyp (z.B. [Table](./table)).
 
 
 Eine Quelle stellt eine [Verbindung zu einem SAP-System](./einfuehrung/sap-verbindungen-anlegen) dar. Eine [Destination](./destinationen) repräsentiert eine Verbindung zu einer Zielumgebung.
-Die Verwendung von Xtract Universal umfasst zwei Hauptphasen:
+Die Verwendung von YunIO umfasst zwei Hauptphasen:
 - Entwurfsphase
 - Ausführungsphase
 

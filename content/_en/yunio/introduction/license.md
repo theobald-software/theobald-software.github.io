@@ -2,7 +2,7 @@
 ref: yunio-introduction-06
 layout: page
 title: Licensing
-description: About the license of Xtract Universal
+description: About the license of YunIO
 product: yunio
 parent: introduction
 permalink: /:collection/:path
@@ -11,29 +11,29 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 progressstate: 5
 ---
-### About licensing concept of Xtract Universal
-Xtract Universal is licensed per target environment, source system and Windows server. <br>
-The following graphic shows the on which workstations the installation of Xtract Universal with a valid license required.   
+### About licensing concept of YunIO
+YunIO is licensed per target environment, source system and Windows server. <br>
+The following graphic shows the on which workstations the installation of YunIO with a valid license required.   
 
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-A demo license is automatically installed with the installation of Xtract Universal.<br>
+A demo license is automatically installed with the installation of YunIO.<br>
 A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. The product license is bound to your company and a specific server name.<br>
-If you run Xtract Universal Designer and Xtract Universal Server on different machines, it is only necessary to replace the license on the server.
+If you run YunIO Designer and YunIO Server on different machines, it is only necessary to replace the license on the server.
  
 
-### Installing the Xtract Universal license - XtractUniversalLicense.json
+### Installing the YunIO license - XtractUniversalLicense.json
 For installing the regular license, place the regular XtractUniversalLicense.json into the following directory of the server: <br>
 `C:\Program Files\XtractUniversal`
  <br>
  ![XU_license](/img/content/xu/xu_json_license.png ){:class="img-responsive"}
  
-A restart of the Xtract Universal service is not necessary.
+A restart of the YunIO service is not necessary.
 
-### About Xtract Universal - Info Window
+### About YunIO - Info Window
 
 {: .box-tip }
-**Tip:** To inspect your current license data, go to the main menu bar of the Xtract Universal Designer and choose **[Help] > [Info]** or press F12.
+**Tip:** To inspect your current license data, go to the main menu bar of the YunIO Designer and choose **[Help] > [Info]** or press F12.
 
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
 

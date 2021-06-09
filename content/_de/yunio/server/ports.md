@@ -10,7 +10,7 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=ports
 ---
-Der Xtract Universal Server läuft als Windows-Service mit dem Hauptprozess `C:\Program Files\XtractUniversal\XtractService.exe`. 
+Der YunIO Server läuft als Windows-Service mit dem Hauptprozess `C:\Program Files\XtractUniversal\XtractService.exe`. 
 
 *XtractService.exe* startet zwei Listener-Prozesse und lauscht standardmäßig auf folgenden Ports:
 
@@ -20,11 +20,11 @@ Listener-Prozess| Standardport
 *XtractConfigServer.exe* | 8064
 
 Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation. Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
-Der Configuration-Server kommuniziert mit dem Xtract Universal Designer über einen dedizierten Port. <br>
+Der Configuration-Server kommuniziert mit dem YunIO Designer über einen dedizierten Port. <br>
 
 {: .box-warning }
 **Warnung! Änderung der Standardports**<br>
-Nach der manuellen Anpassung der Standardports, startet der Xtract Universal Dienst nicht.<br>
+Nach der manuellen Anpassung der Standardports, startet der YunIO Dienst nicht.<br>
 Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Config-Dateien angepasst werden.<br>
 `C:\Program Files\XtractUniversal\config\server\config\general.json`<br>
 `C:\Program Files\XtractUniversal\config\server\web\general.json`

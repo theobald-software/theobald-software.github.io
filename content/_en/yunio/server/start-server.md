@@ -12,13 +12,13 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=start-server
 ---
 
 
-When executing *XtractUniversalSetup.exe* the Xtract Universal server is installed and started as a standard Windows..
+When executing *XtractUniversalSetup.exe* the YunIO server is installed and started as a standard Windows..
 
 Make sure to mark the option "Server > Install Service" during the [Installation](../introduction/installation-and-update).
 
 ![Services-Install](/img/content/xu/XU_Setup_3.png){:class="img-responsive"}
 
-The installation and removal of  the Xtract Universal Service is conducted using the `C:\Program Files\XtractUniversal\XtractService.exe` application.
+The installation and removal of  the YunIO Service is conducted using the `C:\Program Files\XtractUniversal\XtractService.exe` application.
 XtractService.exe is used via the Windows command line and supports the following commands:
 
 - /i - install Windows service
@@ -39,22 +39,22 @@ After installation, the Windows service can be started, stopped and configured v
 
 {: .box-warning }
 **Warning! Changing the standard ports**<br>
-After manually adjusting the default ports, the Xtract Universal Service does not start.<br>
+After manually adjusting the default ports, the YunIO Service does not start.<br>
 The stored ports are already assigned and need to be adjusted the following [Config files]:<br>
 `C:\Program Files\XtractUniversal\config\server\config\general.json`<br>
 `C:\Program Files\XtractUniversal\config\server\web\general.json`
 
 ### Architecture
 
-Xtract Universal is created for [distributed use](../introduction#basic-functionality---architecture). The Xtract Universal Service can be installed on a central server instance, e.g., a company-wide application server.
-`C:\Program Files\XtractUniversal\config` As a result, access to a common Xtract Universal repository is possible and can be used by several Xtract Universal users.
+YunIO is created for [distributed use](../introduction#basic-functionality---architecture). The YunIO Service can be installed on a central server instance, e.g., a company-wide application server.
+`C:\Program Files\XtractUniversal\config` As a result, access to a common YunIO repository is possible and can be used by several YunIO users.
 
 {: .box-tip }
-**Tip:** Use the appropriate user rights management in Xtract Universal to make only the users with administrator user rights are allowed to perform fundamental changes on the central repository. See also [Access Management](../security/access-management) for more details.
+**Tip:** Use the appropriate user rights management in YunIO to make only the users with administrator user rights are allowed to perform fundamental changes on the central repository. See also [Access Management](../security/access-management) for more details.
 
 *****
 #### Related links
 - [Installation](../introduction/installation-and-update)
-- [Xtract Universal Server Troubleshooting](https://kb.theobald-software.com/troubleshooting/xu_windows_service_not_running)
+- [YunIO Server Troubleshooting](https://kb.theobald-software.com/troubleshooting/xu_windows_service_not_running)
 
 

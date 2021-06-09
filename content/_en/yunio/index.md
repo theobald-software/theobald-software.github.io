@@ -11,9 +11,9 @@ weight: 1
 lang: en_GB
 ---
 
-Welcome to the Online Help for Xtract Universal. 
+Welcome to the Online Help for YunIO. 
 
-Xtract Universal is a tool for data extraction from SAP to various target environments. The extracted data can than be further processed  e.g., 
+YunIO is a tool for data extraction from SAP to various target environments. The extracted data can than be further processed  e.g., 
 in the context of business intelligence, data integration and data analytics.
 
 ### Available Components
@@ -27,7 +27,7 @@ The following overview shows, which components are available to extract data fro
 
 ### Extraction Types
 
-Xtract Universal offers a set of nine extraction types to cover a range of demands of SAP data extraction.
+YunIO offers a set of nine extraction types to cover a range of demands of SAP data extraction.
 
 - [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
 - [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
@@ -59,6 +59,6 @@ Common scenarios when using the components depending on the type of the SAP sour
 {: .box-note }
 **Note:** Further scenarios and combinations are possible.
 
-More information on functions of Xtract Universal is provided in the following sections:
+More information on functions of YunIO is provided in the following sections:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

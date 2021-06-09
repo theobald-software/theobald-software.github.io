@@ -14,7 +14,7 @@ progressstate: 5
 ### Prerequisites
 
 {: .box-note }
-**Note:** administrator permissions are required to install Xtract Universal.
+**Note:** administrator permissions are required to install YunIO.
 
 ### Setup
 
@@ -26,9 +26,9 @@ When starting the setup, components can be selected during the installation.
 
 |Component | Sub Component| Description |
 |:----|:---|:---|
-|Main Product Files |- | All required files to use Xtract Universal. |
-|Designer | -| Installs the Designer application, uncheck the option if you want to use Xtract Universal without a graphical interface. |
-|Server | | Installs the Xtract Universal Server |
+|Main Product Files |- | All required files to use YunIO. |
+|Designer | -| Installs the Designer application, uncheck the option if you want to use YunIO without a graphical interface. |
+|Server | | Installs the YunIO Server |
 |<!---->| Install Service| Installs the server component as a windows service. See also section [Start Server](../server/start-server). |
 | <!---->  |  Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
 |Start Menu Shortcuts |- |Component that adds shortcuts to the start menu.|
@@ -51,16 +51,16 @@ The list below shows several most important files that are placed into the defau
 | powerbi directory| Directory containing files related to [Power BI Connector Destination](../destinations/Power-BI-Connector).|
 | result-cache directory | Directory with extraction cache files, only applicable for pull destinations. See also sections [Pull Destinations](../destinations#pull-and-push-destinations) and [General Settings > Misc. Tab > Cache Result Setting](../getting-started/general-settings#misc-tab).|
 | xu.exe | Command line tool used for executing extractions. See also section [Scheduling an Extraction](../execute-and-automate-extractions). |
-| XtractDesigner.exe | [Xtract Universal Designer](../getting-started/designer-overview) application to create, test and monitor extractions.|
+| XtractDesigner.exe | [YunIO Designer](../getting-started/designer-overview) application to create, test and monitor extractions.|
 | ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
-| uninstall.exe| Tool for uninstalling and removing Xtract Universal with all its components from your machine. |
+| uninstall.exe| Tool for uninstalling and removing YunIO with all its components from your machine. |
 |XtractUniversalSetup.exe| Setup of the currently installed version. See also [Migrating to a Different Machine](../advanced-techniques/backup-and-migration#migration-to-a-different-machine).|
-| Eula_XtractUniversal.rtf | Document containing the license agreement for the use of the software Xtract Universal.|
+| Eula_XtractUniversal.rtf | Document containing the license agreement for the use of the software YunIO.|
 | XtractUniversalLicense.json |  License file with information about the server, the component and runtime. |
 
 
 {: .box-note }																   
-**Note:** For more details on starting Xtract Universal Server as a console application see the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+**Note:** For more details on starting YunIO Server as a console application see the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 ### Unattended Installation
 {% include _content/en/silent-setup.md %}	
@@ -98,7 +98,7 @@ There are two ways of upgrading the product version from XU 2.x and 3.x to XU 4.
 
 
 #### Upgrade During Installation
-1. Start the Xtract Universal setup.
+1. Start the YunIO setup.
 2. Make sure to mark the checkbox **Convert config files** checkbox. <br>
 The option *Convert config files* starts the *ConfigConverter* application, which ensures that all extractions, source systems, destinations, server and user settings from XU 2.x or 3.x are available in the new version. <br> 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
