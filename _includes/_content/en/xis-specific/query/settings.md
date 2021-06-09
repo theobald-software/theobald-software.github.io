@@ -1,4 +1,6 @@
-The window below will open after clicking the *Settings* button.
+### Xtract IS Query Preferences
+
+In the main window of the component, click *Settings*.  The window “Xtract IS Query Preferences” opens.
 
 ![Query-Settings](/img/content/Query-Settings.png){:class="img-responsive" }
 
@@ -17,5 +19,5 @@ All strings are converted to NVarChar regardless if the source system is Unicode
 **Use Variant Variable**<br>
 The text field for the variant will open for user editing and an SSIS variable can be entered. A dynamic variant can be assigned this way.
 
-**Do not treat “No Data Selected” as Error**<br>
-Defines whether an error message is given when there is no data to be selected.
+**Treat “No Data Selected” as Error**<br>
+If activated an error message is displayed when there is no data to be extracted.

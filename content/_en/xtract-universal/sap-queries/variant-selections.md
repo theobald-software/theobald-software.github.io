@@ -1,8 +1,8 @@
 ---
-ref: xu-sap-queries-01
+ref: xu-sap-queries-04
 layout: page
-title: Define a Query Extraction
-description: Define a Query Extraction
+title: Variants and Selections
+description: Variants and Selections
 product: xtract-universal
 parent: sap-queries
 permalink: /:collection/:path
@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-query-extraction
 ---
 
-{% include _content/en/sap-queries/query-extraction-define.md %}
+{% include _content/en/sap-queries/variants-selections.md %}
