@@ -64,6 +64,8 @@ Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibun
 Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Eingabebildschirm in SAP. <br>
 Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
 
+{% include _content/de/sap-data-format.md  %}
+
 1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]**. Das Fenster "Edit Selections" öffnet sich.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
 2. Wählen Sie, ob die Selektion in der Extraktion inkludiert oder exkludiert werden soll (3).

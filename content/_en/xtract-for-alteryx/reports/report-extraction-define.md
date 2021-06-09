@@ -56,6 +56,8 @@ This section corresponds to the report's input screen in SAP. Some selection fie
 To understand which field corresponds to a field in SAP, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. 
 This displays the technical name of a selection field.
 
+{% include _content/en/sap-data-format.md  %}
+
 1. Click the **[Edit]** button next to the selection you want to edit. The window "Edit Selection" opens.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
 2. Choose if the selection is to be included or excluded (3) from the extracted data.

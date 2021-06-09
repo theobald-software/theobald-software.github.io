@@ -10,7 +10,7 @@ This minimizes the need to enter selections each time you run a query.
 
 
 
-#### Choose a Variant
+### Choose a Variant
 
 1. Click the small **[binocular icon]** (1). The window "Look Up Variant" opens.
 ![Query-Variants-Selection](/img/content/Query-Variants-Selections.png){:class="img-responsive"}
@@ -24,13 +24,15 @@ To remove the variant, click the **[X]** button (2).<br>
 **Tip**: You can dynamize the variant by using a corresponding parameter in the extraction URL.
 
 
-#### Edit Selections
+### Edit Selections
 This section corresponds to the query's selection screen in SAP. Some selection fields only have a technical name and no description. 
 To understand which field corresponds to a field in SAP, take a look at the query’s selection screen in SAP. 
 Click on a selection field and press function key F1. This displays the technical name of a selection field.
 
 In general, selection parameters overwrite the selected variant. 
 This ensures that there are possible combinations for the selection.
+
+{% include _content/en/sap-data-format.md  %}
 
 1. Click the **[Edit]** button next to the selection you want to edit (3). The window “Edit Range” opens.
 ![Query-Selection-Parameters-02](/img/content/Selection-Options-Fill-02.png){:class="img-responsive"}

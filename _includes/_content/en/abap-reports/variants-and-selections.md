@@ -34,3 +34,5 @@ The field Option contains the selection option for the condition of the row in f
 
 Low Value column is designated for the comparison value or the lower interval limitation.<br>
 High Value column is designated for the upper interval limitation.
+
+{% include _content/en/sap-data-format.md  %}

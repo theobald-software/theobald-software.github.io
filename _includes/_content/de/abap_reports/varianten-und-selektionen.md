@@ -41,3 +41,5 @@ Das Feld Option enthält den logischen Operator für die Bedingung: <br>
 
 Die Spalte Low Value muss bei jedem Operator gefüllt werden.<br>
 Die Spalte High Value wird nur von den Operatoren verwendet, welche einen zweiten Parameter erwarten. 
+
+{% include _content/de/sap-data-format.md  %}

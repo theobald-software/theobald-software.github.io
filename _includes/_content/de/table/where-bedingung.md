@@ -55,7 +55,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
 - Die Werte müssen der internen SAP-Darstellung entsprechen:<br>
   - Das Datum 01.01.1999 hat die interne Darstellung 19990101 (JJJJMMTT) 
-  - Die Jahresperiode 001.1999 hat die interne Darstellung 1999001 (YYYYYPPP)
+  - Die Jahresperiode 001.1999 hat die interne Darstellung 1999001 (JJJJPPP)
   - Zahlen müssen führende Nullen enthalten, z.B. hat die Kundennummer 1000 die interne Darstellung 0000001000.
 
 | Operator   |      Bedeutung      |  

@@ -12,7 +12,7 @@ Das minimiert die Eingabe von Selektionen, wenn Sie Queries ausführen.
 **Hinweis:** Manuelle Selektionen und Varianten können kombiniert werden. Manuelle Selektionen überschreiben Selektionen in Varianten.
 
 
-#### Eine Variante wählen
+### Eine Variante wählen
 
 1. Klicken Sie auf das kleine **[Fernglassymbol]** (1). Das Fenster "Look Up Variant" öffnet sich.
 ![Query-Variants-Section](/img/content/Query-Variants-Selections.png){:class="img-responsive"}
@@ -25,12 +25,16 @@ Um eine Variante zu entfernen, klicken Sie **[X]** (2).
 {: .box-tip }
 **Tipp:** Sie können eine Variante über einen Parameter in der Extraktions-URL dynamisieren. 
 
-#### Selektionen bearbeiten
+### Selektionen bearbeiten
 
 Dieser Abschnitt bezieht sich auf den Selektionsbildschirm von Queries in SAP.
 Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibungen.
 Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Selektionsbildschirm in SAP. <br>
 Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
+
+Manuelle Selektionen und Varianten können kombiniert werden. Manuelle Selektionen überschreiben Selektionen in Varianten.
+
+{% include _content/de/sap-data-format.md  %}
 
 1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]** (3). Das Fenster "Edit Range" öffnet sich.
 ![Query-Selection-Parameters-02](/img/content/Selection-Options-Fill-02.png){:class="img-responsive"}
