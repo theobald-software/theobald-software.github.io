@@ -7,4 +7,4 @@
 ![Query-Search](/img/content/Query-Search.png){:class="img-responsive" }
 4. Select an item from the list. 
 5. Click **[OK]** to confirm.
-5. Optional: If the query has variants or you want to create new selections for the extraction, see [Variants and Selections](#variants-and-selections) or select the maximum number of rows to be extracted, see [Extraction Settings](./extraction-settings).
+5. Optional: If the query has variants or you want to create new selections for the extraction, see [Variants and Selections](./variant-selections) or select the maximum number of rows to be extracted, see [Extraction Settings](./settings).

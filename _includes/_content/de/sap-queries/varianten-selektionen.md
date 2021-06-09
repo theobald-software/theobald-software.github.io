@@ -36,10 +36,23 @@ Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird d
 ![Query-Selection-Parameters-02](/img/content/Selection-Options-Fill-02.png){:class="img-responsive"}
 2. Wählen Sie unter *Sign*, ob die Selektion in der Extraktion inkludiert oder exkludiert werden soll (4).
 3. Wählen Sie einen Operator (*Equal*, *GreaterThan*, etc.) von der Dropdown-Liste unter *Option* (5). 
-4. Geben Sie die Selektion in den *Low* und *High* Feldern ein. Das *High* Feld ist nur aktiv, wenn *between* oder *not between* als Operator ausgewählt wurde.
+4. Geben Sie die Selektion in den *Low* und *High* Feldern ein. Das *High* Feld ist nur aktiv, wenn *zwischen* ([]) oder *nicht zwischen* (][) als Operator ausgewählt wurde.
 5. Klicken Sie auf **[OK]**, um die Selektion zu bestätigen.
 
 Um eine Selektion zu löschen, klicken Sie auf den Button in der linken unteren Ecke (6).
+
+| logischer Operator   | Beschreibung   |
+|---------------|------------------------------|
+| "="     | ist gleich        |
+| "!=" | ist ungleich     |
+| "<"     | kleiner als   | 
+| "<="      | kleiner oder gleich   | 
+| ">"    | größer als   | 
+| ">="   | größer oder gleich | 
+| "[]" | zwischen (Intervall) | 
+| "]["       | nicht zwischen (Intervall) | 
+| " * "    | enthält | 
+
 
 {: .box-note }
 **Hinweis:** Um Variablen als Selektionsparameter zu verwenden, stellen Sie vor den Namen der Variable ein @-Symbol.

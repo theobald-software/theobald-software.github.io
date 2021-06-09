@@ -2,7 +2,7 @@
 Most queries allow entering selections before query execution.
 Selections limit the result set of the Query so as to extract only records that match the selection.<br>
 
-A selection [variant](https://help.sap.com/doc/erp2005_ehp_07/6.07/en-US/6b/98f75305610114e10000000a174cb4/frameset.htm) can be created in SAP at the selection screen of a Query. The purpose of a variant is to save selection settings. 
+A selection variant can be created in SAP at the selection screen of a Query. The purpose of a variant is to save selection settings. 
 This minimizes the need to enter selections each time you run a query.
 
 {: .box-note }
@@ -36,10 +36,22 @@ This ensures that there are possible combinations for the selection.
 ![Query-Selection-Parameters-02](/img/content/Selection-Options-Fill-02.png){:class="img-responsive"}
 2. Choose if the selection is to be included or excluded (4) from the extracted data under *Sign*.
 3. Select an operator (Equal, GreaterThan, etc.) from the drop-down list under *Option* (5).
-4. Enter the selection in the respective Low and High fields. The High field is active for input when the between or not between operator was selected.
+4. Enter the selection in the respective Low and High fields. The High field is active for input when the *between* ([]) or *not between*(][) operator was selected.
 5. Click **[OK]** to confirm the selections.
 
 To delete a selection, click the button in the bottom left corner (6).
+
+| logical operator   | description   |
+|---------------|-------------------------|
+| "="     | equal      |
+| "!=" | not equal     |
+| "<"     | lower than   | 
+| "<="      | lower equal than   | 
+| ">"    | greater than   | 
+| ">="   | greater equal than | 
+| "[]" | between (interval) | 
+| "]["       | not between (Intervall) | 
+| " * "    | contains pattern (Like) | 
 
 {: .box-note }
 **Note**: To use variable as selection parameters, add an @-symbol before the variable name.
