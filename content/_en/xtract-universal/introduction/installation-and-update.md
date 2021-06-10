@@ -67,7 +67,7 @@ The list below shows several most important files that are placed into the defau
 
 ### How to use the Standalone Designer
 
-When downloading Xtract Universal from [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/) there is an option to download a standalone version of the Designer for Windows.
+[My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/) offers a download option for a standalone version of the Xtract Universal Designer for Windows.
 The standalone Designer can be used to connect to a central Xtract Universal repository without any software installation.
 
 #### Prerequisites
