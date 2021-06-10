@@ -54,16 +54,13 @@ If you don't see the editor shown below, click **Edit as Text**.
 ![Query-Designer](/img/content/xu/ssrs/Query-Designer.png){:class="img-responsive"}
 6. Optional: Change [runtime parameters](../../execute-and-automate-extractions/extraction-parameters) of the extraction (6). Parameter changes are visible in the Query string (7).
 Invalid input is marked with a red circle that displays an error message when hovering over it.
-7. Click **[Preview]** (8) to run the extraction in preview mode. If the runtime parameter *preview* is set to True, the preview shows the actual data of the extraction.
+7. Click **[Preview]** (8) to run the extraction in preview mode.
 8. Confirm your input with **[OK]**. The Query Builder closes. 
 9. Make sure the Query string from the Query Builder is displayed in the Report Wizard before clicking **[Next]**.
 ![Report-Wizard](/img/content/xu/ssrs/Report-Wizard.png){:class="img-responsive"}
 10. Complete the Report Wizard according to your preferences.
 
 After creating the report, you can access the Query Builder by right-clicking the *Dataset* in *Report Data* and selecting **Query...**.
-
- {: .box-tip }
-**Tip:** Experienced users can enter the Query string directly in the Report Wizard without using the Query Builder, see [Metadata access via HTTP](../../advanced-techniques/metadata-access-via-http-json).
 
 ### Parameterization
 

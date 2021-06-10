@@ -57,16 +57,12 @@ Wenn Ihnen der unten abgebildete Editor nicht angezeigt wird, klicken Sie auf **
 6. Optional: Bearbeiten Sie die [Laufzeitparameter](../../extraktionen-ausfuehren-und-einplanen/extraktionsparameter) der Extraktion (6). 
 Parameteränderungen werden im Query string angezeigt (7). Ungültige Eingaben werden rot markiert. Eine Fehlermeldung erhalten Sie, wenn Sie den Mauszeiger auf die Markierung bewegen.
 7. Klicken Sie auf **[Preview]** (8) um die Extraktion im *Preview Mode* auszuführen. 
-Wenn der Laufzeitparameter *preview* auf True steht, zeigt die Vorschau Daten der Extraktion an.
 8. Bestätigen Sie Ihre Eingabe mit **[OK]**. Der Query Builder schließt sich. 
 9. Prüfen Sie, dass der Query string aus dem Query Builder im Report-Assistenten angezeigt wird, befür Sie auf **[Next]** klicken.
 ![Report-Wizard](/img/content/xu/ssrs/Report-Wizard.png){:class="img-responsive"}
 10. Richten Sie den Report entsprechend Ihrer Anwendung ein und beenden Sie den Report-Assistenten.
 
 Nachdem der Report erstellt wurde, können Sie auf den Query Builder zugreifen, indem Sie unter *Report Data* über Rechtklick auf *Dataset* **Query...** auswählen. 
-
- {: .box-tip }
-**Tipp:** Erfahrene Benutzer können den Query string direkt in den Report-Assistenten eingeben, ohne den Query Builder zu verwenden, siehe [Metadata-Zugriff über HTTP](../../fortgeschrittene-techniken/metadata-zugriff-ueber-http-json).
 
 
 ### Parametrisierung
