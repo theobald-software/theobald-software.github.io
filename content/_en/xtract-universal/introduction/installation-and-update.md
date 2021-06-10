@@ -18,7 +18,7 @@ progressstate: 5
 
 ### Setup
 
-*XtractUniversalSetup.exe* is an industry standard setup.  Execute the *XtractUniversalSetup.exe* file and follow the instructions of the setup.
+*XtractUniversalSetup.exe* is an industry standard setup. Execute the *XtractUniversalSetup.exe* file and follow the instructions of the setup.
 
 When starting the setup, components can be selected during the installation. 
 
@@ -60,10 +60,31 @@ The list below shows several most important files that are placed into the defau
 
 
 {: .box-note }																   
-**Note:** For more details on starting Xtract Universal Server as a console application see the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+**Note:** For more details on starting the Xtract Universal Server as a console application see the knowledge base article [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
 
 ### Unattended Installation
 {% include _content/en/silent-setup.md %}	
+
+### How to use the Standalone Designer
+
+When downloading Xtract Universal from [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/) there is an option to download a standalone version of the Designer for Windows.
+The standalone Designer can be used to connect to a central Xtract Universal repository without any software installation.
+
+#### Prerequisites
+The [Xtract Universal Service](../server/start-server) has to be installed on a central server instance e.g., a company-wide application server.<br>
+As a result, access to a common Xtract Universal repository (`C:\Program Files\XtractUniversal\config`) is possible and can be used by several Xtract Universal users.
+
+#### Starting the Standalone-Designer
+When the download of the standalone Designer is completed, unpack the files from the `.zip` folder to any directory.<br>
+The folder contains two executable files:<br>
+- `XtractDesigner.exe` starts the Designer.
+- `xu.exe` is the command line tool used for executing extractions, see [Call via Commandline](../execute-and-automate-extractions/call-via-commandline).
+
+Use the `XtractDesigner.exe` file to start the Designer. Before you connect to a central XU-Server make sure you have access rights to the server and repository, see [Access Management](../security/access-management).
+
+{: .box-note }																   
+**Note:** When updating the software, you have to manually download the latest version of the standalone Designer from [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/) and replace the old files.
+
 
 ### New Installation and Update																																										   
 
@@ -86,7 +107,7 @@ informs about changes in the version history and release notes.
 1. Check if you have a working test environment with a valid license and maintenance.
 2. Make sure that the test environment is a copy of the current production environment.
 3. Check the [Version History](https://kb.theobald-software.com/version-history) and release notes in the
-knowledge base to check, if update is needed.
+knowledge base to check, if an update is needed.
 4. Create a [backup](../advanced-techniques/backup-and-migration) of the current installation.
 5. Conduct any necessary preparations and changes as described in the Release Note / Version History. In case of major changes, use the ConfigConverter.
 

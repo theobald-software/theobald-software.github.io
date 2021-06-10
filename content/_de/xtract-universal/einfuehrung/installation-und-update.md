@@ -66,6 +66,28 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 ### Unbeaufsichtigte Installation 
 {% include _content/de/silent-setup.md %}	
 
+
+### Verwendung des Standalone-Designers
+
+Wenn Sie Xtract Universal aus dem [Kundenportal - My Theobald Software ](https://my.theobald-software.com/) herunterladen, gibt es die Option eine Standalone-Version des Designers für Windows herunterzuladen.
+Der Standalone-Designer kann genutzt werden, um sich auf ein zentrales Xtract Universal Repository zu verbinden ohne die Software installiert zu haben.
+
+#### Voraussetzungen
+Der Xtract Universal Service muss auf einer zentralen Serverinstanz, z.B. einem firmenweiten Anwendungsserver, installiert sein. <br>
+Dadurch ist der Zugriff auf ein gemeinsames Xtract Universal Repository (`C:\Program Files\XtractUniversal\config`) möglich, das von mehreren Xtract Universal Anwendern genutzt werden kann.
+
+#### Den Standalone-Designer starten
+Wenn Sie den Standalone-Designer heruntergeladen haben, entpacken Sie die Dateien aus dem `.zip` Ordner in ein beliebiges Verzeichnis.<br>
+Der Ordner enthält zwei ausführbare Dateien:<br>
+- `XtractDesigner.exe` startet den Designer.
+- `xu.exe` ist ein Kommandozeilentool zum Ausführen von Extraktionen siehe [Aufruf via Kommandozeile](../extraktionen-ausfuehren-und-einplanen/call-via-commandline).
+
+Verwenden Sie `XtractDesigner.exe`, um den Designer zu starten. Bevor Sie sich mit einem XU-Server verbinden, stellen Sie sicher, dass Sie Zugriffsrechte auf Server und Repository haben, siehe [Zugriffssteuerung](sicherheit/zugriffsverwaltung).
+
+{: .box-note }																   
+**Hinweis:** Bei einem Softwareupdate laden Sie die aktuelle Version des Standalone-Designers manuell aus dem [Kundenportal - My Theobald Software ](https://my.theobald-software.com/) herunter und ersetzen Sie das bisher verwendete Verzeichnis des Standalone-Designers.
+
+
 ### Neuinstallation und Update
 
 {: .box-warning}
