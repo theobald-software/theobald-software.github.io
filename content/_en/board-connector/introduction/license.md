@@ -34,7 +34,7 @@ A restart of the BOARD Connector service is no longer necessary.
 In erarlier versions BOARD Connector license files were delivered as .dll files. The procedure for replacing a .dll file license is similar to the .json file procedure, but a restart of the BOARD Connector service is required.
 
 ### Maintenance
-General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software. Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
+General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/board-connector-pricing-and-order/) of Theobald Software. Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
 In case of technical difficulties, contact the support team by email: [support@theobald-software.com](mailto:support@theobald-software.com).
 
 

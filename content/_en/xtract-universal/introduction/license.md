@@ -38,7 +38,7 @@ A restart of the Xtract Universal service is not necessary.
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
 
 ### Maintenance
-General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
+General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/xtract-universal/pricing-and-order) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
 In case of technical difficulties, contact the support team by email: [support@theobald-software.com](mailto:support@theobald-software.com).
 
 
