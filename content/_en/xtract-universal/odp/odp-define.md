@@ -4,7 +4,7 @@ layout: page
 title: Define an ODP Extraction
 description: ODP Extracttion
 product: xtract-universal
-parent: odp
+parent: Operational Data Provisioning (ODP)
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
