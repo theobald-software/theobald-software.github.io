@@ -5,37 +5,58 @@ title: Getting Started
 description: Getting Started
 product: yunio
 parent: yunio
-childidentifier: getting-started
 permalink: /:collection/:path
 weight: 10
 lang: en_EN
 ---
 
-The following section gives a general introduction to working with Xtract IS using the Table component as an example. 
+The following section gives a general introduction to working with YunIO. 
 The information described in the following section is a prerequisite for all subsequent sections.
 
-{: .box-note }
-**Note:** An [SAP Connection](./sap-connection) is a requirement for using any of Xtract IS components.
+### Web UI 
+
+1. Make sure that the YunIO service is running...
+2. Open a browser of your choice.
+3. The URL pattern to access the YunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
+	- If the YunIO service runs on a local server, replace `[host]` with *localhost*.
+	- If the YunIO service does not run on the same machine as the browser, replace `[host]` with the name of the host on which the service runs.
+	- After the installation of YunIO the Web UI is accessible under the default port 8077. Make sure that the port is not blocked by your firewall.
+	- You can configure the port under *Settings* in the YunIO Web UI.
+4. Enter the URL to access the YunIO Web UI.
+
+**Add image**
+
+### Add an SAP Connection
+
+In *Connection* you can add new SAP connections and edit or delete existing connections.
+
+1. To add a new SAP connection, click **[Add Connection]**.<br>
+To edit an existing connection, click **[..]**  under *Actions* and select **Edit**.
+2. Enter the connection information for your SAP system under *System*
+3. Enter your SAP credentials under *Authentication*.
+4. Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
+5. Click **[Save]** to save your input.
+
 
 ### Creating an Extraction
 
-1. Set up a **Data Flow Task** by dragging the dataflow component into the "Control Flow" canvas. Double-click the component to access the dataflow canvas.
-2. Add an SAP Connection using the [*Xtract Connection Manager*](./sap-connection/the-connection-manager).
-3. Drag & drop the **Xtract Table** component to the data flow task. 
-![xis_table_overview](/img/content/xis/xis_table_overview.png){:class="img-responsive"}
-4. Assign a *Connection Manager* by double-clicking the **Xtract Table** component. 
-5. Double-click the **Xtract Table** component. The window “Extract Single and Joint SAP Tables or Views” opens. 
+In *Services* you can create new extractions and edit, run or delete  existing extractions.
 
-{: .box-note }
-**Note:** To assign a specific *Connection Manager* instead of assigning one automatically, follow the instructions in [Assign a Connection Manager](./sap-connection/the-connection-manager#assigning-a-connection-manager-to-an-xtract-component).
+1. Click **[Add Service]** to add a new extraction.
+2. In the section *Endpoint* enter a name for the extraction and choose an SAP connection under **Source System**.
+3. Choose **SAP Table or View** or **RFC Function Module or BAPI** as the *Extraction TYpe*.
+4. Optional: You can add a short description for the extraction.
+5. Click **[Next]**.
+6. Enter the name of the Table/BAPI to be extracted in the field **Search Term**. You can use wildcards ( * ) in your search.
+7. Click **[Search]** to display the search results.
+8. Select a source file by clicking on their name.
+9. Depending on the chosen extraction type, you can enter further settings, see [Table](./table) or [BAPI](./bapi).
+10. Click **[Save]** to save your input. <br>
+You can edit the extraction by clicking **[..]** next to the extraction and selecting **Edit**.
 
-{% include _content/en/tables/define-a-table-extraction.md  %}
 
 *****
 #### Related Links
 - [BAPI](./bapi)
-- [BW Cube](./bw-cube)
-- [BW Hierarchy](./hierarchy)
-- [ODP](./odp)
-- [Table](./table) - further details on the Table component
+- [Table](./table)
 

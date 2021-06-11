@@ -14,47 +14,24 @@ old_url: /Xtract-Universal-DE/
 
 Willkommen in der Online Help für YunIO. 
 
-YunIO ist ein Werkzeug zur Datenextraktion aus SAP in verschiedene Zielumgebungen. Die extrahierten Daten können dann weiterverarbeitet werden, z.B. 
-im Rahmen von Business Intelligence, Datenintegration und Datenanalyse. 
+YunIO ist ein Konnektor der eine Konfigurationsplattform zum Einrichten der Konnektivität zwischen SAP- und Cloud-Anwendungen zur Verfügung stellt.<br>
+Die **Anwendung** ermöglicht eine einfache Integration von SAP Daten und Geschäftsprozessen in unterschiedliche Plattformen und Anwendungen.<br>
+Die extrahierten Daten können dann weiterverarbeitet werden, z.B. im Rahmen von Business Intelligence, Datenintegration und Datenanalyse. 
 
-### Verfügbare Komponenten
+### Software-Architektur 
 
-In der folgenen Übersicht finden Sie, welche Komponente für die Datenextraktion aus einem SAP-System verwendet werden können. 
+Bei YunIO handelt es sich um einen Windows-Dienst mit einer eingebetteten Web-UI.<br>
+Der YunIO-Dienst wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert. Der Zugriff auf die Web-UI erfolgt über einen Browser Ihrer Wahl.<br>
+**Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um das lokale SAP-System mit der jeweiligen Cloud-Anwendung zu verbinden.**
+
 ![XU-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
 
 ### Extraktionstypen
-YunIO bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 
-Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
+YunIO bietet zwei Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 
-- [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**BW Cube**](./bw-infocubes-und-bex-queries) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
-- [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
-- [**DeltaQ**](./datasource-deltaq) extrahiert DataSources (OLTP) und Extraktoren aus dem ERP und ECC System.
-- [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
-- [**Open Hub Services (OHS)**](./bw-open-hub-services) extrahiert InfoSpokes und OHS Destinationen. <!--Frage: kann man destinationen extrahieren?-->
-- [**Query**](./sap-queries) extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
-- [**Report**](./report-abap-reports-ansteuern) extrahiert ABAP Reports.
-- [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
-- [**Table Join**](./table-join) -  ermöglicht das Joinen von mehreren SAP-Tabellen. Der Join-Prozess findet vollständig innerhalb des SAP-Systems statt, ohne dass einzelne Tabellen heruntergeladen werden müssen.<br>
-**Hinweis: veraltete Komponente! Verwenden Sie die Table-Komponente**
-
-
-| Extraktionstyp   | ERP | BW |
-|-------------|:---:|:--:|
-| BAPI        | X   | X  |
-| BW Cube     |     | X  |
-| BW Hierarchy   |     | X  |
-| DeltaQ      | X   | X  |
-| ODP         | X   | X |
-| OHS         |     | X  |
-| Query       | X   |    |
-| Report | X   |    |
-| Table       | X   | X  |
-
-
-{: .box-note }
-**Hinweis:** Weitere Szenarien und Kombinationen sind möglich.
+- [**BAPI/Funktionsbausteine**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
+- [**Table**](./table) extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 
 
 Weitere Informationen zu den Funktionen von YunIO finden Sie in den folgenden Abschnitten:
