@@ -19,7 +19,7 @@ progressstate: 5
 
 ### Setup
 
-Die `XtractUniversalSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei *XtractUniversalSetup.exe* aus und folgen Sie den Anweisungen des Setups.
+Die `XtractUniversalSetup.exe` ist ein branchenübliches Setup. Führen Sie die Datei *XtractUniversalSetup.exe* aus und folgen Sie den Anweisungen des Setups.
 
 Beim Starten des Setups können die optionalen Komponenten (1) für die Installation ausgewählt werden. Bei der Auswahl der Komponenten werden die Optionsdetails im "Description" Feld angezeigt (2). 
 
@@ -82,7 +82,7 @@ Der Ordner enthält zwei ausführbare Dateien:<br>
 - `XtractDesigner.exe` startet den Designer.
 - `xu.exe` ist ein Kommandozeilentool zum Ausführen von Extraktionen siehe [Aufruf via Kommandozeile](../extraktionen-ausfuehren-und-einplanen/call-via-commandline).
 
-Verwenden Sie `XtractDesigner.exe`, um den Designer zu starten. Bevor Sie sich mit einem XU-Server verbinden, stellen Sie sicher, dass Sie Zugriffsrechte auf Server und Repository haben, siehe [Zugriffssteuerung](sicherheit/zugriffsverwaltung).
+Verwenden Sie `XtractDesigner.exe`, um den Designer zu starten. Bevor Sie sich mit einem XU-Server verbinden, stellen Sie sicher, dass Sie Zugriffsrechte auf Server und Repository haben, siehe [Zugriffssteuerung](../sicherheit/zugriffsverwaltung).
 
 {: .box-note }																   
 **Hinweis:** Bei einem Softwareupdate laden Sie die aktuelle Version des Standalone-Designers manuell aus dem [Kundenportal - My Theobald Software ](https://my.theobald-software.com/) herunter und ersetzen Sie das bisher verwendete Verzeichnis des Standalone-Designers.
