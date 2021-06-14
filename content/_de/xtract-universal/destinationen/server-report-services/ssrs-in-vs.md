@@ -36,11 +36,13 @@ Falls *Xtract Universal* nicht verfügbar oder in Großbuchstaben ist, prüfen S
 6. Optional (nur nötig, wenn die [XU-Serversicherheit](../../sicherheit/serversicherheit) konfiguriert wurde oder an das SAP-Quellsystem entsprechende Credentials übergeben werden müssen): Wechseln Sie in den *Credentials* Tab (4) und geben Sie Ihren [Benutzernamen und Passwort](../../sicherheit/benutzerverwaltung) für Xtract Universal ein.
 7. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 
-Wenn *Xtract Universal* trotz aktuellem *Microsoft Reporting Services Projects* Plugin und aktuellem Xtract Universal nicht in der Drop-Down-Liste (2) verfügbar ist, schicken Sie Log-Datei in `C:\Program Files\XtractUniversal\ssrs\log.txt` an den [Theobald Support](mailto:support@theobald-software.com).
+Wenn *Xtract Universal* trotz aktuellem *Microsoft Reporting Services Projects* Plugin und aktuellem Xtract Universal nicht in der Drop-Down-Liste (2) verfügbar ist, schicken Sie die Log-Datei aus `C:\Program Files\XtractUniversal\ssrs\log.txt` an den [Theobald Support](mailto:support@theobald-software.com).
 
 {: .box-tip }
 **Tipp:** Der *connection string* ist im URL string aus dem "Run Extraction"-Fenster des Designers enthalten. Kopieren Sie den String bis zum '?' und fügen Sie ihn als *connection string* in Visual Studio ein.
 
+{: .box-note }
+**Hinweis:** Wenn in den [XU Webserer Einstellungen](../../sicherheit/serversicherheit) **https Restricted...** oder **https Unrestricted** aktiviert ist, muss auf dem Rechner auf dem der SSRS Server läuft die Registry entsprechend der [Microsoft Hilfe (Konfigurieren für starke Kryptografie)](https://docs.microsoft.com/de-de/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography) angepasst werden.
 
 ### Einen Report mit einer Xtract Universal Datenquelle erstellen
 
@@ -58,7 +60,7 @@ Wenn Ihnen der unten abgebildete Editor nicht angezeigt wird, klicken Sie auf **
 Parameteränderungen werden im Query string angezeigt (7). Ungültige Eingaben werden rot markiert. Eine Fehlermeldung erhalten Sie, wenn Sie den Mauszeiger auf die Markierung bewegen.
 7. Klicken Sie auf **[Preview]** (8) um die Extraktion im *Preview Mode* auszuführen. 
 8. Bestätigen Sie Ihre Eingabe mit **[OK]**. Der Query Builder schließt sich. 
-9. Prüfen Sie, dass der Query string aus dem Query Builder im Report-Assistenten angezeigt wird, befür Sie auf **[Next]** klicken.
+9. Prüfen Sie, dass der Query string aus dem Query Builder im Report-Assistenten angezeigt wird, bevor Sie auf **[Next]** klicken.
 ![Report-Wizard](/img/content/xu/ssrs/Report-Wizard.png){:class="img-responsive"}
 10. Richten Sie den Report entsprechend Ihrer Anwendung ein und beenden Sie den Report-Assistenten.
 
@@ -67,7 +69,7 @@ Nachdem der Report erstellt wurde, können Sie auf den Query Builder zugreifen, 
 
 ### Parametrisierung
 
-Der Xtract Universal Designer verwendet für die Parametriesierung [Laufzeitparameter](../../extraktionen-ausfuehren-und-einplanen/extraktionsparameter).
+Der Xtract Universal Designer verwendet für die Parametrisierung [Laufzeitparameter](../../extraktionen-ausfuehren-und-einplanen/extraktionsparameter).
 
 Die Laufzeitparameter sind im Query Builder verfügbar. Sie können eine der folgenden Eigenschaften (**Behaviours**) annehmen: <br>
 

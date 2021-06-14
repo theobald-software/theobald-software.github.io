@@ -51,5 +51,7 @@ Sie können den Server im *Configuration Manager* neu starten. Klicken Sie auf *
 Um die Erweiterung zu deinstallieren, verwenden Sie die *uninstall.bat* Datei aus dem `\ssrs`-Ordner des Xtract Universal Verzeichnisses.
 
 {: .box-note }
-**Hinweis:** Sollten bei der Installation der Xtract Universal Data Extension Schwierigkeiten auftreten, Senden Sie die Log-Datei aus dem Verzeichnis `C:\Program Files\XtractUniversal\ssrs\log.txt` an [Theobald Support](mailto:support@theobald-software.com).
+**Hinweis:** Wenn das *Reporting Services Projects* Plugin in Visual Studio upgedatet wird, ist die Xtract Universal Data Extension nicht mehr verfügbar. Die Xtract Universal Data Extension muss dann neu installiert werden.
+
+Sollten bei der Installation der Xtract Universal Data Extension Schwierigkeiten auftreten, Senden Sie die Log-Datei aus dem Verzeichnis `C:\Program Files\XtractUniversal\ssrs\log.txt` an [Theobald Support](mailto:support@theobald-software.com).
 

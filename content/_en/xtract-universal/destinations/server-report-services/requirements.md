@@ -50,7 +50,10 @@ You can restart the server in the Report Server Configuration Manager by clickin
 To uninstall the Data Extension use the *uninstall.bat* file from the `\ssrs`folder in the Xtract universal directory.  
 
 {: .box-note }
-**Note:** Should you encounter issues with the installation of the Xtract Universal Data Extension, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](mailto:support@theobald-software.com).
+**Note:** If the *Reporting Services Projects* plugin for Visual Studio is updated, the Xtract Universal Data Extension won't be available anymore. The Data Extension must be reinstalled.
+
+
+Should you encounter issues with the installation of the Xtract Universal Data Extension, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](mailto:support@theobald-software.com).
 
 
 <!--- After installation of Xtract Universal the setup creates the following entries and extensions in the Alteryx installation directory:
