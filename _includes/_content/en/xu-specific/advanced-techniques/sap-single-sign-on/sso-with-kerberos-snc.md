@@ -32,9 +32,9 @@ Download `gx64krb5.dll` from [SAP Note 2115486](https://launchpad.support.sap.co
 2. Place the downloaded .dll file on each machine, where the Designer is running.
 3. Open "Computer Management" by entering the following command: `compmgmt.msc`.
 4. Under **Local Users and Groups** select **Groups > Administrators**.
-5. Click **[Add]** (4) to add the service account to the local admin group (5).
+5. Click **[Add]** (4) to add the service account to the local admin group (5).<br>
 ![XU_SSO_WinAD_SPN](/img/content/admin_groups_xu_service_account.png)
-6. Open "Local Security policy" by entering the following command: `secpol.msc`. 
+6. Open "Local Security policy" by entering the following command: `secpol.msc`. <br>
 ![XU_SSO_LocSecPol](/img/content/XU_SSO_LocSecPol.png){:class="img-responsive"}
 7. Select **[Local Policies > User Rights Assignment]**
     - Act as part of the operating system 
@@ -54,9 +54,9 @@ Value | 1
 {: .box-note }
 **Note:** An existing [SAP connection](../../introduction/sap-connection) to a Single Application Server or Message Server is the prerequisite for using SSO with SNC.
 
-1. In the main menu of the Designer, navigate to **[Server > Manage Sources]**. The window "Source Details" opens.
+1. In the main menu of the Designer, navigate to **[Server > Manage Sources]**. The window "Source Details" opens.<br>
 ![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}
-2. Select an existing SAP source and click **[Edit]** (pencil symbol).
+2. Select an existing SAP source and click **[Edit]** (pencil symbol).<br>
 ![Edit-SAP-source](/img/content/edit_sap_source.png){:class="img-responsive"}
 3. Enable the **SNC** option (1) in the subsection *Authentication*.
 4. Enable the checkbox *Impersonate authenticated caller (SSO)* (2).

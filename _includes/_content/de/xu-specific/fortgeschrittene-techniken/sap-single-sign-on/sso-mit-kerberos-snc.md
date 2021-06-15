@@ -34,9 +34,9 @@ Laden Sie die Bibliothek `gx64krb5.dll` direkt aus der [SAP Note 2115486](https:
 2. Legen Sie die heruntergeladene .dll-Datei auf jedem Rechner ab, auf dem der Designer läuft.
 3. Öffnen Sie "Computer Management", indem Sie den folgenden Befehl eingeben: `compmgmt.msc`.
 4. Unter **Local Users and Groups** wählen Sie **Groups > Administrators**.
-5. Klicken Sie auf **[Add]** (4) um den Service-Account zur lokalen Admingruppe hinzuzufügen (5).
+5. Klicken Sie auf **[Add]** (4) um den Service-Account zur lokalen Admingruppe hinzuzufügen (5).<br>
 ![XU_SSO_WinAD_SPN](/img/content/admin_groups_xu_service_account.png)
-6. Öffnen Sie "Local Security policy", indem Sie den folgenden Befehl eingeben: `secpol.msc`. 
+6. Öffnen Sie "Local Security policy", indem Sie den folgenden Befehl eingeben: `secpol.msc`. <br>
 ![XU_SSO_LocSecPol](/img/content/XU_SSO_LocSecPol.png){:class="img-responsive"}
 7. Wählen Sie **[Local Policies > User Rights Assignment]**
     - Act as part of the operating system (Als Teil des Betriebssystems handeln) 
@@ -56,9 +56,9 @@ Value (Wert) | 1
 {: .box-note }
 **Hinweis:** Eine bestehende [SAP-Verbindung](../../einfuehrung/sap-verbindungen-anlegen) zu einem Single Application Server oder einem Message Server ist die Voraussetzung für die Verwendung von SSO mit SNC.
 
-1. Im Hauptmenü des Designers, navigieren Sie zu **[Server > Manage Sources]**. Das Fenster "Source Details" öffnet sich.
+1. Im Hauptmenü des Designers, navigieren Sie zu **[Server > Manage Sources]**. Das Fenster "Source Details" öffnet sich.<br>
 ![XU_SSO_SAPSource](/img/content/XU_SSO_SAP_Source.png){:class="img-responsive"}
-2. Wählen Sie eine vorhandene SAP-Quellsystem aus und klicken Sie auf **[Edit]** (Bleistift-Symbol).
+2. Wählen Sie eine vorhandene SAP-Quellsystem aus und klicken Sie auf **[Edit]** (Bleistift-Symbol).<br>
 ![Edit-SAP-source](/img/content/edit_sap_source.png){:class="img-responsive"}
 3. Aktivieren Sie die Option **SNC** (1) in der Sektion *Authentication*.
 4. Markieren Sie die Checkbox *Impersonate authenticated caller (SSO)* (2).
