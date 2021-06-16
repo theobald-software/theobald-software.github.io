@@ -20,7 +20,7 @@ Progressstate: 5
 {% include _content/de/einfuehrung/xu-req-verschiedenes.md %}
 
 {: .box-note }
-**Hineis:** Für mehr Informationen zur Verarbeitung paralleler Extraktionen, siehe [Ausführung paralleler Extraktionen](../extraktionen-ausfuehren-und-einplanen/#ausführung-paralleler-extraktionen).
+**Hineis:** Für mehr Informationen zur Verarbeitung paralleler Extraktionen, siehe [Ausführung paralleler Extraktionen](../extraktionen-ausfuehren-und-einplanen#ausführung-paralleler-extraktionen).
 
 
 ### Destinationen

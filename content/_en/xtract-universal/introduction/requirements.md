@@ -19,7 +19,7 @@ Progressstate: 5
 {% include _content/en/requirements/xu-req-misc.md %}
 
 {: .box-note }
-**Note:** For more information on the processing of parallel extractions, see [Run parallel Extractions](../execute-and-automate-extractions/#run-parallel-extractions).
+**Note:** For more information on the processing of parallel extractions, see [Run parallel Extractions](../execute-and-automate-extractions#run-parallel-extractions).
 
 
 ### Destinations
