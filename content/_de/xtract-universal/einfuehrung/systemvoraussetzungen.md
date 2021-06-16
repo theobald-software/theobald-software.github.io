@@ -19,6 +19,10 @@ Progressstate: 5
 {% include _content/de/einfuehrung/operating-systems.md %}
 {% include _content/de/einfuehrung/xu-req-verschiedenes.md %}
 
+{: .box-note }
+**Hineis:** Für mehr Informationen zur Verarbeitung paralleler Extraktionen, siehe [Ausführung paralleler Extraktionen](../extraktionen-ausfuehren-und-einplanen/#ausführung-paralleler-extraktionen).
+
+
 ### Destinationen
 Für die Verwendung bestimmter [Destinationen](../destinationen) kann ein geeigneter Treiber oder eine entsprechende Bibliothek erforderlich sein. Weitere Informationen entnehmen Sie dem Abschnitt Voraussetzungen der einzelnen Destinationen.
 
