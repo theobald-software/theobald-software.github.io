@@ -80,7 +80,7 @@ Der Parameter unterstützt die Verwendung von Formeln.
 
  {: .box-note }
 **Hinweis:** Laufzeitparameter erlauben die Eingabe eines einzelnen Parameters.  
-Wenn man mehrere Abfrageparameter verwenden möchte, kann man mit den Bordmitteln des VS Report Designers einen *berechneten Abfrageparameter* zusammenbauen und diesen als Laufzeitparameter übergeben.
+Wenn man mehrere Abfrageparameter verwenden möchte, kann man mit den Bordmitteln des VS Report Designers einen *berechneten Abfrageparameter* zusammenbauen und diesen als Laufzeitparameter übergeben, siehe [Using Computed Query Parameters for SSRS with Xtract Universal](https://kb.theobald-software.com/xtract-universal/xu-ssrs-parameterizing-in-vs).
 
 #### Dynamische Laufzeitparameter definieren
 
@@ -118,3 +118,4 @@ Wenn ein Abfrageparameter NULL ist, wird der Parameter zu Laufzeit nicht überge
 - [Berichtsentwurfstipps (Berichts-Generator und SSRS)](https://docs.microsoft.com/de-de/sql/reporting-services/report-design/report-design-tips-report-builder-and-ssrs?view=sql-server-ver15)
 - [Reporting Services-Tutorials (SSRS)](https://docs.microsoft.com/de-de/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15)
 - [Hinzufügen eines Abfrageparameters zum Erstellen eines Berichtsparameters](https://docs.microsoft.com/de-de/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder?view=sql-server-ver15#Query)
+- [Using Computed Query Parameters for SSRS with Xtract Universal](https://kb.theobald-software.com/xtract-universal/xu-ssrs-parameterizing-in-vs)
