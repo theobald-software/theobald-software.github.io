@@ -70,11 +70,24 @@ The Crypto key is not stored in the GCP and demands the additional effort to be 
 Enter the cryptographic key into the *Crypto field* if you selected "*Customer Supplied"* as the encryption method.
 
 ### File Format 
+**File type**<br>
 Select the required file format between "CSV", "JSON" and "Parquet".
 
+![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
+#### CVS Settings
 The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
 
-![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
+#### Parquet Settings
+**Compatibility mode**<br>
+You can choose between *Pure* and *Spark* for the compatibility mode.
+Spark does not support the data types used in pure mode, so other data types need to be used.
+
+| SAP | Pure | Spark |
+|------|-------------|-------|
+| INT1 | UINT_8 | INT16 |
+| TIMS | TIME_MILLIS | UTF8 |
+
+![AWS S3 compability](/img/content/xu/xu_S3_dest_comp_mode.png){:class="img-responsive"}
 
 ### Connection Retry
 
