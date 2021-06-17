@@ -18,9 +18,9 @@ Basic Xtract Universal the knowledge is required to understand the following sec
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
-{: .box-note }
-**Note:** The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. For detailed information, see [Install Report Custom Fuction Module](./sap-customizing/install-report-custom-function-module).
 
+{% include _content/en/abap-reports/report-workflow.md %}
 
+******
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 
