@@ -11,10 +11,4 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-report-extraction
 ---
 
-After the definition of a Report extraction the following screen pops up:
-
-![Abap-Report-Define-Data-Source](/img/content/Abap-Report-Define-Data-Source.png){:class="img-responsive"}
-
-Click the binocular button to open up the search dialog. You can use wildcards ( * ) to search for the report you want to use for extraction:
-
-![Look-Up-Report](/img/content/Look-Up-Report.png){:class="img-responsive"}
+{% include _content/en/abap-reports/report-extraction-define.md %}

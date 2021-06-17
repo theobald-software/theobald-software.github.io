@@ -1,6 +1,6 @@
 
 
-The following section shows how to use the Report Component of Xtract for Alteryx. <br>
+The following section shows how to use the Report Component. <br>
 
 
 ### Look Up a Report or Transaction

@@ -1,4 +1,4 @@
-Der folgende Abschnitt beschreibt die Anwendung der Report Komponente in Xtract for Alteryx 
+Der folgende Abschnitt beschreibt die Anwendung der Report Komponente.
 
 
 ### Einen Report oder eine Transaktion finden

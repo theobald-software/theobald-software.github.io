@@ -12,14 +12,16 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=abap-reports
 ---
 
-The following section describes the functions of the Report component. <br>
+The following section describes the functions of the Report Component. <br>
 Basic BOARD Connector the knowledge is required to understand the following sections. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with table](./getting-started). <br>
-
-{: .box-note }
-**Note:** The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. For detailed information, see [Install Report Custom Fuction Module](./sap-customizing/install-report-custom-function-module).
+**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started](./getting-started). <br>
 
 
+{% include _content/en/abap-reports/report-workflow.md %}
+
+******
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
+
+
