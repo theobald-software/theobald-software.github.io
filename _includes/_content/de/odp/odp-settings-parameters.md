@@ -14,13 +14,14 @@ Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.<br>
 - Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. 
 <br>
 4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
-5. Um die Parameter zu definieren, wählen Sie ein Element im Unterabschnitt **Fields** und klicken Sie auf **[Edit]** (4). Das Fenster "Edit Selections" wird geöffnet.<br> 
+5. Um die erstellten Parameter für Selektionen zu verwenden, wählen Sie ein Element im Unterabschnitt **Fields** und klicken Sie auf **[Edit]**. Das Fenster "Edit Selections" wird geöffnet.<br> 
 6. Klicken Sie auf **[Add]** (5). Felder zum Setzen der Filteroptionen werden geöffnet.
 7. Klicken Sie auf das Symbol neben den Eingabefeldern **Low** und **High** (6).
 Wenn es definierte Parameter gibt, wechselt das Symbol zum Parametersymbol. <br>
 Klicken auf die Icons wechselt die Optionen zwischen der Eingabe echter Eingabewerte und der Eingabe der definierten Parameter.  
 <br>
 ![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}<br>
-7. Um die definierten Parameter zu überprüfen, klicken Sie auf **[Load live preview]**. <br>
+7. Prüfen Sie die Funktionalität der definierten Parameter, indem Sie auf **[Load live preview]** klicken. <br>
+Wenn Sie Parameter als Selektionsfilter definiert haben, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen.  <br>
 Wenn Sie Parameter als Selektionsfilter definiert haben, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen.  <br>
 ![ODP provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}

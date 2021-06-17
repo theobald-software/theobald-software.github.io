@@ -1,5 +1,5 @@
 ---
-ref: xu-abap-reports-05
+ref: xfa-abap-reports-05
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen

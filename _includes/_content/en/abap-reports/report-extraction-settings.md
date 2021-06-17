@@ -37,6 +37,3 @@ This setting is usually not required if the report's columns can be [detected au
 **Custom Function**<br>
 The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system, see [Install Report Custom Fuction Module](../sap-customizing#installation-with-an-sap-transport). If you manually created the function module in your SAP system and gave it a different name, enter that name in this field. The default is `Z_XTRACT_IS_REMOTE_REPORT`.
 
-#### Related Links
-- [Regular Expressions in the Microsoft Online Help](http://msdn.microsoft.com/en-us/library/az24scfc.aspx).
-- [Install Report Custom Fuction Module](../sap-customizing#installation-with-an-sap-transport).
