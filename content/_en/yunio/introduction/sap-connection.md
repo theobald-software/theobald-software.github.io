@@ -83,3 +83,5 @@ Instead, SAP credentials need to be provided via basic authentication when execu
 ### Test the SAP Connection
 
 Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
+
+**Bild einfügen!**

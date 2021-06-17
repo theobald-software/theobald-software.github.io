@@ -14,15 +14,13 @@ lang: en_GB
 Welcome to the Online Help for YunIO. 
 
 YunIO is a connector that provides a configuration platform for setting up connectivity between SAP and cloud applications. <br>
-
-The service offers easy integration of SAP data and business processes in different platforms and applications. <br>
+The service offers easy integration of SAP data and business processes in different platforms and applications. 
 The extracted data can then be further processed  e.g., in the context of business intelligence, data integration and data analytics.
-
-<!--- Application?--->
 
 ### Software Architecture
 
 YunIO is a Windows service that comes with an embedded Web UI. <br>
+
 The YunIO service is installed on a local or cloud-hosted Windows server environment.
 You can access the Web UI via a browser of your choice. <br>
 An Azure Relay registration can be used as a secure gateway to connect the local SAP system to the respective cloud application.

@@ -86,3 +86,5 @@ Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierun
 
 Klicken Sie **[Test Connection]**, um den Verbindungsaufbau zu SAP zu überprüfen. <br>
 Je nachdem ob der Verbindungsaufbau erfolgreich war oder nicht, öffnet sich ein Fenster mit einer entsprechende Statusmeldung.
+
+**Bild einfügen!**
