@@ -15,7 +15,7 @@ Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung f
 
 ### Web-UI aufrufen
 
-1. Stellen Sie sicher, dass der YunIO-Dienst läuft. Öffnen Sie dafür... Services...Status...Running.
+1. Stellen Sie sicher, dass der YunIO-Dienst läuft.
 2. Öffnen Sie einen Browser Ihrer Wahl.
 3. Das URL-Pattern zum Aufruf der Web UI lautet: `http://[host]:[port]`. Beispiel: `http://localhost:8077`.<br>
 	- Wenn der YunIO-Dienst auf einem lokalen Server läuft, geben Sie *localhost* als `[host]` an.
@@ -24,19 +24,19 @@ Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung f
 	- Sie können den Port in der YunIO Web-UI unter *Settings* konfigurieren. <br>
 4. Nach korrekter Eingabe der URL wird im Browser die YunIO Web UI angezeigt.
 
-**Bild einfügen**
-
 ### Eine SAP-Verbindung herstellen
 
 Unter *Connections* können Sie neue SAP-Verbindungen hinzufügen und bereits angelegte SAP-Verbindung bearbeiten oder löschen. 
 
 1. Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]**. <br>
-Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie unter *Actions* auf **[..]** und wählen Sie **Edit**.
+Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie den Namen der Verbindung.
 2. Geben Sie die Verbindungsinformationen zu Ihrem SAP-System unter *System* ein.
 3. Geben Sie SAP-Anmeldedaten unter *Authentication* ein.
 4. Klicken Sie auf **[Test Connection]**, um die Verbindung zu prüfen.<br>
 Je nachdem ob der Verbindungsaufbau erfolgreich war oder nicht, öffnet sich ein Fenster mit einer entsprechende Statusmeldung.
 5. Klicken Sie auf **[Save]** um Ihre Eingaben zu speichern.
+
+Für eine detailiertere Beschreibung der SAP-Verbindung, siehe [SAP-Verbindung](.einfuehrung/sap-verbindungen-anlegen).
 
 ### Eine Extraktion anlegen
 

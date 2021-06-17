@@ -15,14 +15,15 @@ old_url: /Xtract-Universal-DE/
 Willkommen in der Online Help für YunIO. 
 
 YunIO ist ein Konnektor der eine Konfigurationsplattform zum Einrichten der Konnektivität zwischen SAP- und Cloud-Anwendungen zur Verfügung stellt.<br>
-Die **Anwendung** ermöglicht eine einfache Integration von SAP Daten und Geschäftsprozessen in unterschiedliche Plattformen und Anwendungen.<br>
+
+Der Dienst ermöglicht eine einfache Integration von SAP Daten und Geschäftsprozessen in unterschiedliche Plattformen und Anwendungen.<br>
 Die extrahierten Daten können dann weiterverarbeitet werden, z.B. im Rahmen von Business Intelligence, Datenintegration und Datenanalyse. 
 
 ### Software-Architektur 
 
 Bei YunIO handelt es sich um einen Windows-Dienst mit einer eingebetteten Web-UI.<br>
 Der YunIO-Dienst wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert. Der Zugriff auf die Web-UI erfolgt über einen Browser Ihrer Wahl.<br>
-**Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um das lokale SAP-System mit der jeweiligen Cloud-Anwendung zu verbinden.**
+Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um das lokale SAP-System mit der jeweiligen Cloud-Anwendung zu verbinden.
 
 ![XU-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
 
@@ -33,7 +34,3 @@ YunIO bietet zwei Extraktionstypen, um eine Reihe von Anforderungen der SAP-Date
 - [**BAPI/Funktionsbausteine**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
 - [**Table**](./table) extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 
-
-Weitere Informationen zu den Funktionen von YunIO finden Sie in den folgenden Abschnitten:
-
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -15,7 +15,7 @@ The information described in the following section is a prerequisite for all sub
 
 ### Web UI 
 
-1. Make sure that the YunIO service is running...
+1. Make sure that the YunIO service is running.
 2. Open a browser of your choice.
 3. The URL pattern to access the YunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
 	- If the YunIO service runs on a local server, replace `[host]` with *localhost*.
@@ -24,19 +24,18 @@ The information described in the following section is a prerequisite for all sub
 	- You can configure the port under *Settings* in the YunIO Web UI.
 4. Enter the URL to access the YunIO Web UI.
 
-**Add image**
-
 ### Add an SAP Connection
 
 In *Connection* you can add new SAP connections and edit or delete existing connections.
 
 1. To add a new SAP connection, click **[Add Connection]**.<br>
-To edit an existing connection, click **[..]**  under *Actions* and select **Edit**.
+To edit an existing connection, click on the connection you want to edit.
 2. Enter the connection information for your SAP system under *System*
 3. Enter your SAP credentials under *Authentication*.
 4. Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
 5. Click **[Save]** to save your input.
 
+For more detailed information on the SAP connection, see [SAP Connection](./introduction/sap-connection).
 
 ### Creating an Extraction
 
