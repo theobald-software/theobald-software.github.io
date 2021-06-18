@@ -1,0 +1,14 @@
+---
+ref: bc-abap-reports-03
+layout: page
+title: Define Columns
+description: Define a Report Extraction
+product: board-connector
+parent: abap-reports
+permalink: /:collection/:path
+weight: 3
+lang: en_GB
+old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-report-extraction
+---
+
+{% include _content/en/abap-reports/report-columns-define.md %}

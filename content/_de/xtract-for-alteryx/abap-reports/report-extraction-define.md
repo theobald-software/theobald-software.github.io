@@ -1,12 +1,12 @@
 ---
-ref: xfa-abap-reports-02
+ref: xfa-abap-reports-01
 layout: page
 title: Eine Report-Extraktion definieren
 description: Eine Report-Extraktion definieren
 product: xtract-for-alteryx
 parent: reports
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: de_DE
 ---
 

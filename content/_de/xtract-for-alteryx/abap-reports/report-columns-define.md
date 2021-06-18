@@ -1,3 +1,16 @@
+---
+ref: xfa-abap-reports-03
+layout: page
+title: Spalten definieren
+description: Spalten definieren
+product: xtract-for-alteryx
+parent: reports
+permalink: /:collection/:path
+weight: 3
+lang: de_DE
+old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-report-extraktion-definieren
+---
+
 Der folgende Abschnitt beschreibt die Anwendung der Report Komponente.
 
 
@@ -24,7 +37,6 @@ Alternativ können Sie nach SAP Transaktion Codes suchen, indem Sie die Checkbox
 
 {: .box-note }
 **Hinweis:** Für detaillierte Informationen zu Varianten und Selektionen, siehe [Varianten und Selektionen](./report-variants-and-selections).<br>
-Für detaillierte Informationen zur Verwendung von Selektionen mit Laufzeitparametern, siehe [Laufzeitparameter](./report-edit-runtime-parameters).
 
 ### Spalten definieren
 

@@ -1,38 +1,36 @@
-After having chosen a report, please assign a variant or a selection parameter. All elements of the selection screen can be found in the table called *Selection Screen*.
 
-If you have a lot of selection parameters, please create a variant in SAP. This is easier to handle than many different single selection parameters.
+Most reports allow entering selections before report execution. Selections limit the result set of the report so as to extract only records that match the selection. 
 
-Use the *Edit* link to fill in a selection. 
+A selection variant can be created in SAP at the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. 
+This minimizes the need to enter selections each time you run a report. 
 
-![Report-Variants-And-Selections](/img/content/Report-Variants-And-Selections.png){:class="img-responsive"}
+{: .box-note }
+**Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
 
-Parameters can have single values, intervals and complex selections. <br>
-All kinds of parameters can be edited and entered with the help of the editor.
+![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
+#### Choose a Variant
+Choose a variant from the drop-down-list *Variant* (1). If you create a new variant in SAP after the report extraction was created, click the **[Refresh]** button next to the drop-down list to access the new variant.
 
-If the parameter is a complex selection, use the Edit link to open an additional dialogue.<br>
-As shown in the screenshot, variables can also be used. Please add an @ right before the value to mark it as an variable.
+{: .box-note }
+**Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. To see the definition of a variant, take a look at the report's variant in SAP.
 
-The following screenshot shows the dialogue for entering complex selections.
+#### Edit Selections
 
-![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
+This section corresponds to the report's input screen in SAP. Some selection fields only have a technical name and no description. 
+To understand which field corresponds to a field in SAP, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. 
+This displays the technical name of a selection field.
 
-The field Sign hast 2 Options: Include - Exclude. This selection determines for every row whether the result of the condition is included or excluded in the entire resulting set for all rows.
+1. Click the **[Edit]** button next to the selection you want to edit. The window "Edit Selection" opens.
+![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
+2. Choose if the selection is to be included or excluded (3) from the extracted data.
+3. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down list (4). 
+4. Enter the selection in the respective *Low* and *High* fields. The *High* field is active for input when the *between* or *not between* operator was selected.
+5. Optional: click **[Add Selection]** (5) to add conditions.
+6. Click **[OK]** (6) to confirm the selections.
 
-The field Option contains the selection option for the condition of the row in form of logical operators:<br>
+{: .box-tip }
+**Tip:** If you use multiple selection parameters, create a variant in SAP. Use the variant instead of entering selections.
 
-| logical operator   | description   |
-|---------------|-------------------------|
-| "="     | equal      |
-| "!=" | not equal     |
-| "<"     | lower than   | 
-| "<="      | lower equal than   | 
-| ">"    | greater than   | 
-| ">="   | greater equal than | 
-| "[]" | between (interval) | 
-| "]["       | not between (Intervall) | 
-| " * "    | contains pattern (Like) | 
-
-Low Value column is designated for the comparison value or the lower interval limitation.<br>
-High Value column is designated for the upper interval limitation.
+### Data Format
 
 {% include _content/en/sap-data-format.md  %}

@@ -1,12 +1,12 @@
 ---
-ref: bc-abap-reports-02
+ref: bc-abap-reports-01
 layout: page
 title: Eine Report-Extraktion definieren
 description: Eine Report-Extraktion definieren
 product: board-connector
 parent: abap-reports-ansteuern
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=eine-report-extraktion-definieren
 ---
