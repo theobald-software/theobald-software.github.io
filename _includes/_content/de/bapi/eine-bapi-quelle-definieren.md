@@ -1,14 +1,15 @@
-Die BAPI Datenquelle wurde entwickelt, um BAPIs und RFC-Funktionsbausteine im SAP aufzurufen. So lassen sich sehr einfach Logiken in ABAP kodieren und den Output in Form von Tabellen nutzen. SAP-Standard-BAPIs und bundeseigene BAPIs werden gleichermaßen unterstützt. Es ist sinnvoll (aber nicht zwingend notwendig), bei selbstgeschriebenen BAPIs darauf zu achten, dass die Signatur der Bausteine so gestaltet ist, dass genau eine Ausgabe-Tabelle die gewünschten Daten enthält.  Die Begriffe BAPI und RFC-Funktionsbaustein können im Übrigen äquivalent verwendet werden. Es besteht zwischen beiden Begriffen kein substanzieller Unterschied.
+Der folgende Abschnitt beschreibt die Anwendung der Report Komponente.
 
-Erstellen Sie mit Hilfe des Clients eine neue Extraktion vom Typ BAPI. Der folgende Dialog öffnet sich.
+### Eine BAPI Extraktion finden
 
-![Define-Bapi-Data-Source](/img/content/Define-Bapi-Data-Source.png){:class="img-responsive"}
+1. Klicken Sie auf das **[Lupensymbol]** im Hauptfenster der Komponente. Das Fenster "Function Module Lookup" öffnet sich.
+2. Geben Sie im Function Name (1) den Namen einer BAPI / eines Funktionsbausteins ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
+Alternativ können Sie nach Function Groups suchen.
+![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module.png){:class="img-responsive"}
+3. Klicken Sie auf das **[Lupensymbol]** (2) und wählen Sie ein Objekt aus der angezeigten Liste aus (3). 
+4. Bestätigen Sie Ihre Eingabe mir **[OK]** (4).
 
-Um ein BAPI oder einen RFC-Funktionsbaustein zu suchen, klicken Sie bitte auf den Button mit dem Fernglas. Bei der Suche nach Namen können auch Wildcards (z.B. * ) genutzt werden. 
+Das Fenster "Xtract BAPI" zeigt die Parameter der ausgewählten BAPI.<br>
+Ein BAPI kann bis zu vier Paramtertypen haben: [Parametertypen](./skalare-parameter): Imports, Exports, Changings und Tables.
 
-![Look-Up-Function-Module](/img/content/Look-Up-Function-Module.png){:class="img-responsive"}
-
-Die Metadaten des Bausteins werden vom SAP geholt. Es gibt skalare und strukturierte Parameter, die sich jeweils in Imports und Exports aufteilen (siehe Tab im oberen Bereich), sowie Tabellen (unterer Bereich). 
-
-![XU-BAPI-Parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
-
+![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
