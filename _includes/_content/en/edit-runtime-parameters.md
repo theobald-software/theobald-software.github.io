@@ -1,8 +1,4 @@
 
-Use runtime parameters to change selections dynamically during runtime.<br>
-To access the runtime parameters, click **[Edit runtime parameters]** in the main window of the component. 
-The window “Edit Runtime Parameters” opens
-
 ### Create Runtime Parameters 
 
 Click **Edit Parameters** to create or edit dynamic runtime parameters.

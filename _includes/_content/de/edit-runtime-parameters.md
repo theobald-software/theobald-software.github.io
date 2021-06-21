@@ -1,7 +1,4 @@
 
-Verwenden Sie Laufzeitparameter, um Selektionen dynamisch zur Laufzeit anzupassen.<br>
-Um auf die Laufzeitparameter zuzugreifen, klicken Sie im Hauptfenster der Komponente auf **[Edit runtime parameters]**.
-Das Fenster “Edit Runtime Parameters” öffnet sich.
 
 ### Laufzeitparameter erstellen 
 
