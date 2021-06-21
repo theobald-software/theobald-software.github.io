@@ -1,4 +1,4 @@
-
+Um Parameter zur Laufzeit dynamisch anzupassen, erstellen Sie Laufzeitparameter und weisen sie Ihrer Auswahl zu.
 
 ### Laufzeitparameter erstellen 
 
@@ -20,12 +20,11 @@ Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.<br>
 
 Weisen Sie Selektionen Laufzeitparameter zu.
 
-1. Um die erstellten Parameter für Selektionen zu verwenden, wählen Sie ein Element im Unterabschnitt **Fields** und klicken Sie auf **[Edit]**. Das Fenster "Edit Selections" wird geöffnet.<br> 
-2. Klicken Sie auf **[Add Selection]** (4). Felder zum Setzen der Filteroptionen werden geöffnet.
-3. Klicken Sie auf das Symbol neben den Eingabefeldern **Low** und **High** (5).
+1. Um die erstellten Parameter zu verwenden, wählen Sie ein Element aus dem Tab **Import**, **Export**, **Changing** oder **Table**. 
+2. Klicken Sie auf das Symbol neben den Eingabefeldern unter **Value**.
 Wenn Sie Parameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt. <br>
 Klicken Sie auf die Icons, um zwischen der Eingabe fester Werte und der Eingabe von Parametern zu wechseln.  <br>
-![Selection With Parameters](/img/content/edit-selections.png){:class="img-responsive"}<br>
-4. Prüfen Sie die Funktionalität der definierten Parameter, indem Sie auf **[Load live preview]** klicken. <br>
-Wenn Sie Parameter als Selektionsfilter definiert haben, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen.  <br>
-![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
+3. Wählen Sie einen Laufzeitparameter aus der Drop-Down-Liste aus, um ihn dem Element zuzuweisen.
+
+{: .box-note }
+**Hinweis:** Für Informationen bzgl. der Ausführung von Extraktionen mit Laufzeitparametern, siehe [benutzerdefinierten Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen).

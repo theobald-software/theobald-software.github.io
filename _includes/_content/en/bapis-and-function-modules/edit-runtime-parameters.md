@@ -1,3 +1,4 @@
+To change parameters dynamically at runtime, create runtime parameters and assign them to your selection.
 
 ### Create Runtime Parameters 
 
@@ -19,12 +20,11 @@ This allows you to dynamically set filters at runtime.<br>
 
 Assign the parameters to selections.
 
-1. To use the parameters as selection criteria, choose an item in the subsection **Fields** and click **[Edit]**. The window "Edit Selections" opens.<br> 
-2. Click **[Add]** (4). Filtering option fields open.
-3. Click the icon next to the **Low** and **High** input fields (5).
+1. To use the parameters, choose an item from the *Import**, **Export**, **Changing** or **Table** tab.
+2. Click the icon next to the input field under **Value**.
 If there are runtime parameters, a parameter icon is displayed next to the input fields. <br>
 Clicking the icons switches between entering actual input values and entering parameters.<br>
-![Selection With Parameters](/img/content/edit-selections.png){:class="img-responsive"}<br>
-4. To check the defined parameters, click **[Load live preview]**. <br>
-If you have assigned parameters as selection filters, you are prompted to populate the parameters with actual values. <br>
-![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
+3. Assign a parameter by selecting a runtime parameter from the dropdown-list.
+
+{: .box-note }
+**Note:** For information on how to run an extraction with runtime parameters, see [User-Defined Variables](../advanced-techniques/user-defined-variables).
