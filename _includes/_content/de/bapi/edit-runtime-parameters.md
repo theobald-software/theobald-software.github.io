@@ -25,6 +25,7 @@ Weisen Sie Selektionen Laufzeitparameter zu.
 Wenn Sie Parameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt. <br>
 Klicken Sie auf die Icons, um zwischen der Eingabe fester Werte und der Eingabe von Parametern zu wechseln.  <br>
 3. Wählen Sie einen Laufzeitparameter aus der Drop-Down-Liste aus, um ihn dem Element zuzuweisen.
+![Assign parameters](/img/content/BAPI-Runtime-Parameters.png){:class="img-responsive"}
 
 {: .box-note }
 **Hinweis:** Für Informationen bzgl. der Ausführung von Extraktionen mit Laufzeitparametern, siehe [benutzerdefinierten Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen).

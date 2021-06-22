@@ -4,5 +4,10 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 - eine Struktur, die mehrere Komponenten beinhaltet
 - eine Tabelle
 
+### Import-Parameter
 
-### Tabellen
+### Export-Parameter
+
+### Changings-Parameter
+
+### Tables-Parameter

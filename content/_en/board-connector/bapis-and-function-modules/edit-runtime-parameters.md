@@ -1,0 +1,15 @@
+---
+ref: bc-bapis-and-function-modules-03
+layout: page
+title: Runtime Parameters
+description: Runtime Parameters
+product: board-connector
+parent: bapis-and-function-modules
+permalink: /:collection/:path
+weight: 6
+lang: en_GB
+old_url: /BOARD-Connector-EN/default.aspx?pageid=bapi-extraction-settings
+---
+
+
+{% include _content/en/bapis-and-function-modules/edit-runtime-parameters.md %}

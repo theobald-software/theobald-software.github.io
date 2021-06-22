@@ -1,9 +1,9 @@
 ---
-ref: xu-bapis-function-02
+ref: bc-bapis-and-function-modules-02
 layout: page
 title: Parameter
-description: Skalare Parameter
-product: xtract-universal
+description: Parameter
+product: board-connector
 parent: bapis-und-funktionsbausteine
 permalink: /:collection/:path
 weight: 2

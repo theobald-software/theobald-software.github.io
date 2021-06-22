@@ -1,9 +1,9 @@
 ---
-ref: xu-bapis-function-02
+ref: bc-bapis-and-function-modules-02
 layout: page
 title: Parameters
 description: Parameters
-product: xtract-universal
+product: board-connector
 parent: bapis-and-function-modules
 permalink: /:collection/:path
 weight: 2

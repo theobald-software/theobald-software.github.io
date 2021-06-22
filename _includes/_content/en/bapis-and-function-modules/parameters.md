@@ -9,34 +9,45 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 
 ### Import Parameters
 **Imports** represent the input values sent from the client to SAP. <br>
-In the tab **Imports** you can define import parameters that can be presented as scalar values structures or tables. 
+In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
 
 ![BAPI import parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
-### Add Scalar Parameters
+#### Add Scalar Parameters (1)
 
-xxx
+Scalar fields for inputs are usually set using the following two options:
+- a static constant value (e.g., 1141).
+- a dynamic value set at run-time using a parameter (see [Runtime Parameters](./edit-runtime-parameters)).
+
+When using runtime parameters, make sure the input matches the data type.<br>
+When entering constant scalar values of a wrong data type, the field is marked red.
 
 {: .box-note }
-**Note:** Parameters that are predefined by SAP are displayed in a light grey font. 
+**Note:** Parameters that are predefined by SAP are displayed in a light grey font. <br>
 If you want to disable these parameters, activate the checkbox next to the parameter and don't enter a value.
 
-#### Add Structures or Tables as Parameters
+#### Add Structures as Parameters (2)
 
-xxx
+When using a structure, a value for each scalar field can be set similarly to a scalar field. 
+Setting a single value or a parameter for the whole structure is not possible.
+
+When a structure is available, you can assign structure elements (i.e. fields).<br>
+1. Click the **[pen icon]**. The window "Edit Structures" opens.
+2. Enter values or parameters under **Values**.
+![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
 **Exports** represent the output values sent from SAP back to the client after execution of a function module. <br>
 In the tab **Exports** you can define export parameters that can be presented as scalar values, structures or tables. 
 
-![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
-To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
-
 #### Add Items to Output
 Mark the checkbox in the output column to add an item to the output.<br>
 
+![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
+
+To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
 ### Changings Parameters
 
@@ -59,7 +70,7 @@ To use the filtering function, enter text in the headers of the columns **Name**
 
 #### Access Metadata of Tables (1)
 Click the **[glasses icon]** in the **Type** column to display the metadata of the selected table including the name and the data type of all fields. <br> 
-If tables are edited in SAP, you can refresh the data by clicking **Refresh metadata**<br>
+If the function module was edited in SAP, you can refresh the data by clicking **Refresh metadata**<br>
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
 
 #### Add Tables to Output (2)
@@ -69,6 +80,18 @@ Mark the checkbox in the output column to add a table to the output.<br>
 
 #### Edit Tables (3)
 
+When using a structure, a value for each scalar field can be set similarly to a scalar field. 
+Setting a single value or a parameter for the whole structure is not possible.
+
+When a structure is available, you can assign structure elements (i.e. fields).<br>
+
 Edit tables via the **[pen icon]** in the column **Values**. <br> 
 
-xxx
+ 1. Click the **[pen icon]** in the column **Values**. The window "Edit Table Contents" opens.
+ 2. Click **[Add]** to add new set of parameters.<br>
+ 3. Enter values or parameters.<br>
+When using runtime parameters, make sure the input matches the data type.<br>
+When entering constant scalar values of a wrong data type, the field is marked red.<br>
+![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
+4. Click **[Remove]** to delete a row.
+

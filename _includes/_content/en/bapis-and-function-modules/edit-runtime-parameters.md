@@ -25,6 +25,7 @@ Assign the parameters to selections.
 If there are runtime parameters, a parameter icon is displayed next to the input fields. <br>
 Clicking the icons switches between entering actual input values and entering parameters.<br>
 3. Assign a parameter by selecting a runtime parameter from the dropdown-list.
+![Assign parameters](/img/content/BAPI-Runtime-Parameters.png){:class="img-responsive"}
 
 {: .box-note }
 **Note:** For information on how to run an extraction with runtime parameters, see [User-Defined Variables](../advanced-techniques/user-defined-variables).
