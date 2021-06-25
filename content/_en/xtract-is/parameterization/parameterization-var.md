@@ -11,4 +11,4 @@ lang: en_GB
 
 ---
 
-{% include _content/en/parametrization/parametrization-via-variables.md  %}
+{% include _content/en/xis-specific/parameterization/parametrization-via-variables.md  %}

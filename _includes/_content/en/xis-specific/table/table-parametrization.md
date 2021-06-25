@@ -1,5 +1,5 @@
 
-{% include _content/en/parametrization/parametrization-about.md  %}
+{% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
 {: .box-tip }
 **Recommendation:** Where possible, use properties for parameterization. 

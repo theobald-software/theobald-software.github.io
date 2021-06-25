@@ -1,7 +1,7 @@
 ---
 ref: xis-odp-extractor
 layout: page
-title: Defining an ODP Extraction
+title: Extractors
 description: Extractors and Datasources
 product: xtract-is
 parent: odp

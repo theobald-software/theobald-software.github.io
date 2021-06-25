@@ -1,5 +1,5 @@
 
-{% include _content/de/parametrization/parametrization-about.md  %}
+{% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
 
 ### Parameterisierung mit Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
@@ -17,6 +17,8 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 
 |Feldname|Beschreibung|
 |:----|:----|
+| *Package Size* | Entspricht dem Feld *Package Size* in der OHS Komponente, siehe [Extraktionseinstellungen](./settings#extraction-settings).|
+| *Row Limit* | Entspricht dem Feld *Row limit* in der OHS Komponente, siehe [Extraktionseinstellungen](./settings#extraction-settings).|
 | *Gateway host* | Entspricht dem Feld *Gateway host* in der OHS Komponente, siehe [Third party tool Settings](./settings#third-party-tool-settings). |
 | *Gateway service* | Entspricht dem Feld *Gateway service* in der OHS Komponente, siehe [Third party tool Settings](./settings#third-party-tool-settings).|
 | *Program ID* | Entspricht dem Feld *Program ID* in der OHS Komponente, siehe [Third party tool Settings](./settings#third-party-tool-settings).|
