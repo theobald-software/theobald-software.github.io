@@ -18,6 +18,8 @@ The following fields and/or custom properties of the component allow entry of an
 
 |Field Name|Comment|
 |:----|:----|
+| *Package Size* | Sets the package size in bytes, see [Extraction Settings](./settings#extraction-settings).|
+| *Row Limit* | Corresponds to the field *Row limit* in the OHS component, see [Extraction Settings](./settings#extraction-settings).|
 | *Gateway host* | Corresponds to the field *Gateway host* in the OHS component, see [Third party tool Settings](./settings#third-party-tool-settings). |
 | *Gateway service* | Corresponds to the field *Gateway service* in the OHS component, see [Third party tool Settings](./settings#third-party-tool-settings).|
 | *Program ID* | Corresponds to the field *Program ID* in the OHS component, see [Third party tool Settings](./settings#third-party-tool-settings).|

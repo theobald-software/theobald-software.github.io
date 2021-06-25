@@ -8,7 +8,7 @@ Die Tabs beziehen sich auf den ausgewählten **Extraction type**. <br>
 Wenn Sie *Table* als **Extraction type** ausgewählt haben, bearbeiten Sie die Einstellungen im Tab *Table Settings*. <br>
 Wenn Sie *Third party tool (legacy)* als **Extraction type** ausgewählt haben, bearbeiten Sie die Einstellungen im Tab *Third party tool (legacy)*. 
 
-{% include _content/en/tables/extraction-settings.md  %}
+{% include _content/de/table/extraktionseinstellungen.md  %}
 
 ### Third party tool Settings
 

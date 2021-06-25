@@ -13,8 +13,18 @@ The following custom properties can be parameterized:
 | *[Xtract.ODP].[PackageSize]*| Sets the package size in bytes, see [Advanced Settings](./odp-functions-ov#advanced-settings) |
 | *[Xtract.ODP].[ &lt;Selection Parameter &gt;]*| Selection parameters that are defined in the component are exposed as properties, see [Edit Parameters](./odp-functions-ov#edit-parameters) |
 
+### Parameterization using SSIS Variables
+The following fields and/or custom properties of the component allow entry of an SSIS variable:
+
+|Field Name|Comment|
+|:----|:----|
+| *Edit*|Enter an SSIS variable as selection criteria, see [Selections and Filters](./odp-functions-ov#selections-and-filters).|
+| *Package Size*| Sets the package size in bytes, see [Advanced Settings](./odp-functions-ov#advanced-settings). |
+
 
 ****
 #### Related Links
-- [How to Use Expressions for Properties](../parameterization/parameterization-prop#how-to-use-expressions-for-properties) 
-- [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
+- [Parameterization](../parameterization) <br>
+- [DeltaQ Datasource Parameters](./datasource-parameters) <br>
+- [Customizing Check](./customizing-check) <br>
+- [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)

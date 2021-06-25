@@ -13,8 +13,17 @@ Die folgenden *Custom Properties* können parametrisiert werden:
 | *[Xtract.ODP].[PackageSize]*| Wählt die Paketgröße in Bytes, siehe [Advanced Settings](./odp-functions-ov#advanced-settings) |
 | *[Xtract.ODP].[ &lt;Selection Parameter &gt;]*| Auswahlparameter, die in der Komponente definiert sind, sind in den *Properties* der Komponente verfügbar, siehe [Edit Parameters](./odp-functions-ov#parameter-bearbeiten---edit-parameters) |
 
+### Parametrierung mit SSIS Variablen
+Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
+
+|Feldname|Beschreibung|
+|:----|:----|
+| *Edit*|Geben Sie eine SSIS-Variable als Auswahlkriterium ein, siehe [Selektion und Filter](./odp-functions-ov#selektion-und-filter).|
+| *Package Size* | Entspricht dem Feld *Package Size* in der OHS Komponente, siehe [Extraktionseinstellungen](./settings#extraction-settings).|
 
 ****
 #### Related Links
 - [Ausdrücke für Properties verwenden](../parametrisierung/parametrisierung-properties#ausdrücke-für-properties-verwenden) 
-- [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
+- [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
+- [How to use SSIS Variables with Xtract Components](../parametrisierung/parametrisierung-variablen) 
+- [Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
