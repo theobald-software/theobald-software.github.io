@@ -10,4 +10,4 @@ weight: 2
 lang: de_DE
 
 --- 
-{% include _content/de/parametrization/parametrization-via-variables.md  %}
+{% include _content/de/xis-specific/parametrisierung/parametrization-via-variables.md  %}

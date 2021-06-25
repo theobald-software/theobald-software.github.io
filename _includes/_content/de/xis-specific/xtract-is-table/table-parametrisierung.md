@@ -1,5 +1,5 @@
 
-{% include _content/de/parametrization/parametrization-about.md  %}
+{% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
 
 ### Parameterisierung mit Properties
 Die folgenden *Custom Properties* können parametrisiert werden:

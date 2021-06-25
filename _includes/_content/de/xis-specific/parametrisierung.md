@@ -17,6 +17,7 @@ Abhängig von der Xtract Komponente können Sie entweder SSIS Variablen oder *Pr
 | [BAPI](./xtract-is-bapi/parametrisierung)        |   x    |      | 
 | [BW Cube](./bwcube/parametrisierung)     |   x    |      | 
 | [BW Hierarchy](./hierarchy/parametrisierung)|    x   |      |
+| [BW Loader](./bw-loader/parametrisierung)|    x   |      |
 | [DeltaQ](./xtract-is-deltaq/parametrisierung)      | x      |  x    |
 | [ODP](./odp/odp-parametrisierung)         |   x    |   x   |
 | [OHS](./open-hub-service/parametrisierung)         |     x  |      |
