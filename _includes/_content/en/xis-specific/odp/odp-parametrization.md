@@ -24,7 +24,7 @@ The following fields and/or custom properties of the component allow entry of an
 
 ****
 #### Related Links
-- [Parameterization](../parameterization) <br>
-- [DeltaQ Datasource Parameters](./datasource-parameters) <br>
-- [Customizing Check](./customizing-check) <br>
+- [How to Use Expressions for Properties](../parameterization/parameterization-prop#how-to-use-expressions-for-properties) 
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
+- [How to use SSIS Variables with Xtract Components](../parameterization/parameterization-var) 
+- [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

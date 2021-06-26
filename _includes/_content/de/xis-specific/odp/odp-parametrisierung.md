@@ -19,7 +19,7 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 |Feldname|Beschreibung|
 |:----|:----|
 | *Edit*|Geben Sie eine SSIS-Variable als Auswahlkriterium ein, siehe [Selektion und Filter](./odp-functions-ov#selektion-und-filter).|
-| *Package Size* | Entspricht dem Feld *Package Size* in der OHS Komponente, siehe [Extraktionseinstellungen](./settings#extraction-settings).|
+| *Package Size* | Entspricht dem Feld *Package Size* in der OHS Komponente, siehe [Fortgeschrittene Einstellungen](./odp-settings#fortgeschrittene-einstellungen).|
 
 ****
 #### Related Links
