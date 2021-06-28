@@ -42,7 +42,7 @@ Oder direkt über die Zielumgebung:
 Wenn ein zusätzliches Datenspeichersystem (Datenbank, Cloud-Speicher, Flat-Files) vorhanden ist, werden Extraktionen typischerweise als Teil eines ELT-Prozesses (Extract, Load, Transform) ausgelöst.
 Dieser Prozess wird wiederum in regelmäßigen Abständen unbeaufsichtigt von einem Scheduler oder einer anderen Orchestrierungssoftware ausgeführt, die Extraktionen i.d.R. über das [XU-Kommandozeilen-Tool](./extraktionen-ausfuehren-und-einplanen/call-via-commandline) auslösen.
 
-Für fortgeschrittene Szenarien oder Umgebungen, die keine Kommandozeilen-Tools unterstützen, können die [HTTP-Webservices](./extraktionen-ausfuehren-und-einplanen/call-via-webservice) zum Auslösen und Überwachen einer Extraktion auch über andere Tools genutzt werden.
+Für fortgeschrittene Szenarien oder Umgebungen, die keine Kommandozeilen-Tools unterstützen, können die [HTTP-Webservices](./extraktionen-ausfuehren-und-einplanen/call-via-webservice) zum Auslösen und Überwachen einer Extraktion genutzt werden.
 
 {: .box-note }
 **Hinweis:** Xtract Universal verfügt nicht über einen eigenen Scheduler. Sie können Scheduler von Drittanbietern verwenden. 

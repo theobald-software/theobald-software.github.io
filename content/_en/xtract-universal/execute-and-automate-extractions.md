@@ -43,7 +43,7 @@ Or directly by the target environment:
 When an additional data storage system (database, cloud storage, flat files) is present, extractions are typically triggered as part of an ELT-process (Extract, Load, Transform), which is run unattended at regular intervals by a scheduler or other orchestration software.
 In these scenarios, execution of an extractions is typically triggered by running the [XU command line tool](./execute-and-automate-extractions/call-via-commandline) from the orchestration software. 
 
-For advanced scenarios or environments that do not support command line programs, the [HTTP Webservices](./execute-and-automate-extractions/call-via-webservice) for triggering execution and monitoring can also be used by other tools.
+For advanced scenarios or environments that do not support command line programs, the [HTTP Webservices](./execute-and-automate-extractions/call-via-webservice) can be used for triggering and monitoring executions.
 
 {: .box-note }
 **Note:** Xtract Universal does not have its own scheduler. You can use third party schedulers. 
