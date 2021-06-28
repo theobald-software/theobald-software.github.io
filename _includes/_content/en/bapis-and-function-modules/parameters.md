@@ -1,14 +1,14 @@
 Each Import, Export, Changings and Tables parameter can have one of the following representations:
 
-- a scalar field (e.g., characters, date, time, number, amount etc.)
-- a structure consisting of several components
-- a table - an array of structures of the same type
+- A scalar field (e.g., characters, date, time, number, amount etc.).
+- A structure consisting of several components.
+- A table (tabular array of data) consisting of columns (data values of the same type) and rows (data records).
 
 {: .box-note }
 **Note:** To pass parameters dynamically at runtime, see [Runtime Parameters](./edit-runtime-parameters.md).
 
 ### Import Parameters
-**Imports** represent the input values sent from the client to SAP. <br>
+Import parameters represent the input values sent from the client to SAP. <br>
 In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
 
 ![BAPI import parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
@@ -18,15 +18,16 @@ To use the filtering function, enter text in the headers of the columns **Name**
 #### Add Scalar Parameters (1)
 
 Scalar fields for inputs are usually set using the following two options:
-- a static constant value (e.g., 1141).
-- a dynamic value set at run-time using a parameter (see [Runtime Parameters](./edit-runtime-parameters)).
+- A static constant value (e.g., 1141).
+- A dynamic value set at run-time using a parameter (see [Runtime Parameters](./edit-runtime-parameters)).
 
 When using runtime parameters, make sure the input matches the data type.<br>
-When entering constant scalar values of a wrong data type, the field is marked red.
+When entering constant scalar values of a wrong data type, the field is marked red and an error message is displayed (e.g. "Value is not numeric").
 
 {: .box-note }
 **Note:** Parameters that are predefined by SAP are displayed in a light grey font. <br>
-If you want to disable these parameters, activate the checkbox next to the parameter and don't enter a value.
+If you want to disable these parameters, activate the checkbox next to the parameter and don't enter a value. <br>
+When a value is entered, the checkbox is automatically activated. 
 
 #### Add Structures as Parameters (2)
 
@@ -35,11 +36,11 @@ Setting a single value or a parameter for the whole structure is not possible.
 
 When a structure is available, you can assign structure elements (i.e. fields).<br>
 1. Click the **[pen icon]**. The window "Edit Structures" opens.
-2. Enter values or parameters under **Values**.
+2. Enter values or assign runtime parameters under **Values**.
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
-**Exports** represent the output values sent from SAP back to the client after execution of a function module. <br>
+Export parameters represent the output values sent from SAP back to the client after execution of a function module. <br>
 In the tab **Exports** you can define export parameters that can be presented as scalar values, structures or tables. 
 
 #### Add Items to Output
@@ -49,14 +50,14 @@ Mark the checkbox in the output column to add an item to the output.<br>
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
-### Changings Parameters
+### Changing Parameters
 
-**Changings** represents parameters that can be used for input and output. <br>
-In the tab **Changings** you can define import and export parameters as **Changings** combines importing and exporting functions.
+Changing parameters represent parameters that can be used for input and output. <br>
+In the tab **Changings** you can define changing parameters that can be presented as scalar values, structures or tables.
 
 ### Table Parameters
 
-**Tables** contains parameters in a table structure consisting of multiple rows. Tables can be used for input and output.
+Tables parameters are parameters presented in a table structure consisting of multiple rows. Tables can be used for input and output.
 
 Within the tab **Tables** you can define table parameters for importing and exporting into and from an SAP BAPI. 
 Tables represent a structure of multiple rows of the same data type.

@@ -11,16 +11,18 @@ Das Fenster "Edit Runtime Parameters" wird geöffnet.<br>
 Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.<br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: *"p_MATNR"*).
 3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen können mit den SAP-Datentypen übereinstimmen. 
-- String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
-- Integer: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
-- Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. <br>
+- Unknown: Dieser Datentyp kann für spezielle oder unbekannte Datentypen bei SAP-Selektionsfeldern verwendet werden. 
+- String: Dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
+- Number: Dieser Datentyp kann für numerische SAP-Selektionsfelder verwendet werden.
+- Flag: Dieser Datentyp kann für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. <br>
+- Binary: Dieser Datentyp kann für SAP-Selektionsfelder verwendet werden, die Binärdaten verarbeiten können.
 4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
 
 ### Laufzeitparameter zuweisen
 
 Weisen Sie Selektionen Laufzeitparameter zu.
 
-1. Um die erstellten Parameter zu verwenden, wählen Sie ein Element aus dem Tab **Import**, **Export**, **Changing** oder **Table**. 
+1. Um die erstellten Parameter zu verwenden, wählen Sie ein Element aus dem Tab **Imports**, **Exports**, **Changings** oder **Tables**. 
 2. Klicken Sie auf das Symbol neben den Eingabefeldern unter **Value**.
 Wenn Sie Parameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt. <br>
 Klicken Sie auf die Icons, um zwischen der Eingabe fester Werte und der Eingabe von Parametern zu wechseln.  <br>
