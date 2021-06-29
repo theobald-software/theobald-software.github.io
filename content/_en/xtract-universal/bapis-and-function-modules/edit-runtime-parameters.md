@@ -1,5 +1,5 @@
 ---
-ref: xu-abap-reports-06
+ref: xu-bapis-function-06
 layout: page
 title: Runtime Parameters
 description: Runtime Parameters
