@@ -22,3 +22,6 @@ For the installation 150 MB disk space is required. When using specific destinat
 
 #### 64-Bit Environment	
 The product can be installed on 64-Bit operating systems only.
+
+#### Display Resolution
+The product supports a display resolution of min. 1920x1080x1.25 with 1.25 representing the display scaling.
