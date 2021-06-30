@@ -18,4 +18,3 @@ Das ist notwendig, sofern die Ausgabelänge einer Report-Zeile mehr als 512 Zeic
 #### Weiterführende Links
 - [How to import an SAP Transport Request with the Transport Management System STMS](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
 - [Create Function Group](https://help.sap.com/saphelp_ewm94/helpdata/de/d1/801ef5454211d189710000e8322d00/content.htm?no_cache=true)
-- [Install Z_XTRACT_IS_REMOTE_REPORT Manually](https://kb.theobald-software.com/sap/custom-function-module-manual-installation#installation-of-the-function-module-z_xtract_is_remote_report)

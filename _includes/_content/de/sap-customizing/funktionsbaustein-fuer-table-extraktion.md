@@ -31,7 +31,3 @@ Beim Einspielen der Z_THEO_READ_TABLE-transport-before-740SP05 auf älteren SAP-
 {: .box-warning }
 **Warnung! Erzeugung von Short Dumps** <br>
 Der Funktionsbaustein Z_THEO_READ_TABLE kann aufgrund seiner Callback-Funktionalität nur von Theobald-Produkten gestartet werden. Das Testen des Bausteins in einem SAP-System ist daher nicht möglich.
-
-***********
-#### Weiterführende Links
-- [Install Z_THEO_READ_TABLE Manually](https://kb.theobald-software.com/sap/custom-function-module-manual-installation#installation-of-the-function-module-z_theo_read_table)

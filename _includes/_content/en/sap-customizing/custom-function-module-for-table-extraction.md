@@ -32,8 +32,3 @@ When importing the Z_THEO_READ_TABLE-transport-before-740SP05 on older SAP relea
 **Warning! Generating Short Dumps** <br>
 The function module Z_THEO_READ_TABLE can only be called by Theobald products due to the callback function of the module.
 Testing the function module on an SAP system is therefore not possible.
-
-
-***********
-#### Related Links
-- [Install Z_THEO_READ_TABLE Manually](https://kb.theobald-software.com/sap/custom-function-module-manual-installation#installation-of-the-function-module-z_theo_read_table)
