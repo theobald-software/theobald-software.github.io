@@ -26,9 +26,5 @@ Bei manchen Destinationen kann zusätzlicher Speicherplatz benötigt werden.
 #### 64-Bit-Umgebung	
 Das Produkt kann nur auf 64-Bit-Betriebssystemen installiert werden.
 
-
-
-
-
-
-
+#### Bildschirmauflösung
+Das Produkt unterstützt eine Auflösung von min. 1920x1080x1.25, wobei 1.25 für die Bildschirmskalierung steht.
