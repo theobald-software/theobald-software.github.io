@@ -20,7 +20,7 @@ Extractions can be run via the following command line tools:
 {: .box-note }
 **Note:** Both command line tools do not differ in functionality and can be copied and run on any computer. <br> Make sure that the host of the Xtract Universal server is accessible in the network. 
 
-### Call Extraction
+### Call Extractions
 The command line tool connects to an Xtract Universal server (service) and starts an extraction with the following runtime parameters:
 
 | Runtime-<br>parameters   | Description | Syntax  |
@@ -90,6 +90,23 @@ The timestamp can be used to check the status of the extraction.
 {: .box-tip }
 **Tip:** The XU server offers further functionalities e.g., checking the status of an (asynchronous) extraction, receiving logs or metadara of an extraction, etc. These functionalities are only available via [Webservices](./call-via-webservice#weitere-webservices).
 --->
+
+### Basic Authentication via Commandline
+
+The commandline tool supports extractions with basic authentication.<br>
+When scheduling extractions by executing the command line tool, you can pass credentials for basic authentication as arguments.
+While the user name can be passed directly, the password needs to be stored in a file that is accessible by the `xu.exe`.
+
+1. Create a password file with the following command: `xu.exe -f <path to the location and name of the file>`, e.g. `xu.exe -f "C:\temp\[name of the password file]"`.
+You don't have to create this documents in advance.
+2. Enter a valid password as requested by the cmd screen. It must consist of at least 8 characters.
+3. Pass a user name and the path to the password file as arguments in the command line tool, e.g. <br>
+`xu.exe -s todd.theobald.local -p 8165 -e -n MSEG -u Alice -b "C:\temp\password_custom_user"`.
+
+{: .box-note }
+**Note:** For more information use the command `xu.exe -h`.
+
+
 #### Related Links
 - [Call via Script](https://kb.theobald-software.com/xtract-universal/call-extraction-via-script)
 - [Call via Scheduler](./call-via-scheduler)

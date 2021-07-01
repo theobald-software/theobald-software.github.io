@@ -88,6 +88,22 @@ Ein asynchroner Aufruf einer Extraktion ist ein nichtblockierender Aufruf. D.h. 
 {: .box-tip }
 **Tipp:** Der XU-Server verfügt über weitere Funktionalitäten wie z.B. den Status eines (asynchronen) Extraktionsaufrufs prüfen, Logs oder Metadaten einer Extraktion abfragen usw. Diese Funktionalitäten werden nicht über das Kommandozeilen-Tool, sondern nur über [Webservices](./call-via-webservice#weitere-webservices) aufgerufen.
 --->
+
+### Basic Authentication via Kommandozeile
+
+Das Kommandozeilen-Tool unterstützt die Ausführung von Extraktionen mit Basic Authentication.<br>
+Wenn Sie Extraktionen einplanen, indem Sie das Kommandozeilen-Tool ausführen, können Sie Benutzerdaten für Basic Authentication als Argumente übergeben werden.
+Während der Benutzername direkt übergeben werden kann, muss das Passwort in einer Datei abgelegt werden, auf die das Kommandozeilen-Tool zugreifen kann.
+
+1. Erstellen Sie eine Passwort-Datei mit dem folgenden Befehl: `xu.exe -f <path to the location and name of the file>`, e.g. `xu.exe -f "C:\temp\[name of the password file]"`.
+Das Dokument muss nicht im Vorfeld erstellt werden.
+2. Sie werden aufgefordert ein gültiges Passwort einzugeben. Es muss mindestens 8 Zeichen lang sein.
+3. Übergeben Sie Benutzer und Pfad der Passwort-Datei als Argumente im Kommandozeilen-Tool, z.B. <br>
+`xu.exe -s todd.theobald.local -p 8165 -e -n MSEG -u Alice -b "C:\temp\password_custom_user"`.
+
+{: .box-note }
+**Note:** Für mehr Informationen, verwenden Sie den Befehl `xu.exe -h`.
+
 #### Weiterführende Links
 - [Extraktion via Skript ausführen](https://kb.theobald-software.com/xtract-universal/call-extraction-via-script)
 - [Extraktion via Scheduler ausführen](./call-via-scheduler)
