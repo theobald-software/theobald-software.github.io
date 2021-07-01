@@ -1,8 +1,8 @@
 ---
 ref: xi-bapi-02
 layout: page
-title: Scalar Parameters
-description: Scalar Parameters
+title: Parameters
+description: Parameters
 product: xtract-is
 parent: bapi
 permalink: /:collection/:path

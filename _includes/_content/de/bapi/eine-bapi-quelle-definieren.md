@@ -3,7 +3,7 @@ Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.
 ### Einen BAPI\Funktionsbaustein finden
 
 1. Klicken Sie auf das **[Lupensymbol]** im Hauptfenster der Komponente. Das Fenster "Function Module Lookup" öffnet sich.
-2. Geben Sie im Function Name (1) den Namen eines BAPI oder Funktionsbausteins ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
+2. Geben Sie im Feld **Function Name** (1) den Namen eines BAPI oder Funktionsbausteins ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
 Alternativ können Sie nach Function Group suchen.
 ![Look-Up-Function-Module](/img/content/Look-Up-Function-Module.png){:class="img-responsive"}
 3. Klicken Sie auf das **[Lupensymbol]** (2) und wählen Sie ein Objekt aus der angezeigten Liste aus (3). 
