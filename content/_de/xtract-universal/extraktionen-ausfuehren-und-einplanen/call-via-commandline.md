@@ -92,7 +92,8 @@ Ein asynchroner Aufruf einer Extraktion ist ein nichtblockierender Aufruf. D.h. 
 ### Basic Authentication via Kommandozeile
 
 Das Kommandozeilen-Tool unterstützt die Ausführung von Extraktionen mit Basic Authentication.<br>
-Wenn Sie Extraktionen einplanen, indem Sie das Kommandozeilen-Tool ausführen, können Sie Benutzerdaten für Basic Authentication als Argumente übergeben werden.
+
+Wenn Sie Extraktionen einplanen, indem Sie das Kommandozeilen-Tool ausführen, können Benutzerdaten für Basic Authentication als Argumente übergeben werden.
 Während der Benutzername direkt übergeben werden kann, muss das Passwort in einer Datei abgelegt werden, auf die das Kommandozeilen-Tool zugreifen kann.
 
 1. Erstellen Sie eine Passwort-Datei mit dem folgenden Befehl: `xu.exe -f <path to the location and name of the file>`, e.g. `xu.exe -f "C:\temp\[name of the password file]"`.

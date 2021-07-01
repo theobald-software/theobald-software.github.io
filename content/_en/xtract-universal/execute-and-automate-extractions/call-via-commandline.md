@@ -94,6 +94,7 @@ The timestamp can be used to check the status of the extraction.
 ### Basic Authentication via Commandline
 
 The commandline tool supports extractions with basic authentication.<br>
+
 When scheduling extractions by executing the command line tool, you can pass credentials for basic authentication as arguments.
 While the user name can be passed directly, the password needs to be stored in a file that is accessible by the `xu.exe`.
 
