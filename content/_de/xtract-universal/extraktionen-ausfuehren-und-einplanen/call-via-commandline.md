@@ -91,18 +91,23 @@ Ein asynchroner Aufruf einer Extraktion ist ein nichtblockierender Aufruf. D.h. 
 
 ### Basic Authentication via Kommandozeile
 
-Das Kommandozeilen-Tool unterstützt die Ausführung von Extraktionen mit Basic Authentication.<br>
-Wenn Sie Extraktionen einplanen, indem Sie das Kommandozeilen-Tool ausführen, können Sie Benutzerdaten für Basic Authentication als Argumente übergeben werden.
-Während der Benutzername direkt übergeben werden kann, muss das Passwort in einer Datei abgelegt werden, auf die das Kommandozeilen-Tool zugreifen kann.
+Das Kommandozeilen-Tool unterstützt die Ausführung von Extraktionen mit Basic Authentication.
 
-1. Erstellen Sie eine Passwort-Datei mit dem folgenden Befehl: `xu.exe -f <path to the location and name of the file>`, e.g. `xu.exe -f "C:\temp\[name of the password file]"`.
-Das Dokument muss nicht im Vorfeld erstellt werden.
-2. Sie werden aufgefordert ein gültiges Passwort einzugeben. Es muss mindestens 8 Zeichen lang sein.
-3. Übergeben Sie Benutzer und Pfad der Passwort-Datei als Argumente im Kommandozeilen-Tool, z.B. <br>
+Wenn Sie Extraktionen einplanen, indem Sie das Kommandozeilen-Tool ausführen, können Sie Benutzerdaten für Basic Authentication als Argumente übergeben werden.
+Während der definierte Xtract Universal Benutzername (Custom User) direkt übergeben werden kann, muss das Custom User Passwort in einer Base 64-Encoding Datei erstellt werden, auf die das Kommandozeilen-Tool zugreifen kann.
+Das Dateiformat kann frei gewählt werden, z.B. .txt, .json, .xml, und unterliegt keinen Restriktionen
+
+1. Erstellen Sie eine Passwort-Datei mit dem folgenden Befehl: `xu.exe -f <path to the location and name of the file>`, z.B. `xu.exe -f "C:\temp\<name of the password file>"`.<br>
+Der Windows-Benutzer muss ausreichende Zugriffsrechte auf den Dateiordner besitzen. Die Passworddatei muss nicht im Vorfeld im Windows Explorer erstellt werden. 
+![Windows Security Settings](/img/content/xu/security_settings_windows_folder.png){:class="img-responsive"}
+2. Sie werden aufgefordert das korrespondierende Custom User Passwort einzugeben. Es muss mindestens 8 Zeichen lang sein.
+3. Übergeben Sie Benutzer und den Pfad der Passwort-Datei als Argumente im Kommandozeilen-Tool, z.B. <br>
 `xu.exe -s todd.theobald.local -p 8165 -e -n MSEG -u Alice -b "C:\temp\password_custom_user"`.
+4. **OPTIONAL:** Achten Sie ebenfalls beim Einplanen der Extraktionen darauf, dass der User-Kontext des Tasks ausreichend Zugriffsrechte auf die vorab erstellte Passworddatei besitzt.
+![Windows Security Settings](/img/content/xu/security_settings_windows_task_scheduler.png){:class="img-responsive"}
 
 {: .box-note }
-**Note:** Für mehr Informationen, verwenden Sie den Befehl `xu.exe -h`.
+**Note:** Für mehr Informationen, verwenden Sie den Befehl `xu.exe -h`. 
 
 #### Weiterführende Links
 - [Extraktion via Skript ausführen](https://kb.theobald-software.com/xtract-universal/call-extraction-via-script)
