@@ -96,13 +96,17 @@ The timestamp can be used to check the status of the extraction.
 The commandline tool supports extractions with basic authentication.<br>
 
 When scheduling extractions by executing the command line tool, you can pass credentials for basic authentication as arguments.
-While the user name can be passed directly, the password needs to be stored in a file that is accessible by the `xu.exe`.
+While the name of the XtractUniversal Custom User can be passed directly, the Custom User Password needs to be stored in a Base 64 encoded file that is accessible by the command line tool.
+The file format can be chosen freely, e.g. .txt, .json, .xml.
 
 1. Create a password file with the following command: `xu.exe -f <path to the location and name of the file>`, e.g. `xu.exe -f "C:\temp\[name of the password file]"`.
-You don't have to create this documents in advance.
+The Windows user needs access rights to the file location. You don't have to create this documents in advance.
+![Windows Security Settings](/img/content/xu/security_settings_windows_folder.png){:class="img-responsive"}
 2. Enter a valid password as requested by the cmd screen. It must consist of at least 8 characters.
 3. Pass a user name and the path to the password file as arguments in the command line tool, e.g. <br>
 `xu.exe -s todd.theobald.local -p 8165 -e -n MSEG -u Alice -b "C:\temp\password_custom_user"`.
+4. **OPTIONAL:** When scheduling an extraction, make sure that the user of the task has access rights to the password file.
+![Windows Security Settings](/img/content/xu/security_settings_windows_task_scheduler.png){:class="img-responsive"}
 
 {: .box-note }
 **Note:** For more information use the command `xu.exe -h`.
