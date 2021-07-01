@@ -29,5 +29,3 @@ Clicking the icons switches between entering actual input values and entering pa
 3. Assign a parameter by selecting a runtime parameter from the dropdown-list.
 ![Assign parameters](/img/content/BAPI-Runtime-Parameters.png){:class="img-responsive"}
 
-{: .box-note }
-**Note:** For information on how to run an extraction with runtime parameters, see [User-Defined Variables](../advanced-techniques/user-defined-variables).

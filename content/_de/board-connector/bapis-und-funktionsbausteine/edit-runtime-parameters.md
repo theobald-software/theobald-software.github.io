@@ -11,3 +11,7 @@ lang: de_DE
 ---
 
 {% include _content/de/bapi/edit-runtime-parameters.md %}
+
+
+{: .box-note }
+**Hinweis:** Für Informationen bzgl. der Ausführung von Extraktionen mit Laufzeitparametern, siehe [benutzerdefinierten Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen).
