@@ -4,9 +4,6 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 - eine Struktur, die mehrere Komponenten beinhaltet
 - eine Tabelle
 
-{: .box-note }
-**Hinweis:** Um Parameter dynamisch zur Laufzeit anzupassen, siehe [Laufzeitparameter](./edit-runtime-parameters).
-
 ### Import-Parameter
 
 **Imports** repräsentiert die Eingabewerte, die vom Client an SAP gesendet werden. 

@@ -4,9 +4,6 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 - A structure consisting of several components.
 - A table (tabular array of data) consisting of columns (data values of the same type) and rows (data records).
 
-{: .box-note }
-**Note:** To pass parameters dynamically at runtime, see [Runtime Parameters](./edit-runtime-parameters.md).
-
 ### Import Parameters
 Import parameters represent the input values sent from the client to SAP. <br>
 In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
