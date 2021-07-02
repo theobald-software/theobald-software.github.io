@@ -6,7 +6,7 @@ description: Parametrization
 product: xtract-is
 parent: bapi
 permalink: /:collection/:path
-weight: 8
+weight: 4
 lang: en_GB
 
 ---

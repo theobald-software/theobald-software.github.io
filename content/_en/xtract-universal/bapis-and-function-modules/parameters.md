@@ -1,13 +1,12 @@
 ---
-ref: xfa-bapi-param
+ref: xu-bapis-function-02
 layout: page
 title: Parameters
 description: Parameters
-product: xtract-for-alteryx
-parent: bapi
+product: xtract-universal
+parent: bapis-and-function-modules
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
 ---
-
 {% include _content/en/bapis-and-function-modules/parameters.md %}

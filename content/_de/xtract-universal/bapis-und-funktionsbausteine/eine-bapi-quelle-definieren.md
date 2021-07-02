@@ -10,5 +10,6 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-bapi-quelle-definieren
 ---
+
 {% include _content/de/bapi/eine-bapi-quelle-definieren.md %}
 

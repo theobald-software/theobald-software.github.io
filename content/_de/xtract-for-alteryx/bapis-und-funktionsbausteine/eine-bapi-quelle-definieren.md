@@ -17,11 +17,13 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-bapi-quelle-definieren
 ![BAPI component](/img/content/xfa/Define-bapi-component.png){:class="img-responsive"}
 
 ### Eine BAPI Extraktion finden
-4. Suchen nach **BAPI / Function Name** über das **[Lupensymbol]** (4). Sie können Platzhalter verwenden (*), wenn gewünscht. Das Fenster "Function Module Lookup" öffnet sich.
-5. Durch Eingabe eines Suchnamens in das Feld **BAPI / Function Name**, können Sie die Suche einschränken. Starten Sie die Suche duch klicken auf das **[Lupensymbol]** (5). Sie können Platzhalter verwenden (*), wenn gewünscht.<br>
+1. Suchen nach **BAPI / Function Name** über das **[Lupensymbol]** (4). Sie können Platzhalter verwenden (*), wenn gewünscht. Das Fenster "Function Module Lookup" öffnet sich.
+2. Durch Eingabe eines Suchnamens in das Feld **BAPI / Function Name**, können Sie die Suche einschränken. Starten Sie die Suche duch klicken auf das **[Lupensymbol]** (5). Sie können Platzhalter verwenden (*), wenn gewünscht.<br>
 ![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module.png){:class="img-responsive"}
-6. Wählen Sie ein Element aus der Liste aus (6). 
+3. Wählen Sie ein Element aus der Liste aus (6). 
 4. Klicken Sie auf **[OK]** (7), um die Auswahl zu bestätigen.
-5. Das Fenster "Xtract BAPI" zeigt die Parameter der ausgewählten BAPI.<br>
-Ein BAPI kann bis zu vier Paramtertypen haben: [Parametertypen](./skalare-parameter): Imports, Exports, Changings und Tables.
+5. Das Fenster "XBAPI" zeigt die Parameter des ausgewählten BAPI.<br>
+Ein BAPI kann bis zu vier Paramtertypen haben: [Parametertypen](./parameter): Imports, Exports, Changings und Tables.
+
 ![BAPI-Parameters](/img/content/xfa/BAPI-Parameters.png){:class="img-responsive"}
+
