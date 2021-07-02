@@ -43,7 +43,7 @@ This script modifies the registry at HKLM:\SOFTWARE\Policies\Microsoft\Power BI 
 
 1. Select Xtract Universal from the *Get Data* menu
 2. Click on the *Connect* button.
-3. Enter the URL of the Xtract Universal web server   
+3. Enter the URL of the Xtract Universal web server `<Protocol>://<HOST or IP address>:<Port>/`.
    ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.png){:class="img-responsive"}
 
    When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](./pbi-SSO) 
