@@ -10,6 +10,7 @@ weight: 3
 lang: de_DE
 ---
 
+
 ### Extraction Settings öffnen
 
 1. Im Hauptfenster des Designers klicken Sie auf **[Extraction Settings]**. Das Fenster “Cube Settings” wird geöffnet.
@@ -24,7 +25,7 @@ Das Fenster “Cube Settings” besteht aus zwei Unterabschnitten:
 
 #### Extraction Settings
 **Package Size**<br>
-definiert, wie viele Datensätze in einem Datenpaket von SAP geholt werden. <br>
+Definiert, wie viele Datensätze in einem Datenpaket von SAP geholt werden. <br>
 Werte zwischen 10.000 und 100.000 sind bei großen Datenmengen sinnvoll. <br>
 Wenn der Wert auf 0 gesetzt wird, wird die gesamte Ergebnismenge auf einmal abgerufen.
 
@@ -32,7 +33,7 @@ Wenn der Wert auf 0 gesetzt wird, wird die gesamte Ergebnismenge auf einmal abge
 **Empfehlung**: Definieren Sie immer eine Paketgröße.
 
 **Row Limit**<br>
-definiert die maximale Anzahl von Zeilen in der Ergebnismenge. <br>
+Definiert die maximale Anzahl von Zeilen in der Ergebnismenge. <br>
 Wenn der Wert auf 0 gesetzt wird, wird die komplette Ergebnismenge abgerufen.<br>
 Beim Testen kann es sinnvoll sein, eine Zeilengrenze von z.B. 1000 (**nicht** 0) zu setzen,um einen Test mit einer kleinen Datenmenge durchzuführen.<br>
 

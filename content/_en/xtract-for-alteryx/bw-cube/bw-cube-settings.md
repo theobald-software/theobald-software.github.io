@@ -32,7 +32,8 @@ If the value is set to 0, the complete result set is fetched at one time.
 **Recommendation**: Always define a package size.
 
 **Row Limit**<br>
-defines the maximum number of rows in the result set. <br>
+Defines the maximum number of rows in the result set. <br>
+Defines the maximum number of rows in the result set. <br>
 If the value is set to 0, the complete result set is fetched.<br>
 For example, when testing, it may be useful to specify a row limit of e.g., 1000 (**not** 0) to perform a test with a small amount of data.<br>
 
