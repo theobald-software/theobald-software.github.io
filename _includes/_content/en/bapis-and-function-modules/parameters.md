@@ -23,8 +23,7 @@ When entering constant scalar values of a wrong data type, the field is marked r
 
 {: .box-note }
 **Note:** Parameters that are predefined by SAP are displayed in a light grey font. <br>
-If you want to disable these parameters, activate the checkbox next to the parameter and don't enter a value. <br>
-When a value is entered, the checkbox is automatically activated. 
+To disable these parameters, activate the checkbox next to the parameter and leave the field empty. <br>
 
 #### Add Structures as Parameters (2)
 

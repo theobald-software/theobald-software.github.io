@@ -17,14 +17,14 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 
 Es gibt zwei Möglichkeiten Skalarfelder einzustellen: 
 - als statischer Wert (z.B. 1141)
-- als dynamischen Wert, der über einen [Parameter](./skalare-parameter#eparameter-bearbeiten) während der Laufzeit übergeben wird.
+- als dynamischen Wert, der über einen [Parameter](./edit-runtime-parameters) während der Laufzeit übergeben wird.
 
 Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
 Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.
 
 {: .box-note }
 **Note:** Parameter, die von SAP vorausgefüllt sind, werden in einer grauen Schrift angezeigt. <br>
-Wenn Sie diese Parameter deaktivieren möchten, haken Sie die Checkbox neben dem Parameter an und tragen Sie dort nichts ein.
+Um diese Parameter zu deaktivieren, haken Sie die Checkbox neben dem Parameter an und lassen Sie das Feld frei.
 
 #### Strukturen als Parameter hinzufügen (2)
 
