@@ -88,6 +88,27 @@ Ein asynchroner Aufruf einer Extraktion ist ein nichtblockierender Aufruf. D.h. 
 {: .box-tip }
 **Tipp:** Der XU-Server verfügt über weitere Funktionalitäten wie z.B. den Status eines (asynchronen) Extraktionsaufrufs prüfen, Logs oder Metadaten einer Extraktion abfragen usw. Diese Funktionalitäten werden nicht über das Kommandozeilen-Tool, sondern nur über [Webservices](./call-via-webservice#weitere-webservices) aufgerufen.
 --->
+
+### Basic Authentication via Kommandozeile
+
+Das Kommandozeilen-Tool unterstützt die Ausführung von Extraktionen mit Basic Authentication.
+
+Wenn Sie Extraktionen einplanen, indem Sie das Kommandozeilen-Tool ausführen, können Benutzerdaten für Basic Authentication als Argumente übergeben werden.
+Während der definierte Xtract Universal Benutzername (Custom User) direkt übergeben werden kann, muss das Custom User Passwort in einer Base 64-Encoding Datei abgelegt sein, auf die das Kommandozeilen-Tool zugreifen kann.
+Das Dateiformat kann frei gewählt werden, z.B. .txt, .json, .xml, und unterliegt keinen Restriktionen.
+
+1. Erstellen Sie eine Passwort-Datei mit dem folgenden Befehl: `xu.exe -f <path to the location and name of the file>`, z.B. `xu.exe -f "C:\temp\<name of the password file>"`.<br>
+Der Windows-Benutzer muss ausreichende Zugriffsrechte auf den Dateiordner besitzen. Die Passwort-Datei muss nicht im Vorfeld im Windows Explorer erstellt werden. 
+![Windows Security Settings](/img/content/xu/security_settings_windows_folder.png){:class="img-responsive"}
+2. Sie werden aufgefordert das korrespondierende Custom User Passwort einzugeben. Es muss mindestens 8 Zeichen lang sein.
+3. Übergeben Sie den Benutzer und den Pfad der Passwort-Datei als Argumente im Kommandozeilen-Tool, z.B. <br>
+`xu.exe -s todd.theobald.local -p 8165 -e -n MSEG -u Alice -b "C:\temp\password_custom_user"`.
+4. **OPTIONAL:** Achten Sie beim Einplanen der Extraktionen darauf, dass der User-Kontext des Tasks ausreichende Zugriffsrechte auf die erstellte Passwortdatei besitzt.
+![Windows Security Settings](/img/content/xu/security_settings_windows_task_scheduler.png){:class="img-responsive"}
+
+{: .box-note }
+**Note:** Für mehr Informationen, verwenden Sie den Befehl `xu.exe -h`. 
+
 #### Weiterführende Links
 - [Extraktion via Skript ausführen](https://kb.theobald-software.com/xtract-universal/call-extraction-via-script)
 - [Extraktion via Scheduler ausführen](./call-via-scheduler)

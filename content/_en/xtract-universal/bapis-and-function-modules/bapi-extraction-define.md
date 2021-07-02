@@ -10,4 +10,5 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
+
 {% include _content/en/bapis-and-function-modules/bapi-extraction-define.md %}

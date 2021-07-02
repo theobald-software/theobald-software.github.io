@@ -6,7 +6,7 @@ description: Example Use Case
 product: xtract-for-alteryx
 parent: bapi
 permalink: /:collection/:path
-weight: 4
+weight: 8
 lang: en_GB
 ---
 
