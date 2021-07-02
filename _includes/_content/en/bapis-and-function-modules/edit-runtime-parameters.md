@@ -11,7 +11,6 @@ The window "Edit Runtime Parameters" opens.<br>
 This allows you to dynamically set filters at runtime.<br>
 **Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: *"p_MATNR"*).
 3. Open the drop-down menu (2) and assign one of the following data types to the parameter.
-- Unknown: This data type can be used when the corresponding data type of the SAP field is special or unknown.
 - String: This data type can be used for any type of SAP selection field.
 - Number: This data type can be used for numeric SAP selection fields.
 - Flag: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.<br>
