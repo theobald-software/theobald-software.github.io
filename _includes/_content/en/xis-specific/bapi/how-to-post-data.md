@@ -39,7 +39,7 @@ The table has the following content:
 ![ssis-write-xtractis-fuba-01](/img/content/ssis-write-xtractis-fuba-01.png){:class="img-responsive" }
 3. Connect the Source component with the Xtract component. <br>
 ![ssis-write-xtractis-fuba-02](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive" }
-4. In the **Tables** tab of the Xtract component, click **[Edit]** to map the columns of the inout table. <br>
+4. Right-click the connection of the components and select **Resolve References**. Map the columns of the input tables. <br>
 ![ssis-write-xtractis-fuba-03](/img/content/ssis-write-xtractis-fuba-03.png){:class="img-responsive" }
 5. Click **[OK]** and run the SSIS Package.<br>
 ![ssis-write-xtractis-fuba-04](/img/content/ssis-write-xtractis-fuba-04.png){:class="img-responsive" }

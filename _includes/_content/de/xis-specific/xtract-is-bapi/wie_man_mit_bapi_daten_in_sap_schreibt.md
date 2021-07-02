@@ -39,7 +39,6 @@ Markieren Sie die Tabelle *T_PRODUCTS* für die Ausgabe, indem Sie die Checkbox 
 ![ssis-write-xtractis-fuba-01](/img/content/ssis-write-xtractis-fuba-01.png){:class="img-responsive"}
 3. Verbinden Sie die Komponenten Quelle und Xtract BAPI miteinander. <br>
 ![ssis-write-xtractis-fuba-02](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
-4. Klicken Sie im Tab **Tables** der Xtract Komponente auf **[Edit]**, um die Spalten der Eingabetabelle zu mappen. <br>
-![ssis-write-xtractis-fuba-03](/img/content/ssis-write-xtractis-fuba-03.png){:class="img-responsive"}
+4. Rechtsklicken Sie auf die Verbindung der Komponenten und wählen Sie **Resolve References**. Mappen Sie die Spalten der Eingabetabellen. <br>
 5. Führen Sie das SSIS-Paket aus. <br>
 ![ssis-write-xtractis-fuba-04](/img/content/ssis-write-xtractis-fuba-04.png){:class="img-responsive"}
