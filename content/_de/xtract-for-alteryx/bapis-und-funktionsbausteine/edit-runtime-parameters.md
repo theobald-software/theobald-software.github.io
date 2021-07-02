@@ -1,5 +1,5 @@
 ---
-ref: xu-bapis-function-06
+ref: xfa-bapis-function-06
 layout: page
 title: Laufzeitparameter
 description: Laufzeitparameter

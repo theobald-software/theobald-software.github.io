@@ -21,7 +21,7 @@ BAPIs can have up to four parameter types: Imports, Exports, Changings and Table
 You can enter scalar values (1) or structures (2). You can also use dynamic runtime parameters, see [Runtime Parameters](./edit-runtime-parameters).<br>
 Parameters defined as mandatory in SAP (transaction SE37) are marked with a red *. <br>
 ![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
-2. Define the output to receive from SAP in **Eports**, see [Export Parameters](./parameters#export-parameters). <br>
+2. Define the output to receive from SAP in **Exports**, see [Export Parameters](./parameters#export-parameters). <br>
 Select output by activating the checkbox next to the items.<br>
 ![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
 3. Optional: If available you can define input and output parameters in **Changings**, see [Changings Parameters](./parameters#changings-parameters).

@@ -21,7 +21,7 @@ This allows you to dynamically set filters at runtime.<br>
 
 Assign the parameters to selections.
 
-1. To use the parameters, choose an item from the *Imports**, **Exports**, **Changings** or **Tables** tab.
+1. To use the parameters, choose an item from the **Imports**, **Exports**, **Changings** or **Tables** tab.
 2. Click the icon next to the input field under **Value**.
 If there are runtime parameters, a parameter icon is displayed next to the input fields. <br>
 Clicking the icons switches between entering actual input values and entering parameters.<br>
