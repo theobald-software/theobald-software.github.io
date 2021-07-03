@@ -36,31 +36,36 @@ Execution is triggered by an HTTP request. The HTTP request can be triggered fro
 
 ### Access the Settings using the Designer
 
-1. XtractConfigServer.exe checks the authentication and authorization of the request.
+1. Theobald.Xu.Rpc.Worker.exe checks the authentication and authorization of the request.
 2. Designer requests a certain setting, e.g., list of all extractions. 
-3. XtractConfigServer.exe reads the requested settings from the [Config directory](./advanced-techniques/backup-and-migration#configuration-files) and sends these settings to the Designer.
+3. Theobald.Xu.Rpc.Worker.exe reads the requested settings from the [Config directory](./advanced-techniques/backup-and-migration#configuration-files) and sends these settings to the Designer.
 4. The user changes the settings in the Designer (e.g., destination settings).
-5. Designer sends the changed settings back to XtractConfigServer.exe. XtractConfigServer.exe saves the changed settings in the [Config directory](./advanced-techniques/backup-and-migration#configuration-files).
+5. Designer sends the changed settings back to Theobald.Xu.Rpc.Worker.exe. Theobald.Xu.Rpc.Worker.exe saves the changed settings in the [Config directory](./advanced-techniques/backup-and-migration#configuration-files).
+
+{: .box-tip }
+**Tip**: The Theobald.Xu.Rpc.Worker.exe logs its actions in log files.
+The log files are located in the logs subdirectory of the program directory: `C:\Program Files\XtractUniversal\logs\server\rpc\worker` (default).
 
 ### Server Architecture
 
 The server runs as a Windows Service and the main process of the XU Service is XtractService.exe. The Windows Service can be [managed](./server/start-server) via the Windows Services administration or the Task Manager.
 Xtractservice.exe starts two listener processes:
 - XtractWebServer.exe
-- XtractConfigServer.exe
+- Theobald.Xu.Rpc.Listener.exe
 
 {: .box-tip }
 **Tip**: The XtractService.exe logs its actions in ServiceLog.txt 
-The log file is located in the logs subdirectory of the program directory: 'C:ProgramFiles\XtractUniversal\logs' (default).
+The log file is located in the logs subdirectory of the program directory: `C:ProgramFiles\XtractUniversal\logs` (default).
 
 
 The both listener processes listen on the [Ports](./server/ports) defined in the [Server Settings](./server/server-settings).
 
-XtractConfigServer.exe waits for new connection requests from the designer. 
+Theobald.Xu.Rpc.Listener.exe waits for new connection requests from the Designer. 
+For each TCP connection the Theobald.Xu.Rpc.Listener.exe starts a new instance of Theobald.Xu.Rpc.Worker.exe, which processes all Designer requests coming in over the particular TCP connection.
 
 {: .box-tip }
-**Tip:** The XtractConfigServer.exe logs its actions in log files. 
-The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\XtractUniversal\logs\server\config' (default).
+**Tip:** The Theobald.Xu.Rpc.Listener.exe logs its actions in log files. 
+The log files are located in the logs subdirectory of the program directory: `C:\Program Files\XtractUniversal\logs\server\rpc\listener` (default).
 
 XtractWebServer.exe waits for HTTP requests. 
 
@@ -79,7 +84,7 @@ The following HTTP requests are possible:
 
 {: .box-tip }
 **Tip:** The XtractWebServer.exe logs its actions in log files. 
-The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\XtractUniversal\logs\server\web' (default).
+The log files are located in the logs subdirectory of the program directory: `C:ProgramFiles\XtractUniversal\logs\server\web` (default).
 
 More information about the server can be found in the following sections:
 

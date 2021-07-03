@@ -37,11 +37,15 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 
 ### Auf die Einstellungen mit dem Designer zugreifen
 
-1. XtractConfigServer.exe prüft die Authentisierung und Autorisierung der Anfrage.
+1. Theobald.Xu.Rpc.Worker.exe prüft die Authentisierung und Autorisierung der Anfrage.
 2. Designer fragt eine bestimmte Einstellung an, z.B. Liste aller Extraktionen. 
-3. XtractConfigServer.exe liest die angefragten Einstellungen aus dem [Config-Verzeichnis](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien) und sendet diese Einstellungen an den Designer.
+3. Theobald.Xu.Rpc.Worker.exe liest die angefragten Einstellungen aus dem [Config-Verzeichnis](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien) und sendet diese Einstellungen an den Designer.
 4. Der Benutzer ändert die die Einstellungen im Designer (z.B. Destinationseinstellungen).
-5. Der Designer sendet die geänderten Einstellungen an XtractConfigServer.exe zurück. XtractConfigServer.exe speichert die geänderten Einstellungen im [Config-Verzeichnis](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien).
+5. Der Designer sendet die geänderten Einstellungen an Theobald.Xu.Rpc.Worker.exe zurück. Theobald.Xu.Rpc.Worker.exe speichert die geänderten Einstellungen im [Config-Verzeichnis](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien).
+
+{: .box-tip }
+**Tipp:** Die Theobald.Xu.Rpc.Worker.exe protokolliert ihre Aktionen in Log-Dateien. 
+Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:\Program Files\XtractUniversal\logs\server\rpc\worker` (Standard).
 
 
 ### Serverarchitektur
@@ -49,20 +53,21 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 Der Server läuft als Windows-Service und der Hauptprozess von diesem Service ist XtractService.exe. Der Windows-Service kann über die Windows-Diensteverwaltung oder den Taskmanager [verwaltet](./server/server-starten) werden.
 xtractservice.exe startet zwei Listener-Prozesse:
 - XtractWebServer.exe
-- XtractConfigServer.exe
+- Theobald.Xu.Rpc.Listener.exe
 
 {: .box-tip }
 **Tipp:** Die XtractService.exe protokolliert ihre Aktionen in ServiceLog.txt. 
-Die Log-Datei befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs` (standartmäßig).
+Die Log-Datei befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs` (Standard).
 
 
 Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server_einstellungen) definiert sind.
 
-XtractConfigServer.exe wartet auf neue Verbindungsanfragen vom Designer. 
-
+Theobald.Xu.Rpc.Listener.exe wartet auf neue Verbindungsanfragen vom Designer.
+Für jede TCP-Verbindung startet die Theobald.Xu.Rpc.Listener.exe eine neue Instanz der Theobald.Xu.Rpc.Worker.exe, die alle über die TCP-Verbindung eingehenden Anfragen des Designers prozessiert.
+ 
 {: .box-tip }
-**Tipp:** Die XtractConfigServer.exe protokolliert ihre Aktionen in Log-Dateien. 
-Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs\server\config` (standartmäßig).
+**Tipp:** Die Theobald.Xu.Rpc.Listener.exe protokolliert ihre Aktionen in Log-Dateien. 
+Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:\Program Files\XtractUniversal\logs\server\rpc\listener` (Standard).
 
 XtractWebServer.exe wartet auf HTTP-Anfragen. 
 
