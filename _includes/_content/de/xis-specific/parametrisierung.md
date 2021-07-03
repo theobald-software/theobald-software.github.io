@@ -14,7 +14,7 @@ Abhängig von der Xtract Komponente können Sie entweder SSIS Variablen oder *Pr
 
 | Komponente   | Variablen | Eigenschaften |
 |-------------|:-----:|:----:|
-| [BAPI](./xtract-is-bapi/parametrisierung)        |   x    |      | 
+| [BAPI](./xtract-is-bapi/edit-runtime-parameters)        |   x    |      | 
 | [BW Cube](./bwcube/parametrisierung)     |   x    |      | 
 | [BW Hierarchy](./hierarchy/parametrisierung)|    x   |      |
 | [BW Loader](./bw-loader/parametrisierung)|    x   |      |

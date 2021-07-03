@@ -16,7 +16,7 @@ Depending on the Xtract IS component you can either use SSIS variables or proper
 
 | Component   | SSIS Variables | Properties |
 |-------------|:-----:|:----:|
-| [BAPI](./bapi/parametrization)        |   x    |      | 
+| [BAPI](./bapi/edit-runtime-parameters)        |   x    |      | 
 | [BW Cube](./bw-cube/parametrization)     |   x    |      | 
 | [BW Hierarchy](./hierarchy/paramerization)|    x   |      |
 | [BW Loader](./bw-loader/parametrization)|    x   |      |
