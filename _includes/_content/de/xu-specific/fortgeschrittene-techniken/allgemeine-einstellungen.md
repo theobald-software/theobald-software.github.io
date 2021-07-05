@@ -27,24 +27,21 @@ Der Tab "Misc." besteht aus zwei Unterabschnitten:
 **Hinweis:** die Option *Cache results* ist nur Verfügbar in [Pull-Destinationen](../destinationen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
 
 Pull-Destinationen ziehen die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
- so dass die Pull-Destination die Daten aus dem Cache und nicht aus dem SAP zieht.
+so dass die Pull-Destination die Daten aus dem Cache und nicht aus dem SAP zieht.
 Dies erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
- Wenn dieses Verhalten nicht erwünscht ist (z.B. weil die Daten immer zu 100% aktuell sein müssen), muss die Cache-Option explizit ausgeschaltet werden.
-
-**Preview Mode** (2)
-
-Wenn der Preview-Modus aktiviert ist, wird nur ein kleiner Teil der Daten aus SAP extrahiert oder, falls eine Extraktion nicht möglich ist, werden stattdessen Beispieldaten erzeugt.
-
+Wenn dieses Verhalten nicht erwünscht ist (z.B. weil die Daten immer zu 100% aktuell sein müssen), muss die Cache-Option explizit ausgeschaltet werden.
+ 
+**Enable column level encryption** (2)<br>
+Die Checkbox muss angehakt werden, wenn Sie eine "Column Encryption" (Spalten-Verschlüsselung) verwenden, siehe [Encryption](#encryption).
 
 #### Keywords (Schlüsselwörter)
 
 Ein oder mehrere Schlüsselwörter (Tags) können auf eine Extraktion gesetzt werden. 
-Schlüsselwörter können direkt in das Schlüsselwortfeld (3) eingegeben werden.
+Schlüsselwörter können direkt in das Schlüsselwortfeld eingegeben werden.
 Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extraktionen verwenden. 
 
 {:.box-tip}
 **Tipp:** zum Anzeigen der Filteroptionen, navigieren Sie zu **[Extractions] > [Filter]** oder drücken Sie **[CTRL]+[F]**.
-
 
 
 ### Primary Key Tab
@@ -58,11 +55,16 @@ In diesem Beispiel besteht der Primärschlüssel aus *KUNNR*, *VKORG*, *VTWEG* u
 *Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
 
 ### Encryption
+Sie können Daten sowohl verschlüsselt als auch unverschlüsselt speichern. 
+Die “Column Encryption” (Spalten-Verschlüsselung) ermöglicht Ihnen eine Verschlüsselung der Spalten bevor die extrahierten Daten in die Destination hochgeladen werden. 
+Dadurch kann sichergestellt werden, dass sensible Informationen geschützt sind.
 
-Bald verfügbar.
+Diese Funktion unterstützt außerdem wahlfreien Zugriff, d.h. dass Daten von jedem beliebigen Startpunkt aus entschlüsselt werden können. 
+Da wahlfreier Zugriff einen erheblichen Overhead verursacht, wird empfohlen die Spalten-Verschlüsselung nicht auf den gesamten Datensatz anzuwenden.
 
-![General-Settings-Encryption](/img/content/XU-General_Settings-Encryption.png){:class="img-responsive"}
-
+Spalten-Verschlüsselung wird nicht von allen Destinationen unterstützt.
+Wenn die Spalten-Verschlüsselung verfügbar ist, können Sie die zu verschlüsselnden Spalten in der Liste verfügbarer Spalten auswählen. <br>
+![Column-Encryption](/img/content/xu/xu-column-encryption-01.png){:class="img-responsive"}
 
 ### Security Tab
 
