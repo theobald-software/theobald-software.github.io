@@ -12,7 +12,9 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=bw-infocubes-and-bex-queries
 ---
 
-The following section describes the functions of the BW Cube Component of Xtract Universal. <br>
+The following section describes the functions of the BW Cube Component of Xtract Universal. 
+The Xtract BW Cube data source component was developed to extract data from SAP BW InfoCubes and QueryCubes (also known as BEx Queries). <br>
+
 Basic Xtract Universal the knowledge is required to understand the following sections. <br>
 
 {: .box-tip }

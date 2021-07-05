@@ -19,7 +19,7 @@ Wenn der Wert auf 0 gesetzt wird, wird die komplette Ergebnismenge abgerufen.
 **Row Limit** kann verwendet werden, um einen Test mit einer kleinen Datenmenge durchzuführen, indem Sie z.B. 1000 (nicht 0) als Zeilenlimit eintragen.
 
 **Use Formatted Values**<br>
-Definiert, dass die Werte der Kennzahlen so ausgegeben werden, wie im Query-Designer definiert (z.B. Skalierungsfaktor und Dezimalstellen).
+Wenn diese Option aktiv ist, werden die Werte der Kennzahlen so ausgegeben, wie im Query-Designer definiert (z.B. Skalierungsfaktor und Dezimalstellen).
 
 ### Automatic Slicing Dimension
 
@@ -32,8 +32,5 @@ Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicin
 ### Legacy settings
 
 **Use Description for Column (obsolete)**<br>
-Definiert, dass der Name der Pipeline-Elemente aus der Beschreibung ergibt und nicht aus deren technischen Namen.<br>
-Diese Eigenschaft ist obsolete. Nutzen Sie dazu die Eigenschaft Column Name Style in den Destination Settings.
-
-
+Wenn diese Option aktiv ist, wird der die Beschreibung und nicht der technische Namen eines Pipeline-Elements als Spaltenname verwendet.<br>
 

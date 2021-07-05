@@ -34,4 +34,3 @@ Automatic slicing means that a loop is executed for each single value of the cho
 
 **Description for Columns** <br>
 If this option is active, the key figure's description will be used for the column name, instead of the technical name. 
-This setting is obsolete. Use the setting **Column Name Style** in the Destination Settings.

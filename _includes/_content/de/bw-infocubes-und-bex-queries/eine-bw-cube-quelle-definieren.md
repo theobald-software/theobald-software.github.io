@@ -1,34 +1,53 @@
-Die Cube Datenquelle wurde entwickelt, um Daten aus SAP BW InfoCubes oder Queries (auch bekannt als BEx-Queries) abzuziehen.<br>
-Nach der Anlage einer BW Cube-Datenquelle erscheint der Dialog leer.
+Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.<br>
 
-![BWCube-Extraction-01](/img/content/BWCube-Extraction-01.png){:class="img-responsive"}
+Die Komponente BW Cube kann verwendet werden, um Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. Die BW Queries können in diesem Fall auf allen möglichen InfoProvidern basieren. <br>
+Ein üblicher Ansatz für die Extraktion besteht darin, eine Abfrage zu erstellen, die Ihren Geschäftsanforderungen entspricht.
 
-Um ihn mit Leben zu füllen, klicken Sie bitte auf den Fernglas-Knopf, um einen Cube oder eine Query zu suchen.
+![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
 
-Sie können mit Wildcards (also * ) entweder in den verfügbaren InfoCubes oder in den verfügbaren QueryCubes suchen. Sobald Sie den richtigen Cube gefunden haben, markieren Sie ihn und bestätigen Sie mit *OK*.
+### Nach BW Cube oder Query suchen
+
+1. Im Hauptfenster der Komponente klicken Sie auf den **[Search]** Button (Lupensymbol). Das Fenster “Cube or Query Lookup” wird geöffnet.
+![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
+2. Geben Sie im Feld **Name** (1) den Namen des Query oder des BW Cubes / InfoProviders ein. Die Verwendung von Wildcards (*) wird unterstützt. 
+3. Definieren Sie den **Extractor** und **Type** des Objekts (2).
+4. Klicken Sie auf **[Search]** (Lupensymbol) (3) und wählen Sie das Objekt aus der Liste (4) aus.
+5. Klicken Sie auf **[OK]** (5) zum Bestätigen.
+
+{: .box-warning }
+**Warning! Invalid action**<br>
+Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss. 
+Mehr Details finden Sie im Knowledgebase-Artikel [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries)..
+ 
+### Auswählen von Messwerten ( Key Figures), Abmessungen und Eigenschaften
+Wenn ein Objekt ausgewählt ist, wird im Hauptfenster der Komponente auf der linken Seite eine Baumstruktur angezeigt. Die Baumstruktur stellt die Metadaten der Query (oder des InfoProviders) dar. <br>
+![Cube-Details](/img/content/XU-Tableau-BExQuery.png){:class="img-responsive"}
+Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (1). Die folgenden Verzeichnisse entsprechen den Dimensionen und enthalten oft zusätzliche Dimensionseigenschaften (2). <br>
+
+1. Wählen Sie die Kennzahlen, Dimensionen und Eigenschaften für eine Extraktion.
+2. Klicken Sie innerhalb des Kennzahlenverzeichnisses auf den Pfeil, um die verfügbaren Einheiten zu öffnen. Wählen Sie die Einheiten aus, falls erforderlich.
+3. Klicken Sie auf **[Load live preview]** um die Ausgabe mit Daten aus dem BW anzuzeigen. Wenn eine Einheit ausgewählt ist (z.B. Währung), wird das entsprechende Feld in der Echtzeitvorschau angezeigt.
 
 {: .box-note }
-**Hinweis:** Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff  auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss. Mehr Details finden Sie im Knowledgebase-Artikel [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
+**Hinweis:** Für jede ausgewählte Dimension oder Eigenschaft wird im Ergebnis eine Kennzahl und eine Einheit angezeigt. 
 
-![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
+### Einstellen eines Dimensionsfilters 
+1. Klicken Sie mit der rechten Maustaste auf eine Dimension. Die Schaltfläche **[Edit Filter]** erscheint.
+![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
+2. Klicken Sie **[Edit Filter]**. Das Fenster "Member Filter" wird geöffnet. Sie können die *Einzelnen Werte (Single Values)* (linke Seite des Fensters) setzen und / oder *Wertebereiche (Value Ranges)* (rechte Seite des Fensters) definieren.
+![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
+3. Wählen Sie einen einzelnen Wert (3) oder klicken Sie auf **[Add]** (4) um Wertebereiche hinzuzufügen. 
+4. Definieren Sie die Werte für die Filterung. Dynamischer Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). Löschen Sie ggf. die Filter (Mülltonnensymbol).
+5. Klicken Sie auf **[OK]** zum Bestätigen. Das Fenster "Member Filter" wird geschlossen.
 
-Nachdem ein Cube gewählt wurde, finden Sie auf der linken Seite hierarchisch angeordnet die Kennzahlen (Ordner Key Figures), die Dimensionen und deren Eigenschaften (jeweils im Unterordner Properties jeder Dimension). Um einzelne Parameter für die Extraktion zu wählen, ziehen Sie den gewünschten Knoten per Drag & Drop von der Baumanzeige in die Tabelle rechts. 
-
-Bitte beachten Sie, dass die jeweilige Dimension automatisch mit selektiert wird, auch wenn Sie nur eine einzelne Eigenschaft hinüberziehen.
-
-![Cube-Details](/img/content/XU-Tableau-BExQuery.png){:class="img-responsive"}
-
-Sobald sie die Definition der gewünschten Ergebnismenge abgeschlossen haben, können Sie die Ausgabe der Extraktion mit Hilfe des Run-Buttons im Browser testen.
-
-Um alle Eigenschaften einer Dimension oder alle Kennzahlen zu selektieren, klicken Sie mit der rechten Maustaste auf den entsprechenden Knoten und wählen Sie die Option *Select for Output*.
-
-Ein Preview im Browser liefert das folgende Ergebnis.
-
-![Cube-Browser-Output](/img/content/Cube-Browser-Output.png){:class="img-responsive"}
-
-Der interessierte Nutzer kann auch den Show MDX-Link im oberen Bereich anklicken. Dann wird das jeweilige, automatisch generierte MDX-Statement angezeigt. Dies dient aber nur zur Information.
+Wenn ein Filter definiert ist, erscheint ein Filtersymbol in der Metadatenstruktur.
 
 
-![Cube-Extraction-Mdx-Statement](/img/content/Cube-Extraction-Mdx-Statement.png){:class="img-responsive"}
+{: .box-note }
+**Hinweis:** BW-Queries haben oft definierte Variablen zum Erstellen von Filteroptionen. Um Variablen zu definieren, siehe [Query Variablen](./variablen).
+ 
 
-
+****
+#### Weiterführende Links
+- [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
+- [Query Variablen](./variablen)
