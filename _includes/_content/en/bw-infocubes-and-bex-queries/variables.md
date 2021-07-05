@@ -1,17 +1,16 @@
-Use the *Variables* link to enter values for BEx Query variables. 
 
-![Define-Data-Source-for-Cube](/img/content/Define-Data-Source-for-Cube.png){:class="img-responsive"}
+### About Query Variables
+BW queries have often defined variables to create filter options. Depending on the type of BEx variable (single value, multiple value, interval or complex selection) input fields of the variables are enabled or disabled.
+Instead of hard coding a value for the BEx variable you can define variables with values that can be set dynamically.
+Use the **@** symbol in front of the variable name entered in the input field to mark it as a variable, e.g., *@salesorg*. 
 
-Depending on the type of BEx variable (single value, multiple value, interval or complex selection) input fields are enabled or disabled. All kinds of variables can be edited and entered with the help of the variable editor shown below. If the BEx variable is of type complex selection or allows multiple values please use the Edit link to open an additional dialog.
-
-As shown in the screenshot, instead of hard coding a value for the BEx variable you can use variables. This applies to regular extraction mode as well as [MDX extraction](./bw-cube-extraction-settings) mode. Please add an @ right before the value entered in the input field to mark it as a variable. The variables will become part of the extraction's URL where you can assign values to them (see section on [User-Defined Variables](../advanced-techniques/user-defined-variables)).
-
-![Cube-Variables](/img/content/Cube-Variables.png){:class="img-responsive"} 
-
-Variables in regular extraction mode (above) and MDX extraction mode (below).
-
-![XU_MDX_Var_1](/img/content/XU_MDX_Var_1.png){:class="img-responsive"}
-
-The following screenshot shows the additional dialog for entering complex selections for MAT03:
-
-![Cube-Variables-Edit-Range](/img/content/Cube-Variables-Edit-Range.png){:class="img-responsive"}
+### To Edit Variables
+1. Perform a Query [search](./bw-cube-extraction-define#look-up-a-bw-cube-or-query) and select a Query with defined variables (1).
+2. Load a live preview (2), if needed. 
+![Edit Variables Button](/img/content/XU-BExQuery-Variable.png){:class="img-responsive"}
+3. Click **[Edit Variables]** (3). The window "Edit variables for [name of the query]" opens.
+4. The fields with available variables are displayed. Define the variables using the drop-down list options in the fields **Sign** and **Option**. Select the range of values, if needed. The logic of complex selection is based on the usual possibilities. The **Sign** specification defines whether the respective selection column is included or excluded.
+5. Click the magnifying glass symbol to display the selectable variable values.
+![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
+6. Click **[Ok]** to confirm. 
+7. Click **[Load Live Preview]** to preview the filtered results.
