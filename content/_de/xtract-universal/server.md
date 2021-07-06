@@ -21,10 +21,7 @@ Der Server übernimmt zwei Hauptaufgaben:
 
 ### Extraktion auf dem Server ausführen
 
-Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von der xu-Kommandozeilen-Tool (xu.exe /xu.elf) gestartet werden. 
-
-{: .box-tip }
-**Tipp:** Der Server-Prozess kann im [Extraktions-Log](./logging/log-zugriff-ueber-designer#extraktions-logs) nachvollzogen werden.
+Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von dem xu-Kommandozeilen-Tool (xu.exe / xu.elf) gestartet werden, siehe [Extraktionen Ausführen und Einplanen](./extraktionen-ausfuehren-und-einplanen). 
 
 1. XtractRun.exe prüft die Authentisierung und Autorisierung der Anfrage. 
 2. Die Zielumgebung wird für das Schreiben der extrahierten Daten vorbereitet (z.B. Datenbakverbindung herstellen, Datei anlegen).
@@ -32,8 +29,12 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 4. Eine Verbindung zum in der Source definierten SAP-System wird hergestellt.
 5. Die Daten des definierten Extraktionstyps werden angefordert.
 6. Jedes extrahierte Datenpaket wird in die Zielumgebung geschrieben.
-7. Nachdem alle Pakete empfangen wurden, wird die Verbindung zum SAP-System getrennt und die Zielumgebung wird über den Abschluss der Extraktion informiert.
+7. Nachdem alle Pakete empfangen wurden, trennt XtractRun.exe die Verbindung zum SAP-System und informiert die Zielumgebung wird über den Abschluss der Extraktion.
 
+{: .box-tip }
+**Tipp:** Die XtractRun.exe protokolliert ihre Aktionen in Log-Dateien. 
+Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:Program Files\XtractUniversal\logs\server\run` (standartmäßig). 
+Die Logs kann man sich auch im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen, siehe [Extraktions-Log](./logging/log-zugriff-ueber-designer#extraktions-logs).
 
 ### Auf die Einstellungen mit dem Designer zugreifen
 
@@ -51,32 +52,30 @@ Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisse
 ### Serverarchitektur
 
 Der Server läuft als Windows-Service und der Hauptprozess von diesem Service ist XtractService.exe. Der Windows-Service kann über die Windows-Diensteverwaltung oder den Taskmanager [verwaltet](./server/server-starten) werden.
-xtractservice.exe startet zwei Listener-Prozesse:
+
+XtractService.exe startet zwei Listener-Prozesse:
 - XtractWebServer.exe
 - Theobald.Xu.Rpc.Listener.exe
+
+Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server_einstellungen) definiert sind.
 
 {: .box-tip }
 **Tipp:** Die XtractService.exe protokolliert ihre Aktionen in ServiceLog.txt. 
 Die Log-Datei befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs` (Standard).
 
+#### Theobald.Xu.Rpc.Listener.exe
 
-Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server_einstellungen) definiert sind.
-
-Theobald.Xu.Rpc.Listener.exe wartet auf neue Verbindungsanfragen vom Designer.
-Für jede TCP-Verbindung startet die Theobald.Xu.Rpc.Listener.exe eine neue Instanz der Theobald.Xu.Rpc.Worker.exe, die alle über die TCP-Verbindung eingehenden Anfragen des Designers prozessiert.
+Theobald.Xu.Rpc.Listener.exe wartet auf neue Verbindungsanfragen vom Designer. <br>
+Für jede TCP-Verbindung startet die Theobald.Xu.Rpc.Listener.exe eine neue Instanz der Theobald.Xu.Rpc.Worker.exe, die alle über die TCP-Verbindung eingehenden Anfragen des Designers prozessiert, siehe [Auf die Einstellungen mit dem Designer zugreifen](#auf-die-einstellungen-mit-dem-designer-zugreifen).
  
 {: .box-tip }
 **Tipp:** Die Theobald.Xu.Rpc.Listener.exe protokolliert ihre Aktionen in Log-Dateien. 
-Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:\Program Files\XtractUniversal\logs\server\rpc\listener` (Standard).
+Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:\ProgramFiles\XtractUniversal\logs\server\rpc\listener` (Standard).
 
-XtractWebServer.exe wartet auf HTTP-Anfragen. 
+#### XtractWebServer.exe
 
-Für jede TCP-Verbindung startet die XtractWebServer.exe eine neue Instanz der XtractRun.exe, die alle über diese TCP-Verbindung eingehenden HTTP-Anfragen bearbeitet.
-
-{: .box-tip }
-**Tipp:** Die XtractRun.exe protokolliert ihre Aktionen in dem Log-Unterverzeichnis. 
-Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:ProgramFiles\XtractUniversal\logs\server\run` (standartmäßig). 
-Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen kann.
+XtractWebServer.exe wartet auf HTTP-Anfragen. <br>
+Für jede TCP-Verbindung startet die XtractWebServer.exe eine neue Instanz der XtractRun.exe, die alle über diese TCP-Verbindung eingehenden HTTP-Anfragen bearbeitet, siehe [Extraktion auf dem Server ausführen](#extraktion-auf-dem-server-ausführen).
 
 Die folgenden HTTP-Anfragen sind möglich:
 - Ausführen einer Extraktion
@@ -88,6 +87,7 @@ Die folgenden HTTP-Anfragen sind möglich:
 **Tipp:** Die XtractWebServer.exe protokolliert ihre Aktionen in Log-Dateien. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs\server\web` (standartmäßig).
 
+*****
 Weitere Informationen zum Server finden Sie in den folgenden Abschnitten:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
