@@ -21,7 +21,8 @@ The server performs two main tasks:
 
 ### Run Extraction on the Server
 
-Execution is triggered by an HTTP request. The HTTP request can be triggered from the target environment for [pull destinations](./destinations#pull-and-push-destinations) or from the xu command line tool (xu.exe /xu.elf), see [Execute and Automate Extractions](./execute-and-automate-extractions). 
+Execution is triggered by an HTTP request. The HTTP request can be triggered from the target environment for [pull destinations](./destinations#pull-and-push-destinations) or from the xu command line tool (xu.exe /xu.elf), see [Execute and Automate Extractions](./execute-and-automate-extractions).<br> 
+The process can be traced in the [Extraction Log](./logging/logging-access-via-designer#extraction-logs).
 
 1. XtractRun.exe checks the authentication and authorization of the request.
 2. The target environment is prepared for writing the extracted data (e.g. establish database connection, create file).
@@ -34,7 +35,7 @@ Execution is triggered by an HTTP request. The HTTP request can be triggered fro
 {: .box-tip }
 **Tip:** The XtractRun.exe logs its actions in log files. 
 The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\XtractUniversal\logs\server\run` (default) 
-The logs can also be displayed in the Designer under **[Server]>[Logs (Run)]**, see [Extraction Logs](./logging/logging-access-via-designer#extraction-logs).
+The logs can also be displayed in the Designer under **[Server]>[Logs (Run)]**.
 
 ### Access the Settings using the Designer
 

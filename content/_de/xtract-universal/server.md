@@ -21,7 +21,8 @@ Der Server übernimmt zwei Hauptaufgaben:
 
 ### Extraktion auf dem Server ausführen
 
-Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von dem xu-Kommandozeilen-Tool (xu.exe / xu.elf) gestartet werden, siehe [Extraktionen Ausführen und Einplanen](./extraktionen-ausfuehren-und-einplanen). 
+Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von dem xu-Kommandozeilen-Tool (xu.exe / xu.elf) gestartet werden, siehe [Extraktionen Ausführen und Einplanen](./extraktionen-ausfuehren-und-einplanen).<br> 
+Der Server-Prozess kann im [Extraktions-Log](./logging/log-zugriff-ueber-designer#extraktions-logs) nachvollzogen werden.
 
 1. XtractRun.exe prüft die Authentisierung und Autorisierung der Anfrage. 
 2. Die Zielumgebung wird für das Schreiben der extrahierten Daten vorbereitet (z.B. Datenbakverbindung herstellen, Datei anlegen).
@@ -34,7 +35,7 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 {: .box-tip }
 **Tipp:** Die XtractRun.exe protokolliert ihre Aktionen in Log-Dateien. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:Program Files\XtractUniversal\logs\server\run` (standartmäßig). 
-Die Logs kann man sich auch im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen, siehe [Extraktions-Log](./logging/log-zugriff-ueber-designer#extraktions-logs).
+Die Logs kann man sich auch im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen.
 
 ### Auf die Einstellungen mit dem Designer zugreifen
 
