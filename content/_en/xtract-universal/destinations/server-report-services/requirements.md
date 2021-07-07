@@ -34,6 +34,13 @@ To complete the installation close all Visual Studio windows.
  {: .box-warning }
 **Warning!** Make sure to install the latest version of the *Microsoft Reporting Services Projects* plugin and Xtract Universal.  
 
+After installation of Xtract Universal the setup creates the following entries and extensions in the Visual Studio installation directory:
+- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\XUDataExtension2020.05.dll`
+- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\Theobald.Common.dll`
+- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\Theobald.Distillery.Common.dll`
+- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\Theobald.Net.dll`
+- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\RSReportDesigner.config`
+
 ### Installation using the Xtract Universal Data Extension
 
 To install the Xtract Universal extension on multiple environments without installing the Xtract Universal Designer, follow these steps:
@@ -41,11 +48,10 @@ To install the Xtract Universal extension on multiple environments without insta
 1. Make sure the *Microsoft Reporting Services Projects* plugin for Visual Studio is already installed and activated. 
 2. Close Visual Studio.
 3. [Install Xtract Universal](../../introduction/installation-and-update) on the environment on which the license runs.
-4. After the installation is complete, navigate to the Xtract Universal directory e.g., `C:\Program files\Xtract Universal\`.
-5. Copy the `\ssrs` folder from the directory to any environment on which Visual Studio is used to design reports or on which the Report Server runs.
-6. Run *SSRSDataExtensionSetup.exe* as administrator to install the Xtract Universal Data Extension on all compatible versions of Visual Studio and/or Report Server found on the environment. 
-7. After the installation on the Report Server is complete, restart the Report Server for the changes to take effect. 
-You can restart the server in the Report Server Configuration Manager by clicking **stop** and then **start**.
+4. After the installation is complete, navigate to the Xtract Universal directory e.g., `C:\Program files\Xtract Universal\`and copy the `\ssrs` folder from the directory to any environment on which Visual Studio is used to design reports or on which the Report Server runs.
+5. Run *SSRSDataExtensionSetup.exe* as administrator to install the Xtract Universal Data Extension on all compatible versions of Visual Studio and/or Report Server found on the environment. 
+6. After the installation on the Report Server is complete, restart the Report Server for the changes to take effect. 
+You can restart the server in the Report Server Configuration Manager by clicking **[stop]** and then **[start]**.
 
 To uninstall the Data Extension use the *uninstall.bat* file from the `\ssrs`folder in the Xtract universal directory.  
 
