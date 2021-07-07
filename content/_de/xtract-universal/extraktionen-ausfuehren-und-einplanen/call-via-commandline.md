@@ -28,7 +28,7 @@ Das Kommandozeilen-Tool *xu.exe* verbindet sich zu einem Xtract Universal Server
 | -n   |  Name der Extraktion  | `C:\Program Files\XtractUniversal\xu.exe -n <name>` |
 |   -s       |  Der Name oder die IP des Rechners, auf dem der Xtract Universal Service läuft. Der Standardwert ist localhost. Den aktuellen Wert finden Sie im "Run" Fenster des [Designers](../erste-schritte/designer-overview#hauptmenüleiste-1).|  `xu.exe -n <name> -s <host>`|
 | -p    | Der Port, unter dem der Xtract Universal Service läuft. Der Standardwert ist 8065. <br> Den aktuellen Wert finden Sie im "Run" Fenster des [Designers](../erste-schritte/designer-overview#hauptmenüleiste-1)  | `xu.exe -n <name> -s <host> -p <port>` |
-|  -o     | Parameter, deren Werte beim Ausführen der Extraktion gesetzt werden sollen. <br> Es können mehrere Parameter verwendet werden. | `xu.exe -n <name> -s <host> -p <port> -o param1=<wert1> -o param2=<wert2>`|
+|  -o     | Parameter, deren Werte beim Ausführen der Extraktion gesetzt werden sollen. <br> Es können mehrere Parameter verwendet werden. | `xu.exe -n <name> -s <host> -p <port> -o "param1=<wert1>" -o "param2=<wert2>"`|
 |  -e  | Verwendet [Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol) (1.2 oder höher) für die Transportsicherheit. |   `xu.exe  -n <name> -s <host> -p <port> -e`|
 | -a    |Bricht alle aktuell laufenden Instanzen der angegebenen Extraktion ab. | `xu.exe -a` |
 |  -c   | Löscht den Result-Cache (Ergebnis Cache) für die angegebene Extraktion und deren Optionen.<br> Dies gilt nur für [Pull-Destinationen](../destinationen#pull--und-push-destinationen). | `xu.exe -c` |  
@@ -37,8 +37,8 @@ Das Kommandozeilen-Tool *xu.exe* verbindet sich zu einem Xtract Universal Server
 Rufen Sie das Kommandozeilen-Tool in folgender Form auf, um eine Extraktion auf dem Xtract Universal Server zu starten:
 ```
     xu.exe -n MaterialText
-    xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000
-    xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e
+    xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o "rows=1000"
+    xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o "rows=1000" -o "SPRAS=D" -e
     xu.exe -n MaterialText -a
     xu.exe "http://localhost:8065/?name=MaterialText&rows=1000"
 ```

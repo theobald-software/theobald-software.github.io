@@ -29,7 +29,7 @@ The command line tool connects to an Xtract Universal server (service) and start
 | -n   |  Name of the extraction  | `C:\Program Files\XtractUniversal\xu.exe -n <name>` |
 |   -s       |  The name or IP address of the machine on which the Xtract Universal service runs. The default is localhost. You can find the current value in the "Run" window of the [Designer](../getting-started/designer-overview#main-menu-bar-1).|  `xu.exe -n <name> -s <host>`|
 | -p    | The port on which the Xtract Universal service runs. The default is 8065. <br> You can find the current value in the "Run" window of the [Designer](../getting-started/designer-overview#main-menu-bar-1).  | `xu.exe -n <name> -s <host> -p <port>` |
-|  -o     | Parameters to be set when running the extraction. <br> Multiple parameters can be set. | `xu.exe -n <name> -s <host> -p <port> -o param1=<wert1> -o param2=<wert2>`|
+|  -o     | Parameters to be set when running the extraction. <br> Multiple parameters can be set. | `xu.exe -n <name> -s <host> -p <port> -o "param1=<wert1>" -o "param2=<wert2>"`|
 |  -e  | Use [Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol) (1.2 or higher). |   `xu.exe  -n <name> -s <host> -p <port> -e`|
 | -a    |Cancel all running instances of the extraction. | `xu.exe -a` |
 |  -c   | Clear the result cache and options of the extraction. <br> This only works with [Pull Destinations](../destinations#pull-and-push-destinations). | `xu.exe -c` |  
@@ -38,8 +38,8 @@ The command line tool connects to an Xtract Universal server (service) and start
 To run an extraction on the Xtract Universal server, call the command line tool as follows:
 ```
     xu.exe -n MaterialText
-    xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o rows=1000
-    xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o rows=1000 -o SPRAS=D -e
+    xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o "rows=1000"
+    xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o "rows=1000" -o "SPRAS=D" -e
     xu.exe -n MaterialText -a
     xu.exe "http://localhost:8065/?name=MaterialText&rows=1000"
 ```
