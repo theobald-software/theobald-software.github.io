@@ -1,6 +1,6 @@
 ### Properties of Xtract Components in SSIS
 
-The custom properties of an Xtract IS component are displayed in the window "Properties". 
+The custom properties of an Xtract IS component are displayed in the window "Properties". <br>
 
 ![Properties](/img/content/xis/properties_component.png){:class="img-reagierend"}
 

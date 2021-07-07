@@ -1,6 +1,6 @@
 ### Properties der Xtract Komponenten in SSIS
 
-Die *Custom Properties* einer Xtract IS Komponente werden im Fenster "Properties" angezeigt.
+Die *Custom Properties* einer Xtract IS Komponente werden im Fenster "Properties" angezeigt.<br>
 ![Properties](/img/content/xis/properties_component.png){:class="img-reagierend"}
 
 {: .box-note }
