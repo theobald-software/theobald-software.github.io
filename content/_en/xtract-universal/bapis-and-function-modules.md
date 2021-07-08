@@ -17,4 +17,8 @@ Basic Xtract Universal the knowledge is required to understand the following sec
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
+### BAPI verwenden
+{% include _content/de/define-extraction.md %}
+
+****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
