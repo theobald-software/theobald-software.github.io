@@ -1,6 +1,23 @@
 
 {% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
 
+### Custom Properties
+
+Liste der *Custom Properties* der BW Loader Komponente:
+- DataSourceType
+- GatewayHost
+- GatewayService
+- InfoPackage
+- InfoSource
+- InternalXML
+- LogSys
+- NolPackageStartOnlyWait
+- PackageSize
+- ProcessChain
+- ProgramID
+- UserComponentTypeName
+- WaitUntilFinished
+
 ### Parametrierung mit SSIS Variablen
 Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
 

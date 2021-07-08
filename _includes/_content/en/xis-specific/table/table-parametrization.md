@@ -1,8 +1,23 @@
 
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
-{: .box-tip }
-**Recommendation:** Where possible, use properties for parameterization. 
+### Custom Properties
+
+List of *Custom Properties* of the Table component:
+- ColumnNameStyle
+- ConvertsDates
+- CustomFunctionName
+- InvalidDateReplacement
+- MaxDateReplacement
+- MaxRows
+- MinDateReplacement
+- OrderBy
+- PackageSize
+- UseLegacyDateConversion
+- UserComponentTypeName
+- UseWideStrings
+- WhereClause
+
 
 ### Parameterization using Properties
 The following properties can be parameterized:
@@ -18,6 +33,8 @@ The following properties can be parameterized:
 | *[Xtract Table].[InvalidDateReplacement]*|In case of invalid date values you need to enter a default date value. Every invalid value will be converted into this value.|
 | *[Xtract Table].[PackageSize]*| Corresponds to the field *Package Size* in the Table component's [Settings](./extraction-settings).|
 
+{: .box-tip }
+**Recommendation:** Where possible, use properties for parameterization. 
 
 ### Parameterization using SSIS Variables
 The following fields and/or custom properties of the component allow entry of an SSIS variable:

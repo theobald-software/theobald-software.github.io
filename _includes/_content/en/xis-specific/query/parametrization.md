@@ -1,6 +1,22 @@
 
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
+### Custom Properties
+
+List of *Custom Properties* of the Query component:
+- InternalXML
+- MaxRows
+- QueryDescription
+- QueryName
+- Reserved
+- StringConversion
+- UserComponentTypeName
+- UserGroup
+- Variant
+- VariantDescription
+- WorkSpace
+
+
 ### Parameterization using SSIS Variables
 The following fields and/or custom properties of the component allow entry of an SSIS variable:
 

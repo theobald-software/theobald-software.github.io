@@ -1,6 +1,20 @@
 
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
+### Custom Properties
+
+List of *Custom Properties* of the ODP component:
+- ConvertsDates
+- ExtractDataOnDeltaInit
+- HierarchyName
+- InvalidDateReplacement
+- MaxDateReplacement
+- MinDateReplacement
+- PackageSize
+- SubscriptionSuffix
+- UpdateMode
+- UserComponentTypeName
+
 ### Parameterization using Properties
 The following custom properties can be parameterized:
 

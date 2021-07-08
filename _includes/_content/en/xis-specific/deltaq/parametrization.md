@@ -1,6 +1,27 @@
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
-### Parameterization using Properties
+### Custom Properties
+
+List of *Custom Properties* of the DeltaQ component:
+- GatewayHost
+- GatewayService
+- HierClass
+- HierName
+- Language
+- NewTimeStampFormatInRequestLog
+- OLTPSourceName
+- OLTPSourceType
+- ProgramID
+- RequestID
+- StringConversion
+- TargetSystem
+- Timeout
+- TransferMethod
+- TransferStructure
+- UpdateType
+- UserComponentTypeName
+
+### Parameterization using SSIS Properties
 The following custom properties can be parameterized:
 
 |Property Name|Description|

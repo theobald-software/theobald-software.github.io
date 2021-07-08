@@ -1,6 +1,24 @@
 
 {% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
 
+### Custom Properties
+
+Liste der *Custom Properties* der Report-Komponente:
+- BatchJobDestination
+- BatchJobName
+- BatchJobTimeout
+- InternalXML
+- ReportName
+- ReportRowsPerDataRow
+- ReportWidth
+- Reserved
+- SkipBottomRows
+- SkipTopRows
+- StringConversion
+- UseBatch
+- UserComponentTypeName
+- Variant
+
 ### Parametrierung mit SSIS Variablen
 Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
 

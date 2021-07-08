@@ -1,13 +1,35 @@
 
 {% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
 
-### Parameterisierung mit Properties
+
+### Custom Properties
+
+Liste der *Custom Properties* der DeltaQ Komponente:
+- GatewayHost
+- GatewayService
+- HierClass
+- HierName
+- Language
+- NewTimeStampFormatInRequestLog
+- OLTPSourceName
+- OLTPSourceType
+- ProgramID
+- RequestID
+- StringConversion
+- TargetSystem
+- Timeout
+- TransferMethod
+- TransferStructure
+- UpdateType
+- UserComponentTypeName
+
+### Parameterisierung mit SSIS Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
 
 |Property|Beschreibung|
 |:----|:----|
 | *[Xtract DeltaQ].[GatewayHost]*|Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *[Xtract DeltaQ].[GatewayService]*|ntspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
+| *[Xtract DeltaQ].[GatewayService]*|Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
 | *[Xtract DeltaQ].[ProgramID]*|Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
 | *[Xtract DeltaQ].[TargetSystem]*|Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
 | *[Xtract DeltaQ].[RequestID]*|Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|

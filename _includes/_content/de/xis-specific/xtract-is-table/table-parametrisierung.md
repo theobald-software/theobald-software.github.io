@@ -1,6 +1,23 @@
 
 {% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
 
+### Custom Properties
+
+Liste der *Custom Properties* der Table-Komponente:
+- ColumnNameStyle
+- ConvertsDates
+- CustomFunctionName
+- InvalidDateReplacement
+- MaxDateReplacement
+- MaxRows
+- MinDateReplacement
+- OrderBy
+- PackageSize
+- UseLegacyDateConversion
+- UserComponentTypeName
+- UseWideStrings
+- WhereClause
+
 ### Parameterisierung mit Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
 

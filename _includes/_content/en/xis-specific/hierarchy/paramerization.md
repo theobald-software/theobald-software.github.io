@@ -1,6 +1,19 @@
 
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
+### Custom Properties
+
+List of *Custom Properties* of the BW Hierarchy component:
+- DateTo
+- FetchText
+- HierarchyID
+- HierarchyName
+- HierarchyVersion
+- InfoObject
+- InternalXML
+- StringConversion
+- UseComponentTypeName
+
 ### Parameterization using SSIS Variables
 The following fields and/or custom properties of the component allow entry of an SSIS variable:
 

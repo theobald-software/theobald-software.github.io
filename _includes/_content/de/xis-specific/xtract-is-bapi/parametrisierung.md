@@ -1,6 +1,14 @@
 
 {% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
 
+### Custom Properties
+
+Liste der *Custom Properties* der BAPI-Komponente:
+- Internal XML
+- RFCFunctionName
+- StringConversion
+- UserComponentTypeName
+
 ### Parametrierung mit SSIS Variablen
 Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
 

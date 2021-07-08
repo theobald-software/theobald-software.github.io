@@ -1,6 +1,18 @@
 
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
+### Custom Properties
+
+List of *Custom Properties* of the BW Cube component:
+- CubeName
+- DelimiterForMultipleSSISVariableValues
+- IgnoreMDXErrors
+- InternalXML
+- MDXVariable
+- ReservedXML
+- StringConversion
+- UserComponentTypeName
+
 ### Parameterization using SSIS Variables
 The following fields and/or custom properties of the component allow entry of an SSIS variable:
 

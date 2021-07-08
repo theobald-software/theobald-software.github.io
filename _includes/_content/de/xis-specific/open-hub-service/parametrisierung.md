@@ -1,6 +1,16 @@
 
 {% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
 
+### Custom Properties
+
+Liste der *Custom Properties* der ODP-Komponente:
+- ConvertsDates
+- ConvertsTimes
+- InvalidDateReplacement
+- MaxDateReplacement
+- MinDateReplacement
+- UserComponentTypeName
+
 ### Parameterisierung mit Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
 

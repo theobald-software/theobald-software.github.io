@@ -1,6 +1,16 @@
 
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
+### Custom Properties
+
+List of *Custom Properties* of the OHS component:
+- ConvertsDates
+- ConvertsTimes
+- InvalidDateReplacement
+- MaxDateReplacement
+- MinDateReplacement
+- UserComponentTypeName
+
 ### Parameterization using Properties
 The following custom properties can be parameterized:
 
