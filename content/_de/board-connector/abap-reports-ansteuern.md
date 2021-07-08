@@ -18,7 +18,7 @@ Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der fol
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte](./erste-schritte) beschrieben.
 
-{% include _content/de/abap_reports/report-workflow.md %}
+{% include _content/de/abap_reports/report-about.md %}
 
 *****
 

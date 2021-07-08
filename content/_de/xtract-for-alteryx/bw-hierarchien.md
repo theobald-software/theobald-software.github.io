@@ -12,7 +12,7 @@ lang: de_DE
 progressstate: 5
 ---
 ### Über BW Hierarchy
-Die Komponente BW Hierarchy enables the extraction of hierarchies from an SAP BW system.
+Die Komponente BW Hierarchy ermöglicht die Extraktion von Hierarchien von einem SAP BW System.
 
 
 ### BW Hierarchy verwenden

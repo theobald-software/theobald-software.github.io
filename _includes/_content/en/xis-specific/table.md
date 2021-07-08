@@ -2,11 +2,11 @@
 The following section gives an overview over the Xtract IS Table component. 
 ![XIS_Table_overview](/img/content/xis/xis_table_overview.png){:class="img-responsive"}
 
-### Extraction types of Xtract IS Table component
+#### Extraction types of Xtract IS Table component
 - **Table**: Enables mass data extraction directly from SAP tables and views.
 - **Table Join**: Allows joining two or more SAP tables on the SAP side before extracting. 
 
-### Objects supported by Xtract IS Table component
+#### Objects supported by Xtract IS Table component
 
 - Transparent tables
 - Views

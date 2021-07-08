@@ -11,6 +11,7 @@ lang: de_DE
 ---
 Der folgende Abschnitt beschreibt die Anwendung der Report Komponente.
 
+{% include _content/de/abap_reports/report-workflow.md %}
 
 ### Einen Report oder eine Transaktion finden
 1. Klicken Sie auf den **[Suchen]** Button (Vergrößerungsglas) im Hauptfenster der Report-Komponente. Das Fenster “Report Lookup” öffnet sich.

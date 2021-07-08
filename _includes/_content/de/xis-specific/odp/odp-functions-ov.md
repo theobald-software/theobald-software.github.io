@@ -17,6 +17,3 @@ Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 - **[Edit runtime parameters](./odp-settings#parameter-bearbeiten)** - Schaltfläche zum Definieren der Laufzeitparameter, die als Platzhalter zum Auswählen der Daten verwendet werden können.
 - **[Advanced Settings](./odp-settings#fortgeschrittene-einstellungen)** - Enthält Einstellungen für die **package size** der Extrraktion..
 - **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
-
-{% include _content/de/odp/odp-settings-update_mode.md %} 
-{% include _content/de/odp/odp-settings-filtering.md %}
