@@ -11,6 +11,9 @@ weight: 8
 lang: de_DE
 ---
 
+
+{% include _content/de/odp/odp-introduction.md %} 
+
 ### Xtract ODP Verwenden
 Grundkenntnisse von Xtract for Alteryx sind erforderlich, um die folgenden Abschnitte zu verstehen. Mehr Details dazu finden Sie im Abschnitt [Erste Schritte mit Table - Use-Case](./erste-schritte).
 1. Ziehen Sie die Komponente Xtract ODP per Drag & Drop in Ihren Alteryx-Workflow.
@@ -18,5 +21,25 @@ Grundkenntnisse von Xtract for Alteryx sind erforderlich, um die folgenden Absch
 Auf die meisten Funktionen der Komponente können Sie über das Hauptfenster zugreifen.
 Alle Einstellungen, auf die über das Hauptfenster zugegriffen werden kann, sind im Abschnitt [Xtract ODP Funktionsübersicht](./odp/odp-functions-ov).
 
-{% include _content/de/odp/odp-introduction.md %} 
+
+###  Funktionsübersicht
+
+Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
+![ODP Component](/img/content/xfa/xfa_odp_overview.png){:class="img-responsive"}
+
+- [Operational Data Provider](./odp-define#ein-objekt-data-object-suchen) (1) - Suche und Anzeige des Namens des Quellobjekts.
+- Additional info (2) - Zeigt den ODP-Provider-Kontext und den Datentyp des Quellobjekts an.
+- [Update mode](./odp-define#load-verfahren-update-mode) (3) - Definiert das Load-Verfahren - Full-Load oder Deltaverarbeitung.
+- [Fields](./odp-define#selektion-und-filter) (4) - Ermöglicht die Auswahl und Einstellung der Filteroptionen für [Extraktoren](./odp-extractors).
+- Preview (5) - Klicken Sie auf **[Load Live Preview]**, um eine Echtzeit-Vorschau der Extraktionsdaten anzuzeigen.
+
+#### Schaltflächen
+- **[[Show active subscriptions ](./odp-settings#abonnements)]** - Schaltfläche zum Anzeigen der Details zum Abonnentenprozess.
+- **[[Edit parameters](./odp-settings#parameter-bearbeiten)]** - Schaltfläche zum Definieren der Laufzeitparameter, die als Platzhalter zum Auswählen der Daten verwendet werden können.
+- **[[Advanced Settings](./odp-settings#fortgeschrittene-einstellungen)]** - Enthält Einstellungen für die **package size** der Extraktion.
+- **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
+
+****
+#### Weiterführende Links
+- [SAP community Wiki](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646)
 

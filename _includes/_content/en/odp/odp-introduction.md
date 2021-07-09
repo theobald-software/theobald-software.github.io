@@ -36,12 +36,3 @@ There are a few prerequisites that need to be fulfilled on the SAP side, when us
 - [2232584 - Release of SAP extractors for ODP replication (ODP SAPI)](https://launchpad.support.sap.com/#/notes/2232584)
 - [1560241 - Release of DataSources for ODP data replication API](https://launchpad.support.sap.com/#/notes/1560241)
 
-
-****
-#### Related Links
-- [SAP community Wiki](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646)
-
-
-
-
-

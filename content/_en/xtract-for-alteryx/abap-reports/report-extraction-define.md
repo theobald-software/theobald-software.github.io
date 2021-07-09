@@ -14,6 +14,7 @@ lang: en_GB
 
 The following section shows how to use the Report Component. <br>
 
+{% include _content/en/abap-reports/report-workflow.md %}
 
 ### Look Up a Report or Transaction
 1. In the main window of the component click the **[Search]** button (magnifying glass symbol). The window “Report Lookup” opens.

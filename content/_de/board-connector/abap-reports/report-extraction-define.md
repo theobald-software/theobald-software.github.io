@@ -10,5 +10,5 @@ weight: 1
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=eine-report-extraktion-definieren
 ---
-
+{% include _content/de/abap_reports/report-workflow.md %}
 {% include _content/de/abap_reports/eine-report-extraktion-definieren.md %}

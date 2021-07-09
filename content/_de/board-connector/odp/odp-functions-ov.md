@@ -30,5 +30,3 @@ Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 - **[Advanced Settings](./odp-settings#fortgeschrittene-einstellungen)** - Enthält Einstellungen für die **package size** der Extrraktion..
 - **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
 
-{% include _content/de/odp/odp-settings-update_mode.md %} 
-{% include _content/de/odp/odp-settings-filtering.md %}

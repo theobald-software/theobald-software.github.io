@@ -16,4 +16,8 @@ Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal BAPI Kompo
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.
 
+### BAPI verwenden
+{% include _content/de/xu-specific/define-extraction.md %}
+
+*****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

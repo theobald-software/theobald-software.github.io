@@ -15,7 +15,7 @@ The window "Operational Data Provider Lookup" opens.
 	DataSources/Extractors [[SAPI](./odp-extractors)] | - DataSources and Extractors |
 4. Click **Search** (magnifying glass symbol) (4) and select the extractor of your choice from the displayed list (5).
 5. Click **[OK]** (6) to confirm your input.
-6. Optional: Create selections by activating or deactivating fields (7). To add [filters](./odp-functions-ov#selections-and-filters) click the **[Edit]** option next to the fields. 
+6. Optional: Create selections by activating or deactivating fields (7). To add [filters](#selections-and-filters) click the **[Edit]** option next to the fields. 
 If your data source is Hierarchy, see [Select Hierarchy](./odp-extractors#hierarchies) for filter options.
 7. Click **[Load live preview]** (8) to display a live preview of the data without executing an extraction.
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}

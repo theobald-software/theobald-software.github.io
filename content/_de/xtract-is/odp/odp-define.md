@@ -12,3 +12,7 @@ progressstate: 5
 ---
 
 {% include _content/de/odp/odp-define.md %}
+
+{% include _content/de/odp/odp-settings-update_mode.md %} 
+{% include _content/de/odp/odp-settings-filtering.md %}
+

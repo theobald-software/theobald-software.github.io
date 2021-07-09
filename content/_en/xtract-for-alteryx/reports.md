@@ -11,7 +11,7 @@ weight: 10
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
-{% include _content/en/abap-reports/report-workflow.md %}
+{% include _content/en/abap-reports/report-about.md %}
 
 *****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
