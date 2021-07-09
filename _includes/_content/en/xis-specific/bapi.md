@@ -5,7 +5,7 @@ The Xtract IS BAPI data source was developed to access BAPIs and RFC function mo
 **Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started](./getting-started). <br>
 
 
-### How to Use the BAPI Component 
+### How to Use BAPI 
 1.	A valid connection manager connected to a SAP system must be defined, see section [Connection Manager](./sap-connection/the-connection-manager).
 2.	Drag&Drop the BAPI component into your Data Flow. <br>
 ![BAPI](/img/content/BAPI.png){:class="img-responsive" }
