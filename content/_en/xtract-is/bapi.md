@@ -12,4 +12,5 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=bapi
 
 ---
+
 {% include _content/en/xis-specific/bapi.md %}
