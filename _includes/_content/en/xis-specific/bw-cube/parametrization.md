@@ -11,7 +11,7 @@ List of *Custom Properties* of the BW Cube component:
 |Property |Comment|
 |:----|:----|
 | *CubeName* | Corresponds to the field *Cube Name* in the BW Cube component, see [Defining a BW Cube Extraction](./bw-cube-extraction-define#defining-a-bw-cube-extraction).|
-| *DelimiterForMultipleSSISVariableValues* | Delimiter for multiple input variables, see *Variables* in [Parameterization using SSIS Variables](##parameterization-using-ssis-variables).|
+| *DelimiterForMultipleSSISVariableValues* | Delimiter for multiple input variables, see *Variables* in [Parameterization using SSIS Variables](#parameterization-using-ssis-variables).|
 | *IgnoreMDXErrors* | |
 | *InternalXML* | |
 | *MDXVariable* | Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement., see *MDXVariable* in [Parameterization using SSIS Variables](#parameterization-using-ssis-variables). |

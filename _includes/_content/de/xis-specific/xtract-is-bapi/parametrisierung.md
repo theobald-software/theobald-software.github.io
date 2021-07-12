@@ -6,6 +6,7 @@ Die Eigenschaften der Xtract BAPI Komponente wird in den *Custom Properties* der
 Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
 Liste der *Custom Properties* der BAPI Komponente:
+
 |Property|Beschreibung|
 |:----|:----|
 | *Internal XML*| |

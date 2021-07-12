@@ -7,6 +7,7 @@ The *Custom Properties* define the properties unique to the Xtract OHS component
 When parameterizing the OHS component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
 List of *Custom Properties* of the OHS component:
+
 |Property|Comment|
 |:----|:----|
 | *ConvertsDates* | Enable or disable conversion of SAP dates.|

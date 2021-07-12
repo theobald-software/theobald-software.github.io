@@ -6,6 +6,7 @@ Die Eigenschaften der Xtract Query Komponente wird in den *Custom Properties* de
 Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
 Liste der *Custom Properties* der Query Komponente:
+
 |Property|Beschreibung|
 |:----|:----|
 | *InternalXML* | |

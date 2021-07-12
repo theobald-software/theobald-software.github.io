@@ -5,6 +5,7 @@ The *Custom Properties* define the properties unique to the Xtract DeltaQ compon
 When parameterizing the DeltaQ component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
 List of *Custom Properties* of the DeltaQ component:
+
 |Property|Comment|
 |:----|:----|
 | *GatewayHost* | Corresponds to the field *Gateway Host* in the DeltaQ component, see [Customizing Check](./customizing-check).|

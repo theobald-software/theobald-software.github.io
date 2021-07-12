@@ -7,6 +7,7 @@ Die Eigenschaften der Xtract OHS Komponente wird in den *Custom Properties* der 
 Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
 
 Liste der *Custom Properties* der OHS Komponente:
+
 |Property|Beschreibung|
 |:----|:----|
 | *ConvertsDates* | Aktiviert oder deaktiviert die Umwandlung von SAP Daten.|

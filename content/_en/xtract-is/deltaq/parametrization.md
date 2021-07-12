@@ -1,5 +1,5 @@
 ---
-ref: xi-q-delta-11
+ref: xi-q-delta-12
 layout: page
 title: Parameterization
 description: Parametrization
@@ -8,6 +8,6 @@ parent: deltaq
 permalink: /:collection/:path
 weight: 12
 lang: en_GB
-progressstate: 3
+progressstate: 5
 ---
 {% include _content/en/xis-specific/deltaq/parametrization.md  %}

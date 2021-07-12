@@ -6,6 +6,7 @@ The *Custom Properties* define the properties unique to the Xtract BAPI componen
 When parameterizing the BAPI component using SSIS variables, the *Custom Porperties* are overwritten.
 
 List of *Custom Properties* of the BAPI component:
+
 |Property|Comment|
 |:----|:----|
 | *Internal XML*| |

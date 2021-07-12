@@ -10,18 +10,18 @@ List of *Custom Properties* of the Report component:
 
 |Property|Comment|
 |:----|:----|
-| *BatchJobDestination* | See [Settings - Spool Destination / BatchJobDestination](./settings). |
-| *BatchJobName* | See [Settings -BatchJobName](./settings). |
-| *BatchJobTimeout* | See [Settings - BatchJobTimeout](./settings).|
+| *BatchJobDestination* | Corresponds to the field *Spool Destination* in the Report component, see [Settings - Spool Destination / BatchJobDestination](./settings). |
+| *BatchJobName* | Corresponds to the field *Batch Job Name* in the Report component, see [Settings -BatchJobName](./settings). |
+| *BatchJobTimeout* | Corresponds to the field *Batch Timeout* in the Report component, see [Settings - BatchJobTimeout](./settings).|
 | *InternalXML* | |
 | *ReportName* | Name of the report that is to be extracted.|
-| *ReportRowsPerDataRow* | See [Defining Report Columns](./report-columns-define). |
-| *ReportWidth* | See [Defining Report Columns](./report-columns-define). |
+| *ReportRowsPerDataRow* | Corresponds to the field *Report Rows Per Data Row* in the Report component, see [Defining Report Columns](./report-columns-define). |
+| *ReportWidth* | Corresponds to the field *Report Width* in the Report component, see [Defining Report Columns](./report-columns-define). |
 | *Reserved* | |
-| *SkipBottomRows* | See [Defining Report Columns](./report-columns-define). |
-| *SkipTopRows* | See [Defining Report Columns](./report-columns-define). |
+| *SkipBottomRows* | Corresponds to the field *Skip Rows Bottom* in the Report component, see [Defining Report Columns](./report-columns-define). |
+| *SkipTopRows* | Corresponds to the field *Skip Rows Top* in the Report component, see [Defining Report Columns](./report-columns-define). |
 | *StringConversion* | See [Settings - String Conversion](./report-settings). |
-| *UseBatch* | Siehe [Settings - Use Batch](./settings). |
+| *UseBatch* | Corresponds to the field *Use Batch* in the Report component, see [Settings - Use Batch](./settings). |
 | *UserComponentTypeName* | |
 | *Variant* | See [Variants and Selections](./variants-and-selections).|
 
@@ -32,9 +32,9 @@ The following fields and/or *Custom Properties* of the component allow entry of 
 |:----|:----|
 | *Variant*|See [Variants and Selections](./variants-and-selections).|
 | *Edit*|Enter an SSIS variable as selection criteria, see [Variants and Selections](./variants-and-selections).|
-| *Spool Destination / BatchJobDestination* | See [Settings - Spool Destination / BatchJobDestination](./settings).|
-| *BatchJobName*        |See [Settings -BatchJobName](./settings).|
-| *BatchJobTimeout*     |See [Settings - BatchJobTimeout](./settings).|
+| *Spool Destination / BatchJobDestination* | Corresponds to the field *Spool Destination* in the Report component, see [Settings - Spool Destination / BatchJobDestination](./settings).|
+| *BatchJobName*        |Corresponds to the field *Batch Job Name* in the Report component, see [Settings -BatchJobName](./settings).|
+| *BatchJobTimeout*     |Corresponds to the field *Batch Timeout* in the Report component, see [Settings - BatchJobTimeout](./settings).|
 | *ReportName*        |  Should not be used as the structure of the result as it varies depending on the reports.    |
 
 ****

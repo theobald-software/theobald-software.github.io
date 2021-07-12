@@ -6,6 +6,7 @@ The *Custom Properties* define the properties unique to the Xtract Query compone
 When parameterizing the Query component using SSIS variables, the *Custom Porperties* are overwritten.
 
 List of *Custom Properties* of the Query component:
+
 |Property|Comment|
 |:----|:----|
 | *InternalXML* | |

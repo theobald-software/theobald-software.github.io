@@ -8,6 +8,7 @@ Die Eigenschaften der Xtract DeltaQ Komponente wird in den *Custom Properties* d
 Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
 
 Liste der *Custom Properties* der DeltaQ Komponente:
+
 |Property|Beschreibung|
 |:----|:----|
 | *GatewayHost* | Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
