@@ -3,15 +3,20 @@
 
 ### Custom Properties
 
-Liste der *Custom Properties* der ODP-Komponente:
-- ConvertsDates
-- ConvertsTimes
-- InvalidDateReplacement
-- MaxDateReplacement
-- MinDateReplacement
-- UserComponentTypeName
+Die Eigenschaften der Xtract OHS Komponente wird in den *Custom Properties* der Komponente definiert. <br>
+Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
 
-### Parameterisierung mit Properties
+Liste der *Custom Properties* der OHS Komponente:
+|Property|Beschreibung|
+|:----|:----|
+| *ConvertsDates* | Aktiviert oder deaktiviert die Umwandlung von SAP Daten.|
+| *ConvertsTimes* | Aktiviert oder deaktiviert die Umwandlung von SAP Zeiten.|
+| *InvalidDateReplacement* | Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen.|
+| *MaxDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX.|
+| *MinDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000.|
+| *UserComponentTypeName* | |
+
+### Parameterisierung mit Data Flow Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
 
 |Property|Beschreibung|

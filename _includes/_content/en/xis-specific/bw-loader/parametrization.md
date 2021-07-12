@@ -25,7 +25,7 @@ List of *Custom Properties* of the BW Loader component:
 | *WaitUntilFinished* | Corresponds to the field *Wait data transfer to be finished* in the BW Loader component, see [Settings](./settings#general). |
 
 ### Parameterization using SSIS Variables
-The following fields and/or custom properties of the component allow entry of an SSIS variable:
+The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|

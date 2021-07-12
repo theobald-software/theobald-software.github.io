@@ -11,7 +11,7 @@ List of *Custom Properties* of the BW Hierarchy component:
 |:----|:----|
 | *DateTo* | The default value of Date To is 99991231.|
 | *FetchText* | Corresponds to the field *Fetch description texts* in [Settings - Extraction Settings](./settings#extraction-settings).|
-| *HierarchyID* |  |
+| *HierarchyID* | ID of the Hierarchy to be extracted. |
 | *HierarchyName* | Name of the Hierarchy to be extracted. |
 | *HierarchyVersion* | Version of the Hierarchy to be extracted. |
 | *InfoObject* | Corresponds to the field *InfoObject* in [Defining a BW Hierarchy](./hierarchy-lookup#defining-a-bw-hierarchy-extraction). |
@@ -20,7 +20,7 @@ List of *Custom Properties* of the BW Hierarchy component:
 | *UseComponentTypeName* | |
 
 ### Parameterization using SSIS Variables
-The following fields and/or custom properties of the component allow entry of an SSIS variable:
+The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|

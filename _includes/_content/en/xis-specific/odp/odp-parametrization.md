@@ -3,7 +3,7 @@
 
 ### Custom Properties
 The *Custom Properties* define the properties unique to the Xtract ODP component. <br>
-When parameterizing the ODP component using SSIS variables, the *Custom Porperties* are overwritten.
+When parameterizing the ODP component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
 List of *Custom Properties* of the ODP component:
 |Property|Comment|
@@ -32,7 +32,7 @@ The following *Custom Properties* can be parameterized:
 | *[Xtract.ODP].[ &lt;Selection Parameter &gt;]*| Selection parameters that are defined in the component are exposed as properties, see [Edit Parameters](./odp-functions-ov#edit-parameters). |
 
 ### Parameterization using SSIS Variables
-The following fields and/or custom properties of the component allow entry of an SSIS variable:
+The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|

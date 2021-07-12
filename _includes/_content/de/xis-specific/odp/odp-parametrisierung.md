@@ -4,7 +4,7 @@
 ### Custom Properties
 
 Die Eigenschaften der Xtract ODP Komponente wird in den *Custom Properties* der Komponente definiert. <br>
-Bei der Parametrisierung der Komponente durch SSIS Variablen oder Dataflow Properties werden diese Eigenschaften überschrieben.
+Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
 
 Liste der *Custom Properties* der ODP Komponente:
 
@@ -13,7 +13,7 @@ Liste der *Custom Properties* der ODP Komponente:
 | *ConvertsDates* | Aktiviert oder deaktiviert die Umwandlung von SAP Daten.|
 | *ExtractDataOnDeltaInit* | Führt eine Delta-Initialisierung mit oder ohne Datenextraktion aus, siehe [Update Mode](./odp-functions-ov#load-verfahren-update-mode).|
 | *HierarchyName* | Nur für Datenquellen vom Typ Hierarchy, siehe [Select Hierarchy](./odp-functions-ov#select-hierarchy).|
-| *InvalidDateReplacement* | In case of invalid date values you need to enter a default date value. Every invalid value will be converted into this value.|
+| *InvalidDateReplacement* | Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen.|
 | *MaxDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX.|
 | *MinDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000.|
 | *PackageSize* | Wählt die Paketgröße in Bytes, siehe [Advanced Settings](./odp-functions-ov#advanced-settings).|

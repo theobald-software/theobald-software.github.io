@@ -20,7 +20,7 @@ List of *Custom Properties* of the BW Cube component:
 | *UserComponentTypeName* | |
 
 ### Parameterization using SSIS Variables
-The following fields and/or custom properties of the component allow entry of an SSIS variable:
+The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|
