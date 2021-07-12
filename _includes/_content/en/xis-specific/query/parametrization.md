@@ -7,6 +7,7 @@ When parameterizing the Query component using SSIS variables, the *Custom Porper
 
 List of *Custom Properties* of the Query component:
 |Property|Comment|
+|:----|:----|
 | *InternalXML* | |
 | *MaxRows* | Corresponds to the field *MaxRows* in [Settings](./settings) of the Query component.|
 | *QueryDescription* | Description of the Query to be extracted.|

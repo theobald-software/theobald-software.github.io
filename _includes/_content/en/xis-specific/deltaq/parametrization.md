@@ -1,25 +1,29 @@
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
 ### Custom Properties
+The *Custom Properties* define the properties unique to the Xtract DeltaQ component. <br>
+When parameterizing the DeltaQ component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
 List of *Custom Properties* of the DeltaQ component:
-- GatewayHost
-- GatewayService
-- HierClass
-- HierName
-- Language
-- NewTimeStampFormatInRequestLog
-- OLTPSourceName
-- OLTPSourceType
-- ProgramID
-- RequestID
-- StringConversion
-- TargetSystem
-- Timeout
-- TransferMethod
-- TransferStructure
-- UpdateType
-- UserComponentTypeName
+|Property|Comment|
+|:----|:----|
+| *GatewayHost* | Corresponds to the field *Gateway Host* in the DeltaQ component, see [Customizing Check](./customizing-check).|
+| *GatewayService* | Corresponds to the field *Gateway Service* in the DeltaQ component, see [Customizing Check](./customizing-check).|
+| *HierClass* | |
+| *HierName* | Name of the Hierarchy to be extracted, see [Hierarchies](./hierarchies). |
+| *Language* | |
+| *NewTimeStampFormatInRequestLog* | If this value is set to *true* (X) the format of the timestamp in the request log is changed.|
+| *OLTPSourceName* | Name of the OLTP source to be extracted.|
+| *OLTPSourceType* | Type of the OLTP source to be extracted.|
+| *ProgramID* | Corresponds to the field *Program ID* in the DeltaQ component, see [Customizing Check](./customizing-check).|
+| *RequestID* | Corresponds to the field *RequestID* in the DeltaQ component's [Settings](./settings).|
+| *StringConversion* | See [Settings - String Conversion](./settings#string-conversion).|
+| *TargetSystem* | Corresponds to the field *Log. Destination* in the DeltaQ component, see [Customizing Check](./customizing-check).|
+| *Timeout* | |
+| *TransferMethod* | Choose transfer via tRTF (T) or IDoc (I).|
+| *TransferStructure* | The transfer structure of the source.|
+| *UpdateType* | Corresponds to the drop-down menu *Update Mode* in the DeltaQ component. Permitted values are: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
+| *UserComponentTypeName* | |
 
 ### Parameterization using SSIS Properties
 The following custom properties can be parameterized:

@@ -2,12 +2,16 @@
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
 ### Custom Properties
+The *Custom Properties* define the properties unique to the Xtract BAPI component. <br>
+When parameterizing the BAPI component using SSIS variables, the *Custom Porperties* are overwritten.
 
 List of *Custom Properties* of the BAPI component:
-- Internal XML
-- RFCFunctionName
-- StringConversion
-- UserComponentTypeName
+|Property|Comment|
+|:----|:----|
+| *Internal XML*| |
+| *RFCFunctionName* | Name of the BAPI or RFC function module to be extracted.|
+| *StringConversion*| |
+| *UserComponentTypeName*| |
 
 ### Parameterization using SSIS Variables
 The following fields and/or custom properties of the component allow entry of an SSIS variable:

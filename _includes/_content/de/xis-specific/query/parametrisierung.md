@@ -3,10 +3,11 @@
 
 ### Custom Properties
 Die Eigenschaften der Xtract Query Komponente wird in den *Custom Properties* der Komponente definiert. <br>
-Bei der Parametrisierung der Komponente durch SSIS Variablen oder Dataflow Properties werden diese Eigenschaften überschrieben.
+Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
 Liste der *Custom Properties* der Query Komponente:
 |Property|Beschreibung|
+|:----|:----|
 | *InternalXML* | |
 | *MaxRows* | Entspricht dem Feld *MaxRows* in den [Settings](./query-settings) der Query Komponente.|
 | *QueryDescription* | Beschreibung der zu extrahierenden Query.|
