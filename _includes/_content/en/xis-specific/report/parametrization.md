@@ -8,7 +8,7 @@ When parameterizing the Report component using SSIS variables, the *Custom Porpe
 
 List of *Custom Properties* of the Report component:
 
-|Field Name|Comment|
+|Property|Comment|
 |:----|:----|
 | *BatchJobDestination* | See [Settings - Spool Destination / BatchJobDestination](./settings). |
 | *BatchJobName* | See [Settings -BatchJobName](./settings). |

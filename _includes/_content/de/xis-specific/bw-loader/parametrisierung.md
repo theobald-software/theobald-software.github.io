@@ -8,7 +8,7 @@ Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigens
 
 Liste der *Custom Properties* der BW Loader Komponente:
 
-|Feldname|Beschreibung|
+|Property|Beschreibung|
 |:----|:----|
 | *DataSourceType* | Entspricht dem Feld *Data Source* in der BW Loader Komponente, siehe [Datenquelle und Ziel verbinden](./datenquelle-und-ziel-verbinden). |
 | *GatewayHost* | Entspricht dem Feld *Gateway host* in der BW Loader Komponente, siehe [Datenquelle und Ziel verbinden](./datenquelle-und-ziel-verbinden).|

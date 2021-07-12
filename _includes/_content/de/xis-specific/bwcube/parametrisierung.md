@@ -8,7 +8,7 @@ Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigens
 
 Liste der *Custom Properties* der BW Cube Komponente:
 
-|Feldname|Beschreibung|
+|Property |Beschreibung|
 |:----|:----|
 | *CubeName* | Entspricht dem Suchfeld *Cube Name* in der BW Cube Komponente, siehe [Eine BW Cube oder Query Extraktion finden](./cubes-suchen#eine-bw-cube-oder-query-extraktion-finden).|
 | *DelimiterForMultipleSSISVariableValues* | Trennzeichen für aufeinanderfolgende Variablen, siehe *Variables* in [Parametrierung mit SSIS Variablen](#parametrierung-mit-ssis-variablen).|

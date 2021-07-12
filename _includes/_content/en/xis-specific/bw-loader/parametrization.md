@@ -8,7 +8,7 @@ When parameterizing the BW Loader component using SSIS variables, the *Custom Po
 
 List of *Custom Properties* of the BW Loader component:
 
-|Field Name|Comment|
+|Property |Comment|
 |:----|:----|
 | *DataSourceType* | Corresponds to the field *Data Source* in the BW Loader component, see [Connect Source and Destination Columns](./connect-source-and-destination-column). |
 | *GatewayHost* | Corresponds to the field *Gateway host* in the BW Loader component, see [Connect Source and Destination Columns](./connect-source-and-destination-column).|

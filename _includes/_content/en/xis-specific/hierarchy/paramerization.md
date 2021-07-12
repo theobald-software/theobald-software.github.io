@@ -2,17 +2,22 @@
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
 ### Custom Properties
+The *Custom Properties* define the properties unique to the Xtract BW Hierarchy component. <br>
+When parameterizing the BW Hierarchy component using SSIS variables, the *Custom Porperties* are overwritten.
 
 List of *Custom Properties* of the BW Hierarchy component:
-- DateTo
-- FetchText
-- HierarchyID
-- HierarchyName
-- HierarchyVersion
-- InfoObject
-- InternalXML
-- StringConversion
-- UseComponentTypeName
+
+|Property|Comment|
+|:----|:----|
+| *DateTo* | The default value of Date To is 99991231.|
+| *FetchText* | Corresponds to the field *Fetch description texts* in [Settings - Extraction Settings](./settings#extraction-settings).|
+| *HierarchyID* |  |
+| *HierarchyName* | Name of the Hierarchy to be extracted. |
+| *HierarchyVersion* | Version of the Hierarchy to be extracted. |
+| *InfoObject* | Corresponds to the field *InfoObject* in [Defining a BW Hierarchy](./hierarchy-lookup#defining-a-bw-hierarchy-extraction). |
+| *InternalXML* | |
+| *StringConversion* | See [Settings - String Conversion](./settings#string-conversion). |
+| *UseComponentTypeName* | |
 
 ### Parameterization using SSIS Variables
 The following fields and/or custom properties of the component allow entry of an SSIS variable:

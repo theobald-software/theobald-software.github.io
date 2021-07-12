@@ -8,7 +8,7 @@ Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigens
 
 Liste der *Custom Properties* der Report-Komponente:
 
-|Feldname|Beschreibung|
+|Property|Beschreibung|
 |:----|:----|
 | *BatchJobDestination* | Siehe [Settings - Spool Destination / BatchJobDestination](./report-settings). |
 | *BatchJobName* | Siehe [Settings - BatchJobName](./report-settings). |
