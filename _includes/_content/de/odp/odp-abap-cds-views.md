@@ -33,7 +33,7 @@ Um die abgekündigte und veraltete Extraktoren zu verwenden, kann SAP CDS-Views 
 **Hinweis:** Um eine ABAP CDS-View finden zu können, muss sie folgende Annotation haben: ```@Analytics.dataExtraction.Enabled: true```. Falls das Quellsystem keine HANA DB ist, muss eine zusätzliche Annotation vorhanden sein: ```@Analytics.dataCategory: #CUBE/#FACT/#DIMENSION```.
 
 Worauf Sie bei der Verwendung von ABAP CDS Views achten müssen: 
-1. Wenn Sie nach ABAP CDS Views [suchen](./odp-functions-ov#operational-data-provider), achten Sie darauf den richtigen Kontext auszuwählen. 
+1. Wenn Sie nach ABAP CDS Views [suchen](./odp-define#ein-objekt-data-object-suchen), achten Sie darauf den richtigen Kontext auszuwählen. 
 ![ODP ABAP CDS View](/img/content/odp/odp-component-cds-costcenter-01.png){:class="img-responsive"}
 2. Wenn das Delta-Load für das Quellobjekt im SAP-Quellsystem verfügbar ist, ist die Option **Delta Update** in der ODP-Komponente verfügbar. 
 3. Klicken Sie auf **[Load live preview]**, um eine Echtzeitvorschau anzuzeigen, ohne dabei eine Extraktion auszuführen.
