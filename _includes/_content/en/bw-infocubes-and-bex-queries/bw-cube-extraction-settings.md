@@ -32,5 +32,5 @@ Automatic slicing means that a loop is executed for each single value of the cho
 
 ### Legacy settings
 
-**Description for Columns** <br>
+**Description for Columns (deprecated)** <br>
 If this option is active, the key figure's description will be used for the column name, instead of the technical name. 

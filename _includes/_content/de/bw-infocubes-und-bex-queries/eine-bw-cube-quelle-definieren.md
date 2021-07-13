@@ -5,13 +5,13 @@ Ein üblicher Ansatz für die Extraktion besteht darin, eine Abfrage zu erstelle
 
 ![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
 
-### Nach BW Cube oder Query suchen
+### Einen BW Cube oder ein Query suchen
 
-1. Im Hauptfenster der Komponente klicken Sie auf den **[Search]** Button (Lupensymbol). Das Fenster “Cube or Query Lookup” wird geöffnet.
+1. Im Hauptfenster der Komponente klicken Sie auf den **[Search]**-Button (Lupensymbol). Das Fenster “Cube or Query Lookup” öffnet sich.
 ![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
-2. Geben Sie im Feld **Name** (1) den Namen des Query oder des BW Cubes / InfoProviders ein. Die Verwendung von Wildcards (*) wird unterstützt. 
+2. Geben Sie im Feld **Name** (1) den Namen eines Query oder eines BW Cube / InfoProvider ein. Die Verwendung von Wildcards (*) wird unterstützt. 
 3. Definieren Sie den **Extractor** und **Type** des Objekts (2).
-4. Klicken Sie auf **[Search]** (Lupensymbol) (3) und wählen Sie das Objekt aus der Liste (4) aus.
+4. Klicken Sie auf **[Search]** (Lupensymbol) (3) und wählen Sie ein Objekt aus der Liste (4) aus.
 5. Klicken Sie auf **[OK]** (5) zum Bestätigen.
 
 {: .box-warning }
@@ -25,8 +25,8 @@ Wenn ein Objekt ausgewählt ist, wird im Hauptfenster der Komponente auf der lin
 Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (1). Die folgenden Verzeichnisse entsprechen den Dimensionen und enthalten oft zusätzliche Dimensionseigenschaften (2). <br>
 
 1. Wählen Sie die Kennzahlen, Dimensionen und Eigenschaften für eine Extraktion.
-2. Klicken Sie innerhalb des Kennzahlenverzeichnisses auf den Pfeil, um die verfügbaren Einheiten zu öffnen. Wählen Sie die Einheiten aus, falls erforderlich.
-3. Klicken Sie auf **[Load live preview]** um die Ausgabe mit Daten aus dem BW anzuzeigen. Wenn eine Einheit ausgewählt ist (z.B. Währung), wird das entsprechende Feld in der Echtzeitvorschau angezeigt.
+2. Klicken Sie innerhalb des Kennzahlenverzeichnisses auf den Pfeil, um die verfügbaren Einheiten zu anzuzeigen. Wählen Sie die Einheiten aus, falls erforderlich.
+3. Klicken Sie auf **[Load live preview]**, um die Ausgabe mit Daten aus dem BW anzuzeigen. Wenn eine Einheit ausgewählt ist (z.B. Währung), wird das entsprechende Feld in der Echtzeitvorschau angezeigt.
 
 {: .box-note }
 **Hinweis:** Für jede ausgewählte Dimension oder Eigenschaft wird im Ergebnis eine Kennzahl und eine Einheit angezeigt. 
@@ -34,14 +34,13 @@ Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (1). Die folgenden Ve
 ### Einstellen eines Dimensionsfilters 
 1. Klicken Sie mit der rechten Maustaste auf eine Dimension. Die Schaltfläche **[Edit Filter]** erscheint.
 ![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
-2. Klicken Sie **[Edit Filter]**. Das Fenster "Member Filter" wird geöffnet. Sie können die *Einzelnen Werte (Single Values)* (linke Seite des Fensters) setzen und / oder *Wertebereiche (Value Ranges)* (rechte Seite des Fensters) definieren.
+2. Klicken Sie **[Edit Filter]**. Das Fenster "Member Filter" öffnet sich. Sie können *Einzelne Werte (Single Values)* setzen und / oder *Wertebereiche (Value Ranges)* definieren.
 ![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
-3. Wählen Sie einen einzelnen Wert (3) oder klicken Sie auf **[Add]** (4) um Wertebereiche hinzuzufügen. 
-4. Definieren Sie die Werte für die Filterung. Dynamischer Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). Löschen Sie ggf. die Filter (Mülltonnensymbol).
-5. Klicken Sie auf **[OK]** zum Bestätigen. Das Fenster "Member Filter" wird geschlossen.
+3. Wählen Sie einen einzelnen Wert (3) oder klicken Sie auf **[Add]** (4), um Wertebereiche hinzuzufügen. 
+4. Definieren Sie die Werte für die Filterung. Dynamische Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). Wenn nötig, löschen Sie Filter über den **[Remove]**-Button (Mülltonnensymbol).
+5. Klicken Sie auf **[OK]** zum Bestätigen. Das Fenster "Member Filter" schließt sich.
 
 Wenn ein Filter definiert ist, erscheint ein Filtersymbol in der Metadatenstruktur.
-
 
 {: .box-note }
 **Hinweis:** BW-Queries haben oft definierte Variablen zum Erstellen von Filteroptionen. Um Variablen zu definieren, siehe [Query Variablen](./variablen).

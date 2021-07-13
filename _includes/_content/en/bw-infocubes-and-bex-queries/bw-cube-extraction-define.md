@@ -27,7 +27,7 @@ The first directory contains all the measures (key figures) (1).
 The following directories correspond to dimensions and often contain additional dimension properties (2). <br>
 
 1. Select key figures, dimensions, and properties for the extraction.
-2. Within the key figures directory, click the arrow to open the available units. Select a unit, if needed.
+2. Within the key figures directory, click the arrow to display the available units. Select a unit, if needed.
 3. Click **[Load live preview]** to display the output with data from BW. If a unit is selected (e.g., currency) the corresponding field is displayed in the preview.
 
 {: .box-note }
@@ -36,10 +36,10 @@ The following directories correspond to dimensions and often contain additional 
 ### Setting a Dimension Filter 
 1. Right-click a dimension. The button **[Edit Filter]** pops-up.
 ![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
-2. Click **[Edit Filter]**. The window "Member Filter" opens. You can set the *Single Values* (left hand-side) and / or define the *Value Ranges* (right hand-side).
+2. Click **[Edit Filter]**. The window "Member Filter" opens. You can set *Single Values* and / or define *Value Ranges*.
 ![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
 3. Select a single value (3) or  click **[Add]** (4) to add value ranges.
-4. Define the values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). Delete the filters (dustbin symbol), if needed.
+4. Define values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). If needed, delete filters using the **[Remove]** button (dustbin symbol).
 5. Click **[OK]** to confirm. The "Member Filter" window closes.
 
 When filters are applied, a filter symbol appears in the metadata structure.

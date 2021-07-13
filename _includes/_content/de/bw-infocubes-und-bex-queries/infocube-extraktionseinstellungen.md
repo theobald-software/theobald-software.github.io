@@ -31,6 +31,6 @@ Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicin
 
 ### Legacy settings
 
-**Use Description for Column (obsolete)**<br>
-Wenn diese Option aktiv ist, wird der die Beschreibung und nicht der technische Namen eines Pipeline-Elements als Spaltenname verwendet.<br>
+**Use Description for Column (deprecated)**<br>
+Wenn diese Option aktiv ist, wird die Beschreibung und nicht der technische Name eines Pipeline-Elements als Spaltenname verwendet.<br>
 
