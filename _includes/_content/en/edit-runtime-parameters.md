@@ -1,9 +1,7 @@
 
 ### Create Runtime Parameters 
 
-Click **Edit Parameters** to create or edit dynamic runtime parameters.
-
-1. To display editing function for the parameters, depending on the product, click **Edit Parameters** either at the *top* or at the *bottom* of the main window. <br/>
+1. To display editing function for the parameters, depending on the product, click **[Edit runtime parameters]**. <br/>
 The window "Edit Runtime Parameters" opens.<br> 
 ![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
 2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
