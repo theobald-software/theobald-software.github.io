@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="homepage-heading">
-                    <h1 class="text-center">{{ include.title | markdownify}}</h1>
+                    <h1 class="text-center" style="margin-bottom:4rem;">{{ include.title | markdownify}}</h1>
                 </div>
             </div>
         </div>
@@ -42,88 +42,115 @@
 </header>
 
 <div class="row" role="main">
-    <div class="col-md-9 col-md-offset-2">
+    <div class="col-md-10 col-md-offset-1">
         <div class="row">
             <section class="productgrid">
-                <div class="col-md-1 col-sm-4 col-xs-6 col-md-offset-1 productgrid-item">
-                        <div class="productgrid-background">
-                            <a href="/{{ include.lang }}/erpconnect/" class="productgrid-link" data-toggle="modal">
-                                <img src="/img/products/TS_Icon_2C_ERPConnect.svg" class="img-fluid" alt="ERPConnect">
-                            </a>
-                            <p class="productgrid-title">ERPConnect</p>
-                        </div>
-                </div>
-
-                <div class="col-md-1 col-sm-4 col-xs-6 productgrid-item">
-                        <div class="productgrid-background">
-                            <a href="/{{ include.lang }}/xtract-is/" class="productgrid-link" data-toggle="modal">
-                                <img src="/img/products/TS_Icon_2C_XtractIS.svg" class="img-fluid" alt="XtractIS">
-                            </a>
-                            <p class="productgrid-title">Xtract IS</p>
-                        </div>
-                </div>
-
-                <div class="col-md-1 col-sm-4 col-xs-6 productgrid-item">
-                    <div class="productgrid-background">
-                        <a href="/{{ include.lang }}/xtract-is-for-azure/" class="productgrid-link" data-toggle="modal">
-                            <img src="/img/products/TS_Icon_2C_XtractAzure.svg" class="img-fluid" alt="XtractAzure">
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/erpconnect/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_ERPConnect.svg" class="img-fluid" alt="ERPConnect">
                         </a>
-                        <p class="productgrid-title">Xtract IS for Azure</p>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/erpconnect/">ERPConnect</a>
+                        <p>{{ site.language[include.lang].homepage-erpconnect }} <a href="/{{ include.lang }}/erpconnect/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
                     </div>
                 </div>
 
-                <div class="col-md-1 col-sm-4 col-xs-6 productgrid-item">
-                        <div class="productgrid-background">
-                            <a href="/{{ include.lang }}/xtract-rs/" class="productgrid-link" data-toggle="modal">
-                                <img src="/img/products/TS_Icon_2C_XtractRS.svg" class="img-fluid" alt="XtractRS">
-                            </a>
-                            <p class="productgrid-title">Xtract RS</p>
-                        </div>
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/xtract-is/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_XtractIS.svg" class="img-fluid" alt="XtractIS">
+                        </a>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/xtract-is/">Xtract IS</a>
+                        <p>{{ site.language[include.lang].homepage-xtract-is }} <a href="/{{ include.lang }}/xtract-is/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
+                    </div>
                 </div>
 
-                <div class="col-md-1 col-sm-4 col-xs-6 productgrid-item">
-                        <div class="productgrid-background">
-                            <a href="/{{ include.lang }}/erpconnect-services/" class="productgrid-link" data-toggle="modal">
-                                <img src="/img/products/TS_Icon_2C_ERPConnectServices.svg" class="img-fluid" alt="ERPConnectServices">
-                            </a>
-                            <p class="productgrid-title">ERPConnect Services</p>
-                        </div>
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/xtract-is-for-azure/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_XtractAzure.svg" class="img-fluid" alt="XtractAzure">
+                        </a>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/xtract-is-for-azure/">Xtract IS for Azure</a>
+                        <p>{{ site.language[include.lang].homepage-xtract-is-for-azure }} <a href="/{{ include.lang }}/xtract-is-for-azure/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
+                    </div>
                 </div>
 
-                <div class="col-md-1 col-sm-4 col-xs-6 productgrid-item">
-                        <div class="productgrid-background">
-                            <a href="/{{ include.lang }}/ecs-core/" class="productgrid-link" data-toggle="modal">
-                                <img src="/img/products/TS_Icon_2C_ECSCore.svg" class="img-fluid" alt="ECSCore">
-                            </a>
-                            <p class="productgrid-title">ECS Core</p>
-                        </div>
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/xtract-rs/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_XtractRS.svg" class="img-fluid" alt="XtractRS">
+                        </a>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/xtract-rs/">Xtract RS</a>
+                        <p>{{ site.language[include.lang].homepage-xtract-rs }} <a href="/{{ include.lang }}/xtract-rs/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
+                    </div>
                 </div>
 
-                <div class="col-md-1 col-sm-4 col-xs-6 productgrid-item">
-                        <div class="productgrid-background">
-                            <a href="/{{ include.lang }}/xtract-universal/" class="productgrid-link" data-toggle="modal">
-                                <img src="/img/products/TS_Icon_2C_XtractUniversal.svg" class="img-fluid" alt="XtractUniversal">
-                            </a>
-                            <p class="productgrid-title">Xtract Universal</p>
-                        </div>
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/erpconnect-services/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_ERPConnectServices.svg" class="img-fluid" alt="ERPConnectServices">
+                        </a>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/erpconnect-services/">ERPConnect Services</a>
+                        <p>{{ site.language[include.lang].homepage-erpconnect-services }} <a href="/{{ include.lang }}/erpconnect-services/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
+                    </div>
                 </div>
 
-                <div class="col-md-1 col-sm-4 col-xs-6 productgrid-item">
-                        <div class="productgrid-background">
-                            <a href="/{{ include.lang }}/board-connector/" class="productgrid-link" data-toggle="modal">
-                                <img src="/img/products/TS_Icon_2C_Board.svg" class="img-fluid" alt="Board Connector">
-                            </a>
-                            <p class="productgrid-title">Board Connector</p>
-                        </div>
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/ecs-core/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_ECSCore.svg" class="img-fluid" alt="ECSCore">
+                        </a>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/ecs-core/">ECS Core</a>
+                        <p>{{ site.language[include.lang].homepage-ecs-core }} <a href="/{{ include.lang }}/ecs-core/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
+                    </div>
                 </div>
 
-                <div class="col-md-1 col-sm-4 col-xs-6 productgrid-item">
-                        <div class="productgrid-background">
-                            <a href="/{{ include.lang }}/xtract-for-alteryx/" class="productgrid-link" data-toggle="modal">
-                                <img src="/img/products/TS_Icon_2C_XtractAlteryx.svg" class="img-fluid" alt="XtractAlteryx">
-                            </a>
-                            <p class="productgrid-title">Xtract for Alteryx</p>
-                        </div>
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/xtract-universal/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_XtractUniversal.svg" class="img-fluid" alt="XtractUniversal">
+                        </a>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/xtract-universal/">Xtract Universal</a>
+                        <p>{{ site.language[include.lang].homepage-xtract-universal }} <a href="/{{ include.lang }}/xtract-universal/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/board-connector/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_Board.svg" class="img-fluid" alt="Board Connector">
+                        </a>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/board-connector/">Board Connector</a>
+                        <p>{{ site.language[include.lang].homepage-board-connector }} <a href="/{{ include.lang }}/board-connector/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="row">
+                        <a href="/{{ include.lang }}/xtract-for-alteryx/" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" data-toggle="modal">
+                            <img src="/img/products/TS_Icon_2C_XtractAlteryx.svg" class="img-fluid" alt="XtractAlteryx">
+                        </a>
+                    </div>
+                    <div style="padding:1rem 0 2rem 0;">
+                        <a class="productgrid-title" style="color:#2c2728;" href="/{{ include.lang }}/xtract-for-alteryx/">Xtract for Alteryx</a>
+                        <p>{{ site.language[include.lang].homepage-xtract-for-alteryx }} <a href="/{{ include.lang }}/xtract-for-alteryx/">{{ site.language[include.lang].homepage-product-link-text }}</a></p>
+                    </div>
                 </div>
             </section>
         </div>

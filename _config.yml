@@ -27,7 +27,7 @@ social:
   - https://twitter.com/TheobaldSoftw
   - https://www.linkedin.com/company/theobald-software/
   - https://www.youtube.com/user/TheobaldSoftware
- 
+
 # TODO: please fill in
 # google_site_verification:
 
@@ -50,13 +50,23 @@ language:
   en:
     navbar-links:
       - title: "Go to Knowledge Base"
-        url: "https://kb.theobald-software.com"   
+        url: "https://kb.theobald-software.com"
       - title: "Go to My Theobald"
-        url: "https://my.theobald-software.com/"      
+        url: "https://my.theobald-software.com/"
     navbar-back-to: "Back to"
     homepage: "Homepage"
     homepage-title: "Browse through our documentation"
     homepage-search-title: "How can we help?"
+    homepage-product-link-text: "View documentation"
+    homepage-erpconnect: "Use this .Net programming library to develop your own SAP interfaces."
+    homepage-xtract-is: "Use this to extract mass data using a SAP plug-in for SQL Server Integration Services."
+    homepage-xtract-is-for-azure: "Plug’n’Play for SAP and Azure SQL Server Integration Services."
+    homepage-xtract-rs: "Integrate your SAP data with this plug-in for the SQL Server Reporting Services (SSRS)."
+    homepage-erpconnect-services: "Provides seamless SAP integration with SharePoint, SharePoint Online or Office 365."
+    homepage-ecs-core: "Create SAP applications for cloud environments. Easy and user-friendly."
+    homepage-xtract-universal: "The flexible SAP interface for databases, analytics, BI or cloud solutions."
+    homepage-board-connector: "Use this to access your SAP data directly from BOARD, without an additional data warehouse."
+    homepage-xtract-for-alteryx: "Integrate your SAP data into Alteryx very simple drag & drop within the Alteryx Designer."
     search-no-results: "We didn't find any results for the search: "
     search-title: "Search the Online Help"
     search-results: "Results"
@@ -78,6 +88,16 @@ language:
     homepage: "Startseite"
     homepage-title: "Bitte wählen Sie Ihr Produkt"
     homepage-search-title: "Wie können wir Ihnen weiterhelfen?"
+    homepage-product-link-text: "Dokumentation anzeigen"
+    homepage-erpconnect: "Mit unserer .NET Programmierbibliothek SAP-Schnittstellen selbst entwickeln."
+    homepage-xtract-is: "Extraktion von Massendaten durch ein SAP-Plugin für die SQL Server Integration Services."
+    homepage-xtract-is-for-azure: "Plug´n´Play für SAP und die Azure SQL Server Integration Services."
+    homepage-xtract-rs: "Integrieren Sie Ihre SAP-Daten mit diesem  Plug-In für die SQL Server Reporting Services (SSRS)."
+    homepage-erpconnect-services: "Nahtlose SAP-Integration mit SharePoint, SharePoint Online oder Office365."
+    homepage-ecs-core: "SAP-Anwendungen für Cloud-Umgebungen erstellen."
+    homepage-xtract-universal: "Die flexible SAP-Schnittstelle für Datenbanken, Analytics-, BI- oder Cloud-Lösungen."
+    homepage-board-connector: "Direkt aus BOARD heraus auf Ihre SAP-Daten zugreifen – ohne zusätzliches Data-Warehouse."
+    homepage-xtract-for-alteryx: "Integrieren Sie Ihre SAP-Daten in Alteryx einfach per Drag & Drop im Alteryx Designer."
     search-no-results: "Wir haben leider nichts gefunden: "
     search-title: "Online-Help Suche"
     search-results: "Sucherergebnisse"
