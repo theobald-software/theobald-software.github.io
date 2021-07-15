@@ -1,7 +1,7 @@
 ---
 ref: bc-bapis-and-function-modules-01
 layout: page
-title: Eine BAPI-Quelle definieren
+title: Eine BAPI Extraktion definieren
 description: Eine BAPI-Quelle definieren
 product: board-connector
 parent: bapis-und-funktionsbausteine

@@ -1,4 +1,6 @@
-### Eine BAPI Exktraktion definieren
+Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.
+
+### Eine BAPI Extraktion definieren
 1. Mindestens ein gültiger Verbindungsmanager, der mit einem SAP-System verbunden ist, ist Voraussetzung für das Erstellen einer Extraktion (siehe Abschnitt [Verbindungsmanager](../sap-verbindung/verbindungsmanager)).
 2. Klicken Sie doppelt auf das **[Icon]**. Das Fenster "Read and Write with SAP BAPIs of Function Modules" öffnet sich.
 3. Klicken Sie auf das **[Lupensymbol]**.
@@ -6,7 +8,7 @@
 
 Das Suchfenster "Look Up BAPI" öffnet sich.
 
-### Eine BAPI Extraktion finden
+### Eine BAPI finden
 
 1. Klicken Sie auf das **[Lupensymbol]** im Hauptfenster der Komponente. Das Fenster "Function Module Lookup" öffnet sich.
 2. Geben Sie im Feld **Function Name** (1) den Namen eines BAPI oder Funktionsbausteins ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>

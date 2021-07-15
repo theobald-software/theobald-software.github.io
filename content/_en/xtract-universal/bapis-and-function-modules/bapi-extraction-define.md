@@ -1,7 +1,7 @@
 ---
 ref: xu-bapis-function-01
 layout: page
-title: Define a BAPI Extraction
+title: Defining a BAPI Extraction
 description: Define a BAPI Extraction
 product: xtract-universal
 parent: bapis-and-function-modules

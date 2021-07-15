@@ -1,7 +1,7 @@
 ---
 ref: xu-bapis-function-01
 layout: page
-title: Eine BAPI-Quelle definieren
+title: Eine BAPI Extraktion definieren
 description: Eine BAPI-Quelle definieren
 product: xtract-universal
 parent: bapis-und-funktionsbausteine
