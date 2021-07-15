@@ -13,9 +13,9 @@ Liste der *Custom Properties* der DeltaQ Komponente:
 |:----|:----|
 | *GatewayHost* | Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
 | *GatewayService* | Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *HierClass* | |
-| *HierName* | Name der zu extrahierenden Hierarchy, siehe [Hierarchien](./hierarchien). |
-| *Language* | |
+| *HierClass* | Entspricht dem Feld *Hierarchy Class* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings).|
+| *HierName* | Entspricht dem Feld *Hierarchy Name* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings). |
+| *Language* | Entspricht dem Feld *Language* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings).|
 | *NewTimeStampFormatInRequestLog* | Wenn dieser Wert auf *true* (X) gesetzt wird, wird das Format des Zeitstempels im Request Protokoll geändert.|
 | *OLTPSourceName* | Name der zu extrahierenden OLTP-Quelle.|
 | *OLTPSourceType* | Typ der zu extrahierenden OLTP-Quelle.|

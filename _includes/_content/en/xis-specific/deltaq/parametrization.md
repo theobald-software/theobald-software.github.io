@@ -10,9 +10,9 @@ List of *Custom Properties* of the DeltaQ component:
 |:----|:----|
 | *GatewayHost* | Corresponds to the field *Gateway Host* in the DeltaQ component, see [Customizing Check](./customizing-check).|
 | *GatewayService* | Corresponds to the field *Gateway Service* in the DeltaQ component, see [Customizing Check](./customizing-check).|
-| *HierClass* | |
-| *HierName* | Name of the Hierarchy to be extracted, see [Hierarchies](./hierarchies). |
-| *Language* | |
+| *HierClass* | Corresponds to the field *Hierarchy Class* in the DeltaQ component, see [Settings- Hierarchy Settings](./settings#hierarchy-settings).|
+| *HierName* | Corresponds to the field *Hierarchy Name* in the DeltaQ component, see [Settings- Hierarchy Settings](./settings#hierarchy-settings).. |
+| *Language* | Corresponds to the field *Language* in the DeltaQ component, see [Settings- Hierarchy Settings](./settings#hierarchy-settings).|
 | *NewTimeStampFormatInRequestLog* | If this value is set to *true* (X) the format of the timestamp in the request log is changed.|
 | *OLTPSourceName* | Name of the OLTP source to be extracted.|
 | *OLTPSourceType* | Type of the OLTP source to be extracted.|
