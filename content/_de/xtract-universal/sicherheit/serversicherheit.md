@@ -13,8 +13,8 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=serversicherheit1
 {% include _content/de/xu-specific/sicherheit/serversicherheit1.md %}
 
  {: .box-note}
-**Hinweis**: Allgemeine Authentifizierung wird momentan nur unterstützt, wenn Sie eine Extraktion über die Extraktions-URL ausführen.
-Eine Extraktion über *xu.exe* auszuführen ist nicht möglich, wenn die Allgemeine Authentifizierung aktiv ist.
+**Hinweis**: Für Informationen zu Extraktionsaufrufen mit Basic Authentication über die *xu.exe*, siehe [Basic Authentication via Kommandozeile](./extraktionen-ausfuehren-und-einplanen/call-via-commandline#basic-authentication-via-kommandozeile).
+
 
 ### Xtract Universal Dienst unter einem Windows Dienstkonto ausführen
 

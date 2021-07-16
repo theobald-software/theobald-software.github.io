@@ -13,8 +13,9 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=server_security
 
 {% include _content/en/xu-specific/security-xu3/server-security.md %}
 
-{: .box-note}
-**Note**: Basic authentication is currently only supported when calling an extraction through the extraction's URL. Calling an extraction through *xu.exe* is currently not supported when Basic authentication is active.
+
+{: .box-note }
+**Note:** For information on how to call an extraction with Basic Authentication through *xu.exe*, see [Basic Authentication via Commandline](./execute-and-automate-extractions/call-via-commandline#basic-authentication-via-commandline).
 
 ### Running a service under a Windows service account
 
