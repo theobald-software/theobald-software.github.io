@@ -6,7 +6,7 @@
 The *Custom Properties* define the properties unique to the Xtract Table component. <br>
 When parameterizing the Table component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
-List of *Custom Properties* of the Table component:
+List of relevant *Custom Properties* of the Table component:
 
 |Property|Comment|
 |:----|:----|
@@ -19,8 +19,6 @@ List of *Custom Properties* of the Table component:
 | *MinDateReplacement* | Converts the SAP date 00000000 to the entered value.|
 | *OrderBy* | Defines the table field that is used as the sort criterion for the result.|
 | *PackageSize*| Corresponds to the field *Package Size* in the Table component's [Settings](./extraction-settings).|
-| *UseLegacyDateConversion* | |
-| *UserComponentTypeName* | |
 | *UseWideStrings* | Defines whether DT_WSTR / DT_NTEXT (true) or DT_STR / DT_TEXT (false) is used as the data type for string columns.|
 | *WhereClause* | Corresponds to the tab *WHERE clause* in the Table component. Allows parameterization of the complete WHERE clause, see [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).|
 

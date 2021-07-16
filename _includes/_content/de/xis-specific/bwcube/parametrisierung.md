@@ -6,18 +6,14 @@
 Die Eigenschaften der Xtract BW Cube Komponente wird in den *Custom Properties* der Komponente definiert. <br>
 Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
-Liste der *Custom Properties* der BW Cube Komponente:
+Liste der relevanten *Custom Properties* der BW Cube Komponente:
 
 |Property |Beschreibung|
 |:----|:----|
 | *CubeName* | Entspricht dem Suchfeld *Cube Name* in der BW Cube Komponente, siehe [Eine BW Cube oder Query Extraktion finden](./cubes-suchen#eine-bw-cube-oder-query-extraktion-finden).|
 | *DelimiterForMultipleSSISVariableValues* | Trennzeichen für aufeinanderfolgende Variablen, siehe *Variables* in [Parametrierung mit SSIS Variablen](#parametrierung-mit-ssis-variablen).|
-| *IgnoreMDXErrors* | |
-| *InternalXML* | |
 | *MDXVariable* | Geben Sie eine SSIS-Variable in die MDX Textbox ein und füllen Sie die SSIS-Variable mit dem kompletten MDX-Ausdruck, siehe *MDXVariable* in [Parametrierung mit SSIS Variablen](#parametrierung-mit-ssis-variablen). |
-| *ReservedXML* | |
 | *StringConversion* | Siehe [Settings - String Conversion](./bw-cube-settings#string-conversion). |
-| *UserComponentTypeName* | |
 
 ### Parametrierung mit SSIS Variablen
 Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:

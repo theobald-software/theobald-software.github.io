@@ -6,7 +6,7 @@
 The *Custom Properties* define the properties unique to the Xtract OHS component. <br>
 When parameterizing the OHS component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
-List of *Custom Properties* of the OHS component:
+List of relevant *Custom Properties* of the OHS component:
 
 |Property|Comment|
 |:----|:----|
@@ -15,7 +15,6 @@ List of *Custom Properties* of the OHS component:
 | *InvalidDateReplacement* | In case of invalid date values you need to enter a default date value. Every invalid value will be converted into this value.|
 | *MaxDateReplacement* | Converts the SAP date 9999XXXX to the entered value.|
 | *MinDateReplacement* | Converts the SAP date 00000000 to the entered value.|
-| *UserComponentTypeName* | |
 
 ### Parameterization using Data Flow Properties
 The following *Custom Properties* can be parameterized:

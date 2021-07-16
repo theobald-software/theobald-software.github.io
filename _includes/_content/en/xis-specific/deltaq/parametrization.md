@@ -4,7 +4,7 @@
 The *Custom Properties* define the properties unique to the Xtract DeltaQ component. <br>
 When parameterizing the DeltaQ component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
-List of *Custom Properties* of the DeltaQ component:
+List of relevant *Custom Properties* of the DeltaQ component:
 
 |Property|Comment|
 |:----|:----|
@@ -20,11 +20,10 @@ List of *Custom Properties* of the DeltaQ component:
 | *RequestID* | Corresponds to the field *RequestID* in the DeltaQ component's [Settings](./settings).|
 | *StringConversion* | See [Settings - String Conversion](./settings#string-conversion).|
 | *TargetSystem* | Corresponds to the field *Log. Destination* in the DeltaQ component, see [Customizing Check](./customizing-check).|
-| *Timeout* | |
+| *Timeout* | Set a timeout for the extraction.|
 | *TransferMethod* | Choose transfer via tRTF (T) or IDoc (I).|
 | *TransferStructure* | The transfer structure of the source.|
 | *UpdateType* | Corresponds to the drop-down menu *Update Mode* in the DeltaQ component. Permitted values are: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
-| *UserComponentTypeName* | |
 
 ### Parameterization using SSIS Properties
 The following custom properties can be parameterized:

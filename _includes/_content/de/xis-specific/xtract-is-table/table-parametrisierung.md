@@ -6,7 +6,7 @@
 Die Eigenschaften der Xtract Table Komponente wird in den *Custom Properties* der Komponente definiert. <br>
 Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
 
-Liste der *Custom Properties* der Table-Komponente:
+Liste der relevanten *Custom Properties* der Table-Komponente:
 
 |Property|Beschreibung|
 |:----|:----|
@@ -17,10 +17,8 @@ Liste der *Custom Properties* der Table-Komponente:
 | *MaxDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX.|
 | *MaxRows* | Entspricht dem Feld *Row Limit* in den [Settings](./extraktionseinstellungen) der Table Komponente.|
 | *MinDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000.|
-| *OrderBy* | Definiert, welches Tabellenfeld für als Kriterium für die Sortierung des Ergebnisses verwendet wird.|
+| *OrderBy* | Definiert, welches Tabellenfeld als Kriterium für die Sortierung des Ergebnisses verwendet wird.|
 | *PackageSize*| Entspricht dem Feld *Package Size* in den [Settings](./extraktionseinstellungen) der Table Komponente.|
-| *UseLegacyDateConversion* | |
-| *UserComponentTypeName* | |
 | *UseWideStrings* | Definiert, ob DT_WSTR / DT_NTEXT (true) oder DT_STR / DT_TEXT (false) als Datentyp für String-Spalten verwendet wird.|
 | *WhereClause* | Entspricht dem Tab *WHERE clause* in der Table Komponente. Erlaubt die PArametrisierung der kompletten WHERE-Bedingung, siehe [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).|
 

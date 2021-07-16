@@ -5,7 +5,7 @@
 The *Custom Properties* define the properties unique to the Xtract BW Hierarchy component. <br>
 When parameterizing the BW Hierarchy component using SSIS variables, the *Custom Porperties* are overwritten.
 
-List of *Custom Properties* of the BW Hierarchy component:
+List of relevant *Custom Properties* of the BW Hierarchy component:
 
 |Property|Comment|
 |:----|:----|
@@ -15,9 +15,7 @@ List of *Custom Properties* of the BW Hierarchy component:
 | *HierarchyName* | Name of the Hierarchy to be extracted. |
 | *HierarchyVersion* | Version of the Hierarchy to be extracted. |
 | *InfoObject* | Corresponds to the field *InfoObject* in [Defining a BW Hierarchy](./hierarchy-lookup#defining-a-bw-hierarchy-extraction). |
-| *InternalXML* | |
 | *StringConversion* | See [Settings - String Conversion](./settings#string-conversion). |
-| *UseComponentTypeName* | |
 
 ### Parameterization using SSIS Variables
 The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:

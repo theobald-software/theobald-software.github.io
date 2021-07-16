@@ -6,23 +6,20 @@
 The *Custom Properties* define the properties unique to the Xtract Report component. <br>
 When parameterizing the Report component using SSIS variables, the *Custom Porperties* are overwritten.
 
-List of *Custom Properties* of the Report component:
+List of relevant *Custom Properties* of the Report component:
 
 |Property|Comment|
 |:----|:----|
 | *BatchJobDestination* | Corresponds to the field *Spool Destination* in the Report component, see [Settings - Spool Destination / BatchJobDestination](./settings). |
 | *BatchJobName* | Corresponds to the field *Batch Job Name* in the Report component, see [Settings -BatchJobName](./settings). |
 | *BatchJobTimeout* | Corresponds to the field *Batch Timeout* in the Report component, see [Settings - BatchJobTimeout](./settings).|
-| *InternalXML* | |
 | *ReportName* | Name of the report that is to be extracted.|
 | *ReportRowsPerDataRow* | Corresponds to the field *Report Rows Per Data Row* in the Report component, see [Defining Report Columns](./report-columns-define). |
 | *ReportWidth* | Corresponds to the field *Report Width* in the Report component, see [Defining Report Columns](./report-columns-define). |
-| *Reserved* | |
 | *SkipBottomRows* | Corresponds to the field *Skip Rows Bottom* in the Report component, see [Defining Report Columns](./report-columns-define). |
 | *SkipTopRows* | Corresponds to the field *Skip Rows Top* in the Report component, see [Defining Report Columns](./report-columns-define). |
 | *StringConversion* | See [Settings - String Conversion](./report-settings). |
 | *UseBatch* | Corresponds to the field *Use Batch* in the Report component, see [Settings - Use Batch](./settings). |
-| *UserComponentTypeName* | |
 | *Variant* | See [Variants and Selections](./variants-and-selections).|
 
 ### Parameterization using SSIS Variables

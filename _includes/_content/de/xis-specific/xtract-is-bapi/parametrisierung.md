@@ -5,14 +5,12 @@
 Die Eigenschaften der Xtract BAPI Komponente wird in den *Custom Properties* der Komponente definiert. <br>
 Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
-Liste der *Custom Properties* der BAPI Komponente:
+Liste der relevanten *Custom Properties* der BAPI Komponente:
 
 |Property|Beschreibung|
 |:----|:----|
-| *Internal XML*| |
 | *RFCFunctionName* | Name des zu extrahierenden BAPIs oder RFC-Bausteins.|
-| *StringConversion*| |
-| *UserComponentTypeName*| |
+
 
 ### Parametrierung mit SSIS Variablen
 Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:

@@ -7,7 +7,7 @@
 Die Eigenschaften der Xtract DeltaQ Komponente wird in den *Custom Properties* der Komponente definiert. <br>
 Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
 
-Liste der *Custom Properties* der DeltaQ Komponente:
+Liste relevanter *Custom Properties* der DeltaQ Komponente:
 
 |Property|Beschreibung|
 |:----|:----|
@@ -23,11 +23,10 @@ Liste der *Custom Properties* der DeltaQ Komponente:
 | *RequestID* | Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|
 | *StringConversion* | Siehe [Settings - String Conversion](./extraktionseinstellungen#string-conversion).|
 | *TargetSystem* | Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *Timeout* | |
+| *Timeout* | Setzen Sie einen Timeout für die Extraktion.|
 | *TransferMethod* | Sie können zwischen Transfer via tRTF (T) oder IDoc (I) wählen.|
 | *TransferStructure* | Transferstruktur der zu extrahierenden Quelle.|
 | *UpdateType* | Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
-| *UserComponentTypeName* | |
 
 ### Parameterisierung mit Data Flow Properties
 Die folgenden *Custom Properties* können parametrisiert werden:

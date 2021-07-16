@@ -6,23 +6,20 @@
 Die Eigenschaften der Xtract Report Komponente wird in den *Custom Properties* der Komponente definiert. <br>
 Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
-Liste der *Custom Properties* der Report-Komponente:
+Liste der relevanten *Custom Properties* der Report-Komponente:
 
 |Property|Beschreibung|
 |:----|:----|
 | *BatchJobDestination* | Entspricht dem Feld *Spool Destination* in der Report Komponente, siehe [Settings - Spool Destination / BatchJobDestination](./report-settings). |
 | *BatchJobName* | Entspricht dem Feld *Batch Job Name* in der Report Komponente, siehe [Settings - BatchJobName](./report-settings). |
 | *BatchJobTimeout* | Entspricht dem Feld *Batch Timeout* in der Report Komponente, siehe [Settings - BatchJobTimeout](./report-settings).|
-| *InternalXML* | |
 | *ReportName* | Name des zu extrahierenden Reports.|
 | *ReportRowsPerDataRow* | Entspricht dem Feld *Report Rows Per Data Row* in der Report Komponente, siehe [Report-Spalten definieren](./report-spalten_definieren). |
 | *ReportWidth* | Entspricht dem Feld *Report Width* in der Report Komponente, siehe [Report-Spalten definieren](./report-spalten_definieren). |
-| *Reserved* | |
 | *SkipBottomRows* | Entspricht dem Feld *Skip Rows Bottom* in der Report Komponente, siehe [Report-Spalten definieren](./report-spalten_definieren). |
 | *SkipTopRows* | Entspricht dem Feld *Skip Rows Top* in der Report Komponente, siehe [Report-Spalten definieren](./report-spalten_definieren). |
 | *StringConversion* | Siehe [Settings - String Conversion](./report-settings). |
 | *UseBatch* | Entspricht dem Feld *Use Batch* in der Report Komponente, siehe [Settings - Use Batch](./report-settings). |
-| *UserComponentTypeName* | |
 | *Variant* | Siehe [Varianten und Selektionen](./varianten-und-selektionen). |
 
 ### Parametrierung mit SSIS Variablen

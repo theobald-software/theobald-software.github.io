@@ -6,7 +6,7 @@
 The *Custom Properties* define the properties unique to the Xtract BW Loader component. <br>
 When parameterizing the BW Loader component using SSIS variables, the *Custom Porperties* are overwritten.
 
-List of *Custom Properties* of the BW Loader component:
+List of relevant *Custom Properties* of the BW Loader component:
 
 |Property |Comment|
 |:----|:----|
@@ -15,13 +15,11 @@ List of *Custom Properties* of the BW Loader component:
 | *GatewayService* | Corresponds to the field *Gateway service* in the BW Loader component, see [Connect Source and Destination Columns](./connect-source-and-destination-column).|
 | *InfoPackage* | Corresponds to the field *InfoPackage* in the BW Loader component, see [Defining a BW Loader Extraction](./lookup-info-packages).|
 | *InfoSource* | Corresponds to the field *InfoSource* in the BW Loader component, see [Defining a BW Loader Extraction](./lookup-info-packages).|
-| *InternalXML* | |
 | *LogSys* | Corresponds to the field *Logical System* in the BW Loader component, see [Connect Source and Destination Columns](./connect-source-and-destination-column).|
 | *NolPackageStartOnlyWait* | Corresponds to the field *No InfoPackage Start (Only Wait)* in the BW Loader component, see [Settings](./settings).|
 | *PackageSize* | Corresponds to the field *Package Size* in the BW Loader component, see [Settings](./settings#general).|
 | *ProcessChain* | Corresponds to the field *Trigger Process Chain after Upload* in the BW Loader component, see [Settings](./settings#general).|
 | *ProgramID* | Corresponds to the field *Program ID* in the BW Loader component, see [Connect Source and Destination Columns](./connect-source-and-destination-column). |
-| *UserComponentTypeName* | |
 | *WaitUntilFinished* | Corresponds to the field *Wait data transfer to be finished* in the BW Loader component, see [Settings](./settings#general). |
 
 ### Parameterization using SSIS Variables

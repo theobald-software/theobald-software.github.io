@@ -6,7 +6,7 @@
 Die Eigenschaften der Xtract ODP Komponente wird in den *Custom Properties* der Komponente definiert. <br>
 Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
 
-Liste der *Custom Properties* der ODP Komponente:
+Liste der relevanten *Custom Properties* der ODP Komponente:
 
 |Property|Beschreibung|
 |:----|:----|
@@ -19,7 +19,6 @@ Liste der *Custom Properties* der ODP Komponente:
 | *PackageSize* | Wählt die Paketgröße in Bytes, siehe [Advanced Settings](./odp-settings#fortgeschrittene-einstellungen).|
 | *SubscriptionSuffix* | Fügt dem von der ODP Komponente erstellten ODP Abonnement ein Suffix hinzu.|
 | *UpdateMode* | Stellt den Update Mode einer Extraktion ein. Erlaubt Werte sind: (F)ull, (D)elta and (R)ecovery, siehe [Update Mode](./odp-define#load-verfahren-update-mode).|
-| *UserComponentTypeName* | |
 
 ### Parametrisierung mit Data Flow Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
