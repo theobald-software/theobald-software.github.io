@@ -4,7 +4,7 @@ Use parameters to assign different values at SSIS package runtime.
 Parameters can be populated using standard SSIS functionality, such as expressions and SSIS variables. 
 
 Xtract IS offers two technical options for parameterization:
-- [Data Flow Properties](./parameterization/parameterization-prop)
+- [Expression Properties](./parameterization/parameterization-prop)
 - [SSIS Variables](./parameterization/parameterization-var)
 
 {: .box-tip }

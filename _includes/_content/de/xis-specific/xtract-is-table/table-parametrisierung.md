@@ -22,7 +22,7 @@ Liste der relevanten *Custom Properties* der Table-Komponente:
 | *UseWideStrings* | Definiert, ob DT_WSTR / DT_NTEXT (true) oder DT_STR / DT_TEXT (false) als Datentyp für String-Spalten verwendet wird.|
 | *WhereClause* | Entspricht dem Tab *WHERE clause* in der Table Komponente. Erlaubt die PArametrisierung der kompletten WHERE-Bedingung, siehe [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).|
 
-### Parameterisierung mit Properties
+### Parameterisierung mit Data Flow Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
 
 |Property|Beschreibung|

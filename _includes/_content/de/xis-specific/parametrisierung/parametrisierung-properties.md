@@ -1,12 +1,9 @@
 ### Properties der Xtract Komponenten in SSIS
 
-Die *Custom Properties* einer Xtract IS Komponente repräsentieren die Eigenschaften der Komponente und werden im "Properies" Fenster der Komponente angezeigt.<br>
-Diese Properties sind nicht zu verwechseln mit den *Data Flow Properties*.<br>
-*Data Flow Properties* können über SSIS-Ausdrücke gesetzt werden und werden im "Properies" Fenster des Data Flow Tasks angezeigt.
+Die *Custom Properties* einer Xtract IS Komponente repräsentieren die Eigenschaften der Komponente und werden im "Properties" Fenster der Komponente angezeigt.
+Diese Properties sind nicht zu verwechseln mit den *Data Flow Properties*. *Data Flow Properties* können über SSIS-Ausdrücke gesetzt werden und werden im "Properies" Fenster des Data Flow Tasks angezeigt.
 
 Bei der von Microsoft empfohlenen Parametrisierung durch *Data Flow Properties* werden die Eigenschaften der Komponente zur Laufzeit überschrieben.
-
-![Properties](/img/content/xis/properties_component.png){:class="img-reagierend"}
 
 
 ### Ausdrücke für Data Flow Properties verwenden

@@ -1,12 +1,10 @@
 ### Properties of Xtract Components in SSIS
 
-The *Custom Properties* of an Xtract IS component are displayed in the "Properties" window of the component. <br>
-These properties are not to be confused with *Data Flow Properties*. <br>
-The *Data Flow Properties* can be set via SSIS expressions and are displayed in the "Properties" window of the Data Flow Task. <br>
+The *Custom Properties* of an Xtract IS component are displayed in the "Properties" window of the component. 
+These properties are not to be confused with *Data Flow Properties*. 
+The *Data Flow Properties* can be set via SSIS expressions and are displayed in the "Properties" window of the Data Flow Task. 
 
 When parameterizing using *Data Flow Properties* as recommended by Microsoft, the *Custom Porperties* are overwritten.
-
-![Properties](/img/content/xis/properties_component.png){:class="img-reagierend"}
 
 
 <!---(technically: the property's *expressionType* XML-attribute is set to *notify*).

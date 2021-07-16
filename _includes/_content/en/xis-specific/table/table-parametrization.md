@@ -23,7 +23,7 @@ List of relevant *Custom Properties* of the Table component:
 | *WhereClause* | Corresponds to the tab *WHERE clause* in the Table component. Allows parameterization of the complete WHERE clause, see [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).|
 
 
-### Parameterization using Properties
+### Parameterization using Data Flow Properties
 The following properties can be parameterized:
 
 |Property Name|Description|

@@ -25,7 +25,7 @@ List of relevant *Custom Properties* of the DeltaQ component:
 | *TransferStructure* | The transfer structure of the source.|
 | *UpdateType* | Corresponds to the drop-down menu *Update Mode* in the DeltaQ component. Permitted values are: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
 
-### Parameterization using SSIS Properties
+### Parameterization using Data Flow Properties
 The following custom properties can be parameterized:
 
 |Property Name|Description|
