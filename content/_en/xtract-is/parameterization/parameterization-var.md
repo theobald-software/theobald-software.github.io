@@ -1,7 +1,7 @@
 ---
 ref: xis-parametrization-02
 layout: page
-title: SSIS Variables
+title: Parameterization using SSIS Variables
 description: Parameterization using SSIS Variables
 product: xtract-is
 parent: parameterization

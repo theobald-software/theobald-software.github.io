@@ -1,8 +1,24 @@
 
 {% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
+### Custom Properties
+The *Custom Properties* define the properties unique to the Xtract Query component. <br>
+When parameterizing the Query component using SSIS variables, the *Custom Porperties* are overwritten.
+
+List of relevant *Custom Properties* of the Query component:
+
+|Property|Comment|
+|:----|:----|
+| *MaxRows* | Corresponds to the field *MaxRows* in [Settings](./settings) of the Query component.|
+| *QueryDescription* | Description of the Query to be extracted.|
+| *QueryName* | Name of the Query to be extracted.|
+| *StringConversion* | Corresponds to the [Settings](./settings) of the Query component.|
+| *UserGroup* | Name of the User Group where the Query is located.|
+| *Variant* | Corresponds to the field *Use Variant Variable* in the [Settings](./settings) of the Query component. |
+| *VariantDescription* | Description of the Variant.|
+
 ### Parameterization using SSIS Variables
-The following fields and/or custom properties of the component allow entry of an SSIS variable:
+The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|

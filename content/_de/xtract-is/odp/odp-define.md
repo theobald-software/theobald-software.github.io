@@ -1,5 +1,5 @@
 ---
-ref: xis-odp-define
+ref: xtract-is-odp-define
 layout: page
 title: Eine ODP Extraktion definieren
 description: ODP Extracttion

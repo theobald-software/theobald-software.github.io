@@ -1,8 +1,8 @@
 ---
 ref: xis-parametrization-01
 layout: page
-title: SSIS Properties
-description: Parameterization using SSIS Properties
+title: Parameterization using Expression Properties
+description: Parameterization using Expression Properties
 product: xtract-is
 parent: parameterization
 permalink: /:collection/:path

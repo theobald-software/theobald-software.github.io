@@ -10,4 +10,5 @@ weight: 1
 lang: de_DE
 
 ---
+
 {% include _content/de/xis-specific/parametrisierung/parametrisierung-properties.md  %}
