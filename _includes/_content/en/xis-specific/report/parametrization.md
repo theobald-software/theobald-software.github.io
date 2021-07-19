@@ -18,7 +18,7 @@ List of relevant *Custom Properties* of the Report component:
 | *ReportWidth* | Corresponds to the field *Report Width* in the Report component, see [Defining Report Columns](./report-columns-define). |
 | *SkipBottomRows* | Corresponds to the field *Skip Rows Bottom* in the Report component, see [Defining Report Columns](./report-columns-define). |
 | *SkipTopRows* | Corresponds to the field *Skip Rows Top* in the Report component, see [Defining Report Columns](./report-columns-define). |
-| *StringConversion* | See [Settings - String Conversion](./report-settings). |
+| *StringConversion* | See [Settings - String Conversion](./settings). |
 | *UseBatch* | Corresponds to the field *Use Batch* in the Report component, see [Settings - Use Batch](./settings). |
 | *Variant* | See [Variants and Selections](./variants-and-selections).|
 

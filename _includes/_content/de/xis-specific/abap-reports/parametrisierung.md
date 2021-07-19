@@ -18,7 +18,7 @@ Liste der relevanten *Custom Properties* der Report-Komponente:
 | *ReportWidth* | Entspricht dem Feld *Report Width* in der Report Komponente, siehe [Report-Spalten definieren](./report-spalten_definieren). |
 | *SkipBottomRows* | Entspricht dem Feld *Skip Rows Bottom* in der Report Komponente, siehe [Report-Spalten definieren](./report-spalten_definieren). |
 | *SkipTopRows* | Entspricht dem Feld *Skip Rows Top* in der Report Komponente, siehe [Report-Spalten definieren](./report-spalten_definieren). |
-| *StringConversion* | Siehe [Settings - String Conversion](./settings#string-conversion). |
+| *StringConversion* | Siehe [Settings - String Conversion](.//report-settings#string-conversion). |
 | *UseBatch* | Entspricht dem Feld *Use Batch* in der Report Komponente, siehe [Settings - Use Batch](./report-settings). |
 | *Variant* | Siehe [Varianten und Selektionen](./varianten-und-selektionen). |
 
