@@ -8,6 +8,6 @@ parent: table
 permalink: /:collection/:path
 weight: 7
 lang: en_GB
-
 ---
+
 {% include _content/en/xis-specific/table/table-parametrization.md  %}
