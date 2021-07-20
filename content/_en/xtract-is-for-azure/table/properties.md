@@ -1,9 +1,9 @@
 ---
-ref: xi-table-07
+ref: xia-table-07
 layout: page
 title: Custom Properties
 description: Table Custom Properties
-product: xtract-is
+product: xtract-is-for-azure
 parent: table
 permalink: /:collection/:path
 weight: 7

@@ -1,5 +1,5 @@
 ---
-ref: xi-table-08
+ref: xi-table-10
 layout: page
 title: Einschränkungen umgehen
 description: Einschränkungen umgehen

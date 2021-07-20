@@ -1,9 +1,9 @@
 ---
-ref: xi-table-07
+ref: xia-table-07
 layout: page
 title: Benutzerdefinierte Eigenschaften
 description: Custom Properties - Benutzerdefinierte Eigenschaften
-product: xtract-is
+product: xtract-is-for-azure
 parent: xtract-is-table
 permalink: /:collection/:path
 weight: 7

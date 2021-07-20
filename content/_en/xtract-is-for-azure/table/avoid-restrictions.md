@@ -1,12 +1,12 @@
 ---
-ref: xiaa-table-07
+ref: xiaa-table-10
 layout: page
 title: Avoid Restrictions
 description: Avoid Restrictions
 product: xtract-is-for-azure
 parent: table
 permalink: /:collection/:path
-weight: 7
+weight: 10
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=restrictions
 ---
