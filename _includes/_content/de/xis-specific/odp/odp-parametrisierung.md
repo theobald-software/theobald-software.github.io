@@ -10,12 +10,12 @@ Liste der relevanten *Custom Properties* der ODP Komponente:
 
 |Property|Beschreibung|
 |:----|:----|
-| *ConvertsDates* | Aktiviert oder deaktiviert die Umwandlung von SAP Daten.|
+| *ConvertsDates* | Wenn diese Eigenschaft auf *True* (Standard) gesetzt wird, nehmen SAP-Datumsfelder (YYYYMMDD) den SSIS-Pipeline-Typ DT_DBDATE an (anstelle von DT_WSTR). Die folgenden Datumskonvertierungen werden bei ungültigen Datumsformaten in SAP-Datumsfeldern angewendet:<br>**InvalidDateReplacement**, **MaxDateReplacement**, **MinDateReplacement**. |
 | *ExtractDataOnDeltaInit* | Führt eine Delta-Initialisierung mit oder ohne Datenextraktion aus, siehe [Update Mode](./odp-define#load-verfahren-update-mode).|
 | *HierarchyName* | Nur für Datenquellen vom Typ Hierarchy, siehe [Select Hierarchy](./odp-extractors#select-hierarchy).|
-| *InvalidDateReplacement* | Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen.|
-| *MaxDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX.|
-| *MinDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000.|
+| *InvalidDateReplacement* | Ermöglicht die Ersetzung eines ungültigen Datumsformats. Der Standardwert für diese Eigenschaft ist 1970-01-02. <br> Um die Eigenschaft zu verwenden, geben Sie im Format yyyyy-mm-dd einen Ersatzwert für ungültige SAP-Datumswerte ein, z.B. ‘20190132’ (32. Januar 2019).|
+| *MaxDateReplacement* | Ermöglicht das Ersetzen der SAP-Datumswerte mit dem Jahr 9999. Der Standardwert für diese Eigenschaft ist 2099-12-31. <br> Um die Eigenschaft zu verwenden, geben Sie im Format yyyyy-mm-dd einen Ersatzwert für SAP-Datumswerte ein, die das Jahr ‘9999’ enthalten. Beispiel: ‘99990101’ (1. Januar 9999).|
+| *MinDateReplacement* | Ermöglicht das Ersetzen der SAP-Datumswerte mit dem Jahr 0000. Der Standardwert für diese Eigenschaft ist 1970-01-01. <br> Um die Eigenschaft zu verwenden, geben Sie im Format yyyyy-mm-dd einen Ersatzwert für SAP-Datumswerte ein, die das Jahr ‘0000’ enthalten. Beispiel: ‘0000000000’.|
 | *PackageSize* | Wählt die Paketgröße in Bytes, siehe [Advanced Settings](./odp-settings#fortgeschrittene-einstellungen).|
 | *SubscriptionSuffix* | Fügt dem von der ODP Komponente erstellten ODP Abonnement ein Suffix hinzu.|
 | *UpdateMode* | Stellt den Update Mode einer Extraktion ein. Erlaubt Werte sind: (F)ull, (D)elta and (R)ecovery, siehe [Update Mode](./odp-define#load-verfahren-update-mode).|

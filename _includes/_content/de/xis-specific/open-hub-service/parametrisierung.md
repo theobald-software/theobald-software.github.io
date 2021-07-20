@@ -10,22 +10,23 @@ Liste der relevanten *Custom Properties* der OHS Komponente:
 
 |Property|Beschreibung|
 |:----|:----|
-| *ConvertsDates* | Aktiviert oder deaktiviert die Umwandlung von SAP Daten.|
+| *ConvertsDates* | Wenn diese Eigenschaft auf *True* (Standard) gesetzt wird, nehmen SAP-Datumsfelder (YYYYMMDD) den SSIS-Pipeline-Typ DT_DBDATE an (anstelle von DT_WSTR). Die folgenden Datumskonvertierungen werden bei ungültigen Datumsformaten in SAP-Datumsfeldern angewendet:<br>**InvalidDateReplacement**, **MaxDateReplacement**, **MinDateReplacement**. |
 | *ConvertsTimes* | Aktiviert oder deaktiviert die Umwandlung von SAP Zeiten.|
-| *InvalidDateReplacement* | Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen.|
-| *MaxDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX.|
-| *MinDateReplacement* | Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000.|
+| *InvalidDateReplacement* | Ermöglicht die Ersetzung eines ungültigen Datumsformats. Der Standardwert für diese Eigenschaft ist 1970-01-02. <br> Um die Eigenschaft zu verwenden, geben Sie im Format yyyyy-mm-dd einen Ersatzwert für ungültige SAP-Datumswerte ein, z.B. ‘20190132’ (32. Januar 2019).|
+| *MaxDateReplacement* | Ermöglicht das Ersetzen der SAP-Datumswerte mit dem Jahr 9999. Der Standardwert für diese Eigenschaft ist 2099-12-31. <br> Um die Eigenschaft zu verwenden, geben Sie im Format yyyyy-mm-dd einen Ersatzwert für SAP-Datumswerte ein, die das Jahr ‘9999’ enthalten. Beispiel: ‘99990101’ (1. Januar 9999).|
+| *MinDateReplacement* | Ermöglicht das Ersetzen der SAP-Datumswerte mit dem Jahr 0000. Der Standardwert für diese Eigenschaft ist 1970-01-01. <br> Um die Eigenschaft zu verwenden, geben Sie im Format yyyyy-mm-dd einen Ersatzwert für SAP-Datumswerte ein, die das Jahr ‘0000’ enthalten. Beispiel: ‘0000000000’.|
+
 
 ### Parameterisierung mit Data Flow Properties
 Die folgenden *Custom Properties* können parametrisiert werden:
 
 |Property|Beschreibung|
 |:----|:----|
-| *[Xtract OHS].[ConvertsDates]*| Aktiviert oder deaktiviert die Umwandlung von SAP Daten. |
+| *[Xtract OHS].[ConvertsDates]*| Aktiviert oder deaktiviert die Umwandlung von SAP Daten, siehe [Custom Properties](#custom-properties). |
 | *[Xtract OHS].[ConvertsTimes]*| Aktiviert oder deaktiviert die Umwandlung von SAP Zeiten. |
-| *[Xtract OHS].[InvalidDateReplacement]*| Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen.|
-| *[Xtract OHS].[MaxDateReplacement]*| Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX. |
-| *[Xtract OHS].[MinDateReplacement]*| Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000.|
+| *[Xtract OHS].[InvalidDateReplacement]*| Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen, siehe [Custom Properties](#custom-properties).|
+| *[Xtract OHS].[MaxDateReplacement]*| Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX, siehe [Custom Properties](#custom-properties). |
+| *[Xtract OHS].[MinDateReplacement]*| Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000, siehe [Custom Properties](#custom-properties).|
 
 ### Parametrierung mit SSIS Variablen
 Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
