@@ -1,5 +1,5 @@
 ---
-ref: xi-table-07
+ref: xi-table-08
 layout: page
 title: Parameterization 
 description: Parametrization 
@@ -9,5 +9,4 @@ permalink: /:collection/:path
 weight: 8
 lang: en_GB
 ---
-
 {% include _content/en/xis-specific/table/table-parametrization.md  %}

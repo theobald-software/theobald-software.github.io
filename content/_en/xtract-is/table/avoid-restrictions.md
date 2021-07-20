@@ -6,7 +6,7 @@ description: Avoid Restrictions
 product: xtract-is
 parent: table
 permalink: /:collection/:path
-weight: 8
+weight: 10
 lang: en_GB
 
 ---

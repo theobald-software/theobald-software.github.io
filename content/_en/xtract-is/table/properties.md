@@ -1,5 +1,5 @@
 ---
-ref: xi-table-06
+ref: xi-table-07
 layout: page
 title: Custom Properties
 description: Table Custom Properties
@@ -13,7 +13,7 @@ progressstate: 5
 
 The *Custom Properties* of the Xtract Table component are displayed in the "Properties" window of the component. 
 
-### Properties
+### List of Properties
 
 ![Table-XIS-Properties](/img/content/Table-XIS-Properties.png){:class="img-responsive"}
 
@@ -71,13 +71,13 @@ Defines the table field that is used as the sort criterion for the result.
 **PackageSize**<br>
 Specifies the number of records retrieved per data package: 
 - The default value is 20000 lines. 
-- 0 means no packaging. 
-- Not using packaging can lead to an RFC timeout for large data extracts. A package size between 15000 and 50000 is advisable for large amounts of data. 
+- 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extracts. 
+- A package size between 15000 and 50000 is advisable for large amounts of data. 
 
 This property corresponds to the field *Package Size* in the Table component's [Settings](./extraction-settings).
 
 {: .box-tip }
-**Recommendation:** Especially when executing a table extraction as a background job (see *Extract data in background job*), the package size plays an important role and should be chosen with regard to the total amount of data. 
+**Recommendation:** Especially when executing a table extraction as a background job, the package size plays an important role and should be chosen with regard to the total amount of data. 
 
 **UseWideStrings**<br>
 Defines whether DT_WSTR / DT_NTEXT (true) or DT_STR / DT_TEXT (false) is used as the data type for string columns.

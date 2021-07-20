@@ -6,7 +6,7 @@ description: Einschränkungen umgehen
 product: xtract-is
 parent: xtract-is-table
 permalink: /:collection/:path
-weight: 8
+weight: 10
 lang: de_DE
 
 ---

@@ -1,12 +1,12 @@
 ---
-ref: xi-table-07
+ref: xi-table-08
 layout: page
 title: Parametrisierung
 description: Parametrisierung
 product: xtract-is
 parent: xtract-is-table
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: de_DE
 
 ---
