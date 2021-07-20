@@ -6,7 +6,7 @@ description: Parametrization
 product: xtract-is
 parent: table
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 ---
 
