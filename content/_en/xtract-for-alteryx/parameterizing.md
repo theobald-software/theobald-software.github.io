@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-20
 layout: page
-title: Parameterizing Xtract Components
+title: Parameterizing
 description: Parameterizing via Batch Macro and Control Parameters
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
@@ -52,7 +52,7 @@ How to create a batch macro for parameterizing an Xtract component:
 5. Click on one of the **Update Value** tools to display the available parameters of the **Xtract ODP** component in the *Action Configuration* menu.
 Check if *p_MATNR_low*  and *p_MATNR_high* are listed in the tree structure under Xtract ODP > RuntimeParameters. <br>
 ![Workflow-Sequence2](/img/content/xfa/workflow-sequence2.png){:class="img-responsive"}
-6. To assign a control parameter to an Xtract runtime parameter, select the Xtract runtime parameter in the tree structure (3). 
+6. To assign a control parameter to an Xtract parameter, select the value you want to parameterize in the tree structure (3). 
 Assign the control parameter *cp_MAKT_low* to the Xtract runtime parameter *p_MATNR_low* and *cp_MAKT_high* to the Xtract runtime parameter *p_MATNR_high*.
 7. Drag&Drop the **Macro Output** tool from the *Interface* toolbox onto the canvas to create an output for the batch macro (4). 
 8. Connect the **Xtract ODP** component to the **Macro Output** and save the file.
@@ -75,9 +75,14 @@ This example uses the **Text Input** tool to define the parameters for the extra
 ![Import-Macro](/img/content/xfa/importmacro.png){:class="img-responsive"}
 6. Drag&Drop the **Browse** tool from the *In/Out* toolbox onto the canvas and run the workflow to check the results.<br>
 
-### How to use Control Parameters for a Where-Clause
+### How to use Control Parameters in Combination with Where-Clauses
 
-When using the Xtract Table Component, filtering is done via the where-clause of the component.
+Some Xtract components don't use runtime parameters. The Xtract Table uses a where-clause to filter data.
+
+To parameterize a where-clause, activate **Replace a specific string** when assigning a control parameter and specify what part of the where-clause should be replaced.<br>
+Example: If the Xtract Table component has the where clause `KNA1~LAND1 = 'param'` "param" can be used as a placeholder for the input of the control parameter.
+![where-clause-parameter](/img/content/xfa/table-where-parameterize.png){:class="img-responsive"}
+
 
 ****
 #### Related Links
