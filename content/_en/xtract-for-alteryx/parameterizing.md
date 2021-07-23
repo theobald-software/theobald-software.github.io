@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
 
-To pass parameters to Xtract components in Alteryx, you can use a [batch macro](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm) that contains a workflow with [control parameters(http://downloads.alteryx.com/betawh_xnext/ControlParam.htm). <br>
+To pass parameters to Xtract components in Alteryx, you can use a [batch macro](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm) that contains a workflow with [control parameters](http://downloads.alteryx.com/betawh_xnext/ControlParam.htm). <br>
 The following example shows how to parameterize the Xtract ODP component.
 
 ### Create an Extraction
