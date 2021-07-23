@@ -1,5 +1,3 @@
-Der folgende Abschnitt zeigt, wie man die Xtract ODP-Komponente verwendet.
-
 ### Ein Objekt (Data Object) suchen
 
 1. Innerhalb des Hauptfensters "Xtract ODP" navigieren Sie zu **Operational Data Provider** und klicken Sie auf **Search** (Lupensymbol) (1). <br>

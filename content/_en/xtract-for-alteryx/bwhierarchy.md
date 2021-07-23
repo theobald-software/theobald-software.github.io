@@ -10,19 +10,20 @@ permalink: /:collection/:path
 weight: 7
 lang: en_GB
 ---
-### About BW Hierarchy
+
+The following section describes the functions of the BW Hierarchy component of Xtract for Alteryx.<br>
 The component BW Hierarchy enables the extraction of hierarchies from an SAP BW system.
 
+{: .box-tip }
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](../getting-started).
 
-### To Use BW Hierarchy
-Basic knowledge of Xtract for Alteryx is required to understand the following sections, see [Getting Started with Xtract for Alteryx](./getting-started#creating-an-extraction).
-
-1. Drag & drop BW Hierarchy component to your Alteryx workflow.
-2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component “Hierarchy Extractor” opens.
+### How to use the BW Hierarchy component
+1. Drag & drop the "Xtract Hierarchy" component to your Alteryx workflow.
+2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
 
 The majority of the functions of the component can be accessed using the main window.
 
-### Hierarchy Extractor - Functions Overview
+### Functions overview
 The window "Hierarchy Extractor" consists out of two subsections:
 - Hierarchy Extraction
 - Preview
@@ -44,7 +45,14 @@ The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-
 - **[Extraction Settings]** opens the [extraction specific settings](./bwhierarchy/bwhier-settings) e.g., representation or level count. <br>
 - **[Load Live Preview]** loads a preview of the hierarchy without executing an extraction.
 
+---
 
-***
+
 #### Related Links
 - [SAP Online Help - Uploading Hierarchies from Flat Files](https://help.sap.com/saphelp_scm700_ehp02/helpdata/en/fa/e92637c2cbf357e10000009b38f936/frameset.htm)
+
+More information on working with the BW Hierarchy component is provided in the following sections.
+
+---
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

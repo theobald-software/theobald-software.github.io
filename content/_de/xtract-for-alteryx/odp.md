@@ -11,19 +11,20 @@ weight: 8
 lang: de_DE
 ---
 
-
+Der folgende Abschnitt beschreibt die Funktion der Xtract for Alteryx ODP Komponente. <br>
 {% include _content/de/odp/odp-introduction.md %} 
 
-### Xtract ODP Verwenden
-Grundkenntnisse von Xtract for Alteryx sind erforderlich, um die folgenden Abschnitte zu verstehen. Mehr Details dazu finden Sie im Abschnitt [Erste Schritte mit Table - Use-Case](./erste-schritte).
-1. Ziehen Sie die Komponente Xtract ODP per Drag & Drop in Ihren Alteryx-Workflow.
-2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu **Selected Extraction** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente "Xtract ODP" wird geöffnet.
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](../erste-schritte) beschrieben.
 
-Auf die meisten Funktionen der Komponente können Sie über das Hauptfenster zugreifen.
+### ODP Verwenden
+1. Ziehen Sie die "Xtract ODP" Komponente per Drag & Drop in Ihren Alteryx-Workflow.
+2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu **Selected Extraction** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
+
+Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
 
 
 ###  Funktionsübersicht
-
 Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 ![ODP Component](/img/content/xfa/xfa_odp_overview.png){:class="img-responsive"}
 
@@ -43,3 +44,8 @@ Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 #### Weiterführende Links
 - [SAP community Wiki](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646)
 
+Weitere Informationen zum Arbeiten mit der ODP Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

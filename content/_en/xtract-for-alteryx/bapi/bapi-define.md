@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
-The following section shows how to use the BAPI Component.
+The following section shows how to use the BAPI component.
 
 ### Using BAPI Component
 1. Drag and drop the BAPI component from the menu bar to the workflow canvas (1). The window "Configuration" opens.

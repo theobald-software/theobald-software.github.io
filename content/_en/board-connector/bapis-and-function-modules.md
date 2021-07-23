@@ -12,11 +12,17 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=bapi-and-function-modules
 ---
 
-The following section describes the functions of the BAPI Component of BOARD Connector. <br>
-Basic BOARD Connector the knowledge is required to understand the following sections. <br>
+The following section describes the functions of the BAPI component of BOARD Connector. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with table](./getting-started). <br>
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with BOARD Connector](./getting-started). <br>
+
+### How to use the BAPI component
+{% include _content/en/board-specific/define-extraction.md %}
+<br>
+More information on working with the BAPI component is provided in the following sections.
+
+---
 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

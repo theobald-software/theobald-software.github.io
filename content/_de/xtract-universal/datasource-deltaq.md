@@ -11,14 +11,19 @@ weight: 60
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=datasource-deltaq
 ---
-### Über DeltaQ
 
 {: .box-warning } 
 **Warnung! Neuere Komponente verfügbar.**<br>
 Xtract Universal DeltaQ ist eine alte Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
 
-### So verwenden Sie DeltaQ
-Zum Verständnis der folgenden Abschnitte sind Grundkenntnisse über Xtract Universal erforderlich, siehe [Erste Schritte mit Xtract Universal](./erste-schritte).
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](../erste-schritte) beschrieben.
 
-Die folgenden Abschnitte enthalten Details zu den notwendigen Customizing-Einstellungen und zur Konfiguration.
+### DeltaQ verwenden
+{% include _content/de/xu-specific/define-extraction.md %}
+<br>
+Weitere Informationen zum Arbeiten mit der DeltaQ Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

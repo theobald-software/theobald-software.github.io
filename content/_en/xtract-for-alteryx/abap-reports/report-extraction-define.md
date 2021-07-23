@@ -12,7 +12,7 @@ lang: en_GB
 
 
 
-The following section shows how to use the Report Component. <br>
+The following section shows how to use the Report component. <br>
 
 {% include _content/en/abap-reports/report-workflow.md %}
 

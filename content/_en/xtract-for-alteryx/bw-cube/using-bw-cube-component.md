@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
+The following section shows how to use the BW Cube component.
 The BW Cube component can be used to extract data from BW InfoProviders (e.g., Cubes) directly or from BW Queries. The BW Queries, in this case, can be based on all possible InfoProviders. <br>
 A common approach for this the extraction is to build the query that meets the business requirements.
 

@@ -11,9 +11,17 @@ weight: 50
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-infocubes-und-bex-queries
 ---
-Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal BW Cube Komponente. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Der folgende Abschnitt beschreibt die Funktion der Xtract Universal BW Cube Komponente.<br>
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
+
+
+### BW Cube verwenden
+{% include _content/de/xu-specific/define-extraction.md %}
+<br>
+Weitere Informationen zum Arbeiten mit der BW Cube Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

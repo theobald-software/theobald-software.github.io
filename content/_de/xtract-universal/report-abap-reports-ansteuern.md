@@ -11,14 +11,17 @@ weight: 80
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=report-abap-reports-ansteuern
 ---
-Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal Report Komponente. 
-Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
-
-{: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.
-
+Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Report Komponente.<br>
 {% include _content/de/abap_reports/report-about.md %}
 
-*****
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
+
+### Report verwenden
+{% include _content/de/xu-specific/define-extraction.md %}
+<br>
+Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

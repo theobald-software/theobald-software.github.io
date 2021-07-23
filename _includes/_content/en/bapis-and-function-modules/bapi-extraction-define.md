@@ -1,4 +1,3 @@
-The following section shows how to use the BAPI Component.
 
 ### Look up a BAPI
 

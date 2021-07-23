@@ -13,9 +13,16 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=bw-open-hub-services
 ---
 
 The following section describes the functions of the OHS Component of BOARD Connector. <br>
-Basic BOARD Connector the knowledge is required to understand the following sections. <br>
+
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with table](./getting-started). <br>
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](../getting-started).
+
+### How to use the OHS component
+{% include _content/en/board-specific/define-extraction.md %}
+<br>
+More information on working with the OHS component is provided in the following sections.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

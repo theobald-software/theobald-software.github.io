@@ -10,6 +10,8 @@ weight: 1
 lang: de_DE
 progressstate: 5
 ---
+Der folgende Abschnitt beschreibt die Anwendung der BW Hierarchy Komponente.
+
 ### Nach einer BW Hierarchy suchen
 
 1. Im Hauptfenster des Designers navigieren Sie zum Unterabschnitt **Hierarchy Extraction** und klicken Sie auf  **Search** (Lupensymbol)(1). Das Fenster "Hierarchy Lookup" wird geöffnet. 

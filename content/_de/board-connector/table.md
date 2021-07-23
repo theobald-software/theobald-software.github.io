@@ -10,9 +10,17 @@ permalink: /:collection/:path
 weight: 18
 lang: de_DE
 ---
-
+Der folgende Abschnitt beschreibt die Funktion der BOARD Connector Table Komponente.<br>
 Mit der Komponente *SAP Table or View* lassen sich Inhalte aus SAP Tabellen und Views abziehen. 
 
-Der Einstieg in die Komponente und die Grundfunktionalitäten sind im Abschnitt [Erste Schritte mit Table](./erste-schritte) erläutert.    
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](../erste-schritte) beschrieben.
+
+### Table verwenden
+{% include _content/de/board-specific/define-extraction.md %}
+<br>
+Weitere Informationen zum Arbeiten mit der Table Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

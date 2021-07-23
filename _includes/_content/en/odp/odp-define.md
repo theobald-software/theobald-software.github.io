@@ -1,5 +1,3 @@
-The following section shows how to use the Xtract ODP component.
-
 ### To Search for a Data Object
 1. Within the main window of the component "Xtract ODP" navigate to **Operational Data Provider** and click **Search** (magnifying glass symbol) (1). <br>
 The window "Operational Data Provider Lookup" opens.

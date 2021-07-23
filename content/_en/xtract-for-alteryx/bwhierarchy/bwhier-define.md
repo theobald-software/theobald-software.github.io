@@ -9,6 +9,8 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
+The following section shows how to use the BW Hierarchy component.
+
 ### To Search for a BW Hierarchy
 
 1. In the main window of the component navigate to subsection **Hierarchy Extraction** and click **Search** (magnifying glass symbol)(1). The window "Hierarchy Lookup" opens.

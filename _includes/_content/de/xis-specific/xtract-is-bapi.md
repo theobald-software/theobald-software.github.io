@@ -1,4 +1,3 @@
-Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.<br>
 Die Xtract IS BAPI Datenquelle wurde entwickelt, um BAPIs und RFC-Funktionsbausteine im SAP aufzurufen und so in das SSIS-Paket einzubinden. 
 Auch wenn Xtract IS BAPI per Definition eine Quelle ist, kann sie auch als Ziel genutzt werden.
 
@@ -13,7 +12,8 @@ Auch wenn Xtract IS BAPI per Definition eine Quelle ist, kann sie auch als Ziel 
 3.	Doppelklicken Sie auf die Komponente. Das Fenster "BAPI" öffnet sich.
 
 Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.<br>
-Weitere Informationen zum Arbeiten mit der Komponente finden Sie in den folgenden Unterabschnitten:
+Weitere Informationen zum Arbeiten mit der Komponente finden Sie in den folgenden Unterabschnitten.
 
-****
+---
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

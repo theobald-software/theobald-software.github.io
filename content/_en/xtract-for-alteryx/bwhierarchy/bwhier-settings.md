@@ -1,7 +1,7 @@
 ---
 ref: xfa-bwhier-settings
 layout: page
-title: Xtract Hierarchy Extraction Settings
+title: Extraction Settings
 description: BW Hierarchy Settings
 product: xtract-for-alteryx
 parent: bwhierarchy

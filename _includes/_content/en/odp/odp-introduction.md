@@ -1,7 +1,5 @@
+The Xtract ODP component can be used to extract data via the SAP Operational Data Provisioning (ODP) framework.
 
-### About Xtract ODP
-
-The Xtract ODP component can be used to extract data via the SAP Operational Data Provisioning (ODP) framework. 
 
 ODP is a framework in SAP ABAP applications for transferring data between systems.<br> 
 ODP provides a technical infrastructure for data extraction and replication from different SAP (ABAP) Systems e.g.:
@@ -29,7 +27,7 @@ DataSources/Extractors [[SAPI](./odp/odp-extractors)] | - DataSources and Extrac
 **Note:** Depending on the connected SAP source system there are differences in available provider context. 
 
 
-### Technical Prerequisites
+### Technical prerequisites
 
 There are a few prerequisites that need to be fulfilled on the SAP side, when using ODP. SAP released a number of SAP notes that apply when using Xtract ODP component:
 - [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427)

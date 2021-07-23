@@ -1,8 +1,8 @@
 ---
 ref: xu-bw-hierarchies-01
 layout: page
-title: Hierarchien als Datenquelle definieren
-description: Hierarchien als Datenquelle definieren
+title: Eine BW Hierarchie Extraktion definieren
+description: Eine BW Hierarchie Extraktion definieren
 product: xtract-universal
 parent: bw-hierarchien
 permalink: /:collection/:path

@@ -12,7 +12,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-### About the Table Component
+The following section describes the functions of the Table component of Xtract for Alteryx.<br>
 The Table component can be used to extract content from SAP tables and views and process it in Alteryx.
 The Table component is also used to join several tables on the SAP side, see [Table Joins](./table/table-joins).<br> 
 
@@ -21,7 +21,9 @@ Table component supports the following table types:
 - Pool tables
 - Cluster tables
 
-For an introduction to the component and its basic functions, see [Getting Started with Xtract for Alteryx](./getting-started).
+
+{: .box-tip }
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](../getting-started).
 
 {: .box-note }
 **Note:** when extracting tables from SAP you may encounter several **restrictions** when using the SAP standard function module (RFC_READ_TABLE).<br>
@@ -35,16 +37,19 @@ See further information on possible restrictions and on installing the [custom f
 {: .box-tip }
 **Tip:** ODP component is a more convenient option for incremental extraction e.g., using [extractors](./odp/odp-extractors).
 
-### To Use Table Component
+### How to use the Table component
 
-1. Drag & drop "Xtract Table" to your Alteryx workflow.
-2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the Table component opens.
+1. Drag & drop the "Xtract Table" component to your Alteryx workflow.
+2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
 
 The majority of the functions of the component can be accessed using the main window.
 
-### Table Main Window - Functions Overview
+### Functions overview
 The following sections give an overview over the functions that can be accessed over the main component window.
 ![Table Extractor](/img/content/xfa/xfa-table-extractor.png){:class="img-responsive"}
 
-The following sections contain details on the component:
+More information on working with the Table component is provided in the following sections.
+
+---
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

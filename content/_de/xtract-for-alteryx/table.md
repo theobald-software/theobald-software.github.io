@@ -11,16 +11,17 @@ weight: 9
 lang: de_DE
 ---
 
-### Über die Table-Komponente
-Die Table-Komponente kann verwendet werden, um Inhalte aus SAP-Tabellen und Views zu extrahieren und sie in Alteryx zu verarbeiten.
-Die Table-Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe [Table-Joins](./table/table-joins).<br> 
+Der folgende Abschnitt beschreibt die Funktion der Xtract for Alteryx Table Komponente. <br>
+Die Table Komponente kann verwendet werden, um Inhalte aus SAP-Tabellen und Views zu extrahieren und sie in Alteryx zu verarbeiten.
+Die Table Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe [Table-Joins](./table/table-joins).<br> 
 
 Die Table-Komponente unterstützt die folgenden Tabellentypen:
 - Transparente Tabellen
 - Pool-Tabellen
 - Cluster-Tabellen
 
-Eine Einführung in die Komponente und ihre Grundfunktionen finden Sie unter [Erste Schritte mit Xtract for Alteryx](./erste-schritte).
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](../erste-schritte) beschrieben.
 
 {: .box-note }
 **Hinweis:** Beim Extrahieren von Tabellen aus SAP können Sie bei der Verwendung des SAP-Standardfunktionsbausteins (RFC_READ_TABLE) auf einige **Einschränkungen** stoßen.<br>
@@ -34,16 +35,19 @@ Weitere Informationen zu möglichen Einschränkungen und zur Installation des Z-
 {: .box-tip }
 **Tipp:** Die ODP-Komponente ist eine bequemere Option für die inkrementelle Datenextraktion, z.B. mit Hilfe von [Extraktoren](./odp/odp-extractors).
 
-### Table-Komponente verwenden
+### Table verwenden
 
-1. Ziehen Sie "Xtract Table" per drag & drop auf Ihr Alteryx-Workflow.
+1. Ziehen Sie die "Xtract Table" Komponente per drag & drop auf Ihr Alteryx-Workflow.
 2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu der **gewählten Extraktion** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
 
 Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
 
-### Table Hauptfenster - Funktionsübersicht
+### Funktionsübersicht
 Die folgenden Abschnitte geben einen Überblick über die Funktionen, auf die über das Hauptkomponentenfenster zugegriffen werden kann.
 ![Table Extractor](/img/content/xfa/xfa-table-extractor.png){:class="img-responsive"}
 
-Die folgenden Abschnitte enthalten Einzelheiten zu der Komponente:
+Weitere Informationen zum Arbeiten mit der Table Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
