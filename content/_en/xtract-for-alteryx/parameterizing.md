@@ -49,7 +49,7 @@ Enter a formular directly into the **Formula** field at the bottom of the menu o
 Some Xtract components don't use runtime parameters, but have other settings available for parameterization in the *Action Configuration* menu.
 
 Example: Parameterizing a WHERE-clause of an Xtract Table component <br>
-- To parameterize a where clause, mark the WHERE-clause in the tree menu *Value or Attribute to Update*.<br>
+- To parameterize a WHERE-clause, mark the WHERE-clause in the tree menu *Value or Attribute to Update*.<br>
 - To parameterize only parts of a WHERE-clause, activate **Replace a specific string** and specify what part of the WHERE-clause is to be replaced e.g., in the where clause `KNA1~LAND1 = 'param'` "param" can be used as a placeholder for the actual input.
 ![WHERE-clause-parameter](/img/content/xfa/table-where-parameterize.png){:class="img-responsive"}
 
