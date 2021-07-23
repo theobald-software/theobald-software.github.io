@@ -50,7 +50,7 @@ Some Xtract components don't use runtime parameters, but have other settings ava
 
 Example: Parameterizing a WHERE-clause of an Xtract Table component <br>
 - To parameterize a WHERE-clause, mark the WHERE-clause in the tree menu *Value or Attribute to Update*.<br>
-- To parameterize only parts of a WHERE-clause, activate **Replace a specific string** and specify what part of the WHERE-clause is to be replaced e.g., in the where clause `KNA1~LAND1 = 'param'` "param" can be used as a placeholder for the actual input.
+- To parameterize only parts of a WHERE-clause, activate **Replace a specific string** and specify what part of the WHERE-clause is to be replaced e.g., in the WHERE-clause `KNA1~LAND1 = 'param'` "param" can be used as a placeholder for the actual input.
 ![WHERE-clause-parameter](/img/content/xfa/table-where-parameterize.png){:class="img-responsive"}
 
 ### Integrate the Batch Macro into a Workflow
