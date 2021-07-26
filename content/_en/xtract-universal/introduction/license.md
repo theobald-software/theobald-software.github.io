@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 progressstate: 5
 ---
-### About licensing concept of Xtract Universal
+### About the licensing concept of Xtract Universal
 Xtract Universal is licensed per target environment, source system and Windows server. <br>
 The following graphic shows the on which workstations the installation of Xtract Universal with a valid license required.   
 

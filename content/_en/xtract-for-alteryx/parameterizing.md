@@ -16,7 +16,7 @@ To pass parameters to Xtract components in Alteryx, you can use a [batch macro](
 The following example shows how to parameterize the Xtract ODP component.
 
 {: .box-note}
-**Note:** As of now the parameterization using batch macros and control parameters is only supported for components Xtract BAPI, Xtract ODP and Xtract Table.
+**Note:** As of now, the parameterization using batch macros and control parameters is only supported for the components Xtract BAPI, Xtract ODP and Xtract Table.
 
 ### Create an Extraction
 The goal of this example is to parameterize a selection filter for the DataSource *0MATERIAL_ATTR*, so that only materials with a material number between the parameters *p_MATNR_low* and *p_MATNR_high* are extracted. 
