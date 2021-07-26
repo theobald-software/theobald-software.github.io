@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 progressstate: 5
 ---
 
-YunIO is a Windows service that comes with an embedded Web UI.
+YunIO is a Windows service that comes with an embedded Web UI.<br>
 The YunIO service is installed on a local or cloud-hosted Windows server environment. 
 
 ### Setup
@@ -69,3 +69,4 @@ informs about changes in the version history and release notes.
 knowledge base to check, if an update is needed.
 4. Create a backup of the current installation.
 5. Conduct any necessary preparations and changes as described in the Release Note / Version History.
+

@@ -13,9 +13,9 @@ lang: en_EN
 The following section gives a general introduction to working with YunIO. 
 The information described in the following section is a prerequisite for all subsequent sections.
 
-### Web UI 
+### Starting YunIO
 
-1. Make sure that the YunIO service is running.
+1. Make sure that the *YunIO* service is running.
 2. Open a browser of your choice.
 3. The URL pattern to access the YunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
 	- If the YunIO service runs on a local server, replace `[host]` with *localhost*.
@@ -24,7 +24,7 @@ The information described in the following section is a prerequisite for all sub
 	- You can configure the port under *Settings* in the YunIO Web UI.
 4. Enter the URL to access the YunIO Web UI.
 
-### Add an SAP Connection
+### Adding an SAP Connection
 
 In *Connection* you can add new SAP connections and edit or delete existing connections.
 

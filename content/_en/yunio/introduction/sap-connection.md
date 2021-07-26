@@ -31,9 +31,9 @@ The menu to create and edit SAP connections is divided into 3 subsections:
 - [Authentication](#authentication)
 - [Test Connection](#test-the-sap-connection)
 
-![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive"}
-
 Fill out the connection details to establish an SAP connection.
+
+![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive"}
 
 ### System
 There are two possibilities to connect to an SAP source system:
@@ -56,10 +56,9 @@ See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/
 #### Accessing via SAP router
 
 If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name. <br>
-Example:<br>
 If the application server is "hamlet" and the router string is ``/H/lear.theobald-software.com/H/``, set the host property to ``/H/lear.theobald-software.com/H/hamlet``.
 
-See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm).
+See also [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm) in the SAP online help.
 
 
 ### Authentication
