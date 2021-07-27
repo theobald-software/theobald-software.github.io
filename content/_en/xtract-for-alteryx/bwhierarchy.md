@@ -31,7 +31,7 @@ The window "Hierarchy Extractor" consists out of two subsections:
 ![Hierarchy Extractor](/img/content/xfa/xfa_hierarchy.png){:class="img-responsive"}
 
 #### Hierarchy Extraction
-Within the subsection **Hierarchy Extraction** you can [search for SAP BW hierarchies](./bwhierarchy/bwhier-define) using the **Hierarchy Lookup** (magnifying glass symbol).
+Within the subsection **Hierarchy Extraction** you can [search for SAP BW hierarchies](./bwhierarchy/bwhier-define) using **[Search]** (magnifying glas icon).
 ![Hierarchy search](/img/content/xfa/xfa_hierarchy_search.png){:class="img-responsive"}
 
 **Date To**<br>

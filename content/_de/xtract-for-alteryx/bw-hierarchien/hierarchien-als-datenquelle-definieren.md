@@ -12,13 +12,14 @@ progressstate: 5
 ---
 Der folgende Abschnitt beschreibt die Anwendung der BW Hierarchy Komponente.
 
-### Nach einer BW Hierarchy suchen
+### Eine BW Hierarchy finden
 
-1. Im Hauptfenster des Designers navigieren Sie zum Unterabschnitt **Hierarchy Extraction** und klicken Sie auf  **Search** (Lupensymbol)(1). Das Fenster "Hierarchy Lookup" wird geöffnet. 
+1. Im Hauptfenster des Designers navigieren Sie zum Unterabschnitt **Hierarchy Extraction** und klicken Sie auf  **[Suche]** (Lupensymbol)(1).  
 ![Define-Data-Source-Hierarchy](/img/content/xfa/Define-Data-Source-Hierarchy_1.png){:class="img-responsive"}
+Das Fenster "Hierarchy Lookup" wird geöffnet.
 2. Im Feld **Hierarchy Name** (2) geben Sie einen Namen eines beliebigen Extraktors, verwenden Sie Wildcards (*), falls notwendig.
 ![Look-Up-Hierarchy](/img/content/extractors.bwhier/Look-Up-Hierarchy.png){:class="img-responsive"}
-3. Klicken Sie auf **Search** (Lupensymbol)(3) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste(4).
+3. Klicken Sie auf **[Suche]** (Lupensymbol)(3) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste(4).
 4. Klicken Sie auf **[OK]** (5) zum Bestätigen.
 
 Klicken auf **[[Extraction Settings](./hierarchie-extraktionseinstellungen)]**, um die Hierarchieeinstellungen zu definieren.

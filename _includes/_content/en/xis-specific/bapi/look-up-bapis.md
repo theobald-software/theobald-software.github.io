@@ -1,20 +1,13 @@
-The following section shows how to use the BAPI Component.
-
-### Defining a BAPI Extraction
-
-1. A valid connection manager connected to a SAP system must be defined, see section [Connection Manager](../sap-connection/the-connection-manager).
-2. Drag&Drop the BAPI component into your Data Flow.
-3. Double-click the component. The window "BAPI" opens.
-
-![BAPI-Editor](/img/content/BAPI-Editor.png){:class="img-responsive"}
 
 ### Look up a BAPI
 
-1. In the main window of the component click the **[magnifiying glass symbol]**. The window “Function Module Lookup” opens.
+1. Click **[Search]** (binoculars icon) in the main window of the component.
+![BAPI-Editor](/img/content/BAPI-Editor.png){:class="img-responsive"}
+ The dialog “Function Module Lookup” opens.
 2. Enter the name of a BAPI or function module in the **Function Name** field(1). You can use wildcards (*) if needed.<br>
 Alternatively you can search for function groups.
 ![Look-Up-Function-Module](/img/content/Look-Up-Function-Module.png){:class="img-responsive"}
-3. Click the **[magnifiying glass symbol]** (2) and select an item from the displayed list (3).
+3. Click the **[Search]** (magnifiying glass icon)(2) and select an item from the displayed list (3).
 4. Click **[OK]** (4) to confirm.
 
 

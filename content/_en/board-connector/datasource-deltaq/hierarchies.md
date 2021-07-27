@@ -11,7 +11,7 @@ lang: en_GB
 progressstate: 3
 ---
 ### Select Data Source
-As shown in [Defining an extractor](./extraction-define), select in the editor "Look Up OLTP Source" by using the **Search** (magnifying glass symbol) an **OLTP Source Name**.
+As shown in [Defining an extractor](./extraction-define), select in the editor "Look Up OLTP Source" by using the **[Suche]** (Lupensymbol) an **OLTP Source Name**.
 
 Example: Data source *0COSTCENTER_0101_HIER*.
 ![DeltaQ-Hierarchy-001](/img/content/DeltaQ-Hierarchy-001.png){:class="img-responsive"}

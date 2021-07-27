@@ -1,21 +1,21 @@
 ### Schritt 1: Extraktor suchen (1)
 
-Suchen Sie im Editor "Look Up OLTP Source" mit Hilfe der **Suche** (Lupensymbol) nach **OLTP Source** (Datenquelle). Bei Bedarf können Sie Wildcards (*) verwenden.
-
-Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSource *0MATERIAL_ATTR*.
-
+Suchen Sie Hauptfenster mit Hilfe der **Suche** (Lupensymbol) nach **OLTP Source** (Datenquelle)(1). Bei Bedarf können Sie Wildcards (*) verwenden.
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
-
+Der Dialog "Look Up OLTP Source" öffnet sich.
+Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSource *0MATERIAL_ATTR*.
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
 
 ### Schritt 2: Update Mode einstellen (2)
 
-Das **Full** Update fordert alle Daten an, die den von Ihnen eingestellten Auswahlkriterien entsprechen. Um eine echte **Delta**-Prozedur zum Laufen zu bringen, muss das Delta zunächst initialisiert werden, siehe unter [Delta](./datasource-delta).<br>
+Das **Full** Update (2) fordert alle Daten an, die den von Ihnen eingestellten Auswahlkriterien entsprechen. Um eine echte **Delta**-Prozedur zum Laufen zu bringen, muss das Delta zunächst initialisiert werden, siehe unter [Delta](./datasource-delta).<br>
 Um eine Übersicht zu erhalten, welche Aktualisierungsmodi zur Verfügung stehen, siehe unter [Update Mode](./update-modus).
 
 ### Schritt 3: Spalten auswählen
 
-Setzen Sie die Häkchen neben den Spalten, die Sie extrahieren möchten. Beispiel:
+Setzen Sie die Häkchen neben den Spalten, die Sie extrahieren möchten.<br>
+Für die Auswahl aller Einträge, klicken Sie auf **[Select All]**. Die Auswahl mit **[OK]** bestätigen.<br>
+Beispiel:
 
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
 

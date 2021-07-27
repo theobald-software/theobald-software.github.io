@@ -1,21 +1,21 @@
-### Step 1: Search for extractor (1)
+### Step 1: Look up an OLTP Source (1)
 
-Within the editor "Look Up OLTP Source", search for **OLTP Source** (Data Source) by using the **Search** (magnifying glass symbol). You can use wildcards (*), if needed.
-
-The search dialoge "Look Up OLTP Source" opens.
+Within the main window, search for **OLTP Source** (Data Source) by using the **[Search]** (magnifying glass icon)(1). You can use wildcards (*), if needed.
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
-
+The dialoge "Look Up OLTP Source" opens.
 The following example shows the download of material master data from the DataSource *0MATERIAL_ATTR*.
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
 
 ### Step 2: Set Update Mode (2)
 
-**Full Update** requests all data that meets the selection criteria you set. To get a real **Delta** procedure running, Delta first has to be initialized, see at [Delta](./datasource-delta).<br>
+**Full Update** (2) requests all data that meets the selection criteria you set. To get a real **Delta** procedure running, Delta first has to be initialized, see at [Delta](./datasource-delta).<br>
 To get an overview which update modes are available, see at [Update Mode](./update-mode).
 
 ### Step 3: Select Columns
 
-Tick the checkmarks next to the columns you would like to extract. See the following example:
+Tick the checkmarks next to the columns you would like to extract.<br>
+To select all entries, click **[Select All]**. Click **[OK]** to confirm.<br>
+See the following example:
 
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
 

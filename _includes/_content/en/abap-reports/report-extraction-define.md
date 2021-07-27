@@ -1,9 +1,4 @@
-
-
-The following section shows how to use the Report Component. <br>
-
-
-### Look Up a Report or Transaction
+### Look up a Report or Transaction
 1. In the main window of the component click the **[Search]** button (magnifying glass symbol). The window “Report Lookup” opens.
 2. In the field **Report Name** (1) enter the name of a report using wildcards (*) if needed. Alternatively you can search for SAP Transaction Codes by selecting TCODE.
 ![Look-Up-Report](/img/content/Look-Up-Report.png){:class="img-responsive"}

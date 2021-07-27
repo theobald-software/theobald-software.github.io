@@ -11,4 +11,5 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=suchen-einer-ohs-extraktion
 progressstate: 5
 ---
+Der folgende Abschnitt beschreibt die Anwendung der OHS Komponente.
 {% include _content/de/xis-specific/open-hub-service/suchen-einer-ohs-extraktion.md %}

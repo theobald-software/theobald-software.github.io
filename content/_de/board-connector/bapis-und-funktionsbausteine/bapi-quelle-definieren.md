@@ -10,5 +10,6 @@ weight: 1
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bapi-quelle-definieren
 ---
+Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.
 
 {% include _content/de/bapi/eine-bapi-quelle-definieren.md %}

@@ -12,7 +12,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-bw-cube-quelle-definieren
 ---
 Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.
 
-
 {% include _content/de/bw-infocubes-und-bex-queries/eine-bw-cube-quelle-definieren.md %}
 
 

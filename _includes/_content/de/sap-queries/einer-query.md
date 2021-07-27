@@ -1,7 +1,8 @@
 ### Eine Query finden
-1. Klicken Sie auf das **[Fernglassymbol]**. Das Fenster "Look Up Query" öffnet sich.
+1. Klicken Sie im Hauptfenster auf das **[Suche]** (Fernglassymbol). 
 ![SAPQuery-01](/img/content/SAPQuery-01.png){:class="img-responsive"}
-2. Suchen Sie nach **Query Name** oder **UserGroup** mit dem **[Lupensymbol]**, Sie können bei Bedarf Platzhalter (*) verwenden.
+Das Fenster "Look Up Query" öffnet sich.
+2. Suchen Sie nach **Query Name** oder **UserGroup** mit **[Suche]** (Fernglassymbol), Sie können bei Bedarf Platzhalter (*) verwenden.
 ![Query-Search](/img/content/Query-Search.png){:class="img-responsive" }
 3. Wählen Sie ein Element aus der Liste aus. 
 4. Klicken Sie auf **[OK]**, um die Auswahl zu bestätigen.

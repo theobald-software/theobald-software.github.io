@@ -1,9 +1,6 @@
+### Schritt 1: OLTP Source finden (1)
 
-Ziehen Sie eine DeltaQ-Komponente in den Datenflusstask und verknüpfen Sie diese wie gewohnt mit dem ConnectionManager.
-
-### Schritt 1: Extraktor suchen (1)
-
-Suchen Sie im Editor "Look Up OLTP Source" mit Hilfe der **Suche** (Lupensymbol) nach **OLTP Source** (Datenquelle). Bei Bedarf können Sie Wildcards (*) verwenden.
+Suchen Sie im Editor "Look Up OLTP Source" mit Hilfe der **[Suche]** (Lupensymbol) nach **OLTP Source** (Datenquelle). Bei Bedarf können Sie Wildcards (*) verwenden.
 
 Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSource *0MATERIAL_ATTR*.
 

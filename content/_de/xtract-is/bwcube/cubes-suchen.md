@@ -10,4 +10,6 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=cubes-suchen
 ---
+Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.
+
 {% include _content/de/xis-specific/bwcube/cubes-suchen.md %}

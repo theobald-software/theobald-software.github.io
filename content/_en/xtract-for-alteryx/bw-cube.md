@@ -31,7 +31,7 @@ The main window of the BW Cube component consists of two subsections and several
 ![Cube Extractor](/img/content/xfa/xfa-cube-query-overview.png){:class="img-responsive"}
 
 #### Cube or Query
-Within the subsection **Cube or Query** you can search for a Query or a BW Cube / InfoProvider using the **Cube or Query Lookup** (magnifying glass symbol).
+Within the subsection **Cube or Query** you can search for a Query or a BW Cube / InfoProvider using **[Search]** (magnifying glas icon).
 The *Key Figures*, *Dimensions* and *Properties* that can be selected for the output are displayed in this subsection. 
 
 

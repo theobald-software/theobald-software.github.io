@@ -1,11 +1,11 @@
 
-### Tabellen hinzufügen
+### Eine Tabelle finden
 
-1. Innerhalb des Fensters "Extract Single and Joint SAP Tables or Views" klicken Sie auf **[Add]**. Das Fenster "Table lookup" wird geöffnet.
+1. Innerhalb des Hauptfensters "Extract Single and Joint SAP Tables or Views" klicken Sie auf **[Add]**. Das Fenster "Table lookup" wird geöffnet.
 ![Table-Lookup](/img/content/table/table_main-window_add.png){:class="img-responsive" }
 2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden Tabelle ein.
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
-3. Klicken Sie auf **[Search]** (Vergrößerungsglas)(2).
+3. Klicken Sie auf **[Search]** (Lupensymbol)(2).
 Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
 4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **OK** (4). <br>
 

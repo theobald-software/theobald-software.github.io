@@ -10,15 +10,16 @@ weight: 1
 lang: de_DE
 progressstate: 5
 ---
+Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.<br>
 Die Komponente BW Cube kann verwendet werden, um Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. Die BW Queries können in diesem Fall auf allen möglichen InfoProvidern basieren. <br>
 Ein üblicher Ansatz für die Extraktion besteht darin, eine Abfrage zu erstellen, die Ihren Geschäftsanforderungen entspricht.
 
-### Nach BW Cube oder Query suchen
-1. Im Hauptfenster des Designers navigieren Sie zum Unterabschnitt **Cube or Query** und klicken Sie auf  **Search** (Lupensymbol). Das Fenster “Cube or Query Lookup” wird geöffnet.
+### BW Cube oder Query finden
+1. Im Hauptfenster des Designers navigieren Sie zum Unterabschnitt **Cube or Query** und klicken Sie auf  **[Suche]** (Lupensymbol). Das Fenster “Cube or Query Lookup” wird geöffnet.
 ![Cube Query search](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
 2. Geben Sie im Feld **Name** (1) den Namen des Query oder des BW Cubes / InfoProviders ein. Die Verwendung von Wildcards (*) ist unterstützt. 
 3. Definieren Sie den Typ des gesuchten Objekts im Feld **Type** (2).
-4. Klicken Sie auf **Search** (Lupensymbol) (3).
+4. Klicken Sie auf **[Suche]** (Lupensymbol) (3).
 5. Wählen Sie (4) das Objekt aus der Liste und klicken Sie auf **[OK]** (5) zum Bestätigen.
 
 ### Auswählen von Messwerten ( Key Figures), Abmessungen und Eigenschaften
