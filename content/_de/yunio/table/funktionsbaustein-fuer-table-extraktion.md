@@ -1,7 +1,7 @@
 ---
 ref: yunio-table-07
 layout: page
-title: Einschränkungen umgehen
+title: SAP Funktionsbaustein für Tabellen
 description: Einschränkungen umgehen
 product: yunio
 parent: table
@@ -10,6 +10,4 @@ weight: 7
 lang: de_DE
 ---
 
-{% include _content/de/table/einschraenkungen-umgehen.md  %}
-
-
+{% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}

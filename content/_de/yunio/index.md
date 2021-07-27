@@ -31,6 +31,6 @@ Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um da
 
 YunIO bietet zwei Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 
-- [**BAPI/Funktionsbausteine**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**Table**](./table) extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+- [**Funktionsbausteine**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsbausteine zu.
+- [**SAP Table und Views**](./table) extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 

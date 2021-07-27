@@ -13,8 +13,10 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einfuehrung
 progressstate: 5
 ---
 
-YunIO ist ein Konnektor der eine Konfigurationsplattform zum Einrichten der Konnektivität zwischen SAP- und Cloud-Anwendungen zur Verfügung stellt.
+YunIO ist ein Konnektor, der .json basierte Webservices zur Verfügung stellt, um Daten in und aus SAP-Systemen zu schreiben.<br>
+Die Webservices können einfach in Ihren Workflow integriert werden, z.B. in Power Automate, Nintex, Swagger und weitere.
 
+*****
 Die folgenden Abschnitte bieten einen Überblick über die Voraussetzungen und die Installation von YunIO.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

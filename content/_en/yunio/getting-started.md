@@ -26,7 +26,7 @@ The information described in the following section is a prerequisite for all sub
 
 ### Adding an SAP Connection
 
-In *Connection* you can add new SAP connections and edit or delete existing connections.
+In the *Connection* menu you can add new SAP connections and edit or delete existing connections.
 
 1. To add a new SAP connection, click **[Add Connection]**.<br>
 To edit an existing connection, click on the connection you want to edit.
@@ -37,25 +37,26 @@ To edit an existing connection, click on the connection you want to edit.
 
 For more detailed information on the SAP connection, see [SAP Connection](./introduction/sap-connection).
 
-### Creating an Extraction
+### Creating a Service
 
-In *Services* you can create new extractions and edit, run or delete  existing extractions.
+In the *Services* menu you can create new services and edit, run or delete existing services.
 
-1. Click **[Add Service]** to add a new extraction.
-2. In the section *Endpoint* enter a name for the extraction and choose an SAP connection under **Source System**.
-3. Choose **SAP Table or View** or **RFC Function Module or BAPI** as the *Extraction TYpe*.
+1. Click **[Add Service]** to add a new service.
+2. In the section *Endpoint* enter a name for the service and choose an SAP connection under **Source System**.
+3. Choose **SAP Table or View** or **RFC Function Module or BAPI** as the *Extraction Type*.
 4. Optional: You can add a short description for the extraction.
 5. Click **[Next]**.
-6. Enter the name of the Table/BAPI to be extracted in the field **Search Term**. You can use wildcards ( * ) in your search.
+6. Enter the name of the Table or View/Function Module to be extracted in the field **Search Term**. You can use wildcards ( * ) in your search.
 7. Click **[Search]** to display the search results.
 8. Select a source file by clicking on their name.
-9. Depending on the chosen extraction type, you can enter further settings, see [Table](./table) or [BAPI](./bapi).
-10. Click **[Save]** to save your input. <br>
-You can edit the extraction by clicking **[..]** next to the extraction and selecting **Edit**.
+9. Depending on the chosen extraction type, you can enter further settings, see [SAP Table or View](./table) or [Function Module](./bapi).
+10. Click **[Save]**. <br>
+
+Edit the service in the *Services* menu by by clicking on the name of the service.
 
 
 *****
 #### Related Links
-- [BAPI](./bapi)
-- [Table](./table)
+- [Function Module](./bapi)
+- [SAP Table or Views](./table)
 
