@@ -1,7 +1,7 @@
 ---
 ref: bc-table-01
 layout: page
-title: Tabellen und Felder
+title: Eine Table Extraktion definieren
 description: Tabellen und Felder
 product: board-connector
 parent: table
