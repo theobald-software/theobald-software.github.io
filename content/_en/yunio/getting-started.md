@@ -48,12 +48,18 @@ In the *Services* menu you can create new services and edit, run or delete exist
 5. Click **[Next]**.
 6. Enter the name of the Table or View/Function Module to be extracted in the field **Search Term**. You can use wildcards ( * ) in your search.
 7. Click **[Search]** to display the search results.
-8. Select a source file by clicking on their name.
+8. Select a data source.
 9. Depending on the chosen extraction type, you can enter further settings, see [SAP Table or View](./table) or [Function Module](./bapi).
 10. Click **[Save]**. <br>
 
 Edit the service in the *Services* menu by by clicking on the name of the service.
 
+### How to Use the Services
+
+.jason protocol...
+*Service*
+*OpenAPI*
+*Swagger*
 
 *****
 #### Related Links
