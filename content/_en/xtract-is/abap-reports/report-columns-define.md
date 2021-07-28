@@ -10,4 +10,4 @@ weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=defining-report-columns
 ---
-{% include _content/en/xis-specific/report/report-columns-define.md %}
+{% include _content/en/abap-reports/report-columns-define.md %}

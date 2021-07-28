@@ -10,4 +10,5 @@ weight: 5
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=report-settings
 ---
-{% include _content/de/xis-specific/abap-reports/report-settings.md %}
+
+{% include _content/de/abap_reports/report-extraktionseinstellungen.md %}
