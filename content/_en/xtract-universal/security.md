@@ -32,8 +32,7 @@ Xtract Universal supports two different methods of transport encryption:
 -	[Kerberos](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx)
 -	[Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol)
 
-{: .box-note }
-**Note:** The encryption is implemented using the standard .NET APIs.
+The encryption is implemented using the standard .NET APIs.
 The ciphers are chosen automatically depending on the operating system of the machine running the Xtract Universal Server, see [Cipher Suites in TLS/SSL](https://docs.microsoft.com/en-us/windows/win32/secauthn/cipher-suites-in-schannel) and [SslStream Class](https://docs.microsoft.com/en-us/dotnet/api/system.net.security.sslstream?view=net-5.0) for more detailed information.
 
 ### Access Control
