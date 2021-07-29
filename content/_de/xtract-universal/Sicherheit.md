@@ -34,6 +34,11 @@ Es werden zwei Verfahren zur Transportverschlüsselung unterstützt:
 -	[Kerberos](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx)
 -	[Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol)
 
+{: .box-note }
+**Note:** Der Algorithmus, der für die Transport Layer Security verwendet wird, ist abhängig vom Betriebssystem und dem .NET Framework der Maschine, auf der der Xtract Universal Server läuft. 
+Siehe [Cipher Suites in TLS/SSL](https://docs.microsoft.com/en-us/windows/win32/secauthn/cipher-suites-in-schannel) und [SslStream Class](https://docs.microsoft.com/en-us/dotnet/api/system.net.security.sslstream?view=net-5.0) für detailierte Informationen.
+
+
 
 ### Zugriffskontrolle
 Die Sicherheitsmethode der Zugriffskontrolle ermöglicht die Zugriffsgewährung und -einschränkung für bestimmte Benutzer oder Benutzergruppen. 
