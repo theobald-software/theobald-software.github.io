@@ -1,13 +1,3 @@
-### Über diese Seite
-
-Dieser Abschnitt behandelt den eingeschränkten Zugriff zu dem integrierten Webserver von Xtract Universal/Board Connector.
-Durch Zugriffsbeschränkungen auf den Webserver können nur ausgewählte Benutzer Extraktionen ausführen.
-
-Es gbt zwei Typen von [Benutzern und Benutzergruppen](benutzerverwaltung#benutzer-und-benutzergruppen), auf die der Zugriff eingeschränkt werden kann:
-- Windows AD Benutzer (Kerberos Authentication)
-- benutzerdefinierte Benutzer (Basic Authentication) 
-
-Wenn der Zugang zum Webserver eingeschränkt ist, müssen zum Ausführen einer Extraktion Windows AD Benutzerdaten oder Benutzerdaten eines benutzerdefinierten Benutzers übergeben werden.
 
 
 ### Voraussetzungen: Aktivierung der TLS Verschlüsselung

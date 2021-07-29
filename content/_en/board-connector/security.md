@@ -11,6 +11,8 @@ weight: 9
 lang: en_GB
 progressstate: 5
 ---
+
+
 Communication security between the Designer and the Server is provided using the following techniques:
 
 - Authentication
@@ -32,6 +34,6 @@ Xtract Universal supports two different methods of transport encryption:
 
 
 ### Access Control
-Access control security method allows the granting and restricting of access to certain users or user groups. 
+The access control security method allows the granting and restricting of access to certain users or user groups. 
 Access rights are assigned on the server level, but can be further restricted for selected extractions or sources.
 See also [Access Management](./security/access-management).

@@ -10,6 +10,18 @@ weight: 3
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=serversicherheit1
 ---
+
+### Über diese Seite
+
+Dieser Abschnitt behandelt den eingeschränkten Zugriff zu dem integrierten Webserver von Xtract Universal/Board Connector.
+Durch Zugriffsbeschränkungen auf den Webserver können nur ausgewählte Benutzer Extraktionen ausführen.
+
+Es gibt zwei Typen von [Benutzern und Benutzergruppen](benutzerverwaltung#benutzer-und-benutzergruppen), auf die der Zugriff eingeschränkt werden kann:
+- Windows AD Benutzer (Kerberos Authentication)
+- benutzerdefinierte Benutzer (Basic Authentication) 
+
+Wenn der Zugang zum Webserver eingeschränkt ist, müssen zum Ausführen einer Extraktion Windows AD Benutzerdaten oder Benutzerdaten eines benutzerdefinierten Benutzers übergeben werden.
+
 {% include _content/de/xu-specific/sicherheit/serversicherheit1.md %}
 
  {: .box-note}
