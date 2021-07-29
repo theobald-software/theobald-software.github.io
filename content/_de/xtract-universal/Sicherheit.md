@@ -31,13 +31,12 @@ weitere Details innerhalb der Servereinstellungen anpassen. Mehr Details finden 
 Die Sicherheitsmethode der Transportverschlüsselung verhindert das Ausspionieren oder Manipulieren der Daten (z.B. SAP-Credentials), die zwischen dem Designer und dem Server ausgetauscht werden. 
 
 Es werden zwei Verfahren zur Transportverschlüsselung unterstützt:
--	[Kerberos](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx)
--	[Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol)
+-	[Kerberos](https://msdn.microsoft.com/de-de/library/windows/desktop/aa374762(v=vs.85).aspx)
+-	[Transport Layer Security (TLS)](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol)
 
 {: .box-note }
-**Note:** Der Algorithmus, der für die Transport Layer Security verwendet wird, ist abhängig vom Betriebssystem und dem .NET Framework der Maschine, auf der der Xtract Universal Server läuft. 
-Siehe [Cipher Suites in TLS/SSL](https://docs.microsoft.com/en-us/windows/win32/secauthn/cipher-suites-in-schannel) und [SslStream Class](https://docs.microsoft.com/en-us/dotnet/api/system.net.security.sslstream?view=net-5.0) für detailierte Informationen.
-
+**Hinweis:** Die Verschlüsselung wurde unter Verwendung der .NET APIs implementiert. 
+Die Auswahl der Verschlüsselungssammlung hängt von dem Betriebssystem der Maschine ab, auf der der Xtract Universal Server läuft, siehe [Verschlüsselungs Sammlungen in TLS/SSL](https://docs.microsoft.com/de-de/windows/win32/secauthn/cipher-suites-in-schannel) und [SslStream Class](https://docs.microsoft.com/de-de/dotnet/api/system.net.security.sslstream?view=net-5.0) für weitere Informationen.
 
 
 ### Zugriffskontrolle
