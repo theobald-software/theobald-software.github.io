@@ -19,7 +19,7 @@ Der folgende Abschnitt beschreibt die Funktion der BOARD Connector OHS Komponent
 
 ### OHS verwenden
 {% include _content/de/board-specific/define-extraction.md %}
-<br>
+
 
 Weitere Informationen zum Arbeiten mit der OHS Komponente finden Sie in den folgenden Unterabschnitten.
 

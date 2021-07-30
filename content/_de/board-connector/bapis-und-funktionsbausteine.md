@@ -19,7 +19,7 @@ Der folgende Abschnitt beschreibt die Funktion der BOARD Connector BAPI Komponen
 
 ### BAPI verwenden
 {% include _content/de/board-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der BAPI Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

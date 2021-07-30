@@ -19,7 +19,7 @@ The following section describes the functions of the BW Cube component of BOARD 
 
 ### How to use the BW Cube component
 {% include _content/en/board-specific/define-extraction.md %}
-<br>
+
 More information on working with the BW Cube component is provided in the following sections.
 
 ---

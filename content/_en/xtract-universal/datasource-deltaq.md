@@ -12,6 +12,8 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=datasource-deltaq
 ---
 
+The following section describes the functions of the DeltaQ component of Xtract Universal.
+
 {: .box-warning } 
 **Warning! Newer component available.**<br>
 Xtract Universal DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)**.
@@ -22,7 +24,7 @@ Xtract Universal DeltaQ is an old component. If possible, use the newer componen
 
 ### How to use the DeltaQ component
 {% include _content/en/xu-specific/define-extraction.md %}
-<br>
+
 More information on working with the DeltaQ component is provided in the following sections.
 
 ---

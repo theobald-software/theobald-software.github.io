@@ -18,7 +18,7 @@ Der folgende Abschnitt beschreibt die Funktion der BOARD Connector BW Cube Kompo
 
 ### BW Cube verwenden
 {% include _content/de/board-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der BW Cube Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

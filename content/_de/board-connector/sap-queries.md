@@ -23,7 +23,7 @@ Wenn Sie eine BW Query als Datengrundlage verwenden möchten, siehe [BW InfoCube
 
 ### SAP Query verwenden
 {% include _content/de/board-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der SAP Query Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

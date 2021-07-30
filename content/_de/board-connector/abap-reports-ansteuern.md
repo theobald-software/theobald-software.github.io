@@ -19,7 +19,7 @@ Der folgende Abschnitt beschreibt die Funktion der BOARD Connector Report Kompon
 
 ### Report verwenden
 {% include _content/de/board-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

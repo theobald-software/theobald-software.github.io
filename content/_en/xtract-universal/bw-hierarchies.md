@@ -20,7 +20,7 @@ The component BW Hierarchy enables the extraction of hierarchies from an SAP BW 
 
 ### How to use the BW Hierarchy component
 {% include _content/en/xu-specific/define-extraction.md %}
-<br>
+
 More information on working with the BW Hierarchy component is provided in the following sections.
 
 ---

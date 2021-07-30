@@ -40,10 +40,6 @@ The window “ODP” contains the following subsections:<br>
 - **[[Advanced Settings](./odp/odp-settings#advanced-settings)]** - Includes the **package size** for the extraction.
 - **[Load Live Preview]** - Button to display a real-time preview of the extraction data without executing the extraction.
 
- *****
-#### Related Links
-- [SAP community Wiki](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646)
-
 More information on working with the ODP component is provided in the following sections.
 
 ---

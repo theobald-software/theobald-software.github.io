@@ -33,7 +33,6 @@ The following section describes the functions of the Xtract Table component of X
 
 More information on working with the Xtract Table component is provided in the following sections.
 
----
-
+****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 

@@ -23,7 +23,7 @@ If you want to use a BW Query as a data source, see [BW InfoCubes and BExQueries
 
 ### How to use the SAP Query component
 {% include _content/en/xu-specific/define-extraction.md %}
-<br>
+
 More information on working with the SAP Query component is provided in the following sections.
 
 --- 

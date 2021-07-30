@@ -20,7 +20,7 @@ The following section describes the functions of the OHS Component of BOARD Conn
 
 ### How to use the OHS component
 {% include _content/en/board-specific/define-extraction.md %}
-<br>
+
 More information on working with the OHS component is provided in the following sections.
 
 ---

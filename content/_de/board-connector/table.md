@@ -18,7 +18,7 @@ Mit der Komponente *SAP Table or View* lassen sich Inhalte aus SAP Tabellen und 
 
 ### Table verwenden
 {% include _content/de/board-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der Table Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

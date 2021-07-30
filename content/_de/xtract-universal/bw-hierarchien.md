@@ -19,7 +19,7 @@ Die Komponente BW Hierarchy ermöglicht die Extraktion von Hierarchien aus einem
 
 ### BW Hierarchy verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der BW Hierarchy Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

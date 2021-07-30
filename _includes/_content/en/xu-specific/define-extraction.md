@@ -6,4 +6,4 @@
 For information on how to create destinations, see [Loading an Extraction into a Database](./getting-started/load-an-extraction-into_database).
 5. Double click the extraction to open the main window of the component.
 
-The majority of the functions of the component can be accessed using the main window.<br>
+The majority of the functions of the component can be accessed using the main window.

@@ -19,7 +19,7 @@ The following section describes the functions of the ODP component of BOARD Conn
 
 ### How to use the ODP component
 {% include _content/en/xu-specific/define-extraction.md %}
-<br>
+
 More information on working with the ODP component is provided in the following sections.
 
 ---

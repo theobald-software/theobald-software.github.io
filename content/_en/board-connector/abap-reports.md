@@ -20,7 +20,7 @@ The following section describes the functions of the Report Component of BOARD C
 
 ### How to use the Report component
 {% include _content/en/board-specific/define-extraction.md %}
-<br>
+
 More information on working with the Report component is provided in the following sections.
 
 ---

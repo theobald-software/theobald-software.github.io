@@ -18,7 +18,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal OHS Komponen
 
 ### OHS verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der OHS Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

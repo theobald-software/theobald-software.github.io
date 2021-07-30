@@ -19,7 +19,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal BW Cube Komp
 
 ### BW Cube verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der BW Cube Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

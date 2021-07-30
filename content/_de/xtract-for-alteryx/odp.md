@@ -40,10 +40,6 @@ Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 - **[[Advanced Settings](./odp/odp-settings#fortgeschrittene-einstellungen)]** - Enthält Einstellungen für die **package size** der Extraktion.
 - **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
 
-****
-#### Weiterführende Links
-- [SAP community Wiki](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646)
-
 Weitere Informationen zum Arbeiten mit der ODP Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

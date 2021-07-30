@@ -34,6 +34,6 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract IS Table Komponente.<b
 
 Weitere Informationen zum Arbeiten mit der Xtract Table Komponente finden Sie in den folgenden Unterabschnitten.
 
----
+****
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

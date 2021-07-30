@@ -12,6 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
 The following section describes the functions of the Report component of Xtract Universal. <br>
+
 {% include _content/en/abap-reports/report-about.md %}
  
 {: .box-tip }
@@ -19,7 +20,7 @@ The following section describes the functions of the Report component of Xtract 
 
 ### How to use the Report component
 {% include _content/en/xu-specific/define-extraction.md %}
-<br>
+
 More information on working with the Report component is provided in the following sections.
 
 ---

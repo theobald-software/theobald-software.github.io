@@ -21,7 +21,7 @@ Xtract Universal DeltaQ ist eine alte Komponente. Wenn möglich, verwenden Sie d
 
 ### DeltaQ verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der DeltaQ Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

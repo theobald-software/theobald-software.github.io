@@ -21,7 +21,7 @@ DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)*
 
 ### How to use the DeltaQ component
 {% include _content/en/board-specific/define-extraction.md %}
-<br>
+
 
 More information on working with the DeltaQ Connector component is provided in the following sections.
 

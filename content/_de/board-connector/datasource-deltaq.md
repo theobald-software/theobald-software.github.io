@@ -21,7 +21,7 @@ DeltaQ ist eine alte Komponente. Wenn möglich verwenden Sie die neuere Komponen
 
 ### DeltaQ verwenden
 {% include _content/de/board-specific/define-extraction.md %}
-<br>
+
 
 Weitere Informationen zum Arbeiten mit der DeltaQ Connector Komponente finden Sie in den folgenden Unterabschnitten.
 

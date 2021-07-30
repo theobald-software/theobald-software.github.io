@@ -19,7 +19,7 @@ Der folgende Abschnitt beschreibt die Funktion der BOARD Connector ODP Komponent
 
 ### ODP verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
-<br>
+
 Weitere Informationen zum Arbeiten mit der ODP Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---

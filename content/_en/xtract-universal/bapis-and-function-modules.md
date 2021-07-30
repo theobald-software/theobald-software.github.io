@@ -19,7 +19,7 @@ The following section describes the functions of the BAPI component of Xtract Un
 
 ### How to use the BAPI component
 {% include _content/en/xu-specific/define-extraction.md %}
-<br>
+
 More information on working with the BAPI component is provided in the following sections.
 
 ---
