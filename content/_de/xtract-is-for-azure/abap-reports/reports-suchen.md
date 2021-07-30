@@ -10,5 +10,5 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=reports-suchen
 ---
-
+Der folgende Abschnitt beschreibt die Anwendung der Report Komponente.
 {% include _content/de/xis-specific/abap-reports/reports-suchen.md %}

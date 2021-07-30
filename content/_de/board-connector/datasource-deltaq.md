@@ -11,10 +11,20 @@ weight: 13
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=datasource-deltaq
 ---
+{: .box-warning } 
+**Warnung! Neuere Komponente verfügbar**<br>
+DeltaQ ist eine alte Komponente. Wenn möglich verwenden Sie die neuere Komponente **[ODP](./odp)**.
 
-Der folgende Abschnitt beschreibt die Anwendung der BOARD Connector DeltaQ Komponente . Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](../erste-schritte) beschrieben.
+
+### DeltaQ verwenden
+{% include _content/de/board-specific/define-extraction.md %}
+
+
+Weitere Informationen zum Arbeiten mit der DeltaQ Connector Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

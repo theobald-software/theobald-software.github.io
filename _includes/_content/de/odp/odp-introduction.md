@@ -1,8 +1,6 @@
-
-### Über Xtract ODP
-
 Die ODP-Komponente wird verwendet, um Daten über das SAP Operational Data Provisioning (ODP) Framework zu extrahieren. 
 
+### Über ODP
 ODP ist ein Framework in ABAP-basierten SAP-Systemen für den Datentransfer zwischen verschiedenen Systemen.<br> 
 ODP stellt eine technische Infrastruktur für die Datenextraktion und -replikation aus verschiedenen SAP (ABAP)-Systemen zur Verfügung, z.B.:
 - ECC 

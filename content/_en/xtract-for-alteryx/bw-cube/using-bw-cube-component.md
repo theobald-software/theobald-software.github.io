@@ -9,15 +9,16 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
+The following section shows how to use the BW Cube component.<br>
 The BW Cube component can be used to extract data from BW InfoProviders (e.g., Cubes) directly or from BW Queries. The BW Queries, in this case, can be based on all possible InfoProviders. <br>
 A common approach for this the extraction is to build the query that meets the business requirements.
 
-### To Search for a BW Cube or Query
-1. In the main window of the component navigate to subsection **Cube or Query** and click **Search** (magnifying glass symbol). The window “Cube or Query Lookup” opens.
+### Look up a BW Cube or Query
+1. In the main window of the component navigate to subsection **Cube or Query** and click **[Search]** (magnifying glas icon). The window “Cube or Query Lookup” opens.
 ![Cube Query search](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
 2. In the field **Name** (1) enter a name of a Query or a BW Cube / InfoProvider using wildcards (*), if needed. 
 3. Define the type of the searched object in the field **Type** (2).
-4. Click **Search** (magnifying glass symbol)(3).
+4. Click **[Search]** (magnifying glas icon)(3).
 5. Select (4) the object from the list and click **[OK]** (5) to confirm.
 
 ### Selecting Measure (Key Figures), Dimensions and Properties

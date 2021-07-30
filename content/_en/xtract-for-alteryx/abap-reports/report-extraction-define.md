@@ -9,18 +9,13 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
+The following section shows how to use the Report component. <br>
 
-
-
-The following section shows how to use the Report Component. <br>
-
-{% include _content/en/abap-reports/report-workflow.md %}
-
-### Look Up a Report or Transaction
-1. In the main window of the component click the **[Search]** button (magnifying glass symbol). The window “Report Lookup” opens.
+### Look up a Report or Transaction
+1. In the main window of the component click **[Search]** (magnifying glas icon). The window “Report Lookup” opens.
 2. In the field **Report Name** (1) enter the name of a report using wildcards (*) if needed. Alternatively you can search for SAP Transaction Codes by selecting TCODE.
 ![Look-Up-Report](/img/content/Look-Up-Report.png){:class="img-responsive"}
-3. Click **[Search]** (magnifying glass symbol) and select the report of your choice from the displayed list (3).
+3. Click **[Search]** (magnifying glas icon) (2) and select the report of your choice from the displayed list (3).
 4. Click **[OK]** (4) to confirm.
 
 
@@ -54,7 +49,7 @@ The following section shows how to use the Report Component. <br>
 #### Related Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
 
-
+{% include _content/en/abap-reports/report-workflow.md %}
 <!---
 ### Further reading..
 

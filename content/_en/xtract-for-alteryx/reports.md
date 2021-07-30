@@ -11,7 +11,16 @@ weight: 10
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
+The following section describes the functions of the Report component of Xtract for Alteryx.<br>
 {% include _content/en/abap-reports/report-about.md %}
 
-*****
+### How to use the Report component
+1. Drag & drop the "Xtract Report" component to your Alteryx workflow.
+2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
+
+The majority of the functions of the component can be accessed using the main window.
+More information on working with Report component is provided in the following sections.
+
+---
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

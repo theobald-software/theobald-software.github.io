@@ -1,9 +1,9 @@
 ### Eine Query finden
-1. Doppelklicken Sie auf die Komponente. Das Fenster "Extract SAP ERP Queries" öffnet sich.
-2. Klicken Sie auf das **[Fernglassymbol]**. Das Fenster "Look Up Query" öffnet sich.
+1. Im Hauptfenster "Extract SAP ERP Queries" klicken Sie auf **[Search]** (Fernglassymbol).
 ![Query-Defining](/img/content/Query-DefiningExtraction.png){:class="img-responsive" }
-3. Suchen Sie nach **Query Name** oder **UserGroup** mit dem **[Lupensymbol]**, Sie können bei Bedarf Platzhalter (*) verwenden.
+Das Fenster "Look Up Query" öffnet sich.
+2. Suchen Sie nach **Query Name** oder **UserGroup** mit **[Suche]** (Fernglassymbol), Sie können bei Bedarf Platzhalter (*) verwenden.
 ![Query-Search](/img/content/Query-Search.png){:class="img-responsive" }
-4. Wählen Sie ein Element aus der Liste aus. 
-5. Klicken Sie auf **[OK]**, um die Auswahl zu bestätigen.
-6. Optional: Wenn die Query Varianten hat oder Sie neue Selektionen für die Extraktion erstellen möchten, siehe [Varianten und Selektionen](./variant-selections) oder geben Sie einen Wert für die maximale Anzahl der zu extrahierenden Zeilen an, siehe [Extraktionseinstellungen](./query-settings).
+3. Wählen Sie ein Element aus der Liste aus. 
+4. Klicken Sie auf **[OK]**, um die Auswahl zu bestätigen.
+5. Optional: Wenn die Query Varianten hat oder Sie neue Selektionen für die Extraktion erstellen möchten, siehe [Varianten und Selektionen](./variant-selections) oder geben Sie einen Wert für die maximale Anzahl der zu extrahierenden Zeilen an, siehe [Extraktionseinstellungen](./query-settings).

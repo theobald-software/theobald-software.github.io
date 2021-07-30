@@ -10,4 +10,6 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=look-up-cubes
 ---
+The following section shows how to use the Xtract BW Cube component
+
 {% include _content/en/xis-specific/bw-cube/bw-cube-extraction-define.md %}

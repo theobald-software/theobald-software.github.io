@@ -12,10 +12,16 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
 
-Der folgende Abschnitt beschreibt die Anwendung der BOARD Connector BAPI Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Der folgende Abschnitt beschreibt die Funktion der BOARD Connector BAPI Komponente.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](../erste-schritte) beschrieben.
 
+### BAPI verwenden
+{% include _content/de/board-specific/define-extraction.md %}
+
+Weitere Informationen zum Arbeiten mit der BAPI Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

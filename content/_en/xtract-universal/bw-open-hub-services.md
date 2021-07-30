@@ -11,11 +11,18 @@ weight: 70
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=bw-open-hub-services
 ---
-The following section describes the functions of the OHS Component of Xtract Universal. <br>
-Basic Xtract Universal the knowledge is required to understand the following sections. <br>
+The following section describes the functions of the OHS component of Xtract Universal. <br>
+
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
+**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](../getting-started). <br>
+
+### How to use the OHS component
+{% include _content/en/xu-specific/define-extraction.md %}
+
+More information on working with the OHS component is provided in the following sections.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 <!--stackedit_data:

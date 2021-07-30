@@ -1,6 +1,3 @@
-Der folgende Abschnitt beschreibt die Anwendung der Report Komponente.
-
-
 ### Einen Report oder eine Transaktion finden
 1. Klicken Sie auf den **[Suchen]** Button (Vergrößerungsglas) im Hauptfenster der Report-Komponente. Das Fenster “Report Lookup” öffnet sich.
 2. Geben Sie im Feld **Report Name** (1) den Namen des Reports ein, den Sie suchen. Die Verwendung von Wildcards (*) wird unterstützt. 

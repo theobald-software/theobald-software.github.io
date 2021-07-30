@@ -12,16 +12,19 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=abap-reports
 ---
 
-The following section describes the functions of the Report Component. <br>
-Basic BOARD Connector the knowledge is required to understand the following sections. <br>
-
-{: .box-tip }
-**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started](./getting-started). <br>
-
-
+The following section describes the functions of the Report Component of BOARD Connector.<br>
 {% include _content/en/abap-reports/report-about.md %}
 
-******
+{: .box-tip }
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](../getting-started).
+
+### How to use the Report component
+{% include _content/en/board-specific/define-extraction.md %}
+
+More information on working with the Report component is provided in the following sections.
+
+---
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 
 

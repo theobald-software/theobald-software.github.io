@@ -8,7 +8,7 @@ The information described in the following section is a prerequisite for all sub
 ### Creating an Extraction
 
 1. Set up a **Data Flow Task** by dragging the dataflow component into the "Control Flow" canvas. Double-click the component to access the dataflow canvas.
-2. Add an SAP Connection using the [*Xtract Connection Manager*](./sap-connection/the-connection-manager).
+2. Add an SAP Connection using the [*Connection Manager*](./sap-connection/the-connection-manager).
 3. Drag & drop the **Xtract Table** component to the data flow task. 
 ![xis_table_overview](/img/content/xis/xis_table_overview.png){:class="img-responsive"}
 4. Assign a *Connection Manager* by double-clicking the **Xtract Table** component. 

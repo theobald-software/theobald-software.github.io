@@ -18,3 +18,4 @@ Within the window "Extract Single and Joint SAP Tables or Views" click **Setting
 ***********
 #### Related Links
 - [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)		   
+- [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)		   

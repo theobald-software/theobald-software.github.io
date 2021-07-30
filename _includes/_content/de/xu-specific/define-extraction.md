@@ -6,5 +6,4 @@
 Für Informationen, wie Destinationen anlegt werden, siehe [Extraktion in eine Datenbank laden](./erste-schritte/eine-extraktion-in-oracle-laden).
 5. Mit einem Doppelklick auf die Extraktion öffnen Sie das Hauptfenster der Komponente.
 
-Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.<br>
-Weitere Informationen zum Arbeiten mit der Komponente finden Sie in den folgenden Unterabschnitten.
+Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.

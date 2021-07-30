@@ -10,4 +10,5 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=queries-suchen-und-zuweisen
 ---
+Der folgende Abschnitt beschreibt die Anwendung der Query Komponente. 
 {% include _content/de/xis-specific/query/queries-suchen-und-zuweisen.md %}

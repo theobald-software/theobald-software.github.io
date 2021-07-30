@@ -11,4 +11,5 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=look-up-an-ohs-extraction
 progressstate: 5
 ---
+The following section shows how to use the OHS component.
 {% include _content/en/xis-specific/open-hub-service-ohs/lookup-an-ohs-extraction.md %}

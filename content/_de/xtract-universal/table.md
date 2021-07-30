@@ -11,11 +11,17 @@ weight: 85
 lang: de_DE
 progressstate: 5
 ---
-
+Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Table Komponente.<br>
 Mit der Komponente *SAP Table or View* lassen sich Inhalte aus SAP Tabellen und Views abziehen. 
 
-Der Einstieg in die Komponente und die Grundfunktionalitäten sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) erläutert.  
-Die folgenden Abschnitte geben einen Überblick über die Funktionen, die über das Hauptfenster "Extract Single and Joint SAP Tables or Views" zugänglich sind.
-![Table main window](/img/content/table/table_main-window_2.png){:class="img-responsive"}  
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](../erste-schritte) beschrieben.
+
+### Table verwenden
+{% include _content/de/xu-specific/define-extraction.md %}
+
+Weitere Informationen zum Arbeiten mit der Table Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
