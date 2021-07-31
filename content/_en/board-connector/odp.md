@@ -18,7 +18,7 @@ The following section describes the functions of the ODP component of BOARD Conn
 **Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](../getting-started). <br>
 
 ### How to use the ODP component
-{% include _content/en/xu-specific/define-extraction.md %}
+{% include _content/en/board-specific/define-extraction.md %}
 
 More information on working with the ODP component is provided in the following sections.
 

@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=sqp-queries
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Query Komponente.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 
 {: .box-note}
 **Hinweis** Die Query-Komponente bezieht sich auf Queries, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>

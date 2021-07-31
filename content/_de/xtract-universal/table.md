@@ -15,7 +15,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Table Kompon
 Mit der Komponente *SAP Table or View* lassen sich Inhalte aus SAP Tabellen und Views abziehen. 
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 
 ### Table verwenden
 {% include _content/de/xu-specific/define-extraction.md %}

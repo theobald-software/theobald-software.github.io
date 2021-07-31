@@ -17,7 +17,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=datasource-deltaq
 Xtract Universal DeltaQ ist eine alte Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 
 ### DeltaQ verwenden
 {% include _content/de/xu-specific/define-extraction.md %}

@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-open-hub-services
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal OHS Komponente.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 
 ### OHS verwenden
 {% include _content/de/xu-specific/define-extraction.md %}

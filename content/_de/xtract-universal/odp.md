@@ -15,7 +15,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal ODP Komponen
 {% include _content/de/odp/odp-introduction.md %} 
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 
 ### ODP verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
