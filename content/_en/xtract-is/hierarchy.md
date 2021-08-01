@@ -15,7 +15,7 @@ The following section describes the functions of the Xtract BW Hierarchy compone
 The Xtract IS Hierarchy component is an SSIS data source that enables the extraction of hierarchies from an SAP BW / BI system.
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
 ### How to use the Xtract BW Hierarchy component
 {% include _content/en/xis-specific/define-extraction.md %}

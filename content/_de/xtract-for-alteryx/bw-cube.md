@@ -15,7 +15,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract for Alteryx BW Cube Ko
 Die BW Cube Komponente von Xtract for Alteryx kann verwendet werden, um die Daten aus  SAP BW InfoProviders (z.B. Cubes) oder Queries zu extrahieren und im Anschluss in Alteryx weiter zu bearbeiten.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 ### BW Cube verwenden
 1. Ziehen Sie die "Xtract BW Cube" Komponente per drag & drop auf Ihr Alteryx-Workflow.

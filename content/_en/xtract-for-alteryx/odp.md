@@ -16,7 +16,7 @@ The following section describes the functions of the ODP component of Xtract for
 {% include _content/en/odp/odp-introduction.md %} 
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](../getting-started).
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 ### How to use the ODP component
 1. Drag & drop the "Xtract ODP" component to your Alteryx workflow.

@@ -15,7 +15,7 @@ The following section describes the functions of the Xtract BW Loader component 
 Unlike the other components, the Xtract IS BW Loader component is a data destination, not a data source. 
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
 ### How to use the Xtract BW Loader component
 {% include _content/en/xis-specific/define-extraction.md %}

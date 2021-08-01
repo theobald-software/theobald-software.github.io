@@ -26,7 +26,7 @@ The following section describes the functions of the Xtract Table component of X
 - Cluster tables (joining not possible)
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
 ### How to use the Xtract Table component
 {% include _content/en/xis-specific/define-extraction.md %}

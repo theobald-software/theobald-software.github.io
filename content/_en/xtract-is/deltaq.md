@@ -16,7 +16,7 @@ The Xtract IS DeltaQ component allows to conduct a real delta management between
 DeltaQ extracts DataSources (OLTP) and extractors from ERP and ECC systems.
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
 ### How to use the Xtract DeltaQ component
 {% include _content/en/xis-specific/define-extraction.md %}

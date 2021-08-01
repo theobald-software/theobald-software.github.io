@@ -16,7 +16,7 @@ The following section describes the functions of the BAPI component of Xtract IS
 The Xtract IS BAPI data source was developed to access BAPIs and RFC function modules and integrate them in the SSIS package.
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
 ### How to use the BAPI component
 {% include _content/en/xis-specific/define-extraction.md %}

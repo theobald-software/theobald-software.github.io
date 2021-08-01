@@ -14,7 +14,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=query
 The following section describes the functions of the Xtract Query component of Xtract IS.<br>
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
 ### How to use the Xtract Query component
 {% include _content/en/xis-specific/define-extraction.md %}

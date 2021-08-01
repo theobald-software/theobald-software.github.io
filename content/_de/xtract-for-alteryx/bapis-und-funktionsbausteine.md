@@ -16,7 +16,7 @@ Die Xtract BAPI Komponente wird verwendet, um ein SAP BAPI oder einen Funktionsb
 SAP Standard-BAPIs und benutzerdefinierte BAPIs werden gleichermaßen unterstützt.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 ### BAPI verwenden
 1.	Ziehen Sie die “Xtract BAPI” Komponente in Ihren Alteryx Workflow.

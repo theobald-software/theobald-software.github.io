@@ -16,7 +16,7 @@ The following section describes the functions of the Xtract OHS component of Xtr
 The Xtract IS OHS Compomente is an SSIS data source that can be used to run OHS InfoSpoke and/or OHS process chains to receive the data.
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started](./getting-started). <br>
 
 ### How to use the Xtract OHS component
 {% include _content/en/xis-specific/define-extraction.md %}

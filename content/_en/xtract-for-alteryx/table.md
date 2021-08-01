@@ -21,21 +21,15 @@ Table component supports the following table types:
 - Pool tables
 - Cluster tables
 
-
-{: .box-tip }
-**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](../getting-started).
-
 {: .box-note }
-**Note:** when extracting tables from SAP you may encounter several **restrictions** when using the SAP standard function module (RFC_READ_TABLE).<br>
+**Note:** when extracting tables from SAP you may encounter several **restrictions** when using the SAP standard function module (RFC_READ_TABLE).
 To avoid possible restrictions, you can use the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 
-
-See further information on possible restrictions and on installing the [custom function module](./sap-customizing#rfc_read_table-restrictions).
-
-{: .box-note }
-**Note:** The Table component is generally used for full load. For incremental data extraction from tables and views, you can define a WHERE-clause on specific fields e.g., timestamp. 
+For further information on possible restrictions and on installing the custom function module, see [Custom function module for Table](./sap-customizing#rfc_read_table-restrictions).
 
 {: .box-tip }
-**Tip:** ODP component is a more convenient option for incremental extraction e.g., using [extractors](./odp/odp-extractors).
+**Tip:** The Table component is generally used for full load. 
+For incremental data extraction from tables and views, you can define a WHERE-clause on specific fields e.g., timestamp.
+The ODP component is a more convenient option for incremental extraction e.g., using [extractors](./odp/odp-extractors).
 
 ### How to use the Table component
 
@@ -43,6 +37,10 @@ See further information on possible restrictions and on installing the [custom f
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
 
 The majority of the functions of the component can be accessed using the main window.
+
+{: .box-tip }
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](../getting-started).
+
 
 ### Functions overview
 The following sections give an overview over the functions that can be accessed over the main component window.

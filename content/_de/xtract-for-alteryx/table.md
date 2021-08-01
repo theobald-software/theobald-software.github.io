@@ -20,20 +20,15 @@ Die Table-Komponente unterstützt die folgenden Tabellentypen:
 - Pool-Tabellen
 - Cluster-Tabellen
 
-{: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](../erste-schritte) beschrieben.
-
 {: .box-note }
-**Hinweis:** Beim Extrahieren von Tabellen aus SAP können Sie bei der Verwendung des SAP-Standardfunktionsbausteins (RFC_READ_TABLE) auf einige **Einschränkungen** stoßen.<br>
+**Hinweis:** Beim Extrahieren von Tabellen aus SAP können Sie bei der Verwendung des SAP-Standardfunktionsbausteins (RFC_READ_TABLE) auf einige **Einschränkungen** stoßen.
 Um mögliche Einschränkungen umzugehen, können Sie auf Ihrem SAP-System den Theobald Software Z-Funktionsbaustein  *Z_THEO_READ_TABLE* verwenden. 
-
 Weitere Informationen zu möglichen Einschränkungen und zur Installation des Z-Funktionsbausteins finden Sie unter [SAP Customizing - Z-Funktionsbaustein](./sap-customizing).
 
-{: .box-note }
-**Hinweis:** Die Table-Komponente wird im Allgemeinen für ein Full-Load verwendet. Für die inkrementelle Datenextraktion aus Tabellen und Views können Sie eine WHERE-Bedingung für bestimmte Felder, z.B. Zeitstempel, definieren. 
-
 {: .box-tip }
-**Tipp:** Die ODP-Komponente ist eine bequemere Option für die inkrementelle Datenextraktion, z.B. mit Hilfe von [Extraktoren](./odp/odp-extractors).
+**Tipp:** Die Table-Komponente wird im Allgemeinen für einen Full-Load verwendet. 
+Für die inkrementelle Datenextraktion aus Tabellen und Views kann eine WHERE-Bedingung für bestimmte Felder, z.B. Zeitstempel, definiert werden. 
+Eine einfachere Option für die inkrementelle Datenextraktion bietet die ODP-Komponente, z.B. mit Hilfe von [Extraktoren](./odp/odp-extractors).
 
 ### Table verwenden
 
@@ -41,6 +36,9 @@ Weitere Informationen zu möglichen Einschränkungen und zur Installation des Z-
 2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu der **gewählten Extraktion** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
 
 Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
+
+{: .box-tip }
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 ### Funktionsübersicht
 Die folgenden Abschnitte geben einen Überblick über die Funktionen, auf die über das Hauptkomponentenfenster zugegriffen werden kann.

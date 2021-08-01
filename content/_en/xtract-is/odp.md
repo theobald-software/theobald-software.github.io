@@ -14,7 +14,7 @@ The following section describes the functions of the Xtract ODP component of Xtr
 {% include _content/en/odp/odp-introduction.md %} 
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
 ### How to use the Xtract ODP component
 {% include _content/en/xis-specific/define-extraction.md %}

@@ -11,7 +11,11 @@ weight: 10
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
-The following section describes the functions of the Report component of Xtract for Alteryx.<br>
+The following section describes the functions of the Report component of Xtract for Alteryx.
+
+{: .box-tip }
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
+
 {% include _content/en/abap-reports/report-about.md %}
 
 ### How to use the Report component

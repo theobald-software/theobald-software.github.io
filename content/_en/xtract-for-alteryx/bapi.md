@@ -15,7 +15,7 @@ The Xtract BAPI component is used for executing SAP BAPI or Function Modules via
 SAP standard and custom BAPIs are supported equally.
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](../getting-started).
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 
 ### How to use the BAPI component

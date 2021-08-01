@@ -15,7 +15,7 @@ The following section describes the functions of the BW Cube component of Xtract
 The component Xtract IS BW Cube enables the extraction of flat data from SAP BW InfoCubes and BEx Queries.
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started](./getting-started). <br>
 
 ### How to use the BW Cube component
 {% include _content/en/xis-specific/define-extraction.md %}

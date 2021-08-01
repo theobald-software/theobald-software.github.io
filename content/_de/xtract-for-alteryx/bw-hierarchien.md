@@ -15,7 +15,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract for Alteryx BW Hierarc
 Die Komponente BW Hierarchy ermöglicht die Extraktion von Hierarchien von einem SAP BW System.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 ### BW Hierarchy verwenden
 1. Ziehen Sie die "Xtract Hierarchy" Komponente per drag & drop auf Ihr Alteryx-Workflow.
