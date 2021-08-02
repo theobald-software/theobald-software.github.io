@@ -17,20 +17,14 @@ Die Lizenznummer, die Sie beim Kauf von ERPConnect bekommen haben, muss während
 
 Dieses Setzen mittels SetLic sollte vor dem ersten Verbinden mit dem SAP-System stattfinden (unabhängig, ob als Server oder als Client). 
 
-<details>
-<summary>Click to open C# example.</summary>
+**C#**
 {% highlight csharp %}
 ERPConnect.LIC.SetLic("XXXXXXXXXX");
 {% endhighlight %}
-</details>
-
-
-<details>
-<summary>Click to open VB example.</summary>
+**VB**
 {% highlight visualbasic %}
 ERPConnect.LIC.SetLic("XXXXXXXXXX")
-{% endhighlight %}
-</details>
+{% endhighlight %} 
 
 Falls Sie mehr als eine Entwicklerlizenz besitzen, sind die Lizenznummern ggfs. am Ende durchnummeriert: -01, -02 usw. Welche Endung Sie bei SetLic einsetzen, spielt keine Rolle. Sie können die Endung auch komplett weglassen.
 

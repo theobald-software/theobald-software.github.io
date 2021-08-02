@@ -50,11 +50,12 @@ Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträge
 
 ## Andere Anwendungen und Frameworks
 
-- [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) und [Visual C++ 2013 Runtime](https://www.microsoft.com/de-DE/download/details.aspx?id=40784)
+- [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) 
+- [Visual C++ 2013 Runtime](https://www.microsoft.com/de-DE/download/details.aspx?id=40784).
 
 ### Arbeitsspeicher
  	
-- 2 GB oder mehr empfohlen (abhängig vom konkreten Anwendungsfall)
+- 2 GB oder mehr empfohlen (abhängig vom konkreten Anwendungsfall).
 
 ### Festplattenspeicher
  	
@@ -62,7 +63,16 @@ Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträge
 
 ### 32/64-Bit Umgebung
  	
-- Es werden sowohl x86 als auch x64 Plattformen unterstützt
+- Es werden sowohl x86 als auch x64 Plattformen unterstützt.
+
+{: .box-warning }
+**Warnung! ERPConnect.ERPException: Cannot access librfc32.dll.** <br>
+Um ERPConnect im 64-Bit Modus ausführen zu können, benötigen Sie eine 64-Bit Version der SAP-Bibliothek **librfc32.dll**. 
+Kopieren Sie die 64-Bit Version der librfc32.dll in das Verzeichnis `C:\Windows\System32`. <br>
+Um ERPConnect im 32-Bit-Modus laufen zu lassen, kopieren Sie die 32-Bit-Version der librfc32.dll in das Verzeichnis `C:\Windows\SysWOW64`. <br>
+Die librfc32.dll steht Ihnen im SAP® ONE Support Launchpad zum Download zur Verfügung. 
+
+![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive" width="300px" }
 
 ### Sicherheitseinstellungen
  	

@@ -11,23 +11,44 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-installation-und-erste-schritte
 ---
 
-**Achtung: Visual Studio Express-Versionen unterstützen den LINQ to SAP Designer nicht.**
+### Installation
 
-Die Installation des *LINQ to SAP*-Designers erfolgt nicht automatisch mit der Installation von ERPConnect. Sie muss separat angestoßen werden. Starten Sie dazu die Anwendung **LINQtoERPSetupVSJJJJ.exe** im ERPConnect-Verzeichnis oder über das Programmmenü, wobei JJJJ der Version Ihres Visual Studios entspricht: 
+{: .box-note }
+**Hinweis:** Visual Studio Express-Versionen unterstützen den LINQ to SAP Designer nicht.
 
-![LINQToERP-First-Steps-001](/img/content/LINQToERP-First-Steps-001.png){:class="img-responsive"}
+Die Installation des *LINQ to SAP*-Designers erfolgt nicht automatisch mit der Installation von ERPConnect. 
 
-Ein Klick auf den *Install*-Button führt alle nötigen Schritte durch, um den Designer zu installieren:
-
+1. Um das *LINQ to SAP* Add-On zu installieren, starten Sie das Setup, das Ihrer Visual Studio Version entspricht. <br>
+Folgende Setups sind im ERPConnect Verzeichnis (`C:\Program Files\ERPConnect`) verfügbar:<br>
+- LINQtoERPSetupVS2012.exe
+- LINQtoERPSetupVS2013.exe
+- LINQtoERPSetupVS2015.exe
+- LINQtoERPSetupVS2017.exe
+- LINQtoERPSetupVS2019.exe<br>
+2. Falls offen, schließen Sie Visual Studio.
+3. Klicken Sie im *LINQ to ERP Setup* auf **[Install]**, um den Designer zu installieren.<br>
 ![LINQToERP-First-Steps-002](/img/content/LINQToERP-First-Steps-002.png){:class="img-responsive"}
+4. Starten Sie Visual Studio. Ein neues Item, um dem aktuellen Projekt einen *LINQ to ERP DataContext* hinzuzufügen, steht jetzt zur Verfügung.
 
-Beim nächsten Start des Visual Studios steht ein neues Item zum Einfügen zur Verfügung, um einen LINQ to ERP DataContext dem aktuellen Projekt hinzufügen.
 
-![LINQToERP-First-Steps-003](/img/content/LINQToERP-First-Steps-003.png){:class="img-responsive"}
+### How to Use LINQ to SAP
 
+Nach der Installation können Sie Ihrem Projekt LINQ to ERP als *DataContext* hinzufügen.
+
+1. Machen Sie einen Rechtsklick im *Solution Explorer* und wählen Sie **[Add] > [New Item..]**.
+Das Fenster "Add New Item" öffnet sich. <br>
 ![LINQToERP-First-Steps-004](/img/content/LINQToERP-First-Steps-004.png){:class="img-responsive"}
-
-Öffnen Sie den DataContext nach der Anlage mit einem Doppelklick. In der Toolbox finden Sie nun unterschiedliche Komponenten, die dem Context hinzugefügt werden können: Tabellen, normale Queries, Funktionsbausteine, IDocs und BW-Queries. In dem Moment, in dem Sie das erste Element per Drag & Drop auf den Context legen, fordert Sie der Designer auf, zunächst die Verbindungsdaten zum SAP anzugeben. Neben den Account-Details (*Mandant, User-Name, Passwort* und *Sprache*) sind das der *Hostname* und die *Systemnummer* oder der *Message-Server*, die *Logon-Gruppe* und die *SID*. Je nach dem, ob die Verbindung mit einem einzelnen Applikationsserver oder per Load Balancing hergestellt werden soll. 
+5. Wählen Sie *LINQ to ERP* aus der Liste der verfügbaren Items aus und klicken Sie auf **[Add]**, um das Item Ihrem aktuellen Projekt hinzuzufügen.
+6. Öffnen Sie den *LINQ to ERP DataContext** mit einem Doppelklick. 
+In der Toolbox finden Sie nun folgende Komponenten, die dem Context hinzugefügt werden können:<br>
+- Table
+- Query
+- Function Module
+- IDoc
+- BWCube
+7. Ziehen Sie eines der Elemente auf den Context. Der Designer öffnet sich automatisch.
+8. Geben Sie die Verbindungsdaten zu Ihrem SAP-System ein. <br>
+Neben den Account-Details (*Mandant, User-Name, Passwort* und *Sprache*) sind das der *Hostname* und die *Systemnummer* oder der *Message-Server*, die *Logon-Gruppe* und die *SID*. 
 
 ![LINQToERP-First-Steps-005](/img/content/LINQToERP-First-Steps-005.png){:class="img-responsive"}
 

@@ -18,15 +18,17 @@ The design and implementation of the interfaces is very comfortable, because the
 
 ![ERP-Connect](/img/content/erpconnect/architecture_erpconnect.png){:class="img-responsive" }
 
-### Extraction Types
+### Features
 
 ERPConnect offers multiple extraction types to cover a wide range of demands of SAP data extraction.
 
 - [**BAPIs and Function Modules**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
-- [**BWCube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
-- [**IDocs**](./receiving-and-sending-idocs) accesses SAP IDocs.
+- [**BWCube and BEx Queries**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
+- [**IDocs**](./receiving-and-sending-idocs) sends and receives SAP IDocs.
 - [**Query**](./sap-queries) extracts SAP queries. **Note: not the BEx queries supplied by BW Cube**.
-- [**Table**](./special-classes/reading-sap-tables-directly-with-readtable) extracts data from SAP Tables and Views.
+- [**Tables via RFC**](./special-classes/reading-sap-tables-directly-with-readtable) reads SAP Tables directly via RFC.
+
+Furthermore ERPConnect can generate and execute ABAP code on-the-fly and control transactions via batch input.
 
 ### Add-Ons and Tools
 

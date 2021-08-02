@@ -52,7 +52,8 @@ Installation of custom function modules / transport requests is not required.
 
 ### Other Applications and Frameworks
 
-- [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) and [Visual C++ 2013 Runtime](https://www.microsoft.com/en-US/download/details.aspx?id=40784)
+- [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) 
+- [Visual C++ 2013 Runtime](https://www.microsoft.com/en-US/download/details.aspx?id=40784)
 
 
 ### Memory
@@ -66,6 +67,18 @@ Installation of custom function modules / transport requests is not required.
 ### 32/64-Bit Environment
 * Both x86 and x64 platforms are supported.
 
+Please copy the 64-bit version of librfc32.dll in the \System32 folder. You can find the 64-bit version of librfc32.dll in the SAPNet download area.
+
+The 32-Bit Version has to be copied in the \SysWoW64 folder.
+
+{: .box-warning }
+**Warning! ERPConnect.ERPException: Cannot access librfc32.dll.** <br>
+To use ERPConnect in 64-Bit mode, you need a 64-Bit version of the SAP library **librfc32.dll**. 
+Copy the 64-bit version of librfc32.dll to the direcory `C:\Windows\System32`. <br>
+To use ERPConnect in 32-Bit mode, copy the 32-Bit version of the librfc32.dll to the directory `C:\Windows\SysWOW64`. <br>
+You can download the librfc32.dll from SAP® ONE Support Launchpad.
+
+![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive" width="300px" }
 
 ### Security Settings
  	
