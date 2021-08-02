@@ -1,8 +1,8 @@
 ---
 ref: ec-prerequisites-and-installation-01
 layout: page
-title: Prerequisites
-description: Prerequisites
+title: Requirements
+description: System Requirements
 product: erpconnect
 parent: prerequisites-and-installation
 permalink: /:collection/:path

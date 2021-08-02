@@ -1,7 +1,7 @@
 ---
 ref: erpconnect-01
 layout: page
-title: Prerequisites and Installation
+title: Introduction TO ERPConnect
 description: Prerequisites and Installation
 product: erpconnect
 parent: erpconnect

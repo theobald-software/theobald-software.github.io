@@ -1,7 +1,7 @@
 ---
 ref: erpconnect-01
 layout: page
-title: Voraussetzungen und Installation
+title: Einführung in ERPConnect
 description: Voraussetzungen und Installation
 product: erpconnect
 parent: erpconnect
