@@ -15,7 +15,7 @@ Der folgende Abschnitt beschreibt die Funktion der BOARD Connector ODP Komponent
 
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
 
 ### ODP verwenden
 {% include _content/de/board-specific/define-extraction.md %}

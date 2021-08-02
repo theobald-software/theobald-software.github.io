@@ -16,7 +16,7 @@ The following section describes the functions of the Table component of Xtract U
 The component *SAP Table or View* can be used to extract contents from SAP tables and views. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](../getting-started). <br>
+**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
 ### How to use the Table component
 {% include _content/en/xu-specific/define-extraction.md %}

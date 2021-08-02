@@ -14,7 +14,7 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=bw-hierarchies
 The following section describes the functions of the Hierarchy component of BOARD Connector. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with BOARD Connector](../getting-started). <br>
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with BOARD Connector](./getting-started). <br>
 
 ### How to use the Hierarchy component
 {% include _content/en/board-specific/define-extraction.md %}

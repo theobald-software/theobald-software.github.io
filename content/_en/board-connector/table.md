@@ -15,7 +15,7 @@ The following section describes the functions of the Table Component of BOARD Co
 The component *SAP Table or View* can be used to extract contents from SAP tables and views. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](../getting-started).
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](./getting-started).
 
 ### How to use the Table component
 {% include _content/en/board-specific/define-extraction.md %}

@@ -15,7 +15,7 @@ The following section describes the functions of the Query component of BOARD Co
 
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](../getting-started).
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](./getting-started).
 
 {: .box-note}
 **Note:** The Query component refers to queries that can be created by the SAP transactions *SQ02* and *SQ01*.<br>

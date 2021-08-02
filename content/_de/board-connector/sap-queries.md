@@ -15,7 +15,7 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=sap-queries
 Der folgende Abschnitt beschreibt die Funktion der BOARD Connector Query Komponente. 
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
 
 {: .box-note}
 **Hinweis** Die Query-Komponente bezieht sich auf Queries, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>

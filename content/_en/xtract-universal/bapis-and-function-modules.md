@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=bapis-and-function-modules
 The following section describes the functions of the BAPI component of Xtract Universal. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics, refer to [Getting Started with Xtract Universal](../getting-started). <br>
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
 
 ### How to use the BAPI component

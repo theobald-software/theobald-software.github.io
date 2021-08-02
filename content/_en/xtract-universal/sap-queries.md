@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-queries
 The following section describes the functions of the Query component of Xtract Universal. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](../getting-started). <br>
+**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
 {: .box-note }
 **Note:** The Query component refers to queries that can be created by the SAP transactions *SQ02* and *SQ01*.<br>

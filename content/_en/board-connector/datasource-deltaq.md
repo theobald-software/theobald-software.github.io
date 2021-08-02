@@ -17,7 +17,7 @@ DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)*
 
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](../getting-started).
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](./getting-started).
 
 ### How to use the DeltaQ component
 {% include _content/en/board-specific/define-extraction.md %}

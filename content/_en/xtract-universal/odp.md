@@ -15,7 +15,7 @@ The following section describes the functions of the ODP component of Xtract Uni
 {% include _content/en/odp/odp-introduction.md %} 
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](../getting-started). <br>
+**Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
 ### How to use the ODP component
 {% include _content/en/xu-specific/define-extraction.md %}

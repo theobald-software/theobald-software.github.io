@@ -17,7 +17,7 @@ DeltaQ ist eine alte Komponente. Wenn möglich verwenden Sie die neuere Komponen
 
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
 
 ### DeltaQ verwenden
 {% include _content/de/board-specific/define-extraction.md %}

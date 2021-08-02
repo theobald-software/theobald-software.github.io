@@ -14,7 +14,7 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-infocube-und-bex-queries
 Der folgende Abschnitt beschreibt die Funktion der BOARD Connector BW Cube Komponente.
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 ### BW Cube verwenden
 {% include _content/de/board-specific/define-extraction.md %}
