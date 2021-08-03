@@ -15,7 +15,7 @@ Der folgende Abschnitt beschreibt die Funktion der BOARD Connector Report Kompon
 {% include _content/de/abap_reports/report-about.md %}
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](../erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
 
 ### Report verwenden
 {% include _content/de/board-specific/define-extraction.md %}

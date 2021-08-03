@@ -39,7 +39,7 @@ The ODP component is a more convenient option for incremental extraction e.g., u
 The majority of the functions of the component can be accessed using the main window.
 
 {: .box-tip }
-**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](../getting-started).
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 
 ### Functions overview
