@@ -40,6 +40,7 @@ Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträge
 
 ### Visual Studio
 
+- Visual Studio 2019
 - Visual Studio 2017
 - Visual Studio 2015 (bis 14.10.2025)
 - Visual Studio 2013 (bis 09.04.2024)
