@@ -20,15 +20,14 @@ Die Installation des *LINQ to SAP*-Designers erfolgt nicht automatisch mit der I
 Führen Sie die folgenden Schritte aus, um das Add-On zu installieren:
 
 1. Schließen Sie Visual Studio.
-2. Im ERPConnect Verzeichnis (`C:\Program Files\ERPConnect`) befinden sich Setups, die die Installation des *LINQ to SAP*-Designers durchführen.
-Starten Sie das Setup, das Ihrer Visual Studio Version entspricht. <br>
-Folgende Setups sind verfügbar:<br>
+2. Im ERPConnect Verzeichnis (`C:\Program Files\ERPConnect`) befinden sich Setups, die die Installation des *LINQ to SAP*-Designers durchführen.<br>
+Starten Sie das Setup, das Ihrer Visual Studio Version entspricht. Folgende Setups sind verfügbar:<br>
 - LINQtoERPSetupVS2012.exe
 - LINQtoERPSetupVS2013.exe
 - LINQtoERPSetupVS2015.exe
 - LINQtoERPSetupVS2017.exe
 - LINQtoERPSetupVS2019.exe<br>
-3. Klicken Sie im *LINQ to ERP Setup* auf **[Install]**, um den Designer zu installieren.<br>
+3. Klicken Sie im *LINQ to ERP Setup* auf **[Install]**, um den *LINQ to SAP* zu installieren.<br>
 ![LINQToERP-First-Steps-002](/img/content/LINQToERP-First-Steps-002.png){:class="img-responsive"}
 4. Nach beendeter Installation starten Sie Visual Studio. 
 

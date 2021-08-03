@@ -11,23 +11,43 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-tabellen
 ---
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis LINQTable**
+Der folgende Abschnitt beschreibt die Anwendung der Table Komponente aus der *LINQ to ERP* Toolbox.
 
-Anknüpfend an das letzte TeilAbschnitt öffnet sich nun die Suchmaske für die Tabellenauswahl. Übernehmen Sie die gewünschte Tabelle, indem Sie mit OK bestätigen.
+### Eine Tabelle finden
 
+1. Übernehmen Sie die gewünschte Tabelle, indem Sie mit OK bestätigen.
+2. Geben Sie in das Feld Table name (1) den Namen der zu extrahierenden Tabelle ein. Falls nötig, verwenden Sie Wildcards (*).
 ![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive"}
+3. Klicken Sie auf **[Search]** (Fernglassymbol)(2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
+4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **[OK]** (4).
 
-Nachdem die gewünschte Tabelle selektiert wurde, öffnet sich der folgende Auswahldialog. Hier können Sie die gewünschten Spalten ankreuzen, die später in der Ergebnismenge zur Verfügung stehen sollen. Außerdem können Sie noch den Namen der Proxy-Klasse ändern, die intern generiert wird. Standardmäßig entsprechen die Namen der Spalten auch den späteren Properties der Proxy-Klasse. Sie können einen eigenen Namen vergeben, indem Sie die Angabe in der Spalte Member überschreiben. 
+### Spalten Filtern
+Nachdem eine Tabelle geladen wurde, öffnet sich das Fenster "LINQ to ERP Tables".
 
+1. Markieren Sie alle Spalten, die in der Ergebnismenge zur Verfügung stehen sollen (5).
+2. Optional: Sie können den Namen der Proxy-Klasse ändern, die intern generiert wird. 
+Standardmäßig entsprechen die Namen der Spalten den späteren Properties der Proxy-Klasse. 
+Sie können einen eigenen Namen vergeben, indem Sie die Angabe in der Spalte **Member** überschreiben (6). 
 ![LINQToERP-Tables-002](/img/content/LINQToERP-Tables-002.png){:class="img-responsive"}
-
-Bestätigen Sie mit *OK*. Es ist nun ein entsprechendes Icon im Designer zu sehen. Speichern Sie die .erp-Datei um die Code-Generierung der Proxy-Klasse im Hintergrund zu veranlassen. (Der geneigte Leser kann sich die implizit generierte Datei .Designer.cs/vb gerne einmal näher ansehen, sie zeigt, wie die LINQ-Logik auf die tradionelle ERPConnect-Logik gemappt wird.)
-
+3. Klicken Sie auf **[Preview]**, um die Ergebnistabelle zu prüfen.
+4. Bestätigen Sie Ihr Eingaben mit **[OK]**. Das Fenster "LINQ to ERP Tables" schließt sich und im Designer wird ein entsprechendes Icon erstellt.<br>
 ![LINQToERP-Tables-003](/img/content/LINQToERP-Tables-003.png){:class="img-responsive"}
 
+Um die Tabelle zu bearbeiten, doppelklicken Sie auf das Table Icon im Designer.
 
-Um nun die LINQ-fähige Klasse im Code anzusteuern, muss zunächst der Data-Kontext instanziiert werden. Dies geschieht entweder unter Angabe von Benutzer und Passwort (mit den bereits hinterlegten Systemparametern) oder alternativ unter Angabe der kompletten Anmeldeinfos (der Konstruktor der DataContext-Klasse ist entsprechend überladen, alternativ kann auch das bereits bekannte R3Connection-Objekt direkt über DataContext.Connection angesprochen werden). Mit DataContext können nun entsprechende LINQ-Abfragen formuliert werden: 
+### Die Klasse verwenden
+Speichern Sie die .erp-Datei, um die Code-Generierung der Proxy-Klasse im Hintergrund anzustoßen. 
 
+{: .box-tip }
+**Tipp:** Erfahrene BenutzerInnen können sich die implizit generierte Datei `.Designer.cs/vb` näher ansehen, die zeigt wie die LINQ-Logik auf die tradionelle ERPConnect-Logik gemappt wird.
+
+Um die LINQ-fähige Klasse im Code anzusteuern, instanziieren Sie den DataContext. <br>
+Das geht über folgende Angaben:
+- Angabe von Benutzer und Passwort mit den bereits hinterlegten Systemparametern. 
+- Angabe der kompletten Anmeldeinformationen. Der Konstruktor der DataContext-Klasse ist entsprechend überladen.
+- Wenn das R3Connection-Objekt bereits bekannt ist, sprechen Sie DataContext.Connection direkt an. 
+ 
+Mit dem DataContext können nun entsprechende LINQ-Abfragen formuliert werden: <br>
 <details>
 <summary>[C#]</summary>
 {% highlight csharp %}

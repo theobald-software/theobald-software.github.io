@@ -28,5 +28,7 @@ Um die fertige Anwendung an den Kunden zu verteilen, stellen Sie Ihren Kunden di
 - Microsoft.NET 3.5 oder höher. Frühere .NET Versionen unterstützten kein LINQ. 
 - Visual Studio 2008 order höher (ohne Express). 
 
+Weitere Informationen zum Arbeiten mit *LINQ to SAP* finden Sie in den folgenden Unterabschnitten.
+
 ****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

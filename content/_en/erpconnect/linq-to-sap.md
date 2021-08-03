@@ -29,5 +29,7 @@ No other .dlls are needed.
 - Microsoft.NET 3.5 (or higher). Previous .NET versions do not support LINQ.
 - Visual Studio 2008 or higher (excluding Express).
 
+More information on working with *LINQ to SAP* is provided in the following sections.
+
 ****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
