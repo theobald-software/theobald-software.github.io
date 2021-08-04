@@ -1,7 +1,7 @@
 ---
 ref: xu-table-01
 layout: page
-title: Define a Table Extraction
+title: Tables and Fields
 description: Tables and Fields
 product: xtract-universal
 parent: table
