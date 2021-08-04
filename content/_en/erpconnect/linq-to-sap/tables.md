@@ -15,13 +15,13 @@ The following section shows how to use the Table component of the *LINQ to ERP* 
 
 ### Look Up a Table
 1. Drag&Drop the Table component into the *LINQ to ERP* DataContext. A search window opens. 
-2. Enter the name of the table to be extracted in the field **Table** (1). Use wildcards (*) if necessary. <br>
+2. Enter the name of the table to be extracted in the field **Table** (1). Use wildcards (*) if needed. <br>
 ![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive" }
 3. Click **[Search]** (binoculars icon) (2). Search results appear in the preview window.
 4. Select the desired table (3) and click **[OK]** (4).
 
 ### Filtering Columns
-After a table has been selected, the window "LINQ to ERP Tables" opens. 
+After a table has been loaded, the window "LINQ to ERP Tables" opens. 
 
 1. Mark all columns that are to be made available in the query output (5). 
 2. Optional: You can change the name of the proxy class that is generated internally. 
@@ -32,11 +32,13 @@ You can name them yourself by writing over the entry in the column **Member** (6
 4. Click **[OK]** (8) to confirm your selection. The window "LINQ to ERP Tables" closes and a corresponding icon is created in the Designer. <br>
 ![LINQToERP-Tables-003](/img/content/LINQToERP-Tables-003.png){:class="img-responsive" }
 
-### How to Use the Class
+To edit the table, double-click the table icon in the Designer.
+
+### How to Use the Class in your Code
 Save the .erp file that contains the extraction component to trigger the proxy classes code generation in the background. <br>
 
 {: .box-tip }
-**Tip:** Experienced users can have a closer look at the implicitly generated file .Designer.cs/vb that shows how LINQ logic is mapped to traditional ERPConnect logic.  
+**Tip:** Experienced users can have a closer look at the implicitly generated file `.Designer.cs/vb` that shows how LINQ logic is mapped to traditional ERPConnect logic.  
 
 To access the LINQ-capable class in the code, instantiate the DataContext. <br>
 There are multiple ways to do that:

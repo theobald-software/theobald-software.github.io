@@ -13,9 +13,8 @@ old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-tabellen
 
 Der folgende Abschnitt beschreibt die Anwendung der Table Komponente aus der *LINQ to ERP* Toolbox.
 
-### Eine Tabelle finden
-
-1. Übernehmen Sie die gewünschte Tabelle, indem Sie mit OK bestätigen.
+### Eine Tabelle finden 
+1. Ziehen Sie die Table Komponente in den *LINQ to ERP* DataContext. Ein Suchfenster öffnet sich.
 2. Geben Sie in das Feld Table name (1) den Namen der zu extrahierenden Tabelle ein. Falls nötig, verwenden Sie Wildcards (*).
 ![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive"}
 3. Klicken Sie auf **[Search]** (Fernglassymbol)(2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
@@ -35,7 +34,7 @@ Sie können einen eigenen Namen vergeben, indem Sie die Angabe in der Spalte **M
 
 Um die Tabelle zu bearbeiten, doppelklicken Sie auf das Table Icon im Designer.
 
-### Die Klasse verwenden
+### Die Klasse im Code verwenden
 Speichern Sie die .erp-Datei, um die Code-Generierung der Proxy-Klasse im Hintergrund anzustoßen. 
 
 {: .box-tip }
@@ -49,7 +48,7 @@ Das geht über folgende Angaben:
  
 Mit dem DataContext können nun entsprechende LINQ-Abfragen formuliert werden: <br>
 <details>
-<summary>[C#]</summary>
+<summary>Klicken Sie hier, um das C# Beispiel zu öffnen</summary>
 {% highlight csharp %}
 static void Main(string[] args) 
 { 
@@ -69,7 +68,7 @@ static void Main(string[] args)
 </details>
 
 <details>
-<summary>[VB]</summary>
+<summary>Klicken Sie hier, um das VB Beispiel zu öffnen</summary>
 {% highlight visualbasic %}
 Sub Main() 
    Dim sc As New LINQTable.SAPContext("TestUser", "SECRET01") 

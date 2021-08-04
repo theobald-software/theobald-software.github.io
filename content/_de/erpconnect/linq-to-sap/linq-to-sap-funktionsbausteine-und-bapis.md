@@ -11,24 +11,41 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-funktionsbausteine-und-bapis
 ---
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis LINQBapi** 
+Der folgende Abschnitt beschreibt die Anwendung der Function Komponente der *LINQ to ERP* Toolbox. <br>
+Die Komponente deck Funktionsbausteine und BAPIs ab.
+Funktionsbausteine und BAPIs werden bei der LINQ-Anwendung nahezu gleich gehandhabt wie Stored Procedures bei *LINQ to SQL*. 
 
-Da die beiden Begriffe Funktionsbausteine und BAPIs fast äquivalent sind, sprechen wir im Folgenden nur noch von BAPIs. BAPIs werden bei der LINQ-Anwendung nahezu genauso gehandhabt wie Stored Procedures beim LINQ to SQL. Ziehen Sie ein Function-Objekt aus der Toolbox in den vorbereiteten DataContext. Die Auswahl des BAPIs erfolgt mit dem Such-Dialog.
+### Einen BAPI\Funktionsbaustein finden
+1. Ziehen Sie die Table Komponente in den *LINQ to ERP* DataContext. Ein Suchfenster öffnet sich.
+2. Geben Sie in das Feld Function (1) den Namen des zu extrahierenden Funktionsbausteins/BAPIs ein. Falls nötig, verwenden Sie Wildcards (*).
+![LINQToERP-Function-Modules-001](/img/content/LINQToERP-Function-Modules-001.png){:class="img-responsive" }
+3. Klicken Sie auf **[Search]** (Fernglassymbol)(2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
+4. Wählen Sie den gewünschten Funktionsbaustein/BAPI (3) aus und klicken Sie auf **[OK]** (4).
 
-![LINQToERP-Function-Modules-001](/img/content/LINQToERP-Function-Modules-001.png){:class="img-responsive"}
+### Export, Import, Changings und Tables definieren
+ 
+1. Im *Export* Tab können Sie die Ausgabewerte definieren, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden. <br>
+Um einen Parameter beim Aufruf im Code dynamisch zu setzen, haken Sie in der Spalte **Pass** die entsprechende Checkbox an (5).
+Um einen statischen Wert zu hinterlegen, geben Sie den neuen Wert in der Spalte **Valu** ein (6).<br>
+![LINQToERP-Function-Modules-002](/img/content/LINQToERP-Function-Modules-002.png){:class="img-responsive" }
+2. Im *Import* Tab können Sie Eingabewerte definieren, die vom Client an SAP gesendet werden.
+3. Im *Changings* Tab können Sie Parameter definieren, die sowohl für Eingabe als auch Ausgabe verwendet werden können.
+4. Im *Tables* Tab können Sie Parameter mit einer Tabellenstruktur, die aus mehreren Zeilen besteht definieren. 
+Tabellen können als Eingabe verwendet werden, indem Sie die Checkbox in der Spalte **Pass** anhaken und sie können als Ausgabe verwendet werden, indem Sie die Checkbox in der Spalte **Result** anhaken.<br>
+Der Variablen-Name, der Name der Tabellenklasse und der Name der Zeilenklasse können ebenfalls angegeben werden. 
+Bleiben die Felder leer, werden Standardnamen generiert. <br>
+![LINQToERP-Function-Modules-003](/img/content/LINQToERP-Function-Modules-003.png){:class="img-responsive" }
+5. Um eine Tabelle zu bearbeiten, klicken Sie auf **Edit** (8).
+6. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen. Das Fenster "RFC Function Modules/BAPIs" schließt sich und im Designer wird ein entsprechendes Icon erstellt.<br>
 
-Der folgende Screenshot zeigt den Dialog zum Editieren des Function-Objekts. Wenn ein Parameter später beim Aufruf dynamisch im Code gefüllt werden soll, muss in der Pass-Spalte ein Häkchen gesetzt sein, alternativ kann auch in der Value-Zelle ein statischer Wert hinterlegt werden.
+Um den Funktionsbaustein/BAPI zu bearbeiten, doppelklicken Sie auf das Function Icon im Designer.
 
-![LINQToERP-Function-Modules-002](/img/content/LINQToERP-Function-Modules-002.png){:class="img-responsive"}
+### Die Klasse im Code verwenden
 
-Ähnlich funktioniert es mit den Tabellen. Sie können entweder als Tabellenobjekte an die Funktion übergeben werden, oder als Rückgabewert zurückkommen. Der Variablen-Name, der Name der Tabellenklasse und der Name der Zeilenklasse können ebenfalls vorgegeben werden. Bleiben die Felder leer, werden Defaultnamen generiert. 
-
-![LINQToERP-Function-Modules-003](/img/content/LINQToERP-Function-Modules-003.png){:class="img-responsive"}
-
-Der folgende Code zeigt die Ansteuerung des obigen Beispiels mit jeweils einem Übergabewert und einer Rückgabetabelle. 
+Der folgende Code zeigt die Ansteuerung des obigen Beispiels mit jeweils einem Übergabewert und einer Rückgabetabelle:
 
 <details>
-<summary>[C#]</summary>
+<summary>Klicken Sie hier, um das C# Beispiel zu öffnen</summary>
 {% highlight csharp %}
 SAPContext sc = new SAPContext("TestUser","SECRET01");
 var MyEmpls = sc.BAPI_EMPLOYEE_GETLIST("T*"); 
@@ -39,7 +56,7 @@ Console.ReadLine();
 </details>
 
 <details>
-<summary>[VB]</summary>
+<summary>Klicken Sie hier, um das VB Beispiel zu öffnen</summary>
 {% highlight visualbasic %}
 Dim sc As New LINQTable.SAPContext("TestUser", "SECRET01") 
   

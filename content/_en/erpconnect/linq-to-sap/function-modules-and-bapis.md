@@ -11,21 +11,38 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-function-modules-and-bapis
 ---
 
-**You can find the code for this example in the ERPConnect installation directory in the LINQBapi directory.**
+The following section shows how to use the Function component of the *LINQ to ERP* toolbox. <br>
+The component includes Function Modules and BAPIs. 
+In the LINQ application, Function Modules and BAPIs are handled nearly the same way as stored procedures in *LINQ to SQL*. 
 
-Because the terms function modules and BAPIs are almost equivalent, we only speak of BAPIs in the following. In the LINQ application, BAPIs are handled nearly the same way as stored procedures in LINQ to SQL. Drag a function object from the toolbox to the prepared DataContext. The selection of the BAPI is made with the search dialog.
 
-![LINQToERP-Function-Modules-001](/img/content/LINQToERP-Function-Modules-001.png){:class="img-responsive" width="600px"}
+### Look up a Function Module/BAPI
+1. Drag&Drop the Function component into the *LINQ to ERP* DataContext. A search window opens.
+2. Enter the name of the Function Module/BAPI to be used in the field **Function** (1). Use wildcards (*) if needed. <br>
+![LINQToERP-Function-Modules-001](/img/content/LINQToERP-Function-Modules-001.png){:class="img-responsive" }
+3. Click **[Search]** (binoculars icon) (2). Search results appear in the preview window.
+4. Select the desired Function Module/BAPI (3) and click **[OK]** (4).
 
-The following screenshot shows the dialog for editing the function object. If a parameter is to be filled later dynamically in the code when calling it, a checkmark has to be made in the Pass column. Alternatively, a static value can also be entered in the Value cell.
+### Define Export, Import, Changings and Tables
 
-![LINQToERP-Function-Modules-002](/img/content/LINQToERP-Function-Modules-002.png){:class="img-responsive" width="800px"}
+1. In the *Export* tab you can define the output values sent from SAP back to the client after the execution of a function module.<br>
+If a parameter is to be set dynamically in the code, mark the checkbox of the item in the column **Pass** (5).<br>
+To assign a static value, enter the new value in the column **Value** (6).<br>
+![LINQToERP-Function-Modules-002](/img/content/LINQToERP-Function-Modules-002.png){:class="img-responsive" }
+2. In the *Import* tab you can define the input values sent from the client to SAP.
+3. In the *Changings* tab you can define parameters that can be used for input and output.
+4. In the *Tables* tab you can define parameters presented in a table structure consisting of multiple rows. 
+Tables can be used for input by marking the checkbox in the column **Pass** or they can be used as output by marking the checkbox in the column **Return**.<br>
+You can also specify the variable name, the name of the table class and the name of the row class. If the fields remain empty, default names will be generated. 
+![LINQToERP-Function-Modules-003](/img/content/LINQToERP-Function-Modules-003.png){:class="img-responsive" }
+5. To edit a table, click **Edit** (8).
+6. Click **[OK]** to confirm your input. The window "RFC Function Modules/BAPIs" closes and a corresponding icon is created in the Designer. <br>
 
-Working with tables is similar. You can either make transfers to a function as a table object or as a return value. The variable name, the name of the table class and the name of the row class can also be specified. If the fields remain empty, default names will be generated. 
+To edit the Function Module/BAPI, double-click the function icon in the Designer.
 
-![LINQToERP-Function-Modules-003](/img/content/LINQToERP-Function-Modules-003.png){:class="img-responsive" width="800px"}
+### How to Use the Class in your Code
 
-The following code shows how the above example is addressed with an actual parameter and with a return value table.
+The following code shows how the example above is addressed with an actual parameter and a return table:
 
 <details>
 <summary>Click to open C# example.</summary>
