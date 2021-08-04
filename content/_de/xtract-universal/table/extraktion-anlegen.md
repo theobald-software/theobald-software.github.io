@@ -1,7 +1,7 @@
 ---
 ref: xu-table-01
 layout: page
-title: Eine Tabellen Extraktion definieren
+title: Eine Table Extraktion definieren
 description: Tabellen extrahieren
 product: xtract-universal
 parent: table

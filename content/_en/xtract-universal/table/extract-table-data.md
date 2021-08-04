@@ -1,7 +1,7 @@
 ---
 ref: xu-table-01
 layout: page
-title: Defining a Table Data Extraction
+title: Defining a Table Extraction
 description: Extract Table Data
 product: xtract-universal
 parent: table
