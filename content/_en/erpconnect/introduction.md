@@ -12,6 +12,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=prerequisites-and-installation
 ---
 
-ERPConnect was developed in C# and requires runtime components and installation steps described in this chapter.
+ERPConnect is a flexible and modular .NET library that has been certified by SAP for integration with SAP ECC and SAP S/4HANA.
 
+![ERP-Connect](/img/content/erpconnect/architecture_erpconnect.png){:class="img-responsive" width="800px" }
+
+The following sections include information about the requirements and the installation process of ERPConnect:
+
+****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

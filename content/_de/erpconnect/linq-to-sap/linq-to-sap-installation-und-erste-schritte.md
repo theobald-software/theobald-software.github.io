@@ -11,10 +11,10 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-installation-und-erste-schritte
 ---
 
-### Installation
-
 {: .box-note }
 **Hinweis:** Visual Studio Express-Versionen unterstützen den LINQ to SAP Designer nicht.
+
+### Installation
 
 Die Installation des *LINQ to SAP*-Designers erfolgt nicht automatisch mit der Installation von ERPConnect. <br>
 Führen Sie die folgenden Schritte aus, um das Add-On zu installieren:

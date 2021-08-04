@@ -12,11 +12,12 @@ lang: de_DE
 old_url: /ERPConnect-DE/
 ---
 
-Willkommen in der Online Help für ERPConnect. <br>
+Willkommen in der Online Help für ERPConnect.
+
 ERPConnect ist eine .NET Programmierbibliothek zum Entwickeln von SAP-Schnittstellen in allen .NET-fähigen Umgebungen.
 Das Design und die Implementierung der Schnittstellen ist sehr komfortabel, da für jede Art von SAP-Objekten steht eine eigenständige API zur Verfügung.
 
-![ERP-Connect](/img/content/erpconnect/architecture_erpconnect.png){:class="img-responsive" }
+![ERP-Connect](/img/content/erpconnect/architecture_erpconnect.png){:class="img-responsive" width="800px" }
 
 ### Eigenschaften
 

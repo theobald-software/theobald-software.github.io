@@ -12,11 +12,12 @@ lang: en_GB
 old_url: /ERPConnect-EN/
 ---
 
-Welcome to the Online Help for ERPConnect.<br>
+Welcome to the Online Help for ERPConnect.
+
 ERPConncect is a .NET library for developing SAP interfaces in all .NET-capable environments.
 The design and implementation of the interfaces is very comfortable, because there is a separate API available for each type of SAP object. 
 
-![ERP-Connect](/img/content/erpconnect/architecture_erpconnect.png){:class="img-responsive" }
+![ERP-Connect](/img/content/erpconnect/architecture_erpconnect.png){:class="img-responsive" width="800px" }
 
 ### Features
 
