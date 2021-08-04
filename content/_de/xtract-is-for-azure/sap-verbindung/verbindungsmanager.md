@@ -1,7 +1,7 @@
 ---
 ref: xia-sap-connection-01
 layout: page
-title: Der Connection Manager
+title: Connection Manager
 description: Der Connection Manager
 product: xtract-is-for-azure
 parent: sap-verbindung

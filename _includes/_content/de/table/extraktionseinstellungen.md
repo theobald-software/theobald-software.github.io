@@ -15,13 +15,14 @@ Das Fenster "Table Settings" besteht aus zwei Unterabschnitten:
 ### Extraction Settings
 
 #### Package Size 
-Gibt die Anzahl der Datensätze an, die pro Datenpaket extrahiert werden.
-Optimale Werte können durch Ausprobieren gefunden werden. Der Standardwert ist 20000 Zeilen. 
-Die Paketgröße (Package Size) zwischen 15000 und 50000 ist sinnvoll für große Datenmengen.
+
+Die extrahierten Daten werden in Pakete mit der angegebenen Größe aufgeteilt. Der Standardwert ist 50000 Zeilen.
+Eine Paketgröße (Package Size) zwischen 20000 und 50000 ist sinnvoll für große Datenmengen.
 0 bedeutet, es findet keine Parkettierung statt. Keine Parkettierung kann bei Extraktionen großer Datenmengen zu einem RFC-Timeout führen.
 
-{: .box-tip }
-**Empfehlung:** Insbesondere bei der Ausführung einer Tabellenextraktion als Hintergrund-Job (siehe *Extract data in background job*) spielt die Paketgröße eine wichtige Rolle und sollte sinnvoll in Bezug auf die Gesamtdatenmenge gewählt werden. 
+{: .box-warning }
+**Warnung! RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table:** <br> Die Standardgröße für **Package Size** wurde von 14MB auf 50MB (standardgemäß) erhöht. 
+Um einen Speicherüberlauf auf dem SAP-Quellsystem und einen großen Overhead zu vermeiden, wählen Sie eine für Ihre Speichergröße angemessene Paketgröße.
 
 #### Row limit
 Gibt die maximale Anzahl der extrahierten Datensätze an. *0* extrahiert die komplette Tabelle.

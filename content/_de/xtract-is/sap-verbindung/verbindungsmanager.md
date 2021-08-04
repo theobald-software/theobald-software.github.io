@@ -1,7 +1,7 @@
 ---
 ref: xi-sap-connection-01
 layout: page
-title: Der Connection Manager
+title: Connection Manager
 description: Der Connection Manager
 product: xtract-is
 parent: sap-verbindung
