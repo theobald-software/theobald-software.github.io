@@ -21,7 +21,7 @@ Eine Paketgröße (Package Size) zwischen 20000 und 50000 ist sinnvoll für gro�
 0 bedeutet, es findet keine Parkettierung statt. Keine Parkettierung kann bei Extraktionen großer Datenmengen zu einem RFC-Timeout führen.
 
 {: .box-warning }
-**Warnung! RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table:** <br> Die Standardgröße für **Package Size** wurde von 14MB auf 50MB (standardgemäß) erhöht. 
+**Warnung! RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table:** <br>  
 Um einen Speicherüberlauf auf dem SAP-Quellsystem und einen großen Overhead zu vermeiden, wählen Sie eine für Ihre Speichergröße angemessene Paketgröße.
 
 #### Row limit
