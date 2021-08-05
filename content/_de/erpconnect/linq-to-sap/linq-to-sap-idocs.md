@@ -11,22 +11,44 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-idocs
 ---
 
-IDocs können mit Hilfe von LINQ to SAP ins SAP versendet werden. Die Segmente des gewünschten IDocs können in den Context übernommen und verwendet werden.
+Der folgende Abschnitt beschreibt die Anwendung der IDoc Komponente aus der *LINQ to ERP* Toolbox.
+Mit der IDoc Komponente können Sie IDocs an Ihr SAP senden. 
+Die Segmente des gewünschten IDocs können in den SAP-Kontext übernommen und verwendet werden.
 
-Um ein IDoc auf .NET-Seite anzusteuern, ziehen Sie das IDoc-Symbol aus der Toolbox auf den Datenkontext. Die Auswahl des IDocs erfolgt über den Suchdialog.
+### Ein IDoc finden 
+1. Ziehen Sie die IDoc Komponente in den *LINQ to ERP* DataContext. Ein Suchfenster öffnet sich.
+2. Geben Sie in das Feld **IDoc** (1) den Namen des IDocs ein, das an SAP versendet werden soll. Falls nötig, verwenden Sie Wildcards (*).
+![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive"}
+3. Klicken Sie auf **[Search]** (Fernglassymbol)(2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
+4. Wählen Sie das gewünschte IDoc (3) aus und klicken Sie auf **[OK]** (4).
 
-![LINQToERP-IDocs_001](/img/content/LINQToERP-IDocs_001.png){:class="img-responsive"}
+### Ein IDoc bearbeiten
+Nachdem ein IDoc geladen wurde, öffnet sich das Fenster "LINQ to ERP IDocs".
+Verwenden Sie es, um den Inhalt des IDocs zu filtern und umzubenennen:
 
-Anschließend erscheint im Dialog in der linken Baumstruktur unter *Segments* die Gesamtstruktur des ausgewählten IDocs. Im unteren Fenster sind die Felder des Segments gelistet, das jeweils in der Baumstruktur ausgewählt ist. Man kann Felder, die später nicht verwendet werden sollen, ausklammern oder umbenennen. Im rechten oberen Bereich befinden sich die Klassen und die Collections, deren Namen automatisch aus den jeweiligen Segmenten zusammen gesetzt werden. Eine Änderung der Namen ist hier möglich.
+1. Wählen Sie ein Segment aus der Baumansicht aus, das editiert werden soll (5).
+Die Felder des ausgewählten Segments werden um unteren Bereich des Fensters angezeigt. <br>
+![LINQToERP-IDocs_002](/img/content/LINQToERP-IDocs_002.png){:class="img-responsive" }
+2. Deaktivieren Sie ungenutzte Felder in der Spalte **Selected** oder vergeben Sie neue Namen in der Spalte **Member** (6).
+3. Optional: Vergeben Sie neue Namen für die Klassen und Collections des Segments (7).
+4. Verwenden Sie die Checkbox **Selected**, um Segmente, die im Code später nicht verwendet werden, zu deaktivieren (8).
+Deaktivierte Segmente werden in der Baumansicht *kursiv* angezeigt.
+5. Bestätigen Sie Ihre Eingaben mit **[OK]**. Das Fenster "LINQ to ERP IDocs" schließt sich und im Designer wird ein entsprechendes Icon erstellt.
 
-![LINQToERP-IDocs_002](/img/content/LINQToERP-IDocs_002.png){:class="img-responsive"}
+Um das IDoc zu bearbeiten, doppelklicken Sie auf das IDoc Icon im Designer.
 
-Die Checkbox *Selected* steuert, ob ein Segment später im Code Verwendung finden kann, oder ob es aus Gründen der Übersichtlichkeit deaktiviert wird. Deaktivierte Segmente erscheinen in der Baumstruktur in kursiv.<br>
-Der folgende Code zeigt die Anwendung der generierten Klassen. Zunächst wird ein IDoc-Objekt erzeugt (MATMAS5) und die wichtigsten Kopfinformationen gefüllt (Absender und Empfänger-Infos wie RCVPRN oder SNDPRN).<br>
-Es werden 2 Segmente, E1MARAM (Grunddaten) und E1MAKTM (Kurztext) erstellt, mit den Pflichtfeldern gefüllt und anschließend dem IDoc hinzugefügt. Mit Send() versenden wir das IDoc.
+### Die Klasse im Code verwenden
+Speichern Sie die .erp-Datei, um die Code-Generierung der Proxy-Klasse im Hintergrund anzustoßen. 
+
+In diesem Beispiel generiert die IDoc Komponente die folgenden Objekte:
+- ein IDoc Objekt (MATMAS05) mit den wichtigsten Kopfinformationen (Absender und Empfänger-Infos wie RCVPRN oder SNDPRN).
+- 2 Segmente, E1MARAM (Grunddaten) und E1MAKTM (Kurztext) mit ausgefüllten Pflichtfeldern, die dem IDoc hinzugefügt werden.
+
+Das IDoc wird mit *Send()* versenden.<br>
+Der folgende Code zeigt die Anwendung der generierten Klassen:
 
 <details>
-<summary>[C#]</summary>
+<summary>Klicken Sie hier, um das C# Beispiel zu öffnen</summary>
 {% highlight csharp %}
 static void Main(string[] args) 
 { 
@@ -68,7 +90,10 @@ static void Main(string[] args)
 {% endhighlight %}
 </details>
 
-In der Transaktion WE02 sehen wir die eingehenden IDocs und die ordentliche Verarbeitung, wenn der Status auf grün ist.
+#### Ergebnis in SAP prüfen
+
+Die SAP-Transaktion WE02 zeigt alle eingehenden IDocs. 
+Wenn der Status grün ist, werden die IDocs ordnungsgemäß verarbeitet.
 
 ![LINQToERP-IDocs_003](/img/content/LINQToERP-IDocs_003.png){:class="img-responsive"}
 

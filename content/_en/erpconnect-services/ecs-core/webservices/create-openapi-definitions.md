@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=create_openapi_definitions
 
 After you have successfully designed and tested your web service you can export it into an OpenAPI definition. OpenAPI (formerly known as Swagger) is an API description format for REST APIs. Some cloud applications such as Nintex Workflow Cloud or Microsoft Flow support the import of OpenAPI files as custom connectors. The advantage is that it is really easy to configure these connectors compared a the rather technical direct web service call.  
 
-To export a web service into an OpenAPI definition click on *Export OpenAPI Definition* in the menu bar. The definition will be exported to the desired destination in JSON-format. It is possible to adjust it manually within any JSON-editor of your choice (e.g. Visual Studio). 
+To export a web service into an OpenAPI definition click on *Export OpenAPI Definition* in the menu bar. The definition will be exported to the wanted destination in JSON-format. It is possible to adjust it manually within any JSON-editor of your choice (e.g. Visual Studio). 
 
 ![ecscore-nwc_1](/img/content/ecscore-nwc_1.png){:class="img-responsive"}
 

@@ -11,7 +11,16 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-queries
 ---
 
-**You can find the code for this example in the ERPConnect installation directory in the LINQQuery directory.**
+
+The following section shows how to use the Query component of the *LINQ to ERP* toolbox.
+
+### Look Up a Query
+1. Drag&Drop the Query component into the *LINQ to ERP* DataContext. A search window opens. 
+2. Enter the name of the Query to be extracted in the field **Query Name** (1) or enter the name of a User Group in the fiels **User Group**. Use wildcards (*) if needed. <br>
+![LINQToERP-Queries_003](/img/content/LINQToERP-Queries_003.png){:class="img-responsive" width="400px"}
+3. Click **[Search]** (binoculars icon) (2). Search results appear in the preview window.
+4. Select the wanted Query (3) and click **[OK]** (4).
+
 
 Apart from the table integration described in the previous two sections, LINQ to SAP also supports SAP queries as LINQ-capable data sources (important: do not mix these up with BW queries!). The following example demonstrates how a demo query called ZVV01 is addressed in the ZTHEO user group. The screenshot below shows the query's selection screen, as well as the list output. The contents output here by the query (join between VBAK and VBAP) are sales data.
 
@@ -22,7 +31,7 @@ Apart from the table integration described in the previous two sections, LINQ to
 
 To activate a query on the .NET end, drag the query symbol from the toolbox to the data context. You have access to a search mask after logging on.
 
-![LINQToERP-Queries_003](/img/content/LINQToERP-Queries_003.png){:class="img-responsive" width="400px"}
+
 
 In the dialog you can specify whether the values for each select option should be accessible in the code or not (*Pass* is checked off here) and, if so, what the variable name should be (the default name given by SAP might be rather cryptic). An additional variant can also be applied here. In the upper right-hand area, the name of the later DataContext method is defined (*Method*), as well as what the class that represents a single row should be called (*Object*) and what the class should be called which represents the entire query output (*Collection*). 
 

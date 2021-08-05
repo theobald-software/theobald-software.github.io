@@ -37,7 +37,7 @@ In the first row you can select the project you want to record working times for
 
 
 
-After selecting the desired project, the corresponding activities are loaded and listed in the second row of the screen.
+After selecting the wanted project, the corresponding activities are loaded and listed in the second row of the screen.
 
 ![cats-app-04](/img/content/cats-app-04.png){:class="img-responsive"}
 

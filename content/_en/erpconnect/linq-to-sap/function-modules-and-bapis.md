@@ -25,6 +25,8 @@ In the LINQ application, Function Modules and BAPIs are handled nearly the same 
 
 ### Define Export, Import, Changings and Tables
 
+After a Function Module/BAPI has been loaded, the window "RFC Function Modules/BAPIs" opens. 
+
 1. In the *Export* tab you can define the output values sent from SAP back to the client after the execution of a function module.<br>
 If a parameter is to be set dynamically in the code, mark the checkbox of the item in the column **Pass** (5).<br>
 To assign a static value, enter the new value in the column **Value** (6).<br>
@@ -41,6 +43,7 @@ You can also specify the variable name, the name of the table class and the name
 To edit the Function Module/BAPI, double-click the function icon in the Designer.
 
 ### How to Use the Class in your Code
+Save the .erp file that contains the extraction component to trigger the proxy classes code generation in the background. <br>
 
 The following code shows how the example above is addressed with an actual parameter and a return table:
 

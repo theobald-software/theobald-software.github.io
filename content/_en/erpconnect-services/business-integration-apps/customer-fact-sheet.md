@@ -24,7 +24,7 @@ The relevant customer information is displayed in different sections after calli
 
 **Conducting a customer enquiry**
 
-To conduct a customer inquiry, you enter the desired customer number in the search screen and start the inquiry by clicking ENTER or the magnifier symbol.
+To conduct a customer inquiry, you enter the wanted customer number in the search screen and start the inquiry by clicking ENTER or the magnifier symbol.
 
 ![ECS-BIA-CustomerFactsheet2](/img/content/ECS-BIA-CustomerFactsheet2.png){:class="img-responsive"}
 

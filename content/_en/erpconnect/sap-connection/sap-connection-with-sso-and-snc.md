@@ -120,4 +120,4 @@ con.Open();
 </details>
 
 
-With the new property "QualityOfProtection"  you can set your desired security level. For detail information go [here](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm).
+With the new property "QualityOfProtection"  you can set your wanted security level. For detail information go [here](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm).

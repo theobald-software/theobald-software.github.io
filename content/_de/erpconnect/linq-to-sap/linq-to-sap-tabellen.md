@@ -15,7 +15,7 @@ Der folgende Abschnitt beschreibt die Anwendung der Table Komponente aus der *LI
 
 ### Eine Tabelle finden 
 1. Ziehen Sie die Table Komponente in den *LINQ to ERP* DataContext. Ein Suchfenster öffnet sich.
-2. Geben Sie in das Feld Table name (1) den Namen der zu extrahierenden Tabelle ein. Falls nötig, verwenden Sie Wildcards (*).
+2. Geben Sie in das Feld **Table** (1) den Namen der zu extrahierenden Tabelle ein. Falls nötig, verwenden Sie Wildcards (*).
 ![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive"}
 3. Klicken Sie auf **[Search]** (Fernglassymbol)(2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
 4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **[OK]** (4).
@@ -29,7 +29,7 @@ Standardmäßig entsprechen die Namen der Spalten den späteren Properties der P
 Sie können einen eigenen Namen vergeben, indem Sie die Angabe in der Spalte **Member** überschreiben (6). 
 ![LINQToERP-Tables-002](/img/content/LINQToERP-Tables-002.png){:class="img-responsive"}
 3. Klicken Sie auf **[Preview]**, um die Ergebnistabelle zu prüfen.
-4. Bestätigen Sie Ihr Eingaben mit **[OK]**. Das Fenster "LINQ to ERP Tables" schließt sich und im Designer wird ein entsprechendes Icon erstellt.<br>
+4. Bestätigen Sie Ihre Eingaben mit **[OK]**. Das Fenster "LINQ to ERP Tables" schließt sich und im Designer wird ein entsprechendes Icon erstellt.<br>
 ![LINQToERP-Tables-003](/img/content/LINQToERP-Tables-003.png){:class="img-responsive"}
 
 Um die Tabelle zu bearbeiten, doppelklicken Sie auf das Table Icon im Designer.

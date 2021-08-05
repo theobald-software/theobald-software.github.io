@@ -23,10 +23,11 @@ Funktionsbausteine und BAPIs werden bei der LINQ-Anwendung nahezu gleich gehandh
 4. Wählen Sie den gewünschten Funktionsbaustein/BAPI (3) aus und klicken Sie auf **[OK]** (4).
 
 ### Export, Import, Changings und Tables definieren
- 
+Nachdem ein Funktionsbaustein/BAPI geladen wurde, öffnet sich das Fenster “RFC Function Modules/BAPIs”.
+
 1. Im *Export* Tab können Sie die Ausgabewerte definieren, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden. <br>
 Um einen Parameter beim Aufruf im Code dynamisch zu setzen, haken Sie in der Spalte **Pass** die entsprechende Checkbox an (5).
-Um einen statischen Wert zu hinterlegen, geben Sie den neuen Wert in der Spalte **Valu** ein (6).<br>
+Um einen statischen Wert zu hinterlegen, geben Sie den neuen Wert in der Spalte **Value** ein (6).<br>
 ![LINQToERP-Function-Modules-002](/img/content/LINQToERP-Function-Modules-002.png){:class="img-responsive" }
 2. Im *Import* Tab können Sie Eingabewerte definieren, die vom Client an SAP gesendet werden.
 3. Im *Changings* Tab können Sie Parameter definieren, die sowohl für Eingabe als auch Ausgabe verwendet werden können.
@@ -41,6 +42,7 @@ Bleiben die Felder leer, werden Standardnamen generiert. <br>
 Um den Funktionsbaustein/BAPI zu bearbeiten, doppelklicken Sie auf das Function Icon im Designer.
 
 ### Die Klasse im Code verwenden
+Speichern Sie die .erp-Datei, um die Code-Generierung der Proxy-Klasse im Hintergrund anzustoßen. 
 
 Der folgende Code zeigt die Ansteuerung des obigen Beispiels mit jeweils einem Übergabewert und einer Rückgabetabelle:
 

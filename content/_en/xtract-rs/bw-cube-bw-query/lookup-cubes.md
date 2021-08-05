@@ -13,6 +13,6 @@ old_url: /Xtract-RS-EN/default.aspx?pageid=look-up-cubes
 
 Click the binocular button to open up the search dialog as shown below.
 
-You can also use wildcards ( * ) to search for InfoCubes and QueryCubes. Select the desired cube and click *OK*.
+You can also use wildcards ( * ) to search for InfoCubes and QueryCubes. Select the wanted cube and click *OK*.
 
 ![BWCube-Search](/img/content/BWCube-Search.png){:class="img-responsive" }

@@ -26,7 +26,7 @@ The name, IP or domain and port to access the server within the network. <br>
 Format: [Server]:[Port].
 
 **Extraction**<br>
-The name of the desired extraction. When clicking the arrow next to the text area, all available extractions are loaded into a drop-down menu. 
+The name of the wanted extraction. When clicking the arrow next to the text area, all available extractions are loaded into a drop-down menu. 
 Only the extractions with Alteryx as destination type are displayed. You can define the destination type in the Xtract Universal Designer.
 
 {: .box-note }

@@ -12,7 +12,7 @@ lang: en_GB
 
 In some SAP integration scenarios it can be useful to provide a flexible data selection in cascading dropdown lists. This is also possible by integrating JavaScript and ECS REST-Services in Nintex Forms (compare this with the earlier example of SAP validation in Nintex Forms). 
 
-In the present example an SAP material number should be entered in an input field in Nintex Forms and all possible return values for this material number should be listed in a dropdown box. When the desired material is selected in the dropdown box the material long text is supposed to be displayed in another field.  
+In the present example an SAP material number should be entered in an input field in Nintex Forms and all possible return values for this material number should be listed in a dropdown box. When the wanted material is selected in the dropdown box the material long text is supposed to be displayed in another field.  
 
 **Step 1: Create a SharePoint custom list**
 
