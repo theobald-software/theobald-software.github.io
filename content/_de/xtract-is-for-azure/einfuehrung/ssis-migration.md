@@ -14,7 +14,7 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=ssis-migration
 Der folgende Abschnitt befasst sich mit den Informationen über die Migration von SSIS Paketen (mit Xtract IS for Azure-Komponenten) von einer niedrigeren SQL Server/SSIS-Version in eine höhere Version. 
 Beispielweise Sie migrieren von SQL Server 2012 nach SQL Server 2019. Diese Migration erfordert ebenfalls eine Migration der SSIS Pakete.
 
-Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSDT- und SSIS-Version. Mehr Informationen dazu finden Sie im Knowledgebase-Artikel [Step-by-step instructions for migrating SSIS 2008/2012 packages to SSIS 2019](https://kb.theobald-software.com/xtract-is/step-by-step-ssis-migration).
+Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSDT- und SSIS-Version. 
 
 ### Migration von SSIS 2008/2012 nach SSIS 2019
 1.  Bereiten Sie die SSIS-Pakete für Migration mithilfe des *XtractISConversionPreparer.exe*.
