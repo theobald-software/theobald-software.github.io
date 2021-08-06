@@ -37,8 +37,9 @@ Darüber hinaus kann ERPConnect ABAP-Code on-the-fly generieren und ausführen, 
 Für weitere Informationen zum *LINQ to SAP* Add-On, siehe [LINQ to SAP](./linq-to-sap).
 
 Im Installationsumfang von ERPConnect sind folgende Tools enthalten:
-- [TransactionRecorder](./tools/transaction-recorder)
+- [Transaction-Recorder](./tools/transaction-recorder)
 - [IDoc-Schema-Generator](./tools/idoc-schema-generator)
+- [*Function-Template-Generator*](./tools/function-template-generator.md) 
 
 Weitere Informationen zu den Funktionen von ERPConnect finden Sie in den folgenden Abschnitten:
 

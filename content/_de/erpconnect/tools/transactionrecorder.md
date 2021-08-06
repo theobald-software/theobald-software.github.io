@@ -1,8 +1,8 @@
 ---
 ref: ec-tools-01
 layout: page
-title: TransactionRecorder
-description: TransactionRecorder
+title: Transaction-Recorder
+description: Transaction-Recorder
 product: erpconnect
 parent: tools
 permalink: /:collection/:path
@@ -11,8 +11,17 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=transactionrecorder
 ---
 
-**Der TransactionRecorder ist im ERPConnect-Installationsordner zu finden.**
+Der *Transaction-Recorder* zeichnet SAP-Transaktionen auf und generiert einen entsprechenden C# oder VB Code für die Transaktionen.
 
-Geben Sie die gewünschte Transaktion im TransactionRecorder ein und klicken Sie auf den *Generate Now*! Button. Der SAP GUI öffnet sich, erfassen Sie Ihre Daten genau so, wie Sie sie aufzeichnen und später abspielen möchten. Nach Beendigung der Transaktion wird der Code generiert und angezeigt, so wie in der folgenden Abbildung. Sie können den Code per *Strg + C* und *Strg + V* in Ihr Programm übernehmen und dort wunschgemäß anpassen.
+### *TransactionRecorder* verwenden
 
-![Tools-001](/img/content/Tools-001.png){:class="img-responsive"}
+1. Um den *Transaction-Recorder* zu starten, führen Sie die *TransactionRecorder.exe* aus dem ERPConnect-Verzeichnis `C:\Program Files\ERPConnect` aus.
+2. Geben Sie den Transaktioncode ein, den Sie aufzeichnen möchten in das Textfeld **Transaction Code for recording** ein. 
+3. Wählen Sie entweder *C#* oder *VB* als Zielsprache für den generierten Code aus.
+4. Klicken Sie auf **[Generate Now]**, um Verbindung mit Ihrem SAP-System herzustellen.
+5. Das Fenster "SAP Login" öffnet sich. Geben Sie Ihre SAP Benutzerdaten ein und klicken Sie auf **[OK]**.
+6. Falls aufgefordert, erlauben Sie den Zugriff auf SAP. Ihre SAP GUI öffnet sich und führt den Transaktionscode aus.
+7. Beenden Sie die Transaktion in SAP. <br>
+Sobald die Transaktion beendet ist, wird der entsprechende Code generiert und im *Transaction-Recorder* angezeigt.
+8. Verwenden Sie **[Ctrl+C]** und **[Ctrl+V]**, um den Code in Ihr Programm zu kopieren.<br>
+![Tools-001](/img/content/Tools-001.png){:class="img-responsive" }
