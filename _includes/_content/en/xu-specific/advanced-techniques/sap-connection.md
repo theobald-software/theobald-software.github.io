@@ -106,7 +106,6 @@ SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/suppo
 #### Trace Directory
 
 You can log debug information and save it locally. Fill the **Trace directory** field with a local path to a folder, where you want to save the debug information.
-See further details in the knowledge base article [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products).
 
 {: .box-warning }
 **Warning!: Increase of used hard drive memory** <br>
