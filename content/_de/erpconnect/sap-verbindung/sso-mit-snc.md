@@ -1,12 +1,12 @@
 ---
-ref: ec-sap-connection-04
+ref: ec-sap-connection-05
 layout: page
 title: SNC mit NTLM und Kerberos
 description: SNC mit NTLM und Kerberos
 product: erpconnect
-parent: authentifizierung
+parent: sap-verbindung
 permalink: /:collection/:path
-weight: 3
+weight: 5
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sso-mit-snc
 progressstate: 3

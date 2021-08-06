@@ -1,12 +1,12 @@
 ---
-ref: ec-sap-connection-02
+ref: ec-sap-connection-03
 layout: page
 title: Log On Ticket
 description: Log On Ticket
 product: erpconnect
-parent: authentifizierung
+parent: sap-verbindung
 permalink: /:collection/:path
-weight: 1
+weight: 3
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sso-mit-logon-ticket
 ---

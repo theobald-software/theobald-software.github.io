@@ -19,6 +19,3 @@ Im Installationsumfang sind 2 Tools enthalten, die Ihnen die Arbeit mit ERPConne
 - [*Function-Template-Generator*](./tools/function-template-generator.md) generiert wiederverwendbare XML Vorlagen für Funktionsbausteine und BAPIs.
 
 Sie finden die Tools im ERPConnect Verzeichnis `C:\Program Files\ERPConnect`.<br>
-Die folgenden Abschnitte beschreiben, wie die Tools verwendet werden:
-
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

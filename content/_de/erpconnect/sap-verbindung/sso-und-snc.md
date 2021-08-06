@@ -1,12 +1,12 @@
 ---
-ref: ec-sap-connection-02
+ref: ec-sap-connection-04
 layout: page
 title: SNC
 description: SNC
 product: erpconnect
-parent: authentifizierung
+parent: sap-verbindung
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sso-und-snc
 ---

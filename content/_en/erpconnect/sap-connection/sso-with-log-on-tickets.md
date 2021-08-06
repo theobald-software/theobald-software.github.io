@@ -1,12 +1,12 @@
 ---
-ref: ec-sap-connection-02
+ref: ec-sap-connection-03
 layout: page
 title: SSO with Log On Tickets
 description: SSO with Log On Tickets
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=sso-single-sign-on
 ---

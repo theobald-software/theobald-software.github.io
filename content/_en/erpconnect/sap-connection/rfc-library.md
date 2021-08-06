@@ -1,16 +1,17 @@
 ---
-ref: ec-sap-connection-05
+ref: ec-sap-connection-06
 layout: page
-title: Netweaver DLL
-description: Netweaver DLL
+title: RFC-Library
+description: RFC-Library
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=netweaver-dll
 ---
 
+### Netweaver DLL
 ERPConnect supports the Netweaver RFC (SDK) starting by version 4.6.0.  
 To use it, set the Property Protocol of the R3Connection object to ClientProtocol.NWRFC before you open the connection. 
 

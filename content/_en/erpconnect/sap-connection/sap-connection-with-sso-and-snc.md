@@ -1,12 +1,12 @@
 ---
-ref: ec-sap-connection-02
+ref: ec-sap-connection-04
 layout: page
 title: SAP Connection with SSO and SNC
 description: SAP Connection with SSO and SNC
 product: erpconnect
 parent: sap-connection
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=sap-connection-with-sso-and-snc
 ---

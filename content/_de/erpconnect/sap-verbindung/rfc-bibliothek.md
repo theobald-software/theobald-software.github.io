@@ -1,11 +1,12 @@
 ---
+ref: ec-sap-connection-06
 layout: page
 title: RFC-Bibliothek
 description: RFC-Bibliothek
 product: erpconnect
 parent: sap-verbindung
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-bibliothek
 ---
