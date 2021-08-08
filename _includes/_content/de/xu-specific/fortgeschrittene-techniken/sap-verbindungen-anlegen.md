@@ -102,7 +102,7 @@ SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/sup
 
 
 #### Trace Directory (Verzeichnis zur Ablage der Debug-Logs)
-Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/general/how-to-activate-tracing-for-xtract-products) ein gültiger Pfad eintragen werden. <br> 
+Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld **Trace Directory** ein gültiger Pfad eintragen werden. <br> 
 
 {: .box-warning }
 **Warnung!: Erhöhter Verbrauch des Festplattenspeichers** <br>
