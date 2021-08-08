@@ -1,8 +1,8 @@
 ---
 ref: xtract-is-for-azure-01
 layout: page
-title: Xtract IS for Azure for Azure
-description: Xtract IS for Azure for Azure
+title: Xtract IS for Azure
+description: Xtract IS for Azure
 product: xtract-is-for-azure
 parent: home
 childidentifier: xtract-is-for-azure
@@ -14,7 +14,7 @@ old_url: /Xtract-IS-DE/
 
 Willkommen in der Online Help von Xtract IS for Azure.
 
-Xtract IS for Azure for Azure ist ein Plug-in für die [SQL Server Integration Services (SSIS)](https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services).
+Xtract IS for Azure ist ein Plug-in für die [SQL Server Integration Services (SSIS)](https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services).
 
 ### Über Azure SSIS-IR
 
