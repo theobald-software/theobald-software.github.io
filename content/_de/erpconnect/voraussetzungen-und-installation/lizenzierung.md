@@ -11,21 +11,35 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=lizenzierung
 ---
 
-Nach dem Ablauf der Testperiode wird sich ERPConnect weigern, ohne gültige Lizenznummer weiterzuarbeiten.
+Eine Demo-Lizenz wird automatisch mit der Installation von ERPConnect installiert. <br>
+Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theobald Software](https://my.theobald-software.com/) zur Verfügung gestellt. 
 
-Die Lizenznummer, die Sie beim Kauf von ERPConnect bekommen haben, muss während der Laufzeit in Ihrem Code gesetzt werden, und zwar über die statische Klasse ERPConnect.LIC.
+{: .box-note }
+**Hinweis:** Die Standard Demo-Lizenz unterstützt keine Anwendungen in Web-Umgebungen.
+Um ERPConnect unter ASP.NET zu testen, stellen wir Ihnen gerne eine zeitlich beschränkte Testlizenz zur Verfügung.
+Sie können die Testlizenz formlos per Mail an [sales@theobald-software.com](mailto:sales@theobald-software.com) anfordern. 
 
-Dieses Setzen mittels SetLic sollte vor dem ersten Verbinden mit dem SAP-System stattfinden (unabhängig, ob als Server oder als Client). 
 
-**C#**
+### Installation der ERPConnect-Lizenz 
+
+Nach Ablauf der Testphase, funktioniert ERPConnect nur noch mit gültiger Lizenznummer.
+
+Da ERPConnect die Lizenznummer bei jedem Aufruf prüft (ob als Server oder als Client), müssen Sie die Lizenz vor dem ersten Verbindungsaufbau mit dem SAP-System setzen.<br>
+Setzen Sie die Lizenznummer während der Laufzeit über die statische Klasse `ERPConnect.LIC.`.
+
 {% highlight csharp %}
 ERPConnect.LIC.SetLic("XXXXXXXXXX");
 {% endhighlight %}
-**VB**
-{% highlight visualbasic %}
-ERPConnect.LIC.SetLic("XXXXXXXXXX")
-{% endhighlight %} 
 
-Falls Sie mehr als eine Entwicklerlizenz besitzen, sind die Lizenznummern ggfs. am Ende durchnummeriert: -01, -02 usw. Welche Endung Sie bei SetLic einsetzen, spielt keine Rolle. Sie können die Endung auch komplett weglassen.
 
-Die Demoversion funktioniert unter ASP.NET nicht und weigert sich mit einer Exception aufgrund der fehlenden Lizenz zu SAP zu verbinden. Gerne stellen wir Ihnen unbürokratisch eine zeitlich beschränkte Testlizenz zur Verfügung. Bitte fordern Sie diese einfach formlos per Mail an (support@theobald-software.com). 
+Falls Sie mehr als eine Entwicklerlizenz besitzen, sind die Lizenznummern am Ende durchnummeriert: -01, -02 usw. 
+Welche Endung Sie bei *SetLic* einsetzen, spielt keine Rolle. Die Endung kann auch komplett weggelassen werden.
+
+### Wartung
+Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/erpconnect/preise-bestellungen/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). 
+Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
+Bei technischen Problemen wenden Sie sich per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).
+
+****
+#### Weiterführende Links
+- [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/)
