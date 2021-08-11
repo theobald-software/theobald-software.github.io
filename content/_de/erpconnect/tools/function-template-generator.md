@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=idoc-schema-generator
 ---
 
-Der *Function-Template-Generator* generiert wiederverwendbare XML Vorlagen für Funktionsbausteine und BAPIs.
+Der *Function-Template-Generator* generiert XML-Template für Funktionsbausteine und BAPIs.
 
 ### *Function-Template-Generator* verwenden
  
@@ -20,4 +20,5 @@ Der *Function-Template-Generator* generiert wiederverwendbare XML Vorlagen für 
 ![Tools-003](/img/content/Tools-003.png){:class="img-responsive" }
 3. Das Fenster "SAP Login" öffnet sich. Geben Sie Ihre SAP Benutzerdaten ein und klicken Sie auf **[OK]**.
 4. Speichern Sie die XML-Datei lokal auf Ihrer Festplatte.
-5. Laden Sie die XML-Datei in Ihr Programm.
+
+Für Informationen darüber wie XML-Template geladen werden, siehe [Templates verwenden](../rfc-client-funktionen-und-bapis/performance-tuning-durch-xml-templates).

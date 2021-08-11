@@ -1,7 +1,7 @@
 ---
 ref: ec-calling-bapis-and-function-modules-05
 layout: page
-title: Improve your Performance by Using Templates
+title: Using Templates
 description: Improve your Performance by Using Templates
 product: erpconnect
 parent: calling-bapis-and-function-modules
@@ -11,12 +11,15 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=improve-your-performance-by-using-templates
 ---
 
-In some cases it may be helpful to improve the performance by using xml templates for creating the function module object hierarchy instead of using the CreateFunction/CreateBAPI methods: 
+Using XML templates can improve the performance of your application by loading the complete object hierarchy from an XML file. 
 
-1. Create a template using the tool FunctionTemplateGenerator.exe (which is located in the ERPConnect program folder).
+### How to Use XML Templates
+
+1. Create an XML template using the tool [FunctionTemplateGenerator.exe](../tools/function-template-generator) located in the ERPConnect directory.
 2. Add the XML file to your project as a resource.
-3. Use the following code to load the XML stream.
-4. Now you can use the FRFCFunction-object as usual instead of using the CreateFunction/CreateBAPI methods.
+3. Load the XML file into your program as shown in the C# example code below.
+4. Now you can use the FRFCFunction-object instead of using the *CreateFunction/CreateBAPI* methods.
+
 
 
 <details>
@@ -35,7 +38,7 @@ RFCFunction f = new RFCFunction("BAPI_CUSTOMER_GETDETAIL");
 {% endhighlight %}
 </details>
 
-
+<!---
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -52,4 +55,4 @@ Dim f As New RFCFunction("BAPI_CUSTOMER_GETDETAIL")
 {% endhighlight %}
 </details>  
 
-  
+-->

@@ -20,4 +20,5 @@ The *Function-Template-Generator* generates reusable XML templates for Function 
 ![Tools-003](/img/content/Tools-003.png){:class="img-responsive" }
 3. The window "SAP Login" opens. Enter your SAP credentials and click **[OK]**.
 4. Save the XML file to your local hard drive. 
-5. Load the XML file into your program.
+
+For information on how to load the template, see [Using Templates](../calling-bapis-and-function-modules/improve-your-performance-by-using-templates).
