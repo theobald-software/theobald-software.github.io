@@ -49,10 +49,29 @@ Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträge
 {: .box-note }
 **Hinweis**: Visual Studio Express-Versionen unterstützen den LINQ to ERP Designer nicht.
 
-## Andere Anwendungen und Frameworks
+### Andere Anwendungen und Frameworks
 
 - [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) 
 - [Visual C++ 2013 Runtime](https://www.microsoft.com/de-DE/download/details.aspx?id=40784).
+
+#### Netweaver RFC-Bibliothek
+
+ERPConnect unterstützt die Netweaver RFC-Bibliothek ab Version 4.6.0.
+Um die Bibliothek zu verwenden, setzen Sie die Eigenschaft *Protocol* des *R3Connection-Objekts* auf *ClientProtocol.NWRFC*. 
+
+```
+R3Connection.Protocol = ClientProtocol.NWRFC;
+```
+
+Für die 64-Bit Umgebung sind folgende DLLs nötig:
+- ERPConnect35.dll oder ERPConnect45.dll
+- sapnwrfc.dll
+- icuucXX.dll
+- icudtXX.dll
+- icuinXX.dll 
+
+Die ERPConnect*.dll wird mit ERPConnect mitgeliefert. 
+Die restlichen DLLs können Sie von der SAP-Webseite herunterladen.
 
 ### Arbeitsspeicher
  	
@@ -70,8 +89,7 @@ Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträge
 **Warnung! ERPConnect.ERPException: Cannot access librfc32.dll.** <br>
 Um ERPConnect im 64-Bit Modus ausführen zu können, benötigen Sie eine 64-Bit Version der SAP-Bibliothek **librfc32.dll**. 
 Kopieren Sie die 64-Bit Version der librfc32.dll in das Verzeichnis `C:\Windows\System32`. <br>
-Um ERPConnect im 32-Bit-Modus laufen zu lassen, kopieren Sie die 32-Bit-Version der librfc32.dll in das Verzeichnis `C:\Windows\SysWOW64`. <br>
-Die librfc32.dll steht Ihnen im SAP® ONE Support Launchpad zum Download zur Verfügung. 
+Um ERPConnect im 32-Bit-Modus laufen zu lassen, kopieren Sie die 32-Bit-Version der librfc32.dll in das Verzeichnis `C:\Windows\SysWOW64`. 
 
 ![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive" width="300px" }
 
@@ -81,8 +99,6 @@ Die librfc32.dll steht Ihnen im SAP® ONE Support Launchpad zum Download zur Ver
 - Plain authentication (Benutzer/Passwort), Secure Network Communications (SNC) mit und ohne Single Sign-On (SSO) und SAP Logon Tickets (MYSAPSSO2) werden unterstützt.
 
 ### Netzwerkeinstellungen
- 	
-- Die Kommunikation mit dem SAP Applikationsserver erfolgt per RFC über TCP Port 33*nn*, wobei *nn* die Systemnummer des SAP Systems ist.
 
-
-
+Für die Kommunikation mit dem SAP Applikationsserver müssen je nach Verbindungstechnik des SAP Systems Ports geöffnet werden.
+Details finden Sie im Knowledgebase-Artikel [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/how-to-check-the-accessibility-to-a-sap-system).

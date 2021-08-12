@@ -56,6 +56,23 @@ Installation of custom function modules / transport requests is not required.
 - [SAP NetWeaver RFC Library 7.50](https://launchpad.support.sap.com/#/notes/2573790) 
 - [Visual C++ 2013 Runtime](https://www.microsoft.com/en-US/download/details.aspx?id=40784)
 
+#### Netweaver RFC Library
+ERPConnect supports the Netweaver RFC (SDK) as of version 4.6.0.  
+To use it, set the Property *Protocol* of the *R3Connection* object to *ClientProtocol.NWRFC* before opening the connection. 
+
+```
+R3Connection.Protocol = ClientProtocol.NWRFC;
+```
+
+For 64-Bit environments the following DLLs are required:
+- ERPConnect35.dll or ERPConnect45.dll
+- sapnwrfc.dll
+- icuucXX.dll
+- icudtXX.dll
+- icuinXX.dll 
+
+XX can vary depending on the version of the NW RRC Libraries.<br>
+The ERPConnect*.dll is delivered with ERPConnect. The other DLLs can be downloaded from the SAP web site.
 
 ### Memory
 * 2 GB or more recommended (depends on actual use case)
@@ -76,15 +93,14 @@ The 32-Bit Version has to be copied in the \SysWoW64 folder.
 **Warning! ERPConnect.ERPException: Cannot access librfc32.dll.** <br>
 To use ERPConnect in 64-Bit mode, you need a 64-Bit version of the SAP library **librfc32.dll**. 
 Copy the 64-bit version of librfc32.dll to the direcory `C:\Windows\System32`. <br>
-To use ERPConnect in 32-Bit mode, copy the 32-Bit version of the librfc32.dll to the directory `C:\Windows\SysWOW64`. <br>
-You can download the librfc32.dll from SAP® ONE Support Launchpad.
+To use ERPConnect in 32-Bit mode, copy the 32-Bit version of the librfc32.dll to the directory `C:\Windows\SysWOW64`. 
 
 ![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive" width="300px" }
 
 ### Security Settings
  	
-* For logging on to SAP, a system or dialog user with appropriate [authority objects](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights) is required.
-* Plain authentication (user/password), Secure Network Communications (SNC) with and without Single Sign-On (SSO) and SAP Logon Tickets (MYSAPSSO2) are supported.
+- For logging on to SAP, a system or dialog user with appropriate [authority objects](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights) is required.
+- Plain authentication (user/password), Secure Network Communications (SNC) with and without Single Sign-On (SSO) and SAP Logon Tickets (MYSAPSSO2) are supported.
 
 
 ### Network Settings
