@@ -19,7 +19,7 @@ With the IDoc component you can send IDocs to SAP. The segments of IDocs can be 
 2. Enter the name of the IDOC to be sent to SAP in the field **IDoc** (1). Use wildcards (*) if needed. <br>
 ![LINQToERP-IDocs_001](/img/content/LINQToERP-IDocs_001.png){:class="img-responsive" }
 3. Click **[Search]** (binoculars icon) (2). Search results appear in the preview window.
-4. Select the wanted IDoc (3) and click **[OK]** (4).
+4. Select an IDoc (3) and click **[OK]** (4).
 
 
 ### Edit an IDoc

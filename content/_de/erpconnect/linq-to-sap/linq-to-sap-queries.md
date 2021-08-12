@@ -11,31 +11,42 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-queries
 ---
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis LINQQuery**
+Der folgende Abschnitt beschreibt die Anwendung der SAP Query Komponente aus der LINQ to ERP Toolbox.
 
-Neben der Tabellenintegration aus den letzten beiden TeilAbschnittn unterstützt LINQ to SAP auch SAP-Queries als LINQ-fähige Datenquelle (Achtung! Bitte nicht mit BW-Queries verwechseln). Das folgende Beispiel demonstriert die Ansteuerung einer Demo-Query namens ZVV01 in der Benutzergruppe ZTHEO. Der folgende Screenshot zeigt den Selection Screen der Query, sowie die Listausgabe. Inhaltlich gibt die Query Vertriebsdaten aus (Join aus VBAK und VBAP).
+{: .box-note }
+**Hinweis:** Die SAP Query Komponente unterstützt keine BW Queries.
 
+#### Über diese Beispiel-Query
+Das folgende Beispiel demonstriert die Ansteuerung einer Demo-Query namens *ZVV01* in der Benutzergruppe *ZTHEO*. 
+Die folgenden Screenshots zeigen den Auswahldialog der Query, sowie die Listenausgabe in SAP. <br>
 ![LINQToERP-Queries_001](/img/content/LINQToERP-Queries_001.png){:class="img-responsive"}
-
 ![LINQToERP-Queries_002](/img/content/LINQToERP-Queries_002.png){:class="img-responsive"}
+Inhaltlich gibt die Query Vertriebsdaten aus (Join aus VBAK und VBAP).
 
-Um eine Query auf .NET-Seite anzusteuern, ziehen Sie das Query-Symbol aus der Toolbox auf den Datenkontext. Nach der Anmeldung steht Ihnen die Suchmaske zur Verfügung.
+### Eine Query finden
 
+1. Ziehen Sie die SAP Query Komponente in den *LINQ to ERP* DataContext. Ein Suchfenster öffnet sich.
+2. Geben Sie in das Feld **Query Name** den Namen des zu extrahierenden SAP Queries ein. Falls nötig, verwenden Sie Wildcards (*).
 ![LINQToERP-Queries_003](/img/content/LINQToERP-Queries_003.png){:class="img-responsive"}
+3. Klicken Sie auf **[Search]** (Fernglassymbol). Die Suchergebnisse werden im Vorschaufenster angezeigt.
+4. Wählen Sie eine SAP Query aus und klicken Sie auf **[OK]**.
 
-Im Dialog kann dann angegeben werden, ob die Werte der jeweiligen Select Option im Code ansteuerbar sein sollen (Pass ist angekreuzt) und falls ja, wie der Variablenname lauten soll (ggfs. ist der Default-Name aus dem SAP recht kryptisch). Außerdem kann noch eine Variante angewendet werden. Im oberen rechten Bereich wird definiert, wie die spätere Methode des DataContext heißen soll (*Method*), wie die Klasse heißen soll, die eine einzelne Zeile repräsentiert (*Object*) und wie die Klasse heißen soll, die die komplette Ergebnismenge repräsentiert (*Collection*).
+### Eine Query aufbereiten
 
+1. Optional: Suchen Sie eine Variante, die angewendet oder bearbeitet werden soll.
+2. Geben Sie an, welche Werte im Code ansteuerbar sein sollen, indem Sie die Checkbox *Pass* neben den Feldern anhaken.
+3. Geben Sie Variablennamen für die ansteuerbaren Werte an. Die Default-Namen sind SAP entnommen.
+4. Sie können am oberen rechten Bereich des Fensters die Methode des DataContexts im Feld **Method** umbenennen. 
+Sie können außerdem die Klasse, die eine einzelne Zeile repräsentiert im Feld **Object** und die Klasse, die die komplette Ergebnismenge repräsentiert im Feld **Collection** umbenennen.<br>
 ![LINQToERP-Queries_004](/img/content/LINQToERP-Queries_004.png){:class="img-responsive"}
-
-Im *Fields*-Tab können nicht benötigte Felder ausgeklammert oder umbenannt werden.
-
+5. Navigieren Sie zu dem Tab *Fields* und deaktivieren Sie nicht benötigte Felder und/oder benennen Sie Felder um.<br>
 ![LINQToERP-Queries_005](/img/content/LINQToERP-Queries_005.png){:class="img-responsive"}
-
-Wie der folgende Code-Ausschnitt zeigt, bietet die DataContext-Klasse nun eine Funktion an, um die Query auszuführen. Als Übergabeparameter erkennen wir im Intellisense die beiden Select Options wieder.
-
+6. Die DataContext-Klasse verfügt nun über eine Funktion, um die Query auszuführen. 
+Die Übergabeparameter in IntelliSense entsprechen den ausgewählten Optionen aus Schritt 2. Beispiel:<br>
 ![LINQToERP-Queries_006](/img/content/LINQToERP-Queries_006.png){:class="img-responsive"}
+Die beiden Übergabeparameter entsprechen den Range-Objekten, die im Abschnitt [Beispiel für das Aufrufen einer Query](../sap-queries/beispiel-fuer-das-aufrufen-einer-query) vorgestellt wurden. 
 
-Die beiden Übergabe-Parameter entsprechen den Range-Objekten wie sie bereits in Abschnitt [Beispiel für das Aufrufen einer Query](../sap-queries/beispiel-fuer-das-aufrufen-einer-query)  vorgestellt wurden. Hier folgt nun der Code für die Ansteuerung. Als Variable dienen Textboxen (siehe folgender Screenshot).
+Beispiel Code: 
 
 <details>
 <summary>[C#]</summary>
@@ -56,5 +67,7 @@ private void btnGo_Click(object sender, EventArgs e)
 }
 {% endhighlight %}
 </details>
+
+In diesem Beispiel dienen Textboxen als Variablen, siehe Screenshot.
 
 ![LINQToERP-Queries_007](/img/content/LINQToERP-Queries_007.png){:class="img-responsive"}

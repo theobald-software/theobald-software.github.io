@@ -1,7 +1,7 @@
 ---
 ref: ec-linq-to-sap-05
 layout: page
-title: Queries
+title: SAP Queries
 description: Queries
 product: erpconnect
 parent: linq-to-sap
@@ -12,41 +12,43 @@ old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-queries
 ---
 
 
-The following section shows how to use the Query component of the *LINQ to ERP* toolbox.
+The following section shows how to use the SAP Query component of the *LINQ to ERP* toolbox.
+
+{: .box-note }
+**Note:** The SAP Query component does not support BW queries.
+
+#### About this Example Query
+The following example demonstrates how a demo query called *ZVV01* is addressed in the *ZTHEO* user group. <br>
+The screenshots below show the query's selection screen, as well as the list output in SAP. <br>
+![LINQToERP-Queries_001](/img/content/LINQToERP-Queries_001.png){:class="img-responsive" width="600px"}
+![LINQToERP-Queries_002](/img/content/LINQToERP-Queries_002.png){:class="img-responsive" width="800px"}
+The output contains sales data (join between VBAK and VBAP).
+
 
 ### Look Up a Query
-1. Drag&Drop the Query component into the *LINQ to ERP* DataContext. A search window opens. 
-2. Enter the name of the Query to be extracted in the field **Query Name** (1) or enter the name of a User Group in the fiels **User Group**. Use wildcards (*) if needed. <br>
+1. Drag&Drop the SAP Query component into the *LINQ to ERP* DataContext. A search window opens. 
+2. Enter the name of the SAP Query to be extracted in the field **Query Name** or enter the name of a User Group in the fiels **User Group**. Use wildcards (*) if needed. <br>
 ![LINQToERP-Queries_003](/img/content/LINQToERP-Queries_003.png){:class="img-responsive" width="400px"}
-3. Click **[Search]** (binoculars icon) (2). Search results appear in the preview window.
-4. Select the wanted Query (3) and click **[OK]** (4).
+3. Click **[Search]** (binoculars icon). Search results appear in the preview window.
+4. Select an SAP Query and click **[OK]**.
 
 
-Apart from the table integration described in the previous two sections, LINQ to SAP also supports SAP queries as LINQ-capable data sources (important: do not mix these up with BW queries!). The following example demonstrates how a demo query called ZVV01 is addressed in the ZTHEO user group. The screenshot below shows the query's selection screen, as well as the list output. The contents output here by the query (join between VBAK and VBAP) are sales data.
+### Process a Query
 
-
-![LINQToERP-Queries_001](/img/content/LINQToERP-Queries_001.png){:class="img-responsive" width="600px"}
-
-![LINQToERP-Queries_002](/img/content/LINQToERP-Queries_002.png){:class="img-responsive" width="800px"}
-
-To activate a query on the .NET end, drag the query symbol from the toolbox to the data context. You have access to a search mask after logging on.
-
-
-
-In the dialog you can specify whether the values for each select option should be accessible in the code or not (*Pass* is checked off here) and, if so, what the variable name should be (the default name given by SAP might be rather cryptic). An additional variant can also be applied here. In the upper right-hand area, the name of the later DataContext method is defined (*Method*), as well as what the class that represents a single row should be called (*Object*) and what the class should be called which represents the entire query output (*Collection*). 
-
+1. Optional: Search a variant to apply or edit. 
+2. Specify which values need to be accessible in the code by checking *Pass*.
+3. Define variable names for the accessible values. The default names are supplied by SAP. 
+4. You can rename the DataContext method in the field **Method** in the upper right-hand area.<br>
+You can also rename the class that represents a single row in the field **Object** and the class that represents the entire query output in the field **Collection**. <br>
 ![LINQToERP-Queries_004](/img/content/LINQToERP-Queries_004.png){:class="img-responsive" width="600px"}
-
-In the fields tab, unneeded fields can be unchecked or renamed.
-
-
+5. Navigate to the tab *Fields* and uncheck unneeded fields and/or rename fields. <br>
 ![LINQToERP-Queries_005](/img/content/LINQToERP-Queries_005.png){:class="img-responsive" width="600px"}
+6. The DataContext class now offers a function to execute the query. 
+The parameters of the function in IntelliSense represent the selected options from step 2. Example:<br>
+![LINQToERP-Queries_006](/img/content/LINQToERP-Queries_006.png){:class="img-responsive"}
+Both parameter values correspond to range objects introduced in the section [Example for calling a query](../sap-queries/example-for-calling-a-query). 
 
-As the following code snippet shows, the DataContext class now offers a function to execute the query. As a parameter value you'll be able to recognize both of the select options in IntelliSense.
-
-![LINQToERP-Queries_006](/img/content/LINQToERP-Queries_006.png){:class="img-responsive" width="800px"}
-
-Both parameter values correspond with the range objects introduced in section [Example for calling a query](../sap-queries/example-for-calling-a-query). Here is the code now for the query. Text boxes serve as variables here (see screenshot below).
+Example code:
 
 <details>
 <summary>Click to open C# example.</summary>
@@ -67,5 +69,7 @@ private void btnGo_Click(object sender, EventArgs e)
 }
 {% endhighlight %}
 </details>
+
+In this example text boxes serve as variables, see screenshot below.
 
 ![LINQToERP-Queries_007](/img/content/LINQToERP-Queries_007.png){:class="img-responsive" width="800px"}

@@ -21,7 +21,7 @@ In the LINQ application, Function Modules and BAPIs are handled nearly the same 
 2. Enter the name of the Function Module/BAPI to be used in the field **Function** (1). Use wildcards (*) if needed. <br>
 ![LINQToERP-Function-Modules-001](/img/content/LINQToERP-Function-Modules-001.png){:class="img-responsive" }
 3. Click **[Search]** (binoculars icon) (2). Search results appear in the preview window.
-4. Select the desired Function Module/BAPI (3) and click **[OK]** (4).
+4. Select a Function Module/BAPI (3) and click **[OK]** (4).
 
 ### Define Export, Import, Changings and Tables
 

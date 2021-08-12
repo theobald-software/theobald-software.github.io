@@ -18,7 +18,7 @@ Der folgende Abschnitt beschreibt die Anwendung der Table Komponente aus der *LI
 2. Geben Sie in das Feld **Table** (1) den Namen der zu extrahierenden Tabelle ein. Falls nötig, verwenden Sie Wildcards (*).
 ![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive"}
 3. Klicken Sie auf **[Search]** (Fernglassymbol)(2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
-4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **[OK]** (4).
+4. Wählen Sie eine Tabelle (3) aus und klicken Sie auf **[OK]** (4).
 
 ### Spalten Filtern
 Nachdem eine Tabelle geladen wurde, öffnet sich das Fenster "LINQ to ERP Tables".

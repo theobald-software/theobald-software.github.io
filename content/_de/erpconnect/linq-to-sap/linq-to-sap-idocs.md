@@ -20,7 +20,7 @@ Die Segmente des gewünschten IDocs können in den SAP-Kontext übernommen und v
 2. Geben Sie in das Feld **IDoc** (1) den Namen des IDocs ein, das an SAP versendet werden soll. Falls nötig, verwenden Sie Wildcards (*).
 ![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive"}
 3. Klicken Sie auf **[Search]** (Fernglassymbol)(2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
-4. Wählen Sie das gewünschte IDoc (3) aus und klicken Sie auf **[OK]** (4).
+4. Wählen Sie ein IDoc (3) aus und klicken Sie auf **[OK]** (4).
 
 ### Ein IDoc bearbeiten
 Nachdem ein IDoc geladen wurde, öffnet sich das Fenster "LINQ to ERP IDocs".

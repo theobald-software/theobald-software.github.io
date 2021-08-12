@@ -12,15 +12,15 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap
 ---
 
-*LINQ to SAP* is an exclusive add-on for ERPConnect that integrates Microsoft’s [Language Integrated Query (LINQ)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) to provide native data querying capabilities. <br>
-The add-on comes with a Designer for more user-friendliness.
+{: .box-warning }
+**Warning! Deprecated component** 
+As of Visual Studio Version 2019 the *LINQ to SAP* add-on is not supported anymore.
 
-{: .box-note }
-**Note:** Due to trademark regulations *LINQ to SAP* is called *LINQ to ERP* in the source code. 
+*LINQ to SAP* is an exclusive add-on for ERPConnect that integrates Microsoft’s [Language Integrated Query (LINQ)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) to provide native data querying capabilities. 
+The add-on comes with a Designer for more user-friendliness.
 
 LINQ to SAP is an exclusive add-on for ERPConnect. It builds internally on ERPConnect and does not exist as a stand-alone tool. 
 Thus any existing ERPConnect code is always compatible with *LINQ to SAP*. 
-
 To distribute a finished application to customers, give them is the ERPConnect35.dll (or higher). 
 No other .dlls are needed.
 
