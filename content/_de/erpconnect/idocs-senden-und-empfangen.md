@@ -1,7 +1,7 @@
 ---
 ref: erpconnect-05
 layout: page
-title: IDocs senden und empfangen
+title: IDocs
 description: IDocs senden und empfangen
 product: erpconnect
 parent: erpconnect

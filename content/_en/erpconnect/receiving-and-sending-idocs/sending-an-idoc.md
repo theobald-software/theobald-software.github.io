@@ -1,12 +1,12 @@
 ---
 ref: ec-receiving-and-sending-idocs-01
 layout: page
-title: Example- Sending an IDoc from your .Net Application
+title: Sending IDocs
 description: Example- Sending an IDoc from your .Net Application
 product: erpconnect
 parent: receiving-and-sending-idocs
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=example-sending-an-idoc-from-your-net-application
 ---

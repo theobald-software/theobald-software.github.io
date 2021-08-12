@@ -1,12 +1,12 @@
 ---
-ref: ec-calling-bapis-and-function-modules-02
+ref: ec-calling-bapis-and-function-modules-03
 layout: page
 title: Retrieving Stock Quantity via BAPI
 description: Retrieving Stock Quantity via BAPI
 product: erpconnect
 parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=retrieving-stock-quantity-by-calling-a-bapi
 ---

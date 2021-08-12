@@ -1,12 +1,12 @@
 ---
 ref: ec-receiving-and-sending-idocs-01
 layout: page
-title: Beispiel für das Senden eines IDocs
+title: IDocs senden
 description: Beispiel für das Senden eines IDocs
 product: erpconnect
 parent: idocs-senden-und-empfangen
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-senden-eines-idocs
 ---

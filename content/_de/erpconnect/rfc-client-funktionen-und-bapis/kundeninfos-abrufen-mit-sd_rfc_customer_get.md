@@ -1,12 +1,12 @@
 ---
-ref: ec-calling-bapis-and-function-modules-01
+ref: ec-calling-bapis-and-function-modules-02
 layout: page
 title: Kundeninfos abrufen mit SD_RFC_CUSTOMER_GET
 description: Kundeninfos abrufen mit SD_RFC_CUSTOMER_GET
 product: erpconnect
 parent: rfc-client-funktionen-und-bapis
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=kundeninfos-abrufen-mit-sd_rfc_customer_get
 ---

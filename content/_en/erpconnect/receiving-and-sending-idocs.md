@@ -1,7 +1,7 @@
 ---
 ref: erpconnect-05
 layout: page
-title: Receiving and Sending IDocs
+title: IDocs
 description: Receiving and Sending IDocs
 product: erpconnect
 parent: erpconnect

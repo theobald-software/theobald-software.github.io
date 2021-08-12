@@ -1,12 +1,12 @@
 ---
-ref: ec-calling-bapis-and-function-modules-01
+ref: ec-calling-bapis-and-function-modules-02
 layout: page
 title: Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET
 description: Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET
 product: erpconnect
 parent: calling-bapis-and-function-modules
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=retrieving-customer-information-by-calling-sd-rfc-customer-get
 ---

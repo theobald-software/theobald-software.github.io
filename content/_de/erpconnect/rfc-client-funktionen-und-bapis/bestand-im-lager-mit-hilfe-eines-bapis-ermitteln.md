@@ -1,12 +1,12 @@
 ---
-ref: ec-calling-bapis-and-function-modules-02
+ref: ec-calling-bapis-and-function-modules-03
 layout: page
 title: Bestand im Lager mit Hilfe eines BAPIs ermitteln
 description: Bestand im Lager mit Hilfe eines BAPIs ermitteln
 product: erpconnect
 parent: rfc-client-funktionen-und-bapis
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=bestand-im-lager-mit-hilfe-eines-bapis-ermitteln
 ---

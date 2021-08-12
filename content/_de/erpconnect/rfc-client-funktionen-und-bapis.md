@@ -1,7 +1,7 @@
 ---
 ref: erpconnect-03
 layout: page
-title: RFC-Client-Funktionen und BAPIs
+title: BAPIs/Funktionsbausteine
 description: RFC-Client-Funktionen und BAPIs
 product: erpconnect
 parent: erpconnect

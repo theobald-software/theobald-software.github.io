@@ -1,12 +1,12 @@
 ---
-ref: ec-calling-bapis-and-function-modules-03
+ref: ec-calling-bapis-and-function-modules-04
 layout: page
 title: ERPConnect und der Einsatz unter ASP.NET
 description: ERPConnect und der Einsatz unter ASP.NET
 product: erpconnect
 parent: rfc-client-funktionen-und-bapis
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=erpconnect-einsatz-unter-asp_net
 ---
