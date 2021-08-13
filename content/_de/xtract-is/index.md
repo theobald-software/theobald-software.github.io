@@ -40,7 +40,7 @@ Die folgende Übersicht stellt die Typen der Data-Flow-Komponenten dar.
 ### Extraktionstypen
 
 - [**BAPI**](./xtract-is-bapi) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**BW Cube**](./bw-cube) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
+- [**BW Cube**](./bw-cube) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
 - [**BW Hierarchy**](./hierarchy) extrahiert Hierarchien aus SAP BW / BI Systemen.
 - [**BW Loader**](./bw-loader) lädt Daten in SAP BW-Systeme.
 - [**DeltaQ**](./xtract-is-deltaq) extrahiert DataSources (OLTP) und Extraktoren aus dem ERP und ECC System.
