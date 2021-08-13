@@ -9,22 +9,20 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=example-receiving-an-idoc
-progressstate: 3
+progressstate: 5
 
 ---
 
-**The sample code is located in the ERPConnect installation directory in the SimpleIdocServer directory**
+This section shows how to receive and process a *MATMAS* IDoc.
+To configure your SAP system to send *MATMAS* IDocs, see [Set Up a Test Environment for IDocs](./prerequisites#set-up-a-test-environment-for-idocs).
 
- 
-The following example shows how to receive a MATMAS IDoc. If you want to learn more about submitting test IDoc from the SAP system, please refer to chapter [Setting Up an Environment for Sending Test IDocs](../administration/setting-up-an-environment-for-sending-test-idocs).
+### Receiving a MATMAS IDoc
 
-As shown in another example (RFC Server) an RFC Server object is needed to accept calls from the SAP system. To receive IDocs with the RFCServer object we need to set the property CanReceiveIdocs to true.
-
-The event IncomingIdoc is fired when an IDoc is received by ERPConnect, so you can use this event to process the IDoc object. The code shows how to initialize and start the RFC Server and how to install the event.
-
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+1. Create an RFC Server object to accept calls from SAP, see [RFC Server](../rfc-server/example) for more information.
+2. To receive IDocs with the RFCServer object set the property *CanReceiveIdocs* to true.<br>
+3. When an IDoc is received by ERPConnect, the event *IncomingIdoc* is triggered and a reference to the *RFCServer* object and to the *IDoc* object is transferred. 
+Use this event to process the IDoc object as shown in the code below. <br> <br>
+	 ```csharp
 static void Main(string[] args) 
 { 
    // define server object and start 
@@ -42,9 +40,46 @@ static void Main(string[] args)
    Console.ReadLine(); 
    s.Stop(); 
 }
-{% endhighlight %}
-</details>
+```
 
+### Processing a Received IDoc
+
+In this example the received IDoc contains material descriptions that can be written into the console window to check the contents of the IDoc. <br> 
+The IDoc is analyzed using the *E2MARAM005* segment. Within this segment, several *E2MAKTM001* child segments contain material descriptions.
+
+{: .box-note }
+**Note**: You can use the transaction **WE60** to look up IDoc structures in SAP.
+
+1. Read the data buffer with the *ReadDataBuffer* method to access the description texts in the child segment *E2MAKTM001*. 
+The description text is located at index 4 with a length of 40. <br><br>
+	 ```csharp
+private static void s_IncomingIdoc(RFCServer Sender, Idoc idoc) 
+{ 
+   Console.WriteLine("Received Idoc " + idoc.IDOCTYP); 
+   IdocSegment e2maram = idoc.Segments["E2MARAM005",0]; 
+   for (int i=0; i < e2maram.ChildSegments.Count;i++) 
+   { 
+      if (e2maram.ChildSegments[i].SegmentName == "E2MAKTM001") 
+      { 
+         Console.WriteLine("Materialtext found: " + 
+            e1maram.ChildSegments[i].ReadDataBuffer(4,40)); 
+      } 
+   } 
+}
+```
+2. Write the description texts into the console window.
+3. Run the program and check the result. In this case, 5 *E2MAKTM001* segments were found so 5 texts are passed. <br>
+![SAP-Receive-IDoc](/img/content/SAP-Receive-IDoc.png){:class="img-responsive" width="800px" }
+
+
+{: .box-note }
+**Note**: If you do not want to read the data buffer, you can load an XML Schema instead, see [XML-Support for IDoc programming](./xml-support-for-idoc-programming).
+
+*****
+#### Related Links
+- [Set Up a Test Environment for IDocs](./prerequisites#set-up-a-test-environment-for-idocs)
+
+<!---
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -65,30 +100,6 @@ End Sub
 {% endhighlight %}
 </details>
 
-A reference to an IDoc object is transferred to the event IncomingIdoc. With the segment collection, the content of the IDoc can be analyzed.
-
-The first step is to obtain the E2MARAM005 segment. Within this segment, several E2MAKTM001 child segments contain material descriptions. We need to read the data buffer with the ReadDataBuffer method. The description text is located at index 4 with a length of 40. You can use transaction WE60 to look up IDoc structures. All description texts will be written to the console window.
-
-If you do not want to read the data buffer, you can load an XML Schema, please refer to chapter [XML-Support for IDoc programming](./xml-support-for-idoc-programming).
-
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
-private static void s_IncomingIdoc(RFCServer Sender, Idoc idoc) 
-{ 
-   Console.WriteLine("Received Idoc " + idoc.IDOCTYP); 
-   IdocSegment e2maram = idoc.Segments["E2MARAM005",0]; 
-   for (int i=0; i < e2maram.ChildSegments.Count;i++) 
-   { 
-      if (e2maram.ChildSegments[i].SegmentName == "E2MAKTM001") 
-      { 
-         Console.WriteLine("Materialtext found: " + 
-            e1maram.ChildSegments[i].ReadDataBuffer(4,40)); 
-      } 
-   } 
-}
-{% endhighlight %}
-</details>
 
 <details>
 <summary>Click to open VB example.</summary>
@@ -109,6 +120,4 @@ End Sub
 {% endhighlight %}
 </details>
 
-The screenshot below shows the sample program in action. In this case, 5 E2MAKTM001 segments were found so 5 texts are passed.  
-
-![SAP-Receive-IDoc](/img/content/SAP-Receive-IDoc.png){:class="img-responsive" width="800px" }
+-->

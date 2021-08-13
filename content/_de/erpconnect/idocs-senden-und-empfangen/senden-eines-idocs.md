@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-senden-eines-idocs
 ---
 
-Der folgende Abschnitt zeicgt, wie Sie ein Konsolenprogramm schreiben, das ein IDoc vom Typ *STATUS* sendet.
+Der folgende Abschnitt zeigt, wie Sie ein Konsolenprogramm schreiben, das ein IDoc vom Typ *STATUS* sendet.
  
 Der *STATUS*-Nachrichtentyp wird verwendet, um den Status eines anderen ausgehenden IDocs anzupassen, z.B. 
 wenn ein Subsystem IDocs empfängt und den Empfang durch eine Status-Anpassung quittiert. 

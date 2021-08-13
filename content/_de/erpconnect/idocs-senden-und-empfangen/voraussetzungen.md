@@ -54,8 +54,7 @@ Wählen Sie *MATMAS* als Nachrichtentyp für Materialstammdaten, *MATMAS05* als 
 ![IDoc-Test-Environment_002](/img/content/IDoc-Test-Environment_002.png){:class="img-responsive"}
 5. Verwenden Sie die Transaktion **BD10**, um Materialstammdaten-IDocs zu versenden. 
 Tragen Sie das logische System und die zu versendende Materialnummer ein und führen Sie das Programm mit **[F8]** aus. 
-Die entsprechenden IDocs werden erzeugt und an den hinterlegten Port verschickt.
-
+Die entsprechenden IDocs werden erzeugt und an den hinterlegten Port verschickt. <br>
 ![IDoc-Test-Environment_003](/img/content/IDoc-Test-Environment_003.png){:class="img-responsive"}
 
 
