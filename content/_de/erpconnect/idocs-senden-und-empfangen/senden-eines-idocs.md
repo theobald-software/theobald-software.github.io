@@ -11,32 +11,69 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-senden-eines-idocs
 ---
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis IdocSender**
+Der folgende Abschnitt zeicgt, wie Sie ein Konsolenprogramm schreiben, das ein IDoc vom Typ *STATUS* sendet.
+ 
+Der *STATUS*-Nachrichtentyp wird verwendet, um den Status eines anderen ausgehenden IDocs anzupassen, z.B. 
+wenn ein Subsystem IDocs empfängt und den Empfang durch eine Status-Anpassung quittiert. 
+Das *STATUS*-IDoc enthält nur einen Datensatz und ist somit sehr einfach aufgebaut. 
 
-Das folgende Beipiel ist ein Konsolenprogramm, das ein IDoc vom Typ STATUS sendet. Dieser IDoc-Typ ist dazu gedacht, den Status eines anderen (ausgehenden) IDocs anzupassen, z.B. wenn ein Subsystem IDocs empfängt und den Empfang durch eine Status-Anpassung quittieren möchte. Das Status-IDoc ist im Gegensatz zu anderen IDoc-Typen sehr einfach aufgebaut. Aus diesem Grund eignet es sich gut für ein Beispiel.
+{: .box-note }
+**Hinweis**: Stellen Sie sicher, dass Ihr SAP-System konfiguriert ist, IDocs zu empfangen, siehe [Einrichten des Empfangens von IDocs](./voraussetzungen#einrichten-des-empfangens-von-idocs).
 
-Zunächst wird mit Hilfe der *R3Connection*-Klasse eine Verbindung aufgebaut, die zu manipulierende IDoc-Nummer vom Benutzer abgefragt und das IDoc-Object mit Hilfe der Methode *CreateIdoc* erzeugt. Als Übergabe-Parameter erhält CreateIdoc "SYSTAT01", der IDoc-Typ
+### Ein STATUS IDoc senden
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-static void Main(string[] args)  
-{  
-using(R3Connection con = new 
-	R3Connection("hamlet",11,"Theobald","pw","DE","800"))
-{
-   con.Open(false);  
-    
-   Console.WriteLine(  
-      "Which IDocnumber would you like to manipulate?");  
-   string IdocNo = Console.ReadLine();  
-    
-   Idoc i = con.CreateIdoc("SYSTAT01",""); 
-    
-   (...)
-}
-{% endhighlight %}
-</details>
+1. Bauen Sie mit der *R3Connection*-Klasse eine Verbindung zum R/3 System auf.
+2. Fragen Sie die IDoc-Nummer des zu manipulierenden IDocs ab und lesen Sie die Eingabe aus.
+3. Erzeugen Sie mit der Methode *CreateIdoc* ein IDoc Objekt. 
+"SYSTAT01" ist der entsprechende IDoc-Typ für den Nachrichtentyp *STATUS*. <br> <br>
+	 ```csharp
+     static void Main(string[] args)  
+     {  
+         R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+         con.Open(false);  
+        
+         Console.WriteLine("Which IDocnumber would you like to manipulate?");  
+         string IdocNo = Console.ReadLine();  
+        
+         Idoc i = con.CreateIdoc("SYSTAT01","");
+     ```
+4. Geben Sie Angaben zum Empfänger und Absender für den Kopfsatz des IDoc-Objekts ein. <br> <br>
+	 ```csharp
+		 // Fill Message Type 
+		 i.MESTYP = "STATUS"; 
+  
+		 // Fill Information about IDoc Reciever 
+		 i.RCVPRN = "PT4_800"; // Partner number 
+		 i.RCVPRT = "LS"; // Partner type 
+  
+		 // Fill information about idoc sender 
+		 i.SNDPOR = "ERPCONNECT"; // Partner port 
+		 i.SNDPRN = "ERPCONNECT"; // Partner number 
+		 i.SNDPRT = "LS"; // Partner type
+     ```
+5. Fügen Sie die folgenden Daten Segment *E1STATS* hinzu: Zielstatus (*STATUS*), Datum und Uhrzeit (*LOGDAT*, *LOGTIM*) und die zu manipulierende IDoc-Nummer (*DOCNUM*). 
+6. Senden Sie das IDoc mit der Methode *Send*. 
+	 ```csharp
+		 // Fill the right fields in the segments 
+		 i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20181001"; 
+		 i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
+		 i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
+		 i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
+  
+		 i.Send(); 
+		 Console.WriteLine("IDoc sent"); 
+		 Console.ReadLine();
+	}
+     ```
+7. Führen Sie das Programm aus und prüfen Sie in SAP den Status des manipulierten IDocs.<br>
+Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worden.<br>
+![SAP-Send-IDoc-001](/img/content/SAP-Send-IDoc-001.png){:class="img-responsive" width="400px" }
+
+****
+#### Weiterführende Links
+- [KBArticles]()
+
+<!---
 
 <details>
 <summary>[VB]</summary>
@@ -59,26 +96,6 @@ Sub Main(ByVal args() As String)
 {% endhighlight %}
 </details>
 
-Jetzt muss das IDoc-Objekt i mit verschiedenen Infos im Kopfsatz versorgt werden. Dazu gehören Angaben zum Empfänger und Absender sowie der zugehörige Nachrichtentyp STATUS. 
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-// Fill Message Type 
-i.MESTYP = "STATUS"; 
-  
-// Fill Information about IDoc Reciever 
-i.RCVPRN = "PT4_800"; // Partner number 
-i.RCVPRT = "LS"; // Partner type 
-  
-// Fill information about idoc sender 
-i.SNDPOR = "ERPCONNECT"; // Partner port 
-i.SNDPRN = "ERPCONNECT"; // Partner number 
-i.SNDPRT = "LS"; // Partner type
-  
-(...)
-{% endhighlight %}
-</details>
 
 <details>
 <summary>[VB]</summary>
@@ -99,22 +116,6 @@ i.SNDPRT = "LS" ' Partner type
 {% endhighlight %}
 </details>
 
-Jetzt müssen noch schnell die Nutzdaten gefüllt werden. Diese befinden sich im Segment E1STATS. Dazu gehören der Zielstatus (STATUS), Datum und Uhrzeit (LOGDAT, LOGTIM) und die zu manipulierende IDoc-Nummer (DOCNUM). Danach ist das IDoc bereit, mit Send abgeschickt zu werden. 
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-// Fill the right fields in the segments 
-i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20060101"; 
-i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
-i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
-i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
-  
-i.Send(); 
-Console.WriteLine("IDoc sent"); 
-Console.ReadLine();
-{% endhighlight %}
-</details>
 
 <details>
 <summary>[VB]</summary>
@@ -131,7 +132,4 @@ Console.WriteLine("IDoc sent")
 Console.ReadLine()
 {% endhighlight %}
 </details>
-
-Die beiden Abbildungen zeigen das Konsolenprogramm in Aktion, sowie die IDoc-Anzeige im SAP. Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worden. Wie Sie Ihr SAP-System für den Empfang konfigurieren, finden Sie in Abschnitt [IDoc-Empfang einrichten](../administration/idoc-empfang-einrichten).
-
-![SAP-Send-IDoc-001](/img/content/SAP-Send-IDoc-001.png){:class="img-responsive"}
+-->

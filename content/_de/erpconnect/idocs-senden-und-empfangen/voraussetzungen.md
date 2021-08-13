@@ -59,7 +59,7 @@ Die entsprechenden IDocs werden erzeugt und an den hinterlegten Port verschickt.
 ![IDoc-Test-Environment_003](/img/content/IDoc-Test-Environment_003.png){:class="img-responsive"}
 
 
-### Einrichten des Empfangs von IDocs 
+### Einrichten des Empfangens von IDocs 
 
 Die folgenden Schritte zeigen, wie Sie Ihr SAP-System einrichten, um eingehende IDocs zu verarbeiten und Kundenaufträge zu erstellen.
 1. Legen Sie mit der Transaktion **WE20** eine Partnervereinbarung an. <br>
