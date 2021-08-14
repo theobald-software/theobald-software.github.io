@@ -19,8 +19,8 @@ Der folgende Abschnitt beschreibt die Einstellungen der Komponente Xtract ODP. D
 Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 - [Operational Data Provider](./odp-define#ein-objekt-data-object-suchen) (1) - Suche und Anzeige des Namens des Quellobjekts.
 - Additional info (2) - Zeigt den ODP-Provider-Kontext und den Datentyp des Quellobjekts an.
-- [Update mode](./odp-functions-ov#load-verfahren-update-mode) (3) - Definiert das Load-Verfahren - Full-Load oder Deltaverarbeitung.
-- [Fields](./odp-functions-ov#selektion-und-filter) (4) - Ermöglicht die Auswahl und Einstellung der Filteroptionen für [Extraktoren](./odp-extractors).
+- [Update mode](./odp-define#load-verfahren-update-mode) (3) - Definiert das Load-Verfahren - Full-Load oder Deltaverarbeitung.
+- [Fields](./odp-define#selektion-und-filter) (4) - Ermöglicht die Auswahl und Einstellung der Filteroptionen für [Extraktoren](./odp-extractors).
 - Preview (5) - Klicken Sie auf **[Load Live Preview]**, um eine Echtzeit-Vorschau der Extraktionsdaten anzuzeigen.
 
 #### Schaltflächen
