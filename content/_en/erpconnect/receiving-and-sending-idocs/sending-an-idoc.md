@@ -72,6 +72,7 @@ The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 
 ****
 #### Related Links
 - [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc)
+- [Sending IDocs Synchronously](https://kb.theobald-software.com/erpconnect-general/synchronous-sending-and-status-query)
 - [Set Up Receiving IDocs](./prerequisites#set-up-receiving-idocs)
 
 <!---
