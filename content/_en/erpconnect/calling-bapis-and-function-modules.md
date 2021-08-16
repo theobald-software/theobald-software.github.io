@@ -15,7 +15,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=calling-bapis-and-function-modules
 Function modules are single functions managed by the SAP Function Builder (transaction **SE37**) and developed in SAP's programming language ABAP.
 
 {: .box-note }
-**Note**: A function module must have the attribute **Remote Enabled** to be called from outside the SAP system via the RFC protocol. 
+**Note**: A BAPI/Function Module must have the attribute **Remote Enabled** to be called from outside the SAP system via the RFC protocol. 
 
 ### About BAPIs/Function Modules
 Every BAPI/Function Module provides import and export parameters. 

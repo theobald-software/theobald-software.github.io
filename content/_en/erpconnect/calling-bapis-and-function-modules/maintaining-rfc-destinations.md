@@ -1,7 +1,7 @@
 ---
 ref: ec-calling-bapis-and-function-modules-01
 layout: page
-title: Maintaining RFC Destinations
+title: Prerequisites
 description: Maintaining RFC Destinations
 product: erpconnect
 parent: calling-bapis-and-function-modules

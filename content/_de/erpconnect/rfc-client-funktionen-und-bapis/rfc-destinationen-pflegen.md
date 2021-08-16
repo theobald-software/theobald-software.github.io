@@ -1,7 +1,7 @@
 ---
 ref: ec-calling-bapis-and-function-modules-01
 layout: page
-title: RFC-Destinationen anlegen
+title: Voraussetzungen
 description: RFC-Destinationen pflegen
 product: erpconnect
 parent: rfc-client-funktionen-und-bapis
