@@ -16,7 +16,7 @@ IDocs are electronic documents that can be sent from or to SAP systems. <br>
 You can exchange IDocs between SAP systems or between one SAP system and an external application. 
 ERPConnect provides a set of classes to send, receive and construct IDocs.
 
-### Structure of IDocs
+### About IDocs
 An IDoc consists of one control record and several data records. 
 The control record contains routing data and information about the sending and the receiving system. 
 The data records are arranged hierarchically. 
