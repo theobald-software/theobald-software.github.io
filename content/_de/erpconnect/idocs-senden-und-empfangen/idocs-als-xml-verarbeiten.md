@@ -1,7 +1,7 @@
 ---
 ref: ec-receiving-and-sending-idocs-04
 layout: page
-title: XML für IDocs
+title: XML für IDocs verwenden
 description: IDocs als XML verarbeiten
 product: erpconnect
 parent: idocs-senden-und-empfangen
@@ -11,10 +11,15 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=idocs-als-xml-verarbeiten
 ---
 
-**The sample code is located in the ERPConnect installation directory in the in IdocSendXML directory**
 
-Die IDoc-Klassen von ERPConnect bieten an etlichen Stellen Unterstützung für den Einsatz von XML. Wir unterscheiden hier Schema-Dateien, die definieren wie ein IDoc auszusehen hat, und Daten-Dateien, die den eigentlichen Inhalt enthalten.<br>
-Die beiden nachfolgenden Abbildungen zeigen einen Auszug der Schema-Datei ORDERS01.xsd und der Daten-Datei OrderIdoc.xml (beide sind im Beispiel-Verzeichnis zu finden). Bitte beachten Sie auch Abschnitt IDoc-Schema-Generator.
+Die IDoc-Klassen von ERPConnect unterstützen den Einsatz von XML-Dateien für IDoc Schemas und Daten-Dateien. 
+
+{: .box-note }
+**Hinweis**: IDoc Schema-Dateien definieren wie ein IDoc aufgebaut ist, während IDoc Daten-Dateien den eigentlichen Inhalt des IDocs enthalten.
+
+### XML-Dateien für IDocs erstellen
+Um eine Schema-Datei zu erstellen, verwenden Sie das Theobald tool *IDocSchemaGenerator.exe*, siehe [IDoc-Schema-Generator](../tools/idoc-schema-generator).<br>
+Eine einfache Daten-Datei des IDoc Typs *ORDERS01* kann wie folgt aussehen:
 
 {% highlight xml %}
 xml version="1.0" encoding="ISO-8859-1" ?>
@@ -35,21 +40,17 @@ EDI_DC40>
 E1EDP19>
 {% endhighlight %}
 
-Um ein IDoc-Object aus einem Schema zu erzeugen, nutzen wir die Methode LoadIdocSchema. Nun können die leeren Segmente entweder mit CreateSegment gefüllt (wie im ORDER-Beispiel), oder es kann mit Hilfe von LoadXMLData das Datenfile hinzugeladen werden. Es ist zu beachten, dass das Laden von XML-Daten nur Sinn macht, wenn die Segmente zuvor entweder mit LoadIdocSchema oder mit CreateEmptyIdoc bekannt gemacht wurden, ansonsten weiß ERPConnect nicht, an welche Stelle im Datenpuffer die Daten geschrieben werden können. Im einfachsten Fall sieht das Erzeugen und Senden eines IDocs dann wie folgt aus:
+### XML-Dateien laden
+1. Verwenden Sie die Methode *LoadIdocSchema*, um ein IDoc-Objekt aus der Schema-Datei zu erstellen.
+2. Erstellen Sie mit der Methode *CreateSegment* Segment-Objekte.
+3. Laden Siemit der Methode *LoadXMLData* die Daten des IDocs aus der Daten-Datei.
 
+#### Beispiel-Code
+Das folgende Beispiel zeigt, wie Sie Daten aus Dateien auslesen und senden.
 <details>
-<summary>[C#]</summary>
+<summary>[Klicken Sie hier, um das C#-Beispiel zu öffnen]</summary>
 {% highlight csharp %}
-using (R3Connection con = new R3Connection())
-{
-
-    con.UserName = "erpconnect";
-    con.Password = "pass";
-    con.Language = "DE";
-    con.Client = "800";
-    con.Host = "sapserver";
-    con.SystemNumber = 11;
-
+    R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
     con.Open(false);
     Idoc i = new Idoc();
     i.Connection = con;
@@ -62,29 +63,30 @@ using (R3Connection con = new R3Connection())
 {% endhighlight %}
 </details>
 
+<!---
+
 <details>
-<summary>[VB]</summary>
+<summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
 Using con As R3Connection = New R3Connection
-   
-   
+  
     con.UserName = "erpconnect"
     con.Password = "pass"
     con.Language = "DE"
     con.Client = "800"
     con.Host = "sapserver"
     con.SystemNumber = 11
-   
     con.Open(False)
-   
-   
-   
+  
     Dim i As Idoc = New Idoc
     i.Connection = con
     i.LoadIdocSchema("ORDERS01.xsd")
     i.LoadXMLData("OrderIdoc.xml")
-   
+  
     i.Send()
+
 End Using
 {% endhighlight %}
 </details>
+
+-->

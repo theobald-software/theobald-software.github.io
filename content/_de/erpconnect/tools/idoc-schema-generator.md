@@ -12,8 +12,8 @@ old_url: /ERPConnect-DE/default.aspx?pageid=idoc-schema-generator
 ---
 
 Der *IDoc-Schema-Generator* generiert eine XML-Datei, die verwendet werden kann, um IDoc Schemas schneller zu laden.
-Das Laden eines Schemas über XML ist i.d.R. performanter als das Laden von Schemas über `CreateIdoc` oder `CreateEmptyIdoc`, da keine Verbindung zu SAP benötigt wird.
-Siehe [IDocs als XML verarbeiten](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) für weitere Informationen.
+Das Laden eines Schemas über XML ist i.d.R. performanter als das Laden von Schemas über `CreateIdoc` oder `CreateEmptyIdoc`, da keine Verbindung zu SAP benötigt wird.<br>
+Siehe [IDocs als XML verarbeiten](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) für mehr Informationen zur Anwendung.
 
 ### *IDoc-Schema-Generator* verwenden
  

@@ -12,8 +12,8 @@ old_url: /ERPConnect-EN/default.aspx?pageid=idoc-schema-generator
 ---
 
 The *IDoc-Schema-Generator* generates an XML file that can be used to load IDoc schemas.<br>
-Loading IDoc schemas via XML usually has higher performance than loading them via `CreateIdoc` or `CreateEmptyIdoc`, because no SAP connection is necessary.
-See [XML-Support for IDoc programming](../receiving-and-sending-idocs/xml-support-for-idoc-programming) for more information.
+Loading IDoc schemas via XML usually has higher performance than loading them via `CreateIdoc` or `CreateEmptyIdoc`, because no SAP connection is necessary.<br>
+See [XML-Support for IDoc programming](../receiving-and-sending-idocs/xml-support-for-idoc-programming) for more information on using the generated XML file.
 
 ### How to Use *IDoc-Schema-Generator*
 1. To start the *IDoc-Schema-Generator*, run the *IdocSchemaGenerator.exe* in the ERPConnect directory `C:\Program Files\ERPConnect`.
