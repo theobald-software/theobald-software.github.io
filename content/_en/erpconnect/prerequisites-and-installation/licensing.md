@@ -16,7 +16,7 @@ A regular license is provided in the [costumer portal - My Theobald Software](ht
 
 {: .box-note }
 **Note:** The standard demo license does not support working in web environments. 
-To test ERPConnect with your ASP.NET project, you can apply for a test licence number at [sales@theobald-software.com](mailto:sales@theobald-software.com).    
+To test ERPConnect with your ASP.NET project, apply for a test license number at [sales@theobald-software.com](mailto:sales@theobald-software.com).    
  
 ### Installing the ERPConnect license 
 

@@ -1,7 +1,7 @@
 ---
 ref: ec-calling-bapis-and-function-modules-04
 layout: page
-title: ERPConnect und der Einsatz unter ASP.NET
+title:  Web-Anwendungen
 description: ERPConnect und der Einsatz unter ASP.NET
 product: erpconnect
 parent: rfc-client-funktionen-und-bapis
@@ -11,105 +11,87 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=erpconnect-einsatz-unter-asp_net
 ---
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis ASPCreatePurchaseOrder**
+Der folgende Abschnitt beschreibt den Entwicklungsprozess eines ASP.NET/ERPConnect-Projekts.
 
+### Voraussetzungen
 
-ERPConnect ist selbstverständlich auch ASP.NET-tauglich und bietet so die Möglichkeit, mächtige Web-Applikationen mit direkter SAP-Verbindung zu entwickeln.
+- Binden Sie die ERPConnect.dll als Referenz in Ihr Projekt ein (sie wird beim Kompilieren dann automatisch in das bin-Verzeichnis auf den Webserver übertragen).
+- Kopieren Sie sie librfc32.dll in Ihr Verzeichnis, siehe [Systemvoraussetzungen - 32/64-Bit Umgebung](../voraussetzungen-und-installation/systemvoraussetzungen#3264-bit-umgebung).
 
-Das folgende Beispiel soll die Entstehung eines ASP.NET-Projektes zeigen.
+{: .box-warning }
+**Warnung!** Die Standard Demo-Lizenz unterstützt keine Anwendungen in Web-Umgebungen. 
+Um ERPConnect unter ASP.NET zu testen, stellen wir Ihnen gerne eine zeitlich beschränkte Testlizenz zur Verfügung. 
+Sie können die Testlizenz formlos per Mail an [sales@theobald-software.com](mailto:sales@theobald-software.com) anfordern.    
 
-Die ERPConnect.dll muss in das aktuelle Projekt als Referenz eingebunden werden. Sie wird beim Kompilieren dann automatisch in das bin-Verzeichnis auf den Webserver mit übertragen.
+### ASP.NET Beispiel
 
-Darüber hinaus wird noch eine weitere dll benötigt: librfc32.dll. Diese Bibliothek ist im RFCSDK von SAP enthalten und wird automatisch in Ihr System32-Verzeichnis mitinstalliert, falls ein SAP GUI auf Ihrem Client-Rechner läuft. Falls der Webserver ein echter Server ist, auf dem nicht gearbeitet wird (und nicht der localhost ist), muss die dll manuell in das bin-Verzeichnis der Zielanwendung kopiert werden.
-
-Achtung!! Die Demoversion funktioniert unter ASP.NET nicht und weigert sich mit einer Exception aufgrund der fehlenden Lizenz zu SAP zu verbinden. Gerne stellen wir Ihnen unbürokratisch eine zeitlich beschränkte Testlizenz zur Verfügung. Bitte fordern Sie diese einfach formlos per Mail an (support@theobald-software.com).
-
-
-**ASP.NET-Beispiel: Eine Lieferantenbestellung per BAPI anlegen.** 
-
-Das folgende Beispiel basiert auf einer ASP-Seite, die Textfelder für die Eingabe von Lieferantennummer (txtVendor), Materialnummer (txtMaterial), gewünschte Bestellmenge (txtQuan) und das gewünschte Zielwerk (txtPlant) beinhaltet. 
-
-Hinter dem Button zur Anlage einer Bestellung befindet sich der folgende Code. Zunächst wird eine Verbindung zum SAP aufgebaut und ein Objekt der Klasse *BusinessObjectMethod* erzeugt (das zugehörige BAPI heißt *PuchaseOrder.CreateFromData*).
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-private void Button1_Click(object sender, System.EventArgs e)  
-{  
-  using( R3Connection con = new 
-      R3Connection("host",11,"user","pw","EN","800");  
-   ERPConnect.LIC.SetLic("TempLicNumber"))
-    {
-       con.Open(false);  
-    
-       // Create a BAPI object  
-       ERPConnect.BusinessObjectMethod bapi = con.CreateBapi("PurchaseOrder","CreateFromData");
-    }
-}
-{% endhighlight %}
-</details>
-
-Nun wird zunächst die Export-Struktur PO_HEADER gefüllt.
-
-DOC_TYPE -> Bestellart (NB für Nomalbestellung)
-
-PURCH_ORG -> Einkaufsorganisation
-
-PUR_GROUP -> Einkaufsgruppe
-
-DOC_DATE -> Belegdatum
-
-VENDOR -> Lieferantennummer 
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-// Fill header structure 
-RFCStructure Header = bapi.Exports["PO_HEADER"].ToStructure(); 
-Header["DOC_TYPE"]= "NB"; 
-Header["PURCH_ORG"] = "1000"; 
-Header["PUR_GROUP"] = "010"; 
-Header["DOC_DATE"]= ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now); 
-Header["VENDOR"]= this.txtVendor.Text;
-{% endhighlight %}
-</details>
-
-Jetzt werden die einzelnen Positionen erfasst (Tabelle PO_ITEMS). Die nötigen Werte sind das Werk (PLANT) und die Materialnummer (PUR_MAT). In der Tabelle für die Bestelleinteilungen (PO_ITEM_SHEDULES) wird die Menge (QUANTITY) und das gewünschte Lieferdatum (DELIV_DATE) erfasst. 
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-// Create an Item 
-RFCTable items = bapi.Tables["PO_ITEMS"]; 
-RFCStructure item = items.AddRow(); item["PO_ITEM"] = "1"; 
-item["PUR_MAT"] = this.txtMaterial.Text; 
-item["PLANT"] = this.txtPlant.Text; 
-  
-// Create and fill shedules 
-RFCTable shedules = bapi.Tables["PO_ITEM_SCHEDULES"]; 
-RFCStructure shedule = shedules.AddRow(); 
-shedule["PO_ITEM"] = "1"; 
-shedule["DELIV_DATE"] = ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now); 
-shedule["QUANTITY"] = Convert.ToDecimal(this.txtQuan.Text); 
-{% endhighlight %}
-</details>
-
-Zu guter Letzt gilt es nur, das BAPI auszuführen und die Return-Nachrichten auszuwerten.   
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-// Exceute Bapi and process return messages 
-   bapi.Execute (); 
-    this.txtReturn.Text = ""; 
-   foreach(BapiReturn ret in bapi.Returns) 
-   this.txtReturn.Text += ret.Message + "\r\n";
-}
-{% endhighlight %}
-</details>
-
-Das Bild zeigt die ASP.NET-Anwendung nach erfolgreichem Anlegen der Bestellung im System.  
-
+Das folgende Beispiel basiert auf einer ASP-Seite, auf der man Daten eingeben kann, um eine entsprechende Lieferantenbestellung zu generieren, siehe folgenden Screenshot:<br>
 ![Create-Purchase-Order-IE](/img/content/Create-Purchase-Order-IE.png){:class="img-responsive"}
 
+Die ASP-Seite enthält einen Butoon, einen Statustext und die folgenden Textboxen:
+- Lieferantennummer (*txtVendor*)
+- Materialnummer (*txtMaterial*)
+- gewünschte Bestellmenge (*txtQuan*) 
+- das gewünschte Zielwerk (*txtPlant*) beinhaltet
+
+#### Eine Lieferantenbestellung via BAPI generieren
+Um eine Lieferantenbestellung mit dem *BAPI_PO_CREATE* BAPI zu erstellen, folgen Sie den folgenden Schritten:
+
+1. Bauen Sie eine Verbindung zu SAP auf.
+2. Erstellen Sie ein RFCFunction-Objekt für das BAPI *BAPI_PO_CREATE*.
+3. Füllen Sie die Export-Struktur *PO_HEADER* mit folgenden Werten:
+- DOC_TYPE -> Bestellart (NB für Nomalbestellung)
+- PURCH_ORG -> Einkaufsorganisation
+- PUR_GROUP -> Einkaufsgruppe
+- DOC_DATE -> Datum 
+- VENDOR -> Lieferantennummer 
+4. Erfassen Sie die Positionen *PLANT* (Werk) und *PUR_MAT* (Materialnummer) in der Tabelle *PO_ITEMS*. 
+5. Erfassen Sie die Werte für *QUANTITY* (Bestellmenge) und *DELIV_DATE* (das gewünschte Lieferdatum) in der Tabelle für die Bestelleinteilungen *PO_ITEM_SHEDULES*. 
+6. Führen Sie das BAPI aus und werten Sie die die Return-Nachricht aus.   
+
+
+<details>
+<summary>Klicken Sie hier, um das C# Beispiel zu öffnen.</summary>
+{% highlight csharp %}
+private void Button1_Click(object sender, System.EventArgs e) 
+{ 
+	ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License. 
+	
+	R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");  //Set Connection Properties
+	con.Open(false); 
+          
+    // Create a RFC-Function object 
+    RFCFunction func = con.CreateFunction("BAPI_PO_CREATE");
+
+	// Fill header structure
+	RFCStructure Header = func.Exports["PO_HEADER"].ToStructure();
+	Header["DOC_TYPE"]= "NB";
+	Header["PURCH_ORG"] = "1000";
+	Header["PUR_GROUP"] = "010";
+	Header["DOC_DATE"]= ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
+	Header["VENDOR"]= this.txtVendor.Text
+	
+	// Create an Item
+	RFCTable items = func.Tables["PO_ITEMS"];
+	RFCStructure item = items.AddRow();
+	item["PO_ITEM"] = "1";
+	item["PUR_MAT"] = this.txtMaterial.Text;
+	item["PLANT"] = this.txtPlant.Text;
+  
+	// Create and fill shedules
+	RFCTable shedules = func.Tables["PO_ITEM_SCHEDULES"];
+	RFCStructure shedule = shedules.AddRow();
+	shedule["PO_ITEM"] = "1";
+	shedule["DELIV_DATE"] = ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
+	shedule["QUANTITY"] = Convert.ToDecimal(this.txtQuan.Text);
+
+	// Exceute Bapi and process return messages
+	func.Execut e();
+	this.txtReturn.Text = "";
+	this.txtReturn.Text += func.Tables["RETURN"].Rows[0, "MESSAGE"] + "\r\n";
+}
+{% endhighlight %}
+</details>
+
+Der folgende Screenshot zeigt die angelegte Bestellung im SAP-System.<br>
 ![Create-Puchase-Order-ME23](/img/content/Create-Puchase-Order-ME23.png){:class="img-responsive"}

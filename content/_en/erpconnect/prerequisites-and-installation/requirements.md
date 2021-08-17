@@ -85,8 +85,7 @@ The ERPConnect*.dll is delivered with ERPConnect. The other DLLs can be download
 ### 32/64-Bit Environment
 * Both x86 and x64 platforms are supported.
 
-Please copy the 64-bit version of librfc32.dll in the \System32 folder. You can find the 64-bit version of librfc32.dll in the SAPNet download area.
-
+Copy the 64-bit version of librfc32.dll in the \System32 folder. <br>
 The 32-Bit Version has to be copied in the \SysWoW64 folder.
 
 {: .box-warning }
