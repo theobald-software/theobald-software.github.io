@@ -32,6 +32,7 @@ For general articles on ERPConnect, FAQs and troubleshooting, see [ERPConnect - 
 - [Reading material BOM](https://kb.theobald-software.com/erpconnect-samples/reading-material-bom)
 - [Read/Write material master data](https://kb.theobald-software.com/erpconnect-samples/readwrite-material-master-data)
 - [Retrieve texts from a sales order by using RFC_READ_TEXT](https://kb.theobald-software.com/erpconnect-samples/retrieve-texts-from-a-sales-order-by-using-rfc_read_text)
+- [Retrieving Customer Information](https://kb.theobald-software.com/erpconnect-samples/retrieving-customer-information-by-calling-sd_rfc_customer_get)
 - [Retrieving Stock Quantity via BAPI](https://kb.theobald-software.com/erpconnect-samples/retrieving-stock-quantity-via-bapi)
 - [Retrieving the quantity of a purchase order that has already been received by using BAPI_PO_GETDETAIL](https://kb.theobald-software.com/erpconnect-samples/retrieving-the-quantity-of-a-purchase-order-that-has-already-been-received-by-using-bapi_po_getdetail)
 - [RFC Server with scalar parameters](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-scalar-parameters)
