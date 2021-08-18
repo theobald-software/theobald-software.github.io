@@ -14,7 +14,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-queries
 
 {: .box-warning }
 **Warning! Deprecated component** 
-As of Visual Studio Version 2019 an .Net4.5 the *LINQ to SAP* add-on is not supported anymore.
+As of Visual Studio Version 2019 and .Net4.5 the *LINQ to SAP* add-on is not supported anymore.
 
 
 **You can find the code for this example in the ERPConnect installation directory in the LINQQuery directory.**

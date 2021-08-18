@@ -14,7 +14,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap
 
 {: .box-warning }
 **Warning! Deprecated component** 
-As of Visual Studio Version 2019 the *LINQ to SAP* add-on is not supported anymore.
+As of Visual Studio Version 2019 and .NET4.5 the *LINQ to SAP* add-on is not supported anymore.
 
 Before we delve deeper into LINQ to SAP in this chapter, let's first have a look at some answers to a few important questions that some readers might be dying to ask:
 
