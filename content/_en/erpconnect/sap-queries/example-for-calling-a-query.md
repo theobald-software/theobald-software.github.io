@@ -31,12 +31,12 @@ Each SAP query is defined by three descriptors:
 - the name of the query itself (in this example *MEBESTWERTAN*)
 3. Define the parameters of the query. Every parameter has a distinctly technical name. 
 You can access the parameter's range collection via the indexer.
-Use 'Add' to add a new range to "SP$00017" (material number) and "S_WAERS" (currency). <br>
+Use *Add* to add a new range to "SP$00017" (material number) and "S_WAERS" (currency). <br>
 An individual range is defined by three descriptors:
 - a sign (include or exclude)
 - an operator (e.g. *equals* for parity) 
 - a low or high value (LowValue and HighValue or only LowValue when using parity).  
-3. When all of selections are defined, execute the query with the *Execute* method. <br>
+4. When all of selections are defined, execute the query with the *Execute* method. <br>
 The query output is an ADO.NET DataTable. It can be accessed using the Result attribute of the query object.
 
 <details>

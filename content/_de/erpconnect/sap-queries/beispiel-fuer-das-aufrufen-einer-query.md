@@ -1,7 +1,7 @@
 ---
 ref: ec-sap-queries-01
 layout: page
-title: Beispiel für das Aufrufen einer Query
+title: Eine Query aufragen
 description: Beispiel für das Aufrufen einer Query
 product: erpconnect
 parent: sap-queries
@@ -22,14 +22,26 @@ Im folgenden Beispiel werden die Daten einer Beispielquery aus dem Bereich Mater
 **Hinweis**: Wenn Sie den techn. Namen eines Parameters nicht kennen, können Sie ihn sich in Ihrem SAP-System anzeigen lassen,
 Verwenden Sie die Transaktion **SQ01** oder **SQ02**
 
-1. Zunächst wird mit Hilfe der Methode CreateQuery des R3Connection-Objekts das Query-Objekt gebildet. Jede SAP Query ist durch drei Angaben eindeutig bestimmt: Der Benutzerbereich (ob lokal oder global), die Benutzergruppe (in unserem Beispiel /SAPQUERY/MB) und der Name der Query selbst (in unserem Fall MEBESTWERTAN).
-
-Danach werden die Ranges gefüllt. Jeder Parameter hat einen eindeutigen technischen Namen. Über den Indexer können Sie unter Angabe des Namens (z.B. SP$00017) auf die Ranges-Collection des Parameters zugreifen und mit Add einen neuen Range hinzufügen. Ein einzelner Range wird bestimmt durch das *Sign* (Include oder Exclude), einen *Operator* (z.B. Equals für die Gleicheit) und einen niedrigen bzw. hohen Wert (*LowValue* und *HighValue*). Da wir in unserem Beispiel nur die Gleichheit verwenden, ist der hohe Wert irrelevant. Beide Werte sind bei speziellen Operatoren nötig (z.B. Between). Falls Sie nicht wissen, wie der technische Name eines SelectionParameters heißt, rufen Sie das Selektionsbild im SAP GUI direkt auf, stellen Sie den Cursor in das Feld und drücken Sie *F1* und dann den Button *technische Info*. Der Name wird ganz unten neben der Bezeichnung *Dynprofeld* angegeben.
-
-Wenn alle Selektionen gefüllt sind, kann die Query mit Hilfe der Methode *Execute* ausgeführt werden. Die Ergebnismenge befindet sich dann in einer ADO.NET DataTable. Sie kann über die Eigenschaft *Result* des Query-Objekts abgerufen werden. 
+1. Bauen Sie mit der R3Connection-Klasse eine Verbindung zum R/3 System auf.
+2. Verwenden Sie die Methode *CreateQuery*, um ein Qery-Objekt zu erstellen. 
+Jede SAP Query ist durch drei Angaben eindeutig definiert: 
+- Der Workspace (lokal oder global)
+- die Benutzergruppe (in diesem Beispiel */SAPQUERY/MB*) 
+- der Name der Query selbst (in diesem Beispiel *MEBESTWERTAN*).
+3. Definieren Sie die Parameter der Query.
+Jeder Parameter hat einen eindeutigen technischen Namen. 
+Über den Indexer können Sie auf die Range-Collection eines Parameters zugreifen.
+Fügen Sie den Parametern "SP$00017" (Materialnummer) und "S_WAERS" (Währung) mit *Add* eine neue Range hinzu. <br>
+Ein einzelner Range wird bestimmt durch das 
+- ein *Sign* (Include oder Exclude)
+- ein Operator (z.B. *equals* für Gleichheit)
+- ein niedriger bzw. hoher Wert (LowValue und HighValue oder nur LowValue bei Gleichheit). 
+4. Wenn alle Selektionen gefüllt sind, führen Sie die Query mit der Methode *Execute* aus.<br>
+Die Ergebnismenge befindet sich in einer ADO.NET DataTable. 
+Sie kann über die Eigenschaft *Result* des Query-Objekts abgerufen werden. 
 
 <details>
-<summary>Click to open C# example.</summary>
+<summary>Klicken Sie hier, um das C# zu öffnen.</summary>
 {% highlight csharp %}
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
     {
