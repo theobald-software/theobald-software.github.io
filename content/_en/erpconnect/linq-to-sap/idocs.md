@@ -11,6 +11,12 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-idocs
 ---
 
+
+{: .box-warning }
+**Warning! Deprecated component** 
+As of Visual Studio Version 2019 an .Net4.5 the *LINQ to SAP* add-on is not supported anymore.
+
+
 You can send IDocs to SAP with the help of LINQ to SAP. The segments can be used in the SAP context.
 
 To use an IDoc in .NET, drag the IDoc component from the toolbox to the data context. The selection of the IDoc is done in the search dialog.

@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-function-modules-and-bapis
 ---
 
+
+{: .box-warning }
+**Warning! Deprecated component** 
+As of Visual Studio Version 2019 an .Net4.5 the *LINQ to SAP* add-on is not supported anymore.
+
 **You can find the code for this example in the ERPConnect installation directory in the LINQBapi directory.**
 
 Because the terms function modules and BAPIs are almost equivalent, we only speak of BAPIs in the following. In the LINQ application, BAPIs are handled nearly the same way as stored procedures in LINQ to SQL. Drag a function object from the toolbox to the prepared DataContext. The selection of the BAPI is made with the search dialog.

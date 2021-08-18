@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-tables
 ---
 
+{: .box-warning }
+**Warning! Deprecated component** 
+As of Visual Studio Version 2019 an .Net4.5 the *LINQ to SAP* add-on is not supported anymore.
+
+
 **The sample code is located in the installation directory in theLINQTable directory**
 
 Following up on the previous section, a search mask now opens up for the selection of tables. Take the desired table by confirming your selection with OK. 

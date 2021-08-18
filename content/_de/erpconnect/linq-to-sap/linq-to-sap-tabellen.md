@@ -11,6 +11,10 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-tabellen
 ---
 
+{: .box-warning }
+**Warnung! Veraltete Komponente** 
+Das Add-On *LINQ to SAP* wird ab Visual Studio Version 2019 und .NET4.5 nicht mehr unterstützt.
+
 **Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis LINQTable**
 
 Anknüpfend an das letzte TeilAbschnitt öffnet sich nun die Suchmaske für die Tabellenauswahl. Übernehmen Sie die gewünschte Tabelle, indem Sie mit OK bestätigen.

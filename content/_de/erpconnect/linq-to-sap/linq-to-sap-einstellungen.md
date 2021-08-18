@@ -11,6 +11,9 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-einstellungen
 ---
 
+{: .box-warning }
+**Warnung! Veraltete Komponente** 
+Das Add-On *LINQ to SAP* wird ab Visual Studio Version 2019 und .NET4.5 nicht mehr unterstützt.
 
 ![LINQToERP-Settings](/img/content/LINQToERP-Settings.png){:class="img-responsive"}
 

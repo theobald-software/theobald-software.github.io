@@ -11,6 +11,12 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-queries
 ---
 
+
+{: .box-warning }
+**Warning! Deprecated component** 
+As of Visual Studio Version 2019 an .Net4.5 the *LINQ to SAP* add-on is not supported anymore.
+
+
 **You can find the code for this example in the ERPConnect installation directory in the LINQQuery directory.**
 
 Apart from the table integration described in the previous two sections, LINQ to SAP also supports SAP queries as LINQ-capable data sources (important: do not mix these up with BW queries!). The following example demonstrates how a demo query called ZVV01 is addressed in the ZTHEO user group. The screenshot below shows the query's selection screen, as well as the list output. The contents output here by the query (join between VBAK and VBAP) are sales data.

@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-table-access-restrictions
 ---
 
+
+{: .box-warning }
+**Warning! Deprecated component** 
+As of Visual Studio Version 2019 an .Net4.5 the *LINQ to SAP* add-on is not supported anymore.
+
 As shown in the previous section, tables can be called without having to do any installations in the SAP system. Unfortunately though, the same restrictions apply here as with the traditional ReadTable class (see chapter [Reading SAP Tables Directly with ReadTable](../special-classes/reading-sap-tables-directly-with-readtable)).
 
 To deal with this problem, it is possible to install a Z-module in the SAP system, see chapter [table restrictions](../sap-customizing/table-restrictions).

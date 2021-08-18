@@ -11,6 +11,10 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-installation-und-erste-schritte
 ---
 
+{: .box-warning }
+**Warnung! Veraltete Komponente** 
+Das Add-On *LINQ to SAP* wird ab Visual Studio Version 2019 und .NET4.5 nicht mehr unterstützt.
+
 **Achtung: Visual Studio Express-Versionen unterstützen den LINQ to SAP Designer nicht.**
 
 Die Installation des *LINQ to SAP*-Designers erfolgt nicht automatisch mit der Installation von ERPConnect. Sie muss separat angestoßen werden. Starten Sie dazu die Anwendung **LINQtoERPSetupVSJJJJ.exe** im ERPConnect-Verzeichnis oder über das Programmmenü, wobei JJJJ der Version Ihres Visual Studios entspricht: 

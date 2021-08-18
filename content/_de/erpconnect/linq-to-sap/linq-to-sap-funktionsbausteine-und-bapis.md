@@ -11,6 +11,10 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-funktionsbausteine-und-bapis
 ---
 
+{: .box-warning }
+**Warnung! Veraltete Komponente** 
+Das Add-On *LINQ to SAP* wird ab Visual Studio Version 2019 und .NET4.5 nicht mehr unterstützt.
+
 **Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis LINQBapi** 
 
 Da die beiden Begriffe Funktionsbausteine und BAPIs fast äquivalent sind, sprechen wir im Folgenden nur noch von BAPIs. BAPIs werden bei der LINQ-Anwendung nahezu genauso gehandhabt wie Stored Procedures beim LINQ to SQL. Ziehen Sie ein Function-Objekt aus der Toolbox in den vorbereiteten DataContext. Die Auswahl des BAPIs erfolgt mit dem Such-Dialog.
