@@ -38,7 +38,7 @@ using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
 {% endhighlight %}
 </details>
 
-If there is a ticket available, use *OpenSSO* to establish the connection without user credentials:
+If there is a ticket available, you can use *OpenSSO* to establish the connection without user credentials:
 
 <details>
 <summary>Click to open C# example.</summary>

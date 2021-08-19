@@ -2,7 +2,7 @@
 ref: ec-sap-connection-03
 layout: page
 title: Log On Ticket
-description: Log On Ticket
+description: SSO mit Log On Tickets
 product: erpconnect
 parent: sap-verbindung
 permalink: /:collection/:path

@@ -1,7 +1,7 @@
 ---
 ref: ec-sap-connection-05
 layout: page
-title: SNC mit NTLM und Kerberos
+title: SSO mit SNC
 description: SNC mit NTLM und Kerberos
 product: erpconnect
 parent: sap-verbindung
