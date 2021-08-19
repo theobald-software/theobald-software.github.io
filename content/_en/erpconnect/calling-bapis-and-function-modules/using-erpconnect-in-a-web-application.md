@@ -1,7 +1,7 @@
 ---
 ref: ec-calling-bapis-and-function-modules-04
 layout: page
-title: Web Application Usage
+title: Web Applications
 description: Web Application Usage
 product: erpconnect
 parent: calling-bapis-and-function-modules
