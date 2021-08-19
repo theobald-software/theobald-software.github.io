@@ -16,7 +16,7 @@ IDocs sind elektronische Dokumente, die an und von SAP-Systemen gesendet werden 
 IDocs werden von SAP sowohl für die Kommunikation zwischen SAP-Systemen als auch zwischen SAP und externen Subsystemen eingesetzt.
 ERPConnect bietet Klassen an, die das Senden, Empfangen und Konstruieren von IDocs ermöglichen.
 
-### ÜberIDocs
+### Über IDocs
 Jedes IDoc besteht aus einem Kopfsatz, der administrative Felder zum Transport, dem Absender und Infos zum Empfängersystem beinhaltet. 
 Die Daten eines IDocs befinden sich in Segmenten, die hierarchisch angeordnet sind. 
 Jedes Segment beinhaltet Felder, die die betriebswirtschaftlichen Informationen enthalten.

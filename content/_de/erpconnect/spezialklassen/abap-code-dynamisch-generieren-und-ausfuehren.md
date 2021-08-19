@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-02
 layout: page
-title: ABAP Code dynamisch generieren und ausführen
+title: ABAPCode-Klasse
 description: ABAP Code dynamisch generieren und ausführen
 product: erpconnect
 parent: spezialklassen

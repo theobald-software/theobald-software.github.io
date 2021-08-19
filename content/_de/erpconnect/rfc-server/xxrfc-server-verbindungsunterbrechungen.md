@@ -3,18 +3,22 @@ ref: ec-rfc-server-03
 layout: page
 title: Verbindungsunterbrechungen
 description: Verbindungsunterbrechungen
-produc: erpconnectx
+product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-server-verbindungsunterbrechungen
 ---
+Dieser Abschnitt enthält Informationen darüber, wie Sie mit Verbindungsunterbrechungen umgehen können.
 
-Ein RFC-Server ist im Normalfall so gestaltet, dass er sehr lange Zeit (oftmals Tag und Nacht) läuft. Es wird also früher oder später passieren, dass die Verbindung zum SAP-System abbricht. Dies kann vorkommen, weil das SAP-System durchgestartet wird oder weil beispielsweise innerhalb des Netzwerks eine Unterbrechung der Verbindung stattfindet.
+Ein RFC-Server ist i.d.R. so gestaltet, dass er lange Zeit läuft, häufig Tag und Nacht. 
+Dadurch ist es wahrscheinlich, dass die Verbindung zum SAP-System irgendwann abbricht, z.B. wenn das SAP-System gebootet wird oder wenn eine Netzwerkunterbrechung stattfindet.
 
-Um sicherzustellen, dass der RFC-Server mit dieser Situation umgehen kann, ist folgende Vorgehensweise empfohlen:
+Um sicherzustellen, dass der RFC-Server mit diesen Situationen umgehen kann, wird folgende Vorgehensweise empfohlen:
 
-1. Starten Sie parallel zum RFC-Server auch ein Timer-Objekt, das alle 30 oder 60 Sekunden das *Elapsed*-Event auslöst. 
-2. Fragen Sie im Timer-Event die Eigenschaft *IsRunning* des RFC-Servers ab, die definiert, ob noch eine Verbindung zum SAP besteht. Falls diese Funktion *false* zurückliefert, starten Sie das Server-Objekt mit *Start()* erneut. 
-3. Auch wenn ein Verbindungsabbruch im Event *OnInternalException* abgefangen werden könnte, widerstehen Sie der Versuchung, direkt in diesem Event ein *Start()* aufzurufen. Es macht keinen Sinn, sofort nach dem Abbruch einen Neustart zu versuchen, da der Grund für den Abbruch zu diesem Zeitpunkt bestimmt noch nicht bereinigt ist.
+1. Starten Sie parallel zum RFC-Server ein Timer-Objekt, das alle 30 oder 60 Sekunden das *Elapsed*-Event auslöst. 
+2. Fragen Sie im Timer-Event die Eigenschaft *IsRunning* des RFC-Servers ab, die die Verbindung zu SAP prüft. 
+Falls diese Funktion *false* zurückliefert, starten Sie das Server-Objekt mit *Start* erneut. 
+3. Wenn ein Verbindungsabbruch im Event *OnInternalException* abgefangen wird, rufen Sie nicht direkt *Start* auf. 
+Starten Sie nach einem Abbruch nicht direkt neu ohne den Grund für den Abbruch zu bestimmen und zu bereinigen.

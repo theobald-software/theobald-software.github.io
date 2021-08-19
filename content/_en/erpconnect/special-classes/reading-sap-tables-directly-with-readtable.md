@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-01
 layout: page
-title: Reading SAP Tables Directly with ReadTable
+title: Read Table Class
 description: Reading SAP Tables Directly with ReadTable
 product: erpconnect
 parent: special-classes

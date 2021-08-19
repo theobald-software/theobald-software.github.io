@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-03
 layout: page
-title: Managing and  Executing Transactions- The Class Transaction
+title: Transaction Class 
 description: Managing and  Executing Transactions- The Class Transaction
 product: erpconnect
 parent: special-classes
@@ -10,8 +10,6 @@ weight: 3
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=managing-and-executing-transactions-the-class-transaction
 ---
-
-**The sample code is located in the installation directory in the PopUpMMBE directory**
 
 
 The class Transaction offers the possibility of executing SAP transactions in the foreground as well as in a background process. This technique is called Batch Input. By executing in a background process, you will be able to process mass data and transfer it to the SAP system. This technique is often used if no BAPI exists.

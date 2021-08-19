@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-02
 layout: page
-title: ABAP Code
+title: ABAP Code Class
 description: ABAP Code
 product: erpconnect
 parent: special-classes

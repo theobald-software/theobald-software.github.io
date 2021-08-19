@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-04
 layout: page
-title: Batch Input Hintergrundverarbeitung
+title: BatchReturn-Klasse
 description: Batch Input Hintergrundverarbeitung
 product: erpconnect
 parent: spezialklassen

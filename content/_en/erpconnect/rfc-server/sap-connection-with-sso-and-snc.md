@@ -1,7 +1,7 @@
 ---
 ref: ec-rfc-server-02
 layout: page
-title: SAP connection with SSO and SNC
+title: SSO and SNC
 description: SAP connection with SSO and SNC
 product: erpconnect
 parent: rfc-server

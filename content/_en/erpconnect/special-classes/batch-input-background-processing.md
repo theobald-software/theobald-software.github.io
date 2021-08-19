@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-04
 layout: page
-title: Batch Input Background Processing
+title: Batch Return Class
 description: Batch Input Background Processing
 product: erpconnect
 parent: special-classes
@@ -15,9 +15,12 @@ old_url: /ERPConnect-EN/default.aspx?pageid=batch-input-background-processing
 
  
 
-The following example shows how to create a purchase order by using Batch Input techniques in background processing. For this purpose, we use the TransactionRecorder to generate C# or VB code as explained in Chapter 10.1 TransactionRecorder. The transaction for creating a purchase order is ME21.
+The following example shows how to create a purchase order by using Batch Input techniques in background processing. 
+For this purpose, we use the TransactionRecorder to generate C# or VB code as explained in Chapter 10.1 TransactionRecorder. 
+The transaction for creating a purchase order is ME21.
 
-Please also note the end of the code where return messages of the Batch Input transaction are processed. The code loops over the Returns collection to inspect the BatchReturn objects. 
+Please also note the end of the code where return messages of the Batch Input transaction are processed. 
+The code loops over the Returns collection to inspect the BatchReturn objects. 
 
 
 <details>

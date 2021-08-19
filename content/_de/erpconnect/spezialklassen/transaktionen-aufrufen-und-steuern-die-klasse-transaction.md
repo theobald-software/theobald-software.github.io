@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-03
 layout: page
-title: Transaktionen aufrufen und steuern- Die Klasse Transaction
+title: Transaction-Klasse
 description: Transaktionen aufrufen und steuern- Die Klasse Transaction
 product: erpconnect
 parent: spezialklassen
