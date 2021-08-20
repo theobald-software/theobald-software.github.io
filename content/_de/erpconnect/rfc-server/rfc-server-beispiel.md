@@ -31,7 +31,7 @@ Unter C# muss die Callback-Funktion für das Ereignis mit einer separaten Code-Z
 **Hinweis**: Falls die RFC-Destination in der SAP-Transaktion **SM59** auf Unicode eingestellt ist, muss die Eigenschaft *IsUnicode* des *RFCServer*-Objekts auf True gesetzt werden. 
 
 <details>
-<summary>[C#]</summary>
+<summary>[Klicken Sie hier, um das C# Beispiel zu öffnen.]</summary>
 {% highlight csharp %}
 using ERPConnect; 
   
@@ -89,7 +89,7 @@ Module Module1
 Der folgende Beispielcode zeigt, wie das Ereignis *IncomingCall* verarbeitet wird.
 
 <details>
-<summary>[C#]</summary>
+<summary>[Klicken Sie hier, um das C# Beispiel zu öffnen.]</summary>
 {% highlight csharp %}
 private static void s_IncomingCall(RFCServer Sender, RFCServerFunction CalledFunction) 
 { 
@@ -137,7 +137,7 @@ Das Programm übergibt die beiden Zahlen 26 und 25 und das Ergebnis 51 wird bere
 
 
 <details>
-<summary>[ABAP]</summary>
+<summary>[Klicken Sie hier, um das ABAP-Beispiel zu öffnen.]</summary>
 {% highlight csharp %}
 REPORT z_add_test 
 . 
@@ -155,3 +155,11 @@ CALL FUNCTION 'Z_ADD' DESTINATION 'ERPTEST'
 
 Der folgende Screenshot zeigt die Ausgabe der RFC-Server-Funktion im ABAP-Programm:<br>
 ![RFCServer-Console](/img/content/RFCServer-Console.png){:class="img-responsive"}
+
+
+*****
+#### Weiterführende Links
+- [Transactional RFC Server](https://kb.theobald-software.com/erpconnect-samples/transactional-rfc-server)
+- [RFC Server with tables](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-tables)
+- [RFC Server with structures](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-structures)
+- [How to calculate the length of the SAP type QUAN when setting up an RFC-Server](https://kb.theobald-software.com/erpconnect-samples/how-to-calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server)

@@ -11,9 +11,16 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-connection-with-sso-and-snc
 ---
 
-The RFCServer class supports SAP Connection with SSO and SNC.
-The RFCServer class provides the property SNCSettings, similar to the R3Connection class, refer to [ERPConnect with SSO with SNC](../sap-connection/sap-connection-with-sso-and-snc).
-The property OwnName must be set. Additionally one of the properties SNCMechanism and LibraryPath must be set.  
+The RFCServer class supports SAP connection with SSO and SNC.<br>
+The RFCServer class works similarly to the R3Connection class, see [ERPConnect with SSO with SNC](../sap-connection/sap-connection-with-sso-and-snc).
+
+{: .box-note }
+**Note**: Note the prerequisites described in [SSO with SNC - Prerequisites](./sap-connection/sso-with-snc#prerequisites) beschrieben.
+
+
+### SAP Connection with SSO and SNC
+The RFCServer class provides the property *SNCSettings*. 
+Assign the partner name in the SAP transaction **SM59** (e.g. p:RFCServerSNC@THEOBALD) to the property *OwnName* of *SNCSettings*.
   
 <details>
 <summary>Click to open C# example.</summary>
@@ -32,11 +39,10 @@ rfcServer.IsUnicode = true;
 {% endhighlight %}
 </details>  
   
-It's important that the partner name in the SAP transaction SM59 (e.g. p:RFCServerSNC@THEOBALD) is the same as the RFCServer.SNCSettings.OwnName.  
-  
-![RFCServer-Destination](/img/content/RFCServer-Destination.png){:class="img-responsive" height="500px" width="550px"}
-  
-If SNC is used with Kerberos and Active Directory, the Active Directory account used for the RFC server must have the right Service Principal Name.  
+![RFCServer-Destination](/img/content/RFCServer-Destination.png){:class="img-responsive"}
+
+{: .box-note }
+**Note**: If SNC is used with Kerberos and Active Directory, the Active Directory account used for the RFC server must have a Service Principal Name corresponding to the partner name in SAP.  
   
 ![RFCServer-AD](/img/content/RFCServer-AD.png){:class="img-responsive" height="200px" width="350px"}  
       

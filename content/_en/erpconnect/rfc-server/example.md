@@ -152,3 +152,10 @@ CALL FUNCTION 'Z_ADD' DESTINATION 'ERPTEST'
 
 The screenshot below shows the running ABAP program:<br>
 ![RFCServer-Console](/img/content/RFCServer-Console.png){:class="img-responsive" height="200px" width="200px"}  
+
+*****
+#### Related Links
+- [Transactional RFC Server](https://kb.theobald-software.com/erpconnect-samples/transactional-rfc-server)
+- [RFC Server with tables](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-tables)
+- [RFC Server with structures](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-structures)
+- [How to calculate the length of the SAP type QUAN when setting up an RFC-Server](https://kb.theobald-software.com/erpconnect-samples/how-to-calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server)
