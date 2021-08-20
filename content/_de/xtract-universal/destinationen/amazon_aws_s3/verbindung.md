@@ -42,6 +42,7 @@ Wählen Sie einen Bucket und die diesem Bucket zugehörige Region aus. In diesen
 **Test Connection**<br>
 Prüft, ob die Kombination aus Bucket und Region korrekt ist und ob der Bucket von Xtract Universal aus mit den eingegebenen Access Keys beschreibbar ist.
 
+
 #### Server-side encryption
 
 Wählen Sie, wie die Daten nach dem Hochladen in S3 verschlüsselt werden sollen.<br>
@@ -60,6 +61,17 @@ Verschlüsselt die Datei [serverseitig](https://docs.aws.amazon.com/AmazonS3/lat
 
 - **SSE-KMS und Key ID**
    Verschlüsselung über einen AWS-seitig benutzerdefinierten Schlüssel ([AWS Key Management Services](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingKMSEncryption.html)). Der Schlüssel kann auf der [AWS-Webseite](httpshttps://console.aws.amazon.com/iam/home#/encryptionKeys/) angelegt werden.
+
+#### Misc
+
+Alle Einstellungen in *Misc* sind optional.
+
+**Folder Path**<br>
+Geben Sie den Pfad ein, in dem Dateien hochgeladen werden.
+
+**File Owner**<br>
+Wenn man als AWS User eines Accounts A in den Bucket eines Accounts B hochladen möchte, kann man die Option "Bucket Owner" auswählen.
+Ohne Owner können hochgeladene Dateien nicht ohne Weiteres geöffnet werden.
 
 
 ### File Format

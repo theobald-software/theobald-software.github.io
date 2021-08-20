@@ -42,6 +42,7 @@ Select a bucket and a region of the bucket's location. The SAP data is extracted
 **Test Connection**<br>
 Validates the right combination of bucket and region. Insures bucket's accessibility from Xtract Universal using the entered access keys.
 
+
 #### Server-side encryption
 
 Choose how to encrypt data after uploading them to S3.<br>
@@ -58,6 +59,16 @@ Encrypts data using the by default available S3 user account encryption key ([S3
 - **SSE-KMS und Key ID**<br>
 Encryption using a custom encryption key created on AWS ([AWS Key Management Services](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingKMSEncryption.html)). The key can be created on the [AWS website](https://console.aws.amazon.com/iam/home#/encryptionKeys/.)
 
+#### Misc
+
+All settings in *Misc* are optional.
+
+**Folder Path**<br>
+Enter the directory to upload files into.
+
+**File Owner**<br>
+If you upload files as an AWS user of an Account A to an Account B, you can select the option "Bucket Owner".
+Without a declared owner, uploaded files cannot be opened directly.
 
 ### File Format
 
