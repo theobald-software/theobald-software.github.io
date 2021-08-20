@@ -12,7 +12,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=retrieving-customer-information-by-c
 ---
 
 
-The following section contains a list of available resources for the BAPI/Function Module classes.
+This section contains a list of available resources for the BAPI/Function Module classes.
 
 For a complete list of example codes and applications, see [ERPConnect - Samples](https://kb.theobald-software.com/erpconnect-samples).<br>
 For general articles on ERPConnect, FAQs and troubleshooting, see [ERPConnect - General](https://kb.theobald-software.com/erpconnect-general).

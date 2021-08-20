@@ -1,10 +1,10 @@
 ---
-ref: ec-calling-bapis-and-function-modules-01
+ref: ec-rfc-server-01
 layout: page
 title: Prerequisites
 description: Maintaining RFC Destinations
 product: erpconnect
-parent: calling-bapis-and-function-modules
+parent: rfc-server
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

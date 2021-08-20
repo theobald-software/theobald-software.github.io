@@ -1,12 +1,12 @@
 ---
-ref: ec-rfc-server-03
+ref: ec-rfc-server-04
 layout: page
 title: Connection Timeouts
 description: Connection time-outs for rfc server
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=connection-time-outs
 ---

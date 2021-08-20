@@ -1,25 +1,32 @@
 ---
-ref: ec-rfc-server-01
+ref: ec-rfc-server-02
 layout: page
-title: Example
+title: Example Function
 description: Example
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-example
 ---
 
-**The sample code is located in the ERPConnect directory in the ZAddServer directory**  
+This section shows how to create a simple example function that allows ABAP programs to add numbers.<br>
+The two imports *NUMBER1* and *NUMBER2* are added and passed back to the calling program via the export *RES*.  
 
-The example below shows a simple task. An ABAP program should add two numbers with the help of a function module. The two imports NUMBER1 and NUMBER2 are added and passed back to the calling program via the export RES.  
-  
-The code shows how to initialize an RFCServer object by providing the gateway host, the gateway service and the program ID to register on the SAP gateway (you may also refer to [Maintaining RFC Destinations](../administration/maintaining-rfc-destinations)).
-  
-After registering the RFCServer object at the SAP gateway, there is an RFCServerFunction object registered with the help of the _.RegisteredFunctions.Add_ method. The imports and exports must be handled the same way as when calling RFC functions as a client. An RFCServer object can, of course, hold more than one RFCServerFunction object.  
-  
-The event _IncomingCall_ is fired when an ABAP program calls the function in a foreign destination. If you use C#, you must define the event call-back with a separate line of code. If you use Visual Basic on the other hand, use the WithEvents statement. 
+### Registering the RFC Server Function
+
+1. Initialize an *RFCServer* object by providing the gateway host, the gateway service and the program ID to register on the SAP gateway.
+For this, the program ID must be available as a registered destination in SAP, see [Setting Up an RFC Destination](./maintaining-rfc-destinations). 
+2. Use the method *RegisteredFunctions.Add* to register an *RFCServerFunction* object.
+An *RFCServer* object can hold more than one *RFCServerFunction* object.  
+3. Add Imports and Exports. They are handled the same way as when calling RFC functions as a client. 
+4. When an ABAP program calls the function, the event *IncomingCall* is triggered. 
+If you use C#, you must define the event call-back with a separate line of code.  
+5. Start the server with *Start*.
+
+{: .box-note }
+**Note**: If the RFC destination is set to Unicode (SAP transaction code **SM59**), the property *IsUnicode* of the *RFCServer* object must be set to true.
 
 <details>
 <summary>Click to open C# example.</summary>
@@ -45,6 +52,8 @@ static void Main(string[] args)
 }
 {% endhighlight %}
 </details>
+
+<!---
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -72,11 +81,12 @@ Module Module1
    End Sub
 {% endhighlight %}
 </details>  
+  -->
   
-The following code shows how the IncomingCall event is handled. The import parameters are the ones that are passed by the calling SAP system. The export parameters are the ones that are passed back to SAP.
-  
-**The sample code is located in the installation directory and the ZCalculateServer directory**  
-  
+### Handling Incoming Calls
+ 
+The following code shows how the *IncomingCall* event is handled:
+
 <details>
 <summary>Click to open C# example.</summary>
 {% highlight csharp %}
@@ -95,6 +105,7 @@ private static void s_IncomingCall(RFCServer Sender, RFCServerFunction CalledFun
 }
 {% endhighlight %}
 </details>
+<!---
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -114,11 +125,13 @@ Private Sub s_IncomingCall( ByVal Sender As _
 End Sub
 {% endhighlight %}
 </details>    
-  
-At the end of this example, you will see the ABAP code that is used to call our .NET function in the remote destination ERPTEST. 
-  
-The two numbers 26 and 25 are passed, and the result 51 is passed back. The screenshot further below shows the running ABAP program.
-  
+  -->
+The import parameters are passed by the calling SAP system. <br>
+The export parameters are passed back to SAP.<br>
+
+### Calling RFC Server Functions in ABAP
+In this example the following ABAP code is used to call the new function **Z_ADD** in the remote destination *ERPTEST*. <br>
+The two numbers 26 and 25 are passed, and the result 51 is passed back. 
 
 <details>
 <summary>Click to open ABAP example.</summary>
@@ -137,7 +150,5 @@ CALL FUNCTION 'Z_ADD' DESTINATION 'ERPTEST'
 {% endhighlight %}
 </details>
 
+The screenshot below shows the running ABAP program:<br>
 ![RFCServer-Console](/img/content/RFCServer-Console.png){:class="img-responsive" height="200px" width="200px"}  
-  
-**Unicode**  
-If the RFC Destination is set to Unicode (SAP transaction code SM59), the property _IsUnicode of the RFCServer_ object must be set to true.

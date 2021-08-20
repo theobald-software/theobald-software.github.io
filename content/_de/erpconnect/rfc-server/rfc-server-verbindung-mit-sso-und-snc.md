@@ -1,12 +1,12 @@
 ---
-ref: ec-rfc-server-02
+ref: ec-rfc-server-03
 layout: page
 title: SSO und SNC
 description: SAP-Verbindung mit SSO und SNC
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-server-verbindung-mit-sso-und-snc
 ---

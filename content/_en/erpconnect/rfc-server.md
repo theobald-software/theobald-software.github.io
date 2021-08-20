@@ -11,8 +11,9 @@ weight: 7
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server
 ---
-This section shows how to develop server functions with ERPConnect.
+The following sections show how to develop RFC server functions with ERPConnect.
 
+RFC server functions are routines that can be called by ABAP programs, see [SAP Help - Introduction to RFC Server Programs](https://help.sap.com/doc/saphelp_srm70/7.0/en-US/22/042990488911d189490000e829fbbd/frameset.htm) for more information. <br>
 Apart from the client functionality that allows function modules or BAPIs to be accessed in the SAP system, ERPConnect also offers the development of a server function.
 Transactional RFC functions are supported. 
 

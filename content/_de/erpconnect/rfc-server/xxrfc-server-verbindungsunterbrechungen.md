@@ -1,12 +1,12 @@
 ---
-ref: ec-rfc-server-03
+ref: ec-rfc-server-04
 layout: page
 title: Verbindungsunterbrechungen
 description: Verbindungsunterbrechungen
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-server-verbindungsunterbrechungen
 ---
