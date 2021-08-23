@@ -11,16 +11,21 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=abap-code-dynamisch-generieren-und-ausfuehren
 ---
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis AbapPad**
 
-Die Klasse *ABAPCode* bietet die Möglichkeit, den Code von ABAP-Reports an SAP zu übergeben und dort on the fly auszuführen. Hieraus ergeben sich nahezu unbegrenzte Möglichkeiten.
+Die Klasse *ABAPCode* bietet die Möglichkeit, den Code von ABAP-Reports an SAP zu übergeben und dort on the fly auszuführen. 
+Dadurch ergeben sich nahezu unbegrenzte Möglichkeiten.<br>
+Dieser Abschnitt zeigt, wie Sie einen einfachen ABAP-Interpreter erstellen, der ein dynamisches SQL-Statement ausführt.<br>
+![AbapPad](/img/content/AbapPad.png){:class="img-responsive"}
 
-Das folgende Beispielprogramm zeigt einen einfachen ABAP-Interpreter, der ein dynamisches SQL-Statement ausführt.
+### Einen ABAP-Interpreter erstellen
 
-*ABAPCode* benötigt wie alle verwandten Client-Klassen ein gültiges *R3Connection*-Objekt. Mit Hilfe der Methode *AddCodeLine* wird eine neue Zeile ABAP-Code hinzugefügt. Ist der gewünschte Code vollständig übergeben, wir er ausgeführt (*Execute*). Die Ergebnismenge (also die Listausgabe) wird dann mit Hilfe von *GetResultLine* eingelesen und verwertet.
+1. Bauen Sie mit der R3Connection-Klasse eine Verbindung zum R/3 System auf.
+2. Fügen Sie mit der Methode *AddCodeLine* eine neue Zeile ABAP-Code hinzu. 
+3. Ist der gewünschte Code vollständig übergeben, führen Sie ihn mit *Execute* aus. 
+4. Lesen und verwerten Sie die Ergebnismenge (die Listausgabe) mit der Methode *GetResultLine*.
 
 <details>
-<summary>[C#]</summary>
+<summary>[Klicken Sie hier, um das C# Beispiel zu öffnen]</summary>
 {% highlight csharp %}
 private void button1_Click(object sender, System.EventArgs e)
 {
@@ -55,7 +60,7 @@ private void button1_Click(object sender, System.EventArgs e)
 }
 {% endhighlight %}
 </details>
-
+<!---
 <details>
 <summary>[VB]</summary>
 {% highlight visualbasic %}
@@ -91,8 +96,5 @@ Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.Event
 End Sub
 {% endhighlight %}
 </details>
+-->
 
-Die Abbildung zeigt den ABAP-Interpreter in Aktion. 
-
-
-![AbapPad](/img/content/AbapPad.png){:class="img-responsive"}

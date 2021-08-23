@@ -11,13 +11,18 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=abap-code
 ---
 
-**The sample code is located in the ERPConnect installation directory in the AbapPad directory.** 
+The class ABAPCode offers nearly unlimited possibilities. 
+You can execute ABAP code on the fly and retrieve the result in a string array.<br>
+This section shows how to create a simple ABAP interpreter that executes a dynamic SQL statement, see screenshot below.<br>
+![AbapPad](/img/content/AbapPad.png){:class="img-responsive" width="400px" }
 
-The class ABAPCode offers nearly unlimited possibilities. You can execute ABAP code on the fly and retrieve the result in a string array.
 
-The example below shows how to create a simple ABAP interpreter that executes a dynamic SQL statement.
+### Creating an ABAP Interpreter
 
-Like other client classes, ABAPCode needs a valid R/3 connection. With the help of the method AddCodeLine, a new line of code will be added to the dynamic report. The report will be executed via Execute(). The result set (regarding the ABAP list) can be read by the method GetResultLine.
+1. Open a client connection to the R/3 system using the R3Connection class. 
+2. Use the method *AddCodeLine* to add a new line of code to the dynamic report. 
+3. Execute the report via *Execute*. 
+4. Read the result set (regarding the ABAP list) by using the method *GetResultLine*.
 
 
 <details>
@@ -56,7 +61,7 @@ private void button1_Click(object sender, System.EventArgs e)
         }
 {% endhighlight %}
 </details>
-
+<!---
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -92,7 +97,4 @@ Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.Event
 End Sub
 {% endhighlight %}
 </details>
-
-The figure screenshot below shows ABAP Interpreter in action. 
-
-![AbapPad](/img/content/AbapPad.png){:class="img-responsive" width="400px" }
+-->
