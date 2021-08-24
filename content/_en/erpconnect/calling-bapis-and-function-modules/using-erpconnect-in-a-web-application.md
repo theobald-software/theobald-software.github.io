@@ -92,3 +92,6 @@ private void Button1_Click(object sender, System.EventArgs e)
 The screenshot below shows the created purchase order.<br>
 ![purchase-order2](/img/content/create-purchase-order-ie_02.png){:class="img-responsive"}  
   
+****
+#### Related Links
+- [How to implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/how-to-implement-a-connection-pool)

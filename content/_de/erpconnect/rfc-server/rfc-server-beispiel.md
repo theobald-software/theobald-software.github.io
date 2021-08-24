@@ -1,7 +1,7 @@
 ---
 ref: ec-rfc-server-02
 layout: page
-title: Beispiel-Funktion
+title: Beispiel
 description: Beispiel
 product: erpconnect
 parent: rfc-server

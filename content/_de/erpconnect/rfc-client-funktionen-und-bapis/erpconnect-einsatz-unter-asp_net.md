@@ -95,3 +95,8 @@ private void Button1_Click(object sender, System.EventArgs e)
 
 Der folgende Screenshot zeigt die angelegte Bestellung im SAP-System.<br>
 ![Create-Puchase-Order-ME23](/img/content/Create-Puchase-Order-ME23.png){:class="img-responsive"}
+
+  
+****
+#### Weiterführende Links
+- [How to implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/how-to-implement-a-connection-pool)

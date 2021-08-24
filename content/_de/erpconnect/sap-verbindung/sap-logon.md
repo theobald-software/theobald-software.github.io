@@ -122,4 +122,4 @@ Um das neue NW RFC Protokoll zu verwenden, geben Sie folgende Codezeile ein: <br
 #### Weiterführende Links
 - [SSO mit Log On Tickets](./sso-mit-logon-ticket).
 - [SSO mit SNC](sso-mit-snc).
-
+- [How to implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/how-to-implement-a-connection-pool)

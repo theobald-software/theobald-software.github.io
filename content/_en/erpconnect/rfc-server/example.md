@@ -1,8 +1,8 @@
 ---
 ref: ec-rfc-server-02
 layout: page
-title: Example Function
-description: Example
+title: Sample
+description: Sample
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path

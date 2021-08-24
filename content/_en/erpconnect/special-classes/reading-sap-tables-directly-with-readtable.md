@@ -11,18 +11,17 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=reading-sap-tables-directly-with-readtable
 ---
 
-**The sample code is located in the ERPConnect installaltion directory in the ReadSAPTable directory**
+This section shows how to use the *ReadTable* class.<br>
+A recurrent task when working with SAP and .NET applications is to read directly from tables of the SAP system. 
+The *ReadTable* class enables access to that data.
 
-A recurrent task in daily work with SAP and .Net applications is to read directly from tables of the SAP system. You can use the ReadTable class to manage this demand.
+### Reading Data From Tables
 
-The sample below shows how to select data from the table. The result is passed back via an easy-to-use ADO.NET table object.
+The following sample shows how to use the *ReadTable* class to select data from the SAP table *MAKT* and how to process the ADO.NET result table object. 
 
-In this sample we want to read material description texts, which are located in the table MAKT. So we need the two columns MATNR (material number) and MAKTX (material description).
-
-Furthermore we want only the English texts so we have to add the WHERE statement SPRAS='EN'. SPRAS is the column which contains the language keys.
-
-The method Run executes the query and passes back the ADO.NET table.
-
+- This sample reads the material description texts of the table *MAKT*. 
+For this the columns *MATNR* (material number) and *MAKTX* (material text) are needed.
+- To make sure only the English language texts are read, add a corresponding WHERE statement `SPRAS='EN'`(SPRAS is the column that contains the language keys).
 
 <details>
 <summary>Click to open C# example.</summary>
@@ -31,39 +30,38 @@ using System;
 using ERPConnect; 
 using ERPConnect.Utils; 
 using System.Data; 
-     
+    
 class Class1
 { 
    static void Main(string[] args) 
    { 
-        using(R3Connection con = new R3Connection("hamlet",11,"theobald","pw","DE","800"))
-        {
-            con.Open(false);
-            ReadTable table = new ReadTable(con); 
-            table.AddField("MATNR"); 
-            table.AddField("MAKTX"); 
-            table:WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
-            table.TableName = "MAKT"; 
-            table.RowCount = 10; 
+        R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+        con.Open(false);
+        ReadTable table = new ReadTable(con); 
+        table.AddField("MATNR"); 
+        table.AddField("MAKTX"); 
+        table:WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
+        table.TableName = "MAKT"; 
+        table.RowCount = 10; 
          
-            table.Run(); 
+        table.Run(); 
          
-            DataTable resulttable = table.Result; 
+        DataTable resulttable = table.Result; 
          
-            for(int i=0; i < resulttable.Rows.Count;i++) 
+        for(int i=0; i < resulttable.Rows.Count;i++) 
             { 
                 Console.WriteLine( 
                  resulttable.Rows[i]["MATNR"].ToString() + " " + 
                  resulttable.Rows[i]["MAKTX"].ToString()); 
             }
           
-            Console.ReadLine(); 
+        Console.ReadLine(); 
         }
     }
 }
 {% endhighlight %}
 </details>
-
+<!---
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -108,30 +106,32 @@ Module Module1
 End Module
 {% endhighlight %}
 </details>
-
-The screenshot shows the output of the sample program. 
+-->
+The screenshot below shows the output of the sample program. 
 
 ![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive" width="800px" }
 
-**Table Access Restrictions**
+### Table Restrictions
+When extracting tables from older SAP releases you may encounter several restrictions when using the SAP standard function module (RFC_READ_TABLE):
+- The overall length of all columns to be extracted must not exceed 512 bytes.
+- It is not possible to extract data from tables that contain one or more columns of the data type f (FLTP, floating point), DEC (decimal, e.g. for percentage) or x (RAW, LRAW).
+- Poor extraction performance with larger tables.
 
-Unfortunately following restrictions apply if you read tables with the ReadTable class:
-- Tables that should be read from may not have any floating point number (FLTP) type of column (as in the case of e.g. the VBAK table). 
-- The overall width of the columns to be extracted may not exceed 512 bytes. 
-- Some special tables like TCURR return false values.
+If the above-mentioned restrictions hinder your work, install the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system.
 
-If anyone of these cases occur, the table call will throw an exception. To deal with this problem, it is possible to install a Z-module in the SAP system, please see chapter  [Installing the Z-function module](../sap-customizing/table-restrictions).
+{: .box-warning }
+**Warning! Error while converting value '\*.0' of row 1530, column 3** <br>
+The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
+Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
-To enable an installed Z-module, e.g. Z_XTRACT_IS_TABLE, when using the ReadTable class, use the method
+#### Installing Z_THEO_READ_TABLE
 
-ReadTable.SetCustomFunctionName("Z_XTRACT_IS_TABLE"). 
+Contact [Theobald Support](mailto:support@theobald-software.com) to receive the *Z_THEO_READ_TABLE* transport for your for SAP system.<br>
+Once *Z_THEO_READ_TABLE* is installed, you can activate the module by entering its name in the LINQ Table window.<br>
+![LINQToERP-Tables-004](/img/content/LINQToERP-Tables-004.png){:class="img-responsive" width="800px" }
 
-links
-
-Online Help: [Installing the custom function module](../sap-customizing/table-restrictions)
-
-KnowledgeBase: [Transferring data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-readtable-class)
-
-KnowledgeBase: [Get meta data of a table](https://kb.theobald-software.com/erpconnect-samples/get-meta-data-of-a-table)
-
- 
+****
+#### Related Links
+- [Transferring data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-readtable-class)
+- [Get meta data of a table](https://kb.theobald-software.com/erpconnect-samples/get-meta-data-of-a-table)
+- [Get CostCenter hierarchies](https://kb.theobald-software.com/erpconnect-samples/get-costcenter-hierarchies)

@@ -21,6 +21,7 @@ For general articles on ERPConnect, FAQs and troubleshooting, see [ERPConnect - 
 
 - [Call a BAPI- BAPI_EMPLOYEE_GETDATA](https://kb.theobald-software.com/erpconnect-samples/call-a-bapi-bapi_employee_getdata)
 - [Change Batch value of an Outbound delivery](https://kb.theobald-software.com/erpconnect-samples/change-batch-value-of-an-outbound-delivery)
+- [Change Production Order](https://kb.theobald-software.com/erpconnect-samples/change-production-order)
 - [Create Equipment](https://kb.theobald-software.com/erpconnect-samples/create-equipment)
 - [Create Functional Location](https://kb.theobald-software.com/erpconnect-samples/create-functional-location)
 - [Create New Customers using Batch Input](https://kb.theobald-software.com/erpconnect-samples/create-new-customers-using-batch-input)
@@ -28,6 +29,7 @@ For general articles on ERPConnect, FAQs and troubleshooting, see [ERPConnect - 
 - [ERPConnect in a web application- Creating a Purchase Order via BAPI](https://kb.theobald-software.com/erpconnect-samples/erpconnect-in-a-web-application-creating-a-purchase-order-via-bapi)
 - [Get Requisition Detail by using BAPI_REQUISITION_GETDETAIL](https://kb.theobald-software.com/erpconnect-samples/get-requisition-detail-by-using-bapi_requisition_getdetail)
 - [Getting an equipment list by using BAPI EQUI GETLIST / Using Select Ranges](https://kb.theobald-software.com/erpconnect-samples/getting-an-equipment-list-by-using-bapi-equi-getlist--using-select-ranges)
+- [Obtain details to a given personal number](https://kb.theobald-software.com/erpconnect-samples/obtain-details-to-a-given-personal-number)
 - [Post Goods Movement](https://kb.theobald-software.com/erpconnect-samples/post-goods-movement)
 - [Reading material BOM](https://kb.theobald-software.com/erpconnect-samples/reading-material-bom)
 - [Read/Write material master data](https://kb.theobald-software.com/erpconnect-samples/readwrite-material-master-data)
