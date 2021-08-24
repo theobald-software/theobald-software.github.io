@@ -11,17 +11,33 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=executing-bw-queries
 ---
 
-**The sample code is located in the ERPConnect installation directory in the BWQuery directory** 
+This section shows a sample application that executes a BW Query using ERPConnect.
 
-The following example shows a query being executed in .NET.
+### About the Sample Query
+This example uses a BW query *ZSIMPLEQUERY* that is based on the cube *0D_DECU*. <br>
+The following screenshot shows the query in the designer. <br>
+![BW-001](/img/content/BW-001.png){:class="img-responsive" }
 
-First a BWCube object is built with the help of the CreateCube function. Its name is made up of the cube name and query name.
+{: .box-note }
+**Note**: To allow external access to a BW Query the checkbox **Allow external access** has to be set to active in the preferences for the query.
 
-The cube object offers a collection for all of contained dimensions (Dimensions) and key figures (Measures). The attribute SelectForFlatMDX defines whether or not each component should be contained in the query output. It is set to true in our example. Please note that the denomination of the key figures via the query generation in the designer does not follow from the original technical name, so the key figures in our example here are addressed by the ordinal number, not the name.
+The dimensions *Material* and *Sold-to party* as well as the key figures *Billed Quantity* and *Costs* are drawn into the query output. <br>
+The dimension has a variable called *MAT01*, which allows a limitation to the material number.
 
-To fill the variables with values, they are addressed through the variables collection. There are always range tables behind each variable, as previously discussed in the SAP query chapter.
+### Executing the Sample Query
+1. Open a client connection to the R/3 system using the *R3Connection* class.
+2. Use the *CreateCube* function to create a BWCube object. 
+Its name is made up of the cube name and query name.
+3. The cube object offers a collection for all contained dimensions (Dimensions) and key figures (Measures). 
+If the attribute *SelectForFlatMDX* is set to true, the component is added to the query output. <br>
+Add the dimensions *Material* and *Sold-to party* and the key figures *Billed Quantity* and *Costs* to the query output.
+4. To fill the variables with values, address them via the variables collection. 
+There are range tables behind each variable.
+5. Execute the BW query with *Execute*. The output is a table of the *DataTable* type. 
 
-The BW query can be executed via Execute() and outputs a table of the DataTable type. The screenshot of our example shows the query output in the grid.
+{: .box-note }
+**Note**: The denomination of the key figures via the query generation in the designer does not conform to the original 
+technical name. That means key figures are addressed by the ordinal number, not the name.
 
 
 <details>
@@ -29,31 +45,23 @@ The BW query can be executed via Execute() and outputs a table of the DataTable 
 {% highlight csharp %}
 private void Go_Click(object sender, System.EventArgs e)
        {
-           using (R3Connection con = new R3Connection())
-           {
-               con.UserName = "erpconnect";
-               con.Password = "pass";
-               con.Language = "DE";
-               con.Client = "800";
-               con.Host = "sapserver";
-               con.SystemNumber = 11;
+           R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+           con.Open(false);
  
-               con.Open(false);
+           BWCube query = con.CreateBWCube("0D_DECU/ZSIMPLEQUERY");
+           query.Dimensions["0D_MATERIAL"].SelectForFlatMDX = true;
+           query.Dimensions["0D_SOLD_TO"].SelectForFlatMDX = true;
+           query.Measures[0].SelectForFlatMDX = true;
+           query.Measures[1].SelectForFlatMDX = true;
  
-               BWCube query = con.CreateBWCube("0D_DECU/ZSIMPLEQUERY");
-               query.Dimensions["0D_MATERIAL"].SelectForFlatMDX = true;
-               query.Dimensions["0D_SOLD_TO"].SelectForFlatMDX = true;
-               query.Measures[0].SelectForFlatMDX = true;
-               query.Measures[1].SelectForFlatMDX = true;
+           query.Variables["MAT01"].SingleRange.LowValue = this.txtMatNr.Text;
  
-               query.Variables["MAT01"].SingleRange.LowValue = this.txtMatNr.Text;
- 
-               this.dataGrid1.DataSource = query.Execute();
-           }
+           this.dataGrid1.DataSource = query.Execute();
+           
        }
 {% endhighlight %}
 </details>
-
+<!---
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -85,7 +93,9 @@ Private Sub Go_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 End Sub
 {% endhighlight %}
 </details>
+-->
 
+The following screenshot shows the query output in the grid.<br>
 ![BW-002](/img/content/BW-002.png){:class="img-responsive" width="600px" }
 
 ****
