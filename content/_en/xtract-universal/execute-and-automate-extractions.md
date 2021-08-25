@@ -34,6 +34,7 @@ Extractions are typically triggered interactively when a user requires new or up
 In these scenarios, execution of an extraction is typically triggered by one of Xtract Universal's plugins:
 - [Alteryx](./destinations/alteryx)
 - [Power BI Connector](./destinations/Power-BI-Connector)
+- [SQL Server Reporting Services](./destinations/server-report-services)
 
 Or directly by the target environment:
 - [QlikSense & QlikView](./destinations/qliksense-qlikview)

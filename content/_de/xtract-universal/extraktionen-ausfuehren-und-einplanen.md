@@ -33,6 +33,7 @@ Extraktionen werden typischerweise interaktiv ausgelöst, wenn ein Benutzer neue
 In diesen Szenarien wird die Ausführung einer Extraktion typischerweise durch eines der Plugins von Xtract Universal ausgelöst:
 - [Alteryx](./destinationen/alteryx-de)
 - [Power BI Connector](./destinationen/Power-BI-Connector)
+- [SQL Server Reporting Services](./destinationen/server-report-services)
 
 Oder direkt über die Zielumgebung:
 - [QlikSense & QlikView](./destinationen/qlik)
