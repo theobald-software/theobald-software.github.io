@@ -27,18 +27,20 @@ Benötigt werden die beiden Spalten *MATNR* (Materialnummer) und *MAKTX* (Materi
 <details>
 <summary>[Klicken Sie hier, um das C# Beispiel zu öffnen.]</summary>
 {% highlight csharp %}
-using System; 
-using ERPConnect; 
-using ERPConnect.Utils; 
+using System;
+using ERPConnect;
 using System.Data; 
     
 class Class1
 { 
    static void Main(string[] args) 
    { 
-        R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-        con.Open(false);
-        ReadTable table = new ReadTable(con); 
+        ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+        ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License.
+
+        con.Open();  //Open the connection to SAP.
+
+        ERPConnect.Utils.ReadTable table = new ERPConnect.Utils.ReadTable(con);
         table.AddField("MATNR"); 
         table.AddField("MAKTX"); 
         table:WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
@@ -108,7 +110,7 @@ End Module
 -->
 Der folgende Screenshot zeigt die Konsolenausgabe des Beispielprogramms. 
 
-![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive"}
+![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive"  }
 
 
 ### Einschränkungen beim Tabellenzugriff 

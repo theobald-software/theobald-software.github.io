@@ -18,6 +18,5 @@ Besides the standard classes for the RFC server and client functions, there are 
 - The [*ReadTable*](./special-classes/reading-sap-tables-directly-with-readtable) class reads data directly from SAP tables.
 - The [*ABAPCode*](./special-classes/abap-code) class enables the execution of ABAP code in your application.
 - The [*Transaction*](./special-classes/managing-and-executing-transactions-the-class-transaction) class manages and executes transactions.
-- The [*BatchReturn*](./special-classes/batch-input-background-processing) class enables using batch input in background processing.
  
 These special classes encapsulate recurrent tasks and are all located in the namespace *ERPConnect.Utils*. 

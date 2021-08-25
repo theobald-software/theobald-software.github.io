@@ -26,18 +26,20 @@ For this the columns *MATNR* (material number) and *MAKTX* (material text) are n
 <details>
 <summary>Click to open C# example.</summary>
 {% highlight csharp %}
-using System; 
-using ERPConnect; 
-using ERPConnect.Utils; 
+using System;
+using ERPConnect;
 using System.Data; 
     
 class Class1
 { 
    static void Main(string[] args) 
    { 
-        R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-        con.Open(false);
-        ReadTable table = new ReadTable(con); 
+        ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+        ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License.
+
+        con.Open();  //Open the connection to SAP.
+
+        ERPConnect.Utils.ReadTable table = new ERPConnect.Utils.ReadTable(con);
         table.AddField("MATNR"); 
         table.AddField("MAKTX"); 
         table:WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
@@ -109,7 +111,7 @@ End Module
 -->
 The screenshot below shows the output of the sample program. 
 
-![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive" width="800px" }
+![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive" }
 
 ### Table Restrictions
 When extracting tables from older SAP releases you may encounter several restrictions when using the SAP standard function module (RFC_READ_TABLE):
