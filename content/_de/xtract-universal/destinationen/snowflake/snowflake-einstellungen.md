@@ -96,7 +96,7 @@ Dafür können Sie die vordefinierten SQL-Vorlagen der folgenden Phasen verwende
 - *Finalization*
 
 
-##### **Skript-Ausdrücke**
+<!---##### **Skript-Ausdrücke**
 
 Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/script-ausdruecke) für die Custom-SQL-Befehle verwenden.
 
@@ -121,6 +121,6 @@ Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-uni
 </details>
 
 {:.box-tip}
-**Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.
+**Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.-->
 
 {% include _content/de/xu-specific/destinationen/general/transaction-style.md %}
