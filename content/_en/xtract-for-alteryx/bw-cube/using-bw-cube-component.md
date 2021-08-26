@@ -53,7 +53,7 @@ The following directories correspond to dimensions and often contain additional 
 When filters are applied, a filter symbol appears in the metadata structure.
 
 {: .box-note }
-**Note:** BW queries often have defined variables to create filter options. To edit variables, see [Query Variables](./variables).
+**Note:** BW queries often have defined variables to create filter options. To edit variables, see [Variables](./bw-cube-variables).
 
 ****
 #### Related Links

@@ -30,8 +30,8 @@ The window "Edit Runtime Parameters" opens.<br>
 
 Assign the runtime parameters to variables or dimension filters.
 
-1. To use the runtime parameters as variables, click **[Edit Variables]** in the main window of the component. The window "Edit variables..." opens, see [Variables](./variables).<br> 
-To use the runtime parameters as dimension filters, right-click a dimension in the main window of the component, then click **Edit Filters**. The window "Member Filter" opens, see [Setting a Dimension Filter](./bw-cube-extraction-define#setting-a-dimension-filter).<br> 
+1. To use the runtime parameters as variables, click **[Edit Variables]** in the main window of the component. The window "Edit variables..." opens, see [Variables](./bw-cube-variables).<br> 
+To use the runtime parameters as dimension filters, right-click a dimension in the main window of the component, then click **Edit Filters**. The window "Member Filter" opens, see [Setting a Dimension Filter](./using-bw-cube-component#setting-a-dimension-filter).<br> 
 2. If there are runtime parameters, a parameter icon is displayed next to the input fields (4). <br>
 Clicking the icons switches the between entering actual input values and entering parameters.<br>
 ![Selection With Parameters](/img/content/bwcube-parameters.png){:class="img-responsive"}
