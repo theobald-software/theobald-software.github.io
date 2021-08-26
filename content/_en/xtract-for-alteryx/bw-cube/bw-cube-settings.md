@@ -1,21 +1,17 @@
 ---
-ref: xfa-bw-cube-03
+ref: xfa-bw-cube-04
 layout: page
 title: Extraction Settings
 description: BW Cube Settings
 product: xtract-for-alteryx
 parent: bw-cube
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 ---
 
-### To Open Extraction Settings
-
-1. In the main window of the component click **[Extraction Settings]**. The window “Cube Settings” opens.
+Click the button **[Extraction Settings]** in the main window of the component to open the “Cube Settings” window.
 ![XU_BWCube_Settings](/img/content/XU_BWCube_Settings1.png){:class="img-responsive"}
-2. Change the settings, if needed.
-3. Click **[OK]** to confirm.
 
 ### Extraction Settings
 

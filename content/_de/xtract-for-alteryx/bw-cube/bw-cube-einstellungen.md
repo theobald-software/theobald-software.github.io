@@ -1,12 +1,12 @@
 ---
-ref: xfa-bw-cube-03
+ref: xfa-bw-cube-04
 layout: page
 title: Einstellungen
 description: Einstellungen
 product: xtract-for-alteryx
 parent: bw-cube
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 ---
 
