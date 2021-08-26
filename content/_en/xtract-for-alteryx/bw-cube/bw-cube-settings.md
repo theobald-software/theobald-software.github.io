@@ -41,7 +41,3 @@ Automatic slicing means that a loop is executed for each single value of the cho
 
 **Automatic Slicing Dimension** allows the extraction of a large amount of data (millions of records) from BW.
 
-### Legacy settings
-
-**Description for Columns (deprecated)** <br>
-If this option is active, the key figure's description will be used for the column name, instead of the technical name. 
