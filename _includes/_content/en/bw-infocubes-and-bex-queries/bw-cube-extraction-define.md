@@ -1,7 +1,7 @@
 
 The following section shows how to use the BW Cube Component. <br>
 
-The BW Cube component can be used to extract data from BW InfoProviders (e.g., Cubes) directly or from BW Queries. The BW Queries, in this case, can be based on all possible InfoProviders.
+The BW Cube component can be used to extract MDC or BICS data from BW InfoProviders (e.g., Cubes) directly or from BW Queries. The BW Queries can be based on all possible InfoProviders.
 A common approach for this the extraction is to build the query that meets the business requirements.
 ![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
 
