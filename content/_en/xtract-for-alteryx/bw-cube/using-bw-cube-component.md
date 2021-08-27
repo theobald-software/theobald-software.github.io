@@ -11,8 +11,8 @@ lang: en_GB
 ---
 The following section shows how to use the BW Cube Component. <br>
 
-The BW Cube component can be used to extract data from BW InfoProviders (e.g., Cubes) directly or from BW Queries. The BW Queries, in this case, can be based on all possible InfoProviders.
-A common approach for this the extraction is to build the query that meets the business requirements.
+The BW Cube component can be used to extract MDX or BICS data from BW InfoProviders (e.g., Cubes) directly or from BW Queries.
+A common approach is to build and extract a query that meets your business requirements.
 
 ### Look up a BW Cube or Query
 1. In the main window of the component click the **[Search]** button (magnifying glass symbol). The window “Cube and Query Lookup” opens.
