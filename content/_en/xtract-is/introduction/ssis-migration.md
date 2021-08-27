@@ -24,9 +24,12 @@ Keep in mind the dependency of Visual Studio/SSDT and SSIS version.
 ### Executing XtractISConversionPreparer.exe
 The XtractIS Conversion Preparer is a tool that prepares SSIS packages (containing Xtract IS components) created for older versions of SSIS for migration to newer versions of SSIS.
 
+{: .box-note }
+**Note:** The password encryption of the SSIS packages set by the [ProtectionLevel property](https://docs.microsoft.com/en-us/sql/integration-services/security/access-control-for-sensitive-data-in-packages?view=sql-server-ver15#set_protection) 
+must be deactivated or changed for the conversion of the SSIS packages.
 
 {: .box-note }
-**Note:** Only SSIS packages created with SSIS 2012 must be converted using XtractIS Conversion Preparer located in: `C:\Program Files\XtractIS\XtractISConversionPreparer.exe`. 
+**Note:** Only SSIS packages created with SSIS 2012 must be converted using XtractIS Conversion Preparer located in: <br>`C:\Program Files\XtractIS\XtractISConversionPreparer.exe`. 
 
 
 For any other newer SSIS packages adjust the "Deployment Target Version" in project properties, see below.<br>
@@ -44,14 +47,10 @@ If there is a package in the debug folder, it is automatically be included.
 4. Click **[Prepare]** to start the conversion process. <br>
 After opening the converted package in Visual Studio, depending on the version, the Visual Studio Conversion Wizard launches and converts the package to the format of the selected Visual Studio version.
 
-{: .box-tip }
-**Tip:** If an error message appears after converting the SSIS package with the XtractIS Conversion Preparer, you may have to deactivate SSIS package protection first before running the XtractIS Conversion Preparer.<br>
-
 {: .box-warning }
 **Warning! Package does not run successfully**<br> 
-When opening the converted SSIS packages in Visual Studio the target server version must be changed accordingly. Make sure to save by clicking **[Save the SSIS package]**.
-
-Example: If you selected 'SSIS 2016' in Xtract IS Conversion Preparer, change the target server version to 'SQL Server 2016'. 
+When opening the converted SSIS packages in Visual Studio the target server version must be changed accordingly e.g., if you select **SSIS 2016** in Xtract IS Conversion Preparer, the target server version must be **SQL Server 2016**. 
+Make sure to save by clicking **[Save the SSIS package]**.<br>
 
 
 ### Migration from SSIS 2014/2016 to SSIS 2019

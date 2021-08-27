@@ -22,12 +22,13 @@ Beachten Sie in diesem Zusammenhang auch das Zusammenspiel von Visual Studio/SSD
 3.  Installieren Sie die aktuelle Xtract IS for Azure Version.
 
 ### Ausführen der XtractISConversionPreparer.exe
-Der XtractIS Conversion Preparer ist ein Tool, das SSIS-Pakete (inkl. Xtract IS for Azure-Komponente), die für ältere Versionen von SSIS erstellt wurden, für die Migration auf neuere Versionen von SSIS vorbereitet. 
-
+Der XtractIS Conversion Preparer ist ein Tool, das SSIS-Pakete (inkl. Xtract IS-Komponente), die für ältere Versionen von SSIS erstellt wurden, für die Migration auf neuere Versionen von SSIS vorbereitet. 
 
 {: .box-note }
-**Hinweis:** Nur SSIS-Pakete, die mit SSIS 2012 erstellt wurden, müssen mit dem XtractIS Conversion Preparer konvertiert werden.  Der XtractIS Conversion Preparer befindet sich im Verzeichnis `C:\Program Files\XtractIS\XtractISConversionPreparer.exe`. 
+**Hinweis:** Die Passwortverschlüsselung der SSIS-Pakete muss für die Konvertierung der SSIS-Pakete über die Eigenschaft [ProtectionLevel](https://docs.microsoft.com/de-de/sql/integration-services/security/access-control-for-sensitive-data-in-packages?view=sql-server-ver15#set_protection) deaktiviert oder angepasst werden.
 
+{: .box-note }
+**Hinweis:** Nur SSIS-Pakete, die mit SSIS 2012 erstellt wurden, müssen mit dem XtractIS Conversion Preparer konvertiert werden.  Der XtractIS Conversion Preparer befindet sich im Verzeichnis <br>`C:\Program Files\XtractIS\XtractISConversionPreparer.exe`. 
 
 Für alle anderen neueren SSIS-Pakete passen Sie die "Deployment Target Version" (s.u.) in den Projekteigenschaften an. <br>
 
@@ -44,18 +45,12 @@ Wenn sich ein Paket im Debug-Ordner befindet, wird es automatisch eingebunden.
 Nach dem Öffnen des konvertierten Pakets in Visual Studio wird, je nach Version, 
 der Visual Studio-Konvertierungsassistent (Conversion Wizard) gestartet und konvertiert das Paket in das Format der ausgewählten Visual Studio Version.
 
-{: .box-tip }
-**Tipp:** Wenn nach der Konvertierung des SSIS-Pakets mit dem XtractIS Conversion Preparer eine Fehlermeldung erscheint, 
-müssen Sie möglicherweise den SSIS-Paketschutz zuerst deaktivieren, bevor Sie den XtractIS Conversion Preparer ausführen können.<br>
 
 {: .box-warning }
 **Warnung! Paket läuft nicht erfolgreich durch**<br> 
 Beim Öffnen der konvertierten SSIS-Pakete in Visual Studio muss die Version des Zielservers entsprechend geändert werden.
 Klicken auf **[Save the SSIS package]**, um dies sicherzustellen.
-
-
-Beispiel: Wenn Sie im XtractIS Conversion Preparer 'SSIS 2016' ausgewählt haben, ändern Sie die Version des Zielservers zu 'SQL Server 2016'. 
-
+Beispiel: Wenn Sie im XtractIS Conversion Preparer **SSIS 2016** ausgewählt haben, ändern Sie die Version des Zielservers zu **SQL Server 2016**. 
 
 ### Migration von SSIS 2014/2016 nach SSIS 2019
 Bei VS/SSDT 2015 sowie 2019 können Sie die Zielversion des SQL Servers (Deployment Target Version) in den Projekteigenschaften auswählen.
