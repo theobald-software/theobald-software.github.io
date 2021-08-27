@@ -13,7 +13,7 @@ Verwenden Sie Laufzeitparameter, um Dimensionsfilter und Variablen dynamisch zur
 
 ### Laufzeitparameter erstellen 
 
-1. Um Laufzeitparameter anzulegen und zu bearbeiten, klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameter**. <br/>
+1. Um Laufzeitparameter anzulegen und zu bearbeiten, klicken Sie im Hauptfenster der Komponente auf **[Edit Runtime Parameter]**. <br/>
 Das Fenster "Edit Runtime Parameters" öffnet sich.<br> 
 ![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
 2. Klicken Sie auf **[Add]** (1), um Parameter zu definieren, die als Platzhalter für die Datenfilter verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>

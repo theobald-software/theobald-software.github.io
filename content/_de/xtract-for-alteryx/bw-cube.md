@@ -43,7 +43,7 @@ Im Unterabschnitt **Preview**  wird der Inhalt des ausgewählten Querys oder BW 
 - **[Load live preview]** lädt eine Echtzeitvorschau einer Query oder eines BW Cubes / InfoProviders ohne eine Extraktion auszuführen.
 - **[Show MDX]** zeigt das für die Selektion generierte MDX-Statement, das zur Laufzeit auf dem BW-System ausgeführt wird.Wenn der Zugang zum BW-System verfügbar ist, können Sie zusätzlich die Transaktion *MDXTEST* verwenden, um das MDX-Statement zu verwenden.
 - **[Edit Variables]** ermöglicht die Definition der [Variablen](./bw-cube/bw-cube-variablen). 
-
+- **[Edit Runtime Parameters]** ermöglicht die Definition von [Laufzeitparametern](./bw-cube/edit-runtime-parameters). 
 
 Weitere Informationen zum Arbeiten mit der BW Cube Komponente finden Sie in den folgenden Unterabschnitten.
 
