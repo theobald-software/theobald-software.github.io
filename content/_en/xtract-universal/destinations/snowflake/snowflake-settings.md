@@ -67,7 +67,7 @@ See section [merging data](./merging-data).
 
 ### Custom SQL
 
-Custom SQL option allows creating user-defined SQL or script expressions. Existing SQL commands can 
+Custom SQL option allows creating user-defined SQL input. Existing SQL commands can 
 be used as templates:
 
 1. Within subsection e.g., **Preparation** select the **Custom SQL** (1) option from the drop-down list.
@@ -79,10 +79,10 @@ be used as templates:
 5. Click **[Copy]** to copy the statement to the clipboard.
 6. Click **[OK]** to confirm.
 
-Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-custom-sql) for details on predefined expressions.
+<!---Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-custom-sql) for details on predefined expressions.
 
 {:.box-note}
-**Note:** The custom SQL code is used for SQL Server destinations. A syntactic adaptation of the code is necessary to use the custom SQL code for other database destinations.
+**Note:** The custom SQL code is used for SQL Server destinations. A syntactic adaptation of the code is necessary to use the custom SQL code for other database destinations.-->
 
 ##### **Templates**
 
@@ -93,8 +93,10 @@ To do so, use the SQL templates provided in the following phases:
 - *Row Processing (e.g., Insert or Merge)*  
 - *Finalization*
 
+{:.box-note}
+**Note:** For more information on custom SQL statements, see [Custom SQL](./snowflake-custom-sql).
 
-##### **Script Expressions**
+<!---##### **Script Expressions**
 
 You can use [script expressions](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/script-expressions) for the Custom SQL commands.
 
@@ -120,7 +122,7 @@ You can use [script expressions](https://help.theobald-software.com/en/xtract-un
 
 
 {:.box-tip}
-**Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.
+**Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.-->
 
 
 {% include _content/en/xu-specific/destinations/general/transaction-style.md %}

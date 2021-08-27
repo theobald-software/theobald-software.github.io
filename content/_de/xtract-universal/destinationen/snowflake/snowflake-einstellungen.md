@@ -68,7 +68,7 @@ Mehr Details im Abschnitt [Daten zusammenführen (mergen)](./daten-mergen).
 
 ### Custom SQL 
 
-Die Option Custom SQL ermöglicht die Erstellung benutzerdefinierter SQL- oder Skriptausdrücke. Vorhandene SQL-Befehle können 
+Die Option Custom SQL ermöglicht die Erstellung benutzerdefinierter SQL-Anweisungen. Vorhandene SQL-Befehle können 
 als Vorlagen verwendet werden:
 
 1. Wählen Sie im Unterabschnitt z.B. **Preparation** die Option **Custom SQL** (1) aus der Dropdown-Liste.
@@ -80,11 +80,11 @@ als Vorlagen verwendet werden:
 5. Klicken Sie auf **[Copy]** um die Anweisung in den Zwischenspeicher zu kopieren.
 6. Klicken Sie zur Bestätigung auf **[OK]**.
 
-Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](https://help.theobald-software.com/de/xtract-universal/destinationen/microsoft-sql-server/sql-server-custom-sql).
+<!---Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](https://help.theobald-software.com/de/xtract-universal/destinationen/microsoft-sql-server/sql-server-custom-sql).
 
 {:.box-note}
 **Note:** Der benutzerdefinierte SQL-Code wird für SQL Server-Destinationen verwendet. 
-Um den benutzerdefinierten SQL-Code für andere Datenbank-Destinationen zu verwenden, ist eine syntaktische Anpassung des Codes erforderlich.
+Um den benutzerdefinierten SQL-Code für andere Datenbank-Destinationen zu verwenden, ist eine syntaktische Anpassung des Codes erforderlich.-->
 
 ##### **Vorlagen**
 
@@ -95,8 +95,10 @@ Dafür können Sie die vordefinierten SQL-Vorlagen der folgenden Phasen verwende
 - *Row Processing (z.B. Insert oder Merge)* und 
 - *Finalization*
 
+{:.box-note}
+**Hinweis:** Für nähere Informationen zu benutzerdefinierten SQL-Anweisungen, siehe [Custom SQL](./snowflake-custom-sql).
 
-##### **Skript-Ausdrücke**
+<!---##### **Skript-Ausdrücke**
 
 Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/script-ausdruecke) für die Custom-SQL-Befehle verwenden.
 
@@ -121,6 +123,6 @@ Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-uni
 </details>
 
 {:.box-tip}
-**Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.
+**Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.-->
 
 {% include _content/de/xu-specific/destinationen/general/transaction-style.md %}
