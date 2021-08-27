@@ -79,10 +79,10 @@ be used as templates:
 5. Click **[Copy]** to copy the statement to the clipboard.
 6. Click **[OK]** to confirm.
 
-Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-custom-sql) for details on predefined expressions.
+<!---Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-custom-sql) for details on predefined expressions.
 
 {:.box-note}
-**Note:** The custom SQL code is used for SQL Server destinations. A syntactic adaptation of the code is necessary to use the custom SQL code for other database destinations.
+**Note:** The custom SQL code is used for SQL Server destinations. A syntactic adaptation of the code is necessary to use the custom SQL code for other database destinations.-->
 
 ##### **Templates**
 
@@ -94,7 +94,7 @@ To do so, use the SQL templates provided in the following phases:
 - *Finalization*
 
 
-##### **Script Expressions**
+<!---##### **Script Expressions**
 
 You can use [script expressions](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/script-expressions) for the Custom SQL commands.
 
@@ -120,7 +120,7 @@ You can use [script expressions](https://help.theobald-software.com/en/xtract-un
 
 
 {:.box-tip}
-**Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.
+**Tip:** *ExistsTable(tableName)* command allows to verify the existence of a table in a database.-->
 
 
 {% include _content/en/xu-specific/destinations/general/transaction-style.md %}
