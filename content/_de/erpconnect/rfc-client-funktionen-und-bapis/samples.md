@@ -11,10 +11,8 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=kundeninfos-abrufen-mit-sd_rfc_customer_get
 ---
 
-Dieser Abschnitt beinhaltet eine Liste verfügbarerer Beispiele für die BAPI/Funktionsbaustein-Klassen.
-
-Für eine komplette Liste aller verfügbaren Beispiele, siehe [ERPConnect - Samples](https://kb.theobald-software.com/erpconnect-samples).<br>
-Für allgemeine Artikel über ERPConnect, FAQs und Fehlerbehebung, siehe [ERPConnect - General](https://kb.theobald-software.com/erpconnect-general).
+Dieser Abschnitt beinhaltet eine Liste verfügbarerer Beispiele für die BAPI/Funktionsbaustein-Klassen.<br>
+Für eine komplette Liste aller verfügbaren Beispiele, siehe [ERPConnect - Samples](https://kb.theobald-software.com/erpconnect-samples).
 
 ### Beispiele für BAPI/Function Module
 

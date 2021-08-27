@@ -22,9 +22,9 @@ Every BAPI/Function Module provides import and export parameters.
 These parameters are used to pass or get scalar values.
 An exchange of tables is also possible. 
 
-The figure below shows the principle of the object hierarchy that is provided by ERPConnect to manage the exchange of imports, exports and table parameters.
+The figure below shows the object hierarchy that is provided by ERPConnect to manage the exchange of imports, exports and table parameters.
 
-![clientarchitecture](/img/content/erpconnect-client-architecture.png){:class="img-responsive"  width="600"}  
+![clientarchitecture](/img/content/erpconnect-client-architecture.png){:class="img-responsive"  width="550"}  
 
 ****
 More information on working with the ERPConnect Function classes is provided in the following sections:

@@ -13,7 +13,7 @@ progressstate: 5
 
 ---
 
-### Set Up an RFC Destination
+### Setting Up an RFC Destination
 
 To enable calls from an SAP system to a subsystem, the subsystem must be known to SAP.<br>
 This can be done with an RFC destination.
@@ -38,7 +38,7 @@ An example for a simple RFC server program can be found in section [RFC-Server](
 **Note**: If the RFC Destination is set to Unicode, the property *IsUnicode* of the RFCServer object must be set to *true*.
 
 
-### Set Up a Test Environment for IDocs 
+### Setting Up a Test Environment for IDocs 
 
 To receive test IDocs, you can set up a test environment in your SAP system.<br>
 Follow the steps below to set up a test environment that can send *MATMAS* IDocs for distributing material master data: 
@@ -58,7 +58,7 @@ The IDocs are created and sent to the specified port.
 Enter the logical system as shown in the figure below and run the program via **[F8]**.<br>
 ![IDoc-Test-Environment_003](/img/content/IDoc-Test-Environment_003.png){:class="img-responsive" width="800px"}
 
-### Set Up Receiving IDocs
+### Setting Up Receiving IDocs
 
 The following instructions show how to customize your SAP system for processing IDocs and creating sales orders.
 

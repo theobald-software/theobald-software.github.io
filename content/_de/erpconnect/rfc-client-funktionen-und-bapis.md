@@ -23,7 +23,7 @@ Ein Austausch von Tabellen ist ebenfalls möglich.
 
 Die nachfolgende Grafik zeigt den Klassenzusammenhang von ERPConnect.
 
-![ERPConnect-Client-Function-Architecture](/img/content/ERPConnect-Client-Function-Architecture.png){:class="img-responsive" width="500"}
+![ERPConnect-Client-Function-Architecture](/img/content/ERPConnect-Client-Function-Architecture.png){:class="img-responsive" width="550"}
 
 ****
 Weitere Informationen zum Arbeiten mit den ERPConnect Function-Klassen finden Sie in den folgenden Unterabschnitten:

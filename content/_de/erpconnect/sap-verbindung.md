@@ -29,4 +29,6 @@ Für weitere Informationen zu den RFC-Bibliotheken, siehe [SAP-Dokumentation - R
 **Hinweis:** Die Netweaver-RFC-Option unterstützt kein DeltQ und kein OHS.
 
 *****
+Weitere Informationen zur SAP-Verbindung finden Sie in den folgenden Unterabschnitten:
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
