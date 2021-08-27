@@ -68,7 +68,7 @@ Mehr Details im Abschnitt [Daten zusammenführen (mergen)](./daten-mergen).
 
 ### Custom SQL 
 
-Die Option Custom SQL ermöglicht die Erstellung benutzerdefinierter SQL- oder Skriptausdrücke. Vorhandene SQL-Befehle können 
+Die Option Custom SQL ermöglicht die Erstellung benutzerdefinierter SQL-Anweisungen. Vorhandene SQL-Befehle können 
 als Vorlagen verwendet werden:
 
 1. Wählen Sie im Unterabschnitt z.B. **Preparation** die Option **Custom SQL** (1) aus der Dropdown-Liste.
@@ -95,6 +95,8 @@ Dafür können Sie die vordefinierten SQL-Vorlagen der folgenden Phasen verwende
 - *Row Processing (z.B. Insert oder Merge)* und 
 - *Finalization*
 
+{:.box-note}
+**Hinweis:** Für nähere Informationen zu benutzerdefinierten SQL-Anweisungen, siehe [Custom SQL](./snowflake-custom-sql).
 
 <!---##### **Skript-Ausdrücke**
 

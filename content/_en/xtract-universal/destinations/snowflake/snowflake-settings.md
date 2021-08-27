@@ -67,7 +67,7 @@ See section [merging data](./merging-data).
 
 ### Custom SQL
 
-Custom SQL option allows creating user-defined SQL or script expressions. Existing SQL commands can 
+Custom SQL option allows creating user-defined SQL input. Existing SQL commands can 
 be used as templates:
 
 1. Within subsection e.g., **Preparation** select the **Custom SQL** (1) option from the drop-down list.
@@ -93,6 +93,8 @@ To do so, use the SQL templates provided in the following phases:
 - *Row Processing (e.g., Insert or Merge)*  
 - *Finalization*
 
+{:.box-note}
+**Note:** For more information on custom SQL statements, see [Custom SQL](./snowflake-custom-sql).
 
 <!---##### **Script Expressions**
 

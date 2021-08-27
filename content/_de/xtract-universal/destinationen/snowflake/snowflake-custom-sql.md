@@ -20,20 +20,20 @@ Im Fenster [Destination settings](./snowflake-einstellungen#destination-settings
 - Preparation 
 - Row Processing
 - Finalization
-4. Klicken Sie auf **[Edit SQL]** (4), das Fenster "Edit SQL" wird geöffnet.
+4. Klicken Sie auf **[Edit SQL]** (4). Das Fenster "Edit SQL" öffnet sich.
 
 ### Custom SQL Beispiel
 
 Im folgenden Beispiel wird die DataSource *0FI_AP_4* um eine Spalte mit dem benutzerdefinierten Laufzeitparameter *RUNTIMEPARAMETER* erweitert. <br>
-Das Füllen der neuen Spalte wird im Abschnitt **Finalisierung** dynamisch implementiert. 
+Das Füllen der neuen Spalte wird im Abschnitt **Finalisierung** der Destinationseinstellungen dynamisch implementiert. 
 
-1. Deselektieren Sie die Option *Error on Column Count Mismatch* im *XTRACT_UNIVERSAL* File Format.
+1. Deselektieren Sie die Option **Error on Column Count Mismatch** im *XTRACT_UNIVERSAL* File Format.
 ![File-Format-Option](/img/content/xu/snowflake/file-format-option.png){:class="img-responsive"}
-2. Legen Sie den Laufzeitparameter *RUNTIMEPARAMETER* über **Edit runtime parameter** (5) an.
+2. Legen Sie den Laufzeitparameter *RUNTIMEPARAMETER* über die Schaltfläche **Edit runtime parameter** (5) an.
 ![Edit-Runtime-Parameter](/img/content/xu/snowflake/edit-runtime-parameter.png){:class="img-responsive"}
-3. Hinterlegen Sie den Laufzeitparameter über **Edit** Selections (7).
+3. Hinterlegen Sie den Laufzeitparameter über die Schaltfläche **Edit** in der Spalte *Selections* (7).
 ![Edit-Selections](/img/content/xu/snowflake/edit-selections.png){:class="img-responsive"}
-4. Wählen Sie im Fenster "Destination Settings" im Abschnitt **Preparation** die Option *Custom SQL* und klicken Sie auf **Edit SQL**.
+4. Navigieren Sie zu den Destination Settings und wählen Sie im Abschnitt **Preparation** die Option *Custom SQL*. Klicken Sie auf **Edit SQL**.
 5. Wählen Sie im Dropdown-Menü die Option *Drop & Create* und klicken Sie auf **[Generate Statement]** (10). 
 ![Edit-Preparation-Statement](/img/content/xu/snowflake/edit-preparation-statement.png){:class="img-responsive"}
 6. Fügen Sie dem generierten Statement die folgende Zeile hinzu.
@@ -41,15 +41,16 @@ Das Füllen der neuen Spalte wird im Abschnitt **Finalisierung** dynamisch imple
 "RUNTIMEPARAMETER" VARCHAR(4),
 ```
 7. Bestätigen Sie mit **[OK]**.
-8. Im Abschnitt **Row Processing** werden die Spaltenwerte aus SAP in eine lokale CSV-Datei prozessiert. Dieses SQL-Statement wird daher auf dem Standard *Copy file to table* als SQL-Statement belassen. <br> Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *RUNTIMEPARAMETER* geschrieben.
-9. Im Abschnitt **Finalization** werden die `NULL` Werte mit folgenden SQL-Statement des Laufzeitparameters *RUNTIMEPARAMETER* der Extraktion befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben.
+8. Im Abschnitt **Row Processing** werden die Spaltenwerte aus SAP in eine lokale CSV-Datei prozessiert. 
+Daher wird dieses SQL-Statement auf dem Standard *Copy file to table* belassen. <br> Zu diesem Zeitpunkt werden keine Daten aus dem SAP-Quellsystem, sondern `NULL` Werte in die neu angelegte Spalte *RUNTIMEPARAMETER* geschrieben.
+9. Im Abschnitt **Finalization** werden die `NULL` Werte mit der folgenden SQL-Anweisung des Laufzeitparameters *RUNTIMEPARAMETER* befüllt und durch den T-SQL Befehl `UPDATE` in die SQL-Zieltabelle geschrieben.
 ![Edit-Finalization-Statement](/img/content/xu/snowflake/edit-finalization-statement.png){:class="img-responsive"}
 ```sql
 UPDATE "0FI_AP_4"
 SET RUNTIMEPARAMETER= '@RUNTIMEPARAMETER'
 WHERE RUNTIMEPARAMETER IS NULL;
 ```
-7. Führen Sie die Extraktion über den **Run** (11) aus und geben einen geeigneten Wert für den Laufzeitparameter (12) an.
+7. Führen Sie die Extraktion über **Run** (11) aus und geben Sie einen geeigneten Wert für den Laufzeitparameter (12) an.
 ![Run-Dialog](/img/content/xu/snowflake/run-extraction-dialog.png){:class="img-responsive"}
 
 ### Ergebnis überprüfen
@@ -60,4 +61,4 @@ WHERE RUNTIMEPARAMETER IS NULL;
 ***********
 #### Weiterführende Links
 - [Snowflake Identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#double-quoted-identifiers)
-- [Extraktionsparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#custom)
+- [Extraktionsparameter](../../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#custom)
