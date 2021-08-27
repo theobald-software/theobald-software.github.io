@@ -18,5 +18,6 @@ Apart from the client functionality that allows function modules or BAPIs to be 
 Transactional RFC functions are supported. 
 
 ****
+More information on working with RFC server functions is provided in the following sections:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

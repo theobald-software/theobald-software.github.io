@@ -18,7 +18,8 @@ Dieser Abschnitt zeigt eine Beispielanwendung, bei der mit ERPConnect ein BW Que
 Dieses Beispiel verwendet eine BW-Query *ZSIMPLEQUERY*, die auf dem Cube *0D_DECU* basiert. 
 Die folgende Abbildung zeigt die Query im Designer. <br>
 
-![BW-001](/img/content/BW-001.png){:class="img-responsive"}
+![BW-001](/img/content/BW-001.png){:class="img-responsive" }
+
 {: .box-note }
 **Hinweis**: Beachten Sie, dass in den Einstellungen der Query das Häkchen *Externen Zugriff zulassen* gesetzt sein muss.
 
@@ -33,7 +34,7 @@ Der Name setzt sich dabei aus dem Cubenamen und dem Querynamen zusammen.
 3. Das Cube-Objekt bietet eine Sammlung für alle enthaltenen Dimensionen (*Dimensions*) und für alle enthaltenen Kennzahlen (*Measures*). 
 Wenn die Eigenschaft *SelectForFlatMDX* auf true gesetzt ist, wird die jeweilige Komponente in die Egebnismenge aufgenommen. <br>
 Fügen Sie die Dimensionen *Material* und *Auftraggeber*, sowie die Kennzahlen *Fakturierte Menge* und *Kosten* der Ergebnismenge hinzu.
-4. Um die Variable mit Werten zu füllen, sprechen Sie sie über die Variables-Collection an. 
+4. Um die Variable mit Werten zu füllen, greifen Sie über die Variables-Collection auf sie zu. 
 Hinter einer Variable liegen immer Range-Tabellen.
 5. Führen Sie die BW-Query über *Execute* aus. Die BW-Query gibt eine Tabelle vom Typ *DataTable* zurück. 
 
@@ -43,7 +44,7 @@ technischen Namen entspricht. Die Kennzahlen werden daher über die Ordinalzahl 
 
 
 <details>
-<summary>[C#]</summary>
+<summary>[Klicken Sie hier, um das C# Beispiel zu öffnen.]</summary>
 {% highlight csharp %}
 private void Go_Click(object sender, System.EventArgs e)
        {

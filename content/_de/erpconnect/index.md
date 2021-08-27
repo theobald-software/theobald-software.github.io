@@ -41,7 +41,8 @@ Im Installationsumfang von ERPConnect sind folgende Tools enthalten:
 - [IDoc-Schema-Generator](./tools/idoc-schema-generator)
 - [*Function-Template-Generator*](./tools/function-template-generator.md) 
 
-Weitere Informationen zu den Funktionen von ERPConnect finden Sie in den folgenden Abschnitten:
 
 *****
+Weitere Informationen zu den Funktionen von ERPConnect finden Sie in den folgenden Abschnitten:
+
 {% include _content/table-of-contents.html parent="erpconnect" collection=site.de %}

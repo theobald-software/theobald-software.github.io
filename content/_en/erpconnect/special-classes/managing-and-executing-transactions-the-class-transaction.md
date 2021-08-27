@@ -16,16 +16,20 @@ When executing transactions in a background process, mass data can be processed 
 This technique is often used if no BAPI exists.
 
 ### How to use SAP Transactions 
- 
-The following sample application shows how to use the ERPConnect *Transaction* class to directly execute an SAP transaction.<br>
+
+The following sample application shows how to use the *Transaction* class to directly execute an SAP transaction.<br>
 In this application the user can enter a material number and the name of a plant. 
 By clicking a button, the SAP GUI is launched with the transaction **MMBE** (stock overview). 
 
 ![Call-Transaction-002](/img/content/Call-Transaction-002.png){:class="img-responsive" width="300px" }
 
+{: .box-tip }
+**Tip**: The installation package of ERPConnect includes the *Transaction-Recorder* tool. This tool records transactions 
+and implements them to code, see [Transaction-Recorder](../tools/transactionrecorder). 
+
 The code below shows how to add batch steps with the method *AddStep*. 
-It is important to set the *UseGui* property to true. 
-The SAP GUI will be launched by the method *Execute*.
+When connecting to SAP it is important to set the *UseGui* property to true. 
+The SAP GUI is launched using the method *Execute*.
 
 <details>
 <summary>Click to open C# example.</summary>
@@ -87,13 +91,10 @@ End Sub
 </details>
 -->
 
- 
 {: .box-note }
-**Note**: The installation package of ERPConnect includes the *Transaction-Recorder* tool. This tool records transactions 
-and implements them to code, see [Transaction-Recorder](../tools/transactionrecorder). 
+**Note**: If you only want to open the SAP GUI and execute a single transaction without adding several batch steps, simply set the property *TCode* and execute the transaction. 
 
 The screenshot below shows the sample program in action.
-If you only want to open the SAP GUI and execute a single transaction without adding several batch steps, set the property *TCode* and execute. 
 
 ![Call-Transaction-003](/img/content/Call-Transaction-003.png){:class="img-responsive"  }
 
@@ -101,13 +102,9 @@ If you only want to open the SAP GUI and execute a single transaction without ad
 ### Background Processing (Batch Input)
 
 The following sample shows how to create a purchase order using Batch Input techniques in background processing.
-The transaction for creating a purchase order is ME21.
+The transaction for creating a purchase order is **ME21**.
 
-{: .box-tip }
-**Tip**: You can use the *TransactionRecorder* tool to generate the C# or VB code for the transaction, see [Transaction-Recorder](../tools/transactionrecorder). 
-
-At the end of the code, the return messages of the Batch Input transaction are processed. 
-The code loops over the *Returns* collection to check the *BatchReturn* objects. 
+At the end the code loops over the *Returns* collection to check the *BatchReturn* objects that contain the return messages of the Batch Input transaction. 
 
 
 <details>

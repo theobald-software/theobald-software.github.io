@@ -41,7 +41,8 @@ The installation package of ERPConnect also includes the following tools:
 - [IDoc-Schema-Generator](./tools/idoc-schema-generator)
 - [*Function-Template-Generator*](./tools/function-template-generator.md) 
 
-More information on the functions of ERPConnect is provided in the following sections:
 
 *****
+More information on the functions of ERPConnect is provided in the following sections:
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

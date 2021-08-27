@@ -20,3 +20,8 @@ Besides the standard classes for the RFC server and client functions, there are 
 - The [*Transaction*](./special-classes/managing-and-executing-transactions-the-class-transaction) class manages and executes transactions.
  
 These special classes encapsulate recurrent tasks and are all located in the namespace *ERPConnect.Utils*. 
+
+****
+More information on working with the special classes is provided in the following sections:
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

@@ -20,5 +20,6 @@ bietet ERPConnect die Möglichkeit, eine Server-Funktion zu entwickeln.
 Funktionen des transaktionalen RFCs werden unterstützt.
 
 ****
+Weitere Informationen zum Arbeiten mit RFC-Server-Funktionen finden Sie in den folgenden Unterabschnitten:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

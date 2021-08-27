@@ -19,3 +19,8 @@ Innerhalb der ERPConnect-Komponente gibt es neben den Standardklassen für die R
 - Die [*Transaction*](./special-classes/managing-and-executing-transactions-the-class-transaction) Klasse steurt und führt Transaktionen aus.
 
 Diese Klassen enthalten wiederkehrende Aufgaben in der SAP-Schnittstellen-Entwicklung und sind im Namesraum *ERPConnect.Utils* verfügbar.
+
+****
+Weitere Informationen zum Arbeiten mit den Spezialllassen finden Sie in den folgenden Unterabschnitten:
+
+{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
