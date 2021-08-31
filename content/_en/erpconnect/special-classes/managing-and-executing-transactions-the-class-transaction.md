@@ -13,19 +13,19 @@ old_url: /ERPConnect-EN/default.aspx?pageid=managing-and-executing-transactions-
 
 This section shows how to use the *Transaction* class to execute SAP transactions in the foreground as well as in a background process (Batch Input).<br>
 When executing transactions in a background process, mass data can be processed and transferred to the SAP system. 
-This technique is often used if no BAPI exists.
+This technique is often used if no suitable BAPI exists.
 
 ### How to use SAP Transactions 
 
 The following sample application shows how to use the *Transaction* class to directly execute an SAP transaction.<br>
 In this application the user can enter a material number and the name of a plant. 
-By clicking a button, the SAP GUI is launched with the transaction **MMBE** (stock overview). 
+By clicking a button, the SAP GUI is launched and the transaction **MMBE** (stock overview) is executed to list the entered materials and plants. 
 
 ![Call-Transaction-002](/img/content/Call-Transaction-002.png){:class="img-responsive" width="300px" }
 
 {: .box-tip }
-**Tip**: The installation package of ERPConnect includes the *Transaction-Recorder* tool. This tool records transactions 
-and implements them to code, see [Transaction-Recorder](../tools/transactionrecorder). 
+**Tip**: The installation package of ERPConnect includes the *Transaction-Recorder* tool. 
+This tool records transactions and implements them to code, see [Transaction-Recorder](../tools/transactionrecorder). 
 
 The code below shows how to add batch steps with the method *AddStep*. 
 When connecting to SAP it is important to set the *UseGui* property to true. 
@@ -92,7 +92,7 @@ End Sub
 -->
 
 {: .box-note }
-**Note**: If you only want to open the SAP GUI and execute a single transaction without adding several batch steps, simply set the property *TCode* and execute the transaction. 
+**Note**: If you only want to execute a single transaction without adding several batch steps, simply set the property *TCode* and execute the transaction. 
 
 The screenshot below shows the sample program in action.
 

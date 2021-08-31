@@ -11,28 +11,26 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=transaktionen-aufrufen-und-steuern-die-klasse-transaction
 ---
 
-Mit der Klasse Transaction des ERPConnect-Toolkits haben Sie die Möglichkeit, eine Transaktion - sichtbar oder im Hintergrund - fernzusteuern.
-Dieses Verfahren heißt im SAP-Jargon Batch Input. 
-Die Hintergrundverarbeitung eignet sich dazu, Massendaten ins SAP zu übernehmen. 
-Insbesondere, wenn es kein BAPI für die gewünschte Tätigkeit gibt, kann Batch Input ein sinnvoller Weg für die Datenerfassung sein.
+Dieser Abschnitt zeigt, wie Sie die *Transaction*-Klasse verwenden, um SAP-Transaktionen sowohl direkt als auch als Hintergrundprozess (Batch Input) auszuführen.<br>
+Die Hintergrundverarbeitung eignet sich zur Verarbeitung und Sendung von Massendaten an Ihr SAP-System. 
+Dieses Technik wird häufig verwendet, wenn es für die Datenerfassung kein geeignetes BAPI gibt.
 
-Die andere Möglichkeit, die sich durch diese Technik bietet, ist der direkte Absprung aus Ihrem .Net-Programm heraus in eine SAP-Transaktion.
 
 ### SAP-Transaktionen aufrufen
-Das folgende Beispiel zeigt diese Anwendungsmöglichkeit.
-
-Artikelnummer und Werk werden eingetragen, der Knopf betätigt, 
-um danach den Bestand anzuzeigen.  
-
-
-Wir wollen dem Benutzer in einer Windows Form die Möglichkeit geben, eine Materialnummer und ein Werk zu erfassen. 
-Danach drückt er auf den Knopf, der SAP GUI öffnet sich und zeigt die Transaktion MMBE (Bestandsanzeige) genau für den eingegebenen Artikel im eingegebenen Werk. 
-
+Die folgende Beispielanwendung zeigt, wie Sie die *Transaction*-Klasse verwenden, um SAP-Transaktionen direkt aus Ihrem .NET-Programm heraus ausführen.<br>
+In dieser Anwendung kann der Benutzer eine Artikelnummer und den Namen eines Werks eingeben.
+Über eine Schaltfläche wird die SAP GUI gestartet und die Transaktion **MMBE** (Bestandsübersicht) für die eingegebenen Artikel und Werke ausgeführt.
 
 ![Call-Transaction-002](/img/content/Call-Transaction-002.png){:class="img-responsive"}
 
-Der folgende Beispielcode zeigt zunächst, wie die einzelnen Batch-Schritte mit Hilfe der Funktionen *AddStep*... gesetzt werden.
-Wichtig ist, dass die Eigenschaft *UseGui* auf true gesetzt wird. Der SAP GUI soll ja schließlich bei *Execute* aufgehen, um die Transaktion anzuzeigen. 
+{: .box-tip }
+**Tipp**: Im Installatiionspaket von ERPConnect ist das Tool *Transaction-Recorder* enthalten. 
+Das Tool zeichnet SAP-Transaktionen auf und erstellt automatisch einen entsprechenden VB- oder C#-Quellocde für die Transaktion, siehe [Transaction-Recorder](../tools/transactionrecorder).
+
+
+Der Beispielcode zeigt wie die einzelnen Batch-Schritte mit der Funktionen *AddStep* gesetzt werden.
+Wichtig ist, dass bei der Verbindung zu SAP die Eigenschaft *UseGui* auf true gesetzt wird. 
+Der SAP GUI wird über die Methode *Execute* gestartet. 
 
 <details>
 <summary>[C#]</summary>
@@ -96,7 +94,7 @@ End Sub
 
 
 {: .box-note }
-**Note**: Falls Sie nur in eine Zieltransaktion abspringen möchten, ohne Schritte automatisch zu erledigen, reicht es, die Eigenschaft *TCode* zu füllen und die Transaktion per *Execute* zu starten.  
+**Note**: Falls Sie nur in eine Zieltransaktion abspringen möchten, ohne Schritte automatisch zu erledigen, reicht es, die Eigenschaft *TCode* zu füllen und die Transaktion zu starten.  
 
 Der folgende Screenshot zeigt das Programm in Aktion. 
 
@@ -105,17 +103,12 @@ Der folgende Screenshot zeigt das Programm in Aktion.
 
 ### Batch Input Hintergrundverarbeitung
 
-Im letzten TeilAbschnitt haben wir einen Absprung in den SAP GUI entwickelt; 
-das nachfolgende Beispiel hingegen zeigt eine Verarbeitung, 
-die komplett im Hintergrund stattfinden soll, nämlich das Anlegen einer 
-Lieferanten-Bestellung mit der Transaktion ME21.
+Das folgende Beispiel zeigt, wie man als Hintergrundverarbeitung (Batch Input) eine Lieferanten-Bestellung erstellt.
+Die Transaktion zum Erstellen einer Lieferanten-Bestellung ist **ME21**.
 
-Dazu nutzen wir den TransactionRecorder, um gleich die wichtigsten Transaktionsschritte als VB- oder C#-Quellocde automatisch zu erstellen (siehe Abschnitt [TransactionRecorder](../tools/transactionrecorder)).
-
-Der Code kann nicht 1 zu 1 übernommen werden, sondern muss noch minimal angepasst werden. 
-Die angepassten Stellen sind im Folgenden markiert. 
-Am Ende des Codes sehen Sie auch, wie die Rückgabe-Nachrichten in Form von BatchReturn Objekten 
-über die Returns-Collection ausgewertet werden.
+ 
+Am Ende des Codes werden die *BatchReturn*-Objekte, die die Rückgabe-Nachrichten des Hintergrundprozesses beinhalten,
+über eine Schleife auf die Returns-Collection ausgewertet.
 
 <details>
 <summary>[C#]</summary>
