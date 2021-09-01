@@ -63,6 +63,4 @@ Check the existence of the new column *RUNTIMEPARAMETER* in the Snowflake Consol
 ***********
 #### Related Links
 - [Snowflake Identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#double-quoted-identifiers)
-- [Extraction Parameters](../../execute-and-automate-extractions/extraction-parameters#custom)
-- [Extraction Parameters](../../../execute-and-automate-extractions/extraction-parameters#custom)
 - [Extraction Parameters](../.././execute-and-automate-extractions/extraction-parameters#custom)
