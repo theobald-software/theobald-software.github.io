@@ -12,7 +12,7 @@ progressstate: 5
 ---
 ### Custom SQL Statement
 
-In the window [Destination settings](.//snowflake-settings#destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
+In the window [Destination settings](./snowflake-settings#destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 1. Select a particular extraction (1).
 2. Click **[Destination]** (2). The window "Destination Settings" opens.
@@ -64,3 +64,5 @@ Check the existence of the new column *RUNTIMEPARAMETER* in the Snowflake Consol
 #### Related Links
 - [Snowflake Identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#double-quoted-identifiers)
 - [Extraction Parameters](../../execute-and-automate-extractions/extraction-parameters#custom)
+- [Extraction Parameters](../../../execute-and-automate-extractions/extraction-parameters#custom)
+- [Extraction Parameters](../.././execute-and-automate-extractions/extraction-parameters#custom)
