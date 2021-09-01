@@ -1,7 +1,7 @@
 ---
 ref: ec-linq-to-sap-05
 layout: page
-title: Queries
+title: SAP Query
 description: Queries
 product: erpconnect
 parent: linq-to-sap

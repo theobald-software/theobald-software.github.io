@@ -28,16 +28,16 @@ Die Installation von Lizenzen wird im Abschnitt [Lizenz](./lizensierung) beschri
 
 {: .box-note }
 **Hinweis:** Um den LINQ Designer zu verwenden, führen Sie das *LINQToERPSetup* für Ihre VisualStudio Umgebung aus.
-Siehe [LINQ to SAP - Installation und Erste Schritte](./linq-to-sap/linq-to-sap-installation-und-erste-schritte) für mehr Informationen.
+Siehe [LINQ to SAP - Installation und Erste Schritte](../linq-to-sap/linq-to-sap-installation-und-erste-schritte) für mehr Informationen.
 
 ### Dateien des Programmverzeichnisses
 Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Program Files\ERPConnect`` abgelegt werden:
 |                                        |                                                                                                                                      |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | ERPConnect35.dll (*)                   | ERPConnect Assembly für .NET 3.5 SP1.                                                                                                |
-| ERPConnect45.dll (*)                   | ERPConnect Assembly für .NET 4.5.2 oder höher .                                                                                       |
+| ERPConnect45.dll (*)                   | ERPConnect Assembly für .NET 4.5.2 oder höher.                                                                                       |
 | ERPConnect35.xml<br>  ERPConnect45.xml | Doku-Dateien für Visual Studio.                                                                                                      |
-| TransactionRecorder.exe                | Dieses Tool erzeugt Programmcode für die Klasse Transaction, siehe [Batch Input Hintergrundverarbeitung](../spezialklassen/batch-input-hintergrundverarbeitung). |
+| TransactionRecorder.exe                | Dieses Tool erzeugt Programmcode für die Klasse Transaction, siehe [Batch Input Hintergrundverarbeitung](../spezialklassen/transaktionen-aufrufen-und-steuern-die-klasse-transaction). |
 | IdocSchemeGenerator.exe                | Dieses Tool erzeugt Schema-Dateien (.xsd) für das IDoc-Handling, siehe [IDocs als XML verarbeiten](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten).                                  |
 | FunctionTemplateGenerator.exe          | Dieses Tool erzeugt XML-Templates für RFCFunction-Objekthierarchie, siehe [Performance-Tuning durch XML-Templates](../rfc-client-funktionen-und-bapis/performance-tuning-durch-xml-templates).    |
 

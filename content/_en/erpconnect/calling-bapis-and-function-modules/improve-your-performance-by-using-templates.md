@@ -13,12 +13,22 @@ old_url: /ERPConnect-EN/default.aspx?pageid=improve-your-performance-by-using-te
 
 Using XML templates can improve the performance of your application by loading the complete object hierarchy from an XML file. 
 
+### How to Create an XML Template
+
+The ERPConnect installation package includes the tool *Function-Template-Generator* that generates reusable XML templates for Function Modules and BAPIs.
+
+1. To start the *Function-Template-Generator*, run the *FunctionTemplateGenerator.exe* in the ERPConnect directory `C:\Program Files\ERPConnect`.
+2. Enter the name of a Function Module or BAPI that you want to use as a template and click **[Generate XML Template]**. <br>
+![Tools-003](/img/content/Tools-003.png){:class="img-responsive" }
+3. The window "SAP Login" opens. Enter your SAP credentials and click **[OK]**.
+4. Save the XML file to your local hard drive. 
+
 ### How to Use XML Templates
 
-1. Create an XML template using the tool [FunctionTemplateGenerator.exe](../tools/function-template-generator) located in the ERPConnect directory.
+1. Create an XML template using the tool *FunctionTemplateGenerator.exe* located in the ERPConnect directory.
 2. Add the XML file to your project as a resource.
-3. Load the XML file into your program as shown in the C# example code below.
-4. Now you can use the FRFCFunction-object instead of using the *CreateFunction/CreateBAPI* methods.
+3. Load the XML file into your program as shown in the C# example code below.<br>
+Now you can use the FRFCFunction-object instead of using the *CreateFunction/CreateBAPI* methods.
 
 
 
