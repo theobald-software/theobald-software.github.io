@@ -17,4 +17,4 @@ Um die Azure Synapse Analytics (SQL pool) Destination nutzen zu können, brauche
 - eine [Freischaltung in der Firewall](https://docs.microsoft.com/de-de/azure/azure-sql/database/secure-database-tutorial#create-firewall-rules) für die IP-Adressen, unter denen Xtract Universal läuft.
 
 #### Weiterführende Links:
--[Microsoft Azure Synapse Analytics](https://docs.microsoft.com/de-de/azure/synapse-analytics/)
+- [Microsoft Azure Synapse Analytics](https://docs.microsoft.com/de-de/azure/synapse-analytics/)
