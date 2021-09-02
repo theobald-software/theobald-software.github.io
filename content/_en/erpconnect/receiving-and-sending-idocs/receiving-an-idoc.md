@@ -22,7 +22,7 @@ To configure your SAP system to send *MATMAS* IDocs, see [Set Up a Test Environm
 2. To receive IDocs with the *RFCServer* object, set the property *CanReceiveIdocs* to true.<br>
 3. When an IDoc is received by ERPConnect, the event *IncomingIdoc* is triggered and a reference to the *RFCServer* object and to the *IDoc* object is transferred. 
 Use this event to process the IDoc object as shown in the code below. <br> <br>
-	 ```csharp
+```csharp
 static void Main(string[] args) 
 { 
    // define server object and start 
@@ -79,7 +79,8 @@ In this case, 5 *E2MAKTM001* segments were found so 5 texts are passed. <br>
 
 *****
 #### Related Links
-- [Set Up a Test Environment for IDocs](./prerequisites#set-up-a-test-environment-for-idocs)
+- [Setting Up a Test Environment for IDocs](./prerequisites#set-up-a-test-environment-for-idocs)
+- [Setting Up Receiving IDocs](./prerequisites#setting-up-receiving-idocs)
 
 <!---
 <details>

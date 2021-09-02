@@ -21,7 +21,7 @@ Um Ihr SAP-System so konfigurieren, dass es MATMAS-IDocs sendet, folgen Sie der 
 2. Um IDocs mit dem *RFCServer* zu empfangen, setzten Sie die Eigenschaft *CanReceiveIdocs* auf True.  
 3. Wenn ein IDoc von ERPConnect empfangen wird, wird das Ereignis *IncomingIdoc* getriggert und eine Referenz auf die Objekte *RFCServer* und *IDoc* transferriert.
 Nutzen Sie das Ereignis *IncomingIdoc*, um das eingehende IDoc zu verarbeiten. 
-	 ```csharp
+```csharp
 static void Main(string[] args) 
 { 
    // define server object and start 
@@ -52,7 +52,7 @@ Das *E2MARAM005* Segment enthält mehrere *E2MAKTM001*-Segmente, die jeweils ein
 
 1. Lesen Sie den Datenpuffer mit der Methode *ReadDataBuffer* aus, um auf die Materialbeschreibungen in *E2MAKTM001* zuzugreifen. 
 Der Text befindet sich an der Stelle 4 und ist 40 Zeichen lang.<br><br>
-	 ```csharp
+```csharp
 private static void s_IncomingIdoc(RFCServer Sender, Idoc idoc) 
 { 
    Console.WriteLine("Received Idoc " + idoc.IDOCTYP); 
@@ -79,6 +79,7 @@ Siehe [IDocs als XML](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) f
 *****
 #### Weiterführende Links
 - [Einrichten einer IDoc-Testumgebung](./voraussetzungen#einrichten-einer-idoc-testumgebung)
+- [Einrichten des Empfangs von IDocs](./voraussetzungen#einrichten-des-empfangs-von-idocs)
 
 
 <!---

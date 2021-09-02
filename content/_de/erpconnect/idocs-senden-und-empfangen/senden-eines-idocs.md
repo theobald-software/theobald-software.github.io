@@ -18,7 +18,7 @@ wenn ein Subsystem IDocs empfängt und den Empfang durch eine Status-Anpassung q
 Das *STATUS*-IDoc enthält nur einen Datensatz und ist somit sehr einfach aufgebaut. 
 
 {: .box-note }
-**Hinweis**: Stellen Sie sicher, dass Ihr SAP-System konfiguriert ist, IDocs zu empfangen, siehe [Einrichten des Empfangens von IDocs](./voraussetzungen#einrichten-des-empfangens-von-idocs).
+**Hinweis**: Stellen Sie sicher, dass Ihr SAP-System konfiguriert ist, IDocs zu empfangen, siehe [Einrichten des Empfangs von IDocs](./voraussetzungen#einrichten-des-empfangs-von-idocs).
 
 ### Ein STATUS IDoc senden
 
@@ -71,7 +71,9 @@ Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worde
 
 ****
 #### Weiterführende Links
-- [KBArticles]()
+- [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc)
+- [Sending IDocs Synchronously](https://kb.theobald-software.com/erpconnect-general/synchronous-sending-and-status-query)
+- [Eine RFC-Destination anlegen](./voraussetzungen#eine-rfc-destination-anlegen)
 
 <!---
 

@@ -7,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: sap-bw
 permalink: /:collection/:path
-weight: 8
+weight: 5
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sap-bw
 ---

@@ -24,42 +24,31 @@ Dieser Abschnitt zeigt, wie Sie einen einfachen ABAP-Interpreter erstellen, der 
 3. Ist der gewünschte Code vollständig übergeben, führen Sie ihn mit *Execute* aus. 
 4. Lesen und verwerten Sie die Ergebnismenge (die Listausgabe) mit der Methode *GetResultLine*.
 
-<details>
-<summary>[Klicken Sie hier, um das C# Beispiel zu öffnen]</summary>
-{% highlight csharp %}
+```csharp
 private void button1_Click(object sender, System.EventArgs e)
-{
-    using (ERPConnect.R3Connection con = new ERPConnect.R3Connection())
-    {
-        con.UserName = "erpconnect";
-        con.Password = "pass";
-        con.Language = "DE";
-        con.Client = "800";
-        con.Host = "sapserver";
-        con.SystemNumber = 11;
-
-        con.Open(false);
-
-        ERPConnect.Utils.ABAPCode code = new ERPConnect.Utils.ABAPCode();
-        code.Connection = con;
-        foreach (string s in textBox1.Lines)
         {
-            code.AddCodeLine(s);
+            ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+            con.Open(false);
+ 
+            ERPConnect.Utils.ABAPCode code = new ERPConnect.Utils.ABAPCode();
+            code.Connection = con;
+            foreach (string s in textBox1.Lines)
+            {
+                code.AddCodeLine(s);
+            }
+ 
+            if (code.Execute())
+            {
+                for (int i = 0; i < code.ResultLineCount; i++)
+                    textBox2.Text += code.GetResultLine(i) + "\r\n";
+            }
+            else
+            {
+                textBox2.Text = "ABAP Error: " + code.LastABAPSyntaxError;
+            }
         }
+```
 
-        if (code.Execute())
-        {
-            for (int i = 0; i < code.ResultLineCount; i++)
-                textBox2.Text += code.GetResultLine(i) + "\r\n";
-        }
-        else
-        {
-            textBox2.Text = "ABAP Error: " + code.LastABAPSyntaxError;
-        }
-    }
-}
-{% endhighlight %}
-</details>
 <!---
 <details>
 <summary>[VB]</summary>

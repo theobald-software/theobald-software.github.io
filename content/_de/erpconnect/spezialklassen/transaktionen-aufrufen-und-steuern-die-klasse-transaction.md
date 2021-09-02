@@ -32,34 +32,32 @@ Der Beispielcode zeigt wie die einzelnen Batch-Schritte mit der Funktionen *AddS
 Wichtig ist, dass bei der Verbindung zu SAP die Eigenschaft *UseGui* auf true gesetzt wird. 
 Der SAP GUI wird über die Methode *Execute* gestartet. 
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 private void button1_Click(object sender, System.EventArgs e)
-{
-    Transaction transaction1 = new Transaction();
-    R3Connection r3Connection1 = new R3Connection("SAPServer", 00, "User", "Pass", "EN",800");
-    transaction1.Connection = r3Connection1;
-    // Reset the batch steps
-    transaction1.BatchSteps.Clear();
+        {
+            R3Connection con = new R3Connection("SAPServer", 00, "User", "Pass", "EN",800");
+            Transaction transaction1 = new Transaction();
+            transaction1.Connection = con;
+            // Reset the batch steps
+            transaction1.BatchSteps.Clear();
+  
+            // fill new steps
+            transaction1.ExecutionMode = ERPConnect.Utils.TransactionDialogMode.ShowOnlyErrors;
+            transaction1.TCode = "MMBE";
+            transaction1.AddStepSetNewDynpro("RMMMBEST", "1000");
+            transaction1.AddStepSetOKCode("ONLI");
+            transaction1.AddStepSetCursor("MS_WERKS-LOW");
+            transaction1.AddStepSetField("MS_MATNR-LOW", textBox1.Text);
+            transaction1.AddStepSetField("MS_WERKS-LOW", textBox2.Text);
+  
+            // connect to SAP
+            con.UseGui = true;
+            con.Open(false);
+            // Run
+            transaction1.Execute();
+        }
+```
 
-    // fill new steps
-    transaction1.ExecutionMode = ERPConnect.Utils.TransactionDialogMode.ShowOnlyErrors;
-    transaction1.TCode = "MMBE";
-    transaction1.AddStepSetNewDynpro("RMMMBEST", "1000");
-    transaction1.AddStepSetOKCode("ONLI");
-    transaction1.AddStepSetCursor("MS_WERKS-LOW");
-    transaction1.AddStepSetField("MS_MATNR-LOW", textBox1.Text);
-    transaction1.AddStepSetField("MS_WERKS-LOW", textBox2.Text);
-
-    // connect to SAP
-    r3Connection1.UseGui = true;
-    r3Connection1.Open(false);
-    // Run
-    transaction1.Execute();
-}
-{% endhighlight %}
-</details>
 <!---
 <details>
 <summary>[VB]</summary>
@@ -110,52 +108,40 @@ Die Transaktion zum Erstellen einer Lieferanten-Bestellung ist **ME21**.
 Am Ende des Codes werden die *BatchReturn*-Objekte, die die Rückgabe-Nachrichten des Hintergrundprozesses beinhalten,
 über eine Schleife auf die Returns-Collection ausgewertet.
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-using (ERPConnect.R3Connection con = new ERPConnect.R3Connection())
-{
-   con.UserName = "erpconnect";
-   con.Password = "pass";
-   con.Language = "DE";
-   con.Client = "800";
-   con.Host = "sapserver";
-   con.SystemNumber = 11;
+```csharp
+	ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+	con.Open(false);
+   
+	Transaction trans = new Transaction();
+	trans.Connection = con;
+	trans.TCode = "ME21";
+   
+	//Begin a new Dynpro
+	trans.AddStepSetNewDynpro("SAPMM06E", "0100");
+	trans.AddStepSetCursor("EKKO-EKGRP");
+	trans.AddStepSetOKCode("/00"); // Enter
+	trans.AddStepSetField("EKKO-LIFNR", "1070"); // Vendor
+	trans.AddStepSetField("RM06E-BSART", "NB"); // Order Type
+	trans.AddStepSetField("RM06E-BEDAT", "01.01.2006"); //Purch.Date
+	trans.AddStepSetField("EKKO-EKORG", "1000"); // Purchase Org
+	trans.AddStepSetField("EKKO-EKGRP", "010"); // Purchase Group
+	trans.AddStepSetField("RM06E-LPEIN", "T");
+   
+	//Begin a new Dynpro
+	trans.AddStepSetNewDynpro("SAPMM06E", "0120");
+	trans.AddStepSetCursor("EKPO-WERKS(01)");
+	trans.AddStepSetOKCode("=BU");
+	trans.AddStepSetField("EKPO-EMATN(01)", "B-7000"); // Material
+	trans.AddStepSetField("EKPO-MENGE(01)", "20"); // Quantity
+	trans.AddStepSetField("EKPO-WERKS(01)", "1000"); // Plant
+	trans.Execute();
+   
+	foreach (ERPConnect.Utils.BatchReturn br in trans.Returns)
+		MessageBox.Show(br.Message);
+	if (trans.Returns.Count == 0)
+		MessageBox.Show("No Messages");
+```
 
-   con.Open(false);
-
-   Transaction trans = new Transaction();
-
-   trans.Connection = con;
-   trans.TCode = "ME21";
-
-   //Begin a new Dynpro 
-   trans.AddStepSetNewDynpro("SAPMM06E", "0100");
-   trans.AddStepSetCursor("EKKO-EKGRP");
-   trans.AddStepSetOKCode("/00"); // Enter 
-   trans.AddStepSetField("EKKO-LIFNR", "1070"); // Vendor
-   trans.AddStepSetField("RM06E-BSART", "NB"); // Order Type 
-   trans.AddStepSetField("RM06E-BEDAT", "01.01.2006"); //Purch.Date 
-   trans.AddStepSetField("EKKO-EKORG", "1000"); // Purchase Org 
-   trans.AddStepSetField("EKKO-EKGRP", "010"); // Purchase Group 
-   trans.AddStepSetField("RM06E-LPEIN", "T");
-
-   //Begin a new Dynpro 
-   trans.AddStepSetNewDynpro("SAPMM06E", "0120");
-   trans.AddStepSetCursor("EKPO-WERKS(01)");
-   trans.AddStepSetOKCode("=BU");
-   trans.AddStepSetField("EKPO-EMATN(01)", "B-7000"); // Material 
-   trans.AddStepSetField("EKPO-MENGE(01)", "20"); // Quantity 
-   trans.AddStepSetField("EKPO-WERKS(01)", "1000"); // Plant 
-   trans.Execute();
-
-   foreach (ERPConnect.Utils.BatchReturn br in trans.Returns)
-       MessageBox.Show(br.Message);
-   if (trans.Returns.Count == 0)
-       MessageBox.Show("No Messages");
-}
-{% endhighlight %}
-</details>
 <!---
 <details>
 <summary>[VB]</summary>

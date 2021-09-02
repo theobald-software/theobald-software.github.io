@@ -18,7 +18,7 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 *STATUS* is a simple IDoc that contains only one data record.
 
 {: .box-note }
-**Note**: Make sure to configure your SAP system to receive IDocs, see [Set Up Receiving IDocs](./prerequisites#set-up-receiving-idocs).
+**Note**: Make sure to configure your SAP system to receive IDocs, see [Setting Up Receiving IDocs](./prerequisites#setting-up-receiving-idocs).
 
 ### Sending a STATUS IDoc
 
@@ -73,7 +73,7 @@ The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 
 #### Related Links
 - [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc)
 - [Sending IDocs Synchronously](https://kb.theobald-software.com/erpconnect-general/synchronous-sending-and-status-query)
-- [Set Up Receiving IDocs](./prerequisites#set-up-receiving-idocs)
+- [Setting Up an RFC-Destination](./prerequisites#setting-up-an-rfc-destination)
 
 <!---
 Valeries Test, um Code in Liste zu kollabieren -> fehlgeschlagen T_T

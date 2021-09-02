@@ -25,42 +25,30 @@ This section shows how to create a simple ABAP interpreter that executes a dynam
 4. Read the result set (regarding the ABAP list) by using the method *GetResultLine*.
 
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 private void button1_Click(object sender, System.EventArgs e)
         {
-            using (ERPConnect.R3Connection con = new ERPConnect.R3Connection())
+            ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+            con.Open(false);
+ 
+            ERPConnect.Utils.ABAPCode code = new ERPConnect.Utils.ABAPCode();
+            code.Connection = con;
+            foreach (string s in textBox1.Lines)
             {
-                con.UserName = "erpconnect";
-                con.Password = "pass";
-                con.Language = "DE";
-                con.Client = "800";
-                con.Host = "sapserver";
-                con.SystemNumber = 11;
+                code.AddCodeLine(s);
+            }
  
-                con.Open(false);
- 
-                ERPConnect.Utils.ABAPCode code = new ERPConnect.Utils.ABAPCode();
-                code.Connection = con;
-                foreach (string s in textBox1.Lines)
-                {
-                    code.AddCodeLine(s);
-                }
- 
-                if (code.Execute())
-                {
-                    for (int i = 0; i < code.ResultLineCount; i++)
-                        textBox2.Text += code.GetResultLine(i) + "\r\n";
-                }
-                else
-                {
-                    textBox2.Text = "ABAP Error: " + code.LastABAPSyntaxError;
-                }
+            if (code.Execute())
+            {
+                for (int i = 0; i < code.ResultLineCount; i++)
+                    textBox2.Text += code.GetResultLine(i) + "\r\n";
+            }
+            else
+            {
+                textBox2.Text = "ABAP Error: " + code.LastABAPSyntaxError;
             }
         }
-{% endhighlight %}
-</details>
+```
 <!---
 <details>
 <summary>Click to open VB example.</summary>

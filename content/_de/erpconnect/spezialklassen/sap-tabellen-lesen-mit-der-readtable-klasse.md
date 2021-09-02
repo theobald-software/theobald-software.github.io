@@ -24,46 +24,33 @@ ADO-DataTable auswerten.
 Benötigt werden die beiden Spalten *MATNR* (Materialnummer) und *MAKTX* (Materialtext).
 - Um nur die englischen Textbausteine auszulesen, schränken Sie die Selektion mit dem WHERE-Kriterium `SPRAS = 'EN'` ein (*SPRAS* ist die Spalte für den Sprachenschlüssel). 
 
-<details>
-<summary>[Klicken Sie hier, um das C# Beispiel zu öffnen.]</summary>
-{% highlight csharp %}
-using System;
-using ERPConnect;
-using System.Data; 
-    
-class Class1
+```csharp
+static void Main(string[] args) 
 { 
-   static void Main(string[] args) 
-   { 
-        ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-        ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License.
+    ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License.
+    ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+    con.Open();  //Open the connection to SAP.
 
-        con.Open();  //Open the connection to SAP.
+    ERPConnect.Utils.ReadTable table = new ERPConnect.Utils.ReadTable(con);
+    table.AddField("MATNR"); 
+    table.AddField("MAKTX"); 
+    table:WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
+    table.TableName = "MAKT"; 
+    table.RowCount = 10; 
 
-        ERPConnect.Utils.ReadTable table = new ERPConnect.Utils.ReadTable(con);
-        table.AddField("MATNR"); 
-        table.AddField("MAKTX"); 
-        table:WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
-        table.TableName = "MAKT"; 
-        table.RowCount = 10; 
+    table.Run(); 
+    DataTable resulttable = table.Result; 
          
-        table.Run(); 
-         
-        DataTable resulttable = table.Result; 
-         
-        for(int i=0; i < resulttable.Rows.Count;i++) 
-            { 
-                Console.WriteLine( 
-                 resulttable.Rows[i]["MATNR"].ToString() + " " + 
-                 resulttable.Rows[i]["MAKTX"].ToString()); 
-            }
-          
-        Console.ReadLine(); 
+    for(int i=0; i < resulttable.Rows.Count;i++) 
+        { 
+            Console.WriteLine( 
+            resulttable.Rows[i]["MATNR"].ToString() + " " + 
+            resulttable.Rows[i]["MAKTX"].ToString()); 
         }
-    }
+          
+    Console.ReadLine(); 
 }
-{% endhighlight %}
-</details>
+```
 <!---
 <details>
 <summary>[VB]</summary>

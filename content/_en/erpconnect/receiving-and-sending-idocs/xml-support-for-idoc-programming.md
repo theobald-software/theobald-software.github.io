@@ -1,7 +1,7 @@
 ---
 ref: ec-receiving-and-sending-idocs-04
 layout: page
-title: Using XML for IDocs
+title: Using XMLs for IDocs
 description: XML-Support for IDoc programming
 product: erpconnect
 parent: receiving-and-sending-idocs
@@ -42,31 +42,25 @@ E1EDP19>
 {% endhighlight %}
 
 ### How to Load XML Files
-1. Use the method *LoadIdocSchema* to create an IDoc object from a schema file.
-2. Create segment objects by using the method *CreateSegment*. 
+1. Use the method *LoadIdocSchema* tool to create an IDoc object from a schema file.
+2. Create segment objects using *CreateSegment*. 
 3. Load the IDoc data from a data file with the method *LoadXMLData*.
 
-#### Example Code
-The example below shows how to load and send data from files.
+#### Sample Code
+The following C# code shows how to load and send data from files.
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
     R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");  
     Idoc i = new Idoc();  
     i.Connection = con; 
 	
     i.LoadIdocSchema(@"ORDERS01.xsd");        
     i.LoadXMLData(@"OrderIdoc.xml");
-        
+    
     i.Send();
-             
-    }
-{% endhighlight %}
-</details>
+```
 
 <!---
-
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -90,5 +84,4 @@ Using con As R3Connection = New R3Connection
 End Using
 {% endhighlight %}
 </details>
-
 -->

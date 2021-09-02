@@ -7,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: receiving-and-sending-idocs
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=receiving-and-sending-idocs
 ---

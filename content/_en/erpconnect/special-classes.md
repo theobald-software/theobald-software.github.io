@@ -7,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: special-classes
 permalink: /:collection/:path
-weight: 6
+weight: 8
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=special-classes
 ---
