@@ -11,10 +11,10 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-aufrufen-einer-query
 ---
 
-Der folgende Abschnitt beschreibt, wie man eine SAP Query aufruft.
+Dieser Abschnitt zeigt, wie man eine SAP Query aufruft und Daten einer Query ausliest.
 
-### Daten Abrufen
-Im folgenden Beispiel werden die Daten einer Beispielquery aus dem Bereich Materialwirtschaft extrahiert, siehe folgende Grafik. 
+### Beispielanwendung
+Im folgenden Beispiel werden die Daten einer Query aus dem Bereich Materialwirtschaft extrahiert, siehe folgende Grafik. 
 
 ![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive"}
 
@@ -40,9 +40,7 @@ Ein einzelner Range wird bestimmt durch das
 Die Ergebnismenge befindet sich in einer ADO.NET DataTable. 
 Sie kann über die Eigenschaft *Result* des Query-Objekts abgerufen werden. 
 
-<details>
-<summary>Klicken Sie hier, um das C# zu öffnen.</summary>
-{% highlight csharp %}
+```csharp
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
     {
       R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
@@ -74,8 +72,7 @@ private void btnFetchQueryData_Click(object sender, System.EventArgs e)
             return;
          }
     }
-{% endhighlight %}
-</details>
+```
 
 <!---
 <details>

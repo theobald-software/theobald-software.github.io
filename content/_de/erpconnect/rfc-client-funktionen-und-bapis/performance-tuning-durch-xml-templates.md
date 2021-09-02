@@ -33,21 +33,18 @@ Das von ERPConnect mitgelieferte Tool *Function-Template-Generator* generiert XM
 3. Laden Sie die Objekthierarchie wie im unten stehenden C# Beispielcode dargestellt. <br>
 Danach können Sie das RFCFunction-Objekt anstatt der *CreateFunction/CreateBAPI*-Methoden verwenden.
 
-<details>
-<summary>Klicken Sie hier, um das C# Beispiel zu öffnen.</summary>
-{% highlight csharp %}
-[ … create and open connection … ]
- 
+```csharp
+R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+
 RFCFunction f = new RFCFunction("BAPI_CUSTOMER_GETDETAIL");
-            f.Connection = con;
+f.Connection = con;
  
-            StreamReader reader = new StreamReader(
-                System.Reflection.Assembly.GetExecutingAssembly().
-                GetManifestResourceStream
-                ("PocketGetCustomer.BAPI_CUSTOMER_GETDETAIL.xml"));
-            f.LoadFromXML(reader);
-{% endhighlight %}
-</details>
+StreamReader reader = new StreamReader(
+     System.Reflection.Assembly.GetExecutingAssembly().
+     GetManifestResourceStream
+     ("PocketGetCustomer.BAPI_CUSTOMER_GETDETAIL.xml"));
+f.LoadFromXML(reader);
+```
 
 <!---
 <details>

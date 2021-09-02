@@ -11,9 +11,9 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=example-for-calling-a-query
 ---
 
-The following section shows how to call an SAP query.
+This section shows how to call an SAP query and fetch data from it.
 
-### Fetching Data
+### Sample Application
 The following example shows how to extract data from a materials management query, see screenshot below. 
 
 ![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive" }
@@ -39,9 +39,7 @@ An individual range is defined by three descriptors:
 4. When all of selections are defined, execute the query with the *Execute* method. <br>
 The query output is an ADO.NET DataTable. It can be accessed using the Result attribute of the query object.
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
     {
       R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
@@ -73,8 +71,8 @@ private void btnFetchQueryData_Click(object sender, System.EventArgs e)
             return;
          }
     }
-{% endhighlight %}
-</details>
+```
+
 <!---
 <br>
 <details>
