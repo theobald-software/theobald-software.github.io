@@ -23,14 +23,30 @@ Um ein SSO-Ticket zu erzeugen bietet die *R3Connection*-Klasse die Methode *GetS
 Die Anmeldedaten müssen einmalig eingegeben werden, um ein Ticket bei SAP zu beantragen, siehe folgenden Beispielcode:
 
 ```csharp
-R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-string ssoticket = con.GetSSOTicket();
+using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
+{
+    cont.Host = "duncan";  
+    cont.SystemNumber = 7;  
+    cont.Client = "800";  
+    cont.Language = "DE";  
+    cont.UserName = "Theobald";  
+    cont.Password = "pw";  
+  
+    string ssoticket = cont.GetSSOTicket();
+}
 ```
+
 #### Logon
 Wenn ein Ticket vorhanden ist, kann der Logon über die Funktion *OpenSSO* erfolgen.<br>
 Benutzername und Passwort müssen nicht übergeben werden, da der Account implizit durch das Ticket vorgegeben wird:
 
 ```csharp
-R3Connection con = new R3Connection("SAPServer",00," "," ","EN","800");
-con.OpenSSO(ssoticket);
+using(ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
+{
+    conts.Host = "duncan"; 
+    conts.SystemNumber = 7; 
+    conts.Client = "800"; conts.Language = "EN"; 
+       
+    conts.OpenSSO(ssoticket);
+}
 ```

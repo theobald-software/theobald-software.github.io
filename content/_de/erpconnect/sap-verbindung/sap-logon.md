@@ -1,4 +1,5 @@
 ---
+ref: ec-sap-connection-01
 layout: page
 title: SAP Logon
 description: SAP Logon
@@ -18,21 +19,16 @@ Die Anmeldung an Ihr SAP-System kann in ERPConnect über 2 Wege erfolgen:
 
 Beide Verbindungsmethoden benötigen folgende Angaben:
 
-* Name des Benutzers (*UserName* Eigenschaft)
-* Passwort (*Password* Eigenschaft)
-* Sprache (*Language* Eigenschaft)
-* Client (*Client* Eigenschaft)
+| Single Application Server | Load Balancing |
+| :------ |:--- | :--- |
+| Name des Benutzers (*UserName* Eigenschaft)| Name des Benutzers (*UserName* Eigenschaft)|
+| Passwort (*Password* Eigenschaft)| Passwort (*Password* Eigenschaft)|
+| Sprache (*Language* Eigenschaft)| Sprache (*Language* Eigenschaft)|
+| Client (*Client* Eigenschaft)| Client (*Client* Eigenschaft)|
+| Name des Application Servers (*Host* Eigenschaft)| Name des Message Servers (*MessageServer* Eigenschaft)|
+| Systemnummer zwischen 0 und 99 (*SystemNumber* Eigenschaft)| System ID (*SID* Eigenschaft, z.B. MBS)|
+| | Name der Logon-Gruppe (*LogonGroup* Eigenschaft, z.B. PUBLIC)|
 
-Zusätzlich werden für die Anmeldung an einen Application Server folgende Eigenschaften benötigt:
-
-* Name des Application Servers (*Host* Eigenschaft)
-* Systemnummer zwischen 0 und 99 (*SystemNumber* Eigenschaft)
-
-Zusätzlich werden für die Anmeldung über Load Balancing folgende Eigenschaften benötigt:
-
-* Name des Message Servers (*MessageServer* Eigenschaft)
-* Name der Logon-Gruppe (*LogonGroup* Eigenschaft, z.B. PUBLIC)
-* System ID (*SID* Eigenschaft, z.B. MBS)
 
 ### Verbindung aufbauen
 
@@ -43,9 +39,7 @@ Um sich über Load Balancing zu verbinden, verwenden Sie *Open(true)*. Um sich �
 
 Beispiel für einen Login mit einem SAP Application Serve:
 
-<details>
-<summary> [C#] </summary>
-{% highlight csharp %}
+```csharp
 using(R3Connection con = new R3Connection())  
 {   
     con.UserName = "erpconnect";  
@@ -56,38 +50,30 @@ using(R3Connection con = new R3Connection())
     con.SystemNumber = 11;  
     con.Open(false);
 }
-{% endhighlight %}
-</details>
-
+```
 
 Beispiel für einen Login via Load Balancing:
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 using(R3Connection con = new R3Connection())
 {  
     con.UserName = "erpconnect";  
     con.Password = "pass"; con.Language = "DE";  
     con.Client = "800";   
-      con.Language = "DE";
-
+    con.Language = "DE";
     con.MessageServer = "hamlet";  
     con.LogonGroup = "PUBLIC";    
     con.SID = "EC5"; 
   
     con.Open(true);
 }
-{% endhighlight %}
-</details>
+```
 
 ### Router
-Wenn Sie auf das SAP-System über einen SAP-Router zugreifen möchten, setzen Sie den Routerstring vor den Hostnamen bzw. den Namen des Message-Servers. <br>
-Für mehr Informationen zu Route String, siehe [SAP-Dokumentation - Eingabe von Route Strings für SAProuter](https://help.sap.com/saphelp_erp60_sp/helpdata/de/4f/992df1446d11d189700000e8322d00/frameset.htm).
+Wenn Sie auf das SAP-System über einen SAP-Router zugreifen, muss der Routerstring vor den Hostnamen bzw. den Namen des Message-Servers angegeben werden. <br>
+Für mehr Informationen zu *Route Strings*, siehe [SAP-Dokumentation - Eingabe von Route Strings für SAProuter](https://help.sap.com/saphelp_erp60_sp/helpdata/de/4f/992df1446d11d189700000e8322d00/frameset.htm).
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 using(R3Connection con = new R3Connection())
 {
     con.UserName = "erpconnect"; 
@@ -100,8 +86,7 @@ using(R3Connection con = new R3Connection())
 
     con.Open(false);
 }
-{% endhighlight %}
-</details>
+```
 
 ### Connection String
 
@@ -115,7 +100,7 @@ Um das neue NW RFC Protokoll zu verwenden, geben Sie folgende Codezeile ein: <br
 `con.Protocol = ClientProtocol.NWRFC;`
 
 {: .box-tip }
-**Tipp**:  Wenn Sie den Konstruktor der R3Connection-Klasse verwenden, um die Eigenschaften für die Anmeldung zu übergeben, spraren Sie Codezeilen. Beispiel: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`. 
+**Tipp**:  Wenn Sie den Konstruktor der *R3Connection*-Klasse verwenden, um die Eigenschaften für die Anmeldung zu übergeben, spraren Sie Codezeilen. Beispiel: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`. 
 
 
 ****

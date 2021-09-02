@@ -56,11 +56,7 @@ The following example codes show how to pass the necessary parameters for an SNC
 
 **Using the SNC Mechanism (ERP Connect version 4.1.1.0):**
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
-
-
+```csharp
 using (R3Connection con = new R3Connection()) 
 {
 con.Host = "duncan";
@@ -73,16 +69,10 @@ con.SNCEnabled = true;
 con.Open();
 // define your application
 }
-
-{% endhighlight %}
-</details>
+```
 
 **Using individual SNC DLL path (ERP Connect version 4.1.1.0):**
-
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
-
+```csharp
 using (R3Connection con = new R3Connection())
 {
 con.Host = "duncan";
@@ -95,16 +85,10 @@ con.SNCEnabled = true;
 con.Open();
 // define your application
 }
-
-{% endhighlight %}
-</details>
+```
 
 **Using the SNC Mechanism (ERP Connect version 4.2.3):**
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
-
-
+```csharp
 using (R3Connection con = new R3Connection())
 {
 con.Host = "duncan";
@@ -118,17 +102,11 @@ con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
 con.Open();
 // define your application
 }
-
-{% endhighlight %}
-</details>
+```
 
 
 **Using individual SNC DLL path(ERPConnect Version 4.2.3):**
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
-
-
+```csharp
 using (R3Connection con = new R3Connection())
 {
 con.Host = "duncan";
@@ -142,9 +120,7 @@ con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
 con.Open();
 // define your application
 }
-
-{% endhighlight %}
-</details>
+```
 
 {: .box-note }
 **Note**: You can set a security level with the new property *QualityOfProtection*. 

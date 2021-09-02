@@ -41,7 +41,7 @@ The list below shows several most important files that are placed into the defau
 | ERPConnect35.xml  ERPConnect45.xml | Visual Studio documentation files |
 | TransactionRecorder.exe | Small tool to record batch sequences and create appropriate .NET code (see [Batch Input Background Processing](../special-classes/managing-and-executing-transactions-the-class-transaction)) |
 | IdocSchemeGenerator.exe | Small tool to generate XML schemas for IDocs (see [XML-Support for IDoc programming](../receiving-and-sending-idocs/xml-support-for-idoc-programming)) |
-| FunctionTemplateGenerator.exe | Small tool to generate XML templates for RFCFunction objects (see [Improve your Perfor-mance by Using Templates](../calling-bapis-and-function-modules/improve-your-performance-by-using-templates)) |
+| FunctionTemplateGenerator.exe | Small tool to generate XML templates for RFCFunction objects (see [Improve your Performance by Using Templates](../calling-bapis-and-function-modules/improve-your-performance-by-using-templates)) |
 
 All files marked with (<b>*</b>) may be redistributed to customers together with your application.  
 

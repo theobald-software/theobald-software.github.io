@@ -23,14 +23,29 @@ To create an SSO ticket the R3Connection class provides the method *GetSSOTicket
 All logon data must be provided once to create the ticket as shown in the code below.
 
 ```csharp
-R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-string ssoticket = con.GetSSOTicket();
+using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
+{
+    cont.Host = "duncan";  
+    cont.SystemNumber = 7;  
+    cont.Client = "800";  
+    cont.Language = "DE";  
+    cont.UserName = "Theobald";  
+    cont.Password = "pw";  
+  
+    string ssoticket = cont.GetSSOTicket();
+}
 ```
 #### Logon
 If there is a ticket available, you can use *OpenSSO* to establish the connection without user credentials:
 
 ```csharp
-R3Connection con = new R3Connection("SAPServer",00," "," ","EN","800");
-con.OpenSSO(ssoticket);
+using(ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
+{
+    conts.Host = "duncan"; 
+    conts.SystemNumber = 7; 
+    conts.Client = "800"; conts.Language = "EN"; 
+       
+    conts.OpenSSO(ssoticket);
+}
 ```
 

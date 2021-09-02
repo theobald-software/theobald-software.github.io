@@ -32,8 +32,9 @@ Siehe [LINQ to SAP - Installation und Erste Schritte](../linq-to-sap/linq-to-sap
 
 ### Dateien des Programmverzeichnisses
 Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in das Standardverzeichnis ``C:\Program Files\ERPConnect`` abgelegt werden:
-|                                        |                                                                                                                                      |
-|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+
+| Datei | Beschreibung |
+| :------ |:--- | :--- |
 | ERPConnect35.dll (*)                   | ERPConnect Assembly für .NET 3.5 SP1.                                                                                                |
 | ERPConnect45.dll (*)                   | ERPConnect Assembly für .NET 4.5.2 oder höher.                                                                                       |
 | ERPConnect35.xml<br>  ERPConnect45.xml | Doku-Dateien für Visual Studio.                                                                                                      |

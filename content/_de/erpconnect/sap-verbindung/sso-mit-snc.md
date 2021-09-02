@@ -55,9 +55,7 @@ Die folgenden Beispielcodes zeigen wie man Parameter für eine SNC-Verbindung an
 
 **SNC Mechanismus (ERPConnect Version 4.1.1.0):**
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 using (R3Connection con = new R3Connection()) 
 {
 	con.Host = "duncan";
@@ -70,14 +68,10 @@ using (R3Connection con = new R3Connection())
 	con.Open();
 	// do something with con
 }
-{% endhighlight %}
-</details>
+```
 
 **Individueller Pfad zu einer SNC DLL (ERPConnect Version 4.1.1.0):**
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 using (R3Connection con = new R3Connection())
 {
 	con.Host = "duncan";
@@ -90,14 +84,10 @@ using (R3Connection con = new R3Connection())
 	con.Open();
 	// do something with con
 }
-{% endhighlight %}
-</details>
+```
 
 **SNC Mechanismus (ERPConnect Version 4.2.3):**
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 using (R3Connection con = new R3Connection())
 {
     con.Host = "duncan";
@@ -111,14 +101,11 @@ using (R3Connection con = new R3Connection())
     con.Open();
     // do something with con
 }
-{% endhighlight %}
-</details>
+```
 
 **Individueller Pfad zu einer SNC DLL (ERPConnect Version 4.2.3):**
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 using (R3Connection con = new R3Connection())
 {
     con.Host = "duncan";
@@ -132,8 +119,7 @@ using (R3Connection con = new R3Connection())
     con.Open();
     // do something with con
 }
-{% endhighlight %}
-</details>
+```
 
 {: .box-note }
 **Hinweis**: Mit der neuen Eigenschaft *QualityOfProtection* können Sie die bevorzugte Sicherheitsstufe einstellen. 
