@@ -14,14 +14,14 @@ progressstate: 5
 ---
 
 This section shows how to receive and process a *MATMAS* IDoc.
-To configure your SAP system to send *MATMAS* IDocs, see [Set Up a Test Environment for IDocs](./prerequisites#set-up-a-test-environment-for-idocs).
+To configure your SAP system to send *MATMAS* IDocs, see [Setting Up a Test Environment for IDocs](./prerequisites#setting-up-a-test-environment-for-idocs).
 
 ### Receiving a MATMAS IDoc
 
 1. Create an RFC Server object to accept calls from SAP, see [RFC Server](../rfc-server/example) for more information.
 2. To receive IDocs with the *RFCServer* object, set the property *CanReceiveIdocs* to true.<br>
 3. When an IDoc is received by ERPConnect, the event *IncomingIdoc* is triggered and a reference to the *RFCServer* object and to the *IDoc* object is transferred. 
-Use this event to process the IDoc object as shown in the code below. <br> <br>
+Use this event to process the IDoc object as shown in the code below. <br>
 ```csharp
 static void Main(string[] args) 
 { 
@@ -52,8 +52,8 @@ Within this segment, several *E2MAKTM001* child segments contain material descri
 **Note**: You can use the transaction **WE60** to look up the structures of IDocs in SAP.
 
 1. Read the data buffer with the *ReadDataBuffer* method to access the description texts in the child segment *E2MAKTM001*. 
-The description text is located at index 4 with a length of 40. <br><br>
-	 ```csharp
+The description text is located at index 4 with a length of 40. <br>
+```csharp
 private static void s_IncomingIdoc(RFCServer Sender, Idoc idoc) 
 { 
    Console.WriteLine("Received Idoc " + idoc.IDOCTYP); 
@@ -75,7 +75,7 @@ In this case, 5 *E2MAKTM001* segments were found so 5 texts are passed. <br>
 
 
 {: .box-note }
-**Note**: If you do not want to read the data buffer with offset and length of the texts, you can load an XML Schema instead, see [XML-Support for IDoc programming](./xml-support-for-idoc-programming).
+**Note**: If you do not want to read the data buffer with offset and length of the texts, you can load an XML Schema instead, see [Using XMLs for IDocs](./xml-support-for-idoc-programming).
 
 *****
 #### Related Links

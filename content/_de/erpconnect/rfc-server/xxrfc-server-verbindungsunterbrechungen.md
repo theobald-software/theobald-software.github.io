@@ -12,11 +12,13 @@ old_url: /ERPConnect-DE/default.aspx?pageid=rfc-server-verbindungsunterbrechunge
 ---
 Dieser Abschnitt enthält Informationen darüber, wie Sie mit Verbindungsunterbrechungen umgehen können.
 
-### Verbindung prüfen und neustarten
 Ein RFC-Server ist i.d.R. so gestaltet, dass er lange Zeit läuft, häufig Tag und Nacht. 
 Dadurch ist es wahrscheinlich, dass die Verbindung zum SAP-System irgendwann abbricht, z.B. wenn das SAP-System gebootet wird oder wenn eine Netzwerkunterbrechung stattfindet.
 
-Um sicherzustellen, dass der RFC-Server mit diesen Situationen umgehen kann, wird folgende Vorgehensweise empfohlen:
+
+### Verbindung prüfen und neustarten
+
+Um sicherzustellen, dass der RFC-Server mit Verbindungsabbrüchen umgehen kann, wird folgende Vorgehensweise empfohlen:
 
 1. Starten Sie parallel zum RFC-Server ein Timer-Objekt, das alle 30 oder 60 Sekunden das *Elapsed*-Event auslöst. 
 2. Fragen Sie im Timer-Event die Eigenschaft *IsRunning* des RFC-Servers ab, die die Verbindung zu SAP prüft. 

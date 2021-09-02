@@ -17,7 +17,7 @@ Um Ihr SAP-System so konfigurieren, dass es MATMAS-IDocs sendet, folgen Sie der 
 
 ### Ein MATMAX IDoc empfangen
 
-1. Erstellen Sie ein *RFCServer* Objekt, um Aufrufe von SAP zu verarbeiten, siehe [RFC-Server](rfc-server/rfc-server-beispiel) für weitere Informationen.
+1. Erstellen Sie ein *RFCServer* Objekt, um Aufrufe von SAP zu verarbeiten, siehe [RFC-Server](../rfc-server/rfc-server-beispiel) für weitere Informationen.
 2. Um IDocs mit dem *RFCServer* zu empfangen, setzten Sie die Eigenschaft *CanReceiveIdocs* auf True.  
 3. Wenn ein IDoc von ERPConnect empfangen wird, wird das Ereignis *IncomingIdoc* getriggert und eine Referenz auf die Objekte *RFCServer* und *IDoc* transferriert.
 Nutzen Sie das Ereignis *IncomingIdoc*, um das eingehende IDoc zu verarbeiten. 
@@ -51,7 +51,7 @@ Das *E2MARAM005* Segment enthält mehrere *E2MAKTM001*-Segmente, die jeweils ein
 **Hinweis**: Sie können in SAP mit der Transaktion **WE60** die Strukturen Ihrer IDocs einsehen.
 
 1. Lesen Sie den Datenpuffer mit der Methode *ReadDataBuffer* aus, um auf die Materialbeschreibungen in *E2MAKTM001* zuzugreifen. 
-Der Text befindet sich an der Stelle 4 und ist 40 Zeichen lang.<br><br>
+Der Text befindet sich an der Stelle 4 und ist 40 Zeichen lang.<br>
 ```csharp
 private static void s_IncomingIdoc(RFCServer Sender, Idoc idoc) 
 { 
@@ -74,7 +74,7 @@ In diesem Fall werden 5 *E2MAKTM001* Segmente gefunden und somit 5 Teste ausgege
 
 {: .box-note }
 **Hinweis**: Falls Sie die Texte nicht unter Angabe des Offsets und der Länge direkt auf den Daten-Puffer lesen möchten, können Sie den Datenpuffer alternativ über ein XML-Schema in Felder aufzulösen. 
-Siehe [IDocs als XML](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) für weitere Informationen. 
+Siehe [XML für IDocs verwenden](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) für weitere Informationen. 
 
 *****
 #### Weiterführende Links

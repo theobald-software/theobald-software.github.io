@@ -10,8 +10,8 @@ weight: 1
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=bw-queries-ausfuehren
 ---
-
-Dieser Abschnitt zeigt eine Beispielanwendung, bei der mit ERPConnect ein BW Query ausgeführt wird.
+Dieser Abschnitt zeigt wie man mit ERPConnect ein BW Query ausführt.<br>
+Die folgende Beispielanwendung liest Daten aus einer Beispiel-Query aus.
 
 ### Über die Beispiel-Query
 
@@ -43,9 +43,7 @@ Hinter einer Variable liegen immer Range-Tabellen.
 technischen Namen entspricht. Die Kennzahlen werden daher über die Ordinalzahl und nicht über den Namen angesprochen.
 
 
-<details>
-<summary>[Klicken Sie hier, um das C# Beispiel zu öffnen.]</summary>
-{% highlight csharp %}
+```csharp
 private void Go_Click(object sender, System.EventArgs e)
        {
            R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
@@ -62,8 +60,7 @@ private void Go_Click(object sender, System.EventArgs e)
            this.dataGrid1.DataSource = query.Execute();
            
        }
-{% endhighlight %}
-</details>
+```
 <!---
 <details>
 <summary>[VB]</summary>

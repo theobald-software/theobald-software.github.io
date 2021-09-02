@@ -2,7 +2,7 @@
 ref: ec-sap-bw-01
 layout: page
 title: Executing BW queries
-description: Executing BW queries
+description: Executing BW Queries
 product: erpconnect
 parent: sap-bw
 permalink: /:collection/:path
@@ -11,7 +11,8 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=executing-bw-queries
 ---
 
-This section shows a sample application that executes a BW Query using ERPConnect.
+This section shows how to execute a BW Query using ERPConnect.<br>
+The following sample application fetches data from a sample Query.
 
 ### About the Sample Query
 This example uses a BW query *ZSIMPLEQUERY* that is based on the cube *0D_DECU*. <br>
@@ -39,10 +40,7 @@ There are range tables behind each variable.
 **Note**: The denomination of the key figures via the query generation in the designer does not conform to the original 
 technical name. That means key figures are addressed by the ordinal number, not the name.
 
-
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 private void Go_Click(object sender, System.EventArgs e)
        {
            R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
@@ -59,8 +57,7 @@ private void Go_Click(object sender, System.EventArgs e)
            this.dataGrid1.DataSource = query.Execute();
            
        }
-{% endhighlight %}
-</details>
+```
 <!---
 <details>
 <summary>Click to open VB example.</summary>
