@@ -1,7 +1,7 @@
 ---
 ref: ec-rfc-server-02
 layout: page
-title: Sample
+title: Creating Functions
 description: Sample
 product: erpconnect
 parent: rfc-server
@@ -11,8 +11,10 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-example
 ---
 
-This section shows how to create a simple example function that allows ABAP programs to add numbers.<br>
-The two imports *NUMBER1* and *NUMBER2* are added and passed back to the calling program via the export *RES*.  
+This section shows how to create, register and use RFC server functions.
+
+In the following application sample a simple RFC server function is created that allows ABAP programs to add numbers.<br>
+Two input parameters (*NUMBER1* and *NUMBER2*) are added and result (*RES*) is passed back to the calling ABAP program.  
 
 ### Registering the RFC Server Function
 
@@ -28,9 +30,7 @@ If you use C#, you must define the event call-back with a separate line of code.
 {: .box-note }
 **Note**: If the RFC destination is set to Unicode (SAP transaction code **SM59**), the property *IsUnicode* of the *RFCServer* object must be set to true.
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 using ERPConnect; 
   
 static void Main(string[] args) 
@@ -50,8 +50,7 @@ static void Main(string[] args)
    Console.Write( "Server is running. Press any key to exit."); 
    Console.ReadLine(); 
 }
-{% endhighlight %}
-</details>
+```
 
 <!---
 <details>
@@ -87,9 +86,7 @@ Module Module1
  
 The following code shows how the *IncomingCall* event is handled:
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 private static void s_IncomingCall(RFCServer Sender, RFCServerFunction CalledFunction) 
 { 
    if (CalledFunction.FunctionName=="Z_ADD") 
@@ -103,8 +100,8 @@ private static void s_IncomingCall(RFCServer Sender, RFCServerFunction CalledFun
    Else 
       throw new ERPConnect.ERPException("Function unknown"); 
 }
-{% endhighlight %}
-</details>
+```
+
 <!---
 <details>
 <summary>Click to open VB example.</summary>
@@ -133,9 +130,7 @@ The export parameters are passed back to SAP.<br>
 In this example the following ABAP code is used to call the new function **Z_ADD** in the remote destination *ERPTEST*. <br>
 The two numbers 26 and 25 are passed, and the result 51 is passed back. 
 
-<details>
-<summary>Click to open ABAP example.</summary>
-{% highlight abap %}
+```abap
 REPORT z_add_test 
 . 
   
@@ -147,8 +142,7 @@ CALL FUNCTION 'Z_ADD' DESTINATION 'ERPTEST'
    IMPORTING 
       res = result. 
    WRITE: / 'Result: ', result.  
-{% endhighlight %}
-</details>
+```
 
 The screenshot below shows the running ABAP program:<br>
 ![RFCServer-Console](/img/content/RFCServer-Console.png){:class="img-responsive" height="200px" width="200px"}  

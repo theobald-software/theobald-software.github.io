@@ -15,15 +15,13 @@ Die RFCServer-Klasse unterstützt eine SAP-Verbindung über SSO und SNC.<br>
 Die RFCServer-Klasse funktioniert ähnlich wie die Klasse R3Connection, siehe [SAP-Verbindung mit SSO und SNC](../sap-verbindung/sso-mit-snc).
 
 {: .box-note }
-**Hinweis**: Beachten Sie die Voraussetzungen, wie in [SSO mit SNC - Voraussetzungen](./sap-verbindung/sso-mit-snc#voraussetzungen) beschrieben.
+**Hinweis**: Beachten Sie die Voraussetzungen, wie in [SSO mit SNC - Voraussetzungen](../sap-verbindung/sso-mit-snc#voraussetzungen) beschrieben.
 
 ### SAP-Verbindung mit SSO und SNC
 Die RFCServer-Klasse stellt die Eigenschaft *SNCSettings* zur Verfügung. 
 Weisen Sie den Partnernamen in der SAP-Transaktion **SM59** (z.B. p:RFCServerSNC@THEOBALD) der Eigenschaft *OwnName* von *SNCSettings* zu. 
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 RFCServer rfcServer = new RFCServer();
 rfcServer.GatewayHost = "reutlingen";
 rfcServer.GatewayService = "sapgw00";
@@ -35,8 +33,7 @@ rfcServer.SNCSettings.OwnName = "p:RFCServerSNC@THEOBALD";
 rfcServer.Protocol = ClientProtocol.RFC;
 rfcServer.CanReceiveIdocs = true;
 rfcServer.IsUnicode = true;
-{% endhighlight %}
-</details>
+```
 
 
 ![RFCServer-Destination](/img/content/RFCServer-Destination.png){:class="img-responsive"}

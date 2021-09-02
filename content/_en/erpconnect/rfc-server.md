@@ -7,7 +7,7 @@ product: erpconnect
 parent: erpconnect
 childidentifier: rfc-server
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server
 ---
