@@ -1,16 +1,18 @@
 ---
-ref: ec-appendix-01
+ref: erpconnect-13
 layout: page
-title: Konvertierung der Datentypen SAP ⇔ .NET
-description: Konvertierung der Datentypen SAP ⇔ .NET
+title: Verschiedenes
+description: Anhang
 product: erpconnect
-parent: anhang
+parent: erpconnect
+childidentifier: anhang
 permalink: /:collection/:path
-weight: 1
+weight: 13
 lang: de_DE
-old_url: /ERPConnect-DE/default.aspx?pageid=konvertierung-der-datentypen-sap-net
+old_url: /ERPConnect-DE/default.aspx?pageid=anhang
 ---
 
+### Konvertierung der Datentypen
 Die Tabelle zeigt die Konvertierung der Datentypen zwischen ABAP / RFC und .NET.
 
 | ABAP       | ABAP Dictionary                    | ERPConnect      | .NET           | Bemerkungen                               |
@@ -29,3 +31,10 @@ Die Tabelle zeigt die Konvertierung der Datentypen zwischen ABAP / RFC und .NET.
 | t          | TIMS                               | RFCTYPE.TIME    | System.String  | Format is HHMMSS                          |
 | x          | RAW, LRAW                          | RFCTYPE.BYTE    | System.Byte [] |                                           |
 | xstring    | RAWSTRING                          | RFCTYPE.XSTRING | System.Byte [] | No ReadTable support                      |
+
+
+### ERPConnect API
+
+Die Dokumentation der ERPConnect API  ist im Objekt Browser in Visual Studio verfügbar (Menü: View -> Object Browser). Stellen Sie dazu sicher, dass die ERPConnectXX.xml imselben Verzeichnis wie die ERPConnectXX.dll liegt. 
+
+![erpconnect-api-object-browser](/img/content/erpconnect-api-object-browser.png){:class="img-responsive"}

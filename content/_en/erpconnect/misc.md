@@ -1,15 +1,18 @@
 ---
-ref: ec-appendix-01
+ref: erpconnect-13
 layout: page
-title: Data Type Mapping
-description: Data Type Mapping
+title: Miscellaneous
+description: Appendix
 product: erpconnect
-parent: appendix
+parent: erpconnect
+childidentifier: appendix
 permalink: /:collection/:path
-weight: 1
+weight: 13
 lang: en_GB
-old_url: /ERPConnect-EN/default.aspx?pageid=data-type-mapping
+old_url: /ERPConnect-EN/default.aspx?pageid=appendix
 ---
+
+### Data Type Mapping
 
 The table shows the  data type mapping between ABAP / RFC and .NET.
 
@@ -29,3 +32,10 @@ The table shows the  data type mapping between ABAP / RFC and .NET.
 | t          | TIMS                               | RFCTYPE TIME    | System String  | Format is HHMMSS                          |
 | x          | RAW, LRAW                          | RFCTYPE BYTE    | System Byte[]  |                                           |
 | xstring    | RAWSTRING                          | RFCTYPE XSTRING | System Byte[]  | No ReadTable support                      |
+
+
+### ERPConnect API
+
+The ERPConnect API documenation is availalbe in the Object Browser in Visual Studio (Menu: View -> Object Browser). Be sure that the file ERPConnectXX.xml is in the same folder as the ERPConnectXX.dll.
+
+![erpconnect-api-object-browser](/img/content/erpconnect-api-object-browser.png){:class="img-responsive" }
