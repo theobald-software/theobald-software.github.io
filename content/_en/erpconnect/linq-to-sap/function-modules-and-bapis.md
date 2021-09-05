@@ -47,17 +47,15 @@ Save the .erp file that contains the extraction component to trigger the proxy c
 
 The following code shows how the example above is addressed with an actual parameter and a return table:
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 SAPContext sc = new SAPContext("TestUser","SECRET01");
 var MyEmpls = sc.BAPI_EMPLOYEE_GETLIST("T*"); 
 foreach (var Empl in MyEmpls) 
    Console.WriteLine(Empl.PERNR + " " + Empl.ENAME); 
 Console.ReadLine();
-{% endhighlight %}
-</details>
+```
 
+<!---
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
@@ -72,5 +70,7 @@ Next
 Console.ReadLine()
 {% endhighlight %}
 </details>
+  -->
+  
 
 ![LINQToERP-Function-Modules-004](/img/content/LINQToERP-Function-Modules-004.png){:class="img-responsive" width="600px"}

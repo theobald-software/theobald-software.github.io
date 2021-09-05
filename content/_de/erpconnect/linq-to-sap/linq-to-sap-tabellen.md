@@ -47,9 +47,7 @@ Das geht über folgende Angaben:
 - Wenn das R3Connection-Objekt bereits bekannt ist, sprechen Sie DataContext.Connection direkt an. 
  
 Mit dem DataContext können nun entsprechende LINQ-Abfragen formuliert werden: <br>
-<details>
-<summary>Klicken Sie hier, um das C# Beispiel zu öffnen</summary>
-{% highlight csharp %}
+```csharp
 static void Main(string[] args) 
 { 
    SAPContext sc = new SAPContext("TestUser", "SECRET01"); 
@@ -64,9 +62,8 @@ static void Main(string[] args)
    Console.WriteLine("Press any key to exit"); 
    Console.ReadLine(); 
 }
-{% endhighlight %}
-</details>
-
+```
+<!---
 <details>
 <summary>Klicken Sie hier, um das VB Beispiel zu öffnen</summary>
 {% highlight visualbasic %}
@@ -86,3 +83,4 @@ Sub Main()
 End Sub
 {% endhighlight %}
 </details>
+  -->

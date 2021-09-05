@@ -46,9 +46,7 @@ In this example the IDoc component generates the following objects:
 The IDoc is sent with *Send()*.<br>
 The following code shows how to use the generated classes:
 
-<details>
-<summary>Click here to open a C# example.</summary>
-{% highlight csharp %}
+```csharp
 static void Main(string[] args) 
 { 
    try 
@@ -86,8 +84,7 @@ static void Main(string[] args)
          Console.WriteLine(e1.Message); Console.ReadLine(); 
       } 
 }
-{% endhighlight %}
-</details>
+```
 
 #### Check the result in SAP
 

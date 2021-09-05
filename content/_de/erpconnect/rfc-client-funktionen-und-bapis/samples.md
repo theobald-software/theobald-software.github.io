@@ -1,8 +1,8 @@
 ---
 ref: ec-calling-bapis-and-function-modules-02
 layout: page
-title: Beispiele
-description: Beispiele
+title: Beispielanwendungen
+description: Beispielanwendungen
 product: erpconnect
 parent: rfc-client-funktionen-und-bapis
 permalink: /:collection/:path

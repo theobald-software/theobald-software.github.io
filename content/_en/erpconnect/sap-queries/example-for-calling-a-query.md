@@ -1,7 +1,7 @@
 ---
 ref: ec-sap-queries-01
 layout: page
-title: Calling a query
+title: Calling SAP Queries
 description: Example for calling a query
 product: erpconnect
 parent: sap-queries
@@ -13,7 +13,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=example-for-calling-a-query
 
 This section shows how to call an SAP query and fetch data from it.
 
-### Sample Application
+### Fetching Data From a Query
 The following example shows how to extract data from a materials management query, see screenshot below. 
 
 ![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive" }

@@ -43,9 +43,7 @@ Apart from classical expressions like the operators <, > and =, *LINQ to SAP* of
 
 *InList* is only active when *ERPConnect.Linq* has been specified in a using statement (or in the imports in VB).
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 using ERPConnect.Linq; 
   
 […] 
@@ -54,5 +52,4 @@ var MyTexts = from t in sc.MAKTList
          where t.MATNR.StartsWith("100") 
          && t.SPRAS.InList("D","E") 
          select t;
-{% endhighlight %}
-</details>
+```

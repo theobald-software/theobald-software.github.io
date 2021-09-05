@@ -47,9 +47,7 @@ There are multiple ways to do that:
 - If you already know the R3Connection object, address it directly via the DataContext.Connection
 
 Using the DataContext, the corresponding LINQ queries can be formulated as shown the example below: <br>
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 static void Main(string[] args) 
 { 
    SAPContext sc = new SAPContext("TestUser", "SECRET01"); 
@@ -64,11 +62,10 @@ static void Main(string[] args)
    Console.WriteLine("Press any key to exit"); 
    Console.ReadLine(); 
 }
-{% endhighlight %}
-</details>
-
+```
+<!---
 <details>
-<summary>Click to open VB example.</summary>
+<summary>Klicken Sie hier, um das VB Beispiel zu öffnen</summary>
 {% highlight visualbasic %}
 Sub Main() 
    Dim sc As New LINQTable.SAPContext("TestUser", "SECRET01") 
@@ -86,3 +83,4 @@ Sub Main()
 End Sub
 {% endhighlight %}
 </details>
+  -->

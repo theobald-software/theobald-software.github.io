@@ -46,9 +46,7 @@ Neben den klassischen Ausdrücken wie den Operatoren <, > und =, bietet *LINQ to
 
 *InList* ist allerdings nur aktiv, wenn *ERPConnect.Linq* als using-Statement angegeben ist (bzw. bei den Imports unter VB). 
 
-<details>
-<summary>Klicken Sie hier, um das C# Beispiel zu öffnen.</summary>
-{% highlight csharp %}
+```csharp
 using ERPConnect.Linq; 
   
 […] 
@@ -57,5 +55,4 @@ var MyTexts = from t in sc.MAKTList
          where t.MATNR.StartsWith("100") 
          && t.SPRAS.InList("D","E") 
          select t;
-{% endhighlight %}
-</details>
+```

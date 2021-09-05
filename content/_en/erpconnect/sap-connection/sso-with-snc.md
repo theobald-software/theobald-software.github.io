@@ -49,7 +49,7 @@ If you do not want to use the SNC properties to create a connection, set *SNCEna
 It disables all settings without changing the other SNC parameter. 
 
 
-### Examples
+### Samples
 The following example codes show how to pass the necessary parameters for an SNC connection to an R3Connection object.
 
 ****

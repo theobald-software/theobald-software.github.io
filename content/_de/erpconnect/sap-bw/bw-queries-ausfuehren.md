@@ -10,7 +10,7 @@ weight: 1
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=bw-queries-ausfuehren
 ---
-Dieser Abschnitt zeigt wie man mit ERPConnect ein BW Query ausführt.<br>
+Dieser Abschnitt zeigt wie man mit ERPConnect ein BW Query ausführt.
 Die folgende Beispielanwendung liest Daten aus einer Beispiel-Query aus.
 
 ### Über die Beispiel-Query
@@ -26,7 +26,7 @@ Die folgende Abbildung zeigt die Query im Designer. <br>
 Die Dimensionen *Material* und *Auftraggeber*, sowie die Kennzahlen *Fakturierte Menge* und *Kosten* werden in die Ergebnismenge übergeben. 
 Die Dimension hat die Variable *MAT01*, die Einschränkungen auf die Materialnummer erlaubt. 
 
-### Die Beispiel-Query ausführen
+### Queries ausführen
 
 1. Bauen Sie mit der *R3Connection-Klasse* eine Verbindung zum R/3 System auf.
 2. Erstellen Sie mit der *CreateCube*-Funktion ein BWCube-Objekt. 

@@ -46,20 +46,15 @@ Speichern Sie die .erp-Datei, um die Code-Generierung der Proxy-Klasse im Hinter
 
 Der folgende Code zeigt die Ansteuerung des obigen Beispiels mit jeweils einem Übergabewert und einer Rückgabetabelle:
 
-<details>
-<summary>Klicken Sie hier, um das C# Beispiel zu öffnen</summary>
-{% highlight csharp %}
+```csharp
 SAPContext sc = new SAPContext("TestUser","SECRET01");
 var MyEmpls = sc.BAPI_EMPLOYEE_GETLIST("T*"); 
 foreach (var Empl in MyEmpls) 
    Console.WriteLine(Empl.PERNR + " " + Empl.ENAME); 
 Console.ReadLine();
-{% endhighlight %}
-</details>
+```
 
-<details>
-<summary>Klicken Sie hier, um das VB Beispiel zu öffnen</summary>
-{% highlight visualbasic %}
+<!---
 Dim sc As New LINQTable.SAPContext("TestUser", "SECRET01") 
   
 Dim MyEmpls = From t In sc.BAPI_EMPLOYEE_GETLIST("T*") Select t 
@@ -69,7 +64,7 @@ For Each Empl In MyEmpls
 Next 
   
 Console.ReadLine()
-{% endhighlight %}
-</details>
+  -->
+  
 
 ![LINQToERP-Function-Modules-004](/img/content/LINQToERP-Function-Modules-004.png){:class="img-responsive"}

@@ -1,7 +1,7 @@
 ---
 ref: ec-receiving-and-sending-idocs-04
 layout: page
-title: XML für IDocs verwenden
+title: XMLs verwenden
 description: IDocs als XML verarbeiten
 product: erpconnect
 parent: idocs-senden-und-empfangen

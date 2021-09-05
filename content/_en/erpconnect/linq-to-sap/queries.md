@@ -50,9 +50,7 @@ Both parameter values correspond to range objects introduced in the section [Exa
 
 Example code:
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 private void btnGo_Click(object sender, EventArgs e) 
 { 
    SAPContext sc = new SAPContext("TestUser", "SECRET01"); 
@@ -67,8 +65,7 @@ private void btnGo_Click(object sender, EventArgs e)
    var MyQueryResult = from res in sc.ZVV01(SoldTo, MatNr) select res; 
    this.dataGridView1.DataSource = MyQueryResult.ToList(); 
 }
-{% endhighlight %}
-</details>
+```
 
 In this example text boxes serve as variables, see screenshot below.
 

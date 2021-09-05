@@ -1,7 +1,7 @@
 ---
 ref: ec-rfc-server-02
 layout: page
-title: Funktionen erstellen
+title: RFC-Funktionen erstellen
 description: Beispiel
 product: erpconnect
 parent: rfc-server

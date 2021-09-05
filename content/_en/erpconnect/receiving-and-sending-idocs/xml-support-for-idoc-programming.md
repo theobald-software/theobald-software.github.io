@@ -1,7 +1,7 @@
 ---
 ref: ec-receiving-and-sending-idocs-04
 layout: page
-title: Using XMLs for IDocs
+title: Using XMLs
 description: XML-Support for IDoc programming
 product: erpconnect
 parent: receiving-and-sending-idocs

@@ -47,9 +47,7 @@ In diesem Beispiel generiert die IDoc Komponente die folgenden Objekte:
 Das IDoc wird mit *Send()* versenden.<br>
 Der folgende Code zeigt die Anwendung der generierten Klassen:
 
-<details>
-<summary>Klicken Sie hier, um das C# Beispiel zu öffnen</summary>
-{% highlight csharp %}
+```csharp
 static void Main(string[] args) 
 { 
    try 
@@ -87,8 +85,7 @@ static void Main(string[] args)
          Console.WriteLine(e1.Message); Console.ReadLine(); 
       } 
 }
-{% endhighlight %}
-</details>
+```
 
 #### Ergebnis in SAP prüfen
 

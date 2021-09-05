@@ -1,7 +1,7 @@
 ---
 ref: ec-sap-queries-01
 layout: page
-title: Eine Query aufragen
+title: SAP-Queries ausführen
 description: Beispiel für das Aufrufen einer Query
 product: erpconnect
 parent: sap-queries
@@ -13,7 +13,7 @@ old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-aufrufen-einer-que
 
 Dieser Abschnitt zeigt, wie man eine SAP Query aufruft und Daten einer Query ausliest.
 
-### Beispielanwendung
+### Daten einer Query abrufen
 Im folgenden Beispiel werden die Daten einer Query aus dem Bereich Materialwirtschaft extrahiert, siehe folgende Grafik. 
 
 ![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive"}

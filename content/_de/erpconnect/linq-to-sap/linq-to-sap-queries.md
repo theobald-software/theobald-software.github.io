@@ -48,9 +48,7 @@ Die beiden Übergabeparameter entsprechen den Range-Objekten, die im Abschnitt [
 
 Beispiel Code: 
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 private void btnGo_Click(object sender, EventArgs e) 
 { 
    SAPContext sc = new SAPContext("TestUser", "SECRET01"); 
@@ -65,8 +63,7 @@ private void btnGo_Click(object sender, EventArgs e)
    var MyQueryResult = from res in sc.ZVV01(SoldTo, MatNr) select res; 
    this.dataGridView1.DataSource = MyQueryResult.ToList(); 
 }
-{% endhighlight %}
-</details>
+```
 
 In diesem Beispiel dienen Textboxen als Variablen, siehe Screenshot.
 

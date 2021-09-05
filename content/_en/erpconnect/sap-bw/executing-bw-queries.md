@@ -1,8 +1,8 @@
 ---
 ref: ec-sap-bw-01
 layout: page
-title: Executing BW queries
-description: Executing BW Queries
+title: Calling BW Queries
+description: Calling BW Queries
 product: erpconnect
 parent: sap-bw
 permalink: /:collection/:path
@@ -11,8 +11,8 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=executing-bw-queries
 ---
 
-This section shows how to execute a BW Query using ERPConnect.<br>
-The following sample application fetches data from a sample Query.
+This section shows how to execute a BW Query using ERPConnect.
+The following sample fetches data from a Query.
 
 ### About the Sample Query
 This example uses a BW query *ZSIMPLEQUERY* that is based on the cube *0D_DECU*. <br>
@@ -25,7 +25,7 @@ The following screenshot shows the query in the designer. <br>
 The dimensions *Material* and *Sold-to party* as well as the key figures *Billed Quantity* and *Costs* are drawn into the query output. <br>
 The dimension has a variable called *MAT01*, which allows a limitation to the material number.
 
-### Executing the Sample Query
+### Executing Queries
 1. Open a client connection to the R/3 system using the *R3Connection* class.
 2. Use the *CreateCube* function to create a BWCube object. 
 Its name is made up of the cube name and query name.
