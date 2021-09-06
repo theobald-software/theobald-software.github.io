@@ -17,10 +17,5 @@ The Function Module component uses Function Modules/BAPIs to write data to and f
 {: .box-tip }
 **Tip:** To get information on the basics of YunIO, refer to [Getting Started with YunIO](./getting-started). <br>
 
-### How to Use the Function Module Component 
-
-Navigate to the *Services* menu and add a new service. <br>
-Choose **Function Module** as the *Extraction Type* and complete the setup as described in the following sections:
-
 ****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

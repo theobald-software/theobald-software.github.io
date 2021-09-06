@@ -19,10 +19,5 @@ The SAP Tables or Views component extracts Tables or Views from a connected SAP 
 {: .box-tip }
 **Tip:** To get information on the basics of YunIO, refer to [Getting Started with YunIO](./getting-started). <br>
 
-### How to Use the SAP Tables or Views Component 
-
-Navigate to the *Services* menu and add a new service. <br>
-Choose **SAP Table or View** as the *Extraction Type* and complete the setup as described in the following sections:
-
 ****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

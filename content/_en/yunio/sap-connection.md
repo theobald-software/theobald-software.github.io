@@ -4,9 +4,9 @@ layout: page
 title: SAP Connection
 description: SAP Connection
 product: yunio
-parent: introduction
+parent: yunio
 permalink: /:collection/:path
-weight: 5
+weight: 9
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
 progressstate: 5
@@ -19,22 +19,21 @@ progressstate: 5
 To establish a connection to SAP the access to general authority objects (RFC) must be available.
 Make sure to gain access to the general authority objects. For more information, see the knowledge base article on [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-The SAP connection settings are in the *Connection* section of the Web UI.
-To add a new SAP connection, click **[Add Connection]**.<br>
-To edit an existing connection, click on the name of the connection you want to edit.
+The SAP connection settings are in the *Connection* section of the Web UI (1).
+- To add a new SAP connection, click **[Add Connection]** (2).<br>
+- To edit an existing connection, click on the name of the connection you want to edit (3).
 
+![YunIO-Create-Connection](/img/content/yunio/yunio-connection.png){:class="img-responsive" }
 
 ### Connection Details
 
-The menu to create and edit SAP connections is divided into 3 subsections:
+The menu to create and edit SAP connections is divided into 3 sections:
 - [System](#system)
 - [Authentication](#authentication)
 - [Test Connection](#test-the-sap-connection)
 
-Fill out the connection details to establish an SAP connection.
-
-![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive"}
-
+Fill out the connection details and click **[Save]** to establish an SAP connection.<br>
+![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
 ### System
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server
@@ -50,7 +49,7 @@ There are two possibilities to connect to an SAP source system:
 	- **Client**: a three-digit number of the SAP client between 000 and 999, e.g., 800.
 	- **Language**: the logon language for the SAP system, e.g., EN for English or DE for German.
 	
-See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+For more information on Load Balancing, see [SAP online help: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 
 #### Accessing via SAP router
@@ -58,7 +57,7 @@ See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/
 If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name. <br>
 If the application server is "hamlet" and the router string is ``/H/lear.theobald-software.com/H/``, set the host property to ``/H/lear.theobald-software.com/H/hamlet``.
 
-See also [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm) in the SAP online help.
+For more information on SAP routers, see [SAP online help: SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm) in the SAP online help.
 
 
 ### Authentication
@@ -81,6 +80,5 @@ Instead, SAP credentials need to be provided via basic authentication when execu
 
 ### Test the SAP Connection
 
-Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
-
-**Bild einfügen!**
+Click **[Test Connection]** to validate the connection parameters. <br>
+A window with a status message opens in the bottom right corner of the window.

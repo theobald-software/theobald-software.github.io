@@ -35,7 +35,7 @@ To edit an existing connection, click on the connection you want to edit.
 4. Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
 5. Click **[Save]** to save your input.
 
-For more detailed information on the SAP connection, see [SAP Connection](./introduction/sap-connection).
+For more detailed information on establishing an SAP connection, see [SAP Connection](./introduction/sap-connection).
 
 ### Creating a Service
 

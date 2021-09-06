@@ -36,7 +36,7 @@ Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie den Namen der V
 Je nachdem ob der Verbindungsaufbau erfolgreich war oder nicht, öffnet sich ein Fenster mit einer entsprechende Statusmeldung.
 5. Klicken Sie auf **[Save]** um Ihre Eingaben zu speichern.
 
-Für eine detailiertere Beschreibung der SAP-Verbindung, siehe [SAP-Verbindung](.einfuehrung/sap-verbindungen-anlegen).
+Für eine detailiertere Beschreibung zum Erstellen einer SAP-Verbindung, siehe [SAP-Verbindung](.einfuehrung/sap-verbindungen-anlegen).
 
 ### Eine Extraktion anlegen
 
@@ -50,7 +50,7 @@ Unter *Services* können Sie neue Extraktionen erstellen und bereits angelegte E
 6. Geben Sie in das Feld **Search Term** den Namen der zu extrahierenden Tabelle/BAPI ein. Sie können für die Suche Wildcards ( * ) verwenden. 
 7. Klicken Sie auf **[Search]**, um die Suchergebnisse anzuzeigen.
 8. Wählen Sie die gewünschte Quelldatei aus, indem Sie auf den Namen der Tabelle/BAPI klicken.
-9. Je nach gewähltem Extraktionstyp können Sie weitere Einstellungen vornehmen, siehe [Table](./xtract-is-table) oder [BAPI](./xtract-is-bapi).
+9. Je nach gewähltem Extraktionstyp können Sie weitere Einstellungen vornehmen, siehe [SAP Tabelle oder Ansicht](./xtract-is-table) oder [Funktionsbausteine](./xtract-is-bapi).
 10. Klicken Sie auf **[Save]**, um die Extraktion zu speichern. <br>
 Sie können die Extraktion bearbeiten, indem Sie neben der Extraktion unter *Actions* auf **[..]** klicken und **Edit** wählen.
 
