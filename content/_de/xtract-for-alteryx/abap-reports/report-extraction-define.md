@@ -9,5 +9,5 @@ permalink: /:collection/:path
 weight: 1
 lang: de_DE
 ---
-
+Der folgende Abschnitt beschreibt die Anwendung der Report Komponente. 
 {% include _content/de/xis-specific/abap-reports/reports-suchen.md %}
