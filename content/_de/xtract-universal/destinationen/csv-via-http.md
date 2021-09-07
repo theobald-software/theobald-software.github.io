@@ -33,4 +33,5 @@ CSV (via HTTP) wird von mehreren Produkten unterstützt. Die folgenden Produkte 
 ****
 #### Weiterführende Links
 - KNIME Integration via [SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
+- [Dynamic Runtime Parameter within KNIME Workflow](https://kb.theobald-software.com/xtract-universal/dynamic-runtime-paramater%20within-KNIME-workflow)
 

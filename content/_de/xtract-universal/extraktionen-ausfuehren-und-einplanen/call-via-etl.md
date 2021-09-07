@@ -16,6 +16,7 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 ### Integration mittels Plug-In
 - [Xtract Universal Alteryx Plugin](../destinationen/alteryx-de/voraussetzungen-alteryx-de)
 - [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
+- [Dynamic Runtime Parameter within KNIME Workflow](https://kb.theobald-software.com/xtract-universal/dynamic-runtime-paramater%20within-KNIME-workflow)
 - [Xtract Universal Power BI Custom Connector](../destinationen/Power-BI-Connector)
 - [Power BI Configure scheduled refresh](https://docs.microsoft.com/de-de/power-bi/connect-data/refresh-scheduled-refresh)
 

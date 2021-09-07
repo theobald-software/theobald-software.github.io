@@ -17,6 +17,7 @@ All ETL tools offer the following options for running extractions:
 ### Integration via Plug-In
 - [Xtract Universal Alteryx Plugin](../destinations/alteryx/alteryx-requirements)
 - [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
+- [Dynamic Runtime Parameter within KNIME Workflow](https://kb.theobald-software.com/xtract-universal/dynamic-runtime-paramater%20within-KNIME-workflow)
 - [Xtract Universal Power BI Custom Connector](../destinations/Power-BI-Connector)
 - [Power BI Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
 
