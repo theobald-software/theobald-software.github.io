@@ -46,7 +46,7 @@ The following section shows how to use the Report Component. <br>
 {: .box-note }
 **Note:** For more information on how to define report columns automatically and manually, see [Define Columns](./report-columns-define).
 
-
+****
 #### Related Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
 

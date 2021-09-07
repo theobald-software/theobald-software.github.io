@@ -50,6 +50,6 @@ Alternativ können Sie nach SAP Transaktion Codes suchen, indem Sie die Checkbox
 {: .box-note }
 **Hinweis:** Für detaillierte Informationen zur automatischen und manuellen Definition von Spalten, siehe [Spalten Definieren](./report-columns-define).
 
-
+****
 #### Weiterführende Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
