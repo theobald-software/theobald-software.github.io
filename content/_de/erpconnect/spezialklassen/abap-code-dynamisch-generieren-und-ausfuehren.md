@@ -14,7 +14,8 @@ old_url: /ERPConnect-DE/default.aspx?pageid=abap-code-dynamisch-generieren-und-a
 
 Die Klasse *ABAPCode* bietet die Möglichkeit, den Code von ABAP-Reports an SAP zu übergeben und dort on the fly auszuführen. 
 Dadurch ergeben sich nahezu unbegrenzte Möglichkeiten.<br>
-Dieser Abschnitt zeigt, wie Sie einen einfachen ABAP-Interpreter erstellen, der ein dynamisches SQL-Statement ausführt.<br>
+
+Das folgende Beispiel zeigt, wie Sie einen einfachen ABAP-Interpreter erstellen, der ein dynamisches SQL-Statement ausführt.<br>
 ![AbapPad](/img/content/AbapPad.png){:class="img-responsive"}
 
 ### Einen ABAP-Interpreter erstellen
@@ -26,27 +27,30 @@ Dieser Abschnitt zeigt, wie Sie einen einfachen ABAP-Interpreter erstellen, der 
 
 ```csharp
 private void button1_Click(object sender, System.EventArgs e)
-        {
-            ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-            con.Open(false);
- 
-            ERPConnect.Utils.ABAPCode code = new ERPConnect.Utils.ABAPCode();
-            code.Connection = con;
-            foreach (string s in textBox1.Lines)
+{
+	using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
             {
-                code.AddCodeLine(s);
+                ERPConnect.LIC.SetLic("LicenseNumber");
+                con.Open(false);
+				
+                ERPConnect.Utils.ABAPCode code = new ERPConnect.Utils.ABAPCode();
+                code.Connection = con;
+				
+                foreach (string s in txtABAPCode.Lines)
+                {
+                    code.AddCodeLine(s);
+                }
+                if (code.Execute())
+                {
+                    for (int i = 0; i < code.ResultLineCount; i++)
+                        txtResult.Text += code.GetResultLine(i) + "\r\n";
+                }
+                else
+                {
+                    txtResult.Text = "ABAP Error: " + code.LastABAPSyntaxError;
+                }
             }
- 
-            if (code.Execute())
-            {
-                for (int i = 0; i < code.ResultLineCount; i++)
-                    textBox2.Text += code.GetResultLine(i) + "\r\n";
-            }
-            else
-            {
-                textBox2.Text = "ABAP Error: " + code.LastABAPSyntaxError;
-            }
-        }
+}
 ```
 
 <!---

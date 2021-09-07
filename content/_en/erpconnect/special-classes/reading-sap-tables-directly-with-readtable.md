@@ -26,28 +26,29 @@ For this the columns *MATNR* (material number) and *MAKTX* (material text) are n
 ```csharp
 static void Main(string[] args) 
 { 
-    ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License.
-    ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-    con.Open();  //Open the connection to SAP.
-
-    ERPConnect.Utils.ReadTable table = new ERPConnect.Utils.ReadTable(con);
-    table.AddField("MATNR"); 
-    table.AddField("MAKTX"); 
-    table:WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
-    table.TableName = "MAKT"; 
-    table.RowCount = 10; 
-
-    table.Run(); 
-    DataTable resulttable = table.Result; 
-         
-    for(int i=0; i < resulttable.Rows.Count;i++) 
-        { 
-            Console.WriteLine( 
-            resulttable.Rows[i]["MATNR"].ToString() + " " + 
-            resulttable.Rows[i]["MAKTX"].ToString()); 
-        }
-          
-    Console.ReadLine(); 
+    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+            {
+                ERPConnect.LIC.SetLic("LicenseNumber");
+                con.Open(false);
+				
+                ReadTable table = new ReadTable(con);
+                table.AddField("MATNR");
+                table.AddField("MAKTX");
+                table.WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
+                table.TableName = "MAKT";
+                table.RowCount = 10;
+				
+                table.Run();
+				
+                DataTable resulttable = table.Result;
+                for (int i = 0; i < resulttable.Rows.Count; i++)
+                {
+                    Console.WriteLine(
+                     resulttable.Rows[i]["MATNR"].ToString() + " " +
+                     resulttable.Rows[i]["MAKTX"].ToString());
+                }
+                Console.ReadLine();
+            }
 }
 
 ```
