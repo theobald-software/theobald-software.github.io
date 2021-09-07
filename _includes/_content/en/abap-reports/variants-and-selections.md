@@ -8,13 +8,13 @@ This minimizes the need to enter selections each time you run a report.
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
 
 ![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
-#### Choose a Variant
+### Choose a Variant
 Choose a variant from the drop-down-list *Variant* (1). If you create a new variant in SAP after the report extraction was created, click the **[Refresh]** button next to the drop-down list to access the new variant.
 
 {: .box-note }
 **Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. To see the definition of a variant, take a look at the report's variant in SAP.
 
-#### Edit Selections
+### Edit Selections
 
 This section corresponds to the report's input screen in SAP. Some selection fields only have a technical name and no description. 
 To understand which field corresponds to a field in SAP, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. 
