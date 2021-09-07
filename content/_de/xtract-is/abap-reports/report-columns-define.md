@@ -1,13 +1,13 @@
 ---
-ref: xiaa-report-04
+ref: xi-report-04
 layout: page
 title: Report-Spalten definieren
 description: Report-Spalten definieren
-product: xtract-is-for-azure
+product: xtract-is
 parent: report
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=report-spalten_definieren
 ---
-{% include _content/de/xis-specific/abap-reports/report-spalten_definieren.md %}
+{% include _content/de/abap_reports/report-spalten-definieren.md %}
