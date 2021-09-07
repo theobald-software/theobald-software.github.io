@@ -11,19 +11,20 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=executing-bw-queries
 ---
 
-This section shows how to execute a BW Query using ERPConnect.
-The following sample fetches data from a Query.
+The following sample shows how to fetch data from a BW Query using ERPConnect.
 
 ### About the Sample Query
-This example uses a BW query *ZSIMPLEQUERY* that is based on the cube *0D_DECU*. <br>
+This example uses the BW query *ZSIMPLEQUERY* which is based on the cube *0D_DECU*. <br>
 The following screenshot shows the query in the designer. <br>
 ![BW-001](/img/content/BW-001.png){:class="img-responsive" }
 
 {: .box-note }
 **Note**: To allow external access to a BW Query the checkbox **Allow external access** has to be set to active in the preferences for the query.
 
-The dimensions *Material* and *Sold-to party* as well as the key figures *Billed Quantity* and *Costs* are drawn into the query output. <br>
-The dimension has a variable called *MAT01*, which allows a limitation to the material number.
+The dimensions *Material* and *Sold-to party* as well as the key figures *Billed Quantity* and *Costs* are drawn into a *DataGrid*, see screenshot below. <br>
+The dimension has a variable called *MAT01* that allows a limitation to the material number.
+
+![BW-002](/img/content/BW-002.png){:class="img-responsive" width="600px" }
 
 ### Executing Queries
 1. Open a client connection to the R/3 system using the *R3Connection* class.
@@ -39,6 +40,8 @@ There are range tables behind each variable.
 {: .box-note }
 **Note**: The denomination of the key figures via the query generation in the designer does not conform to the original 
 technical name. That means key figures are addressed by the ordinal number, not the name.
+
+### Sample Code
 
 ```csharp
 private void Go_Click(object sender, System.EventArgs e)
@@ -92,8 +95,6 @@ End Sub
 </details>
 -->
 
-The following screenshot shows the query output in the grid.<br>
-![BW-002](/img/content/BW-002.png){:class="img-responsive" width="600px" }
 
 ****
 #### Related Links

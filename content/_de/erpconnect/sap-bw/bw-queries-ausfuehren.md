@@ -10,8 +10,7 @@ weight: 1
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=bw-queries-ausfuehren
 ---
-Dieser Abschnitt zeigt wie man mit ERPConnect ein BW Query ausführt.
-Die folgende Beispielanwendung liest Daten aus einer Beispiel-Query aus.
+Die folgende Beispielanwendung zeigt wie Sie mit ERPConnect Daten aus einer BW Query auslesen.
 
 ### Über die Beispiel-Query
 
@@ -23,8 +22,11 @@ Die folgende Abbildung zeigt die Query im Designer. <br>
 {: .box-note }
 **Hinweis**: Beachten Sie, dass in den Einstellungen der Query das Häkchen *Externen Zugriff zulassen* gesetzt sein muss.
 
-Die Dimensionen *Material* und *Auftraggeber*, sowie die Kennzahlen *Fakturierte Menge* und *Kosten* werden in die Ergebnismenge übergeben. 
+Die Dimensionen *Material* und *Auftraggeber*, sowie die Kennzahlen *Fakturierte Menge* und *Kosten* werden in die Ergebnismenge übergeben, siehe Screenshot. 
 Die Dimension hat die Variable *MAT01*, die Einschränkungen auf die Materialnummer erlaubt. 
+
+![BW-002](/img/content/BW-002.png){:class="img-responsive" width="600px" }
+
 
 ### Queries ausführen
 
@@ -42,6 +44,7 @@ Hinter einer Variable liegen immer Range-Tabellen.
 **Hinweis**: Beachten Sie, dass die Benennung der Kennzahlen durch die Query-Generierung im Designer nicht den originalen, 
 technischen Namen entspricht. Die Kennzahlen werden daher über die Ordinalzahl und nicht über den Namen angesprochen.
 
+### Beispielcode
 
 ```csharp
 private void Go_Click(object sender, System.EventArgs e)
@@ -94,8 +97,6 @@ End Sub
 {% endhighlight %}
 </details>
 -->
-Der folgende Screenshot zeigt die Ergebnismenge im Grid. <br>
-![BW-002](/img/content/BW-002.png){:class="img-responsive" width="600px" }
 
 ****
 #### Weiterführende Links

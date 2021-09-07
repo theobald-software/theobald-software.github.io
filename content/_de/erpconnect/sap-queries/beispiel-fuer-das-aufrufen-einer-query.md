@@ -11,23 +11,28 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-aufrufen-einer-query
 ---
 
-Dieser Abschnitt zeigt, wie man eine SAP Query aufruft und Daten einer Query ausliest.
+Die folgende Beispielanwendung zeigt wie Sie mit ERPConnect Daten aus einer SAP Query auslesen.
 
-### Daten einer Query abrufen
-Im folgenden Beispiel werden die Daten einer Query aus dem Bereich Materialwirtschaft extrahiert, siehe folgende Grafik. 
+### Über die Beispiel-Query
+
+Dieses Beispiel verwendet die Trainings-Query *D3*, die Fluginformationen von Flugzeugen enthält.
+Daten, die bestimmten Auswahlkriterien entsprechen (z.B. Fluggesellschaft und Datum) werden ausgelesen und in ein *DataGrid* eingetragen, siehe folgenden Screenshot:
 
 ![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive"}
 
-{: .box-note }
-**Hinweis**: Wenn Sie den techn. Namen eines Parameters nicht kennen, können Sie ihn sich in Ihrem SAP-System anzeigen lassen,
-Verwenden Sie die Transaktion **SQ01** oder **SQ02**
+{: .box-tip }
+**Tipp**: Wenn Sie den techn. Namen eines Parameters nicht kennen, können Sie ihn sich in Ihrem SAP-System anzeigen lassen,
+Verwenden Sie die Transaktion **SQ01** oder **SQ02**, um eine Query zu suchen. Öffnen Sie die Beschreibung und scrollen Sie zum Abschnitt *Selections*.
+Alle Parametereigenschaften und Namen sind dort aufgelistet.
+
+### Daten einer Query abrufen
 
 1. Bauen Sie mit der R3Connection-Klasse eine Verbindung zum R/3 System auf.
 2. Verwenden Sie die Methode *CreateQuery*, um ein Qery-Objekt zu erstellen. 
 Jede SAP Query ist durch drei Angaben eindeutig definiert: 
 - Der Workspace (lokal oder global)
-- die Benutzergruppe (in diesem Beispiel */SAPQUERY/MB*) 
-- der Name der Query selbst (in diesem Beispiel *MEBESTWERTAN*).
+- die Benutzergruppe (in diesem Beispiel *BT*) 
+- der Name der Query selbst (in diesem Beispiel *D3*).
 3. Definieren Sie die Parameter der Query.
 Jeder Parameter hat einen eindeutigen technischen Namen. 
 Über den Indexer können Sie auf die Range-Collection eines Parameters zugreifen.
@@ -40,6 +45,7 @@ Ein einzelner Range wird bestimmt durch das
 Die Ergebnismenge befindet sich in einer ADO.NET DataTable. 
 Sie kann über die Eigenschaft *Result* des Query-Objekts abgerufen werden. 
 
+### Beispielcode
 ```csharp
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
     {
@@ -47,30 +53,29 @@ private void btnFetchQueryData_Click(object sender, System.EventArgs e)
       con.Open(false);
  
       // Create Query object Query q; 
-         try
-         {
-            q = con.CreateQuery(WorkSpace.GlobalArea,
-             "/SAPQUERY/MB", "MEBESTWERTAN");
- 
-			// Add a criteria (in this case the material number) 
-            q.SelectionParameters["SP$00017"].Ranges.Add(
-                Sign.Include, RangeOption.Equals, "100-100");
- 
-            // Add a second criteria (in this case the currency) 
-            q.SelectionParameters["S_WAERS"].Ranges.Add(
-                Sign.Include, RangeOption.Equals, "USD");
- 
+        try
+        {
+            Query q = con.CreateQuery(WorkSpace.GlobalArea, "BT", "D3");
+
+            // Add a criteria (in this case the airline) 
+            q.SelectionParameters["CARRID"].Ranges.Add(
+                Sign.Include, RangeOption.Equals, inputAirline.Text);
+
+            // Add a second criteria (in this case the date) 
+            q.SelectionParameters["FLDATE"].Ranges.Add(
+                Sign.Include, RangeOption.Between, inputStartDate.Text, inputEndDate.Text);
+
             // Run the Query 
             q.Execute();
- 
+
             // Bind result to datagrid 
-            this.dgvQuery.DataSource = q.Result;
-         }
-         catch (Exception e1)
-         {
+            this.dataGridView1.DataSource = q.Result;
+        }
+        catch (Exception e1)
+        {
             MessageBox.Show(e1.Message);
             return;
-         }
+        }
     }
 ```
 

@@ -18,7 +18,7 @@ The following section shows how to use the Table component of the *LINQ to ERP* 
 2. Enter the name of the table to be extracted in the field **Table** (1). Use wildcards (*) if needed. <br>
 ![LINQToERP-Tables-001](/img/content/LINQToERP-Tables-001.png){:class="img-responsive" }
 3. Click **[Search]** (binoculars icon) (2). Search results appear in the preview window.
-4. Select a table (3) and click **[OK]** (4).
+4. Select a table (3) and click **[OK]** (4) to proceed.
 
 ### Filtering Columns
 After a table has been loaded, the window "LINQ to ERP Tables" opens. 

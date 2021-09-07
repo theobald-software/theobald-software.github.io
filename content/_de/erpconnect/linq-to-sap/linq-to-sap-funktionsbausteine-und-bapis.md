@@ -20,7 +20,7 @@ Funktionsbausteine und BAPIs werden bei der LINQ-Anwendung nahezu gleich gehandh
 2. Geben Sie in das Feld Function (1) den Namen des zu extrahierenden Funktionsbausteins/BAPIs ein. Falls nötig, verwenden Sie Wildcards (*).
 ![LINQToERP-Function-Modules-001](/img/content/LINQToERP-Function-Modules-001.png){:class="img-responsive" }
 3. Klicken Sie auf **[Search]** (Fernglassymbol)(2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
-4. Wählen Sie einen Funktionsbaustein/BAPI (3) aus und klicken Sie auf **[OK]** (4).
+4. Wählen Sie einen Funktionsbaustein/BAPI (3) aus und klicken Sie auf **[OK]** (4), um fortzufahren.
 
 ### Export, Import, Changings und Tables definieren
 Nachdem ein Funktionsbaustein/BAPI geladen wurde, öffnet sich das Fenster “RFC Function Modules/BAPIs”.
