@@ -58,7 +58,7 @@ Die folgenden Beispielcodes zeigen wie man Parameter für eine SNC-Verbindung an
 ```csharp
 using (R3Connection con = new R3Connection()) 
 {
-	con.Host = "duncan";
+	con.Host = "sap-erp-as05.example.com";
 	con.SystemNumber = 7;
 	con.Client = "800";
 	con.Language = "DE";
@@ -74,7 +74,7 @@ using (R3Connection con = new R3Connection())
 ```csharp
 using (R3Connection con = new R3Connection())
 {
-	con.Host = "duncan";
+	con.Host = "sap-erp-as05.example.com";
 	con.SystemNumber = 7;
 	con.Client = "800";
 	con.Language = "DE";
@@ -90,7 +90,7 @@ using (R3Connection con = new R3Connection())
 ```csharp
 using (R3Connection con = new R3Connection())
 {
-    con.Host = "duncan";
+    con.Host = "sap-erp-as05.example.com";
     con.SystemNumber = 7;
     con.Client = "800";
     con.Language = "DE";
@@ -108,7 +108,7 @@ using (R3Connection con = new R3Connection())
 ```csharp
 using (R3Connection con = new R3Connection())
 {
-    con.Host = "duncan";
+    con.Host = "sap-erp-as05.example.com";
     con.SystemNumber = 7;
     con.Client = "800";
     con.Language = "DE";

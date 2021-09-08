@@ -25,11 +25,11 @@ Die Anmeldedaten müssen einmalig eingegeben werden, um ein Ticket bei SAP zu be
 ```csharp
 using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
 {
-    cont.Host = "duncan";  
+    cont.Host = "sap-erp-as05.example.com";  
     cont.SystemNumber = 7;  
     cont.Client = "800";  
     cont.Language = "DE";  
-    cont.UserName = "Theobald";  
+    cont.UserName = "alice";  
     cont.Password = "pw";  
   
     string ssoticket = cont.GetSSOTicket();
@@ -43,9 +43,10 @@ Benutzername und Passwort müssen nicht übergeben werden, da der Account impliz
 ```csharp
 using(ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
 {
-    conts.Host = "duncan"; 
+    conts.Host = "sap-erp-as05.example.com"; 
     conts.SystemNumber = 7; 
-    conts.Client = "800"; conts.Language = "EN"; 
+    conts.Client = "800"; 
+	conts.Language = "EN"; 
        
     conts.OpenSSO(ssoticket);
 }

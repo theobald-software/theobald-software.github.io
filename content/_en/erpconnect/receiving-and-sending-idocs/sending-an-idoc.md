@@ -29,40 +29,42 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 	 ```csharp
      static void Main(string[] args)  
      {  
-         R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-         con.Open(false);  
+        using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+        {
+			con.Open(false);  
         
-         Console.WriteLine("Which IDocnumber would you like to manipulate?");  
-         string IdocNo = Console.ReadLine();  
+			Console.WriteLine("Which IDocnumber would you like to manipulate?");  
+			string IdocNo = Console.ReadLine();  
         
-         Idoc i = con.CreateIdoc("SYSTAT01","");
+			Idoc i = con.CreateIdoc("SYSTAT01","");
      ```
 4. Provide receiver and sender information as shown in the code below. <br> <br>
 	 ```csharp
-		 // Fill Message Type 
-		 i.MESTYP = "STATUS"; 
+			// Fill Message Type 
+			i.MESTYP = "STATUS"; 
   
-		 // Fill Information about IDoc Reciever 
-		 i.RCVPRN = "PT4_800"; // Partner number 
-		 i.RCVPRT = "LS"; // Partner type 
+			// Fill Information about IDoc Reciever 
+			i.RCVPRN = "PT4_800"; // Partner number 
+			i.RCVPRT = "LS"; // Partner type 
   
-		 // Fill information about idoc sender 
-		 i.SNDPOR = "ERPCONNECT"; // Partner port 
-		 i.SNDPRN = "ERPCONNECT"; // Partner number 
-		 i.SNDPRT = "LS"; // Partner type
+			// Fill information about idoc sender 
+			i.SNDPOR = "ERPCONNECT"; // Partner port 
+			i.SNDPRN = "ERPCONNECT"; // Partner number 
+			i.SNDPRT = "LS"; // Partner type
      ```
 5. Fill in the following fields in segment *E1STATS*: the new status code (*STATUS*), date and time (*LOGDAT*, *LOGTIM*) and the number of the IDoc to be manipulated. 
 6. Send the IDoc using the *Send* method. <br> <br>
 	 ```csharp
-		 // Fill the right fields in the segments 
-		 i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20181001"; 
-		 i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
-		 i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
-		 i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
+			// Fill the right fields in the segments 
+			i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20210901";
+			i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
+			i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
+			i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
   
-		 i.Send(); 
-		 Console.WriteLine("IDoc sent"); 
-		 Console.ReadLine();
+			i.Send(); 
+			Console.WriteLine("IDoc sent"); 
+			Console.ReadLine();
+			}
 	}
      ```
 7. Run the program and check the result.<br>

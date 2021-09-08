@@ -40,13 +40,13 @@ Example for single server login:
 ```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "erpconnect"; 
-    con.Password = "pass"; 
-    con.Language = "DE"; 
-    con.Client = "800"; 
-    con.Host = "hamlet"; 
+    con.UserName = "alice";  
+    con.Password = "pass";  
+    con.Language = "DE";  
+    con.Client = "800";  
+    con.Host = "sap-erp-as05.example.com";  
     con.SystemNumber = 11;  
-      con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
+    con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
     
     con.Open(false);
 }
@@ -57,15 +57,15 @@ Example for Load Balancing:
 ```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "erpconnect"; 
-    con.Password = "pass"; con.Language = "DE"; 
+    con.UserName = "alice";  
+    con.Password = "pass"; 
+	con.Language = "DE";  
     con.Client = "800"; 
-    con.Language = "DE";
-    con.MessageServer = "hamlet"; 
-    con.LogonGroup = "PUBLIC"; 
+    con.MessageServer = "sap-erp-as05.example.com";  
+    con.LogonGroup = "PUBLIC";    
     con.SID = "EC5";
-    con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.  
-	
+	con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.  	
+  
     con.Open(true);
 }
 ```
@@ -81,11 +81,11 @@ For more information on route strings, see [SAP Help- Route String Entry for SAP
 ```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "erpconnect"; 
+    con.UserName = "alice"; 
     con.Password = "pass"; 
     con.Language = "DE"; 
     con.Client = "800"; 
-    con.Host = "/H/lear.theobald-software.com/H/" + "hamlet"; 
+    con.Host = "/H/sap-erp-as05.example.com/H/" + "hamlet"; 
     con.SystemNumber = 11;  
     con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
 

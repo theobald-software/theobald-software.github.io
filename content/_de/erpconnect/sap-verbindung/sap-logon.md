@@ -42,12 +42,14 @@ Beispiel für einen Login mit einem SAP Application Serve:
 ```csharp
 using(R3Connection con = new R3Connection())  
 {   
-    con.UserName = "erpconnect";  
+    con.UserName = "alice";  
     con.Password = "pass";  
     con.Language = "DE";  
     con.Client = "800";  
-    con.Host = "hamlet";  
+    con.Host = "sap-erp-as05.example.com";  
     con.SystemNumber = 11;  
+    con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
+    
     con.Open(false);
 }
 ```
@@ -57,13 +59,14 @@ Beispiel für einen Login via Load Balancing:
 ```csharp
 using(R3Connection con = new R3Connection())
 {  
-    con.UserName = "erpconnect";  
-    con.Password = "pass"; con.Language = "DE";  
-    con.Client = "800";   
-    con.Language = "DE";
-    con.MessageServer = "hamlet";  
+    con.UserName = "alice";  
+    con.Password = "pass"; 
+	con.Language = "DE";  
+    con.Client = "800"; 
+    con.MessageServer = "sap-erp-as05.example.com";  
     con.LogonGroup = "PUBLIC";    
-    con.SID = "EC5"; 
+    con.SID = "EC5";
+	con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.  	
   
     con.Open(true);
 }
@@ -76,11 +79,11 @@ Für mehr Informationen zu *Route Strings*, siehe [SAP-Dokumentation - Eingabe v
 ```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "erpconnect"; 
+    con.UserName = "alice"; 
     con.Password = "pass"; 
     con.Language = "DE"; 
     con.Client = "800"; 
-    con.Host = "/H/lear.theobald-software.com/H/" + "hamlet"; 
+    con.Host = "/H/sap-erp-as05.example.com/H/" + "hamlet"; 
     con.SystemNumber = 11;  
     con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
 
@@ -93,7 +96,7 @@ using(R3Connection con = new R3Connection())
 Sie können einen Connection String verwenden, um die Methode *R3Connection.Open(string connectionString)* aufzurufen.
 
 Für die Verbindung zu einem Single Application Server nutzen Sie das folgende Format:<br> 
-`"USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=ecc.theobald-software.com PASSWD=YourPassword"`
+`"USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword"`
 
 Das Standard Client-Protokoll is das RFC-Protokoll.
 Um das neue NW RFC Protokoll zu verwenden, geben Sie folgende Codezeile ein: <br>
