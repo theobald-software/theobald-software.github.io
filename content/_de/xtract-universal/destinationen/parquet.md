@@ -10,12 +10,15 @@ permalink: /:collection/:path
 weight: 80
 lang: de_DE
 ---
+
+## Verbindung
+
 Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine Parquet-Zieldatenbank.
 
 {% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
- 
+
 ![JSON-Parquet-Destination-Details](/img/content/xu/parquet/parquet_destination_details.png){:class="img-responsive"}
 
 **Output directory**<br>
@@ -32,6 +35,8 @@ Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen. 
 1. Überprüfen Sie das zuvor definierte Verzeichnis zum Speichern von Parquet Files.
 2. Öffnen Sie die Parquet-Datei mit einem Editor Ihrer Wahl
 
+## Einstellungen
+
 ### Destination Settings öffnen
 
 1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
@@ -39,8 +44,6 @@ Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen. 
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
 Die folgenden Einstellungen können für die Parquet-Destination definiert werden. 
-  
-### Destination Settings - Destinationseinstellungen
 
 ![XU_flatfile_JSON_Destination](/img/content/xu/parquet/parquet_destination_settings.png){:class="img-responsive"}
 

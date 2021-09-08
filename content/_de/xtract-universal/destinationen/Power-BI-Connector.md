@@ -12,7 +12,7 @@ lang: DE_DE
 old_url: 
 progressstate: 5
 ---
-### Einführung
+## Einführung
 
 Dieses Abschnitt beinhaltet Informationen zu Verbindung von Power BI und Xtract Universal über die  *Power BI Connector* Zielumgebung von Xtract Universal. 
 
@@ -36,22 +36,23 @@ Xtract Universal unterstützt folgende Umgebungen:
 | Power BI service | X | X |
 | Power BI Report Server |  | X |
 
+## Verbindung
 {% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
-### Verbindung - Destination Details
+### Destination Details
 Um Power BI Connector zu verwenden, müssen keine weiteren Einstellungen vorgenommen werden.
 
 ![Power BI Connector (beta) Destination](/img/content/XU_pbi_connector_connection.png){:class="img-responsive"}
 
+## Einstellungen
+
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
 Die folgenden Einstellungen können für die Destination definiert werden. 
-  
-### Destination Settings - Destinationseinstellungen
 
 ![pbi-configuration](/img/content/XU_pbi_connector_destination.png){:class="img-responsive"}
 
@@ -59,9 +60,13 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
+
+## Power BI Custom Connector
+
 Die *Power BI Connector* Destination in Xtract Universal funktioniert in Kombination mit dem benutzerdefinierten Custom Connector für Power BI. Der Dateiname ist *XtractUniversalExtension.pqx*. Die Datei XtractUniversalExtension.pqx befindet sich im Ordner *powerbi* innerhalb des Installationsverzeichnisses von Xtract Universal.
 
 Der Power BI Connector wurde entsprechend den Microsoft Richtlinien zum Erstellen von [Custom Connectors in Power BI](https://docs.microsoft.com/de-de/power-bi/desktop-connector-extensibility) entwickelt.
+
 ### Power BI Custom Connector manuell einrichten
 Wenn Sie die Anwendung *Power BI Desktop* verwenden, beachten Sie Folgendes: 
 1. Prüfen Sie, ob das Verzeichnis *[Documents]\Power BI Desktop\Custom Connectors* existiert.
@@ -99,11 +104,7 @@ Dies stößt eine Extraktion in Xtract Universal an und die Daten werden in Powe
 
 ![powerbi-navigator](/img/content/XU_pbi_connector_navigator.png){:class="img-responsive"}
 
-****
-#### Weiterführende Links
-- [Youtube Tutorial: SAP Power BI Schnittstelle in Xtract Universal](https://www.youtube.com/watch?v=1jqw755yqP4){:target="_blank"}
-
-### Power Query M-script in Power BI einbrichten
+## Power Query M-script
 
 Anstelle des Power BI Custom Connector, können Sie auch das Custom Power Query M-script zum Verbinden von Power BI mit Xtract Universal verwenden. 
 
@@ -114,6 +115,7 @@ Das Power BI Query M-Script befindet sich innerhalb des Installationsverzeichnis
 Power Query M-script und Power BI Custom Connector gehören nicht zusammen.<br>
 Verwenden Sie entweder das Power Query M-script **oder** den Power BI Custom Connector.
 
+### Power Query M-script in Power BI einrichten
 {: .box-note }
 **Hinweis:** Verwenden Sie nur die Extraktionen mit der [Power BI Connector Destination](Power-BI-Connector#verbindung---destination-details).
 
@@ -128,7 +130,9 @@ Verwenden Sie entweder das Power Query M-script **oder** den Power BI Custom Con
 7. Klicken Sie die Schaltfläche **{Close & Apply]**.
 8. Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden (*Anonymous*, *Basic* , oder *Windows*) auszuwählen, <br> befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](Power-BI-Connector#single-sign-on-und-sap-authentifizierung).
 
-### Power BI Service - Voraussetzungen
+## Power BI service
+
+### Voraussetzungen
 Die Anbindung des Power BI Service erfordert folgende Komponenten:
 
 - [Power BI Account](https://powerbi.microsoft.com/de-de/landing/signin/)
@@ -183,13 +187,7 @@ Auswahl einer Authentisierungsmethode, siehe [Single Sign On und SAP-Authentifiz
 ![DATA SOURCE Settings](/img/content/xu/data-source-settings.png){:class="img-responsive"}
 
 
-****
-#### Weiterführende Links:
-- [Was ist ein lokales Datengateway?](https://docs.microsoft.com/de-de/power-bi/connect-data/service-gateway-onprem)
-- [Verwenden von benutzerdefinierten Datenconnectors mit dem lokalen Datengateway](https://docs.microsoft.com/de-de/power-bi/connect-data/service-gateway-custom-connectors)
-- [Konfigurieren von geplanten Aktualisierungen](https://docs.microsoft.com/de-de/power-bi/connect-data/refresh-scheduled-refresh)
-
-### Single Sign On und SAP-Authentifizierung
+## Single Sign On und SAP-Authentifizierung
 
 Beim erstmaligem Einrichten der Xtract Universal-Datenquelle in Power BI, werden Sie aufgefordert eine der folgenden Authentifizierungsmethoden auszuwählen:
 
@@ -201,10 +199,12 @@ Tragen Sie \<domain>\\\<Windows AD user> ins Feld *user* und Ihr Windows-Passwor
 Xtract Universal und die *Power BI Connector* Destination unterstützen Single Sign On (SSO) zu SAP. Wenn SSO korrekt konfiguriert ist, werden die Windows-Anmeldedaten des Power BI-Benutzers den SAP-Anmeldedaten zugeordnet (gemapped). Auf diese Weise wird das SAP-Berechtigungskonzept unterstützt und dem Benutzer werden nur die Daten angezeigt, die seiner SAP-Berechtigung entsprechen.
 ![XU_PBI_EN_SSO](/img/content/XU_PBI_EN_SSO.png){:class="img-responsive"}
 
-### XU Custom Parameter in Power BI
+## XU Custom Parameter in Power BI
 
 Custom Parameter (benutzerdefinierte Parameter), die in Xtract Universal für eine Extraktion angelegt wurden, werden in Power BI Desktop als eingabebereit angezeigt.
 Wenn Sie den Power BI Custom Connector verwenden, können die in Xtract Universal definierten Custom Parameter zum Zeitpunkt einer Extraktion in Power BI Desktop befüllt werden.
+
+### Power BI Custom Connector
 
 Bei der Verwendung des Power BI Custom Connectors können XU Custom Parameter beim Erstellen einer Verbindung befüllt werden.
 
@@ -236,11 +236,8 @@ Power BI Parameter:
 
 ![XU-Custom-Parameter-angezeigt](/img/content/XU_PBI_XU_Parameters_5.png){:class="img-responsive"}
 
-*****
-#### Weiterführende Links	
-- [Parameters in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/power-query-query-parameters)
 
-### Fehlerbehebung
+## Fehlerbehebung
 
 Extraktionen von Xtract Universal, die große Datenmengen extrahieren, können zahlreiche Aufrufe von Power BI zu Xtract Universal verursachen. 
 Dieser Vorgang führt dazu, dass mehrfache Einträge für die gleiche Extraktion im Extraktions-Log von Xtract Universal erscheinen.
@@ -249,3 +246,10 @@ Um diese Verhaltensweise zu vermeiden,  erhöhen Sie die Größe des Zwischenspe
 ![Power BI cache](/img/content/XU_PBI_PBI_Cache.png){:class="img-responsive"}
 
 
+****
+## Weiterführende Links
+- [Youtube Tutorial: SAP Power BI Schnittstelle in Xtract Universal](https://www.youtube.com/watch?v=1jqw755yqP4){:target="_blank"}
+- [Was ist ein lokales Datengateway?](https://docs.microsoft.com/de-de/power-bi/connect-data/service-gateway-onprem)
+- [Verwenden von benutzerdefinierten Datenconnectors mit dem lokalen Datengateway](https://docs.microsoft.com/de-de/power-bi/connect-data/service-gateway-custom-connectors)
+- [Konfigurieren von geplanten Aktualisierungen](https://docs.microsoft.com/de-de/power-bi/connect-data/refresh-scheduled-refresh)
+- [Parameters in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/power-query-query-parameters)
