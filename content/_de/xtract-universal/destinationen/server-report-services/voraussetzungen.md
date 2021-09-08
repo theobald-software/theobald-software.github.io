@@ -26,11 +26,13 @@ Um sie SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
 Um die SSRS-Destination zu nutzen, installieren Sie das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin in Visual Studio.
 Nach der Installation, schließen Sie Visual Studio.
 
-Microsoft SQL Server Reporting Services unterstützt eine große Auswahl von Datenquellen out-of-the-box.
-Um Xtract Universal als Datenquelle hinzuzufügen, installieren Sie die [Xtract Universal Data Extension](./voraussetzungen#installation-using-the-xtract-universal-data-extension) für Visual Studio und den Report Server.
+Microsoft SQL Server Reporting Services unterstützt eine große Auswahl von Datenquellen out-of-the-box. Um Xtract Universal als Datenquelle hinzuzufügen, installieren Sie die [Xtract Universal Data Extension](./voraussetzungen#installation-using-the-xtract-universal-data-extension) für Visual Studio **und** den Report Server.
 Die Erweiterung wird bei der Installation des [Xtract Universal Setup](../../einfuehrung/installation-und-update) automatisch installiert.
 
 Um die Installation zu beenden, schließen Sie Visual Studio.
+
+{: .box-note }
+**Hinweis:** Achten Sie darauf den Report Server sowohl auf der Entwicklungsumgebung als auch auf der Produktivumgebung zu installieren.
 
 {: .box-warning }
 **Warnung!** Stellen Sie sicher, dass Sie die aktuelle Version des *Microsoft Reporting Services Projects* Plugins und von Xtract Universal installieren.
@@ -41,6 +43,11 @@ Nach der Installation der `C:\Program Files\XtractUniversal\ssrs\SSRSDataExtensi
 - `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\Theobald.Distillery.Common.dll`
 - `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\Theobald.Net.dll`
 - `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\RSReportDesigner.config`
+
+Achten Sie darauf, dass folgende Erweiterungen aus dem o.g. Installationsverzeichnis in Ihrem Power BI Report Server Verzeichnis vorhanden sind:
+- `C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin\Theobald.Common.dll`
+- `C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin\Theobald.Net.dll`
+- `C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin\XUDataExtension2020.01.dll`
 
 ### Installation der Xtract Universal Data Extension
 
