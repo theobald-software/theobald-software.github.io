@@ -31,8 +31,11 @@ The data extension is installed automatically when using the [Xtract Universal S
 
 To complete the installation close all Visual Studio windows.
  
+ {: .box-note }
+**Note:** Make sure to install the Report Server on both the development environment and the production environment. O
+ 
  {: .box-warning }
-**Warning!** Make sure to install both Xtract Universal and the Report Server. Only use the latest software and plugin versions for all components.  
+**Warning!** Make sure to install the latest version of the *Microsoft Reporting Services Projects* plugin and Xtract Universal.  
 
 After installation of `C:\Program Files\XtractUniversal\ssrs\SSRSDataExtensionSetup.exe` the setup creates the following entries and extensions in the Visual Studio installation directory:
 - `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\XUDataExtension2020.05.dll`
