@@ -33,8 +33,9 @@ The SAP GUI is launched using the method *Execute*.
 
 ```csharp
 private void button1_Click(object sender, System.EventArgs e)
+    {
+    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
         {
-            R3Connection con = new R3Connection("SAPServer", 00, "User", "Pass", "EN",800");
             Transaction transaction1 = new Transaction();
             transaction1.Connection = con;
             // Reset the batch steps
@@ -55,6 +56,7 @@ private void button1_Click(object sender, System.EventArgs e)
             // Run
             transaction1.Execute();
         }
+    }
 ```
 <!---
 <details>
@@ -104,7 +106,8 @@ The transaction for creating a purchase order is **ME21**.
 At the end the code loops over the *Returns* collection to check the *BatchReturn* objects that contain the return messages of the Batch Input transaction. 
 
 ```csharp
-	ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+    {
 	con.Open(false);
    
 	Transaction trans = new Transaction();
@@ -135,6 +138,7 @@ At the end the code loops over the *Returns* collection to check the *BatchRetur
 		MessageBox.Show(br.Message);
 	if (trans.Returns.Count == 0)
 		MessageBox.Show("No Messages");
+    }
 ```
 <!---
 <details>

@@ -59,8 +59,8 @@ static void Main(string[] args)
   
    foreach (var MyText in MyTexts) 
       Console.WriteLine(MyText.MATNR + " " + MyText.MAKTX); 
-   Console.WriteLine("Press any key to exit"); 
-   Console.ReadLine(); 
+      Console.WriteLine("Press any key to exit"); 
+      Console.ReadLine(); 
 }
 ```
 <!---

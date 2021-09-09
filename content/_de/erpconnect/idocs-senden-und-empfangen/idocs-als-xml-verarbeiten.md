@@ -48,15 +48,16 @@ E1EDP19>
 #### Beispiel-Code
 Der folgende C#-Code zeigt, wie Sie Daten aus Dateien auslesen und senden.
 ```csharp
-    R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
-    con.Open(false);
-    Idoc i = new Idoc();
-    i.Connection = con;
-
-    i.LoadIdocSchema(@"ORDERS01.xsd");
+using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+{ 
+    Idoc i = new Idoc();  
+    i.Connection = con; 
+	
+    i.LoadIdocSchema(@"ORDERS01.xsd");        
     i.LoadXMLData(@"OrderIdoc.xml");
-
+    
     i.Send();
+}
 ```
 <!---
 <details>

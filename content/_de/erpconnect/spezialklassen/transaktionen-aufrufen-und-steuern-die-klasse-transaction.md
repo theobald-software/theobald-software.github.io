@@ -31,11 +31,11 @@ Das Tool zeichnet SAP-Transaktionen auf und erstellt automatisch einen entsprech
 Der Beispielcode zeigt wie die einzelnen Batch-Schritte mit der Funktionen *AddStep* gesetzt werden.
 Wichtig ist, dass bei der Verbindung zu SAP die Eigenschaft *UseGui* auf true gesetzt wird. 
 Der SAP GUI wird über die Methode *Execute* gestartet. 
-
 ```csharp
 private void button1_Click(object sender, System.EventArgs e)
+    {
+    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
         {
-            R3Connection con = new R3Connection("SAPServer", 00, "User", "Pass", "EN",800");
             Transaction transaction1 = new Transaction();
             transaction1.Connection = con;
             // Reset the batch steps
@@ -56,7 +56,8 @@ private void button1_Click(object sender, System.EventArgs e)
             // Run
             transaction1.Execute();
         }
-```
+    }
+```s
 
 <!---
 <details>
@@ -109,7 +110,8 @@ Am Ende des Codes werden die *BatchReturn*-Objekte, die die Rückgabe-Nachrichte
 über eine Schleife auf die Returns-Collection ausgewertet.
 
 ```csharp
-	ERPConnect.R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");
+using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+    {
 	con.Open(false);
    
 	Transaction trans = new Transaction();
@@ -140,6 +142,7 @@ Am Ende des Codes werden die *BatchReturn*-Objekte, die die Rückgabe-Nachrichte
 		MessageBox.Show(br.Message);
 	if (trans.Returns.Count == 0)
 		MessageBox.Show("No Messages");
+    }
 ```
 
 <!---

@@ -28,7 +28,7 @@ static void Main(string[] args)
    // define server object and start 
    RFCServer s = new RFCServer(); 
    s.Logging = true; 
-   s.GatewayHost = "hamlet"; 
+   s.GatewayHost = "sap-erp-as05.example.com"; 
    s.GatewayService = "sapgw11"; 
    s.ProgramID = "ERPTEST"; 
    s.CanReceiveIdocs = true; 

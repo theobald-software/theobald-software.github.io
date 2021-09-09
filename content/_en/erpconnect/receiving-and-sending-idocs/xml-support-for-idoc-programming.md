@@ -50,7 +50,8 @@ E1EDP19>
 The following C# code shows how to load and send data from files.
 
 ```csharp
-    R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");  
+using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+{ 
     Idoc i = new Idoc();  
     i.Connection = con; 
 	
@@ -58,6 +59,7 @@ The following C# code shows how to load and send data from files.
     i.LoadXMLData(@"OrderIdoc.xml");
     
     i.Send();
+}
 ```
 
 <!---

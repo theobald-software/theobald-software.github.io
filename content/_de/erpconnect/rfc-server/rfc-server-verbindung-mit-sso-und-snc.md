@@ -23,7 +23,7 @@ Weisen Sie den Partnernamen in der SAP-Transaktion **SM59** (z.B. p:RFCServerSNC
 
 ```csharp
 RFCServer rfcServer = new RFCServer();
-rfcServer.GatewayHost = "reutlingen";
+rfcServer.GatewayHost = "sap-erp-as05.example.com";
 rfcServer.GatewayService = "sapgw00";
 rfcServer.ProgramID = "SNCTEST";
 rfcServer.SNCSettings.Enabled = true;

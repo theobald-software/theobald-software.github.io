@@ -37,7 +37,7 @@ using ERPConnect;
 static void Main(string[] args) 
 { 
    RFCServer s = new RFCServer();
-   s.GatewayHost = "hamlet"; 
+   s.GatewayHost = "sap-erp-as05.example.com"; 
    s.GatewayService = "sapgw11"; 
    s.ProgramID = "ERPTEST"; 
    s.IncomingCall+=new ERPConnect.RFCServer.OnIncomingCall(s_IncomingCall); 
