@@ -50,8 +50,8 @@ In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- u
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
 | BW Hierarchy   |     | R  | 
+| Report   |   R  | R  | 
 | Table       | R   | R  | 
-| Table Join  | R   | R  | 
 
 
 {: .box-note }

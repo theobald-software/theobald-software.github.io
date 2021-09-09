@@ -46,8 +46,8 @@ The overview below shows you for which component read (R) and write (W) rights a
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
 | BW Hierarchy   |     | R  | 
+| Report   |   R  | R  | 
 | Table       | R   | R  | 
-| Table Join  | R   | R  | 
 
 
 {: .box-note }
