@@ -49,49 +49,46 @@ Um eine Lieferantenbestellung mit dem *BAPI_PO_CREATE* BAPI zu erstellen, folgen
 5. Erfassen Sie die Werte für *QUANTITY* (Bestellmenge) und *DELIV_DATE* (das gewünschte Lieferdatum) in der Tabelle für die Bestelleinteilungen *PO_ITEM_SHEDULES*. 
 6. Führen Sie das BAPI aus und werten Sie die die Return-Nachricht aus.   
 
-
-<details>
-<summary>Klicken Sie hier, um das C# Beispiel zu öffnen.</summary>
-{% highlight csharp %}
+```csharp
 private void Button1_Click(object sender, System.EventArgs e) 
 { 
-	ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License. 
-	
-	R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");  //Set Connection Properties
-	con.Open(false); 
+    ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License. 
+    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+	    {
+	        con.Open(false); 
           
-    // Create a RFC-Function object 
-    RFCFunction func = con.CreateFunction("BAPI_PO_CREATE");
+	        // Create a RFC-Function object 
+	        RFCFunction func = con.CreateFunction("BAPI_PO_CREATE");
 
-	// Fill header structure
-	RFCStructure Header = func.Exports["PO_HEADER"].ToStructure();
-	Header["DOC_TYPE"]= "NB";
-	Header["PURCH_ORG"] = "1000";
-	Header["PUR_GROUP"] = "010";
-	Header["DOC_DATE"]= ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
-	Header["VENDOR"]= this.txtVendor.Text
+	        // Fill header structure
+	        RFCStructure Header = func.Exports["PO_HEADER"].ToStructure();
+	        Header["DOC_TYPE"]= "NB";
+	        Header["PURCH_ORG"] = "1000";
+	        Header["PUR_GROUP"] = "010";
+	        Header["DOC_DATE"]= ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
+	        Header["VENDOR"]= this.txtVendor.Text
 	
-	// Create an Item
-	RFCTable items = func.Tables["PO_ITEMS"];
-	RFCStructure item = items.AddRow();
-	item["PO_ITEM"] = "1";
-	item["PUR_MAT"] = this.txtMaterial.Text;
-	item["PLANT"] = this.txtPlant.Text;
+	        // Create an Item
+	        RFCTable items = func.Tables["PO_ITEMS"];
+	        RFCStructure item = items.AddRow();
+	        item["PO_ITEM"] = "1";
+	        item["PUR_MAT"] = this.txtMaterial.Text;
+	        item["PLANT"] = this.txtPlant.Text;
   
-	// Create and fill shedules
-	RFCTable shedules = func.Tables["PO_ITEM_SCHEDULES"];
-	RFCStructure shedule = shedules.AddRow();
-	shedule["PO_ITEM"] = "1";
-	shedule["DELIV_DATE"] = ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
-	shedule["QUANTITY"] = Convert.ToDecimal(this.txtQuan.Text);
+	        // Create and fill shedules
+	        RFCTable shedules = func.Tables["PO_ITEM_SCHEDULES"];
+	        RFCStructure shedule = shedules.AddRow();
+	        shedule["PO_ITEM"] = "1";
+	        shedule["DELIV_DATE"] = ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
+	        shedule["QUANTITY"] = Convert.ToDecimal(this.txtQuan.Text);
 
-	// Exceute Bapi and process return messages
-	func.Execut e();
-	this.txtReturn.Text = "";
-	this.txtReturn.Text += func.Tables["RETURN"].Rows[0, "MESSAGE"] + "\r\n";
+	        // Exceute Bapi and process return messages
+	        func.Execut e();
+	        this.txtReturn.Text = "";
+	        this.txtReturn.Text += func.Tables["RETURN"].Rows[0, "MESSAGE"] + "\r\n";
+	    }
 }
-{% endhighlight %}
-</details>
+```
 
 Der folgende Screenshot zeigt die angelegte Bestellung im SAP-System.<br>
 ![Create-Puchase-Order-ME23](/img/content/Create-Puchase-Order-ME23.png){:class="img-responsive"}
