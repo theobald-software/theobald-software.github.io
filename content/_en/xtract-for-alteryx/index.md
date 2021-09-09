@@ -28,11 +28,12 @@ Xtract for Alteryx enables integrating data from the SAP system into the data fl
 The following extraction types  are available within Xtract for Alteryx:
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
-- [**BAPI**](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP
-- [**BW Cube**](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders
-- [**BW Hierarchy**](./bwhierarchy) - extracts hierarchies from SAP BW systems
-- [**ODP**](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework
-- [**Table**](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side
+- [**BAPI**](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP.
+- [**BW Cube**](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders.
+- [**BW Hierarchy**](./bwhierarchy) - extracts hierarchies from SAP BW systems.
+- [**ODP**](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework.
+- [**Report**](./reports) - extracts data from most standard and custom ABAP reports and SAP transactions.
+- [**Table**](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side.
 
 {: .box-note }
 **Note:** An [SAP Connection](./introduction/sap-connection) is a requirement for using any of Xtract for Alteryx components.

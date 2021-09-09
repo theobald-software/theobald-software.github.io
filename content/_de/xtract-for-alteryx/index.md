@@ -31,9 +31,10 @@ Die folgenden Extraktionstypen sind innerhalb von Xtract for Alteryx verfügbar:
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
 - [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**BW Cube**](./bw-cube) extrahiert Dateb aus SAP BW InfoCubes und BEx Queries.
+- [**BW Cube**](./bw-cube) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
 - [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
 - [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
+- [**Report**](./reports) extrahiert Daten der meisten Standard und benutzerdefineirten ABAP Reports und SAP Transaktionen.
 - [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 
 {: .box-note }
