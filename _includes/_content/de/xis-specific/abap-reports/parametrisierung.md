@@ -20,7 +20,7 @@ Liste der relevanten *Custom Properties* der Report-Komponente:
 | *SkipTopRows* | Entspricht dem Feld *Skip Rows Top* in der Report Komponente, siehe [Report-Spalten definieren](./report-columns-define). |
 | *StringConversion* | Siehe [Settings - String Conversion](.//report-settings#string-conversion). |
 | *UseBatch* | Entspricht dem Feld *Use Batch* in der Report Komponente, siehe [Settings - Use Batch](./report-settings). |
-| *Variant* | Siehe [Varianten und Selektionen](./variants-and-selections). |
+| *Variant* | Siehe [Varianten und Selektionen](./report-variants-and-selections). |
 
 ### Parametrierung mit SSIS Variablen
 Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
@@ -28,7 +28,7 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 |Feldname|Beschreibung|
 |:----|:----|
 | *Variant*| Siehe [Varianten und Selektionen](./variants-and-selections).|
-| *Edit*| Geben Sie eine SSIS-Variable als Auswahlkriterium ein, siehe [Varianten und Selektionen](./variants-and-selections).|
+| *Edit*| Geben Sie eine SSIS-Variable als Auswahlkriterium ein, siehe [Varianten und Selektionen](./report-variants-and-selections).|
 | *Spool Destination / BatchJobDestination* | Entspricht dem Feld *Spool Destination* in der Report Komponente, siehe [Settings - Spool Destination / BatchJobDestination](./report-settings).|
 | *BatchJobName*        |Entspricht dem Feld *Batch Job Name* in der Report Komponente, siehe [Settings - BatchJobName](./report-settings).|
 | *BatchJobTimeout*     |Entspricht dem Feld *Batch Timeout* in der Report Komponente, siehe [Settings - BatchJobTimeout](./report-settings).|
