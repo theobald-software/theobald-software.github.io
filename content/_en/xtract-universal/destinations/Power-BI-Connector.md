@@ -201,7 +201,7 @@ Xtract Universal and the *Power BI Connector* destination support single sign on
 
 ![XU_PBI_EN_SSO](/img/content/XU_PBI_EN_SSO.png){:class="img-responsive"}
 
-## XU Custom Parameters in Power BI
+## Parameterizing
 
 The Power BI Custom Connector exposes Xtract Universal custom parameters in Power BI Desktop.
 Using the Power BI Custom Connector Xtract Universal custom parameters can be populated with values when executing an extraction from Power BI Desktop.
@@ -238,11 +238,15 @@ Replacement with Power BI parameters:
 
 ![XU-Custom-Parameter-exposed](/img/content/XU_PBI_XU_Parameters_5.png){:class="img-responsive"}
 
-## Troubleshooting
+## Power BI Options and Settings
 
-Xtract Universal extractions that return a large data volume can lead to multiple calls from Power BI to Xtract Universal. This results in multiple entries for the same extraction in the Xtract Universal extraction log.
+Set the following settings in Power BI:
 
-To prevent this kind of behaviour, please increase the Power BI cache.
+1. Navigate to **File > Options and settings > Options** to open the option menu.
+2. Check the box **(Not Recommended) Allow any extension to load without validation or warning** in the tab *Security*.<br>
+![Power BI cache](/img/content/XU_PBI_PBI_Security.png){:class="img-responsive"}
+3. Optional: Increase the Power BI cache in the tab *Load Data* to prevent multiple calls from Power BI to Xtract Universal when extracting large data volumes.
+Multiple calls to Xtract Universal result in in multiple entries for the same extraction in the Xtract Universal extraction log.<br>
 ![Power BI cache](/img/content/XU_PBI_PBI_Cache.png){:class="img-responsive"}
 
 ****

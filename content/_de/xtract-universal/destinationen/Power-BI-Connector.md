@@ -130,7 +130,7 @@ Verwenden Sie entweder das Power Query M-script **oder** den Power BI Custom Con
 7. Klicken Sie die Schaltfläche **{Close & Apply]**.
 8. Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden (*Anonymous*, *Basic* , oder *Windows*) auszuwählen, <br> befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](Power-BI-Connector#single-sign-on-und-sap-authentifizierung).
 
-## Power BI service
+## Power BI Service
 
 ### Voraussetzungen
 Die Anbindung des Power BI Service erfordert folgende Komponenten:
@@ -199,7 +199,7 @@ Tragen Sie \<domain>\\\<Windows AD user> ins Feld *user* und Ihr Windows-Passwor
 Xtract Universal und die *Power BI Connector* Destination unterstützen Single Sign On (SSO) zu SAP. Wenn SSO korrekt konfiguriert ist, werden die Windows-Anmeldedaten des Power BI-Benutzers den SAP-Anmeldedaten zugeordnet (gemapped). Auf diese Weise wird das SAP-Berechtigungskonzept unterstützt und dem Benutzer werden nur die Daten angezeigt, die seiner SAP-Berechtigung entsprechen.
 ![XU_PBI_EN_SSO](/img/content/XU_PBI_EN_SSO.png){:class="img-responsive"}
 
-## XU Custom Parameter in Power BI
+## Parametrisierung
 
 Custom Parameter (benutzerdefinierte Parameter), die in Xtract Universal für eine Extraktion angelegt wurden, werden in Power BI Desktop als eingabebereit angezeigt.
 Wenn Sie den Power BI Custom Connector verwenden, können die in Xtract Universal definierten Custom Parameter zum Zeitpunkt einer Extraktion in Power BI Desktop befüllt werden.
@@ -237,12 +237,15 @@ Power BI Parameter:
 ![XU-Custom-Parameter-angezeigt](/img/content/XU_PBI_XU_Parameters_5.png){:class="img-responsive"}
 
 
-## Fehlerbehebung
+## Power BI Optionen und Einstellungen
 
-Extraktionen von Xtract Universal, die große Datenmengen extrahieren, können zahlreiche Aufrufe von Power BI zu Xtract Universal verursachen. 
-Dieser Vorgang führt dazu, dass mehrfache Einträge für die gleiche Extraktion im Extraktions-Log von Xtract Universal erscheinen.
+Nehmen Sie folgende Einstellungen in Power BI vor:
 
-Um diese Verhaltensweise zu vermeiden,  erhöhen Sie die Größe des Zwischenspeichers (Cache).
+1. Navigieren Sie zu **File > Options and settings > Options**, um die Optionen zu öffnen.
+2. Aktivieren Sie im Tab *Security* die Option **(Not recommended) Allow any extension to load without validation or warning**.<br>
+![Power BI cache](/img/content/XU_PBI_PBI_Security.png){:class="img-responsive"}
+3. Optional: Erhöhen Sie die Größe des Zwischenspeichers (Cache) im Tab *Load Sata*, um zu vermeiden dass bei der Extraktion großer Datenmengen Power BI mehrfach Aufrufe an Xtract Universal sendet. 
+Das mehrfache Aufrufen führen dazu, dass mehrere Einträge für die gleiche Extraktion im Extraktions-Log von Xtract Universal erscheinen.<br>
 ![Power BI cache](/img/content/XU_PBI_PBI_Cache.png){:class="img-responsive"}
 
 
