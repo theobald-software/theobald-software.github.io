@@ -26,16 +26,18 @@ Um sie SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
 Um die SSRS-Destination zu nutzen, installieren Sie das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin in Visual Studio.
 Nach der Installation, schließen Sie Visual Studio.
 
-Microsoft SQL Server Reporting Services unterstützt eine große Auswahl von Datenquellen out-of-the-box. Um Xtract Universal als Datenquelle hinzuzufügen, installieren Sie die [Xtract Universal Data Extension](./voraussetzungen#installation-using-the-xtract-universal-data-extension) für Visual Studio **und** den Report Server.
-Die Erweiterung wird bei der Installation des [Xtract Universal Setup](../../einfuehrung/installation-und-update) automatisch installiert.
+Microsoft SQL Server Reporting Services unterstützt eine große Auswahl von Datenquellen out-of-the-box. 
+Um Xtract Universal als Datenquelle hinzuzufügen, installieren Sie die [Xtract Universal Data Extension](./voraussetzungen#installation-using-the-xtract-universal-data-extension) für Visual Studio **und** den Report Server.
+Die Erweiterung muss auf beiden Umgebungen installiert sein, um die von Xtract Universal extrahierten Daten zu konsumieren, siehe folgende Grafik:
 
+![XU-Setup](/img/content/xu/ssrs/XUDataExtensionInstallation.png){:class="img-responsive" width="600px" }
+
+Die Erweiterung wird bei der Installation des [Xtract Universal Setup](../../einfuehrung/installation-und-update) automatisch installiert.
 Um die Installation zu beenden, schließen Sie Visual Studio.
 
-{: .box-note }
-**Hinweis:** Achten Sie darauf den Report Server sowohl auf der Entwicklungsumgebung als auch auf der Produktivumgebung zu installieren.
 
-{: .box-warning }
-**Warnung!** Stellen Sie sicher, dass Sie die aktuelle Version des *Microsoft Reporting Services Projects* Plugins und von Xtract Universal installieren.
+{: .box-note }
+**Hinweis:** Achten Sie darauf, dass Sie immer die aktuelle Version des *Microsoft Reporting Services Projects* Plugins und von Xtract Universal installieren.
 
 Nach der Installation der `C:\Program Files\XtractUniversal\ssrs\SSRSDataExtensionSetup.exe` erstellt das Setup die folgenden Einträge und Erweiterungen im Installationsverzeichnis von Visual Studio:
 - `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\XUDataExtension2020.05.dll`

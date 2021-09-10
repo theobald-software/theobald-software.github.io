@@ -26,16 +26,17 @@ To use the SSRS destination, install the [Microsoft Reporting Services Projects]
 plugin in Visual Studio. After the installation is complete, close Visual Studio.
 
 Microsoft SQL Server Reporting Services supports a wide variety of data sources out of the box.
-To add Xtract Universal to the list of data sources, install the [Xtract Universal Data Extension](./requirements#installation-using-the-xtract-universal-data-extension) for Visual Studio and the Report Server.
-The data extension is installed automatically when using the [Xtract Universal Setup](../../introduction/installation-and-update).
+To add Xtract Universal to the list of data sources, install the [Xtract Universal Data Extension](./requirements#installation-using-the-xtract-universal-data-extension) for Visual Studio **and** the Report Server.
+The data extension must be installed on both environments to consume the data extracted by Xtract Universal, see graphic below:
 
+![XU-Setup](/img/content/xu/ssrs/XUDataExtensionInstallation.png){:class="img-responsive" width="600px" }
+
+The data extension is installed automatically when using the [Xtract Universal Setup](../../introduction/installation-and-update).
 To complete the installation close all Visual Studio windows.
  
- {: .box-note }
-**Note:** Make sure to install the Report Server on both the development environment and the production environment. O
  
- {: .box-warning }
-**Warning!** Make sure to install the latest version of the *Microsoft Reporting Services Projects* plugin and Xtract Universal.  
+ {: .box-note }
+**Note:** Make sure to install the latest version of the *Microsoft Reporting Services Projects* plugin and Xtract Universal.  
 
 After installation of `C:\Program Files\XtractUniversal\ssrs\SSRSDataExtensionSetup.exe` the setup creates the following entries and extensions in the Visual Studio installation directory:
 - `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\XUDataExtension2020.05.dll`
