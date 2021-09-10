@@ -15,6 +15,9 @@ Click the button **[Extraction Settings]** in the main window of the component t
 
 ### Extraction Settings
 
+{: .box-note }
+**Note:**  The following settings are only available in MDX mode.
+
 **Package Size** <br> 
 Defines how many data records are fetched from SAP in a data package.
 Values between 10,000 and 100,000 are practical for large data volumes.
@@ -27,17 +30,22 @@ If the value is set to 0, the complete result set is fetched at one time.
 Defines the maximum number of rows in the result set.
 If the value is set to 0, the complete result set is fetched.
 
-You can use **Row Limit** to perform tests with a small amount of data by entering a row limit of e.g., 1000 (not 0).
+Enter a value, e.g. 1,000, for **Row Limit** to perform tests by extracting only a small amount of data.
 
 **Formatted Values** <br>
-If this option is active, the values of key figures are formatted as defined in the Query Designer e.g., scaling factor and number of decimal places.
+If this option is active, the values of key figures are formatted as defined in the BEx Query Designer e.g., scaling factor and number of decimal places.
 
 
 ### Automatic Slicing Dimension
 
-This option sets a dimension for an automatic slicing. 
-Slicing is the act of picking a subset of a cube by choosing a single value for one of its dimensions. 
-Automatic slicing means that a loop is executed for each single value of the chosen slicing dimension (characteristic) to extract the result from BW. 
+This option sets a dimension that is used for automatic slicing. 
+Automatic slicing executes multiple smaller select statements instead of a single big select statement. 
+Slicing happens based on the members of the selected slicing dimension. 
 
-**Automatic Slicing Dimension** allows the extraction of a large amount of data (millions of records) from BW.
+In a first step, all members of the selected slicing dimension are determined, taking into account filters and BEx variables. In the second step, the Xtract Cube components sequentially iterates through the list of determined members, each time adding the current member as a filter to the select statement.
+
+This way, out-of-memory-issues on the SAP side can be avoided.
+
+{: .box-note }
+**Note:**  Set an Automatic Slicing Dimension only for extractions that would otherwise run into out-of-memory issues on the SAP side. A suitable Slicing Dimension would contain an average amount of members, like 0COMP_CODE or 0CALMONTH.
 

@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 ---
-Use runtime parameters to change dimension filters and variables dynamically during runtime.<br>
+Use runtime parameters to set dimension filters and BEx variable values dynamically during runtime.<br>
 
 ### Create Runtime Parameters 
 
@@ -26,7 +26,7 @@ The window "Edit Runtime Parameters" opens.<br>
 
 ### Define Runtime Parameters
 
-Assign the runtime parameters to variables or dimension filters.
+Assign the runtime parameters to BEx variables or dimension filters.
 
 1. To use the runtime parameters as variables, click **[Edit Variables]** in the main window of the component. The window "Edit variables..." opens, see [Variables](./bw-cube-variables).<br> 
 To use the runtime parameters as dimension filters, right-click a dimension in the main window of the component, then click **Edit Filters**. The window "Member Filter" opens, see [Setting a Dimension Filter](./using-bw-cube-component#setting-a-dimension-filter).<br> 
