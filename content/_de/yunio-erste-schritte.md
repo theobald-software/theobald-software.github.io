@@ -75,15 +75,14 @@ Je nachdem ob der Verbindungsaufbau erfolgreich war oder nicht, öffnet sich ein
 Unter *Services* können Sie neue Services erstellen und bereits angelegte Services bearbeiten, ausführen und löschen.
 
 1. Um eine neue Extraktion anzulegen, klicken Sie auf **[Add Service]**. 
-2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie unter **Source System** Ihre SAP-Verbindung aus.
-3. YunIO bietet die Möglichkeit Tabellen/Ansichten oder Funktionsbausteine/BAPIs aus SAP auszulesen. 
-Wählen Sie unter *Extraction Type* eine dieser beiden Optionen.
+2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus.
+3. Wählen Sie einen Extraktionstyp. YunIO bietet hierfür zwei Möglichkeiten: Tabellen/Ansichten oder Funktionsbausteine/BAPIs.
 4. Optional: Geben Sie unter *Description* eine kurze Beschreibung des Services ein.
 5. Klicken Sie auf **[Next]**.
-6. Geben Sie in das Feld **Search Term** den Namen der zu extrahierenden Tabelle oder des zu extrahierenden Funktionsmoduls ein. 
+6. Je nach gewähltem Extraktionstyp geben Sie in das Feld **Search Term** den Namen der zu extrahierenden Tabelle/Ansicht oder des zu extrahierenden Funktionsmoduls/BAPIs ein. 
 Verwenden Sie Wildcards ( * ), falls nötig. 
-7. Klicken Sie auf **[Search]**, um die Suchergebnisse anzuzeigen. Wählen Sie eine Quelldatei aus.
-8. Je nach gewähltem Extraktionstyp können Sie weitere Einstellungen vornehmen, siehe [Tabellenextraktion](#tabellenextraktion) oder [Funktionsbausteine und BAPIs](#funktionsbausteine-und-bapis).
+7. Klicken Sie auf **[Search]**, um die Suchergebnisse anzuzeigen. 
+8. Wählen Sie eine Quelldatei aus. Das Menü für die Extraktionseinstellungen öffnen sich automatisch, siehe [Tabellenextraktion](#tabellenextraktion) oder [Funktionsbausteine und BAPIs](#funktionsbausteine-und-bapis).
 9. Klicken Sie auf **[Save]**, um den Service zu speichern. <br>
 Um einen Service zu bearbeiten, klicken Sie in der Übersicht auf den Namen des entsprechenden Services.
 
