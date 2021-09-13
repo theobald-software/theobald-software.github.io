@@ -19,6 +19,9 @@ Listener-Prozess| Standardport
 *XtractWebServer.exe* | 8065 (HTTP) und 8165 (HTTPS)
 *Theobald.Xu.Rpc.Listener.exe* | 8064
 
+{: .box-note }
+**Hinweis:** Erstellen entsprechender [Porteingangsregel](https://docs.microsoft.com/de-de/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule) für den Protokoltyp **TCP** der oben genannten Listener-Prozesse sind vorzunehmen.
+
 Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation. Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
 Der Configuration-Server kommuniziert mit dem Xtract Universal Designer über einen dedizierten Port. <br>
 
