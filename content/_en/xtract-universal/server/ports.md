@@ -19,6 +19,9 @@ Listener Process| Default Port
 *XtractWebServer.exe* | 8065 (HTTP) and 8165 (HTTPS)
 *Theobald.Xu.Rpc.Listener.exe* | 8064
 
+{: .box-note }
+**Note:** Create corresponding [Inbound Port Rule](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule) for the protocol type **TCP** of the listener processes mentioned above.
+
 The server processes use different ports for communication. The web server accepts extraction calls via HTTP(S). 
 The configuration server communicates with the Xtract Universal Designer via a dedicated port. <br>
 
