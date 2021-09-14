@@ -20,7 +20,7 @@ Listener-Prozess| Standardport
 *Theobald.Xu.Rpc.Listener.exe* | 8064
 
 {: .box-note }
-**Hinweis:** Erstellen entsprechender [Porteingangsregel](https://docs.microsoft.com/de-de/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule) für den Protokoltyp **TCP** der oben genannten Listener-Prozesse sind vorzunehmen.
+**Hinweis:** Bei einer verteilten Verwendung sind entsprechende [Porteingangsregeln](https://docs.microsoft.com/de-de/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule) für den Protokoltyp **TCP** der oben genannten Listener-Prozesse vorzunehmen.
 
 Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation. Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
 Der Configuration-Server kommuniziert mit dem Xtract Universal Designer über einen dedizierten Port. <br>
