@@ -4,7 +4,7 @@
 extrahiert die Daten im Full-Update-Modus.<br/>
 
 {: .box-note }
-**Hinweis:** Die Option **Delta update** ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt.
+**Hinweis:** Die Option **Delta update** ist nur dann eingabebereit, wenn der ODP-Anbieter im SAP-Quellsystem Delta-Updates unterstützt, siehe offizielle [SAP-Dokumentation](https://help.sap.com/doc/7b257f34728810148a4b1a83b0e91070/1511%20001/de-de/frameset.htm?4a1d039e24521977e10000000a42189c.html).
 
 **Delta update**:<br/>
 Führt eine Delta-Initialisierung aus, wenn für den ausgewählten Abonnenten keine Delta-Initialisierung verfügbar ist. Führt ein Delta-Update aus, wenn eine Delta-Initialisierung für den ausgewählten Abonnenten vorhanden ist. <br/>
