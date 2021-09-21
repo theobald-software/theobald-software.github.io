@@ -21,6 +21,7 @@ Während der Evaluierungsphase erhalten Sie garantiert eine uneingeschränkte Un
 Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail oder Telefon an Theobald Software wenden: <br>
 - [support@theobald-software.com](mailto:support@theobald-software.com)
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
+- [Xtract Universal Einrichtung](/docs/sap-customizing/VoraussetzungUndBetriebSAPKonnektoren_v202105.pdf){:download="VoraussetzungUndBetriebSAPKonnektoren_v202105.pdf"}
 
 ****
 #### Weiterführende Links
