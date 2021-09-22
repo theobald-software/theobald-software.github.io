@@ -56,5 +56,5 @@ Diese Einstellung ist optional und wird in Kombination mit dem Baustein Z_THEO_R
 Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen könnten. <br>
 
 {: .box-tip }
-**Tipp:** Die Extraktionsjobs befinden sich im SAP JobLog (SM37) unter dem JobName *theo_read_table*.
+**Tipp:** Die Extraktionsjobs befinden sich im SAP JobLog (SM37) unter dem JobName *THEO_READ_TABLE*.
 
