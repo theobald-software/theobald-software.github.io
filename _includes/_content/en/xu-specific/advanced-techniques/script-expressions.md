@@ -79,7 +79,7 @@ This scenario supports:
 ### Using Script Expressions as Dynamic Folder Paths
 
 {: .box-note }
-**Note:** This is currently only supported for the [Azure Storage destination](https://help.theobald-software.com/en/xtract-universal/destinations/azure-storage).
+**Note:** This is currently only supported for the [Azure Storage destination](../destinations/azure-storage/blob-settings#folder) and [Amazon AWS S3 destination](../destinations/amazon-aws-s3/settings#folder).
 
 In this scenario, script expressions are used to generate a dynamic folder path for destinations that write flat files. 
 This allows generating folder paths that are composed of an extraction's properties, e.g. extraction name, SAP source object.

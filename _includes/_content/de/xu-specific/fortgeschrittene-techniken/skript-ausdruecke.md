@@ -76,7 +76,7 @@ Dieses Szenario unterstützt:
 ### Skript-Ausdrücke als dynamische Ordnerpfade verwenden
 
 {: .box-note }
-**Hinweis:** Dies wird derzeit nur für die Destination [Azure Storage](https://help.theobald-software.com/de/xtract-universal/destinationen/azure-storage) unterstützt.
+**Hinweis:** Dies wird derzeit nur für die Destination [Azure Storage](../destinationen/azure-storage/blob-einstellungen) und [Amazon AWS S3 destination](../destinationen/amazon_aws_s3/einstellungen#folder) unterstützt.
 
 In diesem Szenario werden Skript-Ausdrücke zur Generierung eines dynamischen Ordnerpfads für Destinationen verwendet, die flachen Dateien (Flat Files) schreiben. 
 Dadurch kann ein Ordnerpfad generiert werden, der sich aus den Eigenschaften einer Extraktion zusammensetzt, z.B. Extraktionsname, SAP-Quellobjekt.
