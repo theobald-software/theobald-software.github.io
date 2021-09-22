@@ -41,8 +41,8 @@ The metadata (measures, dimensions, properties, BEx variables) of the selected B
 After completing the steps described in [Look up a BEx Query or BW InfoProvider](#look-up-a-bex-query-or-bw-infoprovider), the BEx Query's/InfoProvider's key figures, dimensions and properties are displayed in the tree structure at the left hand-side of the window. </br>
 
 ![Query Structure](/img/content/xfa/xfa_cube-query-select.png){:class="img-responsive"}
-The first directory contains all the measures (key figures) (1). 
-The following directories are the dimensions and often contain additional dimension properties (2). <br>
+The first directory contains all the measures (key figures) (6). 
+The following directories are the dimensions and often contain additional dimension properties (7). <br>
 
 1. Select key figures, dimensions and properties for the extraction. In BICS mode, dimensions that are placed on rows in the BEx Query definition, are preselected and can't be deselected.
 2. In MDX mode, expand the key figures to display available currency/unit fields. Select a currency/unit field if needed in the output. This is not available in BICS mode.
@@ -63,8 +63,8 @@ The following display options for the column names are available:
 ![Query Filter](/img/content/xfa/xfa_cube-query-filter.png){:class="img-responsive"}
 2. Click **[Edit Filter]**. The window "Member Filter" opens. In MDX mode the first 500,000 dimension members are loaded. In BICS mode 1,001 members are loaded. You can set *Single Values* and / or define *Value Ranges*.
 ![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
-3. Select a single value (3) and / or  click **[Add]** (4) to add value ranges. 
-4. Define values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). If needed, delete filters using the **[Remove]** button (dustbin symbol).
+3. Select a single value (8) and / or  click **[Add]** (9) to add value ranges. 
+4. Define values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). If needed, delete filters using the **[Remove]** button (dustbin symbol)(10).
 5. Click **[OK]** to confirm. The "Member Filter" window closes.
 
 When a filter is set, a funnel symbol appears next to the dimension the filter is applied on.
