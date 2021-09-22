@@ -39,7 +39,7 @@ If this option is active, the values of key figures are formatted as defined in 
 ### Automatic Slicing Dimension
 
 This option sets a dimension that is used for automatic slicing. 
-Automatic slicing executes multiple smaller select statements instead of a single big select statement. 
+Automatic slicing executes multiple smaller select statements instead of a single select statement. 
 Slicing happens based on the members of the selected slicing dimension. 
 
 In a first step, all members of the selected slicing dimension are determined, taking into account filters and BEx variables. In the second step, the Xtract Cube components sequentially iterates through the list of determined members, each time adding the current member as a filter to the select statement.
@@ -47,5 +47,5 @@ In a first step, all members of the selected slicing dimension are determined, t
 This way, out-of-memory-issues on the SAP side can be avoided.
 
 {: .box-note }
-**Note:**  Set an Automatic Slicing Dimension only for extractions that would otherwise run into out-of-memory issues on the SAP side. A suitable Slicing Dimension would contain an average amount of members, like 0COMP_CODE or 0CALMONTH.
+**Note:**  Set an Automatic Slicing Dimension only for extractions that would otherwise run into out-of-memory issues on the SAP side. A suitable Slicing Dimension would contain an average amount of members e.g., 0COMP_CODE or 0CALMONTH.
 

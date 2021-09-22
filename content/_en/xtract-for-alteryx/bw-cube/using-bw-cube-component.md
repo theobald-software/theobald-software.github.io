@@ -14,28 +14,26 @@ The following section shows how to use the Xtract Cube component. <br>
 ### Look up a BEx Query or BW InfoProvider
 1. In the main window of the component click the **[Search]** button (magnifying glass symbol). The window “Cube and Query Lookup” opens.
 ![Cube Query search](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
-2. In the field Name (1) enter a name of a BEx Query or InfoProvider. Wildcards (*) can be used, see below.
-3. **Extractor** defines if data is extracted using SAP's OLAP BAPI interface (MDX) of SAP's native BICS interface. The latter is still in beta (2).
-4. **Type** specifies if the name entered in 2. is a BEx Query or InfoProvider. (2)
-5. Click **[Search]** (magnifying glass icon)(3).
-6. Select (4) an entry from the list and click **[OK]** (5) to confirm.
-
-**Result:** The metadata (measures, dimensions, properties, BEx variables) of the selected BEx Query or InfoProvider is fetched from SAP.
+2. In the field Name (1) enter a name of a BEx Query or InfoProvider. Use wildcards (*), if needed.
+3.  Define the **Extractor** and **Type** of the object (2).<br>
+- **Extractor** defines if data is extracted using SAP's OLAP BAPI interface (MDX) or SAP's native BICS interface. BICS is still in beta phase.
+- **Type** specifies if the name entered in 2. is a BEx Query or InfoProvider. (2)
+4. Click **[Search]** (magnifying glass icon)(3).
+5. Select (4) an entry from the list and click **[OK]** (5) to confirm. <br>
+The metadata (measures, dimensions, properties, BEx variables) of the selected BEx Query or InfoProvider is fetched from SAP.
 
 #### MDX versus BICS (beta)
 
 {: .box-note }
-**Note:** The BICS component is still in beta phase. Please contact Theobald Software support in case of errors.
+**Note:** The BICS component is still in beta phase. Contact [Theobald Support](mailto:support@theobald-software.com) in case of errors.
 
 |                                    | MDX                                                                                         | BICS (beta)                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|
-| Syntax in lookup for BEx Queries   | [tech. name of InfoPovider]/[tech. name of BEx Query] <br /> example: 0SD_C03/0SD_C03_Q0018        | [tech. name of BEx Query] <br /> example: 0SD_C03_Q0018   |
-| Syntax in lookup for InfoProivders | $[tech. name of InfoProvoider]  <br /> example: $0SD_C03                                            | [tech. name of InfoProvider] <br /> example: 0SD_C03      |
-| Wildcards in lookup                | supported<br /> example lookup BEx Query: *0SD_C03_Q0018                                          | not required and therefore not supported           |
+| Syntax in lookup for BEx Queries   | `[tech. name of InfoPovider]/[tech. name of BEx Query]` <br /> example: 0SD_C03/0SD_C03_Q0018        | `[tech. name of BEx Query]` <br /> example: 0SD_C03_Q0018   |
+| Syntax in lookup for InfoProivders | `$[tech. name of InfoProvoider]`  <br /> example: $0SD_C03                                            | `[tech. name of InfoProvider]` <br /> example: 0SD_C03      |
+| Wildcards in lookup                | supported<br /> example: *0SD_C03_Q0018 instead of 0SD_C03/0SD_C03_Q0018                          | not required and therefore not supported           |
 | Supported InfoProviders            | InfoCubes, Multiproviders, Composite Providers                                              | InfoCubes, MuliProviders, Composite Providers, DSOs |
-| Setting in BEx Query               | Setting " Allow External Access to this Query" is required. If not set, BEx Query won't appear in lookup. See [here](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries). | not required                                       |
-
-
+| Setting in BEx Query               | Setting "Allow External Access to this Query" is required. If not set, BEx Query won't appear in the lookup, see [Allow External Access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries). | not required                                       |
 
 
  
@@ -56,7 +54,7 @@ The following directories are the dimensions and often contain additional dimens
 
 #### Column name style
 
-The following display options for the column names are available. 
+The following display options for the column names are available: 
 
 ![Column name style](/img/content/xfa/xfa_cube_column_name_style.png)
 
