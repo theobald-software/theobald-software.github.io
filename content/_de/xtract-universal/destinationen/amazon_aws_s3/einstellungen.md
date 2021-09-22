@@ -38,7 +38,10 @@ Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sicherges
 ### Folder
 
 Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines S3 Buckets extrahiert werden soll.<br>
-Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: Ordner/Unterordner1/Unterordner2/...
+Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden:`Ordner/Unterordner1/Unterordner2/`<br>
+
+Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](../../fortgeschrittene-techniken/script-ausdruecke#skript-ausdrücke-als-dynamische-ordnerpfade-verwenden) definiert werden. 
+Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt.
 
 
 ### File Splitting
