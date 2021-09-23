@@ -20,6 +20,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=verbindung2
 **Server Name** <br>
 Name oder Adresse des Hosts auf dem die Datenbank installiert ist eingeben.
 
+**Server Port** <br>
+Port des Servers, auf dem die Datenbank installiert ist eingeben.
+
 **User Name** <br>
 Datenbanknutzer für die MySQL Datenbank eingeben.
 
@@ -28,6 +31,6 @@ Passwort des Datenbanknutzers eingeben.
 
 **Database** <br>
 Name der MySQL Datenbank eingeben.
-             
+
 **Test Connection** <br>
 Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 

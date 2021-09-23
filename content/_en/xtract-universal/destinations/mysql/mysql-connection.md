@@ -20,6 +20,9 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=mysql-connection
 **Server Name** <br>
 Enter the name of the server the MySQL database is hosted on.
 
+**Server Port** <br>
+Enter the port of the server the MySQL database is hosted on.
+
 **User Name** <br>
 Enter the MySQL database user ID.
 
