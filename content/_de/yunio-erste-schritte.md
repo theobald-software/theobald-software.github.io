@@ -10,6 +10,9 @@ weight: 10
 lang: de_DE
 ---
 
+In Kürze verfügbar.<br>
+
+<!---
 YunIO ist ein Windows-Dienst mit einer eingebetteten Web-UI. <br>
 Der folgende Abschnitt gibt eine allgemeine Einführung in die Verwendung von YunIO.
 
@@ -86,13 +89,12 @@ Verwenden Sie Wildcards ( * ), falls nötig.
 9. Klicken Sie auf **[Save]**, um den Service zu speichern. <br>
 Um einen Service zu bearbeiten, klicken Sie in der Übersicht auf den Namen des entsprechenden Services.
 
-<!--- Um eine bereits vorhandene Extraktion zu bearbeiten, klicken Sie unter *Actions* auf **[..]** und wählen Sie **Edit**.
---->
+Um eine bereits vorhandene Extraktion zu bearbeiten, klicken Sie unter *Actions* auf **[..]** und wählen Sie **Edit**.
+
 ### Tabellenextraktion
 
-### Funktionsbausteine und BAPIs
 
 ### Service ausführen
 
-
+-->
 
