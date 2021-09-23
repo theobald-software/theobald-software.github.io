@@ -102,8 +102,8 @@ The *SAP Table and Views* menu consists of the following sections:
 The name and description of the selected Table or View are displayed in the *Table and View* section.<br>
 To select a different source file, click **Select** in the upper right corner of the section.
 2. **Advanced Settings:**<br>
-- **Max Row**: Specifies the maximum number of extracted records. 0 Extracts the entire table.
 - **Function Module**: Specifies the name of the function module used for data extraction. This field is filled automatically depending on what function modules are installed on your SAP system.
+- **Max Row**: Specifies the maximum number of extracted records. 0 Extracts the entire table.
 - **Rows per Package**: The extracted data will be split into packages of the defined size. The default value is 50000 lines.
 A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extracts.
 - **Run as background job**: If this checkbox is checked, the table extraction is executed as a background job in SAP. 
