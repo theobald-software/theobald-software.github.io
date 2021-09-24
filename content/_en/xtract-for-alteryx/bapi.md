@@ -10,21 +10,6 @@ permalink: /:collection/:path
 weight: 5
 lang: en_GB
 ---
-The following section describes the functions of the BAPI component of Xtract for Alteryx.<br>
 The Xtract BAPI component is used for executing SAP BAPI or Function Modules via RFC.
-SAP standard and custom BAPIs are supported equally.
-
-{: .box-tip }
-**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
-
-
-### How to use the BAPI component
-1.	Drag & drop the “Xtract BAPI” component to your Alteryx workflow.
-2.	Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
-
-The majority of the functions of the component can be accessed using the main window.<br>
-More information on working with the BAPI component is provided in the following sections.
-
----
-
+SAP standard and custom BAPIs are supported equally. The terms BAPI and RFC function module are used as equivalent. There is no substantial difference between the two concepts.
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

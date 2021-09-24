@@ -10,5 +10,4 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=bapis-suchen
 ---
-Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.
 {% include _content/de/xis-specific/xtract-is-bapi/bapis-suchen.md %}
