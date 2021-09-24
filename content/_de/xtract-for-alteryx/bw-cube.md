@@ -13,13 +13,13 @@ progressstate: 5
 ---
 Der folgende Abschnitt beschreibt die Funktion der Xtract Cube Komponente in Xtract for Alteryx. <br>
 Die Xtract Cube Komponente kann verwendet werden, um die Daten aus SAP BW (BEx) Queries und InfoProviders (z.B. InfoCubes) zu extrahieren. 
-Die Xtract Cube Komponente unterstützt zwei Extraktionmodi: MDX und BICS (beta).
+Die Xtract Cube Komponente unterstützt zwei Extraktionsmodi: MDX und BICS (beta).
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 ### BW Cube verwenden
-1. Ziehen Sie die "Xtract BW Cube" Komponente per drag & drop auf Ihr Alteryx-Workflow.
+1. Ziehen Sie die "Xtract BW Cube" Komponente per drag & drop auf Ihren Alteryx-Workflow.
 2. Wählen Sie eine SAP-Verbindung, navigieren Sie zur gewählten Extraktion und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente öffnet sich.
 
 
@@ -45,7 +45,7 @@ Der Unterabschnitt **Preview** zeigt eine Echtzeit-Vorschau der ausgewählten BE
 - **[Edit Variables]** ermöglicht die Definition von [BEx Query-Variablen](./bw-cube/bw-cube-variablen). 
 - **[Edit Runtime Parameters]** ermöglicht die Definition von [Laufzeitparametern](./bw-cube/edit-runtime-parameters). 
 
-Weitere Informationen zum Arbeiten mit der BW Cube Komponente finden Sie in den folgenden Unterabschnitten.
+Weitere Informationen zum Arbeiten mit der Xtract Cube Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---
 

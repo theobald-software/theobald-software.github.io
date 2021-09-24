@@ -11,7 +11,7 @@ lang: de_DE
 ---
 
 ### Über Query-BEx-Variablen
-BEx-Queries verwenden häufig Variablen zum Erstellen von Filtern. 
+BEx-Queries verwenden häufig BEx-Variablen zum Erstellen von Filtern. 
 Abhängig vom Typ der BEx-Variablen (Einzelwert, Mehrfachwert, Intervall oder komplexe Auswahl) werden die Eingabefelder der Variablen aktiviert oder deaktiviert.
 
 Anstatt Werte für BEx-Variablen hart einzugeben, können Sie Parameter definieren, die zur Laufzeit dynamisch gesetzt werden können, siehe [Laufzeitparameter](./edit-runtime-parameters) und [Parametrisierung](../parameterizing).

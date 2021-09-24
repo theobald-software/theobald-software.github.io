@@ -17,7 +17,7 @@ The following section shows how to use the Xtract Cube component. <br>
 2. Enter a name of a BEx Query or InfoProvider in the field **Name** (1). Use wildcards (*), if needed.
 3. Define the **Extractor** and **Type** of the object (2).<br>
 - **Extractor** defines if data is extracted using SAP's OLAP BAPI interface (MDX) or SAP's native BICS interface. BICS is still in beta phase.
-- **Type** specifies if the name entered in 2. is a BEx Query or InfoProvider. (2)
+- **Type** specifies if the name entered in 2. is a BEx Query or InfoProvider.
 4. Click **[Search]** (magnifying glass icon)(3).
 5. Select (4) an entry from the list and click **[OK]** (5) to confirm. <br>
 The metadata (measures, dimensions, properties, BEx variables) of the selected BEx Query or InfoProvider is fetched from SAP.
@@ -38,30 +38,35 @@ The metadata (measures, dimensions, properties, BEx variables) of the selected B
 
  
 ### Selecting Measures (Key Figures), Dimensions and Properties
-After completing the steps described in [Look up a BEx Query or BW InfoProvider](#look-up-a-bex-query-or-bw-infoprovider), the BEx Query's/InfoProvider's key figures, dimensions and properties are displayed in the tree structure at the left hand-side of the window. </br>
+After completing the steps described in [Look up a BEx Query or BW InfoProvider](#look-up-a-bex-query-or-bw-infoprovider), the BEx Query's/InfoProvider's key figures, dimensions and properties are displayed in the tree structure at the left hand-side of the window. <br>
 
 ![Query Structure](/img/content/xfa/xfa_cube-query-select.png){:class="img-responsive"}
 The first directory contains all the measures (key figures) (6). 
 The following directories are the dimensions and often contain additional dimension properties (7). <br>
 
-1. Select key figures, dimensions and properties for the extraction. In BICS mode, dimensions that are placed on rows in the BEx Query definition, are preselected and can't be deselected.
-2. In MDX mode, expand the key figures to display available currency/unit fields. Select a currency/unit field if needed in the output. This is not available in BICS mode.
+1. Select key figures, dimensions and properties for the extraction. 
+In BICS mode, dimensions that are placed on rows in the BEx Query definition, are preselected and can't be deselected.
+2. In MDX mode, expand the key figures to display available currency/unit fields. 
+Select a currency/unit field if needed in the output. This is not available in BICS mode.
 3. If applicable, fill any mandatory BEx variables with values.
-4. Click **[Load live preview]** to display the output with data from BW. If a unit is selected (e.g., currency) the corresponding field is displayed in the preview.
+4. Click **[Load live preview]** to display the output with data from BW. 
+If a unit is selected (e.g., currency) the corresponding field is displayed in the preview.
 
 {: .box-note }
 **Note:** Select at least one dimension and key figure for the preview to work.
 
 #### Column name style
 
-The following display options for the column names are available: 
-
+The following display options for the column names are available: <br>
 ![Column name style](/img/content/xfa/xfa_cube_column_name_style.png)
 
 ### Setting a Dimension Filter 
 1. Right-click a dimension. The button **[Edit Filter]** pops-up.
 ![Query Filter](/img/content/xfa/xfa_cube-query-filter.png){:class="img-responsive"}
-2. Click **[Edit Filter]**. The window "Member Filter" opens. In MDX mode the first 500,000 dimension members are loaded. In BICS mode 1,001 members are loaded. You can set *Single Values* and / or define *Value Ranges*.
+2. Click **[Edit Filter]**. The window "Member Filter" opens. 
+In MDX mode the first 500,000 dimension members are loaded. 
+In BICS mode 1,001 members are loaded. 
+You can set *Single Values* and / or define *Value Ranges*.
 ![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
 3. Select a single value (8) and / or  click **[Add]** (9) to add value ranges. 
 4. Define values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). If needed, delete filters using the **[Remove]** button (dustbin symbol)(10).
