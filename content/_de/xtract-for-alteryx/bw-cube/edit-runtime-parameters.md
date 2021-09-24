@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 ---
-Verwenden Sie Laufzeitparameter, um Dimensionsfilter und Variablen dynamisch zur Laufzeit anzupassen.<br>
+Verwenden Sie Laufzeitparameter, um Dimensionsfilter und BEx-Variablen dynamisch zur Laufzeit anzupassen.<br>
 
 ### Laufzeitparameter erstellen 
 
@@ -22,17 +22,17 @@ Das Fenster "Edit Runtime Parameters" öffnet sich.<br>
 - String: dieser Datentyp kann für jeden Typ der SAP-Felder verwendet werden.
 - Number: dieser Datentyp kann nur für numerische SAP-Felder verwendet werden.
 - Flag: dieser Datentyp kann nur für SAP-Felder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. <br>
-4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
+4. Klicken Sie auf **[OK]** (3), um Ihre Eingabe zu bestätigen.
 
 
 ### Laufzeitparameter zuweisen
 
-Weisen Sie Variablen oder Dimensionsfiltern Laufzeitparameter zu.
+Weisen Sie BEx-Variablen oder Dimensionsfiltern Laufzeitparameter zu.
 
 1. Um die erstellten Laufzeitparameter für Variablen zu verwenden, klicken Sie im Hauptfenster der Komponente auf **[Edit Variables]**. Das Fenster "Edit variables..." öffnet sich, siehe [Variablen](./variablen).<br> 
- Um die erstellten Laufzeitparameter direkt für Dimensionsfilter zu verwenden, rechtsklicken Sie im Hauptfenster der Komponente auf eine Dimension und klicken Sie dann auf **Edit Filter**. Das Fenster "Member Filter" öffnet sich, siehe [Einstellen eines Dimensionsfilters](./eine-bw-cube-quelle-definieren#einstellen-eines-dimensionsfilters).
+Um die erstellten Laufzeitparameter als Dimensionsfilter zu verwenden, rechtsklicken Sie im Hauptfenster der Komponente auf eine Dimension und wählen Sie **Edit Filter**. Das Fenster "Member Filter" öffnet sich, siehe [Einstellen eines Dimensionsfilters](./eine-bw-cube-quelle-definieren#einstellen-eines-dimensionsfilters).
 2. Wenn Sie Parameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt (4). <br>
 Klicken Sie auf die Icons, um zwischen der Eingabe fester Werte und der Eingabe von Parametern zu wechseln.  <br>
 ![Selection With Parameters](/img/content/bwcube-parameters.png){:class="img-responsive"}
-3. Wenn Sie auf Parametereingabe umgeschaltet haben, können einen Parameter aus der Drop-Down-Liste (5) auswählen.
+3. Wenn ein Feld auf Parametereingabe umgeschaltet ist, können Sie einen Parameter aus der Drop-Down-Liste (5) auswählen.
 

@@ -1,7 +1,7 @@
 ---
 ref: xfa-bw-cube-02
 layout: page
-title: BW Cube / Query-Variablen
+title: BEx Query-Variablen
 description: Query-Variablen
 product: xtract-for-alteryx
 parent: bw-cube
@@ -10,21 +10,25 @@ weight: 2
 lang: de_DE
 ---
 
-### Über Query Variablen
-BW-Queries haben oft definierte Variablen zum Erstellen von Filteroptionen. Abhängig vom Typ der BEx-Variablen (Einzelwert, Mehrfachwert, Intervall oder komplexe Auswahl) werden die Eingabefelder der Variablen aktiviert oder deaktiviert.
-Anstatt einen Wert für die BEx-Variable hart einzugeben, können Sie Variablen mit Werten definieren, die dynamisch gesetzt werden können.
-Verwenden Sie das **@**-Symbol vor dem Variablennamen im Eingabefeld, um den Eintrag als Variable zu definieren z.B.  *@salesorg*. 
+### Über Query-BEx-Variablen
+BEx-Queries verwenden häufig Variablen zum Erstellen von Filtern. 
+Abhängig vom Typ der BEx-Variablen (Einzelwert, Mehrfachwert, Intervall oder komplexe Auswahl) werden die Eingabefelder der Variablen aktiviert oder deaktiviert.
 
-### Variablen anpassen
-1. Um nach Queries zu [suchen](https://help.theobald-software.com/de/xtract-for-alteryx/bw-cube/bw-cube-extraction-anlegen#nach-bw-cube-oder-query-suchen) und wählen Sie ein Query mit definierten Variablen aus (1).
-2. Laden Sie eine Echtzeitvorschau (2), falls erforderlich. 
+Anstatt Werte für BEx-Variablen hart einzugeben, können Sie Parameter definieren, die zur Laufzeit dynamisch gesetzt werden können, siehe [Laufzeitparameter](./edit-runtime-parameters) und [Parametrisierung](../parameterizing).
+
+### BEx-Variablen anpassen
+1. Rufen Sie eine BEx-Query auf, die BEx-Variablen verwendet (1), siehe [Eine BEx-Query oder einen BW InfoProvider finden](./bw-cube-extraction-anlegen#bw-cube-oder-query-finden).
 ![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}
-3. Klicken Sie auf **[Edit Variables]** (3). Das Fenster "Edit variables for [Name des Query]" wird geöffnet.
-4. Felder mit verfügbaren Variablen werden aktiviert. Definieren Sie die Variablen mit Hilfe der Dropdown-Listenoptionen in den Feldern **Sign** und **Option**. Wählen Sie den Wertebereich, falls erforderlich. Die Logik der komplexen Auswahl beruht auf den üblichen Möglichkeiten. Die Spezifikation **Sign** definiert, ob die zugehörige Auswahl ein- oder ausgeschlossen werden soll.
-5. Klicken Sie auf **[Suche]** (Lupensymbol), um die auswählbaren Variablenwerte anzuzeigen.
+2. Klicken Sie auf **[Edit Variables]** (3). Das Fenster "Edit variables for [Name des BEx-Query]" wird geöffnet und Felder mit verfügbaren Variablen werden aktiviert.
+3. Definieren Sie die Variablen mit Hilfe der Dropdown-Listenoptionen in den Spalten **Sign** und **Option**. <br>
+Unter **Sign** wird definiert, ob die zugehörige Auswahl in die Ergebnismenge ein- oder ausgeschlossen werden soll.<br>
+Unter **Option** wird die Auswahl definiert. <br>
+Um BEx-Variablen der Typen *MultipleSignle* und *Complex* zu bearbeiten, klicken Sie auf **[Edit]** 
+4. Falls verfügbar, klicken Sie auf **[Suche]** (Lupensymbol) neben den Feldern, um eine Liste auswählbarer Variablenwerte anzuzeigen. Beispiel:<br>
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
-6. Klicken Sie auf **[Ok]** zum Bestätigen. 
-7. Klicken Sie auf **[Load Live Preview]** um eine Vorschau der gefilterten Ergebnisse anzuzeigen.
+Sie können einen Wert aus der Liste auswählen, einen Wert manuell eintragen oder einen [Laufzeitparameter](./edit-runtime-parameters) auswählen.
+5. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen. 
+6. Klicken Sie auf **[Load Live Preview]** um eine Vorschau der gefilterten Ergebnisse anzuzeigen.
 
 *****
 #### Weiterführende Links

@@ -11,16 +11,17 @@ lang: de_DE
 progressstate: 5
 ---
 Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.<br>
-Die Komponente BW Cube kann verwendet werden, um Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. Die BW Queries können in diesem Fall auf allen möglichen InfoProvidern basieren. <br>
-Ein üblicher Ansatz für die Extraktion besteht darin, eine Abfrage zu erstellen, die Ihren Geschäftsanforderungen entspricht.
 
-### BW Cube oder Query finden
-1. Im Hauptfenster des Designers navigieren Sie zum Unterabschnitt **Cube or Query** und klicken Sie auf  **[Suche]** (Lupensymbol). Das Fenster “Cube or Query Lookup” wird geöffnet.
+### Eine BEx Query oder einen BW Infofrovider finden
+1. Klicken Sie im Hauptfenster der Komponente auf  **[Suche]** (Lupensymbol). Das Fenster “Cube and Query Lookup” wird geöffnet.
 ![Cube Query search](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
-2. Geben Sie im Feld **Name** (1) den Namen des Query oder des BW Cubes / InfoProviders ein. Die Verwendung von Wildcards (*) ist unterstützt. 
-3. Definieren Sie den Typ des gesuchten Objekts im Feld **Type** (2).
+2. Geben Sie im Feld **Name** (1) den Namen eines BEx-Queries oder eines InfoProviders ein. Verwenden Sie Wildcards (*), falls notwendig.
+3. Definieren Sie den Extraktor und Typ des gesuchten Objekts den Feldern **Extractor** und **Type** (2).<br>
+- **Extractor** definiert, ob Daten mit dem OLAP BAPI Interface (MADX) oder dem nativen BICS Interface extrahiert werden. BICS befindet sich noch in der Beta-Phase.
+- **Type** spezifiziert, ob nach einer BEx-Query oder einem InfoProvider gesucht wird.
 4. Klicken Sie auf **[Suche]** (Lupensymbol) (3).
-5. Wählen Sie (4) das Objekt aus der Liste und klicken Sie auf **[OK]** (5) zum Bestätigen.
+5. Wählen Sie (4) das Objekt aus der Liste und klicken Sie auf **[OK]** (5) zum Bestätigen. <br>
+
 
 ### Auswählen von Messwerten ( Key Figures), Abmessungen und Eigenschaften
 Wenn ein Objekt ausgewählt ist, wird im Hauptfenster der Komponente auf der linken Seite eine Baumstruktur angezeigt. Die Baumstruktur stellt die Metadaten der Query (oder des InfoProviders) dar. <br>
@@ -45,4 +46,5 @@ Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (1). Die folgenden Ve
 
 ****
 #### Weiterführende Links
+- [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
 - [Query Variablen](./bw-cube-variablen)

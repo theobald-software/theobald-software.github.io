@@ -11,9 +11,13 @@ lang: en_GB
 ---
 
 ### About BEx Query Variables
-BEx queries often use BEx variables to set a filter before query execution. Depending on the type of BEx variable (single value, multiple value, interval or complex selection) input fields of the variables are enabled or disabled.
+BEx queries often use BEx variables to set a filter before query execution. 
+Depending on the type of BEx variable (single value, multiple value, interval or complex selection) input fields of the variables are enabled or disabled.
 
-Instead of hard coding values for BEx variables, you can define parameters that can be set dynamically at runtime, see [Runtime Parameters](./edit-runtime-parameters) and [Parameterizing](./parameterizing).
+Instead of hard coding values for BEx variables, 
+you can define parameters that can be set dynamically at runtime, 
+see [Runtime Parameters](./edit-runtime-parameters) and 
+[Parameterizing](../parameterizing).
 
 ### Editing BEx Variables
 1. Do a [lookup](./using-bw-cube-component#look-up-a-bw-cube-or-query) on a BEx Query that uses BEx variables (1).
@@ -22,9 +26,9 @@ Instead of hard coding values for BEx variables, you can define parameters that 
 ![Edit-Variables](/img/content/Edit-Variables.png){:class="img-responsive"}
 3. Define the variables using the drop-down list options in the columns **Sign** and **Option**. <br>
 The **Sign** specification defines whether the respective selection column is included or excluded in the result. <br>
-The **Option** specification defines how the selection column is made. <br>
+The **Option** specification defines the selection. <br>
 To edit variables of the types *multiple value* and *complex selection*, click **[Edit]**.
-4. If available, click the **[magnifying glass]** symbol next to the fields to display a list of selectable variable values. Example:
+4. If available, click the **[magnifying glass]** symbol next to the fields to display a list of selectable variable values. Example:<br>
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
 You can select a value from the list of selectable variable values, enter values manually or assign a [runtime parameter](./edit-runtime-parameters).
 5. Click **[OK]** to confirm your input. 

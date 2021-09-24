@@ -22,7 +22,7 @@ The window "Edit Runtime Parameters" opens.<br>
 - String: This data type can be used for any type of SAP field.
 - Number: This data type can be used for numeric SAP fields.
 - Flag: This data type can only be used for SAP fields that require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.<br>
-4. Click **[OK]** (3) to confirm.
+4. Click **[OK]** (3) to confirm your input.
 
 ### Define Runtime Parameters
 

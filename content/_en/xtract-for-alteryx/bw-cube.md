@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-06
 layout: page
-title: Xtract Cube
+title: BW Cube
 description: Xtract Cube Component
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
@@ -12,7 +12,8 @@ lang: en_GB
 progressstate: 5
 ---
 The following section describes the functions of the Xtract Cube component in Xtract for Alteryx.<br>
-The Xtract Cube component can be used to extract data from SAP BW (BEx) Queries and InfoProviders (e.g. InfoCubes). The Xtract Cube component supports two different extraction modes: MDX and BICS (beta).
+The Xtract Cube component can be used to extract data from SAP BW (BEx) Queries and InfoProviders (e.g. InfoCubes). 
+The Xtract Cube component supports two different extraction modes: MDX and BICS (beta).
 
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
@@ -41,9 +42,9 @@ The **Preview** subsection displays real preview data of the selected BEx Query 
 **Note:** In MDX mode, the first 100 rows are fetched for preview. In BICS mode, the **complete** result set is fetched.
 
 #### Buttons
-- **[Extraction Settings]** opens the [extraction specific settings](./bw-cube/bw-cube-settings) e.g., Package Size, Row Limit or Automatic Slicing Dimension. <br>
+- **[Extraction Settings]** opens the [extraction specific settings](./bw-cube/bw-cube-settings) e.g., **Package Size**, **Row Limit** or **Automatic Slicing Dimension**. <br>
 - **[Load live preview]** loads real preview data of selected BEx Query or InfoProvider.
-- **[Show MDX]** displays the MDX statement which will be executed at run-time on the BW system. Not available when BICS mode was selected.  For testing purposes, run the MDX statement in SAP transaction *MDXTEST*.
+- **[Show MDX]** displays the MDX statement which will be executed at runtime on the BW system. Not available in BICS mode. For testing purposes, run the MDX statement in SAP transaction *MDXTEST*.
 - **[Edit Variables]** allows defining [BEx Query variables](./bw-cube/bw-cube-variables). 
 - **[Edit Runtime Parameters]** allows defining [runtime parameters](./bw-cube/edit-runtime-parameters). 
 

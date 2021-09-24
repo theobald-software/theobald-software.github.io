@@ -14,8 +14,8 @@ The following section shows how to use the Xtract Cube component. <br>
 ### Look up a BEx Query or BW InfoProvider
 1. In the main window of the component click the **[Search]** button (magnifying glass symbol). The window “Cube and Query Lookup” opens.
 ![Cube Query search](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
-2. In the field Name (1) enter a name of a BEx Query or InfoProvider. Use wildcards (*), if needed.
-3.  Define the **Extractor** and **Type** of the object (2).<br>
+2. Enter a name of a BEx Query or InfoProvider in the field **Name** (1). Use wildcards (*), if needed.
+3. Define the **Extractor** and **Type** of the object (2).<br>
 - **Extractor** defines if data is extracted using SAP's OLAP BAPI interface (MDX) or SAP's native BICS interface. BICS is still in beta phase.
 - **Type** specifies if the name entered in 2. is a BEx Query or InfoProvider. (2)
 4. Click **[Search]** (magnifying glass icon)(3).
