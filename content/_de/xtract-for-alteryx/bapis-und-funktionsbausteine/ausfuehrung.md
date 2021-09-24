@@ -6,7 +6,7 @@ description: Ausführung
 product: xtract-for-alteryx
 parent: bapis-und-funktionsbausteine
 permalink: /:collection/:path
-weight: 8
+weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=ausfuehrung
 ---
@@ -22,7 +22,7 @@ Das folgende Beispiel zeigt eine erfolgreiche BAPI-Extraktion einer Bestellanfor
 6. Navigieren Sie im Fenster "Xtract BAPI" zum Tab *Tables* (5).
 7. Navigieren Sie zum erforderlichen Eingabefeld **REQUISITION_ITEMS** und wählen Sie die Tabelle *PRITEM* aus der Drop-Down-Liste aus (6).
 8. Aktivieren Sie die Ausgabe-Checkbox des Felds **Return** (7). Im "Configuration" Fenster des Alteryx-Designers prüfen Sie **Output Mappings > Output Tables**.
-Das gewählte Ausgabefeld **RETURN** und die Anzahl der Ausgabetabellen (hier eine) wird angezeigt.
+Das geählte Ausgabefeld **RETURN** und die Anzahl der Ausgabetabellen (hier eine) wird angezeigt.
 9. Führen Sie Ihren Alteryx Workflow aus.
 
 ![Bapi-Extraction](/img/content/xfa/bapi_example.png){:class="img-responsive"} 

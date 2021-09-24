@@ -9,16 +9,20 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
-The following section shows how to use the BAPI component.
+### Using BAPI Component
+1. Drag and drop the BAPI component from the menu bar to the workflow canvas (1). The window "Configuration" opens.
+2. Under subsection Connection, select an existing SAP connection (2) or create a new one by clicking **[New]** (see also [SAP-Connection](../introduction/sap-connection)).
+3. Within **Selected Extraction**, click **[Edit]** (3). The window "Xtract BAPI" opens.
+![BAPI component](/img/content/xfa/Define-bapi-component.png){:class="img-responsive"}
 
-### Look up a BAPI
-1. In the main window of the component click **[Search]** (magnifying glas icon) (1), you can use wildcards (*), if needed. The window "Function Module Lookup" opens.
-![BAPI component](/img/content/xfa/Define-bapi-component_1.png){:class="img-responsive"}
-2. By entering a search name in the **Function Name** field, you can narrow down the search. Start the search by using **[Search]** (magnifying glas icon) (2). You can use wildcards (*), if needed.<br>
-![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module_1.png){:class="img-responsive"}
-3. Select an item from the list (3). 
-4. Click **[OK]** (4) to confirm.
-5. The “BAPI” window displays the parameters of the selected BAPI.
-BAPI can have up to four parameter types: Imports, Exports, Changings and Tables.
-
+### Looking up a BAPI
+1. Click **Search** (4) to look for a BAPI. The window "Function Module Lookup" opens.
+2. In the field **Function Name** enter the name of a desired BAPI and click **Search** (5). <br>
+**Tip:** Wildcards (*) can be used for searching.
+![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module.png){:class="img-responsive"}
+6. Select an item from the list (6). 
+4. Click **[OK]** (7) to confirm.
+5. The "Xtract BAPI" window displays the parameters of the selected BAPI.<br>
+BAPI can have up to four [parameter types](./parameters): Imports, Exports, Changings and Tables.
 ![BAPI-Parameters](/img/content/xfa/BAPI-Parameters.png){:class="img-responsive"}
+
