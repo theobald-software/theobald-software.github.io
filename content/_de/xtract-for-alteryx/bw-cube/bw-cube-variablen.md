@@ -14,7 +14,7 @@ lang: de_DE
 BEx-Queries verwenden häufig BEx-Variablen zum Erstellen von Filtern. 
 Abhängig vom Typ der BEx-Variablen (Einzelwert, Mehrfachwert, Intervall oder komplexe Auswahl) werden die Eingabefelder der Variablen aktiviert oder deaktiviert.
 
-Anstatt Werte für BEx-Variablen hart einzugeben, können Sie Parameter definieren, die zur Laufzeit dynamisch gesetzt werden können, siehe [Laufzeitparameter](./edit-runtime-parameters) und [Parametrisierung](../parameterizing).
+Anstatt Werte für BEx-Variablen hart einzugeben, können Sie Parameter definieren, die zur Laufzeit dynamisch gesetzt werden können, siehe [Laufzeitparameter](./edit-runtime-parameters) und [Parametrisierung](../parametrisierung).
 
 ### BEx-Variablen anpassen
 1. Rufen Sie eine BEx-Query auf, die BEx-Variablen verwendet (1), siehe [Eine BEx-Query oder einen BW InfoProvider finden](./bw-cube-extraction-anlegen#bw-cube-oder-query-finden).
