@@ -11,9 +11,16 @@ weight: 45
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
-Der folgende Abschnitt beschreibt die Anwendung der  Xtract Universal BAPI Komponente. Kenntnisse über die Grundlagen von Xtract Universal werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Der folgende Abschnitt beschreibt die Funktion der Xtract Universal BAPI Komponente.<br>
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
+
+### BAPI verwenden
+{% include _content/de/xu-specific/define-extraction.md %}
+
+Weitere Informationen zum Arbeiten mit der BAPI Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

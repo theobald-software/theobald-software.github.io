@@ -27,7 +27,7 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 
 |Feldname|Beschreibung|
 |:----|:----|
-| *Variant*| Siehe [Varianten und Selektionen](./variants-and-selections).|
+| *Variant*| Siehe [Varianten und Selektionen](./report-variants-and-selections).|
 | *Edit*| Geben Sie eine SSIS-Variable als Auswahlkriterium ein, siehe [Varianten und Selektionen](./report-variants-and-selections).|
 | *Spool Destination / BatchJobDestination* | Entspricht dem Feld *Spool Destination* in der Report Komponente, siehe [Settings - Spool Destination / BatchJobDestination](./report-settings).|
 | *BatchJobName*        |Entspricht dem Feld *Batch Job Name* in der Report Komponente, siehe [Settings - BatchJobName](./report-settings).|
