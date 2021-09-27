@@ -1,7 +1,7 @@
 ---
 ref: yunio-table-01
 layout: page
-title: Defining a Table Extraction
+title: Defining a Table/View Extraction
 description: Tables and Fields
 product: yunio
 parent: table
@@ -16,25 +16,28 @@ This section shows how to use the *SAP Table and Views* component.
 
 ### Look Up an SAP Table or View
 
-1. When adding a new *Service*, select *SAP Table and Views* as the Extraction Type and click **[Next]** to open the *Search SAP Table or View* menu.
+1. When adding a new *Service*, select *SAP Table and Views* as the **Extraction Type** and click **[Next]** to open the *Search SAP Table or View* menu.
 2. Enter the name of the Table or View to be extracted in the field **Search by name** (1) or search for description of a Table. Use wildcards ( * ) if needed.
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
 3. Click **[Search]** (2) to display the search results.
-4. Select a source file (3). The main menu of the *SAP Table and Views* opens automatically.<br>
-![SAP-Table-or-Views](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px" }
+4. Select a source file from the list of available search results (3). The extraction settings of the *SAP Table and Views* open automatically.<br>
 
-The *SAP Table and Views* menu consists of the following sections:
-- [Table or View](#table-or-view) (4)
-- [Advanced Settings](#advanced-settings) (5)
-- [Output Columns](#output-columns) (6)
-- [WHERE-Clause](#where-clause) (7)
+### Extraction Settings
 
-### Table or View
+The *SAP Table and Views* menu consists of the following subsections:
+- [Table or View](#table-or-view) (4) displays the name and description of the selected data source.
+- [Advanced Settings](#advanced-settings) (5) are settings that only affect the respective extraction type.
+- [Output Columns](#output-columns) (6) can be used to select the columns you want to extract.
+- [WHERE-Clause](#where-clause) (7) is optional and can be used to filter data.
 
-The name and description of the selected Table or View is displayed in the **Table or View** section.<br>
-To select a different source file, click **Select** (4) in the upper right corner of the section.
+![YunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
 
-### Advanced Settings
+### Table or View (1)
+
+The name and description of the selected Table or View is displayed in the **Table or View** subsection.<br>
+To select a different source file, click **Select** in the upper right corner of the subsection.
+
+### Advanced Settings (2)
 
 #### Function Name
 Specifies the name of the function module used for data extraction. This field is filled automatically depending on what function modules are installed on your SAP system.
@@ -78,10 +81,41 @@ Activate the setting **Run in background** for long-running extractions with a v
 {: .box-tip }
 **Tip:** The extraction jobs can be found in the SAP JobLog (SM37) under the JobName *theo_read_table*.
 
-### Output Columns
+### Output Columns (3)
 
-You can select either all or only individual columns for extraction. 
-All columns are automatically selected for table extraction. Deselect the ones you don’t want to extract.
+You can select either all or only individual columns for extraction. <br>
+Per default all columns are selected to be extracted. 
+Deselect the ones you don’t want to extract.
 
-### WHERE-Clause
-coming soon...
+### WHERE-Clause (4)
+Use a WHERE clause to filter your data.
+
+#### Syntax Rules
+- Enter a space before and after the equal sign:<br>
+ **Correct:** *YEAR = '1999'* <br>
+ **Wrong:** *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*
+
+- Set floating point numbers in single quotation mark: <br>
+**Correct:** *KMENG > '10.3'* <br>
+**Wrong:** *KMENG > 10.3*
+
+{: .box-note }
+**Note:** The WHERE clause doesn't need any line break (return key).
+
+- Values must have the internal SAP representation:<br>
+  - The date 01.01.1999 has the internal representation 19990101 (YYYYMMDD) 
+  - The year period 001.1999 has the internal representation 1999001 (YYYYPPP)
+  - Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
+  
+| Operator   |      Meaning      |  
+|:---------|:------------- |
+|=, EQ |  True if the content of operand1 is equal to the content of operand2|
+|<>, NE | True if the content of operand1 is not equal to the content of operand2|
+| <, LT | True if the content of operand1 is less than the content of operand2|
+|>, GT |  True if the content of operand1 is greater than the content of operand2|
+|<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
+|>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
+| (NOT) LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
+| (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
+
+Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
