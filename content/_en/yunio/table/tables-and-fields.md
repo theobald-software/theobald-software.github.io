@@ -79,7 +79,7 @@ Extract data in background job setting is optional and is supported in combinati
 Activate the setting **Run in background** for long-running extractions with a very large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
 
 {: .box-tip }
-**Tip:** The extraction jobs can be found in the SAP JobLog (SM37) under the JobName *theo_read_table*.
+**Tip:** The extraction jobs can be found in the SAP JobLog (**SM37**) under the JobName *theo_read_table*.
 
 ### Output Columns (3)
 

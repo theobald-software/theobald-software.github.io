@@ -6,7 +6,7 @@ description: Erste Schritte mit YunIO
 product: yunio
 parent: yunio
 permalink: /:collection/:path
-weight: 10
+weight: 9
 lang: de_DE
 ---
 

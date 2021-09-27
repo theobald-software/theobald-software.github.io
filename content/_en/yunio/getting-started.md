@@ -6,7 +6,7 @@ description: Getting Started
 product: yunio
 parent: yunio
 permalink: /:collection/:path
-weight: 10
+weight: 9
 lang: en_EN
 ---
 

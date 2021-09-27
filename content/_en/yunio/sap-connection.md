@@ -6,7 +6,7 @@ description: SAP Connection
 product: yunio
 parent: yunio
 permalink: /:collection/:path
-weight: 9
+weight: 10
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
 progressstate: 5
@@ -19,21 +19,22 @@ progressstate: 5
 To establish a connection to SAP the access to general authority objects (RFC) must be available.
 Make sure to gain access to the general authority objects. For more information, see the knowledge base article on [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-The SAP connection settings are in the *Connection* section of the Web UI (1).
-- To add a new SAP connection, click **[Add Connection]** (2).<br>
-- To edit an existing connection, click on the name of the connection you want to edit (3).
+The SAP connection settings are in the *Connection* section of the Web UI.
+- To add a new SAP connection, click **[Add Connection]** (1).<br>
+- To edit an existing connection, click on the name of the connection you want to edit (2).
 
-![YunIO-Create-Connection](/img/content/yunio/yunio-connection.png){:class="img-responsive" }
+![YunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
 
 ### Connection Details
 
 The menu to create and edit SAP connections is divided into 3 sections:
-- [System](#system)
-- [Authentication](#authentication)
-- [Test Connection](#test-the-sap-connection)
+- [System](#system) (3)
+- [Authentication](#authentication) (4)
+- [Test Connection](#test-the-sap-connection) (5)
 
 Fill out the connection details and click **[Save]** to establish an SAP connection.<br>
 ![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
+
 ### System
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server

@@ -25,7 +25,7 @@ Bei YunIO handelt es sich um einen Windows-Dienst mit einer eingebetteten Web-UI
 Der YunIO-Dienst wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert. Der Zugriff auf die Web-UI erfolgt über einen Browser Ihrer Wahl.<br>
 Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um das lokale SAP-System mit der jeweiligen Cloud-Anwendung zu verbinden.
 
-![XU-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
+![YunIO-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
 
 ### Extraktionstypen
 

@@ -6,7 +6,7 @@ description: SAP-Verbindung
 product: yunio
 parent: yunio
 permalink: /:collection/:path
-weight: 9
+weight: 10
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sap-verbindungen-anlegen
 ---
@@ -18,21 +18,21 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=sap-verbindungen-anlegen
 Um eine Verbindung zu SAP herzustellen, muss der Zugriff auf allgemeine Berechtigungsobjekte (RFC) verfügbar sein.
 Stellen Sie sicher, dass der Zugriff auf die allgemeinen Berechtigungsobjekte möglich ist. Weitere Informationen finden Sie im Knowledge-Base-Artikel zu [SAP Zugriffsrechten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-Die Einstellungen für SAP-Verbindungen befinden sich in der Web-UI unter dem Abschnitt *Connections* (1).<br>
-- Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (2). <br>
-- Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf den Namen der Verbindung (3).
+Die Einstellungen für SAP-Verbindungen befinden sich in der Web-UI unter dem Abschnitt *Connections*.<br>
+- Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
+- Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf den Namen der Verbindung (2).
 
-![YunIO-Create-Connection](/img/content/yunio/yunio-connection.png){:class="img-responsive" }
+![YunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
 
 ### Verbindungsdetails
 
 Das Menü zum Erstellen und Bearbeiten von SAP-Verbindungen ist in drei Unterabschnitte unterteilt:
-- [System](#system)
-- [Authentication](#authentifizierung) (Authentifizierung)
-- [Test Connection](#angelegte-sap-verbindung-überprüfen) (Angelegte SAP-Verbindung überprüfen)<br>
-![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
+- [System](#system) (3)
+- [Authentication](#authentifizierung) (Authentifizierung) (4)
+- [Test Connection](#angelegte-sap-verbindung-überprüfen) (5)
 
-Ergänzen Sie die Verbindungsdetails und klicken Sie auf **[Save]**, um eine SAP-Verbindung herzustellen.
+Ergänzen Sie die Verbindungsdetails und klicken Sie auf **[Save]**, um eine SAP-Verbindung herzustellen.<br>
+![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
 
 {: .box-tip }
 **Tipp:** Werte zum Ausfüllen der Felder können Sie die Logon Pad unter *Properties* einsehen oder Sie wenden sich an Ihr SAP Basis Team.
@@ -40,18 +40,18 @@ Ergänzen Sie die Verbindungsdetails und klicken Sie auf **[Save]**, um eine SAP
 ### System
 Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 
-1. Single Application Server (Verwendung eines Single Application Servers)
-- **Host**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host). 
-- **Instance No**: Instanznummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber).
-- **Client**:  die dreistellige Mandantennummer Ihres SAP-Systems zwischen 000 und 999, z.B. 800. 
-- **Language**: der Sprachschlüssel für die von Ihnen verwendete Sprache, z.B. EN für Englisch oder DE für Deutsch.
+- Verwendung eines Single Application Servers
+	- **Host**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host). 
+	- **Instance No**: Instanznummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber).
+	- **Client**:  die dreistellige Mandantennummer Ihres SAP-Systems zwischen 000 und 999, z.B. 800. 
+	- **Language**: der Sprachschlüssel für die von Ihnen verwendete Sprache, z.B. EN für Englisch oder DE für Deutsch.
 
-2. Load Balancing (Verwendung eines Load-Balancing / Message-Servers)
-- **Logon group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*).
-- **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer). 
-- **System ID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS). 
-- **Client**:  die dreistellige Mandantennummer Ihres SAP-Systems zwischen 000 und 999, z.B. 800. 
-- **Language**: der Sprachschlüssel für die von Ihnen verwendete Sprache, z.B. EN für Englisch oder DE für Deutsch.
+- Verwendung eines Load-Balancing/Message-Servers
+	- **Logon group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*).
+	- **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer). 
+	- **System ID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS). 
+	- **Client**:  die dreistellige Mandantennummer Ihres SAP-Systems zwischen 000 und 999, z.B. 800. 
+	- **Language**: der Sprachschlüssel für die von Ihnen verwendete Sprache, z.B. EN für Englisch oder DE für Deutsch.
 
 Nähere Informationen zu Load Balancing finden Sie in der [SAP Online-Help: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
