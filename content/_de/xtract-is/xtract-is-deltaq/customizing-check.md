@@ -10,4 +10,5 @@ weight: 2
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/xis-specific/xtract-is-deltaq/customizing-check.md %}
+
+{% include _content/de/datasource-deltaq/customizing-check.md %}
