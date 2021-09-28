@@ -25,6 +25,10 @@ Xtract Universal DeltaQ is an old component. If possible, use the newer componen
 ### How to use the DeltaQ component
 {% include _content/en/xu-specific/define-extraction.md %}
 
+{: .box-note }
+**Note:** To use the DeltaQ component, you need to adjust settings in your SAP system, see [SAP Customizing](./sap-customizing/customizing-for-deltaq).
+
+
 More information on working with the DeltaQ component is provided in the following sections.
 
 ---

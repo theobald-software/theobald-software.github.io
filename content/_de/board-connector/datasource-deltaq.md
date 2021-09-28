@@ -22,6 +22,8 @@ DeltaQ ist eine alte Komponente. Wenn möglich verwenden Sie die neuere Komponen
 ### DeltaQ verwenden
 {% include _content/de/board-specific/define-extraction.md %}
 
+{: .box-note }
+**Hinweis:** Um die DeltaQ-Komponente nutzen zu können, sind Einstellungen im SAP ERP vorzunehmen, siehe  [SAP Customizing](./sap-customizing/customizing-fuer-deltaq).
 
 Weitere Informationen zum Arbeiten mit der DeltaQ Connector Komponente finden Sie in den folgenden Unterabschnitten.
 
