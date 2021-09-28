@@ -10,4 +10,4 @@ weight: 3
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/xis-specific/xtract-is-deltaq/stammdaten-im-full-update.md %}
+{% include _content/de/datasource-deltaq/eine-deltaq-quelle-definieren.md %}
