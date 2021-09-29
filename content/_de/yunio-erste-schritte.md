@@ -91,7 +91,7 @@ Verwenden Sie Wildcards ( * ), falls nötig. <br>
 8. Klicken Sie auf **[Save]**, um den Service zu speichern. <br>
 
 
-### Tabellenextraktion
+### Tabellenextraktionen
 
 Das *SAP Table and Views*-Menü besteht aus den folgenden Unterabschnitten:
 

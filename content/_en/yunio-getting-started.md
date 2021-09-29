@@ -44,7 +44,7 @@ System updates or changes can restrict software functionalities and this may lea
 Create a backup of the directory: `C:\Program Files\Theobald Software\YunIO\config` at regular intervals.
 
 
-### Accessing the Web UI
+### Web UI
 
 To access the web UI of YunIO, open a web browser of your choice and enter the URL the server that YunIO is running on.<br>
 The URL pattern to access the YunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
@@ -91,7 +91,7 @@ Use wildcards ( * ) if needed.<br>
 8. Click **[Save]** to save the service.
 
 
-### Table Extraction
+### Table Extractions
 
 
 The *SAP Table and Views* menu consists of the following subsections:
