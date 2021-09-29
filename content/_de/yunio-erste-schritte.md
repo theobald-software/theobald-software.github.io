@@ -10,9 +10,6 @@ weight: 10
 lang: de_DE
 ---
 
-In Kürze verfügbar.<br>
-
-<!---
 YunIO ist ein Windows-Dienst mit einer eingebetteten Web-UI. <br>
 Der folgende Abschnitt gibt eine allgemeine Einführung in die Verwendung von YunIO.
 
@@ -64,11 +61,13 @@ Sie können den Port in der YunIO Web-UI unter *Settings* konfigurieren. <br>
 
 Unter *Connections* können Sie neue SAP-Verbindungen hinzufügen und bereits angelegte SAP-Verbindung bearbeiten oder löschen. 
 
-1. Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]**. <br>
-Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie den Namen der Verbindung.
-2. Geben Sie die Verbindungsinformationen zu Ihrem SAP-System unter *System* ein.
-3. Geben Sie SAP-Anmeldedaten unter *Authentication* ein.
-4. Um die Verbindung zu prüfen, klicken Sie auf **[Test Connection]**, .<br>
+1. Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
+Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf den Namen der Verbindung (2).<br>
+![web-ui](/img/content/yunio/web-ui.png){:class="img-responsive"}
+2. Geben Sie die Verbindungsinformationen zu Ihrem SAP-System unter *System* (3) ein.<br>
+![YunIO-connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
+3. Geben Sie SAP-Anmeldedaten unter *Authentication* (4) ein.
+4. Um die Verbindung zu prüfen, klicken Sie auf **[Test Connection]** (5).<br>
 Je nachdem ob der Verbindungsaufbau erfolgreich war oder nicht, öffnet sich ein Fenster mit einer entsprechenden Statusmeldung.
 5. Speichern Sie Ihre Eingaben über **[Save]**.
 
@@ -77,24 +76,50 @@ Je nachdem ob der Verbindungsaufbau erfolgreich war oder nicht, öffnet sich ein
 
 Unter *Services* können Sie neue Services erstellen und bereits angelegte Services bearbeiten, ausführen und löschen.
 
-1. Um eine neue Extraktion anzulegen, klicken Sie auf **[Add Service]**. 
-2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus.
-3. Wählen Sie einen Extraktionstyp. YunIO bietet hierfür zwei Möglichkeiten: Tabellen/Ansichten oder Funktionsbausteine/BAPIs.
-4. Optional: Geben Sie unter *Description* eine kurze Beschreibung des Services ein.
-5. Klicken Sie auf **[Next]**.
-6. Je nach gewähltem Extraktionstyp geben Sie in das Feld **Search Term** den Namen der zu extrahierenden Tabelle/Ansicht oder des zu extrahierenden Funktionsmoduls/BAPIs ein. 
-Verwenden Sie Wildcards ( * ), falls nötig. 
-7. Klicken Sie auf **[Search]**, um die Suchergebnisse anzuzeigen. 
-8. Wählen Sie eine Quelldatei aus. Das Menü für die Extraktionseinstellungen öffnen sich automatisch, siehe [Tabellenextraktion](#tabellenextraktion) oder [Funktionsbausteine und BAPIs](#funktionsbausteine-und-bapis).
-9. Klicken Sie auf **[Save]**, um den Service zu speichern. <br>
-Um einen Service zu bearbeiten, klicken Sie in der Übersicht auf den Namen des entsprechenden Services.
+1. Um eine neue Extraktion anzulegen, klicken Sie auf **[Add Service]** (1). <br>
+Um einen bereits vorhandenen Service zu bearbeiten, klicken Sie auf den Namen des Services (2).<br>
+![YunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
+2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus (3).
+![YunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
+3. Wählen Sie einen Extraktionstyp (4). YunIO bietet hierfür zwei Möglichkeiten: *SAP Tables or Views* oder *Function Modules*.
+4. Optional: Geben Sie unter *Description* eine kurze Beschreibung des Services ein (5). Klicken Sie auf **[Next]**.
+5. Je nach gewähltem Extraktionstyp geben Sie den Namen oder die Beschreibung der zu extrahierenden Tabelle/Ansicht oder des zu extrahierenden Funktionsmoduls/BAPIs ein (6). 
+Verwenden Sie Wildcards ( * ), falls nötig. <br>
+![YunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
+6. Klicken Sie auf **[Search]**, um die Suchergebnisse anzuzeigen (7). 
+7. Wählen Sie eine Quelldatei aus (8). Das Menü für die Extraktionseinstellungen öffnet sich automatisch, siehe [Tabellenextraktion](#tabellenextraktion).
+8. Klicken Sie auf **[Save]**, um den Service zu speichern. <br>
 
-Um eine bereits vorhandene Extraktion zu bearbeiten, klicken Sie unter *Actions* auf **[..]** und wählen Sie **Edit**.
 
-### Tabellenextraktion
+### Tabellenextraktionen
 
+Das *SAP Table and Views*-Menü besteht aus den folgenden Unterabschnitten:
+
+![YunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
+
+1. **Table and View:**<br>
+Name und Beschreibung der gewählten Tabelle oder Ansicht werden im Unterabschnitt *Table and View* angezeigt.<br>
+Um eine andere Quelldatei zu suchen, klicken Sie in der oberen, rechten Ecke des Unterabschnitts auf **Select**.
+2. **Advanced Settings:**<br>
+- **Max Row**: Gibt die maximale Anzahl der extrahierten Datensätze an. 0 extrahiert die komplette Tabelle.
+- **Function Module**: Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Dieses Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind. 
+- **Rows per Package**: Die extrahierten Daten werden in Pakete mit der angegebenen Größe aufgeteilt. Der Standardwert ist 50000 Zeilen. 
+Eine Paketgröße zwischen 20000 und 50000 ist sinnvoll für große Datenmengen. 0 bedeutet, es findet keine Parkettierung statt. 
+Keine Parkettierung kann bei Extraktionen großer Datenmengen zu einem RFC-Timeout führen.
+- **Run as background job**: <br>
+Durch Ankreuzen der Checkbox “Extract data in background” wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
+Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler (“Time limit exceeded”) laufen könnten.
+3. **Output Columns:**<br>
+Wählen Sie die Spalten aus, die extrahiert werden sollen.
+4. **WHERE-Clause:**<br>
+Optional: Sie können eine WHERE-Bedingung verwenden, um Ihre Daten zu filtern.
+Für Informationen zur OpenSQL-Syntax der WHERE-Bedingung, siehe [SAP Hilfe - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm).
 
 ### Service ausführen
 
--->
+Die Web-Services, die mit YunIO erstellt werden, verwenden ein auf .json basierendes Protokoll, um Daten nach und von SAP zu schreiben.
+
+Um einen YunIO Web-Service in Ihre Prozesse (z.B. in Power Automate, Nintex, Swagger, etc.) zu integrieren, können Sie entweder die URL des Service Endpoints (1) kopieren oder kopieren/downloaden Sie den .json-Code des Services (2).
+
+![YunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
 

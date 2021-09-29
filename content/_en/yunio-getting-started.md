@@ -10,7 +10,7 @@ weight: 10
 lang: en_EN
 ---
 
-YunIO is a Windows service that comes with an embedded Web UI.
+YunIO is a Windows service that comes with an embedded Web UI.<br>
 The following section gives a general introduction to working with YunIO. 
 
 ### Installation
@@ -44,7 +44,7 @@ System updates or changes can restrict software functionalities and this may lea
 Create a backup of the directory: `C:\Program Files\Theobald Software\YunIO\config` at regular intervals.
 
 
-### Accessing the Web UI
+### Web UI
 
 To access the web UI of YunIO, open a web browser of your choice and enter the URL the server that YunIO is running on.<br>
 The URL pattern to access the YunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
@@ -86,15 +86,15 @@ To edit an existing service, click on the name of the service you want to edit (
 5. Depending on the chosen extraction type either enter the name or description of a Table/View or the name of a Function Module/BAPI to be extracted (6). 
 Use wildcards ( * ) if needed.<br>
 ![YunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
-6. Click **[Search]** to display the search results. 
+6. Click **[Search]** to display the search results (7). 
 7. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extraction](#table-extraction).
 8. Click **[Save]** to save the service.
 
 
-### Table Extraction
+### Table Extractions
 
 
-The *SAP Table and Views* menu consists of the following sections:
+The *SAP Table and Views* menu consists of the following subsections:
 
 ![YunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
 
