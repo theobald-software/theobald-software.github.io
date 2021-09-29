@@ -12,7 +12,7 @@ The following example shows the download of material master data from the DataSo
 After selecting an Extractor, follow the steps below:
 
 1. Choose an *Update Mode* (5).<br>
-**Full Update** requests all data that meets the selection criteria you set. To get a real **Delta** procedure running, Delta first has to be initialized, see at [Delta](./datasource-delta).<br>
+**Full Update** requests all data that meets the selection criteria you set. To get a real **Delta** procedure running, Delta first has to be initialized, see [Delta](./datasource-delta).<br>
 For more information on available update modes, see [Update Mode](./update-mode).
 2. Check the boxes of the columns you want to extract (6).<br>
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
