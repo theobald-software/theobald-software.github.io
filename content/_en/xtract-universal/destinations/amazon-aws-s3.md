@@ -15,7 +15,6 @@ progressstate: 5
 
 ## Requirements
 
-### Prerequisites
 - Existing Amazon Web Services (AWS) Account.
 - **Either** the "[Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)" (consisting of "access key ID" and "secret access key") of your AWS user at hand.<br> **Or** an IAM role attached to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html) Xtract Universal is running on.
 - Existing S3 bucket, in which you can upload data.
