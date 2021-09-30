@@ -15,6 +15,7 @@ progressstate: 5
 This destination is a generic CSV stream over HTTP. 
 The CSV (via HTTP) destination is supported by many products. The following products have been tested: Layer2, INFONEA and KNIME. 
 
+## Connection
 ### Adding a Destination
 
 1. In the main window of the Designer, navigate to **Server > [Manage Destinations](./managing-destinations)**. The window “Manage Destinations” opens.
@@ -30,5 +31,5 @@ The CSV (via HTTP) destination is supported by many products. The following prod
 {% include _content/en/xu-specific/destinations/general/convert-encoding.md %}	
 
 ****
-#### Related Links
+## Related Links
 - KNIME Integration via [SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)

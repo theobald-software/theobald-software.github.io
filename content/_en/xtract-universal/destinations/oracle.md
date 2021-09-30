@@ -15,7 +15,7 @@ progressstate: 5
 
 The following section describes the loading of the SAP extraction data to an Oracle Database destination.
 
-## Rewuirements
+## Requirements
 
 Starting from the version Xtract Universal 4.2.34.0 the Oracle data provider is included in to the setup of Xtract Universal. 
 There are no additional installations needed to use Oracle database destination.
