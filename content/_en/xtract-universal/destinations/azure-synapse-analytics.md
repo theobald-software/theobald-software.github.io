@@ -13,6 +13,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=azure_dwh
 progressstate: 5
 ---
 
+The following section describes the loading of the SAP extraction data to Azure Synapse Analytics (SQL pool).
+
 ## Requirements
 
 To use the Azure Synapse Analytics (SQL pool) destination, you need:

@@ -12,6 +12,8 @@ lang: de_DE
 progressstate: 5
 ---
 
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud-Speicher [Amazon S3](https://aws.amazon.com/de/s3/).
+
 ## Voraussetzungen
 
 Sie benötigen:

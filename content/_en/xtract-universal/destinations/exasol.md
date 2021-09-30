@@ -13,6 +13,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol
 progressstate: 5
 ---
 
+The following section describes the loading of the SAP extraction data to an EXASOL Database destination.
+
 ## Requirements
 
 Starting from the version Xtract Universal 4.2.26.0 the Exasol ADO.Net driver ExaDataProvider is provided with the setup of Xtract Universal. There are no additional installations needed to use Exasol database destination.

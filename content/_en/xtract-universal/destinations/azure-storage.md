@@ -11,6 +11,7 @@ weight: 24
 lang: en_GB
 progressstate: 5
 ---
+The following section describes the loading of SAP data to a cloud based Azure Storage. 
 
 ## Requirements
 

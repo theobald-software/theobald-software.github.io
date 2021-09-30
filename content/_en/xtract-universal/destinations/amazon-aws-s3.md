@@ -13,6 +13,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=amazon-aws-s3
 progressstate: 5
 ---
 
+The following section describes data extraction to Amazons's cloud storage S3.
+
 ## Requirements
 
 - Existing Amazon Web Services (AWS) Account.

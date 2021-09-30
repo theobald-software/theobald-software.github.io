@@ -13,6 +13,8 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=azure_blob_storage
 progressstate: 5
 ---
 
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud-Speicher Azure Storage.
+
 ## Voraussetzungen
 
 Die Azure-Storage-Destination (Blob / Data Lake) unterstützt die folgenden Azure-Storage Account-Typen:

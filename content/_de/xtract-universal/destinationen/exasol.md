@@ -12,6 +12,9 @@ lang: de_DE
 progressstate: 5
 ---
 
+
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine EXASOL-Zieldatenbank.
+
 ## Voraussetzungen
 
 Ab der Version Xtract Universal 4.2.26.0 wird der Exasol ADO.Net Treiber ExaDataProvider mit dem Setup von Xtract Universal ausgeliefert. Es sind keine zusätzlichen Installationen erforderlich, um die Destination Exasol-Datenbank zu verwenden.

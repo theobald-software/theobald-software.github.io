@@ -13,6 +13,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=alteryx
 progressstate: 5
 ---
 
+The following section describes the loading of the SAP extraction data from Alteryx.
+
 ## Requirements
 
 The Xtract Universal Alteryx plugin for the Alteryx designer is required to use the Alteryx destination. 

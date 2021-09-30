@@ -13,9 +13,10 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-flat-file
 progressstate: 5
 ---
 
-## Connection
-
 This destination is a CSV (comma-separated values) flat file. 
+
+
+## Connection
 
 ### Adding a Destination
 

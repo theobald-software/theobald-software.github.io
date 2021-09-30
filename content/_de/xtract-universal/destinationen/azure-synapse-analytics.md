@@ -12,6 +12,8 @@ lang: de_DE
 progressstate: 5
 ---
 
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in einen Azure Synapse Analytics SQl pool.
+
 ## Voraussetzungen
 
 Um die Azure Synapse Analytics (SQL pool) Destination nutzen zu können, brauchen Sie
