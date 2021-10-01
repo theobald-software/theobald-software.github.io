@@ -14,6 +14,8 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=zielumgebungen
 
 Die Destination *Flat File* erzeugt eine generische CSV-Datei. 
 
+## Verbindung
+
 ### Eine Destination hinzufügen
 
 1. Navigieren Sie im Hauptfenster des Designers zu **Server > [Manage Destinations](./ziele-verwalten)**. Das Fenster "Manage Destination" wird geöffnet.
@@ -42,3 +44,29 @@ Wenn das Verzeichnis nicht existiert, wird es erstellt.
 ### Column encryption
 {% include _content/de/xu-specific/destinationen/general/column-encryption.md %}
 
+
+## Einstellungen
+
+### Destination Settings öffnen
+
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+Die folgenden Einstellungen können für die Destination definiert werden. 
+  
+### Destination Settings - Destinationseinstellungen
+
+![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
+
+{% include _content/de/xu-specific/destinationen/general/file-name.md %}
+
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
+
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
+
+### Existing files 
+
+**Replace file**: eine vorhandene Zieldatei wird überschrieben. <br>
+**Append results**: Daten werden an eine bereits bestehende Zieldatei angehängt. <br>
+**Abord extraction**: Der Prozess wird abgebrochen, falls eine Zeildatei bereits existiert.   
