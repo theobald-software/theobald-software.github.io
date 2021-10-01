@@ -85,6 +85,8 @@ Use the `XtractDesigner.exe` file to start the Designer. Before you connect to a
 {: .box-note }																   
 **Note:** When updating the software, you have to manually download the latest version of the standalone Designer from [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/) and replace the old files.
 
+{: .box-note }																   
+**Note:** The standalone Designer might be classified as 'dangerous' by antivirus software. Make sure the Designer is not blocked by antivirus software.
 
 ### New Installation and Update																																										   
 

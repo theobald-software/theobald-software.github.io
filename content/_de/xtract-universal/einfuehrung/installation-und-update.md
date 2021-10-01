@@ -87,6 +87,9 @@ Verwenden Sie `XtractDesigner.exe`, um den Designer zu starten. Bevor Sie sich m
 {: .box-note }																   
 **Hinweis:** Bei einem Softwareupdate laden Sie die aktuelle Version des Standalone-Designers manuell aus dem [Kundenportal - My Theobald Software ](https://my.theobald-software.com/) herunter und ersetzen Sie das bisher verwendete Verzeichnis des Standalone-Designers.
 
+{: .box-note }																   
+**Hinweis:** Der Standalone-Designer kann ggf. von Antivirensoftware als 'gefährlich' eingestuft werden. Stellen Sie sicher, dass der Designer nicht von Antivirensoftware blockiert wird.
+
 
 ### Neuinstallation und Update
 
