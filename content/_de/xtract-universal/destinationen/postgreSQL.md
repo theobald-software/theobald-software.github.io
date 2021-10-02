@@ -73,7 +73,7 @@ Der Standard-Port ist 5432.
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am PostgreSQL Server zu authentisieren, siehe auch [Client Authentication](https://www.postgresql.org/docs/11/client-authentication.html).
 
 {: .box-note }
-**Hinweis:** Um eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung herzustellen, müssen Sie den [XU-Dienst unter einem Windows AD-Benutzer](../../fortgeschrittene-techniken/service-account) mit Zugriff auf die Datenbank ausführen.
+**Hinweis:** Um eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung herzustellen, müssen Sie den [XU-Dienst unter einem Windows AD-Benutzer](../fortgeschrittene-techniken/service-account) mit Zugriff auf die Datenbank ausführen.
 
 
 **Username**<br>
@@ -93,7 +93,7 @@ Klicken Sie auf die Schaltfläche, um die Verbindung zu testen.
 
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

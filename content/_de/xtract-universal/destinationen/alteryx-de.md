@@ -59,7 +59,7 @@ Für das Anlegen einer Alteryx Zielumgebung müssen keine weiteren Einstellungen
 
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -97,7 +97,7 @@ Es werden nur die Extraktionen mit Alteryx als Destinationstyp angezeigt. Den De
 **Hinweis:** Stellen Sie sicher, dass der Xtract Universal Server läuft.
 
 **Send SAP credentials** <br>
-Markieren Sie die Checkbox *Send SAP credentials*, wenn auch die Checkbox *Require SAP Credentials to be explicitly supplied for execution* in den [SAP Source-Einstellungen](../../einfuehrung/sap-verbindungen-anlegen) in Xtract Unviersal markert ist.
+Markieren Sie die Checkbox *Send SAP credentials*, wenn auch die Checkbox *Require SAP Credentials to be explicitly supplied for execution* in den [SAP Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) in Xtract Unviersal markert ist.
 
 Die Einstellung *Send SAP credentials* kann in Self-Service-Szenarien nützlich sein. Wenn jede Extraktion mit den SAP-Anmeldeinformationen eines einzelnen Benutzers anstelle der global definierten Anmeldeinformationen ausgeführt werden muss.
 
@@ -120,7 +120,7 @@ Um den Parameter *city* zu überschreiben, markieren Sie die Checkbox **Override
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters-override.PNG){:class="img-responsive"}
 
-Weitere Informationen zu benutzerdefinierten Parametern finden Sie unter [Benutzerdefinierte Variablen](../../fortgeschrittene-techniken/benutzerdefinierte-variablen).
+Weitere Informationen zu benutzerdefinierten Parametern finden Sie unter [Benutzerdefinierte Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen).
 
 Sind bei der Verbindung zu Ihrem Xtract Universal Server keine Fehler aufgetreten, dann trägt das Tool ein Tooltip in folgendem Format: [Extraktion] @ [Server].
 

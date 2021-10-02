@@ -39,7 +39,7 @@ Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen. 
 
 ### Destination Settings öffnen
 
-1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -52,6 +52,6 @@ Die folgenden Einstellungen können für die Parquet-Destination definiert werde
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
 ### Existing files
-Die Option *Existing files* ist mit der Option *Directory* (Verzeichnis) verbunden, die in den [Destination Details](../parquet#destination-details---destinationendetails) definiert ist.<br>
+Die Option *Existing files* ist mit der Option *Directory* (Verzeichnis) verbunden, die in den [Destination Details](#destination-details---destinationendetails) definiert ist.<br>
 **Replace file** - ersetzt die vorhandene Datei in dem Verzeichnis, in dem die Parquet-Datei gespeichert ist.<br>
 **Abort extraction** - bricht die Extraktion ab, wenn die Parquet-Datei bereits im definierten Verzeichnis existiert.

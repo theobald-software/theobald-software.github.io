@@ -49,12 +49,12 @@ siehe auch [Aktivieren von verschlüsselten Verbindungen zur Datenbank-Engine](h
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am SQL Server zu authentisieren.
 
 {: .box-note }
-**Hinweis:** Für eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung, stellen Sie sicher, dass [der XU-Dienst unter einem Windows AD-Benutzer ausgeführt wird](../../fortgeschrittene-techniken/service-account), mit Zugriff auf die Datenbank.
+**Hinweis:** Für eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung, stellen Sie sicher, dass [der XU-Dienst unter einem Windows AD-Benutzer ausgeführt wird](../fortgeschrittene-techniken/service-account), mit Zugriff auf die Datenbank.
 
 **Impersonate authenticated caller**<br>
 Verwendet den Windows AD Benuzer, der die Extraktion ausführt, um sich am SQL Server zu authentisieren [Kerberos Authentisierung.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
 <br>
-Hierfür ist eine ähnliche Konfiguration wie beim [Kerberos Single Sign On](../../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc) gegen ein SAP System notwendig.
+Hierfür ist eine ähnliche Konfiguration wie beim [Kerberos Single Sign On](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc) gegen ein SAP System notwendig.
 
 **User Name**<br>
 SQL Server Authentisierung - User Name 
@@ -72,7 +72,7 @@ Klicken Sie auf die Schaltfläche, um die Datenbankverbindung zu testen.
 
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -103,7 +103,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 ### Custom SQL Statement - Benutzerdefinierte SQL-Anweisung
 
-Im Fenster [Destination settings](./sql-server-einstellungen#destination-settings-öffnen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
+Im Fenster [Destination settings](#destination-settings-öffnen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 1. Wählen Sie eine bestimmte Extraktion (1).
 2. Klicken Sie auf **[Destination]** (2), das Fenster "Destination Settings" wird geöffnet.

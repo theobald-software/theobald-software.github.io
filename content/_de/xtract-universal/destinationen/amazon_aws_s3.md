@@ -106,7 +106,7 @@ Wählen Sie das gewünschte Dateiformat zwischen *Parquet* und *CSV*.
 ![azure_blob_destination_settings_csv_settings](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 
 #### CVS Settings - Einstellungen
-Die *CSV* Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
+Die *CSV* Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](./csv-flat-file).
 
 #### Parquet Settings - Einstellungen
 
@@ -137,7 +137,7 @@ Sollte in dem Zeitraum von 140 Sekunden keine Verbindung zustande kommen, wird d
 ## Einstellungen
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -160,7 +160,7 @@ Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sicherges
 ### Folder
 
 Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines S3 Buckets extrahiert werden soll.<br>
-Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: Ordner/Unterordner1/Unterordner2/...
+Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `Ordner/Unterordner1/Unterordner2/...`
 
 ### File Splitting
 

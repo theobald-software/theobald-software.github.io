@@ -11,7 +11,7 @@ Im Idealfall wird die Tabelle mit den vorhandenen Daten im initialen Lauf mit de
 {:.box-warning}
 **Warnung! Fehlerhaftes Zusammenführen** <br>
 Ein Primärschlüssel ist eine Voraussetzung für einen Merge-Befehl. Wenn kein Primärschlüssel gesetzt ist, läuft der Zusammenführungsbefehl in einen Fehler.
-Erstellen Sie einen entsprechenden Primärschlüssel in [General Settings](../../erste-schritte/allgemeine-einstellungen#primary-key-tab), um den Merge-Befehl ausführen zu können.
+Erstellen Sie einen entsprechenden Primärschlüssel in [General Settings](../erste-schritte/allgemeine-einstellungen#primary-key-tab), um den Merge-Befehl ausführen zu können.
 
 
 ### Aktualisierter Datensatz in SAP

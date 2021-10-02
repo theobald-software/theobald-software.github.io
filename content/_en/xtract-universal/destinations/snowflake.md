@@ -71,7 +71,7 @@ Enter the name of a Snowflake Data Warehouse.
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -93,7 +93,7 @@ Defines the action on the target database before the data is inserted into the t
 - *Drop & Create*: Remove table if available and create new table (default).
 - *Truncate Or Create*: Empty table if available, otherwise create.
 - *Create If Not Exists*: Create table if not available.
-- *Prepare Merge*: Prepares the merge process and creates e.g. a temporary staging table. See [merging](./merging-data) for more details. 
+- *Prepare Merge*: Prepares the merge process and creates e.g. a temporary staging table. See [Merging Data](#merging-data) for more details. 
 - *None*: no action
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below. 
 
@@ -123,7 +123,7 @@ Defines the action on the target database after the data has been successfully i
 
 #### About Merging
 Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
-See section [merging data](./merging-data).
+See section [Merging Data](#merging-data).
 
 ### Custom SQL
 
@@ -154,7 +154,7 @@ To do so, use the SQL templates provided in the following phases:
 - *Finalization*
 
 {:.box-note}
-**Note:** For more information on custom SQL statements, see [Custom SQL](./snowflake-custom-sql).
+**Note:** For more information on custom SQL statements, see [Custom SQL](#custom-sql).
 
 <!---##### **Script Expressions**
 
@@ -193,7 +193,7 @@ You can use [script expressions](https://help.theobald-software.com/en/xtract-un
 ## Custom SQL
 ### Custom SQL Statement
 
-In the window [Destination settings](.//snowflake-settings#destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
+In the window [Destination settings](#destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 1. Select a particular extraction (1).
 2. Click **[Destination]** (2). The window "Destination Settings" opens.
@@ -243,8 +243,8 @@ Check the existence of the new column *RUNTIMEPARAMETER* in the Snowflake Consol
 
 *****
 ## Related Links
-- [.NET-Framework](../../introduction/requirements#other-applications-and-frameworks)
-- [64-bit Architecture](../../introduction/requirements#hardware-requirements)
+- [.NET-Framework](../introduction/requirements#other-applications-and-frameworks)
+- [64-bit Architecture](../introduction/requirements#hardware-requirements)
 - [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)
 - [Snowflake Identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#double-quoted-identifiers)
-- [Extraction Parameters](../../execute-and-automate-extractions/extraction-parameters#custom)
+- [Extraction Parameters](../execute-and-automate-extractions/extraction-parameters#custom)

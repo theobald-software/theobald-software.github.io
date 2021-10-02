@@ -47,7 +47,7 @@ The verification process is optional. Official app verification involves ongoing
 ![xu-google-cloud-req-02](/img/content/xu/googlecloudstorage/xu-google-cloud-req-02.png){:class="img-responsive"}
 2. In the "Credentials" section select **Create Credentials > OAuth client ID**.
 ![xu-google-cloud-req-03](/img/content/xu/googlecloudstorage/xu-google-cloud-req-03.png){:class="img-responsive"}
-3. Click **[Configure consent screen]**. The "Configure consent screen" is processed with the OAuth flow that is started when a connection is established in the Designer (see [Connection](./connection#gcs-settings)).
+3. Click **[Configure consent screen]**. The "Configure consent screen" is processed with the OAuth flow that is started when a connection is established in the Designer (see [Connection](#gcs-settings)).
 ![xu-google-cloud-req-04](/img/content/xu/googlecloudstorage/xu-google-cloud-req-04.png){:class="img-responsive"}
 4. If your account belongs to an organization, you can restrict the usage of Xtract Universal in combination with GCS to your organization. To do so, select “internal” in the “User Type” option.  The restriction option is only available, if you are a [GSuite](https://gsuite.google.com/) user. <br>
 Alternatively you can allow any user with access to the OAuth credentials to grant Xtract Universal the permission to write data to your GCS buckets. To do so, select "external" in the “User Type” option. <br> 
@@ -89,7 +89,7 @@ The "Client ID" and the "Client secret" are needed for the destination configura
 
 #### Connection
 **Client ID**<br>
-*Client ID* created in the OAuth 2.0 setup (see [Requirements](./requirements)).
+*Client ID* created in the OAuth 2.0 setup (see [Requirements](#requirements)).
 
 **Client Secret**<br>
 *Client Secret* created in the OAuth 2.0 setup.
@@ -143,7 +143,7 @@ Select the required file format between "CSV", "JSON" and "Parquet".
 
 ![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
 #### CVS Settings
-The settings for file type "CSV" correspond to the [Flat File CSV settings](../csv-flat-file).
+The settings for file type "CSV" correspond to the [Flat File CSV settings](./csv-flat-file).
 
 #### Parquet Settings
 **Compatibility mode**<br>
@@ -169,7 +169,7 @@ Xtract universal follows an exponential retry strategy. The selected exponential
 
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

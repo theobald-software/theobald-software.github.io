@@ -36,7 +36,7 @@ Um Qlik zu verwenden, müssen keine weiteren Einstellungen vorgenommen werden.
 ## Einstellungen
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -63,7 +63,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 2. Klicken Sie auf **[Copy to Clipboard]**, um das Skript zu kopieren.
 ![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script_2.png){:class="img-responsive"}
 3. Fügen Sie das kopierte Skript in den Datenlade-Editor von Qlik View oder von Qlik Sense ein.
-Mehr Details zu QlikSense finden Sie im Abschnitt [Einstellungen in QlikSense](./einstellungen_in_qlik_sense).
+Mehr Details zu QlikSense finden Sie im Abschnitt [Einstellungen in QlikSense](#einstellungen_in_qlik_sense).
 
 {: .box-note }
 **Hinweis:** die "SET-Methoden" können nicht im Fenster "Script" editiert werden. Editieren Sie die SET-Methoden auf der Destinationsseite.  

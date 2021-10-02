@@ -147,11 +147,11 @@ Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 
 **Folder path**<br>
 Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. 
-Siehe auch: [**Einstellungen > Folder Path**](./blob-einstellungen#folder-path).<br>
+Siehe auch: [**Einstellungen > Folder Path**](#folder-path).<br>
 Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein: `[Ordner]` <br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 
-Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. 
+Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. 
 Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
 
 ### Column Encryption (4)
@@ -165,7 +165,7 @@ Die Formate *Parquet* und *CSV* sind verfügbar.
 ![AWS S3](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
 
 #### CVS Settings
-Die Einstellungen für den Dateityp *CSV* entsprechen den allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
+Die Einstellungen für den Dateityp *CSV* entsprechen den allgemeinen [Flat File CSV Einstellungen](./csv-flat-file).
 
 #### Parquet Settings
 **Compatibility mode**<br>
@@ -197,7 +197,7 @@ In solchen Fällen versucht Xtract Universal alle Dateien aus dem Azure Storage 
 
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -235,7 +235,7 @@ Erstellt ein [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservi
 Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein: `[Ordner]` <br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 
-Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
+Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
 
 ### Compression
 
@@ -258,7 +258,6 @@ Der Wert eingestellt in *Max. file size* bestimmt die Maximalgröße der Datei g
 {: .box-note }
 **Note:** Die Option *Max. file size* wird nicht von gzip-Dateien unterstützt.
 Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus bestimmt werden.
-
 
 
 ****

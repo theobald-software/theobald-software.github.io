@@ -25,9 +25,9 @@ Die Zielumgebung *Power BI Connector* bietet zwei Wege zum Verbinden von Power B
 ### Unterstützte Power BI Umgebungen
 
 Xtract Universal unterstützt folgende Umgebungen: 
-- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) mittels [Power BI Custom Connector](Power-BI-Connector#power-bi-custom-connector-manuell-einrichten)
+- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) mittels [Power BI Custom Connector](#power-bi-custom-connector-manuell-einrichten)
 - [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) mittels [Power BI on-premises data gateway](https://docs.microsoft.com/de-de/data-integration/gateway/service-gateway-onprem)
-- [Power BI Report Server](https://docs.microsoft.com/de-de/power-bi/report-server/get-started) mittels [Power Query M-script](Power-BI-Connector#power-query-m-script-in-power-bi-einbrichten)
+- [Power BI Report Server](https://docs.microsoft.com/de-de/power-bi/report-server/get-started) mittels [Power Query M-script](#power-query-m-script-in-power-bi-einbrichten)
 
 
 |  | Custom Connector | M-script |
@@ -84,7 +84,7 @@ Andernfalls wird die Datenquelle *Xtract Universal* in Power BI nicht angezeigt.
 Dieses Skript kopiert die *XtractUniversalExtension.pqx* Datei in den Ordner *[Documents]\Power BI Desktop\Custom Connectors*.
 Falls der Ordner nicht existiert, wird er neu angelegt.
 3. Führen Sie das PowerShell Skript *trust-connector* aus.<br>
-Dieses Skript modifiziert die Registry unter HKLM:\SOFTWARE\Policies\Microsoft\Power BI Desktop.
+Dieses Skript modifiziert die Registry unter `HKLM:\SOFTWARE\Policies\Microsoft\Power BI Desktop`.
 Falls noch nichtvorhanden, wird der Wert *TrustedCertificateThumbprints* mit dem Fingerabdruck der *XtractUniversalExtension.pqx* Datei angelegt.
 Dieser Prozess entspricht den Microsoft-Empfehlungen für 
 [vertrauenswürdige Connectoren von Drittanbietern](https://docs.microsoft.com/de-de/power-bi/connect-data/desktop-trusted-third-party-connectors).
@@ -95,7 +95,7 @@ Dieser Prozess entspricht den Microsoft-Empfehlungen für
 2. Klicken Sie auf die Schaltfläche *Connect*.
 3. Geben Sie die URL des Xtract Universal-Webservers an `<Protocol>://<HOST oder IP address>:<Port>/`.
 ![powerbi-XU_URL](/img/content/XU_pbi_connector_XU_URL.png){:class="img-responsive"}
-	Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden auszuwählen: *Anonymous*, *Basic* or *Windows*, befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](Power-BI-Connector#single-sign-on-und-sap-authentifizierung).
+	Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden auszuwählen: *Anonymous*, *Basic* or *Windows*, befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](#single-sign-on-und-sap-authentifizierung).
 	Im Fenster Navigator werden alle *Power BI Connector*- Extraktionen von Xtract Universal aufgelistet. 
 4. Wählen Sie eine Extraktion aus der Liste. <br>
 Die Vorschau zeigt die SAP-Spaltenkofbezeichnungen und  Vorschaudaten abhängig vom Extraktionstyp, z.B. Echt-Daten oder Dummy-Daten.
@@ -117,7 +117,7 @@ Verwenden Sie entweder das Power Query M-script **oder** den Power BI Custom Con
 
 ### Power Query M-script in Power BI einrichten
 {: .box-note }
-**Hinweis:** Verwenden Sie nur die Extraktionen mit der [Power BI Connector Destination](Power-BI-Connector#verbindung---destination-details).
+**Hinweis:** Verwenden Sie nur die Extraktionen mit der [Power BI Connector Destination](#verbindung---destination-details).
 
 1. Erstellen Sie einen Power BI-Bericht mittels **Home > Get Data > Blank Query** als Datenquelle.
 2. Öffnen Sie den **[Advanced Editor]**.
@@ -128,7 +128,7 @@ Verwenden Sie entweder das Power Query M-script **oder** den Power BI Custom Con
 ![PowerQueryEditor](/img/content/XU_PBI_PowerQueryEditor.png){:class="img-responsive"}
 6. Bestätigen Sie das Skript durch Klicken auf **[Done]** (2).
 7. Klicken Sie die Schaltfläche **{Close & Apply]**.
-8. Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden (*Anonymous*, *Basic* , oder *Windows*) auszuwählen, <br> befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](Power-BI-Connector#single-sign-on-und-sap-authentifizierung).
+8. Wenn Sie aufgefordert werden eine der folgenden Authentifizierungsmethoden (*Anonymous*, *Basic* , oder *Windows*) auszuwählen, <br> befolgen Sie die Handlungsanweisungen aus dem Abschnitt [Singe Sign On und SAP-Authentifizierung](#single-sign-on-und-sap-authentifizierung).
 
 ## Power BI Service
 
@@ -170,12 +170,12 @@ Das konfigurierte On-premises Data Gateway wird nachfolgend in die Power BI Serv
 **Data Source Type**<br> Wählen Sie den Eintrag *Xtract Universal Extraction* aus dem Dropdown-Menü. 
 
 {: .box-note }
-**Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-premises Data Gateway](Power-BI-Connector#einrichtung-on-premises-data-gateway).
+**Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-premises Data Gateway](#einrichtung-on-premises-data-gateway).
 
 **Xtract Universal Server**<br> Geben Sie die Xract Universal Server URL an, siehe [Web Server](../server/server_einstellungen#web-server).
 
 **Authentication Method**<br> 
-Auswahl einer Authentisierungsmethode, siehe [Single Sign On und SAP-Authentifizierung](Power-BI-Connector#einrichtung-on-premises-data-gateway):
+Auswahl einer Authentisierungsmethode, siehe [Single Sign On und SAP-Authentifizierung](#einrichtung-on-premises-data-gateway):
 - Basic
 - Windows
 - Anonymous

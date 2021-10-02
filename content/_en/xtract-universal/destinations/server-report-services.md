@@ -33,8 +33,8 @@ To use the SSRS destination, install the [Microsoft Reporting Services Projects]
 plugin in Visual Studio. After the installation is complete, close Visual Studio.
 
 Microsoft SQL Server Reporting Services supports a wide variety of data sources out of the box.
-To add Xtract Universal to the list of data sources, install the [Xtract Universal Data Extension](./requirements#installation-using-the-xtract-universal-data-extension) for Visual Studio and the Report Server.
-The data extension is installed automatically when using the [Xtract Universal Setup](../../introduction/installation-and-update).
+To add Xtract Universal to the list of data sources, install the [Xtract Universal Data Extension](#installation-using-the-xtract-universal-data-extension) for Visual Studio and the Report Server.
+The data extension is installed automatically when using the [Xtract Universal Setup](../introduction/installation-and-update).
 
 To complete the installation close all Visual Studio windows.
  
@@ -54,7 +54,7 @@ To install the Xtract Universal extension on multiple environments without insta
 
 1. Make sure the *Microsoft Reporting Services Projects* plugin for Visual Studio is already installed and activated. 
 2. Close Visual Studio.
-3. [Install Xtract Universal](../../introduction/installation-and-update) on the environment on which the license runs.
+3. [Install Xtract Universal](../introduction/installation-and-update) on the environment on which the license runs.
 4. After the installation is complete, navigate to the Xtract Universal directory e.g., `C:\Program files\Xtract Universal\`and copy the `\ssrs` folder from the directory to any environment on which Visual Studio is used to design reports or on which the Report Server runs.
 5. Run *SSRSDataExtensionSetup.exe* as administrator to install the Xtract Universal Data Extension on all compatible versions of Visual Studio and/or Report Server found on the environment. 
 6. After the installation on the Report Server is complete, restart the Report Server for the changes to take effect. 
@@ -81,7 +81,7 @@ To use the SSRS destination, no further settings have to be made.
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -103,8 +103,8 @@ The following section contains step-by-step instructions on how to access SAP da
 
 To make SAP data available in the SQL Server Report Server (SSRS) environment, the first step is to create an extraction in the Xtract Universal Designer.
 
-For information on how to set up an extraction, see [Getting Started](../../getting-started).<br>
-Make sure the extraction uses the [*SQL Server Reporting Services* destination](./connection).
+For information on how to set up an extraction, see [Getting Started](../getting-started).<br>
+Make sure the extraction uses the [*SQL Server Reporting Services* destination](#connection).
 
 
 ### Adding an Extraction as a Data Source in Visual Studio
@@ -116,9 +116,9 @@ The following steps guide you through the creation of an Xtract Universal data s
 2. Right-click on the *Shared Data Sources* folder in the *Solution Explorer* and select **Add New Data Source**. The window "Shared Data Source Properties" opens.
 3. In the tab *General*, assign a name of your choice or leave the default one for the new data source (1).
 4. Select the type *Xtract Universal* from the drop-down list (2). <br>If *Xtract Universal* is not available or displayed in all caps, make sure that the latest Xtract Universal version and *Microsoft Reporting Services Projects* plugin are both installed.
-5. Enter a *connection string* (3) to XU's [Web Server](../../security/server-security) in the format `Url=http://[host]:[port]/` e.g, `Url=http://localhost:8065/`. Note that the *connection string* is case sensitive.
+5. Enter a *connection string* (3) to XU's [Web Server](../security/server-security) in the format `Url=http://[host]:[port]/` e.g, `Url=http://localhost:8065/`. Note that the *connection string* is case sensitive.
 ![Shared-Data-Source-Properties](/img/content/xu/ssrs/Shared-Data-Source-Properties.png){:class="img-responsive"}
-6. Optional (only required if the XU [Web server security](../../security/server-security) is configured or the SAP source requires SAP credentials): Switch to the *Credentials* tab (4) and enter your [username and password](../../security/user-management) for Xtract Universal.
+6. Optional (only required if the XU [Web server security](../security/server-security) is configured or the SAP source requires SAP credentials): Switch to the *Credentials* tab (4) and enter your [username and password](../security/user-management) for Xtract Universal.
 7. Confirm your input with **[OK]**.
 
 If *Xtract Universal* is not available in the drop-down list (2) even though the *Microsoft Reporting Services Projects* plugin (version 2.6.11 or higher) and the latest version of Xtract Universal are both installed, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](mailto:support@theobald-software.com).
@@ -127,20 +127,20 @@ If *Xtract Universal* is not available in the drop-down list (2) even though the
 **Tip:** The *connection string* is part of the URL string displayed in the "Run Extraction" window of the Designer. Copy the URL string up to '?' and paste it as the *connection string* into Visual Studio.
 
 {: .box-note }
-**Note:** When **https Restricted...** or **https Unrestricted** is activated in the [XU Webserer settings](../../security/server-security#prerequisite-activating-tls-encryption), make sure to modify the Registry of the machine that the SSRS server is running on according to the [Microsoft Help (Configure Strong cryptography)](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography).
+**Note:** When **https Restricted...** or **https Unrestricted** is activated in the [XU Webserer settings](../security/server-security#prerequisite-activating-tls-encryption), make sure to modify the Registry of the machine that the SSRS server is running on according to the [Microsoft Help (Configure Strong cryptography)](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography).
 
 ### Creating a Report using an Xtract Universal Data Source
 
 The following steps guide you through the creation of a Report in Visual Studio using an Xtract Universal data source: 
 
-1. [Add an SSRS extraction as a data source in Visual Studio](./ssrs-in-vs#add-an-extraction-as-a-data-source-in-visual-studio).
+1. [Add an SSRS extraction as a data source in Visual Studio](#add-an-extraction-as-a-data-source-in-visual-studio).
 2. Right-click on the *Reports* folder in the *Solution Explorer* and select **Add New Report**. The "Report Wizard" opens.
 3. In the wizard, select a data source and click **[Next]**.
 4. Click **[Query Builder...]**. The window "Query Designer" opens.
 5. Select an Xtract Universal extraction from the drop-down menu (5). <br>If no extractions are available, make sure the *connection string* (3) in the data source is correct and an extraction with an *SQL Server Reporting Server* destination exists in Xtract Universal.
 If you don't see the editor shown below, click **Edit as Text**.
 ![Query-Designer](/img/content/xu/ssrs/Query-Designer.png){:class="img-responsive"}
-6. Optional: Change [runtime parameters](../../execute-and-automate-extractions/extraction-parameters) of the extraction (6). Parameter changes are visible in the Query string (7).
+6. Optional: Change [runtime parameters](../execute-and-automate-extractions/extraction-parameters) of the extraction (6). Parameter changes are visible in the Query string (7).
 Invalid input is marked with a red circle that displays an error message when hovering over it.
 7. Click **[Preview]** (8) to run the extraction in preview mode.
 8. Confirm your input with **[OK]**. The Query Builder closes. 
@@ -152,7 +152,7 @@ After creating the report, you can access the Query Builder by right-clicking th
 
 ### Parameterization
 
-Xtract Universal Designer uses [runtime parameters](../../execute-and-automate-extractions/extraction-parameters) for parameterization.
+Xtract Universal Designer uses [runtime parameters](../execute-and-automate-extractions/extraction-parameters) for parameterization.
 
 Runtime parameters are accessible in the Query Builder. They can have one of the following **Behaviors**: <br>
 - *Default:* Uses the value specified in Xtract Universal Designer.

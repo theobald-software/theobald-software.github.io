@@ -65,7 +65,7 @@ Option nur bei Verwendung der Authentifizierungsmethode *Plain* oder *SNC* verf�
 Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
 Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inaktiv.
 
-**Nur Xtract Universal**: Siehe [Power BI Connector](https://help.theobald-software.com/de/xtract-universal/destinationen/Power-BI-Connector/pbi-SSO) oder [Alteryx](https://help.theobald-software.com/de/xtract-universal/destinationen/alteryx-de/einstellungen-alteryx-plugin-de#verbindung) Destinationen für mögliche Beispiele. 
+**Nur Xtract Universal**: Siehe [Power BI Connector](https://help.theobald-software.com/de/xtract-universal/destinationen/Power-BI-Connector#pbi-SSO) oder [Alteryx](https://help.theobald-software.com/de/xtract-universal/destinationen/alteryx-de#verbindung) Destinationen für mögliche Beispiele. 
 
 {: .box-note }
 **Hinweis:** Die Option "Require SAP credentials to be explicitly supplied for execution" erfordert, dass die Extraktionen über [HTTPS - unrestricted](../server/server_einstellungen#web-server) aufgerufen werden.

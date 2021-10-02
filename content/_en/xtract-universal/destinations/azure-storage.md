@@ -147,11 +147,11 @@ The *Azure Storage (Blob / Data Lake)* destination can now be used.
 
 **Folder path** <br>
 Option to create a folder structure within the container for saving files. 
-See also [**Destination Settings > Folder Path**](./blob-settings#folder-path). <br>
+See also [**Destination Settings > Folder Path**](#folder-path). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-**Folder path** allows entry of [script expressions](./../../advanced-techniques/script-expressions).
+**Folder path** allows entry of [script expressions](./../advanced-techniques/script-expressions).
 This allows to dynamically set a folder path when executing an extraction. <br>
 
 ### Column Encryption (4)
@@ -166,7 +166,7 @@ Select the required file format. You can choose between *Parquet* and *CSV*.
 
 #### CVS Settings
 
-The settings for file type *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).
+The settings for file type *CSV* correspond to the [Flat File CSV settings](./csv-flat-file).
 
 #### Parquet Settings
 
@@ -202,7 +202,7 @@ See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/archit
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -238,11 +238,11 @@ Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices
 
 ### Folder
 
-Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](./blob-connection#azure-storage-connection). <br>
+Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](#azure-storage-connection). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-This field allows entry of [script expressions](../../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
+This field allows entry of [script expressions](../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
 
 ### Compression
 

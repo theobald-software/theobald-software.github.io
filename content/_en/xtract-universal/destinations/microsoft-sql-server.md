@@ -49,7 +49,7 @@ For further information, please see [Enable Encrypted Connections to the Databas
 Uses the service account, under which the XU service is running, for authentication against SQL Server.
 
 {: .box-note }
-**Note:** To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../../advanced-techniques/service-account) with access to the database.
+**Note:** To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../advanced-techniques/service-account) with access to the database.
 
 **Impersonate authenticated caller**<br>
 Uses the Windows AD user, executing the extraction, for authentication against SQL Server using [Kerberos authentication.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
@@ -73,7 +73,7 @@ Checks the database connection.
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -103,7 +103,7 @@ The following settings can be defined for the destination:
 
 ### Custom SQL Statement
 
-In the window [Destination settings](./sql-server-settings#opening-the-destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
+In the window [Destination settings](#opening-the-destination-settings), you can use a custom SQL statement for the three different database process steps and / or to adapt the SQL statement to your requirements.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 1. Select a particular extraction (1).
 2. Click **[Destination]** (2), the window "Destination Settings" opens.

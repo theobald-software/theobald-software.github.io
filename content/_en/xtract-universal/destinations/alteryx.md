@@ -60,7 +60,7 @@ To use the Alteryx destination, no further settings have to be made.
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -98,7 +98,7 @@ Only the extractions with Alteryx as destination type are displayed. You can def
 **Note:** Make sure the Xtract Universal server is running.
 
 **Send SAP credentials** (3) <br>
-Mark the checkbox *Send SAP credentials*, if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is also marked in the [SAP source](../../introduction/sap-connection#authentication) settings in Xtract Universal.
+Mark the checkbox *Send SAP credentials*, if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is also marked in the [SAP source](../introduction/sap-connection#authentication) settings in Xtract Universal.
 The setting *Send SAP credentials* can be useful in self service scenarios. When each extraction needs to be executed using an individual user's SAP credentials instead of the globally defined credentials.
 
 ### Parameters 
@@ -119,7 +119,7 @@ To override the parameter *city*, mark the checkbox **Override** and the checkbo
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters-override.PNG){:class="img-responsive"}
 
-For more information on custom parameters go to [User-Defined Variables](../../advanced-techniques/user-defined-variables).
+For more information on custom parameters go to [User-Defined Variables](../advanced-techniques/user-defined-variables).
 
 If the connection to the specified Xtract Universal server is not established and no errors are shown, the Xtract Unversal tool has a tooltip in the following format: [Extraction] @ [Server].
 

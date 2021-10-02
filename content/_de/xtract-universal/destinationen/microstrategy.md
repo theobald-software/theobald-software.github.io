@@ -32,7 +32,7 @@ Server API Endpoint, unter dem die JSON API erreichbar ist.<br>
 (Beispiel: https://env-12345.customer.cloud.microstrategy.com/MicroStrategyLibrary/api/)
 
 **Project Name**<br> 
-Name des Projektes, in das die Daten geschrieben werden sollen. Der Standardordner ist "My Reports" in "My Personal Objects". Um einen anderen Order auszuwählen, siehe [Folder ID](./einstellungen#folder-id).
+Name des Projektes, in das die Daten geschrieben werden sollen. Der Standardordner ist "My Reports" in "My Personal Objects". Um einen anderen Order auszuwählen, siehe [Folder ID](#folder-id).
 
 **Username**<br> 
 Name des Benutzers.
@@ -43,7 +43,7 @@ Passwort des Benutzers.
 ## Einstellungen
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

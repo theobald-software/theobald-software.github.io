@@ -104,7 +104,7 @@ Select the required file format. You can choose between *Parquet* and *CSV*.
 
 #### CVS Settings
 
-The settings for file type *CSV* correspond to the [Flat File CSV settings](../csv-flat-file).
+The settings for file type *CSV* correspond to the [Flat File CSV settings](./csv-flat-file).
 
 #### Parquet Settings
 
@@ -137,7 +137,7 @@ If a connection is not established during the timespan of 140 seconds, the extra
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -160,7 +160,7 @@ This is to ensure that all uploaded objects are compatible with Azure Data Facto
 ### Folder
 
 Enter a folder name without slashes here if you want the extraction to be extracted to a folder within an S3 bucket.<br>
-Subfolders are also supported and can be entered as follows: Folder/Subfolder1/Subfolder2/...
+Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/Subfolder2/...`
 
 ### File Splitting
 

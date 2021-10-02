@@ -33,7 +33,7 @@ Microstrategy Server Endpoint for the JSON API.<br>
 (e.g.: https://env-12345.customer.cloud.microstrategy.com/MicroStrategyLibrary/api/)
 
 **Project Name**<br>
-Project name, where the SAP data is loaded to. The default folder is "My Reports" in "My Personal Objects". To set a specific folder, see [Folder ID](./mstr-settings#folder-id).
+Project name, where the SAP data is loaded to. The default folder is "My Reports" in "My Personal Objects". To set a specific folder, see [Folder ID](#folder-id).
 
 **User Name**<br>
 Name of the Microstrategy user.
@@ -44,7 +44,7 @@ Password of the Microstrategy user.
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

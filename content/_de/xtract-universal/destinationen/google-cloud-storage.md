@@ -46,7 +46,7 @@ Eine offizielle App-Verifizierung ist mit laufenden Kosten verbunden.
 ![xu-google-cloud-req-02](/img/content/xu/googlecloudstorage/xu-google-cloud-req-02.png){:class="img-responsive"}
 2. Im Abschnitt "Credentials" wählen Sie **Create Credentials > OAuth client ID** aus.
 ![xu-google-cloud-req-03](/img/content/xu/googlecloudstorage/xu-google-cloud-req-03.png){:class="img-responsive"}
-3. Klicken Sie auf **[Configure consent screen]**. Der "Configure consent screen" wird mit dem OAuth-Flow verarbeitet, der beim Verbindungsaufbau im Designer gestartet wird (siehe [Verbindung](./connection#gcs-settings)).
+3. Klicken Sie auf **[Configure consent screen]**. Der "Configure consent screen" wird mit dem OAuth-Flow verarbeitet, der beim Verbindungsaufbau im Designer gestartet wird (siehe [Verbindung](#gcs-settings)).
 ![xu-google-cloud-req-04](/img/content/xu/googlecloudstorage/xu-google-cloud-req-04.png){:class="img-responsive"}
 4. Wenn Ihr Konto zu einer Organisation gehört, können Sie die Nutzung von Xtract Universal in Kombination mit GCS auf Ihre Organisation beschränken. Wählen Sie dazu "intern" in der Option " User Type".  Diese Option ist nur verfügbar, wenn Sie ein [GSuite-Benutzer](https://gsuite.google.com/) sind. <br>
 Alternativ können Sie jedem Benutzer mit Zugriff auf die OAuth-Anmeldeinformationen erlauben, Xtract Universal die Erlaubnis zu erteilen, Daten in Ihre GCS-Buckets zu schreiben. Wählen Sie dazu "extern" in der Option " User Type". <br> 
@@ -73,7 +73,7 @@ Der neu hinzugefügte Bereich (Scope) ist der erste Eintrag in der Tabelle. Klic
 Wählen Sie "Desktop app" als Applikationstyp aus, vergeben Sie einen beliebigen Namen und klicken Sie auf **[Create]**.
 ![xu-google-cloud-req-15](/img/content/xu/googlecloudstorage/xu-google-cloud-req-15.png){:class="img-responsive"}
 11. Ihr OAuth-Client ist erstellt. <br>
-Die "Client ID" und der "Client secret" sind für die Konfiguration der Destination in Xtract Universal notwendig (siehe [Verbindung](./connection)).
+Die "Client ID" und der "Client secret" sind für die Konfiguration der Destination in Xtract Universal notwendig (siehe [Verbindung](#connection)).
 ![xu-google-cloud-req-16](/img/content/xu/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 
 ## Verbindung
@@ -87,7 +87,7 @@ Die "Client ID" und der "Client secret" sind für die Konfiguration der Destinat
 
 #### Connection
 **Client ID**<br>
-*Client ID* erstellt im OAuth 2.0-Setup (siehe [Voraussetzungen](./requirements)).
+*Client ID* erstellt im OAuth 2.0-Setup (siehe [Voraussetzungen](#requirements)).
 
 **Client Secret**<br>
 *Client Secret* erstellt im OAuth 2.0-Setup.
@@ -138,7 +138,7 @@ Tragen Sie im Feld *Crypto field* den kryptografischen Schlüssel ein, wenn Sie 
 ### File Format 
 Wählen Sie das gewünschte Dateiformat zwischen "CSV" ,"JSON" und "Parquet".
 
-Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](../csv-flat-file).
+Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](./csv-flat-file).
 
 ![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
 
@@ -153,7 +153,7 @@ Xtract Universal verfolgt eine exponentielle Strategie der Wiederholversuche. Di
 ## Einstellungen
 
 ### Destination Settings öffnen
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

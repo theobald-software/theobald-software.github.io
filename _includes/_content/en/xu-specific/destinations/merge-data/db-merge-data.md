@@ -9,7 +9,7 @@ Ideally, the table with existing data is created in the initial load with the co
 {:.box-warning}
 **Warning! Faulty merge** <br>
 A primary key is a prerequisite for a merge command. If no primary key is set, the merge command runs into an error.
-Create an appropriate primary key in the [General Settings](../../getting-started/general-settings#primary-key-tab) to execute the merge command.
+Create an appropriate primary key in the [General Settings](../getting-started/general-settings#primary-key-tab) to execute the merge command.
 
 
 ### Updated record in SAP

@@ -73,7 +73,7 @@ Name der Snowflake Data Warehouse eingeben.
 
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -119,13 +119,13 @@ Definiert, wie die Daten in die Zieltabelle eingefügt werden.
 ### Finalization - SQL Anweisungen
 
 Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle erfolgreich eingefügt werden.
-- *Finalize Merge*: schließt den Merge-Prozess ab und löscht z.B. die temporäre Staging-Tabelle. Für weitere Infos siehe Abschnitt Über Merging. 
+- *Finalize Merge*: schließt den Merge-Prozess ab und löscht z.B. die temporäre Staging-Tabelle. Für weitere Infos siehe [Daten Mergen](#daten-mergen). 
 - *None*: keine Aktion (Default).
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL. 
 
 #### Über Merging
 Die Zusammenführung gewährleistet eine Deltaverarbeitung: neue Datensätze werden in die Datenbank eingefügt und/oder bestehende Datensätze werden aktualisiert. 
-Mehr Details im Abschnitt [Daten zusammenführen (mergen)](./daten-mergen).
+Mehr Details im Abschnitt [Daten zusammenführen (mergen)](#daten-mergen).
 
 ### Custom SQL 
 
@@ -157,7 +157,7 @@ Dafür können Sie die vordefinierten SQL-Vorlagen der folgenden Phasen verwende
 - *Finalization*
 
 {:.box-note}
-**Hinweis:** Für nähere Informationen zu benutzerdefinierten SQL-Anweisungen, siehe [Custom SQL](./snowflake-custom-sql).
+**Hinweis:** Für nähere Informationen zu benutzerdefinierten SQL-Anweisungen, siehe [Custom SQL](#custom-sql).
 
 <!---##### **Skript-Ausdrücke**
 
@@ -197,7 +197,7 @@ Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-uni
 
 ### Custom SQL Statement - Benutzerdefinierte SQL-Anweisung
 
-Im Fenster [Destination settings](./snowflake-einstellungen#destination-settings---destinationseinstellungen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
+Im Fenster [Destination settings](#destination-settings---destinationseinstellungen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
 ![Destination-Settings](/img/content/destination_settings.png){:class="img-responsive"}
 1. Wählen Sie eine bestimmte Extraktion (1).
 2. Klicken Sie auf **[Destination]** (2), das Fenster "Destination Settings" wird geöffnet.
@@ -246,8 +246,8 @@ WHERE RUNTIMEPARAMETER IS NULL;
 
 *****
 ## Weiterführende Links
-- [.NET-Framework](../../einfuehrung/systemvoraussetzungen#andere-anwendungen-und-frameworks)
-- [64-Bit Architektur](../../einfuehrung/systemvoraussetzungen#hardware-anforderungen)
+- [.NET-Framework](../einfuehrung/systemvoraussetzungen#andere-anwendungen-und-frameworks)
+- [64-Bit Architektur](../einfuehrung/systemvoraussetzungen#hardware-anforderungen)
 - [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)
 - [Snowflake Identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#double-quoted-identifiers)
-- [Extraktionsparameter](../../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#custom)
+- [Extraktionsparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#custom)

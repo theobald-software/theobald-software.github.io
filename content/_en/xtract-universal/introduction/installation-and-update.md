@@ -45,7 +45,7 @@ The list below shows several most important files that are placed into the defau
 |Filename | Description |
 |:----|:---|
 | ABAP directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../sap-customizing).|
-| Alteryx directory| Directory with a plugin setup for the [Alteryx destination](../destinations/alteryx/alteryx-requirements).|
+| Alteryx directory| Directory with a plugin setup for the [Alteryx destination](../destinations/alteryx#requirements).|
 | logs directory| Directory with server and extraction etc. logs. See also section [Logging](../logging). |
 | config directory | Directory containing all SAP connections, extractions, destinations and other settings. See also [Backup and Migration](../advanced-techniques/backup-and-migration).|
 | powerbi directory| Directory containing files related to [Power BI Connector Destination](../destinations/Power-BI-Connector).|

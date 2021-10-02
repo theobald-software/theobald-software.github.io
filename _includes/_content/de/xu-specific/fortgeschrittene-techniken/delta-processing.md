@@ -12,17 +12,17 @@ Für Deltaverarbeitung ist es ratsam auf der Destinationsseite eine Datenbank zu
 
 
 ### Datenbank Destinationen
-- [Amazon Redshift](../destinationen/redshift/daten-mergen) 
-- [Azure Synapse Analytics (SQl pool)](../destinationen/azure-synapse-analytics/daten-mergen) 
-- [Azure SQL Database](../destinationen/microsoft-sql-server/daten-mergen) 
-- [EXASolution](../destinationen/exasol/daten-mergen) 
-- [IBM DB2](../destinationen/ibm-db2/daten-mergen) 
-- [MySQL](../destinationen/mysql/daten-mergen) 
-- [Oracle](../destinationen/oracle/daten-mergen) 
-- [PostgreSQL](../destinationen/postgreSQL/daten-mergen)
-- [SAP HANA](../destinationen/hana/daten-mergen) 
-- [SQL Server](../destinationen/microsoft-sql-server/daten-mergen) 
-- [Snowflake](../destinationen/snowflake/daten-mergen)
+- [Amazon Redshift](../destinationen/redshift#daten-mergen) 
+- [Azure Synapse Analytics (SQl pool)](../destinationen/azure-synapse-analytics#daten-mergen) 
+- [Azure SQL Database](../destinationen/microsoft-sql-server#daten-mergen) 
+- [EXASolution](../destinationen/exasol#daten-mergen) 
+- [IBM DB2](../destinationen/ibm-db2#daten-mergen) 
+- [MySQL](../destinationen/mysql#daten-mergen) 
+- [Oracle](../destinationen/oracle#daten-mergen) 
+- [PostgreSQL](../destinationen/postgreSQL#daten-mergen)
+- [SAP HANA](../destinationen/hana#daten-mergen) 
+- [SQL Server](../destinationen/microsoft-sql-server#daten-mergen) 
+- [Snowflake](../destinationen/snowflake#daten-mergen)
 
 
 
