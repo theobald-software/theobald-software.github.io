@@ -160,7 +160,9 @@ This is to ensure that all uploaded objects are compatible with Azure Data Facto
 ### Folder
 
 Enter a folder name without slashes here if you want the extraction to be extracted to a folder within an S3 bucket.<br>
-Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/Subfolder2/...`
+Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/Subfolder2/` <br>
+This field allows entry of [script expressions](../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). 
+This way, a folder path can be dynamically determined at extraction execution.
 
 ### File Splitting
 

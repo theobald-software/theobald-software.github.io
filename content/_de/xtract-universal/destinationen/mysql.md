@@ -30,6 +30,9 @@ Es sind keine zusätzlichen Installationen erforderlich, um die Destination MySQ
 **Server Name** <br>
 Name oder Adresse des Hosts auf dem die Datenbank installiert ist eingeben.
 
+**Server Port** <br>
+Port des Servers, auf dem die Datenbank installiert ist eingeben.
+
 **User Name** <br>
 Datenbanknutzer für die MySQL Datenbank eingeben.
 

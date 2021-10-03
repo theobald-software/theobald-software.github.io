@@ -78,4 +78,4 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 *****
 ## Weiterführende Links
--[Microsoft Azure Synapse Analytics](https://docs.microsoft.com/de-de/azure/synapse-analytics/)
+- [Microsoft Azure Synapse Analytics](https://docs.microsoft.com/de-de/azure/synapse-analytics/)

@@ -30,6 +30,9 @@ There are no additional installations needed to use MySQL database destination.
 **Server Name** <br>
 Enter the name of the server the MySQL database is hosted on.
 
+**Server Port** <br>
+Enter the port of the server the MySQL database is hosted on.
+
 **User Name** <br>
 Enter the MySQL database user ID.
 

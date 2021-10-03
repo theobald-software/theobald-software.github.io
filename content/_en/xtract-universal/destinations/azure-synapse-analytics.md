@@ -76,4 +76,4 @@ The following settings can be defined for the destination:
 
 *****
 ## Related Links
--[Microsoft Azure Synapse Analytics](https://docs.microsoft.com/en-us/azure/synapse-analytics/)
+- [Microsoft Azure Synapse Analytics](https://docs.microsoft.com/en-us/azure/synapse-analytics/)

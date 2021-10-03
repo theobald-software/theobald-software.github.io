@@ -27,15 +27,18 @@ To use the SSRS destination, you need the following components:
 {: .box-note }
 **Note:** The Power BI Report Builder is not supported.
 
-### Installation
+## Installation
 
 To use the SSRS destination, install the [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)
 plugin in Visual Studio. After the installation is complete, close Visual Studio.
 
 Microsoft SQL Server Reporting Services supports a wide variety of data sources out of the box.
-To add Xtract Universal to the list of data sources, install the [Xtract Universal Data Extension](#installation-using-the-xtract-universal-data-extension) for Visual Studio and the Report Server.
-The data extension is installed automatically when using the [Xtract Universal Setup](../introduction/installation-and-update).
+To add Xtract Universal to the list of data sources, install the [Xtract Universal Data Extension](#installation-using-the-xtract-universal-data-extension) for Visual Studio **and** the Report Server.
+The data extension must be installed on both environments to consume the data extracted by Xtract Universal, see graphic below:
 
+![XU-Setup](/img/content/xu/ssrs/XUDataExtensionInstallation.png){:class="img-responsive" width="600px" }
+
+The data extension is installed automatically when using the [Xtract Universal Setup](../introduction/installation-and-update).
 To complete the installation close all Visual Studio windows.
  
  {: .box-warning }
