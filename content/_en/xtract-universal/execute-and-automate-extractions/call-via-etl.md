@@ -15,7 +15,7 @@ All ETL tools offer the following options for running extractions:
 - [Call via webservices](./call-via-webservice)
 
 ### Integration via Plug-In
-- [Xtract Universal Alteryx Plugin](../destinations/alteryx/alteryx-requirements)
+- [Xtract Universal Alteryx Plugin](../destinations/alteryx#requirements)
 - [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
 - [Dynamic Runtime Parameter within KNIME Workflow](https://kb.theobald-software.com/xtract-universal/dynamic-runtime-paramater%20within-KNIME-workflow)
 - [Xtract Universal Power BI Custom Connector](../destinations/Power-BI-Connector)
@@ -26,7 +26,7 @@ All ETL tools offer the following options for running extractions:
 - [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http)
 - [GCS Integration with Google Scheduler](https://cloud.google.com/scheduler/docs/creating)
 - [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
-- [Generate Qlik data load script](../destinations/qliksense-qlikview/generating-data-load-script)
+- [Generate Qlik data load script](../destinations/qliksense-qlikview#generating-a-data-load-script)
 
 ### Integration via Command Line
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).

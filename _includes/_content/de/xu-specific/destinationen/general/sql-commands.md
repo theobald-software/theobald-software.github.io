@@ -5,7 +5,7 @@ Definiert die Aktion auf der Zieldatenbank, bevor die Daten in die Zieltabelle e
 - *Drop & Create*: Tabelle entfernen falls vorhanden und neu anlegen (Default).
 - *Truncate Or Create*: Tabelle entleeren falls vorhanden, sonst anlegen.
 - *Create If Not Exists*: Tabelle anlegen falls nicht vorhanden.
-- *Prepare Merge*: bereitet den Merge-Prozess vor und erstellt z.B. eine temporäre Staging-Tabelle. Für weitere Infos siehe Abschnitt Über Merging. 
+- *Prepare Merge*: bereitet den Merge-Prozess vor und erstellt z.B. eine temporäre Staging-Tabelle. Für weitere Infos siehe [Daten Mergen](#daten-mergen). 
 - *None*: keine Aktion
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL. 
 
@@ -36,7 +36,7 @@ Definiert die Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle
 
 #### Über Merging
 Die Zusammenführung gewährleistet eine Deltaverarbeitung: neue Datensätze werden in die Datenbank eingefügt und/oder bestehende Datensätze werden aktualisiert. 
-Mehr Details im Abschnitt [Daten zusammenführen (mergen)](./daten-mergen).
+Mehr Details im Abschnitt [Daten zusammenführen (mergen)](#daten-mergen).
 
 ### Custom SQL 
 
@@ -52,7 +52,7 @@ als Vorlagen verwendet werden:
 5. Klicken Sie auf **[Copy]** um die Anweisung in den Zwischenspeicher zu kopieren.
 6. Klicken Sie zur Bestätigung auf **[OK]**.
 
-Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](https://help.theobald-software.com/de/xtract-universal/destinationen/microsoft-sql-server/sql-server-custom-sql).
+Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server Beispiel](./microsoft-sql-server#custom-sql).
 
 {:.box-note}
 **Note:** Der benutzerdefinierte SQL-Code wird für SQL Server-Destinationen verwendet. 

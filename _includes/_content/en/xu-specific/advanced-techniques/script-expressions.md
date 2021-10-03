@@ -109,7 +109,7 @@ The following XU-specific custom script expressions are supported:
 
 ### Using Script Expressions in Database Destinations
 
-In this scenario script expressions are used as part of a Custom-SQL statement (see [example](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server/sql-server-custom-sql)).
+In this scenario script expressions are used as part of a Custom-SQL statement (see [example](../destinations/microsoft-sql-server#custom-sql)).
 
 This scenario supports:
 - Script expressions based on .NET

@@ -46,7 +46,7 @@ Eine offizielle App-Verifizierung ist mit laufenden Kosten verbunden.
 ![xu-google-cloud-req-02](/img/content/xu/googlecloudstorage/xu-google-cloud-req-02.png){:class="img-responsive"}
 2. Im Abschnitt "Credentials" wählen Sie **Create Credentials > OAuth client ID** aus.
 ![xu-google-cloud-req-03](/img/content/xu/googlecloudstorage/xu-google-cloud-req-03.png){:class="img-responsive"}
-3. Klicken Sie auf **[Configure consent screen]**. Der "Configure consent screen" wird mit dem OAuth-Flow verarbeitet, der beim Verbindungsaufbau im Designer gestartet wird (siehe [Verbindung](#gcs-settings)).
+3. Klicken Sie auf **[Configure consent screen]**. Der "Configure consent screen" wird mit dem OAuth-Flow verarbeitet, der beim Verbindungsaufbau im Designer gestartet wird (siehe [Verbindung](#verbindung)).
 ![xu-google-cloud-req-04](/img/content/xu/googlecloudstorage/xu-google-cloud-req-04.png){:class="img-responsive"}
 4. Wenn Ihr Konto zu einer Organisation gehört, können Sie die Nutzung von Xtract Universal in Kombination mit GCS auf Ihre Organisation beschränken. Wählen Sie dazu "intern" in der Option " User Type".  Diese Option ist nur verfügbar, wenn Sie ein [GSuite-Benutzer](https://gsuite.google.com/) sind. <br>
 Alternativ können Sie jedem Benutzer mit Zugriff auf die OAuth-Anmeldeinformationen erlauben, Xtract Universal die Erlaubnis zu erteilen, Daten in Ihre GCS-Buckets zu schreiben. Wählen Sie dazu "extern" in der Option " User Type". <br> 

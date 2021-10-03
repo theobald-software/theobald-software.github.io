@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=user-defined-variables
 
 ****
 #### Related Links:
-- [XU Custom Parameters in Power BI](../destinations/Power-BI-Connector/pbi-xuparameters)
-- [QlikSense Data Load Script Explanation](../destinations/qliksense-qlikview/settings-in-qlik-sense#qliksense-data-load-script-explanation)
+- [XU Custom Parameters in Power BI](../destinations/Power-BI-Connector#parameterizing)
+- [QlikSense Data Load Script Explanation](../destinations/qliksense-qlikview#qliksense-data-load-script-explanation)
 - [WHERE Clause](../table/where-clause)
 - [Scheduling an extraction](../execute-and-automate-extractions/call-via-scheduler)

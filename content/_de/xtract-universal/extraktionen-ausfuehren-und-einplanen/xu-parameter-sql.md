@@ -19,7 +19,7 @@ Folgende Table-Extraktion hat z.B. einen benutzerdefinierten Parameter *WNAME* i
 
 ### Custom SQL Statement - Benutzerdefinierte SQL-Anweisung
 
-Im Fenster [Destination Settings](../destinationen/microsoft-sql-server/sql-server-einstellungen#destination-settings-öffnen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
+Im Fenster [Destination Settings](../destinationen/microsoft-sql-server#destination-settings-öffnen) können Sie eine benutzerdefinierte SQL-Anweisung für die drei verschiedenen Datenbank-Prozessschritte verwenden und / oder die SQL-Anweisung an Ihre Anforderungen anpassen.
 ![Destination-Settings](/img/content/xu/automation/destination_settings_runtime_parameter.png){:class="img-responsive"}
 
 1. Wählen Sie im Hauptfenster die Extraktion mit einem benutzerdefinierten Parameter in der WHERE-Bedingung (1) aus.

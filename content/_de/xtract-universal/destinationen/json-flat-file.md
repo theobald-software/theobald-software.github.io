@@ -64,6 +64,6 @@ Das Fenster "Destination Settings" besteht aus den folgenden Unterabschnitten:
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
 ### Existing files
-Die Option *Existing files* ist mit der Option *Directory* (Verzeichnis) verbunden, die in den [Destination Details](../json-flat-file#destination-details---destinationendetails) definiert ist.<br>
+Die Option *Existing files* ist mit der Option *Directory* (Verzeichnis) verbunden, die in den [Destination Details](#destination-details---destinationendetails) definiert ist.<br>
 **Replace file** - ersetzt die vorhandene Datei in dem Verzeichnis, in dem die JSON-Datei gespeichert ist.<br>
 **Abort extraction** - bricht die Extraktion ab, wenn die JSON-Datei bereits im definierten Verzeichnis existiert.

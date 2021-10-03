@@ -105,7 +105,7 @@ Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unter
 
 ### Skript-Ausdrücke in Datenbank-Destinationen verwenden
 
-In diesem Szenario werden Skript-Ausdrücke als Teil einer benutzerdefinierten SQL-Anweisung verwendet (siehe [Beispiel](https://help.theobald-software.com/de/xtract-universal/destinationen/microsoft-sql-server/sql-server-custom-sql)).
+In diesem Szenario werden Skript-Ausdrücke als Teil einer benutzerdefinierten SQL-Anweisung verwendet (siehe [Beispiel](../destinationen/microsoft-sql-server#custom-sql)).
 
 Dieses Szenario unterstützt:
 - Skript-Ausdrücke, die auf .NET basieren

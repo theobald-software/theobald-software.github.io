@@ -20,7 +20,7 @@ The following table extraction has a custom parameter *WNAME* in the *WHERE-Clau
 
 ### Custom SQL Statement
 
-In the window [Destination Settings](../destinations/microsoft-sql-server/sql-server-settings#opening-the-destination-settings) you can use a custom SQL statement for the three database process steps and / or edit the SQL statement according to your requirements. 
+In the window [Destination Settings](../destinations/microsoft-sql-server#opening-the-destination-settings) you can use a custom SQL statement for the three database process steps and / or edit the SQL statement according to your requirements. 
 ![Destination-Settings](/img/content/xu/automation/destination_settings_runtime_parameter.png){:class="img-responsive"}
 
 1. In the main window select an extraction with a custom parameter in the WHERE-Clause (1).

@@ -14,7 +14,7 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 - [Aufruf via Webservices](./call-via-webservice)
 
 ### Integration mittels Plug-In
-- [Xtract Universal Alteryx Plugin](../destinationen/alteryx-de/voraussetzungen-alteryx-de)
+- [Xtract Universal Alteryx Plugin](../destinationen/alteryx-de#voraussetzungen)
 - [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
 - [Dynamic Runtime Parameter within KNIME Workflow](https://kb.theobald-software.com/xtract-universal/dynamic-runtime-paramater%20within-KNIME-workflow)
 - [Xtract Universal Power BI Custom Connector](../destinationen/Power-BI-Connector)
@@ -25,7 +25,7 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 - [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http)
 - [GCS Integration with Google Scheduler](https://cloud.google.com/scheduler/docs/creating)
 - [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
-- [Qlik Datenladeskript generieren](../destinationen/qlik/script_generieren)
+- [Qlik Datenladeskript generieren](../destinationen/qlik#datenladeskript-generieren)
 
 ### Integration mittels Kommandozeile
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).

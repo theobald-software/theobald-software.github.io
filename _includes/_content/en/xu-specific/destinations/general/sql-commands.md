@@ -5,7 +5,7 @@ Defines the action on the target database before the data is inserted into the t
 - *Drop & Create*: Remove table if available and create new table (default).
 - *Truncate Or Create*: Empty table if available, otherwise create.
 - *Create If Not Exists*: Create table if not available.
-- *Prepare Merge*: Prepares the merge process and creates e.g. a temporary staging table. See [merging](./merging-data) for more details. 
+- *Prepare Merge*: Prepares the merge process and creates e.g. a temporary staging table. See [merging](#merging-data) for more details. 
 - *None*: no action
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below. 
 
@@ -37,7 +37,7 @@ Defines the action on the target database after the data has been successfully i
 
 #### About Merging
 Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
-See section [merging data](./merging-data).
+See section [merging data](#merging-data).
 
 ### Custom SQL
 
@@ -53,7 +53,7 @@ be used as templates:
 5. Click **[Copy]** to copy the statement to the clipboard.
 6. Click **[OK]** to confirm.
 
-Check out the [Microsoft SQL Server example](../microsoft-sql-server/sql-server-custom-sql) for details on predefined expressions.
+Check out the [Microsoft SQL Server example](./microsoft-sql-server#custom-sql) for details on predefined expressions.
 
 {:.box-note}
 **Note:** The custom SQL code is used for SQL Server destinations. A syntactic adaptation of the code is necessary to use the custom SQL code for other database destinations.
