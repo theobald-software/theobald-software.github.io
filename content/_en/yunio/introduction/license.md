@@ -12,13 +12,12 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 progressstate: 5
 ---
 ### About the licensing concept of YunIO
-```
+
 YunIO is licensed per target environment, source system and Windows server. <br>
 The following graphic shows the on which workstations the installation of YunIO with a valid license required.   
 
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-```
 A demo license is automatically installed with the installation of YunIO.<br>
 A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. The product license is bound to your company and the server on which the YunIO server runs.<br>
  
