@@ -21,6 +21,7 @@ You are guaranteed to get an unrestricted support by the Theobald Software suppo
 In case of any questions or doubts, feel free to contact Theobald Software by e-mail or phone at any time: <br>
 - [support@theobald-software.com](mailto:support@theobald-software.com)
 - [International contact details](https://theobald-software.com/en/contact/)
+- [Setting Up Xtract Universal](/docs/sap-customizing/Requirements_SAPConnectors_v1.0.pdf){:download="Requirements_SAPConnectors")
 
 ****
 #### Related Links
