@@ -34,6 +34,6 @@ Im dritten Schritt wird die temporäre Tabelle mit der Zieltabelle zusammengefü
 - **Finalization**: *Finalize Merge*, um die Staging-Tabelle mit der Zieldatenbanktabelle zusammenzuführen und anschließend die Staging-Tabelle zu löschen.
 ![Extraction-Specific-Settings-Merge-Makt](/img/content/xu/destination_data_merge.png){:class="img-responsive"}
 
-Weitere Informationen über die aktualisierten Felder finden Sie in der SQL-Anweisung ([nur Custom SQL](https://help.theobald-software.com/de/xtract-universal/destinationen/microsoft-sql-server/sql-server-custom-sql)).<br>
+Weitere Informationen über die aktualisierten Felder finden Sie in der SQL-Anweisung ([nur Custom SQL](#custom-sql)).<br>
 Es ist möglich, die SQL-Anweisung bei Bedarf zu bearbeiten, z.B. bestimmte Spalten von der Aktualisierung auszuschließen.<br>
 Felder, die nicht in der SQL-Anweisung erscheinen, sind von den Änderungen nicht betroffen.

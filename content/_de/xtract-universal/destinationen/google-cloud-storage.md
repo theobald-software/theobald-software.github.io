@@ -73,7 +73,7 @@ Der neu hinzugefügte Bereich (Scope) ist der erste Eintrag in der Tabelle. Klic
 Wählen Sie "Desktop app" als Applikationstyp aus, vergeben Sie einen beliebigen Namen und klicken Sie auf **[Create]**.
 ![xu-google-cloud-req-15](/img/content/xu/googlecloudstorage/xu-google-cloud-req-15.png){:class="img-responsive"}
 11. Ihr OAuth-Client ist erstellt. <br>
-Die "Client ID" und der "Client secret" sind für die Konfiguration der Destination in Xtract Universal notwendig (siehe [Verbindung](#connection)).
+Die "Client ID" und der "Client secret" sind für die Konfiguration der Destination in Xtract Universal notwendig (siehe [Verbindung](#verbindung)).
 ![xu-google-cloud-req-16](/img/content/xu/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 
 ## Verbindung

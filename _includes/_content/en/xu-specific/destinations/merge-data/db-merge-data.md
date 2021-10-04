@@ -9,7 +9,7 @@ Ideally, the table with existing data is created in the initial load with the co
 {:.box-warning}
 **Warning! Faulty merge** <br>
 A primary key is a prerequisite for a merge command. If no primary key is set, the merge command runs into an error.
-Create an appropriate primary key in the [General Settings](../getting-started/general-settings#primary-key-tab) to execute the merge command.
+Create an appropriate primary key in the [General Settings](./../getting-started/general-settings#primary-key-tab) to execute the merge command.
 
 
 ### Updated record in SAP
@@ -32,6 +32,6 @@ In the third step, the temporary table is merged with the target table and then 
 - **Finalization**: *Finalize Merge* to merge the staging table with the target table and then delete the staging table.
 ![Extraction-Specific-Settings-Merge-Makt](/img/content/xu/destination_data_merge.png){:class="img-responsive"}
 
-More information about the updated fields can be found in the SQL statement ([Custom SQL only](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server/sql-server-custom-sql)).<br>
+More information about the updated fields can be found in the SQL statement ([Custom SQL only](#custom-sql)).<br>
 It is possible to edit the SQL statement if necessary, e.g., to exclude certain columns from the update.<br>
 Fields that do not appear in the SQL statement are not affected by changes.

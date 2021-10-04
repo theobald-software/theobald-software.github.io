@@ -74,7 +74,7 @@ The newly added scope is the first entry in the table. Click **[Update]** to cre
 Select "Desktop app" as application type, give the app a name of your choice and click **[Create]**.
 ![xu-google-cloud-req-15](/img/content/xu/googlecloudstorage/xu-google-cloud-req-15.png){:class="img-responsive"}
 11. Your OAuth client is now created. <br>
-The "Client ID" and the "Client secret" are needed for the destination configuration in Xtract Universal (see [Connection](./connection)).
+The "Client ID" and the "Client secret" are needed for the destination configuration in Xtract Universal (see [Connection](#connection)).
 ![xu-google-cloud-req-16](/img/content/xu/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 
 ## Connection
