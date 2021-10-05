@@ -1,99 +1,85 @@
 ---
 ref: yunio-server-03
 layout: page
-title: Server Settings 
-description: Server Settings 
+title: Server Settings
+description: Server Settings
 product: yunio
 parent: server
+childidentifier: server
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=server_settings_in_xu_3_x
-progressstate: 5
+old_url: /Xtract-Universal-EN/default.aspx?pageid=server
 ---
 
-### To open server settings
-In the main window of the Designer navigate to **[Server] > [Settings]**. The 'Server settings' window opens. There are two tabs in the 'Server settings' window:
-- *Configuration Server*
-- *Web Server*
-
+The follwing section contains an overview of the YunIO server settings in the **Settings** menu. <br>
+To save any changes made in the **settings** menu, click **[Save]**.
 
 {: .box-note }
-**Note:** The settings are stored in the following directory: `C:\Program Files\XtractUniversal\config\server` (by default).
+**Note:** The changes are activated when restarting the YunIO server.
+
+![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" width="800px"}
 
 
-### Configuration Server
+### Transport Layer Security
 
-![XU3_ServerSettings_config_tab](/img/content/XU3_ServerSettings_config_tab.png){:class="img-responsive"}
+The Transport Layer Security (TLS) protocol prevents spying or manipulation of data (such as SAP credentials) that is exchanged between the Designer and the Server.
+When TLS is enabled, access restrictions require accessing the web server through an https connection. This requires installation of an X.509 certificate.
+For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
+![TransportLayerSecurity](/img/content/yunio/Settings_transportlayersecurity.png){:class="img-responsive"}
 
-#### Designer connections
+**Pick Certificate:**<br>
+Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
+If the certificate is not listed in the menu or in the Windows certificate store, [install the X.509 certificate](./install-x.509-Certificate).
 
-**Port (1)** <br>
-Defines the port number for communication between Server and Designer. The default is 8064. If you set a different port, add the new port number to the host name on the logon screen ([host name]:[port]).
+**TLS enabled:**<br>
+Once a certificate is selected, the option **TLS enabled** is available.<br>
+Enable or disable the usage of access restrictions for your services.
 
-![XU-Designer-Logon](/img/content/xu/xu-designer-logon.png){:class="img-responsive"}
+### CORS List
 
-**Max. age of log files (days)** <br>
-Defines the maximum age of the config server [log files](../logging/logging-access-via-designer#server-logs-run) in days. After this period the log files are deleted.
+Enter a URL you want to add to the list of URLs ...
 
-**Authentication methods** <br>
-See section [User Management](../security/user-management).
+{: .box-note }
+**Note:** For testing purposes you can use ( * ) to allow all URLs.
 
-**Select X.509 certificate** <br>
+![CORS-List](/img/content/yunio/Settings_corslist.png){:class="img-responsive"}
 
-See section [Installing an X.509 certificate](../security/install-x.509-Certificate).
+### Services
 
+Define the ports under which your services are available. 
 
-#### Access Management
-See section [Access Management](../security/access-management).
+![Services](/img/content/yunio/Settings_services.png){:class="img-responsive"}
 
+**HTTP port:**<br>
+This port is used for your services if *Transport Layer Security (TLS)* is disabled. The maximum port number is 65535.
 
-### Web Server
-![XU3_ServerSettings_web_tab](/img/content/XU3_ServerSettings_web_tab.png){:class="img-responsive"} 
-
-
-#### Protocol / Access control
-
-**HTTP - Unrestricted / HTTP port** (default) <br>
-Defines the port number, on which the Server receives HTTP requests of an extraction. The run statement generates an HTTP-URL. 
-
-**HTTPS - Unrestricted / HTTPS port** <br>
-Enables secure data transfer via HTTPS.
-
-Defines the port number, on which the Server receives HTTPS requests of an extraction. The run statement generates an HTTPS-URL. Port option defines the HTTPS listener port.
-
-If you want to receive data via HTTPS you need to install a TLS certificate on the server, on which the Service is running. <br>
-See section [Installing an X.509 certificate](../security/install-x.509-Certificate). 
-
-**HTTPS - Restricted to AD users with Designer read access** <br>
-See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by Windows AD users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note 3.11](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html) and section [server security](../security/server-security).  
-
-**HTTPS - Restricted to custom users with Designer read access** <br>
-See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by custom users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note 4.20.0](https://kb.theobald-software.com/release-notes/XtractUniversal-4.20.0.html) and section [server security](../security/server-security). 
-
-#### Misc.
-
-**Max. age of log files (days)** <br>
-Defines the maximum age of the web server [log files](../logging/logging-access-via-designer#server-logs-run) in days. After this period the log files are deleted.
-
-**Enable setup distribution for clients** <br>
-Defines whether the setup of the product version running on the server needs to be downloaded. When an older Designer version is connected to a newer Server version, you are be prompted to download and update the Designer with the product version. 
+**HTTPS port:**<br>
+This port is used for your services if *Transport Layer Security (TLS)* is enabled. The maximum port number is 65535.
 
 
-#### Result cache
+### Designer
 
-{:.box-note}
-**Note:** *Cache results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+Define the ports under which the YunIO web UI is available. 
 
-**Target directory** <br>
-Sets the directory for the buffer files. The default ist the result-cache folder in the product's program files directory: <br>
-`C:\Program Files\XtractUniversal\result-cache`.
+![Designer](/img/content/yunio/Settings_designer.png){:class="img-responsive"}
 
-**Max. cached runs** <br>
-Defines the maximum count of results of different extractions in the buffer.
+**HTTP port:**<br>
+This port is used to access the web UI if *Transport Layer Security (TLS)* is disabled. The maximum port number is 65535.
 
-**Max. age (minutes)** <br>
-Defines the maximum age in minutes of an extraction in the buffer.
+**HTTPS port:**<br>
+This port is used to access the web UI if *Transport Layer Security (TLS)* is enabled. The maximum port number is 65535.
 
 
+### WebSockets
+
+Define the ports for the communication between the Designer and the YunIO server. 
+
+![WebSockets](/img/content/yunio/Settings_websockets.png){:class="img-responsive"}
+
+**HTTP port:**<br>
+This port is used for the communication between the Designer and the YunIO server if *Transport Layer Security (TLS)* is disabled. The maximum port number is 65535.
+
+**HTTPS port:**<br>
+This port is used for the communication between the Designer and the YunIO server if *Transport Layer Security (TLS)* is enabled. The maximum port number is 65535.
