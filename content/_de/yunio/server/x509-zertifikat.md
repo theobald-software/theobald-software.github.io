@@ -1,7 +1,7 @@
 ---
-ref: yunio-05
+ref: yunio-server-05
 layout: page
-title: Ein X.509-Zertifikat installieren
+title: X.509-Zertifikat installieren
 description: Ein X.509-Zertifikat installieren
 product: yunio
 parent: server
@@ -38,9 +38,9 @@ Im abgebildeten Beispiel lautet der Servername "TODD":
 ![XU-X509-MMC](/img/content/XU-X509-MMC.png){:class="img-responsive"}
 2. Verweisen Sie auf das Zertifikat im Designer unter **Settings > Transport Layer Security**. 
 Klicken Sie auf **[Pick Certificate]** und wählen Sie das Zertifikat aus der Liste verfügbarer Zertifikate aus. <br>
-![TransportLayerSecurity](/img/content/yunio/Settings_transportlayersecurity.png){:class="img-responsive"}
-![TransportLayerSecurity-List](/img/content/yunio/tls-pickcertificate.png){:class="img-responsive"}
-![TransportLayerSecurity-Details](/img/content/yunio/tls-certificate.png){:class="img-responsive"}
+![TransportLayerSecurity](/img/content/yunio/Settings_transportlayersecurity.png){:class="img-responsive" width="800px" }
+![TransportLayerSecurity-List](/img/content/yunio/tls-pickcertificate.png){:class="img-responsive" width="800px"}
+![TransportLayerSecurity-Details](/img/content/yunio/tls-certificate.png){:class="img-responsive" width="800px"}
 3. Aktivieren Sie die Option **TLS enabled**, um das *Transport Layer Security*-Protokoll zu aktivieren, siehe [Transport Layer Security](./server-einstellungen#transport-layer-security).<br>
 4. Speichern Sie die Einstellungen. Die vorgenommenen Änderungen werden durch den Neustart des YunIO-Servers aktiviert.
 

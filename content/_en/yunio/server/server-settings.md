@@ -35,7 +35,7 @@ If the certificate is not listed in the menu or in the Windows certificate store
 
 **TLS enabled:**<br>
 Once a certificate is selected, the option **TLS enabled** is available.<br>
-Enable or disable the usage of access restrictions for your services.
+Enable or disable the usage of transport encryption for the web server.
 
 ### CORS List
 
@@ -48,7 +48,7 @@ Enter a URL you want to add to the list of URLs ...
 
 ### Services
 
-Define the ports under which your services are available. 
+Define the ports of your services. 
 
 ![Services](/img/content/yunio/Settings_services.png){:class="img-responsive"}
 
@@ -61,7 +61,7 @@ This port is used for your services if *Transport Layer Security (TLS)* is enabl
 
 ### Designer
 
-Define the ports under which the YunIO web UI is available. 
+Define the ports of the YunIO web UI. 
 
 ![Designer](/img/content/yunio/Settings_designer.png){:class="img-responsive"}
 
