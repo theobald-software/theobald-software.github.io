@@ -68,6 +68,7 @@ Definieren Sie die Ports für den Designer.
 
 **HTTP port:**<br>
 Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn keine Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+
 **HTTPS port:**<br>
 Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn die Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
 
@@ -79,5 +80,6 @@ Definieren Sie die Ports für die Kommunikation zwischen dem Designer und dem Yu
 
 **HTTP port:**<br>
 Dieser Port wird für die Kommunikation zwischen dem Designer und dem YunIO-Server, wenn keine Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+
 **HTTPS port:**<br>
 Dieser Port wird für die Kommunikation zwischen dem Designer und dem YunIO-Server, wenn die Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
