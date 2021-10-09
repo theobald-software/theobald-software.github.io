@@ -1,4 +1,4 @@
-Click the the main window "Extract SAP DataSources and Extractors" on **[Settings]**.
+1. Click the the main window "Extract SAP DataSources and Extractors" on **[Settings]**.
 The window **Xtract IS DeltaQPrefernces** open. The window consists of four main sections and buttons.
 
 ![XIS_DeltaQ_Settings](/img/content/XIS_DeltaQ_Settings.png){:class="img-responsive"}
@@ -63,11 +63,11 @@ SAP date '00000000' will be converted to NULL or the entered date [YYYYMMDD].
 **Replace invalid date  with[YYYYMMDD]**<br>
 In case of no convertable date values you have to enter a default date value into the textbox. Every invalid value will be converted into this value.<br>
 
-### Request Maintenance
-**[Request Maintenance]** shows the content of SAP table ROOSPRMSC.
+**[Request Maintenance]**<br>
+Shows the content of SAP table ROOSPRMSC.
 Allows the deletion of Init Requests (Requests in RSA7).
 In general, only one entry which corresponds to one Init Request should be visible here.
 Only if you've executed Init Requests with non-overlapping selection criteria, can you have more than one entry in this view.
 
-### Generate Documentation
-**[Generate Documentation]** generates an excel documentation about the datasource and its fields.
+**[Generate Documentation]**<br>
+Generates an excel documentation about the datasource and its fields.

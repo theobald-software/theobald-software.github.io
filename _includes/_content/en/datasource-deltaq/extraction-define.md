@@ -1,36 +1,40 @@
-### Look Up Extractors
+### Step 1: Look up an OLTP Source (1)
 
-1. Click **[Search]** (binoculars icon) in the main window of the component. The window “Look Up OLTP Source” opens.
-![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
-2. Enter a name or description of a *DataSource* (1). Use wildcards ( * ), if needed.
-3. Click **[Search]** (magnifying glass icon) (2) and select the extractor of your choice from the displayed list (3).
+Within the main window, search for **OLTP Source** (Data Source) by using the **[Search]** (magnifying glass icon)(1). You can use wildcards (*), if needed.
+![search-ds-mat-attr](/img/content/search-ds-mat-attr.png){:class="img-responsive"}
+The dialoge "Look Up OLTP Source" opens.
 The following example shows the download of material master data from the DataSource *0MATERIAL_ATTR*.
-4. Click **[OK]** (4) to confirm your selection.
+![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
 
-### Defining a DeltaQ Extraction
+### Step 2: Set Update Mode (2)
 
-After selecting an Extractor, follow the steps below:
+**Full Update** (2) requests all data that meets the selection criteria you set. To get a real **Delta** procedure running, Delta first has to be initialized, see at [Delta](./datasource-delta).<br>
+To get an overview which update modes are available, see at [Update Mode](./update-mode).
 
-1. Choose an *Update Mode* (5).<br>
-**Full Update** requests all data that meets the selection criteria you set. To get a real **Delta** procedure running, Delta first has to be initialized, see [Delta](./datasource-delta).<br>
-For more information on available update modes, see [Update Mode](./update-mode).
-2. Check the boxes of the columns you want to extract (6).<br>
+### Step 3: Select Columns
+
+Tick the checkmarks next to the columns you would like to extract.<br>
+To select all entries, click **[Select All]**. Click **[OK]** to confirm.<br>
+See the following example:
+
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
-3. Optional: If applicable, add filters in the **Selection** column to filter your data (7).
-For more information on filtering, see [Datasource Parameters](./datasource-parameters).
-4. Validate your settings by running a test extraction.
-5. If the validation finished without errors klick on **[Activate]** to activate this extraction in SAP.<br> 
-After successful activation, the corresponding status messages appear in the course of a few seconds:<br>
-![Deltaq-System-Parameters-Info](/img/content/Deltaq-System-Parameters-Info.png){:class="img-responsive"}<br>
+
+### Step 4: Activation
+
+If the validation finished without errors klick on **[Activate]** to activate this extraction in SAP.<br> 
+After successful activation, the corresponding status messages appear in the course of a few seconds:
+
+![Deltaq-System-Parameters-Info](/img/content/Deltaq-System-Parameters-Info.png){:class="img-responsive"}
+
 ![Deltaq-Generation-Successfull-Info](/img/content/Deltaq-Generation-Successfull-Info.png){:class="img-responsive"}
 
-{: .box-note } 
-**Note:** The activation must only be done for **Delta**, **Full** or **Init** modes.
+Once activated successfully, the extraction can be executed. 
+
+The activation must only be done for **Delta**, **Full** or **Init** modes.
+Delete the old activation before starting a new one, see at **[Extraction Settings]**.
 Don't make any activation for the **Delta Update** mode. 
-Delete the old activation before starting a new one.
 
-
-### Variables
+### Variables and Filters
 
 **Variables** can be used for the following settings:
 * **Log. Destination**, 
@@ -38,8 +42,8 @@ Delete the old activation before starting a new one.
 * **Gateway Service**,
 * **Program ID**. 
 
-**Update Mode** and **Selection** filters can be controlled via a variable too, see [Update Mode](./update-mode) and [Datasource Parameters](./datasource-parameters).
+The **Update Mode** can be controlled via a variable too, see at **[Extraction Settings]**.
 
-*****
-#### Related Links
-- [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide). 
+**Filters** see at [Datasource Parameters](./datasource-parameters).
+ 
+In case of errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide). 

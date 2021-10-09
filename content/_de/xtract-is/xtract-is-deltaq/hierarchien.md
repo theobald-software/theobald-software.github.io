@@ -10,4 +10,4 @@ weight: 8
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/datasource-deltaq/hierarchien.md %}
+{% include _content/de/xis-specific/xtract-is-deltaq/hierarchien.md %}

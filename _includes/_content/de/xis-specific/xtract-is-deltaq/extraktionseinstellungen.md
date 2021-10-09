@@ -63,11 +63,11 @@ SAP-Datum '00000000' wird in NULL oder das eingegebene Datum [YYYYMMDD] umgewand
 **Replace invalid date  with[YYYYMMDD]**<br>
 Falls keine konvertierbaren Datumswerte vorhanden sind, müssen Sie einen Standard-Datumswert in die Textbox eingeben. Jeder ungültige Wert wird in diesen Wert umgewandelt.<br>
 
-### Request Maintenance
-**[Request Maintenance]** zeigt den Inhalt der SAP-Tabelle ROOSPRMSC an.
+**[Request Maintenance]**<br>
+Zeigt den Inhalt der SAP-Tabelle ROOSPRMSC an.
 Erlaubt das Löschen von Init-Requests (Requests in RSA7).
 Im Allgemeinen sollte hier nur ein Eintrag sichtbar sein, der einem Init Request entspricht.
 Nur wenn Sie Init Requests mit sich nicht überschneidenden Auswahlkriterien ausgeführt haben, können Sie mehr als einen Eintrag in dieser Ansicht haben.
 
-### Generate Documentation
-**[Generate Documentation]** ereugt eine Excel-Datei über die Datenquelle und ihre Felder.
+**[Generate Documentation]**<br>
+Erzeugt eine Excel-Datei über die Datenquelle und ihre Felder.

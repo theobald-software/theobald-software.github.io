@@ -10,12 +10,4 @@ weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=datasource_parameters
 ---
-
-{% include _content/en/datasource-deltaq/datasource-parameters.md %}
-
-### Supported features
-
-SSIS Variables are supported, see [Parameterization](./parametrization). 
-
-{: .box-note }
-**Note:** Add an *@* symbol right before the value to mark it as a variable.
+{% include _content/en/xis-specific/deltaq/datasource-parameters.md %}

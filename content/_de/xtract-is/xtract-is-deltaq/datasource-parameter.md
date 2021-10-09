@@ -10,11 +10,4 @@ weight: 4
 lang: de_DE
 progressstate: 5
 ---
-{% include _content/de/datasource-deltaq/datasource-parameter.md %}
-
-### Unterstützte Funktionen
-
-SSIS-Variablen werden unterstützt, siehe [Parametrisierung](./parametrisierung). 
-
-{: .box-note }
-**Hinweis:** Fügen Sie *@* direkt vor einem Wert ein, um ihn als Variable zu kennzeichnen.
+{% include _content/de/xis-specific/xtract-is-deltaq/datasource-parameter.md %}

@@ -10,5 +10,4 @@ weight: 7
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=data-and-protocol-output
 ---
-
 {% include _content/en/xis-specific/deltaq/data-and-protocol-output.md %}

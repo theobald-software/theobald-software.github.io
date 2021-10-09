@@ -15,8 +15,8 @@ Click on **[Extraction Settings]** to set the language of the hierarchy.
 ![DeltaQ-Hierarchy-003](/img/content/Deltaq-Hierarchy-Selected.png){:class="img-responsive"}
 
 ### Preview Extraction
-Click on **[Run]** to display the **Run Extraction** window and enable the **Preview** runtime parameter
-![DeltaQ-Hierarchy-004](/img/content/DeltaQ-Hierarchy-004.png){:class="img-responsive"}
+Enable the data viewer for the data flow and execute the DeltaQ extraction.
+![DeltaQ-Hierarchy-004](/img/content/xis/data_view_deltaQ_xtract_is.png){:class="img-responsive"}
 
 **NodeID** is the sequential number of a node in the hierarchy.
 **NodeName** is the actual value. The hierarchy can be reconstructed with the **ParentID** and **ChildID**.
@@ -24,5 +24,11 @@ Click on **[Run]** to display the **Run Extraction** window and enable the **Pre
 
 {: .box-tip }
 **Tip:** Unlike attributes and transactions, hierarchies do not have to be activated.
+
+
+
+
+
+
 
 

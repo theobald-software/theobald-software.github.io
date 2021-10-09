@@ -2,16 +2,20 @@
 
 A DeltaQ source has two outputs:
 
-- **DeltaQDataOutput:**<br>
+**DeltaQDataOutput (1)**<br>
 The data output correlates with the checkmarked columns including the RequestID.
-- **DeltaQRequestLog:**<br>
+
+**DeltaQRequestLog (2)**<br>
 The protocol output has the following columns:
-	- DataSource
-	- RequestID
-	- UpdateType
-	- TimeStamp
-	- MessageType
-	- Message
+
+- DataSource
+- RequestID
+- UpdateType
+- TimeStamp
+- MessageType
+- Message
+
+### Best practice
 
 {: .box-tip }
 **Recommendation:** For Delta mechanisms in particular, a detailed protocol is very helpful when troubleshooting.

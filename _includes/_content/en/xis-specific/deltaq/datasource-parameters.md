@@ -17,7 +17,8 @@ Set the values for **Sign** (2), **Option** (3), **Low Value** (4) and if needed
 **High Value** (5) designates the upper interval limitation.
 
 {: .box-note }
-**Note:** Add *@* right before the value to mark it as a variable.
+**Note:** Add *@* right before the value to mark it as a variable.<br>
+ 
 
 | Operator   |      Meaning      |  
 |:---------|:------------- |
@@ -27,7 +28,7 @@ Set the values for **Sign** (2), **Option** (3), **Low Value** (4) and if needed
 |>, GT |  True if the content of operand1 is greater than the content of operand2|
 |<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
 |>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
-|*,  LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
+|*, LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
 |[], BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
 
 ### Delete
@@ -35,4 +36,7 @@ To *delete* a row, click the icon at the bottom left.
 
 ### Supported features
 
-Variables and [script expressions](../advanced-techniques/script-expressions) are supported too. 
+SSIS Variables are supported. 
+
+
+
