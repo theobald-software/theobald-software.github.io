@@ -10,7 +10,7 @@ weight: 10
 lang: de_DE
 ---
 
-YunIO ist ein Cloud-Konnektor zur SAP-Prozessintegration auf Cloud-Umgebungen. <br>
+YunIO ist ein Konnektor zur SAP-Prozessintegration auf Cloud-Umgebungen. <br>
 Der folgende Abschnitt gibt eine allgemeine Einführung in die Verwendung von yunIO.
 
 ### Installation
@@ -117,11 +117,17 @@ Für Informationen zur OpenSQL-Syntax der WHERE-Bedingung, siehe [SAP Hilfe - Se
 
 ### Service ausführen
 
-YunIO ist mit allen Cloud Anwendungen zur Prozessautomatisierung integrierbar, die
-REST Services/OpenAPI unterstützen, z.B. Power Automate, Nintex, Firestart, Webcon uvm.
+Webdienste, die mit yunIO erstellt werden, sind in alle Cloud Anwendungen integrierbar, die
+REST API/Swagger (OpenAPI) unterstützen, z.B. Power Automate, Nintex, Firestart, Webcon uvm.
 
-Bevor Sie einen Service in Ihr Prozessautomatisierungstool integrieren, können Sie ihn über seinen Service Endpoint zu Testzwecken direkt im Browser ausführen (1).
-Um einen yunIO Web-Service in Ihr Prozessautomatisierungstool zu integrieren, kopieren oder downloaden Sie den .json Code des Services (2).
+Um einen Service zu testen, können SIe die URL des Service Endpoints unter **Service** (1) triggern.
+Der Service wird dann direkt im Browser ausgeführt.
+
+{: .box-note }
+**Hinweis:** Wenn Sie einen Dienst im Browser ausführen, können keine Parameter übergeben werden.
+Im Browser werden nur Daten ohne Eingabeparameter angezeigt.
+
+
+Um einen yunIO Web-Service in ein Prozessautomatisierungstool zu integrieren, sas Swagger/OpenAPI unterstützt, kopieren Sie den Code oder laden Sie die Definition des Services herunter (2).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
-
