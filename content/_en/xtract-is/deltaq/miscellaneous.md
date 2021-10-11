@@ -10,4 +10,5 @@ weight: 11
 lang: en_GB
 progressstate: 5
 ---
-{% include _content/en/datasource-deltaq/misc-deltaq.md %}
+
+{% include _content/en/xis-specific/deltaq/miscellaneous.md %}

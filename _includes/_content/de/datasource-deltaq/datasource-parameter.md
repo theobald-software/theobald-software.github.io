@@ -1,21 +1,22 @@
 ### Parameter bearbeiten 
 
 {: .box-note } 
-**Hinweis:** Parameter sind beim Modus **Delta Update** nicht erlaubt, da die Parameter des Modus **Init** automatisch übernommen werden.
+**Hinweis:** Parameter sind im **Delta Update**-Modus nicht erlaubt, da die Parameter des **Init**-Modus automatisch übernommen werden.
 
 Parameter können *Einzelwerte*, *Intervalle* und *komplexe Filter* haben. <br>
+
+1. Klicken Sie auf **[Edit]** (1) und öffnen Sie den Editor zum Ändern der Parameter. Es öffnet sich das Fenster "Edit Range".<br>
 ![Edit-Parameters](/img/content/Parameters_edit.png){:class="img-responsive"}
-
-Klicken Sie auf **[Edit]** (1) und öffnen Sie den Editor zum Ändern der Parameter. Es öffnet sich das Fenster "Edit Range".
-
-Stellen Sie die Werte für **Sign** (2), **Option** (3), **Low Value** (4) und falls erforderlich, für **High Value** (5) ein.<br>
+2. Stellen Sie die Werte für **Sign** (2), **Option** (3), **Low Value** (4) und falls erforderlich, für **High Value** (5) ein.<br>
 ![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
-
-**Sign** (2) kann zwei Werte erhalten: *Include* oder *Exclude*. Damit wird für jede Zeile festgelegt, ob das Ergebnis der Bedingung in der gesamten Ergebnismenge für alle Zeilen ein- oder ausgeschlossen wird.<br>
+**Sign** (2) definiert für jede Zeile, ob das Ergebnis der Bedingung in der Ergebnismenge ein- oder ausgeschlossen wird. Wählen Sie entweder *Include* oder *Exclude*.<br>
 **Option** (3) enthält die Auswahlmöglichkeit für die Bedingung der Zeile in Form von logischen Operatoren.<br>
 **Low Value** (4) bezeichnet den Vergleichswert bzw. die untere Intervallgrenze.<br>
 **High Value** (5) bezeichnet die obere Intervallgrenze.
+3. Sie können mehrere Filter anwenden oder Filter über die Schaltfläche **[Delete]** in der unteren, linken Ecke des Fensters löschen.
+4. Klicken Sie auf **[OK]**, um Ihre Eingabe zu speichern.
 
+### Operatoren
 
 | Operator   |      Bedeutung      |  
 |:---------|:------------- |
@@ -27,11 +28,3 @@ Stellen Sie die Werte für **Sign** (2), **Option** (3), **Low Value** (4) und f
 |>=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
 |*, LIKE | Wahr, wenn der Wert des Operanden operand1 mit dem Muster im Operanden operand2 übereinstimmt (nicht übereinstimmt). |
 |[], BETWEEN | Wahr, wenn der Inhalt des Operanden operand (nicht) zwischen den Werten der Operanden operand1 und operand2 liegt. |
-
-### Löschen
-Um eine Zeile zu *löschen*, klicken Sie auf das Symbol unten links.
-
-### Unterstützte Funktionen
-
-Variablen und [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) werden ebenfalls unterstützt. 
-

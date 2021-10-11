@@ -10,6 +10,4 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=master-data-in-full-update
 ---
-
-The following section shows how to use the DeltaQ component.
-{% include _content/en/xis-specific/deltaq/extraction-define.md %}
+{% include _content/en/datasource-deltaq/extraction-define.md %}

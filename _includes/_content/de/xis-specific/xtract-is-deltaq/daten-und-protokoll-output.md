@@ -2,20 +2,16 @@
 
 Eine DeltaQ-Quelle hat zwei Ausgaben:
 
-**DeltaQDataOutput (1)**<br>
+- **DeltaQDataOutput:** <br>
 Die Datenausgabe korreliert mit den angekreuzten Spalten einschließlich der RequestID.
-
-**DeltaQRequestLog (2)**<br>
+- **DeltaQRequestLog:** <br>
 Die Protokollausgabe hat die folgenden Spalten:
-
-- DataSource
-- RequestID
-- UpdateType
-- TimeStamp
-- MessageType
-- Message
-
-### Best practice
+	- DataSource
+	- RequestID
+	- UpdateType
+	- TimeStamp
+	- MessageType
+	- Message
 
 {: .box-tip }
 **Empfehlung:** Speziell bei Delta-Mechanismen ist ein detailliertes Protokoll bei der Fehlersuche sehr hilfreich.
