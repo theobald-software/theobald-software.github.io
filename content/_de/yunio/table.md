@@ -12,8 +12,8 @@ lang: de_DE
 progressstate: 5
 ---
 
-Die folgenden Abschnitte zeigen, wie Sie in YunIO Inhalte aus SAP Tabellen und Views auslesen können. 
-Kenntnisse über die Grundlagen von YunIO werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Die folgenden Abschnitte zeigen, wie Sie in yunIO Inhalte aus SAP Tabellen und Views auslesen können. 
+Kenntnisse über die Grundlagen von yunIO werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.

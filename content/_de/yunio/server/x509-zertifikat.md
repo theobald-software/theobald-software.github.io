@@ -42,7 +42,7 @@ Klicken Sie auf **[Pick Certificate]** und wählen Sie das Zertifikat aus der Li
 ![TransportLayerSecurity-List](/img/content/yunio/tls-pickcertificate.png){:class="img-responsive" width="800px"}
 ![TransportLayerSecurity-Details](/img/content/yunio/tls-certificate.png){:class="img-responsive" width="800px"}
 3. Aktivieren Sie die Option **TLS enabled**, um das *Transport Layer Security*-Protokoll zu aktivieren, siehe [Transport Layer Security](./server-einstellungen#transport-layer-security).<br>
-4. Speichern Sie die Einstellungen. Die vorgenommenen Änderungen werden durch den Neustart des YunIO-Servers aktiviert.
+4. Speichern Sie die Einstellungen. Die vorgenommenen Änderungen werden durch den Neustart des yunIO-Servers aktiviert.
 
 
 #### Weiterführende Links:

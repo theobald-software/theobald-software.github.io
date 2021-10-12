@@ -2,7 +2,7 @@
 ref: yunio-introduction-06
 layout: page
 title: Licensing
-description: About the license of YunIO
+description: About the license of yunIO
 product: yunio
 parent: introduction
 permalink: /:collection/:path
@@ -11,29 +11,29 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 progressstate: 5
 ---
-### About the licensing concept of YunIO
+### About the licensing concept of yunIO
 
-YunIO is licensed per target environment, source system and Windows server. <br>
-The following graphic shows the on which workstations the installation of YunIO with a valid license required.   
+yunIO is licensed per target environment, source system and Windows server. <br>
+The following graphic shows the on which workstations the installation of yunIO with a valid license required.   
 
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-A demo license is automatically installed with the installation of YunIO.<br>
-A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. The product license is bound to your company and the server on which the YunIO server runs.<br>
+A demo license is automatically installed with the installation of yunIO.<br>
+A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. The product license is bound to your company and the server on which the yunIO server runs.<br>
  
 
-### Installing the YunIO license - YunIOLicense.json
-For installing the regular license, place the regular YunIOLicense.json into the following directory of the server: <br>
-`C:\Program Files\Theobald Software\YunIO`
+### Installing the yunIO license - yunIOLicense.json
+For installing the regular license, place the regular yunIOLicense.json into the following directory of the server: <br>
+`C:\Program Files\Theobald Software\yunIO`
  <br>
  ![XU_license](/img/content/xu/xu_json_license.png ){:class="img-responsive"}
  
-A restart of the YunIO service is not necessary.
+A restart of the yunIO service is not necessary.
 
-### About YunIO - Info Menu
+### About yunIO - Info Menu
 
 {: .box-tip }
-**Tip:** To inspect your current license data, go to the main menu of YunIO and navigate to **[About].
+**Tip:** To inspect your current license data, go to the main menu of yunIO and navigate to **[About].
 
 The *About* menu also provides direct links to the following Theobald Software support pages:
 - Customer Portal

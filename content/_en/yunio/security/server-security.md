@@ -18,7 +18,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=server_security
 
 ### Running a service under a Windows service account
 
-When restricting access to Windows AD users, the YunIO service must run under a dedicated service account. To do that, follow the steps in [Running the YunIO Service under a Windows Service Account](../advanced-techniques/service-account).
+When restricting access to Windows AD users, the yunIO service must run under a dedicated service account. To do that, follow the steps in [Running the yunIO Service under a Windows Service Account](../advanced-techniques/service-account).
 
 *********
 #### Related Links

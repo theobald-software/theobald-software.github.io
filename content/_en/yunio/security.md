@@ -28,7 +28,7 @@ further details within the server settings. See also [User Management](./securit
 ### Transport encryption
 The transport encryption security method prevents spying or manipulating of the data (such as SAP credentials) that is exchanged between the Designer and the Server. 
 
-YunIO supports two different methods of transport encryption:
+yunIO supports two different methods of transport encryption:
 -	[Kerberos](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374762(v=vs.85).aspx)
 -	[Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol)
 

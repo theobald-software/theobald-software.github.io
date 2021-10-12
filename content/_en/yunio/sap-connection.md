@@ -23,7 +23,7 @@ The SAP connection settings are in the *Connection* section of the Web UI.
 - To add a new SAP connection, click **[Add Connection]** (1).<br>
 - To edit an existing connection, click on the name of the connection you want to edit (2).
 
-![YunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
+![yunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
 
 ### Connection Details
 
@@ -33,7 +33,7 @@ The menu to create and edit SAP connections is divided into 3 sections:
 - [Test Connection](#test-the-sap-connection) (5)
 
 Fill out the connection details and click **[Save]** to establish an SAP connection.<br>
-![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
+![yunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
 
 ### System
 There are two possibilities to connect to an SAP source system:

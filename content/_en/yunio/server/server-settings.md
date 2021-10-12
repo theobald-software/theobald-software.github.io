@@ -12,11 +12,11 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=server
 ---
 
-The follwing section contains an overview of the YunIO server settings in the **Settings** menu. <br>
+The follwing section contains an overview of the yunIO server settings in the **Settings** menu. <br>
 To save any changes made in the **settings** menu, click **[Save]**.
 
 {: .box-note }
-**Note:** The changes are activated when restarting the YunIO server.
+**Note:** The changes are activated when restarting the yunIO server.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" width="800px"}
 
@@ -61,7 +61,7 @@ This port is used for your services if *Transport Layer Security (TLS)* is enabl
 
 ### Designer
 
-Define the ports of the YunIO web UI. 
+Define the ports of the yunIO web UI. 
 
 ![Designer](/img/content/yunio/Settings_designer.png){:class="img-responsive"}
 
@@ -74,12 +74,12 @@ This port is used to access the web UI if *Transport Layer Security (TLS)* is en
 
 ### WebSockets
 
-Define the ports for the communication between the Designer and the YunIO server. 
+Define the ports for the communication between the Designer and the yunIO server. 
 
 ![WebSockets](/img/content/yunio/Settings_websockets.png){:class="img-responsive"}
 
 **HTTP port:**<br>
-This port is used for the communication between the Designer and the YunIO server if *Transport Layer Security (TLS)* is disabled. The maximum port number is 65535.
+This port is used for the communication between the Designer and the yunIO server if *Transport Layer Security (TLS)* is disabled. The maximum port number is 65535.
 
 **HTTPS port:**<br>
-This port is used for the communication between the Designer and the YunIO server if *Transport Layer Security (TLS)* is enabled. The maximum port number is 65535.
+This port is used for the communication between the Designer and the yunIO server if *Transport Layer Security (TLS)* is enabled. The maximum port number is 65535.

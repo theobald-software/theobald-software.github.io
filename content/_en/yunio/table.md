@@ -17,7 +17,7 @@ The following section describes the functions of the *SAP Table or View* compone
 The SAP Tables or Views component extracts Tables or Views from a connected SAP system. 
 
 {: .box-tip }
-**Tip:** To get information on the basics of YunIO, refer to [Getting Started with YunIO](./getting-started). <br>
+**Tip:** To get information on the basics of yunIO, refer to [Getting Started with yunIO](./getting-started). <br>
 
 ****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

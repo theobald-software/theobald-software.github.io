@@ -12,14 +12,14 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=installation
 progressstate: 5
 ---
 
-Bei YunIO handelt es sich um einen Windows-Dienst mit einer eingebetteten Web-UI. Der YunIO-Dienst wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert. 
+Bei yunIO handelt es sich um einen Windows-Dienst mit einer eingebetteten Web-UI. Der yunIO-Dienst wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert. 
 
 ### Setup
 
 {: .box-note }																   
-**Hinweis:** Administratorrechte sind notwendig, um den YunIO-Dienst zu installieren.
+**Hinweis:** Administratorrechte sind notwendig, um den yunIO-Dienst zu installieren.
 
-Die `YunIOSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei `YunIOSetup.exe` aus und folgen Sie den Anweisungen des Setups.
+Die `yunIOSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei `yunIOSetup.exe` aus und folgen Sie den Anweisungen des Setups.
 
 Beim Starten des Setups können die optionalen Komponenten für die Installation ausgewählt werden.
 
@@ -27,22 +27,22 @@ Beim Starten des Setups können die optionalen Komponenten für die Installation
 
 |Komponente | Subkomponente |Beschreibung |
 |:----|:---| :---|
-|Main Product Files | |Installiert alle notwendigen Dateien, die zum Verwenden von YunIO notwendig sind.|
+|Main Product Files | |Installiert alle notwendigen Dateien, die zum Verwenden von yunIO notwendig sind.|
 |<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) |
 |Start Menu Shortcuts | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
 
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz) beschrieben.
 
 ### Dateien des Programmverzeichnisses
-Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in dem Standardverzeichnis `C:\Program Files\Theobald Software\YunIO` abgelegt werden:
+Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in dem Standardverzeichnis `C:\Program Files\Theobald Software\yunIO` abgelegt werden:
 
 |Dateiname | Beschreibung |
 |:----|:---|
 | logs Verzeichnis| Verzeichnis mit Server- und Extraktionsprotokollen etc. |
 | config Verzeichnis | Verzeichnis mit allen SAP-Verbindungen, Extraktionen, Destinationen und anderen Einstellungen.|
-| Uninstall YunIO Shortcut | Shortcut zum Deinstallieren und Entfernen von YunIO mit allen dazugehörigen Komponenten von Ihrer Maschine. |
-| YunIOSetup.exe| Setup der aktuell installierten Version. |
-| YunIOLicense.json | Lizenzdatei mit Komponenten- und Laufzeitinformationen. |
+| Uninstall yunIO Shortcut | Shortcut zum Deinstallieren und Entfernen von yunIO mit allen dazugehörigen Komponenten von Ihrer Maschine. |
+| yunIOSetup.exe| Setup der aktuell installierten Version. |
+| yunIOLicense.json | Lizenzdatei mit Komponenten- und Laufzeitinformationen. |
 
 
 ### Neuinstallation und Update
@@ -50,7 +50,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 {: .box-warning}
 **Warnung!** **Datenverlust:**
 Systemänderungen oder Updates können die Funktionalität der Software einschränken, dabei können Daten verloren gehen. 
-Erstellen Sie ein Backup des Verzeichnis: `C:\Program Files\Theobald Software\YunIO\config` in regelmäßigen Abständen.
+Erstellen Sie ein Backup des Verzeichnis: `C:\Program Files\Theobald Software\yunIO\config` in regelmäßigen Abständen.
 
 Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabile Performance, insbesondere bei größeren Änderungen und Updates hoher ([H])-Priorität. 
 Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) auf Updates. Eine neuere Version kann über die ältere Version installiert werden. 

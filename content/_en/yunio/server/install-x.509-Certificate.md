@@ -41,7 +41,7 @@ Click **[Pick Certificate]** and select the X.509 certificate from the list of a
 ![TransportLayerSecurity-List](/img/content/yunio/tls-pickcertificate.png){:class="img-responsive" width="800px" }
 ![TransportLayerSecurity-Details](/img/content/yunio/tls-certificate.png){:class="img-responsive" width="800px" }
 3. Acticate the checkbox **TLS enabled** to enable the Transport Layer Security protocol, see [Transport Layer Security](./server-settings#transport-layer-security).<br>
-4. Save the settings. The changes are activated when restarting the YunIO server.
+4. Save the settings. The changes are activated when restarting the yunIO server.
 
 
 #### Related Links:

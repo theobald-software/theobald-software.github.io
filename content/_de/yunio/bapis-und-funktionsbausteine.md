@@ -11,8 +11,8 @@ weight: 45
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
-Die folgenden Abschnitte zeigen, wie Sie in YunIO Funktionsmodule verwenden können. 
-Kenntnisse über die Grundlagen von YunIO werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Die folgenden Abschnitte zeigen, wie Sie in yunIO Funktionsmodule verwenden können. 
+Kenntnisse über die Grundlagen von yunIO werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Unviersal](./erste-schritte) beschrieben.

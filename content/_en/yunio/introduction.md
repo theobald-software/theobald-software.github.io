@@ -1,7 +1,7 @@
 ---
 ref: yunio-03
 layout: page
-title: Introduction to YunIO
+title: Introduction to yunIO
 description: Introduction
 product: yunio
 parent: yunio
@@ -13,12 +13,12 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=introduction
 progressstate: 5
 ---
 
-YunIO is a connector that provides .json based web services to write data to and from a connected SAP system. <br>
+yunIO is a connector that provides .json based web services to write data to and from a connected SAP system. <br>
 The web services can be easily integrated into your workflow e.g., into Power Automate, Nintex, Swagger, etc.
 
-![YunIO-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
+![yunIO-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
 
 *****
-The following sections include information about the requirements and the installation of YunIO:
+The following sections include information about the requirements and the installation of yunIO:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

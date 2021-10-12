@@ -22,7 +22,7 @@ Die Einstellungen für SAP-Verbindungen befinden sich in der Web-UI unter dem Ab
 - Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
 - Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf den Namen der Verbindung (2).
 
-![YunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
+![yunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
 
 ### Verbindungsdetails
 
@@ -32,7 +32,7 @@ Das Menü zum Erstellen und Bearbeiten von SAP-Verbindungen ist in drei Unterabs
 - [Test Connection](#angelegte-sap-verbindung-überprüfen) (5)
 
 Ergänzen Sie die Verbindungsdetails und klicken Sie auf **[Save]**, um eine SAP-Verbindung herzustellen.<br>
-![YunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
+![yunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
 
 {: .box-tip }
 **Tipp:** Werte zum Ausfüllen der Felder können Sie die Logon Pad unter *Properties* einsehen oder Sie wenden sich an Ihr SAP Basis Team.

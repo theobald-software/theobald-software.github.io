@@ -30,7 +30,7 @@ The *SAP Table and Views* menu consists of the following subsections:
 - [Output Columns](#output-columns) (6) can be used to select the columns you want to extract.
 - [WHERE-Clause](#where-clause) (7) is optional and can be used to filter data.
 
-![YunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
+![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
 
 ### Table or View (1)
 

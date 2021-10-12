@@ -10,20 +10,20 @@ weight: 9
 lang: en_EN
 ---
 
-The following section gives a general introduction to working with YunIO. 
+The following section gives a general introduction to working with yunIO. 
 The information described in the following section is a prerequisite for all subsequent sections.
 
-### Starting YunIO
+### Starting yunIO
 
-To access the web UI of YunIO, open a web browser of your choice and enter the URL the server that YunIO is running on.<br>
-The URL pattern to access the YunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
-- If the YunIO service runs on a local server, replace `[host]` with *localhost*.
-- If the YunIO service does not run on the same machine as the browser, replace `[host]` with the name of the host on which the service runs.
-- After the installation of YunIO the web UI is accessible under the default port 8077. <br>
-You can configure the port under *Settings* in the YunIO Web UI
+To access the web UI of yunIO, open a web browser of your choice and enter the URL the server that yunIO is running on.<br>
+The URL pattern to access the yunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
+- If the yunIO service runs on a local server, replace `[host]` with *localhost*.
+- If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name of the host on which the service runs.
+- After the installation of yunIO the web UI is accessible under the default port 8077. <br>
+You can configure the port under *Settings* in the yunIO Web UI
 
 {: .box-note}
-**Note:** Make sure that the *YunIO* service is running and that the default port 8077 is not blocked by your firewall.
+**Note:** Make sure that the *yunIO* service is running and that the default port 8077 is not blocked by your firewall.
 
 
 ### Adding an SAP Connection
@@ -34,7 +34,7 @@ In the *Connection* menu you can add new SAP connections and edit or delete exis
 To edit an existing connection, click on the name of the connection you want to edit (2).
 ![web-ui](/img/content/yunio/web-ui.png){:class="img-responsive"}
 2. Enter the connection information of your SAP system under *System* (3).<br>
-![YunIO-connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
+![yunIO-connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
 3. Enter your SAP credentials under *Authentication* (4).
 4. To validate the connection parameters, click **[Test Connection]** (5). A window with a status message opens.
 5. Click **[Save]** to save the connection settings. <br>
@@ -47,28 +47,34 @@ In the *Services* menu you can create new web services and edit, run or delete e
 
 1. To create a new service, click **[Add Service]** (1).<br>
 To edit an existing service, click on the name of the service you want to edit (2).<br>
-![YunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
+![yunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
 2. Enter a name for the service and choose an existing SAP connection under *Endpoint* (3).<br>
-![YunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
-3. Choose an **Extraction Type** (4). YunIO offers extraction of *SAP Tables or Views* and *Function Modules*. 
+![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
+3. Choose an **Extraction Type** (4). yunIO offers extraction of *SAP Tables or Views* and *Function Modules*. 
 4. Optional: Add a short description for the service (5). Click **[Next]**.
 5. Depending on the chosen extraction type either enter the name or description of a Table/View or the name of a Function Module/BAPI to be extracted (6). 
 Use wildcards ( * ) if needed.<br>
-![YunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
+![yunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
 6. Click **[Search]** to display the search results (7). 
 7. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extraction](#table-extraction) or [Function Module](./bapi)..
 8. Click **[Save]** to save the service.
 
 ### How to Use a Service
 
-The web services created with YunIO use a .json based protocol to write data to and from SAP.
+Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, Firestart, Webcon, etc.
 
-To integrate a YunIO web service in your processes (Power Automate, Nintex, Swagger, etc.), you can either copy the URL of the service endpoint (1) or copy/download the .json code of the service (2).
+To test a service after creation, you can trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. 
 
-![YunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
+{: .box-note }
+**Note:** Parameters cannot be passed to service when running it in the web browser. Only data is displayed in the browser for services without input parameters.    
+
+To integrate a yunIO web service with a tool that supports Swagger/OpenApi, copy the code or download the service definition (2).
+
+![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
 
 *****
 #### Related Links
-- [Function Module](./bapi)
 - [SAP Table or Views](./table)
+- [Function Module](./bapi)
+
 

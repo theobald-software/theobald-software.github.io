@@ -11,12 +11,12 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server-einstellungen
 ---
 
-Dieser Abschnitt enthält Informationen über die YunIO Server-Einstellungen.<br>
+Dieser Abschnitt enthält Informationen über die yunIO Server-Einstellungen.<br>
 Öffnen Sie die Einstellungen unter dem Menüpunkt **Settings**. 
 Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 {: .box-note }
-**Hinweis:** Die vorgenommenen Änderungen werden durch den Neustart des YunIO-Servers aktiviert.
+**Hinweis:** Die vorgenommenen Änderungen werden durch den Neustart des yunIO-Servers aktiviert.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" width="800px"}
 
@@ -74,12 +74,12 @@ Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn die Transportv
 
 ### WebSockets
 
-Definieren Sie die Ports für die Kommunikation zwischen dem Designer und dem YunIO-Server.
+Definieren Sie die Ports für die Kommunikation zwischen dem Designer und dem yunIO-Server.
 
 ![WebSockets](/img/content/yunio/Settings_websockets.png){:class="img-responsive"}
 
 **HTTP port:**<br>
-Dieser Port wird für die Kommunikation zwischen dem Designer und dem YunIO-Server, wenn keine Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+Dieser Port wird für die Kommunikation zwischen dem Designer und dem yunIO-Server, wenn keine Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
 
 **HTTPS port:**<br>
-Dieser Port wird für die Kommunikation zwischen dem Designer und dem YunIO-Server, wenn die Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+Dieser Port wird für die Kommunikation zwischen dem Designer und dem yunIO-Server, wenn die Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
