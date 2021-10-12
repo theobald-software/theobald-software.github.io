@@ -128,6 +128,6 @@ Der Service wird dann direkt im Browser ausgeführt.
 Im Browser werden nur Daten ohne Eingabeparameter angezeigt.
 
 
-Um einen yunIO Web-Service in ein Prozessautomatisierungstool zu integrieren, sas Swagger/OpenAPI unterstützt, kopieren Sie den Code oder laden Sie die Definition des Services herunter (2).
+Um einen yunIO Web-Service in ein Prozessautomatisierungstool zu integrieren, das Swagger/OpenAPI unterstützt, kopieren Sie den Code oder laden Sie die Definition des Services herunter (2).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
