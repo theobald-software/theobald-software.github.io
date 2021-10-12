@@ -12,7 +12,7 @@ Nachdem Sie einen Extraktor gefunden haben, führen Sie die folgenden Schritte a
 
 1. Wählen Sie einen *Update Mode* aus (5). <br>
 Das **Full** Update fordert alle Daten an, die den von Ihnen eingestellten Auswahlkriterien entsprechen. 
-Um eine echte **Delta**-Prozedur zum Laufen zu bringen, muss das Delta zunächst initialisiert werden, siehe unter [Delta](./datasource-delta).<br>
+Um eine echte **Delta**-Prozedur zum Laufen zu bringen, muss das Delta zunächst initialisiert werden, siehe [Delta](./child-delta).<br>
 Für mehr Informationen zu den verfügbaren Aktualisierungsmodi, siehe [Update Mode](./update-modus).
 2. Setzen Sie die Häkchen neben den Spalten, die Sie extrahieren möchten (6).<br>
 ![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
