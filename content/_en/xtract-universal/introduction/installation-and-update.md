@@ -16,6 +16,8 @@ progressstate: 5
 {: .box-note }
 **Note:** administrator permissions are required to install Xtract Universal.
 
+{% include _content/en/requirements/productversion.md %}	
+
 ### Setup
 
 *XtractUniversalSetup.exe* is an industry standard setup. Execute the *XtractUniversalSetup.exe* file and follow the instructions of the setup.

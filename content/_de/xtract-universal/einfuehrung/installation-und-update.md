@@ -17,6 +17,8 @@ progressstate: 5
 {: .box-note }
 **Hinweis:** Administratorberechtigungen sind notwendig, um Xtract Universal zu installieren.
 
+{% include _content/de/einfuehrung/produktversion.md %}	
+
 ### Setup
 
 Die `XtractUniversalSetup.exe` ist ein branchenübliches Setup. Führen Sie die Datei *XtractUniversalSetup.exe* aus und folgen Sie den Anweisungen des Setups.
@@ -62,6 +64,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 
 {: .box-note }
 **Hinweis:** Mehr Details zum Starten von Xtract Universal Server als Konsolenprogramm, finden Sie im Knowledge-Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+
 
 ### Unbeaufsichtigte Installation 
 {% include _content/de/silent-setup.md %}	

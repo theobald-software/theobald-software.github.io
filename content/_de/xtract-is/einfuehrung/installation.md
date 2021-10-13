@@ -31,6 +31,9 @@ Stellen Sie sicher, dass Sie Xtract IS auf beiden Maschinentypen installieren:
 Um Xtract IS verwenden zu können, muss die Datei  *XtractISSetup.exe* in der lokalen Entwicklungsumgebung (Visual Studio oder SSDT)
 **und** auf dem  SSIS Server ausgeführt und installiert werden. Weitere Informationen finden Sie im Abschnitt [Lizenzierung](./lizenz-einspielen).
 
+
+{% include _content/de/einfuehrung/produktversion.md %}	
+
 ### Interaktive Installation
 
 Interaktive Installation ist die Standardprozedur mit GUI. Führen Sie die Datei *XtractISSetup.exe* aus und folgen Sie den Anweisungen des Setup-Programms. 

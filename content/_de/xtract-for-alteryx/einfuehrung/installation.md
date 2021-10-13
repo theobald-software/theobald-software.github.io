@@ -20,6 +20,8 @@ lang: de_DE
 Das Schließen des Alteryx-Designers stellt sicher, dass die Xtract for Alteryx Komponenten korrekt installiert sind.
 3. Öffnen Sie den Alteryx Designer erneut und prüfen Sie, ob Xtract for Alteryx Komponenten verfügbar sind.
 
+{% include _content/de/einfuehrung/produktversion.md %}	
+
 ### Installation von Xtract for Alteryx
 
 Das Installationsprogramm *XtractForAlteryxSetup.exe* ist ein branchenübliches Installationsprogramm. Führen Sie die Datei *XtractForAlteryxSetup.exe* aus und folgen Sie den Anweisungen des Installationsprogramms.<br>

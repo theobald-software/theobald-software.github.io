@@ -15,6 +15,8 @@ progressstate: 5
 {: .box-note }
 **Hinweis:** Administratorberechtigungen sind notwendig, um BOARD Connector zu installieren.
 
+{% include _content/de/einfuehrung/produktversion.md %}	
+
 ### Setup
 
 Die `BOARD ConnectorSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei *BOARD ConnectorSetup.exe* aus und folgen Sie den Anweisungen des Setups.
