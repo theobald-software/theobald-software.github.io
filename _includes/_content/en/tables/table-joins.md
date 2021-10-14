@@ -11,10 +11,11 @@ For more information on join types see [SAP Online help](https://help.sap.com/do
 
 
 {: .box-note }
-**Note**: To use table join, the function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) (version 2.10 or higher) needs to be available in SAP (release 7.40, SP05 or higher). <br> 
+**Note**: To use table join, the function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) needs to be available in SAP (release 7.40, SP05 or higher). 
+Version 1.x of the function module supports Inner Join, version 2.10 or higher support both Inner Join and Left Outer Join. <br> 
 
 {: .box-note }
-**Note**: joining of cluster or pool tables is not supported. Cluster or pool tables need to be extracted individually and joined in the destination.
+**Note**: Joining of cluster or pool tables is not supported. Cluster or pool tables need to be extracted individually and joined in the destination.
 
 
 ### Joining two Tables
