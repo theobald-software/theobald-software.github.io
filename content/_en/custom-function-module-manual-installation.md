@@ -44,7 +44,7 @@ Z_THEO_READ_TABLE (version 2.0 and newer) consists in total of 13 development ob
 1. This article assumes basic understanding of creating ABAP DDIC objects.
 2. All classes and interfaces should be created in class editor in **source code-based view**.
 3. All classes should have following settings:
-![Class-Settings](/img/contents/hidden/READ_TABLE_class-settings.jpg){:class="img-responsive" }
+![Class-Settings](/img/content/hidden/READ_TABLE_class-settings.jpg){:class="img-responsive" }
 4. Warnings that occur when creating classes can be ignored.
 5. The definitions of required structures, as well as the source code of all the classes, interfaces, 
 programs and function modules can be found in `Z_THEO_READ_TABLE-source.zip` file. The zip file is provided by Theobald Software upon request. 
@@ -74,7 +74,7 @@ objects need to be created AND activated in Z_THEO_READ_TABLE package in this ex
 Create the shared memory area and the shared memory root class:
 1. Open transaction SHMA
 2. Fill in the input fields as shown in the screenshot below:
-![Class-Settings](/img/contents/hidden/READ_TABLE_root-class.jpg){:class="img-responsive" }
+![Class-Settings](/img/content/hidden/READ_TABLE_root-class.jpg){:class="img-responsive" }
 3. After inputing the name of the root class, you will be prompted with a message that *ZCL_THEO_READ_TABLE_SHM_ROOT* does not exist and whether you want to create it now. Press **[Yes]**.
 4. After you input the class properties in the dialog and confirm it, the class editor will open.
 5. Switch to source code-based view and copy the source code of *ZCL_THEO_READ_TABLE_SHM_ROOT* into the editor, save it and activate the class. 
@@ -102,15 +102,15 @@ The source code required for the installation is provided by Theobald Software u
 Call transaction SE37 and create a new function module named "Z_XTRACT_IS_REMOTE_REPORT". You can use an existing function group or create a new one. 
 This is also valid for the development class (Package).<br> 
 3. In the tab *Attributes* check *Remote Enabled*. 
-![Report_function_attributes](/img/contents/hidden/report_function_attributes.png){:class="img-responsive"}
+![Report_function_attributes](/img/content/hidden/report_function_attributes.png){:class="img-responsive"}
 4. Define the following import parameters:
-![Report_function_import](/img/contents/hidden/report_function_import.png){:class="img-responsive"}
+![Report_function_import](/img/content/hidden/report_function_import.png){:class="img-responsive"}
 5. Define the following export parameters:
-![Report_function_export](/img/contents/hidden/report_function_export.png){:class="img-responsive"}
+![Report_function_export](/img/content/hidden/report_function_export.png){:class="img-responsive"}
 6. Define the following tables parameters:
-![Report_function_tables](/img/contents/hidden/report_function_tables.png){:class="img-responsive"}
+![Report_function_tables](/img/content/hidden/report_function_tables.png){:class="img-responsive"}
 7. Define the following exceptions:
-![Report_function_exceptions](/img/contents/hidden/report_function_exceptions.png){:class="img-responsive"}
+![Report_function_exceptions](/img/content/hidden/report_function_exceptions.png){:class="img-responsive"}
 8. Use **[Ctrl + C]** and **[Ctrl + V]** to paste the ABAP source code *Z_XTRACT_IS_REMOTE_REPORT* into the source code editor.
 9. Save the function module and activate it.
 
