@@ -11,7 +11,7 @@ For more information on join types see [SAP Online help](https://help.sap.com/do
 
 
 {: .box-note }
-**Note**: To use table join, the function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) needs to be available in SAP (release 7.40, SP05 or higher). 
+**Note**: To use table join, the function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) needs to be available in SAP. 
 Version 1.x of the function module supports Inner Join, version 2.10 or higher support both Inner Join and Left Outer Join. <br> 
 
 {: .box-note }

@@ -27,7 +27,6 @@ The following transport requests can be found in the ABAP subfolder of the insta
 - `Z_THEO_READ_TABLE-transport-before-740SP05.zip` - contains the custom function module for the *Table component*; <br>compatible with ABAP versions 6.40 to 7.40 SP04
 
 For more information on installing transport request, see the knowledge base article [How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms?fromSearch=true) or check the SAP help. <br>
-For more information on installing function modules manually, see the knowledge base article [Manual Installation of Custom Funtion Modules](https://kb.theobald-software.com/sap/custom-function-module-manual-installation).
 
 All objects that come with any of the transport requests, can be deleted by importing the Z_THEO_READ_TABLE-deletion_request.zip transport request.
 

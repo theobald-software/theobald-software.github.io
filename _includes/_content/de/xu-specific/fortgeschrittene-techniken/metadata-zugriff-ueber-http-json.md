@@ -185,6 +185,7 @@ Beispiel: <br>
             "source": "ec5",
             "destination": "parquet",
             "latestRun": {
+                "started": "20210219T132323.542Z",
                 "duration": "PT00H00M07.101S",
                 "rowsCount": 0,
                 "state": "FinishedErrors"
@@ -206,6 +207,7 @@ Beispiel: <br>
             "source": "ec5",
             "destination": "sqlserver",
             "latestRun": {
+                "started": "20210311T095741.184Z",
                 "duration": "PT00H07M03.024S",
                 "rowsCount": 1309110,
                 "state": "FinishedNoErrors"
@@ -227,6 +229,7 @@ Beispiel: <br>
             "source": "ec5",
             "destination": "http-csv",
             "latestRun": {
+                "started": "20210219T145568.237Z",
                 "duration": "PT00H00M24.433S",
                 "rowsCount": 18011,
                 "state": "FinishedNoErrors"
@@ -291,6 +294,7 @@ Beispiel: <br>
             "source": "MySAPBW",
             "destination": "flatfile",
             "latestRun": {
+                "started": "20210317T10552.653Z",
                 "duration": "PT00H00M01.049S",
                 "rowsCount": 1000,
                 "state": "FinishedNoErrors"

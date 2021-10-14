@@ -10,7 +10,7 @@ Unterstützte Join-Typen:
 Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Hilfe](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true).
 
 {: .box-note }
-**Hinweis**: Die Verwendung von Table Join ist mit dem Funktionsbaustein [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP ab Release 7.40, SP05 oder höher möglich. 
+**Hinweis**: Die Verwendung von Table Join ist mit dem Funktionsbaustein [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP möglich. 
 Version 1.x des Funktionsbausteins unterstützt Inner Join, ab Version 2.10 werden sowohl Inner Join als auch Left Outer Join unterstützt.<br> 
 
 {: .box-note }
