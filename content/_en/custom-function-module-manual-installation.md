@@ -2,6 +2,8 @@
 layout: page
 title: Manual Installation of Custom Function Modules
 description: Manual Installation of Custom Function Modules
+product: extras
+parent: extras
 permalink: /:collection/:path
 weight: 11
 lang: en_EN
