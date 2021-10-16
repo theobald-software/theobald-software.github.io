@@ -11,4 +11,7 @@ weight: 5
 lang: en_GB
 old_url: /Xtract-IS-for-Azure-EN/default.aspx?pageid=bapi
 ---
+
+test2
+
 {% include _content/en/xis-specific/bapi.md %}
