@@ -26,6 +26,7 @@ DataSources/Extractors [[SAPI](./odp/odp-extractors)] | - DataSources and Extrac
 {: .box-note }
 **Note:** Depending on the connected SAP source system there are differences in available provider context. 
 
+For more information on SAP ODP, see [SAP Wiki: Operational Data Provisioning (ODP) and Delta Queue (ODQ)](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646).
 
 ### Technical prerequisites
 
@@ -33,4 +34,6 @@ There are a few prerequisites that need to be fulfilled on the SAP side, when us
 - [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427)
 - [2232584 - Release of SAP extractors for ODP replication (ODP SAPI)](https://launchpad.support.sap.com/#/notes/2232584)
 - [1560241 - Release of DataSources for ODP data replication API](https://launchpad.support.sap.com/#/notes/1560241)
+- [2196500 - ODP Paketgröße kann nicht auf einen Wert unter 50 MB reduziert](https://launchpad.support.sap.com/#/notes/2196500/D)
+- [2191995 - ODQ Paketgröße kann nicht unter 50 MByte reduziert werden](https://launchpad.support.sap.com/#/notes/2191995/D)
 

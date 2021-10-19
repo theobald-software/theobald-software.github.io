@@ -26,9 +26,14 @@ DataSources/Extraktoren [[SAPI](./odp/odp-extractors)] | - DataSources und Extra
 {: .box-note }
 **Hinweis:** Abhängig vom angeschlossenen SAP-Quellsystem sind verschiedene Provider-Kontexte (Provider-Contexts) verfügbar.
 
+Für mehr Information über SAP ODP, siehe [SAP Wiki: Operational Data Provisioning (ODP) and Delta Queue (ODQ)](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646).
+
 ### Technische Voraussetzungen
 
 Es gibt einige Voraussetzungen, die auf der SAP-Seite erfüllt sein müssen, wenn ODP verwendet wird. SAP hat eine Reihe von Hinweisen veröffentlicht, die bei der Verwendung der Xtract ODP-Komponente gelten:
 - [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427/D)
 - [2232584 - Freigabe von SAP Extraktoren für ODP Replikation (ODP-SAPI)](https://launchpad.support.sap.com/#/notes/2232584/D)
-- [Freigabe von DataSources für das 'ODP data replication API'](https://launchpad.support.sap.com/#/notes/1560241/D)
+- [1560241 - Freigabe von DataSources für das 'ODP data replication API'](https://launchpad.support.sap.com/#/notes/1560241/D)
+- [2196500 - ODP Paketgröße kann nicht auf einen Wert unter 50 MB reduziert](https://launchpad.support.sap.com/#/notes/2196500/D)
+- [2191995 - ODQ Paketgröße kann nicht unter 50 MByte reduziert werden](https://launchpad.support.sap.com/#/notes/2191995/D)
+
