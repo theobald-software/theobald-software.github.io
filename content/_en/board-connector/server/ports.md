@@ -16,7 +16,7 @@ The BOARD Connector Server runs as a Windows service with the main process 'C:\P
 
 Listener Process| Default Port | Comment
 ------------ | ------------- | -------------
-*BCWebServer.exe* | 8097 (HTTP) and 8197 (HTTPS) | ports can be changed
+*Theobald.Bc.Web.Listener.exe* | 8097 (HTTP) and 8197 (HTTPS) | ports can be changed
 *BCConfigServer.exe* | 8096 | port can be changed
 *BCAPIServer.exe* | 8098 | port can not be changed, no encryption
 

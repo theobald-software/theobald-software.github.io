@@ -46,7 +46,7 @@ Execution is triggered by an HTTP request. The HTTP request is triggered from th
 
 The server runs as a Windows Service and the main process of the XU Service is BCService.exe. The Windows Service can be [managed](./server/start-server) via the Windows Services administration or the Task Manager.
 BCService.exe starts two listener processes:
-- BCWebServer.exe
+- Theobald.Bc.Web.Listener.exe
 - BCConfigServer.exe
 
 {: .box-tip }
@@ -62,17 +62,17 @@ BCConfigServer.exe waits for new connection requests from the designer.
 **Tip:** The BCConfigServer.exe logs its actions in log files. 
 The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\BOARD Connector\logs\server\config' (default).
 
-BCWebServer.exe waits for HTTP requests. 
+Theobald.Bc.Web.Listener.exe waits for HTTP requests. 
 
-For each TCP connection the BCWebServer.exe starts a new instance of BCRun.exe, which processes all HTTP requests coming in over the particular TCP connection.
+For each TCP connection the Theobald.Bc.Web.Listener.exe starts a new instance of Theobald.Bc.Web.Worker.exe, which processes all HTTP requests coming in over the particular TCP connection.
 
 {: .box-tip }
-**Tip:** The BCRun.exe logs its actions in the log subdirectory. 
+**Tip:** The Theobald.Bc.Web.Worker.exe logs its actions in the log subdirectory. 
 The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\BOARD Connector\logs\server\run` (default) 
 These are also the logs that can be displayed in the Designer under **[Server]>[Logs (Run)]**.
 
 {: .box-tip }
-**Tip:** The XtractWebServer.exe logs its actions in log files. 
+**Tip:** The Theobald.Xu.Web.Listener.exe logs its actions in log files. 
 The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\BOARD Connector\logs\server\web' (default).
 
 More information about the server can be found in the following sections:

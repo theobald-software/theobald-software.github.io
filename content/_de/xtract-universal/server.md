@@ -24,16 +24,16 @@ Der Server übernimmt zwei Hauptaufgaben:
 Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage kann bei [Pull-Destinationen](./destinationen#pull--und-push-destinationen) aus der Zielumgebung oder von dem xu-Kommandozeilen-Tool (xu.exe / xu.elf) gestartet werden, siehe [Extraktionen Ausführen und Einplanen](./extraktionen-ausfuehren-und-einplanen).<br> 
 Der Server-Prozess kann im [Extraktions-Log](./logging/log-zugriff-ueber-designer#extraktions-logs) nachvollzogen werden.
 
-1. XtractRun.exe prüft die Authentisierung und Autorisierung der Anfrage. 
+1. Theobald.Xu.Web.Worker.exe prüft die Authentisierung und Autorisierung der Anfrage. 
 2. Die Zielumgebung wird für das Schreiben der extrahierten Daten vorbereitet (z.B. Datenbakverbindung herstellen, Datei anlegen).
 3. Die Lizenz wird geprüft.
 4. Eine Verbindung zum in der Source definierten SAP-System wird hergestellt.
 5. Die Daten des definierten Extraktionstyps werden angefordert.
 6. Jedes extrahierte Datenpaket wird in die Zielumgebung geschrieben.
-7. Nachdem alle Pakete empfangen wurden, trennt XtractRun.exe die Verbindung zum SAP-System und informiert die Zielumgebung wird über den Abschluss der Extraktion.
+7. Nachdem alle Pakete empfangen wurden, trennt Theobald.Xu.Web.Worker.exe die Verbindung zum SAP-System und informiert die Zielumgebung wird über den Abschluss der Extraktion.
 
 {: .box-tip }
-**Tipp:** Die XtractRun.exe protokolliert ihre Aktionen in Log-Dateien. 
+**Tipp:** Die Theobald.Xu.Web.Worker.exe protokolliert ihre Aktionen in Log-Dateien. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:Program Files\XtractUniversal\logs\server\run` (standartmäßig). 
 Die Logs kann man sich auch im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen.
 
@@ -55,7 +55,7 @@ Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisse
 Der Server läuft als Windows-Service und der Hauptprozess von diesem Service ist XtractService.exe. Der Windows-Service kann über die Windows-Diensteverwaltung oder den Taskmanager [verwaltet](./server/server-starten) werden.
 
 XtractService.exe startet zwei Listener-Prozesse:
-- XtractWebServer.exe
+- Theobald.Xu.Web.Listener.exe
 - Theobald.Xu.Rpc.Listener.exe
 
 Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server_einstellungen) definiert sind.
@@ -73,10 +73,10 @@ Für jede TCP-Verbindung startet die Theobald.Xu.Rpc.Listener.exe eine neue Inst
 **Tipp:** Die Theobald.Xu.Rpc.Listener.exe protokolliert ihre Aktionen in Log-Dateien. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:\ProgramFiles\XtractUniversal\logs\server\rpc\listener` (Standard).
 
-#### XtractWebServer.exe
+#### Theobald.Xu.Web.Listener.exe
 
-XtractWebServer.exe wartet auf HTTP-Anfragen. <br>
-Für jede TCP-Verbindung startet die XtractWebServer.exe eine neue Instanz der XtractRun.exe, die alle über diese TCP-Verbindung eingehenden HTTP-Anfragen bearbeitet, siehe [Extraktion auf dem Server ausführen](#extraktion-auf-dem-server-ausführen).
+Theobald.Xu.Web.Listener.exe wartet auf HTTP-Anfragen. <br>
+Für jede TCP-Verbindung startet die Theobald.Xu.Web.Listener.exe eine neue Instanz der Theobald.Xu.Web.Worker.exe, die alle über diese TCP-Verbindung eingehenden HTTP-Anfragen bearbeitet, siehe [Extraktion auf dem Server ausführen](#extraktion-auf-dem-server-ausführen).
 
 Die folgenden HTTP-Anfragen sind möglich:
 - Ausführen einer Extraktion
@@ -85,7 +85,7 @@ Die folgenden HTTP-Anfragen sind möglich:
 - REST API-Anfragen z.B. [Logs](./logging/log-zugriff-ueber-http), [Metadaten](./fortgeschrittene-techniken/metadaten-zugriff-ueber-http) etc.
 
 {: .box-tip }
-**Tipp:** Die XtractWebServer.exe protokolliert ihre Aktionen in Log-Dateien. 
+**Tipp:** Die Theobald.Xu.Web.Listener.exe protokolliert ihre Aktionen in Log-Dateien. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\XtractUniversal\logs\server\web` (standartmäßig).
 
 *****

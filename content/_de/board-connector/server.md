@@ -26,7 +26,7 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 {: .box-tip }
 **Tipp:** Der Server-Prozess kann im [Extraktions-Log](./logging/log-zugriff-ueber-designer#extraktions-logs) nachvollzogen werden.
 
-1. BCRun.exe prüft die Authentisierung und Autorisierung der Anfrage. 
+1. Theobald.Bc.Web.Worker.exe prüft die Authentisierung und Autorisierung der Anfrage. 
 2. Die Zielumgebung wird für das Schreiben der extrahierten Daten vorbereitet (z.B. Datenbakverbindung herstellen, Datei anlegen).
 3. Die Lizenz wird geprüft.
 4. Eine Verbindung zum in der Source definierten SAP-System wird hergestellt.
@@ -48,7 +48,7 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 
 Der Server läuft als Windows-Service und der Hauptprozess von diesem Service ist BCService.exe. Der Windows-Service kann über die Windows-Diensteverwaltung oder den Taskmanager [verwaltet](./server/server-starten) werden.
 BCService.exe startet zwei Listener-Prozesse:
-- BCWebServer.exe
+- Theobald.Bc.Web.Listener.exe
 - BCConfigServer.exe
 
 {: .box-tip }
@@ -64,18 +64,18 @@ BCConfigServer.exe wartet auf neue Verbindungsanfragen vom Designer.
 **Tipp:** Die BCConfigServer.exe protokolliert ihre Aktionen in Log-Dateien. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\BOARD Connector\logs\server\config` (standartmäßig).
 
-BCWebServer.exe wartet auf HTTP-Anfragen. 
+Theobald.Bc.Web.Listener.exe wartet auf HTTP-Anfragen. 
 
-Für jede TCP-Verbindung startet die BCWebServer.exe eine neue Instanz der BCRun.exe, die alle über diese TCP-Verbindung eingehenden HTTP-Anfragen bearbeitet.
+Für jede TCP-Verbindung startet die Theobald.Bc.Web.Listener.exe eine neue Instanz der Theobald.Bc.Web.Worker.exe, die alle über diese TCP-Verbindung eingehenden HTTP-Anfragen bearbeitet.
 
 {: .box-tip }
-**Tipp:** Die BCRun.exe protokolliert ihre Aktionen in dem Log-Unterverzeichnis. 
+**Tipp:** Die Theobald.Bc.Web.Worker.exe protokolliert ihre Aktionen in dem Log-Unterverzeichnis. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:ProgramFiles\BOARD Connector\logs\server\run` (standartmäßig). 
 Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen kann.
 
 
 {: .box-tip }
-**Tipp:** Die BCWebServer.exe protokolliert ihre Aktionen in Log-Dateien. 
+**Tipp:** Die Theobald.Bc.Web.Listener.exe protokolliert ihre Aktionen in Log-Dateien. 
 Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\BOARD Connector\logs\server\web` (standartmäßig).
 
 Weitere Informationen zum Server finden Sie in den folgenden Abschnitten:

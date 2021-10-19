@@ -16,7 +16,7 @@ The Xtract Universal Server runs as a Windows service with the main process 'C:\
 
 Listener Process| Default Port
 ------------ | -------------
-*XtractWebServer.exe* | 8065 (HTTP) and 8165 (HTTPS)
+*Theobald.Xu.Web.Listener.exe* | 8065 (HTTP) and 8165 (HTTPS)
 *Theobald.Xu.Rpc.Listener.exe* | 8064
 
 {: .box-note }

@@ -50,8 +50,8 @@ The list below shows several most important files that are placed into the defau
 | BCDesigner.exe | Application that launches BOARD Connector Designer to create, test and monitor extractions.|
 | BCService.exe | Application that launches BOARD Connector Server as Windows Service.  Usually boots automatically and runs in the background. |
 | BCApiServer.exe| Unencrypted WCF service for retrieving metadata to the Designer.  |
-| BCWebServer.exe| BCWebServer.exe a listener process that waits for HTTP requests. |
-| BCRun.exe| For each TCP connection the BCWebServer.exe starts a new instance of BCRun.exe, which processes all HTTP requests coming in over the TCP connection. |
+| Theobald.Bc.Web.Listener.exe| Theobald.Bc.Web.Listener.exe a listener process that waits for HTTP requests. |
+| Theobald.Bc.Web.Worker.exe| For each TCP connection the Theobald.Bc.Web.Listener.exe starts a new instance of Theobald.Bc.Web.Worker.exe, which processes all HTTP requests coming in over the TCP connection. |
 | BCCleanup.exe| Application that cleans up the old server logs, as defined in the [server settings](../server/server-settings). |
 | BCConfigServer.exe| Listener process waits for new connection requests from the Designer. |
 | ConfigConverter.exe| Application that converts extractions, sources, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |

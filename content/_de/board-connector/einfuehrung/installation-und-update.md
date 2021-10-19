@@ -48,8 +48,8 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | BCDesigner.exe | Anwendung zum Starten von BOARD Connector Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
 | BCService.exe | Anwendung, die den BOARD Connector Server als einen Windows Service startet.  Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
 | BCApiServer.exe| Unverschlüsselter WCF-Service zum Abrufen von Metadaten durch den Designer.  |
-| BCWebServer.exe| BCWebServer.exe ein Listener-Prozess, der auf HTTP-Anfragen wartet. |
-| BCRun.exe| Für jede TCP-Verbindung startet die BCWebServer.exe eine neue Instanz von BCRun.exe, die alle über die TCP-Verbindung eingehenden HTTP-Requests abarbeitet. |
+| Theobald.Bc.Web.Listener.exe| Theobald.Bc.Web.Listener.exe ein Listener-Prozess, der auf HTTP-Anfragen wartet. |
+| Theobald.Bc.Web.Worker.exe| Für jede TCP-Verbindung startet die Theobald.Bc.Web.Listener.exe eine neue Instanz von Theobald.Bc.Web.Worker.exe, die alle über die TCP-Verbindung eingehenden HTTP-Requests abarbeitet. |
 | BCCleanup.exe| Anwendung, die die alten Server-Logs aufräumt, wie in den [Server-Einstellungen](../server/server_einstellungen) definiert. |
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von BOARD Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
