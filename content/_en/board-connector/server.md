@@ -72,7 +72,7 @@ The log files are located in the logs subdirectory of the program directory:`C:P
 These are also the logs that can be displayed in the Designer under **[Server]>[Logs (Run)]**.
 
 {: .box-tip }
-**Tip:** The XtractWebServer.exe logs its actions in log files. 
+**Tip:** TheTheobald.Xu.Web.Listener.exe logs its actions in log files. 
 The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\BOARD Connector\logs\server\web' (default).
 
 More information about the server can be found in the following sections:

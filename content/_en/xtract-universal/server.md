@@ -24,16 +24,16 @@ The server performs two main tasks:
 Execution is triggered by an HTTP request. The HTTP request can be triggered from the target environment for [pull destinations](./destinations#pull-and-push-destinations) or from the xu command line tool (xu.exe /xu.elf), see [Execute and Automate Extractions](./execute-and-automate-extractions).<br> 
 The process can be traced in the [Extraction Log](./logging/logging-access-via-designer#extraction-logs).
 
-1. XtractRun.exe checks the authentication and authorization of the request.
+1. Theobald.Xu.Web.Worker.exe checks the authentication and authorization of the request.
 2. The target environment is prepared for writing the extracted data (e.g. establish database connection, create file).
 3. The license is checked.
 4. A connection to the SAP system defined in the source is established.
 5. The data of the defined extraction type is requested.
 6. Each extracted data package is written to the target environment.
-7. After all packages are received, XtractRun.exe terminates the connection to the SAP system and informs the target environment that the extraction is complete.
+7. After all packages are received, Theobald.Xu.Web.Worker.exe terminates the connection to the SAP system and informs the target environment that the extraction is complete.
 
 {: .box-tip }
-**Tip:** The XtractRun.exe logs its actions in log files. 
+**Tip:** The Theobald.Xu.Web.Worker.exe logs its actions in log files. 
 The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\XtractUniversal\logs\server\run` (default) 
 The logs can also be displayed in the Designer under **[Server]>[Logs (Run)]**.
 
@@ -54,7 +54,7 @@ The log files are located in the logs subdirectory of the program directory: `C:
 The server runs as a Windows Service and the main process of the XU Service is XtractService.exe. The Windows Service can be [managed](./server/start-server) via the Windows Services administration or the Task Manager.
 
 XtractService.exe starts two listener processes:
-- XtractWebServer.exe
+-Theobald.Xu.Web.Listener.exe
 - Theobald.Xu.Rpc.Listener.exe
 
 The both listener processes listen on the [Ports](./server/ports) defined in the [Server Settings](./server/server-settings).
@@ -71,9 +71,9 @@ For each TCP connection the Theobald.Xu.Rpc.Listener.exe starts a new instance o
 **Tip:** The Theobald.Xu.Rpc.Listener.exe logs its actions in log files. 
 The log files are located in the logs subdirectory of the program directory: `C:\ProgramFiles\XtractUniversal\logs\server\rpc\listener` (default).
 
-#### XtractWebServer.exe
+####Theobald.Xu.Web.Listener.exe
 XtractWebServer.exe waits for HTTP requests. <br>
-For each TCP connection the XtractWebServer.exe starts a new instance of XtractRun.exe, which processes all HTTP requests coming in over the particular TCP connection, see [Run Extraction on the Server](#run-extraction-on-the-server).
+For each TCP connection theTheobald.Xu.Web.Listener.exe starts a new instance of Theobald.Xu.Web.Worker.exe, which processes all HTTP requests coming in over the particular TCP connection, see [Run Extraction on the Server](#run-extraction-on-the-server).
 
 The following HTTP requests are possible:
 - Executing an extraction
@@ -82,7 +82,7 @@ The following HTTP requests are possible:
 - REST API requests e.g., [Logs](./logging/logging-access-via-http), [Metadata](./advanced-techniques/metadata-access-via-http) etc.
 
 {: .box-tip }
-**Tip:** The XtractWebServer.exe logs its actions in log files. 
+**Tip:** TheTheobald.Xu.Web.Listener.exe logs its actions in log files. 
 The log files are located in the logs subdirectory of the program directory: `C:ProgramFiles\XtractUniversal\logs\server\web` (default).
 
 *****
