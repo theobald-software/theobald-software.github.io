@@ -5,6 +5,10 @@ Eine SAP-Verbindung ist über Single-Sign-On (SSO) mit SAP Logon Ticket möglich
 Es gibt eine AS Java Instanz, welche für SPNEGO/Kerberos Authentisierung eingerichtet ist. Auf dieser Instanz besteht ein Mapping von Windows AD-Benutzern auf SAP-Benutzer (== Ticket Issuer).
 Die AS ABAP Instanzen (mit denen sich Xtract-Produkte verbinden) vertrauen den SAP Logon Tickets dieser AS Java Instanz.
 
+{: .box-note }
+**Hinweis:** Ab Xtract Universal Version 5.0 werden SAP Passwörter anhand eines Schlüssels verschlüsselt, der von dem Windows Dienstkonto abgeleitet wird, unter dem der Xtract Universal Dienst läuft.
+Auf die Passwörter kann man nur von diesem Dienstkonto aus zugreifen. Achten Sie darauf, wenn Sie Backups aufspielen oder Dateien auf eine andere Maschine verschieben.
+Wenn Sie das Dienstkonto wechseln, müssen Sie Passwörter manuell neu eingeben.
 
 ### Ablauf
 1. Beim Ausführen der Extraktion authentisiert sich der Benutzer gegenüber dem XU oder BOARD Connector Server (weiter genannt nur Sever) per Kerberos/SPNEGO.

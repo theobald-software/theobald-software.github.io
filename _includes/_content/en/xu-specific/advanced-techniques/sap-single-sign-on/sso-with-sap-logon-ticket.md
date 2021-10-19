@@ -6,6 +6,10 @@ A Single-Sign-On (SSO) connection to SAP can be set up using SAP Logon Ticket. I
 You have an AS Java instance set up that is configured for SPNEGO/Kerberos authentication. Within this AS Java instance there is a mapping between Windows AD users and SAP users (== ticket issuer).
 You have trust set up between your AS ABAP instance (the SAP system Xtract product is extracting data from) and above AS Java instance so that AS ABAP trusts SAP logon tickets issued by AS Java.
 
+{: .box-note }
+**Note:** As of Xtract Universal version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the XU service.
+The passwords can only be accessed from the same service account, when restoring a backup or moving the files to a different machine. 
+If the service account changes, passwords need to be re-entered manually.
 
 ### Process
 1. When running an extraction, the user authenticates to the XU or BOARD Connector server (further referred as only server) via SPNEGO/Kerberos.

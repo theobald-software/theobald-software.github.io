@@ -9,6 +9,10 @@ In the following scenarios the service must run under a dedicated Windows domain
 
 This section describes how to run the Xtract Universal service under a service account.
 
+{: .box-note }
+**Note:** As of Xtract Universal version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the XU service.
+The passwords can only be accessed from the same service account, when restoring a backup or moving the files to a different machine. 
+If the service account changes, passwords need to be re-entered manually.
 
 ### Basic settings
 

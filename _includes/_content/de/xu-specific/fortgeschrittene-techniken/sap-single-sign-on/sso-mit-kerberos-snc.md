@@ -23,6 +23,11 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 Wenn SSO mit Kerberos SNC verwendet wird, muss der Xtract Universal Service unter einem entsprechenden Service Account ausgeführt werden.
 Die Vorgehensweise ist in [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account) beschrieben.
 
+{: .box-note }
+**Hinweis:** Ab Xtract Universal Version 5.0 werden SAP Passwörter anhand eines Schlüssels verschlüsselt, der von dem Windows Dienstkonto abgeleitet wird, unter dem der Xtract Universal Dienst läuft.
+Auf die Passwörter kann man nur von diesem Dienstkonto aus zugreifen. Achten Sie darauf, wenn Sie Backups aufspielen oder Dateien auf eine andere Maschine verschieben.
+Wenn Sie das Dienstkonto wechseln, müssen Sie Passwörter manuell neu eingeben.
+
 ### Servereinstellungen
 
 {: .box-warning}

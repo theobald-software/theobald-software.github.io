@@ -21,6 +21,11 @@ ABAP application server has to run on a Windows OS and SNC with Kerberos encrypt
 Using SSO with Kerberos SNC, the Xtract Universal service must run under a dedicated service account.  
 To do so, follow the steps as outlined in [Running the Xtract Universal Service under a Windows Service Account](../service-account).
 
+{: .box-note }
+**Note:** As of Xtract Universal version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the XU service.
+The passwords can only be accessed from the same service account, when restoring a backup or moving the files to a different machine. 
+If the service account changes, passwords need to be re-entered manually.
+
 ### Server Settings
 
 {: .box-warning}

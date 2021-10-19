@@ -8,6 +8,10 @@ In den folgenden Szenarien muss der Dienst stattdessen unter einem Windows Diens
 
 Dieser Abschnitt enthält Informationen darüber, wie man den Xtract Universal Dienst unter einem Dienstkonto ausführt.
 
+{: .box-note }
+**Hinweis:** Ab Xtract Universal Version 5.0 werden SAP Passwörter anhand eines Schlüssels verschlüsselt, der von dem Windows Dienstkonto abgeleitet wird, unter dem der Xtract Universal Dienst läuft.
+Auf die Passwörter kann man nur von diesem Dienstkonto aus zugreifen. Achten Sie darauf, wenn Sie Backups aufspielen oder Dateien auf eine andere Maschine verschieben.
+Wenn Sie das Dienstkonto wechseln, müssen Sie Passwörter manuell neu eingeben.
 
 ### Allgemeine Einstellungen
 
