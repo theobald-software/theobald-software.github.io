@@ -34,6 +34,6 @@ There are a few prerequisites that need to be fulfilled on the SAP side, when us
 - [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427)
 - [2232584 - Release of SAP extractors for ODP replication (ODP SAPI)](https://launchpad.support.sap.com/#/notes/2232584)
 - [1560241 - Release of DataSources for ODP data replication API](https://launchpad.support.sap.com/#/notes/1560241)
-- [2196500 - ODP Paketgröße kann nicht auf einen Wert unter 50 MB reduziert](https://launchpad.support.sap.com/#/notes/2196500/D)
-- [2191995 - ODQ Paketgröße kann nicht unter 50 MByte reduziert werden](https://launchpad.support.sap.com/#/notes/2191995/D)
+- [2196500 - ODP Package size cannot be reduced below 50 MB](https://launchpad.support.sap.com/#/notes/2196500/D)
+- [2191995 - ODQ Package Size cannot be reduced below 50 MByte](https://launchpad.support.sap.com/#/notes/2191995/D)
 
