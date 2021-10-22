@@ -121,7 +121,7 @@ Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie 
 
 ### Aktualisieren von Hauptversionen (Major Releases) - ConfigConverter
 
-Es gibt zwei Möglichkeiten, die Produktversion von XU 2.x und 3.x auf XU 4.x zu aktualisieren:
+Es gibt zwei Möglichkeiten Produktversion zu aktualisieren, z.B von XU 4.x zu XU 5.x:
 - Upgrade während der Installation
 - Manuelles Upgrade
 

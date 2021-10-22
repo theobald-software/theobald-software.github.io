@@ -117,7 +117,7 @@ knowledge base to check, if an update is needed.
 
 ### Upgrading Major Releases - ConfigConverter
 
-There are two ways of upgrading the product version from XU 2.x and 3.x to XU 4.x:
+There are two ways of upgrading the product version e.g, from XU 4.x to 5.x:
 - Upgrade during installation
 - Manual upgrade
 
