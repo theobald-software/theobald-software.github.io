@@ -57,7 +57,3 @@ Um eine Selektion zu löschen, klicken Sie auf den Button in der linken unteren 
 | "]["       | nicht zwischen (Intervall) | 
 | " * "    | enthält | 
 
-
-{: .box-note }
-**Hinweis:** Um Variablen als Selektionsparameter zu verwenden, stellen Sie vor den Namen der Variable ein @-Symbol.
-

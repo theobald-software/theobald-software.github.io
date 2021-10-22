@@ -55,5 +55,3 @@ To delete a selection, click the button in the bottom left corner (6).
 | "]["       | not between (Intervall) | 
 | " * "    | contains pattern (Like) | 
 
-{: .box-note }
-**Note**: To use variable as selection parameters, add an @-symbol before the variable name.
