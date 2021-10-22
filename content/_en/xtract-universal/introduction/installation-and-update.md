@@ -117,7 +117,7 @@ knowledge base to check, if an update is needed.
 
 ### Upgrading Major Releases - ConfigConverter
 
-There are two ways of upgrading the product version e.g, from XU 4.x to 5.x:
+There are two ways of upgrading the product version:
 - Upgrade during installation
 - Manual upgrade
 
@@ -125,7 +125,7 @@ There are two ways of upgrading the product version e.g, from XU 4.x to 5.x:
 #### Upgrade During Installation
 1. Start the Xtract Universal setup.
 2. Make sure to mark the checkbox **Convert config files** checkbox. <br>
-The option *Convert config files* starts the *ConfigConverter* application, which ensures that all extractions, source systems, destinations, server and user settings from XU 2.x or 3.x are available in the new version. <br> 
+The option *Convert config files* starts the *ConfigConverter* application, which ensures that all extractions, source systems, destinations, server and user settings are available in the new version. <br> 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 3. Confirm the conversion process in the command line pop-up window.  
 ![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"}

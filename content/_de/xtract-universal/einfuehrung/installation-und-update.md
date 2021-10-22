@@ -121,7 +121,7 @@ Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie 
 
 ### Aktualisieren von Hauptversionen (Major Releases) - ConfigConverter
 
-Es gibt zwei Möglichkeiten Produktversion zu aktualisieren, z.B von XU 4.x zu XU 5.x:
+Es gibt zwei Möglichkeiten Produktversion zu aktualisieren:
 - Upgrade während der Installation
 - Manuelles Upgrade
 
@@ -129,7 +129,8 @@ Es gibt zwei Möglichkeiten Produktversion zu aktualisieren, z.B von XU 4.x zu X
 #### Upgrade während der Installation
 1. Starten Sie das Xtract Universal Setup.
 2. Markieren Sie die Checkbox **Convert config files**. <br>
-Die Option *Convert config files* startet die *ConfigConverter*-Anwendung, die sicherstellt, dass alle Extraktionen, Quellsysteme (Source Systems), Destinationen sowie Server- und Benutzereinstellungen von XU 2.x oder 3.x in der neuen Version verfügbar sind. <br> 
+Die Option *Convert config files* startet die *ConfigConverter*-Anwendung, die sicherstellt, dass alle Extraktionen, Quellsysteme (Source Systems), 
+Destinationen sowie Server- und Benutzereinstellungen in der neuen Version verfügbar sind. <br> 
 ![XU-Setup](/img/content/xu/XU_Setup_2.png){:class="img-responsive"}
 3. Bestätigen Sie den Konvertierungsprozess im Pop-up-Fenster der Kommandozeile.
 ![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"}

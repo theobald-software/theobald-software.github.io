@@ -157,8 +157,12 @@ Parameteränderungen werden im Query string angezeigt (7). Ungültige Eingaben w
 ![Report-Wizard](/img/content/xu/ssrs/Report-Wizard.png){:class="img-responsive"}
 10. Richten Sie den Report entsprechend Ihrer Anwendung ein und beenden Sie den Report-Assistenten.
 
-Nachdem der Report erstellt wurde, können Sie auf den Query Builder zugreifen, indem Sie unter *Report Data* über Rechtklick auf *Dataset* **Query...** auswählen. 
+Nachdem der Report erstellt wurde, können Sie auf den Query Builder zugreifen, indem Sie unter *Report Data* über Rechtsklick auf *Dataset* **Query...** auswählen. 
 
+{: .box-tip }
+**Tipp:** Das Durchreichen des (Windows) Users, der den Bericht auf dem Report Server oder bei der Entwicklung in Visual Studio ausführt, wird unterstützt. 
+Single Sign On in SAP ist über diesen Weg ebenfalls möglich.
+Voraussetzung hierfür ist die Einrichtung der [Web Server Authentifizierung](../server/server_einstellungen#web-server) in Xtract Universal bzw. die Einrichtung des [Single Sign On](../fortgeschrittene-techniken/sap-single-sign-on).
 
 ### Parametrisierung
 
