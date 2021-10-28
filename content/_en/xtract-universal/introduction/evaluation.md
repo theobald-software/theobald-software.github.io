@@ -18,7 +18,7 @@ The trial version is only time limited and works otherwise without any restricti
 
 ### Evaluating Xtract Unversal
 You are guaranteed to get an unrestricted support by the Theobald Software support team during the evaluation phase.
-In case of any questions or doubts, feel free to contact Theobald Software by e-mail or phone at any time: <br>
+In case of any questions or doubts, feel free to contact Theobald Software by e-mail: <br>
 - [support@theobald-software.com](mailto:support@theobald-software.com)
 - [International contact details](https://theobald-software.com/en/contact/)
 - [Setting Up Xtract Universal](/docs/sap-customizing/Requirements_SAPConnectors_v1.0.pdf){:download="Requirements_SAPConnectors"}

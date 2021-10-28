@@ -17,4 +17,3 @@ Gerne stehen wir Ihnen jederzeit telefonisch oder per Mail f√ºr Fragen zur Verf√
 
 [support@theobald-software.com](mailto:support@theobald-software.com)<br>
 [www.theobald-software.com](https://www.theobald-software.com)
-Telefon: +49 711 46 05 99 0

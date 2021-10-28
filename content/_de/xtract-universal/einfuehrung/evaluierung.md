@@ -18,7 +18,7 @@ Die Testversion ist nur zeitlich begrenzt und funktioniert ansonsten uneingeschr
 
 ### Evaluieren von Xtract Unversal
 Während der Evaluierungsphase erhalten Sie garantiert eine uneingeschränkte Unterstützung durch das Theobald Software Support-Team.
-Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail oder Telefon an Theobald Software wenden: <br>
+Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail an Theobald Software wenden: <br>
 - [support@theobald-software.com](mailto:support@theobald-software.com)
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
 - [Xtract Universal Einrichtung](/docs/sap-customizing/VoraussetzungUndBetriebSAPKonnektoren_v202110.pdf){:download="VoraussetzungUndBetriebSAPKonnektoren_v202110"}
