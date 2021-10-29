@@ -30,13 +30,21 @@ Um die reguläre Lizenz zu installieren, legen Sie die XtractUniversalLicense.js
 
 Ein Neustart des Xtract Universal Service ist nicht notwendig.
 
+
+### Lizenzen auf einen neuen Server übertragen
+Da Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
+Kontaktieren Sie Ihren zuständigen Vertrieb und teilen Sie uns den Namen des neuen Servers mit. 
+Installieren Sie auf Ihren neuen Server die aktuelle Xtract Universal Version zusammen mit Ihrer neuen Lizenz.
+
+Um bestehende Einstellungen und Extraktionen auf dem neuen Server zu übernehmen, kopieren Sie den `Config`-Ordner aus Ihrem alten Installationsverzeichnis in das neue Installationsverzeichnis.
+
+
 ### About Xtract Universal - Info-Fenster
 
 {: .box-tip }
 **Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom Xtract Universal Designer  **[Help] > [Info]** oder drücken Sie F12.<br>
 
 ![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
-
 
 ### Wartung
 Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/xtract-universal/preise-und-bestellungen/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>

@@ -33,6 +33,14 @@ Ein Neustart des BOARD Connector Service ist nicht notwendig.
 
 In früheren Versionen von BOARD Connector wurde die Lizenz in Form einer .dll-Datei ausgeliefert. Die Prozedur zum Ersetzen einer .dll-Datei-Lizenz ähnelt der Prozedur der .json-Datei. Der Neustart des BOARD Connector Service ist bei einer .dll-Datei unabdingbar.
 
+### Lizenzen auf einen neuen Server übertragen
+Da Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
+Kontaktieren Sie Ihren zuständigen Vertrieb und teilen Sie uns den Namen des neuen Servers mit. 
+Installieren Sie auf Ihren neuen Server die aktuelle BOARD Connector Version zusammen mit Ihrer neuen Lizenz.
+
+Um bestehende Einstellungen und Extraktionen auf dem neuen Server zu übernehmen, kopieren Sie den `Config`-Ordner aus Ihrem alten Installationsverzeichnis in das neue Installationsverzeichnis.
+
+
 ### Wartung
 Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/board-connector/board-connector-preise-und-bestellungen/) von Theobald Software. Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
 Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).

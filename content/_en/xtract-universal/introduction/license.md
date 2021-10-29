@@ -30,6 +30,13 @@ For installing the regular license, place the regular XtractUniversalLicense.jso
  
 A restart of the Xtract Universal service is not necessary.
 
+### Moving a License to a new Server
+Because licenses are linked to a server name, you need a new license when moving to a new server.
+Contact your Theobald Software distributor to let us know the name of the new server.
+Install the latest version of Xtract Universal together with your new license.
+
+To keep the settings and extractions of your current setup, copy the `Config` folder from your current server to the installation directory of the new server.
+
 ### About Xtract Universal - Info Window
 
 {: .box-tip }
