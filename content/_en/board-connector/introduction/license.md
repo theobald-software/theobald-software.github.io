@@ -34,10 +34,10 @@ A restart of the BOARD Connector service is no longer necessary.
 In erarlier versions BOARD Connector license files were delivered as .dll files. The procedure for replacing a .dll file license is similar to the .json file procedure, but a restart of the BOARD Connector service is required.
 
 ### Moving a License to a new Server
-Because licenses are linked to a server name, you need a new license when moving to a new server.
+When moving your setup to a new server, a new license file must be issued for that server.
 Contact your Theobald Software distributor to let us know the name of the new server.
-Install the latest version of Xtract Universal together with your new license.
 
+Install the latest version of BOARD Connector together with your new license.
 To keep the settings and extractions of your current setup, copy the `Config` folder from your current server to the installation directory of the new server.
 
 ### Maintenance
