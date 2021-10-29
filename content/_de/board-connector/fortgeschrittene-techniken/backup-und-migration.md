@@ -74,6 +74,10 @@ Für eine vollständige Migration können Sie das gesamte `config`-Verzeichnis a
 Sie können alternativ Teile des Backups wiederherstellen, indem Sie z.B. nur die Extractions-Verzeichnisse kopieren.
 3. Starten Sie den [BOARD Connector Service](../server/server-starten) neu, wenn Sie eine vollständige Migration durchführen oder das Verzeichnis `server` auf die andere Maschine kopieren.
 
+{: .box-note }
+**Hinweis**: Da BOARD Connector-Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
+Kontaktieren Sie dafür unseren [Vertrieb](mailto:sales@theobald-software.com).
+
 ****
 #### Weiterführende Links
 - [Installation und Update](../einfuehrung/installation-und-update)

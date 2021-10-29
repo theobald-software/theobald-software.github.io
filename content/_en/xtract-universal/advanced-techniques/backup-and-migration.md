@@ -76,6 +76,10 @@ For a full migration you can restore the entire `config` directory on the differ
 You can alternatively restore parts of the backup, by copying e.g., only the destinations or extractions directories.
 3. Restart the [Xtract Universal Service](../server/start-server), when performing a full migration or copying the `server` directory onto the different machine.
 
+{: .box-note }
+**Note**: When migrating to a new server, a new license file must be issued for that server.
+Contact our [Sales team](mailto:sales@theobald-software.com) for more information.
+
 ****
 #### Related Links
 - [Installation and Update](../introduction/installation-and-update)

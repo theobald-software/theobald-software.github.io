@@ -34,8 +34,8 @@ A restart of the Xtract Universal service is not necessary.
 When moving your setup to a new server, a new license file must be issued for that server.
 Contact our [Sales team](mailto:sales@theobald-software.com) to let us know the name of the new server.
 
-Install the latest version of Xtract Universal together with your new license.
-To keep the settings and extractions of your current setup, copy the `Config` folder from your current server to the installation directory of the new server.
+For more information on the migration process, see [Migration to a Different Machine](../advanced-techniques/backup-and-migration#migration-to-a-different-machine).
+
 ### About Xtract Universal - Info Window
 
 {: .box-tip }

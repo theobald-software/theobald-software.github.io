@@ -75,6 +75,10 @@ Für eine vollständige Migration können Sie das gesamte `config`-Verzeichnis a
 Sie können alternativ Teile des Backups wiederherstellen, indem Sie z.B. nur die Destinations- oder Extractions-Verzeichnisse kopieren.
 3. Starten Sie den [Xtract Universal Service](../server/server-starten) neu, wenn Sie eine vollständige Migration durchführen oder das Verzeichnis `server` auf die andere Maschine kopieren.
 
+{: .box-note }
+**Hinweis**: Da Xtract Universal-Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
+Kontaktieren Sie dafür unseren [Vertrieb](mailto:sales@theobald-software.com).
+
 ****
 #### Weiterführende Links
 - [Installation und Update](../einfuehrung/installation-und-update)
