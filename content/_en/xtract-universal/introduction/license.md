@@ -32,7 +32,7 @@ A restart of the Xtract Universal service is not necessary.
 
 ### Moving a License to a new Server
 When moving your setup to a new server, a new license file must be issued for that server.
-Contact our [Sales team](mailto:sales@theobald-software.com) to let us know the name of the new server.
+Contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com) to let us know the name of the new server.
 
 For more information on the migration process, see [Migration to a Different Machine](../advanced-techniques/backup-and-migration#migration-to-a-different-machine).
 

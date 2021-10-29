@@ -77,7 +77,7 @@ You can alternatively restore parts of the backup, by copying e.g., only the des
 
 {: .box-note }
 **Note**: When migrating to a new server, a new license file must be issued for that server.
-Contact our [Sales team](mailto:sales@theobald-software.com) for more information.
+Contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com) for more information.
 
 ****
 #### Related Links

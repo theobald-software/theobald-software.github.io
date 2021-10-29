@@ -76,7 +76,7 @@ Sie können alternativ Teile des Backups wiederherstellen, indem Sie z.B. nur di
 
 {: .box-note }
 **Hinweis**: Da BOARD Connector-Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
-Kontaktieren Sie dafür unseren [Vertrieb](mailto:sales@theobald-software.com).
+Kontaktieren Sie dafür unseren Vertrieb unter [sales@theobald-software.com](mailto:sales@theobald-software.com).
 
 ****
 #### Weiterführende Links
