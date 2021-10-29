@@ -33,7 +33,7 @@ Ein Neustart des Xtract Universal Service ist nicht notwendig.
 
 ### Lizenzen auf einen neuen Server übertragen
 Da Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
-Kontaktieren Sie Ihren zuständigen Vertrieb und teilen Sie uns den Namen des neuen Servers mit. 
+Kontaktieren Sie unseren [Vertrieb](mailto:sales@theobald-software.com) und teilen Sie uns den Namen des neuen Servers mit. 
 Installieren Sie auf Ihren neuen Server die aktuelle Xtract Universal Version zusammen mit Ihrer neuen Lizenz.
 
 Um bestehende Einstellungen und Extraktionen auf dem neuen Server zu übernehmen, kopieren Sie den `Config`-Ordner aus Ihrem alten Installationsverzeichnis in das neue Installationsverzeichnis.

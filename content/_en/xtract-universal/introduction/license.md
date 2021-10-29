@@ -32,7 +32,7 @@ A restart of the Xtract Universal service is not necessary.
 
 ### Moving a License to a new Server
 When moving your setup to a new server, a new license file must be issued for that server.
-Contact your Theobald Software distributor to let us know the name of the new server.
+Contact our [Sales team](mailto:sales@theobald-software.com) to let us know the name of the new server.
 
 Install the latest version of Xtract Universal together with your new license.
 To keep the settings and extractions of your current setup, copy the `Config` folder from your current server to the installation directory of the new server.
