@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=erste-schritte-mit-ecs-core-und-sharepoint-online
 ---
 
-Dieses Beispiel zeigt, wie Sie Daten aus einem on-premise SAP-System in SharePoint Online (Office 365) mit Hilfe von ECS Core integrieren. Folgende Werkzeuge werden außerdem verwendet: Napa Office 365 Development Tools und das Azure Portal.
+Dieses Beispiel zeigt, wie Sie Daten aus einem On-Premises SAP-System in SharePoint Online (Office 365) mit Hilfe von ECS Core integrieren. Folgende Werkzeuge werden außerdem verwendet: Napa Office 365 Development Tools und das Azure Portal.
 
 ECS Core ermöglicht eine Integration mit SAP, sowohl lesend als auch schreibend. Dieses Beispiel zeigt, wie man SAP-Daten nach SharePoint Online transferiert. 
 
@@ -93,7 +93,7 @@ Fügen Sie nun den Code für die Funktion GetSAPData() nach der Funktion $(docum
 
 ![ecscore-gettingstarted-07](/img/content/ecscore-gettingstarted-07.png){:class="img-responsive"}
 
-Schauen wir uns nun den Code näher an, mit dem wir auf das on-premise SAP-System über Azure Relay und ECS Core zugreifen:
+Schauen wir uns nun den Code näher an, mit dem wir auf das On-Premises SAP-System über Azure Relay und ECS Core zugreifen:
 - connection.ecs.coreApiKey ist der API Key aus Ihrer ECS Core Installation.
 - instance: ist der Name der gepflegten SAP-Verbindung in ECS Core.
 - connection.ecs.url ist der Azure Relay Name für ECS Core

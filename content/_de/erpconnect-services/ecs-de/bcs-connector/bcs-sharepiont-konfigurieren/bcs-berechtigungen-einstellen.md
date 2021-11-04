@@ -59,6 +59,6 @@ Bestätigen Sie durch *OK*, um die Änderungen zu übernehmen.
 
 Schließen Sie das *SharePoint Central Administration* Fenster.
 
-Berechtigungen für den Metadatenspeicher (MS Technet): [Festlegen von Berechtigungen für den BCS-Metadatenspeicher für eine lokale Business Connectivity Services-Lösung](https://docs.microsoft.com/en-us/SharePoint/administration/deploy-an-on-premises-solution)
+Berechtigungen für den Metadatenspeicher (MS Technet): [Festlegen von Berechtigungen für den BCS-Metadatenspeicher für eine lokale Business Connectivity Services-Lösung](https://docs.microsoft.com/en-us/SharePoint/administration/deploy-an-On-Premisess-solution)
 
 

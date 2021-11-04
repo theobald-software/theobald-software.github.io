@@ -29,7 +29,7 @@ Wenn Ihr SharePoint-Server noch nicht bereits für Zugriff über das Internet ko
 ![XU_Sharepoint_Dest](/img/content/XU_Sharepoint_Dest.png){:class="img-responsive"}
 
 
-**SharePoint On-Premise oder SharePoint Online**<br>
+**SharePoint On-Premises oder SharePoint Online**<br>
 Wählen Sie hier die SharePoint-Umgebung aus, in die Sie exportieren.
 
 **Site URL**<br>

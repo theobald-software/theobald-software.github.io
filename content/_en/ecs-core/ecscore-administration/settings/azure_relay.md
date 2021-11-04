@@ -10,11 +10,11 @@ weight: 4
 lang: en_GB
 ---
 
-**Azure Relay** is a service that is based on the *Azure Service Bus* and with which it is possible to tunnel on-premise web services through the firewall into the cloud. 
+**Azure Relay** is a service that is based on the *Azure Service Bus* and with which it is possible to tunnel on-premises web services through the firewall into the cloud. 
 
 With the help of Azure Relay you can set up a secure system environment, decoupled from your business system with ECS Core and SAP.
 Azure Relay connects to a dedicated server via TCP and provides an endpoint that is visible to client applications. This endpoint can be used for data exchange with ECS Core and your SAP system. 
-The advantage of such a system architecture is that no ports need to be opened from the cloud to the SAP system installed on-premise. 
+The advantage of such a system architecture is that no ports need to be opened from the cloud to the SAP system installed on-premises. 
 
 {: .box-tip }
 **Important note**: To use this functionality, a standard Tier Subscription for Microsoft Azure is required, which is not included in ECS Core. Only the registration with Azure Relay is supported, not Azure Service Bus. 

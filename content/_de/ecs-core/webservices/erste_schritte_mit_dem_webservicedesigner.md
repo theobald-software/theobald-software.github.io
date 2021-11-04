@@ -14,6 +14,6 @@ old_url: /ECS-Core-DE/default.aspx?pageid=erste_schritte_mit_dem_webservicedesig
 
 Die nachfolgenden Abschnitt geben Ihnen eine Einführung in die Funktionsweise des WebService Designers.
 
-Die Grundlagen zur Erstellung von Webservices mit dem WebService Designer sind ausführlich in unserer OnlineHelp unter [Erste Schritte mit dem WebService Designer](../webservices/erste_schritte_mit_dem_webservicedesigner) beschrieben and treffen auf Webservices für SharePoint On-Premise und Cloud-Anwendungen gleichermaßen zu.  
+Die Grundlagen zur Erstellung von Webservices mit dem WebService Designer sind ausführlich in unserer OnlineHelp unter [Erste Schritte mit dem WebService Designer](../webservices/erste_schritte_mit_dem_webservicedesigner) beschrieben and treffen auf Webservices für SharePoint On-Premises und Cloud-Anwendungen gleichermaßen zu.  
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

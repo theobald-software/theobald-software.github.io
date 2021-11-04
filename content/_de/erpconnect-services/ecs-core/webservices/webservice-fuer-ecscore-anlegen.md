@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=webservice-fuer-ecscore-anlegen
 ---
 
-Die Grundlagen zur Erstellung von Webservices mit dem WebService Designer sind ausführlich in unserer OnlineHelp unter [WebService Designer](../../ecs-de/webservice-designer) beschrieben and treffen auf Webservices für SharePoint On-Premise und Cloud-Anwendungen gleichermaßen zu.  
+Die Grundlagen zur Erstellung von Webservices mit dem WebService Designer sind ausführlich in unserer OnlineHelp unter [WebService Designer](../../ecs-de/webservice-designer) beschrieben and treffen auf Webservices für SharePoint On-Premises und Cloud-Anwendungen gleichermaßen zu.  
 
 Bei der Erstellung von Webservices für ECS Core gibt es Besonderheiten zu beachten, auf die wir im Folgenden näher eingehen werden.
 

@@ -15,7 +15,7 @@ ECS Core enables a simple SAP integration without any programming with the follo
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 
-Information about integration with Nintex in SharePoint On-Premise can be found [here](../erpconnect-services/sap-integration-nintex).  
+Information about integration with Nintex in SharePoint on-premises can be found [here](../erpconnect-services/sap-integration-nintex).  
 A complete overview of all integration possibilities with Nintex can be found in the following Whitepaper. 
 
  

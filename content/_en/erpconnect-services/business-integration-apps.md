@@ -15,7 +15,7 @@ lang: en_GB
 
 With Business Integration Apps it is possible to execute different kinds of SAP functionalities like transactions or reports and also self-service applications within your SharePoint environment.  The seamless integration of SAP processes in SharePoint brings you closer to an integrated and uniform business platform.
 
-The apps allow for the users without special SAP knowledge to perform complex processes directly in SharePoint – on-premise or in SharePoint Online. There is no need for training or special instruction courses to use the applications because operation is easy and intuitive.
+The apps allow for the users without special SAP knowledge to perform complex processes directly in SharePoint – on-premises or in SharePoint Online. There is no need for training or special instruction courses to use the applications because operation is easy and intuitive.
 
 Furthermore the apps are functioning on all prevailing devices like desktop-pc, tablet or smartphone. The responsive design allows the applications to adapt to their respective interfaces.
 

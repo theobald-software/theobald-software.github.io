@@ -30,7 +30,7 @@ If your SharePoint server isn't configured for remote access already, go to **Ce
 ![XU_Sharepoint_Dest](/img/content/XU_Sharepoint_Dest.png){:class="img-responsive"}            
 
 
-**SharePoint On-Premise or SharePoint Online**<br>
+**SharePoint on-premises or SharePoint Online**<br>
 Select the type of SharePoint environment you are going to export to.
 
 **Site URL**<br>

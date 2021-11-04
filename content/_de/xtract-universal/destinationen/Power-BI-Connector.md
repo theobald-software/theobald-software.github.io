@@ -26,7 +26,7 @@ Die Zielumgebung *Power BI Connector* bietet zwei Wege zum Verbinden von Power B
 
 Xtract Universal unterstützt folgende Umgebungen: 
 - [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) mittels [Power BI Custom Connector](#power-bi-custom-connector-manuell-einrichten)
-- [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) mittels [Power BI on-premises data gateway](https://docs.microsoft.com/de-de/data-integration/gateway/service-gateway-onprem)
+- [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) mittels [Power BI On-Premisess data gateway](https://docs.microsoft.com/de-de/data-integration/gateway/service-gateway-onprem)
 - [Power BI Report Server](https://docs.microsoft.com/de-de/power-bi/report-server/get-started) mittels [Power Query M-script](#power-query-m-script-in-power-bi-einbrichten)
 
 
@@ -136,23 +136,23 @@ Verwenden Sie entweder das Power Query M-script **oder** den Power BI Custom Con
 Die Anbindung des Power BI Service erfordert folgende Komponenten:
 
 - [Power BI Account](https://powerbi.microsoft.com/de-de/landing/signin/)
-- [On-premises Data Gateway](https://powerbi.microsoft.com/en-us/gateway/)
+- [On-Premisess Data Gateway](https://powerbi.microsoft.com/en-us/gateway/)
 
-### Einrichtung On-premises Data Gateway
+### Einrichtung On-Premisess Data Gateway
 
-Befolgen Sie die folgenden Schritte, um das On-premises Data Gateway mittels Power BI Custom Connector einzurichten.
+Befolgen Sie die folgenden Schritte, um das On-Premisess Data Gateway mittels Power BI Custom Connector einzurichten.
 
 {: .box-note }
 **Hinweis:** Die Verbindung zu Xtract Universal kann mithilfe von Power Query M-script oder Power BI Custom Connector erstellt werden. Die Verwendung von Power Query M-script benötigt keine weitere Konfiguration.
 
-1. Installieren Sie das On-premises Data Gateway auf dem Xtract Universal Anwendungsserver.
-2. Konfigurieren Sie das Data Gateway, siehe [Use the on-premises data gateway app](https://docs.microsoft.com/de-de/data-integration/gateway/service-gateway-app).
+1. Installieren Sie das On-Premisess Data Gateway auf dem Xtract Universal Anwendungsserver.
+2. Konfigurieren Sie das Data Gateway, siehe [Use the On-Premisess data gateway app](https://docs.microsoft.com/de-de/data-integration/gateway/service-gateway-app).
 3. Wechseln Sie in den Tab *Connectors* und hinterlegen Sie den Pfad zum Power BI Custom Connector, z.B. `C:\Program Files\XtractUniversal\powerbi`.<br> Die *XtractUniversalExtension* wird anschließend als Custom Data Connector angezeigt.
 ![Data-Gateway Connectors](/img/content/xu/data-gateway-connectors.png){:class="img-responsive"}
 
 
 ### Xtract Universal als Datenquelle hinzufügen
-Das konfigurierte On-premises Data Gateway wird nachfolgend in die Power BI Service Umgebung eingebunden. Anschließend muss eine DataSource zum Xtract Universal Server eingerichtet werden.
+Das konfigurierte On-Premisess Data Gateway wird nachfolgend in die Power BI Service Umgebung eingebunden. Anschließend muss eine DataSource zum Xtract Universal Server eingerichtet werden.
 
 1. Öffnen Sie im Power BI Service **Settings > Manage Gateways**.
 2. Öffnen Sie das *GATEWAY CLUSTERS* Menü über **[...]**.
@@ -170,12 +170,12 @@ Das konfigurierte On-premises Data Gateway wird nachfolgend in die Power BI Serv
 **Data Source Type**<br> Wählen Sie den Eintrag *Xtract Universal Extraction* aus dem Dropdown-Menü. 
 
 {: .box-note }
-**Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-premises Data Gateway](#einrichtung-on-premises-data-gateway).
+**Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-Premisess Data Gateway](#einrichtung-On-Premisess-data-gateway).
 
 **Xtract Universal Server**<br> Geben Sie die Xract Universal Server URL an, siehe [Web Server](../server/server_einstellungen#web-server).
 
 **Authentication Method**<br> 
-Auswahl einer Authentisierungsmethode, siehe [Single Sign On und SAP-Authentifizierung](#einrichtung-on-premises-data-gateway):
+Auswahl einer Authentisierungsmethode, siehe [Single Sign On und SAP-Authentifizierung](#einrichtung-On-Premisess-data-gateway):
 - Basic
 - Windows
 - Anonymous
@@ -193,7 +193,7 @@ Beim erstmaligem Einrichten der Xtract Universal-Datenquelle in Power BI, werden
 
 * *Anonymous*: Wählen Sie diese Option, wenn Ihre Xtract Universal-Servereinstellungen keine Authentifizierung erfordern, um eine Extraktion auszuführen.
 * *Basic*:  Wählen Sie diese Option, wenn in Xtract Universal in den [SAP Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen#authentication) die Checkbox *Require SAP Credentials to be explicitly supplied for execution* markiert ist. Geben Sie Ihre SAP-Benutzerdaten in die entsprechenden Eingabefelder ein.
-* *Windows*: Wählen Sie diese Option, wenn Sie [SSO](Power-BI-Connector#einrichtung-on-premises-data-gateway) verwenden, oder wenn ein eingeschränkter Zugang zu den Extraktionen in den Xtract Universal-Servereinstellungen definiert ist. <br>
+* *Windows*: Wählen Sie diese Option, wenn Sie [SSO](Power-BI-Connector#einrichtung-On-Premisess-data-gateway) verwenden, oder wenn ein eingeschränkter Zugang zu den Extraktionen in den Xtract Universal-Servereinstellungen definiert ist. <br>
 Tragen Sie \<domain>\\\<Windows AD user> ins Feld *user* und Ihr Windows-Passwort ins Feld *Password* ein.
 
 Xtract Universal und die *Power BI Connector* Destination unterstützen Single Sign On (SSO) zu SAP. Wenn SSO korrekt konfiguriert ist, werden die Windows-Anmeldedaten des Power BI-Benutzers den SAP-Anmeldedaten zugeordnet (gemapped). Auf diese Weise wird das SAP-Berechtigungskonzept unterstützt und dem Benutzer werden nur die Daten angezeigt, die seiner SAP-Berechtigung entsprechen.
