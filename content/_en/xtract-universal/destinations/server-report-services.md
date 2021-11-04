@@ -153,10 +153,9 @@ Invalid input is marked with a red circle that displays an error message when ho
 
 After creating the report, you can access the Query Builder by right-clicking the *Dataset* in *Report Data* and selecting **Query...**.
 
-
 {: .box-tip }
 **Tip:** Passing the (Windows) user that runs a report on the report server or in Visual Studio is supported. For this, you need to set up the [web server authentication](../server/server-settings#web-server) in Xtract Universal. 
-Single Sign On in SAP is also supported, see [Single Sign On]](../advanced-techniques/sap-single-sign-on).
+Single Sign On in SAP is also supported, see [Single Sign On](../advanced-techniques/sap-single-sign-on).
 
 
 ### Parameterization
