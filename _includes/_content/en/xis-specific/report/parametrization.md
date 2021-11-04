@@ -34,7 +34,18 @@ The following fields and/or *Custom Properties* of the component allow entry of 
 | *BatchJobTimeout*     |Corresponds to the field *Batch Timeout* in the Report component, see [Settings - BatchJobTimeout](./settings).|
 | *ReportName*        |  Should not be used as the structure of the result as it varies depending on the reports.    |
 
+#### Assigning Variables to Selections 
+
+To dynamically select data, you can use SSIS variables.
+
+1. Create a variable. Make sure the data type of the variable fits the data type of the report field you want to filter.
+2. Open the report component and open a selection, see [Edit Selections](./variants-and-selections#edit-selections).<br> 
+3. If variables are available, an icon is displayed next to the **Low** and **High** input fields (1). <br>
+Click the icons to switch between entering actual input values and entering variables from a drop-down-list.<br>
+![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
+4. If you have assigned variables as selection filters and click **[Load Preview]** you are prompted to populate the variables with actual values. <br>
+![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
+
 ****
 #### Related Links
 - [How to use SSIS Variables with Xtract Components](../parameterization/parameterization-var) 
-- [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

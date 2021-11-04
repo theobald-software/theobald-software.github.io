@@ -34,8 +34,18 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 | *BatchJobTimeout*     |Entspricht dem Feld *Batch Timeout* in der Report Komponente, siehe [Settings - BatchJobTimeout](./report-settings).|
 | *ReportName*        |  *ReportName* sollte nicht als Struktur für Ergebnisse verwendet werden, da der Wert je nach Report stark variiert. |
 
+#### Einer Selektion Variablen zuweisen
+
+SSIS Variablen können verwendet werden, um Selektionen zu dynamisieren.
+
+1. Erstellen Sie eine Variable. Achten Sie darauf, dass der Datentyp der Variable mit dem des zu dynamisierenden Felds überein stimmt.
+2. Öffnen Sie die Xtract Report-Komponente und bearbeiten Sie eine Selektion, siehe [Selektionen bearbeiten](./report-variants-and-selections#selektionen-bearbeiten).<br> 
+3. Wenn Variablen verfügbar sind, wird neben den Eingabefeldern **Low** und **High** ein Symbol angezeigt (1). <br>
+Klicken Sie auf das Symbol, um zwischen der direkten Eingabe von Werten und der Auswahl von Variablen zu wechseln.<br>
+![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
+4. Wenn Sie einer Selektion Variablen zugewiesen haben und auf **[Load Preview]**, werden Sie aufgefordert die Variablen mit Werten zu füllen. <br>
+![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
 
 ****
 #### Weiterführende Links
 - [SSIS Variablen mit Xtract Komponenten verwenden](../parametrisierung/parametrisierung-variablen) 
-- [Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
