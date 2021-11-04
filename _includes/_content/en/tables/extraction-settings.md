@@ -56,3 +56,10 @@ Activate the setting *Extract data in background job*  for long-running extracti
 
 {: .box-tip }
 **Tip:** The extraction jobs can be found in the SAP JobLog (SM37) under the JobName *THEO_READ_TABLE*.
+
+### Adjust currency decimals
+
+Use this option when working with currencies/quantities without decimal points e.g., JPY, KRW, etc.
+If this option is active all decimal places are maintained after data conversion.
+
+Make sure a currency field is selected for reference.

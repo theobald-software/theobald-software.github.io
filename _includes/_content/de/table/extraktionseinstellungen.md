@@ -58,3 +58,9 @@ Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen
 {: .box-tip }
 **Tipp:** Die Extraktionsjobs befinden sich im SAP JobLog (SM37) unter dem JobName *THEO_READ_TABLE*.
 
+#### Adjust currency decimals
+
+Aktivieren Sie diese Option, wenn Sie mit Währungen/Mengen ohne Nachkommastellen arbeiten (z.B. JPY, KRW, etc.). 
+Damit wird sichergestellt, dass alle vorhandenen und nicht vorhandenen Dezimalstellungen bei der Datenkonvertierung erhalten bleiben.
+
+Verwenden Sie bei dieser Option immer ein Währungsfeld als Referenz.
