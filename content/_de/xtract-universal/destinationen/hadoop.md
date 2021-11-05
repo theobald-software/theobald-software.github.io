@@ -13,11 +13,6 @@ progressstate: 5
 
 Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud-Speicher [Amazon S3](https://aws.amazon.com/de/s3/).
 
-## Voraussetzungen
-
-- Hadoop-Benutzer mit Schreibrechten
-
-
 ## Verbindung
 
 {% include _content/de/xu-specific/destinationen/general/connection.md %}	 
@@ -31,13 +26,16 @@ Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud
 #### HDFS Web API
 
 **Web Hdfs URL**<br>
+Geben Sie die URL der REST API an. Die URL enthält das Präfix `/webhdfs/v1/ und das folgende Format:
+`http://<host>:<port>/webhdfs/v1/<path>` <br>
+Für nähere Informationen zu Hdfs URLs, siehe [WebHDFS REST API: FileSystem URIs vs HTTP URLs](http://hadoop.apache.org/docs/r3.3.1/hadoop-project-dist/hadoop-hdfs/WebHDFS.html#FileSystem_URIs_vs_HTTP_URLs).
 
 **User name**<br>
-Option zur Authentifizierung gegenüber Amazon AWS. Über das Identity and Access Management ([IAM](https://console.aws.amazon.com/iam/home#/home)) können Sie die notwendige Werte ermitteln.<br>
-Nähere Informationen finden Sie in der [AWS Dokumentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
+Geben Sie einen Hadoop-Benutzer mit Schreibrechten an. 
+Wenn kein Benutzer eingetragen wird, wird der Standard-Benutzer *dr.who* verwendet.
 
 **Connect**<br>
-Klicken Sie auf **[Connect]**, nachdem Sie die Adresse der Web API und den Benutzer eingegeben haben, um zu prüfen ob eine Verbindung hergestellt werden kann.
+Klicken Sie auf **[Connect]**, nachdem Sie die URL der Web API und den Benutzer eingetragen haben, um zu prüfen ob eine Verbindung hergestellt werden kann.
 
 
 ### File Format
@@ -67,6 +65,7 @@ Um Daten im json-Format zu schreiben, sind keine weiteren Einstellungen nötig.
 
 
 ## Einstellungen
+
 ### Destination Settings öffnen
 
 1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
@@ -89,9 +88,18 @@ Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sicherges
 
 ### Hadoop Remote Folder
 
-Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines S3 Buckets extrahiert werden soll.<br>
-Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden:`Ordner/Unterordner1/Unterordner2/`<br>
+Geben Sie den Namen des Ordners an, in den die Daten geschrieben werden sollen.<br>
+Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden:`Ordner/Unterordner1/Unterordner2/`.
+Falls nicht vorhanden, wird ein neuer Ordner erstellt.
+Wenn kein Ordner angegeben wird, werden die Daten in das root-Verzeichnis geschrieben.
 
-Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](../fortgeschrittene-techniken/script-ausdruecke#skript-ausdrücke-als-dynamische-ordnerpfade-verwenden) definiert werden. 
-Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt.
+### WebHdfs API's Option
 
+**Overwrite existing**<br>
+Wenn diese Option aktiviert ist, werden Dateien mit gleichem Namen überschrieben.<br>
+Wenn diese Option nicht aktiviert ist und der Zielordner eine Datei mit demselben Namen wie die neue Datei enthält, schlägt der Upload fehl.
+
+*****
+### Weierführende Links
+- [Hadoop Documentation](http://hadoop.apache.org/docs/r3.3.1/index.html)
+- [HDFS Users Guide](http://hadoop.apache.org/docs/r3.3.1/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html)

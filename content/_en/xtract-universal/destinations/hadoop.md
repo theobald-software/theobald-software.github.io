@@ -27,7 +27,8 @@ The following section describes the loading of the SAP extraction data to Hadoop
 #### HDFS Web API
 
 **Web Hdfs URL**<br>
-Enter the URL of the REST API. The URL contains the prefix `/webhdfs/v1/`and has the following format: `http://<host>:<port>/webhdfs/v1/<path>`<br>
+Enter the URL of the REST API. The URL contains the prefix `/webhdfs/v1/`
+and has the following format: `http://<host>:<port>/webhdfs/v1/<path>`<br>
 For more information on Hdfs URLs, see [WebHDFS REST API: FileSystem URIs vs HTTP URLs](http://hadoop.apache.org/docs/r3.3.1/hadoop-project-dist/hadoop-hdfs/WebHDFS.html#FileSystem_URIs_vs_HTTP_URLs).
 
 **User name**<br>
@@ -88,7 +89,8 @@ This is to ensure that all uploaded objects are compatible with Azure Data Facto
 ### Hadoop Remote Folder
 
 Enter the name of a folder to write the data in.<br>
-Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/Subfolder2/`. If the entered folder does not exist, a new folder is created.<br>
+Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/Subfolder2/`. 
+If the entered folder does not exist, a new folder is created.<br>
 If no folder is entered, the data will be written into the root folder.
 
 ### WebHdfs API's Option
