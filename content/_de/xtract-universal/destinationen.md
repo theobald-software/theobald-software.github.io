@@ -12,7 +12,7 @@ lang: de_DE
 progressstate: 5
 old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
 ---
-              
+
 Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen zu extrahierten und in Zielumgebungen zu schreiben. 
 Die folgenden Zielumgebungen sind verfügbar:
 
@@ -48,6 +48,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 - [Amazon AWS S3](./destinationen/amazon_aws_s3)
 - [Azure Storage](./destinationen/azure-storage) 
 - [Google Cloud Storage](./destinationen/google-cloud-storage)
+- [Hadoop](./destinationen/hadoop)
 
 ### Business Systeme
 
