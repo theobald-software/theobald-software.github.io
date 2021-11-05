@@ -48,4 +48,4 @@ Click the icons to switch between entering actual input values and entering vari
 
 ****
 #### Related Links
-- [How to use SSIS Variables with Xtract Components](../parameterization/parameterization-var) 
+- [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

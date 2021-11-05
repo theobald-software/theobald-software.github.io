@@ -48,4 +48,4 @@ Klicken Sie auf das Symbol, um zwischen der direkten Eingabe von Werten und der 
 
 ****
 #### Weiterführende Links
-- [SSIS Variablen mit Xtract Komponenten verwenden](../parametrisierung/parametrisierung-variablen) 
+- [Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
