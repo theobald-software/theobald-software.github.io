@@ -26,8 +26,8 @@ Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud
 #### HDFS Web API
 
 **Web Hdfs URL**<br>
-Geben Sie die URL der REST API an. Die URL enthält das Präfix `/webhdfs/v1/ und das folgende Format:
-`http://<host>:<port>/webhdfs/v1/<path>` <br>
+Geben Sie die URL der REST API an. Die URL enthält das Präfix `/webhdfs/v1/` und das folgende Format:
+`http://[host]:[port]/webhdfs/v1/[path]` <br>
 Für nähere Informationen zu Hdfs URLs, siehe [WebHDFS REST API: FileSystem URIs vs HTTP URLs](http://hadoop.apache.org/docs/r3.3.1/hadoop-project-dist/hadoop-hdfs/WebHDFS.html#FileSystem_URIs_vs_HTTP_URLs).
 
 **User name**<br>
