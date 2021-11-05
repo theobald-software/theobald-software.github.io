@@ -38,7 +38,7 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 
 SSIS Variablen können verwendet werden, um Selektionen zu dynamisieren.
 
-1. Erstellen Sie eine Variable. Achten Sie darauf, dass der Datentyp der Variable mit dem des zu dynamisierenden Felds überein stimmt.
+1. Erstellen Sie eine Variable. Achten Sie darauf, dass der Datentyp der Variable mit dem des zu dynamisierenden Felds übereinstimmt.
 2. Öffnen Sie die Xtract Report-Komponente und bearbeiten Sie eine Selektion, siehe [Selektionen bearbeiten](./report-variants-and-selections#selektionen-bearbeiten).<br> 
 3. Wenn Variablen verfügbar sind, wird neben den Eingabefeldern **Low** und **High** ein Symbol angezeigt (1). <br>
 Klicken Sie auf das Symbol, um zwischen der direkten Eingabe von Werten und der Auswahl von Variablen zu wechseln.<br>
