@@ -71,7 +71,7 @@ Dieses Szenario unterstützt:
 {: .box-note }
 **Hinweis:** Bei Verwendung einer WHERE-Bedingung muss der Wert in einfachen Anführungszeichen angegeben werden.<br>
 *Syntax:* ```[Feldname][Leerzeichen][Operator][Leerzeichen]'#[Skript-Ausdruck]#'```<br>
-*Beispiel:* ```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("d")}#'```
+*Beispiel:* ```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("yyyyMMdd")}#'```
 
 ### Skript-Ausdrücke als dynamische Ordnerpfade verwenden
 
