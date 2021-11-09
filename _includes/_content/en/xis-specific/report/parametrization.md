@@ -46,6 +46,10 @@ Click the icons to switch between entering actual input values and entering vari
 4. If you have assigned variables as selection filters and click **[Load Preview]** you are prompted to populate the variables with actual values. <br>
 ![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
 
+{: .box-note }
+**Note**: The Xtract Report component does not support variables of the data types *DateTime* and *DBNull*. 
+For more information on the data types of system variables, see [Microsoft Help: System Variables](https://docs.microsoft.com/en-us/sql/integration-services/system-variables?view=sql-server-ver15).
+
 ****
 #### Related Links
 - [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

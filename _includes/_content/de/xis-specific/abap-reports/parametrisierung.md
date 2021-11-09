@@ -46,6 +46,10 @@ Klicken Sie auf das Symbol, um zwischen der direkten Eingabe von Werten und der 
 4. Wenn Sie einer Selektion Variablen zugewiesen haben und auf **[Load Preview]**, werden Sie aufgefordert die Variablen mit Werten zu füllen. <br>
 ![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
 
+{: .box-note }
+**Hinweis**: Die Xtract Report Komponente unterstützt bei der Parametrisierung durch Variablen alle Datentypen, bis auf *DateTime* und *DBNull*.
+Für mehr Informationen über Datentypen von Systemvariablen, siehe [Microsoft-Hilfe: Systemvariablen](https://docs.microsoft.com/de-de/sql/integration-services/system-variables?view=sql-server-ver15).
+
 ****
 #### Weiterführende Links
 - [Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
