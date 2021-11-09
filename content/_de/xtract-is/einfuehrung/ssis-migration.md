@@ -13,8 +13,8 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=ssis-migration
 
 Der folgende Abschnitt befasst sich mit der Migration von SSIS Paketen mit Xtract-Komponenten von einer niedrigeren SQL Server/SSIS-Version in eine höhere Version. 
 
-Wenn Sie von SQL Server 2012 oder niedriger nach SQL Server 2019 migrieren, folgen Sie den Anweisungen in [Migration von SSIS 2008/2012 nach SSIS 2019](#migration-von-ssis-20082012-nach-ssis-2019).<br>
-Wenn Sie von SQL Server 2014 oder höher nach SQL Server 2019 migrieren, folgen Sie den Anweisungen in [Migration von SSIS 2014/2016 nach SSIS 2019](#migration-von-ssis-20142016-nach-ssis-2019).
+Wenn Sie von SQL Server 2012 oder niedriger nach SQL Server 2019 migrieren, folgen Sie der Anleitung [Migration von SSIS 2008/2012 nach SSIS 2019](#migration-von-ssis-20082012-nach-ssis-2019).<br>
+Wenn Sie von SQL Server 2014 oder höher nach SQL Server 2019 migrieren, folgen Sie der Anleitung [Migration von SSIS 2014/2016 nach SSIS 2019](#migration-von-ssis-20142016-nach-ssis-2019).
 
 
 ### Migration von SSIS 2008/2012 nach SSIS 2019
@@ -42,14 +42,19 @@ Während der Konvertierung erstellt das Tool ein Backup Ihres SSIS-Pakets. <br>
 
 ### Migration von SSIS 2014/2016 nach SSIS 2019
 
-1. Öffnen Sie Ihre Solution in Visual Studio. 
-2. Öffnen Sie die Projekteigenschaften und wählen Sie *SQL Server 2019* als neue Zielversion des SQL Servers (Deployment Target Version) aus.<br>
+1. Öffnen Sie eine neue Solution in Visual Studio. 
+2. Öffnen Sie die Projekteigenschaften und wählen Sie eine Zielversion für den SQL Server aus:
+- Wenn mit einer aktuellen Version von SSDT/VS (nach 2015) SSIS-Pakete für die Zielversion SQL Server 2014/2016 angelegt wurden, fahren Sie mit Schitt 6 fort.
+- Wenn mit einer SSDT/VS-Version vor 2015 SSIS-Pakete für die Zielversion SQL Server 2014/2016 angelegt wurden, wählen Sie SQL Server 2014 oder SQL Server 2016 aus, je nachdem, auf welcher SQL Server-Version Ihre Pakete bisher liefen. 
+- Wenn Sie die Pakete zuvor gemäß der Anleitung [Migration von SSIS 2008/2012 nach SSIS 2019](#migration-von-ssis-20082012-nach-ssis-2019) mit dem Conversion Preparer vorbereitet haben, wählen Sie SQL Server 2016.<br>
 ![VS-Deployment-Target](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
-3. Importieren Sie Ihre SSIS-Pakete und speichern Sie das Projekt. Ggf. schließen Sie die Solution und/oder VS komplett und öffnen sie wieder.<br>
-
-{: .box-note }
-**Hinweis:** Wenn vor der Migration bereits *SQL Server 2019* als Zielversion des SQL Servers ausgewählt ist, müssen Sie erst Ihre alte SQL Server Version wiederherstellen, um anschließend die Konvertierung auf *SQL Server 2019* durchzuführen.
-Beispiel: Wenn Sie von SQL Server 2016/SSIS 2016 migrieren, ändern Sie die Version des Zielservers zu *SQL Server 2016*. Anschließend Konvertieren Sie auf *SQL Server 2019*.<br>
+3. Speichern Sie das Projekt.
+4. Fügen Sie dem Projekt die SSIS Pakete hinzu.
+5. Speichern Sie das Projekt erneut.
+6. Ändern Sie jetzt die Zielversion des SQL Servers auf 2019.
+7. Xtract IS-Komponenten sollten im Datenfluss korrekt angezeigt werden. 
+Falls nicht, schließen Sie die komplette Solution und öffnen diese erneut. 
+Falls immer noch nicht, schließen Sie das komplette Visual Studio und öffnen erneut.
 
 ### Aktuelle XtractISSetup.exe installieren
 Installieren Sie die aktuelle Xtract IS Version auf Ihrem SSIS Server und auf jeder anderen Deployment-Umgebung (Visual Studio/SSDT).
