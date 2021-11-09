@@ -95,7 +95,6 @@ Aktion auf der Zieldatenbank, bevor die Daten in die Zieltabelle eingefügt werd
 - *Drop & Create*: Tabelle entfernen falls vorhanden und neu anlegen (Default).
 - *Truncate Or Create*: Tabelle entleeren falls vorhanden, sonst anlegen.
 - *Create If Not Exists*: Tabelle anlegen falls nicht vorhanden.
-- *Prepare Merge*: bereitet den Merge-Prozess vor und erstellt z.B. eine temporäre Staging-Tabelle. Für weitere Infos siehe Abschnitt Über Merging. 
 - *None*: keine Aktion
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL. 
 
@@ -119,13 +118,8 @@ Definiert, wie die Daten in die Zieltabelle eingefügt werden.
 ### Finalization - SQL Anweisungen
 
 Aktion auf der Zieldatenbank, nachdem die Daten in die Zieltabelle erfolgreich eingefügt werden.
-- *Finalize Merge*: schließt den Merge-Prozess ab und löscht z.B. die temporäre Staging-Tabelle. Für weitere Infos siehe [Daten Mergen](#daten-mergen). 
 - *None*: keine Aktion (Default).
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL. 
-
-#### Über Merging
-Die Zusammenführung gewährleistet eine Deltaverarbeitung: neue Datensätze werden in die Datenbank eingefügt und/oder bestehende Datensätze werden aktualisiert. 
-Mehr Details im Abschnitt [Daten zusammenführen (mergen)](#daten-mergen).
 
 ### Custom SQL 
 
@@ -187,10 +181,6 @@ Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-uni
 **Tipp:** Der Befehl *ExistsTable(tableName)* ermöglicht die Überprüfung des Vorhandenseins einer Tabelle in einer Datenbank.-->
 
 {% include _content/de/xu-specific/destinationen/general/transaction-style.md %}
-
-## Daten Mergen
-
-{% include _content/de/xu-specific/destinationen/merge-data/db-merge-data.md  %}
 
 ## Custom SQL
 

@@ -93,7 +93,6 @@ Defines the action on the target database before the data is inserted into the t
 - *Drop & Create*: Remove table if available and create new table (default).
 - *Truncate Or Create*: Empty table if available, otherwise create.
 - *Create If Not Exists*: Create table if not available.
-- *Prepare Merge*: Prepares the merge process and creates e.g. a temporary staging table. See [Merging Data](#merging-data) for more details. 
 - *None*: no action
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below. 
 
@@ -117,13 +116,9 @@ Defines how the data is inserted into the target table.
 ### Finalization - SQL Commands
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
-- *Finalize Merge*: Closes the merge process and deletes the temporary staging table, for example.  
 - *None*: no action (default).
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below.
 
-#### About Merging
-Merging ensures delta processing: new records are inserted into the database and / or existing records are updated. 
-See section [Merging Data](#merging-data).
 
 ### Custom SQL
 
@@ -187,8 +182,6 @@ You can use [script expressions](https://help.theobald-software.com/en/xtract-un
 
 {% include _content/en/xu-specific/destinations/general/transaction-style.md %}
 
-## Merging Data
-{% include _content/en/xu-specific/destinations/merge-data/db-merge-data.md  %}
 
 ## Custom SQL
 ### Custom SQL Statement
