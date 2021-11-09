@@ -44,8 +44,8 @@ Während der Konvertierung erstellt das Tool ein Backup Ihres SSIS-Pakets. <br>
 
 1. Öffnen Sie eine neue Solution in Visual Studio. 
 2. Öffnen Sie die Projekteigenschaften und wählen Sie eine Zielversion für den SQL Server aus:
-- Wenn mit einer aktuellen Version von SSDT/VS (nach 2015) SSIS-Pakete für die Zielversion SQL Server 2014/2016 angelegt wurden, fahren Sie mit Schitt 6 fort.
-- Wenn mit einer SSDT/VS-Version vor 2015 SSIS-Pakete für die Zielversion SQL Server 2014/2016 angelegt wurden, wählen Sie SQL Server 2014 oder SQL Server 2016 aus, je nachdem, auf welcher SQL Server-Version Ihre Pakete bisher liefen. 
+- Wenn mit einer Version von SSDT/VS **nach** 2015 SSIS-Pakete für die Zielversion SQL Server 2014/2016 angelegt wurden, fahren Sie mit Schitt 6 fort.
+- Wenn mit einer SSDT/VS-Version **vor** 2015 SSIS-Pakete für die Zielversion SQL Server 2014/2016 angelegt wurden, wählen Sie SQL Server 2014 oder SQL Server 2016 aus, je nachdem, auf welcher SQL Server-Version Ihre Pakete bisher liefen. 
 - Wenn Sie die Pakete zuvor gemäß der Anleitung [Migration von SSIS 2008/2012 nach SSIS 2019](#migration-von-ssis-20082012-nach-ssis-2019) mit dem Conversion Preparer vorbereitet haben, wählen Sie SQL Server 2016.<br>
 ![VS-Deployment-Target](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
 3. Speichern Sie das Projekt.
