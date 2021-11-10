@@ -34,7 +34,7 @@ Enter the directory to save the destination flat files in. If the entered folder
 
 {: .box-note }
 **Note:** To write flat files to a network drive, you need to: <br>
-\- Enter the **File output path** in [UNC format](https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats#unc-paths) e.g., `\\Server2\Share\Test\Foo.txt`.<br>
+\- Enter the **File output path** in [UNC format](https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats#unc-paths) e.g., `\\Server2\Share\Folder1`.<br>
 \- Run the [Xtract Universal service](../advanced-techniques/service-account) by a user with write permission to the directory. 
  
 
