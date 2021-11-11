@@ -15,6 +15,8 @@ Der folgende Abschnitt gibt eine allgemeine Einführung in die Verwendung von yu
 
 ### Installation
 
+Bevor Sie die Installation starten, stellen Sie sicher, dass Sie die Systemvoraussetzungen für yunIO erfüllen, siehe [yunIO Systemvoraussetzungen](./systemvoraussetzungen).
+
 {: .box-note }																   
 **Hinweis:** Administratorrechte sind notwendig, um den yunIO-Dienst zu installieren.
 
@@ -114,6 +116,28 @@ Wählen Sie die Spalten aus, die extrahiert werden sollen.
 4. **WHERE-Clause:**<br>
 Optional: Sie können eine WHERE-Bedingung verwenden, um Ihre Daten zu filtern.
 Für Informationen zur OpenSQL-Syntax der WHERE-Bedingung, siehe [SAP Hilfe - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm).
+
+<!---
+
+### Function Modules
+
+Das *Function Module*-Menü besteht aus den folgenden Unterabschnitten:
+
+
+
+1. **Function Module:**<br>
+Name und Beschreibung des gewählten Funktionsbausteins/BAPIs werden im Unterabschnitt *Function Module* angezeigt.<br>
+Um eine andere Quelldatei zu suchen, klicken Sie in der oberen, rechten Ecke des Unterabschnitts auf **Select**.
+2. **Advanced Settings:**<br>
+- **Commits Transactions:** ...
+3. **Function Module Interface Parameters:**<br>
+- **Import:** Definieren Sie statische Eingabeparameter (*Default*) oder dynamische Eingabeparameter (*Parameterized*).
+- **Export:** Selektieren Sie die Daten, die der Ergebnismenge hinzugefügt werden sollen.
+- **Tables:** Tabellen können an einen Funktionsbaustein/BAPI übergeben werden oder extrahiert werden. 
+Um Tabellen zu übergeben, geben Sie den Namen der Tabelle unter *Input Value* an. 
+Um eine Tabelle zu extrahieren, markieren Sie die Tabelle unter *Output*. 
+-->
+
 
 ### Service ausführen
 
