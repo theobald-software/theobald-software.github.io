@@ -15,6 +15,8 @@ The following section gives a general introduction to working with yunIO.
 
 ### Installation
 
+Make sure you meet the system requirements before starting the installation process, see [yunIO System Requirements](./requirements).
+
 {: .box-note }																   
 **Note:** Administrator rights are required to install yunIO.
 
@@ -87,7 +89,7 @@ To edit an existing service, click on the name of the service you want to edit (
 Use wildcards ( * ) if needed.<br>
 ![yunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
 6. Click **[Search]** to display the search results (7). 
-7. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extractions](#table-extraction) or [Function Modules][#function-modules].
+7. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extractions](#table-extraction).
 8. Click **[Save]** to save the service.
 
 
@@ -113,11 +115,10 @@ Select the columns you want to extract.
 4. **WHERE-clause:**<br>
 Optional: You can use a WHERE-clause to filter your data. For information on the OpenSQL syntax of the WHERE-clause, see [SAP Help - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm).
 
-
+<!---
 ### Function Modules
 
 The *Function Module* menu consists of the following subsections:
-
 
 
 1. **Function Module:**<br>
@@ -129,7 +130,7 @@ To select a different source file, click **Select** in the upper right corner of
 - **Import:** Define either static input parameters (default) or dynamic input parameters (parameterized).
 - **Export:** Select the data that is to be added to the output.
 - **Tables:** Tables can be entered and extractes from the function module or BAPI. To import a table enter the name of the table under *Input Value*. To add a table to the output, mark the table under *Output*.
-
+-->
 
 <!---
 ### Table Extraction

@@ -15,6 +15,8 @@ Der folgende Abschnitt gibt eine allgemeine Einführung in die Verwendung von yu
 
 ### Installation
 
+Bevor Sie die Installation starten, stellen Sie sicher, dass Sie die Systemvoraussetzungen für yunIO erfüllen, siehe [yunIO Systemvoraussetzungen](./systemvoraussetzungen).
+
 {: .box-note }																   
 **Hinweis:** Administratorrechte sind notwendig, um den yunIO-Dienst zu installieren.
 
@@ -115,7 +117,7 @@ Wählen Sie die Spalten aus, die extrahiert werden sollen.
 Optional: Sie können eine WHERE-Bedingung verwenden, um Ihre Daten zu filtern.
 Für Informationen zur OpenSQL-Syntax der WHERE-Bedingung, siehe [SAP Hilfe - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm).
 
-
+<!---
 
 ### Function Modules
 
@@ -134,7 +136,7 @@ Um eine andere Quelldatei zu suchen, klicken Sie in der oberen, rechten Ecke des
 - **Tables:** Tabellen können an einen Funktionsbaustein/BAPI übergeben werden oder extrahiert werden. 
 Um Tabellen zu übergeben, geben Sie den Namen der Tabelle unter *Input Value* an. 
 Um eine Tabelle zu extrahieren, markieren Sie die Tabelle unter *Output*. 
-
+-->
 
 
 ### Service ausführen
