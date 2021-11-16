@@ -17,6 +17,10 @@ from a lower SQL Server/SSIS version to a higher version.
 When migrating from SQL Server 2012 or lower to SQL Server 2019, follow the instructions in [Migrating from SSIS 2008/2012 to SSIS 2019](#migrating-from-ssis-2012-to-ssis-2019).
 When migrating from SQL Server 2014 or higher to SQL Server 2019, follow the instructions in [Migration from SSIS 2014/2016 to SSIS 2019](#migration-from-ssis-20142016-to-ssis-2019).
 
+### Install the latest version of Xtract IS
+Install the latest version of Xtract IS on your SSIS server and any development environment (Visual Studio/SSDT).
+
+
 ### Migrating from SSIS 2008/2012 to SSIS 2019
 
 A migration from SQL Server 2012 to SQL Server 2019 also requires a migration of SSIS packages.
@@ -55,6 +59,5 @@ must be deactivated or changed for the conversion of the SSIS packages.
 7. If Xtract IS components are not displayed correctly in the Data Flow Task, close the Solution and reopen it.
 If the Xtract IS components are still not displayed correctly, close and restart Visual Studio.
 
-
-### Install the latest version of Xtract IS
-Install the latest version of Xtract IS on your SSIS server and any development environment (Visual Studio/SSDT).
+{: .box-note }
+**Note:** Saving the project before and after the import of SSIS packages is necessary for the migration to work correctly.
