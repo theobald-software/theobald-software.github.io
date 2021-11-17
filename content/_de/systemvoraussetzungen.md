@@ -37,8 +37,6 @@ Die folgenden SAP Releases werden nur eingeschränkt unterstützt:
 {% include _content/de/einfuehrung/operating-systems.md %}
 
 
-### Hardware-Anforderungen
-
 #### Prozessor-Kerne
 - Minimum: 2 Kerne. 
 Für jede weitere parallele Extraktion wird ein zusätzlicher Kern benötigt. 
