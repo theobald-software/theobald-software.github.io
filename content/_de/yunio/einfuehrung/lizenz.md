@@ -13,29 +13,31 @@ progressstate: 5
 ---
 
 ### Über das Lizenzierungskonzept von yunIO
-yunIO wird pro Zielumgebung, Quellsystem und Windows Server lizenziert. <br>
-Die folgende Grafik zeigt, auf welchen Arbeitsplätzen die Installation von yunIO mit einer gültigen Lizenz erforderlich ist.
- 
-![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
+yunIO wird pro Quellsystem und Windows Server lizenziert. Eine Demo-Lizenz wird automatisch mit der Installation von yunIO installiert. 
 
-Eine Demo-Lizenz wird automatisch mit der Installation von yunIO installiert. <br>
 Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theobald Software](https://my.theobald-software.com/) zur Verfügung gestellt. 
 Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
 Wenn Sie den yunIO Designer und den yunIO Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
  
-### Installieren von yunIO Lizenz - XtractUniversalLicense.json
-Um die reguläre Lizenz zu installieren, legen Sie die XtractUniversalLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:
-`C:\Program Files\XtractUniversal` <br>
- ![XU_license](/img/content/xu/xu_json_license.png ){:class="img-responsive"}
+### Installieren von yunIO Lizenz - YunIOLicense.json
+Um die reguläre Lizenz zu installieren, legen Sie die YunIOLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:
+`C:\Program Files\Theobald Software\YunIO` <br>
 
 Ein Neustart des yunIO Service ist nicht notwendig.
 
 ### About yunIO - Info-Fenster
 
 {: .box-tip }
-**Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom yunIO Designer  **[Help] > [Info]** oder drücken Sie F12.<br>
+**Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste des yunIO Designers **[About]**.
+Die Versionsnummer wird Ihnen rechts neben dem Seitentitel angezeigt.<br>
 
-![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
+Das *About* Menü von yunIO stellt Direktlinks zu folgenden Theobald Software Support-Seiten zur Verfügung:
+- Kundenportal
+- Online Hilfe
+- Knowledge Base
+- Support
+
+![Demo_License](/img/content/yunio/About.png){:class="img-responsive"}
 
 
 ### Wartung

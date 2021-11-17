@@ -31,6 +31,7 @@ When starting the setup, components can be selected during the installation.
 |Main Product Files | | All required files to use yunIO. |
 |<!---->| Install Service| Installs the server component as a windows service. See also section [Start Server](../server/start-server). |
 |Start Menu Shortcuts |- |Component that adds shortcuts to the start menu.|
+|Open the yunIO Designer after installation |- |Opens the yunIO Designer in your standard web browser.|
 
 The license installation procedure is described in the section [Installing the license](./license).
 

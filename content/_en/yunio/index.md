@@ -25,7 +25,7 @@ The yunIO service is installed on a local or cloud-hosted Windows server environ
 You can access the Web UI via a browser of your choice. <br>
 An Azure Relay registration can be used as a secure gateway to connect the local SAP system to the respective cloud application.
 <!--- ??? trifft das hier zu?--->
-![yunIO-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
+![yunIO-Components](/img/content/yunio/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
 
 ### Extraction Types
 
