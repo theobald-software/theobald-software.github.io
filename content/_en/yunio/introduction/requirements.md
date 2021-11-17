@@ -39,7 +39,6 @@ The following SAP Releases have only limited support:
 {% include _content/en/requirements/sap-misc.md %}
 {% include _content/en/requirements/operating-systems.md %}
 
-### Hardware Requirements
 
 ### Processor Cores
 Minimum: 2 Cores. 
