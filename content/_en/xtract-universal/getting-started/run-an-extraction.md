@@ -98,10 +98,25 @@ Activate the checkbox **Auto scroll to the end** to automatically scroll down to
 In the *xu.exe* tab the log of the command-line tool is displayed. 
  
 #### Output 
-In the *Output* tab the extraction result is displayed to a maximum amount of 500 rows.
-The number of rows to be displayed can be changed using the **Display rows from line** boxes. 
+
+In the *Output* tab the results of the extraction are displayed.
+This option is only available for the following destinations:
+- Web Service CSV 
+- Web Service JSON 
+- Microsoft SQL Server
+- Alteryx
+- SQL Server Reporting Services 
+- QlikSense&QlikView
 
 ![Run-Extraction-Output](/img/content/xu/xu_run_extraction_output.png){:class="img-responsive"}
+
+**Limit the number of displayed rows**<br>
+In the *Output* tab the extraction results are displayed to a maximum amount of 500 rows.
+The number of rows to be displayed can be changed using the **Display rows from line** boxes.
+
+**Filter Results**<br>
+To filter the results, enter filter values above the columns of the results and click **[Display]**.<br>
+To undo the filtering, click **[Clear search]**, followed by **[Display]**.
 
 ### Buttons (5) 
 Run the extraction with **[Run]**, abort it with **[Abort]** and close the window with **[Close]**.
