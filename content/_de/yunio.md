@@ -5,6 +5,9 @@ title: Erste Schritte mit yunIO
 description: Erste Schritte mit yunIO
 product: yunio
 parent: yunio
+redirect_from:
+  - de/yunio-erste-schritte
+  - de/yunio
 permalink: /:collection/:path
 weight: 10
 lang: de_DE

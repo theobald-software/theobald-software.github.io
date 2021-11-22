@@ -5,6 +5,9 @@ title: Getting Started with yunIO
 description: Getting Started
 product: yunio
 parent: yunio
+redirect_from:
+  - en/yunio-getting-started
+  - en/yunio
 permalink: /:collection/:path
 weight: 10
 lang: en_EN
