@@ -117,7 +117,7 @@ Im *Output* Tab werden standardmäßig bis zu max. 500 Zeilen angezeigt.
 Die Anzahl der anzuzeigenden Zeilen kann über die Boxen **Display rows from line** unter der Anzeige angepasst werden.
 
 **Ergebnisse Filtern**<br>
-Um die Ergebnisse nach bestimmten Werten zu filtern, geben Sie den gesuchten Wert über den Spalten ein und klicken Sie auf **[Display]**.<br>
+Um die Ergebnisse nach bestimmten Werten zu filtern, geben Sie die gesuchten Werte über der jeweiligen Spalte ein und klicken Sie auf **[Display]**.<br>
 Um die Filter wieder rückgängig zu machen, klicken Sie auf **[Clear search]** und anschließend wieder auf **[Display]**.
 
 
