@@ -116,6 +116,7 @@ Power Query M-script und Power BI Custom Connector gehören nicht zusammen.<br>
 Verwenden Sie entweder das Power Query M-script **oder** den Power BI Custom Connector.
 
 ### Power Query M-script in Power BI einrichten
+
 {: .box-note }
 **Hinweis:** Verwenden Sie nur die Extraktionen mit der [Power BI Connector Destination](#verbindung---destination-details).
 
