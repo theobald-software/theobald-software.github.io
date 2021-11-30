@@ -37,6 +37,12 @@ The following SAP Releases have only limited support:
 {% include _content/en/requirements/sap-misc.md %}
 {% include _content/en/requirements/operating-systems.md %}
 
+### Supported Web Browsers
+yunIO supports current versions of the following web browsers: 
+- Firefox 
+- Chrome
+- Edge
+- Safari
 
 ### Processor Cores
 Minimum: 2 Cores. 
