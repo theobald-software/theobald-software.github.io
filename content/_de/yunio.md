@@ -142,9 +142,6 @@ Diese Option ist für einige SAP Funktionsbausteine vnotwendig, um Daten in der 
 Um Tabellen zu übergeben, markieren Sie Tabellen in der Spalte *Input Mode* als *Parameterized*. 
 Um eine Tabelle zu extrahieren, markieren Sie die Tabelle in der Spalte *Output*. 
 
-{: .box-note }																   
-**Hinweis:** Felder, die als *Parameterized* markiert wurden, können beim Aufruf des Dienstes befüllt werden.
-
 ### Service ausführen
 
 Webdienste, die mit yunIO erstellt werden, sind in alle Cloud Anwendungen integrierbar, die
