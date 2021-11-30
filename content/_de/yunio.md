@@ -84,8 +84,9 @@ Um einen bereits vorhandenen Service zu bearbeiten, klicken Sie auf den Namen de
 2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus (3).
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
 3. Wählen Sie einen Extraktionstyp (4). yunIO bietet hierfür zwei Möglichkeiten: *SAP Tables or Views* oder *Function Modules*.
-4. Optional: Geben Sie unter *Description* eine kurze Beschreibung des Services ein (5). Klicken Sie auf **[Next]**.
-5. Je nach gewähltem Extraktionstyp geben Sie den Namen oder die Beschreibung der zu extrahierenden Tabelle/Ansicht oder des zu extrahierenden Funktionsmoduls/BAPIs ein (6). 
+4. Optional: Geben Sie unter *Description* eine kurze Beschreibung des Services ein (5). 
+5. Klicken Sie auf **[Save and edit]**.
+5. Je nach gewähltem Extraktionstyp geben Sie den Namen oder die Beschreibung der zu extrahierenden Tabelle/Ansicht oder des zu extrahierenden Funktionsmoduls/BAPIs in das Suchfenster ein (6). 
 Verwenden Sie Wildcards ( * ), falls nötig. <br>
 ![yunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
 6. Klicken Sie auf **[Search]**, um die Suchergebnisse anzuzeigen (7). 
@@ -117,27 +118,29 @@ Wählen Sie die Spalten aus, die extrahiert werden sollen.
 Optional: Sie können eine WHERE-Bedingung verwenden, um Ihre Daten zu filtern.
 Für Informationen zur OpenSQL-Syntax der WHERE-Bedingung, siehe [SAP Hilfe - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm).
 
-<!---
 
 ### Function Modules
 
 Das *Function Module*-Menü besteht aus den folgenden Unterabschnitten:
 
-
+![yunIO-BAPI](/img/content/yunio/bapi-settings.png){:class="img-responsive" }
 
 1. **Function Module:**<br>
 Name und Beschreibung des gewählten Funktionsbausteins/BAPIs werden im Unterabschnitt *Function Module* angezeigt.<br>
 Um eine andere Quelldatei zu suchen, klicken Sie in der oberen, rechten Ecke des Unterabschnitts auf **Select**.
 2. **Advanced Settings:**<br>
-- **Commits Transactions:** ...
+- **Commits Transactions:** Wenn diese Option aktiv ist, wird ein Funktionsbaustein zum Abschließen einer Transaktion (commit transaction) ausgeführt, z.B. mit BAPI_TRANSACTION_COMMIT.
+Diese Option ist für einige SAP Funktionsbausteine vnotwendig, um Daten in der Datenbank zu aktualisieren.
 3. **Function Module Interface Parameters:**<br>
 - **Import:** Definieren Sie statische Eingabeparameter (*Default*) oder dynamische Eingabeparameter (*Parameterized*).
 - **Export:** Selektieren Sie die Daten, die der Ergebnismenge hinzugefügt werden sollen.
+- **Changings:** Selektieren Sie zusätzliche Eingabe- und Ausgabedaten.
 - **Tables:** Tabellen können an einen Funktionsbaustein/BAPI übergeben werden oder extrahiert werden. 
-Um Tabellen zu übergeben, geben Sie den Namen der Tabelle unter *Input Value* an. 
-Um eine Tabelle zu extrahieren, markieren Sie die Tabelle unter *Output*. 
--->
+Um Tabellen zu übergeben, markieren Sie Tabellen in der Spalte *Input Mode* als *Parameterized*. 
+Um eine Tabelle zu extrahieren, markieren Sie die Tabelle in der Spalte *Output*. 
 
+{: .box-note }																   
+**Hinweis:** Felder, die als *Parameterized* markiert wurden, können beim Aufruf des Dienstes befüllt werden.
 
 ### Service ausführen
 
