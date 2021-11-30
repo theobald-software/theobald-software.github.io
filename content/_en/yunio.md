@@ -134,9 +134,6 @@ To select a different source file, click **Select** in the upper right corner of
 - **Tables:** Tables can be entered and extracted from function modules and BAPIs. To import a table when calling the service, mark it as *Parameterized* in the *Input Mode* column. 
 To add a table to the output, mark the table in the *Output* column.
 
-{: .box-note }																   
-**Note:** Fields that are marked as *Parameterized* can be filled when calling the service.
-
 <!---
 ### Table Extraction
 
