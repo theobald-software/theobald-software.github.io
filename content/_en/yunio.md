@@ -131,9 +131,6 @@ To select a different source file, click **Select** in the upper right corner of
 - **Tables:** Tables can be entered and extracted from function modules and BAPIs. To import a table when calling the service, mark it as *Parameterized* in the *Input Mode* column. 
 To add a table to the output, mark the table in the *Output* column.
 
-{: .box-note }																   
-**Note:** Fields that are marked as *Parameterized* can be filled when calling the service.
-
 <!---
 ### Table Extraction
 
@@ -217,12 +214,8 @@ Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](htt
 ### How to Run a Service
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, Firestart, Webcon, etc.
 
-To test a service after creation, you can trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. 
-
-{: .box-note }
-**Note:** Parameters cannot be passed to service when running it in the web browser. Only data is displayed in the browser for services without input parameters.    
-
-To integrate a yunIO web service with a tool that supports Swagger/OpenApi, copy the code or download the service definition (2).
+To test a service after creation, you can trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. <br>
+To integrate a yunIO web service with a tool that supports Swagger/OpenAPI, copy the code or download the service definition (2).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
 
