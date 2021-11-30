@@ -220,7 +220,7 @@ In the third step, the temporary table is merged with the target table and then 
 - **Preparation**: *None*
 - **Row Processing**: *Merge file to table* to add data to the staging table.
 - **Finalization**: *None* 
-![Extraction-Specific-Settings-Merge-Makt](/img/content/xu/destination_data_merge.png){:class="img-responsive"}
+![Extraction-Specific-Settings-Merge-Makt](/img/content/xu/destination_data_merge_snowflake.png){:class="img-responsive"}
 
 More information about the updated fields can be found in the SQL statement ([Custom SQL only](#custom-sql)).<br>
 It is possible to edit the SQL statement if necessary, e.g., to exclude certain columns from the update.<br>

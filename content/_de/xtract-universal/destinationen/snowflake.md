@@ -224,7 +224,7 @@ Im dritten Schritt wird die temporäre Tabelle mit der Zieltabelle zusammengefü
 - **Preparation**: *None*
 - **Row Processing**: *Merge file to table*, um die Staging-Tabelle mit Dateien zu befüllen.
 - **Finalization**: *None*
-![Extraction-Specific-Settings-Merge-Makt](/img/content/xu/destination_data_merge.png){:class="img-responsive"}
+![Extraction-Specific-Settings-Merge-Makt](/img/content/xu/destination_data_merge_snowflake.png){:class="img-responsive"}
 
 Weitere Informationen über die aktualisierten Felder finden Sie in der SQL-Anweisung ([nur Custom SQL](#custom-sql)).<br>
 Es ist möglich, die SQL-Anweisung bei Bedarf zu bearbeiten, z.B. bestimmte Spalten von der Aktualisierung auszuschließen.<br>
