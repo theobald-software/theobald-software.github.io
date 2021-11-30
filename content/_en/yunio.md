@@ -48,7 +48,7 @@ Create a backup of the directory: `C:\Program Files\Theobald Software\yunIO\conf
 
 ### Web UI
 
-To access the web UI of yunIO, open a web browser of your choice and enter the URL the server that yunIO is running on.<br>
+To access the web UI of yunIO, open a web browser of your choice and enter the URL of the server that yunIO is running on.<br>
 The URL pattern to access the yunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
 - If the yunIO service runs on a local server, replace `[host]` with *localhost*.
 - If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name of the host on which the service runs.
@@ -84,17 +84,15 @@ To edit an existing service, click on the name of the service you want to edit (
 2. Enter a name for the service and choose an existing SAP connection under *Endpoint* (3).<br>
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
 3. Choose an **Extraction Type** (4). yunIO offers extractions of *SAP Tables or Views* and *Function Modules*. 
-4. Optional: Add a short description for the service (5). Click **[Next]**.
-5. Depending on the chosen extraction type either enter the name or description of a Table/View or the name of a Function Module/BAPI to be extracted (6). 
+4. Optional: Add a short description for the service (5). 
+5. Click **[Save and edit]**.
+6. Depending on the chosen extraction type either enter the name or description of a Table/View or the name or function group of a Function Module/BAPI (6) in the search window. 
 Use wildcards ( * ) if needed.<br>
 ![yunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
 6. Click **[Search]** to display the search results (7). 
-7. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extractions](#table-extraction).
-8. Click **[Save]** to save the service.
-
+7. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extractions](#table-extraction) or [Function Modules](#function-modules).
 
 ### Table Extractions
-
 
 The *SAP Table and Views* menu consists of the following subsections:
 
@@ -115,22 +113,26 @@ Select the columns you want to extract.
 4. **WHERE-clause:**<br>
 Optional: You can use a WHERE-clause to filter your data. For information on the OpenSQL syntax of the WHERE-clause, see [SAP Help - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm).
 
-<!---
 ### Function Modules
 
 The *Function Module* menu consists of the following subsections:
 
+![yunIO-BAPI](/img/content/yunio/bapi-settings.png){:class="img-responsive" }
 
 1. **Function Module:**<br>
-The name and description of the selected function module or BAPI are displayed in the *Function Module*- section.
+The name and description of the selected function module or BAPI are displayed in the *Function Module*- section.<br>
 To select a different source file, click **Select** in the upper right corner of the section.
 2. **Advanced Settings:**<br>
-- **Commits Transactions:** ...
+- **Commits Transactions:** If the check mark is set for Commits Transactions, a funtion module for transaction commit is called after processing the selected function module e.g., *BAPI BAPI_TRANSACTION_COMMIT*. Some SAP function modules require this commit function to successfully update data in the database.
 3. **Function Module Interface Parameters:**<br>
-- **Import:** Define either static input parameters (default) or dynamic input parameters (parameterized).
+- **Import:** Define which fields are to be parameterized (*Parameterized*) and which fields use the default values from SAP (*Default*).
 - **Export:** Select the data that is to be added to the output.
-- **Tables:** Tables can be entered and extractes from the function module or BAPI. To import a table enter the name of the table under *Input Value*. To add a table to the output, mark the table under *Output*.
--->
+- **Changings:** Select additional input and output.
+- **Tables:** Tables can be entered and extracted from function modules and BAPIs. To import a table when calling the service, mark it as *Parameterized* in the *Input Mode* column. 
+To add a table to the output, mark the table in the *Output* column.
+
+{: .box-note }																   
+**Note:** Fields that are marked as *Parameterized* can be filled when calling the service.
 
 <!---
 ### Table Extraction
