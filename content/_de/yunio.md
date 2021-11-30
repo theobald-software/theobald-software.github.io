@@ -148,13 +148,7 @@ Webdienste, die mit yunIO erstellt werden, sind in alle Cloud Anwendungen integr
 REST API/Swagger (OpenAPI) unterstützen, z.B. Power Automate, Nintex, Firestart, Webcon uvm.
 
 Um einen Service zu testen, können SIe die URL des Service Endpoints unter **Service** (1) triggern.
-Der Service wird dann direkt im Browser ausgeführt.
-
-{: .box-note }
-**Hinweis:** Wenn Sie einen Dienst im Browser ausführen, können keine Parameter übergeben werden.
-Im Browser werden nur Daten ohne Eingabeparameter angezeigt.
-
-
+Der Service wird dann direkt im Browser ausgeführt.<br>
 Um einen yunIO Web-Service in ein Prozessautomatisierungstool zu integrieren, das Swagger/OpenAPI unterstützt, kopieren Sie den Code oder laden Sie die Definition des Services herunter (2).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
