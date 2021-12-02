@@ -110,12 +110,12 @@ This option is only available for the following destinations:
 
 ![Run-Extraction-Output](/img/content/xu/xu_run_extraction_output.png){:class="img-responsive"}
 
-**Limit the number of displayed rows**<br>
+**Limiting the number of displayed rows**<br>
 In the *Output* tab the extraction results are displayed to a maximum amount of 500 rows.
 The number of rows to be displayed can be changed using the **Display rows from line** boxes.
 
-**Filter Results**<br>
-To filter the results, enter filter values above the columns of the results and click **[Display]**.<br>
+**Filtering Results**<br>
+To filter the results, enter filter values above the columns of the results and click **[Display]**.
 To undo the filtering, click **[Clear search]**, followed by **[Display]**.
 
 ### Buttons (5) 
