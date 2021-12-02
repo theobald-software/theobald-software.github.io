@@ -100,10 +100,26 @@ Solange die Checkbox **Auto scroll to the end** aktiv ist, wird automatisch zum 
 Im *xu.exe* Tab werden die Befehle der xu.exe Kommandozeile angezeigt. 
  
 #### Output 
-Im *Output* Tab werden die Ergebnisse der Extraktion bis zu max. 500 Zeilen angezeigt.
-Die Anzahl der anzuzeigenden Zeilen kann über die Boxen **Display rows from line** angepasst werden.
+
+Im *Output* Tab werden die Ergebnisse der Extraktion angezeigt.
+Die Anzeige ist nur bei folgenden Destinationen verfügbar:
+- Web Service CSV 
+- Web Service JSON 
+- Microsoft SQL Server
+- Alteryx
+- SQL Server Reporting Services 
+- QlikSense&QlikView
 
 ![Run-Extraction-Output](/img/content/xu/xu_run_extraction_output.png){:class="img-responsive"}
+
+**Anzahl der angezeigten Zeilen einschränken**<br>
+Im *Output* Tab werden standardmäßig bis zu max. 500 Zeilen angezeigt.
+Die Anzahl der anzuzeigenden Zeilen kann über die Boxen **Display rows from line** unter der Anzeige angepasst werden.
+
+**Ergebnisse Filtern**<br>
+Um die Ergebnisse nach bestimmten Werten zu filtern, geben Sie die gesuchten Werte über der jeweiligen Spalte ein und klicken Sie auf **[Display]**.<br>
+Um die Filter wieder rückgängig zu machen, klicken Sie auf **[Clear search]** und anschließend wieder auf **[Display]**.
+
 
 ### Run, Abort und Close (5) 
 **[Run]** startet die Extraktion, **[Abort]** bricht sie ab und **[Close]** schließt das Fenster.
