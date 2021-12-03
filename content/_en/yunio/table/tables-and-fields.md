@@ -16,26 +16,27 @@ This section shows how to use the *SAP Table and Views* component.
 
 ### Look Up an SAP Table or View
 
-1. When adding a new *Service*, select *SAP Table and Views* as the **Extraction Type** and click **[Next]** to open the *Search SAP Table or View* menu.
+1. When adding a new *Service*, select *SAP Table and Views* as the **Extraction Type** and click **[Save and edit]** to open the *Search SAP Table or View* menu.
 2. Enter the name of the Table or View to be extracted in the field **Search by name** (1) or search for description of a Table. Use wildcards ( * ) if needed.
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
 3. Click **[Search]** (2) to display the search results.
 4. Select a source file from the list of available search results (3). The extraction settings of the *SAP Table and Views* open automatically.<br>
 
-### Extraction Settings
+### Settings
 
 The *SAP Table and Views* menu consists of the following subsections:
-- [Table or View](#table-or-view) (4) displays the name and description of the selected data source.
-- [Advanced Settings](#advanced-settings) (5) are settings that only affect the respective extraction type.
-- [Output Columns](#output-columns) (6) can be used to select the columns you want to extract.
-- [WHERE-Clause](#where-clause) (7) is optional and can be used to filter data.
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
 
+- [Table or View](#table-or-view) (4) displays the name and description of the selected SAP Table or View.
+- [Advanced Settings](#advanced-settings) (5) define how data is extract from SAP.
+- [Output Columns](#output-columns) (6) define which columns are added to the result set.
+- [WHERE-Clause](#where-clause) (7) offers an optional data filter.
+
 ### Table or View (1)
 
-The name and description of the selected Table or View is displayed in the **Table or View** subsection.<br>
-To select a different source file, click **Select** in the upper right corner of the subsection.
+The name and description of the selected Table or View is displayed in the **Table or View** section.<br>
+To select a different source file, click **Select** in the upper right corner of the section.
 
 ### Advanced Settings (2)
 

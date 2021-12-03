@@ -51,19 +51,20 @@ To edit an existing service, click on the name of the service you want to edit (
 2. Enter a name for the service and choose an existing SAP connection under *Endpoint* (3).<br>
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
 3. Choose an **Extraction Type** (4). yunIO offers extraction of *SAP Tables or Views* and *Function Modules*. 
-4. Optional: Add a short description for the service (5). Click **[Next]**.
-5. Depending on the chosen extraction type either enter the name or description of a Table/View or the name of a Function Module/BAPI to be extracted (6). 
+4. Optional: Add a short description for the service (5). 
+5. Click **[Save and edit]**.
+6. Depending on the chosen extraction type either enter the name or description of a Table/View or the name of a Function Module/BAPI to be extracted (6). 
 Use wildcards ( * ) if needed.<br>
 ![yunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
-6. Click **[Search]** to display the search results (7). 
-7. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extraction](#table-extraction) or [Function Module](./bapi)..
-8. Click **[Save]** to save the service.
+7. Click **[Search]** to display the search results (7). 
+8. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extraction](#table-extraction) or [Function Module](./bapi)..
+
 
 ### How to Use a Service
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, Firestart, Webcon, etc.
 
-To test a service after creation, you can trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. <br>
+To test a service after creation, trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. <br>
 To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy the code or download the service definition (2).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
