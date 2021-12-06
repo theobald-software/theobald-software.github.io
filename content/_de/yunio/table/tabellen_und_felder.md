@@ -21,8 +21,6 @@ Dieser Abschnitt zeigt, wie Sie die *SAP Table and Views* Komponente verwenden.
 3. Klicken Sie auf **[Search]** (2), um alle Suchergebnisse anzuzeigen.
 4. Wählen Sie eine Quelle aus (3). Das Hauptmenü *SAP Table and Views* öffnet sich automatisch.<br>
 
-### Extraktionseinstellungen
-
 Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 - [Table or View](#tabelle-oder-ansicht) (4)
 - [Advanced Settings](#fortgeschrittene-einstellungen) (5)
@@ -31,11 +29,11 @@ Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 
 ![SAP-Table-or-Views](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px" }
 
-### Table or View (1)
+### Table or View
 Der Name und die Beschreibung der gewählten Tabelle oder Ansicht wird im Abschnitt **Table or View** angezeigt.<br>
 Um eine andere Quelldatei auszuwählen, klicken Sie auf **Select** (4) in der oberen rechten Ecke des Abschnitts.
 
-### Advanced Settings (2)
+### Advanced Settings
 
 ### Function Name
 Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Dieses Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind.
@@ -79,13 +77,13 @@ Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen
 {: .box-tip }
 **Tipp:** Die Extraktionsjobs befinden sich im SAP JobLog (**SM37**) unter dem JobName *theo_read_table*.
 
-### Output Columns (3)
+### Output Columns
 
 Sie können entweder alle oder nur einzelne Spalten für die Extraktion auswählen. <br>
 Standardmäßig sind alle Spalten für die Tabellenextraktion ausgewählt. 
 Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.
 
-### WHERE-Clause (4)
+### WHERE-Clause
 Sie können eine WHERE-Bedingung verwenden, um Ihre Daten zu filtern.
 
 #### Syntaxregeln

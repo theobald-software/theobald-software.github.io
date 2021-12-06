@@ -22,9 +22,7 @@ This section shows how to use the *SAP Table and Views* component.
 3. Click **[Search]** (2) to display the search results.
 4. Select a source file from the list of available search results (3). The extraction settings of the *SAP Table and Views* open automatically.<br>
 
-### Settings
-
-The *SAP Table and Views* menu consists of the following subsections:
+The *SAP Table and Views* settings consist of the following subsections:
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
 
@@ -33,12 +31,12 @@ The *SAP Table and Views* menu consists of the following subsections:
 - [Output Columns](#output-columns) (6) define which columns are added to the result set.
 - [WHERE-Clause](#where-clause) (7) offers an optional data filter.
 
-### Table or View (1)
+### Table or View
 
 The name and description of the selected Table or View is displayed in the **Table or View** section.<br>
 To select a different source file, click **Select** in the upper right corner of the section.
 
-### Advanced Settings (2)
+### Advanced Settings
 
 #### Function Name
 Specifies the name of the function module used for data extraction. This field is filled automatically depending on what function modules are installed on your SAP system.
@@ -82,13 +80,13 @@ Activate the setting **Run in background** for long-running extractions with a v
 {: .box-tip }
 **Tip:** The extraction jobs can be found in the SAP JobLog (**SM37**) under the JobName *theo_read_table*.
 
-### Output Columns (3)
+### Output Columns
 
 You can select either all or only individual columns for extraction. <br>
 Per default all columns are selected to be extracted. 
 Deselect the ones you don’t want to extract.
 
-### WHERE-Clause (4)
+### WHERE-Clause
 Use a WHERE clause to filter your data.
 
 #### Syntax Rules
