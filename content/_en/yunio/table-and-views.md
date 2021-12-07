@@ -1,12 +1,12 @@
 ---
 ref: yunio-table-01
 layout: page
-title: Defining a Table/View Extraction
-description: Tables and Fields
+title: SAP Table and Views
+description: Defining a Table/View Extraction
 product: yunio
-parent: table
+parent: yunio
 permalink: /:collection/:path
-weight: 1
+weight: 15
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 progressstate: 5
