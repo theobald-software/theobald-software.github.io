@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=amazon-aws-s3
 progressstate: 5
 ---
 
-The following section describes the loading of the SAP extraction data to Hadoop.
+The following section shows how to load extracted SAP data to [Hadoop](https://hadoop.apache.org/).
 
 ## Connection
 
