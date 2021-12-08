@@ -18,7 +18,7 @@ The information described in the following section is a prerequisite for all sub
 To access the web UI of yunIO, open a web browser of your choice and enter the URL the server that yunIO is running on.<br>
 The URL pattern to access the yunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
 - If the yunIO service runs on a local server, replace `[host]` with *localhost*.
-- If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name of the host on which the service runs.
+- If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name or IP address of the host on which the service runs.
 - After the installation of yunIO the web UI is accessible under the default port 8077. <br>
 You can configure the port under *Settings* in the yunIO Web UI
 
@@ -48,21 +48,20 @@ In the *Services* menu you can create new web services and edit, run or delete e
 1. To create a new service, click **[Add Service]** (1).<br>
 To edit an existing service, click on the name of the service you want to edit (2).<br>
 ![yunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
-2. Enter a name for the service and choose an existing SAP connection under *Endpoint* (3).<br>
+2. Enter a name for the service and choose an existing SAP connection under *General* (3).<br>
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
-3. Choose an **Extraction Type** (4). yunIO offers extraction of *SAP Tables or Views* and *Function Modules*. 
-4. Optional: Add a short description for the service (5). 
-5. Click **[Save and edit]**.
-6. Depending on the chosen extraction type either enter the name or description of a Table/View or the name of a Function Module/BAPI to be extracted (6). 
+3. Choose an **Extraction Type** (4). yunIO offers the following options: *SAP Tables or Views*,*Function Modules* or *Transaction*. 
+5. Click **[Save and edit]**. You are automatically directed to the search window of the selected extraction type.
+6. Depending on the extraction type either enter the name or description of a Table/View or the name of a Function Module/BAPI to be extracted (5). 
 Use wildcards ( * ) if needed.<br>
 ![yunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
-7. Click **[Search]** to display the search results (7). 
-8. Select a data source from the list of available search results (8). The extraction settings open automatically, see [Table Extraction](#table-extraction) or [Function Module](./bapi)..
+7. Click **[Search]** to display the search results (6). 
+8. Select a data source from the list of available search results (7). The extraction settings open automatically, see [Table Extraction](#table-extraction) or [Function Modules/BAPIs](./bapi).
 
 
 ### How to Use a Service
 
-Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, Firestart, Webcon, etc.
+Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
 To test a service after creation, trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. <br>
 To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy the code or download the service definition (2).
@@ -72,6 +71,6 @@ To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy
 *****
 #### Related Links
 - [SAP Table or Views](./table)
-- [Function Module](./bapi)
+- [Function Modules/BAPIs](./bapi)
 
 

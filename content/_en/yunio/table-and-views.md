@@ -1,7 +1,7 @@
 ---
 ref: yunio-table-01
 layout: page
-title: SAP Table and Views
+title: SAP Tables and Views
 description: Defining a Table/View Extraction
 product: yunio
 parent: yunio
@@ -40,6 +40,8 @@ To select a different source file, click **Select** in the upper right corner of
 
 #### Function Name
 Specifies the name of the function module used for data extraction. This field is filled automatically depending on what function modules are installed on your SAP system.
+Customer-specific function modules are supported.
+
 The following function modules can be used to extract tables:
 
 - RFC_READ_TABLE (TAB512)
@@ -75,7 +77,7 @@ To avoid a memory overflow on the SAP source system and to avoid huge overheads,
 #### Run in background
 If this checkbox is checked, the table extraction is executed as a background job in SAP. 
 Extract data in background job setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0. 
-Activate the setting **Run in background** for long-running extractions with a very large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
+Activate the setting **Run in background** for long-running extractions with a large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
 
 {: .box-tip }
 **Tip:** The extraction jobs can be found in the SAP JobLog (**SM37**) under the JobName *theo_read_table*.

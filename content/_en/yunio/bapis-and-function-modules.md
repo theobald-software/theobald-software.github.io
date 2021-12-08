@@ -1,7 +1,7 @@
 ---
 ref: yunio-bapis-function-01
 layout: page
-title: Function Module
+title: Function Modules/BAPIs
 description: Define a BAPI Extraction
 product: yunio
 parent: yunio
