@@ -37,12 +37,16 @@ If the certificate is not listed in the menu or in the Windows certificate store
 Once a certificate is selected, the option **TLS enabled** is available.<br>
 Enable or disable the usage of transport encryption for the web server.
 
-### CORS List
+### Allowed Origins (CORS)
 
-Enter a URL you want to add to the list of URLs ...
+{: .box-warning }
+**Warning! Cross-Origin Request Blocked** When encountering a CORS error, the URL of your origin is not authorized to send requests to yunIO. Add the URL of your origin to the list of allowed origins.
+
+Enter URLs that are allowed to run cross-origin requests on yunIO.<br>
+Example: To allow a tool like Swagger Inspector to load and test run a yunIO service, the URL `https://inspector.swagger.io` must be added to the list of allowed origins.
 
 {: .box-note }
-**Note:** For testing purposes you can use ( * ) to allow all URLs.
+**Note:** For testing purposes you can use ( * ) to allow all URLs. When first installing yunIO this is set by default.
 
 
 ### Services
