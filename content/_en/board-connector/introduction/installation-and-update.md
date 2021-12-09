@@ -45,7 +45,7 @@ The list below shows several most important files that are placed into the defau
 |:----|:---|
 | ABAP directory | Directory with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
 | logs directory| Directory with server and extraction logs. See also section [Logging](../logging). |
-| config directory | Directory created automatically with the first extraction, containing all extractions and the corresponding log files. See also section [Backup](#backup). |
+| config directory | Directory created automatically with the first extraction, containing all extractions and the corresponding log files. See also section [Backup](../advanced-techniques/backup-and-migration). |
 | result-cache directory | Directory with extraction cache files. |
 | BCDesigner.exe | Application that launches BOARD Connector Designer to create, test and monitor extractions.|
 | BCService.exe | Application that launches BOARD Connector Server as Windows Service.  Usually boots automatically and runs in the background. |
