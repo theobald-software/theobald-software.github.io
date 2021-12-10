@@ -26,17 +26,6 @@ Die Installation von Z-Funktionsbausteinen auf der SAP S/4HANA Cloud Extended Ed
 Daher ist die Funktionalität bei der Extraktion von [Tabellen](../sap-customizing/funktionsbaustein-fuer-table-extraktion#einschränkungen-von-rfc_read_table) und [Reports](../sap-customizing/report-funktionsbaustein-installieren) für SAP S/4HANA Cloud Extended Edition eingeschränkt.
 
 
-### HANA Datenbank
-Mit Operational Data Provisioning (ODP) können Sie die SAP HANA-Datenbank eines SAP ABAP Quellsystems verbinden. 
-Die Kommunikation erfolgt über RFC. 
-Mit dem ODP-Kontext für SAP HANA (HANA) stehen folgende HANA-View-Typen zur Verfügung:
-- Analysesichten
-- Kalkulationsansichten und
-- Zugehörige Attributansichten
-
-Der direkte Zugriff auf eine HANA-Datenbank ohne ein SAP-ABAP-Quellsystem wird nicht unterstützt.
-
-
 ### Nicht unterstützte SAP-Systeme
 Nicht unterstützt werden die SAP-Systeme, die nicht auf ABAP-Systemen laufen oder keine RFC-Konnektivität bieten. 
 Die folgenden Systeme werden beispielsweise nicht unterstützt:
@@ -47,3 +36,14 @@ Die folgenden Systeme werden beispielsweise nicht unterstützt:
 - Ariba
 - Success Factors
 - Concur
+
+### HANA Datenbank
+Mit Operational Data Provisioning (ODP) können Sie die SAP HANA-Datenbank eines SAP ABAP Quellsystems verbinden. 
+Die Kommunikation erfolgt über RFC. 
+Mit dem ODP-Kontext für SAP HANA (HANA) stehen folgende HANA-View-Typen zur Verfügung:
+- Analysesichten
+- Kalkulationsansichten und
+- Zugehörige Attributansichten
+
+Der direkte Zugriff auf eine HANA-Datenbank ohne ein SAP-ABAP-Quellsystem wird nicht unterstützt.
+

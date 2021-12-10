@@ -23,6 +23,10 @@ In case of any questions or doubts, feel free to contact Theobald Software by e-
 - [International contact details](https://theobald-software.com/en/contact/)
 - [Setting Up Xtract Universal](/docs/sap-customizing/Requirements_SAPConnectors_v1.0.pdf){:download="Requirements_SAPConnectors"}
 
+{: .box-note }
+**Note:** To evaluate Xtract Universal's Report component, a custom function module must be installed in your SAP system, see [Custom function module for Report](../sap-customizing/install-report-custom-function-module). 
+Customizations for the Table component are available, but not mandatory, see [Custom function module for Table](../sap-customizing/custom-function-module-for-table-extraction) for more information.
+
 ****
 #### Related Links
 - [Requirements](./requirements)

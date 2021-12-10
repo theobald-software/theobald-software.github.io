@@ -25,6 +25,15 @@ The following SAP Releases have only limited support:
 The installation of Custom Function Modules on SAP S/4HANA Cloud Extended Edition is not yet supported.
 Therefore the functionality of [Table](../sap-customizing/custom-function-module-for-table-extraction#rfc_read_table-restrictions) and [Report](../sap-customizing/install-report-custom-function-module) extractions is limited for SAP S/4HANA Cloud Extended Edition.
 
+### Not supported SAP systems
+Not supported are the SAP systems that don’t run on ABAP systems or don't provide RFC connectivity. For example, the following systems are not supported:
+- Business By Design 
+- Business One
+- Business Objects
+- Sybase
+- Ariba
+- Success Factors
+- Concur
 
 ### HANA Database
 You can use Operational Data Provisioning (ODP) to connect the SAP HANA database of an SAP ABAP source system. 
@@ -35,14 +44,3 @@ With the ODP context for SAP HANA (HANA) the following HANA View types are avail
 - Associated Attribute Views
 
 Direct access to a HANA database without an SAP ABAP source system running on the corresponding HANA database is not supported.
-
-
-### Not supported SAP systems
-Not supported are the SAP systems that don’t run on ABAP systems or don't provide RFC connectivity. For example, the following systems are not supported:
-- Business By Design 
-- Business One
-- Business Objects
-- Sybase
-- Ariba
-- Success Factors
-- Concur

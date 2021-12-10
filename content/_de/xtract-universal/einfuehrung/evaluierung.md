@@ -24,6 +24,10 @@ Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail an 
 - [Xtract Universal Einrichtung](/docs/sap-customizing/VoraussetzungUndBetriebSAPKonnektoren_v202110.pdf){:download="VoraussetzungUndBetriebSAPKonnektoren_v202110"}
 
 
+{: .box-note }
+**Hinweis:** Um Xtract Universal's Report-Komponente zu evaluieren, müssen Sie auf Ihrem SAP-System einen Funktionsbaustein installieren, siehe [Funktionsbaustein für Reports](../sap-customizing/report-funktionsbaustein-installieren). 
+Für die Table-Komponente gibt es optionale Anpassungen, mit denen Sie Limitationen des SAP Standardfunktionsbausteins umgehen können, siehe [Funktionsbaustein für Table](../sap-customizing/funktionsbaustein-fuer-table-extraktion).
+
 ****
 #### Weiterführende Links
 - [Voraussetzungen](./systemvoraussetzungen)
