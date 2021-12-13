@@ -5,6 +5,7 @@ title: SAP Tables and Views
 description: Defining a Table/View Extraction
 product: yunio
 parent: yunio
+childidentifier: tables
 permalink: /:collection/:path
 weight: 15
 lang: en_GB

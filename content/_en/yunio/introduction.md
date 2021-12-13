@@ -16,7 +16,9 @@ progressstate: 5
 yunIO is a connector that provides .json based web services to write data to and from a connected SAP system. <br>
 The web services can be easily integrated into your workflow e.g., into Power Automate, Nintex, Swagger, etc.
 
-![yunIO-Components](/img/content/yunio/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
+![yunIO-Automation](/img/content/yunio/yunio-automation.png){:class="img-responsive" width="800px" }<br>
+![yunIO-Business-Processes](/img/content/yunio/yunio-business.png){:class="img-responsive" width="800px" }<br>
+![yunIO-Data-Management](/img/content/yunio/yunio-data-management.png){:class="img-responsive" width="800px" }
 
 *****
 The following sections include information about the requirements and the installation of yunIO:
