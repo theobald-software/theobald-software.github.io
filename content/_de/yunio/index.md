@@ -25,12 +25,13 @@ Bei yunIO handelt es sich um einen Windows-Dienst mit einer eingebetteten Web-UI
 Der yunIO-Dienst wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert. Der Zugriff auf die Web-UI erfolgt über einen Browser Ihrer Wahl.<br>
 Eine Azure Relay-Registrierung kann als sicherer Gateway verwendet werden, um das lokale SAP-System mit der jeweiligen Cloud-Anwendung zu verbinden.
 
-![yunIO-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
+![yunIO-Components](/img/content/yunio/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
 
 ### Extraktionstypen
 
-yunIO bietet zwei Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
+yunIO bietet drei Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 
-- [**Funktionsbausteine**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsbausteine zu.
 - [**SAP Table und Views**](./table) extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+- [**Funktionsbausteine / BAPIs**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsbausteine zu.
+- [**Transaktionen**](./transactions) führt SAP-Transaktionen direkt aus yunIO aus.
 

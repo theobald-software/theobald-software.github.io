@@ -12,6 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=requirements
 Progressstate: 5
 ---
 
+
 ### Supported SAP Systems and releases
 All communication with SAP is performed via the RFC protocol. 
 All SAP ABAP based systems that provide RFC connectivity are supported.
@@ -39,15 +40,19 @@ The following SAP Releases have only limited support:
 {% include _content/en/requirements/sap-misc.md %}
 {% include _content/en/requirements/operating-systems.md %}
 
+### Supported Web Browsers
+yunIO supports current versions of the following web browsers: 
+- Firefox 
+- Chrome
+- Edge
+- Safari
 
 ### Processor Cores
 Minimum: 2 Cores. 
 1 additional core is required for each additional parallel extraction. 
 
-
 ### Processor Speed   
 Minimum: Processor: 1.4 GHz, Recommended: 2.0 GHz or faster.
-
 
 ### Main Memory
 Minimum: 8 GB, Recommended: 12 GB for up two parallel extractions.
