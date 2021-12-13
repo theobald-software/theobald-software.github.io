@@ -32,7 +32,14 @@ No additional installations are required to use the Snowflake destination.
 #### Connection
 
 **Output Directory**<br>
-Enter an existing local directory in which the extracted files are stored.
+Enter an existing local directory in which the extracted data is written as a csv file.
+
+Once the file has reached a certain size, it is zipped (gzip) and uploaded via PUT command to the Snowflake staging area.
+The data is then copied via COPY command to their target Snowflake table.
+If the extraction process is not finished, a new csv file is created and the process (gzip + PUT command) repeats.
+While running an extraction, the csv files in the local directory and the staging area are deleted.<br>
+For more information, see [File Splitting](#file-splitting). 
+
 
 **Region**<br>
 Select the region of the Snowflake environment from the drop-down-menu.<br>
@@ -86,6 +93,18 @@ The following settings can be defined for the destination:
 {% include _content/en/xu-specific/destinations/general/column-name-style.md %}
 
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}
+
+### File Splitting
+
+**Max file size**<br>
+Defines the maximum size of the local csv file in the [Output Directory](#destination-details), before it is uploaded to snowflake via PUT and COPY command. 
+The default value for **max file size** is 50 MB.
+
+If *File Splitting* is not active, a single csv file is created and uploaded via a PUT and COPY command.
+
+{:.box-note}
+**Note:** The value for **Max file size** does not equal the size of the uploaded file, because the data is zipped via gzip before upload.
+
 
 ### Preparation - SQL Commands
 

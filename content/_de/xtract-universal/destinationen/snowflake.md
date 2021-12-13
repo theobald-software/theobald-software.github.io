@@ -23,7 +23,6 @@ Es sind keine zusätzlichen Installationen für die Nutzung der Snowflake Destin
 
 ## Verbindung
 
-
 {% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
@@ -32,7 +31,13 @@ Es sind keine zusätzlichen Installationen für die Nutzung der Snowflake Destin
 #### Connection
 
 **Output directory**<br>
-Angabe eines vorhandenen Verzeichnisses, in das die Zieldateien abgelegt werden.
+Angabe eines lokalen Verzeichnisses, in das die extrahierten Daten als csv-Datei abgelegt werden.
+
+Wenn die Datei eine bestimmte Größe erreicht hat, wird sie gezippt (gzip) und via PUT-Befehl in den Snowflake Staging-Bereich hochgeladen. 
+Anschließend werden die Daten per COPY-Befehl in die entsprechende Snowflake-Tabelle kopiert.
+Wenn der Extraktionsvorgang noch nicht abgeschlossen ist, wird eine neue csv-Datei erzeugt und der Vorgang (gzip + PUT-Befehl) wiederholt sich.
+Das lokale Verzeichnis und der Staging-Bereich werden im Verlauf der Extraktion geleert, d.h., die erzeugten csv-Dateien werden wieder gelöscht.<br>
+Für weitere Informationen, siehe [File Splitting](#file-splitting). 
 
 **Region**<br>
 Angabe der Region der Snowflake-Umgebung.<br>
@@ -88,6 +93,18 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 {% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
+
+### File Splitting
+
+**Max file size**<br>
+Definiert, wie groß die im [Output-Verzeichnis](#destination-details) erzeugten csv-Dateien maximal werden können, bevor ein Upload (PUT und COPY-Befehl) nach Snowflake erfolgt. 
+Der Standardwert für die **max file size** ist 50 MB.
+
+Wenn *File Splitting* nicht aktiv ist, wird eine einzige csv-Datei erzeugt und am Ende der Extraktion mit einem einzigen PUT und COPY-Befehl hochgeladen.
+
+{:.box-note}
+**Hinweis:** Die angegeben MB-Größe entspricht nicht der Größe der hochgeladenen Datei, da diese vor dem Upload via gzip gezippt wird. Für mehr Informationen, siehe [Snowflake: Komprimierung bei PUT-Befehl](https://docs.snowflake.com/de/sql-reference/sql/put.html#optional-parameters).
+
 
 ### Preparation - SQL Anweisungen
 
