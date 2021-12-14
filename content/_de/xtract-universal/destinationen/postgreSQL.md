@@ -23,13 +23,11 @@ Dieser ist im Setup der Xtract Universal bereits vorhanden und wird bei der Ausf
 ### Unterstützte Versionen
 
 Folgende PostgreSQL Versionen werden unterstützt:
+- 14
 - 13
 - 12
 - 11
 - 10
-- 9.6
-- 9.5
-- 9.4
 
 Weiterführende Informationen bezüglich der Versionierung entnehmen Sie der offiziellen [Webseite](https://www.postgresql.org/support/versioning/).
 
