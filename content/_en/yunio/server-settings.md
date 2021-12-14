@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=server
  
 
 The follwing section contains an overview of the yunIO server settings in the **Settings** menu. <br>
-To save any changes made in the **settings** menu, click **[Save]**.
+To save any changes made in the **Settings** menu, click **[Save]**.
 
 {: .box-note }
 **Note:** The changes are activated when restarting the yunIO server.
@@ -31,7 +31,7 @@ For more information on TLS, see [Microsoft: Transport Layer Security Protocol](
 
 #### Pick Certificate
 Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
-If the certificate is not listed in the menu or in the Windows certificate store, [install the X.509 certificate](./install-x.509-Certificate).
+If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
 
 #### TLS enabled
 Once a certificate is selected, the option **TLS enabled** is available.<br>

@@ -1,7 +1,7 @@
 ---
 ref: yunio-05
 layout: page
-title: Integration
+title: Integrationsszenarien
 description: Integration
 product: yunio
 parent: yunio

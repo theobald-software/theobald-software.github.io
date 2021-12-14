@@ -51,12 +51,9 @@ To edit an existing service, click on the name of the service you want to edit (
 2. Enter a name for the service and choose an existing SAP connection under *General* (3).<br>
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
 3. Choose an **Extraction Type** (4). yunIO offers the following options: *SAP Tables or Views*,*Function Modules* or *Transaction*. 
-5. Click **[Save and edit]**. You are automatically directed to the search window of the selected extraction type.
-6. Depending on the extraction type either enter the name or description of a Table/View or the name of a Function Module/BAPI to be extracted (5). 
-Use wildcards ( * ) if needed.<br>
-![yunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
-7. Click **[Search]** to display the search results (6). 
-8. Select a data source from the list of available search results (7). The extraction settings open automatically, see [Table Extraction](#table-extraction) or [Function Modules/BAPIs](./bapi).
+4. Optional: Add a short description for the service (5).
+5. Click **[Save and edit]**. <br>
+To set up the service, see [SAP Table or View](./table-and-views), [Function Modules / BAPIs](./bapi) or [Transactions](./transactions).
 
 
 ### How to Use a Service
@@ -70,7 +67,6 @@ To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy
 
 *****
 #### Related Links
-- [SAP Table or Views](./table)
-- [Function Modules/BAPIs](./bapi)
-
-
+- [SAP Table or Views](./table-and-views)
+- [Function Module / BAPI](./bapi)
+- [Transactions](./bapi)

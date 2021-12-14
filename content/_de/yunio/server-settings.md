@@ -25,24 +25,30 @@ Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 Die Sicherheitsmethode der Transportverschlüsselung verhindert das Ausspionieren oder Manipulieren der Daten (z.B. SAP-Credentials), die zwischen dem Designer und dem Server ausgetauscht werden.
 Wenn *Transport Layer Security (TLS)* aktiviert ist, wird auf den Webserver über eine https-Verbindung zugegriffen.
-Dafür muss das X.509 Zertifikat installiert sein. 
-Für mehr Informationwn zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol).
+Dafür muss ein X.509 Zertifikat installiert sein. 
+Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol).
 
 
 #### Pick Certificate
 Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509 Zertifikat aus der Liste verfügbarer Zertifikate aus.
-Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgelistet ist, [installieren Sie das X.509 Zertifikat](./x.509-zertifikat-installieren).
+Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgelistet ist, installieren Sie das X.509 Zertifikat.
 
 #### TLS enabled
 Wenn ein Zertifikat gewählt wurde, ist die Option **TLS enabled** verfügbar.<br>
 Über **TLS enabled** aktivieren oder deaktivieren Sie die Verwendung von Transportverschlüsselung für den Webserver.
 
-### CORS List
+### Allowed Origins (CORS)
 
-Geben Sie eine URL ein, die Sie zur Liste der ...
+{: .box-warning }
+**Warnung! Cross-Origin Request Blocked** Wenn Sie auf einen CORS-Fehler stoßen, ist die URL Ihres Origins nicht authorisiert auf yunIO zuzugreifen.
+Fügen Sie die URL Ihres Origins der Liste authorisierter URL hinzu.
+
+Geben Sie URLs ein, die über Cross-Origin-Requests auf yunIO zugreifen dürfen.<br>
+Beispiel: Um einem Tool wie Swagger Inspector zu ermöglichen, Dienste aus yunIO zu laden und zu testen, muss die URL `https://inspector.swagger.io` hinterlegt sein.
 
 {: .box-note }
 **Hinweis:** Während der Testphase können Sie ( * ) verwenden, um alle URLs zuzulassen.
+Wenn Sie yunIO zum ersten Mal installieren, ist diese Einstellung automatisch gesetzt.
 
 ### Services
 

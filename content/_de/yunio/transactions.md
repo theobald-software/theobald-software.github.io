@@ -1,8 +1,8 @@
 ---
 ref: yunio-transaction-01
 layout: page
-title: Transactions
-description: Transactions
+title: Transaktionen
+description: Transaktionen
 product: yunio
 parent: yunio
 permalink: /:collection/:path

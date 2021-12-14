@@ -50,21 +50,18 @@ Um einen bereits vorhandenen Service zu bearbeiten, klicken Sie auf den Namen de
 ![yunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
 2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus (3).
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
-3. Wählen Sie einen Extraktionstyp (4). yunIO bietet hierfür zwei Möglichkeiten: *SAP Tables or Views* oder *Function Modules*.
-4. Optional: Geben Sie unter *Description* eine kurze Beschreibung des Services ein (5). Klicken Sie auf **[Next]**.
-5. Je nach gewähltem Extraktionstyp geben Sie den Namen oder die Beschreibung der zu extrahierenden Tabelle/Ansicht oder des zu extrahierenden Funktionsmoduls/BAPIs ein (6). 
-Verwenden Sie Wildcards ( * ), falls nötig. <br>
-![yunIO-search](/img/content/yunio/search-table.png){:class="img-responsive" width="750px"}
-6. Klicken Sie auf **[Search]**, um die Suchergebnisse anzuzeigen (7). 
-7. Wählen Sie eine Quelldatei aus (8). Das Menü für die Extraktionseinstellungen öffnet sich automatisch, siehe [SAP Tabelle oder Ansicht](./xtract-is-table) oder [Funktionsbausteine](./xtract-is-bapi).
-8. Klicken Sie auf **[Save]**, um den Service zu speichern. <br>
+3. Wählen Sie einen Extraktionstyp (4). yunIO bietet folgende Optionen: *SAP Tables or Views*, *Function Modules* und *Transactions*.
+4. Optional: Geben Sie unter Description eine kurze Beschreibung des Services ein (5).
+5. Klicken Sie auf **[Save and edit]**.<br>
+Richten Sie den Service ein, siehe [SAP Tabelle oder Ansicht](./table-and-views), [Funktionsbausteine / BAPI](./bapis-and-function-modules) oder [Transaktionen](./transactions).
+
 
 ### Einen Service ausführen
 
 Webdienste, die mit yunIO erstellt werden, sind in alle Cloud Anwendungen integrierbar, die
-REST API/Swagger (OpenAPI) unterstützen, z.B. Power Automate, Nintex, Firestart, Webcon uvm.
+REST API/Swagger (OpenAPI) unterstützen, z.B. Power Automate, Nintex, uvm.
 
-Um einen Service zu testen, können SIe die URL des Service Endpoints unter **Service** (1) triggern.
+Um einen Service zu testen, können Sie die URL des Service Endpoints unter **Service** (1) triggern.
 Der Service wird dann direkt im Browser ausgeführt.<br>
 Um einen yunIO Web-Service in ein Prozessautomatisierungstool zu integrieren, das Swagger/OpenAPI unterstützt, kopieren Sie den Code oder laden Sie die Definition des Services herunter (2).
 
@@ -72,6 +69,6 @@ Um einen yunIO Web-Service in ein Prozessautomatisierungstool zu integrieren, da
 
 *****
 #### Weiterführende Links
-- [SAP Table or View](./table)
-- [Function Module](./bapi)
-
+- [SAP Tabelle oder Ansicht](./table-and-views)
+- [Funktionsbaustein / BAPI](./bapis-and-function-modules)
+- [Transaktionen](./transactions)

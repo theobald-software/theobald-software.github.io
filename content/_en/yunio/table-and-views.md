@@ -21,7 +21,8 @@ This section shows how to use the *SAP Table and Views* component.
 2. Enter the name of the Table or View to be extracted in the field **Search by name** (1) or search for description of a Table. Use wildcards ( * ) if needed.
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
 3. Click **[Search]** (2) to display the search results.
-4. Select a source file from the list of available search results (3). The extraction settings of the *SAP Table and Views* open automatically.<br>
+4. Select a source file from the list of available search results (3). 
+The extraction settings of *SAP Table and Views* open automatically.<br>
 
 The *SAP Table and Views* settings consist of the following subsections:
 
@@ -29,7 +30,7 @@ The *SAP Table and Views* settings consist of the following subsections:
 
 - [Table or View](#table-or-view) (4) displays the name and description of the selected SAP Table or View.
 - [Advanced Settings](#advanced-settings) (5) define how data is extract from SAP.
-- [Output Columns](#output-columns) (6) define which columns are added to the result set.
+- [Output Columns](#output-columns) (6) define which columns are extracted.
 - [WHERE-Clause](#where-clause) (7) offers an optional data filter.
 
 ### Table or View
@@ -56,7 +57,7 @@ The following function modules can be used to extract tables:
 **Warning! Duplicates in the target environment!**<br>
 The SAP standard modules for table extraction do not have pointers for table fields. 
 In larger tables this may cause low performance and duplicates in the target environment. 
-Use the function module from Theobald Software Z_THEO_READ_TABLE to ensure smooth extractions.
+Use the function module [Z_THEO_READ_TABLE](./table/custom-function-module-for-table-extraction) from Theobald Software to ensure smooth extractions.
 
 Note the necessary [authorization for SAP tables](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
 ```
@@ -77,7 +78,7 @@ To avoid a memory overflow on the SAP source system and to avoid huge overheads,
 
 #### Run in background
 If this checkbox is checked, the table extraction is executed as a background job in SAP. 
-Extract data in background job setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0. 
+This setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0. 
 Activate the setting **Run in background** for long-running extractions with a large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
 
 {: .box-tip }
@@ -120,4 +121,4 @@ Use a WHERE clause to filter your data.
 | (NOT) LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
 | (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
 
-Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
+For more information on the OpenSQL syntax see [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm). 

@@ -31,7 +31,7 @@ An Azure Relay registration can be used as a secure gateway to connect the local
 
 yunIO offers two extraction types to cover a range of demands of SAP data extraction.
 
-- [**SAP Table or View**](./table) extracts data from SAP tables and views; allows joining several tables on the SAP side.
+- [**SAP Table or View**](./table-and-views) extracts data from SAP tables and views; allows joining several tables on the SAP side.
 - [**Function Module / BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
 - [**Transaction**](./transactions) executes SAP transactions from yunIO to your SAP system.
 
