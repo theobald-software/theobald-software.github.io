@@ -67,7 +67,7 @@ Wählen Sie Ihre Eingabeparameter:
 ### Export-Parameter
 Export-Parameter repräsentieren die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.
 Im Tab **Export** können Sie Ausgabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden:
-- Um ein Feld zu der Ausgabe des Funktionsbausteins /BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.
+- Um ein Feld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.
 
 ![BAPI export parameters](/img/content/yunio/BAPI-output.png){:class="img-responsive"}
 
@@ -89,7 +89,7 @@ Im Tab **Tables** können Sie Tabellen-Parameter für den Import und Export zu u
 - Tabellenelder, die auf *Default (defined in SAP)* stehen, verwenden die Standardwerte aus SAP.
 
 
-**Tabellen als Ausgabeparameter*<br>
-- Um ein Tabellenfeld zu der Ausgabe des Funktionsbausteins /BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.
+**Tabellen als Ausgabeparameter**<br>
+- Um ein Tabellenfeld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.
 
 ![BAPI table](/img/content/yunio/Bapi-table.png){:class="img-responsive"}
