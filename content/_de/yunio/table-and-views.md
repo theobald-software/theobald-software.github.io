@@ -17,26 +17,27 @@ Der folgende Abschnitt beschreibt die Anwendung der *SAP Table and Views* Kompon
 
 ### Eine SAP Tabelle oder Ansicht finden
 
-1. Wenn Sie einen neuen *Service* anlegen, wählen Sie *SAP Table and Views* als Extraktionstyp aus und klicken Sie **[Save and edit]**, um das *Search SAP Table or View* Menü zu öffnen.
-2. Geben Sie den Namen einer Tabelle oder Ansicht in das Feld **Search by name** (1) ein oder suchen Sie nach einer Tabellenbeschreibung. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
+1. Wenn Sie einen neuen *Service* anlegen, wählen Sie *SAP Table and Views* als Extraktionstyp aus.
+2. Klicken Sie auf **[Save and edit]**. Das *Search SAP Table or View* Menü öffnet sich.
+3. Geben Sie den Namen einer Tabelle oder Ansicht in das Feld **Search by name** (1) ein oder suchen Sie nach einer Tabellenbeschreibung. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
-3. Klicken Sie auf **[Search]** (2), um alle Suchergebnisse anzuzeigen.
-4. Wählen Sie eine Quelldatei aus der Liste verfügbarer Suchergebnisse aus (3). 
-Die Extraktionseinstellungen für *SAP Tabelle und Ansichten* öffnet sich automatisch.<br>
+4. Klicken Sie auf **[Search]** (2), um alle Suchergebnisse anzuzeigen.
+5. Wählen Sie eine Quelldatei aus der Liste verfügbarer Suchergebnisse aus (3). 
+Die Extraktionseinstellungen für *SAP Tabelle und Ansichten* öffnen sich automatisch.<br>
 
 Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
 
 - [Table or View](#tabelle-oder-ansicht) (4) zeigt den Namen und die Beschreibung der gewählten SAP Tabelle oder Ansicht an.
-- [Advanced Settings](#fortgeschrittene-einstellungen) (5) definieren, wie Daten aus SAp extrahiert werden.
+- [Advanced Settings](#fortgeschrittene-einstellungen) (5) definieren, wie Daten aus SAP extrahiert werden.
 - [Output Columns](#ausgabespalten) (6) definieren, welche Spalten extrahiert werden.
 - [WHERE-Clause](#where-bedingung) (7) ermöglicht das Filtern von Daten.
 
 ### Table or View
 
-Der Name und die Beschreibung der gewählten Tabelle oder Ansicht wird im Abschnitt **Table or View** angezeigt.<br>
-Um eine andere Quelldatei auszuwählen, klicken Sie auf **Select** in der oberen rechten Ecke des Abschnitts.
+Der Name und die Beschreibung der gewählten Tabelle oder Ansicht werden im Abschnitt **Table or View** angezeigt.<br>
+Um eine neue Quelldatei auszuwählen, klicken Sie auf **Select** in der oberen rechten Ecke des Abschnitts.
 
 ### Advanced Settings
 
