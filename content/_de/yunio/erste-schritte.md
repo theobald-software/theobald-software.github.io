@@ -39,7 +39,7 @@ Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf den Namen d
 Je nachdem ob der Verbindungsaufbau erfolgreich war oder nicht, öffnet sich ein Fenster mit einer entsprechenden Statusmeldung.
 5. Speichern Sie Ihre Eingaben über **[Save]**.
 
-Für eine detailiertere Beschreibung zum Erstellen einer SAP-Verbindung, siehe [SAP-Verbindung](./sap-verbindungen-anlegen).
+Für mehr Informationen zum Einrichten der SAP-Verbindung, siehe [SAP-Verbindung](./sap-verbindungen-anlegen).
 
 ### Einen Service anlegen
 
@@ -52,8 +52,8 @@ Um einen bereits vorhandenen Service zu bearbeiten, klicken Sie auf den Namen de
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
 3. Wählen Sie einen Extraktionstyp (4). yunIO bietet folgende Optionen: *SAP Tables or Views*, *Function Modules* und *Transactions*.
 4. Optional: Geben Sie unter Description eine kurze Beschreibung des Services ein (5).
-5. Klicken Sie auf **[Save and edit]**.<br>
-Richten Sie den Service ein, siehe [SAP Tabelle oder Ansicht](./table-and-views), [Funktionsbausteine / BAPI](./bapis-and-function-modules) oder [Transaktionen](./transactions).
+5. Klicken Sie auf **[Save and edit]**.
+Richten Sie den Service ein, siehe [SAP Tabelle oder Ansicht](./table-and-views), [Funktionsbausteine / BAPIs](./bapis-and-function-modules) oder [Transaktionen](./transactions).
 
 
 ### Einen Service ausführen

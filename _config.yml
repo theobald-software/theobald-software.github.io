@@ -67,7 +67,7 @@ language:
     homepage-xtract-universal: "The flexible SAP interface for databases, analytics, BI or cloud solutions."
     homepage-board-connector: "Use this to access your SAP data directly from BOARD, without an additional data warehouse."
     homepage-xtract-for-alteryx: "Integrate your SAP data into Alteryx very simple drag & drop within the Alteryx Designer."
-    homepage-yunio: "SAP process automation with cloud environments"
+    homepage-yunio: "SAP process automation with cloud environments."
     search-no-results: "We didn't find any results for the search: "
     search-title: "Search the Online Help"
     search-results: "Results"

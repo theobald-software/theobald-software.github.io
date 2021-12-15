@@ -123,3 +123,8 @@ Use a WHERE clause to filter your data.
 | (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
 
 For more information on the OpenSQL syntax see [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm). 
+
+*****
+#### Related Links
+- [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
+- [KB: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)

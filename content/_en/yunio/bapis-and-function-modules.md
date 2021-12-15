@@ -81,3 +81,8 @@ In the tab **Tables** you can define table parameters for importing and exportin
 **Tables as output parameters**<br>
 - To add an item to the output of the Function Module/BAPI, mark the checkbox on the right.<br>
 ![BAPI table](/img/content/yunio/Bapi-table.png){:class="img-responsive"}
+
+*****
+#### Related Links
+- [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
+- [KB: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)

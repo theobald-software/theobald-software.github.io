@@ -1,5 +1,5 @@
 ---
-ref: yunio-18
+ref: yunio-table-01
 layout: page
 title: SAP Tabelle oder Ansicht
 description: Table
@@ -123,3 +123,8 @@ Verwenden Sie eine WHERE-Bedingung, um Ihre Daten zu filtern.
 | (NOT) BETWEEN | Wahr, wenn der Inhalt des Operanden operand (nicht) zwischen den Werten der Operanden operand1 und operand2 liegt. |
 
 Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
+
+*****
+#### Weiterführende Links
+- [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
+- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)

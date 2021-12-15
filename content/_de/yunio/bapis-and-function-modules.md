@@ -1,7 +1,7 @@
 ---
-ref: yunio-10
+ref: yunio-bapis-function-01
 layout: page
-title: Funktionsbausteine und BAPIs
+title: Funktionsbausteine / BAPIs
 description: BAPIs und Funktionsbausteine
 product: yunio
 parent: yunio
@@ -93,3 +93,8 @@ Im Tab **Tables** können Sie Tabellen-Parameter für den Import und Export zu u
 - Um ein Tabellenfeld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.
 
 ![BAPI table](/img/content/yunio/Bapi-table.png){:class="img-responsive"}
+
+*****
+#### Weiterführende Links
+- [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
+- [KB: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)

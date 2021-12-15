@@ -62,7 +62,7 @@ Wenn Sie auf das SAP-System (Application-Server oder Message-Server) über einen
 Beispiel:
 Wenn der Anwendungsserver "hamlet" und der Router-String ``/H/lear.theobald-software.com/H/`` lautet, setzen Sie die Host Property auf ``/H/lear.theobald-software.com/H/hamlet``.
 
-Nähere Informationen zu SAP-Routern finden Sie in der [SAP Online-Help: SAP-Router](https://help.sap.com/saphelp_nw70/helpdata/de/4f/992df1446d11d189700000e8322d00/content.htm?no_cache=true). <br>
+Nähere Informationen zu SAP-Routern finden Sie in der [SAP Online-Help: SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm). <br>
 
 
 ### Authentifizierung

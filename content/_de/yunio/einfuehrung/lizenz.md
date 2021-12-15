@@ -41,7 +41,7 @@ Das *About* Menü von yunIO stellt Direktlinks zu folgenden Theobald Software Su
 
 
 ### Wartung
-Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
+Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/yunio/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
 Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).
 
 

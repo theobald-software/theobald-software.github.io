@@ -17,7 +17,7 @@ Dieser Abschnitt enthält Informationen über die yunIO Server-Einstellungen.<br
 Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 {: .box-note }
-**Hinweis:** Die vorgenommenen Änderungen werden durch den Neustart des yunIO-Servers aktiviert.
+**Hinweis:** Starten Sie den yunIO-Server neu, um die Änderungen zu übernehmen.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 

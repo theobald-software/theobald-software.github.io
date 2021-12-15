@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=avoid-restrictions
 ---
 
 The SAP standard function module RFC_READ_TABLE comes with restrictions for table extractions, see [RFC_READ_TABLE Restrictions](#rfc_read_table-restrictions).<br>
-If the above-mentioned restrictions hinder your work, install the Theobald Software custom function module Z_THEO_READ_TABLE on your SAP system, see [Installing Z_THEO_READ_TABLE](#installing-z_theo_read_table).<br>
+If the restrictions hinder your work, install the Theobald Software custom function module Z_THEO_READ_TABLE on your SAP system, see [Installing Z_THEO_READ_TABLE](#installing-z_theo_read_table).<br>
 
 {: .box-note }
 **Note:** SAP customizing is optional.
