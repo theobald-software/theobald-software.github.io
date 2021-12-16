@@ -4,7 +4,7 @@ layout: page
 title: SAP Funktionsbaustein für Tabellen
 description: Einschränkungen umgehen
 product: yunio
-parent: table
+parent: table-and-views
 permalink: /:collection/:path
 weight: 7
 lang: de_DE

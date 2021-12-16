@@ -4,7 +4,7 @@ layout: page
 title: SAP Customizing for Tables
 description: Custom Function Module for Tables
 product: yunio
-parent: tables
+parent: table-and-views
 permalink: /:collection/:path
 weight: 13
 lang: en_GB

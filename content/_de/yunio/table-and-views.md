@@ -5,7 +5,7 @@ title: SAP Tabelle oder Ansicht
 description: Table
 product: yunio
 parent: yunio
-childidentifier: table
+childidentifier: table-and-views
 permalink: /:collection/:path
 weight: 15
 lang: de_DE
@@ -126,5 +126,6 @@ Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpsei
 
 *****
 #### Weiterführende Links
+- [SAP Funktionsbaustein für Tabellen](./table/funktionsbaustein-fuer-table-extraktion)
 - [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)

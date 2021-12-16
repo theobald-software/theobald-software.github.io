@@ -5,7 +5,7 @@ title: SAP Tables and Views
 description: Defining a Table/View Extraction
 product: yunio
 parent: yunio
-childidentifier: tables
+childidentifier: table-and-views
 permalink: /:collection/:path
 weight: 15
 lang: en_GB
@@ -124,7 +124,9 @@ Use a WHERE clause to filter your data.
 
 For more information on the OpenSQL syntax see [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm). 
 
+
 *****
 #### Related Links
+- [SAP Customizing for Tables](./table/custom-function-module-for-table-extraction)
 - [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
 - [KB: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)

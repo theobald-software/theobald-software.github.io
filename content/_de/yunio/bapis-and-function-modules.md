@@ -92,7 +92,7 @@ Im Tab **Tables** können Sie Tabellen-Parameter für den Import und Export zu u
 **Tabellen als Ausgabeparameter**<br>
 - Um ein Tabellenfeld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.
 
-![BAPI table](/img/content/yunio/Bapi-table.png){:class="img-responsive"}
+![BAPI table](/img/content/yunio/BAPI-table.png){:class="img-responsive"}
 
 *****
 #### Weiterführende Links

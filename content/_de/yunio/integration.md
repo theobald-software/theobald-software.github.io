@@ -16,4 +16,4 @@ In der Theobald [Knowledge Base](https://kb.theobald-software.com/yunio) finden 
 
 Die folgenden Artikel sind in der Knowledge Base verfügbar:
 - [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-serivice-in-postman)
+- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)

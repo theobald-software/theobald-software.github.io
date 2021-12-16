@@ -28,7 +28,7 @@ Beim Starten des Setups können die optionalen Komponenten für die Installation
 |Komponente | Subkomponente |Beschreibung |
 |:----|:---| :---|
 |Main Product Files | |Installiert alle notwendigen Dateien, die zum Verwenden von yunIO notwendig sind.|
-|<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) |
+|<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. |
 |Start Menu Shortcuts |- | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
 |Open the yunIO Designer after installation|- | Öffnet nach der Installation den yunIO Designer in Ihrem Standard-Browser.|
 

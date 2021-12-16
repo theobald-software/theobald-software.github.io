@@ -16,4 +16,4 @@ You can find examples and general information on integration scenarios with thir
 
 The following articles are available:
 - [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-serivice-in-postman)
+- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
