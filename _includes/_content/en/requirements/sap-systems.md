@@ -17,7 +17,10 @@ SAP Releases 4.6C and newer are supported. Including the following:
 * SAP BW/4HANA
 * SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
 * SAP R/3 Version 4.6C and later
-* SAP S/4HANA
+* SAP S/4HANA Cloud Private Edition
+* SAP S/4HANA Private Cloud Managed by SAP (HEC)
+* SAP HEC Customer Edition
+* SAP S/4HANA AnyPremise
 
 The following SAP Releases have only limited support:
 - SAP S/4HANA Cloud Extended Edition (EX)
@@ -27,6 +30,7 @@ Therefore the functionality of [Table](../sap-customizing/custom-function-module
 
 ### Not supported SAP systems
 Not supported are the SAP systems that don’t run on ABAP systems or don't provide RFC connectivity. For example, the following systems are not supported:
+- SAP S/4HANA Cloud Essentials Edition (ES)
 - Business By Design 
 - Business One
 - Business Objects
