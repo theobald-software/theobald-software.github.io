@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 progressstate: 5
 ---
 
-yunIO is a Windows service that comes with an embedded Web UI.<br>
+yunIO provides a Windows service for the communication with the SAP system and comes with an embedded Web UI, the yunIO Designer.<br>
 The yunIO service is installed on a local or cloud-hosted Windows server environment. 
 
 ### Setup
@@ -22,7 +22,7 @@ The yunIO service is installed on a local or cloud-hosted Windows server environ
 
 `yunIOSetup.exe` is an industry standard setup. Execute the `yunIOSetup.exe` file and follow the instructions of the setup.
 
-When starting the setup, components can be selected during the installation. 
+When starting the setup the following components can be selected during the installation. 
 
 ![XU-Setup](/img/content/yunio/yunio-setup.png){:class="img-responsive"}
 
