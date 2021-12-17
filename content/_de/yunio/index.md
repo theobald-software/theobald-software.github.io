@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/
 
 Willkommen in der Online Help für yunIO. 
 
-yunIO ist ein Konnektor der eine Konfigurationsplattform zum Einrichten der Konnektivität zwischen SAP- und Cloud-Anwendungen zur Verfügung stellt.<br>
+yunIO ist ein Konnektor, der eine Konfigurationsplattform zum Einrichten einer Verbindung zwischen SAP- und Cloud-Anwendungen zur Verfügung stellt.<br>
 Der Dienst ermöglicht eine einfache Integration von SAP Daten und Geschäftsprozessen in unterschiedliche Plattformen und Anwendungen.<br>
 Die extrahierten Daten können dann weiterverarbeitet werden, z.B. im Rahmen von Business Intelligence, Datenintegration und Datenanalyse. 
 

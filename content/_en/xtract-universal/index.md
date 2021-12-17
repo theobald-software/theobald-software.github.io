@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/
 
 Welcome to the Online Help for Xtract Universal. 
 
-Xtract Universal is a tool for data extraction from SAP to various target environments. The extracted data can than be further processed  e.g., 
+Xtract Universal is an SAP Connector for data extraction from SAP to various target environments. The extracted data can than be further processed  e.g., 
 in the context of business intelligence, data integration and data analytics.
 
 ### Available Components
