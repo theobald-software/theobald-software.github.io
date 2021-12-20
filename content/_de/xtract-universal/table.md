@@ -11,7 +11,7 @@ weight: 85
 lang: de_DE
 progressstate: 5
 ---
-Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Table Komponente.<br>
+Der folgende Abschnitt beschreibt die Funktion der Xtract Universal **Table** Komponente.<br>
 Mit der Komponente *SAP Table or View* lassen sich Inhalte aus SAP Tabellen und Views abziehen. 
 
 {: .box-tip }
