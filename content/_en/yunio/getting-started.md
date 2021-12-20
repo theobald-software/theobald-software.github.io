@@ -16,7 +16,7 @@ The information described in the following section is a prerequisite for all sub
 
 ### Starting yunIO
 
-To access the yunIO Designer, enter the designer-URL in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers)<br>
+To access the yunIO Designer, enter the designer-URL in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers).<br>
 The URL pattern to access the yunIO Designer is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
 - If the yunIO service runs on a local server, replace `[host]` with *localhost*.
 - If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name or IP address of the host on which the service runs.
@@ -65,7 +65,7 @@ To test a service after creation, trigger the URL of the service endpoint under 
 
 {: .box-note}
 **Note:** Only services that do not require parameters supplied by a caller will display any SAP results in the browser. For parameterized services, use a tool
-that supports Swagger/OpenAPI definitions. 
+that supports Swagger/OpenAPI definitions (e.g.[Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector), [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)) . 
 
 To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy the code or download the service definition (2).
 
