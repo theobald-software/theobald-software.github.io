@@ -10,11 +10,10 @@ weight: 9
 lang: en_EN
 ---
 
-
 The following section gives a general introduction to working with yunIO. 
 The information described in the following section is a prerequisite for all subsequent sections.
 
-### Starting yunIO
+### Starting yunIO Designer
 
 To access the yunIO Designer, enter the designer-URL in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers)<br>
 The URL pattern to access the yunIO Designer is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
@@ -25,7 +24,6 @@ You can configure the port under *Settings* in the yunIO Designer.
 
 {: .box-note}
 **Note:** Make sure that the *yunIO* service is running and that the default port 8077 is not blocked by your firewall.
-
 
 ### Adding an SAP Connection
 
