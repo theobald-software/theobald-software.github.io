@@ -10,20 +10,22 @@ weight: 9
 lang: en_EN
 ---
 
+
 The following section gives a general introduction to working with yunIO. 
 The information described in the following section is a prerequisite for all subsequent sections.
 
-### Starting yunIO Designer
+### Starting yunIO
 
-To access the web UI of yunIO, open a web browser of your choice and enter the URL the server that yunIO is running on.<br>
-The URL pattern to access the yunIO Web UI is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
+To access the yunIO Designer, enter the designer-URL in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers)<br>
+The URL pattern to access the yunIO Designer is `http://[host]:[port]`. Example: `http://localhost:8077`.<br>
 - If the yunIO service runs on a local server, replace `[host]` with *localhost*.
 - If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name or IP address of the host on which the service runs.
-- After the installation of yunIO the web UI is accessible under the default port 8077. <br>
-You can configure the port under *Settings* in the yunIO Web UI
+- After the installation the yunIO Designer is accessible under the default port 8077. <br>
+You can configure the port under *Settings* in the yunIO Designer.
 
 {: .box-note}
 **Note:** Make sure that the *yunIO* service is running and that the default port 8077 is not blocked by your firewall.
+
 
 ### Adding an SAP Connection
 
@@ -40,7 +42,7 @@ To edit an existing connection, click on the name of the connection you want to 
 
 For more detailed information on establishing an SAP connection, see [SAP Connection](./sap-connection).
 
-### Creating a Service
+### Creating a service
 
 In the *Services* menu you can create new web services and edit, run or delete existing web services.
 
@@ -55,11 +57,16 @@ To edit an existing service, click on the name of the service you want to edit (
 To set up the service, see [SAP Table or View](./table-and-views), [Function Module / BAPI](./bapis-and-function-modules) or [Transactions](./transactions).
 
 
-### How to Use a Service
+### How to use a service
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
 To test a service after creation, trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. <br>
+
+{: .box-note}
+**Note:** Only services that do not require parameters supplied by a caller will display any SAP results in the browser. For parameterized services, use a tool
+that supports Swagger/OpenAPI definitions. 
+
 To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy the code or download the service definition (2).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
