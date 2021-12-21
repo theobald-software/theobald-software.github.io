@@ -12,7 +12,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-You can find examples and general information on integration scenarios with third party tools in the [Theobal Knowledge Base](https://kb.theobald-software.com/yunio).
+You can find examples and general information on integration scenarios with third party tools in the [Theobald Software Knowledge Base](https://kb.theobald-software.com/yunio).
 
 The following articles are available:
 - [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)

@@ -13,19 +13,19 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 progressstate: 5
 ---
 
-This section shows how to use the *SAP Table and Views* component.
+This section shows how to use the *SAP Table or View* component.
 
 ### Look Up an SAP Table or View
 
-1. When adding a new *Service*, select *SAP Table and Views* as the **Extraction Type**. 
+1. When adding a new *Service*, select *SAP Table or View* as the **Extraction Type**. 
 2. Click **[Save and edit]**. The *Search SAP Table or View* menu opens.
-3. Enter the name of the Table or View to be extracted in the field **Search by name** (1) or search for description of a Table. Use wildcards ( * ) if needed.
+3. Enter the name of the Table or View to be extracted in the field **Search by name** (1) or search for a Table description. Use wildcards ( * ) if needed.
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
 4. Click **[Search]** (2) to display the search results.
 5. Select a source file from the list of available search results (3). 
 The extraction settings of *SAP Table and Views* open automatically.<br>
 
-The *SAP Table and Views* settings consist of the following subsections:
+The *SAP Table or View* settings consist of the following subsections:
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
 
@@ -43,7 +43,7 @@ To select a different source file, click **Select** in the upper right corner of
 
 #### Function Name
 Specifies the name of the function module used for data extraction. This field is filled automatically depending on what function modules are installed on your SAP system.
-Customer-specific function modules are supported.
+Custom function modules are supported.
 
 The following function modules can be used to extract tables:
 
@@ -91,7 +91,7 @@ You can select either all or only individual columns for extraction. <br>
 Per default all columns are selected to be extracted. 
 Deselect the ones you don’t want to extract.
 
-### WHERE-Clause
+### WHERE Clause
 Use a WHERE clause to filter your data.
 
 #### Syntax Rules
