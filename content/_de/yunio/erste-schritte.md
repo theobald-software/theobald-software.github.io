@@ -11,16 +11,16 @@ lang: de_DE
 ---
 
 Der folgende Abschnitt gibt eine allgemeine Einführung in yunIO. 
-Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung für alle nachfolgenden Abschnitte.
+Die hier beschriebenen Informationen sind eine Voraussetzung für alle nachfolgenden Abschnitte.
 
-### Web-UI aufrufen
+### yunIO Designer aufrufen
 
-Um auf die Web-UI von yunIO zuzugreifen, öffnen Sie einen Browser Ihrer Wahl und geben die URL des Servers ein, auf dem der yunIO-Dienst läuft.<br>
-Das URL-Pattern zum Aufruf der Web UI lautet: `http://[host]:[port]`. Beispiel: `http://localhost:8077`.<br>
+Um auf den yunIO Designer zuzugreifen, öffnen Sie die Designer URL in einem [Webbrower](https://help.theobald-software.com/de/yunio/einfuehrung/systemvoraussetzungen#unterst%C3%BCtzte-webbrowser)<br>
+Das URL-Pattern zum Aufruf des yunIO Designers lautet: `http://[host]:[port]`. Beispiel: `http://localhost:8077`.<br>
 - Wenn der yunIO-Dienst auf einem lokalen Server läuft, geben Sie *localhost* als `[host]` an.
 - Wenn der yunIO-Dienst nicht auf demselben Rechner wie Ihr Browser läuft, geben Sie als `[host]` den Hostnamen ein, auf dem der yunIO-Dienst läuft. <br>
-- Nach Installation des yunIO-Services ist die Web UI unter dem Standard-Port 8077 erreichbar.<br>
-Sie können den Port in der yunIO Web-UI unter *Settings* konfigurieren. <br>
+- Nach der Installation ist der yunIO Designer unter dem Standard-Port 8077 erreichbar.<br>
+Sie können den Port im yunIO Designer unter *Settings* konfigurieren. <br>
 
 {: .box-note}
 **Hinweis:** Achten Sie darauf, dass der yunIO-Dienst läuft und dass der Standard-Port 8077 nicht von Ihrer Firewall geblockt wird.
@@ -43,9 +43,9 @@ Für mehr Informationen zum Einrichten der SAP-Verbindung, siehe [SAP-Verbindung
 
 ### Einen Service anlegen
 
-Unter *Services* können Sie neue Web-Services erstellen und bereits angelegte Services bearbeiten, ausführen und löschen.
+Unter *Services* können Sie neue Webservices erstellen und bereits angelegte Services bearbeiten, ausführen und löschen.
 
-1. Um eine neue Extraktion anzulegen, klicken Sie auf **[Add Service]** (1). <br>
+1. Um einen neuen Service anzulegen, klicken Sie auf **[Add Service]** (1). <br>
 Um einen bereits vorhandenen Service zu bearbeiten, klicken Sie auf den Namen des Services (2).<br>
 ![yunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
 2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus (3).
@@ -58,12 +58,17 @@ Richten Sie den Service ein, siehe [SAP Tabelle oder Ansicht](./table-and-views)
 
 ### Einen Service ausführen
 
-Webdienste, die mit yunIO erstellt werden, sind in alle Cloud Anwendungen integrierbar, die
-REST API/Swagger (OpenAPI) unterstützen, z.B. Power Automate, Nintex, uvm.
+Mit yunIO erstellte Webservices sind in alle Cloud-Anwendungen integrierbar, die REST und Swagger/OpenAPI unterstützen, z.B. Power Automate, Nintex, uvm.
 
 Um einen Service zu testen, können Sie die URL des Service Endpoints unter **Service** (1) triggern.
 Der Service wird dann direkt im Browser ausgeführt.<br>
-Um einen yunIO Web-Service in ein Prozessautomatisierungstool zu integrieren, das Swagger/OpenAPI unterstützt, kopieren Sie den Code oder laden Sie die Definition des Services herunter (2).
+
+{: .box-note}
+**Hinweis:** Nur Services, die keine Eingangsarameter erfordern, zeigen SAP-Ergebnisse im Browser an. Verwenden Sie für parametrisierte Dienste ein Tool, das Swagger/OpenAPI-Definitionen unterstützt 
+(z. B. [Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) oder [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)).
+
+
+Um einen yunIO Webservice in ein Prozessautomatisierungstool zu integrieren, das Swagger/OpenAPI unterstützt, kopieren Sie den Code oder laden Sie die Definition des Services herunter (2).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
 

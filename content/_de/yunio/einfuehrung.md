@@ -13,8 +13,8 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einfuehrung
 progressstate: 5
 ---
 
-yunIO ist ein Konnektor, der .json basierte Web-Services zur Verfügung stellt, um Daten zu und aus SAP-Systemen zu schreiben.<br>
-Die Web-Services können einfach in Ihren Workflow integriert werden, z.B. in Power Automate, Nintex, Swagger und weitere.
+yunIO ist ein auf Cloud-Umgebungen ausgerichteter Konnektor, der REST-basierte Webservices für den Lese- und Schreibzugriff auf SAP-Systeme bereitstellt.<br>
+Die Webervices können mit allen Lösungen konsumiert werden, die mit REST, Swagger/OpenAPI umgehen können, wie z.B. Power Automate, Nintex und vielen Weiteren.  
 
 #### Automation
 ![yunIO-Automation](/img/content/yunio/yunio-automation.png){:class="img-responsive" width="800px" }<br>
@@ -24,6 +24,6 @@ Die Web-Services können einfach in Ihren Workflow integriert werden, z.B. in Po
 ![yunIO-Data-Management](/img/content/yunio/yunio-data-management.png){:class="img-responsive" width="800px" }
 
 *****
-Die folgenden Abschnitte bieten einen Überblick über die Voraussetzungen und die Installation von yunIO.
+Die folgenden Abschnitte bieten einen Überblick über die Voraussetzungen und Installation von yunIO.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

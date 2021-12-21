@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 ### Über das Lizenzierungskonzept von yunIO
-yunIO wird pro Quellsystem und Windows Server lizenziert. Eine Demo-Lizenz wird automatisch mit der Installation von yunIO installiert. 
+yunIO wird pro Windows Server lizenziert. Eine Demo-Lizenz gültig für 30 Tage wird automatisch mit der Installation bereitgestellt.
 
 Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theobald Software](https://my.theobald-software.com/) zur Verfügung gestellt. 
 Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
@@ -23,7 +23,7 @@ Wenn Sie den yunIO Designer und den yunIO Server auf verschiedenen Rechnern betr
 Um die reguläre Lizenz zu installieren, legen Sie die YunIOLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:
 `C:\Program Files\Theobald Software\YunIO` <br>
 
-Ein Neustart des yunIO Service ist nicht notwendig.
+Ein Neustart des yunIO Windows-Dienstes ist nicht notwendig.
 
 ### About yunIO - Info-Fenster
 
@@ -41,8 +41,9 @@ Das *About* Menü von yunIO stellt Direktlinks zu folgenden Theobald Software Su
 
 
 ### Wartung
-Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/yunio/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
-Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).
+Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/yunio/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). 
+Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
+Bei technischen Problemen wenden Sie sich das Support-Team per Email [support@theobald-software.com](mailto:support@theobald-software.com) oder [Helpdesk](https://support.theobald-software.com/helpdesk).
 
 
 ****

@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=installation
 progressstate: 5
 ---
 
-Bei yunIO handelt es sich um einen Windows-Dienst mit einer eingebetteten Web-UI. Der yunIO-Dienst wird auf einer lokalen oder Cloud-gehosteten Windows-Serverumgebung installiert. 
+yunIO stellt einen Windows-Dienst für die Kommunikation mit dem SAP-System zur Verfügung und verfügt über eine eingebettete Web UI, den yunIO Designer. 
 
 ### Setup
 

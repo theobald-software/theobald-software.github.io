@@ -46,19 +46,16 @@ yunIO unterstützt die aktuellen Versionen folgender Webbrowser:
 
 ### Prozessor-Kerne
 - Minimum: 2 Kerne. 
-Für jede weitere parallele Extraktion wird ein zusätzlicher Kern benötigt. 
 
 
 ### Prozessorgeschwindigkeit   
 - Minimum: Prozessor: 1,4 GHz, empfohlen: 2,0 GHz oder schneller
 
 ### Hauptspeicher
-- Minimum: 8 GB, empfohlen: 12 GB für bis zu 2 parallele Extraktionen.<br> 4 GB dedizierter Speicher durchschnittlich für jede zusätzliche parallele Extraktion.
-Prüfen Sie den genauen Speicherbedarf einer Extraktion in Ihrem Szenario.
+- Minimum: 8 GB
 
 ### Festplattenspeicher
-Für die Installation werden 150 MB Festplattenspeicher benötigt.
-Bei manchen Destinationen kann zusätzlicher Speicherplatz benötigt werden.
+Für die Installation werden 70 MB Festplattenspeicher benötigt.
 
 ### 64-Bit-Umgebung	
 Das Produkt kann nur auf 64-Bit-Betriebssystemen installiert werden.
