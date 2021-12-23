@@ -20,7 +20,7 @@ The service offers easy integration of SAP data and business processes in differ
 
 yunIO comes with an embedded Web UI, the yunIO Designer, that can be accessed through a standard web browser. A Windows service enables connectivity with SAP. <br>
 The yunIO service is installed on a local or cloud-hosted Windows server environment. <br>
-If yunIO is installed on a local server environment, a Gateway instance of your choice (e.g. Microsoft om-premises data gateway) can be used for securely tunnel the connection 
+If yunIO is installed on a local server environment, a Gateway instance of your choice (e.g. Microsoft om-premises data gateway) can be used for securely tunnel the connection. <br> 
 
 <!--- ??? trifft das hier zu?--->
 ![yunIO-Components](/img/content/yunio/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
