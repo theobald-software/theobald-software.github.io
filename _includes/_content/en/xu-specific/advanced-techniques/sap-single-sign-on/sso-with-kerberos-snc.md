@@ -5,6 +5,19 @@ The following section describes the required steps for setting up Single Sign-On
 ABAP application server has to run on a Windows OS and SNC with Kerberos encryption setup on SAP. <br>
 
 
+### What is SNC?
+
+Secure Network Connection (SNC) secures the data communication paths to your SAP system. 
+SNC offers cryptographic algorithms you can apply to your data for increased protection and application-level end-to-end security.<br>
+All communication that takes place between two SNC-protected components is secured e.g., between the SAP application server and Theobald products.
+
+There are three levels of security protection you can apply with SNC:
+- Authentication only
+- Integrity protection
+- Privacy protection
+
+For more information on SNC, see [SAP Help: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
+
 ### Activation of HTTPS 
 
 1. Enable access control protocol HTTPS (1) within the tab *Web Server* settings.
