@@ -25,7 +25,8 @@ Different types of log files are created.
 |Server| WebWorker-Logs: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log  | The name contains the timestamp in UTC. A new file is created when a TCP connection is accepted.Theobald.Xu.Web.Worker.exe is the corresponding process.| `C:ProgramFiles\XtractUniversal\logs\servers\web\worker` |  
 |Extraction| Extraction logs: yyyyMMddTHHmmss.fffZ.log, e.g., 20201013T055455.465Z.log | The name contains the timestamp in UTC. A new file is created to start an extraction. Theobald.Xu.Web.Worker.exe is the corresponding process.| `C:\Program Files\XtractUniversal\logs\extractions\[Name_der_Extaktion]`|
 
-For more information on the server processes, see [Server](../server).
+For more information on the server processes, see [Server](./server).
+
 ### Log Levels
 Each log entry is assigned to a so-called log level. There are the following log levels:
 

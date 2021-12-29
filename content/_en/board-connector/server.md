@@ -44,7 +44,7 @@ Execution is triggered by an HTTP request. The HTTP request is triggered from th
 
 ### Server Architecture
 
-The server runs as a Windows Service and the main process of the XU Service is BCService.exe. The Windows Service can be [managed](./server/start-server) via the Windows Services administration or the Task Manager.
+The server runs as a Windows Service and the main process of the BC Service is BCService.exe. The Windows Service can be [managed](./server/start-server) via the Windows Services administration or the Task Manager.
 BCService.exe starts two listener processes:
 - Theobald.Bc.Web.Listener.exe
 - BCConfigServer.exe
