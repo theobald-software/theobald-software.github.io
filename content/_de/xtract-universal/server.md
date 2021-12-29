@@ -34,8 +34,8 @@ Der Server-Prozess kann im [Extraktions-Log](./logging/log-zugriff-ueber-designe
 
 {: .box-tip }
 **Tipp:** Die Theobald.Xu.Web.Worker.exe protokolliert ihre Aktionen in Log-Dateien. 
-Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:Program Files\XtractUniversal\logs\server\run` (standartmäßig). 
-Die Logs kann man sich auch im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen.
+Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:Program Files\XtractUniversal\logs\servers\web\worker` (standartmäßig). 
+Die Logs kann man sich auch im Designer unter **[Server]>[Logs (Web Worker)]** anzeigen lassen.
 
 ### Auf die Einstellungen mit dem Designer zugreifen
 

@@ -23,10 +23,11 @@ Es werden verschiedene Arten der Log-Dateien erstellt.
 |Typ | Name | Beschreibung | Pfad zum Ablageort |
 |:------ | :------ |:--- | :--- |
 |Server| ServiceLog.txt | Enthält die Aktivitäten von XtractService.exe.| `C:ProgramFiles\XtractUniversal\logs` |
-|Server| ConfigServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. XtractConfigServer.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\server\config` |
-|Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. Theobald.Xu.Web.Listener.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\server\web` |
-|Server| Run-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Zeitpunkt der Entgegennahme einer TCP-Verbindung erstellt. Theobald.Xu.Web.Worker.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\server\run` |  
+|Server| WebServer-Log: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start des Servers angelegt, zusätzlich wird auch alle 24 Stunden eine neue Log-Datei angelegt. Theobald.Xu.Web.Listener.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\servers\web\listener` |
+|Server| WebWorker-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log  | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Zeitpunkt der Entgegennahme einer TCP-Verbindung erstellt. Theobald.Xu.Web.Worker.exe ist der dazugehörige Prozess.| `C:ProgramFiles\XtractUniversal\logs\servers\web\worker` |  
 |Extraktion| Extraktions-Logs: yyyyMMddTHHmmss.fffZ.log, z.B. 20201013T055455.465Z.log | Der Name enthält den Zeitstempel in UTC. Eine neue Datei wird zum Start einer Extraktion erstellt. Theobald.Xu.Web.Worker.exe ist der dazugehörige Prozess. | `C:\Program Files\XtractUniversal\logs\extractions\[Name_der_Extaktion]`|
+
+Für mehr Informationen zu den Server-Prozessen, siehe [Server](../server).
 
 ### Log Levels
 Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende Log-Levels:
@@ -60,4 +61,5 @@ Um die Abläufe von Xtract Universal besser verstehen zu können, können Sie di
 13. Extraktion wird abgeschlossen.
 
 
+******
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

@@ -34,8 +34,8 @@ The process can be traced in the [Extraction Log](./logging/logging-access-via-d
 
 {: .box-tip }
 **Tip:** The Theobald.Xu.Web.Worker.exe logs its actions in log files. 
-The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\XtractUniversal\logs\server\run` (default) 
-The logs can also be displayed in the Designer under **[Server]>[Logs (Run)]**.
+The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\XtractUniversal\logs\servers\web\worker` (default) 
+The logs can also be displayed in the Designer under **[Server]>[Logs (Web Worker)]**.
 
 ### Access the Settings using the Designer
 
