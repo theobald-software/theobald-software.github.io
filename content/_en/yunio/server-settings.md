@@ -61,4 +61,4 @@ Define the ports for service consumption here. Valid port numbers range from 1-6
 |---|---|---|---|
 |WebServer|8075|8175|This port is used by the web server which takes the requests to invoke a service.|
 |WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services and the like|
-|Designer|8077|8177|This port is used to serve the yunIO Designer to a client machine.|
+|Designer|8077|8177|This port is used to open the yunIO Designer on a client machine.|
