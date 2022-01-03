@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
  
 
-The follwing section contains an overview of the yunIO server settings in the **Settings** menu. <br>
+The following section contains an overview of the yunIO server settings in the **Settings** menu.
 To save any changes made in the **Settings** menu, click **[Save]**.
 
 {: .box-note }
@@ -21,15 +21,14 @@ To save any changes made in the **Settings** menu, click **[Save]**.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
-
 ### Transport Layer Security
 
-Transport Layer Security (TLS) protocol encrypts data that is processed with yunIO.
-When TLS is enabled, access restrictions require accessing the web server through an HTTPS connection. This requires the installation of an X.509 certificate.
+Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
+This requires the installation of an X.509 certificate.
 For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
 #### Pick Certificate
-Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
+Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.
 If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
 
 {: .box-note }
@@ -37,15 +36,15 @@ If the certificate is not listed in the menu or in the Windows certificate store
 Please refer to the documentation available on the internet or contact your network administrators.
 
 #### TLS enabled
-Once a certificate is selected, the option **TLS enabled** is available.<br>
+Once a certificate is selected, the option **TLS enabled** is available.
 Enable or disable the usage of transport encryption for the web server.
 
-### Allowed Origins (CORS)
+### Allowed Origins ([CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))
 
 {: .box-warning }
 **Warning! Cross-Origin Request Blocked** When encountering a CORS error, the URL of your origin is not authorized to send requests to yunIO. Add the URL of your origin to the list of allowed origins.
 
-Enter URLs that are allowed to run cross-origin requests on yunIO.<br>
+Enter URLs that are allowed to run cross-origin requests on yunIO.
 Example: To allow a tool like Swagger Inspector to load and execute a yunIO service, the URL `https://inspector.swagger.io` must be added to the list of allowed origins.
 
 {: .box-note }
@@ -54,32 +53,12 @@ Example: To allow a tool like Swagger Inspector to load and execute a yunIO serv
 
 ### Services
 
-Define the ports for service consumption here. 
+Define the ports for service consumption here. Valid port numbers range from 1-65535. Although it is not recommended to use ports below 1000 since they often are already taken and using them with different services can lead to service disruptions.
 
-#### HTTP port
-This port is used for service consumption if TLS is disabled. Default port is **8075**. The maximum port number is 65535.
+#### Default Ports
 
-#### HTTPS port
-This port is used for service consumption if TLS is enabled. Default port is **8175**. The maximum port number is 65535.
-
-
-### Designer
-
-Define the ports of the yunIO Designer. 
-
-#### HTTP port
-This port is used to access the yunIO Designer if TLS is disabled. Default port is **8077**. The maximum port number is 65535.
-
-#### HTTPS port
-This port is used to access the yunIO Designer if TLS is enabled. Default port is **8177**. The maximum port number is 65535.
-
-
-### WebSockets
-
-Define the ports for the communication between the yunIO Designer and the yunIO server. 
-
-#### HTTP port
-This port is used for the communication between the yunIO Designer and the yunIO server if TLS is disabled. Default port is **8078**. The maximum port number is 65535.
-
-#### HTTPS port
-This port is used for the communication between the yunIO Designer and the yunIO server if TLS is enabled. Default port is **8178**.The maximum port number is 65535.
+|Service Name|Http|Https|Description|
+|---|---|---|---|
+|WebServer|8075|8175|This port is used by the web server which takes the requests to invoke a service.|
+|WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services and the like|
+|Designer|8077|8177|This port is used to serve the yunIO Designer to a client machine.|
