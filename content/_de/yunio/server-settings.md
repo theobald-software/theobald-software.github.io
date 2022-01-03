@@ -24,10 +24,9 @@ Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 ### Transport Layer Security
 
 Das *Transport Layer Security (TLS)*-Protokoll ermöglicht eine verschlüsselte Datenübertragung.
-Wenn TLS aktiviert ist, wird auf den Webserver über eine https-Verbindung zugegriffen.
-Dafür muss ein X.509 Zertifikat installiert sein. 
+Wenn TLS aktiviert ist, wird auf den jeweiligen Dienst über eine HTTPS-Verbindung zugegriffen.
+Dafür muss ein X.509 Zertifikat installiert sein.
 Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol).
-
 
 #### Pick Certificate
 Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509 Zertifikat aus der Liste verfügbarer Zertifikate aus.
