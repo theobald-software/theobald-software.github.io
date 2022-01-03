@@ -23,8 +23,8 @@ Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 ### Transport Layer Security
 
-Die Sicherheitsmethode der Transportverschlüsselung verhindert das Ausspionieren oder Manipulieren der Daten (z.B. SAP-Credentials), die zwischen dem Designer und dem Server ausgetauscht werden.
-Wenn *Transport Layer Security (TLS)* aktiviert ist, wird auf den Webserver über eine https-Verbindung zugegriffen.
+Das *Transport Layer Security (TLS)*-Protokoll ermöglicht eine verschlüsselte Datenübertragung.
+Wenn TLS aktiviert ist, wird auf den Webserver über eine https-Verbindung zugegriffen.
 Dafür muss ein X.509 Zertifikat installiert sein. 
 Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol).
 
@@ -32,6 +32,10 @@ Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.mi
 #### Pick Certificate
 Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509 Zertifikat aus der Liste verfügbarer Zertifikate aus.
 Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgelistet ist, installieren Sie das X.509 Zertifikat.
+
+{: .box-note }
+**Hinweis:** Je nachdem, ob yunIO auf einer lokalen Serverumgebung oder Cloudumgebung gehostet ist, unterscheidet sich das Vorgehen zur Zertifikaterstellung.<br>
+Orientieren Sie sich an den verfügbaren Dokumentationen dazu im Netz oder wenden Sie sich an Ihre Netzwerk-Administratoren.
 
 #### TLS enabled
 Wenn ein Zertifikat gewählt wurde, ist die Option **TLS enabled** verfügbar.<br>
@@ -52,30 +56,30 @@ Wenn Sie yunIO zum ersten Mal installieren, ist diese Einstellung automatisch ge
 
 ### Services
 
-Definieren Sie die Ports für Ihre Dienste.
+Definieren Sie hier die Ports für Ihre Service-Aufrufe.
 
 #### HTTP port
-Dieser Port wird für Ihre Dienste verwendet, wenn keine Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+Dieser Port wird für Service-Aufrufe verwendet, wenn kein TLS aktiv ist. Der Standard-Port lautet **8075**. Die maximale Portnummer ist 65535.
 
 #### HTTPS port
-Dieser Port wird für Ihre Dienste verwendet, wenn die Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+Dieser Port wird für Service-Aufrufe verwendet, wenn TLS aktiviert ist. Der Standard-Port lautet **8175**.Die maximale Portnummer ist 65535.
 
 ### Designer
 
-Definieren Sie die Ports für den Designer.
+Definieren Sie hier die Ports für den yunIO Designer.
 
 #### HTTP port
-Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn keine Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn kein TLS aktiv ist. Der Standard-Port lautet **8077**. Die maximale Portnummer ist 65535.
 
 #### HTTPS port
-Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn die Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn TLS aktiviert ist. Der Standard-Port lautet **8177**. Die maximale Portnummer ist 65535.
 
 ### WebSockets
 
 Definieren Sie die Ports für die Kommunikation zwischen dem Designer und dem yunIO-Server.
 
 #### HTTP port
-Dieser Port wird für die Kommunikation zwischen dem Designer und dem yunIO-Server, wenn keine Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+Dieser Port wird für die Kommunikation zwischen dem Designer und dem yunIO-Server, wenn keine TLS aktiv ist. Der Standard-Port lautet **8078**. Die maximale Portnummer ist 65535.
 
 #### HTTPS port
-Dieser Port wird für die Kommunikation zwischen dem Designer und dem yunIO-Server, wenn die Transportverschlüsselung aktiv ist. Die maximale Portnummer ist 65535.
+Dieser Port wird für die Kommunikation zwischen dem Designer und dem yunIO-Server, wenn TLS aktiviert ist. Der Standard-Port lautet **8178**. Die maximale Portnummer ist 65535.

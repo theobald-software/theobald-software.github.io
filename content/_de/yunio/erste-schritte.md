@@ -64,7 +64,7 @@ Um einen Service zu testen, können Sie die URL des Service Endpoints unter **Se
 Der Service wird dann direkt im Browser ausgeführt.<br>
 
 {: .box-note}
-**Hinweis:** Nur Services, die keine Eingangsarameter erfordern, zeigen SAP-Ergebnisse im Browser an. Verwenden Sie für parametrisierte Dienste ein Tool, das Swagger/OpenAPI-Definitionen unterstützt 
+**Hinweis:** Nur Services, die keine Eingangsparameter erfordern, zeigen SAP-Ergebnisse im Browser an. Verwenden Sie für parametrisierte Services ein Tool, das Swagger/OpenAPI-Definitionen unterstützt 
 (z. B. [Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) oder [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)).
 
 

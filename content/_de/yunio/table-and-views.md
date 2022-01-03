@@ -1,7 +1,7 @@
 ---
 ref: yunio-table-01
 layout: page
-title: SAP Tabelle oder Ansicht
+title: SAP Tabelle oder View
 description: Table
 product: yunio
 parent: yunio
@@ -15,36 +15,35 @@ progressstate: 5
 
 Der folgende Abschnitt beschreibt die Anwendung der *SAP Table and Views* Komponente.
 
-### Eine SAP Tabelle oder Ansicht finden
+### Eine SAP Tabelle oder View finden
 
 1. Wenn Sie einen neuen *Service* anlegen, wählen Sie *SAP Table and Views* als Extraktionstyp aus.
 2. Klicken Sie auf **[Save and edit]**. Das *Search SAP Table or View* Menü öffnet sich.
-3. Geben Sie den Namen einer Tabelle oder Ansicht in das Feld **Search by name** (1) ein oder suchen Sie nach einer Tabellenbeschreibung. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
+3. Geben Sie den Namen einer Tabelle oder View in das Feld **Search by name** (1) ein oder suchen Sie nach einer Tabellenbeschreibung. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
 4. Klicken Sie auf **[Search]** (2), um alle Suchergebnisse anzuzeigen.
-5. Wählen Sie eine Quelldatei aus der Liste verfügbarer Suchergebnisse aus (3). 
+5. Wählen Sie einen Eintrag aus der Trefferliste aus (3). 
 Die Extraktionseinstellungen für *SAP Tabelle und Ansichten* öffnen sich automatisch.<br>
 
 Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
 
-- [Table or View](#tabelle-oder-ansicht) (4) zeigt den Namen und die Beschreibung der gewählten SAP Tabelle oder Ansicht an.
+- [Table or View](#tabelle-oder-ansicht) (4) zeigt den Namen und die Beschreibung der gewählten SAP Tabelle oder View an.
 - [Advanced Settings](#fortgeschrittene-einstellungen) (5) definieren, wie Daten aus SAP extrahiert werden.
 - [Output Columns](#ausgabespalten) (6) definieren, welche Spalten extrahiert werden.
 - [WHERE-Clause](#where-bedingung) (7) ermöglicht das Filtern von Daten.
 
 ### Table or View
 
-Der Name und die Beschreibung der gewählten Tabelle oder Ansicht werden im Abschnitt **Table or View** angezeigt.<br>
-Um eine neue Quelldatei auszuwählen, klicken Sie auf **Select** in der oberen rechten Ecke des Abschnitts.
+Der Name und die Beschreibung der gewählten Tabelle oder View werden im Abschnitt **Table or View** angezeigt.<br>
+Um eine neue Tabelle oder View auszuwählen, klicken Sie auf **Select** in der oberen rechten Ecke des Abschnitts.
 
 ### Advanced Settings
 
 ### Function Name
 Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Dieses Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind.
-F
-olgende Funktionsbausteine können zur Extraktion von Tabellen verwendet werden:
+Folgende Funktionsbausteine können zur Extraktion von Tabellen verwendet werden:
 
 - RFC_READ_TABLE (TAB512)
 - /BODS/RFC_READ_TABLE  (TAB2048)
@@ -76,7 +75,7 @@ Eine Paketgröße (Package Size) zwischen 20000 und 50000 ist sinnvoll für gro�
 **Warnung! RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table:**
 Um einen Speicherüberlauf auf dem SAP-Quellsystem und einen großen Overhead zu vermeiden, wählen Sie eine für Ihre Speichergröße angemessene Paketgröße.
 
-#### Run in background
+#### Run in background job
 Durch das Ankreuzen der Checkbox wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
 Diese Einstellung ist optional und wird in Kombination mit dem Baustein Z_THEO_READ_TABLE ab Version 2.0 unterstützt.
 Aktivieren Sie diese Einstellung für zeitintensive Extraktionen mit großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen können. <br>

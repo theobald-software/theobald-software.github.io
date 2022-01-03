@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-DE/
 Willkommen in der Online Help für yunIO. 
 
 yunIO ist eine No-Code-Lösung für die Gestaltung, Automatisierung und Integration von SAP-Prozessen in der Cloud.<br>
-Der Dienst ermöglicht eine einfache Integration von SAP Daten und Geschäftsprozessen in unterschiedliche Plattformen und Anwendungen.<br>
+Der Konnektor ermöglicht eine einfache Integration von SAP Daten und Geschäftsprozessen in unterschiedliche Plattformen und Anwendungen.<br>
 
 
 ### Software-Architektur 

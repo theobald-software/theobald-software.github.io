@@ -15,10 +15,10 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=sap-verbindungen-anlegen
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
-Um eine Verbindung zu SAP herzustellen, muss der Zugriff auf allgemeine Berechtigungsobjekte (RFC) verfügbar sein.
-Stellen Sie sicher, dass der Zugriff auf die allgemeinen Berechtigungsobjekte möglich ist. Weitere Informationen finden Sie im Knowledge-Base-Artikel zu [SAP Zugriffsrechten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+Um eine Verbindung zu SAP herzustellen, muss der Zugriff auf allgemeine Berechtigungsobjekte verfügbar sein.
+Stellen Sie sicher, dass der Zugriff auf die erforderlichen Berechtigungsobjekte möglich ist. Weitere Informationen finden Sie im Knowledge-Base-Artikel zu [SAP Zugriffsrechten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-Die Einstellungen für SAP-Verbindungen befinden sich in der Web-UI unter dem Abschnitt *Connections*.<br>
+Die Einstellungen für SAP-Verbindungen befinden sich im yunIO Designer unter dem Abschnitt *Connections*.<br>
 - Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
 - Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf den Namen der Verbindung (2).
 
@@ -35,21 +35,21 @@ Ergänzen Sie die Verbindungsdetails und klicken Sie auf **[Save]**, um eine SAP
 ![yunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
 
 {: .box-tip }
-**Tipp:** Werte zum Ausfüllen der Felder können Sie die Logon Pad unter *Properties* einsehen oder Sie wenden sich an Ihr SAP Basis Team.
+**Tipp:** Werte zum Ausfüllen der Felder können Sie die Logon Pad unter *Properties* einsehen oder Sie wenden sich an Ihr SAP-Basis-Team.
 
 ### System
 Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 
 - Verwendung eines Single Application Servers
-	- **Host**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host). 
-	- **Instance No**: Instanznummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber).
+	- **Host**:  Name oder IP-Adresse des Applikationsservers (Property *Host*). 
+	- **Instance No**: Instanznummer, eine Zahl zwischen 0 und 99 (Property *SystemNumber*).
 	- **Client**:  die dreistellige Mandantennummer Ihres SAP-Systems zwischen 000 und 999, z.B. 800. 
 	- **Language**: der Sprachschlüssel für die von Ihnen verwendete Sprache, z.B. EN für Englisch oder DE für Deutsch.
 
 - Verwendung eines Load-Balancing/Message-Servers
-	- **Logon group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*).
+	- **Logon group**: Logon-Gruppe (Property *LogonGroup*, i.d.R. *PUBLIC*).
 	- **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer). 
-	- **System ID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS). 
+	- **System ID**: Dreistellige System-ID (Property *SID*, z.B. *MSS*). 
 	- **Client**:  die dreistellige Mandantennummer Ihres SAP-Systems zwischen 000 und 999, z.B. 800. 
 	- **Language**: der Sprachschlüssel für die von Ihnen verwendete Sprache, z.B. EN für Englisch oder DE für Deutsch.
 
@@ -81,7 +81,7 @@ Passwort des SAP-Benutzers.<br>
 
 **Pass-through SAP credentials (HTTP Basic authentication)**<br> 
 Wenn diese Checkbox aktiv ist, werden die in die Felder *User* und *Password* eingegebenen SAP-Anmeldeinformationen nicht übernommen.
-Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
+Stattdessen müssen die SAP-Anmeldeinformationen über die Windows Basic Authentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
 
 ### Angelegte SAP-Verbindung überprüfen
 

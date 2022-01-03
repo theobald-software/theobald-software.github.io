@@ -2,7 +2,7 @@
 ref: yunio-bapis-function-01
 layout: page
 title: Funktionsbausteine / BAPIs
-description: BAPIs und Funktionsbausteine
+description: Funktionsbausteine und BAPIs
 product: yunio
 parent: yunio
 childidentifier: bapis-und-funktionsbausteine
@@ -21,7 +21,7 @@ Der folgende Abschnitt beschreibt die Anwendung der *Function Module / BAPI* Kom
 3. Geben Sie den Namen eines Funktionsbausteins oder BAPIs in das Feld **Search by name** (1) ein oder suchen Sie nach einer Funktionsgruppe. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
 ![Look-Up-Function-Module](/img/content/yunio/search-bapi.png){:class="img-responsive"}
 4. Klicken Sie auf **[Search]** (2), um alle Suchergebnisse anzuzeigen.
-5. Wählen Sie eine Quelldatei aus der Liste verfügbarer Suchergebnisse aus (3). 
+5. Wählen Sie einen Eintrag aus der Trefferliste aus (3). 
 Die Extraktionseinstellungen für *Function Module / BAPI* öffnen sich automatisch.<br>
 
 Das *Function Module / BAPI* Menü ist in folgende Unterabschnitte unterteilt:
@@ -37,13 +37,13 @@ Das *Function Module / BAPI* Menü ist in folgende Unterabschnitte unterteilt:
 ### Function Module
 
 Der Name und die Beschreibung des gewählten Funktionsbausteins / BAPIs werden im Abschnitt **Function Module** angezeigt.<br>
-Um eine neue Quelldatei auszuwählen, klicken Sie auf **Select** in der oberen rechten Ecke des Abschnitts.
+Um einen neuen Funktionsbaustein / BAPI auszuwählen, klicken Sie auf **Select** in der oberen rechten Ecke des Abschnitts.
 
 ### Advances Settings
 
 #### Commits Transactions
 Wenn diese Option aktiv ist, wird der Funktionsbaustein “BAPI_TRANSACTION_COMMIT” zum Abschließen der Transaktion ausgeführt. 
-Diese Option ist für einige SAP Funktionsbausteine (z.B. BAPI_PO_CREATE) notwendig, um Daten in der Datenbank zu aktualisieren.
+Diese Option ist für einige SAP Funktionsbausteine (z.B. BAPI_PO_CREATE) erforderlich, um Daten in der Datenbank zu aktualisieren.
 
 ### Function Module Interface Parameters
 
@@ -76,8 +76,7 @@ Im Tab **Export** können Sie Ausgabeparameter definieren, die entweder als Skal
 Changing-Parameter repräsentieren Parameter, die sowohl für Eingabe als auch Ausgabe verwendet werden können.<br>
 Im Tab **Changing** können Sie die entsprechenden Parameter definieren. 
 
-### Table-Parameter
-
+### Tables-Parameter
 
 Tables-Parameter haben eine Tabellenstruktur, die aus mehreren Zeilen besteht. 
 Tabellen können als Eingabe und Ausgabe verwendet werden.
