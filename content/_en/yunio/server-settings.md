@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
  
 
-The follwing section contains an overview of the yunIO server settings in the **Settings** menu. <br>
+The following section contains an overview of the yunIO server settings in the **Settings** menu. <br>
 To save any changes made in the **Settings** menu, click **[Save]**.
 
 {: .box-note }
@@ -24,8 +24,8 @@ To save any changes made in the **Settings** menu, click **[Save]**.
 
 ### Transport Layer Security
 
-Transport Layer Security (TLS) protocol encrypts data that is processed with yunIO.
-When TLS is enabled, access restrictions require accessing the web server through an HTTPS connection. This requires the installation of an X.509 certificate.
+Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
+This requires the installation of an X.509 certificate.
 For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
 #### Pick Certificate
