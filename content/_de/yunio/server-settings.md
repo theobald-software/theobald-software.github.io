@@ -53,32 +53,15 @@ Beispiel: Um einem Tool wie Swagger Inspector zu ermöglichen, Dienste aus yunIO
 **Hinweis:** Während der Testphase können Sie ( * ) verwenden, um alle URLs zuzulassen.
 Wenn Sie yunIO zum ersten Mal installieren, ist diese Einstellung automatisch gesetzt.
 
-### Services
+### Services, Designer und WebSockets 
 
-Definieren Sie hier die Ports für Ihre Service-Aufrufe.
+Definieren Sie hier die Ports für Serviceaufrufe, den Designer-Zugang und WebSocket-Konfigurationen. Gültige Portnummern reichen von 1-65535. 
+Es ist nicht empfohlen, Ports unter 1000 zu verwenden, da diese oftmals bereits belegt sind und die Verwendung mit anderen Diensten zu Störungen der Dienste führen kann.
 
-#### HTTP port
-Dieser Port wird für Service-Aufrufe verwendet, wenn kein TLS aktiv ist. Der Standard-Port lautet **8075**. Die maximale Portnummer ist 65535.
+#### Standardports
 
-#### HTTPS port
-Dieser Port wird für Service-Aufrufe verwendet, wenn TLS aktiviert ist. Der Standard-Port lautet **8175**.Die maximale Portnummer ist 65535.
-
-### Designer
-
-Definieren Sie hier die Ports für den yunIO Designer.
-
-#### HTTP port
-Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn kein TLS aktiv ist. Der Standard-Port lautet **8077**. Die maximale Portnummer ist 65535.
-
-#### HTTPS port
-Dieser Port wird verwendet, um auf den Designer zuzugreifen, wenn TLS aktiviert ist. Der Standard-Port lautet **8177**. Die maximale Portnummer ist 65535.
-
-### WebSockets
-
-Definieren Sie die Ports für die Kommunikation zwischen dem Designer und dem yunIO-Server.
-
-#### HTTP port
-Dieser Port wird für die Kommunikation zwischen dem Designer und dem yunIO-Server, wenn keine TLS aktiv ist. Der Standard-Port lautet **8078**. Die maximale Portnummer ist 65535.
-
-#### HTTPS port
-Dieser Port wird für die Kommunikation zwischen dem Designer und dem yunIO-Server, wenn TLS aktiviert ist. Der Standard-Port lautet **8178**. Die maximale Portnummer ist 65535.
+|Service Name|Http|Https|Description|
+|---|---|---|---|
+|WebServer|8075|8175|Dieser Port wird vom Webserver verwendet der die Anfragen annimmt, um Services zu starten.|
+|WebSockets|8076|8176|Dieser Port wird vom yunIO Designer verwendet, um Konfigurationen, Services und dergleichen anzupassen.|
+|Designer|8077|8177|Dieser Port wird genutzt, um den yunIO Designer aufzurufen.|

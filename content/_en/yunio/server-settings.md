@@ -52,34 +52,18 @@ Example: To allow a tool like Swagger Inspector to load and execute a yunIO serv
 **Note:** For testing purposes you can use ( * ) to allow all URLs. When first installing yunIO this is set by default.
 
 
-### Services
+### Services, Designer and WebSockets
 
-Define the ports for service consumption here. 
+Define the ports for service consumption, Designer access and WebSocket configurations here. Valid port numbers range from 1-65535. 
+It is not recommended to use ports below 1000 since they often are already taken and using them with different services can lead to service disruptions.
 
-#### HTTP port
-This port is used for service consumption if TLS is disabled. Default port is **8075**. The maximum port number is 65535.
+##### Default Ports
 
-#### HTTPS port
-This port is used for service consumption if TLS is enabled. Default port is **8175**. The maximum port number is 65535.
-
-
-### Designer
-
-Define the ports of the yunIO Designer. 
-
-#### HTTP port
-This port is used to access the yunIO Designer if TLS is disabled. Default port is **8077**. The maximum port number is 65535.
-
-#### HTTPS port
-This port is used to access the yunIO Designer if TLS is enabled. Default port is **8177**. The maximum port number is 65535.
+|Service Name|Http|Https|Description|
+|---|---|---|---|
+|Services|8075|8175|This port is used by the web server which handles the requests to invoke a service.|
+|Designer|8077|8177|This port is used to open the yunIO Designer on a client machine.|
+|WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services and the like|
 
 
-### WebSockets
 
-Define the ports for the communication between the yunIO Designer and the yunIO server. 
-
-#### HTTP port
-This port is used for the communication between the yunIO Designer and the yunIO server if TLS is disabled. Default port is **8078**. The maximum port number is 65535.
-
-#### HTTPS port
-This port is used for the communication between the yunIO Designer and the yunIO server if TLS is enabled. Default port is **8178**.The maximum port number is 65535.
