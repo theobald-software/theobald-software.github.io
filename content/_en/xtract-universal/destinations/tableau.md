@@ -20,14 +20,12 @@ It is also possible to upload the Hyper file to Tableau Server or Tableau Online
 
 
 ## Requirements
-No further tool installation is required. 
 
-The required Visual C++ 2013 / 2015 Runtime and the Tableau Export Library will be installed automatically by XtractUniversalSetup.
+- Tableau Export Library
+- Visual C++ 2013 / 2015 Runtime
 
-![XU_Setup](/img/content/xu/XU_Setup_4.png){:class="img-responsive"}
-
-{: .box-note }
-**Note:** Make sure to check the checkbox "Tableau Extract API" during setup.
+Download the Tableau Export Library and Visual C++ 2013 / 2015 Runtime [here](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip).<br>
+Run the vc_redist.x64.exe to install the Visual C++ 2013 / 2015 Runtime and opy the `tableau`folder into the Xtract Universal directory (`C:\Program Files\XtractUniversal`).
 
 ## Connection
 

@@ -19,15 +19,11 @@ Optional ist es auch möglich, die erzeugte Data Extract-Datei zu einem Tableau-
 
 ## Voraussetzungen
 
-Keine Installation von weiteren Tools ist notwendig. 
+- Tableau Export Library
+- Visual C++ 2013 / 2015 Runtime
 
-Die benötigten Visual C++ Runtime und die Tableau Export Libraries werden automatisch durch das XtractUniversalSetup installiert. 
-
-![XU_Setup](/img/content/xu/XU_Setup_4.png){:class="img-responsive"}
-
-{: .box-note }
-**Hinweis:** Beim Setup muss die Checkbox "Tableau Extract API" angehakt werden.
-
+Laden Sie die Tableau Export Library und die Visual C++ 2013 / 2015 Runtime [hier](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip) herunter.<br>
+Führen Sie die vc_redist.x64.exe aus, um die Visual C++ 2013 / 2015 Runtime zu installieren und kopieren Sie den `tableau`-Ordner in das Xtract Universal Verzeichnis (`C:\Program Files\XtractUniversal`).
 
 ## Verbindung
 
