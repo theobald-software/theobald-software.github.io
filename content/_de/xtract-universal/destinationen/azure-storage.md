@@ -152,7 +152,7 @@ Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers 
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 
 Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. 
-Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
+Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
 
 ### Column Encryption (4)
 {% include _content/de/xu-specific/destinationen/general/column-encryption.md %}
@@ -235,7 +235,7 @@ Erstellt ein [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservi
 Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein: `[Ordner]` <br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 
-Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. Hierbei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
+Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
 
 ### Compression
 

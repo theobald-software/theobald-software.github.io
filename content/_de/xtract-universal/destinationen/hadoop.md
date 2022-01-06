@@ -93,6 +93,11 @@ Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werde
 Falls nicht vorhanden, wird ein neuer Ordner erstellt.
 Wenn kein Ordner angegeben wird, werden die Daten in das root-Verzeichnis geschrieben.
 
+{: .box-note }
+**Hinweis:** Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](../fortgeschrittene-techniken/script-ausdruecke) definiert werden. 
+Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt.
+
+
 ### WebHdfs API's Option
 
 **Overwrite existing**<br>

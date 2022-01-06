@@ -93,6 +93,10 @@ Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/
 If the entered folder does not exist, a new folder is created.<br>
 If no folder is entered, the data will be written into the root folder.
 
+{: .box-note }
+**Note:** **Hadoop Remote Folder** allows entry of [script expressions](../advanced-techniques/script-expressions). 
+This allows to dynamically set a folder path when executing an extraction
+
 ### WebHdfs API's Option
 
 **Overwrite existing**<br>
