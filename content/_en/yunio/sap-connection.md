@@ -74,8 +74,8 @@ SAP username.
 **Passwort**<br>
 Password of the SAP user.
 
-**Pass-through SAP credentials (HTTP Basic authentication)**<br>
-When this checkbox is active, the SAP credentials entered in the *User* and *Password* fields are not applied.
+**Request credentials from callers when running services**<br>
+If this checkbox is active, the SAP credentials entered in **User** and **Password** are not applied.
 Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
 
 

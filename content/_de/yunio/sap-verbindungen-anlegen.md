@@ -79,9 +79,9 @@ SAP-Benutzername.
 **Passwort**<br>
 Passwort des SAP-Benutzers.<br>
 
-**Pass-through SAP credentials (HTTP Basic authentication)**<br> 
-Wenn diese Checkbox aktiv ist, werden die in die Felder *User* und *Password* eingegebenen SAP-Anmeldeinformationen nicht übernommen.
-Stattdessen müssen die SAP-Anmeldeinformationen über die Windows Basic Authentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
+**Request credentials from callers when running services**<br> 
+Wenn diese Checkbox aktiv ist, werden die eingegebenen SAP-Anmeldeinformationen aus *User* und *Password* nicht übernommen.
+Stattdessen müssen die SAP-Anmeldeinformationen über die Windows Basic Authentifizierung angegeben werden, sobald eine Extraktion ausgeführt wird. 
 
 ### Angelegte SAP-Verbindung überprüfen
 
