@@ -54,14 +54,14 @@ Example: To allow a tool like Swagger Inspector to load and execute a yunIO serv
 
 ### Services, Designer and WebSockets
 
-Define the ports for service consumption, Designer access and WebSocket configurations here. Valid port numbers range from 1-65535. 
-It is not recommended to use ports below 1000 since they often are already taken and using them with different services can lead to service disruptions.
+Define the ports for service consumption, Designer access and WebSocket configurations. Valid port numbers range from 1-65535. 
+It is not recommended to use ports below 1000, because they are often already taken and using them with different services can lead to service disruptions.
 
 ##### Default Ports
 
 |Service Name|Http|Https|Description|
 |---|---|---|---|
-|Services|8075|8175|This port is used by the web server which handles the requests to invoke a service.|
+|Services|8075|8175|This port is used by the web server, which handles the requests to invoke a service.|
 |Designer|8077|8177|This port is used to open the yunIO Designer on a client machine.|
 |WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services and the like|
 

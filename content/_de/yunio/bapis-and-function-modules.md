@@ -21,7 +21,7 @@ Der folgende Abschnitt beschreibt die Anwendung der *Function Module / BAPI* Kom
 3. Geben Sie den Namen eines Funktionsbausteins oder BAPIs in das Feld **Search by name** (1) ein oder suchen Sie nach einer Funktionsgruppe. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
 ![Look-Up-Function-Module](/img/content/yunio/search-bapi.png){:class="img-responsive"}
 4. Klicken Sie auf **[Search]** (2), um alle Suchergebnisse anzuzeigen.
-5. Wählen Sie einen Eintrag aus der Trefferliste aus (3). 
+5. Wählen Sie einen Eintrag aus der Liste der Suchergebnisse aus (3). 
 Die Extraktionseinstellungen für *Function Module / BAPI* öffnen sich automatisch.<br>
 
 Das *Function Module / BAPI* Menü ist in folgende Unterabschnitte unterteilt:

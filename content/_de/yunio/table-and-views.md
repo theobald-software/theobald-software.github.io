@@ -22,7 +22,7 @@ Der folgende Abschnitt beschreibt die Anwendung der *SAP Table and Views* Kompon
 3. Geben Sie den Namen einer Tabelle oder View in das Feld **Search by name** (1) ein oder suchen Sie nach einer Tabellenbeschreibung. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
 4. Klicken Sie auf **[Search]** (2), um alle Suchergebnisse anzuzeigen.
-5. Wählen Sie einen Eintrag aus der Trefferliste aus (3). 
+5. Wählen Sie einen Eintrag aus der Liste der Suchergebnisse aus (3). 
 Die Extraktionseinstellungen für *SAP Tabelle und Ansichten* öffnen sich automatisch.<br>
 
 Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:

@@ -15,10 +15,10 @@ progressstate: 5
 Detaillierte Informationen zu Integrationsszenarien und weitere nützliche Artikel finden Sie in der [Theobald Software Knowledge Base](https://kb.theobald-software.com/yunio).
 
 ### Einen Service testen
-Hier erfahren Sie, wie Sie einen yunIO Service in einem Standard REST-Client testen können:
+Die folgenden Artikel zeigen Ihnen, wie Sie einen yunIO-Service in einem Standard REST-Client testen können:
 - [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
 
 ### Integration mit Microsoft Power Automate
-Hier erfahren Sie, wie die Integration mit Micrososft Power Automate funktioniert.
+Der folgende Artikel zeigt Ihnen, wie Sie einen yunIO-Service mit Microsoft Power Automate integrieren können:
 - [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)
