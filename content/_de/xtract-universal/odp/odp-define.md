@@ -19,3 +19,7 @@ Der folgende Abschnitt beschreibt die Anwendung der ODP Komponente.
 Der Datensatz mit der höchsten Nummer ist der aktuellste Datensatz.
 
 {% include _content/de/odp/odp-settings-filtering.md %}
+
+****
+#### Weiterführende Links
+- [Youtube Tutorial: SAP ODP incremental load to SQL server](https://www.youtube.com/watch?v=-7pEm2VVPRg)

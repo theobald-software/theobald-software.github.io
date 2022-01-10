@@ -19,3 +19,7 @@ The following section shows how to use the ODP component.
 **Note:** TS_SEQUENCE_NUMBER is a technical primary key that can be added to the output. The data set with the highest sequence number, is the most current data set.
 
 {% include _content/en/odp/odp-settings-filtering.md %}
+
+****
+#### Related Links
+- [Youtube Tutorial: SAP ODP incremental load to SQL server](https://www.youtube.com/watch?v=-7pEm2VVPRg)
