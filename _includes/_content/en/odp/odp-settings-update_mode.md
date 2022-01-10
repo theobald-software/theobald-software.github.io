@@ -4,7 +4,7 @@
 Extracts the data in full mode <br/>
 
 {: .box-note }
-**Note:** The **Delta update** option is ready for input only if the ODP provider in the SAP source system supports delta updates, see official [SAP Documentation](https://help.sap.com/doc/7b257f34728810148a4b1a83b0e91070/1511%20001/en-US/frameset.htm?4a1d039e24521977e10000000a42189c.html).
+**Note:** The **Delta update** option is ready for input only if the ODP provider in the SAP source system supports delta updates.
 
 **Delta update**:<br/>
 Runs a delta initialization, if no delta initialization is available for selected subscriber. Runs a delta update, if there is a delta initialization for the selected subscriber. <br/>

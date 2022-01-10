@@ -1,4 +1,4 @@
-### Look up for a Data Object
+### Look up Data Objects
 1. Within the main window of the component "Xtract ODP" navigate to **Operational Data Provider** and click **[Search]** (magnifying glass icon) (1). <br>
 The window "Operational Data Provider Lookup" opens.
 ![Datasource Sales Document Item Data (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
@@ -19,3 +19,5 @@ If your data source is Hierarchy, see [Select Hierarchy](./odp-extractors#hierar
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
 8. Before executing an extraction, check the [extraction settings](./odp-settings).
 
+{: .box-note }
+**Note:** To find DataSources, they have to be activated in SAP, see [Set Up and Activate DataSources](https://help.sap.com/viewer/7a60944343e543a1ab99e9b2904dab09/CLOUD/en-US/e5d447257a95416190d29638a64a5dfa.html).
