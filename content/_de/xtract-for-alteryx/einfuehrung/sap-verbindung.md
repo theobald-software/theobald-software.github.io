@@ -19,6 +19,7 @@ Um die Xtract for Alteryx-Komponente zu verwenden, ist Sie eine SAP-Verbindung n
 2. Im Unterabschnitt **Connection** öffnen Sie das Dropdown-Menü (2), um alle SAP-Systeme anzuzeigen, die mit dem lokalen Rechner verbunden sind.
 3. Klicken Sie auf **[New]** um eine neue Verbindung anzulegen. Das Fenster "SAP Connection Details" wird geöffnet. 
 
+
 ### Verbindungsdetails
 Das Fenster "SAP Connection Details" besteht aus vier Unterabschnitten:
 - System
@@ -31,7 +32,11 @@ Das Fenster "SAP Connection Details" besteht aus vier Unterabschnitten:
 Ergänzen Sie die Verbindungsdetails, um eine SAP-Verbindung herzustellen.
 
 {: .box-tip }
-**Tip:** Die richtigen Werte finden Sie im SAP-Logon-Pad unter *Properties*. Alternativ können Sie sich an Ihre SAP-Basis wenden.
+**Tipp:** Die richtigen Werte finden Sie im SAP-Logon-Pad unter *Properties*. Alternativ können Sie sich an Ihre SAP-Basis wenden.
+
+{: .box-note }
+**Hinweis:** Die Verbindungsdetails einer SAP-Verbindung werden als JSON-Datei in folgendem Verzeichnis abgelegt:<br>
+`C:\Users\<UserName>\AppData\Roaming\Theobald Software\Xtract for Alteryx\Connections\<SAPSourceName>.json`
 
 
 ### System
@@ -110,6 +115,7 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 Die SAP-Verbindung ist erfolgreich aufgebaut. 
 ![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
 2. Prüfen Sie im Konfigurationsfenster (linke Fensterseite), ob die angelegte SAP-Verbindung aufgelistet ist.<br>
+
 
 ****
 #### Weiterführende Links

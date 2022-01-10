@@ -13,4 +13,9 @@ progressstate: 5
 Der folgende Abschnitt beschreibt die Anwendung der ODP Komponente.
 {% include _content/de/odp/odp-define.md %}
 {% include _content/de/odp/odp-settings-update_mode.md %} 
+
+{: .box-note }
+**Hinweis:** TS_SEQUENCE_NUMBER ist ein technischer Primärschlüssel, der zur Ausgabe hinzugefügt werden kann. 
+Der Datensatz mit der höchsten Nummer ist der aktuellste Datensatz.
+
 {% include _content/de/odp/odp-settings-filtering.md %}

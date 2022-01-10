@@ -33,6 +33,9 @@ Fill out the connection details to establish an SAP connection.
 {: .box-tip }
 **Tip:** Values to fill out the fields can be found in the SAP Logon Pad in the *Properties* or acquired from SAP Basis team.
 
+{: .box-note }
+**Note:** The connection details of an SAP connection are stored in a JSON file in the following directory:<br>
+`C:\Users\<UserName>\AppData\Roaming\Theobald Software\Xtract for Alteryx\Connections\<SAPSourceName>.json`
 
 ### System
 There are two possibilities to connect to an SAP source system:
@@ -109,6 +112,8 @@ Activate the debug logging only when necessary e.g., upon request of the support
 The SAP connection is set up successfully.
 ![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
 2. In the configuration window (left hand-side) check if created SAP connection is listed.<br>
+
+
 
 ****
 #### Related Links
