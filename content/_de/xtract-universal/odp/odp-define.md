@@ -16,7 +16,7 @@ Der folgende Abschnitt beschreibt die Anwendung der ODP Komponente.
 
 {: .box-note }
 **Hinweis:** TS_SEQUENCE_NUMBER ist ein technischer Primärschlüssel, der zur Ausgabe hinzugefügt werden kann. 
-Der Datensatz mit der höchsten Nummer ist der aktuellste Datensatz.
+Bei identischen Datensätzen ist der Datensatz aktueller, dessen TS_SEQUENCE_NUMBER am höchsten ist.
 
 {% include _content/de/odp/odp-settings-filtering.md %}
 

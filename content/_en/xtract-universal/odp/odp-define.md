@@ -16,7 +16,8 @@ The following section shows how to use the ODP component.
 {% include _content/en/odp/odp-settings-update_mode.md %} 
 
 {: .box-note }
-**Note:** TS_SEQUENCE_NUMBER is a technical primary key that can be added to the output. The data set with the highest sequence number is the most current data set.
+**Note:** TS_SEQUENCE_NUMBER is a technical primary key that can be added to the output.
+When working with identical data sets, the data set with the highest sequence number is the most current data set.
 
 {% include _content/en/odp/odp-settings-filtering.md %}
 
