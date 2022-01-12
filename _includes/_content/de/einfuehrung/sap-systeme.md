@@ -17,16 +17,9 @@ SAP Release 4.6C und neuer werden unterstützt. Dazu gehören:<br/>
 * SAP BW/4HANA
 * SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
 * SAP R/3 Version 4.6C and later
-* SAP S/4HANA Cloud Private Edition
-* SAP S/4HANA Private Cloud Managed by SAP (HEC)
-* SAP HEC Customer Edition
-* SAP S/4HANA AnyPremise
+* [SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products#supported-sap-s4hana-systems) 
 
-Die folgenden SAP Releases werden nur eingeschränkt unterstützt:
-- SAP S/4HANA Cloud Extended Edition (EX)
-
-Die Installation von Z-Funktionsbausteinen auf der SAP S/4HANA Cloud Extended Edition wird noch nicht unterstützt.
-Daher ist die Funktionalität bei der Extraktion von [Tabellen](../sap-customizing/funktionsbaustein-fuer-table-extraktion#einschränkungen-von-rfc_read_table) und [Reports](../sap-customizing/report-funktionsbaustein-installieren) für SAP S/4HANA Cloud Extended Edition eingeschränkt.
+Eine vollständige Liste aller unterstützten SAP Versionen finden Sie in dem Knowledge Base Artikel [SAP Versions supported by Theobald Software Products](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products).
 
 ### Nicht unterstützte SAP-Systeme
 Nicht unterstützt werden die SAP-Systeme, die nicht auf ABAP-Systemen laufen oder keine RFC-Konnektivität bieten. 

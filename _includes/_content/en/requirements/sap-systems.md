@@ -1,4 +1,4 @@
-### Supported SAP Systems and releases
+### Supported SAP Systems and Releases
 All communication with SAP is performed via the RFC protocol. 
 All SAP ABAP based systems that provide RFC connectivity are supported.
 The integration occurs at SAP application server level. Therefore, the database used by the SAP system is irrelevant. 
@@ -17,18 +17,11 @@ SAP Releases 4.6C and newer are supported. Including the following:
 * SAP BW/4HANA
 * SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
 * SAP R/3 Version 4.6C and later
-* SAP S/4HANA Cloud Private Edition
-* SAP S/4HANA Private Cloud Managed by SAP (HEC)
-* SAP HEC Customer Edition
-* SAP S/4HANA AnyPremise
+* [SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products#supported-sap-s4hana-systems) 
 
-The following SAP Releases have only limited support:
-- SAP S/4HANA Cloud Extended Edition (EX)
+For more details on supported SAP versions, refer to the knowledge base article [SAP Versions supported by Theobald Software Products](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products).
 
-The installation of Custom Function Modules on SAP S/4HANA Cloud Extended Edition is not yet supported.
-Therefore the functionality of [Table](../sap-customizing/custom-function-module-for-table-extraction#rfc_read_table-restrictions) and [Report](../sap-customizing/install-report-custom-function-module) extractions is limited for SAP S/4HANA Cloud Extended Edition.
-
-### Not supported SAP systems
+### Not supported SAP Systems
 Not supported are the SAP systems that don’t run on ABAP systems or don't provide RFC connectivity. For example, the following systems are not supported:
 - SAP S/4HANA Cloud Essentials Edition (ES)
 - Business By Design 
