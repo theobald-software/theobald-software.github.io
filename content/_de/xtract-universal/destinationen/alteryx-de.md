@@ -41,7 +41,7 @@ Die folgenden Befehle werden in Kombination mit einem Parameter, der auf das Ins
 - */u* (für "uninstall")
 
 {: .box-note }
-**Hinweis:** Sollte es Probleme bei der Installation des Plugins geben, schicken Sie die setup.log Datei aus `C:\Program Files\XtractUniversal\alteryx\setup.log` an den [Theobald Support](mailto:support@theobald-software.com).
+**Hinweis:** Sollte es Probleme bei der Installation des Plugins geben, schicken Sie die setup.log Datei aus `C:\Program Files\XtractUniversal\alteryx\setup.log` an den [Theobald Support](https://support.theobald-software.com).
 
 
 ## Verbindung

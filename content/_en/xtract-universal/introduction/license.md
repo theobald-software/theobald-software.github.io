@@ -45,7 +45,7 @@ For more information on the migration process, see [Migration to a Different Mac
 
 ### Maintenance
 General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/xtract-universal/pricing-and-order) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
-In case of technical difficulties, contact the support team by email: [support@theobald-software.com](mailto:support@theobald-software.com).
+In case of technical difficulties, contact the support team by email: [https://support.theobald-software.com](https://support.theobald-software.com).
 
 
 ****

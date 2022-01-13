@@ -91,7 +91,7 @@ TABLE parameters need to have LIKE typing. Using LIKE typing will generate a war
 3. *Z_THEO_READ_TABLE_JOB* (Report)<br>
 The type of this report needs to be ‘executable program’.
 
-Should you have encountered any issues or questions, please contact us at [Theobald Support](mailto:support@theobald-software.com).
+Should you have encountered any issues or questions, please contact us at [Theobald Support](https://support.theobald-software.com).
 
 ### Installation of the Function Module Z_XTRACT_IS_REMOTE_REPORT 
 

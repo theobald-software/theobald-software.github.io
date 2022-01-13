@@ -43,7 +43,7 @@ Das *About* Menü von yunIO stellt Direktlinks zu folgenden Theobald Software Su
 ### Wartung
 Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/yunio/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). 
 Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
-Bei technischen Problemen wenden Sie sich das Support-Team per Email [support@theobald-software.com](mailto:support@theobald-software.com) oder [Helpdesk](https://support.theobald-software.com/helpdesk).
+Bei technischen Problemen wenden Sie sich das Support-Team per Email [https://support.theobald-software.com](https://support.theobald-software.com) oder [Helpdesk](https://support.theobald-software.com/helpdesk).
 
 
 ****

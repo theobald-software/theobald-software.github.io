@@ -34,4 +34,4 @@ ERPConnect.LIC.SetLic("XXXXXXXXXX")
 
 Falls Sie mehr als eine Entwicklerlizenz besitzen, sind die Lizenznummern ggfs. am Ende durchnummeriert: -01, -02 usw. Welche Endung Sie bei SetLic einsetzen, spielt keine Rolle. Sie können die Endung auch komplett weglassen.
 
-Die Demoversion funktioniert unter ASP.NET nicht und weigert sich mit einer Exception aufgrund der fehlenden Lizenz zu SAP zu verbinden. Gerne stellen wir Ihnen unbürokratisch eine zeitlich beschränkte Testlizenz zur Verfügung. Bitte fordern Sie diese einfach formlos per Mail an (support@theobald-software.com). 
+Die Demoversion funktioniert unter ASP.NET nicht und weigert sich mit einer Exception aufgrund der fehlenden Lizenz zu SAP zu verbinden. Gerne stellen wir Ihnen unbürokratisch eine zeitlich beschränkte Testlizenz zur Verfügung. Bitte fordern Sie diese einfach formlos per Mail an (https://support.theobald-software.com). 

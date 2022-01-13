@@ -6,5 +6,5 @@ Sie ist zeitlich limitiert auf 30 Tage, funktioniert ansonsten jedoch ohne jegli
 
 Gerne stehen wir Ihnen jederzeit telefonisch oder per Mail für Fragen zur Verfügung:
 
-[support@theobald-software.com]()<br>
+[https://support.theobald-software.com]()<br>
 [www.theobald-software.com](https://www.theobald-software.com)

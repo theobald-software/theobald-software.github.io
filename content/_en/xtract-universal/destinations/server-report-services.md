@@ -69,7 +69,7 @@ To uninstall the Data Extension use the *uninstall.bat* file from the `\ssrs`fol
 **Note:** If the *Reporting Services Projects* plugin for Visual Studio is updated, the Xtract Universal Data Extension won't be available anymore. The Data Extension must be reinstalled.
 
 
-Should you encounter issues with the installation of the Xtract Universal Data Extension, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](mailto:support@theobald-software.com).
+Should you encounter issues with the installation of the Xtract Universal Data Extension, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](https://support.theobald-software.com).
 
 
 ## Connection
@@ -124,7 +124,7 @@ The following steps guide you through the creation of an Xtract Universal data s
 6. Optional (only required if the XU [Web server security](../security/server-security) is configured or the SAP source requires SAP credentials): Switch to the *Credentials* tab (4) and enter your [username and password](../security/user-management) for Xtract Universal.
 7. Confirm your input with **[OK]**.
 
-If *Xtract Universal* is not available in the drop-down list (2) even though the *Microsoft Reporting Services Projects* plugin (version 2.6.11 or higher) and the latest version of Xtract Universal are both installed, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](mailto:support@theobald-software.com).
+If *Xtract Universal* is not available in the drop-down list (2) even though the *Microsoft Reporting Services Projects* plugin (version 2.6.11 or higher) and the latest version of Xtract Universal are both installed, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](https://support.theobald-software.com).
 
  {: .box-tip }
 **Tip:** The *connection string* is part of the URL string displayed in the "Run Extraction" window of the Designer. Copy the URL string up to '?' and paste it as the *connection string* into Visual Studio.

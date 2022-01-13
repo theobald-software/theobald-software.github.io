@@ -24,7 +24,7 @@ Es gibt zwei Transportaufträge, einen für SAP-Systeme ab Version 7.40 SP05 (* 
 {: .box-note}
 **Hinweis:** Lesen Sie die README.pdf, die sich im Installationsornder (z.B.`C:\Program Files\XtractProduct\ABAP\README.pdf`) befindet, bevor Sie den Z-Funktionsbaustein installieren.
 
-Beim Einspielen der Z_THEO_READ_TABLE-transport-before-740SP05 auf älteren SAP-Releases kann ein Syntaxfehler auftreten. Wenden Sie sich an den [Theobald Support](mailto:support@theobald-software.com) und senden Sie die dedizierte Fehlermeldung.
+Beim Einspielen der Z_THEO_READ_TABLE-transport-before-740SP05 auf älteren SAP-Releases kann ein Syntaxfehler auftreten. Wenden Sie sich an den [Theobald Support](https://support.theobald-software.com) und senden Sie die dedizierte Fehlermeldung.
 
 ### Testen des Bausteins in SAP
 

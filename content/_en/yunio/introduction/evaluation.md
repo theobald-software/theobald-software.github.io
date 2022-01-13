@@ -19,7 +19,7 @@ The trial version is only time limited and works otherwise without any restricti
 ### Evaluating yunIO
 You are guaranteed to get an unrestricted support by the Theobald Software support team during the evaluation phase.
 In case of any questions or doubts, feel free to contact Theobald Software at any time: <br>
-- [support@theobald-software.com](mailto:support@theobald-software.com)
+- [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Contact forms](https://theobald-software.com/en/contact/)
 
 ****

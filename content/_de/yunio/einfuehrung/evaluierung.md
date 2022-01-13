@@ -19,7 +19,7 @@ Die Testversion ist nur zeitlich begrenzt und hat ansonsten eine uneingeschränk
 ### Evaluierung von yunIO
 Während der Evaluierungsphase erhalten Sie Unterstützung durch das Theobald Software Support-Team.
 Sollten Sie Fragen haben, können Sie sich jederzeit an Theobald Software wenden: <br>
-- [support@theobald-software.com](mailto:support@theobald-software.com)
+- [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Kontaktformular](https://theobald-software.com/en/contact/)
 
 ****

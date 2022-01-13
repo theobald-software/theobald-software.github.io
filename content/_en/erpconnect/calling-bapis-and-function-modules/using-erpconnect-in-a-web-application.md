@@ -17,7 +17,7 @@ The following example shows the development process for the ASP.NET/ERPConnect p
 
 The ERPConnect.dll class library must be added as a reference to the project. The dll will be copied to the bin directory when compiling the project. But you need to add one more dll to your bin directory: librfc32.dll. This one is contained in the rfcsdk provided by the SAP GUI installation (System32 directory).
 
-Attention! The trial version of ERPConnect does not work in a web environment. Please apply for a limited test licence number if you want to use ERPConnect with your ASP.NET project (support@theobald-software.com).
+Attention! The trial version of ERPConnect does not work in a web environment. Please apply for a limited test licence number if you want to use ERPConnect with your ASP.NET project (https://support.theobald-software.com).
 
 **ASP.NET Example: Creating a Purchase Order via BAPI**
 

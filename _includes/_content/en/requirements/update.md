@@ -15,7 +15,7 @@ To install a newer software version over an existing version, follow the steps b
 3. First install the current version of the software on the test environment and test the new version carefully. 
  - Test all your existing projects.  
  - After a successful test, follow the steps to install the current version on the production environment, see the corresponding section below.    
- - In case of an error, contact Theobald Software's support team via email: [support@theobald-software.com](mailto:support@theobald-software.com). You can reinstall / reuse your backup until a solution is provided.
+ - In case of an error, contact Theobald Software's support team via email: [https://support.theobald-software.com](https://support.theobald-software.com). You can reinstall / reuse your backup until a solution is provided.
 
 
 ### Installing an update on a production environment 

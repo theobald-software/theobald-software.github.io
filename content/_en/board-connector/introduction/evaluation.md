@@ -14,5 +14,5 @@ We also offer support during the evaluation phase. Of course, you can download a
 
 If you have any further questions, please don't hesitate to contact us via e-mail.
 
-[support@theobald-software.com](mailto:support@theobald-software.com)<br> 
+[https://support.theobald-software.com](https://support.theobald-software.com)<br> 
 [www.theobald-software.com](https://www.theobald-software.com)

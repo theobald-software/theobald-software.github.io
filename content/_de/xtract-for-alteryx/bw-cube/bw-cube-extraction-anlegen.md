@@ -26,7 +26,7 @@ Die Metadaten (Messwerte, Dimensionen, Eigenschaften, BEx-Variablen) der ausgew√
 #### MDX und BICS (beta)
 
 {: .box-note }
-**Hinweis:** Die BICS-Komponente befindet sich noch in der Beta-Phase. Bei Problemen mit der Komponente, kontaktieren Sie den [Theobald Support](mailto:support@theobald-software.com).
+**Hinweis:** Die BICS-Komponente befindet sich noch in der Beta-Phase. Bei Problemen mit der Komponente, kontaktieren Sie den [Theobald Support](https://support.theobald-software.com).
 
 |                                    | MDX                                                                                         | BICS (beta)                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|

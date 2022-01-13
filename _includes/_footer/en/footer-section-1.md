@@ -1,4 +1,4 @@
 
 ### Contact our support team
 ---  
-Email: <support@theobald-software.com>  
+Email: <https://support.theobald-software.com>  

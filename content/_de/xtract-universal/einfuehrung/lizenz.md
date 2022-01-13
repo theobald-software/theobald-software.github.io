@@ -47,7 +47,7 @@ Für weitere Informationen zum Thema Migration, siehe [Migration auf eine andere
 
 ### Wartung
 Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/xtract-universal/preise-und-bestellungen/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
-Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).
+Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [https://support.theobald-software.com](https://support.theobald-software.com).
 
 
 ****

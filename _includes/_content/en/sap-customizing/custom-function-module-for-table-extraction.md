@@ -24,7 +24,7 @@ There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zi
 {: .box-note}
 **Note:** Take a look at the README.pdf in the installation directory (e.g.,`C:\Program Files\XtractProduct\ABAP\README.pdf`) before installing any custom function modules.
 
-When importing the Z_THEO_READ_TABLE-transport-before-740SP05 on older SAP releases a syntax error may occur. Contact [Theobald Support](mailto:support@theobald-software.com) and send the dedicated error message text.
+When importing the Z_THEO_READ_TABLE-transport-before-740SP05 on older SAP releases a syntax error may occur. Contact [Theobald Support](https://support.theobald-software.com) and send the dedicated error message text.
 
 ### Testing the module in SAP
 

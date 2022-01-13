@@ -16,7 +16,7 @@ Um eine neuere Version der Software zu installieren, führen Sie die folgenden S
 3. Installieren Sie zunächst die aktuelle Version der Software in der Testumgebung und testen Sie die neue Version ausführlich.
  - Testen Sie alle Ihre bestehenden Projekte.
  - Im Erfolgsfall folgen Sie den Schritten zur Installation der aktuellen Version auf der Produktivumgebung, siehe dazu den entsprechenden Abschnitt unten. 
- - Im Fehlerfall wenden Sie sich an den Support von Theobald Software: [support@theobald-software.com](mailto:support@theobald-software.com). Sie Können Ihr Backup erneut installieren und wiederverwenden, bis eine Lösung zur Verfügung gestellt wird.
+ - Im Fehlerfall wenden Sie sich an den Support von Theobald Software: [https://support.theobald-software.com](https://support.theobald-software.com). Sie Können Ihr Backup erneut installieren und wiederverwenden, bis eine Lösung zur Verfügung gestellt wird.
 
 
 ### Installation eines Updates auf einer Produktivumgebung

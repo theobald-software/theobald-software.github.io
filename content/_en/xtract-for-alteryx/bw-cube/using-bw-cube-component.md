@@ -25,7 +25,7 @@ The metadata (measures, dimensions, properties, BEx variables) of the selected B
 #### MDX versus BICS (beta)
 
 {: .box-note }
-**Note:** The BICS component is still in beta phase. Contact [Theobald Support](mailto:support@theobald-software.com) in case of errors.
+**Note:** The BICS component is still in beta phase. Contact [Theobald Support](https://support.theobald-software.com) in case of errors.
 
 |                                    | MDX                                                                                         | BICS (beta)                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|

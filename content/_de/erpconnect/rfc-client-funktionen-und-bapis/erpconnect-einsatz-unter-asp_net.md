@@ -22,7 +22,7 @@ Die ERPConnect.dll muss in das aktuelle Projekt als Referenz eingebunden werden.
 
 Darüber hinaus wird noch eine weitere dll benötigt: librfc32.dll. Diese Bibliothek ist im RFCSDK von SAP enthalten und wird automatisch in Ihr System32-Verzeichnis mitinstalliert, falls ein SAP GUI auf Ihrem Client-Rechner läuft. Falls der Webserver ein echter Server ist, auf dem nicht gearbeitet wird (und nicht der localhost ist), muss die dll manuell in das bin-Verzeichnis der Zielanwendung kopiert werden.
 
-Achtung!! Die Demoversion funktioniert unter ASP.NET nicht und weigert sich mit einer Exception aufgrund der fehlenden Lizenz zu SAP zu verbinden. Gerne stellen wir Ihnen unbürokratisch eine zeitlich beschränkte Testlizenz zur Verfügung. Bitte fordern Sie diese einfach formlos per Mail an (support@theobald-software.com).
+Achtung!! Die Demoversion funktioniert unter ASP.NET nicht und weigert sich mit einer Exception aufgrund der fehlenden Lizenz zu SAP zu verbinden. Gerne stellen wir Ihnen unbürokratisch eine zeitlich beschränkte Testlizenz zur Verfügung. Bitte fordern Sie diese einfach formlos per Mail an (https://support.theobald-software.com).
 
 
 **ASP.NET-Beispiel: Eine Lieferantenbestellung per BAPI anlegen.** 

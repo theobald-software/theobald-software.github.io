@@ -44,7 +44,7 @@ The following commands are supported followed by a parameter pointing at the Alt
 - */u* (for uninstall)
 
 {: .box-note }
-**Note:** Should you encounter issues with the installation of the plugin, such as the plugin is not showing in Alteryx, send the setup.log file in `C:\Program Files\XtractUniversal\alteryx\setup.log` to [Theobald Support](mailto:support@theobald-software.com).
+**Note:** Should you encounter issues with the installation of the plugin, such as the plugin is not showing in Alteryx, send the setup.log file in `C:\Program Files\XtractUniversal\alteryx\setup.log` to [Theobald Support](https://support.theobald-software.com).
 
 
 ## Connection

@@ -20,7 +20,7 @@ The window "Manage Sources" opens. <br>
 4. Click **[Make new Folder]** to create a new folder for storing tracing files, e.g., `C:\trace` (1). The created folder appears in the field **Trace directory**.
 5. Click **[OK]** to confirm.
 6. Reproduce the error. XML files with the tracing information are created in the folder `C:\trace`.
-7. Compress the folder to a zip file (e.g., Trace.zip) and send the zip file to Theobald support team (support@theobald-software.com).
+7. Compress the folder to a zip file (e.g., Trace.zip) and send the zip file to Theobald support team (https://support.theobald-software.com).
 8. Reopen the window "Source Details" and delete the entry in the field **Trace directory** (1).
 ![tracing-path](/img/content/xu_tracing_path.png){:class="img-responsive"}
 

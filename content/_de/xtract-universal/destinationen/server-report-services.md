@@ -70,7 +70,7 @@ Um die Erweiterung zu deinstallieren, verwenden Sie die *uninstall.bat* Datei au
 {: .box-note }
 **Hinweis:** Wenn das *Reporting Services Projects* Plugin in Visual Studio upgedatet wird, ist die Xtract Universal Data Extension nicht mehr verfügbar. Die Xtract Universal Data Extension muss dann neu installiert werden.
 
-Sollten bei der Installation der Xtract Universal Data Extension Schwierigkeiten auftreten, Senden Sie die Log-Datei aus dem Verzeichnis `C:\Program Files\XtractUniversal\ssrs\log.txt` an [Theobald Support](mailto:support@theobald-software.com).
+Sollten bei der Installation der Xtract Universal Data Extension Schwierigkeiten auftreten, Senden Sie die Log-Datei aus dem Verzeichnis `C:\Program Files\XtractUniversal\ssrs\log.txt` an [Theobald Support](https://support.theobald-software.com).
 
 
 ## Verbindung
@@ -129,7 +129,7 @@ Falls *Xtract Universal* nicht verfügbar oder in Großbuchstaben ist, prüfen S
 6. Optional (nur nötig, wenn die [XU-Serversicherheit](../sicherheit/serversicherheit) konfiguriert wurde oder an das SAP-Quellsystem entsprechende Credentials übergeben werden müssen): Wechseln Sie in den *Credentials* Tab (4) und geben Sie Ihren [Benutzernamen und Passwort](../sicherheit/benutzerverwaltung) für Xtract Universal ein.
 7. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 
-Wenn *Xtract Universal* trotz aktuellem *Microsoft Reporting Services Projects* Plugin und aktuellem Xtract Universal nicht in der Drop-Down-Liste (2) verfügbar ist, schicken Sie die Log-Datei aus `C:\Program Files\XtractUniversal\ssrs\log.txt` an den [Theobald Support](mailto:support@theobald-software.com).
+Wenn *Xtract Universal* trotz aktuellem *Microsoft Reporting Services Projects* Plugin und aktuellem Xtract Universal nicht in der Drop-Down-Liste (2) verfügbar ist, schicken Sie die Log-Datei aus `C:\Program Files\XtractUniversal\ssrs\log.txt` an den [Theobald Support](https://support.theobald-software.com).
 
 {: .box-tip }
 **Tipp:** Der *connection string* ist im URL string aus dem "Run Extraction"-Fenster des Designers enthalten. Kopieren Sie den String bis zum '?' und fügen Sie ihn als *connection string* in Visual Studio ein.

@@ -17,7 +17,7 @@ Die Testversion ist nur zeitlich begrenzt und funktioniert ansonsten uneingeschr
 ### Evaluieren von Xtract for Alteryx
 Während der Evaluierungsphase erhalten Sie garantiert eine uneingeschränkte Unterstützung durch das Theobald Software Support-Team.
 Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail an Theobald Software wenden: <br>
-- [support@theobald-software.com](mailto:support@theobald-software.com)
+- [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
 
 ****
