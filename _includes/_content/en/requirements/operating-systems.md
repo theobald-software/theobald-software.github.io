@@ -1,4 +1,6 @@
 ### Operating Systems
+- Windows 11
+- Windows Server 2022
 - Windows 10
 - Windows Server 2019
 - Windows 8.1 (until 10.01.2023)
