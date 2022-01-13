@@ -138,8 +138,18 @@ Tragen Sie im Feld *Crypto field* den kryptografischen Schlüssel ein, wenn Sie 
 ### File Format 
 Wählen Sie das gewünschte Dateiformat zwischen "CSV" ,"JSON" und "Parquet".
 
-Die "CSV" Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](./csv-flat-file).
+#### CVS Settings
+Die Einstellungen für den Dateityp *CSV* entsprechen den allgemeinen [Flat File CSV Einstellungen](./csv-flat-file).
 
+#### Parquet Settings
+**Compatibility mode**<br>
+Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen.
+Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden. Sonderzeichen und Leerzeichen werden im Spark-Modus durch einen Unterstrich `_` ersetzt. 
+
+| SAP | Pure | Spark |
+|------|-------------|-------|
+| INT1 | UINT_8 | INT16 |
+| TIMS | TIME_MILLIS | UTF8 |
 ![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
 
 ### Retry-Funktion

@@ -170,7 +170,7 @@ Die Einstellungen für den Dateityp *CSV* entsprechen den allgemeinen [Flat File
 #### Parquet Settings
 **Compatibility mode**<br>
 Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen.
-Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
+Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden. Sonderzeichen und Leerzeichen werden im Spark-Modus durch einen Unterstrich `_` ersetzt. 
 
 | SAP | Pure | Spark |
 |------|-------------|-------|
