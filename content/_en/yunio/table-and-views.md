@@ -17,7 +17,7 @@ This section shows how to use the *SAP Table or View* component.
 
 ### Look Up an SAP Table or View
 
-1. When adding a new *Service*, select *SAP Table or View* as the **Extraction Type**. 
+1. Create a new *Service* of type *SAP Table or View*, see [Creating a Service](./getting-started#creating-a-service). 
 2. Click **[Save and edit]**. The *Search SAP Table or View* menu opens.
 3. Enter the name of the Table or View to be extracted in the field **Search by name** (1) or search for a Table description. Use wildcards ( * ) if needed.
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
