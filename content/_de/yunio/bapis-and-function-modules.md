@@ -16,7 +16,7 @@ Der folgende Abschnitt beschreibt die Anwendung der *Function Module / BAPI* Kom
 
 ### Einen Funktionsbaustein / BAPI finden
 
-1. Wenn Sie einen neuen *Service* anlegen, wählen Sie *Function Module / BAPI* als Extraktionstyp aus.
+1. Legen Sie einen neuen *Service* vom Typ *Function Module / BAPI* an. 
 2. Klicken Sie auf **[Save and edit]**. Das *Search Function Module* Menü öffnet sich.
 3. Geben Sie den Namen eines Funktionsbausteins oder BAPIs in das Feld **Search by name** (1) ein oder suchen Sie nach einer Funktionsgruppe. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
 ![Look-Up-Function-Module](/img/content/yunio/search-bapi.png){:class="img-responsive"}
