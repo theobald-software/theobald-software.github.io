@@ -17,7 +17,7 @@ SAP Releases 4.6C and newer are supported. Including the following:
 * SAP BW/4HANA
 * SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
 * SAP R/3 Version 4.6C and later
-* [SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products#supported-sap-s4hana-systems) 
+* [SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products#supported-sap-hana-systems) 
 
 For more details on supported SAP versions, refer to the knowledge base article [SAP Versions supported by Theobald Software Products](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products).
 
