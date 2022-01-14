@@ -17,7 +17,7 @@ Der folgende Abschnitt beschreibt die Anwendung der *SAP Table and Views* Kompon
 
 ### Eine SAP Tabelle oder View finden
 
-1. Wenn Sie einen neuen *Service* anlegen, wählen Sie *SAP Table and Views* als Extraktionstyp aus.
+1. Legen Sie einen neuen *Service* vom Typ *SAP Table and Views* an.
 2. Klicken Sie auf **[Save and edit]**. Das *Search SAP Table or View* Menü öffnet sich.
 3. Geben Sie den Namen einer Tabelle oder View in das Feld **Search by name** (1) ein oder suchen Sie nach einer Tabellenbeschreibung. Verwenden Sie Wildcards ( * ), falls notwendig. <br>
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
