@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /ECS-Core-DE/default.aspx?pageid=anwendungsentwicklung-mit-ecs-core
 ---
 
-Mit **ECS Core** haben Programmierer ein ideales Werkzeug zur Entwicklung von Anwendungen für SharePoint Online/ Office 365 und anderen Cloud- oder Nicht-Cloud-basierten Umgebungen. 
+Mit **ECS Core** haben Programmierer ein ideales Tool zur Entwicklung von Anwendungen für SharePoint Online/ Office 365 und anderen Cloud- oder Nicht-Cloud-basierten Umgebungen. 
 
 Anwendungen mit ECS Core können eine beliebige Programmiersprache verwenden, welche REST Services konsumieren kann. 
 

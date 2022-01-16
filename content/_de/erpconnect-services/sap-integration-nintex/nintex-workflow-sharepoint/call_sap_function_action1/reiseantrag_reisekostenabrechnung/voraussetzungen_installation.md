@@ -29,6 +29,6 @@ Folgende Dateien zur Installation der Szenarien finden Sie in dieser [ZIP](https
 - Nintex Workflow Dateien
 - SAP Z-Funktionsbausteine 
 
-Weiterführende Informationen zum Import von Funktionsbausteinen finden Sie in folgendem [Knowledgebase-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms). 
+Weiterführende Informationen zum Import von Funktionsbausteinen finden Sie in folgendem [Kowledge Base-Artikel](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms). 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

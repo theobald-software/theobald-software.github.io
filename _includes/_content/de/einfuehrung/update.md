@@ -9,7 +9,7 @@ Um eine neuere Version der Software zu installieren, führen Sie die folgenden S
  - Regelmäßige Aktualisierung der Software, insbesondere bei Versionen mit größeren Änderungen (Major Changes) und hoher ([H]) Empfehlung für die Aktualisierung
  - Ein Backup der aktuellen Installation. Für mehr Details siehe den entsprechenden Abschnitt unten. 
  
-2. Vor dem Update prüfen Sie sorgfältig die [Version History](https://kb.theobald-software.com/version-history) und Release-Notes in der Knowledgebase.
+2. Vor dem Update prüfen Sie sorgfältig die [Version History](https://kb.theobald-software.com/version-history) und Release-Notes in der Kowledge Base.
  - Führen Sie ggf. alle notwendigen Vorbereitungen und Änderungen durch, welche in der Release Note / Version History beschrieben werden, insbesondere bei größeren Änderungen (Major Changes) und hoher ([H]) Empfehlung für die Aktualisierung.
  - Sie können auch den regelmäßigen Theobald Software Newsletter über die Änderungen in der Versionshistorie und Release Notes abonnieren. Schicken Sie eine E-Mail an info@theobald-software.com. 
 

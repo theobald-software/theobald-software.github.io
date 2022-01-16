@@ -14,9 +14,9 @@ lang: de_DE
 ### Anwendungsfall
 
 BI Client Tools wie z.B. Power BI, Power Pivot, alteryx, etc. können Extraktionen in Xtract Universal starten. Die extrahierten Daten werden von Xtract Universal direkt in diese Tools geladen.
-Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Credentials desjenigen (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. Dadurch greifen die SAP-Berechtigungen des ausführenden Benutzers, was z.B. häufig bei der Extraktion von BW/BEx Queries eine Rolle spielt.
+Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Zugangsdaten desjenigen (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. Dadurch greifen die SAP-Berechtigungen des ausführenden Benutzers, was z.B. häufig bei der Extraktion von BW/BEx Queries eine Rolle spielt.
 
-Das heisst, die Windows-Credentials dieses Benutzers müssen via Xtract Universal an SAP weitergeleitet werden. Auf dem Weg dorthin oder auf SAP-Seite besteht ein Mapping zwischen Windows-Benutzer und dessen SAP-Credentials.
+Das heisst, die Windows-Zugangsdaten dieses Benutzers müssen via Xtract Universal an SAP weitergeleitet werden. Auf dem Weg dorthin oder auf SAP-Seite besteht ein Mapping zwischen Windows-Benutzer und dessen SAP-Zugangsdaten.
 
 Prinzipiell lässt sich dieses *Single Sign On (SSO)* mit Xtract Universal über zwei unterschiedliche Verfahren darstellen:
 
@@ -38,7 +38,7 @@ Für die Nutzung dieses Verfahrens *müssen* folgende Voraussetzungen zwingend e
 Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werden - also z.B. SAPs Common Crypto Library **oder** gsskrb5, aber nicht beides gleichzeitig.
 Das hier beschriebene Verfahren funktioniert ausschließlich mit der gsskrb5. 
 
-Damit das Weiterreichen der Windows Credentials durch Xtract Universal funktioniert, muss die SNC-Lösung das unterstützen. Da Active Directory auf Kerberos basiert, muss dafür das "Double Hop"-Problem gelöst werden: Kerberos erlaubt aus Sicherheitsgründen das Weitergeben von Credentials nicht. Es gibt aber Kerberos-Erweiterungen von Microsoft (S4U-Extensions), die das ermöglichen. Diese Erweiterungen sind auch als "Constrained Delegation" bekannt.
+Damit das Weiterreichen der Windows Zugangsdaten durch Xtract Universal funktioniert, muss die SNC-Lösung das unterstützen. Da Active Directory auf Kerberos basiert, muss dafür das "Double Hop"-Problem gelöst werden: Kerberos erlaubt aus Sicherheitsgründen das Weitergeben von Zugangsdaten nicht. Es gibt aber Kerberos-Erweiterungen von Microsoft (S4U-Extensions), die das ermöglichen. Diese Erweiterungen sind auch als "Constrained Delegation" bekannt.
 
 Die Common Crypto Library von SAP unterstützt das lt. Aussage des SAP Support explizit nicht. Die Kerberos Wrapper Library (gsskrb5) von SAP unterstützt das, und ist bei mehreren unserer Kunden im Einsatz. 
 Es gibt eventuell auch Third-Party-Anbieter von SNC-Lösungen, die das können, damit konnten wir allerdings noch keine Erfahrung sammeln. Das bedeutet, dass für dieses Szenario die Kerberos Wrapper Library oder eine entsprechende Third-Party-Lösung eingesetzt werden muss.

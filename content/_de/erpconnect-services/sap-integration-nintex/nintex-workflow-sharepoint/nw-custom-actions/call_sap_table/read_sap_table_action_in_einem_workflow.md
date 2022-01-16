@@ -59,6 +59,6 @@ Nähere Informationen zur Installation des Funktionsbausteins Z_XTRACT_IS_TABLE 
 
 ![ECS-Nintex-ReadSAPTable-Action6](/img/content/ECS-Nintex-ReadSAPTable-Action6.png){:class="img-responsive"}
 
-*Where Clause*: Mit dieser Funktion kann eine Where-Bedingung für den Aufruf der SAP-Tabelle hinterlegt werden. 
+*Where Clause*: Mit dieser Funktion kann eine WHERE-Bedingung für den Aufruf der SAP-Tabelle hinterlegt werden. 
 
 ![ECS-Nintex-ReadSAPTable-Action7](/img/content/ECS-Nintex-ReadSAPTable-Action7.png){:class="img-responsive"}

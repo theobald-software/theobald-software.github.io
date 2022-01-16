@@ -78,7 +78,7 @@ Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inakti
 3. Geben Sie in den SNC-Bibliotheksfeldern (**SNC library**) den vollständigen Pfad zum Speicherort der Bibliotheken z.B. `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
 4. Geben Sie den SAP-Partnernamen (**Partner Name**) ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 
-Weitere Informationen finden Sie im Knowledgebase-Artikel [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
+Weitere Informationen finden Sie im Kowledge Base-Artikel [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
 
 Wenn Sie die Kerberos-Bibliothek verwenden, folgen Sie den Schritten beschrieben in  [SSO mit Kerberos SNC](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc).
 

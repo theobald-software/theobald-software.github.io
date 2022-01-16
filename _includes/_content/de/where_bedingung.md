@@ -11,7 +11,7 @@ werden. Im vorliegenden Beispiel soll ein Filter für das Tabellenfeld NAME1 ang
 
 ![WSD-SAPTableKNA1](/img/content/WSD-SAPTableKNA1.png){:class="img-responsive"}
 
-Die Where-Bedingung muss sich auf den technischen Feldnamen und den Input-Parameter beziehen. <br>
+Die WHERE-Bedingung muss sich auf den technischen Feldnamen und den Input-Parameter beziehen. <br>
 Achten Sie darauf, den Name der Filterbedingung zwischen einfache Anführungszeichen zu setzen.
 
 ![WSD-TableWhereClauseDialog2](/img/content/WSD-TableWhereClauseDialog2.png){:class="img-responsive"}

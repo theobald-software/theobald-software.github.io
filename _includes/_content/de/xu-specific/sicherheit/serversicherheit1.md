@@ -25,7 +25,7 @@ Falls das Zertifikat nicht im Windows Certificate Store aufgelistet ist, [instal
 7. Bestätigen Sie mit **[OK]**. Das Fenster schließt sich.
 8. Wenn Sie dazu aufgefordert werden, starten Sie den Server neu.
 
-Ergebnis: Eine Extraktion kann nur ausgeführt werden, wenn bei der Ausführung Windows AD Benutzerdaten mitgegeben werden und der übergebene Windows AD Benutzer *Read* Zugriff auf den Designer hat.
+Ergebnis: Eine Extraktion kann nur ausgeführt werden, wenn bei der Ausführung Windows AD Zugangsdaten mitgegeben werden und der übergebene Windows AD Benutzer *Read* Zugriff auf den Designer hat.
 
 {: .box-note}
 **Hinweis**: Diese Authentifizierung verwendet Kerberos Authentifizierung via SPNEGO. NTLM wird nicht unterstützt.
@@ -42,4 +42,4 @@ Ergebnis: Eine Extraktion kann nur ausgeführt werden, wenn bei der Ausführung 
 5. Bestätigen Sie mit **[OK]**. Das Fenster schließt sich.
 6. Wenn Sie dazu aufgefordert werden, starten Sie den Server neu.
 
-Ergebnis: Eine Extraktion kann nur ausgeführt werden, wenn bei der Ausführung die benutzerdefinierten Benutzerdaten mitgegeben werden und der Benutzer *Read* Zugriff auf den Designer hat.
+Ergebnis: Eine Extraktion kann nur ausgeführt werden, wenn bei der Ausführung die benutzerdefinierten Zugangsdaten mitgegeben werden und der Benutzer *Read* Zugriff auf den Designer hat.

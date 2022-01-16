@@ -77,9 +77,9 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 
 ### Xtract Universal Tool in Alteryx verwenden
-1. Fügen Sie das Werkzeug Xtract Universal zu Ihrem Alteryx-Workflow hinzu.
+1. Fügen Sie das Tool Xtract Universal zu Ihrem Alteryx-Workflow hinzu.
 ![XU_alteryx_plugin](/img/content/XU_alteryx_plugin.png){:class="img-responsive"}
-2. Legen Sie die folgenden Einstellungen für das Xtract Universal-Werkzeug im Alteryx Designer fest:
+2. Legen Sie die folgenden Einstellungen für das Xtract Universal-Tool im Alteryx Designer fest:
 - Connection (1)
 - Parameters (2
 

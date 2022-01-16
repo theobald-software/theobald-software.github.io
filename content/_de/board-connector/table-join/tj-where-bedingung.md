@@ -1,8 +1,8 @@
 ---
 ref: bc-table-join-04
 layout: page
-title: Where-Bedingung
-description: Where-Bedingung
+title: WHERE-Bedingung
+description: WHERE-Bedingung
 product: board-connector
 parent: table-join
 permalink: /:collection/:path
@@ -10,7 +10,7 @@ weight: 4
 lang: de_DE
 ---
 
-Im Bereich *Criteria* klicken Sie auf den Link, um die Where-Bedingung definieren. 
+Im Bereich *Criteria* klicken Sie auf den Link, um die WHERE-Bedingung definieren. 
 
 ![tj-where-0](/img/content/tj-where-0.png){:class="img-responsive"}
 
@@ -75,13 +75,13 @@ Nun können Sie die Bedingung frei mit Open SQL (nach dem SAP-Syntax) eingeben.
 
 ![tj-where-5](/img/content/tj-where-5.png){:class="img-responsive"}
 
-**Syntax der Where-Bedingung** 
+**Syntax der WHERE-Bedingung** 
 
 Die WHERE-Bedingung muss dem SAP OpenSQL Syntax entsprechen.
 
 - Vor und nach dem Gleichheitszeichen müssen Sie immer ein Leerzeichen eingeben, z.B. JAHR = '1999'. Für YEAR= '1999 ', YEAR ='1999' or YEAR='1999' erhalten Sie die Fehlermeldung 'A dynamically specified column Name is unknown'.
 - Fließkommazahlen müssen immer in einfache Hochkommata gesetzt werden, z.B. KMENG > '10.3'.  Für KMENG > 10.3 erhalten Sie die Fehlermeldung 'The WHERE clause has an unexpected format'.
-- Die Where-Bedingung darf keinen Zeilenumbruch (Eingabe-Taste) enthalten.
+- Die WHERE-Bedingung darf keinen Zeilenumbruch (Eingabe-Taste) enthalten.
 
 Weitere Informationen über die OpenSQL Syntax finden Sie auf der SAP Hilfe-Seite: [https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-de/abapwhere.htm?file=abapwhere.htm](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-de/abapwhere.htm?file=abapwhere.htm)
 

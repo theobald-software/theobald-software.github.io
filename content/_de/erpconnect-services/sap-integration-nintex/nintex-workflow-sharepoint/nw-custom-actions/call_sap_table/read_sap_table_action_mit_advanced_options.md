@@ -16,7 +16,7 @@ SharePoint Liste anzeigen lassen können. Unter Advanced Options sollen weitere 
 
 Als Beispiel ziehen wir die Tabelle MAKT heran. Diese Tabelle beinhaltet nur wenige Spalten und listet Materialien anhand ihrer Materialnummer und zugehörigem Lang- und Kurztext auf.  
 
-Ziel in unserem Szenario ist es, die Spalten MATNR, SPRAS und MAKTX der Tabelle MAKT als XML-Output ausgeben zu lassen und das Output in die Workflow-Variable Output schreiben zu lassen. Die Anzeigemenge soll auf 20 Zeilen begrenzt werden. Des Weiteren soll als Where-Bedingung definiert werden, dass die Spalte SPRAS (Sprache) auf den Wert EN (Englisch) eingeschränkt wird. 
+Ziel in unserem Szenario ist es, die Spalten MATNR, SPRAS und MAKTX der Tabelle MAKT als XML-Output ausgeben zu lassen und das Output in die Workflow-Variable Output schreiben zu lassen. Die Anzeigemenge soll auf 20 Zeilen begrenzt werden. Des Weiteren soll als WHERE-Bedingung definiert werden, dass die Spalte SPRAS (Sprache) auf den Wert EN (Englisch) eingeschränkt wird. 
 
 Das XML-Output soll anschließend in der Spalte einer SharePoint-Liste angezeigt werden.
 

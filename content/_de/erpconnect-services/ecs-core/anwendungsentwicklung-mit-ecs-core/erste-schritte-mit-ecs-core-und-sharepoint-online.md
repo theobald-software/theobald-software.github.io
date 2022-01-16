@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=erste-schritte-mit-ecs-core-und-sharepoint-online
 ---
 
-Dieses Beispiel zeigt, wie Sie Daten aus einem On-Premises SAP-System in SharePoint Online (Office 365) mit Hilfe von ECS Core integrieren. Folgende Werkzeuge werden außerdem verwendet: Napa Office 365 Development Tools und das Azure Portal.
+Dieses Beispiel zeigt, wie Sie Daten aus einem On-Premises SAP-System in SharePoint Online (Office 365) mit Hilfe von ECS Core integrieren. Folgende Tools werden außerdem verwendet: Napa Office 365 Development Tools und das Azure Portal.
 
 ECS Core ermöglicht eine Integration mit SAP, sowohl lesend als auch schreibend. Dieses Beispiel zeigt, wie man SAP-Daten nach SharePoint Online transferiert. 
 
@@ -26,7 +26,7 @@ Dieses Beispiel benötigt die folgenden Voraussetzungen:
 - Einen API Key generieren, siehe [API Keys]().
 - Einen Service Bus registrieren, siehe [Azure Service Bus](). 
 
-*Bemerkung*: Andere Middleware Werkzeuge, insbesondere SAP Gateway oder SAP Gateway for Microsoft werden für dieses Szenario nicht benötigt. 
+*Bemerkung*: Andere Middleware Tools, insbesondere SAP Gateway oder SAP Gateway for Microsoft werden für dieses Szenario nicht benötigt. 
 
 **Schritt 1: Eine NAPA App anlegen**  
 

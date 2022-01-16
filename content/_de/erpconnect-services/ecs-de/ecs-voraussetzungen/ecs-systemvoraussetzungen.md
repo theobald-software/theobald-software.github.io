@@ -28,7 +28,7 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=ecs-systemvoraussetzungen
 
 **Entwicklungssystem**
 
-Das Entwicklungssystem bietet dem Entwickler alle Werkzeuge, um Lösungen mit den ERPConnect Services zu entwickeln und zu pflegen. Das Entwicklungssystem kann zusammen mit dem SharePoint Server auf einem System installiert werden.
+Das Entwicklungssystem bietet dem Entwickler alle Tools, um Lösungen mit den ERPConnect Services zu entwickeln und zu pflegen. Das Entwicklungssystem kann zusammen mit dem SharePoint Server auf einem System installiert werden.
 
 - 32-bit oder 64-bit Windows Client- oder Server-Betriebssystem
 - Visual Studio, Version 2010, 2012, 2013 oder 2015

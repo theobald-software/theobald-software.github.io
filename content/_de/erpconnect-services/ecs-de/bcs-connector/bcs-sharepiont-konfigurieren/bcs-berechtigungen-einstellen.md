@@ -21,7 +21,7 @@ Wählen Sie auf dem BCS Connector Ribbon den Eintrag Show *Permissions*, um das 
 
 Betätigen Sie mit *OK*, Schaltfläche um das *Permissions Dialog Fenster* zu schließen.
 
-Um die Berechtigungen zu ändern, benutzen Sie das *SharePoint 2010 Central Administration* Werkzeug. Im Start Menü Ihres SharePoint Systems klicken Sie auf SharePoint 2010 Central Administration.
+Um die Berechtigungen zu ändern, benutzen Sie das *SharePoint 2010 Central Administration* Tool. Im Start Menü Ihres SharePoint Systems klicken Sie auf SharePoint 2010 Central Administration.
 
 ![BCS-SP-Manage-Service-Applications](/img/content/BCS-SP-Manage-Service-Applications.png){:class="img-responsive"}
 

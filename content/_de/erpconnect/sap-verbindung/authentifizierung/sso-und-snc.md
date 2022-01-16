@@ -20,7 +20,7 @@ Bei der Angabe des *SNCMechanism*  können Sie zwischen dem NTLM und dem Kerbero
 
 Sie können im Quellcode alle entsprechenden Einstellungen vornehmen. Wenn Sie die voreingestellten Eigenschaften und die SNC Verbindung nicht nutzen wollen, so können Sie diese über die Eigenschaft *SNCEnabled* = false deaktivieren, ohne die übrigen SNC Parameter ändern zu müssen.
 
-Zu den Installationsvoraussetzungen lesen Sie bitte unseren Artikel SNC Installation in der Knowledgebase.
+Zu den Installationsvoraussetzungen lesen Sie bitte unseren Artikel SNC Installation in der Kowledge Base.
 
 **Mit Angabe des SNC Mechanismus (ERPConnect Version 4.1.1.0):**
 

@@ -58,16 +58,16 @@ Beispiel: Parametrisierung der WHERE-Bedingung einer Xtract Table Komponente.<br
 
 ### Integration eines Batch Makros in einen Workflow
 
-Dieses Beispiel verwendet das **Text Input** Werkzeug, um die Parameter der Extraktion zu definieren.
+Dieses Beispiel verwendet das **Text Input** Tool, um die Parameter der Extraktion zu definieren.
 
-1. Fügen Sie ein **Text Input** Werkzeug hinzu, um die Eingabeparameter für das Batch Makro zu definieren.Geben Sie gültige Parameterwerte ein und fügen Sie für jeden Control Parameter eine neue Spalte hinzu. (1)<br>
+1. Fügen Sie ein **Text Input** Tool hinzu, um die Eingabeparameter für das Batch Makro zu definieren.Geben Sie gültige Parameterwerte ein und fügen Sie für jeden Control Parameter eine neue Spalte hinzu. (1)<br>
 Beispiel: 000000000000000023 als Eingabe für *p_MATNR_low* und 000000000000000100 als Eingabe für *p_MATNR_high*.<br>
 ![Input-Text](/img/content/xfa/input-text.png){:class="img-responsive"}
 2. Um ein Batch Makro zu importieren, machen Sie einen Rechtsklick auf die Leinwand und navigieren zu **Insert > Macro**. Fügen Sie das Makro hinzu, das die Xtract Komponente und die Control Parameter beinhaltet. <br>
-3. Verbinden Sie das **Text Input** Werkzeug mit dem Batch Makro (2).
+3. Verbinden Sie das **Text Input** Tool mit dem Batch Makro (2).
 4. Markieren Sie das Batch Makro (2) und verwenden Sie die Drop-down-Listen **Choose field**, um den Control Parametern die Werte aus den **Text Input** Spalten zuzuweisen.<br>
 ![Import-Macro](/img/content/xfa/importmacro.png){:class="img-responsive"}
-5. Fügen Sie ein **Browse** Werkzeug (3) hinzu, um das Ergebnis des Batch Makros zu prüfen und führen Sie den Workflow aus.<br>
+5. Fügen Sie ein **Browse** Tool (3) hinzu, um das Ergebnis des Batch Makros zu prüfen und führen Sie den Workflow aus.<br>
 
 ****
 #### Weiterführende Links

@@ -10,7 +10,7 @@ Der Dialog "Look Up Cube or Query" öffnet sich.
 {: .box-note }
 **Hinweis:** Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff  auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss.
 
-Mehr Details finden Sie im Knowledgebase-Artikel [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
+Mehr Details finden Sie im Kowledge Base-Artikel [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
 3. Wählen Sie ein Element aus der Liste aus.
 5. Klicken Sie auf **[OK]**, um die Auswahl zu bestätigen.
 ![Cube-Details](/img/content/Cube-Details.png){:class="img-responsive"}
