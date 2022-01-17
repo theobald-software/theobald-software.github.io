@@ -44,7 +44,7 @@ Im unteren Bildschirmbereich befindet sich eine Aufstellung der Aufträge und An
 ![ECS-BIA-CustomerFactsheet7](/img/content/ECS-BIA-CustomerFactsheet7.png){:class="img-responsive"}
 
 Bei großen Treffermengen kann zwischen den Anzeigeseiten geblättert werden und die Anzahl der 
-angezeigten Treffer pro Seite hochgesetzt werden (Defaultwert: 10 Treffer).
+angezeigten Treffer pro Seite hochgesetzt werden (Standardwert: 10 Treffer).
 
 ![ECS-BIA-CustomerFactsheet8](/img/content/ECS-BIA-CustomerFactsheet8.png){:class="img-responsive"}
 

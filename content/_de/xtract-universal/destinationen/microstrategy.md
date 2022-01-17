@@ -85,7 +85,7 @@ Die ID eines Ordners wird in Microstrategy unter *Properties* angezeigt.
 Beschreibt die Art, wie die Daten in MSTR geschrieben werden. <br>
 
 |:---:|:---|
-|  **DropAndCreate** | Default-Wert. Vorhandene Tabelle wird ggf. gelöscht und Daten werden eingefügt.  | 
+|  **DropAndCreate** | Standardwert. Vorhandene Tabelle wird ggf. gelöscht und Daten werden eingefügt.  | 
 |  **Add** | Verhält sich wie ein Insert und fügt Daten in die vorhandene Tabelle neu hinzu, sofern sie noch nicht in der Datenbank existieren. Dataset ID wird benötigt.  | 
 | **Update**  | Aktualisiert die metrischen Werte im Datensatz, wenn bereits ein passender Schlüssel im Datensatz vorhanden ist; neue Datensätze werden ignoriert.  | 
 |  **Upsert** |  Aktualisiert bestehende Datensätze und fügt dann neue hinzu. | 

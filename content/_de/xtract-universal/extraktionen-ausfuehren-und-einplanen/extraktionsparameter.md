@@ -29,8 +29,8 @@ Die Anzahl der verfügbaren Parameter ist abhängig von dem Extraktionstyp und d
 
 Parametername | Beschreibung | Spezielle Infos
 ------------ | ------------- | -------------
-clearBuffer | leert den Ergebnis-Buffer | Default-Wert - false
-preview | aktiviert die Preview | Default-Wert - false
+clearBuffer | leert den Ergebnis-Buffer | Standardwert - false
+preview | aktiviert die Preview | Standardwert - false
 source | ermöglicht das dynamische Auswählen eines SAP-Quellsystems aus dem die Daten extrahiert werden. <br> Nur aktiv, wenn mehrere SAP-Quellsysteme verfügbar sind, z.B. sap_dev und sap_prod. | -
 destination | ermöglicht das dynamische Auswählen einer Destination, in die die extrahierten Daten geschrieben werden. <br> Nur aktiv, wenn mehrere Destinationen verfügbar sind, z.B. db_1 und db_2.| -
 rows | setzt die maximale Anzahl der extrahierten Datensätze | verfügbar in [Table](../table/extraktionseinstellungen#extraction-settings-öffnen)

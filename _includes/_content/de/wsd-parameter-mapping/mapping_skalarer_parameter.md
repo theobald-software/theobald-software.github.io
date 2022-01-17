@@ -82,7 +82,7 @@ Ziel ist es, in der Webservice-Operation einen skalaren Eingabe-Parameter zu def
 Legen Sie zunächst eine Operation an, die den Funktionsbaustein BAPI_COMPANYCODE_GETDETAIL aufruft und kehren Sie zur Übersichtsseite zurück. <br>
 Legen Sie als nächsten Schritt den Eingabe-Parameter an. Wir nennen diesen *CompanyID*. Klicken Sie in der Parameters Dialogbox aufNew, um einen neuen Eintrag anzulegen. Als Datentyp wählen Sie *String* und als Verarbeitungsrichtung *Input*.  
 
-Optional können Sie einen Default-Wert hinterlegen. Das Ergebnis wird dann auf diesen Wert eingeschränkt.   
+Optional können Sie einen Standardwert hinterlegen. Das Ergebnis wird dann auf diesen Wert eingeschränkt.   
 
 ![WSD-MappingSkalarMappingInput12](/img/content/WSD-MappingSkalarMappingInput12.png){:class="img-responsive"}
 

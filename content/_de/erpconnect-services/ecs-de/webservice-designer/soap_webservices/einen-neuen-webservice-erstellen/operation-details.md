@@ -43,7 +43,7 @@ Folgende Parameter sind definiert:<br>
 namePattern: Eingabeparameter (Direction Input) vom Typ String. <br>
 customerList: Listenartiger Ausgabeparameter (Direction Return) vom Typ List of Customer. Die Definition des Datentyps *Customer* sehen wir uns gleich an.
 
-Über den Edit-Knopf können Sie dem Parameter *namePattern* einen Defaultwert (Default Value) z.B. T* zuweisen. 
+Über den Edit-Knopf können Sie dem Parameter *namePattern* einen Standardwert (Default Value) z.B. T* zuweisen. 
 
 ![WSD-Parameters](/img/content/WSD-Parameters.PNG){:class="img-responsive"}
 
