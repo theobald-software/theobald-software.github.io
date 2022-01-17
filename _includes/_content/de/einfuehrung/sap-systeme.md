@@ -17,9 +17,7 @@ SAP Release 4.6C und neuer werden unterstützt. Dazu gehören:<br/>
 * SAP BW/4HANA
 * SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs)
 * SAP R/3 Version 4.6C and later
-* [SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products#supported-sap-hana-systems) 
-
-Eine vollständige Liste aller unterstützten SAP Versionen finden Sie in dem Knowledge Base Artikel [SAP Versions supported by Theobald Software Products](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products).
+* [SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products) 
 
 ### Nicht unterstützte SAP-Systeme
 Nicht unterstützt werden die SAP-Systeme, die nicht auf ABAP-Systemen laufen oder keine RFC-Konnektivität bieten. 
