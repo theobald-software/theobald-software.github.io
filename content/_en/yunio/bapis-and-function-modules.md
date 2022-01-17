@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
 
-The following section shows how to use the Function Module / BAPI component.
+The following section shows how to use the integration type *Function Module / BAPI*.
 
 ### Look up a Function Module / BAPI
 

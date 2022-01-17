@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 
-Der folgende Abschnitt beschreibt die Anwendung der *SAP Table and Views* Komponente.
+Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *SAP Table and Views*.
 
 ### Eine SAP Tabelle oder View finden
 

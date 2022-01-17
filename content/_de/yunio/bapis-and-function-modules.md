@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
 
-Der folgende Abschnitt beschreibt die Anwendung der *Function Module / BAPI* Komponente.
+Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *Function Module / BAPI*.
 
 ### Einen Funktionsbaustein / BAPI finden
 

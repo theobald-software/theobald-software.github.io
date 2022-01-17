@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 progressstate: 5
 ---
 
-This section shows how to use the *SAP Table or View* component.
+This section shows how to use the integration type *SAP Table or View*.
 
 ### Look Up an SAP Table or View
 
