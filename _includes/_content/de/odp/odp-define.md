@@ -21,4 +21,4 @@ Wenn es sich bei Ihrer Datenquelle um eine Hierarchy handelt, siehe [Select Hier
 8. Bevor Sie eine Extraktion ausführen, prüfen Sie die [Extraktionseinstellungen](./odp-settings).
 
 {: .box-note }
-**Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Set Up and Activate DataSources](https://help.sap.com/viewer/7a60944343e543a1ab99e9b2904dab09/CLOUD/en-US/e5d447257a95416190d29638a64a5dfa.html).
+**Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).

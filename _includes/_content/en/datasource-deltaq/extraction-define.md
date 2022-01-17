@@ -7,6 +7,9 @@
 The following example shows the download of material master data from the DataSource *0MATERIAL_ATTR*.
 4. Click **[OK]** (4) to confirm your selection.
 
+{: .box-note }
+**Note:** To find DataSources, they have to be activated in SAP, see [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
+
 ### Defining a DeltaQ Extraction
 
 After selecting an Extractor, follow the steps below:

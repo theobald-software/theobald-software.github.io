@@ -26,6 +26,10 @@ DataSources/Extractors [[SAPI](./odp/odp-extractors)] | - DataSources and Extrac
 {: .box-note }
 **Note:** Depending on the connected SAP source system there are differences in available provider context. 
 
+{: .box-note }
+**Note:** To find DataSources, they have to be activated in SAP, see [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
+
+
 For more information on SAP ODP, see [SAP Wiki: Operational Data Provisioning (ODP) and Delta Queue (ODQ)](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646).
 
 ### Technical prerequisites
