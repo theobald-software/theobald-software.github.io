@@ -37,7 +37,7 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 |Start Menu Shortcuts | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
 
 {: .box-note }
-**Hinweis:** Achten Sie darauf die Option “Server > Install Service” während der Installation. Die Option der Installation vom Server ohne Service dient nur den Entwicklungszwecken.
+**Hinweis:** Markieren Sie bei der Installation die Option “Server > Install Service”. Eine Installation des Servers ohne Service dient nur Entwicklungszwecken.
 
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz#installieren-von-xtract-universal-lizenz---xtractuniversallicensejson) beschrieben.
 
