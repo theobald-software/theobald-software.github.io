@@ -105,7 +105,6 @@ Im *Output* Tab werden die Ergebnisse der Extraktion angezeigt.
 Die Anzeige ist nur bei folgenden Destinationen verfügbar:
 - Web Service CSV 
 - Web Service JSON 
-- Microsoft SQL Server
 - Alteryx
 - SQL Server Reporting Services 
 - QlikSense&QlikView
