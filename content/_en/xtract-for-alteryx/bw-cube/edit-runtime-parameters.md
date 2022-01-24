@@ -11,7 +11,7 @@ lang: en_GB
 ---
 Use runtime parameters to set dimension filters and BEx variable values dynamically during runtime.<br>
 
-### Create Runtime Parameters 
+### Creating Runtime Parameters 
 
 1. Click **[Edit Runtime Parameters]** in the main window of the component to create or edit dynamic runtime parameters.
 The window "Edit Runtime Parameters" opens.<br> 
@@ -24,7 +24,7 @@ The window "Edit Runtime Parameters" opens.<br>
 - Flag: This data type can only be used for SAP fields that require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.<br>
 4. Click **[OK]** (3) to confirm your input.
 
-### Define Runtime Parameters
+### Defining Runtime Parameters
 
 Assign the runtime parameters to BEx variables or dimension filters.
 

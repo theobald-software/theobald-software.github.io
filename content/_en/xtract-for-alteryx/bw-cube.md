@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-06
 layout: page
-title: BW Cube
+title: Xtract Cube
 description: Xtract Cube Component
 product: xtract-for-alteryx
 parent: xtract-for-alteryx

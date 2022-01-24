@@ -10,7 +10,7 @@ weight: 1
 lang: en_GB
 ---
 ### Using BAPI Component
-1. Drag and drop the BAPI component from the menu bar to the workflow canvas (1). The window "Configuration" opens.
+1. Drag and drop the Xtract BAPI component from the menu bar to the workflow canvas (1). The window "Configuration" opens.
 2. Under subsection Connection, select an existing SAP connection (2) or create a new one by clicking **[New]** (see also [SAP-Connection](../introduction/sap-connection)).
 3. Within **Selected Extraction**, click **[Edit]** (3). The window "Xtract BAPI" opens.
 ![BAPI component](/img/content/xfa/Define-bapi-component.png){:class="img-responsive"}
@@ -23,6 +23,6 @@ lang: en_GB
 6. Select an item from the list (6). 
 4. Click **[OK]** (7) to confirm.
 5. The "Xtract BAPI" window displays the parameters of the selected BAPI.<br>
-BAPI can have up to four [parameter types](./parameters): Imports, Exports, Changings and Tables.
+Xtract BAPI can have up to four [parameter types](./parameters): Imports, Exports, Changings and Tables.
 ![BAPI-Parameters](/img/content/xfa/BAPI-Parameters.png){:class="img-responsive"}
 

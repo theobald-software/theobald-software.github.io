@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-08
 layout: page
-title: ODP (Operational Data Provisioning)
+title: Xtract ODP (Operational Data Provisioning)
 description: Operational Data Provisioning (ODP)
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
@@ -18,7 +18,7 @@ The following section describes the functions of the ODP component of Xtract for
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
-### How to use the ODP component
+### How to use the Xtract ODP component
 1. Drag & drop the "Xtract ODP" component to your Alteryx workflow.
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
 
@@ -40,7 +40,7 @@ The window “ODP” contains the following subsections:<br>
 - **[[Advanced Settings](./odp/odp-settings#advanced-settings)]** - Includes the **package size** for the extraction.
 - **[Load Live Preview]** - Button to display a real-time preview of the extraction data without executing the extraction.
 
-More information on working with the ODP component is provided in the following sections.
+More information on working with the Xtract ODP component is provided in the following sections.
 
 ---
 

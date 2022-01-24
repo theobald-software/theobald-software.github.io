@@ -13,8 +13,9 @@ lang: en_GB
 The following example depicts a successful BAPI extraction of a purchase requisition.
 
 ### Running an Extraction
-1. Define an input table (e.g., *PRITEM*) in your Alteryx Workflow. Make sure that the name of the table is identical to the name of the corresponding table in SAP.
-2. Drag and drop Xtract BAPI component into your workflow and check the SAP connection (2).
+1. Define an input table (e.g., *PRITEM*) in your Alteryx Workflow. 
+Make sure that the name of the table is identical to the name of the corresponding table in SAP.
+2. Drag and drop the Xtract BAPI component into your workflow and check the SAP connection (2).
 3. Connect your input table with the Xtract BAPI component (3).
 4. Select the Xtract BAPI component and click **[Edit]** to open extraction options. The window "Xtract BAPI" opens.
 5. Perform a [BAPI look up](./bapi-define#looking-up-a-bapi) and search for "BAPI_REQUISITION_CREATE".

@@ -25,15 +25,15 @@ Xtract for Alteryx enables integrating data from the SAP system into the data fl
 
 
 ### Extraction Types
-The following extraction types  are available within Xtract for Alteryx:
+The following extraction types are available within Xtract for Alteryx:
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
-- [**BAPI**](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP.
-- [**BW Cube**](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders.
-- [**BW Hierarchy**](./bwhierarchy) - extracts hierarchies from SAP BW systems.
-- [**ODP**](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework.
-- [**Report**](./reports) - extracts data from most standard and custom ABAP reports and SAP transactions.
-- [**Table**](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side.
+- [**Xtract BAPI**](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP.
+- [**Xtract Cube**](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders.
+- [**Xtract Hierarchy**](./bwhierarchy) - extracts hierarchies from SAP BW systems.
+- [**Xtract ODP**](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework.
+- [**Xtract Report**](./reports) - extracts data from most standard and custom ABAP reports and SAP transactions.
+- [**Xtract Table**](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side.
 
 {: .box-note }
 **Note:** An [SAP Connection](./introduction/sap-connection) is a requirement for using any of Xtract for Alteryx components.
@@ -43,15 +43,18 @@ The overview below shows you for which component read (R) and write (W) rights a
 
 | Component | ERP | BW | 
 |:------------|:-----:|:----:|
-| BAPI        | R/W  | R/W |
-| BW Cube  |     | R  |
-| BW Hierarchy   |     | R  | 
-| Report   |   R  | R  | 
-| Table       | R   | R  | 
+| Xtract BAPI        | R/W  | R/W |
+| Xtract Cube  |     | R  |
+| Xtract Hierarchy   |     | R  | 
+| Xtract ODP   |  R   | R  | 
+| Xtract Report   |   R  | R  | 
+| Xtract Table       | R   | R  | 
 
 
 {: .box-note }
 **Note:** Further scenarios and combinations are possible.
+
+*****
 
 More information on functions of Xtract for Alteryx is provided in the following sections:
 

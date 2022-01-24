@@ -19,11 +19,12 @@ lang: en_GB
 
 |Component             | SAP Release           | Requirements on the SAP system                                                |
 |----------------------|-----------------------|-------------------------------------------------------------------------------|
-|BAPI & Function Module| Rel. above 4.6C       | No special requirements. **Note:** Only remote-enabled functions are supported.                            |
-|BW Cube & InfoProvider| Rel. above BW 3.1     | No special requirements.                                                                          |
-|BW Hierarchy             | Rel. above BW 3.1     | No special requirements.                                                                          |
-|ODP                   | SAP_BASIS >= 730, BW >= 7,3X   | No special requirements.                                                             |
-|Table                 | Rel. above 4.6C       | Installation of a Z-module is advisable.                   |
+|Xtract BAPI| Rel. above 4.6C       | No special requirements. **Note:** Only remote-enabled functions are supported.          |
+|Xtract Cube| Rel. above BW 3.1     | No special requirements.                                                                 |
+|Xtract Hierarchy             | Rel. above BW 3.1     | No special requirements.                                               |
+|Xtract ODP                   | SAP_BASIS >= 730, BW >= 7,3X   | No special requirements.                                      |
+|Xtract Report                   | Rel. above 4.6C   | Installation of a Z-module is required.                    |
+|Xtract Table                 | Rel. above 4.6C       | Installation of a Z-module is advisable.                   |
 
 For Information about the installation of the custom function modules and the SAP customizing, see section [SAP customizing](../sap-customizing).
 

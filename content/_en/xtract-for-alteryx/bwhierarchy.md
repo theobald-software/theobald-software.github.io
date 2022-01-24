@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-07
 layout: page
-title: BW Hierarchy
+title: Xtract Hierarchy
 description: BW Hierarchy
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
@@ -17,7 +17,7 @@ The component BW Hierarchy enables the extraction of hierarchies from an SAP BW 
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
-### How to use the BW Hierarchy component
+### How to use the Xtract Hierarchy component
 1. Drag & drop the "Xtract Hierarchy" component to your Alteryx workflow.
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
 
@@ -51,7 +51,7 @@ The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-
 #### Related Links
 - [SAP Online Help - Uploading Hierarchies from Flat Files](https://help.sap.com/saphelp_scm700_ehp02/helpdata/en/fa/e92637c2cbf357e10000009b38f936/frameset.htm)
 
-More information on working with the BW Hierarchy component is provided in the following sections.
+More information on working with the Xtract Hierarchy component is provided in the following sections.
 
 ---
 

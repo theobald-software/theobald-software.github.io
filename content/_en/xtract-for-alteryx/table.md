@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-09
 layout: page
-title: Table
+title: Xtract Table
 description: Table
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
@@ -31,7 +31,7 @@ For further information on possible restrictions and on installing the custom fu
 For incremental data extraction from tables and views, you can define a WHERE-clause on specific fields e.g., timestamp.
 The ODP component is a more convenient option for incremental extraction e.g., using [extractors](./odp/odp-extractors).
 
-### How to use the Table component
+### How to use the Xtract Table component
 
 1. Drag & drop the "Xtract Table" component to your Alteryx workflow.
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
@@ -46,7 +46,7 @@ The majority of the functions of the component can be accessed using the main wi
 The following sections give an overview over the functions that can be accessed over the main component window.
 ![Table Extractor](/img/content/xfa/xfa-table-extractor.png){:class="img-responsive"}
 
-More information on working with the Table component is provided in the following sections.
+More information on working with the Xtract Table component is provided in the following sections.
 
 ---
 
