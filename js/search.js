@@ -70,7 +70,7 @@ var main = {
                                 data.label = 'ECS Core';
                                 break;
                             case 'yunio':
-                                data.label = 'YunIO';
+                                data.label = 'yunIO';
                                 break;
                             case 'none':
                             default:
@@ -135,7 +135,7 @@ var main = {
                                 data.label = 'ECS Core';
                                 break;
                             case 'yunio':
-                                data.label = 'YunIO';
+                                data.label = 'yunIO';
                                 break;
                             case 'none':
                             default:
@@ -199,8 +199,8 @@ var main = {
 					case 'ECS Core':
                         $(this).parent().html('<img src="/img/products/TS_Icon_2C_ECSCore.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">ECS Core</p>');
                         break;
-                    case 'YunIO':
-                        $(this).parent().html('<img src="/img/products/TS_Icon_2C_YunIO.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">YunIO</p>');
+                    case 'yunIO':
+                        $(this).parent().html('<img src="/img/products/TS_Icon_2C_YunIO.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">yunIO</p>');
                         break;
                     case 'none':
                     default:
