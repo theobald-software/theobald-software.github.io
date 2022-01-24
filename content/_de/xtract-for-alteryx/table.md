@@ -11,7 +11,7 @@ weight: 9
 lang: de_DE
 ---
 
-Der folgende Abschnitt beschreibt die Funktion der Xtract for Alteryx Table Komponente. <br>
+Der folgende Abschnitt beschreibt die Funktion der Xtract Table-Komponente. <br>
 Die Table Komponente kann verwendet werden, um Inhalte aus SAP-Tabellen und Views zu extrahieren und sie in Alteryx zu verarbeiten.
 Die Table Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe [Table-Joins](./table/table-joins).<br> 
 

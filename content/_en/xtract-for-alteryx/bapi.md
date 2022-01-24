@@ -18,6 +18,8 @@ There is no substantial difference between the two concepts.
 1. Drag & drop the "Xtract BAPI" component to your Alteryx workflow.
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
 
+****
+
 More information on working with the Xtract BAPI component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

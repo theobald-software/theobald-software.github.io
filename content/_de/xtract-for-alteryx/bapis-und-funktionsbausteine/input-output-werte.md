@@ -1,7 +1,7 @@
 ---
 ref: xfa-bapi-input-output
 layout: page
-title: Input- und Output-Werte im BAPI
+title: Input- und Output-Werte
 description: Eingabe- und Ausgabewerte
 product: xtract-for-alteryx
 parent: bapis-und-funktionsbausteine

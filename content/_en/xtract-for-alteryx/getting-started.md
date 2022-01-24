@@ -11,7 +11,7 @@ weight: 4
 lang: en_GB
 
 ---
-The following section gives a general introduction to working with Xtract for Alteryx using the Table component as an example.
+The following section gives a general introduction to working with Xtract for Alteryx using the Xtract Table component as an example.
 The information described in the following section is a prerequisite for all subsequent sections.
 
 {: .box-note }

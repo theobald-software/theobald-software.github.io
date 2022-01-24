@@ -11,7 +11,7 @@ weight: 4
 lang: de_DE
 ---
 
-Der folgende Abschnitt gibt eine allgemeine Einführung in Xtract for Alteryx am Beispiel der Table-Komponente.
+Der folgende Abschnitt gibt eine allgemeine Einführung in Xtract for Alteryx am Beispiel der Xtract Table-Komponente.
 Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung für alle nachfolgenden Abschnitte.
 
 {: .box-note }

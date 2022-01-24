@@ -48,8 +48,8 @@ The **Preview** subsection displays real preview data of the selected BEx Query 
 - **[Edit Variables]** allows defining [BEx Query variables](./bw-cube/bw-cube-variables). 
 - **[Edit Runtime Parameters]** allows defining [runtime parameters](./bw-cube/edit-runtime-parameters). 
 
-More information on working with the Xtract Cube component is provided in the following sections.
-
 ---
+
+More information on working with the Xtract Cube component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

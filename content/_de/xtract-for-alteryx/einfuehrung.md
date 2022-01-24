@@ -14,5 +14,7 @@ progressstate: 5
 
 Xtract for Alteryx ist ein Plug-In für [Alteryx](https://www.alteryx.com).
 
+****
+
 Weitere Informationen hierzu finden Sie in den nachfolgenden Abschnitten, die einen Überblick über die Voraussetzungen bieten und in die Installation einführen.
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

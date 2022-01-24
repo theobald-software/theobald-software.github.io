@@ -1,7 +1,7 @@
 ---
 ref: xfa-odp-define
 layout: page
-title: Eine ODP Extraktion definieren
+title: Eine ODP-Extraktion definieren
 description: ODP Extracttion
 product: xtract-for-alteryx
 parent: odp

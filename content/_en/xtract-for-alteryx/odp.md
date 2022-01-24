@@ -40,9 +40,10 @@ The window “ODP” contains the following subsections:<br>
 - **[[Advanced Settings](./odp/odp-settings#advanced-settings)]** - Includes the **package size** for the extraction.
 - **[Load Live Preview]** - Button to display a real-time preview of the extraction data without executing the extraction.
 
-More information on working with the Xtract ODP component is provided in the following sections.
 
 ---
+
+More information on working with the Xtract ODP component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 

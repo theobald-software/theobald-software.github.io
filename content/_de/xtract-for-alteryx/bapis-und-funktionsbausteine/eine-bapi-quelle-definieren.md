@@ -1,7 +1,7 @@
 ---
 ref: xfa-bapi-define
 layout: page
-title: Eine BAPI Extraktion definieren
+title: Eine BAPI-Extraktion definieren
 description: Eine BAPI-Quelle definieren
 product: xtract-for-alteryx
 parent: bapis-und-funktionsbausteine
@@ -10,13 +10,16 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-bapi-quelle-definieren
 ---
-### BAPI verwenden
-1. Ziehen Sie die BAPI-Komponente mit "drag and drop" (1) aus der Menüleiste auf die Arbeitsfläche. Das Fenster "Konfiguration" öffnet sich.
+
+Der folgende Abschnitt beschreibt die Anwendung der Xtract BAPI Komponente.
+
+### Xtract BAPI verwenden
+1. Ziehen Sie die Xtract BAPI-Komponente mit "drag and drop" (1) aus der Menüleiste auf die Arbeitsfläche. Das Fenster "Konfiguration" öffnet sich.
 2. Füllen Sie die Anschlussdaten (2) aus, siehe Abschnitt [Erste Schritte mit Xtract for Alteryx](../erste-schritte).
 3. Innerhalb der **ausgewählten Extraktion**, klicken Sie auf **[Edit]** (3). Das Fenster "Xtract BAPI" öffnet sich.
 ![BAPI component](/img/content/xfa/Define-bapi-component.png){:class="img-responsive"}
 
-### Eine BAPI Extraktion finden
+### Eine BAPI finden
 4. Suchen nach **BAPI / Function Name** über das **[Lupensymbol]** (4). Sie können Platzhalter verwenden (*), wenn gewünscht. Das Fenster "Function Module Lookup" öffnet sich.
 5. Durch Eingabe eines Suchnamens in das Feld **BAPI / Function Name**, können Sie die Suche einschränken. Starten Sie die Suche duch klicken auf das **[Lupensymbol]** (5). Sie können Platzhalter verwenden (*), wenn gewünscht.<br>
 ![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module.png){:class="img-responsive"}

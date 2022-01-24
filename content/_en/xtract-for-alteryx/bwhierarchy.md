@@ -47,12 +47,6 @@ The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-
 
 ---
 
-
-#### Related Links
-- [SAP Online Help - Uploading Hierarchies from Flat Files](https://help.sap.com/saphelp_scm700_ehp02/helpdata/en/fa/e92637c2cbf357e10000009b38f936/frameset.htm)
-
 More information on working with the Xtract Hierarchy component is provided in the following sections.
-
----
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

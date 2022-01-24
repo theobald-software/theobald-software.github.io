@@ -1,7 +1,7 @@
 ---
 ref: xfa-bw-cube-01
 layout: page
-title: Eine BW Cube Extraktion definieren
+title: Eine Cube-Extraktion definieren
 description: BW Cube Extraction Anlegen
 product: xtract-for-alteryx
 parent: bw-cube
@@ -10,7 +10,7 @@ weight: 1
 lang: de_DE
 progressstate: 5
 ---
-Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.<br>
+Der folgende Abschnitt beschreibt die Anwendung der Xtract Cube Komponente.<br>
 
 ### Eine BEx Query oder einen BW Infofrovider finden
 1. Klicken Sie im Hauptfenster der Komponente auf  **[Suche]** (Lupensymbol). Das Fenster “Cube and Query Lookup” wird geöffnet.

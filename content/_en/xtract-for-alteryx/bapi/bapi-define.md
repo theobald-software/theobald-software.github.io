@@ -9,7 +9,11 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
-### Using BAPI Component
+
+The following section shows how to use the Xtract BAPI component. <br>
+
+
+### Using the Xtract BAPI Component
 1. Drag and drop the Xtract BAPI component from the menu bar to the workflow canvas (1). The window "Configuration" opens.
 2. Under subsection Connection, select an existing SAP connection (2) or create a new one by clicking **[New]** (see also [SAP-Connection](../introduction/sap-connection)).
 3. Within **Selected Extraction**, click **[Edit]** (3). The window "Xtract BAPI" opens.

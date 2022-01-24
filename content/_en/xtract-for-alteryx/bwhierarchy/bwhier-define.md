@@ -1,7 +1,7 @@
 ---
 ref: xfa-bwhier-define
 layout: page
-title: Defining a BW Hierarchy Extraction
+title: Defining a Hierarchy Extraction
 description: Defining a BW Hierarchy Extraction
 product: xtract-for-alteryx
 parent: bwhierarchy
@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
-The following section shows how to use the BW Hierarchy component.
+The following section shows how to use the Xtract Hierarchy component.
 
 ### Look up a BW Hierarchy
 
@@ -44,3 +44,4 @@ The original hierarchy of PM_COUNTRY in SAP looks as follows:
 ****
 #### Related Links
 - [BW Hierarchy Settings](./bwhier-settings)
+- [SAP Online Help - Uploading Hierarchies from Flat Files](https://help.sap.com/saphelp_scm700_ehp02/helpdata/en/fa/e92637c2cbf357e10000009b38f936/frameset.htm)

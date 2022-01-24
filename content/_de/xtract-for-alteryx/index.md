@@ -30,12 +30,12 @@ Die folgenden Extraktionstypen sind innerhalb von Xtract for Alteryx verfügbar:
 
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
-- [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**BW Cube**](./bw-cube) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
-- [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
-- [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
-- [**Report**](./reports) extrahiert Daten der meisten Standard und benutzerdefineirten ABAP Reports und SAP Transaktionen.
-- [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+- [**Xtract BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
+- [**Xtract Cube**](./bw-cube) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
+- [**Xtract Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
+- [**Xtract ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
+- [**Xtract Report**](./reports) extrahiert Daten der meisten Standard und benutzerdefineirten ABAP Reports und SAP Transaktionen.
+- [**Xtract Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 
 {: .box-note }
 **Hinweis:** Eine [SAP-Verbindung](./einfuehrung/sap-verbindung) ist eine Voraussetzung für die Verwendung der Komponenten von Xtract for Alteryx.
@@ -49,14 +49,16 @@ In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- u
 |:------------|:-----:|:----:|
 | BAPI        | R/W  | R/W |
 | BW Cube  |     | R  |
-| BW Hierarchy   |     | R  | 
-| Report   |   R  | R  | 
+| BW Hierarchy   |     | R  |
+| ODP   | R  | R  |  
+| Report   |  R  | R  | 
 | Table       | R   | R  | 
 
 
 {: .box-note }
 **Hinweis:** Weitere Szenarien und Kombinationen sind möglich.
 
+****
 
 Weitere Informationen zu den Funktionen von Xtract for Alteryx finden Sie in den folgenden Abschnitten:
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

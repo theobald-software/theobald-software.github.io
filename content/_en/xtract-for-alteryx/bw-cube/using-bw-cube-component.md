@@ -1,7 +1,7 @@
 ---
 ref: xfa-bw-cube-01
 layout: page
-title: Defining a BW Cube Extraction
+title: Defining a Cube Extraction
 description: Using BW Cube component
 product: xtract-for-alteryx
 parent: bw-cube
