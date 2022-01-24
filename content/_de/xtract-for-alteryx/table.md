@@ -1,7 +1,7 @@
 ---
 ref: xtract-for-alteryx-09
 layout: page
-title: Table
+title: Xtract Table
 description: Table
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
