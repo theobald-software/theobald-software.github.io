@@ -103,7 +103,6 @@ In the *Output* tab the results of the extraction are displayed.
 This option is only available for the following destinations:
 - Web Service CSV 
 - Web Service JSON 
-- Microsoft SQL Server
 - Alteryx
 - SQL Server Reporting Services 
 - QlikSense&QlikView
