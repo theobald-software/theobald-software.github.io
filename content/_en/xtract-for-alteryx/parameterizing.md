@@ -18,7 +18,7 @@ The following example shows how to parameterize the Xtract ODP component.
 {: .box-note}
 **Note:** As of now, the parameterization using batch macros and control parameters is only supported for the components Xtract BAPI, Xtract ODP and Xtract Table.
 
-### Create an Extraction
+### Creating an Extraction
 The goal of this example is to parameterize a selection filter for the DataSource *0MATERIAL_ATTR*, so that only materials with a material number between the parameters *p_MATNR_low* and *p_MATNR_high* are extracted. 
 
 1. Open a **new workflow** and create an Xtract ODP extraction. 
@@ -28,7 +28,7 @@ The goal of this example is to parameterize a selection filter for the DataSourc
 
 For more detailed information on how to create an ODP extraction, see [Define an ODP Extraction](./odp/odp-define).<br>
 
-### Create a Batch Macro with Control Parameters
+### Creating a Batch Macro with Control Parameters
 
 1. Create a new workflow that contains an extraction as described in [Create an Extraction](#create-an-extraction).
 2. To use the worklow as a batch macro, navigate to the *Workflow Configuration* and select **Batch Macro** as the Workflow Type from drop down list.<br>
@@ -56,7 +56,7 @@ Example: Parameterizing a WHERE-clause of an Xtract Table component <br>
 - To parameterize only parts of a WHERE-clause, activate **Replace a specific string** and specify what part of the WHERE-clause is to be replaced e.g., in the WHERE-clause `KNA1~LAND1 = 'param'` "param" can be used as a placeholder for the actual input.
 ![WHERE-clause-parameter](/img/content/xfa/table-where-parameterize.png){:class="img-responsive"}
 
-### Integrate the Batch Macro into a Workflow
+### Integrating the Batch Macro into a Workflow
 
 This example uses the **Text Input** tool to define the parameters for the extraction.
 
