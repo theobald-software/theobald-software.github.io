@@ -88,12 +88,12 @@ figure {
 ::-moz-selection {
   color: $color-white;
   text-shadow: none;
-  background-color: $color-link-interact;
+  background-color: $color-highlight;
 }
 ::selection {
   color: $color-white;
   text-shadow: none;
-  background-color: $color-link-interact;
+  background-color: $color-highlight;
 }
 
 img::selection {
