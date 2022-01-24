@@ -166,3 +166,5 @@ exclude:
 #google_analytics: ""
 # GTM ID
 #gtm: ""
+# Matomo site ID
+matomo_analytics: "2"
