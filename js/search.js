@@ -131,6 +131,9 @@ var main = {
 							case 'ecs-core':
                                 data.label = 'ECS Core';
                                 break;
+                            case 'yunio':
+                                data.label = 'Yunio';
+                                break;
                             case 'none':
                             default:
                                 data.label = 'none';
