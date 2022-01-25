@@ -1,7 +1,7 @@
 ---
 ref: xu-bw-infocubes-bex-queries-01
 layout: page
-title: Define a BW Cube Extraction
+title: Defining a BW Cube Extraction
 description: Define a BW Cube Extraction
 product: xtract-universal
 parent: bw-infocubes-and-bex-queries

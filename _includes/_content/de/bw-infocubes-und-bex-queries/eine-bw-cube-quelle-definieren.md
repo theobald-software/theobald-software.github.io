@@ -1,9 +1,9 @@
 Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.<br>
 
-Die Komponente BW Cube kann verwendet werden, um MDX oder BICS Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
-Ein üblicher Ansatz für die Extraktion besteht darin, eine Abfrage zu erstellen, die Ihren Geschäftsanforderungen entspricht.
+Die Komponente BW Cube kann verwendet werden, um MDX oder BICS Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. 
+Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
 
-![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
+[Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
 
 ### Einen BW Cube oder ein Query suchen
 

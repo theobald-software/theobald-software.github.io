@@ -29,8 +29,3 @@ Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicin
 
 **Automatic Slicing Dimension** ermöglicht die Extraktion einer großen Datenmenge (Millionen von Sätzen) aus dem BW.
 
-### Legacy settings
-
-**Use Description for Column (deprecated)**<br>
-Wenn diese Option aktiv ist, wird die Beschreibung und nicht der technische Name eines Pipeline-Elements als Spaltenname verwendet.<br>
-
