@@ -12,6 +12,8 @@ The BW Queries can be based on all possible InfoProviders.
 ![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
 2. In the field Name (1) enter a name of a Query or a BW Cube / InfoProvider. Use wildcards (*), if needed.
 3. Define the **Extractor** and **Type** of the object (2).
+- **Extractor** definiert, ob Daten mit dem OLAP BAPI Interface (MADX) oder dem nativen BICS Interface extrahiert werden. BICS befindet sich noch in der Beta-Phase.
+- **Type** spezifiziert, ob nach einer BEx-Query oder einem InfoProvider gesucht wird
 4. Click **[Search]** (magnifying glass symbol) (3) and select the object of your choice from the displayed list (4).
 5. Click **[OK]** (5) to confirm.
 
@@ -20,6 +22,20 @@ The BW Queries can be based on all possible InfoProviders.
  A BW Query must have the attribute *Allow External Access to this Query* switched on in the BEx Query Designer or the BW Modeling Tool to appear in the list.
  For additional details see the knowledge base article [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries)..
  
+#### MDX versus BICS (beta)
+
+{: .box-note }
+**Note:** The BICS component is still in beta phase. Contact [Theobald Support](https://support.theobald-software.com) in case of errors.
+
+|                                    | MDX                                                                                         | BICS (beta)                                        |
+|------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|
+| Syntax in lookup for BEx Queries   | `[tech. name of InfoPovider]/[tech. name of BEx Query]` <br /> example: 0SD_C03/0SD_C03_Q0018        | `[tech. name of BEx Query]` <br /> example: 0SD_C03_Q0018   |
+| Syntax in lookup for InfoProivders | `$[tech. name of InfoProvoider]`  <br /> example: $0SD_C03                                            | `[tech. name of InfoProvider]` <br /> example: 0SD_C03      |
+| Wildcards in lookup                | supported<br /> example: *0SD_C03_Q0018 instead of 0SD_C03/0SD_C03_Q0018                          | not required and therefore not supported           |
+| Supported InfoProviders            | InfoCubes, Multiproviders, Composite Providers                                              | InfoCubes, MuliProviders, Composite Providers, DSOs |
+| Setting in BEx Query               | Setting "Allow External Access to this Query" is required. If not set, BEx Query won't appear in the lookup, see [Allow External Access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries). | not required                                       |
+
+
 ### Selecting Measure (Key Figures), Dimensions and Properties
 When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. 
 The tree structure represents the metadata of the Query (or InfoProvider). <br>
