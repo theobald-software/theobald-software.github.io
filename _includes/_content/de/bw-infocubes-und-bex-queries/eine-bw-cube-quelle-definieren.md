@@ -8,7 +8,7 @@ Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
 ### Einen BW Cube oder ein Query suchen
 
 1. Im Hauptfenster der Komponente klicken Sie auf den **[Search]**-Button (Lupensymbol). Das Fenster “Cube or Query Lookup” öffnet sich.
-![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
+![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
 2. Geben Sie im Feld **Name** (1) den Namen eines Query oder eines BW Cube / InfoProvider ein. Die Verwendung von Wildcards (*) wird unterstützt. 
 3. Definieren Sie den **Extractor** und **Type** des Objekts (2).
 - **Extractor** definiert, ob Daten mit dem OLAP BAPI Interface (MADX) oder dem nativen BICS Interface extrahiert werden. BICS befindet sich noch in der Beta-Phase.
@@ -36,8 +36,8 @@ Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Q
 
 ### Auswählen von Messwerten ( Key Figures), Abmessungen und Eigenschaften
 Wenn ein Objekt ausgewählt ist, wird im Hauptfenster der Komponente auf der linken Seite eine Baumstruktur angezeigt. Die Baumstruktur stellt die Metadaten der Query (oder des InfoProviders) dar. <br>
-![Cube-Details](/img/content/XU-Tableau-BExQuery.png){:class="img-responsive"}
-Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (1). Die folgenden Verzeichnisse entsprechen den Dimensionen und enthalten oft zusätzliche Dimensionseigenschaften (2). <br>
+![Cube-Details](/img/content/xu/cube-measures.png){:class="img-responsive"}
+Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (6). Die folgenden Verzeichnisse entsprechen den Dimensionen und enthalten oft zusätzliche Dimensionseigenschaften (7). <br>
 
 1. Wählen Sie die Kennzahlen, Dimensionen und Eigenschaften für eine Extraktion.
 2. Klicken Sie innerhalb des Kennzahlenverzeichnisses auf den Pfeil, um die verfügbaren Einheiten zu anzuzeigen. Wählen Sie die Einheiten aus, falls erforderlich.
@@ -50,9 +50,9 @@ Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (1). Die folgenden Ve
 1. Klicken Sie mit der rechten Maustaste auf eine Dimension. Die Schaltfläche **[Edit Filter]** erscheint.
 ![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
 2. Klicken Sie **[Edit Filter]**. Das Fenster "Member Filter" öffnet sich. Sie können *Einzelne Werte (Single Values)* setzen und / oder *Wertebereiche (Value Ranges)* definieren.
-![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
-3. Wählen Sie einen einzelnen Wert (3) oder klicken Sie auf **[Add]** (4), um Wertebereiche hinzuzufügen. 
-4. Definieren Sie die Werte für die Filterung. Dynamische Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). Wenn nötig, löschen Sie Filter über den **[Remove]**-Button (Mülltonnensymbol).
+![Query Filter Define](/img/content/xu/cube-filter.png){:class="img-responsive"}
+3. Wählen Sie einen einzelnen Wert (8) oder klicken Sie auf **[Add]** (9), um Wertebereiche hinzuzufügen. 
+4. Definieren Sie die Werte für die Filterung (10). Dynamische Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). Wenn nötig, löschen Sie Filter über den **[Remove]**-Button (Mülltonnensymbol).
 5. Klicken Sie auf **[OK]** zum Bestätigen. Das Fenster "Member Filter" schließt sich.
 
 Wenn ein Filter definiert ist, erscheint ein Filtersymbol in der Metadatenstruktur.

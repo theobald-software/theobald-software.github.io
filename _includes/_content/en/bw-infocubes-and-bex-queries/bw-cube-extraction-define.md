@@ -9,7 +9,7 @@ The BW Queries can be based on all possible InfoProviders.
 ### Look Up a BW Cube or Query
 
 1. In the main window of the component click the **[Search]** button (magnifying glass symbol). The window “Cube and Query Lookup” opens.
-![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
+![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
 2. In the field Name (1) enter a name of a Query or a BW Cube / InfoProvider. Use wildcards (*), if needed.
 3. Define the **Extractor** and **Type** of the object (2).
 - **Extractor** definiert, ob Daten mit dem OLAP BAPI Interface (MADX) oder dem nativen BICS Interface extrahiert werden. BICS befindet sich noch in der Beta-Phase.
@@ -39,9 +39,9 @@ The BW Queries can be based on all possible InfoProviders.
 ### Selecting Measure (Key Figures), Dimensions and Properties
 When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. 
 The tree structure represents the metadata of the Query (or InfoProvider). <br>
-![Cube-Details](/img/content/XU-Tableau-BExQuery.png){:class="img-responsive"}
-The first directory contains all the measures (key figures) (1). 
-The following directories correspond to dimensions and often contain additional dimension properties (2). <br>
+![Cube-Details](/img/content/xu/cube-measures.png){:class="img-responsive"}
+The first directory contains all the measures (key figures) (6). 
+The following directories correspond to dimensions and often contain additional dimension properties (7). <br>
 
 1. Select key figures, dimensions, and properties for the extraction.
 2. Within the key figures directory, click the arrow to display the available units. Select a unit, if needed.
@@ -55,8 +55,8 @@ The following directories correspond to dimensions and often contain additional 
 ![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
 2. Click **[Edit Filter]**. The window "Member Filter" opens. You can set *Single Values* and / or define *Value Ranges*.
 ![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
-3. Select a single value (3) or  click **[Add]** (4) to add value ranges.
-4. Define values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). If needed, delete filters using the **[Remove]** button (dustbin symbol).
+3. Select a single value (8) or  click **[Add]** (9) to add value ranges.
+4. Define values for filtering (10). Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). If needed, delete filters using the **[Remove]** button (dustbin symbol).
 5. Click **[OK]** to confirm. The "Member Filter" window closes.
 
 When filters are applied, a filter symbol appears in the metadata structure.
