@@ -47,12 +47,12 @@ In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- u
 
 | Komponente | ERP | BW | 
 |:------------|:-----:|:----:|
-| BAPI        | R/W  | R/W |
-| BW Cube  |     | R  |
-| BW Hierarchy   |     | R  |
-| ODP   | R  | R  |  
-| Report   |  R  | R  | 
-| Table       | R   | R  | 
+| Xtract BAPI        | R/W  | R/W |
+| Xtract Cube  |     | R  |
+| Xtract Hierarchy   |     | R  |
+| Xtract ODP   | R  | R  |  
+| Xtract Report   |  R  | R  | 
+| Xtract Table       | R   | R  | 
 
 
 {: .box-note }
