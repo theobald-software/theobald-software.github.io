@@ -29,3 +29,6 @@ Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 - **[Edit runtime parameters](./odp-settings#parameter-bearbeiten)** - Schaltfläche zum Definieren der [Laufzeitparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter), die als Platzhalter zum Auswählen der Daten verwendet werden können.
 - **[Advanced Settings](./odp-settings#fortgeschrittene-einstellungen)** - Enthält Einstellungen für die **package size** der Extrraktion..
 - **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
+- **[Refresh Metadata]** - Durchführung eines erneuten Lookups. Bestehende Extraktionseinstellungen bleiben dabei erhalten, anders als beim erneuten Hinzufügen.
+Verwenden Sie diese Funktion, wenn eine Datenquelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. 
+
