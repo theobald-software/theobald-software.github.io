@@ -30,5 +30,7 @@ Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 - **[Advanced Settings](./odp-settings#fortgeschrittene-einstellungen)** - Enthält Einstellungen für die **package size** der Extrraktion..
 - **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
 - **[Refresh Metadata]** - Durchführung eines erneuten Lookups. Bestehende Extraktionseinstellungen bleiben dabei erhalten, anders als beim erneuten Hinzufügen.
-Verwenden Sie diese Funktion, wenn eine Datenquelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. 
 
+{: .box-note }
+**Hinweis:** Verwenden Sie **[Refresh Metadata]**, um die Metadaten zu aktualisieren.
+Dies ist nötig, wenn eine Datenquelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. 
