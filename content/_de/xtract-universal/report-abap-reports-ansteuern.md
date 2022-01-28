@@ -21,7 +21,11 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Report Kompo
 ### Report verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
 
-Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten.
+
+{% include _content/de/abap_reports/report-workflow.md %}
 
 ****
+
+Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten:
+
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

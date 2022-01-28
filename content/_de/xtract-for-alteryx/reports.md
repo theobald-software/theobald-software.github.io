@@ -25,8 +25,12 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract for Alteryx Report Kom
 2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu der **gewählten Extraktion** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
 
 Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
-Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten.
+
+{% include _content/de/abap_reports/report-workflow.md %}
+
 
 ---
+
+Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

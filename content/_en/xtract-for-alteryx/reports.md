@@ -23,8 +23,11 @@ The following section describes the functions of the Report component of Xtract 
 2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
 
 The majority of the functions of the component can be accessed using the main window.
-More information on working with Report component is provided in the following sections.
+
+{% include _content/en/abap-reports/report-workflow.md %}
 
 ---
+
+More information on working with Report component is provided in the following sections:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
