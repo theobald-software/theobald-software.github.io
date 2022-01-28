@@ -17,6 +17,10 @@ The following section describes the functions of the OHS component of Xtract Uni
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
+### Prerequisites
+
+{% include _content/en/bw-open-hub-services/preparation.md %}
+
 ### How to use the OHS component
 {% include _content/en/xu-specific/define-extraction.md %}
 

@@ -12,5 +12,5 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-report-extraction
 ---
 The following section shows how to use the Report component.
 
-{% include _content/en/abap-reports/report-workflow.md %}
+
 {% include _content/en/abap-reports/report-extraction-define.md %}

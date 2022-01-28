@@ -21,9 +21,10 @@ The following section describes the functions of the Report Component of BOARD C
 ### How to use the Report component
 {% include _content/en/board-specific/define-extraction.md %}
 
-More information on working with the Report component is provided in the following sections.
+{% include _content/en/abap-reports/report-workflow.md %}
 
 ---
+More information on working with the Report component is provided in the following sections:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 
