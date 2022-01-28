@@ -14,11 +14,11 @@ old_url: /Xtract-IS-DE/
 
 Willkommen in der Online Help von Xtract IS for Azure.
 
-Xtract IS for Azure ist ein Plug-in für die [SQL Server Integration Services (SSIS)](https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services).
+Xtract IS for Azure ist ein Plug-in für die [SQL Server Integration Services (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/sql-server-integration-services).
 
 ### Über Azure SSIS-IR
 
-*Xtract IS for Azure* ermöglicht es, SSIS Pakete die Xtract IS Komponenten enthalten, auf einer [Azure-SSIS Integration Runtime (IR), basierend auf Microsoft's Azure Data Factory v2 (ADFv2)](https://azure.microsoft.com/en-us/blog/lift-sql-server-integration-services-packages-to-azure-with-azure-data-factory/) auszuführen.
+*Xtract IS for Azure* ermöglicht es, SSIS Pakete die Xtract IS Komponenten enthalten, auf einer Azure-SSIS Integration Runtime (IR), basierend auf [Microsoft's Azure Data Factory v2](https://azure.microsoft.com/de-us/blog/lift-sql-server-integration-services-packages-to-azure-with-azure-data-factory/) oder [Azure Synapse Analytics](https://docs.microsoft.com/en-us/azure/synapse-analytics/) auszuführen.
 
 Bei der Nutzung der Azure-SSIS IR werden die SSIS Pakete immer noch lokal und on-prem in Visual Studio/SSDT Umgebung entwickelt.
 Anstatt die entwickelten Pakete auf einem SSIS-Server vor Ort bereitzustellen, werden die Pakete auf einer Azure-SSIS IR bereitgestellt, um in der Azure-Cloud eingeplant und ausgeführt zu werden.
