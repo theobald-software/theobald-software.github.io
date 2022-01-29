@@ -24,9 +24,10 @@ The following section describes the functions of the OHS component of Xtract Uni
 ### How to use the OHS component
 {% include _content/en/xu-specific/define-extraction.md %}
 
-More information on working with the OHS component is provided in the following sections.
 
 ---
+
+More information on working with the OHS component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 <!--stackedit_data:

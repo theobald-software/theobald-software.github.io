@@ -23,8 +23,10 @@ The Xtract IS Report component is a data source for SSIS that enables ABAP repor
 ### How to use the Xtract Report component
 {% include _content/en/xis-specific/define-extraction.md %}
 
-More information on working with the Xtract Report component is provided in the following sections.
+{% include _content/en/xis-specific/report/workflow.md %}
 
 ---
+
+More information on working with the Xtract Report component is provided in the following sections:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
