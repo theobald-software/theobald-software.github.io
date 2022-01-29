@@ -18,6 +18,10 @@ The Xtract IS OHS Compomente is an SSIS data source that can be used to run OHS 
 {: .box-tip }
 **Tip:** To get information on the basics, refer to [Getting Started](./getting-started). <br>
 
+### Prerequisites
+
+{% include _content/en/bw-open-hub-services/preparation.md %}
+
 ### How to use the Xtract OHS component
 {% include _content/en/xis-specific/define-extraction.md %}
 
