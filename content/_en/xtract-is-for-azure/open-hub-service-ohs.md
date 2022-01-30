@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure7
 layout: page
 title: Xtract OHS (Open Hub Service)
 description: Xtract OHS (Open Hub Service)
@@ -19,7 +19,6 @@ The Xtract IS OHS Compomente is an SSIS data source that can be used to run OHS 
 **Tip:** To get information on the basics, refer to [Getting Started](./getting-started). <br>
 
 ### Prerequisites
-
 {% include _content/en/bw-open-hub-services/preparation.md %}
 
 ### How to use the Xtract OHS component

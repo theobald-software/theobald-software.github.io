@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure10
 layout: page
 title: Xtract Table
 description: Xtract Table

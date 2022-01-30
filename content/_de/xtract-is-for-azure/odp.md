@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure6
 layout: page
 title: Xtract ODP (Operational Data Provisioning)
 description: Xtract ODP (Operational Data Provisioning)

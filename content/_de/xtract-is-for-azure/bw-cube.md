@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure2
 layout: page
 title: Xtract BW Cube
 description: Xtract BW Cube

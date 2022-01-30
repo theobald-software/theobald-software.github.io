@@ -18,7 +18,6 @@ Die Xtract IS OHS Komponente ist eine SSIS-Datenquelle, mit deren Hilfe OHS-Info
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract IS](./erste-schritte) beschrieben.<br>
 
 ### Voraussetzungen
-
 {% include _content/de/bw-open-hub-services/vorbereitung-fuer-ohs-im-bw.md %}
  
 ### Xtract OHS verwenden

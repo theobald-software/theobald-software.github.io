@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure12
 layout: page
 title: The BI Notification Server
 description: The BI Notification Server

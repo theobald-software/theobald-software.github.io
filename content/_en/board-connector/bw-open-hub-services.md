@@ -18,6 +18,10 @@ The following section describes the functions of the OHS Component of BOARD Conn
 {: .box-tip }
 **Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](./getting-started).
 
+### Prerequisites
+
+{% include _content/en/bw-open-hub-services/preparation.md %}
+
 ### How to use the OHS component
 {% include _content/en/board-specific/define-extraction.md %}
 

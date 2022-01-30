@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azuresapconnection
 layout: page
 title: SAP Connection
 description: SAP Connection

@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure3
 layout: page
 title: Xtract BW Loader
 description: Xtract BW Loader

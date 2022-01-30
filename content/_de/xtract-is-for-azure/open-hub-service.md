@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure7
 layout: page
 title: Xtract OHS (Open Hub Service)
 description: Xtract OHS (Open Hub Service)

@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure8
 layout: page
 title: Xtract Query
 description: Xtract Query

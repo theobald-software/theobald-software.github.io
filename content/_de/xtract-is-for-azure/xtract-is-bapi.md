@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure1
 layout: page
 title: Xtract BAPI
 description: Xtract BAPI

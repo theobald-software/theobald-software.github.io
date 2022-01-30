@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure5
 layout: page
 title: Xtract BW Hierarchy
 description: Xtract BW Hierarchy

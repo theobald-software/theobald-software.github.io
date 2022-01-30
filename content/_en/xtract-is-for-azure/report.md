@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure9
 layout: page
 title: Xtract Report
 description: Xtract Report

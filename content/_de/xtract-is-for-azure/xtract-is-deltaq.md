@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-for-azure16
+ref: xtract-is-for-azure4
 layout: page
 title: Xtract DeltaQ
 description: Xtract DeltaQ

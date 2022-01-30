@@ -17,6 +17,10 @@ Der folgende Abschnitt beschreibt die Funktion der BOARD Connector OHS Komponent
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
 
+### Voraussetzungen
+
+{% include _content/de/bw-open-hub-services/vorbereitung-fuer-ohs-im-bw.md %} 
+
 ### OHS verwenden
 {% include _content/de/board-specific/define-extraction.md %}
 

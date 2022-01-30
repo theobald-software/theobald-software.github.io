@@ -23,7 +23,7 @@ Die Xtract IS Report Kompomente ist eine SSIS-Datenquelle, mit deren Hilfe Sie b
 ### Xtract Report verwenden
 {% include _content/de/xis-specific/define-extraction.md %}
 
-{% include _content/de/xis-specific/abap_reports/workflow.md %}
+{% include _content/de/xis-specific/abap-reports/workflow.md %}
 
 ---
 
