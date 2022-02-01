@@ -36,13 +36,8 @@ Each log entry is assigned to one of the following log levels:
 
 ### Reading Logs - Extraction Log
 
-![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
-Select the checkboxes to display only certain log levels.
-
 Read the logs written in understandable language to better understand the procedures of Xtract Universal. 
 Ihe following example log belongs to an extraction that writes data into an sql destination:
-
- ![XU_logging_1](/img/content/xu/logging-extract-detail-01.png){:class="img-responsive"}
 
 1. General technical information is displayed.
 2. The [SQL destination](./destinations/microsoft-sql-server) is prepared for receiving data.
@@ -52,11 +47,9 @@ Ihe following example log belongs to an extraction that writes data into an sql 
 6. Data from SAP is requested.
 7. Package no. 1 is received from SAP.
 8. Package no. 1 is written to the SQL server.
-9. Package no. 2 is received from SAP.
-10. Package no. 2 is written to the SQL server.
-11. Package no. 3 is received from SAP.
-12. Package no. 3 is written to the SQL server.
-13. Extraction is completed.
+9. Extraction is completed.
+
+ ![XU_logging_1](/img/content/xu/logging-extract-detail-03.png){:class="img-responsive"}
 
 
 *****

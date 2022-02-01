@@ -32,7 +32,7 @@ Markieren Sie dafür die Extraktion, deren Logs angezeigt werden sollen.
 
 1. Der Zeitstempel für jeden Extraktionsprozess wird im linken Teil des Fensters "View Extraction Log" angezeigt.
 Um Extraktionen nach Ausführungsdatum zu filtern, geben Sie einen Zeitraum in (1) ein.
-2. Markieren Sie die Checkboxen unter der Log-Anzeige, um nur bestimmte Log-Levels anzeigen zu lassen (2).
+2. Markieren Sie die Checkboxen unter der Log-Anzeige, um nach Log-Levels zu filtern (2).
 3. Klicken Sie auf das **[Copy To Clipboard]**-Symbol (3), um das aktuelle Log in die Zwischenablage zu kopieren. 
 
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}

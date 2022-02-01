@@ -38,13 +38,8 @@ Jeder Log-Eintrag ist einem der folgenden Log-Levels zugewiesen:
 
 ### Logs Lesen - Extraktions-Log
 
-![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
-Um nur bestimmte Log-Levels anzuzeigen, markieren Sie die entsprechenden Checkboxen.
-
 Lesen Sie die in verständlicher Sprache geschriebenen Logs, um die Abläufe von Xtract Universal besser zu verstehen.  
 Im folgenden Beispiel-Log werden Daten in eine SQL-Destination geschrieben.
-
-![XU_logging_1](/img/content/xu/logging-extract-detail-01.png){:class="img-responsive"}
 
 1. Allgemeine technische Informationen werden angezeigt.
 2. Die [SQL-Destination](./destinationen/microsoft-sql-server) wird für Empfang von Daten vorbereitet.
@@ -54,12 +49,9 @@ Im folgenden Beispiel-Log werden Daten in eine SQL-Destination geschrieben.
 6. Daten werden von SAP angefordert.
 7. Paket Nr. 1 wird von SAP empfangen.
 8. Paket Nr. 1 wird in den SQL-Server geschrieben.
-9. Paket Nr. 2 wird von SAP empfangen.
-10. Paket Nr. 2 wird in den SQL-Server geschrieben.
-11. Paket Nr. 3 wird von SAP empfangen.
-12. Paket Nr. 3 wird in den SQL-Server geschrieben.
-13. Extraktion wird abgeschlossen.
+9. Extraktion wird abgeschlossen.
 
+![XU_logging_1](/img/content/xu/logging-extract-detail-03.png){:class="img-responsive"}
 
 ******
 

@@ -32,7 +32,7 @@ Select an extraction to display the corresponding logs.
 
 1. The timestamp for each extraction process is displayed in the left part of the "View Extraction Log" window.
 To filter the execution date of the logs, enter a time period in (1).
-2. Select the checkboxes underneath the log display to display only certain log levels.
+2. Mark the checkboxes underneath the log display to filter log levels.
 3. Click the **[Copy To Clipboard]** icon (3) to copy the current log to the clipboard. 
 
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
