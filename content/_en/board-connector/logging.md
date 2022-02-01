@@ -37,11 +37,9 @@ Each log entry is assigned to a so-called log level. There are the following log
 
 ### Reading Logs - Extraction Log
 
-![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
-Select the check boxes in the upper left corner to decide which log levels to display.
-
-To better understand the procedures of BOARD Connector, you can read the logs written in understandable language.
-The [example of a readable log](https://help.theobald-software.com/en/xtract-universal/logging#reading-logs---extraction-log) can be taken from Xtract Universal as the procedures are similar. The only difference is that BOARD Connector does not have destinations and data is always written to BOARD. 
+To better understand the procedures of BOARD Connector, read the logs written in understandable language.
+The [example log](https://help.theobald-software.com/en/xtract-universal/logging#reading-logs---extraction-log) from Xtract Universal can be used as a reference, as the procedures are similar to BOARD Connector. 
+The only difference is that BOARD Connector does not have destinations and data is always written to BOARD. 
 
 *****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
