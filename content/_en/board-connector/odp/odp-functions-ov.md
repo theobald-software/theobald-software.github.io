@@ -29,4 +29,8 @@ The window “ODP” contains the following subsections:
 - **[Edit runtime parameters](./odp-settings#edit-parameters)** - Defines [runtime parameters](../advanced-techniques/extraction-parameters) that can be used as placeholders for data selections.
 - **[Advanced Settings](odp-settings#advanced-settings)** - Includes the **package size** for the extraction.
 - **[Load Live Preview]** - Button to display a real-time preview of the extraction data without executing the extraction.
+- **[Refresh Metadata]** - Performs a new lookup. Existing extraction settings are retained, which is not the case when performing new lookups manually.
 
+
+{: .box-note }
+**Note:** Use **[Refresh Metadata]** to renew metadata. This is necessary if a data provider has been adjusted in SAP, another source system has been connected, or the source system has been updated. 
