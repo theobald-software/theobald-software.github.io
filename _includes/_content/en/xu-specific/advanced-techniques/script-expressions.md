@@ -63,6 +63,9 @@ Xtract Universal script expressions support the following .NET objects, properti
 
 ### Using Script Expressions as Selection Parameters for Extractions
 
+{: .box-note }
+**Note:** This is currently only supported for the Table and DeltaQ component.
+
 Script expressions can be used as selection parameters in Table or DeltaQ extractions. 
 They are usually used to determine a dynamic date based on the current date. 
 With Table extractions they are used as part of the [WHERE Clause](../table/where-clause).

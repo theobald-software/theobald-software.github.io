@@ -61,6 +61,9 @@ Die Skript-Ausdrücke von Xtract Universal unterstützen die folgenden .NET-Obje
 
 ### Skript-Ausdrücke als Auswahlparameter für Extraktionen verwenden
 
+{: .box-note }
+**Hinweis:** Skript-Ausdrücke als Auswahlparameter für Extraktionen wird derzeit nur für die Table- und DeltaQ-Komponenten unterstützt.
+
 Skript-Ausdrücke können als Auswahlparameter in Tabellen- oder DeltaQ-Extraktionen verwendet werden. 
 Sie werden normalerweise verwendet, um ein dynamisches Datum auf der Basis des aktuellen Datums zu bestimmen. 
 Bei Tabellenextraktionen werden sie als Teil der [WHERE Bedingung](../table/where-bedingung) verwendet.
@@ -76,7 +79,7 @@ Dieses Szenario unterstützt:
 ### Skript-Ausdrücke als dynamische Ordnerpfade verwenden
 
 {: .box-note }
-**Hinweis:** Dies wird derzeit nur für die Destinationen Azure Storage und Amazon AWS S3 unterstützt.
+**Hinweis:** Skript-Ausdrücke als dynamische Ordnerpfade wird derzeit nur für die Destinationen Azure Storage und Amazon AWS S3 unterstützt.
 
 In diesem Szenario werden Skript-Ausdrücke zur Generierung eines dynamischen Ordnerpfads für Destinationen verwendet, die flachen Dateien (Flat Files) schreiben. 
 Dadurch kann ein Ordnerpfad generiert werden, der sich aus den Eigenschaften einer Extraktion zusammensetzt, z.B. Extraktionsname, SAP-Quellobjekt.
