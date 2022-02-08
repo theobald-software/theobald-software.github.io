@@ -32,7 +32,7 @@ All ETL tools offer the following options for running extractions:
 
 ### Integration via Command Line
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
-- [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/adf-integration-using-command-line)
+- [Azure Data Factory (ADF) Integration using XU's Command Line Tool](https://kb.theobald-software.com/xtract-universal/adf-integration-using-command-line)
 
 ### Integration via Azure Data Factory
 
