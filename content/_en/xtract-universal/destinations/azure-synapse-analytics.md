@@ -77,3 +77,4 @@ The following settings can be defined for the destination:
 *****
 ## Related Links
 - [Microsoft Azure Synapse Analytics](https://docs.microsoft.com/en-us/azure/synapse-analytics/)
+- [Integration via Azure Data Factory](../execute-and-automate-extractions/call-via-etl#integration-via-azure-data-factory)

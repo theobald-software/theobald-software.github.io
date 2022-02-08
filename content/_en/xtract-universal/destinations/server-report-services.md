@@ -210,3 +210,4 @@ If a query parameter is NULL, that parameter is not passed at runtime and thus w
 - [Reporting Services Tutorials (SSRS)](https://docs.microsoft.com/en-us/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15)
 - [Add a Query Parameter to Create a Report Parameter](https://docs.microsoft.com/en-us/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder?view=sql-server-ver15#Query)
 - [Using Computed Query Parameters for SSRS with Xtract Universal](https://kb.theobald-software.com/xtract-universal/xu-ssrs-parameterizing-in-vs)
+- [Integration via Azure Data Factory](../execute-and-automate-extractions/call-via-etl#integration-via-azure-data-factory)

@@ -79,3 +79,4 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 *****
 ## Weiterführende Links
 - [Microsoft Azure Synapse Analytics](https://docs.microsoft.com/de-de/azure/synapse-analytics/)
+- [Integration mittels Azure Data Factory](../extraktionen-ausfuehren-und-einplanen/call-via-etl#integration-mittels-azure-data-factory)

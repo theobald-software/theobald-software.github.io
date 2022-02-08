@@ -216,3 +216,4 @@ Wenn ein Abfrageparameter NULL ist, wird der Parameter zu Laufzeit nicht überge
 - [Reporting Services-Tutorials (SSRS)](https://docs.microsoft.com/de-de/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15)
 - [Hinzufügen eines Abfrageparameters zum Erstellen eines Berichtsparameters](https://docs.microsoft.com/de-de/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder?view=sql-server-ver15#Query)
 - [Using Computed Query Parameters for SSRS with Xtract Universal](https://kb.theobald-software.com/xtract-universal/xu-ssrs-parameterizing-in-vs)
+- [Integration mittels Azure Data Factory](../extraktionen-ausfuehren-und-einplanen/call-via-etl#integration-mittels-azure-data-factory)

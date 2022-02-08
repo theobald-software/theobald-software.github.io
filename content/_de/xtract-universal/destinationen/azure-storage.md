@@ -263,4 +263,4 @@ Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus 
 ****
 ## Weiterführende Links
 - [Youtube Tutorial: SAP data in Azure Storage via Xtract Universal](https://www.youtube.com/watch?v=Q9mF-vsFxnQ){:target="_blank"}
-- [Run an ADF pipeline when an SAP extraction file is successfully uploaded to Azure storage](https://kb.theobald-software.com/xtract-universal/runs-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage)
+- [Integration mittels Azure Data Factory](../extraktionen-ausfuehren-und-einplanen/call-via-etl#integration-mittels-azure-data-factory)

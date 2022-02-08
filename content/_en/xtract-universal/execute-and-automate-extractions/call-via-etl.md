@@ -27,8 +27,15 @@ All ETL tools offer the following options for running extractions:
 - [GCS Integration with Google Scheduler](https://cloud.google.com/scheduler/docs/creating)
 - [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
 - [Generate Qlik data load script](../destinations/qliksense-qlikview#generating-a-data-load-script)
+- [Azure Data Factory (ADF) Integration using Webservices](https://kb.theobald-software.com/xtract-universal/adf-integration-using-webservices)
+
 
 ### Integration via Command Line
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
 - [Azure Data Factory (ADF) Integration](https://kb.theobald-software.com/xtract-universal/automation-of-xu-data-extracts-with-adf)
+
+### Integration via Azure Data Factory
+
+- [Azure Data Factory (ADF) Integration using Webservices](https://kb.theobald-software.com/xtract-universal/adf-integration-using-webservices)
+- [Azure Data Factory (ADF) Integration using XU's Command Line Tool](https://kb.theobald-software.com/xtract-universal/adf-integration-using-command-line)
 - [Run an ADF pipeline when an SAP extraction file is successfully uploaded to Azure storage](https://kb.theobald-software.com/xtract-universal/runs-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage)

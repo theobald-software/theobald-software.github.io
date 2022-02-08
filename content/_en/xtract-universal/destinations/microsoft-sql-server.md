@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=microsoft-sql-server
 ---
 
-The following section describes the loading of the SAP extraction data to a Microsoft SQL Server Database destination.
+The following section describes the loading of the SAP extraction data to a Microsoft SQL Server Database or a Microsoft Azure SQL Database destination.
 
 ## Requirements
 
@@ -182,3 +182,4 @@ VALUES
 ## Related Links
 
 - [Post-Processing Column Name Style](https://kb.theobald-software.com/xtract-universal/adjust-column-name-style)
+- [Integration via Azure Data Factory](../execute-and-automate-extractions/call-via-etl#integration-via-azure-data-factory)

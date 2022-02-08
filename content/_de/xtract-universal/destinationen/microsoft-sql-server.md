@@ -11,7 +11,7 @@ weight: 60
 lang: de_DE
 progressstate: 5
 ---
-Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine SQL-Zieldatenbank. 
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine Microsoft Server SQL Datenbank oder eine Microsoft Azure SQL Datenbank. 
 
 ## Voraussetzungen
 
@@ -185,3 +185,4 @@ VALUES
 *******
 ## Weiterführende Links
 - [Post-Processing Column Name Style](https://kb.theobald-software.com/xtract-universal/adjust-column-name-style)
+- [Integration mittels Azure Data Factory](../extraktionen-ausfuehren-und-einplanen/call-via-etl#integration-mittels-azure-data-factory)
