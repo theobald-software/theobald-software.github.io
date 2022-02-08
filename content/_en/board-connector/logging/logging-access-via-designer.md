@@ -26,14 +26,18 @@ The logs are created per TCP connection. To switch between the logs, you can use
 
 ### Extraction Logs
 
-{: .box-note }
-**Note:** Select an extraction to display the corresponding logs. 
+The extraction logs can be displayed in the Designer by clicking the **[Log]** button. 
+Select an extraction to display the corresponding logs. 
 
-The extraction logs can be displayed in the Designer under **[Log]**.
+1. The timestamp for each extraction process is displayed in the left part of the "View Extraction Log" window.
+To filter the execution date of the logs, enter a time period in (1).
+2. Mark the checkboxes underneath the log display to filter log levels.
+3. Click the **[Copy To Clipboard]** icon (3) to copy the current log to the clipboard. 
+
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
-Select the check boxes in the upper left corner to decide which log levels to display.
-The timestamp for each extraction process is displayed in the left part of the "View Extraction Log" dialog.
 
+Both the server and extraction logs are automatically deleted after a defined period of time. 
+That time period is set in the [server settings](../server/server-settings).
 
 ### Copying Logs
 Click**[Copy To Clipboard]**, to copy the current log to the clipboard. The copied log can be inserted to any application (e.g., into an e-mail).

@@ -38,11 +38,9 @@ Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende 
 
 ### Logs Lesen - Extraktions-Log
 
-![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"} 
-Markieren Sie die Checkboxen oben links, um zu entscheiden, welche Log-Levels angezeigt werden sollen.
-
-Um die Prozesse von BOARD Connector besser zu verstehen, können Sie die in verständlicher Sprache verfassten Logs lesen.
-Das [Beispiel eines lesbaren Logs] (https://help.theobald-software.com/de/xtract-universal/logging#logs-lesen---extraktions-log) kann von Xtract Universal übernommen werden, da die Prozeduren ähnlich sind. Der einzige Unterschied besteht darin, dass der BOARD Connector keine Destinationen hat und die Daten immer nach BOARD geschrieben werden. 
+Um die Prozesse von BOARD Connector besser zu verstehen, lesen Sie die in verständlicher Sprache verfassten Logs.
+Das [Beispiel eines lesbaren Logs] (https://help.theobald-software.com/de/xtract-universal/logging#logs-lesen---extraktions-log) kann von Xtract Universal übernommen werden, da die Prozeduren ähnlich sind. 
+Der einzige Unterschied besteht darin, dass BOARD Connector keine Destinationen hat und die Daten immer nach BOARD geschrieben werden. 
 
 ****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

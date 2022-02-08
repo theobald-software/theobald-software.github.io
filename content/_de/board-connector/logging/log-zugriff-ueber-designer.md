@@ -27,13 +27,19 @@ Die Logs werden pro TCP-Verbindung erstellt. Um zwischen den Logs zu wechseln, k
 
 ### Extraktions-Logs
 
-{: .box-note }
-**Hinweis:** Markieren Sie die gewünschte Extraktion für die, Sie die Extraktions-Logs anzeigen lassen wollen. 
 
-Die Extraktions-Logs können im Designer unter **[Log]** angezeigt werden.
+Die Extraktions-Logs können im Designer über die Schaltfläche **[Logs]** angezeigt werden. 
+Markieren Sie dafür die Extraktion, deren Logs angezeigt werden sollen.
+
+1. Der Zeitstempel für jeden Extraktionsprozess wird im linken Teil des Fensters "View Extraction Log" angezeigt.
+Um Extraktionen nach Ausführungsdatum zu filtern, geben Sie einen Zeitraum in (1) ein.
+2. Markieren Sie die Checkboxen unter der Log-Anzeige, um nach Log-Levels zu filtern (2).
+3. Klicken Sie auf das **[Copy To Clipboard]**-Symbol (3), um das aktuelle Log in die Zwischenablage zu kopieren. 
+
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}
- 
-Der Zeitstempel für jeden Extraktionsprozess wird im linken Teil des Dialogs "View Extraction Log" angezeigt.
+
+Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. 
+Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) eingestellt werden.
 
 
 ### Kopieren von Logs
