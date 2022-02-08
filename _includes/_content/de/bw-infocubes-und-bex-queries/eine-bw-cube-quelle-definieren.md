@@ -16,6 +16,9 @@ Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
 4. Klicken Sie auf **[Search]** (Lupensymbol) (3) und wählen Sie ein Objekt aus der Liste (4) aus.
 5. Klicken Sie auf **[OK]** (5) zum Bestätigen.
 
+{: .box-note }
+**Hinweis:** Verwenden Sie **[Refresh Metadata]**, um die Metadaten zu aktualisieren. Dies ist nötig, wenn eine Datenquelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde.
+
 {: .box-warning }
 **Warning! Invalid action**<br>
 Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss. 

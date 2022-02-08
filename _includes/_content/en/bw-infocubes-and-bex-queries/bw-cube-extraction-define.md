@@ -12,10 +12,14 @@ The BW Queries can be based on all possible InfoProviders.
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
 2. In the field Name (1) enter a name of a Query or a BW Cube / InfoProvider. Use wildcards (*), if needed.
 3. Define the **Extractor** and **Type** of the object (2).
-- **Extractor** definiert, ob Daten mit dem OLAP BAPI Interface (MADX) oder dem nativen BICS Interface extrahiert werden. BICS befindet sich noch in der Beta-Phase.
-- **Type** spezifiziert, ob nach einer BEx-Query oder einem InfoProvider gesucht wird
+- **Extractor** defines, if data is extracted using the OLAP BAPI Interface (MADX) or the native BICS Interface. BICS is still in beta phase.
+- **Type** specifies if a BEx-Query or an InfoProvider is looked up.
 4. Click **[Search]** (magnifying glass symbol) (3) and select the object of your choice from the displayed list (4).
 5. Click **[OK]** (5) to confirm.
+
+{: .box-note }
+**Note:** Use **[Refresh Metadata]** to renew metadata. 
+This is necessary if a data source has been adjusted in SAP, another source system has been connected, or the source system has been updated.
 
 {: .box-warning }
 **Warning! Invalid action**<br>
