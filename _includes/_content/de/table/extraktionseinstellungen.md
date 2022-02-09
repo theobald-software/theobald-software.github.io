@@ -64,7 +64,7 @@ Diese Einstellung bezieht sich i.d.R. auf Destinationen, bei denen das Schreiben
 Der Standardwert ist 180 Sekunden. Verändern Sie diesen Wert nur nach Absprache mit [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
 
 {: .box-note }
-**Hinweis:** Diese Einstellung ist nur dann effektiv, webb Ihre Extraktion als Hintergrund-Job aufgeführt wird und wenn Sie [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) Version 2.11 oder höher verwenden.
+**Hinweis:** Diese Einstellung ist nur dann effektiv, wenn die Extraktion als Hintergrund-Job aufgeführt wird und wenn Sie [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) Version 2.11 oder höher verwenden.
 
 
 #### Adjust currency decimals
