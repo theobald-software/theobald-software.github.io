@@ -54,8 +54,6 @@ Activate the setting *Extract data in background job*  for long-running extracti
 
 ### Advanced Settings
 
-Adjust *Advanced Settings* only after consulting with [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
-
 #### Background job timeout (seconds)
 
 This option can be used if the data transfer to a destination takes a lot of time e.g., when bulk-inserts are deactivated for database destinations.

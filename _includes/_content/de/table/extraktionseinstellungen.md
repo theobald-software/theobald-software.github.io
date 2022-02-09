@@ -55,8 +55,6 @@ Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen
 
 ### Advanced Settings
 
-Bearbeiten Sie sie *Advanced Settings* nur nach Absprache mit [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
-
 #### Background job timeout (seconds)
 
 Diese Einstellung bezieht sich i.d.R. auf Destinationen, bei denen das Schreiben in die Destination zeitintensiv ist, z.B. bei Deaktivierung des Bulk-Inserts bei Datenbank-Destinationen.
