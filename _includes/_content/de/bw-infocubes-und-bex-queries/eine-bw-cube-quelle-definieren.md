@@ -7,6 +7,7 @@ Der Dialog "Look Up Cube or Query" öffnet sich.
 ![Look-Up-Cube](/img/content/Look-Up-Cube.png){:class="img-responsive"}
 2. Wählen Sie *InfoCubes* oder *QueryCubes*.
 3. Durch Eingabe eines Suchnamens in das Feld **Cube Name**, können Sie die Suche einschränken. Starten Sie die Suche duch klicken auf **[Suche]** (Fernglassymbol). Sie können Platzhalter verwenden(*), wenn gewünscht.
+
 {: .box-note }
 **Hinweis:** Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff  auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss.
 
