@@ -59,10 +59,6 @@ Bearbeiten Sie sie *Advanced Settings* nur nach Absprache mit [Theobald Support]
 
 #### Background job timeout (seconds)
 
-Bezieht sich idR auf Destinationen, bei denen das Schreiben in die Destination langsam dauert, z.B. bei Deaktivierung des Bulk-Inserts bei Datenbank-Destinationen.
-Nur relevant, wenn man Z_THEO 2.11 oder höher einsetzt UND  wenn man Extraktionen im Background Modus laufen lässt
-Der Default-Wert von 180 Sekunden sollte beibehalten werden und nur geändert werden, wenn TS Support das sagt.
-
 Diese Einstellung bezieht sich i.d.R. auf Destinationen, bei denen das Schreiben in die Destination zeitintensiv ist, z.B. bei Deaktivierung des Bulk-Inserts bei Datenbank-Destinationen.
 **Background job timeout (seconds)** legt den Timeout für Extraktionen fest, die als Hintergrund-Job ausgeführt werden. <br>
 Der Standardwert ist 180 Sekunden. Verändern Sie diesen Wert nur nach Absprache mit [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
