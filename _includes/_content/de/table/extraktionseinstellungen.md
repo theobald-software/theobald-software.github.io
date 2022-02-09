@@ -6,11 +6,6 @@
 *Could not load list of available function modules because permission for table ENLFDIR is missing*. <br>
 Nachdem Bestätigen der Warnung, kann der Benutzer die Extraktionseinstellungen **trotzdem** anpassen.
 
-### Table Settings
-Das Fenster "Table Settings" besteht aus zwei Unterabschnitten:
-- Extraction Settings
-- Function Module 
-
 
 ### Extraction Settings
 
@@ -57,6 +52,24 @@ Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen
 
 {: .box-tip }
 **Tipp:** Die Extraktionsjobs befinden sich im SAP JobLog (SM37) unter dem JobName *THEO_READ_TABLE*.
+
+### Advanced Settings
+
+Bearbeiten Sie sie *Advanced Settings* nur nach Absprache mit [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
+
+#### Background job timeout (seconds)
+
+Bezieht sich idR auf Destinationen, bei denen das Schreiben in die Destination langsam dauert, z.B. bei Deaktivierung des Bulk-Inserts bei Datenbank-Destinationen.
+Nur relevant, wenn man Z_THEO 2.11 oder höher einsetzt UND  wenn man Extraktionen im Background Modus laufen lässt
+Der Default-Wert von 180 Sekunden sollte beibehalten werden und nur geändert werden, wenn TS Support das sagt.
+
+Diese Einstellung bezieht sich i.d.R. auf Destinationen, bei denen das Schreiben in die Destination zeitintensiv ist, z.B. bei Deaktivierung des Bulk-Inserts bei Datenbank-Destinationen.
+**Background job timeout (seconds)** legt den Timeout für Extraktionen fest, die als Hintergrund-Job ausgeführt werden. <br>
+Der Standardwert ist 180 Sekunden. Verändern Sie diesen Wert nur nach Absprache mit [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
+
+{: .box-note }
+**Hinweis:** Diese Einstellung ist nur dann effektiv, webb Ihre Extraktion als Hintergrund-Job aufgeführt wird und wenn Sie [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) Version 2.11 oder höher verwenden.
+
 
 #### Adjust currency decimals
 
