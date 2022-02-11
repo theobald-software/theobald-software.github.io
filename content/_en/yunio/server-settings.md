@@ -63,7 +63,7 @@ It is not recommended to use ports below 1000, because they are often already ta
 |---|---|---|---|
 |Services|8075|8175|This port is used by the web server, which handles the requests to invoke a service.|
 |Designer|8077|8177|This port is used to open the yunIO Designer on a client machine.|
-|WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services and the like|
+|WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services, etc.|
 
 
 

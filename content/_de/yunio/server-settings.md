@@ -64,4 +64,4 @@ Es ist nicht empfohlen, Ports unter 1000 zu verwenden, da diese oftmals bereits 
 |---|---|---|---|
 |Services|8075|8175|Dieser Port wird vom Webserver verwendet, der die Anfragen annimmt, um Services zu starten.|
 |Designer|8077|8177|Dieser Port wird genutzt, um den yunIO Designer aufzurufen.|
-|WebSockets|8076|8176|Dieser Port wird vom yunIO Designer verwendet, um Konfigurationen, Services und dergleichen anzupassen.|
+|WebSockets|8076|8176|Dieser Port wird vom yunIO Designer verwendet, um Konfigurationen, Services, etc. anzupassen.|
