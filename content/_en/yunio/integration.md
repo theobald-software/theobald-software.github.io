@@ -20,5 +20,6 @@ The following articles explain how to test a yunIO service with REST clients:
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
 
 ### Integration with Microsoft Power Automate
-The following article explains how to integrate a yunIO service with Microsoft Power Automate:
+The following articles explain how to integrate yunIO services with Microsoft Power Automate:
 - [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)
+- [Sync Salesforce with SAP using Power Automate and yunIO](https://kb.theobald-software.com/yunio/salesforce-power-automate-scenario)

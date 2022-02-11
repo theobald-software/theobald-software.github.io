@@ -20,5 +20,6 @@ Die folgenden Artikel zeigen Ihnen, wie Sie einen yunIO-Service in einem Standar
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
 
 ### Integration mit Microsoft Power Automate
-Der folgende Artikel zeigt Ihnen, wie Sie einen yunIO-Service mit Microsoft Power Automate integrieren können:
+Die folgenden Artikel zeigen Ihnen, wie Sie einen yunIO-Service mit Microsoft Power Automate integrieren können:
 - [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)
+- [Sync Salesforce with SAP using Power Automate and yunIO](https://kb.theobald-software.com/yunio/salesforce-power-automate-scenario)
