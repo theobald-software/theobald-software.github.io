@@ -86,6 +86,10 @@ Name der Datenbank eingeben.
 **Test Connection**<br>
 Klicken Sie auf die Schaltfläche, um die Verbindung zu testen.
 
+{: .box-warning }
+**Warning! The remote certificate is invalid according to the validation procedure** 
+Bei der Verwendung von TLS-Verschlüsselung kann diese Fehlermeldung folgende Ursachen haben:
+ein abgelaufenes [Zertifikat](../sicherheit/x.509-zertifikat-installieren), Version von Xtract Universal bzw. des Npgsql.dll-Treibers ist veraltet und unterstützt TLS gegen neuere PostgreSQL-Versionen nicht oder Subject Alternative Name des Zertifikats wird nicht als PostgreSQL Host verwendet, siehe **Private endpoint**.
 
 ## Einstellungen
 
