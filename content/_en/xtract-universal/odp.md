@@ -13,11 +13,6 @@ progressstate: 5
 ---
 The following section describes the functions of the ODP component of Xtract Universal. <br>
 
-{: .box-warning}
-**Warning!** **Missing Authorization**
-To use the ODP component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: ODP](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#odp).
-
 {% include _content/en/odp/odp-introduction.md %} 
 
 {: .box-tip }

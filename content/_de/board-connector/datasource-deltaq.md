@@ -11,6 +11,8 @@ weight: 13
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=datasource-deltaq
 ---
+The following section describes the functions of the DeltaQ component of Xtract Universal.
+
 {: .box-warning } 
 **Warnung! Neuere Komponente verfügbar**<br>
 DeltaQ ist eine alte Komponente. Wenn möglich verwenden Sie die neuere Komponente **[ODP](./odp)**.
