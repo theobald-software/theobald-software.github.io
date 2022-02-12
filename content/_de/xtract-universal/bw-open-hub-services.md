@@ -13,6 +13,11 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-open-hub-services
 ---
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal OHS Komponente.
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die OHS Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: OHS](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#ohs).
+
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 

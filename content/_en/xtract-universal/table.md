@@ -15,6 +15,12 @@ progressstate: 5
 The following section describes the functions of the Table component of Xtract Universal. <br>
 The component *SAP Table or View* can be used to extract contents from SAP tables and views. <br>
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+
+
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 

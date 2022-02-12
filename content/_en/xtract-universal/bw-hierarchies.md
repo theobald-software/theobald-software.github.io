@@ -15,6 +15,12 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=bw-hierarchies
 The following section describes the functions of the BW Hierarchy component of Xtract Universal. <br>
 The component BW Hierarchy enables the extraction of hierarchies from an SAP BW system.
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the BW Hierarchy component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: BW Hierarchies](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-hierarchies).
+
+
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 

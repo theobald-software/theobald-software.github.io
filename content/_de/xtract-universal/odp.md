@@ -12,6 +12,13 @@ lang: de_DE
 progressstate: 5
 ---
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal ODP Komponente. <br>
+
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die ODP Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: ODP](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#odp).
+
+
 {% include _content/de/odp/odp-introduction.md %} 
 
 {: .box-tip }

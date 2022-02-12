@@ -14,6 +14,12 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 The following section describes the functions of the Report component of Xtract Universal. <br>
 
 {% include _content/en/abap-reports/report-about.md %}
+
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the Report component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
+
  
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started).
