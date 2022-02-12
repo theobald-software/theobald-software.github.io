@@ -86,7 +86,7 @@ Test the database connection.
 {: .box-warning }
 **Warning! The remote certificate is invalid according to the validation procedure** 
 When using TLS encryption, this error message can be caused by:
-an invalid [certificate](../security/install-x.509-Certificate), the version of Xtract Universal or the Npgsql.dll driver is outdated and does not support TLS with new PostgreSQL versions or the Subject Alternative Name of the certificate is not used as the PostgreSQL host, see **Private endpoint**.
+an invalid [certificate](../security/install-x.509-Certificate), the version of Xtract Universal or the Npgsql.dll driver is outdated and does not support TLS with new PostgreSQL versions (in this case install the newest version of Xtract Universal) or the Subject Alternative Name of the certificate is not used as the PostgreSQL host, see **Private endpoint**.
 
 
 ## Settings
