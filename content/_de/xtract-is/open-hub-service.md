@@ -14,6 +14,11 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=open-hub-service
 Der folgende Abschnitt beschreibt die Funktion der Xtract OHS Komponente.<br>
 Die Xtract IS OHS Komponente ist eine SSIS-Datenquelle, mit deren Hilfe OHS-Informationsspeichen und/oder Prozessketten der OHS ausgeführt werden können, um die Daten zu empfangen.
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die OHS Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: OHS](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#ohs).
+
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract IS](./erste-schritte) beschrieben.<br>
 

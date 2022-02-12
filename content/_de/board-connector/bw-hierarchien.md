@@ -14,6 +14,11 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-hierarchien
 
 Der folgende Abschnitt beschreibt die Funktion der BOARD Connector Hierarchy Komponente.
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die BW Hierarchy Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: BW Hierarchies](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-hierarchies).
+
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
 

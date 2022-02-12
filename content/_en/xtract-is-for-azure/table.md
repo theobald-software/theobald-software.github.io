@@ -13,6 +13,11 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=table
 ---
 The following section describes the functions of the Xtract Table component of Xtract IS for Azure.<br>
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+
 #### Extraction types of Xtract Table component
 - **Table**: Enables mass data extraction directly from SAP tables and views.
 - **Table Join**: Allows joining two or more SAP tables on the SAP side before extracting. 

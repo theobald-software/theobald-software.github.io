@@ -15,6 +15,12 @@ progressstate: 5
 
 This section shows how to use the integration type *SAP Table or View*.
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+
+
 ### Look Up an SAP Table or View
 
 1. Create a new *Service* of type *SAP Table or View*. 

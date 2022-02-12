@@ -15,11 +15,6 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Report Kompo
 
 {% include _content/de/abap_reports/report-about.md %}
 
-{: .box-warning}
-**Warnung!** **Fehlende Berechtigungen**
-Um die Report Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
-Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
-
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 

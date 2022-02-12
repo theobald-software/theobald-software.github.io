@@ -14,6 +14,11 @@ progressstate: 5
 Der folgende Abschnitt beschreibt die Funktion der Xtract Hierarchy-Komponente. <br>
 Die Komponente Xtract Hierarchy ermöglicht die Extraktion von Hierarchien von einem SAP BW System.
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die BW Hierarchy Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: BW Hierarchies](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-hierarchies).
+
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 

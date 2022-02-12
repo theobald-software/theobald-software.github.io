@@ -15,6 +15,11 @@ progressstate: 5
 
 Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *SAP Table and Views*.
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die Table Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+
 ### Eine SAP Tabelle oder View finden
 
 1. Legen Sie einen neuen *Service* vom Typ *SAP Table and Views* an.

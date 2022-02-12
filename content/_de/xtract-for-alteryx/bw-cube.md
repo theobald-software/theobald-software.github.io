@@ -15,6 +15,11 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Cube-Komponente in Xtr
 Die Xtract Cube Komponente kann verwendet werden, um die Daten aus SAP BW (BEx) Queries und InfoProviders (z.B. InfoCubes) zu extrahieren. 
 Die Xtract Cube Komponente unterstützt zwei Extraktionsmodi: MDX und BICS (beta).
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die BW Cube Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: BW Query / BW Cube](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube).
+
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 

@@ -15,6 +15,10 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=datasource-deltaq
 **Warnung! Neuere Komponente verfügbar**<br>
 DeltaQ ist eine alte Komponente. Wenn möglich verwenden Sie die neuere Komponente **[ODP](./odp)**.
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die DeltaQ Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: DeltaQ](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#deltaq).
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.

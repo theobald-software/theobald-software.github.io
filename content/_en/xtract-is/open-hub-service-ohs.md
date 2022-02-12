@@ -14,6 +14,11 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=open-hub-service
 The following section describes the functions of the Xtract OHS component of Xtract IS.<br>
 The Xtract IS OHS Compomente is an SSIS data source that can be used to run OHS InfoSpoke and/or OHS process chains to receive the data.
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the OHS component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: OHS](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#ohs).
+
 {: .box-tip }
 **Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 

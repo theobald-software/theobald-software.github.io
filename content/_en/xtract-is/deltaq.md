@@ -15,6 +15,11 @@ The following section describes the functions of the Xtract DeltaQ component of 
 The Xtract IS DeltaQ component allows to conduct a real delta management between the productive system and the BI/staging layer.
 DeltaQ extracts DataSources (OLTP) and extractors from ERP and ECC systems.
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the DeltaQ component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: DeltaQ](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#deltaq).
+
 {: .box-tip }
 **Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 

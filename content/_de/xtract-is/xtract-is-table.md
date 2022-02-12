@@ -13,6 +13,11 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=table
 ---
 Der folgende Abschnitt beschreibt die Funktion der Xtract IS Table Komponente.<br>
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die Table Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+
 #### Extraktionstypen von Xtract Table
 
 - **Table**: ermöglicht die Datenextraktion in großen Mengen direkt aus SAP-Tabellen und -Views.<br>

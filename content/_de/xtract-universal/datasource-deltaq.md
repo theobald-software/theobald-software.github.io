@@ -31,7 +31,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {% include _content/de/xu-specific/define-extraction.md %}
 
 {: .box-note }
-**Hinweis:** Um die DeltaQ-Komponente nutzen zu können, sind Einstellungen im SAP ERP vorzunehmen, siehe  [SAP Customizing](./sap-customizing/customizing-fuer-deltaq).
+**Hinweis:** Um die DeltaQ-Komponente nutzen zu können, sind Einstellungen im SAP ERP vorzunehmen, siehe [SAP Customizing](./sap-customizing/customizing-fuer-deltaq).
 
 Weitere Informationen zum Arbeiten mit der DeltaQ Komponente finden Sie in den folgenden Unterabschnitten.
 

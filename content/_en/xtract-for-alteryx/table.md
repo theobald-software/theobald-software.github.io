@@ -21,6 +21,12 @@ Table component supports the following table types:
 - Pool tables
 - Cluster tables
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+
+
 {: .box-note }
 **Note:** when extracting tables from SAP you may encounter several **restrictions** when using the SAP standard function module (RFC_READ_TABLE).
 To avoid possible restrictions, you can use the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 

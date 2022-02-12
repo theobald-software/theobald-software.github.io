@@ -13,6 +13,11 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=query
 ---
 Der folgende Abschnitt beschreibt die Funktion der Xtract IS for Azure Query Komponente.<br>
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die SAP Query Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: SAP Query](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#sap-query).
+
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte](./erste-schritte) beschrieben.<br>
 
