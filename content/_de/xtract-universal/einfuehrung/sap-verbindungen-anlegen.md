@@ -24,7 +24,7 @@ Sie **Server > Manage Sources**.
 Das Fenster "Manage Sources" wird geöffnet.  
 ![XU-Create-Connection-2](/img/content/xu_manage_source.png){:class="img-responsive"}
 
-2. Klicken Sie auf **[Add]**. Das Fenster "SAP Source Details" wird geöffnet. <br>
+2. Klicken Sie auf **[Add]**. Das Fenster "Change Source" wird geöffnet. <br>
 3. Geben Sie einen Namen für Ihre hinzugefügte Verbindung ein.
 
 {% include _content/de/xu-specific/fortgeschrittene-techniken/sap-verbindungen-anlegen.md %}

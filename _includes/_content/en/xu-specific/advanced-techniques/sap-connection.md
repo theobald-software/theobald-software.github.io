@@ -3,29 +3,25 @@
 ### Connection Details
 
 The tab *General* contains the connection details and is divided into four subsections:
-- [System](#system)
-- [Client and Language](#client-and-language)
+- [General(#general)
 - [Authentication](#authentication)
-- [Miscellaneous](#miscellaneous)
-![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}
+- [RFC Options](#rfc-options)
+- [Access Control](#access-control)
 
 Fill out the connection details to establish an SAP connection.
 
 {: .box-tip }
 **Tip:** Values to fill out the fields can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
 
-Click **[Test Connection]** (1) to test the successful connection. 
-The confirmation window opens. <br>
-The SAP connection is set up successfully. 
-![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"}
+### General
 
+![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}
 
-
-### System
+#### System
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server
 	- **Host**:  host name or IP address of the application server (Property Host) 
-	- **Instance No**: a two-digit number between 00 und 99 (Property SystemNumber)
+	- **Instance No**: a two-digit number between 00 and 99 (Property SystemNumber)
 
 - Use a Load Balancing Server (message server)
 	- **Message Server**: name or IP address of the message server (Property MessageServer) 
@@ -34,7 +30,7 @@ There are two possibilities to connect to an SAP source system:
 See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 
-#### Accessing via SAP router
+#### Accessing via SAP Router
 
 If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name. <br>
 Example:<br>
@@ -46,8 +42,7 @@ See also SAP online help: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01
 **Tip:** Values to fill out the forms can be found in the SAP logon pad in the *Properties* or acquired from SAP Basis team.
 
 
-
-### Client and Language
+#### Client and Language
 - Client - a three-digit number of the SAP client between 000 and 999, e.g., 800.
 - Language - the logon language for the SAP system, e.g., EN for English or DE for German.
 
@@ -84,9 +79,8 @@ For additional details see the knowledge base article [Enabling Secure Network C
 When working with Kerberos library, follow the steps described in [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc).
 
 
-### Miscellaneous
+### RFC Options
 Select a library and optionally define a trace directory for debug logging.
-
 
 #### RFC libraries
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system.  
@@ -112,7 +106,14 @@ You can log debug information and save it locally. Fill the **Trace directory** 
 A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.
 Activate the debug logging only when necessary e.g., upon request of the support team.
 
- 
+### Access Control
+
+### Test Connection
+
+Click **[Test Connection]** (1) to test the successful connection. 
+The confirmation window opens. <br>
+The SAP connection is set up successfully. 
+![XU-Create-Connection-3](/img/content/xu_test_connection.png){:class="img-responsive"}
 
 ### To Check the New SAP Connection
 1. In the main window of the Designer, navigate to the menu bar and select the menu item **Server > Manage Sources**.<br>

@@ -25,7 +25,7 @@ Make sure to gain access to the general authority objects. For more information,
 The window "Manage Sources" opens.  
 ![XU-Create-Connection-2](/img/content/xu_manage_source.png){:class="img-responsive"}
 
-2. Click **[Add]**. The window "SAP Source Details" opens. <br>
+2. Click **[Add]**. The window "Change Source" opens. <br>
 3. Enter a name of your added connection.
 
 {% include _content/en/xu-specific/advanced-techniques/sap-connection.md %}
