@@ -29,4 +29,3 @@ Das Fenster "Manage Sources" wird geöffnet.
 
 {% include _content/de/xu-specific/fortgeschrittene-techniken/sap-verbindungen-anlegen.md %}
 
-
