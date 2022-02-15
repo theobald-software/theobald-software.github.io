@@ -20,13 +20,18 @@ Für die Verwendung der Alteryx-Destination wird das Xtract Universal Alteryx Pl
 ### Installation durch das Xtract Universal Setup
 
 Falls Alteryx bereits installiert ist, wird das Xtract Universal Alteryx Plugin zusammen mit Xtract Universal auf dem Zielsystem installiert. <br>
-Falls Sie Alteryx nach Xtract Universal installieren, können Sie entweder das Extract-Universal-Setup erneut ausführen oder das Plugin manuell installieren.
+Falls Sie Alteryx nach Xtract Universal installieren, können Sie das Extract-Universal-Setup erneut ausführen.
 
 Nach der Installation von Xtract Universal erstellt das Setup die folgenden Einträge und Erweiterungen im Installationsverzeichnis von Alteryx:
 - `Alteryx\Settings\AdditionalPlugins\XtractUniversal.ini`
 - `Alteryx\bin\RuntimeData\icons\categories\XtractUniversal.png`
 - `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
+{: .box-note }
+**Hinweis:** Sollten sich mehrere Alteryx-Installationen auf Ihrem System befinden, erkennt das Setup nur eine Installation und kopiert die o.g. Dateien dorthin.
+Für alle weiteren Alertyx Installationen, kopieren Sie die o.g. Dateien manuell in das entsprechende Installationsverzeichnis.
+
+<!---
 {: .box-note }
 **Hinweis:** Sollten sich mehrere Alteryx-Installationen auf Ihrem System befinden, erkennt das Setup nur eine Installation und kopiert die o.g. Dateien dorthin.
 Für alle weiteren Alertyx Installationen, müssen Sie eine manuelle Installtion des Plugins durchführen.
@@ -42,6 +47,7 @@ Die folgenden Befehle werden in Kombination mit einem Parameter, der auf das Ins
 
 {: .box-note }
 **Hinweis:** Sollte es Probleme bei der Installation des Plugins geben, schicken Sie die setup.log Datei aus `C:\Program Files\XtractUniversal\alteryx\setup.log` an den [Theobald Support](https://support.theobald-software.com).
+-->
 
 
 ## Verbindung
