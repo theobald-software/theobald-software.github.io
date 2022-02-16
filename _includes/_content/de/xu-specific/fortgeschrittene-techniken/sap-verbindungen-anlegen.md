@@ -51,10 +51,11 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 - *Secure Network Communication (SNC)*: Benutzername und Passwort, Basisauthentifizierung, SSO mit Kerberos, SSO mit digitalen Zertifikaten.
 - *SAP Log On Ticket*: siehe [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket).
 
+![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
+
 #### Plain
 
 Geben Sie Ihren SAP-Benutzernamen und Ihr Passwort ein.<br>
-![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
 **Request SAP credentials from caller when running extractions** <br>
 Die SAP-Anmeldeinformationen in den Feldern *User* und *Password* werden nicht übernommen.

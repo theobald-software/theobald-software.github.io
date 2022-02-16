@@ -49,10 +49,11 @@ The following authentication methods are supported:
 - *Secure Network Communication (SNC)*: username and password, basic authentication, SSO with Kerberos, SSO with digital certificates.
 - *SAP Log On Ticket*: see [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket).
 
+![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
+
 #### Plain
 
-Enter your SAP username and password.<br>
-![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
+Enter your SAP username and password.
 
 **Request SAP credentials from caller when running extractions** <br>
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
