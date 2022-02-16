@@ -88,10 +88,10 @@ Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierun
 Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inaktiv.
 
 **Impersonate caller (Kerberos SSO)** <br>
-Wenn diese option aktiv ist, folgen Sie den Schritten, die unter [SSO mit Kerberos SNC](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc) beschrieben sind.
+Wenn diese Option aktiv ist, folgen Sie den Schritten, die unter [SSO mit Kerberos SNC](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc) beschrieben sind.
 
 **Enroll certificate on behalf of caller (Certificate SSO)** <br>
-Bald verfügbar.
+Wenn diese Option aktiv ist, wird SSO anhand von Zertifikaten als Authentifizierungmethode aktiviert.
 
 #### SAP Logon Ticket
 Für Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [**SAP Log On Ticket**](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket).
@@ -140,3 +140,4 @@ Ein Bestätigungsfenster öffnet sich.
 Das Fenster "Manage Sources" öffnet sich.<br>
 2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist. 
 ![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}
+

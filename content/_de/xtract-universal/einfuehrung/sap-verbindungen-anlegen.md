@@ -28,4 +28,3 @@ Das Fenster "Manage Sources" wird geöffnet.
 3. Geben Sie einen Namen für Ihre hinzugefügte Verbindung ein.
 
 {% include _content/de/xu-specific/fortgeschrittene-techniken/sap-verbindungen-anlegen.md %}
-

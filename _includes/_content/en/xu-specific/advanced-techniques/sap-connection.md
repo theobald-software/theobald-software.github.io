@@ -68,7 +68,7 @@ Caching the result of extractions is inactive.
 
 #### Secure Network Communication (SNC)
 
-![XU-Authentication](/img/content/xu/sap_source-snc1.png){:class="img-responsive"} 
+![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
 
 1. Check the SAP parameter *snc/gssapi_lib* to determine, which library is used for encryption in your SAP system.
 Your SAP Basis has to import and configure the same library on the application server and on the machine that runs Xtract Universal or BOARD Connector.
@@ -89,7 +89,7 @@ Caching the result of extractions is inactive.
 If this option is active, follow the steps described in [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc).
 
 **Enroll certificate on behalf of caller (Certificate SSO)** <br>
-Coming soon.
+If this option is active, the authentication with SSO using certificates is enabled.
 
 #### SAP Logon Ticket
 

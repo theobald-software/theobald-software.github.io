@@ -28,4 +28,3 @@ The window "Manage Sources" opens.
 3. Enter a name of your added connection.
 
 {% include _content/en/xu-specific/advanced-techniques/sap-connection.md %}
-
