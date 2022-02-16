@@ -47,10 +47,9 @@ Für mehr Informationen, siehe [SAP Dokumentation: SAP-Router](https://help.sap.
 
 ### Authentication 
 Die folgenden Authentifizierungsmethoden werden unterstützt:
-- **Plain**: SAP-Benutzername und Passwort (System- oder Dialogbenutzer)
-- **Secure Network Communication (SNC)**: Benutzername und Passwort
-- [SNC with SSO](../fortgeschrittene-techniken/sap-single-sign-on) (Single Sign On)
-- **SAP Log On Ticket**
+- *Plain*: SAP-Benutzername und Passwort (System- oder Dialogbenutzer).
+- *Secure Network Communication (SNC)*: Benutzername und Passwort, Basisauthentifizierung, SSO mit Kerberos, SSO mit digitalen Zertifikaten.
+- *SAP Log On Ticket*: siehe [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket).
 
 #### Plain
 
@@ -58,9 +57,8 @@ Geben Sie Ihren SAP-Benutzernamen und Ihr Passwort ein.<br>
 ![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
 **Request SAP credentials from caller when running extractions** <br>
-Option nur bei Verwendung der Authentifizierungsmethode *Plain* oder *SNC* verfügbar. 
 Die SAP-Anmeldeinformationen in den Feldern *User* und *Password* werden nicht übernommen.
-Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
+Stattdessen müssen die SAP-Anmeldeinformationen über die HTTP Basisauthentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
 Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inaktiv.
 
 **Nur Xtract Universal**: Siehe [Power BI Connector](https://help.theobald-software.com/de/xtract-universal/destinationen/Power-BI-Connector#single-sign-on-und-sap-authentifizierung) oder [Alteryx](https://help.theobald-software.com/de/xtract-universal/destinationen/alteryx-de#verbindung) Destinationen für mögliche Beispiele. 
@@ -70,7 +68,7 @@ Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inakti
 
 #### Secure Network Communication (SNC)
 
-![XU-Authentication](/img/content/xu/sap_source-snc1.png){:class="img-responsive"} 
+![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
 
 1. Überprüfen Sie den SAP Parameter *snc/gssapi_lib* um zu bestimmen, welche Bibliothek für die Verschlüsselung in Ihrem SAP System verwendet wird.
 2. Ihre SAP-Basis muss auf dem Applikationsserver und auf dem Rechner, auf dem Xtract Unversal oder BOARD Connector installiert ist, die gleiche Bibliothek importieren und konfigurieren.
@@ -80,18 +78,27 @@ Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inakti
 Mehr Informationen zu SNC finden Sie im Kowledge Base-Artikel [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
 
 **Use static SAP credentials / Windows service account** <br>
-Die SAP-Anmeldeinformationen in den Feldern *User* und *Password* werden für die Authentifizierung verwendet.
-
+Diese Einstellung aktiviert SNC ohne SSO.
+Falls gesetzt, werden die SAP-Anmeldeinformationen in den Feldern **User** und **Password** für die Authentifizierung verwendet.
+Der Windows Active Directory Benutzer, in dessen Kontext die Verbindung geöffnet wird, ist der Service Account unter dem der XU Windows Service läuft.
+ 
 **Request SAP credentials from caller** <br>
+Diese Einstellung aktiviert SNC mit Benutzer und Passwort.
 Die SAP-Anmeldeinformationen in den Feldern *User* und *Password* werden nicht übernommen.
 Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
-Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inaktiv.
 
 **Impersonate caller (Kerberos SSO)** <br>
-Wenn diese Option aktiv ist, folgen Sie den Schritten, die unter [SSO mit Kerberos SNC](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc) beschrieben sind.
+Diese Einstellung aktiviert Kerberos SSO.  
+Die Authentifizierung erfolgt über den Windows Active Directory Benutzer des Aufrufers. 
+Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server_einstellungen#web-server) ausgewählt und eingestellt werden.
+Für mehr Informationen, siehe [SSO mit Kerberos SNC](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc).
 
 **Enroll certificate on behalf of caller (Certificate SSO)** <br>
-Wenn diese Option aktiv ist, wird SSO anhand von Zertifikaten als Authentifizierungmethode aktiviert.
+Diese Einstellung aktiviert Certifcate SSO. 
+Die Authentifizierung erfolgt über ein Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services für den Windows Active Directory Benutzer des Aufrufers.
+Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server_einstellungen#web-server) ausgewählt und eingestellt werden.
+Geben Sie den Namen des Certificate Templates und den Thumbprint des Zertifikats des Enrollment Agents an.
+Der SAP Secure Login Client muss auf der Maschine, auf dem der XU- oder BC-Server läuft, installiert sein.
 
 #### SAP Logon Ticket
 Für Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [**SAP Log On Ticket**](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket).
@@ -123,6 +130,12 @@ Bei der Aktivierung des Debug-Logging wird eine große Menge an Informationen ge
 Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
 
 ### Access Control
+
+Eine Zugriffssteuerung kann auf Datenquellebene (Source-Ebene) vorgenommen werden. 
+Diese Zugriffssteuerung übersteuert die Einstellungen auf Serverebene.<br>
+Für mehr Informationen, siehe [Zugriffssteuerung](../sicherheit/zugriffsverwaltung).
+
+![XU-Create-Connection-AccessControl](/img/content/xu/sap_source-accesscontrol.png){:class="img-responsive"}
 
 ### Test Connection
 

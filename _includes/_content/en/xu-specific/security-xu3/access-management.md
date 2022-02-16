@@ -26,7 +26,7 @@ The access control on extraction level overrides the settings at server level.
 
 ### Extraction Settings - Source Level
 Access control can also be performed at the source level. This access control overrides the settings at server level.
-![Server-Settings_](/img/content/XU_Extraction_Security2.png){:class="img-responsive"}
+![Server-Settings_](/img/content/xu/sap_source-accesscontrol.png){:class="img-responsive"}
 
 
 

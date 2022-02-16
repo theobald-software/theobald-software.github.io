@@ -45,10 +45,9 @@ For more information, see [SAP Documentation: SAP-Router](https://help.sap.com/s
 
 ### Authentication
 The following authentication methods are supported:
-- **Plain**: SAP username and password (system or dialogue user)
-- **Secure Network Communication (SNC)**: username and password
-- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On)
-- **SAP Log On Ticket**
+- *Plain*: SAP username and password (system or dialogue user).
+- *Secure Network Communication (SNC)*: username and password, basic authentication, SSO with Kerberos, SSO with digital certificates.
+- *SAP Log On Ticket*: see [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket).
 
 #### Plain
 
@@ -56,7 +55,6 @@ Enter your SAP username and password.<br>
 ![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
 **Request SAP credentials from caller when running extractions** <br>
-This option is available when using the *Plain* or *SNC* authentication method. 
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
 Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
 Caching the result of extractions is inactive. 
@@ -78,18 +76,28 @@ Your SAP Basis has to import and configure the same library on the application s
 For more information on SNC, see the knowledge base article [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
 
 **Use static SAP credentials / Windows service account** <br>
-If this option is active, the SAP credentials entered in the **User** and **Password** fields are used for authentication.
+This option activates SNC without SSO.
+If available, the SAP credentials in the fields **User** and **Password** are used for authentication.
+The Windows Active Directory user used to open the connection is the service account under which the XU windows service runs.
 
 **Request SAP credentials from caller** <br>
+This option activates SNC with user and password.
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
 Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
-Caching the result of extractions is inactive. 
 
 **Impersonate caller (Kerberos SSO)** <br>
-If this option is active, follow the steps described in [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc).
+This option activates Kerberos SSO.
+The Windows Active Directory user is used for authentication.
+For this scenario "HTTPS - Restricted to AD users with Designer read access" must be selected and configured in the [Server Settings](../server/server-settings#web-server).
+For more information, see [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc).
 
 **Enroll certificate on behalf of caller (Certificate SSO)** <br>
-If this option is active, the authentication with SSO using certificates is enabled.
+This option activates Certificate SSO.
+The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user who calls the extraction.
+For this scenario "HTTPS - Restricted to AD users with Designer read access" must be selected and configured in the [Server Settings](../server/server-settings#web-server).
+Enter the name of the certificate template and the thumbprint of the enrollment agent certificate.
+The SAP Secure Login Client must be installed on the machine that runs the XU or BC server.
+
 
 #### SAP Logon Ticket
 
@@ -123,6 +131,11 @@ A big amount of information is collected when debug logging is activated. This c
 Activate the debug logging only when necessary e.g., upon request of the support team.
 
 ### Access Control
+
+Access control can be performed at the source level. This access control overrides the settings at server level.<br>
+For more information, see [Access Management](../security/access-management).
+
+![XU-Create-Connection-AccessControl](/img/content/xu/sap_source-accesscontrol.png){:class="img-responsive"}
 
 ### Test Connection
 
