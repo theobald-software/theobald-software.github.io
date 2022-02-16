@@ -5,6 +5,7 @@ In den folgenden Szenarien muss der Dienst stattdessen unter einem Windows Diens
 - [Kerberos Authentifizierung](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung) für den Xtract Universal Webserver verwenden.
 - Windows Authentizizierung für eine Xtract Universal Destination verwenden, die Windows-Anmeldedaten erlauben (z.B. SQL Server Destination, PostgreSQL Destination).
 - [SSO mit Kerberos SNC](./sap-single-sign-on/sso-mit-kerberos-snc) verwenden.
+- [SSO mit SAP Logon Tickets](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 Dieser Abschnitt enthält Informationen darüber, wie man den Xtract Universal Dienst unter einem Dienstkonto ausführt.
 
