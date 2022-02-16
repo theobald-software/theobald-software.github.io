@@ -27,6 +27,6 @@ Diese Zugriffssteuerung auf Extraktionsebene übersteuert die Einstellungen auf 
 
 ### Zugriffsteuerung auf Source-Ebene - Einstellungen der Datenquelle
 Eine Zugriffssteuerung kann auch auf Datenquellebene (Source-Ebene) vorgenommen werden. Diese Zugriffssteuerung übersteuert die Einstellungen auf Serverebene.
-![Server-Settings_](/img/content/XU_Extraction_Security2.png){:class="img-responsive"}
+![Server-Settings_](/img/content/xu/sap_source-accesscontrol.png){:class="img-responsive"}
 
 
