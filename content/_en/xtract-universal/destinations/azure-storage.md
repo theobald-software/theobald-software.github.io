@@ -162,7 +162,7 @@ This allows to dynamically set a folder path when executing an extraction. <br>
 
 **File type**<br>
 Select the required file format. You can choose between *Parquet* and *CSV*.
-![AWS S3](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
+![Azure](/img/content/xu/XU_AzureStorage_DestinationDetails2.png){:class="img-responsive"}
 
 #### CVS Settings
 

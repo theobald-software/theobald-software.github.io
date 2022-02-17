@@ -162,7 +162,7 @@ Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittel
 **File type**<br>
 Wählen Sie das gewünschte Dateiformat aus dem Dropdown Menü. 
 Die Formate *Parquet* und *CSV* sind verfügbar.
-![AWS S3](/img/content/xu/XU_S3_DestinationDetails2.png){:class="img-responsive"}
+![Azure Storage](/img/content/xu/XU_AzureStorage_DestinationDetails2.png){:class="img-responsive"}
 
 #### CVS Settings
 Die Einstellungen für den Dateityp *CSV* entsprechen den allgemeinen [Flat File CSV Einstellungen](./csv-flat-file).

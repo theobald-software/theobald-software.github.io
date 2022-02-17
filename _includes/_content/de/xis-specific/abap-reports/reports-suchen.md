@@ -8,6 +8,11 @@ Alternativ können Sie nach SAP Transaktion Codes suchen, indem Sie die Checkbox
 3. Klicken Sie auf **[Suchen]** (2) und wählen Sie den Report Ihrer Wahl aus der angezeigten Liste aus (3).
 4. Bestätigen Sie die Auswahl mit **[OK]** (4).
 
+{: .box-note }
+**Hinweis:** Es gibt ABAP-Reports, die eine installierte SAP GUI erwarten, auch wenn sie über remote aufgerufen werden.
+In diesem Fall muss die *AttachesSapGui* Eigenschaft in den **Expert Options** des verwendeten [Connection Managers](../sap-verbindung/verbindungsmanager) auf *True* gesetzt werden.
+
+
 ### Varianten und Selektionen
 
 1. Wählen Sie eine Variante aus der Dropdown-Liste *Variant* (1).

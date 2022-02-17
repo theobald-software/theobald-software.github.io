@@ -6,6 +6,10 @@
 3. Click **[Search]** (magnifying glass symbol) and select the report of your choice from the displayed list (3).
 4. Click **[OK]** (4) to confirm.
 
+{: .box-note }
+**Note:** There are ABAP Reports that expect an installed SAP GUI even when they are called remotely.
+In this case, set the *AttachesSapGui* property in the **Expert Options** of the [Connection Manager](../sap-connection/the-connection-manager) to *True*.
+
 ### Variants and Selections
 
 1. Choose a variant from the drop-down-list *Variant* (1). <br>
