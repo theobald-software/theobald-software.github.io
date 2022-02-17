@@ -12,6 +12,8 @@ Die AS ABAP Instanzen (mit denen sich Xtract-Produkte verbinden) vertrauen den S
 4. AS Java bildet Windows Benutzer auf SAP Benutzer ab und stellt ein SAP Logon Ticket für diesen SAP Benutzer aus. Liefert das Logon Ticket im MYSAPSSO2 cookie.
 5. Der Server holt SAP Logon Ticket aus Cookie, meldet sich damit am AS ABAP an und führt die Extraktion aus.
 
+Für detailiertere Informationen über den Abluaf, wenn eine Extraktion über SSO mit SAP Logon Ticket aufgerufen wird, siehe [SSO with Logon-Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+
 
 #### Weiterführende Informationen (SAP Online-Help):
 * [Kerberos und SAP NetWeaver AS für Java](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/4c/8a4d292e2849a8b7cbd229be5c94a5/frameset.htm)
