@@ -1,14 +1,33 @@
-Die BAPI Datenquelle wurde entwickelt, um BAPIs und RFC-Funktionsbausteine im SAP aufzurufen. So lassen sich sehr einfach Logiken in ABAP kodieren und den Output in Form von Tabellen nutzen. SAP-Standard-BAPIs und bundeseigene BAPIs werden gleichermaßen unterstützt. Es ist sinnvoll (aber nicht zwingend notwendig), bei selbstgeschriebenen BAPIs darauf zu achten, dass die Signatur der Bausteine so gestaltet ist, dass genau eine Ausgabe-Tabelle die gewünschten Daten enthält.  Die Begriffe BAPI und RFC-Funktionsbaustein können im Übrigen äquivalent verwendet werden. Es besteht zwischen beiden Begriffen kein substanzieller Unterschied.
 
-Erstellen Sie mit Hilfe des Clients eine neue Extraktion vom Typ BAPI. Der folgende Dialog öffnet sich.
+### Einen BAPI\Funktionsbaustein finden
 
-![Define-Bapi-Data-Source](/img/content/Define-Bapi-Data-Source.png){:class="img-responsive"}
-
-Um ein BAPI oder einen RFC-Funktionsbaustein zu suchen, klicken Sie bitte auf den Button mit dem Fernglas. Bei der Suche nach Namen können auch Wildcards (z.B. * ) genutzt werden. 
-
+1. Klicken Sie auf **[Suche]** (Lupensymbol) im Hauptfenster der Komponente. Das Fenster "Function Module Lookup" öffnet sich.
+2. Geben Sie im Feld **Function Name** (1) den Namen eines BAPI oder Funktionsbausteins ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
+Alternativ können Sie nach Function Group suchen.
 ![Look-Up-Function-Module](/img/content/Look-Up-Function-Module.png){:class="img-responsive"}
+3. Klicken Sie auf **[Suche]** (Lupensymbol) (2) und wählen Sie ein Objekt aus der angezeigten Liste aus (3). 
+4. Bestätigen Sie Ihre Eingabe mit **[OK]** (4).
 
-Die Metadaten des Bausteins werden vom SAP geholt. Es gibt skalare und strukturierte Parameter, die sich jeweils in Imports und Exports aufteilen (siehe Tab im oberen Bereich), sowie Tabellen (unterer Bereich). 
+### Import, Export, Changings und Tables definieren
 
-![XU-BAPI-Parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
+Das Fenster "Xtract BAPI" zeigt die Parameter des ausgewählten BAPI.<br>
+Ein BAPI kann bis zu vier Paramtertypen haben: [Parametertypen](./parameter): Imports, Exports, Changings und Tables.
+
+{: .box-note }
+**Hinweis:** Sie können verschachtelte Parameter verwenden, z.B. Tabellen in Tabellen, Strukturen in Tabellen und Strukturen in Strukturen.<br>
+
+1. Geben Sie in **Imports** Eingabeparameter an, die an SAP gesendet werden, siehe [Import-Parameter](./parameter#import-parameter). <br>
+Sie können Skalarwerte (1) oder Strukturen (2) übergeben. Sie können außerdem dynamische Laufzeitparameter verwenden, siehe [Laufzeitparameter](./edit-runtime-parameters).<br>
+Parameter, die in SAP als Muss-Parameter ausgewiesen sind, sind mit einem roten * markiert.
+![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
+2. Definieren Sie die Ausgabe von SAP-Werten in **Exports**, siehe [Export-Parameter](./parameter#export-parameter).<br>
+Aktivieren Sie die Checkbox neben den aufgelisteten Elementen, um sie der Ausgabe hinzuzufügen.<br>
+![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
+3. Optional: Falls verfügbar können Sie Ein- und Ausgabeparameter in **Changings** hinzufügen, siehe [Changings Parametrisierung](./parameter#changings-parameter).
+4. Fügen Sie in **Tables** Tabellen zur Ein-/Ausgabe hinzu, siehe [Tabellen Parametrisierung](./parameter#tables-parameter).<br>
+Prüfen Sie die Namen und Datentypen der Tabellenfelder, indem Sie auf das **[Brillensymbol]** unter **Type** klicken.
+Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Ausgabe hinzuzufügen.
+Bearbeiten Sie die Tabelle über das **[Stiftsymbol]** unter **Values** (3).
+![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"}
+5. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 
