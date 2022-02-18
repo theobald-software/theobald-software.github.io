@@ -10,6 +10,7 @@ weight: 1
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-bapi-quelle-definieren
 ---
+
 ### BAPI verwenden
 1. Ziehen Sie die BAPI-Komponente mit "drag and drop" (1) aus der Menüleiste auf die Arbeitsfläche. Das Fenster "Konfiguration" öffnet sich.
 2. Füllen Sie die Anschlussdaten (2) aus, siehe Abschnitt [Erste Schritte mit Xtract for Alteryx](../erste-schritte).
