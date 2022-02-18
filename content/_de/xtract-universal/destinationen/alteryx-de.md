@@ -86,8 +86,8 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 1. Fügen Sie das Tool Xtract Universal zu Ihrem Alteryx-Workflow hinzu.
 ![XU_alteryx_plugin](/img/content/XU_alteryx_plugin.png){:class="img-responsive"}
 2. Legen Sie die folgenden Einstellungen für das Xtract Universal-Tool im Alteryx Designer fest:
-- Connection (1)
-- Parameters (2
+- Connection
+- Parameters
 
 ### Verbindung
 
@@ -103,26 +103,30 @@ Es werden nur die Extraktionen mit Alteryx als Destinationstyp angezeigt. Den De
 **Hinweis:** Stellen Sie sicher, dass der Xtract Universal Server läuft.
 
 **Send SAP credentials** <br>
-Markieren Sie die Checkbox *Send SAP credentials*, wenn auch die Checkbox *Require SAP Credentials to be explicitly supplied for execution* in den [SAP Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) in Xtract Unviersal markert ist.
+Markieren Sie die Checkbox *Send SAP credentials*, wenn die Checkbox *Require SAP Credentials to be explicitly supplied for execution* in den [SAP Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) in Xtract Unviersal gesetzt ist.
+Über **Username** und **Password** übermitteln Sie Ihre SAP-Zugangsdaten für die Extraktion.
 
 Die Einstellung *Send SAP credentials* kann in Self-Service-Szenarien nützlich sein. Wenn jede Extraktion mit den SAP-Anmeldeinformationen eines einzelnen Benutzers anstelle der global definierten Anmeldeinformationen ausgeführt werden muss.
 
+**Authenticate using current Windows user** <br>
+Markieren Sie die Checkbox *Authenticate using current Windows user*, um sich mit Ihrem Windows-Benutzer anzumelden.
 
 ### Parameter 
 
-Unter dem Tab **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. 
+Im Tab **Parameters** können die extraktionsspezifischen Parameter festgelegt werden. 
 
 ### Beispiel 1: Das statische Überschreiben eines benutzerdefinierten Parameters
-Im angegebenen Beispiel enthält eine Extraktion von SAP-Kunden den Parameter *city*, der in den **Custom Defined Parameters** definiert ist. Der Parameter *city* muss mit einem statischen Wert überschrieben werden (hier: Stuttgart).
-Um den Parameter *city* zu überschreiben, markieren Sie die Checkbox **Override** und geben einen neuen  Wert *vert* ein.
+Im folgenden Beispiel enthält eine Extraktion von SAP-Kunden den Parameter *city*, der in den **Custom Defined Parameters** definiert ist. 
+Der Parameter *city* kann mit einem statischen Wert überschrieben werden (hier: Stuttgart).
+Um den Parameter *city* zu überschreiben, markieren Sie die Checkbox **Override** und geben einen neuen Wert unter *Value* ein.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
 
 ### Beispiel 2: Das dynamische Überschreiben eines benutzerdefinierten Parameters**<br>
 Das Xtract Universal-Tool kann auch Eingaben empfangen, z. B. über das Input Data Tool.
 Die eingegebenen Daten können dynamisch verwendet werden, um den benutzerdefinierten Parameter in Xtract Universal zu übersteuern.<br> 
-Im angegebenen Beispiel liegt eine Extraktion von SAP-Kunden vor, bei der der Parameter Stadt dynamisch parametrisiert werden soll.
-Um den Parameter *city* zu überschreiben, markieren Sie die Checkbox **Override** und die Checkbox **Map**. Wählen Sie einen Eintrag aus der Dropdown-Liste im Feld **value**.
+Im folgenden Beispiel enthält eine Extraktion von SAP-Kunden den Parameter *city*, der in den **Custom Defined Parameters** definiert ist und dynamisch parametrisiert werden soll. 
+Um den Parameter *city* zu überschreiben, markieren Sie die Checkbox **Override** und die Checkbox **Map**. Wählen Sie einen Eintrag aus der Dropdown-Liste im Feld *Value*.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters-override.PNG){:class="img-responsive"}
 

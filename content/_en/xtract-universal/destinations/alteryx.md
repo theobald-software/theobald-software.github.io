@@ -87,8 +87,8 @@ The following settings can be defined for the destination:
 1. Add the the Xtract Universal tool to your Alteryx workflow.
 ![XU_alteryx_plugin](/img/content/XU_alteryx_plugin.png){:class="img-responsive"}
 2. Specify the following settings for the Xtract Universal tool in the Alteryx Designer:
-- Connection (1)
-- Parameters (2)
+- Connection
+- Parameters
 
 ### Connection
 
@@ -105,14 +105,20 @@ Only the extractions with Alteryx as destination type are displayed. You can def
 
 **Send SAP credentials** (3) <br>
 Mark the checkbox *Send SAP credentials*, if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is also marked in the [SAP source](../introduction/sap-connection#authentication) settings in Xtract Universal.
+
 The setting *Send SAP credentials* can be useful in self service scenarios. When each extraction needs to be executed using an individual user's SAP credentials instead of the globally defined credentials.
+
+
+**Authenticate using current Windows user** <br>
+Mark the checkbox *Authenticate using current Windows user* to use the Windows user that runs Alteryx for authentication.
 
 ### Parameters 
 In the tab *Parameters* tab, the Xtract Universal tool can load the available parameters for the specified extraction. 
 
 ### Example 1: Overriding Custom Parameters with Static Values
 
-In the given example, an extraction of SAP customers contains the *city* parameter defined in the **Custom Defined Parameters**. The *city* parameter needs to be overwritten with a static value (here: Stuttgart).
+In the following example, an extraction of SAP customers contains the *city* parameter defined in the **Custom Defined Parameters**. 
+The *city* parameter can be overwritten with a static value (here: Stuttgart).
 To override the parameter *city*, mark the checkbox **Override** and entering a new *value*.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters.PNG){:class="img-responsive"}
@@ -120,7 +126,8 @@ To override the parameter *city*, mark the checkbox **Override** and entering a 
 ### Example 2: Overriding Custom Parameters with Dynamic Values
 The Xtract Universal tool can also receive inputs, e.g., via the Input Data Tool.
 The data input can be dynamically used to override the custom parameter in Xtract Universal.<br> 
-In the given example there is an extraction of SAP customers with the city parameter to be dynamically parametrized.
+In the following example, an extraction of SAP customers contains the *city* parameter defined in the **Custom Defined Parameters**. 
+The parameter can be set dynamically.
 To override the parameter *city*, mark the checkbox **Override** and the checkbox **Map**. Select an item out of the drop-down list in the field **value**.
 
 ![alteryx-custom-parameters](/img/content/alteryx-custom-parameters-override.PNG){:class="img-responsive"}
