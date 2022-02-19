@@ -108,7 +108,6 @@ Mark the checkbox *Send SAP credentials*, if the *Require SAP Credentials to be 
 
 The setting *Send SAP credentials* can be useful in self service scenarios. When each extraction needs to be executed using an individual user's SAP credentials instead of the globally defined credentials.
 
-
 **Authenticate using current Windows user** <br>
 Mark the checkbox *Authenticate using current Windows user* to use the Windows user that runs Alteryx for authentication.
 
@@ -137,3 +136,7 @@ For more information on custom parameters go to [User-Defined Variables](../adva
 If the connection to the specified Xtract Universal server is not established and no errors are shown, the Xtract Unversal tool has a tooltip in the following format: [Extraction] @ [Server].
 
 ![alteryx-full-workflow](/img/content/alteryx-full-workflow.PNG){:class="img-responsive"}
+
+## Related Links
+- [Xtract for Alteryx: Parameterizing](../../xtract-for-alteryx/parameterizing)
+- [User-Defined Variables](../advanced-techniques/user-defined-variables)

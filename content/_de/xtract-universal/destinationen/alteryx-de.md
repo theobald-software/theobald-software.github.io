@@ -135,3 +135,7 @@ Weitere Informationen zu benutzerdefinierten Parametern finden Sie unter [Benutz
 Sind bei der Verbindung zu Ihrem Xtract Universal Server keine Fehler aufgetreten, dann trägt das Tool ein Tooltip in folgendem Format: [Extraktion] @ [Server].
 
 ![alteryx-full-workflow](/img/content/alteryx-full-workflow.PNG){:class="img-responsive"}
+
+## Related Links
+- [Xtract for Alteryx: Parameterizing](../../xtract-for-alteryx/parametrisierung)
+- [Benutzerdefinierte Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen)
