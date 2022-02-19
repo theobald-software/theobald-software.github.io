@@ -18,7 +18,7 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 |Feldname|Beschreibung|
 |:----|:----|
 | Imports - *Edit*| Geben Sie eine SSIS-Variable als Selektionskriterium ein. Im Fall von Strukturen, geben Sie eine SSIS-Variable für jedes Element der Struktur ein, siehe [Parameter](./parameter).|
-| Exports - *Edit*| Die Exportparameter einer BAPI können in eine SSIS-Variable oder in die SSIS Pipeline geschrieben werden, siehe [Parameter](./parameter). Geben Sie eine SSIS-Variable in das jeweilige Feld des Exportparameters ein. Im Fall von Strukturen, geben Sie eine SSIS-Variable für jedes Element der Struktur ein.|
+| Exports - *Edit*| Die Exportparameter einer BAPI können in eine SSIS-Variable oder in die SSIS Pipeline geschrieben werden, siehe. Geben Sie eine SSIS-Variable in das jeweilige Feld des Exportparameters ein. Im Fall von Strukturen, geben Sie eine SSIS-Variable für jedes Element der Struktur ein.|
 
 
 ****
