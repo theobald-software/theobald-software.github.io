@@ -1,1 +1,0 @@
-Die BAPI-Komponente enthält keine speziellen Einstellungen, außer den *General Settings*, die bereits im Abschnitt [Allgemeine Einstellungen](../erste-schritte/allgemeine-einstellungen) diskutiert wurden.
