@@ -10,4 +10,5 @@ weight: 6
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=report-extraction-settings
 ---
+
 {% include _content/en/bw-infocubes-and-bex-queries/edit-runtime-parameters.md %}

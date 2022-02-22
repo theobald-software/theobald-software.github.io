@@ -5,14 +5,16 @@ Verwenden Sie Laufzeitparameter, um Dimensionsfilter und Variablen dynamisch zur
 
 1. Um Laufzeitparameter anzulegen und zu bearbeiten, klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameter**. <br/>
 Das Fenster "Edit Runtime Parameters" öffnet sich.<br> 
-![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
-2. Klicken Sie auf **[Add]** (1), um Parameter zu definieren, die als Platzhalter für die Datenfilter verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
+![Add parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}<br> 
+2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für die Datenfilter verwendet werden können. <br>
+Klicken Sie auf **[Add List]**, um Listenparameter zu definieren, die als Platzhalter für Dimensionsfilter mit mehreren Werten verwendet werden können. <br>
+Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. Listenparameter enthalten eine Liste von Werten, die durch ein Komma voneinander getrennt sind.<br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: *"p_MATNR"*).
-3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen können, müssen aber nicht mit den SAP-Datentypen übereinstimmen. 
+3. Klicken Sie auf das Drop-Down-Menü und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen können, müssen aber nicht mit den SAP-Datentypen übereinstimmen. 
 - String: dieser Datentyp kann für jeden Typ der SAP-Felder verwendet werden.
 - Number: dieser Datentyp kann nur für numerische SAP-Felder verwendet werden.
 - Flag: dieser Datentyp kann nur für SAP-Felder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. <br>
-4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
+4. Klicken Sie auf **[OK]** zum Bestätigen.
 
 
 ### Laufzeitparameter zuweisen
