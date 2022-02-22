@@ -38,4 +38,5 @@ All ETL tools offer the following options for running extractions:
 
 - [Azure Data Factory (ADF) Integration using Webservices](https://kb.theobald-software.com/xtract-universal/adf-integration-using-webservices)
 - [Azure Data Factory (ADF) Integration using Command Line](https://kb.theobald-software.com/xtract-universal/adf-integration-using-command-line)
+- [Calling Dynamic Extractions with Variables in Azure Data Factory](https://kb.theobald-software.com/xtract-universal/calling-dynamic-extractions-with-variables-in-adf)
 - [Run an ADF pipeline when an SAP extraction file is successfully uploaded to Azure storage](https://kb.theobald-software.com/xtract-universal/runs-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage)
