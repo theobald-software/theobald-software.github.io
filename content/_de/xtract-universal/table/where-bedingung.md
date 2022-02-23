@@ -12,6 +12,6 @@ lang: de_DE
 
 {% include _content/de/table/where-bedingung.md  %}
 
-### Formeln - Skript-Ausdrücke
+### Skript-Ausdrücke
 
 Ab Version 2.13.5 können Sie [Script-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke) in der WHERE-Bedingung verwenden.
