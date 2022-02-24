@@ -104,6 +104,7 @@ This option is only available for the following destinations:
 - Web Service CSV 
 - Web Service JSON 
 - Alteryx
+- Microsoft SQL Server
 - SQL Server Reporting Services 
 - QlikSense&QlikView
 
