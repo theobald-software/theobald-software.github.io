@@ -106,6 +106,7 @@ Die Anzeige ist nur bei folgenden Destinationen verfügbar:
 - Web Service CSV 
 - Web Service JSON 
 - Alteryx
+- Microsoft SQL Server
 - SQL Server Reporting Services 
 - QlikSense&QlikView
 
