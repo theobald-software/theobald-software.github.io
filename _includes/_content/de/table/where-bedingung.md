@@ -2,16 +2,23 @@
 ### Verwendung von WHERE-Bedingung
 
 1. Navigieren Sie zum Tab **WHERE Clause**.
-2. Geben Sie die WHERE-Bedingung ein.
+2. Geben Sie die WHERE-Bedingung entweder über die manuelle Texteingabe oder über den Editor ein.
 3. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
 
 {: .box-note }
-**Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei [Table Joins](./table-joins) der Fall sein.
+**Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei der Extraktion mehrerer Tabellen der Fall sein.
 
 ![Extraction-Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
 
 ### Schaltflächen
+
+**[Text mode]** <br>
+Ermöglicht die direkte Eingabe einer WHERE-Bedingung. **[Text mode]** ist der Standart-Eingabemodus.
+
+**[Editor mode]** <br>
+Öffnet den WHERE Clause Builder. Der WHERE Clause Builder bietet ein Toolkit, um WHERE-Bedingungen zusammenzuklicken.
+
 **[Load live preview]** <br>
 Ermöglicht eine Echtzeit-Vorschau der Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
 Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen. 
@@ -23,8 +30,6 @@ Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtig
 Durchführung eines erneuten Lookups auf die selektierte(n) Tabelle(n). Bestehende Mappings und Feldselektionen bleiben dabei erhalten, anders als beim erneuten Hinzufügen.<br>
 Die *Refresh Metadata* Funktionalität kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. In solchen Fällen kann es zu Datenschiefständen kommen, die durch diese Funktion bereinigt werden.   
  
-
-
 ### Syntax der WHERE-Bedingung  
 
 {: .box-warning }
@@ -69,7 +74,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 | (NOT) LIKE | Wahr, wenn der Wert des Operanden operand1 mit dem Muster im Operanden operand2 übereinstimmt (nicht übereinstimmt). |
 | (NOT) BETWEEN | Wahr, wenn der Inhalt des Operanden operand (nicht) zwischen den Werten der Operanden operand1 und operand2 liegt. |
 
- Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
+Für mehr Informationen über die OpenSQL-Syntax, siehe [SAP Help: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
 ### Verwendung von Subqueries
 
@@ -98,3 +103,7 @@ Wenn Ihr SAP-System älter als Release 7.40, SP05 ist, erscheint folgender Fehle
 
 Weitere Informationen über die Änderungen in Release 7.40, SP05 erhalten Sie auf der [SAP Helpseite](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-DE/abennews-740_sp05-open_sql.htm#!ABAP_MODIFICATION_5@5@).
 
+### WHERE Clause Builder
+
+
+![Extraction-Settings-01](/img/content/where-clause-builder.png){:class="img-responsive"}

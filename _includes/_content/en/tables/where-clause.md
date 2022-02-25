@@ -3,16 +3,23 @@
 1. Select and double-click an extraction of type "table" in the main window of the Designer.
 The window "Define data source for SAP Table " opens.
 2. Navigate to tab **WHERE Clause**.
-3. Enter the WHERE clause.
+3. Enter the WHERE clause manually or use the editor.
 4. To display the results in the **Preview** section, click **[Load live preview]**.
 
 {: .box-note }
-**Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g. MAKT~MATNR. This can be the case with [table joins](./table-joins).
+**Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g. MARC~MATNR. This can be the case when extracting multiple tables.
 
 ![Extraction Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
 
 ### Buttons
+
+**[Text mode]** <br>
+Allows entering a WHERE clause directly into the text field. **[Text mode]** is the default method for defining a WHERE clause.
+
+**[Editor mode]** <br>
+Opens the WHERE clause builder. The WHERE clause builder offers a toolkit for those who are not familiar with the syntax of the WHERE clause.
+
 **[Load live preview]** <br>
 Allows a real-time preview of the extraction data without executing the extraction. <br>
 You can also preview the data with aggregation functions. 
@@ -73,7 +80,7 @@ Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](htt
 ### Using Subqueries
 
 {: .box-note }
-**Note:** The usage of subqueries is only possible starting from SAP Release 7.40, SP05.
+**Note:** The usage of subqueries is only possible as of SAP Release 7.40, SP05.
 
 
 A subquery is an SQL query nested inside a larger query. 
@@ -86,7 +93,6 @@ The following statement returns all the *active* customers (rows in the table KN
 ![WHERE Clause Subquery](/img/content/table/table_where_sub-select.png){:class="img-responsive"}
 
 
-
 ### WHERE Clause Restrictions
 
 {: .box-note }
@@ -96,16 +102,68 @@ When using table joins, restricting the right table of a LEFT OUTER JOIN is only
 If your SAP System is older than Release 7.40, SP05, the following error appears:
 *RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
 
+### WHERE Clause Builder
 
-****
-#### Related Links
-- [SAP Kernel Release 7.40, SP05](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/index.htm).
+The WHERE clause builder offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
+To open the WHERE clause builder, click **[Editor mode]**. 
 
+![WHERE-Clause-Builder-01](/img/content/where-clause-builder.png){:class="img-responsive"}
 
+There are 2 options for adding criteria to the WHERE clause:
+- **[Add Criteria]** adds single criteria. <br>
+	- The default structure for a single criteria with static values is `[Column][Operator][Value]` e.g., MARC~WERKS = 1000.
+	- The default structure for a single criteria with parameters is `[Column][Operator][Parameter]` e.g., MARC~WERKS = [p_WERKS].
+- **[Add Criteria Group]** adds a group of criteria.
+	- The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB').
 
+{: .box-tip }
+**Tip:** You can combine multiple criteria and criteria groups to create filters e.g., 
+MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB') extracts only data where the column WERKS equals 1000 and the column PSTAT equals either 'L' or 'LB'.
 
+#### Components of the WHERE Clause Builder
 
+![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
 
+There are the following options to organize the criteria of a WHERE clause (1):
+- **Delete row** deletes a criteria.
+- **Move row up** changes the sequence of the criteria. The selected criteria moves up.
+- **Move row down** changes the sequence of the criteria. The selected criteria moves down.
 
+The following components can be added to a criteria (2):
+- **Add Column** adds a column. Click on the component to open a selection window for tables and columns.
+![WHERE-Clause-Builder-Select-Column](/img/content/where-clause-builder-select-column.png){:class="img-responsive"}
+- **Add SQL** adds an SQL statement.
+- **Add Operator** adds an operator e.g., =, <, >, etc.
+- **Add literal Value** adds a static value of type *String*, *Number*, *Flag* or *Set*. *Set* also offers the option of adding a SELECT statement.<br>
+![WHERE-Clause-Builder-Value](/img/content/where-clause-value.png){:class="img-responsive"}
+- **Add Parameter** adds a parameter defined in [**Edit Runtime Parameters**](#using-runtime-parameters-in-the-where-clause-builder).<br>
+![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
+- **Add new Criteria** adds a new criteria after the selected criteria.
+- **Add new Group** adds a new group of criteria the selected criteria.
 
+<!---
+When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
+-->
 
+To edit existing components, click on the component. All areas that are marked green can be edited.<br>
+To delete a component, click the icon (x) above the component.<br>
+
+### Using Runtime Parameters in the WHERE Clause Builder
+
+1. Click **Edit Runtime Parameters** to create or edit dynamic runtime parameters.
+The window “Edit Runtime Parameters” opens.<br>
+![dd-parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}
+2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime. 
+This allows you to dynamically set filters at runtime.<br>
+**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: “p_MATNR”).
+3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. 
+The data types can, but don’t need to correlate to SAP data types.
+- String: This data type can be used for any type of SAP selection field.
+- Integer: This data type can be used for numeric SAP selection fields.
+- Flag: This data type can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
+Click **[OK]** (3) to confirm.
+4. Open the WHERE clause builder by clicking **[Editor mode]** in the WHERE clause tab of the main window.
+5. Add a new criteria and use **Default with Parameter** or add the components manually.
+6. Click on the *Parameter* component and select a parameter from the drop down list.<br>
+![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
+7. Click **[Load live Preview]** and provide a parameter value to test the WHERE clause.
