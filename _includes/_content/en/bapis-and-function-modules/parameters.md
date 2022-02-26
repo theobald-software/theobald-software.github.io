@@ -16,7 +16,7 @@ To use the filtering function, enter text in the headers of the columns **Name**
 
 Scalar fields for inputs are usually set using the following two options:
 - A static constant value (e.g., 1141).
-- A dynamic value set at run-time using a parameter (see [Runtime Parameters](./parametrization)).
+- A dynamic value set at run-time using a parameter, see [Runtime Parameters](./edit-runtime-parameters).
 
 When using runtime parameters, make sure the input matches the data type.<br>
 When entering constant scalar values of a wrong data type, the field is marked red and an error message is displayed (e.g. "Value is not numeric").
