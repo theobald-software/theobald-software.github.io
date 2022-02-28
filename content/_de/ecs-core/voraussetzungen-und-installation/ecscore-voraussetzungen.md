@@ -43,7 +43,7 @@ Folgende Ports müssen abhängig vom SAP-System offen sein, wobei nn die Instanz
 
 - SAP Application Server: Port 33nn
 - SAP Message Server (Load Balancing): Port 36nn
-- Secure Communication Network (SCN): Port 48nn
+- Secure Network Communications (SNC): Port 48nn
 - SAP Router: Port 3399
 
 Es ist empfohlen, die Installation von ECS Core auf einem Rechner ohne andere Theobald Software Komponenten durchzuführen. 

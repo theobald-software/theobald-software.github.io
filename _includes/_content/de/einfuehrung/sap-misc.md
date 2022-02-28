@@ -3,7 +3,7 @@ Folgende Ports müssen abhängig vom SAP-System offen sein. *nn* ist die Instanz
 
 - SAP Application Server: Port 33*nn*
 - SAP Message Server (Load Balancing): Port 36*nn*
-- Secure Communication Network (SCN): Port 48*nn*
+- Secure Network Communications (SNC): Port 48*nn*
 - SAP Router: Port 3399
 
 

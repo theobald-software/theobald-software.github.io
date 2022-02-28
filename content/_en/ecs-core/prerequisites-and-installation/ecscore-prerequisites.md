@@ -45,7 +45,7 @@ If you want to use the [transaction recorder feature](../webservices/transaction
 The following ports have to be opened depending on the SAP system, where nn is the instance number of the SAP system (e.g. 00 or 99).
 - SAP Application Server: Port 33nn
 - SAP Message Server (Load Balancing): Port 36nn
-- Secure Communication Network (SCN): Port 48nn
+- Secure Network Communications (SNC): Port 48nn
 - SAP Router: Port 3399
 
 It is recommended to install ECS Core on a computer without any other Theobald Software components. 
