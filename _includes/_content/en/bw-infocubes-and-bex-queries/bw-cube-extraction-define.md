@@ -57,10 +57,10 @@ The following directories correspond to dimensions and often contain additional 
 ### Setting a Dimension Filter 
 1. Right-click a dimension. The button **[Edit Filter]** pops-up.
 ![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
-2. Click **[Edit Filter]**. The window "Member Filter" opens. You can set *Single Values* and / or define *Value Ranges*.
+2. Click **[Edit Filter]**. The window "Member Filter" opens. You can set *Single Values*, define *Value Ranges* or select a *List Parameter*.
 ![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
-3. Select a single value (8) or  click **[Add]** (9) to add value ranges.
-4. Define values for filtering (10). Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). If needed, delete filters using the **[Remove]** button (dustbin symbol).
+3. Select a single value (8) or click **[Add]** (9) to add value ranges.
+4. Define values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). To use a dynamic list of values, select a *List Parameter* from the drop-down-menu (10). If needed, delete filters using the **[Remove]** button (dustbin symbol).
 5. Click **[OK]** to confirm. The "Member Filter" window closes.
 
 When filters are applied, a filter symbol appears in the metadata structure.
