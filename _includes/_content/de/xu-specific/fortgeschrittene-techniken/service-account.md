@@ -30,8 +30,8 @@ Mit dem ```setspn``` Befehl können die SPNs eines Benutzerkontos eingesehen wer
 4. Führen Sie den Xtract Universal Dienst unter dem Dienstkonto aus. Stellen Sie sicher, dass die korrekte Domäne verwendet wird (z.B. *.Firma.local* anstatt *.Firma.com*).
 ![xu service account services](/img/content/xu/xu-service-account-services.png){:class="img-responsive"}
 
-5. Im Startfenster "Connect to Xtract Universal Server" vom Xtract Universal Designer wählen Sie *Windows credentials* oder *Custom Credentials (Kerberos authentication)* als *Authentication* aus. Geben Sie den UPN (User Principal Name) des Dienstkontos als *Target Principal* wie im Knowledge Base Artikel ["How to use target principal field"](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) beschrieben ein.
-
+5. Im Startfenster "Connect to Xtract Universal Server" vom Xtract Universal Designer wählen Sie *Windows credentials* oder *Custom Credentials (Kerberos authentication)* als *Authentication* aus. Geben Sie den UPN (User Principal Name) des Dienstkontos als *Target Principal* wie im Knowledge Base Artikel ["How to use target principal field"](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) beschrieben ein.<br>
+![xu service account login](/img/content/xu/xu-service-account-login.png){:class="img-responsive"}
 
 ### Einstellungen für SSO mit Kerberos SNC
 

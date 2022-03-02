@@ -31,7 +31,8 @@ Using the ```setspn``` command the SPNs of a user account can be checked.
 4. Let the Xtract Universal service run under the service account. Make sure the correct domain is used (e.g., *.company.local* instead of *.company.com*).
 ![xu service account services](/img/content/xu/xu-service-account-services.png){:class="img-responsive"}
 
-5. In the Xtract Universal Designer startup window "Connect to Xtract Universal Server", set *Windows credentials* or *Custom Credentials (Kerberos authentication)* as *Authentication*. Enter the User Principal Name (UPN) of the service account in the *Target Principal* field as described in the knowledge base article ["How to use target principal field"](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).
+5. In the Xtract Universal Designer startup window "Connect to Xtract Universal Server", set *Windows credentials* or *Custom Credentials (Kerberos authentication)* as *Authentication*. Enter the User Principal Name (UPN) of the service account in the *Target Principal* field as described in the knowledge base article ["How to use target principal field"](https://kb.theobald-software.com/xtract-universal/target-principal-TPN).<br>
+![xu service account login](/img/content/xu/xu-service-account-login.png){:class="img-responsive"}
 
 
 ### Settings for SSO with Kerberos SNC
