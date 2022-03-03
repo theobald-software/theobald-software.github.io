@@ -12,3 +12,8 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=look-up-bapis
 ---
 The following section shows how to use the BAPI component.
 {% include _content/en/xis-specific/bapi/look-up-bapis.md %}
+
+****
+#### Related Links
+- [How to Post Data in SAP with Xtract BAPI](https://kb.theobald-software.com/xtract-is/xtract-is-report-postprocessing-in-ssis%20-%20Copy)
+- [Uploading CATS data by using Xtract IS BAPI](https://kb.theobald-software.com/xtract-is/uploading-cats-data-by-using-xtract-is-bapi?fromSearch=true)

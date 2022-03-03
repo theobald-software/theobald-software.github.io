@@ -13,3 +13,8 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=bapis-suchen
 Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.
 
 {% include _content/de/xis-specific/xtract-is-bapi/bapis-suchen.md %}
+
+****
+#### Weiterführende Links
+- [How to Post Data in SAP with Xtract BAPI](https://kb.theobald-software.com/xtract-is/xtract-is-report-postprocessing-in-ssis%20-%20Copy)
+- [Uploading CATS data by using Xtract IS BAPI](https://kb.theobald-software.com/xtract-is/uploading-cats-data-by-using-xtract-is-bapi?fromSearch=true)
