@@ -8,7 +8,7 @@ Das Fenster "Edit Runtime Parameters" öffnet sich.<br>
 ![Add parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}<br> 
 2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für die Datenfilter verwendet werden können. <br>
 Klicken Sie auf **[Add List]**, um Listenparameter zu definieren, die als Platzhalter für Dimensionsfilter mit mehreren Werten verwendet werden können. <br>
-Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. Listenparameter enthalten eine Liste von Werten, die durch ein Komma voneinander getrennt sind.<br>
+Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. Listenparameter enthalten eine Liste von Werten, die durch ein Komma voneinander getrennt sind z.B. *1,10* oder *"1", "10"*.<br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: *"p_MATNR"*).
 3. Klicken Sie auf das Drop-Down-Menü und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen können, müssen aber nicht mit den SAP-Datentypen übereinstimmen. 
 - String: dieser Datentyp kann für jeden Typ der SAP-Felder verwendet werden.

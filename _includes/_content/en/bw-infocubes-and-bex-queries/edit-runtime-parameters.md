@@ -10,7 +10,7 @@ The window "Edit Runtime Parameters" opens.<br>
 ![Add parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}<br> 
 2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for filters.<br>
 Click **[Add List]** to define list parameters that can be used as placeholders for dimension filters with multiple members.<br>
-These placeholders need to be populated with actual values at extraction runtime. List parameters contain a list of values separated by commas.<br>
+These placeholders need to be populated with actual values at extraction runtime. List parameters contain a list of values separated by commas e.g., *1,10* or *"1", "10"*.<br>
 **Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: *"p_MATNR"*).
 3. Open the drop-down menu and assign one of the following data types to the parameter. The data types can, but don't need to correlate to SAP data types. 
 - String: This data type can be used for any type of SAP field.
