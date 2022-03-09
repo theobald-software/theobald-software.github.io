@@ -13,6 +13,10 @@ progressstate: 5
 ---
 
 
+### Benutzer Anlegen
+Die Einstellungen für die Benutzerverwaltung befinden sich im yunIO Designer unter dem Abschnitt *Users*.
+- Um einen neuen Benutzer anzulegen, klicken Sie auf **[Add User]** (1). <br>
+- Um einen bereits vorhandenen Benutzer zu bearbeiten, klicken Sie auf das ![Edit](/img/content/yunio/edit.png) Icon (2) des Benutzers.<br>
 ![Users](/img/content/yunio/yunio-users.png){:class="img-responsive" }
 
 ![New-User](/img/content/yunio/yunio-new-user.png){:class="img-responsive" }

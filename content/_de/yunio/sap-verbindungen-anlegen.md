@@ -20,7 +20,7 @@ Stellen Sie sicher, dass der Zugriff auf die erforderlichen Berechtigungsobjekte
 
 Die Einstellungen für SAP-Verbindungen befinden sich im yunIO Designer unter dem Abschnitt *Connections*.<br>
 - Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
-- Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf den Namen der Verbindung (2).
+- Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf das ![Edit](/img/content/yunio/edit.png) Icon der Verbindung (2).
 
 ![yunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
 
