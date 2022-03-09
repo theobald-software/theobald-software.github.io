@@ -21,6 +21,9 @@ To save any changes made in the **Settings** menu, click **[Save]**.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
+### Anonymous Access
+If this option is active, anyone can access the Designer.
+This option can be used in combination with [User Management](./users). 
 
 ### Transport Layer Security
 
@@ -39,6 +42,9 @@ Please refer to the documentation available on the internet or contact your netw
 #### TLS enabled
 Once a certificate is selected, the option **TLS enabled** is available.<br>
 Enable or disable the usage of transport encryption for the web server.
+
+{: .box-note }
+**Note:** To access the Designer via TLS, restart the yunIO server and connect to the Designer using the following URL pattern: `https://[host]:[HTTPS port]`. 
 
 ### Allowed Origins (CORS)
 

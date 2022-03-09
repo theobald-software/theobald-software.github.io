@@ -21,6 +21,11 @@ Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
+### Anonymous Access
+Wenn diese Option aktiv ist, gibt es keine Zugangsbeschränkungen für den Designer.
+*Anonymous Access* kann in Kombination mit ....
+
+
 ### Transport Layer Security
 
 Das *Transport Layer Security (TLS)*-Protokoll ermöglicht eine verschlüsselte Datenübertragung.
@@ -39,6 +44,9 @@ Orientieren Sie sich an den verfügbaren Dokumentationen dazu im Netz oder wende
 #### TLS enabled
 Wenn ein Zertifikat gewählt wurde, ist die Option **TLS enabled** verfügbar.<br>
 Über **TLS enabled** aktivieren oder deaktivieren Sie die Verwendung von Transportverschlüsselung für den Webserver.
+
+{: .box-note }
+**Hinweis:** Um sich über TLS auf den Designer zu verbinden, starten Sie den yunIO-Server neu und verbinden Sie sich über folgendes URL-Pattern mit dem Designer: `https://[host]:[HTTPS port]`. 
 
 ### Allowed Origins (CORS)
 
@@ -60,7 +68,7 @@ Es ist nicht empfohlen, Ports unter 1000 zu verwenden, da diese oftmals bereits 
 
 #### Standardports
 
-|Service-Name|Http|Https|Beschreibung|
+|Service-Name|HTTP|HTTPS|Beschreibung|
 |---|---|---|---|
 |Services|8075|8175|Dieser Port wird vom Webserver verwendet, der die Anfragen annimmt, um Services zu starten.|
 |Designer|8077|8177|Dieser Port wird genutzt, um den yunIO Designer aufzurufen.|

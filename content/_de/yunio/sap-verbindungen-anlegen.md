@@ -83,6 +83,10 @@ Passwort des SAP-Benutzers.<br>
 Wenn diese Checkbox aktiv ist, werden die eingegebenen SAP-Anmeldeinformationen aus *User* und *Password* nicht übernommen.
 Stattdessen müssen die SAP-Anmeldeinformationen über die Windows Basic Authentifizierung angegeben werden, sobald eine Extraktion ausgeführt wird. 
 
+{: .box-note }
+**Hinweis:** Um *Request credentials from callers when running services* zu verwenden, muss [*Anonymous Access*](./server-settings#anonymous-access) aktiviert sein.
+
+
 ### Angelegte SAP-Verbindung überprüfen
 
 Klicken Sie auf **[Test Connection]**, um die Verbindungsparameter zu prüfen. <br>
