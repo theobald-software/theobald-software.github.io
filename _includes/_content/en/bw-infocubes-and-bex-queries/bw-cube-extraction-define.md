@@ -12,13 +12,13 @@ The BW Queries can be based on all possible InfoProviders.
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
 2. In the field Name (1) enter a name of a Query or a BW Cube / InfoProvider. Use wildcards (*), if needed.
 3. Define the **Extractor** and **Type** of the object (2).
-- **Extractor** defines, if data is extracted using the OLAP BAPI Interface (MADX) or the native BICS Interface. BICS is still in beta phase.
-- **Type** specifies if a BEx-Query or an InfoProvider is looked up.
+- **Extractor** defines, if data is extracted using the OLAP BAPI Interface (MADX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection#rfc-options). BICS is still in beta phase.
+- **Type** defines if a BEx Query or an InfoProvider is looked up. 
 4. Click **[Search]** (magnifying glass symbol) (3) and select the object of your choice from the displayed list (4).
 5. Click **[OK]** (5) to confirm.
 
 {: .box-note }
-**Note:** Use **[Refresh Metadata]** to renew metadata. 
+**Note:** Click **[Refresh Metadata]** to renew metadata. 
 This is necessary if a data source has been adjusted in SAP, another source system has been connected, or the source system has been updated.
 
 {: .box-warning }
@@ -28,9 +28,6 @@ This is necessary if a data source has been adjusted in SAP, another source syst
  
 #### MDX versus BICS (beta)
 
-{: .box-note }
-**Note:** The BICS component is still in beta phase. Contact [Theobald Support](https://support.theobald-software.com) in case of errors.
-
 |                                    | MDX                                                                                         | BICS (beta)                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Syntax in lookup for BEx Queries   | `[tech. name of InfoPovider]/[tech. name of BEx Query]` <br /> example: 0SD_C03/0SD_C03_Q0018        | `[tech. name of BEx Query]` <br /> example: 0SD_C03_Q0018   |
@@ -39,6 +36,8 @@ This is necessary if a data source has been adjusted in SAP, another source syst
 | Supported InfoProviders            | InfoCubes, Multiproviders, Composite Providers                                              | InfoCubes, MuliProviders, Composite Providers, DSOs |
 | Setting in BEx Query               | Setting "Allow External Access to this Query" is required. If not set, BEx Query won't appear in the lookup, see [Allow External Access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries). | not required                                       |
 
+{: .box-note }
+**Note:** The BICS component is still in beta phase. Contact [Theobald Support](https://support.theobald-software.com) in case of errors.
 
 ### Selecting Measure (Key Figures), Dimensions and Properties
 When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. 
