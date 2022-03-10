@@ -32,7 +32,7 @@ You can configure the port under *Settings* in the yunIO Designer.
 In the *Connection* menu you can add new SAP connections and edit or delete existing connections.
 
 1. To add a new SAP connection, click **[Add Connection]** (1).<br>
-To edit an existing connection, click on the name of the connection you want to edit (2).
+To edit an existing connection, click the edit icon (![Edit](/img/content/yunio/edit.png)) of the connection you want to edit (2).
 ![web-ui](/img/content/yunio/web-ui.png){:class="img-responsive"}
 2. Enter the connection information of your SAP system under *System* (3).<br>
 ![yunIO-connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
@@ -47,7 +47,7 @@ For more detailed information on establishing an SAP connection, see [SAP Connec
 In the *Services* menu you can create new web services and edit, run or delete existing web services.
 
 1. To create a new service, click **[Add Service]** (1).<br>
-To edit an existing service, click on the name of the service you want to edit (2).<br>
+To edit an existing service, click the edit icon (![Edit](/img/content/yunio/edit.png)) of the service you want to edit (2). <br>
 ![yunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
 2. Enter a name for the service and choose an existing SAP connection under *General* (3).<br>
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}

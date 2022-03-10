@@ -22,8 +22,8 @@ To save any changes made in the **Settings** menu, click **[Save]**.
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
 ### Anonymous Access
-If this option is active, anyone can access the Designer.
-This option can be used in combination with [User Management](./users). 
+**Anonymous Access** is only available if users are defined, see [User Management](./users).<br>
+If **Anonymous Access** is active, anyone can access the Designer. If this option is deactivated, only defined users have access.
 
 ### Transport Layer Security
 

@@ -21,7 +21,7 @@ For more information, see the knowledge base article on [SAP User Rights](https:
 
 The SAP connection settings are located in the *Connection* section of the yunIO Designer.
 - To add a new SAP connection, click **[Add Connection]** (1).<br>
-- To edit an existing connection, click the edit (![Edit](/img/content/yunio/edit.png) icon of the connection you want to edit (2).
+- To edit an existing connection, click the edit icon (![Edit](/img/content/yunio/edit.png))of the connection you want to edit (2).
 
 ![yunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
 

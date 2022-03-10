@@ -7,7 +7,7 @@ product: yunio
 parent: yunio
 childidentifier: integration
 permalink: /:collection/:path
-weight: 20
+weight: 25
 lang: de_DE
 progressstate: 5
 ---

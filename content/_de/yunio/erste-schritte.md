@@ -30,7 +30,7 @@ Sie können den Port im yunIO Designer unter *Settings* konfigurieren. <br>
 Unter *Connections* können Sie neue SAP-Verbindungen hinzufügen und bereits angelegte SAP-Verbindung bearbeiten oder löschen. 
 
 1. Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
-Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf den Namen der Verbindung (2).<br>
+Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf *Edit* (![Edit](/img/content/yunio/edit.png) Icon) (2).<br>
 ![web-ui](/img/content/yunio/web-ui.png){:class="img-responsive"}
 2. Geben Sie die Verbindungsinformationen zu Ihrem SAP-System unter *System* (3) ein.<br>
 ![yunIO-connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
@@ -46,7 +46,7 @@ Für mehr Informationen zum Einrichten der SAP-Verbindung, siehe [SAP-Verbindung
 Unter *Services* können Sie neue Webservices erstellen und bereits angelegte Services bearbeiten, ausführen und löschen.
 
 1. Um einen neuen Service anzulegen, klicken Sie auf **[Add Service]** (1). <br>
-Um einen bereits vorhandenen Service zu bearbeiten, klicken Sie auf den Namen des Services (2).<br>
+Um einen bereits vorhandenen Service zu bearbeiten, klicken Sie auf *Edit* (![Edit](/img/content/yunio/edit.png) Icon) (2).<br>
 ![yunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
 2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus (3).
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
