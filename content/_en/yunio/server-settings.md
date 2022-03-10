@@ -44,7 +44,7 @@ Once a certificate is selected, the option **TLS enabled** is available.<br>
 Enable or disable the usage of transport encryption for the web server.
 
 {: .box-note }
-**Note:** To access the Designer via TLS, restart the yunIO server and connect to the Designer using the following URL pattern: `https://[host]:[HTTPS port]`. 
+**Note:** To access the Designer via TLS, restart the yunIO server and connect to the Designer using the following URL pattern: <br>`https://[host]:[HTTPS port]`. 
 
 ### Allowed Origins (CORS)
 
