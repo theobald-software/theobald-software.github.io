@@ -12,9 +12,11 @@ lang: en_GB
 progressstate: 5
 ---
 
-The user management settings are located in the *Users* section of the yunIO Designer.
+With the user management you can create custom users with credentials to restrict access to the yunIO designer and to yunIO services.
 
 ### Creating Users
+
+The user management settings are located in the *Users* section of the yunIO Designer.
 
 1. Click **[Add User]** (1) to add a new user.
 To edit an existing user, click the edit icon (![Edit](/img/content/yunio/edit.png)) of the user (2).<br>
@@ -38,7 +40,8 @@ When connecting to the designer, you are now prompted to enter user credentials:
 ![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
 
 {: .box-note }
-**Note:** If you get shut out and can't log in, delete the `permission.json` file in the installation directory of yunIO, e.g. `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
+**Note:** If you get shut out and can't log in, delete the `permission.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
+Restart the yunIO server.
 
 ### Basic Authentication with Defined Users
 
@@ -53,3 +56,4 @@ Follow the steps below to set up basic authentication for yunIO services:
 
 {: .box-tip }
 **Tip:** You can also use SAP credentials for basic authentication, see [SAP Connection: Authentication](./sap-connection#authentication).
+Using SAP credentials and custom user credentials for basic authentication in parallel is not supported.

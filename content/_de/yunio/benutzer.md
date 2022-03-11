@@ -12,9 +12,12 @@ lang: de_DE
 progressstate: 5
 ---
 
+Mit der yunIO Benutzerverwaltung können Sie Benutzer erstellen, um den Zugriff auf den yunIO Designer und die yunIO Services zu beschränken.
 
 ### Benutzer Anlegen
+
 Die Einstellungen für die Benutzerverwaltung befinden sich im yunIO Designer unter dem Abschnitt *Users*.
+
 1. Klicken Sie auf **[Add User]** (1), um einen neuen Benutzer anzulegen. <br>
 Um einen bereits vorhandenen Benutzer zu bearbeiten, klicken Sie auf *Edit* (![Edit](/img/content/yunio/edit.png) Icon) (2).<br>
 ![Users](/img/content/yunio/yunio-users.png){:class="img-responsive" }
@@ -43,7 +46,8 @@ Wenn Sie sich auf den Designer verbinden, werden Sie aufgefordert Zugangsdaten e
 ![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
 
 {: .box-note }
-**Hinweis:** Wenn Sie sich aussperren und sich nicht mehr einloggen können, löschen Sie die Datei `permission.json`aus Ihrem Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
+**Hinweis:** Wenn Sie sich aussperren und sich nicht mehr einloggen können, löschen Sie die Datei `permission.json` aus Ihrem Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
+Starten Sie anschließend den Server neu.
 
 ### Benutzer für Basic Authentication verwenden
 
@@ -57,4 +61,5 @@ Folgen Sie diesen Schritten, um Basic Authentication für yunIO-Services einzuri
 5. Rufen Sie den Service unter Verwendung von Basic Authentication auf. Sie können die Zugangsdaten aller angelegten Benutzer verwenden.
 
 {: .box-tip }
-**Tipp:** Sie können auch SAP-Zugangsdaten für ein Basic Authentication verwenden, siehe [SAP-Verbindung: Authentifizierung](./sap-verbindungen-anlegen#authentifizierung).
+**Tipp:** Sie können auch SAP-Zugangsdaten für die Basic Authentication von Services verwenden, siehe [SAP-Verbindung: Authentifizierung](./sap-verbindungen-anlegen#authentifizierung).
+Die parallele Verwendung von SAP-Zugangsdaten und Zugangsdaten von angelegten Benutzern wird nicht unterstützt.

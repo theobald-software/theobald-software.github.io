@@ -22,7 +22,7 @@ Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
 ### Anonymous Access
-**Anonymous Access** ist nur verfügbar, wenn Benutzer angelegt wurden, siehe [Benutzerverwaltung](./benutzer). <br>
+**Anonymous Access** ist nur verfügbar, wenn TLS aktiv ist, siehe [Transport Layer Security](./transport-layer-security). <br>
 Wenn **Anonymous Access** aktiv ist, gibt es keine Zugangsbeschränkungen für den Designer.
 Wenn diese Option deaktiviert ist, gibt haben nur angelegte Benutzer Zugriff auf den Designer.
 
@@ -47,6 +47,8 @@ Wenn ein Zertifikat gewählt wurde, ist die Option **TLS enabled** verfügbar.<b
 
 {: .box-note }
 **Hinweis:** Um sich über TLS auf den Designer zu verbinden, starten Sie den yunIO-Server neu und verbinden Sie sich über folgendes URL-Pattern mit dem Designer: `https://[host]:[HTTPS port]`. 
+Wenn der Designer aufgrund von Problemen mit dem Zertifikat nicht mehr erreichbar ist, löschen Sie die `tls.json` aus Ihrem Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO\config\servers\tls.json`.
+Starten Sie anschließend den Server neu.
 
 ### Allowed Origins (CORS)
 
