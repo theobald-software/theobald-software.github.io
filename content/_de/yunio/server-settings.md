@@ -46,7 +46,7 @@ Wenn ein Zertifikat gewählt wurde, ist die Option **TLS enabled** verfügbar.<b
 Über **TLS enabled** aktivieren oder deaktivieren Sie die Verwendung von Transportverschlüsselung für den Webserver.
 
 {: .box-note }
-**Hinweis:** Um sich über TLS auf den Designer zu verbinden, starten Sie den yunIO-Server neu und verbinden Sie sich über folgendes URL-Pattern mit dem Designer: `https://[host]:[HTTPS port]`. 
+**Hinweis:** Um sich über TLS auf den Designer zu verbinden, starten Sie den yunIO-Server neu und verbinden Sie sich über folgendes URL-Pattern mit dem Designer: `https://[host]:[port]`. 
 Wenn der Designer aufgrund von Problemen mit dem Zertifikat nicht mehr erreichbar ist, löschen Sie die `tls.json` aus Ihrem Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO\config\servers\tls.json`.
 Starten Sie anschließend den Server neu.
 
