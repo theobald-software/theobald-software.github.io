@@ -31,4 +31,30 @@ Wenn **Allowed to log in**  inaktiv ist, kann der Benutzer Services aufrufen, ab
 -->
 ### Zugriff auf Designer Einschränken
 
+Folgen Sie diesen Schritten, um den Designer-Zugriff auf angelegte Benutzer zu beschränken: 
+
+1. Erstellen Sie einen oder mehrere Benutzer, die Designer-Zugriff haben, siehe [Benutzer anlegen](#benutzer-anlegen).
+Die Checkbox **Allowed to log in** muss in den Benutzereinstellungen aktiviert sein.
+2. Navigieren Sie zu *Settings* und aktivieren Sie Transport Layer Security, siehe [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).
+3. Starten Sie den yunio-Server neu und verbinden Sie sich über eine sichere HTTPS-Verbindung mit dem Designer.
+4. Deaktivieren Sie *Anonymous Access*, siehe [Server Settings: Anonymous Access](./server-settings#anonymous-access) und starten Sie den yunIO-Server erneut.
+
+Wenn Sie sich auf den Designer verbinden, werden Sie aufgefordert Zugangsdaten einzugeben:<br>
+![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
+
+{: .box-note }
+**Hinweis:** Wenn Sie sich aussperren und sich nicht mehr einloggen können, löschen Sie die Datei `permission.json`aus Ihrem Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
+
 ### Benutzer für Basic Authentication verwenden
+
+Folgen Sie diesen Schritten, um Basic Authentication für yunIO-Services einzurichten: 
+
+1. Erstellen Sie einen oder mehrere Benutzer, siehe [Benutzer anlegen](#benutzer-anlegen).
+2. Navigieren Sie zu *Settings* und aktivieren Sie Transport Layer Security, siehe [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).
+3. Starten Sie den yunio-Server neu und verbinden Sie sich über eine sichere HTTPS-Verbindung mit dem Designer.
+4. Navigieren Sie zu *Services* und kopieren oder laden Sie eine Service-Definition herunter.<br>
+![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
+5. Rufen Sie den Service unter Verwendung von Basic Authentication auf. Sie können die Zugangsdaten aller angelegten Benutzer verwenden.
+
+{: .box-tip }
+**Tipp:** Sie können auch SAP-Zugangsdaten für ein Basic Authentication verwenden, siehe [SAP-Verbindung: Authentifizierung](./sap-verbindungen-anlegen#authentifizierung).

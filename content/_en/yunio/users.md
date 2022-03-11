@@ -42,7 +42,7 @@ When connecting to the designer, you are now prompted to enter user credentials:
 
 ### Basic Authentication with Defined Users
 
-Follow the steps below to set up basic authentication in yunIO:
+Follow the steps below to set up basic authentication for yunIO services:
 
 1. Create users, see [Creating Users](#creating-users).
 2. Navigate to *Settings* and activate TLS, see [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).
