@@ -18,8 +18,7 @@ The selected data is displayed in the *Fields* section.
 | **Merges**      | All segments contain the field Node ID. <br> Using the Node ID *Merges* automatically combines all 3 segments. | 
 | **Elements**      | The segment *Elements* contains information about the elements of the Hierarchy e.g., name, parent, child, etc.     | 
 | **Texts** | The segment *Texts* contains the description texts of the *Elements*. <br> The language of the descriptions depends on the language settings of the SAP connection.     | 
-| **Intervals** | The segment *Intervals* contains additional information if an element is an interval.      | 
-
+| **Intervals** | The segment *Intervals* contains additional information if an element is an interval. In ODP no TO and FROM columns are displayed, see [SAP Note 3090500](https://launchpad.support.sap.com/#/notes/3090500). | 
 
 {: .box-note }
 **Note:** Hierarchies can be passed as runtime parameters at runtime.

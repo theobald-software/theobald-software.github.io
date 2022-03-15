@@ -18,7 +18,7 @@ Die gewählten Segmente werden im Abschnitt *Fields* angezeigt.
 | **Merges**      | Alle Segmente haben eine Node ID als Feld. <br> *Merges* setzt alle 3 Segmente automatisch anhand der Node ID zusammen. |
 | **Elements**      | Das Segment *Elements* beinhaltet grundlegende Informationen über Elemente der Hierarchie z.B. Name, Parent, Child, etc.     |
 | **Texts** | Das Segment *Texts* beinhaltet Beschreibungstexte zu den Elementen. <br> Die Sprache der Texte ist anhängig von der Spracheinstellung der SAP-Verbindung.     |
-| **Intervals** | Das Segment *Intervals* beinhaltet zusätzliche Informationen, falls das Element ein Intervall ist.    |
+| **Intervals** | Das Segment *Intervals* beinhaltet zusätzliche Informationen, falls das Element ein Intervall ist. "TO" und "FROM"-Spalten werden bei ODP nicht angezeigt, siehe [SAP Note 3090500](https://launchpad.support.sap.com/#/notes/3090500). | 
 
 
 {: .box-note }
