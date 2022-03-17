@@ -52,6 +52,7 @@ The list below shows several most important files that are placed into the defau
 | powerbi directory| Directory containing files related to [Power BI Connector Destination](../destinations/Power-BI-Connector).|
 | result-cache directory | Directory with extraction cache files, only applicable for pull destinations. See also sections [Pull Destinations](../destinations#pull-and-push-destinations) and [General Settings > Misc. Tab > Cache Result Setting](../getting-started/general-settings#misc-tab).|
 | xu.exe | Command line tool used for executing extractions. See also section [Scheduling an Extraction](../execute-and-automate-extractions). |
+| xu-config.exe | Command line tool used for creating extractions. For more information, refer to the knowledge base article [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/explanation-of-using-config-command-line-tool). |
 | XtractDesigner.exe | [Xtract Universal Designer](../getting-started/designer-overview) application to create, test and monitor extractions.|
 | ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing Xtract Universal with all its components from your machine. |
