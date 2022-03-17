@@ -22,7 +22,7 @@ The user management settings are located in the *Users* section of the yunIO Des
 To edit an existing user, click the edit icon (![Edit](/img/content/yunio/edit.png)) of the user (2).<br>
 ![Users](/img/content/yunio/yunio-users.png){:class="img-responsive" }
 2. Fill in user credentials.
-If the checkbox **Allowed to log in** is checked, the user has access to the designer. If **Allowed to log in** is deactivated, the user can call yunIO services, but can not access the Designer.
+If the checkbox **Allowed to log in** is checked, the user has access to the designer and is allowed to call services.
 ![New-User](/img/content/yunio/yunio-new-user.png){:class="img-responsive" }
 3. Click **[Save]** to save the credentials.
 
@@ -33,8 +33,8 @@ Follow the steps below to restrict the designer access to defined users:
 1. Create users that are allowed access to the designer, see [Creating Users](#creating-users).
 Make sure the checkbox **Allowed to log in** is checked.
 2. Navigate to *Settings* and activate Transport Layer Security, see [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).
-3. Restart the yunIO server and connect to the designer using an HTTPS connection.
-4. Deactivate *Anonymous Access*, see [Server Settings: Anonymous Access](./server-settings#anonymous-access) and restart the yunIO server again.
+3. Restart the yunIO service and connect to the designer using an HTTPS connection.
+4. Deactivate *Anonymous Access*, see [Server Settings: Anonymous Access](./server-settings#anonymous-access) and restart the yunIO service again.
 
 When connecting to the designer, you are now prompted to enter user credentials:<br>
 ![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
@@ -49,7 +49,7 @@ Follow the steps below to set up basic authentication for yunIO services:
 
 1. Create users, see [Creating Users](#creating-users).
 2. Navigate to *Settings* and activate TLS, see [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).
-3. Restart the yunIO server and log into the Designer using an HTTPS connection.
+3. Restart the yunIO service and log into the Designer using an HTTPS connection.
 4. Navigate to *Services* and copy or download a service definition.<br>
 ![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
 5. Call the service using basic authentication. You can enter the credentials of any user.

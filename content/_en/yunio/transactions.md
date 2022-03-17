@@ -14,4 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 With the integration type *Transaction*, SAP transactions can be accessed, configured and parameterized for automation.
 Refer to our knowledge baser article [Working with Transactions](https://kb.theobald-software.com/yunio/working-with-transactions) for an introduction to the *Transaction* feature.
 
+{: .box-note }
+**Note:** The transaction feature only works with SAP dialog users.
+
 *Transaction* is currently in the *experimental* state and will soon be available and fully documented.<br>
