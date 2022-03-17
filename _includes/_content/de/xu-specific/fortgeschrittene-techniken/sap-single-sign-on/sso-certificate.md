@@ -1,4 +1,4 @@
-Dieser Abschnitt beschreibt die notwendigen Schritte, um Single Sign-On (SSO) mit Secure Network Communication (SNC) und Kerberos Verschlüsselung einzurichten.
+Dieser Abschnitt beschreibt die notwendigen Schritte, um Single Sign-On (SSO) mit Secure Network Communication (SNC) und Client-Zertifikaten einzurichten.
 
 {: .box-warning }
 **Warnung! Single Sign-On Verfügbarkeit** <br> 
@@ -19,8 +19,8 @@ Es gibt drei Sicherheitsgrade, die Sie mit SNC anwenden können:
 Für weitere Informationen zu SNC, siehe [SAP Hilfe: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/de-DE/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
 
 ### Aktivierung von HTTPS
-1. Aktivieren Sie das Zugriffskontrollprotokoll HTTPS (1) innerhalb des Tabs *Web Server* Einstellungen. 
-2. Verweisen Sie auf ein vorhandenes [X.509-Zertifikat](../../sicherheit/x.509-zertifikat-installieren) (2).<br>
+1. Aktivieren Sie das Zugriffskontrollprotokoll HTTPS (1) in den *Web Server* Einstellungen. 
+2. ... (2).<br>
 3. Klicken Sie auf **[OK]** zum Bestätigen. (3)<br>
 
 {: .box-note }
@@ -31,15 +31,13 @@ Für weitere Informationen zu SNC, siehe [SAP Hilfe: SNC](https://help.sap.com/d
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
-
 ### Konfiguration vom Windows AD Service-Account.
-Wenn SSO mit Kerberos SNC verwendet wird, muss der Xtract Universal Service unter einem entsprechenden Service Account ausgeführt werden, siehe [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account).
-
+Wenn SSO Certificate verwendet wird, muss der Xtract Universal Service unter einem entsprechenden Service Account ausgeführt werden, siehe [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account).
 
 {: .box-note }
 **Hinweis:** Ab Xtract Universal Version 5.0 werden SAP Passwörter anhand eines Schlüssels verschlüsselt, der von dem Windows Dienstkonto abgeleitet wird, unter dem der Xtract Universal Dienst läuft.
-Auf die Passwörter kann man nur von diesem Dienstkonto aus zugreifen. Achten Sie darauf, wenn Sie Backups aufspielen oder Dateien auf eine andere Maschine verschieben.
-Wenn Sie das Dienstkonto wechseln, müssen Sie Passwörter manuell neu eingeben.
+Auf die Passwörter kann man nur von diesem Dienstkonto aus zugreifen. Wenn Sie das Dienstkonto wechseln, müssen Sie Passwörter manuell neu eingeben. Achten Sie darauf, wenn Sie Backups aufspielen oder Dateien auf eine andere Maschine verschieben.
+
 
 ### Servereinstellungen
 
@@ -91,3 +89,38 @@ z.B. `C:\SNC\gx64krb5.dll` (3).
 **Hinweis:** Die SNC-Einstellungen des SAP-Logon-Pads für den Partnernamen unterscheiden sich von denen, die in Xtract-Produkten verwendet werden. 
 Das SAP Logon-Pad verwendet den UPN der SAP-Server-Accounts und Xtract-Produkt den Service Principal Name (SPN). Verwenden Sie die folgende Notation:
 *p:[SAP Service Account]@[domain]*. Bei SPN's wird im SNC-Partnernamen zwischen Groß- und Kleinschreibung unterschieden.
+
+
+---------------------
+
+SSO Certificate werden vom Client anstelle von credentials Zertifikate für die SAP Verbindung übergeben.
+Voraussetzungen:
+- SSO mit SAP funktioniert
+- AD Service Account
+
+Tipp: Extraktionen in Testumgebung anlegen ohn SSO und bei Wechsel in Produktivumgebung die Quelle ändern.
+
+1.	Designer-Zugriff auf User beschränken
+2.	Loggen Sie sich mit Ihrem Windows User („current user“) in die XU Instanz ein, die auf dem Server läuft. Beachten Sie den TSP, siehe []().
+
+
+XU-Einstellungen:
+1. Im Hauptmenü des Designers, navigieren Sie zu **[Server > Manage Sources]**. Das Fenster "Source Details" öffnet sich.<br>
+2. Klicken Sie auf **[Add]**, um ein neues SAP-Quellsystem anzulegen.<br>
+![Edit-SAP-source](/img/content/edit_sap_source.png){:class="img-responsive"}
+3. Öffnen Sie den Tab *General* und geben Sie die Verbindungsdetails zu Ihrem SAP-System ein.
+![SAP-Source-Details](/img/content/xu/sap_source-details.png){:class="img-responsive"}
+4. Öffnen Sie den Tab *Authentication* und aktivieren Sie die Option **SNC** (1).
+![sso-certificate-auth](/img/content/sso-certificate-auth.png){:class="img-responsive"}
+5. Geben Sie den vollständigen Pfad der SAP Cryptographic Library in das Feld *SNC library* ein, z.B. `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`
+6. Geben Sie die SPN des SAP-Service-Accounts in das Feld *Partner name* ein. Verwenden Sie die folgende Notation: *p:[SPN]@[Domain-FQDN-Uppercase]* (4). 
+7. Markieren Sie die Checkbox *Enroll certificate on behalf of caller (Certificate SSO)* (2).
+8. SSO Certificate Template name (technischer Name)
+9. thumbprint
+10. Klicken Sie auf **[Test Server Connection]**, um Ihre Verbindungseinstellungen zu überprüfen.
+11. Klicken Sie auf **[OK]** zum Bestätigen.
+
+*****
+
+#### Weiterführende Links
+- [SAP-Hilfe: Secure Login Client](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/ba21970855064e54a9246b6c6de67fb2.html) 
