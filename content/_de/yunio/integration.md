@@ -23,3 +23,4 @@ Die folgenden Artikel zeigen Ihnen, wie Sie einen yunIO-Service in einem Standar
 Die folgenden Artikel zeigen Ihnen, wie Sie einen yunIO-Service mit Microsoft Power Automate integrieren können:
 - [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)
 - [Sync Salesforce with SAP using Power Automate and yunIO](https://kb.theobald-software.com/yunio/salesforce-power-automate-scenario)
+- [How to use yunIO to populate Drop Down Controls in Power Apps](https://kb.theobald-software.com/yunio/populating-drop-down-controls-in-power-apps)
