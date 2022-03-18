@@ -80,8 +80,8 @@ SAP-Benutzername.
 Passwort des SAP-Benutzers.<br>
 
 **Request credentials from callers when running services**<br> 
-Wenn diese Checkbox aktiv ist, werden die eingegebenen SAP-Anmeldeinformationen aus *User* und *Password* nicht übernommen.
-Stattdessen müssen die SAP-Anmeldeinformationen über die Windows Basic Authentifizierung angegeben werden, sobald eine Extraktion ausgeführt wird. 
+Wenn diese Checkbox aktiv ist, werden SAP-Zugangsdaten verwendet, um den Aufruf von Services einzuschränken.
+Gültige SAP-Zugangsdaten können beim Aufruf von yunIO-Services via Basic Authentication übergeben werden.
 
 {: .box-note }
 **Hinweis:** Um *Request credentials from callers when running services* zu verwenden, muss [*Anonymous Access*](./server-settings#anonymous-access) aktiviert sein.

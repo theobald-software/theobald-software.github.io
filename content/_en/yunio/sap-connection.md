@@ -75,8 +75,8 @@ SAP username.
 Password of the SAP user.
 
 **Request credentials from callers when running services**<br>
-If this checkbox is active, the SAP credentials entered in **User** and **Password** are not applied.
-Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
+If this checkbox is active, SAP credentials are used to restrict service access. 
+Any valid SAP credentials can be passed via Basic Authentication to allow access to a yunIO service.
 
 {: .box-note }
 **Note:** To use *Request credentials from callers when running services* the [*Anonymous Access*](./server-settings#anonymous-access) option must be activated.
