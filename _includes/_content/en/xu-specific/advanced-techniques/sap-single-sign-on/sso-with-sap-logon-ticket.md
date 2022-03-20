@@ -17,6 +17,6 @@ You have trust set up between your AS ABAP instance (the SAP system Xtract produ
 For more detailed information on the process of calling extraction using SSO with SAP Logon Tickets, refer to the knowledge base article [SSO with Logon-Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 #### Related Links
-* [Kerberos and SAP NetWeaver AS for Java](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4c/8a4d292e2849a8b7cbd229be5c94a5/frameset.htm)
-* [Using Logon Tickets with AS ABAP](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/d0/dc33c460a243929b7ec120f55af101/frameset.htm)
-* [Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm)
+* [Kerberos and SAP NetWeaver AS for Java](https://help.sap.com/viewer/8d084639453b41579938aefc0bda7068/2021.001/en-US/4c8a4d292e2849a8b7cbd229be5c94a5.html)
+* [Using Logon Tickets with AS ABAP](https://help.sap.com/viewer/8d084639453b41579938aefc0bda7068/2021.001/en-US/4a446f50dc3d2baee10000000a421937.html)
+* [Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/viewer/8d084639453b41579938aefc0bda7068/2021.001/en-US/4a412251343f2ab1e10000000a42189c.html)

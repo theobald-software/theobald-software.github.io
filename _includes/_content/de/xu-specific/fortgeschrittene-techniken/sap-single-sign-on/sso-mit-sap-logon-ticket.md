@@ -16,6 +16,6 @@ Für detailiertere Informationen über den Abluaf, wenn eine Extraktion über SS
 
 
 #### Weiterführende Informationen (SAP Online-Help):
-* [Kerberos und SAP NetWeaver AS für Java](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/4c/8a4d292e2849a8b7cbd229be5c94a5/frameset.htm)
-* [Anmeldetickets mit AS ABAP verwenden](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/d0/dc33c460a243929b7ec120f55af101/frameset.htm)
-* [AS Java für das Ausstellen von Anmeldetickets konfigurieren](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/4a/412251343f2ab1e10000000a42189c/frameset.htm)
+* [Kerberos und SAP NetWeaver AS für Java](https://help.sap.com/viewer/8d084639453b41579938aefc0bda7068/2021.001/de-DE/4c8a4d292e2849a8b7cbd229be5c94a5.html?q=Kerberos%20und%20SAP%20NetWeaver%20AS%20f%C3%BCr%20Java)
+* [Anmeldetickets mit AS ABAP verwenden](https://help.sap.com/viewer/8d084639453b41579938aefc0bda7068/2021.001/de-DE/4a446f50dc3d2baee10000000a421937.html?q=Anmeldetickets%20mit%20AS%20ABAP%20verwenden)
+* [AS Java für das Ausstellen von Anmeldetickets konfigurieren](https://help.sap.com/viewer/8d084639453b41579938aefc0bda7068/2021.001/de-DE/4a412251343f2ab1e10000000a42189c.html)
