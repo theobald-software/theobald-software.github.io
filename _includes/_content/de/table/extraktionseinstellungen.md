@@ -84,7 +84,7 @@ Wenn *Adjust Currency Decimals* aktiv ist, werden Währungen ohne Nachkommastell
 
 *Adjust Currency Decimals* erfordert, dass das zugehörige Währungsfeld des Betrags-Feldes ebenfalls extrahiert wird.
 Verwenden Sie die **[Preview]**-Funktion, um das korrekte Währungsfeld zu finden.
-- Wenn das Währungsfeld teil der Tabelle ist, fügen Sie das Feld der Ausgabe hinzu.
+- Wenn das Währungsfeld Teil der Tabelle ist, fügen Sie das Feld der Ausgabe hinzu.
 - Wenn sich das Währungsfeld in einer anderen Tabelle befindet, fügen Sie die Tabellen zusammen.
 - Wenn die Währung nicht Teil einer Tabelle ist, können Sie *Adjust Currency Decimals* nicht verwenden.
 

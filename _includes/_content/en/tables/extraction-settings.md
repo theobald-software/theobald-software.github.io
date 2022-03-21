@@ -66,7 +66,7 @@ The default value is 180 seconds. Changed this value only after consulting with 
 
 #### Adjust Currency Decimals
 
-The default number of decimal places for a currency in the SAP database is generally 2 decimals.
+The default number of decimal places for a currency in the SAP database is 2 decimals.
 Currencies that do not have decimals are also stored in this format, e.g. JPY, VND, KRW, etc.
 
 Example:
