@@ -24,7 +24,8 @@ Example:
 When extracting currencies with no decimals, the amount stored in SAP is returned e.g., 100 JPY are extracted as 1.00.
 To correct the decimal placement of the extracted data, activate *Adjust Currency Decimals*.
 If *Adjust Currency Decimals* is active, currencies without decimals are multiplied by a factor that balances out the decimals.
-*Adjust Currency Decimals* also requires the extraction of the corresponding CURRENCY field.
+*Adjust Currency Decimals* also requires that the corresponding CURRENCY field is included in the extracted object.
+
 
 {: .box-note }
 **Note:** The multiplication factor used in *Adjust Currency Decimals* is determined by the SAP currency table TCURX. 
