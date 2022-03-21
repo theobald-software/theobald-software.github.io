@@ -65,9 +65,29 @@ Der Standardwert ist 180 Sekunden. Verändern Sie diesen Wert nur nach Absprache
 **Hinweis:** Diese Einstellung ist nur dann effektiv, wenn die Extraktion als Hintergrund-Job aufgeführt wird und wenn Sie [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) Version 2.11 oder höher verwenden.
 
 
-#### Adjust currency decimals
+#### Adjust Currency Decimals
 
-Aktivieren Sie diese Option, wenn Sie mit Währungen/Mengen ohne Nachkommastellen arbeiten (z.B. JPY, KRW, etc.). 
-Damit wird sichergestellt, dass alle vorhandenen und nicht vorhandenen Dezimalstellungen bei der Datenkonvertierung erhalten bleiben.
+Standardmäßig haben Währungen in der SAP-Datenbank 2 Nachkommastellen.
+Währungen ohne Nachkommastellen werden ebenfalls in diesem Format gespeichert, z.B. JPY, VND, KRW, etc.
 
-Verwenden Sie bei dieser Option immer ein Währungsfeld als Referenz.
+Beispiel:
+
+| Währung       | Tatsächlicher Betrag          | Betrag in der SAP-Datenbank |
+| ------------- |:-------------:| -----:|
+| JPY | 100	|1.00|
+| KRW | 10000	|100.00|
+
+
+Wenn Sie Währungen ohne Nachkommastellen extrahieren, wird der Wert in der SAP-Datenbank zurückgegeben, z.B. werden 100 JPY als 1.00 extrahiert.
+Aktivieren Sie *Adjust Currency Decimals*, um die Kommastellen zu korrigieren.
+Wenn *Adjust Currency Decimals* aktiv ist, werden Währungen ohne Nachkommastellen mit einem entsprechenden Faktor multipliziert, um die die Nachkommastellen auszugleichen.
+
+*Adjust Currency Decimals* erfordert, dass das zugehörige Währungsfeld des Betrags-Feldes ebenfalls extrahiert wird.
+Verwenden Sie die **[Preview]**-Funktion, um das korrekte Währungsfeld zu finden.
+- Wenn das Währungsfeld teil der Tabelle ist, fügen Sie das Feld der Ausgabe hinzu.
+- Wenn sich das Währungsfeld in einer anderen Tabelle befindet, fügen Sie die Tabellen zusammen.
+- Wenn die Währung nicht Teil einer Tabelle ist, können Sie *Adjust Currency Decimals* nicht verwenden.
+
+{: .box-note }
+**Hinweis:** Der Multiplikationsfaktor, der in *Adjust Currency Decimals*  verwendet wird, wird über die SAP Währungstabelle TCURX bestimmt.
+Um auf die Tabelle zuzugreifen, muss folgendes Berechtigungsobjekt in SAP verfügbar sein: *S_TABU_NAM	ACTVT=03; TABLE=TCURX*.
