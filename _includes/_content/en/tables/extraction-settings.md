@@ -64,9 +64,29 @@ The default value is 180 seconds. Changed this value only after consulting with 
 **Note:** This setting only takes effect if the extractions are running in background mode and when using [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) version 2.11 or higher.
 
 
-#### Adjust currency decimals
+#### Adjust Currency Decimals
 
-Use this option when working with currencies/quantities without decimal points e.g., JPY, KRW, etc.
-If this option is active all decimal places are maintained after data conversion.
+The default number of decimal places for a currency in the SAP database is generally 2 decimals.
+Currencies that do not have decimals are also stored in this format, e.g. JPY, VND, KRW, etc.
 
-Make sure a currency field is selected for reference.
+Example:
+
+| Currency        | Actual Amount          | Amount stored in SAP database |
+| ------------- |:-------------:| -----:|
+| JPY | 100	|1.00|
+| KRW | 10000	|100.00|
+
+When extracting currencies with no decimals, the amount stored in SAP is returned e.g., 100 JPY are extracted as 1.00.
+To correct the decimal placement of the extracted data, activate *Adjust Currency Decimals*.
+If *Adjust Currency Decimals* is active, currencies without decimals are multiplied by a factor that balances out the decimals.
+
+*Adjust Currency Decimals* also requires the extraction of the corresponding CURRENCY field that can be used as a reference for the multiplication factor.
+Use the **[Preview]** function to find the correct currency field/s. 
+- If the currency field is part of the table, add it to the output.
+- If the currency field is in another table, join the tables. 
+- If the reference is not part of a table, *Adjust Currency Decimals* cannot be used.
+
+
+{: .box-note }
+**Note:** The multiplication factor used in *Adjust Currency Decimals* is determined by the SAP currency table TCURX. 
+To access the table, the following SAP Authority objects must be set in SAP: *S_TABU_NAM	ACTVT=03; TABLE=TCURX*.
