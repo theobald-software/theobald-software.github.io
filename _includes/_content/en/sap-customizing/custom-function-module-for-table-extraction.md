@@ -1,7 +1,7 @@
 ### RFC_READ_TABLE Restrictions
 Especially with older SAP releases you may encounter a few restrictions when using the SAP standard function module (RFC_READ_TABLE) for table extraction:
 
-- The overall length of all columns to be extracted must not exceed 512 bytes.
+- The overall width of all columns to be extracted must not exceed 512 bytes.
 - Depending on the SAP version there may be other restrictions. 
   It is not possible to extract data from tables that contain one or more columns of the data type f (FLTP, floating point), DEC (decimal, e.g. for percentage) or x (RAW, LRAW).
 - Poor extraction performance with larger tables.
