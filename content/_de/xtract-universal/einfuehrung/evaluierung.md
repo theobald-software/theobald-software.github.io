@@ -21,7 +21,7 @@ Während der Evaluierungsphase erhalten Sie garantiert eine uneingeschränkte Un
 Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail an Theobald Software wenden: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
-- [Xtract Universal Einrichtung](/docs/sap-customizing/VoraussetzungUndBetriebSAPKonnektoren_v202110.pdf){:download="VoraussetzungUndBetriebSAPKonnektoren_v202110"}
+- [Xtract Universal Einrichtung](/docs/sap-customizing/Voraussetzungen_SAPKonnektoren_DE.pdf){:download="Voraussetzungen_SAPKonnektoren_DE"}
 
 
 {: .box-note }
@@ -32,4 +32,5 @@ Für die Table-Komponente gibt es optionale Anpassungen, mit denen Sie Limitatio
 #### Weiterführende Links
 - [Voraussetzungen](./systemvoraussetzungen)
 - [Lizenzierung](./lizenz)
+
 

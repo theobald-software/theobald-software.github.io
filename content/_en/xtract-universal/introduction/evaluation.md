@@ -21,7 +21,7 @@ You are guaranteed to get an unrestricted support by the Theobald Software suppo
 In case of any questions or doubts, feel free to contact Theobald Software by e-mail: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [International contact details](https://theobald-software.com/en/contact/)
-- [Setting Up Xtract Universal](/docs/sap-customizing/Requirements_SAPConnectors_v1.0.pdf){:download="Requirements_SAPConnectors"}
+- [Setting Up Xtract Universal](/docs/sap-customizing/Requirements_SAPConnectors_EN.pdf){:download="Requirements_SAPConnectors_EN"}
 
 {: .box-note }
 **Note:** To evaluate Xtract Universal's Report component, a custom function module must be installed in your SAP system, see [Custom function module for Report](../sap-customizing/install-report-custom-function-module). 
