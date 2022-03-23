@@ -58,7 +58,7 @@ Wenn Sie auf ein SAP-Quellsystem (Anwendungsserver oder Message-Server) mittels 
 Beispiel:<br>
 Wenn der Hostname "hamlet" und der Router-String ``/H/lear.theobald-software.com/H/`` lauten, muss das Feld der Host-Einstellung folgendermaßen befüllt werden: ``/H/lear.theobald-software.com/H/hamlet``.
 
-Mehr Details dazu finden Sie auch in der SAP Online-Hilfe: [SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm).
+Mehr Details dazu finden Sie auch in der SAP Online-Hilfe: [SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).
 
 
 ![Details](/img/content/xfa/xfa_connection-det-02.png){:class="img-responsive"}<br> 

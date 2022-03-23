@@ -36,7 +36,7 @@ If you access the SAP source system (Application server or Message server) via a
 Example:<br>
 If the application server is "hamlet" and the router string is ``/H/lear.theobald-software.com/H/``, set the host property to ``/H/lear.theobald-software.com/H/hamlet``.
 
-For more information, see [SAP Documentation: SAP-Router](https://help.sap.com/saphelp_snc700_ehp01/helpdata/en/48/6e2ef629540e27e10000000a421937/frameset.htm).
+For more information, see [SAP Documentation: SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).
 
 #### Client and Language
 - **Client**: a three-digit number of the SAP client between 000 and 999, e.g., 800.
