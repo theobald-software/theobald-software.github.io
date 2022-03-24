@@ -29,3 +29,12 @@ Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicin
 
 **Automatic Slicing Dimension** ermöglicht die Extraktion einer großen Datenmenge (Millionen von Sätzen) aus dem BW.
 
+### Experimental
+
+![XU_BWCube_Settings](/img/content/bwcube-bics-fast-mode.png){:class="img-responsive"}
+
+**BICS Fast Mode**<br>
+Diese Einstellung ist nur für BICS Extraktionen verfügbar.
+Wenn diese Checkbox aktiv ist, wird das interne Verhalten der BICS-Komponente gewechselt.
+Anstatt RFC-Funktionsdefinitionen bei jedem Aufruf aus SAP zu laden, verwendet der BICS Fast Mode lokal abgelegte BAPI Definitionen.
+Dieses Verhalten kann die Performance der BICS-Komponente erhöhen.

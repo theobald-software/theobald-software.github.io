@@ -12,7 +12,7 @@ The BW Queries can be based on all possible InfoProviders.
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
 2. In the field Name (1) enter a name of a Query or a BW Cube / InfoProvider. Use wildcards (*), if needed.
 3. Define the **Extractor** and **Type** of the object (2).
-- **Extractor** defines, if data is extracted using the OLAP BAPI Interface (MADX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection#rfc-options). BICS is still in beta phase.
+- **Extractor** defines, if data is extracted using the OLAP BAPI Interface (MDX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection#rfc-options). BICS is still in beta phase.
 - **Type** defines if a BEx Query or an InfoProvider is looked up. 
 4. Click **[Search]** (magnifying glass symbol) (3) and select the object of your choice from the displayed list (4).
 5. Click **[OK]** (5) to confirm.

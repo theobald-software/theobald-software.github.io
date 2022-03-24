@@ -30,3 +30,12 @@ Automatic slicing means that a loop is executed for each single value of the cho
 
 **Automatic Slicing Dimension** allows the extraction of a large amount of data (millions of records) from BW.
 
+### Experimental
+
+![XU_BWCube_Settings](/img/content/bwcube-bics-fast-mode.png){:class="img-responsive"}
+
+**BICS Fast Mode**<br>
+This setting is only visible for BICS extractions.
+Enabling the checkbox switches the internal behaviour of the BICS component.
+Instead of loading RFC function definitions from SAP for each function call, the BICS fast mode uses locally stored BAPI definitions.
+This which may increase the performance of the BICS component.
