@@ -20,9 +20,9 @@ Lassen Sie ein TLS Zertifikat von Ihrem IT-Netzwerk-Team unter Beachtung folgend
 
 ### X.509-Zertifikat für SSO mit Client-Zertifikaten erstellen
 
-Lassen Sie ein Computer-Zertifikat von Ihrem IT-Netzwerk-Team unter Beachtung folgender Punkte erstellen:
+Lassen Sie ein Enrolment Agent Zertifikat von Ihrem IT-Netzwerk-Team unter Beachtung folgender Punkte erstellen:
 
-- 
+- Das Zertifikat authorisiert die Beantragung von Client-Zertifikaten über "Enroll on Behalf of..."
 - Das Zertifikat muss im [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) auf dem Server hinterlegt werden, auf dem der Windows-Service läuft.<br>
 
 

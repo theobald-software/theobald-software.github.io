@@ -21,7 +21,7 @@ Für mehr Informationen zu SNC, siehe [SAP Dokumentation: Secure Network Communi
 
 ### Voraussetzungen
 
-Damit der Server, auf dem Xtract Universal läuft, auf die Zertifikate der Windows-Benutzer zugreifen kann, muss er im Namen der Windows-Benutzer Zertifikate beantragen können.
+Damit der Server, auf dem Xtract Universal läuft, auf die Zertifikate der Windows-Benutzer zugreifen kann, muss er im Namen der Windows-Benutzer Zertifikate anmelden können.
 Dafür wird über den Windows AD Service Account ein Enrollment Agent Zertifikat ausgestellt, das den Server authorisiert, Zertifikate....
 
 - Single Sign-On mit Client-Zertifikaten muss SAP-seitig eingerichtet sein, siehe [SAP-Dokumentation: Single Sign-On mit Client-Zertifikaten](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/202110.001/de-DE/4e1262e31e3d2287e10000000a15822b.html).
