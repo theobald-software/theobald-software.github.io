@@ -70,7 +70,14 @@ Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werde
 Das hier beschriebene Verfahren funktioniert ausschließlich mit der SAP Cryptographic Library. 
 
 
-Die Authentifizierung durch die SAP Cryptographic Library erfolgt über ein Enrollment Agent Zertifikat, das im Namen der angemeldeten Windows-Benutzer Client-Zertifikate zur Authentisierung gegen SAP anmelden kann. 
+Die Authentifizierung gegen SAP erfolgt über X.509 Client-Zertifikate.
+Damit Xtract Universal Zugriff auf die Client-Zertifikate der Windows AD Benutzer hat, wird in den Active Directory Certificate Services ein Enrollment Agent definiert, der Zertifikate im Namen der Benutzer anmelden kann.
+
+Windows AD Benutzer authentifizieren sich gegen Xtract Universal via Kerberos.
+Der Xtract Universal Server prüft, ob für den Benutzer ein Zertifikat im Certificate Store des ausführenden Service Accounts verfügbar ist.
+Falls kein Zertifikat verfügbar ist, wird über den Enrollment Agent ein neues Zertifikat im Namen des Benutzers angemeldet.
+Der Xtract Universal Server konfiguriert den SAP Secure Login Client, um die Zertifikate für die Authenthifizierung gegen SAP zu verwenden und öffnet via SNC die Verbindung.
+
 
 *Weitere Informationen:*
 - [SAP-Dokumentation: Single Sign-On mit Client-Zertifikaten](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/202110.001/de-DE/4e1262e31e3d2287e10000000a15822b.html).
