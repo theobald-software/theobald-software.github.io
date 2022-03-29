@@ -22,7 +22,6 @@ Der Windows AD Zertifikat Enrollment Agent erlaubt im Namen anderer Zertifikate 
 
 Voraussetzungen für das Nutzen von SNC mit Client-Zertifikaten:
 
-1. Der SAP ABAP Applikationsserver läuft unter einem Windows Betriebssystem.
 2. Der BI Client (der die Extraktion in  Xtract Universal aufruft) läuft unter Windows. 
 3. Als SNC-Lösung wird die SAP Cryptographic Library (SAPCRYPTOLIB) verwendet.
 
@@ -32,6 +31,9 @@ Weitere Informationen finden Sie in den folgenden Quellen:
 
 
 ### SSO und SNC mit Kerberos Wrapper Library
+
+{: .box-warning }
+**Warnung! Die Kerberos Wrapper Library (gx64krb5.dll) wir offiziel nicht mehr von SAP unterstützt.**
 
 {: .box-note }
 **Hinweis:** Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werden - z.B. SAPs Common Crypto Library **oder** gsskrb5, aber nicht beides gleichzeitig.
