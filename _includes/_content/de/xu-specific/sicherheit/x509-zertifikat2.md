@@ -16,7 +16,7 @@ Lassen Sie ein TLS Zertifikat von Ihrem IT-Netzwerk-Team unter Beachtung folgend
 - Das Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten. 
 
 {: .box-tip }
-**Tipp:** Um den Common-Name (CN) des Zertifikats anzeigen zu lassen, doppel-klicken Sie auf das Zertifikat im Cetrificate Manager und navigieren Sie zum Tab *Details*.
+**Tipp:** Um den Common-Name (CN) des Zertifikats anzeigen zu lassen, doppelklicken Sie auf das Zertifikat im Cetrificate Manager und navigieren Sie zum Tab *Details*.
 
 ### X.509-Zertifikat für SSO mit Client-Zertifikaten erstellen
 
