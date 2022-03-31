@@ -60,29 +60,22 @@ Sie funktioniert nur mit SAP-Applikationsservern unter Windows und Clients unter
 ### SSO in Xtract Universal mit SAPs Cryptographic Library
 
 Für die Nutzung dieses Verfahrens *müssen* folgende Voraussetzungen zwingend erfüllt sein:
-1. Der SAP ABAP Applikationsserver läuft unter einem Windows Betriebssystem. 
-2. Der BI Client (der die Extraktion in  Xtract Universal aufruft) läuft unter Windows.
-3. Als SNC-Lösung wird die SAP Cryptographic Library verwendet.
+1. Der BI Client (der die Extraktion in  Xtract Universal aufruft) läuft unter Windows.
+2. Als SNC-Lösung wird der SAP Secure Login Client verwendet.
 
 *Hintergrundinformationen:*
 
-Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werden - also z.B. SAPs Common Cryptographic Library **oder** gsskrb5, aber nicht beides gleichzeitig.
-Das hier beschriebene Verfahren funktioniert ausschließlich mit der SAP Cryptographic Library. 
-
-
 Die Authentifizierung gegen SAP erfolgt über X.509 Client-Zertifikate.
 Damit Xtract Universal Zugriff auf die Client-Zertifikate der Windows AD Benutzer hat, wird in den Active Directory Certificate Services ein Enrollment Agent definiert, der Zertifikate im Namen der Benutzer anmelden kann.
-
-Windows AD Benutzer authentifizieren sich gegen Xtract Universal via Kerberos.
-Der Xtract Universal Server prüft, ob für den Benutzer ein Zertifikat im Certificate Store des ausführenden Service Accounts verfügbar ist.
+1. Windows AD Benutzer authentifizieren sich gegen Xtract Universal via Kerberos.
+2. Der Xtract Universal Server prüft, ob für den Benutzer ein Zertifikat im Certificate Store des ausführenden Service Accounts verfügbar ist.
 Falls kein Zertifikat verfügbar ist, wird über den Enrollment Agent ein neues Zertifikat im Namen des Benutzers angemeldet.
-Der Xtract Universal Server konfiguriert den SAP Secure Login Client, um die Zertifikate für die Authenthifizierung gegen SAP zu verwenden und öffnet via SNC die Verbindung.
+3. Der Xtract Universal Server konfiguriert den SAP Secure Login Client, um die Zertifikate für die Authenthifizierung gegen SAP zu verwenden und öffnet via SNC die Verbindung.
 
 
 *Weitere Informationen:*
-- [SAP-Dokumentation: Single Sign-On mit Client-Zertifikaten](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/202110.001/de-DE/4e1262e31e3d2287e10000000a15822b.html).
-- [SAP-Dokumentation: Verwendung der SAP Cryptographic Library für SNC](https://help.sap.com/viewer/129dc8e26c531014a028840c4c35d3aa/7.0.39/de-DE/4145453c3ff4110ee10000000a11405a.html).<br>
-- [SAP-Dokumentation: SAP Cryptographic Library](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/f0549a4d52124a38a575295b15923f91.html)
+- [SAP-Dokumentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html)
+- [SAP-Dokumentation: Logging on with Secure Login Client Using SNC](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/68a6caca798e4adbba5608fb69ea6398.html)
 
 ### SSO in Xtract Universal via SAP Logon Ticket
 

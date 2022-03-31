@@ -18,16 +18,16 @@ Der SAP ABAP Applikationsserver unterstützt die Verwendung von Client-Zertifika
 Das AS-ABAP-System muss für die Verwendung von SNC konfiguriert sein, damit die Authentifizierung anhand von Client-Zertifikaten für SSO möglich ist.
 
 Damit der Xtract Universal Server Client-Zertifikate für die Authentifizierung gegen SAP verwenden kann, muss der Server selbst Zertifikate für Windows AD Benutzer anfordern können.
-Der Windows AD Zertifikat Enrollment Agent erlaubt im Namen anderer Zertifikate anfordern.
+Der Windows AD Zertifikat Enrollment Agent erlaubt es, im Namen anderer Zertifikate anfordern.
 
 Voraussetzungen für das Nutzen von SNC mit Client-Zertifikaten:
 
-2. Der BI Client (der die Extraktion in  Xtract Universal aufruft) läuft unter Windows. 
-3. Als SNC-Lösung wird die SAP Cryptographic Library (SAPCRYPTOLIB) verwendet.
+1. Der BI Client (der die Extraktion in  Xtract Universal aufruft) läuft unter Windows. 
+2. Als SNC-Lösung wird die SAP Cryptographic Library (SAPCRYPTOLIB) verwendet.
 
 Weitere Informationen finden Sie in den folgenden Quellen:
-- [SAP Help - Single Sign-On mit Client-Zertifikaten](https://help.sap.com/products/SAP_NETWEAVER_750/e815bb97839a4d83be6c4fca48ee5777/4e1262e31e3d2287e10000000a15822b.html?version=7.5.17) 
-- [SAP Help - SNC für die Verwendung der SAP Cryptographic Library auf dem SAP NetWeaver Application Server für ABAP konfigurieren](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.40.16/de-DE/7c3f443c8c06702ee10000000a11405a.html)
+- [SAP-Dokumentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html)
+- [SAP Dokumentation: Logging on with Secure Login Client Using SNC](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/68a6caca798e4adbba5608fb69ea6398.html)
 
 
 ### SSO und SNC mit Kerberos Wrapper Library

@@ -42,17 +42,16 @@ Damit können nur Benutzer, die Designer-Zugriff haben, Extraktionen aufzurufen.
 
 Erstellen Sie für den SSO mit Client-Zertifikaten eine neue SAP-Quelle:
 
-1. Navigieren Sie im Hauptmenü des Designers zu **[Server > Manage Sources]**. Das Fenster "Source Details" öffnet sich.<br>
+1. Navigieren Sie im Hauptmenü des Designers zu **[Server > Manage Sources]**. Das Fenster "Manage Sources" öffnet sich.<br>
 2. Klicken Sie auf **[Add]**, um ein neues SAP-Quellsystem anzulegen.<br>
-![Edit-SAP-source](/img/content/edit_sap_source.png){:class="img-responsive"}
 3. Öffnen Sie den Tab *General* und geben Sie die Verbindungsdetails Ihres SAP-Systems ein.
 ![SAP-Source-Details](/img/content/xu/sap_source-details.png){:class="img-responsive"}
-4. Öffnen Sie den Tab *Authentication* und aktivieren Sie die Option **SNC** (1).
+4. Öffnen Sie den Tab *Authentication* und aktivieren Sie die Option **SNC**.
 ![sso-certificate-auth](/img/content/sso-certificate-auth.png){:class="img-responsive"}
 5. Geben Sie den vollständigen Pfad einer SAP-Cryptographic-Library in das Feld *SNC library* ein, z.B. `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
 Die SAP Common Crypto Library wird i.d.R. bei der Installation des SAP Secure Login Clients mitinstalliert.
-6. Geben Sie den SPN des SAP-Service-Accounts in das Feld *Partner name* ein (2). Verwenden Sie die folgende Notation: *p:[SPN]@[Domain-FQDN-Uppercase]*. 
-7. Aktivieren Sie die Checkbox **Enroll certificate on behalf of caller (Certificate SSO)** (3).
+6. Geben Sie den SPN des SAP-Service-Accounts in das Feld *Partner name* ein. Verwenden Sie die folgende Notation: *p:[SPN]@[Domain-FQDN-Uppercase]*. 
+7. Aktivieren Sie die Checkbox **Enroll certificate on behalf of caller (Certificate SSO)**.
 8. Geben Sie den technischen Namen und den Thumbprint des Zertifikats an (4). Wenn Sie den Namen oder den Thumbprint nicht kennen, wenden Sie sich an das IT-Netzwerkteam, welches das Zertifikat erstellt hat.
 9. Klicken Sie auf **[Test Server Connection]**, um Ihre Verbindungseinstellungen zu überprüfen.
 10. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.

@@ -9,4 +9,4 @@ permalink: /:collection/:path
 weight: 4
 lang: de_DE
 ---
-{% include _content/de/xu-specific/sicherheit/x509-zertifikat.md %}
+{% include _content/de/xu-specific/sicherheit/x509-zertifikat2.md %}

@@ -10,5 +10,5 @@ weight: 1
 lang: de_DE
 ---
 
-{% include _content/de/xu-specific/fortgeschrittene-techniken/sap-single-sign-on/sso-certificate.md %}
 
+{% include _content/de/xu-specific/fortgeschrittene-techniken/sap-single-sign-on/sso-certificate.md %}
