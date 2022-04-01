@@ -39,9 +39,6 @@ Xtract Universal offers a set of nine extraction types to cover a range of deman
 - [**Query**](./sap-queries) extracts ERP queries. **Note: not BEx queries supplied by BW Cube**.
 - [**Report**](./abap-reports) extracts ABAP Reports.
 - [**Table**](./table) extracts data from SAP tables and views; allows joining several tables on the SAP side.
-- [**Table Join**](./table-join) -  allows to join several SAP tables. The Join-process takes place entirely within the SAP system without downloading single tables.<br>
-**Note: obsolete component! Use Table component instead.**
-
 
 Common scenarios when using the components depending on the type of the SAP source system:
 

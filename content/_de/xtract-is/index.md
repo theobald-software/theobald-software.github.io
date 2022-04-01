@@ -49,8 +49,6 @@ Die folgende Übersicht stellt die Typen der Data-Flow-Komponenten dar.
 - [**Query**](./query) extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube.** 
 - [**Report**](./report) extrahiert ABAP Reports.
 - [**Table**](./xtract-is-table) extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
-- [**Table Join**](./table-join) ermöglicht das Joinen von mehreren SAP-Tabellen. Der Join-Prozess findet vollständig innerhalb des SAP-Systems statt, ohne dass einzelne Tabellen heruntergeladen werden müssen.
-**Hinweis: veraltete Komponente! Verwenden Sie die Table-Komponente**
 
 Die Online Help zu Xtract IS besteht aus den folgenden Abschnitten:
 

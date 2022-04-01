@@ -36,8 +36,6 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 - [**Query**](./sap-queries) extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
 - [**Report**](./report-abap-reports-ansteuern) extrahiert ABAP Reports.
 - [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
-- [**Table Join**](./table-join) -  ermöglicht das Joinen von mehreren SAP-Tabellen. Der Join-Prozess findet vollständig innerhalb des SAP-Systems statt, ohne dass einzelne Tabellen heruntergeladen werden müssen.<br>
-**Hinweis: veraltete Komponente! Verwenden Sie die Table-Komponente**
 
 
 | Extraktionstyp   | ERP | BW |
