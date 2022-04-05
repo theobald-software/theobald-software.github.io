@@ -2,6 +2,8 @@ Dieser Abschnitt beschreibt die notwendigen Schritte, um Single Sign-On (SSO) mi
 
 ### Was ist SNC?
 
+_Das ist recht theoretisch. Ich würde das darauf verkürzen, dass SNC Authentisierung und Transportverschlüsselung zwischen SAP Systemen untereinander und SAP und Third-Party-Systemen (z. B. XU) ermöglicht. Hier der Link zur aktuellen Version im passenden Kontext: https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/LATEST/de-DE/e656f466e99a11d1a5b00000e835363f.html_
+
 Secure Network Connection (SNC) sichert die Datenübertragung zu Ihrem SAP-System.
 Dafür bietet SNC kryptografische Algorithmen, die Sie auf Ihre Daten anwenden können, um den Schutz Ihrer Daten auf Anwendungsebene zu erhöhen und eine End-to-End Security zu gewährleisten. <br>
 Jede Kommunikation, die zwischen SNC-geschützten Komponenten stattfindet ist dadurch gesichert, z-B die Kommunikation zwischen einer SAP-Anwendung und Theobald Produkten.
@@ -15,21 +17,36 @@ Für mehr Informationen zu SNC, siehe [SAP Dokumentation: Secure Network Communi
 
 ### Voraussetzungen
 
+_Die wichtigste Voraussetzung ist die konkrete Ausprägung der Architektur für SSO. Es muss SAP SSO ohne Secure Login Server mit X.509 Zertifikaten, Microsoft Certificate Store und Active Directory Certificate Templates für SAPGUI/RFC implementiert sein. 
+https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/LATEST/en-US/7c45fe620ab9469083f7ab50a9008c37.html
+https://social.technet.microsoft.com/wiki/contents/articles/53249.active-directory-certificate-services-enterprise-ca-architecture.aspx#Certificate_Template
+
+Wenn diese Voraussetzung erfüllt ist, kann ein Enrollment Agent für XU im AD eingerichtet werden.
+https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents.
+
+Secure Login Client + Service Account als konkrete Voraussetzungen auf dem XU Server sind korrekt.
+Die Voraussetzung eines Service Accounts ergibt sich aus der Notwendigkeit, Access Control für AD Benutzer einzurichten (Abschnitt Zugriffsbeschränkung).
+Die Voraussetzung Secure Login Client ergibt sich daraus, dass man eine SNC Bibliothek angeben muss (Abschnitt SAP Quelle). Die einzig korrekte Bibliothek in diesem Szenario ist die, die mit dem Secure Login Client mitkommt und den Secure Login Client beim Öffnen der Verbindung schließlich auch benutzt._
+
 - Der SAP Secure Login Client muss installiert sein, siehe [SAP-Dokumentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).
 - Der Sign-On mit Client-Zertifikaten muss über den SAP Secure Login Client SAP-seitig eingerichtet sein.
 - Der XU-Service muss unter einem Windows AD Service Account ausgeführt werden, siehe [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account).
 - Der Service Account muss Xtract Universal ein Enrollment Agent Zertifikat zur Verfügung stellen, das im Namen von Windows-Benutzern Zertifikate anmelden kann, siehe [X.509 Zertifikat installieren](../../sicherheit/x.509-zertifikat-installieren).
 
 ### Zugriffsbeschränkung
+_Das ist eigentlich schon hier beschrieben, oder?
+https://help.theobald-software.com/en/xtract-universal/security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication
 
-Richten Sie eine Zugriffssteuerung für den Designer und den Server ein:<br>
+Punkt 5 ist nicht korrekt. Das Enrollment Agent Zertifikat wird nur in der SAP Quelle angegeben per Thumbprint._
+
+Richten Sie die Zugriffsbeschränkung für den Designer und den Server ein:<br>
 
 1. Öffnen Sie die [Server Einstellungen](../../server/server_einstellungen).
 2. Aktivieren Sie die Option **Restrict Designer Access to the following users/groups**, um den Zugriff auf den Designer zu beschränken.<br>
 ![ConfigurationServerSettings_](/img/content/server-settings-sso-certificate-users.png){:class="img-responsive"}
 3. Klicken Sie auf **[Add]**, um Windows AD Benutzer auszuwählen, die auf den Designer zugreifen dürfen.<br>
 4. Wechseln Sie in den *Web Server* Tab und aktivieren Sie das Zugriffskontrollprotokoll *HTTPS - Restricted to AD user with Designer Access*. 
-Damit können nur Benutzer, die Designer-Zugriff haben, Extraktionen aufzurufen.
+Damit können nur Benutzer, die Designer-Zugriff haben, Extraktionen aufrufen.
 ![WebServerSettings_https](/img/content/server-settings-sso-certificate.png){:class="img-responsive"}
 5. Verweisen Sie auf das Enrollment Agent Zertifikat, um Zugriff auf die Client-Zertifikate der Benutzer zu erhalten, siehe [X.509 Zertifikat installieren](../../sicherheit/x.509-zertifikat-installieren)..
 6. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen. <br>
@@ -48,21 +65,17 @@ Erstellen Sie für den SSO mit Client-Zertifikaten eine neue SAP-Quelle:
 ![SAP-Source-Details](/img/content/xu/sap_source-details.png){:class="img-responsive"}
 4. Öffnen Sie den Tab *Authentication* und aktivieren Sie die Option **SNC**.
 ![sso-certificate-auth](/img/content/sso-certificate-auth.png){:class="img-responsive"}
-5. Geben Sie den vollständigen Pfad einer SAP-Cryptographic-Library in das Feld *SNC library* ein, z.B. `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
-Die SAP Common Crypto Library wird i.d.R. bei der Installation des SAP Secure Login Clients mitinstalliert.
-6. Geben Sie den SPN des SAP-Service-Accounts in das Feld *Partner name* ein. Verwenden Sie die folgende Notation: *p:[SPN]@[Domain-FQDN-Uppercase]*. 
-7. Aktivieren Sie die Checkbox **Enroll certificate on behalf of caller (Certificate SSO)**.
-8. Geben Sie den technischen Namen und den Thumbprint des Zertifikats an (4). Wenn Sie den Namen oder den Thumbprint nicht kennen, wenden Sie sich an das IT-Netzwerkteam, welches das Zertifikat erstellt hat.
-9. Klicken Sie auf **[Test Server Connection]**, um Ihre Verbindungseinstellungen zu überprüfen.
+5. Geben Sie den vollständigen Pfad der 64-bit-Version der SAP-Cryptographic-Library in das Feld *SNC library* ein, z.B. `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
+Die SAP Crypto Library wird bei der Installation des SAP Secure Login Clients mitinstalliert.
+6. Geben Sie den SNC Partnernamen des SAP Systems in das Feld *Partner name* ein. Dies ist der selbe Partnername, der auch bei der Einrichtung von SAPGUI benötigt wird.
+7. Aktivieren Sie die Option **Enroll certificate on behalf of caller (Certificate SSO)**.
+8. Geben Sie den technischen Namen des Active Directory Certificate Templates an, das für die Authentisierung von SAP Benutzern verwendet wird.
+9. Geben Sie den Thumbprint des Zertifikats des Enrollment Agents an (4). Wenn Sie den Namen oder den Thumbprint nicht kennen, wenden Sie sich an die IT-Abteilung, welche die Active Directory Certificate Services betreut.
+9. Klicken Sie auf **[Test Client Connection]**, um Ihre Verbindungseinstellungen zu überprüfen.
 10. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
 
-{: .box-note}
-**Hinweis:** Die SNC-Einstellungen des SAP-Logon-Pads für den Partnernamen unterscheiden sich von denen, die in Xtract-Produkten verwendet werden. 
-Das SAP Logon-Pad verwendet den UPN der SAP-Server-Accounts und Xtract-Produkt den Service Principal Name (SPN). Verwenden Sie die folgende Notation:
-*p:[SAP Service Account]@[domain]*. Bei SPN's wird im SNC-Partnernamen zwischen Groß- und Kleinschreibung unterschieden.
-
 {: .box-tip }
-**Tipp:** Legen Sie neue Extraktionen in der Testumgebung mit einer einfachen SAP-Verbindung an (z.B. Basic Authentication). 
+**Tipp:** Legen Sie neue Extraktionen in der Testumgebung mit einer SAP-Verbindung mit Plain Authentication an.
 Wechseln Sie beim Übergang zur Produktivumgebung die SAP-Quelle.
 
 *****
