@@ -9,7 +9,7 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 **Imports** repräsentiert die Eingabewerte, die vom Client an SAP gesendet werden. 
 Im Tab **Imports** können Sie Eingabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden.
 
-![BAPI import parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
+![BAPI import parameters](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"}
 
 Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Name** und **Description** Suchbegriffe ein.<br>
 
@@ -45,7 +45,7 @@ Im Tab **Exports** können Sie Ausgabeparameter definieren, die entweder als Ska
 #### Der Ausgabe Elemente hinzufügen
 Aktivieren Sie die Checkbox in der Ausgabespalte, um ein Element der Ausgabe hinzuzufügen.
 
-![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
+![BAPI export parameters](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}
 
 Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Name** und **Description** Suchbegriffe ein.<br>
 
@@ -66,7 +66,7 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 {: .box-note }
 **Hinweis:** Nur **5** Tabellen stehen für einen parallelen Export zur Verfügung.
 
-![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"}
+![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 
 #### Auf Metadaten der Tabelle zugreifen (1)
 

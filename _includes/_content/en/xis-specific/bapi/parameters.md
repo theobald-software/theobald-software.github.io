@@ -8,7 +8,7 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 Import parameters represent the input values sent from the client to SAP. <br>
 In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
 
-![BAPI import parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
+![BAPI import parameters](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
@@ -42,7 +42,7 @@ In the tab **Exports** you can define export parameters that can be presented as
 #### Add Items to Output
 Mark the checkbox in the output column to add an item to the output.<br>
 
-![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
+![BAPI export parameters](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
@@ -63,7 +63,7 @@ To use the filtering function, enter text in the headers of the columns **Name**
 {: .box-note }
 **Note:** Only **5** tables are available for parallel exporting.
 
-![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"}
+![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 
 #### Access Metadata of Tables (1)
 Click the **[glasses icon]** in the **Type** column to display the metadata of the selected table including the name and the data type of all fields. <br> 

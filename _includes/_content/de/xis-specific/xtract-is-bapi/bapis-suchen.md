@@ -19,14 +19,14 @@ Ein BAPI kann bis zu vier Paramtertypen haben: [Parametertypen](./parameter): Im
 
 1. Geben Sie in **Imports** Eingabeparameter an, die an SAP gesendet werden, siehe [Import-Parameter](./parameter#import-parameter). <br>
 Sie können Skalarwerte (1) oder Strukturen (2) übergeben. Sie können außerdem dynamische Laufzeitparameter verwenden, siehe [Parametrisierung](./parametrisierung).<br>
-![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
+![BAPI import parameters](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"}
 2. Definieren Sie die Ausgabe von SAP-Werten in **Exports**, siehe [Export-Parameter](./parameter#export-parameter).<br>
 Aktivieren Sie die Checkbox neben den aufgelisteten Elementen, um sie der Ausgabe hinzuzufügen.<br>
-![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
+![BAPI export parameters](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}
 3. Optional: Falls verfügbar können Sie Ein- und Ausgabeparameter in **Changings** hinzufügen, siehe [Changings Parametrisierung](./parameter#changings-parameter).
 4. Fügen Sie in **Tables** Tabellen zur Ein-/Ausgabe hinzu, siehe [Tabellen Parametrisierung](./parameter#tables-parameter).<br>
 Prüfen Sie die Namen und Datentypen der Tabellenfelder, indem Sie auf das **[Brillensymbol]** unter **Type** klicken.
 Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Ausgabe hinzuzufügen.
 Bearbeiten Sie die Tabelle über das **[Stiftsymbol]** unter **Values** (3).
-![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"}
+![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 5. Bestätigen Sie Ihre Eingabe mit **[OK]**.
