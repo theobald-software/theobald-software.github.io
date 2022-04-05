@@ -32,10 +32,18 @@ Automatic slicing means that a loop is executed for each single value of the cho
 
 ### Experimental
 
+The following settings are only available for BICS extractions. They appear in the extraction settings window after retrieving the metadata of a BICS extraction.
+
 ![XU_BWCube_Settings](/img/content/bwcube-bics-fast-mode.png){:class="img-responsive"}
 
 **BICS Fast Mode**<br>
-This setting is only visible for BICS extractions.
 Enabling the checkbox switches the internal behaviour of the BICS component.
 Instead of loading RFC function definitions from SAP for each function call, the BICS fast mode uses locally stored BAPI definitions.
-This which may increase the performance of the BICS component.
+This may increase the performance of the BICS component.
+
+**Create BICS Compatibilita Report**<br>
+As the BICS mode is still in beta phase, you may encounter errors when using this component. 
+Click **[Create BICS Compatibilita Report]** to run a number of tests to help us analyze why and where the error occured.
+The test results are automatically stored in a .zip file.
+If you have multiple different SAP systems, perform this test on each of them. <br>
+Send the resulting .zip files to the [Theobald Support](https://support.theobald-software.com) team.
