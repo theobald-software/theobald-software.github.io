@@ -4,13 +4,11 @@
 
 ### Extraction Settings
 
-{: .box-note }
-**Hinweis:** Packaging und Zeilenlimitierung werden im BICS Modus nicht unterstützt.
-
 **Package Size**<br> 
 Definiert wie viele Datensätze in einem Datenpaket von SAP geholt werden.
 Werte zwischen 10.000 und 100.000 sind bei großen Datenmengen sinnvoll.
 Wenn der Wert auf 0 gesetzt wird, wird die gesamte Ergebnismenge auf einmal abgerufen.
+Diese Option wird im BICS Modus nicht unterstützt. 
 
 {: .box-tip }
 **Empfehlung**: Definieren Sie immer eine Paketgröße.
@@ -18,6 +16,7 @@ Wenn der Wert auf 0 gesetzt wird, wird die gesamte Ergebnismenge auf einmal abge
 **Row Limit** <br>
 Definiert die maximale Anzahl von Zeilen in der Ergebnismenge.
 Wenn der Wert auf 0 gesetzt wird, wird die komplette Ergebnismenge abgerufen.
+Diese Option wird im BICS Modus nicht unterstützt.
 
 **Row Limit** kann verwendet werden, um einen Test mit einer kleinen Datenmenge durchzuführen, indem Sie z.B. 1000 (nicht 0) als Zeilenlimit eintragen.
 

@@ -4,13 +4,12 @@ Click the *Extraction Settings* link to open the "Cube Settings" window.
 
 ### Extraction Settings
 
-{: .box-note }
-**Note:** Packaging and row limitations are not supported when using BICS mode.
 
 **Package Size** <br> 
 Defines how many data records are fetched from SAP in a data package.
 Values between 10,000 and 100,000 are practical for large data volumes.
 If the value is set to 0, the complete result set is fetched at one time.
+This option is not supported when using BICS mode.
 
 {: .box-tip }
 **Recommendation**: Always define a package size.
@@ -18,6 +17,7 @@ If the value is set to 0, the complete result set is fetched at one time.
 **Row Limit** <br>
 Defines the maximum number of rows in the result set.
 If the value is set to 0, the complete result set is fetched.
+This option is not supported when using BICS mode.
 
 You can use **Row Limit** to perform tests with a small amount of data by entering a row limit of e.g., 1000 (not 0).
 
