@@ -3,13 +3,13 @@ Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.<br>
 Die Komponente BW Cube kann verwendet werden, um MDX oder BICS Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. 
 Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
 
-[Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
 
 ### Einen BW Cube oder ein Query suchen
 
 1. Im Hauptfenster der Komponente klicken Sie auf den **[Search]**-Button (Lupensymbol). Das Fenster “Cube or Query Lookup” öffnet sich.
+[Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
+2. Geben Sie im Feld **Name** (1) den Namen eines Query oder eines BW Cube / InfoProvider ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"}
-2. Geben Sie im Feld **Name** (1) den Namen eines Query oder eines BW Cube / InfoProvider ein. Die Verwendung von Wildcards (*) wird unterstützt. 
 3. Definieren Sie den **Extractor** und **Type** des Objekts (2).
 - **Extractor** definiert, ob Daten mit dem OLAP BAPI Interface (MADX) oder dem nativen BICS Interface extrahiert werden. Der BICS-Modus kann nur in Kombination mit einem [NetWeaver RFC-Protokoll](../einfuehrung/sap-verbindungen-anlegen#rfc-options) verwendet werden. BICS befindet sich noch in der Beta-Phase.
 - **Type** definiert, ob nach einer BEx-Query oder einem InfoProvider gesucht wird.
