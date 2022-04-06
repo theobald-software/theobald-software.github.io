@@ -16,6 +16,6 @@ The **Option** specification defines how the selection column is made. <br>
 To edit variables of the types *multiple value* and *complex selection*, click **[Edit]**.
 5. If available, click the **[magnifying glass]** symbol next to the fields to display a list of selectable variable values. Example:
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
-You can select a value from the list of selectable variable values, enter values manually or assign a [runtime parameter](./edit-runtime-parameter).
+You can select a value from the list of selectable variable values, enter values manually or assign a [runtime parameter](./edit-runtime-parameters).
 6. Click **[OK]** to confirm your input. 
 7. Click **[Load Live Preview]** to preview the filtered results.
