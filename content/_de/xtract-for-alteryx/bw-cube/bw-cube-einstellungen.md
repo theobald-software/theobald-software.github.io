@@ -10,7 +10,8 @@ weight: 4
 lang: de_DE
 ---
 
-Klicken Sie im Hauptfenster der Xtract Cube Komponente auf **[Extraction Settings]**, um die Extraktionseinstellungen aufzurufen.
+
+### Extraction Settings öffnen
 
 ![XU_BWCube_Settings](/img/content/XU_BWCube_Settings1.png){:class="img-responsive"}
 
@@ -20,15 +21,15 @@ Klicken Sie im Hauptfenster der Xtract Cube Komponente auf **[Extraction Setting
 **Hinweis:**  Die folgenden Einstellungen sind nur im MDX-Modus verfügbar.
 
 **Package Size**<br>
-Definiert, wie viele Datensätze in einem Datenpaket von SAP geholt werden. 
-Werte zwischen 10.000 und 100.000 sind bei großen Datenmengen sinnvoll. 
+Definiert, wie viele Datensätze in einem Datenpaket von SAP geholt werden. <br>
+Werte zwischen 10.000 und 100.000 sind bei großen Datenmengen sinnvoll. <br>
 Wenn der Wert auf 0 gesetzt wird, wird die gesamte Ergebnismenge auf einmal abgerufen.
 
 {: .box-tip }
 **Empfehlung**: Definieren Sie immer eine Paketgröße.
 
 **Row Limit**<br>
-Definiert die maximale Anzahl von Zeilen in der Ergebnismenge. 
+Definiert die maximale Anzahl von Zeilen in der Ergebnismenge. <br>
 Wenn der Wert auf 0 gesetzt wird, wird die komplette Ergebnismenge abgerufen.<br>
 Um Tests mit kleinen Datenmengen durchzuführen, können Sie die Zeilengrenze z.B. auf 1000 festlegen.<br>
 

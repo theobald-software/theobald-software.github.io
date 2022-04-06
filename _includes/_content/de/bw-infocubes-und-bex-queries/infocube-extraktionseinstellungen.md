@@ -1,53 +1,50 @@
-Über den *Extraction Settings*-Link im Editor öffnet sich das Einstellungsfenster.
+Über den Link *Extraction Settings* im Editor öffnet sich das Fenster "Cube Settings".
 
 ![XU_BWCube_Settings](/img/content/XU_BWCube_Settings.png){:class="img-responsive"}
 
-**Do not treat 'Axis has no rows' as Error**<br>
-Definiert, ob ein leeres Ergebnis (keine Daten selektiert) einen Fehler auslöst oder nicht.
-
-**Use Description for Column (obsolete)**<br>
-Definiert, dass der Name der Pipeline-Elemente aus der Beschreibung ergibt und nicht aus deren technischen Namen.<br>
-Diese Eigenschaft ist obsolete. Nutzen Sie dazu die Eigenschaft Column Name Style in den Destination Settings.
-
-**Use Formatted Values**<br>
-Definiert, dass die Werte der Kennzahlen so ausgegeben werden, wie im Query-Designer definiert (z.B. Skalierungsfaktor und Dezimalstellen).
-
-**Use Real Data for Preview**<br>
-Definiert, dass reelle Extraktionsdaten für die Vorschau genutzt werden.
-
-**Measure Unit in Result set**<br>
-zeigt die Einheiten der Kennzahlen an.
+### Extraction Settings
 
 **Package Size**<br> 
-Kann auf Werte größer 0 gesetzt werden, um das Query-Ergebnis nicht auf einmal, sondern in Paketen mit dieser Größe zu holen. Bei Queries mit mehr als 50.000 Zellen (Anzahl der Zeilen multipliziert mit der Anzahl der Spalten) macht es Sinn, diese Einstellung auf größer 0 zu setzen, und so die Parkettierung einzuschalten.
+Definiert wie viele Datensätze in einem Datenpaket von SAP geholt werden.
+Werte zwischen 10.000 und 100.000 sind bei großen Datenmengen sinnvoll.
+Wenn der Wert auf 0 gesetzt wird, wird die gesamte Ergebnismenge auf einmal abgerufen.
 
-**Automatic Slicing Dimension**<br>
-Ermöglicht die Auswahl einer Dimension für ein automatisches Slicing. <br>
-Slicing steht für das Ausschneiden von Scheiben aus dem Datenwürfel durch die Selektion eines einzelnen Wertes einer Dimension. <br>
-Beim automatischen Slicing wird über jeden einzelnen Wert (Ausprägung) der gewählten Slicing-Dimension (Merkmal) iteriert und für jeden dieser Werte das Abfrageergebnis aus BW extrahiert. <br>
-Diese Option ermöglicht die Extraktion größerer Datenmengen (mehrere Millionen Datensätze) aus BW, welche bisher aufgrund von BW-seitigen Fehlern (wie Speicherüberlauf und Timeout) nicht möglich war.<br>
-Wählen Sie eine geeignete Dimension fürs Slicing, bei größeren Datenmengen selektieren Sie eine Dimension mit einer granularen Ausprägung (z.B. Periode oder Woche). 
+{: .box-tip }
+**Empfehlung**: Definieren Sie immer eine Paketgröße.
 
-**Legacy metadata retrieval**<br>
-Betrifft BW Cube Extraktionen, die mit Xtract Kernel Versionen 1.8.49 oder früher erstellt wurden. Sollten Sie die Metadaten der Extraktion aktualisieren, sollten Sie vorher dieses Feld anhaken. Das betrifft insbesondere BEx Queries, die zwei Strukturen enthalten (Merkmals- und Kennzahlenstruktur), da sich der Metadatenabruf seit oben genannter Version geändert hat.
+**Row Limit** <br>
+Definiert die maximale Anzahl von Zeilen in der Ergebnismenge.
+Wenn der Wert auf 0 gesetzt wird, wird die komplette Ergebnismenge abgerufen.
 
-**Use BEX Extraction**<br>
-Nutzen Sie diese Option für BEx Queries, wenn die Query nicht oder eingeschränkt (z.B. mit einer Struktur in den Zeilen) über die MDX-Schnittstellen extrahiert werden kann.
-Dabei wird die BEx-Query mit demselben Output (Struktur und Daten) wie z.B. im BEx Analyzer geliefert.<br>
-Es besteht nicht die Möglichkeit, die Selektion der Dimensionen und Kennzahlen zu ändern.
+**Row Limit** kann verwendet werden, um einen Test mit einer kleinen Datenmenge durchzuführen, indem Sie z.B. 1000 (nicht 0) als Zeilenlimit eintragen.
 
-- **Fill Emply Cells**
-    Füllt die leeren Felder der Dimensionen.
+**Use Formatted Values**<br>
+Wenn diese Option aktiv ist, werden die Werte der Kennzahlen so ausgegeben, wie im Query-Designer definiert (z.B. Skalierungsfaktor und Dezimalstellen).
 
-- **Eliminate Result Lines**
-    Eliminiert die Ergebniszeilen (z.B. die Summe).
+### Automatic Slicing Dimension
 
-**Use MDX Extraction**<br>
-Die option erlaubt die direkte Eingabe eines MDX-Ausdrucks. <br>
-Danach klicken Sie auf Execute MDX and refresh statement, um die Metadaten aus dem BW-System zu lesen.<br>
-Variablen können sowohl für den ganzen MDX-Befehl als auch innerhalb des MDX-Befehls verwendet werden.
+Diese Option legt eine Dimension für ein automatisches Slicing fest. 
+Unter Slicing versteht man das Auswählen einer Teilmenge eines Cubes durch Auswahl eines einzelnen Wertes für eine seiner Dimensionen. 
+Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicing-Dimension (Merkmal) eine Schleife ausgeführt wird, um das Ergebnis aus dem BW zu extrahieren. 
 
+**Automatic Slicing Dimension** ermöglicht die Extraktion einer großen Datenmenge (Millionen von Sätzen) aus dem BW.
 
-**Use new OLAP BAPIs:**<br>
-Sofern die neuen OLAP BAPIs auf dem BW-System vorhanden sind, werden sie verwendet.
+### Experimental
 
+Die folgenden Einstellungen sind nur für BICS Extraktionen verfügbar.
+Sie werden angezeigt, nachdem die Metadaten einer BICS Extraktion abgerufen wurden.
+
+![XU_BWCube_Settings](/img/content/bwcube-bics-fast-mode.png){:class="img-responsive"}
+
+**BICS Fast Mode**<br>
+
+Wenn diese Checkbox aktiv ist, wird das interne Verhalten der BICS-Komponente gewechselt.
+Anstatt RFC-Funktionsdefinitionen bei jedem Aufruf aus SAP zu laden, verwendet der BICS Fast Mode lokal abgelegte BAPI Definitionen.
+Dieses Verhalten kann die Performance der BICS-Komponente erhöhen.
+
+**Create BICS Compatibilita Report**<br>
+Weil sich der BICS Modus noch in der Beta-Phase befindet, sind Fehler beim Ausführen des BICS Modus nicht ausgeschlossen.
+Klicken Sie auf **[Create BICS Compatibilita Report]**, um eine Testreihe auszuführen, die uns hilft die Ursache des Fehlers zu finden und den Fehler zu beheben.
+Die Ergebnisse der Testreihe werden in einer .zip-Datei zusammengefasst.
+Wenn Sie mehrere SAP-Systeme verwenden, führen Sie diese Testreihe auf jeder Ihrer SAP-Quellen aus. <br>
+Senden Sie die resultierende .zip-Dateien an den [Theobald Support](https://support.theobald-software.com).
