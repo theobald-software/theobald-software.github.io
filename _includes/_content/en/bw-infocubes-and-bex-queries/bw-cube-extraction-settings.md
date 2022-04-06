@@ -4,6 +4,9 @@ Click the *Extraction Settings* link to open the "Cube Settings" window.
 
 ### Extraction Settings
 
+{: .box-note }
+**Note:** Packaging and row limitations are not supported when using BICS mode.
+
 **Package Size** <br> 
 Defines how many data records are fetched from SAP in a data package.
 Values between 10,000 and 100,000 are practical for large data volumes.
@@ -41,9 +44,9 @@ Enabling the checkbox switches the internal behaviour of the BICS component.
 Instead of loading RFC function definitions from SAP for each function call, the BICS fast mode uses locally stored BAPI definitions.
 This may increase the performance of the BICS component.
 
-**Create BICS Compatibilita Report**<br>
+**Create BICS Compatibility Report**<br>
 As the BICS mode is still in beta phase, you may encounter errors when using this component. 
-Click **[Create BICS Compatibilita Report]** to run a number of tests to help us analyze why and where the error occured.
+Click **[Create BICS Compatibility Report]** to run a number of tests to help us analyze why and where the error occured.
 The test results are automatically stored in a .zip file.
 If you have multiple different SAP systems, perform this test on each of them. <br>
 Send the resulting .zip files to the [Theobald Support](https://support.theobald-software.com) team.

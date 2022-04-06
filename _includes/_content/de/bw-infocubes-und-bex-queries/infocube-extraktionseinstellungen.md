@@ -4,6 +4,9 @@
 
 ### Extraction Settings
 
+{: .box-note }
+**Hinweis:** Packaging und Zeilenlimitierung werden im BICS Modus nicht unterstützt.
+
 **Package Size**<br> 
 Definiert wie viele Datensätze in einem Datenpaket von SAP geholt werden.
 Werte zwischen 10.000 und 100.000 sind bei großen Datenmengen sinnvoll.
@@ -42,9 +45,9 @@ Wenn diese Checkbox aktiv ist, wird das interne Verhalten der BICS-Komponente ge
 Anstatt RFC-Funktionsdefinitionen bei jedem Aufruf aus SAP zu laden, verwendet der BICS Fast Mode lokal abgelegte BAPI Definitionen.
 Dieses Verhalten kann die Performance der BICS-Komponente erhöhen.
 
-**Create BICS Compatibilita Report**<br>
+**Create BICS Compatibility Report**<br>
 Weil sich der BICS Modus noch in der Beta-Phase befindet, sind Fehler beim Ausführen des BICS Modus nicht ausgeschlossen.
-Klicken Sie auf **[Create BICS Compatibilita Report]**, um eine Testreihe auszuführen, die uns hilft die Ursache des Fehlers zu finden und den Fehler zu beheben.
+Klicken Sie auf **[Create BICS Compatibility Report]**, um eine Testreihe auszuführen, die uns hilft die Ursache des Fehlers zu finden und den Fehler zu beheben.
 Die Ergebnisse der Testreihe werden in einer .zip-Datei zusammengefasst.
 Wenn Sie mehrere SAP-Systeme verwenden, führen Sie diese Testreihe auf jeder Ihrer SAP-Quellen aus. <br>
 Senden Sie die resultierende .zip-Dateien an den [Theobald Support](https://support.theobald-software.com).
