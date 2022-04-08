@@ -25,7 +25,7 @@ The **Sign** specification defines whether the respective selection column is in
 To edit variables of the types multiple value and complex selection, click **[Edit]**.
 5. If available, click the **[magnifying glass]** symbol to display the selectable variable values.
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
-You can select a value from the list, enter values manually or assign a [runtime parameter](./edit-runtime-parameter).
+You can select a value from the list, enter values manually or assign a [runtime parameter](./edit-runtime-parameters).
 6. Click **[OK]** to confirm. 
 7. Click **[Load Live Preview]** to preview the filtered results.
 
