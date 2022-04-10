@@ -1,34 +1,22 @@
 Dieser Abschnitt beschreibt die notwendigen Schritte, um Single Sign-On (SSO) mit Secure Network Communication (SNC) und Client-Zertifikaten einzurichten.
 
 ### Was ist SNC?
-
-_Das ist recht theoretisch. Ich würde das darauf verkürzen, dass SNC Authentisierung und Transportverschlüsselung zwischen SAP Systemen untereinander und SAP und Third-Party-Systemen (z. B. XU) ermöglicht. Hier der Link zur aktuellen Version im passenden Kontext: https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/LATEST/de-DE/e656f466e99a11d1a5b00000e835363f.html_
-
-Secure Network Connection (SNC) sichert die Datenübertragung zu Ihrem SAP-System.
-Dafür bietet SNC kryptografische Algorithmen, die Sie auf Ihre Daten anwenden können, um den Schutz Ihrer Daten auf Anwendungsebene zu erhöhen und eine End-to-End Security zu gewährleisten. <br>
-Jede Kommunikation, die zwischen SNC-geschützten Komponenten stattfindet ist dadurch gesichert, z-B die Kommunikation zwischen einer SAP-Anwendung und Theobald Produkten.
-
-Es gibt drei Sicherheitsgrade, die Sie mit SNC anwenden können:
-- nur Authentifizierung
-- Schutz der Integrität
-- Schutz der Vertraulichkeit
-
-Für mehr Informationen zu SNC, siehe [SAP Dokumentation: Secure Network Communications](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/de-DE/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
+Secure Network Connection (SNC) ermöglicht die Authentisierung und Transportverschlüsselung zwischen SAP Systemen untereinander, sowie zwischen SAP und Third-Party-Systemen wie Xtract Universal und BOARD Connector.
+Für mehr Informationen zu SNC, siehe [SAP Dokumentation: Secure Network Communications](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/LATEST/de-DE/e656f466e99a11d1a5b00000e835363f.html).
 
 ### Voraussetzungen
 
-_Die wichtigste Voraussetzung ist die konkrete Ausprägung der Architektur für SSO. Es muss SAP SSO ohne Secure Login Server mit X.509 Zertifikaten, Microsoft Certificate Store und Active Directory Certificate Templates für SAPGUI/RFC implementiert sein. 
-https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/LATEST/en-US/7c45fe620ab9469083f7ab50a9008c37.html
-https://social.technet.microsoft.com/wiki/contents/articles/53249.active-directory-certificate-services-enterprise-ca-architecture.aspx#Certificate_Template
+Voraussetzung für die Verwendung der *SSO Certificate* Funktion in Xtract Universal ist die konkrete Ausprägung der Architektur für SSO: 
+- SAP SSO ohne Secure Login Server mit X.509 Zertifikaten muss implementiert sein, siehe [SAP-Dokumentation: Authentication Methods without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/LATEST/en-US/7c45fe620ab9469083f7ab50a9008c37.html).
+- Microsoft Certificate Store und Active Directory Certificate Templates für SAPGUI/RFC müssen implementiert sein, siehe [Microsoft TechNet: Certificate Template](https://social.technet.microsoft.com/wiki/contents/articles/53249.active-directory-certificate-services-enterprise-ca-architecture.aspx#Certificate_Template).
+- Ein Enrollment Agent für Xtract Univerval muss im AD eingerichtet werden, siehe [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents.
 
-Wenn diese Voraussetzung erfüllt ist, kann ein Enrollment Agent für XU im AD eingerichtet werden.
-https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents.
-
-Secure Login Client + Service Account als konkrete Voraussetzungen auf dem XU Server sind korrekt.
+_ Secure Login Client + Service Account als konkrete Voraussetzungen auf dem XU Server sind korrekt.
 Die Voraussetzung eines Service Accounts ergibt sich aus der Notwendigkeit, Access Control für AD Benutzer einzurichten (Abschnitt Zugriffsbeschränkung).
-Die Voraussetzung Secure Login Client ergibt sich daraus, dass man eine SNC Bibliothek angeben muss (Abschnitt SAP Quelle). Die einzig korrekte Bibliothek in diesem Szenario ist die, die mit dem Secure Login Client mitkommt und den Secure Login Client beim Öffnen der Verbindung schließlich auch benutzt._
+Die Voraussetzung Secure Login Client ergibt sich daraus, dass man eine SNC Bibliothek angeben muss (Abschnitt SAP Quelle). 
+Die einzig korrekte Bibliothek in diesem Szenario ist die, die mit dem Secure Login Client mitkommt und den Secure Login Client beim Öffnen der Verbindung schließlich auch benutzt._
 
-- Der SAP Secure Login Client muss installiert sein, siehe [SAP-Dokumentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).
+- Der SAP Secure Login Client muss auf dem Xtract Universal Server installiert sein, siehe [SAP-Dokumentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).
 - Der Sign-On mit Client-Zertifikaten muss über den SAP Secure Login Client SAP-seitig eingerichtet sein.
 - Der XU-Service muss unter einem Windows AD Service Account ausgeführt werden, siehe [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account).
 - Der Service Account muss Xtract Universal ein Enrollment Agent Zertifikat zur Verfügung stellen, das im Namen von Windows-Benutzern Zertifikate anmelden kann, siehe [X.509 Zertifikat installieren](../../sicherheit/x.509-zertifikat-installieren).
