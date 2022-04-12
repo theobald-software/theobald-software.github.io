@@ -6,42 +6,15 @@ Für mehr Informationen zu SNC, siehe [SAP Dokumentation: Secure Network Communi
 
 ### Voraussetzungen
 
-Voraussetzung für die Verwendung der *SSO Certificate* Funktion in Xtract Universal ist die konkrete Ausprägung der Architektur für SSO: 
+Voraussetzung für die Verwendung der *SSO Certificate* Funktion in Xtract Universal und BOARD Connector ist die konkrete Ausprägung der Architektur für SSO: 
 - SAP SSO ohne Secure Login Server mit X.509 Zertifikaten muss implementiert sein, siehe [SAP-Dokumentation: Authentication Methods without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/LATEST/en-US/7c45fe620ab9469083f7ab50a9008c37.html).
 - Microsoft Certificate Store und Active Directory Certificate Templates für SAPGUI/RFC müssen implementiert sein, siehe [Microsoft TechNet: Certificate Template](https://social.technet.microsoft.com/wiki/contents/articles/53249.active-directory-certificate-services-enterprise-ca-architecture.aspx#Certificate_Template).
-- Ein Enrollment Agent für Xtract Univerval muss im AD eingerichtet werden, siehe [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents.
-
-_ Secure Login Client + Service Account als konkrete Voraussetzungen auf dem XU Server sind korrekt.
-Die Voraussetzung eines Service Accounts ergibt sich aus der Notwendigkeit, Access Control für AD Benutzer einzurichten (Abschnitt Zugriffsbeschränkung).
-Die Voraussetzung Secure Login Client ergibt sich daraus, dass man eine SNC Bibliothek angeben muss (Abschnitt SAP Quelle). 
-Die einzig korrekte Bibliothek in diesem Szenario ist die, die mit dem Secure Login Client mitkommt und den Secure Login Client beim Öffnen der Verbindung schließlich auch benutzt._
-
+- Im AD muss ein Enrollment Agent für Xtract Universal eingerichtet sein, siehe [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents).
 - Der SAP Secure Login Client muss auf dem Xtract Universal Server installiert sein, siehe [SAP-Dokumentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).
-- Der Sign-On mit Client-Zertifikaten muss über den SAP Secure Login Client SAP-seitig eingerichtet sein.
+Der Secure Login Client stellt sicher, dass die korrekte SNC Bibliothek für das Szenario verfügbar ist. 
+Die Bibliothek wird mit dem Secure Login Client geliefert und wird beim Öffnen der SAP-Verbindung verwendet.
 - Der XU-Service muss unter einem Windows AD Service Account ausgeführt werden, siehe [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account).
-- Der Service Account muss Xtract Universal ein Enrollment Agent Zertifikat zur Verfügung stellen, das im Namen von Windows-Benutzern Zertifikate anmelden kann, siehe [X.509 Zertifikat installieren](../../sicherheit/x.509-zertifikat-installieren).
-
-### Zugriffsbeschränkung
-_Das ist eigentlich schon hier beschrieben, oder?
-https://help.theobald-software.com/en/xtract-universal/security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication
-
-Punkt 5 ist nicht korrekt. Das Enrollment Agent Zertifikat wird nur in der SAP Quelle angegeben per Thumbprint._
-
-Richten Sie die Zugriffsbeschränkung für den Designer und den Server ein:<br>
-
-1. Öffnen Sie die [Server Einstellungen](../../server/server_einstellungen).
-2. Aktivieren Sie die Option **Restrict Designer Access to the following users/groups**, um den Zugriff auf den Designer zu beschränken.<br>
-![ConfigurationServerSettings_](/img/content/server-settings-sso-certificate-users.png){:class="img-responsive"}
-3. Klicken Sie auf **[Add]**, um Windows AD Benutzer auszuwählen, die auf den Designer zugreifen dürfen.<br>
-4. Wechseln Sie in den *Web Server* Tab und aktivieren Sie das Zugriffskontrollprotokoll *HTTPS - Restricted to AD user with Designer Access*. 
-Damit können nur Benutzer, die Designer-Zugriff haben, Extraktionen aufrufen.
-![WebServerSettings_https](/img/content/server-settings-sso-certificate.png){:class="img-responsive"}
-5. Verweisen Sie auf das Enrollment Agent Zertifikat, um Zugriff auf die Client-Zertifikate der Benutzer zu erhalten, siehe [X.509 Zertifikat installieren](../../sicherheit/x.509-zertifikat-installieren)..
-6. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen. <br>
-
-{: .box-note }
-**Hinweis:** Überprüfen Sie die Standardports in Abhängigkeit von Ihrem Produkt. Der Standard HTTPS-Port ist *8165* bei Xtract Universal und
-*8197* bei BOARD Connector.
+- Richten Sie für Ihre AD Benutzer eine Zugriffsbeschränkung auf den Xtract Universal Designer und den Server ein, siehe [Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung)](../../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung).<br>
 
 ### Einstellungen der SAP-Quelle 
 

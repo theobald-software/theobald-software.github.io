@@ -17,10 +17,12 @@ Falls das Zertifikat nicht im Windows Certificate Store aufgelistet ist, [instal
 ### Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung) 
 
 1. Weisen Sie den Xtract Universal/BoardConnector Dienst einem Windows Dienstkonto zu. Informationen finden Sie unter [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](./serversicherheit#einen-dienst-unter-einem-windows-dienstkonto-ausführen).
-2. Aktivieren Sie die TLS Verschlüsselung wie in [Voraussetzungen: Aktivierung der TLS Verschlüsselung](./serversicherheit#voraussetzungen-aktivierung-der-tls-verschlüsselung) beschrieben.
+2. Aktivieren Sie die TLS Verschlüsselung wie in [Voraussetzungen: Aktivierung der TLS Verschlüsselung](./serversicherheit#voraussetzungen-aktivierung-der-tls-verschlüsselung) beschrieben.<br>
+![WebServerSettings_https](/img/content/server-settings-sso-certificate.png){:class="img-responsive"}
 3. Navigieren Sie zum Menü **Server > Settings**. Wählen Sie im *Web Server* Tab *HTTPS - Restricted to AD users with Designer read access*.
 4. Wechseln Sie in den *Configuration Server* Tab.
-5. Fügen Sie die Windows AD Benutzer und Benutzergruppen, die Extraktionen ausführen dürfen unter [*Access Management*](./benutzerverwaltung#zugriffssteuerung-auf-serverebene--server-settings) hinzu. 
+5. Fügen Sie die Windows AD Benutzer und Benutzergruppen, die Extraktionen ausführen dürfen unter [*Access Management*](./benutzerverwaltung#zugriffssteuerung-auf-serverebene--server-settings) hinzu. <br>
+![ConfigurationServerSettings_](/img/content/server-settings-sso-certificate-users.png){:class="img-responsive"}
 6. Weisen Sie den Benutzern *Read* Erlaubnis zu.
 7. Bestätigen Sie mit **[OK]**. Das Fenster schließt sich.
 8. Wenn Sie dazu aufgefordert werden, starten Sie den Server neu.
