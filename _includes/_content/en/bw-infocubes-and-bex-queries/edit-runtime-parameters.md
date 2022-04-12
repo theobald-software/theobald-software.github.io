@@ -3,15 +3,13 @@ Use runtime parameters to change dimension filters and variables dynamically dur
 
 ### Create Runtime Parameters 
 
-Click **Edit Parameters** to create or edit dynamic runtime parameters.
-
-1. To display editing function for the parameters, depending on the product, click **Edit Runtime Parameters**. <br/>
-The window "Edit Runtime Parameters" opens.<br> 
+1. Click **Edit Runtime Parameters** in the main window of the component to create or edit dynamic runtime parameters.
+The window "Edit Runtime Parameters" opens.<br>
 ![Add parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}<br> 
 2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for filters.<br>
 Click **[Add List]** to define list parameters that can be used as placeholders for dimension filters with multiple members.<br>
 The placeholders need to be populated with actual values at extraction runtime. List parameters contain a list of values separated by commas e.g., *1,10* or *"1", "10"*.<br>
-**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice.
+**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice.<br>
 3. Open the drop-down menu and assign one of the following data types to the parameter. The data types can, but don't need to correlate to SAP data types. 
 - String: This data type can be used for any type of SAP field.
 - Number: This data type can be used for numeric SAP fields.

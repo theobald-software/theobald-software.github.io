@@ -3,7 +3,7 @@ Verwenden Sie Laufzeitparameter, um Dimensionsfilter und Variablen dynamisch zur
 
 ### Laufzeitparameter erstellen 
 
-1. Um Laufzeitparameter anzulegen und zu bearbeiten, klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameter**. <br/>
+1. Klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameter**, um Laufzeitparameter anzulegen und zu bearbeiten.
 Das Fenster "Edit Runtime Parameters" öffnet sich.<br> 
 ![Add parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}<br> 
 2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für die Datenfilter verwendet werden können. <br>
