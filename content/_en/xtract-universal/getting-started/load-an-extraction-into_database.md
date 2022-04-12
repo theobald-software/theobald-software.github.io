@@ -6,7 +6,7 @@ description: Step 4 - Load an Extraction into Microsoft SQL Server
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 progressstate: 5
 ---

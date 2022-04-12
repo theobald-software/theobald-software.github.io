@@ -6,7 +6,7 @@ description: Step 3 - Run an Extraction
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 progressstate: 5
 ---

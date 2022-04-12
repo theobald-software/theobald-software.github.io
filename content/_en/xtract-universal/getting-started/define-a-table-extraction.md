@@ -6,7 +6,7 @@ description: Step 2 - Define a Table Extraction
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 progressstate: 5
 ---
