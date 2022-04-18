@@ -16,12 +16,9 @@ It also includes information on which SAP installations and customizations are m
 
 ### Network Settings
 
-
 #### SAP Ports
 
-The following ports between the Windows server, on which the connector
-is installed and the SAP server from which data is extracted, must be
-open:
+The following ports between the Windows server that runs Xtract Universal and the SAP server, from which data is extracted, must be open:
 
 | SAP NetWeaver Component | Port<br> NN = System number of the SAP system, <br>see [TCP/IP Ports of All SAP Products](https://help.sap.com/viewer/ports) |
 | ------------- |:-------------:|
@@ -32,61 +29,42 @@ open:
 
 #### Xtract Universal Ports
 
-- The default port or the communication between the Xtract Universal Designer and the Xtract Universal (configuration) server is 8064.
+- The default port for the communication between the Xtract Universal Designer and the Xtract Universal (configuration) server is 8064.
 - The default ports for the communication with the Xtract Universal (web) server are 8065 (HTTP) or 8165 (HTTPS).
 
 The ports can be changed in the [Server Settings](../server/server-settings) of the Designer.
 
 ### SAP User Rights
-To connect to an SAP system and to extract data, an SAP user (system or dialog user) with dedicated user rights is needed. 
-Usually an SAP system user (also called technical user) is used for the production environment.
-Which rights are required for the SAP user is dependant on the component that is used for rhe data extraction. 
-The following knowledge base article lists all necessary user rights:
-[Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights)
 
-The section **General Authority Object** documents the access rights needed to establish an SAP connection via RFC. 
-The article is divided into subsections that documents the access rights needed for each component. 
-Make sure to have the SAP Basis team set up a user with the designated user rights.
+To connect and extract data from an SAP system an SAP user with dedicated user rights is needed.
+The required user rights are dependant on the [components](../index#extractiontypes) that are used for the data extraction.
 
-{: .box-note }
-**Note:** An SAP system user cannot be used to acces SAP via the SAP GUI. 
-To access SAP via the SAP GUI a dialog user is needed. 
-We recommend using a dialog user with further administration rights (SE37, SE16, RSA3, ...) for the evaluation phase, so that the consultant can check data in the SAP system using the SAP GUI.
+- The user rights needed to establish an SAP Connection via RFC are listed in the knowledge base article [Authority Objects - SAP User Rights: General Authorization Objects](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#general-authorization-objects).
+- The user rights needed for each component (e.g,. Table, Report, ODP, ect.) are also listed in the knowledge base article [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+
+Have the SAP Basis team set up a user with the designated user rights.
+The SAP user can be a system user or a dialog user. 
+
+{: .box-tip }
+**Tipp:** We recommend using an SAP system user for the production environment and an SAP dialog user with further administration rights (SE37, SE16, RSA3, ...)for the evaluation phase.
+During evaluation a consultant might need to check data in the SAP system using the SAP GUI. An SAP system user cannot be used to acces SAP via the SAP GUI.
 
 ### Installation & Customization of SAP
 
-If the installation of function modules or a customization of the SAP system is neccessary, depends on the extraction type, see [List of Extraction Types](../index#extractiontypes).
-The following table provides an overview of components and their respective SAP customization:
+The installation of function modules or a customization of your SAP system is dependant on the [components](../index#extractiontypes) that are used for the data extraction.
+The following table shows components and their respective SAP customization:
 
-| Component Usage | Details |
+| Component | Details |
 | ------------- |:-------------:|
-| Table, Table Join <br>Extraction & Joining of SAP Tables and Views | Installation on the SAP system is recommended and depending on your scenario necessary: https://help.theobald-software.com/en/xtract-universal/sap-customizing/custom-function-modulefor-table-extraction |
-| Report <br>Extraction of ABAP reports | Installation on the SAP system is necessary: https://help.theobald-software.com/en/xtract-universal/sap-customizing/install-report-custom-function-module |
+| Table <br>Extraction & Joining of SAP Tables and Views | Installation of a function module is recommended and depending on your scenario required, see [Custom function module for Table](../sap-customizing/custom-function-module-for-table-extraction). |
+| Report <br>Extraction of ABAP reports | Installation of a function module is required, see [Custom function module for Reports](../sap-customizing/install-report-custom-function-module). |
+| DeltaQ <br>Extraction of (OLTP / Export) DataSources and (BW) Extractors | SAP customization is required, see [Customizing for DeltaQ](../sap-customizing/customizing-for-deltaq). |
+| OHS (Open Hub Services) Extraction of OHS destinations from a BW system | SAP customization is required, see [Preparation for OHS in BW](../sap-customizing/preparation-for-ohs-in-bw). |
 
-#### Installation
-SAP transport requests for the installation of function modules is provided.
-The transport request is located in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`.
+All other components do not require any kind of customization on your SAP system.<br>
+For more information on components and their SAP dependencies, see [Requirements: Installation and Configuration on SAP](../introduction/requirements#installation-and-configuration-on-sap).
 
-#### Customizing
-For the following components a customization of the SAP system is necessary:
+#### Installation of Function Modules
 
-| Component Usage | Details |
-| ------------- |:-------------:|
-| DeltaQ <br>Extraction of (OLTP / Export) DataSources and (BW) Extractors | SAP customization: https://help.theobald-software.com/en/xtract-universal/sap-customizing/customizing-for-deltaq |
-| OHS (Open Hub Services) Extraction of OHS destinations from a BW system | SAP customization: https://help.theobald-software.com/en/xtract-universal/sap-customizing/preparation-for-ohs-in-bw |
-
-For all other components no installation or customizing is necessary, see
-list below:
-- ODP,
-- BW Cube/Query,
-- SAP Query,
-- BAPI / Function Module,
-- BW Hierarchy
-
-
-{: .box-note }
-**Note:** To run an extraction, the SAP user rights have to be assigned as described in the section SAP User Rights.
-For the latest information on the installation and customization of the SAP system, see:
-https://help.theobald-software.com/en/xtract-universal/introduction/requirements#installation-and-configuration-on-sap
-For more information contact our support team at:
-https://support.theobald-software.com
+SAP transport requests for the installation of function modules are provided.<br>
+The transport requests are located in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`.
