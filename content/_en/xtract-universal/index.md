@@ -19,16 +19,13 @@ in the context of business intelligence, data integration and data analytics.
 
 ### Available Components
 <!--- Tabelle notwendig? Nicht vollständig nicht 100%ig korrekt. Pre-Sales fragen. Unterteilung in BW und ERP sinnvoll für den Kunden?--->
+Xtract Universal offers a set of nine extraction types to cover a range of demands of SAP data extraction.
 The following overview shows, which components are available to extract data from SAP systems. 
 ![XU-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
 
 <!-- Auflistung der Komponenten mit der kurzen Beschreibung und dem Link zu den Inhalten-->
 
 <!--- KE: wir könnten allerdings das so beschreiben, dass die als Orientierungshilfe gilt und auch andere Szenarien technisch möglich sind--->
-
-### Extraction Types
-
-Xtract Universal offers a set of nine extraction types to cover a range of demands of SAP data extraction.
 
 - [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
 - [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
@@ -40,9 +37,9 @@ Xtract Universal offers a set of nine extraction types to cover a range of deman
 - [**Report**](./abap-reports) extracts ABAP Reports.
 - [**Table**](./table) extracts data from SAP tables and views; allows joining several tables on the SAP side.
 
-Common scenarios when using the components depending on the type of the SAP source system:
+Common scenarios when using the components depend on the type of the SAP source system:
 
-| Extraction Type   | ERP/ ECC | BW |
+| Component   | ERP/ ECC | BW |
 |-------------|-----|----|
 | BAPI        | X   | X  |
 | BW Cube     |     | X  |
@@ -56,6 +53,8 @@ Common scenarios when using the components depending on the type of the SAP sour
 
 {: .box-note }
 **Note:** Further scenarios and combinations are possible.
+
+*****
 
 More information on functions of Xtract Universal is provided in the following sections:
 

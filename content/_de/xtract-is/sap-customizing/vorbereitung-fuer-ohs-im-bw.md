@@ -1,8 +1,8 @@
 ---
 ref: xi-sap-customizing-04
 layout: page
-title: Vorbereitung für OHS im BW
-description: Vorbereitung für OHS im BW
+title: Customizing für OHS im BW
+description: Customizing für OHS im BW
 product: xtract-is
 parent: sap-customizing
 permalink: /:collection/:path

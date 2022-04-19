@@ -4,5 +4,5 @@
 ### Konfiguration (Customizing)
 Für die folgenden Komponenten ist ein Customizing auf dem SAP-System notwendig. 
 
-- **OHS**: Siehe [Vorbereitung für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw).
+- **OHS**: Siehe [Customizing für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw).
 - **DeltaQ**: Siehe [Customizing für DeltaQ](./sap-customizing/customizing-fuer-deltaq).
