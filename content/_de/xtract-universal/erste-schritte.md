@@ -13,19 +13,20 @@ lang: de_DE
 
 Dieser Abschnitt enthält eine allgemeine Einführung in Xtract Universal.
 Dieser Abschnitt ist die Voraussetzung für alle nachfolgenden Abschnitte.<br>
-Bevor Sie Xtract Universal das erste Mal starten:
+Bevor Sie Xtract Universal das erste Mal starten, prüfen Sie ob die folgenden Voraussetzungen erfüllt sind:
 - prüfen Sie, ob die Standard-Ports für die Kommunikation zwischen SAP und Xtract Universal geöffnet sind, siehe [Netzwerk-Einstellungen](#netzwerk-einstellungen).
-- prüfen Sie, ob der SAP Benutzer für die SAP-Verbindung alle benötigten Benutzerrechte hat, siehe [SAP Benutzerrechte](#sap-benutzerrechte).
-- prüfen Sie, ob Anpassungen in Ihrem SAP-System nötig sind, siehe [Anpassungen in SAP](#anpassungen-in-sap).
+- prüfen Sie, ob der SAP Benutzer für die SAP-Verbindung alle erforderlichen Benutzerrechte hat, siehe [SAP Benutzerrechte](#sap-benutzerrechte).
+- prüfen Sie, ob Anpassungen in Ihrem SAP-System erforderlich sind, siehe [Anpassungen in SAP](#anpassungen-in-sap).
 
 ### Netzwerk-Einstellungen
+
+Um Xtract Universal verwenden zu können, müssen alle erforderlichen Netzwerk-Ports geöffnet sein.
 
 #### SAP Ports
 
 Die folgenden Ports müssen für die Kommunikation zwischen dem Windows Server, auf dem Xtract universal läuft und dem SAP-System, von dem Daten extrahiert werden, offen sein:
 
-| SAP NetWeaver Komponente | Port<br> NN = Systemnummer des SAP-Systems, <br>siehe [SAP-Dokumentation: TCP/IP Ports of All SAP Products](https://help.sap.com/viewer/ports) |
-| ------------- |:-------------:|
+| SAP NetWeaver Component | Port<br> (NN = Systemnummer des SAP systems, <br>siehe [SAP Dokumentation: TCP/IP Ports of All SAP Products](https://help.sap.com/viewer/ports)) || ------------- |:-------------:|
 | SAP Application Server | 33\<NN> |
 | SAP Message Server | 36\<NN> |
 | Secure Network Communication (SNC)| 48\<NN\> |
@@ -33,8 +34,8 @@ Die folgenden Ports müssen für die Kommunikation zwischen dem Windows Server, 
 
 #### Xtract Universal Ports
 
-- Der Standard-Port für die Kommunikation zwischen dem Xtract Universal Designer und dem Xtract Universal Server ist 8064.
-- Die Standard-Ports für die Kommunikation mit dem Xtract Universal (web) Server sind 8065 (HTTP) und 8165 (HTTPS).
+Der Standard-Port für die Kommunikation zwischen dem Xtract Universal Designer und dem Xtract Universal Server ist 8064.<br>
+Die Standard-Ports für die Kommunikation mit dem Xtract Universal (web) Server sind 8065 (HTTP) und 8165 (HTTPS).
 
 Die Ports können in den [Server settings](./server/server_einstellungen) geändert werden.
 
@@ -49,14 +50,14 @@ Wenden Sie sich an Ihr SAP Basis Team, um einen Benutzer mit den entsprechenden 
 Der SAP-Benutzer kann sowohl ein Systembenutzer als auch ein Dialogbenutzer sein.
 
 {: .box-tip }
-**Tipp:** Wir empfehlen einen SAP-Systembenutzer für die Produktivempfehlung zu verwenden und einen Dialogbenutzer mit erweiterten Rechten (SE37, SE16, RSA3, ...) für die Evaluierungsphase.
+**Tipp:** Wir empfehlen einen SAP-Systembenutzer für die Produktivumgebung zu verwenden und einen Dialogbenutzer mit erweiterten Rechten (SE37, SE16, RSA3, ...) für die Evaluierungsphase.
 Während der Evaluierung kann es sinnvoll sein, über die SAP-GUI Daten im SAP-System einzusehen.
 Ein SAP-Systembenutzer kann nicht via SAP-GUI auf SAP zugreifen.
 
 
 ### Anpassungen in SAP
 
-Ob eine Installation von Funktionsbausteinen oder Anpassungen an Ihrem SAP-System notwendig sind, ist abhängig von den [Komponenten](./index#verfügbare-komponenten), die für die Extraktion verwendet werden.
+Ob eine Installation von Funktionsbausteinen oder Anpassungen an Ihrem SAP-System notwendig sind, ist abhängig von der [Komponente](./index#verfügbare-komponenten), die für die Extraktion verwendet wird.
 Die folgende Tabelle zeigt, welche Komponenten welche Anpassungen in SAP erfordern:
 
 | Komponente | Details |
@@ -64,11 +65,10 @@ Die folgende Tabelle zeigt, welche Komponenten welche Anpassungen in SAP erforde
 | Table <br>Extraktion & Verknüpfung von SAP Tabellen und Ansichten | Installation eines Funktionsbausteins ist empfohlen und je nach Szenario erforderlich, siehe [Funktionsbaustein für Table-Extraktionen](./sap-customizing/funktionsbaustein-fuer-table-extraktion). |
 | Report <br>Extraktion von ABAP-Reports | Installation eines Funktionsbausteins ist erforderlich, siehe [Funktionsbaustein für Reports](./sap-customizing/report-funktionsbaustein-installieren). |
 | DeltaQ <br>Extraktion von (OLTP / Export) DataSources und (BW) Extraktoren | Anpassungen in SAP sind erforderlich, siehe [Customizing für DeltaQ](./sap-customizing/customizing-fuer-deltaq). |
-| OHS (Open Hub Services) Extraction of OHS destinations from a BW system | Anpassungen in SAP sind erforderlich, siehe [Customizing für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw). |
+| OHS (Open Hub Services)<br> Extraktion von OHS Destinationen aus einem BW-System | Anpassungen in SAP sind erforderlich, siehe [Customizing für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw). |
 
 Alle anderen Komponenten erfordern keine Anpassungen in Ihrem SAP-System.<br>
 Für mehr Informationen über Komponenten und Ihre SAP-Abhängigkeiten, siehe [Systemvoraussetzungen: Installation und Konfiguration auf SAP](./einfuehrung/systemvoraussetzungen#installation-und-konfiguration-auf-sap).
- 
  
 ******
 
