@@ -17,7 +17,7 @@
 Ermöglicht die direkte Eingabe einer WHERE-Bedingung. **[Text mode]** ist der Standart-Eingabemodus.
 
 **[Editor mode]** <br>
-Öffnet den WHERE Clause Builder. Der WHERE Clause Builder bietet ein Toolkit, um WHERE-Bedingungen zusammenzuklicken.
+Öffnet den WHERE Clause Editor. Der WHERE Clause Editor bietet ein Toolkit, um WHERE-Bedingungen zu erstellen, siehe [WHERE Clause Editor](#where-clause-editor).
 
 **[Load live preview]** <br>
 Ermöglicht eine Echtzeit-Vorschau der Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
@@ -72,7 +72,8 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 |<=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
 |>=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
 | (NOT) LIKE | Wahr, wenn der Wert des Operanden operand1 mit dem Muster im Operanden operand2 übereinstimmt (nicht übereinstimmt). |
-| (NOT) BETWEEN | Wahr, wenn der Inhalt des Operanden operand (nicht) zwischen den Werten der Operanden operand1 und operand2 liegt. |
+| (NOT) BETWEEN | Wahr, wenn der Inhalt des Operanden operand1 (nicht) zwischen den Werten der Operanden operand1 und operand2 liegt. |
+| (NOT) IN | Wahr, wenn der Inhalt von operand1 (nicht) Teil des Inhalts von operand2 ist. Operand2 muss vom Typ LIST oder SQL sein.|
 
 Für mehr Informationen über die OpenSQL-Syntax, siehe [SAP Help: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
@@ -103,7 +104,7 @@ Wenn Ihr SAP-System älter als Release 7.40, SP05 ist, erscheint folgender Fehle
 
 Weitere Informationen über die Änderungen in Release 7.40, SP05 erhalten Sie auf der [SAP Helpseite](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-DE/abennews-740_sp05-open_sql.htm#!ABAP_MODIFICATION_5@5@).
 
-### WHERE Clause Builder
+### WHERE Clause Editor
 
 
 ![Extraction-Settings-01](/img/content/where-clause-builder.png){:class="img-responsive"}

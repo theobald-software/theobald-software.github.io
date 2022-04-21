@@ -15,10 +15,10 @@ The window "Define data source for SAP Table " opens.
 ### Buttons
 
 **[Text mode]** <br>
-Allows entering a WHERE clause directly into the text field. **[Text mode]** is the default method for defining a WHERE clause.
+Allows entering a WHERE clause directly into the text field. *Text mode* is the default method for defining a WHERE clause.
 
 **[Editor mode]** <br>
-Opens the WHERE clause builder. The WHERE clause builder offers a toolkit for those who are not familiar with the syntax of the WHERE clause.
+Opens the WHERE clause editor. The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause, see [WHERE Clause Editor](#where-clause-editor).
 
 **[Load live preview]** <br>
 Allows a real-time preview of the extraction data without executing the extraction. <br>
@@ -65,14 +65,15 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
   
 | Operator   |      Meaning      |  
 |:---------|:------------- |
-|=, EQ |  True if the content of operand1 is equal to the content of operand2|
-|<>, NE | True if the content of operand1 is not equal to the content of operand2|
-| <, LT | True if the content of operand1 is less than the content of operand2|
-|>, GT |  True if the content of operand1 is greater than the content of operand2|
+|=, EQ |  True if the content of operand1 is equal to the content of operand2.|
+|<>, NE | True if the content of operand1 is not equal to the content of operand2.|
+| <, LT | True if the content of operand1 is less than the content of operand2.|
+|>, GT |  True if the content of operand1 is greater than the content of operand2.|
 |<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
-|>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
+|>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2.|
 | (NOT) LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
 | (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
+| (NOT IN | True if the content of operand1 is (not) part of the content of operand2. Operand2 must be of type LIST or SQL.|
 
 Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
@@ -102,10 +103,10 @@ When using table joins, restricting the right table of a LEFT OUTER JOIN is only
 If your SAP System is older than Release 7.40, SP05, the following error appears:
 *RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
 
-### WHERE Clause Builder
+### WHERE Clause Editor
 
-The WHERE clause builder offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
-To open the WHERE clause builder, click **[Editor mode]**. 
+The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
+Click **[Editor mode]** to open the editor. 
 
 ![WHERE-Clause-Builder-01](/img/content/where-clause-builder.png){:class="img-responsive"}
 
@@ -117,19 +118,19 @@ There are 2 options for adding criteria to the WHERE clause:
 	- The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB').
 
 {: .box-tip }
-**Tip:** You can combine multiple criteria and criteria groups to create filters e.g., 
+**Tip:** You can combine multiple criteria and criteria groups to create complex filters e.g., 
 MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB') extracts only data where the column WERKS equals 1000 and the column PSTAT equals either 'L' or 'LB'.
 
-#### Components of the WHERE Clause Builder
+#### Components of the WHERE Clause Editor
 
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
 
-There are the following options to organize the criteria of a WHERE clause (1):
+The following options can be used to organize the criteria of the WHERE clause (1):
 - **Delete row** deletes a criteria.
 - **Move row up** changes the sequence of the criteria. The selected criteria moves up.
 - **Move row down** changes the sequence of the criteria. The selected criteria moves down.
 
-The following components can be added to a criteria (2):
+The following components can be added to the WHERE clause (2):
 - **Add Column** adds a column. Click on the component to open a selection window for tables and columns.
 ![WHERE-Clause-Builder-Select-Column](/img/content/where-clause-builder-select-column.png){:class="img-responsive"}
 - **Add SQL** adds an SQL statement.
@@ -146,13 +147,13 @@ When adding or editing a criteria only the relevant components are displayed e.g
 -->
 
 To edit existing components, click on the component. All areas that are marked green can be edited.<br>
-To delete a component, click the icon (x) above the component.<br>
+To delete a component, click the (x) icon above the component.<br>
 
-### Using Runtime Parameters in the WHERE Clause Builder
+### Using Runtime Parameters in the WHERE Clause Editor
 
 1. Click **Edit Runtime Parameters** to create or edit dynamic runtime parameters.
 The window “Edit Runtime Parameters” opens.<br>
-![dd-parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}
+![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
 2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime. 
 This allows you to dynamically set filters at runtime.<br>
 **Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: “p_MATNR”).
@@ -162,8 +163,8 @@ The data types can, but don’t need to correlate to SAP data types.
 - Integer: This data type can be used for numeric SAP selection fields.
 - Flag: This data type can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
 Click **[OK]** (3) to confirm.
-4. Open the WHERE clause builder by clicking **[Editor mode]** in the WHERE clause tab of the main window.
-5. Add a new criteria and use **Default with Parameter** or add the components manually.
+4. Click **[Editor mode]** in the WHERE clause tab of the main window to open the WHERE clause editor.
+5. Add a new criteria and use **[Default with Parameter]** or add the components manually.
 6. Click on the *Parameter* component and select a parameter from the drop down list.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. Click **[Load live Preview]** and provide a parameter value to test the WHERE clause.
+7. To test the WHERE clause, click **[Load live Preview]** and provide a parameter value when prompted.
