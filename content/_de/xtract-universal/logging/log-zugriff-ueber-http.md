@@ -137,6 +137,34 @@ Gibt den Namen der Ergebnistabelle / Datei für einen bestimmten Zeitstempel zur
 ![XU Server connection](/img/content/xu/http_log_past_day.png){:class="img-responsive"}
 
 
+### Den Extraktionsstatus abrufen
+
+Eine Extraktion kann durch das Aufrufen der URL der Extraktion ausgeführt werden.
+Die folgende URL führt z.B. eine Extraktion  mit dem Namen *Plants* aus:
+```
+http://localhost:8065/?name=Plants
+```
+Wenn die Extraktions-URL um den URL-Parameter ```&wait=false``` ergänzt wird, wird die Extraktion im asynchronen Modus ausgeführt. Beispiel:
+```
+http://localhost:8065/?name=Plants&wait=false
+```
+Ein asynchroner Aufruf erzeugt sofort eine HTTP-Antwort, noch während die Extraktion ausgeführt wird.
+Ein Zeitstempel wird als Teil der HTTP-Antwort zurückgegeben. Beispiel:
+ ```
+ X-XU-Timestamp: 2020-05-28_09:58:47.312
+ ```
+Der Status der Extraktion kann über den Extraktionsnamen und dem zurückgegeben Zeitstemepl abgerufen werden. Beispiel:
+```
+http://localhost:8065/status/?name=Plants&timestamp=2020-05-28_09:58:47.312
+```
+Dieser Aufruf gibt einen der folgenden Status im Body der HTTP-Antwort zurück: ```Running```, ```FinishedNoErrors``` oder ```FinishedErrors```.
+Der Status einer Extraktion ändert sich mit der Zeit. Indem der Status regelmäßig abgefragt wird, können Folgemaßnahmen ergriffen werden, sobald die Extraktion beendet ist.
+
+
+{: .box-note }
+**Hinweis:** Eine Extraktion im asynchronen Modus auszuführen und den Extraktionsstatus abzurufen, wird nur bei Push-Destinationen verwendet, wie z.B. Datenbanken.
+
+
 *****
 #### Weiterführende Links
 - [Web-Server-Einstellungen](../server/server_einstellungen#web-server)
