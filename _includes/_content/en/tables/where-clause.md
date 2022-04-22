@@ -1,9 +1,10 @@
 
 ### Using WHERE Clause 
-1. Select and double-click an extraction of type "table" in the main window of the Designer.
-The window "Define data source for SAP Table " opens.
-2. Navigate to tab **WHERE Clause**.
-3. Enter the WHERE clause manually or use the editor.
+
+1. Select and double-click an extraction of type "Table" in the main window of the Designer.
+The window "Table" opens.
+2. Navigate to tab *WHERE Clause*.
+3. Enter a WHERE clause manually or use the editor.
 4. To display the results in the **Preview** section, click **[Load live preview]**.
 
 {: .box-note }
@@ -135,7 +136,8 @@ The following components can be added to the WHERE clause (2):
 ![WHERE-Clause-Builder-Select-Column](/img/content/where-clause-builder-select-column.png){:class="img-responsive"}
 - **Add SQL** adds an SQL statement.
 - **Add Operator** adds an operator e.g., =, <, >, etc.
-- **Add literal Value** adds a static value of type *String*, *Number*, *Flag* or *Set*. *Set* also offers the option of adding a SELECT statement.<br>
+- **Add literal Value** adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String* or *Number*. 
+*List* also offers the option of using a SELECT statement to create a list.<br>
 ![WHERE-Clause-Builder-Value](/img/content/where-clause-value.png){:class="img-responsive"}
 - **Add Parameter** adds a parameter defined in [**Edit Runtime Parameters**](#using-runtime-parameters-in-the-where-clause-builder).<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}

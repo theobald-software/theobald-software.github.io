@@ -41,7 +41,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 **Tipp:** Um die Syntax der WHERE-Bedingung zu überprüfen, klicken Sie auf **[Load live preview]**. Auf diese Weise ist es nicht notwendig, eine Extraktion durchzuführen, um zu sehen, ob die Syntax korrekt ist.
 
 {: .box-tip}
-**Tipp:** Um die Leistung beim Extrahieren zu erhöhen, stellen Sie sicher, dass Sie die idizierten Felder als erste Auswahlfilteroperation in der WHERE-Bedingung platzieren.
+**Tipp:** Um die Leistung beim Extrahieren zu erhöhen, stellen Sie sicher, dass Sie die indizierten Felder als erste Auswahlfilteroperation in der WHERE-Bedingung platzieren.
 
 
 #### Syntaxregeln
@@ -100,7 +100,6 @@ Bei Verwendung von Table Joins können Felder der rechten Tabelle eines LEFT OUT
 Wenn Ihr SAP-System älter als Release 7.40, SP05 ist, erscheint folgender Fehler:
 *RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN*<br>
 (Unzulässiger Zugriff auf die rechte Tabelle eines LEFT OUTER JOIN)
-
 
 Weitere Informationen über die Änderungen in Release 7.40, SP05 erhalten Sie auf der [SAP Helpseite](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-DE/abennews-740_sp05-open_sql.htm#!ABAP_MODIFICATION_5@5@).
 
