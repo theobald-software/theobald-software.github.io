@@ -105,5 +105,69 @@ Weitere Informationen über die Änderungen in Release 7.40, SP05 erhalten Sie a
 
 ### WHERE Clause Editor
 
+Der WHERE Clause Editor stellt ein Toolkit zur Verfügung, mit dem WHERE-Bedingungen auch ohne nähere Kenntnisse über die Syntax erstellt werden können.
+Klicken Sie auf **[Editor mode]**, um das Toolit zu öffnen.
 
-![Extraction-Settings-01](/img/content/where-clause-builder.png){:class="img-responsive"}
+![WHERE-Clause-Builder-01](/img/content/where-clause-builder.png){:class="img-responsive"}
+
+Es gibt 2 Optionen, um der WHERE-Bedingung neue Kriterien hinzuzufügen:
+- **[Add Criteria]** fügt ein einzelnes Kriterium hinzu. <br>
+	- Der Standardaufbau für ein einzelnes Kriterium mit statischen Werten ist `[Spalte][Operator][Wert]`, z.B. MARC~WERKS = 1000.
+	- Der Standardaufbau für ein einzelnes Kriterium mit Parametern ist `[Spalte][Operator][Parameter]`, z.B. MARC~WERKS = [p_WERKS].
+- **[Add Criteria Group]** fügt eine Gruppe hinzu, die mehrere Kriterien beinhaltet.
+	- Der Standardaufbau für eine Kriteriengruppe `([Spalte1][Operator1][Wert1][Logik][Spalte2][Operator2][Wert2])`, z.B. (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB').
+
+{: .box-tip }
+**Tipp:** Kombinieren Sie einzelne Kriterien mit Kriteriengruppen, um komplexe Filter zu erstellen. Beispiel:
+MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB') extrahiert nur Daten, bei denen die Spalte WERKS einen Wert von 1000 hat und die Spalte PSTAT entweder den Wert 'L' oder 'LB' hat.
+
+
+#### Components of the WHERE Clause Editor
+
+![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
+
+The following options can be used to organize the criteria of the WHERE clause (1):
+- **Delete row** deletes a criteria.
+- **Move row up** changes the sequence of the criteria. The selected criteria moves up.
+- **Move row down** changes the sequence of the criteria. The selected criteria moves down.
+
+The following components can be added to the WHERE clause (2):
+- **Add Column** adds a column. Click on the component to open a selection window for tables and columns.
+![WHERE-Clause-Builder-Select-Column](/img/content/where-clause-builder-select-column.png){:class="img-responsive"}
+- **Add SQL** adds an SQL statement.
+- **Add Operator** adds an operator e.g., =, <, >, etc.
+- **Add literal Value** adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String* or *Number*. 
+*List* also offers the option of using a SELECT statement to create a list.<br>
+![WHERE-Clause-Builder-Value](/img/content/where-clause-value.png){:class="img-responsive"}
+- **Add Parameter** adds a parameter defined in [**Edit Runtime Parameters**](#using-runtime-parameters-in-the-where-clause-builder).<br>
+![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
+- **Add new Criteria** adds a new criteria after the selected criteria.
+- **Add new Group** adds a new group of criteria the selected criteria.
+
+<!---
+When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
+-->
+
+To edit existing components, click on the component. All areas that are marked green can be edited.<br>
+To delete a component, click the (x) icon above the component.<br>
+
+### Using Runtime Parameters in the WHERE Clause Editor
+
+1. Click **Edit Runtime Parameters** to create or edit dynamic runtime parameters.
+The window “Edit Runtime Parameters” opens.<br>
+![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
+2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime. 
+This allows you to dynamically set filters at runtime.<br>
+**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: “p_MATNR”).
+3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. 
+The data types can, but don’t need to correlate to SAP data types.
+- String: This data type can be used for any type of SAP selection field.
+- Integer: This data type can be used for numeric SAP selection fields.
+- Flag: This data type can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
+Click **[OK]** (3) to confirm.
+4. Click **[Editor mode]** in the WHERE clause tab of the main window to open the WHERE clause editor.
+5. Add a new criteria and use **[Default with Parameter]** or add the components manually.
+6. Click on the *Parameter* component and select a parameter from the drop down list.<br>
+![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
+7. To test the WHERE clause, click **[Load live Preview]** and provide a parameter value when prompted.
+
