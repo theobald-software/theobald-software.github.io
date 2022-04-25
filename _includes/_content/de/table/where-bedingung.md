@@ -122,52 +122,58 @@ Es gibt 2 Optionen, um der WHERE-Bedingung neue Kriterien hinzuzufügen:
 MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB') extrahiert nur Daten, bei denen die Spalte WERKS einen Wert von 1000 hat und die Spalte PSTAT entweder den Wert 'L' oder 'LB' hat.
 
 
-#### Components of the WHERE Clause Editor
+#### Komponenten des WHERE Clause Editors
 
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
 
-The following options can be used to organize the criteria of the WHERE clause (1):
-- **Delete row** deletes a criteria.
-- **Move row up** changes the sequence of the criteria. The selected criteria moves up.
-- **Move row down** changes the sequence of the criteria. The selected criteria moves down.
+Es gibt 3 Optionen, um die Kriterien in der WHERE-Bedingung zu organisieren (1):
+- **Delete row** löscht ein Kriterium.
+- **Move row up** ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach oben verschoben.
+- **Move row down** ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach unten verschoben.
 
-The following components can be added to the WHERE clause (2):
-- **Add Column** adds a column. Click on the component to open a selection window for tables and columns.
+Folgende Komponenten stehen in der WHERE-Bedingung zur Verfügung (2):
+- **Add Column** fügt die Spalte einer Tabelle hinzu. Klicken Sie auf die Komponente, um eine Spalte aus den verfügbaren Tabellen auszuwählen.
 ![WHERE-Clause-Builder-Select-Column](/img/content/where-clause-builder-select-column.png){:class="img-responsive"}
-- **Add SQL** adds an SQL statement.
-- **Add Operator** adds an operator e.g., =, <, >, etc.
-- **Add literal Value** adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String* or *Number*. 
-*List* also offers the option of using a SELECT statement to create a list.<br>
+- **Add SQL** fügt eine SQL-Anweisung hinzu.
+- **Add Operator** fügt einen Operator hinzu, z.B. =, <, >, etc.
+- **Add literal Value** fügt einen statischen Wert vom Typ *String*, *Number*, *Flag* oder *List* hinzu. 
+*List* bietet einen separaten Editor, um Listen vom Typ *String*, *Number* oder *Select* zu erstellen.
+*Select* ermöglicht die Eingabe einer SELECT-Anweisung.<br>
 ![WHERE-Clause-Builder-Value](/img/content/where-clause-value.png){:class="img-responsive"}
-- **Add Parameter** adds a parameter defined in [**Edit Runtime Parameters**](#using-runtime-parameters-in-the-where-clause-builder).<br>
+- **Add Parameter** fügt einen verfügbaren Parameter hinzu, siehe [**Edit Runtime Parameters**](#using-runtime-parameters-in-the-where-clause-builder).<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-- **Add new Criteria** adds a new criteria after the selected criteria.
-- **Add new Group** adds a new group of criteria the selected criteria.
+- **Add new Criteria** fügt der WHERE-Bedingung ein neues Kriterium hinzu.
+- **Add new Group** fügt der WHERE-Bedingung eine neue Gruppe hinzu.
 
-<!---
-When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
--->
+: .box-note }
+**Hinweis:** Wenn neue Kriterien hinzugefügt oder editiert werden, werden nur relevante Komponenten angezeigt.
+**Add Operator** ist zum Beispiel nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
 
-To edit existing components, click on the component. All areas that are marked green can be edited.<br>
-To delete a component, click the (x) icon above the component.<br>
+Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
+Alle grün markierten Flächen können bearbeitet werden.<br>
+Klicken Sie auf das (x) Icon über der Komponente, um die Komponente zu löschen.<br>
 
-### Using Runtime Parameters in the WHERE Clause Editor
+### Laufzeitparameter im WHERE Clause Editor
 
-1. Click **Edit Runtime Parameters** to create or edit dynamic runtime parameters.
-The window “Edit Runtime Parameters” opens.<br>
+1. Klicken Sie auf **Edit Runtime Parameters**, um Laufzeitparameter anzulegen und zu bearbeiten. 
+Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
 ![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
-2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime. 
-This allows you to dynamically set filters at runtime.<br>
-**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: “p_MATNR”).
-3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. 
-The data types can, but don’t need to correlate to SAP data types.
-- String: This data type can be used for any type of SAP selection field.
-- Integer: This data type can be used for numeric SAP selection fields.
-- Flag: This data type can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
-Click **[OK]** (3) to confirm.
-4. Click **[Editor mode]** in the WHERE clause tab of the main window to open the WHERE clause editor.
-5. Add a new criteria and use **[Default with Parameter]** or add the components manually.
-6. Click on the *Parameter* component and select a parameter from the drop down list.<br>
+2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für eine Datenauswahl verwendet werden können.<br>
+Klicken Sie auf **[Add List]**, um Listenparameter zu definieren, die mehrere Werte enthalten können. Die Werte werden durch Kommas voneinander getrennt, z.B. 1,10 oder “1”, “10”
+Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
+**Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: “p_MATNR”).
+3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. 
+Die Datentypen müssen mit den SAP-Datentypen übereinstimmen.
+- String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
+- Number: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
+- Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen ‘X’ (true) oder eine leere Eingabe ‘‘ (false) als Eingabewert benötigen.
+Klicken Sie auf **[OK]** (3) zum Bestätigen.
+4. Klicken Sie im WHERE Clause Tab des Hauptfensters auf **[Editor mode]**, um den WHERE Clause Editor zu öffnen.
+5. Fügen Sie der WHERE-Bedingung über **[Add Criteria]** und **[Default with Parameter]** ein neues Kriterium hinzu.
+6. Klicken Sie auf die *Parameter* Komponente des Kriteriums. Eine Drop-Down-Liste öffnet sich und zeigt alle verfügbaren Laufzeitparameter an.
+Wählen Sie einen der Laufzeitparameter aus.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. To test the WHERE clause, click **[Load live Preview]** and provide a parameter value when prompted.
+7. Klicken Sie auf **[Load live Preview]**, um die WHERE-Bedingung zu testen. 
+Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
+
 
