@@ -11,3 +11,5 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=where-clause
 ---
 {% include _content/en/tables/where-clause.md  %}
+
+{% include _content/en/tables/variables.md  %}

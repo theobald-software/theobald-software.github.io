@@ -140,7 +140,7 @@ Folgende Komponenten stehen in der WHERE-Bedingung zur Verfügung (2):
 *List* bietet einen separaten Editor, um Listen vom Typ *String*, *Number* oder *Select* zu erstellen.
 *Select* ermöglicht die Eingabe einer SELECT-Anweisung.<br>
 ![WHERE-Clause-Builder-Value](/img/content/where-clause-value.png){:class="img-responsive"}
-- **Add Parameter** fügt einen verfügbaren Parameter hinzu, siehe [**Edit Runtime Parameters**](#using-runtime-parameters-in-the-where-clause-builder).<br>
+- **Add Parameter** fügt einen zuvor definierten Laufzeitparameter hinzu.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
 - **Add new Criteria** fügt der WHERE-Bedingung ein neues Kriterium hinzu.
 - **Add new Group** fügt der WHERE-Bedingung eine neue Gruppe hinzu.
@@ -152,28 +152,3 @@ Folgende Komponenten stehen in der WHERE-Bedingung zur Verfügung (2):
 Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
 Alle grün markierten Flächen können bearbeitet werden.<br>
 Klicken Sie auf das (x) Icon über der Komponente, um die Komponente zu löschen.<br>
-
-### Laufzeitparameter im WHERE Clause Editor
-
-1. Klicken Sie auf **Edit Runtime Parameters**, um Laufzeitparameter anzulegen und zu bearbeiten. 
-Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
-![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
-2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für eine Datenauswahl verwendet werden können.<br>
-Klicken Sie auf **[Add List]**, um Listenparameter zu definieren, die mehrere Werte enthalten können. Die Werte werden durch Kommas voneinander getrennt, z.B. 1,10 oder “1”, “10”
-Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
-**Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: “p_MATNR”).
-3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. 
-Die Datentypen müssen mit den SAP-Datentypen übereinstimmen.
-- String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
-- Number: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
-- Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen ‘X’ (true) oder eine leere Eingabe ‘‘ (false) als Eingabewert benötigen.
-Klicken Sie auf **[OK]** (3) zum Bestätigen.
-4. Klicken Sie im WHERE Clause Tab des Hauptfensters auf **[Editor mode]**, um den WHERE Clause Editor zu öffnen.
-5. Fügen Sie der WHERE-Bedingung über **[Add Criteria]** und **[Default with Parameter]** ein neues Kriterium hinzu.
-6. Klicken Sie auf die *Parameter* Komponente des Kriteriums. Eine Drop-Down-Liste öffnet sich und zeigt alle verfügbaren Laufzeitparameter an.
-Wählen Sie einen der Laufzeitparameter aus.<br>
-![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. Klicken Sie auf **[Load live Preview]**, um die WHERE-Bedingung zu testen. 
-Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
-
-

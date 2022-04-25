@@ -13,6 +13,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 
 {% include _content/en/tables/where-clause.md  %}
 
-### Script Expressions
-
-Starting from version 2.13.5 [scripted expressions](../advanced-techniques/script-expressions) are supported within the WHERE clause. 
+{% include _content/en/tables/runtime-parameter.md  %}

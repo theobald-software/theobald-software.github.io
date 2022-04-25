@@ -139,7 +139,7 @@ The following components can be added to the WHERE clause (2):
 - **Add literal Value** adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. 
 *Select* enables usage of SELECT statements.<br>
 ![WHERE-Clause-Builder-Value](/img/content/where-clause-value.png){:class="img-responsive"}
-- **Add Parameter** adds a parameter defined in [**Edit Runtime Parameters**](#using-runtime-parameters-in-the-where-clause-editor).<br>
+- **Add Parameter** adds a previously defined runtime parameter. <br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
 - **Add new Criteria** adds a new criteria after the selected criteria.
 - **Add new Group** adds a new group of criteria the selected criteria.
@@ -149,24 +149,3 @@ The following components can be added to the WHERE clause (2):
 
 Click on a component to edit it. All areas that are marked green can be edited.<br>
 To delete a component, click the (x) icon above the component.<br>
-
-### Using Runtime Parameters in the WHERE Clause Editor
-
-1. Click **Edit Runtime Parameters** to create or edit dynamic runtime parameters.
-The window “Edit Runtime Parameters” opens.<br>
-![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
-2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for data selections.<br>
-Click **[Add List]** to define list parameters that contain multiple values separated by commas e.g., 1,10 or “1”, “10”. 
-The placeholders need to be populated with actual values at extraction runtime.<br>
-**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: “p_MATNR”).
-3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. 
-The data types can, but don’t need to correlate to SAP data types.
-- String: This data type can be used for any type of SAP selection field.
-- Number: This data type can be used for numeric SAP selection fields.
-- Flag: This data type can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
-Click **[OK]** (3) to confirm.
-4. Click **[Editor mode]** in the WHERE clause tab of the main window to open the WHERE clause editor.
-5. Add a new criteria and use **[Default with Parameter]** to add the parameter component manually.
-6. Click on the *Parameter* component and select a parameter from the drop down list.<br>
-![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. To test the WHERE clause, click **[Load live Preview]**. Provide parameter values when prompted.

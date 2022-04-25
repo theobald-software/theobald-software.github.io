@@ -12,3 +12,5 @@ lang: de_DE
 
 {% include _content/de/table/where-bedingung.md  %}
 
+
+{% include _content/de/table/runtime-parameters.md  %}
