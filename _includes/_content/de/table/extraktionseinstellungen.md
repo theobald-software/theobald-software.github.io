@@ -45,7 +45,7 @@ Berücksichtigen Sie die notwendige [Berechtigung der SAP-Tabelle](https://kb.th
 S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
 ```
 
-#### Extract data in background job
+### Extract data in background job
 Durch Ankreuzen der Checkbox "Extract data in background" wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
 Diese Einstellung ist optional und wird in Kombination mit dem Baustein Z_THEO_READ_TABLE ab Version 2.0 unterstützt.
 Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen könnten. <br>
