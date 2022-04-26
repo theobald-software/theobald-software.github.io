@@ -3,8 +3,8 @@
 ### Laufzeitparameter erstellen 
 
 
-1. Um die Bearbeitungsfunktion für die Parameter anzuzeigen, klicken Sie auf **[Edit runtime parameters]** im Hauptfenster. <br/>
-Das Fenster "Edit Runtime Parameters" wird geöffnet.<br> 
+1. Klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameter**, um Laufzeitparameter anzulegen und zu bearbeiten. 
+Das Fenster “Edit Runtime Parameters” öffnet sich.<br> 
 ![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
 2. Klicken Sie auf **[Add]** (1), um Parameter zu definieren, die als Platzhalter für die Datenselektionen verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. 
 Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.<br>

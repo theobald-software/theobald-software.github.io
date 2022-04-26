@@ -14,7 +14,8 @@
 3. Click the **[Edit]** button next to the selection you want to edit. The window "Edit Selection" opens.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
 4. Choose if the selection is to be included or excluded (3) from the extracted data.
-5. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down list (4). 
+5. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down list (4). <br>
+**Tip:** Use the *In* operator when mapping list parameters to selections.
 6. Enter the selection in the respective *Low* and *High* fields. The *High* field is active for input when the *between* or *not between* operator was selected.
 7. Optional: click **[Add Selection]** (5) to add conditions.
 8. Click **[OK]** (6) to confirm the selections.

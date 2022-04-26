@@ -2,8 +2,8 @@ Use runtime parameters to set values e.g., for selections dynamically at runtime
 
 ### Create Runtime Parameters 
 
-1. To create and edit parameters, click **[Edit runtime parameters]**. <br/>
-The window "Edit Runtime Parameters" opens.<br> 
+1. Click **Edit Runtime Parameters* in the main window of the component to create or edit dynamic runtime parameters. 
+The window “Edit Runtime Parameters” opens.<br> 
 ![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
 2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
 This allows you to dynamically set filters at runtime.<br>

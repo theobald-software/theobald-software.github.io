@@ -14,7 +14,8 @@ Alternativ können Sie nach SAP Transaktion Codes suchen, indem Sie die Checkbox
 3. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]**. Das Fenster "Edit Selections" öffnet sich.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
 4. Wählen Sie, ob die Selektion in der Extraktion inkludiert oder exkludiert werden soll (3).
-5. Wählen Sie einen Operator (*Equal*, *GreaterThan*, etc.) von der Dropdown-Liste *Option* (4). 
+5. Wählen Sie einen Operator (*Equal*, *GreaterThan*, etc.) von der Dropdown-Liste *Option* (4).<br>
+**Tipp:** Verwenden Sie den *In* Operator, um ein Mapping von Listenparameter auf eine Auswahl durchzuführen. 
 6. Geben Sie die Selektion in den *Low* und *High* Feldern ein. Das *High* Feld ist nur aktiv, wenn *between* oder *not between* als Operator ausgewählt wurde.
 7. Optional: Klicken Sie auf **[Add Selection]** (5), um weitere Bedingungen hinzuzufügen.
 8. Klicken Sie auf **[OK]** (6), um die Selektion zu bestätigen.
