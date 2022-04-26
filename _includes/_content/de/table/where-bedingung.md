@@ -145,9 +145,9 @@ Folgende Komponenten stehen im Editor zur Verfügung (2):
 | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
 | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
 
-Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
+- Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
 Alle grün markierten Flächen können bearbeitet werden.<br>
-Klicken Sie auf das (x) Icon über einer Komponente, um die Komponente zu löschen.
+- Klicken Sie auf das (x) Icon über einer Komponente, um die Komponente zu löschen.
 
 {: .box-note }
 **Hinweis:** Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.

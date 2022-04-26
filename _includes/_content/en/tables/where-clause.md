@@ -143,8 +143,8 @@ The following components are available in the editor (2):
 | Criteria | adds a new criteria after the selected criteria. |
 | Group | adds a new group of criteria the selected criteria. | 
 
-Click on a component to edit it. All areas that are marked green can be edited.<br>
-To delete a component, click the (x) icon above the component.<br>
+- Click on a component to edit it. All areas that are marked green can be edited.<br>
+- To delete a component, click the (x) icon above the component.<br>
 
 {: .box-note }
 **Note:** When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
