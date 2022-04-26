@@ -128,6 +128,8 @@ Entfernen oder bearbeiten Sie die Reihenfolge der einzelnen Kriterien über die 
 - **Move row up** ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach oben verschoben.
 - **Move row down** ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach unten verschoben.
 
+Die Reihenfolge der Kriterien kann auch per Drag&Drop bearbeitet werden.
+
 ![WHERE-Clause-Builder-Example](/img/content/xis/where-clause-builder-2.png){:class="img-responsive"}
 
 Folgende Komponenten stehen im Editor zur Verfügung (2):
@@ -143,13 +145,13 @@ Folgende Komponenten stehen im Editor zur Verfügung (2):
 | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
 | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
 
-Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
+- Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
 Alle grün markierten Flächen können bearbeitet werden.<br>
-Klicken Sie auf das (x) Icon über einer Komponente, um die Komponente zu löschen.
+- Klicken Sie auf das (x) Icon über einer Komponente, um die Komponente zu löschen.
 
 {: .box-note }
 **Hinweis:** Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.
-**Operator** ist zum Beispiel nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
+**Operator** ist z.B. nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
 
 ### SSIS-Variablen im WHERE Clause Editor
 

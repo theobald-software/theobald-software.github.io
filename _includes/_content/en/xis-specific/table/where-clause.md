@@ -126,6 +126,8 @@ Delete or edit the sequence of criteria using the buttons on the left (1):
 - **Move row up** changes the sequence of the criteria. The selected criteria moves up.
 - **Move row down** changes the sequence of the criteria. The selected criteria moves down.
 
+The sequence of criteria can also be changed with drag&drop.
+
 ![WHERE-Clause-Builder-Example](/img/content/xis/where-clause-builder-2.png){:class="img-responsive"}
 
 The following components are available in the editor (2):
@@ -140,8 +142,8 @@ The following components are available in the editor (2):
 | Criteria | adds a new criteria after the selected criteria. |
 | Group | adds a new group of criteria the selected criteria. | 
 
-Click on a component to edit it. All areas that are marked green can be edited.<br>
-To delete a component, click the (x) icon above the component.<br>
+- Click on a component to edit it. All areas that are marked green can be edited.<br>
+- To delete a component, click the (x) icon above the component.<br>
 
 {: .box-note }
 **Note:** When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.

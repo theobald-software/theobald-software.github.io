@@ -129,6 +129,8 @@ Entfernen oder bearbeiten Sie die Reihenfolge der einzelnen Kriterien über die 
 - **Move row up** ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach oben verschoben.
 - **Move row down** ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach unten verschoben.
 
+Die Reihenfolge der Kriterien kann auch per Drag&Drop bearbeitet werden.
+
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
 
 Folgende Komponenten stehen im Editor zur Verfügung (2):

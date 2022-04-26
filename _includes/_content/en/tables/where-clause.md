@@ -127,6 +127,8 @@ Delete or edit the sequence of criteria using the buttons on the left (1):
 - **Move row up** changes the sequence of the criteria. The selected criteria moves up.
 - **Move row down** changes the sequence of the criteria. The selected criteria moves down.
 
+The sequence of criteria can also be changed with drag&drop.
+
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
 
 The following components are available in the editor (2):
