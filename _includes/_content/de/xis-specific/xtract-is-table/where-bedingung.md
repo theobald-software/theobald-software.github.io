@@ -10,9 +10,6 @@
 
 ![Extraction-Settings-01](/img/content/xis/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
-
-### Schaltflächen
-
 **[Text mode]** <br>
 Ermöglicht die direkte Eingabe einer WHERE-Bedingung. **[Text mode]** ist der Standart-Eingabemodus.
 
@@ -30,6 +27,19 @@ Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtig
 Durchführung eines erneuten Lookups auf die selektierte(n) Tabelle(n). Bestehende Mappings und Feldselektionen bleiben dabei erhalten, anders als beim erneuten Hinzufügen.<br>
 Die *Refresh Metadata* Funktionalität kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. In solchen Fällen kann es zu Datenschiefständen kommen, die durch diese Funktion bereinigt werden.   
  
+### Einschränkungen bei WHERE-Bedingungen
+
+{: .box-note }
+**Hinweis:** 
+Bei Verwendung von Table Joins können Felder der rechten Tabelle eines LEFT OUTER JOIN erst ab SAP-Release 7.40, SP05 eingeschränkt werden. <br>
+
+Wenn Ihr SAP-System älter als Release 7.40, SP05 ist, erscheint folgender Fehler:
+*RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN*<br>
+(Unzulässiger Zugriff auf die rechte Tabelle eines LEFT OUTER JOIN)
+
+Weitere Informationen über die Änderungen in Release 7.40, SP05 erhalten Sie auf der [SAP Helpseite](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-DE/abennews-740_sp05-open_sql.htm#!ABAP_MODIFICATION_5@5@).
+
+
 ### Syntax der WHERE-Bedingung  
 
 {: .box-warning }
@@ -90,18 +100,6 @@ Im folgenden Beispiel wird eine Subquery mit dem Operator *IN* verwendet.
 Die folgende Anweisung gibt alle *aktiven* Kunden (Zeilen in der Tabelle KNA1) zurück, die z.B. einen Verkaufsbeleg in der Tabelle VBAK für Verkaufsbelegkopfdaten haben.
 
 ![WHERE Clause Subquery](/img/content/xis/table_where_sub-select.png){:class="img-responsive"}
-
-### Einschränkungen bei WHERE-Bedingungen
-
-{: .box-note }
-**Hinweis:** 
-Bei Verwendung von Table Joins können Felder der rechten Tabelle eines LEFT OUTER JOIN erst ab SAP-Release 7.40, SP05 eingeschränkt werden. <br>
-
-Wenn Ihr SAP-System älter als Release 7.40, SP05 ist, erscheint folgender Fehler:
-*RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN*<br>
-(Unzulässiger Zugriff auf die rechte Tabelle eines LEFT OUTER JOIN)
-
-Weitere Informationen über die Änderungen in Release 7.40, SP05 erhalten Sie auf der [SAP Helpseite](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-DE/abennews-740_sp05-open_sql.htm#!ABAP_MODIFICATION_5@5@).
 
 ### WHERE Clause Editor
 

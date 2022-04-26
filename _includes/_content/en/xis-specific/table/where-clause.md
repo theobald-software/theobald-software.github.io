@@ -12,9 +12,6 @@ The window "Table" opens.
 
 ![Extraction Settings-01](/img/content/xis/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
-
-### Buttons
-
 **[Text mode]** <br>
 Allows entering a WHERE clause directly into the text field. *Text mode* is the default method for defining a WHERE clause.
 
@@ -33,6 +30,15 @@ A new lookup is performed on the selected table(s). Existing mappings and field 
 It may be necessary to renew the metadata, for example, if a table has been adjusted on the SAP side, another source system has been connected, or the source system has been updated. 
 In such cases, data inconsistencies can occur that are resolved by this function.   
 
+
+### WHERE Clause Restrictions
+
+{: .box-note }
+**Note:** 
+When using table joins, restricting the right table of a LEFT OUTER JOIN is only possible starting from SAP Release 7.40, SP05. <br>
+
+If your SAP System is older than Release 7.40, SP05, the following error appears:
+*RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
 
 ### WHERE Clause Syntax 
 
@@ -94,15 +100,6 @@ The following statement returns all the *active* customers (rows in the table KN
 
 ![WHERE Clause Subquery](/img/content/xis/table_where_sub-select.png){:class="img-responsive"}
 
-
-### WHERE Clause Restrictions
-
-{: .box-note }
-**Note:** 
-When using table joins, restricting the right table of a LEFT OUTER JOIN is only possible starting from SAP Release 7.40, SP05. <br>
-
-If your SAP System is older than Release 7.40, SP05, the following error appears:
-*RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
 
 ### WHERE Clause Editor
 

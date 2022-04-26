@@ -12,9 +12,6 @@ The window "Table" opens.
 
 ![Extraction Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
-
-### Buttons
-
 **[Text mode]** <br>
 Allows entering a WHERE clause directly into the text field. *Text mode* is the default method for defining a WHERE clause.
 
@@ -32,6 +29,16 @@ Returns the number of rows/data records of an extraction, considering the WHERE 
 A new lookup is performed on the selected table(s). Existing mappings and field selections are retained, which is not the case when the table is added again. <br>
 It may be necessary to renew the metadata, for example, if a table has been adjusted on the SAP side, another source system has been connected, or the source system has been updated. 
 In such cases, data inconsistencies can occur that are resolved by this function.   
+
+
+### WHERE Clause Restrictions
+
+{: .box-note }
+**Note:** 
+When using table joins, restricting the right table of a LEFT OUTER JOIN is only possible starting from SAP Release 7.40, SP05. <br>
+
+If your SAP System is older than Release 7.40, SP05, the following error appears:
+*RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
 
 
 ### WHERE Clause Syntax 
@@ -95,15 +102,6 @@ The following statement returns all the *active* customers (rows in the table KN
 ![WHERE Clause Subquery](/img/content/table/table_where_sub-select.png){:class="img-responsive"}
 
 
-### WHERE Clause Restrictions
-
-{: .box-note }
-**Note:** 
-When using table joins, restricting the right table of a LEFT OUTER JOIN is only possible starting from SAP Release 7.40, SP05. <br>
-
-If your SAP System is older than Release 7.40, SP05, the following error appears:
-*RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
-
 ### WHERE Clause Editor
 
 The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
@@ -153,7 +151,7 @@ To delete a component, click the (x) icon above the component.<br>
 1. Click **Edit Runtime Parameters** in the main window of the component to create or edit dynamic runtime parameters.
 The window “Edit Runtime Parameters” opens.<br>
 ![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
-2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for data selections.<br>
+2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for actual values.<br>
 Click **[Add List]** to define list parameters that contain multiple values separated by commas e.g., 1,10 or “1”, “10”. 
 The placeholders need to be populated with actual values at extraction runtime.<br>
 **Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: “p_MATNR”).
