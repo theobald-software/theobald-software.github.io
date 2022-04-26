@@ -12,5 +12,3 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 ---
 
 {% include _content/en/tables/where-clause.md  %}
-
-{% include _content/en/tables/runtime-parameter.md  %}

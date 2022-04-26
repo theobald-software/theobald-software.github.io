@@ -27,7 +27,7 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 
 |Feldname|Beschreibung|
 |:----|:----|
-| *WHERE clause* tab| Erlaubt die Parametrisierung der kompletten WHERE-BEdingung oder Teile der WHERE-Bedingung. Beispiel: AEDAT > @v_aedat|
+| *WHERE clause* tab| Erlaubt die Parametrisierung der kompletten WHERE-BEdingung oder Teile der WHERE-Bedingung. Für mehr Informationen, siehe [SSIS-Variablen im WHERE Clause Editor](where-bedingung#ssis-variablen-im-where-clause-editor).|
 
 ****
 #### Weiterführende Links

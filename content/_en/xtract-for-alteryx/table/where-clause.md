@@ -12,6 +12,4 @@ lang: en_GB
 
 {% include _content/en/tables/where-clause.md  %}
 
-{% include _content/en/tables/runtime-parameter.md  %}
-
 For more information on how to populate the runtime parameters in Alteryx, see [Parameterizing](../parameterizing).

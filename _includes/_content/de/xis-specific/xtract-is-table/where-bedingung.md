@@ -8,7 +8,7 @@
 {: .box-note }
 **Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei der Extraktion mehrerer Tabellen der Fall sein.
 
-![Extraction-Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+![Extraction-Settings-01](/img/content/xis/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
 
 ### Schaltflächen
@@ -89,7 +89,7 @@ Weitere Informationen über die Subqueries erhalten Sie auf der [SAP Helpseite -
 Im folgenden Beispiel wird eine Subquery mit dem Operator *IN* verwendet. 
 Die folgende Anweisung gibt alle *aktiven* Kunden (Zeilen in der Tabelle KNA1) zurück, die z.B. einen Verkaufsbeleg in der Tabelle VBAK für Verkaufsbelegkopfdaten haben.
 
-![WHERE Clause Subquery](/img/content/table/table_where_sub-select.png){:class="img-responsive"}
+![WHERE Clause Subquery](/img/content/xis/table_where_sub-select.png){:class="img-responsive"}
 
 ### Einschränkungen bei WHERE-Bedingungen
 
@@ -108,7 +108,7 @@ Weitere Informationen über die Änderungen in Release 7.40, SP05 erhalten Sie a
 Der WHERE Clause Editor stellt ein Toolkit zur Verfügung, mit dem WHERE-Bedingungen auch ohne nähere Kenntnisse über die Syntax erstellt werden können.
 Klicken Sie auf **[Editor mode]**, um das Toolit zu öffnen.
 
-![WHERE-Clause-Builder-01](/img/content/where-clause-builder.png){:class="img-responsive"}
+![WHERE-Clause-Builder-01](/img/content/xis/where-clause-builder.png){:class="img-responsive"}
 
 Es gibt 2 Optionen, um der WHERE-Bedingung neue Kriterien hinzuzufügen:
 - **[Add Criteria]** fügt ein einzelnes Kriterium hinzu. <br>
@@ -129,17 +129,18 @@ Entfernen oder bearbeiten Sie die Reihenfolge der einzelnen Kriterien über die 
 - **Move row up** ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach oben verschoben.
 - **Move row down** ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach unten verschoben.
 
-![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
+![WHERE-Clause-Builder-Example](/img/content/xis/where-clause-builder-2.png){:class="img-responsive"}
 
 Folgende Komponenten stehen im Editor zur Verfügung (2):
 
-| Komponente    | Funktion          | 
+
+| Komponente      | Funktion          | 
 | ------------- |-------------| 
 | Column    | fügt die Spalte einer Tabelle hinzu. Klicken Sie auf die Komponente, um eine Spalte aus den verfügbaren Tabellen auszuwählen. | 
 | SQL       | fügt eine SQL-Anweisung hinzu.      |  
 | Operator  | fügt einen Operator hinzu, z.B. =, <, >, etc. |  
 | Value | fügt einen statischen Wert vom Typ *String*, *Number*, *Flag* oder *List* hinzu. *List* bietet einen separaten Editor, um Listen vom Typ *String*, *Number* oder *Select* zu erstellen. *Select* ermöglicht die Eingabe einer SELECT-Anweisung.|
-| Parameter | fügt einen zuvor definierten Laufzeitparameter hinzu, siehe [Laufzeitparameter im WHERE Clause Editor](#laufzeitparameter-im-where-clause-editor).|
+| Parameter | fügt einen Parameter oder eine Variable hinzu, siehe [SSIS-Variablen im WHERE Clause Editor](#ssis-variablen-im-where-clause-editor).|
 | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
 | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
 
@@ -151,26 +152,14 @@ Klicken Sie auf das (x) Icon über einer Komponente, um die Komponente zu lösch
 **Hinweis:** Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.
 **Operator** ist zum Beispiel nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
 
+### SSIS-Variablen im WHERE Clause Editor
 
-### Laufzeitparameter im WHERE Clause Editor
-
-1. Klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameters**, um Laufzeitparameter anzulegen und zu bearbeiten. 
-Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
-![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
-2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für eine Datenauswahl verwendet werden können.<br>
-Klicken Sie auf **[Add List]**, um Listenparameter zu definieren, die mehrere Werte enthalten können. Die Werte werden durch Kommas voneinander getrennt, z.B. 1,10 oder “1”, “10”
-Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
-**Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: “p_MATNR”).
-3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. 
-Die Datentypen müssen mit den SAP-Datentypen übereinstimmen.
-- String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
-- Number: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
-- Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen ‘X’ (true) oder eine leere Eingabe ‘‘ (false) als Eingabewert benötigen.
-Klicken Sie auf **[OK]** (3) zum Bestätigen.
-4. Klicken Sie im WHERE Clause Tab des Hauptfensters auf **[Editor mode]**, um den WHERE Clause Editor zu öffnen.
-5. Fügen Sie der WHERE-Bedingung über **[Add Criteria]** und **[Default with Parameter]** ein neues Kriterium hinzu.
-6. Klicken Sie auf die *Parameter* Komponente des Kriteriums. Eine Drop-Down-Liste öffnet sich und zeigt alle verfügbaren Laufzeitparameter an.
-Wählen Sie einen der Laufzeitparameter aus.<br>
+1. Definieren Sie eine SSIS Variable. Weisen Sie der Variable den korrekten Datentyp zu.
+2. Öffnen Sie die Xtract Table Komponente und öffnen Sie den *WHERE Clause* Tab.
+3. Klicken Sie auf **[Editor mode]**, um den WHERE Clause Editor zu öffnen.
+4. Fügen Sie der WHERE-Bedingung über **[Add Criteria]** und **[Default with Parameter]** ein neues Kriterium hinzu.
+5. Klicken Sie auf die *Parameter* Komponente des Kriteriums. Eine Drop-Down-Liste öffnet sich und zeigt alle verfügbaren Parameter und Variablen an.
+Wählen Sie eine der Variablen aus.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. Klicken Sie auf **[Load live Preview]**, um die WHERE-Bedingung zu testen. 
-Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
+6. Weisen Sie der Variablen einen Wert zu und klicken Sie auf **[Load live Preview]**, um die WHERE-Bedingung zu testen. 
+

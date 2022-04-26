@@ -31,7 +31,7 @@ The following fields and/or custom properties of the component allow entry of an
 
 |Field Name|Comment|
 |:----|:----|
-| *WHERE clause* tab| Allows parameterization of the complete WHERE clause or only parts of the WHERE clause. Example: AEDAT > @v_aedat. See also [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).|
+| *WHERE clause* tab| Allows parameterization of the complete WHERE clause or only parts of the WHERE clause. For more information, see [Using SSIS Variables in the WHERE Clause Editor](where-clause#using-ssis-variables-in-the-where-clause-editor) or the knowledge base article [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).|
 
 
 ****
