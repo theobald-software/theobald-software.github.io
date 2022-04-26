@@ -26,7 +26,7 @@ The target environment *Power BI Connector* offers two ways to connect Power BI 
 
 Xtract Universal supports the following environments:
 - [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) via [Power BI Custom Connector](#pbi-custom-connector)
-- [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) via [Power BI on-premisess data gateway](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem)
+- [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) via [Power BI on-premises data gateway](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem)
 - [Power BI Report Server](https://docs.microsoft.com/en-us/power-bi/report-server/get-started) via [Power Query M-script](#pbi-script)
 
 
@@ -149,7 +149,7 @@ To set up the on-premisess Data Gateway using the Power BI Custom Connector, fol
 **Note:** The connection to Xtract Universal can be created using Power Query M-script or Power BI Custom Connector. Using Power Query M-script does not require further configuration.
 
 1. Install the on-premisess Data Gateway on the Xtract Universal application server.
-2. Configure the Data Gateway, see [Use the on-premisess data gateway app](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-app).
+2. Configure the Data Gateway, see [Use the on-premises data gateway app](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-app).
 3. Switch to the *Connectors* tab and define the path to the Power BI Custom Connector, e.g. `C:\Program Files\XtractUniversal\powerbi`.<br> The *XtractUniversalExtension* will then be displayed as a Custom Data Connector.
 ![Data-Gateway Connectors](/img/content/xu/data-gateway-connectors.png){:class="img-responsive"}
 
@@ -252,7 +252,7 @@ Multiple calls to Xtract Universal result in in multiple entries for the same ex
 ****
 ## Related Links
 - [Youtube Tutorial: Use your SAP data in Microsoft Power BI with Xtract Universal](https://www.youtube.com/watch?v=al1FOtJjVIM){:target="_blank"}
-- [What is an on-premisess data gateway?](https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-onprem)
-- [Use custom data connectors with the on-premisess data gateway](https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-custom-connectors)
+- [What is an on-premises data gateway?](https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-onprem)
+- [Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-custom-connectors)
 - [Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
 - [Parameters in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/power-query-query-parameters)

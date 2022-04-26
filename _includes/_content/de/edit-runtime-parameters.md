@@ -9,7 +9,7 @@ Das Fenster "Edit Runtime Parameters" wird geöffnet.<br>
 2. Klicken Sie auf **[Add]** (1), um Parameter zu definieren, die als Platzhalter für die Datenselektionen verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. 
 Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.<br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: *"p_MATNR"*).
-3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen können mit den SAP-Datentypen übereinstimmen. 
+3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen müssen mit den SAP-Datentypen übereinstimmen. 
 - String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
 - Integer: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
 - Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. <br>

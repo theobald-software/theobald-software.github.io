@@ -10,7 +10,7 @@ The window "Table" opens.
 {: .box-note }
 **Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g. MARC~MATNR. This can be the case when extracting multiple tables.
 
-![Extraction Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+![Extraction Settings-01](/img/content/xis/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
 
 ### Buttons
@@ -92,7 +92,7 @@ Get more details about subqueries on the [SAP help site - Conditions](https://he
 In the following example a subquery is used with the *IN* operator. 
 The following statement returns all the *active* customers (rows in the table KNA1) that have i.e. a sales document in the table VBAK for sales document header data.
 
-![WHERE Clause Subquery](/img/content/table/table_where_sub-select.png){:class="img-responsive"}
+![WHERE Clause Subquery](/img/content/xis/table_where_sub-select.png){:class="img-responsive"}
 
 
 ### WHERE Clause Restrictions
@@ -109,7 +109,7 @@ If your SAP System is older than Release 7.40, SP05, the following error appears
 The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
 Click **[Editor mode]** to open the editor. 
 
-![WHERE-Clause-Builder-01](/img/content/where-clause-builder.png){:class="img-responsive"}
+![WHERE-Clause-Builder-01](/img/content/xis/where-clause-builder.png){:class="img-responsive"}
 
 There are 2 options for adding criteria to the WHERE clause:
 - **[Add Criteria]** adds single criteria. <br>
@@ -128,7 +128,7 @@ Delete or edit the sequence of criteria using the buttons on the left (1):
 - **Move row up** changes the sequence of the criteria. The selected criteria moves up.
 - **Move row down** changes the sequence of the criteria. The selected criteria moves down.
 
-![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
+![WHERE-Clause-Builder-Example](/img/content/xis/where-clause-builder-2.png){:class="img-responsive"}
 
 The following components are available in the editor (2):
 
@@ -138,7 +138,7 @@ The following components are available in the editor (2):
 | SQL       |  adds an SQL statement.      |  
 | Operator  | adds an operator e.g., =, <, >, etc. |  
 | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
-| Parameter | adds a previously defined runtime parameter, see [Using Runtime Parameters in the WHERE Clause Editor](#using-runtime-parameters-in-the-where-clause-editor).|
+| Parameter | adds a parameter or variable, see [Using SSIS Variables in the WHERE Clause Editor](#using-ssis-variables-in-the-where-clause-editor).|
 | Criteria | adds a new criteria after the selected criteria. |
 | Group | adds a new group of criteria the selected criteria. | 
 
@@ -148,24 +148,13 @@ To delete a component, click the (x) icon above the component.<br>
 {: .box-note }
 **Note:** When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
 
-### Using Runtime Parameters in the WHERE Clause Editor
+### Using SSIS Variables in the WHERE Clause Editor
 
-1. Click **Edit Runtime Parameters** in the main window of the component to create or edit dynamic runtime parameters.
-The window “Edit Runtime Parameters” opens.<br>
-![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
-2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for data selections.<br>
-Click **[Add List]** to define list parameters that contain multiple values separated by commas e.g., 1,10 or “1”, “10”. 
-The placeholders need to be populated with actual values at extraction runtime.<br>
-**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: “p_MATNR”).
-3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. 
-The data types can, but don’t need to correlate to SAP data types.
-- String: This data type can be used for any type of SAP selection field.
-- Number: This data type can be used for numeric SAP selection fields.
-- Flag: This data type can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
-Click **[OK]** (3) to confirm.
-4. Click **[Editor mode]** in the WHERE clause tab of the main window to open the WHERE clause editor.
-5. Add a new criteria and use **[Default with Parameter]** to add a parameter component.
-6. Click on the *Parameter* component. A drop-down-list that displays all available parameters opens. 
-Select a parameter from the list.<br>
+1. Define an SSIS variable. Make sure to assign the correct data type to the variable.
+2. Open the Xtract Table component and navigate to the *WHERE Clause* tab.
+3. Click **[Editor mode]** to open the WHERE clause editor.
+4. Add a new criteria and use **[Default with Parameter]** to add a parameter component.
+5. Click on the *Parameter* component. A drop-down-list that displays all available parameters and variables opens. 
+Select a variable from the list.
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. To test the WHERE clause, click **[Load live Preview]**. Provide parameter values when prompted.
+6. To test the WHERE clause, assign a default value for the SSIS variable and click **[Load live Preview]**.
