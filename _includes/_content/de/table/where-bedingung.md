@@ -116,7 +116,8 @@ Es gibt 2 Optionen, um der WHERE-Bedingung neue Kriterien hinzuzufügen:
 - **[Add Criteria Group]** fügt eine Gruppe hinzu, die mehrere Kriterien beinhaltet.
 	- Der Standardaufbau für eine Kriteriengruppe ist `([Spalte1][Operator1][Wert1][Logik][Spalte2][Operator2][Wert2])`, z.B. *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
 
-Kombinieren Sie einzelne Kriterien mit Kriteriengruppen, um komplexe Filter zu erstellen. <br>
+{: .box-tip }
+**Tipp:** Kombinieren Sie einzelne Kriterien mit Kriteriengruppen, um komplexe Filter zu erstellen. <br>
 Beispiel:
 *MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')* extrahiert nur Daten, bei denen die Spalte WERKS einen Wert von 1000 hat und die Spalte PSTAT entweder den Wert 'L' oder 'LB' hat.
 
@@ -160,7 +161,7 @@ Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
 Klicken Sie auf **[Add List]**, um Listenparameter zu definieren, die mehrere Werte enthalten können. Die Werte werden durch Kommas voneinander getrennt, z.B. 1,10 oder “1”, “10”
 Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: “p_MATNR”).
-3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. 
+3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. <br>
 Die Datentypen müssen mit den SAP-Datentypen übereinstimmen.
 - String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
 - Number: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.

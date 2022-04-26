@@ -115,7 +115,8 @@ There are 2 options for adding criteria to the WHERE clause:
 - **[Add Criteria Group]** adds a group of criteria.
 	- The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
 
-Combine multiple criteria and criteria groups to create complex filters e.g., 
+{: .box-tip }
+**Tip:** Combine multiple criteria and criteria groups to create complex filters e.g., 
 *MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')* extracts only data where the column WERKS equals 1000 and the column PSTAT equals either 'L' or 'LB'.
 
 #### Components of the WHERE Clause Editor
