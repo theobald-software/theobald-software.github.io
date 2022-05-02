@@ -4,7 +4,8 @@
 BI Client Tools wie z.B. Power BI, Power Pivot, Alteryx, etc. können Extraktionen in Xtract-Produkten (z.B. Xtract Universal oder BOARD Connector) starten. Die extrahierten Daten werden von Xtract-Produkten direkt in genannten Tools geladen.
 Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Anmeldeinformationen desjenigen (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. Dadurch greifen die SAP-Berechtigungen des ausführenden Benutzers, was z.B. häufig bei der Extraktion von BW/BEx Queries wichtig ist.
 
-Die Windows-Anmeldeinformationen des Benutzers müssen über das Xtract-Produkt an SAP weitergeleitet werden. Auf dem Weg zu SAP oder auf SAP-Seite wird ein Mapping zwischen Windows-Benutzer und dessen SAP-Anmeldeinformationen durchgeführt.
+Die Windows-Anmeldeinformationen des Benutzers müssen über das Xtract-Produkt an SAP weitergeleitet werden. 
+Auf dem Weg zu SAP oder auf SAP-Seite wird ein Mapping zwischen Windows-Benutzer und dessen SAP-Anmeldeinformationen durchgeführt.
 
 Single Sign-On (SSO) mit Xtract-Produkten lässt sich über drei unterschiedliche Verfahren darstellen:
 
@@ -14,7 +15,25 @@ Single Sign-On (SSO) mit Xtract-Produkten lässt sich über drei unterschiedlich
 
 ### SSO und SNC mit Client-Zertifikaten
 
-Übersichtsgrafik
+Die folgende Grafik zeigt den Prozess der Authentifizierung über Xtract Universal's *SSO Certificate* Option:
+
+![SSO-Certificate](/img/content/sso-certificate.png){:class="img-responsive"}
+
+1. Der Benutzer des BI-Tools startet eine Extraktion, indem er den XU Webservice aufruft.
+Der Benutzer authentifiziert sich mit seiner Active Directory Identität gegen den XU Webservice über HTTPS und SPNEGO.
+2. a) Der XU Server fordert über die Windows API das Client-Zertifikat des BI-Tool Benutzers vom Winows Certificate Store an. <br>
+b) Der XU Server fordert über die Windows API ein Agent-Zertifikat vom Winows Certificate Store an. 
+Falls das Client-Zertifikat des BI-Tool Benutzers im Windows Store nicht vorhanden ist, wird das Agent-Zertifikat verwendet, um ein entsprechendes Zertifikat auszustellen, siehe 2d.<br>
+c) Der XU Server erhält vom Windows Certificate Store ein Agent-Zertifikat, das den Server ermächtigt, Client-Zertifikate auszustellen. <br>
+d) <br>
+e) Der Windows Certificate Store erhält über MSRPC vom Active Directory Store ein Client-Zertifikat für den BI-Tool Benutzer. 
+3. Der XU Server erhält vom Windows Certificate Store das Client-Zertifikat des BI-Tool Benutzers.
+4. Der XU Server konfiguriert über die Windows Registry den SAP Secure Login Client.
+5. Der Secure Login Client erhält das vom XU Server angegebene Client-Zertifikat aus dem Windows Certificate Store.
+6. Der Secure Login Client authentifiziert sich mit dem Client Zertifikat des BI-Tool Benutzers über SNC gegen SAP.
+7. Der XU Server extrahiert mit der Identität und den Zugriffsrechten des Aufrufers (BI-Tool Benutzer) die Daten via RFC aus SAP.
+8. Der XU Server sendet die extrahierten Daten aus 7. an den Aufrufer.
+
 
 ### SSO und SNC mit Kerberos Wrapper Library
 
