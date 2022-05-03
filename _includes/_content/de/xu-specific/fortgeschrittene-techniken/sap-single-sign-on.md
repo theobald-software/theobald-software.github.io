@@ -19,26 +19,29 @@ Die folgende Grafik zeigt den Prozess der Authentifizierung über Xtract Univers
 
 ![SSO-Certificate](/img/content/sso-certificate.png){:class="img-responsive"}
 
-1. Der Benutzer des BI-Tools startet eine Extraktion, indem er den XU Webservice aufruft.
+1. Der Benutzer des BI-Tools (Caller) startet eine Extraktion, indem er den XU Webservice aufruft.
 Der Benutzer authentifiziert sich mit seiner Active Directory Identität gegen den XU Webservice über HTTPS und SPNEGO.
-2. a) Der XU Server fordert über die Windows API das Client-Zertifikat des BI-Tool Benutzers vom Winows Certificate Store an. <br>
-b) Der XU Server fordert über die Windows API ein Agent-Zertifikat vom Winows Certificate Store an. 
-Falls das Client-Zertifikat des BI-Tool Benutzers im Windows Store nicht vorhanden ist, wird das Agent-Zertifikat verwendet, um ein entsprechendes Zertifikat auszustellen, siehe 2d.<br>
-c) Der XU Server erhält vom Windows Certificate Store ein Agent-Zertifikat, das den Server ermächtigt, Client-Zertifikate auszustellen. <br>
-d) <br>
-e) Der Windows Certificate Store erhält über MSRPC vom Active Directory Store ein Client-Zertifikat für den BI-Tool Benutzer. 
-3. Der XU Server erhält vom Windows Certificate Store das Client-Zertifikat des BI-Tool Benutzers.
+2. Der XU Server prüft, ob im Certificate Store bereits ein Zertifikat, für den Caller vorhanden ist.
+Falls kein Client-Zertifikat für den Caller vorhanden ist, wird über den Windos Enrollment Agent ein Zertifikat ausgestellt. <br>
+a) Der XU Server fordert über die Windows API das Client-Zertifikat des Callers vom Winows Certificate Store an. <br>
+b) Der XU Server fordert über die Windows API ein Enrollment Agent Zertifikat vom Windows Certificate Store an. 
+Das Enrollment Agent Zertifikat kann verwendet werden, um Client-Zertifikate auszustellen.<br>
+c) Der XU Server erhält vom Windows Certificate Store das Enrollment Agent Zertifikat. <br>
+d) Falls in 2a) im Windows Certificate Store kein Zertifikat für den Caller gefunden wurde, enrollt der XU Server anhand des Enrollment Agent Zertifikats ein neues Client-Zertifikat bei den Active Directory Certificate Services.<br>
+e) Der Windows Certificate Store erhält über MSRPC von den Active Directory Services das Client-Zertifikat für den Caller. 
+3. Der XU Server erhält vom Windows Certificate Store das Client-Zertifikat des Callers aus Schritt 2.
 4. Der XU Server konfiguriert über die Windows Registry den SAP Secure Login Client.
-5. Der Secure Login Client erhält das vom XU Server angegebene Client-Zertifikat aus dem Windows Certificate Store.
-6. Der Secure Login Client authentifiziert sich mit dem Client Zertifikat des BI-Tool Benutzers über SNC gegen SAP.
-7. Der XU Server extrahiert mit der Identität und den Zugriffsrechten des Aufrufers (BI-Tool Benutzer) die Daten via RFC aus SAP.
+5. Der Secure Login Client erhält das vom XU Server angegebene Client-Zertifikat des Callers aus dem Windows Certificate Store.
+6. Der Secure Login Client authentifiziert sich mit dem Client-Zertifikat des Callers via SNC gegen SAP.
+7. Der XU Server extrahiert mit der Identität und den Zugriffsrechten des Callers die Daten via RFC aus SAP.
 8. Der XU Server sendet die extrahierten Daten aus 7. an den Aufrufer.
 
+Für mehr Informationen zu *SSO Certificate* in Xtract Universal, siehe [SSO mit Client-Zertifikaten](./sap-single-sign-on/sso-certificate).
 
 ### SSO und SNC mit Kerberos Wrapper Library
 
 {: .box-warning }
-**Warnung! Die Kerberos Wrapper Library (gx64krb5.dll) wir offiziel nicht mehr von SAP unterstützt.**
+**Warnung! Die Kerberos Wrapper Library (gx64krb5.dll) wird offiziell nicht mehr von SAP unterstützt.**
 
 {: .box-note }
 **Hinweis:** Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werden - z.B. SAPs Common Crypto Library **oder** gsskrb5, aber nicht beides gleichzeitig.
