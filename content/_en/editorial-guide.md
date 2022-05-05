@@ -43,6 +43,18 @@ It is recommended to use the following example values when creating content for 
 
 Foo, Bar, Baz, Qux
 
+### Tutorial Video
+
+The following tutorial video shows how to create a new SAP connection after installing Xtract Universal for the first time.
+
+<figure class="video_container">
+  <video width="431" height="270" muted="true" controls="true" allowfullscreen="true" >
+    <source src="../../img/content/videos/XU_Create_SAP_Source_Connection_Subtitles_FinalVersion.mp4" type="video/mp4">
+  <source src="../../img/content/videos/XU_Create_SAP_Source_Connection_Subtitles_FinalVersion.ogg" type="video/ogg">
+ Your browser does not support the video tag.
+  </video>
+</figure>
+
 ******
 #### Related Links:
 
