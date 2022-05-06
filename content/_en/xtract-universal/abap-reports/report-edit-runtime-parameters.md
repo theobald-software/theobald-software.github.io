@@ -11,5 +11,4 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=report-extraction-settings
 ---
 
-Use runtime parameters to change selections dynamically during runtime.<br>
 {% include _content/en/edit-runtime-parameters.md %}

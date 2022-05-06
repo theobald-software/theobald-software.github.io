@@ -2,7 +2,6 @@
 
 ### Laufzeitparameter erstellen 
 
-
 1. Klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameter**, um Laufzeitparameter anzulegen und zu bearbeiten. 
 Das Fenster “Edit Runtime Parameters” öffnet sich.<br> 
 ![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 

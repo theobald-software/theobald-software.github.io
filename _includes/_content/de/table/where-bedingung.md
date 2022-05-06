@@ -160,7 +160,6 @@ Alle grün markierten Flächen können bearbeitet werden.<br>
 Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
 ![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
 2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für echte Werte verwendet werden können.<br>
-Klicken Sie auf **[Add List]**, um Listenparameter zu definieren, die mehrere Werte enthalten können. Die Werte werden durch Kommas voneinander getrennt, z.B. 1,10 oder “1”, “10”
 Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: “p_MATNR”).
 3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. <br>
@@ -176,3 +175,7 @@ Wählen Sie einen der Laufzeitparameter aus.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
 7. Klicken Sie auf **[Load live Preview]**, um die WHERE-Bedingung zu testen. 
 Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
+
+
+{: .box-note }
+**Hinweis:** Listenparameter sind noch nicht verfügbar.

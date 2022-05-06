@@ -1,11 +1,12 @@
-Use runtime parameters to set values e.g., for selections dynamically at runtime.
+Use runtime parameters to set values e.g., for dynamic selection filters.
+
 
 ### Create Runtime Parameters 
 
 1. Click **Edit Runtime Parameters* in the main window of the component to create or edit dynamic runtime parameters. 
 The window “Edit Runtime Parameters” opens.<br> 
 ![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
-2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
+2. Click **[Add Scalar]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
 This allows you to dynamically set filters at runtime.<br>
 **Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: *"p_MATNR"*).
 3. Open the drop-down menu (2) and assign one of the following data types to the parameter. The data types can, but don't need to correlate to SAP data types. 
