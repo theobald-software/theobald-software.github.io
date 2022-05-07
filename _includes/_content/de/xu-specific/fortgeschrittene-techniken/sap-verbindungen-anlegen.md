@@ -1,8 +1,5 @@
 
 
-
-### Verbindungsdetails
-
 Das Fenster "Change Source" enthält die Verbindungsdetails und ist in vier Abschnitte unterteilt:
 - [General](#general) (Allgemeine Einstellungen)
 - [Authentication](#authentication) (Authentifizierung)

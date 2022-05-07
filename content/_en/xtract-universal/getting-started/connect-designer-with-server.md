@@ -6,7 +6,7 @@ description:  1. Connecting the designer with the server
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: en_GB
 progressstate: 5
 ---

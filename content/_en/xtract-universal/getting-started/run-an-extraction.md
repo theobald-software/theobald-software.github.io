@@ -1,8 +1,8 @@
 ---
 ref: xu-getting-started-03
 layout: page
-title:  3. Running an Extraction
-description: Step 3 - Run an Extraction
+title:  4. Running an Extraction
+description: Step 4 - Run an Extraction
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
