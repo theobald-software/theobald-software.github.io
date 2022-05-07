@@ -19,11 +19,9 @@ im Rahmen von Business Intelligence, Datenintegration und Datenanalyse.
 
 ### Verfügbare Komponenten
 
+Xtract Universal bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 In der folgenen Übersicht finden Sie, welche Komponente für die Datenextraktion aus einem SAP-System verwendet werden können. 
 ![XU-Components](/img/content/xu/xu_components.png){:class="img-responsive" width="800px" }
-
-### Extraktionstypen
-Xtract Universal bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 
 Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
 
@@ -38,7 +36,7 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 - [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 
 
-| Extraktionstyp   | ERP | BW |
+| Komponente   | ERP | BW |
 |-------------|:---:|:--:|
 | BAPI        | X   | X  |
 | BW Cube     |     | X  |
@@ -54,6 +52,7 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 {: .box-note }
 **Hinweis:** Weitere Szenarien und Kombinationen sind möglich.
 
+*****
 
 Weitere Informationen zu den Funktionen von Xtract Universal finden Sie in den folgenden Abschnitten:
 

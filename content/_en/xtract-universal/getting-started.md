@@ -11,24 +11,28 @@ weight: 10
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started
 ---
-This section contains the details on the SAP table extraction with the Xtract Table component and a general introduction to Xtract Universal.
-This section is therefore a prerequisite for all subsequent sections.
 
-For a short introduction on how to use Xtract Universal, also refer to our video *Get started with Xtract Universal*:
+This section contains a general introduction to Xtract Universal.
+This section is therefore a prerequisite for all subsequent sections.<br>
 
-<iframe 
-width="640" 
-height="360" 
-src="https://www.youtube.com/embed/pdlsfm0dLMA?rel=0" 
-title="YouTube video player" 
-frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen>
-</iframe>
+### Prerequisites
+
+- Installation of Xtract Universal on a Windows Server / VM. Download the latest trial version from our website, see [Download Trial Version](https://theobald-software.com/en/download-trial).
+- Network access to the SAP NetWeaver component must be granted, see [TCP/IP Ports of All SAP Products](https://help.sap.com/docs/Security/575a9f0e56f34c6e8138439eefc32b16/616a3c0b1cc748238de9c0341b15c63c.html?language=en-US). 
+- Access to the RFC interfaceof the SAP instance must be granted, see [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+- The following components require customization in SAP: [Table](./sap-customizing/custom-function-module-for-table-extraction) (optional), [Report](./sap-customizing/install-report-custom-function-module), [OHS](./sap-customizing/preparation-for-ohs-in-bw), [DeltaQ](./sap-customizing/customizing-for-deltaq). <br>
+SAP transport requests for the installation of custom function modules for the Table and Report components are provided in the installation directory of Theobald Software products. 
+The OHS and DeltaQ components require manual SAP customizations.
+
+{: .box-tip }
+**Tip:** We recommend using an SAP system user for the production environment and an SAP dialog user with further administration rights (SE37, SE16, RSA3, ...) for the evaluation phase.
+During evaluation a consultant might need to check data in the SAP system using the SAP GUI. An SAP system user cannot be used to access SAP via the SAP GUI.
+
+For a short introduction on how to use Xtract Universal, refer to our tutorial video [Get started with Xtract Universal](https://www.youtube.com/watch?v=pdlsfm0dLMA).
 
 ******
 
-Find more information in the following subsections:
+Find more information on how to get started in the following subsections:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 

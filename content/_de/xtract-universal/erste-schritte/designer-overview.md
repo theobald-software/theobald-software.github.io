@@ -6,7 +6,7 @@ description: Zusätzliche Funktionen im Designer
 product: xtract-universal
 parent: erste-schritte
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
 progressstate: 5

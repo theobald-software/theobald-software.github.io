@@ -1,8 +1,8 @@
 ---
 ref: bc-sap-customizing-04
 layout: page
-title: Preparation for OHS in BW
-description: Preparation for OHS in BW
+title: Customizing for OHS in BW
+description: Customizing for OHS in BW
 product: board-connector
 parent: sap-customizing
 permalink: /:collection/:path

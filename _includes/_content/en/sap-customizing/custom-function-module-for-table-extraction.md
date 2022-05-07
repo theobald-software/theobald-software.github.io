@@ -15,6 +15,7 @@ Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
 ### Installing Z_THEO_READ_TABLE 
 
+An SAP transport request for the installation of the function module is provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`.<br>
 There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), and one for systems with a lower version (*Z_THEO_READ_TABLE-before_740SP05.zip*).<br>
 
 - Z_THEO_READ_TABLE.zip contains version 2.x of Z_THEO_READ_TABLE - the custom function module, a number of ABAP classes and other DDIC objects.  

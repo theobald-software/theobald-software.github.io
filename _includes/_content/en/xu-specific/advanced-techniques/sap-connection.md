@@ -1,7 +1,5 @@
 
 
-### Connection Details
-
 The "Change Source" window contains the connection details and is divided into four sections:
 - [General](#general)
 - [Authentication](#authentication)

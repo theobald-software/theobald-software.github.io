@@ -1,12 +1,12 @@
 ---
 ref: xu-getting-started-04
 layout: page
-title: 4. Loading an Extraction into a Database
-description: Step 4 - Load an Extraction into Microsoft SQL Server
+title: 5. Loading an Extraction into a Database
+description: Step 5 - Load an Extraction into Microsoft SQL Server
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 progressstate: 5
 ---

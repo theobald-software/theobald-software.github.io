@@ -1,12 +1,12 @@
 ---
 ref: xu-getting-started-02
 layout: page
-title: 2. Defining a Table Extraction
-description: Step 2 - Define a Table Extraction
+title: 3. Defining a Table Extraction
+description: Step 3 - Define a Table Extraction
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 progressstate: 5
 ---
@@ -28,31 +28,5 @@ The window "Create Extraction" opens. <br>
 
 The window "Extract Single and Joint SAP Tables or Views" opens. 
 In this window you can define simple table extractions or join tables for extractions. In the following example, a single table is extracted. <br>
-																							  
-										
-																				 
 
 {% include _content/en/tables/define-a-table-extraction.md  %}
-																																	   
-																		  
-									 
-								   
-									   
-											 
-																			  
-																																			  
-
-			  
-																																																																 
-
-
-												
-																																														 
-
-																										 
-
-						   
-
-																																																																	   
-
-

@@ -17,5 +17,5 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizi
 ### Customizing
 For the following components a customizing on the SAP system is required: 
 
-- **OHS**: Refer to [Preparation for OHS in BW](./sap-customizing/preparation-for-ohs-in-bw).
+- **OHS**: Refer to [Customizing for OHS in BW](./sap-customizing/preparation-for-ohs-in-bw).
 - **DeltaQ**: Refer to [Customizing for DeltaQ](./sap-customizing/customizing-for-deltaq).

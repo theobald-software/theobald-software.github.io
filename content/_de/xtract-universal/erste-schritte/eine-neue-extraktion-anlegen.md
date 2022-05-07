@@ -1,12 +1,12 @@
 ---
 ref: xu-getting-started-02
 layout: page
-title: 2. Eine neue Extraktion anlegen
-description: 2 - Eine neue Extraktion anlegen
+title: 3. Eine neue Extraktion anlegen
+description: 3 - Eine neue Extraktion anlegen
 product: xtract-universal
 parent: erste-schritte
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 progressstate: 5
 ---
