@@ -1,7 +1,7 @@
 ---
 ref: xu-introduction-05
 layout: page
-title: 2. Eine SAP-Verbindung erstellen
+title: Schritt 2 -  Eine SAP-Verbindung erstellen
 description: SAP-Verbindung
 product: xtract-universal
 parent: erste-schritte

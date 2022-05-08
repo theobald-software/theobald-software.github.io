@@ -1,12 +1,12 @@
 ---
 ref: bc-getting-started-04
 layout: page
-title: Schritt 4 - Eine Extraktion in BOARD laden
-description: Schritt 4 - Eine Extraktion in BOARD laden
+title: Schritt 5 - Eine Extraktion in BOARD laden
+description: Schritt 5 - Eine Extraktion in BOARD laden
 product: board-connector
 parent: erste-schritte
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 progressstate: 5
 ---

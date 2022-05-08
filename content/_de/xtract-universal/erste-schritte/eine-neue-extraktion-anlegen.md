@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-02
 layout: page
-title: 3. Eine neue Extraktion anlegen
+title: Schritt 3 - Eine neue Extraktion anlegen
 description: 3 - Eine neue Extraktion anlegen
 product: xtract-universal
 parent: erste-schritte
@@ -12,7 +12,7 @@ progressstate: 5
 ---
 ### SAP-Verbindung anlegen
 
-Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Extraktion. Um eine SAP-Verbindung herzustellen, folgen Sie den Schritten beschrieben im Abschnitt [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen) beschrieben vor. 
+Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Extraktion. Um eine SAP-Verbindung herzustellen, folgen Sie den Schritten beschrieben im Abschnitt [SAP-Verbindung](./sap-verbindungen-anlegen) beschrieben vor. 
 
 
 ### Extraktion anlegen

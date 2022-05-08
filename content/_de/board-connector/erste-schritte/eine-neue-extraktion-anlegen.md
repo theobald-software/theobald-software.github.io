@@ -1,12 +1,12 @@
 ---
 ref: bc-getting-started-02
 layout: page
-title: Schritt 2 - Eine neue Extraktion anlegen
-description: Schritt 2 - Eine neue Extraktion anlegen
+title: Schritt 3 - Eine neue Extraktion anlegen
+description: Schritt 3 - Eine neue Extraktion anlegen
 product: board-connector
 parent: erste-schritte
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 progressstate: 5
 ---
@@ -14,7 +14,7 @@ progressstate: 5
 
 ### SAP-Verbindung anlegen
 
-Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Extraktion. Um eine SAP-Verbindung herzustellen, folgen Sie den Schritten beschrieben im Abschnitt [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen) beschrieben vor. 
+Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Extraktion. Um eine SAP-Verbindung herzustellen, folgen Sie den Schritten beschrieben im Abschnitt [SAP-Verbindung](.sap-verbindungen-anlegen) beschrieben vor. 
 
 
 ### Extraktion anlegen

@@ -1,12 +1,12 @@
 ---
 ref: bc-getting-started-03
 layout: page
-title: 3. Run an Extraction
-description: Step 3 - Run an Extraction
+title: Step 4 - Run an Extraction
+description: Step 4 - Run an Extraction
 product: board-connector
 parent: getting-started
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 progressstate: 5
 ---

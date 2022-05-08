@@ -1,7 +1,7 @@
 ---
 ref: bc-getting-started-01
 layout: page
-title: 1. Connect Designer with Server 
+title: Step 1 - Connect Designer with Server 
 description: Step 1- Connect Designer with Server
 product: board-connector
 parent: getting-started
@@ -10,7 +10,7 @@ weight: 1
 lang: en_GB
 progressstate: 5
 ---
-### Connecting to a server
+### Connecting to a Server
 1. Launch the BOARD Connector Designer.
 2. Connect the Designer to the BOARD Connector Server and the extraction repository.
 - When BOARD Connector Server is a local server, the server address is then *localhost*.<br>

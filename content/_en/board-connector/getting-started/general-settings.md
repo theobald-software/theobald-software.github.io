@@ -6,7 +6,7 @@ description: General Settings
 product: board-connector
 parent: getting-started
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=general-settings
 progressstate: 5

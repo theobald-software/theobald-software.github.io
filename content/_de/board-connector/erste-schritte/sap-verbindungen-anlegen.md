@@ -1,22 +1,24 @@
 ---
 ref: bc-introduction-04
 layout: page
-title: SAP-Verbindung
+title: Schritt 2 - Eine SAP-Verbindung erstellen
 description: SAP-Verbindung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 4
+weight: 2
+redirect_from:
+  - de/board-connector/einfuehrung/sap-verbindungen-anlegen
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sap-verbindungen
 ---
-
-### SAP-Verbindung Erstellen
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
 Um eine Verbindung zu SAP herzustellen, muss der Zugriff auf allgemeine Berechtigungsobjekte (RFC) verfügbar sein.
 Stellen Sie sicher, dass der Zugriff auf die allgemeinen Berechtigungsobjekte möglich ist. Weitere Informationen finden Sie im Knowledge-Base-Artikel zu [SAP Zugriffsrechten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+
+### SAP-Verbindung Erstellen
 
 1. Im Hauptfenster des Designers navigieren Sie in die Menüleiste und wählen 
 Sie **Server > Manage Sources**.<br>

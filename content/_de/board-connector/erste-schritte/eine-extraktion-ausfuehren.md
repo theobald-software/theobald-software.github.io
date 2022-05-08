@@ -1,12 +1,12 @@
 ---
 ref: bc-getting-started-03
 layout: page
-title: Schritt 3 - Eine Extraktion ausführen
-description: Schritt 3 - Eine Extraktion ausführen
+title: Schritt 4 - Eine Extraktion ausführen
+description: Schritt 4 - Eine Extraktion ausführen
 product: board-connector
 parent: erste-schritte
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: de_DE
 progressstate: 5
 ---

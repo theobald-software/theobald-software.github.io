@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-04
 layout: page
-title: 5. Loading an Extraction into a Database
+title: Step 5 - Loading an Extraction into a Database
 description: Step 5 - Load an Extraction into Microsoft SQL Server
 product: xtract-universal
 parent: getting-started

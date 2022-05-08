@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-04
 layout: page
-title: 5.  Extraktion in eine Datenbank laden
+title: Schritt 5 - Extraktion in eine Datenbank laden
 description: Schritt 5 - Eine Extraktion in eine Datenbank laden
 product: xtract-universal
 parent: erste-schritte

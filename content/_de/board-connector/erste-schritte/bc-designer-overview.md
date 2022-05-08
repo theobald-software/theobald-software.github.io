@@ -6,7 +6,7 @@ description: Zusätzliche Funktionen im Designer
 product: board-connector
 parent: erste-schritte
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
 progressstate: 5

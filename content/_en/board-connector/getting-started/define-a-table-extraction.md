@@ -1,19 +1,19 @@
 ---
 ref: bc-getting-started-02
 layout: page
-title: 2. Define a Table Extraction
-description: Step 2 - Define a Table Extraction
+title: Step 3 - Define a Table Extraction
+description: Step 3 - Define a Table Extraction
 product: board-connector
 parent: getting-started
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 progressstate: 5
 ---
 
-### Creating an SAP connection
+### Creating an SAP Connection
 
-A successful SAP connection is a prerequisite for creating an extraction. Follow the procedure described in [SAP Connection](../introduction/sap-connection) to create an SAP connection.
+A successful SAP connection is a prerequisite for creating an extraction. Follow the procedure described in [SAP Connection](./sap-connection) to create an SAP connection.
 
 ### Creating an Extraction
 

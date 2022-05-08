@@ -6,7 +6,7 @@ description: Allgemeine Einstellungen
 product: board-connector
 parent: erste-schritte
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=allgemeine-einstellungen
 progressstate: 5

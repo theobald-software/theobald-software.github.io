@@ -6,7 +6,7 @@ description: Additional Functions in Designer
 product: board-connector
 parent: getting-started
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=additional-functions-in-designer
 progressstate: 5

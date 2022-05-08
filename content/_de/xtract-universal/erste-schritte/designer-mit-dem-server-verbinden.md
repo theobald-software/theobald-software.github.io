@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-01
 layout: page
-title: 1. Den Designer mit dem Server verbinden
+title: Schritt 1 - Designer mit dem Server verbinden
 description: 1 - Designer mit dem Server verbinden
 product: xtract-universal
 parent: erste-schritte
