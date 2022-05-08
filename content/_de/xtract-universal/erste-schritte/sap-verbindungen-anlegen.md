@@ -40,9 +40,9 @@ Das Fenster "Manage Sources" wird geöffnet.  <br>
 Das folgende Video Tutorial zeigt, wie Sie nach der ersten Installation von Xtract Universal eine neue SAP-Verbindung erstellen.
 
 <figure class="video_container">
-  <video width="431" height="270" muted="true" controls="true" allowfullscreen="true" poster="../../img/content/videos/sap_connection_poster.png">
-    <source src="../../img/content/videos/XU_Create_SAP_Source_Connection.mp4" type="video/mp4">
-  <source src="../../img/content/videos/XU_Create_SAP_Source_Connection.ogg" type="video/ogg">
+  <video width="431" height="270" muted="true" controls="true" allowfullscreen="true" poster="../../../img/content/videos/sap_connection_poster.png">
+    <source src="../../../img/content/videos/XU_Create_SAP_Source_Connection.mp4" type="video/mp4">
+  <source src="../../../img/content/videos/XU_Create_SAP_Source_Connection.ogg" type="video/ogg">
  Your browser does not support the video tag.
   </video>
 </figure>
