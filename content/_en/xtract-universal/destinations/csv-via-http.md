@@ -30,7 +30,19 @@ The CSV (via HTTP) destination is supported by many products. The following prod
 
 {% include _content/en/xu-specific/destinations/general/convert-encoding.md %}	
 
-****
-## Related Links
-- KNIME Integration via [SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
-- [Dynamic Runtime Parameter within KNIME Workflow](https://kb.theobald-software.com/xtract-universal/dynamic-runtime-paramater%20within-KNIME-workflow)
+## Settings
+
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+The following settings can be defined for the destination:  
+
+### Destination Settings
+
+![XU_http-csv_Destination](/img/content/XU_http-csv_Destination.png){:class="img-responsive"}
+
+{% include _content/en/xu-specific/destinations/general/column-name-style.md %}	  
+{% include _content/en/xu-specific/destinations/general/date-conversion.md %}	  
+

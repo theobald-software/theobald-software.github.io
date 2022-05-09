@@ -1,18 +1,18 @@
 ---
-ref: destinations-11
+ref: destinations-14
 layout: page
-title: Webservice - CSV
-description: CSV (via HTTP)
+title: KNIME
+description: KNIME
 product: xtract-universal
 parent: destinationen
+childidentifier: csv-flat-file
 permalink: /:collection/:path
-weight: 12
+weight: 55
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=csv-via-http
+old_url: /Xtract-Universal-DE/default.aspx?pageid=zielumgebungen
 ---
 
-Die Destination *HTTP - CSV*  liefert die extrahierten Daten im generischen CSV-Format über einen HTTP-Stream bzw. Webservice. 
-CSV (via HTTP) wird von mehreren Produkten unterstützt. Die folgenden Produkte wurden getestet: Layer2, INFONEA und KNIME. 
+Die Destination *Flat File* erzeugt eine generische CSV-Datei. 
 
 ## Verbindung
 
@@ -23,13 +23,7 @@ CSV (via HTTP) wird von mehreren Produkten unterstützt. Die folgenden Produkte 
 3. Geben Sie einen **Namen** für die Destination ein.
 4. Wählen Sie den Destinationstyp aus dem Dropdown-Menü aus.
 
-### Destination Details 
-
-![CSV-Destination-Details](/img/content/xu/CSV-Destination-Details.png){:class="img-responsive"}
-
-{% include _content/de/xu-specific/destinationen/general/csv-settings.md %}														 
-
-{% include _content/de/xu-specific/destinationen/general/convert-encoding.md %}	
+Für die KNIME-Destination ist keine Konfiguration erforderlich.
 
 ## Einstellungen
 
@@ -43,7 +37,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
   
 ### Destination Settings - Destinationseinstellungen
 
-![XU_http-csv_Destination](/img/content/XU_http-csv_Destination.png){:class="img-responsive"}
+![XU_KNIME_Destination](/img/content/XU_KNIME_Destination.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}

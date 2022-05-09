@@ -25,6 +25,23 @@ The JSON destination is a generic JSON stream over HTTP.
 ### Destination Details
 To use the JSON destination, no further settings have to be made.
 
+## Settings
+
+### Opening the Destination Settings
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
+2. Click **[Destinations]**. The window "Destination Settings" opens.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+The following settings can be defined for the destination:  
+
+### Destination Settings
+
+![XU_JSON_Destination](/img/content/XU_http-json_Destination.png){:class="img-responsive"}
+
+{% include _content/en/xu-specific/destinations/general/column-name-style.md %}	  
+{% include _content/en/xu-specific/destinations/general/date-conversion.md %}	  
+
+
 ## Running an Extraction in Browser
 1. Run the extraction with HTTP-JSON destination in browser (see also [Getting Started with Xtract Universal](../getting-started/run-an-extraction)).
 2. Check the extraction results.

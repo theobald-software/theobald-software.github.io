@@ -24,6 +24,25 @@ Die JSON-Destination ist ein generischer JSON-Stream über HTTP.
 ### Destination Details
 Für das Anlegen einer JASON Zielumgebung, müssen keine weiteren Einstellungen vorgenommen werden.
 
+## Einstellungen
+
+### Destination Settings öffnen
+
+1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
+2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
+![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
+
+Die folgenden Einstellungen können für die Destination definiert werden. 
+  
+### Destination Settings - Destinationseinstellungen
+
+![XU_http-json_Destination](/img/content/XU_http-json_Destination.png){:class="img-responsive"}
+
+{% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
+{% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
+
+
+
 ## Extraktion im Browser ausführen
 1. Führen Sie die HTTP-JSON-Destination im Browser aus. Sehen Sie auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-extraktion-ausfuehren).
 2. Überprüfen Sie das Ergebnis im Browser.
