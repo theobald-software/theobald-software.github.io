@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-02
 layout: page
-title: 3. Defining a Table Extraction
+title: Step 3 - Defining a Table Extraction
 description: Step 3 - Define a Table Extraction
 product: xtract-universal
 parent: getting-started
