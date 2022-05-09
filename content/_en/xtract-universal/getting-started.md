@@ -18,7 +18,7 @@ This section is therefore a prerequisite for all subsequent sections.<br>
 ### Prerequisites
 
 - Installation of Xtract Universal on a Windows Server / VM. Download the latest trial version from our website, see [Download Trial Version](https://theobald-software.com/en/download-trial).
-- Network access to the SAP NetWeaver component must be granted, see [TCP/IP Ports of All SAP Products](https://help.sap.com/docs/Security/575a9f0e56f34c6e8138439eefc32b16/616a3c0b1cc748238de9c0341b15c63c.html?language=en-US). 
+- Network access to the SAP NetWeaver component must be granted, see [SAP TCP/IP Ports](https://kb.theobald-software.com/sap/sap-tcpip-ports). 
 - Access to the RFC interfaceof the SAP instance must be granted, see [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 - The following components require customization in SAP: [Table](./sap-customizing/custom-function-module-for-table-extraction) (optional), [Report](./sap-customizing/install-report-custom-function-module), [OHS](./sap-customizing/preparation-for-ohs-in-bw), [DeltaQ](./sap-customizing/customizing-for-deltaq). <br>
 SAP transport requests for the installation of custom function modules for the Table and Report components are provided in the installation directory of Theobald Software products. 

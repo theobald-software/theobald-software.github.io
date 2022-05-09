@@ -15,7 +15,7 @@ Dieser Abschnitt enthält eine allgemeine Einführung in Xtract Universal und di
 ### Voraussetzung
 
 - Installation von Xtract Universal auf einem Windows Server / einer VM. Laden Sie sich die aktuelle Version von unserer Webseite herunter, siehe [Download Trial Version](https://theobald-software.com/en/download-trial).
-- Der Netzwerk-Zugriff auf die SAP NetWeaver Komponente muss gewährleistet sein, siehe [TCP/IP Ports of All SAP Products](https://help.sap.com/docs/Security/575a9f0e56f34c6e8138439eefc32b16/616a3c0b1cc748238de9c0341b15c63c.html?language=en-US). 
+- Der Netzwerk-Zugriff auf die SAP NetWeaver Komponente muss gewährleistet sein, siehe [SAP TCP/IP Ports](https://kb.theobald-software.com/sap/sap-tcpip-ports). 
 - Der Zugriff auf die RFC-Schnittstelle der SAP-Instanz muss gewährleistet sein, siehe [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 - Für folgende Komponenten sind Anpassungen in SAP notwendig: [Table](./sap-customizing/funktionsbaustein-fuer-table-extraktion) (optional), [Report](./sap-customizing/report-funktionsbaustein-installieren), [OHS](./sap-customizing/vorbereitung-fuer-ohs-im-bw), [DeltaQ](./sap-customizing/customizing-fuer-deltaq). <br>
 Z-Funktionsbausteine für die Table und Report-Komponente werden als Teil der Theobald Software Produkte ausgeliefert und können mithilfe von Transportaufträgen installiert werden. 
