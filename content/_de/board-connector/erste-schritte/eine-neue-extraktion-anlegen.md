@@ -12,12 +12,7 @@ progressstate: 5
 ---
 
 
-### SAP-Verbindung anlegen
-
-Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Extraktion. Um eine SAP-Verbindung herzustellen, folgen Sie den Schritten beschrieben im Abschnitt [SAP-Verbindung](.sap-verbindungen-anlegen) beschrieben vor. 
-
-
-### Extraktion anlegen
+### Eine Extraktion anlegen
 Das folgende Beispiel zeigt die Erstellung einer Extraktion unter Verwendung der Komponente "SAP Table or View".
 
 1. Im Hauptfenster des BOARD Connector Designers klicken Sie auf **[New]**.

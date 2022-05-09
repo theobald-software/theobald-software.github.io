@@ -11,9 +11,6 @@ lang: en_GB
 progressstate: 5
 ---
 
-### Creating an SAP Connection
-A successful SAP connection is a prerequisite for creating an extraction. Follow the procedure described in [SAP Connection](./sap-connection) 
-to create an SAP connection.
 
 ### Creating an Extraction
 The following example shows the creation of an extraction using "SAP Table or View" component.<br>

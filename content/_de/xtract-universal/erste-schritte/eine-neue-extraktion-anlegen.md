@@ -10,12 +10,8 @@ weight: 3
 lang: de_DE
 progressstate: 5
 ---
-### SAP-Verbindung anlegen
 
-Eine erfolgreiche SAP-Anbindung ist die Voraussetzung für das Anlegen einer Extraktion. Um eine SAP-Verbindung herzustellen, folgen Sie den Schritten beschrieben im Abschnitt [SAP-Verbindung](./sap-verbindungen-anlegen) beschrieben vor. 
-
-
-### Extraktion anlegen
+### Eine Extraktion anlegen
 Das folgende Beispiel zeigt die Erstellung einer Extraktion mit der Komponente "SAP Table or View".
 1. Im Hauptfenster des Xtract Universal Designers klicken Sie auf **[Neu]** (1).
 Das Fenster "Create Extraction" wird geöffnet. 
