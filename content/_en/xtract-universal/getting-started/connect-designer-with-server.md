@@ -18,7 +18,8 @@ The default port (8064) may vary depending on the configuration.
 ![XU3_Designer_Connect](/img/content/xu/xu_connect_screen _neu.png){:class="img-responsive"}
 - When the Xtract Universal Designer and the Xtract Universal Server are not running on the same machine, type
  in the host name the Xtract Universal Server is running on. Make sure the port is not blocked by your firewall.
-3. If the service is not running on default port 8064 (can be configured in the server settings), specify the port by adding [:[port]](../server/ports) after the host name.
+3. If the service is not running on default port 8064, specify the port by adding [:[port]](../server/ports) after the host name.
+The default port can be configured in the [server settings](../server/server-settings).
 
 ### Authentication
 Xtract Universal offers different methods of authenticating and securing the connection between 

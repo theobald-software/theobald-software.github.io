@@ -18,7 +18,8 @@ The default port (8096) may vary depending on the configuration.
 ![XU3_Designer_Connect](/img/content/board/bc_connect_screen.png){:class="img-responsive"}
 - When the BOARD Connector Designer and the BOARD Connector Server are not running on the same machine, type
  in the host name the BOARD Connector Server is running on. Make sure the port is not blocked by your firewall.
-3. If the service is not running on default port 8096 (can be configured in the server settings), specify the port by adding [:[port]](../server/ports) after the host name.
+3. If the service is not running on default port 8096, specify the port by adding [:[port]](../server/ports) after the host name.
+The default port can be configured in the [server settings](../server/server-settings).
 
 ### Authentication
 BOARD Connector offers different methods of authenticating and securing the connection between 
