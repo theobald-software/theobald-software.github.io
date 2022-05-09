@@ -4,7 +4,7 @@ layout: page
 title: Schritt 2 - Eine SAP-Verbindung erstellen
 description: SAP-Verbindung
 product: board-connector
-parent: einfuehrung
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 2
 redirect_from:

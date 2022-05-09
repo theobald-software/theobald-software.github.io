@@ -4,7 +4,7 @@ layout: page
 title: Step 2 - SAP Connection
 description: SAP Connection
 product: board-connector
-parent: introduction
+parent: getting-started
 permalink: /:collection/:path
 weight: 2
 redirect_from:
