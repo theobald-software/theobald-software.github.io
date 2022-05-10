@@ -51,7 +51,7 @@ The following software applications must be installed for integration into KNIME
 
 ### Step by Step Guide
 
-1. Create an extraction in Xtract Universal. Select KNIME as the destination for the extraction.
+1. Create an extraction in Xtract Universal. Select KNIME as the destination for the extraction (1).
 ![XU Extraction](/img/content/knime/xu_extraction.png){:class="img-responsive"}
 2. Start the *KNIME Analytics Platform*. 
 3. Install the extension [SAP Reader (Theobald Software)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory).
@@ -61,7 +61,7 @@ The following software applications must be installed for integration into KNIME
 5. Open the SAP Reader Task 'Settings' and enter the URL address of the Xtract Universal Server, e.g. `http://localhost:8065/` (3).
 ![SAP Reader Settings](/img/content/knime/sap_reader_settings.png){:class="img-responsive"}
 6. Click **[Fetch Queries]** (4) and select an extraction.
-7. Confirm the entry by clicking **[OK]** (5).
+7. Confirm your input with **[OK]** (5).
 8. Start the extraction via **[Execute]**. 
 ![Execute SAP Reader](/img/content/knime/execute_sap_reader.png){:class="img-responsive"}
 9. Check the extracted SAP data via **[SAP Query Result]**.

@@ -52,7 +52,7 @@ Die folgenden Anwendungen müssen für die Integration on KNIME installiert sein
 
 ### Schritt-für-Schritt-Anleitung
 
-1. Erstellen Sie eine Extraktion in Xtract Universal. Wählen Sie KNIME als Destination für die Extraktion aus.
+1. Erstellen Sie eine Extraktion in Xtract Universal. Wählen Sie KNIME als Destination für die Extraktion aus (1).
 ![XU Extraction](/img/content/knime/xu_extraction.png){:class="img-responsive"}
 2. Starten Sie *KNIME Analytics Platform*. 
 3. Installieren Sie die [SAP Reader (Theobald Software)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory) Erweiterung von KNIME.
