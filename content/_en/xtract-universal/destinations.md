@@ -41,7 +41,7 @@ More information can be found under the *Requirements* section of each destinati
 - [Power BI connector (Cloud/Desktop)](./destinations/Power-BI-Connector) 
 - [Tableau](./destinations/tableau) 
 - [Qlik (QlikSense and QlikView)](./destinations/qliksense-qlikview) 
-- [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
+- [KNIME](./destinations/knime)
 
 ### Business Systems
 

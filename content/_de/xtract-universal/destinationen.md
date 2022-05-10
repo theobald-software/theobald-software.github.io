@@ -41,7 +41,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 - [Power BI connector (Cloud/Desktop)](./destinationen/Power-BI-Connector) 
 - [Tableau](./destinationen/tableau) 
 - [QlikSense and QlikView](./destinationen/qlik)  
-- [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
+- [KNIME](./destinationen/knime)
 
 ### Cloud Speicher
 
