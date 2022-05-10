@@ -245,20 +245,7 @@ Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
 **gzip**<br>
 Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt. 
 
-### File Splitting
-
-**File Splitting**<br>
-
-Schreibt die Extraktionsdaten einer einzelnen Extraktion in mehrere Dateien im Azure-Storage. 
-Dabei wird an jeden Dateinamen *_part[nnn]* angehägt. 
-
-**Max. file size** <br>
-Der Wert eingestellt in *Max. file size* bestimmt die Maximalgröße der Datei gespeichert im Azure-Storage. 
-
-{: .box-note }
-**Note:** Die Option *Max. file size* wird nicht von gzip-Dateien unterstützt.
-Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus bestimmt werden.
-
+{% include _content/de/xu-specific/destinationen/general/file-splitting.md %}
 
 ****
 ## Weiterführende Links

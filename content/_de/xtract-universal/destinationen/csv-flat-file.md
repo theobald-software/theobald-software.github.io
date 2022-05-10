@@ -70,3 +70,17 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 **Replace file**: eine vorhandene Zieldatei wird überschrieben. <br>
 **Append results**: Daten werden an eine bereits bestehende Zieldatei angehängt. <br>
 **Abort extraction**: Der Prozess wird abgebrochen, falls eine Zeildatei bereits existiert.   
+
+### File Splitting
+
+**File Splitting**<br>
+
+Schreibt die Extraktionsdaten einer einzelnen Extraktion in mehrere Dateien. 
+Dabei wird an jeden Dateinamen *_part[nnn]* angehägt. 
+
+**Max. file size** <br>
+Geben Sie die Maximalgröße der einzelnen Dateien ein, die abgelegt werden sollen. 
+
+{: .box-note }
+**Note:** Die Option *Max. file size* wird nicht von gzip-Dateien unterstützt.
+Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus bestimmt werden.

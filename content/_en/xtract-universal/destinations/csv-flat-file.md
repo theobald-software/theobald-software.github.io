@@ -68,3 +68,16 @@ The following settings can be defined for the destination:
 **Replace file**: The export process overwrites existing files.<br>
 **Append results**: The export process appends new data to an already existing file.<br>
 **Abort extraction**: The process is aborted, if the file already exists.  
+
+### File Splitting
+
+**File Splitting**<br>
+Writes extraction data of a single extraction to multiple files. 
+Each filename is appended by *_part[nnn]*. 
+
+**Max. file size** <br>
+The value set in *Max. file size* determines the maximum size of each file. 
+
+{: .box-note }
+**Note:** The option *Max. file size* does not apply to gzip files. 
+The size of a gzipped file cannot be determined in advance.
