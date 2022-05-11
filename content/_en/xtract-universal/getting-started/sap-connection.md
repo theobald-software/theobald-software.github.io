@@ -34,15 +34,3 @@ The window "Manage Sources" opens.
 2. Click **[Add]**. The window "Change Source" opens. <br>
 
 {% include _content/en/xu-specific/advanced-techniques/sap-connection.md %}
-
-### Video Tutorial
-
-The following tutorial video shows how to create a new SAP connection after installing Xtract Universal for the first time.
-
-<figure class="video_container">
-  <video width="431" height="270" muted="true" controls="true" allowfullscreen="true" poster="../../../img/content/videos/sap_connection_poster.png">
-    <source src="../../../img/content/videos/XU_Create_SAP_Source_Connection.mp4" type="video/mp4">
-  <source src="../../../img/content/videos/XU_Create_SAP_Source_Connection.ogg" type="video/ogg">
- Your browser does not support the video tag.
-  </video>
-</figure>
