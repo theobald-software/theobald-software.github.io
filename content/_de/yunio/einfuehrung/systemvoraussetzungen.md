@@ -33,6 +33,7 @@ SAP Release 4.6C und neuer werden unterstützt. Dazu gehören:<br/>
 Die folgenden SAP Releases werden nur eingeschränkt unterstützt:
 - SAP S/4HANA Cloud Extended Edition (EX)
 
+{% include _content/de/einfuehrung/sap-authentication-xtract.md %}
 {% include _content/de/einfuehrung/sap-misc.md %}
 {% include _content/de/einfuehrung/operating-systems.md %}
 
