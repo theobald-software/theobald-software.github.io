@@ -57,9 +57,6 @@ var main = {
                             case 'xtract-is':
                                 data.label = 'Xtract IS';
                                 break;
-                            case 'xtract-rs':
-                                data.label = 'Xtract RS';
-                                break;
                             case 'xtract-universal':
                                 data.label = 'Xtract Universal';
                                 break;
@@ -122,9 +119,6 @@ var main = {
                             case 'xtract-is':
                                 data.label = 'Xtract IS';
                                 break;
-                            case 'xtract-rs':
-                                data.label = 'Xtract RS';
-                                break;
                             case 'xtract-universal':
                                 data.label = 'Xtract Universal';
                                 break;
@@ -186,9 +180,6 @@ var main = {
                         break;
                     case 'Xtract IS':
                         $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractIS.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract IS</p>');
-                        break;
-                    case 'Xtract RS':
-                        $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractRS.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract RS</p>');
                         break;
                     case 'Xtract Universal':
                         $(this).parent().html('<img src="/img/products/TS_Icon_2C_XtractUniversal.svg" class="img-fluid hit-for-product-icon"> <p class="hit-for-product-text">Xtract Universal</p>');
