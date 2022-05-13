@@ -114,3 +114,4 @@ Der Windows-Benutzer muss ausreichende Zugriffsrechte auf den Dateiordner besitz
 - [Extraktion via Scheduler ausführen](./call-via-scheduler)
 - [Extraktion via ETL-Tool ausführen](./call-via-etl)
 - [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/explanation-of-using-config-command-line-tool)
+- [Execute & Schedule All Xtract Universal Extractions](https://kb.theobald-software.com/xtract-universal/execute_all_defined_xu_extractions)
