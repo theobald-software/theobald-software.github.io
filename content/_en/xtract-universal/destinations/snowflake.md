@@ -94,17 +94,7 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}
 
-### File Splitting
-
-**Max file size**<br>
-Defines the maximum size of the local csv file in the [Output Directory](#destination-details), before it is uploaded to snowflake via PUT and COPY command. 
-The default value for **max file size** is 50 MB.
-
-If *File Splitting* is not active, a single csv file is created and uploaded via a PUT and COPY command.
-
-{:.box-note}
-**Note:** The value for **Max file size** does not equal the size of the uploaded file, because the data is zipped via gzip before upload.
-
+{% include _content/en/xu-specific/destinations/general/file-splitting.md %}
 
 ### Preparation - SQL Commands
 

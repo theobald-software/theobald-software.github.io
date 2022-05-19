@@ -94,17 +94,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
-### File Splitting
-
-**Max file size**<br>
-Definiert, wie groß die im [Output-Verzeichnis](#destination-details) erzeugten csv-Dateien maximal werden können, bevor ein Upload (PUT und COPY-Befehl) nach Snowflake erfolgt. 
-Der Standardwert für die **max file size** ist 50 MB.
-
-Wenn *File Splitting* nicht aktiv ist, wird eine einzige csv-Datei erzeugt und am Ende der Extraktion mit einem einzigen PUT und COPY-Befehl hochgeladen.
-
-{:.box-note}
-**Hinweis:** Die angegeben MB-Größe entspricht nicht der Größe der hochgeladenen Datei, da diese vor dem Upload via gzip gezippt wird. Für mehr Informationen, siehe [Snowflake: Komprimierung bei PUT-Befehl](https://docs.snowflake.com/de/sql-reference/sql/put.html#optional-parameters).
-
+{% include _content/de/xu-specific/destinationen/general/file-splitting.md %}
 
 ### Preparation - SQL Anweisungen
 

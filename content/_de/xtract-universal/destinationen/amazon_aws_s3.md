@@ -165,16 +165,4 @@ Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werde
 Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](../fortgeschrittene-techniken/script-ausdruecke#skript-ausdrücke-als-dynamische-ordnerpfade-verwenden) definiert werden. 
 Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt.
 
-### File Splitting
-
-**File Splitting**<br>
-
-Schreibt die Extraktionsdaten einer einzelnen Extraktion in mehrere Dateien im Azure-Storage. 
-Dabei wird an jeden Dateinamen *_part[nnn]* angehägt. 
-
-**Max. file size** <br>
-Der Wert eingestellt in *Max. file size* bestimmt die Maximalgröße der Datei gespeichert im Azure-Storage. 
-
-{: .box-note }
-**Note:** Die Option *Max. file size* wird nicht von gzip-Dateien unterstützt.
-Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus bestimmt werden.
+{% include _content/de/xu-specific/destinationen/general/file-splitting.md %}

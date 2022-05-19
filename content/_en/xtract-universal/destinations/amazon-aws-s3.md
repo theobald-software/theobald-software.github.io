@@ -164,14 +164,4 @@ Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/
 This field allows entry of [script expressions](../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). 
 This way, a folder path can be dynamically determined at extraction execution.
 
-### File Splitting
-
-**File Splitting**<br>
-
-Writes extraction data of a single extraction to multiple files in Azure storage. Each filename is appended by *_part[nnn]*. 
-
-**Max. file size** <br>
-The value set in *Max. file size* determines the maximum size of the file stored in Azure storage. 
-
-{: .box-note }
-**Note:** The option *Max. file size* does not apply to gzip files. The size of a gzipped file cannot be determined in advance.
+{% include _content/en/xu-specific/destinations/general/file-splitting.md %}

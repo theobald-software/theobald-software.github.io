@@ -252,18 +252,7 @@ The data is transferred uncompressed and stored as a csv file.
 **gzip**<br>
 The data is transferred compressed and stored as a gz file. 
 
-### File Splitting
-
-**File Splitting**<br>
-
-Writes extraction data of a single extraction to multiple files in Azure storage. Each filename is appended by *_part[nnn]*. 
-
-**Max. file size** <br>
-The value set in *Max. file size* determines the maximum size of the file stored in Azure storage. 
-
-{: .box-note }
-**Note:** The option *Max. file size* does not apply to gzip files. The size of a gzipped file cannot be determined in advance.
-
+{% include _content/en/xu-specific/destinations/general/file-splitting.md %}
 
 *****
 ## Related Links

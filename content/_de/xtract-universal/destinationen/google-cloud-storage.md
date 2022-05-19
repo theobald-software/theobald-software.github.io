@@ -198,16 +198,4 @@ Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
 **gzip**<br>
 Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt. 
 
-### File Splitting
-
-**No Splitting**<br>
-Schreibt Extraktionsdaten einer einzelnen Extraktion in eine einzelne Datei in Google Cloud Storage.
-
-**Split**<br>
-Schreibt Extraktionsdaten einer einzelnen Extraktion in mehrere Dateien in Google Cloud Storage. Jeder Dateiname wird angehängt durch *_part[nnn]*. <br> Im Falle von csv-Dateien wird die Dateigröße durch den Wert bestimmt, der in *Max. CSV file size* steht.
-
-**Max. CSV file size** <br>
-Maximale Größe einer im Google Cloud Storage-Konto gespeicherten csv-Datei. 
-
-{: .box-note }
-**Hinweis:** Die Option *Max. CSV file size* gilt nicht für gzip-Dateien. Die Größe einer gezippten Datei kann nicht im Voraus bestimmt werden.
+{% include _content/de/xu-specific/destinationen/general/file-splitting.md %}
