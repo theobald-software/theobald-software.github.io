@@ -74,7 +74,6 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ### File Splitting
 
 **File Splitting**<br>
-
 Schreibt die Extraktionsdaten einer einzelnen Extraktion in mehrere Dateien. 
 Dabei wird an jeden Dateinamen *_part[nnn]* angehägt. 
 
