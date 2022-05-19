@@ -55,7 +55,7 @@ Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (6). Die folgenden Ve
 2. Klicken Sie **[Edit Filter]**. Das Fenster "Member Filter" öffnet sich. Sie können *Einzelne Werte (Single Values)* setzen, *Wertebereiche (Value Ranges)* definieren oder *Listenparameter* selektieren.
 ![Query Filter Define](/img/content/xu/cube-filter.png){:class="img-responsive"}
 3. Wählen Sie einen einzelnen Wert (8) oder klicken Sie auf **[Add]** (9), um Wertebereiche hinzuzufügen. 
-4. Definieren Sie die Werte für die Filterung. Dynamische Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). Um eine Liste von Werten zu verwenden, die zur Laufzeit gesetzt wird, wählen Sie einen Listenparameter aus der Drop-down-Liste *List Parameter* (10).
+4. Definieren Sie die Werte für die Filterung. Dynamische Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). Um eine Liste von Werten zu verwenden, die zur Laufzeit gesetzt wird, wählen Sie einen Listenparameter aus der Dropdown-Liste *List Parameter* (10).
 Wenn nötig, löschen Sie Filter über den **[Remove]**-Button (Mülltonnensymbol).
 5. Klicken Sie auf **[OK]** zum Bestätigen. Das Fenster "Member Filter" schließt sich.
 

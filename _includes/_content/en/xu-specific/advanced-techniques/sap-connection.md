@@ -49,7 +49,7 @@ The following authentication methods are supported:
 
 ![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
-#### Plain
+### Plain Authenthication
 
 Enter your SAP username and password.
 
@@ -63,7 +63,7 @@ Caching the result of extractions is inactive.
 {: .box-note }
 **Note:** The option **Request SAP credentials from caller when running extractions** requires extractions to be called via [HTTPS - unrestricted](../server/server-settings#web-server).
 
-#### Secure Network Communication (SNC)
+### Secure Network Communication (SNC)
 
 ![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
 
@@ -97,8 +97,7 @@ For this scenario "HTTPS - Restricted to AD users with Designer read access" mus
 Enter the name of the certificate template and the thumbprint of the enrollment agent certificate.
 The SAP Secure Login Client must be installed on the machine that runs the XU or BC server.
 
-
-#### SAP Logon Ticket
+### SAP Logon Ticket
 
 For information on how to use an authentication with SAP Logon Tickets, see [**SAP Log On Ticket**](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket).
 
@@ -146,8 +145,21 @@ A confirmation window opens. <br>
 Click **[Test Server Connection]** to test the connection between the Server and SAP. 
 A confirmation window opens. <br>
 
-### Checking the New SAP Connection
+### Editing the SAP Connection
 1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**.<br>
-The window "Manage Sources" opens. <br>
+The window "Manage Sources" opens. 
 2. Check if the created SAP connection is listed. 
 ![XU-Create-Connection-4](/img/content/xu_manage_source_2.png){:class="img-responsive"}
+3. Click the **[Edit]** icon. The window "Change Source" opens.
+4. Edit the source settings.
+
+### Assigning an SAP Source to an Extraction
+
+An SAP source must be assigned when creating an extraction. <br>
+Follow the instructions below to change the source of an extraction:
+ 
+1. Select an extraction from the list of extractions in the main window of the Designer.
+2. Click **[Source]**. The window "Change Source" opens.<br>
+![Change-Source](/img/content/Change_Source.png){:class="img-responsive"}
+3. Select an SAP source from the dropdown list.
+4. Confirm your input with **[OK]**.

@@ -50,7 +50,7 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 
 ![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
-#### Plain
+### Plain Authentication
 
 Geben Sie Ihren SAP-Benutzernamen und Ihr Passwort ein.<br>
 
@@ -64,7 +64,7 @@ Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inakti
 {: .box-note }
 **Hinweis:** Die Option **Request SAP credentials from caller when running extractions** erfordert, dass die Extraktionen über [HTTPS - unrestricted](../server/server_einstellungen#web-server) aufgerufen werden.
 
-#### Secure Network Communication (SNC)
+### Secure Network Communication (SNC)
 
 ![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
 
@@ -98,7 +98,7 @@ Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [S
 Geben Sie den Namen des Certificate Templates und den Thumbprint des Zertifikats des Enrollment Agents an.
 Der SAP Secure Login Client muss auf der Maschine, auf dem der XU- oder BC-Server läuft, installiert sein.
 
-#### SAP Logon Ticket
+### SAP Logon Ticket
 Für Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [**SAP Log On Ticket**](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket).
 
 ### RFC Options
@@ -139,16 +139,28 @@ Für mehr Informationen, siehe [Zugriffssteuerung](../sicherheit/zugriffsverwalt
 
 **Test Designer Connection**<br>
 Klicken Sie **[Test Designer Connection]**, um die Verbindung zwischen dem Designer und SAP zu überprüfen. 
-Ein Bestätigungsfenster öffnet sich. 
+Ein Bestätigungsfenster wird geöffnet. 
 
 **Test Server Connection**<br>
 Klicken Sie **[Test Server Connection]**, um die Verbindung zwischen dem Server und SAP zu überprüfen. 
-Ein Bestätigungsfenster öffnet sich. 
+Ein Bestätigungsfenster wird geöffnet. 
 
-### Angelegte SAP-Verbindung überprüfen
+### Angelegte SAP-Verbindung bearbeiten
 
-1. Im Hauptfenster des Designers navigieren Sie zur Menüleiste und wählen den Menüpunkt **Server > Manage Sources**.<br>
-Das Fenster "Manage Sources" öffnet sich.<br>
+1. Navigieren Sie im Hauptfenster des Designers zur Menüleiste und wählen Sie den Menüpunkt **Server > Manage Sources**.<br>
+Das Fenster "Manage Sources" wird geöffnet.<br>
 2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist. 
 ![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}
+3. Klicken Sie auf das Stiftsymbol. Das Fenster "Change Source" öffnet sich.
+4. Bearbeiten Sie die Einstellungen in "Change Source".
 
+### Eine SAP Quelle einer Extraktion zuweisen
+
+Eine SAP Quelle muss beim Erstellen einer Extraktion angegeben werden.<br>
+Folgen Sie den unten stehenden Anweisungen, um einer Extraktion eine neue Quelle zuzuweisen:
+ 
+1. Wählen Sie im Hauptfenster des Designers eine Extraktion aus der Liste der Extraktionen aus.
+2. Klicken Sie auf **[Source]**. Das Fenster "Change Source" öffnet sich.<br>
+![Change-Source](/img/content/Change_Source.png){:class="img-responsive"}
+3. Wählen Sie eine SAP Quelle aus der Dropdown-Liste aus.
+4. Bestätigen Sie Ihre Auswahl mit **[OK]**.
