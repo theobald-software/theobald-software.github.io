@@ -155,8 +155,7 @@ The window "Manage Sources" opens.
 
 ### Assigning an SAP Source to an Extraction
 
-An SAP source must be assigned when creating an extraction. <br>
-Follow the instructions below to change the source of an extraction:
+An SAP source is assigned when creating an extraction. To change the source of an extraction follow the instructions below:
  
 1. Select an extraction from the list of extractions in the main window of the Designer.
 2. Click **[Source]**. The window "Change Source" opens.<br>

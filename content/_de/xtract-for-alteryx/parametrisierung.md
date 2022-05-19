@@ -31,7 +31,7 @@ Für detailierte Informationen über die Xtract ODP Komponente, siehe [Eine ODP 
 ### Erstellen eines Batch Makros mit Control Parametern
 
 1. Erstellen Sie einen neuen Workflow, der eine Extraktion enthält, siehe  [Eine Extraktion erstellen](#eine-extraktion-erstellen).
-2. Um den Workflow als Batch Makro verwenden zu können, navigieren Sie zu *Workflow Configuration* und wählen Sie in der Drop-down-Liste **Batch Makro** als Workflow Type aus.<br>
+2. Um den Workflow als Batch Makro verwenden zu können, navigieren Sie zu *Workflow Configuration* und wählen Sie in der Dropdown-Liste **Batch Makro** als Workflow Type aus.<br>
 ![BatchMacro](/img/content/xfa/batchmakro.png){:class="img-responsive"}
 3. Speichern Sie die Datei. Sobald der Workflow als Batch Makro gespeichert ist, erhält jedes Tool im Workflow einen Anker (Blitzsymbol) mit dem sich nur *Interface* Toole verbinden können.
 4. Fügen Sie einen **Control Parameter** aus der *Interface* Toolbox hinzu und labeln Sie den Parameter, z.B. *cp_MATNR_low* und *cp_MATNR_high*, um mehrere Parameter voneinander unterscheiden zu können (1).
@@ -44,7 +44,7 @@ Für dieses Beispiel weisen Sie den Control Parameter *cp_MAKT_low* dem Xtract O
 8. Speichern Sie das Makro.
 
 {: .box-note}
-**Hinweis:** Um Parameter mit Formeln zu verwenden, wählen Sie im **Update Value** Tool die Option *Update Value with Formula* aus der Drop-down-Liste **Select an action type** aus.
+**Hinweis:** Um Parameter mit Formeln zu verwenden, wählen Sie im **Update Value** Tool die Option *Update Value with Formula* aus der Dropdown-Liste **Select an action type** aus.
 Geben Sie entweder eine Formel direkt in das Feld **Formula** ein oder klicken Sie auf **[...]**, um den Formeleditor zu öffnen.
 
 #### Parametrisierung von Komponenten ohne Laufzeitparameter
@@ -65,7 +65,7 @@ Beispiel: 000000000000000023 als Eingabe für *p_MATNR_low* und 0000000000000001
 ![Input-Text](/img/content/xfa/input-text.png){:class="img-responsive"}
 2. Um ein Batch Makro zu importieren, machen Sie einen Rechtsklick auf die Leinwand und navigieren zu **Insert > Macro**. Fügen Sie das Makro hinzu, das die Xtract Komponente und die Control Parameter beinhaltet. <br>
 3. Verbinden Sie das **Text Input** Tool mit dem Batch Makro (2).
-4. Markieren Sie das Batch Makro (2) und verwenden Sie die Drop-down-Listen **Choose field**, um den Control Parametern die Werte aus den **Text Input** Spalten zuzuweisen.<br>
+4. Markieren Sie das Batch Makro (2) und verwenden Sie die Dropdown-Listen **Choose field**, um den Control Parametern die Werte aus den **Text Input** Spalten zuzuweisen.<br>
 ![Import-Macro](/img/content/xfa/importmacro.png){:class="img-responsive"}
 5. Fügen Sie ein **Browse** Tool (3) hinzu, um das Ergebnis des Batch Makros zu prüfen und führen Sie den Workflow aus.<br>
 

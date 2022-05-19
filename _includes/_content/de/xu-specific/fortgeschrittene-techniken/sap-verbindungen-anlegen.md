@@ -156,8 +156,8 @@ Das Fenster "Manage Sources" wird geöffnet.<br>
 
 ### Eine SAP Quelle einer Extraktion zuweisen
 
-Eine SAP Quelle muss beim Erstellen einer Extraktion angegeben werden.<br>
-Folgen Sie den unten stehenden Anweisungen, um einer Extraktion eine neue Quelle zuzuweisen:
+Eine SAP Quelle wird beim Erstellen einer Extraktion angegeben.
+Um einer Extraktion eine neue Quelle zuzuweisen, folgen Sie den unten stehenden Anweisungen:
  
 1. Wählen Sie im Hauptfenster des Designers eine Extraktion aus der Liste der Extraktionen aus.
 2. Klicken Sie auf **[Source]**. Das Fenster "Change Source" öffnet sich.<br>
