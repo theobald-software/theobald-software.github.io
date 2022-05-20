@@ -12,7 +12,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-With the user management you can create custom users with credentials to restrict access to the yunIO designer and to yunIO services.
+With the user management you can create custom users with credentials to restrict access to the yunIO Designer and to yunIO services.
 
 ### Creating Users
 

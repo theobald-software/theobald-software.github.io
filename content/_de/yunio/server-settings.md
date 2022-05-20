@@ -1,7 +1,7 @@
 ---
 ref: yunio-07
 layout: page
-title: Server Settings
+title: Server-Einstellungen
 description: Server
 product: yunio
 parent: yunio
