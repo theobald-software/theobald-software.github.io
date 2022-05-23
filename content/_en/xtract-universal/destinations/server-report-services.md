@@ -23,6 +23,7 @@ To use the SSRS destination, you need the following components:
 - the [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) plugin (version 2.6.11 or higher) for Visual Studio.
 - Power BI Report Server (January 2020 or later)
 - Xtract Universal (version 4.29 or higher)
+- to use [Transport Layer Security](../security/server-security#prerequisite-activating-tls-encryption), it is necessary to modify the Registry of the machine that runs the SSRS server according to the [Microsoft Help (Configure Strong cryptography)](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography) 
 
 {: .box-note }
 **Note:** The Power BI Report Builder is not supported.
@@ -130,7 +131,7 @@ If *Xtract Universal* is not available in the drop-down list (2) even though the
 **Tip:** The *connection string* is part of the URL string displayed in the "Run Extraction" window of the Designer. Copy the URL string up to '?' and paste it as the *connection string* into Visual Studio.
 
 {: .box-note }
-**Note:** When **https Restricted...** or **https Unrestricted** is activated in the [XU Webserer settings](../security/server-security#prerequisite-activating-tls-encryption), make sure to modify the Registry of the machine that the SSRS server is running on according to the [Microsoft Help (Configure Strong cryptography)](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography).
+**Note:** When **https Restricted...** or **https Unrestricted** is activated in the [XU Webserer settings](../security/server-security#prerequisite-activating-tls-encryption), make sure to modify the Registry of the machine that runs the SSRS server according to the [Microsoft Help (Configure Strong cryptography)](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography).
 
 ### Creating a Report using an Xtract Universal Data Source
 

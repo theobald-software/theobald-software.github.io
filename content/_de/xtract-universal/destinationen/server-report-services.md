@@ -17,12 +17,13 @@ Der folgende Abschnitt behandelt die Verwendung von Xtract Universal für eine S
 ## Voraussetzung
 
 
-Um sie SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
+Um die SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
 
 - Visual Studio 2017 oder höher
 - das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin (Version 2.6.11 oder höher) für Visual Studio.
 - Power BI Report Server (Januar 2020 oder später)
 - Xtract Universal (Version 4.29 oder höher)
+- Bearbeiten Sie die Registry des Rechners, auf dem der SSRS Server läuft, entsprechend der [Microsoft Hilfe (Konfigurieren für starke Kryptografie)](https://docs.microsoft.com/de-de/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography), um [Transport Layer Security]((../sicherheit/serversicherheit)) nutzen zu können.
 
 {: .box-note }
 **Hinweis:** Der Power BI Report Builder wird nicht unterstützt.
@@ -135,7 +136,7 @@ Wenn *Xtract Universal* trotz aktuellem *Microsoft Reporting Services Projects* 
 **Tipp:** Der *connection string* ist im URL string aus dem "Run Extraction"-Fenster des Designers enthalten. Kopieren Sie den String bis zum '?' und fügen Sie ihn als *connection string* in Visual Studio ein.
 
 {: .box-note }
-**Hinweis:** Wenn in den [XU Webserer Einstellungen](../sicherheit/serversicherheit) **https Restricted...** oder **https Unrestricted** aktiviert ist, muss auf dem Rechner auf dem der SSRS Server läuft die Registry entsprechend der [Microsoft Hilfe (Konfigurieren für starke Kryptografie)](https://docs.microsoft.com/de-de/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography) angepasst werden.
+**Hinweis:** Wenn in den [XU Webserer Einstellungen](../sicherheit/serversicherheit) **https Restricted...** oder **https Unrestricted** aktiviert ist, muss auf dem Rechner, auf dem der SSRS Server läuft, die Registry entsprechend der [Microsoft Hilfe (Konfigurieren für starke Kryptografie)](https://docs.microsoft.com/de-de/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography) angepasst werden.
 
 ### Einen Report mit einer Xtract Universal Datenquelle erstellen
 
