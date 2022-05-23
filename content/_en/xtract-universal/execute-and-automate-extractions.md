@@ -50,7 +50,7 @@ For advanced scenarios or environments that do not support command line programs
 **Note:** Xtract Universal does not have its own scheduler. You can use third party schedulers. 
 
 
-### Run parallel Extractions
+### Running parallel Extractions
 The amount of possible parallel extractions depends on the hardware resources of the Windows server. 
 
 Every triggered extraction is executed in a separate process of the operating system.<br>
@@ -60,3 +60,10 @@ Other factors are the performance of the SAP source system the destination.
 
 {: .box-note }
 **Note:** Xtract Universal scales corresponding to the available hardware resources of the runtime environment.
+
+### Automate the Creation of Extractions
+
+As of Xtract Universal Version 4.26.1, the command line tool xu-config.exe is available to customers in the installation directory of Xtract Universal, e.g. `C:\Program Files\XtractUniversal\xu-config.exe`.
+The tool creates extractions, sources and destinations outside of the Xtract Universal Designer.
+
+For more information, refer to the knowledge base article [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/using-config-command-line-tool).

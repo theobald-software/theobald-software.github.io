@@ -58,3 +58,10 @@ Darüber hinaus wird der der mögliche Parallelisierungsgrad wesentlich durch di
 
 {: .box-note }
 **Hinweis:** Xtract Universal skaliert entsprechend der verfügbaren Hardware-Ressourcen der Laufzeitumgebung.
+
+### Automatisches Erstellen von Extraktionen
+
+Ab Xtract Universal Version 4.26.1, wird bei der Installation das Kommandozeilentool xu-config.exe mit ausgeliefert, z.B. in `C:\Program Files\XtractUniversal\xu-config.exe`.<br>
+Das Tool ermöglicht das Erstellen von Extraktionen, Datenquellen und Destinationen außerhalb des Xtract Universal Designers. 
+
+Mehr Details dazu finden im Knowledge Base Artikel [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/using-config-command-line-tool).
