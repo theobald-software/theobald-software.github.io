@@ -36,20 +36,23 @@ In the succeeding examples the following URL `https://todd.theobald.local:8165/`
 |Parameter | Description | Example |
 |------------ | -------------|-----|
  | Destinations | List of all Defined Destinations | `http://todd.theobald.local:8065/destinations` |
+ | Extractions | List of all Defined Extractions | `https://todd.theobald.local:8165/extractions` |
+ | config/extractions | List of all Defined Extractions with more details | `https://todd.theobald.local:8165/config/extractions` |
  | req_type=server | List of all server logs according to [web server settings > Misc.](../server/server-settings#web-server) | `https://todd.theobald.local:8165/log/?req_type=server` |
- | req_type=extraction | List of all Defined Extractions | `https://todd.theobald.local:8165/log/?req_type=extraction` |
- | req_type=all| List of all server & extraction logs | `https://todd.theobald.local:8165/log/?req_type=all`
- | req_type=all&past_days=n | List of all logs since n days | `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'` | 
- | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log of a specific extraction with a specific timestamp | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
+ | req_type=server&timestamp=[Timestamp] | Server Log at a Specific Timestamp | `https://todd.theobald.local:8165/log/?req_type=server&timestamp=2020-06-05_07:49:24.150` |
+ | req_type=all| List of all server & extraction logs | `https://todd.theobald.local:8165/log/?req_type=all` 
  | req_type=extraction&name=[Extraction Name] | List of all logs of a specific extraction | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt` |
+ | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log of a specific extraction with a specific timestamp | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
  | req_type=all&min=[timestamp] | List of all logs starting from a specific timestamp | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219` |
  | req_type=all&min=[timestamp]&max=[timestamp] | List of all logs between two timestamps. | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136` |
- | resultName=[Extraction Name]&timestamp[timestamp] | Return of the name of the result table or file for a specific timestamp. | `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.136` |
 
 ### Examples of the HTTP Requests
 
 #### Web Service request of all defined extractions
 - `https://todd.theobald.local:8165/`
+- `https://todd.theobald.local:8165/extractions`
+- `https://todd.theobald.local:8165/config/extractions`
+
 ![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
 
 The log contains the following columns:<br>
@@ -99,19 +102,6 @@ The log contains the following columns:
 | 4     | FinishedErrors   | Extraction is finished with at least one error. |
 | 5     | NotAvailable     | The status for a server log.                                              |
 
-#### Web Service request of all defined extractions
-- `https://todd.theobald.local:8165/log/?req_type=extraction`
-![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
-
-#### Web Service Request of the Result Table or File of a Specific Timestamp
-
-- `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.141`
-![XU Server connection](/img/content/xu/http_log_resultName.png){:class="img-responsive"}
-
-Returns the name of the result table or file for a specific timestamp.   
-
-{: .box-note }
-**Note:** This process works only, if the **Destination Settings** or **Extraction Settings** were not changed since the last execution. 
 
 #### Web Service Request of all Server Logs
 - `https://todd.theobald.local:8165/log/?req_type=server`
@@ -132,11 +122,6 @@ Returns the name of the result table or file for a specific timestamp.
 #### Web Service Request of all Logs between two Timestamps
 - `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_min_max_timestamp.png){:class="img-responsive"}
-
-#### Web Service Request  of all Logs since n Days
-- `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'`
-![XU Server connection](/img/content/xu/http_log_past_day.png){:class="img-responsive"}
-
 
 ### Querying the extraction status
 An extraction can be triggered through the extraction's URL. For example, the following URL triggers an extraction named *Plants*:

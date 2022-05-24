@@ -35,20 +35,22 @@ In den nachfolgenden Beispielen wird folgende URL `https://todd.theobald.local:8
 |Parameter | Beschreibung | Beispiel |
 |------------ | -------------|-----|
  | destinations | Auflistung aller definierten Destinationen | `http://todd.theobald.local:8065/destinations` |
- | req_type=server | Auflistung aller Server-Logs gemäß [Web-Server Einstellungen > Misc.](../server/server_einstellungen#web-server) | `https://todd.theobald.local:8165/log/?req_type=server` |
-| req_type=extraction | Auflistung aller definierten Extraktionen. | `https://todd.theobald.local:8165/log/?req_type=extraction` |
+ | extractions | Auflistung aller definierten Extraktionen | `https://todd.theobald.local:8165/extractions` |
+ | config/extractions | Auflistung aller definierten Extraktionen mit mehr Details | `https://todd.theobald.local:8165/config/extractions` |
  | req_type=all| Auflistung aller Server & Extraktions-Logs | `https://todd.theobald.local:8165/log/?req_type=all`
- | req_type=all&past_days=n | Auflistung aller Logs seit n Tagen | `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'` | 
- | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log einer bestimmten Extraktion zu einem bestimmten Zeitstempel (Timestamp) | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
+ | req_type=server | Auflistung aller Server-Logs gemäß [Web-Server Einstellungen > Misc.](../server/server_einstellungen#web-server) | `https://todd.theobald.local:8165/log/?req_type=server` |
+ | req_type=server&timestamp=[Timestamp] | Server Log zu einem bestimmten Zeitstempel (Timestamp) | `https://todd.theobald.local:8165/log/?req_type=server&timestamp=2020-06-05_07:49:24.150` |
  | req_type=extraction&name=[Extraction Name] | Auflistung aller Logs einer bestimmten Extraktion | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt` |
+ | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log einer bestimmten Extraktion zu einem bestimmten Zeitstempel (Timestamp) | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
  | req_type=all&min=[timestamp] | Auflistung aller Logs ab einem bestimmten Zeitstempel (Timestamp) | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219` |
  | req_type=all&min=[timestamp]&max=[timestamp] | Auflistung aller Logs zwischen zwei Zeitstempeln (Timestamps) | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136` |
- | resultName=[Extraction Name]&timestamp[timestamp] | Rückgabe des Namens der Ergebnis-Tabelle/-Datei für einen bestimmten Zeitstempel (Timestamp) | `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.136` |
 
 ### Beispiele der HTTP-Aufrufe
 
 #### Web-Service-Aufruf aller definierten Extraktionen
 - `https://todd.theobald.local:8165/`
+- `https://todd.theobald.local:8165/extractions`
+- `https://todd.theobald.local:8165/config/extractions`
 ![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
 
 Der Log enthält folgende Spalten:<br>
@@ -97,20 +99,6 @@ Der Log enthält folgende Spalten:
 | 4     | FinishedErrors   | Die Extraktion ist abgeschlossen aber mindestens ein Fehler ist aufgetreten. |
 | 5     | NotAvailable     | Der Status bei einem Server-Log.                                              |
 
-#### Web-Service-Aufruf aller definierten Extraktionen
-- `https://todd.theobald.local:8165/log/?req_type=extraction`
-![XU Server connection](/img/content/xu/http_log_definierter_extraktionen.png){:class="img-responsive"}
-
-#### Web-Service-Aufruf der Ergebnis- Tabelle / -Datei eines bestimmten Zeitstempels
-
-- `https://todd.theobald.local:8165/ResultName?name=cskt&timestamp=2020-06-10_14:42:32.141`
-![XU Server connection](/img/content/xu/http_log_resultName.png){:class="img-responsive"}
-
-Gibt den Namen der Ergebnistabelle / Datei für einen bestimmten Zeitstempel zurück.  
-
- 
-{: .box-note }
-**Hinweis:** Der Vorgang funktioniert nur, wenn seit dem letzten Lauf die **Destination Settings** oder **Extraction Settings** nicht verändert wurden.
 
 #### Web-Service-Aufruf aller Serverlogs
 - `https://todd.theobald.local:8165/log/?req_type=server`
@@ -131,11 +119,6 @@ Gibt den Namen der Ergebnistabelle / Datei für einen bestimmten Zeitstempel zur
 #### Web-Service-Aufruf aller Logs zwischen zwei Zeitstempel
 - `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_min_max_timestamp.png){:class="img-responsive"}
-
-#### Web-Service-Aufruf aller Logs seit n Tagen
-- `https://todd.theobald.local:8165/log/?req_type=all&past_days='1'`
-![XU Server connection](/img/content/xu/http_log_past_day.png){:class="img-responsive"}
-
 
 ### Den Extraktionsstatus abrufen
 

@@ -116,5 +116,5 @@ The Windows user needs access rights to the file location. You don't have to cre
 - [Call via Script](https://kb.theobald-software.com/xtract-universal/call-extraction-via-script)
 - [Call via Scheduler](./call-via-scheduler)
 - [Call via ETL-Tool](./call-via-etl)
-- [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/explanation-of-using-config-command-line-tool)
+- [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/using-config-command-line-tool)
 - [Execute & Schedule All Xtract Universal Extractions](https://kb.theobald-software.com/xtract-universal/execute_all_defined_xu_extractions)
