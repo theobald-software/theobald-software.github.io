@@ -19,7 +19,9 @@ The following section describes the loading of the SAP extraction data into Snow
 The connection to the Snowflake target environment is made via the ODBC driver for Windows 64-bit architectures.<br>
 No additional installations are required to use the Snowflake destination.
 
-- [Download SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html)
+- [Download SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html).
+- To connect through a proxy server, configure the following environment variables: `http_proxy`, `https_proxy`, `no_proxy`.<br>
+For more information, see [Snowflake: ODBC Configuration and Connection Parameters](https://docs.snowflake.com/en/user-guide/odbc-parameters.html#using-environment-variables)
 
 ## Connection
 
