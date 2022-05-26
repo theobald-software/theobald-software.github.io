@@ -25,7 +25,7 @@ Die Metadatentabelle hat folgendes Schema:
 | DECIMALS | Integer                      | Anzahl der Dezimalstellen |
 | KEY      | Bool                         | Spalte ist Primärschlüssel der Extraktion |
 
-Die "einstellige ABAP Datentyp ID" ist [hier](http://mysaplib.com/00000531/348e72f16df74873e10000009b38f9b8/content.htm) definiert: 
+Die "einstellige ABAP Datentyp ID" ist in der [SAP Help](https://help.sap.com/doc/abapdocu_753_index_htm/7.53/en-US/abapdescribe_field.htm) definiert: 
            
 
 

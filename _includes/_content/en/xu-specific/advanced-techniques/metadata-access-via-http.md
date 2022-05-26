@@ -28,7 +28,7 @@ The metadata table has the followig schema:
 
 
 
-The "single-digit ABAP datatype ID" is defined in the [SAP help](http://mysaplib.com/00000531/348e72f16df74873e10000009b38f9b8/content.htm) pages. <br>
+The "single-digit ABAP datatype ID" is defined in the [SAP help](https://help.sap.com/doc/abapdocu_753_index_htm/7.53/en-US/abapdescribe_field.htm) pages. <br>
  
 **Example:** <br>
 Calling the metadata of extraction *BSEG* using this URL: ```http://localhost:8065/metadata/?name=BSEG``` returns the following result:<br>
