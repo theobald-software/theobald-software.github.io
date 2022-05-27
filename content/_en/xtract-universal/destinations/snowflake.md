@@ -45,8 +45,12 @@ For more information, see [File Splitting](#file-splitting).
 
 **Region**<br>
 Select the region of the Snowflake environment from the drop-down-menu.<br>
-In the given example, the region *AWS - EU (Frankfurt)* is selected. 
+In the example above, the region *AWS - EU (Frankfurt)* is selected. 
 The selected region must match the information in the assigned account. 
+
+Regions with the suffix *(legacy)* are deprecated.
+Select the *(legacy)* option if you connect to Snowflake using an old *Cloud Region ID*. <br>
+For more information on the current *Cloud Region IDs*, see [Snowflake: Supported Cloud Regions](https://docs.snowflake.com/en/user-guide/intro-regions.html).
 
 **Account**<br>
 Enter the Snowflake authentication account. In the given example it is: "dummy_account", see also the URL: <br>

@@ -42,8 +42,13 @@ Das lokale Verzeichnis und der Staging-Bereich werden im Verlauf der Extraktion 
 Für weitere Informationen, siehe [File Splitting](#file-splitting). 
 
 **Region**<br>
-Angabe der Region der Snowflake-Umgebung.<br>
-In unserem Beispiel haben wir die Region *AWS - EU (Frankfurt)* gewählt. Die gewählte Region muss den Angaben im zugewiesen Account entsprechen. 
+Wählen Sie die Region der Snowflake-Umgebung aus.<br>
+In diesem Beispiel ist die Region *AWS - EU (Frankfurt)* ausgewählt. Die gewählte Region muss den Angaben im zugewiesen Account entsprechen. 
+
+{: .box-note}
+**Hinweis:** Regionen mit dem Suffix *(legacy)* sind veraltet. Die *Cloud Region ID* dieser Regionen wurde von Snowflake umbenannt.
+Wählen Sie die *(legacy)*-Option, wenn Sie sich über einen Link mit einer alten *Cloud Region ID* mit Snowflake verbinden. <br>
+Für mehr Informationen zu den aktuellen *Cloud Region IDs*, siehe [Snowflake: Supported Cloud Regions](https://docs.snowflake.com/en/user-guide/intro-regions.html).
 
 **Account**<br>
 Name des vom Snowflake zugewiesenen Kontos.
