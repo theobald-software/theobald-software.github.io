@@ -21,13 +21,10 @@ Mit der yunIO Zugriffssteuerung können Sie den Zugriff auf den yunIO Designer u
 Aktivieren oder deaktivieren Sie die Zugriffsbeschränkungen für den Designer und den Server.<br>
 Die Zugriffsrechte gelten auch für den Aufruf von Services. 
 
-#### Anonymous
-Wenn **Anonymous Access** aktiv ist, gibt es keine Zugangsbeschränkungen für den Designer und den Server.
+- Wenn **Anonymous Access** aktiv ist, gibt es keine Zugangsbeschränkungen für den Designer und den Server.
 **Anonymous** ist die Default-Einstellung.
-
-#### Authenticated
-Diese Option ist nur verfügbar, wenn mindestends ein Benutzer angelegt und [Transport Layer Security](#transport-layer-security) aktiv ist. <br>
-Wenn diese Option deaktiviert ist, haben nur angelegte Benutzer mit entsprechender Beschränkungsstufe Zugriff auf den Designer und den Server.
+- **Authenticated** ist nur verfügbar, wenn mindestens ein Benutzer angelegt und [Transport Layer Security](#transport-layer-security) aktiv ist. <br>
+Wenn diese Option aktiv ist, haben nur angelegte Benutzer mit entsprechender Beschränkungsstufe Zugriff auf den Designer und den Server.
 
 ### Privileges
 

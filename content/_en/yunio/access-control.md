@@ -18,23 +18,19 @@ The yunIO access control allows you to create access restrictions for users.
 
 ### Server Access
 
-Activate or deactivate access control for the Designer and the server.<br>
-This includes access right for executing services.
+Activate or deactivate access control for the Designer and the server. 
 
-#### Anonymous
-If **Anonymous Access** is active, anyone can access the Designer and execute services. 
+- If **Anonymous Access** is active, anyone can access the Designer and execute services. 
 This is the default setting.
-
-#### Authenticated
-This option is only available if at least one user is defined and [Transport Layer Security](#transport-layer-security) is enabled.<br>
-If **Authenticated** is active, only defined users with a designated restriction level have access to the Designer and the server.
+- **Authenticated** is only available if at least one user is defined and [Transport Layer Security](#transport-layer-security) is enabled.<br>
+If this option is active, only defined users with a designated restriction level have access to the Designer and the server.
 
 ### Privileges
 
 Assign restriction levels for Designer and server access to users.
 
 All users defined in [User management](./users) are listed in **Privileges**.
-Select an access restriction level from the dropdown list next to the user name to assign a restriction level.
+Select a restriction level from the dropdown list next to the user name to assign a restriction level.
 The following restriction levels are available:
 - **Server Admin**: allows users access to all functions and settings. 
 - **Create / Modify**: allows users to create, edit and execute services and connections.
