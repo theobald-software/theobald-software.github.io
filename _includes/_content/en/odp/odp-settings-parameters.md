@@ -1,6 +1,6 @@
 ### Edit Runtime Parameters 
 
-Use runtime parameters to set values e.g., for dynamic [filters](./odp-define#selections-and-filters).
+Use runtime parameters for dynamic [Selections and Filters](./odp-define#selections-and-filters).
 
 1. Click **Edit Runtime Parameters** in the main window of the component to create or edit dynamic runtime parameters.
 The window "Edit Runtime Parameters" opens.<br>

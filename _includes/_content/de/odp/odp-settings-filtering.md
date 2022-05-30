@@ -1,15 +1,30 @@
 ### Selektion und Filter
-Filterungsoptionen werden über das Hauptfenster der Komponente im Unterabschnitt **Fields** aufgerufen. <br/>
-![ODP Fields](/img/content/odp/odp-fiter.png){:class="img-responsive" width="600px"}
 
-Die Anzahl der definierten Filter, z.B.[1], wird in den eckigen Klammern links neben dem Feldnamen unter **Selections** angezeigt.<br/>
-Wählen Sie unter **Selections** ein Feld aus und klicken Sie auf **[Edit]**, um einen Filter zu bearbeiten.<br/>
-Das Fenster "Edit selections" wird geöffnet. 
-<br/>
-![ODP ABAP CDS View Filter](/img/content/odp/odp-component-cds-costcenter-03-filter.png){:class="img-responsive"}
-Innerhalb des Fensters "Edit selection" können Sie einen neuen Filter definieren oder einen vorhandenen bearbeiten oder löschen.
+1. Wählen Sie ein Element im Unterabschnitt **Fields** und klicken Sie auf *Edit*. Das Fenster "Edit Selections" wird geöffnet.<br> 
+![ODP Fields](/img/content/odp/odp-fiter.png){:class="img-responsive"}<br>
+2. Klicken Sie auf **[Add]**, um Filterkriterien hinzuzufügen. <br>
+![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}
+3. Wählen Sie in der Spalte **Sign** die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
+Wählen Sie in der Spalte **Sign** die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
+4. Wählen Sie in der Spalte **Option** einen Operator. Der Operator filtert Daten wie in der folgenden Tabelle beschrieben:
 
+   | Operator   |      Bedeutung      |  
+   |:---------|:------------- |
+   |(Not)Equal |  Wahr, wenn die Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
+   |LessThan  | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
+   |GreaterThan |  Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|
+   |LessOrEqual | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
+   |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
+   |(Not)Between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
+   |In | Wahr, wenn die Daten (nicht) Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
+5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter. <br>
+- Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
+Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
+Mit einem Klick auf das Symbol wechseln Sie zwischen statischen Werten und Laufzeitparametern.
+- Laufzeitparameter: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten Laufzeitparameter zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
+Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./odp-settings#edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
+Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
+6. Klicken Sie auf **[Load live preview]**, um die Funktionalität der definierten Filter zu prüfen. <br>
+Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 
 
-
-
-
+Die Anzahl der definierten Filter wird in eckigen Klammern neben *Edit* angezeigt.

@@ -1,7 +1,7 @@
 ---
 ref: xu-odp-settings
 layout: page
-title: Settings
+title: Einstellungen
 description: ODP Settings
 product: xtract-universal
 parent: Operational Data Provisioning (ODP)
