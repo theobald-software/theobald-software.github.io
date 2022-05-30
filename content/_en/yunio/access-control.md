@@ -12,7 +12,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-The yunIO access control allows you to create access restrictions for users.
+The yunIO access control allows you to define user authorizations regarding server and yunIO Designer access.
 
 ![Access_Control](/img/content/yunio/access-control.png){:class="img-responsive"}
 
@@ -36,3 +36,4 @@ The following restriction levels are available:
 - **Create / Modify**: allows users to create, edit and execute services and connections.
 - **Read / Execute**: allows users to open the Designer to download and execute services.
 - **No access**: denies users access to the Designer. Execution of services is not authorized.
+This option can be used to temporarily disable users from using yunIO.

@@ -12,7 +12,7 @@ lang: de_DE
 progressstate: 5
 ---
 
-Mit der yunIO Zugriffssteuerung können Sie den Zugriff auf den yunIO Designer und die yunIO Services auf designierte Benutzer beschränken.
+Mit der yunIO Zugriffssteuerung können Sie die Zugriffsrechte von Benutzern auf den Server und den yunIO Designer beschränken.
 
 ![Access_Control](/img/content/yunio/access-control.png){:class="img-responsive"}
 
@@ -37,3 +37,4 @@ Die folgenden Beschränkungsstufen sind verfügbar:
 - **Create / Modify**: erlaubt Benutzern Services und SAP-Verbindungen zu erstellen, zu bearbeiten und auszuführen.
 - **Read / Execute**: erlaubt Benutzern den Designer zu öffnen, um Services herunterzuladen und auszuführen.
 - **No access**: verweigert Benutzern den Zugriff auf den Designer. Das Ausführen von Services ist nicht authorisiert.
+Diese Option kann verwendet werden, um Benutzer zeitweise von der Benutzung von yunIO auszuschließen.
