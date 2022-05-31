@@ -10,6 +10,5 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=infocube-extraktionseinstellungen
 ---
+
 {% include _content/de/bw-infocubes-und-bex-queries/infocube-extraktionseinstellungen.md %}
-
-

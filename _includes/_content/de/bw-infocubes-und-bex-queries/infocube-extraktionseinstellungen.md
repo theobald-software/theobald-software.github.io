@@ -1,4 +1,5 @@
-Über den Link *Extraction Settings* im Editor öffnet sich das Fenster "Cube Settings".
+Klicken Sie im Hauptfenster der Komponente auf **Extraction Settings**. <br>
+Das Fenster "Cube Settings" öffnet sich.
 
 ![XU_BWCube_Settings](/img/content/XU_BWCube_Settings.png){:class="img-responsive"}
 
@@ -16,12 +17,17 @@ Diese Option wird im BICS Modus nicht unterstützt.
 **Row Limit** <br>
 Definiert die maximale Anzahl von Zeilen in der Ergebnismenge.
 Wenn der Wert auf 0 gesetzt wird, wird die komplette Ergebnismenge abgerufen.
-Diese Option wird im BICS Modus nicht unterstützt.
-
+Diese Option wird im BICS Modus nicht unterstützt.<br>
 **Row Limit** kann verwendet werden, um einen Test mit einer kleinen Datenmenge durchzuführen, indem Sie z.B. 1000 (nicht 0) als Zeilenlimit eintragen.
 
-**Use Formatted Values**<br>
+**Formatted Values**<br>
 Wenn diese Option aktiv ist, werden die Werte der Kennzahlen so ausgegeben, wie im Query-Designer definiert (z.B. Skalierungsfaktor und Dezimalstellen).
+
+**Only Structure** <br>
+Aktivieren Sie **Only Structure**, wenn Ihre BW Cube Extraktion in einer veralteten Version der BW Cube Komponente erstellt wurde.
+Der Metadatenabruf hat sich geändert. 
+Das betrifft insbesondere BEx Queries, die zwei Strukturen enthalten (Merkmals- und Kennzahlenstruktur).<br>
+Diese Option kann nur in dem [Look Up](./eine-bw-cube-quelle-definieren#einen-bw-cube-oder-ein-query-suchen) Fenster der Komponente aktiviert und deaktiviert werden.
 
 ### Automatic Slicing Dimension
 
@@ -39,14 +45,13 @@ Sie werden angezeigt, nachdem die Metadaten einer BICS Extraktion abgerufen wurd
 ![XU_BWCube_Settings](/img/content/bwcube-bics-fast-mode.png){:class="img-responsive"}
 
 **BICS Fast Mode**<br>
-
 Wenn diese Checkbox aktiv ist, wird das interne Verhalten der BICS-Komponente gewechselt.
 Anstatt RFC-Funktionsdefinitionen bei jedem Aufruf aus SAP zu laden, verwendet der BICS Fast Mode lokal abgelegte BAPI Definitionen.
 Dieses Verhalten kann die Performance der BICS-Komponente erhöhen.
 
 **Create BICS Compatibility Report**<br>
 Weil sich der BICS Modus noch in der Beta-Phase befindet, sind Fehler beim Ausführen des BICS Modus nicht ausgeschlossen.
-Klicken Sie auf **[Create BICS Compatibility Report]**, um eine Testreihe auszuführen, die uns hilft die Ursache des Fehlers zu finden und den Fehler zu beheben.
+Klicken Sie auf **[Create BICS Compatibility Report]**, um eine Testreihe auszuführen, die uns hilft die Ursache des Fehlers zu finden und den Fehler zu beheben.<br>
 Die Ergebnisse der Testreihe werden in einer .zip-Datei zusammengefasst.
 Wenn Sie mehrere SAP-Systeme verwenden, führen Sie diese Testreihe auf jeder Ihrer SAP-Quellen aus. <br>
 Senden Sie die resultierende .zip-Dateien an den [Theobald Support](https://support.theobald-software.com).
