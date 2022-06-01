@@ -80,8 +80,8 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 |<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
 |>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2.|
 | (NOT) LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
-| (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
-| (NOT IN | True if the content of operand1 is (not) part of the content of operand2. Operand2 must be of type LIST or SQL.|
+| (NOT) BETWEEN | True if the content of the operand1 lies (not) between the values of the operands operand2 and operand3. |
+| (NOT) IN | True if the content of operand1 is (not) part of the content of operand2. Operand2 must be of type LIST or SQL.|
 
 Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 

@@ -1,4 +1,6 @@
-### Parameter bearbeiten 
+### Laufzeitparameter bearbeiten 
+
+Verwenden Sie Laufzeitparameter für dynamische [Selektionen und Filter](./odp-define#selektion-und-filter).
 
 1. Klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameter**, um Laufzeitparameter anzulegen und zu bearbeiten.
 Das Fenster "Edit Runtime Parameters" öffnet sich.<br> 
@@ -13,12 +15,3 @@ Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werde
 - Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. 
 <br>
 4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
-5. Um die erstellten Parameter für Selektionen zu verwenden, wählen Sie ein Element im Unterabschnitt **Fields** und klicken Sie auf **[Edit]** (4). Das Fenster "Edit Selections" wird geöffnet.<br> 
-6. Klicken Sie auf **[Add]** (5), um Felder für die Filteroptionen zu öffnen.
-7. Klicken Sie auf das Symbol neben den Eingabefeldern **Low** und **High** (6).
-Wenn es definierte Parameter gibt, wechselt das Symbol zum Parametersymbol. <br>
-Klicken auf die Icons wechselt die Optionen zwischen der Eingabe echter Eingabewerte und der Eingabe der definierten Parameter.<br>
-![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}<br>
-8. Prüfen Sie die Funktionalität der definierten Parameter, indem Sie auf **[Load live preview]** klicken. <br>
-Wenn Sie Parameter als Selektionsfilter definiert haben, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen.  <br>
-![ODP provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
