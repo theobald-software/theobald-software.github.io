@@ -121,7 +121,6 @@ There are two ways of upgrading the product version:
 - Upgrade during installation
 - Manual upgrade
 
-
 #### Upgrade During Installation
 1. Start the Xtract Universal setup.
 2. Make sure to mark the checkbox **Convert config files** checkbox. <br>
@@ -130,6 +129,9 @@ The option *Convert config files* starts the *ConfigConverter* application, whic
 3. Confirm the conversion process in the command line pop-up window.  
 ![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"}
 
+{:.box-note}
+**Note:** When executing the *ConfigConverter* a backup folder is created in the installation directory, e.g., `C:\Program Files\XtractUniversal\backup-[old version number]`.
+This folder only stores the extractions that have been changed by the *ConfigConverter*.
 
 #### Manual Upgrade
 If the *ConfigConverter* is not executed automatically during installation, the converter can also be started manually from the installation directory: ``C:\Program Files\XtractUniversal``. <br>

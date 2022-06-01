@@ -135,6 +135,9 @@ Destinationen sowie Server- und Benutzereinstellungen in der neuen Version verf�
 3. Best채tigen Sie den Konvertierungsprozess im Pop-up-Fenster der Kommandozeile.
 ![XU3_Migration_2](/img/content/XU3_Migration_2.png){:class="img-responsive"}
 
+{:.box-note}
+**Hinweis:** Wenn der *ConfigConverter* ausgef체hrt wird, wird automatisch ein Backup-Ordner im Installationsverzeichnis erstellt, z.B. `C:\Program Files\XtractUniversal\backup-[alte Versionsnummer]`.
+Diese Ordner enth채lt die Extraktionen, die vom *ConfigConverter* ge채ndert wurden.
 
 #### Manuelles Upgrade
 Wird der *ConfigConverter* nicht automatisch bei der Installation ausgef체hrt, kann dieser auch nachtr채glich manuell aus dem Installationsverzeichnis `C:\Program Files\XtractUniversal` gestartet werden. <br>
