@@ -44,7 +44,7 @@ Die Felder *Key Figures*, *Dimensions* und *Properties*, die für die Ausgabe au
 Der Unterabschnitt **Preview** zeigt eine Echtzeit-Vorschau der ausgewählten BEx-Query oder des ausgewählten InfoProviders an. Klicken Sie dafür auf die Schaltfläche **[Load Live Preview]**.
 
 #### Schaltflächen
-- **[Extraction Settings]** öffnet die [Extraktionseinstellungen](./bw-cube/bw-cube-einstellungen), z.B. **Paketgröße (Package Size)**, **Zeilenbegrenzung (Row Limit)** oder **Automatic Slicing Dimension**. <br>
+- **[Extraction Settings]** öffnet die [Extraktionseinstellungen](./bw-cube/infocube-extraktionseinstellungen), z.B. **Paketgröße (Package Size)**, **Zeilenbegrenzung (Row Limit)** oder **Automatic Slicing Dimension**. <br>
 - **[Load live preview]** lädt eine Echtzeitvorschau einer BEx-Query oder eines InfoProviders ohne eine Extraktion auszuführen.
 - **[Show MDX]** zeigt das für die Selektion generierte MDX-Statement, das zur Laufzeit auf dem BW-System ausgeführt wird. Im BICS-Modus ist diese Schaltfläche nicht verfügbar. Um das MDX-Statement zu testen, können Sie die SAP-Transaktion *MDXTEST* verwenden.
 - **[Edit Variables]** ermöglicht die Definition von [BEx Query-Variablen](./bw-cube/bw-cube-variablen). 

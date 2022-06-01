@@ -47,7 +47,7 @@ The **Preview** subsection displays real preview data of the selected BEx Query 
 **Note:** In MDX mode, the first 100 rows are fetched for preview. In BICS mode, the **complete** result set is fetched.
 
 #### Buttons
-- **[Extraction Settings]** opens the [extraction specific settings](./bw-cube/bw-cube-settings) e.g., **Package Size**, **Row Limit** or **Automatic Slicing Dimension**. <br>
+- **[Extraction Settings]** opens the [extraction specific settings](./bw-cube/bw-cube-extraction-settings) e.g., **Package Size**, **Row Limit** or **Automatic Slicing Dimension**. <br>
 - **[Load live preview]** loads real preview data of selected BEx Query or InfoProvider.
 - **[Show MDX]** displays the MDX statement which will be executed at runtime on the BW system. Not available in BICS mode. For testing purposes, run the MDX statement in SAP transaction *MDXTEST*.
 - **[Edit Variables]** allows defining [BEx Query variables](./bw-cube/bw-cube-variables). 

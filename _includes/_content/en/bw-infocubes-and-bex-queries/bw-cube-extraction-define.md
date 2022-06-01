@@ -11,7 +11,7 @@ The BW Queries can be based on all possible InfoProviders.
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"} 
 
    |------------------------------------|---------------------------------------------------------------------------------------------|
-   | *Extractor*   | defines if data is extracted using the OLAP BAPI Interface (MDX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection#rfc-options). BICS is still in beta phase.   |
+   | *Extractor*   | defines if data is extracted using the OLAP BAPI Interface (MDX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection). BICS is still in beta phase.   |
    | *Datasource Type* | defines if the look up searches for a BEx Query or an InfoProvider.  | 
    | *Extraction Settings*  | **Only Structure**: Only available for the MDX Extractor. Use **Only Structure** if your BWCube extraction was created in an older software version, see [Extraction Settings](./bw-cube-extraction-settings#extraction-settings) for more information. <br>**Use BICS fast mode**: Only available for the BICS Extractor, see [Extraction Settings: Experimental](./bw-cube-extraction-settings#experimental) for more information.  | 
 
