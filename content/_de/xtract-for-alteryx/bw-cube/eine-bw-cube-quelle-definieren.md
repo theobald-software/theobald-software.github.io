@@ -18,10 +18,10 @@ Der folgende Abschnitt beschreibt die Anwendung der Xtract Cube Komponente.<br>
 
 {: .box-note }
 **Hinweis:** 
-BEx-Queries verwenden häufig BEx-Variablen zum Erstellen von Filtern. Für Informationen zur Verwendung von BEx-Variablen, siehe [BEx Query-Variablen](./bw-cube-variablen).
+BEx-Queries verwenden häufig BEx-Variablen zum Erstellen von Filtern. Für Informationen zur Verwendung von BEx-Variablen, siehe [BEx Query-Variablen](./variablen).
 
 
 ****
 #### Weiterführende Links
 - [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries)
-- [Query Variablen](./bw-cube-variablen)
+- [Query Variablen](./variablen)
