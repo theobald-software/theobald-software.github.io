@@ -16,7 +16,7 @@ Anstatt einen Wert für die BEx-Variable hart einzugeben, können Sie Variablen 
 Verwenden Sie das **@**-Symbol vor dem Variablennamen im Eingabefeld, um den Eintrag als Variable zu definieren z.B.  *@salesorg*. 
 
 ### Variablen anpassen
-1. Um nach Queries zu [suchen](./bw-cube-extraction-define#look-up-a-bw-cube-or-query) und wählen Sie ein Query mit definierten Variablen aus (1).
+1. Um nach Queries zu [suchen](./eine-bw-cube-quelle-definieren) und wählen Sie ein Query mit definierten Variablen aus (1).
 2. Laden Sie eine Echtzeitvorschau (2), falls erforderlich. 
 ![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}
 3. Klicken Sie auf **[Edit]** (3). Das Fenster "Edit variables for [Name des Query]" öffnet sich und Felder mit verfügbaren Variablen werden aktiviert.

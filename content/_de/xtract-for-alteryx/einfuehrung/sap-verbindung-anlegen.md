@@ -7,6 +7,8 @@ product: xtract-for-alteryx
 parent: einfuehrung
 permalink: /:collection/:path
 weight: 5
+redirect_from:
+  - de/xtract-for-alteryx/einfuehrung/sap-verbindung
 lang: de_DE
 progressstate: 5
 ---

@@ -16,7 +16,7 @@ Instead of hard coding a value for the BEx variable you can define variables wit
 Use the **@** symbol in front of the variable name entered in the input field to mark it as a variable, e.g., *@salesorg*. 
 
 ### To Edit Variables
-1. Perform a Query [search](./bw-cube-extraction-define#to-search-for-a-bw-cube-or-query) and select a Query with defined variables (1).
+1. Perform a Query [search](./bw-cube-extraction-define) and select a Query with defined variables (1).
 2. Load a live preview (2), if needed. 
 ![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}
 3. Click **[Edit Variables]** (3). The window "Edit variables for [name of the query]" opens and fields with available variables are activated. 
