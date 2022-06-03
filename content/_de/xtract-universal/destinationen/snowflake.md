@@ -108,6 +108,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 Aktion auf der Zieldatenbank, bevor die Daten in die Zieltabelle eingefügt werden.
 - *Drop & Create*: Tabelle entfernen falls vorhanden und neu anlegen (Default).
 - *Truncate Or Create*: Tabelle entleeren falls vorhanden, sonst anlegen.
+- *Truncate*: Tabelle entleeren falls vorhanden.
 - *Create If Not Exists*: Tabelle anlegen falls nicht vorhanden.
 - *None*: keine Aktion
 - *Custom SQL*: Hier können Sie eigenes Skript definieren. Siehe den unteren Abschnitt Custom SQL. 

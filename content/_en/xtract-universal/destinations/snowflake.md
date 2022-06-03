@@ -107,6 +107,7 @@ The following settings can be defined for the destination:
 Defines the action on the target database before the data is inserted into the target table.
 - *Drop & Create*: Remove table if available and create new table (default).
 - *Truncate Or Create*: Empty table if available, otherwise create.
+- *Truncate*: Empty table if available.
 - *Create If Not Exists*: Create table if not available.
 - *None*: no action
 - *Custom SQL*: Here you can define your own script. See the Custom SQL section below. 
