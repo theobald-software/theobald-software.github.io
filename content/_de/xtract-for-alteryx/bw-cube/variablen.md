@@ -7,6 +7,8 @@ product: xtract-for-alteryx
 parent: bw-cube
 permalink: /:collection/:path
 weight: 2
+redirect_from:
+  - de/xtract-for-alteryx/bw-cube/bw-cube-variablen
 lang: de_DE
 ---
 

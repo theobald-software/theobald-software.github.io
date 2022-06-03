@@ -47,7 +47,7 @@ Der Unterabschnitt **Preview** zeigt eine Echtzeit-Vorschau der ausgewählten BE
 - **[Extraction Settings]** öffnet die [Extraktionseinstellungen](./bw-cube/infocube-extraktionseinstellungen), z.B. **Paketgröße (Package Size)**, **Zeilenbegrenzung (Row Limit)** oder **Automatic Slicing Dimension**. <br>
 - **[Load live preview]** lädt eine Echtzeitvorschau einer BEx-Query oder eines InfoProviders ohne eine Extraktion auszuführen.
 - **[Show MDX]** zeigt das für die Selektion generierte MDX-Statement, das zur Laufzeit auf dem BW-System ausgeführt wird. Im BICS-Modus ist diese Schaltfläche nicht verfügbar. Um das MDX-Statement zu testen, können Sie die SAP-Transaktion *MDXTEST* verwenden.
-- **[Edit Variables]** ermöglicht die Definition von [BEx Query-Variablen](./bw-cube/bw-cube-variablen). 
+- **[Edit Variables]** ermöglicht die Definition von [BEx Query-Variablen](./bw-cube/variablen). 
 - **[Edit Runtime Parameters]** ermöglicht die Definition von [Laufzeitparametern](./bw-cube/edit-runtime-parameters). 
 
 
