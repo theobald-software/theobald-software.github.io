@@ -172,3 +172,7 @@ Select a parameter from the list.<br>
 
 {: .box-note }
 **Note:** List parameters are not yet available. This feature will be available soon.
+
+**** 
+#### Related Links
+- [Knowledge Base Article: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)

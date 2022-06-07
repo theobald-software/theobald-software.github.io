@@ -179,3 +179,8 @@ Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
 
 {: .box-note }
 **Hinweis:** Listenparameter sind noch nicht verfügbar.
+
+**** 
+#### Weiterführende Links
+
+- [Knowledge Base Artikel: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
