@@ -12,3 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
 ---
 
 {% include _content/en/xu-specific/advanced-techniques/delta-processing.md %}
+
+#### Related Links
+
+- [Knowledge Base Article: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
