@@ -1,7 +1,7 @@
 
 ### Look up a BW Cube or Query
 1. Click **[Search]** (binoculars icon) in the main window of the component.
-![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive" }
+![Bw-Cube-Data-Source](/img/content/xis/bw-cube-lookup.png){:class="img-responsive"}
 The dialog “Look Up Cube or Query” opens.
 ![Query-LookUp](/img/content/Query-LookUp.png){:class="img-responsive" }
 2. Select *InfoCubes* or *QueryCubes*.

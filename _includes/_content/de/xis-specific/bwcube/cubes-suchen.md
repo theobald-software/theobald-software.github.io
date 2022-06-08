@@ -1,8 +1,8 @@
 
 ### Eine BW Cube oder Query finden
 1. Im Hauptfenster der Komponente klicken Sie auf **[Suche]** (Fernglassymbol).
-![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
-Der Dialog "Look Up Cube or Query" öffnet sich.
+![Bw-Cube-Data-Source](/img/content/xis/bw-cube-lookup.png){:class="img-responsive"}
+Das Fenster "Look Up Cube or Query" öffnet sich.
 ![Query-LookUp](/img/content/Query-LookUp.png){:class="img-responsive" }
 2. Wählen Sie *InfoCubes* oder *QueryCubes*.
 3. Durch Eingabe eines Suchnamens in das Feld **Cube Name**, können Sie die Suche einschränken. Starten Sie die Suche duch klicken auf **[Suche]** (Fernglassymbol). Sie können Platzhalter verwenden(*), wenn gewünscht.
