@@ -28,13 +28,16 @@ This is an ordered list.
 2. Click **Subscriptions** (URL buttons: bold)
 3. Enter the name the field **Name** (Fields within a window: bold)
 4. Enter the value *123* (entered values: italics)
+5. Click on the dustbin icon ( ![dustbin](/img/content/icons/trashbin.png)) (icons: images)
 
-When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets.
+When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets. 
+
 1. Click **[Add]** (1).
 2. Choose the type e.g., *String* out of the drop-down menu (2).
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}
 
 Don't use a return before images in instructions to make sure that the image is in the same line as the steps.
+
 
 ------
 
