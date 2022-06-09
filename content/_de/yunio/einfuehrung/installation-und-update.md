@@ -30,9 +30,16 @@ Beim Starten des Setups können die optionalen Komponenten für die Installation
 |Main Product Files | |Installiert alle notwendigen Dateien, die zum Verwenden von yunIO notwendig sind.|
 |<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. |
 |Start Menu Shortcuts |- | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
+| Enable .NET updates via Windows Updater <br>for Windows Server Edition. |- | Erzeugt einen Eintrag in der Regitry, der automatisch .NET aktualisiert. |
 |Open the yunIO Designer after installation|- | Öffnet nach der Installation den yunIO Designer in Ihrem Standard-Browser.|
 
 Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz) beschrieben.
+
+#### Enable .NET updates via Windows Updater for Windows Server Edition
+Diese Option ist nur auf Windows Server Editionen verfügbar und nur wenn sie nicht bereits aktiv ist.<br>
+Sie erzeugt einen Eintrag in der Regitry (`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NET]//"AllowAUOnServerOS"=dword:00000001`), der automatisch .NET über Windows Update aktualisiert. 
+Um diese Option zu deaktivieren, löschen Sie den Registry-Eintrag.
+
 
 ### Dateien des Programmverzeichnisses
 Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installation in dem Standardverzeichnis `C:\Program Files\Theobald Software\yunIO` abgelegt werden:
