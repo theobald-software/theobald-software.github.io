@@ -72,7 +72,7 @@ Example:
 2. Choose the type e.g., *String* out of the drop-down menu (2).
 ![ODP Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}
 
-Reference symbol buttons with small images, e.g., "Click on the dustbin icon ( ![dustbin](/img/content/icons/trashbin.png))."
+Reference symbol buttons with small images, e.g., "Click on the dustbin icon ( ![dustbin](/img/content/icons/trashbin.png) )."
 
 {: .box-note }
 **Note** <br> When placing an image within a text block, make sure to place a break and an additional return to mainain space between the text and the image.
