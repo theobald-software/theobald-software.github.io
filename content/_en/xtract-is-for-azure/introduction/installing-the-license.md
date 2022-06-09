@@ -39,20 +39,6 @@ The license manager opens.
 {: .box-tip }
 **Tip:** To inspect your current license data, click the Xtract IS for Azure Info link located at the top of each component editor.
 
-### Updating the Xtract.License.dll to XtractISLicense.json
-The older version of Xtract IS for Azure license file is a .dll-file that was registered in the GAC.
-In the newer versions of Xtract IS for Azure license file is provided in form of a .json-file.<br>
-Copy the XtractISLicense.json into one of the following paths: <br>
-`CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\` <br>
- or `C:\ProgramData\TheobaldSoftware\XtractIS\` <br>
-If you have an older .dll license file, remove the older version to be able to use the newer version.
-
-#### To remove the former Xtract.License.dll from GAC
-1. Run Windows CMD as administrator.
-2. Run the uninstall license file: `C:\Program Files\XtractIS>UninstallDllLicense.bat` <br>
-The .dll license is removed.
-3. Perform the installation of the newer XtractISLicense.json file.
-
 ****
 #### Related Links
 - [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/)

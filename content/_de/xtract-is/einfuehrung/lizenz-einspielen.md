@@ -37,24 +37,6 @@ Der Lizenzmanager wird geöffnet.
   <i class="fas fa-lightbulb"></i> <strong>Tipp:</strong> Um Ihre aktuellen Lizenzdaten einzusehen, klicken Sie auf den Info-Link, der sich oben in jedem Komponenten-Editor befindet.<br>
 </div>
 
-
-### Aktualisierung der Xtract.License.dll auf XtractISLicense.json
-Die ältere Version der Xtract IS Lizenzdatei ist eine .dll-Datei, die im GAC registriert wurde.
-In den neueren Versionen von Xtract IS wird die Lizenzdatei in Form einer .json-Datei zur Verfügung gestellt.<br>
-Kopieren Sie die XtractISLicense.json in einen der folgenden Pfade:<br>
-`CSIDL_COMMON_APPDATA\TheobaldSoftware\XtractIS\` <br>
- oder `C:\ProgramData\TheobaldSoftware\XtractIS\`
-
-Wenn Sie eine ältere .dll-Lizenzdatei haben, muss die ältere Version entfernt werden, um die neuere Version nutzen zu können.
-
-Um die neuere Version der Lizenz nutzen zu können, muss die ältere Version entfernt werden.
-
-#### Entfernen der älteren Xtract.License.dll aus dem GAC
-1. Führen Sie die Windows-Kommandozeile als Administrator aus.
-2. Führen Sie die Deinstallationslizenzdatei aus: `C:\Program Files\XtractIS>UninstallDllLicense.bat` <br>
-Die .dll-Lizenz wird entfernt.
-3. Führen Sie die Installation der neueren XtractISLicense.json-Datei durch.
-
 ****
 ##### Verwandte Links
 - [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/)
