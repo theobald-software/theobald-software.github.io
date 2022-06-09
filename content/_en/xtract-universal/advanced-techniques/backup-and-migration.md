@@ -59,16 +59,15 @@ Restoring the backup of the `config` directory replaces the exisiting configurat
 Configuration files can be migrated partially or entirely (full migration).
 
 Depending on your scenario it can make sense to conduct a partial migration - e.g., if you transport extractions from a test to a production environment.
-
 When replacing a machine completely, conduct a full migration.
 
-**Prerequisite**: Xtract Universal versions installed on both machines match.
+{: .box-note }																   
+**Note:** When you update your test environment by copying single `config` folders from the production environment, the `version.txt` file must be copied, too. 
+The `version.txt`is located in the `config` folder.
 
-{: .box-tip }
-**Tip**: To check the version of your product, open the Designer, navigate to **Help > Info** or press **[F12]**.
-
-{: .box-tip }
-**Tip:** Install the matching version on the different machine by using the `XtractUniversalSetup.exe` from the program directory (`C:\Program Files\XtractUniversal` by default) of the current machine.
+**Prerequisite**: Xtract Universal versions installed on both machines match.<br>
+To install the matching version on the different machine, use the `XtractUniversalSetup.exe` from the program directory (`C:\Program Files\XtractUniversal`) of the current machine.
+To check the version of your product, open the Designer and navigate to **Help > Info** or press **[F12]**.
 
 1. Create a backup of the `config` directory of the current machine.
 2. Decide whether you need a partial or a full migration. <br> 

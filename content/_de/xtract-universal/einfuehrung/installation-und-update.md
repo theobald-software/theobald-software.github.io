@@ -115,9 +115,12 @@ Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie 
 1. Prüfen Sie, ob Sie über eine funktionierende Testumgebung mit einer gültigen Lizenz und Wartung verfügen.
 2. Stellen Sie sicher, dass die Testumgebung eine Kopie der aktuellen Produktivumgebung ist.
 3. Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) und die Veröffentlichungshinweise (Release Notes) in der Knowledge-Base, um eine Update-Notwendigkeit auszuschließen. 
-
 4. Erstellen Sie ein [Backup](../fortgeschrittene-techniken/backup-und-migration) der aktuellen Installation.
 5. Führen Sie alle notwendigen Vorbereitungen und Änderungen durch, die in den Veröffentlichungshinweisen (Release Notes) / Versionshistorie  beschrieben sind. Bei größeren Änderungen verwenden Sie den ConfigConverter.
+
+{: .box-note }																   
+**Hinweis:** Wenn Sie Ihre Testumgebung aktualisieren und einzelne `config` Ordner aus der Produktionsumgebung in die Testumgebung kopieren, stellen Sie sicher, dass Sie die `version.txt` Datei mit kopieren.
+Die `version.txt` Datei befindet sich im `config` Ordner.
 
 ### Aktualisieren von Hauptversionen (Major Releases) - ConfigConverter
 

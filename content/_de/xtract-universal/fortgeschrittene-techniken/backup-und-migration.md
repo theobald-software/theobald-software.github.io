@@ -56,18 +56,17 @@ Das Wiederherstellen des Backups des Konfigurationsverzeichnisses (`config`) ers
 ### Migration auf eine andere Maschine
 Konfigurationsdateien können teilweise oder vollständig migriert werden.
 
-Je nach Szenario kann es sinnvoll sein, eine Teilmigration durchzuführen - z.B. wenn Sie Extraktionen von einer Test- in eine Produktivumgebung transportieren.
-
+Je nach Szenario kann es sinnvoll sein, eine Teilmigration durchzuführen - z.B. wenn Sie Extraktionen von einer Test- in eine Produktivumgebung transportieren.<br>
 Wenn Sie eine Maschine vollständig ersetzen, führen Sie eine vollständige Migration durch.
 
-**Voraussetzung**: Die Xtract Universal Versionen stimmen auf beiden Maschinen überein.
+{: .box-note }																   
+**Hinweis:** Wenn Sie Ihre Testumgebung aktualisieren und einzelne `config` Ordner aus der Produktionsumgebung in die Testumgebung kopieren, stellen Sie sicher, dass Sie die `version.txt` Datei mit kopieren.
+Die `version.txt` Datei befindet sich im `config` Ordner.
 
-{: .box-tip }
-**Tipp**: Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer und navigieren Sie zu **Help > Info** oder drücken Sie **[F12]**.
 
-{: .box-tip }
-**Tipp:** Wenn Ihre aktuelle Version nicht die neueste Version von Xtract Universal ist, installieren Sie die passende Version `XtractUniversalSetup.exe` aus dem Xtract Universal Verzeichnis: `C:\Program Files\XtractUniversal` (standardmäßig) auf der anderen Maschine.
-
+**Voraussetzung**: Die Xtract Universal Versionen stimmen auf beiden Maschinen überein. <br>
+Installieren Sie die `XtractUniversalSetup.exe` aus dem Xtract Universal Installationsverzeichnis (`C:\Program Files\XtractUniversal`) der aktuellen Maschine auf der anderen Maschine, um zu gewährleisten, dass die Versionen übereinstimmen.
+Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer und navigieren Sie zu **Help > Info** oder drücken Sie **[F12]**.
 
 1. Erstellen Sie ein Backup des `config`-Verzeichnisses der aktuellen Maschine.
 2. Entscheiden Sie, ob Sie eine teilweise oder eine vollständige Migration benötigen. <br> 

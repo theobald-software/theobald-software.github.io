@@ -115,6 +115,10 @@ knowledge base to check, if an update is needed.
 4. Create a [backup](../advanced-techniques/backup-and-migration) of the current installation.
 5. Conduct any necessary preparations and changes as described in the Release Note / Version History. In case of major changes, use the ConfigConverter.
 
+{: .box-note }																   
+**Note:** When you update your test environment by copying single `config` folders from the production environment, the `version.txt` file must be copied, too. 
+The `version.txt`is located in the `config` folder.
+
 ### Upgrading Major Releases - ConfigConverter
 
 There are two ways of upgrading the product version:
