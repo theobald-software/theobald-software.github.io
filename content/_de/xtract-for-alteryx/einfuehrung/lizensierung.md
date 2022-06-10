@@ -25,11 +25,14 @@ Um eine Demo-Lizenz durch eine reguläre Lizenz zu ersetzen, oder eine veraltete
 Das Standardverzeichnis ist `C:\Program Files\XtractForAlteryx`.
 ![XfA license file](/img/content/xfa/xfa_license_json.png){:class="img-responsive" width="600px"}
 
-<div class="alert alert-success">
-  <i class="fas fa-lightbulb"></i> Um die aktuellen Lizenzdaten einzusehen, klicken Sie auf <strong>About</strong> innerhalb des Konfigurationsfensters einer beliebigen Xtract for Alteryx-Komponente.<br>
-</div>
+{: .box-tip }
+**Tipp:** Um die aktuellen Lizenzdaten einzusehen, klicken Sie auf **About** innerhalb des Konfigurationsfensters einer beliebigen Xtract for Alteryx-Komponente.
 
 ![License information](/img/content/xfa/xfa_about_license.png){:class="img-responsive" width="600px"}
+
+
+Der *About* Tab des Infofensters enthält nützliche Links zum Kundenportal, der Knowledge Base, Online Hilfe und zum Support. <br>
+![Abot](/img/content/about-xfa.png){:class="img-responsive"}
 
 ### Wartung
 Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/xtract-for-alteryx/preise-und-bestellungen/) von Theobald Software. Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>

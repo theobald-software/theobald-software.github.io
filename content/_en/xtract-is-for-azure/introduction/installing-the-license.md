@@ -39,6 +39,10 @@ The license manager opens.
 {: .box-tip }
 **Tip:** To inspect your current license data, click the Xtract IS for Azure Info link located at the top of each component editor.
 
+The *About* tab of the info window contains useful links to the customer portal, knowledge base, Online Help and the support. <br> 
+![Abot](/img/content/about-xis.png){:class="img-responsive"}
+
+
 ****
 #### Related Links
 - [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/)

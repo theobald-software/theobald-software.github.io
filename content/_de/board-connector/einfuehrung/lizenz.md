@@ -31,6 +31,9 @@ Ein Neustart des BOARD Connector Service ist nicht notwendig.
 
 ![Demo_License](/img/content/BOARDConnector_Demo_License.png){:class="img-responsive"}
 
+Der *About* Tab des Infofensters enthält nützliche Links zum Kundenportal, der Knowledge Base, Online Hilfe und zum Support. <br>
+![Abot](/img/content/about-bc.png){:class="img-responsive"}
+
 ### Lizenzen auf einen neuen Server übertragen
 Da Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
 Kontaktieren Sie unseren Vertrieb unter [sales@theobald-software.com](mailto:sales@theobald-software.com) und teilen Sie uns den Namen des neuen Servers mit. 

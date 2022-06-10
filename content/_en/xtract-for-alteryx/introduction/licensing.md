@@ -25,11 +25,14 @@ To update or replace a demo license with a regular license, replace the "XtractF
 Default directory is `C:\Program Files\XtractForAlteryx`.
 ![XfA license file](/img/content/xfa/xfa_license_json.png){:class="img-responsive" width="600px"}
 
-<div class="alert alert-success">
-  <i class="fas fa-lightbulb"></i> To inspect your current license data, click <strong>About</strong> within the configuration window of any Xtract for Alteryx component.<br>
-</div>
+{: .box-tip }
+**Tip:** To inspect your current license data, click <**About** within the configuration window of any Xtract for Alteryx component.<br>
+
 
 ![License information](/img/content/xfa/xfa_about_license.png){:class="img-responsive" width="600px"}
+
+The *About* tab of the info window contains useful links to the customer portal, knowledge base, Online Help and the support. <br> 
+![Abot](/img/content/about-xfa.png){:class="img-responsive"}
 
 ### Maintenance
 General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>

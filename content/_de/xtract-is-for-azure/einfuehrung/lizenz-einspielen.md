@@ -33,9 +33,12 @@ Der Lizenzmanager wird geöffnet.
 4. Schließen und starten Sie den Lizenzmanager neu, um die korrekt installierte Lizenz anzuzeigen.  
 ![XIS_Lizenz_Info](/img/content/XIS_License_Info.png){:class="img-responsive" width="400px"}
 
-<div class="alert alert-success">
-  <i class="fas fa-lightbulb"></i> <strong>Tipp:</strong> Um Ihre aktuellen Lizenzdaten einzusehen, klicken Sie auf den Info-Link, der sich oben in jedem Komponenten-Editor befindet.<br>
-</div>
+{: .box-tip }
+**Tip:** Um Ihre aktuellen Lizenzdaten einzusehen, klicken Sie auf den Info-Link, der sich oben in jedem Komponenten-Editor befindet.
+
+Der *About* Tab des Infofensters enthält nützliche Links zum Kundenportal, der Knowledge Base, Online Hilfe und zum Support. <br>
+![Abot](/img/content/about-xis.png){:class="img-responsive"}
+
 
 ****
 ##### Verwandte Links

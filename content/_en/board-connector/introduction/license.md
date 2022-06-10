@@ -31,6 +31,9 @@ A restart of the BOARD Connector service is no longer necessary.
 
 ![Demo_License](/img/content/BOARDConnector_Demo_License.png){:class="img-responsive"}
 
+The *About* tab of the info window contains useful links to the customer portal, knowledge base, Online Help and the support. <br> 
+![Abot](/img/content/about-bc.png){:class="img-responsive"}
+
 ### Moving a License to a new Server
 When moving your setup to a new server, a new license file must be issued for that server.
 Contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com) to let us know the name of the new server.
