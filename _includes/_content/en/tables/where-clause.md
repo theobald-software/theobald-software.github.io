@@ -176,3 +176,4 @@ Select a parameter from the list.<br>
 **** 
 #### Related Links
 - [Knowledge Base Article: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
+- [Knowledge Base Article: Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)

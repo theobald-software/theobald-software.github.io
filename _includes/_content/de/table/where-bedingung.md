@@ -184,3 +184,4 @@ Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
 #### Weiterführende Links
 
 - [Knowledge Base Artikel: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
+- [Knowledge Base Artikel: Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)
