@@ -1,22 +1,12 @@
 Dieser Abschnitt beschreibt die notwendigen Schritte, um Single Sign-On (SSO) mit Secure Network Communication (SNC) und Kerberos Verschlüsselung einzurichten.
 
 {: .box-warning }
+**Warnung! Die Kerberos Wrapper Library (gx64krb5.dll) wird offiziell nicht mehr von SAP unterstützt.**
+
+{: .box-warning }
 **Warnung! Single Sign-On Verfügbarkeit** <br> 
 Der ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss SNC mit Kerberos-Verschlüsselung auf SAP-Seite eingestellt sein. <br>
 
-
-### Was ist SNC?
-
-Secure Network Connection (SNC) sichert die Datenübertragung zu Ihrem SAP-System.
-Dafür bietet SNC kryptografische Algorithmen, die Sie auf Ihre Daten anwenden können, um den Schutz Ihrer Daten auf Anwendungsebene zu erhöhen und eine End-to-End Security zu gewährleisten. <br>
-Jede Kommunikation, die zwischen SNC-geschützten Komponenten stattfindet ist dadurch gesichert, z-B die Kommunikation zwischen einer SAP-Anwendung und Theobald Produkten.
-
-Es gibt drei Sicherheitsgrade, die Sie mit SNC anwenden können:
-- nur Authentifizierung
-- Schutz der Integrität
-- Schutz der Vertraulichkeit
-
-Für weitere Informationen zu SNC, siehe [SAP Hilfe: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/de-DE/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
 
 ### Aktivierung von HTTPS
 1. Aktivieren Sie das Zugriffskontrollprotokoll HTTPS (1) innerhalb des Tabs *Web Server* Einstellungen. 
@@ -29,8 +19,6 @@ Für weitere Informationen zu SNC, siehe [SAP Hilfe: SNC](https://help.sap.com/d
 
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
-
-
 
 ### Konfiguration vom Windows AD Service-Account.
 Wenn SSO mit Kerberos SNC verwendet wird, muss der Xtract Universal Service unter einem entsprechenden Service Account ausgeführt werden, siehe [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../service-account).
@@ -91,3 +79,4 @@ z.B. `C:\SNC\gx64krb5.dll` (3).
 **Hinweis:** Die SNC-Einstellungen des SAP-Logon-Pads für den Partnernamen unterscheiden sich von denen, die in Xtract-Produkten verwendet werden. 
 Das SAP Logon-Pad verwendet den UPN der SAP-Server-Accounts und Xtract-Produkt den Service Principal Name (SPN). Verwenden Sie die folgende Notation:
 *p:[SAP Service Account]@[domain]*. Bei SPN's wird im SNC-Partnernamen zwischen Groß- und Kleinschreibung unterschieden.
+
