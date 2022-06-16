@@ -18,8 +18,7 @@ Die mit ( * ) gekennzeichneten Dateien können zusammen mit der erstellten Anwen
 |                                        |                                                                                                                                      |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | ERPConnect35.dll (*)                   | ERPConnect Assembly für .NET 3.5 SP1                                                                                                 |
-| ERPConnect45.dll (*)                   | ERPConnect Assembly für .NET 4.5.2 oder höher                                                                                        |
-| ERPConnect35.xml<br>  ERPConnect45.xml | Doku-Dateien für Visual Studio                                                                                                       |
+| ERPConnect35.xml| Doku-Dateien für Visual Studio                                                                                                       |
 | TransactionRecorder.exe                | Kleines Hilfetool, mit dem Programmcode für die Klasse Transaction erzeugt werden kann (siehe [Batch Input Hintergrundverarbeitung](../spezialklassen/batch-input-hintergrundverarbeitung) ). |
 | IdocSchemeGenerator.exe                | Dieses Tool erzeugt Schema-Dateien (.xsd) für das IDoc-Handling (siehe [IDocs als XML verarbeiten](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) ).                                  |
 | FunctionTemplateGenerator.exe          | Dieses Tool erzeugt XML-Templates für RFCFunction-Objekthierarchie   (siehe [Performance-Tuning durch XML-Templates](../rfc-client-funktionen-und-bapis/performance-tuning-durch-xml-templates) )                 |
