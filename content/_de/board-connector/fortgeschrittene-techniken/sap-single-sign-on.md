@@ -98,8 +98,6 @@ Der ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen. SNC mi
 - Der BI Client (der die Extraktion aufruft) läuft unter Windows.
 - Als SNC-Lösung wird die SAP Kerberos Wrapper Library (gsskrb5) verwendet.
 
-Für detailierte Informationen über die Einrichtung von SSO und SNC mit Kerberos Wrapper Library, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
-
 {: .box-note }
 **Hinweis:** Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werden - z.B. SAPs Common Crypto Library **oder** gsskrb5, aber nicht beides gleichzeitig.
 SSO und SNC mit Kerberos Wrapper Library funktioniert ausschließlich mit der gsskrb5 Bibliothek. 
@@ -120,11 +118,15 @@ Die Kerberos Wrapper Library (gsskrb5) von SAP unterstützt das Weitergeben von 
 
 Bei Verwendung von SNC-Lösungen geliefert von Third-Party-Anbietern, benutzen Sie entweder die Kerberos Wrapper Library oder eine entsprechende Third-Party-Lösung.
 
+### SSO und SNC mit Kerberos Wrapper Library einrichten
+
+Für Informationen über die Einrichtung von SSO und SNC mit Kerberos Wrapper Library, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
+
 ### Weiterführende Links
 - [Microsoft - Kerberos explained](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb742516(v=technet.10))
 - [Microsoft - Understanding Kerberos Double Hop](https://blogs.technet.microsoft.com/askds/2008/06/13/understanding-kerberos-double-hop/)
 - [SAP Dokumentation - Single Sign-On mit Microsoft Kerberos SSP](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/DE-DE/440ebf6c9b2b0d1ae10000000a114a6b.html)
-
+- [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc)
 
 ## SSO via SAP Logon Ticket
 
@@ -146,7 +148,8 @@ Eine SAP-Verbindung ist über Single-Sign-On (SSO) mit SAP Logon Ticket möglich
 4. AS Java bildet Windows Benutzer auf SAP Benutzer ab und stellt ein SAP Logon Ticket für diesen SAP Benutzer aus. Liefert das Logon Ticket im MYSAPSSO2 cookie.
 5. Der Server holt SAP Logon Ticket aus Cookie, meldet sich damit am AS ABAP an und führt die Extraktion aus.
 
-Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit SAP Logon Ticket, siehe [Knowledge Base Artikel: SSO with Logon-Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+{: .box-note }
+**Hinweis:** Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit SAP Logon Ticket, siehe [Knowledge Base Artikel: SSO with Logon-Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 ### Weiterführende Links
 * [SAP Dokumentation - Kerberos und SAP NetWeaver AS für Java](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/4c/8a4d292e2849a8b7cbd229be5c94a5/frameset.htm)
