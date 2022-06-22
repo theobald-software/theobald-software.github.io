@@ -150,6 +150,7 @@ Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen 
 |------|-------------|-------|
 | INT1 | UINT_8 | INT16 |
 | TIMS | TIME_MILLIS | UTF8 |
+
 ![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
 
 ### Retry-Funktion
