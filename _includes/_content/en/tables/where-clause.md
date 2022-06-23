@@ -124,11 +124,11 @@ There are 2 options for adding criteria to the WHERE clause:
 
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
 
-The following components are available in the editor (2):
+The following components are available in the editor:
 
 | Icon  | Component   | Function    | 
 | ------|-------------|-------------| 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-delete.png) | Delete row | adeletes a criteria.|
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-delete.png) | Delete row | deletes a criteria.|
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png) | Move row up | changes the sequence of the criteria. The selected criteria moves up. The sequence of criteria can also be changed with drag&drop. |
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png) | Move row down | changes the sequence of the criteria. The selected criteria moves down. The sequence of criteria can also be changed with drag&drop.| 
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png) | Column    | adds a column. Click on the component to select a column from the available tables. | 
