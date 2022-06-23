@@ -141,14 +141,13 @@ Folgende Komponenten stehen im Editor zur Verfügung:
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
 
-- Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
-Alle grün markierten Flächen können bearbeitet werden.<br>
-- Klicken Sie auf das (x) Icon über einer Komponente, um die Komponente zu löschen.
-
 {: .box-note }
 **Hinweis:** Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.
 **Operator** ist zum Beispiel nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
 
+- Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
+Alle grün markierten Flächen können bearbeitet werden.<br>
+- Klicken Sie auf das (x) Icon über einer Komponente, um die Komponente zu löschen.
 
 ### Laufzeitparameter im WHERE Clause Editor
 
