@@ -77,7 +77,33 @@ Calling the metadata of extraction *BSEG* using the URL ```http://localhost:8065
 
 
 {: .box-note }
-**Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. If inactive, the data type is *StringLengthMax* with a length of 8.
+**Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
+
+#### Data Types
+
+Mapping the types of the deprecated [API metadata method](./metadata-access-via-http#metadata-of-an-extraction):
+
+| Old Type (ABAP datatype)             | Type              |  Details  |
+|--------------------------------------|---------------------|-----------|
+|-                                    |  ByteArrayLengthMax            | Array of unsigned 8-bit integer. <br>Maximum number of elements per array is available on length column.|
+|-                                    |  ByteArrayLengthUnknown        | Array of unsigned 8-bit integer.|
+|ByteSequence (X)                     |  ByteArrayLengthExact          | Array of unsigned 8-bit integer. <br>Exact number of elements per array is available on length column. |
+|ByteSequenceOfVariableLength (y)     |  StringLengthUnknown           | Sequence of zero or more Unicode characters. |
+|CharacterString  (C)                 |  StringLengthMax               |  Sequence of zero or more Unicode characters. <br>Maximum length is available on length column.|
+|CharacterStringOfVariableLength (g)  |  StringLengthUnknown           | Sequence of zero or more Unicode characters. |
+|Date (D)                             |  Date (ConvertedDate) <br> |  If *Date Conversion* is active in the destination settings, the displayed type is *ConvertedDate*. SAP date format: yyyyMMdd<br>*Date*: 8 bytes - Sequence of zero or more Unicode characters that represents dates and times. <br> *ConvertedDate*: 8 bytes - Represents dates and times.|
+|DecimalFloatingPoint16 (a)           |  ByteArrayLengthExact          | Array of unsigned 8-bit integer. <br>Exact number of elements per array is available on length column. |
+|DecimalFloatingPoint34 (e)           |  ByteArrayLengthExact          | Array of unsigned 8-bit integer. <br>Exact number of elements per array is available on length column. |
+|EightByteInteger (8)                 |  Long                          | Signed 64-bit integer. |
+|FloatingPoint (F)                    |  Double                        | 8 bytes - IEEE-754 double precision floating. |
+|FourByteInteger (I)                  |  Int                           | Signed 32-bit integer. |
+|NumericCharacterString (N)           |  NumericString                 | Sequence of zero or more numeric [0-9] Unicode characters. <br>Exact length is available via *ResultColumn.Length*. |
+|OneByteInteger (b)                   |  Byte                          | Unsigned 8-bit integer. |
+|PackedNumber (P)                     |  Decimal                       | 16 bytes - Precison 28-29 digits. <br>Total number of digits (integer + decimal part) is available on length column. <br>Number of decimal digits is available on decimals count column. |
+|Time (T)                             |  Time (ConvertedTime) <br> |  If *Date Conversion* is active in the destination settings, the displayed type is *ConvertedTime*. SAP time format: HHmmss<br>*Time*: 6 bytes - Sequence of zero or more Unicode characters that represents a time interval. <br> *ConvertedTime*: 6 bytes - Represents a time interval.|
+|TimeStamp (p)                        |  TimeStamp                     | 32 bytes - Represents dates and times. <br>Uses the Julian Calendar before 04.10.1582 and the Gregorian Calendar afterwards. Date range 05.10.1582 - 14.10.1582 is invalid. |
+|TwoByteInteger (s)                   |  Short                         | Signed 16-bit integer. |
+
 
 ### Parameters
 Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../execute-and-automate-extractions/extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
