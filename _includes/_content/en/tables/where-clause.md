@@ -122,26 +122,22 @@ There are 2 options for adding criteria to the WHERE clause:
 
 #### Components of the WHERE Clause Editor
 
-Delete or edit the sequence of criteria using the buttons on the left (1):
-- **Delete row** deletes a criteria.
-- **Move row up** changes the sequence of the criteria. The selected criteria moves up.
-- **Move row down** changes the sequence of the criteria. The selected criteria moves down.
-
-The sequence of criteria can also be changed with drag&drop.
-
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
 
 The following components are available in the editor (2):
 
-| Component   | Function          | 
-| ------------- |-------------| 
-| Column    | adds a column. Click on the component to select a column from the available tables. | 
-| SQL       |  adds an SQL statement.      |  
-| Operator  | adds an operator e.g., =, <, >, etc. |  
-| Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
-| Parameter | adds a previously defined runtime parameter, see [Using Runtime Parameters in the WHERE Clause Editor](#using-runtime-parameters-in-the-where-clause-editor).|
-| Criteria | adds a new criteria after the selected criteria. |
-| Group | adds a new group of criteria the selected criteria. | 
+| Icon  | Component   | Function    | 
+| ------|-------------|-------------| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-delete.png) | Delete row | adeletes a criteria.|
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png) | Move row up | changes the sequence of the criteria. The selected criteria moves up. The sequence of criteria can also be changed with drag&drop. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png) | Move row down | changes the sequence of the criteria. The selected criteria moves down. The sequence of criteria can also be changed with drag&drop.| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png) | Column    | adds a column. Click on the component to select a column from the available tables. | 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-sql.png)| SQL       |  adds an SQL statement.      |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-operator.png)| Operator  | adds an operator e.g., =, <, >, etc. |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png) | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-param.png) | Parameter | adds a previously defined runtime parameter, see [Using Runtime Parameters in the WHERE Clause Editor](#using-runtime-parameters-in-the-where-clause-editor).|
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | adds a new criteria after the selected criteria. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | adds a new group of criteria the selected criteria. | 
 
 - Click on a component to edit it. All areas that are marked green can be edited.<br>
 - To delete a component, click the (x) icon above the component.<br>
