@@ -85,23 +85,21 @@ Mapping the types of the deprecated [API metadata method](./metadata-access-via-
 
 | Old Type (ABAP datatype)             | Type              |  Details  |
 |--------------------------------------|---------------------|-----------|
-|-                                    |  ByteArrayLengthMax            | Array of unsigned 8-bit integer. <br>Maximum number of elements per array is available on length column.|
-|-                                    |  ByteArrayLengthUnknown        | Array of unsigned 8-bit integer.|
 |ByteSequence(X)                     |  ByteArrayLengthExact          | Array of unsigned 8-bit integer. <br>Exact number of elements per array is available on length column. |
-|ByteSequenceOfVariableLength(y)     |  StringLengthUnknown           | Sequence of zero or more Unicode characters. |
+|ByteSequenceOfVariableLength(y)      |  ByteArrayLengthMax / ByteArrayLengthUnknown            | Array of unsigned 8-bit integer. <br>Maximum number of elements per array is available on length column.|
 |CharacterString(C)                 |  StringLengthMax               |  Sequence of zero or more Unicode characters. <br>Maximum length is available on length column.|
 |CharacterStringOfVariableLength(g)  |  StringLengthUnknown           | Sequence of zero or more Unicode characters. |
-|Date(D)                             |  Date (ConvertedDate) <br> |  If *Date Conversion* is active in the destination settings, the displayed type is *ConvertedDate*. SAP date format: yyyyMMdd<br>*Date*: 8 bytes - Sequence of zero or more Unicode characters that represents dates and times. <br> *ConvertedDate*: 8 bytes - Represents dates and times.|
+|Date(D)                             |  Date (ConvertedDate) <br> |  If *Date Conversion* is active in the destination settings, the displayed type is *ConvertedDate*. <br>*Date*: 0-8 Unicode characters that typically represent a date in the format yyyyMMdd. <br> *ConvertedDate*: Destination-specific date format.|
 |DecimalFloatingPoint16(a)           |  ByteArrayLengthExact          | Array of unsigned 8-bit integer. <br>Exact number of elements per array is available on length column. |
 |DecimalFloatingPoint34(e)           |  ByteArrayLengthExact          | Array of unsigned 8-bit integer. <br>Exact number of elements per array is available on length column. |
 |EightByteInteger(8)                 |  Long                          | Signed 64-bit integer. |
-|FloatingPoint(F)                    |  Double                        | 8 bytes - IEEE-754 double precision floating. |
+|FloatingPoint(F)                    |  Double                        | 8 bytes - IEEE-754 double precision floating point number. |
 |FourByteInteger(I)                  |  Int                           | Signed 32-bit integer. |
-|NumericCharacterString(N)           |  NumericString                 | Sequence of zero or more numeric [0-9] Unicode characters. <br>Exact length is available via *ResultColumn.Length*. |
+|NumericCharacterString(N)           |  NumericString                 | Sequence of numeric characters (0-9). <br>Exact length is available on length column. |
 |OneByteInteger(b)                   |  Byte                          | Unsigned 8-bit integer. |
-|PackedNumber(P)                     |  Decimal                       | 16 bytes - Precison 28-29 digits. <br>Total number of digits (integer + decimal part) is available on length column. <br>Number of decimal digits is available on decimals count column. |
-|Time(T)                             |  Time (ConvertedTime) <br> |  If *Date Conversion* is active in the destination settings, the displayed type is *ConvertedTime*. SAP time format: HHmmss<br>*Time*: 6 bytes - Sequence of zero or more Unicode characters that represents a time interval. <br> *ConvertedTime*: 6 bytes - Represents a time interval.|
-|TimeStamp(p)                        |  TimeStamp                     | 32 bytes - Represents dates and times. <br>Uses the Julian Calendar before 04.10.1582 and the Gregorian Calendar afterwards. Date range 05.10.1582 - 14.10.1582 is invalid. |
+|PackedNumber(P)                     |  Decimal                       | Decimal fixed point number. <br>Total number of digits (integer + decimal part) is available on length column. <br>Number of decimal digits is available on decimals count column. |
+|Time(T)                             |  Time (ConvertedTime) <br> |  If *Date Conversion* is active in the destination settings, the displayed type is *ConvertedTime*. *Time*: 6 numeric characters (0-9) that represent the time of day in the format "HHmmss". <br> *ConvertedTime*: Destination-specific format for the time of day.|
+|TimeStamp(p)                        |  TimeStamp                     | Destination-specific format for timestamps. <br>Uses the Julian Calendar before 04.10.1582 and the Gregorian Calendar afterwards. Date range 05.10.1582 - 14.10.1582 is invalid. |
 |TwoByteInteger(s)                   |  Short                         | Signed 16-bit integer. |
 
 

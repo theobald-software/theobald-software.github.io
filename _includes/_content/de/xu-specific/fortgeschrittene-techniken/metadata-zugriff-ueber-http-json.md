@@ -85,23 +85,21 @@ Mapping von Datentypen der veralteten [API Metadaten-Methode](./metadata-zugriff
 
 | Alter Typ (ABAP Datentyp)             | Typ              |  Details  |
 |--------------------------------------|---------------------|-----------|
-|-                                    |  ByteArrayLengthMax            | Array aus vorzeichenlosen 8-Bit-Ganzzahlen. <br>Die maximale Anzahl der Elemente pro Array ist als Länge der Spalte verfügbar.|
-|-                                    |  ByteArrayLengthUnknown        | Array aus vorzeichenlosen 8-Bit-Ganzzahlen.|
 |ByteSequence(X)                     |  ByteArrayLengthExact          | Array aus vorzeichenlosen 8-Bit-Ganzzahlen. <br>Die maximale Anzahl der Elemente pro Array ist als Länge der Spalte verfügbar. |
-|ByteSequenceOfVariableLength(y)     |  StringLengthUnknown           | Sequenz aus null oder mehreren Unicode Zeichen. |
+|ByteSequenceOfVariableLength(y)      |  ByteArrayLengthMax / ByteArrayLengthUnknown           | Array aus vorzeichenlosen 8-Bit-Ganzzahlen. <br>Die maximale Anzahl der Elemente pro Array ist als Länge der Spalte verfügbar.|
 |CharacterString(C)                 |  StringLengthMax               | Sequenz aus null oder mehreren Unicode Zeichen. <br>Die maximale Länge ist als Länge der Spalte verfügbar.|
 |CharacterStringOfVariableLength(g)  |  StringLengthUnknown           | Sequenz aus null oder mehreren Unicode Zeichen. |
-|Date(D)                             |  Date (ConvertedDate) <br> |  Wenn *Date Conversion* in den Destinationseinstellungen aktiv ist, ist der angezeigt Typ *ConvertedDate*. SAP Datumsformat: yyyyMMdd<br>*Date*: 8 Bytes - Sequenz aus null oder mehreren Unicode Zeichen, die Datum und Zeitpunkt repräsentieren. <br> *ConvertedDate*: 8 Bytes - Repräsentiert Datum und Zeitpunkt.|
+|Date(D)                             |  Date (ConvertedDate) <br> |  Wenn *Date Conversion* in den Destinationseinstellungen aktiv ist, ist der angezeigt Typ *ConvertedDate*. <br>*Date*: 0-8 Unicode Zeichen, die i.d.R. ein Datum im Format "yyyyMMdd" repräsentieren. <br> *ConvertedDate*: spezifisches Datum-Format der Destination.|
 |DecimalFloatingPoint16(a)           |  ByteArrayLengthExact          | Array aus vorzeichenlosen 8-Bit-Ganzzahlen. <br>Die exakte Anzahl der Elemente pro Array ist als Länge der Spalte verfügbar. |
 |DecimalFloatingPoint34(e)           |  ByteArrayLengthExact          | Array aus vorzeichenlosen 8-Bit-Ganzzahlen. <br>Die exakte Anzahl der Elemente pro Array ist als Länge der Spalte verfügbar. |
 |EightByteInteger(8)                 |  Long                          | Vorzeichenbehaftete 64-bit Ganzzahl. |
-|FloatingPoint(F)                    |  Double                        | 8 Bytes - IEEE-754 doppelt genaues Fließkomma-Format. |
+|FloatingPoint(F)                    |  Double                        | 8 Bytes - IEEE-754 doppelt genaue Gleitkommazahl. |
 |FourByteInteger(I)                  |  Int                           | Vorzeichenbehaftete 32-bit Ganzzahl. |
-|NumericCharacterString(N)           |  NumericString                 | Sequenz aus null oder mehreren numerischen [0-9] Unicode Zeichen. <br>Die exakte Länge ist via *ResultColumn.Length* verfügbar. |
+|NumericCharacterString(N)           |  NumericString                 | Sequenz aus numerischen Zeichen (0-9). <br>Die exakte Länge ist als Länge der Spalte verfügbar. |
 |OneByteInteger(b)                   |  Byte                          | Vorzeichenlose 8-bit Ganzzahl. |
-|PackedNumber(P)                     |  Decimal                       | 16 Bytes - 28-29 stellige Präzision. <br>Die komplette Anzahl der Stellen (Ganzzahl + Dezimal Teil) ist Länge der Spalte verfügbar. <br> Die Anzahl der Dezimalstellen ist via *ResultColumn.DecimalsCount* verfügbar. |
-|Time(T)                             |  Time (ConvertedTime) <br> |  Wenn *Date Conversion* in den Destinationseinstellungen aktiv ist, ist der angezeigt Typ *ConvertedTime*. SAP Zeitformat: HHmmss<br>*Time*: 6 Bytes - Sequenz aus null oder mehreren Unicode Zeichen, die ein Zeitintervall repräsentieren. <br> *ConvertedTime*: 6 Bytes - Repräsentiert ein Zeitintervall.|
-|TimeStamp(p)                        |  TimeStamp                     | 32 Bytes - Repräsents Datum und Zeitpukt. <br>Verwendet den Julianischen Kalender vor 04.10.1582 und den Gregorianischen Kalender danach. Das Datumsintervall 05.10.1582 - 14.10.1582 ist ungültig. |
+|PackedNumber(P)                     |  Decimal                       | Festkommazahl. <br>Die komplette Anzahl der Stellen (Ganzzahl + Dezimal Teil) ist Länge der Spalte verfügbar. <br> Die Anzahl der Dezimalstellen ist via *ResultColumn.DecimalsCount* verfügbar. |
+|Time(T)                             |  Time (ConvertedTime) <br> |  Wenn *Date Conversion* in den Destinationseinstellungen aktiv ist, ist der angezeigt Typ *ConvertedTime*. *Time*: 6 numerische Zeichen (0-9), die die Uhrzeit im Format "HHmmss" repräsentieren. <br> *ConvertedTime*: spezifisches Uhrzeit-Format der Destination.|
+|TimeStamp(p)                        |  TimeStamp                     | Spezifisches Zeitstempel-Format der Destination. <br>Verwendet den Julianischen Kalender vor 04.10.1582 und den Gregorianischen Kalender danach. Das Datumsintervall 05.10.1582 - 14.10.1582 ist ungültig. |
 |TwoByteInteger(s)                   |  Short                         | Vorzeichenbehaftete 16-bit Ganzzahl. |
 
 
