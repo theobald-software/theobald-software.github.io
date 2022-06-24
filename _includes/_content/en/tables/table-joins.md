@@ -7,7 +7,7 @@ Supported join types:
 - Inner Join
 - Left Outer Join, also referred to as *Left Join*.
 
-For more information on join types see [SAP Online help](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
+For more information on join types see [SAP Online Help](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
 
 
 {: .box-note }
@@ -31,13 +31,13 @@ The following example shows, how tables KNA1 and KNVV can be joined.
 {: .box-note }
 **Note**: Be careful of [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
-In the *Joins* tab, click **Edit** (pencil icon) to display joining options. <br>
+In the *Joins* tab, click **[Edit]** ( ![pen](/img/content/icons/pen.png) icon) to display joining options. <br>
 In the depicted example a left outer join on tables KNA1 (left table) and KNVV (right table) on the field KUNNR is performed. A WHERE clause on *KNA1~LAND1 = 'DE'* is specified. 
 ![Table-Join-Connections](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 
 *Left Table*, *Right Table*, *Join Type* and *Join Mapping* are preset with default values. They can be modified as required. The *Join Mapping* is based on the foreign key relationship of the joined tables.<br>
 - Click **[Add]** to extend the join condition to more fields. 
-- Click **Remove** (trash can icon) to remove existing joins. 
+- Click **[Remove]** ( ![trashbin](/img/content/icons/trashbin.png) icon) to remove existing joins. 
 - Join additional tables in the tab *Tables and Fields*. 
 
 {: .box-tip }

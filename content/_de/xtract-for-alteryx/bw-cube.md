@@ -36,7 +36,7 @@ Das Hauptfenster der BW Cube Komponente besteht aus zwei Unterabschnitten und ei
 ![Cube Extractor](/img/content/xfa/xfa-cube-query-overview.png){:class="img-responsive"}
 
 #### Cube or Query
-Im Unterabschnitt **Cube or Query** können Sie über **[Suche]** (Lupensymbol) nach BEx-Queries oder InfoProviders suchen.
+Im Unterabschnitt **Cube or Query** können Sie über **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) nach BEx-Queries oder InfoProviders suchen.
 Die Felder *Key Figures*, *Dimensions* und *Properties*, die für die Ausgabe ausgewäht werden können, werden in diesem Unterabschnitt angezeigt. 
 
 

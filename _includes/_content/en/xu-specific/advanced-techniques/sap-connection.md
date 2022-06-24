@@ -93,9 +93,9 @@ For more information, see [SSO with Kerberos SNC](../advanced-techniques/sap-sin
 **Enroll certificate on behalf of caller (Certificate SSO)** <br>
 This option activates Certificate SSO.
 The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user who calls the extraction.
-For this scenario "HTTPS - Restricted to AD users with Designer read access" must be selected and configured in the [Server Settings](../server/server-settings#web-server).
-Enter the name of the certificate template and the thumbprint of the enrollment agent certificate.
-The SAP Secure Login Client must be installed on the machine that runs the XU or BC server.
+- Enter the name of the certificate template and the thumbprint of the enrollment agent certificate.
+- "HTTPS - Restricted to AD users with Designer read access" must be configured in the [Server Settings](../server/server-settings#web-server).
+- The SAP Secure Login Client must be installed on the machine that runs the XU or BC server.
 
 ### SAP Logon Ticket
 

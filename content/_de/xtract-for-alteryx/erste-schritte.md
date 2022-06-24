@@ -26,46 +26,7 @@ Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung f
 ![Create-New-Table-Extraction2](/img/content/xfa_create_table_extraction_02.png){:class="img-responsive"}
 4. Das Hauptfenster der Komponente wird geöffnet. In diesem Fenster können Sie einfache Tabellenextraktionen oder Tabellen-Joins für Extraktionen definieren. Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
 
-### Eine SAP-Tabelle hinzufügen
-
-{: .box-tip }
-**Tipp:** Wildcard-Zeichen wie * werden unterstützt. 
-
-1. Innerhalb des Hauptfensters klicken Sie auf **[Add]**, um eine Tabelle hinzuzufügen.<br>
-![Add-New-Table](/img/content/table/table_main-window_add.png){:class="img-responsive"} <br/>
-Das Fenster "Table Lookup" wird geöffnet. <br/>
-![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
-2. Geben Sie den Namen der zu extrahierenden Tablelle ins Feld **Table name** (1) ein.<br>
-3. Klicken Sie auf**[Search]** (Lupensymbol) (2).
-Suchergebnisse erscheinen im Vorschaufenster.
-4. Wählen Sie die gewünschte Tabelle (3) und klicken Sie auf **[OK]** (4). <br>
-
-Die Anwendung kehrt zum Hauptfenster der Komponente zurück.<br>
-
-Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt.<br>
-![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}<br>
-
-| Nummer | Element / Beschreibung | 
-|:------------|:-----|
-| 1  | Feldselektion, Filterung |  
-| 2  | Filterfelder   |  
-| 3  | Conversion Routine  |
-| 4  | Vorschaufenster, Ergebnis der Umwandlung (Conversion)   |   
-
-### Filtern von Tabellen
-
-Sie können entweder alle oder nur einzelne Spalten zur Extraktion auswählen. 
-Standardmäßig werden alle Spalten automatisch für die Tabellenextraktion ausgewählt. Wählen Sie diejenigen ab, die Sie nicht extrahieren möchten.<br>
-Klicken Sie auf die Kopffelder, um die Spalten nach Name oder Beschreibung zu sortieren.<br>
-Um nach bestimmten Namen oder Beschreibungen einer Tabelle zu suchen, fangen Sie an das gesuchte Wort in die Filterfelder einzutippen.<br>
-
-![Table-Main](/img/content/table/fields_filter-search.png){:class="img-responsive"}
-
-### Verwenden der Echtzeitvorschau
-
-1. Klicken Sie auf **[Load live preview]**, um 100 Einträge anzuzeigen.
-2. Klicken Sie auf **[OK]** zum Bestätigen und um die Extraktion im Repository (auf dem Server) zu speichern.
-
+{% include _content/de/table/extraktion-anlegen.md  %}
 ![Table-Main](/img/content/xfa/xfa-table-preview.png){:class="img-responsive"}
 
 

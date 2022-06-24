@@ -12,7 +12,7 @@ lang: de_DE
 Der folgende Abschnitt beschreibt die Anwendung der Xtract Report Komponente. 
 
 ### Einen Report oder eine Transaktion finden
-1. Klicken Sie auf den **[Suchen]** Button (Vergrößerungsglas) im Hauptfenster der Report-Komponente. Das Fenster “Report Lookup” öffnet sich.
+1. Klicken Sie auf **[Suchen]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) im Hauptfenster der Report-Komponente. Das Fenster “Report Lookup” öffnet sich.
 2. Geben Sie im Feld **Report Name** (1) den Namen des Reports ein, den Sie suchen. Die Verwendung von Wildcards (*) wird unterstützt. 
 Alternativ können Sie nach SAP Transaktion Codes suchen, indem Sie die Checkbox TCODE aktivieren.
 ![Look-Up-Report](/img/content/Look-Up-Report.png){:class="img-responsive"}

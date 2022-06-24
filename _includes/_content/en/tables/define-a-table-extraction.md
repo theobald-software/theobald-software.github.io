@@ -6,7 +6,7 @@
 The window "Table Lookup" opens. <br/>
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
 2. In the field **Table name** (1) enter the name of the table to extract. <br>
-3. Click **[Search]** (magnifying glass icon) (2).
+3. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (2).
 Search results appear in the preview window.
 4. Select the desired table (3) and click **[OK]** (4). <br>
 

@@ -20,11 +20,12 @@ Der folgende Abschnitt beschreibt die Anwendung der Xtract BAPI Komponente.
 ![BAPI component](/img/content/xfa/Define-bapi-component.png){:class="img-responsive"}
 
 ### Eine BAPI finden
-4. Suchen nach **BAPI / Function Name** über das **[Lupensymbol]** (4). Sie können Platzhalter verwenden (*), wenn gewünscht. Das Fenster "Function Module Lookup" öffnet sich.
-5. Durch Eingabe eines Suchnamens in das Feld **BAPI / Function Name**, können Sie die Suche einschränken. Starten Sie die Suche duch klicken auf das **[Lupensymbol]** (5). Sie können Platzhalter verwenden (*), wenn gewünscht.<br>
+1. Klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (4) im Hauptfenster der Komponente. Das Fenster "Function Module Lookup" öffnet sich.
+2. Geben Sie im Feld **Function Name** (5) den Namen eines BAPI oder Funktionsbausteins ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
+Alternativ können Sie nach Function Group suchen.
 ![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module.png){:class="img-responsive"}
-6. Wählen Sie ein Element aus der Liste aus (6). 
-4. Klicken Sie auf **[OK]** (7), um die Auswahl zu bestätigen.
+3. Klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) und wählen Sie ein Objekt aus der angezeigten Liste aus (6). 
+4. Bestätigen Sie Ihre Eingabe mit **[OK]** (7).
 5. Das Fenster "Xtract BAPI" zeigt die Parameter der ausgewählten BAPI.<br>
 Ein BAPI kann bis zu vier Paramtertypen haben: [Parametertypen](./skalare-parameter): Imports, Exports, Changings und Tables.
 ![BAPI-Parameters](/img/content/xfa/BAPI-Parameters.png){:class="img-responsive"}

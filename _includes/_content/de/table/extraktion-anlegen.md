@@ -5,7 +5,7 @@
 ![Table-Lookup](/img/content/table/table_main-window_add.png){:class="img-responsive" }
 2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden Tabelle ein.
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
-3. Klicken Sie auf **[Search]** (Lupensymbol)(2).
+3. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (2).
 Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
 4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **OK** (4). <br>
 

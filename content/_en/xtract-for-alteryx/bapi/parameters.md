@@ -74,5 +74,5 @@ To use the filtering function, enter text in the headers of the columns **Name**
 1. Mark the checkbox in the output column (1) to determine the table used for output.<br> 
 2. Drop-down lists (2) in the column value show the defined tables in your Alteryx workflow that can be used as an input table (see [Setting an input value](./input-output-values)). <br>
 3. Click **[X]** (3) to clear the values. <br> 
-4. Click **Search** (glasses symbol) (4) to display the metadata of the selected table including the name and the data type of all fields.
+4. Click **Search** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (4) to display the metadata of the selected table including the name and the data type of all fields.
 ![BAPI meta-data](/img/content/xfa/bapi_table_sap_fields.png){:class="img-responsive"}

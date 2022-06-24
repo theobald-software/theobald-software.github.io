@@ -6,13 +6,11 @@ A report column is defined by its name, offset and length. Per default, all colu
 At this stage, use a selection or variant that returns only a few records. This can be adapted later on.
 
 
-Some Classical ABAP reports are developed in a way so that output columns are delimited by the pipe symbol '\|'. In this case the Report component can automatically identify the columns. Automatic column detection also works for most ALV reports. <br>
-Example:
+- Some Classical ABAP reports are developed in a way so that output columns are delimited by the pipe symbol '\|'. In this case the Report component can automatically identify the columns. Automatic column detection also works for most ALV reports. <br>
+Example:<br>
 ![Report-delimiters](/img/content/Report_new_delimiters.png){:class="img-responsive"}
-
-
-For reports where the output is not separated by the pipe symbol, the columns must be identified manually. <br>
-Example:
+- For reports where the output is not separated by the pipe symbol, the columns must be identified manually. <br>
+Example:<br>
 ![Report-no-delimiters](/img/content/Report_new_no_delimiters.png){:class="img-responsive"}
 
 
@@ -32,7 +30,7 @@ When automatic column detection is not possible, the report's column names, widt
 
 Report columns can be manually defined as follows:
 
-1. Make sure no columns are defined yet. Go to the *Columns* section and delete all columns by clicking on the *trash can* icon.
+1. Make sure no columns are defined yet. Go to the *Columns* section and delete all columns by clicking on the ![trashbin](/img/content/icons/trashbin) icon.
 ![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}
 2. Click **[Load Preview]**. The report is executed based on the selected report variant or selections. The report output is displayed in the *Load Preview* section.
 3. Press and hold down the left mouse button in the *Load Preview* section.  

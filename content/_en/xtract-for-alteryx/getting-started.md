@@ -27,6 +27,7 @@ The information described in the following section is a prerequisite for all sub
 4. The main window of the component opens. In this window you can define simple table extractions or join tables for extractions. In the following example, a single table is extracted.
 
 {% include _content/en/tables/define-a-table-extraction.md  %}
+![Table-Main](/img/content/xfa/xfa-table-preview.png){:class="img-responsive"}
 
 *****
 #### Related Links

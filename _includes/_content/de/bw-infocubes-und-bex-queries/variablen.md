@@ -15,7 +15,7 @@ Sie können BEx-Variablen mit Werten definieren, die zur Laufzeit dynamisch gese
 Die Spezifikation **Sign** definiert, ob die zugehörige Auswahl in das Ergebnis ein- oder ausgeschlossen werden soll.<br>
 Die Spezifikation **Option** definiert, ob wie die Auswahl getroffen wird. <br>
 Um Mehrfachwerte und komplexe Auswahlen zu bearbeiten, klicken Sie auf **[Edit]**.
-5. Falls verfügbar, klicken Sie auf das **[Lupensymbol]** neben den Eingabefeldern, um eine Liste auswählbarer Variablenwerte anzuzeigen. Beispiel:<br>
+5. Falls verfügbar, klicken Sie auf das ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol neben den Eingabefeldern, um eine Liste auswählbarer Variablenwerte anzuzeigen. Beispiel:<br>
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
 Sie können einen Wert aus der Liste der Variablenwerte auswählen, einen Wert manuell eintragen oder einen [Laufzeitparameter](./edit-runtime-parameters) hinterlegen.
 6. Klicken Sie auf **[OK]** um Ihre Eingabe zu bestätigen. 

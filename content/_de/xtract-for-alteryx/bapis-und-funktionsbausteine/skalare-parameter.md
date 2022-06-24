@@ -87,7 +87,7 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 1. Aktivieren Sie die Checkbox in der Ausgabespalte (1), um Tabellen der Ausgabe hinzuzufügen.
 2. In den Drop-Down-Listen in der Spalte **Value** werden die im Alteryx-Workflow definierten Tabellen angezeigt, die als Eingabetabellen verwendet werden können, siehe (see [Input- und Output-Werte im BAPI](./input-output-werte)).
 3. Klicken Sie auf **[X]** (3), um die Werte zu entfernen.
-4. Klicken Sie auf das **[Brillensymbol]** (4), um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
+4. Klicken Sie auf das **[![glasses](/img/content/icons/glasses.png) Symbol]** (4), um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
 
 ![BAPI meta-data](/img/content/xfa/bapi_table_sap_fields.png){:class="img-responsive"}
 

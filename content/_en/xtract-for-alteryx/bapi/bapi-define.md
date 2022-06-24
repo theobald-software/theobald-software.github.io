@@ -20,13 +20,13 @@ The following section shows how to use the Xtract BAPI component. <br>
 ![BAPI component](/img/content/xfa/Define-bapi-component.png){:class="img-responsive"}
 
 ### Looking up a BAPI
-1. Click **Search** (4) to look for a BAPI. The window "Function Module Lookup" opens.
-2. In the field **Function Name** enter the name of a desired BAPI and click **Search** (5). <br>
-**Tip:** Wildcards (*) can be used for searching.
+
+1. In the main window of the component click the **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (4). The window “Function Module Lookup” opens.
+2. Enter the name of a BAPI or function module in the **Function Name** field (5). You can use wildcards (*) if needed.<br>
+Alternatively you can search for function groups.
 ![Look-Up-Function-Module](/img/content/xfa/Look-Up-Function-Module.png){:class="img-responsive"}
-6. Select an item from the list (6). 
+3. Click the **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) and select an item from the displayed list (6).
 4. Click **[OK]** (7) to confirm.
 5. The "Xtract BAPI" window displays the parameters of the selected BAPI.<br>
 Xtract BAPI can have up to four [parameter types](./parameters): Imports, Exports, Changings and Tables.
 ![BAPI-Parameters](/img/content/xfa/BAPI-Parameters.png){:class="img-responsive"}
-

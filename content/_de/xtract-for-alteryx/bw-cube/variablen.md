@@ -25,7 +25,7 @@ Verwenden Sie das **@**-Symbol vor dem Variablennamen im Eingabefeld, um den Ein
 4. Definieren Sie die Variablen mit Hilfe der Dropdown-Listenoptionen in den Spalten **Sign** und **Option**. 
 Die Spezifikation **Sign** definiert, ob die zugehörige Auswahl ein- oder ausgeschlossen werden soll.
 Um Mehrfachwerte und komplexe Auswahlen zu bearbeiten, klicken Sie auf **[Edit]**.
-5. Falls verfügbar, klicken Sie auf das **[Lupensymbol]**, um auswählbare Variablenwerte anzuzeigen. Beispiel:<br>
+5. Falls verfügbar, klicken Sie auf das ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol, um auswählbare Variablenwerte anzuzeigen. Beispiel:<br>
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
 Sie können einen Wert aus der Liste auswählen, einen Wert manuell eintragen oder einen [Laufzeitparameter](./edit-runtime-parameters) hinterlegen.
 6. Klicken Sie auf **[OK]** zum Bestätigen. 

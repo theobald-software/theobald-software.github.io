@@ -93,10 +93,11 @@ Für mehr Informationen, siehe [SSO mit Kerberos SNC](../fortgeschrittene-techni
 
 **Enroll certificate on behalf of caller (Certificate SSO)** <br>
 Diese Einstellung aktiviert Certifcate SSO. 
-Die Authentifizierung erfolgt über ein Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services für den Windows Active Directory Benutzer des Aufrufers.
-Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server_einstellungen#web-server) ausgewählt und eingestellt werden.
-Geben Sie den Namen des Certificate Templates und den Thumbprint des Zertifikats des Enrollment Agents an.
-Der SAP Secure Login Client muss auf der Maschine, auf dem der XU- oder BC-Server läuft, installiert sein.
+Die Authentifizierung erfolgt über ein Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services für den Windows AD Benutzer des Aufrufers.
+- Geben Sie den technischen Namen des Certificate Templates und den Thumbprint des Zertifikats des Enrollment Agents an.
+- "HTTPS - Restricted to AD users with Designer read access" muss in den [Server Settings](../server/server_einstellungen#web-server) eingestellt sein.
+- Der SAP Secure Login Client muss auf der Maschine, auf dem der XU- oder BC-Server läuft, installiert sein.
+
 
 ### SAP Logon Ticket
 Für Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [**SAP Log On Ticket**](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket).
@@ -151,7 +152,7 @@ Ein Bestätigungsfenster wird geöffnet.
 Das Fenster "Manage Sources" wird geöffnet.<br>
 2. Überprüfen Sie, ob die angelegte SAP-Verbindung aufgelistet ist. 
 ![XU Manage Sources Fenster](/img/content/xu_manage_source_2.png){:class="img-responsive"}
-3. Klicken Sie auf das Stiftsymbol. Das Fenster "Change Source" öffnet sich.
+3. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Change Source" öffnet sich.
 4. Bearbeiten Sie die Einstellungen in "Change Source".
 
 ### Eine SAP Quelle einer Extraktion zuweisen

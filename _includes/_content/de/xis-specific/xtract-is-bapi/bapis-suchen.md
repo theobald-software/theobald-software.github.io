@@ -1,12 +1,12 @@
 ### Eine BAPI finden
 
-1. Im Hauptfenster der Komponente klicken Sie auf **[Suche]** (Fernglassymbol). 
+1. Im Hauptfenster der Komponente klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol). 
 ![BAPI-Editor](/img/content/BAPI-Editor.png ){:class="img-responsive"}
 Der Dialog "Function Module Lookup" öffnet sich.
 2. Geben Sie im Feld **Function Name** (1) den Namen eines BAPI oder Funktionsbausteins ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
 Alternativ können Sie nach Function Group suchen.
 ![Look-Up-Function-Module](/img/content/Look-Up-Function-Module.png){:class="img-responsive"}
-3. Klicken Sie auf das **[Suche]** (Lupensymbol)(2) und wählen Sie ein Objekt aus der angezeigten Liste aus (3). 
+3. Klicken Sie auf das **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol)(2) und wählen Sie ein Objekt aus der angezeigten Liste aus (3). 
 4. Bestätigen Sie Ihre Eingabe mit **[OK]** (4).
 
 ### Import, Export, Changings und Tables definieren
@@ -25,8 +25,8 @@ Aktivieren Sie die Checkbox neben den aufgelisteten Elementen, um sie der Ausgab
 ![BAPI export parameters](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}
 3. Optional: Falls verfügbar können Sie Ein- und Ausgabeparameter in **Changings** hinzufügen, siehe [Changings Parametrisierung](./parameter#changings-parameter).
 4. Fügen Sie in **Tables** Tabellen zur Ein-/Ausgabe hinzu, siehe [Tabellen Parametrisierung](./parameter#tables-parameter).<br>
-Prüfen Sie die Namen und Datentypen der Tabellenfelder, indem Sie auf das **[Brillensymbol]** unter **Type** klicken.
-Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Ausgabe hinzuzufügen.
-Bearbeiten Sie die Tabelle über das **[Stiftsymbol]** unter **Values** (3).
+Klicken Sie auf das ![glasses](/img/content/icons/glasses.png) Symbol, um die Namen und Datentypen der Tabellenfelder zu prüfen (1).<br>
+Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Ausgabe hinzuzufügen.<br>
+Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol, um die Tabelle zu bearbeiten (3). <br>
 ![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 5. Bestätigen Sie Ihre Eingabe mit **[OK]**.

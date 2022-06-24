@@ -31,14 +31,14 @@ Das folgende Beispiel zeigt, wie die Tabellen KNA1 und KNVV verknüpft werden k�
 {: .box-note }
 **Hinweis**: Achten Sie bei der Angabe einer WHERE-Bedingung auf die [Einschränkungen der Bedingung](./where-bedingung#einschränkungen-bei-where-bedingungen) für rechte Tabellen eines Table-Joins über einen LEFT OUTER JOIN.
 
-Klicken Sie in dem Tab *Joins* auf **Edit** (Bleistift-Symbol), um die Join-Optionen anzuzeigen. <br>
+Klicken Sie in dem Tab *Joins* auf **[Edit]** ( ![pen](/img/content/icons/pen.png) Symbol), um die Join-Optionen anzuzeigen. <br>
 Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen KNA1 (linke Tabelle) und KNVV (rechte Tabelle) auf dem Feld KUNNR durchgeführt. Es wird eine WHERE-Bedingung *KNA1~LAND1 = 'DE'* spezifiziert. 
 ![Table-Join](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 
 
 *Left Table* (linke Tabelle), *Right Table* (rechte Tabelle), *Join Type* (Join-Typ) und *Join Mapping* sind mit Standardwerten voreingestellt. Sie können bei Bedarf modifiziert werden. Das *Join Mapping* basiert auf der Fremdschlüsselbeziehung der verknüpften Tabellen.<br>
 - Klicken Sie auf **[Add]**, um die Join-Bedingung auf weitere Felder auszudehnen. 
-- Klicken Sie auf **Remove** (Mülleimer-Symbol), um bestehende Verknüpfungen zu entfernen. 
+- Klicken Sie auf **[Remove]** ( ![trashbin](/img/content/icons/trashbin.png) Symbol), um bestehende Verknüpfungen zu entfernen. 
 - Joinen Sie zusätzliche Tabellen im Tab *Tables and Fields*. 
 
 {: .box-tip }

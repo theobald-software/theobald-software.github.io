@@ -25,7 +25,7 @@ Use the **@** symbol in front of the variable name entered in the input field to
 4. Define the variables using the drop-down list options in the columns **Sign** and **Option**. 
 The **Sign** specification defines whether the respective selection column is included or excluded.
 To edit variables of the types multiple value and complex selection, click **[Edit]**.
-5. If available, click the **[magnifying glass]** symbol to display the selectable variable values.
+5. If available, click the ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon to display the selectable variable values.
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
 You can select a value from the list, enter values manually or assign a [runtime parameter](./edit-runtime-parameters).
 6. Click **[OK]** to confirm. 

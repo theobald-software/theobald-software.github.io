@@ -22,10 +22,10 @@ Beispiel:
 | KRW | 10000	|100.00|
 
 
-Wenn Sie Währungen ohne Nachkommastellen extrahieren, wird der Wert in der SAP-Datenbank zurückgegeben, z.B. werden 100 JPY als 1.00 extrahiert.
+- Wenn Sie Währungen ohne Nachkommastellen extrahieren, wird der Wert in der SAP-Datenbank zurückgegeben, z.B. werden 100 JPY als 1.00 extrahiert.
 Aktivieren Sie *Adjust Currency Decimals*, um die Kommastellen zu korrigieren.
-Wenn *Adjust Currency Decimals* aktiv ist, werden Währungen ohne Nachkommastellen mit einem entsprechenden Faktor multipliziert, um die die Nachkommastellen auszugleichen.
-*Adjust Currency Decimals* erfordert, dass das zugehörige Währungsfeld des Betrags-Feldes Teil des extrahierten Objekts ist.
+- Wenn *Adjust Currency Decimals* aktiv ist, werden Währungen ohne Nachkommastellen mit einem entsprechenden Faktor multipliziert, um die die Nachkommastellen auszugleichen.
+- *Adjust Currency Decimals* erfordert, dass das zugehörige Währungsfeld des Betrags-Feldes Teil des extrahierten Objekts ist.
 
 {: .box-note }
 **Hinweis:** Der Multiplikationsfaktor, der in *Adjust Currency Decimals*  verwendet wird, wird über die SAP Währungstabelle TCURX bestimmt.

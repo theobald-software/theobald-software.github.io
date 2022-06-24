@@ -32,7 +32,7 @@ Wie bei Skalarfeldern werden jedem Skalarfeld, das zu einer Struktur gehört, We
 Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich. 
 
 Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
-1. Klicken Sie auf das **[Stiftsymbol]**. Das Fenster "Edit Structures" öffnet sich.
+1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Edit Structures" öffnet sich.
 2. Geben Sie unter **Values** Werte oder Parameter ein.
 
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
@@ -70,7 +70,7 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 
 #### Auf Metadaten der Tabelle zugreifen (1)
 
-Klicken Sie auf das **[Brillensymbol]** in Spalte **Type**, um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
+Klicken Sie auf das ![glasses](/img/content/icons/glasses.png) Symbol, um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
 Wenn der Funktionsbaustein in SAP bearbeitet wird, aktualisieren Sie die Daten über **[Refresh metadata**.<br>
 
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
@@ -83,7 +83,7 @@ Aktivieren Sie die Checkbox in der Ausgabespalte, um Tabellen der Ausgabe hinzuz
 
 #### Tabellen bearbeiten (3)
 
-1. Klicken Sie auf das **[Stiftsymbol]** in der Spalte **Values**. Das Fenster "Edit Table Contents" öffnet sich.
+1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol, um eine Tabelle zu bearbeiten. Das Fenster "Edit Table Contents" öffnet sich.
 2. Klicken Sie auf **[Add]**, um neue Parameter hinzuzufügen.
 3. Geben Sie Werte oder Parameter ein.<br>
 Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>

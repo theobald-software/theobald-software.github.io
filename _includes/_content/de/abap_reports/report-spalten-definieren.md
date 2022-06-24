@@ -6,14 +6,13 @@ Um die Spalten eines Reports zu ermitteln, muss der Report ausgeführt werden. D
 {: .box-tip }
 **Tipp:** Wir empfehlen für die Spalteneinteilung eine Selektion oder Variante zu verwenden, die nur wenige Daten zurückgibt. 
 
-Einige klassische ABAP-Reports werden so erstellt, dass die Spalten durch das Trennzeichen '\|' separiert sind.
+- Einige klassische ABAP-Reports werden so erstellt, dass die Spalten durch das Trennzeichen '\|' separiert sind.
 In diesem Fall kann die Report-Komponente die Spalten automatisch ermitteln.
 Die automatische Spalteneinteilung funktioniert auch für die meisten ALV-Reports.<br>
-Beispiel:
+Beispiel:<br>
 ![Report-delimiters](/img/content/Report_new_delimiters.png){:class="img-responsive"}
-
-Bei Reports, die das Trennzeichen '\|' nicht verwenden, muss eine manuelle Spalteneinteilung durchgeführt werden.<br>
-Beispiel:
+- Bei Reports, die das Trennzeichen '\|' nicht verwenden, muss eine manuelle Spalteneinteilung durchgeführt werden.<br>
+Beispiel:<br>
 ![Report-no-delimiters](/img/content/Report_new_no_delimiters.png){:class="img-responsive"}
 
 
@@ -34,7 +33,7 @@ Wenn eine automatische Spalteneinteilung nicht möglich ist, müssen Spaltenname
 
 Man definiert die Spalten eines Reports wie folgt:
 
-1. Stellen Sie sicher, dass noch keine Spalten definiert sind. Gehen Sie in den Abschnitt *Columns* und löschen Sie alle Spalten, indem Sie auf das Papierkorb-Symbol klicken.
+1. Stellen Sie sicher, dass noch keine Spalten definiert sind. Gehen Sie in den Abschnitt *Columns* und löschen Sie alle Spalten, indem Sie auf das ![trashbin](/img/content/icons/trashbin) Symbol klicken.
 ![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}
 2. Klicken Sie auf **[Load Preview]**. Der Report wird basierend auf der ausgewählten Variante oder Selektion ausgeführt. Die Ausgabe des Reports wird im Abschnitt *Load Preview* angezeigt.
 3. Drücken Sie zu Beginn der Spalte im *Load Preview* Abschnitt die linke Maustaste und lassen Sie die Taste gedrückt.  

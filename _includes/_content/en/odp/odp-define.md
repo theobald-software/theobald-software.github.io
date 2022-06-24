@@ -1,5 +1,5 @@
 ### Look up Data Objects
-1. Within the main window of the component "Xtract ODP" navigate to **Operational Data Provider** and click **[Search]** (magnifying glass icon) (1). <br>
+1. Within the main window of the component "Xtract ODP" navigate to **Operational Data Provider** and click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (1). <br>
 The window "Operational Data Provider Lookup" opens.
 ![Datasource Sales Document Item Data (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
 2. In the field **Name** (2) enter a name of an extractor using wildcards (*), if needed.
@@ -11,7 +11,7 @@ The window "Operational Data Provider Lookup" opens.
 	SAP NetWeaver Business Warehouse [[BW](./odp-bw-infoproviders)] |**BW/4HANA:**<br> - DSO / aDSO<br> - CompositeProvider<br> - InfoObjects <br> - Query as InfoProvider<br> **BW systems:**<br> - CompositeProvider<br> - InfoCubes<br> - Semantically partitioned objects<br> - HybridProviders<br> - MultiProviders<br> - InfoSets |
 	SAP HANA Information Views [[HANA](./odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
 	DataSources/Extractors [[SAPI](./odp-extractors)] | - DataSources and Extractors |
-4. Click **[Search]** (magnifying glass icon) (4) and select the extractor of your choice from the displayed list (5).
+4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (4) and select the extractor of your choice from the displayed list (5).
 5. Click **[OK]** (6) to confirm your input.
 6. Optional: Create selections by activating or deactivating fields (7). To add [filters](#selections-and-filters) click the **[Edit]** option next to the fields. 
 If your data source is Hierarchy, see [Select Hierarchy](./odp-extractors#hierarchies) for filter options.

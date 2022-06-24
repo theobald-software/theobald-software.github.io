@@ -14,7 +14,7 @@ Instead of hard coding values for BEx variables, you can define variables that c
 The **Sign** specification defines whether the respective selection column is included or excluded in the result. <br>
 The **Option** specification defines how the selection column is made. <br>
 To edit variables of the types *multiple value* and *complex selection*, click **[Edit]**.
-5. If available, click the **[magnifying glass]** symbol next to the fields to display a list of selectable variable values. Example:
+5. If available, click the ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon next to the fields to display a list of selectable variable values. Example:
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
 You can select a value from the list of selectable variable values, enter values manually or assign a [runtime parameter](./edit-runtime-parameters).
 6. Click **[OK]** to confirm your input. 

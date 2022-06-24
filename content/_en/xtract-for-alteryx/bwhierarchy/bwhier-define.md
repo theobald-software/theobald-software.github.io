@@ -13,12 +13,12 @@ The following section shows how to use the Xtract Hierarchy component.
 
 ### Look up a BW Hierarchy
 
-1. In the main window of the component navigate to subsection **Hierarchy Extraction** and click **[Search]** (magnifying glas icon)(1). 
+1. In the main window of the component navigate to subsection **Hierarchy Extraction** and click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon)(1). 
 ![Define-Data-Source-Hierarchy](/img/content/xfa/Define-Data-Source-Hierarchy_1.png){:class="img-responsive"}
 The window "Hierarchy Lookup" opens.
 2. In the field **Hierarchy Name** (2) enter a name of an extractor using wildcards (*), if needed.
 ![Look-Up-Hierarchy](/img/content/extractors.bwhier/Look-Up-Hierarchy.png){:class="img-responsive"}
-3. Click **[Search]** (magnifying glas icon) (3) and select the extractor of your choice from the displayed list (4).
+3. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (3) and select the extractor of your choice from the displayed list (4).
 4. Click **[OK]** (5) to confirm.
 5. Click **[[Extraction Settings](./bwhier-settings)]** to define hierarchy settings.
 

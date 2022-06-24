@@ -40,6 +40,7 @@ When using table joins, restricting the right table of a LEFT OUTER JOIN is only
 If your SAP System is older than Release 7.40, SP05, the following error appears:
 *RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.
 
+
 ### WHERE Clause Syntax 
 
 {: .box-warning }
@@ -79,8 +80,8 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 |<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
 |>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2.|
 | (NOT) LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
-| (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
-| (NOT IN | True if the content of operand1 is (not) part of the content of operand2. Operand2 must be of type LIST or SQL.|
+| (NOT) BETWEEN | True if the content of the operand1 lies (not) between the values of the operands operand2 and operand3. |
+| (NOT) IN | True if the content of operand1 is (not) part of the content of operand2. Operand2 must be of type LIST or SQL.|
 
 Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
@@ -98,7 +99,7 @@ Get more details about subqueries on the [SAP help site - Conditions](https://he
 In the following example a subquery is used with the *IN* operator. 
 The following statement returns all the *active* customers (rows in the table KNA1) that have i.e. a sales document in the table VBAK for sales document header data.
 
-![WHERE Clause Subquery](/img/content/xis/table_where_sub-select.png){:class="img-responsive"}
+![WHERE Clause Subquery](/img/content/table/table_where_sub-select.png){:class="img-responsive"}
 
 
 ### WHERE Clause Editor
@@ -106,7 +107,7 @@ The following statement returns all the *active* customers (rows in the table KN
 The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
 Click **[Editor mode]** to open the editor. 
 
-![WHERE-Clause-Builder-01](/img/content/xis/where-clause-builder.png){:class="img-responsive"}
+![WHERE-Clause-Builder-01](/img/content/where-clause-builder.png){:class="img-responsive"}
 
 There are 2 options for adding criteria to the WHERE clause:
 - **[Add Criteria]** adds single criteria. <br>
@@ -121,32 +122,29 @@ There are 2 options for adding criteria to the WHERE clause:
 
 #### Components of the WHERE Clause Editor
 
-Delete or edit the sequence of criteria using the buttons on the left (1):
-- **Delete row** deletes a criteria.
-- **Move row up** changes the sequence of the criteria. The selected criteria moves up.
-- **Move row down** changes the sequence of the criteria. The selected criteria moves down.
+![WHERE-Clause-Builder-Example](/img/content/where-clause-builder-2.png){:class="img-responsive"}
 
-The sequence of criteria can also be changed with drag&drop.
+The following components are available in the editor:
 
-![WHERE-Clause-Builder-Example](/img/content/xis/where-clause-builder-2.png){:class="img-responsive"}
+| Icon  | Component   | Function    | 
+| ------|-------------|-------------| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-delete.png) | Delete row | deletes a criteria.|
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png) | Move row up | changes the sequence of the criteria. The selected criteria moves up. <br>The sequence of criteria can also be changed with drag&drop. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png) | Move row down | changes the sequence of the criteria. The selected criteria moves down. <br>The sequence of criteria can also be changed with drag&drop.| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png) | Column    | adds a column. Click on the component to select a column from the available tables. | 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-sql.png)| SQL       |  adds an SQL statement.      |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-operator.png)| Operator  | adds an operator e.g., =, <, >, etc. |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png) | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-param.png) | Parameter | adds a previously defined runtime parameter, see [Using Runtime Parameters in the WHERE Clause Editor](#using-runtime-parameters-in-the-where-clause-editor).|
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | adds a new criteria after the selected criteria. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | adds a new group of criteria the selected criteria. | 
 
-The following components are available in the editor (2):
-
-| Component   | Function          | 
-| ------------- |-------------| 
-| Column    | adds a column. Click on the component to select a column from the available tables. | 
-| SQL       |  adds an SQL statement.      |  
-| Operator  | adds an operator e.g., =, <, >, etc. |  
-| Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
-| Parameter | adds a parameter or variable, see [Using SSIS Variables in the WHERE Clause Editor](#using-ssis-variables-in-the-where-clause-editor).|
-| Criteria | adds a new criteria after the selected criteria. |
-| Group | adds a new group of criteria the selected criteria. | 
-
-- Click on a component to edit it. All areas that are marked green can be edited.<br>
-- To delete a component, click the (x) icon above the component.<br>
 
 {: .box-note }
 **Note:** When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
+
+- Click on a component to edit it. All areas that are marked green can be edited.<br>
+- To delete a component, click the (x) icon above the component.<br>
 
 ### Using SSIS Variables in the WHERE Clause Editor
 

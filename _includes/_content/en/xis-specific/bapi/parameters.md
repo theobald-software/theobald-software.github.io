@@ -31,7 +31,7 @@ When using a structure, a value for each scalar field can be set similarly to a 
 Setting a single value or a parameter for the whole structure is not possible.
 
 When a structure is available, you can assign structure elements (i.e. fields).<br>
-1. Click the **[pen icon]**. The window "Edit Structures" opens.
+1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Structures" opens.
 2. Enter values or assign runtime parameters under **Values**.
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
@@ -66,7 +66,7 @@ To use the filtering function, enter text in the headers of the columns **Name**
 ![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 
 #### Access Metadata of Tables (1)
-Click the **[glasses icon]** in the **Type** column to display the metadata of the selected table including the name and the data type of all fields. <br> 
+Click the ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon to display the metadata of the selected table including the name and the data type of all fields. <br> 
 If the function module was edited in SAP, you can refresh the data by clicking **Refresh metadata**<br>
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
 
@@ -82,9 +82,7 @@ Setting a single value or a parameter for the whole structure is not possible.
 
 When a structure is available, you can assign structure elements (i.e. fields).<br>
 
-Edit tables via the **[pen icon]** in the column **Values**. <br> 
-
- 1. Click the **[pen icon]** in the column **Values**. The window "Edit Table Contents" opens.
+ 1. Click the ![pen](/img/content/icons/pen.png) icon to edit the table. The window "Edit Table Contents" opens.
  2. Click **[Add]** to add new set of parameters.<br>
  3. Enter values or parameters.<br>
 When using runtime parameters, make sure the input matches the data type.<br>
