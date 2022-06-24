@@ -13,5 +13,5 @@ Last request | Zeitstempel der letzten Anfrage
 Created | Erstellungszeitstempel der initialen Anfrage
 
 
-Um das Abonnement zu löschen, klicken Sie auf das Mülltonnensymbol auf der rechten Seite des Fensters. 
+Um das Abonnement zu löschen, klicken Sie auf das ![trashbin](/img/content/icons/trashbin.png) Symbol auf der rechten Seite des Fensters. 
 
