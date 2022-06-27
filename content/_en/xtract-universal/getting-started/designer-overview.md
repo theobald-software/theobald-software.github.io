@@ -20,73 +20,73 @@ The Designer features different functionalities for data extractions.
 
 #### Designer
 
-Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
+Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
- - | Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started/connect-designer-with-server)
- - | Disconnect | Logging off the server | -
- - | Exit | Exits the Designer | -
+![designer-icon](/img/content/icons/designer/reset-preferences.png) | Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started/connect-designer-with-server)
+![designer-icon](/img/content/icons/designer/disconnect.png) | Disconnect | Logging off the server | -
+![designer-icon](/img/content/icons/designer/exit.png) | Exit | Exits the Designer | -
 
 
 #### Extraction
 
-Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
+Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
- - | New  | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
- - | Edit | Edit an existing extraction | -
- - | Delete | Delete an existing extraction | -
- - | Clone | Clone an existing extraction | -
- - | Source | Select an existing SAP source system | [SAP Connection](../introduction/sap-connection)
- - | Destination | Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
- - | Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
- - | Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
- - | Abort | Abort a selected extraction | -
- - | Clear Result Cache | Clear extraction cache | [Cache results](../getting-started/general-settings#misc-tab)
- - | Refresh | Refreshing extraction status | -
- - | Filter | Define filters or keywords |  [Define Keywords](../getting-started/general-settings#misc-tab)
+![designer-icon](/img/content/icons/designer/add.png) | New  | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
+![designer-icon](/img/content/icons/designer/edit.png) | Edit | Edit an existing extraction | -
+![designer-icon](/img/content/icons/designer/delete.png) | Delete | Delete an existing extraction | -
+![designer-icon](/img/content/icons/designer/clone.png) | Clone | Clone an existing extraction | -
+![designer-icon](/img/content/icons/designer/source.png)| Source | Select an existing SAP source system | [SAP Connection](../introduction/sap-connection)
+![designer-icon](/img/content/icons/designer/destination.png)| Destination | Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
+![designer-icon](/img/content/icons/designer/log1.png) | Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
+![designer-icon](/img/content/icons/designer/run.png)| Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
+![designer-icon](/img/content/icons/designer/abort.png) | Abort | Abort a selected extraction | -
+![designer-icon](/img/content/icons/designer/clear-result-cache.png) | Clear Result Cache | Clear extraction cache | [Cache results](../getting-started/general-settings#misc-tab)
+![designer-icon](/img/content/icons/designer/refresh.png) | Refresh | Refreshing extraction status | -
+![designer-icon](/img/content/icons/designer/filter.png) | Filter | Define filters or keywords |  [Define Keywords](../getting-started/general-settings#misc-tab)
 
 #### Server
 
-Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
+Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
- - | Logs  | Open server logs | [Server Logging](../logging/logging-access-via-designer#server-logs-run)
- - | Settings | Open server settings | [Server Settings](../server/server-settings)
- - | Manage Sources | Edit connection to source system | [SAP Connection](../introduction/sap-connection)
- - | Manage Destinations | Edit or delete destinations | [Manage Destinations](https://help.theobald-software.com/en/xtract-universal/destinations/managing-destinations).
+![designer-icon](/img/content/icons/designer/log1.png) | Logs  | Open server logs | [Server Logging](../logging/logging-access-via-designer#server-logs-run)
+![designer-icon](/img/content/icons/designer/settings.png) | Settings | Open server settings | [Server Settings](../server/server-settings)
+![designer-icon](/img/content/icons/designer/source.png) | Manage Sources | Edit connection to source system | [SAP Connection](../introduction/sap-connection)
+![designer-icon](/img/content/icons/designer/destination.png) | Manage Destinations | Edit or delete destinations | [Manage Destinations](https://help.theobald-software.com/en/xtract-universal/destinations/managing-destinations).
 
 #### Security
 
-Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
+Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
- - | Set User Password  | Set or change user password  | [User Managements](../security/user-management#user)
- - | Manage Users | Manage user groups | [User Groups](../security/user-management#user-groups)
+![designer-icon](/img/content/icons/designer/user-password.png) | Set User Password  | Set or change user password  | [User Managements](../security/user-management#user)
+![designer-icon](/img/content/icons/designer/user.png) | Manage Users | Manage user groups | [User Groups](../security/user-management#user-groups)
 
 #### Help
 
-Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
+Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
- - | Online Help (EN) | <!-----> - <!-----> | <!-----> - <!-----> 
- - | Online Help (DE) | - | -
- - | Submit Support Ticket | - | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
- - | Support Client | Direct support | [TeamViewer Client](https://get.teamviewer.com/theobaldsoftware)
- - | Info | Product information | [Info window](../introduction/license#about-xtract-universal---info-window)
- - | Version History | - | [Version History](https://kb.theobald-software.com/version-history)
+![designer-icon](/img/content/icons/designer/eng.png)| Online Help (EN) | Open the English Online Help| <!-----> - <!-----> 
+![designer-icon](/img/content/icons/designer/de.png) | Online Help (DE) | Open the German Online Help | -
+![designer-icon](/img/content/icons/designer/support.png) | Submit Support Ticket | Open the Ticket Portal | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
+![designer-icon](/img/content/icons/designer/support-client.png) | Support Client | Direct support | [TeamViewer Client](https://get.teamviewer.com/theobaldsoftware)
+![designer-icon](/img/content/icons/designer/info.png) | Info | Product information | [Info window](../introduction/license#about-xtract-universal---info-window)
+![designer-icon](/img/content/icons/designer/version-history.png) | Version History | List of recent software changes | [Version History](https://kb.theobald-software.com/version-history)
 
 ### GUI Buttons
 
 ![main-window-guibuttons](/img/content/xu/main-window-guibuttons.png){:class="img-responsive"}
 
-Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
+Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
- - | New | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
- - | Edit |  Edit existing extraction | -
- - | Delete |  Delete existing extraction  | -
- - | Clone |  Clone existing extraction  | - 
- - | Refresh | Update of the extraction status  | -
- - | Filter |  Define filters or keywords | [Define Keywords](../getting-started/general-settings#misc-tab)
- - | Source|  Select existing SAP source system  | [SAP Connection](../introduction/sap-connection)
- - | Destination | Select destination  | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
- - | Log | Open extraction log  | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
- - | Run  | Run a selected extraction  | [Running an Extraction](../getting-started/run-an-extraction)
+![designer-icon](/img/content/icons/designer/add.png) | New | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
+![designer-icon](/img/content/icons/designer/edit.png) | Edit |  Edit existing extraction | -
+![designer-icon](/img/content/icons/designer/delete.png) | Delete |  Delete existing extraction  | -
+![designer-icon](/img/content/icons/designer/clone.png) | Clone |  Clone existing extraction  | - 
+![designer-icon](/img/content/icons/designer/refresh.png) | Refresh | Update of the extraction status  | -
+![designer-icon](/img/content/icons/designer/filter.png) | Filter |  Define filters or keywords | [Define Keywords](../getting-started/general-settings#misc-tab)
+![designer-icon](/img/content/icons/designer/source.png) | Source|  Select existing SAP source system  | [SAP Connection](../introduction/sap-connection)
+![designer-icon](/img/content/icons/designer/destination.png) | Destination | Select destination  | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
+![designer-icon](/img/content/icons/designer/log1.png) | Log | Open extraction log  | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
+![designer-icon](/img/content/icons/designer/run.png) | Run  | Run a selected extraction  | [Running an Extraction](../getting-started/run-an-extraction)
 
 
 ### List of Extractions
@@ -101,39 +101,34 @@ More extensive filter options are available via the [Filter](../advanced-techniq
 
 {: .box-tip }
 **Tip:** To adjust the settings of multiple extractions at once, select multiple extractions using **[CTRL]+[left mouse button]**.<br>
-You can now adjust the **[Destination]** and **[Source]** settings in [GUI Buttons](#gui-buttons) for all selected extractions.
+You can now adjust the **[Destination]** and **[Source]** settings in the [GUI Buttons](#gui-buttons) for all selected extractions.
 
 **Double Clicking:** Double-clicking an extraction works as a shortcut to the **[Edit]** button. <br>
 **Right-clicking:** Right-clicking an extraction in the list opens the following menu:<br>
 
-Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
+Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
- - | Edit | Edit an existing extraction | -
- - | Delete | Delete an existing extraction | -
- - | Clone | Clone an existing extraction | -
- - | Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
- - | Source settings| Select an existing SAP source system | -
- - | Destination settings| Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
- - | Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
- - | Run in browser | Run a selected extraction in the default web browser | - 
- - | Run in xu.exe | Run a selected extraction in the command-line tool xu.exe | - 
- - | Abort | Abort a selected extraction | -
+![designer-icon](/img/content/icons/designer/edit.png) | Edit | Edit an existing extraction | -
+![designer-icon](/img/content/icons/designer/delete.png) | Delete | Delete an existing extraction | -
+![designer-icon](/img/content/icons/designer/clone.png) | Clone | Clone an existing extraction | -
+![designer-icon](/img/content/icons/designer/log1.png) | Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
+![designer-icon](/img/content/icons/designer/source.png) | Source settings| Select an existing SAP source system | -
+![designer-icon](/img/content/icons/designer/destination.png) | Destination settings | Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
+![designer-icon](/img/content/icons/designer/run.png) | Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
+![designer-icon](/img/content/icons/designer/run-in-browser.png) | Run in browser | Run a selected extraction in the default web browser | - 
+![designer-icon](/img/content/icons/designer/run-in-xu.png) | Run in xu.exe | Run a selected extraction in the command-line tool xu.exe | - 
+![designer-icon](/img/content/icons/designer/abort.png) | Abort | Abort a selected extraction | -
 
 
 ### Status Bar 
 
 ![main-window-footer](/img/content/xu/main-window-footer.png){:class="img-responsive"}
 
-Status bar contains information about: 
-- credentials
-- authentication method
-- access rights
-- license type and validity period
-- connected server
-- connected client
+The status bar contains information about: 
+- Credentials
+- Authentication method
+- Access rights
+- License type and validity period
+- Connected server
+- Connected client
 
-
-
-*****
-### Related Links
-- [Server Settings](../server)
