@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started
 
 This section contains a general introduction to Xtract Universal.
 This section is therefore a prerequisite for all subsequent sections.<br>
-For a short introduction on how to use Xtract Universal, refer to our tutorial video [Get started with Xtract Universal](https://www.youtube.com/watch?v=pdlsfm0dLMA).
+For a short introduction on how to use Xtract Universal, refer to our video tutorials [Get started with Xtract Universal 1#| Creating an SAP source connection](https://www.youtube.com/watch?v=Qe8tRYNnYkc) and [Get started with Xtract Universal 2#| Set up your first extraction](https://www.youtube.com/watch?v=pdlsfm0dLMA).
 
 ### Prerequisites
 
