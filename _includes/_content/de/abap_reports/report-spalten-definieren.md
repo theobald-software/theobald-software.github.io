@@ -33,7 +33,7 @@ Wenn eine automatische Spalteneinteilung nicht möglich ist, müssen Spaltenname
 
 Man definiert die Spalten eines Reports wie folgt:
 
-1. Stellen Sie sicher, dass noch keine Spalten definiert sind. Gehen Sie in den Abschnitt *Columns* und löschen Sie alle Spalten, indem Sie auf das ![trashbin](/img/content/icons/trashbin) Symbol klicken.
+1. Stellen Sie sicher, dass noch keine Spalten definiert sind. Gehen Sie in den Abschnitt *Columns* und löschen Sie alle Spalten, indem Sie auf das ![trashbin](/img/content/icons/trashbin.png) Symbol klicken.
 ![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}
 2. Klicken Sie auf **[Load Preview]**. Der Report wird basierend auf der ausgewählten Variante oder Selektion ausgeführt. Die Ausgabe des Reports wird im Abschnitt *Load Preview* angezeigt.
 3. Drücken Sie zu Beginn der Spalte im *Load Preview* Abschnitt die linke Maustaste und lassen Sie die Taste gedrückt.  

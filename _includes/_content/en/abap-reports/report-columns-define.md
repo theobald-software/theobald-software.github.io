@@ -30,7 +30,7 @@ When automatic column detection is not possible, the report's column names, widt
 
 Report columns can be manually defined as follows:
 
-1. Make sure no columns are defined yet. Go to the *Columns* section and delete all columns by clicking on the ![trashbin](/img/content/icons/trashbin) icon.
+1. Make sure no columns are defined yet. Go to the *Columns* section and delete all columns by clicking on the ![trashbin](/img/content/icons/trashbin.png) icon.
 ![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}
 2. Click **[Load Preview]**. The report is executed based on the selected report variant or selections. The report output is displayed in the *Load Preview* section.
 3. Press and hold down the left mouse button in the *Load Preview* section.  
