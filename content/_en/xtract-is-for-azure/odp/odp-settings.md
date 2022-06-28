@@ -12,7 +12,7 @@ progressstate: 5
 ---
 
 The following section describes the settings of the Xtract ODP component that can be accessed through the main component window “ODP”.
-![ODP Component](/img/content/odp/odp-settings.png){:class="img-responsive"}
+![ODP Component](/img/content/xis/odp-settings.png){:class="img-responsive"}
 
 {% include _content/en/odp/odp-settings-subscriptions.md %}
 {% include _content/en/odp/odp-settings-parameters.md %}

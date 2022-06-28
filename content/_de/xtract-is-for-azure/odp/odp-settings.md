@@ -13,7 +13,7 @@ progressstate: 5
 
 Der folgende Abschnitt beschreibt die Einstellungen der ODP-Komponente, die über das Hauptfenster der Komponente zugänglich sind.
 
-![ODP Component](/img/content/odp/odp-settings.png){:class="img-responsive"}
+![ODP Component](/img/content/xis/odp-settings.png){:class="img-responsive"}
 
 {% include _content/de/odp/odp-settings-subscriptions.md %}
 {% include _content/de/odp/odp-settings-parameters.md %}
