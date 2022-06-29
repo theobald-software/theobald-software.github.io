@@ -47,7 +47,7 @@ Check the **Access key** checkbox to select this connection type.
 
 #### Connection via Access Key
 **Storage account** <br>
-Enter your storage account name.
+Enter your storage account name. Do not enter the full URL.
 
 **Access key** <br>
 Enter the access key of the Azure Storage account. 

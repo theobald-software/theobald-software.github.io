@@ -50,6 +50,7 @@ Wählen Sie die **[Access key]** Checkbox aus, um diesen Verbindungstyp zu verwe
 #### Verbindung via Acces Key (Zugangsschlüssel)
 **Storage account**<br>
 Geben Sie den Namen des Azure Storage Accounts ein.
+Geben Sie nicht die vollständige URL ein.
 
 **Access Key**<br>
 Geben Sie den Azure Storage Zugangsschlüssel ein.  
