@@ -15,5 +15,9 @@ The following section describes the settings of the Xtract ODP component that ca
 ![ODP Component](/img/content/odp/odp-settings.png){:class="img-responsive"}
 
 {% include _content/en/odp/odp-settings-subscriptions.md %}
-{% include _content/en/odp/odp-settings-parameters.md %}
+
+### Edit Runtime Parameters
+Use runtime parameters for dynamic [Selections and Filters](./odp-define#selections-and-filters).
+{% include _content/en/edit-runtime-parameters.md %}
+
 {% include _content/en/odp/odp-settings-advanced.md %}

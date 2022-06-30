@@ -42,9 +42,8 @@ Select *Exclude* in the **Sign** column to exclude the filtered data from the ou
 5. Enter static values or select runtime parameters for filtering. 
 Clicking on the icon next to the input field switches between static input values and runtime parameters.<br>
 - Static values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon): Enter values directly into the **Low** and **High** input fields. 
-- Runtime Parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon):
-Select a runtime parameter from the drop-down list.
-If no parameter icon is displayed and no drop-down list is available, open the [Edit Runtime Parameters](./report-settings#edit-runtime-parameters) menu and create runtime parameters. <br>
+- SSIS-Variable or Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon):
+Select a defined variable or parameter from the drop-down list.
 6. Click **[OK]** to confirm your input.
 7. Click **[Load live preview]** in the main window of the component to check the results of the filters. <br>
 If runtime parameters are defined, you are prompted to populate the parameters with actual values.
