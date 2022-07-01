@@ -125,6 +125,8 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 ![main-window-footer](/img/content/xu/main-window-footer.png){:class="img-responsive"}
 
 The status bar contains information about: 
+- Number of defined sources and maximum number of available sources
+- Number of defined extraction and maximum number of available extractions
 - Credentials
 - Authentication method
 - Access rights

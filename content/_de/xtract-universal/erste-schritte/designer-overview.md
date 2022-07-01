@@ -122,6 +122,8 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 ![main-window-footer](/img/content/xu/main-window-footer.png){:class="img-responsive"}
 
 Die Statusleiste beinhaltet folgende Informationen:
+- Anzahl definierter SAP-Quellen und maximale Anzahl verfügbarer SAP-Quellen
+- Anzahl definierter Extraktionen und maximale Anzahl verfügbarer Extraktionen
 - Benutzerdaten
 - Authentifizierungsmethode
 - Zugriffsrechte
