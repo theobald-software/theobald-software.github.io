@@ -48,7 +48,7 @@ Mit einem Klick auf das Symbol neben den Eingabefeldern wechseln Sie zwischen fe
 - Feste Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol): Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
 - Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol): 
 Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
-Wenn neben dem Eingabefeld kein Symbol angezeigt wird und keine Dropdown-Liste verfügbar ist, öffnen Sie das [Edit Runtime Parameters](./report-settings#edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
+Wenn neben dem Eingabefeld kein Symbol angezeigt wird und keine Dropdown-Liste verfügbar ist, öffnen Sie das [Edit Runtime Parameters](./report-settings#edit-runtime-parameters---laufzeitparameter) Menü und erstellen Sie Laufzeitparameter.<br>
 6. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.
 7. Klicken Sie im Hauptfenster der Komponente auf **[Load live preview]**, um die Funktionalität der definierten Filter zu prüfen. <br>
 Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 

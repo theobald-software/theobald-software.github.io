@@ -10,4 +10,8 @@ weight: 3
 lang: de_DE
 ---
 
-{% include _content/de/bw-infocubes-und-bex-queries/edit-runtime-parameters.md %}
+### Edit Runtime Parameters - Laufzeitparameter
+
+Verwenden Sie Laufzeitparameter, um [Dimensionsfilter](./eine-bw-cube-quelle-definieren#einstellen-eines-dimensionsfilters) und [BEx-Variablen](./variablen) dynamisch zur Laufzeit zu ändern.
+{% include _content/de/edit-runtime-parameters.md %}
+
