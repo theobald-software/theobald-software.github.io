@@ -10,5 +10,4 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-report-extraktion-definieren
 ---
-
 {% include _content/de/abap_reports/varianten-und-selektionen.md %}

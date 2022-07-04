@@ -17,14 +17,14 @@ Wählen Sie in der Spalte **Sign** die Option *Exclude*, um die gefilterten Date
    |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
    |(Not)Between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
    |In | Wahr, wenn die Daten (nicht) Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
-5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter. 
-Mit einem Klick auf das Symbol neben den Eingabefeldern wechseln Sie zwischen festen Werten und Laufzeitparametern.<br>
-- Feste Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol): Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
-- Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol): 
+5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter. <br>
+- Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
+Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
+Mit einem Klick auf das Symbol wechseln Sie zwischen statischen Werten und Laufzeitparametern.
+- Laufzeitparameter: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten Laufzeitparameter zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
+Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./odp-settings#edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
 Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
-Wenn neben dem Eingabefeld kein Symbol angezeigt wird und keine Dropdown-Liste verfügbar ist, öffnen Sie das [Edit Runtime Parameters](./odp-settings#edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
-6. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.
-7. Klicken Sie im Hauptfenster der Komponente auf **[Load live preview]**, um die Funktionalität der definierten Filter zu prüfen. <br>
+6. Klicken Sie auf **[Load live preview]**, um die Funktionalität der definierten Filter zu prüfen. <br>
 Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 
 
 Die Anzahl der definierten Filter wird in eckigen Klammern neben *Edit* angezeigt.

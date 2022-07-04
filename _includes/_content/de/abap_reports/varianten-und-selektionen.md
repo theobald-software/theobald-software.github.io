@@ -20,7 +20,6 @@ Um die Definition der Variante einzusehen, öffnen Sie die Variante in SAP.
 ### Selektionen bearbeiten
 
 Dieser Abschnitt bezieht sich auf den Eingabebildschirm von Reports in SAP.
-
 Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibungen.
 Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Eingabebildschirm in SAP. <br>
 Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
@@ -28,30 +27,11 @@ Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird d
 
 1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]**. Das Fenster "Edit Selections" öffnet sich.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
-2. Klicken Sie auf **[Add Selection]**, um Filterkriterien hinzuzufügen. <br>
-![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}
-3. Wählen Sie in der Spalte **Sign** die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
-Wählen Sie in der Spalte **Sign** die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
-4. Wählen Sie in der Spalte **Option** einen Operator. Der Operator filtert Daten wie in der folgenden Tabelle beschrieben:
-
-   | Operator   |      Bedeutung      |  
-   |:---------|:------------- |
-   |(Not)Equal |  Wahr, wenn die Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
-   |LessThan  | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
-   |GreaterThan |  Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|
-   |LessOrEqual | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
-   |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
-   |(Not)Between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
-   |In | Wahr, wenn die Daten (nicht) Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
-5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter. 
-Mit einem Klick auf das Symbol neben den Eingabefeldern wechseln Sie zwischen festen Werten und Laufzeitparametern.<br>
-- Feste Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol): Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
-- Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol): 
-Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
-Wenn neben dem Eingabefeld kein Symbol angezeigt wird und keine Dropdown-Liste verfügbar ist, öffnen Sie das [Edit Runtime Parameters](./report-settings#edit-runtime-parameters---laufzeitparameter) Menü und erstellen Sie Laufzeitparameter.<br>
-6. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.
-7. Klicken Sie im Hauptfenster der Komponente auf **[Load live preview]**, um die Funktionalität der definierten Filter zu prüfen. <br>
-Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 
+2. Wählen Sie, ob die Selektion in der Extraktion inkludiert oder exkludiert werden soll (3).
+3. Wählen Sie einen Operator (*Equal*, *GreaterThan*, etc.) von der Dropdown-Liste *Option* (4). 
+4. Geben Sie die Selektion in den *Low* und *High* Feldern ein. Das *High* Feld ist nur aktiv, wenn *between* oder *not between* als Operator ausgewählt wurde.
+5. Optional: Klicken Sie auf **[Add Selection]** (5), um weitere Bedingungen hinzuzufügen.
+6. Klicken Sie auf **[OK]** (6), um die Selektion zu bestätigen.
 
 {: .box-tip }
 **Tipp:** Wenn Sie mehrere Selektionsparameter verwenden, erstellen Sie dafür eine Variante in SAP. Mit der Variante müssen Sie die Parameter nicht mehrmals manuell eingeben. 

@@ -16,38 +16,18 @@ Choose a variant from the drop-down-list *Variant* (1). If you create a new vari
 
 ### Edit Selections
 
-This section corresponds to the report's input screen in SAP. 
-
-Some selection fields only have a technical name and no description. 
+This section corresponds to the report's input screen in SAP. Some selection fields only have a technical name and no description. 
 To understand which field corresponds to a field in SAP, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. 
 This displays the technical name of a selection field.
 
 1. Click the **[Edit]** button next to the selection you want to edit. The window "Edit Selection" opens.
 ![Report-Edit-Selections](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
-2. Click **[Add Selection]** to add a new filter criterion.<br>
-![ODP Selection With Parameters](/img/content/odp/odp-selection-with-parameters.png){:class="img-responsive"}
-3. Select *Include* in the **Sign** column to only include the filtered data to the output. <br>
-Select *Exclude* in the **Sign** column to exclude the filtered data from the output.
-4. Select an operator in the **Option** column. The operator filters data according to the table below.
-
-   | Operator   |      Meaning      |  
-   |:---------|:------------- |
-   |(Not)Equal |  True if data is (not)equal to the content of operand 1.|
-   |GreaterOrEqual |  True if data is greater than or equal to the content of operand 1.|
-   |GreaterThan |  True if data is greater than the content of operand 1.|
-   |LessOrEqual | True if data is less than or equal to the content of operand 1.|
-   |LessThan | True if data is less than the content of operand 1.|
-   |(Not)Between | True if data lies (not) between the values of operand 1 and operand 2. |
-   |In | True if data is part of the content of operand 1. This operator is only available for *List* parameters.|
-5. Enter static values or select runtime parameters for filtering. 
-Clicking on the icon next to the input field switches between static input values and runtime parameters.<br>
-- Static values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon): Enter values directly into the **Low** and **High** input fields. 
-- Runtime Parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon):
-Select a runtime parameter from the drop-down list.
-If no parameter icon is displayed and no drop-down list is available, open the [Edit Runtime Parameters](./report-settings#edit-runtime-parameters) menu and create runtime parameters. <br>
-6. Click **[OK]** to confirm your input.
-7. Click **[Load live preview]** in the main window of the component to check the results of the filters. <br>
-If runtime parameters are defined, you are prompted to populate the parameters with actual values.
+2. Choose if the selection is to be included or excluded (3) from the extracted data.
+3. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down list (4). <br>
+**Tip:** Use the *In* operator when mapping list parameters to selections.
+4. Enter the selection in the respective *Low* and *High* fields. The *High* field is active for input when the *between* or *not between* operator was selected.
+5. Optional: click **[Add Selection]** (5) to add conditions.
+6. Click **[OK]** (6) to confirm the selections.
 
 {: .box-tip }
 **Tip:** If you use multiple selection parameters, create a variant in SAP. Use the variant instead of entering selections.
@@ -55,4 +35,3 @@ If runtime parameters are defined, you are prompted to populate the parameters w
 ### Data Format
 
 {% include _content/en/sap-data-format.md  %}
-

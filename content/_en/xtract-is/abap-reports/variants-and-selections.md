@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=variants-and-selections
 ---
 
-{% include _content/en/xis-specific/report/variants-and-selections.md %}
+{% include _content/en/abap-reports/variants-and-selections.md %}

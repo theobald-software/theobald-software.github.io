@@ -11,27 +11,12 @@ Sie können BEx-Variablen mit Werten definieren, die zur Laufzeit dynamisch gese
 ![Edit-Variables-Button](/img/content/XU-BExQuery-Variable.png){:class="img-responsive"}
 3. Klicken Sie auf **[Edit Variables]** (3). Das Fenster "Edit variables for [Name des Query]" öffnet sich und die Felder mit verfügbaren Variablen werden aktiviert.
 ![Edit-Variables](/img/content/Edit-Variables.png){:class="img-responsive"}
-4. Wählen Sie in der Spalte **Sign** die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
-Wählen Sie in der Spalte **Sign** die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
-5. Wählen Sie in der Spalte **Option** einen Operator. Der Operator filtert Daten wie in der folgenden Tabelle beschrieben:
-
-   | Operator   |      Bedeutung      |  
-   |:---------|:------------- |
-   |(Not)Equal |  Wahr, wenn die Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
-   |LessThan  | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
-   |GreaterThan |  Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|
-   |LessOrEqual | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
-   |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
-   |(Not)Between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
-   |In | Wahr, wenn die Daten (nicht) Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
-6. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter. 
-Mit einem Klick auf das Symbol neben den Eingabefeldern wechseln Sie zwischen festen Werten und Laufzeitparametern.<br>
-- Auswahlliste ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol): Wählen Sie einen festen Wert aus einer Liste verfügbarer Werte aus.
-- Feste Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol): Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
-- Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol): 
-Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
-Wenn neben dem Eingabefeld kein Symbol angezeigt wird und keine Dropdown-Liste verfügbar ist, öffnen Sie das [Edit Runtime Parameters](./einstellungen#edit-runtime-parameters---laufzeitparameter) Menü und erstellen Sie Laufzeitparameter.<br>
-7. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.
-8. Klicken Sie im Hauptfenster der Komponente auf **[Load live preview]**, um die Funktionalität der definierten Filter zu prüfen. <br>
-Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 
-
+4. Definieren Sie die Variablen mit Hilfe der Dropdown-Listenoptionen in den Spalten **Sign** und **Option**. <br>
+Die Spezifikation **Sign** definiert, ob die zugehörige Auswahl in das Ergebnis ein- oder ausgeschlossen werden soll.<br>
+Die Spezifikation **Option** definiert, ob wie die Auswahl getroffen wird. <br>
+Um Mehrfachwerte und komplexe Auswahlen zu bearbeiten, klicken Sie auf **[Edit]**.
+5. Falls verfügbar, klicken Sie auf das ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol neben den Eingabefeldern, um eine Liste auswählbarer Variablenwerte anzuzeigen. Beispiel:<br>
+![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
+Sie können einen Wert aus der Liste der Variablenwerte auswählen, einen Wert manuell eintragen oder einen [Laufzeitparameter](./edit-runtime-parameters) hinterlegen.
+6. Klicken Sie auf **[OK]** um Ihre Eingabe zu bestätigen. 
+7. Klicken Sie auf **[Load Live Preview]** um eine Vorschau der gefilterten Ergebnisse anzuzeigen.

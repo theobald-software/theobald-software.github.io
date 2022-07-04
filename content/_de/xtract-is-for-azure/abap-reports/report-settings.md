@@ -11,5 +11,4 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=report-settings
 ---
 
-### Extraction Settings - Extraktionseinstellungen
 {% include _content/de/abap_reports/report-extraktionseinstellungen.md %}

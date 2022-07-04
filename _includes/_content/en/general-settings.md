@@ -1,7 +1,7 @@
 
 ### General Settings
 The *General Settings* are independent of the extraction type, see [General Settings](../getting-started/general-settings).<br>
-The *General Settings* include:
+These settings include:
 - Keywords
 - Definition of primary keys
 - Column level encryption
