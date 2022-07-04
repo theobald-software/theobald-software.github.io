@@ -46,9 +46,8 @@ Wählen Sie in der Spalte **Sign** die Option *Exclude*, um die gefilterten Date
 5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter. 
 Mit einem Klick auf das Symbol neben den Eingabefeldern wechseln Sie zwischen festen Werten und Laufzeitparametern.<br>
 - Feste Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol): Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
-- Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol): 
-Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
-Wenn neben dem Eingabefeld kein Symbol angezeigt wird und keine Dropdown-Liste verfügbar ist, öffnen Sie das [Edit Runtime Parameters](./report-settings#edit-runtime-parameters---laufzeitparameter) Menü und erstellen Sie Laufzeitparameter.<br>
+- SSIS-Variable oder Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol): 
+Wählen Sie eine angelegte Variable / Parameter aus der Dropdown-Liste aus.
 6. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.
 7. Klicken Sie im Hauptfenster der Komponente auf **[Load live preview]**, um die Funktionalität der definierten Filter zu prüfen. <br>
 Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 

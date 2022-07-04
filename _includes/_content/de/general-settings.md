@@ -1,5 +1,5 @@
 
-### General Settings
+### General Settings - Allgemeine Einstellungen
 Die allgemeinen Einstellungen sind unabhängig vom Extraktionstyp, siehe [Allgemeine Einstellungen](../erste-schritte/allgemeine-einstellungen).<br> 
 Die allgemeinen Einstellungen beinhalten: 
 - Keywords (Schlüsselwörter)

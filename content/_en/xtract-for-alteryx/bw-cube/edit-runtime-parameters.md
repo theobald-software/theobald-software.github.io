@@ -9,4 +9,9 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 ---
-{% include _content/en/bw-infocubes-and-bex-queries/edit-runtime-parameters.md %}
+
+
+### Edit Runtime Parameters
+
+Use runtime parameters to change [dimension filters](./bw-cube-extraction-define#setting-a-dimension-filter) and [Query Variables](./variables) dynamically during runtime.<br>
+{% include _content/en/edit-runtime-parameters.md %}

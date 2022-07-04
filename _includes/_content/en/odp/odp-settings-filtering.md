@@ -18,14 +18,14 @@ Select *Exclude* in the **Sign** column to exclude the filtered data from the ou
    |LessThan | True if data is less than the content of operand 1.|
    |(Not)Between | True if data lies (not) between the values of operand 1 and operand 2. |
    |In | True if data is part of the content of operand 1. This operator is only available for *List* parameters.|
-5. Enter static values or select runtime parameters for filtering. <br>
-- Static values: Enter values directly into the **Low** and **High** input fields. 
-If runtime parameters are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
-Clicking on the icon switches between static input values and runtime parameters.
-- Runtime Parameters: Click on the ![static-value](/img/content/icons/runtime-parameters-static.png) icon to change the input type to parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
-If no icons are displayed, open the [Edit Runtime Parameters](./odp-settings#edit-runtime-parameters) menu and create runtime parameters. <br>
+5. Enter static values or select runtime parameters for filtering. 
+Clicking on the icon next to the input field switches between static input values and runtime parameters.<br>
+- Static values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon): Enter values directly into the **Low** and **High** input fields. 
+- Runtime Parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon):
 Select a runtime parameter from the drop-down list.
-6. Click **[Load live preview]** to check the results of the filters. <br>
+If no parameter icon is displayed and no drop-down list is available, open the [Edit Runtime Parameters](./odp-settings#edit-runtime-parameters) menu and create runtime parameters. <br>
+6. Click **[OK]** to confirm your input.
+7. Click **[Load live preview]** in the main window of the component to check the results of the filters. <br>
 If runtime parameters are defined, you are prompted to populate the parameters with actual values.
 
 The number of defined filters is displayed in square brackets next to the *Edit* option.

@@ -5,7 +5,7 @@ The BW Queries can be based on all possible InfoProviders.
 
 ### Look Up a BW Cube or Query
 
-1. In the main window of the component click the **[Search]** button ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) symbol). The window “Cube and Query Lookup” opens.
+1. In the main window of the component click the **[Search]** button ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon). The window “Cube and Query Lookup” opens.
 ![Bw-Cube-Data-Source](/img/content/Bw-Cube-Data-Source.png){:class="img-responsive"}
 2. Select the *Extractor*, *Datasource Type* and *Extraction Settings* of the object (1).<br>
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"} 
@@ -16,7 +16,7 @@ The BW Queries can be based on all possible InfoProviders.
    | *Extraction Settings*  | **Only Structure**: Only available for the MDX Extractor. Use **Only Structure** if your BWCube extraction was created in an older software version, see [Extraction Settings](./bw-cube-extraction-settings#extraction-settings) for more information. <br>**Use BICS fast mode**: Only available for the BICS Extractor, see [Extraction Settings: Experimental](./bw-cube-extraction-settings#experimental) for more information.  | 
 
 3. Enter the name of a Query or a BW Cube / InfoProvider in the search bar (2). Use wildcards (*), if needed.
-4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) symbol) and select the object of your choice from the displayed list (3).
+4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) and select the object of your choice from the displayed list (3).
 5. Click **[OK]** to confirm your selection.
 
 {: .box-note }
