@@ -17,10 +17,6 @@ This option is not supported when using BICS mode.<br>
 You can use **Row Limit** to perform tests with a small amount of data by entering a row limit of e.g., 1000 (not 0).
 - **Formatted Values:** <br>
 If this option is active, the values of key figures are formatted as defined in the Query Designer e.g., scaling factor and number of decimal places.
-- **Only Structure:** <br>
-Activate **Only Structure** if your BW Cube extraction was created in an old version of the BW Cube component.
-The method for the metadata retrieval has changed, which affects especially BEx Queries with two structures.<br>
-This option can only be activated and deactivated in the [Look Up](./bw-cube-extraction-define#look-up-a-bw-cube-or-query) window of the component.
 
 {: .box-tip }
 **Recommendation**: Always define a package size.
@@ -37,6 +33,10 @@ Automatic slicing means that a loop is executed for each single value of the cho
 
 The following settings are only available for BICS extractions. They appear in the extraction settings window after retrieving the metadata of a BICS extraction.
 
+- **Only Structure:** <br>
+Activate **Only Structure** if your BW Cube extraction was created in an old version of the BW Cube component.
+The method for the metadata retrieval has changed, which affects especially BEx Queries with two structures.<br>
+This option can only be activated and deactivated in the [Look Up](./bw-cube-extraction-define#look-up-a-bw-cube-or-query) window of the component.
 - **Use BICS Fast Mode**<br>
 Enabling the checkbox switches the internal behaviour of the BICS component.
 Instead of loading RFC function definitions from SAP for each function call, the BICS fast mode uses locally stored BAPI definitions.

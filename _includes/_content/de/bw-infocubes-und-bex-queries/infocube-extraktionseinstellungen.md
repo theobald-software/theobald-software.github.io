@@ -18,11 +18,6 @@ Diese Option wird im BICS Modus nicht unterstützt.<br>
 **Row Limit** kann verwendet werden, um einen Test mit einer kleinen Datenmenge durchzuführen, indem Sie z.B. 1000 (nicht 0) als Zeilenlimit eintragen.
 - **Formatted Values**<br>
 Wenn diese Option aktiv ist, werden die Werte der Kennzahlen so ausgegeben, wie im Query-Designer definiert (z.B. Skalierungsfaktor und Dezimalstellen).
-- **Only Structure** <br>
-Aktivieren Sie **Only Structure**, wenn Ihre BW Cube Extraktion in einer veralteten Version der BW Cube Komponente erstellt wurde.
-Der Metadatenabruf hat sich geändert. 
-Das betrifft insbesondere BEx Queries, die zwei Strukturen enthalten (Merkmals- und Kennzahlenstruktur).<br>
-Diese Option kann nur in dem [Look Up](./eine-bw-cube-quelle-definieren#einen-bw-cube-oder-ein-query-suchen) Fenster der Komponente aktiviert und deaktiviert werden.
 
 {: .box-tip }
 **Empfehlung**: Definieren Sie immer eine Paketgröße.
@@ -40,7 +35,11 @@ Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicin
 Die folgenden Einstellungen sind nur für BICS Extraktionen verfügbar.
 Sie werden angezeigt, nachdem die Metadaten einer BICS Extraktion abgerufen wurden.
 
-
+- **Only Structure** <br>
+Aktivieren Sie **Only Structure**, wenn Ihre BW Cube Extraktion in einer veralteten Version der BW Cube Komponente erstellt wurde.
+Der Metadatenabruf hat sich geändert. 
+Das betrifft insbesondere BEx Queries, die zwei Strukturen enthalten (Merkmals- und Kennzahlenstruktur).<br>
+Diese Option kann nur in dem [Look Up](./eine-bw-cube-quelle-definieren#einen-bw-cube-oder-ein-query-suchen) Fenster der Komponente aktiviert und deaktiviert werden.
 - **Use BICS Fast Mode:**<br>
 Wenn diese Checkbox aktiv ist, wird das interne Verhalten der BICS-Komponente gewechselt.
 Anstatt RFC-Funktionsdefinitionen bei jedem Aufruf aus SAP zu laden, verwendet der BICS Fast Mode lokal abgelegte BAPI Definitionen.
