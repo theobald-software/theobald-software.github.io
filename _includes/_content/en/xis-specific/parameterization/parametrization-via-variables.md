@@ -1,4 +1,4 @@
-### How to use SSIS Variables with Xtract Components
+### Parameterizing Using SSIS Variables
 
 SSIS variables store values that an SQL Server Integration Services package and its containers, tasks, and event handlers can use at run time.<br>
 To use SSIS variables for parameterization of Xtract components, place an @-symbol before the variable name.
@@ -14,7 +14,3 @@ The following example shows how an SSIS variable named *@vMONTH* is used as a pa
 5. Make sure to select the correct data type. In this case set the data type to *String*.
 6. Use the variable by entering values directly into the *Value* field or by assigning dynamic values in SSIS. <br>
 
-******
-#### Related Links
-
-- [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
