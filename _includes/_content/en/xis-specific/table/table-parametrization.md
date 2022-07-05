@@ -1,16 +1,14 @@
-
-{% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
-
 ### Custom Properties
 
-The *Custom Properties* define the properties unique to the Xtract Table component. <br>
-When parameterizing the Table component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
+The *Custom Properties* define the properties unique to the component.
+When parameterizing the component using SSIS variables, the *Custom Porperties* are overwritten.
 
 For a list of available *Custom Properties*, see [Table Custom Properties](./properties).
 
+{% include _content/en/xis-specific/parameterization/parameterization-prop.md  %}
 
-### Parameterization using Data Flow Properties
-The following properties can be parameterized:
+#### Available Data Flow Properties
+List of *Data Flow Properties* that can be parameterized:
 
 |Property Name|Description|
 |:----|:----|
@@ -23,11 +21,10 @@ The following properties can be parameterized:
 | *[Xtract Table].[InvalidDateReplacement]*|Every invalid value will be converted into the entered value, see [Table Custom Properties](./properties).|
 | *[Xtract Table].[PackageSize]*| Corresponds to the field *Package Size* in the Table component's [Settings](./extraction-settings).|
 
-{: .box-tip }
-**Recommendation:** Where possible, use properties for parameterization. 
 
 ### Parameterization using SSIS Variables
-The following fields and/or custom properties of the component allow entry of an SSIS variable:
+
+List of input fields that allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|
@@ -37,5 +34,4 @@ The following fields and/or custom properties of the component allow entry of an
 ****
 #### Related Links
 - [Table Extraction Settings](./extraction-settings) <br>
-- [Parameterization](../parameterization) <br>
 - [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
