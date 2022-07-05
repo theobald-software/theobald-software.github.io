@@ -1,11 +1,8 @@
-
-{% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
-
 ### Custom Properties
-Die Eigenschaften der Xtract Query Komponente wird in den *Custom Properties* der Komponente definiert. <br>
+Die Eigenschaften der Komponente werden in den *Custom Properties* der Komponente definiert.
 Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
-Liste der relevanten *Custom Properties* der Query Komponente:
+Liste der relevanten *Custom Properties*:
 
 |Property|Beschreibung|
 |:----|:----|
@@ -17,8 +14,11 @@ Liste der relevanten *Custom Properties* der Query Komponente:
 | *Variant* | Entspricht dem Feld *Use Variant Variable* in den [Settings](./query-settings) der Query Komponente. |
 | *VariantDescription* | Beschreibung der Variante.|
 
-### Parametrierung mit SSIS Variablen
-Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
+{% include _content/de/xis-specific/parametrisierung/parametrization-via-variables.md  %}
+
+
+#### Verfügbare Parameter für SSIS Variablen
+Liste der Eingabefelder, die die Verwendung von SSIS-Variablen erlauben:
 
 |Feldname|Beschreibung|
 |:----|:----|

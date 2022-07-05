@@ -1,12 +1,9 @@
-
-{% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
-
 ### Custom Properties
 
-Die Eigenschaften der Xtract OHS Komponente wird in den *Custom Properties* der Komponente definiert. <br>
-Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
+Die Eigenschaften der Komponente werden in den *Custom Properties* der Komponente definiert.
+Bei der Parametrisierung der Komponente durch SSIS Variablen oder *Expression Properties* werden diese Eigenschaften überschrieben.
 
-Liste der relevanten *Custom Properties* der OHS Komponente:
+Liste der relevanten *Custom Properties*:
 
 |Property|Beschreibung|
 |:----|:----|
@@ -17,8 +14,10 @@ Liste der relevanten *Custom Properties* der OHS Komponente:
 | *MinDateReplacement* | Ermöglicht das Ersetzen der SAP-Datumswerte mit dem Jahr 0000. Der Standardwert für diese Eigenschaft ist 1970-01-01. <br> Um die Eigenschaft zu verwenden, geben Sie im Format yyyyy-mm-dd einen Ersatzwert für SAP-Datumswerte ein, die das Jahr ‘0000’ enthalten. Beispiel: ‘0000000000’.|
 
 
-### Parameterisierung mit Data Flow Properties
-Die folgenden *Custom Properties* können parametrisiert werden:
+{% include _content/de/xis-specific/parametrisierung/parametrisierung-properties.md  %}
+
+#### Verfügbare Data Flow Properties
+Liste der *Data Flow Properties*, die parametrisiert werden können:
 
 |Property|Beschreibung|
 |:----|:----|
@@ -28,9 +27,12 @@ Die folgenden *Custom Properties* können parametrisiert werden:
 | *[Xtract OHS].[MaxDateReplacement]*| Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX, siehe [Custom Properties](#custom-properties). |
 | *[Xtract OHS].[MinDateReplacement]*| Verwendet den eingegebenen Wert anstelle des SAP Datums 00000000, siehe [Custom Properties](#custom-properties).|
 
-### Parametrierung mit SSIS Variablen
-Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
 
+{% include _content/de/xis-specific/parametrisierung/parametrization-via-variables.md  %}
+
+#### Verfügbare Parameter für SSIS Variablen
+
+Liste der Eingabefelder, die die Verwendung von SSIS-Variablen erlauben:
 |Feldname|Beschreibung|
 |:----|:----|
 | *Package Size* | Entspricht dem Feld *Package Size* in der OHS Komponente, siehe [Extraktionseinstellungen](./settings#extraction-settings).|
@@ -41,7 +43,6 @@ Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Ve
 
 ****
 #### Related Links
-- [Ausdrücke für Properties verwenden](../parametrisierung/parametrisierung-properties#ausdrücke-für-properties-verwenden) 
+- [Use Property Expressions in Packages](https://docs.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver15)
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
-- [How to use SSIS Variables with Xtract Components](../parametrisierung/parametrisierung-variablen) 
 - [Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

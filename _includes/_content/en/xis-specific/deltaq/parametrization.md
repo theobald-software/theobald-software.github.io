@@ -57,7 +57,7 @@ List of input fields that allow entry of an SSIS variable:
 
 ****
 #### Related Links
-- [Parameterization](../parameterization) <br>
+- [Use Property Expressions in Packages](https://docs.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver15)
 - [DeltaQ Datasource Parameters](./datasource-parameters) <br>
 - [Customizing Check](./customizing-check) <br>
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)

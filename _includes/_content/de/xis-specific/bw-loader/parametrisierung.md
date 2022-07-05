@@ -37,6 +37,5 @@ Liste der Eingabefelder, die die Verwendung von SSIS-Variablen erlauben:
 
 ****
 #### Weiterführende Links
-- [Verwenden von Eigenschaftsausdrücken in Paketen](https://docs.microsoft.com/de-de/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver15)
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
 - [Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

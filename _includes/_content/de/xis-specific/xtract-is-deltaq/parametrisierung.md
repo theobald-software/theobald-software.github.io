@@ -2,7 +2,7 @@
 ### Custom Properties
 
 Die Eigenschaften der Komponente werden in den *Custom Properties* der Komponente definiert.
-Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
+Bei der Parametrisierung der Komponente durch SSIS Variablen oder *Expression Properties* werden diese Eigenschaften überschrieben.
 
 Liste der relevanten *Custom Properties*:
 
@@ -59,7 +59,7 @@ Liste der Eingabefelder, die die Verwendung von SSIS-Variablen erlauben:
 
 ****
 #### Weiterführende Links
-- [Parametrisierung](../parametrisierung) 
+- [Use Property Expressions in Packages](https://docs.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver15)
 - [DeltaQ Datasource Parameters](./datasource-parameter) 
 - [Customizing Check](./customizing-check) 
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
