@@ -5,8 +5,6 @@ Diese Properties sind nicht zu verwechseln mit den *Data Flow Properties*. *Data
 
 Bei der von Microsoft empfohlenen Parametrisierung durch *Data Flow Properties* werden die Eigenschaften der Komponente zur Laufzeit überschrieben.
 
-#### Ausdrücke für Data Flow Properties verwenden
-
 1. Erstellen Sie ein SSIS Paket, siehe [Erste Schritte](../erste-schritte).
 2. Rechtsklicken Sie auf die *Data Flow Canvas* und wählen Sie **Properties**. Das Fenster "Properties" öffnet sich.<br>
 3. Fügen Sie eine *Expression* hinzu, indem Sie auf **[...]** klicken. Das Fenster "Property Expression Editor" öffnet sich.<br>

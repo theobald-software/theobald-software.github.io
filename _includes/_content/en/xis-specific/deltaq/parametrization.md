@@ -1,10 +1,10 @@
-{% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
 
 ### Custom Properties
-The *Custom Properties* define the properties unique to the Xtract DeltaQ component. <br>
-When parameterizing the DeltaQ component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
-List of relevant *Custom Properties* of the DeltaQ component:
+The *Custom Properties* define the properties unique to the component.
+When parameterizing the component using SSIS variables or Expression Properties, the *Custom Porperties* are overwritten.
+
+List of relevant *Custom Properties*:
 
 |Property|Comment|
 |:----|:----|
@@ -25,10 +25,12 @@ List of relevant *Custom Properties* of the DeltaQ component:
 | *TransferStructure* | The transfer structure of the source.|
 | *UpdateType* | Corresponds to the drop-down menu *Update Mode* in the DeltaQ component. Permitted values are: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
 
-### Parameterization using Data Flow Properties
-The following custom properties can be parameterized:
+{% include _content/en/xis-specific/parameterization/parameterization-prop.md  %}
 
-|Property Name|Description|
+#### Available Data Flow Properties
+List of *Data Flow Properties* that can be parameterized:
+
+|Property |Description|
 |:----|:----|
 | *[Xtract DeltaQ].[GatewayHost]*|Corresponds to the field *Gateway Host* in the DeltaQ component, see [Customizing Check](./customizing-check).|
 | *[Xtract DeltaQ].[GatewayService]*|Corresponds to the field *Gateway Service* in the DeltaQ component, see [Customizing Check](./customizing-check).|
@@ -37,9 +39,10 @@ The following custom properties can be parameterized:
 | *[Xtract DeltaQ].[RequestID]*|Corresponds to the field *RequestID* in the DeltaQ component's [Settings](./settings).|
 | *[Xtract DeltaQ].[UpdateType]*|Corresponds to the drop-down menu *Update Mode* in the DeltaQ component. Permitted values are: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.  |
 
+{% include _content/en/xis-specific/parameterization/parametrization-via-variables.md  %}
 
-### Parameterization using SSIS Variables
-The following fields and/or custom properties of the component allow entry of an SSIS variable:
+#### Available Parameters for SSIS Variables
+List of input fields that allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|

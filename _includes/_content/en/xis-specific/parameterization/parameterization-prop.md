@@ -1,4 +1,4 @@
-### Parameterizing Using Custom Properties
+### Parameterizing Using Expression Properties
 
 The *Custom Properties* of an Xtract IS component are displayed in the "Properties" window of the component. 
 These properties are not to be confused with *Data Flow Properties*. 

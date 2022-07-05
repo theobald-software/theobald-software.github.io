@@ -1,13 +1,10 @@
 
-{% include _content/de/xis-specific/parametrisierung/parametrization-about.md  %}
-
-
 ### Custom Properties
 
-Die Eigenschaften der Xtract DeltaQ Komponente wird in den *Custom Properties* der Komponente definiert. <br>
-Bei der Parametrisierung der Komponente durch SSIS Variablen oder Data Flow Properties werden diese Eigenschaften überschrieben.
+Die Eigenschaften der Komponente werden in den *Custom Properties* der Komponente definiert.
+Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
-Liste relevanter *Custom Properties* der DeltaQ Komponente:
+Liste der relevanten *Custom Properties*:
 
 |Property|Beschreibung|
 |:----|:----|
@@ -28,8 +25,10 @@ Liste relevanter *Custom Properties* der DeltaQ Komponente:
 | *TransferStructure* | Transferstruktur der zu extrahierenden Quelle.|
 | *UpdateType* | Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
 
-### Parameterisierung mit Data Flow Properties
-Die folgenden *Custom Properties* können parametrisiert werden:
+{% include _content/de/xis-specific/parametrisierung/parametrisierung-properties.md  %}
+
+#### Verfügbare Data Flow Properties
+Liste der *Data Flow Properties*, die parametrisiert werden können:
 
 |Property|Beschreibung|
 |:----|:----|
@@ -41,8 +40,11 @@ Die folgenden *Custom Properties* können parametrisiert werden:
 | *[Xtract DeltaQ].[UpdateType]*|Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.  |
 
 
-### Parametrierung mit SSIS Variablen
-Die folgenden Felder und/oder *Custom Properties* der Komponente erlauben die Verwendung von SSIS-Variablen:
+{% include _content/de/xis-specific/parametrisierung/parametrization-via-variables.md  %}
+
+#### Verfügbare Parameter für SSIS Variablen
+
+Liste der Eingabefelder, die die Verwendung von SSIS-Variablen erlauben:
 
 |Feldname|Beschreibung|
 |:----|:----|
