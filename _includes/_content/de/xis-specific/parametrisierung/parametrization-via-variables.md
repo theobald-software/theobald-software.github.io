@@ -3,7 +3,7 @@
 SSIS-Variablen speichern Werte, die von einem SQL Server Integration Services-Paket und dessen Containern, Tasks und Ereignishandlern zur Laufzeit verwendet werden können.<br>
 Um SSIS-Variablen für die Parametrisierung von Xtract Komponenten verwenden zu können, fügen Sie vor dem Namen der Variable ein @-Symbol hinzu.
 
-Das folgende Beispiel zeigt wie eine SSIS-Variable mit dem Namen *@vMONTH* als Parameter für in einer Xtract Komponente verwendet wird:
+Das folgende Beispiel zeigt wie eine SSIS-Variable mit dem Namen *@vDate* als Parameter für in einer Xtract Komponente verwendet wird:
 
 1. Wählen Sie ein Eingabefeld, das SSIS-Variablen unterstützt.
 2. Geben Sie anstatt eines konstanten Werts den Namen einer SSIS-Variablen in der @-Notation ein (1).
