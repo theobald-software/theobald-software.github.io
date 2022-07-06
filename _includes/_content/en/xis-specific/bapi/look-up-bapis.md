@@ -19,8 +19,7 @@ BAPIs can have up to four parameter types: Imports, Exports, Changings and Table
 **Note:** You can use of nested parameters, e.g., tables in tables, structures in tables and structures in structures.<br>
 
 1. Add input parameters to send to SAP in **Imports**, see [Import Parameters](./parameters#import-parameters). <br>
-You can enter scalar values (1) or structures (2). You can also use dynamic runtime parameters, see [Parameterization](./parametrization).<br>
-Parameters defined as mandatory in SAP (transaction SE37) are marked with a red *. <br>
+You can enter scalar values (1) or structures (2). You can also select SSIS variables.<br>
 ![BAPI import parameters](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"}
 2. Define the output to receive from SAP in **Eports**, see [Export Parameters](./parameters#export-parameters). <br>
 Select output by activating the checkbox next to the items.<br>
