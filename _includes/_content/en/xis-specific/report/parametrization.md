@@ -25,8 +25,10 @@ Liste der relevanten *Custom Properties*:
 
 You can use SSIS variables for selections.<br>
 Available SSIS variables are listed in the selection settings when parameter input is active (1), see [Edit Selections](./variants-and-selections#edit-selections).<br> 
-
 ![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
+
+To use SSIS variables for parameterizing *Custom Properties*, place an @-symbol before the variable name.
+Example: the variable *vDate* is assignes to a *Custom Property* as *@vDate*.
 
 {: .box-note }
 **Note**: The Xtract Report component does not support variables of the data types *DateTime* and *DBNull*. 
