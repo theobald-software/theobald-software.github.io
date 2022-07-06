@@ -38,11 +38,14 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 | *[Xtract.ODP].[ &lt;Selection Parameter &gt;]*| Auswahlparameter, die in der Komponente definiert sind, sind in den *Properties* der Komponente verfügbar, siehe [Edit Parameters](./odp-settings#parameter-bearbeiten). |
 
 
-{% include _content/de/xis-specific/parametrisierung/parametrization-via-variables.md  %}
+### Parametrierung mit SSIS Variablen
+
+Um SSIS-Variablen für die Parametrisierung von *Custom Properties* verwenden zu können, fügen Sie in den *Custom Properties* ein @-Symbol vor dem Namen der Variable hinzu.
+Beispiel: die Variable *vDate* wird in den *Custom Properties* als *@vDate* hinterlegt.
 
 #### Verfügbare Parameter für SSIS Variablen
 
-Liste der Eingabefelder, die die Verwendung von SSIS-Variablen erlauben:
+Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Variablen erlauben:
 
 |Feldname|Beschreibung|
 |:----|:----|

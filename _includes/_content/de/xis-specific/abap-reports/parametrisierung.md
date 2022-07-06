@@ -24,9 +24,11 @@ Liste der relevanten *Custom Properties*:
 ### Parametrierung mit SSIS Variablen
 
 SSIS Variablen können verwendet werden, um Selektionen zu dynamisieren.<br>
-Verfügbare SSIS Variablen werden in den Einstellungen für Selektionen angezeigt, wenn die Parametereingabe aktiv ist (1), siehe [Selektionen bearbeiten](./report-variants-and-selections#selektionen-bearbeiten).
-
+Verfügbare SSIS Variablen werden direkt in den Einstellungen für Selektionen angezeigt, wenn die Parametereingabe aktiv ist (1), siehe [Selektionen bearbeiten](./report-variants-and-selections#selektionen-bearbeiten).<br>
 ![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
+
+Um SSIS-Variablen für die Parametrisierung von *Custom Properties* verwenden zu können, fügen Sie in den *Custom Properties* ein @-Symbol vor dem Namen der Variable hinzu.
+Beispiel: die Variable *vDate* wird in den *Custom Properties* als *@vDate* hinterlegt.
 
 {: .box-note }
 **Hinweis**: Die Xtract Report Komponente unterstützt bei der Parametrisierung durch Variablen alle Datentypen, bis auf *DateTime* und *DBNull*.
@@ -34,12 +36,11 @@ Für mehr Informationen über Datentypen von Systemvariablen, siehe [Microsoft-H
 
 #### Verfügbare Parameter für SSIS Variablen
 
-Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Variablen erlauben:
+Liste der *Custom Properties*, die die Verwendung von SSIS-Variablen erlauben:
 
 |Feldname|Beschreibung|
 |:----|:----|
 | *Variant*| Siehe [Varianten und Selektionen](./report-variants-and-selections).|
-| *Edit*| Geben Sie eine SSIS-Variable als Auswahlkriterium ein, siehe [Varianten und Selektionen](./report-variants-and-selections).|
 | *Spool Destination / BatchJobDestination* | Entspricht dem Feld *Spool Destination* in der Report Komponente, siehe [Settings - Spool Destination / BatchJobDestination](./report-settings).|
 | *BatchJobName*        |Entspricht dem Feld *Batch Job Name* in der Report Komponente, siehe [Settings - BatchJobName](./report-settings).|
 | *BatchJobTimeout*     |Entspricht dem Feld *Batch Timeout* in der Report Komponente, siehe [Settings - BatchJobTimeout](./report-settings).|

@@ -36,10 +36,13 @@ List of *Data Flow Properties* that can be parameterized:
 | *[Xtract.ODP].[PackageSize]*| Sets the package size in bytes, see [Advanced Settings](./odp-settings#advanced-settings). |
 | *[Xtract.ODP].[ &lt;Selection Parameter &gt;]*| Selection parameters that are defined in the component are exposed as properties, see [Edit Parameters](./odp-settings#edit-parameters). |
 
-{% include _content/en/xis-specific/parameterization/parametrization-via-variables.md  %}
+### Parameterizing Using SSIS Variables
+
+To use SSIS variables for parameterizing *Custom Properties*, place an @-symbol before the variable name.
+Example: the variable *vDate* is assignes to a *Custom Property* as *@vDate*.
 
 #### Available Parameters for SSIS Variables
-List of input fields that allow entry of an SSIS variable:
+List of input fields / *Custom Properties* that allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|

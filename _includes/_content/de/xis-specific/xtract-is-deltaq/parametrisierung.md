@@ -44,7 +44,7 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 
 #### Verfügbare Parameter für SSIS Variablen
 
-Liste der Eingabefelder, die die Verwendung von SSIS-Variablen erlauben:
+Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Variablen erlauben:
 
 |Feldname|Beschreibung|
 |:----|:----|

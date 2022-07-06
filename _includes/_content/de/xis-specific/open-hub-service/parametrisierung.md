@@ -32,7 +32,7 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 
 #### Verfügbare Parameter für SSIS Variablen
 
-Liste der Eingabefelder, die die Verwendung von SSIS-Variablen erlauben:
+Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Variablen erlauben:
 |Feldname|Beschreibung|
 |:----|:----|
 | *Package Size* | Entspricht dem Feld *Package Size* in der OHS Komponente, siehe [Extraktionseinstellungen](./settings#extraction-settings).|
