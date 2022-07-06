@@ -12,4 +12,5 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-report-extraktion-definie
 ---
 Der folgende Abschnitt beschreibt die Anwendung der Report Komponente.
 
+
 {% include _content/de/abap_reports/eine-report-extraktion-definieren.md %}

@@ -21,8 +21,8 @@ The following section describes the functions of the Report component of Xtract 
 ### How to use the Report component
 {% include _content/en/xu-specific/define-extraction.md %}
 
-{% include _content/en/abap-reports/report-workflow.md %}
-
+### General Workflow
+![Report-Workflow](/img/content/report-general-workflow.png){:class="img-responsive" width="400px"}
 
 ---
 

@@ -21,8 +21,8 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Report Kompo
 ### Report verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
 
-
-{% include _content/de/abap_reports/report-workflow.md %}
+### Allgemeiner Workflow
+![Report-Workflow](/img/content/report-general-workflow.png){:class="img-responsive" width="400px"}
 
 ****
 
