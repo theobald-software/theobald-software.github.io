@@ -1,7 +1,7 @@
 ---
 ref: yunio-07
 layout: page
-title: Server Settings
+title: Server-Einstellungen
 description: Server
 product: yunio
 parent: yunio
@@ -21,10 +21,6 @@ Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
-### Anonymous Access
-**Anonymous Access** ist nur verfügbar, wenn TLS aktiv ist, siehe [Transport Layer Security](#transport-layer-security). <br>
-Wenn **Anonymous Access** aktiv ist, gibt es keine Zugangsbeschränkungen für den Designer.
-Wenn diese Option deaktiviert ist, gibt haben nur angelegte Benutzer Zugriff auf den Designer.
 
 ### Transport Layer Security
 

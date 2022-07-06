@@ -61,15 +61,15 @@ To set up the service, see [SAP Table or View](./table-and-views), [Function Mod
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
-To test a service after creation, trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. <br>
+- To test a service after creation, trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. <br>
+- To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy the code or download the service definition (2).
+
+![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
 
 {: .box-note}
 **Note:** Only services that do not require parameters supplied by a caller will display any SAP results in the browser. For parameterized services, use a tool
 that supports Swagger/OpenAPI definitions (e.g.[Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector), [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)) . 
 
-To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy the code or download the service definition (2).
-
-![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
 
 *****
 #### Related Links
