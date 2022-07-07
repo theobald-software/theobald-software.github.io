@@ -20,7 +20,7 @@ The Designer features different functionalities for data extractions.
 
 #### Designer
 
-Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
+Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/reset-preferences.png) | Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started/connect-designer-with-server)
 ![designer-icon](/img/content/icons/designer/disconnect.png) | Disconnect | Logging off the server | -
@@ -29,7 +29,7 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 
 #### Extraction
 
-Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
+Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/add.png) | New  | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit | Edit an existing extraction | -
@@ -46,7 +46,7 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 
 #### Server
 
-Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
+Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/log1.png) | Logs  | Open server logs | [Server Logging](../logging/logging-access-via-designer#server-logs-run)
 ![designer-icon](/img/content/icons/designer/settings.png) | Settings | Open server settings | [Server Settings](../server/server-settings)
@@ -55,14 +55,14 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 
 #### Security
 
-Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
+Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/user-password.png) | Set User Password  | Set or change user password  | [User Managements](../security/user-management#user)
 ![designer-icon](/img/content/icons/designer/user.png) | Manage Users | Manage user groups | [User Groups](../security/user-management#user-groups)
 
 #### Help
 
-Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
+Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/eng.png)| Online Help (EN) | Open the English Online Help| <!-----> - <!-----> 
 ![designer-icon](/img/content/icons/designer/de.png) | Online Help (DE) | Open the German Online Help | -
@@ -75,7 +75,7 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 
 ![main-window-guibuttons](/img/content/xu/main-window-guibuttons.png){:class="img-responsive"}
 
-Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
+Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/add.png) | New | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit |  Edit existing extraction | -
@@ -106,7 +106,7 @@ You can now adjust the **[Destination]** and **[Source]** settings in the [GUI B
 **Double Clicking:** Double-clicking an extraction works as a shortcut to the **[Edit]** button. <br>
 **Right-clicking:** Right-clicking an extraction in the list opens the following menu:<br>
 
-Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
+Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit | Edit an existing extraction | -
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete | Delete an existing extraction | -
