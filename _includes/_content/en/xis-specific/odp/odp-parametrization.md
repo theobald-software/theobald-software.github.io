@@ -1,11 +1,10 @@
 
-{% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
-
 ### Custom Properties
-The *Custom Properties* define the properties unique to the Xtract ODP component. <br>
-When parameterizing the ODP component using SSIS variables or Data Flow Properties, the *Custom Porperties* are overwritten.
 
-List of relevant *Custom Properties* of the ODP component:
+The *Custom Properties* define the properties unique to the component.
+When parameterizing the component using SSIS variables, the *Custom Porperties* are overwritten.
+
+List of relevant *Custom Properties*:
 
 |Property|Comment|
 |:----|:----|
@@ -22,8 +21,11 @@ List of relevant *Custom Properties* of the ODP component:
 {: .box-note }
 **Note:** The [runtime parameters](./odp-settings#edit-parameters) defined in the Xtract ODP component are also added to the list of properties.
 
-### Parameterization using Data Flow Properties
-The following *Custom Properties* can be parameterized:
+
+{% include _content/en/xis-specific/parameterization/parameterization-prop.md  %}
+
+#### Available Data Flow Properties
+List of *Data Flow Properties* that can be parameterized:
 
 |Property Name|Description|
 |:----|:----|
@@ -34,8 +36,13 @@ The following *Custom Properties* can be parameterized:
 | *[Xtract.ODP].[PackageSize]*| Sets the package size in bytes, see [Advanced Settings](./odp-settings#advanced-settings). |
 | *[Xtract.ODP].[ &lt;Selection Parameter &gt;]*| Selection parameters that are defined in the component are exposed as properties, see [Edit Parameters](./odp-settings#edit-parameters). |
 
-### Parameterization using SSIS Variables
-The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:
+### Parameterizing Using SSIS Variables
+
+To use SSIS variables for parameterizing *Custom Properties*, place an @-symbol before the variable name.
+Example: the variable *vDate* is assignes to a *Custom Property* as *@vDate*.
+
+#### Available Parameters for SSIS Variables
+List of input fields / *Custom Properties* that allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|
@@ -45,7 +52,6 @@ The following fields and/or *Custom Properties* of the component allow entry of 
 
 ****
 #### Related Links
-- [How to Use Expressions for Properties](../parameterization/parameterization-prop#how-to-use-expressions-for-properties) 
+- [Use Property Expressions in Packages](https://docs.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver15)
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
-- [How to use SSIS Variables with Xtract Components](../parameterization/parameterization-var) 
 - [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

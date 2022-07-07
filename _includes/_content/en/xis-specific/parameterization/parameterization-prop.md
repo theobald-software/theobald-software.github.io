@@ -1,4 +1,4 @@
-### Properties of Xtract Components in SSIS
+### Parameterizing Using Expression Properties
 
 The *Custom Properties* of an Xtract IS component are displayed in the "Properties" window of the component. 
 These properties are not to be confused with *Data Flow Properties*. 
@@ -10,7 +10,7 @@ When parameterizing using *Data Flow Properties* as recommended by Microsoft, th
 <!---(technically: the property's *expressionType* XML-attribute is set to *notify*).
 VS: und was heißt das? Muss ich das wissen? Und falls ja, wofür????-->
 
-### How to Use Expressions for Data Flow Properties
+#### How to Use Expressions for Data Flow Properties
 
 1. Create an SSIS package, see [Getting Started](../getting-started).
 2. Right-click the Data Flow canvas and select **Properties**. The window "Properties" opens.
@@ -22,7 +22,3 @@ VS: und was heißt das? Muss ich das wissen? Und falls ja, wofür????-->
 7. Confirm your input with **[OK]**.
 
 
-*****
-#### Related Links:
-- [Use Property Expressions in Packages](https://docs.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver15)
-- [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).

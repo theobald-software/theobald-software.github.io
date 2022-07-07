@@ -16,8 +16,10 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 #### Skalarparameter hinzufügen (1)
 
 Es gibt zwei Möglichkeiten Skalarfelder einzustellen: 
-- als statischer Wert (z.B. 1141)
-- als dynamischen Wert, der über einen [Parameter](./parametrisierung) während der Laufzeit übergeben wird.
+- als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol)
+- als SSIS-Variable / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol)
+
+Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.
 
 Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
 Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.
@@ -33,8 +35,8 @@ Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich.
 
 Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
 1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Edit Structures" öffnet sich.
-2. Geben Sie unter **Values** Werte oder Parameter ein.
-
+2. Geben Sie unter **Values** statische Werte oder SSIS-Variablen / Parameter ein.
+Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.<br>
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export-Parameter

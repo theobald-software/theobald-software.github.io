@@ -1,12 +1,9 @@
-
-{% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
-
 ### Custom Properties
 
-The *Custom Properties* define the properties unique to the Xtract BW Loader component. <br>
-When parameterizing the BW Loader component using SSIS variables, the *Custom Porperties* are overwritten.
+The *Custom Properties* define the properties unique to the component.
+When parameterizing the component using SSIS variables, the *Custom Porperties* are overwritten.
 
-List of relevant *Custom Properties* of the BW Loader component:
+List of relevant *Custom Properties*:
 
 |Property |Comment|
 |:----|:----|
@@ -22,8 +19,11 @@ List of relevant *Custom Properties* of the BW Loader component:
 | *ProgramID* | Corresponds to the field *Program ID* in the BW Loader component, see [Connect Source and Destination Columns](./connect-source-and-destination-column). |
 | *WaitUntilFinished* | Corresponds to the field *Wait data transfer to be finished* in the BW Loader component, see [Settings](./settings#general). |
 
-### Parameterization using SSIS Variables
-The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:
+
+{% include _content/en/xis-specific/parameterization/parametrization-via-variables.md  %}
+
+#### Available Parameters for SSIS Variables
+List of input fields that allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|
@@ -32,7 +32,8 @@ The following fields and/or *Custom Properties* of the component allow entry of 
 | *Gateway service* | Corresponds to the field *Gateway service* in the BW Loader component, see [Connect Source and Destination Columns](./connect-source-and-destination-column).|
 | *Program ID* | Corresponds to the field *Program ID* in the BW Loader component, see [Connect Source and Destination Columns](./connect-source-and-destination-column).|
 
-****
-#### Related Links
-- [How to use SSIS Variables with Xtract Components](../parameterization/parameterization-var) 
+
+*****
+#### Related Links:
+- [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
 - [Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)

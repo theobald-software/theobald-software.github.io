@@ -1,12 +1,10 @@
-
-{% include _content/en/xis-specific/parameterization/parametrization-about.md  %}
-
 ### Custom Properties
 
-The *Custom Properties* define the properties unique to the Xtract Report component. <br>
-When parameterizing the Report component using SSIS variables, the *Custom Porperties* are overwritten.
+Die Eigenschaften der Komponente werden in den *Custom Properties* der Komponente definiert.
+Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
-List of relevant *Custom Properties* of the Report component:
+Liste der relevanten *Custom Properties*:
+
 
 |Property|Comment|
 |:----|:----|
@@ -22,8 +20,22 @@ List of relevant *Custom Properties* of the Report component:
 | *UseBatch* | Corresponds to the field *Use Batch* in the Report component, see [Settings - Use Batch](./settings). |
 | *Variant* | See [Variants and Selections](./variants-and-selections).|
 
+
 ### Parameterization using SSIS Variables
-The following fields and/or *Custom Properties* of the component allow entry of an SSIS variable:
+
+You can use SSIS variables for selections.<br>
+Available SSIS variables are listed in the selection settings when parameter input is active (1), see [Edit Selections](./variants-and-selections#edit-selections).<br> 
+![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
+
+To use SSIS variables for parameterizing *Custom Properties*, place an @-symbol before the variable name.
+Example: the variable *vDate* is assignes to a *Custom Property* as *@vDate*.
+
+{: .box-note }
+**Note**: The Xtract Report component does not support variables of the data types *DateTime* and *DBNull*. 
+For more information on the data types of system variables, see [Microsoft Help: System Variables](https://docs.microsoft.com/en-us/sql/integration-services/system-variables?view=sql-server-ver15).
+
+#### Available Parameters for SSIS Variables
+List of input fields / *Custom Properties* that allow entry of an SSIS variable:
 
 |Field Name|Comment|
 |:----|:----|
@@ -34,21 +46,6 @@ The following fields and/or *Custom Properties* of the component allow entry of 
 | *BatchJobTimeout*     |Corresponds to the field *Batch Timeout* in the Report component, see [Settings - BatchJobTimeout](./settings).|
 | *ReportName*        |  Should not be used as the structure of the result as it varies depending on the reports.    |
 
-#### Assigning Variables to Selections 
-
-To dynamically select data, you can use SSIS variables.
-
-1. Create a variable. Make sure the data type of the variable fits the data type of the report field you want to filter.
-2. Open the report component and open a selection, see [Edit Selections](./variants-and-selections#edit-selections).<br> 
-3. If variables are available, an icon is displayed next to the **Low** and **High** input fields (1). <br>
-Click the icons to switch between entering actual input values and entering variables from a drop-down-list.<br>
-![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
-4. If you have assigned variables as selection filters and click **[Load Preview]** you are prompted to populate the variables with actual values. <br>
-![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}
-
-{: .box-note }
-**Note**: The Xtract Report component does not support variables of the data types *DateTime* and *DBNull*. 
-For more information on the data types of system variables, see [Microsoft Help: System Variables](https://docs.microsoft.com/en-us/sql/integration-services/system-variables?view=sql-server-ver15).
 
 ****
 #### Related Links

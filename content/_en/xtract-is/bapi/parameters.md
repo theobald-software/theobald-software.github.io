@@ -1,7 +1,7 @@
 ---
 ref: xi-bapi-02
 layout: page
-title: Input and Output
+title: Parameterization
 description: Parameters
 product: xtract-is
 parent: bapi

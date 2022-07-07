@@ -1,7 +1,7 @@
 ---
 ref: xia-bapi-02
 layout: page
-title: Input and Output
+title: Parameterization
 description: Parameters
 product: xtract-is-for-azure
 parent: bapi
