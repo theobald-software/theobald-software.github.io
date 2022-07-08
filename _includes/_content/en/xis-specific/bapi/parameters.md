@@ -4,6 +4,17 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 - A structure consisting of several components.
 - A table (tabular array of data) consisting of columns (data values of the same type) and rows (data records).
 
+|Icon  | Description |Details | 
+| ----- | --------------- | ------------ | 
+|![sap-default](/img/content/icons/checkbox.png) | SAP default value |  If this checkbox is inactive, the default value from SAP is used. Not all fields have default values. If a default value is available, the value is displayed in a light grey color in the input field. |
+|![sap-default](/img/content/icons/checkbox-checked.png) | Static values | Enter values into the input field. SAP default values for the input field are automatically overwritten.|
+|![static-value](/img/content/icons/runtime-parameters-static.png) | Static values | Enter values into the input field. SAP default values for the input field are automatically overwritten. Click on the icon to switch between static input values and SSIS variables. |
+|![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) | Variables | This option is only available if SSIS variables or parameters are defined. Click on the icon to switch between static input values and SSIS variables.  | 
+|![edit-icon](/img/content/icons/pen.png) | Structure | This option is available if a parameter contains multiple scalar parameters. Click on the icon to edit the individual scalar parameters. | 
+|![glasses-icon](/img/content/icons/glasses.png) | Metadata | Displays the metadata of a structure / table, e.g. column names and data types. This option is useful when mapping input data to tables.| 
+
+![BAPI icons](/img/content/xis/BAPI-icons.png){:class="img-responsive"}
+
 ### Import Parameters
 Import parameters represent the input values sent from the client to SAP. <br>
 In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
@@ -14,13 +25,12 @@ To use the filtering function, enter text in the headers of the columns **Name**
 
 #### Add Scalar Parameters (1)
 
-Scalar fields for inputs are usually set using the following two options:
-- Static values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon)
-- SSIS variables / Parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon)
+Scalar fields for inputs are usually set using the following four options:
+- enter static values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon).<br>
+Click on the icon left of the input field to switch between static input values and SSIS variables / parameters.
+- assign SSIS variables / parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).<br>
+When using runtime parameters, make sure the input matches the data type.
 
-Click on the icon next to the input field to switch between static input values and SSIS variables / parameters.
-
-When using runtime parameters, make sure the input matches the data type.<br>
 When entering constant scalar values of a wrong data type, the field is marked red and an error message is displayed (e.g. "Value is not numeric").
 
 {: .box-note }
