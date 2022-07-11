@@ -28,7 +28,6 @@ If running the SSIS package is successful, proceed to setting up Xtract IS for A
 
 ### Supported SQL Server Integration Services (SSIS) Versions  	
 
-- SQL Server Integration Services (SSIS) 2012 SP4 (until 2022-07-12)
 - SQL Server Integration Services (SSIS) 2014 SP3 (until 2024-07-09)
 - SQL Server Integration Services (SSIS) 2016 SP2 (until 2026-07-14)
 - SQL Server Integration Services (SSIS) 2017 (until 2027-10-12)
