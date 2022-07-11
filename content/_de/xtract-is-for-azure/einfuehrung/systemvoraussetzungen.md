@@ -11,8 +11,7 @@ lang: de_DE
 progressstate: 5
 ---
 ### Unterstützte Versionen der SQL Server Integration Services (SSIS)
- 	
-- SQL Server Integration Services (SSIS) 2012 SP4 (bis 12.07.2022)
+
 - SQL Server Integration Services (SSIS) 2014 SP3 (bis 09.07.2024)
 - SQL Server Integration Services (SSIS) 2016 SP2 (bis 14.07.2026)
 - SQL Server Integration Services (SSIS) 2017 (bis 12.10.2027)
