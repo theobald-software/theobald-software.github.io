@@ -4,6 +4,17 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 - eine Struktur, die mehrere Komponenten beinhaltet
 - eine Tabelle
 
+|Symbol  | Beschreibung |Details | 
+| ----- | --------------- | ------------ | 
+|![sap-default](/img/content/icons/checkbox.png) | SAP Standardwerte|  Wenn diese Checkbox inaktiv ist, werden Standardwerte aus SAP verwendet. Nicht alle Felder haben Standardwerte. Wenn ein Wert in SAP vorhanden ist, wird er in hellgrauer Schrift im Eingabefeld angezeigt. |
+|![sap-default](/img/content/icons/checkbox-checked.png) | Feste Werte | Geben Sie Werte in das Eingabefeld ein. Vorhandene SAP Standardwerte werden überschrieben.|
+|![static-value](/img/content/icons/runtime-parameters-static.png) | Feste Werte | Geben Sie Werte in das Eingabefeld ein. Vorhandene SAP Standardwerte werden überschrieben. Klicken Sie auf das Symbol, um zwischen der Eingabe von festen Werten und SSIS-Variablen zu wechseln. |
+|![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) | Variablen | Diese Option ist nur verfügbar, wenn SSIS Variablen oder PArameter definiert sind. Klicken Sie auf das Symbol, um zwischen der Eingabe von festen Werten und SSIS-Variablen zu wechseln.  | 
+|![edit-icon](/img/content/icons/pen.png) | Struktur | Diese Option ist verfügbar, wenn der Parameter mehrere Skalarparameter beinhaltet. Klicken Sie auf das Symbol, um die beinhalteten Skalarparameter einzeln zu bearbeiten. | 
+|![glasses-icon](/img/content/icons/glasses.png) | Metadata | Zeigt die Metadaten (Spaltennamen und Datentypen) einer Struktur / Tabelle an. Diese Option ist nützlich, wenn Sie Tabellen mappen.| 
+
+![BAPI icons](/img/content/xis/BAPI-icons.png){:class="img-responsive"}
+
 ### Import-Parameter
 
 **Imports** repräsentiert die Eingabewerte, die vom Client an SAP gesendet werden. 
@@ -92,3 +103,27 @@ Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Ei
 Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Klicken Sie auf **[Remove]**, um die Eingabezeile zu entfernen.
+
+#### Mapping Input Tables
+
+When connecting input data to the Xtract BAPI component, a data mapping between the input and the Xtract BAPI component is executed automatically. 
+
+![BAPI table mapping](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
+
+To correctly map the data, the following requirements must be met:
+
+- The column names of the input table must be the same as in the Xtract BAPI component.
+- The data types in the input table must be the same as in the Xtract BAPI component.
+
+To look up column names and data types in the Xtract BAPI component, open the Tables tab and click on the ![glasses-icon](/img/content/icons/glasses.png) icon next to the table.
+
+![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
+
+{: .box-tip }
+**Tip:** If the column names and / or datatypes of the input table and the Xtract BAPI table do not match, add a Derived Column component to convert the input data.
+
+
+*****
+#### Weiterführende Links
+- [How to Post Data in SAP with Xtract BAPI](https://kb.theobald-software.com/xtract-is/how-to-post-data-in-sap)
+- [Uploading CATS data by using Xtract IS BAPI](https://kb.theobald-software.com/xtract-is/uploading-cats-data-by-using-xtract-is-bapi)
