@@ -4,17 +4,6 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 - eine Struktur, die mehrere Komponenten beinhaltet
 - eine Tabelle
 
-|Symbol  | Beschreibung |Details | 
-| ----- | --------------- | ------------ | 
-|![sap-default](/img/content/icons/checkbox.png) | SAP Standardwerte|  Wenn diese Checkbox inaktiv ist, werden Standardwerte aus SAP verwendet. Nicht alle Felder haben Standardwerte. Wenn ein Wert in SAP vorhanden ist, wird er in hellgrauer Schrift im Eingabefeld angezeigt. |
-|![sap-default](/img/content/icons/checkbox-checked.png) | Feste Werte | Geben Sie Werte in das Eingabefeld ein. Vorhandene SAP Standardwerte werden überschrieben.|
-|![static-value](/img/content/icons/runtime-parameters-static.png) | Feste Werte | Geben Sie Werte in das Eingabefeld ein. Vorhandene SAP Standardwerte werden überschrieben. Klicken Sie auf das Symbol, um zwischen der Eingabe von festen Werten und SSIS-Variablen zu wechseln. |
-|![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) | Variablen | Diese Option ist nur verfügbar, wenn SSIS Variablen oder PArameter definiert sind. Klicken Sie auf das Symbol, um zwischen der Eingabe von festen Werten und SSIS-Variablen zu wechseln.  | 
-|![edit-icon](/img/content/icons/pen.png) | Struktur | Diese Option ist verfügbar, wenn der Parameter mehrere Skalarparameter beinhaltet. Klicken Sie auf das Symbol, um die beinhalteten Skalarparameter einzeln zu bearbeiten. | 
-|![glasses-icon](/img/content/icons/glasses.png) | Metadata | Zeigt die Metadaten (Spaltennamen und Datentypen) einer Struktur / Tabelle an. Diese Option ist nützlich, wenn Sie Tabellen mappen.| 
-
-![BAPI icons](/img/content/xis/BAPI-icons.png){:class="img-responsive"}
-
 ### Import-Parameter
 
 **Imports** repräsentiert die Eingabewerte, die vom Client an SAP gesendet werden. 
@@ -27,17 +16,16 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 #### Skalarparameter hinzufügen (1)
 
 Es gibt zwei Möglichkeiten Skalarfelder einzustellen: 
-- als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol)
-- als SSIS-Variable / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol)
+- als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol).<br>
+- als SSIS-Variable / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).<br>
 
 Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.
-
-Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
-Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.
+Wenn Sie dynamische SSIS-Variablen verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.
 
 {: .box-note }
-**Note:** Parameter, die von SAP vorausgefüllt sind, werden in einer grauen Schrift angezeigt. <br>
+**Note:** Parameter, die von SAP vorausgefüllt sind, werden in einer grauen Schrift angezeigt.
 Um diese Parameter zu deaktivieren, haken Sie die Checkbox neben dem Parameter an und lassen Sie das Feld frei.
+
 
 #### Strukturen als Parameter hinzufügen (2)
 
@@ -46,7 +34,7 @@ Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich.
 
 Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
 1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Edit Structures" öffnet sich.
-2. Geben Sie unter **Values** statische Werte oder SSIS-Variablen / Parameter ein.
+2. Geben Sie unter **Values** statische Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder SSIS-Variablen / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) ein.
 Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.<br>
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
@@ -100,27 +88,24 @@ Aktivieren Sie die Checkbox in der Ausgabespalte, um Tabellen der Ausgabe hinzuz
 2. Klicken Sie auf **[Add]**, um neue Parameter hinzuzufügen.
 3. Geben Sie Werte oder Parameter ein.<br>
 Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
-Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Klicken Sie auf **[Remove]**, um die Eingabezeile zu entfernen.
 
-#### Mapping Input Tables
+### Tabellen Übergeben
 
-When connecting input data to the Xtract BAPI component, a data mapping between the input and the Xtract BAPI component is executed automatically. 
+Wenn Sie Tabellen an die Xtract BAPI Komponente übergeben, wird automatisch ein Datenmapping durchgeführt.
 
 ![BAPI table mapping](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
 
-To correctly map the data, the following requirements must be met:
+Damit die Tabellenfelder korrekt zugewiesen werden, müssen folgende Voraussetzungen erfüllt sein:
 
-- The column names of the input table must be the same as in the Xtract BAPI component.
-- The data types in the input table must be the same as in the Xtract BAPI component.
+- Die Spaltennamen der Eingangstabelle müssen mit denen in der Xtract BAPI Komponente überein stimmen.
+- Die Datentypen in der Eingangstabelle müssen mit denen in der Xtract BAPI Komponente übereinstimmen
 
-To look up column names and data types in the Xtract BAPI component, open the Tables tab and click on the ![glasses-icon](/img/content/icons/glasses.png) icon next to the table.
-
-![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
+Klicken Sie auf das ![glasses-icon](/img/content/icons/glasses.png) Symbol neben einer Tabelle, um die Spaltennamen und Datentypen in der Tabelle einzusehen.
 
 {: .box-tip }
-**Tip:** If the column names and / or datatypes of the input table and the Xtract BAPI table do not match, add a Derived Column component to convert the input data.
+**Tipp:** Wenn die Spaltennamen und / oder die Datentypen der Eingangstabelle nicht mit der Xtract BAPI Tabelle übereinstimmt, fügen Sie eine *Derived Column* Komponente hinzu, um die Eingangsdaten zu konvertieren.
 
 
 *****

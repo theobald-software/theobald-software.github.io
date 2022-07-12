@@ -9,27 +9,33 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 Import parameters represent the input values sent from the client to SAP. <br>
 In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
 
-The following example shows how to parameterize different input fields:
-
-![BAPI icons](/img/content/xis/BAPI-icons.png){:class="img-responsive"}
-
-- (1) The field **BUSINESS_OBJECT** uses a static value that is entered manually.
-- (2) The field **CONVERT_PARVW_AUART** uses a predefined value from SAP.
-- (3) The field **ORDER_HEADER_IN** contains multiple parameters that need to be defined individually.
-- (4) The field **WITHOUT_COMMIT** is set via an SSIS variable by the name *Parameter0*.
-
-The icons next to the input fields indicate how a value is 
-
-|Icon  | Description |Details | 
-| ----- | --------------- | ------------ | 
-|![sap-default](/img/content/icons/checkbox.png) | SAP default value |  If this checkbox is inactive, the default value from SAP is used. Not all fields have default values. If a default value is available, the value is displayed in a light grey color in the input field. To disable parameters that are predefined in SAP, activate the checkbox next to the parameter and leave the input field empty.|
-|![sap-default](/img/content/icons/checkbox-checked.png) | Static values | Enter values into the input field. SAP default values for the input field are automatically overwritten. When entering values of a wrong data type, the field is marked red and an error message is displayed, e.g. "Value is not numeric".|
-|![static-value](/img/content/icons/runtime-parameters-static.png) | Static values | Enter values into the input field. SAP default values for the input field are automatically overwritten. Click on the icon to switch between static input values and SSIS variables. |
-|![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) | Variables | This option is only available if SSIS variables or parameters are defined. The input must match the data type of the field. Click on the icon to switch between static input values and SSIS variables. | 
-|![edit-icon](/img/content/icons/pen.png) | Structure | This option is available if a parameter contains multiple scalar parameters. Click on the icon to edit the individual scalar parameters. Setting a single value or an SSIS variable / parameter for the whole structure is not possible. | 
-|![glasses-icon](/img/content/icons/glasses.png) | Metadata | Displays the metadata of a structure / table, e.g. column names and data types. This option is useful when mapping input data to tables, see [Mapping Input Tables](#mapping-input-table).| 
+![BAPI import parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
+
+#### Add Scalar Parameters (1)
+
+Scalar fields for inputs are usually set using the following two options:
+- A static constant value ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon).
+- An SSIS variable / parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
+
+Click on the icon next to the input field to switch between static input values and SSIS variables / parameters.
+When using variables, make sure the input matches the data type.<br>
+
+
+{: .box-note }
+**Note:** Parameters that are predefined by SAP are displayed in a light grey font. <br>
+To disable these parameters, activate the checkbox next to the parameter and leave the field empty. <br>
+
+#### Add Structures as Parameters (2)
+
+When using a structure, a value for each scalar field can be set similarly to a scalar field. 
+Setting a single value or a parameter for the whole structure is not possible.
+
+When a structure is available, you can assign structure elements (i.e. fields).<br>
+1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Structures" opens.
+2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) or assign SSIS variables / parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon) under **Values**.
+![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
 Export parameters represent the output values sent from SAP back to the client after execution of a function module. <br>
@@ -79,14 +85,13 @@ When a structure is available, you can assign structure elements (i.e. fields).<
  1. Click the ![pen](/img/content/icons/pen.png) icon to edit the table. The window "Edit Table Contents" opens.
  2. Click **[Add]** to add new set of parameters.<br>
  3. Enter values or parameters.<br>
-When using runtime parameters, make sure the input matches the data type.<br>
-When entering constant scalar values of a wrong data type, the field is marked red.<br>
+When using variables, make sure the input matches the data type.
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Click **[Remove]** to delete a row.
 
-#### Mapping Input Tables
+### Mapping Input Tables
 
-When connecting input data to the Xtract BAPI component, a data mapping between the input and the Xtract BAPI component is executed automatically. 
+When connecting tables to the Xtract BAPI component, a data mapping is executed automatically. 
 
 ![BAPI table mapping](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
 
@@ -95,9 +100,7 @@ To correctly map the data, the following requirements must be met:
 - The column names of the input table must be the same as in the Xtract BAPI component.
 - The data types in the input table must be the same as in the Xtract BAPI component.
 
-To look up column names and data types in the Xtract BAPI component, open the Tables tab and click on the ![glasses-icon](/img/content/icons/glasses.png) icon next to the table.
-
-![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
+Click on the ![glasses-icon](/img/content/icons/glasses.png) icon next to a table to look up column names and data types in the Xtract BAPI component.
 
 {: .box-tip }
 **Tip:** If the column names and / or datatypes of the input table and the Xtract BAPI table do not match, add a *Derived Column* component to convert the input data.

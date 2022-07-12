@@ -12,4 +12,3 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=skalare-parameter
 ---
 
 {% include _content/de/xis-specific/xtract-is-bapi/parameters.md %}
-
