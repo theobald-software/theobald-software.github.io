@@ -16,17 +16,16 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 #### Skalarparameter hinzufügen (1)
 
 Es gibt zwei Möglichkeiten Skalarfelder einzustellen: 
-- als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol)
-- als SSIS-Variable / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol)
+- als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol).<br>
+- als SSIS-Variable / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).<br>
 
 Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.
-
-Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
-Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.
+Wenn Sie dynamische SSIS-Variablen verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.
 
 {: .box-note }
-**Note:** Parameter, die von SAP vorausgefüllt sind, werden in einer grauen Schrift angezeigt. <br>
+**Note:** Parameter, die von SAP vorausgefüllt sind, werden in einer grauen Schrift angezeigt.
 Um diese Parameter zu deaktivieren, haken Sie die Checkbox neben dem Parameter an und lassen Sie das Feld frei.
+
 
 #### Strukturen als Parameter hinzufügen (2)
 
@@ -35,7 +34,7 @@ Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich.
 
 Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
 1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Edit Structures" öffnet sich.
-2. Geben Sie unter **Values** statische Werte oder SSIS-Variablen / Parameter ein.
+2. Geben Sie unter **Values** statische Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder SSIS-Variablen / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) ein.
 Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.<br>
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
@@ -89,6 +88,27 @@ Aktivieren Sie die Checkbox in der Ausgabespalte, um Tabellen der Ausgabe hinzuz
 2. Klicken Sie auf **[Add]**, um neue Parameter hinzuzufügen.
 3. Geben Sie Werte oder Parameter ein.<br>
 Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
-Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Klicken Sie auf **[Remove]**, um die Eingabezeile zu entfernen.
+
+### Tabellen Übergeben
+
+Wenn Sie Tabellen an die Xtract BAPI Komponente übergeben, wird automatisch ein Datenmapping durchgeführt.
+
+![BAPI table mapping](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
+
+Damit die Tabellenfelder korrekt zugewiesen werden, müssen folgende Voraussetzungen erfüllt sein:
+
+- Die Spaltennamen der Eingangstabelle müssen mit denen in der Xtract BAPI Komponente überein stimmen.
+- Die Datentypen in der Eingangstabelle müssen mit denen in der Xtract BAPI Komponente übereinstimmen
+
+Klicken Sie auf das ![glasses-icon](/img/content/icons/glasses.png) Symbol neben einer Tabelle, um die Spaltennamen und Datentypen in der Tabelle einzusehen.
+
+{: .box-tip }
+**Tipp:** Wenn die Spaltennamen und / oder die Datentypen der Eingangstabelle nicht mit der Xtract BAPI Tabelle übereinstimmt, fügen Sie eine *Derived Column* Komponente hinzu, um die Eingangsdaten zu konvertieren.
+
+
+*****
+#### Weiterführende Links
+- [How to Post Data in SAP with Xtract BAPI](https://kb.theobald-software.com/xtract-is/how-to-post-data-in-sap)
+- [Uploading CATS data by using Xtract IS BAPI](https://kb.theobald-software.com/xtract-is/uploading-cats-data-by-using-xtract-is-bapi)

@@ -16,11 +16,11 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 #### Skalarparameter hinzufügen (1)
 
 Es gibt zwei Möglichkeiten Skalarfelder einzustellen: 
-- als statischer Wert (z.B. 1141)
-- als dynamischen Wert, der über einen [Parameter](./edit-runtime-parameters) während der Laufzeit übergeben wird.
+- als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol).
+- als Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
 
-Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
-Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.
+Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und Laufzeitparametern zu wechseln.
+Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.
 
 {: .box-note }
 **Note:** Parameter, die von SAP vorausgefüllt sind, werden in einer grauen Schrift angezeigt. <br>
@@ -33,8 +33,8 @@ Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich.
 
 Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
 1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Edit Structures" öffnet sich.
-2. Geben Sie unter **Values** Werte oder Parameter ein.
-
+2. Geben Sie unter **Values** statische Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) ein.
+Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.<br>
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export-Parameter
@@ -87,6 +87,5 @@ Aktivieren Sie die Checkbox in der Ausgabespalte, um Tabellen der Ausgabe hinzuz
 2. Klicken Sie auf **[Add]**, um neue Parameter hinzuzufügen.
 3. Geben Sie Werte oder Parameter ein.<br>
 Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
-Wenn Sie konstante Skalarwerte eingeben, werden Eingaben des falschen Datentyps automatisch rot markiert.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Klicken Sie auf **[Remove]**, um die Eingabezeile zu entfernen.

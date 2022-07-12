@@ -15,11 +15,11 @@ To use the filtering function, enter text in the headers of the columns **Name**
 #### Add Scalar Parameters (1)
 
 Scalar fields for inputs are usually set using the following two options:
-- A static constant value (e.g., 1141).
-- A dynamic value set at run-time using a parameter, see [Runtime Parameters](./edit-runtime-parameters).
+- A static constant value ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon).
+- A dynamic value set at run-time ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon), see [Runtime Parameters](./edit-runtime-parameters).
 
+Click on the icon next to the input field to switch between static input values and runtime parameters.
 When using runtime parameters, make sure the input matches the data type.<br>
-When entering constant scalar values of a wrong data type, the field is marked red and an error message is displayed (e.g. "Value is not numeric").
 
 {: .box-note }
 **Note:** Parameters that are predefined by SAP are displayed in a light grey font. <br>
@@ -32,7 +32,7 @@ Setting a single value or a parameter for the whole structure is not possible.
 
 When a structure is available, you can assign structure elements (i.e. fields).<br>
 1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Structures" opens.
-2. Enter values or assign runtime parameters under **Values**.
+2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon) or assign runtime parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon) under **Values**.
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
@@ -86,7 +86,6 @@ When a structure is available, you can assign structure elements (i.e. fields).<
  2. Click **[Add]** to add new set of parameters.<br>
  3. Enter values or parameters.<br>
 When using runtime parameters, make sure the input matches the data type.<br>
-When entering constant scalar values of a wrong data type, the field is marked red.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Click **[Remove]** to delete a row.
 
