@@ -244,13 +244,7 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 This field allows entry of [script expressions](../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). This way, a folder path can be dynamically determined at extraction execution. <br>
 
-### Compression
-
-**None**<br>
-The data is transferred uncompressed and stored as a csv file.
-
-**gzip**<br>
-The data is transferred compressed and stored as a gz file. 
+{% include _content/en/xu-specific/destinations/general/compression.md %}
 
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}
 

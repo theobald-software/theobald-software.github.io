@@ -164,4 +164,6 @@ Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/
 This field allows entry of [script expressions](../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). 
 This way, a folder path can be dynamically determined at extraction execution.
 
+{% include _content/en/xu-specific/destinations/general/compression.md %}
+
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}

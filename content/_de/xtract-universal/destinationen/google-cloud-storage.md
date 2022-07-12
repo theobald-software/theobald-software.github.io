@@ -191,12 +191,6 @@ Um Extraktionsdaten an einen Speicherort innerhalb eines bestimmten Ordners in e
 Unterordner werden unterstützt und können mit der folgenden Syntax definiert werden: 
 `[Verzeichnis]/[Unterverzeichnis_1]/[Unterverzeichnis_2]/…`
 
-### Compression
-
-**None**<br>
-Die Daten werden unkomprimiert übertragen und als csv-Datei abgelegt.
-
-**gzip**<br>
-Die Daten werden komprimiert übertragen und  als gz-Datei abgelegt. 
+{% include _content/de/xu-specific/destinationen/general/compression.md %}
 
 {% include _content/de/xu-specific/destinationen/general/file-splitting.md %}

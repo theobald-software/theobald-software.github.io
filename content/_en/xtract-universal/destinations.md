@@ -83,7 +83,6 @@ These include the following destinations:
 - Power BI connector
 - OData web service
 
-If the destination supports the gzip http data compression, Xtract Universal will send the data to the destination client in a gzip compressed format.
 
 #### Push Destinations
 

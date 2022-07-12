@@ -165,4 +165,6 @@ Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werde
 Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](../fortgeschrittene-techniken/script-ausdruecke#skript-ausdrücke-als-dynamische-ordnerpfade-verwenden) definiert werden. 
 Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt.
 
+{% include _content/de/xu-specific/destinationen/general/compression.md %}
+
 {% include _content/de/xu-specific/destinationen/general/file-splitting.md %}

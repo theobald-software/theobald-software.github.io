@@ -83,8 +83,6 @@ Folgende Destinationen sind Pull-Destinationen:
 - Power BI connector
 - OData Webservice 
 
-Sofern die Zielumgebung http-Datenkomprimierung via gzip unterstützt, sendet Xtract Universal die Daten als gzip komprimierten http stream.
-
 #### Push-Destinationen
 
 Extraktionen mit Push-Destinationen liefern Daten proaktiv in die Zielumgebung. Der Extraktionsprozess wird in Xtract Universal gestartet, z.B. durch einen [Scheduler](./extraktionen-ausfuehren-und-einplanen/call-via-scheduler).<br>

@@ -196,12 +196,6 @@ To write extraction data to a location within a specific folder in a Google Clou
 Subfolders are supported and can be defined using the following syntax: 
 `[folder]/[subfolder_1]/[subfolder_2]/…`
 
-### Compression
-
-**None**<br>
-The data is transferred uncompressed and stored as a csv file.
-
-**gzip**<br>
-The data is transferred compressed and stored as a gz file. 
+{% include _content/en/xu-specific/destinations/general/compression.md %}
 
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}
