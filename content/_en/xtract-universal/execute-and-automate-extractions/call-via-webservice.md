@@ -14,7 +14,7 @@ For testing purposes extractions can be called via web service.
 Calling extractions is usually done via script, scheduler or BI-tool. 
 
 ### URL Format
-To call an extraction via web services, use the following URL-format: `<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`
+To call an extraction via web services, use the following URL-format: `<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`.
 
  Format | Description
 :----------- | :------------
@@ -54,6 +54,9 @@ Status code | Destination type | Description
 *200* | Push | The extraction log is returned in CSV format.
 
 ### Options for Calling Extractions
+
+Multiple options are available to use with the URL-format <br>
+`<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`.
 
 #### Suppress Output of Extraction Logs
 The log output of a synchronous called extraction with a push destination can be suppressed using the parameter `&quiet-push=true`.<br>

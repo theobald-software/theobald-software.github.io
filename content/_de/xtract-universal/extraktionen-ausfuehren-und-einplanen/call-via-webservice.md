@@ -56,6 +56,9 @@ Status-Code | Destinationstyp | Beschreibung
 
 ### Weitere Optionen zum Aufruf einer Extraktion
 
+Für den Aufruf einer Extraktion sind mehrere Optionen für das URL-Format verfügbar. <br>
+`<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`
+
 #### Log-Ausgabe einer Extraktion unterdrücken 
 Mit dem Parameter `&quiet-push=true` kann man die Log-Ausgabe unterdrücken, wenn die Extraktion synchron aufgerufen wird und mit einer Push-Destination verbunden ist. <br>
 Beispiel: `http://todd.theobald.local:8065/?name=Plants&quiet-push=true`
