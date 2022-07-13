@@ -70,6 +70,10 @@ Example: `http://todd.theobald.local:8065/?name=Plants&wait=false`
 In this case the timestamp (4) of the extraction is returned in the HTTP body.
 ![Webservice Call async](/img/content/xu/automation/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
 
+#### Abort Extraction
+A running extraction can be aborted using the `abort` command before entering the extraction name.<br>
+Example: `http://todd.theobald.local:8065/abort?name=Plants`
+
 ****
 #### Related Links
 - [Metadata access via HTTP-JSON](../advanced-techniques/metadata-access-via-http-json)

@@ -71,8 +71,11 @@ Beispiel: `http://todd.theobald.local:8065/?name=Plants&wait=false`
 In diesem Fall wird der Zeitstempel (4) der Ausführung im HTTP-Body zurückgegeben.
 ![Webservice Call async](/img/content/xu/automation/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
 
+#### Extraktionen Abbrechen
+Eine laufende Extraktion kann über den Befehl `abort` abgebrochen werden.<br>
+Beispiel: `http://todd.theobald.local:8065/abort?name=Plants`
+
 ****
 #### Weiterführende Links
 - [Metadaten-Zugriff über HTTP-JSON](../fortgeschrittene-techniken/metadata-zugriff-ueber-http-json)
 - [Log-Zugriff über Web-Service](../logging/log-zugriff-ueber-http)
-
