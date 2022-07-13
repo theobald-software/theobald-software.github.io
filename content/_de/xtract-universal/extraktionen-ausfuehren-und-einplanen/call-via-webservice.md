@@ -13,6 +13,7 @@ Sie können eine Extraktion via Webservice-Aufruf ausführen.
 Der Aufruf einer Extraktion erfolgt in der Regel über ein Skript, Scheduler oder BI-Tool. 
 Zu Testzwecken kann der Aufruf wie beim XU-Designer auch aus einem Webbrowser erfolgen.
 
+### URL-Format
 Der Aufruf erfolgt über eine URL in folgendem Fomat: `<Protokoll>://<HOST oder IP-Adresse>:<Port>/?name=<Name der Extraktion>{&<parameter_i>=<wert_i>}`
 
  Format | Beschreibung
