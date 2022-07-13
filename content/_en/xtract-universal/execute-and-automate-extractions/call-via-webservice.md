@@ -74,6 +74,10 @@ In this case the timestamp (4) of the extraction is returned in the HTTP body.
 A running extraction can be aborted using the `abort` command before entering the extraction name.<br>
 Example: `http://todd.theobald.local:8065/abort?name=Plants`
 
+If the abortion is successfull, a confirmation message (5) is returned in the HTTP body.
+![Webservice Call abort](/img/content/xu/automation/webservice/xu_call_webservice_abort.png){:class="img-responsive"}
+
+
 ****
 #### Related Links
 - [Metadata access via HTTP-JSON](../advanced-techniques/metadata-access-via-http-json)

@@ -72,8 +72,11 @@ In diesem Fall wird der Zeitstempel (4) der Ausführung im HTTP-Body zurückgege
 ![Webservice Call async](/img/content/xu/automation/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
 
 #### Extraktionen Abbrechen
-Eine laufende Extraktion kann über den Befehl `abort` abgebrochen werden.<br>
+Eine laufende Extraktion kann über den Befehl `abort` abgebrochen werden. Der Befehl wird vor dem Extraktionsnamen aufgerufen. <br>
 Beispiel: `http://todd.theobald.local:8065/abort?name=Plants`
+
+Wenn der Abbruch erfolgreich ist, wird eine entsprechende Meldung (5) im HTTP-Body zurückgegeben.<br>
+![Webservice Call abort](/img/content/xu/automation/webservice/xu_call_webservice_abort.png){:class="img-responsive"}
 
 ****
 #### Weiterführende Links
