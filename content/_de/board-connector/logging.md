@@ -40,7 +40,7 @@ Jeder Log-Eintrag ist einem so genannten Log-Level zugewiesen. Es gibt folgende 
 
 Um die Prozesse von BOARD Connector besser zu verstehen, lesen Sie die in verständlicher Sprache verfassten Logs.
 Das [Beispiel eines lesbaren Logs] (https://help.theobald-software.com/de/xtract-universal/logging#logs-lesen---extraktions-log) kann von Xtract Universal übernommen werden, da die Prozeduren ähnlich sind. 
-Der einzige Unterschied besteht darin, dass BOARD Connector keine Destinationen hat und die Daten immer nach BOARD geschrieben werden. 
+Der einzige Unterschied besteht darin, dass BOARD Connector keine Destinationen hat und die Daten immer nach Board geschrieben werden. 
 
 ****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

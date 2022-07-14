@@ -1,8 +1,8 @@
 ---
 ref: bc-getting-started-04
 layout: page
-title: Schritt 5 - Eine Extraktion in BOARD laden
-description: Schritt 5 - Eine Extraktion in BOARD laden
+title: Schritt 5 - Eine Extraktion in Board laden
+description: Schritt 5 - Eine Extraktion in Board laden
 product: board-connector
 parent: erste-schritte
 permalink: /:collection/:path
@@ -11,10 +11,10 @@ lang: de_DE
 progressstate: 5
 ---
 
-Extraktionen können mit dem Data Reader in BOARD geladen werden. Im folgenden Beispiel wird eine Extraktion "Plants" im BOARD Designer erstellt. 
+Extraktionen können mit dem Data Reader in Board geladen werden. Im folgenden Beispiel wird eine Extraktion "Plants" im Board Designer erstellt. 
 Die Extraktion "Plants" extrahiert die Tabelle Plants *T001W* aus SAP.  
 
-1. In BOARD, wählen Sie **[+ DATA READER]**, um einen neuen Data Reader anzulegen. Geben Sie einen Namen ein, im dargestellten Beispiel "Plants"; und eine Gruppe, im dargestellten Beispiel "Main Group". Wählen Sie den Quelltyp "SAP".
+1. In Board, wählen Sie **[+ DATA READER]**, um einen neuen Data Reader anzulegen. Geben Sie einen Namen ein, im dargestellten Beispiel "Plants"; und eine Gruppe, im dargestellten Beispiel "Main Group". Wählen Sie den Quelltyp "SAP".
 ![Load-Extraction-01](/img/content/board/Load-Extraction-01.png)
 2. Erstellen Sie eine neue Verbindung für den BOARD Connector Server. Optional können Sie auch eine bestehende Verbindung auswählen. Bestimmen Sie einen Namen im Feld *Name* und die *URL* des BOARD Connector Servers (z. B. localhost:8098).
 3. Klicken Sie auf das Symbol "Verbinden" (1), um eine Liste von Extraktionen aus dem BOARD Connector zu ziehen.
@@ -26,7 +26,7 @@ Weitere Informationen zu URL-Parametern finden Sie unter [Dynamische Verbindungs
 6. Klicken Sie auf **[Browse Table]**, um eine Vorschau der extrahierten SAP-Daten zu erhalten. <br>
 **Hinweis:** Die Vorschau zeigt je nach Art der Extraktion echte oder Dummy-Daten an.
 ![Load-Extraction-03](/img/content/board/Load-Extraction-03.png)
-7. Klicken Sie auf **[MAPPING]**, um mit dem Mapping der Felder der Extraktion mit existierenden BOARD-Entitäten fortzufahren. 
+7. Klicken Sie auf **[MAPPING]**, um mit dem Mapping der Felder der Extraktion mit existierenden Board-Entitäten fortzufahren. 
 8. Wählen Sie die entsprechenden Felder für die Zuordnung aus (z. B. WERKS, NAME1, usw.).
 ![Load-Extraction-04](/img/content/board/Load-Extraction-04.png)
 9. Mappen Sie in der Spalte **Position** jedes Feld der Entität auf ein SAP-Feld. Wählen Sie den richtigen Modus für *Insert* oder *Update*. Im abgebildeten Beispiel ist für alle Felder der Modus "ADD NEW ITEM" ausgewählt.
@@ -35,4 +35,4 @@ Weitere Informationen zu URL-Parametern finden Sie unter [Dynamische Verbindungs
 11. Führen Sie den Data Reader aus, um die SAP-Daten zu extrahieren. <br>
 ![Load-Extraction-06](/img/content/board/Load-Extraction-06.png)
 ![Load-Extraction-06](/img/content/board/Load-Extraction-07.png)
-Nach dem Ausführen des Data Readers zeigt das BOARD Protokoll an, wie viele Zeilen geladen wurden. <br>
+Nach dem Ausführen des Data Readers zeigt das Board Protokoll an, wie viele Zeilen geladen wurden. <br>

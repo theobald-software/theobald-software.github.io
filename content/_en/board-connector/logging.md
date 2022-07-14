@@ -39,7 +39,7 @@ Each log entry is assigned to a so-called log level. There are the following log
 
 To better understand the procedures of BOARD Connector, read the logs written in understandable language.
 The [example log](https://help.theobald-software.com/en/xtract-universal/logging#reading-logs---extraction-log) from Xtract Universal can be used as a reference, as the procedures are similar to BOARD Connector. 
-The only difference is that BOARD Connector does not have destinations and data is always written to BOARD. 
+The only difference is that BOARD Connector does not have destinations and data is always written to Board. 
 
 *****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

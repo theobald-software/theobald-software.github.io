@@ -21,9 +21,9 @@ Listener Process| Default Port | Comment
 *BCAPIServer.exe* | 8098 | port can not be changed, no encryption
 
 The server processes use different ports for communication.
-- The web server accepts extraction calls from the BOARD server via HTTP(S).
+- The web server accepts extraction calls from the Board server via HTTP(S).
 - The configuration server communicates with the BOARD Connector Designer.
-- The API Server makes the extractions' metadata available to the BOARD server's data reader.
+- The API Server makes the extractions' metadata available to the Board server's data reader.
 
 {: .box-warning }
 **Warning! Changing the default ports**<br>

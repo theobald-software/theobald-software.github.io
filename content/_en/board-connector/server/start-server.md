@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=start-server
 ---
 
-When executing *BOARD ConnectorSetup.exe* the BOARD Connector server is installed and started as a standard Windows..
+When executing *BOARDConnectorSetup.exe* the BOARD Connector server is installed and started as a standard Windows..
 
 Make sure to mark the option "Server > Install Service" during the [Installation](../introduction/installation-and-update).
 

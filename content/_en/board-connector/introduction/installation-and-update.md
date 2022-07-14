@@ -19,7 +19,7 @@ progressstate: 5
 
 ### Setup
 
-*BOARD ConnectorSetup.exe* is an industry standard setup.  Execute the *BOARD ConnectorSetup.exe* file and follow the instructions of the setup.
+*BOARDConnectorSetup.exe* is an industry standard setup.  Execute the *BOARDConnectorSetup.exe* file and follow the instructions of the setup.
 
 When starting the installation program, optional components can be selected during the setup. 
 ![BC-Setup](/img/content/board/BC_Setup_2.png){:class="img-responsive"}

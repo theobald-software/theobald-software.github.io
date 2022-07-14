@@ -19,7 +19,7 @@ progressstate: 5
 
 ### Setup
 
-Die `BOARD ConnectorSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei *BOARD ConnectorSetup.exe* aus und folgen Sie den Anweisungen des Setups.
+Die `BOARDConnectorSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei *BOARDConnectorSetup.exe* aus und folgen Sie den Anweisungen des Setups.
 
 Beim Starten des Setups können die optionalen Komponenten (1) für die Installation ausgewählt werden. Bei der Auswahl der Komponenten werden die Optionsdetails im "Description" Feld angezeigt (2). 
 
@@ -55,7 +55,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von BOARD Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
 | BOARDConnectorSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](../fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).|
 | Eula_BOARD Connector.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software BOARD Connector.|
-| BOARD ConnectorLicense.json |  Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
+| BOARDConnectorLicense.json |  Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
 
 {: .box-note }

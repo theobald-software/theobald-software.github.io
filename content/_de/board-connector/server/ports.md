@@ -23,7 +23,7 @@ Listener Prozesse| Standard Port | Beschreibung
 Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation. 
 - Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
 - Der Configuration-Server kommuniziert mit dem BOARD Connector Designer.
-- Der API-Server stellt dem Datareader des BOARD Servers die Metadaten der Extraktion zur Verfügung.
+- Der API-Server stellt dem Datareader des Board Servers die Metadaten der Extraktion zur Verfügung.
 
 {: .box-warning }
 **Warnung! Änderung der Standardports**<br>

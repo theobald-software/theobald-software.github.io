@@ -18,8 +18,8 @@ A regular license is provided after purchasing the product in [My Theobald Softw
 If you run BOARD Connector Designer and BOARD Connector Server on different machines, it is only necessary to replace the license on the server.
  
 
-### Installing the BOARD Connector license - BOARD ConnectorLicense.json
-For installing the regular license, place the regular BOARD ConnectorLicense.json into the following directory of the server: <br>
+### Installing the BOARD Connector license - BOARDConnectorLicense.json
+For installing the regular license, place the regular BOARDConnectorLicense.json into the following directory of the server: <br>
 `C:\Program Files\BOARDConnector`
  <br>
  ![XU_license](/img/content/BOARDConnector_License_Folder.png ){:class="img-responsive"}

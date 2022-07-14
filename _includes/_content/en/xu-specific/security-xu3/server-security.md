@@ -16,7 +16,7 @@ If the certificate is not listed in the Windows certificate store, [install the 
 
 ### Restrict access to Windows AD users (Kerberos authentication) 
 
-1. Assign a Windows service account under which the Xtract Universal/Board Connector service runs. See [Running a service under a Windows service account](./server-security#running-a-service-under-a-windows-service-account).
+1. Assign a Windows service account under which the Xtract Universal/BOARD Connector service runs. See [Running a service under a Windows service account](./server-security#running-a-service-under-a-windows-service-account).
 2. Activate TLS encryption as outlined in [Prerequisite: Activating TLS encryption](./server-security#prerequisite-activating-tls-encryption).
 3. Navigate to the menu bar and select **Server > Settings**. In the *Web Server* tab select *HTTPS - Restricted to AD users with Designer read access*.
 4. Switch to the *Configuration Server* tab.

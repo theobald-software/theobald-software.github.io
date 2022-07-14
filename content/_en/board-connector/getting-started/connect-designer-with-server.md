@@ -35,7 +35,7 @@ Once logged in, you can activate or deactivate methods of authentication. <br>
 
 ****
 #### Related Links
-- [BOARD Manual](https://www.boardmanual.com/)
+- [Board Manual](https://www.boardmanual.com/)
 - [BOARD Connector Server](../server)
 
 

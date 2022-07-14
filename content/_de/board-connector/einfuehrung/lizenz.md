@@ -18,8 +18,8 @@ Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theo
 Wenn Sie den BOARD Connector Designer und den  BOARD Connector Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
  
 
-### Installieren von BOARD Connector Lizenz - BOARD ConnectorLicense.json
-Um die reguläre Lizenz zu installieren, legen Sie die BOARD ConnectorLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:<br>
+### Installieren von BOARD Connector Lizenz - BOARDConnectorLicense.json
+Um die reguläre Lizenz zu installieren, legen Sie die BOARDConnectorLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:<br>
 `C:\Program Files\BOARDConnector`
  <br>
  ![BC_license](/img/content/BOARDConnector_License_Folder.png ){:class="img-responsive"}

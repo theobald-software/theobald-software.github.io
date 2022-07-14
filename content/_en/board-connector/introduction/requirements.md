@@ -10,7 +10,7 @@ weight: 1
 lang: en_GB
 Progressstate: 5
 ---
-### BOARD Server
+### Board Server
 
 - Version 7.3.1 or higher
 

@@ -12,7 +12,7 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=serversicherheit
 ---
 ### Über diese Seite
 
-Dieser Abschnitt behandelt den eingeschränkten Zugriff zu dem integrierten Webserver von Xtract Universal/Board Connector.
+Dieser Abschnitt behandelt den eingeschränkten Zugriff zu dem integrierten Webserver von Xtract Universal/BOARD Connector.
 Durch Zugriffsbeschränkungen auf den Webserver können nur ausgewählte Benutzer Extraktionen ausführen.
 
 Es gibt zwei Typen von [Benutzern und Benutzergruppen](benutzerverwaltung#benutzer-und-benutzergruppen), auf die der Zugriff eingeschränkt werden kann:
@@ -23,7 +23,7 @@ Wenn der Zugang zum Webserver eingeschränkt ist, müssen zum Ausführen einer E
 
 {: .box-note}
 **Hinweis**: Die Angabe von Benutzerdaten für Basic Authentisierung wird im SAP Data Reader des Board-Servers (Stand Version 11.3) nicht unterstützt.<br> 
-Eine Absicherung des Web-Zugriffs auf die im Board Connector angelegten Extraktionen kann auf Netzwerkebene, z.B. durch eine Firewall, erfolgen.
+Eine Absicherung des Web-Zugriffs auf die im BOARD Connector angelegten Extraktionen kann auf Netzwerkebene, z.B. durch eine Firewall, erfolgen.
 
 {% include _content/de/xu-specific/sicherheit/serversicherheit1.md %}
 

@@ -13,7 +13,7 @@ old_url: /BOARD-Connector-DE/
 ---
 Willkommen in der Online Help vom BOARD Connector.
 
-Der BOARD Connector ist ein SAP Connector, der diverse SAP Objekte im Pull-Verfahren im BOARD Server verfügbar macht. 
+Der BOARD Connector ist ein SAP Connector, der diverse SAP Objekte im Pull-Verfahren im Board Server verfügbar macht. 
 
 ### Verfügbare Komponenten
 

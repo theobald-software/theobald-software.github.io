@@ -33,6 +33,6 @@ Sobald Sie angemeldet sind, können Sie die Authentifizierungsmethoden aktiviere
 
 ****
 #### Weiterführende Links
-- [BOARD Manual](https://www.boardmanual.com/)
+- [Board Manual](https://www.boardmanual.com/)
 - [BOARD Connector Server](../server)
 
