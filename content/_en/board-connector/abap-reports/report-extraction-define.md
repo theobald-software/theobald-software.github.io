@@ -8,7 +8,7 @@ parent: abap-reports
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=define-a-report-extraction
+old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-report-extraction
 ---
 The following section shows how to use the Report component.
 

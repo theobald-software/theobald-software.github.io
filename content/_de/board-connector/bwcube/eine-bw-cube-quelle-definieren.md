@@ -8,7 +8,7 @@ parent: bw-infocube-und-bex-queries
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=eine-bw-cube-quelle-definieren
+old_url: /BOARD-Connector-DE/default.aspx?pageid=eine-bw-cube-quelle-definieren
 ---
 Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.
 

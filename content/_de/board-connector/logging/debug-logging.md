@@ -8,6 +8,6 @@ parent: logging
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=debug-logging
+old_url: /BOARD-Connector-DE/default.aspx?pageid=debug-logging
 ---
 {% include _content/de/xu-specific/logging/debug-logging.md %}

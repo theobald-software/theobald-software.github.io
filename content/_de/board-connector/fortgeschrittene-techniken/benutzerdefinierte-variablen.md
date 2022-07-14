@@ -8,7 +8,7 @@ parent: fortgeschrittene-techniken
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=benutzerdefinierte-variablen
+old_url: /BOARD-Connector-DE/default.aspx?pageid=benutzerdefinierte-variablen
 ---
 
 Variablen können als benutzerdefinierte (Custom) Laufzeitparameter an Extraktionen übergeben werden.

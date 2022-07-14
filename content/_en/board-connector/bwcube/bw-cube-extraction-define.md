@@ -8,7 +8,7 @@ parent: bw-infocubes-and-bex-queries
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=define-a-bw-cube-extraction
+old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-bw-cube-extraction
 ---
 The following section shows how to use the BW Cube component.
 

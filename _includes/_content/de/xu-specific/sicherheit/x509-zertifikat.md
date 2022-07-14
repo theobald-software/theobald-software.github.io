@@ -12,7 +12,7 @@ Es gibt zwei Ansätze für die Erstellung eines X.509-Zertifikats:
 
 Lassen Sie ein TLS Zertifikat von Ihrem IT-Netzwerk-Team unter Beachtung folgender Punkte erstellen:
 
-- In der Zertifikatseigenschaft “Subject Alternative Name” muss der DNS Name des Servers stehen, auf dem der Windows-Service (z.B. Xtract Universal Service oder Board Connector Service) läuft.
+- In der Zertifikatseigenschaft “Subject Alternative Name” muss der DNS Name des Servers stehen, auf dem der Windows-Service (z.B. Xtract Universal Service oder BOARD Connector Service) läuft.
 - Das Zertifikat muss im [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) auf dem Server hinterlegt werden, auf dem der Windows-Service läuft.<br>
 - Das Zertifikat muss den Hostnamen des Servers in der Common-Name (CN) Eigenschaft enthalten. 
 

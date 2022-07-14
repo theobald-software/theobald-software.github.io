@@ -10,12 +10,12 @@ weight: 7
 lang: de_DE
 ---
 
-### Download von Board Connector
+### Download von BOARD Connector
 
 Sie können eine Testversion von der [Theobald Software-Website](https://theobald-software.com/en/download-trial/) herunterladen und diese 30 Tage lang testen.
 Die Testversion ist nur zeitlich begrenzt und funktioniert ansonsten uneingeschränkt.
 
-### Evaluieren von Board Connector
+### Evaluieren von BOARD Connector
 Während der Evaluierungsphase erhalten Sie garantiert eine uneingeschränkte Unterstützung durch das Theobald Software Support-Team.
 Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit per E-Mail an Theobald Software wenden: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)

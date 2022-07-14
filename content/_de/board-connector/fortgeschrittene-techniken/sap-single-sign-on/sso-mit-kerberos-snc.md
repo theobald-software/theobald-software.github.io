@@ -23,14 +23,14 @@ ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen, dabei muss
 
 {: .box-note }
 **Hinweis:** Überprüfen Sie die Standardports in Abhängigkeit von Ihrem Produkt. Der Standart HTTPS-Port ist *8165* bei Xtract Universal und
-*8197* bei Board Connector .
+*8197* bei BOARD Connector .
 
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
 ### Konfiguration vom Windows AD Dienstkonto
-Wenn SSO mit Kerberos SNC verwendet wird, muss der Board Connector Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
+Wenn SSO mit Kerberos SNC verwendet wird, muss der BOARD Connector Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
 Die Vorgehensweise dafür entspricht dem des XU-Dienstes unter [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../../../xtract-universal/fortgeschrittene-techniken/service-account).
 
 

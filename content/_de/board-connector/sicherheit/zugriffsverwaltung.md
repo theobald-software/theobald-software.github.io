@@ -8,7 +8,7 @@ parent: sicherheit
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=zugriffsverwaltung
+old_url: /BOARD-Connector-DE/default.aspx?pageid=zugriffsverwaltung
 Progressstate: 5
 ---
 

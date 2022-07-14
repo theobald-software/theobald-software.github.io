@@ -8,7 +8,7 @@ parent: logging
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=extraktion-logging
+old_url: /BOARD-Connector-DE/default.aspx?pageid=extraktion-logging
 progressstate: 5
 ---
 

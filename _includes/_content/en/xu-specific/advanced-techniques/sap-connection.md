@@ -68,7 +68,7 @@ Caching the result of extractions is inactive.
 ![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
 
 1. Check the SAP parameter *snc/gssapi_lib* to determine, which library is used for encryption in your SAP system.
-Your SAP Basis has to import and configure the same library on the application server and on the machine that runs Xtract Universal or Board Connector.
+Your SAP Basis has to import and configure the same library on the application server and on the machine that runs Xtract Universal or BOARD Connector.
 2. Enter the complete path to the library location in the **SNC library** field e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
 3. Enter the SAP **Partner Name** configured for the SAP application server e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 

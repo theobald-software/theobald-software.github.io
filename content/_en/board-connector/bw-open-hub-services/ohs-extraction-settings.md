@@ -8,6 +8,6 @@ parent: bw-open-hub-services
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=ohs-extraction-settings
+old_url: /BOARD-Connector-EN/default.aspx?pageid=ohs-extraction-settings
 ---
 {% include _content/en/bw-open-hub-services/open-hub-services-extraction-settings.md %}

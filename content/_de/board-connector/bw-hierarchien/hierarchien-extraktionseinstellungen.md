@@ -8,6 +8,6 @@ parent: bw-hierarchien
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=hierarchien-extraktionseinstellungen
+old_url: /BOARD-Connector-DE/default.aspx?pageid=hierarchien-extraktionseinstellungen
 ---
 {% include _content/de/bw-hierarchien/hierarchie-extraktionseinstellungen.md %}

@@ -1,7 +1,7 @@
 ---
 ref: board-connector-03
 layout: page
-title: Introduction to Board Connector
+title: Introduction to BOARD Connector
 description: Introduction
 product: board-connector
 parent: board-connector
@@ -14,10 +14,10 @@ progressstate: 5
 
 ### Basic Functionality - Architecture
 
-Board Connector for SAP is a middleware component to extract data from SAP systems and load it into Board. Extractions are the main entities in
- Board Connector. An [extraction](./getting-started/define-a-table-extraction) is a combination of a [connection to source (SAP system)](./introduction/sap-connection), a connection to Board as the destination and the target environment; and a defined extraction type (e.g., [Table](./table)).
+BOARD Connector for SAP is a middleware component to extract data from SAP systems and load it into BOARD. Extractions are the main entities in
+ BOARD Connector. An [extraction](./getting-started/define-a-table-extraction) is a combination of a [connection to source (SAP system)](./introduction/sap-connection), a connection to BOARD as the destination and the target environment; and a defined extraction type (e.g., [Table](./table)).
 
-Board Connector consists of two components:
+BOARD Connector consists of two components:
 
 - Designer to design and configure extractions
 - Server to execute extractions

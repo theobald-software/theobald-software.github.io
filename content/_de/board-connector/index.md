@@ -1,28 +1,28 @@
 ---
 ref: board-connector-01
 layout: page
-title: Board Connector
-description: Board Connector main page
+title: BOARD Connector
+description: BOARD Connector main page
 product: board-connector
 parent: home
 childidentifier: board-connector
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Board-Connector-DE/
+old_url: /BOARD-Connector-DE/
 ---
-Willkommen in der Online Help vom Board Connector.
+Willkommen in der Online Help vom BOARD Connector.
 
-Der Board Connector ist ein SAP Connector, der diverse SAP Objekte im Pull-Verfahren im Board Server verfügbar macht. 
+Der BOARD Connector ist ein SAP Connector, der diverse SAP Objekte im Pull-Verfahren im BOARD Server verfügbar macht. 
 
 ### Verfügbare Komponenten
 
 
 In der folgenen Übersicht finden Sie, welche Komponente für die Datenextraktion aus einem SAP-System verwendet werden können. 
-![Board Connector-architecture](/img/content/board/Board.png)
+![BOARD Connector-architecture](/img/content/board/Board.png)
 
 ### Extraktionstypen
-Board Connector bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
+BOARD Connector bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 
 Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz der Komponenten:
 
@@ -54,6 +54,6 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 **Hinweis:** Weitere Szenarien und Kombinationen sind möglich.
 
 
-Weitere Informationen zu den Funktionen von Board Connector finden Sie in den folgenden Abschnitten:
+Weitere Informationen zu den Funktionen von BOARD Connector finden Sie in den folgenden Abschnitten:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

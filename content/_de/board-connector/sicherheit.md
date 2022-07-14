@@ -9,7 +9,7 @@ childidentifier: sicherheit
 permalink: /:collection/:path
 weight: 9
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=sicherheit
+old_url: /BOARD-Connector-DE/default.aspx?pageid=sicherheit
 progressstate: 5
 ---
 

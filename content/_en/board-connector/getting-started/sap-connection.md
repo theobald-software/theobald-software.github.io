@@ -10,7 +10,7 @@ weight: 2
 redirect_from:
   - en/board-connector/introduction/sap-connection
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=sap-connection
+old_url: /BOARD-Connector-EN/default.aspx?pageid=sap-connection
 ---	
 
 {: .box-warning}

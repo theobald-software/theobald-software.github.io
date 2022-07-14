@@ -8,7 +8,7 @@ parent: advanced-techniques
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=user-defined-variables
+old_url: /BOARD-Connector-EN/default.aspx?pageid=user-defined-variables
 ---
 
 Variables can be set as user-defined (custom) runtime parameters of an extraction.

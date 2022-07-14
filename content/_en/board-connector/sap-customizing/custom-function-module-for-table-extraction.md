@@ -8,7 +8,7 @@ parent: sap-customizing
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=SAPCustomizing-EN:custom-function-module-for-table-compression
+old_url: /BOARD-Connector-EN/default.aspx?pageid=SAPCustomizing-EN:custom-function-module-for-table-compression
 ---
 
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}

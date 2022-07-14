@@ -1,18 +1,18 @@
 ---
 ref: bc-security-05
 layout: page
-title: Migration to Board Connector Version 4.x
+title: Migration to BOARD Connector Version 4.x
 description: Migration from BC 2.x and BC 3.x to BC 4.x
 product: board-connector
 parent: security
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=user-management
+old_url: /BOARD-Connector-EN/default.aspx?pageid=user-management
 progressstate: 5
 ---
 
-There are two ways of upgrading the product version from Board Connector version 2.x and 3.x to version 4.x:
+There are two ways of upgrading the product version from BOARD Connector version 2.x and 3.x to version 4.x:
 - Upgrade during installation
 - Manual upgrade
 

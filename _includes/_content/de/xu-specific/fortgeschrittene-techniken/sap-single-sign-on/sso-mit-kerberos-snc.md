@@ -25,7 +25,7 @@ Für weitere Informationen zu SNC, siehe [SAP Hilfe: SNC](https://help.sap.com/d
 
 {: .box-note }
 **Hinweis:** Überprüfen Sie die Standardports in Abhängigkeit von Ihrem Produkt. Der Standard HTTPS-Port ist *8165* bei Xtract Universal und
-*8197* bei Board Connector .
+*8197* bei BOARD Connector .
 
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}

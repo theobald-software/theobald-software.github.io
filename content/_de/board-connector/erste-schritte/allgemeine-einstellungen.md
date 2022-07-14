@@ -8,7 +8,7 @@ parent: erste-schritte
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=allgemeine-einstellungen
+old_url: /BOARD-Connector-DE/default.aspx?pageid=allgemeine-einstellungen
 progressstate: 5
 ---
 
@@ -34,8 +34,8 @@ Der Tab "Misc." besteht aus zwei Unterabschnitten:
 
 **Cache results** (1)
 
-Board zieht die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
- so dass Board die Daten aus dem Cache und nicht aus dem SAP zieht.
+BOARD zieht die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
+ so dass BOARD die Daten aus dem Cache und nicht aus dem SAP zieht.
 Dies erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
  Wenn dieses Verhalten nicht erwünscht ist (z.B. weil die Daten immer zu 100% aktuell sein müssen), muss die Cache-Option explizit ausgeschaltet werden.
 

@@ -8,7 +8,7 @@ parent: server
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=server-einstellungen
+old_url: /BOARD-Connector-DE/default.aspx?pageid=server-einstellungen
 ---
 
 ### Servereinstellungen öffnen
@@ -67,14 +67,14 @@ Siehe *HTTPS - Unrestricted*. Darüber hinaus ermöglicht diese Einstellung eine
 Definiert das maximale Alter der [Webserver-Logdateien](../logging/log-zugriff-ueber-designer#server-logs-run) in Tagen. Danach werden die Logdateien gelöscht. 
 
 **Enable setup distribution for clients**<br>
-Legt fest, ob das Setup der Board Connector Version, die auf dem Server läuft, vom Server heruntergeladen werden kann.<br>
+Legt fest, ob das Setup der BOARD Connector Version, die auf dem Server läuft, vom Server heruntergeladen werden kann.<br>
 Wenn man sich mit einer älteren Designer-Version an einem neueren Server anmeldet und diese Option aktiviert ist,
 fragt der Designer, ob man das neuere Setup herunterladen möchte.
 
 #### Result cache
 
 **Target directory**<br>
-Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Installationsverszeichnis von Board Connector: <br>
+Definiert das Verzeichnis, in dem Extraktionen gepuffert werden. Standardmäßig ausgewählt ist der result-cache Ordner im Installationsverszeichnis von BOARD Connector: <br>
 `C:\Program Files\BOARDConnector\result-cache`.
 
 **Max. cached runs**<br>

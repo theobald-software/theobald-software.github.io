@@ -23,14 +23,14 @@ ABAP application server has to run on a Windows OS and SNC with Kerberos encrypt
 3. Click **[OK]** to confirm (3)<br>
 
 {: .box-note }
-**Note:** Make sure to check the default ports depending on your product. HTTPS port *8165* is e.g., set up by default in Xtract Universal. Board Connector's default HTTPS port *8197*.
+**Note:** Make sure to check the default ports depending on your product. HTTPS port *8165* is e.g., set up by default in Xtract Universal. BOARD Connector's default HTTPS port *8197*.
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 
 
 ### Configuration of Windows AD service account
-When using SSO with Kerberos SNC, the Board Connector service must run under a dedicated service account. 
-The procedure to run the Board Connector service under a Windows service account is the same as [Running an Xtract Universal Service under a Windows Service Account](../../../xtract-universal/advanced-techniques/service-account).
+When using SSO with Kerberos SNC, the BOARD Connector service must run under a dedicated service account. 
+The procedure to run the BOARD Connector service under a Windows service account is the same as [Running an Xtract Universal Service under a Windows Service Account](../../../xtract-universal/advanced-techniques/service-account).
 
 ### Server Settings
 

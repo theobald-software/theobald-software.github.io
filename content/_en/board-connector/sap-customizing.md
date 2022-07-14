@@ -9,7 +9,7 @@ childidentifier: sap-customizing
 permalink: /:collection/:path
 weight: 21
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
+old_url: /BOARD-Connector-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
 
 {% include _content/en/sap-customizing.md  %}

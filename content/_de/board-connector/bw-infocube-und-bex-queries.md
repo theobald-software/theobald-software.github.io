@@ -9,9 +9,9 @@ childidentifier: bw-infocube-und-bex-queries
 permalink: /:collection/:path
 weight: 11
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=bw-infocube-und-bex-queries
+old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-infocube-und-bex-queries
 ---
-Der folgende Abschnitt beschreibt die Funktion der Board Connector BW Cube Komponente.
+Der folgende Abschnitt beschreibt die Funktion der BOARD Connector BW Cube Komponente.
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**

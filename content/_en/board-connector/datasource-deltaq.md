@@ -9,7 +9,7 @@ childidentifier: datasource-deltaq
 permalink: /:collection/:path
 weight: 13
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=datasource-deltaq
+old_url: /BOARD-Connector-EN/default.aspx?pageid=datasource-deltaq
 ---
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal DeltaQ Komponente.
 
@@ -23,7 +23,7 @@ To use the DeltaQ component, access to the designated authority objects (RFC) in
 For more information, see the knowledge base article on [SAP User Rights: DeltaQ](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#deltaq).
 
 {: .box-tip }
-**Tip:** To get information on the basics of Board Connector, refer to [Getting Started with Board Connector](./getting-started).
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](./getting-started).
 
 ### How to use the DeltaQ component
 {% include _content/en/board-specific/define-extraction.md %}

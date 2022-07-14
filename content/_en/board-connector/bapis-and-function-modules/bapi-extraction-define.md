@@ -8,7 +8,7 @@ parent: bapis-and-function-modules
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=define-bapi-extraction
+old_url: /BOARD-Connector-EN/default.aspx?pageid=define-bapi-extraction
 ---
 The following section shows how to use the BAPI component.
 {% include _content/en/bapis-and-function-modules/bapi-extraction-define.md %}

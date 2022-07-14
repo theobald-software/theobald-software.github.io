@@ -8,7 +8,7 @@ parent: bw-hierarchien
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=hierarchien-als-datenquelle-definieren
+old_url: /BOARD-Connector-DE/default.aspx?pageid=hierarchien-als-datenquelle-definieren
 ---
 Der folgende Abschnitt beschreibt die Anwendung der Hierarchy Komponente.
 

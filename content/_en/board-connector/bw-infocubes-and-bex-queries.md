@@ -9,9 +9,9 @@ childidentifier: bw-infocubes-and-bex-queries
 permalink: /:collection/:path
 weight: 11
 lang: en_GB
-old_url: /Board-Connector-EN/default.aspx?pageid=bw-infocubes-and-bex-queries
+old_url: /BOARD-Connector-EN/default.aspx?pageid=bw-infocubes-and-bex-queries
 ---
-The following section describes the functions of the BW Cube component of Board Connector. <br>
+The following section describes the functions of the BW Cube component of BOARD Connector. <br>
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
@@ -19,7 +19,7 @@ To use the BW Cube component, access to the designated authority objects (RFC) i
 For more information, see the knowledge base article on [SAP User Rights: BW Query / BW Cube](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube).
 
 {: .box-tip }
-**Tip:** To get information on the basics of Board Connector, refer to [Getting started with Board Connector](./getting-started). <br>
+**Tip:** To get information on the basics of BOARD Connector, refer to [Getting started with BOARD Connector](./getting-started). <br>
 
 ### How to use the BW Cube component
 {% include _content/en/board-specific/define-extraction.md %}

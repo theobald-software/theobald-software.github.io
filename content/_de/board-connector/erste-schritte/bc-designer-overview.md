@@ -8,7 +8,7 @@ parent: erste-schritte
 permalink: /:collection/:path
 weight: 7
 lang: de_DE
-old_url: /Board-Connector-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
+old_url: /BOARD-Connector-DE/default.aspx?pageid=zusaetzliche-funktionen-im-designer
 progressstate: 5
 ---
 
