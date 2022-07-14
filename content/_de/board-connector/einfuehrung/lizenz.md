@@ -11,23 +11,23 @@ lang: de_DE
 progressstate: 5
 ---
 
-### Über das Lizenzierungskonzept von BOARD Connector
+### Über das Lizenzierungskonzept von Board Connector
 
-BOARD Connector wird pro Windows Server lizenziert, d.h. die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Eine Demo-Lizenz wird automatisch mit der Installation von BOARD Connector installiert. <br>
+Board Connector wird pro Windows Server lizenziert, d.h. die Lizenz ist für den Server notwendig, auf dem die Extraktionen ausgeführt werden. Eine Demo-Lizenz wird automatisch mit der Installation von Board Connector installiert. <br>
 Eine reguläre Lizenz wird nach dem Kauf des Produkts im [Kundenportal - My Theobald Software](https://my.theobald-software.com/) zur Verfügung gestellt. Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.<br>
-Wenn Sie den BOARD Connector Designer und den  BOARD Connector Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
+Wenn Sie den Board Connector Designer und den  Board Connector Server auf verschiedenen Rechnern betreiben, muss nur die Demo-Serverlizenz, durch eine reguläre Lizenz ersetzt werden.
  
 
-### Installieren von BOARD Connector Lizenz - BOARD ConnectorLicense.json
-Um die reguläre Lizenz zu installieren, legen Sie die BOARD ConnectorLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:<br>
+### Installieren von Board Connector Lizenz - Board ConnectorLicense.json
+Um die reguläre Lizenz zu installieren, legen Sie die Board ConnectorLicense.json-Datei in das folgende Programm-Verzeichnis des Servers ab:<br>
 `C:\Program Files\BOARDConnector`
  <br>
  ![BC_license](/img/content/BOARDConnector_License_Folder.png ){:class="img-responsive"}
  
-Ein Neustart des BOARD Connector Service ist nicht notwendig.
+Ein Neustart des Board Connector Service ist nicht notwendig.
 
 {: .box-tip }
-**Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom BOARD Connector Designer  **[Help] > [Info]** oder drücken Sie F12.
+**Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom Board Connector Designer  **[Help] > [Info]** oder drücken Sie F12.
 
 ![Demo_License](/img/content/BOARDConnector_Demo_License.png){:class="img-responsive"}
 

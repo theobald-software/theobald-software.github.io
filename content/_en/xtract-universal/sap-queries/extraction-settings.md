@@ -8,6 +8,6 @@ parent: sap-queries
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=settings
+old_url: /Board-Connector-EN/default.aspx?pageid=settings
 ---
 {% include _content/en/sap-queries/extraction-settings.md %}

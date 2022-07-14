@@ -1,7 +1,7 @@
 
 ### Anwendungsfall
 
-BI Client Tools wie z.B. Power BI, Power Pivot, Alteryx, etc. können Extraktionen in Xtract-Produkten (z.B. Xtract Universal oder BOARD Connector) starten. Die extrahierten Daten werden von Xtract-Produkten direkt in genannten Tools geladen.
+BI Client Tools wie z.B. Power BI, Power Pivot, Alteryx, etc. können Extraktionen in Xtract-Produkten (z.B. Xtract Universal oder Board Connector) starten. Die extrahierten Daten werden von Xtract-Produkten direkt in genannten Tools geladen.
 Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Anmeldeinformationen desjenigen (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. Dadurch greifen die SAP-Berechtigungen des ausführenden Benutzers, was z.B. häufig bei der Extraktion von BW/BEx Queries wichtig ist.
 
 Die Windows-Anmeldeinformationen des Benutzers müssen über das Xtract-Produkt an SAP weitergeleitet werden. Auf dem Weg zu SAP oder auf SAP-Seite wird ein Mapping zwischen Windows-Benutzer und dessen SAP-Anmeldeinformationen durchgeführt.

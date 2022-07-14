@@ -1,7 +1,7 @@
 
 ### Use case
 
-BI client tools such as Power BI, Power Pivot, Alteryx, etc. can start extractions in Xtract products (e.g., Xtract Universal or BOARD Connector). Xtract products load the extracted data directly into the listed tools.
+BI client tools such as Power BI, Power Pivot, Alteryx, etc. can start extractions in Xtract products (e.g., Xtract Universal or Board Connector). Xtract products load the extracted data directly into the listed tools.
 In this use case, it is often required that the extraction is executed with the SAP credentials of the (Windows AD) user, whose BI client triggered the extraction. This means that the SAP authorizations of the executing user apply, which is often important, for example, in the extraction of BW/BEx queries.
 
 The Windows credentials of the user must be forwarded to SAP using an Xtract product. On the way to SAP or on the SAP side, a mapping is conducted between the Windows user and its SAP credentials.

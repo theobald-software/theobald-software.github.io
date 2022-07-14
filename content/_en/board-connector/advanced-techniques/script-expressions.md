@@ -8,6 +8,6 @@ parent: advanced-techniques
 permalink: /:collection/:path
 weight: 10
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=scripted-expressions
+old_url: /Board-Connector-EN/default.aspx?pageid=scripted-expressions
 ---	
 {% include _content/en/xu-specific/advanced-techniques/script-expressions.md %}

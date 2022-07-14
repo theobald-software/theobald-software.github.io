@@ -10,7 +10,7 @@ weight: 2
 redirect_from:
   - de/board-connector/einfuehrung/sap-verbindungen-anlegen
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=sap-verbindungen
+old_url: /Board-Connector-DE/default.aspx?pageid=sap-verbindungen
 ---
 
 {: .box-warning}

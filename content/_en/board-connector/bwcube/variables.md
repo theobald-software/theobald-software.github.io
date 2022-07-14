@@ -8,6 +8,6 @@ parent: bw-infocubes-and-bex-queries
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=variables
+old_url: /Board-Connector-EN/default.aspx?pageid=variables
 ---
 {% include _content/en/bw-infocubes-and-bex-queries/variables.md %}

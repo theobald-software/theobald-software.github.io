@@ -8,9 +8,9 @@ parent: server
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=ports
+old_url: /Board-Connector-DE/default.aspx?pageid=ports
 ---
-Der BOARD Connector Server läuft als Windows-Service mit dem Hauptprozess `C:\Program Files\BOARDConnector\BCService.exe`. 
+Der Board Connector Server läuft als Windows-Service mit dem Hauptprozess `C:\Program Files\BOARDConnector\BCService.exe`. 
 
 *BCService.exe* startet die folgenden Listener-Prozesse, die standardmäßig auf folgende Ports lauschen:
 
@@ -22,12 +22,12 @@ Listener Prozesse| Standard Port | Beschreibung
 
 Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation. 
 - Der Webserver nimmt Extraktionsaufrufe über HTTP(S) entgegen. 
-- Der Configuration-Server kommuniziert mit dem BOARD Connector Designer.
-- Der API-Server stellt dem Datareader des BOARD Servers die Metadaten der Extraktion zur Verfügung.
+- Der Configuration-Server kommuniziert mit dem Board Connector Designer.
+- Der API-Server stellt dem Datareader des Board Servers die Metadaten der Extraktion zur Verfügung.
 
 {: .box-warning }
 **Warnung! Änderung der Standardports**<br>
-Nach der manuellen Anpassung der Standardports, startet der BOARD Connector Dienst nicht.<br>
+Nach der manuellen Anpassung der Standardports, startet der Board Connector Dienst nicht.<br>
 Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Config-Dateien angepasst werden.<br>
 `C:\Program Files\BOARDConnector\config\server\config\general.json`<br>
 `C:\Program Files\BOARDConnector\config\server\web\general.json`

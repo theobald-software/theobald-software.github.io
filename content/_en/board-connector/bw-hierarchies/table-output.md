@@ -8,6 +8,6 @@ parent: bw-hierarchies
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=table-output
+old_url: /Board-Connector-EN/default.aspx?pageid=table-output
 ---
 {% include _content/en/bw-hierarchies/table-output.md %}

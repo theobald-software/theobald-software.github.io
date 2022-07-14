@@ -33,7 +33,7 @@ Standardmäßig: `C:\Program Files\BOARDConnector\config`.
 | `version.txt` | Textdatei mit der Versionsnummer, die mit der aktuellen Konfiguration übereinstimmt. Mehr Details dazu finden Sie auch im Abschnitt [Neuinstallation und Update](../einfuehrung/installation-und-update#neuinstallation-und-update).|
 
 ### Wie erstelle ich ein Backup?
-Kopieren Sie das komplette `config`-Verzeichnis, der Maschine auf der der BOARD Connector Service läuft: `C:\Program Files\BOARDConnector\config` (standardmäßig). 
+Kopieren Sie das komplette `config`-Verzeichnis, der Maschine auf der der Board Connector Service läuft: `C:\Program Files\BOARDConnector\config` (standardmäßig). 
 Optional, können Sie auch das komplette`logs`-Verzeichnis (`C:\Program Files\BOARDConnector\logs` standardmäßig) kopieren, um ein Backup der Log-Dateien zu erstellen.
 
 {: .box-warning }
@@ -47,9 +47,9 @@ Sowohl `config`- als auch `logs`-Verzeichnisse können sensible Informationen en
 **Warnung! Datenverlust!** <br>
 Das Wiederherstellen des Backups des Konfigurationsverzeichnisses (`config`) ersetzt die bestehende Konfiguration. Stellen Sie sicher, dass Sie die vorhandenen Dateien entfernen, bevor Sie die Backups wiederherstellen.
 
-1. Um die Konfigurationsdateien wiederherzustellen, entfernen Sie das Konfigurationsverzeichnis (`config`) aus dem Programmverzeichnis (`C:\Program Files\BOARDConnector` standardmäßig) der Maschine, auf der der BOARD Connector Service läuft.
+1. Um die Konfigurationsdateien wiederherzustellen, entfernen Sie das Konfigurationsverzeichnis (`config`) aus dem Programmverzeichnis (`C:\Program Files\BOARDConnector` standardmäßig) der Maschine, auf der der Board Connector Service läuft.
 2. Kopieren Sie das Backup des Konfigurationsverzeichnisses in das Programmverzeichnis.
-3. Um die Lizenz wiederherzustellen, ersetzen Sie die Datei BOARD ConnectorLicense.json innerhalb des Programmverzeichnisses durch das Backup.
+3. Um die Lizenz wiederherzustellen, ersetzen Sie die Datei Board ConnectorLicense.json innerhalb des Programmverzeichnisses durch das Backup.
 
 
 ### Migration auf eine andere Maschine
@@ -59,23 +59,23 @@ Je nach Szenario kann es sinnvoll sein, eine Teilmigration durchzuführen - z.B.
 
 Wenn Sie eine Maschine vollständig ersetzen, führen Sie eine vollständige Migration durch.
 
-**Voraussetzung**: Die BOARD Connector Versionen stimmen auf beiden Maschinen überein.
+**Voraussetzung**: Die Board Connector Versionen stimmen auf beiden Maschinen überein.
 
 {: .box-tip }
 **Tipp**: Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer und navigieren Sie zu **Help > Info** oder drücken Sie **[F12]**.
 
 {: .box-tip }
-**Tipp:** Wenn Ihre aktuelle Version nicht die neueste Version von BOARD Connector ist, installieren Sie die passende Version `BOARD ConnectorSetup.exe` aus dem BOARD Connector Verzeichnis: `C:\Program Files\BOARDConnector` (standardmäßig) auf der anderen Maschine.
+**Tipp:** Wenn Ihre aktuelle Version nicht die neueste Version von Board Connector ist, installieren Sie die passende Version `Board ConnectorSetup.exe` aus dem Board Connector Verzeichnis: `C:\Program Files\BOARDConnector` (standardmäßig) auf der anderen Maschine.
 
 
 1. Erstellen Sie ein Backup des `config`-Verzeichnisses der aktuellen Maschine.
 2. Entscheiden Sie, ob Sie eine teilweise oder eine vollständige Migration benötigen. <br> 
 Für eine vollständige Migration können Sie das gesamte `config`-Verzeichnis auf der anderen Maschine wiederherstellen.
 Sie können alternativ Teile des Backups wiederherstellen, indem Sie z.B. nur die Extractions-Verzeichnisse kopieren.
-3. Starten Sie den [BOARD Connector Service](../server/server-starten) neu, wenn Sie eine vollständige Migration durchführen oder das Verzeichnis `server` auf die andere Maschine kopieren.
+3. Starten Sie den [Board Connector Service](../server/server-starten) neu, wenn Sie eine vollständige Migration durchführen oder das Verzeichnis `server` auf die andere Maschine kopieren.
 
 {: .box-note }
-**Hinweis**: Da BOARD Connector-Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
+**Hinweis**: Da Board Connector-Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
 Kontaktieren Sie dafür unseren Vertrieb unter [sales@theobald-software.com](mailto:sales@theobald-software.com).
 
 ****

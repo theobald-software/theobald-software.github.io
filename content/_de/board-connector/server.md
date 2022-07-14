@@ -53,7 +53,7 @@ BCService.exe startet zwei Listener-Prozesse:
 
 {: .box-tip }
 **Tipp:** Die BCService.exe protokolliert ihre Aktionen in ServiceLog.txt. 
-Die Log-Datei befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\BOARD Connector\logs` (standartmäßig).
+Die Log-Datei befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\Board Connector\logs` (standartmäßig).
 
 
 Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server_einstellungen) definiert sind.
@@ -62,7 +62,7 @@ BCConfigServer.exe wartet auf neue Verbindungsanfragen vom Designer.
 
 {: .box-tip }
 **Tipp:** Die BCConfigServer.exe protokolliert ihre Aktionen in Log-Dateien. 
-Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\BOARD Connector\logs\server\config` (standartmäßig).
+Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\Board Connector\logs\server\config` (standartmäßig).
 
 Theobald.Bc.Web.Listener.exe wartet auf HTTP-Anfragen. 
 
@@ -70,13 +70,13 @@ Für jede TCP-Verbindung startet die Theobald.Bc.Web.Listener.exe eine neue Inst
 
 {: .box-tip }
 **Tipp:** Die Theobald.Bc.Web.Worker.exe protokolliert ihre Aktionen in dem Log-Unterverzeichnis. 
-Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:ProgramFiles\BOARD Connector\logs\server\run` (standartmäßig). 
+Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses:`C:ProgramFiles\Board Connector\logs\server\run` (standartmäßig). 
 Das sind auch die Logs, die man sich im Designer unter **[Server]>[Logs (Run)]** anzeigen lassen kann.
 
 
 {: .box-tip }
 **Tipp:** Die Theobald.Bc.Web.Listener.exe protokolliert ihre Aktionen in Log-Dateien. 
-Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\BOARD Connector\logs\server\web` (standartmäßig).
+Die Log-Dateien befinden sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\Board Connector\logs\server\web` (standartmäßig).
 
 Weitere Informationen zum Server finden Sie in den folgenden Abschnitten:
 

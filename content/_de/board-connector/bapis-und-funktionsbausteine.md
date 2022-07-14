@@ -9,10 +9,10 @@ childidentifier: bapis-und-funktionsbausteine
 permalink: /:collection/:path
 weight: 10
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=bapis-und-funktionsbausteine
+old_url: /Board-Connector-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
 
-Der folgende Abschnitt beschreibt die Anwendung der BOARD Connector BAPI Komponente. Kenntnisse über die Grundlagen von BOARD Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
+Der folgende Abschnitt beschreibt die Anwendung der Board Connector BAPI Komponente. Kenntnisse über die Grundlagen von Board Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Table](./erste-schritte) beschrieben.

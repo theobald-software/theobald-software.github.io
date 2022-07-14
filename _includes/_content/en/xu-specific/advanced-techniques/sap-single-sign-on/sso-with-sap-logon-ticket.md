@@ -8,7 +8,7 @@ You have trust set up between your AS ABAP instance (the SAP system Xtract produ
 
 
 ### Process
-1. When running an extraction, the user authenticates to the XU or BOARD Connector server (further referred as only server) via SPNEGO/Kerberos.
+1. When running an extraction, the user authenticates to the XU or Board Connector server (further referred as only server) via SPNEGO/Kerberos.
 2. The server impersonates the caller.
 3. The server authenticates itself using the callers credentials toward the AS Java via SPNEGO/Kerberos.
 4. AS Java looks up the mapping between Windows user and the corresponding SAP user and issues an SAP logon ticket for this SAP user. The logon ticket is delivered as part of the MYSAPSSO2 cookie.

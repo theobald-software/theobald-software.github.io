@@ -8,6 +8,6 @@ parent: bw-infocubes-and-bex-queries
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=bw-extraction-settings
+old_url: /Board-Connector-EN/default.aspx?pageid=bw-extraction-settings
 ---
 {% include _content/en/bw-infocubes-and-bex-queries/bw-cube-extraction-settings.md %}

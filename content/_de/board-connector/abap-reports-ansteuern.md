@@ -9,13 +9,13 @@ childidentifier: abap-reports-ansteuern
 permalink: /:collection/:path
 weight: 17
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=abap-reports-ansteuern
+old_url: /Board-Connector-DE/default.aspx?pageid=abap-reports-ansteuern
 ---
-Der folgende Abschnitt beschreibt die Funktion der BOARD Connector Report Komponente.
+Der folgende Abschnitt beschreibt die Funktion der Board Connector Report Komponente.
 {% include _content/de/abap_reports/report-about.md %}
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 ### Report verwenden
 {% include _content/de/board-specific/define-extraction.md %}

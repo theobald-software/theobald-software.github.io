@@ -8,7 +8,7 @@ parent: getting-started
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=general-settings
+old_url: /Board-Connector-EN/default.aspx?pageid=general-settings
 progressstate: 5
 ---	
 General Settings are independent of the extraction type.
@@ -34,7 +34,7 @@ The miscellaneous tab consists of two subsections:
 **Cache results** (1)
 
 
-BOARD often pulls the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way BOARD pulls the data from cache and not from the SAP.
+Board often pulls the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way Board pulls the data from cache and not from the SAP.
 This increases the performance and limits the impact on the SAP system. If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
 
 **Preview Mode** (2)

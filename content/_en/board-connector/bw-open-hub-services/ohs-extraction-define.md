@@ -8,7 +8,7 @@ parent: bw-open-hub-services
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=define-an-ohs-extraction
+old_url: /Board-Connector-EN/default.aspx?pageid=define-an-ohs-extraction
 ---
 The following section shows how to use the OHS component.
 

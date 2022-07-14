@@ -9,9 +9,9 @@ childidentifier: sap-queries
 permalink: /:collection/:path
 weight: 16
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=SAP-queries
+old_url: /Board-Connector-EN/default.aspx?pageid=SAP-queries
 ---
-The following section describes the functions of the Query component of BOARD Connector. <br>
+The following section describes the functions of the Query component of Board Connector. <br>
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
@@ -19,7 +19,7 @@ To use the SAP Query component, access to the designated authority objects (RFC)
 For more information, see the knowledge base article on [SAP User Rights: SAP Query](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#sap-query).
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](./getting-started).
+**Tip:** To get information on the basics of Board Connector, refer to [Getting Started with Board Connector](./getting-started).
 
 {: .box-note}
 **Note:** The Query component refers to queries that can be created by the SAP transactions *SQ02* and *SQ01*.<br>

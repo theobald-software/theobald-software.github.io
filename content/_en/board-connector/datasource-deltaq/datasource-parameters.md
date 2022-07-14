@@ -8,7 +8,7 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=datasource_parameters
+old_url: /Board-Connector-EN/default.aspx?pageid=datasource_parameters
 ---
 {% include _content/en/datasource-deltaq/datasource-parameters.md %}
 

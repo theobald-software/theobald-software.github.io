@@ -8,7 +8,7 @@ parent: sap-queries
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=definieren-einer-query
+old_url: /Board-Connector-DE/default.aspx?pageid=definieren-einer-query
 ---
 
 {% include _content/de/sap-queries/varianten-selektionen.md %}

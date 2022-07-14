@@ -10,12 +10,12 @@ permalink: /:collection/:path
 weight: 14
 lang: de_DE
 ---
-Der folgende Abschnitt beschreibt die Funktion der BOARD Connector ODP Komponente.
+Der folgende Abschnitt beschreibt die Funktion der Board Connector ODP Komponente.
 {% include _content/de/odp/odp-introduction.md %} 
 
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 ### ODP verwenden
 {% include _content/de/board-specific/define-extraction.md %}

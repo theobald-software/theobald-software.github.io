@@ -8,7 +8,7 @@ parent: getting-started
 permalink: /:collection/:path
 weight: 7
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=additional-functions-in-designer
+old_url: /Board-Connector-EN/default.aspx?pageid=additional-functions-in-designer
 progressstate: 5
 ---	
 

@@ -8,7 +8,7 @@ parent: sicherheit
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=serversicherheit
+old_url: /Board-Connector-DE/default.aspx?pageid=serversicherheit
 ---
 ### Über diese Seite
 
@@ -29,7 +29,7 @@ Eine Absicherung des Web-Zugriffs auf die im Board Connector angelegten Extrakti
 
 ### Einen Dienst unter einem Windows Dienstkonto ausführen
 
-Wenn eine Zugriffsbeschränkung mit Windows AD Benutzern erfolgt, muss der BOARD Connector Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
+Wenn eine Zugriffsbeschränkung mit Windows AD Benutzern erfolgt, muss der Board Connector Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
 Die Vorgehensweise dafür entspricht dem des XU-Dienstes unter [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../../xtract-universal/fortgeschrittene-techniken/service-account).
 
 

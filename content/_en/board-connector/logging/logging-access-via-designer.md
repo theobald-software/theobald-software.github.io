@@ -8,7 +8,7 @@ parent: logging
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=extraction-logging
+old_url: /Board-Connector-EN/default.aspx?pageid=extraction-logging
 ---
 
 ### Logs in Designer

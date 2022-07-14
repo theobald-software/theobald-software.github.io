@@ -15,7 +15,7 @@ progressstate: 5
 ### Eine Extraktion anlegen
 Das folgende Beispiel zeigt die Erstellung einer Extraktion unter Verwendung der Komponente "SAP Table or View".
 
-1. Im Hauptfenster des BOARD Connector Designers klicken Sie auf **[New]**.
+1. Im Hauptfenster des Board Connector Designers klicken Sie auf **[New]**.
 ![Create-New-Table-Extraction](/img/content/bc_extraction_anlegen.png){:class="img-responsive list-img"}
 Das Fenster "Create Extraction" wird geöffnet. <br>
 2. Das Feld **Source** (1) gibt die SAP-Verbindung an. Wählen Sie die angelegte SAP-Verbindung aus dem Dropdown-Menü.

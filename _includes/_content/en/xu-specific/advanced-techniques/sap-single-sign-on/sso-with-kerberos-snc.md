@@ -25,7 +25,7 @@ For more information on SNC, see [SAP Help: SNC](https://help.sap.com/doc/saphel
 3. Click **[OK]** to confirm (3)<br>
 
 {: .box-note }
-**Note:** Make sure to check the default ports depending on your product. HTTPS port *8165* is e.g., set up by default in Xtract Universal. BOARD Connector's default HTTPS port *8197*.
+**Note:** Make sure to check the default ports depending on your product. HTTPS port *8165* is e.g., set up by default in Xtract Universal. Board Connector's default HTTPS port *8197*.
 
 ![XU_WebServerSettings_https](/img/content/XU_Server_Settings_Webserver_HTTPS.png){:class="img-responsive"}
 

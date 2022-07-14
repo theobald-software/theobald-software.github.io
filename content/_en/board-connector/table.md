@@ -11,7 +11,7 @@ weight: 18
 lang: en_GB
 ---
 
-The following section describes the functions of the Table Component of BOARD Connector.<br>
+The following section describes the functions of the Table Component of Board Connector.<br>
 The component *SAP Table or View* can be used to extract contents from SAP tables and views. <br>
 
 {: .box-warning}
@@ -20,7 +20,7 @@ To use the Table component, access to the designated authority objects (RFC) in 
 For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](./getting-started).
+**Tip:** To get information on the basics of Board Connector, refer to [Getting Started with Board Connector](./getting-started).
 
 ### How to use the Table component
 {% include _content/en/board-specific/define-extraction.md %}

@@ -8,6 +8,6 @@ parent: datasource-deltaq
 permalink: /:collection/:path
 weight: 2
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=customizing-check
+old_url: /Board-Connector-EN/default.aspx?pageid=customizing-check
 ---
 {% include _content/en/datasource-deltaq/customizing-check.md %}

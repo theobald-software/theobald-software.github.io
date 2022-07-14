@@ -8,7 +8,7 @@ parent: bapis-and-function-modules
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=bapi-extraction-settings
+old_url: /Board-Connector-EN/default.aspx?pageid=bapi-extraction-settings
 ---
 
 

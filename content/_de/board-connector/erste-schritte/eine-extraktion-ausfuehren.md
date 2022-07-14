@@ -17,7 +17,7 @@ Dieser Schritt ist optional. Es wird gezeigt, wie das Extraktionsergebnis in ein
 
 ### Definieren der Extraktionseigenschaften 			 
 
-1. Wählen Sie im Hauptfenster von BOARD Connector Designer eine erstellte Tabellenextraktion aus.
+1. Wählen Sie im Hauptfenster von Board Connector Designer eine erstellte Tabellenextraktion aus.
 2. Um die Extraktionseinstellungen zu öffnen, klicken Sie auf **[Run]**. 
 ![Extraction-Run](/img/content/BC-Run-Table-Extraction-Plants.png){:class="img-responsive"}
 Das Fenster "Run Extraction" wird geöffnet.

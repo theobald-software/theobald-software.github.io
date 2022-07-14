@@ -11,7 +11,7 @@ There are two approaches for creating an X.509 certificate:
 
 Make sure to have a TLS certificate issued by your IT network team considering the following points:
  
-- The certificate property “Subject Alternative Name” contains the DNS name of the server on which the Windows service (e.g. Xtract Universal Service or BOARD Connector Service) is running. 
+- The certificate property “Subject Alternative Name” contains the DNS name of the server on which the Windows service (e.g. Xtract Universal Service or Board Connector Service) is running. 
 - Place the certificate in the [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) on the machine, on which the Windows service is running.
 - The certificate common name (CN) attribute contains the DNS name of the server. 
 

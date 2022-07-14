@@ -8,5 +8,5 @@ parent: bw-open-hub-service
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
-old_url: /BOARD-Connector-DE/default.aspx?pageid=ohs-extraktionseinstellungen
+old_url: /Board-Connector-DE/default.aspx?pageid=ohs-extraktionseinstellungen
 ---
