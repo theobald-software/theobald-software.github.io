@@ -4,11 +4,12 @@ layout: page
 title: SAP Customizing for Tables
 description: Custom Function Module for Tables
 product: yunio
-parent: table-and-views
+parent: yunio
 permalink: /:collection/:path
 weight: 13
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=avoid-restrictions
+redirect_from:
+  - en/yunio/table/custom-function-module-for-table-extraction
 ---
 
 The SAP standard function module RFC_READ_TABLE comes with restrictions for table extractions, see [RFC_READ_TABLE Restrictions](#rfc_read_table-restrictions).<br>

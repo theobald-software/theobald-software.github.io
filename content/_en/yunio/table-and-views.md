@@ -64,7 +64,7 @@ The following function modules can be used to extract tables:
 **Warning! Duplicates in the target environment!**<br>
 The SAP standard modules for table extraction do not have pointers for table fields. 
 In larger tables this may cause low performance and duplicates in the target environment. 
-Use the function module [Z_THEO_READ_TABLE](./table/custom-function-module-for-table-extraction) from Theobald Software to ensure smooth extractions.
+Use the function module [Z_THEO_READ_TABLE](./custom-function-module-for-table-extraction) from Theobald Software to ensure smooth extractions.
 
 Note the necessary [authorization for SAP tables](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
 ```

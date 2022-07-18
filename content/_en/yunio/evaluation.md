@@ -4,10 +4,12 @@ layout: page
 title: Download and Evaluation
 description: Download and Evaluation
 product: yunio
-parent: introduction
+parent: yunio
 permalink: /:collection/:path
-weight: 7
+weight: 6
 lang: en_GB
+redirect_from:
+  - en/yunio/introduction/evaluation
 old_url: /Xtract-Universal-EN/default.aspx?pageid=evaluation
 ---
 
@@ -24,5 +26,5 @@ In case of any questions or doubts, feel free to contact Theobald Software at an
 
 ****
 #### Related Links
-- [Requirements](./requirements)
-- [Licensing](./license)
+- [Requirements](./introduction#requirements)
+- [Licensing](./introduction#license)

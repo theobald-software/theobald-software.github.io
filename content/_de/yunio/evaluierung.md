@@ -25,6 +25,6 @@ Sollten Sie Fragen haben, können Sie sich jederzeit an Theobald Software wenden
 
 ****
 #### Weiterführende Links
-- [Voraussetzungen](./systemvoraussetzungen)
-- [Lizenzierung](./lizenz)
+- [Voraussetzungen](./einfuehrung#systemvoraussetzungen)
+- [Lizenzierung](./einfuehrung#lizenz)
 
