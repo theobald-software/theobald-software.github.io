@@ -31,16 +31,16 @@ Therefore knowing how to navigate the SAP GUI makes it easier to use the transac
 1. Create a new Service of type *Transaction*.  
 2. Enter a transaction code (1) and click **[Start]** to run the transaction. Content from the SAP GUI is displayed. <br>
 Click **[Stop]** to cancel a running transaction.<br>
-![web-ui](/img/content/yunio/transaction.png){:class="img-responsive"}
+![transaction](/img/content/yunio/transaction.png){:class="img-responsive"}
 3. Fill out the input fields as you would in the SAP GUI.
 4. Click **[Submit]** to enter your input.<br>
 All executed actions are logged in the section *GUI Steps*.
 5. Click **[Save]** once all actions are completed.
 
 ### Editing Transactions
-1. To edit transactions, click the edit icon in the list of available services.
-screenshot
-2. Click the action you want to edit in the *GUI Steps* section of the transaction menu.
+1. To edit transactions, click on the ![transaction](/img/content/yunio/edit.png) icon of the service.<br>
+![edit](/img/content/yunio/edit-transactions.png){:class="img-responsive"}
+2. Select the action you want to edit in the *GUI Steps* section of the transaction menu.
 screenshot
 3. Change values... Delete? Add?
 4. Click **[Save]** to save the changes.
