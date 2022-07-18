@@ -4,9 +4,11 @@ layout: page
 title: SAP Funktionsbaustein für Tabellen
 description: Einschränkungen umgehen
 product: yunio
-parent: table-and-views
+parent: yunio
 permalink: /:collection/:path
 weight: 7
+redirect_from:
+  - de/yunio/table/funktionsbaustein-fuer-table-extraktion
 lang: de_DE
 ---
 

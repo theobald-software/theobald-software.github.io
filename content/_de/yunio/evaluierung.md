@@ -4,11 +4,12 @@ layout: page
 title: Download und Evaluierung
 description: Evaluierung
 product: yunio
-parent: einfuehrung
+parent: yunio
 permalink: /:collection/:path
-weight: 7
+weight: 6
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=evaluierung
+redirect_from:
+  - de/yunio/einfuehrung/evaluierung
 ---
 
 ### Download von yunIO
