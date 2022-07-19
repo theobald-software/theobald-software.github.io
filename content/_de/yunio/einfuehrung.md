@@ -107,7 +107,7 @@ Beim Starten des Setups können die optionalen Komponenten für die Installation
 | Enable .NET updates via Windows Updater <br>for Windows Server Edition. |- | Erzeugt einen Eintrag in der Regitry, der automatisch .NET aktualisiert. |
 |Open the yunIO Designer after installation|- | Öffnet nach der Installation den yunIO Designer in Ihrem Standard-Browser.|
 
-Die Installationsschritte werden im Abschnitt [Lizenz](./lizenz) beschrieben.
+Die Installationsschritte werden im Abschnitt [Lizenz](#lizenz) beschrieben.
 
 #### Enable .NET updates via Windows Updater for Windows Server Edition
 Diese Option ist nur auf Windows Server Editionen verfügbar und nur wenn sie nicht bereits aktiv ist.<br>

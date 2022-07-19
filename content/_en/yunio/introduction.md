@@ -111,7 +111,7 @@ When starting the setup the following components can be selected during the inst
 | Enable .NET updates via Windows Update <br>for Windows Server Edition. |- | Adds a registry entry that automatically updates .NET.|
 |Open the yunIO Designer after installation |- |Opens the yunIO Designer in your standard web browser.|
 
-The license installation procedure is described in the section [Installing the license](./license).
+The license installation procedure is described in the section [Installing the license](#license).
 
 #### Enable .NET updates via Windows Update for Windows Server Edition
 
