@@ -87,7 +87,7 @@ For the installation 150 MB disk space is required.
 The product can be installed on 64-Bit operating systems only.
 
 
-### Installation and Update
+## Installation and Update
 
 yunIO provides a Windows service for the communication with the SAP system and comes with an embedded Web UI, the yunIO Designer.<br>
 The yunIO service is installed on a local or cloud-hosted Windows server environment. 
