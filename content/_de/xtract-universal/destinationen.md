@@ -37,6 +37,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 ### Business Intelligence / Analytics / ETL
 
 - [Alteryx](./destinationen/alteryx-de) 
+- [Microstrategy](./destinationen/microstrategy)
 - [Power BI connector (Cloud/Desktop)](./destinationen/Power-BI-Connector) 
 - [Tableau](./destinationen/tableau) 
 - [QlikSense and QlikView](./destinationen/qlik)  
