@@ -37,7 +37,6 @@ More information can be found under the *Requirements* section of each destinati
 ### Business Intelligence / Analytics / ETL
 
 - [Alteryx](./destinations/alteryx) 
-- [Microstrategy](./destinations/microstrategy)
 - [Power BI connector (Cloud/Desktop)](./destinations/Power-BI-Connector) 
 - [Tableau](./destinations/tableau) 
 - [Qlik (QlikSense and QlikView)](./destinations/qliksense-qlikview) 
