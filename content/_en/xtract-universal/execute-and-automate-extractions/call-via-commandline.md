@@ -67,7 +67,7 @@ The output depends on the destination type of the extraction. If the extraction 
 When using [Pull Destinations](../destinations#pull-and-push-destinations) like HTTP-CSV, HTTP-JSON, etc., extracted data is written into the standard output (sdtout).
 
 #### Standard Output of Push Destinations
-When using [Push Destinations](../destinations#pull-and-push-destinations) an [Extraktion Log](../logging/logging-access-via-designer#extraction-logs) in CSV format is written into the standard output (stdout).
+When using [Push Destinations](../destinations#pull-and-push-destinations) an [Extraction Log](../logging/logging-access-via-designer#extraction-logs) in CSV format is written into the standard output (stdout).
 
 #### Standard Error Output
 Logs and error notifications are written into the standard error output (stderr).
