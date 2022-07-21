@@ -71,31 +71,36 @@ SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/suppo
 In the upper part of the "Xtract IS Connection Manager" click **Additions** (4). The window "Xtract IS Connection Manager Additions" opens.
 ![XIS_ConnectionManager_AdditionsTab](/img/content/XIS_ConnectionManager_AdditionsTab.png){:class="img-responsive"}
 
-#### SNC (5)
+#### SNC
 In the window "Xtract IS Connection Manager Additions" you can find several SNC (Secure Network Connection) options.
 For more details see [SAP Connection with SNC](./sap-connection-with-snc)<br>
 
-#### Expert Options (6)
+#### Expert Options
 
 Since 09.2017, SAP connection parameters are no longer stored as *Connection Strings*, but as *Properties*.<br>
 There is a *Property* for each component of the *Connection string*.
 
-This feature allows using a [sensitive environment variable](./sensitive-environment-variable-in-ssis-catalog) for the password in the Integration Services catalog.<br>
-The *Connection string* (see legacy mode below) did not support sensitive environment variables.<br>
-The newer version provides stronger encryption than password obfuscation.
-
-You can either use *Connection properties* or a *Connection string*, not both.
-
-**Legacy storage mode (connection string)**
-
+- **Legacy storage mode (connection string):**<br>
 SAP connection parameters are set via a single *Connection string* (default in XIS versions pre 09.2017).
+You can either use *Connection properties* or a *Connection string*, not both.
+*Connection string* does not support [sensitive environment variable](./sensitive-environment-variable-in-ssis-catalog).
+- **Obfuscate Password:**<br>
+Masks the SAP connection password. This option is switched on per default when activating **Legacy storage mode**.
+- **Internal Table Function:**<br>
+States the function module used for Xtract IS' internal communication with SAP, e.g., retrieving metadata. 
+To change the selected function module, type the name of function module manually. 
+Using another function module can be necessary when adding permission restrictions within the functional module.
+- **AttachesSapGui:**<br>
+This option is only acessible in the *Properties* of the Connection Manager and not in the GUI.
+There are Reports and BAPIs that require an installed SAP GUI even when they are called remotely. 
+In this case, set the *AttachesSapGui* property in the *Expert Options* of the Connection Manager to *True*.
 
-**Obfuscate Password**
-
-Masks SAP connection password. This option is switched on per default when activating **Legacy storage mode**.
-
-**Internal Table Function**
-States the function module used for Xtract IS' internal communication with SAP (e.g., retrieving the metadata). To change the selected function module, type the name of function module manually. Using another function module can be necessary when adding permission restrictions within the functional module.
+{: .box-warning }
+**Warning! 'sapgui' start failed.**
+Sometimes SAP opens a pop-up window that requires input when running extractions.
+To deactivate pop-up windows, open the SAP GUI Logon pad and navigate to **Options... > Security Settings**. 
+Click the **[Open Security Configuration]** button and select *Allow* as the **Default Action**.
+Apply the changes and close the SAP GUI Logon pad.
 
 ### Assigning a Connection Manager to an Xtract Component
 

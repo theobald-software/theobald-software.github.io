@@ -82,25 +82,30 @@ Siehe auch [SAP-Verbindung mit SNC](./sap-verbindung-mit-snc). <br>
 #### Expert Options
 
 Seit 09/2017 werden SAP-Verbindungsparameter nicht mehr als einzelne *Connection Strings*, sondern als *Properties* gespeichert.
-Für jede Komponente des *Connection Strings* existiert eine *Property* .
+Für jede Komponente des *Connection Strings* existiert eine *Property*.
 
-Dies ermöglicht die Verwendung einer [sensitiven Umgebungsvariablen](./sensitive-umgebungsvariablen-in-ssis) für das Passwort im Katalog der Integration Services.<br>
-Der *Connection String* (siehe *Legacy storage mode* unten) unterstützte keine sensitiven Umgebungsvariablen.
-Dies bietet eine stärkere Verschlüsselung als die Passwort-Verschleierung (**Obfuscate Password**).
-
-Sie können entweder *Connection Properties* oder einen *Connection String* verwenden, nicht beides.
-
-**Legacy storage mode (connection string)**
-
+- **Legacy storage mode (connection string):**<br>
 Die SAP-Verbindungsparameter werden über einen einzigen *Connection String* eingestellt (Standard in XIS-Versionen vor 09/2017).
-
-**Obfuscate Password**
-
-Das SAP-Verbindungspasswort wird maskiert, so dass es nicht im Klartext gespeichert wird. Diese Option wird standardmäßig eingeschaltet, wenn der *Legacy storage mode* aktiviert wird.
-
-**Internal Table Function**
+Der *Connection String* unterstützt keine [sensitiven Umgebungsvariablen](./sensitive-umgebungsvariablen-in-ssis).
+Sie können entweder *Connection Properties* oder einen *Connection String* verwenden, nicht beides.
+- **Obfuscate Password:**<br>
+Das SAP-Verbindungspasswort wird maskiert, so dass es nicht im Klartext gespeichert wird. 
+Diese Option wird standardmäßig eingeschaltet, wenn der *Legacy storage mode* aktiviert wird.
+- **Internal Table Function:**<br>
 Gibt den Funktionsbaustein an, der für die interne Kommunikation von Xtract IS mit SAP (z.B. Abruf der Metadaten) verwendet wird.
- Um den ausgewählten Funktionsbaustein zu ändern, geben Sie den Namen des Funktionsbausteins manuell ein. Die Verwendung eines anderen Funktionsbausteins kann erforderlich sein, wenn Sie innerhalb des Funktionsbausteins Berechtigungsbeschränkungen hinzufügen möchten.
+Um den ausgewählten Funktionsbaustein zu ändern, geben Sie den Namen des Funktionsbausteins manuell ein. 
+Die Verwendung eines anderen Funktionsbausteins kann erforderlich sein, wenn Sie innerhalb des Funktionsbausteins Berechtigungsbeschränkungen hinzufügen möchten.
+- **AttachesSapGui:**<br>
+Diese Option ist ausschließlich in den *Properties* des Connection Managers verfügbar und nicht in der GUI.
+Es gibt Reports und BAPIs, die eine installierte SAP GUI voraussetzen.
+In diesem Fall setzen Sie *AttachesSapGui* in den *Expert Options* des Connection Managers auf *True*.
+
+{: .box-warning }
+**Warning! 'sapgui' start failed.**
+Wenn Sie Extraktionen ausführen, öffnet SAP manchmal Pop-Up Fenster, die eine Eingabe erfordern.
+Um diese Pop-Up Fenster zu deaktivieren, öffnen Sie das SAP GUI Logon Pad und navigieren Sie zu **Options... > Security Settings**.
+Klicken Sie auf die Schaltfläche **[Open Security Configuration]** und wählen Sie *Allow* als **Default Action**.
+Wenden Sie die Änderungen an und schließen Sie das SAP GUI Logon Pad.
 
 ### Einer Xtract Component einen Connection Manager zuweisen
 
