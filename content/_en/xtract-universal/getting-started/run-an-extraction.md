@@ -122,5 +122,5 @@ To undo the filtering, click **[Clear search]**, followed by **[Display]**.
 Run the extraction with **[Run]**, abort it with **[Abort]** and close the window with **[Close]**.
 
 {: .box-note }
-**Note:** If the option *Request SAP credentials from caller when running extraction* is active in the [source settings](./sap-connection#authentication) of the extraction, you are prompted to enter your SAP credentials when running extractions.
+**Note:** If the option *Request SAP credentials from caller when running extractions* is active in the extraction's [source settings](./sap-connection#authentication), you are prompted to enter your SAP credentials when running an extraction.
 For this option, extractions must be called via [HTTPS - unrestricted](../server/server-settings#web-server).

@@ -57,8 +57,8 @@ Geben Sie Ihren SAP-Benutzernamen und Ihr Passwort ein.<br>
 **Request SAP credentials from caller when running extractions** <br>
 Die SAP-Anmeldeinformationen in den Feldern *User* und *Password* werden nicht übernommen.
 Stattdessen müssen die SAP-Anmeldeinformationen über die HTTP Basisauthentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
-Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inaktiv.<br>
-In Xtract Universal werden Sie auch zur Eingabe der Anmeldeinformation aufgefordert, wenn Sie Extraktionen im Designer ausführen, siehe [Eine Extraktion ausführen](./eine-extraktion-ausfuehren).
+Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inaktiv.
+In Xtract Universal werden Sie zur Eingabe der SAP-Anmeldeinformation aufgefordert, wenn Sie Extraktionen im Designer ausführen, siehe [Eine Extraktion ausführen](./eine-extraktion-ausfuehren).
 
 {: .box-note }
 **Hinweis:** Die Option **Request SAP credentials from caller when running extractions** erfordert, dass die Extraktionen über [HTTPS - unrestricted](../server/server_einstellungen#web-server) aufgerufen werden.

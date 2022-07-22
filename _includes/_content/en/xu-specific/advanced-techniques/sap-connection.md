@@ -56,8 +56,8 @@ Enter your SAP username and password.
 **Request SAP credentials from caller when running extractions** <br>
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
 Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
-Caching the result of extractions is inactive.<br> 
-In Xtract Universal this option triggers an input prompt for credentials, when running an extraction in the Designer, see [Running an Extraction](./run-an-extraction).
+Caching the result of extractions is inactive.
+In Xtract Universal this option triggers an input prompt for SAP credentials, when running an extraction in the Designer, see [Running an Extraction](./run-an-extraction).
 
 
 {: .box-note }
