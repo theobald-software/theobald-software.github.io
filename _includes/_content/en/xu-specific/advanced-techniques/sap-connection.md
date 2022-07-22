@@ -56,9 +56,9 @@ Enter your SAP username and password.
 **Request SAP credentials from caller when running extractions** <br>
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
 Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
-Caching the result of extractions is inactive. 
+Caching the result of extractions is inactive.<br> 
+In Xtract Universal this option triggers an input prompt for credentials, when running an extraction in the Designer, see [Running an Extraction](./run-an-extraction).
 
-**Xtract Universal only:** See [Power BI Connector](https://help.theobald-software.com/en/xtract-universal/destinations/Power-BI-Connector#single-sign-on-and-sap-authentication) or [Alteryx](https://help.theobald-software.com/en/xtract-universal/destinations/alteryx#settings-in-alteryx) destinations for examples. 
 
 {: .box-note }
 **Note:** The option **Request SAP credentials from caller when running extractions** requires extractions to be called via [HTTPS - unrestricted](../server/server-settings#web-server).
