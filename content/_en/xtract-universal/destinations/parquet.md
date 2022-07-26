@@ -27,7 +27,9 @@ Enter an existing local directory in which the extracted files are stored.
 **Note:** Filling out the field **Output directory** creates a new folder, if it doesn't exist. 
 
 **Compatibability mode**<br>
-You can choose between *Pure* and *Spark* for the compatibility mode. *Spark* does not support the data types used in pure mode, so other data types need to be used.
+You can choose between *Pure*, *Spark* and *BigQuery* for the compatibility mode. 
+*Spark* does not support the data types used in pure mode, so other data types need to be used.
+*BigQuery* formats columns names to be compatible with Google BigQuery, see [BigQuery Documentation: Column Names](https://cloud.google.com/bigquery/docs/schemas?hl=en#column_names.
 
 ### Checking the extraction result
 
@@ -38,7 +40,7 @@ You can choose between *Pure* and *Spark* for the compatibility mode. *Spark* do
 
 ### Opening Destination Settings
 
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction, see [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

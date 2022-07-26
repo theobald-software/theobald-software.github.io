@@ -28,7 +28,10 @@ Angabe eines vorhandenen Verzeichnisses, in das die Zieldateien abgelegt werden.
 **Hinweis:** Das Ausfüllen des Feldes **Output directory** erstellt einen neuen Ordner, falls er nicht existiert. 
 
 **Compatibability mode**<br>
-Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen. *Spark* unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
+Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen. 
+*Spark* unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden.
+*BigQuery* formatiert Spaltennamen so, dass sie mit Google BigQuery kompatibel sind, siehe [BigQuery Documentation: Column Names](https://cloud.google.com/bigquery/docs/schemas?hl=en#column_names).
+
 
 ### Überprüfen des Extraktionsergebnisses 
 
@@ -39,7 +42,7 @@ Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen. 
 
 ### Destination Settings öffnen
 
-1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an, siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen).
 2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
