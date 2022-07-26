@@ -29,7 +29,7 @@ Enter an existing local directory in which the extracted files are stored.
 **Compatibability mode**<br>
 You can choose between *Pure*, *Spark* and *BigQuery* for the compatibility mode. 
 *Spark* does not support the data types used in pure mode, so other data types need to be used.
-*BigQuery* formats columns names to be compatible with Google BigQuery, see [BigQuery Documentation: Column Names](https://cloud.google.com/bigquery/docs/schemas?hl=en#column_names.
+*BigQuery* formats columns names to be compatible with Google BigQuery, see [BigQuery Documentation: Column Names](https://cloud.google.com/bigquery/docs/schemas?hl=en#column_names).
 
 ### Checking the extraction result
 
