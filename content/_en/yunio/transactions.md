@@ -12,7 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
 
 With the *Transaction* component, SAP transactions can be accessed, configured and parameterized for automation.<br>
-The integration type Transaction is currently marked as “experimental” and is not fully functional. Future versions will work with any SAP transaction code.
+The integration type *Transaction* is currently marked as “experimental” and is not fully functional. Future versions will work with any SAP transaction code.
 
 ### Prerequisites
 
@@ -33,25 +33,15 @@ Therefore knowing how to navigate the SAP GUI makes it easier to use the transac
 Click **[Stop]** to cancel a running transaction.<br>
 ![transaction](/img/content/yunio/transaction.png){:class="img-responsive"}
 3. Fill out the input fields as you would in the SAP GUI.
-4. Click **[Submit]** to enter your input.<br>
-All executed actions are logged in the section *GUI Steps*.
+4. Click **[Submit]** (2) to enter your input.
+All executed actions are logged in the section *GUI Steps* (3). <br>
+![transaction-ie01](/img/content/yunio/transaction-ie01.png){:class="img-responsive"}
 5. Click **[Save]** once all actions are completed.
 
-### Editing Transactions
-1. To edit transactions, click on the ![transaction](/img/content/yunio/edit.png) icon of the service.<br>
-![edit](/img/content/yunio/edit-transactions.png){:class="img-responsive"}
-2. Select the action you want to edit in the *GUI Steps* section of the transaction menu.
-screenshot
-3. Change values... Delete? Add?
-4. Click **[Save]** to save the changes.
-
-
-### Editing and Running a BAPI using Transactions
-
-Or other examples...
+{: .box-note }
+**Note:** When editing a *Transaction* service you have to rebuild all actions of the transaction. It is not possible to edit single GUI steps.
 
 
 ****
 #### Related Links
 - [Knowledge Base Article: Working with Transactions](https://kb.theobald-software.com/yunio/working-with-transactions)
-- [Function Module / BAPI](./bapis-and-function-modules)
