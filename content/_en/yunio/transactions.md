@@ -12,15 +12,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
 
 With the *Transaction* component, SAP transactions can be accessed, configured and parameterized for automation.<br>
-The integration type *Transaction* is currently marked as “experimental” and is not fully functional. Future versions will work with any SAP transaction code.
+The integration type *Transaction* is currently marked as “Preview” and is not fully functional. Future versions will work with any SAP transaction code.
 
 ### Prerequisites
 
-- The SAP connection asigned to a transaction service must use an SAP dialog user. 
-If necessary create a new connection.
-- Log off the SAP GUI.<br>
-When running transactions, a connection to your SAP system is established using the credentials in your connection settings. 
-It is not possible to run multiple instances of SAP with the same user in parallel with yunIO.
+The SAP connection asigned to a transaction service must use an SAP dialog user. 
 
 {: .box-tip }
 **Tip:** The transaction feature offers the same functionality as the SAP GUI. 
