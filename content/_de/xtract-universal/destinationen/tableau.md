@@ -97,7 +97,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {: .box-note }
 **Hinweis:** Wenn *Append results* aktiv ist, weist Xtract Universal die Spalten der laufenden Extraktion den Spalten der vorhandenen Tableau-Datei zu.
-Dieses Datenmapping basiert auf den Namen der jeweiligen Spalten.
+Dieses Datenmapping basiert auf den Namen der jeweiligen Spalten. Die Anzahl der Spalten müssen übereinstimmen.
 Um diese Mapping-Funktion zu nutzen, stellen Sie sicher, dass der Tableau-Ordner im Installationsverzeichnis von Xtract Universal auf dem aktuellen Stand ist, siehe [Download des aktuellen Tableau-Ordners](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip). 
 
 
