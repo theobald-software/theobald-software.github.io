@@ -11,10 +11,33 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
 
-With the integration type *Transaction*, SAP transactions can be accessed, configured and parameterized for automation.
-Refer to our knowledge baser article [Working with Transactions](https://kb.theobald-software.com/yunio/working-with-transactions) for an introduction to the *Transaction* feature.
+With the *Transaction* component, SAP transactions can be accessed, configured and parameterized for automation.<br>
+The integration type *Transaction* is currently marked as “Preview” and is not fully functional. Future versions will work with any SAP transaction code.
+
+### Prerequisites
+
+The SAP connection asigned to a transaction service must use an SAP dialog user. 
+
+{: .box-tip }
+**Tip:** The transaction feature offers the same functionality as the SAP GUI. 
+Therefore knowing how to navigate the SAP GUI makes it easier to use the transaction feature.
+
+### Running SAP Transactions
+
+1. Create a new Service of type *Transaction*.  
+2. Enter a transaction code (1) and click **[Start]** to run the transaction. Content from the SAP GUI is displayed. <br>
+Click **[Stop]** to cancel a running transaction.<br>
+![transaction](/img/content/yunio/transaction.png){:class="img-responsive"}
+3. Fill out the input fields as you would in the SAP GUI.
+4. Click **[Submit]** (2) to enter your input.
+All executed actions are logged in the section *GUI Steps* (3). <br>
+![transaction-ie01](/img/content/yunio/transaction-ie01.png){:class="img-responsive"}
+5. Click **[Save]** once all actions are completed.
 
 {: .box-note }
-**Note:** The transaction feature only works with SAP dialog users.
+**Note:** When editing a *Transaction* service you have to rebuild all actions of the transaction. It is not possible to edit single GUI steps.
 
-*Transaction* is currently in the *experimental* state and will soon be available and fully documented.<br>
+
+****
+#### Related Links
+- [Knowledge Base Article: Working with Transactions](https://kb.theobald-software.com/yunio/working-with-transactions)
