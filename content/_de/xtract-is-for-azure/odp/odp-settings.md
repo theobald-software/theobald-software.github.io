@@ -16,7 +16,7 @@ Der folgende Abschnitt beschreibt die Einstellungen der ODP-Komponente, die übe
 ![ODP Component](/img/content/xis/odp-settings.png){:class="img-responsive"}
 
 {% include _content/de/odp/odp-settings-subscriptions.md %}
-{% include _content/de/odp/odp-settings-parameters.md %}
+{% include _content/de/xis-specific/odp/odp-settings-parameters.md %}
 
 {: .box-note }
 **Hinweis:** Verwenden Sie die *Properties* der Komponente in Kombination mit *Expressions*, um die Parameter in SSIS zu übergeben, siehe [Parametriesierung mit Properties](./odp-parametrisierung). 
