@@ -17,7 +17,7 @@ Zukünftige Versionen werden alle SAP-Transaktionen unterstützen.
 
 ### Voraussetzungen
 
-In der SAP-Verbindung, die einem *Transaction* Service zugewiesen ist, muss ein SAP Dialog Benutzer hinterlegt sein. 
+Transaktionen erfordern zwingend die Verwendung eines SAP-Dialogbenutzers in den Verbindungseinstellungen.
 
 {: .box-tip }
 **Tipp:** *Transaction* bietet dieselbe Funktionalität wie die SAP GUI.
