@@ -46,7 +46,7 @@ Um eine neue Tabelle oder View auszuwählen, klicken Sie auf **Select** in der o
 
 ### Advanced Settings
 
-### Function Name
+#### Function Name
 Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Dieses Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind.
 Folgende Funktionsbausteine können zur Extraktion von Tabellen verwendet werden:
 
@@ -61,7 +61,7 @@ Folgende Funktionsbausteine können zur Extraktion von Tabellen verwendet werden
 **Warnung! Duplikate in der Zielumgebung!** <br>
 Die SAP-Standardbausteine für Tabellenextraktion besitzen keine Pointer-Logik in Tabellenfeldern. 
 Das führt bei großen Tabellen zu schlechter Performance und ggf. zu Dublikaten.
-Wir empfehlen daher die Verwendung des Funktionsbausteins [Z_THEO_READ_TABLE](./funktionsbaustein-fuer-table-extraktion) von Theobald Software. 
+Wir empfehlen daher die Verwendung des Funktionsbausteins [Z_THEO_READ_TABLE](#installation-von-z_theo_read_table) von Theobald Software. 
 
 Berücksichtigen Sie die notwendige [Berechtigung der SAP-Tabelle](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
 ```
@@ -127,6 +127,9 @@ Verwenden Sie eine WHERE-Bedingung, um Ihre Daten zu filtern.
 | (NOT) BETWEEN | Wahr, wenn der Inhalt des Operanden operand (nicht) zwischen den Werten der Operanden operand1 und operand2 liegt. |
 
 Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
+
+{% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}
+
 
 *****
 #### Weiterführende Links

@@ -10,10 +10,13 @@ Um die o.g. Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustei
 
 {: .box-warning }
 **Warnung! Error while converting value '\*.0' of row 1530, column 3** <br>
-Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.<br>
+Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.
 Verwenden Sie den Funktionsbaustein von Theobald Software *Z_THEO_READ_TABLE*. 
 
-### Z_THEO_READ_TABLE installieren
+### Installation von Z_THEO_READ_TABLE
+
+{: .box-note }
+**Hinweis:** Anpassungen an Ihrem SAP-System sind optional.
 
 Ein SAP-Transportauftrag für die Installation des Funktionsbausteins wird im Installationsverzeichnis der Software mitgeliefert: `C:\ProgramFiles\[XtractProduct]\ABAP\`.<br>
 Es gibt zwei Transportaufträge, einen für SAP-Systeme ab Version 7.40 SP05 (* Z_THEO_READ_TABLE-transport.zip*), und einen für Systeme mit einer niedrigeren Version (* Z_THEO_READ_TABLE-transport-before-740SP05.zip*).<br>
@@ -27,7 +30,7 @@ Es gibt zwei Transportaufträge, einen für SAP-Systeme ab Version 7.40 SP05 (* 
 
 Beim Einspielen der Z_THEO_READ_TABLE-transport-before-740SP05 auf älteren SAP-Releases kann ein Syntaxfehler auftreten. Wenden Sie sich an den [Theobald Support](https://support.theobald-software.com) und senden Sie die dedizierte Fehlermeldung.
 
-### Testen des Bausteins in SAP
+#### Testen des Bausteins in SAP
 
 {: .box-warning }
 **Warnung! Erzeugung von Short Dumps** <br>

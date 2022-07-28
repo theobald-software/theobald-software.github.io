@@ -64,7 +64,7 @@ The following function modules can be used to extract tables:
 **Warning! Duplicates in the target environment!**<br>
 The SAP standard modules for table extraction do not have pointers for table fields. 
 In larger tables this may cause low performance and duplicates in the target environment. 
-Use the function module [Z_THEO_READ_TABLE](./custom-function-module-for-table-extraction) from Theobald Software to ensure smooth extractions.
+Use the function module [Z_THEO_READ_TABLE](#installation-of-z_theo_read_table) from Theobald Software to ensure smooth extractions.
 
 Note the necessary [authorization for SAP tables](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
 ```
@@ -129,6 +129,8 @@ Use a WHERE clause to filter your data.
 | (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
 
 For more information on the OpenSQL syntax see [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm). 
+
+{% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 
 
 *****

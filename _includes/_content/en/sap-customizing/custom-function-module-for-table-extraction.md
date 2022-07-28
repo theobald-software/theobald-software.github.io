@@ -10,10 +10,13 @@ If the above-mentioned restrictions hinder your work, install the Theobald Softw
 
 {: .box-warning }
 **Warning! Error while converting value '\*.0' of row 1530, column 3** <br>
-The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
+The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.
 Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
-### Installing Z_THEO_READ_TABLE 
+### Installation of Z_THEO_READ_TABLE 
+
+{: .box-note }
+**Note:** SAP customizing is optional.
 
 An SAP transport request for the installation of the function module is provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`.<br>
 There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), and one for systems with a lower version (*Z_THEO_READ_TABLE-before_740SP05.zip*).<br>
@@ -27,7 +30,7 @@ There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zi
 
 When importing the Z_THEO_READ_TABLE-transport-before-740SP05 on older SAP releases a syntax error may occur. Contact [Theobald Support](https://support.theobald-software.com) and send the dedicated error message text.
 
-### Testing the module in SAP
+#### Testing the module in SAP
 
 {: .box-warning }
 **Warning! Generating Short Dumps** <br>
