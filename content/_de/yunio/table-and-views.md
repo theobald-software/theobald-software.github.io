@@ -133,6 +133,5 @@ Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpsei
 
 *****
 #### Weiterführende Links
-- [SAP Funktionsbaustein für Tabellen](./table/funktionsbaustein-fuer-table-extraktion)
-- [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
+- [Knowledge Base Artikel: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
+- [Knowledge Base Artikel: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
