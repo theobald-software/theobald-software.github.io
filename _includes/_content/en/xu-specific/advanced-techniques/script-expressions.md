@@ -102,6 +102,7 @@ The following XU-specific custom script expressions are supported:
 |```#{Extraction.SapObjectName}# ```|  The name of the SAP object the extraction is extracting data from |
 |```#{Extraction.Context}# ```|  Only contains values for ODP extractions. The context of the ODP object, such as *SAPI*, *ABAP_CDS*, etc. |
 |```#{Extraction.Timestamp}# ```|  Timestamp of the extraction  |
+|```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Input value of a defined selection / filter in ODP extractions.| 
 
 
 **Examples:** 
