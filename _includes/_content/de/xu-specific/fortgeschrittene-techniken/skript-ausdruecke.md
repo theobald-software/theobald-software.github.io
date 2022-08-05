@@ -98,6 +98,7 @@ Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unter
 |```#{Extraction.SapObjectName}# ```|  Name des SAP Objekts, von dem die Extraktion Daten extrahiert|
 |```#{Extraction.Context}# ```|  Beinhaltet nur Werte für ODP Extraktionen. Der Kontext des ODP Objekts, wie *SAPI*, *ABAP_CDS*, etc. |
 |```#{Extraction.Timestamp}# ```|  Zeitstempel der Extraktion  |
+|```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Eingabewert einer definierten Selektion / Filter bei ODP-Extraktionen.|  
 
 
 **Beispiele:** 
