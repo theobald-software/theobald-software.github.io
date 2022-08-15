@@ -37,7 +37,7 @@ Use the `config` directory for setting up a [version control](#version-control) 
 |`version.txt` |Text file containing the product version of the current configuration. See also [New Installation and Update](../introduction/installation-and-update#new-installation-and-update).|
 
 
-### Manual Backup
+### Manual Backups
 
 {: .box-tip }
 **Recommendation:** Make sure to create *regular* backups of the configuration files to save the work invested in designing and optimizing your data extraction processes.

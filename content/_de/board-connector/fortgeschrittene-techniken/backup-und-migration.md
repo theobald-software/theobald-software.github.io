@@ -14,7 +14,7 @@ progressstate: 5
 
 ### Versionskontrolle
 
-Eine Versionskontrolle kann verwendet werde, um den Datentransfer zwischen Test- und Produktivumgebung zu überwachen.
+Eine Versionskontrolle kann verwendet werde, um den Datentransfer zwischen Test- und Produktivumgebung zu überwachen.<br>
 Git oder Azure DevOps sind Systeme zur Versionskontrolle, die sicherstellen dass:
 - der Einsatz neuer Extraktionen, Quellen und Destinationen **keinen** Schaden in der Produktivumgebung anrichten können.
 - Änderungen durch Benutzerrechte und andere Funktionen im Vorfeld geprüft werden können.
