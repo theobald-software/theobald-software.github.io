@@ -48,7 +48,6 @@ This library is used to open the SAP connection.
 - The XU service must run under a Windows AD Service account, see [Run an Xtract Universal Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
 - Set up access restrictions for the Xtract Universal Designer and the XU server, see [Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentication)](../../security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
 
-
 ### Process
 
 The following graphic illustrates the process of authentication via *SSO Certificate*:
@@ -60,6 +59,8 @@ The caller uses their Active Directory identity to authenticate against the XU w
 2. The XU server checks if a certificate for the caller is available in the Windows Certificate Store.
 If no certificate is available for the caller, a new certificate is issued by the Windows enrollment agent.
 a) The XU server requests the Client certificate from the Windows Certificate Store via the Windows API.
+If a certificate is available, the process continues with step 3.
+If no certificate is available steps 2b) to 2e) are executed.<br>
 b) The XU server requests an enrollment agent certificate from the Windows Certificate Store via the Windows API.
 The enrollment agent certificate can be used to issue client certificates.
 c) The XU server receives the enrollment agent certificate from the Windows Certificate Store.
@@ -67,7 +68,7 @@ d) If the requested certificate from 2a) is not found in the Windows Certificate
 e) The Windows Certificate Store receives the new client certificate from the Active Directory Services via MSRPC.
 3. The XU server receives the client certificate of the caller from the Windows Certificate Store.
 4. The XU server configures the SAP Secure Login Client via the Windows Registry.
-5. The Secure Login Client receives the caller's client certificate as specified by the XU server from the Windows Certificate Store.
+5. The Secure Login Client receives the caller's client certificate as specified by the XU server in step 4 from the Windows Certificate Store.
 6. The Secure Login Client uses the client certificate of the caller to authenticate the caller's identity via SNC against SAP.
 7. The XU server extracts data with the identity and privileges of the caller.
 8. The XU server loads the extracted data from 7 to the tool that triggered the extraction.
@@ -89,11 +90,11 @@ This is the same partner name as the SNC name used to set up the SAP GUI.
 8. Enter the technical name of the Active Directory Certificate Template used to authenticate SAP users.
 9. Enter the thumbprint of the certificate of the enrollment agent.
 If you don't know the name or thumbprint, consult the IT department that manages the Active Directory Certificate Services.
-10. Click **[Test Client Connection]** to test your connection settings.
+10. Click **[Test Designer Connection]** to test your connection settings.
 11. Click **[OK]** to confirm your input.
 
 {: .box-tip }
-**Tip:** Create new extraction in the test environment wit an SAP connection that uses **Plain Authentication**.
+**Tip:** Create new extractions in the test environment with an SAP connection that uses **Plain Authentication**.
 Change the SAP source when moving the extraction to the productive environment.
 
 

@@ -32,7 +32,6 @@ Single Sign-On (SSO) mit Xtract-Produkten lässt sich über drei unterschiedlich
 Secure Network Connection (SNC) ermöglicht die Authentisierung und Transportverschlüsselung zwischen SAP Systemen untereinander, sowie zwischen SAP und Third-Party-Systemen wie Xtract Universal und BOARD Connector.
 Für mehr Informationen zu SNC, siehe [SAP Dokumentation: Secure Network Communications](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/LATEST/de-DE/e656f466e99a11d1a5b00000e835363f.html).
 
-
 ## SSO und SNC mit Client-Zertifikaten
 
 ### Voraussetzungen
@@ -69,7 +68,7 @@ Dies ist derselbe Partnername, der auch bei der Einrichtung von SAP GUI als SNC-
 8. Geben Sie den technischen Namen des Active Directory Certificate Templates an, das für die Authentisierung von SAP Benutzern verwendet wird.
 9. Geben Sie den Thumbprint des Zertifikats des Enrollment Agents an. 
 Wenn Sie den techn. Namen oder den Thumbprint nicht kennen, wenden Sie sich an die IT-Abteilung, welche die Active Directory Certificate Services betreut.
-10. Klicken Sie auf **[Test Client Connection]**, um Ihre Verbindungseinstellungen zu überprüfen.
+10. Klicken Sie auf **[Test Designer Connection]**, um Ihre Verbindungseinstellungen zu überprüfen.
 11. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
 
 {: .box-tip }

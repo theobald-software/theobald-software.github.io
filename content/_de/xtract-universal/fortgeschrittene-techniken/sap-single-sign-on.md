@@ -57,8 +57,10 @@ Die folgende Grafik zeigt den Prozess der Authentifizierung über *SSO Certifica
 1. Der Benutzer des BI-Tools (Caller) startet eine Extraktion, indem er den XU-Webservice aufruft.
 Der Benutzer authentifiziert sich mit seiner Active Directory Identität gegen den XU-Webservice über HTTPS und SPNEGO.
 2. Der XU Server prüft, ob im Certificate Store bereits ein Zertifikat, für den Caller vorhanden ist.
-Falls kein Client-Zertifikat für den Caller vorhanden ist, wird über den Windos Enrollment Agent ein Zertifikat ausgestellt. <br>
-a) Der XU Server fordert über die Windows API das Client-Zertifikat des Callers vom Winows Certificate Store an. <br>
+Falls kein Client-Zertifikat für den Caller vorhanden ist, wird über den Windows Enrollment Agent ein Zertifikat ausgestellt. <br>
+a) Der XU Server fordert über die Windows API das Client-Zertifikat des Callers vom Winows Certificate Store an. 
+Falls ein Zertifikat gefunden wird, geht es mit Schritt 3) weiter.
+Falls in kein Zertifikat gefunden wird, folgen die Schritte 2b) bis 2e).<br>
 b) Der XU Server fordert über die Windows API ein Enrollment Agent Zertifikat vom Windows Certificate Store an. 
 Das Enrollment Agent Zertifikat kann verwendet werden, um Client-Zertifikate auszustellen.<br>
 c) Der XU Server erhält vom Windows Certificate Store das Enrollment Agent Zertifikat. <br>
@@ -66,7 +68,7 @@ d) Falls in 2a) im Windows Certificate Store kein Zertifikat für den Caller gef
 e) Der Windows Certificate Store erhält über MSRPC von den Active Directory Services das Client-Zertifikat für den Caller. 
 3. Der XU Server erhält vom Windows Certificate Store das Client-Zertifikat des Callers aus Schritt 2.
 4. Der XU Server konfiguriert über die Windows Registry den SAP Secure Login Client.
-5. Der Secure Login Client erhält das vom XU Server angegebene Client-Zertifikat des Callers aus dem Windows Certificate Store.
+5. Der Secure Login Client erhält das in Schritt 4 vom XU Server angegebene Client-Zertifikat des Callers aus dem Windows Certificate Store.
 6. Der Secure Login Client authentifiziert sich mit dem Client-Zertifikat des Callers via SNC gegen SAP.
 7. Der XU Server extrahiert mit der Identität und den Zugriffsrechten des Callers die Daten via RFC aus SAP.
 8. Der XU Server sendet die extrahierten Daten aus 7. an den Aufrufer.
@@ -89,7 +91,7 @@ Dies ist derselbe Partnername, der auch bei der Einrichtung von SAP GUI als SNC-
 8. Geben Sie den technischen Namen des Active Directory Certificate Templates an, das für die Authentisierung von SAP Benutzern verwendet wird.
 9. Geben Sie den Thumbprint des Zertifikats des Enrollment Agents an. 
 Wenn Sie den Namen oder den Thumbprint nicht kennen, wenden Sie sich an die IT-Abteilung, welche die Active Directory Certificate Services betreut.
-10. Klicken Sie auf **[Test Client Connection]**, um Ihre Verbindungseinstellungen zu überprüfen.
+10. Klicken Sie auf **[Test Designer Connection]**, um Ihre Verbindungseinstellungen zu überprüfen.
 11. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
 
 {: .box-tip }

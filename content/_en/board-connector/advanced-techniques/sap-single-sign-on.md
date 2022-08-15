@@ -70,13 +70,12 @@ This is the same partner name as the SNC name used to set up the SAP GUI.
 8. Enter the technical name of the Active Directory Certificate Template used to authenticate SAP users.
 9. Enter the thumbprint of the certificate of the enrollment agent.
 If you don't know the name or thumbprint, consult the IT department that manages the Active Directory Certificate Services.
-10. Click **[Test Client Connection]** to test your connection settings.
+10. Click **[Test Designer Connection]** to test your connection settings.
 11. Click **[OK]** to confirm your input.
 
 {: .box-tip }
 **Tip:** Create new extraction in the test environment wit an SAP connection that uses **Plain Authentication**.
 Change the SAP source when moving the extraction to the productive environment.
-
 
 ### Related Links
 - [SAP Documentation: Secure Network Communications](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true)
