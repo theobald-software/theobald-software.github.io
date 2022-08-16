@@ -39,7 +39,7 @@ Specifies the host address of the SQL Server. Please note the following syntax:
 It is only necessary to specify the port if it has been edited outside the SQL standard.
 
 **Require TLS encryption**<br>
-Client-side enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following paramenters to the connection string:<br>
+Client-side enforcement for using [TLS encrpytion](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query#tls-considerations-for-sql-database-connectivity). Adds the following parameters to the connection string:<br>
 * Encrypt = On
 * TrustServerCertificate = Off
 <br>
@@ -54,7 +54,7 @@ Uses the service account, under which the XU service is running, for authenticat
 **Impersonate authenticated caller**<br>
 Uses the Windows AD user, executing the extraction, for authentication against SQL Server using [Kerberos authentication.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
 <br>
-For using this functionality a similar configuration as for [Kerberos Single Sign On against SAP](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc) is required.
+For using this functionality a similar configuration as for [Kerberos Single Sign On against SAP](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) is required.
 
 
 **User Name**<br>

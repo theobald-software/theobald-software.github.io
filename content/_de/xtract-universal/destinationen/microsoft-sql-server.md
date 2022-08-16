@@ -54,7 +54,7 @@ Verwendet den Service Account, unter dem der XU Service läuft, um sich am SQL S
 **Impersonate authenticated caller**<br>
 Verwendet den Windows AD Benuzer, der die Extraktion ausführt, um sich am SQL Server zu authentisieren [Kerberos Authentisierung.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)
 <br>
-Hierfür ist eine ähnliche Konfiguration wie beim [Kerberos Single Sign On](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc) gegen ein SAP System notwendig.
+Hierfür ist eine ähnliche Konfiguration wie beim [Kerberos Single Sign On](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) gegen ein SAP System notwendig.
 
 **User Name**<br>
 SQL Server Authentisierung - User Name 
