@@ -46,7 +46,7 @@ The usage of *SSO Certificate* requires the correct characteristics of the archi
 The Secure Login Client ensures that the correct SNC library is available for *SSO Certificate*.
 This library is used to open the SAP connection.
 - The BC service must run under a Windows AD Service account, see [Run an Xtract Universal Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account) for reference.
-- Set up access restrictions for the BOARD Connector Designer and the BC server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](../../security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
+- Set up access restrictions for the BOARD Connector Designer and the BC server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](../security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
 
 For more information on how to set up SSO and SNC with client certificates, see [Knowledge Base Article: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 

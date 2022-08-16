@@ -45,7 +45,7 @@ Voraussetzung für die Verwendung der *SSO Certificate* Funktion ist die konkret
 Der Secure Login Client stellt sicher, dass die korrekte SNC Bibliothek für das Szenario verfügbar ist. 
 Die Bibliothek wird mit dem Secure Login Client geliefert und wird beim Öffnen der SAP-Verbindung verwendet.
 - Der BC-Service muss unter einem Windows AD Service Account ausgeführt werden, siehe auch [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/service-account).
-- Richten Sie für Ihre AD Benutzer eine Zugriffsbeschränkung auf den BOARD Connector Designer und den Server ein, siehe [Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung)](../../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung).<br>
+- Richten Sie für Ihre AD Benutzer eine Zugriffsbeschränkung auf den BOARD Connector Designer und den Server ein, siehe [Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung)](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung).<br>
 
 Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit Client-Zertifikaten, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 

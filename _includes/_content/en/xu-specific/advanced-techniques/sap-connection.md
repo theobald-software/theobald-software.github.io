@@ -45,7 +45,7 @@ For more information, see [SAP Documentation: SAP-Router](https://help.sap.com/v
 The following authentication methods are supported:
 - *Plain*: SAP username and password (system or dialogue user).
 - *Secure Network Communication (SNC)*: username and password, basic authentication, SSO with Kerberos, SSO with digital certificates.
-- *SAP Log On Ticket*: see [SAP Log On Ticket](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket).
+- *SAP Log On Ticket*: see [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 ![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
@@ -88,7 +88,7 @@ Instead, SAP credentials need to be provided via basic authentication when execu
 This option activates Kerberos SSO.
 The Windows Active Directory user is used for authentication.
 For this scenario "HTTPS - Restricted to AD users with Designer read access" must be selected and configured in the [Server Settings](../server/server-settings#web-server).
-For more information, see [SSO with Kerberos SNC](../advanced-techniques/sap-single-sign-on/sso-with-kerberos-snc).
+For more information, see the knowledge base article [SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
 
 **Enroll certificate on behalf of caller (Certificate SSO)** <br>
 This option activates Certificate SSO.
@@ -97,9 +97,11 @@ The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf
 - "HTTPS - Restricted to AD users with Designer read access" must be configured in the [Server Settings](../server/server-settings#web-server).
 - The SAP Secure Login Client must be installed on the machine that runs the XU or BC server.
 
+For more information, see the knowledge base article [SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
+
 ### SAP Logon Ticket
 
-For information on how to use an authentication with SAP Logon Tickets, see [**SAP Log On Ticket**](../advanced-techniques/sap-single-sign-on/sso-with-sap-logon-ticket).
+For information on how to use an authentication with SAP Logon Tickets, see the knowledge base article [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 
 ### RFC Options

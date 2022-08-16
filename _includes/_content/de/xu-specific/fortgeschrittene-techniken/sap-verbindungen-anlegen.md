@@ -45,8 +45,8 @@ Für mehr Informationen, siehe [SAP Dokumentation: SAP-Router](https://help.sap.
 ### Authentication 
 Die folgenden Authentifizierungsmethoden werden unterstützt:
 - *Plain*: SAP-Benutzername und Passwort (System- oder Dialogbenutzer).
-- *Secure Network Communication (SNC)*: Benutzername und Passwort, Basisauthentifizierung, SSO mit Kerberos, SSO mit digitalen Zertifikaten.
-- *SAP Log On Ticket*: siehe [SAP Log On Ticket](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket).
+- *Secure Network Communication (SNC)*: Benutzername und Passwort, Basic Authentifizierung, SSO mit Kerberos, SSO mit Zertifikaten.
+- *SAP Log On Ticket*: siehe [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 ![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
@@ -88,7 +88,7 @@ Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierun
 Diese Einstellung aktiviert Kerberos SSO.  
 Die Authentifizierung erfolgt über den Windows Active Directory Benutzer des Aufrufers. 
 Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server_einstellungen#web-server) ausgewählt und eingestellt werden.
-Für mehr Informationen, siehe [SSO mit Kerberos SNC](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-kerberos-snc).
+Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
 
 **Enroll certificate on behalf of caller (Certificate SSO)** <br>
 Diese Einstellung aktiviert Certifcate SSO. 
@@ -97,9 +97,10 @@ Die Authentifizierung erfolgt über ein Certificate Enrollment (Enroll-On-Behalf
 - "HTTPS - Restricted to AD users with Designer read access" muss in den [Server Settings](../server/server_einstellungen#web-server) eingestellt sein.
 - Der SAP Secure Login Client muss auf der Maschine, auf dem der XU- oder BC-Server läuft, installiert sein.
 
+Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 
 ### SAP Logon Ticket
-Für Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [**SAP Log On Ticket**](../fortgeschrittene-techniken/sap-single-sign-on/sso-mit-sap-logon-ticket).
+Für Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 ### RFC Options
 Wählen Sie eine Bibliothek aus und definieren Sie optional ein Verzeichnis für das Debug-Logging.
