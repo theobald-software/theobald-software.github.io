@@ -66,11 +66,11 @@ Der ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen. SNC mi
 - Der BI Client (der die Extraktion aufruft) läuft unter Windows.
 - Als SNC-Lösung wird die SAP Kerberos Wrapper Library (gsskrb5) verwendet.
 
-Für detailierte Informationen über die Einrichtung von SSO und SNC mit Kerberos Wrapper Library, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
-
 {: .box-note }
 **Hinweis:** Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werden - z.B. SAPs Common Crypto Library **oder** gsskrb5, aber nicht beides gleichzeitig.
 SSO und SNC mit Kerberos Wrapper Library funktioniert ausschließlich mit der gsskrb5 Bibliothek. 
+
+Für detailierte Informationen über die Einrichtung von SSO und SNC mit Kerberos Wrapper Library, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
 
 
 ### SSO via SAP Logon Ticket

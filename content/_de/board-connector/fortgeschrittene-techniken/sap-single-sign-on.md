@@ -50,7 +50,7 @@ Die Bibliothek wird mit dem Secure Login Client geliefert und wird beim Öffnen 
 Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit Client-Zertifikaten, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 
 
-## SSO und SNC mit Kerberos Wrapper Library
+### SSO und SNC mit Kerberos Wrapper Library
 
 {: .box-warning }
 **Warnung! Die Kerberos Wrapper Library (gx64krb5.dll) wird offiziell nicht mehr von SAP unterstützt.**
@@ -59,27 +59,26 @@ Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufruf
 **Warnung! Single Sign-On Verfügbarkeit** <br> 
 Der ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen. SNC mit Kerberos-Verschlüsselung muss auf SAP-Seite eingestellt sein. <br>
 
-### Voraussetzungen
+#### Voraussetzungen
 
 - Der SAP ABAP Applikationsserver läuft unter einem Windows Betriebssystem. 
 - Der BI Client (der die Extraktion aufruft) läuft unter Windows.
 - Als SNC-Lösung wird die SAP Kerberos Wrapper Library (gsskrb5) verwendet.
 
-Für Informationen über die Einrichtung von SSO und SNC mit Kerberos Wrapper Library, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
-
 {: .box-note }
 **Hinweis:** Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werden - z.B. SAPs Common Crypto Library **oder** gsskrb5, aber nicht beides gleichzeitig.
 SSO und SNC mit Kerberos Wrapper Library funktioniert ausschließlich mit der gsskrb5 Bibliothek. 
 
+Für Informationen über die Einrichtung von SSO und SNC mit Kerberos Wrapper Library, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
 
-## SSO via SAP Logon Ticket
+### SSO via SAP Logon Ticket
 
 Falls SNC mit Client-Zertifikaten oder SNC mit SAPs Kerberos Wrapper Library nicht umgesetzt werden können, gibt es die Möglichkeit das SAP/AD-Benutzermapping über ein SAP Portal (SAP Web AS) ohne SNC umzusetzen.
 
 Damit wäre SSO auch möglich, allerdings ist die Verbindung dann nicht verschlüsselt, was bei SNC der Fall wäre. 
 Die SAP Applikationsserver müssen dementsprechend nur für SAP Logon Tickets konfiguriert werden und nicht für SNC.
 
-### Voraussetzungen
+#### Voraussetzungen
 Eine SAP-Verbindung ist über Single-Sign-On (SSO) mit SAP Logon Ticket möglich. Das grundlegende Szenario sieht dabei folgendermaßen aus:<br>
 - Es gibt eine AS Java Instanz, welche für SPNEGO/Kerberos Authentisierung eingerichtet ist. 
 - Auf der AS Java Instanz besteht ein Mapping von Windows AD-Benutzern auf SAP-Benutzer (== Ticket Issuer).
