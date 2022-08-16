@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 
-## Use case
+### Use case
 
 BI client tools such as Power BI, Power Pivot, Alteryx, etc. can start extractions in Xtract products, e.g., Xtract Universal or BOARD Connector). 
 Xtract products load the extracted data directly into the tools.

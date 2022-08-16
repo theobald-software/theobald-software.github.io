@@ -11,7 +11,7 @@ weight: 6
 lang: de_DE
 ---
 
-## Anwendungsfall
+### Anwendungsfall
 
 BI Client Tools wie z.B. Power BI, Power Pivot, Alteryx, etc. können Extraktionen in Xtract-Produkten (z.B. Xtract Universal oder BOARD Connector) starten. 
 Die extrahierten Daten werden von Xtract-Produkten direkt in die genannten Tools geladen.
