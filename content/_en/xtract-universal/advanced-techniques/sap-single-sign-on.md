@@ -35,9 +35,9 @@ Secure Network Connection (SNC) enables authentication and transport encryption 
 For more information on SNC, see [SAP Help: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
 
 
-## SSO and SNC with Client Certificates
+### SSO and SNC with Client Certificates
 
-### Requirements
+#### Requirements
 
 The usage of *SSO Certificate* requires the correct characteristics of the architecture:
 - Implement SAP SSO  with X.509 certificates without Secure Login Server, see [SAP-Documentation: Authentication Methods without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/LATEST/en-US/7c45fe620ab9469083f7ab50a9008c37.html).
