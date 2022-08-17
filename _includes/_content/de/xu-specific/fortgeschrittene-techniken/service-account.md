@@ -4,7 +4,7 @@ In den folgenden Szenarien muss der Dienst stattdessen unter einem Windows Diens
 
 - [Kerberos Authentifizierung](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung) für den Xtract Universal Webserver verwenden.
 - Windows Authentizizierung für eine Xtract Universal Destination verwenden, die Windows-Anmeldedaten erlauben (z.B. SQL Server Destination, PostgreSQL Destination).
-- [SSO mit Kerberos SNC](./sap-single-sign-on/sso-mit-kerberos-snc) verwenden.
+- [SSO mit Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) verwenden.
 - [SSO mit SAP Logon Tickets](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 Dieser Abschnitt enthält Informationen darüber, wie man den Xtract Universal Dienst unter einem Dienstkonto ausführt.
@@ -35,7 +35,7 @@ Mit dem ```setspn``` Befehl können die SPNs eines Benutzerkontos eingesehen wer
 
 ### Einstellungen für SSO mit Kerberos SNC
 
-Wenn Sie [SSO mit Kerberos SNC](./sap-single-sign-on/sso-mit-kerberos-snc) verwenden, sind zusätzliche Schritte nötig:<br>
+Wenn Sie [SSO mit Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) verwenden, sind zusätzliche Schritte nötig:<br>
 
 1. Konfigurieren Sie für das Windows Dienstkonto, unter dem der Xtract Universal Dienst ausgeführt wird, eine eingeschränkte Delegierung.
 ![xu_service_account_constr_deleg](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}
