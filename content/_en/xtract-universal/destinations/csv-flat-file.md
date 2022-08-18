@@ -66,7 +66,7 @@ The following settings can be defined for the destination:
  
 ### Existing files
 **Replace file**: The export process overwrites existing files.<br>
-**Append results**: The export process appends new data to an already existing file.<br>
+**Append results**: The export process appends new data to an already existing file. See also [Column Mapping](#column-mapping).<br>
 **Abort extraction**: The process is aborted, if the file already exists.  
 
 ### File Splitting
@@ -81,3 +81,13 @@ The value set in *Max. file size* determines the maximum size of each file.
 {: .box-note }
 **Note:** The option *Max. file size* does not apply to gzip files. 
 The size of a gzipped file cannot be determined in advance.
+
+### Column Mapping
+Activate **Column Mapping** when appending data to an existing file that has a different number of columns than the extracted data.
+1. Click **[...]** and select the file you want to extend with your data. Supported are .csv and .hyper files.
+2. Click **[Map]** to assign collumns. The window "Column Mapping" opens.<br>
+![Column-Mapping](/img/content/column-mapping.png){:class="img-responsive"}
+3. If the column names of the extraction match the column names in the file, click **[Auto map by name]**.<br>
+If the column names do not match, assign columns manually by selecting the destination column corresponding to the SAP column from the dropdown menu.
+4. Click **[OK]** to confirm your input.
+

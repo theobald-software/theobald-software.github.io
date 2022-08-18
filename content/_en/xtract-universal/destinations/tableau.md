@@ -98,7 +98,16 @@ The following settings can be defined for the destination:
 **Note:** When *Append results* is selected, Xtract Universal maps the columns from the running extraction with the columns of the existing Tableau file. 
 The mapping is based on the column names.
 To use the mapping function, make sure that the tableau folder in the installation directory of Xtract Universal is up to date, see [download latest tableau folder](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip). 
-Note that the number of columns must match.
+Note that the number of columns must match. If the number or names of the columns does not match, use **Column Mapping**.
+
+### Column Mapping
+Activate **Column Mapping** when appending data to an existing file that has different column names or a that has a different number of columns.
+1. Click **[...]** and select the file you want to extend with your data. Supported are .csv and .hyper files.
+2. Click **[Map]** to assign collumns. The window "Column Mapping" opens.<br>
+![Column-Mapping](/img/content/column-mapping.png){:class="img-responsive"}
+3. If the column names of the extraction match the column names in the file, click **[Auto map by name]**.<br>
+If the column names do not match, assign columns manually by selecting the destination column corresponding to the SAP column from the dropdown menu.
+4. Click **[OK]** to confirm your input.
 
 *****
 ## Related Links

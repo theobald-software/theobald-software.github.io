@@ -68,8 +68,8 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ### Existing files 
 
 **Replace file**: eine vorhandene Zieldatei wird überschrieben. <br>
-**Append results**: Daten werden an eine bereits bestehende Zieldatei angehängt. <br>
-**Abort extraction**: Der Prozess wird abgebrochen, falls eine Zeildatei bereits existiert.   
+**Append results**: Daten werden in einer bereits existierenden Zieldatei ergänzt. Siehe auch [Column Mapping](#column-mapping).<br>
+**Abort extraction**: Der Prozess wird abgebrochen, falls eine Zieldatei bereits existiert.   
 
 ### File Splitting
 
@@ -83,3 +83,13 @@ Geben Sie die Maximalgröße der einzelnen Dateien ein, die abgelegt werden soll
 {: .box-note }
 **Note:** Die Option *Max. file size* wird nicht von gzip-Dateien unterstützt.
 Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus bestimmt werden.
+
+### Column Mapping
+Verwenden Sie **Column Mapping** wenn Sie Daten in einer bereits bestehende Zieldatei ergänzen und Sie Spalten manuell zuweisen müssen.
+1. Klicken Sie auf **[...]**, um die Datei auszuwählen, die Sie ergänzen möchten.
+Unterstützt werden .csv und .hyper Dateien.
+2. Klicken Sie auf **[Map]**, um Spalten zuzuweisen. Das Fenster "Column Mapping" öffnet sich.<br>
+![Column-Mapping](/img/content/column-mapping.png){:class="img-responsive"}
+3. Wenn die Spaltennamen der Extraktion dieselben sind wie in der ausgewählten Datei, klicken Sie auf **[Auto map by name]**.<br>
+Wenn die Spaltennamen nicht übereinstimmen, wählen Sie die entsprechenden Spalten der Zieldatei über das Dropdown-Menü aus.
+4. Klicken Sie auf **[OK]**, um Ihre Auswahl zu bestätigen.
