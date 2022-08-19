@@ -17,9 +17,22 @@ Beispiel: <br>
 ```#{ Extraction.TableName }# ```
 
 {: .box-note }
-**Hinweis:** Bei XU-spezifischen benutzerdefinierten Ausdrücken wird zwischen Groß- und Kleinschreibung unterschieden. Es muss die exakte Syntax wie auf dieser Seite dokumentiert verwendet werden.
+**Hinweis:** Bei XU-spezifischen benutzerdefinierten Ausdrücken wird zwischen Groß- und Kleinschreibung unterschieden. 
+Es muss die exakte Syntax wie auf dieser Seite dokumentiert verwendet werden.
 
-### Skript-Ausdrücke auf Basis von .NET 
+#### IF-Anweisung 
+
+Eine IF-Anweisung (ternärer Operator) hat die folgende Syntax: ```iif([bool condition], [string trueResult], [string falseResult])```
+
+**Beispiele:** 
+
+| Eingabe                                                  | Ausgabe  | Beschreibung|
+|:--------------------------------------------------------|:---------|:-------|
+|```#{ iif(DateTime.Now.Month==7, "July","Unknown")}# ```| Juli     | Wenn wir uns im 7. Monat befinden, ist der Ausgang "Juli", alles andere ist "Unbekannt".|
+|```#{Extraction.ExtractionName}##{ iif(string.IsNullOrEmpty(Extraction.Context), string.Empty, "/" + Extraction.Context)}#```|| *Extraction.Context*  liefert nur bei ODP-Extraktionen ein Ergebnis. Bei allen anderen Extraktionstypen ist das Ergebnis leer. Wenn der Extraktionsname 'SAP_1' und der Extraktionstyp 'Tabelle' ist, würde der resultierende Dateipfad ```SAP_1/[filename]``` lauten. Wenn der Extraktionsname 'SAP_2' und der Extraktionstyp 'ODP' ist und eine SAP DataSource (Extraktionskontext: SAPI) extrahiert wird, wäre der resultierende Dateipfad ```SAP_2/SAPI/[filename]```. 
+
+
+#### Skript-Ausdrücke auf Basis von .NET 
 Die Skript-Ausdrücke von Xtract Universal unterstützen die folgenden .NET-Objekte, -Eigenschaften und -Methoden aus dem .NET-Systemnamensraum des aktuellen [.NET-Frameworks](https://help.theobald-software.com/de/xtract-universal/einfuehrung/systemvoraussetzungen#andere-anwendungen-und-frameworks):
 
 *Object*,
@@ -48,7 +61,7 @@ Die Skript-Ausdrücke von Xtract Universal unterstützen die folgenden .NET-Obje
 [.NET-Klassen und deren Eigenschaften und Methoden](https://docs.microsoft.com/en-us/dotnet/api/system?redirectedfrom=MSDN&view=netframework-4.7.2) einschließlich 
 [DateTime](https://docs.microsoft.com/de-DE/dotnet/api/system.datetime?view=net-5.0) und [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2) finden Sie in der Online-Dokumentation von Microsoft.
 
-**Beispiele:**
+### Datumskonvertierung mit Skript-Ausdrücken
 
 |   Eingabe                         | Ausgabe                                                                         | Beschreibung              |
 |:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|
@@ -56,6 +69,11 @@ Die Skript-Ausdrücke von Xtract Universal unterstützen die folgenden .NET-Obje
 |```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | yyyy0101 | Aktuelles Datum verkettet mit "0101"           |
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Aktuelles Datum verkettet mit "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Aktuelles Datum verkettet mit "0101""           |
+
+### Strings Bearbeiten mit Skript-Ausdrücken
+
+|   Eingabe                         | Ausgabe                                                                         | Beschreibung              |
+|:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|
 |```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```                    | BIO/TMATERIAL | Entfernt einen führenden Schrägstrich, z.B. bei /BIO/TMATERIAL, damit kein leeres Verzeichnis angelegt wird.
 |```#{Extraction.SapObjectName.Replace('/', '_')}#``` | _BIO_TMATERIAL | Entfernt alle Schrägstriche eines SAP Objekts, z.B. /BIO/TMATERIAL. Dadurch wird verhindert, dass die Schrägstriche innerhalb des Namens des SAP Objekts, nicht als Verzeichnistrenner interpretiert werden.         |
 
@@ -64,29 +82,27 @@ Die Skript-Ausdrücke von Xtract Universal unterstützen die folgenden .NET-Obje
 {: .box-note }
 **Hinweis:** Skript-Ausdrücke als Auswahlparameter für Extraktionen wird derzeit nur für die Table- und DeltaQ-Komponenten unterstützt.
 
+**Anwendungsfall:**<br>
 Skript-Ausdrücke können als Auswahlparameter in Tabellen- oder DeltaQ-Extraktionen verwendet werden. 
 Sie werden normalerweise verwendet, um ein dynamisches Datum auf der Basis des aktuellen Datums zu bestimmen. 
 Bei Tabellenextraktionen werden sie als Teil der [WHERE Bedingung](../table/where-bedingung) verwendet.
 
-Dieses Szenario unterstützt:
-- Skript-Ausdrücke, die auf .NET basieren
+| Eingabe                                                  | Beschreibung|
+|:--------------------------------------------------------|:-----------|
+|```[Feldname][Leerzeichen][Operator][Leerzeichen]'#[Skript-Ausdruck]#' ```|  Filtert Table Daten in einer WHERE Bedingung|
 
-{: .box-note }
-**Hinweis:** Bei Verwendung einer WHERE-Bedingung muss der Wert in einfachen Anführungszeichen angegeben werden.<br>
-*Syntax:* ```[Feldname][Leerzeichen][Operator][Leerzeichen]'#[Skript-Ausdruck]#'```<br>
-*Beispiel:* ```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("yyyyMMdd")}#'```
+Example: ```BUDAT >= '#{DateTime.Now.AddDays(-30).ToString("yyyyMMdd")}#``` |  
+
+
 
 ### Skript-Ausdrücke als dynamische Ordnerpfade verwenden
 
 {: .box-note }
 **Hinweis:** Skript-Ausdrücke als dynamische Ordnerpfade wird derzeit nur für die Destinationen Azure Storage und Amazon AWS S3 unterstützt.
 
+**Anwendungsfall:**<br>
 In diesem Szenario werden Skript-Ausdrücke zur Generierung eines dynamischen Ordnerpfads für Destinationen verwendet, die flachen Dateien (Flat Files) schreiben. 
 Dadurch kann ein Ordnerpfad generiert werden, der sich aus den Eigenschaften einer Extraktion zusammensetzt, z.B. Extraktionsname, SAP-Quellobjekt.
-
-Dieses Szenario unterstützt:
-- Skript-Ausdrücke, die auf .NET basieren
-- XU-spezifische, benutzerdefinierte Skript-Ausdrücke
 
 Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unterstützt: 
 
@@ -101,7 +117,7 @@ Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unter
 |```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Eingabewert einer definierten Selektion / Filter bei ODP-Extraktionen.|  
 
 
-**Beispiele:** 
+**Beispiel:** 
 
 | Eingabe                                                   | Ausgabe   | Beschreibung|
 |:--------------------------------------------------------|:---------|:-------|
@@ -109,11 +125,8 @@ Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unter
 
 ### Skript-Ausdrücke in Datenbank-Destinationen verwenden
 
+**Anwendungsfall:**<br>
 In diesem Szenario werden Skript-Ausdrücke als Teil einer benutzerdefinierten SQL-Anweisung verwendet (siehe [Beispiel](https://help.theobald-software.com/de/xtract-universal/destinationen/microsoft-sql-server#custom-sql-1)).
-
-Dieses Szenario unterstützt:
-- Skript-Ausdrücke, die auf .NET basieren
-- XU-spezifische, benutzerdefinierte Skript-Ausdrücke
 
 Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unterstützt: 
 
@@ -124,27 +137,5 @@ Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unter
 |```#{Extraction.RunState}# ```|  Status der Extraktion (Running, FinishedNoErrors, FinishedErrors) |
 |```#{(int)Extraction.RunState}# ```|  Status der Extraktion als Return-Code (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors) |
 |```#{Extraction.Timestamp}# ```|  Zeitstempel der Extraktion  |
-
-Die folgende XU-spezifische, benutzerdefinierte Funktion kann verwendet werden:
-
-| Eingabe                                                  | Beschreibung|
-|:--------------------------------------------------------|:-------|
 |``` bool ExistsTable(string tableName) ``` | Prüft, ob die Tabelle auf der Datenbank-Destination existiert. |
 
-### IF-Anweisung 
-
-Eine IF-Anweisung (ternärer Operator) wird unterstützt und hat die folgende Syntax: ```iif([bool condition], [string trueResult], [string falseResult])```
-
-**Beispiele:** 
-
-| Eingabe                                                  | Ausgabe  | Beschreibung|
-|:--------------------------------------------------------|:---------|:-------|
-|```#{ iif(DateTime.Now.Month==7, "July","Unknown")}# ```| Juli     | Wenn wir uns im 7. Monat befinden, ist der Ausgang "Juli", alles andere ist "Unbekannt".|
-|```#{Extraction.ExtractionName}##{ iif(string.IsNullOrEmpty(Extraction.Context), string.Empty, "/" + Extraction.Context)}#```|| *Extraction.Context*  liefert nur bei ODP-Extraktionen ein Ergebnis. Bei allen anderen Extraktionstypen ist das Ergebnis leer. Wenn der Extraktionsname 'SAP_1' und der Extraktionstyp 'Tabelle' ist, würde der resultierende Dateipfad ```SAP_1/[filename]``` lauten. Wenn der Extraktionsname 'SAP_2' und der Extraktionstyp 'ODP' ist und eine SAP DataSource (Extraktionskontext: SAPI) extrahiert wird, wäre der resultierende Dateipfad ```SAP_2/SAPI/[filename]```. 
-
-### Unterstützte Schlüsselwörter
-
-Die folgenden Schlüsselwörter werden unterstützt: 
-- true
-- false
-- null
