@@ -201,7 +201,16 @@ Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-uni
 
 {% include _content/de/xu-specific/destinationen/general/transaction-style.md %}
 
+### Empty Values
 
+{: .box-warning }
+**Warnung! NULL result in a non-nullable column.**
+Standardmäßig werden leere Strings in Snowflake zu Null-Werten konvertiert. 
+Um die Konvertierung nicht durchzuführen, deaktivieren Sie **Replace empty values with SQL NULL**.
+
+**Replace empty values with SQL NULL**<br>
+Diese Option kontrolliert den Snowflake Parameter EMPTY_FIELD_AS_NULL.
+Wenn **Replace empty values with SQL NULL** aktiv ist, werden leere Strings beim Upload nach Snowflake zu NULL-Werten konvertiert.
 
 ## Daten Mergen
 

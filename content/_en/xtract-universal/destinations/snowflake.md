@@ -201,6 +201,17 @@ You can use [script expressions](https://help.theobald-software.com/en/xtract-un
 
 {% include _content/en/xu-specific/destinations/general/transaction-style.md %}
 
+### Empty Values
+
+{: .box-warning }
+**Warning! NULL result in a non-nullable column.**
+By default empty strings are converted to NULL values when uploading data to Snowflake. To deactivate the conversion, disable **Replace empty values with SQL NULL**.
+
+**Replace empty values with SQL NULL**<br>
+This option controls the Snowflake file format parameter EMPTY_FIELD_AS_NULL.
+If **Replace empty values with SQL NULL** is active, empty strings are converted to NULL values when uploading data to Snowflake.
+
+
 ## Merging Data
 
 The following example depicts the update of the existing data records in a database by running an extraction to merge data. 
