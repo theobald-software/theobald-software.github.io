@@ -58,7 +58,7 @@ The following settings can be defined for the destination:
 ### Destination Settings
 
 ![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
-      
+
 {% include _content/en/xu-specific/destinations/general/file-name.md %}	 
 
 {% include _content/en/xu-specific/destinations/general/column-name-style.md %}	  
@@ -83,11 +83,16 @@ The value set in *Max. file size* determines the maximum size of each file.
 The size of a gzipped file cannot be determined in advance.
 
 ### Column Mapping
-Activate **Column Mapping** when appending data to an existing file that has a different number of columns than the extracted data.
+Activate **Column Mapping** to map the columns of an extraction to the columns of an existing file.
 1. Click **[...]** and select the file you want to extend with your data. Supported are .csv and .hyper files.
 2. Click **[Map]** to assign collumns. The window "Column Mapping" opens.<br>
 ![Column-Mapping](/img/content/column-mapping.png){:class="img-responsive"}
 3. If the column names of the extraction match the column names in the file, click **[Auto map by name]**.<br>
 If the column names do not match, assign columns manually by selecting the destination column corresponding to the SAP column from the dropdown menu.
 4. Click **[OK]** to confirm your input.
+5. If you want to append the extracted data to an existing file, select **Append results** in the section [Existing Files](#existing-files).<br>
+If you want to create a new file with the column names of the mapped destination file, select **Replace results**.
 
+{: .box-warning }
+**Warning! There was a problem retrieving the columns from the given source.**
+Make sure, that the user running Xtract Universal has read / write access to the folder that contains the destination file.

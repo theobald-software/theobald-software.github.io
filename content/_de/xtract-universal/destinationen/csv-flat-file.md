@@ -86,7 +86,8 @@ Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus 
 
 ### Column Mapping
 Verwenden Sie **Column Mapping** wenn Sie Daten in einer bereits bestehende Zieldatei ergänzen und Sie Spalten manuell zuweisen müssen.
-1. Klicken Sie auf **[...]**, um die Datei auszuwählen, die Sie ergänzen möchten.
+1. Wählen Sie im Abschnitt [Existing Files](#existing-files) die Option **Append results** aus.
+1. Klicken Sie auf **[...]**, um die Datei auszuwählen, die Sie erweitern möchten.
 Unterstützt werden .csv und .hyper Dateien.
 2. Klicken Sie auf **[Map]**, um Spalten zuzuweisen. Das Fenster "Column Mapping" öffnet sich.<br>
 ![Column-Mapping](/img/content/column-mapping.png){:class="img-responsive"}

@@ -96,9 +96,9 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 {% include _content/de/xu-specific/destinationen/general/existing-files.md %}
 
 {: .box-note }
-**Hinweis:** Wenn *Append results* aktiv ist, weist Xtract Universal die Spalten der laufenden Extraktion den Spalten der vorhandenen Tableau-Datei zu.
-Dieses Datenmapping basiert auf den Namen der jeweiligen Spalten. Die Anzahl der Spalten müssen übereinstimmen. Wenn Name oder Anzahl der Spalten nicht übereinstimmen, verwenden Sie **Column Mapping**.
-Um diese Mapping-Funktion zu nutzen, stellen Sie sicher, dass der Tableau-Ordner im Installationsverzeichnis von Xtract Universal auf dem aktuellen Stand ist, siehe [Download des aktuellen Tableau-Ordners](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip). 
+**Hinweis:** Wenn *Append results* aktiv ist, weist Xtract Universal die Spalten der laufenden Extraktion den Spalten der vorhandenen Tableau-Datei automatisch zu.
+Um diese Mapping-Funktion zu nutzen, müssen Namen und Anzahl der Spalten übereinstimmen. Für ein manuelles Mapping, siehe [Column Mapping](#column-mapping).
+Stellen Sie sicher, dass der Tableau-Ordner im Installationsverzeichnis von Xtract Universal auf dem aktuellen Stand ist, siehe [Download des aktuellen Tableau-Ordners](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip). 
 
 ### Column Mapping
 Verwenden Sie **Column Mapping** wenn Sie Daten in einer bereits bestehende Zieldatei ergänzen und Sie Spalten manuell zuweisen müssen.
