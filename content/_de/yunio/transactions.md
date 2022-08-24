@@ -33,7 +33,7 @@ Klicken Sie auf **[Stop]**, um die laufende Transaktion abzubrechen.<br>
 ![transaction](/img/content/yunio/transaction.png){:class="img-responsive"}
 3. Füllen Sie die Eingabefelder so aus, wie Sie es in der SAP GUI tun würden.
 4. Klicken Sie auf **[Submit]** (2), um Ihre Eingaben zu übergeben.
-Alle Aktionen, die Sie ausführend werden im Abschnitt *GUI Steps* aufgezeichnet (3). <br>
+Alle Aktionen die Sie ausführen, werden im Abschnitt *GUI Steps* aufgezeichnet (3). <br>
 ![transaction-ie01](/img/content/yunio/transaction-ie01.png){:class="img-responsive"}
 5. Klicken Sie auf **[Save]**, sobald alle Eingaben erledigt sind.
 
