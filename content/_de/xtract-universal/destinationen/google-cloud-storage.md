@@ -76,6 +76,10 @@ Wählen Sie "Desktop app" als Applikationstyp aus, vergeben Sie einen beliebigen
 Die "Client ID" und der "Client secret" sind für die Konfiguration der Destination in Xtract Universal notwendig (siehe [Verbindung](#verbindung)).
 ![xu-google-cloud-req-16](/img/content/xu/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 
+
+{: .box-note }
+Hinweis: Ab Version 5.11.16 unterstützt Xtract Universal auch die Authentifizierung über ein Dienstkonto. Voraussetzung ist, dass der Designer und der XU Server auf derselben Maschine laufen.
+
 ## Verbindung
 
 {% include _content/de/xu-specific/destinationen/general/connection.md %}	 
@@ -85,7 +89,19 @@ Die "Client ID" und der "Client secret" sind für die Konfiguration der Destinat
 
 ### GCS Settings
 
-#### Connection
+
+#### Connection Type
+
+- Wählen Sie **User Login**, um sich mit Ihrer OAuth Client ID einzuloggen, siehe [Connection Parameters](#connection-parameters).<br>
+- Wählen Sie **Service Account** um sich mit einem Dienstkonto einzuloggen, siehe [Service Acccount File Location](#service-acccount-file-location).
+
+{: .box-note }
+**Hinweis**: Um ein Dienstkonto für die Authentifizierung zu verwenden, müssen der Xtract Universal Designer und der XU Server auf derselben Maschine laufen.
+
+#### Connection Parameters
+
+Die folgenden Optionen sind nur verfügbar, wenn **User Login** als Authentifizierungsmethode ausgewählt ist.
+
 **Client ID**<br>
 *Client ID* erstellt im OAuth 2.0-Setup (siehe [Voraussetzungen](#requirements)).
 
@@ -94,12 +110,27 @@ Die "Client ID" und der "Client secret" sind für die Konfiguration der Destinat
 
 **Connect**<br>
 Verarbeitet den zuvor erstellten OAuth-Flow, um eine Verbindung mit dem Speicherkonto herzustellen.
-Wählend Sie Ihr Google-Konto aus und gewähren Sie Xtract Universal Zugriff in allen erforderlichen Fenstern. <br>
+Wählen Sie Ihr Google-Konto aus und gewähren Sie Xtract Universal Zugriff in allen erforderlichen Fenstern. <br>
 
 {: .box-note }
 **Hinweis**: Wenn Sie die Anwendung nicht verifiziert haben, erscheint ein Fenster mit der Meldung: "This App isn't verified" (Diese App ist nicht verifizert). Klicken Sie auf **[Advanced]** und **[Go to Xtract Universal (unsafe)]**. <br>  
 
 Nach einer erfolgreichen Verbindung erscheint die Meldung: "Authentication succeeded" (Authentifizierung erfolgreich)  im Browser. In Xtract Universal wird die Meldung "Connection established" (Verbindung hergestellt" in einem separaten Fenster angezeigt. <br>  
+
+#### Service Account File Location
+
+Die folgenden Optionen sind nur verfügbar, wenn **Service Account** als Authentifizierungsmethode ausgewählt ist.
+
+**Key File**<br>
+Das Dienstkonto wird über ein RSA Schlüsselpaar identifiziert.
+Wenn Sie die Schlüssel erstellen, erhalten Sie eine Dienstkontodatei von Google, die Informationen über das Konto enthält.
+Geben Sie das Verzeichnis an, in dem die Dienstkontodatei abgelegt ist. 
+Der Xtract Universal Designer und der XU Server müssen auf derselben Maschine laufen.
+
+**Connect**<br>
+Klicken Sie auf **[Connect]**, um eine Verbindung mit dem Speicherkonto herzustellen.
+Wählen Sie Ihr Google-Konto aus und gewähren Sie Xtract Universal Zugriff in allen erforderlichen Fenstern.
+
 
 #### Bucket
 Der Unterabschnitt "Bucket" kann nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden.<br>

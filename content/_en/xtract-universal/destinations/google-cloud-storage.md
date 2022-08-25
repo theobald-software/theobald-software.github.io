@@ -77,6 +77,9 @@ Select "Desktop app" as application type, give the app a name of your choice and
 The "Client ID" and the "Client secret" are needed for the destination configuration in Xtract Universal (see [Connection](#connection)).
 ![xu-google-cloud-req-16](/img/content/xu/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 
+{: .box-note }
+Note: As of version 5.11.16 Xtract Universal also supports authentication via a service account. Prerequisite is that the Designer and the XU server must run on the same machine.
+
 ## Connection
 
 {% include _content/en/xu-specific/destinations/general/connection.md %}	 
@@ -87,7 +90,18 @@ The "Client ID" and the "Client secret" are needed for the destination configura
 
 ### GCS Settings
 
-#### Connection
+#### Connection Type
+
+- Select **User Login** to log into Google Cloud Storage using the OAuth client ID authentication, see [Connection Parameters](#connection-parameters).<br>
+- Select **Service Account** to log into Google Cloud Storage using the credentials of a service account for authentication, see [Service Acccount File Location](#service-acccount-file-location).
+
+{: .box-note }
+**Note**: To use a service account for authentication, the Designer and the XU server must run on the same machine.
+
+#### Connection Parameters
+
+The following settings are only available if the *Connection Type* is set to **User Login**.
+
 **Client ID**<br>
 *Client ID* created in the OAuth 2.0 setup (see [Requirements](#requirements)).
 
@@ -102,6 +116,20 @@ Choose your Google account and grant access to Xtract Universal in all required 
 **Note**: If you did not verify the app, a window with the message: "This app isn't verified" is displayed. Click **[Advanced]** and **[Go to Xtract Universal (unsafe)]**. <br>  
 
 When a connection is successful, an "Authentication succeeded" message is displayed in the browser. In Xtract Universal a "Connection established" message is displayed in a separate window. <br>  
+
+#### Service Acccount File Location
+
+The following settings are only available if the *Connection Type* is set to **Service Account**.
+
+**Key File**<br>
+The service account is identified by a RSA key pair.
+When creating the keys, the user receives a service account file from Google containing information about the account.
+Provide the location of the service account file.
+Note that the Designer and the XU server must run on the same machine to use this authentication method.
+
+**Connect**<br>
+Click **[Connect]** to establish a connection with the storage account.
+Choose your Google account and grant access to Xtract Universal in all required windows. 
 
 #### Bucket
 The "Bucket" subsection can only be filled after a connection to the storage account has been established.<br>
