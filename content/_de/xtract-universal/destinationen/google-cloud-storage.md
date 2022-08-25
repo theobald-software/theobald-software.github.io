@@ -129,8 +129,6 @@ Der Xtract Universal Designer und der XU Server müssen auf derselben Maschine l
 
 **Connect**<br>
 Klicken Sie auf **[Connect]**, um eine Verbindung mit dem Speicherkonto herzustellen.
-Wählen Sie Ihr Google-Konto aus und gewähren Sie Xtract Universal Zugriff in allen erforderlichen Fenstern.
-
 
 #### Bucket
 Der Unterabschnitt "Bucket" kann nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden.<br>

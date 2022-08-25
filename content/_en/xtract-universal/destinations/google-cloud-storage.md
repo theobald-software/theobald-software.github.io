@@ -129,7 +129,6 @@ Note that the Designer and the XU server must run on the same machine to use thi
 
 **Connect**<br>
 Click **[Connect]** to establish a connection with the storage account.
-Choose your Google account and grant access to Xtract Universal in all required windows. 
 
 #### Bucket
 The "Bucket" subsection can only be filled after a connection to the storage account has been established.<br>
