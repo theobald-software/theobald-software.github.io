@@ -78,7 +78,7 @@ The "Client ID" and the "Client secret" are needed for the destination configura
 ![xu-google-cloud-req-16](/img/content/xu/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 
 {: .box-note }
-Note: As of version 5.11.16 Xtract Universal also supports authentication via a service account. Prerequisite is that the Designer and the XU server must run on the same machine.
+Note: As of version 5.11.16 Xtract Universal also supports authentication via a service account. 
 
 ## Connection
 
@@ -95,8 +95,6 @@ Note: As of version 5.11.16 Xtract Universal also supports authentication via a 
 - Select **User Login** to log into Google Cloud Storage using the OAuth client ID authentication, see [Connection Parameters](#connection-parameters).<br>
 - Select **Service Account** to log into Google Cloud Storage using the credentials of a service account for authentication, see [Service Acccount File Location](#service-acccount-file-location).
 
-{: .box-note }
-**Note**: To use a service account for authentication, the Designer and the XU server must run on the same machine.
 
 #### Connection Parameters
 
@@ -121,14 +119,13 @@ When a connection is successful, an "Authentication succeeded" message is displa
 
 The following settings are only available if the *Connection Type* is set to **Service Account**.
 
+![xu-google-cloud-req](/img/content/xu/googlecloudstorage/xu-google-cloud-con.png){:class="img-responsive"}
+
 **Key File**<br>
 The service account is identified by a RSA key pair.
 When creating the keys, the user receives a service account file from Google containing information about the account.
 Provide the location of the service account file.
-Note that the Designer and the XU server must run on the same machine to use this authentication method.
-
-**Connect**<br>
-Click **[Connect]** to establish a connection with the storage account.
+Make sure that Xtract Universal has access to the file.
 
 #### Bucket
 The "Bucket" subsection can only be filled after a connection to the storage account has been established.<br>
@@ -139,7 +136,7 @@ The Project ID can be looked up in the GCP dashboard under *Project info*.
 ![xu-google-cloud-con-04](/img/content/xu/googlecloudstorage/xu-google-cloud-con-04.png){:class="img-responsive"}
 
 **Bucket name**<br>
-Click **[Get buckets]** to display available buckets.
+When using OAuth 2.0 authenthication, click **[Get buckets]** to display available buckets.
 
 A bucket can be created in the navigation menu under **Storage > Browser**.
 

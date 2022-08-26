@@ -78,7 +78,7 @@ Die "Client ID" und der "Client secret" sind für die Konfiguration der Destinat
 
 
 {: .box-note }
-Hinweis: Ab Version 5.11.16 unterstützt Xtract Universal auch die Authentifizierung über ein Dienstkonto. Voraussetzung ist, dass der Designer und der XU Server auf derselben Maschine laufen.
+Hinweis: Ab Version 5.11.16 unterstützt Xtract Universal auch die Authentifizierung über ein Dienstkonto. 
 
 ## Verbindung
 
@@ -94,9 +94,6 @@ Hinweis: Ab Version 5.11.16 unterstützt Xtract Universal auch die Authentifizie
 
 - Wählen Sie **User Login**, um sich mit Ihrer OAuth Client ID einzuloggen, siehe [Connection Parameters](#connection-parameters).<br>
 - Wählen Sie **Service Account** um sich mit einem Dienstkonto einzuloggen, siehe [Service Acccount File Location](#service-acccount-file-location).
-
-{: .box-note }
-**Hinweis**: Um ein Dienstkonto für die Authentifizierung zu verwenden, müssen der Xtract Universal Designer und der XU Server auf derselben Maschine laufen.
 
 #### Connection Parameters
 
@@ -121,14 +118,13 @@ Nach einer erfolgreichen Verbindung erscheint die Meldung: "Authentication succe
 
 Die folgenden Optionen sind nur verfügbar, wenn **Service Account** als Authentifizierungsmethode ausgewählt ist.
 
+![xu-google-cloud-req](/img/content/xu/googlecloudstorage/xu-google-cloud-con.png){:class="img-responsive"}
+
 **Key File**<br>
 Das Dienstkonto wird über ein RSA Schlüsselpaar identifiziert.
 Wenn Sie die Schlüssel erstellen, erhalten Sie eine Dienstkontodatei von Google, die Informationen über das Konto enthält.
-Geben Sie das Verzeichnis an, in dem die Dienstkontodatei abgelegt ist. 
-Der Xtract Universal Designer und der XU Server müssen auf derselben Maschine laufen.
-
-**Connect**<br>
-Klicken Sie auf **[Connect]**, um eine Verbindung mit dem Speicherkonto herzustellen.
+Geben Sie das Verzeichnis an, in dem die Dienstkontodatei abgelegt ist.
+Stellen Sie sicher, dass Xtract Universal Zugriff auf die Datei hat.
 
 #### Bucket
 Der Unterabschnitt "Bucket" kann nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden.<br>
@@ -139,7 +135,7 @@ Die Projekt-ID kann im GCP-Dashboard unter *Project info* nachgeschlagen werden.
 ![xu-google-cloud-con-04](/img/content/xu/googlecloudstorage/xu-google-cloud-con-04.png){:class="img-responsive"}
 
 **Bucket name**<br>
-Klicken Sie auf **[Get buckets]**, um verfügbare Buckets anzeigen zu lassen.
+Wenn Sie die OAuth 2.0 Authentifizierung verwenden, klicken Sie auf **[Get buckets]**, um verfügbare Buckets anzeigen zu lassen.
 
 Ein Bucket kann im Navigationsmenü unter **Storage > Browser** erstellt werden.
 
