@@ -128,7 +128,7 @@ Provide the location of the service account file.
 Make sure that Xtract Universal has access to the file.
 
 #### Bucket
-The "Bucket" subsection can only be filled after a connection to the storage account has been established.<br>
+When using OAuth 2.0 authenthication, the "Bucket" subsection can only be filled after a connection to the storage account has been established.<br>
 
 **Project ID** <br>
 The Project ID can be looked up in the GCP dashboard under *Project info*.
@@ -136,8 +136,7 @@ The Project ID can be looked up in the GCP dashboard under *Project info*.
 ![xu-google-cloud-con-04](/img/content/xu/googlecloudstorage/xu-google-cloud-con-04.png){:class="img-responsive"}
 
 **Bucket name**<br>
-When using OAuth 2.0 authenthication, click **[Get buckets]** to display available buckets.
-
+When using OAuth 2.0 authenthication, click **[Get buckets]** to display available buckets.<br>
 A bucket can be created in the navigation menu under **Storage > Browser**.
 
 ![xu-google-cloud-con-05](/img/content/xu/googlecloudstorage/xu-google-cloud-con-05.png){:class="img-responsive"}

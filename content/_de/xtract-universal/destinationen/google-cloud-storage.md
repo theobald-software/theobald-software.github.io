@@ -127,7 +127,7 @@ Geben Sie das Verzeichnis an, in dem die Dienstkontodatei abgelegt ist.
 Stellen Sie sicher, dass Xtract Universal Zugriff auf die Datei hat.
 
 #### Bucket
-Der Unterabschnitt "Bucket" kann nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden.<br>
+Wenn Sie die OAuth 2.0 Authentifizierung verwenden, kann der Unterabschnitt "Bucket" erst nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden.<br>
 
 **Project ID** <br>
 Die Projekt-ID kann im GCP-Dashboard unter *Project info* nachgeschlagen werden.
