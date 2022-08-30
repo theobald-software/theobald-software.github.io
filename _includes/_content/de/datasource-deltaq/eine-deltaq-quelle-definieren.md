@@ -44,4 +44,4 @@ Der **Update Mode** und **Selection**-Filter können ebenfalls über Variablen g
 
 ******
 #### Weiterführende Links
-- [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide).
+- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide).

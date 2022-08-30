@@ -70,4 +70,4 @@ Erhöhung dieses Wertes bei paraller Ausführung mehrerer DeltaQ-Extraktionen au
 ![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
 {: .box-note }
-**Hinweis** Bei Fehlern des DeltaQ-Customizings im [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide) nachschlagen.
+**Hinweis** Bei Fehlern des DeltaQ-Customizings im [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide) nachschlagen.

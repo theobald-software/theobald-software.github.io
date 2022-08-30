@@ -70,4 +70,4 @@ Increase this value in case of parallel execution of several DeltaQ extractions 
 ![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
 {: .box-note }
-**Note** For DeltaQ customizing errors, refer to the [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide).
+**Note** For DeltaQ customizing errors, refer to the [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide).

@@ -53,6 +53,6 @@ Demzufolge ist der Zugriff auf ein gemeinsames Xtract Universal Repository `C:\P
 *****
 #### Weiterführende Links
 - [Installation](../einfuehrung/installation-und-update)
-- [Xtract Universal Server Troubleshooting](https://kb.theobald-software.com/troubleshooting/xu_windows_service_not_running)
+- [Xtract Universal Server Troubleshooting](https://kb.theobald-software.com/xtract-universal/xu_windows_service_not_running)
 
 

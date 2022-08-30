@@ -45,4 +45,4 @@ Delete the old activation before starting a new one.
 
 *****
 #### Related Links
-- [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide). 
+- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide). 

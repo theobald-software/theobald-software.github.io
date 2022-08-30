@@ -6,4 +6,4 @@ Die Informationen im DeltaQ Troubleshooting Guide beruhen auf gelösten Probleme
 
 ****
 #### Weiterführende Links
-- [DeltaQ Troubleshooting Guide](https://kb.theobald-software.com/troubleshooting/deltaq-troubleshooting-guide) (in Englisch)
+- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide) (in Englisch)

@@ -55,6 +55,6 @@ Xtract Universal is created for [distributed use](../introduction#basic-function
 *****
 #### Related links
 - [Installation](../introduction/installation-and-update)
-- [Xtract Universal Server Troubleshooting](https://kb.theobald-software.com/troubleshooting/xu_windows_service_not_running)
+- [Xtract Universal Server Troubleshooting](https://kb.theobald-software.com/xtract-universal/xu_windows_service_not_running)
 
 

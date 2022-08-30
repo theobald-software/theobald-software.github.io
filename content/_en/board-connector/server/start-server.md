@@ -53,6 +53,6 @@ BOARD Connector is created for [distributed use](../introduction#basic-functiona
 *****
 #### Related links
 - [Installation](../introduction/installation-and-update)
-- [BOARD Connector Server Troubleshooting](https://kb.theobald-software.com/troubleshooting/bc_windows_service_not_running)
+- [BOARD Connector Server Troubleshooting](https://kb.theobald-software.com/board-connector/bc_windows_service_not_running)
 
 
