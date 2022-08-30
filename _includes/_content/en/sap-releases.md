@@ -19,4 +19,4 @@ This includes:
 * SAP BW/4HANA
 * SAP Application Server ABAP, Message Server, Router, Standalone Gateway
 
-SAP Business One and SAP Business Objects are not supported.
+SAP Business One, SAP Business Objects and SAP Public Cloud Versions are not supported.

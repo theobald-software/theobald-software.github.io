@@ -19,17 +19,12 @@ old_url: /ERPConnect-EN/default.aspx?pageid=installation
 ### Setup
 
 `ERPConnectSetup.exe` is an industry standard setup. Execute the `ERPConnectSetup.exe` file and follow the instructions of the setup. <br>
-The installation process copies the class library, the LINQToERPSetup and all available tools into the program directory.
+The installation process copies the class library and all available tools into the program directory.
 
 ![ERPConnect_Setup](/img/content/erpconnect/ERPConnect_Setup.png){:class="img-responsive" }
 
 After the installation you are able to use ERPConnect in your .NET environment.<br>
 The license installation procedure is described in the section [Installing the license](./licensing).
-
-{: .box-note }
-**Note:** To use the LINQ Designer, run the *LINQToERPSetup* for your VisualStudio environment. 
-See [LINQ to SAP - Installation and First Steps](../linq-to-sap/installation-and-first-steps) for more information.
-
 
 ### Program Directory Files
 The list below shows several most important files that are placed into the default directory ``C:\Program Files\ERPConnect`` after installation:

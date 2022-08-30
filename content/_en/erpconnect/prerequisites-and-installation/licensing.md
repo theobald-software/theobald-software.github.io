@@ -29,8 +29,6 @@ Set the license during runtime through the static class `ERPConnect.LIC` as show
 ERPConnect.LIC.SetLic("XXXXXXXXXX");
 {% endhighlight %}
 
-If you have more than one developer licence, the licence numbers end with -01,-02, etc. 
-Which ending you use with *SetLic* does not matter. The ending can be omitted.
 
 ### Maintenance
 General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/erpconnect/pricing-order) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). 

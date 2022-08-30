@@ -2,6 +2,7 @@
 ### Betriebssysteme
 
 - Windows 10
+- Windows 11
 - Windows Server 2019
 - Windows 8.1 (bis 10.01.2023)
 - Windows Server 2016 (bis 12.01.2027)
