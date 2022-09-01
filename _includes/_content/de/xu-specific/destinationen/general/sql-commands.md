@@ -58,7 +58,7 @@ Einzelheiten zu vordefinierten Ausdrücken finden Sie im [Microsoft SQL Server B
 **Note:** Der benutzerdefinierte SQL-Code wird für SQL Server-Destinationen verwendet. 
 Um den benutzerdefinierten SQL-Code für andere Datenbank-Destinationen zu verwenden, ist eine syntaktische Anpassung des Codes erforderlich.
 
-##### **Vorlagen**
+#### **Vorlagen**
 
 Sie können eigene SQL-Ausdrücke schreiben und haben damit die Möglichkeit, das Laden der Daten an Ihre Bedürfnisse anzupassen. <br>
 Darüber hinaus können Sie z.B. auch auf der Datenbank bestehende "Stored Procedures" ausführen.
@@ -68,9 +68,23 @@ Dafür können Sie die vordefinierten SQL-Vorlagen der folgenden Phasen verwende
 - *Finalization*
 
 
-##### **Skript-Ausdrücke**
 
-Sie können [Skript-Ausdrücke](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/script-ausdruecke) für die Custom-SQL-Befehle verwenden.
+#### Skript-Ausdrücke verwenden
+
+Sie können Skript-Ausdrücke für die Custom-SQL-Befehle verwenden.<br>
+
+Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unterstützt: 
+
+| Eingabe                                                 | Beschreibung|
+|:--------------------------------------------------------|:-----------|
+|```#{Extraction.TableName }# ```|  Name der Datenbanktabelle, in die die extrahierten Daten geschrieben werden|
+|```#{Extraction.RowsCount }# ```| Anzahl der extrahierten Zeilen |
+|```#{Extraction.RunState}# ```|  Status der Extraktion (Running, FinishedNoErrors, FinishedErrors) |
+|```#{(int)Extraction.RunState}# ```|  Status der Extraktion als Return-Code (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors) |
+|```#{Extraction.Timestamp}# ```|  Zeitstempel der Extraktion  |
+|``` bool ExistsTable(string tableName) ``` | Prüft, ob die Tabelle auf der Datenbank-Destination existiert. |
+
+Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke).
 
 <details>
 <summary>SQL-Skript</summary>

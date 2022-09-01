@@ -161,8 +161,32 @@ This is to ensure that all uploaded objects are compatible with Azure Data Facto
 
 Enter a folder name without slashes here if you want the extraction to be extracted to a folder within an S3 bucket.<br>
 Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/Subfolder2/` <br>
-This field allows entry of [script expressions](../advanced-techniques/script-expressions#using-script-expressions-as-dynamic-folder-paths). 
-This way, a folder path can be dynamically determined at extraction execution.
+
+#### Using Script Expressions as Dynamic Folder Paths
+
+Script expressions can be used to generate a dynamic folder path. <br>
+This allows generating folder paths that are composed of an extraction's properties, e.g. extraction name, SAP source object.
+
+This scenario supports:
+- Script expressions based on .NET
+- XU-specific custom script expressions
+
+The following XU-specific custom script expressions are supported: 
+
+| Input                                                   | Description|
+|:--------------------------------------------------------|:-----------|
+|```#{Source.Name}# ```|  Name of the extraction's SAP source|
+|```#{Extraction.ExtractionName}# ```| Name of the extraction |
+|```#{Extraction.Type}# ```|  The extraction type, such as *Table*, *ODP*, *DeltaQ*, etc. |
+|```#{Extraction.SapObjectName}# ```|  The name of the SAP object the extraction is extracting data from |
+|```#{Extraction.Context}# ```|  Only contains values for ODP extractions. The context of the ODP object, such as *SAPI*, *ABAP_CDS*, etc. |
+|```#{Extraction.Timestamp}# ```|  Timestamp of the extraction  |
+|```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Input value of a defined selection / filter in ODP extractions.| 
+|```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```  |Trims the first slash '/' of an SAP object, e.g. /BIO/TMATERIAL to BIO/TMATERIAL, so as not to create an empty folder in a file path.
+|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | Replaces all slashes '/' of an SAP object, e.g. /BIO/TMATERIAL to _BIO_TMATERIAL, so as not to split the SAP object name by folders in a file path.         |
+
+For more information on script expression, see [Script Expressions](../advanced-techniques/script-expressions).
+
 
 {% include _content/en/xu-specific/destinations/general/compression.md %}
 

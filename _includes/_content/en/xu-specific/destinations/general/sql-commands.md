@@ -58,7 +58,7 @@ Check out the [Microsoft SQL Server example](./microsoft-sql-server#custom-sql) 
 {:.box-note}
 **Note:** The custom SQL code is used for SQL Server destinations. A syntactic adaptation of the code is necessary to use the custom SQL code for other database destinations.
 
-##### **Templates**
+#### Templates
 
 You can write your user-defined SQL expressions and adapt the loading of the data to your needs. <br>
 You can additionally execute stored procedures that exist in the database.
@@ -67,13 +67,24 @@ To do so, use the SQL templates provided in the following phases:
 - *Row Processing (e.g., Insert or Merge)*  
 - *Finalization*
 
+#### Using Script Expressions
 
-##### **Script Expressions**
+You can use script expressions for the Custom SQL commands.<br>
 
-You can use [script expressions](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/script-expressions) for the Custom SQL commands.
+The following XU-specific custom script expressions are supported: 
+
+| Input                                                   | Description|
+|:--------------------------------------------------------|:-----------|
+|```#{Extraction.TableName }# ```|  Name of the database table extracted data is written to|
+|```#{Extraction.RowsCount }# ```| Count of the extracted rows |
+|```#{Extraction.RunState}# ```|  Status of the extraction (Running, FinishedNoErrors, FinishedErrors) |
+|```#{(int)Extraction.RunState}# ```|  Status of the extraction as number (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors) |
+|```#{Extraction.Timestamp}# ```|  Timestamp of the extraction  |
+
+For more information on script expression, see [Script Expressions](../advanced-techniques/script-expressions).
 
 <details>
-<summary>SQL-Skript</summary>
+<summary>Example SQL script</summary>
 {% highlight sql %}
 #{
    iif

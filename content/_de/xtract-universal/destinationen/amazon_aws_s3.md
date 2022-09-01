@@ -162,8 +162,28 @@ Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sicherges
 Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines S3 Buckets extrahiert werden soll.<br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden:`Ordner/Unterordner1/Unterordner2/`<br>
 
-Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](../fortgeschrittene-techniken/script-ausdruecke#skript-ausdrücke-als-dynamische-ordnerpfade-verwenden) definiert werden. 
-Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt.
+#### Skript-Ausdrücke als dynamische Ordnerpfade verwenden
+
+Skript-Ausdrücke können für die Generierung eines dynamischen Ordnerpfads verwendet werden. <br>
+Dadurch kann ein Ordnerpfad generiert werden, der sich aus den Eigenschaften einer Extraktion zusammensetzt, z.B. Extraktionsname, SAP-Quellobjekt.
+
+Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unterstützt: 
+
+| Eingabe                                                  | Beschreibung|
+|:--------------------------------------------------------|:-----------|
+|```#{Source.Name}# ```|  Name der SAP Quelle|
+|```#{Extraction.ExtractionName}# ```| Name der Extraktion |
+|```#{Extraction.Type}# ```|  Extraktionstyp wie *Table*, *ODP*, *DeltaQ*, etc. |
+|```#{Extraction.SapObjectName}# ```|  Name des SAP Objekts, von dem die Extraktion Daten extrahiert|
+|```#{Extraction.Context}# ```|  Beinhaltet nur Werte für ODP Extraktionen. Der Kontext des ODP Objekts, wie *SAPI*, *ABAP_CDS*, etc. |
+|```#{Extraction.Timestamp}# ```|  Zeitstempel der Extraktion  |
+|```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Eingabewert einer definierten Selektion / Filter bei ODP-Extraktionen.|  
+|```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```  | Entfernt einen führenden Schrägstrich, z.B. wird aus /BIO/TMATERIAL dann BIO/TMATERIAL, damit kein leeres Verzeichnis angelegt wird.
+|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | Entfernt alle Schrägstriche eines SAP Objekts, z.B. wird aus /BIO/TMATERIAL dann _BIO_TMATERIAL. Dadurch wird verhindert, dass die Schrägstriche innerhalb des Namens des SAP Objekts, nicht als Verzeichnistrenner interpretiert werden.         |
+
+
+Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke).
+
 
 {% include _content/de/xu-specific/destinationen/general/compression.md %}
 
