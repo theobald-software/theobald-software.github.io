@@ -21,7 +21,7 @@ Verwenden Sie den Funktionsbaustein von Theobald Software *Z_THEO_READ_TABLE*.
 Ein SAP-Transportauftrag für die Installation des Funktionsbausteins wird im Installationsverzeichnis der Software mitgeliefert: `C:\ProgramFiles\[XtractProduct]\ABAP\`.<br>
 Es gibt zwei Transportaufträge, einen für SAP-Systeme ab Version 7.40 SP05 (* Z_THEO_READ_TABLE-transport.zip*), und einen für Systeme mit einer niedrigeren Version (* Z_THEO_READ_TABLE-transport-before-740SP05.zip*).<br>
 
-- Z_THEO_READ_TABLE.zip enthält die Version 2.x von Z_THEO_READ_TABLE - den benutzerdefinierten Funktionsbaustein, eine Reihe von ABAP-Klassen und andere DDIC-Objekte.  
+- Z_THEO_READ_TABLE-transport.zip enthält die Version 2.x von Z_THEO_READ_TABLE - den benutzerdefinierten Funktionsbaustein, eine Reihe von ABAP-Klassen und andere DDIC-Objekte.  
 - Z_THEO_READ_TABLE-transport-before-740SP05.zip enthält die Version 1.x (bis 1.11) von Z_THEO_READ_TABLE - den benutzerdefinierten Funktionsbaustein.
 ![Z_THEO_READ_TABLE_SE80](/img/content/Z_THEO_READ_TABLE_SE80.png){:class="img-responsive" }
 
