@@ -102,7 +102,7 @@ SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/sup
 #### Trace Directory (Verzeichnis zur Ablage der Debug-Logs)
 
 Sie haben die Möglichkeit Debug-Informationen zu loggen und lokal abzulegen. Füllen Sie das Feld **Trace directory** mit einem Pfad zu einem lokalen Verzeichnis aus, in das Sie die Debug-Informationen speichern wollen.
-Weitere Informationen finden Sie im Knowledge-Base-Artikel [*How to activate tracing for Xtract Products*](https://kb.theobald-software.com/required-support-information/how-to-activate-tracing-for-xtract-products).
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [*How to activate tracing for Xtract Products*](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products).
 
 Leeren Sie das Feld**Trace Directory** , wenn Debug-Logging nicht mehr gebraucht wird.
 
