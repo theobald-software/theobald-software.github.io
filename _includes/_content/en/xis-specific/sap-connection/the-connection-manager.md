@@ -44,7 +44,7 @@ See also SAP online help: [SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1
 ### Trace Directory (2)
 
 You can log debug information and save it locally. Fill the **Trace directory** field with a local path to a folder, where you want to save the debug information.
-See further details in the knowledge base article [*Trace Directory*](https://kb.theobald-software.com/required-support-information/how-to-activate-tracing-for-xtract-products).
+See further details in the knowledge base article [*Trace Directory*](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products).
 
 {: .box-warning }
 **Warning!: Increase of used hard drive memory** <br>

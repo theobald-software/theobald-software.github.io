@@ -46,7 +46,7 @@ Siehe auch SAP Online-Help: [SAP-Router](https://help.sap.com/saphelp_nw70/helpd
 
 ### Trace Directory (2)
 
-Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://kb.theobald-software.com/required-support-information/how-to-activate-tracing-for-xtract-products) ein gültiger Pfad eintragen werden. <br> 
+Sie haben die Möglichkeit Debug-Informationen zu loggen. Wenn Sie Debug-Informationen loggen wollen, so muss im Connection Manager in das Feld [*Trace Directory*](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products) ein gültiger Pfad eintragen werden. <br> 
 
 {: .box-warning }
 **Warnung!: Erhöhter Verbrauch des Festplattenspeichers** <br>
