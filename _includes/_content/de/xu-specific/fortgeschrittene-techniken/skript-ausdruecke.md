@@ -1,15 +1,3 @@
-### Über Skript-Ausdrücke
-
-Skript-Ausdrücke bieten eine Möglichkeit, dynamische Parameter zu Xtract Universal hinzuzufügen. 
-Sie werden zur Laufzeit einer Extraktion aufgelöst.
-Die Ausgabe eines Skript-Ausdrucks ist ein String. 
-Dieser String kann als Eingabe für weitere .NET-String-Operationen verwendet werden.
-
-Skript-Ausdrücke können in den folgenden Szenarien verwendet werden:
-- als Auswahlparameter für [Table](../table/where-bedingung#skript-ausdrücke) und [DeltaQ](../datasource-parameter#skript-ausdrücke) Extraktionen.
-- als dynamische Ordnerpfade in der [Amazon AWS S3](../destinationen/amazon_aws_s3#folder), [Azure Storage](../destinationen/azure-storage#folderdestinationen/azure-storage#folder) und [Hadoop](../destinationen/hadoop#hadoop-remote-folder) Destination.
-- als Custom SQL-Anweisungen in [Datenbank-Destinationen](../destinationen/#datenbanken--data-warehouses).
-
 
 ### Syntax von Skript-Ausdrücken
 Skript-Ausdrücke verwenden eine C#-Syntax. Sie werden mit einem Rautezeichen (#) eingeleitet und beendet. 
