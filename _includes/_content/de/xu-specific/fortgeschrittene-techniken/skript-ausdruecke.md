@@ -7,7 +7,7 @@ Dieser String kann als Eingabe für weitere .NET-String-Operationen verwendet we
 
 Skript-Ausdrücke können in den folgenden Szenarien verwendet werden:
 - als Auswahlparameter für [Table](../table/where-bedingung#skript-ausdrücke) und [DeltaQ](../datasource-parameter#skript-ausdrücke) Extraktionen.
-- als dynamische Ordnerpfade in der [Amazon AWS S3](../destinationen/amazon_aws_s3#folder) und [Azure Storage](../destinationen/azure-storage#folderdestinationen/azure-storage#folder) Destination.
+- als dynamische Ordnerpfade in der [Amazon AWS S3](../destinationen/amazon_aws_s3#folder), [Azure Storage](../destinationen/azure-storage#folderdestinationen/azure-storage#folder) und [Hadoop](../destinationen/hadoop#hadoop-remote-folder) Destination.
 - als Custom SQL-Anweisungen in [Datenbank-Destinationen](../destinationen/#datenbanken--data-warehouses).
 
 

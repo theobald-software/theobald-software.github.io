@@ -7,7 +7,7 @@ This string can be used as input for further .NET string operations.
 
 Script expressions can be used in the following scenarios:
 - as Selection Parameters for [Table](../table/where-clause#script-expressions) or [DeltaQ](datasource-deltaq/datasource-parameters#script-expressions) extractions.
-- as Dynamic Folder Paths in the [Amazon AWS S3](../destinations/amazon-aws-s3#folder) and the [Azure Storage](../destinations/azure-storage#folder) destinations.
+- as Dynamic Folder Paths in the [Amazon AWS S3](../destinations/amazon-aws-s3#folder), [Azure Storage](../destinations/azure-storage#folder) and [Hadoop](../destinations/hadoop#hadoop-remote-folder) destinations.
 - as Custom SQL Commands in [Database Destinations](../destinations#databases--data-warehouses).
 
 ### Syntax of Script Expressions
