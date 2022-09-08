@@ -80,18 +80,25 @@ Bevor Sie das von Xtract Universal generierte Qlik-Skript nach QlikSense kopiere
 2. Geben Sie die URL des Xtract Universal Servers und den Port in das URL-Textfeld ein. Im Beispiel unten läuft der Xtract Universal Server auf `http://localhost:8065/`.
 3. Geben Sie *Xtract_Universal* in das Textfeld für den Namen ein.
 ![XU_qlik_QlikSense_data_connection](/img/content/XU_qlik_QlikSense_data_connection.png){:class="img-responsive"}
-4. Fügen Sie das QlikSense-Skript aus Xtract Universal in den Data-Load-Editor von QlikSense ein.
+4. Aktivieren Sie die Security Option **Allow response headers**. Dadurch werden Fehlermeldungen aus Xtract Universal an QlikSense weitergereicht.<br>
+![qlik-allow-response-headers](/img/content/xu/qlik-allow-response-headers.png){:class="img-responsive"}
+5. Fügen Sie das QlikSense-Skript aus Xtract Universal in den Data-Load-Editor von QlikSense ein.
 ![XU_qlik_QlikSense_load_editor](/img/content/XU_qlik_QlikSense_load_editor.png){:class="img-responsive"}
-	
 
-### Erläuterung des QlikSense Datenlade-Skripts 
 
-1. Xtract Universal erstellt ein QlikSense-Skript, das die [QlikSense-Interpretationsfunktionen](https://help.qlik.com/en-US/sense/June2020/Subsystems/Hub/Content/Sense_Hub/Scripting/InterpretationFunctions/interpretation-functions.htm) *Num#*, *Text*, *Datum* und *Zeit* verwendet. Für Felder, für die kein adäquater Datentyp bestimmt werden kann, wird keine Interpretationsfunktion verwendet. 
-2. Xtract Universal erstellt ein QlikSense-Skript, das allen Feldern die Feldbeschreibung und die SAP-Herkunft des Feldes als Tags zuordnet.
-3. Xtract Universal erstellt ein QlikSense-Skript, das alle Datumsfelder explizit mit *$date* markiert. Diese Funktion stellt sicher, dass Felder, die ein [Datum vor dem 1. Januar 1980](https://help.qlik.com/en-US/sense/April2020/Subsystems/Hub/Content/Sense_Hub/Scripting/date-time-interpretation.htm) enthalten, in QlikSense als Datumsfelder erkannt werden.
-4. Das QlikSense-Skript unterstützt die Verwendung von Xtract Universal [Extraktionsparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter). <br>
-![XU_qlik_QlikSense_XUParameter](/img/content/XU_qlik_QlikSense_XUParameter.png){:class="img-responsive"}<br>
-![XU_qlik_QlikSense_XUParameter_Log2](/img/content/XU_qlik_QlikSense_XUParameter_Log2.png){:class="img-responsive"}
+{: .box-warning }
+**Warnung! The following error occurred: Response headers are denied by the current connection. Please edit your connection in order to enable response headers loading.""
+Wenn diese Fehlermeldung in der REST Verbindung angezeigt wird, aktivieren Sie in der Datenverbindung unter *Security* die Option "Allow response headers".
+
+#### Erläuterung des QlikSense Datenlade-Skripts 
+
+Das von Xtract Universal erstellte QlikSense-Skript hat folgende Eigenschaften:
+- Die [QlikSense-Interpretationsfunktionen](https://help.qlik.com/en-US/sense/June2020/Subsystems/Hub/Content/Sense_Hub/Scripting/InterpretationFunctions/interpretation-functions.htm) *Num#*, *Text*, *Datum* und *Zeit* werden verwendet. Für Felder, für die kein adäquater Datentyp bestimmt werden kann, wird keine Interpretationsfunktion verwendet. 
+- Die Feldbeschreibung und die SAP-Herkunft der Feldes werden den Feldern als Tags zuordnet.
+- Alle Datumsfelder  werden explizit mit *$date* markiert. Diese Funktion stellt sicher, dass Felder, die ein [Datum vor dem 1. Januar 1980](https://help.qlik.com/en-US/sense/April2020/Subsystems/Hub/Content/Sense_Hub/Scripting/date-time-interpretation.htm) enthalten, in QlikSense als Datumsfelder erkannt werden.
+- Das QlikSense-Skript unterstützt die Verwendung von Xtract Universal [Extraktionsparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter).
+Um die Parameter im QlikSense-Skript verfügbar zu machen, aktivieren Sie die Parameter im "Run Extraction" Fenster des Xtract Universal Designers.<br>
+![XU_qlik_QlikSense_XUParameter](/img/content/XU_qlik_QlikSense_XUParameter.png){:class="img-responsive"}
 
 {: .box-note }
 **Hinweis:** Ändern Sie nicht den zugewiesenen Wert der Variablen *xuOriginDateFormat* und *xuOriginTimeFormat*.
