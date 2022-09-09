@@ -22,5 +22,8 @@ The following articles explain how to test a yunIO service with REST clients:
 ### Integration with Microsoft Power Automate
 The following articles explain how to integrate yunIO services with Microsoft Power Automate:
 - [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)
+- [Formats and Conversions in Power Automate](https://kb.theobald-software.com/yunio/conversion-in-power-automate)
 - [Sync Salesforce with SAP using Power Automate and yunIO](https://kb.theobald-software.com/yunio/salesforce-power-automate-scenario)
+- [Integrating a yunIO Scenario with Power Automate and AI Builder](https://kb.theobald-software.com/yunio/integration-scenario-with-yunio-and-the-ai-builder)
+- [How to use yunIO with Power Automate to create multiple items in SAP](https://kb.theobald-software.com/yunio/yunio-power-automate-with-create-multiple-items)
 - [How to use yunIO to populate Drop Down Controls in Power Apps](https://kb.theobald-software.com/yunio/populating-drop-down-controls-in-power-apps)

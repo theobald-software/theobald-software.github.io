@@ -33,9 +33,12 @@ If the certificate is not listed in the menu or in the Windows certificate store
 The certificate must have *Subject Alternative Name* set. When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
 A custom hostname can be entered in the [OpenAPI](#openapi) setting.
 
+For information on how to renew a certificate, refer to our knowledge base article [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
+
 {: .box-note }
 **Note:** Depending on whether yunIO is hosted on a local server or a cloud environment, the procedure for certificate creation differs.
-Please refer to the documentation available on the internet or contact your network administrators.
+Refer to the documentation available on the internet or contact your network administrators.
+
 
 #### TLS enabled
 Once a certificate is selected, the option **TLS enabled** is available.<br>

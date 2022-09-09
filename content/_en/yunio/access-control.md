@@ -39,24 +39,26 @@ The user cannot make changes to users, access control, or server settings.
 - **No access**: The user can neither login to the Designer, nor run any services.
 This option can be used to temporarily disable users from using yunIO.
 
-### How to Restrict Designer Access and Set Up Basic Authentication for Services
-
-Follow the steps below to restrict the designer access to defined users set up basic authentication for yunIO services:
+### How to Restrict Designer Access
 
 1. Assign user rights to existing users, see [Privileges](#privileges).
 2. Navigate to *Settings* and activate Transport Layer Security, see [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).<br>
-If you connect to yunIO via your localhost, we recommend using a [custom hostname](./server-settings#openapi) for the HTTPS connection.
 3. Restart the yunIO service and connect to the Designer using an HTTPS connection.
-4. Activate *Authenticated*, see [Server Access](.#server-access) and restart the yunIO service again.
+4. Activate *Authenticated*, see [Server Access](#server-access) and restart the yunIO service again.
 5. When connecting to the Designer, you are now prompted to enter user credentials:<br>
 ![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
-6. Navigate to *Services* and copy or download a service definition.<br>
-![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
-7. Call the service using basic authentication. Enter the credentials of a user that has the user rights to run a service.
 
 {: .box-note }
 **Note:** If you get shut out and can't log in, delete the `permission.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
 Restart the yunIO server.
+
+### How to Set Up Basic Authentication for Services
+
+1. Assign user rights to existing users, see [Privileges](#privileges).
+2. Activate authentication as described in [How to Restrict Designer Access](#how-to-restrict-designer-access).
+3. Navigate to *Services* and copy or download a service definition.<br>
+![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
+4. Call the service using basic authentication. Enter the credentials of a user that has is allowed to run services.
 
 {: .box-tip }
 **Tip:** You can also use SAP credentials for basic authentication, see [SAP Connection: Authentication](./sap-connection#authentication).

@@ -35,6 +35,8 @@ Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgel
 In dem Zertifikat muss ein *Subject Alternative Name* hinterlegt sein. Dieser wird als neuer Hostname verwendet.
 Einen benutzerdefinierten Hostnamen können Sie in der [OpenAPI](#openapi) Einstellung angeben.
 
+Informationen zur Erneuerung eines Zertifikats, finden Sie in dem Knowledge Base Artikel [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
+
 {: .box-note }
 **Hinweis:** Je nachdem, ob yunIO auf einer lokalen Serverumgebung oder Cloudumgebung gehostet ist, unterscheidet sich das Vorgehen zur Zertifikaterstellung.<br>
 Orientieren Sie sich an den verfügbaren Dokumentationen dazu im Netz oder wenden Sie sich an Ihre Netzwerk-Administratoren.
