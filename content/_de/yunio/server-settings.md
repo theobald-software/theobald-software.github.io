@@ -46,18 +46,10 @@ Wenn ein Zertifikat gewählt wurde, ist die Option **TLS enabled** verfügbar.<b
 Wenn der Designer aufgrund von Problemen mit dem Zertifikat nicht mehr erreichbar ist, löschen Sie die `tls.json` aus Ihrem Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO\config\servers\tls.json`.
 Starten Sie anschließend den Server neu.
 
-### Allowed Origins (CORS)
+### OpenAPI
 
-{: .box-warning }
-**Warnung! Cross-Origin Request Blocked** Wenn Sie auf einen CORS-Fehler stoßen, ist die URL Ihres Origins nicht authorisiert auf yunIO zuzugreifen.
-Fügen Sie die URL Ihres Origins der Liste authorisierter URL hinzu.
-
-Geben Sie URLs ein, die über Cross-Origin-Requests auf yunIO zugreifen dürfen.<br>
-Beispiel: Um einem Tool wie Swagger Inspector zu ermöglichen, Dienste aus yunIO zu laden und zu testen, muss die URL `https://inspector.swagger.io` hinterlegt sein.
-
-{: .box-note }
-**Hinweis:** Während der Testphase können Sie ( * ) verwenden, um alle URLs zuzulassen.
-Wenn Sie yunIO zum ersten Mal installieren, ist diese Einstellung automatisch gesetzt.
+Geben Sie einen benutzerdefinierten Hostnamen ein und klicken Sie auf **[Save]**, um die OpenAPI Definitionen aller Services zu aktualisieren. <br>
+Wir empfehlen immer einen benutzerdefinierten Hostnamen zu verwenden, wenn Sie TLS aktivieren.
 
 ### Services, Designer und WebSockets 
 

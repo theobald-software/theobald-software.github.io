@@ -44,31 +44,20 @@ Enable or disable the usage of transport encryption for the web server.
 If you cannot access the designer. because of problems with the TLS certificate, delete the `tls.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\tls.json`.
 Restart the yunIO server.
 
+### OpenAPI
 
-### Allowed Origins (CORS)
-
-{: .box-warning }
-**Warning! Cross-Origin Request Blocked** When encountering a CORS error, the URL of your origin is not authorized to send requests to yunIO. Add the URL of your origin to the list of allowed origins.
-
-Enter URLs that are allowed to run cross-origin requests on yunIO.<br>
-Example: To allow a tool like Swagger Inspector to load and execute a yunIO service, the URL `https://inspector.swagger.io` must be added to the list of allowed origins.
-
-{: .box-note }
-**Note:** For testing purposes you can use ( * ) to allow all URLs. When first installing yunIO this is set by default.
-
+Enter a custom hostname and click **[Save]** to update the OpenAPI definitions of all existing services. <br>
+We recommend using a custom hostname when activating TLS encryption.
 
 ### Services, Designer and WebSockets
 
 Define the ports for service consumption, Designer access and WebSocket configurations. Valid port numbers range from 1-65535. 
 It is not recommended to use ports below 1000, because they are often already taken and using them with different services can lead to service disruptions.
 
-##### Default Ports
+#### Default Ports
 
-|Service Name|Http|Https|Description|
+|Service Name|HTTP|HTTPS|Description|
 |---|---|---|---|
 |Services|8075|8175|This port is used by the web server, which handles the requests to invoke a service.|
 |Designer|8077|8177|This port is used to open the yunIO Designer on a client machine.|
 |WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services, etc.|
-
-
-

@@ -54,7 +54,7 @@ For more information on how to set up SSO and SNC with client certificates, see 
 ### SSO and SNC with Kerberos Wrapper Library
 
 {: .box-warning }
-**Warning!  SAP officially does not support the Kerberos Wrapper Library (gx64krb5.dll) anymore.** 
+**Warning! SAP officially does not support the Kerberos Wrapper Library (gx64krb5.dll) anymore.** 
 
 {: .box-warning }
 **Warning!  Single Sign-On availability** <br> 
