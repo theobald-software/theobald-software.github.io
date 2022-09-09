@@ -18,7 +18,7 @@ The following section shows how to use the integration type *Function Module / B
 1. Create a new *Service* of type *Function Module / BAPI*.
 2. Click **[Save and edit]**. The *Search Function Module* menu opens.
 3. Enter the name of a Function Module or BAPI in the fields **Search by name** (1) or search for function groups. You can use wildcards (*) if needed.<br>
-![Look-Up-Function-Module](/img/content/yunio/search-bapi.png){:class="img-responsive"}
+![Look-Up-Function-Module](/img/content/yunio/search-bapi.png){:class="img-responsive" width="750px"}
 4. Click **[Search]** (2) to display the search results.
 5. Select a source file from the list of available search results (3). The settings of *Function Module / BAPI* open automatically.<br>
 
