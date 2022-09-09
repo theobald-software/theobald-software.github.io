@@ -24,12 +24,14 @@ To save any changes made in the **Settings** menu, click **[Save]**.
 ### Transport Layer Security
 
 Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
-This requires the installation of an X.509 certificate.
+This requires the installation of an X.509 certificate. 
 For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
 #### Pick Certificate
 Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
 If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
+The certificate must have *Subject Alternative Name* set. When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
+A custom hostname can be entered in the [OpenAPI](#openapi) setting.
 
 {: .box-note }
 **Note:** Depending on whether yunIO is hosted on a local server or a cloud environment, the procedure for certificate creation differs.
@@ -47,7 +49,6 @@ Restart the yunIO server.
 ### OpenAPI
 
 Enter a custom hostname and click **[Save]** to update the OpenAPI definitions of all existing services. <br>
-We recommend using a custom hostname when activating TLS encryption.
 
 ### Services, Designer and WebSockets
 

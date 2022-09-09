@@ -32,6 +32,8 @@ Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.mi
 #### Pick Certificate
 Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509 Zertifikat aus der Liste verfügbarer Zertifikate aus.
 Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgelistet ist, installieren Sie das X.509 Zertifikat.
+In dem Zertifikat muss ein *Subject Alternative Name* hinterlegt sein. Dieser wird als neuer Hostname verwendet.
+Einen benutzerdefinierten Hostnamen können Sie in der [OpenAPI](#openapi) Einstellung angeben.
 
 {: .box-note }
 **Hinweis:** Je nachdem, ob yunIO auf einer lokalen Serverumgebung oder Cloudumgebung gehostet ist, unterscheidet sich das Vorgehen zur Zertifikaterstellung.<br>
@@ -49,7 +51,6 @@ Starten Sie anschließend den Server neu.
 ### OpenAPI
 
 Geben Sie einen benutzerdefinierten Hostnamen ein und klicken Sie auf **[Save]**, um die OpenAPI Definitionen aller Services zu aktualisieren. <br>
-Wir empfehlen immer einen benutzerdefinierten Hostnamen zu verwenden, wenn Sie TLS aktivieren.
 
 ### Services, Designer und WebSockets 
 
