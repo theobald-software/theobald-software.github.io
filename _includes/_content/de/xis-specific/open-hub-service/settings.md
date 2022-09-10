@@ -1,6 +1,5 @@
-### Settings
 
-Klicken Sie im Hauptfenster der OHS-Komponente auf **Settings**, um das Menü für die Extraktionseinstellungen zu öffnen. Das Menü besteht aus zwei Tabs: <br>
+Das Menü besteht aus zwei Tabs: <br>
 - *Table Settings*
 - *Third party tool (legacy)*
 
@@ -8,9 +7,10 @@ Die Tabs beziehen sich auf den ausgewählten **Extraction type**. <br>
 Wenn Sie *Table* als **Extraction type** ausgewählt haben, bearbeiten Sie die Einstellungen im Tab *Table Settings*. <br>
 Wenn Sie *Third party tool (legacy)* als **Extraction type** ausgewählt haben, bearbeiten Sie die Einstellungen im Tab *Third party tool (legacy)*. 
 
+## Table Einstellungen
 {% include _content/de/table/extraktionseinstellungen.md  %}
 
-### Third party tool Settings
+## Third Party Tool Einstellungen
 
 ![OHS-Search-002](/img/content/xis/ohs-tpt-settings.png){:class="img-responsive" }
 
