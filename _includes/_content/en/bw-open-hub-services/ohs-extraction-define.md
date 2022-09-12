@@ -1,25 +1,19 @@
-### Look up an OHS
-1. Click **[Search]** (binoculars icon) in the main window of the component.
-The dialog "Look Up Infospoke/Destination" opens.
+
+### Look up an OHS Destination
+1. Select an **Extraction type** in the main window of the component.<br>
+If you use BW4Hana2.0, select **Table** as your extraction type and make sure that the open hub destination type in SAP is set to *database table*.<br>
+If you use BW7.x or below, select **Third party tool (legacy)** as your extraction type and make sure that the open hub destination type in SAP is set to *third party tool*.<br>
+![ohs-main-window](/img/content/ohs-main-window.png){:class="img-responsive"}
+2. Click **[Lookup]** to look up an OHS destination. The window “OHS Lookup” opens.<br>
+3. Enter the name of an OHS destination in the field **OHS Destination** (1). Use wildcards (*) if needed.<br>
 ![Look-Up-Infospoke-Destination](/img/content/Look-Up-Infospoke-Destination.png){:class="img-responsive"}
-
-2. You can search either according to **InfoSpoke**, **Destination** or **Process Chain**. You can also use wildcards ( * ) in your search.
-
-{:.box-warning}
-**Caution!**<br> You can only select a process chain that contains an InfoSpoke.
-
-3. Click **[OK]** to confirm.
-All metadata are retrieved from the BW and displayed in the editor.
-![Open-Hub-Service-Data-Source](/img/content/Open-Hub-Service-Data-Source.png){:class="img-responsive"}
-
-The Execution Mode can have one of the following values: 
-
-**P - Trigger Process Chain**<br>
-The specified process chain will be started, the extraction is made and after ending the extraction, data is extracted in packages.
-
-**E – Extract Only**<br>
-A process chain will not be started. The Request ID entered in the field Request ID is used to retrieve data of the respective request.
-Only data of the last DTP request of that OHS Destination can be extracted. Data of previous requests can not be extracted.
+4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) and select the destination of your choice from the displayed list (2).
+5. Click **[OK]** to confirm.
+6. If **Process Chain** is empty, enter an SAP process chain assigned to your OHS extraction, see [SAP Documentation: Display/Maintenance of Process Chain Attributes](http://saphelp.ucc.ovgu.de/NW750/EN/4a/2cf30c6ed91c62e10000000a42189c/frameset.htm).
+If **Process Chain** is left empty, the extraction fails.
+7. Optional: Use the **Timeout** setting to set a maximum time period to wait for a notification from BW. If the time limit is reached, the extraction fails.
+8. Check / edit the [extraction settings](./open-hub-services-settings) and [general settings](../getting-started/general-settings) of the extraction.
 
 
-
+{: .box-note }
+**Note:** To use data sources you need to configurate SAP BW, see [Customizing for OHS in BW](./sap-customizing/preparation-for-ohs-in-bw).

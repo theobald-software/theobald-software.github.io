@@ -1,7 +1,7 @@
 
 Das Menü besteht aus zwei Tabs: <br>
-- *Table Settings*
-- *Third party tool (legacy)*
+- [*Table*](#table-einstellungen)
+- [*Third party tool (legacy)*](#third-party-tool-einstellungen)
 
 Die Tabs beziehen sich auf den ausgewählten **Extraction type**. <br>
 Wenn Sie *Table* als **Extraction type** ausgewählt haben, bearbeiten Sie die Einstellungen im Tab *Table Settings*. <br>

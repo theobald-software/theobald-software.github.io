@@ -1,7 +1,7 @@
 
 A window with two tabs opens: <br>
-- *Table Settings* 
-- *Third party tool (legacy)*
+- [*Table*](#table-settings)
+- [*Third party tool (legacy)*](#third-party-tool-settings)
 
 The settings correspond to the selected extraction type. Set either *Table* or *Third party tool (legacy)* settings.
 

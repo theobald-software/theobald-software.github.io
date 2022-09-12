@@ -1,7 +1,7 @@
 ---
 ref: xu-bw-open-hub-services-04
 layout: page
-title: Settings
+title: Extraction Settings
 description: Extraction Settings
 product: xtract-universal
 parent: bw-open-hub-services
