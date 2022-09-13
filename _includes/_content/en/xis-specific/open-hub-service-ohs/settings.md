@@ -1,15 +1,15 @@
-### Settings
 
-To access the extraction settings, click **Settings** in the main window of the OHS component. A window with two tabs opens: <br>
-- *Table Settings* 
-- *Third party tool (legacy)*
+A window with two tabs opens: <br>
+- [*Table*](#table-settings)
+- [*Third party tool (legacy)*](#third-party-tool-settings)
 
 The settings correspond to the selected extraction type. Set either *Table* or *Third party tool (legacy)* settings.
 
+## Table Settings
 {% include _content/en/tables/extraction-settings.md  %}
 
 
-### Third party tool Settings
+## Third Party Tool Settings
 
 ![OHS-Search-002](/img/content/xis/ohs-tpt-settings.png){:class="img-responsive" }
 
