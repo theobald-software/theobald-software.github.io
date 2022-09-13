@@ -17,4 +17,4 @@ If **Process Chain** is left empty, the extraction fails.
 
 
 {: .box-note }
-**Note:** To use data sources you need to configurate SAP BW, see [Customizing for OHS in BW](./sap-customizing/preparation-for-ohs-in-bw).
+**Note:** To use data sources you need to configurate SAP BW, see [Customizing for OHS in BW](../sap-customizing/preparation-for-ohs-in-bw).

@@ -16,4 +16,4 @@ Wenn **Process Chain** leer bleibt, schlägt die Extraktion fehl.
 
 
 {: .box-note }
-**Hinweis:** Um die OHS-Datenquelle nutzen zu können, müssen Anpassungen im SAP BW vorgenommen werden, siehe [Vorbereitungen für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw). 
+**Hinweis:** Um die OHS-Datenquelle nutzen zu können, müssen Anpassungen im SAP BW vorgenommen werden, siehe [Vorbereitungen für OHS im BW](../sap-customizing/vorbereitung-fuer-ohs-im-bw). 

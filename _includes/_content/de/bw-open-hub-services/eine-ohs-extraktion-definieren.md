@@ -15,4 +15,4 @@ Wenn **Process Chain** leer bleibt, schlägt die Extraktion fehl.
 8. Prüfen / bearbeiten Sie die [Extraktionseinstellungen](./open-hub-services-settings) und [Allgemeinen Einstellungen](../erste-schritte/allgemeine-einstellungen).
 
 {: .box-note }
-**Hinweis:** Um die OHS-Datenquelle nutzen zu können, müssen Anpassungen im SAP BW vorgenommen werden, siehe [Vorbereitungen für OHS im BW](./sap-customizing/vorbereitung-fuer-ohs-im-bw). 
+**Hinweis:** Um die OHS-Datenquelle nutzen zu können, müssen Anpassungen im SAP BW vorgenommen werden, siehe [Vorbereitungen für OHS im BW](../sap-customizing/vorbereitung-fuer-ohs-im-bw). 
