@@ -3,7 +3,6 @@
 1. Select an **Extraction type** in the main window of the component.<br>
 If you use BW4Hana2.0, select **Table** as your extraction type and make sure that the open hub destination type in SAP is set to *database table*.<br>
 If you use BW7.x or below, select **Third party tool (legacy)** as your extraction type and make sure that the open hub destination type in SAP is set to *third party tool*.<br>
-- If you use BW7.x or below, select **Third party tool (legacy)** as you extractionr type and make sure that the open hub destination type in SAP is set to *third party tool*.
 ![OHS-Look-Up](/img/content/xis/ohs-main-window-look-up.png){:class="img-responsive" }
 2. Click **[Lookup]** to look up an OHS destination. The window "OHS Lookup" opens.
 3. Enter the name of an OHS destination in the field **OHS Destination** (1). Use wildcards (*) if needed.<br>
