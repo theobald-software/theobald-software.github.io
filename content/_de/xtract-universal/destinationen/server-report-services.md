@@ -23,7 +23,7 @@ Um die SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
 - das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin (Version 2.6.11 oder höher) für Visual Studio.
 - Power BI Report Server (Januar 2020 oder später)
 - Xtract Universal (Version 4.29 oder höher)
-- Bearbeiten Sie die Registry des Rechners, auf dem der SSRS Server läuft, entsprechend der [Microsoft Hilfe (Konfigurieren für starke Kryptografie)](https://docs.microsoft.com/de-de/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography), um [Transport Layer Security]((../sicherheit/serversicherheit)) nutzen zu können.
+- Bearbeiten Sie die Registry des Rechners, auf dem der SSRS Server läuft, entsprechend der [Microsoft Hilfe (Konfigurieren für starke Kryptografie)](https://docs.microsoft.com/de-de/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography), um [Transport Layer Security](../sicherheit/serversicherheit) nutzen zu können.
 
 {: .box-note }
 **Hinweis:** Der Power BI Report Builder wird nicht unterstützt.

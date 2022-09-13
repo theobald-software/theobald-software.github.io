@@ -47,6 +47,6 @@ Diese Einstellung ist i.d.R. nicht notwendig, wenn die Spalten des Reports autom
 ### Function Module - Funktionsbaustein
 
 **Custom Function**<br>
-Die Verwendung der Report-Komponente setzt die Installation des Funktionbausteins `Z_XTRACT_IS_REMOTE_REPORT` in Ihrem SAP-System voraus, siehe [Install Report Custom Fuction Module](../sap-customizing/report-funktionsbaustein-installieren).
+Die Verwendung der Report-Komponente setzt die Installation des Funktionsbausteins `Z_XTRACT_IS_REMOTE_REPORT` in Ihrem SAP-System voraus, siehe [Install Report Custom Fuction Module](../sap-customizing/report-funktionsbaustein-installieren).
 Wenn Sie den Funktionsbaustein manuell in Ihrem SAP-System erstellt und einen anderen Namen vergeben haben, geben Sie hier den Namen des Bausteins ein.
 Der Standardeintrag ist `Z_XTRACT_IS_REMOTE_REPORT`.
