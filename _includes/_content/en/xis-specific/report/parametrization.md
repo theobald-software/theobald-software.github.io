@@ -23,11 +23,10 @@ Liste der relevanten *Custom Properties*:
 
 ### Parameterization using SSIS Variables
 
-You can use SSIS variables for selections.<br>
+- You can use SSIS variables for selections.<br>
 Available SSIS variables are listed in the selection settings when parameter input is active (1), see [Edit Selections](./variants-and-selections#edit-selections).<br> 
 ![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
-
-To use SSIS variables for parameterizing *Custom Properties*, place an @-symbol before the variable name.
+- To use SSIS variables for parameterizing *Custom Properties*, place an @-symbol before the variable name.
 Example: the variable *vDate* is assignes to a *Custom Property* as *@vDate*.
 
 {: .box-note }
@@ -35,6 +34,7 @@ Example: the variable *vDate* is assignes to a *Custom Property* as *@vDate*.
 For more information on the data types of system variables, see [Microsoft Help: System Variables](https://docs.microsoft.com/en-us/sql/integration-services/system-variables?view=sql-server-ver15).
 
 #### Available Parameters for SSIS Variables
+
 List of input fields / *Custom Properties* that allow entry of an SSIS variable:
 
 |Field Name|Comment|
