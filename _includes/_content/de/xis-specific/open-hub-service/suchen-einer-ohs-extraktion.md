@@ -1,6 +1,6 @@
 ### Eine OHS finden
 
-1. Wählen Sie im Hauptfenster “Extract via SAP BW Open Hub Service” einen **Extraction type**. <br>
+1. Wählen Sie im Hauptfenster der Komponente einen **Extraction type**. <br>
 Falls Sie BW4Hana2.0 verwenden, wählen Sie **Table** als Extraktionstyp. Stellen Sie sicher, dass in SAP *database table* als Typ der OHS Destination ausgewählt ist.
 Falls Sie BW7.x order niedriger verwenden, wählen Sie **Third party tool (legacy)** als Extraktionstyp. Stellen Sie sicher, dass in SAP *third party tool* als Typ der OHS Destination ausgewählt ist.<br>
 ![OHS-Look-Up](/img/content/xis/ohs-main-window-look-up.png){:class="img-responsive" }
