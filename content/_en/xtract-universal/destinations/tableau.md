@@ -94,11 +94,6 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/destinations/general/existing-files.md %}
 
-{: .box-note }
-**Note:** When *Append results* is selected, Xtract Universal automatically maps the columns from the running extraction with the columns of the existing Tableau file. 
-the names and number of columns match must match. For a manual column mapping, see [Column Mapping](#column-mapping).
-Make sure that the tableau folder in the installation directory of Xtract Universal is up to date, see [download latest tableau folder](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip). <br>
-
 
 ### Column Mapping
 Activate **Column Mapping** when appending data to an existing file that has different column names or a different number of columns.
