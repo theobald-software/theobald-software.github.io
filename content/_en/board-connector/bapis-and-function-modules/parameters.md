@@ -1,7 +1,7 @@
 ---
 ref: bc-bapis-and-function-modules-02
 layout: page
-title: Parameters
+title: Input and Output Values
 description: Parameters
 product: board-connector
 parent: bapis-and-function-modules

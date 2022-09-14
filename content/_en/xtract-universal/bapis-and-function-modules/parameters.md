@@ -1,7 +1,7 @@
 ---
 ref: xu-bapis-function-02
 layout: page
-title: Parameters
+title: Input and Output Values
 description: Parameters
 product: xtract-universal
 parent: bapis-and-function-modules

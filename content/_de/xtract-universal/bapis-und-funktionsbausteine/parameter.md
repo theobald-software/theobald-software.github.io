@@ -1,7 +1,7 @@
 ---
 ref: xu-bapis-function-02
 layout: page
-title: Parameter
+title: Eingabe- und Ausgabewerte
 description: Skalare Parameter
 product: xtract-universal
 parent: bapis-und-funktionsbausteine
