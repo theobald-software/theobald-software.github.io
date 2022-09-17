@@ -17,7 +17,7 @@ The trial version is only time limited and works otherwise without any restricti
 
 ### Evaluating Xtract for Alteryx
 You are guaranteed to get an unrestricted support by the Theobald Software support team during the evaluation phase.
-In case of any questions or doubts, feel free to contact Theobald Software by e-mail: <br>
+In case of any questions or doubts, feel free to contact Theobald Software: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [International contact details](https://theobald-software.com/en/contact/)
 
