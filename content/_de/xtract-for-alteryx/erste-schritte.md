@@ -21,7 +21,7 @@ Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung f
 
 1. Ziehen Sie die **Xtract Table** (1) Komponente auf den Canvas um eine neue Tabellenextraktion anzulegen. Das Konfigurationsfenster wird geöffnet. 
 ![Create-New-Table-Extraction](/img/content/xfa/xfa_create_table_extraction_01.png){:class="img-responsive"}
-2. Unter **Connection**, wählen Sie eine vorhandene  SAP-Verbindung (2) oder erstellen Sie eine neue SAP-Verbindung (3). (Mehr Details dazu finden Sie auch unter [SAP-Verbindung](./einfuehrung/sap-verbindung)).
+2. Unter **Connection**, wählen Sie eine vorhandene  SAP-Verbindung (2) oder erstellen Sie eine neue SAP-Verbindung (3). Für mehr Informationen, siehe [SAP-Verbindung](./sap-verbindung-anlegen).
 3. Unter **Selected Extraction** klicken Sie auf **[Edit]**  um eine neue Tabellenextraktion zu konfigurieren.
 ![Create-New-Table-Extraction2](/img/content/xfa_create_table_extraction_02.png){:class="img-responsive"}
 4. Das Hauptfenster der Komponente wird geöffnet. In diesem Fenster können Sie einfache Tabellenextraktionen oder Tabellen-Joins für Extraktionen definieren. Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
@@ -37,5 +37,3 @@ Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung f
 - [BW Hierarchy](./bw-hierarchien)
 - [ODP](./odp)
 - [Table](./table) - weitere Details zur Table-Komponente
-
-

@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 4
 redirect_from:
   - de/xtract-for-alteryx/einfuehrung/sap-verbindung
-  - de/xtract-for-alteryx/einfuehrung/sap-verbindung-anlegen
+  - de/xtract-for-alteryx/einfuehrung/sap-verbindungen-anlegen
 lang: de_DE
 progressstate: 5
 ---
@@ -53,6 +53,7 @@ Es gibt zwei Möglichkeiten eine Verbindung zu einem SAP-Quellsystem herzustelle
 	- **Message Server**: Name oder IP-Adresse des Message-Servers (Property MessageServer) 
 	- **Group**: Einstellung LogonGroup, meistens *PUBLIC*
 	- **SID**: Dreistellinge System-ID (Property SID z.B. MSS) 
+	
 Mehr Details dazu finden Sie auch in der SAP Online-Hilfe: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 #### Zugriff über SAP-Router
@@ -61,7 +62,7 @@ Wenn Sie auf ein SAP-Quellsystem (Anwendungsserver oder Message-Server) mittels 
 Beispiel:<br>
 Wenn der Hostname "hamlet" und der Router-String ``/H/lear.theobald-software.com/H/`` lauten, muss das Feld der Host-Einstellung folgendermaßen befüllt werden: ``/H/lear.theobald-software.com/H/hamlet``.
 
-Mehr Details dazu finden Sie auch in der SAP Online-Hilfe: [SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).
+Mehr Details dazu finden Sie in der SAP Online-Hilfe: [SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).
 
 
 ![Details](/img/content/xfa/xfa_connection-det-02.png){:class="img-responsive"}<br> 
@@ -78,7 +79,7 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 #### SNC
 1. Überprüfen Sie den SAP parameter snc/gssapi_lib *snc/gssapi_lib* um zu bestimmen, welche Bibliothek für die Verschlüsselung in Ihrem SAP System verwendet wird. 
 Ihre SAP-Basis muss auf dem Anwendungsserver und auf dem Rechner, auf dem Xtract for Alteryx installiert ist, die gleiche Bibliothek importieren und konfigurieren.
-2. Wenn Sie SNC verwenden, achten Sie darauf den vollständigen Pfad , make sure to enter zum Speicherort der SNC Bibliothek anzugeben, z.B. ``C:\SNC\gx64krb5.dll``.
+2. Wenn Sie SNC verwenden, achten Sie darauf den vollständigen Pfad zum Speicherort der SNC Bibliothek anzugeben, z.B. ``C:\SNC\gx64krb5.dll``.
 3. Geben Sie den SAP-Partnernamen (Partner Name) ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. ``p:SAPserviceERP/do_not_care@THEOBALD.LOCAL``.
 
 Zusätzlich können Sie auch [SAP Log On Ticket](https://kb.theobald-software.com/erpconnect-samples/how-to-login-to-sap-with-an-sso-logonticket) (5) zur Authentifizierung verwenden. 
@@ -89,8 +90,8 @@ Wählen Sie eine Bibliothek aus und definieren Sie optional ein Verzeichnis für
 #### RFC libraries (RFC-Bibliotheken) (6)
 Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem ABAP basierten SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann.  
 Es gibt zwei Möglichkeiten die RFC-Bibliotheken zu nutzen:
-- Use classic RFC library (librfc32.dll) - Klassische RFC Bibliothek
-- Use NetWeaver RFC libraries - NetWeaver RFC Bibliothek (sapnwrfc.dll)
+- mit der RFC library (librfc32.dll) - Klassische RFC Bibliothek
+- mit der NetWeaver RFC libraries - NetWeaver RFC Bibliothek (sapnwrfc.dll)
 
 
 Weitere Informationen finden Sie in der SAP Online-Help [SAP Help Site - RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). <br>
@@ -118,4 +119,3 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 Die SAP-Verbindung ist erfolgreich aufgebaut. 
 ![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
 2. Prüfen Sie im Konfigurationsfenster (linke Fensterseite), ob die angelegte SAP-Verbindung aufgelistet ist.<br>
-

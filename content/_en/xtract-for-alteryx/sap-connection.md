@@ -49,7 +49,8 @@ There are two possibilities to connect to an SAP source system:
 	- **Message Server**: name or IP address of the message server (Property MessageServer) 
 	- **Group**: property LogonGroup, usually *PUBLIC*
 	- **SID**: three-digit System ID (Property SID e.g.,  MSS) 
-See also SAP online help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+	
+For more information, see [SAP Help: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 #### Accessing via SAP router
 
@@ -57,7 +58,7 @@ If you access the SAP source system (Application server or Message server) via a
 Example:<br>
 If the application server is "hamlet" and the router string is ``/H/lear.theobald-software.com/H/``, set the host property to ``/H/lear.theobald-software.com/H/hamlet``.
 
-See also SAP online help: [SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).
+For more information, see [SAP Help: SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).
 
 
 ![Details](/img/content/xfa/xfa_connection-det-02.png){:class="img-responsive"}<br> 
@@ -89,7 +90,7 @@ There are two options for using RFC libraries:
 - Use NetWeaver RFC libraries (sapnwrfc.dll)
 
 
-See additional information on SAP libraries on the [SAP Help Site - RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). <br>
+See additional information on SAP libraries on the [SAP Help: RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). <br>
 
 SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). 
 
