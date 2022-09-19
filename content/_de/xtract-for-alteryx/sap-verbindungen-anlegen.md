@@ -119,10 +119,3 @@ Die SAP-Verbindung ist erfolgreich aufgebaut.
 ![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
 2. Prüfen Sie im Konfigurationsfenster (linke Fensterseite), ob die angelegte SAP-Verbindung aufgelistet ist.<br>
 
-
-****
-#### Weiterführende Links
-- [Xract ODP](../odp)
-- [Xtract Hierarchy](../bw-hierarchien)
-- [Xtract Cube](../bw-cube)
-- [Xtract BAPI](../bapis-und-funktionsbausteine)

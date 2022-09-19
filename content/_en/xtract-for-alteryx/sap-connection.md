@@ -115,12 +115,3 @@ The SAP connection is set up successfully.
 ![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
 2. In the configuration window (left hand-side) check if created SAP connection is listed.<br>
 
-
-
-****
-#### Related Links
-- [Xract ODP](../odp)
-- [Xtract Hierarchy](../bwhierarchy)
-- [Xtract Cube](../bw-cube)
-- [Xtract BAPI](../bapi)
-
