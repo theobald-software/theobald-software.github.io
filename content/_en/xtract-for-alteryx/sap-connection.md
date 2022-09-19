@@ -110,7 +110,7 @@ Activate the debug logging only when necessary e.g., upon request of the support
 
 
 ### To check the New SAP Connection
-1. Click [Test Connection] (7) to test the successful connection. The confirmation window opens.
+1. Click **[Test Connection]** (7) to test the successful connection. The confirmation window opens.
 The SAP connection is set up successfully.
 ![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
 2. In the configuration window (left hand-side) check if created SAP connection is listed.<br>

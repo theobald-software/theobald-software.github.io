@@ -114,7 +114,7 @@ Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Te
 
 
 ### Neu angelegte SAP-Verbindung überprüfen
-1. Klicken Sie auf [Test Connection] (7) , um eine erfolgreiche Verbindung zu überprüfen. Das Bestätigungsfenster wird geöffnet.
+1. Klicken Sie auf **[Test Connection]** (7) , um eine erfolgreiche Verbindung zu überprüfen. Das Bestätigungsfenster wird geöffnet.
 Die SAP-Verbindung ist erfolgreich aufgebaut. 
 ![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
 2. Prüfen Sie im Konfigurationsfenster (linke Fensterseite), ob die angelegte SAP-Verbindung aufgelistet ist.<br>
