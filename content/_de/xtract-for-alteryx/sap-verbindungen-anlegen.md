@@ -17,7 +17,7 @@ progressstate: 5
 Um die Xtract for Alteryx-Komponente zu verwenden, ist Sie eine SAP-Verbindung notwendig.
 
 ### SAP-Verbindung Erstellen
-1. Ziehen Sie aus der Alteryx-Designer-Toolbox per Drag-and-Drop eine beliebige Xtract for Alteryx-Komponente (z.B. Xtract Table (1)) auf die Arbeitsfläche. Das Konfigurationsfenster wird geöffnet. 
+1. Ziehen Sie aus der Alteryx-Designer-Toolbox eine beliebige Xtract for Alteryx-Komponente (z.B. Xtract Table (1)) auf die Arbeitsfläche. Das Konfigurationsfenster wird geöffnet. 
 ![Create-New-Table-Extraction](/img/content/xfa/xfa_create_table_extraction_01.png){:class="img-responsive"}
 2. Im Unterabschnitt **Connection** öffnen Sie das Dropdown-Menü (2), um alle SAP-Systeme anzuzeigen, die mit dem lokalen Rechner verbunden sind.
 3. Klicken Sie auf **[New]** um eine neue Verbindung anzulegen. Das Fenster "SAP Connection Details" wird geöffnet. 
