@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-07
+ref: xtract-for-alteryx-08
 layout: page
 title: Xtract Hierarchy
 description: BW Hierarchy
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: bwhierarchy
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 ---
 

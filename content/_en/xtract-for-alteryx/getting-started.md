@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-04
+ref: xtract-for-alteryx-05
 layout: page
 title: Getting Started with Xtract for Alteryx
 description: Getting Started with Table
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: getting-started
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 
 ---
@@ -15,7 +15,7 @@ The following section gives a general introduction to working with Xtract for Al
 The information described in the following section is a prerequisite for all subsequent sections.
 
 {: .box-note }
-**Note:** An [SAP Connection](./introduction/sap-connection) is a requirement for using any of Xtract for Alteryx components.
+**Note:** An [SAP Connection](./sap-connection) is a requirement for using any of Xtract for Alteryx components.
 
 ### Creating an Extraction
 

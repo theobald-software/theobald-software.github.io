@@ -1,14 +1,15 @@
 ---
-ref: xfa-introduction-05
+ref: xtract-for-alteryx-04
 layout: page
 title: SAP-Verbindung 
 description: SAP-Verbindung konfigurieren
 product: xtract-for-alteryx
-parent: einfuehrung
+parent: xtract-for-alteryx
 permalink: /:collection/:path
-weight: 5
+weight: 4
 redirect_from:
   - de/xtract-for-alteryx/einfuehrung/sap-verbindung
+  - de/xtract-for-alteryx/einfuehrung/sap-verbindung-anlegen
 lang: de_DE
 progressstate: 5
 ---

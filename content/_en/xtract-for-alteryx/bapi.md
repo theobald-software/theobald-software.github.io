@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-05
+ref: xtract-for-alteryx-06
 layout: page
 title: Xtract BAPI 
 description: BAPI and Function module
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: bapi
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 ---
 The Xtract BAPI component is used for executing SAP BAPI or Function Modules via RFC.

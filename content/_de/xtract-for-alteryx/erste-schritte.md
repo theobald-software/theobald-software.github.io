@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-04
+ref: xtract-for-alteryx-05
 layout: page
 title: Erste Schritte mit Xtract for Alteryx
 description: Erste Schritte mit Table
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: erste-schritte
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 ---
 
@@ -15,7 +15,7 @@ Der folgende Abschnitt gibt eine allgemeine Einführung in Xtract for Alteryx am
 Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung für alle nachfolgenden Abschnitte.
 
 {: .box-note }
-**Hinweis:** Eine [SAP-Verbindung](./einfuehrung/sap-verbindung) ist eine Voraussetzung für die Verwendung der Komponenten von Xtract for Alteryx.
+**Hinweis:** Eine [SAP-Verbindung](./sap-verbindung-anlegen) ist eine Voraussetzung für die Verwendung der Komponenten von Xtract for Alteryx.
 
 ### Eine Extraktion anlegen
 

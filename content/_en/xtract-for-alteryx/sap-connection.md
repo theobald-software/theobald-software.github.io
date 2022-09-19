@@ -1,12 +1,14 @@
 ---
-ref: xfa-introduction-05
+ref: xtract-for-alteryx-04
 layout: page
 title: SAP Connection 
 description: SAP Connection
 product: xtract-for-alteryx
-parent: introduction
+parent: xtract-for-alteryx
 permalink: /:collection/:path
-weight: 5
+weight: 4
+redirect_from:
+  - en/xtract-for-alteryx/introduction/sap-connection
 lang: en_GB
 progressstate: 5
 ---

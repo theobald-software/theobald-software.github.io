@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-09
+ref: xtract-for-alteryx-10
 layout: page
 title: Xtract Table
 description: Table
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: table
 permalink: /:collection/:path
-weight: 9
+weight: 10
 lang: en_GB
 progressstate: 5
 ---

@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-10
+ref: xtract-for-alteryx-11
 layout: page
 title: Xtract Report
 description: Reports
@@ -7,7 +7,7 @@ product: xtract-for-alteryx
 parent: xtract-for-alteryx
 childidentifier: reports
 permalink: /:collection/:path
-weight: 10
+weight: 11
 lang: de_DE
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
