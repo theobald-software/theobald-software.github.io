@@ -101,8 +101,24 @@ For more information, see the knowledge base article [SSO with Client Certificat
 
 ### SAP Logon Ticket
 
-For information on how to use an authentication with SAP Logon Tickets, see the knowledge base article [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+You can use Single-Sign-On (SSO) with SAP Logon-Tickets for authentication. This connection is not encrypted. <br>
+For information on how to use an authentication with SAP Logon Tickets, refer to the knowledge base article [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
+![SAP-Logon-Ticket](/img/content/sap-logon-ticket.png){:class="img-responsive"}
+
+
+**Ticket issuer URL**<br>
+Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets.
+For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
+
+**Impersonate caller when running extractions**<br>
+If this option is inactive, AS Java maps the XU service account user to an SAP user.
+If this option is active, the XU server impersonates external Windows AD users (i.e. web service callers), against SAP AS Java.
+For more information, see [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+
+{: .box-tip }
+**Tip:** Uncheck the option **Impersonate caller when running extractions** to test the Kerberos authentication against the AS Java directly. 
+If that works, you can add impersonation as another layer of complexity.
 
 ### RFC Options
 Select a library and optionally define a trace directory for debug logging.
