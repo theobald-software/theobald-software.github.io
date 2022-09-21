@@ -15,7 +15,7 @@ Der folgende Abschnitt gibt eine allgemeine Einführung in Xtract for Alteryx am
 Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung für alle nachfolgenden Abschnitte.
 
 {: .box-note }
-**Hinweis:** Eine [SAP-Verbindung](./sap-verbindung-anlegen) ist eine Voraussetzung für die Verwendung der Komponenten von Xtract for Alteryx.
+**Hinweis:** Eine [SAP-Verbindung](./sap-verbindungen-anlegen) ist eine Voraussetzung für die Verwendung der Komponenten von Xtract for Alteryx.
 
 ### Eine Extraktion anlegen
 
