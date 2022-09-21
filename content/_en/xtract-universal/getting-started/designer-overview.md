@@ -125,11 +125,11 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 ![main-window-footer](/img/content/xu/main-window-footer.png){:class="img-responsive"}
 
 The status bar contains information about: 
-- Number of defined sources and maximum number of available sources
-- Number of defined extraction and maximum number of available extractions
-- Credentials
-- Authentication method
-- Access rights
+- Number of defined sources and number of licensed sources
+- Number of defined extractions and number of licensed extractions
+- Login username
+- Server authentication method
+- Designer access rights
 - License type and validity period
 - Connected server
 - Connected client
