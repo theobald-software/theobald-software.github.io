@@ -100,7 +100,27 @@ Die Authentifizierung erfolgt über ein Certificate Enrollment (Enroll-On-Behalf
 Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 
 ### SAP Logon Ticket
-Für Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+
+Sie können für die Authentifizierung Single-Sign-On (SSO) mit SAP Logon-Tickets verwenden.
+Diese Verbindung ist nicht verschlüsselt.<br>
+Für mehr Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+
+![SAP-Logon-Ticket](/img/content/sap-logon-ticket.png){:class="img-responsive"}
+
+
+**Ticket issuer URL**<br>
+Geben Sie die URL des Application Server Java (AS Java) ein, der die Anmeldetickets ausstellt.
+Für mehr Informationen, siehe [SAP Dokumentation: AS Java für das Ausstellen von Anmeldetickets konfigurieren](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/4a/412251343f2ab1e10000000a42189c/frameset.htm).
+
+**Impersonate caller when running extractions**<br>
+Wenn diese Option aktiv ist, wird die Verbindung in einem Windows Active Directory Benutzerkontext des Aufrufer geöffnet.
+Wenn diese Option inaktiv ist, wird die Verbindung im Kontext des Dienstkontos geöffnet, unter dem der Windows Dienst läuft.
+Für mehr Informationen, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+
+{: .box-tip }
+**Tipp:** Deaktivieren Sie die Option **Impersonate caller when running extractions**, um die Kerberos Authentifizierung gegen den AS Java direkt zu testen.
+Als letzten Schritt fügen Sie die Impersonierung hinzu.
+
 
 ### RFC Options
 Wählen Sie eine Bibliothek aus und definieren Sie optional ein Verzeichnis für das Debug-Logging.
