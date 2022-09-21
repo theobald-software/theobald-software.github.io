@@ -112,13 +112,13 @@ Enter the URL of an Application Server Java (AS Java) that is configured to issu
 For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
 
 **Impersonate caller when running extractions**<br>
-If this option is inactive, AS Java maps the XU service account user to an SAP user.
-If this option is active, the XU server impersonates external Windows AD users (i.e. web service callers), against SAP AS Java.
+If this option is active, the connection is opened in the Windows Active Directory user context of the caller. 
+Otherwise the connection is opened in the context of the service account under which the Windows service runs.
 For more information, see [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 {: .box-tip }
 **Tip:** Uncheck the option **Impersonate caller when running extractions** to test the Kerberos authentication against the AS Java directly. 
-If that works, you can add impersonation as another layer of complexity.
+As the final step you can add impersonation.
 
 ### RFC Options
 Select a library and optionally define a trace directory for debug logging.
