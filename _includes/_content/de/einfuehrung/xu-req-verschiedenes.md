@@ -6,7 +6,6 @@
 
 #### Prozessor-Kerne
 - Minimum: 2 Kerne. 
-Für jede weitere parallele Extraktion wird ein zusätzlicher Kern benötigt. 
 
 
 #### Prozessorgeschwindigkeit   

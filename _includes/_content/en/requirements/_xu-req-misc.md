@@ -7,7 +7,6 @@
 
 ### Processor Cores
 Minimum: 2 Cores. 
-1 additional core is required for each additional parallel extraction. 
 
 
 ### Processor Speed   
