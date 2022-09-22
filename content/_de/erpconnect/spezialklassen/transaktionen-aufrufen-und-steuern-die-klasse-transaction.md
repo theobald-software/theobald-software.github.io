@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-03
 layout: page
-title: Transaktionen aufrufen und steuern- Die Klasse Transaction
+title: Transaction-Klasse
 description: Transaktionen aufrufen und steuern- Die Klasse Transaction
 product: erpconnect
 parent: spezialklassen
@@ -11,50 +11,55 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=transaktionen-aufrufen-und-steuern-die-klasse-transaction
 ---
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis PopUpMMBE**
-
-Mit der Klasse Transaction des ERPConnect-Toolkits haben Sie die Möglichkeit, eine Transaktion - sichtbar oder im Hintergrund - fernzusteuern. Dieses Verfahren heißt im SAP-Jargon Batch Input. Die Hintergrundverarbeitung eignet sich dazu, Massendaten ins SAP zu übernehmen. Insbesondere, wenn es kein BAPI für die gewünschte Tätigkeit gibt, kann Batch Input ein sinnvoller Weg für die Datenerfassung sein.
-
-Die andere Möglichkeit, die sich durch diese Technik bietet, ist der direkte Absprung aus Ihrem .Net-Programm heraus in eine SAP-Transaktion.
-
-Das folgende Beispiel zeigt diese Anwendungsmöglichkeit.
-
-Wir wollen dem Benutzer in einer Windows Form die Möglichkeit geben, eine Materialnummer und ein Werk zu erfassen. Danach drückt er auf den Knopf, der SAP GUI öffnet sich und zeigt die Transaktion MMBE (Bestandsanzeige) genau für den eingegebenen Artikel im eingegebenen Werk. 
+Dieser Abschnitt zeigt, wie Sie die *Transaction*-Klasse verwenden, um SAP-Transaktionen sowohl direkt als auch als Hintergrundprozess (Batch Input) auszuführen.<br>
+Die Hintergrundverarbeitung eignet sich zur Verarbeitung und Sendung von Massendaten an Ihr SAP-System. 
+Dieses Technik wird häufig verwendet, wenn es für die Datenerfassung kein geeignetes BAPI gibt.
 
 
-![Call-Transaction-001](/img/content/Call-Transaction-001.png){:class="img-responsive"}
+### SAP-Transaktionen aufrufen
+Die folgende Beispielanwendung zeigt, wie Sie die *Transaction*-Klasse verwenden, um SAP-Transaktionen direkt aus Ihrem .NET-Programm heraus ausführen.<br>
+In dieser Anwendung kann der Benutzer eine Artikelnummer und den Namen eines Werks eingeben.
+Über eine Schaltfläche wird die SAP GUI gestartet und die Transaktion **MMBE** (Bestandsübersicht) für die eingegebenen Artikel und Werke ausgeführt.
 
-Der folgende Beispielcode zeigt zunächst, wie die einzelnen Batch-Schritte mit Hilfe der Funktionen *AddStep*... gesetzt werden. Wichtig ist, dass die Eigenschaft *UseGui* auf true gesetzt wird. Der SAP GUI soll ja schließlich bei Execute aufgehen, um die Transaktion anzuzeigen. 
+![Call-Transaction-002](/img/content/Call-Transaction-002.png){:class="img-responsive"}
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+{: .box-tip }
+**Tipp**: Im Installatiionspaket von ERPConnect ist das Tool *Transaction-Recorder* enthalten. 
+Das Tool zeichnet SAP-Transaktionen auf und erstellt automatisch einen entsprechenden VB- oder C#-Quellocde für die Transaktion, siehe [Transaction-Recorder](../tools/transactionrecorder).
+
+
+Der Beispielcode zeigt wie die einzelnen Batch-Schritte mit der Funktionen *AddStep* gesetzt werden.
+Wichtig ist, dass bei der Verbindung zu SAP die Eigenschaft *UseGui* auf true gesetzt wird. 
+Der SAP GUI wird über die Methode *Execute* gestartet. 
+```csharp
 private void button1_Click(object sender, System.EventArgs e)
-{
-    Transaction transaction1 = new Transaction();
-    R3Connection r3Connection1 = new R3Connection("SAPServer", 00, "User", "Pass", "EN",800");
-    transaction1.Connection = r3Connection1;
-    // Reset the batch steps
-    transaction1.BatchSteps.Clear();
+    {
+    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+        {
+            Transaction transaction1 = new Transaction();
+            transaction1.Connection = con;
+            // Reset the batch steps
+            transaction1.BatchSteps.Clear();
+  
+            // fill new steps
+            transaction1.ExecutionMode = ERPConnect.Utils.TransactionDialogMode.ShowOnlyErrors;
+            transaction1.TCode = "MMBE";
+            transaction1.AddStepSetNewDynpro("RMMMBEST", "1000");
+            transaction1.AddStepSetOKCode("ONLI");
+            transaction1.AddStepSetCursor("MS_WERKS-LOW");
+            transaction1.AddStepSetField("MS_MATNR-LOW", textBox1.Text);
+            transaction1.AddStepSetField("MS_WERKS-LOW", textBox2.Text);
+  
+            // connect to SAP
+            con.UseGui = true;
+            con.Open(false);
+            // Run
+            transaction1.Execute();
+        }
+    }
+```s
 
-    // fill new steps
-    transaction1.ExecutionMode = ERPConnect.Utils.TransactionDialogMode.ShowOnlyErrors;
-    transaction1.TCode = "MMBE";
-    transaction1.AddStepSetNewDynpro("RMMMBEST", "1000");
-    transaction1.AddStepSetOKCode("ONLI");
-    transaction1.AddStepSetCursor("MS_WERKS-LOW");
-    transaction1.AddStepSetField("MS_MATNR-LOW", textBox1.Text);
-    transaction1.AddStepSetField("MS_WERKS-LOW", textBox2.Text);
-
-    // connect to SAP
-    r3Connection1.UseGui = true;
-    r3Connection1.Open(false);
-    // Run
-    transaction1.Execute();
-}
-{% endhighlight %}
-</details>
-
+<!---
 <details>
 <summary>[VB]</summary>
 {% highlight visualbasic %}
@@ -84,11 +89,110 @@ Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.Event
 End Sub
 {% endhighlight %}
 </details>
+-->
 
-Das Bild zeigt das Programm in Aktion. Artikelnummer und Werk werden eingetragen, der Knopf betätigt, um danach den Bestand anzuzeigen.  
 
-Natürlich müssen Sie nicht unbedingt die Batch-Steps füllen. Falls es Ihnen genügt, einfach nur in eine Zieltransaktion abzuspringen, ohne dort irgendwelche Schritte automatisch zu erledigen, reicht es, die Eigenschaft *TCode* zu füllen und die Transaktion per *Execute* zu starten.  
+{: .box-note }
+**Note**: Falls Sie nur in eine Zieltransaktion abspringen möchten, ohne Schritte automatisch zu erledigen, reicht es, die Eigenschaft *TCode* zu füllen und die Transaktion zu starten.  
 
-![Call-Transaction-002](/img/content/Call-Transaction-002.png){:class="img-responsive"}
+Der folgende Screenshot zeigt das Programm in Aktion. 
 
 ![Call-Transaction-003](/img/content/Call-Transaction-003.png){:class="img-responsive"}
+
+
+### Batch Input Hintergrundverarbeitung
+
+Das folgende Beispiel zeigt, wie man als Hintergrundverarbeitung (Batch Input) eine Lieferanten-Bestellung erstellt.
+Die Transaktion zum Erstellen einer Lieferanten-Bestellung ist **ME21**.
+
+ 
+Am Ende des Codes werden die *BatchReturn*-Objekte, die die Rückgabe-Nachrichten des Hintergrundprozesses beinhalten,
+über eine Schleife auf die Returns-Collection ausgewertet.
+
+```csharp
+using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+    {
+	con.Open(false);
+   
+	Transaction trans = new Transaction();
+	trans.Connection = con;
+	trans.TCode = "ME21";
+   
+	//Begin a new Dynpro
+	trans.AddStepSetNewDynpro("SAPMM06E", "0100");
+	trans.AddStepSetCursor("EKKO-EKGRP");
+	trans.AddStepSetOKCode("/00"); // Enter
+	trans.AddStepSetField("EKKO-LIFNR", "1070"); // Vendor
+	trans.AddStepSetField("RM06E-BSART", "NB"); // Order Type
+	trans.AddStepSetField("RM06E-BEDAT", "01.01.2006"); //Purch.Date
+	trans.AddStepSetField("EKKO-EKORG", "1000"); // Purchase Org
+	trans.AddStepSetField("EKKO-EKGRP", "010"); // Purchase Group
+	trans.AddStepSetField("RM06E-LPEIN", "T");
+   
+	//Begin a new Dynpro
+	trans.AddStepSetNewDynpro("SAPMM06E", "0120");
+	trans.AddStepSetCursor("EKPO-WERKS(01)");
+	trans.AddStepSetOKCode("=BU");
+	trans.AddStepSetField("EKPO-EMATN(01)", "B-7000"); // Material
+	trans.AddStepSetField("EKPO-MENGE(01)", "20"); // Quantity
+	trans.AddStepSetField("EKPO-WERKS(01)", "1000"); // Plant
+	trans.Execute();
+   
+	foreach (ERPConnect.Utils.BatchReturn br in trans.Returns)
+		MessageBox.Show(br.Message);
+	if (trans.Returns.Count == 0)
+		MessageBox.Show("No Messages");
+    }
+```
+
+<!---
+<details>
+<summary>[VB]</summary>
+{% highlight visualbasic %}
+Using con As New ERPConnect.R3Connection
+ 
+     con.UserName = "erpconnect"
+     con.Password = "pass"
+     con.Language = "DE"
+     con.Client = "800"
+     con.Host = "sapserver"
+     con.SystemNumber = 11
+ 
+     con.Open(False)
+     Dim trans As New Transaction
+
+     trans.Connection = con
+     trans.TCode = "ME21"
+ 
+     'Begin a new Dynpro 
+     trans.AddStepSetNewDynpro("SAPMM06E", "0100")
+     trans.AddStepSetCursor("EKKO-EKGRP")
+     trans.AddStepSetOKCode("/00")
+     trans.AddStepSetField("EKKO-LIFNR", "1070")
+     trans.AddStepSetField("RM06E-BSART", "NB")
+     trans.AddStepSetField("RM06E-BEDAT", "01.01.2006")
+     trans.AddStepSetField("EKKO-EKORG", "1000")
+     trans.AddStepSetField("EKKO-EKGRP", "010")
+     trans.AddStepSetField("RM06E-LPEIN", "T")
+ 
+     'Begin a new Dynpro 
+     trans.AddStepSetNewDynpro("SAPMM06E", "0120")
+     trans.AddStepSetCursor("EKPO-WERKS(01)")
+     trans.AddStepSetOKCode("=BU")
+     trans.AddStepSetField("EKPO-EMATN(01)", "B-7000")
+     trans.AddStepSetField("EKPO-MENGE(01)", "20")
+     trans.AddStepSetField("EKPO-WERKS(01)", "1000")
+ 
+     trans.Execute()
+ 
+     Dim br As BatchReturn
+     For Each br In trans.Returns
+         MessageBox.Show(br.Message)
+     Next
+     If trans.Returns.Count = 0 Then
+         MessageBox.Show("No Messages")
+     End If
+ End Using
+{% endhighlight %}
+</details>
+-->

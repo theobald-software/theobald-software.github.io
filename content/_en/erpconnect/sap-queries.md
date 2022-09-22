@@ -1,23 +1,35 @@
 ---
 ref: erpconnect-04
 layout: page
-title: SAP Queries
+title: SAP Query
 description: SAP Queries
 product: erpconnect
 parent: erpconnect
 childidentifier: sap-queries
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=sap-queries
 ---
 
-With ERPConnect, all sorts of SAP queries can be controlled and their data can be extracted. The necessary classes for doing this are located in the namespace ERPConnect.Queries.
+The following section describes how to control and extract SAP Queries with ERPConnect.
 
-The following object hierarchy shows the classes or objects correlation. The queries input image will be filled by the SelectParameters collection. Every input parameter can contain an arbitrary number of values. The values are represented by so-called ranges. In addition, a query object contains a Fields collection that in turn contains the output fields.
+{: .box-note }
+**Note**: SAP Queries refer to queries that can be created by the SAP transactions **SQ02** and **SQ01**.
+If you want to use a BW Query as a data source, see [SAP BW](./sap-bw).
 
+### About SAP Queries
+SAP Queries are used to access data sets, see [SAP Help - Working with Queries](https://help.sap.com/viewer/b1c834a22d05483b8a75710743b5ff26/7.51.6/en-US/0e05493bbccf41a79caed7099c82bd48.html) for more information.
 
-![SAP Query Object Model](/img/content/SAP-Query-Object-Model.png){:class="img-responsive"}
+The input image of a Query is filled using the *SelectParameters* collection. 
+Every input parameter can contain an arbitrary number of values. 
+The values are represented by ranges.
+In addition, a query object contains a *Fields* collection that in turn contains the output fields.
 
+The figure below shows the object hierarchy that is provided by the Queries classes in ERPConnect.<br>
+![SAP Query Object Model](/img/content/SAP-Query-Object-Model.png){:class="img-responsive" width="500"}
+
+****
+More information on working with the ERPConnect Queries classes is provided in the following sections:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

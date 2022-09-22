@@ -11,109 +11,104 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=logging-on-to-sap
 ---
 
-There are two different ways to log on to the SAP system when using ERPConnect. 
-A connection to a single application server can be established, or a connection can be made via Load Balancing. 
-Either way, the following parameter must be provided:
+There are two ways to log on to your SAP system with ERPConnect:
+- Connect to a single application server.
+- Connect to a message server (Load Balancing). 
 
-* Name of the user (UserName property)
-* Password (Password property)
-* Language (Language property)
-* Client (Client property)
+### Input Parameters
 
-If you want to use the direct login to an application server, two further properties must be set:
+Both connection methods require the following input:
 
-* Name of the application server (Host property)
-* System number between 0 and 99 (SystemNumber property)
+| Single Application Server | Load Balancing |
+| :------ |:--- | :--- |
+| Name of the user (*UserName* property)| Name of the user (*UserName* property)|
+| Password (*Password* property)| Password (*Password* property)|
+| Language (*Language* property)| Language (*Language* property)|
+| Client (*Client* property)| Client (*Client* property)|
+| Name of the application server (*Host* property)| Name of the message server (*MessageServer* property)|
+| System number between 0 and 99 (*SystemNumber* property)| System ID (*SID* property e.g., MBS)|
+| | Name of the group (*LogonGroup* property e.g., PUBLIC)|
 
-If you have all properties filled in correctly, you can use the Open method to establish the connection. 
-Please call Open(true) for Load Balancing, or Open(false) for a single server login. 
-For the following code samples the ERPConnect.dll class library must be added as a reference to the project.
+### How to Connect
+1. Add the ERPConnect.dll class library as a reference to the project.
+2. Create a new R3Connection object and define all input parameters.
+3. Use the method *Open* to establish the connection. <br>
+To connect via Load Balancing, use *Open(true)*. For the single server approach, use *Open(false)*. 
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+Example for single server login:
+
+```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "erpconnect"; 
-    con.Password = "pass"; 
-    con.Language = "DE"; 
-    con.Client = "800"; 
-    con.Host = "hamlet"; 
+    con.UserName = "alice";  
+    con.Password = "pass";  
+    con.Language = "DE";  
+    con.Client = "800";  
+    con.Host = "sap-erp-as05.example.com";  
     con.SystemNumber = 11;  
-      con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
+    con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
     
     con.Open(false);
 }
-{% endhighlight %}
-</details>
+```
 
-Load Balancing
+Example for Load Balancing:
 
-**If you want to log on via Load Balancing, three properties are necessary:**
-
-* Name of the message server (MessageServer property)
-* Name of the group (LogonGroup property, e.g. PUBLIC)
-* System ID (SID property, e.g. MBS)
-
-
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "erpconnect"; 
-    con.Password = "pass"; con.Language = "DE"; 
+    con.UserName = "alice";  
+    con.Password = "pass"; 
+	con.Language = "DE";  
     con.Client = "800"; 
-      con.Language = "DE";
-       
-    con.MessageServer = "hamlet"; 
-    con.LogonGroup = "PUBLIC"; 
+    con.MessageServer = "sap-erp-as05.example.com";  
+    con.LogonGroup = "PUBLIC";    
     con.SID = "EC5";
-      con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.  
+	con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.  	
+  
     con.Open(true);
 }
-{% endhighlight %}
-</details>
+```
 
+{: .box-note }
+**Note**: For more information on authentication, see [SSO with Log On Tickets](./sso-with-log-on-tickets) and [SSO with SNC](sso-with-snc).
 
-**Router**
+### Router
 
-If you access your SAP system via Router, you should set the router string just 
-before the host name or the message server.
+When accessing an SAP system via a Router, the router string must be set before the host name or the name of the message server.<br>
+For more information on route strings, see [SAP Help- Route String Entry for SAProuter](https://help.sap.com/saphelp_erp60_sp/helpdata/en/4f/992df1446d11d189700000e8322d00/frameset.htm).
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "erpconnect"; 
+    con.UserName = "alice"; 
     con.Password = "pass"; 
     con.Language = "DE"; 
     con.Client = "800"; 
-    con.Host = "/H/lear.theobald-software.com/H/" + "hamlet"; 
+    con.Host = "/H/sap-erp-as05.example.com/H/" + "hamlet"; 
     con.SystemNumber = 11;  
-      con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
+    con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
 
     con.Open(false);
 }
-{% endhighlight %}
-</details>
+```
 
+### Connection String
 
-**ConnectionString**
+You can use a connection string to call the method *R3Connection.Open(string connectionString)*.
 
-You can call the method R3Connection.Open(string connectionString) using a connection string.
-For the connection with a single application server use the following format:
-"USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=ecc.theobald-software.com PASSWD=YourPassword"
+For a single application server use the following format:<br>
+`"USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=ecc.theobald-software.com PASSWD=YourPassword"`
 
-The default Client Protocol is the RFC Protocol. If you want to use the new NW RFC Protocol set the following line:
+The default client protocol is the RFC Protocol. To use the new NW RFC Protocol add the following command:<br>
+`con.Protocol = ClientProtocol.NWRFC;`
 
- **con.Protocol = ClientProtocol.NWRFC;**
+{: .box-tip }
+**Tip**:  If you use the constructor of the R3Connection class to provide the login properties, 
+you can save lines. <br>Example: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`. 
 
-**Tipp:** If you use the constructor of the R3Connection class to provide the login properties, 
-you can save some lines of code (see [Retrieving Customer Information by calling SD_RFC_CUSTOMER_GET](../calling-bapis-and-function-modules/retrieving-customer-information-by-calling-sd_rfc_customer_get) ).
-
-
-
-
-
+****
+#### Related Links
+- [SSO with Log On Tickets](./sso-with-log-on-tickets).
+- [SSO with SNC](sso-with-snc).
+- [How to implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/how-to-implement-a-connection-pool)

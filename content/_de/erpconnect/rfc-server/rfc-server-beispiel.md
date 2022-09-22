@@ -1,37 +1,43 @@
 ---
-ref: ec-rfc-server-01
+ref: ec-rfc-server-02
 layout: page
-title: Beispiel
+title: RFC-Funktionen erstellen
 description: Beispiel
 product: erpconnect
 parent: rfc-server
 permalink: /:collection/:path
-weight: 1
+weight: 2
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-server-beispiel
 ---
+Dieser Abschnitt zeigt, wie Sie eine RFC-Server-Funktion erstellen, registrieren und Aufrufe verarbeiten.
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis ZAddServer** 
+Im folgenden Anwendungsbeispiel wird eine RFC-Server-Funktion erstellt, die es einem ABAP-Programm ermöglicht, zwei Ziffern zu addieren.<br>
+Zwei Input-Parameter (*NUMBER1* und *NUMBER2*) werden addiert und als Ergebnis (*RES*) ausgegeben.
 
-Im folgenden Beispiel wollen wir eine einfache Anforderung entwerfen. Ein ABAP-Programm soll zwei Zahlen addieren. Die beiden Input-Parameter NUMBER1 und NUMBER2 werden zum Ergebnis RES addiert.
+### Registrieren einer RFC-Server-Funktion
 
-Der folgende Code bildet zunächst ein *RFCServer*-Objekt, das sich unter Angabe des SAP-Hostes, des Gatewayservices und der Programm-ID am SAP-Gateway registriert. Voraussetzung ist, dass die Programm-ID als registrierbare Destination im SAP hinterlegt ist (siehe auch [RFC-Destinationen pflegen](../administration/rfc-destinationen-pflegen)).
+1. Initialisieren Sie ein *RFCServer*-Objekt, das sich unter Angabe des SAP-Hostes, des Gatewayservices und der Programm-ID am SAP-Gateway registriert. 
+Voraussetzung ist, dass die Programm-ID als registrierbare Destination im SAP hinterlegt ist, siehe [Eine RFC-Destinationen anlegen](./rfc-destinationen-pflegen).
+2. Verwenden Sie die Methode *RegisteredFunctions.Add*, um ein *RFCServerFunction*-Objekt zu registrieren.
+Ein *RFCServer*-Objekt kann beliebig viele Funktionen zur Verfügung stellen.
+3. Fügen Sie Import und Export-Parameter hinzu. Die Parameter werden genauso definiert, wie bei einer Client-Funktion.
+4. Wenn ein ABAP-Programm die Funktion aufruft, wird das Ereignis *IncomingCall* getriggert. 
+Es wird ausgelöst, 
+wenn ein eingehender Funktionsaufruf abgearbeitet werden soll. 
+Unter C# muss die Callback-Funktion für das Ereignis mit einer separaten Code-Zeile erledigt werden. 
+5. Starten Sie den Server mit *Start*.
 
-Bevor der Server mittels *Start* gestartet wird, wird die dem SAP angebotene Funktion registriert und zwar mittels *.RegisteredFunctions.Add*. Ein einzelnes RFCServerFunction-Objekt repräsentiert eine einzelne aufrufbare Funktion. Selbstverständlich kann ein Server-Objekt beliebig viele unterschiedliche Funktionen zur Verfügung stellen.
+{: .box-note }
+**Hinweis**: Falls die RFC-Destination in der SAP-Transaktion **SM59** auf Unicode eingestellt ist, muss die Eigenschaft *IsUnicode* des *RFCServer*-Objekts auf True gesetzt werden. 
 
-Die Im- und Export-Parameter werden genauso definiert, wie bei einer Client-Funktion.
-
-Das RFCServer-Objekt bietet das Ereignis *IncomingCall*. Es wird ausgelöst, wenn ein eingehender Funktionsaufruf abgearbeitet werden soll. Unter C# muss dies mit einer separaten Code-Zeile erledigt werden. In VB.net geht das etwas einfacher durch die Ergänzung von WithEvents in der Deklaration. Die Funktion, die gerade aufgerufen wird, wird unter Angabe des *RFCServerFunction*-Objekts an das Ereignis zur Abarbeitung übergeben.
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 using ERPConnect; 
   
 static void Main(string[] args) 
 { 
    RFCServer s = new RFCServer();
-   s.GatewayHost = "hamlet"; 
+   s.GatewayHost = "sap-erp-as05.example.com"; 
    s.GatewayService = "sapgw11"; 
    s.ProgramID = "ERPTEST"; 
    s.IncomingCall+=new ERPConnect.RFCServer.OnIncomingCall(s_IncomingCall); 
@@ -45,9 +51,8 @@ static void Main(string[] args)
    Console.Write( "Server is running. Press any key to exit."); 
    Console.ReadLine(); 
 }
-{% endhighlight %}
-</details>
-
+```
+<!---
 <details>
 <summary>[VB]</summary>
 {% highlight visualbasic %}
@@ -75,14 +80,13 @@ Module Module1
    End Sub
 {% endhighlight %}
 </details>
+  -->
+  
+### Eingehende Aufrufe abarbeiten
 
-Nachfolgend sehen Sie noch die Funktion, die bei jedem eingehenden Aufruf abgearbeitet wird. Die Import-Parameter sind diejenigen, die vom SAP-System kommen. Die Export-Parameter diejenigen, die zurück ans SAP-System gehen.
+Der folgende Beispielcode zeigt, wie das Ereignis *IncomingCall* verarbeitet wird.
 
-**Sie finden den Code dieses Beispiels im Installationsverzeichnis im Verzeichnis ZCalculateServer**
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+```csharp
 private static void s_IncomingCall(RFCServer Sender, RFCServerFunction CalledFunction) 
 { 
    if (CalledFunction.FunctionName=="Z_ADD") 
@@ -96,9 +100,8 @@ private static void s_IncomingCall(RFCServer Sender, RFCServerFunction CalledFun
    Else 
       throw new ERPConnect.ERPException("Function unknown"); 
 }
-{% endhighlight %}
-</details>
-
+```
+<!---
 <details>
 <summary>[VB]</summary>
 {% highlight visualbasic %}
@@ -118,18 +121,19 @@ Private Sub s_IncomingCall( ByVal Sender As _
 End Sub
 {% endhighlight %}
 </details>
+  -->
+Die Import-Parameter werden vom SAP-System übergeben. <br>
+Die Export-Parameter werde an das SAP-System zurück geschickt.
 
-Um unser Beispiel zu vervollständigen, sehen Sie nachfolgend ein Stück ABAP-Code, der die Funktion Z_ADD in einer entfernten RFC-Destination (nämlich genau in unserem Programm) aufruft.
+### RFC-Server-Funktionen in ABAP aufrufen
 
-Das Programm übergibt die beiden Zahlen 26 und 25. Das Ergebnis 51 wird von unserem Programm oben berechnet und zurückgegeben.
+In diesem Beispiel sehen Sie ein Stück ABAP-Code, der die neue Funktion **Z_ADD** in der RFC-Destination *ERPTEST* aufruft.<br>
+Das Programm übergibt die beiden Zahlen 26 und 25 und das Ergebnis 51 wird berechnet und zurückgegeben.
 
-
-<details>
-<summary>[ABAP]</summary>
-{% highlight csharp %}
+```abap
 REPORT z_add_test 
 . 
-  	
+  
 DATA result TYPE i.
 CALL FUNCTION 'Z_ADD' DESTINATION 'ERPTEST' 
    EXPORTING 
@@ -137,14 +141,16 @@ CALL FUNCTION 'Z_ADD' DESTINATION 'ERPTEST'
       number2 = 25 
    IMPORTING 
       res = result. 
-   WRITE: / 'Result: ', result.
-{% endhighlight %}
-</details>
+   WRITE: / 'Result: ', result.  
+```
 
-Das Bild zeigt die Ausgabe des Ergebnisses.
-
+Der folgende Screenshot zeigt die Ausgabe der RFC-Server-Funktion im ABAP-Programm:<br>
 ![RFCServer-Console](/img/content/RFCServer-Console.png){:class="img-responsive"}
 
-**Unicode**
 
-Falls die RFC-Verbindung (RFC Destination) in der SAP-Transaktion SM59 auf Unicode eingestellt ist, muss die Eigenschaft IsUnicode des *RFCServer*-Objekts auf True gesetzt werden. 
+*****
+#### Weiterführende Links
+- [Transactional RFC Server](https://kb.theobald-software.com/erpconnect-samples/transactional-rfc-server)
+- [RFC Server with tables](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-tables)
+- [RFC Server with structures](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-structures)
+- [How to calculate the length of the SAP type QUAN when setting up an RFC-Server](https://kb.theobald-software.com/erpconnect-samples/how-to-calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server)

@@ -11,10 +11,24 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=installation
 ---
 
-The installation process copies the class library, the LINQToERPSetup and all a few tools into your program files directory.
-The following list explains the most important files.
-All files marked with (<b>*</b>) may be redistributed to customers together with your application.  
-  
+### Prerequisites
+
+{: .box-note }
+**Note:** Administrator permissions are required to install ERPConnect.
+
+### Setup
+
+`ERPConnectSetup.exe` is an industry standard setup. Execute the `ERPConnectSetup.exe` file and follow the instructions of the setup. <br>
+The installation process copies the class library and all available tools into the program directory.
+
+![ERPConnect_Setup](/img/content/erpconnect/ERPConnect_Setup.png){:class="img-responsive" }
+
+After the installation you are able to use ERPConnect in your .NET environment.<br>
+The license installation procedure is described in the section [Installing the license](./licensing).
+
+### Program Directory Files
+The list below shows several most important files that are placed into the default directory ``C:\Program Files\ERPConnect`` after installation:
+
 | Files | Explanation |
 | :------ |:--- | :--- |
 | ERPConnect35.dll (<b>*</b>) | The ERPConnect class library for .NET 3.5 SP1 or higher |

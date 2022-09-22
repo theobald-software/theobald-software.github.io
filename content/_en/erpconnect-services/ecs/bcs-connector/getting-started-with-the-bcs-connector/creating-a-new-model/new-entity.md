@@ -34,6 +34,6 @@ Select the *Search* button to see a list of the objects that match your search c
 
 ![BCS-Generic-New-Entity-02](/img/content/BCS-Generic-New-Entity-02.png){:class="img-responsive"}
 
-Select the desired object from the list. For table objects, this will complete the *New Entity* wizard and you can select the *Finish* button. 
+Select the wanted object from the list. For table objects, this will complete the *New Entity* wizard and you can select the *Finish* button. 
 
 For function objects, you will select the *Next* button and then choose the function parameter which represents the structure of the entity. Select *Finish* to complete the *New Entity* wizard.

@@ -11,6 +11,15 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=idoc-schema-generator
 ---
 
-Das Tool IDocSchemaGenerator.exe erzeugt unter Angabe des IDoc-Typs (und ggfs. der Erweiterung) eine entsprechende Schema-Datei, die dann an die Methode *Idoc.LoadIdocSchema* übergeben werden kann. Eventuell kann es auch sinnvoll sein, auf die Schema-Dateien zurückzugreifen, anstatt *CreateIdoc* oder *CreateEmptyIdoc* zu verwenden (siehe Abschnitt [IDocs als XML verarbeiten](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) ). Die Schema-Variante ist etwas performanter, da für das Erstellen der Objekt-Struktur kein Kontakt zum SAP-System nötig ist.
+Der *IDoc-Schema-Generator* generiert eine XML-Datei, die verwendet werden kann, um IDoc Schemas schneller zu laden.
+Das Laden eines Schemas über XML ist i.d.R. performanter als das Laden von Schemas über `CreateIdoc` oder `CreateEmptyIdoc`, da keine Verbindung zu SAP benötigt wird.<br>
+Siehe [IDocs als XML verarbeiten](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten) für mehr Informationen zur Anwendung.
 
-![Tools-002](/img/content/Tools-002.png){:class="img-responsive"}
+### *IDoc-Schema-Generator* verwenden
+ 
+1. Um den *IDoc-Schema-Generator* zu starten, führen Sie die *IdocSchemaGenerator.exe* aus dem ERPConnect-Verzeichnis `C:\Program Files\ERPConnect` aus.
+2. Geben Sie ein, welchen IDoc Typ Sie generieren möchten. Falls nötig, geben Sie eine Erweiterung an und klicken Sie auf **[Generate Now!]**. <br>
+![Tools-002](/img/content/Tools-002.png){:class="img-responsive" }
+3. Das Fenster "SAP Login" öffnet sich. Geben Sie Ihre SAP Benutzerdaten ein und klicken Sie auf **[OK]**.
+4. Speichern Sie die XML-Datei lokal auf Ihrer Festplatte.
+5. Verwenden Sie die Methode `Idoc.LoadIdocSchema`, um die XML-Datei in Ihr Programm zu laden.

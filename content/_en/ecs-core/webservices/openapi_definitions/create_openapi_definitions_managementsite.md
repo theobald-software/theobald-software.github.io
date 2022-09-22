@@ -10,7 +10,7 @@ weight: 2
 lang: en_GB
 ---
 
-Via the ECS Core *Management Site* the export of web services in OpenAPI definitions is also possible. To do this, go to the *Web Services* tab in the menu, click on the desired web service on the left and then on *Download Open Api Definition*.
+Via the ECS Core *Management Site* the export of web services in OpenAPI definitions is also possible. To do this, go to the *Web Services* tab in the menu, click on the wanted web service on the left and then on *Download Open Api Definition*.
 
 ![ecscore-nwc_1](/img/content/ecscore-wsd_25.png){:class="img-responsive"} 
 

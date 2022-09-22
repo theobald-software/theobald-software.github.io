@@ -12,6 +12,10 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=tools
 ---
 
-Im Installationsumfang sind einige kleine Tools enthalten, die Ihnen die Arbeit mit ERPConnect erleichtern sollen. Sie werden in den folgenden TeilAbschnittn im Einzelnen erklärt.
+Im Installationsumfang sind 2 Tools enthalten, die Ihnen die Arbeit mit ERPConnect erleichtert: 
 
-{% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
+- [*Transaction-Recorder*](./tools/transactionrecorder) zeichnet SAP-Transaktionen auf und generiert einen entsprechenden C# oder VB Code für die Transaktionen.
+- [*IDoc-Schema-Generator*](./tools/idoc-schema-generator) generiert eine XML-Datei, die verwendet werden kann, um IDoc Schemas schneller zu laden.
+- [*Function-Template-Generator*](./tools/function-template-generator.md) generiert wiederverwendbare XML Vorlagen für Funktionsbausteine und BAPIs.
+
+Sie finden die Tools im ERPConnect Verzeichnis `C:\Program Files\ERPConnect`.<br>

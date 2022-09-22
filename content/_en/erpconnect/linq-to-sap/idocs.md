@@ -10,32 +10,43 @@ weight: 6
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-idocs
 ---
+The following section shows how to use the IDoc component of the *LINQ to ERP* toolbox.<br>
+With the IDoc component you can send IDocs to SAP. The segments of IDocs can be used in the SAP context.
 
 
-{: .box-warning }
-**Warning! Deprecated component** 
-As of Visual Studio Version 2019 and .Net4.5 the *LINQ to SAP* add-on is not supported anymore.
+### Look Up an IDoc
+1. Drag&Drop the IDoc component into the *LINQ to ERP* DataContext. A search window opens. 
+2. Enter the name of the IDOC to be sent to SAP in the field **IDoc** (1). Use wildcards (*) if needed. <br>
+![LINQToERP-IDocs_001](/img/content/LINQToERP-IDocs_001.png){:class="img-responsive" }
+3. Click **[Search]** (binoculars icon) (2). Search results appear in the preview window.
+4. Select an IDoc (3) and click **[OK]** (4) to proceed.
 
 
-You can send IDocs to SAP with the help of LINQ to SAP. The segments can be used in the SAP context.
+### Edit an IDoc
+After an IDoc has been loaded, the window "LINQ to ERP IDocs" opens. <br>
+Use it to filter and rename the content of an IDoc:
 
-To use an IDoc in .NET, drag the IDoc component from the toolbox to the data context. The selection of the IDoc is done in the search dialog.
+1. Select a segment you want to edit from the treeview (5). The fields of the segment are displayed in the lower area of the window.<br>
+![LINQToERP-IDocs_002](/img/content/LINQToERP-IDocs_002.png){:class="img-responsive" }
+2. Uncheck unused fields or rename fields using the **Member** column (6).
+3. Optional: Rename the class name and collection names of the segment (7).
+4. Use the checkbox **Selected** to deactivate segments that are not used later in the code (8).
+Deactivated segments are displayed with *italic* font in the treeview. 
+5. Click **[OK]** to confirm your selection. The window "LINQ to ERP IDocs" closes and a corresponding icon is created in the Designer.
 
-![LINQToERP-IDocs_001](/img/content/LINQToERP-IDocs_001.png){:class="img-responsive" width="600px"}
+To edit the IDoc, double-click the IDoc icon in the Designer.
 
-In the following dialog you can find in the left area the structure of the IDoc. In the lower area the fields are shown of the segment that is selected in the treeview. Uncheck unused fields or rename them. In the upper right corner you will find the class names and the collection names (names are generated automatically). If you like, just rename them.
+### How to Use the Class in your Code
+Save the .erp file that contains the extraction component to trigger the proxy classes code generation in the background. <br>
 
-![LINQToERP-IDocs_002](/img/content/LINQToERP-IDocs_002.png){:class="img-responsive" width="800px"}
+In this example the IDoc component generates the following objects:
+- an IDoc object (MATMAS05) including important header information (e.g. sender and receiver information e.g., RCVPRN or SNDPRN).
+- the two Segments E1MARAM (Basicdata) and E1MAKTM (Shorttext) with the required fields already filled. They are also added to the IDoc.
 
-The checkbox selected can be used to deactivate segments which are not used later in the code. Deactivated segments are shown in italic in the treeview.
+The IDoc is sent with *Send()*.<br>
+The following code shows how to use the generated classes:
 
-The following code shows how to use the generated classes. First an IDoc object is generated (MATMAS05) and the most important header information is filled (e.g. sender and receiver information like RCVPRN or SNDPRN).
-
-Two Segments are created: E1MARAM (Basicdata) and E1MAKTM (Shorttext), filled with the required fields and added to the IDoc. The IDoc is sent with *Send()*.
-
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+```csharp
 static void Main(string[] args) 
 { 
    try 
@@ -73,10 +84,11 @@ static void Main(string[] args)
          Console.WriteLine(e1.Message); Console.ReadLine(); 
       } 
 }
-{% endhighlight %}
-</details>
+```
 
+#### Check the result in SAP
 
-In the transaction WE02 we can see the incoming IDocs, and if the status is green they are successfully processed.
+The SAP transaction *WE02* shows incoming IDocs. 
+If the status is green, they are successfully processed.
 
-![LINQToERP-IDocs_003](/img/content/LINQToERP-IDocs_003.png){:class="img-responsive" width="800px"}
+![LINQToERP-IDocs_003](/img/content/LINQToERP-IDocs_003.png){:class="img-responsive" }

@@ -118,7 +118,7 @@ Tables are styled in a specific way, but this will happen automatically.
 Images should be saved in the /img/content folder.
 
 To make it a specific size, add height="200px" and width="200px". Be aware that if a big size is used and the image is viewed on mobile,
-it does shrink to the screen size (to prevent sideways scrolling), but does not scale proportionally, which gives an undesired effect.
+it does shrink to the screen size (to prevent sideways scrolling), but does not scale proportionally, which gives an unwanted effect.
 As such, it is advised that if height and width are added, the class img-responsive is also added, so it will scale proportionally on small screens.
   
 ![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png){:height="200px" width="200px" class="img-responsive"}

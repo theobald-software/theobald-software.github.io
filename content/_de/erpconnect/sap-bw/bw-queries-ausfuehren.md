@@ -10,49 +10,61 @@ weight: 1
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=bw-queries-ausfuehren
 ---
+Die folgende Beispielanwendung zeigt wie Sie mit ERPConnect Daten aus einer BW Query auslesen.
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis BWQuery** 
+### Über die Beispiel-Query
 
-Das folgende Beispiel zeigt die Ausführung der Query unter .NET.
+Dieses Beispiel verwendet eine BW-Query *ZSIMPLEQUERY*, die auf dem Cube *0D_DECU* basiert. 
+Die folgende Abbildung zeigt die Query im Designer. <br>
 
-Zunächst wird ein BWCube-Objekt mit Hilfe der CreateCube-Funktion gebildet. Der Name setzt sich dabei aus dem Cubenamen und dem Querynamen zusammen.
+![BW-001](/img/content/BW-001.png){:class="img-responsive" }
 
-Das Cube-Objekt bietet eine Collection für alle enthaltenen Dimensionen (*Dimensions*) und für alle enthaltenen Kennzahlen (*Measures*). Die Eigenschaft *SelectForFlatMDX* definiert, ob die jeweilige Komponente in der Egebnismenge enthalten sein soll. Sie wird im Beispiel auf *true* gesetzt. Bitte beachten Sie, dass die Benennung der Kennzahlen durch die Query-Generierung im Designer nicht den originalen, technischen Namen folgt, daher werden die Kennzahlen hier im Beispiel über die Ordinalzahl und nicht über den Namen angesprochen.
+{: .box-note }
+**Hinweis**: Beachten Sie, dass in den Einstellungen der Query das Häkchen *Externen Zugriff zulassen* gesetzt sein muss.
 
-Um die Variable mit Werten zu füllen, wird sie über die Variables-Collection angesprochen. Hinter einer Variablen liegen immer Range-Tabellen, die wir bereits aus dem SAP Query Abschnitt kennen.
+Die Dimensionen *Material* und *Auftraggeber*, sowie die Kennzahlen *Fakturierte Menge* und *Kosten* werden in die Ergebnismenge übergeben, siehe Screenshot. 
+Die Dimension hat die Variable *MAT01*, die Einschränkungen auf die Materialnummer erlaubt. 
 
-Die BW-Query kann über *Execute()* ausgeführt werden und liefert eine Tabelle vom Typ DataTable zurück. Der Screenshot des Beispiels zeigt die Ergebnismenge im Grid.
+![BW-002](/img/content/BW-002.png){:class="img-responsive" width="600px" }
 
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
+
+### Queries ausführen
+
+1. Bauen Sie mit der *R3Connection-Klasse* eine Verbindung zum R/3 System auf.
+2. Erstellen Sie mit der *CreateCube*-Funktion ein BWCube-Objekt. 
+Der Name setzt sich dabei aus dem Cubenamen und dem Querynamen zusammen.
+3. Das Cube-Objekt bietet eine Sammlung für alle enthaltenen Dimensionen (*Dimensions*) und für alle enthaltenen Kennzahlen (*Measures*). 
+Wenn die Eigenschaft *SelectForFlatMDX* auf true gesetzt ist, wird die jeweilige Komponente in die Egebnismenge aufgenommen. <br>
+Fügen Sie die Dimensionen *Material* und *Auftraggeber*, sowie die Kennzahlen *Fakturierte Menge* und *Kosten* der Ergebnismenge hinzu.
+4. Um die Variable mit Werten zu füllen, greifen Sie über die Variables-Collection auf sie zu. 
+Hinter einer Variable liegen immer Range-Tabellen.
+5. Führen Sie die BW-Query über *Execute* aus. Die BW-Query gibt eine Tabelle vom Typ *DataTable* zurück. 
+
+{: .box-note }
+**Hinweis**: Beachten Sie, dass die Benennung der Kennzahlen durch die Query-Generierung im Designer nicht den originalen, 
+technischen Namen entspricht. Die Kennzahlen werden daher über die Ordinalzahl und nicht über den Namen angesprochen.
+
+### Beispielcode
+
+```csharp
 private void Go_Click(object sender, System.EventArgs e)
-{
-   using (R3Connection con = new R3Connection())
-   {
-       con.UserName = "erpconnect";
-       con.Password = "pass";
-       con.Language = "DE";
-       con.Client = "800";
-       con.Host = "sapserver";
-       con.SystemNumber = 11;
-
-       con.Open(false);
-
-       BWCube query = con.CreateBWCube("0D_DECU/ZSIMPLEQUERY");
-       query.Dimensions["0D_MATERIAL"].SelectForFlatMDX = true;
-       query.Dimensions["0D_SOLD_TO"].SelectForFlatMDX = true;
-       query.Measures[0].SelectForFlatMDX = true;
-       query.Measures[1].SelectForFlatMDX = true;
-
-       query.Variables["MAT01"].SingleRange.LowValue = this.txtMatNr.Text;
-
-       this.dataGrid1.DataSource = query.Execute();
-   }
-}
-{% endhighlight %}
-</details>
-
+       {
+       using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+             { 
+ 
+                 BWCube query = con.CreateBWCube("0D_DECU/ZSIMPLEQUERY");
+                 query.Dimensions["0D_MATERIAL"].SelectForFlatMDX = true;
+                 query.Dimensions["0D_SOLD_TO"].SelectForFlatMDX = true;
+                 query.Measures[0].SelectForFlatMDX = true;
+                 query.Measures[1].SelectForFlatMDX = true;
+ 
+                 query.Variables["MAT01"].SingleRange.LowValue = this.txtMatNr.Text;
+			 
+                 this.dataGrid1.DataSource = query.Execute();
+             }
+       }
+```
+<!---
 <details>
 <summary>[VB]</summary>
 {% highlight visualbasic %}
@@ -84,6 +96,9 @@ Private Sub Go_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 End Sub
 {% endhighlight %}
 </details>
+-->
 
-![BW-002](/img/content/BW-002.png){:class="img-responsive"}
-
+****
+#### Weiterführende Links
+- [Executing BW Queries](https://kb.theobald-software.com/erpconnect-samples/executing-bw-queries)
+- [Transferring data packets with BWQuery class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-bwquery-class)

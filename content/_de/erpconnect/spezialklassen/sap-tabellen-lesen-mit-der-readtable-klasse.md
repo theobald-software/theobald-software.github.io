@@ -1,7 +1,7 @@
 ---
 ref: ec-special-classes-01
 layout: page
-title: SAP-Tabellen lesen mit der ReadTable-Klasse
+title: ReadTable-Klasse
 description: SAP-Tabellen lesen mit der ReadTable-Klasse
 product: erpconnect
 parent: spezialklassen
@@ -11,58 +11,48 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sap-tabellen-lesen-mit-der-readtable-klasse
 ---
 
-**Sie finden den Code dieses Beispiels im ERPConnect-Installationsverzeichnis im Verzeichnis ReadSAPTable** 
+Dieser Abschnitt beschreibt die Verwendung der *ReadTable*-Klasse.<br>
+Eine oft wiederkehrende Aufgabe bei der Arbeit mit .NET und SAP ist das direkte Lesen von Daten aus der SAP-Datenbank.
+Die Klasse *ReadTable* ermöglicht den Zugriff auf diese Daten.
 
-Eine oft wiederkehrende Aufgabe in der täglichen Arbeit mit .Net und SAP ist das direkte Lesen von Daten aus der SAP-Datenbank.
+### Daten aus Tabellen auslesen
 
-Diesem Anspruch wird die Klasse *ReadTable* gerecht.
+Das folgende Beispiel zeigt, wie Sie die *ReadTable*-Klasse verwenden, um eine Selektion auf eine Tabelle zu erstellen und die zurückgegebenen Daten in Form einer 
+ADO-DataTable auswerten.
 
-Wie das folgende Beispiel zeigt, ist es mit wenigen Zeilen Code möglich, eine Selektion auf eine Tabelle zu erstellen und die zurückgegebenen Daten in Form einer wohlbekannten ADO-DataTable auszuwerten.
+- Im dem Beispiel werden Materialtexte aus der Tabelle *MAKT* ausgelesen. 
+Benötigt werden die beiden Spalten *MATNR* (Materialnummer) und *MAKTX* (Materialtext).
+- Um nur die englischen Textbausteine auszulesen, schränken Sie die Selektion mit dem WHERE-Kriterium `SPRAS = 'EN'` ein (*SPRAS* ist die Spalte für den Sprachenschlüssel). 
 
-Im folgenden Beispiel sollen Materialtexte ausgelesen werden. Diese befinden sich in der Tabelle MAKT. Benötigt werden die beiden Spalten MATNR (Materialnummer) und der Text (Spalte MAKTX).
-
-Da wir nur die englischen Textbausteine auslesen möchten, schränken wir die Selektion mit dem Kriterium SPRAS = 'EN' ein. SPRAS ist die Spalte für den Sprachenschlüssel in der Tabelle MAKT. 
-
-<details>
-<summary>[C#]</summary>
-{% highlight csharp %}
-using System;  
-using ERPConnect;  
-using ERPConnect.Utils;  
-using System.Data;  
-    
-class Class1 
- {  
-   static void Main(string[] args)  
-   {  
-       using(R3Connection con = new R3Connection("hamlet",11,"theobald","pw","DE","800"))
-       {
-           con.Open(false); 
-           ReadTable table = new ReadTable(con);  
-           table.AddField("MATNR");  
-           table.AddField("MAKTX");  
-           table.WhereClause = "SPRAS = 'EN' AND SPRAS = 'DE'";  
-           table.TableName = "MAKT";  
-           table.RowCount = 10;  
-        
-           table.Run();  
-        
-           DataTable resulttable = table.Result;  
-        
-           for(int i=0; i < resulttable.Rows.Count;i++)  
-           {  
-               Console.WriteLine(  
-                 resulttable.Rows[i]["MATNR"].ToString() + " " +  
-                 resulttable.Rows[i]["MAKTX"].ToString());  
-           } 
-         
-           Console.ReadLine();  
-        }
-   } 
+```csharp
+static void Main(string[] args) 
+{ 
+    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+            {
+                ERPConnect.LIC.SetLic("LicenseNumber");
+                con.Open(false);
+				
+                ReadTable table = new ReadTable(con);
+                table.AddField("MATNR");
+                table.AddField("MAKTX");
+                table.WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
+                table.TableName = "MAKT";
+                table.RowCount = 10;
+				
+                table.Run();
+				
+                DataTable resulttable = table.Result;
+                for (int i = 0; i < resulttable.Rows.Count; i++)
+                {
+                    Console.WriteLine(
+                     resulttable.Rows[i]["MATNR"].ToString() + " " +
+                     resulttable.Rows[i]["MAKTX"].ToString());
+                }
+                Console.ReadLine();
+            }
 }
-{% endhighlight %}
-</details>
-
+```
+<!---
 <details>
 <summary>[VB]</summary>
 {% highlight visualbasic %}
@@ -105,25 +95,34 @@ Module Module1
 End Module
 {% endhighlight %}
 </details>
+-->
+Der folgende Screenshot zeigt die Konsolenausgabe des Beispielprogramms. 
 
-Das Bild unten zeigt die Konsolenausgabe des Beispielprogramms. 
+![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive"  }
 
-![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive"}
 
-**Einschränkungen beim Tabellenzugriff** 
+### Einschränkungen beim Tabellenzugriff 
+Bei der Extraktion von Tabellen aus älteren SAP-Systemen können Sie bei der Verwendung des SAP-Standardfunktionsbausteins (RFC_READ_TABLE) auf folgende Einschränkungen stoßen:
+- Die Gesamtbreite der zu extrahierenden Spalten darf 512 Bytes nicht überschreiten
+- Fehler können auftreten bei der Extraktion von Tabellen, die eine oder mehrere Spalten vom Typ f (FLTP, floating point), DEC (Decimal und Prozentzahl z.B.) oder x (RAW, LRAW) haben.
+- Schlechte Extraktionsperformance bei Extraktion großer Tabellen.
 
-Leider gibt es beim Lesen von Tabellen mit der ReadTable-Klasse folgende Einschränkungen:   
+Um die o.g. Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustein *Z_THEO_READ_TABLE* von Theobald Software auf Ihrem SAP-System.
 
-- Zu lesende Tabellen dürfen keine Spalten vom Typ Fließkommazahl (FLTP) enthalten (wie zum Beispiel bei der Tabelle VBAK) 
-- Die Gesamtbreite der zu extrahierenden Spalten darf 512 Bytes nicht übersteigen.
-- Spezialtabellen wie TCURR liefern abgehackte Werte.
+{: .box-warning }
+**Warnung! Error while converting value '\*.0' of row 1530, column 3** <br>
+Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.<br>
+Verwenden Sie den Funktionsbaustein von Theobald Software *Z_THEO_READ_TABLE*. 
 
-Sollte eine der obigen Punkte eintreten, wird der Tabellenzugriff mit einer entsprechenden Exception abstürzen. Um dieses Problem zu lösen, müssen Sie einen Z-Baustein im SAP-System installieren. Siehe dazu das Abschnitt [Z-Baustein installieren](../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion).
+#### Z_THEO_READ_TABLE installieren
 
-Um die ReadTable-Klasse zu veranlassen, einen installierten Z-Baustein, z.B. Z_XTRACT_IS_TABLE, anstelle des SAP-Standards zu nutzen, benutzen Sie die Methode: *ReadTable.SetCustomFunctionName("Z_XTRACT_IS_TABLE")*;
+Kontaktieren Sie den [Theobald Support](mailto:support@theobald-software.com), um den SAP-Transportauftrag *Z_THEO_READ_TABLE* anzufordern.<br>
+Sobald der Funktionsbaustein im System verfügbar ist, können Sie ihn aktivieren, indem Sie den Namen des Funktionsbausteins im LINQ-Table Fenster eintragen. <br>
+![LINQToERP-Tables-004](/img/content/LINQToERP-Tables-004.png){:class="img-responsive"}
 
-**Links**<br>
-Online Hilfe: [Installation des Z-Funktionsbausteins](../sap-customizing/umgehung-der-einschraenkungen-bei-der-tabellenextraktion)<br>
-KnowledgeBase: [Transferring data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-readtable-class)<br>
-KnowledgeBase: [Get meta data of a table](https://kb.theobald-software.com/erpconnect-samples/get-meta-data-of-a-table)<br>
 
+****
+#### Weiterführende Links
+- [Transferring data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-readtable-class)
+- [Get meta data of a table](https://kb.theobald-software.com/erpconnect-samples/get-meta-data-of-a-table)
+- [Get CostCenter hierarchies](https://kb.theobald-software.com/erpconnect-samples/get-costcenter-hierarchies)

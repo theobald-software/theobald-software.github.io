@@ -1,7 +1,7 @@
 ---
 ref: ec-sap-queries-01
 layout: page
-title: Example for calling a query
+title: Calling SAP Queries
 description: Example for calling a query
 product: erpconnect
 parent: sap-queries
@@ -11,53 +11,71 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=example-for-calling-a-query
 ---
 
-In the following example, the data from an exemplary query from the area of materials management are extracted. First, with the help of the CreateQuery method from the R3Connection object, the query object is built. Each SAP query is clearly determined by three descriptors: the user area (whether local or global), the user group (in our example /SAPQUERY/MB) and the name of the query itself (MEBESTWERTAN in our case).
+The following sample shows how to fetch data from an SAP Query using ERPConnect.
 
-Then the ranges are filled. Every parameter has a distinctly technical name. Via the indexer, you can access the parameter's range collection under the name (e.g. SP$00017) and add a new range with Add. An individual range is determined by a sign (include or exclude), an operator (e.g. equals for parity) and a low or high value (LowValue and HighValue). Because we only use parity in our example, the high value is irrelevant here. Both values are required for special operators (e.g. Between). If you don't know the technical name of a SelectionParameter, you can directly invoke the selection image in the SAP GUI, place your cursor in the field, press F1 and then press the "technical info" button. The name will be stated at the very bottom, next to the term "Dynprofield".
+### About the Sample Query
+This example uses the training Query *D3* which contains flight information of airplanes. 
+Data that matches certain selection criteria (e.g. airline and date of flight) is fetched and drawn into a *DataGrid*, see screenshot below. 
 
-When all of the selections have been filled in, the query can be executed with the help of the Execute method. The query output will then be in an ADO.NET DataTable. It can be accessed via the Result attribute of the query object.
+![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive" }
 
-<details>
-<summary>Click to open C# example.</summary>
-{% highlight csharp %}
+{: .box-tip }
+**Tip**: If you don't know the technical name of a Query parameter, you can look it up in your SAP-System.
+Use the transaction **SQ01** or **SQ02** to search a Query. Open the description of the Query and scroll to the section *Selections*.
+All parameter properties including the name are listed.
+
+### Fetching Data 
+
+1. Open a client connection to the R/3 system using the R3Connection class.
+2. Use the *CreateQuery* method to create a query object. 
+Each SAP query is defined by three descriptors: 
+- the user workspace (whether local or global)
+- the user group (in this example *BT*)
+- the name of the query itself (in this example *D3*)
+3. Define the parameters of the query. Every parameter has a distinctly technical name that can be looked up in the SAP. 
+To create the selection criteria for the sample query, access the parameter's range collection via the indexer and use *Add* to add a new range to "CARRID" (airline) and "FLDATE" (date). <br>
+An individual range is defined by three descriptors:
+- a sign (include or exclude)
+- an operator (e.g. *equals* for parity) 
+- a low or high value (LowValue and HighValue or only LowValue when using parity).  
+4. When all selections are defined, execute the query with the *Execute* method. <br>
+The query output is an ADO.NET DataTable. It can be accessed using the *Result* attribute of the query object.
+
+### Sample Code
+```csharp
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
-       {
-          using (R3Connection con = new R3Connection("sapappserver", 00, "sapuser", "password", "EN", "800"))
+    {
+      using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+        { 
+           con.Open(false);
+ 
+           // Create Query object Query q; 
+           try
            {
-          
-               con.Open(false);
- 
-               // Create Query object Query q; 
-               try
-               {
-                   q = con.CreateQuery(WorkSpace.GlobalArea,
-                      "/SAPQUERY/MB", "MEBESTWERTAN");
- 
-               // Add a criteria (in this case the material number) 
-               q.SelectionParameters["SP$00017"].Ranges.Add(
-                  Sign.Include, RangeOption.Equals, "100-100");
- 
-               // Add a second criteria (in this case the currency) 
-               q.SelectionParameters["S_WAERS"].Ranges.Add(
-                  Sign.Include, RangeOption.Equals, "USD");
- 
+               Query q = con.CreateQuery(WorkSpace.GlobalArea, "BT", "D3");
+
+               // Add a criteria (in this case the airline) 
+               q.SelectionParameters["CARRID"].Ranges.Add(
+                   Sign.Include, RangeOption.Equals, inputAirline.Text);
+               // Add a second criteria (in this case the date) 
+               q.SelectionParameters["FLDATE"].Ranges.Add(
+                   Sign.Include, RangeOption.Between, inputStartDate.Text, inputEndDate.Text);
+
                // Run the Query 
                q.Execute();
- 
                // Bind result to datagrid 
-               this.dgvQuery.DataSource = q.Result;
-               }
-               catch (Exception e1)
-               {
-                   MessageBox.Show(e1.Message);
-                   return;
-               }
-
+               this.dataGridView1.DataSource = q.Result;
            }
-       }
-{% endhighlight %}
-</details>
+           catch (Exception e1)
+           {
+            MessageBox.Show(e1.Message);
+            return;
+           }
+        }
+    }
+```
 
+<!---
 <br>
 <details>
 <summary>Click to open VB example.</summary>
@@ -99,5 +117,4 @@ Using con As New R3Connection
 {% endhighlight %}
 </details>
 <br>
-
-![SAP-Query-Execution](/img/content/SAP-Query-Execution.png){:class="img-responsive" }
+-->
