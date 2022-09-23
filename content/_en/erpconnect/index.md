@@ -23,8 +23,8 @@ The design and implementation of the interfaces is very comfortable, because the
 
 ERPConnect offers multiple extraction types to cover a wide range of demands of SAP data extraction.
 
-- [**BAPIs and Function Modules**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
-- [**BWCube and BEx Queries**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
+- [**BAPIs and Function Modules**](./calling-bapis-and-function-modules) accesses BAPIs and RFC function modules.
+- [**BWCube and BEx Queries**](./sap-bw) extracts data from SAP BW InfoCubes and BEx Queries.
 - [**IDocs**](./receiving-and-sending-idocs) sends and receives SAP IDocs.
 - [**Query**](./sap-queries) extracts SAP queries. **Note: not the BEx queries supplied by BW Cube**.
 - [**Tables via RFC**](./special-classes/reading-sap-tables-directly-with-readtable) reads SAP Tables directly via RFC.
@@ -39,7 +39,7 @@ For more information on *LINQ to SAP*, see [LINQ to SAP](./linq-to-sap).
 The installation package of ERPConnect also includes the following tools:
 - [Transaction-Recorder](./tools/transaction-recorder)
 - [IDoc-Schema-Generator](./tools/idoc-schema-generator)
-- [*Function-Template-Generator*](./tools/function-template-generator.md) 
+- [*Function-Template-Generator*](./tools/function-template-generator) 
 
 
 *****

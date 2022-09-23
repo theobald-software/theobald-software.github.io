@@ -23,9 +23,9 @@ Das Design und die Implementierung der Schnittstellen ist sehr komfortabel, da f
 
 ERPConnect bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
 
-- [**BAPIs and Function Modules**](./bapis-and-function-modules) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**BWCube and BEx Queries**](./bw-infocubes-and-bex-queries) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
-- [**IDocs**](./receiving-and-sending-idocs) sendet und empfängt SAP IDocs.
+- [**BAPIs and Function Modules**](./rfc-client-funktionen-und-bapis) greift auf BAPIs und RFC-Funktionsmodule zu.
+- [**BWCube and BEx Queries**](./sap-bw) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
+- [**IDocs**](./idocs-senden-und-empfangen) sendet und empfängt SAP IDocs.
 - [**Query**](./sap-queries) extrahiert SAP Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
 - [**Tables via RFC**](./spezialklassen/sap-tabellen-lesen-mit-der-readtable-klasse) liest SAP-Tabellen direkt per RFC.
 
@@ -37,9 +37,9 @@ Darüber hinaus kann ERPConnect ABAP-Code on-the-fly generieren und ausführen, 
 Für weitere Informationen zum *LINQ to SAP* Add-On, siehe [LINQ to SAP](./linq-to-sap).
 
 Im Installationsumfang von ERPConnect sind folgende Tools enthalten:
-- [Transaction-Recorder](./tools/transaction-recorder)
+- [Transaction-Recorder](./tools/transactionrecorder)
 - [IDoc-Schema-Generator](./tools/idoc-schema-generator)
-- [*Function-Template-Generator*](./tools/function-template-generator.md) 
+- [*Function-Template-Generator*](./tools/function-template-generator) 
 
 
 *****
