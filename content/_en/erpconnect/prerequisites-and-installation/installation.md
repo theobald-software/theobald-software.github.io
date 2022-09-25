@@ -33,8 +33,8 @@ The list below shows several most important files that are placed into the defau
 | :------ |:--- | :--- |
 | ERPConnect35.dll (<b>*</b>) | The ERPConnect class library for .NET 3.5 SP1 or higher |
 | ERPConnect35.xml  | Visual Studio documentation files |
-| TransactionRecorder.exe | Small tool to record batch sequences and create appropriate .NET code (see [Batch Input Background Processing](../special-classes/batch-input-background-processing)) |
-| IdocSchemeGenerator.exe | 	Small tool to generate XML schemas for IDocs (see [XML-Support for IDoc programming](../receiving-and-sending-idocs/xml-support-for-idoc-programming)) |
-| FunctionTemplateGenerator.exe | Small tool to generate XML templates for RFCFunction objects (see [Improve your Perfor-mance by Using Templates](../calling-bapis-and-function-modules/improve-your-performance-by-using-templates)) |
+| TransactionRecorder.exe | Small tool to record batch sequences and create appropriate .NET code, see [Transaction Class](../special-classes/managing-and-executing-transactions-the-class-transaction). |
+| IdocSchemeGenerator.exe | Small tool to generate XML schemas for IDocs, see [Using XMLs](../receiving-and-sending-idocs/xml-support-for-idoc-programming). |
+| FunctionTemplateGenerator.exe | Small tool to generate XML templates for RFCFunction objects, see [Using Templates](../calling-bapis-and-function-modules/improve-your-performance-by-using-templates). |
 
 After the installation you are able to use ERPConnect in your .NET environment. If you want to use the LINQ Designer, run the right LINQToERPSetup for your VisualStudio environment. Details you can find in the LINQToERP chapter.

@@ -45,7 +45,7 @@ Follow the steps below to set up a test environment that can send *MATMAS* IDocs
 1. Define a Logical System to which the IDocs can be sent.<br>
 Use the transaction **SPRO** to open *Customizing* and follow the path *SAP Web Application Server -> ALE -> Sending and Receiving Systems -> Logical Systems -> Define Logical System* (this path is valid for Release 4.7).
 Create a new line and enter the name of the system e.g., ERPCONNECT and a short description.
-2. Use the transaction **SM59** to create an RFC Destination, see [Maintaining RFC Destinations](./maintaining-rfc-destinations).
+2. Use the transaction **SM59** to create an RFC Destination, see [Setting Up an RFC Destination](#setting-up-an-rfc-destination).
 3. Use the transaction **WE21** to create a *Transactional RFC* IDoc Port. <br>
 The name of the port must be unique and refer to the RFC destination defined in step 2. <br>
 ![IDoc-Test-Environment_001](/img/content/IDoc-Test-Environment_001.png){:class="img-responsive" width="800px"}

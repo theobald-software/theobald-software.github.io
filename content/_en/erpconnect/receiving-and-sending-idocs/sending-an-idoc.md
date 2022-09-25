@@ -73,8 +73,9 @@ The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 
 
 ****
 #### Related Links
-- [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc)
-- [Sending IDocs Synchronously](https://kb.theobald-software.com/erpconnect-general/synchronous-sending-and-status-query)
+- [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc-by-using-createemptyidoc-method)
+- [Sending a MATMAS IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-a-matmas-idoc)
+- [Resend IDocs which where set to CPICERR in SM58](https://kb.theobald-software.com/erpconnect-samples/resend-idocs-which-where-set-to-cpicerr-in-sm58)
 - [Setting Up an RFC-Destination](./prerequisites#setting-up-an-rfc-destination)
 
 <!---

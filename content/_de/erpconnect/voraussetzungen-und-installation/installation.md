@@ -24,7 +24,7 @@ Der Installationsprozess kopiert die Klassenbibliothek, das LINQToERPSetup und a
 ![ERPConnect_Setup](/img/content/erpconnect/ERPConnect_Setup.png){:class="img-responsive" }
 
 Nach der Installation können Sie ERPConnect in Ihrer .NET Umgebung verwenden.<br>
-Die Installation von Lizenzen wird im Abschnitt [Lizenz](./lizensierung) beschrieben.
+Die Installation von Lizenzen wird im Abschnitt [Lizenz](./lizenzierung) beschrieben.
 
 {: .box-note }
 **Hinweis:** Um den LINQ Designer zu verwenden, führen Sie das *LINQToERPSetup* für Ihre VisualStudio Umgebung aus.
