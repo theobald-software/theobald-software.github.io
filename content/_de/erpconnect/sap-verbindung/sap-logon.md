@@ -37,17 +37,17 @@ Beide Verbindungsmethoden benötigen folgende Angaben:
 3. Verwenden Sie die Methode *Open*, um eine Verbindung herzustellen. <br>
 Um sich über Load Balancing zu verbinden, verwenden Sie *Open(true)*. Um sich über einen Application Server zu verbinden, verwenden Sie *Open(false)*.
 
-Beispiel für einen Login mit einem SAP Application Serve:
+Beispiel für einen Login mit einem SAP Application Server:
 
 ```csharp
-using(R3Connection con = new R3Connection())  
-{   
-    con.UserName = "alice";  
-    con.Password = "pass";  
-    con.Language = "DE";  
+using(R3Connection con = new R3Connection())
+{
+    con.UserName = "SAPUser";  
+    con.Password = "SAPPassword";  
+    con.Language = "EN";  
     con.Client = "800";  
     con.Host = "sap-erp-as05.example.com";  
-    con.SystemNumber = 11;  
+    con.SystemNumber = 00;  
     con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
     
     con.Open(false);
@@ -58,19 +58,30 @@ Beispiel für einen Login via Load Balancing:
 
 ```csharp
 using(R3Connection con = new R3Connection())
-{  
-    con.UserName = "alice";  
-    con.Password = "pass"; 
+{
+    con.UserName = "SAPUser";  
+    con.Password = "SAPPassword"; 
 	con.Language = "DE";  
     con.Client = "800"; 
     con.MessageServer = "sap-erp-as05.example.com";  
     con.LogonGroup = "PUBLIC";    
-    con.SID = "EC5";
+    con.SID = "ECC";
 	con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.  	
   
     con.Open(true);
 }
 ```
+
+Das Standard-Encoding für den Verbindungsaufbau zu SAP-Systemen ist SAP-Codepage 1100 (iso-8859-1).
+Wenn Sie das NW RFC Protokoll verwenden, können Sie explizit ein Encoding angeben. Das ist dann notwendig, wenn SAP Benutzerdaten Zeichen enthalten, die nicht Teil der SAP-Codepage 1100 sind. Beispiel:<br>
+
+```csharp
+con.Protocol = ClientProtocol.NWRFC; 
+con.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
+```
+
+{: .box-note }
+**Hinweis:** Für mehr Informationen zu Authentifizierung, siehe [SSO mit Log On Tickets](./sso-mit-logon-ticket) und [SSO mit SNC](sso-mit-snc).
 
 ### Router
 Wenn Sie auf das SAP-System über einen SAP-Router zugreifen, muss der Routerstring vor den Hostnamen bzw. den Namen des Message-Servers angegeben werden. <br>
@@ -79,12 +90,12 @@ Für mehr Informationen zu *Route Strings*, siehe [SAP-Dokumentation - Eingabe v
 ```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "alice"; 
-    con.Password = "pass"; 
-    con.Language = "DE"; 
-    con.Client = "800"; 
-    con.Host = "/H/sap-erp-as05.example.com/H/" + "hamlet"; 
-    con.SystemNumber = 11;  
+    con.UserName = "SAPUser";  
+    con.Password = "SAPPassword"; 
+    con.Language = "EN"; 
+    con.Client = "400"; 
+    con.Host = "/H/SAPRouter/H/SAPServer"; 
+    con.SystemNumber = 00;  
     con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
 
     con.Open(false);
@@ -93,17 +104,20 @@ using(R3Connection con = new R3Connection())
 
 ### Connection String
 
-Sie können einen Connection String verwenden, um die Methode *R3Connection.Open(string connectionString)* aufzurufen.
+Sie können einen Connection String verwenden, um die Methode *R3Connection.Open(string connectionString)* aufzurufen. Beispiel:
 
-Für die Verbindung zu einem Single Application Server nutzen Sie das folgende Format:<br> 
-`"USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword"`
+```csharp
+string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
+R3Connection con = new R3Connection(ConnectionString);
+```
 
 Das Standard Client-Protokoll is das RFC-Protokoll.
 Um das neue NW RFC Protokoll zu verwenden, geben Sie folgende Codezeile ein: <br>
 `con.Protocol = ClientProtocol.NWRFC;`
 
+
 {: .box-tip }
-**Tipp**:  Wenn Sie den Konstruktor der *R3Connection*-Klasse verwenden, um die Eigenschaften für die Anmeldung zu übergeben, spraren Sie Codezeilen. Beispiel: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`. 
+**Tipp:** Wenn Sie den Konstruktor der *R3Connection*-Klasse verwenden, um die Eigenschaften für die Anmeldung zu übergeben, spraren Sie Codezeilen. Beispiel: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`. 
 
 
 ****

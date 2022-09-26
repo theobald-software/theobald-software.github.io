@@ -40,12 +40,12 @@ Example for single server login:
 ```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "alice";  
-    con.Password = "pass";  
-    con.Language = "DE";  
+    con.UserName = "SAPUser";  
+    con.Password = "SAPPassword";  
+    con.Language = "EN";  
     con.Client = "800";  
     con.Host = "sap-erp-as05.example.com";  
-    con.SystemNumber = 11;  
+    con.SystemNumber = 00;  
     con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
     
     con.Open(false);
@@ -57,17 +57,25 @@ Example for Load Balancing:
 ```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "alice";  
-    con.Password = "pass"; 
+    con.UserName = "SAPUser";  
+    con.Password = "SAPPassword"; 
 	con.Language = "DE";  
     con.Client = "800"; 
     con.MessageServer = "sap-erp-as05.example.com";  
     con.LogonGroup = "PUBLIC";    
-    con.SID = "EC5";
+    con.SID = "ECC";
 	con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.  	
   
     con.Open(true);
 }
+```
+
+The default encoding for an SAP connection is SAP code page 1100 (iso-8859-1). When using the NW RFC protocol you can explicitly set an encoding. This is necessary if your SAP credentials contain characters that are not part of SAP code page 1100.
+Example:
+
+```csharp
+con.Protocol = ClientProtocol.NWRFC; 
+con.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
 ```
 
 {: .box-note }
@@ -81,12 +89,12 @@ For more information on route strings, see [SAP Help- Route String Entry for SAP
 ```csharp
 using(R3Connection con = new R3Connection())
 {
-    con.UserName = "alice"; 
-    con.Password = "pass"; 
-    con.Language = "DE"; 
-    con.Client = "800"; 
-    con.Host = "/H/sap-erp-as05.example.com/H/" + "hamlet"; 
-    con.SystemNumber = 11;  
+    con.UserName = "SAPUser";  
+    con.Password = "SAPPassword"; 
+    con.Language = "EN"; 
+    con.Client = "400"; 
+    con.Host = "/H/SAPRouter/H/SAPServer"; 
+    con.SystemNumber = 00;  
     con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
 
     con.Open(false);
@@ -95,10 +103,12 @@ using(R3Connection con = new R3Connection())
 
 ### Connection String
 
-You can use a connection string to call the method *R3Connection.Open(string connectionString)*.
+You can use a connection string to call the method *R3Connection.Open(string connectionString)*. Example:
 
-For a single application server use the following format:<br>
-`"USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=ecc.theobald-software.com PASSWD=YourPassword"`
+```csharp
+string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
+R3Connection con = new R3Connection(ConnectionString);
+```
 
 The default client protocol is the RFC Protocol. To use the new NW RFC Protocol add the following command:<br>
 `con.Protocol = ClientProtocol.NWRFC;`
