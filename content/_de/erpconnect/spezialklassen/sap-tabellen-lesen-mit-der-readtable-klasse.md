@@ -112,11 +112,11 @@ Um die o.g. Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustei
 {: .box-warning }
 **Warnung! Error while converting value '\*.0' of row 1530, column 3** <br>
 Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.<br>
-Verwenden Sie den Funktionsbaustein von Theobald Software *Z_THEO_READ_TABLE*. 
+Verwenden Sie den Funktionsbaustein von Theobald Software *Z_XTRACT_IS_TABLE*. 
 
-#### Z_THEO_READ_TABLE installieren
+#### Z_XTRACT_IS_TABLE installieren
 
-Kontaktieren Sie den [Theobald Support](mailto:support@theobald-software.com), um den SAP-Transportauftrag *Z_THEO_READ_TABLE* anzufordern.<br>
+Kontaktieren Sie den [Theobald Support](mailto:support@theobald-software.com), um den SAP-Transportauftrag *Z_XTRACT_IS_TABLE* anzufordern.<br>
 Sobald der Funktionsbaustein im System verfügbar ist, können Sie ihn aktivieren, indem Sie den Namen des Funktionsbausteins im LINQ-Table Fenster eintragen. <br>
 ![LINQToERP-Tables-004](/img/content/LINQToERP-Tables-004.png){:class="img-responsive"}
 
