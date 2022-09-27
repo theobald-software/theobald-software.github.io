@@ -28,6 +28,7 @@ The following destinations are available:
 - [Oracle](./destinations/oracle) 
 - [PostgreSQL](./destinations/postgreSQL)
 - [SAP HANA](./destinations/sap-hana) 
+- [Snowflake](./destinations/snowflake) 
 - [SQL Server](./destinations/microsoft-sql-server) 
 
 {: .box-note }

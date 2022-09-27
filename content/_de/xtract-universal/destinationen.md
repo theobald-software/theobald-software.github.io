@@ -27,8 +27,8 @@ Die folgenden Zielumgebungen sind verfügbar:
 - [Oracle](./destinationen/oracle) 
 - [PostgreSQL](./destinationen/postgreSQL)
 - [SAP HANA](./destinationen/hana) 
-- [SQL Server](./destinationen//microsoft-sql-server) 
 - [Snowflake](./destinationen/snowflake)
+- [SQL Server](./destinationen//microsoft-sql-server) 
 
 {: .box-note }
 **Hinweis:** Für die Nutzung einiger Destinationen, z.B. Oracle und DB2 muss ein entsprechender Treiber bzw. eine entsprechende Bibliothek installiert sein.
