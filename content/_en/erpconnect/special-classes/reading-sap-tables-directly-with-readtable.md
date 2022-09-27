@@ -62,9 +62,9 @@ Module Module1
      
       Using con As New R3Connection 
           con.Host = "Hamlet"
-          con.SystemNumber = 11 
-          con.UserName = "Theobald"
-          con.Password = "pw"
+          con.SystemNumber = 00 
+          con.UserName = "SAPUser"
+          con.Password = "SAPPassword"
           con.Client = "800"
           con.Language = "DE"
          
@@ -115,10 +115,10 @@ If the above-mentioned restrictions hinder your work, install the Theobald Softw
 The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
 Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
-#### Installing Z_THEO_READ_TABLE
+#### Installing Z_XTRACT_IS_TABLE
 
-Contact [Theobald Support](mailto:support@theobald-software.com) to receive the *Z_THEO_READ_TABLE* transport for your for SAP system.<br>
-Once *Z_THEO_READ_TABLE* is installed, you can activate the module by entering its name in the LINQ Table window.<br>
+Contact [Theobald Support](mailto:support@theobald-software.com) to receive the *Z_XTRACT_IS_TABLE* transport for your for SAP system.<br>
+Once *Z_XTRACT_IS_TABLE* is installed, you can activate the module by entering its name in the LINQ Table window.<br>
 ![LINQToERP-Tables-004](/img/content/LINQToERP-Tables-004.png){:class="img-responsive" width="800px" }
 
 ****
