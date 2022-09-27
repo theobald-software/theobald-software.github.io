@@ -32,11 +32,12 @@ The product license is bound to your company and a specific server name.
 The following graphic shows the on which workstations the installation of Xtract Universal with a valid license required.<br>
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-Xtract Universal is licensed per:
-- Windows server 
-- [Destination](../destinations)
-- Number of [source systems](../getting-started/sap-connection) (a regular license includes up to 5 SAP source systems)
-- Number of [extractions](../getting-started/define-a-table-extraction) (a regular license includes up to 100 extraction)
+Your License defines the following properties
+- The name of the server that runs the Xtract Universal Server
+- The [destinations](../destinations) to which you can extract data to
+- The number of [extractions](../getting-started/define-a-table-extraction) you can define
+
+These properties are checked when the XtractUniversal Server runs an Extraction.
 
 {: .box-note }
 **Note:** The number of defined extractions and other license information is displayed in the [status bar](../getting-started/designer-overview#status-bar) of the Designer.<br>
