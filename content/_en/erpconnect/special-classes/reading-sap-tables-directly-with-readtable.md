@@ -113,7 +113,7 @@ If the above-mentioned restrictions hinder your work, install the Theobald Softw
 {: .box-warning }
 **Warning! Error while converting value '\*.0' of row 1530, column 3** <br>
 The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
-Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
+Use the function module from Theobald Software *Z_XTRACT_IS_TABLE*.
 
 #### Installing Z_XTRACT_IS_TABLE
 
