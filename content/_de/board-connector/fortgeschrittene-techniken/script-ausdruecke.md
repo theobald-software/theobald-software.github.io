@@ -18,6 +18,6 @@ Sie werden zur Laufzeit einer Extraktion aufgelöst.
 Die Ausgabe eines Skript-Ausdrucks ist ein String. 
 Dieser String kann als Eingabe für weitere .NET-String-Operationen verwendet werden.
 
-Skript-Ausdrücke können als Auswahlparameter für [Table](../table/where-bedingung#skript-ausdrücke) und [DeltaQ](../datasource-parameter#skript-ausdrücke) Extraktionen.
+Skript-Ausdrücke können als Auswahlparameter für [Table](../table/where-bedingung#skript-ausdrücke) und [DeltaQ](../datasource-deltaq/datasource-parameter#skript-ausdrücke) Extraktionen.
 
 {% include _content/de/xu-specific/fortgeschrittene-techniken/skript-ausdruecke.md %}
