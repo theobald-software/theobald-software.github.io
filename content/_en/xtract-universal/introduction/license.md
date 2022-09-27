@@ -32,10 +32,10 @@ The product license is bound to your company and a specific server name.
 The following graphic shows the on which workstations the installation of Xtract Universal with a valid license required.<br>
 ![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-Your License defines the following properties
-- The name of the server that runs the Xtract Universal Server
-- The [destinations](../destinations) to which you can extract data to
-- The number of [extractions](../getting-started/define-a-table-extraction) you can define
+The license defines the following properties:
+- The name of the server that runs the Xtract Universal Server.
+- The [destinations](../destinations) to which you can extract data to.
+- The number of [extractions](../getting-started/define-a-table-extraction) you can define.
 
 These properties are checked when the XtractUniversal Server runs an Extraction.
 
