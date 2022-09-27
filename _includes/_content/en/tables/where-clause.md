@@ -85,6 +85,27 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 
 Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
+### Script Expressions
+
+The **[Text Mode]** of the WHERE clause supports script expressions.
+They are usually used to determine a dynamic date based on the current date. 
+
+When using script expressions in a WHERE Clause, the value must be entered in single quotation marks.<br>
+For more information on script expression, see [Script Expressions](../advanced-techniques/script-expressions).
+
+**Syntax:**<br>
+```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
+```BUDAT >= '#{DateTime.Now.AddYears(-5).ToString("yyyyMMdd")}#'```
+
+**Examples:**
+
+|   Input                         | Output                                                                         | Description              |
+|:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|
+|```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | yyyyMMdd | Current date in SAP format          |
+|```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | yyyy0101 | Current year concatenated with "0101"           |
+|```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
+|```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
+
 
 ### Using Subqueries
 

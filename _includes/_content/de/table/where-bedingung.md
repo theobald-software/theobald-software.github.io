@@ -87,6 +87,29 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
 Für mehr Informationen über die OpenSQL-Syntax, siehe [SAP Help: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
+
+### Skript-Ausdrücke
+
+Der **[Text-Modus]** der WHERE-Bedingung unterstützt die Verwendung von Skript-Ausdrücken.
+Sie werden normalerweise verwendet, um ein dynamisches Datum auf der Basis des aktuellen Datums zu bestimmen. 
+
+Um Skript-Ausdrücke in der WHERE-Bedingung zu verwenden, müssen sie in einfache Anführungszeichen gesetzt werden.<br>
+Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke).
+
+**Syntax:**<br>
+```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
+```BUDAT >= '#{DateTime.Now.AddYears(-5).ToString("yyyyMMdd")}#'```
+
+**Beispiele:**
+
+|   Eingabe                         | Ausgabe                                                                         | Beschreibung              |
+|:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|
+|```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | yyyyMMdd | Aktuelles Datum im SAP-Format          |
+|```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | yyyy0101 | Aktuelles Datum verkettet mit "0101"           |
+|```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Aktuelles Datum verkettet mit "0101"            |
+|```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Aktuelles Datum verkettet mit "0101""           |
+
+
 ### Verwendung von Subqueries
 
 {: .box-note }
