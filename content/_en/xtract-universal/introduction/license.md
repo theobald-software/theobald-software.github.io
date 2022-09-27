@@ -28,27 +28,21 @@ If you run Xtract Universal Designer and Xtract Universal Server on different ma
 A demo license is automatically installed with the installation of Xtract Universal.<br>
 A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. 
 
-#### License Metrics
+The product license is bound to your company and a specific server name.
+The following graphic shows the on which workstations the installation of Xtract Universal with a valid license required.<br>
+![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-Xtract Universal is licensed per Windows server, source system and destination. A regular license includes the creation of 100 extractions. <br>
-Xtract Universal checks the following license metrics before running an extraction:
-
-| License Metric <img width=450/>| Description <img width=1550/>|
-|:------------ | :------------ |
-|license serial number| -  | 
-|license expiration date | - | 
-|licensed server name | The product license is bound to your company and a specific server name. If you run Xtract Universal Designer and Xtract Universal Server on different machines, it is only necessary to replace the license on the server, see [Moving a License to a new Server](#moving-license-to-a-new-server). The following graphic shows on which workstations the installation of Xtract Universal with a valid license is required. <br>![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}| 
-|number of SAP sources | A source is a defined SAP connection, see [Creating an SAP Connection](../getting-started/sap-connection). A regular license allows up to 5 SAP connections.| 
-|number of extractions | An extraction is a definition of what data is extracted and how it is extracted. There are 9 types of extractions: [BAPI](./bapis-and-function-modules), [BWCube](./bw-infocubes-and-bex-queries), [BW Hierarchy](./bw-hierarchies), [DeltaQ](./datasource-deltaq/), [ODP](./odp), [OHS](./bw-open-hub-services), [SAP Query](./sap-queries), [Report](./abap-reports) and [Table](./table). Depending on the extraction type, an extraction can include the definition of parameters, data formats, and other options. <br>When running an extraction, the defined data is extracted from the SAP source that is assigned to the extraction and written to the destination assigned to the extraction. A regular license allows the creation of 100 extractions.| 
-|licensed destinations | A destination defines the location to which Xtract Universal can write the extracted SAP data. Destinations can be local directories, databases, data warehouses, business intelligence and analytics tools, business systems, cloud storages and others. For a complete list of available destinations, see [Destinations](../destinations). | 
+Xtract Universal is licensed per:
+- Windows server 
+- [Destination](../destinations)
+- Number of [source systems](../getting-started/sap-connection) (a regular license includes up to 5 SAP source systems)
+- Number of [extractions](../getting-started/define-a-table-extraction) (a regular license includes up to 100 extraction)
 
 {: .box-note }
 **Note:** The number of defined extractions and other license information is displayed in the [status bar](../getting-started/designer-overview#status-bar) of the Designer.<br>
 
 {: .box-tip }
 **Recommendation:** According to our experience medium-sized businesses use less than 100 extractions.
-
-![glossary](/img/content/glossary-example.jpg){:class="img-responsive"}
 
 
 ### Installing the Xtract Universal license - XtractUniversalLicense.json
