@@ -28,12 +28,14 @@ Specifies the name of the function module used for data extraction.
 This field is filled automatically depending on what function modules are installed on your SAP system.<br>
 The following function modules can be used to extract tables: <br>
 
-- RFC_READ_TABLE (TAB512)
-- /BODS/RFC_READ_TABLE (TAB2048)
-- /SAPDS/RFC_READ_TABLE (TAB2048)
-- /BODS/RFC_READ_TABLE2
-- /SAPDS/RFC_READ_TABLE2
 - Z_THEO_READ_TABLE
+- /BODS/RFC_STREAM_READ_TABLE
+- /SAPDS/RFC_READ_TABLE2
+- /BODS/RFC_READ_TABLE2
+- /SAPDS/RFC_READ_TABLE (TAB2048)
+- /BODS/RFC_READ_TABLE (TAB2048)
+- Z_AW_RFC_READ_TABLE
+- RFC_READ_TABLE (TAB512)
 
 {: .box-warning }
 **Warning! Duplicates in the target environment!** <br>

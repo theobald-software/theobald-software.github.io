@@ -27,12 +27,15 @@ Gibt die maximale Anzahl der extrahierten Datensätze an. *0* extrahiert die kom
 Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Dieses Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind.
 Folgende Funktionsbausteine können zur Extraktion von Tabellen verwendet werden: <br>
 
-- RFC_READ_TABLE (TAB512)
-- /BODS/RFC_READ_TABLE (TAB2048)
-- /SAPDS/RFC_READ_TABLE (TAB2048)
-- /BODS/RFC_READ_TABLE2
-- /SAPDS/RFC_READ_TABLE2
 - Z_THEO_READ_TABLE
+- /BODS/RFC_STREAM_READ_TABLE
+- /SAPDS/RFC_READ_TABLE2
+- /BODS/RFC_READ_TABLE2
+- /SAPDS/RFC_READ_TABLE (TAB2048)
+- /BODS/RFC_READ_TABLE (TAB2048)
+- Z_AW_RFC_READ_TABLE
+- RFC_READ_TABLE (TAB512)
+
 
 {: .box-warning }
 **Warnung! Duplikate in der Zielumgebung!** <br>
