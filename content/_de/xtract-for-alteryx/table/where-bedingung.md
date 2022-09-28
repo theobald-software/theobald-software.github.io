@@ -209,7 +209,7 @@ Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
 {: .box-note }
 **Hinweis:** Listenparameter sind noch nicht verfügbar.
 
-Für mehr Informationen zur Parametrisierung in Alteryx, siehe [Parametrisierung](./parametrisierung).
+Für mehr Informationen zur Parametrisierung in Alteryx, siehe [Parametrisierung](../parametrisierung).
 
 **** 
 #### Weiterführende Links
