@@ -84,6 +84,8 @@ The following settings can be defined for the destination:
 **Note:** If the name of an object does not begin with a letter, it will be prefixed with an ‘x’, e.g. an object by the name `_namespace_tabname.csv` will be renamed `x_namespace_tabname.csv` when uploaded to the destination.
 This is to ensure that all uploaded objects are compatible with Azure Data Factory, Hadoop and Spark, which require object names to begin with a letter or give special meaning to objects whose names start with certain non-alphabetic characters. 
 
+{% include _content/en/xu-specific/destinations/general/file-name-script-expressions.md %}
+
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}
 
 ### Hadoop Remote Folder
@@ -93,33 +95,7 @@ Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/
 If the entered folder does not exist, a new folder is created.<br>
 If no folder is entered, the data will be written into the root folder.
 
-{: .box-note }
-**Note:** **Hadoop Remote Folder** allows entry of [script expressions](../advanced-techniques/script-expressions). 
-This allows to dynamically set a folder path when executing an extraction
-
-#### Using Script Expressions as Dynamic Folder Paths
-
-Script expressions can be used to generate a dynamic folder path. <br>
-This allows generating folder paths that are composed of an extraction's properties, e.g. extraction name, SAP source object.
-
-This scenario supports:
-- Script expressions based on .NET
-- XU-specific custom script expressions
-
-The following XU-specific custom script expressions are supported: 
-
-| Input                                                   | Description|
-|:--------------------------------------------------------|:-----------|
-|```#{Source.Name}# ```|  Name of the extraction's SAP source.|
-|```#{Extraction.ExtractionName}# ```| Name of the extraction. |
-|```#{Extraction.Type}# ```|  Extraction type (*Table*, *ODP*, *DeltaQ*, etc.). |
-|```#{Extraction.SapObjectName}# ```|  Name of the SAP object the extraction is extracting data from. |
-|```#{Extraction.Timestamp}# ```|  Timestamp of the extraction.  |
-|```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```  |Trims the first slash '/' of an SAP object, e.g. /BIO/TMATERIAL to BIO/TMATERIAL, so as not to create an empty folder in a file path.
-|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | Replaces all slashes '/' of an SAP object, e.g. /BIO/TMATERIAL to _BIO_TMATERIAL, so as not to split the SAP object name by folders in a file path.         |
-|```#{Extraction.Context}# ```|  Only for ODP extractions. Returns the context of the ODP object (*SAPI*, *ABAP_CDS*, etc). |
-|```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Only for ODP extractions. Input value of a defined selection / filter.| 
-|```#{TableExtraction.WhereClause}#``` | Only for Table extractions. WHERE clause of the extraction.  |
+{% include _content/en/xu-specific/destinations/general/folder-script-expressions.md %}
 
 ### WebHdfs API's Option
 

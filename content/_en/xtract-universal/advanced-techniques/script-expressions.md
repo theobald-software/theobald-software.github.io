@@ -20,8 +20,9 @@ The output of a script expression is a string.
 This string can be used as input for further .NET string operations.
 
 Script expressions can be used in the following scenarios:
-- as Selection Parameters for [Table](../table/where-clause#script-expressions) or [DeltaQ](../datasource-deltaq/datasource-parameters#script-expressions) extractions.
-- as Dynamic Folder Paths in the [Amazon AWS S3](../destinations/amazon-aws-s3#folder), [Azure Storage](../destinations/azure-storage#folder) and [Hadoop](../destinations/hadoop#hadoop-remote-folder) destinations.
-- as Custom SQL Commands in [Database Destinations](../destinations#databases--data-warehouses).
+- as selection parameters for [Table](../table/where-clause#script-expressions) or [DeltaQ](../datasource-deltaq/datasource-parameters#script-expressions) extractions.
+- as custom SQL commands in [Database Destinations](../destinations#databases--data-warehouses).
+- as dynamic file names in [push destinations](../destinations#pull-and-push-destinations).
+- as dynamic folder paths in the [Amazon AWS S3](../destinations/amazon-aws-s3#folder), [Azure Storage](../destinations/azure-storage#folder) and [Hadoop](../destinations/hadoop#hadoop-remote-folder) destinations.
 
 {% include _content/en/xu-specific/advanced-techniques/script-expressions.md %}

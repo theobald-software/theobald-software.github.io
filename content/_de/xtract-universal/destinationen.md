@@ -28,7 +28,7 @@ Die folgenden Zielumgebungen sind verfügbar:
 - [PostgreSQL](./destinationen/postgreSQL)
 - [SAP HANA](./destinationen/hana) 
 - [Snowflake](./destinationen/snowflake)
-- [SQL Server](./destinationen//microsoft-sql-server) 
+- [SQL Server](./destinationen/microsoft-sql-server) 
 
 {: .box-note }
 **Hinweis:** Für die Nutzung einiger Destinationen, z.B. Oracle und DB2 muss ein entsprechender Treiber bzw. eine entsprechende Bibliothek installiert sein.
@@ -84,7 +84,9 @@ Folgende Destinationen sind Pull-Destinationen:
 
 #### Push-Destinationen
 
-Extraktionen mit Push-Destinationen liefern Daten proaktiv in die Zielumgebung. Der Extraktionsprozess wird in Xtract Universal gestartet, z.B. durch einen [Scheduler](./extraktionen-ausfuehren-und-einplanen/call-via-scheduler).<br>
+Extraktionen mit Push-Destinationen liefern Daten proaktiv in die Zielumgebung.
+Der Extraktionsprozess wird in Xtract Universal gestartet, z.B. durch einen [Scheduler](./extraktionen-ausfuehren-und-einplanen/call-via-scheduler).<br>
+
 Eine Extraktion mit Push-Destinationen extrahiert die Daten aus dem SAP-Quellsystem und lädt die in eine Zielumgebung, wo sie weiter verarbeitet werden können. 
 Beispielsweise können die Daten dann transformiert und ggf. in einer für Analytische Queries optimierten Form abgelegt werden.
 

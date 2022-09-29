@@ -153,6 +153,8 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 **Hinweis:** Wenn der Name eines Objekts nicht mit einem Buchstaben beginnt, wird 'x' als Präfix ergänzt, z.B. wird das Objekt `_namespace_tabname.csv` zu `x_namespace_tabname.csv`, wenn es auf die Destination hochgeladen wird.
 Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sichergestellt, die mit Buchstaben beginnende Objektnamen voraussetzen oder die nicht alphabetischen Zeichen besondere Bedeutungen zuweisen.
 
+{% include _content/de/xu-specific/destinationen/general/file-name-script-expressions.md %}
+
 {% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
@@ -162,29 +164,8 @@ Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sicherges
 Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines S3 Buckets extrahiert werden soll.<br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden:`Ordner/Unterordner1/Unterordner2/`<br>
 
-#### Skript-Ausdrücke als dynamische Ordnerpfade verwenden
 
-Skript-Ausdrücke können für die Generierung eines dynamischen Ordnerpfads verwendet werden. <br>
-Dadurch kann ein Ordnerpfad generiert werden, der sich aus den Eigenschaften einer Extraktion zusammensetzt, z.B. Extraktionsname, SAP-Quellobjekt.
-
-Die folgenden XU-spezifischen benutzerdefinierten Skript-Ausdrücke werden unterstützt: 
-
-| Eingabe                                                  | Beschreibung|
-|:--------------------------------------------------------|:-----------|
-|```#{Source.Name}# ```|  Name der SAP Quelle. |
-|```#{Extraction.ExtractionName}# ```| Name der Extraktion. |
-|```#{Extraction.Type}# ```|  Extraktionstyp (*Table*, *ODP*, *DeltaQ*, etc.). |
-|```#{Extraction.SapObjectName}# ```|  Name des SAP Objekts, von dem die Extraktion Daten extrahiert. |
-|```#{Extraction.Timestamp}# ```|  Zeitstempel der Extraktion.  |
-|```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```  | Entfernt einen führenden Schrägstrich, z.B. wird aus /BIO/TMATERIAL dann BIO/TMATERIAL, damit kein leeres Verzeichnis angelegt wird.
-|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | Entfernt alle Schrägstriche eines SAP Objekts, z.B. wird aus /BIO/TMATERIAL dann _BIO_TMATERIAL. Dadurch wird verhindert, dass die Schrägstriche innerhalb des Namens des SAP Objekts, nicht als Verzeichnistrenner interpretiert werden.         |
-|```#{Extraction.Context}# ```|  Nur für ODP Extraktionen. Kontext des ODP Objekts (*SAPI*, *ABAP_CDS*, etc.). |
-|```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Nur für ODP Extraktionen. Eingabewert einer definierten Selektion / eines Filter.|  
-|```#{TableExtraction.WhereClause}#``` | Nur für Table Extraktionen. WHERE-Bedingung der Extraktion.  |
-
-
-Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke).
-
+{% include _content/de/xu-specific/destinationen/general/folder-script-expressions.md %}
 
 {% include _content/de/xu-specific/destinationen/general/compression.md %}
 

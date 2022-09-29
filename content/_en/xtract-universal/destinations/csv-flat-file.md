@@ -60,6 +60,7 @@ The following settings can be defined for the destination:
 ![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
       
 {% include _content/en/xu-specific/destinations/general/file-name.md %}	 
+{% include _content/en/xu-specific/destinations/general/file-name-script-expressions.md %}
 
 {% include _content/en/xu-specific/destinations/general/column-name-style.md %}	  
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}	  

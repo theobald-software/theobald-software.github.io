@@ -117,6 +117,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ![postgres_destination](/img/content/xu/postgres_destination.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/destinationen/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name-script-expressions.md %}
 
 {% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 

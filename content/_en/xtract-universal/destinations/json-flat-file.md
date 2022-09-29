@@ -44,7 +44,7 @@ Enter the directory to save the destination flat files in. If the entered folder
 
 ### Opening Destination Settings
 
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](./../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
 2. Click **[Destinations]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -60,6 +60,8 @@ The window "Destination Settings" consists of the following subsections:
 ![XU_flatfile_JSON_Destination](/img/content/xu/json/XU_flatfile_JSON_Destination.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/destinations/general/file-name.md %}
+{% include _content/en/xu-specific/destinations/general/file-name-script-expressions.md %}
+
 {% include _content/en/xu-specific/destinations/general/column-name-style.md %}        
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}
 
