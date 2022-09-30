@@ -72,6 +72,7 @@ The following settings can be defined for the destination:
 ![ext_spec_set_de_form_debug](/img/content/dest_set_hana.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/destinations/general/file-name.md %}
+{% include _content/en/xu-specific/destinations/general/file-name-script-expressions.md %}
 
 {% include _content/en/xu-specific/destinations/general/column-name-style.md %}
 

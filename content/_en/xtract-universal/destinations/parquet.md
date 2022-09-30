@@ -26,7 +26,7 @@ Enter an existing local directory in which the extracted files are stored.
 {: .box-note }
 **Note:** Filling out the field **Output directory** creates a new folder, if it doesn't exist. 
 
-**Compatibability mode**<br>
+**Compatibility mode**<br>
 You can choose between *Pure*, *Spark* and *BigQuery* for the compatibility mode. 
 *Spark* does not support the data types used in pure mode, so other data types need to be used.
 *BigQuery* formats columns names to be compatible with Google BigQuery, see [BigQuery Documentation: Column Names](https://cloud.google.com/bigquery/docs/schemas?hl=en#column_names).
@@ -49,6 +49,8 @@ The following settings can be defined for the Parquet destination.
 ![XU_parquet_Destination](/img/content/xu/parquet/parquet_destination_settings.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/destinations/general/file-name.md %}
+{% include _content/en/xu-specific/destinations/general/file-name-script-expressions.md %}
+
 {% include _content/en/xu-specific/destinations/general/column-name-style.md %}        
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}
 

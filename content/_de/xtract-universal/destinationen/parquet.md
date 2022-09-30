@@ -51,6 +51,7 @@ Die folgenden Einstellungen können für die Parquet-Destination definiert werde
 ![XU_flatfile_JSON_Destination](/img/content/xu/parquet/parquet_destination_settings.png){:class="img-responsive"}
 
 {% include _content/de/xu-specific/destinationen/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name-script-expressions.md %}
 {% include _content/de/xu-specific/destinationen/general/column-name-style.md %}        
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 

@@ -161,6 +161,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 **Hinweis:** Wenn der Name eines Objekts nicht mit einem Buchstaben beginnt, wird 'x' als Präfix ergänzt, z.B. wird das Objekt `_namespace_tabname.csv` zu `x_namespace_tabname.csv`, wenn es auf die Destination hochgeladen wird.
 Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sichergestellt, die mit Buchstaben beginnende Objektnamen voraussetzen oder die nicht alphabetischen Zeichen besondere Bedeutungen zuweisen.
 
+{% include _content/de/xu-specific/destinationen/general/file-name-script-expressions.md %}
 
 {% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 

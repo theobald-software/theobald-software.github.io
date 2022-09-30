@@ -58,6 +58,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ![ext_spec_set_de_form](/img/content/exasol-configuration.PNG){:class="img-responsive"}
 
 {% include _content/de/xu-specific/destinationen/general/file-name.md %}
+{% include _content/de/xu-specific/destinationen/general/file-name-script-expressions.md %}
 
 {% include _content/de/xu-specific/destinationen/general/column-name-style.md %}
 

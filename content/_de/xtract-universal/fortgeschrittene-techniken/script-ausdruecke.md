@@ -20,9 +20,9 @@ Die Ausgabe eines Skript-Ausdrucks ist ein String.
 Dieser String kann als Eingabe für weitere .NET-String-Operationen verwendet werden.
 
 Skript-Ausdrücke können in den folgenden Szenarien verwendet werden:
-- als Auswahlparameter für [Table](../table/where-bedingung#skript-ausdrücke) und [DeltaQ](../datasource-deltaq/datasource-parameter#skript-ausdrücke) Extraktionen.
-- als dynamische Ordnerpfade in der [Amazon AWS S3](../destinationen/amazon_aws_s3#folder), [Azure Storage](../destinationen/azure-storage#folderdestinationen/azure-storage#folder) und [Hadoop](../destinationen/hadoop#hadoop-remote-folder) Destination.
+- als Auswahlparameter in [Table](../table/where-bedingung#skript-ausdrücke) und [DeltaQ](../datasource-deltaq/datasource-parameter#skript-ausdrücke) Extraktionen.
 - als Custom SQL-Anweisungen in [Datenbank-Destinationen](../destinationen#datenbanken--data-warehouses).
-
+- als dynamische Dateinamen in [Push-Destinationen](../destinationen#pull--und-push-destinationen).
+- als dynamische Ordnerpfade in den Destinationen [Amazon AWS S3](../destinationen/amazon_aws_s3#folder), [Azure Storage](../destinationen/azure-storage#folderdestinationen/azure-storage#folder) und [Hadoop](../destinationen/hadoop#hadoop-remote-folder).
 
 {% include _content/de/xu-specific/fortgeschrittene-techniken/skript-ausdruecke.md %}
