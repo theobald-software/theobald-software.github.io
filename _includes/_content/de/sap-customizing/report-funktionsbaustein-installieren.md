@@ -24,25 +24,17 @@ Der Zugriff auf Reports kann dann über das Berechtigungsobjekt S_PROGRAM gewäh
 {: .box-tip }
 **Tipp:** Verwenden Sie den Transaktions Code SM30, um in der Tabelle TPGP oder V_TPGP eine neue Berechtigungsgruppe anzulegen.
 
-#### Zugriff auf Reports beschränken
-
 1. Loggen Sie sich in SAP ein und öffnen Sie über die Transaktion SE38 den ABAP Editor.
 2. Geben Sie den Namen des Reports ein, dessen Zugriff beschränkt werden soll und wählen Sie **Attributes** als *Subobjects* aus.
 3. Klicken Sie auf **[Change]**. Ein Fenster mit den Programm-Attributen öffnet sich.
 4. Weisen Sie unter **Authorization group** eine Berechtigungsgruppe zu.<br>
+Nach Zuweisung einer Berechtigungsgruppe, ist ein Report nicht mehr über Funktionsmodule wie Z_XTRACT_IS_REMOTE_REPORT via **SUBMIT** oder durch den entsprechenden TCODE verfügbar.<br>
 ![report-authorization](/img/content/report-authorization.png){:class="img-responsive"}
-
-Nach Zuweisung einer Berechtigungsgruppe, ist ein Report nicht mehr über Funktionsmodule wie Z_XTRACT_IS_REMOTE_REPORT via **SUBMIT** oder durch den entsprechenden TCODE verfügbar.
-
-#### Zugriff auf Reports gewähren
-
-
-1. Erstellen Sie eine Benutzerrolle, die Zugriff auf den Report haben soll.
-2. Weisen Sie der Benutzerrolle das Berechtigungsobjekt S_PROGRAM zu.
-3. Weisen Sie der Benutzerrolle über *P_GROUP* dieselbe Berechtigungsgruppe zu, die auch dem Report zugewiesen ist.
-4. Wählen Sie *SUBMIT* als Aktion für *P_ACTION* aus. 
-5. Speichern Sie die Benutzerrolle.
-6. Weisen Sie die Benutzerrolle Benutzern zu.
+5. Um Benutzern den Zugriff zu ermöglichen, bearbeiten oder erstellen Sie eine Benutzerrolle, die Zugriff auf den Report haben soll.
+6. Weisen Sie der Benutzerrolle das Berechtigungsobjekt S_PROGRAM zu.
+7. Weisen Sie dem Feld *P_GROUP* dieselbe Berechtigungsgruppe zu, die auch dem Report zugewiesen ist und wählen im Feld *P_ACTION* die Aktion *SUBMIT* aus.
+8. Speichern Sie die Benutzerrolle.
+9. Weisen Sie die Benutzerrolle Benutzern zu.
 
 {: .box-note}
 **Hinweis:** Reports ohne zugewiesen Berechtigungsgruppe sind frei zugänglich.

@@ -24,24 +24,17 @@ Access to the report can then be granted through the S_PROGRAM authorization obj
 {: .box-tip }
 **Tip:** Use transaction code SM30 to create a new authorization group in table TPGP or V_TPGP.
 
-#### How to restrict Access to Reports
-
 1. Log into SAP and use transaction code SE38 to open the ABAP Editor.
 2. Enter the name of the report you want to restrict access to and select **Attributes** as the *Subobjects*.
 3. Click **[Change]**. A window that contains the program attributes opens.
 4. Assign an authorization group.<br>
+Assigning an authorization group makes the report not accessible from function modules like Z_XTRACT_IS_REMOTE_REPORT via **SUBMIT** nor through the associated TCODE. <br>
 ![report-authorization](/img/content/report-authorization.png){:class="img-responsive"}
-
-Assigning an authorization group makes the report not accessible from function modules like Z_XTRACT_IS_REMOTE_REPORT via **SUBMIT** nor through the associated TCODE.
-
-#### How to grant Access to Reports
-
-1. Create a user role to grant access to.
-2. Assign the authorization object S_PROGRAM to the user role.
-3. Assign the same authorization group that is assigned to the report to *P_GROUP*.
-4. Select **SUBMIT** as the action you want to allow to *P_ACTION*. 
-5. Save and generate the authorization.
-6. Assign the user role to users.
+5. To grant access to users, edit or create a user role to grant access to.
+6. Assign the authorization object S_PROGRAM to the user role.
+7. Assign the same authorization group that is assigned to the report to the S_PROGRAM object field *P_GROUP*. Select **SUBMIT** in the object field *P_ACTION*.
+8. Save and generate the authorization.
+9. Assign the user role to users.
 
 {: .box-note}
 **Note:** Reports without an assigned authorization group can be accessed freely.
