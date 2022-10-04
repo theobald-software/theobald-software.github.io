@@ -12,7 +12,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-The follwing section contains an overview of the BOARD Connector server.
+The follwing section contains an overview of the Board Connector server.
 
 The server performs two main tasks:
 
@@ -51,7 +51,7 @@ BCService.exe starts two listener processes:
 
 {: .box-tip }
 **Tip**: The BCService.exe logs its actions in ServiceLog.txt 
-The log file is located in the logs subdirectory of the program directory: 'C:ProgramFiles\BOARD Connector\logs' (default).
+The log file is located in the logs subdirectory of the program directory: 'C:ProgramFiles\Board Connector\logs' (default).
 
 
 The both listener processes listen on the [Ports](./server/ports) defined in the [Server Settings](./server/server-settings).
@@ -60,7 +60,7 @@ BCConfigServer.exe waits for new connection requests from the designer.
 
 {: .box-tip }
 **Tip:** The BCConfigServer.exe logs its actions in log files. 
-The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\BOARD Connector\logs\server\config' (default).
+The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\Board Connector\logs\server\config' (default).
 
 Theobald.Bc.Web.Listener.exe waits for HTTP requests. 
 
@@ -68,12 +68,12 @@ For each TCP connection the Theobald.Bc.Web.Listener.exe starts a new instance o
 
 {: .box-tip }
 **Tip:** The Theobald.Bc.Web.Worker.exe logs its actions in the log subdirectory. 
-The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\BOARD Connector\logs\server\run` (default) 
+The log files are located in the logs subdirectory of the program directory:`C:ProgramFiles\Board Connector\logs\server\run` (default) 
 These are also the logs that can be displayed in the Designer under **[Server]>[Logs (Run)]**.
 
 {: .box-tip }
 **Tip:** The Theobald.Xu.Web.Listener.exe logs its actions in log files. 
-The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\BOARD Connector\logs\server\web' (default).
+The log files are located in the logs subdirectory of the program directory: 'C:ProgramFiles\Board Connector\logs\server\web' (default).
 
 More information about the server can be found in the following sections:
 

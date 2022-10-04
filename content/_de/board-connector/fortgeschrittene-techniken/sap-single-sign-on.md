@@ -13,7 +13,7 @@ lang: de_DE
 
 ### Anwendungsfall
 
-BI Client Tools wie z.B. Power BI, Power Pivot, Alteryx, etc. können Extraktionen in Xtract-Produkten (z.B. Xtract Universal oder BOARD Connector) starten. 
+BI Client Tools wie z.B. Power BI, Power Pivot, Alteryx, etc. können Extraktionen in Xtract-Produkten (z.B. Xtract Universal oder Board Connector) starten. 
 Die extrahierten Daten werden von Xtract-Produkten direkt in die genannten Tools geladen.
 Bei diesem Anwendungsfall besteht häufig die Anforderung, dass die Extraktion mit den SAP-Anmeldeinformationen desjenigen (Windows AD) Benutzers ausgeführt wird, von dessen BI Client die Extraktion angestoßen wurde. 
 Dadurch greifen die SAP-Berechtigungen des ausführenden Benutzers, was z.B. bei der Extraktion von BW/BEx Queries wichtig ist.
@@ -29,7 +29,7 @@ Single Sign-On (SSO) mit Xtract-Produkten lässt sich über drei unterschiedlich
 
 
 ### Was ist SNC?
-Secure Network Connection (SNC) ermöglicht die Authentisierung und Transportverschlüsselung zwischen SAP Systemen untereinander, sowie zwischen SAP und Third-Party-Systemen wie Xtract Universal und BOARD Connector.
+Secure Network Connection (SNC) ermöglicht die Authentisierung und Transportverschlüsselung zwischen SAP Systemen untereinander, sowie zwischen SAP und Third-Party-Systemen wie Xtract Universal und Board Connector.
 Für mehr Informationen zu SNC, siehe [SAP Dokumentation: Secure Network Communications](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/LATEST/de-DE/e656f466e99a11d1a5b00000e835363f.html).
 
 
@@ -40,12 +40,12 @@ Für mehr Informationen zu SNC, siehe [SAP Dokumentation: Secure Network Communi
 Voraussetzung für die Verwendung der *SSO Certificate* Funktion ist die konkrete Ausprägung der Architektur für SSO: 
 - SAP SSO mit X.509 Zertifikaten ohne Secure Login Server muss implementiert sein, siehe [SAP-Dokumentation: Authentication Methods without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/LATEST/en-US/7c45fe620ab9469083f7ab50a9008c37.html).
 - Microsoft Certificate Store und Active Directory Certificate Templates für SAPGUI/RFC müssen implementiert sein, siehe [Microsoft TechNet: Certificate Template](https://social.technet.microsoft.com/wiki/contents/articles/53249.active-directory-certificate-services-enterprise-ca-architecture.aspx#Certificate_Template).
-- Im AD muss ein Enrollment Agent für BOARD Connector eingerichtet sein, siehe [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents).
-- Der SAP Secure Login Client muss auf dem Server installiert sein, auf dem BOARD Connector läuft, siehe [SAP-Dokumentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).<br>
+- Im AD muss ein Enrollment Agent für Board Connector eingerichtet sein, siehe [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents).
+- Der SAP Secure Login Client muss auf dem Server installiert sein, auf dem Board Connector läuft, siehe [SAP-Dokumentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).<br>
 Der Secure Login Client stellt sicher, dass die korrekte SNC Bibliothek für das Szenario verfügbar ist. 
 Die Bibliothek wird mit dem Secure Login Client geliefert und wird beim Öffnen der SAP-Verbindung verwendet.
 - Der BC-Service muss unter einem Windows AD Service Account ausgeführt werden, siehe auch [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/service-account).
-- Richten Sie für Ihre AD Benutzer eine Zugriffsbeschränkung auf den BOARD Connector Designer und den Server ein, siehe [Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung)](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung).<br>
+- Richten Sie für Ihre AD Benutzer eine Zugriffsbeschränkung auf den Board Connector Designer und den Server ein, siehe [Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung)](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung).<br>
 
 Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit Client-Zertifikaten, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 

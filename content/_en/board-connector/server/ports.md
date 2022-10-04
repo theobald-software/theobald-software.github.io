@@ -10,7 +10,7 @@ weight: 2
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=ports
 ---
-The BOARD Connector Server runs as a Windows service with the main process 'C:\Program Files\BOARDConnector\BCService.exe'. 
+The Board Connector Server runs as a Windows service with the main process 'C:\Program Files\BOARDConnector\BCService.exe'. 
 
 *BCService.exe* starts the following listener processes and listens on the following ports by default:
 
@@ -22,12 +22,12 @@ Listener Process| Default Port | Comment
 
 The server processes use different ports for communication.
 - The web server accepts extraction calls from the Board server via HTTP(S).
-- The configuration server communicates with the BOARD Connector Designer.
+- The configuration server communicates with the Board Connector Designer.
 - The API Server makes the extractions' metadata available to the Board server's data reader.
 
 {: .box-warning }
 **Warning! Changing the default ports**<br>
-After manually adjusting the default ports, the BOARD Connector service does not start.<br>
+After manually adjusting the default ports, the Board Connector service does not start.<br>
 The stored ports are already assigned and must be adapted in the following config files.<br>
 `C:\Program Files\BOARDConnector\config\server\config\general.json`<br>
 `C:\Program Files\BOARDConnector\config\server\web\general.json`

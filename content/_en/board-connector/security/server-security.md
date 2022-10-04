@@ -13,7 +13,7 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=server-security
 
 ### About
 
-This section is about restricting access to Xtract Universal/BOARD Connector's built in web server to predefined users or user groups. <br>
+This section is about restricting access to Xtract Universal/Board Connector's built in web server to predefined users or user groups. <br>
 By setting access restrictions on the web server you ensure that only dedicated users can execute extractions. 
 
 There are two types of [users and user groups](user-management#users-and-user-groups), access can be restricted to. 
@@ -30,8 +30,8 @@ Securing web access to extractions can be accomplished by using network level se
 
 ### Running a service under a Windows service account
 
-When restricting access to Windows AD users, the BOARD Connector service must run under a dedicated service account. 
-The procedure to run the BOARD Connector service under a Windows service account is the same as [Running the Xtract Universal Service under a Windows Service Account](../../xtract-universal/advanced-techniques/service-account).
+When restricting access to Windows AD users, the Board Connector service must run under a dedicated service account. 
+The procedure to run the Board Connector service under a Windows service account is the same as [Running the Xtract Universal Service under a Windows Service Account](../../xtract-universal/advanced-techniques/service-account).
 
 *********
 #### Related Links

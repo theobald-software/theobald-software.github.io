@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=bw-open-hub-services
 ---
 
-The following section describes the functions of the OHS Component of BOARD Connector. <br>
+The following section describes the functions of the OHS Component of Board Connector. <br>
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
@@ -20,7 +20,7 @@ To use the OHS component, access to the designated authority objects (RFC) in SA
 For more information, see the knowledge base article on [SAP User Rights: OHS](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#ohs).
 
 {: .box-tip }
-**Tip:** To get information on the basics of BOARD Connector, refer to [Getting Started with BOARD Connector](./getting-started).
+**Tip:** To get information on the basics of Board Connector, refer to [Getting Started with Board Connector](./getting-started).
 
 ### Prerequisites
 

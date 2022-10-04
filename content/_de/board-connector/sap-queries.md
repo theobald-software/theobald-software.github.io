@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=sap-queries
 ---
 
-Der folgende Abschnitt beschreibt die Funktion der BOARD Connector Query Komponente. 
+Der folgende Abschnitt beschreibt die Funktion der Board Connector Query Komponente. 
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
@@ -20,7 +20,7 @@ Um die SAP Query Komponente zu verwenden, muss der Zugriff auf die entsprechende
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: SAP Query](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#sap-query).
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 {: .box-note}
 **Hinweis** Die Query-Komponente bezieht sich auf Queries, die Sie in den Transaktionen SQ02 und SQ01 erstellen. <br>

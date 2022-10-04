@@ -13,7 +13,7 @@ progressstate: 5
 ### Voraussetzungen
 
 {: .box-note }
-**Hinweis:** Administratorberechtigungen sind notwendig, um BOARD Connector zu installieren.
+**Hinweis:** Administratorberechtigungen sind notwendig, um Board Connector zu installieren.
 
 {% include _content/de/einfuehrung/produktversion.md %}	
 
@@ -27,9 +27,9 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 
 |Komponente | Subkomponente |Beschreibung |
 |:----|:---| :---|
-|Main Product Files |- |Installiert alle notwendigen Dateien, die zum Verwenden von BOARD Connector notwendig sind.|
-|Designer | -|Installiert die Designer-Anwendung, entfernen Sie die Markierung bei dieser Option, wenn Sie BOARD Connector ohne die grafische Schnittstelle verwenden wollen. |
-|Server | Installiert BOARD Connector Server. | 
+|Main Product Files |- |Installiert alle notwendigen Dateien, die zum Verwenden von Board Connector notwendig sind.|
+|Designer | -|Installiert die Designer-Anwendung, entfernen Sie die Markierung bei dieser Option, wenn Sie Board Connector ohne die grafische Schnittstelle verwenden wollen. |
+|Server | Installiert Board Connector Server. | 
 |<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) |
 | <!---->| Convert config files| Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Komponente ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
 |Start Menu Shortcuts | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
@@ -45,22 +45,22 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | logs Ordner| Ordner mit Server- und Extraktionsprotokollen etc. Siehe auch Abschnitt [Logging](../logging). |
 | config Ordner | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. <!-----Siehe auch Abschnitt [Backup](../fortgeschrittene-techniken/backup-und-migration). ----> |
 | result-cache Ordner | Ordner mit Extraktions-Cache-Dateien.  |
-| BCDesigner.exe | Anwendung zum Starten von BOARD Connector Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
-| BCService.exe | Anwendung, die den BOARD Connector Server als einen Windows Service startet.  Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
+| BCDesigner.exe | Anwendung zum Starten von Board Connector Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
+| BCService.exe | Anwendung, die den Board Connector Server als einen Windows Service startet.  Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
 | BCApiServer.exe| Unverschlüsselter WCF-Service zum Abrufen von Metadaten durch den Designer.  |
 | Theobald.Bc.Web.Listener.exe| Theobald.Bc.Web.Listener.exe ein Listener-Prozess, der auf HTTP-Anfragen wartet. |
 | Theobald.Bc.Web.Worker.exe| Für jede TCP-Verbindung startet die Theobald.Bc.Web.Listener.exe eine neue Instanz von Theobald.Bc.Web.Worker.exe, die alle über die TCP-Verbindung eingehenden HTTP-Requests abarbeitet. |
 | BCCleanup.exe| Anwendung, die die alten Server-Logs aufräumt, wie in den [Server-Einstellungen](../server/server_einstellungen) definiert. |
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
-| uninstall.exe| Tool zum Deinstallieren und Entfernen von BOARD Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
+| uninstall.exe| Tool zum Deinstallieren und Entfernen von Board Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
 | BOARDConnectorSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](../fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).|
-| Eula_BOARD Connector.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software BOARD Connector.|
+| Eula_Board Connector.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Board Connector.|
 | BOARDConnectorLicense.json |  Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
 
 {: .box-note }
-**Hinweis:** Der BOARD Connector Server kann zu Testzwecken als Konsolenprogramm gestartet werden. 
-Mehr Details zum Starten von BOARD Connector Server als Konsolenprogramm, finden Sie im Kowledge Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Am Beispiel von Xtract Universal).
+**Hinweis:** Der Board Connector Server kann zu Testzwecken als Konsolenprogramm gestartet werden. 
+Mehr Details zum Starten von Board Connector Server als Konsolenprogramm, finden Sie im Kowledge Base-Artikel [How to use target principal field](https://kb.theobald-software.com/xtract-universal/target-principal-TPN) (Am Beispiel von Xtract Universal).
 
 ### Unbeaufsichtigte Installation 
 {% include _content/de/silent-setup.md %}	
@@ -98,7 +98,7 @@ Es gibt zwei Möglichkeiten, die Produktversion von BC 2.x und 3.x auf BC 4.x zu
 
 
 ### Upgrade während der Installation
-1. Starten Sie das BOARD Connector Setup.
+1. Starten Sie das Board Connector Setup.
 2. Markieren Sie die Checkbox **Convert config files**. <br>
 Die Option *Convert config files* startet die *ConfigConverter*-Anwendung, die sicherstellt, dass alle Extraktionen, Quellsysteme (Source Systems), Destinationen sowie Server- und Benutzereinstellungen von XU 2.x oder 3.x in der neuen Version verfügbar sind. <br> 
 ![BC-Setup](/img/content/board/BC_Setup_2.png){:class="img-responsive"}

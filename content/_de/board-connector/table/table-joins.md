@@ -10,7 +10,7 @@ weight: 2
 lang: de_DE
 ---
 ### Join-Funktionalität
-Ab BOARD Connector Version 5.0.0 können Table Joins in dem Tab *Joins* der Xtract Table-Komponente definiert werden.
+Ab Board Connector Version 5.0.0 können Table Joins in dem Tab *Joins* der Xtract Table-Komponente definiert werden.
 ![Table join ](/img/content/table-join-tab.png){:class="img-responsive"}
 {% include _content/de/table/table-joins.md  %}
 

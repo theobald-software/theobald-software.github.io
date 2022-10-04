@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-open-hub-service
 ---
 
-Der folgende Abschnitt beschreibt die Funktion der BOARD Connector OHS Komponente.
+Der folgende Abschnitt beschreibt die Funktion der Board Connector OHS Komponente.
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
@@ -20,7 +20,7 @@ Um die OHS Komponente zu verwenden, muss der Zugriff auf die entsprechenden Bere
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: OHS](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#ohs).
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 ### Voraussetzungen
 

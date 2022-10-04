@@ -15,7 +15,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=sso-with-snc
 
 ### Use case
 
-BI client tools such as Power BI, Power Pivot, Alteryx, etc. can start extractions in Xtract products, e.g., Xtract Universal or BOARD Connector). 
+BI client tools such as Power BI, Power Pivot, Alteryx, etc. can start extractions in Xtract products, e.g., Xtract Universal or Board Connector). 
 Xtract products load the extracted data directly into the tools.
 In this use case, it is often required that the extraction is executed with the SAP credentials of the (Windows AD) user, whose BI client triggered the extraction. 
 This means that the SAP authorizations of the executing user apply, which is especially important when extracting BW/BEx queries.
@@ -31,7 +31,7 @@ Single Sign-On (SSO) with an Xtract product can be realized via three different 
 
 ### What is SNC?
 
-Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract Universal and BOARD Connector.
+Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract Universal and Board Connector.
 For more information on SNC, see [SAP Help: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
 
 ### SSO and SNC with Client Certificates
@@ -41,12 +41,12 @@ For more information on SNC, see [SAP Help: SNC](https://help.sap.com/doc/saphel
 The usage of *SSO Certificate* requires the correct characteristics of the architecture:
 - Implement SAP SSO  with X.509 certificates without Secure Login Server, see [SAP-Documentation: Authentication Methods without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/LATEST/en-US/7c45fe620ab9469083f7ab50a9008c37.html).
 - Implement Microsoft Certificate Store and Active Directory Certificate Templates for SAPGUI/RFC, see [Microsoft TechNet: Certificate Template](https://social.technet.microsoft.com/wiki/contents/articles/53249.active-directory-certificate-services-enterprise-ca-architecture.aspx#Certificate_Template).
-- Set up an enrollment agent for BOARD Connector in AD, see [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents).
-- Install the SAP Secure Login Client on the server that runs BOARD Connector, see [SAP-Documentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).
+- Set up an enrollment agent for Board Connector in AD, see [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents).
+- Install the SAP Secure Login Client on the server that runs Board Connector, see [SAP-Documentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).
 The Secure Login Client ensures that the correct SNC library is available for *SSO Certificate*.
 This library is used to open the SAP connection.
 - The BC service must run under a Windows AD Service account, see [Run an Xtract Universal Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account) for reference.
-- Set up access restrictions for the BOARD Connector Designer and the BC server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](../security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
+- Set up access restrictions for the Board Connector Designer and the BC server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](../security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
 
 For more information on how to set up SSO and SNC with client certificates, see [Knowledge Base Article: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 

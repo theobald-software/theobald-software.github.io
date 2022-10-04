@@ -25,7 +25,7 @@ Git or Azure DevOps are version control systems that can be used to ensure:
 For more information on how to set up version control, refer to the knowledge base article [Deploying Extractions Using Git Version Control](https://kb.theobald-software.com/xtract-universal/deploying-extractions-using-Git-version-control).
 
 ### Configuration Files
-All configuration files of extractions, sources and the server are stored in the sub-directory `config` of the BOARD Connector program directory (`C:\Program Files\BOARDConnector\config`).
+All configuration files of extractions, sources and the server are stored in the sub-directory `config` of the Board Connector program directory (`C:\Program Files\BOARDConnector\config`).
 Use the `config` directory for setting up a [version control](#version-control) system or creating [manual backups](#manual-backups).
 
 
@@ -46,7 +46,7 @@ A backup allows you to easily switch back to the previous product version, if ne
 
 
 #### How do I Create a Backup?
-Copy the complete `config` directory (`C:\Program Files\BOARDConnector\config` by default) of the machine running the BOARD Connector Service and store the files in safe and secure locations.
+Copy the complete `config` directory (`C:\Program Files\BOARDConnector\config` by default) of the machine running the Board Connector Service and store the files in safe and secure locations.
 Optionally, copy the complete `logs` directory (`C:\Program Files\BOARDConnector\logs` by default) to create a backup of the log files. 
 To backup your licence, create a copy of your `BOARDConnectorLicense.json` file.
 
@@ -56,7 +56,7 @@ Both `config` and `logs` directories may contain sensitive information.
 
 #### How to Restore a Backup?
 
-1. To restore the configuration files, remove the `config` directory from the program directory (`C:\Program Files\BOARDConnector` by deafult) of the machine running the BOARD Connector Service.
+1. To restore the configuration files, remove the `config` directory from the program directory (`C:\Program Files\BOARDConnector` by deafult) of the machine running the Board Connector Service.
 2. Copy the backup of the `config` directory into the program directory.
 3. To restore the licence replace the `BOARDConnectorLicense.json` file within the program directory with the backup.
 
@@ -71,7 +71,7 @@ Depending on your scenario it can make sense to conduct a partial migration - e.
 
 When replacing a machine completely, conduct a full migration.
 
-**Prerequisite**: BOARD Connector versions installed on both machines match.
+**Prerequisite**: Board Connector versions installed on both machines match.
 
 {: .box-tip }
 **Tip**: To check the version of your product, open the Designer, navigate to **Help > Info** or press **[F12]**.
@@ -83,7 +83,7 @@ When replacing a machine completely, conduct a full migration.
 2. Decide whether you need a partial or a full migration. <br> 
 For a full migration you can restore the entire `config` directory on the different machine.
 You can alternatively restore parts of the backup, by copying e.g., only the destinations or extractions directories.
-3. Restart the [BOARD Connector Service](../server/start-server), when performing a full migration or copying the `server` directory onto the different machine.
+3. Restart the [Board Connector Service](../server/start-server), when performing a full migration or copying the `server` directory onto the different machine.
 
 {: .box-note }
 **Note**: When migrating to a new server, a new license file must be issued for that server.

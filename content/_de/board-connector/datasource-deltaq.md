@@ -23,7 +23,7 @@ Um die DeltaQ Komponente zu verwenden, muss der Zugriff auf die entsprechenden B
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: DeltaQ](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#deltaq).
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 ### DeltaQ verwenden
 {% include _content/de/board-specific/define-extraction.md %}

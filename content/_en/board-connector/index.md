@@ -1,8 +1,8 @@
 ---
 ref: board-connector-01
 layout: page
-title: BOARD Connector
-description: BOARD Connector main page
+title: Board Connector
+description: Board Connector main page
 product: board-connector
 parent: home
 childidentifier: board-connector
@@ -11,18 +11,18 @@ weight: 1
 lang: en_GB
 old_url: /BOARD-Connector-EN/
 ---
-Welcome to the Online Help of the BOARD Connector.
+Welcome to the Online Help of the Board Connector.
 
-The BOARD Connector is a SAP Connector that makes various SAP objects available in the Board Server in pull mode.
+The Board Connector is a SAP Connector that makes various SAP objects available in the Board Server in pull mode.
 
 ### Available Components
 
 The following overview shows, which components are available to extract data from SAP systems. 
-![BOARD Connector-architecture](/img/content/board/Board.png)
+![Board Connector-architecture](/img/content/board/Board.png)
 
 ### Extraction Types
 
-BOARD Connector offers a set of nine extraction types to cover a range of demands of SAP data extraction.
+Board Connector offers a set of nine extraction types to cover a range of demands of SAP data extraction.
 
 - [**BAPI**](./bapis-and-function-modules) accesses BAPIs and RFC function modules.
 - [**BW Cube**](./bw-infocubes-and-bex-queries) extracts data from SAP BW InfoCubes and BEx Queries.
@@ -49,6 +49,6 @@ BOARD Connector offers a set of nine extraction types to cover a range of demand
 {: .box-note }
 **Note:** Further scenarios and combinations are possible.
 
-More information on functions of BOARD Connector is provided in the following sections:
+More information on functions of Board Connector is provided in the following sections:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

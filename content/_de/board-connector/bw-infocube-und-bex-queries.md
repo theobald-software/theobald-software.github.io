@@ -11,7 +11,7 @@ weight: 11
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=bw-infocube-und-bex-queries
 ---
-Der folgende Abschnitt beschreibt die Funktion der BOARD Connector BW Cube Komponente.
+Der folgende Abschnitt beschreibt die Funktion der Board Connector BW Cube Komponente.
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
@@ -19,7 +19,7 @@ Um die BW Cube Komponente zu verwenden, muss der Zugriff auf die entsprechenden 
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: BW Query / BW Cube](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube).
 
 {: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit BOARD Connector](./erste-schritte) beschrieben.
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 ### BW Cube verwenden
 {% include _content/de/board-specific/define-extraction.md %}

@@ -15,7 +15,7 @@ progressstate: 5
 
 ### Use case
 
-BI client tools such as Power BI, Power Pivot, Alteryx, etc. can start extractions in Xtract products, e.g., Xtract Universal or BOARD Connector). 
+BI client tools such as Power BI, Power Pivot, Alteryx, etc. can start extractions in Xtract products, e.g., Xtract Universal or Board Connector). 
 Xtract products load the extracted data directly into the tools.
 In this use case, it is often required that the extraction is executed with the SAP credentials of the (Windows AD) user, whose BI client triggered the extraction. 
 This means that the SAP authorizations of the executing user apply, which is especially important when extracting BW/BEx queries.
@@ -31,7 +31,7 @@ Single Sign-On (SSO) with an Xtract product can be realized via three different 
 
 ### What is SNC?
 
-Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract Universal and BOARD Connector.
+Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract Universal and Board Connector.
 For more information on SNC, see [SAP Help: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
 
 
