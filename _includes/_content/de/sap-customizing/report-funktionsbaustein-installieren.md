@@ -14,6 +14,32 @@ Das ist notwendig, sofern die Ausgabelänge einer Report-Zeile mehr als 512 Zeic
 {: .box-note}
 **Hinweis:** Die Ausnahme `LIST_FROM_MEMORY_NOT_FOUND` wird geworfen, wenn der Report kein Ergebnis liefert.
 
+
+### Zugriffsbeschränkung auf Einzelne Reports
+
+Standardmäßg gibt es keine Zugriffsbeschränkung für Reports. 
+Um den Zugriff auf bestimmte Reports einzuschränken, muss dem Report eine Berechtigungsgruppe zugewiesen werden.
+Der Zugriff auf Reports kann dann über das Berechtigungsobjekt S_PROGRAM gewährt werden, siehe [SAP Note 338177](https://launchpad.support.sap.com/#/notes/338177).
+
+{: .box-tip }
+**Tipp:** Verwenden Sie den Transaktions Code SM30, um in der Tabelle TPGP oder V_TPGP eine neue Berechtigungsgruppe anzulegen.
+
+1. Loggen Sie sich in SAP ein und öffnen Sie über die Transaktion SE38 den ABAP Editor.
+2. Geben Sie den Namen des Reports ein, dessen Zugriff beschränkt werden soll und wählen Sie **Attributes** als *Subobjects* aus.
+3. Klicken Sie auf **[Change]**. Ein Fenster mit den Programm-Attributen öffnet sich.
+4. Weisen Sie unter **Authorization group** eine Berechtigungsgruppe zu.<br>
+Nach Zuweisung einer Berechtigungsgruppe, ist ein Report nicht mehr über Funktionsmodule wie Z_XTRACT_IS_REMOTE_REPORT via **SUBMIT** oder durch den entsprechenden TCODE verfügbar.<br>
+![report-authorization](/img/content/report-authorization.png){:class="img-responsive"}
+5. Um Benutzern den Zugriff zu ermöglichen, bearbeiten oder erstellen Sie eine Benutzerrolle, die Zugriff auf den Report haben soll.
+6. Weisen Sie der Benutzerrolle das Berechtigungsobjekt S_PROGRAM zu.
+7. Weisen Sie dem Feld *P_GROUP* dieselbe Berechtigungsgruppe zu, die auch dem Report zugewiesen ist und wählen im Feld *P_ACTION* die Aktion *SUBMIT* aus.
+8. Speichern Sie die Benutzerrolle.
+9. Weisen Sie die Benutzerrolle Benutzern zu.
+
+{: .box-note}
+**Hinweis:** Reports ohne zugewiesen Berechtigungsgruppe sind frei zugänglich.
+
+
 ***********
 #### Weiterführende Links
 - [How to import an SAP Transport Request with the Transport Management System STMS](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
