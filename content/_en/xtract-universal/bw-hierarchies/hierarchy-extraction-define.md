@@ -12,4 +12,5 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-hierarchy-extraction
 ---
 The following section shows how to use the BW Hierarchy component.
 
+
 {% include _content/en/bw-hierarchies/hierarchy-extraction-define.md %}

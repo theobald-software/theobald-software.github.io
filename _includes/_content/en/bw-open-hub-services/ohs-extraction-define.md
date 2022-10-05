@@ -9,11 +9,15 @@ If you use BW7.x or below, select **Third party tool (legacy)** as your extracti
 ![Look-Up-Infospoke-Destination](/img/content/Look-Up-Infospoke-Destination.png){:class="img-responsive"}
 4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) and select the destination of your choice from the displayed list (2).
 5. Click **[OK]** to confirm.
-6. If **Process Chain** is empty, enter an SAP process chain assigned to your OHS extraction, see [SAP Documentation: Display/Maintenance of Process Chain Attributes](http://saphelp.ucc.ovgu.de/NW750/EN/4a/2cf30c6ed91c62e10000000a42189c/frameset.htm).
-If **Process Chain** is left empty, the extraction fails.
-7. Optional: Use the **Timeout** setting to set a maximum time period to wait for a notification from BW. If the time limit is reached, the extraction fails.
-8. Check / edit the [extraction settings](./open-hub-services-settings) and [general settings](../getting-started/general-settings) of the extraction.
-
 
 {: .box-note }
 **Note:** To use data sources you need to configurate SAP BW, see [Customizing for OHS in BW](../sap-customizing/preparation-for-ohs-in-bw).
+
+### OHS Settings
+
+1. If **Process Chain** is empty, enter an SAP process chain assigned to your OHS extraction, see [SAP Documentation: Display/Maintenance of Process Chain Attributes](http://saphelp.ucc.ovgu.de/NW750/EN/4a/2cf30c6ed91c62e10000000a42189c/frameset.htm).
+If **Process Chain** is left empty, the extraction fails.
+2. Optional: Use the **Timeout** setting to set a maximum time period to wait for a notification from BW. If the time limit is reached, the extraction fails.
+3. Check / edit the [extraction settings](./open-hub-services-settings) and [general settings](../getting-started/general-settings) of the extraction.<br>
+![ohs-main-window](/img/content/ohs-main-window.png){:class="img-responsive"}
+
