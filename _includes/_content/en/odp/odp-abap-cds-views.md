@@ -36,4 +36,4 @@ Things that need to be considered when using BW InfoProviders:
 1. When [searching](./odp-define) for ABAP CDS Views, make sure to select the correct context. 
 ![ODP ABAP CDS View](/img/content/odp/odp-component-cds-costcenter-01.png){:class="img-responsive"}
 2. When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
-3. Click **[Load live preview]** to preview the data without executing an extraction.
+3. Click **[Load live preview]** to preview the data without running an extraction.

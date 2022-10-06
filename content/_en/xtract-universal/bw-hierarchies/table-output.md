@@ -1,7 +1,7 @@
 ---
 ref: xu-bw-hierarchies-02
 layout: page
-title: Output of a Hierarchy Structure
+title: Table Output
 description: Table output
 product: xtract-universal
 parent: bw-hierarchies

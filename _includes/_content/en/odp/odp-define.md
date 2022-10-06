@@ -15,9 +15,9 @@ The window "Operational Data Provider Lookup" opens.
 5. Click **[OK]** (6) to confirm your input.
 6. Optional: Create selections by activating or deactivating fields (7). To add [filters](#selections-and-filters) click the **[Edit]** option next to the fields. 
 If your data source is Hierarchy, see [Select Hierarchy](./odp-extractors#hierarchies) for filter options.
-7. Click **[Load live preview]** (8) to display a live preview of the data without executing an extraction.
+7. Click **[Load live preview]** (8) to display a live preview of the data without running an extraction.
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
-8. Before executing an extraction, check the [extraction settings](./odp-settings).
+8. Before running an extraction, check the [extraction settings](./odp-settings).
 
 {: .box-note }
 **Note:** To find DataSources, they have to be activated in SAP, see [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).

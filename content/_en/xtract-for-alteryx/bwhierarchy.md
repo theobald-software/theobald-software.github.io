@@ -28,27 +28,7 @@ For more information, see the knowledge base article on [SAP User Rights: BW Hie
 
 The majority of the functions of the component can be accessed using the main window.
 
-### Functions overview
-The window "Hierarchy Extractor" consists out of two subsections:
-- Hierarchy Extraction
-- Preview
-
 ![Hierarchy Extractor](/img/content/xfa/xfa_hierarchy.png){:class="img-responsive"}
-
-#### Hierarchy Extraction
-Within the subsection **Hierarchy Extraction** you can [search for SAP BW hierarchies](./bwhierarchy/bwhier-define) using **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon).
-![Hierarchy search](/img/content/xfa/xfa_hierarchy_search.png){:class="img-responsive"}
-
-**Date To**<br>
-The default value for the field *Date To* is 99991231. To change the value, click **[Run]** and override the value. 
-
-#### Preview
-The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-preview-selected-hierarchy) of the selected SAP BW hierarchy, when clicking the **[Load Live Preview]** button.
-![Hierarchy preview](/img/content/xfa/xfa_hierarchy_buttons.png){:class="img-responsive"}
-
-#### Buttons
-- **[Extraction Settings]** opens the [extraction specific settings](./bwhierarchy/bwhier-settings) e.g., representation or level count. <br>
-- **[Load Live Preview]** loads a preview of the hierarchy without executing an extraction.
 
 ---
 

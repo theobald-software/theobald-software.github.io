@@ -1,11 +1,9 @@
-
-### Hierarchy Settings
-Click **Extraction Settings** in the main window of the component. The window “Hierarchy Settings” opens.
+To access the extraction settings, click **[Extraction Settings]** in the main window of the component. The window “Hierarchy Settings” opens.<br>
 ![Hierarchies-Settings](/img/content/Hierarchy-settings.png){:class="img-responsive"}
 
 ### Extraction Settings
 **Representation:** 
-- *ParentChild*: The hierarchy is represented in the SAP parent-child format, see [Output of a Hierarch Structure](./table-output). Example:<br>
+- *ParentChild*: The hierarchy is represented in the SAP parent-child format, see [Table Output](./table-output). Example:<br>
 ![Hierarchies-Parent-Child](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 - *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy. Example:<br>
 ![Hierarchy-Parent-Child-Natural](/img/content/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}

@@ -9,36 +9,36 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
-The following section shows how to use the Xtract Hierarchy component.
+The following section shows how to use the Xtract Hierarchy component.<br>
 
-### Look up a BW Hierarchy
+{% include _content/en/bw-hierarchies/hierarchy-extraction-define.md %}
 
-1. In the main window of the component navigate to subsection **Hierarchy Extraction** and click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon)(1). 
-![Define-Data-Source-Hierarchy](/img/content/xfa/Define-Data-Source-Hierarchy_1.png){:class="img-responsive"}
-The window "Hierarchy Lookup" opens.
-2. In the field **Hierarchy Name** (2) enter a name of an extractor using wildcards (*), if needed.
-![Look-Up-Hierarchy](/img/content/extractors.bwhier/Look-Up-Hierarchy.png){:class="img-responsive"}
-3. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (3) and select the extractor of your choice from the displayed list (4).
-4. Click **[OK]** (5) to confirm.
-5. Click **[[Extraction Settings](./bwhier-settings)]** to define hierarchy settings.
-
-### To Preview Selected Hierarchy
-Click **[Load live preview]** (6) to display a live preview of the data without executing an extraction.<br>
-
+### Format and Preview Output
+1. Click **[Extraction Settings]** to define the output format of the Hierarchy, see [Extraction Settings](./bwhier-settings).
+2. Click **[Load live preview]** to display a live preview of the data without running an extraction.<br>
 ![Define-Data-Source-Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"}
+3. Optional: The default value for **Date To** is 99991231. To change the value, ....
 
-The displayed hierarchy has a parent-child format, therefore the output columns are fixed. The output has always the following columns for every hierarchy:
+#### Default Settings
 
-![Hierarchy-Table-Output](/img/content/xfa/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
+The default output of the Xtract Hierarchy component contains the following columns:
+- **NodeID:**
+Unique node key.
+- **ParentNodeID:**
+Key for parent node.
+- **FirstChildNodeID:**
+Key for first child node.
+- **NextNodeID:**
+Key for next node in the same hierarchical level.
+- **InfoObjectName:**
+Name of InfoObject behind the corresponding node.
+- **NodeName:**
+The node’s (technical) name.
+- **NodeText:** 
+The description text of the node. This column is only created when the extraction setting **Fetch description texts** is active.<br>
 
-| **NodeID** | **ParentNodeID**  | **FirstChildNodeID**  |  **NextNodeID** | **InfoObjectName**  | **NodeName** | **NodeText**  |
-|---|---|---|---|---|---|---|---|
-| Unique node key  | Key for parent node  | Key for first child node  | Key for next node in the same hierarchical level  | Name of InfoObject behind the corresponding node  | The node’s (technical) name | The descriptive text in the respective logon language (only when FetchText is set to true in the settings)|
-
-
-The original hierarchy of PM_COUNTRY in SAP looks as follows:
-
-![Hierarchy-Table-SAP](/img/content/extractors.bwhier/Hierarchy-Table-Output.png){:class="img-responsive"}
+The original Hierarchy PM_COUNTRY has the following format in SAP:<br>
+![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
 
 
 ****

@@ -1,7 +1,7 @@
 
 ### Output of a Hierarchy Structure
 
-The output of Hierarchy components is always contains the same columns:
+The default output of the BW Hierarchy component contains the following columns:
 
 - **NodeID:**
 Unique node key.
@@ -16,12 +16,12 @@ Name of InfoObject behind the corresponding node.
 - **NodeName:**
 The node’s (technical) name.
 - **NodeText:** 
-The descriptive text in the respective logon language (only when FetchText is set to *true* in the settings).<br>
+The description text of the node. This column is only created when the extraction setting **Fetch description texts** is active.<br>
 ![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 
 
 ### Output in SAP
-The Hierarchy PM_COUNTRY has the following format in SAP:<br>
+The original Hierarchy PM_COUNTRY has the following format in SAP:<br>
 ![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
 
 The corresponding flat data output in a browser looks as follows:<br>

@@ -76,7 +76,7 @@ Theobald.Xu.Web.Listener.exe waits for HTTP requests. <br>
 For each TCP connection the Theobald.Xu.Web.Listener.exe starts a new instance of Theobald.Xu.Web.Worker.exe, which processes all HTTP requests coming in over the particular TCP connection, see [Run Extraction on the Server](#run-extraction-on-the-server).
 
 The following HTTP requests are possible:
-- Executing an extraction
+- running an extraction
 - Emptying the result cache of an extraction
 - Canceling all runs of an extraction
 - REST API requests e.g., [Logs](./logging/logging-access-via-http), [Metadata](./advanced-techniques/metadata-access-via-http) etc.

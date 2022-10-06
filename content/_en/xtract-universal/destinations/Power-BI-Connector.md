@@ -204,7 +204,7 @@ Xtract Universal and the *Power BI Connector* destination support single sign on
 ## Parameterizing
 
 The Power BI Custom Connector exposes Xtract Universal custom parameters in Power BI Desktop.
-Using the Power BI Custom Connector Xtract Universal custom parameters can be populated with values when executing an extraction from Power BI Desktop.
+Using the Power BI Custom Connector Xtract Universal custom parameters can be populated with values when running an extraction from Power BI Desktop.
 
 ### Power BI Custom Connector 
 When using the Power BI Custom Connector, XU custom parameters can be populated when setting up the connection in Power BI.

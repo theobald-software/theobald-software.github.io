@@ -152,7 +152,7 @@ For creating a single folder, enter a folder name without slashes: `[folder]` <b
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
 **Folder path** allows entry of [script expressions](./../advanced-techniques/script-expressions).
-This allows to dynamically set a folder path when executing an extraction. <br>
+This allows to dynamically set a folder path when running an extraction. <br>
 
 ### Column Encryption (4)
 
