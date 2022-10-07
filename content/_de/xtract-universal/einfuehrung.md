@@ -13,9 +13,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=einfuehrung
 progressstate: 5
 ---
 
- 
- Eine [Destination](./destinationen) repräsentiert eine Verbindung zu einer Zielumgebung.
-
 ### Glossar
 
 Xtract Universal verwendet die folgenden Begriffe für seine Komponenten:
