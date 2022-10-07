@@ -41,7 +41,7 @@ In the execution phase the user can:
 - parameterize extractions that use runtime parameters. 
 
 The execution of the extractions takes place on the [server](./server). <br>
-Depending on the target environment an execution can be triggered either by the [XU command line tool - xu.exe or xu.elf](./execute-and-automate-extractions/call-via-commandline) by the data consumer. 
+Depending on the target environment an execution can be triggered either by the [XU command line tool - xu.exe / xu.elf](./execute-and-automate-extractions/call-via-commandline) or by the consuming destination. 
 For more information, see [Pull and Push Destinations](./destinations#pull-and-push-destinations). 
 
 ![xu-arch-01](/img/content/xu/xu-arch-01.png){:class="img-responsive"}

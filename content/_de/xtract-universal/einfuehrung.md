@@ -42,7 +42,7 @@ Während der Ausführungsphase kann der Benutzer:
 - Laufzeitparameter an Extraktionen übergeben.
 
 Die Ausführung der Extraktionen findet auf dem [Server](./server) statt. 
-Abhängig von der Destination kann eine Ausführung entweder durch das [XU-Kommandozeilen-Tool - xu.exe oder xu.elf](./extraktionen-ausfuehren-und-einplanen/call-via-commandline) oder durch den Datenkonsumenten ausgelöst werden. 
+Abhängig von der Destination kann eine Ausführung entweder durch das [XU-Kommandozeilen-Tool - xu.exe / xu.elf](./extraktionen-ausfuehren-und-einplanen/call-via-commandline) oder durch die konsumierende Destination ausgelöst werden. 
 Für mehr Informationen, siehe [Pull- und Push-Destinationen](./destinationen#pull--und-push-destinationen). 
 
 ![xu-arch-01](/img/content/xu/xu-arch-01.png){:class="img-responsive"}
