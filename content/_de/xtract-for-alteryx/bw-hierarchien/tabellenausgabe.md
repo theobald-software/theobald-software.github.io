@@ -1,10 +1,10 @@
 ---
-ref: xu-bw-hierarchies-04
+ref: xfa-bwhier-table-output
 layout: page
 title: Ausgabeformat
 description: Tabellenausgabe
-product: xtract-universal
-parent: bw-hierarchien
+product: xtract-for-alteryx
+parent: bwhierarchy
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

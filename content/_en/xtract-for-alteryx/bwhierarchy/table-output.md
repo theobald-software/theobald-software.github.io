@@ -1,14 +1,14 @@
 ---
-ref: bc-bw-hierarchies-02
+ref: xfa-bwhier-table-output
 layout: page
 title: Output Formats
 description: Table output
-product: board-connector
-parent: bw-hierarchies
+product: xtract-for-alteryx
+parent: bwhierarchy
 permalink: /:collection/:path
 weight: 4
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=table-output
 ---
+
 
 {% include _content/en/bw-hierarchies/table-output.md %}
