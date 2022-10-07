@@ -11,6 +11,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=requirements
 Progressstate: 5
 ---
+
 {% include _content/en/requirements/sap-systems.md %}
 {% include _content/en/requirements/sap-installation.md %}
 {% include _content/en/requirements/sap-authentication-xtract.md %}
@@ -20,7 +21,6 @@ Progressstate: 5
 
 {: .box-note }
 **Note:** For more information on the processing of parallel extractions, see [Run parallel Extractions](../execute-and-automate-extractions#run-parallel-extractions).
-
 
 ### Destinations
 To use the different [Destinations](../destinations), an appropriate driver or library can be required. 

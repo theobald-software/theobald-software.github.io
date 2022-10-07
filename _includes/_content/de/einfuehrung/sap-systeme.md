@@ -1,12 +1,13 @@
 
 ### Unterstützte SAP-Systeme und Releases
-Die gesamte Kommunikation mit SAP erfolgt über das RFC-Protokoll. 
+
 Es werden alle SAP ABAP basierten Systeme unterstützt, die RFC-Konnektivität bereitstellen.
+
+Die gesamte Kommunikation mit SAP erfolgt über das RFC-Protokoll. 
 Die Integration erfolgt auf der Ebene des SAP-Anwendungsservers. 
 Daher ist die vom SAP-System verwendete Datenbank irrelevant. SAP-ABAP-Systeme auf beliebigen Datenbanken (einschließlich HANA) werden unterstützt. 
 Das bedeutet auch, dass das Betriebssystem des SAP-Systems irrelevant ist - alle Betriebssysteme werden unterstützt.
-SAP-Systeme, die auf Big Endian- und Little Endian-Hardware laufen, werden unterstützt.
-
+SAP-Systeme, die auf Big Endian- und Little Endian-Hardware laufen, werden unterstützt.<br>
 SAP Release 4.6C und neuer werden unterstützt. Dazu gehören:<br/> 
 * mySAP	
 * SAP Application Server ABAP, Message Server, Router, Standalone Gateway
