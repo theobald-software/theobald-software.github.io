@@ -49,7 +49,7 @@ Um Power BI Connector zu verwenden, müssen keine weiteren Einstellungen vorgeno
 ### Destination Settings öffnen
 
 1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
-2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
+2. Klicken Sie auf **[Destination]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
 Die folgenden Einstellungen können für die Destination definiert werden. 

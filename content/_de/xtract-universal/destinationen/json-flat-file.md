@@ -45,7 +45,7 @@ Wenn das Verzeichnis nicht existiert, wird es erstellt.
 ### Destination Settings öffnen
 
 1. Wählen Sie eine bestehende Extraktion oder legen Sie eine neue an  (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
-2. Klicken Sie auf **[Destinations]**. Das Fenster "Destination Settings" wird geöffnet.
+2. Klicken Sie auf **[Destination]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
 Die folgenden Einstellungen können für die JSON-Flat-File-Destination definiert werden. 
