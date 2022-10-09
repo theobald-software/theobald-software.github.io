@@ -24,6 +24,7 @@ Das Fenster "Create Extraction" wird geöffnet.
 Das Fenster "Extract Single and Joint SAP Tables or Views" wird geöffnet. <br>
 In diesem Fenster können Sie einfache Tabellenextraktionen definieren oder Tabellen für Extraktionen zusammenfügen (Table Joins). Im folgenden Beispiel wird eine einzelne Tabelle extrahiert.
 
-
+{: .box-note }
+**Hinweis:** Wenn Sie eine Extraktion anlegen, wird der Extraktion automatisch die Destination [http-csv](../destinationen/csv-via-http) zugewiesen. 
 
 {% include _content/de/table/extraktion-anlegen.md  %}
