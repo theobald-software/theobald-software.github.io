@@ -17,29 +17,7 @@ The following section shows how to use the Xtract Hierarchy component.<br>
 1. Click **[Extraction Settings]** to define the output format of the Hierarchy, see [Extraction Settings](./bwhier-settings).
 2. Click **[Load live preview]** to display a live preview of the data without running an extraction.<br>
 ![Define-Data-Source-Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"}
-3. Optional: The default value for **Date To** is 99991231. To change the value, ....
-
-#### Default Settings
-
-The default output of the Xtract Hierarchy component contains the following columns:
-- **NodeID:**
-Unique node key.
-- **ParentNodeID:**
-Key for parent node.
-- **FirstChildNodeID:**
-Key for first child node.
-- **NextNodeID:**
-Key for next node in the same hierarchical level.
-- **InfoObjectName:**
-Name of InfoObject behind the corresponding node.
-- **NodeName:**
-The node’s (technical) name.
-- **NodeText:** 
-The description text of the node. This column is only created when the extraction setting **Fetch description texts** is active.<br>
-
-The original Hierarchy PM_COUNTRY has the following format in SAP:<br>
-![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
-
+3. Optional: The default value for **Date To** is 99991231. To change the value, use a [Parameter](../parameterizing).
 
 ****
 #### Related Links

@@ -11,7 +11,5 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=table-output
 ---
 
-{% include _content/en/bw-hierarchies/table-output.md %}
 
-The corresponding flat data output in a browser looks as follows:<br>
-![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output-Browser.png){:class="img-responsive"}
+{% include _content/en/bw-hierarchies/table-output.md %}

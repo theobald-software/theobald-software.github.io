@@ -1,6 +1,6 @@
 
 ### Hierarchy Structure in SAP
-The original Hierarchy PM_COUNTRY has the following format in SAP:<br>
+The example Hierarchy PM_COUNTRY has the following format in SAP:<br>
 ![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
 
 ### Parent-Child Format
@@ -20,19 +20,27 @@ Name of InfoObject behind the corresponding node.
 - **NodeName:**
 The node’s (technical) name.
 - **NodeText:** 
-The description text of the node. This column is only created when the extraction setting **Fetch description texts** is active.<br>
+The description text of the node. This column is only created when the [extraction setting](./hierarchies-extraction-settings) **Fetch description texts** is active.
+- **Link:** 
+Indicator if the node is a link node or not.
+- **Row:**
+Number of the row in SAP.<br>
 ![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 
 ### Natural Format
 
 - **LevelN:**
-Technical name of the node of the nth level. If a level ... The level count starts with level 0. 
+Technical name of the node of the nth level. The number of levels is set in the [extraction setting](./hierarchies-extraction-settings) **Level Count**. The level count starts at level 0. 
 - **LevelTextN:**
-The description text of the nth level's node. This column is only created when the extraction setting **Description texts for levels** is active.
+The description text of the nth level's node. This column is only created when the [extraction setting](./hierarchies-extraction-settings) **Description texts for levels** is active.
 - **InfoObjectName:**
-Name of InfoObject behind the node of the highest available level.
+Name of InfoObject behind the node of the highest level.
 - **NodeName:**
-The node’s (technical) name.
+Technical name of the node of the highest level.
 - **NodeText:** 
-The description text of the current level's node. This column is only created when the extraction setting **Fetch description texts** is active.<br>
+The description text of the node of the highest level. This column is only created when the [extraction setting](./hierarchies-extraction-settings) **Fetch description texts** is active.
+- **Link:** 
+Indicator if the node is a link node or not.
+- **Row:**
+Number of the row in SAP.<br>
 ![Hierarchy-Table-Output](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}

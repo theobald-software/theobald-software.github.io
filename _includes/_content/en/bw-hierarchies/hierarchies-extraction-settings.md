@@ -3,9 +3,9 @@ To access the extraction settings, click **[Extraction Settings]** in the main w
 
 ### Extraction Settings
 **Representation:** 
-- *ParentChild*: The hierarchy is represented in the SAP parent-child format, see [Table Output](./table-output). Example:<br>
+- *ParentChild*: The hierarchy is represented in the SAP parent-child format, see [Output Formats: Parent-Child](./table-output#parent-child-format). Example:<br>
 ![Hierarchies-Parent-Child](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
-- *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy. Example:<br>
+- *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy, see [Output Formats: Natural](./table-output#natural-format). Example:<br>
 ![Hierarchy-Parent-Child-Natural](/img/content/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Remove Leading Zeros:**<br>

@@ -11,5 +11,4 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=hierarchies-extraction-settings
 ---
 
-
 {% include _content/en/bw-hierarchies/hierarchies-extraction-settings.md %}
