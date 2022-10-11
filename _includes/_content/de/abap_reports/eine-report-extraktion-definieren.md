@@ -37,3 +37,4 @@ Für detaillierte Informationen zur Verwendung von Selektionen mit Laufzeitparam
 
 #### Weiterführende Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
+- [Authorizing Access to Specific Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports)

@@ -37,7 +37,7 @@ For more information on how to use selections with parameters, see [Runtime Para
 
 #### Related Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
-
+- [Authorizing Access to Specific Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports)
 
 <!---
 ### Further reading..
