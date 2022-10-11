@@ -39,4 +39,4 @@ In this case, set the *AttachesSapGui* property in the **Expert Options** of the
 ****
 #### Related Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
-
+- [Authorizing Access to Specific Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports)
