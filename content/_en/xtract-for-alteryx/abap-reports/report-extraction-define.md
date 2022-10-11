@@ -47,4 +47,4 @@ The following section shows how to use the Xtract Report component. <br>
 ****
 #### Related Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
-
+- [Authorizing Access to Specific Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports)
