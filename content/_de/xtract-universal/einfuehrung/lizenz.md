@@ -30,7 +30,7 @@ Die Lizenz definiert folgende Eigenschaften:
 Diese Lizenzeigenschaften werden überprüft, sobald der Xtract Universal Server eine Extraktion ausführt.
 
 {: .box-note }
-**Hinweis:** Die Anzahl der definierten Extraktionen und andere Lizenzeigenschaften werden in der [Statusleiste](../designer-overview#statusleiste) des Designers angezeigt.
+**Hinweis:** Die Anzahl der definierten Extraktionen und andere Lizenzeigenschaften werden in der [Statusleiste](../erste-schritte/designer-overview#statusleiste) des Designers angezeigt.
 
 {: .box-tip }
 **Empfehlung:** Erfahrungsgemäß benötigen mittelständige Unternehmen weniger als 100 Extraktionen.
