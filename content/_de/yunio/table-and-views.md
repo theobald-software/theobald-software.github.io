@@ -30,14 +30,17 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 5. Wählen Sie einen Eintrag aus der Liste der Suchergebnisse aus (3). 
 Die Extraktionseinstellungen für *SAP Tabelle und Ansichten* öffnen sich automatisch.<br>
 
+### Einstellungen
 Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 
-![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
+![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
 
-- [Table or View](#tabelle-oder-ansicht) (4) zeigt den Namen und die Beschreibung der gewählten SAP Tabelle oder View an.
-- [Advanced Settings](#fortgeschrittene-einstellungen) (5) definieren, wie Daten aus SAP extrahiert werden.
-- [Output Columns](#ausgabespalten) (6) definieren, welche Spalten extrahiert werden.
-- [WHERE-Clause](#where-bedingung) (7) ermöglicht das Filtern von Daten.
+- [Table or View](#table-or-view) (4) zeigt den Namen und die Beschreibung der gewählten SAP Tabelle oder View an.
+- [Advanced Settings](#advanced-settings) (5) definieren, wie Daten aus SAP extrahiert werden.
+- [Output Columns](#output-columns) (6) definieren, welche Spalten extrahiert werden.
+- [WHERE Clause](#where-clause) (7) ermöglicht das Filtern von Daten.
+- [WHERE Clause Editor](#where-clause-editor) (8) bietet ein Toolkit zum Erstellen von WHERE-Bedingungen.
+
 
 ### Table or View
 
@@ -94,7 +97,7 @@ Sie können entweder alle oder nur einzelne Spalten für die Extraktion auswähl
 Standardmäßig sind alle Spalten für die Tabellenextraktion ausgewählt. 
 Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.
 
-### WHERE-Clause
+### WHERE Clause
 Verwenden Sie eine WHERE-Bedingung, um Ihre Daten zu filtern.
 
 #### Syntaxregeln
@@ -128,8 +131,46 @@ Verwenden Sie eine WHERE-Bedingung, um Ihre Daten zu filtern.
 
 Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
-{% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}
+### WHERE Clause Editor
 
+The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
+There are 2 options for adding criteria to the WHERE clause:
+- **[Add Criteria]** adds single criteria. <br>
+The default structure for a single criteria with static values is `[Column][Operator][Value]` e.g., *MARC~WERKS = 1000*.
+- **[Add Criteria Group]** adds a group of criteria.<br>
+The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
+
+{: .box-tip }
+**Tip:** Combine multiple criteria and criteria groups to create complex filters e.g., 
+*MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')* extracts only data where the column WERKS equals 1000 and the column PSTAT equals either 'L' or 'LB'.
+
+#### Components of the WHERE Clause Editor
+
+![WHERE-Clause-Builder-Example](/img/content/yunio/where-clause-editor.png){:class="img-responsive"}
+
+The following components are available in the editor:
+
+| Icon  | Component   | Function    | 
+| ------|-------------|-------------| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) | Delete row | deletes a criteria.|
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png) | Move row up | changes the sequence of the criteria. The selected criteria moves up. <br>The sequence of criteria can also be changed with drag&drop. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png) | Move row down | changes the sequence of the criteria. The selected criteria moves down. <br>The sequence of criteria can also be changed with drag&drop.| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png) | Column    | adds a column. Click on the component to select a column from the available tables. | 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-sql.png)| SQL       |  adds an SQL statement.      |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-operator.png)| Operator  | adds an operator e.g., =, <, >, etc. |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png) | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | adds a new criteria after the selected criteria. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | adds a new group of criteria the selected criteria. | 
+
+
+{: .box-note }
+**Note:** When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
+
+- Click on a component to edit it. All areas that are marked green can be edited.<br>
+- To delete a component, click the ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) icon that appears when hovering over the component.<br>
+
+
+{% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}
 
 *****
 #### Weiterführende Links
