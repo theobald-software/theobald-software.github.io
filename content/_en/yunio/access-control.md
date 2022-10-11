@@ -39,7 +39,7 @@ The user cannot make changes to users, access control, or server settings.
 - **No access**: The user can neither login to the Designer, nor run any services.
 This option can be used to temporarily disable users from using yunIO.
 
-### How to Restrict Designer Access
+### How to Restrict Designer and Service Access
 
 1. Assign user rights to existing users, see [Privileges](#privileges).
 2. Navigate to *Settings* and activate Transport Layer Security, see [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).<br>
@@ -47,18 +47,13 @@ This option can be used to temporarily disable users from using yunIO.
 4. Activate *Authenticated*, see [Server Access](#server-access) and restart the yunIO service again.
 5. When connecting to the Designer, you are now prompted to enter user credentials:<br>
 ![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
+6. Navigate to *Services* and copy or download a service definition.<br>
+![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
+7. Call the service using basic authentication. Enter the credentials of a user that is allowed to run services.
 
 {: .box-note }
-**Note:** If you get shut out and can't log in, delete the `permission.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
+**Note:** If you get shut out and can't log in to the Designer, delete the `permission.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
 Restart the yunIO server.
-
-### How to Set Up Basic Authentication for Services
-
-1. Assign user rights to existing users, see [Privileges](#privileges).
-2. Activate authentication as described in [How to Restrict Designer Access](#how-to-restrict-designer-access).
-3. Navigate to *Services* and copy or download a service definition.<br>
-![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
-4. Call the service using basic authentication. Enter the credentials of a user that has is allowed to run services.
 
 {: .box-tip }
 **Tip:** You can also use SAP credentials for basic authentication, see [SAP Connection: Authentication](./sap-connection#authentication).

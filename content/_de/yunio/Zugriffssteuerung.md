@@ -41,9 +41,7 @@ Benutzer können Services ausführen.
 - **No access**: Benutzer haben keinen Zugriff auf den Designer. Services können nicht ausgeführt werden.
 Diese Option kann verwendet werden, um Benutzer zeitweise von der Benutzung von yunIO auszuschließen.
 
-### Zugriff auf den Designer einschränken
-
-Folgen Sie diesen Schritten, um den Designer-Zugriff auf angelegte Benutzer zu beschränken und Basic Authentication für yunIO-Services einzurichten:
+### Zugriff auf Designer und Services einschränken
 
 1. Vergeben Sie den angelegten Benutzern Zugriffsrechte, siehe [Privileges](#privileges).
 2. Navigieren Sie zu *Settings* und aktivieren Sie Transport Layer Security, siehe [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).<br>
@@ -51,21 +49,16 @@ Folgen Sie diesen Schritten, um den Designer-Zugriff auf angelegte Benutzer zu b
 4. Aktivieren Sie **Authenticated** unter [Server Access](#server-access) und starten Sie den yunIO-Service erneut.
 5. Wenn Sie sich auf den Designer verbinden, werden Sie aufgefordert, Ihre Zugangsdaten einzugeben:<br>
 ![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
-
+6. Navigieren Sie zu *Services* und kopieren oder laden Sie eine Service-Definition herunter.<br>
+![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
+4. Rufen Sie den Service unter Verwendung von Basic Authentication auf. 
+Verwenden Sie die Zugangsdaten eines Benutzers mit ausreichenden Zugriffsrechten, um einen Service auszuführen.
 
 {: .box-note }
 **Hinweis:** Wenn Sie sich aussperren und sich nicht mehr einloggen können, löschen Sie die Datei `permission.json` aus Ihrem Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
 Starten Sie anschließend den Server neu.
 
-### Zugriff Services einschränken (Basic Authentication)
-
-1. Vergeben Sie den angelegten Benutzern Zugriffsrechte, siehe [Privileges](#privileges).
-2. Aktivieren Sie die Authentifizierung wie in [Zugriff auf den Designer einschränken](#zugriff-auf-den-designer-einschränken) beschrieben.
-3. Navigieren Sie zu *Services* und kopieren oder laden Sie eine Service-Definition herunter.<br>
-![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
-4. Rufen Sie den Service unter Verwendung von Basic Authentication auf. 
-Verwenden Sie die Zugangsdaten eines Benutzers, der ausreichende Zugriffsrechte hat, um einen Service auszuführen.
-
 {: .box-tip }
 **Tipp:** Sie können auch SAP-Zugangsdaten für die Basic Authentication von Services verwenden, siehe [SAP-Verbindung: Authentifizierung](./sap-verbindungen-anlegen#authentifizierung).
 Die parallele Verwendung von SAP-Zugangsdaten und Zugangsdaten von angelegten Benutzern wird nicht unterstützt.
+
