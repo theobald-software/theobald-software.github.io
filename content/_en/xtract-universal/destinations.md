@@ -79,9 +79,11 @@ Xtract Universal translates the request into a query for the underlying SAP syst
 These include the following destinations: 
 - Alteryx
 - CSV web service
+- JSON web service
 - Qlik
 - Power BI connector
-- OData web service
+- SSRS
+- KNIME
 
 
 #### Push Destinations
