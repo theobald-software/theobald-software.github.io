@@ -23,14 +23,26 @@ Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit an Theobald So
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
 - [Xtract Universal Einrichtung](/docs/sap-customizing/Voraussetzungen_SAPKonnektoren_DE.pdf){:download="Voraussetzungen_SAPKonnektoren_DE"}
 
-
 {: .box-note }
 **Hinweis:** Um Xtract Universal's Report-Komponente zu evaluieren, müssen Sie auf Ihrem SAP-System einen Funktionsbaustein installieren, siehe [Funktionsbaustein für Reports](../sap-customizing/report-funktionsbaustein-installieren). 
 Für die Table-Komponente gibt es optionale Anpassungen, mit denen Sie Limitationen des SAP Standardfunktionsbausteins umgehen können, siehe [Funktionsbaustein für Table](../sap-customizing/funktionsbaustein-fuer-table-extraktion).
+
+### Support
+
+So kontaktieren Sie das Theobald Software Support Team:
+
+1. Öffnen Sie ein Ticket in unserem [Ticket System](https://support.theobald-software.com).
+2. Geben Sie so viele Informationen wie möglich an, damit das Theobald Software Support Team das Problem verstehen und analysieren kann.
+3. Wenn es eine Fehlermeldung gibt, kopieren Sie diese in das Ticket.
+4. Kopieren Sie die Software Logs in das Ticket, siehe [Required Support Information for Xtract Universal](https://support.theobald-software.com/helpdesk/KB/View/14457-required-support-information-for-xtract-universal).
+
+{: .box-warning}
+**Disclaimer:** SAP Versionen, die vom Hersteller nicht mehr unterstützt werden, sind vom Theobald Software Support ausgeschlossen. 
 
 ****
 #### Weiterführende Links
 - [Voraussetzungen](./systemvoraussetzungen)
 - [Lizenzierung](./lizenz)
+- [Tracing Aktivieren](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products)
 
 

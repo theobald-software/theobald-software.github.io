@@ -27,7 +27,20 @@ In case of any questions or doubts, feel free to contact Theobald Software: <br>
 **Note:** To evaluate Xtract Universal's Report component, a custom function module must be installed in your SAP system, see [Custom function module for Report](../sap-customizing/install-report-custom-function-module). 
 Customizations for the Table component are available, but not mandatory, see [Custom function module for Table](../sap-customizing/custom-function-module-for-table-extraction) for more information.
 
+### Support
+
+How to contact the Theobald Software support team:
+
+1. Open a ticket in our [ticket system](https://support.theobald-software.com).
+2. Provide as much information as possible for the Theobald Software support team to understand and analyze the issue.
+3. If there is an error message, copy and paste the error message in the ticket.
+4. Copy and paste the software logs in the ticket, see [Required Support Information for Xtract Universal](https://support.theobald-software.com/helpdesk/KB/View/14457-required-support-information-for-xtract-universal).
+
+{: .box-warning}
+**Disclaimer:** SAP versions that are no longer supported by the manufacturer are also excluded from the Theobald Software support.
+
 ****
 #### Related Links
 - [Requirements](./requirements)
 - [Licensing](./license)
+- [Activate Tracing](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products)
