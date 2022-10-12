@@ -77,10 +77,12 @@ Das bedeutet, wenn ein Konsument (z.B. ein Self Service BI Tool) Daten anfordert
 
 Folgende Destinationen sind Pull-Destinationen: 
 - Alteryx
-- CSV Webservice 
+- CSV web service
+- JSON web service
 - Qlik
 - Power BI connector
-- OData Webservice 
+- SSRS
+- KNIME
 
 #### Push-Destinationen
 
