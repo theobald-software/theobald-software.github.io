@@ -1,6 +1,9 @@
 
 ### Verwendung von WHERE-Bedingung
 
+Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP ABAP Dokumentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abapwhere.htm).
+
+
 1. Navigieren Sie zum Tab **WHERE Clause**.
 2. Geben Sie die WHERE-Bedingung entweder über die manuelle Texteingabe oder über den Editor ein.
 3. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.

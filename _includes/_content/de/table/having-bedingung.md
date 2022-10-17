@@ -1,8 +1,10 @@
 
 ### Verwendung von HAVING-Bedingung
-Die Verwendung der HAVING-Bedingung wird anhand eines Beispiels veranschaulicht. 
-Das folgende Beispiel zeigt, wie viele Materialien einer Materialart (MTART) zugeordnet sind. Nach Anwendung der HAVING-Bedingung zeigt die Vorschau nur die Materialarten mit mehr als 10
- zugeordneten Materialien.
+
+Mit einer HAVING-Bedingung können Zeilengruppen gefiltert werden, siehe [SAP ABAP Dokumentation: SELECT-HAVING](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abaphaving_clause.htm).
+
+Das folgende Beispiel zeigt, wie viele Materialien einer Materialart (MTART) zugeordnet sind. 
+Nach Anwendung der HAVING-Bedingung zeigt die Vorschau nur die Materialarten mit mehr als 10 zugeordneten Materialien.
 
 {: .box-note}
 **Hinweis:** Aggregatfunktionen sind nur für nummerische Felddatentypen verfügbar, deswegen wird das Feld BRGEW (Bruttogewicht) im aufgeführten Beispiel verwendet.
@@ -18,5 +20,5 @@ Das folgende Beispiel zeigt, wie viele Materialien einer Materialart (MTART) zug
 {: .box-note }
 **Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei [Table Joins](./table-joins) der Fall sein.    
 
-
-Bezüglich Syntax und Formeln gelten bei der HAVING-Bedingung dieselben Bestimmungen wie bei der [WHERE-Bedingung](./where-bedingung).
+### Syntax der HAVING-Bedingung  
+Bezüglich Syntax und Formeln gelten bei der HAVING-Bedingung dieselben Bestimmungen wie bei der [WHERE-Bedingung](./where-bedingung#syntax-der-where-bedingung).

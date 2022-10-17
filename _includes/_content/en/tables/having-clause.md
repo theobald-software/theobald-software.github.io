@@ -1,5 +1,8 @@
 
 ### Using HAVING-clause
+
+The HAVING clause can be used to filter groups of rows, see [SAP ABAP Documentation: SELECT-HAVING](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abaphaving_clause.htm).
+
 The following example shows how many materials are assigned to a material type (MTART). 
 After applying the HAVING-clause the preview shows only the material types with more than 10 materials assigned.
 
@@ -16,6 +19,7 @@ After applying the HAVING-clause the preview shows only the material types with 
 {: .box-note }
 **Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g., MAKT~MATNR. This can be the case with [table joins](./table-joins).
 
+### HAVING Clause Syntax 
 
-With regard to syntax and formulas, the same rules apply as for the [WHERE Clause](./where-clause). 
+With regard to syntax and formulas, the same rules apply as for the [WHERE Clause](./where-clause#where-clause-syntax). 
 
