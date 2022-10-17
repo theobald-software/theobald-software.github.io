@@ -27,4 +27,3 @@ To use the different [Destinations](../destinations), an appropriate driver or l
 More information can be found under the requirements section of each destination.
 
 When using specific destinations (e.g. [Tableau](../destinations/tableau)), additional disk space may be required.
-
