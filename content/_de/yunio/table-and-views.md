@@ -60,7 +60,7 @@ Folgende Funktionsbausteine können zur Extraktion von Tabellen verwendet werden
 {: .box-warning }
 **Warnung! Duplikate in der Zielumgebung!** <br>
 Die SAP-Standardbausteine für Tabellenextraktion besitzen keine Pointer-Logik in Tabellenfeldern. 
-Das führt bei großen Tabellen zu schlechter Performance und ggf. zu Dublikaten.
+Das führt bei großen Tabellen zu schlechter Performance und ggf. zu Duplikaten.
 Wir empfehlen daher die Verwendung des Funktionsbausteins [Z_THEO_READ_TABLE](#installation-von-z_theo_read_table) von Theobald Software. 
 
 Berücksichtigen Sie die notwendige [Berechtigung der SAP-Tabelle](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
