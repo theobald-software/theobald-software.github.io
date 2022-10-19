@@ -145,7 +145,7 @@ Check the existence of the extended column *Extraction_Date*  in the SQL Server 
 
 ![Custom_SQL_SQL_Server_Ausgabe](/img/content/sql_server_ansicht_extraction_date_spalte.png){:class="img-responsive"}
 
-#### Creation of the SQL Table ExtractionStatistics
+### Creation of the SQL Table ExtractionStatistics
 
 The table "ExtractionStatistics" provides an overview and status of the executed Xtract Universal extractions.
 
