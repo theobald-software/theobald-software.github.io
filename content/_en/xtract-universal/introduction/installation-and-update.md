@@ -105,8 +105,8 @@ settings to another server, follow the instructions described in section [Backup
 #### Update Preparation
 
 {: .box-tip }
-**Tip:** Subscribe via [email](mailto:info@theobald-software.com) to Theobald Software’s regular newsletter that
-informs about changes in the version history and release notes.
+**Tip:** Subscribe via [email](mailto:news@theobald-software.com) to Theobald Software’s technical newsletter that
+informs about new feature releases, knowledge base articles and and release notes.
 
 1. Check if you have a working test environment with a valid license and maintenance.
 2. Make sure that the test environment is a copy of the current production environment.

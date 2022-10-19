@@ -110,7 +110,7 @@ Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie 
 #### Update-Vorbereitung
 
 {: .box-tip }
-**Tipp:** Abonnieren Sie per [E-Mail](mailto:info@theobald-software.com) den regelmäßig erscheinenden Newsletter von Theobald Software, der Sie über Änderungen in der Versionshistorie und Veröffentlichungshinweise (Release Notes) informiert.
+**Tipp:** Abonnieren Sie per [E-Mail](mailto:news@theobald-software.com) den technischen Newsletter von Theobald Software, der Sie über neue Software Features, Knowledge Base Artikel und Veröffentlichungshinweise (Release Notes) informiert.
 
 1. Prüfen Sie, ob Sie über eine funktionierende Testumgebung mit einer gültigen Lizenz und Wartung verfügen.
 2. Stellen Sie sicher, dass die Testumgebung eine Kopie der aktuellen Produktivumgebung ist.
