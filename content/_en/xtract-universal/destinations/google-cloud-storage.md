@@ -128,9 +128,13 @@ Select the required file format between "CSV", "JSON" and "Parquet".
 The settings for file type "CSV" correspond to the [Flat File CSV settings](./csv-flat-file).
 
 #### Parquet Settings
-**Compatibility mode**<br>
-You can choose between *Pure* and *Spark* for the compatibility mode.
-Spark does not support the data types used in pure mode, so other data types need to be used. In spark mode special characters and spaces are replaced with an underscore `_`.
+The following compatibility modes are available:
+- *Pure* 
+- *Spark* 
+- *BigQuery*
+
+Spark does not support the data types used in pure mode, so other data types need to be used. <br>
+In spark mode special characters and spaces are replaced with an underscore `_`.
 
 | SAP | Pure | Spark |
 |------|-------------|-------|

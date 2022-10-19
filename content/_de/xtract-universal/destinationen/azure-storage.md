@@ -169,14 +169,19 @@ Die Formate *Parquet* und *CSV* sind verfügbar.
 Die Einstellungen für den Dateityp *CSV* entsprechen den allgemeinen [Flat File CSV Einstellungen](./csv-flat-file).
 
 #### Parquet Settings
-**Compatibility mode**<br>
-Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen.
-Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden. Sonderzeichen und Leerzeichen werden im Spark-Modus durch einen Unterstrich `_` ersetzt. 
+
+Die folgenden Kompatibilitätsmodi sind verfügbar:
+- *Pure* 
+- *Spark* 
+- *BigQuery*
+
+Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden. <br>
+Sonderzeichen und Leerzeichen werden im Spark-Modus durch einen Unterstrich `_` ersetzt. 
 
 | SAP | Pure | Spark |
 |------|-------------|-------|
-| INT1 | UINT_8 | INT16 |
-| TIMS | TIME_MILLIS | UTF8 |
+| INT1 | UINT_8 | INT16 | 
+| TIMS | TIME_MILLIS | UTF8 | 
 
 ### Retry- und Rollback-Funktion
 
