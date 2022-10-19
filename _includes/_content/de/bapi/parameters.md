@@ -68,7 +68,7 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 
 ![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"}
 
-#### Auf Metadaten der Tabelle zugreifen (1)
+### Auf Metadaten der Tabelle zugreifen (1)
 
 Klicken Sie auf das ![glasses](/img/content/icons/glasses.png) Symbol, um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
 Wenn der Funktionsbaustein in SAP bearbeitet wird, aktualisieren Sie die Daten über **[Refresh metadata**.<br>
@@ -76,12 +76,12 @@ Wenn der Funktionsbaustein in SAP bearbeitet wird, aktualisieren Sie die Daten �
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
 
 
-#### Der Ausgabe Tabellen hinzufügen (2)
+### Der Ausgabe Tabellen hinzufügen (2)
 
 Aktivieren Sie die Checkbox in der Ausgabespalte, um Tabellen der Ausgabe hinzuzufügen.
 ![BAPI table output](/img/content/BAPI-Table-Output.png){:class="img-responsive"}
 
-#### Tabellen bearbeiten (3)
+### Tabellen bearbeiten (3)
 
 1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol, um eine Tabelle zu bearbeiten. Das Fenster "Edit Table Contents" öffnet sich.
 2. Klicken Sie auf **[Add]**, um neue Parameter hinzuzufügen.

@@ -65,17 +65,17 @@ To use the filtering function, enter text in the headers of the columns **Name**
 
 ![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"}
 
-#### Access Metadata of Tables (1)
+### Access Metadata of Tables (1)
 Click the ![glasses](/img/content/icons/glasses.png) icon to display the metadata of the selected table including the name and the data type of all fields. <br> 
 If the function module was edited in SAP, you can refresh the data by clicking **Refresh metadata**<br>
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
 
-#### Add Tables to Output (2)
+### Add Tables to Output (2)
 
 Mark the checkbox in the output column to add a table to the output.<br> 
 ![BAPI table output](/img/content/BAPI-Table-Output.png){:class="img-responsive"}
 
-#### Edit Tables (3)
+### Edit Tables (3)
 
 When using a structure, a value for each scalar field can be set similarly to a scalar field. 
 Setting a single value or a parameter for the whole structure is not possible.
