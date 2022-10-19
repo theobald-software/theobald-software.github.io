@@ -147,7 +147,7 @@ WHERE [Extraction_Date] IS NULL;
 
 ![Custom_SQL_SQL_Server_Ausgabe](/img/content/sql_server_ansicht_extraction_date_spalte.png){:class="img-responsive"}
 
-#### Anlage SQL Tabelle ExtractionStatistics
+### Anlage SQL Tabelle ExtractionStatistics
 
 Die Tabelle "ExtractionStatistics" ermöglicht eine Gesamtübersicht und Status der ausgeführten Xtract Universal Extraktionen.
 
