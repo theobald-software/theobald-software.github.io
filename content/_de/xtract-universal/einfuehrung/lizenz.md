@@ -40,7 +40,10 @@ Um die reguläre Lizenz zu installieren, legen Sie die XtractUniversalLicense.js
 `C:\Program Files\XtractUniversal` <br>
  ![XU_license](/img/content/xu/xu_json_license.png ){:class="img-responsive"}
 
-Ein Neustart des Xtract Universal Service ist nicht notwendig.
+Ein Neustart des Xtract Universal Service ist nicht notwendig.<br>
+Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom Xtract Universal Designer  **[Help] > [Info]** oder drücken Sie F12.<br>
+
+![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
 
 
 ### Lizenzen auf einen neuen Server übertragen
@@ -48,21 +51,6 @@ Da Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Se
 Kontaktieren Sie unseren Vertrieb unter [sales@theobald-software.com](mailto:sales@theobald-software.com) und teilen Sie uns den Namen des neuen Servers mit. 
 
 Für weitere Informationen zum Thema Migration, siehe [Migration auf eine andere Maschine](../fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).
-
-
-### About Xtract Universal - Info-Fenster
-
-{: .box-tip }
-**Tipp:** Um Ihre aktuellen Lizenzdaten einzusehen, wählen Sie in der Hauptmenüleiste vom Xtract Universal Designer  **[Help] > [Info]** oder drücken Sie F12.<br>
-
-![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
-
-Der *About* Tab des Infofensters enthält nützliche Links zum Kundenportal, der Knowledge Base, Online Hilfe und zum Support. <br>
-![Abot](/img/content/about-xu.png){:class="img-responsive"}
-
-### Wartung
-Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/xtract-universal/preise-und-bestellungen/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
-Bei technischen Problemen wenden Sie sich an das [Support-Team](https://support.theobald-software.com).
 
 
 ****

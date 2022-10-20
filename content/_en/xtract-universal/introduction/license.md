@@ -52,27 +52,17 @@ For installing the regular license, place the regular XtractUniversalLicense.jso
  <br>
  ![XU_license](/img/content/xu/xu_json_license.png ){:class="img-responsive"}
  
-A restart of the Xtract Universal service is not necessary.
+A restart of the Xtract Universal service is not necessary.<br>
+To inspect your current license data, go to the main menu bar of the Xtract Universal Designer and choose **[Help] > [Info]** or press F12.
+
+![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
+
 
 ### Moving a License to a new Server
 When moving your setup to a new server, a new license file must be issued for that server.
 Contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com) to let us know the name of the new server.
 
 For more information on the migration process, see [Migration to a Different Machine](../advanced-techniques/backup-and-migration#migration-to-a-different-machine).
-
-### About Xtract Universal - Info Window
-
-{: .box-tip }
-**Tip:** To inspect your current license data, go to the main menu bar of the Xtract Universal Designer and choose **[Help] > [Info]** or press F12.
-
-![Demo_License](/img/content/xu/xu_demo_license.png){:class="img-responsive"}
-
-The *About* tab of the info window contains useful links to the customer portal, knowledge base, Online Help and the support. <br> 
-![Abot](/img/content/about-xu.png){:class="img-responsive"}
-
-### Maintenance
-General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/xtract-universal/pricing-and-order) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
-In case of technical difficulties, contact the [support team](https://support.theobald-software.com).
 
 
 ****
