@@ -27,3 +27,7 @@ Die folgenden Artikel zeigen Ihnen, wie Sie einen yunIO-Service mit Microsoft Po
 - [Integrating a yunIO Scenario with Power Automate and AI Builder](https://kb.theobald-software.com/yunio/integration-scenario-with-yunio-and-the-ai-builder)
 - [How to use yunIO with Power Automate to create multiple items in SAP](https://kb.theobald-software.com/yunio/yunio-power-automate-with-create-multiple-items)
 - [How to use yunIO to populate Drop Down Controls in Power Apps](https://kb.theobald-software.com/yunio/populating-drop-down-controls-in-power-apps)
+
+### Integration mit Nintex Automation Cloud
+Die folgenden Artikel zeigen Ihnen, wie Sie einen yunIO-Service mit Nintex Automation Cloud integrieren können:
+- [Integrating a yunIO Service with Nintex](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex)
