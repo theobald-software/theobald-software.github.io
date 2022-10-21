@@ -22,7 +22,7 @@ The metadata table has the followig schema:
 | NAME     | String                        | column name              |
 | DESC     | String                        | column description       |
 | TYPE     | single-digit ABAP datatype ID | ABAP datatype            |
-| LENGTH   | Integer                       | column length            |
+| LENGTH   | Integer                       | column width            |
 | DECIMALS | Integer                       | number of decimal places |
 | KEY      | boolean                       | column is Primary Key of extraction |
 

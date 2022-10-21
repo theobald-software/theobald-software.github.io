@@ -20,15 +20,13 @@ By clicking **[Automatically detect columns]** the report is executed based on t
 
 ![Report-automatic-columns](/img/content/Report_new_automatic_columns.png){:class="img-responsive"}
 
-
 **Dynamic column width and offset**<br>
-You can use this setting when report columns can be detected automatically, see *Automatically Detect Columns*. If *Dynamic column width and offset* is active, the column length and offset is adjusted dynamically at report runtime. This can be required for reports that have varying column widths depending on the report's selection criteria.
+If this option is active, the column width and offset is adjusted dynamically at report runtime. 
+This can be required for reports that have varying column widths depending on the report's selection criteria.
 
 
 ### Define Columns manually
 When automatic column detection is not possible, the report's column names, widths and offsets must be set manually.
-
-Report columns can be manually defined as follows:
 
 1. Make sure no columns are defined yet. Go to the *Columns* section and delete all columns by clicking on the ![trashbin](/img/content/icons/trashbin.png) icon.
 ![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}

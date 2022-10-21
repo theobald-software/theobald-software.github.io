@@ -23,10 +23,10 @@ Wenn die Spalten automatisch detektiert werden können, werden Spaltenname, Spal
 
 ![Report-automatic-columns](/img/content/Report_new_automatic_columns.png){:class="img-responsive"}
 
-
 **Dynamic column width and offset**<br>
-Sie können diese Einstellung verwenden, wenn die Spalteneinteilung automatisch durchgeführt wird, siehe *Automatically Detect Columns*.
-Wenn *Dynamic column width and offset* aktiv ist, können die Spaltenbreite und der Offset der Spalten zur Laufzeit dynamisch angepasst werden.
+Wenn diese Option aktiv ist, werden die Spaltenbreite und der Offset der Spalten zur Laufzeit dynamisch angepasst.
+Das kann notwendig sein, wenn ein Report dynamische Spaltenbreiten hat.
+
 
 ### Spalten manuell definieren
 Wenn eine automatische Spalteneinteilung nicht möglich ist, müssen Spaltenname, Spaltenbreite und Offset manuell definiert werden.

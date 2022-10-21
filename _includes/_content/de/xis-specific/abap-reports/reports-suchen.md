@@ -31,10 +31,12 @@ In diesem Fall muss die *AttachesSapGui* Eigenschaft in den **Expert Options** d
 
 ### Spalten definieren
 
-1. Klicken Sie auf **[Automatically detect columns]** um den Report basierend auf der ausgewählten Variante oder Selektion auszuführen und automatisch Spalten zu detektieren.
+1. Wenn Ihr Report variierende Spaltenbreiten hat, aktivieren Sie die Option **Dynamic column width and offset**.
+Die Spaltenbreite und der Offset der Spalten werden dann zur Laufzeit dynamisch angepasst.
+2. Klicken Sie auf **[Automatically detect columns]** um den Report basierend auf der ausgewählten Variante oder Selektion auszuführen und automatisch Spalten zu detektieren.
 ![Report-automatic-columns](/img/content/Report_new_automatic_columns.png){:class="img-responsive"}
-2. Klicken Sie auf **[Load Preview]**, um die Spalten im Vorschaubildschirm anzuzeigen.
-3. Prüfen Sie, ob die Spalteneinteilung korrekt ist. Wenn eine automatische Spalteneinteilung nicht möglich ist, müssen Spaltenname, Spaltenbreite und Offset manuell definiert werden, siehe [Spalten manuell definieren](./report-columns-define#spalten-manuell-definieren).
+3. Klicken Sie auf **[Load Preview]**, um die Spalten im Vorschaubildschirm anzuzeigen.
+4. Prüfen Sie, ob die Spalteneinteilung korrekt ist. Wenn eine automatische Spalteneinteilung nicht möglich ist, müssen Spaltenname, Spaltenbreite und Offset manuell definiert werden, siehe [Spalten manuell definieren](./report-columns-define#spalten-manuell-definieren).
 
 {: .box-note }
 **Hinweis:** Für detaillierte Informationen zur automatischen und manuellen Definition von Spalten, siehe [Spalten Definieren](./report-columns-define).
