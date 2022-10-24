@@ -131,10 +131,10 @@ Die folgenden Kompatibilitätsmodi sind verfügbar:
 Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden. <br>
 Sonderzeichen und Leerzeichen werden im Spark-Modus durch einen Unterstrich `_` ersetzt. 
 
-| SAP | Pure | BigQuery | Spark |
+| SAP | Pure / BigQuery | Spark |
 |------|-------------|-------|-------|
-| INT1 | UINT_8 | UINT_8| INT16 |
-| TIMS | TIME_MILLIS | TIME_MILLIS | UTF8 |
+| INT1 | UINT_8 | INT16 |
+| TIMS | TIME_MILLIS | UTF8 |
 
 ![xu-google-cloud-con-02](/img/content/xu/googlecloudstorage/xu-google-cloud-con-02.png){:class="img-responsive"}
 
