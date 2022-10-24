@@ -178,10 +178,10 @@ The following compatibility modes are available:
 Spark does not support the data types used in pure mode, so other data types need to be used.<br>
 In spark mode special characters and spaces are replaced with an underscore `_`.
 
-| SAP | Pure | Spark |
-|------|-------------|-------|
-| INT1 | UINT_8 | INT16 |
-| TIMS | TIME_MILLIS | UTF8 |
+| SAP | Pure | BigQuery | Spark |
+|------|-------------|-------|-------|
+| INT1 | UINT_8 | UINT_8| INT16 |
+| TIMS | TIME_MILLIS | TIME_MILLIS | UTF8 |
 
 ### Connection Retry and Rollback
 
