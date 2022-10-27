@@ -44,8 +44,9 @@ Falls erforderlich, ermöglicht das Backup es Ihnen leicht zur vorherigen Produk
 Mehr Details dazu finden Sie auch im Abschnitt [Installation und Update](../einfuehrung/installation-und-update).
 
 #### Wie erstelle ich ein Backup?
-Kopieren Sie das komplette `config`-Verzeichnis, der Maschine auf der der Xtract Universal Service läuft:  `C:\Program Files\XtractUniversal\config` (standardmäßig). 
-Optional, können Sie auch das komplette`logs`-Verzeichnis (`C:\Program Files\XtractUniversal\logs` standardmäßig) kopieren, um ein Backup der Log-Dateien zu erstellen.
+1. Kopieren Sie das komplette `config`-Verzeichnis der Maschine auf der der Xtract Universal Service läuft. Das Standardverzeichnis des `config` Ordners ist `C:\Program Files\XtractUniversal\config`. 
+2. Optional: kopieren Sie das `logs`-Verzeichnis (`C:\Program Files\XtractUniversal\logs`), um ein Backup der Log-Dateien zu erstellen.
+3. Um ein Backup Ihrer Lizenz zu erstellen, kopieren Sie die Datei `XtractUniversalLicense.json`.
 
 {: .box-warning }
 **Warnung! Datensicherheit.** <br>
@@ -63,8 +64,7 @@ Sowohl `config`- als auch `logs`-Verzeichnisse können sensible Informationen en
 Das Wiederherstellen des Backups des Konfigurationsverzeichnisses (`config`) ersetzt die bestehende Konfiguration. Stellen Sie sicher, dass Sie die vorhandenen Dateien entfernen, bevor Sie die Backups wiederherstellen.
 
 ### Manuelle Migration auf eine andere Maschine
-Konfigurationsdateien können teilweise oder vollständig migriert werden.
-
+Konfigurationsdateien können teilweise oder vollständig migriert werden.<br>
 Je nach Szenario kann es sinnvoll sein, eine Teilmigration durchzuführen - z.B. wenn Sie Extraktionen von einer Test- in eine Produktivumgebung transportieren.<br>
 Wenn Sie eine Maschine vollständig ersetzen, führen Sie eine vollständige Migration durch.
 
@@ -72,11 +72,12 @@ Wenn Sie eine Maschine vollständig ersetzen, führen Sie eine vollständige Mig
 **Hinweis**: Da Xtract Universal-Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
 Kontaktieren Sie dafür unseren Vertrieb unter [sales@theobald-software.com](mailto:sales@theobald-software.com).
 
-**Voraussetzung**: <br>
+#### Voraussetzung <br>
 Die Xtract Universal Versionen müssen auf beiden Maschinen übereinstimmen. <br>
 Installieren Sie die `XtractUniversalSetup.exe` aus dem Xtract Universal Installationsverzeichnis (`C:\Program Files\XtractUniversal`) der aktuellen Maschine auf der anderen Maschine, um zu gewährleisten, dass die Versionen übereinstimmen.
 Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer und navigieren Sie zu **Help > Info** oder drücken Sie **[F12]**.
 
+#### Migration
 1. Erstellen Sie ein Backup des `config`-Verzeichnisses der aktuellen Maschine. Das Standardverzeichnis des `config` Ordners ist `C:\Program Files\XtractUniversal\config`.
 2. Entscheiden Sie, ob Sie eine teilweise oder eine vollständige Migration benötigen. <br> 
 Für eine vollständige Migration können Sie das gesamte `config`-Verzeichnis auf der anderen Maschine wiederherstellen.<br>

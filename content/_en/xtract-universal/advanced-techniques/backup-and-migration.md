@@ -44,9 +44,9 @@ Use the `config` directory for setting up a [version control](#version-control) 
 A backup allows you to easily switch back to the previous product version, if needed. See also section [Installation and Update](../introduction/installation-and-update).
 
 #### How to Create a Backup
-Copy the complete `config` directory (`C:\Program Files\XtractUniversal\config` by default) of the machine running the Xtract Universal Service and store the files in safe and secure locations.
-Optionally, copy the complete `logs` directory (`C:\Program Files\XtractUniversal\logs` by default) to create a backup of the log files. 
-To backup your licence, create a copy of your `XtractUniversalLicense.json` file.
+1. Copy the complete `config` directory (`C:\Program Files\XtractUniversal\config` by default) of the machine running the Xtract Universal Service and store the files in safe and secure locations.
+2. Optional: copy the complete `logs` directory (`C:\Program Files\XtractUniversal\logs` by default) to create a backup of the log files. 
+3. To backup your license, create a copy of your `XtractUniversalLicense.json` file.
 
 {: .box-warning }
 **Warning! Data security**. <br>
@@ -56,15 +56,14 @@ Both `config` and `logs` directories may contain sensitive information.
 
 1. To restore the configuration files, remove the `config` directory from the program directory (`C:\Program Files\XtractUniversal` by deafult) of the machine running the Xtract Universal Service.
 2. Copy the backup of the `config` directory into the program directory.
-3. To restore the licence replace the `XtractUniversalLicense.json` file within the program directory with the backup.
+3. To restore the license, replace the `XtractUniversalLicense.json` file within the program directory with the backup.
 
 {: .box-warning}
 **Warning! Data Loss!** <br>
 Restoring the backup of the `config` directory replaces the exisiting configuration. Make sure to remove the existing files before restoring the backups.
 
 ### Manual Migration to a Different Machine
-Configuration files can be migrated partially or entirely (full migration).
-
+Configuration files can be migrated partially or entirely (full migration).<br>
 Depending on your scenario it can make sense to conduct a partial migration - e.g., if you transport extractions from a test to a production environment.
 When replacing a machine completely, conduct a full migration.
 
@@ -72,11 +71,12 @@ When replacing a machine completely, conduct a full migration.
 **Note**: When migrating to a new server, a new license file must be issued for that server.
 Contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com) for more information.
 
-**Prerequisite**: <br>
+#### Prerequisite 
 The same Xtract Universal versions must be installed on both machines.<br>
 To install the matching version on the different machine, use the `XtractUniversalSetup.exe` from the program directory (`C:\Program Files\XtractUniversal`) of the current machine.
 To check the version of your product, open the Designer and navigate to **Help > Info** or press **[F12]**.
 
+#### How to Migrate
 1. Create a backup of the `config` directory of the current machine. The default directory of the `config` folder is `C:\Program Files\XtractUniversal\config`.
 2. Decide whether you need a partial or a full migration. <br> 
 For a full migration restore the entire `config` directory on the different machine.<br>
