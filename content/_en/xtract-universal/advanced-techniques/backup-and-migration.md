@@ -68,23 +68,26 @@ Configuration files can be migrated partially or entirely (full migration).
 Depending on your scenario it can make sense to conduct a partial migration - e.g., if you transport extractions from a test to a production environment.
 When replacing a machine completely, conduct a full migration.
 
-{: .box-note }																   
-**Note:** When you update your test environment by copying single `config` folders from the production environment, the `version.txt` file must be copied, too. 
-The `version.txt`is located in the `config` folder.
-
-**Prerequisite**: Xtract Universal versions installed on both machines match.<br>
-To install the matching version on the different machine, use the `XtractUniversalSetup.exe` from the program directory (`C:\Program Files\XtractUniversal`) of the current machine.
-To check the version of your product, open the Designer and navigate to **Help > Info** or press **[F12]**.
-
-1. Create a backup of the `config` directory of the current machine.
-2. Decide whether you need a partial or a full migration. <br> 
-For a full migration you can restore the entire `config` directory on the different machine.
-You can alternatively restore parts of the backup, by copying e.g., only the destinations or extractions directories.
-3. Restart the [Xtract Universal Service](../server/start-server), when performing a full migration or copying the `server` directory onto the different machine.
-
 {: .box-note }
 **Note**: When migrating to a new server, a new license file must be issued for that server.
 Contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com) for more information.
+
+**Prerequisite**: <br>
+The same Xtract Universal versions must be installed on both machines.<br>
+To install the matching version on the different machine, use the `XtractUniversalSetup.exe` from the program directory (`C:\Program Files\XtractUniversal`) of the current machine.
+To check the version of your product, open the Designer and navigate to **Help > Info** or press **[F12]**.
+
+1. Create a backup of the `config` directory of the current machine. The default directory of the `config` folder is `C:\Program Files\XtractUniversal\config`.
+2. Decide whether you need a partial or a full migration. <br> 
+For a full migration restore the entire `config` directory on the different machine.<br>
+For a partial migration restore parts of the backup, by copying subfolders from the `config` directory, e.g., only destination or extraction directories.
+When copying single `config` folders, the `version.txt` file must be copied, too. The `version.txt`is located in the `config` folder.
+3. Restart the [Xtract Universal Service](../server/start-server), when performing a full migration or copying the `server` directory onto the different machine.
+
+{: .box-note }
+**Note:** As of Xtract Universal version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the XU service.
+The passwords can only be accessed from the same service account, when restoring a backup or moving the files to a different machine. 
+If the service account changes, passwords need to be re-entered manually.
 
 ****
 #### Related Links

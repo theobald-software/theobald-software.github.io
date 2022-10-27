@@ -13,13 +13,13 @@ progressstate: 5
 
 ### Versionskontrolle
 
-Eine Versionskontrolle kann verwendet werde, um den Datentransfer zwischen Test- und Produktivumgebung zu überwachen.<br>
+Eine Versionskontrolle kann verwendet werden, um den Datentransfer zwischen Test- und Produktivumgebung zu überwachen.<br>
 Git oder Azure DevOps sind Systeme zur Versionskontrolle, die sicherstellen dass:
 - der Einsatz neuer Extraktionen, Quellen und Destinationen **keinen** Schaden in der Produktivumgebung anrichten können.
 - Änderungen durch Benutzerrechte und andere Funktionen im Vorfeld geprüft werden können.
 - Änderungen schnell und einfach rückgängig gemacht werden können.
 
-Für mehr Informationen zum Einrichten einer Versionskontrolle mit Xtract Universal, siehe [Knowledge Base Artikel: Deploying Extractions Using Git Version Control](https://kb.theobald-software.com/xtract-universal/deploying-extractions-using-Git-version-control).
+Mehr Informationen zum Einrichten einer Versionskontrolle mit Xtract Universal finden Sie im Knowledge Base Artikel [Deploying Extractions Using Git Version Control](https://kb.theobald-software.com/xtract-universal/deploying-extractions-using-Git-version-control).
 
 ### Konfigurationsdateien 
 Alle Einstellungen für Extraktionen, Quellen (Sources), Destinationen usw. werden im Unterverzeichnis `config` gespeichert (`C:\Program Files\XtractUniversal\config`).
@@ -68,24 +68,27 @@ Konfigurationsdateien können teilweise oder vollständig migriert werden.
 Je nach Szenario kann es sinnvoll sein, eine Teilmigration durchzuführen - z.B. wenn Sie Extraktionen von einer Test- in eine Produktivumgebung transportieren.<br>
 Wenn Sie eine Maschine vollständig ersetzen, führen Sie eine vollständige Migration durch.
 
-{: .box-note }																   
-**Hinweis:** Wenn Sie Ihre Testumgebung aktualisieren und einzelne `config` Ordner aus der Produktionsumgebung in die Testumgebung kopieren, stellen Sie sicher, dass Sie die `version.txt` Datei mit kopieren.
-Die `version.txt` Datei befindet sich im `config` Ordner.
-
-
-**Voraussetzung**: Die Xtract Universal Versionen stimmen auf beiden Maschinen überein. <br>
-Installieren Sie die `XtractUniversalSetup.exe` aus dem Xtract Universal Installationsverzeichnis (`C:\Program Files\XtractUniversal`) der aktuellen Maschine auf der anderen Maschine, um zu gewährleisten, dass die Versionen übereinstimmen.
-Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer und navigieren Sie zu **Help > Info** oder drücken Sie **[F12]**.
-
-1. Erstellen Sie ein Backup des `config`-Verzeichnisses der aktuellen Maschine.
-2. Entscheiden Sie, ob Sie eine teilweise oder eine vollständige Migration benötigen. <br> 
-Für eine vollständige Migration können Sie das gesamte `config`-Verzeichnis auf der anderen Maschine wiederherstellen.
-Sie können alternativ Teile des Backups wiederherstellen, indem Sie z.B. nur die Destinations- oder Extractions-Verzeichnisse kopieren.
-3. Starten Sie den [Xtract Universal Service](../server/server-starten) neu, wenn Sie eine vollständige Migration durchführen oder das Verzeichnis `server` auf die andere Maschine kopieren.
-
 {: .box-note }
 **Hinweis**: Da Xtract Universal-Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
 Kontaktieren Sie dafür unseren Vertrieb unter [sales@theobald-software.com](mailto:sales@theobald-software.com).
+
+**Voraussetzung**: <br>
+Die Xtract Universal Versionen müssen auf beiden Maschinen übereinstimmen. <br>
+Installieren Sie die `XtractUniversalSetup.exe` aus dem Xtract Universal Installationsverzeichnis (`C:\Program Files\XtractUniversal`) der aktuellen Maschine auf der anderen Maschine, um zu gewährleisten, dass die Versionen übereinstimmen.
+Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer und navigieren Sie zu **Help > Info** oder drücken Sie **[F12]**.
+
+1. Erstellen Sie ein Backup des `config`-Verzeichnisses der aktuellen Maschine. Das Standardverzeichnis des `config` Ordners ist `C:\Program Files\XtractUniversal\config`.
+2. Entscheiden Sie, ob Sie eine teilweise oder eine vollständige Migration benötigen. <br> 
+Für eine vollständige Migration können Sie das gesamte `config`-Verzeichnis auf der anderen Maschine wiederherstellen.<br>
+Für eine teilweise Migration können Sie Teile des Backups wiederherstellen, indem Sie nur Unterordner von `config` kopieren, z.B. nur die Destinations- oder Extraktions-Verzeichnisse.
+Wenn Sie einzelne `config` Ordner kopieren, müssen Sie die `version.txt` Datei mit kopieren.
+Die `version.txt` Datei befindet sich im `config` Ordner.
+3. Starten Sie den [Xtract Universal Service](../server/server-starten) neu, wenn Sie eine vollständige Migration durchführen oder das Verzeichnis `server` auf die andere Maschine kopieren.
+
+{: .box-note }
+**Hinweis:** Ab Xtract Universal Version 5.0 werden SAP Passwörter anhand eines Schlüssels verschlüsselt, der von dem Windows Dienstkonto abgeleitet wird, unter dem der Xtract Universal Dienst läuft.
+Auf die Passwörter kann man nur von diesem Dienstkonto aus zugreifen. Achten Sie darauf, wenn Sie Backups aufspielen oder Dateien auf eine andere Maschine verschieben.
+Wenn Sie das Dienstkonto wechseln, müssen Sie Passwörter manuell neu eingeben.
 
 ****
 #### Weiterführende Links
