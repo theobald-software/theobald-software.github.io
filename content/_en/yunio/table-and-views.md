@@ -31,14 +31,17 @@ For more information, see the knowledge base article on [SAP User Rights: Table]
 5. Select a source file from the list of available search results (3). 
 The extraction settings of *SAP Table and Views* open automatically.<br>
 
+### Settings
 The *SAP Table or View* settings consist of the following subsections:
 
-![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive" width="750px"}
+![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
 
 - [Table or View](#table-or-view) (4) displays the name and description of the selected SAP Table or View.
 - [Advanced Settings](#advanced-settings) (5) define how data is extract from SAP.
 - [Output Columns](#output-columns) (6) define which columns are extracted.
-- [WHERE-Clause](#where-clause) (7) offers an optional data filter.
+- [WHERE Clause](#where-clause) (7) offers an optional data filter.
+- [WHERE Clause Editor](#where-clause-editor) (8) offers a toolkit for creating WHERE clauses.
+
 
 ### Table or View
 
@@ -129,6 +132,49 @@ Use a WHERE clause to filter your data.
 | (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
 
 For more information on the OpenSQL syntax see [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm). 
+
+### WHERE Clause Editor
+
+The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
+There are 2 options for adding criteria to the WHERE clause:
+- **[Add Criteria]** adds single criteria. <br>
+The default structure for a single criteria with static values is `[Column][Operator][Value]` e.g., *MARC~WERKS = 1000*.
+- **[Add Criteria Group]** adds a group of criteria.<br>
+The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
+
+{: .box-tip }
+**Tip:** Combine multiple criteria and criteria groups to create complex filters e.g., 
+*MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')* extracts only data where the column WERKS equals 1000 and the column PSTAT equals either 'L' or 'LB'.
+
+
+#### Components of the WHERE Clause Editor
+
+![WHERE-Clause-Builder-Example](/img/content/yunio/where-clause-editor.png){:class="img-responsive"}
+
+The following components are available in the editor:
+
+| Icon  | Component   | Function    | 
+| ------|-------------|-------------| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) | Delete row | deletes a criteria.|
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png) | Move row up | changes the sequence of the criteria. The selected criteria moves up. <br>The sequence of criteria can also be changed with drag&drop. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png) | Move row down | changes the sequence of the criteria. The selected criteria moves down. <br>The sequence of criteria can also be changed with drag&drop.| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png) | Column    | adds a column. Click on the component to select a column from the available tables. | 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-sql.png)| SQL       |  adds an SQL statement.      |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-operator.png)| Operator  | adds an operator e.g., =, <, >, etc. |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png) | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | adds a new criteria after the selected criteria. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | adds a new group of criteria the selected criteria. | 
+
+When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
+
+#### Editing and Deleting Components
+
+- Click on a component to edit it. All areas that are marked green can be edited.<br>
+- To delete a component, click the ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) icon that appears when hovering over the component.<br>
+
+{: .box-note }
+**Note:** Where Clauses created with the WHERE Clause Editor cannot be parameterized.
+The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
 
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 
