@@ -135,45 +135,46 @@ For more information on the OpenSQL syntax see [SAP help site - Select WHERE](ht
 
 ### WHERE Clause Editor
 
-Der WHERE Clause Editor stellt ein Toolkit zur Verfügung, mit dem WHERE-Bedingungen auch ohne nähere Kenntnisse über die Syntax erstellt werden können.
-Es gibt 2 Optionen, um der WHERE-Bedingung neue Kriterien hinzuzufügen:
-- **[Add Criteria]** fügt ein einzelnes Kriterium hinzu. <br>
-Der Standardaufbau für ein Kriterium mit statischen Werten ist `[Spalte][Operator][Wert]`, z.B. *MARC~WERKS = 1000*.
-- **[Add Criteria Group]** fügt eine Gruppe hinzu, die mehrere Kriterien beinhaltet.<br>
-Der Standardaufbau für eine Kriteriengruppe ist `([Spalte1][Operator1][Wert1][Logik][Spalte2][Operator2][Wert2])`, z.B. *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
+The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
+There are 2 options for adding criteria to the WHERE clause:
+- **[Add Criteria]** adds single criteria. <br>
+The default structure for a single criteria with static values is `[Column][Operator][Value]` e.g., *MARC~WERKS = 1000*.
+- **[Add Criteria Group]** adds a group of criteria.<br>
+The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
 
 {: .box-tip }
-**Tipp:** Kombinieren Sie einzelne Kriterien mit Kriteriengruppen, um komplexe Filter zu erstellen. <br>
-Beispiel:
-*MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')* extrahiert nur Daten, bei denen die Spalte WERKS einen Wert von 1000 hat und die Spalte PSTAT entweder den Wert 'L' oder 'LB' hat.
+**Tip:** Combine multiple criteria and criteria groups to create complex filters e.g., 
+*MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')* extracts only data where the column WERKS equals 1000 and the column PSTAT equals either 'L' or 'LB'.
 
 
-#### Komponenten des WHERE Clause Editors
+#### Components of the WHERE Clause Editor
 
 ![WHERE-Clause-Builder-Example](/img/content/yunio/where-clause-editor.png){:class="img-responsive"}
 
-Folgende Komponenten stehen im Editor zur Verfügung:
+The following components are available in the editor:
 
-| Symbol | Komponente    | Funktion          | 
-|-----|-------------- |-------------| 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png)| Delete row   | löscht ein Kriterium. | 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png)| Move row up       | ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach oben verschoben. <br>Die Reihenfolge der Kriterien kann auch per Drag&Drop bearbeitet werden.   |  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png)| Move row down  | ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach unten verschoben. <br>Die Reihenfolge der Kriterien kann auch per Drag&Drop bearbeitet werden.|  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png)| Column    | fügt die Spalte einer Tabelle hinzu. Klicken Sie auf die Komponente, um eine Spalte aus den verfügbaren Tabellen auszuwählen. | 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-sql.png)| SQL       | fügt eine SQL-Anweisung hinzu.      |  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-operator.png)| Operator  | fügt einen Operator hinzu, z.B. =, <, >, etc. |  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png)| Value | fügt einen statischen Wert vom Typ *String*, *Number*, *Flag* oder *List* hinzu. *List* bietet einen separaten Editor, um Listen vom Typ *String*, *Number* oder *Select* zu erstellen. *Select* ermöglicht die Eingabe einer SELECT-Anweisung.|
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
+| Icon  | Component   | Function    | 
+| ------|-------------|-------------| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) | Delete row | deletes a criteria.|
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png) | Move row up | changes the sequence of the criteria. The selected criteria moves up. <br>The sequence of criteria can also be changed with drag&drop. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png) | Move row down | changes the sequence of the criteria. The selected criteria moves down. <br>The sequence of criteria can also be changed with drag&drop.| 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png) | Column    | adds a column. Click on the component to select a column from the available tables. | 
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-sql.png)| SQL       |  adds an SQL statement.      |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-operator.png)| Operator  | adds an operator e.g., =, <, >, etc. |  
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png) | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | adds a new criteria after the selected criteria. |
+| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | adds a new group of criteria the selected criteria. | 
+
+When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
+
+#### Editing and Deleting Components
+
+- Click on a component to edit it. All areas that are marked green can be edited.<br>
+- To delete a component, click the ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) icon that appears when hovering over the component.<br>
 
 {: .box-note }
-**Hinweis:** Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.
-**Operator** ist zum Beispiel nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
-
-- Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
-Alle grün markierten Flächen können bearbeitet werden.<br>
-- Klicken Sie auf das ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) Icon, das eingeblendet wird, wenn Sie über die Komponente hovern, um die Komponente zu löschen.
-
+**Note:** Where Clauses created with the WHERE Clause Editor cannot be parameterized.
+The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
 
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 

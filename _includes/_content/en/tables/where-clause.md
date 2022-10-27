@@ -160,10 +160,9 @@ The following components are available in the editor:
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | adds a new criteria after the selected criteria. |
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | adds a new group of criteria the selected criteria. | 
 
+When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
 
-{: .box-note }
-**Note:** When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
-
+#### Editing and Deleting Components
 - Click on a component to edit it. All areas that are marked green can be edited.<br>
 - To delete a component, click the (x) icon above the component.<br>
 
