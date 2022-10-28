@@ -5,7 +5,7 @@ The following SAP Systems are supported:
 All communication with SAP is performed via the RFC protocol. 
 - SAP ABAP Systems on any database (including HANA) are supported. The database used by the SAP system is irrelevant, because the integration occurs at SAP application server level.
 - SAP Systems running on Big Endian and Little Endian hardware are supported.
-- SAP industry solutions are supported, e.g. IS-U, IS-R, etc.
+- SAP industry solutions like IS-U, IS-R, etc. are supported.
 - SAP Releases 4.6C and newer are supported. 
 - All operating systems are supported.
 
