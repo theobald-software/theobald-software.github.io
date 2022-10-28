@@ -60,7 +60,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 - [JSON Webservice](./destinationen/json-via-http)  
 - [Flat File - CSV](./destinationen/csv-flat-file) (Comma-seperated values)
 - [Flat File - JSON](./destinationen/json-flat-file)
-- [Parquet](./destinationen/parquet)
+- [Flat File - Parquet](./destinationen/parquet)
 
 
 {: .box-note }

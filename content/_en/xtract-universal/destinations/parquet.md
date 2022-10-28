@@ -1,13 +1,13 @@
 ---
 ref: destinations-80
 layout: page
-title: Parquet
+title: Flat File - Parquet
 description: Parquet
 product: xtract-universal
 parent: destinations
 childidentifier: parquet
 permalink: /:collection/:path
-weight: 80
+weight: 11
 lang: en_GB
 progressstate: 5
 ---
@@ -21,10 +21,12 @@ The following section describes the loading of the SAP extraction data to an Par
 ![Parquet-Destination-Details](/img/content/xu/parquet/parquet_destination_details.png){:class="img-responsive"}
 
 **Output directory**<br>
-Enter an existing local directory in which the extracted files are stored.
+Enter the directory to save the destination flat files in. If the entered folder does not exist, a new folder is created.
 
 {: .box-note }
-**Note:** Filling out the field **Output directory** creates a new folder, if it doesn't exist. 
+**Note:** To write flat files to a network drive, you need to: <br>
+\- Enter the **Output directory** in [UNC format](https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats#unc-paths) e.g., `\\Server2\Share\Test\`.<br>
+\- Run the [Xtract Universal service](../advanced-techniques/service-account) by a user with write permission to the directory. 
 
 **Compatibility mode**<br>
 You can choose between *Pure*, *Spark* and *BigQuery* for the compatibility mode. 

@@ -61,7 +61,7 @@ More information can be found under the *Requirements* section of each destinati
 - [JSON web service](./destinations/json-via-http)   
 - [Flat File - CSV](./destinations/csv-flat-file)  (comma-seperated values)
 - [Flat File - JSON](./destinations/json-flat-file)
-- [Parquet](./destinations/parquet)
+- [Flat File - Parquet](./destinations/parquet)
  
 {: .box-note }
 **Note**: The [configuration files](./advanced-techniques/backup-and-migration#configuration-files) of destinations are stored in `C:\Program Files\XtractUniversal\config\destinations`.
