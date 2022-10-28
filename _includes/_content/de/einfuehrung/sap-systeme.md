@@ -3,15 +3,16 @@
 
 Die folgenden SAP-Systeme werden unterstützt:
 - alle SAP ABAP basierten Systeme, die RFC-Konnektivität bereitstellen.
-Die gesamte Kommunikation mit SAP erfolgt über das RFC-Protokoll. 
+Die Kommunikation mit SAP erfolgt über das RFC-Protokoll. 
 - SAP-ABAP-Systeme auf beliebigen Datenbanken (einschließlich HANA).
-Weil die Integration auf der Ebene des SAP-Anwendungsservers erfolgt, ist die vom SAP-System verwendete Datenbank irrelevant.
-- SAP-Systeme, die auf Big Endian- und Little Endian-Hardware laufen
-- alle Betriebssysteme werden unterstützt.
+Die vom SAP-System verwendete Datenbank irrelevant, weil die Integration auf der Ebene des SAP-Anwendungsservers erfolgt.
+- SAP-Systeme, die auf Big Endian- und Little Endian-Hardware laufen.
+- SAP Industry Solutions wie IS-U, IS-R, etc. werden unterstützt.
 - SAP Release 4.6C und neuer.
+- alle Betriebssysteme werden unterstützt.
 
 Beispiele:
-[SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products), mySAP, SAP Application Server ABAP, Message Server, Router, Standalone Gateway, SAP Business Suite 7 (CRM, SRM, SCM etc.), SAP Business All in One, CAR, APO, PI, IS-U etc., SAP BW 3.1 and later, SAP BW/BI 7.x, SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs), SAP R/3 Version 4.6C and later, SAP BW/4HANA und mehr.
+[SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products), mySAP, SAP Application Server ABAP, Message Server, Router, Standalone Gateway, SAP Business Suite 7 (CRM, SRM, SCM etc.), SAP Business All in One, CAR, APO, PI, etc., SAP BW 3.1 and later, SAP BW/BI 7.x, SAP ERP / ECC 5.0 / ECC 6.0 (including all EhPs), SAP R/3 Version 4.6C and later, SAP BW/4HANA und mehr.
  
 ### Nicht unterstützte SAP-Systeme
 Die folgenden SAP Systeme werden nicht unterstützt:
