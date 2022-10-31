@@ -176,8 +176,7 @@ Alle grün markierten Flächen können bearbeitet werden.<br>
 - Klicken Sie auf das ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) Icon, das eingeblendet wird, wenn Sie über die Komponente hovern, um die Komponente zu löschen.
 
 {: .box-note }
-**Hinweis:** WHERE-Bedingungen, die mit dem WHERE Clause Editor erstellt wurden, können nicht parametrisiert werden. 
-Die WHERE-Bedingung wird überschrieben, wenn eine WHERE-Bedingung manuell in das dafür vorgesehene Textfeld eingetragen wird, bzw. wenn beim Aufruf des Service' eine WHERE-Bedingung in dem Body der Service-Definition übergeben wird.
+**Hinweis:** Die WHERE-Bedingung wird überschrieben, wenn eine WHERE-Bedingung manuell in das dafür vorgesehene Textfeld eingetragen wird, bzw. wenn beim Aufruf des Service' eine WHERE-Bedingung in dem Body der Service-Definition übergeben wird.
 
 
 {% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}

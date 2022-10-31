@@ -173,8 +173,7 @@ When adding or editing a criteria only the relevant components are displayed e.g
 - To delete a component, click the ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) icon that appears when hovering over the component.<br>
 
 {: .box-note }
-**Note:** Where Clauses created with the WHERE Clause Editor cannot be parameterized.
-The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
+**Note:** The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
 
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 
