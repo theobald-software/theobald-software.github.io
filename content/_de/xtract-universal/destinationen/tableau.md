@@ -95,18 +95,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/de/xu-specific/destinationen/general/existing-files.md %}
 
-
-### Column Mapping
-Verwenden Sie **Column Mapping** wenn Sie Daten in einer bereits bestehende Zieldatei ergänzen und Sie Spalten manuell zuweisen müssen.
-1. Klicken Sie auf **[...]**, um die Datei auszuwählen, die Sie ergänzen möchten.
-Unterstützt werden .csv und .hyper Dateien.
-2. Klicken Sie auf **[Map]**, um Spalten zuzuweisen. Das Fenster "Column Mapping" öffnet sich.<br>
-![Column-Mapping](/img/content/column-mapping.png){:class="img-responsive"}
-3. Wenn die Spaltennamen der Extraktion dieselben sind wie in der ausgewählten Datei, klicken Sie auf **[Auto map by name]**.<br>
-Wenn die Spaltennamen nicht übereinstimmen, wählen Sie die entsprechenden SAP-Spalten über das Dropdown-Menü aus.
-4. Klicken Sie auf **[OK]**, um Ihre Auswahl zu bestätigen.
-5. Wenn Sie eine bestehende Datei ergänzen möchten, wählen Sie im Abschnitt [Existing Files](#existing-files) die Option **append results**.<br>
-Wenn Sie eine neue Datei mit den Spaltennamen der gemappten Zieldatei erstellen möchten, wählen Sie die Option **Replace results**.
+{% include _content/de/xu-specific/destinationen/general/column-mapping.md %}
 
 ## Weiterführende Links:
 - [Webinar: Visualize your SAP data in Tableau](https://www.youtube.com/watch?v=X6T3NfVDhJE)
