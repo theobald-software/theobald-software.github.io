@@ -1,7 +1,10 @@
 ### Column Mapping
 
-Verwenden Sie **Column Mapping**, wenn Sie Daten in einer Zieldatei ergänzen und Spalten manuell zugewiesen werden müssen.
-Das kann der Fall sein, wenn sich die Anzahl oder Namen der Spalten in der Zieldatei von der Spaltenanzahl uzw. den Spaltennamen in der Extraktion unterscheiden.
+Verwenden Sie **Column Mapping**, wenn Sie Daten in einer Zieldatei ergänzen und Spalten manuell zugewiesen werden müssen.<br>
+Das kann der Fall sein, wenn man Daten von zwei oder mehr Extraktionen in eine Zieldatei schreibt, in der sich die Spaltennamen von den Spaltennamen der Extraktionen unterscheiden.
+
+{: .box-note }
+**Hinweis:** Die Spaltennamen in der Zieldatei müssen einzigartig sein. Doppelte Spaltennamen können nicht verarbeitet werden.
 
 1. Stellen Sie sicher, dass der angegebene [Pfad](#destination-details---destinationsdetails) und [Dateiname](#file-name) mit dem Pfad und dem Namen der Zieldatei überein stimmt.
 2. Wählen Sie im Abschnitt [Existing Files](#existing-files) die Option **Append results** aus.<br>
@@ -16,3 +19,7 @@ Wenn einer Spalte nichts zugewiesen werden soll, markieren Sie die entsprechende
 5. Klicken Sie auf **[OK]**, um Ihre Auswahl zu bestätigen.
 
 Wenn Sie die Extraktion ausführen, wird die Zieldatei entsprechend Ihrer Spaltenzuweisung erweitert.
+
+{: .box-tip }
+**Tipp:** Wenn sich eine Fehlermeldung öffnet, klicken Sie auf **[Show More]**, um eine Beschreibung der Fehlerursache zu finden.
+
