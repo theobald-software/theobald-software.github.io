@@ -97,5 +97,8 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/de/xu-specific/destinationen/general/column-mapping.md %}
 
+{: .box-note }
+**Hinweis:** Spalten, bei denen *Not Mapped* aktiv ist, werden mit NULL gefüllt.
+
 ## Weiterführende Links:
 - [Webinar: Visualize your SAP data in Tableau](https://www.youtube.com/watch?v=X6T3NfVDhJE)
