@@ -70,8 +70,8 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ### Existing files 
 
 **Replace file**: eine vorhandene Zieldatei wird überschrieben. <br>
-**Append results**: Daten werden an eine bereits bestehende Zieldatei angehängt. <br>
-**Abort extraction**: Der Prozess wird abgebrochen, falls eine Zeildatei bereits existiert.   
+**Append results**: Daten werden in einer bereits existierenden Zieldatei ergänzt. Siehe auch [Column Mapping](#column-mapping).<br>
+**Abort extraction**: Der Prozess wird abgebrochen, falls eine Zieldatei bereits existiert.   
 
 ### File Splitting
 
@@ -85,3 +85,5 @@ Geben Sie die Maximalgröße der einzelnen Dateien ein, die abgelegt werden soll
 {: .box-note }
 **Note:** Die Option *Max. file size* wird nicht von gzip-Dateien unterstützt.
 Die Größe von durch gzip-Verfahren komprimierten Dateien kann nicht im Voraus bestimmt werden.
+
+{% include _content/de/xu-specific/destinationen/general/column-mapping.md %}

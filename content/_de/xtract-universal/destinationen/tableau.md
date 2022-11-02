@@ -95,11 +95,10 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/de/xu-specific/destinationen/general/existing-files.md %}
 
-{: .box-note }
-**Hinweis:** Wenn *Append results* aktiv ist, weist Xtract Universal die Spalten der laufenden Extraktion den Spalten der vorhandenen Tableau-Datei zu.
-Dieses Datenmapping basiert auf den Namen der jeweiligen Spalten. Die Anzahl der Spalten müssen übereinstimmen.
-Um diese Mapping-Funktion zu nutzen, stellen Sie sicher, dass der Tableau-Ordner im Installationsverzeichnis von Xtract Universal auf dem aktuellen Stand ist, siehe [Download des aktuellen Tableau-Ordners](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip). 
+{% include _content/de/xu-specific/destinationen/general/column-mapping.md %}
 
+{: .box-note }
+**Hinweis:** Spalten, bei denen *Not Mapped* aktiv ist, werden mit NULL gefüllt.
 
 ## Weiterführende Links:
 - [Webinar: Visualize your SAP data in Tableau](https://www.youtube.com/watch?v=X6T3NfVDhJE)

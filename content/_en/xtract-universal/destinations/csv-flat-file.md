@@ -58,7 +58,7 @@ The following settings can be defined for the destination:
 ### Destination Settings
 
 ![XU_flatfile_csv_Destination](/img/content/XU_flatfile_csv_Destination.png){:class="img-responsive"}
-      
+
 {% include _content/en/xu-specific/destinations/general/file-name.md %}	 
 {% include _content/en/xu-specific/destinations/general/file-name-script-expressions.md %}
 
@@ -67,7 +67,7 @@ The following settings can be defined for the destination:
  
 ### Existing files
 **Replace file**: The export process overwrites existing files.<br>
-**Append results**: The export process appends new data to an already existing file.<br>
+**Append results**: The export process appends new data to an already existing file. See also [Column Mapping](#column-mapping).<br>
 **Abort extraction**: The process is aborted, if the file already exists.  
 
 ### File Splitting
@@ -82,3 +82,5 @@ The value set in *Max. file size* determines the maximum size of each file.
 {: .box-note }
 **Note:** The option *Max. file size* does not apply to gzip files. 
 The size of a gzipped file cannot be determined in advance.
+
+{% include _content/en/xu-specific/destinations/general/column-mapping.md %}
