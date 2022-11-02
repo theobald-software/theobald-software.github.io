@@ -8,7 +8,7 @@ This can be the case when extracting data from two or more extractions into the 
 If duplicated column names are found, an error message opens.
 The column names must be corrected, before column mapping can be used.
 
-1. When working with flat files, make sure that:<br>
+1. When working with flat files, ensure that:<br>
 a) the XU server and the Designer both have access to the destination file.<br>
 b) the [output directory](#destination-details) and the [file name](#file-name) of the extraction match the destination file. <br>
 c) the [Column Name Style](#column-name-style) of the extraction and destination match.
