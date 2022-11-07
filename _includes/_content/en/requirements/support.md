@@ -1,5 +1,5 @@
 
-### Support
+### Technical Support
 
 How to contact the Theobald Software support team:
 

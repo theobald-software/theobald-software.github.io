@@ -20,6 +20,13 @@ Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit an Theobald So
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
 
+<!---
+### Support
+-->
+{% include _content/de/einfuehrung/support.md %}
+
+{% include _content/de/einfuehrung/support-disclaimer.md %}
+
 ****
 #### Weiterführende Links
 - [Voraussetzungen](./systemvoraussetzungen)

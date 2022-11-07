@@ -4,12 +4,10 @@ layout: page
 title: Download and Evaluation
 description: Download and Evaluation
 product: yunio
-parent: yunio
+parent: introduction
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-redirect_from:
-  - en/yunio/introduction/evaluation
 old_url: /Xtract-Universal-EN/default.aspx?pageid=evaluation
 ---
 
@@ -23,6 +21,14 @@ You are guaranteed to get an unrestricted support by the Theobald Software suppo
 In case of any questions or doubts, feel free to contact Theobald Software at any time: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Contact forms](https://theobald-software.com/en/contact/)
+
+<!---
+### Support
+-->
+{% include _content/en/requirements/support.md %}
+
+{% include _content/en/requirements/support-disclaimer.md %}
+
 
 ****
 #### Related Links

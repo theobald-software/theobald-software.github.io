@@ -1,3 +1,15 @@
+---
+ref: yunio-intro01
+layout: page
+title: Systemvoraussetzungen
+description: Systemvoraussetzungen
+product: yunio
+parent: einfuehrung
+permalink: /:collection/:path
+weight: 1
+lang: de_DE
+progressstate: 5
+---
 
 ### Unterstützte SAP-Systeme und Releases
 
@@ -17,21 +29,34 @@ Beispiele:
 {: .box-warning}
 **Disclaimer:** SAP-Versionen, die vom Hersteller nicht mehr unterstützt werden, funktionieren i.d.R. noch mit Theobald Produkten, sind aber von den Theobald Software Support-Leistungen ausgeschlossen.
 
-### Nicht unterstützte SAP-Systeme
-Die folgenden SAP Systeme werden nicht unterstützt:
-- SAP-Systeme, die nicht auf ABAP-Systemen laufen 
-- SAP-Systeme, die keine RFC-Konnektivität bieten.
- 
-Beispiele:
-SAP S/4HANA Cloud Essentials Edition (ES), Business By Design, Business One, Business Objects, Sybase, Ariba, Success Factors, Concur.
+{% include _content/de/einfuehrung/sap-authentication-xtract.md %}
+{% include _content/de/einfuehrung/sap-misc.md %}
+{% include _content/de/einfuehrung/operating-systems.md %}
 
-### HANA Datenbank
-Mit Operational Data Provisioning (ODP) können Sie die SAP HANA-Datenbank eines SAP ABAP Quellsystems verbinden. 
-Die Kommunikation erfolgt über RFC. 
-Mit dem ODP-Kontext für SAP HANA (HANA) stehen folgende HANA-View-Typen zur Verfügung:
-- Analysesichten
-- Kalkulationsansichten und
-- Zugehörige Attributansichten
+### Unterstützte Webbrowser
 
-Der direkte Zugriff auf eine HANA-Datenbank ohne ein SAP-ABAP-Quellsystem wird nicht unterstützt.
+yunIO unterstützt die aktuellen Versionen folgender Webbrowser:
+- Firefox 
+- Chrome
+- Edge
+- Safari
 
+### Hardwareanforderungen
+
+#### Prozessor-Kerne
+- Minimum: 2 Kerne. 
+
+#### Prozessorgeschwindigkeit   
+- Minimum: Prozessor: 1,4 GHz, empfohlen: 2,0 GHz oder schneller
+
+#### Hauptspeicher
+- Minimum: 8 GB
+
+#### Festplattenspeicher
+Für die Installation werden 70 MB Festplattenspeicher benötigt.
+
+#### 64-Bit-Umgebung	
+Das Produkt kann nur auf 64-Bit-Betriebssystemen installiert werden.
+
+#### Bildschirmauflösung
+Das Produkt unterstützt eine Auflösung von min. 1920x1080x1.25, wobei 1.25 für die Bildschirmskalierung steht.

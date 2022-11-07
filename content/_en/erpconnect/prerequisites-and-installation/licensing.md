@@ -12,7 +12,7 @@ old_url: /ERPConnect-EN/default.aspx?pageid=licensing
 ---
 
 A demo license is automatically installed with the installation of ERPConnect.<br>
-A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. 
+A regular license is provided in the [Theobald Software Customer Portal](https://my.theobald-software.com/) after purchasing the product. 
 
 {: .box-note }
 **Note:** The standard demo license does not support working in web environments. 
@@ -31,10 +31,11 @@ ERPConnect.LIC.SetLic("XXXXXXXXXX");
 
 
 ### Maintenance
-General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/erpconnect/pricing-order) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). 
+General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/erpconnect/pricing-order) of Theobald Software or at the [Theobald Software Customer Portal](https://my.theobald-software.com/). 
 Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
-In case of technical difficulties, contact the support team by email: [support@theobald-software.com](mailto:support@theobald-software.com).
+
 
 ****
 #### Related Links
-- [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/)
+- [Theobald Software Customer Portal](https://my.theobald-software.com/)
+- [Theobald Software Support Portal](https://support.theobald-software.com/helpdesk)

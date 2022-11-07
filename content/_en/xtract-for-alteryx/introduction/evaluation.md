@@ -21,6 +21,13 @@ In case of any questions or doubts, feel free to contact Theobald Software: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [International contact details](https://theobald-software.com/en/contact/)
 
+<!---
+### Support
+-->
+{% include _content/en/requirements/support.md %}
+
+{% include _content/en/requirements/support-disclaimer.md %}
+
 ****
 #### Related Links
 - [Requirements](./requirements)

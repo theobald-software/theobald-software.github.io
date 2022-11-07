@@ -36,10 +36,17 @@ Falls Sie mehr als eine Entwicklerlizenz besitzen, sind die Lizenznummern am End
 Welche Endung Sie bei *SetLic* einsetzen, spielt keine Rolle. Die Endung kann auch komplett weggelassen werden.
 
 ### Wartung
-Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/erpconnect/preise-bestellungen/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). 
+Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/erpconnect/preise-bestellungen/) von Theobald Software oder dem Theobald Software [Kundenportal](https://my.theobald-software.com/). 
 Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
-Bei technischen Problemen wenden Sie sich per E-Mail an das Support-Team: [support@theobald-software.com](mailto:support@theobald-software.com).
+
+<!---
+### Support
+-->
+{% include _content/de/einfuehrung/support.md %}
+{% include _content/de/einfuehrung/support-disclaimer.md %}
+
 
 ****
 #### Weiterführende Links
-- [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/)
+- [Theobald Software Kundenportal](https://my.theobald-software.com/)
+- [Theobald Software Support-Portal](https://support.theobald-software.com/helpdesk)

@@ -4,12 +4,10 @@ layout: page
 title: Download und Evaluierung
 description: Evaluierung
 product: yunio
-parent: yunio
+parent: einfuehrung
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-redirect_from:
-  - de/yunio/einfuehrung/evaluierung
 ---
 
 ### Download von yunIO
@@ -22,6 +20,14 @@ Während der Evaluierungsphase erhalten Sie Unterstützung durch das Theobald So
 Sollten Sie Fragen haben, können Sie sich jederzeit an Theobald Software wenden: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Kontaktformular](https://theobald-software.com/en/contact/)
+
+<!---
+### Support
+-->
+{% include _content/de/einfuehrung/support.md %}
+
+{% include _content/de/einfuehrung/support-disclaimer.md %}
+
 
 ****
 #### Weiterführende Links
