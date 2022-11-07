@@ -8,7 +8,6 @@ parent: einfuehrung
 permalink: /:collection/:path
 weight: 7
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=evaluierung
 ---
 
 ### Download von Xtract IS
@@ -22,10 +21,18 @@ Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit an Theobald So
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
 
-
 {: .box-note }
 **Hinweis:** Um die Report-Komponente von Xtract IS zu evaluieren, müssen Sie auf Ihrem SAP-System einen Funktionsbaustein installieren, siehe [Funktionsbaustein für Reports](../sap-customizing/report-funktionsbaustein-installieren). 
 Für die Table-Komponente gibt es optionale Anpassungen, mit denen Sie Limitationen des SAP Standardfunktionsbausteins umgehen können, siehe [Funktionsbaustein für Table](../sap-customizing/funktionsbaustein-fuer-table-extraktion).
+
+<!---
+### Support
+-->
+{% include _content/de/einfuehrung/support.md %}
+4. Kopieren Sie die Software Logs in das Ticket, siehe [Required Support Information for Xtract IS](https://support.theobald-software.com/helpdesk/KB/View/14458-required-support-information-for-xtract-is).
+
+{% include _content/de/einfuehrung/support-disclaimer.md %}
+
 
 ****
 #### Weiterführende Links

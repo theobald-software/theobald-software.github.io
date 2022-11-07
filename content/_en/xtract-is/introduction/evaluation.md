@@ -26,6 +26,14 @@ In case of any questions or doubts, feel free to contact Theobald Software: <br>
 **Note:** To evaluate the Report component of Xtract IS, a custom function module must be installed in your SAP system, see [Custom function module for Report](../sap-customizing/install-report-custom-function-module). 
 Customizations for the Table component are available, but not mandatory, see [Custom function module for Table](../sap-customizing/custom-function-module-for-table-extraction) for more information.
 
+<!---
+### Support
+-->
+{% include _content/en/requirements/support.md %}
+4. Copy and paste the software logs in the ticket, see [Required Support Information for Xtract IS](https://support.theobald-software.com/helpdesk/KB/View/14458-required-support-information-for-xtract-is).
+
+{% include _content/en/requirements/support-disclaimer.md %}
+
 ****
 #### Related Links
 - [Requirements](./requirements)

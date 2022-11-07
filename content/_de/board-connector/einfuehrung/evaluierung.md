@@ -21,6 +21,15 @@ Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit an Theobald So
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
 
+<!---
+### Support
+-->
+{% include _content/de/einfuehrung/support.md %}
+4. Kopieren Sie die Software Logs in das Ticket, siehe [Required Support Information for Board Connector](https://support.theobald-software.com/helpdesk/KB/View/14975-required-support-information-for-board-connector).
+
+{% include _content/de/einfuehrung/support-disclaimer.md %}
+
+
 ****
 #### Weiterführende Links
 - [Voraussetzungen](./systemvoraussetzungen)
