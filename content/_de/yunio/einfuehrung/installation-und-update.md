@@ -32,7 +32,7 @@ Beim Starten des Setups können die optionalen Komponenten für die Installation
 | Enable .NET updates via Windows Updater <br>for Windows Server Edition. |- | Erzeugt einen Eintrag in der Regitry, der automatisch .NET aktualisiert. |
 |Open the yunIO Designer after installation|- | Öffnet nach der Installation den yunIO Designer in Ihrem Standard-Browser.|
 
-Die Installationsschritte werden im Abschnitt [Lizenz](#lizenz) beschrieben.
+Für Informationen zur Installation der Lizenz, siehe [Lizenz](./lizenz).
 
 #### Enable .NET updates via Windows Updater for Windows Server Edition
 Diese Option ist nur auf Windows Server Editionen verfügbar und nur wenn sie nicht bereits aktiv ist.<br>
@@ -65,14 +65,21 @@ Alle Einstellungen und angelegte Objekte bleiben erhalten.
 
 #### Update-Vorbereitung
 
-{: .box-tip }
-**Tipp:** Abonnieren Sie per [E-Mail](mailto:info@theobald-software.com) den regelmäßig erscheinenden Newsletter von Theobald Software, der Sie über Änderungen in der Versionshistorie und Veröffentlichungshinweise (Release Notes) informiert.
-
 1. Prüfen Sie, ob Sie über eine funktionierende Testumgebung mit einer gültigen Lizenz und Wartung verfügen.
 2. Stellen Sie sicher, dass die Testumgebung eine Kopie der aktuellen Produktivumgebung ist.
 3. Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) und die Veröffentlichungshinweise (Release Notes) in der Knowledge-Base, um eine Update-Notwendigkeit auszuschließen. 
 4. Erstellen Sie ein Backup der aktuellen Installation.
 5. Führen Sie alle notwendigen Vorbereitungen und Änderungen durch, die in den Veröffentlichungshinweisen (Release Notes) / Versionshistorie  beschrieben sind. 
+
+{: .box-tip }
+**Tipp:** Abonnieren Sie per [E-Mail](mailto:info@theobald-software.com) den regelmäßig erscheinenden Newsletter von Theobald Software, der Sie über Änderungen in der Versionshistorie und Veröffentlichungshinweise (Release Notes) informiert.
+
+### Versionsnummer
+Um Ihre aktuellen Versionsnummer einzusehen, öffnen Sie das **About** Menü in der Hauptmenüleiste des yunIO Designers.<br>
+Die Versionsnummer wird Ihnen unter dem Seitentitel angezeigt.<br>
+
+![Demo_License](/img/content/yunio/About.png){:class="img-responsive"}
+
 
 ****
 #### Weiterführende Links

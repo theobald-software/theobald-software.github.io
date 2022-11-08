@@ -34,7 +34,7 @@ When starting the setup the following components can be selected during the inst
 | Enable .NET updates via Windows Update <br>for Windows Server Edition. |- | Adds a registry entry that automatically updates .NET.|
 |Open the yunIO Designer after installation |- |Opens the yunIO Designer in your standard web browser.|
 
-The license installation procedure is described in the section [Installing the license](#license).
+For information on how to install a license, see [License](./license).
 
 #### Enable .NET updates via Windows Update for Windows Server Edition
 
@@ -67,17 +67,23 @@ can be installed over the older version. All settings and created objects are pr
 
 #### Update Preparation
 
-{: .box-tip }
-**Tip:** Subscribe via [email](mailto:info@theobald-software.com) to Theobald Software’s regular newsletter that
-informs about changes in the version history and release notes.
-
-1. Check if you have a working test environment with a valid license and maintenance.
+1. Check if you have a working test environment with a valid license.
 2. Make sure that the test environment is a copy of the current production environment.
 3. Check the [Version History](https://kb.theobald-software.com/version-history) and release notes in the
 knowledge base to check, if an update is needed.
 4. Create a backup of the current installation.
 5. Conduct any necessary preparations and changes as described in the Release Note / Version History.
 
+{: .box-tip }
+**Tip:** Subscribe via [email](mailto:info@theobald-software.com) to Theobald Software’s regular newsletter that
+informs about changes in the version history and release notes.
+
+### Version Number
+
+To check your current version number, navigate to **About** menu in the yunIO Designer. <br>
+The version number is displayed next to the page title.
+
+![Demo_License](/img/content/yunio/About.png){:class="img-responsive"}
 
 ****
 #### Related links

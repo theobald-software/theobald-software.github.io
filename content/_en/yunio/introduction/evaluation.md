@@ -32,5 +32,5 @@ In case of any questions or doubts, feel free to contact Theobald Software at an
 
 ****
 #### Related Links
-- [Requirements](./introduction#requirements)
-- [Licensing](./introduction#license)
+- [Requirements](./introduction/requirements)
+- [Licensing](./introduction/license)

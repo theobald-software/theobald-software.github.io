@@ -16,19 +16,21 @@ progressstate: 5
 yunIO is licensed per Windows server where the solution is installed.
 A demo license valid for 30 days is automatically provided with the installation of yunIO.
 
-A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. 
+A regular license is provided in the [Theobald Software Costumer Portal](https://my.theobald-software.com/) after purchasing the product. 
 The product license is bound to your company and the server on which the yunIO server runs.<br>
  
 
 ### Installing the yunIO License - yunIOLicense.json
-For installing the regular license, place the regular yunIOLicense.json into the following directory of the server: <br>
+
+1. Navigate to the **License** menu in the yunIO Designer.<br>
+![License](/img/content/yunio/License.png){:class="img-responsive"}
+2. Click **[Choose License]** and open the yunIOLicense.json file.
+3. Check the validity of the license data that is displayed.
+4. Click **[Upload and Save]** to activate the license.<br>
+A restart of the yunIO service is not necessary.
+
+Alternatively, you can copy and paste the yunIOLicense.json file into the following server directory: <br>
 `C:\Program Files\Theobald Software\YunIO`
-
-A restart of the yunIO service is not necessary.<br>
-To inspect your current license data, go to the main menu of yunIO and navigate to **[About]**. 
-The version number is displayed next to the page title.
-
-![Demo_License](/img/content/yunio/About.png){:class="img-responsive"}
 
 ****
 #### Related links
