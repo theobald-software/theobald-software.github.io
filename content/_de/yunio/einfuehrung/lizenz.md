@@ -24,7 +24,7 @@ Wenn Sie den yunIO Designer und den yunIO Server auf verschiedenen Rechnern betr
 ![License](/img/content/yunio/license.png){:class="img-responsive"}
 2. Klicken Sie auf **[Choose License]** und öffnen Sie die YunIOLicense.json Datei.
 3. Prüfen Sie, ob die angezeigten Lizenzdaten korrekt sind.
-4. Klicken Sie auf **[Upload and Save]**, um die Lizenz zu übertragen.<br>
+4. Klicken Sie auf **[Upload and Save]**, um die Lizenz zu übertragen.
 Ein Neustart des yunIO Windows-Dienstes ist nicht notwendig.<br>
 
 Alternativ können Sie die YunIOLicense.json Datei manuell in dem folgenden Programm-Verzeichnis des Servers ablegen: <br>

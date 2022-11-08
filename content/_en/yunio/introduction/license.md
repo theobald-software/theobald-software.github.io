@@ -26,7 +26,7 @@ The product license is bound to your company and the server on which the yunIO s
 ![License](/img/content/yunio/license.png){:class="img-responsive"}
 2. Click **[Choose License]** and open the yunIOLicense.json file.
 3. Check the validity of the license data that is displayed.
-4. Click **[Upload and Save]** to activate the license.<br>
+4. Click **[Upload and Save]** to activate the license.
 A restart of the yunIO service is not necessary.
 
 Alternatively, you can copy and paste the yunIOLicense.json file into the following server directory: <br>
