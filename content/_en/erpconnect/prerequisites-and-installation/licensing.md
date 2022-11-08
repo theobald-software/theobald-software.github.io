@@ -34,6 +34,13 @@ ERPConnect.LIC.SetLic("XXXXXXXXXX");
 General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/erpconnect/pricing-order) of Theobald Software or at the [Theobald Software Customer Portal](https://my.theobald-software.com/). 
 Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
 
+<!---
+### Support
+-->
+{% include _content/en/requirements/support.md %}
+
+{% include _content/en/requirements/support-disclaimer.md %}
+
 
 ****
 #### Related Links
