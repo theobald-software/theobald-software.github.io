@@ -171,7 +171,7 @@ Das konfigurierte On-Premisess Data Gateway wird nachfolgend in die Power BI Ser
 **Data Source Type**<br> Wählen Sie den Eintrag *Xtract Universal Extraction* aus dem Dropdown-Menü. 
 
 {: .box-note }
-**Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-Premisess Data Gateway](#einrichtung-On-Premisess-data-gateway).
+**Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-Premisess Data Gateway](#einrichtung-on-premisess-data-gateway).
 
 **Xtract Universal Server**<br> Geben Sie die Xract Universal Server URL an, siehe [Web Server](../server/server_einstellungen#web-server).
 
