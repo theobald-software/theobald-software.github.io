@@ -21,7 +21,7 @@ Wenn Sie den yunIO Designer und den yunIO Server auf verschiedenen Rechnern betr
 ### Installieren von yunIO Lizenz - YunIOLicense.json
 
 1. Öffnen Sie das **License** Menü in der Hauptmenüleiste des yunIO Designers.<br>
-![License](/img/content/yunio/License.png){:class="img-responsive"}
+![License](/img/content/yunio/license.png){:class="img-responsive"}
 2. Klicken Sie auf **[Choose License]** und öffnen Sie die YunIOLicense.json Datei.
 3. Prüfen Sie, ob die angezeigten Lizenzdaten korrekt sind.
 4. Klicken Sie auf **[Upload and Save]**, um die Lizenz zu übertragen.<br>

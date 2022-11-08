@@ -23,7 +23,7 @@ The product license is bound to your company and the server on which the yunIO s
 ### Installing the yunIO License - yunIOLicense.json
 
 1. Navigate to the **License** menu in the yunIO Designer.<br>
-![License](/img/content/yunio/License.png){:class="img-responsive"}
+![License](/img/content/yunio/license.png){:class="img-responsive"}
 2. Click **[Choose License]** and open the yunIOLicense.json file.
 3. Check the validity of the license data that is displayed.
 4. Click **[Upload and Save]** to activate the license.<br>
