@@ -22,7 +22,7 @@ Die JSON-Destination ist ein generischer JSON-Stream über HTTP.
 4. Wählen Sie den Destinationstyp aus dem Dropdown-Menü aus.
 
 ### Destination Details
-Für das Anlegen einer JASON Zielumgebung, müssen keine weiteren Einstellungen vorgenommen werden.
+Für das Anlegen einer JSON Zielumgebung, müssen keine weiteren Einstellungen vorgenommen werden.
 
 ## Einstellungen
 
