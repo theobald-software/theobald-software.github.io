@@ -29,8 +29,3 @@ Sollten Sie Fragen haben, können Sie sich jederzeit an Theobald Software wenden
 {% include _content/de/einfuehrung/support-disclaimer.md %}
 
 
-****
-#### Weiterführende Links
-- [Voraussetzungen](./einfuehrung/systemvoraussetzungen)
-- [Lizenzierung](./einfuehrung/lizenz)
-

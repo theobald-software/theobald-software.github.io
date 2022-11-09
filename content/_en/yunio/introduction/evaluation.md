@@ -29,8 +29,3 @@ In case of any questions or doubts, feel free to contact Theobald Software at an
 
 {% include _content/en/requirements/support-disclaimer.md %}
 
-
-****
-#### Related Links
-- [Requirements](./introduction/requirements)
-- [Licensing](./introduction/license)
