@@ -12,8 +12,6 @@ lang: de_DE
 progressstate: 5
 ---
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal ODP Komponente. <br>
-
-
 {% include _content/de/odp/odp-introduction.md %} 
 
 {: .box-tip }
