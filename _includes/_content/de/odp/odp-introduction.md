@@ -38,7 +38,8 @@ Für mehr Information über SAP ODP, siehe [SAP Wiki: Operational Data Provision
 
 ### Technische Voraussetzungen
 
-Es gibt einige Voraussetzungen, die auf der SAP-Seite erfüllt sein müssen, wenn ODP verwendet wird. SAP hat eine Reihe von Hinweisen veröffentlicht, die bei der Verwendung der Xtract ODP-Komponente gelten:
+Es gibt einige Voraussetzungen, die auf der SAP-Seite erfüllt sein müssen, Um die ODP-Komponente zu verwenden, müssen SAP-seitige Voraussetzungen erfüllt sein.
+Implementieren Sie die folgenden SAP-Hinweise:
 - [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427/D)
 - [2232584 - Freigabe von SAP Extraktoren für ODP Replikation (ODP-SAPI)](https://launchpad.support.sap.com/#/notes/2232584/D)
 - [1560241 - Freigabe von DataSources für das 'ODP data replication API'](https://launchpad.support.sap.com/#/notes/1560241/D)
