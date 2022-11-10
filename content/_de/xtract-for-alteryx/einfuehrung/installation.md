@@ -28,6 +28,10 @@ Das Installationsprogramm *XtractForAlteryxSetup.exe* ist ein branchenübliches 
 
 ![Xtract for Alteryx Installation](/img/content/xfa/xfa_install.png){:class="img-responsive"}<br>
 
+{: .box-note }
+**Hinweis:** Während der Installation werden Sie aufgefordert, sowohl ein Installationsverzeichnis für Xtract for Alteryx, als auch das Installationsverzeichnis von Alteryx anzugeben.
+Wenn Sie mehrere Alteryx-Instanzen installiert haben, wählen Sie während der Installation die Instanz, auf der Sie Xtract for Alteryx verwenden möchten.
+
 Nach der Installation legt Xtract for Alteryx folgende Einträge und Erweiterungen im Alteryx Installationsverzeichnis an:
 - `Alteryx\Settings\AdditionalPlugins\XtractForAlteryx.ini`
 - `Alteryx\bin\RuntimeData\icons\categories\XtractForAlteryx.png`

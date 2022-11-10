@@ -27,6 +27,10 @@ The installation program *XtractForAlteryxSetup.exe* is an industry standard ins
 
 ![Xtract for Alteryx Installation](/img/content/xfa/xfa_install.png){:class="img-responsive"}
 
+{: .box-note }
+**Note:** During the setup you need to specify the installation directory for Xtract for Alteryx and also the installation directory of Alteryx.
+If you have multiple instances of Alteryx installed, choose the instance on which you want to use Xtract for Alteryx.
+
 After installation of Xtract for Alteryx the setup creates the following entries and extensions in the Alteryx installation directory:
 - `Alteryx\Settings\AdditionalPlugins\XtractForAlteryx.ini`
 - `Alteryx\bin\RuntimeData\icons\categories\XtractForAlteryx.png`
