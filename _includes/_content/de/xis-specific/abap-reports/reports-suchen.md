@@ -31,7 +31,7 @@ In diesem Fall muss die *AttachesSapGui* Eigenschaft in den **Expert Options** d
 
 ### Spalten definieren
 
-1. Wenn Ihr Report variierende Spaltenbreiten hat, aktivieren Sie die Option **Dynamic column width and offset**.
+1. Wenn Ihr Report variierende Spaltenbreiten hat, aktivieren Sie die Option **Dynamic column widths and offsets**.
 Die Spaltenbreite und der Offset der Spalten werden dann zur Laufzeit dynamisch angepasst.
 2. Klicken Sie auf **[Automatically detect columns]** um den Report basierend auf der ausgewählten Variante oder Selektion auszuführen und automatisch Spalten zu detektieren.
 ![Report-automatic-columns](/img/content/Report_new_automatic_columns.png){:class="img-responsive"}

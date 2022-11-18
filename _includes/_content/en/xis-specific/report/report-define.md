@@ -28,8 +28,8 @@ In this case, set the *AttachesSapGui* property in the **Expert Options** of the
 
 ### Define Report Columns
 
-1. If your report has varying column widths, activate **Dynamic column width and offset**.
-The column width and offset is then adjusted dynamically at report runtime. 
+1. If your report has varying column widths, activate **Dynamic column widths and offsets**.
+The column widths and offsets are then adjusted dynamically at report runtime. 
 2. Click **[Automatically detect columns]** to execute the report based on the selected variant or selections and detect columns automatically.<br>
 ![Report-automatic-columns](/img/content/Report_new_automatic_columns.png){:class="img-responsive"}
 3. Click **[Load Preview]** to display the rows in the preview screen.
