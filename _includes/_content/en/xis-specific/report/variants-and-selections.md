@@ -22,7 +22,7 @@ This displays the technical name of a selection field.
 
 1. Click the **[Edit]** button next to the selection you want to edit. The window “Edit Selection” opens.<br> 
 ![ODP Fields](/img/content/Report-Edit-Selections.png){:class="img-responsive"}<br>
-2. Click **[Add Selection]** to add a new filter criterion.<br>
+2. Click **[Add Selection]** to add a new filter criterion.
 3. Select *Include* in the **Sign** (3) column to only include the filtered data to the output. <br>
 Select *Exclude* in the **Sign** (3) column to exclude the filtered data from the output.
 4. Select an operator in the **Option** (4) column. The operator filters data according to the table below.
@@ -36,16 +36,15 @@ Select *Exclude* in the **Sign** (3) column to exclude the filtered data from th
    |LessThan | True if data is less than the content of operand 1.|
    |(Not)Between | True if data lies (not) between the values of operand 1 and operand 2. |
    |In | True if data is part of the content of operand 1. This operator is only available for *List* parameters.|
-5. Enter static values or select runtime parameters for filtering. <br>
+5. Enter static values or select SSIS variables for filtering. <br>
 - Static values: Enter values directly into the **Low** and **High** input fields. 
-If runtime parameters are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
-Clicking on the icon switches between static input values and runtime parameters.
-- Runtime Parameters: Click on the ![static-value](/img/content/icons/runtime-parameters-static.png) icon to change the input type to parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
-If no icons are displayed, open the [Edit Runtime Parameters](./report-edit-runtime-parameters) menu and create runtime parameters.
-Select a runtime parameter from the drop-down list.
+If SSIS variables are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
+Clicking on the icon switches between static input values and SSIS variables.
+- SSIS variables: Click on the ![static-value](/img/content/icons/runtime-parameters-static.png) icon to change the input type to variables ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
+Select an SSIS variable from the drop-down list.
 6. Click **[OK]** to confirm your input.
 7. Click **[Load Preview]** in the main widnow of the component to check the result of your selection. <br>
-If runtime parameters are defined, you are prompted to populate the parameters with actual values.
+If SSIS variables are defined, you are prompted to populate the parameters with actual values.
 
 
 {: .box-tip }
