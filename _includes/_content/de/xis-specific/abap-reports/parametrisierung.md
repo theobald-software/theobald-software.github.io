@@ -46,4 +46,5 @@ Für mehr Informationen über Datentypen von Systemvariablen, siehe [Microsoft-H
 
 ****
 #### Weiterführende Links
-- [Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
+- [Microsoft Dokumentation: Integration Services-Variablen (SSIS)](https://docs.microsoft.com/de-de/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
+- [Microsoft Dokumentation: Verwenden von Eigenschaftsausdrücken in Paketen](https://learn.microsoft.com/de-de/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver16)
