@@ -50,7 +50,7 @@ More information can be found under the *Requirements* section of each destinati
 
 ### Cloud Storage
 
-- [Amazon AWS S3](./destinations/amazon-aws-s3)
+- [Amazon S3](./destinations/amazon-aws-s3)
 - [Azure Storage](./destinations/azure-storage) 
 - [Google Cloud Storage](./destinations/google-cloud-storage)
 - [Hadoop](./destinations/hadoop)

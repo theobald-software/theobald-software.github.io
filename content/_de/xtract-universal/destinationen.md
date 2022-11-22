@@ -44,7 +44,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 
 ### Cloud Speicher
 
-- [Amazon AWS S3](./destinationen/amazon_aws_s3)
+- [Amazon S3](./destinationen/amazon_aws_s3)
 - [Azure Storage](./destinationen/azure-storage) 
 - [Google Cloud Storage](./destinationen/google-cloud-storage)
 - [Hadoop](./destinationen/hadoop)

@@ -1,8 +1,8 @@
 ---
 ref: destinations-22
 layout: page
-title: Amazon AWS S3
-description: Amazon AWS S3
+title: Amazon S3
+description: Amazon S3
 product: xtract-universal
 parent: destinations
 childidentifier: amazon-aws-s3
