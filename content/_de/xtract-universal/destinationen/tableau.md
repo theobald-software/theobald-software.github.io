@@ -40,28 +40,27 @@ Geben Sie das Verzeichnis auf dem Xtract Universal Server an, in das die exporti
 **Hinweis:** Stellen Sie sicher, dass das Verzeichnis existiert.
 
 ### Tableau Server
-- **Upload to Tableau Server** <br>
-Option zum Hochladen der extrahierten Datei (als Datenquelle) auf Tableau Server oder Tableau Online.
-- **Delete local file after upload**
+**Upload to Tableau Server** <br>
+Option zum Hochladen der extrahierten Datei auf Tableau Server oder Tableau Cloud (Tableau Online).<br>
+
+**Delete local file after upload**<br>
 Option zum Entfernen der lokalen Datei nach einem erfolgreichen Upload.
 
 **Host** <br>
 Die IP-Adresse oder der Domainname des Servers, beginnend mit `http://` oder `https://`.
 
 **Username** <br>
-Ihr Benutzername für Tableau Server/Online eingeben.
+Ihr Benutzername für Tableau Server/Cloud eingeben.<br>
+Für die Extraktion von Daten nach Tableau Server ist die Benutzerrolle "Server Administrator" als "Site Role" erforderlich.<br>
+Für die Extraktion von Daten nach Tableau Cloud ist die Benutzerrolle "Site-Administrator-Creator" als "Site Role" erforderlich.
 
 **Password** <br>
-Ihr Passwort für Tableau Server/Online eingeben.
+Ihr Passwort für Tableau Server/Cloud eingeben.
 
-**Site (for Tableau online)** <br>
+**Site (for Tableau Cloud)** <br>
 Die ID der Website für die Veröffentlichung Ihrer Datenquelle eingeben. 
-Das Feld ist obligatorisch und kann nicht leer gelassen werden.
-
-Erhalten Sie die korrekte Website-URL von [Tableau Online](https://online.tableau.com/#/site/Site/workbooks).
-
-Für die Extraktion von Daten nach Tableau Online ist die Rolle "Server Administrator" als "Site Role" erforderlich.
-![Tableau_Server_Admin](/img/content/xu/tableau_server_admin.png){:class="img-responsive"}
+Das Feld ist obligatorisch und kann nicht leer gelassen werden.<br>
+Erhalten Sie die korrekte Website-URL von [Tableau Cloud](https://online.tableau.com/#/site/Site/workbooks).
 
 **[Test Connection]**<br>
 Schaltfläche zur Überprüfung, ob die Verbindungsdaten korrekt sind und eine Verbindung hergestellt werden kann.
@@ -71,7 +70,7 @@ Schaltfläche zur Überprüfung, ob die Verbindungsdaten korrekt sind und eine V
 Eine Dropdown-Liste mit Sites, die auf dem verbundenen On-Prem-Server gespeichert sind. Die Auswahl eines Sites ist für das Hochladen von Dateien obligatorisch. 
 
 **Project**<br>
-Das Projekt zum Veröffentlichen der Datenquelle. 
+Wählen Sie das Projekt, in dem die extrahierten Daten veröffentlicht werden. 
 
 
 ## Einstellungen

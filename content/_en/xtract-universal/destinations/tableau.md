@@ -41,38 +41,37 @@ Enter the directory on the Xtract Universal Server to store the generated Tablea
 **Note:** Make sure that the directory exists.
 
 ### Tableau Server
-- **Upload to Tableau Server**<br>
-Option to upload the extracted file (as a data source) to Tableau Server or Tableau Online.
-- **Delete local file after upload**<br>
+**Upload to Tableau Server**<br>
+Option to upload the extracted file (as a data source) to Tableau Server or Tableau Cloud.
+
+**Delete local file after upload**<br>
 Option to remove the local file after a successful upload.
 
 **Host**<br>
 Enter the IP address or domain name of the remote server, starting with `http://` or `https://`.
 
 **Username**<br>
-Enter your username for Tableau Server/Online.
+Enter your username for Tableau Server/Cloud.
+For the extraction of data to Tableau Server the role "Server Administrator" is required as "Site Role".<br>
+For the extraction of data to Tableau Cloud the role "Site-Administrator-Creator" is required as "Site Role".
 
 **Password**<br>
-Enter your password for Tableau Server/Online.
+Enter your password for Tableau Server/Cloud.
 
-**Site (for Tableau online)**<br>
+**Site (for Tableau Cloud)**<br>
 Enter the ID of the site for publishing your data source. 
-This field is mandatory and cannot be left blank. 
-
-Get the correct site URL from [Tableau Online](https://online.tableau.com/#/site/Site/workbooks).
-
-For the extraction of data to Tableau Online the role "Server Administrator" is required as "Site Role".
-![Tableau_Server_Admin](/img/content/xu/tableau_server_admin.png){:class="img-responsive"}
+This field is mandatory and cannot be left blank. <br>
+Get the correct site URL from [Tableau Cloud](https://online.tableau.com/#/site/Site/workbooks).
 
 **[Test Connection]**<br>
 Check the database connection. 
 
-#### Tableau Server Settings
+### Tableau Server Settings
 **Site**<br>
 A drop-down list of the sites stored on the connected on-prem server. Selecting a site is mandatory for uploading files. 
 
 **Project**<br>
-The project for publishing data source.
+Select the project in which the extracted data is published. 
 
 ## Settings
 
