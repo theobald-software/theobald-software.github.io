@@ -53,7 +53,6 @@ Enter the IP address or domain name of the remote server, starting with `http://
 **Username**<br>
 Enter your username for Tableau Server/Cloud.
 For the extraction of data to Tableau Server the role "Server Administrator" is required as "Site Role".<br>
-For the extraction of data to Tableau Cloud the role "Site-Administrator-Creator" is required as "Site Role".
 
 **Password**<br>
 Enter your password for Tableau Server/Cloud.

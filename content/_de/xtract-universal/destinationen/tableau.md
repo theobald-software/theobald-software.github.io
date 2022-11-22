@@ -52,7 +52,6 @@ Die IP-Adresse oder der Domainname des Servers, beginnend mit `http://` oder `ht
 **Username** <br>
 Ihr Benutzername für Tableau Server/Cloud eingeben.<br>
 Für die Extraktion von Daten nach Tableau Server ist die Benutzerrolle "Server Administrator" als "Site Role" erforderlich.<br>
-Für die Extraktion von Daten nach Tableau Cloud ist die Benutzerrolle "Site-Administrator-Creator" als "Site Role" erforderlich.
 
 **Password** <br>
 Ihr Passwort für Tableau Server/Cloud eingeben.
