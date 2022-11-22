@@ -13,7 +13,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift
 progressstate: 5
 ---
 
-The following section describes the loading of the SAP extraction data to Redshift Database destination.
+The following section describes the loading of the SAP extraction data to the [Redshift Database](https://aws.amazon.com/redshift/) destination.<br>
+For more information on Amazon Redshift, see [Getting Started with Amazon Redshift](hhttps://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html).
 
 ## Requirements
 
@@ -134,4 +135,8 @@ You can use any other [db client](https://docs.aws.amazon.com/redshift/latest/mg
 ![RS-Configure-AnySQL-Data-Link-Properties](/img/content/RS-Configure-AnySQL-Data-Link-Properties.png){:class="img-responsive"}
 
 - Click "Next", then "Ready".
-- Now you can work with your Database .
+- Now you can work with your database.
+
+## Related Links
+- [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/?nc1=h_ls)
+- [Amazon Redshift: Getting Started with Amazon Redshift](hhttps://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html)

@@ -12,7 +12,8 @@ lang: de_DE
 progressstate: 5
 ---
 
-Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud-Speicher [Amazon S3](https://aws.amazon.com/de/s3/).
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud-Speicher [Amazon S3](https://aws.amazon.com/de/s3/).<br>
+Für mehr Informationen über Amazon S3, siehe [Erste Schritte mit Amazon S3](https://aws.amazon.com/de/s3/getting-started/).
 
 ## Voraussetzungen
 
@@ -174,3 +175,11 @@ Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werde
 {% include _content/de/xu-specific/destinationen/general/compression.md %}
 
 {% include _content/de/xu-specific/destinationen/general/file-splitting.md %}
+
+## Weiterführende Links
+- [Amazon AWS: Erste Schritte mit Backup und Wiederherstellung mit AWS](https://aws.amazon.com/de/backup-restore/getting-started/?nc1=h_ls)
+- [Amazon S3: Erste Schritte mit Amazon S3](https://aws.amazon.com/de/s3/getting-started/)
+- [Amazon EC2: Erste Schritte mit Amazon EC2](https://aws.amazon.com/de/ec2/getting-started/)
+- [Amazon Dokumentation: Amazon-EC2-Sicherheitsgruppen für Linux-Instances](https://docs.aws.amazon.com/de_de/AWSEC2/latest/UserGuide/ec2-security-groups.html)
+- [Amazon Dokumentation: Bewährte Methoden für die Sicherheit in IAM](https://docs.aws.amazon.com/de_de/IAM/latest/UserGuide/best-practices.html)
+- [Amazon Dokumentation: Übersicht über die Verwaltung von Zugriffsberechtigungen](https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/access-control-overview.html)

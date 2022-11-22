@@ -12,7 +12,8 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=redshift
 progressstate: 5
 ---
-Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in Amazon Redshift.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in [Amazon Redshift](https://aws.amazon.com/de/redshift/).<br>
+Für mehr Informationen über Amazon Redshift, siehe [Erste Schritte mit Amazon Redshift](https://docs.aws.amazon.com/de_de/redshift/latest/gsg/getting-started.html).
 
 ## Voraussetzungen
 - Sie benötigen eine laufende Instanz und gültige Anmeldedaten.
@@ -132,3 +133,7 @@ Sie können natürlich auch andere [DB Clients](https://docs.aws.amazon.com/reds
 
 - Klicken Sie auf "Next" und dann auf "Ready".
 - Die Konfiguration ist abgeschlossen und Sie können nun auf Ihre Datenbank zugreifen. 
+
+## Weiterführende Links
+- [Amazon Redshift: Erste Schritte mit Amazon Redshift](https://docs.aws.amazon.com/de_de/redshift/latest/gsg/getting-started.html)
+- [Amazon AWS: Erste Schritte mit Backup und Wiederherstellung mit AWS](https://aws.amazon.com/de/backup-restore/getting-started/?nc1=h_ls)

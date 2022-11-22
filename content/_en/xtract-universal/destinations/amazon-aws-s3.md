@@ -13,7 +13,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=amazon-aws-s3
 progressstate: 5
 ---
 
-The following section describes data extraction to Amazons's cloud storage S3.
+The following section describes data extraction to the [Amazon S3](https://aws.amazon.com/s3/) cloud storage.<br>
+For more information on Amazon S3, see [Getting Started with Amazon S3](https://aws.amazon.com/s3/getting-started/).
 
 ## Requirements
 
@@ -174,3 +175,11 @@ Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/
 {% include _content/en/xu-specific/destinations/general/compression.md %}
 
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}
+
+## Related Links
+- [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/?nc1=h_ls)
+- [Amazon S3: Getting Started with Amazon S3](https://aws.amazon.com/s3/getting-started/)
+- [Amazon EC2: Getting Started with Amazon EC2](https://aws.amazon.com/ec2/getting-started/)
+- [Amazon Documentation: Amazon EC2 security groups for Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
+- [Amazon Documentation: Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [Amazon Documentation: Overview of managing access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-overview.html)
