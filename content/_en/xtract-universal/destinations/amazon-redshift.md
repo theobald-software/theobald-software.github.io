@@ -14,7 +14,7 @@ progressstate: 5
 ---
 
 The following section describes the loading of the SAP extraction data to the [Redshift Database](https://aws.amazon.com/redshift/) destination.<br>
-For more information on Amazon Redshift, see [Getting Started with Amazon Redshift](hhttps://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html).
+For more information on Amazon Redshift, see [Getting Started with Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html).
 
 ## Requirements
 

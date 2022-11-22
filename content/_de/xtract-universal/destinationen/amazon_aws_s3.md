@@ -19,15 +19,18 @@ Für mehr Informationen über Amazon S3, siehe [Erste Schritte mit Amazon S3](ht
 
 - ein Amazon Web Services ([AWS](https://aws.amazon.com/de/)) Account.
 - *entweder* die "[Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)" Ihres AWS Benutzers, bestehend aus "access key ID" und "secret access key". *Oder* eine IAM-Rolle, die an die [EC2-Instanz](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), auf der Xtract Universal läuft, angebunden wurde.
+Für mehr Informationen zur IAM Rolle, siehe [Amazon Dokumentation: Bewährte Methoden für die Sicherheit in IAM](https://docs.aws.amazon.com/de_de/IAM/latest/UserGuide/best-practices.html).
 - einen AWS S3 Bucket, in den Sie Dateien hochladen können.
-- ausreichende Berechtigungen für das Auflisten/Lesen von und Schreiben nach S3 Buckets. Die Berechtigungen im nachfolgenden Screenshot funktionierten in unserer Testumgebung.
-
-### Berechtigungen
+- ausreichende Berechtigungen für das Auflisten/Lesen von und Schreiben nach S3 Buckets. Die Berechtigungen im nachfolgenden Screenshot wurden in einer Testumgebung getestet:<br>
 ![IAM_permissions_for_S3_destination](/img/content/xu/S3_desination_IAM_permissions.png){:class="img-responsive"}
 
 
 {: .box-note }
 **Hinweis:** Xtract Universal verwendet für den Upload nach S3 einen sog. [Multipart Upload](https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html). Das heißt, die extrahierten Daten werden Stück für Stück als sogenannte Parts nach S3 geschickt und dort zwischengepuffert. Im Falle einer erfolgreichen Extraktion werden die einzelnen Parts dann zu einer Datei zusammengefügt. Diese Datei ist auf S3 erst dann sichtbar, wenn die Extraktion in XU erfolgreich abgeschlossen ist.
+
+{: .box-tip }
+**Empfehlung:** Wir empfehlen eine S3 Versioning zu verwenden oder regelmäßig Backups zu erstellen, siehe [Amazon AWS: Erste Schritte mit Backup und Wiederherstellung mit AWS](https://aws.amazon.com/de/backup-restore/getting-started/).
+
 
 ### Fehlgeschlagene Extraktion
 Im Falle eines Extraktionsabbruchs aufgrund von Exceptions in XU o.Ä., veranlasst XU das Löschen der einzelnen Parts auf S3-Seite. Im Falle von "unkontrollierten" Extraktionsabbrüchen, z.B. aufgrund von Netzwerkproblemen, kann XU ein Löschen der Multiparts nicht veranlassen.
@@ -51,6 +54,7 @@ Aus diesem Grund ist es empfehlenswert, auf S3-Seite ein automatisches Löschen 
 
 **Inherit Credentials from IAM role** <br>
 Die Anmeldeinformationen und Berechtigungen der IAM Rolle, die der [EC2-Instanz](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), auf der Xtract Universal läuft, zugewiesen wurde, werden für die Authentisierung verwendet.
+Für mehr Informationen zur IAM Rolle, siehe [Amazon Dokumentation: Bewährte Methoden für die Sicherheit in IAM](https://docs.aws.amazon.com/de_de/IAM/latest/UserGuide/best-practices.html).
 
 **Access key ID und Secret key**<br>
 Option zur Authentifizierung gegenüber Amazon AWS. Über das Identity and Access Management ([IAM](https://console.aws.amazon.com/iam/home#/home)) können Sie die notwendige Werte ermitteln.<br>
@@ -177,7 +181,7 @@ Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werde
 {% include _content/de/xu-specific/destinationen/general/file-splitting.md %}
 
 ## Weiterführende Links
-- [Amazon AWS: Erste Schritte mit Backup und Wiederherstellung mit AWS](https://aws.amazon.com/de/backup-restore/getting-started/?nc1=h_ls)
+- [Amazon AWS: Erste Schritte mit Backup und Wiederherstellung mit AWS](https://aws.amazon.com/de/backup-restore/getting-started/)
 - [Amazon S3: Erste Schritte mit Amazon S3](https://aws.amazon.com/de/s3/getting-started/)
 - [Amazon EC2: Erste Schritte mit Amazon EC2](https://aws.amazon.com/de/ec2/getting-started/)
 - [Amazon Dokumentation: Amazon-EC2-Sicherheitsgruppen für Linux-Instances](https://docs.aws.amazon.com/de_de/AWSEC2/latest/UserGuide/ec2-security-groups.html)

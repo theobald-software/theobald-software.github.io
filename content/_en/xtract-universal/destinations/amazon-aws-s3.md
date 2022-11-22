@@ -20,14 +20,17 @@ For more information on Amazon S3, see [Getting Started with Amazon S3](https://
 
 - Existing Amazon Web Services (AWS) Account.
 - **Either** the "[Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)" (consisting of "access key ID" and "secret access key") of your AWS user at hand.<br> **Or** an IAM role attached to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html) Xtract Universal is running on.
+For more information on the IAM role, see [Amazon Documentation: Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 - Existing S3 bucket, in which you can upload data.
-- Sufficient permissions for list, read and write activities on S3. You must grant these rights in the user policy, but you can limit them to certain buckets. In the following example, the set permissions work in our environment.
-
-### Permissions
+- Sufficient permissions for list, read and write activities on S3. You must grant these rights in the user policy, but you can limit them to certain buckets. 
+In the following example, the set permissions have been tested in a test environment: <br>
 ![IAM_permissions_for_S3_destination](/img/content/xu/S3_desination_IAM_permissions.png){:class="img-responsive"}
 
 {: .box-note }
 **Note:** Xtract Universal uses so called [Multipart](https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html) upload for uploading data to S3. Data extracted from SAP is uploaded to S3 not as one big chunk of data but in smaller parts. These parts are buffered on the S3 side. If the extraction is successful, those parts are assembled by S3 into one file. While the extraction is still running this file is not visible on S3.
+
+{: .box-tip}
+**Recommendation:** We recomment you enable S3 versioning or perform data backups regularly, see [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/).
 
 ### Extraction failed
 In case the extraction fails, for example because of an exception in the Xtract Universal software, Xtract Universal will take care that the already uploaded parts will be deleted from S3. In case of an "uncontrolled" extraction failure, for example due to network issues, Xtract Universal won't be able to delete those uploaded parts from S3.
@@ -50,7 +53,8 @@ We would therefore recommend to change the settings on S3 in a way that will tri
 #### Connection
 
 **Inherit Credentials from IAM role**<br>
-The credentials and permissions of the IAM role assigned to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), on which Xtract Universal is running is be used for authentication. 
+The credentials and permissions of the IAM role assigned to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), on which Xtract Universal is running will be used for authentication. 
+For more information on the IAM role, see [Amazon Documentation: Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
 **Access key ID and Secret key**<br>
 Preferable authentication method towards Amazon AWS. Determine the values via AWS Identity and Access Management ([IAM](https://console.aws.amazon.com/iam/home#/home)).
@@ -177,7 +181,7 @@ Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}
 
 ## Related Links
-- [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/?nc1=h_ls)
+- [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/)
 - [Amazon S3: Getting Started with Amazon S3](https://aws.amazon.com/s3/getting-started/)
 - [Amazon EC2: Getting Started with Amazon EC2](https://aws.amazon.com/ec2/getting-started/)
 - [Amazon Documentation: Amazon EC2 security groups for Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
