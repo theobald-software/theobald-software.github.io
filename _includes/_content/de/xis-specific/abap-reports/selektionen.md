@@ -8,10 +8,11 @@ Das minimiert die Eingabe von Selektionen, wenn Sie Reports ausführen.
 {: .box-note }
 **Hinweis:** Manuelle Selektionen und Varianten können kombiniert werden. Manuelle Selektionen überschreiben Selektionen in Varianten.
 
-![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
 ### Eine Variante wählen
 Wählen Sie eine Variante aus der Dropdown-Liste *Variant* (1).
 Wenn Sie eine neue Variante in SAP erstellen, nachdem die Report Extraktion in XU erstellt wurde, klicken Sie auf den **[Refresh]** Button neben der Dropdown-Liste, um die neue Variante abzurufen.
+
+![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
 
 {: .box-note }
 **Hinweis:** Die Selektionen der Variante werden **nicht** im Abschnitt *Selection Screen* angezeigt. 
@@ -25,9 +26,9 @@ Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie d
 Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
 
 
-1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]**. Das Fenster “Edit Selections” öffnet sich.
-![ODP Selection With Parameters](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
+1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]** (2). Das Fenster “Edit Selections” öffnet sich.
 2. Klicken Sie auf **[Add Selection]**, um Filterkriterien hinzuzufügen. <br>
+![ODP Selection With Parameters](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
 3. Wählen Sie in der Spalte **Sign** (3) die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
 Wählen Sie in der Spalte **Sign** (3) die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
 4. Wählen Sie in der Spalte **Option** (4) einen Operator. Der Operator filtert Daten wie in der folgenden Tabelle beschrieben:

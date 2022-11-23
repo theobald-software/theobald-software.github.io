@@ -7,7 +7,6 @@ When parameterizing the *Data Flow Properties*, the *Custom Porperties* are over
 
 For more information on property expessions, see [Microsoft Documentation: Use Property Expressions in Packages](https://learn.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages).
 
-
 <!---(technically: the property's *expressionType* XML-attribute is set to *notify*).
 VS: und was heißt das? Muss ich das wissen? Und falls ja, wofür????-->
 
@@ -21,5 +20,4 @@ VS: und was heißt das? Muss ich das wissen? Und falls ja, wofür????-->
 5. Open the "Expression Builder" using the **[…]** button under *Expression*.
 6. Build your Expression and click **[Evaluate Expression]** to check for correct syntax.
 7. Confirm your input with **[OK]**.
-
 

@@ -7,9 +7,10 @@ This minimizes the need to enter selections each time you run a report.
 {: .box-note }
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
 
-![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
 ### Choose a Variant
 Choose a variant from the drop-down-list *Variant* (1). If you create a new variant in SAP after the report extraction was created, click the **[Refresh]** button next to the drop-down list to access the new variant.
+
+![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
 
 {: .box-note }
 **Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. To see the definition of a variant, take a look at the report's variant in SAP.
@@ -20,9 +21,9 @@ This section corresponds to the report's input screen in SAP. Some selection fie
 To understand which field corresponds to a field in SAP, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. 
 This displays the technical name of a selection field.
 
-1. Click the **[Edit]** button next to the selection you want to edit. The window “Edit Selection” opens.<br> 
-![ODP Fields](/img/content/Report-Edit-Selections.png){:class="img-responsive"}<br>
+1. Click the **[Edit]** button next to the selection you want to edit (2). The window “Edit Selection” opens.<br> 
 2. Click **[Add Selection]** to add a new filter criterion.<br>
+![ODP Fields](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
 3. Select *Include* in the **Sign** (3) column to only include the filtered data to the output. <br>
 Select *Exclude* in the **Sign** (3) column to exclude the filtered data from the output.
 4. Select an operator in the **Option** (4) column. The operator filters data according to the table below.
