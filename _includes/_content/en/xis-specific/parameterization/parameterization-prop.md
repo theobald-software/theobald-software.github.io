@@ -1,11 +1,11 @@
 ### Parameterizing Using Expression Properties
 
-The *Custom Properties* of an Xtract IS component are displayed in the "Properties" window of the component. 
-These properties are not to be confused with *Data Flow Properties*. 
-The *Data Flow Properties* can be set via SSIS expressions and are displayed in the "Properties" window of the Data Flow Task. 
+The recommended way of parameterization is to use SSIS expressions to set *Data Flow Properties*. <br>
+*Data Flow Properties* are displayed in the "Properties" window of the Data Flow Task. 
+These properties are not to be confused with *Custom Properties* that are displayed in the "Properties" window of the component. 
+When parameterizing the *Data Flow Properties*, the *Custom Porperties* are overwritten.
 
-When parameterizing using *Data Flow Properties* as recommended by Microsoft, the *Custom Porperties* are overwritten.
-
+For more information on property expessions, see [Microsoft Documentation: Use Property Expressions in Packages](https://learn.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages).
 
 <!---(technically: the property's *expressionType* XML-attribute is set to *notify*).
 VS: und was heißt das? Muss ich das wissen? Und falls ja, wofür????-->
@@ -20,5 +20,4 @@ VS: und was heißt das? Muss ich das wissen? Und falls ja, wofür????-->
 5. Open the "Expression Builder" using the **[…]** button under *Expression*.
 6. Build your Expression and click **[Evaluate Expression]** to check for correct syntax.
 7. Confirm your input with **[OK]**.
-
 

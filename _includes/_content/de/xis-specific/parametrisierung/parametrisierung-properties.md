@@ -1,9 +1,15 @@
 ### Parametrisierung mit Expression Properties
 
-Die *Custom Properties* einer Xtract IS Komponente repräsentieren die Eigenschaften der Komponente und werden im "Properties" Fenster der Komponente angezeigt.
-Diese Properties sind nicht zu verwechseln mit den *Data Flow Properties*. *Data Flow Properties* können über SSIS-Ausdrücke gesetzt werden und werden im "Properies" Fenster des Data Flow Tasks angezeigt.
 
-Bei der von Microsoft empfohlenen Parametrisierung durch *Data Flow Properties* werden die Eigenschaften der Komponente zur Laufzeit überschrieben.
+Die empfohlene Art der Parametrisierung ist das Befüllen von *Data Flow Properties* durch SSIS-Ausdrücke.<br>
+*Data Flow Properties* werden im "Properies" Fenster des Data Flow Tasks angezeigt.
+Diese Properties sind nicht zu verwechseln mit den *Custom Properties*, die im "Properies" Fenster der Komponente angezeigt werden.
+Die *Custom Properties* werden bei der Parametrisierung von *Data Flow Properties* überschrieben.
+
+Für mehr Informationen zu Eigenschaftsausdrücken, siehe [Microsoft Dokumentation: Verwenden von Eigenschaftsausdrücken in Paketen](https://learn.microsoft.com/de-de/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver16).
+
+#### How to Use Expressions for Data Flow Properties
+
 
 1. Erstellen Sie ein SSIS Paket, siehe [Erste Schritte](../erste-schritte).
 2. Rechtsklicken Sie auf die *Data Flow Canvas* und wählen Sie **Properties**. Das Fenster "Properties" öffnet sich.<br>

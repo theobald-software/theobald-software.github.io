@@ -22,7 +22,7 @@ Wählen Sie in der Spalte **Sign** die Option *Exclude*, um die gefilterten Date
 Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
 Mit einem Klick auf das Symbol wechseln Sie zwischen statischen Werten und Laufzeitparametern.
 - Laufzeitparameter: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten Laufzeitparameter zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
-Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./odp-settings#edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
+Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./odp-settings#edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.
 Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
 6. Klicken Sie auf **[Load live preview]**, um die Funktionalität der definierten Filter zu prüfen. <br>
 Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 

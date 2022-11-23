@@ -8,7 +8,6 @@ Das minimiert die Eingabe von Selektionen, wenn Sie Reports ausführen.
 {: .box-note }
 **Hinweis:** Manuelle Selektionen und Varianten können kombiniert werden. Manuelle Selektionen überschreiben Selektionen in Varianten.
 
-
 ### Eine Variante wählen
 Wählen Sie eine Variante aus der Dropdown-Liste *Variant* (1).
 Wenn Sie eine neue Variante in SAP erstellen, nachdem die Report Extraktion in XU erstellt wurde, klicken Sie auf den **[Refresh]** Button neben der Dropdown-Liste, um die neue Variante abzurufen.
@@ -26,6 +25,7 @@ Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibun
 Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Eingabebildschirm in SAP. <br>
 Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
 
+
 1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]** (2). Das Fenster “Edit Selections” öffnet sich.
 2. Klicken Sie auf **[Add Selection]**, um Filterkriterien hinzuzufügen. <br>
 ![ODP Selection With Parameters](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
@@ -42,20 +42,15 @@ Wählen Sie in der Spalte **Sign** (3) die Option *Exclude*, um die gefilterten 
    |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
    |(Not)Between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
    |In | Wahr, wenn die Daten (nicht) Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
-5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter. <br>
+5. Geben Sie für die Filter feste Werte ein oder wählen Sie SSIS-Variablen. <br>
 - Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
-Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
+Wenn SSIS-Variablen verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
 Mit einem Klick auf das Symbol wechseln Sie zwischen statischen Werten und Laufzeitparametern.
-- Laufzeitparameter: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten Laufzeitparameter zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
-Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./report-edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
-Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
+- SSIS-Variablen: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten SSIS-Variablen zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
+Wählen Sie eine SSIS-Variable aus der Dropdown-Liste aus.
 6. Klicken Sie auf **[OK]**, um Ihre Selektion zu bestätigen.
 7. Klicken Sie im Hauptfenster der Komponente auf **[Load Preview]**, um die Selektion zu prüfen. <br>
-Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 
+Wenn SSIS-Variablen definiert sind, werden Sie aufgefordert, die Variablen mit echten Werten zu füllen. 
 
 {: .box-tip }
 **Tipp:** Wenn Sie mehrere Parameter für Ihre Selektion verwenden, erstellen Sie dafür eine Variante in SAP. Mit der Variante müssen Sie die Parameter nicht mehrmals manuell eingeben. 
-
-### Datenformat
-
-{% include _content/de/sap-data-format.md  %}
