@@ -129,7 +129,7 @@ Select a library and optionally define a trace directory for debug logging.
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system.  
 There are two options for using RFC libraries:
 - **Use classic RFC library (librfc32.dll)**
-- **Use NetWeaver RFC libraries** (sapnwrfc.dll)
+- **Use NetWeaver RFC libraries (sapnwrfc.dll)** 
 
 For more information on SAP libraries, see [SAP Documentation: - RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). <br>
 SAP has stopped [supporting librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). 
