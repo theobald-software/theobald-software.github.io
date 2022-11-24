@@ -83,7 +83,6 @@ Bevor Sie das von Xtract Universal generierte Qlik-Skript nach QlikSense kopiere
 4. Aktivieren Sie die Security Option **Allow response headers**. Dadurch werden Fehlermeldungen aus Xtract Universal an QlikSense weitergereicht.<br>
 ![qlik-allow-response-headers](/img/content/xu/qlik-allow-response-headers.png){:class="img-responsive"}
 5. Fügen Sie das QlikSense-Skript aus Xtract Universal in den Data-Load-Editor von QlikSense ein.<br>
-Prüfen Sie, dass die `xuConnectionBaseUrl` dieselbe URL hat wie der Xtract Universal Server.
 ![XU_qlik_QlikSense_load_editor](/img/content/XU_qlik_QlikSense_load_editor.png){:class="img-responsive"}
 
 
