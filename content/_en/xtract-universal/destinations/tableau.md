@@ -96,7 +96,7 @@ The following settings can be defined for the destination:
 {% include _content/en/xu-specific/destinations/general/column-mapping.md %}
 
 {: .box-note }
-**Note:** Columns that are not mapped are filled NULL values.
+**Note:** Columns that are not mapped are filled with NULL values.
 
 
 *****

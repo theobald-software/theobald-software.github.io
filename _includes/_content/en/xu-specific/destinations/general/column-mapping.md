@@ -5,13 +5,13 @@ This can be the case when extracting data from two or more extractions into the 
 
 {: .box-note }
 **Note:** The column names in the extraction and destination must be unique. 
-If duplicated column names are found, an error message opens.
+If duplicated column names are found, an error message is displayed.
 The column names must be corrected, before column mapping can be used.
 
 1. When working with flat files, ensure that:<br>
 a) the XU server and the Designer both have access to the destination file.<br>
 b) the [output directory](#destination-details) and the [file name](#file-name) of the extraction match the destination file. <br>
-c) the [Column Name Style](#column-name-style) of the extraction and destination match.
+c) the [Column Name Style](#column-name-style) of the extraction and destination file match.
 2. Select the option **Append results** in the section [Existing Files](#existing-files).
 3. Click **[Map]** to assign columns. The window "Column Mapping" opens.<br>
 *Destination Columns* displays the names of the columns that are available in the destination file or entity.
