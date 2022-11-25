@@ -20,6 +20,7 @@ Während der Evaluierungsphase erhalten Sie garantiert eine uneingeschränkte Un
 Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit an Theobald Software wenden: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [Internationale Kontaktdaten](https://theobald-software.com/en/contact/)
+- [Board Connector Einrichtung](/docs/sap-customizing/Voraussetzungen_BoardConnector.pdf){:download="Voraussetzungen_BoardConnector"}
 
 <!---
 ### Support
