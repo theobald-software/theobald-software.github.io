@@ -24,11 +24,11 @@ This is already available in the setup of the Xtract Universal and is provided w
 ### Supported Versions
 
 The following PostgreSQL versions are supported:
+- 15
 - 14
 - 13
 - 12
 - 11
-- 10
 
 For further information on versioning, refer to the official [website](https://www.postgresql.org/support/versioning/).
 
