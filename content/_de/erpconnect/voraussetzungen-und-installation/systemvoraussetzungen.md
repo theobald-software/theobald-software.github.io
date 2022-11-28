@@ -15,7 +15,6 @@ old_url: /ERPConnect-DE/default.aspx?pageid=systemvoraussetzungen
 
 ERPConnect (ohne LINQ to ERP) besteht aus drei .NET Assemblies, welche unterschiedliche [Frameworks als Ziel](https://docs.microsoft.com/de-DE/dotnet/standard/frameworks) haben:
 -	ERPConnect35.dll (Ziel: .NET Framework 3.5 SP1)
--	ERPConnect45.dll (Ziel: .NET Framework 4.5.2)
 -	ERPConnectStandard20.dll (Ziel: .NET Standard 2.0)
 
 Daraus ergibt sich folgende Kompatibilitätsmatrix:

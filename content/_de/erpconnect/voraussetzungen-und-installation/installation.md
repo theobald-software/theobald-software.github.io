@@ -36,10 +36,11 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | Datei | Beschreibung |
 | :------ |:--- | :--- |
 | ERPConnect35.dll (*)                   | ERPConnect Assembly für .NET 3.5 SP1.                                                                                                |
-| ERPConnect45.dll (*)                   | ERPConnect Assembly für .NET 4.5.2 oder höher.                                                                                       |
-| ERPConnect35.xml<br>  ERPConnect45.xml | Doku-Dateien für Visual Studio.                                                                                                      |
+| ERPConnectStandard20.dll (*) | ERPConnect Assembly für .NET Standard 2.0.|
+| ERPConnect35.xml<br>  ERPConnectStandard20.xml | Doku-Dateien für Visual Studio.                                                                                                      |
 | TransactionRecorder.exe                | Dieses Tool erzeugt Programmcode für die Klasse Transaction, siehe [Batch Input Hintergrundverarbeitung](../spezialklassen/transaktionen-aufrufen-und-steuern-die-klasse-transaction). |
 | IdocSchemeGenerator.exe                | Dieses Tool erzeugt Schema-Dateien (.xsd) für das IDoc-Handling, siehe [IDocs als XML verarbeiten](../idocs-senden-und-empfangen/idocs-als-xml-verarbeiten).                                  |
 | FunctionTemplateGenerator.exe          | Dieses Tool erzeugt XML-Templates für RFCFunction-Objekthierarchie, siehe [Performance-Tuning durch XML-Templates](../rfc-client-funktionen-und-bapis/performance-tuning-durch-xml-templates).    |
 
+Nach der Installation können Sie ERPConnect in Ihrer .NET Umgebung nutzen.<br>
 Die mit (<b>*</b>) gekennzeichneten Dateien können zusammen mit der erstellten Anwendung an den Kunden ausgeliefert werden (Redistributables).

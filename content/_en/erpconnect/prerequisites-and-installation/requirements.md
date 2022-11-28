@@ -15,7 +15,6 @@ old_url: /ERPConnect-EN/default.aspx?pageid=prerequisites
 
 ERPConnect (without LINQ to ERP) consists of three .NET assemblies that [target different frameworks](https://docs.microsoft.com/en-US/dotnet/standard/frameworks):
 -	ERPConnect35.dll (targets .NET Framework 3.5 SP1)
--	ERPConnect45.dll (targets .NET Framework 4.5.2)
 -	ERPConnectStandard20.dll (targets .NET Standard 2.0)
 
 That results in the following compatibility matrix: <!--- bei den Sätzen fehlen Verben. Die Personalpronomen müssen ersetzt werden--->
