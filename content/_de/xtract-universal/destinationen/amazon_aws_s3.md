@@ -15,15 +15,19 @@ progressstate: 5
 Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Cloud-Speicher [Amazon S3](https://aws.amazon.com/de/s3/).<br>
 Für mehr Informationen über Amazon S3, siehe [Erste Schritte mit Amazon S3](https://aws.amazon.com/de/s3/getting-started/).
 
+{: .box-tip }
+**Tipp:** Sie können Xtract Universal auf einer Amazon Elastic Compute (EC2) Instanz installieren, siehe [Amazon EC2: Erste Schritte mit Amazon EC2](https://aws.amazon.com/de/ec2/getting-started/).
+Um Latenz zu reduzieren, stellen Sie sicher, dass die Instanz in derselben Region läuft, wie Ihre SAP-Lösung.
+
 ## Voraussetzungen
 
 - ein Amazon Web Services ([AWS](https://aws.amazon.com/de/)) Account.
-- *entweder* die "[Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)" Ihres AWS Benutzers, bestehend aus "access key ID" und "secret access key". *Oder* eine IAM-Rolle, die an die [EC2-Instanz](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), auf der Xtract Universal läuft, angebunden wurde.
+- *entweder* die "[Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)" Ihres AWS Benutzers, bestehend aus "access key ID" und "secret access key". 
+*Oder* eine IAM-Rolle, die an die EC2-Instanz, auf der Xtract Universal läuft, angebunden wurde, siehe [Amazon Dokumentation: Verwenden einer IAM-Rolle zum Erteilen von Berechtigungen für Anwendungen, die auf Amazon EC2-Instances ausgeführt werden](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html).
 Für mehr Informationen zur IAM Rolle, siehe [Amazon Dokumentation: Bewährte Methoden für die Sicherheit in IAM](https://docs.aws.amazon.com/de_de/IAM/latest/UserGuide/best-practices.html).
 - einen AWS S3 Bucket, in den Sie Dateien hochladen können.
 - ausreichende Berechtigungen für das Auflisten/Lesen von und Schreiben nach S3 Buckets. Die Berechtigungen im nachfolgenden Screenshot wurden in einer Testumgebung getestet:<br>
 ![IAM_permissions_for_S3_destination](/img/content/xu/S3_desination_IAM_permissions.png){:class="img-responsive"}
-
 
 {: .box-note }
 **Hinweis:** Xtract Universal verwendet für den Upload nach S3 einen sog. [Multipart Upload](https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html). Das heißt, die extrahierten Daten werden Stück für Stück als sogenannte Parts nach S3 geschickt und dort zwischengepuffert. Im Falle einer erfolgreichen Extraktion werden die einzelnen Parts dann zu einer Datei zusammengefügt. Diese Datei ist auf S3 erst dann sichtbar, wenn die Extraktion in XU erfolgreich abgeschlossen ist.

@@ -16,18 +16,28 @@ progressstate: 5
 The following section describes data extraction to the [Amazon S3](https://aws.amazon.com/s3/) cloud storage.<br>
 For more information on Amazon S3, see [Getting Started with Amazon S3](https://aws.amazon.com/s3/getting-started/).
 
+{: .box-tip}
+**Tip:** You can install Xtract Universal in an Amazon Elastic Compute (EC2) instance. 
+Check [Amazon EC2: Getting Started with Amazon EC2](https://aws.amazon.com/ec2/getting-started/) to deploy an instance where you can install Xtract Universal in your AWS Account. 
+Make sure your instance is deployed in the same region as your SAP solution to reduce latency and optimize performance.
+
+
 ## Requirements
 
 - Existing Amazon Web Services (AWS) Account.
-- **Either** the "[Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)" (consisting of "access key ID" and "secret access key") of your AWS user at hand.<br> **Or** an IAM role attached to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html) Xtract Universal is running on.
+- **Either** the "[Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)" (consisting of "access key ID" and "secret access key") of your AWS user.<br> **Or** an IAM role attached to the EC2 instance Xtract Universal is running on, see [Amazon Documentation: Using an IAM role to grant permissions to applications running on Amazon EC2 instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html).
 For more information on the IAM role, see [Amazon Documentation: Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 - Existing S3 bucket, in which you can upload data.
 - Sufficient permissions for list, read and write activities on S3. You must grant these rights in the user policy, but you can limit them to certain buckets. 
 In the following example, the set permissions have been tested in a test environment: <br>
 ![IAM_permissions_for_S3_destination](/img/content/xu/S3_desination_IAM_permissions.png){:class="img-responsive"}
 
+
 {: .box-note }
-**Note:** Xtract Universal uses so called [Multipart](https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html) upload for uploading data to S3. Data extracted from SAP is uploaded to S3 not as one big chunk of data but in smaller parts. These parts are buffered on the S3 side. If the extraction is successful, those parts are assembled by S3 into one file. While the extraction is still running this file is not visible on S3.
+**Note:** Xtract Universal uses so called [Multipart](https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html) upload for uploading data to S3. 
+Data extracted from SAP is uploaded to S3 not as one big chunk of data but in smaller parts. 
+These parts are buffered on the S3 side. If the extraction is successful, those parts are assembled by S3 into one file. 
+While the extraction is still running this file is not visible on S3.
 
 {: .box-tip}
 **Recommendation:** We recomment you enable S3 versioning or perform data backups regularly, see [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/).
