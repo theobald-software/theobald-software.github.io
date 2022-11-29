@@ -19,7 +19,7 @@ For more information on Amazon S3, see [Getting Started with Amazon S3](https://
 {: .box-tip}
 **Tip:** You can install Xtract Universal in an Amazon Elastic Compute (EC2) instance. 
 Check [Amazon EC2: Getting Started with Amazon EC2](https://aws.amazon.com/ec2/getting-started/) to deploy an instance where you can install Xtract Universal in your AWS Account. 
-Make sure your instance is deployed in the same region as your SAP solution to reduce latency and optimize performance.
+Make sure the instance is deployed in the same region as your SAP solution to reduce latency and optimize performance.
 
 
 ## Requirements
