@@ -62,7 +62,7 @@ R3Connection.Protocol = ClientProtocol.NWRFC;
 ```
 
 Für die 64-Bit Umgebung sind folgende DLLs nötig:
-- ERPConnect35.dll oder ERPConnect45.dll
+- ERPConnect35.dll oder ERPConnectStandard20.dll
 - sapnwrfc.dll
 - icuucXX.dll
 - icudtXX.dll
