@@ -8,7 +8,6 @@ gem 'tzinfo-data'
 
 group :jekyll_plugins do
   gem 'jekyll-algolia'
-  gem 'jekyll-algolia'
 end
 
 gem "webrick", "~> 1.7"
