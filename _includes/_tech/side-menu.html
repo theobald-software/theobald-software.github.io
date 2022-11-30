@@ -41,9 +41,10 @@
 		{% endfor %}
 		<div id="side-menu-list-item-search"></div>
 
-		{% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.parent == page.parent" | where_exp:"doc", "doc.product == page.product" %}
+		{% assign filtered_docs = collection[0].docs | where_exp:"doc", "doc.parent == 'home'" | where_exp:"doc", "doc.product == page.product" %}
 		{% assign filtered_and_sorted_docs = filtered_docs | sort: 'weight' %}
 		{% for doc in filtered_and_sorted_docs %}
+
 			{% if doc.title == page.title %}
 				<li class="side-menu-list-item">
 					<div class="side-menu-list-item-hover"><a data-toggle="collapse" data-parent="#accordion" href="#currentpage" class="side-menu-dropdown-trigger">
