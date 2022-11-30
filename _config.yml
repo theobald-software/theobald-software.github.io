@@ -35,13 +35,10 @@ social:
 # Maximum depth for breadcrumb. Do not change.
 breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
-
-
-
 algolia:
   application_id: '4C27F1P1UC'
   index_name: theobald-software-online-help
-  search_only_api_key:
+  search_only_api_key: 753c17f35b161aa1a325b82e05d048a1
   settings:
     attributesForFaceting: ['title','searchable(collection)', 'searchable(title)', 'searchable(product)', 'searchable(lang)', 'searchable(old_url)']
     searchableAttributes: ['title','unordered(content)','collection','description','lang','old_url']
