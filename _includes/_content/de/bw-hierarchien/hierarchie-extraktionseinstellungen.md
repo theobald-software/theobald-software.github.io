@@ -50,3 +50,8 @@ Das folgende Beispiel demonstriert die zuvor gezeigte Hierarchie mit der aktivie
 **Description texts for levels**<br>
 Setzt das Output-Feld *LevelTextN* für jedes Feld *LevelN* , welches den Text beinhaltet, der auf den Einstellungen der Systemsprache basiert.
 
+### Debug
+
+**Enable Debug Logging:**<br>
+Fügt den Extraktions-Logs detailierte Logs für die Hierarchy-Komponente hinzu.
+Aktivieren Sie **Enable Debug Logging** nur bei Bedarf, z.B. auf Anfrage des Support-Teams.

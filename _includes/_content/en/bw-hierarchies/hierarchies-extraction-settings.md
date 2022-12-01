@@ -39,3 +39,7 @@ The following example depicts the previously shown hierarchy with the activated 
 Sets the output field *LevelTextN* for each field *LevelN* containing the text based on the system language settings.<br>
 ![Hierarchy-Description-Texts](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}
 
+### Debug
+
+**Enable Debug Logging:**<br>
+Adds more detailed logs for the Hierarchy component to the extraction logs. Activate **Enable Debug Logging** only when necessary e.g., upon request of the support team.
