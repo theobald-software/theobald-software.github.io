@@ -25,7 +25,7 @@ On the way to SAP or on the SAP side, the Windows user and its SAP credentials a
 
 Single Sign-On (SSO) with an Xtract product can be realized via three different procedures:
 
-- [Secure Network Communication (SNC) with Client Certificates](#sso-and-snc-with-client-certificate)
+- [Secure Network Communication (SNC) with Client Certificates](#sso-and-snc-with-client-certificates)
 - [Secure Network Communication (SNC) with SAP's Kerberos Wrapper Library](#sso-and-snc-with-kerberos-wrapper-library)
 - [SAP Logon Ticket](#sso-via-sap-logon-ticket)
 
