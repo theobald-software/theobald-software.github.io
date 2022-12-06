@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/default.aspx?pageid=javascript-bibliothek-fuer-rest
 ---
 
-Für die Entwicklung mit ECS REST Services und JavaScript empfehlen wir den Einsatz unserer [JavaScript-Bibliothek Client Library tEcs (theobald.ecs.micro) for ERPConnect Services/Core](https://static.theobald-software.com/theobald.ecs.micro/5.4.2/), welche die clientseitige Programmierung mit JavaScript durch die Kapselung der Basisfunktionen von ECS vereinfacht.
+Für die Entwicklung mit ECS REST Services und JavaScript empfehlen wir den Einsatz unserer [JavaScript-Bibliothek Client Library tEcs (theobald.ecs.micro) for ERPConnect Services/Core](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html), welche die clientseitige Programmierung mit JavaScript durch die Kapselung der Basisfunktionen von ECS vereinfacht.
 
 {% highlight javascript %}
 theobald.ready(function() {
