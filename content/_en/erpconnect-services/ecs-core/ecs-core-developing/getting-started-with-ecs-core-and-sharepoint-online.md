@@ -56,7 +56,7 @@ On the left side of the page under the Pages folder, choose the Default.aspx pag
 
 In the PlaceHolderAdditionalPageHead section, add those 2 lines to add a reference to Theobald JavaScript library (tEcs):
 
-In this sample we used the current version src="//static.theobald-software.com/theobald.ecs/4.10.2/theobald.ecs.js"
+In this sample we used the current version.
 
 *Important:* please check and use the latest version of tEcs, where newest changes and improvements are incorporated! Please visit: [https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 

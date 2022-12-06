@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /ERPConnect-Services-EN/default.aspx?pageid=validation1
 ---
 
-To test and insure that the configured components work correctly you can use the [tEcs-Library](https://static.theobald-software.com/tEcs) (recommended), alternatively use the instructions and snippets prepared for you in the section ERPConnect Services Runtime>Webservices>REST without tEcs  "Table with REST" or another example.
+To test and insure that the configured components work correctly you can use the [tEcs-Library](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html) (recommended), alternatively use the instructions and snippets prepared for you in the section ERPConnect Services Runtime>Webservices>REST without tEcs  "Table with REST" or another example.
 
 Use this [JSBin snippet](http://output.jsbin.com/gejem/13) to easily test your ECSCore and SAP Connection.
 

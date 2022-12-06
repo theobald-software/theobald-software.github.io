@@ -42,9 +42,6 @@ Add a reference to the ECS JavaScript library under Form *Settings -> Advanced -
 
 https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html
 
-The JS library is updated regularly. To be sure to use the latest version load *http://static.theobald-software.com/* first in your internet browser and then click on *Go to the Latest version*.  
-
-Important: In some browsers (i.e. IE) the site http://static.theobald-software.com/ must be added to the trusted internet sites in the internet options otherwise it can't be loaded and the execution of the JS include will fail. 
 
 ![nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.png){:class="img-responsive"}
 
