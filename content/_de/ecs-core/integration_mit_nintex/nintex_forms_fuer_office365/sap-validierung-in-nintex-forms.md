@@ -40,7 +40,7 @@ Wiederholen Sie die letzten Schritte fürs zweite Feld und benennen Sie es, z.B.
 
 Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -> Advanced -> Custom JavaScript Includes* ein:
 
-[http://static.theobald-software.com/theobald.ecs.micro/5.4.2/theobald.ecs.micro.js]()
+[https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
 
 ![nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.png){:class="img-responsive"}

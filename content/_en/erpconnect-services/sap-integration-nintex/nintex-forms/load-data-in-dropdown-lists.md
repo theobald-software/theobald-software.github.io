@@ -54,7 +54,7 @@ Since this should be only a display field you can also define under *Appearance*
 
 Add a reference to the JavaScript library under *Settings - Form -> Advanced -> Custom JavaScript Includes:*
 
-http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js
+https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html
 
 ![nintex-forms-js-dropdown-05](/img/content/nintex-forms-js-dropdown-05.png){:class="img-responsive"}
 

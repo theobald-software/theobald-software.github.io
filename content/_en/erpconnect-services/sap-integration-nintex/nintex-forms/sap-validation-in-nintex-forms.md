@@ -40,7 +40,7 @@ Repeat the same steps for the second field and give it a name, e.g. *field_outpu
 
 Add a reference to the ECS JavaScript library under Form *Settings -> Advanced -> Custom JavaScript Includes*:
 
-http://static.theobald-software.com/theobald.ecs.micro/5.4.2/theobald.ecs.micro.js
+https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html
 
 The JS library is updated regularly. To be sure to use the latest version load *http://static.theobald-software.com/* first in your internet browser and then click on *Go to the Latest version*.  
 

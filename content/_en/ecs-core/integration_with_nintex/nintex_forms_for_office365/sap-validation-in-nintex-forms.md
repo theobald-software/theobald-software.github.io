@@ -39,7 +39,7 @@ Repeat the last steps for the second field and name it, e.g. *field_output*.
 
 Add a reference to our JavaScript library under *Form Settings -> Advanced -> Custom JavaScript Includes*:
 
-[http://static.theobald-software.com/theobald.ecs.micro/5.4.2/theobald.ecs.micro.js]()
+[https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html]()
 
 
 ![nintex-forms-js-ecs-05](/img/content/nintex-forms-js-ecs-05.png){:class="img-responsive"}
