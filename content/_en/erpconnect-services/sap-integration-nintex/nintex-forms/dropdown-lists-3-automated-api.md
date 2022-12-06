@@ -51,7 +51,7 @@ NWF$(document).ready(function () {
 });
 {% endhighlight %}
 
-The full signature can also be found [here](https://static.theobald-software.com/theobald.ecs.micro/5.6.0/index.html#div-liveCombobox).
+The full signature can also be found [here](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html#div-liveCombobox).
 
 The script is a template for the following two use cases, which can be changed or adapted any time: 
 

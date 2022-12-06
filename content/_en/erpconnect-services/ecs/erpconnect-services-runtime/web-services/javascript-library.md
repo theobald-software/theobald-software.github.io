@@ -71,5 +71,5 @@ tEcs.callSoapService({
 ```
 
 **theobald.ecs:**<br>
-[theobald.ecs](https://static.theobald-software.com/theobald.ecs/5.0.0/) is an extension of **theobald.ecs.micro** and requires Query. 
-If you would like to work with SharePoint and Persistence APIs e.g. save connection parameters in SharePoint (APIKey, ServiceApplication, Url) or set configuration parameters on the client use [theobald.ecs](https://static.theobald-software.com/theobald.ecs/5.0.0/). 
+[theobald.ecs](https://cdn-files.theobald-software.com/static/theobald.ecs/5.1.0/index.html) is an extension of **theobald.ecs.micro** and requires Query. 
+If you would like to work with SharePoint and Persistence APIs e.g. save connection parameters in SharePoint (APIKey, ServiceApplication, Url) or set configuration parameters on the client use [theobald.ecs](https://cdn-files.theobald-software.com/static/theobald.ecs/5.1.0/index.html). 
