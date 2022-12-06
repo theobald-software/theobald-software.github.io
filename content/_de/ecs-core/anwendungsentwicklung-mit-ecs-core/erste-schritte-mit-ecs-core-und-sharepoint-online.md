@@ -57,7 +57,7 @@ Auf der linken Seite unter dem Ordner Pages wählen Sie die Seite Default.aspx.
 
 Im Abschnitt *PlaceHolderAdditionalPageHead* fügen Sie die folgende Zeile als Referenz zur Theobald JavaScript library (tEcs):
 
-Im Beispiel nutzen wir die Version 4.10.2: src="//static.theobald-software.com/theobald.ecs/4.10.2/theobald.ecs.js"
+Im Beispiel nutzen wir die Version 4.10.2.
 
 Wichtig: Bitte nutzen Sie immer die aktuelle Version von tEcs, welche die neuesten Änderungen und Verbesserungen enthält. Siehe: [https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
