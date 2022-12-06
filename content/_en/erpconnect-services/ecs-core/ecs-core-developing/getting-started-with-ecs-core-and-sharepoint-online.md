@@ -98,7 +98,7 @@ Let us put the basic code to call SAP through AzureBus and ECS Core:
 The 'data'-field contains the SAP statement (using XtractQL) to get the German and English material description from the SAP table MAKT. 
 
 A table is used to display the result. <br>
-For more information about the code to connect SAP and extract the data refer to the online help and to our JavaScript library [tEcs](http://static.theobald-software.com/theobald.ecs.micro/5.4.2/).<br>
+For more information about the code to connect SAP and extract the data refer to the online help and to our JavaScript library [tEcs](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html).<br>
 In this sample we read data from an SAP table. To execute an SAP function module check the following section [Executing an SAP function](./executing-an-sap-function). 
 
 **Step 4: Run the app**
