@@ -87,7 +87,7 @@ Das Beispiel ist damit für eine Vielzahl von möglichen Szenarien anpassbar und
 
 Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -> Advanced -> Custom JavaScript Includes* ein:
 
-[http://static.theobald-software.com/theobald.ecs.micro/5.6.0/theobald.ecs.micro.js](http://static.theobald-software.com/theobald.ecs.micro/5.6.0/theobald.ecs.micro.js)
+[https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
 Die aktuelle Version der JavaScript-Bibliothek erhalten Sie bei der Eingabe der abgekürzten URL:
 

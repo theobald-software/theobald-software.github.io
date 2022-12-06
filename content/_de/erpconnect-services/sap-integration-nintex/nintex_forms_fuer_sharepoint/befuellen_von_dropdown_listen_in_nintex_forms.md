@@ -45,7 +45,7 @@ Da es sich nur um ein Anzeigefeld handeln soll, können Sie zusätzlich unter *A
 
 Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -> Advanced -> Custom JavaScript Includes* ein:
 
-[http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js](http://static.theobald-software.com/theobald.ecs.micro/5.2.0/theobald.ecs.micro.js)
+[https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
 
 ![nintex-forms-js-dropdown-05](/img/content/nintex-forms-js-dropdown-05.png){:class="img-responsive"}

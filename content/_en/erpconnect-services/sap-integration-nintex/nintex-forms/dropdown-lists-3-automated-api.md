@@ -87,7 +87,7 @@ The example is therefore adaptable and applicable for a multitude of possible sc
 
 Add a reference to our JavaScript library under *Form Settings -> Advanced -> Custom JavaScript Includes*:
 
-[http://static.theobald-software.com/theobald.ecs.micro/5.6.0/theobald.ecs.micro.js](http://static.theobald-software.com/theobald.ecs.micro/5.6.0/theobald.ecs.micro.js)
+[https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
 The latest version of the JavaScript library can be obtained by entering the abbreviated URL:
 

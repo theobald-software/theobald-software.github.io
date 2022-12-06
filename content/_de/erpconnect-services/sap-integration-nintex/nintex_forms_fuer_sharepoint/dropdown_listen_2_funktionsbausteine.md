@@ -32,7 +32,7 @@ Setzen Sie *field_output_id* als *Client ID JavaScript variable name* für das F
 
 Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -> Advanced -> Custom JavaScript Includes* ein:
 
-[http://static.theobald-software.com/theobald.ecs.micro/5.7.0/theobald.ecs.micro.js](http://static.theobald-software.com/theobald.ecs.micro/5.7.0/theobald.ecs.micro.js)
+[https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
 
 Fügen Sie den JavaScript-Code unter *Form Settings -> Advanced -> Custom JavaScript* ein.
