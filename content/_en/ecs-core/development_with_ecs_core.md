@@ -17,7 +17,7 @@ Applications with ECS Core can use any programming language that can consume RES
 
 **JavaScript library für REST**
 
-For development with ECS REST Services and JavaScript we recommend the use of our [JavaScript library](http://static.theobald-software.com/theobald.ecs.micro/) (tEcs),  
+For development with ECS REST Services and JavaScript we recommend the use of our [JavaScript library](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html) (tEcs),  
 which simplifies client-side programming with ECS by encapsulating certain ECS functionalities. 
 
 **App Development** 

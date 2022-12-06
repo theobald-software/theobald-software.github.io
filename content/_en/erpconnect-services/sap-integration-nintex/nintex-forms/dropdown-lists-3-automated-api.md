@@ -91,7 +91,7 @@ Add a reference to our JavaScript library under *Form Settings -> Advanced -> Cu
 
 The latest version of the JavaScript library can be obtained by entering the abbreviated URL:
 
-[http://static.theobald-software.com/theobald.ecs.micro/](http://static.theobald-software.com/theobald.ecs.micro/)
+[https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
 Insert the JavaScript code under *Form Settings -> Advanced -> Custom JavaScript*.
 

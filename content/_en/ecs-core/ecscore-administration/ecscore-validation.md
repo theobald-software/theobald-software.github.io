@@ -10,7 +10,7 @@ weight: 7
 lang: en_GB
 ---
 
-To ensure that everything is configured correctly and the connection settings work as wanted, you can use the [tecs library](http://static.theobald-software.com/theobald.ecs.micro/) (recommended: section *Live Test of your ECSCore*), as well as pure Javascript or REST clients such as [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) or [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox), which are freely available as browser extensions. <br>
+To ensure that everything is configured correctly and the connection settings work as wanted, you can use the [tecs library](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html) (recommended: section *Live Test of your ECSCore*), as well as pure Javascript or REST clients such as [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) (Chrome) or [RESTClient](https://addons.mozilla.org/de/firefox/addon/restclient/) (Firefox), which are freely available as browser extensions. <br>
 
 Important: The test refers purely to the stored SAP connections of the *Management Site* ('management endpoint'). To consume services, the *Services Site* ('Consumer Endpoint') must be used. For more information, see *Webservice Authentication*.  
 
