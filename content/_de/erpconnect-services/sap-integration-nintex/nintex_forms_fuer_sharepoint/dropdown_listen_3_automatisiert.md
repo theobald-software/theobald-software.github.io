@@ -89,9 +89,6 @@ Fügen Sie eine Referenz zu unserer JavaScript-Bibliothek unter *Form Settings -
 
 [https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
-Die aktuelle Version der JavaScript-Bibliothek erhalten Sie bei der Eingabe der abgekürzten URL:
-
-[http://static.theobald-software.com/theobald.ecs.micro/](http://static.theobald-software.com/theobald.ecs.micro/)
 
 Fügen Sie den JavaScript-Code unter *Form Settings -> Advanced -> Custom JavaScript* ein.
 
