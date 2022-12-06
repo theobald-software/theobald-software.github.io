@@ -58,7 +58,7 @@ In the *PlaceHolderAdditionalPageHead* section, add the following line as a refe
 
 In the example we are using version 4.10.2: src="//static.theobald-software.com/theobald.ecs/4.10.2/theobald.ecs.js"
 
-Important: Please always use the latest version of tEcs, which contains the latest changes and improvements. See: [http://static.theobald-software.com/tEcs/](http://static.theobald-software.com/tEcs/)
+Important: Please always use the latest version of tEcs, which contains the latest changes and improvements. See: [https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
 ![ecscore-gettingstarted-04](/img/content/ecscore-gettingstarted-04.png){:class="img-responsive"}
 

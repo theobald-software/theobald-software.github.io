@@ -58,7 +58,7 @@ In the PlaceHolderAdditionalPageHead section, add those 2 lines to add a referen
 
 In this sample we used the current version src="//static.theobald-software.com/theobald.ecs/4.10.2/theobald.ecs.js"
 
-*Important:* please check and use the latest version of tEcs, where newest changes and improvements are incorporated! Please visit: [http://static.theobald-software.com/tEcs/](http://static.theobald-software.com/tEcs/)
+*Important:* please check and use the latest version of tEcs, where newest changes and improvements are incorporated! Please visit: [https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html](https://cdn-files.theobald-software.com/static/theobald.ecs.micro/5.7.0/index.html)
 
 ![ecscore-gettingstarted-04](/img/content/ecscore-gettingstarted-04.png){:class="img-responsive"}
 
