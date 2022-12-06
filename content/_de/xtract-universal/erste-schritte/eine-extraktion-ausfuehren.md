@@ -12,7 +12,7 @@ progressstate: 5
 
 ---
 
-Der Extract Universal Designer bietet die Möglichkeit Extraktionen auszuführen, indem Sie
+Der Xtract Universal Designer bietet die Möglichkeit Extraktionen auszuführen, indem Sie
 Laufzeitparameter und andere Optionen übergeben.
 
 ### Extraktion ausführen 			 

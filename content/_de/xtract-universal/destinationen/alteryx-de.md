@@ -20,7 +20,7 @@ Für die Verwendung der Alteryx-Destination wird das Xtract Universal Alteryx Pl
 ### Installation durch das Xtract Universal Setup
 
 Falls Alteryx bereits installiert ist, wird das Xtract Universal Alteryx Plugin zusammen mit Xtract Universal auf dem Zielsystem installiert. <br>
-Falls Sie Alteryx nach Xtract Universal installieren, können Sie das Extract-Universal-Setup erneut ausführen.
+Falls Sie Alteryx nach Xtract Universal installieren, können Sie das Xtract Universal Setup erneut ausführen.
 
 Nach der Installation von Xtract Universal erstellt das Setup die folgenden Einträge und Erweiterungen im Installationsverzeichnis von Alteryx:
 - `Alteryx\Settings\AdditionalPlugins\XtractUniversal.ini`
