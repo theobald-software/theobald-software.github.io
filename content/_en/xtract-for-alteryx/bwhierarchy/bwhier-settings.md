@@ -11,14 +11,14 @@ lang: en_GB
 ---
 
 To access the extraction settings, click **[Extraction Settings]** in the main window of the component. The window “Hierarchy Settings” opens.<br>
-![Hierarchies-Settings](/img/content/Hierarchy-settings.png){:class="img-responsive"}
+![Hierarchies-Settings](/img/content/extractors.bwhier/Hierarchy-settings.png){:class="img-responsive"}
 
 ### Extraction Settings
 **Representation:** 
 - *ParentChild*: The hierarchy is represented in the SAP parent-child format, see [Output Formats: Parent-Child](./table-output#parent-child-format). Example:<br>
-![Hierarchies-Parent-Child](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
+![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 - *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy, see [Output Formats: Natural](./table-output#natural-format). Example:<br>
-![Hierarchy-Parent-Child-Natural](/img/content/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
+![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Remove Leading Zeros:**<br>
 If this option is active, all leading zeros in the column *NoName* are removed via ALPHA conversion.
@@ -36,16 +36,16 @@ Sets the node text in the column *NodeText* based on the system language setting
 
 **Level Count:** <br>
 Defines the maximum number of levels. The following example shows a hierarchy with four levels. <br>
-![Hierarchy-Parent-Child-Natural](/img/content/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
+![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Leaves only:**<br>
 Returns only the leaves as data records.<br>
-![Hierarchy-Leaves-Only](/img/content/Hierarchy-leaves-only.png){:class="img-responsive"}
+![Hierarchy-Leaves-Only](/img/content/extractors.bwhier/Hierarchy-leaves-only.png){:class="img-responsive"}
 
 **Fill empty levels:**  <br>
 Copies the bottom element of the hierarchy until the last level.
 The following example depicts the previously shown hierarchy with the activated *Repeat Leaves* option.<br>
-![Hierarchy-Parent-Child-Repeat](/img/content/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
+![Hierarchy-Parent-Child-Repeat](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
 
 **Description texts for levels:**<br>
 Sets the output field *LevelTextN* for each field *LevelN* containing the text based on the system language settings.<br>
