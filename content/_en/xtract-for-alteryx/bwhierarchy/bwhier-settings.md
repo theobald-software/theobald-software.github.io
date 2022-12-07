@@ -15,16 +15,18 @@ To access the extraction settings, click **[Extraction Settings]** in the main w
 
 ### Extraction Settings
 **Representation:** 
-- *ParentChild*: The hierarchy is represented in the SAP parent-child format, see [Output Formats: Parent-Child](./table-output#parent-child-format). Example:<br>
+- *ParentChild*: The hierarchy is represented in the SAP parent-child format, see [Output Formats: ParentChild](./table-output#parentchild-format). Example:<br>
 ![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 - *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy, see [Output Formats: Natural](./table-output#natural-format). Example:<br>
 ![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
+- **ParentChildWithNodeNames**: The hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent, see [Output Formats: ParentChildWithNodeNames](./table-output#parentchildwithnodenames-format). Example:<br>
+![Hierarchy-Parent-Child-With-Node-Names](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
 **Remove Leading Zeros:**<br>
-If this option is active, all leading zeros in the column *NoName* are removed via ALPHA conversion.
+If this option is active, all leading zeros in the column *NodeName* of the leaves are removed.
 *NodeName* can then be used in a JOIN-condition with the corresponding Dimension-Key of a BW Cube extraction.<br>
 The conversion works for compound InfoObjects, too. 
-Example: 0CO_AREA (1000) and 0COSTCENTER (0000003100) becomes 1000/3100.
+Example: 0CO_AREA (1000) and 0COSTCENTER (0000003100) become 1000/3100.
 
 **Fetch description texts:**<br>
 Sets the node text in the column *NodeText* based on the system language settings. 
