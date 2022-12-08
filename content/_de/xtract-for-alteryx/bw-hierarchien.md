@@ -11,6 +11,7 @@ weight: 8
 lang: de_DE
 progressstate: 5
 ---
+
 Der folgende Abschnitt beschreibt die Funktion der Xtract Hierarchy-Komponente. <br>
 Die Komponente Xtract Hierarchy ermöglicht die Extraktion von Hierarchien von einem SAP BW System.
 
@@ -30,21 +31,18 @@ Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffe
 
 ### Funktionsübersicht
 Das Hauptfenster der BW Hierarchy Komponente besteht aus zwei Unterabschnitten:
-- Hierarchy Extraction
+- Selected Hierarchy
 - Preview
 
 ![Hierarchy Extractor](/img/content/xfa/xfa_hierarchy.png){:class="img-responsive"}
 
 #### Hierarchy Extraction
-Innerhalb des Unterabschnitts **Hierarchy Extraction** können Sie nach [SAP BW Hierarchien suchen](./bw-hierarchien/hierarchien-als-datenquelle-definieren). Verwenden Sie dafür **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol).
-![Hierarchy Suche](/img/content/xfa/xfa_hierarchy_search.png){:class="img-responsive"}
-
-**Date To**<br>
-Der Standartwert für das Feld *Date To* ist 99991231. Um den Standardwert zu ändern, klicken Sie auf **[Run]** und überschreiben Sie den Wert. 
+Innerhalb des Unterabschnitts **Hierarchy Extraction** können Sie nach [SAP BW Hierarchien suchen](./bw-hierarchien/hierarchien-als-datenquelle-definieren). 
+Verwenden Sie dafür **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol).
+Der Standartwert für das Feld *DateTo* ist 99991231. Um den Standardwert zu ändern, klicken Sie auf **[Run]** und überschreiben Sie den Wert. 
 
 #### Preview
 Der Unterabschnitt **Preview** [zeigt die Felder](./bw-hierarchien/hierarchien-als-datenquelle-definieren#echtzeitvorschau-der-ausgewählten-hierarchie-anzeigen) der ausgewählten SAP BW Hierarchie. Klicken Sie dafür auf **[Load Live Preview]**.
-![Hierarchy preview](/img/content/xfa/xfa_hierarchy_buttons.png){:class="img-responsive"}
 
 #### Schaltflächen
 - **[Extraction Settings]** öffnet die [spezifischen Extraktionseinstellungen](./bw-hierarchien/hierarchie-extraktionseinstellungen) z.B. Darstellung oder Ebenenanzahl. <br>

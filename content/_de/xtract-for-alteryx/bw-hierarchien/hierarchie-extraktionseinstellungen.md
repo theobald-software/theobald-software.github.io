@@ -17,11 +17,11 @@ Das Fenster “Hierarchy Settings” öffnet sich.<br>
 
 #### Extraktionseinstellungen
 **Representation:** 
-- **ParentChild**: Die Hierarchie ist im Parent-Child-Format repräsentiert. Beispiel: <br>
-![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchies-Parent-Child.png){:class="img-responsive"}
-- **Natural**: Die SAP Parent-Child-Hierarchie wird in eine reguläre Hierarchie transformiert. Beispiel: <br>
+- *ParentChild*: Die Hierarchie ist im Parent-Child-Format repräsentiert. Beispiel: <br>
+![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
+- *Natural*: Die SAP Parent-Child-Hierarchie wird in eine reguläre Hierarchie transformiert. Beispiel: <br>
 ![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
-- **ParentChildWithNodeNames**: Die Hierarchie ist in einem reduzierten Parent-Child-Format repräsentiert, das nur den Knoten und den Vaterknoten beinhaltet, siehe [Ausgabeformat: ParentChildWithNodeNames](./table-output#parentchildwithnodenames-format). Beispiel:<br>
+- *ParentChildWithNodeNames*: Die Hierarchie ist in einem reduzierten Parent-Child-Format repräsentiert, das nur den Knoten und den Vaterknoten beinhaltet, siehe [Ausgabeformat: ParentChildWithNodeNames](./table-output#parentchildwithnodenames-format). Beispiel:<br>
 ![Hierarchy-Parent-Child-With-Node-Names](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
 **Remove Leading Zeros (Führende Nullen entfernen)**<br>

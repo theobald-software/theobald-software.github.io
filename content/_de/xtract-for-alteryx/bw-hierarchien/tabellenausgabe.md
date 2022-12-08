@@ -4,7 +4,7 @@ layout: page
 title: Ausgabeformat
 description: Tabellenausgabe
 product: xtract-for-alteryx
-parent: bwhierarchy
+parent: bwhierarchien
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

@@ -19,7 +19,7 @@ To access the extraction settings, click **[Extraction Settings]** in the main w
 ![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 - *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy, see [Output Formats: Natural](./table-output#natural-format). Example:<br>
 ![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
-- **ParentChildWithNodeNames**: The hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent, see [Output Formats: ParentChildWithNodeNames](./table-output#parentchildwithnodenames-format). Example:<br>
+- *ParentChildWithNodeNames*: The hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent, see [Output Formats: ParentChildWithNodeNames](./table-output#parentchildwithnodenames-format). Example:<br>
 ![Hierarchy-Parent-Child-With-Node-Names](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
 **Remove Leading Zeros:**<br>
