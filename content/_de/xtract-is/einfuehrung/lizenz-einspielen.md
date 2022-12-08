@@ -15,7 +15,7 @@ progressstate: 5
 Die folgende Grafik zeigt, auf welchen Rechnern die Installation von Xtract IS mit einer gültigen Lizenz erforderlich ist.  
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive" width="800px"} <br>
 
-Die Lizenzierung von Xtract IS erfolgt pro Quellsystem und Windows-Server auf dem SSIS-Pakete bereitgestellt und ausgeführt werden. Dieselbe Lizenzdatei kann auf den lokalen Rechnern für die Entwicklung der SSIS-Pakete verwendet werden.
+Die Lizenzierung von Xtract IS erfolgt pro Windows-Server auf dem SSIS-Pakete bereitgestellt und ausgeführt werden. Dieselbe Lizenzdatei kann auf den lokalen Rechnern für die Entwicklung der SSIS-Pakete verwendet werden.
 Mit der Installation von Xtract IS wird automatisch eine Demo-Lizenz installiert. <br>
 Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.
 
