@@ -14,34 +14,20 @@ Der folgende Abschnitt beschreibt die Anwendung der Xtract Hierarchy Komponente.
 
 ### Eine BW Hierarchy finden
 
-1. Im Hauptfenster des Designers navigieren Sie zum Unterabschnitt **Hierarchy Extraction** und klicken Sie auf  **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol)(1).  
-![Define-Data-Source-Hierarchy](/img/content/xfa/Define-Data-Source-Hierarchy_1.png){:class="img-responsive"}
+1. Im Hauptfenster des Designers klicken Sie auf  **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol).  
 Das Fenster "Hierarchy Lookup" wird geöffnet.
-2. Im Feld **Hierarchy Name** (2) geben Sie einen Namen eines beliebigen Extraktors, verwenden Sie Wildcards (*), falls notwendig.
-![Look-Up-Hierarchy](/img/content/extractors.bwhier/Look-Up-Hierarchy.png){:class="img-responsive"}
-3. Klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol)(3) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste(4).
-4. Klicken Sie auf **[OK]** (5) zum Bestätigen.
+2. Im Feld **Hierarchy Name** (1) geben Sie den Namen einer Hierarchie ein. Alternativ können Sie im Feld **InfoObject** nach InfoObjects suchen. Verwenden Sie Wildcards (*), falls notwendig.
+![Look Up Hierarchy](/img/content/extractors.bwhier/Hierarchy-Search-01.png){:class="img-responsive"}
+3. Klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste (2).
+4. Klicken Sie auf **[Select]** zum Bestätigen.
 
 Klicken auf **[[Extraction Settings](./hierarchie-extraktionseinstellungen)]**, um die Hierarchieeinstellungen zu definieren.
 
-### Ausgewählte BW Hierarchie in Echtzeitvorschau
-Klicken Sie auf **[Load live preview]** (6), um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.<br>
-
+### Format und Vorschau
+1. Klicken Sie auf **[Extraction Settings]** (3), um das Ausgabeformat der Hierarchie zu definieren, siehe [Extraktionseinstellungen](./hierarchie-extraktionseinstellungen).
+2. Klicken Sie auf **[Load live preview]** (4), um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.<br>
 ![Define-Data-Source-Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"}
-
-Die angezeigte Hierarchie ist im Parent-Child-Format, deswegen sind die Output-Spalten festgelegt.Das Output hat immer die folgenden Spalten für jede Hierarchie:
-
-![Hierarchy-Table-Output](/img/content/xfa/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
-
-| **NodeID** | **ParentNodeID**  | **FirstChildNodeID**  |  **NextNodeID** | **InfoObjectName**  | **NodeName** | **NodeText**  |
-|---|---|---|---|---|---|---|---|
-| Eindeutiger Knotenschlüssel  | Schlüssel für den Parent-Knoten  | Schlüssel für den ersten Child-Knoten  | Schlüssel für den nächsten Knoten in der selben Hierarchieebene  | Name des InfoObjects hinter dem entsprechenden Knoten  | (Technischer) Name des Knotens | Beschreibungstext in der ausgewählten Logon-Sprache (nur wenn FetchText in den Einstellungen auf "true" gesetzt ist)|
-
-
-Die Originalhierarchie von PM_COUNTRY in SAP sieht folgendermaßen aus:
-
-![Hierarchy-Table-SAP](/img/content/extractors.bwhier/Hierarchy-Table-Output.png){:class="img-responsive"}
-
+3. Optional: Der Standardwert für **DateTo** ist 99991231. Um den Wert zu ändern, verwenden Sie einen [Parameter](../parametrisierung).
 
 ****
 #### Weiterführende Links
