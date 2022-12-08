@@ -24,7 +24,7 @@ It is also possible to upload the Hyper file to Tableau Server or Tableau Online
 - Tableau Export Library
 - Visual C++ 2015 Runtime
 
-Download the Tableau Export Library and Visual C++ 2015 Runtime from [Amazon AWS - Xtract Universal:Tableau](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip).<br>
+Download the Tableau Export Library and Visual C++ 2015 Runtime [here](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip).<br>
 If no Visual C++ 2015 Runtime is installed on your machine, run the vc_redist.x64.exe to install the Visual C++ 2015 Runtime. <br>
 Copy the `tableau` folder into your Xtract Universal directory so that the following folder structure is created: `C:\Program Files\XtractUniversal\tableau\hyper`.
 
