@@ -72,10 +72,10 @@ For installing the Power BI Custom Connector follow the steps under *Manul Setup
 
 ### Manual Setup 
 When using *Power BI Desktop*:
-1. Check if the directory *[Documents]\Power BI Desktop\Custom Connectors* exists.
+1. Check if the directory `[Documents]\Power BI Desktop\Custom Connectors` exists.
 2. Create this directory if it doesn't exist.
 3. Open the *powerbi* folder located in the Xtract Univesal installation directory.
-4. Copy the *XtractUniversalExtension.pqx* file to *[Documents]\Power BI Desktop\Custom Connectors*.
+4. Copy the *XtractUniversalExtension.pqx* file to `[Documents]\Power BI Desktop\Custom Connectors`.
 5. Restart Power BI.
 6. Change the security level for [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security) in Power BI to *Allow any extension to be load without validation or warning*. <br>
 Otherwise the *Xtract Universal* datasource will not be visible within Power BI.
@@ -86,7 +86,7 @@ Otherwise the *Xtract Universal* datasource will not be visible within Power BI.
 ### Automatic Setup
 1. Open the *powerbi* folder located in the Xtract Univesal installation directory.
 2. Run the *install-connector* PowerShell script. <br>
-This script copies the *XtractUniversalExtension.pqx* file to the *[Documents]\Power BI Desktop\Custom Connectors* folder. The script creates the folder first if it doesn't exist.
+This script copies the *XtractUniversalExtension.pqx* file to the `[Documents]\Power BI Desktop\Custom Connectors` folder. The script creates the folder first if it doesn't exist.
 3. Run the *trust-connector* PowerShell script. <br>
 This script modifies the registry at `HKLM:\SOFTWARE\Policies\Microsoft\Power BI Desktop\`. The script adds or modifies the registry value *TrustedCertificateThumbprints* with the thumbprint of the *XtractUniversalExtension.pqx* file. This procedure follows Microsoft's recommendations for [trusting third-party connectors](https://docs.microsoft.com/en-us/power-bi/desktop-trusted-third-party-connectors).
 
@@ -146,11 +146,12 @@ The connection of the Power BI Service requires the following components:
 To set up the on-premisess Data Gateway using the Power BI Custom Connector, follow the steps below.
 
 {: .box-note }
-**Note:** The connection to Xtract Universal can be created using Power Query M-script or Power BI Custom Connector. Using Power Query M-script does not require further configuration.
+**Note:** The connection to Xtract Universal can be created using Power Query M-script or Power BI Custom Connector. 
+Using Power Query M-script does not require further configuration.
 
 1. Install the on-premisess Data Gateway on the Xtract Universal application server.
 2. Configure the Data Gateway, see [Use the on-premises data gateway app](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-app).
-3. Switch to the *Connectors* tab and define the path to the Power BI Custom Connector, e.g. `C:\Program Files\XtractUniversal\powerbi`.<br> The *XtractUniversalExtension* will then be displayed as a Custom Data Connector.
+3. Switch to the *Connectors* tab and define the path to the Power BI Custom Connector in `*[Documents]\Power BI Desktop\Custom Connectors*`.<br> The *XtractUniversalExtension* will then be displayed as a Custom Data Connector.
 ![Data-Gateway Connectors](/img/content/xu/data-gateway-connectors.png){:class="img-responsive"}
 
 

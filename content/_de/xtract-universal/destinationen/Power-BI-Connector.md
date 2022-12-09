@@ -69,9 +69,9 @@ Der Power BI Connector wurde entsprechend den Microsoft Richtlinien zum Erstelle
 
 ### Power BI Custom Connector manuell einrichten
 Wenn Sie die Anwendung *Power BI Desktop* verwenden, beachten Sie Folgendes: 
-1. Prüfen Sie, ob das Verzeichnis *[Documents]\Power BI Desktop\Custom Connectors* existiert.
+1. Prüfen Sie, ob das Verzeichnis `[Documents]\Power BI Desktop\Custom Connectors` existiert.
 2. Erstellen Sie dieses Verzeichnis, falls es nicht existiert.
-3. Kopieren Sie die Datei *XtractUniversalExtension.pqx* in das Verzeichnis *[Documents]\Power BI Desktop\Custom Connectors*.
+3. Kopieren Sie die Datei *XtractUniversalExtension.pqx* in das Verzeichnis `[Documents]\Power BI Desktop\Custom Connectors`.
 4. Starten Sie Power BI neu. <br>
 5. Ändern Sie die Sicherheitsstufe in der Option [Datenerweiterung](https://docs.microsoft.com/de-de/power-bi/desktop-connector-extensibility#data-extension-security) innerhalb von Power BI  auf *Alle Erweiterungen ohne Überprüfung oder Warnung laden* (Allow any extension to be load without validation or warning). <br>
 Andernfalls wird die Datenquelle *Xtract Universal* in Power BI nicht angezeigt.
@@ -81,7 +81,7 @@ Andernfalls wird die Datenquelle *Xtract Universal* in Power BI nicht angezeigt.
 ### Power BI Custom Connector automatisch einrichten
 1. Öffnen Sie den *powerbi* Ordner, der sich im Installationsverzeichniss von Xtract Universal befindet.
 2. Führen Sie das PowerShell Skript *install-connector* aus. <br>
-Dieses Skript kopiert die *XtractUniversalExtension.pqx* Datei in den Ordner *[Documents]\Power BI Desktop\Custom Connectors*.
+Dieses Skript kopiert die *XtractUniversalExtension.pqx* Datei in den Ordner `[Documents]\Power BI Desktop\Custom Connectors`.
 Falls der Ordner nicht existiert, wird er neu angelegt.
 3. Führen Sie das PowerShell Skript *trust-connector* aus.<br>
 Dieses Skript modifiziert die Registry unter `HKLM:\SOFTWARE\Policies\Microsoft\Power BI Desktop`.
@@ -148,7 +148,7 @@ Befolgen Sie die folgenden Schritte, um das On-Premisess Data Gateway mittels Po
 
 1. Installieren Sie das On-Premisess Data Gateway auf dem Xtract Universal Anwendungsserver.
 2. Konfigurieren Sie das Data Gateway, siehe [Use the On-Premisess data gateway app](https://docs.microsoft.com/de-de/data-integration/gateway/service-gateway-app).
-3. Wechseln Sie in den Tab *Connectors* und hinterlegen Sie den Pfad zum Power BI Custom Connector, z.B. `C:\Program Files\XtractUniversal\powerbi`.<br> Die *XtractUniversalExtension* wird anschließend als Custom Data Connector angezeigt.
+3. Wechseln Sie in den Tab *Connectors* und hinterlegen Sie den Pfad zum Power BI Custom Connector in `[Documents]\Power BI Desktop\Custom Connectors`.<br> Die *XtractUniversalExtension* wird anschließend als Custom Data Connector angezeigt.
 ![Data-Gateway Connectors](/img/content/xu/data-gateway-connectors.png){:class="img-responsive"}
 
 
