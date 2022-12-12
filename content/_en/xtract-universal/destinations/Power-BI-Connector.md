@@ -151,7 +151,7 @@ Using Power Query M-script does not require further configuration.
 
 1. Install the on-premisess Data Gateway on the Xtract Universal application server.
 2. Configure the Data Gateway, see [Use the on-premises data gateway app](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-app).
-3. Switch to the *Connectors* tab and define the path to the Power BI Custom Connector in `*[Documents]\Power BI Desktop\Custom Connectors*`.<br> The *XtractUniversalExtension* will then be displayed as a Custom Data Connector.
+3. Switch to the *Connectors* tab and define the path to the Power BI Custom Connector e.g., in `*[Documents]\Power BI Desktop\Custom Connectors*`.<br> The *XtractUniversalExtension* will then be displayed as a Custom Data Connector.
 ![Data-Gateway Connectors](/img/content/xu/data-gateway-connectors.png){:class="img-responsive"}
 
 

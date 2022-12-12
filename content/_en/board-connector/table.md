@@ -22,6 +22,8 @@ For more information, see the knowledge base article on [SAP User Rights: Table]
 {: .box-tip }
 **Tip:** To get information on the basics of Board Connector, refer to [Getting Started with Board Connector](./getting-started).
 
+{% include _content/en/tables/supported-objects.md %}
+
 ### How to use the Table component
 {% include _content/en/board-specific/define-extraction.md %}
 

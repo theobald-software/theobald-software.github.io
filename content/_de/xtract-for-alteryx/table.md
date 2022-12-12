@@ -15,10 +15,6 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Table-Komponente. <br>
 Die Table Komponente kann verwendet werden, um Inhalte aus SAP-Tabellen und Views zu extrahieren und sie in Alteryx zu verarbeiten.
 Die Table Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite zu joinen, siehe [Table-Joins](./table/table-joins).<br> 
 
-Die Table-Komponente unterstützt die folgenden Tabellentypen:
-- Transparente Tabellen
-- Pool-Tabellen
-- Cluster-Tabellen
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
@@ -35,6 +31,8 @@ Weitere Informationen zu möglichen Einschränkungen und zur Installation des Z-
 **Tipp:** Die Table-Komponente wird im Allgemeinen für einen Full-Load verwendet. 
 Für die inkrementelle Datenextraktion aus Tabellen und Views kann eine WHERE-Bedingung für bestimmte Felder, z.B. Zeitstempel, definiert werden. 
 Eine einfachere Option für die inkrementelle Datenextraktion bietet die ODP-Komponente, z.B. mit Hilfe von [Extraktoren](./odp/odp-extractors).
+
+{% include _content/de/table/supported-objects.md %}
 
 ### Table verwenden
 

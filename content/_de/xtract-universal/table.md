@@ -22,6 +22,9 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 
+{% include _content/de/table/supported-objects.md %}
+
+
 ### Table verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
 

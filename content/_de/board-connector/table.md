@@ -21,6 +21,8 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
+{% include _content/de/table/supported-objects.md %}
+
 ### Table verwenden
 {% include _content/de/board-specific/define-extraction.md %}
 

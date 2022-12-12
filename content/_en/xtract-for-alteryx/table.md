@@ -16,10 +16,6 @@ The following section describes the functions of the Table component of Xtract f
 The Table component can be used to extract content from SAP tables and views and process it in Alteryx.
 The Table component is also used to join several tables on the SAP side, see [Table Joins](./table/table-joins).<br> 
 
-Table component supports the following table types:
-- Transparent tables
-- Pool tables
-- Cluster tables
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
@@ -36,6 +32,9 @@ For further information on possible restrictions and on installing the custom fu
 **Tip:** The Table component is generally used for full load. 
 For incremental data extraction from tables and views, you can define a WHERE-clause on specific fields e.g., timestamp.
 The ODP component is a more convenient option for incremental extraction e.g., using [extractors](./odp/odp-extractors).
+
+{% include _content/en/tables/supported-objects.md %}
+
 
 ### How to use the Xtract Table component
 

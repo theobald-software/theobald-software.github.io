@@ -148,12 +148,12 @@ Befolgen Sie die folgenden Schritte, um das On-Premisess Data Gateway mittels Po
 
 1. Installieren Sie das On-Premisess Data Gateway auf dem Xtract Universal Anwendungsserver.
 2. Konfigurieren Sie das Data Gateway, siehe [Use the On-Premisess data gateway app](https://docs.microsoft.com/de-de/data-integration/gateway/service-gateway-app).
-3. Wechseln Sie in den Tab *Connectors* und hinterlegen Sie den Pfad zum Power BI Custom Connector in `[Documents]\Power BI Desktop\Custom Connectors`.<br> Die *XtractUniversalExtension* wird anschließend als Custom Data Connector angezeigt.
+3. Wechseln Sie in den Tab *Connectors* und hinterlegen Sie den Pfad zum Power BI Custom Connector. z.B. in `[Documents]\Power BI Desktop\Custom Connectors`.<br> Die *XtractUniversalExtension* wird anschließend als Custom Data Connector angezeigt.
 ![Data-Gateway Connectors](/img/content/xu/data-gateway-connectors.png){:class="img-responsive"}
 
 
 ### Xtract Universal als Datenquelle hinzufügen
-Das konfigurierte On-Premisess Data Gateway wird nachfolgend in die Power BI Service Umgebung eingebunden. Anschließend muss eine DataSource zum Xtract Universal Server eingerichtet werden.
+Das konfigurierte On-Premises Data Gateway wird nachfolgend in die Power BI Service Umgebung eingebunden. Anschließend muss eine DataSource zum Xtract Universal Server eingerichtet werden.
 
 1. Öffnen Sie im Power BI Service **Settings > Manage Gateways**.
 2. Öffnen Sie das *GATEWAY CLUSTERS* Menü über **[...]**.
