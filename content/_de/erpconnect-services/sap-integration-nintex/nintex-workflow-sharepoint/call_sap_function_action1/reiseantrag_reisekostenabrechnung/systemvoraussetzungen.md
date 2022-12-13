@@ -41,12 +41,10 @@ old_url: /ERPConnect-Services-DE/default.aspx?pageid=systemvoraussetzungen1
 
 - ab Version 3.1.5
 - Nintex Live Komponente: Die Installation muss auf Server mit gehosteter Zentraladministration laufen. 
-- Ausführliche Informationen zu Systemvoraussetzungen und Installation von Nintex Workflow finden Sie [hier](https://community.nintex.com/docs/DOC-1373).
 
 **Nintex Forms (ab SP2013) **
 
 - Installation muss auf einem Web Frontend-Server laufen
-- Ausführliche Informationen zu Systemvoraussetzungen und Installation von Nintex Forms finden Sie [hier](https://community.nintex.com/docs/DOC-1373).
 
 **Internet Browser**
 - Mindestens Microsoft Internet Explorer 8.x, empfohlen wird Microsoft Internet Explorer 9 oder höher. 

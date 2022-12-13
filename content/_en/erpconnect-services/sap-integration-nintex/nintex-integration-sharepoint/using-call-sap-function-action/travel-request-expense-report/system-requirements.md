@@ -40,12 +40,10 @@ lang: en_GB
 
 - Version 3.1.5 and later
 - Nintex Live: Choose a server that hosts SharePoint Central Administration. 
-- Detailed information regarding Nintex Workflow installation you find [here](https://community.nintex.com/docs/DOC-1373).
 
 **Nintex Forms (as of SP2013)**
 
 - The installation has to run on a web frontend server
-- Detailed information regarding Nintex Forms installation you find [here](https://community.nintex.com/docs/DOC-1373).
 
 **Browser Client**
 
