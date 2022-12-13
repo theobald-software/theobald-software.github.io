@@ -12,3 +12,8 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=report-extraction-settings
 ---
 
 {% include _content/en/bw-infocubes-and-bex-queries/edit-runtime-parameters.md %}
+
+*****
+
+#### Related Links
+- [Calling Dynamic Extractions with Variables in ADF](https://kb.theobald-software.com/xtract-universal/calling-dynamic-extractions-with-variables-in-adf)
