@@ -8,8 +8,9 @@ List of relevant *Custom Properties*:
 |Property |Comment|
 |:----|:----|
 | *CubeName* | Corresponds to the field *Cube Name* in the BW Cube component, see [Defining a BW Cube Extraction](./bw-cube-extraction-define#defining-a-bw-cube-extraction).|
-| *DelimiterForMultipleSSISVariableValues* | Delimiter for multiple input variables, see *Variables* in [Parameterization using SSIS Variables](#parameterization-using-ssis-variables).|
-| *MDXVariable* | Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement., see *MDXVariable* in [Parameterization using SSIS Variables](#parameterization-using-ssis-variables). |
+| *DelimiterForMultipleSSISVariableValues* | Delimiter for multiple input variables, see *Variables* in [Parameterizing using SSIS Variables](#parameterizing-using-ssis-variables).|
+| *IgnoreMDXErrors* | If set to *true*, MDX errors do not lead to SSIS errors.|
+| *MDXVariable* | Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement, see *MDXVariable* in [Parameterizing using SSIS Variables](#parameterizing-using-ssis-variables). |
 | *StringConversion* | See [Settings - String Conversion](./settings#string-conversion). |
 
 
@@ -21,9 +22,8 @@ List of input fields that allow entry of an SSIS variable:
 |Field Name|Comment|
 |:----|:----|
 |*Variables*| Enter an SSIS variable to fill a BEx variable, see [Variables](./variables). <br>For BEx variables of type *Multiple Single* enter a single SSIS variable, set a delimiter for custom property *DelimiterForMultipleSSISVariableValues*, enter multiple single values in the SSIS variable separated by the delimiter. |
-|*Member Filter*        |Enter an SSIS variable in the field *variable*. The SSIS variable can be filled with multiple single entries separated by comma.|
-|*Extraction Type MDX* |SSIS variables can be used as part of the freehand MDX statement for BEx variables or dimension member filters. |
-|*MDXVariable*        |Use *MDXVariable* in combination with *Extraction Type MDX*. Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement.|
+|*Member Filter*        |Enter an SSIS variable in the field *Variable*, see [Filter](.filter). The SSIS variable can be filled with multiple single entries separated by comma.|
+|*MDXVariable*        | Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement.|
 
 
 
