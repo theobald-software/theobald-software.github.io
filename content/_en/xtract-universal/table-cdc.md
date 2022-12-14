@@ -5,7 +5,7 @@ title: Table CDC
 description: Table
 product: xtract-universal
 parent: xtract-universal
-childidentifier: tablecdc
+childidentifier: table-cdc
 permalink: /:collection/:path
 weight: 86
 lang: en_GB
@@ -14,7 +14,7 @@ progressstate: 5
 ---
 The following section describes the functions of the **Table CDC** component of Xtract Universal. <br>
 The component can be used to extract delta contents from SAP tables and views.
-The component creates a log table in SAP that record insert, update, and delete activities that apply to a selected SAP table or view<br>
+It creates a log table in SAP that record insert, update, and delete activities that apply to a selected SAP table or view<br>
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
@@ -28,8 +28,8 @@ For more information, see the knowledge base article on [SAP User Rights: Table]
 ### Requirements
 
 - SAP version x.xx or higher.
-- access to the designated authority objects (RFC) in SAP, see [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table) must be granted.
-- The user must have the right to create SAP Tables, see []().
+- Access to the designated authority objects (RFC) in SAP, see [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table) must be granted.
+- The user that connects to SAP must have the right to create SAP Tables, see [SAP Connection - Authentication](./getting-started/sap-connection#authentication).
 
 ### How to use the Table component
 {% include _content/en/xu-specific/define-extraction.md %}
