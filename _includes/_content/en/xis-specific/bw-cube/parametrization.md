@@ -22,7 +22,7 @@ List of input fields that allow entry of an SSIS variable:
 |Field Name|Comment|
 |:----|:----|
 |*Variables*| Enter an SSIS variable to fill a BEx variable, see [Variables](./variables). <br>For BEx variables of type *Multiple Single* enter a single SSIS variable, set a delimiter for custom property *DelimiterForMultipleSSISVariableValues*, enter multiple single values in the SSIS variable separated by the delimiter. |
-|*Member Filter*        |Enter an SSIS variable in the field *Variable*, see [Filter](.filter). The SSIS variable can be filled with multiple single entries separated by comma.|
+|*Member Filter*        |Enter an SSIS variable in the field *Variable*, see [Filter](./filter). The SSIS variable can be filled with multiple single entries separated by comma.|
 |*MDXVariable*        | Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement.|
 
 
