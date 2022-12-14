@@ -71,11 +71,16 @@ Der Power BI Connector wurde entsprechend den Microsoft Richtlinien zum Erstelle
 Wenn Sie die Anwendung *Power BI Desktop* verwenden, beachten Sie Folgendes: 
 1. Prüfen Sie, ob das Verzeichnis `[Documents]\Power BI Desktop\Custom Connectors` existiert.
 2. Erstellen Sie dieses Verzeichnis, falls es nicht existiert.
-3. Kopieren Sie die Datei *XtractUniversalExtension.pqx* in das Verzeichnis `[Documents]\Power BI Desktop\Custom Connectors`.
-4. Starten Sie Power BI neu. <br>
-5. Ändern Sie die Sicherheitsstufe in der Option [Datenerweiterung](https://docs.microsoft.com/de-de/power-bi/desktop-connector-extensibility#data-extension-security) innerhalb von Power BI  auf *Alle Erweiterungen ohne Überprüfung oder Warnung laden* (Allow any extension to be load without validation or warning). <br>
-Andernfalls wird die Datenquelle *Xtract Universal* in Power BI nicht angezeigt.
+3. Öffnen Sie den *powerbi* Ordner im Xtract Universal Installationsverzeichnis, z.B. `C:\Program Files\XtractUniversal\powerbi\`.
+4. Kopieren Sie die Datei *XtractUniversalExtension.pqx* aus dem *powerbi* Ordner in das Verzeichnis `[Documents]\Power BI Desktop\Custom Connectors`.
+5. Starten Sie Power BI neu. <br>
+6. In Power BI Desktop navigieren Sie zu *Datei > Optionen und Einstellungen > Optionen > Sicherheit*.
+7. Unter [Datenerweiterung](https://docs.microsoft.com/de-de/power-bi/desktop-connector-extensibility#data-extension-security) aktivieren Sie die Option **(Nicht empfohlen) Alle Erweiterungen ohne Überprüfung oder Warnung laden**. <br>
+![powerbi-data-extension](/img/content/power-bi-data-extension.png){:class="img-responsive"}
+8. Klicken Sie auf **[OK]**.
+9. Starten Sie Power BI neu. <br>
 
+Die Datenquelle *Xtract Universal* ist jetzt in Power BI verfügbar.<br>
 ![powerbi-datasource](/img/content/XU_pbi_connector_xu_datasouce.png){:class="img-responsive"}
 
 ### Power BI Custom Connector automatisch einrichten

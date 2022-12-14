@@ -74,13 +74,16 @@ For installing the Power BI Custom Connector follow the steps under *Manul Setup
 When using *Power BI Desktop*:
 1. Check if the directory `[Documents]\Power BI Desktop\Custom Connectors` exists.
 2. Create this directory if it doesn't exist.
-3. Open the *powerbi* folder located in the Xtract Univesal installation directory.
-4. Copy the *XtractUniversalExtension.pqx* file to `[Documents]\Power BI Desktop\Custom Connectors`.
+3. Open the *powerbi* folder located in the Xtract Univesal installation directory, e.g., `C:\Program Files\XtractUniversal\powerbi\`.
+4. Copy the *XtractUniversalExtension.pqx* file from the *powerbi* folder to `[Documents]\Power BI Desktop\Custom Connectors`.
 5. Restart Power BI.
-6. Change the security level for [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security) in Power BI to *Allow any extension to be load without validation or warning*. <br>
-Otherwise the *Xtract Universal* datasource will not be visible within Power BI.
+6. In Power BI Desktop, navigate to *File > Options and settings > Options > Security*.<br>
+7. Under [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security), select the option **(Not Recommended) Allow any extension to load without validation or warning**. <br>
+![powerbi-data-extension](/img/content/power-bi-data-extension.png){:class="img-responsive"}
+8. Click **[OK]**.
+9. Restart Power BI Desktop.
 
-
+The *Xtract Universal* datasource is now available within Power BI.<br>
 ![powerbi-datasource](/img/content/XU_pbi_connector_xu_datasouce.png){:class="img-responsive"}
 
 ### Automatic Setup
