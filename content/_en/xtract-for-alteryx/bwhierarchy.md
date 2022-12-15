@@ -37,7 +37,7 @@ The window "Hierarchy Extractor" consists out of two subsections:
 
 #### Selected Extraction
 Within the subsection **Selected Extraction** you can [search for SAP BW hierarchies](./bwhierarchy/bwhier-define) using **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon).<br>
-The default value for the field *Date To* is 99991231. To change the value, click **[Run]** and override the value. 
+The default value for the field *Date To* is 99991231. 
 
 #### Preview
 The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-preview-selected-hierarchy) of the selected SAP BW hierarchy, when clicking the **[Load Live Preview]** button.

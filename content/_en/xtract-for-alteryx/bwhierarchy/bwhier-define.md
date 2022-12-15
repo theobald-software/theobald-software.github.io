@@ -21,7 +21,7 @@ The following section shows how to use the Xtract Hierarchy component.<br>
 4. Click **[Select]** to confirm.
 
 
-### Format and Preview Output
+### Format the Output
 1. Click **[Extraction Settings]** (3) to define the output format of the Hierarchy, see [Extraction Settings](./bwhier-settings).
 2. Click **[Load live preview]** (4) to display a live preview of the data without running an extraction.<br>
 ![Define-Data-Source-Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"}

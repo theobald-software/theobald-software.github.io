@@ -21,9 +21,8 @@ Das Fenster "Hierarchy Lookup" wird geöffnet.
 3. Klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste (2).
 4. Klicken Sie auf **[Select]** zum Bestätigen.
 
-Klicken auf **[[Extraction Settings](./hierarchie-extraktionseinstellungen)]**, um die Hierarchieeinstellungen zu definieren.
 
-### Format und Vorschau
+### Ausgabe Formatieren
 1. Klicken Sie auf **[Extraction Settings]** (3), um das Ausgabeformat der Hierarchie zu definieren, siehe [Extraktionseinstellungen](./hierarchie-extraktionseinstellungen).
 2. Klicken Sie auf **[Load live preview]** (4), um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.<br>
 ![Define-Data-Source-Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"}

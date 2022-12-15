@@ -39,7 +39,7 @@ Das Hauptfenster der BW Hierarchy Komponente besteht aus zwei Unterabschnitten:
 #### Hierarchy Extraction
 Innerhalb des Unterabschnitts **Hierarchy Extraction** können Sie nach [SAP BW Hierarchien suchen](./bw-hierarchien/hierarchien-als-datenquelle-definieren). 
 Verwenden Sie dafür **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol).
-Der Standartwert für das Feld *DateTo* ist 99991231. Um den Standardwert zu ändern, klicken Sie auf **[Run]** und überschreiben Sie den Wert. 
+Der Standartwert für das Feld *DateTo* ist 99991231.
 
 #### Preview
 Der Unterabschnitt **Preview** [zeigt die Felder](./bw-hierarchien/hierarchien-als-datenquelle-definieren#echtzeitvorschau-der-ausgewählten-hierarchie-anzeigen) der ausgewählten SAP BW Hierarchie. Klicken Sie dafür auf **[Load Live Preview]**.
