@@ -12,10 +12,6 @@ The following components require installation of a custom function module in SAP
 - **Table**: For most tasks, the installation of an ABAP framework is recommended or required. Refer to [Custom function module for table extraction](./sap-customizing/custom-function-module-for-table-extraction). 
 - **Report**: The installation of a custom function module is required, refer to [Install Report Custom Function Module](./sap-customizing/install-report-custom-function-module).
 
-{: .box-note }
-**Note:** The function module for the Table Join component is only available on request.
-
-
 ### Transport Requests
 
 The Theobald Software transport requests need to be imported into SAP by your SAP Basis team.
