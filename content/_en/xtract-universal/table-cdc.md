@@ -25,13 +25,19 @@ For more information, see the knowledge base article on [SAP User Rights: Table]
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract Universal, refer to [Getting Started with Xtract Universal](./getting-started). <br>
 
+### About Table CDC
+
+Running the extration for the first time, creates a log table in SAP that records any changes made to the original table or view.
+The name of the log table is...
+The content of the log table is cleared after every run of the extraction (?)
+
 ### Requirements
 
 - SAP version x.xx or higher.
 - Access to the designated authority objects (RFC) in SAP, see [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table) must be granted.
 - The user that connects to SAP must have the right to create SAP Tables, see [SAP Connection - Authentication](./getting-started/sap-connection#authentication).
 
-### How to use the Table component
+### How to use the Table CDC component
 {% include _content/en/xu-specific/define-extraction.md %}
 
 More information on working with the Table CDC component is provided in the following sections.
