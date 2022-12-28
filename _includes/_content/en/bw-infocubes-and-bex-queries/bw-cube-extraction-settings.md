@@ -36,6 +36,21 @@ Automatic slicing means that a loop is executed for each single value of the cho
 
 **Automatic Slicing Dimension** allows the extraction of a large amount of data (millions of records) from BW.
 
+### Dimension on Columns
+
+The following setting is only available for MDX extractions. It appears in the extraction settings window after retrieving the metadata of an MDX extraction.<br>
+**Dimension on Columns** allows selecting another dimension/structure than the measure (key figures) dimension on the column axis. This swaps the measures and the selected dimension: the measures are placed on rows, the selected dimension is placed on columns.
+
+Note that:
+- your BEx Query must contain a dimension strucure.
+- dimension filters on columns are not applied.
+- the selected properties for the new column dimension are ignored.
+- unit columns are only supported when *key figures* is selected for the columns.
+- up to 1000 members will be loaded when confirming the extraction settings window. These members will be the column names.
+
+{: .box-tip }
+**Recommendation**: We recommend only using structures on columns.
+
 ### Experimental
 
 The following settings are only available for BICS extractions. They appear in the extraction settings window after retrieving the metadata of a BICS extraction.

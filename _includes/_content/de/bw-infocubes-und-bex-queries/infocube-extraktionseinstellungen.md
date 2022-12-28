@@ -37,6 +37,23 @@ Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicin
 
 **Automatic Slicing Dimension** ermöglicht die Extraktion einer großen Datenmenge (Millionen von Sätzen) aus dem BW.
 
+### Dimension on Columns
+
+Die folgende Einstellung ist nur für MDX Extraktionen verfügbar.
+Sie wird angezeigt, nachdem die Metadaten einer MDX Extraktion abgerufen wurde.<br>
+**Dimension on Columns** erlaubt es, eine andere Dimension/Struktur als die Messwerte (Key Figures) für Spalten auszuwählen.
+Dadurch werden die Messwerte mit der ausgewählten Dimension vertauscht: die Messwerte werden auf die Zeilen und die ausgewählte Dimension auf die Spalten verteilt.
+
+Berücksichtigen Sie Folgendes:
+- Ihre BEx Query muss Dimensionen beinhalten.
+- Dimensionsfilter auf Spalten werden nicht unterstützt.
+- Die Auswahl von Eigenschaften für die gewählte Dimension wird nicht unterstützt.
+- Einheiten als Spalten werden nur unterstützt, wenn *key figures* für die Spalten ausgewählt ist.
+- Bis zu 1000 Elemente werden geladen, sobald Sie die Änderungen mit **[OK]** bestätigen. Diese Elemente werden zu Spaltennamen.
+
+{: .box-tip }
+**Empfehlung**: Wir empfehlen nur Strukturen auf Spalten anzuwenden.
+
 ### Experimental
 
 Die folgenden Einstellungen sind nur für BICS Extraktionen verfügbar.
