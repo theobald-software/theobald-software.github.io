@@ -41,6 +41,7 @@ Automatisches Slicing bedeutet, dass für jeden Einzelwert der gewählten Slicin
 
 Die folgende Extraktionseinstellung ist nur für MDX Extraktionen verfügbar.
 Sie wird angezeigt, nachdem die Metadaten einer MDX Extraktion abgerufen wurde.<br>
+
 **Dimension on Columns** erlaubt es, eine andere Dimension/Struktur als die Messwerte (Key Figures) für Spalten auszuwählen.
 Dadurch werden die Messwerte mit der ausgewählten Dimension vertauscht: die Messwerte werden auf die Zeilen und die ausgewählte Dimension auf die Spalten verteilt.
 

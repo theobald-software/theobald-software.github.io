@@ -39,6 +39,7 @@ Automatic slicing means that a loop is executed for each single value of the cho
 ### Dimension on Columns
 
 The following extraction setting is only available for MDX extractions. It appears in the extraction settings window after retrieving the metadata of an MDX extraction.<br>
+
 **Dimension on Columns** allows selecting another dimension/structure than the measure (key figures) dimension on the column axis. This swaps the measures and the selected dimension: the measures are placed on rows, the selected dimension is placed on columns.
 
 Note that:
