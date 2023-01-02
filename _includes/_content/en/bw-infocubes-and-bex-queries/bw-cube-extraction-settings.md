@@ -42,7 +42,7 @@ The following setting is only available for MDX extractions. It appears in the e
 **Dimension on Columns** allows selecting another dimension/structure than the measure (key figures) dimension on the column axis. This swaps the measures and the selected dimension: the measures are placed on rows, the selected dimension is placed on columns.
 
 Note that:
-- your BEx Query must contain a dimension strucure.
+- your BEx Query must contain a dimension structure.
 - dimension filters on columns are not applied.
 - the selected properties for the new column dimension are ignored.
 - unit columns are only supported when *key figures* is selected for the columns.
@@ -50,6 +50,13 @@ Note that:
 
 {: .box-tip }
 **Recommendation**: We recommend only using structures on columns.
+
+Example:
+- Output for **Dimension on Columns** = *Key Figures*<br>
+![BWCube-dimension-keyfigures](/img/content/Cube-keyfigures.png){:class="img-responsive"}
+- Output for **Dimension on Columns** = *Cal. Year/Quarter [0CALQUARTER]*<br>
+![BWCube-dimension-calquarter](/img/content/Cube-calyear.png){:class="img-responsive"}
+
 
 ### Experimental
 

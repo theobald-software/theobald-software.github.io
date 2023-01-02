@@ -54,6 +54,13 @@ Berücksichtigen Sie Folgendes:
 {: .box-tip }
 **Empfehlung**: Wir empfehlen nur Strukturen auf Spalten anzuwenden.
 
+Beispiel:
+- Ausgabe für **Dimension on Columns** = *Key Figures*<br>
+![BWCube-dimension-keyfigures](/img/content/Cube-keyfigures.png){:class="img-responsive"}
+- Ausgabe für **Dimension on Columns** = *Cal. Year/Quarter [0CALQUARTER]*<br>
+![BWCube-dimension-calquarter](/img/content/Cube-calyear.png){:class="img-responsive"}
+
+
 ### Experimental
 
 Die folgenden Einstellungen sind nur für BICS Extraktionen verfügbar.
