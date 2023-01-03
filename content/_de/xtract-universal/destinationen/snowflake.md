@@ -32,6 +32,20 @@ Für mehr Informationen, siehe [Snowflake: ODBC Configuration and Connection Par
 
 #### Connection
 
+**Organization (preferred)**<br>
+Geben Sie den Namen der Organisation an. 
+Die Identifizierung über den Kontonamen in einer Organisation ist die von Snowflake bevorzugte Authentifizierungsmethode, siehe [Snowflake Dokumentation: Kontoname in Ihrer Organisation](https://docs.snowflake.com/de/user-guide/admin-account-identifier.html#format-1-preferred-account-name-in-your-organization)
+
+**Region**<br>
+Wählen Sie die Region der Snowflake-Umgebung aus.<br>
+In diesem Beispiel ist die Region *AWS - EU (Frankfurt)* ausgewählt. Die gewählte Region muss den Angaben im zugewiesen Account entsprechen. 
+
+{: .box-note}
+**Hinweis:** Regionen mit dem Suffix *(legacy)* sind veraltet. Die *Cloud Region ID* dieser Regionen wurde von Snowflake umbenannt.
+Wählen Sie die *(legacy)*-Option, wenn Sie sich über einen Link mit einer alten *Cloud Region ID* mit Snowflake verbinden. <br>
+Für mehr Informationen zu den aktuellen *Cloud Region IDs*, siehe [Snowflake Dokumentation: Supported Cloud Regions](https://docs.snowflake.com/en/user-guide/intro-regions.html).
+
+
 **Output directory**<br>
 Angabe eines lokalen Verzeichnisses, in das die extrahierten Daten als csv-Datei abgelegt werden.
 
@@ -41,14 +55,6 @@ Wenn der Extraktionsvorgang noch nicht abgeschlossen ist, wird eine neue csv-Dat
 Das lokale Verzeichnis und der Staging-Bereich werden im Verlauf der Extraktion geleert, d.h., die erzeugten csv-Dateien werden wieder gelöscht.<br>
 Für weitere Informationen, siehe [File Splitting](#file-splitting). 
 
-**Region**<br>
-Wählen Sie die Region der Snowflake-Umgebung aus.<br>
-In diesem Beispiel ist die Region *AWS - EU (Frankfurt)* ausgewählt. Die gewählte Region muss den Angaben im zugewiesen Account entsprechen. 
-
-{: .box-note}
-**Hinweis:** Regionen mit dem Suffix *(legacy)* sind veraltet. Die *Cloud Region ID* dieser Regionen wurde von Snowflake umbenannt.
-Wählen Sie die *(legacy)*-Option, wenn Sie sich über einen Link mit einer alten *Cloud Region ID* mit Snowflake verbinden. <br>
-Für mehr Informationen zu den aktuellen *Cloud Region IDs*, siehe [Snowflake: Supported Cloud Regions](https://docs.snowflake.com/en/user-guide/intro-regions.html).
 
 **Account**<br>
 Name des vom Snowflake zugewiesenen Kontos.

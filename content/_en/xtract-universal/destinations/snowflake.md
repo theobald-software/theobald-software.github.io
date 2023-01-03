@@ -33,6 +33,21 @@ For more information, see [Snowflake: ODBC Configuration and Connection Paramete
 
 #### Connection
 
+**Organization (preferred)**<br>
+Enter the name of your organization.
+Authentication via the account name in your organization is the preferred way of identifying youself against Snowflake, see [Snowflake Documentation: Account Name in Your Organization](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#format-1-preferred-account-name-in-your-organization)
+
+**Region (legacy)**<br>
+Select the region of the Snowflake environment from the drop-down-menu.<br>
+In the example above, the region *AWS - EU (Frankfurt)* is selected. 
+The selected region must match the information in the assigned account. 
+
+{: .box-note}
+**Note:** Regions with the suffix *(legacy)* are deprecated.
+Select the *(legacy)* option if you connect to Snowflake using an old *Cloud Region ID*. <br>
+For more information on the current *Cloud Region IDs*, see [Snowflake Documentation: Supported Cloud Regions](https://docs.snowflake.com/en/user-guide/intro-regions.html).
+
+
 **Output Directory**<br>
 Enter an existing local directory in which the extracted data is written as a csv file.
 
@@ -42,15 +57,6 @@ If the extraction process is not finished, a new csv file is created and the pro
 While running an extraction, the csv files in the local directory and the staging area are deleted.<br>
 For more information, see [File Splitting](#file-splitting). 
 
-
-**Region**<br>
-Select the region of the Snowflake environment from the drop-down-menu.<br>
-In the example above, the region *AWS - EU (Frankfurt)* is selected. 
-The selected region must match the information in the assigned account. 
-
-Regions with the suffix *(legacy)* are deprecated.
-Select the *(legacy)* option if you connect to Snowflake using an old *Cloud Region ID*. <br>
-For more information on the current *Cloud Region IDs*, see [Snowflake: Supported Cloud Regions](https://docs.snowflake.com/en/user-guide/intro-regions.html).
 
 **Account**<br>
 Enter the Snowflake authentication account. In the given example it is: "dummy_account", see also the URL: <br>
