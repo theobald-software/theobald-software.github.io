@@ -59,7 +59,7 @@ Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen
 {: .box-warning }
 **Warning! Shared Memory ran out of memory!** <br>
 Wenn eine Extraktion im Hintergrund ausgeführt wird und diese Fehlermeldung erscheint, muss die Größe des Shared Memory angepasst werden.
-SAP empfiehlt eine Größe von 800MB~1.5GB für ein Produktiv/Testsystem oder 2GB~4GB für ein S/4 System, siehe [SAP: How to solve SYSTEM_NO_SHM_MEMORY runtime error.](https://ga.support.sap.com/dtp/viewer/#/tree/1080/actions/12107).
+SAP empfiehlt eine Größe von 800MB~1.5GB für ein Produktiv/Testsystem oder 2GB~4GB für ein S/4 System, siehe [SAP: How to solve SYSTEM_NO_SHM_MEMORY runtime error](https://ga.support.sap.com/dtp/viewer/#/tree/1080/actions/12107).
 
 
 ### Advanced Settings
