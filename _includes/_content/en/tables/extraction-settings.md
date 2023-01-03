@@ -66,7 +66,7 @@ SAP recommends a Shared Memory size of 800MB~1.5GB for a production/test system 
 
 This option can be used if the data transfer to a destination takes a lot of time e.g., when bulk-inserts are deactivated for database destinations.
 **Background job timeout (seconds)** sets a timeout period for extractions that run in background mode.<br>
-The default value is 180 seconds. Changed this value only after consulting with [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
+The default value is 180 seconds. The maximum timeout value is 3600 seconds. Change this value only after consulting with [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
 
 {: .box-note }
 **Note:** This setting only takes effect if the extractions are running in background mode and when using [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) version 2.11 or higher.
