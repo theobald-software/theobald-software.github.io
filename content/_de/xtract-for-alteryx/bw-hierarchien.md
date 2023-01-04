@@ -36,7 +36,7 @@ Das Hauptfenster der BW Hierarchy Komponente besteht aus zwei Unterabschnitten:
 
 ![Hierarchy Extractor](/img/content/xfa/xfa_hierarchy.png){:class="img-responsive"}
 
-#### Hierarchy Extraction
+#### Selected Hierarchy
 Innerhalb des Unterabschnitts **Hierarchy Extraction** können Sie nach [SAP BW Hierarchien suchen](./bw-hierarchien/hierarchien-als-datenquelle-definieren). 
 Verwenden Sie dafür **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol).
 Der Standartwert für das Feld *DateTo* ist 99991231.
