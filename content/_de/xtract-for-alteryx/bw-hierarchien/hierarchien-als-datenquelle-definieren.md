@@ -14,8 +14,7 @@ Der folgende Abschnitt beschreibt die Anwendung der Xtract Hierarchy Komponente.
 
 ### Eine BW Hierarchy finden
 
-1. Im Hauptfenster des Designers klicken Sie auf  **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol).  
-Das Fenster "Hierarchy Lookup" wird geöffnet.
+1. Im Hauptfenster des Designers klicken Sie auf  **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol). Das Fenster "Hierarchy Lookup" wird geöffnet.
 2. Im Feld **Hierarchy Name** (1) geben Sie den Namen einer Hierarchie ein. Alternativ können Sie im Feld **InfoObject** nach InfoObjects suchen. Verwenden Sie Wildcards (*), falls notwendig.
 ![Look Up Hierarchy](/img/content/extractors.bwhier/Hierarchy-Search-01.png){:class="img-responsive"}
 3. Klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste (2).
