@@ -17,7 +17,7 @@ Die Beispiel-Hierarchie PM_COUNTRY sieht in SAP wie folgt aus:<br>
 
 ### ParentChild Format
 
-Die Standardausgabe der HB Hierarchy Komponente beinhaltet die folgenden Spalten:
+Die Standardausgabe der BW Hierarchy Komponente beinhaltet die folgenden Spalten:
 - **NodeID:**
 Eindeutiger Schlüssel des Knoten.
 - **ParentNodeID:**
