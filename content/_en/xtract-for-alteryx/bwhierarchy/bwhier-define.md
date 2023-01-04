@@ -9,37 +9,23 @@ permalink: /:collection/:path
 weight: 1
 lang: en_GB
 ---
-The following section shows how to use the Xtract Hierarchy component.
+The following section shows how to use the Xtract Hierarchy component.<br>
 
-### Look up a BW Hierarchy
 
-1. In the main window of the component navigate to subsection **Hierarchy Extraction** and click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon)(1). 
-![Define-Data-Source-Hierarchy](/img/content/xfa/Define-Data-Source-Hierarchy_1.png){:class="img-responsive"}
-The window "Hierarchy Lookup" opens.
-2. In the field **Hierarchy Name** (2) enter a name of an extractor using wildcards (*), if needed.
-![Look-Up-Hierarchy](/img/content/extractors.bwhier/Look-Up-Hierarchy.png){:class="img-responsive"}
-3. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (3) and select the extractor of your choice from the displayed list (4).
-4. Click **[OK]** (5) to confirm.
-5. Click **[[Extraction Settings](./bwhier-settings)]** to define hierarchy settings.
+### Look Up a Hierarchy
 
-### To Preview Selected Hierarchy
-Click **[Load live preview]** (6) to display a live preview of the data without executing an extraction.<br>
+1. In the main window of the component click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon). The window “Hierarchy Lookup” opens.
+2. Enter the name of a Hierarchy in the field **Hierarchy Name** or the name of an InfoObject in the field **InfoObject** (1). Use wildcards (*) if needed. <br>
+![Look Up Hierarchy](/img/content/extractors.bwhier/Hierarchy-Search-01.png){:class="img-responsive"}
+3. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) and select the Hierarchy of your choice from the displayed list (2).
+4. Click **[Select]** to confirm.
 
+
+### Format the Output
+1. Click **[Extraction Settings]** (3) to define the output format of the Hierarchy, see [Extraction Settings](./bwhier-settings).
+2. Click **[Load live preview]** (4) to display a live preview of the data without running an extraction.<br>
 ![Define-Data-Source-Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"}
-
-The displayed hierarchy has a parent-child format, therefore the output columns are fixed. The output has always the following columns for every hierarchy:
-
-![Hierarchy-Table-Output](/img/content/xfa/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
-
-| **NodeID** | **ParentNodeID**  | **FirstChildNodeID**  |  **NextNodeID** | **InfoObjectName**  | **NodeName** | **NodeText**  |
-|---|---|---|---|---|---|---|---|
-| Unique node key  | Key for parent node  | Key for first child node  | Key for next node in the same hierarchical level  | Name of InfoObject behind the corresponding node  | The node’s (technical) name | The descriptive text in the respective logon language (only when FetchText is set to true in the settings)|
-
-
-The original hierarchy of PM_COUNTRY in SAP looks as follows:
-
-![Hierarchy-Table-SAP](/img/content/extractors.bwhier/Hierarchy-Table-Output.png){:class="img-responsive"}
-
+3. Optional: The default value for **Date To** is 99991231. To change the value, use a [Parameter](../parameterizing).
 
 ****
 #### Related Links
