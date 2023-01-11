@@ -92,6 +92,11 @@ This is to ensure that all uploaded objects are compatible with Azure Data Facto
 
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}
 
+{% include _content/en/xu-specific/destinations/general/existing-files.md %}
+
+{: .box-note }
+**Note:** The append operation only works for csv files.
+
 ### Hadoop Remote Folder
 
 Enter the name of a folder to write the data in.<br>
@@ -101,11 +106,6 @@ If no folder is entered, the data will be written into the root folder.
 
 {% include _content/en/xu-specific/destinations/general/folder-script-expressions.md %}
 
-### WebHdfs API's Option
-
-**Overwrite existing**<br>
-If this option is active, files with the same name will be overwritten.<br>
-If this option is not active and the target folder contains a file with the same name as the new file, the upload will fail.
 
 *****
 ### Related Links

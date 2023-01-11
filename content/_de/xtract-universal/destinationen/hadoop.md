@@ -90,6 +90,10 @@ Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sicherges
 
 {% include _content/de/xu-specific/destinationen/general/file-name-script-expressions.md %}
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
+{% include _content/de/xu-specific/destinationen/general/existing-files.md %}
+
+{: .box-note }
+**Hinweis:** Die Operation **Append results**, bei der Daten in einer Zieldatei ergänzt werden, funktioniert nur für csv-Dateien.
 
 ### Hadoop Remote Folder
 
@@ -98,18 +102,8 @@ Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werde
 Falls nicht vorhanden, wird ein neuer Ordner erstellt.
 Wenn kein Ordner angegeben wird, werden die Daten in das root-Verzeichnis geschrieben.
 
-{: .box-note }
-**Hinweis:** Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](../fortgeschrittene-techniken/script-ausdruecke) definiert werden. 
-Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt.
-
 {% include _content/de/xu-specific/destinationen/general/folder-script-expressions.md %}
 
-
-### WebHdfs API's Option
-
-**Overwrite existing**<br>
-Wenn diese Option aktiviert ist, werden Dateien mit gleichem Namen überschrieben.<br>
-Wenn diese Option nicht aktiviert ist und der Zielordner eine Datei mit demselben Namen wie die neue Datei enthält, schlägt der Upload fehl.
 
 *****
 ### Weierführende Links
