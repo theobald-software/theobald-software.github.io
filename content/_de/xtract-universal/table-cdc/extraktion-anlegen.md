@@ -14,41 +14,49 @@ Der folgende Abschnitt beschreibt die Anwendung der Table Komponente.
 
 ### Eine Tabelle Finden
 
-Look up the SAP table or view you want to track.
+Wählen die SAP Tabelle oder Ansicht, die Sie mit Table CDC nachverfolgen möchten.
 
-1. Innerhalb des Hauptfensters der Komponente, klicken Sie auf  **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon). Das Fenster “Table Lookup” öffnet sich.
+1. Innerhalb des Hauptfensters der Komponente klicken Sie auf  **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon). Das Fenster “Table Lookup” öffnet sich.<br>
+![Table-CDC](/img/content/tablecdc/table-cdc.png){:class="img-responsive"}
 2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden SAP Tabelle oder Ansicht ein. Verwenden Sie Wildcards (*), falls nötig.<br>
 ![Look-Up-Report](/img/content/table/table_look-up.png){:class="img-responsive"}
 3. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (2). Die Suchergebnisse werden im Vorschaufenster angezeigt.
 4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **[OK]** (4).
 
+Alle relevanten Metadaten der Tabelle werden aus SAP abgerufen.
+Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
-### CDC Einrichten
+### Eine Table CDC Extraktion Einrichten
 
-1. Select the columns you want to extract.<br> Bild
-2. Optional: If you want to extract the whole table when first running the extraction, activate **[Extract table on first run]**. <br>
-**Tipp:** You can also use the [Table component](../table) to extract the original table.
-3. Click **[Load Preview]** to load 100 records for the preview.<br>
-The column IUUC_OPERAT_FLAG indicates if a row was inserted (I), updated (U) or deleted (D).
-4. Click **[OK]** to confirm your settings.
+Richten Sie die Table CDC Komponente ein, um Daten zu extrahieren.
+
+1. Wählen Sie die Spalten aus, die Sie extrahieren möchten.<br> ![Table-CDC-Setup](/img/content/tablecdc/table-cdc-kna1.png){:class="img-responsive"}
+2. Optional: Wenn Sie bei der ersten Ausführung der Extraktion nicht die komplette SAP-Tabelle extrahieren möchten, deaktivieren Sie die Option **[Extract table on first run]**.
+3. Klicken Sie auf **[Load Preview]**, um die ersten 1000 Datensätze der SAP Tabelle anzuzeigen.<br>
+Die Spalte IUUC_OPERAT_FLAG zeigt an, ob die Daten eingefügt (I), aktualisiert (U) oder gelöscht (D) wurden.
+4. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
+5. Führen Sie die Extraktion aus, um eine Log-Tabelle in SAP zu erzeugen, die Änderungen an der ausgewählten SAP Tabelle oder Ansicht nachverfolgt, siehe []().
 
 {: .box-note }
-**Note:** Before deleting an extraction, click **[Delete CDC resources]** to delete the log table and all associated triggers from your SAP system.
+**Hinweis:** Bevor Sie eine Extraktion löschen, klicken Sie ind er Table CDC Komponente auf **[Delete CDC resources]**, um die Log-Tabelle und alle dazugehörigen Elemente aus Ihrem SAP-System zu löschen. 
 
-#### Append Data to an Existing File
-To append the extracted data to an existing file...
-Only destinations with the "Existing File" subsection???
 
-What happens if an extraction failed? Is the delta information lost?
+### Die Extraktion zum ersten Mal Ausführen
 
-### Testrun the Extraction
+Führen Sie die Extraktion ein mal aus, um eine Log-Tabelle in SAP zu erzeugen, die Änderungen an der ausgewählten SAP Tabelle oder Ansicht nachverfolgt. 
 
-1. In the main window of the Designer, click **[Run]**. The window "Run Extraction" opens.<br> Bild
-2. In the runtime parameters section, select the destination where you want to write data to.
-3. Click **[Run]**.
-4. If the extraction was successfull, the status in the *General Info* section of the window changes to "finished successfully".<br>
-If an error occured, you can find information on the error in the *Log* section of the window.
+1. Im Hauptfenster des Designers wählen Sie die Extraktion aus.
+2. Optional: Klicken Sie auf **[Destination]**, um der Extraktion die Destination zuzuweisen, in die Sie die Daten schreiben möchten (1).<br> 
+![Table-CDC-Extraction](/img/content/tablecdc/table-cdc-extraction.png){:class="img-responsive"}
+3. Klicken Sie auf **[Run]** (2). Das Fenster "Run Extraction" öffnet sich.<br>
+![Table-CDC-Run](/img/content/tablecdc/table-cdc-run.png){:class="img-responsive"}
+4. Klicken Sie auf **[Run]** (3), um die Extraktion auszuführen.
+5. Wenn die Extraktion erfolgreich war, ändert sich der Status im Abschnitt *General Info* zu "finished successfully".<br>
+Wenn ein Fehler aufgetreten ist, finden Sie nähere Informationen im Abschnitt *Log*.
 
-{: .box-tip }
-**Tip:** If you set the extraction to extract the whole table on your first run, follow steps 1 to 4, then change data in SAP and repeat the steps to check the delta extraction.
+Die Log-Tabelle in SAP ist jetzt angelegt und für die Table CDC Komponente verfügbar.
+Die extrahierte SAP-Tabelle ist jetzt in Ihrer Destination angelegt.
 
+{: .box-note }
+**Hinweis:** Wenn Sie die Extraktion regelmäßig ausführen, wird der Inhalt der Log-Tabelle in SAP extrahiert und in die Destination geschrieben. 
+Der Inhalt der Log-Tabelle in SAP wird nach jeder erfolgreichen Extraktion gelöscht. Daten, die noch nicht extrahiert wurden, werden nicht gelöscht.
