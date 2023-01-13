@@ -27,21 +27,30 @@ For more information, see the knowledge base article on [SAP User Rights: Table]
 
 ### About Table CDC
 
-Running the extration for the first time, creates a log table in SAP that records any changes made to the original table or view.
-The name of the log table is...
-The content of the log table is cleared after every run of the extraction (?)
+Change Data Capture (CDC) is a method to keep track of data changes such as insert, update and delete in SAP tables.
+The Table CDC component creates a log table in SAP that records any changes made to a selected table or view. 
+The content of the log table is cleared after every successful run of the extraction. Data that was not extracted is not cleared.
+
+Note that clusters and pool tables are not supported by the Table CDC component. 
 
 ### Requirements
 
+The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE is mandatory. The SAP transport requests for the installation is provided in the installation directory: <br>
+`C:\ProgramFiles\[XtractProduct]\ABAP\`.
+
+
+<!---
+- Access to the SAP authority object `S_TABU_NAM ACTVT=02` must be granted.
 - SAP version x.xx or higher.
+- The SAP user must have the right to create SAP Tables, see [SAP Connection - Authentication](./getting-started/sap-connection#authentication).
 - Access to the designated authority objects (RFC) in SAP, see [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table) must be granted.
-- The user that connects to SAP must have the right to create SAP Tables, see [SAP Connection - Authentication](./getting-started/sap-connection#authentication).
+-->
+
 
 ### How to use the Table CDC component
 {% include _content/en/xu-specific/define-extraction.md %}
 
-More information on working with the Table CDC component is provided in the following sections.
-
 ---
+More information on working with the Table CDC component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
