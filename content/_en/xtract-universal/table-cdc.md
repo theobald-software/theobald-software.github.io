@@ -31,12 +31,12 @@ Change Data Capture (CDC) is a method to keep track of data changes such as inse
 The Table CDC component creates a log table in SAP that records any changes made to a selected table or view. 
 The content of the log table is cleared after every successful run of the extraction. Data that was not extracted is not cleared.
 
-Note that clusters and pool tables are not supported by the Table CDC component. 
+{: .box-note }
+**Note:** Clusters and pool tables are not supported by the Table CDC component. 
 
 ### Requirements
 
-The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE is mandatory. The SAP transport requests for the installation is provided in the installation directory: <br>
-`C:\ProgramFiles\[XtractProduct]\ABAP\`.
+The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE is mandatory. The SAP transport requests for the installation is provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`.
 
 
 <!---
