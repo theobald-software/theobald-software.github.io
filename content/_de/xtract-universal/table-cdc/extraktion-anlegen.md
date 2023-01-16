@@ -10,7 +10,10 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-table-extraktion-definieren
 ---
-Der folgende Abschnitt beschreibt die Anwendung der Table Komponente. 
+Der folgende Abschnitt beschreibt die Anwendung der Table Komponente. <br>
+
+{: .box-note }
+**Hinweis:** Die Table CDC Komponente befindet sich noch im **Preview** Modus.
 
 ### Eine Tabelle Finden
 

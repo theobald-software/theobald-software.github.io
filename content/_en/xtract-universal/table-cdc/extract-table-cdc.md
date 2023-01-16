@@ -12,6 +12,9 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-table-extraction
 ---
 The following section shows how to use the Table CDC component.
 
+{: .box-note }
+**Note:** The Table CDC component is still in **Preview** mode.
+
 ### Look Up a Table
 
 Look up the SAP table or view you want to track.
