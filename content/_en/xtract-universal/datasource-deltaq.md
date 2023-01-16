@@ -16,7 +16,7 @@ The following section describes the functions of the DeltaQ component of Xtract 
 
 {: .box-warning } 
 **Warning! Newer component available.**<br>
-Xtract Universal DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)**.
+DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)**.
 
 {: .box-warning}
 **Warning!** **Missing Authorization**

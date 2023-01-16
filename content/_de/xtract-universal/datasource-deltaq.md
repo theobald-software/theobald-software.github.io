@@ -16,7 +16,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal DeltaQ Kompo
 
 {: .box-warning } 
 **Warnung! Neuere Komponente verfügbar.**<br>
-Xtract Universal DeltaQ ist eine alte Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
+DeltaQ ist eine alte Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**

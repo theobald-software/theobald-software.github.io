@@ -15,6 +15,10 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract IS for Azure DeltaQ Ko
 Die Xtract IS DeltaQ Komponente ermöglicht es, ein echtes Delta-Management zwischen dem Produktivsystem und der BI/Staging-Schicht durchzuführen.
 DeltaQ extrahiert DataSources (OLTP) und Extraktoren aus ERP- und ECC-Systemen.
 
+{: .box-warning } 
+**Warnung! Neuere Komponente verfügbar.**<br>
+DeltaQ ist eine alte Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
+
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
 Um die DeltaQ Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
