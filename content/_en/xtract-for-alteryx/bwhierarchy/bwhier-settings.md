@@ -34,7 +34,7 @@ Sets the node text in the column *NodeText* based on the system language setting
 ### Natural Settings
 
 {: .box-note}
-**Note:** the subsection *Natural Settings* is only active, when **Representation** field is set to *Natural*.
+**Note:** the subsection *Natural Settings* is only active, when the **Representation** is set to *Natural*.
 
 **Level Count:** <br>
 Defines the maximum number of levels. The following example shows a hierarchy with four levels. <br>
