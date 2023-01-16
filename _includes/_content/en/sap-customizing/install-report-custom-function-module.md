@@ -1,9 +1,19 @@
 The report component requires the installation of a custom function module in your SAP system.<br>
 If you cannot install the function mudule, turn to your SAP Basis team for help.
 
+{: .box-note}
+**Note:** As of 
+
 ### Installation 
 Install the function module using the transport request *Z_XTRACT_IS_REMOTE_REPORT-transport.zip*. <br> 
 The transport request is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip`.
+
+### Authority Objects for Z_XTRACT_IS_REMOTE_REPORT
+
+There are 2 ways of 
+
+- You can use a custom authorization object Z_TS_PROG to verify that the SAP user is allowed to extract a report, see [](). 
+- You can use authenthication groups with the authorization object S_PROGRAM to grant access to reports, see [Authorizing Access to Specific Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports).
 
 
 ### SAP Standard Data Type TAB512
