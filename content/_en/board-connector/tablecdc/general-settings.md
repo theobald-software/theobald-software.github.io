@@ -1,16 +1,17 @@
 ---
-ref: bc-getting-started-05
+ref: bc-tablecdc-06
 layout: page
-title: General Settings
-description: General Settings
+title: General settings
+description: General settings
 product: board-connector
-parent: getting-started
+parent: table-cdc
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=general-settings
-progressstate: 5
----	
+old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
+---
+
+
 General Settings are independent of the extraction type.
 
 ### To open General Settings

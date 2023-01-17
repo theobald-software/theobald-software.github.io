@@ -1,9 +1,9 @@
 ---
-ref: xu-tablecdc-01
+ref: bc-tablecdc-01
 layout: page
 title: Defining a Table CDC Extraction
 description: Extract Table Data
-product: xtract-universal
+product: board-connector
 parent: table-cdc
 permalink: /:collection/:path
 weight: 2
@@ -13,19 +13,13 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-table-extraction
 
 {% include _content/en/tablecdc/extract-table-cdc.md%}
 
-
 ### Run the Extraction for the First Time
 
 Run the extraction for the first time to create a log table in SAP that records any changes made to a selected table or view.
 
 1. In the main window of the Designer select the extraction. 
-2. Optional: click **[Destination]** to assign the destination where you want to write data to (1).<br> 
-![Table-CDC-Extraction](/img/content/tablecdc/table-cdc-extraction.png){:class="img-responsive"}
-3. Click **[Run]** (2). The window "Run Extraction" opens.
-4. Click **[Run]** (3) to run the extraction.<br>
-![Table-CDC-Run](/img/content/tablecdc/table-cdc-run.png){:class="img-responsive"}
-5. If the extraction is successfull, the status in the *General Info* section of the window changes to "finished successfully".<br>
-If an error occured, you can find information on the error in the *Log* section of the window.
+2. Click **[Run]**. The window "Run Extraction" opens.
+4. Click **[Run in Browser]** to run the extraction.<br>
 
 The log table in SAP is now available for the Table CDC component.
 The extracted SAP table is now available in your destination.
@@ -37,9 +31,3 @@ Depending on whether the option **[Extract table on first run]** in the Table CD
 **Note:** When running the extraction regularly the content of the log table in SAP is extracted and written to the destination.
 The content of the log table in SAP is cleared after every successful run of the extraction. Data that was not extracted is not cleared.
 
-
-
-<!---
-{: .box-tip }
-**Tip:** If you set the extraction to extract the whole table on your first run, follow steps 1 to 4, then change data in SAP and repeat the steps to check the delta extraction. 
--->
