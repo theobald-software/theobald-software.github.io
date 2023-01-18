@@ -43,12 +43,10 @@ Bei der Extraktion von Tabellen aus älteren SAP-Systemen können Sie bei der Ve
   Fehler können auftreten bei der Extraktion von Tabellen, die eine oder mehrere Spalten vom Typ f (FLTP, floating point), DEC (Decimal und Prozentzahl z.B.) oder x (RAW, LRAW) haben.
 - Schlechte Extraktionsperformance bei Extraktion großer Tabellen.
 
-Um die o.g. Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustein *Z_THEO_READ_TABLE* von Theobald Software auf Ihrem SAP-System.
 
 {: .box-warning }
 **Warnung! Error while converting value '\*.0' of row 1530, column 3** <br>
 Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.<br>
-Verwenden Sie den Funktionsbaustein von Theobald Software *Z_THEO_READ_TABLE*. 
 
 #### Z_THEO_READ_TABLE installieren
 
