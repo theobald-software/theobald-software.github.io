@@ -48,8 +48,3 @@ Bei der Extraktion von Tabellen aus älteren SAP-Systemen können Sie bei der Ve
 **Warnung! Error while converting value '\*.0' of row 1530, column 3** <br>
 Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.<br>
 
-#### Z_THEO_READ_TABLE installieren
-
-Kontaktieren Sie den [Theobald Support](mailto:support@theobald-software.com), um den SAP-Transportauftrag *Z_THEO_READ_TABLE* anzufordern.<br>
-Sobald der Funktionsbaustein im System verfügbar ist, können Sie ihn aktivieren, indem Sie den Namen des Funktionsbausteins im LINQ-Table Fenster eintragen. <br>
-![LINQToERP-Tables-004](/img/content/LINQToERP-Tables-004.png){:class="img-responsive"}
