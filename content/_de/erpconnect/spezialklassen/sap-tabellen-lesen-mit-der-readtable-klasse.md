@@ -112,13 +112,6 @@ Bei der Extraktion von Tabellen aus älteren SAP-Systemen können Sie bei der Ve
 Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.<br>
 
 
-#### Z_XTRACT_IS_TABLE installieren
-
-Kontaktieren Sie den [Theobald Support](mailto:support@theobald-software.com), um den SAP-Transportauftrag *Z_XTRACT_IS_TABLE* anzufordern.<br>
-Sobald der Funktionsbaustein im System verfügbar ist, können Sie ihn aktivieren, indem Sie den Namen des Funktionsbausteins im LINQ-Table Fenster eintragen. <br>
-![LINQToERP-Tables-004](/img/content/LINQToERP-Tables-004.png){:class="img-responsive"}
-
-
 ****
 #### Weiterführende Links
 - [Transferring data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-readtable-class)
