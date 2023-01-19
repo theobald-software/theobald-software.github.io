@@ -48,22 +48,12 @@ Select the required file format. You can choose between *CSV*, *Parquet* and *Js
 
 #### CVS Settings
 
-The settings for file type *CSV* correspond to the [Flat File CSV settings](./csv-flat-file).
+To write data in csv format, no further settings have to be made.
 
 #### Parquet Settings
 
-The following compatibility modes are available:
-- *Pure* 
-- *Spark* 
-- *BigQuery*
+To write data in parquet format, no further settings have to be made.
 
-Spark does not support the data types used in pure mode, so other data types need to be used. <br>
-In spark mode special characters and spaces are replaced with an underscore `_`.
-
-| SAP | Pure / BigQuery | Spark |
-|------|-------------|-------|-------|
-| INT1 | UINT_8 | INT16 |
-| TIMS | TIME_MILLIS | UTF8 |
 
 #### Json Settings
 

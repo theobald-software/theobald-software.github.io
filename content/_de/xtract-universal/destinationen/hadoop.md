@@ -46,22 +46,11 @@ Wählen Sie das gewünschte Dateiformat zwischen *CSV*, *Parquet* und *Json*.
 ![XU_Hadoop_DestinationDetails2](/img/content/xu/hadoop/hadoop-destination-details2.png){:class="img-responsive"}
 
 #### CVS Settings - Einstellungen
-Die *CSV* Einstellungen entsprechen denen der allgemeinen [Flat File CSV Einstellungen](./csv-flat-file).
+Um Daten im csv-Format zu schreiben, sind keine weiteren Einstellungen nötig.
 
 #### Parquet Settings - Einstellungen
 
-Die folgenden Kompatibilitätsmodi sind verfügbar:
-- *Pure* 
-- *Spark* 
-- *BigQuery*
-
-Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden. <br>
-Sonderzeichen und Leerzeichen werden im Spark-Modus durch einen Unterstrich `_` ersetzt. 
-
-| SAP | Pure / BigQuery | Spark |
-|------|-------------|-------|-------|
-| INT1 | UINT_8 | INT16 |
-| TIMS | TIME_MILLIS | UTF8 |
+Um Daten im parquet-Format zu schreiben, sind keine weiteren Einstellungen nötig.
 
 #### Json Settings - Einstellungen
 
