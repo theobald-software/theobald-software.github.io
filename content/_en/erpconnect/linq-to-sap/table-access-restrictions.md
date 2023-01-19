@@ -43,9 +43,3 @@ When extracting tables from older SAP releases you may encounter several restric
 {: .box-warning }
 **Warning! Error while converting value '\*.0' of row 1530, column 3** <br>
 The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
-
-#### Installing Z_THEO_READ_TABLE
-
-Contact [Theobald Support](mailto:support@theobald-software.com) to receive the *Z_THEO_READ_TABLE* transport for your for SAP system.<br>
-Once *Z_THEO_READ_TABLE* is installed, you can activate the module by entering its name in the LINQ Table window.<br>
-![LINQToERP-Tables-004](/img/content/LINQToERP-Tables-004.png){:class="img-responsive" width="800px" }
