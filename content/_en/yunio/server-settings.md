@@ -21,6 +21,26 @@ To save any changes made in the **Settings** menu, click **[Save]**.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
+### Endpoint
+
+The **Service URL Kind** option defines the URL that is used to connect to yunIO services.
+
+- *Default*: <br>
+If TLS is active, the *Subject Alternative Name* provided by the X.509 certificate is used as the hostname, see [Transport Layer Security](#transport-layer-security). <br>
+- *Azure Relay Hybrid Connection*:<br>
+Services use an Azure Relay address to become accessible to applications running in the Azure cloud. For more information on Azure Relay, see [Microsoft Documentation: What is Azure Relay?](https://learn.microsoft.com/en-us/azure/azure-relay/relay-what-is-it). <br>
+- *Custom*: <br>
+Allows you to enter a custom hostname. Enter the hostname in the field **Custom Hostname** and click **[Save]** to update the OpenAPI definitions of all existing services.
+
+#### Azure Relay Hybrid Connection
+How to set up the Azure Relay Hybrid Connection in yunIO:
+1. Create an Azure Relay namespace and an Azure Relay Hybrid Connection, see [Microsoft Documentation: Get started with Relay Hybrid Connections HTTP requests in .NET](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started). 
+2. Copy and paste the primary connection string from Azure Relay in the field **Azure Relay Connection String**.
+3. Set **Service URL Kind** to *Azure Relay Hybrid Connection*.
+4. Click **[Save]** to save the changes.
+5. Restart the YunIO service to complete the registration.
+
+
 ### Transport Layer Security
 
 Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
@@ -31,7 +51,7 @@ For more information on TLS, see [Microsoft: Transport Layer Security Protocol](
 Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
 If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
 The certificate must have *Subject Alternative Name* set. When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
-A custom hostname can be entered in the [OpenAPI](#openapi) setting.
+A custom hostname can be entered in the [Endpoint](#endpoint) setting.
 
 For information on how to renew a certificate, refer to our knowledge base article [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
 
@@ -49,9 +69,6 @@ Enable or disable the usage of transport encryption for the web server.
 If you cannot access the designer. because of problems with the TLS certificate, delete the `tls.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\tls.json`.
 Restart the yunIO server.
 
-### OpenAPI
-
-Enter a custom hostname and click **[Save]** to update the OpenAPI definitions of all existing services. <br>
 
 ### Services, Designer and WebSockets
 

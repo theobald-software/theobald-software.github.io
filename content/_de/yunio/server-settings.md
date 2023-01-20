@@ -21,6 +21,26 @@ Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
+### Endpoint
+
+Die Option **Service URL Kind** definiert die URL, mit der man sich mit yunIO Services verbindet.
+
+- *Default*: <br>
+Wenn TLS aktiv ist ist, wird der *Subject Alternative Name* aus dem X.509 Zertificate als Hostname verwendet, siehe [Transport Layer Security](#transport-layer-security). <br>
+- *Azure Relay Hybrid Connection*:<br>
+Die Services verwenden eine Azure Relay Adresse, um für Anwendungen in der Azure Cloud erreichbar zu sein. Für mehr Informationen zu Azure Relay, siehe [Microsoft Dokumentation: Was ist Azure Relay?](https://learn.microsoft.com/de-de/azure/azure-relay/relay-what-is-it). <br>
+- *Custom*: <br>
+Geben Sie im Feld **Custom Hostname** einen benutzerdefinierten Hostnamen ein und klicken Sie auf **[Save]**, um die OpenAPI Definitionen aller angelegten Services zu aktualisieren.
+
+#### Azure Relay Hybrid Connection
+Führen Sie die folgenden Schritte aus, um eine Azure Relay Hybrid Connection für yunIO zu nutzen:
+1. Erstellen sie einen Azure Relay Namespace und eine Azure Relay Hybrid Connection, siehe [Microsoft Dokumentation: Erste Schritte mit HTTP-Anforderungen von Relay Hybrid Connections in .NET](https://learn.microsoft.com/de-de/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started).
+2. Deaktivieren Sie die Option „Clientautorisierung erforderlich“ bei der Relay-Erstellung, damit sie Anfragen an die Hybrid Connections URL von jedem Browser aus senden können. 
+3. Kopieren Sie die *Primäre Verbindungszeichenfolge* (connection string) von Azure Relay in das Feld **Azure Relay Connection String**.
+4. Wählen Sie in **Service URL Kind** die Option *Azure Relay Hybrid Connection* aus.
+5. Klicken Sie auf **[Save]**, um die Änderungen zu speichern.
+6. Starten Sie den yunIO-Server neu, um die Registrierung abzuschliessen.
+
 
 ### Transport Layer Security
 
@@ -33,7 +53,7 @@ Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.mi
 Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509 Zertifikat aus der Liste verfügbarer Zertifikate aus.
 Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgelistet ist, installieren Sie das X.509 Zertifikat.
 In dem Zertifikat muss ein *Subject Alternative Name* hinterlegt sein. Dieser wird als neuer Hostname verwendet.
-Einen benutzerdefinierten Hostnamen können Sie in der [OpenAPI](#openapi) Einstellung angeben.
+Einen benutzerdefinierten Hostnamen können Sie in der [Endpoint](#endpoint) Einstellung angeben.
 
 Informationen zur Erneuerung eines Zertifikats, finden Sie in dem Knowledge Base Artikel [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
 
@@ -50,9 +70,6 @@ Wenn ein Zertifikat gewählt wurde, ist die Option **TLS enabled** verfügbar.<b
 Wenn der Designer aufgrund von Problemen mit dem Zertifikat nicht mehr erreichbar ist, löschen Sie die `tls.json` aus Ihrem Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO\config\servers\tls.json`.
 Starten Sie anschließend den Server neu.
 
-### OpenAPI
-
-Geben Sie einen benutzerdefinierten Hostnamen ein und klicken Sie auf **[Save]**, um die OpenAPI Definitionen aller Services zu aktualisieren. <br>
 
 ### Services, Designer und WebSockets 
 

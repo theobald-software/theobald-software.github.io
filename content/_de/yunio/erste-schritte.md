@@ -46,15 +46,16 @@ Für mehr Informationen zum Einrichten der SAP-Verbindung, siehe [SAP-Verbindung
 Unter *Services* können Sie neue Webservices erstellen und bereits angelegte Services bearbeiten, ausführen und löschen.
 
 1. Um einen neuen Service anzulegen, klicken Sie auf **[Add Service]** (1). <br>
-Um einen bereits vorhandenen Service zu bearbeiten, klicken Sie auf *Edit* (![Edit](/img/content/yunio/edit.png) Icon) (2).<br>
 ![yunIO-Services](/img/content/yunio/yunio-services.png){:class="img-responsive" }
-2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus (3).
+2. Geben Sie unter *Endpoint* einen Namen für den Service ein und wählen Sie Ihre SAP-Verbindung aus (2).
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
-3. Wählen Sie einen Extraktionstyp (4). yunIO bietet folgende Optionen: *SAP Tables or Views*, *Function Modules* und *Transactions*.
-4. Optional: Geben Sie unter Description eine kurze Beschreibung des Services ein (5).
+3. Optional: Geben Sie unter Description eine kurze Beschreibung des Services ein.
+4. Wählen Sie einen Extraktionstyp (3). yunIO bietet folgende Optionen: *SAP Tables or Views*, *Function Modules* und *Transactions*.
 5. Klicken Sie auf **[Save and edit]**.
 Richten Sie den Service ein, siehe [SAP Tabelle oder Ansicht](./table-and-views), [Funktionsbausteine / BAPIs](./bapis-and-function-modules) oder [Transaktionen](./transactions).
 
+Um den Namen, die Beschreibung und das Quellsystem eines Service zu bearbeiten, klicken Sie auf das ![Edit](/img/content/yunio/edit-type-icon.png) Icon.<br>
+Um die Extraktionseinstellungen eines Service zu bearbeiten, klicken Sie auf das ![Edit](/img/content/yunio/edit-cog-icon.png) Icon.<br>
 
 ### Einen Service ausführen
 
