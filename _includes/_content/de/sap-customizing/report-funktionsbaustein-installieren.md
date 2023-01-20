@@ -13,8 +13,8 @@ Der Transportauftrag befindet sich in folgendem Installationsverzeichnis: `C:\Pr
 
 Ab Z_XTRACT_IS_REMOTE_REPORT Version 1.2 muss der Zugriff auf Reports explizit erteilt werden<br>
 Es gibt 2 Möglichkeiten, um zu verifizieren, ob ein SAP Benutzer einen Report extrahieren darf:
-- Verwenden Sie Berechtigungsgruppen, siehe [Authorizing Access to Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports).
-- Verwenden Sie ein benutzerdefiniertes Berechtigungsobjekt Z_TS_PROG, siehe [Z_XTRACT_IS_REMOTE_REPORT_README.pdf](/docs/sap-customizing/Z_XTRACT_IS_REMOTE_REPORT.pdf){:target="_blank"}. 
+- Verwenden Sie Berechtigungsgruppen, siehe [Authorizing Access to Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports){:target="_blank"}.
+- Verwenden Sie ein benutzerdefiniertes Berechtigungsobjekt Z_TS_PROG, siehe [How to Create the Custom Authorization Object Z_TS_PROG](https://kb.theobald-software.com/sap/how-to-create-the-custom-authorita-object-z-ts-prog){:target="_blank"}. 
 
 
 ### SAP Standard Datentyp TAB512
