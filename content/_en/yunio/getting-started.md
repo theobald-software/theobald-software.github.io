@@ -42,7 +42,7 @@ To edit an existing connection, click the edit icon (![Edit](/img/content/yunio/
 
 For more detailed information on establishing an SAP connection, see [SAP Connection](./sap-connection).
 
-### Creating a service
+### Creating a Service
 
 In the *Services* menu you can create new web services and edit, run or delete existing web services.
 
@@ -53,7 +53,7 @@ In the *Services* menu you can create new web services and edit, run or delete e
 3. Optional: Add a short description for the service. 
 4. Choose an **Extraction Type** (3). yunIO offers the following options: *SAP Tables or Views*,*Function Modules* or *Transaction*. 
 5. Click **[Save and edit]**.
-To set up the service according to your extraction type, see either [SAP Table or View](./table-and-views), [Function Module / BAPI](./bapis-and-function-modules) or [Transactions](./transactions).
+To set up the service, see [SAP Table or View](./table-and-views), [Function Module / BAPI](./bapis-and-function-modules) or [Transactions](./transactions).
 
 To edit the name, description and source of an existing service, click the ![Edit](/img/content/yunio/edit-type-icon.png) icon.<br>
 To edit the extraction type settings of the service, click the ![Edit](/img/content/yunio/edit-cog-icon.png) icon. <br>
