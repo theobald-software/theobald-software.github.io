@@ -39,7 +39,7 @@ How to set up the Azure Relay Hybrid Connection in yunIO:
 3. Copy and paste the primary connection string from Azure Relay in the field **Azure Relay Connection String**.
 4. Set **Service URL Kind** to *Azure Relay Hybrid Connection*.
 5. Click **[Save]** to save the changes.
-6. Restart the YunIO service to complete the registration.
+6. Restart the yunIO server to complete the registration.
 
 
 ### Transport Layer Security
