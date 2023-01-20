@@ -22,8 +22,7 @@ Follow the steps below to install the *LINQ to SAP* add-on:
 1. Close Visual Studio.
 2. Navigate to the ERPConnect directory (`C:\Program Files\ERPConnect`).
 The directory includes setups to install the *LINQ to SAP* Designer. <br>
-Start the setup that corresponds to your Visual Studio Version. The following Setups are available:
-- LINQtoERPSetupVS2012.exe
+Start the setup that corresponds to your Visual Studio Version. The following setups are available:
 - LINQtoERPSetupVS2013.exe
 - LINQtoERPSetupVS2015.exe
 - LINQtoERPSetupVS2017.exe

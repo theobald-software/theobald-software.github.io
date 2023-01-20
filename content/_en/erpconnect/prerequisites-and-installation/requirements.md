@@ -45,7 +45,6 @@ Installation of custom function modules / transport requests is not required.
 - Visual Studio 2017
 - Visual Studio 2015 (until 14.10.2025)
 - Visual Studio 2013 (until 09.04.2024)
-- Visual Studio 2012 Update 5 (until 10.01.2023)
 
 
 ### Other Applications and Frameworks

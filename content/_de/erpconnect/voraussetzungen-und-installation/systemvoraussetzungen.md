@@ -44,8 +44,6 @@ Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträge
 - Visual Studio 2017
 - Visual Studio 2015 (bis 14.10.2025)
 - Visual Studio 2013 (bis 09.04.2024)
-- Visual Studio 2012 Update 5 (bis 10.01.2023)
-
 
 ### Andere Anwendungen und Frameworks
 

@@ -56,6 +56,3 @@ using (ERPConnectServiceClient client = new ERPConnectServiceClient())
 {% endhighlight %}
 </details>
 
-Hier können Sie die [Vorlage]() für Visual Studio 2012 herunterladen.
-
-
