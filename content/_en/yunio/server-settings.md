@@ -34,11 +34,12 @@ Allows you to enter a custom hostname. Enter the hostname in the field **Custom 
 
 #### Azure Relay Hybrid Connection
 How to set up the Azure Relay Hybrid Connection in yunIO:
-1. Create an Azure Relay namespace and an Azure Relay Hybrid Connection, see [Microsoft Documentation: Get started with Relay Hybrid Connections HTTP requests in .NET](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started). 
-2. Copy and paste the primary connection string from Azure Relay in the field **Azure Relay Connection String**.
-3. Set **Service URL Kind** to *Azure Relay Hybrid Connection*.
-4. Click **[Save]** to save the changes.
-5. Restart the YunIO service to complete the registration.
+1. Create an Azure Relay namespace and an Azure Relay Hybrid Connection, see [Microsoft Documentation: Get started with Relay Hybrid Connections HTTP requests in .NET](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started).
+2. Disable the *Requires Client Authorization* setting when creating the Relay, so that you can send requests to the Hybrid Connections URL from any browser. 
+3. Copy and paste the primary connection string from Azure Relay in the field **Azure Relay Connection String**.
+4. Set **Service URL Kind** to *Azure Relay Hybrid Connection*.
+5. Click **[Save]** to save the changes.
+6. Restart the YunIO service to complete the registration.
 
 
 ### Transport Layer Security
