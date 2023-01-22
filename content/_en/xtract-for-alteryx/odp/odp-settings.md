@@ -15,6 +15,7 @@ The following section describes the settings of the Xtract ODP component that ca
 ![ODP Component](/img/content/odp/odp-settings.png){:class="img-responsive"}
 
 {% include _content/en/odp/odp-settings-subscriptions.md %}
-{% include _content/en/xis-specific/odp/odp-settings-parameters.md %}
+
+{% include _content/en/odp/odp-settings-parameters.md %}
 
 {% include _content/en/odp/odp-settings-advanced.md %}

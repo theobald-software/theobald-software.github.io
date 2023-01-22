@@ -12,5 +12,5 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=open-hub-services-extraction-s
 ---
 
 Click **Extraction Settings** in the main window of the OHS component to access the extraction settings.
-{% include _content/en/xis-specific/open-hub-service-ohs/settings.md %}
 
+{% include _content/en/bw-open-hub-services/open-hub-services-extraction-settings.md %}

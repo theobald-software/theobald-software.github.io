@@ -10,4 +10,6 @@ weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=load-transaction-data
 ---
-{% include _content/en/xis-specific/bw-loader/example-scenario/load-transaction-data.md %}
+Now that the InfoCube and InfoSource have been created, you are almost finished with everything. You now only need to create an InfoPackage of the Transaction type for the InfoSource, and link the pipeline elements with the elements of the transfer structure. The following screenshot shows the completed link. The transaction data can now be loaded.
+
+![BWLoader-Load-TransactionData](/img/content/BWLoader-Load-TransactionData.png){:class="img-responsive"}

@@ -28,7 +28,9 @@ For more information, see the knowledge base article on [SAP User Rights: Report
 ### How to use the Xtract Report component
 {% include _content/en/xis-specific/define-extraction.md %}
 
-{% include _content/en/xis-specific/report/workflow.md %}
+### General Workflow 
+
+![Report-Workflow](/img/content/report-general-workflow.png){:class="img-responsive" width="400px"}
 
 ---
 

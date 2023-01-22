@@ -15,4 +15,5 @@ The following section shows how to use the Xtract ODP component.
 {% include _content/en/odp/odp-define.md %}
 
 {% include _content/en/odp/odp-settings-update_mode.md %} 
-{% include _content/en/xis-specific/odp/odp-settings-filtering.md %}
+
+{% include _content/en/odp/odp-settings-filtering.md %}

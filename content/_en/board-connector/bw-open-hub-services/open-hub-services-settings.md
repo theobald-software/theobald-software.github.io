@@ -11,4 +11,5 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=ohs-extraction-settings
 ---
 Click **Extraction Settings** in the main window of the OHS component to access the extraction settings.
-{% include _content/en/xis-specific/open-hub-service-ohs/settings.md %}
+
+{% include _content/en/bw-open-hub-services/open-hub-services-extraction-settings.md %}

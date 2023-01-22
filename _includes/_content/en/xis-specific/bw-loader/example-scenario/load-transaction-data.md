@@ -1,3 +1,0 @@
-Now that the InfoCube and InfoSource have been created, you are almost finished with everything. You now only need to create an InfoPackage of the Transaction type for the InfoSource, and link the pipeline elements with the elements of the transfer structure. The following screenshot shows the completed link. The transaction data can now be loaded.
-
-![BWLoader-Load-TransactionData](/img/content/BWLoader-Load-TransactionData.png){:class="img-responsive"}

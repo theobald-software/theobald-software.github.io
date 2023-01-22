@@ -1,1 +1,0 @@
-{% include _content/en/datasource-deltaq/datasource-delta.md %}

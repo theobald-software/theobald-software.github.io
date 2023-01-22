@@ -10,4 +10,4 @@ weight: 5
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=delta
 ---
-{% include _content/en/xis-specific/deltaq/datasource-delta.md %}
+{% include _content/en/datasource-deltaq/datasource-delta.md %}
