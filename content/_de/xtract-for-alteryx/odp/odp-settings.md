@@ -16,5 +16,7 @@ Der folgende Abschnitt beschreibt die Einstellungen der ODP-Komponente, die übe
 ![ODP Component](/img/content/odp/odp-settings.png){:class="img-responsive"}
 
 {% include _content/de/odp/odp-settings-subscriptions.md %}
-{% include _content/de/xis-specific/odp/odp-settings-parameters.md %}
+
+{% include _content/de/odp/odp-settings-parameters.md %}
+
 {% include _content/de/odp/odp-settings-advanced.md %}

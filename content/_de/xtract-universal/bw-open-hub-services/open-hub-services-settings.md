@@ -13,4 +13,5 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=ohs-extraktionseinstellungen
 
 
 Klicken Sie im Hauptfenster der OHS-Komponente auf **Extraction Settings**, um das Menü für die Extraktionseinstellungen zu öffnen. 
-{% include _content/de/xis-specific/open-hub-service/settings.md %}
+
+{% include _content/de/bw-open-hub-services/ohs-extraktionseinstellungen.md %}

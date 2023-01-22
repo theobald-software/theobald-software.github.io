@@ -16,4 +16,5 @@ The following section describes the settings of the Xtract ODP component that ca
 
 {% include _content/en/odp/odp-settings-subscriptions.md %}
 {% include _content/en/xis-specific/odp/odp-settings-parameters.md %}
+
 {% include _content/en/odp/odp-settings-advanced.md %}
