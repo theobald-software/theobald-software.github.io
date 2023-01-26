@@ -19,7 +19,8 @@ Das Menü besteht aus zwei Abschnitten:
 - Zeitstempel der Logs (1)
 - Inhalt der Logs (2)
 
-Klicken Sie auf einen Zeitstempel, um die dazugehörigen Logs anzuzeigen.
+Klicken Sie auf einen Zeitstempel, um die dazugehörigen Logs anzuzeigen.<br>
+![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
 
 ### Logs lesen
 

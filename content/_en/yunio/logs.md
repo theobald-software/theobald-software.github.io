@@ -22,11 +22,14 @@ The menu consists of two sections:
 
 Click on a timestamp to open the corresponding logs.
 
-### Read Logs
+![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
+
+
+### How to Read Logs
 
 Logs are created per TCP connection.
 
-| Time | Type | Source | Message | 
+| Pacific Time | Type | Source | Message | 
 |--------|--------|--------|---|
 | PT00H00M43.777S | D | ExecutionCore: | Extraction finished, firing callback.  | 
 
@@ -34,14 +37,20 @@ Logs are created per TCP connection.
 | Pacific Timestamp (hours, minutes, seconds) | Type of message:<br>**E - Errors:** error messages issued during the extraction process.<br>**I - Information:** status messages, about processes that do not lead to an error. <br>**W - Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors. <br>**D - Debug Details:** detailed information that help find the reason for errors. | Origin of the error message. | Log message.  | 
 -->
 
+#### Time
+
+Each log has a timestamp in the following format:<br>
+
+
+`PT`(Pacific Time) + Hours `H` + Minutes `M` + Seconds with 3 decimal `S`
+Pacific Timestamp (hours, minutes, seconds)
 
 #### Type 
 Each log entry is assigned one of the following message types:
-
-**Errors:** error messages issued during the extraction process.<br>
-**Information:** status messages, about processes that do not lead to an error.<br>
-**Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors.<br>
-**Debug Details:** detailed information that help find the reason for errors.
+- **E - Errors:** error messages issued during the extraction process.<br>
+- **I - Information:** status messages, about processes that do not lead to an error.<br>
+- **W - Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors.<br>
+- **D - Debug Details:** detailed information that help find the reason for errors.
 
 #### Structure
 
@@ -82,14 +91,13 @@ PT00H00M00.692S D TheoReadTableExtractor: Data will be extracted in dialog work 
 PT00H00M00.693S D TheoReadTableExtractor: Fetching packages (10 rows per package)
 PT00H00M00.806S D TheoReadTableExtractor: Z_THEO_READ_TABLE version 1.x
 ```
-7. Package no. 1 is received from SAP.
+7. Packages are received from SAP.
 ```
 PT00H00M00.806S D TheoReadTableExtractor: Received package #1 (10 rows)
 PT00H00M00.812S D yunIOWorker: Data available.
 PT00H00M00.843S D yunIOWorker: Registering Stream.
 PT00H00M00.904S D TheoReadTableExtractor: Received package #2 (10 rows)
 PT00H00M00.951S D TheoReadTableExtractor: Received package #3 (10 rows)
-PT00H00M01.005S D TheoReadTableExtractor: Received package #4 (10 rows)
 ...
 ```
 9. Extraction is completed.
@@ -101,6 +109,8 @@ PT00H00M43.781S I yunIOWorker: Cleaning up...
 PT00H00M43.785S D AsyncHttpServer: Closing connection: False
 PT00H00M43.785S D AsyncHttpServer: Reading...
 ```
+
+<!---
 
 -----
 
@@ -138,3 +148,5 @@ PT00H00M43.781S I yunIOWorker: Cleaning up...
 PT00H00M43.785S D AsyncHttpServer: Closing connection: False
 PT00H00M43.785S D AsyncHttpServer: Reading...
 ```
+
+-->
