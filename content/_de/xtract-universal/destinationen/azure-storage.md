@@ -244,6 +244,20 @@ Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werde
 
 {% include _content/de/xu-specific/destinationen/general/folder-script-expressions.md %}
 
+### Common Data Model
+
+Wenn die Option **Common Data Model** aktiv ist, wird eine Common DATA Model JSON Datei erstellt und zusammen mit den extrahierten Daten in die Destination geschrieben.<br>
+Die CDM Datei kann verwendet werden, um Datentransformationen in Azure zu automatisieren.
+
+Für mehr Informationen zu Common Data Models, siehe [Microsoft Dokumentation: Common Data Model](https://learn.microsoft.com/de-de/common-data-model/).
+
+**Entity name**<br>
+Geben Sie einen Namen für die generierte .cdm.json Datei ein.
+
+{: .box-note }
+**Hinweis:** Diese Funktion befindet sich noch im **Preview**-Modus.
+
+
 {% include _content/de/xu-specific/destinationen/general/compression.md %}
 
 {% include _content/de/xu-specific/destinationen/general/file-splitting.md %}

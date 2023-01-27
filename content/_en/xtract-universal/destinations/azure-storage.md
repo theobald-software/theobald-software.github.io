@@ -250,6 +250,19 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 {% include _content/en/xu-specific/destinations/general/folder-script-expressions.md %}
 
+### Common Data Model
+
+If this option is enabled, a Common Data Model JSON file is generated and written to the destination alongside the extracted data.<br>
+The CDM file can be used to automate data transformation in Azure.
+
+For more information on Common Data Models, see [Microsoft Documentation: Common Data Model](https://learn.microsoft.com/en-us/common-data-model/).
+
+**Entity name**<br>
+Enter a name for the generated .cdm.json file.
+
+{: .box-note }
+**Note:** This option is still in preview mode.
+
 {% include _content/en/xu-specific/destinations/general/compression.md %}
 
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}
