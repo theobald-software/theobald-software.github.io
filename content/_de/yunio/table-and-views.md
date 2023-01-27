@@ -131,7 +131,14 @@ Verwenden Sie eine WHERE-Bedingung, um Ihre Daten zu filtern.
 
 Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
+#### Die WHERE Clause im Swagger Inspector verwenden
 
+Die WHERE-Clause kann im Request Body des Services parametrisiert werden. Beispiel:<br>
+![WHERE-Clause in Swagger Inspector](/img/content/yunio/swagger-inspector.png){:class="img-responsive"}
+
+Für mehr Informationen über die Parametrisierung von Services, siehe folgende Knowledge Base Artikel: 
+- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
+- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
 ### WHERE Clause Editor
 

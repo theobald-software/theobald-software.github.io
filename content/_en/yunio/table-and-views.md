@@ -133,6 +133,16 @@ Use a WHERE clause to filter your data.
 
 For more information on the OpenSQL syntax see [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm). 
 
+#### How to use the WHERE Clause in Swagger Inspector
+
+The WHERE-Clause can be parameterized in the request body of the service. Example:<br>
+![WHERE-Clause in Swagger Inspector](/img/content/yunio/swagger-inspector.png){:class="img-responsive"}
+
+For more information on parameterizing services, refer to the following knowledge base articles: 
+- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
+- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
+
+
 ### WHERE Clause Editor
 
 The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
