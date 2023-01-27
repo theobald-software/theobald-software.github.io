@@ -55,7 +55,7 @@ Funktionsbausteine /BAPIs können bis zu vier Parametertypen haben: [Import](#im
 Import-Parameter repräsentieren die Eingabewerte, die vom Client an SAP gesendet werden. 
 Im Tab **Import** können Sie Eingabeparameter definieren.
 
-Wählen Sie Ihre Eingabeparameter:
+Wählen Sie Ihre Eingabeparameter über die entsprechende drop-down Liste aus:
 - Felder, die auf *Supplied by Caller* stehen, sind im Request Body des Services als Parameter verfügbar und können zur Laufzeit gesetzt werden.
 - Felder, die auf *Default (defined in SAP)* stehen, verwenden die Standardwerte aus SAP.
 
@@ -63,6 +63,16 @@ Wählen Sie Ihre Eingabeparameter:
 
 {: .box-note }
 **Hinweis:** Achten Sie beim Parametrieren darauf, den passenden Datentyp für Ihre Eingabewerte zu verwenden.<br>
+
+#### Import Parameter in Swagger Inspector
+
+Beispiel: Der Import-Parameter MAXROWS der BAPI BAPI_CUSTOMER_GETLIST steht auf *Supplied by Caller* und kann somit über den Request Body des Services parametrisiert werden:<br>
+![BAPI export parameters](/img/content/yunio/swagger-inspector-parameter.png){:class="img-responsive"}
+
+Für mehr Information zur Parametrisierung von Services, siehe folgende Knowledge Base Artikel: 
+- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
+- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
+
 
 ### Export-Parameter
 Export-Parameter repräsentieren die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.

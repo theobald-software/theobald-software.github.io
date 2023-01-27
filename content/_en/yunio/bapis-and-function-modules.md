@@ -50,7 +50,7 @@ Function Modules / BAPIs can have up to four parameter types: [Import](#import-p
 ### Import Parameters
 Import parameters represent the input values sent from the client to SAP. In the tab **Import** you can define import parameters.
  
-Select input parameters in the column **Input Mode**:
+Select import parameters using the drop-down list next to the parameter:
 - Items set to *Supplied by Caller* become available as parameters in the request body of the service and can be filled at runtime.
 - Items that are left on *Default (defined in SAP)* use the default values from SAP.
 
@@ -58,6 +58,15 @@ Select input parameters in the column **Input Mode**:
 
 {: .box-note }
 **Note:** When parameterzing the import parameters of the service, make sure the input matches the data type of the parameters.<br>
+
+#### How to use Import Parameters in Swagger Inspector
+
+Example: The Import Parameter MAXROWS of BAPI_CUSTOMER_GETLIST is set to *Supplied by Caller* and can be parameterized in the request body of the service:<br>
+![BAPI export parameters](/img/content/yunio/swagger-inspector-parameter.png){:class="img-responsive"}
+
+For more information on parameterizing services, refer to the following knowledge base articles: 
+- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
+- [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
 ### Export Parameters
 Export parameters represent the output values sent from SAP back to the client after the execution of a Function Module.
