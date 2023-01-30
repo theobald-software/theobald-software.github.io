@@ -1,5 +1,5 @@
 ---
-ref: yunio-08
+ref: yunio-09
 layout: page
 title: Logs
 description: Logs
@@ -20,30 +20,21 @@ The menu consists of two sections:
 - timestamps of the logs (1)
 - content of the logs (2)
 
-Click on a timestamp to open the corresponding logs.
-
+Click on a timestamp to open the corresponding logs.<br>
 ![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
 
 
 ### How to Read Logs
 
-Logs are created per TCP connection.
+Logs are created per TCP connection.<br>
+A single log has the following format: `Time | Type | Source | Message`. Example:
 
-| Pacific Time | Type | Source | Message | 
+| Time | Type | Source | Message | 
 |--------|--------|--------|---|
 | PT00H00M43.777S | D | ExecutionCore: | Extraction finished, firing callback.  | 
 
-<!---
-| Pacific Timestamp (hours, minutes, seconds) | Type of message:<br>**E - Errors:** error messages issued during the extraction process.<br>**I - Information:** status messages, about processes that do not lead to an error. <br>**W - Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors. <br>**D - Debug Details:** detailed information that help find the reason for errors. | Origin of the error message. | Log message.  | 
--->
-
 #### Time
-
-Each log has a timestamp in the following format:<br>
-
-
-`PT`(Pacific Time) + Hours `H` + Minutes `M` + Seconds with 3 decimal `S`
-Pacific Timestamp (hours, minutes, seconds)
+Each log has a timestamp that uses pacific time (PT) in hours(H), minutes(M) and seconds(S), e.g., `PT00H00M43.777S`.
 
 #### Type 
 Each log entry is assigned one of the following message types:
@@ -52,7 +43,9 @@ Each log entry is assigned one of the following message types:
 - **W - Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors.<br>
 - **D - Debug Details:** detailed information that help find the reason for errors.
 
-#### Structure
+### Logs of a Service
+
+When running a yunIO service, the logs contain the following information:
 
 1. General technical information is displayed.
 ```
@@ -73,7 +66,7 @@ PT00H00M00.249S D R3ConnectionOpener: User alice, Password has been provided
 PT00H00M00.249S D R3ConnectionOpener: Using plain authentication
 PT00H00M00.567S I R3ConnectionOpener: Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 740, codepage 4103, user 'ALICE'
 ```
-4. The extraction is started.
+4. The extraction is started. In the following example the SAP table KNA1 is extracted.
 ```
 PT00H00M00.582S D yunIOWorker: Starting extraction...
 PT00H00M00.584S D yunIOWorker: Waiting for data...
@@ -100,7 +93,7 @@ PT00H00M00.904S D TheoReadTableExtractor: Received package #2 (10 rows)
 PT00H00M00.951S D TheoReadTableExtractor: Received package #3 (10 rows)
 ...
 ```
-9. Extraction is completed.
+8. Extraction is completed.
 ```
 PT00H00M43.776S I TheoReadTableExtractor: Extraction finished - received 9,123 rows in total
 PT00H00M43.777S D ExecutionCore: Extraction finished, firing callback.
