@@ -2,15 +2,12 @@ The report component requires the installation of a custom function module in yo
 If you cannot install the function mudule, turn to your SAP Basis team for help.
 
 {: .box-note}
-**Note:** As of version 1.2 of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` access to reports must be explicitly granted, see [Authority Objects for Z_XTRACT_IS_REMOTE_REPORT](#authority-objects-for-z_xtract_is_remote_report).
+**Note:** As of version 1.2 of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` access to reports must be explicitly granted, see see [Authorizing Access to Reports via Authorization Groups](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports){:target="_blank"}.
 
 ### Installation 
 Install the function module using the transport request *Z_XTRACT_IS_REMOTE_REPORT-transport.zip*. <br> 
 The transport request is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip`.
 
-### Authority Objects for Z_XTRACT_IS_REMOTE_REPORT
-
-As of Z_XTRACT_IS_REMOTE_REPORT version 1.2 access to reports must be explicitly granted, see [Authorizing Access to Reports via Authorization Groups](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports){:target="_blank"}.
 
 ### SAP Standard Data Type TAB512
 
