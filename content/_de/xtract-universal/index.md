@@ -33,7 +33,8 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 - [**Open Hub Services (OHS)**](./bw-open-hub-services) extrahiert InfoSpokes und OHS Destinationen. <!--Frage: kann man destinationen extrahieren?-->
 - [**Query**](./sap-queries) extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
 - [**Report**](./report-abap-reports-ansteuern) extrahiert ABAP Reports.
-- [**Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+- [**Table**](./table) extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+- [**TableCDC**](./table) extrahiert Delta-Inhalte von SAP-Tabellen und Views.
 
 
 | Komponente   | ERP | BW |
@@ -47,7 +48,7 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 | Query       | X   |    |
 | Report | X   |    |
 | Table       | X   | X  |
-
+| TableCDC       | X   | X  |
 
 {: .box-note }
 **Hinweis:** Weitere Szenarien und Kombinationen sind möglich.
