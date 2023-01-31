@@ -24,7 +24,6 @@ Klicken Sie auf einen Zeitstempel, um die dazugehörigen Logs anzuzeigen.<br>
 
 ### Logs lesen
 
-Die Logs werden pro TCP-Verbindung erstellt.<br>
 Ein Eintrag hat folgendes Format: `Zeit | Typ | Quelle | Nachricht`. Beispiel:
 
 | Zeit | Typ | Quelle | Nachricht | 

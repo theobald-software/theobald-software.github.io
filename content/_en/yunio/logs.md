@@ -26,7 +26,6 @@ Click on a timestamp to open the corresponding logs.<br>
 
 ### How to Read Logs
 
-Logs are created per TCP connection.<br>
 A single log has the following format: `Time | Type | Source | Message`. Example:
 
 | Time | Type | Source | Message | 
@@ -43,7 +42,7 @@ Each log entry is assigned one of the following message types:
 - **W - Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors.<br>
 - **D - Debug Details:** detailed information that help find the reason for errors.
 
-### Structure of Service Logs
+### Structure
 
 The following example highlights the basic structure of logs that are created when running a yunIO service.<br>
 The example is specific for SAP Table integrations, the logs are different for Functions and Transactions and are subject to change.
