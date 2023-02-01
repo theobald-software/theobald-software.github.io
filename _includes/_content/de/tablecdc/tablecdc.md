@@ -23,11 +23,13 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 
 ### Voraussetzungen
 
-Die Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE ist Voraussetzung für die Nutzung der Table CDC Komponente. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
+- SAP Version 7.40 SP05 oder höher.
+- Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
 `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Funktionsbaustein für TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 
+
 <!---
-- SAP Version x.xx oder höher.
+
 - Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP muss gewährleistet sein, siehe [SAP Zugriffsrechte: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 - Der Benutzer, mit dem die SAp-Verbindung aufgebaut wird, muss SAP Tabellen erstellen dürfen, siehe [SAP Verbindung - Authentication](./erste-schritte/sap-verbindungen-anlegen#authentication).
 -->

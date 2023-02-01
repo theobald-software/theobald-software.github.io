@@ -22,13 +22,14 @@ The content of the log table is cleared after every successful run of the extrac
 
 ### Requirements
 
-The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE is mandatory. 
+- SAP version 7.40 SP05 or higher.
+- The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE is mandatory. 
 The SAP transport requests for the installation is provided in the installation directory `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
 
 
 <!---
 - Access to the SAP authority object `S_TABU_NAM ACTVT=02` must be granted.
-- SAP version x.xx or higher.
+
 - The SAP user must have the right to create SAP Tables, see [SAP Connection - Authentication](./getting-started/sap-connection#authentication).
 - Access to the designated authority objects (RFC) in SAP, see [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table) must be granted.
 -->
