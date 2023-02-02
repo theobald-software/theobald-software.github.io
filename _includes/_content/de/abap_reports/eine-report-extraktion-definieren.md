@@ -3,7 +3,7 @@
 2. Geben Sie im Feld **Report Name** (1) den Namen des Reports ein, den Sie suchen. Die Verwendung von Wildcards (*) wird unterstützt. 
 Alternativ können Sie nach SAP Transaktion Codes suchen, indem Sie die Checkbox TCODE aktivieren.
 Es kann vorkommen, dass ein Report nicht anhand des Transaktion Codes bestimmt werden kann. 
-In diesem Fall können die den Report-Namen des Transaktion Codes über das SAP GUI Menü **System > Status...** einsehen.
+In diesem Fall können Sie den Report-Namen des Transaktion Codes über das SAP GUI Menü **System > Status...** einsehen.
 ![Look-Up-Report](/img/content/Look-Up-Report.png){:class="img-responsive"}
 3. Klicken Sie auf **[Suchen]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (2) und wählen Sie den Report Ihrer Wahl aus der angezeigten Liste aus (3).
 4. Bestätigen Sie die Auswahl mit **[OK]** (4).
@@ -37,7 +37,6 @@ Die Spaltenbreite und der Offset der Spalten werden dann zur Laufzeit dynamisch 
 
 {: .box-note }
 **Hinweis:** Für detaillierte Informationen zur automatischen und manuellen Definition von Spalten, siehe [Spalten Definieren](./report-columns-define).
-
 
 #### Weiterführende Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
