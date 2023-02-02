@@ -35,6 +35,12 @@ Starten Sie die IR über das Azure Portal oder per PowerShell Skript.
 {: .box-note }
 **Hinweis** Der Startprozess kann 20 - 30 min dauern.
 
+
+{: .box-tip }
+**Empfehlung:** Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabile Performance. 
+Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history/xtract-is-version-history) auf Updates. 
+Eine neuere Version kann über die ältere Version installiert werden. 
+
 ### Express Custom Setup
 Als Alternative zum manuellen Setup kann das Express Custom Setup genutzt werden, siehe [Microsoft Dokumentation](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#express-custom-setup).
 

@@ -36,6 +36,10 @@ After installation of Xtract for Alteryx the setup creates the following entries
 - `Alteryx\bin\RuntimeData\icons\categories\XtractForAlteryx.png`
 - `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
+A regular update of the software is crucial for stable performance.
+Check the [Version History](https://kb.theobald-software.com/version-history/xtract-for-alteryx-version-history) for updates. 
+A newer version can be installed over the older version. 
+
 ### Unattended Installation
 {% include _content/en/silent-setup.md %}
 
@@ -55,5 +59,5 @@ The list below shows several important files that are placed into the default di
 #### Related Links
 - [Update Installation](./update)
 - [Licensing](./licensing)
-
+- [Xtract for Alteryx Version History](https://kb.theobald-software.com/version-history/xtract-for-alteryx-version-history)
 

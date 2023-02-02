@@ -17,6 +17,11 @@ Make sure to install Xtract IS on both types of machines:
 - On the development machine running Visual Studio / SQL Sever Data Tools. Development can be performed on several machines.
 - On the machine running the SQL server, which is used for deploying and running the packages.
 
+{: .box-tip }
+**Recommendation:** A regular update of the software is crucial for stable performance, especially major changes and high ([H]) priority
+updates. Check the [Version History](https://kb.theobald-software.com/version-history/xtract-is-version-history) for updates. A newer version
+can be installed over the older version. 
+
 <!---text anpassen --->
 ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 

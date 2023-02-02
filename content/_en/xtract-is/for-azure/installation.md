@@ -13,7 +13,6 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=installation1
 
 The following section describes how to setup Xtract IS for Azure on an Azure SSIS-IR for running SSIS packages containing Xtract IS components.
 
-
 ### Manual Setup
 **1. Create an Azure Storage container** <br>
 Follow the [instructions](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#standard-custom-setup) on how to set up 3rd party extensibility for Azure-SSIS IR. Only the part with setting up an Azure storage container and creating a Shared Access Signature is relevant.
@@ -36,6 +35,10 @@ Start the Integration Runtime. During the startup of the Intergation Runtime the
 {: .box-note }
 **Note** The startup process of the Azure SSIS-IR might take up to 20 minutes.
 
+{: .box-tip }
+**Recommendation:** A regular update of the software is crucial for stable performance, especially major changes and high ([H]) priority
+updates. Check the [Version History](https://kb.theobald-software.com/version-history/xtract-is-version-history) for updates. A newer version
+can be installed over the older version. 
 
 ### Express Custom Setup
 As an alternative to the manual setup, the Express Custom Setup can be used for installing Xtract IS for Azure on an Azure SSIS-IR. See [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#express-custom-setup) for more information.

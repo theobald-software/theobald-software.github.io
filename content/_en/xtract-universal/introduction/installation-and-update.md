@@ -99,7 +99,7 @@ System updates or changes can restrict software functionalities and this may lea
 Create a backup of the directory: `C:\Program Files\XtractUniversal\config` at regular intervals.
 
 A regular update of the software is crucial for stable performance, especially major changes and high ([H]) priority
-updates. Check the [Version history](https://kb.theobald-software.com/version-history) for updates. A newer version
+updates. Check the [Version History](https://kb.theobald-software.com/version-history) for updates. A newer version
 can be installed over the older version. All settings and created objects are preserved. When migrating data and
 settings to another server, follow the instructions described in section [Backup and Migration](../advanced-techniques/backup-and-migration).
 
@@ -149,3 +149,4 @@ If the *ConfigConverter* is not executed automatically during installation, the 
 ****
 #### Related Links
 - [Backup and Migration](../advanced-techniques/backup-and-migration)
+- [Xtract Universal Version History](https://kb.theobald-software.com/version-history/xtract-universal-version-history)

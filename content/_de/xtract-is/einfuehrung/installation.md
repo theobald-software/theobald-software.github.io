@@ -17,6 +17,10 @@ Stellen Sie sicher, dass Sie Xtract IS auf beiden Maschinentypen installieren:
 - Auf der Entwicklungsmaschine, auf der Visual Studio / SQL Sever Data Tools läuft. Es können auch mehrere Maschinen sein.
 - Auf der Maschine, auf dem der SQL-Server läuft. Diese Maschine wird für das Deployment und den Betrieb der Pakete verwendet.
 
+{: .box-tip }
+**Empfehlung:** Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabile Performance. 
+Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history/xtract-is-version-history) auf Updates. 
+Eine neuere Version kann über die ältere Version installiert werden. 
 
 ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 
@@ -30,7 +34,6 @@ Stellen Sie sicher, dass Sie Xtract IS auf beiden Maschinentypen installieren:
 
 Um Xtract IS verwenden zu können, muss die Datei  *XtractISSetup.exe* in der lokalen Entwicklungsumgebung (Visual Studio oder SSDT)
 **und** auf dem  SSIS Server ausgeführt und installiert werden. Weitere Informationen finden Sie im Abschnitt [Lizenzierung](./lizenz-einspielen).
-
 
 {% include _content/de/einfuehrung/produktversion.md %}	
 

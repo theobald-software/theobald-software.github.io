@@ -103,7 +103,7 @@ Systemänderungen oder Updates können die Funktionalität der Software einschr�
 Erstellen Sie ein Backup des Verzeichnis: `C:\Program Files\XtractUniversal\config` in regelmäßigen Abständen.
 
 Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabile Performance, insbesondere bei größeren Änderungen und Updates hoher ([H])-Priorität. 
- Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) auf Updates. Eine neuere Version kann über die ältere Version installiert werden. 
+Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) auf Updates. Eine neuere Version kann über die ältere Version installiert werden. 
 
 Alle Einstellungen und angelegten Objekte bleiben erhalten.
 Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie den Anweisungen, die im Abschnitt  [Backup und Migration](../fortgeschrittene-techniken/backup-und-migration).
@@ -154,3 +154,4 @@ Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, k
 ****
 #### Weiterführende Links
 - [Backup und Migration](../fortgeschrittene-techniken/backup-und-migration)
+- [Xtract Universal Version History](https://kb.theobald-software.com/version-history/xtract-universal-version-history)
