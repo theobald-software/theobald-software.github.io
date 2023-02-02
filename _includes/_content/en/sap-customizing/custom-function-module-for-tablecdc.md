@@ -12,7 +12,7 @@ The transport request is located in the following installation directory: `C:\Pr
 
 ### Installation of Z_THEO_READ_TABLE
 
-Install the custom function module Z_THEO_READ_TABLE, see [Custom function module for Table](./custom-function-module-for-table-extraction#installation-of-z_theo_read_table).
+Install the custom function module Z_THEO_READ_TABLE version 2.10 or higher, see [Custom function module for Table](./custom-function-module-for-table-extraction#installation-of-z_theo_read_table).
 
 {: .box-note}
 **Note:** Take a look at the README.pdf in the installation directory (e.g.,`C:\Program Files\[XtractProduct]\ABAP\README.pdf`) before installing any custom function modules.

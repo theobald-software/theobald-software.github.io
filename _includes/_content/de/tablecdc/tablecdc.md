@@ -24,7 +24,7 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 ### Voraussetzungen
 
 - SAP Version 7.40 SP05 oder höher.
-- Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
+- Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE Version 2.10 oder höher. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
 `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Funktionsbaustein für TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 
 
