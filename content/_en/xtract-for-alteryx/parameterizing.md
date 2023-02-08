@@ -60,7 +60,7 @@ Example: Parameterizing a WHERE-clause of an Xtract Table component <br>
 
 This example uses the **Text Input** tool to define the parameters for the extraction.
 
-1. Add a **Text Input** tool to define the the input for the batch macro. Enter valid parameter values and add a new column for every control parameter (1). <br>
+1. Add a **Text Input** tool to define the input for the batch macro. Enter valid parameter values and add a new column for every control parameter (1). <br>
 Beispiel: 000000000000000023 as input for *p_MATNR_low* and 000000000000000100 as input for *p_MATNR_high*. <br>
 ![Input-Text](/img/content/xfa/input-text.png){:class="img-responsive"}
 2. To import the batch macro right-click the canvas and navigate to **Insert > Macro**. Add the macro that contains the Xtract component.<br>
