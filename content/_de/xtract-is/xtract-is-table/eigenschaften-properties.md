@@ -38,7 +38,10 @@ Ermöglicht die Konvertierung der SAP-Datumsformate. Der Standardwert der Eigens
 
 
 **CustomFunctionName**<br>
-Entspricht dem Drop-down-Menü *Function Module* in den [Settings](./extraktionseinstellungen) der Table Komponente.
+Entspricht der Extraktionseinstellung [Function Module](./extraktionseinstellungen#function-module) der Table Komponente.
+
+**ExtractInBackgroundJob**<br>
+Entspricht der Extraktionseinstellung [Extract data in background job](./extraktionseinstellungen#extract-data-in-background-job) der Table Komponente.
 
 **InvalidDateReplacement** <br>
 Ermöglicht die Ersetzung eines ungültigen Datumsformats. Der Standardwert für die Eigenschaft **InvalidDateReplacement** ist *1970-01-02*.  So verwenden Sie die Eigenschaft:

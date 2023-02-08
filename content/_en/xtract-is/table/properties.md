@@ -37,7 +37,10 @@ Allows converting the SAP date formats. The default value of the property **Conv
 **Note:** for the date conversions to apply, set the property **UseLegacyDateConversion**  to *False*.
 
 **CustomFunctionName**<br>
-Corresponds to the drop-down menu *Function Module* in the Table component's [Settings](./extraction-settings).
+Corresponds to the setting [Function Module](./extraction-settings#function-module) in the Table component.
+
+**ExtractInBackgroundJob**<br>
+Corresponds to the extraction setting [Extract data in background job](./extraktionseinstellungen#extract-data-in-background-job).
 
 **InvalidDateReplacement**<br>
 Allows the replacement of an invalid date format. The default value of the property **InvalidDateReplacement** is *1970-01-02*. To use the property:
