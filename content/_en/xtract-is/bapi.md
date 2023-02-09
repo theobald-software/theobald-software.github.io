@@ -12,9 +12,22 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=bapi
 
 ---
-The Xtract IS BAPI data source was developed to access BAPIs and RFC function modules and integrate them in the SSIS package.
-Please choose the appropriate icon in the toolbar.
 
-![BAPI](/img/content/BAPI.png){:class="img-responsive" }
+The following section describes the functions of the Xtract BAPI component of Xtract IS.<br>
+The component Xtract BAPI accesses BAPIs and RFC function modules and integrates them in the SSIS package.
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the Xtract BAPI component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
+
+{: .box-tip }
+**Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
+
+### How to use the Xtract BAPI component
+{% include _content/en/xis-specific/define-extraction.md %}
+
+More information on working with the Xtract BAPI component is provided in the following sections.
+
+****
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

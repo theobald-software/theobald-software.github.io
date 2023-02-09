@@ -11,14 +11,12 @@ weight: 13
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=report
 ---
-Der folgende Abschnitt beschreibt die Funktion der Xtract IS Report Komponente.<br>
-Die Xtract IS Report Kompomente ist eine SSIS-Datenquelle, mit deren Hilfe Sie bestehende ABAP-Reports ausführen und die Ausgabe innerhalb der SSIS weiter verarbeiten können.
+Der folgende Abschnitt beschreibt die Funktion der Xtract Report Komponente.<br>
+Die Xtract Report Kompomente ist eine SSIS-Datenquelle, mit deren Hilfe Sie bestehende ABAP-Reports ausführen und die Ausgabe innerhalb der SSIS weiter verarbeiten können.
 
 {: .box-note }
 **Hinweis:** Die Report Komponente setzt die Installation des benutzerdefinierten Funktionsbausteins `Z_XTRACT_IS_REMOTE_REPORT` in Ihrem SAP-System voraus. 
 Ab `Z_XTRACT_IS_REMOTE_REPORT` Version 1.2 muss der Zugriff auf Reports explizit erteilt werden. Nähere Informationen finden Sie unter [Report Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
-
-![Report](/img/content/Report.png){:class="img-responsive"}
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
