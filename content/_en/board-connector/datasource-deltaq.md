@@ -26,7 +26,7 @@ For more information, see the knowledge base article on [SAP User Rights: DeltaQ
 **Tip:** To get information on the basics of Board Connector, refer to [Getting Started with Board Connector](./getting-started).
 
 ### How to use the DeltaQ component
-{% include _content/en/board-specific/define-extraction.md %}
+{% include _content/en/xu-specific/define-extraction.md %}
 
 {: .box-note }
 **Note:** To use the DeltaQ component, you need to adjust settings in your SAP system, see [SAP Customizing](./sap-customizing/customizing-for-deltaq).

@@ -24,7 +24,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {% include _content/de/table/supported-objects.md %}
 
 ### Table verwenden
-{% include _content/de/board-specific/define-extraction.md %}
+{% include _content/de/xu-specific/define-extraction.md %}
 
 Weitere Informationen zum Arbeiten mit der Table Komponente finden Sie in den folgenden Unterabschnitten.
 

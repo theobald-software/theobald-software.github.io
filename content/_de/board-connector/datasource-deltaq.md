@@ -26,7 +26,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 ### DeltaQ verwenden
-{% include _content/de/board-specific/define-extraction.md %}
+{% include _content/de/xu-specific/define-extraction.md %}
 
 {: .box-note }
 **Hinweis:** Um die DeltaQ-Komponente nutzen zu können, sind Einstellungen im SAP ERP vorzunehmen, siehe  [SAP Customizing](./sap-customizing/customizing-fuer-deltaq).

@@ -27,7 +27,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {% include _content/de/bw-open-hub-services/vorbereitung-fuer-ohs-im-bw.md %} 
 
 ### OHS verwenden
-{% include _content/de/board-specific/define-extraction.md %}
+{% include _content/de/xu-specific/define-extraction.md %}
 
 
 Weitere Informationen zum Arbeiten mit der OHS Komponente finden Sie in den folgenden Unterabschnitten.

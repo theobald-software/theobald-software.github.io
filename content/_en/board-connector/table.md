@@ -25,7 +25,7 @@ For more information, see the knowledge base article on [SAP User Rights: Table]
 {% include _content/en/tables/supported-objects.md %}
 
 ### How to use the Table component
-{% include _content/en/board-specific/define-extraction.md %}
+{% include _content/en/xu-specific/define-extraction.md %}
 
 More information on working with the Table component is provided in the following sections.
 

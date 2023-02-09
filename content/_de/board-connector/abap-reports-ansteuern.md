@@ -17,12 +17,15 @@ Der folgende Abschnitt beschreibt die Funktion der Board Connector Report Kompon
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
-### Report verwenden
-{% include _content/de/board-specific/define-extraction.md %}
+### Allgemeiner Workflow
+Die folgende Grafik zeigt den allgemeinen Workflow zur Verwendung der Report-Komponente:<br>
+![Report-Workflow](/img/content/report-general-workflow.png){:class="img-responsive" width="400px"}
 
-{% include _content/de/abap_reports/report-workflow.md %}
+### Report verwenden
+{% include _content/de/xu-specific/define-extraction.md %}
+
+Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten:
 
 ---
-Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten:
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

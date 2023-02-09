@@ -22,7 +22,7 @@ For more information, see the knowledge base article on [SAP User Rights: BW Hie
 **Tip:** To get information on the basics of Board Connector, refer to [Getting started with Board Connector](./getting-started). <br>
 
 ### How to use the Hierarchy component
-{% include _content/en/board-specific/define-extraction.md %}
+{% include _content/en/xu-specific/define-extraction.md %}
 
 More information on working with the Hierarchy component is provided in the following sections.
 

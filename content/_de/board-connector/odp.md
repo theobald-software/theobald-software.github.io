@@ -18,7 +18,7 @@ Der folgende Abschnitt beschreibt die Funktion der Board Connector ODP Komponent
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Board Connector](./erste-schritte) beschrieben.
 
 ### ODP verwenden
-{% include _content/de/board-specific/define-extraction.md %}
+{% include _content/de/xu-specific/define-extraction.md %}
 
 Weitere Informationen zum Arbeiten mit der ODP Komponente finden Sie in den folgenden Unterabschnitten.
 

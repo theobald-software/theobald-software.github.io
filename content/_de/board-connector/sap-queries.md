@@ -27,7 +27,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 Wenn Sie eine BW Query als Datengrundlage verwenden möchten, siehe [BW InfoCubes und BEx Queries](./bw-infocube-und-bex-queries).
 
 ### SAP Query verwenden
-{% include _content/de/board-specific/define-extraction.md %}
+{% include _content/de/xu-specific/define-extraction.md %}
 
 Weitere Informationen zum Arbeiten mit der SAP Query Komponente finden Sie in den folgenden Unterabschnitten.
 

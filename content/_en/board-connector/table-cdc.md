@@ -15,8 +15,11 @@ progressstate: 5
 The following section describes the functions of the **Table CDC** component. <br>
 {% include _content/en/tablecdc/tablecdc.md %}
 
+### How to use the Table CDC component
+{% include _content/en/xu-specific/define-extraction.md %}
+
+More information on working with the TableCDC component is provided in the following sections.
 
 ---
-More information on working with the TableCDC component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

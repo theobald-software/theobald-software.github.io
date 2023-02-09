@@ -16,7 +16,13 @@ The following section describes the functions of the BAPI Component of Board Con
 Basic Board Connector the knowledge is required to understand the following sections. <br>
 
 {: .box-tip }
-**Tip:** To get information on the basics of Board Connector, refer to [Getting started with table](./getting-started). <br>
+**Tip:** To get information on the basics of Board Connector, refer to [Getting Started](./getting-started). <br>
 
 
+### How to use the BAPI component
+{% include _content/en/xu-specific/define-extraction.md %}
+
+More information on working with the BAPI component is provided in the following sections.
+
+---
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

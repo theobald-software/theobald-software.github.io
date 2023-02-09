@@ -26,7 +26,7 @@ For more information, see the knowledge base article on [SAP User Rights: SAP Qu
 If you want to use a BW Query as a data source, see [BW InfoCubes and BExQueries](./bw-infocubes-and-bex-queries). 
 
 ### How to use the SAP Query component
-{% include _content/en/board-specific/define-extraction.md %}
+{% include _content/en/xu-specific/define-extraction.md %}
 
 More information on working with the SAP Query component is provided in the following sections.
 

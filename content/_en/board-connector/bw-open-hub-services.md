@@ -27,7 +27,7 @@ For more information, see the knowledge base article on [SAP User Rights: OHS](h
 {% include _content/en/bw-open-hub-services/preparation.md %}
 
 ### How to use the OHS component
-{% include _content/en/board-specific/define-extraction.md %}
+{% include _content/en/xu-specific/define-extraction.md %}
 
 More information on working with the OHS component is provided in the following sections.
 
