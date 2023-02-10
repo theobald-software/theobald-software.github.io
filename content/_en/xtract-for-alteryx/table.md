@@ -19,7 +19,7 @@ The Table component is also used to join several tables on the SAP side, see [Ta
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
-To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
+To use the Xtract Table component, access to the designated authority objects (RFC) in SAP must be available.
 For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
 
@@ -37,11 +37,7 @@ The ODP component is a more convenient option for incremental extraction e.g., u
 
 
 ### How to use the Xtract Table component
-
-1. Drag & drop the "Xtract Table" component to your Alteryx workflow.
-2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
-
-The majority of the functions of the component can be accessed using the main window.
+{% include _content/en/alteryx-component-intro.md %}
 
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).

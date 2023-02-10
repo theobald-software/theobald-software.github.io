@@ -24,8 +24,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 ### Xtract Cube verwenden
-1. Ziehen Sie die "Xtract BW Cube" Komponente per drag & drop auf Ihren Alteryx-Workflow.
-2. Wählen Sie eine SAP-Verbindung, navigieren Sie zur gewählten Extraktion und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente öffnet sich.
+{% include _content/de/alteryx-component-intro.md %}
 
 
 ### Funktionsübersicht
@@ -50,9 +49,8 @@ Der Unterabschnitt **Preview** zeigt eine Echtzeit-Vorschau der ausgewählten BE
 - **[Edit Variables]** ermöglicht die Definition von [BEx Query-Variablen](./bw-cube/variablen). 
 - **[Edit Runtime Parameters]** ermöglicht die Definition von [Laufzeitparametern](./bw-cube/edit-runtime-parameters). 
 
+Weitere Informationen zum Arbeiten mit der Xtract Cube Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---
-
-Weitere Informationen zum Arbeiten mit der Xtract Cube Komponente finden Sie in den folgenden Unterabschnitten.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

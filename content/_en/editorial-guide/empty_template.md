@@ -28,7 +28,7 @@ This is an ordered list.
 2. Click **Subscriptions** (URL buttons: bold)
 3. Enter the name the field **Name** (Fields within a window: bold)
 4. Enter the value *123* (entered values: italics)
-5. Click on the dustbin icon ( ![dustbin](/img/content/icons/trashbin.png) ) (icons: images)
+5. Click on the dustbin icon ( ![dustbin](/img/content/icons/trashbin.png){:class="img-responsive" style="display:inline"} ) (icons: images)
 
 When an instruction contains images with position numbers, make sure to address the position numbers in the text in brackets. 
 

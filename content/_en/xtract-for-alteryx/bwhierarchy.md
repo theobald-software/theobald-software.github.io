@@ -23,10 +23,7 @@ For more information, see the knowledge base article on [SAP User Rights: BW Hie
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 ### How to use the Xtract Hierarchy component
-1. Drag & drop the "Xtract Hierarchy" component to your Alteryx workflow.
-2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
-
-The majority of the functions of the component can be accessed using the main window.
+{% include _content/en/alteryx-component-intro.md %}
 
 ### Functions overview
 The window "Hierarchy Extractor" consists out of two subsections:
@@ -46,8 +43,8 @@ The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-
 - **[Extraction Settings]** opens the [extraction specific settings](./bwhierarchy/bwhier-settings) e.g., representation or level count. <br>
 - **[Load Live Preview]** loads a preview of the hierarchy without executing an extraction.
 
----
-
 More information on working with the Xtract Hierarchy component is provided in the following sections.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

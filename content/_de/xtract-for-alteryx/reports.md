@@ -20,16 +20,13 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Report-Komponente.<br>
 
 ### Xtract Report verwenden
 
-1. Ziehen Sie die "Xtract Report" Komponente per drag & drop auf Ihr Alteryx-Workflow.
-2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu der **gewählten Extraktion** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
-
-Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
+{% include _content/de/alteryx-component-intro.md %}
 
 {% include _content/de/abap_reports/report-workflow.md %}
 
+Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten.
+
 
 ---
-
-Weitere Informationen zum Arbeiten mit der Report Komponente finden Sie in den folgenden Unterabschnitten.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

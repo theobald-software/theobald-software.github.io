@@ -18,10 +18,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract ODP-Komponente. <br>
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 ### Xtract ODP Verwenden
-1. Ziehen Sie die "Xtract ODP" Komponente per Drag & Drop in Ihren Alteryx-Workflow.
-2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu **Selected Extraction** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
-
-Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
+{% include _content/de/alteryx-component-intro.md %}
 
 
 ###  Funktionsübersicht
@@ -40,8 +37,8 @@ Das Fenster "ODP" besteht aus folgenden Unterabschnitten:
 - **[[Advanced Settings](./odp/odp-settings#fortgeschrittene-einstellungen)]** - Enthält Einstellungen für die **package size** der Extraktion.
 - **[Load Live Preview]** - Schaltfläche zum Anzeigen der Echtzeitvorschau der zu extrahierten Daten ohne Ausführung einer Extraktion. 
 
----
-
 Weitere Informationen zum Arbeiten mit der Xtract ODP Komponente finden Sie in den folgenden Unterabschnitten.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

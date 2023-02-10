@@ -7,7 +7,7 @@
 
 Die Extraktion wird jetzt im Hauptfenster des Designers aufgelistet.
 Mit einem Doppelklick auf die Extraktion öffnen Sie das Hauptfenster der Komponente.
-Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
+Die meisten Funktionen der Komponente sind über das Hauptfenster der Komponente verfügbar.
 
 {% if page.product == "xtract-universal" %}
 #### Eine Destination zuweisen

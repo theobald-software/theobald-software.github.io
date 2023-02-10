@@ -36,10 +36,7 @@ Eine einfachere Option für die inkrementelle Datenextraktion bietet die ODP-Kom
 
 ### Table verwenden
 
-1. Ziehen Sie die "Xtract Table" Komponente per drag & drop auf Ihr Alteryx-Workflow.
-2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu der **gewählten Extraktion** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
-
-Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
+{% include _content/de/alteryx-component-intro.md %}
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.

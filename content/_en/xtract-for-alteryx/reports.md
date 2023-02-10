@@ -14,19 +14,21 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 The following section describes the functions of the Report component of Xtract for Alteryx.<br>
 {% include _content/en/abap-reports/report-about.md %}
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use the Xtract Report component, access to the designated authority objects (RFC) in SAP must be available.
+For more information, see the knowledge base article on [SAP User Rights: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
+
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 ### How to use the Xtract Report component
-1. Drag & drop the "Xtract Report" component to your Alteryx workflow.
-2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
-
-The majority of the functions of the component can be accessed using the main window.
+{% include _content/en/alteryx-component-intro.md %}
 
 {% include _content/en/abap-reports/report-workflow.md %}
 
----
-
 More information on working with Report component is provided in the following sections:
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

@@ -15,6 +15,11 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 Der folgende Abschnitt beschreibt die Anwendung der Board Connector BAPI Komponente. 
 Kenntnisse über die Grundlagen von Board Connector werden zum Verstehen der folgenden Inhalte vorausgesetzt.
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen**
+Um die BAPI Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
+
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte](./erste-schritte) beschrieben.
 

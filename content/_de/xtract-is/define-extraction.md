@@ -4,4 +4,4 @@
 3. Wählen Sie den Typ der Extraktion und klicken Sie auf **[OK]** zum Bestätigen. Die Extraktion wird jetzt im Hauptfenster des Designers aufgelistet.
 4. Mit einem Doppelklick auf die Extraktion öffnen Sie das Hauptfenster der Komponente.
 
-Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.<br>
+Die meisten Funktionen der Komponente sind über das Hauptfenster der Komponente verfügbar.<br>

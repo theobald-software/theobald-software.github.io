@@ -24,10 +24,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 ### Xtract Hierarchy verwenden
-1. Ziehen Sie die "Xtract Hierarchy" Komponente per drag & drop auf Ihr Alteryx-Workflow.
-2. Wählen Sie eine SAP-Verbindung, navigieren Sie zu der **gewählten Extraktion** und klicken Sie auf **[Edit]**. Das Hauptfenster der Komponente wird geöffnet.
-
-Auf die meisten Funktionen der Komponente kann über das Hauptfenster zugegriffen werden.
+{% include _content/de/alteryx-component-intro.md %}
 
 ### Funktionsübersicht
 Das Hauptfenster der BW Hierarchy Komponente besteht aus zwei Unterabschnitten:
@@ -48,8 +45,8 @@ Der Unterabschnitt **Preview** [zeigt die Felder](./bw-hierarchien/hierarchien-a
 - **[Extraction Settings]** öffnet die [spezifischen Extraktionseinstellungen](./bw-hierarchien/hierarchie-extraktionseinstellungen) z.B. Darstellung oder Ebenenanzahl. <br>
 - **[Load Live Preview]** lädt eine Vorschau der Hierarchie ohne eine Extraktion.
 
-----
-
 Weitere Informationen zum Arbeiten mit der Xtract Hierarchy Komponente finden Sie in den folgenden Unterabschnitten.
+
+----
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}

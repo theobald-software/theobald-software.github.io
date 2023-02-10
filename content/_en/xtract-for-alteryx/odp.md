@@ -19,10 +19,7 @@ The following section describes the functions of the ODP component of Xtract for
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 ### How to use the Xtract ODP component
-1. Drag & drop the "Xtract ODP" component to your Alteryx workflow.
-2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
-
-The majority of the functions of the component can be accessed using the main window.
+{% include _content/en/alteryx-component-intro.md %}
 
 ###  Functions overview
 The window “ODP” contains the following subsections:<br>
@@ -41,9 +38,9 @@ The window “ODP” contains the following subsections:<br>
 - **[Load Live Preview]** - Button to display a real-time preview of the extraction data without executing the extraction.
 
 
----
-
 More information on working with the Xtract ODP component is provided in the following sections.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
 

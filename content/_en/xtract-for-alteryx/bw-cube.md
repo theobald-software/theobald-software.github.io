@@ -24,11 +24,9 @@ For more information, see the knowledge base article on [SAP User Rights: BW Que
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 ### How to use the Xtract Cube component
-1. Drag & drop the Xtract Cube component to your Alteryx workflow.
-2. Select an SAP connection, navigate to **Selected Extraction** and click **[Edit]**. The main window of the component opens.
+{% include _content/en/alteryx-component-intro.md %}
 
-
-### Component overview
+### Functions overview
 The main window of the Xtract Cube component consists of two subsections and several buttons:
 
 - Cube or Query
@@ -53,8 +51,8 @@ The **Preview** subsection displays real preview data of the selected BEx Query 
 - **[Edit Variables]** allows defining [BEx Query variables](./bw-cube/variables). 
 - **[Edit Runtime Parameters]** allows defining [runtime parameters](./bw-cube/edit-runtime-parameters). 
 
----
-
 More information on working with the Xtract Cube component is provided in the following sections.
+
+---
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
