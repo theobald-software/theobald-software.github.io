@@ -12,11 +12,15 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
  
 
-The following section contains information on the server logs created by yunIO.
+The following section contains information on the server and transaction logs created by yunIO.
 
 ### Display Logs
-The logs are located in the *Logs* section of the yunIO Designer.<br>
-The menu consists of two sections:
+The logs are located in the *Logs* section of the yunIO Designer.
+There are 2 types of Logs:
+- *Services:* Displays all server logs.
+- *Transactions:* Displays trace logs of Transaction services.
+
+The log menu consists of two sections:
 - timestamps of the logs (1)
 - content of the logs (2)
 
@@ -45,7 +49,7 @@ Each log entry is assigned one of the following message types:
 ### Structure
 
 The following example highlights the basic structure of logs that are created when running a yunIO service.<br>
-The example is specific for SAP Table integrations, the logs are different for Functions and Transactions and are subject to change.
+The example is specific for SAP Table extractions, the logs are different for Functions and Transactions and are subject to change.
 
 1. General technical information is displayed.
 ```

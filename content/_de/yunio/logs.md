@@ -11,11 +11,15 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
 
-Dieser Abschnitt enthält Informationen über die Server-Logs, die von yunIO erstellt werden.<br>
+Dieser Abschnitt enthält Informationen über die Server-Logs und Transaktions-Logs, die von yunIO erstellt werden.<br>
 
 ### Logs anzeigen lassen
-Öffnen Sie die Logs unter dem Menüpunkt *Logs*. <br>
-Das Menü besteht aus zwei Abschnitten:
+Öffnen Sie die Logs unter dem Menüpunkt *Logs*.
+Es gbt 2 Arten von Logs:
+- *Services:* Zeigt alle Server-Logs an.
+- *Transactions:* Zeigt die Ablaufprotokolle (tracing) von Services des Typs *Transaction* an.
+
+Das Log-Menü besteht aus zwei Abschnitten:
 - Zeitstempel der Logs (1)
 - Inhalt der Logs (2)
 
@@ -49,8 +53,8 @@ Jeder Logeintrag ist einem der folgenden Typen zugewiesen:
 ### Struktur eines Extraktionslogs
 
 Das folgende Beispiel zeigt, wie Logs strukturiert sind, die durch das Ausführen eines Services entstehen.<br>
-Das Beispiel bezieht sich auf einen Service, der eine SAP Tabelle extrahiert. 
-Logs von Services, die Funktionsbausteine und Transaktionen ausführen können vom Beispiel abweichen.
+In dem Beispiel wird ein Service ausgeführt, der eine SAP Tabelle extrahiert. 
+Logs von Services, die Funktionsbausteine und Transaktionen ausführen, können von diesem Beispiel abweichen.
 
 1. Allgemeine technische Informationen werden angezeigt.
 ```
