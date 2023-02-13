@@ -82,12 +82,12 @@ Klicken Sie auf die Schaltfläche, um die Verbindung zu testen.
 Geben Sie einen gültigen Connect Descriptor (connection string) ein, siehe [Oracle Documentation: View TNS Names and Connection Strings for an Autonomous Database Instance](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connection-strings-view.html#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB).<br>
 Ein Connect Descriptor verwendet folgendes Format:<br>
 ```
-*(DESCRIPTION =*<br>
-*(ADDRESS = (PROTOCOL = TCP)*<br>
-*(HOST = [oracle host name])(PORT = [port number]))*<br>
-*(CONNECT_DATA =*<br>
-*(SERVER = DEDICATED)*<br>
-*(SERVICE_NAME = [oracle service name])))*<br>
+(DESCRIPTION =
+(ADDRESS = (PROTOCOL = TCP)
+(HOST = [oracle host name])(PORT = [port number]))
+(CONNECT_DATA =
+(SERVER = DEDICATED)
+(SERVICE_NAME = [oracle service name])))
 ```
 
 **Username** <br>
