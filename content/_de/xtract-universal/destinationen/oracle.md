@@ -24,19 +24,19 @@ Es sind keine zusätzlichen Installationen für die Nutzung der Oracle Datenbank
 
 ### Destination Details
 
+
+Die Oracle Destination unterstützt 3 Verbindungsarten:
+- **Default:** Verbindung zu einer Oracle Datenbank (On-premises).
+- **Wallet:** Verbindung zu einer Oracle Datenbank über Verbindungsdaten aus einem Wallet. 
+Verwenden Sie diese Option, wenn [mTLS (Mutual TLS)](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-introduction.html#GUID-9A472E49-3B2B-4D9F-9DC2-D3E6E4454285) Authentifizierung erforderlich ist.
+- **Connect Descriptor:** Verbindung zu einer Oracle Datenbank (On-premises und Cloud) via TLS.
+
+### Default
+
 ![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_1.png){:class="img-responsive"}
 
-
-**Host / Data source**<br>
-Name des Datenbankservers oder Connect Descriptor eingeben.
-Alternativ kann man den [connect descriptor](https://docs.oracle.com/html/E10927_01/featConnecting.htm) eingeben, zum Beispiel:
-
-*(DESCRIPTION =* <br>
-*(ADDRESS = (PROTOCOL = TCP)* <br>
-*(HOST = [oracle host name])(PORT = [port number]))* <br>
-*(CONNECT_DATA =* <br>
-*(SERVER = DEDICATED)* <br>
-*(SERVICE_NAME = [oracle service name])))*
+**Host**<br>
+Geben Sie den Namen des Oracle-Servers ein.
 
 **Port**<br>
 Port des Oracle-Servers (Default: 1521) eingeben. 
@@ -45,11 +45,57 @@ Port des Oracle-Servers (Default: 1521) eingeben.
 Eindeutigen Name (SID) bzw. Alias (Service name) der Oracle-Datenbank eingeben.
 
 **Username** <br>
-Name des Datenbankbenutzers eingeben.
+Name des Datenbankbenutzers.
 
 **Password**<br>
-Passwort des Datenbankbenutzers eingeben.
-            
+Passwort des Datenbankbenutzers.
+ 
+**Test Connection**<br>
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 
+
+#### Wallet
+
+![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_2.png){:class="img-responsive"}
+
+**TNS Name**<br>
+Geben Sie den TNS-Namen der Verbindung ein. Der TNS-Name ist in der Datei `tnsnames.ora` in Ihrem Wallet abgelegt.<br>
+Für mehr Informationen, siehe [Oracle Documentation: Download Client Credentials (Wallets)](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connect-download-credentials.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1).
+
+**Username** <br>
+Name des Datenbankbenutzers.
+
+**Password**<br>
+Passwort des Datenbankbenutzers.
+
+**Wallet location** <br> 
+Geben Sie den Pfad zu Ihrem Wallet ein, z.B. `C:\Oracle\Wallet`.<br>
+Der Benutzer, unter dem der Xtract Universal Dienst ausgeführt wird, muss Zugriff auf den Ordner haben, in dem das Wallet liegt.
+
+**Test Connection**<br>
+Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 
+
+#### Connect Descriptor
+
+![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_3.png){:class="img-responsive"}
+
+**Connect Descriptor** <br>
+Geben Sie einen gültigen Connect Descriptor (connection string) ein, siehe [Oracle Documentation: View TNS Names and Connection Strings for an Autonomous Database Instance](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connection-strings-view.html#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB).<br>
+Ein Connect Descriptor verwendet folgendes Format:<br>
+```
+*(DESCRIPTION =*<br>
+*(ADDRESS = (PROTOCOL = TCP)*<br>
+*(HOST = [oracle host name])(PORT = [port number]))*<br>
+*(CONNECT_DATA =*<br>
+*(SERVER = DEDICATED)*<br>
+*(SERVICE_NAME = [oracle service name])))*<br>
+```
+
+**Username** <br>
+Name des Datenbankbenutzers.
+
+**Password**<br>
+Passwort des Datenbankbenutzers.
+ 
 **Test Connection**<br>
 Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 
 
