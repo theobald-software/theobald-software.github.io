@@ -16,8 +16,11 @@ Dieser Abschnitt enthält Informationen über die Server-Logs und Transaktions-L
 ### Logs anzeigen lassen
 Öffnen Sie die Logs unter dem Menüpunkt *Logs*.
 Es gbt 2 Arten von Logs:
-- *Services:* Zeigt alle Server-Logs an.
-- *Transactions:* Zeigt die Ablaufprotokolle (tracing) von Services des Typs *Transaction* an.
+- *Services:* Zeigt Logs der Service Worker-Prozesse an. Für jede TCP-Verbindung, wird ein Service Worker-Prozess gestartet.
+Der Service Worker empfängt die HTTP-Anfrage, führt Services aus und sendet die HTTP-Antwort and den Aufrufer.
+- *Transactions:* Zeigt Logs von [Transaktion-Services](./transactions) an.
+Wenn Sie einen Transaktion-Service ausführen, wird ein Worker-Prozess für Transaktionen gestartet.
+Der Worker-Prozess führt die Services aus und erstellt die HTTP-Antwort, die dann vom Service Worker an den Aufrufer weitergegeben wird.
 
 Das Log-Menü besteht aus zwei Abschnitten:
 - Zeitstempel der Logs (1)
@@ -28,7 +31,7 @@ Klicken Sie auf einen Zeitstempel, um die dazugehörigen Logs anzuzeigen.<br>
 
 ### Logs lesen
 
-Ein Eintrag hat folgendes Format: `Zeit | Typ | Quelle | Nachricht`. Beispiel:
+Ein Log-Eintrag hat folgendes Format: `Zeit | Typ | Quelle | Nachricht`. Beispiel:
 
 | Zeit | Typ | Quelle | Nachricht | 
 |--------|--------|--------|---|

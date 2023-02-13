@@ -17,8 +17,11 @@ The following section contains information on the server and transaction logs cr
 ### Display Logs
 The logs are located in the *Logs* section of the yunIO Designer.
 There are 2 types of Logs:
-- *Services:* Displays all server logs.
-- *Transactions:* Displays trace logs of Transaction services.
+- *Services:* Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
+It receives the HTTP request, executes the service, and sends the response to the caller.
+- *Transactions:* Displays logs of [Transaction](./transactions) services. 
+When running Transactions services, a transaction worker process is started. 
+It executes the service and produces the response, which is then forwarded to the caller by the service worker.
 
 The log menu consists of two sections:
 - timestamps of the logs (1)
