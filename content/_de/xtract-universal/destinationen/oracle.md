@@ -26,10 +26,10 @@ Es sind keine zusätzlichen Installationen für die Nutzung der Oracle Datenbank
 
 
 Die Oracle Destination unterstützt 3 Verbindungsarten:
-- **Default:** Verbindung zu einer Oracle Cloud.
+- **Default:** Verbindung zu einer Oracle Datenbank (On-premises).
 - **Wallet:** Verbindung zu einer Oracle Datenbank über Verbindungsdaten aus einem Wallet. 
 Verwenden Sie diese Option, wenn [mTLS (Mutual TLS)](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-introduction.html#GUID-9A472E49-3B2B-4D9F-9DC2-D3E6E4454285) Authentifizierung erforderlich ist.
-- **Connect Descriptor:** Verbindung zu einer Oracle Datenbank.
+- **Connect Descriptor:** Verbindung zu einer Oracle Datenbank (On-premises und Cloud) via TLS.
 
 ### Default
 
