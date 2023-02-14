@@ -28,18 +28,9 @@ The **Service URL Kind** option defines the URL that is used to connect to yunIO
 - *Default*: <br>
 If TLS is active, the *Subject Alternative Name* provided by the X.509 certificate is used as the hostname, see [Transport Layer Security](#transport-layer-security). <br>
 - *Azure Relay Hybrid Connection*:<br>
-Services use an Azure Relay address to become accessible to applications running in the Azure cloud. For more information on Azure Relay, see [Microsoft Documentation: What is Azure Relay?](https://learn.microsoft.com/en-us/azure/azure-relay/relay-what-is-it). <br>
+When an Azure Relay Hybrid Connection is set up, yunIO services use an Azure Relay address to become accessible to applications running in the Azure cloud. For more information on Azure Relay, refer to the knowledge base article [Establish an Azure Relay Hybrid Connection to yunIO](https://kb.theobald-software.com/yunio/establish-an-azure-relay-hybrid-connection).
 - *Custom*: <br>
 Allows you to enter a custom hostname. Enter the hostname in the field **Custom Hostname** and click **[Save]** to update the OpenAPI definitions of all existing services.
-
-#### Azure Relay Hybrid Connection
-How to set up the Azure Relay Hybrid Connection in yunIO:
-1. Create an Azure Relay namespace and an Azure Relay Hybrid Connection, see [Microsoft Documentation: Get started with Relay Hybrid Connections HTTP requests in .NET](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started). 
-2. Copy and paste the primary connection string from Azure Relay in the field **Azure Relay Connection String**.
-3. Set **Service URL Kind** to *Azure Relay Hybrid Connection*.
-4. Click **[Save]** to save the changes.
-5. Restart the YunIO service to complete the registration.
-
 
 ### Transport Layer Security
 

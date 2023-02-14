@@ -28,19 +28,9 @@ Die Option **Service URL Kind** definiert die URL, mit der man sich mit yunIO Se
 - *Default*: <br>
 Wenn TLS aktiv ist ist, wird der *Subject Alternative Name* aus dem X.509 Zertificate als Hostname verwendet, siehe [Transport Layer Security](#transport-layer-security). <br>
 - *Azure Relay Hybrid Connection*:<br>
-Die Services verwenden eine Azure Relay Adresse, um für Anwendungen in der Azure Cloud erreichbar zu sein. Für mehr Informationen zu Azure Relay, siehe [Microsoft Dokumentation: Was ist Azure Relay?](https://learn.microsoft.com/de-de/azure/azure-relay/relay-what-is-it). <br>
+Wenn eine Azure Relay Hybrid Verbindung eingerichtet ist, verwenden die Services eine Azure Relay Adresse, um für Anwendungen in der Azure Cloud erreichbar zu sein. Für mehr Informationen zu Azure Relay, siehe [Establish an Azure Relay Hybrid Connection to yunIO](https://kb.theobald-software.com/yunio/establish-an-azure-relay-hybrid-connection). <br>
 - *Custom*: <br>
 Geben Sie im Feld **Custom Hostname** einen benutzerdefinierten Hostnamen ein und klicken Sie auf **[Save]**, um die OpenAPI Definitionen aller angelegten Services zu aktualisieren.
-
-#### Azure Relay Hybrid Connection
-Führen Sie die folgenden Schritte aus, um eine Azure Relay Hybrid Connection für yunIO zu nutzen:
-1. Erstellen sie einen Azure Relay Namespace und eine Azure Relay Hybrid Connection, siehe [Microsoft Dokumentation: Erste Schritte mit HTTP-Anforderungen von Relay Hybrid Connections in .NET](https://learn.microsoft.com/de-de/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started).
-2. Deaktivieren Sie die Option „Clientautorisierung erforderlich“ bei der Relay-Erstellung, damit sie Anfragen an die Hybrid Connections URL von jedem Browser aus senden können. 
-3. Kopieren Sie die *Primäre Verbindungszeichenfolge* (connection string) von Azure Relay in das Feld **Azure Relay Connection String**.
-4. Wählen Sie in **Service URL Kind** die Option *Azure Relay Hybrid Connection* aus.
-5. Klicken Sie auf **[Save]**, um die Änderungen zu speichern.
-6. Starten Sie den yunIO-Server neu, um die Registrierung abzuschliessen.
-
 
 ### Transport Layer Security
 
