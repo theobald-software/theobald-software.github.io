@@ -31,7 +31,7 @@ For more detailed information on how to create an ODP extraction, see [Define an
 ### Creating a Batch Macro with Control Parameters
 
 1. Create a new workflow that contains an extraction as described in [Create an Extraction](#create-an-extraction).
-2. To use the worklow as a batch macro, navigate to the *Workflow Configuration* and select **Batch Macro** as the Workflow Type from drop down list.<br>
+2. To use the workflow as a batch macro, navigate to the *Workflow Configuration* and select **Batch Macro** as the Workflow Type from drop down list.<br>
 ![BatchMacro](/img/content/xfa/batchmakro.png){:class="img-responsive"}
 3. Save the file. Once the workflow is saved as a batch macro each tool in the workflow gets a lightning bolt anchor. Only *Interface* Tools can connect to these anchors.
 4. Add a **Control Parameter** tool from the *Interface* toolbox and label the parameter e.g., name one *cp_MATNR_low* and another *cp_MATNR_high* to differentiate between the two (1).
