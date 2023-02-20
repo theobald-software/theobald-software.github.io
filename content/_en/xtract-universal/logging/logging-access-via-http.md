@@ -12,43 +12,46 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=logging-access-via-http
 progressstate: 3
 ---
 
-### Using the Correct URL
-The XU Server allows accessing the different meta data and logging information through web service (HTTP / HTTPS). Make sure to use the correct URL. 
-The correct URL can be found in your Xtract Universal [web server settings](../server/server-settings#web-server).
+The Xtract Universal server allows accessing meta data and logging information through web calls. 
 
-{: .box-note }
-**Note:** Make sure to select the correct standard ports of the different components [(configuration server, web server)](../server/ports). 
+### About
 
+The basic URL for web calls uses the following format: `[protocol]://[host or IP address]:[port]/`.<br>
+Make sure to use the correct protocol:
 
-The basic URL syntax consists of the following parts: `http://[XU server name].[domain]:[port]`
-
-| Type | Syntax       | Example                                                                  |
+| Protocol | Syntax       | Example                                                                  |
 |-------|------------------|--------------------------------------------------------------------|
 | HTTP   | `http://[host].[domain]:[port]`         | `http://todd.theobald.local:8065`  |
 | HTTP | `http://[host]:[port]` | `http://localhost:8065` |
-| HTTPS  | `https://[host].[domain]:[port]` | `https://todd.theobald.local:8165`<br> functions only with a dedicated host name and X.509 certificate |
+| HTTPS  | `https://[host].[domain]:[port]` | `https://todd.theobald.local:8165`<br> Requires a dedicated host name and X.509 certificate, see [web server settings](../server/server-settings#web-server). |
 
+The following web calls are available for log scenarios:
 
-In the succeeding examples the following URL `https://todd.theobald.local:8165/` is used.
+| URL       | Description  | 
+|-----------|--------------|
+| ```[protocol]://[host]:[port]```  |   Returns a list of all defined extractions, see [Query all Defined Extractions](#query-all-defined-extractions).|
+| ```[protocol]://[host]:[port]/config/extractions/```  |   Returns a list of all defined extractions in JSON format, see [Query all Defined Extractions](#query-all-defined-extractions). |
+| ```[protocol]://[host]:[port]/destinations```  |   Returns a list of all defined destinations, see [Query all Defined Destinations](#query-all-defined-destinations). |
+| ```[protocol]://[host]:[port]/log/?req_type=all```  |   Returns a list of all logs, see [Query all Server & Extraction Logs](#query-all-server--extraction-logs). |
+| ```[protocol]://[host]:[port]/log/?req_type=server```  |   Returns a list of timestamps that correspond to server logs, see [Query all Server & Extraction Logs](#query-all-server--extraction-logs). |
+| ```[protocol]://[host]:[port]/log/?req_type=server&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the server logs of the specified timestamp. |
+| ```[protocol]://[host]:[port]/log/?req_type=all&past_days=[number_of_days]```  |   Returns all logs since n days. |
+| ```[protocol]://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd]```  |   Returns all logs since the specified date. |
+| ```[protocol]://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs since the specified timestamp. |
+| ```[protocol]://[host]:[port]/log/?req_type=all&max=[yyyy-MM-dd]```  |   Returns all logs until the specified date. |
+| ```[protocol]://[host]:[port]/log/?req_type=all&max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs until the specified timestamp. |
+| ```[protocol]://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd]&max=[yyyy-MM-dd]```  |   Returns a list of all logs between two timestamps. |
+| ```[protocol]://[host]:[port]/log/?req_type=extraction&name=[extraction_name]```  |   Returns the logs of the specified extraction. |
+| ```[protocol]://[host]:[port]/log/?req_type=extraction&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the logs of the specified extraction at the specified timestamp. |
+| ```[protocol]://[host]:[port]/ResultName?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the name of the result file for a specific timestamp. |
+| ```[protocol]://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the status of the specified extraction at the specified timestamp. |
 
-### HTTP Log Parameter
+For more web calls, see [Execute and Automate - Call via Webservice](../execute-and-automate-extractions/call-via-webservice).
 
-|Parameter | Description | Example |
-|------------ | -------------|-----|
- | Destinations | List of all Defined Destinations | `http://todd.theobald.local:8065/destinations` |
- | Extractions | List of all Defined Extractions | `https://todd.theobald.local:8165/extractions` |
- | config/extractions | List of all Defined Extractions with more details | `https://todd.theobald.local:8165/config/extractions` |
- | req_type=server | List of all server logs according to [web server settings > Misc.](../server/server-settings#web-server) | `https://todd.theobald.local:8165/log/?req_type=server` |
- | req_type=server&timestamp=[Timestamp] | Server Log at a Specific Timestamp | `https://todd.theobald.local:8165/log/?req_type=server&timestamp=2020-06-05_07:49:24.150` |
- | req_type=all| List of all server & extraction logs | `https://todd.theobald.local:8165/log/?req_type=all` 
- | req_type=extraction&name=[Extraction Name] | List of all logs of a specific extraction | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt` |
- | req_type=extraction&name=[Extraction Name]&timestamp=[Timestamp] | Log of a specific extraction with a specific timestamp | `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136` |
- | req_type=all&min=[timestamp] | List of all logs starting from a specific timestamp | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219` |
- | req_type=all&min=[timestamp]&max=[timestamp] | List of all logs between two timestamps. | `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136` |
+{: .box-note }
+**Note:** Server logs files are deleted after a defined period of days, see [Server Setting - Web Server](../server/server-settings#web-server).
 
-### Examples of the HTTP Requests
-
-#### Web Service request of all defined extractions
+### Query all Defined Extractions
 - `https://todd.theobald.local:8165/`
 - `https://todd.theobald.local:8165/extractions`
 - `https://todd.theobald.local:8165/config/extractions`
@@ -66,7 +69,7 @@ The log contains the following columns:<br>
 - **Created**: contains the timestamp of the creation.
 
 
-#### Web Service request of all defined destinations
+### Query all Defined Destinations
 - `https://todd.theobald.local:8165/destinations`
 ![XU Server connection](/img/content/xu/http_log_destinations.png){:class="img-responsive"}
 
@@ -80,7 +83,7 @@ The log contains the following columns:
 - **Schema**: contains the schema name, if applicable.
 - **Directory**: contains the directory name, if applicable.
 
-#### Web Service Request of all Server & Extraction Logs
+### Query all Server & Extraction Logs
 - `https://todd.theobald.local:8165/log/?req_type=all`
 ![XU Server connection](/img/content/xu/http_log_all_logs.png){:class="img-responsive"}
 
@@ -103,48 +106,42 @@ The log contains the following columns:
 | 5     | NotAvailable     | The status for a server log.                                              |
 
 
-#### Web Service Request of all Server Logs
+### Query all Server Logs
 - `https://todd.theobald.local:8165/log/?req_type=server`
 ![XU Server connection](/img/content/xu/http_log__req_type=server.png){:class="img-responsive"}
 
-#### Web Service Request of a Specific Extraction
+### Query a Specific Extraction
 - `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt`
 ![XU Server connection](/img/content/xu/http_log_extraction_name.png){:class="img-responsive"}
 
-#### Web Service Request of a Specific Extraction at a Specific Timestamp
+### Query a Specific Extraction at a Specific Timestamp
 - `https://todd.theobald.local:8165/log/?req_type=extraction&name=cskt&timestamp=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_extraction_name_timestamp.png){:class="img-responsive"}
 
-#### Web Service Request of a Server Log at a Specific Timestamp
+### Query a Server Log at a Specific Timestamp
 - `https://todd.theobald.local:8165/log/?req_type=server&timestamp=2020-06-05_07:49:24.150`
 ![XU Server connection](/img/content/xu/http_log_bestimmter_timestamp.png){:class="img-responsive"}
 
-#### Web Service Request of all Logs between two Timestamps
+### Query all Logs between two Timestamps
 - `https://todd.theobald.local:8165/log/?req_type=all&min=2020-06-05_13:36:12.219&max=2020-06-10_14:42:32.136`
 ![XU Server connection](/img/content/xu/http_log_min_max_timestamp.png){:class="img-responsive"}
 
-### Querying the extraction status
+### Query the Extraction Status
 An extraction can be triggered through the extraction's URL. For example, the following URL triggers an extraction named *Plants*:
 ```
 http://localhost:8065/?name=Plants
 ```
-When adding the URL parameter ```&wait=false``` to the URL, the extraction is called in asynchronous mode. For example:
-```
-http://localhost:8065/?name=Plants&wait=false
-```
- An asynchronous call immediately returns an http-response, while the extraction is still running. As part of the http-response header and body, the timestamp of the extraction is returned. For example:
- ```
- X-XU-Timestamp: 2020-05-28_09:58:47.312
- ```
+An asynchronous call immediately returns an http-response, while the extraction is still running. 
 
-The status of the extraction can be queried using the extraction's name and the returned timestamp. For example:
 
-```
-http://localhost:8065/status/?name=Plants&timestamp=2020-05-28_09:58:47.312
-```
-
-This call returns one of the following statuses in the http body: ```Running```, ```FinishedNoErrors``` or ```FinishedErrors```.
-The status of an extraction changes in time. By regularly polling the status, follow-up actions can be taken once the extraction is finished.
+1. Use the parameter `&wait=false` to run your extraction in asynchronous mode:<br>
+`[protocol]://[host]:[port]/?name=[extraction_name]&wait=false`<br>
+2. Copy the timestamp of the extraction that is returned in the HTTP-response header and body. Example: *X-XU-Timestamp: 2023-01-28_09:58:47.312*.
+3. Use the extraction name and the timestamp to query the status:<br>
+`[protocol]://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]`<br>
+One of the following statuses is returned in the HTTP body: ```Running```, ```FinishedNoErrors``` or ```FinishedErrors```.
+4. The status of an extraction changes in time. Loop...
+By regularly polling the status, follow-up actions can be taken once the extraction is finished.
 
 {: .box-note }
 **Note:** Triggering an extraction in asynchronous mode and polling the extraction status is only used with push-destinations (e.g. database or file destinations). 
