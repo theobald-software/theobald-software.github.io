@@ -2,11 +2,8 @@
 ### Follow us!
 ---  
 
-<a href="https://www.facebook.com/TheobaldSoftware" title="Facebook" data-toggle="tooltip" data-placement="bottom">
-  <i class="fab fa-facebook-square fa-2x"></i>
-</a>
-<a href="https://twitter.com/TheobaldSoftw"  title="Twitter" data-toggle="tooltip" data-placement="bottom">
-  <i class="fab fa-twitter-square fa-2x"></i>
+<a href="https://theobald-software.com/newsletter/" title="Newsletter" data-toggle="tooltip" data-placement="bottom">
+  <i class="fab fa-envelope fa-2x"></i>
 </a>
 <a href="https://www.linkedin.com/company/theobald-software/"  title="LinkedIn" data-toggle="tooltip" data-placement="bottom">
   <i class="fab fa-linkedin fa-2x"></i>
