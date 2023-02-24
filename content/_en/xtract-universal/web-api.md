@@ -5,10 +5,10 @@ title: Web-API
 description: Web-API
 product: xtract-universal
 parent: xtract-universal
-childidentifier: sap-customizing
 permalink: /:collection/:path
 weight: 100
 lang: en_GB
+published: false
 old_url: /Xtract-Universal-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
 
