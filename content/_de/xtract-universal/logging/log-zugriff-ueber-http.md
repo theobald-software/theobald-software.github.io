@@ -24,19 +24,19 @@ Achten Sie darauf, das korrekte Protokoll zu verwenden:.
 |-------|------------------|--------------------------------------------------------------------|
 | HTTP   | `http://[host].[domain]:[Port]`         | `http://todd.theobald.local:8065`  |
 | HTTP | `http://[host]:[Port]` | `http://localhost:8065` |
-| HTTPS  | `https://[host]:[Port]` | `https://todd.theobald.local:8165`<br> funktioniert ausschließlich mit dedizierten Rechnernamen und X.509 Zertifikat |
+| HTTPS  | `https://[host]:[Port]` | `https://todd.theobald.local:8165`<br> funktioniert ausschließlich mit dedizierten Rechnernamen und X.509 Zertifikat. |
 
 {: .box-note }
 **Hinweis:** Achten Sie auf die korrekten Standardports, siehe [Server Ports](../server/ports). 
 
 Folgende Aktionen können über Web-Aufrufe ausgeführt werden:
-- [Alle Logs abrufen](#query-all-logs)
-- [Logs zu einem bestimmten Zeitstempel abrufen](#query-logs-at-specific-timestamps)
-- [Alle Server-Logs abrufen](#query-all-server-logs)
-- [Server-Logs zu einem bestimmten Zeitstempel abrufen](#query-server-logs-at-specific-timestamps)
-- [Eine Liste aller definierten Extraktionen abrufen](#query-a-list-of-all-defined-extractions)
-- [Eine bestimmte Extraktion zu einem bestimmten Zeitstempel abrufen](#query-a-specific-extraction-at-a-specific-timestamp)
-- [Den Status einer Extraktion abrufen](#query-the-extraction-status)
+- [Alle Logs abrufen](#alle-logs-abrufen)
+- [Logs zu einem bestimmten Zeitstempel abrufen](#logs-zu-einem-bestimmten-zeitstempel-abrufen)
+- [Alle Server-Logs abrufen](#alle-server-logs-abrufen)
+- [Server-Logs zu einem bestimmten Zeitstempel abrufen](#server-logs-zu-einem-bestimmten-zeitstempel-abrufen)
+- [Eine Liste aller definierten Extraktionen abrufen](#eine-liste-aller-definierten-extraktionen-abrufen)
+- [Eine bestimmte Extraktion zu einem bestimmten Zeitstempel abrufen](#eine-bestimmte-extraktion-zu-einem-bestimmten-zeitstempel-abrufen)
+- [Den Status einer Extraktion abrufen](#den-status-einer-extraktion-abrufen)
 - Metadaten von Extraktionen abrufen, siehe [Metadaten-Zugriff über HTTP-JSON](../fortgeschrittene-techniken/metadata-zugriff-ueber-http-json)
 - Extraktionen ausführen, siehe [Extraktionen Ausführen und Einplanen - Aufruf via Webservice](../extraktionen-ausfuehren-und-einplanen/call-via-webservice)
 
@@ -112,7 +112,7 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 
 <!---
 {: .box-note }
-**Note:** When the parameter `?req_type` is set to `server` instead of `all`, the web call returns timestamps of server logs, see [Query all Server Logs](#query-all-server-logs).
+**Note:** When the parameter `?req_type` is set to `server` instead of `all`, the web call returns timestamps of server logs, see [Query all Server Logs](#alle-server-logs-abrufen).
 -->
 
 #### Antwort
@@ -174,7 +174,7 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 </pre></div></td></tr>
 </table>
 
-### All Server-Logs Abrufen
+### Alle Server-Logs Abrufen
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
@@ -183,7 +183,7 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 #### Antwort
 
 Der Web-Aufruf gibt Zeitstemepl im Format `[yyyy-MM-dd_HH:mm:ss.SSS]` zurück.<br>
-Verwenden Sie die Zeitstempel, um den Inhalt von Logs abzurufen, siehe [Server-Logs zu einem bestimmten Zeitstempel abrufen](#query-server-logs-at-specific-timestamps).
+Verwenden Sie die Zeitstempel, um den Inhalt von Logs abzurufen, siehe [Server-Logs zu einem bestimmten Zeitstempel abrufen](#server-logs-zu-einem-bestimmten-zeitstempel-abrufen).
 
 {: .box-note }
 **Hinweis:** Server-Logs werden nach einer definierten Anzahl von Tagen gelöscht, siehe [Server Einstellungen - Web Server](../sserver/server_einstellungen#web-server).
@@ -207,7 +207,7 @@ Timestamp
 | `http(s)://[host]:[port]/log/?req_type=server&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]` | Gibt die Server-Logs von einem definierten Zeitstempel zurück. |
 
 {: .box-tip }
-**Tipp:** Rufen Sie zurvor die Zeitstempel ab, die zu Server-Logs gehören, siehe [Alle Server-Logs abrufen](#query-all-server-logs).<br>
+**Tipp:** Rufen Sie zurvor die Zeitstempel ab, die zu Server-Logs gehören, siehe [Alle Server-Logs abrufen](#alle-server-logs-abrufen).<br>
 Um Server-Logs abzurufen, die vor, nach oder zwischen Zeitstempeln liegen, siehe [Logs zu einem bestimmten Zeitstempel abrufen](#query-logs-between-timestamps).
 
 {: .box-note }
@@ -315,7 +315,7 @@ RLT10010,Report,ec5,csv,2023-01-12_11:11:48.975,21,2022-12-13_11:07:36.437,2022-
 | `http(s)://[host]:[port]/log/?req_type=extraction&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Gibt detailierte Logs der definierten Extraktion an dem definierten Zeitstempel zurück. |
 
 {: .box-tip }
-**Tipp:** Rufen Sie den Zeitstempel ab, an dem die Extraktion das letzte Mal ausgeführt wurde, siehe  [Eine Liste aller definierten Extraktionen abrufen](#query-a-list-of-all-defined-extractions) oder rufen Sie Zeitstempel ab über [Alle Logs abrufen](#query-all-logs).<br>
+**Tipp:** Rufen Sie den Zeitstempel ab, an dem die Extraktion das letzte Mal ausgeführt wurde, siehe  [Eine Liste aller definierten Extraktionen abrufen](#eine-liste-aller-definierten-extraktionen-abrufen) oder rufen Sie Zeitstempel ab über [Alle Logs abrufen](#alle-logs-abrufen).<br>
 
 
 #### Antwort
