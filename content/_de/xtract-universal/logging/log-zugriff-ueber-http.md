@@ -49,7 +49,7 @@ Folgende Aktionen können über Web-Aufrufe ausgeführt werden:
 | `http(s)://[host]:[port]/log/?req_type=all` | Gibt alle Extraktions-Logs und Server-Logs zurück. |
 
 {: .box-note }
-**Hinweis:** Server-Logs werden nach einer definierten Anzahl von Tagen gelöscht, siehe [Server Einstellungen - Web Server](../sserver/server_einstellungen#web-server).
+**Hinweis:** Server-Logs werden nach einer definierten Anzahl von Tagen gelöscht, siehe [Server Einstellungen - Web Server](../server/server_einstellungen#web-server).
 
 #### Antwort
 
@@ -72,7 +72,7 @@ Der Web-Aufruf gibt folgende Informationen zurück:
 | 5     | NotAvailable     | Der Status bei einem Server-Log.                                              |
 
 
-Für Informationen, wie man Extraction-Logs interpretiert, siehe [Extraktions-Logs Lesen](../logging/#logs-lesen---extraktions-log).
+Für Informationen, wie man Extraction-Logs interpretiert, siehe [Extraktions-Logs Lesen](../logging#logs-lesen---extraktions-log).
 
 
 #### Beispiel
@@ -136,7 +136,7 @@ Der Web-Aufruf gibt folgende Informationen zurück:
 | 5     | NotAvailable     | Der Status bei einem Server-Log.                                              |
 
 
-Für Informationen, wie man Extraction-Logs interpretiert, siehe [Extraktions-Logs Lesen](../logging/#logs-lesen---extraktions-log).
+Für Informationen, wie man Extraction-Logs interpretiert, siehe [Extraktions-Logs Lesen](../logging#logs-lesen---extraktions-log).
 
 
 #### Beispiel
@@ -337,7 +337,7 @@ Der Web-Aufruf gibt folgende Informationen zurück:
 | 3     | FinishedNoErrors | Die Extraktion ist erfolgreich gelaufen.                                     |
 | 4     | FinishedErrors   | Die Extraktion ist abgeschlossen, aber mindestens ein Fehler ist aufgetreten. |
 
-Für Informationen, wie man Extraction-Logs interpretiert, siehe [Extraktions-Logs Lesen](../logging/#logs-lesen---extraktions-log).
+Für Informationen, wie man Extraction-Logs interpretiert, siehe [Extraktions-Logs Lesen](../logging#logs-lesen---extraktions-log).
 
 #### Beispiel
 

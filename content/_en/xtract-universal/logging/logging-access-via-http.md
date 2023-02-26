@@ -131,7 +131,7 @@ The web call returns the following information:
 | 5     | NotAvailable     | The status for a server log.                                              |
 
 
-For information on how to read extractions logs, see [Reading Extraction Logs](../logging/#reading-logs---extraction-log).
+For information on how to read extractions logs, see [Reading Extraction Logs](../logging#reading-logs---extraction-log).
 
 
 #### Example
@@ -194,7 +194,7 @@ The web call returns the following information:
 | 4     | FinishedErrors   | Extraction is finished with at least one error. |
 | 5     | NotAvailable     | The status for a server log.                                              |
 
-For information on how to read extractions logs, see [Reading Extraction Logs](../logging/#reading-logs---extraction-log).
+For information on how to read extractions logs, see [Reading Extraction Logs](../logging#reading-logs---extraction-log).
 
 #### Example
 
@@ -483,7 +483,7 @@ Query the status of the extraction in a loop to trigger follow-up actions once t
 
 The web call returns one of the following statuses:
 
-| Status       | Description                                                                    |
+| State      | Description                                                                    |
 |------------------|------------------------------------------------------------------------------|
 | Running          | The extraction is running.                                                 |
 | FinishedNoErrors | Extraction succeeded without errors.                                     |
