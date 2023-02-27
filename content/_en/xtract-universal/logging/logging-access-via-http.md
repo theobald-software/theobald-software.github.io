@@ -131,7 +131,7 @@ The web call returns the following information:
 | 5     | NotAvailable     | The status for a server log.                                              |
 
 
-For information on how to read extractions logs, see [Reading Extraction Logs](../logging#reading-logs---extraction-log).
+For information on how to read extractions logs, see [Extraction Logs](../logging#reading-logs---extraction-log).
 
 
 #### Example
@@ -434,7 +434,7 @@ The web call returns the following information:
 | 4     | FinishedErrors   | Extraction is finished with at least one error. |
 
 
-For information on how to read extractions logs, see [Reading Extraction Logs](../logging/#reading-logs---extraction-log).
+For information on how to read extractions logs, see [Extraction Logs](../logging#reading-logs---extraction-log).
 
 #### Example
 
