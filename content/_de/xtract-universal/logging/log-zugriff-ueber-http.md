@@ -186,7 +186,7 @@ Der Web-Aufruf gibt Zeitstemepl im Format `[yyyy-MM-dd_HH:mm:ss.SSS]` zurück.<b
 Verwenden Sie die Zeitstempel, um den Inhalt von Logs abzurufen, siehe [Server-Logs zu einem bestimmten Zeitstempel abrufen](#server-logs-zu-einem-bestimmten-zeitstempel-abrufen).
 
 {: .box-note }
-**Hinweis:** Server-Logs werden nach einer definierten Anzahl von Tagen gelöscht, siehe [Server Einstellungen - Web Server](../sserver/server_einstellungen#web-server).
+**Hinweis:** Server-Logs werden nach einer definierten Anzahl von Tagen gelöscht, siehe [Server Einstellungen - Web Server](../server/server_einstellungen#web-server).
 
 #### Beispiel
 
@@ -211,7 +211,7 @@ Timestamp
 Um Server-Logs abzurufen, die vor, nach oder zwischen Zeitstempeln liegen, siehe [Logs zu einem bestimmten Zeitstempel abrufen](#query-logs-between-timestamps).
 
 {: .box-note }
-**Hinweis:** Server-Logs werden nach einer definierten Anzahl von Tagen gelöscht, siehe [Server Einstellungen - Web Server](../sserver/server_einstellungen#web-server).
+**Hinweis:** Server-Logs werden nach einer definierten Anzahl von Tagen gelöscht, siehe [Server Einstellungen - Web Server](../server/server_einstellungen#web-server).
 
 #### Antwort
 
