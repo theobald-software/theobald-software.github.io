@@ -42,9 +42,9 @@ Prozess während der Extraktion:
 - Im lokalen Verzeichnis wird eine csv-Datei erstellt.
 - Wenn die Datei eine bestimmte Größe erreicht hat, wird sie gezippt (gzip), siehe [File Splitting](#file-splitting). 
 - Die gezippte Datei wird via PUT-Befehl in den Snowflake Staging-Bereich hochgeladen. 
-- Anschließend werden die Daten per COPY-Befehl in die entsprechende Snowflake-Tabelle kopiert.
+- Die Daten per COPY-Befehl in die entsprechende Snowflake-Tabelle kopiert.
 
-Dieser Prozess wiederholt sich solange, bis die Extraktion abgeschlossen ist.<br>
+Dieser Prozess (gzip + PUT command) wiederholt sich solange, bis die Extraktion abgeschlossen ist.<br>
 Das lokale Verzeichnis und der Staging-Bereich werden im Verlauf der Extraktion geleert, d.h., die erzeugten csv-Dateien werden wieder gelöscht.
 
 

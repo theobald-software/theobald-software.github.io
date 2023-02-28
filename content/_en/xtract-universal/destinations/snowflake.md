@@ -42,7 +42,7 @@ Process during an extraction:
 - The zipped file is uploaded via PUT command to the Snowflake staging area.
 - The data is then copied via COPY command to the target table in Snowflake.
 
-This process repeats itself until the extraction is finished.<br>
+This process (gzip + PUT command) repeats itself until the extraction is finished.<br>
 While running an extraction, the csv files in the local directory and the staging area are deleted. 
 
 **Account Name**<br>
