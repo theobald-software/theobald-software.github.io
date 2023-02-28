@@ -19,7 +19,7 @@ Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine Snow
 Die Anbindung an die Snowflake Zielumgebung erfolgt über den ODBC-Treiber für Windows 64-Bit Architekturen.<br>
 Es sind keine zusätzlichen Installationen für die Nutzung der Snowflake Destination erforderlich.
 
-- [Download SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html)
+- Installieren Sie den [SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html).
 - Konfigurieren Sie die folgenden Umgebungsvariablen, um sich mit einem Proxy-Server zu verbinden: `http_proxy`, `https_proxy`, `no_proxy`.<br>
 Für mehr Informationen, siehe [Snowflake: ODBC Configuration and Connection Parameters](https://docs.snowflake.com/en/user-guide/odbc-parameters.html#using-environment-variables)
 
@@ -28,15 +28,47 @@ Für mehr Informationen, siehe [Snowflake: ODBC Configuration and Connection Par
 {% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
+
+#### General
+
 ![Snowflake-Destination](/img/content/xu/snowflake/snowflake-destination-details_1.png){:class="img-responsive"}
 
 #### Connection
+
+**Output directory**<br>
+Geben Sie ein lokalen Verzeichnis an, in das die extrahierten Daten als csv-Datei abgelegt werden.
+
+Prozess während der Extraktion:
+- Im lokalen Verzeichnis wird eine csv-Datei erstellt.
+- Wenn die Datei eine bestimmte Größe erreicht hat, wird sie gezippt (gzip), siehe [File Splitting](#file-splitting). 
+- Die gezippte Datei wird via PUT-Befehl in den Snowflake Staging-Bereich hochgeladen. 
+- Anschließend werden die Daten per COPY-Befehl in die entsprechende Snowflake-Tabelle kopiert.
+
+Dieser Prozess wiederholt sich solange, bis die Extraktion abgeschlossen ist.<br>
+Das lokale Verzeichnis und der Staging-Bereich werden im Verlauf der Extraktion geleert, d.h., die erzeugten csv-Dateien werden wieder gelöscht.
+
+
+**Account Name**<br>
+Geben Sie den Kontonamen ein.
+Der Kontoname kann aus der Verbindungs-URL abgeleitet werden.<br>
+URL für Kontonamen innerhalb einer Organisation: `https://[organization]-[account_name].snowflakecomputing.com/console#/`<br>
+URL für Konto-Locator in einer Region (veraltet): `https://[account_name].[region].[cloud].snowflakecomputing.com/console#/`<br>
+
+**Database**<br>
+Geben Sie den Namen der Datenbank ein.
+
+**Schema**<br>
+Geben Sie das Schema der Datenbank ein.
+
+#### Acount Identifier
+
+![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_2.png){:class="img-responsive"}
 
 **Organization (preferred)**<br>
 Geben Sie den Namen der Organisation an. 
 Die Identifizierung über den Kontonamen in einer Organisation ist die von Snowflake bevorzugte Authentifizierungsmethode, siehe [Snowflake Dokumentation: Kontoname in Ihrer Organisation](https://docs.snowflake.com/de/user-guide/admin-account-identifier.html#format-1-preferred-account-name-in-your-organization)
 
-**Region**<br>
+**Region (legacy)**<br>
 Wählen Sie die Region der Snowflake-Umgebung aus.<br>
 In diesem Beispiel ist die Region *AWS - EU (Frankfurt)* ausgewählt. Die gewählte Region muss den Angaben im zugewiesen Account entsprechen. 
 
@@ -46,46 +78,34 @@ Wählen Sie die *(legacy)*-Option, wenn Sie sich über einen Link mit einer alte
 Für mehr Informationen zu den aktuellen *Cloud Region IDs*, siehe [Snowflake Dokumentation: Supported Cloud Regions](https://docs.snowflake.com/en/user-guide/intro-regions.html).
 
 
-**Output directory**<br>
-Angabe eines lokalen Verzeichnisses, in das die extrahierten Daten als csv-Datei abgelegt werden.
+#### Authentication
 
-Wenn die Datei eine bestimmte Größe erreicht hat, wird sie gezippt (gzip) und via PUT-Befehl in den Snowflake Staging-Bereich hochgeladen. 
-Anschließend werden die Daten per COPY-Befehl in die entsprechende Snowflake-Tabelle kopiert.
-Wenn der Extraktionsvorgang noch nicht abgeschlossen ist, wird eine neue csv-Datei erzeugt und der Vorgang (gzip + PUT-Befehl) wiederholt sich.
-Das lokale Verzeichnis und der Staging-Bereich werden im Verlauf der Extraktion geleert, d.h., die erzeugten csv-Dateien werden wieder gelöscht.<br>
-Für weitere Informationen, siehe [File Splitting](#file-splitting). 
+![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_3.png){:class="img-responsive"}
 
 
-**Account**<br>
-Name des vom Snowflake zugewiesenen Kontos.
-In unserem Beispiel ist es "dummy_account", wie es in der folgenden URL steht:<br>
-`https://dummy_account.eu-central-1.snowflakecomputing.com/console#/`
+**Username**<br>
+Geben Sie den Namen des Benutzers ein.
 
+**Basic (Password)**<br>
+Wenn diese Option aktiv ist, wird Basic Authentication für die Authentifizierung verwendet.<br>
+Geben Sie das Passwort des Benutzers im Feld **Password** ein.
 
-**User Name**<br>
-Name des Benutzers eingeben.
+**Key Pair (Private Key Path and Key Password)**<br>
+Wenn diese Option aktiv ist, werden Schlüsselpaare für die Authentifizierung verwendet, siehe [Snowflake Dokumentation: Schlüsselpaar-Authentifizierung und Schlüsselpaar-Rotation](https://docs.snowflake.com/de/user-guide/key-pair-auth).<br>
+Im Feld **Private Key Path** wählen Sie den Pfad aus, in dem Ihr privater Schlüssel abgelegt ist. Verschlüsselte und unverschüsselte Schlüssel werden unterstützt. Wenn Sie verschlüsselte Schlüssel verwenden, geben Sie das Passwort zum entschlüsseln im Feld **Key password** an.
 
-**Password**<br>
-Passwort des Benutzers eingeben.
+#### Stages
 
-**Database**<br>
-Name der Datenbank eingeben.
+Klicken Sie auf **[Test Connection]**, um alle verfügbaren Stages und Data Warehouses von Snowflake abzurufen.
 
-**Schema**<br>
-Name des Schema eingeben.
+![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_4.png){:class="img-responsive"}
 
-**Connect**<br>
-Klicken Sie auf Connect, um Ihre Verbindung zu prüfen.
-Ist die Verbindung erfolgreich, dann können Sie weitere Einstellungen definieren. 
-
-#### Stage
 **Stage name**<br>
-Name der Snowflake Stage eingeben. 
+Wählen Sie eine Stage aus. 
 Beachten Sie, dass nur "Internal" Stages unterstützt werden. 
 
-
 **Warehouse**<br>
-Name der Snowflake Data Warehouse eingeben.
+Wählen Sie ein Snowflake Data Warehouse aus.
 
 ## Einstellungen
 

@@ -19,7 +19,7 @@ The following section describes the loading of the SAP extraction data into Snow
 The connection to the Snowflake target environment is made via the ODBC driver for Windows 64-bit architectures.<br>
 No additional installations are required to use the Snowflake destination.
 
-- [Download SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html).
+- Download and install the [SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html).
 - To connect through a proxy server, configure the following environment variables: `http_proxy`, `https_proxy`, `no_proxy`.<br>
 For more information, see [Snowflake: ODBC Configuration and Connection Parameters](https://docs.snowflake.com/en/user-guide/odbc-parameters.html#using-environment-variables)
 
@@ -29,9 +29,38 @@ For more information, see [Snowflake: ODBC Configuration and Connection Paramete
 
 ### Destination Details
 
+#### General
+
 ![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_1.png){:class="img-responsive"}
 
-#### Connection
+**Output Directory**<br>
+Enter an existing local directory in which the extracted data is written as a csv file.
+
+Process during an extraction:
+- A csv file is created in the output directory.
+- Once the file has reached a certain size, it is zipped (gzip), see [File Splitting](#file-splitting).
+- The zipped file is uploaded via PUT command to the Snowflake staging area.
+- The data is then copied via COPY command to the target table in Snowflake.
+
+This process repeats itself until the extraction is finished.<br>
+While running an extraction, the csv files in the local directory and the staging area are deleted. 
+
+**Account Name**<br>
+Enter the Snowflake authentication account. 
+The account name can be derived from the connection URL.<br>
+URL for organization account identifier: `https://[organization]-[account_name].snowflakecomputing.com/console#/`<br>
+URL for region account identifier (legacy): `https://[account_name].[region].[cloud].snowflakecomputing.com/console#/`<br>
+
+**Database**<br>
+Enter the name of the Snowflake database.
+
+**Schema**<br>
+Enter the schema of the Snowflake database.
+
+
+#### Acount Identifier
+
+![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_2.png){:class="img-responsive"}
 
 **Organization (preferred)**<br>
 Enter the name of your organization.
@@ -47,45 +76,36 @@ The selected region must match the information in the assigned account.
 Select the *(legacy)* option if you connect to Snowflake using an old *Cloud Region ID*. <br>
 For more information on the current *Cloud Region IDs*, see [Snowflake Documentation: Supported Cloud Regions](https://docs.snowflake.com/en/user-guide/intro-regions.html).
 
+#### Authentication
 
-**Output Directory**<br>
-Enter an existing local directory in which the extracted data is written as a csv file.
+![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_3.png){:class="img-responsive"}
 
-Once the file has reached a certain size, it is zipped (gzip) and uploaded via PUT command to the Snowflake staging area.
-The data is then copied via COPY command to their target Snowflake table.
-If the extraction process is not finished, a new csv file is created and the process (gzip + PUT command) repeats.
-While running an extraction, the csv files in the local directory and the staging area are deleted.<br>
-For more information, see [File Splitting](#file-splitting). 
-
-
-**Account**<br>
-Enter the Snowflake authentication account. In the given example it is: "dummy_account", see also the URL: <br>
-`https://dummy_account.eu-central-1.snowflakecomputing.com/console#/`
-
-**User Name**<br>
+**Username**<br>
 Enter the Snowflake authentication user name. 
 
-**Password**<br>
-Enter the Snowflake authentication password.
+**Basic (Password)**<br>
+If this option is active, basic authentication is used for authentication.<br>
+Enter the Snowflake authentication password of the user in the field **Password**.
 
-**Database**<br>
-Enter the name of the Snowflake database.
+**Key Pair (Private Key Path and Key Password)**<br>
+If this option is active, key pairs are used for authentication, see [Snowflake Documentation: Key Pair Authentication & Key Pair Rotation](https://docs.snowflake.com/en/user-guide/key-pair-auth).<br>
+Select the path to your private key in the field **Private Key Path**. Both encrypted and non-encrypted private keys are supported. If you use encrypted private key for authentication, enter the password that is used by snowflake to decrypt it in the field **Key password**.
 
-**Schema**<br>
-Enter the schema of the Snowflake database.
+#### Stages
 
-**Connect**<br>
-Check the connection to the database.
-If the connection is successful, further settings can be edited. 
+Click **[Test Connection]** to fetch all stages and warehouses from Snowflake. 
+The stages and warehouses then become available for selection.
 
-#### Stage
+![Snowflake-Destination-Details](/img/content/xu/snowflake/snowflake-destination-details_4.png){:class="img-responsive"}
+
 
 **Stage name**<br>
-Enter the name of a Snowflake Stage. 
-Please be aware that only "internal" stages are supported. <!--please check if "supported" a good term in this case-->
+Select a Snowflake Stage.
+Note that only "internal" stages are supported. <!--please check if "supported" a good term in this case-->
 
 **Warehouse**<br>
-Enter the name of a Snowflake Data Warehouse.
+Select a Snowflake Data Warehouse.
+
 
 ## Settings
 
