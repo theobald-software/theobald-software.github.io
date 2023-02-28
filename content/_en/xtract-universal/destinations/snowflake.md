@@ -83,11 +83,11 @@ For more information on the current *Cloud Region IDs*, see [Snowflake Documenta
 **Username**<br>
 Enter the Snowflake authentication user name. 
 
-**Basic (Password)**<br>
+**Basic**<br>
 If this option is active, basic authentication is used for authentication.<br>
 Enter the Snowflake authentication password of the user in the field **Password**.
 
-**Key Pair (Private Key Path and Key Password)**<br>
+**Key Pair**<br>
 If this option is active, key pairs are used for authentication, see [Snowflake Documentation: Key Pair Authentication & Key Pair Rotation](https://docs.snowflake.com/en/user-guide/key-pair-auth).<br>
 Select the path to your private key in the field **Private Key Path**. Both encrypted and non-encrypted private keys are supported. If you use encrypted private key for authentication, enter the password that is used by snowflake to decrypt it in the field **Key password**.
 

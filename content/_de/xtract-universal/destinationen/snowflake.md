@@ -86,11 +86,11 @@ Für mehr Informationen zu den aktuellen *Cloud Region IDs*, siehe [Snowflake Do
 **Username**<br>
 Geben Sie den Namen des Benutzers ein.
 
-**Basic (Password)**<br>
+**Basic**<br>
 Wenn diese Option aktiv ist, wird Basic Authentication für die Authentifizierung verwendet.<br>
 Geben Sie das Passwort des Benutzers im Feld **Password** ein.
 
-**Key Pair (Private Key Path and Key Password)**<br>
+**Key Pair**<br>
 Wenn diese Option aktiv ist, werden Schlüsselpaare für die Authentifizierung verwendet, siehe [Snowflake Dokumentation: Schlüsselpaar-Authentifizierung und Schlüsselpaar-Rotation](https://docs.snowflake.com/de/user-guide/key-pair-auth).<br>
 Im Feld **Private Key Path** wählen Sie den Pfad aus, in dem Ihr privater Schlüssel abgelegt ist. Verschlüsselte und unverschüsselte Schlüssel werden unterstützt. Wenn Sie verschlüsselte Schlüssel verwenden, geben Sie das Passwort zum entschlüsseln im Feld **Key password** an.
 
