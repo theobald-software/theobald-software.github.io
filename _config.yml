@@ -4,7 +4,7 @@ url: "https://help.theobald-software.com"
 baseurl: ""
 
 # Name of website
-title: Theobald Online Help
+title: Theobald Software Online Help
 # Short description of site
 description: Theobald's Online Help Portal contains all documentation about our products
 
@@ -53,7 +53,7 @@ language:
     navbar-links:
       - title: "Go to Knowledge Base"
         url: "https://kb.theobald-software.com"
-      - title: "Go to My Theobald"
+      - title: "Go to My Theobald Software"
         url: "https://my.theobald-software.com/"
     navbar-back-to: "Back to"
     homepage: "Homepage"
@@ -85,7 +85,7 @@ language:
     navbar-links:
       - title: "Zur Knowledge-Base"
         url: "https://kb.theobald-software.com"
-      - title: "Zu My Theobald"
+      - title: "Zu My Theobald Software"
         url: "https://my.theobald-software.com/"
     navbar-back-to: "Zurück zur"
     homepage: "Startseite"
