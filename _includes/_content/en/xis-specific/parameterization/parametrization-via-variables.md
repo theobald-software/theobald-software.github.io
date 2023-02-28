@@ -6,9 +6,8 @@ To use SSIS variables for parameterization of Xtract components, place an @-symb
 The following example shows how an SSIS variable named *@vDate* is used as a parameter in an Xtract component:
 
 1. Choose an input field that supports SSIS variables.<br>
-2. Instead of entering a fixed a value, enter an SSIS variable using the @-notation (1).
-3. Open the SSIS variables window and add an SSIS variable with the same name, but without the @-symbol (2).<br>
-![Variables](/img/content/xis/xis_vars.png){:class="img-reagierend"}
+2. Instead of entering a fixed a value, enter an SSIS variable using the @-notation.
+3. Open the SSIS variables window and add an SSIS variable with the same name, but without the @-symbol.
 5. Make sure to select the correct data type.
 6. Use the variable by entering values directly into the *Value* field or by assigning dynamic values in SSIS. <br>
 
