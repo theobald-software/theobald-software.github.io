@@ -12,7 +12,6 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
 
 With the *Transaction* component, SAP transactions can be accessed, configured and parameterized for automation.<br>
-The integration type *Transaction* is currently marked as “Preview” and is not fully functional. Future versions will work with any SAP transaction code.
 
 ### Prerequisites
 

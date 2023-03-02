@@ -12,8 +12,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
 
 Mit der *Transaction* Komponente können SAP Transaktionen angesteuert und für die Automatisierung konfiguriert und parametriert werden.
-Der Integrationstyp *Transaction* befindet sich aktuell im Stadium "Preview" und ist noch nicht vollständig funktional.
-Zukünftige Versionen werden alle SAP-Transaktionen unterstützen.
+
 
 ### Voraussetzungen
 
