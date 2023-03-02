@@ -27,7 +27,7 @@ Therefore knowing how to navigate the SAP GUI makes it easier to use the transac
 2. Enter a transaction code (1). <br>
 ![transaction](/img/content/yunio/transaction.png){:class="img-responsive"}
 3. Click **[Start]** to run the transaction. Content from the SAP GUI is displayed. 
-4. Fill out the input fields as you would in the SAP GUI. Input fields can be parameterized once the transaction is recorded, see [Parameterizing Transactions](parameterizing-transactions).
+4. Fill out the input fields as you would in the SAP GUI. Input fields can be parameterized once the transaction is recorded, see [Parameterize Transactions](parameterize-transactions).
 5. Click **[Submit]** (2) to enter your input.
 All executed actions are logged in the section *GUI Steps* (3). <br>
 ![transaction-va02](/img/content/yunio/transaction-va02.png){:class="img-responsive"}
