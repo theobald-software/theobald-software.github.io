@@ -48,6 +48,8 @@ Sie können zwischen *Pure* und *Spark* für den Kompatibilitätsmodus wählen.
 2. Klicken Sie auf **[Destination]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
+### Destination Settings - Destinationseinstellungen
+
 Die folgenden Einstellungen können für die Parquet-Destination definiert werden. 
 
 ![XU_flatfile_JSON_Destination](/img/content/xu/parquet/parquet_destination_settings.png){:class="img-responsive"}

@@ -46,6 +46,7 @@ You can choose between *Pure*, *Spark* and *BigQuery* for the compatibility mode
 2. Click **[Destination]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
+### Destination Settings
 The following settings can be defined for the Parquet destination.  
   
 ![XU_parquet_Destination](/img/content/xu/parquet/parquet_destination_settings.png){:class="img-responsive"}
