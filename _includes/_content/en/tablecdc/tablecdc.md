@@ -1,5 +1,5 @@
-The component can be used to extract delta contents from SAP tables and views.
-It creates a log table in SAP that record insert, update, and delete activities that apply to a selected SAP table or view<br>
+The component can be used to extract delta contents from SAP tables.
+It creates a log table in SAP that record insert, update, and delete activities that apply to a selected SAP table.<br>
 
 <!---
 {: .box-warning}
@@ -14,11 +14,11 @@ For more information, see the knowledge base article on [SAP User Rights: Table]
 ### About Table CDC
 
 Change Data Capture (CDC) is a method to keep track of data changes such as insert, update and delete in SAP tables.
-The Table CDC component creates a log table in SAP that records any changes made to a selected table or view. 
+The Table CDC component creates a log table in SAP that records any changes made to a selected table. 
 The content of the log table is cleared after every successful run of the extraction. Data that was not extracted is not cleared from the log table.
 
 {: .box-note }
-**Note:** Clusters and pool tables are not supported by the Table CDC component. 
+**Note:** Clusters, pool tables and views are not supported by the Table CDC component. 
 
 ### Requirements
 
