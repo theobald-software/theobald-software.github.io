@@ -18,6 +18,6 @@ The window "Destination Settings" opens.
 In the "Destination Settings" window you can select the destination.<br>
 ![Destinations](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
-- For information on how to create destinations, see [Loading an Extraction into a Database](./getting-started/load-an-extraction-into_database).
+- For information on how to create destinations, see [Writing extracted Data to a Destination](./getting-started/write-data-to-destination).
 - For information on available destinations, see [Destinations](./destinations).
 {% endif %}
