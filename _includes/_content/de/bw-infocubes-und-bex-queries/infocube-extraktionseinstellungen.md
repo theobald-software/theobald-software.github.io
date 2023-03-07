@@ -20,6 +20,12 @@ Wenn der Wert auf 0 gesetzt wird, wird die komplette Ergebnismenge abgerufen.
 Diese Option wird im BICS Modus nicht unterstützt.<br>
 **Row Limit** kann verwendet werden, um einen Test mit einer kleinen Datenmenge durchzuführen, indem Sie z.B. 1000 (nicht 0) als Zeilenlimit eintragen.
 
+**Member Display** <br>
+Diese Einstellung ist nur im BICS-Modus verfügbar.<br>
+*Key*: Extrahiert den Schlüssel eines Dimensionslements.<br>
+*Text* (default): Extrahiert den Text eines Dimensionselements.<br>
+*Text and Key*: Fügt für jede Dimension eine Spalte mit dem Suffix `.KEY` hinzu. Die Original-Spalte enthält den Text des Dimensionslements, die neue `.KEY` Spalte enthält den Schlüssel des Dimensionslements. 
+
 **Formatted Values**<br>
 Wenn diese Option aktiv ist, werden die Werte der Kennzahlen so ausgegeben, wie im Query-Designer definiert (z.B. Skalierungsfaktor und Dezimalstellen).
 

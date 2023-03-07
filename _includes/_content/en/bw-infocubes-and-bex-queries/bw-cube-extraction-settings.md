@@ -20,6 +20,12 @@ If the value is set to 0, the complete result set is fetched.
 This option is not supported when using BICS mode.<br>
 You can use **Row Limit** to perform tests with a small amount of data by entering a row limit of e.g., 1000 (not 0).
 
+**Member Display** <br>
+This setting is only available for the BICS extractor.<br>
+*Key*: Extracts the key of the dimension member.<br>
+*Text* (default): Extracts the text of the dimension member.<br>
+*Text and Key*: Adds an additional column for every dimension with the suffix `.KEY`. The original column contains the text of the dimension member, the column with the `.KEY` suffix contains the key of the dimension member.
+
 **Formatted Values** <br>
 If this option is active, the values of key figures are formatted as defined in the Query Designer e.g., scaling factor and number of decimal places.
 

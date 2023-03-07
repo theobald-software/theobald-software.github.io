@@ -36,6 +36,7 @@ This is necessary if a data source has been adjusted in SAP, another source syst
 | Syntax in lookup for InfoProivders | `$[tech. name of InfoProvoider]`  <br /> example: $0SD_C03                                            | `[tech. name of InfoProvider]` <br /> example: 0SD_C03      |
 | Wildcards in lookup                | The BEx-Query setting "Allow External Access to this Query" is required, see [Allow External Access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries). <br /> example: *0SD_C03_Q0018 instead of 0SD_C03/0SD_C03_Q0018                          | not required and therefore not supported           |
 | Supported InfoProviders            | InfoCubes, Multiproviders, Composite Providers                                              | InfoCubes, MuliProviders, Composite Providers, DSOs |
+| Column names of Key figures           | EnterpriseID                                              | Technical name<br>  If techn. name is empty: name of the base measure.  <br> If name of the base measure is empty: EnterpriseID. <br>**Tip:** In case of duplicate names, change the technical name in the BEx Query Designer. |
 
 {: .box-note }
 **Note:** The BICS component is still in beta phase. Contact [Theobald Support](https://support.theobald-software.com) in case of errors.
