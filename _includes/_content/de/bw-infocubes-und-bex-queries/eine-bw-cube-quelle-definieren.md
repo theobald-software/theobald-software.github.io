@@ -35,7 +35,7 @@ Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Q
 | Syntax bei der Suche von InfoProivders | `$[tech. Name des InfoProvoiders]`  <br /> Beispiel: $0SD_C03                                            | `[tech. Name des InfoProviders]` <br /> Beispiel: 0SD_C03      |
 | Wildcards bei der Suche                | Die BEx-Query Einstellung "Allow External Access to this Query" muss aktiv sein, siehe [Allow External Access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries). <br /> Beispiel: *0SD_C03_Q0018 anstatt 0SD_C03/0SD_C03_Q0018                          | nicht unterstützt          |
 | Unterstützte InfoProviders            | InfoCubes, Multiproviders, Composite Providers                                              | InfoCubes, MuliProviders, Composite Providers, DSOs |   
-| Spaltennamen von Key Figures          | EnterpriseID                                              | Technischer Name <br>Wenn der techn. Name leer ist: Name des Basis-Messwerts. <br>Wenn der Name des Basis-Messwerts leer ist: EnterpriseID<br>**Tipp:** Wenn Namen doppelt vorkommen, ändern Sie den techn. Namen im BEx Query Designer.|   
+| Spaltennamen von Key Figures          | EnterpriseID                                              | Technischer Name <br>Wenn der techn. Name nicht vorhanden ist: Name des Basis-Messwerts. <br>Wenn Name des Basis-Messwerts nicht vorhanden ist: EnterpriseID<br>**Tipp:** Wenn Namen doppelt vorkommen, ändern Sie den techn. Namen im BEx Query Designer.|   
 
 {: .box-note }
 **Hinweis:** Die BICS-Komponente befindet sich noch in der Beta-Phase. Bei Problemen mit der Komponente, kontaktieren Sie den [Theobald Support](https://support.theobald-software.com).
