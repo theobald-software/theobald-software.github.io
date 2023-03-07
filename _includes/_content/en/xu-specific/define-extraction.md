@@ -9,15 +9,3 @@ The extraction is now listed in the main window of the Designer.
 Double click the extraction to open the main window of the component.
 The majority of the functions of the component can be accessed using the main window.
 
-{% if page.product == "xtract-universal" %}
-#### Assign a Destination
-
-When creating a new extraction, data is written to the *http-csv* destination by default.
-To assign a different destination to an extraction, select the extraction and click **[Destination]**.
-The window "Destination Settings" opens. 
-In the "Destination Settings" window you can select the destination.<br>
-![Destinations](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
-
-- For information on how to create destinations, see [Writing extracted Data to a Destination](./getting-started/write-data-to-destination).
-- For information on available destinations, see [Destinations](./destinations).
-{% endif %}
