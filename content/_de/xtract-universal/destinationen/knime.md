@@ -23,6 +23,7 @@ Die Destination *Flat File* erzeugt eine generische CSV-Datei.
 3. Geben Sie einen **Namen** für die Destination ein.
 4. Wählen Sie den Destinationstyp aus dem Dropdown-Menü aus.
 
+### Destination Details
 Für die KNIME-Destination ist keine Konfiguration erforderlich.
 
 ## Einstellungen

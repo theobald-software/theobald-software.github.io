@@ -77,7 +77,7 @@ Die Destination ist jetzt verfügbar und kann Extraktionen zugewiesen werden.
   <script>
   function getSelectedValueSettings(){
 	var selectedValueS = document.getElementById("destinationsettings").value;
-	window.location = "https://help.theobald-software.com/en/xtract-universal/destinationen/" + selectedValueS + "#destination-settings---destinationseinstellungen"
+	window.location = "https://help.theobald-software.com/de/xtract-universal/destinationen/" + selectedValueS + "#destination-settings---destinationseinstellungen"
 	}
   </script> 
   

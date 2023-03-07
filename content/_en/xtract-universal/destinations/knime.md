@@ -24,6 +24,7 @@ The following section shows how to load extracted SAP data to [KNIME](https://ww
 3. Enter a **Name** for the destination.
 4. Select the destination **Type** from the drop-down menu.
 
+### Destination Details
 No configuration is required for the KNIME destination.
 
 ## Settings
