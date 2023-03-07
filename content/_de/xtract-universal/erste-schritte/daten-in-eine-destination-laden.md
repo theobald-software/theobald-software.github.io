@@ -1,8 +1,8 @@
 ---
 ref: xu-getting-started-04
 layout: page
-title: Schritt 5 - Extraktion in eine Datenbank laden
-description: Schritt 5 - Eine Extraktion in eine Datenbank laden
+title: Schritt 5 - Extrahierte Daten in eine Destination schreiben
+description: Schritt 5 - Extrahierte Daten in eine Destination schreiben
 product: xtract-universal
 parent: erste-schritte
 permalink: /:collection/:path
