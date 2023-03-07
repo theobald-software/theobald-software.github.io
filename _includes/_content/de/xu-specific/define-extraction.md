@@ -8,15 +8,3 @@
 Die Extraktion wird jetzt im Hauptfenster des Designers aufgelistet.
 Mit einem Doppelklick auf die Extraktion öffnen Sie das Hauptfenster der Komponente.
 Die meisten Funktionen der Komponente sind über das Hauptfenster der Komponente verfügbar.
-
-{% if page.product == "xtract-universal" %}
-#### Eine Destination zuweisen
-Wenn Sie eine Extraktion anlegen, werden die Daten standardmäßig in die *http-csv* Destination geschrieben.
-Um eine andere Destination zu wählen, markieren Sie Ihre Extraktion und klicken Sie auf **[Destination]**. 
-Das Fenster "Destination Settings" öffnet sich. 
-In dem Fenster "Destination Settings" können Sie eine Destination auswähen, sowie weitere Einstellungen vornehmen.<br>
-![Destinations](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
-
-- Für Informationen, wie eine Destination angelegt wird, siehe [Extrahierte Daten in eine Destination schreiben](./erste-schritte/daten-in-eine-destination-laden).
-- Für Informationen über verfügbare Destinationen, siehe [Destinationen](./destinationen).
-{% endif %}
