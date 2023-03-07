@@ -23,8 +23,8 @@ The content of the log table is cleared after every successful run of the extrac
 ### Requirements
 
 - SAP version 7.40 SP05 or higher.
-- The following function module must be installed on your SAP system: IUUC_CREATE_TABLE <br>
-This function module is included the SAP superpackages CNV_INC_PROCESSING_REMOTE, DMIS_BASIS_INC_FW, DMIS_BASIS and DMIS
+- The following function module must be installed on your SAP system: IUUC_CREATE_TABLE. <br>
+This function module is included the SAP superpackages CNV_INC_PROCESSING_REMOTE, DMIS_BASIS_INC_FW, DMIS_BASIS and DMIS.
 - The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE version 2.10 or higher is mandatory. 
 The SAP transport requests for the installation is provided in the installation directory `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
 
