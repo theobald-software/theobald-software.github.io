@@ -58,7 +58,7 @@ To set up the service, see [SAP Table or View](./table-and-views), [Function Mod
 To edit the name, description and source of an existing service, click the ![Edit](/img/content/yunio/edit-type-icon.png) icon.<br>
 To edit the extraction type settings of the service, click the ![Edit](/img/content/yunio/edit-cog-icon.png) icon. <br>
 
-### How to use a service
+### How to run a Service
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
@@ -71,6 +71,10 @@ Web services created with yunIO can be integrated into all cloud applications th
 **Note:** Only services that do not require parameters supplied by a caller will display any SAP results in the browser. For parameterized services, use a tool
 that supports Swagger/OpenAPI definitions (e.g.[Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector), [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)) . 
 
+#### How to use Parameters
+
+{: .box-tip}
+**Recommendation:** We recommend using POST to ensure data protection.
 
 *****
 #### Related Links
