@@ -17,6 +17,6 @@ Das Fenster "Destination Settings" öffnet sich.
 In dem Fenster "Destination Settings" können Sie eine Destination auswähen, sowie weitere Einstellungen vornehmen.<br>
 ![Destinations](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
-- Für Informationen, wie eine Destination angelegt wird, siehe [Extraktion in eine Datenbank laden](./erste-schritte/eine-extraktion-in-oracle-laden).
+- Für Informationen, wie eine Destination angelegt wird, siehe [Extrahierte Daten in eine Destination schreiben](./erste-schritte/daten-in-eine-destination-laden).
 - Für Informationen über verfügbare Destinationen, siehe [Destinationen](./destinationen).
 {% endif %}
