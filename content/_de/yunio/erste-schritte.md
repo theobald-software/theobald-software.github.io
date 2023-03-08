@@ -70,10 +70,7 @@ Der Service wird dann direkt im Browser ausgeführt.<br>
 **Hinweis:** Nur Services, die keine Eingangsparameter erfordern, zeigen SAP-Ergebnisse im Browser an. Verwenden Sie für parametrisierte Services ein Tool, das Swagger/OpenAPI-Definitionen unterstützt 
 (z. B. [Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) oder [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)).
 
-#### Parametrieren von Services im Swagger Inspector
 
-{: .box-tip}
-**Empfehlung:** Wir empfehlen die Verwendung von POST, um Ihre Daten zu schützen.
 
 *****
 #### Weiterführende Links

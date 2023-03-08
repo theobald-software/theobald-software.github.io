@@ -71,10 +71,27 @@ Web services created with yunIO can be integrated into all cloud applications th
 **Note:** Only services that do not require parameters supplied by a caller will display any SAP results in the browser. For parameterized services, use a tool
 that supports Swagger/OpenAPI definitions (e.g.[Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector), [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)) . 
 
-#### How to use Parameters
+#### POST vs GET
+yunIO services support the http methods `POST` and `GET`.
+
+|  | POST | GET |
+|--|-----|------|
+| Data Length | No restrictions. | Maximum URL length is 2048 characters. |
+| Parameters | Parameters are part of the http request body. | Supports query parameters in the URL. | 
+| Data Safety | Parameters are not stored in the browser history or in web server logs. | Parameters are visible in the service URL. Data is cached. | 
+| Data Types | No restrictions. | Only ASCII characters allowed. |
+
 
 {: .box-tip}
-**Recommendation:** We recommend using POST to ensure data protection.
+**Recommendation:** We recommend using the POST method to ensure data protection. Do not use the GET method to send sensible data, e.g.  credentials.
+
+Example for using `POST` with an input parameter *NAME1*:<br>
+![yunIO-HTTP-POST](/img/content/yunio/http-post.png){:class="img-responsive" }
+
+Example for using `GET` with an input parameter *NAME1*:<br>
+![yunIO-HTTP-GET](/img/content/yunio/http-get.png){:class="img-responsive" }
+
+
 
 *****
 #### Related Links
