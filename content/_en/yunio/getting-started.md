@@ -58,7 +58,7 @@ To set up the service, see [SAP Table or View](./table-and-views), [Function Mod
 To edit the name, description and source of an existing service, click the ![Edit](/img/content/yunio/edit-type-icon.png) icon.<br>
 To edit the extraction type settings of the service, click the ![Edit](/img/content/yunio/edit-cog-icon.png) icon. <br>
 
-### How to use a service
+### How to run a Service
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
@@ -70,6 +70,30 @@ Web services created with yunIO can be integrated into all cloud applications th
 {: .box-note}
 **Note:** Only services that do not require parameters supplied by a caller will display any SAP results in the browser. For parameterized services, use a tool
 that supports Swagger/OpenAPI definitions (e.g.[Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector), [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)) . 
+
+#### POST vs GET
+yunIO services support the http methods `POST` and `GET`.
+
+|  | POST | GET |
+|--|-----|------|
+| Data Length | No restrictions. | Maximum URL length is 2048 characters. |
+| Parameters | Parameters are part of the http request body. | Supports query parameters in the URL. | 
+| Data Safety | Parameters are not stored in the browser history or in web server logs. | Parameters are visible in the service URL. Data is cached. | 
+| Data Types | No restrictions. | Only supports ASCII characters. |
+
+
+{: .box-tip}
+**Recommendation:** We recommend using the POST method with [Transport Layer Security](./server-settings) (HTTPS) to ensure data protection. Do not use the GET method to send sensible data, e.g. credentials.
+
+When using the OpenAPI/Swagger definition, `POST` and `GET` are both available. Select the method you want to use:<br>
+![yunIO-HTTP-POST-GET](/img/content/yunio/http-post-get.png){:class="img-responsive" }
+
+Example for using `POST` with an input parameter *NAME1*:<br>
+![yunIO-HTTP-POST](/img/content/yunio/http-post.png){:class="img-responsive" }
+
+Example for using `GET` with an input parameter *NAME1*:<br>
+![yunIO-HTTP-GET](/img/content/yunio/http-get.png){:class="img-responsive" }
+
 
 
 *****

@@ -70,6 +70,27 @@ Der Service wird dann direkt im Browser ausgeführt.<br>
 **Hinweis:** Nur Services, die keine Eingangsparameter erfordern, zeigen SAP-Ergebnisse im Browser an. Verwenden Sie für parametrisierte Services ein Tool, das Swagger/OpenAPI-Definitionen unterstützt 
 (z. B. [Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) oder [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)).
 
+#### POSt vs GET
+yunIO Services unterstützen die HTTP-Methoden `POST` und `GET`.
+
+|  | POST | GET |
+|--|-----|------|
+| Datenlänge| Keine Einschränkungen. | Maximuale Länge der URL ist 2048 Zeichen. |
+| Parameter | Parameter sind Teil des HTTP Request Bodys. |Unterstützt Query-Parameter in der URL. | 
+| Datensicherheit | Parameter werden nicht im Browserverlauf und den Server-Logs gespeichert. | Parameter sind in der URL offen sichtbar. Daten werden gecacht. | 
+| Datentypen | Keine Einschränkungen.  | Unterstützt nur ASCII-Zeichen. |
+
+{: .box-tip}
+**Empfehlung:** Wir empfehlen die Verwendung der POST-Methode mit [Transport Layer Security]() (HTTPS), um Ihre Daten zu schützen. Verwenden Sie nicht die GET-Methode, wenn Sie sensible Daten übertragen, z.B. Zugangsdaten. 
+
+Wenn Sie die OpenAPI/Swagger Definition verwenden, sind die Methoden `POST` und `GET` beide verfügbar. Sie können eine der beiden Methode auswählen:<br>
+![yunIO-HTTP-POST-GET](/img/content/yunio/http-post-get.png){:class="img-responsive" }
+
+Beispiel für die `POST`-Methode mit einem Eingabeparameter *NAME1*:<br>
+![yunIO-HTTP-POST](/img/content/yunio/http-post.png){:class="img-responsive" }
+
+Beispiel für die `GET`-Methode mit einem Eingabeparameter *NAME1*:<br>
+![yunIO-HTTP-GET](/img/content/yunio/http-get.png){:class="img-responsive" }
 
 *****
 #### Weiterführende Links
