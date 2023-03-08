@@ -79,11 +79,14 @@ yunIO services support the http methods `POST` and `GET`.
 | Data Length | No restrictions. | Maximum URL length is 2048 characters. |
 | Parameters | Parameters are part of the http request body. | Supports query parameters in the URL. | 
 | Data Safety | Parameters are not stored in the browser history or in web server logs. | Parameters are visible in the service URL. Data is cached. | 
-| Data Types | No restrictions. | Only ASCII characters allowed. |
+| Data Types | No restrictions. | Only supports ASCII characters. |
 
 
 {: .box-tip}
-**Recommendation:** We recommend using the POST method to ensure data protection. Do not use the GET method to send sensible data, e.g.  credentials.
+**Recommendation:** We recommend using the POST method with [Transport Layer Security](./server-settings) (HTTPS) to ensure data protection. Do not use the GET method to send sensible data, e.g. credentials.
+
+When using the OpenAPI/Swagger definition, `POST` and `GET` are both available. Select the method you want to use:<br>
+![yunIO-HTTP-POST-GET](/img/content/yunio/http-post-get.png){:class="img-responsive" }
 
 Example for using `POST` with an input parameter *NAME1*:<br>
 ![yunIO-HTTP-POST](/img/content/yunio/http-post.png){:class="img-responsive" }
