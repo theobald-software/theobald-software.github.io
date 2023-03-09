@@ -17,7 +17,7 @@ Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
 
 3. Geben Sie den Namen eines Query oder eines BW Cube / InfoProvider in die Suchleiste (2) ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
 4. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) und wählen Sie ein Objekt aus den Suchergebnissen (3) aus.<br>
-Alternativ klick Sie auf **[Direct Load]**, um den Suchvorgang zu überspringen und den BW Cube / InfoProvider direkt zu laden. **[Direct Load]** funktioniert nur, wenn der vollständige Name korrekt in die Suchleiste eingegeben wurde.
+Alternativ klicken Sie auf **[Direct Load]**, um den Suchvorgang zu überspringen und den BW Cube / InfoProvider direkt zu laden. **[Direct Load]** funktioniert nur, wenn der vollständige Name korrekt in die Suchleiste eingegeben wurde.
 5. Klicken Sie auf **[OK]**, um Ihre Auswahl zu bestätigen.
 
 {: .box-note }
