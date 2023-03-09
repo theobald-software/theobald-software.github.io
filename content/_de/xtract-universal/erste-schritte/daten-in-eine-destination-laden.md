@@ -1,8 +1,8 @@
 ---
 ref: xu-getting-started-04
 layout: page
-title: Schritt 5 - Extrahierte Daten in eine Destination schreiben
-description: Schritt 5 - Extrahierte Daten in eine Destination schreiben
+title: Schritt 5 - Extraktion in eine Datenbank laden
+description: Schritt 5 - Eine Extraktion in eine Datenbank laden
 product: xtract-universal
 parent: erste-schritte
 permalink: /:collection/:path
@@ -121,7 +121,6 @@ Für mehr Informationen über Destinationseinstellungen, geben Sie Ihre Destinat
 	<option value="server-report-services">SQL Server Reporting Services</option>
 	<option value="tableau">Tableau</option>
   </select><br>
-![Select-Destination-Type](/img/content/destination.gif){:class="img-responsive"}
 5. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.
 
 Wenn die [Extraktion ausgeführt](./eine-extraktion-ausfuehren) wird, werden die extrahierten SAP-Daten in die zugewiesene Destination geschrieben.
