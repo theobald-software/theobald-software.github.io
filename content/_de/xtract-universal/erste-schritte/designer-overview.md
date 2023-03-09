@@ -66,7 +66,6 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 ![designer-icon](/img/content/icons/designer/eng.png)| Online Help (EN) |  Öffnet die englische Online Hilfe | -
 ![designer-icon](/img/content/icons/designer/de.png) | Online Help (DE) | Öffnet die deutsche Online Hilfe | -
 ![designer-icon](/img/content/icons/designer/support.png) | Submit Support Ticket | Support-Ticket einreichen | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
-![designer-icon](/img/content/icons/designer/support-client.png) | Support Client | Direkter Support | [TeamViewer Client](https://get.teamviewer.com/theobaldsoftware)
 ![designer-icon](/img/content/icons/designer/info.png) | Info | Produktinfos | [Info-Fenster](../einfuehrung/lizenz#about-xtract-universal---info-fenster)
 ![designer-icon](/img/content/icons/designer/version-history.png) | Version History | Versionshistorie | [Versionshistorie]( https://kb.theobald-software.com/version-history)
 
