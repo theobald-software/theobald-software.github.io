@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-04
 layout: page
-title: Step 5 - Writing extracted Data to a Destination
+title: Step 5 - Write extracted Data to a Destination
 description: Step 5 - Load extracted Data to a Destination
 product: xtract-universal
 parent: getting-started

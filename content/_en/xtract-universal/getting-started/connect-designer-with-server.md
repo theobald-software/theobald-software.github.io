@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-01
 layout: page
-title: Step 1 - Connecting the Designer with the Server
+title: Step 1 - Connect the Designer to a Server
 description:  1. Connecting the designer with the server
 product: xtract-universal
 parent: getting-started

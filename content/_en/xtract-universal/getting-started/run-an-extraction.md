@@ -1,7 +1,7 @@
 ---
 ref: xu-getting-started-03
 layout: page
-title:  Step 4 - Running an Extraction
+title:  Step 4 - Run an Extraction
 description: Step 4 - Run an Extraction
 product: xtract-universal
 parent: getting-started

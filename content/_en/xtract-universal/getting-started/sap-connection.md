@@ -1,7 +1,7 @@
 ---
 ref: xu-introduction-05
 layout: page
-title: Step 2 - Creating an SAP Connection
+title: Step 2 - Create an SAP Connection
 description: SAP Connection
 product: xtract-universal
 parent: getting-started
