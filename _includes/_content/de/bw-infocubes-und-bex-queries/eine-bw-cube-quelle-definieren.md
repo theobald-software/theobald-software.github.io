@@ -16,7 +16,8 @@ Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
    | *Extraction Settings*  | **Only Structure**: nur verfügbar für den MDX Extraktor. Verwenden Sie **Only Structure**, wenn Ihre BWCube Extraktion in einer veralteten Software-Version erstellt wurde, siehe [Extraktionseinstellungen](./infocube-extraktionseinstellungen#extraction-settings) für mehr Informationen. <br>**Use BICS fast mode**: nur verfügbar für den BICS Extraktor, siehe [Extraktionseinstellungen: Experimental](infocube-extraktionseinstellungen#experimental).  | 
 
 3. Geben Sie den Namen eines Query oder eines BW Cube / InfoProvider in die Suchleiste (2) ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
-4. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) und wählen Sie ein Objekt aus den Suchergebnissen (3) aus.
+4. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) und wählen Sie ein Objekt aus den Suchergebnissen (3) aus.<br>
+Alternativ klick Sie auf **[Direct Load]**, um den Suchvorgang zu überspringen und den BW Cube / InfoProvider direkt zu laden. **[Direct Load]** funktioniert nur, wenn der vollständige Name korrekt in die Suchleiste eingegeben wurde.
 5. Klicken Sie auf **[OK]**, um Ihre Auswahl zu bestätigen.
 
 {: .box-note }
