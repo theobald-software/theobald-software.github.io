@@ -34,16 +34,12 @@ Eine einfachere Option für die inkrementelle Datenextraktion bietet die ODP-Kom
 
 {% include _content/de/table/supported-objects.md %}
 
-### Table verwenden
+### Xtract Table verwenden
 
 {% include _content/de/alteryx-component-intro.md %}
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
-
-### Funktionsübersicht
-Die folgenden Abschnitte geben einen Überblick über die Funktionen, auf die über das Hauptkomponentenfenster zugegriffen werden kann.
-![Table Extractor](/img/content/xfa/xfa-table-extractor.png){:class="img-responsive"}
 
 Weitere Informationen zum Arbeiten mit der Table Komponente finden Sie in den folgenden Unterabschnitten.
 

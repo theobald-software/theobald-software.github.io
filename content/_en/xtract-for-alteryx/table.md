@@ -42,11 +42,6 @@ The ODP component is a more convenient option for incremental extraction e.g., u
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
-
-### Functions overview
-The following sections give an overview over the functions that can be accessed over the main component window.
-![Table Extractor](/img/content/xfa/xfa-table-extractor.png){:class="img-responsive"}
-
 More information on working with the Xtract Table component is provided in the following sections.
 
 ---
