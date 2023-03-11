@@ -5,7 +5,7 @@ Der folgende Abschnitt beschreibt die Anwendung der Table Komponente. <br>
 
 ### Eine Tabelle Finden
 
-Wählen die SAP Tabelle, die Sie mit Table CDC nachverfolgen möchten.
+Wählen die SAP Tabelle, die Sie mit Table CDC aufzeichnen möchten.
 
 1. Innerhalb des Hauptfensters der Komponente klicken Sie auf  **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon). Das Fenster “Table Lookup” öffnet sich.<br>
 ![Table-CDC](/img/content/tablecdc/table-cdc.png){:class="img-responsive"}
@@ -23,10 +23,13 @@ Richten Sie die Table CDC Komponente ein, um Daten zu extrahieren.
 
 1. Wählen Sie die Spalten aus, die Sie extrahieren möchten.<br> ![Table-CDC-Setup](/img/content/tablecdc/table-cdc-kna1.png){:class="img-responsive"}
 2. Optional: Wenn Sie bei der ersten Ausführung der Extraktion nicht die komplette SAP-Tabelle extrahieren möchten, deaktivieren Sie die Option **[Extract table on first run]**.
-3. Klicken Sie auf **[Load Preview]**, um die ersten 1000 Datensätze der SAP Tabelle anzuzeigen.<br>
+3. Optional: Aktivieren Sie die Option **Limit log table size**, um eine maximale Anzahl von Zeilen festzulegen, die aufgezeichnet werden können.
+Wenn die maximale Zeilenanzahl erreicht ist, schlägt die Extraktion mit einem Ausnahmefehler fehl.
+Beachten Sie, dass die maximale Zeilenanzahl nicht mehr geändert werden kann, sobald die Log-Tabelle initialisiert ist.
+4. Klicken Sie auf **[Load Preview]**, um die ersten 1000 Datensätze der SAP Tabelle anzuzeigen.<br>
 Die Spalte IUUC_OPERAT_FLAG zeigt an, ob die Daten eingefügt (I), aktualisiert (U) oder gelöscht (D) wurden.
-4. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
-5. Führen Sie die Extraktion aus, um eine Log-Tabelle in SAP zu erzeugen, die Änderungen an der ausgewählten SAP Tabelle nachverfolgt, siehe [Die Extraktion zum ersten Mal Ausführen](#die-extraktion-zum-ersten-mal-ausführen).
+5. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
+6. Führen Sie die Extraktion aus, um eine Log-Tabelle in SAP zu erzeugen, die Änderungen an der ausgewählten SAP Tabelle nachverfolgt, siehe [Die Extraktion zum ersten Mal Ausführen](#die-extraktion-zum-ersten-mal-ausführen).
 
 {: .box-note }
 **Hinweis:** Bevor Sie eine Extraktion löschen, klicken Sie ind er Table CDC Komponente auf **[Delete CDC resources]**, um die Log-Tabelle und alle dazugehörigen Elemente aus Ihrem SAP-System zu löschen. 

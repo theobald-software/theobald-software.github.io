@@ -24,10 +24,13 @@ Set up the Table CDC component to extract data.
 1. Select the columns you want to extract.<br> 
 ![Table-CDC-Setup](/img/content/tablecdc/table-cdc-kna1.png){:class="img-responsive"}
 2. Optional: If you don't want to extract the whole table when first running the extraction, deactivate **[Extract table on first run]**.
-3. Click **[Load Preview]** to load 1000 records for the preview.<br>
+3. Optional: Activate the option **Limit log table size** to set a maximum number of rows that can be tracked. 
+If the row limit is reached, the extraction fails with an exception.
+Note that once a log table is initialized, you cannot change the size limit anymore.
+4. Click **[Load Preview]** to load 1000 records for the preview.<br>
 The column IUUC_OPERAT_FLAG indicates if a row was inserted (I), updated (U) or deleted (D).
-4. Click **[OK]** to confirm your settings.
-5. Run the extraction to create a log table in SAP that records any changes made to a selected table, see [Run the Extraction for the First Time](#run-the-extraction-for-the-first-time). <br>
+5. Click **[OK]** to confirm your settings.
+6. Run the extraction to create a log table in SAP that records any changes made to a selected table, see [Run the Extraction for the First Time](#run-the-extraction-for-the-first-time). <br>
 
 {: .box-note }
 **Note:** Before deleting an extraction, click **[Delete CDC resources]** in the Table CDC component to delete the log table and all associated triggers from your SAP system.
