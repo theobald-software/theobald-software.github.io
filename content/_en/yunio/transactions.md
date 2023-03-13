@@ -63,6 +63,6 @@ The following screenshot shows where to edit the input parameter *Input_Order* a
 
 ****
 #### Related Links
-- [Knowledge Base Article: Working with Transactions](https://kb.theobald-software.com/yunio/working-with-transactions)
+- [Knowledge Base Article: Working with Transaction IE01](https://kb.theobald-software.com/yunio/transaction-ie01)
 - [Knowledge Base Article: Working with Transaction VA02](https://kb.theobald-software.com/yunio/transaction-va02)
 - [Knowledge Base Article: Working with Transaction XD02](https://kb.theobald-software.com/yunio/transaction-xd02)
