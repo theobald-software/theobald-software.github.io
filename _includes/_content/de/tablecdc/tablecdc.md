@@ -1,12 +1,12 @@
 Mit der Komponente lassen sich Delta-Inhalte aus SAP Tabellen und Views abziehen. 
 Dafür wird in SAP eine Log-Tabelle erstellt, die alle Änderungen (Einfügen, Ändern, Löschen) einer ausgewählten Tabelle aufzeichnet.
 
-<!---
+
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
-Um die Table Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
-Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
--->
+Um die Table CDC Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Table CDC](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table-cdc).
+
 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte](./erste-schritte) beschrieben.
@@ -24,8 +24,16 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 ### Voraussetzungen
 
 - SAP Version 7.40 SP05 oder höher.
-- Installation des Funktionsbausteins IUUC_CREATE_TABLE. <br>
-Dieser Funktionsbaustein ist Teil der SAP Superpackages CNV_INC_PROCESSING_REMOTE, DMIS_BASIS_INC_FW, DMIS_BASIS und DMIS.
+- Benötigte Funktionsbausteine und ihre Pakethierarchie:
+
+	| Funktionsbaustein | Pakethierarchie |
+	|-----------------|----------|
+	| DMC_DDIF_TABL_GET_WRAPPER |ECC: *CNVM &rarr; DMIS_BASIS_MWB &rarr; DMIS_BASIS &rarr; DMIS* <br> S4: *CNV_DMC_REMOTE &rarr; DMIS_BASIS_MWB &rarr; DMIS_BASIS &rarr; DMIS*|
+	| IUUC_CREATE_TABLE | *CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
+	| IUUC_DD_TABL_DEL_WRAPPER | - |
+	| IUUC_COUNT_ENTRIES_LOGGING_TBL | *CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
+	| IUUC_CRE_ACT_ADBC_TRIGGER | - |
+	| IUUC_DELETE_ADBC_TRIGGER | *CNV_IUUC_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
 - Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE Version 2.10 oder höher. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
 `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Funktionsbaustein für TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 
