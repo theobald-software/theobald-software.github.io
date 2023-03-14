@@ -24,6 +24,8 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 ### Voraussetzungen
 
 - SAP Version 7.40 SP05 oder höher.
+- Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE Version 2.10 oder höher. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
+`C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Funktionsbaustein für TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 - Benötigte Funktionsbausteine und ihre Pakethierarchie:
 
 	| Funktionsbaustein | Pakethierarchie |
@@ -34,8 +36,6 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 	| IUUC_COUNT_ENTRIES_LOGGING_TBL | *CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
 	| IUUC_CRE_ACT_ADBC_TRIGGER | - |
 	| IUUC_DELETE_ADBC_TRIGGER | *CNV_IUUC_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-- Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE Version 2.10 oder höher. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
-`C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Funktionsbaustein für TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 
 
 <!---

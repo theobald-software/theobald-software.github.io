@@ -23,6 +23,8 @@ The content of the log table is cleared after every successful run of the extrac
 ### Requirements
 
 - SAP version 7.40 SP05 or higher.
+- The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE version 2.10 or higher is mandatory. 
+The SAP transport requests for the installation is provided in the installation directory `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
 - Required function modules and their package hierarchy:
 
 	| Function Module | Package Hierarchy |
@@ -33,8 +35,6 @@ The content of the log table is cleared after every successful run of the extrac
 	| IUUC_COUNT_ENTRIES_LOGGING_TBL | *CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
 	| IUUC_CRE_ACT_ADBC_TRIGGER | - |
 	| IUUC_DELETE_ADBC_TRIGGER | *CNV_IUUC_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-- The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE version 2.10 or higher is mandatory. 
-The SAP transport requests for the installation is provided in the installation directory `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
 
 
 <!---
