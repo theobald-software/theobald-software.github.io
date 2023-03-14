@@ -66,7 +66,6 @@ Für mehr Informationen über die Details von Destinationen, geben Sie Ihre Dest
 	<option value="server-report-services">SQL Server Reporting Services</option>
 	<option value="tableau">Tableau</option>
   </select><br>
-![Select-Destination-Type](/img/content/destination.gif){:class="img-responsive"}
 6. Klicken Sie auf **[Test connection]**, um die Verbindung zur Destination zu überprüfen. 
 7. Klicken Sie auf **[OK]**, um die Verbindung zu speichern. 
 

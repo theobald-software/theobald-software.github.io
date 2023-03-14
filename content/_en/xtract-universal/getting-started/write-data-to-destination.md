@@ -65,8 +65,7 @@ For more information about the destination details, select your destination: <se
 	<option value="snowflake">Snowflake</option>
 	<option value="server-report-services">SQL Server Reporting Services</option>
 	<option value="tableau">Tableau</option>
-  </select><br>
-![Select-Destination-Type](/img/content/destination.gif){:class="img-responsive"}
+  </select>
 6. Click **[Test Connection]** to check the connection to the destination.
 7. Click **[OK]** to save the destination. 
 
