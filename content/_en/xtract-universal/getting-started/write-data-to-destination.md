@@ -19,7 +19,11 @@ This could be a conversion to file-based formats for local or cloud-based file s
 For a complete list of available destinations, see [Destinations](../destinations).
 
 ### Creating a new Destination
-
+<!---
+this script generates a link to the destination details of the selected destination (in step 5)
+the option in the list must be set as follows:
+	<option value="name-of-the-md-file-of-the-destination">DisplayedName</option>
+-->
   <script>
   function getSelectedValueDetails(){
 	var selectedValueD = document.getElementById("destination").value;
@@ -73,6 +77,11 @@ The destination is now available and can be assigned to extractions.
 
 ### Assigning Destinations to Extractions
 
+<!---
+this script generates a link to the destination settings of the selected destination (in step 4)
+the option in the list must be set as follows:
+	<option value="name-of-the-md-file-of-the-destination">DisplayedName</option>
+-->
   <script>
   function getSelectedValueSettings(){
 	var selectedValueS = document.getElementById("destinationsettings").value;
