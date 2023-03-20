@@ -58,6 +58,7 @@ Im Tab **Import** können Sie Eingabeparameter definieren.
 Wählen Sie Ihre Eingabeparameter über die entsprechende drop-down Liste aus:
 - Felder, die auf *Supplied by Caller* stehen, sind im Request Body des Services als Parameter verfügbar und können zur Laufzeit gesetzt werden.
 - Felder, die auf *Default (defined in SAP)* stehen, verwenden die Standardwerte aus SAP.
+- Felder, die auf *Constant* stehen, verwenden den Wert, der unter **Value** eingetragen wird.
 
 ![BAPI export parameters](/img/content/yunio/BAPI-input.png){:class="img-responsive"}
 

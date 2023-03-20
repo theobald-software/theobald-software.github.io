@@ -52,7 +52,8 @@ Import parameters represent the input values sent from the client to SAP. In the
  
 Select import parameters using the drop-down list next to the parameter:
 - Items set to *Supplied by Caller* become available as parameters in the request body of the service and can be filled at runtime.
-- Items that are left on *Default (defined in SAP)* use the default values from SAP.
+- Items set to *Default (defined in SAP)* use the default values from SAP.
+- Items set to *Constant* use the value that is entered in the **Value** field.
 
 ![BAPI export parameters](/img/content/yunio/BAPI-input.png){:class="img-responsive"}
 
