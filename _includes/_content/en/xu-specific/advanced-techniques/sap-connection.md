@@ -65,7 +65,7 @@ In Xtract Universal this option triggers an input prompt for SAP credentials, wh
 
 ### Secure Network Communication (SNC)
 
-![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
+Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract Universal and Board Connector.
 
 1. Check the SAP parameter *snc/gssapi_lib* to determine, which library is used for encryption in your SAP system.
 Your SAP Basis has to import and configure the same library on the application server and on the machine that runs Xtract Universal or Board Connector.
@@ -73,6 +73,9 @@ Your SAP Basis has to import and configure the same library on the application s
 3. Enter the SAP **Partner Name** configured for the SAP application server e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 
 For more information on SNC, see the knowledge base article [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
+
+![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
+
 
 **Use static SAP credentials / Windows service account** <br>
 This option activates SNC without SSO.
@@ -84,19 +87,23 @@ This option activates SNC with user and password.
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
 Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
 
-**Impersonate caller (Kerberos SSO)** <br>
+**SSO - Log in as caller via External ID** <br>
+This option activates SSO with External ID.
+SSO with External ID uses a Personal Security Environment (PSE) to create a trust relationship between the SAP application server and the service account that runs {% if page.product == "xtract-universal" %}Xtract Universal. {% elsif page.product == "board-connector" %}Board Connector.{% endif %}
+This allows {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector{% endif %} to impersonate any SAP user.<br>
+For more information, see the knowledge base article [SSO with External ID](https://kb.theobald-software.com/xtract-universal/sso-with-external-id).
+
+
+**SSO - Impersonate caller via Kerberos** <br>
 This option activates Kerberos SSO.
 The Windows Active Directory user is used for authentication.
-For this scenario "HTTPS - Restricted to AD users with Designer read access" must be selected and configured in the [Server Settings](../server/server-settings#web-server).
+For this scenario "HTTPS - Restricted to AD users with Designer read access" must be selected and configured in the [Server Settings](../server/server-settings#web-server).<br>
 For more information, see the knowledge base article [SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
 
-**Enroll certificate on behalf of caller (Certificate SSO)** <br>
+**SSO - Enroll certificate on behalf of caller** <br>
 This option activates Certificate SSO.
 The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user who calls the extraction.
-- Enter the name of the certificate template and the thumbprint of the enrollment agent certificate.
-- "HTTPS - Restricted to AD users with Designer read access" must be configured in the [Server Settings](../server/server-settings#web-server).
-- The SAP Secure Login Client must be installed on the machine that runs the XU or BC server.
-
+For this scenario "HTTPS - Restricted to AD users with Designer read access" must be configured in the [Server Settings](../server/server-settings#web-server).<br>
 For more information, see the knowledge base article [SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 
 ### SAP Logon Ticket
@@ -105,7 +112,6 @@ You can use Single-Sign-On (SSO) with SAP Logon-Tickets for authentication. This
 For information on how to use an authentication with SAP Logon Tickets, refer to the knowledge base article [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 ![SAP-Logon-Ticket](/img/content/sap-logon-ticket.png){:class="img-responsive"}
-
 
 **Ticket issuer URL**<br>
 Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets.

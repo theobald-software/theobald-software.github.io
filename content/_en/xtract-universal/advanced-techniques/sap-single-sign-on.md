@@ -23,12 +23,15 @@ This means that the SAP authorizations of the executing user apply, which is esp
 The Windows credentials of the user must be forwarded to SAP using the Xtract product. 
 On the way to SAP or on the SAP side, the Windows user and its SAP credentials are mapped.
 
-Single Sign-On (SSO) with an Xtract product can be realized via four different procedures:
+Single Sign-On (SSO) with an Xtract product can be realized via different procedures:
 
 - [Secure Network Communication (SNC) with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates)
-- [Secure Network Communication (SNC) with PSE and External IDhttps://kb.theobald-software.com/xtract-universal/sso-with-external-id)
+- [Secure Network Communication (SNC) with PSE and External ID](https://kb.theobald-software.com/xtract-universal/sso-with-external-id)
 - [Secure Network Communication (SNC) with SAP's Kerberos Wrapper Library](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) (deprecated)
 - [SAP Logon Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket)
+
+The authentication method can be selected in the SAP connection settings, see [SAP Connection - Authentication](../getting-started/sap-connection#authentication).
+
 
 ### What is SNC?
 

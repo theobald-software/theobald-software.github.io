@@ -65,7 +65,7 @@ In Xtract Universal werden Sie zur Eingabe der SAP-Anmeldeinformation aufgeforde
 
 ### Secure Network Communication (SNC)
 
-![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
+Secure Network Connection (SNC) ermöglicht die Authentisierung und Transportverschlüsselung zwischen SAP Systemen untereinander, sowie zwischen SAP und Third-Party-Systemen wie Xtract Universal und Board Connector.
 
 1. Überprüfen Sie den SAP Parameter *snc/gssapi_lib* um zu bestimmen, welche Bibliothek für die Verschlüsselung in Ihrem SAP System verwendet wird.
 2. Ihre SAP-Basis muss auf dem Applikationsserver und auf dem Rechner, auf dem Xtract Unversal oder Board Connector installiert ist, die gleiche Bibliothek importieren und konfigurieren.
@@ -73,6 +73,8 @@ In Xtract Universal werden Sie zur Eingabe der SAP-Anmeldeinformation aufgeforde
 4. Geben Sie in das Feld **Partner Name** den SAP-Partnernamen ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`.
 
 Mehr Informationen zu SNC finden Sie im Kowledge Base-Artikel [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
+
+![XU-Authentication](/img/content/xu/sap_source-auth-snc1.png){:class="img-responsive"} 
 
 **Use static SAP credentials / Windows service account** <br>
 Diese Einstellung aktiviert SNC ohne SSO.
@@ -84,19 +86,22 @@ Diese Einstellung aktiviert SNC mit Benutzer und Passwort.
 Die SAP-Anmeldeinformationen in den Feldern *User* und *Password* werden nicht übernommen.
 Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierung angegeben werden, wenn eine Extraktion ausgeführt wird. 
 
-**Impersonate caller (Kerberos SSO)** <br>
+**SSO - Log in as caller via External ID** <br>
+Diese Einstellung aktiviert SSO via External ID.
+SSO via External ID verwendet Personal Security Environment (PSE), um ein Vertrauensverhältnis zwischen dem SAP Server und dem Dienstkonto herzustellen, unter dem {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector {% endif %} ausgeführt wird.
+Das erlaubt {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector{% endif %} jeden SAP Benutzer zu imitieren.<br>
+Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with External ID](https://kb.theobald-software.com/xtract-universal/sso-with-external-id).
+
+**SSO - Impersonate caller via Kerberos** <br>
 Diese Einstellung aktiviert Kerberos SSO.  
 Die Authentifizierung erfolgt über den Windows Active Directory Benutzer des Aufrufers. 
-Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server_einstellungen#web-server) ausgewählt und eingestellt werden.
+Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server_einstellungen#web-server) ausgewählt und eingestellt werden.<br>
 Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
 
-**Enroll certificate on behalf of caller (Certificate SSO)** <br>
+**SSO - Enroll certificate on behalf of caller** <br>
 Diese Einstellung aktiviert Certifcate SSO. 
 Die Authentifizierung erfolgt über ein Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services für den Windows AD Benutzer des Aufrufers.
-- Geben Sie den technischen Namen des Certificate Templates und den Thumbprint des Zertifikats des Enrollment Agents an.
-- "HTTPS - Restricted to AD users with Designer read access" muss in den [Server Settings](../server/server_einstellungen#web-server) eingestellt sein.
-- Der SAP Secure Login Client muss auf der Maschine, auf dem der XU- oder BC-Server läuft, installiert sein.
-
+Dafür muss "HTTPS - Restricted to AD users with Designer read access" muss in den [Server Settings](../server/server_einstellungen#web-server) eingestellt sein.<br>
 Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
 
 ### SAP Logon Ticket

@@ -22,12 +22,14 @@ Dadurch greifen die SAP-Berechtigungen des ausführenden Benutzers, was z.B. bei
 Die Windows-Anmeldeinformationen des Benutzers müssen über das Xtract-Produkt an SAP weitergeleitet werden. 
 Auf dem Weg zu SAP oder auf SAP-Seite wird ein Mapping zwischen Windows-Benutzer und dessen SAP-Anmeldeinformationen durchgeführt.
 
-Single Sign-On (SSO) mit Xtract-Produkten lässt sich über drei unterschiedliche Verfahren realisieren:
+Single Sign-On (SSO) mit Xtract-Produkten lässt sich über unterschiedliche Verfahren realisieren:
 
 - [Secure Network Communication (SNC) mit Client-Zertifikaten](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates)
 - [Secure Network Communication (SNC) mit PSE und External ID](https://kb.theobald-software.com/xtract-universal/sso-with-external-id)
 - [Secure Network Communication (SNC) mit SAPs Kerberos Wrapper Library](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) (veraltet)
 - [SAP Logon Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket)
+
+Die Methode wird in den SAP Verbindungseinstellungen ausgewählt, siehe [Eine SAP-Verbindung erstellen - Authentifizierung](../erste-schritte/sap-verbindungen-anlegen#authentication).
 
 ### Was ist SNC?
 Secure Network Connection (SNC) ermöglicht die Authentisierung und Transportverschlüsselung zwischen SAP Systemen untereinander, sowie zwischen SAP und Third-Party-Systemen wie Xtract Universal und Board Connector.
