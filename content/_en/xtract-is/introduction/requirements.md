@@ -18,10 +18,10 @@ progressstate: 5
 - SQL Server Integration Services (SSIS) 2017 (until 2027-10-12)
 - SQL Server Integration Services (SSIS) 2019 (until 2030-01-08) 
 
-For development: SQL Server Data Tools are required to create SSIS packages. Use the related SSDT for the SQL Server Integration Services (SSIS) version you are using. <br>
+For development: SQL Server Data Tools are required to create SSIS packages. Use the related SSDT for the SQL Server Integration Services (SSIS) version you are using.
 Check the [Microsoft Help](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15) for details.
 
-The version of the SQL Server Database used in SSIS to read or write data can differ from the version of the SQL Server Integration Services (SSIS) version, it means one can use e.g., SSIS version 2019 to write data to SQL Server Database version 2014.  
+The version of the SQL Server Database used in SSIS to read or write data can differ from the version of the SQL Server Integration Services (SSIS) version, it means one can use e.g., SSIS version 2019 to write data to SQL Server Database version 2022.  
 
 {% include _content/en/requirements/sap-systems.md %}
 {% include _content/en/requirements/sap-installation.md %}

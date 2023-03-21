@@ -19,7 +19,7 @@ progressstate: 5
 
 Für die Entwicklung: SQL Server Data Tools werden benötigt, um SSIS-Pakete zu erstellen. Verwenden Sie das entsprechende SSDT für den von Ihnen eingesetzten SQL Server. Weitere Details finden Sie in der [Microsoft Hilfe](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
 
-Die Version der SQL Server-Datenbank, die in SSIS zum Lesen oder Schreiben von Daten verwendet wird, kann sich von der Version der SQL Server Integration Services (SSIS) unterscheiden, d.h. man kann z.B. SSIS Version 2019 verwenden, um Daten in SQL Server-Datenbank Version 2014 zu schreiben.
+Die Version der SQL Server-Datenbank, die in SSIS zum Lesen oder Schreiben von Daten verwendet wird, kann sich von der Version der SQL Server Integration Services (SSIS) unterscheiden, d.h. man kann z.B. SSIS Version 2019 verwenden, um Daten in SQL Server-Datenbank Version 2022 zu schreiben.
 
 {% include _content/de/einfuehrung/sap-systeme.md %} 
 {% include _content/de/einfuehrung/sap-installation.md %} 
