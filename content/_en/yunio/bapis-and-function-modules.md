@@ -24,11 +24,11 @@ The following section shows how to use the integration type *Function Module / B
 
 The settings for *Function Module* consist of the following subsections:
 
-![yunIO-function-module](/img/content/yunio/bapi-settings.png){:class="img-responsive"}
-
 - [Function Module](#function-module) (4) displays the name and description of the selected Function Module / BAPI.
 - [Advanced Settings](#advanced-settings) (5) define how data is comitted to and from SAP.
 - [Function Module Interface Parameters](#function-module-interface-parameters) (6) define what data is comitted to and from SAP.
+
+![yunIO-function-module](/img/content/yunio/bapi-settings.png){:class="img-responsive"}
 
 ### Function Module
 
@@ -72,7 +72,8 @@ For more information on parameterizing services, refer to the following knowledg
 ### Export Parameters
 Export parameters represent the output values sent from SAP back to the client after the execution of a Function Module.
 In the tab **Export** you can select the items you want to add to the output of the Function Module / BAPI: 
-- To add an item to the output of the Function Module / BAPI, mark the checkbox on the right.<br>
+- To add an item to the output of the Function Module / BAPI, mark the checkbox in the *Output* column.<br>
+Optional: you can change the name of the output parameter.<br>
 ![BAPI export parameters](/img/content/yunio/BAPI-output.png){:class="img-responsive"}
 
 ### Changing Parameters
@@ -87,9 +88,12 @@ In the tab **Tables** you can define table parameters for importing and exportin
 **Tables as input parameters:**<br>
 - Items set to *Supplied by Caller* become available as parameters in the request body of the service and can be filled at runtime.
 - Items that are left on *Default (defined in SAP)* use the default values from SAP.
+- Items set to *Constant* use the value that is entered in the **Value** field.
 
 **Tables as output parameters**<br>
 - To add an item to the output of the Function Module / BAPI, mark the checkbox on the right.<br>
+Optional: you can change the name of the output parameter.
+
 ![BAPI table](/img/content/yunio/BAPI-table.png){:class="img-responsive"}
 
 *****

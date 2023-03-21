@@ -25,14 +25,11 @@ Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *Function M
 Die Extraktionseinstellungen für *Function Module / BAPI* öffnen sich automatisch.<br>
 
 Das *Function Module / BAPI* Menü ist in folgende Unterabschnitte unterteilt:
-
-![yunIO-function-module](/img/content/yunio/bapi-settings.png){:class="img-responsive"}
-
 - [Function Module](#funktion-module) (4) zeigt den Namen und die Beschreibung des gewählten Funktionsbausteins / BAPIs an.
 - [Advanced Settings](#advanced-settings) (5) definieren, wie Daten aus SAP extrahiert werden.
 - [Function Module Interface Parameters](#function-module-interface-parameters) (6) definieren welche Daten an und von SAP gesendet werden.
 
-
+![yunIO-function-module](/img/content/yunio/bapi-settings.png){:class="img-responsive"}
 
 ### Function Module
 
@@ -55,7 +52,7 @@ Funktionsbausteine /BAPIs können bis zu vier Parametertypen haben: [Import](#im
 Import-Parameter repräsentieren die Eingabewerte, die vom Client an SAP gesendet werden. 
 Im Tab **Import** können Sie Eingabeparameter definieren.
 
-Wählen Sie Ihre Eingabeparameter über die entsprechende drop-down Liste aus:
+Wählen Sie Ihre Eingabeparameter über die entsprechende Drop-down-Liste aus:
 - Felder, die auf *Supplied by Caller* stehen, sind im Request Body des Services als Parameter verfügbar und können zur Laufzeit gesetzt werden.
 - Felder, die auf *Default (defined in SAP)* stehen, verwenden die Standardwerte aus SAP.
 - Felder, die auf *Constant* stehen, verwenden den Wert, der unter **Value** eingetragen wird.
@@ -78,7 +75,8 @@ Für mehr Informationen über die Parametrisierung von Services, siehe folgende 
 ### Export-Parameter
 Export-Parameter repräsentieren die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.
 Im Tab **Export** können Sie Ausgabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden:
-- Um ein Feld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.
+- Um ein Feld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.<br>
+Optional: Sie können den Namen des Ausgabe-Parameters ändern.
 
 ![BAPI export parameters](/img/content/yunio/BAPI-output.png){:class="img-responsive"}
 
@@ -97,10 +95,12 @@ Im Tab **Tables** können Sie Tabellen-Parameter für den Import und Export zu u
 **Tabellen als Eingabeparameter:**<br>
 - Tabellenfelder, die auf *Supplied by Caller* stehen, sind im Request Body des Services als Parameter verfügbar und können zur Laufzeit gesetzt werden.
 - Tabellenelder, die auf *Default (defined in SAP)* stehen, verwenden die Standardwerte aus SAP.
+- Felder, die auf *Constant* stehen, verwenden den Wert, der unter **Value** eingetragen wird.
 
 
 **Tabellen als Ausgabeparameter**<br>
-- Um ein Tabellenfeld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.
+- Um ein Tabellenfeld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.<br>
+Optional: Sie können den Namen des Ausgabe-Parameters ändern.
 
 ![BAPI table](/img/content/yunio/BAPI-table.png){:class="img-responsive"}
 
