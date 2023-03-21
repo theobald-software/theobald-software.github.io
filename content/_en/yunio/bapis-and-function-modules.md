@@ -73,7 +73,8 @@ For more information on parameterizing services, refer to the following knowledg
 Export parameters represent the output values sent from SAP back to the client after the execution of a Function Module.
 In the tab **Export** you can select the items you want to add to the output of the Function Module / BAPI: 
 - To add an item to the output of the Function Module / BAPI, mark the checkbox in the *Output* column.<br>
-Optional: you can change the name of the output parameter.<br>
+Optional: you can change the name of the output parameter. Tables must use the following format: `[Table name].[column name]`.
+
 ![BAPI export parameters](/img/content/yunio/BAPI-output.png){:class="img-responsive"}
 
 ### Changing Parameters
@@ -92,7 +93,7 @@ In the tab **Tables** you can define table parameters for importing and exportin
 
 **Tables as output parameters**<br>
 - To add an item to the output of the Function Module / BAPI, mark the checkbox on the right.<br>
-Optional: you can change the name of the output parameter.
+Optional: you can change the name of the output parameter. Tables must use the following format: `[Table name].[column name]`.
 
 ![BAPI table](/img/content/yunio/BAPI-table.png){:class="img-responsive"}
 

@@ -38,6 +38,9 @@ Transport Layer Security (TLS) protocol allows the user to communicate with the 
 This requires the installation of an X.509 certificate. 
 For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
+{: .box-note }
+**Note:** yunIO currently only supports TLS 1.2.
+
 #### Pick Certificate
 Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
 If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.

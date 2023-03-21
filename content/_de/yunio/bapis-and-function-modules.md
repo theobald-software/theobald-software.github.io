@@ -76,7 +76,7 @@ Für mehr Informationen über die Parametrisierung von Services, siehe folgende 
 Export-Parameter repräsentieren die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.
 Im Tab **Export** können Sie Ausgabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden:
 - Um ein Feld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.<br>
-Optional: Sie können den Namen des Ausgabe-Parameters ändern.
+Optional: Sie können den Namen des Ausgabe-Parameters ändern. Bei Tabellen muss folgendes Format beibehalten werden: `[Tabellenname].[Spaltenname]`.
 
 ![BAPI export parameters](/img/content/yunio/BAPI-output.png){:class="img-responsive"}
 
@@ -100,7 +100,7 @@ Im Tab **Tables** können Sie Tabellen-Parameter für den Import und Export zu u
 
 **Tabellen als Ausgabeparameter**<br>
 - Um ein Tabellenfeld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.<br>
-Optional: Sie können den Namen des Ausgabe-Parameters ändern.
+Optional: Sie können den Namen des Ausgabe-Parameters ändern. Bei Tabellen muss folgendes Format beibehalten werden: `[Tabellenname].[Spaltenname]`.
 
 ![BAPI table](/img/content/yunio/BAPI-table.png){:class="img-responsive"}
 

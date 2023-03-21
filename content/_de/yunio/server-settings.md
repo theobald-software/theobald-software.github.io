@@ -39,6 +39,9 @@ Wenn TLS aktiviert ist, wird auf den jeweiligen Dienst über eine HTTPS-Verbindu
 Dafür muss ein X.509 Zertifikat installiert sein.
 Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol).
 
+{: .box-note }
+**Hinweis:** yunIO unterstützt aktuell nur TLS 1.2.
+
 #### Pick Certificate
 Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509 Zertifikat aus der Liste verfügbarer Zertifikate aus.
 Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgelistet ist, installieren Sie das X.509 Zertifikat.
