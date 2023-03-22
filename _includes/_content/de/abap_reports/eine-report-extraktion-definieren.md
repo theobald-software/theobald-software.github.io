@@ -38,6 +38,11 @@ Die Spaltenbreite und der Offset der Spalten werden dann zur Laufzeit dynamisch 
 {: .box-note }
 **Hinweis:** Für detaillierte Informationen zur automatischen und manuellen Definition von Spalten, siehe [Spalten Definieren](./report-columns-define).
 
+{% if page.product == "xtract-universal" %}
+Beispiel:<br>
+![Report-Animation](/img/content/Report.gif){:class="img-responsive" style="border:1px solid black;"}
+{% endif %}
+
 #### Weiterführende Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
 - [Authorizing Access to Specific Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports)

@@ -39,6 +39,10 @@ The column widths and offsets are then adjusted dynamically at report runtime.
 {: .box-note }
 **Note:** For more information on how to define report columns automatically and manually, see [Define Columns](./report-columns-define).
 
+{% if page.product == "xtract-universal" %}
+Example:<br>
+![Report-Animation](/img/content/Report.gif){:class="img-responsive" style="border:1px solid black;"}
+{% endif %}
 
 #### Related Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
