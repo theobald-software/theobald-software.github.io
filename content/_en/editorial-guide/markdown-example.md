@@ -207,3 +207,19 @@ You can use `if`, `or` and `elsif` logic using the following format:
 
 Example:<br>
 {% if page.parent == "editorial-guide" %} This text is only displayed in files that belong to the parent "editorial-guide".{% endif %}
+
+### Animations
+
+Record, format and process animations in Camtasia 2020. 
+- use a 12 frames per second GIF format.
+- use the following settings for cursor click effects:<br>
+![camtasia settings](/img/content/camtasia.png){:class="img-responsive"}
+
+Animations can be added the same way as images.<br>
+If necessary, use `style="border:1px solid black` to add a black border to the animation:
+<pre>
+![Report-Animation](/img/content/Report.gif){:class="img-responsive" style="border:1px solid black;"}
+</pre>
+
+Example: 
+![yunIO-transaction-parameters](/img/content/yunio/va02param.gif){:class="img-responsive"}
