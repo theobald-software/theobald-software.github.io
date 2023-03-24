@@ -123,3 +123,7 @@ Für mehr Informationen über Destinationseinstellungen, geben Sie Ihre Destinat
 5. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.
 
 Wenn die [Extraktion ausgeführt](./eine-extraktion-ausfuehren) wird, werden die extrahierten SAP-Daten in die zugewiesene Destination geschrieben.
+
+#### Weiterführende Links
+- [Destinationen verwalten](../destinationen/ziele-verwalten)
+- [Knowledge Base Artikel: Write extracted Data into a Microsoft SQL Server Database](https://kb.theobald-software.com/xtract-universal/load-an-extraction-into_database)
