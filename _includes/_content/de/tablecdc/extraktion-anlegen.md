@@ -23,7 +23,7 @@ Richten Sie die Table CDC Komponente ein, um Daten zu extrahieren.
 
 1. Wählen Sie die Spalten aus, die Sie extrahieren möchten.<br> ![Table-CDC-Setup](/img/content/tablecdc/table-cdc-kna1.png){:class="img-responsive"}
 2. Optional: Wenn Sie bei der ersten Ausführung der Extraktion nicht die komplette SAP-Tabelle extrahieren möchten, deaktivieren Sie die Option **[Extract table on first run]**.
-3. Optional: Aktivieren Sie die Option **Limit log table size**, um eine maximale Anzahl von Zeilen festzulegen, die aufgezeichnet werden können.
+3. In dem Feld **Log table row limit** geben Sie eine maximale Anzahl von Zeilen an, die aufgezeichnet werden. Der Standartwert sind 10000 Zeilen.<br>
 Wenn die maximale Zeilenanzahl erreicht ist, schlägt die Extraktion mit einem Ausnahmefehler fehl.
 Beachten Sie, dass die maximale Zeilenanzahl nicht mehr geändert werden kann, sobald die Log-Tabelle initialisiert ist.
 4. Klicken Sie auf **[Load Preview]**, um die ersten 1000 Datensätze der SAP Tabelle anzuzeigen.<br>
