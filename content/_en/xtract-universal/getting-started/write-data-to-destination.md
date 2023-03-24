@@ -132,3 +132,7 @@ For more information about the destination settings, select your destination: <s
 5. Click **[OK]** to confirm your input.       
 
 When [running the extraction](./run-an-extraction), the extracted SAP data is now written to the destination.
+
+#### Related Links
+- [Manage Destinations](../destinations/managing-destinations)
+- [Knowledge Base Article: Write extracted Data into a Microsoft SQL Server Database](https://kb.theobald-software.com/xtract-universal/load-an-extraction-into_database)
