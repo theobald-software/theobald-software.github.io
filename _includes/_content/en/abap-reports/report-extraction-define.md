@@ -49,7 +49,7 @@ The following example shows how to set up a simple report extraction:
 - Remove the header (skip the first 7 rows)
 - Automatically detect columns
 
-![Report-Animation](/img/content/Report.gif){:class="img-responsive" style="border:1px solid black;"}
+![Report-Animation](/img/content/report.gif){:class="img-responsive" style="border:1px solid black;"}
 {% endif %}
 
 #### Related Links

@@ -48,7 +48,7 @@ Das folgende Beispiel zeigt, wie Sie eine einfache Report-Extraktion einrichten:
 - Header entfernen (die ersten 7 Zeilen des Reports überspringen)
 - Spalten automatisch ermitteln
 
-![Report-Animation](/img/content/Report.gif){:class="img-responsive" style="border:1px solid black;"}
+![Report-Animation](/img/content/report.gif){:class="img-responsive" style="border:1px solid black;"}
 {% endif %}
 
 #### Weiterführende Links
