@@ -33,7 +33,7 @@ When automatic column detection is not possible, the report's column names, widt
 2. Click **[Load Preview]**. The report is executed based on the selected report variant or selections. The report output is displayed in the *Load Preview* section.
 3. Press and hold down the left mouse button in the *Load Preview* section.  
 4. Move the mouse pointer to the right while still holding down the left mouse button.
-5. Let go of the mouse button. The report column is highlighted with a green background. An entry is added to the *Columns* section. <br>
+5. Let go of the cursor. The report column is highlighted with a green background. An entry is added to the *Columns* section. <br>
 ![Report-Columns](/img/content/report-column.gif){:class="img-responsive" style="border:1px solid black;"}
 6. To change the column name, offset and width, click in the respective fields in the *Columns* section and enter a new value.
 7. Repeat steps 3 to 6 until all columns are defined.

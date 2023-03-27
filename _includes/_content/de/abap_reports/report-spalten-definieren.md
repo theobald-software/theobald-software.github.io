@@ -38,7 +38,7 @@ Man definiert die Spalten eines Reports wie folgt:
 2. Klicken Sie auf **[Load Preview]**. Der Report wird basierend auf der ausgewählten Variante oder Selektion ausgeführt. Die Ausgabe des Reports wird im Abschnitt *Load Preview* angezeigt.
 3. Drücken Sie zu Beginn der Spalte im *Load Preview* Abschnitt die linke Maustaste und lassen Sie die Taste gedrückt.  
 4. Bewegen Sie den Mauszeiger mit noch immer gedrückten linken Maustaste nach rechts, um die Breite der Spalte zu bestimmen.
-5. Lassen Sie die Maustaste am Ende der Spalte gehen. Die Spalte ist durch einen grünen Hintergrund markiert. Im Abschnitt *Columns* wird ein neuer Eintrag hinzugefügt.  <br>
+5. Lassen Sie den Cursor am Ende der Spalte gehen. Die Spalte ist jetzt grün markiert. Im Abschnitt *Columns* wird ein neuer Eintrag hinzugefügt.  <br>
 ![Report-Columns](/img/content/report-column.gif){:class="img-responsive" style="border:1px solid black;"}
 6. Um Spaltenname, Spaltenbreite und Offset zu bearbeiten, klicken Sie auf die jeweiligen Felder im Abschnitt *Columns* und geben Sie dort neue Werte ein.
 7. Wiederholen Sie die Schritte 3 bis 6, bis alle Spalten definiert sind.
