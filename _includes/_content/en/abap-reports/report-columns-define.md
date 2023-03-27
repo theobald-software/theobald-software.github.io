@@ -28,12 +28,13 @@ This can be required for reports that have varying column widths depending on th
 ### Define Columns manually
 When automatic column detection is not possible, the report's column names, widths and offsets must be set manually.
 
-1. Make sure no columns are defined yet. Go to the *Columns* section and delete all columns by clicking on the ![trashbin](/img/content/icons/trashbin.png) icon.
+1. Make sure no columns are defined yet. If columns are defines, go to the *Columns* section and delete all columns by clicking on the ![trashbin](/img/content/icons/trashbin.png) icon.
 ![Report-delete-columns](/img/content/Report_new_delete_column.png){:class="img-responsive"}
 2. Click **[Load Preview]**. The report is executed based on the selected report variant or selections. The report output is displayed in the *Load Preview* section.
 3. Press and hold down the left mouse button in the *Load Preview* section.  
 4. Move the mouse pointer to the right while still holding down the left mouse button.
-5. Let go of the mouse button. The report column is highlighted with a green background. An entry is added to the *Columns* section. 
+5. Let go of the mouse button. The report column is highlighted with a green background. An entry is added to the *Columns* section. <br>
+![Report-Columns](/img/content/report-column.gif){:class="img-responsive" style="border:1px solid black;"}
 6. To change the column name, offset and width, click in the respective fields in the *Columns* section and enter a new value.
 7. Repeat steps 3 to 6 until all columns are defined.
 
