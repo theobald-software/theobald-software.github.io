@@ -27,6 +27,7 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 - [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
 - [Qlik Datenladeskript generieren](../destinationen/qlik#datenladeskript-generieren)
 - [Azure Data Factory (ADF) Integration using Webservices](https://kb.theobald-software.com/xtract-universal/adf-integration-using-webservices)
+- [SAP Integration with Matillion Data Loader and Xtract Universal](https://kb.theobald-software.com/xtract-universal/creating-a-custom-cennector-in-matillion-data-loader)
 
 ### Integration mittels Kommandozeile
 - [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
