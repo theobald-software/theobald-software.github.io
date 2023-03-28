@@ -28,6 +28,7 @@ All ETL tools offer the following options for running extractions:
 - [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
 - [Generate Qlik data load script](../destinations/qliksense-qlikview#generating-a-data-load-script)
 - [Azure Data Factory (ADF) Integration using Webservices](https://kb.theobald-software.com/xtract-universal/adf-integration-using-webservices)
+- [SAP Integration with Matillion Data Loader and Xtract Universal](https://kb.theobald-software.com/xtract-universal/creating-a-custom-cennector-in-matillion-data-loader)
 
 
 ### Integration via Command Line
