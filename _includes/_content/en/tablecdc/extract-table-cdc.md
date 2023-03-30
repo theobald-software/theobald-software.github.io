@@ -1,8 +1,5 @@
 The following section shows how to use the Table CDC component.
 
-{: .box-note }
-**Note:** The Table CDC component is still in **Preview** mode.
-
 ### Look Up a Table
 
 Look up the SAP table you want to track.

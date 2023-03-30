@@ -1,8 +1,5 @@
 Der folgende Abschnitt beschreibt die Anwendung der Table Komponente. <br>
 
-{: .box-note }
-**Hinweis:** Die Table CDC Komponente befindet sich noch im **Preview** Modus.
-
 ### Eine Tabelle Finden
 
 Wählen die SAP Tabelle, die Sie mit Table CDC aufzeichnen möchten.
