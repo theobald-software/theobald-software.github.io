@@ -38,13 +38,8 @@ When automatic column detection is not possible, the report's column names, widt
 6. To change the column name, offset and width, click in the respective fields in the *Columns* section and enter a new value.
 7. Repeat steps 3 to 6 until all columns are defined.
 
-
 {: .box-note }
 **Note:** Once a column is set and highlighted with a green background, its width and offset can't be changed via the graphics editor. Change it using the *Columns* section.
-
-Example:<br>
-![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
-
 
 #### Row Settings
 **Skip rows from top**<br>

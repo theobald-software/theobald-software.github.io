@@ -43,12 +43,9 @@ Man definiert die Spalten eines Reports wie folgt:
 6. Um Spaltenname, Spaltenbreite und Offset zu bearbeiten, klicken Sie auf die jeweiligen Felder im Abschnitt *Columns* und geben Sie dort neue Werte ein.
 7. Wiederholen Sie die Schritte 3 bis 6, bis alle Spalten definiert sind.
 
-
 {: .box-note }
 **Hinweis:** Sobald eine Spalte definiert ist und grün hinterlegt wurde, können Spaltenbreite und Offset nicht über den Graphik Editor geändert werden. Bearbeiten Sie die Spalten im Abschnitt *Columns*.
 
-Beispiel:
-![Report-manual-columns](/img/content/Report_new_manual.png){:class="img-responsive"}
 
 #### Einstellungen für Zeilen
 **Skip rows from top**<br>
