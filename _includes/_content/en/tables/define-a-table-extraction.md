@@ -26,26 +26,14 @@ All relevant metadata information of the table retrieved from SAP are displayed 
 | 4 | Preview window, result of the conversion    |
 -->
 
-### Filtering Tables
+### Options and Settings
 
-There are multiple ways to filter tables:
+The Table component offers the following options and settings:
 - Filter table columns: Select either all or only individual columns for extraction. By default all columns are selected. Deselect the columns you do not want to extract.
 - Filter table rows: Use a [WHERE clause](./where-clause) or a [HAVING clause](./having-clause) to filter table records.
-
-Click **[Load live preview]** to display a live preview of the first 100 records.
-
-### Processing Table Data
-
-The Table component offers the following processing options:
 - Join multiple tables, see [Table Joins](./table-joins).
-
-Other table data processing include the use of conversion routines and aggregate functions, see [Functions Overview - Fields](./tables-and-fields#fields).
-
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}- Check the [*General Settings*](./general-settings). The *General Settings* include keywords, definition of primary keys, column level encryption and access restrictions.{% endif %}
+- Check the [*Extraction Settings*](./extraction-settings) before running the extraction.
+- If needed, apply conversion routines and aggregate functions to the table data, see [Functions Overview - Fields](./tables-and-fields#fields).
 
 Click **[Load live preview]** to display a live preview of the first 100 records.
-
-### Settings
-
-Extraction Settings
-General Settings
-Avoid Restrictions
