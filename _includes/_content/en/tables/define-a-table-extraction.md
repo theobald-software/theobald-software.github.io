@@ -9,8 +9,8 @@
 Search results appear in the preview window.
 4. Select a table (3) and click **[OK]** (4). <br>
 
-The application now returns to the main window "Extract Single and Joint SAP Tables or Views". <br>
-All relevant metadata information of the table are retrieved from SAP and are displayed in the subsection **Fields**.  
+The application now returns to the main window "Extract Single and Joint SAP Tables or Views".
+The columns of the table are retrieved from SAP and are displayed in the subsection **Fields**.  
 
 ![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
 
@@ -26,7 +26,7 @@ All relevant metadata information of the table retrieved from SAP are displayed 
 | 4 | Preview window, result of the conversion    |
 -->
 
-### Options and Settings
+### Set Up a Table Extraction
 
 The Table component offers the following options and settings:
 - Filter table columns: Select either all or only individual columns for extraction. By default all columns are selected. Deselect the columns you do not want to extract.

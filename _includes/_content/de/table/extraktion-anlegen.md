@@ -1,30 +1,45 @@
 
 ### Eine Tabelle finden
 
-1. Innerhalb des Hauptfensters "Extract Single and Joint SAP Tables or Views" klicken Sie auf **[Add]**. Das Fenster "Table lookup" wird geöffnet.
+1. Im Hauptfenster der Komponente klicken Sie auf **[Add]**, um eine neue Tabelle hinzuzufügen. 
+Das Fenster "Table Lookup" öffnet sich.<br>
 ![Table-Lookup](/img/content/table/table_main-window_add.png){:class="img-responsive" }
-2. Geben Sie in das Feld **Table name** (1) den Namen der zu extrahierenden Tabelle ein.
-![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} <br/>
+2. Im Fenster "Table lookup" geben Sie den Namen der zu extrahierenden Tabelle ein (1). Die Verwendung von Wildcards (*) wird unterstützt.<br>
+![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} 
 3. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (2).
 Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
-4. Wählen Sie die gewünschte Tabelle (3) aus und klicken Sie auf **OK** (4). <br>
+4. Wählen Sie eine Tabelle (3) aus und klicken Sie auf **[OK]** (4). <br>
 
-{: .box-tip }
-**Tipp:** Wildcards wie * werden unterstützt. Beachten Sie, dass die Wildcard nach dem Suchnamen gestellt werden soll.
+Die Anwendung kehrt zum Hauptfenster "Extract Single and Joint SAP Tables or Views" zurück.
+Spalten der Tabelle werden aus SAP abgerufen und im Unterabschnitt **Fields** angezeigt.  
 
-Die Anwendung kehrt zum Hauptfenster "Extract Single and Joint SAP Tables or Views" zurück. <br>
-
-Spalten der aus SAP abgerufenen Tabelle werden im Unterabschnitt **Fields** angezeigt.  
 ![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 
+<!---
 | Nummer | Element / Beschreibung | 
 |:------------|:-----|
 | 1  | Feldselektion, Filterung |  
 | 2  | Filterfelder   |  
 | 3  | Conversion Routine - Im Data Dictionary gespeicherten Konvertierungsroutinen für die jeweiligen Felder der Tabelle. |
 | 4  | Vorschaufenster, Ergebnis der Umwandlung (Conversion)   |   
+-->
 
+### Eine Table Extraktion Einrichten
 
+Die Table-Komponente bietet die folgenden Optionen und Einstellungen:
+
+- Spalten filtern: Wählen Sie entweder alle oder nur einzelne Spalten für die Extraktion aus. 
+Standardmäßg sind alle Spalten ausgewählt. Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.
+- Zeilen filtern: Verwenden Sie eine [WHERE Bedingung](./where-clause) oder eine [HAVING Bedingung](./having-clause), um Tabelleneinträge zu filtern.
+- Mehrere Tabelle zusammenfügen, siehe [Table Joins](./table-joins).
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}- Prüfen Sie die einstellungen in den [allgemeinen Einstellungen](./general-settings). 
+Die allgemeinen Einstellungen beinhalten Schlüßelwörter, die Definition von Primärschlüßel, Verschlüßelung von Spalten und Zugriffsrechte.{% endif %}
+- Prüfen Sie die [Extraktionseinstellungen](./extraction-settings), bevor Sie die Extraktion ausführen.
+- Falls nötig, wenden Sie Konversionsroutinen und / oder Aggregatfunktionen auf die Tabellendaten an, siehe [Functions Overview - Fields](./tabellen_und_felder#fields).
+
+Klicken Sie auf **[Load live preview]**, um eine echtzeit-Vorschau der ersten 100 Datensätze zanzuzeigen.
+
+<!---
 
 ### Tabellen filtern
 
@@ -39,3 +54,5 @@ Um nach einem bestimmten Spaltennamen oder Beschreibung zu suchen, beginnen Sie 
 
 1. Klicken Sie auf **[Load live preview]**, um 100 Datensätze zur Vorschau zu laden.
 2. Klicken Sie auf **[OK]**, um die Extraktion zu bestätigen und im Repository, d.h. auf dem Server, zu speichern.
+
+-->
