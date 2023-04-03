@@ -6,7 +6,7 @@ description: Table Joins
 product: board-connector
 parent: table
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 ---
 

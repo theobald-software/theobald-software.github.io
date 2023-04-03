@@ -1,7 +1,7 @@
 ---
 ref: xfa-table-01
 layout: page
-title: Tabellen und Felder
+title: Funktionsübersicht
 description: Tabellen und Felder
 product: xtract-for-alteryx
 parent: table

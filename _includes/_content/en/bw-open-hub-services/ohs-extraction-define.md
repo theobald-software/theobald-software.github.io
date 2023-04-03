@@ -8,7 +8,7 @@ If you use BW7.x or below, select **Third party tool (legacy)** as your extracti
 3. Enter the name of an OHS destination in the field **OHS Destination** (1). Use wildcards (*) if needed.<br>
 ![Look-Up-Infospoke-Destination](/img/content/Look-Up-Infospoke-Destination.png){:class="img-responsive"}
 4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) and select the destination of your choice from the displayed list (2).
-5. Click **[OK]** to confirm.
+5. Click **[OK]** to confirm. The application now returns to the main window of the component.
 6. If **Process Chain** is empty, enter an SAP process chain assigned to your OHS extraction, see [SAP Documentation: Display/Maintenance of Process Chain Attributes](http://saphelp.ucc.ovgu.de/NW750/EN/4a/2cf30c6ed91c62e10000000a42189c/frameset.htm).
 
 ### Settings

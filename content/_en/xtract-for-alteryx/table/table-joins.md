@@ -6,7 +6,7 @@ description: Table Joins
 product: xtract-for-alteryx
 parent: table
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: en_GB
 ---
 The prerequisite for using the join functionality is the installation of the function module [Z_THEO_READ_TABLE](../sap-customizing) in SAP.

@@ -6,7 +6,7 @@ description: Extraction Settings
 product: board-connector
 parent: table
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: en_GB
 progressstate: 5
 ---

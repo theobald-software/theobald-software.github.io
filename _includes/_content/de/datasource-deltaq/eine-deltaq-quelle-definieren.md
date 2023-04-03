@@ -7,6 +7,8 @@
 Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSource *0MATERIAL_ATTR*.
 4. Bestätigen Sie die Auswahl mit **[OK]** (4).
 
+Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
+
 {: .box-note }
 **Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
 

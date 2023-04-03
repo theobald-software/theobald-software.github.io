@@ -9,10 +9,8 @@
 Search results appear in the preview window.
 4. Select a table (3) and click **[OK]** (4). <br>
 
-The application now returns to the main window "Extract Single and Joint SAP Tables or Views".
-The columns of the table are retrieved from SAP and are displayed in the subsection **Fields**.  
-
-![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
+All relevant metadata information of the table is retrieved from SAP.
+The application now returns to the main window of the component.
 
 <!---
 All relevant metadata information of the table retrieved from SAP are displayed in the subsection **Fields**.  
@@ -28,12 +26,12 @@ All relevant metadata information of the table retrieved from SAP are displayed 
 
 ### Set Up a Table Extraction
 
-The Table component offers the following options and settings:
-- Filter table columns: Select either all or only individual columns for extraction. By default all columns are selected. Deselect the columns you do not want to extract.
-- Filter table rows: Use a [WHERE clause](./where-clause) or a [HAVING clause](./having-clause) to filter table records.
-- Join multiple tables, see [Table Joins](./table-joins).
-{% if page.product == "xtract-universal" or page.product == "board-connector" %}- Check the [*General Settings*](./general-settings). The *General Settings* include keywords, definition of primary keys, column level encryption and access restrictions.{% endif %}
-- Check the [*Extraction Settings*](./extraction-settings) before running the extraction.
-- If needed, apply conversion routines and aggregate functions to the table data, see [Functions Overview - Fields](./tables-and-fields#fields).
+1. Optional: Join multiple SAP tables, see [Table Joins](./table-joins).
+2. Select the columns you want to extract. By default all columns are selected. Deselect the columns you do not want to extract.<br>
+![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
+3. Define a [WHERE clause](./where-clause) or a [HAVING clause](./having-clause) to filter table records. By default all data is extracted.
+4. Click **[Load live preview]** to display a live preview of the first 100 records. 
+<!--- {% if page.product == "xtract-universal" or page.product == "board-connector" %}5. Check the [General Settings](./general-settings). The *General Settings* include keywords, definition of primary keys, column level encryption and access restrictions.{% endif %}-->
+5. Check the {% if page.product == "xtract-is" %}[Settings](./extraction-settings){% else%}[Extraction Settings](./extraction-settings){% endif %} before running the extraction.
+6. Click **[OK]** to save the extraction.
 
-Click **[Load live preview]** to display a live preview of the first 100 records.

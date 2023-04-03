@@ -6,7 +6,7 @@ description: Extraktionseinstellungen
 product: xtract-for-alteryx
 parent: table
 permalink: /:collection/:path
-weight: 5
+weight: 6
 lang: de_DE
 progressstate: 5
 ---

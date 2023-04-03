@@ -8,6 +8,7 @@ You can check the report name of a TCODE using the SAP GUI menu **System > Statu
 3. Click **[Search]** (2) and select the report of your choice from the displayed list (3).
 4. Click **[OK]** (4) to confirm.
 
+The application now returns to the main window of the component.
 
 ### Variants and Selections
 

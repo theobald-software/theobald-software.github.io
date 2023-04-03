@@ -24,6 +24,8 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 
 {% include _content/de/table/supported-objects.md %}
 
+### Einschränkungen
+{% include _content/de/table/einschraenkungen-umgehen.md  %}
 
 ### Table verwenden
 {% include _content/de/xu-specific/define-extraction.md %}

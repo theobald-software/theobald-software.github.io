@@ -6,7 +6,7 @@ description: Table Joins
 product: xtract-for-alteryx
 parent: table
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 progressstate: 5
 ---

@@ -22,25 +22,17 @@ The Table component is also used to join several tables on the SAP side, see [Ta
 To use the Xtract Table component, access to the designated authority objects (RFC) in SAP must be available.
 For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
-
-{: .box-note }
-**Note:** when extracting tables from SAP you may encounter several **restrictions** when using the SAP standard function module (RFC_READ_TABLE).
-To avoid possible restrictions, you can use the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 
-For further information on possible restrictions and on installing the custom function module, see [Custom function module for Table](./sap-customizing#rfc_read_table-restrictions).
-
 {: .box-tip }
-**Tip:** The Table component is generally used for full load. 
-For incremental data extraction from tables and views, you can define a WHERE-clause on specific fields e.g., timestamp.
-The ODP component is a more convenient option for incremental extraction e.g., using [extractors](./odp/odp-extractors).
+**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 {% include _content/en/tables/supported-objects.md %}
 
+### Restrictions
+{% include _content/en/tables/avoid-restrictions.md  %}
 
 ### How to use the Xtract Table component
 {% include _content/en/alteryx-component-intro.md %}
 
-{: .box-tip }
-**Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
 More information on working with the Xtract Table component is provided in the following sections.
 

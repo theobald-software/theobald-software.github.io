@@ -18,21 +18,14 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract IS Table Komponente.<b
 Um die Table Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
-#### Extraktionstypen von Xtract Table
-
-- **Table**: ermöglicht die Datenextraktion in großen Mengen direkt aus SAP-Tabellen und -Views.<br>
-- **Table-Join**: ermöglicht das Zusammenführen von zwei oder mehr SAP-Tabellen auf der SAP-Seite vor der Extraktion.<br>
-
-#### Quell-Objekte unterstützt von Xtract Table
-
-- Transparente Tabellen
-- ABAP CDS views
-- Views
-- Pool Tabellen (kein Joining möglich)
-- Cluster Tabellen (kein Joining möglich)
-
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract IS](./erste-schritte) beschrieben.<br>
+
+{% include _content/de/table/supported-objects.md %}
+
+### Einschränkungen
+{% include _content/de/table/einschraenkungen-umgehen.md  %}
+
 
 ### Xtract Table verwenden
 {% include _content/de/xis-specific/define-extraction.md %}

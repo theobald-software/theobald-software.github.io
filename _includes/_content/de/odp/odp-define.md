@@ -14,11 +14,19 @@ Das Fenster "Operational Data Provider Lookup" wird geöffnet.
 	DataSources/Extraktoren [[SAPI](./odp-extractors)] | - DataSources und Extraktoren |
 4. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (4) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste(5).
 5. Klicken Sie auf **[OK]** (6), um Ihre Eingabe zu bestätigen.
-6. Optional: Erstellen Sie Selektionen, indem Sie Felder aktivieren oder deaktivieren (7). Um [Filter](#selektion-und-filter) hinzuzufügen, klicken Sie auf die **[Edit]** Option neben den Feldern. 
-Wenn es sich bei Ihrer Datenquelle um eine Hierarchy handelt, siehe [Select Hierarchy](./odp-extractors#select-hierarchy) für Filteroptionen.
-7. Klicken Sie auf **[Load live preview]** (8) , um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.
-![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
-8. Bevor Sie eine Extraktion ausführen, prüfen Sie die [Extraktionseinstellungen](./odp-settings).
+
+Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 {: .box-note }
 **Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
+
+### Eine ODP Extraktion Einrichten
+
+1. Optional: Erstellen Sie Selektionen, indem Sie Felder aktivieren oder deaktivieren (7). <br>
+Um [Filter](#selektion-und-filter) hinzuzufügen, klicken Sie auf die **[Edit]** Option neben den Feldern. 
+Wenn es sich bei Ihrer Datenquelle um eine Hierarchy handelt, siehe [Select Hierarchy](./odp-extractors#select-hierarchy) für Filteroptionen.
+2. Optional: Um eine Delta-Extraktion durchzuführen, wählen Sie das entsprechende [Load-Verfahren](#load-verfahren-update-mode) aus.
+3. Klicken Sie auf **[Load live preview]** (8) , um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.
+![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
+4. Bevor Sie eine Extraktion ausführen, prüfen Sie die [Extraktionseinstellungen](./odp-settings).
+

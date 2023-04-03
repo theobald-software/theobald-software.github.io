@@ -10,5 +10,6 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
+
 The following section shows how to use the BAPI component.
 {% include _content/en/bapis-and-function-modules/bapi-extraction-define.md %}

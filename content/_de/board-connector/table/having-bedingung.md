@@ -6,7 +6,7 @@ description: HAVING Bedingung
 product: board-connector
 parent: table
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 ---
 

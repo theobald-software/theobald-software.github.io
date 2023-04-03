@@ -13,11 +13,19 @@ The window "Operational Data Provider Lookup" opens.
 	DataSources/Extractors [[SAPI](./odp-extractors)] | - DataSources and Extractors |
 4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (4) and select the extractor of your choice from the displayed list (5).
 5. Click **[OK]** (6) to confirm your input.
-6. Optional: Create selections by activating or deactivating fields (7). To add [filters](#selections-and-filters) click the **[Edit]** option next to the fields. 
-If your data source is Hierarchy, see [Select Hierarchy](./odp-extractors#hierarchies) for filter options.
-7. Click **[Load live preview]** (8) to display a live preview of the data without executing an extraction.
-![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
-8. Before executing an extraction, check the [extraction settings](./odp-settings).
+
+The application now returns to the main window of the component.
 
 {: .box-note }
 **Note:** To find DataSources, they have to be activated in SAP, see [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
+
+
+### Set Up an ODP Extraction
+1. Optional: Create selections by activating or deactivating fields (7). <br>
+To add [filters](#selections-and-filters) click the **[Edit]** option next to the fields. 
+If your data source is a Hierarchy, see [Select Hierarchy](./odp-extractors#hierarchies) for filter options.
+2. Optional: To create delta extractions, select the corresponding [Update Mode](#update-mode).
+3. Click **[Load live preview]** (8) to display a live preview of the data without executing an extraction.
+![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
+4. Before executing an extraction, check the [extraction settings](./odp-settings).
+

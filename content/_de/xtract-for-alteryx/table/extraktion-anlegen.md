@@ -1,14 +1,13 @@
 ---
-ref: xi-table-01
+ref: xfa-table-define
 layout: page
-title: Eine Tabellen Extraktion definieren
+title: Eine Table Extraktion definieren
 description: Tabellen extrahieren
-product: xtract-is
-parent: xtract-is-table
+product: xtract-for-alteryx
+parent: table
 permalink: /:collection/:path
 weight: 2
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=tabellen-extrahieren
 ---
 Der folgende Abschnitt beschreibt die Anwendung der Table Komponente. 
 {% include _content/de/table/extraktion-anlegen.md  %}

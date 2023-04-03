@@ -10,6 +10,8 @@ Falls Sie BW7.x order niedriger verwenden, wählen Sie **Third party tool (legac
 4. Klicken Sie auf **[Suchen]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) wählen Sie eine OHS Destination Ihrer Wahl aus der angezeigten Liste aus (2).
 5. Bestätigen Sie die Auswahl mit **[OK]**.
 
+Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
+
 ### Einstellungen
 1. Wenn im Hauptfenster der Komponente das Feld **Process Chain** leer ist, geben Sie eine SAP Prozesskette ein, die Ihrer OHS Extraktion zugewiesen ist, siehe [SAP Dokumentation: Display/Maintenance of Process Chain Attributes](http://saphelp.ucc.ovgu.de/NW750/EN/4a/2cf30c6ed91c62e10000000a42189c/frameset.htm).
 Wenn **Process Chain** leer bleibt, schlägt die Extraktion fehl.

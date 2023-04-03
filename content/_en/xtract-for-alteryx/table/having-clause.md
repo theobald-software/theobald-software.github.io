@@ -6,7 +6,7 @@ description: HAVING Clause
 product: xtract-for-alteryx
 parent: table
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 ---
 

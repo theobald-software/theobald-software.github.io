@@ -13,5 +13,3 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-table-extraktion-definier
 Der folgende Abschnitt beschreibt die Anwendung der Table Komponente. 
 {% include _content/de/table/extraktion-anlegen.md  %}
 
-Wenn Sie nur bestimmte Tabellendaten extrahieren möchten, können Sie eine [WHERE-Bedingung](./where-bedingung) verwenden.
-

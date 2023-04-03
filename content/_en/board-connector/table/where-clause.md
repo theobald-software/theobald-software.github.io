@@ -6,7 +6,7 @@ description: WHERE Clause
 product: board-connector
 parent: table
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 ---
 

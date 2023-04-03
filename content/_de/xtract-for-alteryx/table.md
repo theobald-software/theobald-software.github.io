@@ -21,25 +21,20 @@ Die Table Komponente wird auch verwendet, um mehrere Tabellen auf der SAP-Seite 
 Um die Table Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
-
-{: .box-note }
-**Hinweis:** Beim Extrahieren von Tabellen aus SAP können Sie bei der Verwendung des SAP-Standardfunktionsbausteins (RFC_READ_TABLE) auf einige **Einschränkungen** stoßen.
-Um mögliche Einschränkungen umzugehen, können Sie auf Ihrem SAP-System den Theobald Software Z-Funktionsbaustein  *Z_THEO_READ_TABLE* verwenden. 
-Weitere Informationen zu möglichen Einschränkungen und zur Installation des Z-Funktionsbausteins finden Sie unter [SAP Customizing - Z-Funktionsbaustein](./sap-customizing).
-
 {: .box-tip }
-**Tipp:** Die Table-Komponente wird im Allgemeinen für einen Full-Load verwendet. 
-Für die inkrementelle Datenextraktion aus Tabellen und Views kann eine WHERE-Bedingung für bestimmte Felder, z.B. Zeitstempel, definiert werden. 
-Eine einfachere Option für die inkrementelle Datenextraktion bietet die ODP-Komponente, z.B. mit Hilfe von [Extraktoren](./odp/odp-extractors).
+**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
+
 
 {% include _content/de/table/supported-objects.md %}
+
+### Einschränkungen
+{% include _content/de/table/einschraenkungen-umgehen.md  %}
+
 
 ### Xtract Table verwenden
 
 {% include _content/de/alteryx-component-intro.md %}
 
-{: .box-tip }
-**Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
 Weitere Informationen zum Arbeiten mit der Table Komponente finden Sie in den folgenden Unterabschnitten.
 

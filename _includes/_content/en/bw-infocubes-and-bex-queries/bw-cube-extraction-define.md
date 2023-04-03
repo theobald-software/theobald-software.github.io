@@ -20,6 +20,9 @@ The BW Queries can be based on all possible InfoProviders.
 Alternatively click **[Direct Load]** to skip the lookup and load the BW Cube / InfoProvider directly. **[Direct Load]** only works if the full name is entered correctly in the search bar.
 5. Click **[OK]** to confirm your selection.
 
+The application now returns to the main window of the component.
+
+
 {: .box-note }
 **Note:** Click **[Refresh Metadata]** to renew metadata. 
 This is necessary if a data source has been adjusted in SAP, another source system has been connected, or the source system has been updated.

@@ -2,7 +2,6 @@
 Die Komponente kann verwendet werden, um MDX oder BICS Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. 
 Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
 
-
 ### Einen BW Cube oder ein Query suchen
 
 1. Im Hauptfenster der Komponente klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol). Das Fenster “Cube or Query Lookup” öffnet sich.
@@ -19,6 +18,8 @@ Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
 4. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) und wählen Sie ein Objekt aus den Suchergebnissen (3) aus.<br>
 Alternativ klicken Sie auf **[Direct Load]**, um den Suchvorgang zu überspringen und den BW Cube / InfoProvider direkt zu laden. **[Direct Load]** funktioniert nur, wenn der vollständige Name korrekt in die Suchleiste eingegeben wurde.
 5. Klicken Sie auf **[OK]**, um Ihre Auswahl zu bestätigen.
+
+Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 {: .box-note }
 **Hinweis:** Verwenden Sie **[Refresh Metadata]**, um Metadaten zu aktualisieren. Dies ist nötig, wenn eine Datenquelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde.

@@ -10,6 +10,6 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=extract-table-data
 ---
-The following section shows how to use the Table component.
+
+The following section shows how to use the Xtract Table component.
 {% include _content/en/tables/define-a-table-extraction.md  %}
-To extract only certain table data use a [WHERE-condition](./where-clause).

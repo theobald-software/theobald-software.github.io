@@ -1,12 +1,14 @@
 
 ### Einen BAPI\Funktionsbaustein finden
 
-1. Klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) im Hauptfenster der Komponente. Das Fenster "Function Module Lookup" öffnet sich.
+1. Im Hauptfenster der Komponente klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol). Das Fenster "Function Module Lookup" öffnet sich.
 2. Geben Sie im Feld **Function Name** (1) den Namen eines BAPI oder Funktionsbausteins ein. Die Verwendung von Wildcards (*) wird unterstützt. <br>
 Alternativ können Sie nach Function Group suchen.
 ![Look-Up-Function-Module](/img/content/Look-Up-Function-Module.png){:class="img-responsive"}
 3. Klicken Sie auf **[Suche]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (2) und wählen Sie ein Objekt aus der angezeigten Liste aus (3). 
 4. Bestätigen Sie Ihre Eingabe mit **[OK]** (4).
+
+Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 ### Import, Export, Changings und Tables definieren
 

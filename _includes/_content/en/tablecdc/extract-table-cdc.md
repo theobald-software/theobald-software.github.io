@@ -11,8 +11,9 @@ Look up the SAP table you want to track.
 3. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (2).
 4. Select the desired table (3) and click **[OK]** (4).
 
+The application now returns to the main window of the component.
 All relevant metadata information of the table is retrieved from SAP.
-The application returns to the main window of the component.
+
 
 ### Set Up a Table CDC Extraction
 

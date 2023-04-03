@@ -10,8 +10,8 @@ Das Fenster "Table Lookup" öffnet sich.<br>
 Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
 4. Wählen Sie eine Tabelle (3) aus und klicken Sie auf **[OK]** (4). <br>
 
-Die Anwendung kehrt zum Hauptfenster "Extract Single and Joint SAP Tables or Views" zurück.
-Spalten der Tabelle werden aus SAP abgerufen und im Unterabschnitt **Fields** angezeigt.  
+Alle relevanten Metadaten der Tabelle werden aus SAP abgerufen.
+Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 ![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
 
@@ -24,20 +24,16 @@ Spalten der Tabelle werden aus SAP abgerufen und im Unterabschnitt **Fields** an
 | 4  | Vorschaufenster, Ergebnis der Umwandlung (Conversion)   |   
 -->
 
-### Eine Table Extraktion Einrichten
+### Set Up a Table Extraction
 
-Die Table-Komponente bietet die folgenden Optionen und Einstellungen:
-
-- Spalten filtern: Wählen Sie entweder alle oder nur einzelne Spalten für die Extraktion aus. 
-Standardmäßg sind alle Spalten ausgewählt. Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.
-- Zeilen filtern: Verwenden Sie eine [WHERE Bedingung](./where-clause) oder eine [HAVING Bedingung](./having-clause), um Tabelleneinträge zu filtern.
-- Mehrere Tabelle zusammenfügen, siehe [Table Joins](./table-joins).
-{% if page.product == "xtract-universal" or page.product == "board-connector" %}- Prüfen Sie die einstellungen in den [allgemeinen Einstellungen](./general-settings). 
-Die allgemeinen Einstellungen beinhalten Schlüßelwörter, die Definition von Primärschlüßel, Verschlüßelung von Spalten und Zugriffsrechte.{% endif %}
-- Prüfen Sie die [Extraktionseinstellungen](./extraction-settings), bevor Sie die Extraktion ausführen.
-- Falls nötig, wenden Sie Konversionsroutinen und / oder Aggregatfunktionen auf die Tabellendaten an, siehe [Functions Overview - Fields](./tabellen_und_felder#fields).
-
-Klicken Sie auf **[Load live preview]**, um eine echtzeit-Vorschau der ersten 100 Datensätze zanzuzeigen.
+1. Optional: Fügen Sie mehrere SAP Tabelle zusammen, siehe [Table Joins](./table-joins).
+2. Wählen Sie die Spalten aus, die Sie extrahieren möchten. Standardmäßg sind alle Spalten ausgewählt. Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.<br>
+![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
+3. Definieren Sie eine [WHERE Bedingung](./where-clause) oder eine [HAVING Bedingung](./having-clause), um Tabelleneinträge zu filtern. Standardmäßg werden alle Daten extrahiert.
+4. Klicken Sie auf **[Load live preview]**, um eine echtzeit-Vorschau der ersten 100 Datensätze anzuzeigen.
+<!--- {% if page.product == "xtract-universal" or page.product == "board-connector" %}5. Check the [General Settings](./general-settings). The *General Settings* include keywords, definition of primary keys, column level encryption and access restrictions.{% endif %}-->
+5. Prüfen Sie die {% if page.product == "xtract-is" %}[Einstellungen](./extraction-settings){% else%}[Extraktionseinstellungen](./extraction-settings){% endif %}, bevor Sie die Extraktion ausführen.
+6. Klicken Sie auf **[OK]**, um die Extraktion zu speichern.
 
 <!---
 

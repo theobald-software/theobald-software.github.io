@@ -8,6 +8,8 @@ In diesem Fall können Sie den Report-Namen des Transaktion Codes über das SAP 
 3. Klicken Sie auf **[Suchen]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (2) und wählen Sie den Report Ihrer Wahl aus der angezeigten Liste aus (3).
 4. Bestätigen Sie die Auswahl mit **[OK]** (4).
 
+Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
+
 ### Varianten und Selektionen
 
 1. Wählen Sie eine Variante aus der Dropdown-Liste *Variant* (1).

@@ -8,6 +8,8 @@ Alternatively you can search for function groups.
 3. Click the **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (2) and select an item from the displayed list (3).
 4. Click **[OK]** (4) to confirm.
 
+The application now returns to the main window of the component.
+
 ### Define Import, Export, Changings and Tables
 
 In the main BAPI Component window all parameters of the selected BAPI are displayed.
