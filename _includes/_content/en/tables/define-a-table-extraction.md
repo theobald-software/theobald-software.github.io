@@ -26,6 +26,8 @@ All relevant metadata information of the table retrieved from SAP are displayed 
 
 ### Set Up a Table Extraction
 
+Set up the Table component to extract SAP tables:
+
 1. Optional: Join multiple SAP tables, see [Table Joins](./table-joins).
 2. Select the columns you want to extract. By default all columns are selected. Deselect the columns you do not want to extract.<br>
 ![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
@@ -35,3 +37,4 @@ All relevant metadata information of the table retrieved from SAP are displayed 
 5. Check the {% if page.product == "xtract-is" %}[Settings](./extraction-settings){% else%}[Extraction Settings](./extraction-settings){% endif %} before running the extraction.
 6. Click **[OK]** to save the extraction.
 
+The extraction can be run, see [Execute and Automate Extractions](../execute-and-automate-extractions).

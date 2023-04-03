@@ -16,7 +16,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 ### Eine Table CDC Extraktion Einrichten
 
-Richten Sie die Table CDC Komponente ein, um Daten zu extrahieren.
+Richten Sie die Table CDC Komponente ein, um Daten zu extrahieren:
 
 1. Wählen Sie die Spalten aus, die Sie extrahieren möchten.<br> ![Table-CDC-Setup](/img/content/tablecdc/table-cdc-kna1.png){:class="img-responsive"}
 2. Optional: Wenn Sie bei der ersten Ausführung der Extraktion nicht die komplette SAP-Tabelle extrahieren möchten, deaktivieren Sie die Option **[Extract table on first run]**.

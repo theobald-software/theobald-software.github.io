@@ -26,7 +26,9 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 ### Set Up a Table Extraction
 
-1. Optional: Fügen Sie mehrere SAP Tabelle zusammen, siehe [Table Joins](./table-joins).
+Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:
+
+1. Optional: Fügen Sie mehrere SAP Tabellen zusammen, siehe [Table Joins](./table-joins).
 2. Wählen Sie die Spalten aus, die Sie extrahieren möchten. Standardmäßg sind alle Spalten ausgewählt. Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.<br>
 ![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
 3. Definieren Sie eine [WHERE Bedingung](./where-clause) oder eine [HAVING Bedingung](./having-clause), um Tabelleneinträge zu filtern. Standardmäßg werden alle Daten extrahiert.
@@ -34,6 +36,8 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 <!--- {% if page.product == "xtract-universal" or page.product == "board-connector" %}5. Check the [General Settings](./general-settings). The *General Settings* include keywords, definition of primary keys, column level encryption and access restrictions.{% endif %}-->
 5. Prüfen Sie die {% if page.product == "xtract-is" %}[Einstellungen](./extraction-settings){% else%}[Extraktionseinstellungen](./extraction-settings){% endif %}, bevor Sie die Extraktion ausführen.
 6. Klicken Sie auf **[OK]**, um die Extraktion zu speichern.
+
+Die Extraktion kann nun ausgeführt werden, siehe [Extraktionen ausführen und einplanen](../extraktionen-ausfuehren-und-einplanen).
 
 <!---
 

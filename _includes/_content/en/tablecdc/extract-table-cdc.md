@@ -17,7 +17,7 @@ All relevant metadata information of the table is retrieved from SAP.
 
 ### Set Up a Table CDC Extraction
 
-Set up the Table CDC component to extract data.
+Set up the Table CDC component to extract data:
 
 1. Select the columns you want to extract.<br> 
 ![Table-CDC-Setup](/img/content/tablecdc/table-cdc-kna1.png){:class="img-responsive"}
