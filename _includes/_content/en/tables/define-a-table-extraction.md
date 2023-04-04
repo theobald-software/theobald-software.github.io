@@ -12,17 +12,20 @@ Search results appear in the preview window.
 All relevant metadata information of the table is retrieved from SAP.
 The application now returns to the main window of the component.
 
-<!---
-All relevant metadata information of the table retrieved from SAP are displayed in the subsection **Fields**.  
-![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
+{% if page.parent == "getting-started" or page.childidentifier == "getting-started" %}
+### Set Up a Table Extraction
 
-| Number | Element / Description | 
-|:------------|:----- |
-| 1 | Field selection, filtering   |  
-| 2  |   Filter fields  |  
-| 3  |  Conversion Routine - Conversion routines stored in the Data Dictionary for the respective fields of the table. |   
-| 4 | Preview window, result of the conversion    |
--->
+Set up the Table component to extract SAP tables:
+
+1. Select the columns you want to extract. By default all columns are selected. Deselect the columns you do not want to extract.<br>
+![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
+2. Optional: Define a WHERE clause or a HAVING clause to filter table records. By default all data is extracted.
+3. Click **[Load live preview]** to display a live preview of the first 100 records. 
+<!--- {% if page.product == "xtract-universal" or page.product == "board-connector" %}5. Check the [General Settings](./general-settings). The *General Settings* include keywords, definition of primary keys, column level encryption and access restrictions.{% endif %}-->
+4. Click **[OK]** to save the extraction.
+
+The extraction can be run now.
+{% else %}
 
 ### Set Up a Table Extraction
 
@@ -38,3 +41,4 @@ Set up the Table component to extract SAP tables:
 6. Click **[OK]** to save the extraction.
 
 {% if page.product == "xtract-universal" %}The extraction can be run, see [Execute and Automate Extractions](../execute-and-automate-extractions).{% endif %}
+{% endif %}
