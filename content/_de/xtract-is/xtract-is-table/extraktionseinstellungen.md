@@ -1,7 +1,7 @@
 ---
 ref: xi-table-06
 layout: page
-title: Extraktionseinstellungen
+title: Einstellungen
 description: Extraktionseinstellungen
 product: xtract-is
 parent: xtract-is-table
