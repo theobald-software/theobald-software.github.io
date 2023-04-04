@@ -15,7 +15,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 
 {% if page.parent == "erste-schritte" or page.childidentifier == "erste-schritte" %}
-### Set Up a Table Extraction
+### Eine Tabellen-Extraktion Einrichten
 
 Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:
 
@@ -27,7 +27,7 @@ Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:
 
 Die Extraktion kann jetzt ausgeführt werden.
 {% else %}
-### Set Up a Table Extraction
+### Eine Tabellen-Extraktion Einrichten
 
 Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:
 
