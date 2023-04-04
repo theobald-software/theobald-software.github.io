@@ -13,8 +13,6 @@ Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
 Alle relevanten Metadaten der Tabelle werden aus SAP abgerufen.
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
-![Table-Form](/img/content/table/table_fields_filter.png){:class="img-responsive"}
-
 <!---
 | Nummer | Element / Beschreibung | 
 |:------------|:-----|
