@@ -14,7 +14,7 @@ Alle relevanten Metadaten der Tabelle werden aus SAP abgerufen.
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 
-{% if page.parent == "getting-started" or page.childidentifier == "getting-started" %}
+{% if page.parent == "erste-schritte" or page.childidentifier == "erste-schritte" %}
 ### Set Up a Table Extraction
 
 Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:

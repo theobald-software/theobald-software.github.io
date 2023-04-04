@@ -24,7 +24,7 @@ Set up the Table component to extract SAP tables:
 <!--- {% if page.product == "xtract-universal" or page.product == "board-connector" %}5. Check the [General Settings](./general-settings). The *General Settings* include keywords, definition of primary keys, column level encryption and access restrictions.{% endif %}-->
 4. Click **[OK]** to save the extraction.
 
-The extraction can be run now.
+You can now run the extraction.
 {% else %}
 
 ### Set Up a Table Extraction
