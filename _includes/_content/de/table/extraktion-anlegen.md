@@ -35,7 +35,7 @@ Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:
 5. Prüfen Sie die {% if page.product == "xtract-is" %}[Einstellungen](./extraction-settings){% else%}[Extraktionseinstellungen](./extraction-settings){% endif %}, bevor Sie die Extraktion ausführen.
 6. Klicken Sie auf **[OK]**, um die Extraktion zu speichern.
 
-Die Extraktion kann nun ausgeführt werden, siehe [Extraktionen ausführen und einplanen](../extraktionen-ausfuehren-und-einplanen).
+{% if page.product == "xtract-universal" %}Die Extraktion kann nun ausgeführt werden, siehe [Extraktionen ausführen und einplanen](../extraktionen-ausfuehren-und-einplanen). {% endif %}
 
 <!---
 
