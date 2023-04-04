@@ -49,7 +49,7 @@ Activating the tri-state checkbox defines whether the conversion routines stored
 |(2)| conversion routines enabled;<br> only avaiable with function module Z_XTRACT_IS_TABLE_COMPRESSION | no data type safety |
 |(3)  | conversion routines enabled;<br> only avaiable with function module Z_THEO_READ_TABLE | assured data type safety |
 
-![Conversion routine](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
+![Conversion routine](/img/content/table/table_fields_filter3.png){:class="img-responsive"}
 
 Typical examples for conversition routines are the language key (for example, D **(4)** in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). 
 After the conversion, the value is always displayed as it appears in the transaction *SE16N* in the SAP GUI. 
