@@ -111,43 +111,17 @@ PT00H00M43.785S D AsyncHttpServer: Reading...
 ```
 
 
-<!---
+### Logs Directory
 
------
+The list below shows all log files that are created in the logs folder of the yunIO installation directory, e.g., `C:\Program Files\Theobald Software\yunIO\logs`:
 
-```
-PT00H00M00.048S I ServicesWorker: Client [fe80::3e2e:aad4:6600:e801%52]:57836
-PT00H00M00.125S D AsyncHttpServer: Reading...
-PT00H00M00.182S D Runtime: sourceName: source
-PT00H00M00.243S I LicenseLoader: Found demo license.
-PT00H00M00.249S D R3ConnectionOpener: 'Use SAPGUI' expert option is disabled
-PT00H00M00.249S D R3ConnectionOpener: Connecting to SAP application server, using NetWeaver RFC SDK
-PT00H00M00.249S D R3ConnectionOpener: Client '800', language 'en'
-PT00H00M00.249S D R3ConnectionOpener: User schipka, Password has been provided
-PT00H00M00.249S D R3ConnectionOpener: Using plain authentication
-PT00H00M00.567S I R3ConnectionOpener: Connected to SAP host 'ec5.theobald-software.com', instance 00, release 740, codepage 4103, user 'SCHIPKA'
-PT00H00M00.582S D yunIOWorker: Starting extraction...
-PT00H00M00.584S D yunIOWorker: Waiting for data...
-PT00H00M00.673S I TheoReadTableExtractor: Starting extraction - using function module Z_THEO_READ_TABLE
-PT00H00M00.685S I TheoReadTableExtractor: Extracting table KNA1
-PT00H00M00.691S D TheoReadTableExtractor: WHERE clause is empty
-PT00H00M00.691S D TheoReadTableExtractor: HAVING clause is empty
-PT00H00M00.692S D TheoReadTableExtractor: Data will be extracted in dialog work process
-PT00H00M00.693S D TheoReadTableExtractor: Fetching packages (10 rows per package)
-PT00H00M00.806S D TheoReadTableExtractor: Z_THEO_READ_TABLE version 1.x
-PT00H00M00.806S D TheoReadTableExtractor: Received package #1 (10 rows)
-PT00H00M00.812S D yunIOWorker: Data available.
-PT00H00M00.843S D yunIOWorker: Registering Stream.
-PT00H00M00.904S D TheoReadTableExtractor: Received package #2 (10 rows)
-PT00H00M00.951S D TheoReadTableExtractor: Received package #3 (10 rows)
-PT00H00M01.005S D TheoReadTableExtractor: Received package #4 (10 rows)
-...
-PT00H00M43.776S I TheoReadTableExtractor: Extraction finished - received 9,123 rows in total
-PT00H00M43.777S D ExecutionCore: Extraction finished, firing callback.
-PT00H00M43.781S D yunIOWorker: Target environment setup successful.
-PT00H00M43.781S I yunIOWorker: Cleaning up...
-PT00H00M43.785S D AsyncHttpServer: Closing connection: False
-PT00H00M43.785S D AsyncHttpServer: Reading...
-```
-
--->
+|Folder | Subfolder| Description |
+|:----|:---|:---|
+|diagnostic_runs |- | Contains debug information about transaction services. This folder is only created when diagnostics mode is enabled in the settings of a transaction service. |
+|extractions |- | Contains logs (.json and .log files) for every service run. The .json file contains the duration and result status of the run and the .log file contains the details of the run. |
+|servers| | Contains... |
+| &#x21AA; | azurerelay| Contains ... This folder is only created when ... in the server settings.|
+| &#x21AA;| designer| Contains ...|
+| &#x21AA;| services| Contains ...|
+| &#x21AA;| websockets| Contains...|
+|ServiceLog.txt |- | Logs of the yunIO Windows service.|
