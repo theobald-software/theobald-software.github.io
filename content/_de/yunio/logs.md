@@ -120,7 +120,7 @@ Die folgende Liste enthält alle Logs, die im `logs`-Ordner des yunIO installati
 
 |Ordner | Unterordner| Beschreibung |
 |:----|:---|:---|
-|diagnostic_runs |- | Enthält Debugging-Informationen über Services vom Typ Transaktion. Dieser Ordner wird nur erstellt, wenn in den Einstellungen eines Services vom Typ Transaktion der Diagnostik-Modus aktiv ist. |
+|diagnostic_runs |- | Enthält Debugging-Informationen über Services vom Typ Transaktion. Dieser Ordner wird nur erstellt, wenn in den Einstellungen eines Transaktions-Services der Diagnostik-Modus aktiv ist. |
 |extractions |- | Enthält Logs für jeden ausgeführten Service (.json und .log Dateien). Die .json-Datei enthält die Dauer und das Resultat des Durchlaufs und die .log-Datei enthält die Details des Durchlaufs. |
 |servers| | Enthält Server-Logs. Die Unterordner `azurerelay`, `designer`, `services` und `websockets` repräsentieren jeweils für einen Web-Server. Jeder Server hat Listener und Worker-Logs. Der Listener lauscht auf den konfigurierten Port des Servers und nimmt Netzwerkverbindungen an. Jede Verbindung startet einen Worker, der die Anfragen bearbeitet.|
 | | azurerelay| Enthält Listener-Logs für Azure Relay Verbindungen. Dieser Ordner wird nur erstellt, wenn eine Azure Hybrid-Verbindung in den [Server-Einstellungen](./server-settings) hinterlegt ist.|
