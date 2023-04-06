@@ -37,8 +37,7 @@ Ein Log-Eintrag hat folgendes Format: `Zeit | Typ | Quelle | Nachricht`. Beispie
 |--------|--------|--------|---|
 | PT00H00M43.777S | D | ExecutionCore: | Extraction finished, firing callback.  | 
 
-#### Zeit
-
+**Zeit**<br>
 Der Zeitstempel in den Logs ist angegeben als pazifische Zeit (PT) in Stunden (H), Minuten (M) und Sekunden (S), z.B. `PT00H00M43.777S`.
 
 <!---
@@ -46,14 +45,14 @@ Der Zeitstempel in den Logs ist angegeben als pazifische Zeit (<span style="colo
 Beispiel: <span style="color:orange">PT</span><span style="color:green">00H</span><span style="color:blue">00M</span><span style="color:red">43.777S</span>
 -->
 
-#### Typ
+**Typ**<br>
 Jeder Logeintrag ist einem der folgenden Typen zugewiesen:
 - **E - Errors:** Fehlermeldungen, die während des Extraktionsprozesses ausgegeben werden.<br>
 - **I - Information:** Statusmeldungen, über Vorgänge, die nicht zu einem Fehler führen.<br>
 - **W - Warnings:**  Informationen über Probleme, die nicht zu einem Extraktionsfehler führen. Zum Beispiel Authentifizierungsfehler.<br>
 - **D - Debug Details:** detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
 
-### Struktur eines Extraktionslogs
+#### Struktur eines Service Logs
 
 Das folgende Beispiel zeigt, wie Logs strukturiert sind, die durch das Ausführen eines Services entstehen.<br>
 In dem Beispiel wird ein Service ausgeführt, der eine SAP Tabelle extrahiert. 
@@ -114,3 +113,18 @@ PT00H00M43.781S I yunIOWorker: Cleaning up...
 PT00H00M43.785S D AsyncHttpServer: Closing connection: False
 PT00H00M43.785S D AsyncHttpServer: Reading...
 ```
+
+### Log-Verzeichnis
+
+Die folgende Liste enthält alle Logs, die im `logs`-Ordner des yunIO installationsverzeichnisses angelegt werden, z.B. in `C:\Program Files\Theobald Software\yunIO\logs`:
+
+|Ordner | Unterordner| Beschreibung |
+|:----|:---|:---|
+|diagnostic_runs |- | Enthält Debugging-Informationen über Services vom Typ Transaktion. Dieser Ordner wird nur erstellt, wenn in den Einstellungen eines Services vom Typ Transaktion der Diagnostik-Modus aktiv ist. |
+|extractions |- | Enthält Logs für jeden ausgeführten Service (.json und .log Dateien). Die .json-Datei enthält die Dauer und das Resultat des Durchlaufs und die .log-Datei enthält die Details des Durchlaufs. |
+|servers| | Enthält Server-Logs. Die Unterordner `azurerelay`, `designer`, `services` und `websockets` repräsentieren jeweils für einen Web-Server. Jeder Server hat Listener und Worker-Logs. Der Listener lauscht auf den konfigurierten Port des Servers und nimmt Netzwerkverbindungen an. Jede Verbindung startet einen Worker, der die Anfragen bearbeitet.|
+| | azurerelay| Enthält Listener-Logs für Azure Relay Verbindungen. Dieser Ordner wird nur erstellt, wenn eine Azure Hybrid-Verbindung in den [Server-Einstellungen](./server-settings) hinterlegt ist.|
+| | designer| Enthält Listener-Logs und Transaktions-Logs. Die Transaktions-Logs werden erstellt, wenn Sie im Designer Service vom Typ Transaktion erstellen.|
+| | services| Enthält Listener-Logs, Worker-Logs und Transaktions-Logs. Die Transaktions-Logs werden erstellt, wenn ein Service vom Typ Transaktion ausgeführt wird.|
+| | websockets| Enthält Listener-Logs und Worker-Logs des Websocket-Servers, der die Daten für den yunIO Designer liefert. |
+|ServiceLog.txt |- | Logs des yunIO Windows-Dienstes.|
