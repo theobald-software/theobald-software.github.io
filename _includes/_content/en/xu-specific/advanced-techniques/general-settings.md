@@ -50,16 +50,16 @@ The example above shows the SAP object *MAKT* with its primary key inherited fro
 **Note:** A defined primary key field in a table is a prerequisite for merging data. 
 
 **Generate Surrogate Key Column:**<br>
-If this option is active, an additional column THEO_KEY containing surrogate keys is added to the extracted data.
-The THEO_KEY column contains surrgate keys that can be used as row IDs when joining extracted tables outside of Xtract Universal. 
-The surrogate keys are hash values of type *Signed Int*, e.g., #-3008591679982390000.
-They are generated from the selected primary key and the name of the SAP source that is assigned to the extraction.
+If this option is active, an additional column THEO_SURR_KEY is added to the extracted data.
+The THEO_SURR_KEY column contains surrogate keys that can be used as row IDs. 
+The surrogate keys are hash values of type signed 8 byte integer, e.g., #-3008591679982390000.
+They are generated from the selected primary key columns and the name of the SAP source that is assigned to the extraction.
 
-
+<!---
 {:.box-warning}
-**Warning! Dublicates in large tables!**
-When extracting more than 200 million rows, there is a chance of dublicates.
-
+**Warning! Duplicates in large tables!**
+When extracting more than 200 million rows, there is a chance of duplicates.
+-->
 
 ### Encryption
 

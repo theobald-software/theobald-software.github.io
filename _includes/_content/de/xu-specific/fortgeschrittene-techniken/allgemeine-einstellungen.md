@@ -55,15 +55,16 @@ In dem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, und *SPRAS*.
 *Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
 
 **Generate Surrogate Key Column:**<br>
-Wenn diese Option aktive ist, wird den extrahierten Daten eine zusätzliche Spalte THEO_KEY hinzugefügt.
-Die Spalte enthält Ersatzschlüssel, die als IDs für Zeilen verwendet werden können, um Tabellen z.B. ausserhalb von Xtract Universal zusammenzuführen. 
-Die Ersatzschlüssel sind Hash-Werte des Typs *Signed Int*, z.B. #-3008591679982390000.
-Sie werden auf Basis der gewählten Primärschlüssel und des Namens der verwendeten SAP-Quelle generiert.
+Wenn diese Option aktiv ist, wird eine Spalte THEO_SURR_KEY zu den extrahierten Daten hinzugefügt.
+Die Spalte THEO_SURR_KEY enthält Ersatzschlüssel, die als IDs für Zeilen verwendet werden können. 
+Die Ersatzschlüssel sind Hash-Werte des Typs *Signed 8 Byte Integer*, z.B. #-3008591679982390000.
+Sie werden auf Basis der gewählten Primärschlüssel-Spalten und des Namens der verwendeten SAP-Quelle generiert.
 
-
+<!---
 {:.box-warning}
-**Warnung! Dublikates bei großen Datenmengen!**
-Bei der Extraktion von mehr als 200 Millionen Zeilen, können Dublikate vorkommen.
+**Warnung! Duplikate bei großen Datenmengen!**
+Bei der Extraktion von mehr als 200 Millionen Zeilen, können Duplikate vorkommen.
+-->
 
 ### Encryption
 Sie können Daten sowohl verschlüsselt als auch unverschlüsselt speichern. 
