@@ -48,11 +48,23 @@ Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extr
 Tabellenextraktionen erben die Primärschlüssel von SAP. Andere Objekte wie z.B. SAP Query, BW Cube etc. erfordern eine manuelle Einstellung von Primärschlüsseln. 
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
 
-Das abgebildete Beispiel zeigt das SAP-Objekt *KNA1* und *KNVV* mit deren Primärschlüssel. Der Primärschlüssel wurde SAP geerbt wurde und wird in den allgemeinen Einstellungen des Designers angezeigt.
-In diesem Beispiel besteht der Primärschlüssel aus *KUNNR*, *VKORG*, *VTWEG* und *SPART*. Der gezeigte Primärschlüssel wird auch in der Destination übernommen. 
+Das abgebildete Beispiel zeigt das SAP-Objekt *MAKT* mit seinem Primärschlüssel. Der Primärschlüssel ist von SAP geerbt und wird in den allgemeinen Einstellungen des Designers angezeigt.
+In dem Beispiel besteht der Primärschlüssel aus *MANDT*, *MATNR*, und *SPRAS*. Der gezeigte Primärschlüssel wird auch in der Destination übernommen. 
 
 {:.box-note}
 *Hinweis:** ein definiertes Primärschlüsselfeld in einer Tabelle ist die Voraussetzung für das Zusammenführen (Merge) von Daten. 
+
+**Generate Surrogate Key Column:**<br>
+Wenn diese Option aktiv ist, wird eine Spalte THEO_SURR_KEY zu den extrahierten Daten hinzugefügt.
+Die Spalte THEO_SURR_KEY enthält Ersatzschlüssel, die als IDs für Zeilen verwendet werden können. 
+Die Ersatzschlüssel sind Hash-Werte des Typs *Signed 8 Byte Integer*, z.B. #-3008591679982390000.
+Sie werden auf Basis der gewählten Primärschlüssel-Spalten und des Namens der verwendeten SAP-Quelle generiert.
+
+<!---
+{:.box-warning}
+**Warnung! Duplikate bei großen Datenmengen!**
+Bei der Extraktion von mehr als 200 Millionen Zeilen, können Duplikate vorkommen.
+-->
 
 ### Encryption
 Sie können Daten sowohl verschlüsselt als auch unverschlüsselt speichern. 
