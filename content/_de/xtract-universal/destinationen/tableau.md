@@ -50,12 +50,12 @@ Option zum Entfernen der lokalen Datei nach einem erfolgreichen Upload.
 **Host** <br>
 Die IP-Adresse oder der Domainname des Servers, beginnend mit `http://` oder `https://`.
 
-**Username** <br>
-Ihr Benutzername für Tableau Server/Cloud eingeben.<br>
-Für die Extraktion von Daten nach Tableau Server ist die Benutzerrolle "Server Administrator" als "Site Role" erforderlich.<br>
+**PAT name**<br>
+Geben Sie den Namen Ihres [Individuellen Zugangstokens (PAT)](https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm#make-a-sign-in-request-with-a-personal-access-token) an.<br>
+Um Daten nach Tableau Server zu schreiben, ist die Benutzerrolle "Server Administrator" als "Site Role" erforderlich.<br>
 
-**Password** <br>
-Ihr Passwort für Tableau Server/Cloud eingeben.
+**PAT secret**<br>
+Geben Sie ein gültiges Token-Geheimnis für Ihren Token-Namen ein.
 
 **Site (for Tableau Cloud)** <br>
 Die ID der Website für die Veröffentlichung Ihrer Datenquelle eingeben. 
