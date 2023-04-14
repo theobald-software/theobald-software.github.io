@@ -19,10 +19,11 @@ Die Komponente BW Hierarchy ermöglicht die Extraktion von Hierarchien aus einem
 Um die BW Hierarchy Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: BW Hierarchies](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-hierarchies).
 
-
-
+{% include _content/de/hierarchies-recommendation.md %} 
+ 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
+
 
 ### BW Hierarchy verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
