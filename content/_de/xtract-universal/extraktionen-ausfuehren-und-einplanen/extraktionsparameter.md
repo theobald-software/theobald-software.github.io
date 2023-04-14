@@ -51,6 +51,14 @@ updateType | F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Re
 decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlteil | verfügbar in CSV Destinationen
 columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV Destinationen
 
+#### Beispiel
+1. Wählen Sie eine Checkbox aus, um einen Parameter zu überschreiben.
+2. Tragen Sie den neuen Wert ein und bestätigen Sie ihn über die Eingabetaste.
+- Extraktions-URL vor der Parameteränderung<br>
+`http://localhost:8065?name=Plants`
+- Extraktions-URL nach der Parameteränderung in **destination**:<br>
+`http://localhost:8085/?name=Plants&destination=http-csv`  
+
 ### Source
 Die Verbindungseinstellungen zu einer SAP Quelle können dynamisch über die URL oder die xu.exe geändert werden. 
 

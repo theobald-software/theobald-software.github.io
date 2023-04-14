@@ -55,6 +55,14 @@ updateType | F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Re
 decimalSeparator | to set a symbol between integer and fractional part | available in CSV destinations
 columnSeparator |  to set a symbol which indicates the start of a new column | available in CSV destinations
 
+#### Example
+1. Select the checkbox of the parameter you want to override.
+2. Enter the value and confirm by pressing enter. 
+- Extraction URL before changing the parameter:<br>
+`http://localhost:8065?name=Plants`
+- Extraction URL after editing the parameter **destination**:<br>
+`http://localhost:8065/?name=Plants&destination=http-csv` 
+
 
 ### Source
 
