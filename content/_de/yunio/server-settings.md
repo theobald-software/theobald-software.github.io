@@ -36,7 +36,7 @@ Geben Sie im Feld **Custom Hostname** einen benutzerdefinierten Hostnamen ein un
 
 Das *Transport Layer Security (TLS)*-Protokoll ermöglicht eine verschlüsselte Datenübertragung.
 Wenn TLS aktiviert ist, wird auf den jeweiligen Dienst über eine HTTPS-Verbindung zugegriffen.
-Dafür muss ein X.509 Zertifikat installiert sein.
+Dafür muss ein X.509 Zertifikat installiert sein, siehe [Knowledge Base: Installing an X.509 Certificate](https://kb.theobald-software.com/yunio/x509-certificate). <br>
 Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol).
 
 #### Pick Certificate
