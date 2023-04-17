@@ -33,7 +33,7 @@ The information described in the following section is a prerequisite for all sub
 #### Related Links
 - [BAPI](./bapi)
 - [BW Cube](./bw-cube)
-- [BW Hierarchy](./bwhierarchy)
+- [BW Hierarchy](./hierarchy)
 - [ODP](./odp)
 - [Table](./table) - further details on the Table component
 
