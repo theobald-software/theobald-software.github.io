@@ -30,7 +30,7 @@ The following extraction types are available within Xtract for Alteryx:
 
 - [**Xtract BAPI**](./bapi) - calls BAPIs and RFC function modules and can be used for *read* and *write* access to SAP.
 - [**Xtract Cube**](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders.
-- [**Xtract Hierarchy**](./bwhierarchy) - extracts hierarchies from SAP BW systems.
+- [**Xtract Hierarchy**](./hierarchy) - extracts hierarchies from SAP BW systems.
 - [**Xtract ODP**](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework.
 - [**Xtract Report**](./reports) - extracts data from most standard and custom ABAP reports and SAP transactions.
 - [**Xtract Table**](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side.
