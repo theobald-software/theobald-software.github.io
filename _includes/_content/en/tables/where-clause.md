@@ -54,7 +54,7 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 **Tip:** To check the syntax of the WHERE clause, click **[Load live preview]**. This way there is no need to run an extraction to see, if the syntax is correct.
 
 {: .box-tip}
-**Tip:** To increase extracting performance, make sure to place the idexed fields as the first selection filter operation in the WHERE clause.
+**Tip:** To increase extracting performance, make sure to place the indexed fields as the first selection filter operation in the WHERE clause.
 
 
 #### Syntax Rules
