@@ -10,6 +10,24 @@ weight: 1
 lang: de_DE
 progressstate: 5
 ---
+
+### Unterstützte Visual Studio Versionen  	
+
+- Visual Studio 2015 - 2019
+
+Verwenden Sie Visual Studio, um SSIS Pakete zu erstellen, die auf älteren und/oder neueren SQL Server Versionen laufen.
+
+
+{: .box-note }
+**Hinweis:** Um SSIS-Pakete zu erstellen, werden SQL Server Data Tools (SSDT) benötigt. 
+Verwenden Sie das SSDT, das Ihrer SQL Server Version entspricht. 
+Für mehr Informationen, siehe [Microsoft Dokumentation: Herunterladen von SQL Server Data Tools (SSDT) für Visual Studio](https://docs.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
+
+
+### Unterstützte SQL Server Versionen  	
+
+- SQL Server 2014 - 2022
+
 ### Unterstützte Versionen der SQL Server Integration Services (SSIS)
  	
 - SQL Server Integration Services (SSIS) 2014 SP3 (bis 09.07.2024)
@@ -17,9 +35,7 @@ progressstate: 5
 - SQL Server Integration Services (SSIS) 2017 (bis 12.10.2027)
 - SQL Server Integration Services (SSIS) 2019 (bis 08.01.2030)
 
-Für die Entwicklung: SQL Server Data Tools werden benötigt, um SSIS-Pakete zu erstellen. Verwenden Sie das entsprechende SSDT für den von Ihnen eingesetzten SQL Server. Weitere Details finden Sie in der [Microsoft Hilfe](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
-
-Die Version der SQL Server-Datenbank, die in SSIS zum Lesen oder Schreiben von Daten verwendet wird, kann sich von der Version der SQL Server Integration Services (SSIS) unterscheiden, d.h. man kann z.B. SSIS Version 2019 verwenden, um Daten in SQL Server-Datenbank Version 2022 zu schreiben.
+Die Version der SQL Server-Datenbank, die zum Lesen oder Schreiben von Daten verwendet wird, kann von der SQL Server Integration Services (SSIS) Version abweichen, d.h. Sie können SSIS Version 2019 verwenden, um Daten in die SQL Server-Datenbank Version 2022 zu schreiben.
 
 {% include _content/de/einfuehrung/sap-systeme.md %} 
 {% include _content/de/einfuehrung/sap-installation.md %} 
