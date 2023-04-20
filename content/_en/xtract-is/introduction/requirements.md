@@ -14,9 +14,9 @@ progressstate: 5
 
 ### Supported Visual Studio Versions  	
 
-- Visual Studio 2015 - 2019
-
-Use Visual Studio to design/execute/deploy SSIS packages that target older and/or newer SQL Server versions.
+- Visual Studio 2015
+- Visual Studio 2017
+- Visual Studio 2019
 
 {: .box-note }
 **Note:** To create SSIS packages in Visual Studio, SQL Server Data Tools (SSDT) are required. 
@@ -25,7 +25,11 @@ For more information, see [Microsoft Documentation: Download SQL Server Data Too
 
 ### Supported SQL Server Versions  	
 
-- SQL Server 2014 - 2022
+- SQL Server 2014 
+- SQL Server 2016
+- SQL Server 2017
+- SQL Server 2019
+- SQL Server 2022
 
 ### Supported SQL Server Integration Services (SSIS) 	
 
