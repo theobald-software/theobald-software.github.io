@@ -11,7 +11,7 @@ The BW Queries can be based on all possible InfoProviders.
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"} 
 
    |------------------------------------|---------------------------------------------------------------------------------------------|
-   | *Extractor*   | defines if data is extracted using the OLAP BAPI Interface (MDX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection). BICS is still in beta phase. This means that breaking changes can be released any time. Extractions might not be backward-compatible, i.e. it can be necessary to rebuild all BICS extractions from scratch after a software update.  |
+   | *Extractor*   | defines if data is extracted using the OLAP BAPI Interface (MDX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection). BICS is still in beta phase. This means that breaking changes can be released any time. Extractions might not be backward-compatible, i.e. it can be necessary to rebuild all BICS extractions from scratch after a software update. Therefore we recommend to not use BICS in the production environment. |
    | *Datasource Type* | defines if the look up searches for a BEx Query or an InfoProvider.  | 
    | *Extraction Settings*  | **Only Structure**: Only available for the MDX Extractor. Use **Only Structure** if your BWCube extraction was created in an older software version, see [Extraction Settings](./bw-cube-extraction-settings#extraction-settings) for more information. <br>**Use BICS fast mode**: Only available for the BICS Extractor, see [Extraction Settings: Experimental](./bw-cube-extraction-settings#experimental) for more information.  | 
 
@@ -44,7 +44,9 @@ This is necessary if a data source has been adjusted in SAP, another source syst
 
 {: .box-note }
 **Note:** The BICS component is still in beta phase. 
-This means that breaking changes can be released any time. Extractions might not be backward-compatible, i.e. it can be necessary to rebuild all BICS extractions from scratch after a software update.
+This means that breaking changes can be released any time. 
+Extractions might not be backward-compatible, i.e. it can be necessary to rebuild all BICS extractions from scratch after a software update.
+Therefore we recommend to not use BICS in the production environment.
 
 ### Selecting Measure (Key Figures), Dimensions and Properties
 When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. 

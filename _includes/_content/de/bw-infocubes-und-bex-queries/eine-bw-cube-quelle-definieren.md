@@ -10,7 +10,7 @@ Die BW Queries können auf allen möglichen InfoProvidern basieren. <br>
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"} 
 
    |------------------------------------|---------------------------------------------------------------------------------------------|
-   | *Extractor*   | definiert, ob Daten mit dem OLAP BAPI Interface (MADX) oder dem nativen BICS Interface extrahiert werden. Der BICS-Modus kann nur in Kombination mit einem [NetWeaver RFC-Protokoll](../einfuehrung/sap-verbindungen-anlegen) verwendet werden. BICS befindet sich noch in der Beta-Phase. Das heißt, dass Breaking Changes veröffentlich werden können, die nicht rückwärtskompatibel sind. Extraktionen, die den BICS-Extraktor verwenden, müssen nach einem Softwareupdate ggf. komplett neu erstellt werden. |
+   | *Extractor*   | definiert, ob Daten mit dem OLAP BAPI Interface (MADX) oder dem nativen BICS Interface extrahiert werden. Der BICS-Modus kann nur in Kombination mit einem [NetWeaver RFC-Protokoll](../einfuehrung/sap-verbindungen-anlegen) verwendet werden. BICS befindet sich noch in der Beta-Phase. Das heißt, dass Breaking Changes veröffentlich werden können, die nicht rückwärtskompatibel sind. Extraktionen, die BICS verwenden, müssen nach einem Softwareupdate ggf. komplett neu erstellt werden. Wir empfehlen, BICS nicht in der Produktivumgebung zu verwenden.|
    | *Datasource Type* | definiert, ob nach einer BEx-Query oder einem InfoProvider gesucht wird.  | 
    | *Extraction Settings*  | **Only Structure**: nur verfügbar für den MDX Extraktor. Verwenden Sie **Only Structure**, wenn Ihre BWCube Extraktion in einer veralteten Software-Version erstellt wurde, siehe [Extraktionseinstellungen](./infocube-extraktionseinstellungen#extraction-settings) für mehr Informationen. <br>**Use BICS fast mode**: nur verfügbar für den BICS Extraktor, siehe [Extraktionseinstellungen: Experimental](infocube-extraktionseinstellungen#experimental).  | 
 
@@ -41,8 +41,9 @@ Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Q
 
 {: .box-note }
 **Hinweis:** Die BICS-Komponente befindet sich noch in der Beta-Phase. 
-Das heißt, dass Breaking Changes veröffentlich werden können, die nicht rückwärtskompatibel sind. Extraktionen, die den BICS-Extraktor verwenden, müssen nach einem Softwareupdate ggf. komplett neu erstellt werden.
-
+Das heißt, dass Breaking Changes veröffentlich werden können, die nicht rückwärtskompatibel sind. 
+Extraktionen, die BICS verwenden, müssen nach einem Softwareupdate ggf. komplett neu erstellt werden.
+Wir empfehlen, BICS nicht in der Produktivumgebung zu verwenden. 
 
 ### Auswählen von Messwerten ( Key Figures), Abmessungen und Eigenschaften
 Wenn ein Objekt ausgewählt ist, wird im Hauptfenster der Komponente auf der linken Seite eine Baumstruktur angezeigt. Die Baumstruktur stellt die Metadaten der Query (oder des InfoProviders) dar. <br>
