@@ -55,7 +55,7 @@ The following software applications must be installed for integration into KNIME
 1. Create an extraction in Xtract Universal. Select KNIME as the destination for the extraction (1).
 ![XU Extraction](/img/content/knime/xu_extraction.png){:class="img-responsive"}
 2. Start the *KNIME Analytics Platform*. 
-3. Install the extension [SAP Reader (Theobald Software)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory).
+3. Install the extension [SAP Reader (Theobald Software)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.v2.SAPTheobaldReader2NodeFactory).
 ![Install KNIME Extension](/img/content/knime/install_sap_reader.png){:class="img-responsive"}
 4. Drag & Drop the Node / Source 'SAP Reader (Theobald Software)' (2) onto the KNIME Canvas.
 ![KNIME Extension](/img/content/knime/sap_reader_knime_extension.png){:class="img-responsive"}
