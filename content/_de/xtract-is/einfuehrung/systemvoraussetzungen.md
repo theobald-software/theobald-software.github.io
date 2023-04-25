@@ -20,7 +20,7 @@ progressstate: 5
 {: .box-note }
 **Hinweis:** Um SSIS-Pakete zu erstellen, werden SQL Server Data Tools (SSDT) benötigt. 
 Verwenden Sie das SSDT, das Ihrer SQL Server Version entspricht. 
-Für mehr Informationen, siehe [Microsoft Dokumentation: Herunterladen von SQL Server Data Tools (SSDT) für Visual Studio](https://docs.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
+Für mehr Informationen siehe [Microsoft Dokumentation: Herunterladen von SQL Server Data Tools (SSDT) für Visual Studio](https://docs.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
 
 
 ### Unterstützte SQL Server Versionen  	
