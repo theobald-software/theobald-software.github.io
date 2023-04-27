@@ -20,7 +20,7 @@ Mit der Installation von Xtract IS wird automatisch eine Demo-Lizenz installiert
 Die Lizenz ist an Ihre Entität und einen bestimmten Servernamen gebunden.
 
 ### Wartung
-Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/xtract-is/preise-und-bestellungen/) von Theobald Software und auf [My Theobald Software - Portal für Kunden und Partner](https://my.theobald-software.com/). Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
+Kontaktieren Sie das [Sales-Team](mailto:sales@theobald-software.com) für Informationen über verfügbare Wartungsoptionen.<br>
 Bei technischen Problemen wenden Sie sich an das [Support-Team](https://support.theobald-software.com).
 
 ### Installation der Xtract IS-Lizenz - XtractISLicense.json

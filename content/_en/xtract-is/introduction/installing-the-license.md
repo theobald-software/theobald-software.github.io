@@ -42,9 +42,8 @@ A demo license is automatically installed with the installation of Xtract IS. <b
 A regular license is provided, after purchasing the product. The product license is bound to your company and a specific server name. 
 
 ### Maintenance
-General information on maintenance pricing is available on the [official website](https://theobald-software.com/en/xtract-is/xtract-is-pricing-order) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
-In case of technical difficulties, contact the [support team](https://support.theobald-software.com).
-
+Contact the [sales department](mailto:sales@theobald-software.com) for information about available maintenance options.<br>
+In case of technical difficulties, contact the support team: [https://support.theobald-software.com](https://support.theobald-software.com).
 
 ### Installing the Xtract IS license - XtractISLicense.json
 1. For installing the regular license, find and double-click the Xtract IS License Manager executable file in the installation directory of Xtract IS:<br>

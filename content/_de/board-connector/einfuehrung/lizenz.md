@@ -42,8 +42,8 @@ Für weitere Informationen zum Thema Migration, siehe [Migration auf eine andere
 
 
 ### Wartung
-Allgemeine Informationen zu Wartungspreisen finden Sie auf der [offiziellen Website](https://theobald-software.com/board-connector/board-connector-preise-und-bestellungen/) von Theobald Software. Kontaktieren Sie die [Sales Abteilung](mailto:sales@theobald-software.com) für weitere Informationen über verfügbare Wartungsoptionen.<br>
-Bei technischen Problemen wenden Sie sich  per E-Mail an das Support-Team: [https://support.theobald-software.com](https://support.theobald-software.com).
+Kontaktieren Sie das [Sales-Team](mailto:sales@theobald-software.com) für Informationen über verfügbare Wartungsoptionen.<br>
+Bei technischen Problemen wenden Sie sich per E-Mail an das Support-Team: [https://support.theobald-software.com](https://support.theobald-software.com).
 
 
 ****

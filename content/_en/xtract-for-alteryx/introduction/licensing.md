@@ -35,9 +35,8 @@ The *About* tab of the info window contains useful links to the customer portal,
 ![Abot](/img/content/about-xfa.png){:class="img-responsive"}
 
 ### Maintenance
-General information on maintenance pricing is available on the [official website](https://www.theobald-software.com/en/xtract-for-alteryx/xtract-for-alteryx-pricing-order/) of Theobald Software and at [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/). Contact the [sales department](mailto:sales@theobald-software.com) for more information about available maintenance options.<br>
-In case of technical difficulties, contact the support team by email: [https://support.theobald-software.com](https://support.theobald-software.com).
-
+Contact the [sales department](mailto:sales@theobald-software.com) for information about available maintenance options.<br>
+In case of technical difficulties, contact the support team: [https://support.theobald-software.com](https://support.theobald-software.com).
 
 ****
 #### Related Links
