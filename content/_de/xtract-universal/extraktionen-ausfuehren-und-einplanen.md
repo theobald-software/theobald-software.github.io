@@ -64,4 +64,4 @@ Darüber hinaus wird der der mögliche Parallelisierungsgrad wesentlich durch di
 Ab Xtract Universal Version 4.26.1, wird bei der Installation das Kommandozeilentool xu-config.exe mit ausgeliefert, z.B. in `C:\Program Files\XtractUniversal\xu-config.exe`.<br>
 Das Tool ermöglicht das Erstellen von Extraktionen, Datenquellen und Destinationen außerhalb des Xtract Universal Designers. 
 
-Mehr Details dazu finden im Knowledge Base Artikel [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/using-config-command-line-tool).
+Mehr Informationen dazu finden Sie im Knowledge Base Artikel [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/using-config-command-line-tool).
