@@ -19,17 +19,22 @@ Für die Verwendung der Alteryx-Destination wird das Xtract Universal Alteryx Pl
 
 ### Installation durch das Xtract Universal Setup
 
-Falls Alteryx bereits installiert ist, wird das Xtract Universal Alteryx Plugin zusammen mit Xtract Universal auf dem Zielsystem installiert. <br>
-Falls Sie Alteryx nach Xtract Universal installieren, können Sie das Xtract Universal Setup erneut ausführen.
+Das Xtract Universal Setup installiert das Xtract Universal Alteryx Plugin automatisch, wenn Alteryx bereits auf dem Zielsystem installiert. <br>
+Wenn Sie Alteryx nach Xtract Universal installieren, führen Sie das Xtract Universal Setup erneut aus.
 
-Nach der Installation von Xtract Universal erstellt das Setup die folgenden Einträge und Erweiterungen im Installationsverzeichnis von Alteryx:
+{: .box-note }
+**Hinweis:** Führen Sie das Xtract Universal Setup auf allen Maschinen aus, die das Xtract Universal Alteryx Plugin benötigen.
+
+#### Mehrere Alteryx-Installationen auf einer Maschine
+
+Wenn Sie mehrere Alteryx-Installationen auf einem System haben, erkennt das Xtract Universal Setup nur eine Installation.
+Führen Sie das Xtract Universal Setup for diese eine Installation aus. 
+Das Xtract Unviersal Setup erstellt die folgenden Einträge und Erweiterungen im Installationsverzeichnis dieser Alteryx Installation:
 - `Alteryx\Settings\AdditionalPlugins\XtractUniversal.ini`
 - `Alteryx\bin\RuntimeData\icons\categories\XtractUniversal.png`
 - `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
-{: .box-note }
-**Hinweis:** Sollten sich mehrere Alteryx-Installationen auf Ihrem System befinden, erkennt das Setup nur eine Installation und kopiert die o.g. Dateien dorthin.
-Für alle weiteren Alertyx Installationen, kopieren Sie die o.g. Dateien manuell in das entsprechende Installationsverzeichnis.
+Um das Xtract Universal Alteryx Plugin in allen Alteryx-Installationen zu verwenden, kopieren Sie die o.g. Dateien manuell in die Alteryx-Installationsverzeichnisse, die nicht vom Xtract Universal Setup erkannt wurden.
 
 <!---
 {: .box-note }

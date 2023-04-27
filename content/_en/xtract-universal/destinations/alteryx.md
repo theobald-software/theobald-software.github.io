@@ -17,22 +17,26 @@ The following section describes the loading of the SAP extraction data from Alte
 
 ## Requirements
 
-The Xtract Universal Alteryx plugin for the Alteryx designer is required to use the Alteryx destination. 
+The Xtract Universal Alteryx plugin for the Alteryx Designer is required to use the Alteryx destination. 
 
 ### Installation using the Xtract Universal Setup
 
-The Xtract Universal Setup will install the Xtract Universal Alteryx plugin if there is a valid Alteryx installation on the current system. <br>
+The Xtract Universal setup installs the Xtract Universal Alteryx plugin if there is a valid Alteryx installation on the current system. <br>
 If you install Alteryx after installing Xtract Universal, run the Xtract Universal setup again.
 
-After installation of Xtract Universal the setup creates the following entries and extensions in the Alteryx installation directory:
+{: .box-note }
+**Note:** Run the Xtract Universal setup on every machine that needs the Xtract Universal Alteryx  plugin. 
+
+#### Multiple Alteryx Installation on the same Machine
+
+If there is more than one Alteryx installation on your system, the Xtract Universal setup only detects one installation. 
+Run the Xtract Universal setup for that one Alteryx installation.
+The Xtract Universal setup creates the following entries and extensions in the installation directory of that Alteryx installation:
 - `Alteryx\Settings\AdditionalPlugins\XtractUniversal.ini`
 - `Alteryx\bin\RuntimeData\icons\categories\XtractUniversal.png`
 - `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
-{: .box-note }
-**Note:** Should you have more than one Alteryx installation on your system, the setup will only detect one installation. 
-The files for the Xtract Universal Alteryx plugin are only placed into the folders of that one installation.
-For any other Alteryx installations on your system, manually copy the files to the respective folders of the Alteryx installation that was not detected by the setup.
+To use the Xtract Universal Alteryx plugin, copy the files to the respective Alteryx installation directory that was not detected by the setup.
 
 <!---
 {: .box-note }
