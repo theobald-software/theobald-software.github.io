@@ -1,5 +1,5 @@
 ---
-ref: bc-bw-hierarchies-02
+ref: bc-bw-hierarchies-04
 layout: page
 title: Output Formats
 description: Table output
