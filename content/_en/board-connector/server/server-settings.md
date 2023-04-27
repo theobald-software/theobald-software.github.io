@@ -57,10 +57,10 @@ If you want to receive data via HTTPS you need to install a TLS certificate on t
 See section [Installing an X.509 certificate](../security/install-x.509-Certificate). 
 
 **HTTPS - Restricted to AD users with Designer read access** <br>
-See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by Windows AD users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note 3.5.0](https://kb.theobald-software.com/release-notes/BOARDConnector-3.5.0.html) and section [server security](../security/server-security).  
+See *HTTPS - Unrestricted*. This setting enables an additional access control for running an extraction. Extractions can only be executed by Windows AD users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note 3.5.0](https://kb.theobald-software.com/release-notes/BOARDConnector-3.5.0.html) and section [server security](../security/server-security).  
 
 **HTTPS - Restricted to custom users with Designer read access** <br>
-See *HTTPS - Unrestricted*. This setting enables an additional access control for executing an extraction. Extractions can only be executed by custom users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note 4.6.0](https://kb.theobald-software.com/release-notes/BOARDConnector-4.6.0.html) and section [server security](../security/server-security). 
+See *HTTPS - Unrestricted*. This setting enables an additional access control for running an extraction. Extractions can only be executed by custom users with at least a read permission (*Read*) in the *Configuration Server* tab. For additional information see [release note 4.6.0](https://kb.theobald-software.com/release-notes/BOARDConnector-4.6.0.html) and section [server security](../security/server-security). 
 
 #### Misc.
 

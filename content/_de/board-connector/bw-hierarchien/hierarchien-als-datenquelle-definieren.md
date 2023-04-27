@@ -12,5 +12,4 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=hierarchien-als-datenquelle-def
 ---
 Der folgende Abschnitt beschreibt die Anwendung der Hierarchy Komponente.
 
-
 {% include _content/de/bw-hierarchien/hierarchien-als-datenquelle-definieren.md %}

@@ -1,12 +1,12 @@
 ---
-ref: xu-bw-hierarchies-02
+ref: xu-bw-hierarchies-04
 layout: page
-title: Tabellenausgabe
+title: Ausgabeformat
 description: Tabellenausgabe
 product: xtract-universal
 parent: bw-hierarchien
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=tabellenausgabe
 ---

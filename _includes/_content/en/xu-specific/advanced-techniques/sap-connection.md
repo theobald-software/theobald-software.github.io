@@ -55,7 +55,7 @@ Enter your SAP username and password.
 
 **Request SAP credentials from caller when running extractions** <br>
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
-Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
+Instead, SAP credentials need to be provided via basic authentication when running an extraction. 
 Caching the result of extractions is inactive.
 In Xtract Universal this option triggers an input prompt for SAP credentials, when running an extraction in the Designer, see [Running an Extraction](./run-an-extraction).
 
@@ -85,7 +85,7 @@ The Windows Active Directory user used to open the connection is the service acc
 **Request SAP credentials from caller** <br>
 This option activates SNC with user and password.
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
-Instead, SAP credentials need to be provided via basic authentication when executing an extraction. 
+Instead, SAP credentials need to be provided via basic authentication when running an extraction. 
 
 **SSO - Log in as caller via External ID** <br>
 This option activates SSO with External ID.

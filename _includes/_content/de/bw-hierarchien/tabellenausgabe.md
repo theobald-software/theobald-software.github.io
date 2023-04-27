@@ -1,35 +1,81 @@
-
-### Ausgabe einer Hierarchie Struktur
-
-Im Vergleich zu anderen Quellkomponenten ist die Ausgabe von Hierarchiekomponenten vorgegeben. Eine Hierarchie enthält immer die gleichen Spalten.
-![Hierarchy-Table-Output (Hierachietabelle Ausgabe)](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
-
-**NodeID**<br>
-Eindeutiger Schlüssel des Knoten.
-
-**ParentNodeID**<br>
-Schlüssel des ersten Kindknotens.
-
-**FirstChildNodeID**<br>
-Schlüssel des ersten Kindknotens.
-
-**NextNodeID**<br>
-Schlüssel des nächsten Knotens in derselben Hierarchieebene.
-
-**InfoObjectName**<br>
-Name des InfoObjects, das hinter dem jeweiligen Knoten steht.
-
-**NodeName**<br>
-Der (technische) Name des Knotens..
-
-**NodeText** <br>
-Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den Einstellungen auf *true/wahr* gesetzt wurde).
-
 ### Ausgabe in SAP
-Die PM_COUNTRY-Hierarchie aus dem Beispiel, sieht in SAP wie folgt aus:
-
+Die Beispiel-Hierarchie PM_COUNTRY sieht in SAP wie folgt aus:<br>
 ![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output.png){:class="img-responsive"}
 
-Die entsprechende flache Datenausgabe in einem Browser sieht wie folgt aus:
-![Hierarchy-Table-SAP](/img/content/Hierarchy-Table-Output-Browser.png){:class="img-responsive"}
+### ParentChild Format
+
+Die Standardausgabe der BW Hierarchy Komponente beinhaltet die folgenden Spalten:
+- **NodeID:**
+Eindeutiger Schlüssel des Knoten.
+- **ParentNodeID:**
+Schlüssel des Vaterknotens.
+- **FirstChildNodeID:**
+Schlüssel des ersten Kindknotens.
+- **NextNodeID:**
+Schlüssel des nächsten Knotens in derselben Hierarchieebene.
+- **InfoObjectName:**
+Name des InfoObjects, das hinter dem jeweiligen Knoten steht.
+- **NodeName:**
+Der (technische) Name des Knotens.
+- **NodeText:**
+Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den Einstellungen auf *true/wahr* gesetzt wurde).
+- **DateFrom:** 
+Datum ab wann der Knoten gültig ist.
+- **DateTo:**
+Datum bis wann der Knoten gültig ist.
+- **Link:** 
+Wenn der Wert in *Link* größer als 0 ist, handelt es sich bei dem Knoten um eine Verknüpfung. 
+Die ID des ursprünglichen Knotens wird angezeigt. 
+- **Row:**
+Zeilennummer. Die Zeilennummer kann in der Weiterverarbeitung der Daten als ID oder Ordnungskriterium verwendet werden.<br>
+![Hierarchy-Table-Output](/img/content/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
+
+### Natural Format
+
+- **LevelN:**
+Technischer Name des Knotens in der n-ten Ebene. Die Anzahl der Ebenen ist in der [Extraktionseinstellung](./hierarchie-extraktionseinstellungen) **Level Count** definiert.
+Die Ebenenanzahl beginnt bei 0. 
+- **LevelTextN:**
+Der beschreibende Text des Knotens in der n-ten Ebene. 
+Diese Spalte wird nur erstellt, wenn die [Extraktionseinstellung](./hierarchie-extraktionseinstellungen) **Description texts for levels** aktiv ist.
+ **InfoObjectName:**
+Name des InfoObjects, das hinter dem jeweiligen Knoten steht.
+- **NodeName:**
+Der (technische) Name des Knotens.
+- **NodeText:**
+Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den Einstellungen auf *true/wahr* gesetzt wurde).
+- **DateFrom:** 
+Datum ab wann der Knoten gültig ist.
+- **DateTo:**
+Datum bis wann der Knoten gültig ist.
+- **Link:** 
+Wenn der Wert in *Link* größer als 0 ist, handelt es sich bei dem Knoten um eine Verknüpfung. 
+Die ID des ursprünglichen Knotens wird angezeigt. 
+- **Row:**
+Zeilennummer. Die Zeilennummer kann in der Weiterverarbeitung der Daten als ID oder Ordnungskriterium verwendet werden.<br>
+![Hierarchy-Table-Output](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}
+
+### ParentChildWithNodeNames Format
+
+- **NodeID:**
+Eindeutiger Schlüssel des Knoten.
+- **NodeName:**
+Der (technische) Name des Knotens.
+- **NodeText:**
+Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den Einstellungen auf *true/wahr* gesetzt wurde).
+- **ParentNodeID:**
+Schlüssel des Vaterknotens.
+- **ParentNodeName:**
+Name des Vaterknotens.
+- **InfoObjectName:**
+Name des InfoObjects, das hinter dem jeweiligen Knoten steht.
+- **DateFrom:** 
+Datum ab wann der Knoten gültig ist.
+- **DateTo:**
+Datum bis wann der Knoten gültig ist.
+- **Link:** 
+Wenn der Wert in *Link* größer als 0 ist, handelt es sich bei dem Knoten um eine Verknüpfung. Die ID des ursprünglichen Knotens wird angezeigt. 
+- **Row:**
+Zeilennummer. Die Zeilennummer kann in der Weiterverarbeitung der Daten als ID oder Ordnungskriterium verwendet werden.<br>
+![Hierarchy-Table-Output](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 

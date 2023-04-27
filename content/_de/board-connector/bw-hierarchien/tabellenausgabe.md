@@ -1,12 +1,12 @@
 ---
-ref: bc-bw-hierarchies-02
+ref: bc-bw-hierarchies-04
 layout: page
-title: Tabellenausgabe
+title: Ausgabeformat
 description: Tabellenausgabe
 product: board-connector
 parent: bw-hierarchien
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=tabellenausgabe
 ---
