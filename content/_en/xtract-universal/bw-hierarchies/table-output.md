@@ -1,5 +1,5 @@
 ---
-ref: xu-bw-hierarchies-02
+ref: xu-bw-hierarchies-04
 layout: page
 title: Output Formats
 description: Table output
