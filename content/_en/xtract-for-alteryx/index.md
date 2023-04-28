@@ -32,6 +32,7 @@ The following extraction types are available within Xtract for Alteryx:
 - [**Xtract Cube**](./bw-cube) - extracts data from BW Queries and BW Cubes, MultiProviders and other InfoProviders.
 - [**Xtract Hierarchy**](./hierarchy) - extracts hierarchies from SAP BW systems.
 - [**Xtract ODP**](./odp) -  extracts data from DataSources, CDS views, BW objects, and HANA Views using Operational Data Provisioning (ODP) framework.
+- [**Xtract Query**](./queries) -  extracts ERP queries. **Note: not BEx queries supplied by Xtract Cube**.
 - [**Xtract Report**](./reports) - extracts data from most standard and custom ABAP reports and SAP transactions.
 - [**Xtract Table**](./table) - extracts data from SAP tables and views; allows joining several tables on the SAP side.
 
@@ -47,6 +48,7 @@ The overview below shows you for which component read (R) and write (W) rights a
 | Xtract Cube  |     | R  |
 | Xtract Hierarchy   |     | R  | 
 | Xtract ODP   |  R   | R  | 
+| Xtract Query   |  R   |   | 
 | Xtract Report   |   R  | R  | 
 | Xtract Table       | R   | R  | 
 

@@ -30,12 +30,13 @@ Die folgenden Extraktionstypen sind innerhalb von Xtract for Alteryx verfügbar:
 
 ![Xfa_components](/img/content/xfa/xfa_components_overview.png){:class="img-responsive"}
 
-- [**Xtract BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
-- [**Xtract Cube**](./bw-cube) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
-- [**Xtract Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
-- [**Xtract ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
-- [**Xtract Report**](./reports) extrahiert Daten der meisten Standard und benutzerdefineirten ABAP Reports und SAP Transaktionen.
-- [**Xtract Table**](./table)  extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
+- [**Xtract BAPI**](./bapis-und-funktionsbausteine) - greift auf BAPIs und RFC-Funktionsmodule zu.
+- [**Xtract Cube**](./bw-cube) - extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
+- [**Xtract Hierarchy**](./bw-hierarchien) - extrahiert Hierarchien aus SAP BW / BI Systemen.
+- [**Xtract ODP**](./odp) - extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
+- [**Xtract Query**](./queries) -  extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
+- [**Xtract Report**](./reports) - extrahiert Daten der meisten Standard und benutzerdefineirten ABAP Reports und SAP Transaktionen.
+- [**Xtract Table**](./table)  - extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
 
 {: .box-note }
 **Hinweis:** Eine [SAP-Verbindung](./einfuehrung/sap-verbindung) ist eine Voraussetzung für die Verwendung der Komponenten von Xtract for Alteryx.
@@ -51,6 +52,7 @@ In der unten stehenden Übersicht sehen Sie, bei welcher Komponente Lese (R),- u
 | Xtract Cube  |     | R  |
 | Xtract Hierarchy   |     | R  |
 | Xtract ODP   | R  | R  |  
+| Xtract Query   |  R   |   | 
 | Xtract Report   |  R  | R  | 
 | Xtract Table       | R   | R  | 
 
