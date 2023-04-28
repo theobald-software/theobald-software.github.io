@@ -1,7 +1,7 @@
 ---
 ref: board-connector-13
 layout: page
-title: DeltaQ
+title: DeltaQ (veraltet)
 description: Datasource DeltaQ
 product: board-connector
 parent: board-connector

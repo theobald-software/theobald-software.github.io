@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-09
 layout: page
-title: Xtract DeltaQ
+title: Xtract DeltaQ (veraltet)
 description: Xtract IS DeltaQ
 product: xtract-is
 parent: xtract-is
