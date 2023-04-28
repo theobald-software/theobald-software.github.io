@@ -1,12 +1,13 @@
 ---
-ref: xfa-queries-02
+ref: xfa-queries-03
 layout: page
-title: Varianten und Selektionen
-description: Varianten und Selektionen
+title: Extraktionseinstellungen
+description: Extraktionseinstellungen
 product: xtract-for-alteryx
 parent: queries
 permalink: /:collection/:path
-weight: 2
+weight: 3
 lang: de_DE
 progressstate: 5
 ---
+

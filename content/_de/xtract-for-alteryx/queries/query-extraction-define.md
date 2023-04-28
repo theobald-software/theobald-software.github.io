@@ -1,12 +1,12 @@
 ---
-ref: xfa-queries-02
+ref: xfa-queries-01
 layout: page
-title: Varianten und Selektionen
-description: Varianten und Selektionen
+title: Eine Query Extraktion definieren
+description: Definieren einer Query
 product: xtract-for-alteryx
 parent: queries
 permalink: /:collection/:path
-weight: 2
+weight: 1
 lang: de_DE
 progressstate: 5
 ---
