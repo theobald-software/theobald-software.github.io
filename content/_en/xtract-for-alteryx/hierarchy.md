@@ -43,7 +43,7 @@ The default value for the field *Date To* is 99991231.
 The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-preview-selected-hierarchy) of the selected SAP BW hierarchy, when clicking the **[Load Live Preview]** button.
 
 #### Buttons
-- **[Extraction Settings]** opens the [extraction specific settings](./bwhierarchy/bwhier-settings) e.g., representation or level count. <br>
+- **[Extraction Settings]** opens the [extraction specific settings](./bwhierarchyhierarchies-extraction-settings) e.g., representation or level count. <br>
 - **[Load Live Preview]** loads a preview of the hierarchy without executing an extraction.
 
 More information on working with the Xtract Hierarchy component is provided in the following sections.
