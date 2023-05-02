@@ -45,7 +45,7 @@ Die Spaltenbreite und der Offset der Spalten werden dann zur Laufzeit dynamisch 
 
 Das folgende Beispiel zeigt, wie Sie eine einfache Report-Extraktion einrichten:
 - Report RLT10010 aufrufen
-- Variante *V01* auswählen
+- Variante *VAR01* auswählen
 - Echtzeitvorschau laden
 - Header entfernen (die ersten 7 Zeilen des Reports überspringen)
 - Spalten automatisch ermitteln
