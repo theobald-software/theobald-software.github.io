@@ -11,7 +11,6 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=requirements
 progressstate: 5
 ---
-
 ### Supported Visual Studio Versions  	
 
 - Visual Studio 2015
