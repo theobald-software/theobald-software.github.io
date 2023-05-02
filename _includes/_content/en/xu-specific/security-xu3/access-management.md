@@ -21,9 +21,6 @@ Open the main window of the component and click **[General Settings] > Tab *Secu
 ![Extraction-Settings_](/img/content/XU_Extraction_Security3.png){:class="img-responsive"}
 The access control on extraction level overrides the settings at server level.
 
-![Server-Settings_](/img/content/XU_Extraction_Security.png){:class="img-responsive"}
-
-
 ### Extraction Settings - Source Level
 Access control can also be performed at the source level. This access control overrides the settings at server level.
 ![Server-Settings_](/img/content/xu/sap_source-accesscontrol.png){:class="img-responsive"}
