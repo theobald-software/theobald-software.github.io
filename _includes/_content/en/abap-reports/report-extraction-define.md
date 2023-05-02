@@ -45,7 +45,7 @@ The column widths and offsets are then adjusted dynamically at report runtime.
 The following example shows how to set up a simple report extraction:
 
 - Look up report RLT10010
-- Select variant *V01*
+- Select variant *VAR01*
 - Load a live preview
 - Remove the header (skip the first 7 rows)
 - Automatically detect columns
