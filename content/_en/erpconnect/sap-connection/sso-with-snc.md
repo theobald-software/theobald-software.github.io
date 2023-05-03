@@ -38,7 +38,7 @@ When using Kerberos authentication, apply the Kerberos SNC settings as described
 
 ### About SNC in ERPConnect
 
-The R3Connection object automatically determines the needed SNC DLL based on the settings of *SNCMechanism*. 
+The ParseConnectionString object automatically determines the needed SNC DLL based on the settings of *SNCMechanism*. 
 With the *SNCLibraryPath* property you can specify the path to the SNC DLL manually. 
 In this case the automatic detection of the DLL is disabled and the setting for *SNCMechanism* are ignored.
 
@@ -50,14 +50,14 @@ It disables all settings without changing the other SNC parameter.
 
 
 ### Samples
-The following example codes show how to pass the necessary parameters for an SNC connection to an R3Connection object.
+The following example codes show how to pass the necessary parameters for an SNC connection to an ParseConnectionString object.
 
 ****
 
 **Using the SNC Mechanism (ERP Connect version 4.1.1.0):**
 
 ```csharp
-using (R3Connection con = new R3Connection()) 
+using (ParseConnectionString con = new ParseConnectionString()) 
 {
 con.Host = "sap-erp-as05.example.com";
 con.SystemNumber = 7;
@@ -73,7 +73,7 @@ con.Open();
 
 **Using individual SNC DLL path (ERP Connect version 4.1.1.0):**
 ```csharp
-using (R3Connection con = new R3Connection())
+using (ParseConnectionString con = new ParseConnectionString())
 {
 con.Host = "sap-erp-as05.example.com";
 con.SystemNumber = 7;
@@ -89,7 +89,7 @@ con.Open();
 
 **Using the SNC Mechanism (ERP Connect version 4.2.3):**
 ```csharp
-using (R3Connection con = new R3Connection())
+using (ParseConnectionString con = new ParseConnectionString())
 {
 con.Host = "sap-erp-as05.example.com";
 con.SystemNumber = 7;
@@ -107,7 +107,7 @@ con.Open();
 
 **Using individual SNC DLL path(ERPConnect Version 4.2.3):**
 ```csharp
-using (R3Connection con = new R3Connection())
+using (ParseConnectionString con = new ParseConnectionString())
 {
 con.Host = "sap-erp-as05.example.com";
 con.SystemNumber = 7;

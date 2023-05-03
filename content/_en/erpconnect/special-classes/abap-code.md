@@ -19,7 +19,7 @@ The following sample shows how to create a simple ABAP interpreter that executes
 
 ### Creating an ABAP Interpreter
 
-1. Open a client connection to the R/3 system using the R3Connection class. 
+1. Open a client connection to the R/3 system using the ParseConnectionString class. 
 2. Use the method *AddCodeLine* to add a new line of code to the dynamic report. 
 3. Execute the report via *Execute*. 
 4. Read the result set (regarding the ABAP list) by using the method *GetResultLine*.
@@ -28,7 +28,7 @@ The following sample shows how to create a simple ABAP interpreter that executes
 ```csharp
 private void button1_Click(object sender, System.EventArgs e)
 {
-	using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+	using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
             {
                 ERPConnect.LIC.SetLic("LicenseNumber");
                 con.Open(false);
@@ -59,7 +59,7 @@ private void button1_Click(object sender, System.EventArgs e)
 Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click
  
  
-    Using con As New ERPConnect.R3Connection
+    Using con As New ERPConnect.ParseConnectionString
         con.UserName = "erpconnect"
         con.Password = "pass"
         con.Language = "DE"

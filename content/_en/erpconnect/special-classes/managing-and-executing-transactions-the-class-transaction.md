@@ -34,7 +34,7 @@ The SAP GUI is launched using the method *Execute*.
 ```csharp
 private void button1_Click(object sender, System.EventArgs e)
     {
-    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+    using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
         {
             Transaction transaction1 = new Transaction();
             transaction1.Connection = con;
@@ -63,9 +63,9 @@ private void button1_Click(object sender, System.EventArgs e)
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
 Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click
-    Dim r3Connection1 As R3Connection = New R3Connection("SAPServer", 0, "SAPUser", "Password", "EN", "800")
+    Dim ParseConnectionString1 As ParseConnectionString = New ParseConnectionString("SAPServer", 0, "SAPUser", "Password", "EN", "800")
     Dim transaction1 As Transaction = New Transaction()
-    transaction1.Connection = r3Connection1
+    transaction1.Connection = ParseConnectionString1
     ' Reset the batch steps
     transaction1.BatchSteps.Clear()
     ' fill new steps
@@ -80,8 +80,8 @@ Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.Event
     ' connect to SAP
   
   
-    r3Connection1.UseGui = True
-    r3Connection1.Open(False)
+    ParseConnectionString1.UseGui = True
+    ParseConnectionString1.Open(False)
     ' Run
     transaction1.Execute()
   
@@ -106,7 +106,7 @@ The transaction for creating a purchase order is **ME21**.
 At the end the code loops over the *Returns* collection to check the *BatchReturn* objects that contain the return messages of the Batch Input transaction. 
 
 ```csharp
-using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
     {
 	con.Open(false);
    
@@ -144,7 +144,7 @@ using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
-Using con As New ERPConnect.R3Connection
+Using con As New ERPConnect.ParseConnectionString
   
      con.UserName = "erpconnect"
      con.Password = "pass"

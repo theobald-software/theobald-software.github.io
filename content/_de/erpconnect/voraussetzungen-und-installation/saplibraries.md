@@ -22,10 +22,10 @@ Beachten Sie, dass die Dateien den gleichen Dateinamen haben, nur die Dateigrös
 
 ![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive" width="300px" }
 
-Um die Klassische RFC-Bibliothek zu verwenden, setzen Sie die Eigenschaft *Protocol* des *R3Connection*-Objekts auf *ClientProtocol.NWRFC*.
+Um die Klassische RFC-Bibliothek zu verwenden, setzen Sie die Eigenschaft *Protocol* des *ParseConnectionString*-Objekts auf *ClientProtocol.NWRFC*.
 
 ```
-R3Connection.Protocol = ClientProtocol.RFC;
+ParseConnectionString.Protocol = ClientProtocol.RFC;
 ```
 
 ### Netweaver RFC Library
@@ -40,8 +40,8 @@ Für die 64-Bit Umgebung sind folgende DLLs nötig:
 Kopieren Sie die 64-bit Version der Netweaver RFC-Bibliothek in den `\System32` Ordner.<br>
 Kopieren Sie die 32-bit Version der Netweaver RFC-Bibliothek in den `\SysWoW64` Ordner.
 
-Um die Netweaver RFC-Bibliothek zu verwenden, setzen Sie die Eigenschaft *Protocol* des *R3Connection*-Objekts auf *ClientProtocol.NWRFC*.
+Um die Netweaver RFC-Bibliothek zu verwenden, setzen Sie die Eigenschaft *Protocol* des *ParseConnectionString*-Objekts auf *ClientProtocol.NWRFC*.
 
 ```
-R3Connection.Protocol = ClientProtocol.NWRFC;
+ParseConnectionString.Protocol = ClientProtocol.NWRFC;
 ```

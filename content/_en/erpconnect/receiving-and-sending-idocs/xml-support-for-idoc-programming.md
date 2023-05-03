@@ -50,7 +50,7 @@ E1EDP19>
 The following C# code shows how to load and send data from files.
 
 ```csharp
-using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
 { 
     Idoc i = new Idoc();  
     i.Connection = con; 
@@ -66,7 +66,7 @@ using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
-Using con As R3Connection = New R3Connection
+Using con As ParseConnectionString = New ParseConnectionString
   
     con.UserName = "erpconnect"
     con.Password = "pass"

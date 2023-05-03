@@ -19,11 +19,11 @@ Ab Version 1.6 unterstützt ERPConnect Single-Sign-On-Szenarien mit SSO-Tickets.
 ### Anmeldung mit SSO-Tickets
 
 #### SSO-Ticket erzeugen
-Um ein SSO-Ticket zu erzeugen bietet die *R3Connection*-Klasse die Methode *GetSSOTicket*. <br>
+Um ein SSO-Ticket zu erzeugen bietet die *ParseConnectionString*-Klasse die Methode *GetSSOTicket*. <br>
 Die Anmeldedaten müssen einmalig eingegeben werden, um ein Ticket bei SAP zu beantragen, siehe folgenden Beispielcode:
 
 ```csharp
-using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
+using(ERPConnect.ParseConnectionString cont = new ERPConnect.ParseConnectionString())
 {
     cont.Host = "sap-erp-as05.example.com";  
     cont.SystemNumber = 7;  
@@ -41,7 +41,7 @@ Wenn ein Ticket vorhanden ist, kann der Logon über die Funktion *OpenSSO* erfol
 Benutzername und Passwort müssen nicht übergeben werden, da der Account implizit durch das Ticket vorgegeben wird:
 
 ```csharp
-using(ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
+using(ERPConnect.ParseConnectionString conts = new ERPConnect.ParseConnectionString())
 {
     conts.Host = "sap-erp-as05.example.com"; 
     conts.SystemNumber = 7; 

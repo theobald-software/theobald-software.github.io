@@ -53,7 +53,7 @@ Um eine Lieferantenbestellung mit dem *BAPI_PO_CREATE* BAPI zu erstellen, folgen
 private void Button1_Click(object sender, System.EventArgs e) 
 { 
     ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License. 
-    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+    using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
 	    {
 	        con.Open(false); 
           

@@ -54,10 +54,10 @@ Installation of custom function modules / transport requests is not required.
 
 #### Netweaver RFC Library
 ERPConnect supports the Netweaver RFC (SDK) as of version 4.6.0.  
-To use it, set the Property *Protocol* of the *R3Connection* object to *ClientProtocol.NWRFC* before opening the connection (default setting). 
+To use it, set the Property *Protocol* of the *ParseConnectionString* object to *ClientProtocol.NWRFC* before opening the connection (default setting). 
 
 ```
-R3Connection.Protocol = ClientProtocol.NWRFC;
+ParseConnectionString.Protocol = ClientProtocol.NWRFC;
 ```
 
 For 64-Bit environments the following DLLs are required:

@@ -22,14 +22,14 @@ Das *STATUS*-IDoc enthält nur einen Datensatz und ist somit sehr einfach aufgeb
 
 ### Ein STATUS IDoc senden
 
-1. Bauen Sie mit der *R3Connection*-Klasse eine Verbindung zum R/3 System auf.
+1. Bauen Sie mit der *ParseConnectionString*-Klasse eine Verbindung zum R/3 System auf.
 2. Fragen Sie die IDoc-Nummer des zu manipulierenden IDocs ab und lesen Sie die Eingabe aus.
 3. Erzeugen Sie mit der Methode *CreateIdoc* ein IDoc Objekt. 
 "SYSTAT01" ist der entsprechende IDoc-Typ für den Nachrichtentyp *STATUS*. <br> <br>
 	 ```csharp
      static void Main(string[] args)  
      {  
-        using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+        using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
         {
 			con.Open(false);  
         
@@ -84,7 +84,7 @@ Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worde
 <summary>[VB]</summary>
 {% highlight visualbasic %}
 Sub Main(ByVal args() As String) 
-   Using con As R3Connection = New R3Connection("hamlet", _ 
+   Using con As ParseConnectionString = New ParseConnectionString("hamlet", _ 
       11, "Theobald", "pw", "DE", "800") 
    con.Open(False) 
   

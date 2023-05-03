@@ -30,7 +30,7 @@ Bestätigen Sie mit *OK*. Es ist nun ein entsprechendes Icon im Designer zu sehe
 ![LINQToERP-Tables-003](/img/content/LINQToERP-Tables-003.png){:class="img-responsive"}
 
 
-Um nun die LINQ-fähige Klasse im Code anzusteuern, muss zunächst der Data-Kontext instanziiert werden. Dies geschieht entweder unter Angabe von Benutzer und Passwort (mit den bereits hinterlegten Systemparametern) oder alternativ unter Angabe der kompletten Anmeldeinfos (der Konstruktor der DataContext-Klasse ist entsprechend überladen, alternativ kann auch das bereits bekannte R3Connection-Objekt direkt über DataContext.Connection angesprochen werden). Mit DataContext können nun entsprechende LINQ-Abfragen formuliert werden: 
+Um nun die LINQ-fähige Klasse im Code anzusteuern, muss zunächst der Data-Kontext instanziiert werden. Dies geschieht entweder unter Angabe von Benutzer und Passwort (mit den bereits hinterlegten Systemparametern) oder alternativ unter Angabe der kompletten Anmeldeinfos (der Konstruktor der DataContext-Klasse ist entsprechend überladen, alternativ kann auch das bereits bekannte ParseConnectionString-Objekt direkt über DataContext.Connection angesprochen werden). Mit DataContext können nun entsprechende LINQ-Abfragen formuliert werden: 
 
 <details>
 <summary>[C#]</summary>

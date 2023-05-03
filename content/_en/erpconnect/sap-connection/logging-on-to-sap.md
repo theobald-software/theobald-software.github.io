@@ -31,14 +31,14 @@ Both connection methods require the following input:
 
 ### How to Connect
 1. Add the ERPConnect.dll class library as a reference to the project.
-2. Create a new R3Connection object and define all input parameters.
+2. Create a new ParseConnectionString object and define all input parameters.
 3. Use the method *Open* to establish the connection. <br>
 To connect via Load Balancing, use *Open(true)*. For the single server approach, use *Open(false)*. 
 
 Example for single server login:
 
 ```csharp
-using(R3Connection con = new R3Connection())
+using(ParseConnectionString con = new ParseConnectionString())
 {
     con.UserName = "SAPUser";  
     con.Password = "SAPPassword";  
@@ -55,7 +55,7 @@ using(R3Connection con = new R3Connection())
 Example for Load Balancing:
 
 ```csharp
-using(R3Connection con = new R3Connection())
+using(ParseConnectionString con = new ParseConnectionString())
 {
     con.UserName = "SAPUser";  
     con.Password = "SAPPassword"; 
@@ -87,7 +87,7 @@ When accessing an SAP system via a Router, the router string must be set before 
 For more information on route strings, see [SAP Help- Route String Entry for SAProuter](https://help.sap.com/saphelp_erp60_sp/helpdata/en/4f/992df1446d11d189700000e8322d00/frameset.htm).
 
 ```csharp
-using(R3Connection con = new R3Connection())
+using(ParseConnectionString con = new ParseConnectionString())
 {
     con.UserName = "SAPUser";  
     con.Password = "SAPPassword"; 
@@ -103,19 +103,19 @@ using(R3Connection con = new R3Connection())
 
 ### Connection String
 
-You can use a connection string to call the method *R3Connection.Open(string connectionString)*. Example:
+You can use a connection string to call the method *ParseConnectionString.Open(string connectionString)*. Example:
 
 ```csharp
 string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
-R3Connection con = new R3Connection(ConnectionString);
+ParseConnectionString con = new ParseConnectionString(ConnectionString);
 ```
 
 The default client protocol is the RFC Protocol. To use the new NW RFC Protocol add the following command:<br>
 `con.Protocol = ClientProtocol.NWRFC;`
 
 {: .box-tip }
-**Tip**:  If you use the constructor of the R3Connection class to provide the login properties, 
-you can save lines. <br>Example: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`. 
+**Tip**:  If you use the constructor of the ParseConnectionString class to provide the login properties, 
+you can save lines. <br>Example: `ParseConnectionString con = new ParseConnectionString("SAPServer",00,"SAPUser","Password","EN","800");`. 
 
 ****
 #### Related Links

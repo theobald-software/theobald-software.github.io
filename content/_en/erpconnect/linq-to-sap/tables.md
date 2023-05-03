@@ -44,7 +44,7 @@ To access the LINQ-capable class in the code, instantiate the DataContext. <br>
 There are multiple ways to do that:
 - Enter the user name and password with the previously stored system parameters. 
 - Enter the entire registration information (the constructor of the DataContext class is accordingly overloaded). 
-- If you already know the R3Connection object, address it directly via the DataContext.Connection
+- If you already know the ParseConnectionString object, address it directly via the DataContext.Connection
 
 Using the DataContext, the corresponding LINQ queries can be formulated as shown the example below: <br>
 ```csharp

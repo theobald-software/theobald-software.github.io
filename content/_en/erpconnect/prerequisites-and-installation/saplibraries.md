@@ -24,10 +24,10 @@ Note that the files have the same file name, only the file size varies.
 
 ![librfc32dll](/img/content/librfc32dll.png){:class="img-responsive" width="300px" }
 
-To use the Classic RFC Protocol, set the Property *Protocol* of the *R3Connection* object to *ClientProtocol.RFC* before you open the connection.
+To use the Classic RFC Protocol, set the Property *Protocol* of the *ParseConnectionString* object to *ClientProtocol.RFC* before you open the connection.
 
 ```
-R3Connection.Protocol = ClientProtocol.RFC;
+ParseConnectionString.Protocol = ClientProtocol.RFC;
 ```
 
 ### Netweaver RFC Library
@@ -42,9 +42,9 @@ For 64-Bit environments the following DLLs are required (XX can vary depending o
 Copy the 64-Bit Version of NW Libraries to the `\System32` folder.<br>
 Copy the 32-Bit Version of NW Libraries to the `\SysWoW64` folder.
 
-To use the Netweaver RFC (SDK), set the Property *Protocol* of the *R3Connection* object to *ClientProtocol.NWRFC* before opening the connection. 
+To use the Netweaver RFC (SDK), set the Property *Protocol* of the *ParseConnectionString* object to *ClientProtocol.NWRFC* before opening the connection. 
 
 ```
-R3Connection.Protocol = ClientProtocol.NWRFC;
+ParseConnectionString.Protocol = ClientProtocol.NWRFC;
 ```
 
