@@ -126,11 +126,11 @@ Xtract Connection Manager können Xtract Komponenten automatisch oder manuell zu
 #### Einen Connection Manager automatisch zuweisen
 
 1. Erstellen Sie einen Connection Manager wie in [SAP-Verbindung herstellen ](./verbindungsmanager#sap-verbindung-herstellen) beschrieben.
-2. Drag & drop eine Xtract Komponente wie z.B. **Xtract Table**, **Xtract BAPI**, etc.  
-3. Doppelklicken Sie auf die Xtract Komponente um automatisch einen Connection Manager zuzuweisen. Das Fenster für die Einstellungen der Komponente öffnet sich. 
-
-{: .box-note }
-**Hinweis:** Wenn mehrere Connection Manager verfügbar sind, empfehlen wir eine manuelle Zuweisung. 
+2. Ziehen Sie eine Xtract Komponente in den Data Flow Task.  
+3. Doppelklicken Sie auf die Xtract Komponente, um automatisch einen Connection Manager zuzuweisen.
+Wenn mehrere Connection Manager verfügbar sind, öffnet sich das Fenster "Select Connection Manager".
+Wählen Sie einen Connection manager aus der Dropdown-Liste aus und klicken Sie auf **[OK]**. <br>
+![select-connection-manager](/img/content/xis/select-connection-manager.png)
 
 #### Einen Connection Manager manuell zuweisen
 
@@ -139,5 +139,10 @@ Xtract Connection Manager können Xtract Komponenten automatisch oder manuell zu
 3. Wählen Sie die Xtract Komponente aus. Unter *Properties* öffnen Sie den *Show Advanced Editor* (1). Das Fenster "Advanced Editor" öffnet sich (2). 
 4. Wählen Sie einen Connection Manager aus der Dropdown-Liste aus (3). 
 5. Bestätigen Sie Ihre Auswahl mit **[OK]** (4).
+
+{: .box-note }
+**Hinweis:** Die Xtract BAPI Komponente *Advanced Editor* hat keinen *Advanced Editor*.
+Um einen Connection Manager manuell einer Xtract BAPI Komponente zuzuweisen, öffnen Sie das Hauptfenster der Xtract BAPI Komponente.
+Im Hauptfenster der Xtract BAPI Komponente gibt es ein Menü *Change Connection Manager*, über das ein Connection Manager zugewiesen wird.
 
 ![assign-connection-manager](/img/content/xis/assign-connection-manager.png)
