@@ -14,5 +14,6 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=report-extraktionseinstellunge
 
 #### Weiterführende Links
 - [Reguläre Ausdrücke in der Microsoft Online Help](http://msdn.microsoft.com/de-de/library/az24scfc.aspx)
+- [Knowledge Base Artikel: Skipping Sum Rows in Reports](https://kb.theobald-software.com/xtract-universal/skip-rows-in-reports)
 - [Installieren des Report Funktionsbausteins](../sap-customizing/report-funktionsbaustein-installieren)
 
