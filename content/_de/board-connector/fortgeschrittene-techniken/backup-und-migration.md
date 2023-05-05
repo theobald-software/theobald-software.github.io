@@ -44,7 +44,7 @@ Falls erforderlich, ermöglicht das Backup es Ihnen leicht zur vorherigen Produk
 Mehr Details dazu finden Sie auch im Abschnitt [Installation und Update](../einfuehrung/installation-und-update).
 
 
-#### Wie erstelle ich ein Backup?
+#### Erstellen eines Backups
 Kopieren Sie das komplette `config`-Verzeichnis, der Maschine auf der der Board Connector Service läuft: `C:\Program Files\BOARDConnector\config` (standardmäßig). 
 Optional, können Sie auch das komplette`logs`-Verzeichnis (`C:\Program Files\BOARDConnector\logs` standardmäßig) kopieren, um ein Backup der Log-Dateien zu erstellen.
 
