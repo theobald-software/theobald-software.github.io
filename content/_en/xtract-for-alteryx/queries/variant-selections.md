@@ -12,16 +12,16 @@ progressstate: 5
 ---
 
 Most queries allow entering selections before query execution.
-Selections limit the result set of the Query so as to extract only records that match the selection.<br>
+Selections limit the result set of the query to extract only records that match the selection.<br>
 A selection variant can be created in SAP, see [SAP Documentation: Query Variants](https://help.sap.com/docs/SAP_NETWEAVER_750/40d2cb3a4f9249d58e9bbc95f4dbaff8/4e535406a32c4f49e10000000a42189e.html?locale=en-US). 
-The purpose of a variant is to minimize the need to enter selections each time you run a query.
+The purpose of a variant is to minimize the necessity to enter selections when running a query.
 
 {: .box-note }
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
 
 ### Choose a Variant
 Choose a variant from the drop-down-list *Variant* (1). <br>
-If you create a new variant in SAP after creating the query extraction, click **[Refresh]** ( ![refresh](/img/content/icons/refresh.png) icon) to load the new variant.
+If you create a new variant in SAP after creating the query extraction, click on the **[Refresh]** icon ( ![refresh](/img/content/icons/refresh.png)) to load the new variant.
 
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 
@@ -31,7 +31,7 @@ To see the definition of a variant, open the variant in SAP.
 
 ### Edit Selections
 
-The *Selection Screen* in the Query window corresponds to the query's input screen in SAP.
+The *Selection Screen* in the query window corresponds to the query's input screen in SAP.
 
 ![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}
 
@@ -50,13 +50,13 @@ Select *Exclude* in the **Sign** (1) column to exclude the filtered data from th
 
    | Operator   |      Meaning      |  
    |:---------|:------------- |
-   |(Not)ContainsPattern |  True if data does (not)contain to the content of operand 1.|
+   |(Not)ContainsPattern |  True if data values do (not)contain to the content of operand 1.|
    |(Not)Equal |  True if data is (not)equal to the content of operand 1.|
    |GreaterOrEqual |  True if data is greater than or equal to the content of operand 1.|
    |GreaterThan |  True if data is greater than the content of operand 1.|
    |LessOrEqual | True if data is less than or equal to the content of operand 1.|
    |LessThan | True if data is less than the content of operand 1.|
-   |(Not)Between | True if data lies (not) between the values of operand 1 and operand 2. |
+   |(Not)Between | True if data values do (not) lie between the values of operand 1 and operand 2. |
 5. Enter values directly into the **Low** and **High** input fields. 
 6. Click **[OK]** to confirm your input.
 

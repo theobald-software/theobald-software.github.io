@@ -33,7 +33,7 @@ Select *Exclude* in the **Sign** column to exclude the filtered data from the ou
    |GreaterThan |  True if data is greater than the content of operand 1.|
    |LessOrEqual | True if data is less than or equal to the content of operand 1.|
    |LessThan | True if data is less than the content of operand 1.|
-   |(Not)Between | True if data lies (not) between the values of operand 1 and operand 2. |
+   |(Not)Between | True if data values do (not) lie between the values of operand 1 and operand 2. |
 
 5. Enter static values or select runtime parameters for filtering. <br>
 - Static values: Enter values directly into the **Low** and **High** input fields. 

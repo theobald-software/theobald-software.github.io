@@ -16,11 +16,11 @@ The following section shows how to use the Xtract Query component.
 
 ### Look up a Query
 
-1. In the main window of the component click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon). The window “Query Lookup” opens.
-2. Enter the name of a Query in the field **Query Name** or enter the name of a user group in the field **User group** (1). Use wildcards (*) if needed. <br>
+1. In the main window of the component click on the **[Search]** icon ( ![magnifying-glass](/img/content/icons/magnifying-glass.png)). The window “Query Lookup” opens.
+2. Enter the name of a query in the field **Query Name** or enter the name of a user group in the field **User group** (1). Use wildcards (*) if needed. <br>
 ![Look Up Hierarchy](/img/content/query/query-lookup.png){:class="img-responsive"}
 3. Select the query work area that contains the query object (2). For more information, see [SAP Documentation: Query Areas](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/4e/3bdad0b8503b0fe10000000a42189e/frameset.htm).
-4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) and select the Query of your choice from the displayed list (2).
+4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) and select the preferred query from the displayed list (2).
 5. Click **[OK]** to confirm your selection.
 
 The application now returns to the main window of the component.
@@ -28,7 +28,7 @@ The application now returns to the main window of the component.
 ### Set Up a Query Extraction
 <!--- ### Eine Query Extraktion Einrichten -->
 
-[Look up a Query](#look-up-a-query) and follow the steps below to set up a query extraction:
+[Look up a query](#look-up-a-query) and follow the steps below to set up a query extraction:
 
 1. If the query has variants, select a variant in the *Variant* section of the main window.
 For more information, see [Variants and Selections: Choose a Variant](./variant-selections#choose-a-variant).<br>

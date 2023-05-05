@@ -11,10 +11,10 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-report-extraction
 ---
 
-Most reports allow entering selections before report execution. Selections limit the result set of the report so as to extract only records that match the selection. 
+Most reports allow entering selections before report execution. Selections limit the result set of the report to extract only records that match the selection. 
 
 A selection variant can be created in SAP at the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. 
-This minimizes the need to enter selections each time you run a report. 
+The purpose of a variant is to minimize the necessity to enter selections when running a report.
 
 {: .box-note }
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
