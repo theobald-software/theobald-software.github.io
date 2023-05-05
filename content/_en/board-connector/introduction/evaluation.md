@@ -6,7 +6,7 @@ description: Evaluation
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 7
+weight: 4
 lang: en_GB
 ---
 

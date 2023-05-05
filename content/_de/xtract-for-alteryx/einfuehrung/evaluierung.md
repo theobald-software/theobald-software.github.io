@@ -6,7 +6,7 @@ description: Evaluierung
 product: xtract-for-alteryx
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 6
+weight: 2
 lang: de_DE
 ---
 ### Download von Xtract for Alteryx

@@ -6,7 +6,7 @@ description: Lizenzierung von Xtract Universal
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 6
+weight: 8
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=lizenz
 progressstate: 5

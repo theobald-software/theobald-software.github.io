@@ -12,7 +12,7 @@ lang: de_DE
 
 {% include _content/de/einfuehrung/update.md %}
 
-### Wie erstelle ich ein Backup?
+### Erstellen eines Backups
 
 1. Kopieren Sie alle Alteryx-Workflows, die das Xtract-for-Alteryx Plug-in verwenden.
 2. Erstellen Sie eine Kopie des Verzeichnisses der SAP-Verbindungen. 

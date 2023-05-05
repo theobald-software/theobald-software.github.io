@@ -6,7 +6,7 @@ description: Installation
 product: xtract-is
 parent: introduction
 permalink: /:collection/:path
-weight: 2
+weight: 6
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installation
 progressstate: 5

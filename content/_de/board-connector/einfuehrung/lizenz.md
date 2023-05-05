@@ -6,7 +6,7 @@ description: Lizenzierung
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 5
+weight: 8
 lang: de_DE
 progressstate: 5
 ---

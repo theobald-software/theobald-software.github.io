@@ -6,7 +6,7 @@ description: Lizenzkonzept von Xtract for Alteryx
 product: xtract-for-alteryx
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 2
+weight: 5
 lang: de_DE
 ---
 

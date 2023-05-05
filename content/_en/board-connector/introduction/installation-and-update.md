@@ -6,7 +6,7 @@ description: Installation and Update
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 3
+weight: 6
 lang: en_GB
 progressstate: 5
 ---

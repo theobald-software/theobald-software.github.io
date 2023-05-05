@@ -45,7 +45,7 @@ Use the `config` directory for setting up a [version control](#version-control) 
 A backup allows you to easily switch back to the previous product version, if needed. See also section [Installation and Update](../introduction/installation-and-update).
 
 
-#### How do I Create a Backup?
+#### How do to Create a Backup?
 Copy the complete `config` directory (`C:\Program Files\BOARDConnector\config` by default) of the machine running the Board Connector Service and store the files in safe and secure locations.
 Optionally, copy the complete `logs` directory (`C:\Program Files\BOARDConnector\logs` by default) to create a backup of the log files. 
 To backup your licence, create a copy of your `BOARDConnectorLicense.json` file.

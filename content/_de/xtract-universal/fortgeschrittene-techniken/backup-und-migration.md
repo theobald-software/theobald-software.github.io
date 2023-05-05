@@ -43,7 +43,7 @@ Bevor Sie eine neue Produktversion installieren oder die aktuelle Version aktual
 Falls erforderlich, ermöglicht das Backup es Ihnen leicht zur vorherigen Produktversion zurück zu wechseln. 
 Mehr Details dazu finden Sie auch im Abschnitt [Installation und Update](../einfuehrung/installation-und-update).
 
-#### Wie erstelle ich ein Backup?
+#### Erstellen eines Backups
 1. Kopieren Sie das komplette `config`-Verzeichnis der Maschine auf der der Xtract Universal Service läuft. Das Standardverzeichnis des `config` Ordners ist `C:\Program Files\XtractUniversal\config`. 
 2. Optional: kopieren Sie das `logs`-Verzeichnis (`C:\Program Files\XtractUniversal\logs`), um ein Backup der Log-Dateien zu erstellen.
 3. Um ein Backup Ihrer Lizenz zu erstellen, kopieren Sie die Datei `XtractUniversalLicense.json`.

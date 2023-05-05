@@ -6,7 +6,7 @@ description: Evaluierung
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 7
+weight: 4
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=evaluierung
 ---

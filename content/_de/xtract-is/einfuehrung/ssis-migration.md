@@ -6,7 +6,7 @@ description: SSIS Migration
 product: xtract-is
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 5
+weight: 12
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=ssis-migration
 ---

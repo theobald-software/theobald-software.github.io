@@ -32,7 +32,7 @@ Bevor Sie eine neue Produktversion installieren oder die aktuelle Version aktual
 Falls erforderlich, ermöglicht das Backup es Ihnen leicht zur vorherigen Produktversion zurück zu wechseln. 
 Mehr Details dazu finden Sie auch im Abschnitt [Installation und Update](./installation-und-update).
 
-#### Wie erstelle ich ein Backup?
+#### Erstellen eines Backups
 1. Öffnen Sie das yunIO Installationsverzeichnis, z.B. `C:\Program Files\Theobald Software\yunIO`.
 2. Kopieren Sie den kompletten `config`-Ordner aus dem yunIO Installationsverzeichnis und speichern Sie den Ordner an einem sicheren Ort.
 3. Optional: Kopieren Sie den kompletten `logs`-Ordner aus dem yunIO Installationsverzeichnis, um ein Backup der Log-Dateien zu erstellen.

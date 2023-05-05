@@ -13,7 +13,7 @@ lang: en_GB
 
 {% include _content/en/requirements/update.md %}
 
-### How do I create a backup?
+### How to create a backup?
 1. Copy all Alteryx workflows that use Xtract for Alteryx.
 2. Copy the folder that contains the SAP connections. 
 Depending on the Alteryx Settings it is located in:
