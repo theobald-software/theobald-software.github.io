@@ -17,8 +17,6 @@ If you use SNC in your project, you can choose between the [NTLM](#ntlm) or the 
 
 ### Prerequisites
 
-For information on the requirements to use SNC/SSO, refer to the Theobald Software Knowledge Base article [SNC/SSO](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
-
 The following DLLs from SAP need to be present in the `%SYSTEMROOT%\System32` directory of your system:
 
 For 32-bit:
