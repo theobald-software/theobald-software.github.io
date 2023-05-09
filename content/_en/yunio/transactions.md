@@ -10,11 +10,10 @@ weight: 19
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
-
-With the *Transaction* component, SAP transactions can be accessed, configured and parameterized for automation.<br>
+This section shows how to use the integration type *Transaction*.<br>
+Use *Transaction* to access, configure and parameterize SAP transactions for automation.
 
 ### Prerequisites
-
 The SAP connection assigned to a transaction service must use an SAP dialog user. 
 
 {: .box-tip }
