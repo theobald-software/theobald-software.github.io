@@ -17,7 +17,7 @@ The following section describes the loading of the SAP extraction data into a Cu
 
 ## Requirements
 
-To extract data into a SharePoint Custom list, you need either your own SharePoint 2013 server or access to a SharePoint Online system as part of Office365.
+To extract data into a SharePoint Custom list, you need either your own SharePoint server or access to a SharePoint Online system as part of Office365.
 
 If your SharePoint server isn't configured for remote access already, go to **Central Administration -> Application Management -> Configure alternate access mappings** and add an appropriate mapping for the zone "Internet".
 

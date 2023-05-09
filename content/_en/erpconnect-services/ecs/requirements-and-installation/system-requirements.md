@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-system-requirements
 
 **SharePoint Server System**
 
-- Microsoft SharePoint Server, Foundation, Standard or Enterprise Edition, version 2013, 2016, or 2019. SharePoint 2010 is not actively supported any longer!
+- Microsoft SharePoint Server, Foundation, Standard, Enterprise Edition or Subscription Edition, version 2016, or 2019. SharePoint 2010 and 2013 are not supported any longer!
 - In an SharePoint farm the installation must be executed on the SharePoint server hosting the Central Administration.
 - The **SharePoint Administration service** must be started to be able the install ERPConnect Services.
 - The **SharePoint Timer service** must be started to be able the install ERPConnect Services.
@@ -30,7 +30,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=ecs-system-requirements
 The development system provides all the tools necessary for the solution developer to create and maintain ERPConnect Services solutions. The development system can be combined with the SharePoint Server system (see below) on a single machine.
 
 - 32-bit oder 64-bit Windows client- or server operating system
-- Visual Studio, version 2010, 2012, 2013, 2015
+- Visual Studio, version 2015, 2017 or 2019
 - .NET-Framework 4.5.2
 - Librfc32.dll or SAPGUI client
 

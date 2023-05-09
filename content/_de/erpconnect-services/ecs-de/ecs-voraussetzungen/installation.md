@@ -31,7 +31,7 @@ Bitte beachte Sie folgende Punkte, bevor Sie mit der Installation starten (alle 
 **Installation mit dem Wizard**
 
                         
-Starten Sie die Installation, indem Sie den Installer für SP2010, SP2013 oder SP2016 ausführen: *ERPConnectServicesSetup2XX.exe*. 
+Starten Sie die Installation, indem Sie den Installer ausführen: *ERPConnectServicesSetup2XX.exe*. 
 Die *Welcome* Seite des Installationsassistenten wird angezeigt.
 
 ![ECS-Setup-Welcome](/img/content/ECS-Setup-Welcome.PNG){:class="img-responsive"}

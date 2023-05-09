@@ -31,7 +31,7 @@ Before you start (all SharePoint versions):
 
 **Installation using the Wizard**
 
-Start the installation by running the installer for SharePoint 2010, 2013 or 2016: **ERPConnectServicesSetup20XX.exe**
+Start the installation by running the installer for SharePoint: **ERPConnectServicesSetup20XX.exe**
 
 
 The **Welcome** page of the **Setup Wizard** will come up.

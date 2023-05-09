@@ -16,7 +16,7 @@ Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten auf einen Sh
 
 ## Voraussetzungen
 
-Um Daten in eine SharePoint-Liste zu extrahieren, benötigen Sie entweder einen SharePoint 2013 Server oder ein SharePoint Online System innerhalb von Office365.
+Um Daten in eine SharePoint-Liste zu extrahieren, benötigen Sie entweder einen SharePoint Server oder ein SharePoint Online System innerhalb von Office365.
 
 Wenn Ihr SharePoint-Server noch nicht bereits für Zugriff über das Internet konfiguriert ist, stellen Sie bitte unter  **Central Administration -> Application Management -> Configure alternate access mappings**  ein entsprechendes Mapping für die Zone "Internet" ein.
 
