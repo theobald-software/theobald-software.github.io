@@ -17,8 +17,6 @@ Bei dem SNC-Mechanismus haben Sie die Optionen [NTLM](#ntlm) und [Kerberos5](#Ke
 
 ### Voraussetzungen
 
-Informationen zu den Installationsvoraussetzungen finden Sie im Knowledge-Base-Article [SNC/SSO](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
-
 Die folgenden DLLs müssen heruntergeladen und in dem Verzeichnis `%SYSTEMROOT%\System32` des Rechners liegen, auf dem der Xtract Server läuft bzw. die SAP-Verbindung stattfindet: 
 
 Für 32-Bit: 
