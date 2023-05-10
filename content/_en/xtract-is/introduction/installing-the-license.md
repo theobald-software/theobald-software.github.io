@@ -6,7 +6,7 @@ description: About the license of Xtract IS
 product: xtract-is
 parent: introduction
 permalink: /:collection/:path
-weight: 8
+weight: 14
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installing-the-license
 progressstate: 5

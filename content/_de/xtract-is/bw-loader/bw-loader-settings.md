@@ -26,7 +26,7 @@ Ist in dieses Textfeld der Name einer BW-Prozesskette eingetragen, wird diese na
 
 ### SAP BI 3rd party notification
 **No InfoPackage Start (Only Wait)**<br>
-Standardmäßig wird das InfoPackage beim Starten des SSIS-Packete ebenfalls mit gestartet. Wenn diese Option gesetzt ist, passiert das nicht. Die Komponente wartet dann, bis das Infopackage im BW von Hand gestartet wurde.
+Standardmäßig wird das InfoPackage beim Starten des SSIS-Pakete ebenfalls mit gestartet. Wenn diese Option gesetzt ist, passiert das nicht. Die Komponente wartet dann, bis das Infopackage im BW von Hand gestartet wurde.
 
 **Use external Notifier**<br>
 Siehe Abschnitt [Externe Benachrichtigung](./externe-benachrichtigung) 
