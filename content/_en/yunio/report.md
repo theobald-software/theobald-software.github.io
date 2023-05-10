@@ -1,83 +1,71 @@
 ---
-ref: yunio-table-01
+ref: yunio-report-01
 layout: page
-title: SAP Tables and Views
-description: Defining a Table/View Extraction
+title: Report (Preview)
+description: Defining a Report Extraction
 product: yunio
 parent: yunio
-childidentifier: table-and-views
+childidentifier: report
 permalink: /:collection/:path
-weight: 15
+weight: 20
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 progressstate: 5
 ---
 
-This section shows how to use the integration type *SAP Table or View*.
+This section shows how to use the integration type *Report*. 
+
+{: .box-note}
+**Note:** The integration type *Report* is still in preview mode. This means that breaking changes can be released any time. 
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
-To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, refer to the knowledge base article [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+To use Reports in yunIO, access to the designated authority objects (RFC) in SAP must be available.
+For more information, refer to the knowledge base article [SAP User Rights: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
 
+### Look Up a Report
 
-### Look Up an SAP Table or View
-
-1. Create a new *Service* of type *SAP Table or View*. 
-2. Click **[Save and edit]**. The *Search SAP Table or View* menu opens.
-3. Enter the name of the Table or View to be extracted in the field **Search by name** (1) or search for a Table description. Use wildcards ( * ) if needed.
+1. Create a new *Service* of type *Report (preview)*. 
+2. Click **[Save and edit]**. The *Search SAP Reports* menu opens.
+3. Enter the name of a report or the TCODE of a report in the field **Search by a report name or an exact TCODE** (1). When looking up report names, the use of wildcards ( * ) is supported.
 ![SAP-Table-or-Views](/img/content/yunio/Search-table-view.png){:class="img-responsive" width="750px"}
-4. Click **[Search]** (2) to display the search results.
+4. To look up report names, click **[Search]** (2). The search results are displayed.<br>
+To look up TCODES, click **[By TCODE]** (2). to display the search results.
 5. Select a source file from the list of available search results (3). 
-The extraction settings of *SAP Table and Views* open automatically.<br>
+The extraction settings of *Report (preview)* open automatically.<br>
 
 ### Settings
-The *SAP Table or View* settings consist of the following subsections:
+The *Report* settings consist of the following subsections:
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
 
-- [Table or View](#table-or-view) (4) displays the name and description of the selected SAP Table or View.
+- [Report](#report) (4) displays the name and description of the selected report.
 - [Advanced Settings](#advanced-settings) (5) define how the data is extract from SAP.
-- [Output Columns](#output-columns) (6) define which columns are extracted.
-- [WHERE Clause](#where-clause) (7) offers an optional data filter.
-- [WHERE Clause Editor](#where-clause-editor) (8) offers a toolkit for creating WHERE clauses.
+- [Selection Parameters](#selection-parameters) (6) define input parameter for the yunIO service.
+- [Output Columns](#output-columns) (7) define the output of the yunIO service.
 
+### Report
 
-### Table or View
-
-The **Table or View** section displays the name and description of the selected table or view.<br>
+The **Report** section displays the name and description of the selected report.<br>
 To select a different source file, click **Select** in the upper right corner of the section.
 
 ### Advanced Settings
 
-#### Function Name
-Specifies the name of the function module used for data extraction. This field is filled automatically depending on what function modules are installed on your SAP system.
-Custom function modules are supported.
+#### Run in background
+If this checkbox is checked, the report extraction is executed as a background job in SAP. 
+This setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0. 
+Activate the setting **Run in background** for large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
 
-The following function modules can be used to extract tables:
+#### Dynamic column width and offset
+If this option is active, the column width and offset is adjusted dynamically at report runtime. 
+This can be required for reports that have varying column widths depending on the report’s selection criteria.
 
-- RFC_READ_TABLE (TAB512)
-- /BODS/RFC_READ_TABLE (TAB2048)
-- /SAPDS/RFC_READ_TABLE (TAB2048)
-- /BODS/RFC_READ_TABLE2
-- /SAPDS/RFC_READ_TABLE2
-- Z_THEO_READ_TABLE
+#### Skip rows from top
+Specifies the number of extracted records. 0 extracts the entire table.
+This option can be used to skip report headers
 
-{: .box-warning }
-**Warning! Duplicates in the target environment!**<br>
-The SAP standard modules for table extraction do not have pointers for table fields. 
-In larger tables this may cause low performance and duplicates in the target environment. 
-Use the function module [Z_THEO_READ_TABLE](#installation-of-z_theo_read_table) from Theobald Software to ensure smooth extractions.
+#### Skip rows from bottom
 
-Note the necessary [authorization for SAP tables](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
-```
-S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
-```
-
-#### Row Limit
-Specifies the maximum number of extracted records. 0 extracts the entire table.
-
-#### Rows per Package
 The extracted data will be split into packages of the defined size. The default value is 50000 lines.<br>
 A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. 
 Not using packaging can lead to an RFC timeout for large data extracts.
@@ -86,16 +74,19 @@ Not using packaging can lead to an RFC timeout for large data extracts.
 **Warning! RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table:**<br>
 To avoid a memory overflow on the SAP source system and to avoid huge overheads, choose a package size that suits your memory capacity.
 
-#### Run in background
-If this checkbox is checked, the table extraction is executed as a background job in SAP. 
-This setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0. 
-Activate the setting **Run in background** for long-running extractions with a large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
+#### Variant
 
-{: .box-tip }
-**Tip:** The extraction jobs can be found in the SAP JobLog (**SM37**) under the JobName *theo_read_table*.
+If available, select a variant from the drop-down-list.<br>
 
-### Output Columns
+A variant contains a set of [selections parameters](#selection-parameters) that limit the result set of the report to records that match the selection.
+A selection variant can be created in SAP at the input screen of an ABAP report. 
+The purpose of a variant is to minimizes the need to enter selections each time you run a report.
 
+{: .box-note}
+**Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
+
+
+### Selection Parameters
 You can select either all or only individual columns for extraction. <br>
 Per default all columns are selected to be extracted. 
 Deselect the ones you don’t want to extract.

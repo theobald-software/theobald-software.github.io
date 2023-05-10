@@ -16,7 +16,7 @@ The following section describes the functions of the Xtract Query component of X
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the SAP Query component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: SAP Query](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#sap-query).
+For more information, refer to the knowledge base article [SAP User Rights: SAP Query](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#sap-query).
 
 {: .box-tip }
 **Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>

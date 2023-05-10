@@ -18,7 +18,7 @@ The component Xtract BW Cube enables the extraction of flat data from SAP BW Inf
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the Xtract BW Cube component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: BW Query / BW Cube](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube).
+For more information, refer to the knowledge base article [SAP User Rights: BW Query / BW Cube](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube).
 
 {: .box-tip }
 **Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>

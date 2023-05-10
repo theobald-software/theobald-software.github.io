@@ -17,7 +17,7 @@ progressstate: 5
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To establish a connection to SAP, the access to general authority objects must be available.
-For more information, see the knowledge base article on [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+For more information, refer to the knowledge base article [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
 The SAP connection settings are located in the *Connection* section of the yunIO Designer.
 - To add a new SAP connection, click **[Add Connection]** (1).<br>

@@ -17,7 +17,7 @@ Every Xtract IS component needs a connection manager to establish access to the 
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To establish a connection to SAP the access to general authority objects (RFC) must be available.
-Make sure to gain access to the general authority objects. For more information, see the knowledge base article on [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+Make sure to gain access to the general authority objects. For more information, refer to the knowledge base article [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
 1. To create a new connection manager right-click in the connection managers within "Solution Explorer" area and choose **New connection Manager**. 
 The window "Add SSIS Connection Manager" opens.

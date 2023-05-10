@@ -32,14 +32,14 @@ The settings for *Function Module* consist of the following subsections:
 
 ### Function Module
 
-The name and description of the selected Function Module or BAPI is displayed in the **Function Module** section.<br>
+The **Function Module** section displays the name and description of the selected function module or BAPI. <br>
 To select a different source file, click **Select** in the upper right corner of the section.
 
 ### Advanced Settings
 
 #### Commits Transaction
 
-If this option is active, the funtion module "BAPI_TRANSACTION_COMMIT" is called after processing the selected Function Module / BAPI. 
+If this option is active, the function module "BAPI_TRANSACTION_COMMIT" is called after processing the selected Function Module / BAPI. 
 Some SAP Function Modules (e.g., BAPI_PO_CREATE) require this commit function to successfully update data in the database.
 
 ### Function Module Interface Parameters

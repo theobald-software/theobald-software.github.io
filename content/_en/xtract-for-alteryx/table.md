@@ -20,7 +20,7 @@ The Table component is also used to join several tables on the SAP side, see [Ta
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the Xtract Table component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+For more information, refer to the knowledge base article [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).

@@ -8,4 +8,4 @@ In general report extraction is possible if the report returns a table-like stru
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the Report component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
+For more information, refer to the knowledge base article [SAP User Rights: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
