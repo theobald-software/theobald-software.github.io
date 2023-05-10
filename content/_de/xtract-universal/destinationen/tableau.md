@@ -24,7 +24,7 @@ Optional ist es auch möglich, die erzeugte Data Extract-Datei zu einem Tableau-
 
 Laden Sie die Tableau Export Library und die Visual C++ 2015 Runtime [hier](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip) herunter.<br>
 Wenn die Visual C++ 2015 Runtime noch nicht auf Ihrer Maschine installiert ist, führen Sie die vc_redist.x64.exe aus, um die Visual C++ 2015 Runtime zu installieren.<br>
-Kopieren Sie den `tableau`-Ordner in Ihr Xtract Universal Verzeichnis, sodass folgende Ordnerstruktur entsteht: `C:\Program Files\XtractUniversaltableau\hyper`.
+Kopieren Sie den `tableau`-Ordner in Ihr Xtract Universal Verzeichnis, sodass folgende Ordnerstruktur entsteht: `C:\Program Files\XtractUniversal\tableau\hyper`.
 
 ## Verbindung
 
