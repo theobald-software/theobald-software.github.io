@@ -98,7 +98,7 @@ Activate the setting **Run in background** for long-running extractions with a l
 
 You can select either all or only individual columns for extraction. <br>
 Per default all columns are selected to be extracted. 
-Deselect the ones you don’t want to extract.
+Deselect the columns you don’t want to extract.
 
 ### WHERE Clause
 Use a WHERE clause to filter your data.
