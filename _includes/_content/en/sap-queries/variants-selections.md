@@ -1,6 +1,6 @@
 ### Variants and Selections
 Most queries allow entering selections before query execution.
-Selections limit the result set of the Query so as to extract only records that match the selection.<br>
+Selections limit the result set of the Query to extract only records that match the selection.<br>
 
 A selection variant can be created in SAP at the selection screen of a Query. The purpose of a variant is to save selection settings. 
 This minimizes the need to enter selections each time you run a query.

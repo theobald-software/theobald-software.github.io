@@ -1,8 +1,9 @@
 
-Most reports allow entering selections before report execution. Selections limit the result set of the report so as to extract only records that match the selection. 
+Most reports allow entering selections before report execution. Selections limit the result set of the report to extract only records that match the selection. 
 
 A selection variant can be created in SAP at the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. 
-This minimizes the need to enter selections each time you run a report. 
+The purpose of a variant is to minimize the necessity to enter selections when running a report.
+
 
 {: .box-note }
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
@@ -35,7 +36,7 @@ Select *Exclude* in the **Sign** (3) column to exclude the filtered data from th
    |GreaterThan |  True if data is greater than the content of operand 1.|
    |LessOrEqual | True if data is less than or equal to the content of operand 1.|
    |LessThan | True if data is less than the content of operand 1.|
-   |(Not)Between | True if data lies (not) between the values of operand 1 and operand 2. |
+   |(Not)Between | True if data values do (not) lie between the values of operand 1 and operand 2. |
    |In | True if data is part of the content of operand 1. This operator is only available for *List* parameters.|
 5. Enter static values or select runtime parameters for filtering. <br>
 - Static values: Enter values directly into the **Low** and **High** input fields. 
